@@ -17,7 +17,7 @@ i giocatori *cambiano il mondo* con ogni scelta.
 
 ## 1.1 — Il Problema Vero: Il Mercato dei Ricordi
 
-Il Collezionista non è semplicemente fuggito. Nei mesi trascorsi dall'incontro nel Tana dei Minotauri, ha **infiltrato Rethmar** attraverso la sua rete commerciale: vende statue di cristallo ai nobili e mercanti della città come *rare opere d'arte nanica di epoca pre-Horde*. Il fatto che dentro ogni statua ci sia una persona viva è il suo segreto più redditizio.
+Il Collezionista non è semplicemente fuggito. Nei mesi trascorsi dall'incontro nella Tana dei Minotauri, ha **infiltrato Rethmar** attraverso la sua rete commerciale: vende statue di cristallo ai nobili e mercanti della città come *rare opere d'arte nanica di epoca pre-Horde*. Il fatto che dentro ogni statua ci sia una persona viva è il suo segreto più redditizio.
 
 **La scoperta (Hook per Artemis e Thorik):**  
 Un mercante di Channathgate porta a Rethmar una statua di cristallo raffigurante un nano barbuto nell'atto di alzare un'ascia. Commissionata da Lady Kaal come "ornamento storico" per la sala del consiglio. Artemis, con la sua spiccata capacità di leggere gli intrighi nascosti, nota che la statua *pulsa debolmente* (Spellcraft DC 22 o Knowledge Arcana DC 20 — la magia basilare di pietrificazione non dovrebbe persistere su materia inerte).
@@ -370,7 +370,7 @@ Therysol non sa delle aberrazioni che i drow creerebbero. Sa solo che lì dentro
 
 Lady Kaal non è nel module originale come villain — è un ostacolo economico. Nella versione espansa per questi giocatori, è molto più interessante: **ha ragione**.
 
-Nei 6 mesi precedenti l'assedio, Lady Kaal ha condotto la propria analisi strategica. Ha consultato mercenari esperti, ha ottenuto cifre precise sulla forza del Mano Rossa, ha calcolato le perdite previste. La sua conclusione: Rethmar non può vincere uno scontro frontale. Le opzioni per la sopravvivenza della popolazione sono due — evacuazione o **resa negoziata**.
+Nei 6 mesi precedenti l'assedio, Lady Kaal ha condotto la propria analisi strategica. Ha consultato mercenari esperti, ha ottenuto cifre precise sulla forza della Mano Rossa, ha calcolato le perdite previste. La sua conclusione: Rethmar non può vincere uno scontro frontale. Le opzioni per la sopravvivenza della popolazione sono due — evacuazione o **resa negoziata**.
 
 Ha avviato contatti segreti con Wyrmlord Saarvith (non con Azarr Kul — lei non è pazza). L'accordo proposto: Rethmar si rende, paga tributi per 10 anni, mantiene autonomia interna. Il Mano Rossa non brucia la città. Nessuno muore nell'assedio.
 
@@ -436,7 +436,7 @@ Queste scene possono essere inserite in qualsiasi punto dell'arco post-Hammerfis
 
 ## 7.1 — Il Rifugiato di Hammerfist
 
-**Setup**: Un sopravvissuto della Battaglia di Hammerfist raggiunge il party con informazioni critiche sulle formazioni del Mano Rossa. Ma è gravemente ferito — ha il veleno di Fauci di Palude nel sangue. Senza cure immediate (3 cariche di Remove Poison o Heal DC 25), muore in 4 ore.
+**Setup**: Un sopravvissuto della Battaglia di Hammerfist raggiunge il party con informazioni critiche sulle formazioni della Mano Rossa. Ma è gravemente ferito — ha il veleno di Fauci di Palude nel sangue. Senza cure immediate (3 cariche di Remove Poison o Heal DC 25), muore in 4 ore.
 
 Hella ha le cure. Ma Tordek ha già usato le cariche del party per stabilizzare i mercenari feriti ieri sera. Ne rimane una sola. Il rifugiato dice di conoscere la posizione di *tutti e sei* i wyvern rider di riserva — intel che potrebbe cambiare le sorti dell'assedio.
 
@@ -503,7 +503,7 @@ La terza opzione richiede 6 ore di Tordek (che ha altre priorità) e produce un 
 - Atk: Longsword +10/+5 (1d8+4) o Shortbow +8/+3 (1d6+2)
 - Feats: Leadership, Weapon Focus (longsword), Power Attack, Iron Will, Tactician (non-SRD: +1 alle truppe sotto comando quando vede l'azione del nemico)
 
-**Personalità**: Pragmatica ma con profondo senso etico. Non ha mai visto una guerra vera prima dell'invasione del Mano Rossa — la sua esperienza è di polizia cittadina e ordine. È terrificata ma non lo mostra. È esattamente il tipo di persona che Thorik può rispettare perché fa cose difficili senza lamentarsi.
+**Personalità**: Pragmatica ma con profondo senso etico. Non ha mai visto una guerra vera prima dell'invasione della Mano Rossa — la sua esperienza è di polizia cittadina e ordine. È terrificata ma non lo mostra. È esattamente il tipo di persona che Thorik può rispettare perché fa cose difficili senza lamentarsi.
 
 **Agenda**: Proteggere i civili di Rethmar. Non la gloria militare. Non la politica. Le persone. Se il party le mostra rispetto e un piano credibile, diventa la più leale alleata che hanno in città.
 

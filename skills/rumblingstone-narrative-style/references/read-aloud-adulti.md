@@ -60,6 +60,11 @@ tornare indietro; chi ascolta no. Da qui i vincoli che la pagina non ha:
    cosa che non torna si descrive. *«Come se»* resta, perché è un paragone.
    Viene da Shawn Merwin (*D&D Beyond*); misura: `voto_scrittura.py`,
    controllo `box_senza_sembra` (D13).
+   **Il confine**: *«sembra»* seguito dalla smentita resta. *«Quella che
+   sembrava una parete — è una palpebra»*: lì il narratore non esita, prepara
+   il colpo. La smentita arriva entro la frase dopo, con *«invece»*, *«non lo
+   è»*, *«si rivela»* o un trattino seguito da *«è»*; più lontano, è di nuovo
+   un'esitazione (D17 di PIANO-AGENT-SKILLS-ESTERNE, 2026-10-03).
 
 **Prova pratica, dieci secondi**: leggi il box **ad alta voce**. Se ti manca il
 fiato, se devi rileggere una riga, se inciampi su un nome — il testo è

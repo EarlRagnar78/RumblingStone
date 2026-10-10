@@ -102,7 +102,7 @@ class TestUnaFazioneNonEUnAmbiente(unittest.TestCase):
                 self.assertEqual(m["faction"], "unknown")
                 self.assertEqual(m["environment"], "underdark")
                 testo = (ROOT / rel).read_text(encoding="utf-8")
-                self.assertIn("ma e' un ambiente", testo,
+                self.assertIn("ma è un ambiente", testo,
                               "il perche' non e' scritto nel file: fra un mese "
                               "sembrera' una svista")
 

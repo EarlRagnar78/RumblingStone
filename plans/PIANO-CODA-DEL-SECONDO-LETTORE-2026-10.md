@@ -5,7 +5,7 @@
 > perché la misura ha trovato difetti veri che **non ho corretto**: o perché la
 > scelta è del DM, o perché sono un lotto di contenuto da fare a parte.
 >
-> **Stato**: lotto di infrastruttura chiuso (PR #214); coda aperta.
+> **Stato**: lotto di infrastruttura chiuso (PR #214); punti 1 e 2 chiusi (2026-10-03 e 2026-10-06); restano 3 e 4, che aspettano D2 e D3.
 
 ## 1. Fatto (PR #214)
 
@@ -24,6 +24,12 @@
 
 ## 2. Da fare, in ordine di urgenza
 
+**1. ✅ Fatto il 2026-10-03.** Il DM: *«Torre la»*. Le cinque righe con *del
+Torre* e *dal Torre* rimaste nei sorgenti del Drappo (le altre stavano nei
+booklet generati) dicono *della Torre*, *dalla Torre*; *alle Civetta* è *alla
+Civetta*; *della Mano Rossa* ×3, *nella Tana dei Minotauri*, *dalla prova di
+Conoscenze*. Il booklet del DM del Drappo è rigenerato. Il testo di prima:
+
 **1. Il genere di *Torre* nel modulo del Palio (decide il DM).** Il modulo scrive
 *della Torre* 15 volte e *del Torre* 12, e *alla Civetta* 8 volte contro 1 *alle
 Civetta*. È prosa che il master legge a voce: il tavolo sente l'incoerenza. Una
@@ -35,6 +41,15 @@ Tana dei Minotauri* (riga 20 dello stesso file), *dalla Conoscenze*
 (`EST-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md`, riga 77). Dopo, rilanciare
 `ciclo_prosa.py segnala --languagetool` sui file toccati e controllare che i
 rilievi veri siano a zero.
+
+**2. ✅ Fatto il 2026-10-06.** 143 righe in 78 schede (non 140 in 57: il conto
+del 2026-10-03 era su un'altra versione dell'avviso), sostituite solo le forme
+della lista di `validate_lingua` e mai dentro il codice in linea: *e'* 125,
+*perche'* 70, *gia'* 10, *piu'* 7, *puo'* 3, *cosi'* 1. `pregen-pcgen/`
+escluso. Avvisi del validatore da 2.598 a 2.457; `validate_bestiario`,
+`extract_statblocks`, `conformita_statblocchi` verdi, catalogo dei mostri
+invariato. Resta *verita'* in una scheda della Badessa: non è nella lista del
+validatore, e si aggiunge alla lista o si lascia. Il testo di prima:
 
 **2. Gli accenti del Bestiario (nessuna decisione da prendere).** 140 delle 156
 righe dell'avviso sull'apostrofo stanno in `Bestiario/`, e 67 sono lo stesso
@@ -65,6 +80,16 @@ si risolve con uno strumento. Resta il lettore a freddo di
 secondo lettore di questo piano. Da rivedere se le regole italiane di
 LanguageTool migliorano: la procedura sta nella ricerca e si rifà in un'ora.
 
+## 2-bis. Le decisioni al DM
+
+<!-- decisioni-dm: CODA-SECONDO-LETTORE -->
+
+| # | Punto | Domanda |
+|---|---|---|
+| ~~D1~~ | 1 | ✅ **Decisa il 2026-10-03**: *la Torre*. Era: **la contrada del Palio è *la Torre* o *il Torre*?** |
+| **D2** | 3 | **Il campo *Etichetta regia* troncato in `PROMPT-IMMAGINI-07ILP.md`**: si cerca chi compila il file e si corregge lì, o si correggono a mano le 32 righe? *Proposta*: prima si cerca il generatore (`extract_scene_prompts`?); a mano solo se non c'è |
+| **D3** | 4 | **La *d* eufonica** (*legato a Aegis Fang*, *a area*): la vuoi come norma? *Proposta*: sì, *ad* solo davanti alla stessa vocale, scritta in `editorial-standards.md` e misurata; se no, resta com'è |
+
 ## 3. Quando usare il secondo lettore
 
 Su un master o un handout **prima** di dichiararlo definitivo, come il lettore a
@@ -77,7 +102,6 @@ non è un cancello.
 
 Il primo messaggio, da incollare:
 
-> Leggi `plans/PIANO-CODA-DEL-SECONDO-LETTORE-2026-10.md` §2. Parti dal punto 1:
-> chiedimi se la contrada è *la Torre* o *il Torre*, poi uniforma le 12 righe del
-> modulo del Palio e correggi i quattro difetti di concordanza elencati. Prima
-> `python3 scripts/fase1.py --check` sui file; apri una PR in bozza.
+> Leggi `plans/PIANO-CODA-DEL-SECONDO-LETTORE-2026-10.md` §2. I punti 1 e 2
+> sono fatti; i punti 3 e 4 aspettano D2 e D3 di §2-bis: chiedimele, poi
+> applica. Prima `python3 scripts/fase1.py --check` sui file.

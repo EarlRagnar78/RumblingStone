@@ -1,9 +1,9 @@
 # Dovil Runecaster / Deep Diviner (Diviner 5/Deep Diviner 1/Fighter 1) [TRANSCRIBED — PCGen, L1 2026-07-08]
 **Faction**: unknown | **Role**: caster-arcane | **Environment**: underdark | **CR**: 7 | **Source**: PCGen export `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Underdark dovil runecaster deep diviner cr7.htm` | **Status**: transcribed-pcgen
-> ⚠️ **`underdark` era una fazione, ma e' un ambiente.** Questa scheda e' una
+> ⚠️ **`underdark` era una fazione, ma è un ambiente.** Questa scheda è una
 > trascrizione PCGen del modulo RHoD **mai collocata in un arco** di questa
-> campagna: l'alleanza non e' stabilita, e dichiararne una sarebbe inventarla.
-> Il fatto vero — che vive nel Sottosuolo — sta gia' in `Environment: underdark`,
+> campagna: l'alleanza non è stabilita, e dichiararne una sarebbe inventarla.
+> Il fatto vero — che vive nel Sottosuolo — sta già in `Environment: underdark`,
 > e `suggest_encounter --env underdark` la trova insieme a tutte le altre.
 
 
@@ -23,7 +23,7 @@ voci:
   - Talenti: Incantare in Combattimento, Iniziativa/Vergare Migliorato, Smiting Spell, Focalizzazione (Divinazione), Arma Focalizzata (spadone)
 ```
 
-> [INFERRED — needs DM confirmation] `pf-dado` tolto da `scripts/conformita_statblocchi.py`: portava «2d6+2», che non sono i dadi vita (pf-dado «2d6+2» ha 2 dadi, il testo dichiara 7 DV). I dadi non si ricostruiscono senza inventare: la composizione delle classi non e' leggibile o comprende una classe non SRD. Da completare a mano.
+> [INFERRED — needs DM confirmation] `pf-dado` tolto da `scripts/conformita_statblocchi.py`: portava «2d6+2», che non sono i dadi vita (pf-dado «2d6+2» ha 2 dadi, il testo dichiara 7 DV). I dadi non si ricostruiscono senza inventare: la composizione delle classi non è leggibile o comprende una classe non SRD. Da completare a mano.
 
 > [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 

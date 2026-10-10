@@ -1,3 +1,4 @@
+<!-- revisione-testo: r1 · 2026-10-03 -->
 # IL PORTALE DELLA FORGIA ETERNA
 ## PARTE 3 - Piano Elementale del Fuoco
 ### Avventura D&D 3.5 - Livello 13 - Forgotten Realms
@@ -52,7 +53,7 @@
 >
 > *Terza sensazione: SUONO. Crepitio costante come mille falò brucianti. Rombo distante lava in movimento. Esplosioni periodiche geyser fuoco. E... qualcos'altro. Canti? Voci? Creature elementali cantano in linguaggio incomprensibile - non Ignan che alcuni di voi conoscono, ma qualcosa PIÙ PRIMORDIALE.*
 >
-> *Alle spalle: il portale è ancora lì, cerchio dorato luminoso sospeso 2 metri sopra piattaforma roccia vetrificata nera. Via di fuga. Ma anche ricordo di casa che sembra infinitamente lontana ora.*
+> *Alle spalle: il portale è ancora lì, cerchio dorato luminoso sospeso 2 metri sopra piattaforma roccia vetrificata nera. Via di fuga. Ma anche ricordo di una casa che adesso è lontanissima.*
 >
 > *Davanti: paesaggio infernale.*
 
@@ -311,7 +312,7 @@ Thorik tiene Aegis Fang e ascia CANTA direzione Topazio del Tempo:
 
 **15 Minuti - Prima Pausa Visiva:**
 
-> *Una piattaforma più ampia (12m diametro), buona per orientarsi. Alle spalle: il portale ora è puntino dorato lontanissimo. Davanti: la piramide rovesciata sembra... non più vicina. È illusione distanza, ma sconcertante.*
+> *Una piattaforma più ampia (12m diametro), buona per orientarsi. Alle spalle: il portale ora è puntino dorato lontanissimo. Davanti: la piramide rovesciata non si è avvicinata di un passo. È un'illusione della distanza, ma sconcerta.*
 >
 > *Aegis Fang canta incoraggiamento: "Persistenza, figlio. Montagne non scalano in secondi. Passo dopo passo."*
 >
@@ -325,7 +326,7 @@ Thorik tiene Aegis Fang e ascia CANTA direzione Topazio del Tempo:
 >
 > *Siete in ALTRO PIANO DI ESISTENZA. Non Underdark profondo. Non caverna remota. Letteralmente altro MONDO. Dimensione dove fisica funziona diverso. Dove elementali VIVONO, non visitano. Casa loro. Voi siete intrusi.*
 >
-> *Tordek, una meditazione breve, e... pace strana. Piano Fuoco è caotico, MA ha ordine proprio. Come fiume rapida - sembra caos, ma flusso acqua segue leggi natura. Comprensione monaco.*
+> *Tordek, una meditazione breve, e... pace strana. Piano Fuoco è caotico, MA ha ordine proprio. Come una rapida: da fuori è caos, ma l'acqua segue le sue leggi. Comprensione monaco.*
 >
 > *Artemis, Ring pulsa curiosamente. Voci Lathander/Mask sussurrano insieme: "Caos e Ordine qui danzano. Bello, no?" E arriva... ammirazione da entrambi dèi. Raro.*
 >

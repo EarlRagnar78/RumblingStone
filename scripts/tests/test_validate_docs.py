@@ -438,14 +438,52 @@ class TestIlNumeroDiUnAdrEUnico(unittest.TestCase):
 
     def test_il_prossimo_numero_e_quello_giusto(self):
         """La meta' che rende la regola seguibile invece che solo esigibile."""
-        usati = vd.numeri_adr()
-        atteso = f"ADR-{max(int(n) for n in usati) + 1:04d}"
+        usati = [int(n) for n in vd.numeri_adr()]
+        usati += [int(v["numero"]) for v in vd.prenotazioni_adr()]
+        atteso = f"ADR-{max(usati) + 1:04d}"
         self.assertEqual(vd.prossimo_adr(), atteso)
         esito = subprocess.run(
             [sys.executable, "scripts/validate_docs.py", "--prossimo-adr"],
             cwd=ROOT, capture_output=True, text=True)
         self.assertEqual(esito.returncode, 0, esito.stderr)
         self.assertIn(atteso, esito.stdout)
+
+    def test_un_numero_prenotato_non_e_libero(self):
+        """D7 di PIANO-RECUPERO: il doppio ADR-0086 di #216 e #230."""
+        for v in vd.prenotazioni_adr():
+            self.assertNotEqual(vd.prossimo_adr(), f"ADR-{v['numero']}")
+        self.assertEqual(vd.adr_prenotati_in_conflitto(), [])
+
+    def test_un_numero_prenotato_usato_da_altri_da_rosso(self):
+        prenotati = vd.prenotazioni_adr()
+        if not prenotati:
+            self.skipTest("nessuna prenotazione nel repo")
+        v = prenotati[0]
+        intruso = ROOT / "plans" / "adr" / f"ADR-{v['numero']}-ZZZ-altra-decisione.md"
+        intruso.write_text("# prova\n", encoding="utf-8")
+        try:
+            fuori = vd.adr_prenotati_in_conflitto()
+            self.assertEqual([p["path"] for p in fuori], [f"ADR-{v['numero']}"])
+            self.assertIn("prenotato", fuori[0]["reason"])
+            esito = subprocess.run(
+                [sys.executable, "scripts/validate_docs.py", "--sorgenti"],
+                cwd=ROOT, capture_output=True, text=True)
+            self.assertEqual(esito.returncode, 1)
+        finally:
+            intruso.unlink()
+
+    def test_una_prenotazione_arrivata_va_tolta(self):
+        prenotati = vd.prenotazioni_adr()
+        if not prenotati:
+            self.skipTest("nessuna prenotazione nel repo")
+        v = prenotati[0]
+        arrivato = ROOT / "plans" / "adr" / f"ADR-{v['numero']}-{v['slug']}.md"
+        arrivato.write_text("# prova\n", encoding="utf-8")
+        try:
+            fuori = vd.adr_prenotati_in_conflitto()
+            self.assertIn("toglierla", fuori[0]["reason"])
+        finally:
+            arrivato.unlink()
 
     def test_il_comando_segnala_le_collisioni_gia_presenti(self):
         gemello = ROOT / "plans" / "adr" / "ADR-0051-ZZZ-prova-collisione.md"

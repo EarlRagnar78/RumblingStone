@@ -128,7 +128,7 @@ Intimidire CD 14 fatto da chi ne ha appena messo giù uno. Nessuno di loro morir
 Sfregio.
 **Pico** — uno dei quattro, diciassette anni, quello della rissa alla fontana.
 
-### 4.3 · Miliziano del Torre — GS 1
+### 4.3 · Miliziano della Torre — GS 1
 
 **Umano guerriero 2** · pf 20 · **CA** 18 (+5 corazza a scaglie, +2 scudo, +1 Des)
 TS Tem +5, Rif +1, Vol +0

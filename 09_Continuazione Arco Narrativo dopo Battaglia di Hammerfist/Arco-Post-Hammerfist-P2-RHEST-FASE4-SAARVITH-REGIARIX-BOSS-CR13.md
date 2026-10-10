@@ -74,7 +74,7 @@ Riporta lo **stato di allerta** deciso in Fase 3:
 
 > **Nota acido, non fuoco**: Regiarix è un drago **nero** → soffio **acido**. La
 > Resistenza al Fuoco 10 dei Bracieri di Tordek **non** aiuta qui (vedi §5). È un
-> trucco onesto: i PG che si aspettano un drago "di fuoco" vanno corretti dalla
+> trucco onesto: i PG che si aspettano un drago "di fuoco" vanno corretti dalla prova di
 > Conoscenze (arcane) CD 20 già seminata in Fase 1/3.
 
 ---

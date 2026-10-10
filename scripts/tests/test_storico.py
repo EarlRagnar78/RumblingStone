@@ -131,8 +131,11 @@ class TestSulCorpusVero(unittest.TestCase):
     def test_la_storia_rimasta_e_quella_dichiarata(self):
         trovati: dict[str, int] = {}
         for f in self.fonti:
-            n = sum(1 for r in togli_storico(f.read_text(encoding="utf-8")).split("\n")
-                    if STORIA.search(r))
+            # i commenti HTML non arrivano in stampa: l'esportatore li butta
+            # (export_booklet_typst._COMMENTO). La riga `revisione-testo` di
+            # ADR-0077 ha una data, ed è un commento.
+            stampato = re.sub(r"<!--.*?-->", "", togli_storico(f.read_text(encoding="utf-8")), flags=re.S)
+            n = sum(1 for r in stampato.split("\n") if STORIA.search(r))
             if n:
                 trovati[f.name] = trovati.get(f.name, 0) + n
         for nome, n in trovati.items():

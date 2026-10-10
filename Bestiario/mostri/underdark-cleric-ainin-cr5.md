@@ -1,9 +1,9 @@
 # Ainin, Chierico dell'Underdark (Cleric 5) [TRANSCRIBED — PCGen, L1 2026-07-08]
 **Faction**: unknown | **Role**: caster-divine | **Environment**: underdark | **CR**: 5 | **Source**: PCGen export `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Underdark cleric cr5 Ainin.htm` (stadio 2: `Underdark cleric cr6 Ainin.htm`) | **Status**: transcribed-pcgen
-> ⚠️ **`underdark` era una fazione, ma e' un ambiente.** Questa scheda e' una
+> ⚠️ **`underdark` era una fazione, ma è un ambiente.** Questa scheda è una
 > trascrizione PCGen del modulo RHoD **mai collocata in un arco** di questa
-> campagna: l'alleanza non e' stabilita, e dichiararne una sarebbe inventarla.
-> Il fatto vero — che vive nel Sottosuolo — sta gia' in `Environment: underdark`,
+> campagna: l'alleanza non è stabilita, e dichiararne una sarebbe inventarla.
+> Il fatto vero — che vive nel Sottosuolo — sta già in `Environment: underdark`,
 > e `suggest_encounter --env underdark` la trova insieme a tutte le altre.
 
 

@@ -1,0 +1,11 @@
+{
+  "_cos_e": "I numeri ADR prenotati da un ramo o da una PR prima che l'ADR arrivi su main (D7 di PIANO-RECUPERO, 2026-10-10). Chi apre un ramo con un ADR nuovo prende il numero da `python3 scripts/validate_docs.py --prossimo-adr` e lo scrive qui, su main, prima di aprire il ramo. Quando l'ADR arriva, la sua voce si toglie nello stesso commit: validate_docs --sorgenti lo esige.",
+  "prenotati": [
+    {
+      "numero": "0088",
+      "slug": "la-99-si-chiude",
+      "chi": "il thread sulla PR #99, proposta di chiusura",
+      "dal": "2026-10-10"
+    }
+  ]
+}

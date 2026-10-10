@@ -158,3 +158,55 @@ dell'etichetta di regia non conta, perché il giocatore non lo sente.
   poi per parole, perché per parole su un master di 2.600 righe costava minuti.
 - Lo script non riscrive. Se un giorno lo farà, la riscrittura passerà dagli
   stessi tre comandi.
+
+## Estensione del 2026-10-03: di quanto migliora
+
+### Contesto
+
+Il DM, approvato il lotto D13: *«la parte di revisione della prosa è
+automatizzata in modo da presentare la versione cambiata e migliorata? Se non è
+così si può automatizzarla migliorando la prosa il più possibile e misurando il
+miglioramento ottenuto»*. Il ciclo diceva che una riscrittura **non peggiora**
+niente, ma non di quanto migliorava: il punteggio MQM (ADR-0059) esisteva e non
+entrava nel documento di revisione, e fra un giro di riscrittura e l'altro
+l'agente non aveva un comando che gli desse il conto.
+
+### Decisione
+
+- Il documento di revisione porta la sezione **«Di quanto migliora»**: il
+  punteggio MQM e la penalità prima e dopo, e le segnalazioni norma per norma.
+  Una garanzia in più: **il punteggio MQM non scende**.
+- `lotto FILE... -o CARTELLA` prepara un pacchetto per ogni file con
+  segnalazioni: i passaggi, la norma, il rimedio, i fatti che non si toccano, i
+  numeri di partenza, i `references/` da leggere prima. In testa, la classifica
+  dei file per MQM. Sui master già letti al tavolo (DEF-1, 2, 3) il pacchetto
+  dice che i box si spezzano e non si riscrivono (D9).
+- `misura ORIGINALE RISCRITTO` dà il delta di un giro. Esce 1 se una norma
+  cresce, se MQM scende o se un fatto cambia, e dice quando fermarsi: dopo un
+  giro che non abbassa le segnalazioni, o al terzo (`GIRI_MASSIMI`). Senza un
+  tetto, «il più possibile» diventerebbe riscrivere per il gusto di farlo.
+- `applica` scrive ogni revisione applicata in `plans/scrittura/miglioramenti.json`;
+  `registro --check` è un cancello in CI: nessuna revisione applicata ha
+  peggiorato la misura.
+- «Sembra» e «pare» entrano nel punteggio come norma minore
+  (`box_sembra_pare`), col lotto che li ha corretti, come il registro delle
+  norme aveva scritto. Le norme pesate passano da 12 a 13, e la linea di base
+  di `campaign/misure/` si riscrive.
+
+La riscrittura resta di un agente con le skill, e l'approvazione resta del DM,
+modifica per modifica. Lo script continua a non scrivere prosa.
+
+### Conseguenze
+
+- Il registro, riempito a ritroso con le undici revisioni di D13: segnalazioni
+  da 293 a 265, MQM +2,52 punti sui file toccati.
+- La prova sull'ARC-08 (`plans/scrittura/revisioni-pilota-ARC08/`) ha
+  trovato un difetto del metro dei nomi propri: un nome composto contava due,
+  e chiedeva di togliere un nome che la garanzia sui fatti vieta di togliere.
+  Un nome composto che sta nei dati ora conta uno (`misura_craft._nomi_composti`).
+  «Mano Rossa» e «Drellin's Ferry» non stanno nei dati, e valgono ancora due.
+- Quello che si paga: MQM misura la conformità alle norme registrate, non la
+  bellezza. Un box può salire di punteggio e restare piatto, e un tic che non è
+  una norma pesata (i tic minori in gruppo) abbassa le segnalazioni senza
+  muovere MQM. Il giudizio resta di chi legge a voce, e il lettore a freddo di
+  `rumblingstone-playtest` resta il passo che nessun numero sostituisce.

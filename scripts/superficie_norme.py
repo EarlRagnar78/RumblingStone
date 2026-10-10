@@ -257,6 +257,28 @@ NORME_SCOPERTE = (
                 "darebbe i falsi positivi 64/64 gia' visti in PROSA-CHE-NON-SEMBRI-GENERATA",
         "rilevatore_pronto": None,
         "sblocca": None,
+    },    {
+        "chiave": "adr_nuovo_con_alternative",
+        "norma": "ADR-0000-template.md (D7 di PIANO-RECUPERO) — un ADR nuovo ha le "
+                 "alternative considerate e la condizione «Da rivedere se»",
+        "prerequisito": "esiste un ADR scritto dopo il modello del 2026-10-10",
+        "forma": None,
+        "oggetto": "plans/adr/ADR-0089-*.md",
+        "dove": "gli 87 ADR accettati non si riscrivono; il primo scritto col modello "
+                "nuovo e' il 0089, perche' il 0088 e' prenotato da una proposta gia' scritta",
+        "rilevatore_pronto": None,
+        "sblocca": "il primo ADR nuovo: allora un controllo in validate_docs dal 0089 in poi",
+    },
+    {
+        "chiave": "corpo_pr_onesto",
+        "norma": ".github/pull_request_template.md (D7 di PIANO-RECUPERO) — un controllo "
+                 "non girato si scrive «non eseguito», e si dice come si torna indietro",
+        "prerequisito": None,
+        "forma": None,
+        "dove": "il corpo di una PR sta su GitHub, non in un file del repo: nessuno "
+                "script lo legge, e il modello resta il promemoria",
+        "rilevatore_pronto": None,
+        "sblocca": None,
     },
 )
 

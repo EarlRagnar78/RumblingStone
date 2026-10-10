@@ -67,6 +67,28 @@ _HDYWTDT = _CONGEGNI["[HDYWTDT] il finisher al giocatore"]
 SEMBRA = re.compile(r"\b(sembr(?:a|ano|ava|avano|are|ato|ata|ati|ate|ò|arono)|"
                     r"pa(?:re|iono|reva|revano|rso|rsa|rsi|rse|rve|rvero))\b", re.I)
 
+#: D17 (2026-10-03): «sembra» seguito dalla smentita è lecito. «Quella che
+#: sembrava una parete — è una palpebra»: lì il narratore non esita, prepara il
+#: colpo. Il confine è stretto apposta: la smentita deve arrivare entro la frase
+#: dopo, con «invece», «non lo è», «si rivela» o un trattino seguito da «è».
+#: Un «è» da solo non basta: c'è in quasi ogni frase, e salverebbe tutto.
+SMENTITA = re.compile(r"\b(?:invece|non lo (?:è|era|sono|erano)|"
+                      r"si rivel(?:a|ano|ava|avano|ò|arono))\b|\s[—–-]\s*(?:è|era)\b", re.I)
+_FINE_FRASE = re.compile(r"[.!?…]+")
+
+
+def sembra_esitanti(corpo: str) -> "list[re.Match]":
+    """I «sembra» e «pare» di un box che la norma vieta: tutti, tranne quelli
+    smentiti entro la frase dopo (D17)."""
+    fuori = []
+    for m in SEMBRA.finditer(corpo):
+        dopo = corpo[m.end():]
+        fini = list(_FINE_FRASE.finditer(dopo))
+        limite = fini[1].end() if len(fini) > 1 else len(dopo)
+        if not SMENTITA.search(dopo[:limite]):
+            fuori.append(m)
+    return fuori
+
 
 def _rilievi(testo: str, per_i_giocatori: bool) -> "set[str]":
     """Le chiavi di `validate_prosa.rilievi` sul testo, come se fosse un file.
@@ -148,9 +170,9 @@ def controlli(testo: str, genere: str) -> "dict[str, tuple[bool, str]]":
         "box_tetto_righe": (difetti["oltre 12 righe"] == 0, f"{difetti['oltre 12 righe']} oltre 12 righe"),
         "box_un_nome": (difetti[">1 nome proprio"] == 0, f"{difetti['>1 nome proprio']} con piu' nomi"),
         "box_senza_parentesi": (difetti["con parentesi"] == 0, f"{difetti['con parentesi']} con parentesi"),
-        "box_senza_sembra": (not any(SEMBRA.search(c) for c in corpi),
+        "box_senza_sembra": (not any(sembra_esitanti(c) for c in corpi),
                              ", ".join(sorted({m.group(0).lower() for c in corpi
-                                               for m in SEMBRA.finditer(c)})) or "-"),
+                                               for m in sembra_esitanti(c)})) or "-"),
         "box_p1": (not p1, ", ".join(v for v, _ in p1) or "-"),
         "box_senza_metrature": (not metr, ", ".join(m for m, _ in metr) or "-"),
         "box_etichettato": (bool(box) and senza_etichetta == 0, f"{senza_etichetta} senza etichetta"),

@@ -1,3 +1,4 @@
+<!-- revisione-testo: r1 · 2026-10-03 -->
 # Parte 2D — Le 8 Prove d'Ammissione (scena per scena)
 
 > Allegato di `...P2D-PALIO-DM-MASTER-REFERENCE.md` (§2) e `...GIORNO1-TRATTA.md` (§2.1).
@@ -95,8 +96,8 @@ Ferrante può diventare la voce che a Rethmar **tiene Jarmaath sulla difesa**.
 
 **Read-aloud**
 > *Voll vi consegna una cassa che pesa troppo per il suo volume. — "Non chiedete cosa c'è
-> dentro. Chiedete solo: da che porta entra?" Sorride. La cassa, per un istante, sembra…
-> respirare.*
+> dentro. Chiedete solo: da che porta entra?" Sorride. La cassa, per un istante, si gonfia
+> e si sgonfia.*
 
 **Beat 1 — La via (piano)**: i PG scelgono l'approccio — fogna (Furtività), corruzione
 (Raggirare/oro), diversivo (un PG crea caos altrove). Ogni piano ha la sua DC.

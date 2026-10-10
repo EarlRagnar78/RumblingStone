@@ -1,3 +1,4 @@
+<!-- revisione-testo: r1 · 2026-10-03 -->
 Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md
 =================================================
 
@@ -84,7 +85,7 @@ Lythiel resta a Hammerfist 24 ore. Dorme con Inathiel sui bastioni. La mattina d
 **Setting:** ai cancelli della cittadella, mentre Hella sta controllando il rinoceronte di pietra. Il sole sta calando.
 
 **Read-aloud (DM):**
-> *Un mezzelfo si avvicina senza fare rumore — strano per un uomo della sua corporatura. Indossa una camicia con l'emblema di Rethmar (un sole nascente sopra una torre) sopra la cotta di maglia, e una lira di corno di drago blu è legata in spalla. I suoi occhi sono grigio cenere stasera, ma quando ti guarda ti sembra che sotto si muova qualcosa di blu elettrico.*
+> *Un mezzelfo si avvicina senza fare rumore — strano per un uomo della sua corporatura. Indossa una camicia con l'emblema di Rethmar (un sole nascente sopra una torre) sopra la cotta di maglia, e una lira di corno di drago blu è legata in spalla. I suoi occhi sono grigio cenere stasera, ma quando ti guarda, sotto, per un attimo, si muove qualcosa di blu elettrico.*
 >
 > *"Hella dei Boschi. Mi chiamo Tempestas, e voi mi avete salvato la vita molti anni fa, alla città di Lorana. Lo ricordate? Forse no. Io sì. Ho una cosa per voi."*
 >

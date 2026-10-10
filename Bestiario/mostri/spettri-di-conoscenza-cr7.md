@@ -9,7 +9,7 @@
 
 PNG neutrali o ostili: sanno, e contrattano.
 
-Questa voce esiste perche' `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri: senza, un PNG con statistiche scritte non e' raggiungibile da nessuno strumento. Ogni modifica va fatta nel file d'arco.
+Questa voce esiste perché `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri: senza, un PNG con statistiche scritte non è raggiungibile da nessuno strumento. Ogni modifica va fatta nel file d'arco.
 
 ## Notes
 

@@ -95,6 +95,14 @@ norme:
     norma: "ADR-0014 §2 — occhio da avventuriero: scala per paragone, le metrature nel blocco dati"
     # Falsi positivi contati a mano il 2026-09-21: **1 su 28**, ed è un PNG che
     # dice «8-15 km» in un dialogo. Precisione 96%.
+  box_sembra_pare:
+    severita: minore
+    rilevatore: "voto_scrittura.sembra_esitanti"
+    norma: "read-aloud-adulti.md §1 punto 7 — niente «sembra» né «pare»; il «sembra» smentito resta (D13, D17)"
+    # Entra il 2026-10-03, col lotto che ha corretto i box (D13) e il confine
+    # di D17. Sui file di gioco restano 3 box su 502, letti uno per uno: un PNG
+    # che parla, un modello da riempire, una smentita nella battuta dopo che il
+    # rilevatore dei box non apre. Tre falsi positivi su tre, dichiarati.
 
 # ── I tre casi critici, e quale dei tre è decidibile ─────────────────────
 #

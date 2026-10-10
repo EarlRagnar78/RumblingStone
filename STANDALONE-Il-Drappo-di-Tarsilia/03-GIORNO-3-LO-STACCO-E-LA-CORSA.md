@@ -384,7 +384,7 @@ Il montepremi della corsa: **500 mo** alla contrada vincitrice, **200** alla sec
 **100** alla terza. Il Drappo non ha prezzo e non si vende: chi ci prova, a Tarsilia,
 trova la città chiusa.
 
-Se hanno preso Sfregio vivo, la ricevuta del mediatore vale **300 mo** venduta alle
+Se hanno preso Sfregio vivo, la ricevuta del mediatore vale **300 mo** venduta alla
 Civetta — oppure vale molto di più tenuta in tasca.
 
 ---

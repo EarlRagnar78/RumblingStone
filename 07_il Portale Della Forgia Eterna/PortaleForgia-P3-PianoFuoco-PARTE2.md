@@ -1,3 +1,4 @@
+<!-- revisione-testo: r1 · 2026-10-03 -->
 # IL PORTALE DELLA FORGIA ETERNA
 
 ## PARTE 3 - Piano Elementale del Fuoco (PARTE 2/2 - COMPLETAMENTO)
@@ -846,7 +847,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 
 **Narrazione Se Successo:**
 
-> *Thorik, la preghiera antica - parole che generazioni nani hanno cantato da millenni. Al settimo giro, rune Altare RISPONDONO. Brillano oro liquido, formano pattern che sembrano... respirare. Aria attorno Altare trema, realtà stessa si PIEGA leggermente.*
+> *Thorik, la preghiera antica - parole che generazioni nani hanno cantato da millenni. Al settimo giro, rune Altare RISPONDONO. Brillano oro liquido, formano disegni che si allargano e si stringono, come un respiro. Aria attorno Altare trema, realtà stessa si PIEGA leggermente.*
 
 ---
 
@@ -993,7 +994,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 
 **Attraversamento Portale Ritorno:**
 
-> *Oltre il portale, transizione INVERSA - da calore opprimente a... fresco. Freddo quasi. Temperatura Sala Forgia sembra GELIDA dopo Piano Fuoco, anche se è normale 20°C.*
+> *Oltre il portale, transizione INVERSA - da calore opprimente a... fresco. Freddo quasi. Dopo il Piano del Fuoco la Sala della Forgia è GELIDA, anche se è normale 20°C.*
 >
 > *Atterrate piattaforma spawn Sala. Affresco Ovest (A4 - Portale Fuoco) dietro voi... cambia. Non più portale liquido ondeggiante. Ora: AFFRESCO STATICO mostrante VITTORIA vostra.*
 >

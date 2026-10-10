@@ -2476,7 +2476,7 @@ monsters:
     cr: 10.0
     faction: unknown
     role: generalist
-    environment: aerial
+    environment: any
     source_file: "07_il Portale Della Forgia Eterna/PortaleForgia-P3-PianoFuoco-PARTE1.md"
   - id: il-fantino-della-nonna-e7dccf
     name: "Il Fantino della Nonna"
@@ -2539,7 +2539,7 @@ monsters:
     cr: 11.0
     faction: unknown
     role: generalist
-    environment: aerial
+    environment: any
     source_file: "07_il Portale Della Forgia Eterna/PortaleForgia-P3-PianoFuoco-PARTE1.md"
   - id: shadow-marsh-complete-guide-c9fb2d
     name: "Shadow Marsh Complete Guide"

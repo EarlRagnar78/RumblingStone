@@ -1,3 +1,4 @@
+<!-- revisione-testo: r1 · 2026-10-03 -->
 # IL PORTALE DELLA FORGIA ETERNA
 ## PARTE 2 - La Sala della Forgia Eterna (REVISED & CORRECTED)
 ### Avventura D&D 3.5 - Livello 13 - Forgotten Realms
@@ -41,7 +42,7 @@
 
 **Narrazione Iniziale (Stile Salvatore - Leggere Drammaticamente):**
 
-> *L'ultimo passo nel portale dorato dissolve il mondo materiale. Per un istante - singolo battito di cuore che sembra durare eoni - non siete più VIVI nel senso tradizionale. Siete CONSAPEVOLEZZA PURA, sospesi in mare di luce e suono.*
+> *L'ultimo passo nel portale dorato dissolve il mondo materiale. Per un istante - un battito di cuore che dura eoni - non siete più VIVI nel senso tradizionale. Siete CONSAPEVOLEZZA PURA, sospesi in mare di luce e suono.*
 >
 > *Thorik, la Corona sulla fronte non è più metallo freddo: è ESTENSIONE della tua anima. Aegis Fang nella mano pulsa in sincronia con battito cuore. Sei TU, ma anche più che tu.*
 >
@@ -127,7 +128,7 @@ Dopo che tutti PG hanno superato/dissipato effetto iniziale:
 > - *Qualcosa indefinibile... forse odore dell'ETERNITÀ stessa*
 >
 > **SENSAZIONE TEMPORALE:**
-> - *Tempo scorre... strano qui. Un secondo sembra minuto. Un minuto sembra istante.*
+> - *Tempo scorre... strano qui. Un secondo dura un minuto. Un minuto passa in un istante.*
 > - *Ma (IMPORTANTE PER COUNTDOWN): Tempo REALE passa normalmente! Illusione percettiva, non distorsione reale.*
 
 ---
@@ -485,7 +486,7 @@ Thorik riceve benedizione temporanea (dura fino a completamento Piano Fuoco):
 
 **Narrazione:**
 
-> *Tordek, le mani vicino alle fiamme. Alla tua vita, la **Cintura della Devastazione** - metallo scuro inciso con rune distruttive - sembra... VIBRARE. Come se riconoscesse la forgia come antenata.*
+> *Tordek, le mani vicino alle fiamme. Alla tua vita, la **Cintura della Devastazione** - metallo scuro inciso con rune distruttive - VIBRA. Come se riconoscesse la forgia come antenata.*
 >
 > *Al contatto, la Cintura brilla rosso incandescente per 3 secondi. E c'è... connessione. Il monaco cerca equilibrio. Ma questa cintura è DISTRUZIONE. Opposti? O... complementari?*
 >
@@ -595,7 +596,7 @@ Spirito Hella riceve beneficio:
 
 **Descrizione Dettagliata:**
 
-> *Questa colonna è... anomalia. Mithral è metallo nanico comune, ma le incisioni sono DELICATE. Quasi elfiche. Viti intrecciate salgono spiraliformi, ogni foglia così dettagliata che sembra potrebbe staccarsi e fluttuare via. Toccando metallo, è CALDO - non bruciante, ma come se fosse vivo. E c'è un suono debole: come vento tra alberi lontani.*
+> *Questa colonna è... anomalia. Mithral è metallo nanico comune, ma le incisioni sono DELICATE. Quasi elfiche. Viti intrecciate salgono spiraliformi, ogni foglia così dettagliata che a un soffio potrebbe staccarsi e volare via. Toccando metallo, è CALDO - non bruciante, ma come se fosse vivo. E c'è un suono debole: come vento tra alberi lontani.*
 
 **Simbolismo:** Grazia e Bellezza - valori insoliti per nani, ma Moradin abbraccia TUTTI aspetti creazione
 

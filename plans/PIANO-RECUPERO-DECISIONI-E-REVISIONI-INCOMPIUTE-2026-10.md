@@ -3,6 +3,12 @@
 > **Stato**: 🟡 **in corso** (2026-10-10). Portato nella #230 su richiesta del DM
 > (*«questa PR la più recente e completa con tutto quello che è rimasto da fare»*):
 > L3 fatto, L1 in corso col merge della #230, D1 e D2 chiuse. Il resto in §5.
+> **Riallineato il 2026-10-10, dopo il merge di #229, #230 e #232** (richiesta del
+> DM: *«controlla se c'è una pr mergiata e aggiorna […] le decisioni devono essere
+> ricontrollate tutte, controlla anche le pr aperte […] senza perdere niente»*):
+> la #216 portata sul `main` nuovo con l'ADR a `0087` (L1 ✅), il registro dei
+> rami corretto (L2 in parte), le PR aperte rimisurate (§2.6) e le pratiche dei
+> due repo di riferimento confrontate con questo (§7, D7).
 > **Richiesta-fonte (DM, 2026-10-10)**: *«leggi tutti gli scratchpad relativi al
 > repo rumblingstone per vedere se si sono perse decisioni prese o decisioni
 > interrotte ma non più decise o script e parti che non sono mai arrivati nel
@@ -23,10 +29,11 @@ Quello che non so e che cambierebbe il piano:
    condivisa del progetto è vuota e la memoria del progetto non contiene
    niente: altrove non c'è altro da leggere. Se tenevi appunti fuori dal repo
    (una chat, un documento), questo piano non li vede.
-2. **Cosa vuoi fare della #216.** È tua, in bozza, aggiornata oggi alle 15:22
-   e fondibile senza conflitti. Porta su `main` tre decisioni che hai già
-   preso (vedi §2.1). Assumo che la stai ancora portando avanti e che il merge
-   sia una tua scelta (D1).
+2. ~~**Cosa vuoi fare della #216.**~~ Risposto dal DM il 2026-10-10: va
+   organizzata con il resto, senza perdere niente. Dopo il merge della #230
+   la #216 confliggeva in sette file e aveva l'ADR-0086 doppio: la porta su
+   `main` la PR del riallineamento, con i conflitti risolti e l'ADR a `0087`
+   (§2.6). Il ramo della #216 non è stato toccato.
 3. **Se un piano fermo con lotti «opzionali» vale ancora.** Non lo deduco: lo
    chiedo per gruppo (D5).
 
@@ -159,6 +166,21 @@ INDEX. Gli altri due `PIANO-*` della radice sono puntatori, come devono.
 | INDEX, REVISIONE-ARC08 | due ⬜ (i 65 read-aloud, l'apparato) | assorbiti da MASTER-DEF S1, che rifà i quattro master di ARC-08 |
 | STATO §0, «le 120 legature della Corona» | 120 | 14 righe con `ﬀ` in tutto il repo: va rimisurato |
 
+### 2.6 · Le PR dopo il merge di #229, #230 e #232 (rimisurate il 2026-10-10)
+
+Su `main` a `e63fddd5`. Prova di merge con `git merge-tree` per ognuna.
+
+| PR | Cosa porta | Contro il `main` nuovo | Cosa resta |
+|---|---|---|---|
+| #216 | revisione della prosa, `MEMORIA.md` generata, D13, D17, D38, la *Torre* | 7 conflitti (`docs/INDEX.md`, `docs/tools/README.md` e `registry.json`, CHANGELOG, INDEX, STATO, REGISTRO-NORME) e l'ADR-0086 doppio | **portata nella PR del riallineamento**: conflitti risolti tenendo le righe di `main` e aggiungendo le sue, i file derivati rigenerati (`tools_manifest --emit-all`, `decisioni_dm --emit`, `memoria.py`), i conti del registro rimisurati (46 🟢, 28 🟡). D17 e D38 risultano chiuse, entrano D2 e D3 di CODA-SECONDO-LETTORE. Se il DM fonde la PR del riallineamento, la #216 si chiude come portata, con il suo sì |
+| #231 | Python 3.13 in CI (AMBIENTE A2, D7) | conflitto solo in `plans/CHANGELOG.md` (due righe nuove sulla stessa coda) | resta del thread sulla CI: si risolve tenendo tutte e due le righe |
+| #228 | Dependabot, sei aggiornamenti pip | conflitto in `requirements-dev.txt` | si sblocca dopo la #231: Dependabot ribasa da sé |
+| #106 | codice dei raster del Drappo | già su `main` in forma nuova | D3 |
+| #99 | audit globale; lotti 4g, 4h, 4i-3 | non rimisurata qui | resta del thread sulla #99 (ADR proposto a `0088`, D2) |
+
+Con l'ADR della memoria a `0087`, la proposta di chiusura della #99 va a `0088`:
+`validate_docs --prossimo-adr` lo darà libero solo dopo il merge di questa PR.
+
 ## 3 · Le decisioni, in forma ADR breve
 
 Non sono ADR numerati per il motivo di §2.2. Se il DM ne vuole uno, si numera
@@ -213,25 +235,39 @@ chiude quando L1-L6 sono fatti, e non accumula lavoro suo.
 | D4 | L5 | **`RIPRESA-PR#D11` (ADR-0049, l'AP originale)**: resta aperta dal 2026-09-11, legata a un avvocato IP e a VENDIBILITA, che non è autorizzato. *Proposta*: passa a voce di `adozioni-in-attesa.json` con la condizione «VENDIBILITA autorizzato», e lascia §4 |
 | D5 | L4 | **I ⬜ opzionali dei piani chiusi o fermi**, per gruppo. *Proposta*: (a) chiusi come «non si fa»: AUDIT-SCRIPTS (shellcheck lo fa AMBIENTE A6), IMPORT-ULTRACLEAR (migrazione delle ~30 mappe, ora COLLAUDO-MAPPE), RENDER-FEDELTA (`--strict` default); (b) in attesa con condizione: TRAVASO A6 (quando ARC-07 finisce al tavolo), INTEGRAZIONE (quando c'è Foundry al tavolo), RICERCA-MODULO-PUBBLICABILE B3, C3, D5, RICERCA-TOOL-ESTERNI R1, RICERCA-TOOL-LGM P1-P3, GENERATORE J e K; (c) restano lotti: nessuno |
 | D6 | L3 | **RICONCILIAZIONE-PR-APERTE si chiude come superato?** R3, R6, R7, R8 sono decisi o fatti altrove (§2.3). *Proposta*: sì, ✅ con il rimando a dove sta ognuno |
+| ~~D7~~ | L7 | ✅ **Decisa il 2026-10-10, il DM: tutte e tre** (*«adotta le pratiche e mergia»*), fatte in L7. Era: **Quali pratiche dei due repo di riferimento si adottano qui?** Il confronto è in §7: tre mancano davvero (il modello di PR, le alternative e la condizione di revisione nel modello di ADR, il numero dell'ADR prenotato prima di aprire il ramo), le altre ci sono già. *Proposta*: tutte e tre, come lotto L7, ognuna registrata in `REGISTRO-NORME-EDITORIALI.md` con chi la misura (G3); nessuna riscrittura degli ADR già accettati |
 
 <!-- eco: RECUPERO 2026-10-10 -->
-- **Decise**: D1 la #229 e la #230 su `main` per prime, se verdi · D2 lo `0086` resta alla #230, la #216 passa a `0087`
+- **Decise**: D1 la #229 e la #230 su `main` per prime, se verdi · D2 lo `0086` resta alla #230, la #216 passa a `0087` · D7 le tre pratiche dei repo di riferimento, adottate tutte come proposto (dopo i merge)
 - **Aperte**: D3 (la #106), D4 (D11 di RIPRESA-PR), D5 (i ⬜ opzionali per gruppo), D6 (RICONCILIAZIONE chiusa come superata)
 - **Cambiate**: D1, dove la proposta metteva prima la #216
 - **Dedotto da me**: che la D2 segua l'ordine di arrivo anche quando l'ordine cambia, perché è la regola che la proposta stessa scriveva; e che la rinumerazione della #216 spetti al suo ramo, non a questo
+- **Rivisto il 2026-10-10, dopo i merge**: la rinumerazione della #216 l'ha fatta la PR del riallineamento, non il suo ramo, perché il DM ha chiesto di organizzare tutto senza toccare le PR degli altri; D7 decisa poche ore dopo
 
 ## 5 · I lotti
 
 Ogni lotto apre una PR sua, salvo L3 e L4 che stanno bene insieme.
 
-### L1 · Le decisioni chiuse nei rami arrivano su `main` `[🟡 la #230 sì (D12, D23-D30); la #216 dopo, con l'ADR a 0087]`
+### L1 · Le decisioni chiuse nei rami arrivano su `main` `[✅ 2026-10-10: la #230 con D12 e D23-D30; la #216 nella PR del riallineamento, con l'ADR a 0087]`
 `[engine: Opus 5, sessione principale · effort: alto · qualità: dopo il merge, decisioni_dm --check dà D17, D38, D12 chiuse, validate_docs --sorgenti verde con due ADR distinti]`
 
 Classe **G**, perché decide un ordine di merge. Aspetta D1 e D2. Si esegue nel
 thread della PR che arriva prima; qui si spunta. Se la #216 cambia ancora prima
 del merge, si rimisura §2.1.
 
-### L2 · Il registro dei rami, completo e che non dimentica `[⬜]`
+### L2 · Il registro dei rami, completo e che non dimentica `[🟡 2026-10-10: R-2 nello script e le dieci voci della #72 ripristinate; restano R-3 e il test]`
+
+Fatto: `contenuti_nei_rami.py` stampa le voci «scadute» solo con `--fetch`;
+senza, dice quante voci non trovano il loro ramo e che non si potano. Le dieci
+voci della sezione `file` tolte da `334dd46f` sono tornate com'erano.
+`--check` dopo `--fetch`: 61 file mai arrivati, tutti con un posto (prima 8
+senza). Due voci restano davvero scadute anche con `--fetch`
+(lo script `validate_skill_paths` della #72 e il Giorno 3 di maggio dell'ARC-09): sono
+`superato`, e restano come memoria del perché. Le PR #6, #52, #63, #221 e i
+rami `claude/*` di §2.4 non hanno file senza posto: non serve una voce. Non
+fatti: R-3 (i commit dopo il merge sui rami delle PR fuse) e il test che prova
+la regola nuova, perché `main()` vuole un repo git e il test va scritto con il
+repo finto di `_repo_righe`.
 `[engine: Sonnet 5 · effort: medio · qualità: contenuti_nei_rami --fetch --check esce 0; un test prova che una voce di PR chiusa sopravvive a un giro senza --fetch]`
 
 Classe **C**. Fa R-2 nello script; rimette le voci della #72 come erano prima
@@ -264,6 +300,20 @@ se la condizione non si sa scrivere: in quel caso il lotto lo dice.
 Classe **G**. Aspetta D3 e D4. La chiusura della #106 è un'azione su una PR:
 si fa solo con la tua conferma esplicita.
 
+### L7 · Le pratiche prese dai repo di riferimento `[✅ 2026-10-10]`
+
+Fatto, dopo il sì del DM a D7:
+- `plans/adr-prenotati.json`, con lo `0088` della #99 come prima voce; `validate_docs --prossimo-adr` salta i numeri prenotati, e `--sorgenti` è rosso se un numero prenotato è usato da un'altra decisione o se una prenotazione arrivata non è stata tolta (tre test).
+- `ADR-0000-template.md` con *Alternative considerate* e *Da rivedere se*.
+- `.github/pull_request_template.md` con le caselle della regola d'oro, *Controlli eseguiti* («non eseguito», mai «passato»), *Come si torna indietro* e *Note oneste*.
+- Le tre norme in `REGISTRO-NORME-EDITORIALI.md` §3: la prima 🟢 (`validate_docs`), le altre due 🔴 con la ragione e la loro riga in `superficie_norme.py` (il primo ADR nuovo, lo `0089`, accende la seconda).
+
+`[engine: Sonnet 5 · effort: medio · qualità: le tre norme di D7 in REGISTRO-NORME con chi le misura; validate_norme_editoriali, validate_docs --sorgenti, check_plans_discipline verdi]`
+
+Classe **G**. Aspetta D7. Aggiunge `.github/pull_request_template.md`, le due
+sezioni al modello `ADR-0000-template.md`, e la prenotazione del numero ADR
+(§7). Non tocca gli ADR già scritti.
+
 ### L6 · Chiusura `[⬜]`
 `[engine: inline · effort: basso · qualità: le tre misure di §2 rifatte, con i numeri prima e dopo in questa sezione]`
 
@@ -286,3 +336,29 @@ python3 -m pytest scripts/tests -q
 Il piano ha funzionato se, alla fine, `--fetch --check` del registro esce 0
 con tutte le PR scaricate, §4 contiene solo domande che nessun ramo ha già
 chiuso, e la routine del lunedì non trova una riga di §2.5.
+
+## 7 · Le pratiche dei due repo di riferimento, misurate su questo
+
+Il DM ha chiesto di usare le pratiche di PRD, ADR e progetto di
+[Infra-Iam-PKI](https://github.com/gsamuele78/Infra-Iam-PKI) e
+[AiAgentInfrastructure](https://github.com/gsamuele78/AiAgentInfrastructure),
+e l'approccio di OpenHands. Nessuno dei due repo ha una cartella
+`.openhands/` o dei *microagent*: l'approccio OpenHands lì è
+l'`AGENTS.md` come fonte unica, che questo repo ha già. Il confronto,
+pratica per pratica, sul repo di oggi:
+
+| Pratica | Dove sta | Qui | Misura |
+|---|---|---|---|
+| Indice degli ADR verificato in CI, ogni ADR con lo stato | AiAgentInfrastructure [.github/workflows/validate.yml](https://github.com/gsamuele78/AiAgentInfrastructure/blob/main/.github/workflows/validate.yml) | **c'è già** | 93 ADR, 0 fuori da `docs/INDEX.md`, 0 senza **Stato**, 0 numeri doppi su `main` (script del 2026-10-10) |
+| Un ADR non si modifica, uno nuovo lo supera | AiAgentInfrastructure [docs/adr/README.md](https://github.com/gsamuele78/AiAgentInfrastructure/blob/main/docs/adr/README.md) | **c'è già** | il modello dice «superata da ADR-NNNN» |
+| Tabella numerata delle decisioni con la conseguenza sul piano | Infra-Iam-PKI [doc/plan/ALIGNMENT-PLAN.md](https://github.com/gsamuele78/Infra-Iam-PKI/blob/main/doc/plan/ALIGNMENT-PLAN.md) | **c'è già** | le tabelle `decisioni-dm` (ADR-0047), 228 decisioni in 20 piani |
+| «Informazioni mancanti» con le risposte datate | AiAgentInfrastructure [docs/PLAN-STACK-VALIDATION.md](https://github.com/gsamuele78/AiAgentInfrastructure/blob/main/docs/PLAN-STACK-VALIDATION.md) | **c'è già** | §0 di questo piano e dei piani recenti |
+| Un controllo non eseguito si scrive «non eseguito», mai «passato» | Infra-Iam-PKI [AGENTS.md](https://github.com/gsamuele78/Infra-Iam-PKI/blob/main/AGENTS.md), «Before you say done» | **c'è già** come norma di condotta | nessun rilevatore: è una regola per chi scrive |
+| **Modello di PR** con la casella «ADR creato e indice aggiornato», *Rollback* e *Note oneste* | AiAgentInfrastructure [.github/pull_request_template.md](https://github.com/gsamuele78/AiAgentInfrastructure/blob/main/.github/pull_request_template.md) | **manca** | nessun file in `.github/` |
+| **Alternative considerate** e **«Da rivedere se»** nel modello di ADR | AiAgentInfrastructure [docs/adr/_template.md](https://github.com/gsamuele78/AiAgentInfrastructure/blob/main/docs/adr/_template.md) | **manca in parte** | `ADR-0000-template.md` ha Contesto, Decisione, Conseguenze; «cosa va rivisitato e quando» è una voce delle conseguenze, senza una condizione |
+| **Numero dell'ADR prenotato** prima del ramo | nessuno dei due: i loro numeri sono sequenziali senza regola | **manca** | il doppio `0086` fra #216 e #230 è nato qui: `--prossimo-adr` guarda solo il disco del ramo, non le PR aperte |
+
+Le tre pratiche che mancano sono D7 e il lotto L7. La terza non è presa dai due
+repo: è il difetto che il confronto ha fatto vedere, e una prenotazione in un
+file su `main` (come `adozioni-in-attesa.json`) la risolve con un controllo in
+più in `validate_docs`.

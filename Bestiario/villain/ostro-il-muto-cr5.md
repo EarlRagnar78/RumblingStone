@@ -7,9 +7,9 @@
 
 ## Summary
 
-Nostromo della Zanna di Bruma. La superstizione della ciurma e' una regola, non colore (ADR-07 dell'avventura), e passa da lui.
+Nostromo della Zanna di Bruma. La superstizione della ciurma è una regola, non colore (ADR-07 dell'avventura), e passa da lui.
 
-Questa voce esiste perche' `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri: senza, una creatura con statistiche scritte non e' raggiungibile da nessuno strumento. Ogni modifica va fatta nel file d'avventura.
+Questa voce esiste perché `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri: senza, una creatura con statistiche scritte non è raggiungibile da nessuno strumento. Ogni modifica va fatta nel file d'avventura.
 
 ## Notes
 

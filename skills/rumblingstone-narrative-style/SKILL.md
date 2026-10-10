@@ -191,6 +191,11 @@ Run the coherence self-check (`campaign-coherence.md` §6) first, then:
    un handout consegnato), non si sovrascrive: si scrive la versione nuova
    accanto e `ciclo_prosa.py revisione ORIGINALE NUOVO -o REVISIONE-….md`
    produce il documento che il DM approva modifica per modifica.
+   Fra un giro e l'altro `ciclo_prosa.py misura ORIGINALE NUOVO` dice di
+   quanto è migliorato, norma per norma e in punti MQM, ed esce 1 se qualcosa
+   peggiora; ci si ferma dopo un giro che non abbassa le segnalazioni, o al
+   terzo. Su più file, `ciclo_prosa.py lotto` prepara un pacchetto per file
+   (estensione di ADR-0077, 2026-10-03).
 
 ---
 

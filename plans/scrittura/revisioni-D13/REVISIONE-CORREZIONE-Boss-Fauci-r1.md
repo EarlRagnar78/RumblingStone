@@ -31,7 +31,7 @@ da seguire a voce o più monotona. Il giudizio resta di chi legge ad alta voce.
 
 | ok | # | riga | prima | dopo | norma | auto |
 |---|---:|---:|---|---|---|:---:|
-| [ ] | 1 | 31 | sembrano assorbire la luce stessa**. | si bevono la luce**. | sembra/pare | ✓ |
+| [x] | 1 | 31 | sembrano assorbire la luce stessa**. | si bevono la luce**. | sembra/pare | ✓ |
 
 ## Il testo con le modifiche (CriticMarkup)
 

@@ -1,6 +1,6 @@
 # Revisione · ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md
 
-<!-- revisione: originale="07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md" riscritto="nel documento" impronta="9fbbf2a73f2ef79a" -->
+<!-- revisione: originale="07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md" riscritto="nel documento" impronta="8a16a23e9f8e4a8e" -->
 
 Si approva modifica per modifica: spuntare `[x]` nella colonna «ok», poi
 `python3 scripts/ciclo_prosa.py applica {questo file}`. Le modifiche non spuntate
@@ -29,12 +29,9 @@ da seguire a voce o più monotona. Il giudizio resta di chi legge ad alta voce.
 
 ## Le modifiche
 
-> ✅ Approvata dal DM il 2026-10-07 e applicata **a mano** nel master: `applica`
-> avrebbe ricostruito il file dal testo di questa revisione, più vecchio.
-
 | ok | # | riga | prima | dopo | norma | auto |
 |---|---:|---:|---|---|---|:---:|
-| [x] | 1 | 1260 | così > forte da sembrare vicino. | forte > come se venisse dalla tenda accanto. | sembra/pare | ✓ |
+| [x] | 1 | 1272 | così > forte da sembrare vicino. | forte > come se venisse dalla tenda accanto. | sembra/pare | ✓ |
 
 ## Il testo con le modifiche (CriticMarkup)
 
@@ -69,7 +66,12 @@ Il testo intero, con le due versioni dentro: `applica` le ricostruisce da qui.
 > **Quando si gioca**: **dopo** la resurrezione di Hella (`DEF-3`):
 > il party è di **4 PG** (Hella tornata), **APL 13 pieno**. Alla vittoria il
 > **Rubino** si accende e riporta i PG al 1372 → **`DEF-5`** (raccordo al
-> Cuore della Montagna). **Canone**: la Corona ha Topazio + Smeraldo (aprono il
+> Cuore della Montagna).
+>
+> **Da dove riparte il gruppo di oggi** `[CANONE — DM 2026-09-27]`: dalla
+> notte del 372, con **3 tacche segnate** (§4, «Dove si riprende»). Consiglio e
+> giro della fortezza sono giocati; il resto della Scena 5 è ancora aperto, poi
+> il campo (Scena 6). Un gruppo nuovo parte dalla Scena 1. **Canone**: la Corona ha Topazio + Smeraldo (aprono il
 > portale del Tempo); il **Rubino si accende SOLO alla vittoria antica**.
 >
 > <!-- storico -->
@@ -165,7 +167,7 @@ Cuore della Montagna, Giorno 3 dell'assedio del 1372).
 ### Le prove di gruppo delle scene a montaggio (party 4, ≥2 successi)
 | Scena | Prova | CD |
 |---|---|---|
-| 3 — la targa | Conoscenze (storia)/Sapienza, o una delle sei porte | 18 |
+| 3 — la targa | non è una prova di gruppo: è il nodo d'indizio della Scena 3. Il Fatto è gratis, la Lettura vuole una porta, il Nome due | 12-18, secondo la porta |
 | 4 — il consiglio | Diplomazia/Intimidire | 20 (16 se hanno il Nome) |
 | 6 — il campo | una prova di gruppo per blocco, cinque blocchi: Muoversi Silenziosamente, poi Nascondersi quando l'invisibilità finisce | 20 · 22; con gli aiuti dimezzati, −2 alle prove (la CD non cambia) |
 | 9 — Vatore | Percepire Intenzioni o Diplomazia · Rapidità di Mano (a seconda dell'approccio) | 18 · 22 |
@@ -277,8 +279,9 @@ descrivi tu in una riga e vai avanti: è un regalo, non un compito.
   non spiegarlo.
 
 ### ⚒️ TORDEK — il pugno che deve trattenersi (Andor support)
-- La **Cintura della Devastazione rifiuta di attivarsi** qui (*«il vero scontro
-  appartiene al futuro»*): è coerenza, non nerf — Tordek deve vincere **senza**
+- La **Cintura della Devastazione rifiuta di attivarsi** contro Skullcrusher,
+  nella Scena 11 (*«il vero scontro appartiene al futuro»*); contro Zog'tar, nella
+  Scena 8, funziona: è coerenza, non nerf — Tordek deve vincere **senza**
   la sua arma migliore, che è riservata a Fauci nel 1372. Beat di disciplina.
 - I **Bracieri** (coscienza) riconoscono la fucina antica di Hammerfist: *«Qui
   è dove tutto è cominciato, ragazzo. Batti bene.»*
@@ -540,7 +543,7 @@ gradi entra:
 
 | Porta | Prova | Cosa vede |
 |---|---|---|
-| 🧠 Sapere | Conoscenze (storia) **CD 18** | la profezia non è nelle cronache che hanno letto nel 1372: **è stata cancellata** |
+| 🧠 Sapere | Conoscenze (storia) **CD 18** | le Cronache che hanno in mano raccontano i Quattro Eroi, ma non dicono che qualcuno li avesse **annunciati**: la profezia della targa, nel 1372, non la ricorda nessuno |
 | 👁️ Guardare | Osservare **CD 15** | i trucioli di bronzo sono ancora per terra sotto la targa |
 | ✋ **Toccare** | **FOR o DES grezza CD 12** — passarci sopra il pollice | il taglio è **vivo**, taglia il polpastrello. Chiunque, nessun grado richiesto |
 | 👃 Annusare | Sopravvivenza **CD 14** o un nano, gratis | odore di metallo caldo: il cesello ha lavorato **stamattina** |
@@ -746,7 +749,7 @@ che comincia, con i PG dove sono in quel momento.
 |---|---|
 | ≤ 6 | in tempo. Si rientra, si schiera, le mura e il duello vanno come scritto. Le tacche che restano prima dell'8 si spendono con la tabella qui sopra, come nella Scena 5: tre ore di sosta (2) ci stanno, otto ore di sonno (6) no. La fucina, la cappella e la bottega sono aperte come nella Scena 5 |
 | 7 | 🟡 si rientra **correndo**: nessun riposo prima del drago, −1 a tutti i TS del primo round del duello (Scena 11) |
-| 8 o più | 🔴 **l'alba vi coglie fuori dalle mura.** Non morite: attraversate un campo che si sta svegliando. Prova di gruppo Muoversi Silenziosamente **CD 20**, poi il duello (Scena 11) comincia con i PG **fuori**. La Scena 10 **non si gioca**: le mura valgono «a stento» (2-3 successi). Se la prova fallisce, il drago ha già scelto il suo bersaglio `[CANONE — DM 2026-09-30, D21]` |
+| 8 o più | 🔴 **l'alba vi coglie fuori dalle mura.** Non morite: attraversate un campo che si sta svegliando. Prova di gruppo Muoversi Silenziosamente **CD 20**, poi il duello (Scena 11) comincia con i PG **fuori**. La Scena 10 **non si gioca**: le mura valgono «a stento» (2-3 successi). Se la prova fallisce, il drago ha già scelto il suo bersaglio `[CANONE — DM 2026-09-30, D21]`: il duello si apre con il suo round di sorpresa, e il soffio va sul PG che ha tirato peggio `[INFERRED — needs DM confirmation]`. ⚠️ Con 3 tacche già spese, una sola scelta lenta porta qui: è la decisione D39 |
 
 ⚠️ **L'orologio corre sulle SCELTE, non sul tempo reale.** Un tavolo che discute
 mezz'ora su cosa fare non spende una tacca; un tavolo che decide di andare a
@@ -877,6 +880,11 @@ gallerie sotto la fucina; cercarlo costa una tacca)*
   dalla fazione del **Collezionista** che viaggia tra i piani e le epoche. I PG
   seminano (senza saperlo) il dilemma etico di Hella su Zeth in ARC-09. Registra
   nell'Echo Ledger (§7) e nel registro di fine serata.
+  **Il chierico incappucciato** non è più in fortezza, e nessuno l'ha visto
+  entrare né uscire. Se i PG lo cercano: le guardie delle porte non hanno fatto
+  passare nessun incappucciato, e nelle gallerie, dove Zeth dice di averlo
+  incontrato, resta solo un odore di cera nera. È la mano del Collezionista
+  attraverso il tempo, e non si incontra in questo arco `[INFERRED — needs DM confirmation]`.
   Le rune che traccia stanotte sui tunnel e sui camminamenti sono **colore**:
   nel 372 non hanno effetto (scrive in fretta, e quelle d'uso le ha date ai
   PG). Nel 1372 sono le difese del Ghostlord `[CANONE — DM 2026-09-30, D30]`.
@@ -1083,8 +1091,9 @@ Come servizio, Brynja lancia lei gli stessi incantesimi al 9° livello (prezzo
 SRD: livello × livello dell'incantatore × 10 mo). La pietra di *silenzio*: la
 lancia su un sasso all'8° livello `[CANONE — DM 2026-09-30, D12]`, 160 mo, e
 dura **8 minuti** (la durata SRD, 1 minuto per livello): copre il volo di
-andata, che con le pozioni di *volare* dura al massimo 5 minuti, e l'ingresso
-nella tenda. Conviene lanciarla alla postierla, non in cappella, perché ogni
+andata, che con le pozioni di *volare* dura al massimo 5 minuti, e
+l'atterraggio. Alla tenda si lascia fuori: a meno di 6 m le guardie si
+accorgono che la loro voce è sparita (Scena 6). Conviene lanciarla alla postierla, non in cappella, perché ogni
 minuto speso a camminare è un minuto tolto sopra il campo;
 *rimuovi paralisi* 180 mo; *rimuovi maledizione* 270 mo. Ogni slot di 3°
 che spende stanotte manca all'alba, come dice la sua scheda.
@@ -1941,8 +1950,9 @@ L'artefatto che stringe al petto è in **Appendice B**.
 > **Il percorso dell'atto.** Dal primo ariete al ritorno. Le mura, il drago che
 > cala sul cortile, il rito all'incudine, la luce del Rubino.
 >
-> 🛑 **La prima sessione<!-- storico --> (la serata del 2026-09-25)<!-- /storico --> si ferma al primo box della Scena 10.** Il resto
-> dell'atto è della sessione dopo.
+> 🛑 **Dove si ferma una serata**: la prima si ferma al primo box della Scena 10,
+> e il resto dell'atto è della sessione dopo. Il gruppo di oggi si è fermato
+> prima, alla Scena 5 (§4, «Dove si riprende»).
 
 | Scena | Dove | Chi entra | Prova |
 |---|---|---|---|
@@ -1989,6 +1999,7 @@ Poi, quando le prime scale arrivano in cima, arriva il capitano delle mura.
 | Chi | Com'è | Come parla |
 |---|---|---|
 | **Hrodgar, il capitano delle mura** `[CANONE — DM 2026-09-26]` | nano con la barba bruciata da un lato, di un'altra battaglia, e un elmo senza cresta perché la cresta si vede da lontano. Vuole tenere il tratto est fino a che il re non gli dice di lasciarlo, e sa dove la pietra è più giovane: lo stesso punto che Balvar ha segnato sulla mappa di Zog'tar | dà gli ordini con una parola sola |
+| **Hald, il nipote di Balvar** `[INFERRED — needs DM confirmation]` | nano di diciannove anni, di guardia sul camminamento est col gruppo di Hrodgar; la barba ancora corta, l'ascia troppo nuova. Non sa che lo zio esiliato è vivo, né che è nel campo di Zog'tar | poco e a bassa voce, da recluta; si drizza quando passa il capitano |
 
 > **Read-aloud (Salvatore lead).** *Il camminamento è largo quanto un tavolo da
 > pranzo e lungo quanto la fortezza. Sotto, l'orda non urla più: ha smesso
@@ -2143,7 +2154,7 @@ cambia davvero.
   **Cicatrice a forma di martello** su un'ala (§7: −2 alla Volare di Fauci nel 1372).
 - **La Catena, in ogni round.** Se i PG sanno della runa (Scena 7), leggerla
   sulla scaglia è un'azione di movimento entro 9 m, e colpirla è un attacco
-  alla CA **+4**: il primo colpo a segno la spezza, e il drago se ne va. Se
+  alla CA **+4** (la CA piena, 33: la runa è sotto la scaglia, e un attacco di contatto non la raggiunge `[INFERRED — needs DM confirmation]`): il primo colpo a segno la spezza, e il drago se ne va. Se
   Balvar è morto prima dell'alba, il drago combatte a **−2** e fugge a metà pf.
 - **Soglia ~⅓ pf (~85) — la prima paura.** Per la prima volta nella sua vita,
   Skullcrusher **esita**. È il momento dei tre esiti (sotto). Se i PG premono,
@@ -2186,18 +2197,26 @@ cambia davvero.
 Il drago resta in cielo dai round 2-3, e la domanda del tavolo arriverà: *«e io
 che non volo?»*. La risposta non è «aspetti». Tre cose, tutte SRD:
 
-- **Preparare un'azione.** L'Attacco in Volo porta Skullcrusher a portata ogni
-  volta che morde o sferza. Chi prepara l'azione *«colpisco quando scende»*
-  colpisce **prima** che risalga. È il gioco di Thorik e di Tordek, e il colpo
-  preparato di Tordek può essere il suo Pugno Stordente.
+- **Preparare un'azione, sul momento giusto.** Il morso ha portata 4,5 m: in
+  volo Skullcrusher morde da lì e risale, e non entra mai nel metro e mezzo di
+  un nano. Un'azione preparata su *«quando scende»* non scatta. Scatta su
+  *«quando le corde lo inchiodano»*: nel round a terra chi l'ha preparata
+  colpisce per primo, poi è attacco completo. È il round di Thorik e di Tordek,
+  e il colpo preparato di Tordek può essere il suo Pugno Stordente.
 - **Le corde delle gru** (la tabella qui sopra). Chi resta a terra è chi le
-  tira: Forza CD 25, gli altri aiutano, e un'ala inchiodata per un round. È il
+  tira: Forza CD 25, gli altri aiutano, e un'ala inchiodata per un round. Il
+  gancio arriva sull'ala così: quando il drago picchia sotto i 9 m, cioè ogni
+  volta che morde qualcuno nel cortile, chi è sul camminamento accanto alla gru
+  lo lancia con un'azione preparata. È un attacco di contatto a distanza,
+  incremento 3 m, contro la CA di contatto del drago (8). Se prende, a terra si
+  tira la corda `[INFERRED — needs DM confirmation]`. È il
   momento in cui il drago smette di essere in cielo per tutti.
 - **Le balestre delle mura.** Sul camminamento ci sono le balestre pesanti dei
   difensori `[INFERRED — needs DM confirmation]`: 1d10, incremento 36 m, un
-  round intero per ricaricarle. Non fanno molto male. Fanno sì che chi non ha
-  gittata non stia fermo, e il drago punisce chi lo punge (*«bersaglio preferito:
-  chi lo ha ferito di più»*): chi tira, attira.
+  round intero per ricaricarle. Contro la sua RD 10/magia un dardo normale non
+  fa danni. Serve ad altro: un colpo a segno, per il suo orgoglio, è un insulto,
+  e il drago si gira su chi l'ha fatto `[INFERRED — needs DM confirmation]`.
+  Chi tira, attira, e lascia respirare chi sta sotto.
 
 Il DM non deve inventare niente di più. Se il giocatore trova una quarta via, è
 §0-ter.
@@ -2467,6 +2486,12 @@ della Corona `[CANONE — DM 2026-09-30, D16]`.
 
 > Sommato a Terra (~11.600) + Affreschi (~1.900) + Resurrezione (~1.900), il
 > party **matura il 14° verso Hammerfist**. Le parti giocate non si ritoccano.
+
+⚠️ **Il conto SRD è più basso.** La tabella dei PX della DMG dà il totale
+dell'incontro, da dividere fra i PG: Skullcrusher (GS 14) contro un gruppo di
+13° vale 5.850 in tutto, cioè circa **1.460 a testa**, e Zog'tar (GS 15) circa
+1.950. Le cifre qui sopra sono premi di storia più generosi. Se il 14° livello
+arriva, arriva per scelta del DM, e non per la tabella: è la decisione D40.
 
 ### B. Tesoro PREGENERATO (i doni di Re Thorek I + il bottino del passato)
 | Dove | Oggetto (pregenerato) | Valore |

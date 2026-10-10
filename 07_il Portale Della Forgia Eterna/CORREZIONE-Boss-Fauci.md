@@ -1,3 +1,4 @@
+<!-- revisione-testo: r1 · 2026-10-03 -->
 # 🐉 CORREZIONE CRITICA: FAUCI DI PALUDE - DRAGO NERO
 
 > **Stato (A6)**: *ricalibrazione* dello statblock di Fauci di Palude. ⚠️
@@ -28,7 +29,7 @@
 
 ## 🎯 DESCRIZIONE CANONICA
 
-> *"Dalle nebbie mattutine emerge una forma colossale. **Fauci di Palude** è un drago nero di antica stirpe, le cui **scaglie sembrano assorbire la luce stessa**. I suoi **occhi gialli brillano di malvagità millenaria**, e dalle sue fauci gocciola un **acido che corrode la pietra stessa**. Sul suo dorso, un cavaliere hobgoblin in armatura nera brandisce uno stendardo con la Mano Rossa del Destino."*
+> *"Dalle nebbie mattutine emerge una forma colossale. **Fauci di Palude** è un drago nero di antica stirpe, le cui **scaglie si bevono la luce**. I suoi **occhi gialli brillano di malvagità millenaria**, e dalle sue fauci gocciola un **acido che corrode la pietra stessa**. Sul suo dorso, un cavaliere hobgoblin in armatura nera brandisce uno stendardo con la Mano Rossa del Destino."*
 
 ---
 

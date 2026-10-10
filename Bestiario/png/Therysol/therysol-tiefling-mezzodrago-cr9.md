@@ -4,7 +4,7 @@
 
 **Faction**: alleati-del-vale | **Role**: ally-skirmisher-caster | **Environment**: urban | **CR**: 9
 > 🔁 **Consolidata il 2026-09-17.** Era una fazione da un membro solo, e
-> descriveva uno **scopo**, non uno schieramento: quello sta gia' in `Role`.
+> descriveva uno **scopo**, non uno schieramento: quello sta già in `Role`.
 > `alleati-del-vale` raccoglie gli alleati dei PG che non appartengono a un
 > gruppo nominato (Cerchio, Starsong, Rethmar, Dauth, Martello di Moradin).
 **Source**: `Bestiario/png/Therysol/Therysol/Therysol.md` (canonical scheda, GS 9, Tiefling Mezzo-Drago Bianco, Esperto 2 / Acolita 6)

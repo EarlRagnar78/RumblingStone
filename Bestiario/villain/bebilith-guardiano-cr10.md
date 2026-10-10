@@ -21,7 +21,7 @@ voci:
   - RD 10/bene
   - Squarciare Armatura, Ferita, plane shift
   - Talenti: Fendere, Iniziativa Migliorata, Lottare Migliorato, Attacco Poderoso, Seguire Tracce
-fonte: SRD — letto dal file citato dalla scheda (`pregen-pcgen/00_cr10_…_SRD_Bebilith - D&D Wiki.htm`); la scheda diceva «CA da SRD» e il numero e' 22, non uno dei valori che si ricordano a memoria
+fonte: SRD — letto dal file citato dalla scheda (`pregen-pcgen/00_cr10_…_SRD_Bebilith - D&D Wiki.htm`); la scheda diceva «CA da SRD» e il numero è 22, non uno dei valori che si ricordano a memoria
 ```
 
 > [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.

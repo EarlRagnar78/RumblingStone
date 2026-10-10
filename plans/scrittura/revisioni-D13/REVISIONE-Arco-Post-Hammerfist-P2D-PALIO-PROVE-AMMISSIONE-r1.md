@@ -31,7 +31,7 @@ da seguire a voce o più monotona. Il giudizio resta di chi legge ad alta voce.
 
 | ok | # | riga | prima | dopo | norma | auto |
 |---|---:|---:|---|---|---|:---:|
-| [ ] | 1 | 98 | sembra… > respirare.* | si gonfia > e si sgonfia.* | sembra/pare, tic minori in gruppo | — |
+| [x] | 1 | 98 | sembra… > respirare.* | si gonfia > e si sgonfia.* | sembra/pare, tic minori in gruppo | — |
 
 ## Il testo con le modifiche (CriticMarkup)
 

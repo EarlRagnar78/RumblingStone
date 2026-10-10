@@ -54,7 +54,7 @@ a contrada; c'è mezza città sui gradini a guardare gratis.
 
 **Ombra, in contemporanea**: Addestrare Animali CD 14 per capire in che stato è
 davvero il cavallo. Riuscendo, sa che ha bisogno di **ferri nuovi** — 12 mo dal
-maniscalco del Torre, che li fa bene, o 4 dal maniscalco del Bruco,
+maniscalco della Torre, che li fa bene, o 4 dal maniscalco del Bruco,
 che li fa in fretta. *(Il secondo li fa storti. Non per malizia: ha ottant'anni.)*
 
 **Chi altro c'è in pista**: Barbanera prova due volte e se ne va; il fantino della
@@ -304,7 +304,7 @@ che passa in mezzo alle tavole perché è tradizione che passi.
    che il fieno di domani non arriva: il Bruco ha comprato tutto il carico.
    Ombra ha due ore per trovarne altrove (Diplomazia CD 15 con i battellieri se c'è
    il patto con Barbanera; Sopravvivenza CD 16 per tagliarne di fresco; 30 mo per
-   comprarlo dal Torre).
+   comprarlo dalla Torre).
 4. **Rasca**, se Berenice è scesa dal palco (§3), la trova qui. Cinque minuti, due
    sedie, tutto il tavolo in ascolto.
 

@@ -1,3 +1,4 @@
+<!-- revisione-testo: r1 · 2026-10-03 -->
 # ARC-07 · DEFINITIVO #1 — IL PIANO DELLA TERRA & TERROS L'ANTICO
 ## Il Portale della Forgia Eterna — Seconda Gemma (Smeraldo della Forza)
 
@@ -1232,7 +1233,7 @@ poi vale la **MAPPA T-6**.
 > istante avete la sensazione insopportabile che il mondo abbia deciso **dove
 > deve stare il suo centro** — e che il centro sia il posto dove state voi.
 > L'Altare si ferma. È esattamente in mezzo alla bolla, sospeso in un nulla
-> che da qui pare più grande di prima.*
+> più largo di prima.*
 >
 > *La porta da cui siete entrati è adesso un cerchio di luce lontano, di là
 > da un vuoto senza appigli. E la collina si sta ancora alzando.*

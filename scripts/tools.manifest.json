@@ -1750,6 +1750,67 @@
       "idempotent": true
     },
     {
+      "id": "memoria",
+      "path": "scripts/memoria.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/memoria.py [--check]",
+      "summary": "ADR-0087: la memoria del lavoro in un posto solo. Genera MEMORIA.md nella radice leggendo le fonti che hanno già la loro casa: le decisioni aperte (decisioni_dm), la lista viva di STATO-E-ORDINE §0, le revisioni della prosa ancora da approvare, il CHANGELOG recente, il registro dei miglioramenti. Nessuna data e nessuna rete: lo stesso repo dà lo stesso file, e --check in CI lo boccia quando resta indietro.",
+      "use_case": "«Sono in una sessione nuova: cosa aspetta il DM, da dove riparto, cosa è stato fatto, senza perdere niente di quello che le sessioni prima hanno deciso?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il cancello: esce 1 se MEMORIA.md non è quella che il repo genera."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/scrittura/miglioramenti.json",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "MEMORIA.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "MEMORIA.md indietro rispetto al repo (con --check)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Nessuna data di generazione: a parità di fonti il file esce byte-identico, ed è il presupposto del --check."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true
+    },
+    {
       "id": "derive_statblocks",
       "path": "scripts/derive_statblocks.py",
       "category": "E-bestiary-catalog",
@@ -8496,8 +8557,8 @@
       "path": "scripts/ciclo_prosa.py",
       "category": "G-orchestration-governance",
       "language": "python",
-      "invocation": "python3 scripts/ciclo_prosa.py {segnala FILE [--languagetool URL] | revisione ORIGINALE RISCRITTO [-o REVISIONE.md] | applica REVISIONE.md --data AAAA-MM-GG [--auto]}",
-      "summary": "L12 (D15 e D16 del 2026-10-02, ADR-0077): dal segnalare al correggere, con una revisione a due giri come fra revisore e autore. `segnala` riusa i rilevatori registrati e aggiunge la regola «debole da solo» di Humanizer (tic minori diversi nello stesso paragrafo); `revisione` scrive il documento da approvare, con ogni modifica in CriticMarkup, numerata, motivata da una norma, e le due garanzie (nessun controllo peggiora, nessun fatto cambia); `applica` porta nell'originale solo le modifiche spuntate, mai su main, e alza la riga `revisione-testo: rN`. Il documento riporta anche la lettura prima e dopo (indice Gulpease e ritmo delle frasi); con `--auto` si applicano senza lettore le modifiche motivate che, da sole, non cambiano un fatto, non peggiorano un controllo e non peggiorano la lettura, e il documento le segna `[x] auto`. LanguageTool (LGPL) è un servizio facoltativo, mai in CI.",
+      "invocation": "python3 scripts/ciclo_prosa.py {segnala FILE [--languagetool URL] | revisione ORIGINALE RISCRITTO [-o REVISIONE.md] | applica REVISIONE.md --data AAAA-MM-GG [--auto] | lotto FILE... -o CARTELLA | misura ORIGINALE RISCRITTO | registro [--check] | rigenera REVISIONE.md}",
+      "summary": "L12 (D15 e D16 del 2026-10-02, ADR-0077): dal segnalare al correggere, con una revisione a due giri come fra revisore e autore. `segnala` riusa i rilevatori registrati e aggiunge la regola «debole da solo» di Humanizer (tic minori diversi nello stesso paragrafo); `revisione` scrive il documento da approvare, con ogni modifica in CriticMarkup, numerata, motivata da una norma, e le due garanzie (nessun controllo peggiora, nessun fatto cambia); `applica` porta nell'originale solo le modifiche spuntate, mai su main, e alza la riga `revisione-testo: rN`. Il documento riporta anche la lettura prima e dopo (indice Gulpease e ritmo delle frasi); con `--auto` si applicano senza lettore le modifiche motivate che, da sole, non cambiano un fatto, non peggiorano un controllo e non peggiorano la lettura, e il documento le segna `[x] auto`. LanguageTool (LGPL) è un servizio facoltativo, mai in CI. Dal 2026-10-03 (estensione di ADR-0077) misura anche di quanto la prosa è migliorata: il documento di revisione porta il punteggio MQM e le segnalazioni norma per norma prima e dopo, con la garanzia che MQM non scenda; `lotto` prepara per ogni file il pacchetto da riscrivere e la classifica per MQM; `misura` dà il delta fra un giro di riscrittura e l'altro; `applica` scrive ogni revisione in `plans/scrittura/miglioramenti.json`, e `registro --check` è il cancello in CI. MQM richiede pyyaml: senza, il ciclo funziona e il punteggio manca.",
       "use_case": "«Cosa è cambiato rispetto all'originale, perché, e cosa resta da correggere dopo che ho approvato?»",
       "stability": "beta",
       "stdlib_only": true,
@@ -8566,6 +8627,51 @@
           "choices": null,
           "repeatable": false,
           "desc": "Applica anche le modifiche segnate «auto» e lo scrive nel documento di revisione."
+        },
+        {
+          "name": "lotto FILE...",
+          "type": "subcommand",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "I pacchetti da riscrivere, uno per file, e la classifica dei file per punteggio MQM."
+        },
+        {
+          "name": "misura ORIGINALE RISCRITTO",
+          "type": "subcommand",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Di quanto il riscritto migliora l'originale, norma per norma e in punti MQM; esce 1 se qualcosa peggiora."
+        },
+        {
+          "name": "registro",
+          "type": "subcommand",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "I miglioramenti applicati, uno per revisione, con il totale."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con `registro`: il cancello, esce 1 se una revisione applicata ha peggiorato la misura."
+        },
+        {
+          "name": "rigenera REVISIONE.md",
+          "type": "subcommand",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Quando l'originale è cambiato dopo la revisione: le stesse modifiche riportate sul testo di oggi, e il documento riscritto con le spunte azzerate."
         }
       ],
       "inputs": [

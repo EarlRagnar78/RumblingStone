@@ -1,3 +1,4 @@
+<!-- revisione-testo: r1 · 2026-10-03 -->
 # IL PORTALE DELLA FORGIA ETERNA
 
 ## PARTE 1 - La Stanza della Corona (REVISED - Post-Battaglia)
@@ -383,7 +384,7 @@ I PG hanno appena combattuto una battaglia devastante nella **Stanza della Coron
 
 > *Hella giace immobile sul pavimento di pietra. I suoi occhi, un tempo vivaci e pieni di determinazione druidica, sono chiusi. Il sangue ha smesso di scorrere - la morte è stata istantanea. La spada del yochlol l'ha trapassata al cuore, uccidendola prima che potesse sentire dolore.*
 >
-> *Ma c'è qualcosa di... strano. Il suo volto non mostra sofferenza. Sembra... serena. Come se, nel momento finale, avesse accettato il destino. E sotto la sua pelle pallida, una LUCE verde pallida pulsa debolmente - energia druidica, energia vitale, che non si è ancora dissipata completamente.*
+> *Ma c'è qualcosa di... strano. Il suo volto non mostra sofferenza. È... serena. Come se, nel momento finale, avesse accettato il destino. E sotto la sua pelle pallida, una LUCE verde pallida pulsa debolmente - energia druidica, energia vitale, che non si è ancora dissipata completamente.*
 >
 > *Il suo spirito è ancora QUI. Legato al corpo. Legato al mondo. Come se sapesse che il suo viaggio non è finito.*
 
@@ -615,7 +616,7 @@ Possibili risposte e reazioni Moradin:
 
 **FINE VISIONE:**
 
-> *E poi... torni. Blink. Sei di nuovo nella Stanza della Corona. La tua mano è ancora sulla Corona. Sono passati solo... secondi. Ma sembra un'eternità.*
+> *E poi... torni. Blink. Sei di nuovo nella Stanza della Corona. La tua mano è ancora sulla Corona. Sono passati solo... secondi. Dentro, un'eternità.*
 >
 > *Tordek e Artemis ti guardano confusi. Non hanno VISTO la visione - era solo per te. Ma vedono cambiamento in te. Determinazione nuova. Scopo.*
 >

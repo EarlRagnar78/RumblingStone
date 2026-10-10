@@ -324,8 +324,16 @@ def main(argv: "list[str] | None" = None) -> int:
             print(f"  ⏳ da decidere: {p}")
         for voce in esito["senza_posto"]:
             print(f"  ✗ senza posto: {voce['percorso']}  ← {', '.join(voce['rami'])}")
-        for p in esito["scadute"]:
-            print(f"  ⚠ nel registro ma non piu' nei rami (arrivato? ramo tolto?): {p}")
+        # Senza --fetch il clone non ha le teste delle PR chiuse: una voce che
+        # non trova il suo ramo puo' solo essere non scaricata, e potarla perde
+        # il posto dei file di quella PR (la #72, potata il 2026-10-07 e
+        # ripristinata da PIANO-RECUPERO L2). Le scadute si leggono solo con --fetch.
+        if args.fetch:
+            for p in esito["scadute"]:
+                print(f"  ⚠ nel registro ma non piu' nei rami (arrivato? ramo tolto?): {p}")
+        elif esito["scadute"]:
+            print(f"  ○ {len(esito['scadute'])} voci senza il loro ramo in questo clone: "
+                  "si giudicano solo con --fetch, mai si potano senza")
         if not esito["senza_posto"]:
             print("✓ ogni file mai arrivato ha un posto nel registro")
     return 1 if (args.check and esito["senza_posto"]) else 0

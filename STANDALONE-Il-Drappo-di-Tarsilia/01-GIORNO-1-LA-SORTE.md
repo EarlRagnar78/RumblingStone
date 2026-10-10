@@ -228,7 +228,7 @@ per la bilancia. Rubarne un quarto è un colpo notturno da manuale.
 **Se riesce**: 100 mo. **E**: il guado rubato è riconoscibile — un colore
 particolare — e alla bilancia se ne accorge **Attu**, non Vesca. Attu non dice
 niente. Se lo tiene. *(Riemerge al Giorno 3, §7.)*
-**Se fallisce**: la milizia del Torre arresta chi prende, 50 mo di cauzione,
+**Se fallisce**: la milizia della Torre arresta chi prende, 50 mo di cauzione,
 **Morale −2** e la contrada viene ammessa lo stesso, con una nota sul registro.
 
 > **Se il tavolo trova una quinta via**, dàgliela. Il Peso è un problema di
@@ -315,7 +315,7 @@ diventare un'altra cosa.
 più all'ospizio, che è **di un'altra contrada** e che Melchio curerà lo stesso —
 la piazza lo saprà. **Morale +1** se lo cura, **−1** se lo caccia.
 
-**Sviluppi**: se un PG uccide un tintore, la milizia del Torre arresta il PG.
+**Sviluppi**: se un PG uccide un tintore, la milizia della Torre arresta il PG.
 Ubalda Trenchi non fa sconti a nessuno e la contrada corre in cinque. Il modulo
 regge: si gioca il Giorno 2 con un PG in cella e una missione in più.
 

@@ -9,8 +9,8 @@
 
 Le cavalcature/segugi corrotti del raid di Sonjak alla Stanza della Corona (ARC-06). Versione potenziata del worg, con template fiendish.
 
-Questa voce esiste perche' `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri: senza, una creatura con statistiche scritte non e' raggiungibile da nessuno strumento. Ogni modifica va fatta nel file d'arco.
+Questa voce esiste perché `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri: senza, una creatura con statistiche scritte non è raggiungibile da nessuno strumento. Ogni modifica va fatta nel file d'arco.
 
 ## Notes
 
-Dallo stesso documento di Urialle e delle Yochlol: `villans.md` e' l'elenco dei «villain potenziati» del raid.
+Dallo stesso documento di Urialle e delle Yochlol: `villans.md` è l'elenco dei «villain potenziati» del raid.

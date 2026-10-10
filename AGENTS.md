@@ -59,6 +59,14 @@ generated artifacts of `scripts/build-skills.sh` and are gitignored.
 `.hb.md` files are generated Homebrewery layouts (`plans/adr/ADR-0003`):
 regenerate via `dm.py recap --hype` / `dm.py handout`, never edit by hand.
 
+> **Agenti e DM, per ripartire: prima [`MEMORIA.md`](MEMORIA.md).** È la
+> memoria del lavoro in una pagina (decisioni aperte, revisioni da approvare,
+> cosa è in corso, cosa è stato fatto), generata da `python3 scripts/memoria.py`
+> e tenuta allineata dalla CI ([ADR-0087](plans/adr/ADR-0087-la-memoria-del-lavoro-e-generata.md)).
+> Non si scrive a mano: si corregge la fonte che indica, poi si rigenera. E
+> niente di utile resta nello scratchpad di una sessione: prima di chiudere
+> entra nel repo.
+
 > **DMs: start with `campaign/DM-CAMPAIGN-PLAYBOOK.md`.** It contains the
 > pre/during/post-session workflow, worked examples for session files and
 > `state.md` diffs, the `§0 Campaign Status At-a-Glance` dashboard, and the
@@ -149,7 +157,7 @@ e una riscrittura è esattamente il momento in cui serve.
 | 5 · Ogni PNG nominato ha un *Want* che non riguarda i PG? | congegno `grigio politico` |
 | 6 · La rete d'indizi è ridondante, e la risposta sbagliata porta comunque da qualche parte? | congegni `nodo d'indizio` + `modi di fallimento` |
 | 7 · **Qualche box è cresciuto oltre il tetto perché la prosa era venuta bene?** *(→ taglia; vince il tetto)* | `misura_craft --box`, colonna `>12 righe` |
-| 8 · Ho corretto quello che la misura segnala, e rimisurato? Su un file che c'era già, il DM può approvare le modifiche una per una? | `ciclo_prosa.py segnala` → `revisione` → `applica [--auto]` ([ADR-0077](plans/adr/ADR-0077-revisione-a-due-giri.md)) |
+| 8 · Ho corretto quello che la misura segnala, e rimisurato? Su un file che c'era già, il DM può approvare le modifiche una per una? | `ciclo_prosa.py segnala` (o `lotto`, su più file) → `misura` a ogni giro → `revisione` → `applica [--auto]` ([ADR-0077](plans/adr/ADR-0077-revisione-a-due-giri.md)) |
 
 🔎 **La settima non è un esempio scelto a caso: è quella che ho fallito.** La
 riscrittura di `ARC07-DEF-4` del 2026-09-18 ha lasciato un box da **15 righe**

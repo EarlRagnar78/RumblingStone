@@ -9,7 +9,7 @@
 
 Avversari dell'Encounter 1 della Quest di Hella: estratto 3.5 nel file d'arco.
 
-Questa voce esiste perche' `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri.
+Questa voce esiste perché `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri.
 
 ## Notes
 

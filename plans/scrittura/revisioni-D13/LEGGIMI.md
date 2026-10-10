@@ -2,8 +2,15 @@
 
 D13 (2026-10-01): nel read-aloud niente «sembra» né «pare», perché dicono al
 tavolo che il narratore non sa cosa c'è. Questi undici documenti propongono la
-correzione, file per file. **Niente è stato applicato**: i master restano come
-sono finché il DM non approva (ADR-0077).
+correzione, file per file.
+
+✅ **Approvato dal DM il 2026-10-03 e applicato**: tutte le 27 modifiche, le
+quattro da guardare comprese. Due documenti (DEF-4 e ARC08-01) sono stati
+rigenerati sul testo di oggi prima di applicarli, perché i due master erano
+cambiati dopo la revisione; le modifiche sono le stesse. Il conto è in
+`plans/scrittura/miglioramenti.json`: segnalazioni da 293 a 265, punteggio MQM
++2,52 punti sugli undici file. Sui tre box «sembra… e invece» il DM ha deciso
+con D17: restano.
 
 ## Come si approva
 

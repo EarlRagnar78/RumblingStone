@@ -27,7 +27,7 @@ voci:
   - Preparati — 1°: armatura magica, riduzione dei nemici, scudo, sonno · 2°: immagine speculare, invisibilità, raggio di indebolimento, risata incontenibile di Tasha · 3°: dissolvi magie, lentezza, vento vorticoso, volare · 4°: confusione, muro di fuoco, porta dimensionale, terreno illusorio · 5°: dominare persone, muro di forza, nube mortale, telecinesi · 6°: catena di dissolvimenti, disintegrazione, occhio arcano superiore · 7°: dito della morte, inversione della gravità, prigione · 8°: campo antimagia, labirinto, urlo doloroso · 9°: arresto del tempo, desiderio limitato, sfera di annichilimento
   - ⚠ **Non è inteso per lo scontro fisico.** La scheda dichiara GS 17-19 e dice che il villain non combatte mai in campo aperto: questi numeri servono se i PG lo mettono all'angolo, non a progettare un incontro
   - Rakshasa Ak'chazar avanzato: RD 15/bene e perforante, cambiare forma, individuazione del pensiero a volontà
-  - ⚠ Il blocco conta i soli livelli di classe. I 7 DV razziali da esterno del rakshasa e la RD non ci sono dentro: vanno aggiunti prima di usarlo come boss (e non e' previsto che lo sia)
+  - ⚠ Il blocco conta i soli livelli di classe. I 7 DV razziali da esterno del rakshasa e la RD non ci sono dentro: vanno aggiunti prima di usarlo come boss (e non è previsto che lo sia)
   - Amuleto dell'Eclissi Planare: vuoto mentale e anti-individuazione continui a LI 20 — nemmeno la visione del vero lo smaschera
 fonte: derivato-SRD 3.5 dai parametri dichiarati dalla scheda (tipo=outsider, taglia=medium, ruolo=controllore, classe=('stregone', 18), elite=True, gs=18); derivati: ca, pf, ts. ADR-0034 — proposta da rileggere al tavolo
 ```

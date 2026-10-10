@@ -1,3 +1,4 @@
+<!-- revisione-testo: r1 · 2026-10-03 -->
 
 # **LA BATTAGLIA DI HAMMERFIST - GUIDA COMPLETA E DEFINITIVA DEL DM**
 ## *Manuale Consolidato di Unità, Mappe e Statistiche Dettagliate (D&D 3.5 - Ambientazione Faerûn)*
@@ -149,7 +150,7 @@ SIMBOLI TATTICI:
 
 #### **🐉 FAUCI DI PALUDE (Drago Nero Adulto Avanzato, GS 15)**
 **Descrizione da Leggere:**
-> *"Dalle nebbie mattutine emerge una forma colossale. 'Fauci di Palude' è un drago nero di antica stirpe, le cui scaglie sembrano assorbire la luce stessa. I suoi occhi gialli brillano di malvagità millenaria, e dalle sue fauci gocciola un acido che corrode la pietra stessa. Sul suo dorso, un cavaliere hobgoblin in armatura nera brandisce uno stendardo con la Mano Rossa del Destino."*
+> *"Dalle nebbie mattutine emerge una forma colossale. 'Fauci di Palude' è un drago nero di antica stirpe, le cui scaglie si bevono la luce. I suoi occhi gialli brillano di malvagità millenaria, e dalle sue fauci gocciola un acido che corrode la pietra stessa. Sul suo dorso, un cavaliere hobgoblin in armatura nera brandisce uno stendardo con la Mano Rossa del Destino."*
 
 *NM Drago Enorme (Acqua)*
 **Caratteristiche:** For 31, Des 10, Cos 25, Int 16, Sag 17, Car 16
@@ -1138,7 +1139,7 @@ I PG possono scegliere di aiutare in diverse aree:
 
 #### 🌩️ **Incontro 1E: Presagi Funesti**
 **Leggere ai Giocatori:**
-> *"La notte prima dell'assalto, fenomeni innaturali cominciano a manifestarsi. Il vento porta il puzzo di morte e zolfo, gli animali selvatici fuggono dalle montagne, e le stelle sembrano più deboli. Dall'alto delle mura, potete vedere migliaia di torce nemiche che puntellano la vallata come un mare di fuoco. I tamburi di guerra battono incessantemente, e occasionalmente, un ruggito terrificante echeggia tra le vette - il drago sta annunciando la sua presenza."*
+> *"La notte prima dell'assalto, fenomeni innaturali cominciano a manifestarsi. Il vento porta il puzzo di morte e zolfo, gli animali selvatici fuggono dalle montagne, e le stelle sono più deboli. Dall'alto delle mura, potete vedere migliaia di torce nemiche che puntellano la vallata come un mare di fuoco. I tamburi di guerra battono incessantemente, e occasionalmente, un ruggito terrificante echeggia tra le vette - il drago sta annunciando la sua presenza."*
 
 **Eventi Speciali:**
 - **Se presente un Warlock:** Sente la presenza di magia demoniaca (Generale Grimjaw)
@@ -1525,7 +1526,7 @@ FASE 2: ASSALTO DIRETTO (Round 6-10)
 ### 🛡️ **Round 11-12: Le Cantitrici della Pietra**
 
 **Leggere:**
-> *"Dal Tempio interno emerge un canto possente che fa tremare le fondamenta della montagna. Le Cantitrici della Pietra, guidate da Melodia Echopietra, si dispongono in formazione pentagonale al centro del cortile. Le loro voci si uniscono in un'armonia che sembra scaturire dalle profondità della terra stessa. Le pietre iniziano a vibrare, e i nemici che si avvicinano vengono travolti da onde soniche che spezzano ossa e frantumano armature."*
+> *"Dal Tempio interno emerge un canto possente che fa tremare le fondamenta della montagna. Le Cantitrici della Pietra, guidate da Melodia Echopietra, si dispongono in formazione pentagonale al centro del cortile. Le loro voci si uniscono in un'armonia che sale dalle profondità della terra. Le pietre iniziano a vibrare, e i nemici che si avvicinano vengono travolti da onde soniche che spezzano ossa e frantumano armature."*
 
 **INCONTRO ÉLITE 2D: Proteggere le Cantitrici**
 Le Cantitrici devono completare il loro rituale (5 round) ma sono vulnerabili durante il canto.
@@ -1910,7 +1911,7 @@ Superata l'imboscata, la colonna riprende la marcia verso nord: l'antica porta d
 ### 🕳️ **Il Cuore della Montagna**
 
 **Leggere:**
-> *"Attraverso un'antica porta di mithral ornata di rune che brillano di luce propria, si apre il Cuore della Montagna. È una caverna naturale di bellezza mozzafiato: il soffitto si perde nell'oscurità sopra le vostre teste, mentre stalattiti di cristallo riflettono la luce delle torce in mille colori. Al centro si erge un altare di pietra nera dedicato a Moradin, circondato dalle statue di dieci re nanici con occhi di rubino che sembrano seguire ogni vostro movimento. Questo è il luogo più sacro di Hammerfist, dove riposano gli spiriti degli antenati."*
+> *"Attraverso un'antica porta di mithral ornata di rune che brillano di luce propria, si apre il Cuore della Montagna. È una caverna naturale di bellezza mozzafiato: il soffitto si perde nell'oscurità sopra le vostre teste, mentre stalattiti di cristallo riflettono la luce delle torce in mille colori. Al centro si erge un altare di pietra nera dedicato a Moradin, circondato dalle statue di dieci re nanici con occhi di rubino: da qualunque punto della caverna, uno di loro vi guarda. Questo è il luogo più sacro di Hammerfist, dove riposano gli spiriti degli antenati."*
 
 
 <div style="page-break-before:always"></div>
@@ -2165,7 +2166,7 @@ TERZA ONDATA - INFILTRAZIONE (Round 7-8)
 
 #### **INCONTRO 3C: Il Miracolo della Sfera**
 **Il Momento Epico - Leggere Lentamente:**
-> *"Proprio quando tutto sembra perduto, quando gli orchi sfondano l'ultima barricata e si gettano urlando verso l'altare sacro, accade qualcosa di miracoloso. L'aria al centro della caverna inizia a brillare di un calore intenso. Una sfera di metallo fuso si materializza dal nulla, sospesa a tre metri dal suolo, irradiando una luce dorata che fa impallidire le torce. Il calore è così intenso che gli orchi più vicini indietreggiano istintivamente, proteggendosi gli occhi."*
+> *"Proprio quando gli orchi sfondano l'ultima barricata e si gettano urlando verso l'altare sacro, accade qualcosa di miracoloso. L'aria al centro della caverna inizia a brillare di un calore intenso. Una sfera di metallo fuso si materializza dal nulla, sospesa a tre metri dal suolo, irradiando una luce dorata che fa impallidire le torce. Il calore è così intenso che gli orchi più vicini indietreggiano istintivamente, proteggendosi gli occhi."*
 
 > *"La sfera pulsa una, due, tre volte come un cuore gigante di fuoco. Poi ESPLODE in una cascata di scintille dorate che illuminano ogni angolo della caverna. Quando la luce si attenua, quattro figure emergono dal metallo fuso: il leggendario Guerriero della Corona di Adamantio, l'antica Druida della Pietra Vivente, il Monaco del Pugno Distruttore, e il Warlock delle Ombre Benedette."*
 
@@ -2449,7 +2450,7 @@ RESA DEI CONTI FINALE (Round 14-15)
 ## *Quando i Cieli si Aprono*
 
 ### **INTRODUZIONE SESSIONE 4:**
-> *"Dopo mezza giornata di battaglia sotterranea, voi e i nani superstiti emergete finalmente all'aria aperta sui bastioni esterni di Hammerfist. Lo spettacolo che vi accoglie è al tempo stesso terrificante e magnifico. Davanti a voi, i resti dell'esercito della Mano Rossa - ancora oltre 400 creature - sono disposti in formazioni difensive, ma qualcosa di straordinario sta accadendo nel cielo sopra di loro. Nubi nere si addensano con velocità innaturale, formando una tempesta che sembra avere vita propria."*
+> *"Dopo mezza giornata di battaglia sotterranea, voi e i nani superstiti emergete finalmente all'aria aperta sui bastioni esterni di Hammerfist. Lo spettacolo che vi accoglie è al tempo stesso terrificante e magnifico. Davanti a voi, i resti dell'esercito della Mano Rossa - ancora oltre 400 creature - sono disposti in formazioni difensive, ma qualcosa di straordinario sta accadendo nel cielo sopra di loro. Nubi nere si addensano con velocità innaturale, formando una tempesta che si muove contro il vento."*
 
 ### 🌩️ **L'Arrivo della Tempesta CELESTIALE**
 
@@ -2465,7 +2466,7 @@ RESA DEI CONTI FINALE (Round 14-15)
 
 #### **INCONTRO 4B: L'Arrivo dei Gufi**
 **Il Momento Cinematico - Leggere con Enfasi:**
-> *"Dalle nubi tempestose emergono sagome magnifiche: dodici gufi giganti dalle piume che brillano di luce celestiale, ognuno con un ranger elfico in sella che tiene pronto l'arco. Ma è il tredicesimo gufo che vi toglie il fiato. È enorme, con un'apertura alare di almeno otto metri, e le sue piume sembrano tessute di luce stellare. Sul suo dorso, due figure: un druido dalle vesti ornate di fulmini e un bardo mezzelfo che suona una lira che scintilla ad ogni nota."*
+> *"Dalle nubi tempestose emergono sagome magnifiche: dodici gufi giganti dalle piume che brillano di luce celestiale, ognuno con un ranger elfico in sella che tiene pronto l'arco. Ma è il tredicesimo gufo che vi toglie il fiato. È enorme, con un'apertura alare di almeno otto metri, e le sue piume sono tessute di luce stellare. Sul suo dorso, due figure: un druido dalle vesti ornate di fulmini e un bardo mezzelfo che suona una lira che scintilla ad ogni nota."*
 
 > *"'VENITE, FRATELLI DEL CIELO!' tuona il druido, la sua voce che compete con il rombo del tuono. 'OGGI INSEGNIAMO A QUESTI VERMI COSA SIGNIFICA SFIDARE LA NATURA STESSA!' Il bardo pizzica le corde della sua lira magica, e ogni nota libera un fulmine che si scaglia con precisione mortale sui ranghi nemici. I gufi emettono richiami acuti che fanno tremare l'aria, e i loro occhi dorati brillano della giustizia celestiale."*
 
@@ -2586,7 +2587,7 @@ Mentre gli alleati aerei ingaggiano il drago, i PG e i nani combattono i resti d
 **Fasi del Duello:**
 
 **FASE 1 - Apertura (Round 1-2):**
-> *"Il primo scontro è spettacolare. Fauci di Palude sprigiona il suo soffio acido, ma i gufi celestiali lo evitano con grazia soprannaturale, le loro piume che sembrano respingere il veleno corrosivo. Signore Ventolesto affonda gli artigli nel fianco sinistro del drago, strappando scaglie grandi come scudi, mentre i suoi compagni attaccano le ali per limitarne la manovrabilità."*
+> *"Il primo scontro è spettacolare. Fauci di Palude sprigiona il suo soffio acido, ma i gufi celestiali lo evitano con grazia soprannaturale, e il veleno scivola sulle loro piume come pioggia su una tegola. Signore Ventolesto affonda gli artigli nel fianco sinistro del drago, strappando scaglie grandi come scudi, mentre i suoi compagni attaccano le ali per limitarne la manovrabilità."*
 
 **FASE 2 - Il Druido Salta (Round 3):**
 > *"In un momento di pura follia eroica, Orion Pelleorsa si alza in piedi sul dorso del gufo. Per un istante rimane sospeso nel vuoto, alto trenta metri dal suolo, poi si getta nel vuoto con un grido che è parte preghiera e parte sfida. Mentre cade, il suo corpo si trasforma: braccia che si allungano, pelliccia nera che spunta, artigli che crescono. Atterra sulla schiena di Fauci di Palude non più come uomo, ma come un orso nero gigantesco dalle zanne affilate come rasoi."*

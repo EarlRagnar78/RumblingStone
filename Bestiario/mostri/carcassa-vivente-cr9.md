@@ -9,7 +9,7 @@
 
 Il resto animato degli esperimenti di ceremorfosi falliti, nella Tomba di Belkram (ARC-04). Una sola nella stanza.
 
-Questa voce esiste perche' `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri: senza, una creatura con statistiche scritte non e' raggiungibile da nessuno strumento. Ogni modifica va fatta nel file d'arco.
+Questa voce esiste perché `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri: senza, una creatura con statistiche scritte non è raggiungibile da nessuno strumento. Ogni modifica va fatta nel file d'arco.
 
 ## Notes
 

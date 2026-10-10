@@ -389,10 +389,44 @@ def numeri_adr() -> "dict[str, list[str]]":
     return fuori
 
 
+#: I numeri ADR prenotati da un ramo o da una PR prima del merge (D7 di
+#: PIANO-RECUPERO, 2026-10-10). `--prossimo-adr` guarda il disco del ramo in
+#: cui gira: due rami aperti nello stesso giorno ricevevano lo stesso numero,
+#: ed e' cosi' che `ADR-0086` e' nato due volte (#216 e #230).
+PRENOTAZIONI_ADR = "plans/adr-prenotati.json"
+
+
+def prenotazioni_adr(percorso: "Path | None" = None) -> "list[dict]":
+    """Le prenotazioni: `numero` (4 cifre), `slug`, `chi`, `dal`."""
+    f = percorso or ROOT / PRENOTAZIONI_ADR
+    if not f.is_file():
+        return []
+    dati = json.loads(f.read_text(encoding="utf-8"))
+    return dati.get("prenotati", [])
+
+
 def prossimo_adr() -> str:
-    """Il primo numero libero: quello che chi scrive un ADR nuovo deve usare."""
-    usati = numeri_adr()
-    return f"ADR-{max((int(n) for n in usati), default=0) + 1:04d}"
+    """Il primo numero libero: dopo l'ultimo sul disco e l'ultimo prenotato."""
+    usati = [int(n) for n in numeri_adr()]
+    usati += [int(v["numero"]) for v in prenotazioni_adr()]
+    return f"ADR-{max(usati, default=0) + 1:04d}"
+
+
+def adr_prenotati_in_conflitto() -> list[dict]:
+    """Un numero prenotato non si usa per un'altra decisione, e una
+    prenotazione arrivata su disco si toglie nello stesso commit."""
+    fuori = []
+    numeri = numeri_adr()
+    for v in prenotazioni_adr():
+        for nome in numeri.get(v["numero"], []):
+            atteso = f"ADR-{v['numero']}-{v['slug']}.md"
+            motivo = ("prenotazione arrivata: toglierla da " + PRENOTAZIONI_ADR
+                      if nome == atteso else
+                      f"numero prenotato da {v['chi']} per «{v['slug']}»")
+            fuori.append({"doc": f"{CARTELLA_ADR}/{nome}", "line": 0,
+                          "path": f"ADR-{v['numero']}", "source": "prenotazione",
+                          "reason": motivo})
+    return fuori
 
 
 def adr_duplicati() -> list[dict]:
@@ -574,7 +608,7 @@ def main(argv=None) -> int:
     ap.add_argument("--verbose", action="store_true", help="Elenca anche i percorsi verificati con successo.")
     ap.add_argument("--json", action="store_true", help="Report in JSON (opt-in).")
     ap.add_argument("--prossimo-adr", action="store_true",
-                    help="Stampa l'ultimo ADR sul disco e il primo numero libero. "
+                    help="Stampa l'ultimo ADR sul disco, i numeri prenotati in plans/adr-prenotati.json e il primo numero libero. "
                          "Da eseguire PRIMA di scrivere un ADR nuovo: e' la regola "
                          "d'oro dei numeri (ADR-0009).")
     args = ap.parse_args(argv)
@@ -583,6 +617,8 @@ def main(argv=None) -> int:
         usati = numeri_adr()
         print(f"Ultimo ADR sul disco: ADR-{max(usati, default='0000')}"
               f"  ({len(usati)} numeri usati, {sum(len(v) for v in usati.values())} file)")
+        for v in prenotazioni_adr():
+            print(f"Prenotato: ADR-{v['numero']} «{v['slug']}» ({v['chi']}, dal {v['dal']})")
         print(f"Il prossimo numero libero: {prossimo_adr()}")
         collisioni = {n: f for n, f in usati.items() if len(f) > 1}
         if collisioni:
@@ -609,6 +645,7 @@ def main(argv=None) -> int:
             problems.extend(percorsi_assoluti(d))
         problems.extend(indice_adr())
         problems.extend(adr_duplicati())
+        problems.extend(adr_prenotati_in_conflitto())
     else:
         docs = args.doc or DEFAULT_DOCS
         for d in docs:
@@ -624,7 +661,9 @@ def main(argv=None) -> int:
     assoluti = [p for p in problems if p["source"] == "assoluto"]
     mancanti = [p for p in problems if p["source"] == "indice"]
     duplicati = [p for p in problems if p["source"] == "duplicato"]
-    inesistenti = [p for p in problems if p["source"] not in {"assoluto", "indice", "futuro"}]
+    prenotati = [p for p in problems if p["source"] == "prenotazione"]
+    inesistenti = [p for p in problems
+                   if p["source"] not in {"assoluto", "indice", "futuro", "prenotazione"}]
     futuri = [p for p in problems if p["source"] == "futuro"]
 
     if not problems:
@@ -664,6 +703,10 @@ def main(argv=None) -> int:
         print("citazione gia' scritta. Rinumerare quello piu' recente e correggere i",
               file=sys.stderr)
         print(f"riferimenti. Il primo libero: {prossimo_adr()}", file=sys.stderr)
+    if prenotati:
+        for p in prenotati:
+            print(f"\n{p['path']}: {p['reason']}.", file=sys.stderr)
+        print(f"Il primo numero libero: {prossimo_adr()}", file=sys.stderr)
     if assoluti:
         print("\nUn percorso assoluto rende il documento vero su un solo computer.",
               file=sys.stderr)

@@ -7,9 +7,9 @@
 
 ## Summary
 
-Capitano corsaro che trasporta la merce. **Fazione recuperabile, non fazione debole** (ADR-06 dell'avventura): mostrargli la cartella dei contratti vale +4 alla reazione, perche' non sa cosa sta trasportando.
+Capitano corsaro che trasporta la merce. **Fazione recuperabile, non fazione debole** (ADR-06 dell'avventura): mostrargli la cartella dei contratti vale +4 alla reazione, perché non sa cosa sta trasportando.
 
-Questa voce esiste perche' `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri: senza, una creatura con statistiche scritte non e' raggiungibile da nessuno strumento. Ogni modifica va fatta nel file d'avventura.
+Questa voce esiste perché `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri: senza, una creatura con statistiche scritte non è raggiungibile da nessuno strumento. Ogni modifica va fatta nel file d'avventura.
 
 ## Notes
 

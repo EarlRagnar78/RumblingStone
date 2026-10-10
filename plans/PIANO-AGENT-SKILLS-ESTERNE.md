@@ -412,17 +412,17 @@ dall'instradamento all'**uscita**: cosa scrive un agente con la skill e senza.
       su richiesta del DM, anche i due esempi di `italiano-nativo.md` §6 e §7
       (testi per un solo giocatore, dove P1 lascia la seconda persona): ora
       a muoversi è l'oggetto, non il PG
-- [x] il lotto dei box con «sembra» o «pare» (D13), **pronto e non
-      applicato**: 30 box, non 34 («appare» tolto dal rilevatore). Undici
-      documenti di revisione in `plans/scrittura/revisioni-D13/`, 27
-      modifiche su 25 box, 23 applicabili senza lettore; cinque box restano,
-      con la ragione (D17). Si applicano con l'OK del DM
+- [x] il lotto dei box con «sembra» o «pare» (D13): 30 box, non 34
+      («appare» tolto dal rilevatore). Undici documenti di revisione in
+      `plans/scrittura/revisioni-D13/`, 27 modifiche su 25 box; cinque box
+      restano, con la ragione (D17). ✅ **Approvato dal DM e applicato il
+      2026-10-03**, tutte le 27 modifiche
 - [x] tornata B con le skill corrette: verifica da 96% a **100%**, taratura
       100%. Le ultime bocciature erano del metro (etichetta su una riga sua),
       corretto e riapplicato a tutte le corse
 - [x] `plans/scrittura/RISULTATI.md`, 22 test del voto, la voce nel manifest
 
-### L12 · Dal segnalare al correggere, e le skill secondo la guida — ✅ (2026-10-02) · D15, D16 chiuse; D17 al DM
+### L12 · Dal segnalare al correggere, e le skill secondo la guida — ✅ (2026-10-02) · D15, D16, D17 chiuse
 
 `[engine: Opus, sessione principale + agenti di corsa · effort: alto · qualità: tornata C ≥ B sulla verifica, e la correzione non cambia un fatto]` — **G**
 
@@ -481,6 +481,35 @@ sui tic del §9.
       invariati. Il ciclo provato sui testi delle corse (A-senza-4/S04) e sui
       master (lotto D13)
 
+### L13 · Di quanto migliora — ✅ (2026-10-03)
+
+`[engine: Opus, sessione principale · effort: alto · qualità: nessuna revisione applicata peggiora la misura, e il cancello lo prova in CI]` — **G**
+
+Il DM, il 2026-10-03: *«si può automatizzarla migliorando la prosa il più
+possibile e misurando il miglioramento ottenuto»*. Decisione nell'estensione di
+[ADR-0077](adr/ADR-0077-revisione-a-due-giri.md).
+
+- [x] D13 applicato (27 modifiche, undici master) e D17 decisa: il «sembra»
+      smentito entro la frase dopo resta. Confine scritto in
+      `read-aloud-adulti.md` §1 punto 7 e nel rilevatore
+      (`voto_scrittura.sembra_esitanti`); sui file di gioco restano 3 box su
+      502, tre falsi positivi dichiarati nel registro delle norme
+- [x] il documento di revisione porta «Di quanto migliora»: MQM e segnalazioni
+      norma per norma, prima e dopo, e la garanzia che MQM non scenda
+- [x] `ciclo_prosa.py lotto` (pacchetti e classifica MQM), `misura` (il delta
+      di un giro, e quando fermarsi), `registro --check` (in CI)
+- [x] `plans/scrittura/miglioramenti.json` riempito con le undici revisioni
+      D13: segnalazioni da 293 a 265, MQM +2,52 punti
+- [x] «sembra/pare» nel punteggio MQM (`box_sembra_pare`, minore): le norme
+      pesate passano da 12 a 13, e la linea di base si riscrive
+- [x] la prova sull'ARC-08: classifica in `plans/scrittura/lotto-ARC08-2026-10-03/`,
+      quattro revisioni in `plans/scrittura/revisioni-pilota-ARC08/`, **da
+      approvare** (D15). Il metro dei nomi propri contava due un nome composto:
+      corretto con i dati (`misura_craft._nomi_composti`)
+- [x] 10 test nuovi in `test_ciclo_prosa.py`, 4 in `test_voto_scrittura.py`
+- [ ] il DM approva le quattro revisioni della prova; poi il lotto di
+      `ARC08-01-GUIDA-DM.md` (55 segnalazioni, la più grande)
+
 ## 5 · Decisioni aperte al DM
 
 <!-- decisioni-dm: AGENT-SKILLS -->
@@ -502,7 +531,7 @@ sui tic del §9.
 | ~~D13~~ | L11 | ✅ **Decisa il 2026-10-01**: sì. «Sembra» e «pare» nei box diventano una norma **minore**, con il rilevatore di `voto_scrittura.py` che passa da indizio a controllo e un lotto che corregge i 34 box; «come se» resta fuori. Era: **«Sembra» e «pare» nei box: norma nuova?** |
 | ~~D14~~ | L11 | ✅ **Decisa il 2026-10-01**: vince P1. Il gesto passa a un PNG o al mondo; P1 si scrive in `read-aloud-adulti.md` §1 e i tre esempi ✅ si correggono. Era: **P1 contro la reticenza sull'emozione** |
 | ~~D15~~ | L12 | ✅ **Decisa il 2026-10-02**: sì, con un documento di revisione in mezzo. Il DM: *«deve proporre un documento che faccia leggere cosa e cambiato rispetto all originale così si possono approvare le modifiche»*, come fra revisore e autore. Le modifiche si approvano una per una, e il testo approvato porta la riga di revisione (ADR-0077). Era: **Fin dove arriva la correzione automatica?** |
-| D17 | L12 | **«Sembra» seguito dalla smentita è lecito?** Tre box usano l'apparenza per prepararne la rottura: «quella che sembrava una parete — è una palpebra». Lì «sembra» non esita, è il colpo. *Proposta*: sì, entra in `read-aloud-adulti.md` §1 punto 7 come confine, e il rilevatore salta un «sembra» seguito entro la frase dopo da «invece», «non lo è», «si rivela», «è». I box restano come sono finché il DM non decide |
+| ~~D17~~ | L12 | ✅ **Decisa il 2026-10-03**: sì. Il «sembra» smentito entro la frase dopo resta; il confine è in `read-aloud-adulti.md` §1 punto 7 e il rilevatore lo salta (`voto_scrittura.sembra_esitanti`). Era: **«Sembra» seguito dalla smentita è lecito?** Tre box usano l'apparenza per prepararne la rottura: «quella che sembrava una parete — è una palpebra». Lì «sembra» non esita, è il colpo. *Proposta*: sì, entra in `read-aloud-adulti.md` §1 punto 7 come confine, e il rilevatore salta un «sembra» seguito entro la frase dopo da «invece», «non lo è», «si rivela», «è». I box restano come sono finché il DM non decide |
 | ~~D16~~ | L12 | ✅ **Decisa il 2026-10-02**: si cercano le soluzioni della comunità con una licenza compatibile e si applicano: CriticMarkup, Humanizer, *Signs of AI writing*, la guida di Anthropic sulle skill (ADR-0077). Era: **Quale «documento migliorato» si migliora con le misure?** |
 
 ### L'eco del 2026-10-01

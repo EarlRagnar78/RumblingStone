@@ -147,8 +147,9 @@ class TestRegistro(unittest.TestCase):
 
     def test_il_registro_del_repo_e_valido(self):
         dati = C.leggi_registro()
-        # La sezione «file» puo' restare vuota: dal 2026-10-07 le sue dieci voci
-        # erano tutte scadute (ramo tolto o file arrivato) e sono state potate.
+        # Le dieci voci della sezione «file» sono della #72, chiusa senza merge:
+        # potate per sbaglio il 2026-10-07 come «scadute», ripristinate da
+        # PIANO-RECUPERO L2 (una PR chiusa non si vede senza --fetch).
         self.assertTrue(dati["rami"])
         self.assertIsInstance(dati["file"], list)
 

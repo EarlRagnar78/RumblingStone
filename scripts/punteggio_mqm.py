@@ -137,7 +137,19 @@ def _metrature(testo: str, _percorso: Path) -> "dict[str, int]":
     return {"metratura_nella_voce_narrante": len(mc.metrature_nei_box(testo))}
 
 
-RILEVATORI = (_difetti_box, _caratteristiche, _prosa, _p1, _metrature)
+def _sembra(testo: str, _percorso: Path) -> "dict[str, int]":
+    """D13 e D17: i box con un «sembra» o un «pare» che esita.
+
+    Entra nel punteggio col lotto che ha corretto i box (2026-10-03), come il
+    registro delle norme aveva scritto. Il «sembra» smentito entro la frase dopo
+    non conta: `voto_scrittura.sembra_esitanti` lo salta.
+    """
+    import voto_scrittura as vs  # noqa: PLC0415
+    return {"box_sembra_pare": sum(1 for b in mc.box_read_aloud(testo)
+                                   if vs.sembra_esitanti(mc.corpo_del_box(b)))}
+
+
+RILEVATORI = (_difetti_box, _caratteristiche, _prosa, _p1, _metrature, _sembra)
 
 
 def carica_specifiche() -> dict:

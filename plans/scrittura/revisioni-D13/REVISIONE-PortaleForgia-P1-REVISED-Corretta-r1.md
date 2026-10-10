@@ -31,8 +31,8 @@ da seguire a voce o più monotona. Il giudizio resta di chi legge ad alta voce.
 
 | ok | # | riga | prima | dopo | norma | auto |
 |---|---:|---:|---|---|---|:---:|
-| [ ] | 1 | 386 | Sembra... | È... | sembra/pare | ✓ |
-| [ ] | 2 | 618 | Ma sembra | Dentro, | sembra/pare | ✓ |
+| [x] | 1 | 386 | Sembra... | È... | sembra/pare | ✓ |
+| [x] | 2 | 618 | Ma sembra | Dentro, | sembra/pare | ✓ |
 
 ## Il testo con le modifiche (CriticMarkup)
 

@@ -31,12 +31,12 @@ da seguire a voce o più monotona. Il giudizio resta di chi legge ad alta voce.
 
 | ok | # | riga | prima | dopo | norma | auto |
 |---|---:|---:|---|---|---|:---:|
-| [ ] | 1 | 44 | singolo | un | sembra/pare | — |
-| [ ] | 2 | 44 | sembra durare | dura | sembra/pare | ✓ |
-| [ ] | 3 | 130 | sembra | dura un | sembra/pare | — |
-| [ ] | 4 | 130 | sembra | passa in un | sembra/pare | — |
-| [ ] | 5 | 488 | sembra... VIBRARE. | VIBRA. | sembra/pare | ✓ |
-| [ ] | 6 | 598 | sembra potrebbe staccarsi e fluttuare | a un soffio potrebbe staccarsi e volare | sembra/pare | ✓ |
+| [x] | 1 | 44 | singolo | un | sembra/pare | — |
+| [x] | 2 | 44 | sembra durare | dura | sembra/pare | ✓ |
+| [x] | 3 | 130 | sembra | dura un | sembra/pare | — |
+| [x] | 4 | 130 | sembra | passa in un | sembra/pare | — |
+| [x] | 5 | 488 | sembra... VIBRARE. | VIBRA. | sembra/pare | ✓ |
+| [x] | 6 | 598 | sembra potrebbe staccarsi e fluttuare | a un soffio potrebbe staccarsi e volare | sembra/pare | ✓ |
 
 ## Il testo con le modifiche (CriticMarkup)
 

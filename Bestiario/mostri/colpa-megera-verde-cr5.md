@@ -9,8 +9,8 @@
 
 La seconda delle **Tre Sorelle del Frangente**. Nel testo dell'avventura il nome porta l'accento: *Colpa*.
 
-Questa voce esiste perche' `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri: senza, una creatura con statistiche scritte non e' raggiungibile da nessuno strumento. Ogni modifica va fatta nel file d'avventura.
+Questa voce esiste perché `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri: senza, una creatura con statistiche scritte non è raggiungibile da nessuno strumento. Ogni modifica va fatta nel file d'avventura.
 
 ## Notes
 
-Un concilio di megere funziona come gruppo: le tre insieme valgono molto piu' della somma dei GS.
+Un concilio di megere funziona come gruppo: le tre insieme valgono molto più della somma dei GS.

@@ -84,7 +84,7 @@ stato d'arco); la mappa **CM-1**; l'handout **«Lo Stato dei Custodi»** (§9).
 |---|---|
 | 90 nani + Dana + Re | **+6 morale** att/danni/TS (annulla il −4 → netto **+2**); guariscono **2d8 pf**; **immuni a paura 1 ora**; +3 m velocità |
 | **Re Thorek** | soffio/veleno **interrotto**; **stabilizzato** (non muore); riapre gli occhi |
-| Nemici nella caverna (~30 orchi) | **Volontà CD 25** contro l'aura dell'Apparizione. Con CD 25 un orco da GS ½ fallisce quasi sempre: il DM non tira trenta TS. **Due terzi** sono **in panico** e fuggono dalla porta; il terzo che resta è **scosso** per 1d6 round (−2 ai tiri per colpire, ai TS e alle prove) |
+| Nemici nella caverna (~30 orchi) | **Volontà CD 25** contro l'aura dell'Apparizione, come la presenza terrificante dell'SRD: ogni orco tira `[CANONE — DM 2026-10-03, D38]`. Con Volontà −2 contro CD 25 passa solo chi fa 20, e resta **scosso** (−2 ai tiri per colpire, ai TS e alle prove); tutti gli altri sono **in panico** e fuggono dalla porta. Il DM non tira trenta TS: uno su venti resta, cioè uno o due orchi. La Scena 3 si gioca con loro e con i nemici che arrivano dopo (CM-1) |
 
 ### Lo stato dell'ARC-07 in uscita (canone — `state.md §1/§6`)
 - **Corona di Adamantio**: **3 gemme accese** (Topazio/Tempo, Smeraldo/Terra, Rubino/Leggenda). Il Rubino si è usato **una volta sola**, come motore del ritorno; speso, **resta nell'incasso** e **la Corona si completa**: +3 e Senzienza dall'arrivo (DM, DEF-4 D6; §3).
@@ -100,7 +100,7 @@ Il ramo cambia **come si apre** la Battaglia di Hammerfist, non se si vince.
 
 | Orologio in consegna | Cosa trovano arrivando | Effetto sull'ARC-08 |
 |---|---|---|
-| **≈ 3g 15h** (nessun riposo prima di Terros: è il ramo del gruppo di oggi) | la **prima ondata è già passata** `[CANONE — DM 2026-09-30, D31]`. Sotto, nel Cuore della Montagna, è l'ultima resistenza della Scena 2, e sopra il drago è sulle mura | quando si gioca la **Fase 0** dell'ARC-08, con i PG arrivati nel mezzo della caduta, è la **D38** (proposta: dopo il drago ai bastioni, non prima) |
+| **≈ 3g 15h** (nessun riposo prima di Terros: è il ramo del gruppo di oggi) | la **prima ondata è già passata** `[CANONE — DM 2026-09-30, D31]`. Sotto, nel Cuore della Montagna, è l'ultima resistenza della Scena 2, e sopra il drago è sulle mura | la **Fase 0** dell'ARC-08 si gioca **dopo** il drago ai bastioni `[CANONE — DM 2026-10-03, D38]`: prima il Cuore della Montagna, poi Fauci, poi il consiglio di guerra per le ondate che restano |
 | **≈ 3g 03h** (riposo prima di Terros — ramo probabile) | la **prima ondata è già passata**: una torre in posizione a est, i primi caduti sui camminamenti, il fumo che piega col vento | **Fase 0 accorciata**: un solo giro di preparativi invece di due. I nani hanno già dei feriti da curare, e il consiglio di guerra si tiene **in piedi**, non seduti |
 | **sotto 2 giorni** (solo con altri due riposi ordinari — improbabile) | **breccia aperta**, combattimento dentro le mura | pannello velato su A8 e **Fase 0 dura** (`ARC07-DEF-2` §8) |
 
@@ -115,8 +115,8 @@ Il ramo cambia **come si apre** la Battaglia di Hammerfist, non se si vince.
 >   speso). Non riportano oggetti del −1000 se non ciò che è «loro»/legato (le
 >   pozioni antiche svaniscono all'alba; il Sigillo rubato a Vatore è l'eccezione,
 >   `DEF-4`). Trattalo come una **cornice**, non un puzzle.
-> - **L'Aura dell'Apparizione** (§4): trattala come *fear/awe* di area a CD fissa
->   (PF1e *frightful presence*-like), CD 25, un solo TS.
+> - **L'Aura dell'Apparizione** (§4): è la presenza terrificante dell'SRD, CD 25,
+>   un TS per creatura (in PF1e, *frightful presence*) `[CANONE — DM 2026-10-03, D38]`.
 
 ---
 
@@ -279,7 +279,7 @@ può scegliere. Sono proposte, e ogni scelta si ricorda (§7):
 
 
 **Effetti immediati** (§0-bis): gli orchi nella caverna tirano **Volontà CD 25**
-contro l'aura (due terzi in panico, gli altri scossi); +6 morale ai 90 nani (annulla la disperazione),
+contro l'aura (chi fallisce in panico, quasi tutti; chi fa 20 scosso); +6 morale ai 90 nani (annulla la disperazione),
 Re Thorek stabilizzato (il veleno interrotto), panico tra i nemici. Re Thorek
 riapre gli occhi: *«Tu… portatore… degno. Finalmente… campioni veri.»*
 
@@ -362,6 +362,11 @@ intera**.
 > ~30 orchi berserker sono entrati con le porte. È l'ultimo respiro dell'ARC-07
 > prima che cominci la vera battaglia (ARC-08). **La battaglia NON si gioca qui**:
 > questa è solo la pulizia della caverna e il passaggio di consegne.
+
+**Chi resta** `[CANONE — DM 2026-10-03, D38]`: dopo l'aura, nella caverna
+restano uno o due orchi scossi. Lo scontro lo fanno i nemici che arrivano
+dopo, dalla tabella delle ondate di CM-1; i ~30 della riga qui sopra sono
+quelli entrati con le porte, e quasi tutti stanno già scappando.
 
 - **🎚️ [FAST-PLAY]**: i PG + Treant + 90 nani potenziati travolgono gli orchi
   disorganizzati in **2 round** (massacro, zero perdite naniche — sono troppo
@@ -671,8 +676,8 @@ BIOLUMINESCENTI (luce piena ovunque, niente *darkness*).
   (DEF-5 §4, arrivo compresso) appaiono nell'istante in cui le porte cedono.
   Stessa scena, stesso altare: cambia solo quanto assedio si gioca prima.
 - **Effetti immediati dell'Apparizione**: nani **+6 morale** (da −4 a +2),
-  guariscono **2d8 pf**, **immuni a paura 1 h**; nemici **Volontà CD 25** o
-  scossi 1d6 round (la maggioranza fallisce; ~⅔ della prima ondata in panico);
+  guariscono **2d8 pf**, **immuni a paura 1 h**; nemici **Volontà CD 25**: chi
+  fallisce è in panico e fugge, chi fa 20 è scosso (D38);
   Re Thorek apre gli occhi (riconosce Thorik: la Corona risuona); gli **occhi di
   rubino delle 10 statue si ACCENDONO** (benedizione ancestrale); i PG hanno un
   **round di sorpresa**.

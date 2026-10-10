@@ -1,9 +1,9 @@
 # Bothor / Melvur, guerrieri dell'Underdark [INFERRED — needs DM confirmation]
 **Faction**: unknown | **Role**: melee-heavy | **Environment**: underdark | **CR**: 6 | **Source**: PCGen save `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/00-underdark-grr6-Bothor-Malvur.pcg` (solo .pcg: «grr6» = guerriero 6) | **Status**: inferred
-> ⚠️ **`underdark` era una fazione, ma e' un ambiente.** Questa scheda e' una
+> ⚠️ **`underdark` era una fazione, ma è un ambiente.** Questa scheda è una
 > trascrizione PCGen del modulo RHoD **mai collocata in un arco** di questa
-> campagna: l'alleanza non e' stabilita, e dichiararne una sarebbe inventarla.
-> Il fatto vero — che vive nel Sottosuolo — sta gia' in `Environment: underdark`,
+> campagna: l'alleanza non è stabilita, e dichiararne una sarebbe inventarla.
+> Il fatto vero — che vive nel Sottosuolo — sta già in `Environment: underdark`,
 > e `suggest_encounter --env underdark` la trova insieme a tutte le altre.
 
 

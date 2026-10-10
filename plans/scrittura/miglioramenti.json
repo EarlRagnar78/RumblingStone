@@ -1,0 +1,506 @@
+[
+ {
+  "data": "2026-10-03",
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+  "revisione": "plans/scrittura/revisioni-D13/REVISIONE-ARC07-DEF-1-PIANO-TERRA-TERROS-r1.md",
+  "modifiche": 1,
+  "segnalazioni": [
+   26,
+   24
+  ],
+  "mqm": [
+   99.43,
+   99.47
+  ],
+  "penalita": [
+   14,
+   13
+  ],
+  "gulpease": [
+   65.1,
+   65.1
+  ],
+  "norme": {
+   "box con parentesi": [
+    3,
+    3
+   ],
+   "box con più nomi propri": [
+    4,
+    4
+   ],
+   "calco": [
+    1,
+    1
+   ],
+   "sembra/pare": [
+    1,
+    0
+   ],
+   "tic minori in gruppo": [
+    17,
+    16
+   ]
+  }
+ },
+ {
+  "data": "2026-10-03",
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "revisione": "plans/scrittura/revisioni-D13/REVISIONE-ARC07-DEF-4-VIAGGIO-MILLE-ANNI-r1.md",
+  "modifiche": 1,
+  "segnalazioni": [
+   12,
+   11
+  ],
+  "mqm": [
+   99.62,
+   99.66
+  ],
+  "penalita": [
+   11,
+   10
+  ],
+  "gulpease": [
+   69.3,
+   69.2
+  ],
+  "norme": {
+   "box con parentesi": [
+    2,
+    2
+   ],
+   "calco": [
+    4,
+    4
+   ],
+   "sembra/pare": [
+    1,
+    0
+   ],
+   "tic minori in gruppo": [
+    5,
+    5
+   ]
+  }
+ },
+ {
+  "data": "2026-10-03",
+  "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+  "revisione": "plans/scrittura/revisioni-D13/REVISIONE-ARC08-01-GUIDA-DM-r1.md",
+  "modifiche": 8,
+  "segnalazioni": [
+   63,
+   55
+  ],
+  "mqm": [
+   98.17,
+   98.4
+  ],
+  "penalita": [
+   64,
+   56
+  ],
+  "gulpease": [
+   59.7,
+   59.8
+  ],
+  "norme": {
+   "P1": [
+    1,
+    1
+   ],
+   "box con parentesi": [
+    2,
+    2
+   ],
+   "box con più nomi propri": [
+    37,
+    37
+   ],
+   "calco": [
+    13,
+    13
+   ],
+   "sembra/pare": [
+    9,
+    1
+   ],
+   "tic minori in gruppo": [
+    1,
+    1
+   ]
+  }
+ },
+ {
+  "data": "2026-10-03",
+  "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md",
+  "revisione": "plans/scrittura/revisioni-D13/REVISIONE-Arco-Post-Hammerfist-HOOKS-Hella-SacredForest-r1.md",
+  "modifiche": 1,
+  "segnalazioni": [
+   6,
+   4
+  ],
+  "mqm": [
+   97.79,
+   98.23
+  ],
+  "penalita": [
+   5,
+   4
+  ],
+  "gulpease": [
+   75.9,
+   75.9
+  ],
+  "norme": {
+   "P1": [
+    2,
+    2
+   ],
+   "box con parentesi": [
+    1,
+    1
+   ],
+   "box con più nomi propri": [
+    1,
+    1
+   ],
+   "sembra/pare": [
+    1,
+    0
+   ],
+   "tic minori in gruppo": [
+    1,
+    0
+   ]
+  }
+ },
+ {
+  "data": "2026-10-03",
+  "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+  "revisione": "plans/scrittura/revisioni-D13/REVISIONE-Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE-r1.md",
+  "modifiche": 1,
+  "segnalazioni": [
+   3,
+   1
+  ],
+  "mqm": [
+   99.08,
+   99.39
+  ],
+  "penalita": [
+   3,
+   2
+  ],
+  "gulpease": [
+   81.4,
+   80.3
+  ],
+  "norme": {
+   "P1": [
+    1,
+    1
+   ],
+   "sembra/pare": [
+    1,
+    0
+   ],
+   "tic minori in gruppo": [
+    1,
+    0
+   ]
+  }
+ },
+ {
+  "data": "2026-10-03",
+  "file": "07_il Portale Della Forgia Eterna/CORREZIONE-Boss-Fauci.md",
+  "revisione": "plans/scrittura/revisioni-D13/REVISIONE-CORREZIONE-Boss-Fauci-r1.md",
+  "modifiche": 1,
+  "segnalazioni": [
+   11,
+   10
+  ],
+  "mqm": [
+   95.48,
+   95.74
+  ],
+  "penalita": [
+   17,
+   16
+  ],
+  "gulpease": [
+   100.0,
+   100.0
+  ],
+  "norme": {
+   "P1": [
+    1,
+    1
+   ],
+   "box con parentesi": [
+    1,
+    1
+   ],
+   "box con più nomi propri": [
+    5,
+    5
+   ],
+   "box oltre 12 righe": [
+    1,
+    1
+   ],
+   "metratura": [
+    2,
+    2
+   ],
+   "sembra/pare": [
+    1,
+    0
+   ]
+  }
+ },
+ {
+  "data": "2026-10-03",
+  "file": "07_il Portale Della Forgia Eterna/La_Piramide_Ricalibrata.md",
+  "revisione": "plans/scrittura/revisioni-D13/REVISIONE-La_Piramide_Ricalibrata-r1.md",
+  "modifiche": 1,
+  "segnalazioni": [
+   19,
+   18
+  ],
+  "mqm": [
+   92.72,
+   92.96
+  ],
+  "penalita": [
+   31,
+   30
+  ],
+  "gulpease": [
+   79.3,
+   78.8
+  ],
+  "norme": {
+   "box con parentesi": [
+    6,
+    6
+   ],
+   "box con più nomi propri": [
+    4,
+    4
+   ],
+   "box oltre 12 righe": [
+    2,
+    2
+   ],
+   "calco": [
+    2,
+    2
+   ],
+   "metratura": [
+    4,
+    4
+   ],
+   "sembra/pare": [
+    1,
+    0
+   ]
+  }
+ },
+ {
+  "data": "2026-10-03",
+  "file": "07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md",
+  "revisione": "plans/scrittura/revisioni-D13/REVISIONE-PortaleForgia-P1-REVISED-Corretta-r1.md",
+  "modifiche": 2,
+  "segnalazioni": [
+   39,
+   37
+  ],
+  "mqm": [
+   95.47,
+   95.65
+  ],
+  "penalita": [
+   52,
+   50
+  ],
+  "gulpease": [
+   86.7,
+   86.8
+  ],
+  "norme": {
+   "P1": [
+    3,
+    3
+   ],
+   "box con parentesi": [
+    10,
+    10
+   ],
+   "box con più nomi propri": [
+    16,
+    16
+   ],
+   "box oltre 12 righe": [
+    3,
+    3
+   ],
+   "calco": [
+    3,
+    3
+   ],
+   "metratura": [
+    2,
+    2
+   ],
+   "sembra/pare": [
+    2,
+    0
+   ]
+  }
+ },
+ {
+  "data": "2026-10-03",
+  "file": "07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE1.md",
+  "revisione": "plans/scrittura/revisioni-D13/REVISIONE-PortaleForgia-P2-REVISED-Corretta-PARTE1-r1.md",
+  "modifiche": 6,
+  "segnalazioni": [
+   62,
+   58
+  ],
+  "mqm": [
+   94.27,
+   94.54
+  ],
+  "penalita": [
+   84,
+   80
+  ],
+  "gulpease": [
+   83.7,
+   83.6
+  ],
+  "norme": {
+   "P1": [
+    4,
+    4
+   ],
+   "box con parentesi": [
+    22,
+    22
+   ],
+   "box con più nomi propri": [
+    23,
+    23
+   ],
+   "box oltre 12 righe": [
+    5,
+    5
+   ],
+   "calco": [
+    1,
+    1
+   ],
+   "metratura": [
+    3,
+    3
+   ],
+   "sembra/pare": [
+    4,
+    0
+   ]
+  }
+ },
+ {
+  "data": "2026-10-03",
+  "file": "07_il Portale Della Forgia Eterna/PortaleForgia-P3-PianoFuoco-PARTE1.md",
+  "revisione": "plans/scrittura/revisioni-D13/REVISIONE-PortaleForgia-P3-PianoFuoco-PARTE1-r1.md",
+  "modifiche": 3,
+  "segnalazioni": [
+   21,
+   18
+  ],
+  "mqm": [
+   97.29,
+   97.64
+  ],
+  "penalita": [
+   23,
+   20
+  ],
+  "gulpease": [
+   84.3,
+   84.0
+  ],
+  "norme": {
+   "box con parentesi": [
+    7,
+    7
+   ],
+   "box con più nomi propri": [
+    3,
+    3
+   ],
+   "calco": [
+    1,
+    1
+   ],
+   "metratura": [
+    7,
+    7
+   ],
+   "sembra/pare": [
+    3,
+    0
+   ]
+  }
+ },
+ {
+  "data": "2026-10-03",
+  "file": "07_il Portale Della Forgia Eterna/PortaleForgia-P3-PianoFuoco-PARTE2.md",
+  "revisione": "plans/scrittura/revisioni-D13/REVISIONE-PortaleForgia-P3-PianoFuoco-PARTE2-r1.md",
+  "modifiche": 2,
+  "segnalazioni": [
+   31,
+   29
+  ],
+  "mqm": [
+   96.46,
+   96.62
+  ],
+  "penalita": [
+   46,
+   44
+  ],
+  "gulpease": [
+   90.0,
+   89.7
+  ],
+  "norme": {
+   "box con parentesi": [
+    9,
+    9
+   ],
+   "box con più nomi propri": [
+    8,
+    8
+   ],
+   "box oltre 12 righe": [
+    3,
+    3
+   ],
+   "calco": [
+    1,
+    1
+   ],
+   "metratura": [
+    7,
+    7
+   ],
+   "sembra/pare": [
+    3,
+    1
+   ]
+  }
+ }
+]

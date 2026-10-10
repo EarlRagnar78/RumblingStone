@@ -4,15 +4,15 @@
 **Source**: `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` Scena 4 · `07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` (l'affresco)
 **Status**: NON-CREATURA — **non ha uno statblocco**, e non deve entrare nel pool degli incontri.
 
-## Perche' non e' una creatura
+## Perché non è una creatura
 
-⚠️ **E perche' non porta nemmeno il marcatore di rimando.** Quello dice «i
+⚠️ **E perché non porta nemmeno il marcatore di rimando.** Quello dice «i
 numeri stanno altrove»; qui **non stanno da nessuna parte**. Usarlo sarebbe
-la stessa bugia di prima, scritta piu' piccolo.
+la stessa bugia di prima, scritta più piccolo.
 
 *(Questa nota sta sotto le prime otto righe apposta: il marcatore si cerca
 in testa al file e come stringa letterale, quindi anche solo nominarlo
-lassu' avrebbe rimarcato la scheda — e' successo davvero, scrivendola.)*
+lassu' avrebbe rimarcato la scheda — è successo davvero, scrivendola.)*
 
 🔴 **Non ha statistiche da nessuna parte nel repo, e la voce che c'era ne dichiarava di inventate.**
 
@@ -20,17 +20,17 @@ Fino al 2026-09-18 questo file era `thorgrim-barbadiferro-cr13.md` e diceva
 `**Role**: melee-heavy | **CR**: 13`, con la fonte
 `_ARCHIVIO/PortaleForgia-P5-DEFINITIVO-PARTE2.md`. Misurando:
 
-| Cosa dichiarava | Cosa e' vero |
+| Cosa dichiarava | Cosa è vero |
 |---|---|
 | lo statblocco sta in `P5-DEFINITIVO-PARTE2` | quel file **non lo nomina nemmeno una volta** |
 | **GS 13** | nessuno statblocco per Thorgrim esiste **in tutto il repo** |
-| `melee-heavy` | nel modulo e' una **prova sociale**: Diplomazia/Intimidire **CD 20** |
+| `melee-heavy` | nel modulo è una **prova sociale**: Diplomazia/Intimidire **CD 20** |
 
 Con quella voce nel pool, `suggest_encounter --cr 13` poteva proporre al DM un
 nano di cui non esistono né PF né CA. È la forma d'errore di **ADR-0053** —
 una chiave dedotta invece che dichiarata — commessa da me il 2026-09-17.
 
-## Chi e', al tavolo
+## Chi è, al tavolo
 
 🩸 **Cugino di Re Thorek I** *(decisione DM 2026-09-24)*: nipoti dello stesso
 re, quello che perse la Corona contro Skullcrusher. **Frostcleaver è del re**;
@@ -42,7 +42,7 @@ riceve i PG insieme a **Re Thorek I** e fissa la Corona sulla loro fronte:
 mostratela.»* Aegis Fang canta la stessa nota nelle sue mani e in quelle dei
 PG, a mille anni di distanza.
 
-- **La scena** e' `ARC07-DEF-4` Scena 4, il consiglio di guerra: prova di gruppo **CD 20** →
+- **La scena** è `ARC07-DEF-4` Scena 4, il consiglio di guerra: prova di gruppo **CD 20** →
   fiducia piena (invisibilita', benedizioni, mappa del campo); fallimento →
   aiuti dimezzati, con −2 alla Scena 3.
 - **L'eco**: riecheggia nella **Cerimonia delle 100 Asce** (ARC-08), e la sua
@@ -50,7 +50,7 @@ PG, a mille anni di distanza.
 
 ## Se un giorno servisse combatterlo
 
-Non ci sono numeri da recuperare: andrebbero **scritti**, e la scelta e' del
-DM. Il riferimento naturale e' Re Thorek I (Guerriero 16) per il re e Durin
+Non ci sono numeri da recuperare: andrebbero **scritti**, e la scelta è del
+DM. Il riferimento naturale è Re Thorek I (Guerriero 16) per il re e Durin
 (Guerriero 6) per la guardia — Thorgrim sta in mezzo per statura narrativa,
 ma **questa voce non lo decide**.

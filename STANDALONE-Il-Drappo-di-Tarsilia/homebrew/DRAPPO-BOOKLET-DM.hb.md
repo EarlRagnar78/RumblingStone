@@ -582,7 +582,7 @@ un'informazione (la cantina dell'oratorio, `04-LUOGHI` §1.1) e chiudi il sandbo
 |---|---|---|
 | **0:00** | Riassunto della prima serata **fatto dai giocatori**, non da te. Due minuti a testa, massimo | |
 | **0:15** | **Le prove in pista**. Un tiro di Cavalcare, e via | `02-GIORNO-2` §1 |
-| **0:30** | **I Partiti**. Vanna dentro, gli altri fuori: **taglia ogni cinque minuti** | `02-GIORNO-2` §2 |
+| **0:30** | **I Partiti**. Vanna dentro, gli altri fuori: **taglia ogni cinque minuti**. Fuori si sta alla tavola, se serve | `02-GIORNO-2` §2 · §2-bis |
 | **1:20** | ☕ **Pausa.** | |
 | **1:30** | **Il duello dei canti**. Tre osterie, non di più | `02-GIORNO-2` §3 · `REGOLE` §3 |
 | **1:55** | **La Cena della vigilia**. Rallenta. Le quattro cose in ordine | `02-GIORNO-2` §4 |
@@ -1063,6 +1063,8 @@ combattimento.
 **Uso**: dice **no** con una ragione scritta. Non si corrompe con l'oro; si convince
 con **una carta** o con un favore alla sua ufficio.
 **Il tic**: cita il numero dell'articolo, e sbaglia il numero.
+**Dove si incontra**: alla tavola di fuori come Maestro di Tavola (`02-GIORNO-2` §2-bis) e
+alla Cena (`10-DOSSIER` §6). È lo stesso uomo.
 
 ---
 
@@ -1464,6 +1466,10 @@ ragionare.
   cospiratore, ed è più difficile da combattere.
 - **La piena del G3 sera** (`06-VILLAIN` §4) è un **epilogo**, non un indizio. Non
   seminarla come mistero: nessuno può fermarla e nessuno la scoprirà per mesi.
+- **La tavola di fuori non è un mistero** (`02-GIORNO-2` §2-bis). Il Maestro sbaglia i
+  numeri e il pilastro li corregge; le frasi dello scrivano sono dicerie della tabella
+  di `04-LUOGHI` §5. Niente di quello che si dice a quella tavola apre o chiude una
+  pista, e non è un secondo falso indizio.
 - **La Sorte non è truccata.** Se i PG barano, Vesca se ne accorge e non dice niente
   (`06-VILLAIN` §1): il sospetto è loro, non del mondo.
 
@@ -3037,7 +3043,7 @@ per la bilancia. Rubarne un quarto è un colpo notturno da manuale.
 **Se riesce**: 100 mo. **E**: il guado rubato è riconoscibile — un colore
 particolare — e alla bilancia se ne accorge **Attu**, non Vesca. Attu non dice
 niente. Se lo tiene. *(Riemerge al Giorno 3, §7.)*
-**Se fallisce**: la milizia del Torre arresta chi prende, 50 mo di cauzione,
+**Se fallisce**: la milizia della Torre arresta chi prende, 50 mo di cauzione,
 **Morale −2** e la contrada viene ammessa lo stesso, con una nota sul registro.
 
 > **Se il tavolo trova una quinta via**, dàgliela. Il Peso è un problema di
@@ -3124,7 +3130,7 @@ diventare un'altra cosa.
 più all'ospizio, che è **di un'altra contrada** e che Melchio curerà lo stesso —
 la piazza lo saprà. **Morale +1** se lo cura, **−1** se lo caccia.
 
-**Sviluppi**: se un PG uccide un tintore, la milizia del Torre arresta il PG.
+**Sviluppi**: se un PG uccide un tintore, la milizia della Torre arresta il PG.
 Ubalda Trenchi non fa sconti a nessuno e la contrada corre in cinque. Il modulo
 regge: si gioca il Giorno 2 con un PG in cella e una missione in più.
 
@@ -3213,6 +3219,7 @@ Serve: questo file, cap. V §3 e §4, cap. XII
 | 0 | Quickstart della serata |
 | 1 | Mattino: le prove in pista |
 | 2 | I Partiti — il mercato del grano |
+| 2-bis | La tavola di fuori (dove stanno i cinque mentre Vanna tratta) |
 | 3 | Il duello dei canti |
 | 4 | La Cena della vigilia |
 | 5 | L'uomo con la fascia grigia (beat di Nocca) |
@@ -3256,7 +3263,7 @@ a contrada; c'è mezza città sui gradini a guardare gratis.
 
 **Ombra, in contemporanea**: Addestrare Animali CD 14 per capire in che stato è
 davvero il cavallo. Riuscendo, sa che ha bisogno di **ferri nuovi** — 12 mo dal
-maniscalco del Torre, che li fa bene, o 4 dal maniscalco del Bruco,
+maniscalco della Torre, che li fa bene, o 4 dal maniscalco del Bruco,
 che li fa in fretta. *(Il secondo li fa storti. Non per malizia: ha ottant'anni.)*
 
 **Chi altro c'è in pista**: Barbanera prova due volte e se ne va; il fantino della
@@ -3301,6 +3308,10 @@ parallelo**, nelle osterie, mentre la trattativa è in corso.
 > con *individuazione dei pensieri* (ma la parete è di pietra: serve la porta aperta,
 > cioè serve che qualcuno la faccia aprire).
 
+**Dove stanno i cinque fuori**: a una tavola sotto il portico, descritta nel
+§2-bis. Il taglio di cinque minuti è una sua regola, e a farlo è l'uomo che la
+regge.
+
 **Le tre offerte sul tavolo** (dettaglio in cap. IV §3):
 
 | Chi | Chiede | Offre | La trappola |
@@ -3323,6 +3334,118 @@ termine dell'ora, annuncia due patti che sono stati stretti senza di loro:
 la solitudine dà — **nessuno può tradirli**. Morale **+1**, e in Corsa nessuna
 contrada ha un obbligo verso di loro, ma nemmeno un motivo per prenderli di mira per
 primi.
+
+---
+
+### §2-bis · La tavola di fuori
+
+**A cosa serve.** Nel playtest alfa, coi Partiti giocati in blocco, cinque giocatori
+sono rimasti fuori scena per settantadue minuti. Il §2 li manda al duello dei canti e
+vuole un taglio ogni cinque minuti, ma non dice dove stanno quando sono fuori. Stanno
+qui: a una tavola, con un uomo che la regge e una regola che fa da sola il lavoro del
+timer da cucina. Ogni cinque minuti la tavola si rimescola, e il taglio cade nel mondo
+invece che nella voce del DM.
+
+**Si gioca solo se serve.** Se i Partiti scorrono e nessuno si annoia, salta tutto: il
+timer del §2 basta. Quando la si gioca, dura **un taglio per volta e mai di più**, e non
+allunga la serata: la fascia 0:30-1:20 di cap. II §4 resta quella.
+
+> **Read-aloud (lead: Andor — la macchina del regolamento).**
+>
+> *Sotto il portico hanno apparecchiato una tavola tonda per chi non può entrare.*
+> *Dodici sedie, dodici tazze, e davanti a ogni tazza un cartellino col numero. La*
+> *tisana è di salice e non è calda.*
+>
+> *A capotavola siede un uomo con un cappello da cerimoniere, di feltro, troppo alto*
+> *per il portico. Tiene sul palmo una clessidra da cinque minuti e non la guarda: la*
+> *ascolta. Appena prima dell'ultimo granello la gira.*
+>
+> *«Cinque minuti», dice. «Ne mancano sempre cinque. È il regolamento.»*
+>
+> *In fondo uno scrivano dorme col mento nell'inchiostro. Nessuno gli ha chiesto di*
+> *svegliarsi.*
+
+**Chi c'è.** Dodici sedie: i cinque PG fuori e un tenente per ognuna delle altre sette
+contrade, senza nome (se serve, pescalo da «III-bis · Kit anti-improvvisazione» §1). A
+capotavola, e **mai spostato**, il Maestro di Tavola.
+
+- **Il Maestro di Tavola** è il funzionario che applica il regolamento di `09-KIT` §3
+  (esperto 2, Sapienza nobiltà +6, Diplomazia +5), ed è lo stesso uomo che si rivede
+  alla Cena. Parla come chi legge un'ordinanza anche quando chiede il sale. Dà del voi
+  a tutti. Non si arrabbia e non si corrompe: si convince con una carta, e a questo
+  tavolo la carta è **l'articolo giusto**. Il tic è quello del kit: cita il numero
+  dell'articolo e lo sbaglia.
+- **Lo scrivano che dorme** è della Civetta (cap. VII §4). Vedi *Il
+  Dormiente*.
+
+**Il regolamento.** Sta inchiodato a un pilastro del portico, a quattro passi dalla
+tavola, in lettere piccole e fitte, coi numeri veri. Leggerlo non vuole una prova: ci
+vogliono quattro passi e un minuto, e chi ci va lo racconta agli altri. È un Fatto, e
+un Fatto non si tira.
+
+| Il Maestro dice | Il pilastro dice | Che cosa fa al tavolo |
+|---|---|---|
+| «Articolo 9» | **Art. 5.** Al campanello tutti si alzano e prendono la sedia a sinistra. Le tazze restano dove sono. | **Ogni cinque minuti il tavolo si rimescola.** Il campanello lo suona lui quando gira la clessidra: è il taglio del §2, dentro / fuori / dentro. |
+| «Articolo 12» | **Art. 21.** Con chi si aveva accanto prima non si parla. | Niente conciliaboli: ognuno deve lavorarsi un vicino nuovo. Chi parla col vecchio vicino paga il giro, una moneta d'argento nel piatto del Maestro, che la conta a voce alta. |
+| «Articolo 31» | **Art. 13.** Le porte del mercato si aprono per ventilare e lasciano passare soltanto ciò che si legge ad alta voce. | Vedi *La porta*. L'art. 31, quello che il Maestro cita, dice che i cavalli non entrano nel mercato. |
+
+**Chi si siede accanto a chi.** A ogni giro lo decidi tu, guardando la griglia di
+cap. VI §5: chi non ha ancora avuto la sua scena sta accanto a
+chi ha qualcosa da dirgli. I tenenti parlano poco e dicono una cosa sola ciascuno,
+quella che la loro contrada vuole che si sappia. Chi esce dal portico, per esempio
+Berenice verso il duello dei canti del §3, lascia la sedia. Al ritorno ne trova una
+libera, mai la sua, e davanti a sé la tazza di un altro.
+
+**La porta.** Una volta per Partiti, se un PG dice **articolo tredici**, o ne cita il
+contenuto con il numero giusto, il Maestro risponde «Articolo trentuno, sì», perché
+sbaglia il numero anche mentre approva, e apre la porta del mercato per il tempo di un
+respiro. Il tavolo di fuori può far passare **un foglietto, dodici parole al massimo**.
+Il Maestro lo legge a tutti quelli di dentro, con la sua voce da ordinanza, perché
+l'articolo lo vuole letto ad alta voce. Quello che il foglietto dice, lo sentono i
+sette Capitani insieme a Vanna.
+
+| Capitano | Come prende il foglietto |
+|---|---|
+| **Attu** | Sorride. La sua clausola piccola è scritta per chi non legge. Se il foglietto dice di leggere il foglio, il sorriso si ferma, e il patto resta quello che è |
+| **Barbanera** | Non alza la testa e scrive qualcosa |
+| **Vesca** | Guarda Vanna, non il foglietto |
+
+Se il foglietto rivela qualcosa che un PG teneva per sé, vale la nota di regia di
+cap. VI §4-bis: il segreto è del giocatore, e l'ha speso lui.
+
+**Il Dormiente.** Al secondo, al terzo e al quarto giro lo scrivano si sveglia a metà,
+dice **una frase** con la voce impastata e si riaddormenta senza ricordare niente. La
+frase è una diceria: 1d6 dalla tabella di cap. VII §5, senza ripetere.
+Contano come le dicerie del giorno, e non se ne tira un'altra. **Tu sai quali sono
+false** (la 3 e la 4); il tavolo no, e lo scrivano non si smentisce mai, perché dorme.
+Chi lo sveglia di proposito si sente citare l'articolo che protegge i funzionari a
+riposo, e la frase successiva non arriva.
+
+**Se qualcuno inventa un articolo** («quello sul bere in piedi»), il Maestro lo cerca
+sul pilastro e non lo trova. Dice che non c'è ancora. Dalla seduta dopo c'è, con un
+numero sbagliato, e costa una moneta d'argento.
+
+**Perché esiste, se glielo chiedono.** Il Maestro lo dice come si dice il prezzo del
+pane: *«Il regolamento è più vecchio del Drappo. Lo scrissero dopo che due tenenti,
+sempre seduti accanto, combinarono un patto che costò a un rione la sua stalla. Da
+allora nessuno resta seduto abbastanza da fidarsi.»*
+
+**La fine.** Quando suona davvero il timer da cucina, cioè la campana di mezzogiorno
+del §2, il Maestro lascia cadere l'ultimo granello. Poi chiude la mano sulla
+clessidra. *«Ecco. Cinque minuti.»*
+
+**Cosa lascia indietro, e cosa non è.**
+
+- **Non porta un indizio e non aggiunge un falso indizio.** Di falso indizio ce n'è uno
+  per modulo, e sono i quattro quaranta («III-ter · Il dossier delle piste» §7). Il numero
+  sbagliato del Maestro si smaschera leggendo il pilastro, e le dicerie sono quelle
+  della tabella. Per questo i numeri di questa tavola evitano di proposito i quaranta.
+- **Non costa niente di tracciato.** Nessun contatore scende per colpa della tavola: il
+  peggio è una moneta d'argento e una tisana di corteccia.
+- **Torna alla Cena.** Chi ha corretto il Maestro con garbo lo ritrova a sera, e lui
+  lo saluta per nome. È l'unico a Tarsilia che lo fa, e per un funzionario è una
+  dichiarazione d'amicizia. Lo sfogo sul 4705 resta quello del `10-DOSSIER` §6, e lo
+  dice a chi ha vicino.
 
 ---
 
@@ -3388,7 +3511,7 @@ che passa in mezzo alle tavole perché è tradizione che passi.
    che il fieno di domani non arriva: il Bruco ha comprato tutto il carico.
    Ombra ha due ore per trovarne altrove (Diplomazia CD 15 con i battellieri se c'è
    il patto con Barbanera; Sopravvivenza CD 16 per tagliarne di fresco; 30 mo per
-   comprarlo dal Torre).
+   comprarlo dalla Torre).
 4. **Rasca**, se Berenice è scesa dal palco (§3), la trova qui. Cinque minuti, due
    sedie, tutto il tavolo in ascolto.
 
@@ -3964,7 +4087,7 @@ Il montepremi della corsa: **500 mo** alla contrada vincitrice, **200** alla sec
 **100** alla terza. Il Drappo non ha prezzo e non si vende: chi ci prova, a Tarsilia,
 trova la città chiusa.
 
-Se hanno preso Sfregio vivo, la ricevuta del mediatore vale **300 mo** venduta alle
+Se hanno preso Sfregio vivo, la ricevuta del mediatore vale **300 mo** venduta alla
 Civetta — oppure vale molto di più tenuta in tasca.
 
 ---
@@ -4115,7 +4238,7 @@ Intimidire CD 14 fatto da chi ne ha appena messo giù uno. Nessuno di loro morir
 Sfregio.
 **Pico** — uno dei quattro, diciassette anni, quello della rissa alla fontana.
 
-### 4.3 · Miliziano del Torre — GS 1
+### 4.3 · Miliziano della Torre — GS 1
 
 **Umano guerriero 2** · pf 20 · **CA** 18 (+5 corazza a scaglie, +2 scudo, +1 Des)
 TS Tem +5, Rif +1, Vol +0

@@ -9,7 +9,7 @@
 
 Voce del Torneo di Dauth: non combatte, ma decide cosa il pubblico crede.
 
-Questa voce esiste perche' `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri.
+Questa voce esiste perché `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri.
 
 ## Notes
 

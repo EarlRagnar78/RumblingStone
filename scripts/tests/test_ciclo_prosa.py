@@ -17,6 +17,20 @@ BOX = (
 )
 
 
+_REGISTRO_TMP = tempfile.TemporaryDirectory()
+_PATCH_REGISTRO = mock.patch.object(cp, "REGISTRO", Path(_REGISTRO_TMP.name) / "miglioramenti.json")
+
+
+def setUpModule():
+    # applica() scrive nel registro dei miglioramenti: nei test mai quello vero
+    _PATCH_REGISTRO.start()
+
+
+def tearDownModule():
+    _PATCH_REGISTRO.stop()
+    _REGISTRO_TMP.cleanup()
+
+
 def _norme(testo):
     return sorted(s.norma for s in cp.segnala(testo))
 
@@ -270,3 +284,135 @@ class TestIlDocumentoBastaASeStesso(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestIlMiglioramento(unittest.TestCase):
+    """Di quanto migliora, non solo «non peggiora» (ADR-0077, estensione del 2026-10-03)."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        d = Path(self.tmp.name)
+        self.orig, self.risc = d / "orig.md", d / "risc.md"
+        self.prima = "Prima riga.\n\n" + BOX + "\nCD 15 per aprire.\n"
+        self.dopo = self.prima.replace("Entrate nella sala. ", "").replace(
+            "e ti è sembrato più grande da fuori", "e il fumo lo copre")
+        self.orig.write_text(self.prima, encoding="utf-8")
+        self.risc.write_text(self.dopo, encoding="utf-8")
+        self.registro = Path(self.tmp.name) / "miglioramenti.json"
+        self._p = mock.patch.object(cp, "REGISTRO", self.registro)
+        self._p.start()
+
+    def tearDown(self):
+        self._p.stop()
+        self.tmp.cleanup()
+
+    def test_conta_norma_per_norma(self):
+        mig = cp.miglioramento(self.prima, self.dopo, self.orig)
+        self.assertEqual(mig["segnalazioni"], [2, 0])
+        self.assertEqual(mig["norme"], {"P1": [1, 0], "sembra/pare": [1, 0]})
+        self.assertEqual(cp.peggiora(mig), [])
+
+    def test_il_punteggio_mqm_sale(self):
+        mig = cp.miglioramento(self.prima, self.dopo, self.orig)
+        self.assertIsNotNone(mig["mqm"])
+        self.assertGreater(mig["mqm"][1], mig["mqm"][0])   # il P1 è una norma pesata
+
+    def test_una_norma_che_cresce_e_un_peggioramento(self):
+        mig = cp.miglioramento(self.dopo, self.prima, self.orig)   # al contrario
+        self.assertIn("P1 0 → 1", cp.peggiora(mig))
+
+    def test_il_documento_dice_di_quanto(self):
+        testo, ok = cp.revisione(self.orig, self.risc)
+        self.assertTrue(ok)
+        self.assertIn("## Di quanto migliora", testo)
+        self.assertIn("**punteggio MQM**", testo)
+        self.assertIn("Il punteggio MQM non scende**: sì", testo)
+
+    def test_applica_scrive_il_registro(self):
+        testo, _ = cp.revisione(self.orig, self.risc)
+        rev = Path(self.tmp.name) / "REVISIONE.md"
+        rev.write_text(testo.replace("| [ ] | 1 |", "| [x] | 1 |").replace("| [ ] | 2 |", "| [x] | 2 |"),
+                       encoding="utf-8")
+        with mock.patch.object(cp, "_ramo", return_value="claude/prova"):
+            self.assertEqual(cp.applica(rev, "2026-10-03"), 0)
+        voci = cp._leggi_registro()
+        self.assertEqual(len(voci), 1)
+        self.assertEqual(voci[0]["modifiche"], 2)
+        self.assertEqual(voci[0]["segnalazioni"], [2, 0])
+        self.assertEqual(cp.registro_cmd(check=True), 0)
+
+    def test_il_cancello_morde(self):
+        cp.registra({"data": "2026-10-03", "file": "x.md", "modifiche": 1,
+                     "segnalazioni": [1, 2], "mqm": [90.0, 89.0]})
+        self.assertEqual(cp.registro_cmd(check=True), 1)
+
+    def test_misura_boccia_un_fatto_cambiato(self):
+        self.risc.write_text(self.dopo.replace("CD 15", "CD 18"), encoding="utf-8")
+        self.assertEqual(cp.misura_cmd(self.orig, self.risc), 1)
+
+    def test_misura_promuove_il_buon_giro(self):
+        self.assertEqual(cp.misura_cmd(self.orig, self.risc), 0)
+
+    def test_il_lotto_scrive_pacchetti_e_classifica(self):
+        giocato = Path(self.tmp.name) / "ARC07-DEF-1-PROVA.md"
+        giocato.write_text(self.prima, encoding="utf-8")
+        uscita = Path(self.tmp.name) / "lotto"
+        self.assertEqual(cp.lotto([self.orig, giocato], uscita), 0)
+        self.assertTrue((uscita / "LOTTO.md").exists())
+        pac = (uscita / "PACCHETTO-ARC07-DEF-1-PROVA.md").read_text(encoding="utf-8")
+        self.assertIn("già letto al tavolo (D9)", pac)
+        self.assertIn("| 1 |", pac)
+        self.assertNotIn("già letto", (uscita / "PACCHETTO-orig.md").read_text(encoding="utf-8"))
+
+    def test_un_file_pulito_non_ha_pacchetto(self):
+        pulito = Path(self.tmp.name) / "pulito.md"
+        pulito.write_text("Una riga.\n", encoding="utf-8")
+        uscita = Path(self.tmp.name) / "lotto"
+        cp.lotto([pulito], uscita)
+        self.assertFalse((uscita / "PACCHETTO-pulito.md").exists())
+        self.assertIn("pulito.md", (uscita / "LOTTO.md").read_text(encoding="utf-8"))
+
+
+class TestRigenera(unittest.TestCase):
+    """L'originale cambia dopo la revisione: `rigenera` riporta le stesse modifiche."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        d = Path(self.tmp.name)
+        self.orig, self.risc = d / "orig.md", d / "risc.md"
+        self.prima = "Prima riga.\n\n" + BOX + "\nCD 15 per aprire.\n"
+        self.orig.write_text(self.prima, encoding="utf-8")
+        self.risc.write_text(self.prima.replace("e ti è sembrato più grande da fuori",
+                                                "e il fumo lo copre"), encoding="utf-8")
+        testo, _ = cp.revisione(self.orig, self.risc)
+        self.rev = d / "REVISIONE.md"
+        self.rev.write_text(testo, encoding="utf-8")
+        self._p = mock.patch.object(cp, "REGISTRO", d / "miglioramenti.json")
+        self._p.start()
+
+    def tearDown(self):
+        self._p.stop()
+        self.tmp.cleanup()
+
+    def test_riporta_le_modifiche_sul_testo_di_oggi(self):
+        self.orig.write_text("Una riga nuova in testa.\n" + self.prima, encoding="utf-8")
+        with mock.patch.object(cp, "_ramo", return_value="claude/prova"):
+            self.assertEqual(cp.applica(self.rev, "2026-10-10"), 1)   # rifiuta, giustamente
+            self.assertEqual(cp.rigenera(self.rev), 0)
+            rev = self.rev.read_text(encoding="utf-8")
+            self.assertIn("| [ ] | 1 |", rev)                         # le spunte ripartono
+            self.rev.write_text(rev.replace("| [ ] |", "| [x] |"), encoding="utf-8")
+            self.assertEqual(cp.applica(self.rev, "2026-10-10"), 0)
+        nuovo = self.orig.read_text(encoding="utf-8")
+        self.assertIn("Una riga nuova in testa.", nuovo)
+        self.assertIn("il fumo lo copre", nuovo)
+
+    def test_non_indovina_se_il_punto_e_ambiguo(self):
+        doppio = self.prima + "\n" + BOX
+        self.orig.write_text(doppio, encoding="utf-8")
+        self.assertEqual(cp.rigenera(self.rev), 1)
+
+    def test_originale_invariato_non_fa_niente(self):
+        prima = self.rev.read_text(encoding="utf-8")
+        self.assertEqual(cp.rigenera(self.rev), 0)
+        self.assertEqual(self.rev.read_text(encoding="utf-8"), prima)

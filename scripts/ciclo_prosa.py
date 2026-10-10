@@ -19,6 +19,23 @@ persona; l'approvazione la dà il DM, modifica per modifica.
         secondo giro: applica all'ORIGINALE solo le modifiche spuntate, alza la
         revisione del documento e rimisura. Non scrive su `main` (D15).
 
+    python3 scripts/ciclo_prosa.py lotto FILE... -o CARTELLA
+        prima del primo giro: per ogni file un pacchetto da riscrivere (i
+        passaggi, la norma, il rimedio, cosa non si tocca, i numeri di
+        partenza), e la classifica dei file per punteggio MQM
+
+    python3 scripts/ciclo_prosa.py misura ORIGINALE RISCRITTO
+        fra un giro di riscrittura e l'altro: di quanto è migliorato, norma per
+        norma e in punti MQM. Esce 1 se qualcosa peggiora
+
+    python3 scripts/ciclo_prosa.py rigenera REVISIONE.md
+        quando l'originale è cambiato dopo la revisione: le stesse modifiche,
+        riportate sul testo di oggi, e il documento riscritto da approvare
+
+    python3 scripts/ciclo_prosa.py registro [--check]
+        i miglioramenti applicati, uno per revisione, con il totale; `--check`
+        è il cancello: nessuna revisione applicata ha peggiorato il punteggio
+
 Da dove vengono le regole, e con che licenza (ADR-0077):
 
 * i rilevatori del repo, già registrati: `validate_prosa` (calchi, antitesi,
@@ -55,6 +72,7 @@ import hashlib
 import re
 import subprocess
 import sys
+import tempfile
 from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -200,11 +218,16 @@ def segnala(testo: str) -> "list[Segnalazione]":
         nomi = mc.nomi_propri(corpo) - set(mc.PG)   # i PG il tavolo li conosce già
         if len(nomi) > 1:
             fuori.append(Segnalazione(i0 + 1, i1 + 1, "box con più nomi propri", ", ".join(sorted(nomi))))
-        for norma, rx in (("P1", mc.P1), ("metratura", mc.METRATURA), ("sembra/pare", vs.SEMBRA)):
+        for norma, rx in (("P1", mc.P1), ("metratura", mc.METRATURA)):
             m = rx.search(corpo)
             if m:
                 r = _riga_di(rx, b, i0)
                 fuori.append(Segnalazione(r or i0 + 1, r or i1 + 1, norma, f"«{m.group(0).strip()}»"))
+        esitanti = vs.sembra_esitanti(corpo)   # D17: il «sembra» smentito resta
+        if esitanti:
+            m = esitanti[0]
+            r = _riga_di(re.compile(r"\b" + re.escape(m.group(0)) + r"\b", re.I), b, i0)
+            fuori.append(Segnalazione(r or i0 + 1, r or i1 + 1, "sembra/pare", f"«{m.group(0).strip()}»"))
 
     # i tic minori in gruppo, paragrafo per paragrafo
     for p0, p1 in _paragrafi(righe):
@@ -560,7 +583,9 @@ def revisione(originale: Path, riscritto: Path) -> "tuple[str, bool]":
     non_motivate = [m.numero for m in mods if not m.norme]
     auto = automatiche(prima, dopo, mods)
     l0, l1 = lettura(prima), lettura(dopo)
-    ok = not peggiorate and not fatti_cambiati
+    mig = miglioramento(prima, dopo, originale)
+    mqm_scende = bool(mig["mqm"]) and mig["mqm"][1] < mig["mqm"][0]
+    ok = not peggiorate and not fatti_cambiati and not mqm_scende
 
     r = [f"# Revisione · {originale.name}", "",
          f'<!-- revisione: originale="{_rel(originale)}" riscritto="{_nel_repo(riscritto)}" '
@@ -574,11 +599,19 @@ def revisione(originale: Path, riscritto: Path) -> "tuple[str, bool]":
          f"- **Nessun controllo peggiora**: {'sì' if not peggiorate else 'NO, peggiorano ' + ', '.join(peggiorate)}",
          f"- **Nessun fatto cambia** (nomi propri, numeri, CD): {'sì' if not fatti_cambiati else 'NO'}"]
     r += [f"  - {x}" for x in fatti_cambiati]
+    if mig["mqm"]:
+        r.append(f"- **Il punteggio MQM non scende**: {'sì' if not mqm_scende else 'NO'} "
+                 f"({mig['mqm'][0]} → {mig['mqm'][1]})")
     r += [f"- **Segnalazioni**: {sum(m0.values())} prima, {sum(m1.values())} dopo",
           f"- **Modifiche non motivate da una segnalazione**: {len(non_motivate)}"
           + (f" (#{', #'.join(map(str, non_motivate))}): vanno guardate per prime" if non_motivate else ""),
           f"- **Applicabili senza lettore**: {len(auto)} su {len(mods)}",
-          "", "## La lettura, prima e dopo", "",
+          "", "## Di quanto migliora", "",
+          "Con tutte le modifiche applicate. Il punteggio MQM pesa le norme registrate",
+          "per severità (ADR-0059); le segnalazioni le contano norma per norma. Un",
+          "numero che sale vuol dire più norme rispettate, non una prosa più bella.", ""]
+    r += tabella_miglioramento(mig)
+    r += ["", "## La lettura, prima e dopo", "",
           "Non dicono se la prosa è bella: dicono se la riscrittura l'ha resa più dura",
           "da seguire a voce o più monotona. Il giudizio resta di chi legge ad alta voce.", "",
           "| misura | prima | dopo | si vuole |", "|---|---:|---:|---|",
@@ -602,6 +635,286 @@ def revisione(originale: Path, riscritto: Path) -> "tuple[str, bool]":
           "<details><summary>apri il testo marcato</summary>", "",
           "````markdown", marcato, "````", "", "</details>", ""]
     return "\n".join(r), ok
+
+
+# ── il miglioramento: di quanto, non solo «non peggiora» (ADR-0077, estensione) ──
+#: Il registro dei miglioramenti applicati: una riga per revisione applicata.
+REGISTRO = RADICE / "plans" / "scrittura" / "miglioramenti.json"
+
+#: I master già letti al tavolo: lì una revisione spezza i box e non cambia una
+#: parola (D9 di PIANO-LETTORE-E-PLAYTESTER, 2026-09-30). Il pacchetto lo dice.
+GIA_GIOCATI = ("ARC07-DEF-1-", "ARC07-DEF-2-", "ARC07-DEF-3-")
+
+#: Quando ci si ferma: dopo un giro che non abbassa le segnalazioni, o al terzo.
+#: Senza un tetto «il più possibile» diventa riscrivere per il gusto di farlo.
+GIRI_MASSIMI = 3
+
+
+def mqm(testo: str, percorso: Path) -> "dict | None":
+    """Il punteggio MQM di `testo` come se fosse `percorso` (ADR-0059).
+
+    `punteggio_mqm` legge un file: il testo riscritto si scrive in una cartella
+    temporanea con lo stesso nome, e la classe si prende dal percorso vero.
+    None se le specifiche non ci sono (il ciclo funziona anche senza).
+    """
+    try:
+        import punteggio_mqm as pm
+        spec = pm.carica_specifiche()
+    except (ImportError, SystemExit):  # pragma: no cover — senza pyyaml o specifiche
+        return None
+    with tempfile.TemporaryDirectory() as d:
+        tmp = Path(d) / percorso.name
+        tmp.write_text(testo, encoding="utf-8")
+        e = pm.valuta(tmp, spec)
+    e["file"] = _rel(percorso)
+    e["classe"] = pm.classe_di(_assoluto(str(percorso)), spec)
+    return e
+
+
+def miglioramento(prima: str, dopo: str, percorso: Path) -> dict:
+    """Di quanto la riscrittura ha migliorato il testo, misurato.
+
+    Tre misure, e nessuna dice se la prosa è bella: le segnalazioni norma per
+    norma (quante norme registrate il testo rispetta in più), il punteggio MQM
+    (le stesse norme pesate per severità, ISO 5060), e la lettura (che non sia
+    diventata più dura o più piatta). Il giudizio resta di chi legge a voce.
+    """
+    m0, m1 = misure(prima), misure(dopo)
+    q0, q1 = mqm(prima, percorso), mqm(dopo, percorso)
+    l0, l1 = lettura(prima), lettura(dopo)
+    norme = sorted(set(m0) | set(m1))
+    return {
+        "norme": {n: [m0[n], m1[n]] for n in norme},
+        "segnalazioni": [sum(m0.values()), sum(m1.values())],
+        "mqm": [q0["punteggio"], q1["punteggio"]] if q0 and q1 else None,
+        "penalita": [q0["penalita"], q1["penalita"]] if q0 and q1 else None,
+        "gulpease": [l0["gulpease"], l1["gulpease"]],
+        "ritmo": [l0["ritmo"], l1["ritmo"]],
+    }
+
+
+def peggiora(mig: dict) -> "list[str]":
+    """Le misure che la riscrittura ha peggiorato: vuoto vuol dire promossa."""
+    fuori = [f"{n} {a} → {b}" for n, (a, b) in mig["norme"].items() if b > a]
+    if mig["mqm"] and mig["mqm"][1] < mig["mqm"][0]:
+        fuori.append(f"MQM {mig['mqm'][0]} → {mig['mqm'][1]}")
+    return fuori
+
+
+def tabella_miglioramento(mig: dict) -> "list[str]":
+    r = ["| misura | prima | dopo | Δ |", "|---|---:|---:|---:|"]
+    if mig["mqm"]:
+        a, b = mig["mqm"]
+        r.append(f"| **punteggio MQM** (0-100, ISO 5060) | {a} | {b} | {b - a:+.2f} |")
+        pa, pb = mig["penalita"]
+        r.append(f"| penalità MQM (minore 1, maggiore 5) | {pa} | {pb} | {pb - pa:+d} |")
+    a, b = mig["segnalazioni"]
+    r.append(f"| **segnalazioni** | {a} | {b} | {b - a:+d} |")
+    for n, (a, b) in mig["norme"].items():
+        r.append(f"| · {n} | {a} | {b} | {b - a:+d} |")
+    return r
+
+
+def misura_cmd(originale: Path, riscritto: Path) -> int:
+    prima = originale.read_text(encoding="utf-8")
+    dopo = riscritto.read_text(encoding="utf-8")
+    mig = miglioramento(prima, dopo, originale)
+    print("\n".join(tabella_miglioramento(mig)))
+    fatti_cambiati = confronta_fatti(prima, dopo)
+    for x in fatti_cambiati:
+        print(f"✗ fatto cambiato: {x}")
+    male = peggiora(mig)
+    for x in male:
+        print(f"✗ peggiora: {x}")
+    rimaste = segnala(dopo)
+    print(f"{'✓' if not male and not fatti_cambiati else '✗'} restano {len(rimaste)} segnalazioni")
+    if mig["segnalazioni"][1] >= mig["segnalazioni"][0]:
+        print("  questo giro non ha abbassato le segnalazioni: ci si ferma qui (GIRI_MASSIMI, ADR-0077)")
+    return 1 if male or fatti_cambiati else 0
+
+
+def _estratto(righe: "list[str]", s: Segnalazione) -> str:
+    testo = " ".join(r.strip() for r in righe[s.riga - 1:s.fine])
+    testo = " ".join(testo.split())
+    return (testo[:220] + "…") if len(testo) > 220 else testo
+
+
+def pacchetto(percorso: Path) -> "tuple[str, dict]":
+    """Il pacchetto di un file: quello che serve a chi riscrive, e niente altro."""
+    testo = percorso.read_text(encoding="utf-8")
+    righe = testo.splitlines()
+    seg = segnala(testo)
+    q = mqm(testo, percorso)
+    lt = lettura(testo)
+    f = fatti(testo)
+    giocato = any(percorso.name.startswith(g) for g in GIA_GIOCATI)
+    rel = _rel(percorso)
+    r = [f"# Pacchetto di riscrittura · {percorso.name}", "",
+         f"<!-- pacchetto: originale=\"{rel}\" -->", "",
+         "Si riscrivono **solo** i passaggi qui sotto, e solo quanto basta a",
+         "togliere la segnalazione. Prima di scrivere si leggono i `references/` di",
+         "`rumblingstone-narrative-style` (AGENTS.md G1): `italiano-nativo.md`,",
+         "`read-aloud-adulti.md`, `editorial-standards.md`, `style-pillars.md`.", ""]
+    if giocato:
+        r += ["⚠️ **Master già letto al tavolo (D9).** I box si spezzano e basta: nessuna",
+              "parola cambia. Le segnalazioni che chiedono di riscrivere restano al DM.", ""]
+    r += ["## Da che numero si parte", "",
+          "| misura | valore |", "|---|---:|"]
+    if q:
+        r += [f"| punteggio MQM | {q['punteggio']} |", f"| penalità MQM | {q['penalita']} |"]
+    r += [f"| segnalazioni | {len(seg)} |", f"| Gulpease | {lt['gulpease']} |",
+          f"| ritmo | {lt['ritmo']} |", "",
+          "## Cosa non si tocca", "",
+          f"Nomi propri ({len(f['nomi propri'])} diversi), numeri ({len(f['numeri'])}) e CD",
+          f"({len(f['CD'])}): `revisione` confronta i tre insiemi e blocca la modifica",
+          "che ne cambia uno. Una frase senza segnalazione resta com'è.", "",
+          "## I passaggi", "",
+          "| # | righe | norma | rimedio | il testo |", "|---:|---|---|---|---|"]
+    for i, s in enumerate(seg, 1):
+        estratto = _estratto(righe, s).replace("|", "\\|")
+        r.append(f"| {i} | {s.riga}-{s.fine} | {s.norma} {s.dettaglio} | {s.rimedio} | {estratto} |")
+    r += ["", "## Il giro", "",
+          "```bash",
+          f"cp '{rel}' /tmp/riscritto.md         # si riscrive la copia, mai l'originale",
+          f"python3 scripts/ciclo_prosa.py misura '{rel}' /tmp/riscritto.md",
+          "# … si ritocca quello che resta, e si rimisura",
+          f"python3 scripts/ciclo_prosa.py revisione '{rel}' /tmp/riscritto.md -o REVISIONE.md",
+          "```", "",
+          f"Ci si ferma quando un giro non abbassa le segnalazioni, o al giro {GIRI_MASSIMI}.",
+          "Il documento di revisione va al DM, che approva modifica per modifica (D15).", ""]
+    riassunto = {"file": rel, "segnalazioni": len(seg), "giocato": giocato,
+                 "mqm": q["punteggio"] if q else None, "penalita": q["penalita"] if q else None}
+    return "\n".join(r), riassunto
+
+
+def lotto(files: "list[Path]", uscita: Path) -> int:
+    uscita.mkdir(parents=True, exist_ok=True)
+    righe = []
+    for f in files:
+        testo, rias = pacchetto(f)
+        if rias["segnalazioni"]:         # un file pulito sta nella classifica, non ha pacchetto
+            (uscita / f"PACCHETTO-{f.stem}.md").write_text(testo, encoding="utf-8")
+        righe.append(rias)
+    righe.sort(key=lambda x: (x["mqm"] if x["mqm"] is not None else 100, -x["segnalazioni"]))
+    indice = ["# Lotto di riscrittura", "",
+              "I file in ordine di punteggio MQM, dal peggiore. I master già letti al",
+              "tavolo (D9) si spezzano e non si riscrivono.", "",
+              "| file | MQM | penalità | segnalazioni | al tavolo |", "|---|---:|---:|---:|:---:|"]
+    for x in righe:
+        indice.append(f"| `{x['file']}` | {x['mqm']} | {x['penalita']} | {x['segnalazioni']} | "
+                      f"{'sì' if x['giocato'] else ''} |")
+    (uscita / "LOTTO.md").write_text("\n".join(indice) + "\n", encoding="utf-8")
+    print("\n".join(indice))
+    print(f"\n✓ {sum(1 for x in righe if x['segnalazioni'])} pacchetti in {_rel(uscita)}, "
+          f"{sum(1 for x in righe if not x['segnalazioni'])} file già puliti")
+    return 0
+
+
+#: Quanti caratteri di testo uguale, prima di una modifica, la ritrovano
+#: nell'originale cambiato. Pochi pescano due posti, troppi non pescano niente
+#: se l'originale è cambiato proprio lì vicino.
+CONTESTO = 25
+
+
+def rigenera_testo(rev_md: str, oggi: str) -> "tuple[str | None, str]":
+    """Le modifiche di una revisione, riportate su `oggi` (l'originale cambiato).
+
+    Ogni modifica si ritrova dal testo che la precede (CONTESTO caratteri, già
+    nella versione riscritta) più il testo che toglie: se quella stringa non
+    compare una volta sola nell'originale di oggi, non si indovina. Restituisce
+    (riscritto, "") oppure (None, il motivo).
+    Nato dal lotto D13 del 2026-10-03: DEF-4 e ARC08-01 erano cambiati dopo la
+    revisione, e `applica` giustamente rifiutava.
+    """
+    marcato = _marcato_del_documento(rev_md)
+    fatto, da, cur = [], 0, oggi
+    for m in _MARCA.finditer(marcato):
+        uguale = marcato[da:m.start()]
+        fatto.append(uguale)
+        if m.group("v") is not None:
+            vecchio, nuovo = m.group("v"), m.group("n")
+        elif m.group("a") is not None:
+            vecchio, nuovo = "", m.group("a")
+        else:
+            vecchio, nuovo = m.group("t"), ""
+        sinistra = "".join(fatto)[-CONTESTO:]
+        chiave = sinistra + vecchio
+        n = cur.count(chiave)
+        if n != 1:
+            return None, (f"la modifica «{vecchio[:40]}» → «{nuovo[:40]}» compare {n} volte "
+                          "nel testo di oggi: non si riporta da sola")
+        cur = cur.replace(chiave, sinistra + nuovo)
+        fatto.append(nuovo)
+        da = m.end()
+    return cur, ""
+
+
+def rigenera(percorso_rev: Path) -> int:
+    rev = percorso_rev.read_text(encoding="utf-8")
+    m = _TESTA.search(rev)
+    if not m:
+        print("✗ non è un file di revisione: manca la riga di testa")
+        return 2
+    originale = _assoluto(m.group("o"))
+    oggi = originale.read_text(encoding="utf-8")
+    vecchio, _ = dal_markup(_marcato_del_documento(rev))
+    if vecchio == oggi:
+        print("✓ l'originale non è cambiato: non c'è niente da rigenerare")
+        return 0
+    riscritto, motivo = rigenera_testo(rev, oggi)
+    if riscritto is None:
+        print(f"✗ {motivo}. La revisione va rifatta a mano")
+        return 1
+    with tempfile.TemporaryDirectory() as d:
+        tmp = Path(d) / originale.name
+        tmp.write_text(riscritto, encoding="utf-8")
+        testo, ok = revisione(originale, tmp)
+    testo = testo.replace(f'riscritto="{_nel_repo(tmp)}"', 'riscritto="nel documento"')
+    percorso_rev.write_text(testo, encoding="utf-8")
+    print(f"{'✓' if ok else '✗'} rigenerata {_rel(percorso_rev)} sul testo di oggi: "
+          "le spunte ripartono da zero, perché i numeri delle modifiche possono cambiare")
+    return 0 if ok else 1
+
+
+def _leggi_registro() -> "list[dict]":
+    if not REGISTRO.exists():
+        return []
+    return json.loads(REGISTRO.read_text(encoding="utf-8"))
+
+
+def registra(voce: dict) -> None:
+    voci = _leggi_registro()
+    voci.append(voce)
+    REGISTRO.parent.mkdir(parents=True, exist_ok=True)
+    REGISTRO.write_text(json.dumps(voci, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
+def registro_cmd(check: bool) -> int:
+    voci = _leggi_registro()
+    if not voci:
+        print("registro vuoto: nessuna revisione applicata dal 2026-10-03")
+        return 0
+    print("| data | file | modifiche | segnalazioni | MQM |")
+    print("|---|---|---:|---|---|")
+    male, ds, dq = [], 0, 0.0
+    for v in voci:
+        s0, s1 = v["segnalazioni"]
+        q = v.get("mqm")
+        ds += s1 - s0
+        if q:
+            dq += q[1] - q[0]
+        print(f"| {v['data']} | `{v['file']}` | {v['modifiche']} | {s0} → {s1} | "
+              f"{f'{q[0]} → {q[1]}' if q else '—'} |")
+        if s1 > s0 or (q and q[1] < q[0]):
+            male.append(v)
+    print(f"\n{len(voci)} revisioni applicate: segnalazioni {ds:+d}, MQM {dq:+.2f} punti in tutto")
+    if check and male:
+        for v in male:
+            print(f"✗ {v['file']} ({v['data']}): una revisione applicata ha peggiorato la misura")
+        return 1
+    if check:
+        print("✓ registro dei miglioramenti: nessuna revisione applicata ha peggiorato la misura")
+    return 0
 
 
 # ── l'applicazione ───────────────────────────────────────────────────────────
@@ -670,7 +983,8 @@ def _ramo() -> str:
     return r.stdout.strip()
 
 
-def applica(percorso_rev: Path, data: str, forza_ramo: bool = False, auto: bool = False) -> int:
+def applica(percorso_rev: Path, data: str, forza_ramo: bool = False, auto: bool = False,
+            registro: bool = True) -> int:
     rev = percorso_rev.read_text(encoding="utf-8")
     m = _TESTA.search(rev)
     if not m:
@@ -704,9 +1018,15 @@ def applica(percorso_rev: Path, data: str, forza_ramo: bool = False, auto: bool 
         return 1
     nuovo = alza_revisione(corretto, data)
     originale.write_text(nuovo, encoding="utf-8")
-    m0, m1 = misure(prima), misure(nuovo)
+    mig = miglioramento(prima, nuovo, originale)
     print(f"✓ applicate {len(sì)} modifiche a {_rel(originale)}")
-    print(f"  secondo giro: segnalazioni {sum(m0.values())} → {sum(m1.values())}")
+    print(f"  secondo giro: segnalazioni {mig['segnalazioni'][0]} → {mig['segnalazioni'][1]}")
+    if mig["mqm"]:
+        print(f"  punteggio MQM: {mig['mqm'][0]} → {mig['mqm'][1]}")
+    if registro:
+        registra({"data": data, "file": _rel(originale), "revisione": _rel(percorso_rev),
+                  "modifiche": len(sì), "segnalazioni": mig["segnalazioni"], "mqm": mig["mqm"],
+                  "penalita": mig["penalita"], "gulpease": mig["gulpease"], "norme": mig["norme"]})
     for s in segnala(nuovo):
         print(f"  · resta r.{s.riga}: {s.norma} {s.dettaglio}")
     return 0
@@ -729,7 +1049,26 @@ def main(argv=None) -> int:
     s3.add_argument("--data", required=True, help="AAAA-MM-GG: la data non si deduce (ADR-0023)")
     s3.add_argument("--auto", action="store_true",
                     help="applica anche le modifiche segnate «auto», e lo scrive nel documento")
+    s4 = sub.add_parser("lotto", help="i pacchetti da riscrivere, e la classifica MQM")
+    s4.add_argument("file", type=Path, nargs="+")
+    s4.add_argument("-o", "--uscita", type=Path, required=True)
+    s5 = sub.add_parser("misura", help="di quanto il riscritto migliora l'originale")
+    s5.add_argument("originale", type=Path)
+    s5.add_argument("riscritto", type=Path)
+    s6 = sub.add_parser("registro", help="i miglioramenti applicati; --check è il cancello")
+    s6.add_argument("--check", action="store_true")
+    s7 = sub.add_parser("rigenera", help="la revisione riportata sull'originale cambiato")
+    s7.add_argument("revisione", type=Path)
     a = ap.parse_args(argv)
+
+    if a.cmd == "lotto":
+        return lotto(a.file, a.uscita)
+    if a.cmd == "misura":
+        return misura_cmd(a.originale, a.riscritto)
+    if a.cmd == "registro":
+        return registro_cmd(a.check)
+    if a.cmd == "rigenera":
+        return rigenera(a.revisione)
 
     if a.cmd == "segnala":
         testo = a.file.read_text(encoding="utf-8")

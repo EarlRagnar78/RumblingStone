@@ -1,3 +1,4 @@
+<!-- revisione-testo: r1 · 2026-10-03 -->
 # IL PORTALE DELLA FORGIA ETERNA
 
 ## PARTE 3 - Piano Elementale del Fuoco (FINALE RICALIBRATO)
@@ -267,7 +268,7 @@
 **Fallimento:** Pioggia di lapilli (4d6 danni a tutti) e il rituale rallenta (+5 minuti).  
 
 **Narrazione Successo:**
-> *Thorik, reciti la preghiera antica - parole che generazioni di nani hanno cantato da millenni. Mentre compi il settimo giro e batti Aegis Fang, le rune dell'Altare RISPONDONO. Brillano di oro liquido, formando pattern che sembrano... respirare. L'aria attorno all'Altare trema, la realtà stessa si PIEGA leggermente, respingendo il calore infernale.*
+> *Thorik, reciti la preghiera antica - parole che generazioni di nani hanno cantato da millenni. Mentre compi il settimo giro e batti Aegis Fang, le rune dell'Altare RISPONDONO. Brillano di oro liquido, formando disegni che si allargano e si stringono, come un respiro. L'aria attorno all'Altare trema, la realtà stessa si PIEGA leggermente, respingendo il calore infernale.*
 
 ---
 

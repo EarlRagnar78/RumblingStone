@@ -155,5 +155,56 @@
       "dove": "PR #216 aperta in bozza dal 2026-10-03 (revisione della prosa misurata; il lotto ARC-08 in plans/scrittura/lotto-ARC08-2026-10-03/): STATO-E-ORDINE §3, «Le PR ancora aperte, oggi». Registrata il 2026-10-07"
     }
   ],
-  "file": []
+  "file": [
+    {
+      "percorso": "plans/adr/ADR-0014-legenda-funzionale-fonte-unica.md",
+      "stato": "portato",
+      "dove": "ADR-0048 (lotto 4b, PIANO-RIPRESA §4.2-ter)"
+    },
+    {
+      "percorso": "plans/adr/ADR-0016-profili-regole-multisistema.md",
+      "stato": "portato",
+      "dove": "ADR-0039 (commit 82e1c16)"
+    },
+    {
+      "percorso": "plans/adr/ADR-0017-separazione-prodotto-e-rilicenziamento-toolkit.md",
+      "stato": "portato",
+      "dove": "ADR-0040 (commit 82e1c16)"
+    },
+    {
+      "percorso": "plans/adr/ADR-0018-edizione-commerciale-ap-originale.md",
+      "stato": "portato",
+      "dove": "ADR-0049, proposta (D11)"
+    },
+    {
+      "percorso": "plans/adr/ADR-0015-dipendenze-a-livelli-e-pacchettizzazione.md",
+      "stato": "rifiutato",
+      "dove": "PIANO-RIPRESA §4.2-ter: contraddetto da ADR-0037"
+    },
+    {
+      "percorso": "plans/PIANO-PRODOTTO-TOOLKIT-VENDIBILE.md",
+      "stato": "superato",
+      "dove": "PIANO-VENDIBILITA §6 lo assorbe (tabella delle fonti)"
+    },
+    {
+      "percorso": "plans/PIANO-EDIZIONE-COMMERCIALE-AP-ORIGINALE.md",
+      "stato": "superato",
+      "dove": "PIANO-VENDIBILITA §5 linea 4 lo assorbe (tabella delle fonti)"
+    },
+    {
+      "percorso": "scripts/validate_skill_paths.py",
+      "stato": "superato",
+      "dove": "validate_docs --sorgenti controlla i percorsi fra backtick in tutti i markdown (lotto 4i-1)"
+    },
+    {
+      "percorso": "SOGGETTO-DISCESA-UNDERDARK-ARCHI-01-05.md",
+      "stato": "portato",
+      "dove": "plans/SOGGETTO-DISCESA-UNDERDARK-ARCHI-01-05.md, datato (D22); le due conferme rimaste sono la D24"
+    },
+    {
+      "percorso": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-DAUTH-CITY-SIEGE.md",
+      "stato": "superato",
+      "dove": "il Giorno 3 su main, riscritto a luglio (ARC09 lotto A); la versione di maggio contraddice il canone: Karruk vi e' un hobgoblin chierico GS 12 a Dauth, nel Bestiario e' un gigante delle colline GS 10 riservato a Rethmar (D22, PIANO-RIPRESA §4.11.5)"
+    }
+  ]
 }

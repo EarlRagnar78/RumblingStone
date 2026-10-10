@@ -31,9 +31,9 @@ da seguire a voce o più monotona. Il giudizio resta di chi legge ad alta voce.
 
 | ok | # | riga | prima | dopo | norma | auto |
 |---|---:|---:|---|---|---|:---:|
-| [ ] | 1 | 55 | casa che sembra infinitamente lontana ora.* | una casa che adesso è lontanissima.* | sembra/pare | ✓ |
-| [ ] | 2 | 314 | sembra... non più vicina. È illusione distanza, ma sconcertante.* | non si è avvicinata di un passo. È un'illusione della distanza, ma sco… | sembra/pare | ✓ |
-| [ ] | 3 | 328 | fiume rapida - sembra caos, ma flusso acqua segue leggi natura. | una rapida: da fuori è caos, ma l'acqua segue le sue leggi. | sembra/pare | ✓ |
+| [x] | 1 | 55 | casa che sembra infinitamente lontana ora.* | una casa che adesso è lontanissima.* | sembra/pare | ✓ |
+| [x] | 2 | 314 | sembra... non più vicina. È illusione distanza, ma sconcertante.* | non si è avvicinata di un passo. È un'illusione della distanza, ma sco… | sembra/pare | ✓ |
+| [x] | 3 | 328 | fiume rapida - sembra caos, ma flusso acqua segue leggi natura. | una rapida: da fuori è caos, ma l'acqua segue le sue leggi. | sembra/pare | ✓ |
 
 ## Il testo con le modifiche (CriticMarkup)
 

@@ -96,6 +96,10 @@ jobs:
       - name: Decisioni aperte al DM — l'aggregato combacia coi piani
         run: python scripts/decisioni_dm.py --check
 
+      # ADR-0087: la memoria del lavoro è generata dal repo e non resta indietro
+      - name: La memoria è allineata (MEMORIA.md, ADR-0087)
+        run: python scripts/memoria.py --check
+
       - name: Plans discipline gate — CHANGELOG obbligatorio + promemoria ADR (ADR-0009)
         if: github.event_name == 'pull_request'
         run: python scripts/check_plans_discipline.py --base "origin/${{ github.base_ref }}"
@@ -380,6 +384,8 @@ jobs:
         run: |
           python scripts/punteggio_mqm.py --soglia
           python scripts/validate_modules.py --tetto-el
+          # ADR-0077, estensione: nessuna revisione applicata ha peggiorato la misura
+          python scripts/ciclo_prosa.py registro --check
 
       - name: Unit tests — unittest (il corridore storico, ADR-0007)
         run: python -m unittest discover -s scripts/tests -v

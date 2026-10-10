@@ -106,6 +106,22 @@ class TestIlVoto(unittest.TestCase):
     def test_come_se_non_e_sembra(self):
         assert _controlli("> *Batte come se fosse vivo.*\n")["box_senza_sembra"]
 
+    def test_sembra_smentito_col_trattino_resta(self):
+        # D17: «sembra» seguito dalla smentita prepara il colpo, non esita
+        assert _controlli("> *Quella che sembrava una parete — è una palpebra.*\n")["box_senza_sembra"]
+
+    def test_sembra_smentito_nella_frase_dopo_resta(self):
+        assert _controlli("> *Sembra un luogo sicuro. E non lo è.*\n")["box_senza_sembra"]
+        assert _controlli("> *Sembrava una macchia scura, e si rivela un'ala.*\n")["box_senza_sembra"]
+
+    def test_smentita_troppo_lontana_non_salva(self):
+        # oltre la frase dopo la smentita non vale: il narratore ha già esitato
+        testo = "> *La sala sembra vuota. Il vento soffia. Il fuoco arde. Invece c'è qualcuno.*\n"
+        assert not _controlli(testo)["box_senza_sembra"]
+
+    def test_un_e_da_solo_non_smentisce(self):
+        assert not _controlli("> *La sala sembra vuota. È fredda.*\n")["box_senza_sembra"]
+
     def test_sembra_fuori_dal_box_non_conta(self):
         assert _controlli("Al DM sembra lungo.\n> *Una sala vuota.*\n")["box_senza_sembra"]
 

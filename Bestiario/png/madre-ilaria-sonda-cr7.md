@@ -7,9 +7,9 @@
 
 ## Summary
 
-Badessa morta e rimasta: **alleata** dei PG, e la fonte piu' attendibile sul passato dell'abbazia. Il suo sacello (C20) e' una delle tre vie alla verita'.
+Badessa morta e rimasta: **alleata** dei PG, e la fonte più attendibile sul passato dell'abbazia. Il suo sacello (C20) è una delle tre vie alla verita'.
 
-Questa voce esiste perche' `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri: senza, una creatura con statistiche scritte non e' raggiungibile da nessuno strumento. Ogni modifica va fatta nel file d'avventura.
+Questa voce esiste perché `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri: senza, una creatura con statistiche scritte non è raggiungibile da nessuno strumento. Ogni modifica va fatta nel file d'avventura.
 
 ## Notes
 

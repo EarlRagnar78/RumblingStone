@@ -296,7 +296,13 @@ def _registro_dei_nomi() -> "set[str]":
        il prezzo giusto: quel nome, al tavolo, non e' ancora canone.
     2. Un nome di **piu' parole** si conta a pezzi — «Mano Rossa» e «Cuore
        della Leggenda» valgono due. Il conteggio e' quindi **prudente al
-       rialzo**: segnala piu' di quanto serva, mai meno.
+       rialzo**: segnala piu' di quanto serva, mai meno. ✅ *(2026-10-03)*
+       Quando il nome composto sta nei dati (il nome di un file del Bestiario,
+       la prima colonna di `state.md`: «Fauci di Palude», «Aegis Fang»,
+       «Corona di Adamantio») conta uno: `_nomi_composti`. La prova della
+       revisione automatica sui box di ARC-08 lo ha trovato: il rilevatore
+       chiedeva di togliere un nome che la garanzia sui fatti vieta di
+       togliere. «Mano Rossa» non sta nei dati, e vale ancora due.
     3. 🔴 **Il piu' importante.** La norma di `read-aloud-adulti.md` §1 dice
        «un solo nome proprio **NUOVO** per box», e *nuovo* dipende da cosa il
        tavolo ha gia' incontrato, cioe' dall'ordine di lettura. Questo metro
@@ -325,6 +331,36 @@ def _registro_dei_nomi() -> "set[str]":
 
 _PAROLA_MAIUSCOLA = re.compile(r"[A-ZÀ-Ù][a-zà-ù']{2,}")
 _REGISTRO: "set[str] | None" = None
+_COMPOSTI: "list[str] | None" = None
+_LEGANTI = {"di", "del", "della", "dei", "delle", "degli"}
+
+
+def _nomi_composti() -> "list[str]":
+    """I nomi di piu' parole, dagli stessi dati di `_registro_dei_nomi`.
+
+    Si tengono solo quelli fatti di parole maiuscole e di preposizioni
+    («Fauci di Palude»): un nome di file come «Monster And Png» non compare in
+    un box, e se compare e' giusto contarlo uno. Dal piu' lungo al piu' corto,
+    perche' «Profughi Guado di Drellin» vinca su «Guado di Drellin».
+    """
+    candidati: "set[str]" = set()
+    bestiario = ROOT / "Bestiario"
+    if bestiario.exists():
+        for f in bestiario.rglob("*"):
+            candidati.add(" ".join(re.split(r"[_\-]+", f.stem)).strip())
+    stato = ROOT / "campaign" / "state.md"
+    if stato.exists():
+        for riga in stato.read_text(encoding="utf-8").splitlines():
+            if riga.startswith("|"):
+                candidati.add(riga.strip("|").split("|")[0].strip().strip("*[]`"))
+    buoni = set()
+    for c in candidati:
+        parole = c.split()
+        if (2 <= len(parole) <= 5 and _PAROLA_MAIUSCOLA.fullmatch(parole[0])
+                and _PAROLA_MAIUSCOLA.fullmatch(parole[-1])
+                and all(_PAROLA_MAIUSCOLA.fullmatch(w) or w in _LEGANTI for w in parole)):
+            buoni.add(" ".join(parole))
+    return sorted(buoni, key=len, reverse=True)
 
 
 def nomi_propri(corpo: str) -> "set[str]":
@@ -332,9 +368,17 @@ def nomi_propri(corpo: str) -> "set[str]":
     global _REGISTRO
     if _REGISTRO is None:
         _REGISTRO = _registro_dei_nomi()
+    global _COMPOSTI
+    if _COMPOSTI is None:
+        _COMPOSTI = _nomi_composti()
     piano = _APERTURE.sub("", _ETICHETTA.sub("", corpo))
-    return {w.strip("«»\"'()[],;:.!?—-") for w in piano.split()
-            if w.strip("«»\"'()[],;:.!?—-") in _REGISTRO}
+    trovati: "set[str]" = set()
+    for nome in _COMPOSTI:            # un nome composto conta uno, e si toglie dal testo
+        if nome in piano:
+            trovati.add(nome)
+            piano = piano.replace(nome, " ")
+    return trovati | {w.strip("«»\"'()[],;:.!?—-") for w in piano.split()
+                      if w.strip("«»\"'()[],;:.!?—-") in _REGISTRO}
 
 
 #: Due indicatori di lunghezza, accanto al tetto delle righe e non al suo posto

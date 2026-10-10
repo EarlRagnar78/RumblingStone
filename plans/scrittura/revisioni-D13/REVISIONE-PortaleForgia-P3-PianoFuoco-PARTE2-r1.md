@@ -31,8 +31,8 @@ da seguire a voce o più monotona. Il giudizio resta di chi legge ad alta voce.
 
 | ok | # | riga | prima | dopo | norma | auto |
 |---|---:|---:|---|---|---|:---:|
-| [ ] | 1 | 849 | pattern che sembrano... respirare. | disegni che si allargano e si stringono, come un respiro. | sembra/pare | ✓ |
-| [ ] | 2 | 996 | Temperatura Sala Forgia sembra GELIDA dopo Piano Fuoco, | Dopo il Piano del Fuoco la Sala della Forgia è GELIDA, | sembra/pare | ✓ |
+| [x] | 1 | 849 | pattern che sembrano... respirare. | disegni che si allargano e si stringono, come un respiro. | sembra/pare | ✓ |
+| [x] | 2 | 996 | Temperatura Sala Forgia sembra GELIDA dopo Piano Fuoco, | Dopo il Piano del Fuoco la Sala della Forgia è GELIDA, | sembra/pare | ✓ |
 
 ## Il testo con le modifiche (CriticMarkup)
 

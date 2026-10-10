@@ -126,6 +126,7 @@ esito ai dadi, mai predeterminato.
 - **Mappa**: androne + piazzetta interna, **12×9 quadretti** (1,5 m/q); il varco è
   3 q di larghezza (imbuto); macerie = terreno difficile + copertura +4; scala ai
   camminamenti sui lati.
+- **Griglia**: `Mappe/dauth-assedio/DAUTH-A-breccia-porta-sud.md`, collaudata e con l'SVG in `rendered/`.
 - **Nemici (EL ~14)**: `hobgoblin-captain-cr8` + 2× `hobgoblin-sergente-cr5` + fanteria
   (sfondo). Tattica: testuggine, poi apertura in ventaglio; il capitano cerca il duello.
 - **Posta**: tenere il varco finché i difensori lo rimurano (3 round di *lavoro*, o
@@ -150,6 +151,7 @@ esito ai dadi, mai predeterminato.
 - **Mappa**: tratto di bastione **16×4 quadretti** (1,5 m/q) + cielo aperto (quote:
   camminamento / volo basso 9 m / volo alto); baliste (2, danneggiabili) come armi
   d'assedio riusabili dai PG (Artiglieria, colpo 4d6, TS Riflessi).
+- **Griglia**: `Mappe/dauth-assedio/DAUTH-B-razorfiend-sui-bastioni.md`, collaudata e con l'SVG in `rendered/`.
 - **Nemici (EL ~11–13)**: `razorfiend-red-cr9.md` ×1 (hit-and-run aereo). Se il party
   è numeroso, +2 `gnoll-hyenodon-rider-cr4` che scalano con rampini.
 - **Posta**: negargli le passate. **Precedente/anticipo di Tyrgarun** a Rethmar (C1.d):
@@ -175,6 +177,7 @@ esito ai dadi, mai predeterminato.
   gorgogliano e ne escono cose bianche."*
 - **Mappa**: chiostro-ospedale **10×10** (1,5 m/q) + bocca di cisterna sotterranea
   (cunicolo 3×6); barelle = terreno ingombro.
+- **Griglia**: `Mappe/dauth-assedio/DAUTH-C1-chiostro-ospedale.md` e `Mappe/dauth-assedio/DAUTH-C2-cunicolo-cisterna.md`, collaudate e con gli SVG in `rendered/`.
 - **Nemici (EL ~12, solo se cisterne guaste)**: guastatori fungini dai pozzi —
   2× Violet Fungus (SRD) + 1 `drow-fighter3-cr4` + tracce di Yssaria (se fuggita da
   Dauth, `SUBQUEST-Hella`). Se cisterne **salve**: nessun nemico, è uno **skill
@@ -198,6 +201,7 @@ esito ai dadi, mai predeterminato.
   al passo di Khorn Spada-di-Fuoco. "Custode!" grida a Thorik. "Dove ci volete?"*
 - **Mappa**: settore di mura ovest **14×6** (1,5 m/q); la formazione di lance è un
   **asset** (blocco 3×3 astratto, +2 al morale del settore che presidia).
+- **Griglia**: `Mappe/dauth-assedio/DAUTH-D-lance-di-khorn.md`, collaudata e con l'SVG in `rendered/`.
 - **Contenuto**: **non** un incontro nuovo obbligatorio; è la **carta di comando**.
   Thorik (o Tordek se libero) decide **dove** mandare le lance → chiude un'altra crisi
   (può "vincere" la Carta A o B automaticamente al parziale se assegna lì le lance).
@@ -224,6 +228,7 @@ esito ai dadi, mai predeterminato.
   vicino, più paziente. Qualcuno, dall'interno, sta limando i cardini di una porta di
   servizio che dà sul fossato ovest — dove aspetta la cavalleria delle iene.*
 - **Mappa**: corpo di guardia + poterna **8×8** (1,5 m/q); corridoi ciechi, botola.
+- **Griglia**: `Mappe/dauth-assedio/DAUTH-E-cellula-nelle-mura.md`, collaudata e con l'SVG in `rendered/`.
 - **Nemici (EL ~12)**: `deathlock-cr8.md` **o** `drow-fighter3-cr4.md` ×2 + 1 sabotatore
   (Ladro 7 [INFERRED]) con la chiave. Tattica: furtività, veleno, fuga se scoperti.
 - **Posta**: se la poterna si apre, la cavalleria gnoll dilaga nel quartiere ovest.

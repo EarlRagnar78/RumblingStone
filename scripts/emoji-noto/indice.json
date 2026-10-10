@@ -1,0 +1,53 @@
+{
+ "noto_commit": "e20cbc2",
+ "emoji": {
+  "☁": {
+   "file": "emoji_u2601.svg",
+   "celle": 213
+  },
+  "✝": {
+   "file": "emoji_u271d.svg",
+   "celle": 2
+  },
+  "🌙": {
+   "file": "emoji_u1f319.svg",
+   "celle": 1
+  },
+  "🌱": {
+   "file": "emoji_u1f331.svg",
+   "celle": 4
+  },
+  "🐉": {
+   "file": "emoji_u1f409.svg",
+   "celle": 1
+  },
+  "💚": {
+   "file": "emoji_u1f49a.svg",
+   "celle": 4
+  },
+  "💠": {
+   "file": "emoji_u1f4a0.svg",
+   "celle": 98
+  },
+  "📜": {
+   "file": "emoji_u1f4dc.svg",
+   "celle": 4
+  },
+  "🔲": {
+   "file": "emoji_u1f532.svg",
+   "celle": 30
+  },
+  "🛡": {
+   "file": "emoji_u1f6e1.svg",
+   "celle": 5
+  },
+  "🥋": {
+   "file": "emoji_u1f94b.svg",
+   "celle": 5
+  },
+  "🦄": {
+   "file": "emoji_u1f984.svg",
+   "celle": 1
+  }
+ }
+}

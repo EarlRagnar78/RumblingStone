@@ -1,0 +1,388 @@
+{
+ "schema_version": "1.0",
+ "title": "M7-D — Il corridoio della fucina, livello −1 (notte, ≈372 DR)",
+ "tipo": "tattica",
+ "ambiente": "interni",
+ "scale_m_per_square": 1.5,
+ "map_size": [
+  36,
+  23
+ ],
+ "base_terrain": "🏰",
+ "north": "N",
+ "regions": [
+  {
+   "terrain": "⬜",
+   "rect": [
+    1,
+    10,
+    34,
+    2
+   ],
+   "label": "Il corridoio della fucina (3 m), da ovest a est"
+  },
+  {
+   "terrain": "⬜",
+   "rect": [
+    2,
+    4,
+    7,
+    5
+   ],
+   "label": "Quartieri ospiti: gli alloggi dei minatori (10,5 × 7,5 m)"
+  },
+  {
+   "terrain": "⬜",
+   "rect": [
+    11,
+    3,
+    8,
+    6
+   ],
+   "label": "La cappella dei chierici (12 × 9 m)"
+  },
+  {
+   "terrain": "⬜",
+   "rect": [
+    28,
+    4,
+    6,
+    5
+   ],
+   "label": "La bottega dell'alchimista (9 × 7,5 m)"
+  },
+  {
+   "terrain": "⬜",
+   "rect": [
+    13,
+    13,
+    14,
+    8
+   ],
+   "label": "La fucina di Gunnvor: tre forge (21 × 12 m)"
+  },
+  {
+   "terrain": "⬜",
+   "rect": [
+    28,
+    13,
+    6,
+    7
+   ],
+   "label": "L'armeria: il mucchio buono (9 × 10,5 m)"
+  },
+  {
+   "terrain": "⬜",
+   "rect": [
+    1,
+    13,
+    3,
+    4
+   ],
+   "label": "Scala al livello 0"
+  }
+ ],
+ "structures": [
+  {
+   "type": "🚪",
+   "at": [
+    4,
+    9
+   ],
+   "label": "Porta dei quartieri"
+  },
+  {
+   "type": "🚪",
+   "at": [
+    15,
+    9
+   ],
+   "label": "Porta della cappella, due porte più in là"
+  },
+  {
+   "type": "🚪",
+   "at": [
+    30,
+    9
+   ],
+   "label": "Porta bassa foderata di piombo (alchimista)"
+  },
+  {
+   "type": "🚪",
+   "at": [
+    19,
+    12
+   ],
+   "label": "Portone della fucina"
+  },
+  {
+   "type": "🚪",
+   "at": [
+    20,
+    12
+   ]
+  },
+  {
+   "type": "🚪",
+   "at": [
+    27,
+    16
+   ],
+   "label": "Porta fra fucina e armeria"
+  },
+  {
+   "type": "🚪",
+   "at": [
+    2,
+    12
+   ],
+   "label": "Al corridoio"
+  },
+  {
+   "type": "🛏",
+   "at": [
+    3,
+    4
+   ]
+  },
+  {
+   "type": "🛏",
+   "at": [
+    4,
+    4
+   ]
+  },
+  {
+   "type": "🛏",
+   "at": [
+    5,
+    4
+   ]
+  },
+  {
+   "type": "🛏",
+   "at": [
+    6,
+    4
+   ]
+  },
+  {
+   "type": "🛏",
+   "at": [
+    7,
+    4
+   ]
+  },
+  {
+   "type": "🛏",
+   "at": [
+    8,
+    4
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    5,
+    8
+   ],
+   "label": "Focolare che tira male"
+  },
+  {
+   "type": "🔮",
+   "at": [
+    15,
+    5
+   ],
+   "label": "L'incudine vecchia, portata giù dalla prima forgia"
+  },
+  {
+   "type": "🪑",
+   "at": [
+    30,
+    5
+   ],
+   "label": "Banco delle fiasche di Kettra"
+  },
+  {
+   "type": "🏺",
+   "at": [
+    32,
+    7
+   ],
+   "label": "Cassa di sabbia"
+  },
+  {
+   "type": "🏮",
+   "at": [
+    15,
+    20
+   ],
+   "label": "Forgia 1"
+  },
+  {
+   "type": "🏮",
+   "at": [
+    19,
+    20
+   ],
+   "label": "Forgia 2"
+  },
+  {
+   "type": "🏮",
+   "at": [
+    23,
+    20
+   ],
+   "label": "Forgia 3"
+  },
+  {
+   "type": "🪑",
+   "at": [
+    19,
+    16
+   ],
+   "label": "Il banco di Gunnvor"
+  },
+  {
+   "type": "🪑",
+   "at": [
+    14,
+    14
+   ],
+   "label": "La bilancia del pesatore"
+  },
+  {
+   "type": "🏺",
+   "at": [
+    24,
+    15
+   ],
+   "label": "I due mucchi di lame"
+  },
+  {
+   "type": "🏺",
+   "at": [
+    25,
+    15
+   ]
+  },
+  {
+   "type": "🔽",
+   "at": [
+    25,
+    19
+   ],
+   "label": "Scala alle gallerie di Zeth (livello −2)",
+   "collega": "M7-E-gallerie-372.md AA02"
+  },
+  {
+   "type": "🪓",
+   "at": [
+    30,
+    14
+   ],
+   "label": "Rastrelliere: le armi per le mura"
+  },
+  {
+   "type": "🪓",
+   "at": [
+    32,
+    14
+   ]
+  },
+  {
+   "type": "🪓",
+   "at": [
+    30,
+    18
+   ]
+  },
+  {
+   "type": "🪓",
+   "at": [
+    32,
+    18
+   ]
+  },
+  {
+   "type": "🔼",
+   "at": [
+    2,
+    14
+   ],
+   "label": "Scala al livello 0: corridoio principale, sala del consiglio, cortile",
+   "collega": "fuori mappa ; il livello 0 (sala del consiglio e corridoio principale) non ha una griglia tattica: M7-S lo mostra in sezione"
+  }
+ ],
+ "units": [
+  {
+   "faction": "Hammerfist",
+   "name": "Sorella Brynja, che conta le fiale",
+   "token": "🔵",
+   "at": [
+    16,
+    6
+   ]
+  },
+  {
+   "faction": "Hammerfist",
+   "name": "Venti chierici che dormono seduti",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     12,
+     3,
+     6,
+     1
+    ]
+   },
+   "quantity": 20
+  },
+  {
+   "faction": "Hammerfist",
+   "name": "Kettra, l'alchimista del re",
+   "token": "🔵",
+   "at": [
+    31,
+    6
+   ]
+  },
+  {
+   "faction": "Hammerfist",
+   "name": "Gunnvor, maestra armaiola",
+   "token": "🔵",
+   "at": [
+    19,
+    17
+   ]
+  },
+  {
+   "faction": "Hammerfist",
+   "name": "Il pesatore",
+   "token": "🔵",
+   "at": [
+    15,
+    14
+   ]
+  },
+  {
+   "faction": "Hammerfist",
+   "name": "Ragazzi in fila davanti alle forge",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     14,
+     18,
+     11,
+     1
+    ]
+   }
+  }
+ ],
+ "notes": [
+  "Canone 372: DEF-4 Scena 5 (quartieri, cappella due porte più in là, bottega in fondo al corridoio della fucina, tre forge); D45 (tre fucine) e D47 (armeria accanto alla fucina di Gunnvor) del 2026-10-08.",
+  "Le misure delle stanze sono quelle di questa griglia, approvate con D48.",
+  "Sotto la fucina il caldo finisce di colpo: la scala di Y20 scende alle gallerie di Zeth (M7-E)."
+ ]
+}

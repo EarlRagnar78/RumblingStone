@@ -27,6 +27,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U
 15 🟫 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰
 
 @north N
+@tipo tattica interni
 @mark 1 ; I8 ; Ombra (dorme in stalla) (druida 3)
 @mark 2 ; H12 ; Il cavallo della contrada (animale GS 1)
 @mark 3 ; L12 ; Regina, la mula (animale)

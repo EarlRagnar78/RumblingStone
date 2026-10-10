@@ -124,3 +124,40 @@ Tre domande, in ordine:
 
 Poi aggiungilo qui. La riga costa dieci secondi; ritrovarsi lo stesso PNG con
 tre grafie costa una giornata di *grep*.
+
+## 8. Forme escluse — il foglio di stile che si esegue
+
+> **Cos'è.** Ogni redazione professionale tiene un *foglio di stile*: l'elenco
+> delle decisioni di grafia e di termine prese una volta, perché il copyeditor
+> e il correttore di bozze non le riprendano da capo a ogni pagina. WotC lo
+> fissa nella sua guida di casa («mithral», non «mithril»); Paizo lo affida a
+> chi cura il testo. Qui il foglio è questa tabella, e **`python3
+> scripts/validate_prosa.py` la legge**: non c'è un secondo elenco da
+> tenere in sincronia ([ADR-0078](../plans/adr/ADR-0078-il-foglio-di-stile-si-esegue.md)).
+>
+> **Stato**, una parola per riga:
+>
+> | Stato | Cosa succede |
+> |---|---|
+> | `refuso` | la decisione è presa: ogni occorrenza è un rilievo di `terminologia_non_canonica` (maggiore) |
+> | `DM?` | due grafie convivono e **la scelta è del DM**: non è un rilievo, ma `--foglio` le conta e le elenca finché non decide. Oggi nessuna riga è in questo stato |
+>
+> **Come si aggiunge una riga.** Prima si guarda il contesto: una forma può
+> essere un altro PNG (*Garruk* non è *Karruk*), un nome di file
+> (`Myconoid.webp`) o la citazione di una fonte. Una forma che ha un uso
+> legittimo non entra come `refuso`. La riga che spiega il cambio («*mithril* →
+> *mithral*») non è un rilievo: il controllo salta le righe che contengono la
+> forma canonica o una freccia.
+
+| Forma esclusa | Forma canonica | Stato | Perché |
+|---|---|---|---|
+| `Regiarax` | Regiarix | refuso | il nome del boss di RHoD è *Regiarix*; la correzione era già stata fatta una volta (`state-changelog.md`) e una citazione di fonte era rimasta |
+| `mithril` | mithral | refuso | in 3.5 il metallo si scrive *mithral* (SRD); *mithril* è la grafia di Tolkien. Il repo scrive *mithral* nel resto dei file e WotC lo prescrive nella guida di casa |
+| `Hellas` | Hella | refuso | decisione del DM, 2026-10-03: il PG si chiama *Hella* (§2). Un nome di file o di cartella che contiene *Hellas* non è una grafia e resta com'è finché il file non si rinomina |
+| `Cannathgate` | Channathgate | refuso | decisione del DM, 2026-10-03: la città è *Channathgate*, come il *Palio di Channathgate* (§5). *Cannath Vale* resta com'è |
+| `Therisol` | Therysol | refuso | decisione del DM, 2026-10-03: il glossario (§4) dice *Therysol* |
+| `azione rapida` | azione veloce | refuso | decisione del DM, 2026-10-03: *swift action* si rende *azione veloce*, come nelle traduzioni e nelle regole italiane di comunità del 3.5 e come dice il §1 |
+
+> **Fuori dalla tabella, di proposito.** *DC* → *CD* è già un divieto di
+> `validate_modules.py` (`BANNED`) e di `validate_standalone.py`: una norma, un
+> rilevatore. Lo stesso per il riposo breve e lungo.

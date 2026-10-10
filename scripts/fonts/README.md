@@ -14,6 +14,7 @@ un'altra macchina, e un manuale si riconosce dal carattere prima che dal testo.
 | `Cinzel[wght].ttf` | titoli, medaglioni, frontespizio | OFL 1.1 (`OFL-Cinzel.txt`) | Natanael Gama |
 | `Inconsolata[wdth,wght].ttf` | blocchi di codice e griglie monospaziate | OFL 1.1 (`OFL-Inconsolata.txt`) | Raph Levien — `google/fonts`, `ofl/inconsolata/` |
 | `web/*.woff2` | la catena HTML, incorporati in base64 nel CSS | come sopra | derivati dai `.ttf` qui accanto |
+| `mappe/*.woff2` · `mappe/copertura.json` | le mappe SVG: EB Garamond 400 e Cinzel 700 a peso fisso, solo latino, incorporati in ogni mappa ([ADR-0085](../../plans/adr/ADR-0085-la-resa-delle-mappe-e-uguale-su-ogni-macchina.md)); `copertura.json` porta caratteri e larghezze | come sopra | `python3 scripts/build_font_mappe.py`, mai a mano |
 
 Prima del 2026-08-22 il monospazio **non** era qui: il tema chiedeva
 `DejaVu Sans Mono` e se lo faceva dare dal sistema — cioè esattamente il difetto

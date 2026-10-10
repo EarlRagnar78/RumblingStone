@@ -256,7 +256,7 @@ Classe **C**. Tre schemi JSON versionati in `scripts/schemas/`: il modulo (le
 domande), le risposte, il menu. Il modulo di `dm.py gruppo nuovo` è il primo
 esempio vero, perché esiste già (§5.0, punti 1 e 2).
 
-#### ⬜ 0b · Le risposte del DM a D1-D6
+#### ✅ 0b · Le risposte del DM a D1-D6 *(2026-09-30: D1-D7 barrate in §8)*
 `[engine: DM · effort: — · qualità: le sei righe barrate in §8]`
 
 ### Fase 1 · La chiusura che non lascia niente a mano
@@ -487,7 +487,7 @@ test che non hanno bisogno di una tastiera.
 
 ## Checklist di avanzamento
 
-- ⬜ Fase 0 · 0a ADR-0068 · 0c i contratti versionati · 0b risposte a D1-D6
+- ⬜ Fase 0 · 0a ADR-0068 · 0c i contratti versionati · ✅ 0b risposte a D1-D6 (2026-09-30)
 - ⬜ Fase 1 · 1a motore dei moduli · 1b proposte → domande (ex 4f-5) · 1c cronaca · 1d catena di chiusura
 - 🟡 Fase 2 · ✅ 2f il corredo della serata (2026-09-25) · ✅ 2g l'apparato fuori dalla stampa (2026-09-25) · ⬜ 2g-bis i residui del Palio e del Drappo · ⬜ 2a controllo e turno del mondo · 2b ricognizione · 2c inventario · 2d brief di scrittura · 2e manifest
 - ⬜ Fase 3 · 3a menu testuale · 3b menu in JSON

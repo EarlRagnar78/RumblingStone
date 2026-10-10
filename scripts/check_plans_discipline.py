@@ -8,6 +8,14 @@ scripts/, skills/, converters/, .github/, plans/adr/ (l'infrastruttura).
 Il contenuto di campagna (campaign/, archi 00_-09_, Bestiario/, PG/) NON
 è strutturale: le sessioni giocate al tavolo non richiedono changelog.
 
+Eccezione Dependabot (PRATICHE PI-3b, 2026-10-07): se TUTTI i commit del
+range che toccano file strutturali sono di dependabot[bot], il gate passa. La
+PR di Dependabot e' gia' la sua traccia (cosa, da che versione, a quale), e
+prima di questa eccezione le PR #207-#212 venivano bocciate solo per la riga
+mancante, aggiunta poi a mano una per una. Basta un commit umano strutturale
+nel range, anche una correzione dentro la PR di Dependabot, e la riga torna
+obbligatoria.
+
 Promemoria ADR (warning, exit 0): se il range introduce una nuova skill,
 un nuovo script top-level o tocca i workflow CI senza toccare plans/adr/,
 stampa l'invito a valutare un ADR. Non bloccante: «serve un ADR?» non è
@@ -31,6 +39,7 @@ import sys
 CHANGELOG = "plans/CHANGELOG.md"
 STRUCTURAL_PREFIXES = ("scripts/", "skills/", "converters/", ".github/", "plans/adr/")
 ADR_PREFIX = "plans/adr/"
+DEPENDABOT_EMAIL = "49699333+dependabot[bot]@users.noreply.github.com"
 
 
 def git(args: list[str], cwd: str) -> str:
@@ -49,6 +58,19 @@ def changed_files(base: str, head: str, cwd: str) -> list[tuple[str, str]]:
         status, path = parts[0][:1], parts[-1]  # per R100 conta la destinazione
         rows.append((status, path))
     return rows
+
+
+def structural_authors(base: str, head: str, cwd: str) -> set[str]:
+    """Email degli autori dei commit (merge esclusi) che toccano file strutturali."""
+    merge_base = git(["merge-base", base, head], cwd)
+    out = git(["log", "--no-merges", "--format=%x00%ae", "--name-only",
+               f"{merge_base}..{head}"], cwd)
+    authors: set[str] = set()
+    for block in out.split("\x00")[1:]:
+        lines = [x for x in block.splitlines() if x.strip()]
+        if lines and any(f.startswith(STRUCTURAL_PREFIXES) for f in lines[1:]):
+            authors.add(lines[0])
+    return authors
 
 
 def needs_adr_reminder(rows: list[tuple[str, str]]) -> list[str]:
@@ -95,6 +117,13 @@ def main() -> int:
         if not args.json:
             print("✓ check_plans_discipline: nessun file strutturale nel range — ok")
         return _emit(0, "no-structural-changes")
+
+    if CHANGELOG not in paths and structural_authors(
+            args.base, args.head, args.repo_root) == {DEPENDABOT_EMAIL}:
+        if not args.json:
+            print(f"✓ check_plans_discipline: {len(structural)} file strutturali, tutti "
+                  f"da commit di Dependabot — la PR e' la traccia (PI-3b), riga non richiesta")
+        return _emit(0, "dependabot-only", structural=structural)
 
     if CHANGELOG not in paths:
         if args.json:

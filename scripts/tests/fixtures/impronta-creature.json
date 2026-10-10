@@ -16932,7 +16932,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "trascritte",
-    "senza_note": 1337,
+    "senza_note": 1336,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/druido Avarthel cr9.htm",
@@ -21807,7 +21807,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 3052,
+    "senza_note": 3173,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {},
@@ -37848,7 +37848,7 @@
    "blocco": null,
    "conti": [
     "caratteristiche: matrice standard (13, 12, 11, 10, 9, 8) + 3 da DV/4 → For 15, Cos 13, Des 11",
-    "pf: 11d12 + 4d10 media 93.5 + Cos +1×15 = 108",
+    "pf: 14d12 + 1d10 media 96.5 + Cos +1×15 = 111",
     "TS: somma dei TS base di ogni classe (SRD: multiclasse si sommano) → Temp +12, Rifl +4, Vol +4"
    ],
    "lettura": {
@@ -37861,11 +37861,11 @@
     "classi": [
      [
       "barbaro",
-      11
+      14
      ],
      [
       "guerriero",
-      4
+      1
      ]
     ],
     "dado": null,

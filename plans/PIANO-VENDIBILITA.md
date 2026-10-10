@@ -170,7 +170,7 @@ Le due catene di lavoro sono **indipendenti**: la provenienza serve prima di
 
 ### Fase 0 — Sbloccare (niente esce finché questi non sono chiusi)
 
-- **⬜ 0.1 — D1 e D4**: le immagini nel volume da stampa, e `typst` in CI. Bug già
+- **✅ 0.1 — D1 e D4** *(chiusi dalla PR #110 del 2026-08-22, prima che questo piano nascesse: RICERCA-AUDIT-COMPONENTI §D1-D4)*: le immagini nel volume da stampa, e `typst` in CI. Bug già
   specificati. *Accettazione*: un booklet con immagini compila e **le mostra**;
   un manifest con chiave ignota **avvisa** invece di tacere.
 - **⬜ 0.2 — `pyproject.toml` e fine dei 24 `sys.path.insert`** (ADR-0040 §1).

@@ -54,6 +54,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @zone M12-O12 ; Tagliafuoco improvvisato (copertura bassa)
 @zone W8-Z17 ; Fronte del rogo (i drow bruciano la radura)
 @zone AA7-AG18 ; Foresta già bruciata (terreno difficile, 1d4 fuoco residuo)
+@tipo tattica esterno
 ```
 
 ### 🌍 AMBIENTE (cosa impone il terreno — regole, non prosa)

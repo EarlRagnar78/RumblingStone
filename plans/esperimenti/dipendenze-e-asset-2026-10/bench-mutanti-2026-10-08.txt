@@ -1,0 +1,8 @@
+originale: seme verde · hypothesis verde
+  diagonale sempre ammessa                   seme preso · hypothesis preso  Failing test case: t(     g=[['🏰', '🏰', '🏰', '🏰'],      ['🏰', '🏰', '🏰'
+  angolo: and invece di or                   seme preso · hypothesis preso  Failing test case: t(     g=[['🏰', '🏰', '🏰'], ['🏰', '🏰', '⬜'], ['🏰', '
+  la porta blocca                            seme preso · hypothesis preso  Failing test case: t(     g=[['🏰', '🏰', '🏰'], ['🏰', '🏰', '🏰'], ['🏰', '
+  la fossa ferma la diagonale                seme MANCATO · hypothesis MANCATO  
+  un vicino perso (dx da -1 a 1 escluso)     seme preso · hypothesis preso  Failing test case: t(     g=[['🏰', '🏰', '🏰', '🏰', '🏰', '🏰'],      ['🏰'
+  componenti senza la coda                   seme preso · hypothesis preso  Failing test case: t(     g=[['🏰', '🏰', '🏰'], ['⬜', '🏰', '🏰'], ['⬜', '
+presi: seme 5/6 · hypothesis 5/6

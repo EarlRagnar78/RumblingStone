@@ -75,6 +75,9 @@ MODELLI = {
     "sdxl": {
         "checkpoint": "sd_xl_base_1.0.safetensors",
         "etichetta": "SDXL 1.0 base",
+        # l'impronta del file che scarica-pesi.sh verifica contro Hugging Face:
+        # letta sulla macchina del DM il 2026-10-09 (ADR-0019, la provenienza)
+        "sha256": "31e35c80fc4829d14f90153f4c74cd59c90b779f6afe05a74cd6120b893f7e5b",
         "licenza": "OpenRAIL++-M (uso commerciale ammesso)",
         "ammesso": True,
         "steps": 30,
@@ -518,6 +521,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.checkpoint:
         mod["checkpoint"] = args.checkpoint
         mod["etichetta"] = args.checkpoint
+        mod.pop("sha256", None)
     if args.steps is not None:
         mod["steps"] = args.steps
     if args.cfg is not None:
@@ -608,7 +612,8 @@ def main(argv: list[str] | None = None) -> int:
         scrivi_provenienza(
             provenienza,
             destinazione.name,
-            f"{destinazione.name} · {mod['etichetta']} · {mod['licenza']} · "
+            f"{destinazione.name} · {mod['etichetta']}"
+            f"{' (sha256 ' + mod['sha256'][:12] + ')' if mod.get('sha256') else ''} · {mod['licenza']} · "
             f"seed {seed} · {date.today().isoformat()} · {args.autore}",
         )
         if args.fissa_seed and fissa_seed(args.prompts, img.ident, seed):

@@ -966,6 +966,7 @@ deturpate, in restauro); in C13/G13/A06/I06 = statue dei re · 🪨 macerie
 inerte dalla caduta di Urialle) · 👑 trono vuoto: la Corona è di Thorik ·
 🖼️ Dipinti Invisibili (J11-J12, come in ARC-06) · ✝️ postazione di Belkram
 (ARC-06) · 🚪 ingresso sud, collegamento P1 ↔ Sala della Forgia.
+@tipo tattica interni
 ```
 - **Tipo / scala**: hub scenico specchio, 10×13 (15×19,5 m), 1,5 m/quadretto.
   Ora **santuario sicuro** (Consacrare) — il *desecrate* di ARC-06 è dissolto.

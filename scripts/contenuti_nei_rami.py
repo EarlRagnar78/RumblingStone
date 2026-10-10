@@ -186,6 +186,19 @@ def righe_mai_arrivate(ref: str, base: str, indice) -> dict:
     return {"righe": tot, "identiche": identiche, "quasi": quasi, "mancanti": mancanti}
 
 
+def shallow() -> bool:
+    """Un clone senza storia intera (il default delle sessioni d'agente).
+
+    🐛 Il 2026-10-07, su un clone shallow, `--check` dava 61 file mai arrivati e
+    decine «senza posto»; con `--unshallow` erano 42, tutti col loro posto salvo
+    i nove di una PR non registrata. Lo sapeva gia' `adozioni_in_attesa.py`.
+    """
+    try:
+        return _git("rev-parse", "--is-shallow-repository").strip() == "true"
+    except RuntimeError:
+        return False
+
+
 def leggi_registro(percorso: "Path | None" = None) -> dict:
     # Il default si risolve qui e non nella firma: legato alla definizione,
     # un test che sostituisce REGISTRO avrebbe letto comunque quello del repo.
@@ -286,6 +299,11 @@ def main(argv: "list[str] | None" = None) -> int:
     except RuntimeError:
         print(f"○ contenuti_nei_rami: il clone non ha {args.base} "
               "(checkout della CI? usare --fetch). Niente da misurare.")
+        return 0
+    if shallow():
+        print("○ contenuti_nei_rami: clone shallow. Senza la storia intera ogni file "
+              "dei rami sembra mai arrivato su main, e i numeri sarebbero falsi: "
+              "`git fetch --unshallow origin`, poi di nuovo.")
         return 0
     refs = riferimenti(args.base)
     if not refs:

@@ -1,0 +1,473 @@
+{
+ "schema_version": "1.0",
+ "title": "M7-D/1372 — Il corridoio della fucina, livello −1 (Giorno 3 dell'assedio)",
+ "tipo": "tattica",
+ "ambiente": "interni",
+ "scale_m_per_square": 1.5,
+ "map_size": [
+  36,
+  23
+ ],
+ "base_terrain": "🏰",
+ "north": "N",
+ "regions": [
+  {
+   "terrain": "⬜",
+   "rect": [
+    1,
+    10,
+    34,
+    2
+   ],
+   "label": "Il corridoio della fucina (3 m), da ovest a est"
+  },
+  {
+   "terrain": "⬜",
+   "rect": [
+    2,
+    4,
+    7,
+    5
+   ],
+   "label": "Quartieri ospiti: gli alloggi dei minatori (10,5 × 7,5 m)"
+  },
+  {
+   "terrain": "⬜",
+   "rect": [
+    11,
+    3,
+    8,
+    6
+   ],
+   "label": "La cappella dei chierici (12 × 9 m)"
+  },
+  {
+   "terrain": "⬜",
+   "rect": [
+    28,
+    4,
+    6,
+    5
+   ],
+   "label": "La bottega dell'alchimista (9 × 7,5 m)"
+  },
+  {
+   "terrain": "⬜",
+   "rect": [
+    13,
+    13,
+    14,
+    8
+   ],
+   "label": "La fucina di Gunnvor: tre forge (21 × 12 m)"
+  },
+  {
+   "terrain": "⬜",
+   "rect": [
+    28,
+    13,
+    6,
+    7
+   ],
+   "label": "L'armeria: il mucchio buono (9 × 10,5 m)"
+  },
+  {
+   "terrain": "⬜",
+   "rect": [
+    1,
+    13,
+    3,
+    4
+   ],
+   "label": "Scala al livello 0"
+  }
+ ],
+ "structures": [
+  {
+   "type": "🚪",
+   "at": [
+    4,
+    9
+   ],
+   "label": "Porta dei quartieri"
+  },
+  {
+   "type": "🚪",
+   "at": [
+    15,
+    9
+   ],
+   "label": "Porta della cappella, due porte più in là"
+  },
+  {
+   "type": "🚪",
+   "at": [
+    30,
+    9
+   ],
+   "label": "Porta bassa foderata di piombo (alchimista)"
+  },
+  {
+   "type": "🚪",
+   "at": [
+    19,
+    12
+   ],
+   "label": "Portone della fucina"
+  },
+  {
+   "type": "🚪",
+   "at": [
+    20,
+    12
+   ]
+  },
+  {
+   "type": "🚪",
+   "at": [
+    27,
+    16
+   ],
+   "label": "Porta fra fucina e armeria"
+  },
+  {
+   "type": "🚪",
+   "at": [
+    2,
+    12
+   ],
+   "label": "Al corridoio"
+  },
+  {
+   "type": "🛏",
+   "at": [
+    3,
+    4
+   ]
+  },
+  {
+   "type": "🛏",
+   "at": [
+    4,
+    4
+   ]
+  },
+  {
+   "type": "🛏",
+   "at": [
+    5,
+    4
+   ]
+  },
+  {
+   "type": "🛏",
+   "at": [
+    6,
+    4
+   ]
+  },
+  {
+   "type": "🛏",
+   "at": [
+    7,
+    4
+   ]
+  },
+  {
+   "type": "🛏",
+   "at": [
+    8,
+    4
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    5,
+    8
+   ],
+   "label": "Focolare che tira male"
+  },
+  {
+   "type": "🔮",
+   "at": [
+    15,
+    5
+   ],
+   "label": "L'incudine vecchia, portata giù dalla prima forgia"
+  },
+  {
+   "type": "🪑",
+   "at": [
+    30,
+    5
+   ],
+   "label": "Banco delle fiasche di Kettra"
+  },
+  {
+   "type": "🏺",
+   "at": [
+    32,
+    7
+   ],
+   "label": "Cassa di sabbia"
+  },
+  {
+   "type": "🏮",
+   "at": [
+    15,
+    20
+   ],
+   "label": "Forgia 1"
+  },
+  {
+   "type": "🏮",
+   "at": [
+    19,
+    20
+   ],
+   "label": "Forgia 2"
+  },
+  {
+   "type": "🏮",
+   "at": [
+    23,
+    20
+   ],
+   "label": "Forgia 3"
+  },
+  {
+   "type": "🪑",
+   "at": [
+    19,
+    16
+   ],
+   "label": "Il banco di Gunnvor"
+  },
+  {
+   "type": "🪑",
+   "at": [
+    14,
+    14
+   ],
+   "label": "La bilancia del pesatore"
+  },
+  {
+   "type": "🏺",
+   "at": [
+    24,
+    15
+   ],
+   "label": "I due mucchi di lame"
+  },
+  {
+   "type": "🏺",
+   "at": [
+    25,
+    15
+   ]
+  },
+  {
+   "type": "🔽",
+   "at": [
+    25,
+    19
+   ],
+   "label": "Scala alle gallerie di Zeth (livello −2)",
+   "collega": "M7-E-gallerie-1372.md AA02"
+  },
+  {
+   "type": "🪓",
+   "at": [
+    30,
+    14
+   ],
+   "label": "Rastrelliere: le armi per le mura"
+  },
+  {
+   "type": "🪓",
+   "at": [
+    32,
+    14
+   ]
+  },
+  {
+   "type": "🪓",
+   "at": [
+    30,
+    18
+   ]
+  },
+  {
+   "type": "🪓",
+   "at": [
+    32,
+    18
+   ]
+  },
+  {
+   "type": "🔼",
+   "at": [
+    2,
+    14
+   ],
+   "label": "Scala al livello 0: corridoio principale, sala del consiglio, cortile",
+   "collega": "fuori mappa ; il livello 0 (sala del consiglio e corridoio principale) non ha una griglia tattica: M7-S lo mostra in sezione"
+  },
+  {
+   "type": "🧱",
+   "line": [
+    [
+     11,
+     10
+    ],
+    [
+     11,
+     11
+    ]
+   ],
+   "label": "Barricata dei difensori (ritirata)"
+  },
+  {
+   "type": "🧱",
+   "line": [
+    [
+     27,
+     10
+    ],
+    [
+     27,
+     11
+    ]
+   ],
+   "label": "Seconda barricata, davanti alla scala"
+  }
+ ],
+ "hazards": [
+  {
+   "type": "🪨",
+   "rect": [
+    6,
+    10,
+    2,
+    2
+   ],
+   "label": "Volta crollata",
+   "effect": "terreno difficile, copertura +4 CA"
+  },
+  {
+   "type": "🔥",
+   "at": [
+    19,
+    13
+   ],
+   "label": "Il portone della fucina in fiamme",
+   "effect": "1d6 fuoco a chi passa"
+  }
+ ],
+ "units": [
+  {
+   "faction": "Orda",
+   "name": "Orchi che saccheggiano la fucina",
+   "token": "🔴",
+   "area": {
+    "rect": [
+     15,
+     15,
+     6,
+     3
+    ]
+   },
+   "quantity": 12,
+   "cr": "GS ½"
+  },
+  {
+   "faction": "Orda",
+   "name": "Orchi nell'armeria vuota",
+   "token": "🔴",
+   "area": {
+    "rect": [
+     30,
+     15,
+     3,
+     2
+    ]
+   },
+   "quantity": 4,
+   "cr": "GS ½"
+  },
+  {
+   "faction": "Hammerfist",
+   "name": "Retroguardia nanica alla barricata",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     12,
+     10,
+     2,
+     2
+    ]
+   },
+   "quantity": 6
+  }
+ ],
+ "movements": [
+  {
+   "name": "Ritirata: dalla scala del livello 0 alla scala delle gallerie",
+   "path": [
+    [
+     2,
+     14
+    ],
+    [
+     2,
+     11
+    ],
+    [
+     26,
+     11
+    ],
+    [
+     26,
+     16
+    ],
+    [
+     25,
+     19
+    ]
+   ],
+   "color": "#2c8c3c"
+  },
+  {
+   "name": "Riconquista: dalle gallerie verso il livello 0",
+   "path": [
+    [
+     25,
+     19
+    ],
+    [
+     22,
+     16
+    ],
+    [
+     19,
+     12
+    ],
+    [
+     10,
+     10
+    ],
+    [
+     3,
+     12
+    ]
+   ],
+   "color": "#1d6fd8"
+  }
+ ],
+ "notes": [
+  "D48 (DM, 2026-10-08). La ritirata del Giorno 3 passa dal tunnel dietro la statua del cortile (H3-1, ARC-08); questo corridoio lo prendono gli orchi dal corridoio principale.",
+  "Riconquista: chi risale dalle gallerie trova gli orchi nella fucina e nell'armeria svuotata (le armi sono salite alle mura). L'armeria è quella del banco di ARC-08 B4.",
+  "Le stanze sono quelle del 372 (D46: il 372 è il nucleo); in mille anni la cappella è diventata un posto di cura e la bottega un magazzino."
+ ]
+}

@@ -90,6 +90,20 @@ class TestCloneSenzaBase(unittest.TestCase):
                 self.assertEqual(C.main(["--check"]), 0)
 
 
+class TestCloneShallow(unittest.TestCase):
+    """2026-10-07: su un clone shallow i numeri sono falsi; si dice e si esce 0."""
+
+    def test_il_clone_shallow_non_si_misura(self):
+        from unittest import mock
+        import io, contextlib
+        with mock.patch.object(C, "shallow", return_value=True), \
+             mock.patch.object(C, "_git", return_value="abc"):
+            buf = io.StringIO()
+            with contextlib.redirect_stdout(buf):
+                self.assertEqual(C.main(["--check"]), 0)
+        self.assertIn("shallow", buf.getvalue())
+
+
 class TestPosto(unittest.TestCase):
     REG = {
         "rami": [{"ref": ["pr/9", "origin/x"], "stato": "in-volo", "dove": "piano"},
@@ -133,7 +147,10 @@ class TestRegistro(unittest.TestCase):
 
     def test_il_registro_del_repo_e_valido(self):
         dati = C.leggi_registro()
-        self.assertTrue(dati["rami"] and dati["file"])
+        # La sezione «file» puo' restare vuota: dal 2026-10-07 le sue dieci voci
+        # erano tutte scadute (ramo tolto o file arrivato) e sono state potate.
+        self.assertTrue(dati["rami"])
+        self.assertIsInstance(dati["file"], list)
 
     def test_ogni_da_decidere_rimanda_a_una_decisione_aperta(self):
         """Un «da decidere» senza la sua D<n> e' una domanda che nessuno fara'."""

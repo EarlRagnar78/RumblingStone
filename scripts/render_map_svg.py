@@ -48,13 +48,15 @@ one `<input-stem>_mapN_<slug>.svg` per map. Pure Python 3, no dependencies.
 from __future__ import annotations
 
 import argparse
+import base64
+import json
 import math
 import re
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from dmcore import legenda  # noqa: E402
+from dmcore import chiusure, legenda  # noqa: E402
 from dmcore.testo import slug  # noqa: E402
 
 
@@ -74,7 +76,218 @@ MARGIN = 46        # px around the grid for coordinates
 LEGEND_ROW_H = 22  # px per legend row
 MIN_WIDTH = 480    # px, so the legend never overflows on tiny maps
 
-FONT = "Georgia, 'Palatino Linotype', 'Times New Roman', serif"
+# I font dei volumi (ADR-0085): EB Garamond per il testo, Cinzel per tutto cio'
+# che e' in grassetto. Viaggiano dentro l'SVG, in sottoinsieme, cosi' la mappa
+# ha la stessa faccia su ogni macchina; Georgia resta come ripiego per chi
+# apre un SVG generato prima dei sottoinsiemi.
+FONT = "'EB Garamond', Georgia, 'DejaVu Serif', serif"
+FONT_MAPPE = Path(__file__).resolve().parent / "fonts" / "mappe"
+
+
+EMOJI_NOTO = Path(__file__).resolve().parent / "emoji-noto"
+
+# Il tema «texture» (R4-bis di PIANO-RESA-E-ASSET): i terreni riempiti con le
+# texture CC0 di Poly Haven (`build_texture_cc0.py`), velate del colore della
+# pergamena. Una tessera copre CELLE_PER_TESSERA quadretti per lato. Gli SVG
+# di questo tema vanno in `rendered-texture/`, accanto a `rendered/`.
+TEXTURE_CC0 = Path(__file__).resolve().parent / "texture-cc0"
+TEMI = ("pergamena", "texture")
+CELLE_PER_TESSERA = 2
+VELATURA = 0.30    # opacità del colore del terreno sopra la texture: tarata dal DM
+                   # il 2026-10-09 sulle texture vere (D16), fra 0,45 e 0,20
+CARTELLA_TEMA = {"pergamena": "rendered", "texture": "rendered-texture"}
+# D24 di RESA-ASSET: sulle texture i glifi perdevano contrasto (mediana 7,9 →
+# 4,5 misurata da misura_resa.py) e alcuni terreni si confondevano (⛰ e 🔳 a
+# ΔE 1,2). Nel tema texture un alone del colore della carta sta sotto ogni
+# glifo, tessera e segnalino, e un terreno può avere una velatura sua. I due
+# numeri li trova `misura_resa.py tara` e stanno in texture-cc0/taratura.json,
+# non qui: un dato per simbolo nel renderer sarebbe una legenda bis (ADR-0048).
+TARATURA = TEXTURE_CC0 / "taratura.json"
+
+
+def _taratura() -> dict:
+    if not TARATURA.exists():
+        return {}
+    return json.loads(TARATURA.read_text(encoding="utf-8"))
+
+
+def _velatura(simbolo: str) -> float:
+    return _taratura().get("velatura_per_terreno", {}).get(simbolo, VELATURA)
+
+
+def _alone() -> float:
+    return _taratura().get("alone", 0.0)
+
+
+def _texture_cc0() -> tuple[dict, dict[str, str]] | None:
+    """(terreni → id, id → webp in base64), o None se le texture non ci sono."""
+    indice = TEXTURE_CC0 / "indice.json"
+    if not indice.exists():
+        return None
+    dati = json.loads(indice.read_text(encoding="utf-8"))
+    immagini = {}
+    for tid in dati.get("texture", {}):
+        f = TEXTURE_CC0 / f"{tid}.webp"
+        if f.exists():
+            immagini[tid] = base64.b64encode(f.read_bytes()).decode("ascii")
+    if not immagini:
+        # l'indice senza tessere (il 2026-10-09 il .gitignore le escludeva):
+        # il tema non c'è, e build_texture_cc0 --check lo dice
+        return None
+    return dati.get("terreni", {}), immagini
+
+
+# Gli oggetti di scena del tema texture (R4-ter, D17): tessere webp rese dall'alto
+# da modelli 3D CC0 (`build_oggetti_cc0.py`). Dove c'è la tessera prende il posto
+# del glifo; dove non c'è, resta il glifo. Questi restano glifi sempre: il fuoco
+# e gli effetti (non sono oggetti), i segnali (obiettivo, trappola, allarme,
+# tesoro, zona di scontro), le creature (🌳 è un treant, 🐴 le cavalcature), le
+# strutture in scala di mappa (torre, edificio, ponte), le scale e i buchi,
+# l'affresco, la gru (D21). Le chiusure (porte, finestre, grate, sbarre)
+# restano glifi perché ruotano con l'asse del muro (ADR-0083), e una tessera
+# con la luce fissa non può ruotare. Il muretto 🧱 invece è un oggetto: ha due
+# tessere, est-ovest e nord-sud, rese girando il modello (D21).
+OGGETTI_CC0 = Path(__file__).resolve().parent / "oggetti-cc0"
+RESTANO_GLIFI = legenda.senza_tessera_cc0()   # `render.tessera_cc0: false` in legend.yaml
+
+
+def resta_glifo(simbolo: str) -> bool:
+    """Se il simbolo resta un glifo anche nel tema texture."""
+    return simbolo in RESTANO_GLIFI or chiusure.e_chiusura(simbolo)
+
+
+#: Il glifo che resta sopra la tessera, ridotto: il braciere è un focolare di
+#: pietre, e acceso lo dice la fiamma, che resta glifo come il fuoco (D22).
+#: Il dato sta in legend.yaml (`render.sopra_la_tessera`), come vuole ADR-0048.
+SOPRA_LA_TESSERA = legenda.sopra_la_tessera()
+SUFFISSO_NS = "-ns"   # la tessera nord-sud di un oggetto orientabile (🧱, D21)
+
+
+def _oggetti_cc0() -> tuple[dict[str, list[str]], dict[str, str], set[str]] | None:
+    """(simbolo → tessere, tessera → webp in base64, tessere orientabili), o None."""
+    indice = OGGETTI_CC0 / "indice.json"
+    if not indice.exists():
+        return None
+    dati = json.loads(indice.read_text(encoding="utf-8"))
+    immagini = {}
+    for k in dati.get("tessere", {}):
+        f = OGGETTI_CC0 / f"{k}.webp"
+        if f.exists():
+            immagini[k] = base64.b64encode(f.read_bytes()).decode("ascii")
+    simboli = {s: [k for k in ks if k in immagini]
+               for s, ks in dati.get("simboli", {}).items() if not resta_glifo(s)}
+    simboli = {s: ks for s, ks in simboli.items() if ks}
+    if not simboli:
+        return None
+    orientabili = {k for k in dati.get("orientabili", [])
+                   if k in immagini and k + SUFFISSO_NS in immagini}
+    return simboli, immagini, orientabili
+
+
+def _tessera_oggetto(ogg, emoji: str, r: int, c: int, celle=None) -> str | None:
+    """La tessera di un oggetto per questa cella, con la stessa scelta delle
+    varianti. Un oggetto orientabile prende la tessera nord-sud quando ha più
+    vicini uguali sopra e sotto che a destra e a sinistra (`celle(c, r)` dà il
+    simbolo di una cella, o None fuori dalla griglia)."""
+    if not ogg or emoji not in ogg[0]:
+        return None
+    ks = ogg[0][emoji]
+    k = ks[(r * 7 + c * 13) % len(ks)]
+    if k in ogg[2] and celle is not None:
+        ew = sum(celle(c + d, r) == emoji for d in (-1, 1))
+        ns = sum(celle(c, r + d) == emoji for d in (-1, 1))
+        if ns > ew:
+            k += SUFFISSO_NS
+    return k
+
+
+def _ambiente(annotazioni: list[str]) -> str | None:
+    """L'ambiente di `@tipo <tipo> <ambiente>` (D18), o None."""
+    for riga in annotazioni or []:
+        parole = riga.strip().split()
+        if parole and parole[0].lower() == "@tipo" and len(parole) > 2:
+            return parole[2].lower()
+    return None
+
+
+def _pattern_texture(pid: str, simbolo: str, ambiente: str | None,
+                     tex: tuple[dict, dict[str, str]] | None) -> tuple[str, str] | None:
+    """(pattern con la texture, id della texture) per un terreno, o None."""
+    if not tex:
+        return None
+    terreni, immagini = tex
+    tid = terreni.get(f"{simbolo}@{ambiente}") or terreni.get(simbolo)
+    if not tid or tid not in immagini:
+        return None
+    t = CELL * CELLE_PER_TESSERA
+    corpo = (f'<image href="data:image/webp;base64,{immagini[tid]}" width="{t}" height="{t}" '
+             f'preserveAspectRatio="none"/>'
+             f'<rect width="{t}" height="{t}" fill="{SYMBOLS[simbolo]["fill"]}" '
+             f'opacity="{_velatura(simbolo)}"/>')
+    return _pattern(pid, t, corpo), tid
+
+
+def _simbolo_noto(emoji: str) -> tuple[str, str] | None:
+    """(id, <symbol>) dell'SVG Noto di un'emoji locale, o None se non c'e'.
+
+    Il ripiego di ADR-0085: un simbolo che la legenda universale non conosce si
+    disegna con l'immagine Noto (Apache-2.0, `scripts/emoji-noto/`) invece che
+    con il font di sistema. Senza il file, resta il testo, come prima.
+    """
+    codice = "_".join(f"{ord(c):x}" for c in emoji if ord(c) != 0xFE0F)
+    f = EMOJI_NOTO / f"emoji_u{codice}.svg"
+    if not codice or not f.exists():
+        return None
+    svg = f.read_text(encoding="utf-8")
+    m = re.search(r"<svg\b[^>]*>", svg)
+    vb = re.search(r'viewBox="([^"]+)"', m.group(0)) if m else None
+    if not m or not vb:
+        return None
+    corpo = svg[m.end():svg.rfind("</svg>")].replace("xlink:href=", "href=")
+    pid = f"nt_{codice}"
+    return pid, f'<symbol id="{pid}" viewBox="{vb.group(1)}">{corpo.strip()}</symbol>'
+
+
+def _corpo_titolo(testo: str, spazio: float, corpo: float = 19.0) -> tuple[float, bool]:
+    """Il corpo del titolo in Cinzel perche' entri in `spazio` px, e se serve
+    comprimerlo (`textLength`) quando neanche a 11 px ci sta.
+
+    Cinzel e' piu' largo del Georgia che c'era prima, e gia' con Georgia i
+    titoli lunghi delle mappe strette uscivano dal foglio a destra. Le
+    larghezze vengono dal font stesso (`copertura.json`, scritto da
+    build_font_mappe.py); un carattere che il sottoinsieme non ha conta 0,7 em.
+    Si stringe, non si allarga mai.
+    """
+    import json
+    f = FONT_MAPPE / "copertura.json"
+    if not f.exists():
+        return corpo, False
+    avanzi = json.loads(f.read_text(encoding="utf-8")).get("cinzel-700.woff2", {}).get("avanzi", {})
+    em = sum(avanzi.get(str(ord(c)), 0.7) for c in testo)
+    largo = em * corpo + 0.5 * len(testo)  # letter-spacing 0.5
+    if largo <= spazio:
+        return corpo, False
+    adatto = math.floor((spazio - 0.5 * len(testo)) / em * 2) / 2 if em else corpo
+    if adatto >= 11:
+        return adatto, False
+    return 11.0, True
+
+
+def _stile_font() -> str:
+    """Lo <style> con i due font incorporati, o niente se i woff2 mancano."""
+    import base64
+    voci = (("ebgaramond-400.woff2", "EB Garamond", 400), ("cinzel-700.woff2", "Cinzel", 700))
+    facce = []
+    for nome, famiglia, peso in voci:
+        f = FONT_MAPPE / nome
+        if not f.exists():
+            return ""
+        dati = base64.b64encode(f.read_bytes()).decode("ascii")
+        facce.append(f"@font-face{{font-family:'{famiglia}';font-weight:{peso};"
+                     f"src:url(data:font/woff2;base64,{dati}) format('woff2')}}")
+    return ("<style>" + "".join(facce)
+            + "text[font-weight=\"bold\"]{font-family:Cinzel,'EB Garamond',Georgia,serif}"
+            + "</style>")
 PAPER = "#efe4c9"       # parchment base
 PLATE = "#e6d9b8"       # map plate behind the grid
 INK = "#3b2e1e"         # dark ink
@@ -102,8 +315,8 @@ DEFAULT_TERRAIN = {"mode": "fill", "fill": PAPER, "it": ""}
 HEAVY_PATS = set(legenda.pattern_pesanti())
 
 # paint order: backgrounds first, solids last (small overlaps hide seams)
-Z_ORDER = ["t_void", "t_grass", "t_veg", "t_sand", "t_earth", "t_floor", "t_lava",
-           "t_lethal", "t_deep", "t_water", "t_forest", "t_mountain",
+Z_ORDER = ["t_void", "t_grass", "t_veg", "t_sand", "t_earth", "t_cave", "t_floor", "t_lava",
+           "t_lethal", "t_deep", "t_water", "t_shallow", "t_sewer", "t_forest", "t_mountain",
            "t_struct", "t_pillar", "t_wall"]
 
 # ---------------------------------------------------------------------------
@@ -230,6 +443,29 @@ PATTERNS: dict[str, str] = {
         '<path d="M34 6l6 10h-6z" fill="#776b58"/>'
         '<circle cx="7" cy="30" r="1" fill="#776b58"/>'
         '<circle cx="16" cy="36" r="0.9" fill="#a49a87"/>'),
+    # V2-bis di PIANO-COLLAUDO-E-GENERAZIONE-MAPPE (D8, 2026-10-08): tre terreni
+    # nuovi. Si aggiungono in coda e non toccano le mappe che non li usano.
+    # 🟤 pavimento di caverna: roccia naturale, grigio-bruno, crepe irregolari.
+    "t_cave": _pattern("t_cave", 28,
+        '<rect width="28" height="28" fill="#9a8a76"/>'
+        '<path d="M2 9l5 2 3-3 6 1M15 20l4-3 6 2M4 24l3-2" '
+        'stroke="#7c6d5b" stroke-width="0.9" fill="none" stroke-linecap="round"/>'
+        '<circle cx="21" cy="7" r="1.6" fill="#8a7b68"/>'
+        '<circle cx="8" cy="17" r="1.2" fill="#ab9c88"/>'
+        '<circle cx="24" cy="25" r="0.9" fill="#ab9c88"/>'),
+    # 💧 acqua bassa o pozza: piu' chiara di 🌊, increspature corte.
+    "t_shallow": _pattern("t_shallow", 28,
+        '<rect width="28" height="28" fill="#9cc6d6"/>'
+        '<path d="M3 8q3-2 6 0M15 16q3-2 6 0M5 23q3-2 6 0" '
+        'stroke="#d3e8ef" stroke-width="1" fill="none" stroke-linecap="round"/>'
+        '<circle cx="22" cy="6" r="0.8" fill="#7fb0c4"/>'),
+    # 🫧 fogna o liquame: verde torbido con bolle.
+    "t_sewer": _pattern("t_sewer", 28,
+        '<rect width="28" height="28" fill="#6f7a4c"/>'
+        '<path d="M-2 12q5-3 10 0t10 0t10 0" stroke="#5a6339" stroke-width="1.2" fill="none"/>'
+        '<circle cx="7" cy="20" r="1.8" fill="none" stroke="#9aa66b" stroke-width="0.8"/>'
+        '<circle cx="19" cy="6" r="1.3" fill="none" stroke="#9aa66b" stroke-width="0.8"/>'
+        '<circle cx="22" cy="22" r="1" fill="none" stroke="#9aa66b" stroke-width="0.7"/>'),
 }
 
 # ---------------------------------------------------------------------------
@@ -507,6 +743,107 @@ PROPS: dict[str, str] = {
         f'<rect x="4" y="10" width="20" height="8" fill="#9c7a5a" stroke="{_PK}" stroke-width="1.2"/>'
         '<path d="M4 14h20M9 10v4M15 10v4M21 10v4M6 14v4M12 14v4M18 14v4" '
         'stroke="#6e4b3a" stroke-width="0.8"/>'),
+    # --- V2-bis (D8, 2026-10-08): chiusure, passaggi fra livelli, detriti, arredi.
+    # Disegnati in casa come gli altri (regola 5 della skill mapmaking).
+    "pr_lockdoor": _symbol("pr_lockdoor",
+        f'<rect x="5" y="9.5" width="18" height="9" rx="1.4" fill="#8a6032" stroke="{_PK}" stroke-width="1.2"/>'
+        '<path d="M9.5 9.5v9M14 9.5v9M18.5 9.5v9" stroke="#6e4b26" stroke-width="1"/>'
+        '<path d="M5 11.6h18M5 16.4h18" stroke="#3d3a36" stroke-width="1.5"/>'
+        f'<rect x="19.6" y="3.8" width="5.6" height="4.6" rx="0.7" fill="#c9a13b" stroke="{_PK}" stroke-width="0.8"/>'
+        f'<path d="M20.9 3.8v-1.2a1.5 1.5 0 0 1 3 0v1.2" stroke="{_PK}" stroke-width="0.9" fill="none"/>'
+        f'<circle cx="22.4" cy="6.1" r="0.7" fill="{_PK}"/>'),
+    "pr_secretdoor": _symbol("pr_secretdoor",
+        '<rect x="4" y="8" width="20" height="12" fill="#5d544a" stroke="#2f2415" stroke-width="1"/>'
+        '<rect x="7" y="10" width="14" height="8" fill="none" stroke="#c9b48a" stroke-width="1" '
+        'stroke-dasharray="2 1.4"/>'
+        '<path d="M16.2 11.6c-1.2-0.9-3.6-0.8-3.6 0.8 0 1.8 3.6 1.3 3.6 3.1 0 1.6-2.4 1.8-3.8 0.8" '
+        'stroke="#e8d8ae" stroke-width="1.1" fill="none" stroke-linecap="round"/>'),
+    "pr_grate": _symbol("pr_grate",
+        f'<rect x="4.5" y="8" width="19" height="12" fill="none" stroke="{_PK}" stroke-width="1.4"/>'
+        '<path d="M8 8v12M11.5 8v12M15 8v12M18.5 8v12M4.5 12h19M4.5 16h19" '
+        'stroke="#4a4540" stroke-width="1.1"/>'
+        '<path d="M8 20v1.6M11.5 20v1.6M15 20v1.6M18.5 20v1.6" stroke="#4a4540" stroke-width="1.1"/>'),
+    "pr_window": _symbol("pr_window",
+        '<rect x="4" y="10" width="20" height="8" fill="#5d544a" stroke="#2f2415" stroke-width="1"/>'
+        '<rect x="9" y="11.5" width="10" height="5" fill="#bfe0ea" stroke="#2f2415" stroke-width="0.9"/>'
+        '<path d="M14 11.5v5M9 14h10" stroke="#2f2415" stroke-width="0.8"/>'),
+    "pr_bars": _symbol("pr_bars",
+        '<path d="M4 7h20M4 21h20" stroke="#3d3a36" stroke-width="1.6"/>'
+        '<path d="M6.5 7v14M10.3 7v14M14 7v14M17.7 7v14M21.5 7v14" '
+        'stroke="#5a5651" stroke-width="1.5" stroke-linecap="round"/>'),
+    "pr_stairs_up": _symbol("pr_stairs_up",
+        f'<rect x="5" y="5" width="18" height="18" fill="#cfc4ad" stroke="{_PK}" stroke-width="1"/>'
+        '<path d="M5 9.5h18M5 14h18M5 18.5h18" stroke="#9c8f74" stroke-width="1"/>'
+        f'<path d="M14 6.5l4.5 5h-3v6h-3v-6h-3z" fill="#f4ecd6" stroke="{_PK}" stroke-width="0.9"/>'),
+    "pr_stairs_down": _symbol("pr_stairs_down",
+        f'<rect x="5" y="5" width="18" height="18" fill="#8f8470" stroke="{_PK}" stroke-width="1"/>'
+        '<path d="M5 9.5h18M5 14h18M5 18.5h18" stroke="#6b604d" stroke-width="1"/>'
+        f'<path d="M14 21.5l4.5-5h-3v-6h-3v6h-3z" fill="#3a3329" stroke="#f4ecd6" stroke-width="0.9"/>'),
+    "pr_trapdoor": _symbol("pr_trapdoor",
+        '<rect x="5" y="5" width="18" height="18" fill="#2a221a"/>'
+        f'<rect x="6.5" y="6.5" width="15" height="15" fill="#7a5a34" stroke="{_PK}" stroke-width="1"/>'
+        '<path d="M6.5 11.5h15M6.5 16.5h15" stroke="#5c4223" stroke-width="0.8"/>'
+        '<path d="M10 11l4 4.5 4-4.5" stroke="#f4ecd6" stroke-width="1.8" fill="none" '
+        'stroke-linecap="round" stroke-linejoin="round"/>'
+        f'<circle cx="14" cy="19" r="1.3" fill="none" stroke="{_PK}" stroke-width="0.9"/>'),
+    # --- R2 di PIANO-RESA-E-ASSET (2026-10-08): stalagmite e cristallo, dall'alto.
+    "pr_stalagmite": _symbol("pr_stalagmite",
+        f'<path d="M14 4.5l6.8 4.3 2 7.6-4.6 6.6-7.6.6-5.6-5.2 1-8z" fill="#9b917f" stroke="{_PK}" stroke-width="1.1"/>'
+        '<path d="M14 8.2l4.2 2.8 1.2 4.8-2.9 4-4.8.4-3.4-3.3.6-5z" fill="#b0a692"/>'
+        '<path d="M14 11.6l2 1.4.6 2.3-1.4 1.9-2.3.2-1.6-1.6.3-2.3z" fill="#cfc6b2"/>'
+        '<circle cx="13.6" cy="14" r="0.9" fill="#ece5d5"/>'),
+    "pr_crystal_giant": _symbol("pr_crystal_giant",
+        f'<path d="M14 3l8.5 5v12L14 25l-8.5-5V8z" fill="#7fb0c4" stroke="{_PK}" stroke-width="1.2"/>'
+        '<path d="M14 3l8.5 5L14 13 5.5 8z" fill="#bfe0ea"/>'
+        '<path d="M14 13l8.5-5v12L14 25z" fill="#5f93a8"/>'
+        '<path d="M14 13v12M5.5 8L14 13l8.5-5" stroke="#2f5a6b" stroke-width="0.8" fill="none"/>'
+        '<path d="M9 7.6l2.4 1.4" stroke="#f2fafc" stroke-width="1.1" stroke-linecap="round"/>'),
+    "pr_debris": _symbol("pr_debris",
+        f'<path d="M4 9l11 3-0.6 2.2-11-3z" fill="#8a6032" stroke="{_PK}" stroke-width="0.9"/>'
+        f'<path d="M12 20l10-6 1.2 1.9-10 6z" fill="#9c7444" stroke="{_PK}" stroke-width="0.9"/>'
+        '<path d="M6 19l2-1.5M18 7l2.2 0.6M21 22l1.5 1" stroke="#5c4223" stroke-width="0.9"/>'
+        '<circle cx="9" cy="15" r="1.2" fill="#8a8071"/>'
+        '<circle cx="20" cy="10.5" r="1" fill="#8a8071"/>'),
+    "pr_cabinet": _symbol("pr_cabinet",
+        f'<rect x="6" y="5" width="16" height="18" rx="0.8" fill="#7a5530" stroke="{_PK}" stroke-width="1.2"/>'
+        '<path d="M14 5v18M6 14h16" stroke="#5c3e1f" stroke-width="1"/>'
+        f'<circle cx="12.5" cy="9.5" r="0.7" fill="{_PK}"/><circle cx="15.5" cy="9.5" r="0.7" fill="{_PK}"/>'),
+    "pr_books": _symbol("pr_books",
+        f'<rect x="4.5" y="6" width="19" height="16" fill="#6e4b26" stroke="{_PK}" stroke-width="1.1"/>'
+        '<rect x="6" y="7.5" width="2.4" height="6" fill="#8b2f2f"/><rect x="8.8" y="7.5" width="2" height="6" fill="#2f5a8b"/>'
+        '<rect x="11.2" y="7.5" width="2.6" height="6" fill="#c9a13b"/><rect x="14.2" y="7.5" width="2" height="6" fill="#3f6b3a"/>'
+        '<rect x="6" y="15" width="2" height="5.5" fill="#2f5a8b"/><rect x="8.4" y="15" width="2.6" height="5.5" fill="#8b2f2f"/>'
+        '<rect x="11.4" y="15" width="2.2" height="5.5" fill="#3f6b3a"/><rect x="14" y="15" width="2.6" height="5.5" fill="#c9a13b"/>'
+        '<path d="M4.5 14h19" stroke="#2f2415" stroke-width="1"/>'),
+    "pr_chest": _symbol("pr_chest",
+        f'<rect x="7.5" y="9" width="13" height="10" rx="2.6" fill="#7a3f22" stroke="{_PK}" stroke-width="1.2"/>'
+        '<path d="M7.5 12.5h13" stroke="#c9a13b" stroke-width="1.3"/>'
+        '<path d="M5.6 13.5h1.9M20.5 13.5h1.9" stroke="#3d3a36" stroke-width="1.6" stroke-linecap="round"/>'
+        f'<rect x="12.7" y="11.3" width="2.6" height="3.2" fill="#c9a13b" stroke="{_PK}" stroke-width="0.6"/>'),
+    "pr_fountain": _symbol("pr_fountain",
+        f'<circle cx="14" cy="14" r="10" fill="#b5ab98" stroke="{_PK}" stroke-width="1.2"/>'
+        '<circle cx="14" cy="14" r="7.5" fill="#7fb0c4"/>'
+        '<path d="M9 14q2.5-1.6 5 0t5 0" stroke="#d3e8ef" stroke-width="0.9" fill="none"/>'
+        f'<circle cx="14" cy="14" r="2" fill="#b5ab98" stroke="{_PK}" stroke-width="0.8"/>'),
+    "pr_anvil": _symbol("pr_anvil",
+        f'<path d="M5 10h15q3 0 4 2.5h-6l-1.5 2.5v3h3v2.5H8.5V18h3v-3L10 12.5H5z" fill="#4d4a46" stroke="{_PK}" stroke-width="1"/>'
+        '<path d="M6 10.8h13" stroke="#7a7570" stroke-width="0.8"/>'
+        '<circle cx="22" cy="21" r="1.6" fill="#e2762d"/>'),
+    "pr_alchemy": _symbol("pr_alchemy",
+        f'<rect x="4.5" y="9" width="19" height="10" rx="1" fill="#8a6a42" stroke="{_PK}" stroke-width="1.1"/>'
+        f'<path d="M8.5 10.5h3l-0.4 2.4 1.9 3.6h-6l1.9-3.6z" fill="#7fc49a" stroke="{_PK}" stroke-width="0.7"/>'
+        f'<circle cx="17.5" cy="14" r="2.4" fill="#c27fd8" stroke="{_PK}" stroke-width="0.7"/>'
+        f'<rect x="20.4" y="10.8" width="1.6" height="5" rx="0.6" fill="#e8b73a" stroke="{_PK}" stroke-width="0.5"/>'),
+    "pr_altar": _symbol("pr_altar",
+        f'<rect x="5" y="8" width="18" height="12" rx="0.8" fill="#bdb3a0" stroke="{_PK}" stroke-width="1.2"/>'
+        '<rect x="5" y="8" width="18" height="3" fill="#8b2f2f"/>'
+        f'<path d="M12 13h4v5h-4zM10.5 14.2h7" stroke="{_PK}" stroke-width="0.9" fill="#c9a13b"/>'),
+    "pr_crane": _symbol("pr_crane",
+        f'<path d="M7 23L12 6l5 17" stroke="#6e4b26" stroke-width="1.8" fill="none" stroke-linecap="round"/>'
+        '<path d="M9 16h6" stroke="#6e4b26" stroke-width="1.4"/>'
+        f'<path d="M12 6l10 2.5" stroke="#6e4b26" stroke-width="1.6" stroke-linecap="round"/>'
+        f'<path d="M21 8.3v8" stroke="{_PK}" stroke-width="0.8"/>'
+        f'<path d="M19.8 16.3a1.2 1.2 0 1 0 2.4 0" stroke="{_PK}" stroke-width="1" fill="none"/>'),
 }
 
 # deterministic per-cell shape variants (breaks repetition in fields of the
@@ -998,7 +1335,9 @@ def _arrowhead(x1: float, y1: float, x2: float, y2: float, color: str, size: flo
             f'L{_n(p2[0])} {_n(p2[1])}Z" fill="{color}"/>')
 
 
-def render_svg(grid: dict, source_name: str) -> str:
+def render_svg(grid: dict, source_name: str, tema: str = "pergamena") -> str:
+    if tema not in TEMI:
+        raise ValueError(f"tema: uno di {', '.join(TEMI)}")
     rows = grid["rows"]
     row_nums = sorted(rows)
     n_rows = row_nums[-1] - row_nums[0] + 1
@@ -1056,7 +1395,7 @@ def render_svg(grid: dict, source_name: str) -> str:
     )
 
     # --- defs: filters, vignette, terrain patterns, props, token gradients --
-    defs: list[str] = ["<defs>"]
+    defs: list[str] = ["<defs>", _stile_font()]
     defs.append(
         '<filter id="grain" x="0" y="0" width="100%" height="100%">'
         '<feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" '
@@ -1101,14 +1440,59 @@ def render_svg(grid: dict, source_name: str) -> str:
             f'<clipPath id="clipheavy"><path d="{heavy_union_d}" '
             f'clip-rule="evenodd"/></clipPath>'
         )
+    tex = _texture_cc0() if tema == "texture" else None
+    ambiente = _ambiente(grid.get("annotations", []))
+    per_pat = {}
+    for e, spec in SYMBOLS.items():
+        if spec.get("pat"):
+            per_pat.setdefault(spec["pat"], e)
+    texture_usate = set()
     for p in used_pats:
-        defs.append(PATTERNS[p])
+        tp = _pattern_texture(p, per_pat[p], ambiente, tex) if p in per_pat else None
+        if tp:
+            defs.append(tp[0])
+            texture_usate.add(tp[1])
+        else:
+            defs.append(PATTERNS[p])
+    ogg = _oggetti_cc0() if tema == "texture" else None
+
+    def _cella(c_: int, r_: int):
+        if not (0 <= r_ < len(row_nums)) or c_ < 0:
+            return None
+        riga_ = rows[row_nums[r_]]
+        return riga_[c_] if c_ < len(riga_) else None
+    oggetti_usati = sorted({k for r_, rn_ in enumerate(row_nums)
+                            for c_, e_ in enumerate(rows[rn_])
+                            if (k := _tessera_oggetto(ogg, e_, r_, c_, _cella))}
+                           | {ogg[0][e_][0] for e_ in used if ogg and e_ in ogg[0]})
+    # i glifi che nessuna cella disegna più, perché la tessera li sostituisce tutti
+    glifi_serviti = {v for e_ in used if (sp := SYMBOLS.get(e_)) and sp.get("prop")
+                     and not (ogg and e_ in ogg[0])
+                     for v in VARIANTS.get(sp["prop"], [sp["prop"]])}
+    glifi_serviti |= {SOPRA_LA_TESSERA[e_] for e_ in used
+                      if ogg and e_ in ogg[0] and e_ in SOPRA_LA_TESSERA}
+    used_props = sorted(set(used_props) | glifi_serviti)
     for p in used_props:
-        defs.append(PROPS[p])
+        if p in glifi_serviti:
+            defs.append(PROPS[p])
+    for k in oggetti_usati:
+        defs.append(f'<symbol id="oc_{k}" viewBox="0 0 96 96"><image '
+                    f'href="data:image/webp;base64,{ogg[1][k]}" width="96" height="96"/></symbol>')
+    noto = {e: _simbolo_noto(e) for e in used if e and e not in SYMBOLS}
+    noto = {e: v for e, v in noto.items() if v}
+    for e in sorted(noto):
+        defs.append(noto[e][1])
     for color in unit_colors:
         defs.append(_unit_gradient(color))
     defs.append("</defs>")
     out.extend(defs)
+    if texture_usate:
+        # CC0 non chiede il credito; lo si scrive lo stesso, e senza toccare il foglio
+        out.append(f'<desc>Texture CC0 1.0 da Poly Haven (polyhaven.com): '
+                   f'{", ".join(sorted(texture_usate))}</desc>')
+    if oggetti_usati:
+        out.append(f'<desc>Oggetti di scena da modelli 3D CC0 1.0 (Poly Haven, Quaternius), '
+                   f'resi dall\'alto: {", ".join(oggetti_usati)}</desc>')
 
     # --- parchment sheet, vignette, double frame ----------------------------
     out.append(f'<rect width="{width}" height="{height}" fill="{PAPER}" filter="url(#grain)"/>')
@@ -1124,9 +1508,12 @@ def render_svg(grid: dict, source_name: str) -> str:
 
     # --- header --------------------------------------------------------------
     title = _esc(grid["title"])
+    corpo, comprimi = _corpo_titolo(grid["title"], width - 2 * MARGIN)
+    stretto = (f' textLength="{_n(width - 2 * MARGIN)}" lengthAdjust="spacingAndGlyphs"'
+               if comprimi else "")
     out.append(
-        f'<text x="{MARGIN}" y="34" font-size="19" font-weight="bold" '
-        f'fill="{INK}" letter-spacing="0.5">{title}</text>'
+        f'<text x="{MARGIN}" y="34" font-size="{_n(corpo)}" font-weight="bold" '
+        f'fill="{INK}" letter-spacing="0.5"{stretto}>{title}</text>'
     )
     scale_m = grid.get("scale_m") or 1.5
     scale_txt = f"{scale_m:g}".replace(".", ",")
@@ -1211,6 +1598,15 @@ def render_svg(grid: dict, source_name: str) -> str:
         )
 
     # --- illustrated props and unit tokens --------------------------------------
+    # doors, grates and bars take their axis from the neighbours (ADR-0083):
+    # the glyphs are drawn for an east-west wall and turn 90° in a north-south one
+    def _at(cx_: int, ry_: int):
+        if not (0 <= ry_ < len(row_nums)) or cx_ < 0:
+            return None
+        cells_ = rows[row_nums[ry_]]
+        return cells_[cx_] if cx_ < len(cells_) else None
+    versi = chiusure.versi_dichiarati(grid.get("annotations", []) or [])
+    alone = _alone() if tema == "texture" and tex else 0.0
     for r, rn in enumerate(row_nums):
         cells = rows[rn]
         for c in range(n_cols):
@@ -1220,6 +1616,9 @@ def render_svg(grid: dict, source_name: str) -> str:
             spec = SYMBOLS.get(emoji)
             x, y = ox + c * CELL, oy + r * CELL
             cx, cy = x + CELL / 2, y + CELL / 2
+            if alone and not (spec and spec["mode"] == "fill"):
+                out.append(f'<circle cx="{_n(cx)}" cy="{_n(cy)}" r="{_n(CELL * 0.46)}" '
+                           f'fill="{PAPER}" opacity="{alone}" filter="url(#softblur)"/>')
             if spec and spec["mode"] == "unit":
                 rr = CELL * 0.37
                 out.append(
@@ -1234,26 +1633,43 @@ def render_svg(grid: dict, source_name: str) -> str:
                     f'<circle cx="{cx}" cy="{cy}" r="{rr - 2.4}" fill="none" '
                     f'stroke="#ffffff" stroke-width="0.9" opacity="0.55"/>'
                 )
+            elif spec and spec.get("prop") and (tess := _tessera_oggetto(ogg, emoji, r, c, _cella)):
+                # la tessera porta la sua ombra: niente ellisse disegnata
+                out.append(f'<use href="#oc_{tess}" x="{x}" y="{y}" '
+                           f'width="{CELL}" height="{CELL}"/>')
+                if emoji in SOPRA_LA_TESSERA:
+                    m = CELL * 0.22
+                    out.append(f'<use href="#{SOPRA_LA_TESSERA[emoji]}" x="{_n(x + m)}" '
+                               f'y="{_n(y + m - 2)}" width="{_n(CELL - 2 * m)}" '
+                               f'height="{_n(CELL - 2 * m)}"/>')
             elif spec and spec.get("prop"):
                 variants = VARIANTS.get(spec["prop"], [spec["prop"]])
                 prop = variants[(r * 7 + c * 13) % len(variants)]
+                ns = chiusure.e_chiusura(emoji) and chiusure.asse_da_disegnare(
+                    _at, c, r, col_label(c), rn, versi) == chiusure.NS
+                rx_, ry_ = (4.5, 9) if ns else (9, 4.5)
                 out.append(
-                    f'<ellipse cx="{cx + 1}" cy="{cy + 3}" rx="9" ry="4.5" '
+                    f'<ellipse cx="{cx + 1}" cy="{cy + 3}" rx="{rx_}" ry="{ry_}" '
                     f'fill="#241c10" opacity="0.2"/>'
                 )
+                ruota = f' transform="rotate(90 {_n(cx)} {_n(cy)})"' if ns else ""
                 out.append(
                     f'<use href="#{prop}" x="{x}" y="{y}" '
-                    f'width="{CELL}" height="{CELL}"/>'
+                    f'width="{CELL}" height="{CELL}"{ruota}/>'
                 )
             elif spec is None or spec["mode"] == "icon":
                 out.append(
                     f'<ellipse cx="{cx}" cy="{cy + 6}" rx="7.5" ry="2.8" '
                     f'fill="#241c10" opacity="0.14"/>'
                 )
-                out.append(
-                    f'<text x="{cx}" y="{cy + 6}" font-size="17" '
-                    f'text-anchor="middle">{emoji}</text>'
-                )
+                if emoji in noto:
+                    out.append(f'<use href="#{noto[emoji][0]}" x="{x + 5}" y="{y + 5}" '
+                               f'width="{CELL - 10}" height="{CELL - 10}"/>')
+                else:
+                    out.append(
+                        f'<text x="{cx}" y="{cy + 6}" font-size="17" '
+                        f'text-anchor="middle">{emoji}</text>'
+                    )
 
     # --- coordinates ------------------------------------------------------------
     for c in range(n_cols):
@@ -1410,10 +1826,15 @@ def render_svg(grid: dict, source_name: str) -> str:
                 f'<rect x="{lx}" y="{y - 12}" width="19" height="15" fill="url(#{spec["pat"]})" '
                 f'stroke="{INK_SOFT}" stroke-width="0.7"/>'
             )
+        elif spec and spec.get("prop") and ogg and emoji in ogg[0]:
+            out.append(f'<use href="#oc_{ogg[0][emoji][0]}" x="{lx - 1}" y="{y - 14}" '
+                       f'width="20" height="20"/>')
         elif spec and spec.get("prop"):
             out.append(
                 f'<use href="#{spec["prop"]}" x="{lx}" y="{y - 13}" width="18" height="18"/>'
             )
+        elif emoji in noto:
+            out.append(f'<use href="#{noto[emoji][0]}" x="{lx + 1}" y="{y - 13}" width="17" height="17"/>')
         else:
             out.append(f'<text x="{lx}" y="{y}" font-size="14">{emoji}</text>')
         out.append(f'<text x="{lx + 27}" y="{y}" font-size="11" fill="{INK}">{emoji} — {label}</text>')
@@ -1433,13 +1854,29 @@ def render_svg(grid: dict, source_name: str) -> str:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("files", nargs="+", help="markdown file(s) containing emoji-grid maps")
+    ap.add_argument("files", nargs="*", help="markdown file(s) containing emoji-grid maps")
+    ap.add_argument("--tutti-i-master", action="store_true",
+                    help="ogni master che ha gia' un SVG in rendered/ (per rifare un tema intero)")
     ap.add_argument("-o", "--outdir", help="output directory (default: rendered/ next to input)")
     ap.add_argument("--map", type=int, help="render only map #N (1-based) of each file")
     ap.add_argument("--list", action="store_true", help="list maps found, render nothing")
     ap.add_argument("--strict", action="store_true",
                     help="fail if declared header dims (N col × M righe) don't match parsed cells")
+    ap.add_argument("--tema", choices=TEMI, default="pergamena",
+                    help="pergamena (default, in rendered/) o texture: terreni con le texture "
+                         "CC0 di scripts/texture-cc0/, in rendered-texture/")
     args = ap.parse_args()
+    if args.tutti_i_master:
+        radice = Path(__file__).resolve().parent.parent
+        args.files = sorted({str(p.parent.parent / f"{p.name.split('_map')[0]}.md")
+                             for p in radice.glob("**/rendered/*_map[0-9][0-9]_*.svg")
+                             if (p.parent.parent / f"{p.name.split('_map')[0]}.md").exists()})
+    if not args.files:
+        ap.error("indica i file, oppure --tutti-i-master")
+    if args.tema == "texture" and not _texture_cc0():
+        print("ERRORE: il tema texture vuole le texture CC0: python3 scripts/build_texture_cc0.py",
+              file=sys.stderr)
+        return 1
 
     total = 0
     dim_errors = 0
@@ -1470,13 +1907,13 @@ def main() -> int:
                 n_cols = max(len(c) for c in rows.values())
                 print(f"  {i:2d}. {g['title']}  ({n_cols}×{len(rows)} celle)")
             continue
-        outdir = Path(args.outdir) if args.outdir else path.parent / "rendered"
+        outdir = Path(args.outdir) if args.outdir else path.parent / CARTELLA_TEMA[args.tema]
         outdir.mkdir(parents=True, exist_ok=True)
         for i, g in enumerate(maps, 1):
             if args.map and i != args.map:
                 continue
             name = f"{path.stem}_map{i:02d}_{nome_mappa(g['title'])}.svg"
-            (outdir / name).write_text(render_svg(g, path.name), encoding="utf-8")
+            (outdir / name).write_text(render_svg(g, path.name, args.tema), encoding="utf-8")
             print(f"✓ {outdir / name}")
             total += 1
     if not args.list:

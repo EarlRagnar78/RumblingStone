@@ -152,7 +152,10 @@ class TestIlResetSuiFileVeri(unittest.TestCase):
             "clock": [{"png_id": "azarr-kul", "da": 0, "a": 1}]})
             + "# Session 1 — Prima (2026-10-01)\n", encoding="utf-8")
         for cmd in (["init", "-q", "-b", "campaign-group-nuovo"], ["config", "user.email", "t@t"],
-                    ["config", "user.name", "t"], ["add", "-A", "campaign"],
+                    ["config", "user.name", "t"],
+                    # come in test_gruppo_nuovo: niente manutenzione in background
+                    ["config", "maintenance.auto", "false"], ["config", "gc.auto", "0"],
+                    ["add", "-A", "campaign"],
                     ["commit", "-qm", "reset"]):
             subprocess.run(["git", "-C", str(repo), *cmd], check=True)
         self.assertEqual(state_apply.main(["--session", log.name, "--yes", "--no-guard",

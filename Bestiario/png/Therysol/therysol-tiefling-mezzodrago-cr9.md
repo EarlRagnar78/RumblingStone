@@ -1,4 +1,4 @@
-# Therysol / Therisol (ex Ysolde) [POINTER — canonical file] [RIMANDO]
+# Therysol (ex Ysolde) [POINTER — canonical file] [RIMANDO]
 
 **Key stats**: → `Bestiario/png/Therysol/Therysol/Therysol.md` (i numeri ora stanno lì, nel blocco).
 

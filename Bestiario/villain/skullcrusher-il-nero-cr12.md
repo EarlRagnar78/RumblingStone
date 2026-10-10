@@ -16,6 +16,8 @@
 
 Questa voce esiste perche' `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri: senza, una creatura con statistiche scritte non e' raggiungibile da nessuno strumento. Ogni modifica va fatta nel file d'arco.
 
+Boost log: 2026-10-07 — template Avanzato PF1e, versione completa (+4 a tutte le caratteristiche, +2 di armatura naturale; SRD drago nero adulto maturo sotto) — CR 14 → 14 (vale 15, il GS non sale per scelta del DM, Q37) — più forte senza salire di EL. Numeri nel file d'arco, Appendice A.1.
+
 ## Notes
 
 🔎 **Questa voce ha sbagliato fonte due volte, e la seconda l'ha trovata la misura.** La prima stesura puntava a `_ARCHIVIO/PortaleForgia-P6-INTEGRAZIONE-Completa.md`, che il drago lo **nomina** soltanto — l'ha trovato il cancello di D18, che vedeva due voci «Skullcrusher il Nero». La correzione la spostò su `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md`, e **anche quella era sbagliata**: quel file non porta **nessuna** marca di statblocco. I numeri sono sempre stati nel master vivo, `ARC07-DEF-4` §4. `ERRATA-ARC07-35-Verification.md` §2.3 li dichiara per esteso e resta la fonte dell'errata sul GS.

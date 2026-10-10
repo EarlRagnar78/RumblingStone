@@ -1,0 +1,195 @@
+{
+ "schema_version": "1.0",
+ "title": "M7-E — Le gallerie di Zeth, livello −2 (notte, ≈372 DR)",
+ "tipo": "tattica",
+ "ambiente": "caverna",
+ "scale_m_per_square": 1.5,
+ "map_size": [
+  34,
+  24
+ ],
+ "base_terrain": "🏰",
+ "north": "N",
+ "regions": [
+  {
+   "terrain": "🟫",
+   "rect": [
+    25,
+    1,
+    2,
+    3
+   ],
+   "label": "Pozzo della scala dalla fucina di Gunnvor"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    25,
+    4,
+    1,
+    6
+   ],
+   "label": "Galleria nord-sud, puntellata"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    6,
+    9,
+    20,
+    1
+   ],
+   "label": "Galleria maestra est-ovest (1,5 m)"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    6,
+    9,
+    1,
+    12
+   ],
+   "label": "Galleria ovest, verso le miniere"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    15,
+    9,
+    1,
+    10
+   ],
+   "label": "Galleria centrale"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    15,
+    18,
+    12,
+    1
+   ],
+   "label": "Galleria bassa"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    25,
+    18,
+    2,
+    4
+   ],
+   "label": "Discesa alla fucina grande"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    17,
+    12,
+    5,
+    3
+   ],
+   "label": "L'affaccio: la galleria si apre sulla volta della fucina grande"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    16,
+    13,
+    1,
+    1
+   ],
+   "label": "Passaggio all'affaccio"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    2,
+    20,
+    5,
+    2
+   ],
+   "label": "Imbocco delle miniere (dove scendono bambini e vecchi)"
+  }
+ ],
+ "structures": [
+  {
+   "type": "🔼",
+   "at": [
+    26,
+    1
+   ],
+   "label": "Scala alla fucina di Gunnvor (livello −1)",
+   "collega": "M7-D-livello-1-372.md Z20"
+  },
+  {
+   "type": "🔽",
+   "at": [
+    26,
+    21
+   ],
+   "label": "Scala alla fucina grande (livello −3)",
+   "collega": "M7-F-fucina-grande-372.md O02"
+  },
+  {
+   "type": "🕳",
+   "at": [
+    19,
+    13
+   ],
+   "label": "L'affaccio sulla fucina grande: si vede, sotto, la sala più ampia"
+  },
+  {
+   "type": "🏮",
+   "at": [
+    12,
+    8
+   ],
+   "label": "Lampada a olio in una nicchia del muro, ogni dieci passi"
+  },
+  {
+   "type": "🏮",
+   "at": [
+    20,
+    8
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    18,
+    17
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    23,
+    17
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    10,
+    8
+   ]
+  }
+ ],
+ "units": [
+  {
+   "faction": "Neutrale",
+   "name": "Mastro Costruttore Zeth, col gesso e il martelletto",
+   "token": "🟣",
+   "at": [
+    10,
+    9
+   ]
+  }
+ ],
+ "notes": [
+  "Canone 372: DEF-4 Scena 5 (gallerie strette, travi nuove, una lampada ogni dieci passi, segni a gesso, Zeth che lavora più in fondo).",
+  "Le rune di Zeth qui sono colore: nel 372 non hanno effetto (D30).",
+  "L'affaccio sulla fucina grande è D45: la fucina grande sta sotto, e la si vede scendendo da Zeth."
+ ]
+}

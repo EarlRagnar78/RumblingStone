@@ -13,7 +13,7 @@
 - **Arrivo a Rethmar (Day 42)**: ~**5.800–7.200** effettivi a seconda degli interventi PG sul March Clock (vedi §3).
 - **PG non sono a Skull Gorge**: il ponte non viene sabotato → nessun ritardo Day 5 strutturale. L'alleanza coi giganti **non** avviene (Wyrmlord Koth non neutralizzato PG-side) → i giganti marciano con l'Orda.
 - **Ghostlord**: se neutralizzato/alleato PG entro Day ~28, l'Orda riceve **solo un piccolo distaccamento** di non-morti (non l'esercito completo): ~200-400 non-morti minori invece di ~1.000.
-- **La battaglia è perduta senza i PG.** I numeri baseline rendono Rethmar indifendibile con la sola guarnigione cittadina + Lions of Brindol locali; le alleanze PG (Tiri-Kitor, mercenari nani di Hammerfist, druidi di Hellas, Circolo degli Otto, Torre Invisibile Artemis, Ghostlord) sono **l'unico** vettore di vittoria.
+- **La battaglia è perduta senza i PG.** I numeri baseline rendono Rethmar indifendibile con la sola guarnigione cittadina + Lions of Brindol locali; le alleanze PG (Tiri-Kitor, mercenari nani di Hammerfist, druidi di Hella, Circolo degli Otto, Torre Invisibile Artemis, Ghostlord) sono **l'unico** vettore di vittoria.
 
 ---
 
@@ -68,7 +68,7 @@ Riferimento dettagliato: `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.m
 |---|---|---|---:|---:|---:|---|
 | **A** | **Worst Case** | Nessuna quest Arc-09 completata; Ghostlord nemico; drow intatti; Torneo fallito; Circolo Otto non convocato | ~7.400 | ~1.280 (guarnigione + Lions locali) | **5.8 : 1** | CR 17–18 (letale senza deus-ex) |
 | **B** | **Baseline** | Torre Zalkatar liquidata (Artemis); Torneo vinto (300 nani Tordek); Ghostlord nemico; no Tiri-Kitor | ~7.200 | ~1.600 | **4.5 : 1** | CR 16–17 |
-| **C** | **Medio (atteso al tavolo)** | Torre + Torneo + Cerchio Sacro Hellas (druidi-orsi) + Sabotaggio Drow parziale + Ghostlord neutralizzato (solo distaccamento) | ~6.400 | ~2.100 | **3.0 : 1** | CR 15–16 (paragonabile a Hammerfist) |
+| **C** | **Medio (atteso al tavolo)** | Torre + Torneo + Cerchio Sacro Hella (druidi-orsi) + Sabotaggio Drow parziale + Ghostlord neutralizzato (solo distaccamento) | ~6.400 | ~2.100 | **3.0 : 1** | CR 15–16 (paragonabile a Hammerfist) |
 | **D** | **Ottimale** | Medio + Tiri-Kitor (Starsong Hill) alleati (100 ranger + 20 gufi, D9) + Saarvith/Regiarix uccisi Arc-09/P2 | ~6.000 | ~2.230 | **2.7 : 1** | CR 14–15 |
 | **E** | **Leggendario** | Ottimale + Ghostlord alleato PG (colpisce retroguardia) + Circolo degli Otto convocato + Salvatore/mercante converte 1 Wyrmlord + 150 Lance di Re Thorek (hook politici Maewen/Thorik completati, D10) | ~5.800 | ~3.980 | **1.46 : 1** | CR 13–14 (heroic fantasy vittoria con costo) |
 
@@ -126,7 +126,7 @@ Compie **~60%** dell'Orda presente. Distribuzione tipica (scenario C):
 - Witchwood → **Shaarcah Forest** (Tiri Kitor / elfi Starsong Hill)
 - Blackfens → **Lhespenbog** (Rhest/Lhesper)
 - Rhest → **Lhesper** (Wyrmlord Koth / Saarvith Arc-09/P2)
-- Dennovar → **Cannathgate** (gateway orientale)
+- Dennovar → **Channathgate** (gateway orientale)
 - Giantshield → **Rathgaunt Hills**
 - The Thornwaste → **Bandit Wastes** (Ghostlord's Lair)
 - Elsir River → **Talar River** (ovest) + **Cannath River** (est)
@@ -159,7 +159,7 @@ Ogni hook completato **prima del Day 40** modula i numeri di §3. Riferimento: `
 
 | Hook | Deadline March Clock | Effetto numerico |
 |---|---|---|
-| P1A/P1B/P1C — Quest Hellas (Cerchio Sacro + druidi-orsi) | Day ~30 | +150 druidi-orsi mutaforma alla difesa Fase 1-2 |
+| P1A/P1B/P1C — Quest Hella (Cerchio Sacro + druidi-orsi) | Day ~30 | +150 druidi-orsi mutaforma alla difesa Fase 1-2 |
 | P2 — Rhest (Saarvith + Regiarix) | Day ~28 | -1 drago Orda (Regiarix), -40 razorfiend minori |
 | P2A — Torre Invisibile (Zalkatar) | Day ~32 | -Torre come minaccia parallela; +Artemis focus su Avatar |
 | P2B — Torneo Tordek (Hammerfist) | Day ~34 | +300 mercenari nani fanteria pesante |
@@ -197,6 +197,6 @@ Ogni hook completato **prima del Day 40** modula i numeri di §3. Riferimento: `
 ## 8. Changelog
 
 - **2026-05-05** — Creato file v1 (allineamento v2 armate post-chiarimenti utente: 10k baseline, 5 draghi, 8 Razorfiend, Compagnia Teschio Nero invariata, battaglia persa senza PG, Ghostlord-neutralizzato-= piccolo distaccamento, no sabotaggio Skull Gorge, no alleanza giganti PG, Day 19 sync Terrelton↔Hammerfist, Day 40 arrivo Rethmar).
-- **2026-05-05 (rev.b)** — §2 espansa con fazioni esplicite (Drow di Sonjak, Githyanki di Vaereth, Gnoll 3 tribù, Loxo schiavizzati, Centauri schiavizzati, Compagnia del Teschio Nero, Il Collezionista condizionale); §2.2 aggiunta meccanica Revolt per schiavi Loxo/Centauri; §5 toponimi Cannath Vale sincronizzati con mappa `cannath-vale-gm-versia3ys4.webp` e `fr-cannath-vale.md` (Brindol→Rethmar, Wyrmsmoke→Wyrmbones, Witchwood→Shaarcah Forest, Blackfens→Lhespenbog, Rhest→Lhesper, Dennovar→Cannathgate, Giantshield→Rathgaunt Hills, Thornwaste→Bandit Wastes, Elsir River→Talar/Cannath River, Hammerfist Holds confermato su The North Wall).
+- **2026-05-05 (rev.b)** — §2 espansa con fazioni esplicite (Drow di Sonjak, Githyanki di Vaereth, Gnoll 3 tribù, Loxo schiavizzati, Centauri schiavizzati, Compagnia del Teschio Nero, Il Collezionista condizionale); §2.2 aggiunta meccanica Revolt per schiavi Loxo/Centauri; §5 toponimi Cannath Vale sincronizzati con mappa `cannath-vale-gm-versia3ys4.webp` e `fr-cannath-vale.md` (Brindol→Rethmar, Wyrmsmoke→Wyrmbones, Witchwood→Shaarcah Forest, Blackfens→Lhespenbog, Rhest→Lhesper, Dennovar→Channathgate, Giantshield→Rathgaunt Hills, Thornwaste→Bandit Wastes, Elsir River→Talar/Cannath River, Hammerfist Holds confermato su The North Wall).
 - **2026-05-05 (rev.c)** — aggiunti Esperimenti Fungini Drow all'Orda principale: §2 nuova riga (35-50 unità: ~28-40 Fungal Minions CR 6-7 + ~5-8 Aberrazioni Fungine CR 10-11 + 2 Alfa CR 12); §2.1 regola fotofobia (-2 atk / -4 Will in luce solare); §2.2 dispiego tattico per fase + trigger Sabotaggio Campi Drow (P3) che rimuove quasi tutti gli esperimenti; §4 Fase 1 Ondata 4 espansa con Aberrazioni breaker + Minions; §6 hook Sabotaggio Drow aggiornato con effetti espliciti.
 - **2026-05-05 (rev.d)** — §2 corretti sub-conteggi Esperimenti Fungini Drow (Minions ~28-40, Aberrazioni ~5-8, Alfa 2) per allineare la somma della breakdown al totale di riga **35-50** (in precedenza la breakdown sommava a 25-32, incoerente col totale e coi sopravvissuti attesi ~25-30). Nessun cambio di totale o di sopravvissuti.

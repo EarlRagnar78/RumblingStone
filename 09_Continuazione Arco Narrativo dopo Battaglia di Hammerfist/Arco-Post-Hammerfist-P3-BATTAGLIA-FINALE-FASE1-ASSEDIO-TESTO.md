@@ -30,7 +30,7 @@ Prima di iniziare, segna i seguenti “Valori di Supporto”, ispirati al sistem
 - Drow sabotaggio: 0 / 1 / 2 (nessun sabotaggio, parziale, campi/tunnel/patto distrutti).  
 - Missioni brevi Gith/Funghi: 0 / 1 / 2 (nessuna, alcune, molte completate).  
 - 300 Mercenari Nani: 0 / 1 (non arrivano / arrivano).  
-- Druidi‑Orsi (Hellas): 0 / 1 (no / sì).
+- Druidi‑Orsi (Hella): 0 / 1 (no / sì).
 
 Questi valori riducono o aumentano il numero o la forza dei nemici per ciascuna ondata.
 

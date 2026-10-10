@@ -4,8 +4,7 @@
 > piano trasversale §0). Modello: l'appendice *"Monsters and NPCs"* di **Red
 > Hand of Doom** — ogni creatura ha UNA scheda riutilizzabile; gli incontri
 > della campagna **puntano** alle schede, non le rigenerano.
-> Piano di lavoro: `PIANO-REVISIONE-LIBRERIA-MOSTRI-PNG-VILLAIN.md` (repo
-> root) · Inventario completo: `CENSIMENTO-MOSTRI-PNG-VILLAIN.md` (repo root).
+> Piano di lavoro: `plans/PIANO-REVISIONE-LIBRERIA-MOSTRI-PNG-VILLAIN.md` · Inventario completo: `CENSIMENTO-MOSTRI-PNG-VILLAIN.md` (repo root).
 
 ---
 

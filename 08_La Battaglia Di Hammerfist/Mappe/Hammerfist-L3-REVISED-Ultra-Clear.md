@@ -96,6 +96,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @zone AL16-AN25 ; BRECCIA EST nel muro (macerie, terreno difficile)
 @zone A16-C25 ; BRECCIA OVEST nel muro (macerie)
 @zone R34-W36 ; Incendi presso la breccia sud
+@tipo tattica esterno
 ```
 
 ### 📍 POSIZIONI PRECISE:
@@ -210,6 +211,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @mark 7 ; Q26 ; Inseguitori (prima ondata) (Orchi/Hobgoblin GS 1/2-1)
 @path Colonna nanica → uscita nord (verso 3Z) ; Q8 Q3 Q1 ; #2c8c3c
 @path Spinta inseguitori → ponte ; K26 Q20 Q13 ; #d62828
+@tipo tattica caverna
 ```
 
 ### 📍 POSIZIONI PRECISE:
@@ -315,6 +317,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @path Round 2: bugbear EST → Re Thorek ; Z18 U18 R18 ; #d62828
 @path Round 2: bugbear OVEST → comandanti ; I18 M18 O18 ; #d62828
 @path Round 4 (eventuale): 30 orchi inseguitori dal SUD ; P32 P27 P25 ; #8c2fb8
+@tipo tattica caverna
 ```
 
 ### 📍 POSIZIONI PRECISE:
@@ -358,7 +361,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 **Incontro:** Incontri 3A/3B — ultima resistenza a ondate + APPARIZIONE DEI RUMBLING STONES (round 8)
 **Quando si usa:** Sessione 3 (guida: `../ARC08-01-GUIDA-DM.md` § Sessione 3; la "MAPPA 3A: Caverna Sacra" e la "MAPPA 3B: La Svolta" della guida sono gli stati A e F di questa griglia)
 
-### 🎯 COMPRENSIONE: caverna-cattedrale con l'altare di Moradin al centro (+3 m), 10 statue di re ancestrali in cerchio, unico ingresso dalla porta di mithril a nord. Le ondate entrano dal tunnel; al round 8 la Sfera dorata esplode sopra l'altare.
+### 🎯 COMPRENSIONE: caverna-cattedrale con l'altare di Moradin al centro (+3 m), 10 statue di re ancestrali in cerchio, unico ingresso dalla porta di mithral a nord. Le ondate entrano dal tunnel; al round 8 la Sfera dorata esplode sopra l'altare.
 
 ### VISTA 1: GRIGLIA COMPLETA CON COORDINATE (67×53)
 
@@ -441,6 +444,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @path Ondata 3: bugbear in aggiramento ovest ; AF5 Y11 Y18 ; #8c2fb8
 @path Ondata 3: bugbear in aggiramento est ; AJ5 AQ11 AQ18 ; #8c2fb8
 @zone AF26-AJ30 ; Altare di Moradin: piattaforma circolare 6 m, +3 m, pietra nera con rune d'oro
+@tipo tattica interni
 ```
 
 ### 📍 POSIZIONI PRECISE:
@@ -449,7 +453,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 - **Madre Dana AG30** (metà incantesimi: *Heal* su Thorek round 1, *Consacrazione* round 2) · **Cantitrici AJ30-AL30** (se sopravvissute)
 - **Borin AF29** (difesa altare) · **Thorin AI29** (accanto all'altare: +2 LI sacro) · **Dara BA27** (terrazzo EST +1,5 m) · **Nala O27** (terrazzo OVEST)
 - **Anello difensivo:** 60 guerrieri (4 blocchi N/S/E/O) + 20 balestrieri (2 blocchi) + nucleo leader
-- **Porta di Mithril 🚪 AE05-AJ05** (unico ingresso, ward collassati) — tunnel di 10 m alle spalle
+- **Porta di Mithral 🚪 AE05-AJ05** (unico ingresso, ward collassati) — tunnel di 10 m alle spalle
 - **10 statue 🗿** in cerchio (~20 m dall'altare): occhi di rubino
 
 ### ⚔️ ONDATE (agganciate alle unità in griglia, rotte tratteggiate):
@@ -472,7 +476,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 | Stalattiti bioluminescenti | soffitto 40 m | luce piena OVUNQUE: niente Nascondersi generico senza copertura; incantesimi ad area sul soffitto = crollo stalattiti 4d6, raggio 3 m, Riflessi CD 18 |
 | Altare +3 m | AF26-AJ30 | posizione dominante: +1 attacchi in mischia dall'alto |
 | Terrazzi E/O +1,5 m | M25-P27 e AZ25-BC27 | tiro sopraelevato (+1); stalagmiti = copertura +4 CA |
-| Porta di Mithril | AE05-AJ05 | larga 6 m: le ondate entrano max 4 per round in formazione — imbuto |
+| Porta di Mithral | AE05-AJ05 | larga 6 m: le ondate entrano max 4 per round in formazione — imbuto |
 | Tunnel nord | 10 m dietro la porta | *Barriera di Lame*/*Muro di Pietra* possono tapparlo per 1-2 ondate |
 
 ### 🔄 EVOLUZIONE
@@ -607,6 +611,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @path Rotta degli orchi verso sud ; AD47 AD65 ; #d62828
 @zone E1-BD2 ; Hammerfist - fronte sud riconquistato (+15 m sul fondovalle)
 @zone AB30-AG32 ; Zona di atterraggio forzato di Fauci (round 18-20)
+@tipo tattica esterno
 ```
 
 ### 🦅 VISTA ALTITUDINI (battaglia aerea simultanea, 0-60 m):

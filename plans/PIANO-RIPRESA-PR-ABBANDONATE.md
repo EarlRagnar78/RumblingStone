@@ -1,6 +1,6 @@
 # PIANO — La ripresa delle quattro PR abbandonate
 
-> **Stato**: 🔵 **approvato dal DM, non ancora eseguito** · **Aperto**: 2026-09-04
+> **Stato**: 🟡 **in corso** *(allineato il 2026-10-10: F1 e F2 chiuse il 2026-09-05, F3 e F4 in parte; il dettaglio in INDEX)* · **Aperto**: 2026-09-04
 > **Richiesta-fonte (DM, 2026-09-04)**: *«R8 ok, in un'altra chat; qui fai il
 > piano completo con tutte le fasi, che poi si mergia»*.
 > **Esecuzione**: in sessioni dedicate, **una fase alla volta**. Questo documento

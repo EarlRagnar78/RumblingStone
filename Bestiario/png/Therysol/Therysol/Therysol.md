@@ -15,7 +15,7 @@ La scheda è stata costruita convertendo la classe **Acolita (Adept)** in un inc
 
 ***
 
-# Therisol (ex Ysolde)
+# Therysol (ex Ysolde)
 ## *La Custode del Cristallo Infranto*
 
 **Razza:** Tiefling Mezzo-Drago (Bianco)
@@ -83,7 +83,7 @@ La scheda è stata costruita convertendo la classe **Acolita (Adept)** in un inc
 ### **Capacità Speciali & Magia**
 
 #### **1. L'Eredità del Cristallo (Incantesimi Innati)**
-Therisol non prega più per i suoi incantesimi. Il cristallo nel suo petto agisce come un catalizzatore, permettendole di lanciare incantesimi divini dalla lista dell'Acolita *spontaneamente* (come uno Stregone), usando il **Carisma** per determinare le CD e gli slot bonus.
+Therysol non prega più per i suoi incantesimi. Il cristallo nel suo petto agisce come un catalizzatore, permettendole di lanciare incantesimi divini dalla lista dell'Acolita *spontaneamente* (come uno Stregone), usando il **Carisma** per determinare le CD e gli slot bonus.
 *   **CD Incantesimi:** 14 + Livello Incantesimo.
 *   **Componenti:** Ignora tutte le componenti materiali (Talento *Escludere Materiali*).
 
@@ -94,7 +94,7 @@ Therisol non prega più per i suoi incantesimi. Il cristallo nel suo petto agisc
 
 #### **2. Egida del Fuoco Inverso (Capacità Soprannaturale Unica)**
 Questa è l'abilità che si è manifestata durante la sua trasformazione ("Awakening").
-*   **Effetto:** Therisol può attivare un'aura protettiva pulsante di 6 metri (20 ft) centrata su se stessa.
+*   **Effetto:** Therysol può attivare un'aura protettiva pulsante di 6 metri (20 ft) centrata su se stessa.
 *   **Meccanica:** Funziona come un incantesimo *Cerchio Magico contro il Male*, ma invece di proteggere dall'allineamento, fornisce i benefici di **Protezione dall'Energia (Fuoco)** di massa.
 *   **Bonus:** Tutte le creature amiche all'interno dell'area ottengono **Resistenza al Fuoco 20**. L'aura impedisce inoltre alle creature elementali del fuoco evocate di entrare nell'area (se falliscono la RI).
 *   **Durata:** 10 minuti per utilizzo.
@@ -140,7 +140,7 @@ Questa è l'abilità che si è manifestata durante la sua trasformazione ("Awake
 
 ### **Equipaggiamento Posseduto**
 
-Poiché non indossa armature, Therisol si affida a gingilli magici recuperati durante i suoi viaggi commerciali.
+Poiché non indossa armature, Therysol si affida a gingilli magici recuperati durante i suoi viaggi commerciali.
 
 *   **Talismano del Gelo Perenne (Amuleto Armatura Naturale +1):** Un frammento di ghiaccio che non si scioglie mai, fuso visivamente con le scaglie del collo.
 *   **Anello del Patto (Anello di Deviazione +1):** Un semplice anello d'argento drow.

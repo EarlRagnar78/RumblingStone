@@ -240,6 +240,15 @@ def validate(spec: dict) -> tuple[int, int]:
     if not isinstance(title, str) or not (3 <= len(title) <= 100):
         errors.append("'title': stringa obbligatoria (3-100 caratteri).")
 
+    # tipo e ambiente (D18): lo stesso elenco del collaudo
+    from dmcore import legenda as _legenda
+    if "tipo" in spec and spec["tipo"] not in _legenda.TIPI_MAPPA:
+        errors.append(f"'tipo': uno di {', '.join(_legenda.TIPI_MAPPA)}.")
+    if "ambiente" in spec and spec["ambiente"] not in _legenda.AMBIENTI_MAPPA:
+        errors.append(f"'ambiente': uno di {', '.join(_legenda.AMBIENTI_MAPPA)}.")
+    if "ambiente" in spec and "tipo" not in spec:
+        errors.append("'ambiente' senza 'tipo': dichiara anche il tipo.")
+
     # map_size
     size = spec.get("map_size")
     cols = rows = 0
@@ -334,6 +343,14 @@ def validate(spec: dict) -> tuple[int, int]:
         w = f"structures[{i}]"
         check_symbol(s.get("type"), w)
         check_placement(s, w, allow_line=True)
+        # la gemella di una scala (D12): solo su una tessera fra livelli in una cella
+        if "collega" in s:
+            voce = json.loads(_legenda.DERIVATO.read_text(encoding="utf-8"))["symbols"].get(s.get("type"), {})
+            fra = voce.get("function", {}).get("posa") == "fra_livelli"
+            if not fra or "at" not in s:
+                errors.append(f"{w}: 'collega' vale solo per una tessera fra livelli messa con 'at'.")
+            elif not isinstance(s["collega"], str) or len(s["collega"].strip()) < 3:
+                errors.append(f"{w}: 'collega' e' la gemella, «<file.md>[#N] <A1>» o «fuori mappa ; <motivo>».")
 
     for i, h in enumerate(spec.get("hazards", []) or []):
         w = f"hazards[{i}]"
@@ -515,6 +532,18 @@ def _annotation_lines(spec: dict) -> list[str]:
     lines: list[str] = []
     if spec.get("north"):
         lines.append(f"@north {spec['north']}")
+    if spec.get("tipo"):
+        lines.append(f"@tipo {spec['tipo']}" + (f" {spec['ambiente']}" if spec.get("ambiente") else ""))
+
+    # le gemelle delle tessere fra livelli (D12): il collaudo le segue
+    for obj in spec.get("structures", []) or []:
+        if obj.get("collega") and "at" in obj:
+            x, y = obj["at"]
+            lines.append(f"@collega {rms.col_label(x)}{y + 1:02d} ; {obj['collega'].strip()}")
+
+    # le creature non Medie, per il collaudo delle porte (ingombro/grande)
+    for tg in spec.get("taglie", []) or []:
+        lines.append(f"@taglia {_coord_label(*tg['at'])} ; {tg['taglia']}")
 
     # numbered roster (one @mark per unit)
     for i, u in enumerate(spec.get("units", []) or [], 1):
@@ -619,10 +648,13 @@ def emit_master(spec: dict, grid: list[list[str]]) -> str:
             where = _placement_coords(u)
             out.append(f"| {faction} | {name} | {u['token']} | {qty} | {cr} | {where} |")
         out.append("")
-    out.append("- **Disposizione iniziale**: [chi è dove e perché — vedi tabella Forze]")
-    out.append("- **Round 1-2**: [reazione al contatto]")
-    out.append("- **Round 3+**: [piano B, focus-fire, uso del terreno]")
-    out.append("- **Morale**: [soglia di ripiegamento/resa]")
+    if spec.get("tattiche"):
+        out.extend(f"- {riga}" for riga in spec["tattiche"])
+    else:
+        out.append("- **Disposizione iniziale**: [chi è dove e perché — vedi tabella Forze]")
+        out.append("- **Round 1-2**: [reazione al contatto]")
+        out.append("- **Round 3+**: [piano B, focus-fire, uso del terreno]")
+        out.append("- **Morale**: [soglia di ripiegamento/resa]")
     out.append("")
 
     out.append("### 🔄 EVOLUZIONE (come cambia la mappa — stati, non copione)")
@@ -630,11 +662,18 @@ def emit_master(spec: dict, grid: list[list[str]]) -> str:
     out.append("| Stato | Trigger | Cosa cambia sulla griglia | Effetto meccanico |")
     out.append("|---|---|---|---|")
     out.append("| A (iniziale) | — | com'è disegnata | — |")
-    for note in (spec.get("notes", []) or []):
-        out.append(f"| B | [trigger] | {note} | [effetto] |")
-    if not (spec.get("notes")):
-        out.append("| B | [evento/round/allarme] | [celle che cambiano] | [nuove CD/danni/EL] |")
+    if spec.get("evoluzione"):
+        for e in spec["evoluzione"]:
+            out.append(f"| {e['stato']} | {e['trigger']} | {e['griglia']} | {e['effetto']} |")
+    else:
+        for note in (spec.get("notes", []) or []):
+            out.append(f"| B | [trigger] | {note} | [effetto] |")
+        if not (spec.get("notes")):
+            out.append("| B | [evento/round/allarme] | [celle che cambiano] | [nuove CD/danni/EL] |")
     out.append("")
+    for par in spec.get("note_dm", []) or []:
+        out.extend(f"> {riga}" if riga else ">" for riga in par.split("\n"))
+        out.append("")
     out.append("> Gli stati sono **esiti aperti** (D13): il trigger è dei dadi e delle "
                "scelte dei PG, mai del copione.")
     out.append("")

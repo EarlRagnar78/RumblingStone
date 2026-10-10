@@ -87,7 +87,7 @@ Quando il Portatore si trova davanti all'Incudine del Mondo, Moradin si manifest
 > *"Un drago accumula oro e ci dorme sopra. Un re nano lo usa per forgiare un futuro. Mostrami cosa sei. Offri la ricchezza della terra alla sua stessa fonte, non come un pagamento, ma come un investimento nella sopravvivenza della tua stirpe. Consacra questo potere con un pezzo di te stesso – la tua vitalità, un legame con il tuo passato, o la promessa del tuo futuro. La corona è quasi completa. Manca solo il cuore. Il *tuo* cuore. Non ti sto chiedendo di perdere qualcosa. Ti sto chiedendo di **creare** qualcosa di eterno."*
 
 **Affresco:**
-L'affresco che si rivela è una visione cosmica: il Portatore inginocchiato davanti all'Incudine, ma lo sfondo non è una caverna. È un turbine di fiumi d'oro fuso, costellazioni di diamanti e nebulose di mithril, tutto viene risucchiato nella forgia divina, mostrando visivamente dove finirà l'offerta.
+L'affresco che si rivela è una visione cosmica: il Portatore inginocchiato davanti all'Incudine, ma lo sfondo non è una caverna. È un turbine di fiumi d'oro fuso, costellazioni di diamanti e nebulose di mithral, tutto viene risucchiato nella forgia divina, mostrando visivamente dove finirà l'offerta.
 
 **Il Rituale della Donazione (40.500 mo + Sacrificio Personale):**
 > *L'oro e i gioielli che offri non bruciano. Si smaterializzano in pura energia creativa, risucchiati dall'Incudine del Mondo. La corona sulla tua fronte diventa incandescente, e i poteri di tutte e tre le gemme scattano in posizione, come i meccanismi perfetti di una serratura divina. Ora non è più solo un oggetto che indossi. È una parte di te. E tu sei una parte di essa.*

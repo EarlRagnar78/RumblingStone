@@ -1,0 +1,16 @@
+corpus: 44 mappe · chiusure per simbolo: {'🚪': 125}
+asse (dmcore.chiusure): EO 60 · NS 36 · ambigue 2 · senza muro 27
+renderer di prima, sulle chiusure con un asse: {'di traverso': 36, 'giusto': 60}
+export_uvtt di prima, sulle porte con un asse: {'giusto': 83, 'di traverso': 13}
+mappe con almeno una chiusura nord-sud: 11
+    3  07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md #1
+    3  07_il Portale Della Forgia Eterna/Mappe/ARC07-MAPPE-DEFINITIVO.md #4
+   12  07_il Portale Della Forgia Eterna/Mappe/Portale-Forgia-L2-REVISED-UltraClear.md #1
+    3  07_il Portale Della Forgia Eterna/Mappe/Portale-Forgia-L2-REVISED-UltraClear.md #2
+    1  07_il Portale Della Forgia Eterna/Mappe/hammerfist-372-1372/M7-D-livello-1-1372.md #1
+    1  07_il Portale Della Forgia Eterna/Mappe/hammerfist-372-1372/M7-D-livello-1-372.md #1
+    2  07_il Portale Della Forgia Eterna/Mappe/hammerfist-372-1372/M7-F-fucina-grande-1372.md #1
+    2  07_il Portale Della Forgia Eterna/Mappe/hammerfist-372-1372/M7-F-fucina-grande-372.md #1
+    2  08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md #1
+    5  09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md #2
+    2  STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/mappe/tarsilia-stalle.md #1

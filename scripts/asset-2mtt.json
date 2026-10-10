@@ -1,0 +1,6 @@
+{
+ "descrizione": "Tabella simbolo → file per il tema dipinto delle mappe (R4 di PIANO-RESA-E-ASSET-DELLE-MAPPE). Si riempie sui nomi veri dei file, dopo `dm.py asset installa`; finché è vuota il tema dipinto non esiste. `python3 scripts/asset_2mtt.py controlla` la verifica contro i pacchetti installati e la licenza.",
+ "credito": "Map made with assets by https://2minutetabletop.com/",
+ "licenza": "CC BY-NC 4.0, solo i contenuti base a offerta libera; credito su ogni pagina in cui compare la mappa. I pacchetti premium non si usano in niente che esca dal repo",
+ "simboli": {}
+}

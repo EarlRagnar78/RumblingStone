@@ -18,7 +18,7 @@ NPC adaptation, faction notes, and regional encounter tables, see:
 | RHoD Original | Cannath Vale (exact map name) | Notes |
 |---|---|---|
 | Brindol | **Rethmar** | Main city; Lord Jarmaath |
-| Dennovar | **Cannathgate** | Eastern gateway |
+| Dennovar | **Channathgate** | Eastern gateway |
 | Rhest | **Lhesper** | Flooded ruin in Lhespenbog |
 | The Witchwood | **Shaarcah Forest** | Spell: "Shaarcah"; wild elves |
 | Wyrmsmoke Mountains | **The Wyrmbones** | Horde origin |

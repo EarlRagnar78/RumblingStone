@@ -1,6 +1,8 @@
 {
   "schema_version": "1.0",
   "title": "Tarsilia — versione giocatore",
+  "tipo": "tattica",
+  "ambiente": "abitato",
   "scale_m_per_square": 1.5,
   "map_size": [
     64,

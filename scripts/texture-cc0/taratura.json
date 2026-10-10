@@ -1,0 +1,65 @@
+{
+ "alone": 0.75,
+ "velatura_per_terreno": {
+  "⛰": 0.35,
+  "🔳": 0.4,
+  "🟨": 0.4
+ },
+ "texture_da_cambiare": [
+  "⛰⬛",
+  "⛰🔳",
+  "⛰🟤",
+  "⬛🔳"
+ ],
+ "misurato": {
+  "pergamena": {
+   "interni": {
+    "contrasto": 7.9,
+    "bordo": 0.3621,
+    "sotto_3": 5
+   },
+   "esterno": {
+    "contrasto": 6.9,
+    "bordo": 0.3322,
+    "sotto_3": 10
+   }
+  },
+  "texture": {
+   "interni": {
+    "contrasto": 7.78,
+    "bordo": 0.3653,
+    "sotto_3": 6
+   },
+   "esterno": {
+    "contrasto": 7.88,
+    "bordo": 0.3686,
+    "sotto_3": 6
+   }
+  },
+  "delta_e_vicino": {
+   "⛰": 1.48,
+   "⬛": 2.29,
+   "⬜": 8.5,
+   "🌿": 7.96,
+   "🏰": 12.39,
+   "🔳": 1.48,
+   "🟤": 4.11,
+   "🟨": 7.0,
+   "🟩": 7.0,
+   "🟫": 10.66
+  },
+  "bersaglio_delta_e": {
+   "⛰": 5.0,
+   "⬛": 12.23,
+   "⬜": 6.53,
+   "🌿": 5.0,
+   "🏰": 12.36,
+   "🔳": 7.63,
+   "🟤": 5.0,
+   "🟨": 6.53,
+   "🟩": 5.0,
+   "🟫": 7.04
+  }
+ },
+ "scritto_da": "misura_resa.py tara (D24 di RESA-ASSET)"
+}

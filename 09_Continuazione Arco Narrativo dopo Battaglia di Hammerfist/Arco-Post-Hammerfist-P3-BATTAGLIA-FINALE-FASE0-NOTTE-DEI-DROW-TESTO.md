@@ -117,7 +117,7 @@ Scelte principali:
    - Rischio: l’Artefatto resta un pericolo futuro.
 
 2. **Distruggere l’Artefatto** (se possibile)  
-   - Richiede magia potente (es. *Mordenkainen’s disjunction*, fuoco divino, o rituale di Hellas/arcidruidi).  
+   - Richiede magia potente (es. *Mordenkainen’s disjunction*, fuoco divino, o rituale di Hella/arcidruidi).  
    - Effetto: Azarr Kul/Tiamat avranno meno potenza nel rituale (–1 a RI/danni o niente “boost da artefatto”).
 
 3. **Lasciarlo come esca controllata**  

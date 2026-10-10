@@ -1,0 +1,30 @@
+# Ambiente di sviluppo COMPLETO — tutto ciò che il repo sa usare, oltre al
+# minimo della CI. Non serve né al DM la sera né alla CI: serve a chi sviluppa
+# e vuole che `dm.py doctor` non abbia righe «○» sul lato Python.
+#
+#   pip install -r requirements-completo.txt
+#
+# I binari di sistema non stanno qui. Li installa, col registro e il rollback,
+#   python scripts/ambiente.py installa [--con blender,comfyui,typst]
+# che installa anche questo file (GUIDA-SETUP-MACCHINA §5). Il resto della
+# dotazione è in `scripts/binari.py`, che è la fonte per `doctor`.
+#
+# Perché non stanno in requirements-dev.txt: la CI non li usa (ADR-0084) e
+# pesano. bpy sono 400 MB e vogliono Python 3.13 esatto; torch per CPU circa
+# 200 MB più i pesi che piq scarica al primo uso (~700 MB).
+
+-r requirements-dev.txt
+
+# Blender come modulo: le tessere degli oggetti del tema texture
+# (`build_oggetti_cc0.py`, R4-ter) e `test_blender_vero.py`. Solo Python 3.13:
+# altrove si usa il Blender di sistema con --blender.
+bpy>=5.2; python_version == "3.13"
+
+# Il secondo parere della misura della resa (`misura_resa_appresa.py`, D26 di
+# RESA-ASSET, ADR-0086). torch dall'indice CPU di PyTorch: senza, pip prende
+# da PyPI la build CUDA, che pesa dieci volte tanto e qui non serve. Le build
+# CPU hanno la versione locale «+cpu», che per PEP 440 viene prima della stessa
+# versione senza etichetta.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.5
+piq>=0.8

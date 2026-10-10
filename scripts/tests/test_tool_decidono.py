@@ -199,6 +199,39 @@ class TestCheckPlansDiscipline(BaseDecisione):
                             esegui("check_plans_discipline.py", "--repo-root", str(d),
                                    "--base", "HEAD~1", "--head", "HEAD"))
 
+    def _commit_come(self, d: Path, nome: str, email: str, msg: str) -> None:
+        env = {**os.environ, "GIT_AUTHOR_NAME": nome, "GIT_AUTHOR_EMAIL": email,
+               "GIT_COMMITTER_NAME": nome, "GIT_COMMITTER_EMAIL": email}
+        subprocess.run(["git", "add", "-A"], cwd=str(d), capture_output=True, check=True)
+        subprocess.run(["git", "commit", "-qm", msg], cwd=str(d), env=env,
+                       capture_output=True, check=True)
+
+    def test_dependabot_da_solo_passa_senza_riga(self):
+        """PI-3b: la PR di Dependabot e' la sua traccia; prima la #207 veniva bocciata."""
+        with cartella() as d:
+            self._repo_git(d)
+            (d / ".github" / "workflows").mkdir(parents=True)
+            (d / ".github" / "workflows" / "ci.yml").write_text("uses: a@v7\n", encoding="utf-8")
+            self._commit_come(d, "dependabot[bot]",
+                              "49699333+dependabot[bot]@users.noreply.github.com", "Bump a")
+            self.assertEsce("check_plans_discipline", 0,
+                            esegui("check_plans_discipline.py", "--repo-root", str(d),
+                                   "--base", "HEAD~1", "--head", "HEAD"))
+
+    def test_dependabot_piu_un_commit_umano_strutturale_vuole_la_riga(self):
+        """L'eccezione non copre una correzione a mano dentro la PR di Dependabot."""
+        with cartella() as d:
+            self._repo_git(d)
+            (d / ".github" / "workflows").mkdir(parents=True)
+            (d / ".github" / "workflows" / "ci.yml").write_text("uses: a@v7\n", encoding="utf-8")
+            self._commit_come(d, "dependabot[bot]",
+                              "49699333+dependabot[bot]@users.noreply.github.com", "Bump a")
+            (d / "scripts" / "nuovo.py").write_text("print(1)\n", encoding="utf-8")
+            self._commit_come(d, "t", "t@t", "adatto il codice")
+            self.assertEsce("check_plans_discipline", 1,
+                            esegui("check_plans_discipline.py", "--repo-root", str(d),
+                                   "--base", "HEAD~2", "--head", "HEAD"))
+
     def test_un_diff_impossibile_salta_il_gate_invece_di_dare_falso_rosso(self):
         """Dichiarato nel codice: meglio un gate saltato e detto che un rosso finto."""
         with cartella() as d:

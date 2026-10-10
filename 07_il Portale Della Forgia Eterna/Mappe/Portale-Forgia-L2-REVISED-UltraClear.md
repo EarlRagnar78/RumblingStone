@@ -86,6 +86,7 @@ RIGHE ↓    │  │  │  │  │  │  │  │  │  │  │  │  │  �
       │ └───┘ Porta Sud                Lava continua                         └───┘ Porta Sud Est
 
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+@tipo tattica caverna
 ```
 
 ### VISTA 2: SEZIONE LATERALE (Side View)
@@ -262,13 +263,22 @@ HEAT ZONES (Overlay):
 
 ### VISTA 1: GRID COMPLETA CIRCOLARE CON COORDINATE (33×33)
 
-> ⚠️ **Estratto** (verificato 2026-09-11). L'arena è **33×33**, e l'intestazione
-> è corretta: qui sono disegnate **18 righe su 33** più la 25.
+> ✅ **Completata il 2026-10-09** (prima era un estratto: 18 righe su 33 più la 25).
+> Le righe 19-33 sono lo **specchio** delle 15-01 attorno alla riga 17, come
+> diceva la nota «Pattern simmetrico»; a sud la porta non si ripete, perché il
+> canone ne nomina una sola. Le quattro passerelle delle POSIZIONI ora sono
+> disegnate: nord-sud sulle colonne P-Q (righe 09-23), est-ovest sulla riga 17.
+> **[PROPOSTA — needs DM confirmation]**: è una ricostruzione dalla geometria
+> dichiarata, non un disegno d'autore.
 >
-> 🐛 **Difetto aperto, non corretto qui**: c'è una **riga 17 duplicata** — una
-> alla riga 290 del sorgente e una alla 297. Quale delle due debba essere un
-> altro numero (19? 24?) lo sa solo chi ha disegnato l'arena, e indovinarlo
-> sposterebbe delle celle. Vedi D12.
+> 🔎 **D12 non era una riga duplicata.** Il secondo «17» aveva **3 celle**: era
+> la didascalia delle passerelle est e ovest, scritta con il numero davanti. Ora
+> è una didascalia senza numero, e la griglia ha una sola riga 17.
+>
+> ⚠️ **Restano due scarti fra disegno e POSIZIONI**, non toccati: la lava
+> disegnata va da F ad AA sulla riga 17 (le POSIZIONI dicono J-W) e copre le
+> righe 11-23 (le POSIZIONI dicono 11-24); la passerella nord-sud è disegnata
+> su P-Q, le POSIZIONI dicono «Col Q». Il tavolo gioca sul disegno.
 
 ```
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
@@ -294,36 +304,44 @@ RIGHE ↓    │  │  │  │  │  │  │  │  │  │  │  │  │  �
 --- PASSERELLA NORD (Righe 09-16) + LAVA POOL ---
 09    │ ⬛ ⬛ ⬛ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ ⬛ ⬛ ⬛
 10    │ ⬛ ⬛ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ ⬛ ⬛
-11    │ ⬛ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🔥 🔥 🔥 🔥 🔥 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ ⬛
+11    │ ⬛ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🔥 🔥 🟦 🟦 🔥 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ ⬛
       │                                  └──────────┘ Lava Pool Edge (Inner Circle 5m radius)
-12    │ ⬛ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ ⬛
-13    │ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛
-14    │ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛
-15    │ ⬛ 🟫 🟫 🟫 🟫 🟫 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛
+12    │ ⬛ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🔥 🔥 🔥 🔥 🔥 🟦 🟦 🔥 🔥 🔥 🔥 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ ⬛
+13    │ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟦 🟦 🔥 🔥 🔥 🔥 🔥 🔥 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛
+14    │ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟦 🟦 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛
+15    │ ⬛ 🟫 🟫 🟫 🟫 🟫 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟦 🟦 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛
 16    │ ⬛ 🟫 🟫 🟫 🟫 🟫 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟦 🟦 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟫 🟫 🟫 🟫 🟫 🟫 ⬛
       │                                              └──┘ ALTARE TOPAZIO (+5m levitating!)
 
 --- CENTRO (Righe 16-18) ALTARE + BOSS ---
-17    │ ⬛ 🟫 🟫 🟫 🟫 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟦 💎 💎 🟦 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟫 🟫 🟫 🟫 🟫 ⬛
+17    │ ⬛ 🟫 🟫 🟫 🟫 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 💎 💎 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟫 🟫 🟫 🟫 🟫 ⬛
       │                                           └────┘ TOPAZIO (P16-Q17, +7m total above floor!)
 18    │ ⬛ 🟫 🟫 🟫 🟫 🟦 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟦 🟦 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟦 🟫 🟫 🟫 🟫 🟫 ⬛
       │                   └──┘ PASSERELLA NORD (Q08-Q16, 2m wide, mithral, towards altare)
       │                                           🔴 ELDER FIRE ELEMENTAL (Col P, Riga 17 center!)
 
---- PASSERELLE EST/OVEST + SUD (Simmetrico, Righe 19-33) ---
-17    │         ←OVEST🟦🟦🟦🟦                  Centro                🟦🟦🟦🟦EST→
-      │         Col E (Riga 17) 2m wide                              Col Y (Riga 17) 2m wide
-      │         Passerella Ovest                                      Passerella Est
-      │         towards altare                                        towards altare
+--- METÀ SUD (Righe 19-33): specchio delle righe 15-01 attorno alla riga 17 [PROPOSTA — needs DM confirmation] ---
+19    │ ⬛ 🟫 🟫 🟫 🟫 🟫 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟦 🟦 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛
+20    │ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟦 🟦 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛
+21    │ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟦 🟦 🔥 🔥 🔥 🔥 🔥 🔥 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛
+22    │ ⬛ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🔥 🔥 🔥 🔥 🔥 🟦 🟦 🔥 🔥 🔥 🔥 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ ⬛
+23    │ ⬛ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🔥 🔥 🟦 🟦 🔥 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ ⬛
+24    │ ⬛ ⬛ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ ⬛ ⬛
+25    │ ⬛ ⬛ ⬛ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ ⬛ ⬛ ⬛
+      │                                        └──┘ PASSERELLA SUD: arriva al perimetro sud (riga 25)
+26    │ ⬛ ⬛ ⬛ ⬛ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ ⬛ ⬛ ⬛ ⬛
+27    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
+28    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
+29    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
+30    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
+31    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
+32    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
+33    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
+      │ Passerelle Est (Col Y → Q) e Ovest (Col E → Q) sulla riga 17, 2 m: vedi POSIZIONI
+      │ Perimeter Safe Zone: anello 🟫 fino alla riga 30, mura ⬛ righe 31-33
 
-25    │ ⬛ 🟫 🟫 🟫 🟫 🟫 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟦 🟦 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🔥 🟫 🟫 🟫 🟫 🟫 ⬛
-      │                                           └──┘ PASSERELLA SUD (Q18-Q25, 2m wide mithral)
-      │                                                  towards altare from sud perimeter
-
-30-33 │ [Pattern simmetrico righe 01-03 mirror Sud]
-      │ Perimeter Safe Zone 5m wide (Righe 28-33)
-      
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+@tipo tattica interni
 ```
 
 ### VISTA 2: SEZIONE VERTICALE (Side View)

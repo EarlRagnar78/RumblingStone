@@ -89,6 +89,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @zone U24-V25 ; Tenda 2 (2 hobgoblin dormienti)
 @zone W27-X28 ; Tenda 3 (2 hobgoblin dormienti)
 @zone V25-X26 ; Fuoco del campo hobgoblin
+@tipo tattica esterno
 ```
 
 ### VISTA 2: PROSPETTIVA 3D (Guardando da Sud verso Nord)
@@ -464,6 +465,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T
 @zone H72-J74 ; Roccia 5 (H72-J74): copertura totale +8 CA
 @zone N82-P84 ; Roccia 6 (N82-P84): copertura parziale +4 CA
 @zone G92-I94 ; Roccia 7 (G92-I94): copertura totale +8 CA
+@tipo tattica esterno
 ```
 
 ### 📍 POSIZIONI PRECISE CON COORDINATE:
@@ -611,6 +613,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @mark 13 ; U43 ; War Adepts (Incantatori)
 @mark 14 ; U48 ; Fauci di Palude + Cavaliere Hobgoblin (Drago Nero Adulto Avanzato)
 @path Pattuglia perimetrale worg (loop) ; D9 AK9 AK47 D47 loop ; #d62828
+@tipo tattica esterno
 ```
 
 ### 📍 COMPOSIZIONE ESERCITO (900 unità, per fascia di distanza dal fossato):

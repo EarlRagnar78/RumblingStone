@@ -27,14 +27,17 @@
 
 **Dimensioni:** 80m × 60m (53×40 griglia 1.5m/quadrato)
 
-> ⚠️ **Estratto, non griglia intera** (verificato 2026-09-11). L'area dichiarata è
-> **corretta** — 80 ÷ 1,5 = 53 colonne, 60 ÷ 1,5 = 40 righe — ma qui sono disegnate
-> **9 righe su 40**, larghe ~33 celle su 53.
+> ✅ **Griglia completa dal 2026-10-09**, 53 × 40. Prima qui c'era uno schizzo
+> di 9 righe larghe 33 celle; ora c'è la mappa 1 di
+> `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md`, che descrive lo stesso campo
+> (esagono C07, stesse 30 unità) in 25 righe su 40, **completata**. Le posizioni
+> di comandanti, pyromancer e pattuglie sono quelle del SUPPLEMENTO, con le sue
+> didascalie. **Si modifica là**, e si ricopia qui.
 >
-> 🔴 **L'intestazione non va rimpicciolita per farla combaciare**: ridurla a quel
-> che è disegnato restringerebbe il campo di battaglia da 80×60 m a circa 50×14 m.
-> Completare la griglia è **progettazione**, non correzione: cosa c'è nelle righe
-> mancanti è una scelta di gioco.
+> **[PROPOSTA — needs DM confirmation]** sulle 15 righe ricostruite (07, 09, 11,
+> 13, 14, 16, 17, 19, 23, 28, 31, 32, 34, 36, 37): ognuna ripete la riga disegnata
+> sopra, senza figure, fuoco e casse. Le righe disegnate più corte di 53 celle
+> sono state allungate con radura 🟩 prima della foresta est.
 **Forze:** 30 Drow (20 guerrieri, 8 pyromancer, 2 commanders)
 
 ```
@@ -42,24 +45,50 @@
 CAMPO DROW 1 - BURNING OPERATIONS (80m × 60m = 53×40 grid, 1.5m/square)
 ═══════════════════════════════════════════════════════════════════════════════════
 
-COLONNE →  A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R  S  T  U  V  W  X  Y  Z AA AB AC AD AE AF AG AH [...]
+COLONNE →  A … AA … BA (53 colonne)
 
-01  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲 ← Perimetro foresta
-05  🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲 ← Clearing edge
-10  🌲🌲🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🟩🌲🌲 ← Tende drow
-                        └──────────────────────┘ 15 Tende (Col I-X, Riga 10-20)
-                        
-15  🌲🌲🟩🟩🔴🔴🟩⬛⬛🔴⬛⬛🔴⬛⬛⬛⬛🔴⬛⬛🔴⬛⬛🔴⬛🟩🟩🟩🟩🟩🌲🌲
-        └──┘ Pattuglia 1    └─┘ Guerr.   └─┘ Pyro 1  └─┘ Guerr.  └─┘ Pyro 2  └─┘ Cmdr
+01  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
+02  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
+03  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
+04  🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲🌲
+05  🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲
+06  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲
+07  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲
+08  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+09  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+10  🌲🌲🟩🟩🟩🟩🟩🟩⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+11  🌲🌲🟩🟩🟩🟩🟩🟩⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+12  🌲🌲🟩🟩🟩🟩🟩🟫⛺⛺⛺🔴⛺⛺⛺🟡⛺⛺⛺🔴⛺⛺⛺🟡⛺⛺⛺🔴⛺⛺⛺🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+13  🌲🌲🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫⛺⛺⛺🟫🟫🟫🟫🟫🟫🟫🟫⛺⛺⛺🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+14  🌲🌲🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫⛺⛺⛺🟫🟫🟫🟫🟫🟫🟫🟫⛺⛺⛺🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+15  🌲🌲🟩🟩🟩🟩🟩🟫🟫🔴🟫🟫🔴⛺⛺⛺🟫🔴🟫🟫🔴🟫🟫🔴⛺⛺⛺🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+16  🌲🌲🟩🟩🟩🟩🟩🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+17  🌲🌲🟩🟩🟩🟩🟩🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+18  🌲🌲🟩🟩🟩🟩🟩🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+19  🌲🌲🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+20  🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🔥🔥🔥🔥🔥🔥🔥🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+21  🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🔥🔥🔥🔥🔥🔥🔥🔥🔥🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+22  🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🔥🔥🔥🔥🔥🔥🔥🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+23  🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+24  🌲🟩🟩🟩🟩🟩🟩⛺⛺⛺⛺⛺🟫🟫⛺⛺⛺⛺⛺⛺🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+25  🌲🟩🟩🟩🟩🟩🟩⛺🟫⚫🟫🟫🟫🟫🟫🏺🏺🏺🟫⛺🟫🟡🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+26  🌲🟩🟩🟩🟩🟩🟩⛺🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫⛺🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+27  🌲🟩🟩🟩🟩🟩🟩⛺⛺⚫⛺⛺⛺⛺⛺⛺⛺⛺⛺⛺🟫🟡🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+28  🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+29  🌲🟩🟩🟩🟩🟩🟩⛺⛺⛺⛺⛺🟫🟫⛺⛺⛺⛺⛺⛺🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+30  🌲🟩🟩🟩🟩🟩🟩⛺🟫🔴🟫🟫🟡🟫🟫🏺🏺🏺🟫⛺🟫🔴🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+31  🌲🟩🟩🟩🟩🟩🟩⛺⛺⛺⛺⛺⛺⛺⛺⛺⛺⛺⛺⛺🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+32  🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+33  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+34  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+35  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+36  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+37  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+38  🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+39  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
+40  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
 
-20  🌲🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛🔥🔥🔥🔥🔥⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🟩🟩🟩🌲
-                            └────────┘ FUOCO CENTRALE (Incinerator, 9m diameter)
-                            Usato per bruciare equipaggiamento catturato
-
-25  🌲🟩🟩🟩🟩🟩🟩⬛⬛🔴⬛⬛⬛⬛⬛🔴⬛⬛⬛⬛🔴⬛⬛🟩🟩🟩🟩🟩🟩🟩🌲
-30  🌲🌲🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🟩🟩🌲🌲
-35  🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲
-40  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
+Griglia completa, copia della mappa 1 del SUPPLEMENTO-P1C: le didascalie stanno là.
 
 SCALA: 1 quadrato = 1.5m × 1.5m
 TOTALE: 53 colonne × 40 righe = 80m × 60m campo
@@ -74,6 +103,7 @@ EQUIPAGGIAMENTO:
 - 1 Incinerator centrale (fuoco 24/7)
 - Stockpile armi/armor (loot se raid!)
 - Cibo 30 giorni (80 razioni)
+@tipo tattica esterno
 ```
 
 ### CAMPO DROW 2 (Hex D08) - Main Forward Base
@@ -136,28 +166,28 @@ SPECIALITÀ:
 
 **After Long Rest:**
 - PG recovery completo (HP, spells, abilities)
-- **Hellas Preparation:** Deve studiare rune menhir (1 ora, Knowledge Nature DC 18)
+- **Hella Preparation:** Deve studiare rune menhir (1 ora, Knowledge Nature DC 18)
   - Successo: Capisce rituale sequenza (+2 bonus ritual checks)
   - Fallimento: Rituale normale (no bonus)
 
 **Collana Semi Treant Preparation:**
-> Hellas, mentre studi le rune, i semi della tua collana iniziano a **brillare luce verde**. Senti loro "parlare" telepaticamente: "Madre... oggi... nasciamo! Protezione... daremo!"
-> - **Opzione:** Hellas può PIANTARE i 4 semi attorno altare (Col N-P-Q range)
+> Hella, mentre studi le rune, i semi della tua collana iniziano a **brillare luce verde**. Senti loro "parlare" telepaticamente: "Madre... oggi... nasciamo! Protezione... daremo!"
+> - **Opzione:** Hella può PIANTARE i 4 semi attorno altare (Col N-P-Q range)
 > - Tempo: 10 minuti piantare tutti
-> - **Effetto:** Durante rituale, semi crescono rapidamente in **4 Treant Seedlings** (Medium) che proteggono Hellas!
+> - **Effetto:** Durante rituale, semi crescono rapidamente in **4 Treant Seedlings** (Medium) che proteggono Hella!
 
 **Treant Seedling** (se piantati)
 - **HP:** 40 ciascuno, **AC:** 18
 - **Melee:** Slam +10 (1d8+6)
 - **Special:** Entangle 15ft radius (Ref DC 15)
 - **Durata:** Tutto rituale (poi tornano semi)
-- **Tactics:** Formano perimetro difensivo attorno Hellas (Col N-Q, Riga 18-22)
+- **Tactics:** Formano perimetro difensivo attorno Hella (Col N-Q, Riga 18-22)
 
 ---
 
 ### FASE 1 RITUALE: PURIFICAZIONE (15 minuti in-game, ore 08:00-08:15)
 
-**Hellas Posizione:** Centro Altare Col O, Riga 20
+**Hella Posizione:** Centro Altare Col O, Riga 20
 
 **Mechaniche:**
 1. **Round 1-5 (primi 5 minuti):** Wisdom (Nature) DC 20
@@ -173,7 +203,7 @@ SPECIALITÀ:
    - Fallimento: No aura bonus
 
 **Interruzioni:**
-- Ogni danno su Hellas: Concentration DC 18 (10 + damage) o fase ritardata 1 round
+- Ogni danno su Hella: Concentration DC 18 (10 + damage) o fase ritardata 1 round
 - Se Phase 1 fallisce completamente (tutti 3 checks failed): Rituale restart from zero!
 
 ---
@@ -198,17 +228,17 @@ SPECIALITÀ:
 ONDATA 1 ARRIVAL (Round 8 Fase 1)
 
 NEMICI arrivano da:
-🔴 Hell Hound 1: Col O, Riga 35 (sud, sprint verso Hellas)
+🔴 Hell Hound 1: Col O, Riga 35 (sud, sprint verso Hella)
 🔴 Hell Hound 2: Col T, Riga 35
 🔴 Guerr. 1-2: Col M-N, Riga 33 (flanking ovest)
 🔴 Guerr. 3-4: Col Q-R, Riga 33 (flanking est)
 🔴 Guerr. 5-6: Col O-P, Riga 32 (center push)
 
 PG DIFENSORI:
-🔵 Borin: Col O, Riga 22 (frontline, 6m da Hellas)
+🔵 Borin: Col O, Riga 22 (frontline, 6m da Hella)
 🔵 PG2: Col L, Riga 20 (flank west)
 🔵 PG3: Col S, Riga 20 (flank east)
-🔵 Hellas: Col O, Riga 20 (CENTRO, casting, vulnerabile!)
+🔵 Hella: Col O, Riga 20 (CENTRO, casting, vulnerabile!)
 
 SE Seedlings piantati:
 🌱 Seedling 1: Col N, Riga 19 (difende ovest)
@@ -218,12 +248,12 @@ SE Seedlings piantati:
 ```
 
 **Tattiche Drow Ondata 1:**
-- **Hell Hounds:** Sprint diretta Hellas (40ft move = 8 quadrati, arrivano Round 9!)
-  - Breath weapon su Hellas Round 10
+- **Hell Hounds:** Sprint diretta Hella (40ft move = 8 quadrati, arrivano Round 9!)
+  - Breath weapon su Hella Round 10
 - **Guerrieri:** Divide PG difensori, flanking
   - 2 engage Borin (frontline)
-  - 2 try bypass verso Hellas (Athletics per jump over seedlings)
-  - 2 ranged crossbow su Hellas (attacchi disturbano Concentration!)
+  - 2 try bypass verso Hella (Athletics per jump over seedlings)
+  - 2 ranged crossbow su Hella (attacchi disturbano Concentration!)
 
 **Aegis Fang Bonus (Borin):**
 - **Cleaving Finish:** Se Borin uccide Hell Hound, attacco gratis vs secondo!
@@ -236,7 +266,7 @@ SE Seedlings piantati:
 
 ### FASE 2 RITUALE: EVOCAZIONE ELEMENTALE (15 min, ore 08:15-08:30)
 
-**Hellas Actions:**
+**Hella Actions:**
 1. **Round 16-20:** Intonare **Canto della Natura** - Perform (sing) DC 18
    - Successo: Spiriti natura appaiono (wisp lights, aiutano PG +1 luck bonus ATK)
    - Fallimento: Silenzio inquietante, -1 morale PG
@@ -246,14 +276,14 @@ SE Seedlings piantati:
    - Fallimento: 1 solo elemental, HP dimezzato
 
 3. **Round 26-30:** Channeling potere elementale - Fort DC 22 (resistere energia)
-   - Successo: Hellas inizia brillare aura verde
+   - Successo: Hella inizia brillare aura verde
    - Fallimento: 3d6 danni, aura debole
 
 **Earth Elemental Guardians** (se evocati successo)
 - **HP:** 68 ciascuno, **AC:** 20
 - **Slam:** +10 (1d8+7)
 - **Earth Glide:** Burrow 20ft, può emergere attaccare
-- **Tactics:** Intercettano nemici che avvicinano Hellas
+- **Tactics:** Intercettano nemici che avvicinano Hella
 
 ---
 
@@ -290,12 +320,12 @@ SE Seedlings piantati:
 
 **Tactics:**
 - **Pre-Combat:** Invisibility + Move silenziosamente Col X, Riga 20 (nascosto albero)
-- **Round 1:** Study Hellas (Death Attack prep, 3 rounds needed)
+- **Round 1:** Study Hella (Death Attack prep, 3 rounds needed)
 - **Round 2-3:** Continue study mentre combattimento distrae PG
-- **Round 4:** **DEATH ATTACK vs Hellas!**
+- **Round 4:** **DEATH ATTACK vs Hella!**
   - Sneak attack +5d6
   - Fort DC 20 or **PARALYZED** (rituale interrotto!)
-  - If Hellas paralyzed, assassino tenta coup de grace Round 5!
+  - If Hella paralyzed, assassino tenta coup de grace Round 5!
 
 **Counterplay:**
 - **Ring Chaotic Illumination:** *Faerie Fire* at-will svela invisibile!
@@ -332,14 +362,14 @@ SE Seedlings piantati:
 **Tactics:**
 - **Pre-Combat:** Cast *Shield of Faith*, *Divine Favor*, *Bull's Strength* (buffed già)
 - **Round 1:** *Prayer* (30ft radius: allies +1 luck, enemies -1)
-- **Round 2:** *Flame Strike* centered on Hellas (8d6, Ref DC 18 half)
-  - Hellas must Concentration DC 24 (10 + 8d6 half average = 14) or rituale interrupted!
-- **Round 3+:** *Spiritual Weapon* (floating morningstar) harass Hellas
+- **Round 2:** *Flame Strike* centered on Hella (8d6, Ref DC 18 half)
+  - Hella must Concentration DC 24 (10 + 8d6 half average = 14) or rituale interrupted!
+- **Round 3+:** *Spiritual Weapon* (floating morningstar) harass Hella
 - **Healing:** *Cure Serious Wounds* 3d8+8 su alleati injured
 
 **Positioning:**
 - Start: Col K, Riga 25 (Cleric 1) + Col U, Riga 25 (Cleric 2)
-- Range: 120ft *Flame Strike* easily reach Hellas centro
+- Range: 120ft *Flame Strike* easily reach Hella centro
 
 ---
 
@@ -376,7 +406,7 @@ ONDATA 2 POSITIONS (Round 22 Fase 2)
 
 18 🌲🟩🟩🟩🟩🟩🟩🟩💥🟢🟢🟢🌱🟢⭐🟢🌱🟢🟢💥🟩🟩🟩🟩🟩🌲
                               └─┘      └─┘     └─┘      └─┘
-                           Seedl.1   Hellas  Seedl.2  (Seedl.3-4 sud)
+                           Seedl.1   Hella  Seedl.2  (Seedl.3-4 sud)
 
 20 🌲🟩🔵🟩🟩🟩🟩🟩💥🟢🟢🟢🟢🟢🔵🟢🟢🟢🟢💥🟩🟩🟩🟩🔵🌲
       └─┘ PG2 (C20)                      └─┘ Borin (O22, moved up)      └─┘ PG3 (U20)
@@ -395,11 +425,12 @@ ONDATA 2 POSITIONS (Round 22 Fase 2)
          SUD ↓
 
 DISTANZE:
-- Hellas (O20) → Hell Hounds (O35): 22.5m (15 quadrati) - 2 rounds arrival
-- Clerics (L-R, 27) → Hellas: 10.5m (7 quadrati) - FLAME STRIKE RANGE!
-- Assassin (O35) → Hellas: 22.5m (15 quadrati) - 3 rounds sneak if undetected
+- Hella (O20) → Hell Hounds (O35): 22.5m (15 quadrati) - 2 rounds arrival
+- Clerics (L-R, 27) → Hella: 10.5m (7 quadrati) - FLAME STRIKE RANGE!
+- Assassin (O35) → Hella: 22.5m (15 quadrati) - 3 rounds sneak if undetected
 
 SCALA: Ogni quadrato = 1.5m × 1.5m
+@tipo tattica esterno
 ```
 
 **Tactics Round-by-Round:**
@@ -411,15 +442,15 @@ SCALA: Ogni quadrato = 1.5m × 1.5m
 - **Assassin:** Move 40ft + Stealth +28 → Riga 31 (invisibile)
 
 **Round 23:**
-- **Cleric 1:** *Flame Strike* on Hellas! (8d6, Ref DC 18)
-  - Hellas MUST Concentration DC 24 or ritual phase FAILS!
-- **Cleric 2:** *Spiritual Weapon* (floating morningstar harass Hellas ogni round +10, 1d8+2)
+- **Cleric 1:** *Flame Strike* on Hella! (8d6, Ref DC 18)
+  - Hella MUST Concentration DC 24 or ritual phase FAILS!
+- **Cleric 2:** *Spiritual Weapon* (floating morningstar harass Hella ogni round +10, 1d8+2)
 - **Veterans:** Engage PG defenders (full attack)
-- **Hell Hounds:** Breath weapon 30ft cone (include Hellas + Seedlings!)
+- **Hell Hounds:** Breath weapon 30ft cone (include Hella + Seedlings!)
 - **Assassin:** Move → Riga 25, continue sneak
 
 **Round 24:**
-- **Assassin:** Arrive behind Hellas (Riga 21), study begin (Death Attack prep)
+- **Assassin:** Arrive behind Hella (Riga 21), study begin (Death Attack prep)
 - **Clerics:** *Dispel Magic* vs barriera verde (CL check +8 vs DC 20)
 - **Veterans + Hounds:** Melee pressure
 
@@ -431,7 +462,7 @@ SCALA: Ogni quadrato = 1.5m × 1.5m
 - **Assassin:** Round 3 study - NEXT ROUND DEATH ATTACK!
 
 **Round 27 - CRITICAL:**
-- **ASSASSIN DEATH ATTACK vs Hellas!**
+- **ASSASSIN DEATH ATTACK vs Hella!**
   - Sneak attack +13 (1d6+4 + 5d6 sneak + poison)
   - Fort DC 20 or **PARALYZED + rituale FALLISCE!**
   
@@ -445,7 +476,7 @@ SCALA: Ogni quadrato = 1.5m × 1.5m
 
 ### FASE 3 RITUALE: FUSIONE ELEMENTALE (15 min, ore 08:30-08:45)
 
-**Hellas Actions:**
+**Hella Actions:**
 1. **Round 31-35:** Entrare trance profonda - Fort DC 20 ogni 2 rounds
    - Inizia trasformazione fisica: pelle → corteccia, occhi → verde luminoso
    - **VULNERABILE:** AC -4 (AC effettiva diventa 10+Dex+natural solo!)
@@ -501,9 +532,9 @@ SCALA: Ogni quadrato = 1.5m × 1.5m
 - Potion *Cure Serious Wounds* ×3
 
 **Tactics:**
-- **Objective:** KILL Hellas or force rituale failure
+- **Objective:** KILL Hella or force rituale failure
 - **Round 1:** Charge diretta (60ft double move, arriva Col O Riga 28)
-- **Round 2:** Full attack vs Hellas or Borin (whoever blocks)
+- **Round 2:** Full attack vs Hella or Borin (whoever blocks)
 - **Round 3+:** Power Attack -5/+5, Cleave chains se uccide seedling/PG
 - **If losing:** Usa potion, retreat per regroup
 
@@ -519,8 +550,8 @@ SCALA: Ogni quadrato = 1.5m × 1.5m
 
 **Tactics:**
 - Summonato Round 36 da Wyrmlord (scroll uso)
-- Appare Col O, Riga 30 (between Wyrmlord and Hellas)
-- Objective: Burn path to Hellas (ignora altri PG)
+- Appare Col O, Riga 30 (between Wyrmlord and Hella)
+- Objective: Burn path to Hella (ignora altri PG)
 
 ---
 
@@ -541,7 +572,7 @@ SCALA: Ogni quadrato = 1.5m × 1.5m
 **Tactics:**
 - Used as **BATTERING RAMS**
 - Target: Smash seedlings (full Power Attack -5/+5)
-- Objective: Clear path for Wyrmlord reach Hellas
+- Objective: Clear path for Wyrmlord reach Hella
 
 ---
 
@@ -560,15 +591,15 @@ NEMICI Sud Ingresso:
 PG DEFENDERS (Exhausted, some wounded):
 🔵 Borin: Col O, Riga 24 (Frontline solo! Holding line!)
 🔵 PG2-3: Cols M + R, Riga 25 (Flanks, wounded likely)
-🔵 Hellas: Col O, Riga 20 (TRANCE, defenseless AC 10!)
+🔵 Hella: Col O, Riga 20 (TRANCE, defenseless AC 10!)
 
 🌱 Seedlings (if alive): Cols N-P, Righe 19-21 (some destroyed likely)
 🟢 Earth Elementals (if summoned): Cols L + S, Riga 23 (intercept)
 
 DISTANZE CRITICAL:
-- Wyrmlord (O38) → Hellas (O20): 27m (18 quadrati) - 3 rounds charge
+- Wyrmlord (O38) → Hella (O20): 27m (18 quadrati) - 3 rounds charge
 - Ogres (L-S, 36) → Seedlings (N-P, 20): 24m (16 quadrati) - 2 rounds
-- Fire Elem (O34) → Hellas (O20): 21m (14 quadrati) - 2 rounds
+- Fire Elem (O34) → Hella (O20): 21m (14 quadrati) - 2 rounds
 
 SCALA: 1 quadrato = 1.5m × 1.5m
 ```
@@ -591,9 +622,9 @@ SCALA: 1 quadrato = 1.5m × 1.5m
 - **Visual:** Aegis Fang lascia scia blu energia, Borin = muro invalicabile
 
 **Se Borin usa vs Wyrmlord Round 37:**
-- Wyrmlord fermato Col O, Riga 26 (prima raggiungere Hellas!)
+- Wyrmlord fermato Col O, Riga 26 (prima raggiungere Hella!)
 - Borin colpo AoO: +25 hit, 1d10+15 + 2d6 dragon bane (Wyrmlord serve draghi!)
-- Wyrmlord forced melee duello con Borin (Hellas safe!)
+- Wyrmlord forced melee duello con Borin (Hella safe!)
 
 ---
 
@@ -603,7 +634,7 @@ SCALA: 1 quadrato = 1.5m × 1.5m
 
 **ABILITY UNLOCK: Royal Sanctuary (1/day):**
 - **Standard Action**, caster choice
-- Crea **Santuario Dorato** 9m radius attorno target (Hellas scelta ovvia)
+- Crea **Santuario Dorato** 9m radius attorno target (Hella scelta ovvia)
 - Effetto:
   - Tutti nemici entrare radius: Will DC 22 or **non possono attaccare** target protected
   - Se succedono save: -4 penalty attacchi comunque
@@ -611,7 +642,7 @@ SCALA: 1 quadrato = 1.5m × 1.5m
 - **Visual:** Cupola dorata trasparente, rune regali orbitano
 
 **Se usato Round 36-37:**
-- Protect Hellas durante Fase 3 vulnerabile!
+- Protect Hella durante Fase 3 vulnerabile!
 - Wyrmlord + Ogres + Fire Elem MUST save entrare
 - Se falliscono: Devono attaccare PG difensori invece
 
@@ -632,14 +663,14 @@ SCALA: 1 quadrato = 1.5m × 1.5m
 - **Visual:** Muro luce arcobaleno distorta, realtà sembra "glitch"
 
 **Posizionamento Tattico:**
-- Mettere wall Col O, Righe 28-34 (between nemici e Hellas)
+- Mettere wall Col O, Righe 28-34 (between nemici e Hella)
 - Force drow/ogres aggirare (perde 2-3 rounds movement!)
 
 ---
 
 **Collana Semi Treant Ultimate:**
 
-> I Treant Seedlings, se ancora vivi, iniziano **CRESCERE RAPIDAMENTE**. In 1 round diventano altezza adulta! Le radici esplodono terra, formando **MURO VIVENTE** attorno Hellas!
+> I Treant Seedlings, se ancora vivi, iniziano **CRESCERE RAPIDAMENTE**. In 1 round diventano altezza adulta! Le radici esplodono terra, formando **MURO VIVENTE** attorno Hella!
 
 **ABILITY UNLOCK: Guardian Wall (Automatico Round 41):**
 - 4 Seedlings diventano **Young Treants** (1 round growth)
@@ -647,12 +678,12 @@ SCALA: 1 quadrato = 1.5m × 1.5m
   - Size: Medium → Large (3×3 quadrati ciascuno!)
   - AC: aumenta a 22
   - Slam: aumenta a +14 (2d6+8)
-- Formano **Perfect Square** attorno Hellas:
+- Formano **Perfect Square** attorno Hella:
   - Treant 1: Col N-O, Riga 18-19 (Nord-Ovest)
   - Treant 2: Col P-Q, Riga 18-19 (Nord-Est)
   - Treant 3: Col N-O, Riga 21-22 (Sud-Ovest)
   - Treant 4: Col P-Q, Riga 21-22 (Sud-Est)
-- **Total Protection:** Nemici MUST destroy tutti 4 prima reach Hellas!
+- **Total Protection:** Nemici MUST destroy tutti 4 prima reach Hella!
 
 **Visual:**
 > In un'esplosione di crescita impossibile, i piccoli alberelli ESPLODONO in altezza. Bark ispessisce, rami estendono, radici scavano profonde. In secondi, quattro Treant giovani formano muro vivente attorno alla druida in trance!
@@ -661,21 +692,21 @@ SCALA: 1 quadrato = 1.5m × 1.5m
 
 ## COMPLETAMENTO RITUALE (Round 45 - ore 08:45 Day 21)
 
-**Se Hellas sopravvive tutte 3 fasi:**
+**Se Hella sopravvive tutte 3 fasi:**
 
 **Read-Aloud:**
 
-> Un TUONO silenzioso scuote l'aria. Hellas, al centro del cerchio, si alza lentamente. Ma non è più la druida che conoscevate.
+> Un TUONO silenzioso scuote l'aria. Hella, al centro del cerchio, si alza lentamente. Ma non è più la druida che conoscevate.
 
 > Ora sta alta 3 metri. Il suo corpo è un intricato mosaico di natura vivente: corteccia di quercia argentea forma la sua "pelle", muscoli di radici intrecciate, sangue di linfa verde smeraldo che pulsa visibile attraverso venature. I suoi capelli sono cascate di edera viva, fiori selvatici e muschio luminescente. Gli occhi sono pozze di luce verde foresta primordiale - senza pupille, ma vedono TUTTO.
 
 > Quando respira, sentite il vento. Quando muove, la terra risponde. È lei... ma OLTRE lei. È la Foresta stessa incarnata.
 
-> Lei apre bocca, e la voce è eco di mille foreste: "Sono... Hellas. Sono... la Terra. Siamo... Uno."
+> Lei apre bocca, e la voce è eco di mille foreste: "Sono... Hella. Sono... la Terra. Siamo... Uno."
 
 **TRASFORMAZIONE ELEMENTALE NATURA (7 giorni durata):**
 
-**Statistiche Nuove Hellas:**
+**Statistiche Nuove Hella:**
 
 **Size:** Large (3m × 3m = 2×2 quadrati)  
 **Type:** Cambio a Elemental (mantiene mente druida)
@@ -729,7 +760,7 @@ SCALA: 1 quadrato = 1.5m × 1.5m
 
 5. **Radicazione (Su):**
    - Swift action, self only
-   - Hellas estende radici nel terreno
+   - Hella estende radici nel terreno
    - Ottiene:
      - +8 CMD vs bull rush, trip, grapple
      - Immune forced movement
@@ -782,7 +813,7 @@ DESPERATE LAST STAND (Round 36-40)
 18 🌲🟩🟩🟩🟩🟩💥💥🟢🟢🟢🟢🌳🟢🟢🟢🟢🌳🟢🟢💥🟩🟩🟩🟩🌲
                           └─┘         └─┘ Young Treants (LARGE!)
 19 🌲🟩🟩🔵🟩💥🟢🟢🟢🟢🌳🌳✨💎✨🌳🌳🟢🟢🟢💥🟩🔵🟩🟩🌲
-      └─┘ PG2            └────┘ └─┘ └────┘ Treant Wall + Hellas TRANCE!
+      └─┘ PG2            └────┘ └─┘ └────┘ Treant Wall + Hella TRANCE!
 20 🌲🟩🟩🟩🟩💥🟢🟢🟢🟢🟢🟢✨💎✨🟢🟢🟢🟢🟢💥🟩🟩🟩🟩🌲
                                 └──┘ Glowing transformation (crescita vertical energia)
 21 🌲🟩🟩🟩🟩💥🟢🟢🟢🟢🌳🌳✨💎✨🌳🌳🟢🟢🟢💥🟩🟩🟩🟩🌲
@@ -814,6 +845,7 @@ DESPERATE LAST STAND (Round 36-40)
 
 SCALA GRID: 1 quadrato = 1,5 m × 1,5 m
 DIMENSIONI TOTALI MAPPA: 26 colonne (A-Z) × 29 righe (10-38) = 39 m × 43,5 m
+@tipo tattica esterno
 ```
 
 > ⚠️ **Griglia ridisegnata il 2026-09-04** (ADR-0043 §4). L'intestazione
@@ -841,14 +873,14 @@ DIMENSIONI TOTALI MAPPA: 26 colonne (A-Z) × 29 righe (10-38) = 39 m × 43,5 m
 - **Drow Warriors:** Advance spread → Righe 30-32
 
 **ROUND 37 - CRITICAL:**
-- **Wyrmlord:** CHARGE Hellas! (60ft, arriva Col O, Riga 26 se non intercettato!)
+- **Wyrmlord:** CHARGE Hella! (60ft, arriva Col O, Riga 26 se non intercettato!)
   - **Aegis Fang Intercept:** Borin può bloccare (vedi sopra)
-  - Se non bloccato: Full attack vs Hellas AC 10! (+20/+15/+10, quasi auto-hit!)
+  - Se non bloccato: Full attack vs Hella AC 10! (+20/+15/+10, quasi auto-hit!)
 - **Ogres:** Full Attack vs Treants NW/NE
   - Power Attack -5/+5: +13 (2d8+18) each swing
   - Focus: destroy 1 treant/round (80 HP ciascuno = 2 hits likely)
 - **Fire Elem:** Engage Borin o PG frontline
-- **Drow:** Archery volley vs Hellas (10 attacks +8, 1d6+2 each)
+- **Drow:** Archery volley vs Hella (10 attacks +8, 1d6+2 each)
 
 **ROUND 38-40:**
 - **Combattimento Desperate**
@@ -856,10 +888,10 @@ DIMENSIONI TOTALI MAPPA: 26 colonne (A-Z) × 29 righe (10-38) = 39 m × 43,5 m
   - Hold Wyrmlord (Borin duello)
   - Slow Ogres (uccidere o kite)
   - Suppress drow archers (AOE spells)
-- **Hellas:** Round 40 = ultime resistenze (Will DC 22), se riesce → COMPLETE!
+- **Hella:** Round 40 = ultime resistenze (Will DC 22), se riesce → COMPLETE!
 
 **ROUND 41-45:**
-- **Hellas:** Fase finale automatica, NO checks needed
+- **Hella:** Fase finale automatica, NO checks needed
 - **Seedlings → Young Treants** crescita (se seedlings planted)
 - **Combattimento:** PG clean up nemici remaining
 
@@ -869,12 +901,12 @@ DIMENSIONI TOTALI MAPPA: 26 colonne (A-Z) × 29 righe (10-38) = 39 m × 43,5 m
 
 > FLASH accecante luce verde! Shockwave energia primordiale espande 30m, knocking tutti prone (Ref DC 25 stay standing).
 
-> Quando vista ritorna, Hellas sta eretta al centro. Forma Elementale Natura completa. Aura verde pulsa 30ft radius. La foresta attorno... RISPONDE. Alberi piegarsi reverenza. Erba cresce fertile immediate. I resti dell'orda drow... fuggono terrore.
+> Quando vista ritorna, Hella sta eretta al centro. Forma Elementale Natura completa. Aura verde pulsa 30ft radius. La foresta attorno... RISPONDE. Alberi piegarsi reverenza. Erba cresce fertile immediate. I resti dell'orda drow... fuggono terrore.
 
 **Effect Immediate:**
 - Tutti drow remaining: Morale check DC 20 or **ROUT** (flee)
 - Wyrmlord (se vivo): Will DC 22 or shaken, retreat tactical
-- Treants giovani stabilizzano forma (diventano permanenti alleati Hellas)
+- Treants giovani stabilizzano forma (diventano permanenti alleati Hella)
 - Cerchio purificato: Burning zones spengono, verde expands 60m radius
 
 ---
@@ -884,7 +916,7 @@ DIMENSIONI TOTALI MAPPA: 26 colonne (A-Z) × 29 righe (10-38) = 39 m × 43,5 m
 ### Outcome A: Successo Perfetto (tutti checks OK, artefatti usati)
 
 **Guadagni:**
-- ✅ Hellas forma Elementale Natura (7 giorni, perfect stats)
+- ✅ Hella forma Elementale Natura (7 giorni, perfect stats)
 - ✅ 4 Young Treants alleati permanenti
 - ✅ Radicesaggio (Treant antico) + 20 Treant minori per battaglia Brindol
 - ✅ Benedizioni tutti artefatti (abilità unlocked permanent)
@@ -898,7 +930,7 @@ DIMENSIONI TOTALI MAPPA: 26 colonne (A-Z) × 29 righe (10-38) = 39 m × 43,5 m
 ### Outcome B: Successo Standard
 
 **Guadagni:**
-- ✅ Hellas forma Elementale (durata ridotta 5 giorni)
+- ✅ Hella forma Elementale (durata ridotta 5 giorni)
 - ✅ 2 Young Treants alleati
 - ⚠️ Radicesaggio dormiente (no rinforzi battle)
 - ✅ Alcune abilità artefatti unlocked
@@ -909,7 +941,7 @@ DIMENSIONI TOTALI MAPPA: 26 colonne (A-Z) × 29 righe (10-38) = 39 m × 43,5 m
 ### Outcome C: Successo Minimo
 
 **Guadagni:**
-- ✅ Hellas forma Elementale debole (3 giorni, stats -4)
+- ✅ Hella forma Elementale debole (3 giorni, stats -4)
 - ❌ No treants alleati
 - ❌ No rinforzi
 - ❌ Intel minimo
@@ -919,7 +951,7 @@ DIMENSIONI TOTALI MAPPA: 26 colonne (A-Z) × 29 righe (10-38) = 39 m × 43,5 m
 ### Outcome D: Fallimento
 
 - ❌ Rituale fallisce
-- ❌ Hellas 6d6 danni permanenti (-36 max HP!)
+- ❌ Hella 6d6 danni permanenti (-36 max HP!)
 - ❌ Cerchio distrutto (drow bruciano tutto Day 22)
 - ❌ NO benefici battaglia finale
 
@@ -927,7 +959,7 @@ DIMENSIONI TOTALI MAPPA: 26 colonne (A-Z) × 29 righe (10-38) = 39 m × 43,5 m
 
 ## TIMER UPDATE - End Day 21
 
-**Tempo Totale Quest Hellas:**
+**Tempo Totale Quest Hella:**
 - Day 20: Viaggio + Treant (10 ore)
 - Day 21: Rituale (3 ore)
 - **COMPLETED:** Day 21 ore 09:00
@@ -944,7 +976,7 @@ DIMENSIONI TOTALI MAPPA: 26 colonne (A-Z) × 29 righe (10-38) = 39 m × 43,5 m
 
 **DM Pressure Message:**
 
-> Messaggero elfico arriva galoppo: "Hellas! Trasformazione... incredibile! Ma... urgente! Nimon's Gap... mura deboli... cadono 5 giorni! Brindol chiede aiuto! E... c'è altro. Torre invisibile apparsa Old North Road. Warlock... il tuo Ring... risponde?"
+> Messaggero elfico arriva galoppo: "Hella! Trasformazione... incredibile! Ma... urgente! Nimon's Gap... mura deboli... cadono 5 giorni! Brindol chiede aiuto! E... c'è altro. Torre invisibile apparsa Old North Road. Warlock... il tuo Ring... risponde?"
 
 **→ Hook per Quest 2 Warlock (Torre Invisibile)**
 

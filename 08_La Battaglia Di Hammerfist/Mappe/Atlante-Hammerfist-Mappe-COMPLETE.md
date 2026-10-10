@@ -1057,7 +1057,7 @@ Multi-threat simultaneous:
 **Timing:** Sessione 3 Incontro 3B (CLIMAX!)
 
 **Descrizione Scenario:**
-Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m altezza coperto stalattiti cristallo brillano luce propria (bioluminescent blue-white). Centro: Altare pietra nera dedicato Moradin, rialzato 3m piattaforma, circondato 10 statue colossali Re Nanici ancestrali (4m altezza ciascuno, occhi rubino brillanti). 90 nani superstiti formazione cerchio difensivo attorno altare, preparano ultima resistenza. Single mithril door Nord tunnel = unico ingresso... nemici arriving.
+Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m altezza coperto stalattiti cristallo brillano luce propria (bioluminescent blue-white). Centro: Altare pietra nera dedicato Moradin, rialzato 3m piattaforma, circondato 10 statue colossali Re Nanici ancestrali (4m altezza ciascuno, occhi rubino brillanti). 90 nani superstiti formazione cerchio difensivo attorno altare, preparano ultima resistenza. Single mithral door Nord tunnel = unico ingresso... nemici arriving.
 
 **Elementi Mappa:**
 
@@ -1097,7 +1097,7 @@ Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m alt
   - Ultime parole prima collassare: "Moradin ha... ascoltato... la Forgia... eterna..."
 
 **TUNNEL INGRESSO (Nord):**
-- **Porta Mithril:** 6m × 6m, rune magiche (Defence wards collapsed)
+- **Porta Mithral:** 6m × 6m, rune magiche (Defence wards collapsed)
 - **Tunnel Beyond:** 10m profondo × 6m largo
 - **Nemici Arriving:** Ondate progressive
 

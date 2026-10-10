@@ -12,9 +12,9 @@
 {{note
 > *Dalle Cronache di Thorgrim Barbadiferro, incise nella pietra di Hammerfist:*
 >
-> *«Quando la Mano Rossa calò sul nostro focolare e il cielo si fece nero di
-> ali, non fu un re a salvarci, né un esercito. Furono **Quattro Eroi** venuti
-> da un tempo che non era ancora. Portavano una corona di stelle di pietra, un
+> *«Quando l'orda calò sul nostro focolare e il cielo si fece nero di
+> ali, non fu un re a salvarci, né un esercito. Furono **Quattro Eroi**.
+> Portavano una corona di stelle di pietra, un
 > martello che cantava, un anello di luce e ombra, e con loro camminava la vita
 > stessa rifiorita dalla morte.*
 >

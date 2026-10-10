@@ -113,6 +113,14 @@ convenzione di questo tavolo, non una regola del manuale.*
 > *potenza* — offre **tempo, mani e informazioni**. Chi cerca l'oggetto magico
 > deve uscire dalla Valle, e uscirne costa giorni sull'Orologio.
 
+> 🛒 **I banchi già scritti.** Per l'arco 09 cosa si vende, quante, a che prezzo
+> e fino a quale tetto sta in
+> [`Arco-Post-Hammerfist-BANCHI-E-MERCATI.md`](../09_Continuazione%20Arco%20Narrativo%20dopo%20Battaglia%20di%20Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md):
+> Rethmar resta sotto i 4.000 mo come in questa tabella, mentre Dauth e
+> Channathgate, la porta orientale della Valle, sono i posti dove si esce a
+> comprare. Hammerfist nel 1372 ha il suo, quasi vuoto:
+> [`ARC08-17-BANCO-HAMMERFIST-1372.md`](../08_La%20Battaglia%20Di%20Hammerfist/ARC08-17-BANCO-HAMMERFIST-1372.md).
+
 ---
 
 ## §2-bis · La spezia del mercante, quando il modulo non ne ha una

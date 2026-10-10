@@ -58,6 +58,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 46 ⬜ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜
 
 @north N
+@tipo tattica abitato
 @mark 1 ; L22 ; Nocca (fantino) (ranger 3)
 @mark 2 ; I23 ; Vanna — alle funi (guerriera 3)
 @mark 3 ; AE7 ; Ombra — dentro il transennato (druida 3)

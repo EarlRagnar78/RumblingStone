@@ -165,9 +165,10 @@ per una in `--ignore-vuln`, oppure resta un avviso. Si decide guardando cosa
 avrà segnalato nel mese.
 
 ⬜ **Resta**, e non si fa da un ramo:
-- la **prima PR di Dependabot**, che è il criterio di qualità del lotto: arriva
-  dopo il merge, e la prima attesa è l'aggiornamento delle tre azioni su
-  Node.js 20;
+- ~~la **prima PR di Dependabot**~~ ✅ **arrivata il 2026-10-02**: sei PR,
+  #207-#212, le tre azioni da v4/v5 a v7 e tre pavimenti pip. Fuse il
+  2026-10-07, una alla volta, ognuna con una riga del CHANGELOG aggiunta a
+  mano perché il cancello della regola d'oro la bocciava. Il seguito è PI-3b;
 - la **prova del blocco dei segreti** (un segreto finto in un commit di prova):
   la fa il DM, perché un agente che tenta di spingere un segreto è esattamente
   ciò che la protezione deve fermare, e il risultato non si distinguerebbe da un
@@ -194,6 +195,59 @@ appartengono a questo lotto:
   lavoro che Dependabot per `github-actions` proporrà;
 - **`ubuntu-latest` diventa Ubuntu 26 dal 19 ottobre 2026.** Prima di quella
   data si decide se fissare `ubuntu-24.04` o provare la CI su 26.
+
+#### ✅ PI-3b · Dependabot raggruppato, provato prima di entrare
+`[engine: Opus 5, sessione principale · effort: medio · qualità: il workflow nuovo è verde su questa PR; il cancello della regola d'oro passa sui commit veri di #207 e #209; il primo lunedì arriva una PR per ecosistema]`
+
+Classe **C**. Nasce dalla verifica chiesta dal DM il 2026-10-07 e dalle sue
+risposte (D10-D12 in §7).
+
+Cosa è stato misurato prima di toccare:
+- **il Dockerfile non lo guardava nessuno.** `scripts/booklet-container/` usava
+  `debian:bookworm-slim`, oggi oldstable, e `dependabot.yml` non aveva
+  l'ecosistema `docker`. Con un nome in codice nel tag Dependabot non avrebbe
+  saputo proporre il salto comunque;
+- **ogni PR di Dependabot su `.github/` era rossa per costruzione**: il cancello
+  `check_plans_discipline.py` chiedeva la riga del CHANGELOG, e Dependabot non
+  la scrive. Con `docker` sarebbe valso anche per `scripts/`;
+- **i pavimenti, non le versioni installate, sono il punto debole.** I file
+  hanno solo `>=`, quindi la CI installa sempre l'ultima versione e
+  `pip-audit` in CI non vede mai il pavimento. Installando le versioni minime
+  su Python 3.11, `pip-audit` trova PYSEC-2026-1845 in `pytest 8.0.0`,
+  corretto in 9.0.3; i 1.643 test passano (uno solo fallisce, `test_fase1`,
+  per il clone superficiale della sessione, e in CI il clone è completo);
+- **le tre librerie senza PR** (`pyyaml>=6.0`, `pytest>=8.0`,
+  `pymupdf>=1.24`) erano rimaste fuori per il limite di tre PR aperte. Su PyPI
+  oggi ci sono 6.0.3, 9.1.1 e 1.28.2: il prossimo giro le propone.
+
+Cosa è cambiato:
+- `.github/dependabot.yml`: tre ecosistemi, tutti il lunedì alle 06:00 ora di
+  Roma; un **gruppo** per ecosistema, così arriva una PR sola per `pip`, una
+  per le azioni e una per Docker. Gli aggiornamenti di sicurezza pip hanno un
+  gruppo a parte e non aspettano il lunedì;
+- `Dockerfile`: `debian:13-slim` fissata per digest. Dependabot aggiorna il
+  digest quando Debian ripubblica l'immagine e propone il 14 quando esce;
+- `.github/workflows/dipendenze.yml`, sulle PR che toccano requirements,
+  Dockerfile o workflow, e ogni lunedì prima di Dependabot: `pip-audit`
+  **bloccante** sulle versioni installate e su quelle minime, i test sulle
+  versioni minime, l'immagine costruita con un PDF stampato da Chromium. Se
+  qualcosa è rosso su una PR di Dependabot, scrive nella PR cosa è rotto e se
+  è il codice del repo a dover cambiare;
+- `requirements-dev.txt`: `pytest>=9.0.3`, per la vulnerabilità sul pavimento;
+- `check_plans_discipline.py`: passa se tutti i commit strutturali del range
+  sono di Dependabot. Un commit umano strutturale nella stessa PR rimette
+  l'obbligo della riga. Due test nuovi in `test_tool_decidono.py`, uno per lato.
+
+⚠️ **Quello che qui non si è potuto provare.** La rete della sessione non
+raggiunge `deb.debian.org`, quindi l'immagine Debian 13 non è stata costruita
+in locale: la prova è il job `docker` di `dipendenze.yml` sulla PR di questo
+lotto. E due interruttori non stanno nel repo: *Dependabot alerts* e
+*Dependabot security updates* in **Settings → Code security**. Senza il
+secondo, il gruppo `pip-sicurezza` non riceve niente.
+
+⚠️ **Il prezzo del raggruppamento.** Se un pacchetto del gruppo rompe, è rossa
+la PR di tutti. Si sblocca dal commento della PR con
+`@dependabot ignore <pacchetto>`, o correggendo il codice nella PR stessa.
 
 #### ⬜ PI-4 · Gli scenari del piano, tracciati fino ai test
 `[engine: Sonnet 5 · effort: medio · qualità: uno scenario senza test fa rosso, un test che cita uno scenario inesistente fa rosso; 2 mutazioni su 2]`
@@ -262,9 +316,18 @@ pratica nuova che la fa diventare rossa si corregge o si toglie.
 | ~~D6~~ | tutti | ✅ **Risposta del DM il 2026-09-24: (a).** **Come si esegue la regola di D1 dopo la #160?** (a) un ramo e una PR per lotto, (b) si aspetta il merge della #160 e si riparte sullo stesso ramo un lotto alla volta. Da qui ogni lotto di questo piano ha un ramo suo e una PR sua in bozza |
 | ~~D7~~ | PI-2 | ✅ **Risposta del DM il 2026-09-24: no.** Gli 11 rami del gruppo B restano. La misura riga per riga (`plans/esperimenti/misura-rami/misura_rami.py`) dà otto rami con tutto su `main` e tre (#42, #109, #67) con contenuto giudicato ma non su `main`; il DM: *«ci sono delle varianti che si possono estrarre e integrare nel main»*. Le varianti dei tre sono il lotto [RIPRESA-PR 4j-4](PIANO-RIPRESA-PR-ABBANDONATE.md) |
 | ~~D8~~ | PI-2 | ✅ **Risposta del DM il 2026-09-24: no, e il recupero previsto davvero** (*«no solo se è previsto davvero il recupero, altrimenti mantieni»*). I due rami senza PR restano finché il loro recupero non è chiuso: il Torneo di Dauth di maggio è [RIPRESA-PR 4j-1](PIANO-RIPRESA-PR-ABBANDONATE.md), `measure_tokens.py` è 4j-3 |
+| ~~D10~~ | PI-3b | ✅ **Risposta del DM il 2026-10-07: sì, raggruppate** (*«le PR settimanali vanno bene se non spalmate»*). **Una PR per pacchetto o una per ecosistema?** Applicata con i `groups` di Dependabot, una PR a settimana per ecosistema, la sicurezza a parte |
+| ~~D11~~ | PI-3b | ✅ **Risposta del DM il 2026-10-07: sì** (*«usa pip-audit in modo che Dependabot aggiorni facendo l'audit e verificando che non rompe niente o che è necessario un aggiornamento del codice sorgente»*). **Ogni aggiornamento si prova prima di entrare?** Applicata con `dipendenze.yml`: audit bloccante sulle PR di dipendenze, test sulle versioni minime, commento nella PR quando è rossa |
+| ~~D12~~ | PI-3b | ✅ **Risposta del DM il 2026-10-07: sì** (*«controlla il Dockerfile e aggiornalo se necessario in automatico usando Dependabot»*). **Docker sotto Dependabot?** Applicata: ecosistema `docker` su `scripts/booklet-container`, base portata a Debian 13 e fissata per digest |
 | ~~D9~~ | PI-3 | ✅ **Risposta del DM il 2026-09-24: sì agli avvisi, no alle PR settimanali** (*«d9 ok, non le PR di aggiornamenti settimanali»*). **Dependabot anche per `converters/`?** Gli avvisi di sicurezza vengono dal grafo delle dipendenze, che legge già `converters/Html_to_markdown` e `converters/pdf-to-md-engine`; `dependabot.yml` resta sulla radice, e un commento in testa dice perché |
 
 PI-4 non ha una decisione qui: dipende dalla D6 di CICLO-SESSIONE.
+
+<!-- eco: PRATICHE 2026-10-07 -->
+- **Decise**: D10 le PR di Dependabot raggruppate, una per ecosistema a settimana · D11 ogni aggiornamento passa da audit e test prima di entrare · D12 Docker sotto Dependabot, e l'immagine aggiornata subito
+- **Aperte**: gli interruttori *Dependabot alerts* e *security updates* nelle impostazioni, da controllare a mano; `pip-audit` in `ci.yml` resta non bloccante fino al 2026-10-24, come da PI-3
+- **Cambiate**: D11, dalla proposta del 2026-09-24 «pip-audit non bloccante per un mese» a «bloccante da subito, ma solo sulle PR che toccano le dipendenze»
+- **Dedotto da me**: che «verificare che non rompe niente» valga anche per le versioni minime dichiarate, non solo per le ultime, e quindi l'audit e i test sui pavimenti; che il pavimento di pytest andasse alzato subito invece di aspettare Dependabot, perché è una vulnerabilità nota; che il cancello della regola d'oro dovesse lasciar passare Dependabot, altrimenti «in automatico» resta falso; il salto da Debian 12 a 13 nella stessa PR invece che in una di Dependabot, che con `bookworm-slim` non l'avrebbe mai proposto
 
 ⚠️ **Da non confondere**: queste sono `PRATICHE#D1`-`D5`. Le D1-D6 di
 [PIANO-CICLO-DI-SESSIONE-E-MENU](PIANO-CICLO-DI-SESSIONE-E-MENU.md) §8 sono
@@ -451,7 +514,8 @@ PR sua: il primo esercizio della norma di PI-2 è questo piano stesso.
 
 - ✅ Fase 1 · audit (§2, 2026-09-24)
 - ⬜ PI-1 · `main` protetto e merge automatico (DM, con 4i-3). 2026-09-24: `main` risulta `protected: true` via API; il dettaglio delle regole, il merge automatico e la sicurezza non si leggono da qui e si verificano alla prima PR indietro rispetto a `main`
-- 🟡 PI-3 · Dependabot, segreti, `pip-audit`. D9 decisa: `converters/` solo con gli avvisi del grafo. 2026-09-24: `dependabot.yml`, `pip-audit` in CI (non bloccante), runner fissato a `ubuntu-24.04`; restano la prima PR di Dependabot, la prova del segreto (DM) e la revisione con l'IA (impostazioni)
+- 🟡 PI-3 · Dependabot, segreti, `pip-audit`. D9 decisa: `converters/` solo con gli avvisi del grafo. 2026-09-24: `dependabot.yml`, `pip-audit` in CI (non bloccante), runner fissato a `ubuntu-24.04`. 2026-10-07: prima PR di Dependabot arrivata e fusa (#207-#212); restano la prova del segreto (DM) e la revisione con l'IA (impostazioni)
+- ✅ PI-3b · Dependabot raggruppato e provato (D10-D12, 2026-10-07): Docker sotto Dependabot su Debian 13, `dipendenze.yml` con audit e test sulle versioni minime, il cancello della regola d'oro che lascia passare Dependabot
 - ⬜ PI-6 · canone toccato nella PR
 - ⬜ PI-2 · `misura_flusso` e la norma delle 400 righe. 2026-09-24: cancellati i 38 rami già su `main` (D5); 17 rimasti misurati riga per riga in §7.2: D7 = no e D8 = no, i rami restano; il recupero è RIPRESA-PR 4j
 - ⬜ PI-5 · proprietà sui parser

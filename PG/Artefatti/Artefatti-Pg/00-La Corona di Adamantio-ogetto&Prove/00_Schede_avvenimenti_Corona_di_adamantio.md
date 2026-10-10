@@ -82,7 +82,7 @@ Questo smeraldo pulsa con il cuore di Toril, promettendo il controllo sulla piet
 **Gem: Gem of Dwarven Might (Rubino)**
 Un rubino ardente che irradia forza e coraggio.
 *   **Stato:** Dormiente. Richiede il completamento del rituale **Anvil of the World**.
-*   **Potere (dopo l'attivazione):** Una volta a settimana, come azione rapida, puoi avvolgere te e i tuoi alleati in una luce divina che conferisce *Possenza Divina* e *Pelle di Pietra* a te, e *Pelle di Pietra* e *Ispirare Coraggio* (+4) ai tuoi alleati per 10 round.
+*   **Potere (dopo l'attivazione):** Una volta a settimana, come azione veloce, puoi avvolgere te e i tuoi alleati in una luce divina che conferisce *Possenza Divina* e *Pelle di Pietra* a te, e *Pelle di Pietra* e *Ispirare Coraggio* (+4) ai tuoi alleati per 10 round.
 *   **Costo per l'Uso:** Dopo aver usato questo potere, subisci -2 alla Forza per 24 ore.
 
 ---

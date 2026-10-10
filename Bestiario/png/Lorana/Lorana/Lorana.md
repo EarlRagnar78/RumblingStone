@@ -130,7 +130,7 @@ La scena più potente: Lorana mostra a Hella la spilla della bambina, senza spie
 ### Per Artemis (Il Senior Developer)
 Artemis potrebbe inizialmente trattare Lorana come fonte di dati. Lei lo noterà. Non si offenderà — ma la prossima volta che chiede qualcosa, Lorana risponderà con dati e basta, senza il contesto che avrebbe aggiunto se fosse stata trattata come persona. Questo è un momento di roleplay sottile: i PG capiscono che le fonti umane funzionano meglio se trattate come esseri umani.
 
-Se Artemis si scusa (reale o strumentale, lei non distingue ma nota l'intenzione), offre una cosa che nessun altro ha: **il nome del mercante di Cannathgate che ha venduto a Lady Kaal la statua di cristallo** — lo ha visto passare con il carro tre settimane fa ed ha annotato il sigillo del carro.
+Se Artemis si scusa (reale o strumentale, lei non distingue ma nota l'intenzione), offre una cosa che nessun altro ha: **il nome del mercante di Channathgate che ha venduto a Lady Kaal la statua di cristallo** — lo ha visto passare con il carro tre settimane fa ed ha annotato il sigillo del carro.
 
 ### Per Tordek (L'Ingegnere)
 Tordek e Lorana si capiranno immediatamente su un piano pratico. Lei ha bisogno di qualcuno che sappia come rinforzare un edificio come rifugio di emergenza. Lui ha idee che lei non avrebbe mai pensato. La collaborazione è naturale — e Lorana, vedendolo lavorare, potrebbe essere una delle poche PNG a chiedergli direttamente: *"Come stai? Non il guerriero — tu. Come stai?"* perché riconosce nei suoi movimenti lo stesso pattern di chi ha combattuto troppo.

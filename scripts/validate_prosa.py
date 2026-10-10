@@ -211,6 +211,24 @@ SOGLIE_DOC = {"trattino_per_mille": 150, "trattino_minimo": 10,
 GLOSSARIO = ROOT / "campaign" / "GLOSSARIO-E-LOCALIZZAZIONE.md"
 
 
+#: Dove finisce il canone e comincia il foglio di stile. Le tabelle prima di
+#: questa riga dicono **cosa e' canone**; il §8 dice **quali grafie sono
+#: escluse**, e le sue righe non sono nomi: se i due parser sotto le leggessero,
+#: una forma esclusa diventerebbe un nome canonico.
+FINE_CANONE = "## 8."
+
+
+def _righe_canone() -> list[str]:
+    if not GLOSSARIO.is_file():
+        return []
+    righe: list[str] = []
+    for riga in GLOSSARIO.read_text(encoding="utf-8").splitlines():
+        if riga.startswith(FINE_CANONE):
+            break
+        righe.append(riga)
+    return righe
+
+
 def coppie_glossario() -> list[tuple[str, str]]:
     """(canonico italiano, forma inglese) per le voci che vanno TRADOTTE.
 
@@ -220,10 +238,8 @@ def coppie_glossario() -> list[tuple[str, str]]:
     forma inglese compare già dentro il nome canonico (`Valle di Channath /
     Cannath Vale`): lì l'inglese è una delle due forme accettate, non un calco.
     """
-    if not GLOSSARIO.is_file():
-        return []
     fuori: list[tuple[str, str]] = []
-    for riga in GLOSSARIO.read_text(encoding="utf-8").splitlines():
+    for riga in _righe_canone():
         if not riga.strip().startswith("|"):
             continue
         celle = [c.strip() for c in riga.strip().strip("|").split("|")]
@@ -262,17 +278,16 @@ def nomi_canonici() -> list[str]:
     Da qui: ogni voce del glossario contribuisce anche le sue **parole piene**.
     """
     fuori = set(PG) | set(ALIAS)
-    if GLOSSARIO.is_file():
-        for riga in GLOSSARIO.read_text(encoding="utf-8").splitlines():
-            if not riga.strip().startswith("|"):
-                continue
-            celle = [c.strip() for c in riga.strip().strip("|").split("|")]
-            if len(celle) < 2 or celle[0].startswith(("Italiano", "---", ":--", "**")):
-                continue
-            for pezzo in re.split(r"\s*[/·(«»]\s*", celle[0]):
-                for parola in re.findall(r"[A-Za-zÀ-ÿ'’]{4,}", pezzo):
-                    if parola.lower() not in VUOTE:
-                        fuori.add(parola)
+    for riga in _righe_canone():
+        if not riga.strip().startswith("|"):
+            continue
+        celle = [c.strip() for c in riga.strip().strip("|").split("|")]
+        if len(celle) < 2 or celle[0].startswith(("Italiano", "---", ":--", "**")):
+            continue
+        for pezzo in re.split(r"\s*[/·(«»]\s*", celle[0]):
+            for parola in re.findall(r"[A-Za-zÀ-ÿ'’]{4,}", pezzo):
+                if parola.lower() not in VUOTE:
+                    fuori.add(parola)
     return sorted(fuori)
 
 
@@ -390,6 +405,229 @@ CAPPELLO_DM = re.compile(
     r"(?:^>.*\n)*?^>.*(?:per il giocatore|per la giocatrice|leggi in privato|non ci sono istruzioni"
     r"|affar tuo|ripasso lampo).*\n(?:^>.*\n)*",
     re.I | re.M)
+
+
+# ─────────────────────────────────────────────────────────────────────────
+# Il foglio di stile eseguibile — `GLOSSARIO-E-LOCALIZZAZIONE.md` §8
+#
+# 🔎 **Perche' esiste, dal 2026-10-03.** Il glossario dice «fissare **una volta
+# sola** come si scrive ogni nome», e il solo controllo che lo applicava cercava
+# le forme *inglesi* da tradurre. La **grafia** non la guardava nessuno, e il
+# metro era cieco per costruzione: MQM verde su 521 documenti con *Regiarax* nel
+# testo, *mithril* in ~25 righe e il PG Hella scritto *Hellas* in 21 file. E'
+# la pratica del copyeditor (il foglio di stile) resa eseguibile, come fa Vale
+# con le sue regole `substitution`; il codice e' di questo repo.
+#
+# Due stati. `refuso` e' una decisione presa: ogni occorrenza e' un rilievo.
+# `DM?` e' una scelta che il DM non ha fatto: si conta, non si rimprovera.
+STATI_FOGLIO = ("refuso", "DM?")
+
+
+def forme_escluse() -> "list[tuple[str, str, str, str]]":
+    """`(forma esclusa, forma canonica, stato, perche')` dal §8 del glossario."""
+    if not GLOSSARIO.is_file():
+        return []
+    righe = GLOSSARIO.read_text(encoding="utf-8").splitlines()
+    try:
+        inizio = next(i for i, r in enumerate(righe) if r.startswith(FINE_CANONE))
+    except StopIteration:
+        return []
+    voci = []
+    for riga in righe[inizio:]:
+        celle = [c.strip() for c in riga.strip().strip("|").split("|")]
+        if (not riga.strip().startswith("|") or len(celle) < 4
+                or not celle[0].startswith("`") or celle[2] not in STATI_FOGLIO):
+            continue
+        voci.append((celle[0].strip("`"), celle[1], celle[2], celle[3]))
+    return voci
+
+
+def _rx_forma(forma: str) -> "re.Pattern[str]":
+    """Una forma tutta minuscola si cerca senza badare alla maiuscola (*Mithril*
+    a inizio frase e' la stessa forma); un nome proprio, con la maiuscola."""
+    flag = re.I if forma == forma.lower() else 0
+    # Il confine non esclude la barra: *Hellas/druidi* e *Witchwood/Hellas* sono
+    # prosa. Un percorso («porta/mithril/cartella») ha la barra da entrambi i
+    # lati ed e' scartato in `occorrenze_forma`. ADR-0079.
+    return re.compile(rf"(?<![\w`.-]){re.escape(forma)}(?![\w`-])", flag)
+
+
+#: Una riga che cita un file per nome: il nome non si cambia insieme al testo,
+#: perche' romperebbe il rimando. Il costo e' dichiarato: una grafia sbagliata in
+#: prosa, sulla stessa riga di un percorso, passa.
+_PERCORSO = re.compile(r"\.(?:md|webp|png|pdf|json|ya?ml|svg|txt|htm)\b", re.I)
+
+
+def _freccia_accanto(riga: str, forma: str) -> bool:
+    """La freccia che **lega** la forma esclusa a un'altra: «*mithril* →», «→ Hellas».
+    Una freccia lontana («… se riesce → COMPLETE!») non spiega niente."""
+    f = re.escape(forma)
+    return bool(re.search(rf"{f}[\s*_\"«»'`]{{0,6}}→|→[\s*_\"«»'`]{{0,6}}{f}", riga,
+                          re.I if forma == forma.lower() else 0))
+
+
+def _spiega_il_cambio(riga: str, canonica: str, forma: str = "") -> bool:
+    """La riga che **dice** il cambio («Regiarax» → «Regiarix») non e' un errore,
+    e nemmeno quella che cita un nome di file (`_PERCORSO`)."""
+    # ⚠️ Con il confine di parola, non con `in`: «hella» sta dentro «Hellas», e
+    # il primo rapporto contava zero *Hellas* proprio per questo.
+    # ⚠️ Una freccia lontana non spiega niente: «**Hellas:** Round 40 … → COMPLETE!»
+    # la usava come scusa e la grafia sbagliata passava (ADR-0079). Conta la
+    # freccia accanto alla forma, o la forma canonica sulla stessa riga.
+    return (bool(_rx_forma(canonica).search(riga)) or bool(_PERCORSO.search(riga))
+            or (bool(forma) and _freccia_accanto(riga, forma)))
+
+
+def occorrenze_forma(testo: str, forma: str, canonica: str) -> "list[int]":
+    """I numeri di riga in cui la forma esclusa compare davvero."""
+    rx = _rx_forma(forma)
+
+    def _fuori_da_un_percorso(riga: str) -> bool:
+        return any(not (m.start() > 0 and riga[m.start() - 1] == "/"
+                        and m.end() < len(riga) and riga[m.end()] == "/")
+                   for m in rx.finditer(riga))
+
+    return [n for n, riga in enumerate(testo.splitlines(), 1)
+            if _fuori_da_un_percorso(riga) and not _spiega_il_cambio(riga, canonica, forma)]
+
+
+_FOGLIO: "list[tuple[str, str, str, str]] | None" = None
+
+
+def _e_archivio(f: Path) -> bool:
+    """Un archivio e' storia: non si riscrive. Le esclusioni sono quelle del repo
+    (`misura_craft.ESCLUSI`) e il marcatore `_SNAPSHOT-STORICO.md` delle cartelle,
+    non un elenco nuovo. 🔴 Il marcatore mancava, e il primo giro ha riscritto
+    uno snapshot: l'ha fermato `fase1.py --check`, dopo."""
+    import misura_craft as mc
+
+    return (any(x in f.parts for x in mc.ESCLUSI)
+            or any(x in f.name for x in mc.ESCLUSI_NOME)
+            or any((d / "_SNAPSHOT-STORICO.md").is_file() for d in f.parents))
+
+
+def check_forme_escluse(f: Path, testo: str, rel) -> "list[str]":
+    """Le grafie che il foglio di stile ha gia' deciso, e il file non rispetta."""
+    global _FOGLIO
+    if _FOGLIO is None:
+        _FOGLIO = forme_escluse()
+    if "GLOSSARIO" in f.name or _e_archivio(f):
+        return []
+    fuori = []
+    for forma, canonica, stato, _ in _FOGLIO:
+        if stato != "refuso":
+            continue
+        for n in occorrenze_forma(testo, forma, canonica):
+            fuori.append(f"{rel}:{n}: grafia esclusa «{forma}» — il foglio di stile "
+                         f"dice «{canonica}» (glossario §8)")
+    return fuori
+
+
+def conta_forme(bersagli: "list[Path]") -> "list[tuple[tuple[str, str, str, str], int, int, int, int]]":
+    """Per ogni riga del foglio: occorrenze e file della forma esclusa, e della
+    canonica. `(voce, occ. esclusa, file esclusa, occ. canonica, file canonica)`."""
+    righe = []
+    for voce in forme_escluse():
+        forma, canonica, _, _ = voce
+        occ = [0, 0]
+        file_ = [0, 0]
+        for f in bersagli:
+            testo = f.read_text(encoding="utf-8", errors="ignore")
+            n = len(occorrenze_forma(testo, forma, canonica))
+            m = len(_rx_forma(canonica).findall(testo))
+            occ[0] += n
+            occ[1] += m
+            file_[0] += bool(n)
+            file_[1] += bool(m)
+        righe.append((voce, occ[0], file_[0], occ[1], file_[1]))
+    return righe
+
+
+def rapporto_foglio(bersagli: "list[Path]") -> "tuple[list[str], int]":
+    """Il foglio di stile contro il repo: `(righe stampabili, refusi aperti)`."""
+    conti = conta_forme(bersagli)
+    out = []
+    refusi = 0
+    for (forma, canonica, stato, _), n, nf, m, mf in conti:
+        if stato == "refuso":
+            refusi += n
+            segno = "✗" if n else "✓"
+        else:
+            segno = "?"
+        out.append(f"  {segno} {stato:6} «{forma}» {n:4} occ. in {nf:3} file"
+                   f"   ·   «{canonica}» {m:4} occ. in {mf:3} file")
+    return out, refusi
+
+
+#: Le forme che hanno **un solo** uso legittimo e che il generatore di
+#: proposte non deve rimproverare: due PNG diversi, due parole inglesi. Sono i
+#: quattro falsi positivi contati a mano il 2026-10-03 su nove candidati.
+OMONIMI_VOLUTI = frozenset({
+    frozenset({"garruk", "karruk"}),      # il pugile del torneo e il Wyrmlord
+    frozenset({"thorek", "thorik"}),      # il Re nanico e il PG
+    frozenset({"headed", "healed"}),      # due parole inglesi
+    frozenset({"hell's", "hellas"}),      # «hell's» e' inglese
+    frozenset({"hella's", "hellas"}),     # il possessivo di Hella
+})
+
+
+def _a_distanza_uno(a: str, b: str) -> bool:
+    if abs(len(a) - len(b)) > 1:
+        return False
+    if len(a) == len(b):
+        return sum(x != y for x, y in zip(a, b)) == 1
+    if len(a) > len(b):
+        a, b = b, a
+    return any(a == b[:i] + b[i + 1:] for i in range(len(b)))
+
+
+def proponi_grafie(bersagli: "list[Path]") -> "list[tuple[str, int, str, int]]":
+    """Coppie di nomi a **una sola lettera** di distanza, da portare al foglio.
+
+    ⚠️ E' un generatore di **proposte**, non un rilevatore: decide un umano, e
+    cio' che propone non e' un rilievo. Cinque filtri, ognuno nato da un falso
+    positivo contato a mano il 2026-10-03:
+
+    1. almeno **sei** lettere e almeno un nome del registro dei 322;
+    2. nessuna parola italiana comune: se la forma compare **in minuscolo** in
+       due punti del repo e' una parola, non un nome (*campagna/campana*,
+       *portale/mortale*);
+    3. niente flessioni: la differenza sull'ultima lettera e' genere o numero
+       (*Cerchio/Cerchi*), non grafia;
+    4. niente maiuscole di enfasi: *ABBATHOR* e' *Abbathor* gridato;
+    5. niente omonimi voluti (`OMONIMI_VOLUTI`).
+
+    ⚠️ **Limite noto, il filtro 3 ha un costo**: *Hella/Hellas* differisce
+    sull'ultima lettera e **non esce**. Lo ha trovato il confronto di *Hellas*
+    con *Hella's*, per caso. Una grafia che si distingue solo per l'ultima
+    lettera la trova chi guarda il foglio, non questo generatore.
+    """
+    import misura_craft as mc
+
+    registro = mc._registro_dei_nomi()
+    cap: Counter = Counter()
+    low: Counter = Counter()
+    for f in bersagli:
+        t = re.sub(r"```.*?```", "", f.read_text(encoding="utf-8", errors="ignore"),
+                   flags=re.S).replace("’", "'")
+        for w in re.findall(r"[A-Za-zÀ-ù'\-]{4,}", t):
+            w = w.strip("'-")
+            (cap if w[:1].isupper() else low)[w] += 1
+    nomi = [w for w in cap if len(w) >= 6 and not w.isupper() and low[w.lower()] < 2]
+    out = []
+    for i, a in enumerate(nomi):
+        for b in nomi[i + 1:]:
+            la, lb = a.lower(), b.lower()
+            if not _a_distanza_uno(la, lb):
+                continue
+            if la[:-1] == lb[:-1] or la == lb[:-1] or lb == la[:-1]:
+                continue
+            if a not in registro and b not in registro:
+                continue
+            if frozenset({la, lb}) in OMONIMI_VOLUTI:
+                continue
+            out.append((a, cap[a], b, cap[b]))
+    return sorted(out)
 
 
 def e_per_i_giocatori(f: Path) -> bool:
@@ -695,7 +933,8 @@ def rilievi(f: Path) -> "list[tuple[str, str]]":
         # Restano fuori i titoli, che non sono prosa letta.
         readaloud = "\n".join(r for _, r in righe if not r.lstrip().startswith("#"))
     fuori: "list[tuple[str, str]]" = [
-        ("terminologia_non_canonica", m) for m in check_glossario(f, testo, rel)]
+        ("terminologia_non_canonica", m)
+        for m in check_glossario(f, testo, rel) + check_forme_escluse(f, testo, rel)]
     if e_per_i_giocatori(f):
         fuori += [("testo_giocatori_senza_ancore", m)
                   for m in check_ancore(f, righe, rel)]
@@ -867,6 +1106,12 @@ def main(argv=None) -> int:
     ap.add_argument("--caratteristiche", action="store_true",
                     help="caratteristiche e abilità maiuscole (norma WotC/Paizo), "
                          "cercate per forma meccanica e non per parola")
+    ap.add_argument("--foglio", action="store_true",
+                    help="il foglio di stile (glossario §8) contro il repo: quanti "
+                         "refusi aperti, quante scelte del DM in sospeso")
+    ap.add_argument("--proponi-grafie", action="store_true",
+                    help="coppie di nomi a una lettera di distanza da portare "
+                         "al foglio (proposte, non rilievi)")
     ap.add_argument("--prima-dopo", action="store_true",
                     help="confronta i file con una revisione git: dice se una "
                          "riscrittura ha tolto tic o ne ha aggiunti")
@@ -884,6 +1129,23 @@ def main(argv=None) -> int:
             print(r if r.startswith("    ") else f"  · {r}")
         print(f"  ({len(bersagli)} file confrontati con {args.rispetto_a})")
         return 0
+
+    if args.foglio or args.proponi_grafie:
+        bersagli = ([Path(f).resolve() for f in args.files] if args.files
+                    else file_di_gioco())
+        if args.proponi_grafie:
+            coppie = proponi_grafie(bersagli)
+            for a, na, b, nb in coppie:
+                print(f"  ? «{a}» {na:4}  ↔  «{b}» {nb:4}")
+            print(f"  ({len(coppie)} coppie proposte in {len(bersagli)} file di gioco: "
+                  f"decide un umano, e si guarda il contesto prima di scrivere la riga)")
+            return 0
+        righe, refusi = rapporto_foglio(bersagli)
+        print(f"validate_prosa --foglio: {len(bersagli)} file di gioco, archivi esclusi")
+        print("\n".join(righe))
+        aperte = sum(1 for v in forme_escluse() if v[2] == "DM?")
+        print(f"  → {refusi} refusi aperti · {aperte} scelte del DM in sospeso")
+        return 1 if refusi and args.strict else 0
 
     if args.caratteristiche:
         bersagli = [Path(f).resolve() for f in args.files] if args.files else file_di_gioco()

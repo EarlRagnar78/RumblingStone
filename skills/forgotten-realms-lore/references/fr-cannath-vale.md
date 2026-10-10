@@ -65,7 +65,7 @@ All names below are extracted directly from the GM map image.
 |---|---|---|
 | **Old North Road** | Major road (red) | Main N-S artery through center of the vale |
 | **The Dwarfroad** | Road (red) | Goes west from Skull Gorge area toward The Misty Vale |
-| **The Dawn Way** | Road (red) | Goes east past Rethmar toward Cannathgate |
+| **The Dawn Way** | Road (red) | Goes east past Rethmar toward Channathgate |
 
 ### Settlements — Squares (Major Locations / Adventure Sites)
 
@@ -85,7 +85,7 @@ All names below are extracted directly from the GM map image.
 | Name on Map | = RHoD Original | Notes |
 |---|---|---|
 | **Rethmar** | Brindol (RHoD original) | MAIN CITY; center of the vale; Lord Jarmaath's seat |
-| **Cannathgate** | Dennovar | Eastern gateway; largest city after Rethmar |
+| **Channathgate** | Dennovar | Eastern gateway; largest city after Rethmar |
 | **Talar** | Talar | Center, west of Rethmar; river namesake village |
 | **Drellin's Ferry** | Drellin's Ferry | *(square; listed above)* |
 | **Terrelton** | Terrelton | Center; name retained |
@@ -109,7 +109,7 @@ Always use the correct map names below.
 | ❌ Invented (do not use) | ✅ Correct map name |
 |---|---|
 | Cressfall | **Rethmar** |
-| Tarrenmark | **Cannathgate** |
+| Tarrenmark | **Channathgate** |
 | Greymist Gap | **Nimon Gap** |
 | The Greymantle | **Shaarcah Forest** |
 | The Murkmere | **Lhespenbog** |
@@ -166,7 +166,7 @@ or an active settlement? Its position on the Dwarfroad makes it a natural waysta
 
 These appear on the eastern and southeastern edge of the map respectively. Both are FR
 canonical region names from the Shining South era. The Swagdar is a dry, sparsely
-populated region east of Cannathgate. Brown Hills are foothills of The North Wall.
+populated region east of Channathgate. Brown Hills are foothills of The North Wall.
 
 ### Shaarcah Forest — Spelling
 
@@ -202,7 +202,7 @@ Campaign season (Flamerule/Eleasis, 1372 DR):
 | Drellin's Ferry → Skull Gorge | ~15 miles | Off-road | ~6 hours |
 | Drellin's Ferry → Rethmar | ~50 miles | Dawn Way | ~2 days |
 | Rethmar → Lhesper | ~60 miles | Lhesper Trail (partial) | ~3 days |
-| Rethmar → Cannathgate | ~35 miles | Dawn Way | ~1.5 days |
+| Rethmar → Channathgate | ~35 miles | Dawn Way | ~1.5 days |
 | Rethmar → Ghostlord's Lair | ~55 miles | Off-road (Bandit Wastes) | ~3 days |
 | Skull Gorge → Rethmar | ~35 miles | Mixed | ~1.5 days |
 | Nimon Gap → Rethmar | ~20 miles | Dawn Way | ~1 day |

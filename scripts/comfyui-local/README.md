@@ -25,16 +25,31 @@
 
 ## Prerequisiti
 
-- **Bazzite** con GPU NVIDIA funzionante sull'host (`nvidia-smi` risponde).
-- **Distrobox** (preinstallato su Bazzite) e **Podman** (idem), *oppure*
-  Docker/Podman se preferisci la Via B.
-- Spazio disco: ~10–15 GB per un checkpoint SDXL + i modelli ControlNet.
+- GPU **NVIDIA** con il driver proprietario sull'host (`nvidia-smi` risponde).
+- **Distrobox** e **Podman**: preinstallati su Bazzite; su **Debian/Ubuntu**
+  `sudo apt install distrobox podman` (e il driver: pacchetto `nvidia-driver`).
+- Spazio disco: **~15 GB** per ComfyUI, PyTorch CUDA e il checkpoint SDXL. Gli
+  script lo controllano e si fermano se manca. Se `/home` è piccolo, metti
+  tutto su un altro disco **prima** del setup, e tienilo per ogni comando:
+
+  ```bash
+  export COMFYUI_DIR=/srv/comfyui     # vale per setup, scarica-pesi, start, stop
+  ```
+
+- VRAM: 8 GB stanno larghi; con **4 GB** (la RTX A2000 misurata il 2026-10-08)
+  SDXL con `--lowvram` gira, lento. FLUX non ci sta.
+
+> **Container, non macchina virtuale.** Distrobox usa la GPU dell'host
+> direttamente. Una VM di virt-manager o di Vagrant vedrebbe la GPU solo con il
+> passthrough PCI (IOMMU e una seconda GPU per l'host), che su un portatile con
+> una sola scheda NVIDIA non si fa. Le VM vanno bene per le parti senza GPU.
 
 Verifica rapida sull'host:
 
 ```bash
-nvidia-smi            # deve elencare la tua GPU (es. RTX 4050)
+nvidia-smi            # deve elencare la tua GPU
 distrobox version     # deve rispondere
+df -h /home /srv      # dove c'è posto
 ```
 
 ---
@@ -56,10 +71,19 @@ Fa, nell'ordine (tutti passi standard Distrobox + ComfyUI):
    — crea il box con l'integrazione driver NVIDIA dell'host (flag `--nvidia`);
 2. dentro il box: installa `git`, `python3-venv`, `python3-pip`;
 3. clona `https://github.com/comfyanonymous/ComfyUI.git` in
+   `$COMFYUI_DIR`, se l'hai impostata, altrimenti in
    `scripts/comfyui-local/ComfyUI/` (gitignorato: è software di terzi,
    non contenuto di campagna);
 4. crea un virtualenv e installa **PyTorch CUDA** + `requirements.txt` di
-   ComfyUI (indice ufficiale PyTorch).
+   ComfyUI (indice ufficiale PyTorch), poi stampa se torch vede la GPU.
+   Se stampa `False`, il driver NVIDIA non arriva nel box: fermati lì.
+
+Distrobox condivide col box la home, non il resto del disco. Se `COMFYUI_DIR`
+sta fuori dalla home (`/srv/comfyui`), lo script la monta nel box; se un box
+creato prima non la vede, lo ricrea.
+
+Prima di partire controlla lo spazio (passo 0). Con `COMFYUI_FORZA=1` procede
+lo stesso.
 
 ### A.2 — Avvio / arresto
 
@@ -73,13 +97,23 @@ scripts/comfyui-local/stop.sh      # ferma il box (i modelli restano su disco)
 > SDXL su 8 GB va bene; per Flux-dev valuta `--lowvram`/quantizzazioni o resta
 > su SDXL. Vedi le note VRAM nel README di ComfyUI.
 
-### A.3 — Modelli (una tantum, scaricati a mano)
+### A.3 — Pesi (una tantum, con lo script)
 
-ComfyUI non scarica i pesi da solo. Metti i file in
-`scripts/comfyui-local/ComfyUI/models/`:
+ComfyUI non scarica i pesi da solo. Lo fa questo script, per il checkpoint
+**SDXL 1.0 base** (OpenRAIL++-M, ammesso da ADR-0019):
 
-- `checkpoints/` → un checkpoint **aperto** (SDXL base o un fine-tune permissivo);
-- `controlnet/` → un modello **ControlNet lineart/canny** per SDXL.
+```bash
+scripts/comfyui-local/scarica-pesi.sh
+```
+
+Legge da Hugging Face l'impronta sha256 che il repository pubblica per il file,
+scarica ~6,9 GB in `models/checkpoints/` (riprende se si interrompe) e
+controlla che l'impronta coincida. Alla fine stampa lo sha256: incollalo nella
+chat, entra nella provenienza delle immagini.
+
+Per le **icone degli oggetti** basta il checkpoint. Il ControlNet
+(`models/controlnet/`, lineart o canny per SDXL) serve solo alla hero map, e
+quello si scarica a mano: vedi `hero-map-comfyui.md`.
 
 Solo pesi con licenza d'uso compatibile (SDXL/Flux-dev sono aperti). Vedi i
 vincoli IP in `hero-map-comfyui.md` (§"Cosa NON fare") e in
@@ -136,5 +170,5 @@ podman compose down
 - Nessun file di questa cartella viene eseguito in CI: `ComfyUI/` è
   gitignorato e i pesi non entrano mai nel repo.
 - Disinstallazione pulita: `distrobox rm comfyui --force` rimuove il box;
-  `rm -rf scripts/comfyui-local/ComfyUI` rimuove clone e modelli. L'host
+  `rm -rf "${COMFYUI_DIR:-scripts/comfyui-local/ComfyUI}"` rimuove clone e modelli. L'host
   immutabile resta intatto (non è mai stato modificato).

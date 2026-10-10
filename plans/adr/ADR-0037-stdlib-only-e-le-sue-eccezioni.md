@@ -206,3 +206,21 @@ correzione arriva da un attraversamento invece che da una rilettura.
 
 `bpy` e `mathutils` restano fuori da entrambi i file: non si installano con
 pip, sono il Python interno di Blender.
+
+---
+
+## Emendamento del 2026-10-08 — il collaudo delle mappe passa al piano di sviluppo
+
+**Stato**: accettato dal DM il 2026-10-08 · **Dettaglio**:
+[ADR-0084](ADR-0084-il-collaudo-delle-mappe-e-uno-strumento-di-sviluppo.md).
+
+`collaudo_mappe.py` è uno strumento di chi disegna le mappe e della CI, non
+della sera: sta sul piano di sviluppo della tabella qui sopra, con `tcod` (e
+`numpy`) **obbligatoria** e dichiarata in `requirements-dev.txt`. La misura
+che l'ha fatta entrare: la linea di vista da tutte le 43.423 celle del corpus
+in 0,6 s, contro 69,9 s in libreria standard, con lo stesso risultato.
+
+La regola di questa ADR non cambia per ciò che il DM esegue: renderer,
+export UVTT e la catena della sessione restano in libreria standard, e
+`test_ambiente` lo verifica. Le librerie Python degli strumenti sono ora
+quattro (`pyyaml`, `Pillow`, `tiktoken`, `tcod`), e due sono obbligatorie.

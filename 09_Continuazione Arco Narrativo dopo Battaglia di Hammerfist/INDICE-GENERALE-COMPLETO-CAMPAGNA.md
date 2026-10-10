@@ -151,6 +151,8 @@ File dedicati in `Bestiario/villain/` e `Bestiario/png/`. Ogni cartella contiene
 | `ERRATA-PARTE1-Quest-Hellas-35-Verification.md` | Correzioni 3.5 SRD — stat blocks, action economy (bonus action→swift), Touch/FF AC, BAB/Grapple |
 | `ERRATA-PARTE2-3-35-Verification.md` | Verifica 3.5 di P2A/P2B/RHEST/P3 + **upscale del boss finale** (Azarr Kul → Chierico 12/Guerriero 4, CR 17); attacchi naturali Regiarix, taglia Saarvith, catch coerenza Tyrgarun |
 | `Arco-Post-Hammerfist-TESORO-WBL-AUDIT.md` | **Audit tesoro (WBL 3.5)** — distribuzione ~380k mo eq. per incontro (Rhest hoard, Torre, Torneo, Rethmar); corregge il gap ~8× dell'INDICE §Loot |
+| `Arco-Post-Hammerfist-BANCHI-E-MERCATI.md` | **I banchi**: dove si compra, si vende e si baratta (Cerchio, Dauth, Torre, campi drow, recinti di loxo e centauri, Rethmar, Channathgate, Sal, il Collezionista), con prezzi SRD, quantità, limiti d'acquisto e casse; §9 le monete antiche |
+| `Arco-Post-Hammerfist-LOCANDE.md` | **Le locande**: dove si dorme a Dauth, Rethmar e Channathgate quartiere per quartiere, coi prezzi a notte, le stanze libere e cosa si sente al bancone |
 | `Arco-Post-Hammerfist-INCONTRI-VIAGGIO-CANNATH-VALE.md` | **Tabelle d% incontri di viaggio** — 4 macro-zone × 2 finestre (Day 20-30 / 31-42), EL 9-13, ≥1/3 non-combat; riusa MISSIONI-BREVI e Bestiario |
 
 ---

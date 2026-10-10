@@ -3,7 +3,7 @@ Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md
 
 # Arco Post-Hammerfist – PARTE 1A  
 
-## Timeline Quest Hellas (D&D 3.5 compliant)
+## Timeline Quest Hella (D&D 3.5 compliant)
 
 ### Scala e convenzioni
 
@@ -17,25 +17,25 @@ Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md
 | Giorno | Evento principale                                              | Luogo                      | Note |
 |--------|----------------------------------------------------------------|----------------------------|------|
 | 19     | Vittoria a Hammerfist; orda draconica dispersa ma non distrutta | Hammerfist / Valle Elsir   | I PG ottengono tempo limitato. |
-| 20     | L’orda conquista Nimon’s Gap e volge verso la foresta          | Nimon’s Gap, Witchwood     | Inizio pressioni su Hellas. |
+| 20     | L’orda conquista Nimon’s Gap e volge verso la foresta          | Nimon’s Gap, Witchwood     | Inizio pressioni su Hella. |
 | 21     | L’orda saccheggia Talar; i primi incendi nel Witchwood         | Talar, margine Witchwood   | Cerchio sacro minacciato. |
 | 22     | Voci di movimento verso Brindol e Dauth                        | Valle Elsir                | Gancio per Torre Artemis e Torneo Dauth. |
-| 23–25  | Quest Hellas (Cerchio, Rituale, Campi Drow)                    | Witchwood                  | Questa parte dell’arco. |
+| 23–25  | Quest Hella (Cerchio, Rituale, Campi Drow)                    | Witchwood                  | Questa parte dell’arco. |
 | 26–31  | Missioni secondarie RHoD, Torre Invisibile, Torneo Dauth      | Vari                       | Collegamento con Parte 2A e 2B. |
 | 32     | Inizio assedio di Brindol                                      | Brindol                    | Convergenza finale. |
 
 ---
 
-## 1. Contesto della Quest Hellas
+## 1. Contesto della Quest Hella
 
-Hellas è una druida/guardiana del Cerchio Sacro nel Witchwood, incaricata di mantenere un nodo di potere naturale che ancora la magia della foresta.[file:20]  
+Hella è una druida/guardiana del Cerchio Sacro nel Witchwood, incaricata di mantenere un nodo di potere naturale che ancora la magia della foresta.[file:20]  
 
 La Red Hand sta usando piromanti drow per bruciare il bosco e corrompere gli spiriti, anticipando l’assedio di Brindol.[file:20]
 
 Obiettivi dei PG:
 
-- Difendere Hellas e il Cerchio Sacro (Encounter “Cerchio-Treant”).[file:20]  
-- Completare il Rituale di Trasformazione di Hellas in avatar elementale della natura (Encounter “Rituale”).[file:20]  
+- Difendere Hella e il Cerchio Sacro (Encounter “Cerchio-Treant”).[file:20]  
+- Completare il Rituale di Trasformazione di Hella in avatar elementale della natura (Encounter “Rituale”).[file:20]  
 - Distruggere o disperdere i campi avanzati dei Drow Pyromancer nel Witchwood (Supplemento Campi Drow).[file:20]
 
 Il completamento influenza:
@@ -45,7 +45,7 @@ Il completamento influenza:
 
 ---
 
-## 2. Encounter 1 – Cerchio Sacro di Hellas
+## 2. Encounter 1 – Cerchio Sacro di Hella
 
 ### Setup tattico
 
@@ -55,7 +55,7 @@ Il completamento influenza:
 
 Elementi chiave:
 
-- Centro: Hellas priva di preparazione combattiva pesante (focus rituale), al centro di un Cerchio di rune di 9 m di raggio.[file:20]  
+- Centro: Hella priva di preparazione combattiva pesante (focus rituale), al centro di un Cerchio di rune di 9 m di raggio.[file:20]  
 - Due Drow Pyromancer (caster 3.5): bombardamento a distanza con palla di fuoco, web, controllo area.[file:20]  
 - Un Treant Corrotto Huge come boss frontale, che tenta di schiacciare i PG e spezzare il cerchio.[file:20]
 
@@ -63,7 +63,7 @@ Posizionamento iniziale:
 
 - PG: entrata da sud, circa fila 4, sparsi su fronte 6–8 quadretti.[file:20]  
 - Drow Pyromancer: circa fila 20, uno a colonna 10, uno a colonna 30, entrambi in copertura dietro tronchi.[file:20]  
-- Treant Corrotto: fila 20 al centro, davanti a Hellas, tra i PG e il cerchio.[file:20]
+- Treant Corrotto: fila 20 al centro, davanti a Hella, tra i PG e il cerchio.[file:20]
 
 Regole terreno:
 
@@ -73,7 +73,7 @@ Regole terreno:
 ### Condizioni ambientali
 
 - Effetto “Desecrate” locale (versione 3.5): bonus profano +1 a tiri per colpire, danni e TS ai non morti nella zona, e –3 a turn undead dei PG.[file:20]  
-- Aura di corruzione: Hellas subisce –2 a concentrazione finché il cerchio non è purificato.[file:20]
+- Aura di corruzione: Hella subisce –2 a concentrazione finché il cerchio non è purificato.[file:20]
 
 ### Stat principali nemici (estratto 3.5)
 
@@ -113,13 +113,13 @@ Treant Corrotto (CR 11 – Treant modificato).[file:20]
 
 ### Obiettivi encounter
 
-- Successo pieno: Hellas sopravvive, il Cerchio non viene spezzato, almeno uno dei Drow è catturato o ucciso.[file:20]  
-- Successo parziale: Hellas sopravvive ma il Cerchio viene danneggiato (malus al rituale successivo).[file:20]  
-- Fallimento: Hellas muore o il Cerchio viene distrutto; la foresta perde un importante nodo di potere, con impatto negativo sull’assedio di Brindol.[file:20]
+- Successo pieno: Hella sopravvive, il Cerchio non viene spezzato, almeno uno dei Drow è catturato o ucciso.[file:20]  
+- Successo parziale: Hella sopravvive ma il Cerchio viene danneggiato (malus al rituale successivo).[file:20]  
+- Fallimento: Hella muore o il Cerchio viene distrutto; la foresta perde un importante nodo di potere, con impatto negativo sull’assedio di Brindol.[file:20]
 
 ---
 
-## 3. Encounter 2 – Rituale di Trasformazione di Hellas
+## 3. Encounter 2 – Rituale di Trasformazione di Hella
 
 ### Struttura del rituale (3 fasi – circa 1 ora)
 
@@ -134,11 +134,11 @@ Ogni fase richiede prove di abilità coordinate; disturbi seri (danni, falliment
 - Durata: 20 minuti.  
 - Prove richieste:  
   - Prove di Conoscenze (natura) CD 20 (guidare le energie della foresta).[file:20]  
-  - Prove di Concentrazione CD 18 per Hellas e per eventuali caster che l’aiutano, ogni volta che subiscono danni o che c’è disturbo ambientale.[file:20]
+  - Prove di Concentrazione CD 18 per Hella e per eventuali caster che l’aiutano, ogni volta che subiscono danni o che c’è disturbo ambientale.[file:20]
 
 Se la maggioranza delle prove della fase fallisce:
 
-- Hellas riceve 2d6 danni non letali per feedback magico.[file:20]  
+- Hella riceve 2d6 danni non letali per feedback magico.[file:20]  
 - Tutte le DC delle fasi successive aumentano di +2.[file:20]
 
 ### Fase 2 – Evocazione
@@ -156,39 +156,39 @@ Effetti:
 
 - Durata: 20 minuti.  
 - Prove richieste:  
-  - Saggezza di Hellas e di un PG “guida” (Tiro Salvezza sulla Volontà CD 18) per accettare l’inondazione di potere.[file:20]  
-  - Concentrazione di Hellas CD 20 se subisce danno durante la fase.[file:20]
+  - Saggezza di Hella e di un PG “guida” (Tiro Salvezza sulla Volontà CD 18) per accettare l’inondazione di potere.[file:20]  
+  - Concentrazione di Hella CD 20 se subisce danno durante la fase.[file:20]
 
 Risultato di successo completo:
 
-- Hellas diventa “Avatar della Natura”:  
+- Hella diventa “Avatar della Natura”:  
   - Ottiene temporaneamente 50 pf temporanei, DR 5/–, resistenza al fuoco 20, e un attacco di schianto 2d8 + bonus di Forza.[file:20]  
   - Può evocare 1d4 Treant alleati CR 8 una volta durante l’assedio di Brindol.[file:20]
 
 Fallimento della fase 3:
 
-- Hellas sopravvive ma non ottiene la trasformazione completa; si applica solo un effetto minore (per esempio, capacità di lanciare incantesimi di cura potenziati limitati durante l’assedio).[file:20]
+- Hella sopravvive ma non ottiene la trasformazione completa; si applica solo un effetto minore (per esempio, capacità di lanciare incantesimi di cura potenziati limitati durante l’assedio).[file:20]
 
 ---
 
 ## 4. Oggetti e sinergie (riassunto)
 
-### Collana dei Semi di Hellas
+### Collana dei Semi di Hella
 
 - Funzione: può essere attivata una volta per trasformare 1d4 alberi enormi in Treant alleati CR 8.[file:20]  
-- Attivazione: azione di round completo, utilizzabile solo da Hellas o da un druido di livello 10+.[file:20]  
+- Attivazione: azione di round completo, utilizzabile solo da Hella o da un druido di livello 10+.[file:20]  
 - Uso previsto: tipicamente durante l’assedio di Brindol per creare una linea difensiva viva.[file:20]
 
 ### Cuore della Forgia (da documenti Corona di Adamantio)
 
 - Effetto trasversale: entro 9 m fornisce un bonus sacro +1 ai tiri per colpire e ai danni delle armi che colpiscono creature legate alla Red Hand o caotiche malvagie.[file:20]  
-- Sinergia: se presente durante la Quest Hellas, può ridurre l’impatto degli incantesimi di fuoco dei Drow Pyromancer (per esempio fornendo un bonus +1 ai TS contro fuoco ai portatori).[file:20]
+- Sinergia: se presente durante la Quest Hella, può ridurre l’impatto degli incantesimi di fuoco dei Drow Pyromancer (per esempio fornendo un bonus +1 ai TS contro fuoco ai portatori).[file:20]
 
 ---
 
 ## 5. Output meccanico sulla campagna
 
-Se i PG completano con successo la Quest Hellas (Cerchio difeso + Rituale riuscito + almeno un campo Drow distrutto):
+Se i PG completano con successo la Quest Hella (Cerchio difeso + Rituale riuscito + almeno un campo Drow distrutto):
 
 - Durante l’assedio di Brindol:  
   - +1 unità di supporto “Treant alleati” o “Spiriti della Foresta” nella risoluzione di massa.[file:20]  

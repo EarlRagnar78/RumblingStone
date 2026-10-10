@@ -130,7 +130,7 @@ un'informazione (la cantina dell'oratorio, `04-LUOGHI` §1.1) e chiudi il sandbo
 |---|---|---|
 | **0:00** | Riassunto della prima serata **fatto dai giocatori**, non da te. Due minuti a testa, massimo | |
 | **0:15** | **Le prove in pista**. Un tiro di Cavalcare, e via | `02-GIORNO-2` §1 |
-| **0:30** | **I Partiti**. Vanna dentro, gli altri fuori: **taglia ogni cinque minuti** | `02-GIORNO-2` §2 |
+| **0:30** | **I Partiti**. Vanna dentro, gli altri fuori: **taglia ogni cinque minuti**. Fuori si sta alla tavola, se serve | `02-GIORNO-2` §2 · §2-bis |
 | **1:20** | ☕ **Pausa.** | |
 | **1:30** | **Il duello dei canti**. Tre osterie, non di più | `02-GIORNO-2` §3 · `REGOLE` §3 |
 | **1:55** | **La Cena della vigilia**. Rallenta. Le quattro cose in ordine | `02-GIORNO-2` §4 |

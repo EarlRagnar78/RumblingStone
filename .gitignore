@@ -381,3 +381,18 @@ scripts/comfyui-local/ComfyUI/
 scripts/blender/texture/*/
 # Render 3D delle mappe e loro piani di scena: presentazione, non canone.
 **/rendered/blender/
+
+# Asset di terzi scaricati dal DM (R4 di PIANO-RESA-E-ASSET-DELLE-MAPPE):
+# la licenza di 2-Minute Tabletop chiede di mandare chi vuole i file al sito,
+# quindi restano sulla macchina del DM. Si installano con `dm.py asset installa`.
+asset-esterni/*
+!asset-esterni/README.md
+
+# Le tessere delle texture CC0 delle mappe si committano (D14 di RESA-ASSET):
+# il *.webp qui sopra le escluderebbe, e il 2026-10-09 è entrato l'indice senza.
+!scripts/texture-cc0/*.webp
+
+# Anche le tessere degli oggetti di scena del tema texture (R4-ter, D17): sono
+# rese da modelli 3D CC0 e si committano con il loro indice. I modelli no:
+# stanno in asset-esterni/oggetti-cc0/, già esclusa qui sopra.
+!scripts/oggetti-cc0/*.webp

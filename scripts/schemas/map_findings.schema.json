@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "map_findings/1",
+  "title": "Rapporto di collaudo delle mappe (collaudo_mappe.py, ADR-0082)",
+  "description": "Un rilievo per controllo, con la classe (E errore, A avviso), la cella in coordinate A1 e la deroga se la mappa ne dichiara una. La distanza dalla giocabilita' e' la somma pesata dei rilievi E non derogati.",
+  "type": "object",
+  "required": ["schema", "mappe"],
+  "properties": {
+    "schema": {"const": "map_findings/1"},
+    "mappe": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["file", "mappa", "titolo", "tipo", "dimensioni", "distanza_giocabilita", "rilievi"],
+        "properties": {
+          "file": {"type": "string"},
+          "mappa": {"type": "integer", "minimum": 1},
+          "titolo": {"type": "string"},
+          "tipo": {"type": "string"},
+          "ambiente": {"type": ["string", "null"], "description": "interni, caverna, esterno o abitato (@tipo, D18)"},
+          "dimensioni": {"type": "array", "items": {"type": "integer"}, "minItems": 2, "maxItems": 2},
+          "distanza_giocabilita": {"type": "integer", "minimum": 0},
+          "chiusure": {
+            "description": "Quante porte, grate e sbarre per asse (ADR-0083): EO in un muro est-ovest, NS in un muro nord-sud, ambigue, senza muro intorno, decise con @verso",
+            "type": "object",
+            "properties": {
+              "EO": {"type": "integer", "minimum": 0},
+              "NS": {"type": "integer", "minimum": 0},
+              "ambigue": {"type": "integer", "minimum": 0},
+              "senza_muro": {"type": "integer", "minimum": 0},
+              "dichiarate": {"type": "integer", "minimum": 0}
+            }
+          },
+          "rilievi": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["codice", "classe", "cella", "messaggio", "deroga"],
+              "properties": {
+                "codice": {"type": "string", "pattern": "^[a-z0-9]+/[a-z0-9-]+$"},
+                "classe": {"enum": ["E", "A"]},
+                "cella": {"type": ["string", "null"]},
+                "messaggio": {"type": "string"},
+                "deroga": {"type": ["string", "null"]}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

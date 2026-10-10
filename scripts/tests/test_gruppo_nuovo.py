@@ -227,7 +227,11 @@ def _repo_di_prova(radice: Path) -> None:
     (radice / ".gitignore").unlink()
     shutil.copy(ROOT / ".gitignore", radice / ".gitignore")
     for cmd in (["init", "-q", "-b", "main"], ["config", "user.email", "t@t"],
-                ["config", "user.name", "t"], ["add", "-A"], ["commit", "-q", "-m", "base"]):
+                ["config", "user.name", "t"],
+                # git >= 2.54: dopo il commit la manutenzione riimpacchetta in
+                # background, e scrive in .git/objects mentre la cartella si cancella
+                ["config", "maintenance.auto", "false"], ["config", "gc.auto", "0"],
+                ["add", "-A"], ["commit", "-q", "-m", "base"]):
         subprocess.run(["git", *cmd], cwd=radice, check=True, capture_output=True)
 
 

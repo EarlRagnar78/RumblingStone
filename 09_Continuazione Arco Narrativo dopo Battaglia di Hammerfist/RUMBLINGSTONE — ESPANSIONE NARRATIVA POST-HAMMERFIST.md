@@ -20,7 +20,7 @@ i giocatori *cambiano il mondo* con ogni scelta.
 Il Collezionista non è semplicemente fuggito. Nei mesi trascorsi dall'incontro nel Tana dei Minotauri, ha **infiltrato Rethmar** attraverso la sua rete commerciale: vende statue di cristallo ai nobili e mercanti della città come *rare opere d'arte nanica di epoca pre-Horde*. Il fatto che dentro ogni statua ci sia una persona viva è il suo segreto più redditizio.
 
 **La scoperta (Hook per Artemis e Thorik):**  
-Un mercante di Cannathgate porta a Rethmar una statua di cristallo raffigurante un nano barbuto nell'atto di alzare un'ascia. Commissionata da Lady Kaal come "ornamento storico" per la sala del consiglio. Artemis, con la sua spiccata capacità di leggere gli intrighi nascosti, nota che la statua *pulsa debolmente* (Spellcraft DC 22 o Knowledge Arcana DC 20 — la magia basilare di pietrificazione non dovrebbe persistere su materia inerte).
+Un mercante di Channathgate porta a Rethmar una statua di cristallo raffigurante un nano barbuto nell'atto di alzare un'ascia. Commissionata da Lady Kaal come "ornamento storico" per la sala del consiglio. Artemis, con la sua spiccata capacità di leggere gli intrighi nascosti, nota che la statua *pulsa debolmente* (Spellcraft DC 22 o Knowledge Arcana DC 20 — la magia basilare di pietrificazione non dovrebbe persistere su materia inerte).
 
 La statua è **Dorak Ferropietra**, mastro scultore del clan Hammerfist, scomparso 14 mesi fa. Suo nipote combatteva con i 300 Nani nella Battaglia di Hammerfist. I party lo *potrebbero* conoscere.
 

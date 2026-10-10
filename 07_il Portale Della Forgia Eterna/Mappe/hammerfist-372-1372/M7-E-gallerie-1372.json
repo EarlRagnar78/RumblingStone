@@ -1,0 +1,374 @@
+{
+ "schema_version": "1.0",
+ "title": "M7-E/1372 — I passaggi antichi, livello −2 (Giorno 3 dell'assedio)",
+ "tipo": "tattica",
+ "ambiente": "caverna",
+ "scale_m_per_square": 1.5,
+ "map_size": [
+  34,
+  24
+ ],
+ "base_terrain": "🏰",
+ "north": "N",
+ "regions": [
+  {
+   "terrain": "🟫",
+   "rect": [
+    25,
+    1,
+    2,
+    3
+   ],
+   "label": "Pozzo della scala dalla fucina di Gunnvor"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    25,
+    4,
+    1,
+    6
+   ],
+   "label": "Galleria nord-sud, puntellata"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    6,
+    9,
+    20,
+    1
+   ],
+   "label": "Galleria maestra est-ovest (1,5 m)"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    6,
+    9,
+    1,
+    12
+   ],
+   "label": "Galleria ovest, verso le miniere"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    15,
+    9,
+    1,
+    10
+   ],
+   "label": "Galleria centrale"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    15,
+    18,
+    12,
+    1
+   ],
+   "label": "Galleria bassa"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    25,
+    18,
+    2,
+    4
+   ],
+   "label": "Discesa alla fucina grande"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    17,
+    12,
+    5,
+    3
+   ],
+   "label": "L'affaccio: la galleria si apre sulla volta della fucina grande"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    16,
+    13,
+    1,
+    1
+   ],
+   "label": "Passaggio all'affaccio"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    2,
+    20,
+    5,
+    2
+   ],
+   "label": "Imbocco delle miniere (dove scendono bambini e vecchi)"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    0,
+    15,
+    6,
+    1
+   ],
+   "label": "Tunnel segreto dal cortile (dietro la statua del Re Antenato, H3-1): scavato dopo il 372"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    27,
+    18,
+    7,
+    1
+   ],
+   "label": "Verso il ponte sospeso (3Y) e il Cuore della Montagna"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    16,
+    8,
+    2,
+    1
+   ],
+   "label": "Nicchia del leone"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    19,
+    19,
+    2,
+    1
+   ],
+   "label": "Nicchia del leone"
+  }
+ ],
+ "structures": [
+  {
+   "type": "🔼",
+   "at": [
+    26,
+    1
+   ],
+   "label": "Scala alla fucina di Gunnvor (livello −1)",
+   "collega": "M7-D-livello-1-1372.md Z20"
+  },
+  {
+   "type": "🔽",
+   "at": [
+    26,
+    21
+   ],
+   "label": "Scala alla fucina grande (livello −3)",
+   "collega": "M7-F-fucina-grande-1372.md O02"
+  },
+  {
+   "type": "🕳",
+   "at": [
+    19,
+    13
+   ],
+   "label": "L'affaccio sulla fucina grande: si vede, sotto, la sala più ampia"
+  },
+  {
+   "type": "🏮",
+   "at": [
+    12,
+    8
+   ],
+   "label": "Lampada a olio in una nicchia del muro, ogni dieci passi"
+  },
+  {
+   "type": "🏮",
+   "at": [
+    20,
+    8
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    18,
+    17
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    23,
+    17
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    10,
+    8
+   ]
+  },
+  {
+   "type": "🗿",
+   "at": [
+    17,
+    8
+   ],
+   "label": "Leone di pietra di Zeth, vuoto"
+  },
+  {
+   "type": "🗿",
+   "at": [
+    20,
+    19
+   ],
+   "label": "Leone di pietra di Zeth, vuoto"
+  }
+ ],
+ "hazards": [
+  {
+   "type": "⚡",
+   "at": [
+    8,
+    9
+   ],
+   "label": "Runa di Zeth, accesa (glifo di interdizione)",
+   "effect": "esplode su chi non è nano: 4d8, Riflessi CD 14 dimezza; Cercare e Disattivare Congegni CD 28"
+  },
+  {
+   "type": "⚡",
+   "at": [
+    22,
+    9
+   ],
+   "label": "Runa di Zeth, accesa (glifo di interdizione)",
+   "effect": "esplode su chi non è nano: 4d8, Riflessi CD 14 dimezza; Cercare e Disattivare Congegni CD 28"
+  },
+  {
+   "type": "⚡",
+   "at": [
+    16,
+    18
+   ],
+   "label": "Runa di Zeth, accesa (glifo di interdizione)",
+   "effect": "esplode su chi non è nano: 4d8, Riflessi CD 14 dimezza; Cercare e Disattivare Congegni CD 28"
+  },
+  {
+   "type": "⚡",
+   "at": [
+    3,
+    15
+   ],
+   "label": "Runa di Zeth, accesa (glifo di interdizione)",
+   "effect": "esplode su chi non è nano: 4d8, Riflessi CD 14 dimezza; Cercare e Disattivare Congegni CD 28"
+  },
+  {
+   "type": "🪨",
+   "rect": [
+    6,
+    19,
+    1,
+    2
+   ],
+   "label": "Puntelli crollati",
+   "effect": "la via delle miniere è chiusa"
+  }
+ ],
+ "units": [
+  {
+   "faction": "Hammerfist",
+   "name": "Colonna dei novanta, cinque per round",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     7,
+     9,
+     5,
+     1
+    ]
+   },
+   "quantity": 90
+  },
+  {
+   "faction": "Orda",
+   "name": "Inseguitori dal tunnel della statua",
+   "token": "🔴",
+   "area": {
+    "rect": [
+     0,
+     15,
+     3,
+     1
+    ]
+   },
+   "quantity": 10,
+   "cr": "GS ½"
+  }
+ ],
+ "movements": [
+  {
+   "name": "Ritirata: dal tunnel della statua al Cuore",
+   "path": [
+    [
+     0,
+     15
+    ],
+    [
+     6,
+     15
+    ],
+    [
+     6,
+     9
+    ],
+    [
+     15,
+     9
+    ],
+    [
+     15,
+     18
+    ],
+    [
+     33,
+     18
+    ]
+   ],
+   "color": "#2c8c3c"
+  },
+  {
+   "name": "Riconquista: dal Cuore verso la fucina di Gunnvor",
+   "path": [
+    [
+     33,
+     18
+    ],
+    [
+     25,
+     18
+    ],
+    [
+     25,
+     9
+    ],
+    [
+     25,
+     1
+    ]
+   ],
+   "color": "#1d6fd8"
+  }
+ ],
+ "notes": [
+  "D48 (DM, 2026-10-08): le gallerie di Zeth sono i passaggi antichi della ritirata del Giorno 3 (ARC-08: H3-1 → 3Y ponte sospeso → 3Z incrocio silenzioso → MAPPA 5).",
+  "Le rune nel 1372 sono le difese del Ghostlord (D30): glifi di interdizione dell'SRD legati alla razza, che esplodono su chi non è nano (D48). Zeth le scrisse da incantatore di 9° (Q5): 4d8, Riflessi CD 14 come per una pergamena, un'esplosione per runa. Nella ritirata colpiscono gli inseguitori; nella riconquista anche i PG che non sono nani.",
+  "I leoni di pietra sono la promessa di Zeth nella Scena 5 («i miei leoni di pietra proteggeranno queste gallerie per sempre»), e sono vuoti: gli spiriti sono andati con lui, e in ARC-09 sono i leoni spettrali del Ghostlord. Chi li esamina trova il segno di Zeth."
+ ]
+}

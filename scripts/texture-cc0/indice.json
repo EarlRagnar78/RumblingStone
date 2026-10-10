@@ -1,0 +1,119 @@
+{
+ "lato": 256,
+ "qualita": 60,
+ "terreni": {
+  "⬜": "stone_tiles_02",
+  "🏰": "rock_wall_10",
+  "🏰@interni": "castle_brick_07",
+  "🏰@abitato": "castle_brick_07",
+  "🟫": "dirt_floor",
+  "⬛": "roof_slates_02",
+  "🟩": "leafy_grass",
+  "🌿": "forest_ground_04",
+  "🟨": "sand_01",
+  "⛰": "rock_face_03",
+  "🟤": "rocks_ground_02",
+  "🔳": "monastery_stone_floor"
+ },
+ "texture": {
+  "castle_brick_07": {
+   "fonte": "Poly Haven",
+   "pagina": "https://polyhaven.com/a/castle_brick_07",
+   "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/castle_brick_07/castle_brick_07_diff_1k.jpg",
+   "md5": "8e7b58e4c19c6ff30e38ce10a473b2d0",
+   "licenza": "CC0 1.0",
+   "byte": 13316,
+   "sha256": "22fd1dc559e8098d5a862dd93e16df1ba206403fa3c8af51a284e8d512e04486"
+  },
+  "dirt_floor": {
+   "fonte": "Poly Haven",
+   "pagina": "https://polyhaven.com/a/dirt_floor",
+   "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/dirt_floor/dirt_floor_diff_1k.jpg",
+   "md5": "8cc8bfdfb74fd7761c6d518d13dc4e45",
+   "licenza": "CC0 1.0",
+   "byte": 4794,
+   "sha256": "341769a34a300c0ea8968d36830cf7a72a1810cf71ca9174bf64703e5220222f"
+  },
+  "forest_ground_04": {
+   "fonte": "Poly Haven",
+   "pagina": "https://polyhaven.com/a/forest_ground_04",
+   "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/forest_ground_04/forest_ground_04_diff_1k.jpg",
+   "md5": "6ad9df4d731a238299806f739a26af83",
+   "licenza": "CC0 1.0",
+   "byte": 9584,
+   "sha256": "d3ffde026ca38679c832ccc3adc1f2244ab657e2929379787ca05a5781639d77"
+  },
+  "leafy_grass": {
+   "fonte": "Poly Haven",
+   "pagina": "https://polyhaven.com/a/leafy_grass",
+   "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leafy_grass/leafy_grass_diff_1k.jpg",
+   "md5": "0dbc071e91d6905edfcfbe8eb785a1ab",
+   "licenza": "CC0 1.0",
+   "byte": 11546,
+   "sha256": "49d30b5ef173f22355ac5cea449dfcd13a740db760b6b410112b0637ddf0c2f5"
+  },
+  "monastery_stone_floor": {
+   "fonte": "Poly Haven",
+   "pagina": "https://polyhaven.com/a/monastery_stone_floor",
+   "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/monastery_stone_floor/monastery_stone_floor_diff_1k.jpg",
+   "md5": "8e748f767d8e478438ef748833365754",
+   "licenza": "CC0 1.0",
+   "byte": 4794,
+   "sha256": "cec495a00843521ffacb3cc8a68f7c0ec90a59b905b4c7c7cf4d386b06538a33"
+  },
+  "rock_face_03": {
+   "fonte": "Poly Haven",
+   "pagina": "https://polyhaven.com/a/rock_face_03",
+   "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_face_03/rock_face_03_diff_1k.jpg",
+   "md5": "e4c34abb1aad5befe12754fad507147a",
+   "licenza": "CC0 1.0",
+   "byte": 5940,
+   "sha256": "dacd4f0986c36f609037762a426a334ca0b7173369f997c408eef8ee953c994d"
+  },
+  "rock_wall_10": {
+   "fonte": "Poly Haven",
+   "pagina": "https://polyhaven.com/a/rock_wall_10",
+   "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_wall_10/rock_wall_10_diff_1k.jpg",
+   "md5": "b4e44f07aa635227734accfbeb94798a",
+   "licenza": "CC0 1.0",
+   "byte": 4362,
+   "sha256": "02fe013008bd34bc6ba7bea01699e66907aa5e90d6b9dd5e07548dc0fee57934"
+  },
+  "rocks_ground_02": {
+   "fonte": "Poly Haven",
+   "pagina": "https://polyhaven.com/a/rocks_ground_02",
+   "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rocks_ground_02/rocks_ground_02_col_1k.jpg",
+   "md5": "e13bff613fb440add6d9502b2be35901",
+   "licenza": "CC0 1.0",
+   "byte": 14974,
+   "sha256": "fd45baabf7b7af84abc50e9c7d0feecadf19595fb4f8c90fe3683e6c96824d46"
+  },
+  "roof_slates_02": {
+   "fonte": "Poly Haven",
+   "pagina": "https://polyhaven.com/a/roof_slates_02",
+   "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/roof_slates_02/roof_slates_02_diff_1k.jpg",
+   "md5": "d7683ac63f6d46159790186f2e19919f",
+   "licenza": "CC0 1.0",
+   "byte": 10904,
+   "sha256": "48a8b9c884eb229463367239b8659bd3612c7f5295be00af609b6dc7b24bbd37"
+  },
+  "sand_01": {
+   "fonte": "Poly Haven",
+   "pagina": "https://polyhaven.com/a/sand_01",
+   "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/sand_01/sand_01_diff_1k.jpg",
+   "md5": "c914c8edb419f040e04224081a3f79a5",
+   "licenza": "CC0 1.0",
+   "byte": 5230,
+   "sha256": "0050180303c085f75a27be3698df65614595d48d1b60434614e84d39cdef1790"
+  },
+  "stone_tiles_02": {
+   "fonte": "Poly Haven",
+   "pagina": "https://polyhaven.com/a/stone_tiles_02",
+   "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/stone_tiles_02/stone_tiles_02_diff_1k.jpg",
+   "md5": "8d2ebfc3505efbb610aa5010d38d2df8",
+   "licenza": "CC0 1.0",
+   "byte": 4870,
+   "sha256": "815b27e0d802b5dec93d3f4f2448dbdba91f86d19c4e24e51ecda505a28658ce"
+  }
+ }
+}

@@ -154,6 +154,51 @@
       "deterministic": true
     },
     {
+      "name": "asset_2mtt",
+      "description": "«Ho scaricato il pacchetto dei dungeon: come lo metto a disposizione delle mappe senza committarlo e senza uscire dalla licenza?»\n\nInstalla i pacchetti di 2-Minute Tabletop che il DM ha scaricato, per il tema dipinto delle mappe (R4): estrae solo immagini e licenze in asset-esterni/ (ignorata da git), rifiuta percorsi pericolosi e link, registra categoria e impronte. `controlla` boccia la tabella simbolo → file che usa un pacchetto premium o un file assente.",
+      "use_case": "«Ho scaricato il pacchetto dei dungeon: come lo metto a disposizione delle mappe senza committarlo e senza uscire dalla licenza?»",
+      "invocation": "python3 scripts/asset_2mtt.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "azione": {
+            "type": "string",
+            "description": "installa <zip> --categoria base|premium [--nome] · stato · controlla",
+            "enum": [
+              "installa",
+              "stato",
+              "controlla"
+            ]
+          },
+          "categoria": {
+            "type": "string",
+            "description": "base = offerta libera, CC BY-NC · premium = a pagamento, solo al tavolo",
+            "enum": [
+              "base",
+              "premium"
+            ]
+          },
+          "nome": {
+            "type": "string",
+            "description": "Nome del pacchetto (default: dal nome dello zip)."
+          }
+        },
+        "required": [
+          "azione"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "asset-esterni/2mtt/"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "zip rifiutato o tabella che viola licenza o pacchetti",
+        "2": "errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
       "name": "blender_costruisci_mappa",
       "description": "«Che cosa gira dentro Blender quando chiedo il render di una mappa, e perché questo file non si lancia a mano?»\n\nLo script che gira DENTRO Blender: dal piano di scena costruisce i solidi, la camera e il lock di luce, e rende. Non si lancia a mano — il driver e' render_map_blender.py, dove sta tutta la logica provabile senza GPU.",
       "use_case": "«Che cosa gira dentro Blender quando chiedo il render di una mappa, e perché questo file non si lancia a mano?»",
@@ -181,6 +226,84 @@
       "deterministic": false
     },
     {
+      "name": "blender_rendi_oggetti",
+      "description": "«Che cosa gira dentro Blender quando rendo gli oggetti di scena del tema texture, e dove stanno i lock di luce e scala?»\n\nLo script che gira DENTRO Blender (o con il modulo bpy): importa ogni modello 3D CC0, lo centra nella cella con l'asse lungo est-ovest e la stessa impronta, e lo rende dall'alto con camera ortografica, sole da nord-ovest e ombra raccolta su un piano trasparente. Non si lancia a mano: il driver è build_oggetti_cc0.py.",
+      "use_case": "«Che cosa gira dentro Blender quando rendo gli oggetti di scena del tema texture, e dove stanno i lock di luce e scala?»",
+      "invocation": "blender -b --factory-startup -noaudio -P scripts/blender/rendi_oggetti.py -- <lavoro.json>",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "lavoro": {
+            "type": "string",
+            "description": "Il lavoro scritto dal driver: i lock e, per ogni tessera, il modello e il PNG d'uscita."
+          }
+        },
+        "required": [
+          "lavoro"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<uscita dichiarata nel lavoro>.png"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "eseguito fuori da Blender, lavoro illeggibile, modello che non si importa o render fallito"
+      },
+      "deterministic": false
+    },
+    {
+      "name": "build_emoji_noto",
+      "description": "«Una mappa dichiara un simbolo suo: si vede uguale su ogni macchina?»\n\nIl ripiego per le emoji locali delle mappe (ADR-0085): per ogni emoji che una griglia usa e la legenda universale non conosce, scarica l'SVG di Noto Emoji (Apache-2.0, commit fissato), rinomina gli id interni e lo scrive in scripts/emoji-noto/, con licenza e crediti accanto. Il renderer lo incorpora al posto del font di sistema. --check non usa la rete.",
+      "use_case": "«Una mappa dichiara un simbolo suo: si vede uguale su ogni macchina?»",
+      "invocation": "python3 scripts/build_emoji_noto.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Non scarica: esce 1 se un'emoji locale del corpus non ha il suo SVG."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "scripts/emoji-noto/"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "emoji locale senza SVG (--check)"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "build_font_mappe",
+      "description": "«Le mappe hanno la faccia dei volumi su ogni macchina? Ho aggiunto un carattere che il sottoinsieme non ha.»\n\nRicava dai font OFL dei volumi (scripts/fonts/) i due sottoinsiemi woff2 a peso fisso che il renderer incorpora in ogni mappa: EB Garamond regolare per il testo, Cinzel grassetto per titoli ed etichette (ADR-0085). Scrive anche copertura.json, con i caratteri e le loro larghezze, che il renderer usa per stringere i titoli che non entrano. fonttools serve solo qui; il renderer resta in libreria standard.",
+      "use_case": "«Le mappe hanno la faccia dei volumi su ogni macchina? Ho aggiunto un carattere che il sottoinsieme non ha.»",
+      "invocation": "python3 scripts/build_font_mappe.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Non scrive: esce 1 se manca un woff2 o non combacia con copertura.json."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "scripts/fonts/mappe/"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "sottoinsiemi mancanti o diversi (--check)",
+        "2": "fonttools mancante"
+      },
+      "deterministic": true
+    },
+    {
       "name": "build_legend",
       "description": "«Ho cambiato un simbolo nella legenda: come lo faccio arrivare a renderer, export UVTT, import e catena Blender tutti insieme?»\n\nDeriva scripts/legend.json dalla fonte unica scritta a mano scripts/legend.yaml (ADR-0048). Il YAML porta i commenti — la memoria di perche' una tenda e' un muro sta accanto al dato — ma pyyaml e' un debito dichiarato (ADR-0037) e non puo' entrare nel percorso di rendering: il generatore lo usa, i consumatori leggono il JSON con json di stdlib.",
       "use_case": "«Ho cambiato un simbolo nella legenda: come lo faccio arrivare a renderer, export UVTT, import e catena Blender tutti insieme?»",
@@ -203,6 +326,129 @@
         "0": "ok",
         "1": "fuori sincronia (--check)",
         "2": "pyyaml mancante"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "build_oggetti_cc0",
+      "description": "«Come metto sulle mappe rocce, statue, letti e barili veri al posto dei glifi, senza problemi di licenza e con la stessa luce per tutti?»\n\nGli oggetti di scena del tema texture delle mappe (R4-ter, D17 di RESA-ASSET): scarica i glTF 1k dei modelli Poly Haven fissati, ne verifica l'MD5 contro l'API, estrae i modelli Quaternius dallo zip Standard con impronta e licenza CC0 verificate, li rende dall'alto con Blender con luce, scala e camera fisse e scrive in scripts/oggetti-cc0/ le tessere webp e l'indice. --check non usa la rete.",
+      "use_case": "«Come metto sulle mappe rocce, statue, letti e barili veri al posto dei glifi, senza problemi di licenza e con la stessa luce per tutti?»",
+      "invocation": "python3 scripts/build_oggetti_cc0.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Niente rete: le tessere combaciano con l'indice, sono CC0 e vengono da modelli verificati; esce 0 se le tessere non sono ancora fatte."
+          },
+          "prova": {
+            "type": "boolean",
+            "description": "Solo i modelli del giro di prova (PILOTA), per il confronto con il DM."
+          },
+          "scarica-solo": {
+            "type": "boolean",
+            "description": "Scarica e verifica i modelli di Poly Haven in asset-esterni/oggetti-cc0/, senza Blender."
+          },
+          "rendi": {
+            "type": "boolean",
+            "description": "Rende dai modelli già scaricati, senza rete, dopo averne riverificato l'impronta."
+          },
+          "quaternius": {
+            "type": "string",
+            "description": "Lo zip Fantasy Props MegaKit [Standard]: impronta fissata, licenza CC0 letta, modelli della tabella estratti."
+          },
+          "elenca-quaternius": {
+            "type": "string",
+            "description": "Impronta, file di licenza e modelli glTF dello zip, per scrivere la tabella sui nomi veri."
+          },
+          "misura-stile": {
+            "type": "boolean",
+            "description": "Luminanza, contrasto, saturazione e dettaglio di ogni tessera, con le medie per fonte."
+          },
+          "blender": {
+            "type": "string",
+            "description": "Il comando di Blender, se non è nel PATH (senza: il binario, poi il modulo bpy)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "asset-esterni/oggetti-cc0/",
+        "scripts/oggetti-cc0/"
+      ],
+      "exit_codes": {
+        "0": "ok (anche: tessere non ancora fatte, con --check)",
+        "1": "MD5 o impronta che non combacia, licenza non CC0, tessera mancante o non verificata, render fallito",
+        "2": "Pillow assente, o Blender assente quando serve rendere"
+      },
+      "deterministic": false
+    },
+    {
+      "name": "build_texture_cc0",
+      "description": "«Come do alle mappe i materiali veri, pietra, terra, roccia, senza problemi di licenza se un giorno pubblico?»\n\nLe texture CC0 dei terreni per il tema texture delle mappe (D13-D15 di RESA-ASSET): scarica da Poly Haven la diffusa 1k di 11 texture fissate, ne controlla l'MD5 contro l'API, la riduce a una tessera webp da 256 px e scrive scripts/texture-cc0/ con l'indice. --check non usa la rete.",
+      "use_case": "«Come do alle mappe i materiali veri, pietra, terra, roccia, senza problemi di licenza se un giorno pubblico?»",
+      "invocation": "python3 scripts/build_texture_cc0.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Niente rete: le tessere combaciano con l'indice; esce 0 se le texture non sono ancora scaricate."
+          },
+          "da-cartella": {
+            "type": "string",
+            "description": "Costruisce dai <id>_diff_1k.jpg già scaricati in questa cartella."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "scripts/texture-cc0/"
+      ],
+      "exit_codes": {
+        "0": "ok (anche: texture non ancora scaricate, con --check)",
+        "1": "MD5 o impronta che non combacia, tessera mancante",
+        "2": "Pillow assente"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "collaudo_mappe",
+      "description": "«Questa mappa si gioca? La porta sta nel muro, la scala porta da qualche parte, l'ogre arriva ai PG?»\n\nCollauda le griglie-emoji come grafo (ADR-0082): simboli ignoti, legende locali che rovesciano un universale, nord, porte nel muro, scale con la loro gemella, porte segrete fuori dalla vista dei giocatori, unita' e obiettivi raggiungibili con le regole di movimento SRD, ingombro dei Grandi, M1, M2 e M4 come avvisi; l'asse di ogni porta, grata o fila di sbarre (ADR-0083) e le direttive @verso. In sola lettura.",
+      "use_case": "«Questa mappa si gioca? La porta sta nel muro, la scala porta da qualche parte, l'ogre arriva ai PG?»",
+      "invocation": "python3 scripts/collaudo_mappe.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "files": {
+            "type": "string",
+            "description": "Master markdown da collaudare (default: il corpus della campagna)."
+          },
+          "json": {
+            "type": "string",
+            "description": "Scrive il rapporto in JSON (scripts/schemas/map_findings.schema.json)."
+          },
+          "strict": {
+            "type": "boolean",
+            "description": "Esce 1 se resta un rilievo E non derogato."
+          },
+          "solo-errori": {
+            "type": "boolean",
+            "description": "Nel testo mostra solo i rilievi E."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<--json>"
+      ],
+      "exit_codes": {
+        "0": "rapporto prodotto, anche con rilievi",
+        "1": "rilievi E non derogati con --strict",
+        "2": "errore d'uso (file non trovato)"
       },
       "deterministic": true
     },
@@ -420,6 +666,118 @@
       "deterministic": true
     },
     {
+      "name": "misura_resa",
+      "description": "«Questa tessera, questa texture, questa modifica al renderer migliora davvero la mappa o la peggiora, e di quanto?»\n\nLa resa delle mappe misurata simbolo per simbolo e terreno per terreno (R8 di RESA-ASSET, D23-D26, ADR-0086): ogni simbolo-oggetto posato su un banco di prova reso dal renderer vero, nei due temi e su due terreni, rasterizzato con Chrome; contrasto del contorno (WCAG 1.4.11), bordo, SSIM col vicino, ΔE dalla tavolozza; per i terreni ΔE dal vicino, griglia, segnalino. Confronta i candidati coi glifi, prepara la pagina di scelta del DM (oggetti fra glifo e più fonti di tessere, terreni fra le texture; alla cieca o aperta, con «nessuna va bene» e «non vedo differenze», senza opzioni identiche) e ne registra i voti rivelando le fonti, tara alone e velature del tema texture; --check boccia ogni misura peggiorata oltre il 5% rispetto a scripts/scheda-resa.json; affianca mostra una mappa com'era a una revisione git e com'è sul disco, con la quota di pixel cambiati.",
+      "use_case": "«Questa tessera, questa texture, questa modifica al renderer migliora davvero la mappa o la peggiora, e di quanto?»",
+      "invocation": "python3 scripts/misura_resa.py --check",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "azione": {
+            "type": "string",
+            "description": "glifi · candidati DIR · terreni · coppie DIR [--anche DIR2] · terreni-scelta DIR · voti voti.json · appresa B.json · tara · affianca MAPPA.svg -o out.png · velature MASTER.md -o out.png",
+            "enum": [
+              "glifi",
+              "candidati",
+              "terreni",
+              "coppie",
+              "voti",
+              "appresa",
+              "tara",
+              "affianca",
+              "velature",
+              "terreni-scelta"
+            ]
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Ricalcola e confronta con la scheda committata: esce 1 se una misura peggiora oltre il 5%."
+          },
+          "aggiorna": {
+            "type": "boolean",
+            "description": "Riscrive scripts/scheda-resa.json con le misure di oggi."
+          },
+          "o": {
+            "type": "string",
+            "description": "Dove scrivere il JSON, la pagina delle coppie o la taratura."
+          },
+          "seme": {
+            "type": "integer",
+            "description": "Il seme dell'ordine delle coppie."
+          },
+          "celle": {
+            "type": "string",
+            "description": "Scrive anche le celle in PNG, per misura_resa_appresa.py."
+          },
+          "rispetto-a": {
+            "type": "string",
+            "description": "affianca: la revisione git con cui confrontare la mappa."
+          },
+          "ritaglio": {
+            "type": "string",
+            "description": "affianca: solo il rettangolo X0,Y0,X1,Y1 in pixel dell'SVG."
+          },
+          "registra": {
+            "type": "boolean",
+            "description": "candidati: scrive i verdetti nella scheda, dove li legge build_oggetti_cc0 --check."
+          },
+          "anche": {
+            "type": "string",
+            "description": "coppie: un'altra fonte di tessere da confrontare (ComfyUI accanto a CC0)."
+          },
+          "aperta": {
+            "type": "boolean",
+            "description": "coppie, terreni-scelta: sotto ogni immagine la fonte e le misure, invece che alla cieca."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "scripts/scheda-resa.json",
+        "scripts/texture-cc0/taratura.json"
+      ],
+      "exit_codes": {
+        "0": "ok (anche: nessun browser, o scheda non ancora scritta, con --check)",
+        "1": "una misura peggiorata oltre la tolleranza",
+        "2": "numpy o scikit-image assenti, o uso errato"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "misura_resa_appresa",
+      "description": "«Le metriche apprese della community sono d'accordo con me su quale cella è migliore?»\n\nIl secondo parere della misura della resa (D26): CLIP-IQA, LPIPS e DISTS di piq (Apache-2.0) sulle celle esportate da misura_resa.py --celle. Gira sulla macchina del DM con torch e i pesi che piq scarica; registra versioni e sha256 dei pesi; non blocca niente.",
+      "use_case": "«Le metriche apprese della community sono d'accordo con me su quale cella è migliore?»",
+      "invocation": "python3 scripts/misura_resa_appresa.py <celle> -o appresa.json",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "celle": {
+            "type": "string",
+            "description": "La cartella scritta da misura_resa.py --celle."
+          },
+          "o": {
+            "type": "string",
+            "description": "Il JSON delle misure."
+          }
+        },
+        "required": [
+          "celle",
+          "o"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<uscita>.json"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "cartella vuota o illeggibile",
+        "2": "torch o piq assenti"
+      },
+      "deterministic": true
+    },
+    {
       "name": "render_map_blender",
       "description": "«Questa mappa in volume, per una tavola o per ControlNet: come la ottengo senza che la geometria del 3D e quella dell'SVG possano divergere?»\n\nLa mappa in volume: risolve la geometria con lo stesso paint() che alimenta l'SVG, fonde le celle in solidi e la fa rendere a Blender in ortografica. Con --profondita produce il passo di profondità per ControlNet depth, così l'illustrazione eredita la pianta esatta.",
       "use_case": "«Questa mappa in volume, per una tavola o per ControlNet: come la ottengo senza che la geometria del 3D e quella dell'SVG possano divergere?»",
@@ -520,15 +878,26 @@
           "strict": {
             "type": "boolean",
             "description": "Fallisce su anomalie non fatali."
+          },
+          "tema": {
+            "type": "string",
+            "description": "pergamena (default, in rendered/) o texture: terreni con le texture CC0 di scripts/texture-cc0/, in rendered-texture/",
+            "enum": [
+              "pergamena",
+              "texture"
+            ]
+          },
+          "tutti-i-master": {
+            "type": "boolean",
+            "description": "Ogni master che ha già un SVG in rendered/: per rifare un tema intero."
           }
         },
-        "required": [
-          "files"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "outputs": [
-        "**/rendered/*.svg"
+        "**/rendered/*.svg",
+        "**/rendered-texture/*.svg"
       ],
       "exit_codes": {
         "0": "ok",
@@ -566,6 +935,42 @@
       "deterministic": true
     },
     {
+      "name": "watabou_citta",
+      "description": "«Mi serve la pianta di Dauth assediata: come la rigenero uguale fra un mese?»\n\nDa una scheda *.watabou.json committata (seme e parametri) ricava sempre lo stesso URL del Medieval Fantasy City Generator di Watabou, con export=svg|png|json se richiesto: la pianta di una città si rifà identica e il repo sa da dove viene (R5).",
+      "use_case": "«Mi serve la pianta di Dauth assediata: come la rigenero uguale fra un mese?»",
+      "invocation": "python3 scripts/watabou_citta.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "scheda": {
+            "type": "string",
+            "description": "La scheda *.watabou.json."
+          },
+          "export": {
+            "type": "string",
+            "description": "Aggiunge export=…: il generatore esporta appena ha finito.",
+            "enum": [
+              "svg",
+              "png",
+              "json"
+            ]
+          }
+        },
+        "required": [
+          "scheda"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "scheda non valida"
+      },
+      "deterministic": true
+    },
+    {
       "name": "campaign_branch",
       "description": "«Sono sul branch giusto per scrivere canone, o sto per sporcare main?»\n\nGuardia e gestione del branch-per-gruppo campaign-group-<nome>: il canone vivo si scrive solo li' (ADR-0007).",
       "use_case": "«Sono sul branch giusto per scrivere canone, o sto per sporcare main?»",
@@ -573,7 +978,7 @@
       "inputSchema": {
         "type": "object",
         "properties": {
-          "status|guard|ensure": {
+          "comando": {
             "type": "string",
             "description": "status = diagnosi; guard = exit 1 se il canone non e' scrivibile; ensure = crea/passa al branch.",
             "enum": [
@@ -588,7 +993,7 @@
           }
         },
         "required": [
-          "status|guard|ensure"
+          "comando"
         ],
         "additionalProperties": false
       },
@@ -1997,6 +2402,29 @@
       "deterministic": true
     },
     {
+      "name": "avvia_languagetool",
+      "description": "«Voglio una verifica in più sulla grammatica di un master, senza mandare il testo a un servizio esterno: come avvio il server?»\n\nAvvia un server LanguageTool 6.8 locale (solo 127.0.0.1) per il secondo lettore di `ciclo_prosa.py segnala --languagetool`; scarica i jar da Maven Central in ~/.cache la prima volta.",
+      "use_case": "«Voglio una verifica in più sulla grammatica di un master, senza mandare il testo a un servizio esterno: come avvio il server?»",
+      "invocation": "./scripts/avvia_languagetool.sh [PORTA]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "PORTA": {
+            "type": "integer",
+            "description": "Porta locale del server (default 8081)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "Java o Maven mancante"
+      },
+      "deterministic": true
+    },
+    {
       "name": "azzera_partita",
       "description": "«Un gruppo nuovo riparte da zero: cosa si azzera, cosa resta, e la sua CI e' verde?»\n\nAzzera la PARTITA per un gruppo nuovo (stato, storico, sessioni, recap) e lascia il prodotto; l'elenco e' dmcore/partita.py. Valida il nuovo state.yaml prima di scrivere e rigenera state.md (ADR-0050 §7).",
       "use_case": "«Un gruppo nuovo riparte da zero: cosa si azzera, cosa resta, e la sua CI e' verde?»",
@@ -2060,7 +2488,7 @@
     },
     {
       "name": "check_plans_discipline",
-      "description": "«Ho toccato scripts/ o un ADR: ho lasciato la riga di tracciatura che la regola d'oro chiede?»\n\nGate ADR-0009: modifiche strutturali (scripts/, skills/, converters/, .github/, plans/adr/) senza riga in plans/CHANGELOG.md -> exit 1.",
+      "description": "«Ho toccato scripts/ o un ADR: ho lasciato la riga di tracciatura che la regola d'oro chiede?»\n\nGate ADR-0009: modifiche strutturali (scripts/, skills/, converters/, .github/, plans/adr/) senza riga in plans/CHANGELOG.md -> exit 1. Passa se i commit strutturali sono tutti di Dependabot (PI-3b).",
       "use_case": "«Ho toccato scripts/ o un ADR: ho lasciato la riga di tracciatura che la regola d'oro chiede?»",
       "invocation": "python3 scripts/check_plans_discipline.py",
       "inputSchema": {
@@ -2121,7 +2549,7 @@
           },
           "languagetool": {
             "type": "string",
-            "description": "URL di un server LanguageTool: aggiunge le segnalazioni grammaticali (facoltativo)."
+            "description": "Il secondo lettore (ADR-0079): URL di un server LanguageTool LOCALE, avviato da scripts/avvia_languagetool.sh. Tre regole, solo localhost, facoltativo e fuori dalla CI."
           },
           "auto": {
             "type": "boolean",
@@ -2292,7 +2720,7 @@
       "inputSchema": {
         "type": "object",
         "properties": {
-          "prep|post|session|recap|handout|maps|hype|dossier|skills|doctor|volume|corredo|bestiario": {
+          "comando": {
             "type": "string",
             "description": "Sottocomando di fase; i flag sono inoltrati allo script sottostante. «volume» e' la catena dei mestieri in ordine (prosa, lingua, manifest, colophon, schermo, stampa, imposizione) e assorbe il «dm.py stampa» mai fatto. «bestiario» passa i flag a uno dei cinque script delle creature (estrai, deriva, attributi, creatura, conformita). «corredo» fa l'intero corredo della serata da un *.corredo.json: controlla i pezzi, fa ogni volume con la catena di «volume» e misura i PDF.",
             "enum": [
@@ -2313,7 +2741,7 @@
           }
         },
         "required": [
-          "prep|post|session|recap|handout|maps|hype|dossier|skills|doctor|volume|corredo|bestiario"
+          "comando"
         ],
         "additionalProperties": false
       },
@@ -2414,6 +2842,44 @@
       "exit_codes": {
         "0": "analisi stampata",
         "1": "--check: un bersaglio e' un archivio dichiarato"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "gate_locale",
+      "description": "«Prima di spingere: la CI tornerà verde?»\n\nI gate del job validate della CI eseguiti sulla macchina, letti da .github/workflows/ci.yml e non da una lista copiata: un gate nuovo in CI entra da solo. Salta, dicendolo, i passi che installano e quelli con espressioni di GitHub che qui non hanno valore; continue-on-error vale come avviso; --rapido salta i corridori dei test.",
+      "use_case": "«Prima di spingere: la CI tornerà verde?»",
+      "invocation": "python3 scripts/gate_locale.py --rapido",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "rapido": {
+            "type": "boolean",
+            "description": "Salta i corridori dei test (unittest, pytest)."
+          },
+          "elenco": {
+            "type": "boolean",
+            "description": "Elenca i passi e cosa ne farebbe, senza eseguire."
+          },
+          "solo": {
+            "type": "string",
+            "description": "Esegue solo i passi il cui nome o comando contiene il testo."
+          },
+          "base": {
+            "type": "string",
+            "description": "Il ramo per i gate che confrontano."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "tutti i gate bloccanti verdi",
+        "1": "almeno un gate rosso",
+        "2": "ci.yml illeggibile"
       },
       "deterministic": true
     },
@@ -3044,7 +3510,7 @@
     },
     {
       "name": "validate_prosa",
-      "description": "«Questo testo suona scritto da una macchina, e la riscrittura l'ha migliorato o peggiorato?»\n\nMisura la norma di italiano-nativo.md: calchi a firma inequivocabile (realizzi che, assumi che, eventualmente, nominalizzazioni) sempre; possessivo sulle parti del corpo e progressivo SOLO nel read-aloud (dipendono dal registro); tic dell'IA a densita' (antitesi 'non X: e Y' max 1 per documento, maiuscole di portento max 1, trattini lunghi); e la forma inglese di un nome che il glossario vuole tradotto. Non bloccante finche' il rumore non e' a zero; --strict alza a errore. Con --documenti misura guide, ADR, piani e skill invece del contenuto di gioco: sono due prose con due norme (ADR-0035). Con --prima-dopo confronta due versioni dello stesso testo e dice se la riscrittura ha migliorato: e' l'unica misura di qualita' che su questo corpus regge (ADR-0036); sui file nominati stampa sotto anche il profilo delle lunghezze delle frasi, in ordine di lettura con media e scarto, che e' informazione per chi legge e non entra nel verdetto.",
+      "description": "«Questo testo suona scritto da una macchina, e la riscrittura l'ha migliorato o peggiorato?»\n\nMisura la norma di italiano-nativo.md: calchi a firma inequivocabile (realizzi che, assumi che, eventualmente, nominalizzazioni) sempre; possessivo sulle parti del corpo e progressivo SOLO nel read-aloud (dipendono dal registro); tic dell'IA a densita' (antitesi 'non X: e Y' max 1 per documento, maiuscole di portento max 1, trattini lunghi); la forma inglese di un nome che il glossario vuole tradotto e, dal 2026-10-03, le grafie che il foglio di stile (glossario §8) ha già escluso. Non bloccante finche' il rumore non e' a zero; --strict alza a errore. Con --documenti misura guide, ADR, piani e skill invece del contenuto di gioco: sono due prose con due norme (ADR-0035). Con --prima-dopo confronta due versioni dello stesso testo e dice se la riscrittura ha migliorato: e' l'unica misura di qualita' che su questo corpus regge (ADR-0036); sui file nominati stampa sotto anche il profilo delle lunghezze delle frasi, in ordine di lettura con media e scarto, che e' informazione per chi legge e non entra nel verdetto.",
       "use_case": "«Questo testo suona scritto da una macchina, e la riscrittura l'ha migliorato o peggiorato?»",
       "invocation": "python3 scripts/validate_prosa.py",
       "inputSchema": {
@@ -3069,6 +3535,14 @@
           "rispetto-a": {
             "type": "string",
             "description": "La revisione git con cui confrontare (default: HEAD)."
+          },
+          "foglio": {
+            "type": "boolean",
+            "description": "Il foglio di stile (GLOSSARIO-E-LOCALIZZAZIONE.md §8) contro il repo di gioco, archivi esclusi: per ogni grafia esclusa le occorrenze e i file, i refusi aperti (con --strict, exit 1 se ce ne sono) e le scelte del DM ancora in sospeso. ADR-0078."
+          },
+          "proponi-grafie": {
+            "type": "boolean",
+            "description": "Coppie di nomi a una sola lettera di distanza, con almeno un nome del registro dei 322, da portare al foglio di stile. Sono proposte e non rilievi: decide un umano, dopo aver guardato il contesto. Non vede le differenze sull'ultima lettera."
           }
         },
         "required": [],

@@ -320,6 +320,10 @@
         },
         "notes": {
           "type": "string"
+        },
+        "system": {
+          "type": "boolean",
+          "description": "Modifica il sistema fuori dal repo (pacchetti, sudo, container): il server MCP non lo lancia mai."
         }
       }
     },

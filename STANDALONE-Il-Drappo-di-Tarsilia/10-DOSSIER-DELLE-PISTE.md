@@ -354,6 +354,10 @@ ragionare.
   cospiratore, ed è più difficile da combattere.
 - **La piena del G3 sera** (`06-VILLAIN` §4) è un **epilogo**, non un indizio. Non
   seminarla come mistero: nessuno può fermarla e nessuno la scoprirà per mesi.
+- **La tavola di fuori non è un mistero** (`02-GIORNO-2` §2-bis). Il Maestro sbaglia i
+  numeri e il pilastro li corregge; le frasi dello scrivano sono dicerie della tabella
+  di `04-LUOGHI` §5. Niente di quello che si dice a quella tavola apre o chiude una
+  pista, e non è un secondo falso indizio.
 - **La Sorte non è truccata.** Se i PG barano, Vesca se ne accorge e non dice niente
   (`06-VILLAIN` §1): il sospetto è loro, non del mondo.
 

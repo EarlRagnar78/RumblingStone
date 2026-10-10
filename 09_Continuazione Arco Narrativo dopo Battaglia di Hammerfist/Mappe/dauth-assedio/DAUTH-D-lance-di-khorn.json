@@ -1,0 +1,114 @@
+{
+ "schema_version": "1.0",
+ "title": "Dauth, Carta D — Le lance di Khorn sulle mura ovest (Giorno 3)",
+ "tipo": "tattica",
+ "ambiente": "abitato",
+ "scale_m_per_square": 1.5,
+ "map_size": [
+  14,
+  6
+ ],
+ "base_terrain": "⬜",
+ "north": "E",
+ "regions": [
+  {
+   "terrain": "🏰",
+   "rect": [
+    0,
+    0,
+    14,
+    1
+   ],
+   "label": "Le mura ovest"
+  }
+ ],
+ "structures": [
+  {
+   "type": "🪟",
+   "at": [
+    3,
+    0
+   ],
+   "label": "Feritoia sul fossato ovest"
+  },
+  {
+   "type": "🪟",
+   "at": [
+    6,
+    0
+   ],
+   "label": "Feritoia sul fossato ovest"
+  },
+  {
+   "type": "🪟",
+   "at": [
+    9,
+    0
+   ],
+   "label": "Feritoia sul fossato ovest"
+  },
+  {
+   "type": "🪟",
+   "at": [
+    12,
+    0
+   ],
+   "label": "Feritoia sul fossato ovest"
+  },
+  {
+   "type": "🗼",
+   "at": [
+    0,
+    1
+   ],
+   "label": "Torre d'angolo"
+  },
+  {
+   "type": "🗼",
+   "at": [
+    13,
+    1
+   ],
+   "label": "Torre d'angolo"
+  },
+  {
+   "type": "🔼",
+   "at": [
+    2,
+    1
+   ],
+   "label": "Scala al camminamento",
+   "collega": "fuori mappa ; il camminamento delle mura ovest non ha una griglia: la carta D è di comando, non uno scontro"
+  },
+  {
+   "type": "🔼",
+   "at": [
+    11,
+    1
+   ],
+   "label": "Scala al camminamento",
+   "collega": "fuori mappa ; il camminamento delle mura ovest non ha una griglia: la carta D è di comando, non uno scontro"
+  }
+ ],
+ "units": [
+  {
+   "faction": "Dauth (alleati)",
+   "name": "Le 150 lance di Re Thorek, al comando di Khorn Spada-di-Fuoco: asset, +2 al morale del settore",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     5,
+     2,
+     3,
+     3
+    ]
+   },
+   "quantity": 150
+  }
+ ],
+ "notes": [
+  "Il nord è a destra: in alto c'è l'ovest, il fossato e la cavalleria gnoll, fuori dalla griglia.",
+  "Non è un incontro obbligatorio: Thorik, o Tordek se è libero, decide dove mandare le lance. Lance in tempo, in ritardo o assenti: Carta D di DAY3-CITY-SIEGE e SUBQUEST-Thorik §4.",
+  "Fonte: Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-CITY-SIEGE.md"
+ ]
+}

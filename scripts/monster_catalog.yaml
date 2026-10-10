@@ -324,15 +324,15 @@ monsters:
     role: generalist
     environment: any
     source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Jorr Natherson 8liv.htm"
-  - id: therysol-therisol-ex-ysolde-048979
-    name: "Therysol / Therisol (ex Ysolde)"
+  - id: therysol-ex-ysolde-048979
+    name: "Therysol (ex Ysolde)"
     cr: 9.0
     faction: alleati-del-vale
     role: ally-skirmisher-caster
     environment: urban
     source_file: "Bestiario/png/Therysol/therysol-tiefling-mezzodrago-cr9.md"
-  - id: parte-1c-rituale-di-hellas-e-tre-ondate-difensive-b8dac1
-    name: "Parte 1C – Rituale di Hellas e Tre Ondate Difensive"
+  - id: parte-1c-rituale-di-hella-e-tre-ondate-difensive-b8dac1
+    name: "Parte 1C – Rituale di Hella e Tre Ondate Difensive"
     cr: 5.0
     faction: cerchio-druid
     role: generalist
@@ -366,8 +366,8 @@ monsters:
     role: caster-divine
     environment: forest
     source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/druido Avarthel cr9 spell.htm"
-  - id: nemici-del-cerchio-sacro-quest-hellas-86af29
-    name: "Nemici del Cerchio Sacro (Quest Hellas)"
+  - id: nemici-del-cerchio-sacro-quest-hella-86af29
+    name: "Nemici del Cerchio Sacro (Quest Hella)"
     cr: 9.0
     faction: cerchio-druid
     role: generalist

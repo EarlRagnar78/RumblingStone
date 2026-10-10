@@ -96,6 +96,8 @@ combattimento.
 **Uso**: dice **no** con una ragione scritta. Non si corrompe con l'oro; si convince
 con **una carta** o con un favore alla sua ufficio.
 **Il tic**: cita il numero dell'articolo, e sbaglia il numero.
+**Dove si incontra**: alla tavola di fuori come Maestro di Tavola (`02-GIORNO-2` §2-bis) e
+alla Cena (`10-DOSSIER` §6). È lo stesso uomo.
 
 ---
 

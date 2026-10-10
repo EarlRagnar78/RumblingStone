@@ -28,7 +28,7 @@ dichiarava otto binari mentre qui ce n'erano due.
 Ora la dichiarazione sta qui e basta: `PYTHON_MINIMO`, `TUTTI` (i binari
 accettati con un ADR, quelli che uno script pretende con `esigi()`),
 `OPZIONALI` (gli altri, che nessuno pretende e la cui assenza toglie una
-funzione senza rompere niente), `LIBRERIE` (le due dipendenze Python, ADR-0037)
+funzione senza rompere niente), `LIBRERIE` (le dipendenze Python, ADR-0037 e ADR-0084)
 e `CATENE`, che dice quale catena di lavoro ha bisogno di cosa. `dm.py doctor`
 e la guida di setup leggono da qui.
 
@@ -124,13 +124,13 @@ OPZIONALI = (
          "  macOS          xcode-select --install",
          "senza git il repo non si clona: in pratica c'e' sempre, ed e' l'unico "
          "di questo gruppo che non ha un ripiego vero."),
-    _opz("bash", "i cinque script shell: build-skills, sync-skills, "
-                 "install-git-hooks, new-campaign-group, Image-to-webp",
+    _opz("bash", "gli script shell: build-skills, sync-skills, install-git-hooks, "
+                 "new-campaign-group, avvia_languagetool, Image-to-webp",
          "  Linux/macOS    c'e' gia'\n"
          "  Windows        Git Bash (arriva con Git for Windows) oppure WSL",
          "gli equivalenti in Python esistono per la maggior parte del flusso "
          "(`dm.py skills build`, `dm.py skills sync`); su Windows senza Git Bash "
-         "restano fuori i cinque script shell."),
+         "restano fuori gli script shell."),
     _opz("chromium", "i PDF dei booklet e i PNG delle mappe",
          "  Debian/Ubuntu  sudo apt install chromium\n"
          "  Fedora         sudo dnf install chromium\n"
@@ -138,8 +138,24 @@ OPZIONALI = (
          "  cercato in PATH, in $BOOKLET_CHROME e in /opt/pw-browsers",
          "i booklet restano in HTML, che e' il formato che si legge al tavolo; "
          "il PDF e' per chi stampa."),
-    _opz("blender", "il render 3D delle mappe (`render_map_blender.py`) e il passo "
-                    "di profondita' che alimenta ControlNet",
+    _opz("java", "il server LanguageTool locale, il secondo lettore facoltativo "
+                 "(`avvia_languagetool.sh`, ADR-0079): serve Java 17 o superiore",
+         "  Debian/Ubuntu  sudo apt install default-jre\n"
+         "  Fedora         sudo dnf install java-17-openjdk\n"
+         "  macOS          brew install openjdk",
+         "il secondo lettore resta spento: `ciclo_prosa.py segnala` funziona lo "
+         "stesso con i soli rilevatori del repo, che sono quelli che contano."),
+    _opz("mvn", "scaricare una volta i jar di LanguageTool da Maven Central "
+                "(`avvia_languagetool.sh`, ADR-0079)",
+         "  Debian/Ubuntu  sudo apt install maven\n"
+         "  Fedora         sudo dnf install maven\n"
+         "  macOS          brew install maven",
+         "come per `java`: senza Maven non si scarica LanguageTool e il secondo "
+         "lettore non parte; nessun altro passo ne dipende."),
+    _opz("blender", "il render 3D delle mappe (`render_map_blender.py`), il passo "
+                    "di profondita' che alimenta ControlNet e le tessere degli "
+                    "oggetti del tema texture (`build_oggetti_cc0.py`, che accetta "
+                    "anche il modulo `bpy`)",
          "  Debian/Ubuntu  sudo apt install blender\n"
          "  Fedora         sudo dnf install blender\n"
          "  macOS          brew install --cask blender\n"
@@ -147,7 +163,15 @@ OPZIONALI = (
          "la geometria si risolve lo stesso: `--piano-solo` scrive il piano di "
          "scena senza Blender, ed e' quello il pezzo deterministico. Senza il "
          "binario mancano solo il PNG e il passo di profondita', che sono "
-         "presentazione e non canone."),
+         "presentazione e non canone. Le tessere degli oggetti si fanno una "
+         "volta e si committano: senza Blender il tema texture le legge lo "
+         "stesso, e dove mancano restano i glifi."),
+    _opz("distrobox", "il container di ComfyUI con la GPU dell'host "
+                      "(`scripts/comfyui-local/`, `ambiente.py installa --con comfyui`)",
+         "  Debian/Ubuntu  sudo apt install distrobox podman\n"
+         "  Bazzite        c'e' gia'",
+         "niente ComfyUI in locale: le immagini restano quelle committate, e il "
+         "tema texture usa modelli CC0 o glifi."),
     _opz("inkscape", "i PNG delle mappe con resa SVG fedele (`--renderer inkscape`)",
          "  Debian/Ubuntu  sudo apt install inkscape\n"
          "  Fedora         sudo dnf install inkscape",
@@ -174,7 +198,7 @@ OPZIONALI = (
 
 
 class Libreria(NamedTuple):
-    """Una dipendenza Python. Ce ne sono due, e ADR-0037 dice perche' solo due."""
+    """Una dipendenza Python. ADR-0037 dice perche' sono poche, ADR-0084 perche' tcod."""
 
     nome: str
     modulo: str
@@ -186,7 +210,7 @@ class Libreria(NamedTuple):
     ripiego: str
 
 
-#: Le uniche due librerie non-stdlib del repo (ADR-0037). `pyyaml` e' un debito
+#: Le librerie non-stdlib degli strumenti (ADR-0037, ADR-0084). `pyyaml` e' un debito
 #: dichiarato: sta nel percorso critico della CI, che infatti la installa.
 #: `Pillow` no, ed e' il modello di come dovrebbe stare una dipendenza Python.
 LIBRERIE = (
@@ -200,12 +224,76 @@ LIBRERIE = (
     ),
     Libreria(
         nome="Pillow", modulo="PIL",
-        a_cosa_serve="ricomprimere le immagini grandi e generare i derivati",
+        a_cosa_serve="ricomprimere le immagini grandi, generare i derivati e le "
+                     "tessere delle texture CC0 delle mappe",
         installa="  pip install pillow",
         obbligatoria=False,
         ripiego="`build_booklet_html.py` incorpora l'immagine com'e' (file piu' "
-                "pesante, resa identica); `build_image_derivatives.py` esce "
-                "dicendo come installarla.",
+                "pesante, resa identica); `build_image_derivatives.py` e "
+                "`build_texture_cc0.py` escono dicendo come installarla. Il "
+                "renderer delle mappe legge le tessere già fatte senza Pillow.",
+    ),
+    # ADR-0084 (DM, 2026-10-08): il collaudo delle mappe e' uno strumento di
+    # sviluppo e di CI, non della sera. M4 esatta su tutto il corpus: 75 s in
+    # libreria standard, 0,7 s con tcod, stesso risultato.
+    Libreria(
+        nome="tcod", modulo="tcod",
+        a_cosa_serve="la linea di vista del collaudo delle mappe (M4 esatta, "
+                     "shadowcasting simmetrico); porta con se' numpy",
+        installa="  pip install -r requirements-dev.txt",
+        obbligatoria=True,
+        ripiego="nessuno: `collaudo_mappe.py` esce con 2 e dice come installarla. "
+                "Le mappe si disegnano, si renderizzano e si esportano senza.",
+    ),
+    Libreria(
+        nome="scipy", modulo="scipy",
+        a_cosa_serve="M1 e M2 del collaudo delle mappe (`scipy.ndimage`)",
+        installa="  pip install -r requirements-dev.txt",
+        obbligatoria=True,
+        ripiego="nessuno: `collaudo_mappe.py` esce con 2, come senza tcod.",
+    ),
+    Libreria(
+        nome="scikit-image", modulo="skimage",
+        a_cosa_serve="la misura della resa delle mappe (`misura_resa.py`): SSIM, "
+                     "ΔE CIEDE2000, contrasto e bordo di ogni simbolo e terreno",
+        installa="  pip install -r requirements-dev.txt",
+        obbligatoria=True,
+        ripiego="nessuno: `misura_resa.py` esce con 2 e la CI lo installa. Le mappe "
+                "si disegnano e si renderizzano senza.",
+    ),
+    Libreria(
+        nome="torch", modulo="torch",
+        a_cosa_serve="il secondo parere della misura della resa (`misura_resa_appresa.py`, D26)",
+        installa="  pip install -r requirements-completo.txt   (torch per CPU e piq)",
+        obbligatoria=False,
+        ripiego="la misura della resa gira senza: il livello A e il confronto alla "
+                "cieca bastano a decidere (ADR-0086); manca solo il secondo parere.",
+    ),
+    Libreria(
+        nome="piq", modulo="piq",
+        a_cosa_serve="CLIP-IQA, LPIPS e DISTS per il secondo parere della misura della resa",
+        installa="  pip install -r requirements-completo.txt",
+        obbligatoria=False,
+        ripiego="come per torch: `misura_resa_appresa.py` esce con 2 e dice come installarla.",
+    ),
+    Libreria(
+        nome="bpy", modulo="bpy",
+        a_cosa_serve="Blender come modulo Python: le tessere degli oggetti del tema "
+                     "texture (`build_oggetti_cc0.py`) e `test_blender_vero.py`, senza "
+                     "il binario `blender`",
+        installa="  pip install -r requirements-completo.txt   (solo Python 3.13)",
+        obbligatoria=False,
+        ripiego="il binario `blender` fa lo stesso lavoro; senza tutti e due le "
+                "tessere degli oggetti non si rifanno, e il tema texture usa quelle "
+                "committate o i glifi.",
+    ),
+    Libreria(
+        nome="fonttools", modulo="fontTools",
+        a_cosa_serve="ricavare i sottoinsiemi dei font OFL che le mappe incorporano",
+        installa="  pip install -r requirements-dev.txt",
+        obbligatoria=False,
+        ripiego="il renderer usa i sottoinsiemi gia' committati; senza fonttools "
+                "non si possono solo rigenerare (`build_font_mappe.py` esce con 2).",
     ),
 )
 
@@ -219,6 +307,8 @@ CATENE = {
     "libretto imposto": ("typst", "pdfcpu"),
     "mappe SVG": (),
     "mappe PNG": ("chromium",),
+    "collaudo mappe": ("tcod", "scipy"),
+    "misura della resa": ("scikit-image", "chromium"),
     "recap in PDF": ("pandoc", "xelatex"),
     "skill per gli agenti": ("pyyaml",),
 }

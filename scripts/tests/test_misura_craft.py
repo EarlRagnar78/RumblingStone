@@ -160,7 +160,10 @@ class TestIlPilastroDichiarato(unittest.TestCase):
             testo, _, _ = MC.carica(MC.BERSAGLI[nome])
             (con if conta("PILASTRO dichiarato (lead/support)", testo) else senza
              ).append(nome)
-        self.assertEqual(sorted(con), ["DEF-2 Ritorno e affreschi",
+        # 2026-10-07: ARC-08 entra di proposito. `ARC08-17-BANCO-HAMMERFIST-1372.md`
+        # porta il read-aloud etichettato col pilastro (il banco della rocca).
+        self.assertEqual(sorted(con), ["ARC-08 Hammerfist",
+                                       "DEF-2 Ritorno e affreschi",
                                        "DEF-3 Resurrezione Hella",
                                        "DEF-4 Viaggio 1.000 anni",
                                        "DEF-5 Ritorno Hammerfist"])
@@ -377,7 +380,7 @@ class TestIBersagliNonSiCampionanoInSilenzio(unittest.TestCase):
     def test_ogni_bersaglio_pesca_i_file_che_dice(self):
         atteso = {"★ Palio di Channathgate": 15, "ARC-09 Torneo di Dauth": 22,
                   "ARC-09 Torre di Zalkatar": 12, "ARC-09 Battaglia Finale": 16,
-                  "ARC-08 Hammerfist": 13}
+                  "ARC-08 Hammerfist": 14}  # 14 dal 2026-10-07: ARC08-17, il banco
         for nome, n in atteso.items():
             with self.subTest(bersaglio=nome):
                 self.assertEqual(len(MC.espandi(MC.BERSAGLI[nome])), n)

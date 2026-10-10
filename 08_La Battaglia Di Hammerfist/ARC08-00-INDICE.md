@@ -92,6 +92,7 @@ master** rilevanti alla sessione.
 | `ARC08-14-ATLANTE-IMMAGINI.md` | Classificazione immagini→scene→prompt (C3) | Canonico |
 | `ARC08-15-HANDOUTS-GIOCATORE.md` | Handout stampabili: pregen, runa, canto, mappa giocatore (C4) | Canonico |
 | `ARC08-16-CUE-SONORI.md` | Cue sonori dell'arco (apparato d'uso [ADR-0018](../plans/adr/ADR-0018-apparato-uso-obbligatorio.md) §5) | Canonico |
+| `ARC08-17-BANCO-HAMMERFIST-1372.md` | Il banco della rocca: chiuso durante l'assedio, socchiuso dopo la Cerimonia; le promesse della Guida e le tre strade per mantenerle (norma `il-banco.md`) | Proposta |
 | `ERRATA-ARC08-DESCRIZIONE-EPICA.md` | Riconciliazione col testo narrativo del DM (nomi, sorte di Thorek, khuzdul, cronologia) | Canonico |
 | `ERRATA-ARC08-35-Verification.md` | Verifica meccanica 3.5 (B5) | Canonico |
 | `Cerimonia-delle-100-Asce.md` | Chiusura arco + hook ARC-09 (D3) | Canonico (benchmark, NON riscrivere) |

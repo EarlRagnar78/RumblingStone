@@ -141,6 +141,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @zone CJ17-CM19 ; Bastione Nord B2 (+15 m, camminamento)
 @zone T65-W67 ; Bastione Sud G1 Ovest (+15 m, camminamento)
 @zone CG65-CJ67 ; Bastione Sud G2 Est (+15 m, camminamento)
+@tipo strategica esterno
 ```
 
 ---
@@ -520,6 +521,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @path FASE 2: aggiramento Worg Riders (destra) ; BB25 BE13 AX5 ; #8c2fb8
 @path Sorvoli di Fauci di Palude (quota 45 m) ; K98 AD61 P9 AS9 AD61 ; #1d6fd8
 @zone E1-BD2 ; Fronte sud della fortezza: mura 12 m, torri 20 m (griglia di precisione: MAPPA 2A REVISED)
+@tipo strategica esterno
 ```
 
 ### 📍 POSIZIONI CHIAVE (fronte fortezza in alto, righe 01-09):
@@ -647,6 +649,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @mark 8 ; AB17 ; Cantitrici della Pietra (Clr/Brd)
 @path Picchiata di Fauci (60→30 m di quota, round prec.) ; E2 U2 ; #1d6fd8
 @path Evacuazione verso il tunnel (round 5-6) ; U10 W14 ; #2c8c3c
+@tipo tattica esterno
 ```
 
 ### ⚡ MECCANICA DEL SOFFIO (round 4 della sequenza della guida):

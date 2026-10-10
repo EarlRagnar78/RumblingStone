@@ -1,0 +1,20 @@
+{
+ "generatore": "city",
+ "nome": "Dauth, la pianta della città assediata (Giorno 3)",
+ "parametri": {
+  "seed": 1372032,
+  "random": 0,
+  "walls": 1,
+  "temple": 1,
+  "plaza": 1
+ },
+ "perche": {
+  "seed": "scelto da me: 1372 DR, Day 32, il giorno dell'assedio. Il DM lo cambia se la città non gli piace, e il nuovo seme va qui",
+  "walls": "le mura, la Porta Sud e le mura ovest delle carte A, B, D ed E di DAY3-CITY-SIEGE",
+  "temple": "il tempio col chiostro diventato ospedale della carta C",
+  "plaza": "una piazza per l'arena del Torneo, che il generatore non disegna [INFERRED — needs DM confirmation]",
+  "non dichiarati": "dimensione, cittadella, fiume, costa e numero di porte: il canone non li dice. Con random=0 il generatore usa il suo valore predefinito; quale sia non l'ho potuto verificare, perché la rete di questo ambiente non raggiunge Watabou"
+ },
+ "salva_in": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Mappe/dauth-assedio/dauth-pianta.svg",
+ "licenza": "Le mappe di Watabou si usano «as you like», anche commercialmente (pagina itch del Medieval Fantasy City Generator)"
+}

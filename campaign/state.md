@@ -55,9 +55,9 @@ Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per det
 | 07 Portale della Forgia Eterna | 🟡 | **in corso** | — | 13 (D8) | Giocati: Forgia (P1-P2), Piano del Fuoco/Topazio (P3), viaggio spirituale Hella+Durik (P3B-spirito); **in corso: Piano della Terra (P4)** |
 | 07 P3B Resurrezione di Hella + P5 Viaggio 1.000 anni | ⬜ | da giocare | — | 13 | Si gioca DOPO la Terra (ARC-07 D2); raccordo D16 (Rubino) riporta i PG al 1372, Cuore della Montagna → ARC-08 |
 | 08 Battaglia di Hammerfist | ⬜ | **pianificato — canone preparato, NON giocato** | **Day 19 (target sync)** | 13 (consolida, D9) | Esito atteso: vittoria, Cerimonia 100 Asce, Custodi Eterni (piano ARC-08 §0, E1-E8) |
-| 09 P1A Quest Hellas (Cerchio Sacro) | ⬜ | **preparato in anticipo** | Day 20-30 window | 13 | Deadline Day 30 |
+| 09 P1A Quest Hella (Cerchio Sacro) | ⬜ | **preparato in anticipo** | Day 20-30 window | 13 | Deadline Day 30 |
 | 09 P1B Cerchio Treant | ⬜ | **preparato in anticipo** | Day 22-28 | 13 | — |
-| 09 P1C Rituale Hellas | ⬜ | **preparato in anticipo** | Day 25-30 | 13 | — |
+| 09 P1C Rituale Hella | ⬜ | **preparato in anticipo** | Day 25-30 | 13 | — |
 | 09 P2 Rhest (Saarvith + Regiarix) | ⬜ | **preparato in anticipo** | Day 25-32 | 13 | -1 drago se fatto |
 | 09 P2A Torre Invisibile (Zalkatar) | ⬜ | **preparato in anticipo** | Day 28-35 | 13 | -1 drago se fatto |
 | 09 P2B Torneo di Dauth (Tordek) | ⬜ | **preparato in anticipo** | Day 25-34 | 13 | +300 mercenari nani |
@@ -288,7 +288,7 @@ gnoll disguised). Detect: Sense Motive CD 18 / Detect Magic. If caught:
 | Witchcross | ⏳ Under threat (Day 22-25) | ~1,200 (druids stay) | +60 |
 | Marth Fen area | ⏳ Day 25 sweep | ~300 | +50 |
 | Hammerfist Holds | ✅ Held (+90 survivors; 150 lances conditional) | 0 civilians | +150 ❓ if political hooks land (Maewen seal + Thorik letter, D10 — separate from the 300 tournament mercenaries) |
-| Cannathgate | ✅ Not attacked | 0 | +150 ❓ diplomacy |
+| Channathgate | ✅ Not attacked | 0 | +150 ❓ diplomacy |
 
 ---
 

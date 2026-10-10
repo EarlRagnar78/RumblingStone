@@ -96,7 +96,7 @@ archi:
   march_clock: '**Day 19 (target sync)**'
   pg_livello: 13 (consolida, D9)
   note: 'Esito atteso: vittoria, Cerimonia 100 Asce, Custodi Eterni (piano ARC-08 §0, E1-E8)'
-- arco: 09 P1A Quest Hellas (Cerchio Sacro)
+- arco: 09 P1A Quest Hella (Cerchio Sacro)
   tempo: preparato
   stato: '**preparato in anticipo**'
   march_clock: Day 20-30 window
@@ -108,7 +108,7 @@ archi:
   march_clock: Day 22-28
   pg_livello: '13'
   note: null
-- arco: 09 P1C Rituale Hellas
+- arco: 09 P1C Rituale Hella
   tempo: preparato
   stato: '**preparato in anticipo**'
   march_clock: Day 25-30

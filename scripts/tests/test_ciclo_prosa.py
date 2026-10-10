@@ -186,21 +186,57 @@ class TestLApplicazioneAutomatica(unittest.TestCase):
 
 
 class TestLanguageTool(unittest.TestCase):
+    """Il secondo lettore (ADR-0079): locale, tre regole, righe giuste."""
+
+    def _risposta(self, matches):
+        import io
+        import json as _json
+        finto = mock.MagicMock()
+        finto.__enter__.return_value = io.StringIO(_json.dumps({"matches": matches}))
+        return finto
+
     def test_senza_server_non_segnala_niente(self):
         with mock.patch.object(cp.urllib.request, "urlopen", side_effect=OSError("rete")):
             self.assertEqual(cp.languagetool("Testo.", "http://localhost:8081"), [])
 
     def test_le_risposte_diventano_segnalazioni(self):
-        import io
-        import json as _json
-        risposta = {"matches": [{"offset": 7, "message": "Concordanza",
-                                 "replacements": [{"value": "le case"}]}]}
-        finto = mock.MagicMock()
-        finto.__enter__.return_value = io.StringIO(_json.dumps(risposta))
-        with mock.patch.object(cp.urllib.request, "urlopen", return_value=finto):
+        m = {"offset": 7, "message": "Concordanza", "rule": {"id": "ARTICOLATA_SOSTANTIVO"},
+             "replacements": [{"value": "le case"}]}
+        with mock.patch.object(cp.urllib.request, "urlopen", return_value=self._risposta([m])):
             seg = cp.languagetool("Riga.\nla case", "http://localhost:8081")
-        self.assertEqual((seg[0].riga, seg[0].norma), (2, "grammatica"))
+        self.assertEqual((seg[0].riga, seg[0].norma), (2, "secondo lettore"))
+        self.assertIn("ARTICOLATA_SOSTANTIVO", seg[0].dettaglio)
         self.assertIn("le case", seg[0].dettaglio)
+
+    def test_gli_offset_sono_in_utf16(self):
+        """Un'emoji sono due unità per LanguageTool: la riga non deve scivolare."""
+        testo = "🔥🔥🔥🔥\nab\nc\nd\ne"
+        m = {"offset": 4 * 2 + 1 + 3, "message": "x", "rule": {"id": "R"}, "replacements": []}
+        with mock.patch.object(cp.urllib.request, "urlopen", return_value=self._risposta([m])):
+            seg = cp.languagetool(testo, "http://localhost:8081")
+        self.assertEqual(seg[0].riga, 3)
+
+    def test_un_server_fuori_dalla_macchina_e_rifiutato(self):
+        """Il testo della campagna non va a un servizio esterno."""
+        with mock.patch.object(cp.urllib.request, "urlopen") as u:
+            self.assertEqual(cp.languagetool("Testo.", "https://api.languagetool.org"), [])
+            u.assert_not_called()
+
+    def test_si_chiedono_solo_le_tre_regole(self):
+        with mock.patch.object(cp.urllib.request, "urlopen", return_value=self._risposta([])) as u:
+            cp.languagetool("Testo.", "http://127.0.0.1:8081")
+        corpo = u.call_args[0][1].decode()
+        self.assertIn("enabledOnly=true", corpo)
+        for regola in cp.REGOLE_LANGUAGETOOL:
+            self.assertIn(regola, corpo)
+
+    def test_il_testo_piano_tiene_i_numeri_di_riga(self):
+        md = "---\ntitolo: x\n---\n# Titolo\n\n| a | b |\n```\ncodice\n```\n- una `x` due\n"
+        piano = cp.testo_piano(md).split("\n")
+        self.assertEqual(len(piano), len(md.split("\n")))
+        self.assertEqual(piano[3], "Titolo")
+        self.assertEqual(piano[5], "")                    # la tabella
+        self.assertEqual(piano[9], "una § due")           # il codice non è una parola
 
 
 class TestIlDocumentoBastaASeStesso(unittest.TestCase):

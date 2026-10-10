@@ -27,7 +27,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | **Zog'tar Deatheye** | SCENA 7 | Hammerfist. Sa uccidere diecimila uomini, non sa dove colpire le mura: per quello c'è Balvar | conta, sempre: *«due file», «tre ore», «cento»*. In ira: *«A ME, CANI! ABBATTETE LE OMBRE!»* |
 | **Balvar Fuocospento** | SCENA 7 | che Hammerfist cada **in fretta**, perché un assedio lungo è fame, e lui l'ha già vista. E che qualcuno dica che c'era | non smette di incidere mentre parla. La punta sull'ardesia continua sotto le frasi |
 | le quattro guardie | SCENA 7 | — | non parlano: al generale rispondono battendo l'asta per terra, una volta sì, due no |
-| il sacerdote della Mano | SCENA 8 | — | canta invece di parlare, sempre la stessa cantilena, e la interrompe solo per dare ordini |
+| il sacerdote dell'orda | SCENA 8 | — | canta invece di parlare, sempre la stessa cantilena, e la interrompe solo per dare ordini |
 | **Vatore** | SCENA 9 | la stessa cosa che vorrà Sal: potere, e il conto lo pagano altri | il tono del collega, non del nemico. Monosillabi. Terrore reverenziale mal nascosto |
 | Hrodgar, il capitano delle mura | SCENA 10 | — | dà gli ordini con una parola sola |
 | Hald, il nipote di Balvar | SCENA 10 | — | poco e a bassa voce, da recluta; si drizza quando passa il capitano |
@@ -49,6 +49,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 4 | Diplomazia/Intimidire | 20 |
 | SCENA 4 | Diplomazia/Intimidire, alternativa | 16 |
 | SCENA 5 | palla di fuoco da 5d6, Riflessi | 14 |
+| SCENA 5 | stessa cera nera sulle dita (Osservare | 15 |
 | SCENA 5 | lei, Artigianato (fabbricare armi) o Valutare | 15 |
 | SCENA 5 | druido), Artemis con Usare Oggetti Magici | 23 |
 | SCENA 5 | la legge con Usare Oggetti Magici | 21 |
@@ -72,23 +73,29 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 7 | Conoscenze storia | 22 |
 | SCENA 7 | 13d6, Riflessi | 21 |
 | SCENA 7 | round 1 e slay living (Tempra | 20 |
-| SCENA 8 | Dalla soglia lancia comando («Giù!», Volontà | 13 |
+| SCENA 8 | Forza | 20 |
+| SCENA 8 | terra, intralciato, finché non supera Riflessi | 15 |
+| SCENA 8 | entro 9 m l'uno dall'altro, Volontà | 20 |
+| SCENA 8 | comando «Cadi!» (Volontà | 13 |
+| SCENA 8 | Dalla soglia lancia comando («Cadi!», Volontà | 13 |
 | SCENA 8 | Sapienza Magica | 20 |
 | SCENA 8 | Intimidire | 22 |
 | SCENA 8 | dovrà superare Volontà | 18 |
 | SCENA 8 | è finita, quindi si tira Nascondersi | 22 |
+| SCENA 9 | stessa cera nera sulle dita, Osservare | 15 |
 | SCENA 9 | Percepire Intenzioni o Diplomazia | 18 |
 | SCENA 9 | Rapidità di Mano | 22 |
 | SCENA 9 | fallisce una prova di Muoversi Silenziosamente | 20 |
 | SCENA 10 | Forza o attacco | 18 |
 | SCENA 10 | Diplomazia o Guarire | 18 |
 | SCENA 10 | Disattivare o Artigianato | 20 |
-| SCENA 11 | Cala dall'alto (Presenza Terrificante | 23 |
-| SCENA 11 | sul gruppo più fitto (Riflessi | 26 |
+| SCENA 11 | Cala dall'alto (Presenza Terrificante | 25 |
+| SCENA 11 | sul gruppo più fitto (Riflessi | 28 |
 | SCENA 11 | prova di Forza | 25 |
 | SCENA 11 | Forza | 10 |
 | SCENA 11 | Ascoltare | 20 |
-| SCENA 11 | Forza | 25 |
+| SCENA 11 | se il gancio prende, Forza | 25 |
+| SCENA 11 | aiuta, +2 a testa (aiutare, Forza | 10 |
 | SCENA 11 | 25d12+125 (287 pf), soffio 16d4 | 27 |
 | SCENA 11 | Presenza | 24 |
 | SCENA 12 | Volontà | 20 |
@@ -101,6 +108,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 1 | la fortezza, da lontano | LotR lead | 5 |
 | SCENA 2 | il bosco | Andor lead | 6 |
 | SCENA 3 | la porta, deep time al contrario | LotR lead | 6 |
+| SCENA 3 | la targa | Casa di Davide lead | 4 |
 | SCENA 4 | la sala del consiglio, il re | Casa di Davide lead | 7 |
 | SCENA 4 | Il vecchio sulla panca | Mercer lead, Casa di Davide support | 11 |
 | SCENA 5 | i quartieri ospiti | LotR lead | 6 |

@@ -125,6 +125,11 @@ della vittoria piena.
 Il dry-run non può rispondere a queste. Sono le domande da portarsi dietro alla
 prima sessione reale:
 
+0. **La tavola di fuori (`02-GIORNO-2` §2-bis) tiene i cinque occupati, o è un
+   pasticcio in più?** Aggiunta il 2026-10-03, mai giocata. Si misura così: al
+   secondo giro qualcuno parla col vecchio vicino senza accorgersene (il gioco
+   funziona), oppure guarda il telefono (non funziona, e si taglia il §2-bis).
+
 1. **L'Investitura fa scattare il tavolo o imbarazza?** Dipende dal gruppo. Se dopo
    due riti nessuno ci sta stando, taglia al terzo e vai al decreto.
 2. **La Corsa a nove tratti annoia al secondo giro?** Il dry-run dice di no, ma il

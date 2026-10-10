@@ -63,13 +63,13 @@ Non creò un semplice oggetto di potere, ma un'ancora per la storia stessa. La C
 
 Adamantio (Crown of Eternal Stone) non comanda il tempo; essa è il tempo dei nani,
 
-solidiﬁcato. Non è stata fatta per re, ma per forgiare re dal crogiuolo della disperazione.
+solidificato. Non è stata fatta per re, ma per forgiare re dal crogiuolo della disperazione.
 
 La leggenda narra che chi la indossa non porta solo un fardello di metallo, ma il peso di
 
 ogni storia nanica non ancora scritta. E in tempi di buio assoluto, quando la storia rischia
 
-di ﬁnire, la Corona può oﬀrire al suo portatore la possibilità di impugnare il martello e
+di finire, la Corona può offrire al suo portatore la possibilità di impugnare il martello e
 
 riforgiarla un'ultima, terribile volta."
 
@@ -91,7 +91,7 @@ Scheda Completa dell'Artefatto (Informazioni per il DM)
 • Tipo: Artefatto (Oggetto Leggendario)
 • Aura: Travolgente Abjurazione, Evocazione, Trasmutazione e Divinazione (CD 30 per
 
-identiﬁcarne le scuole)
+identificarne le scuole)
 
 • Livello Incantatore (LI): 20°
 • Peso: 1,5 kg
@@ -99,13 +99,13 @@ identiﬁcarne le scuole)
 
 incandescente della Gemma del Tempo frantumata.
 • Allineamento: Legale Buono (La Forgia di Moradin)
-• Intelligenza: Dormiente ﬁnché non viene unita ad Aegis Fang; in seguito diventa senziente
+• Intelligenza: Dormiente finché non viene unita ad Aegis Fang; in seguito diventa senziente
 
 (Int 16, Sag 17, Car 18, Ego 20).
 
-• Tiri Salvezza dell'Artefatto: Tempra +25, Riﬂessi +20, Volontà +28
+• Tiri Salvezza dell'Artefatto: Tempra +25, Riflessi +20, Volontà +28
 
- Poteri Uniﬁcati della Corona (per Progressione)
+ Poteri Unificati della Corona (per Progressione)
 
 Livello
 
@@ -139,7 +139,7 @@ Protezione) (Str)
 
 Concede un bonus di deviazione +2 alla CA.
 
-(Aumenta a +3 dopo il rituale ﬁnale).
+(Aumenta a +3 dopo il rituale finale).
 
 Power: Moradin’s Insight
 
@@ -165,7 +165,7 @@ Toccando terra o pietra, il portatore ottiene un
 
 (Volontà Adamantina)
 
-bonus razziale di +4 ai tiri salvezza contro eﬀetti
+bonus razziale di +4 ai tiri salvezza contro effetti
 
 (Sopran.)
 
@@ -175,7 +175,7 @@ charme e compulsione.
 
 Power: Mantle of Stone
 
-Concede un eﬀetto continuo di Mente Vuota
+Concede un effetto continuo di Mente Vuota
 
 and Spirit (Manto di Pietra
 
@@ -211,18 +211,18 @@ Eterna) (Sopran.)
 
 Potere (Sopran., 1/mese, solo in un Nodo Terrestre):
 
-Permette al portatore di Riavvolgere il Tempo e lo Spazio, trasportando sé stesso e ﬁno a 8
+Permette al portatore di Riavvolgere il Tempo e lo Spazio, trasportando sé stesso e fino a 8
 
 creature consenzienti in un "punto di forgiatura" passato.
 
 • Condizioni Divine per gli Alleati: Per portare compagni non fedeli, il portatore deve
 
-intercedere con Moradin. Moradin si manifesterà e chiederà un sacriﬁcio: perdere 1 punto
+intercedere con Moradin. Moradin si manifesterà e chiederà un sacrificio: perdere 1 punto
 
-permanente di Costituzione, sacriﬁcare un tesoro del valore di almeno 5.000 mo.
-• Conseguenza del Riﬁuto: Se il sacriﬁcio non viene pagato, i compagni non benedetti
+permanente di Costituzione, sacrificare un tesoro del valore di almeno 5.000 mo.
+• Conseguenza del Rifiuto: Se il sacrificio non viene pagato, i compagni non benedetti
 
-devono superare un TS su Tempra CD 25 o subire una minore pietriﬁcazione (movimento
+devono superare un TS su Tempra CD 25 o subire una minore pietrificazione (movimento
 
 3m, -2 Destrezza).
 
@@ -232,21 +232,21 @@ devono superare un TS su Tempra CD 25 o subire una minore pietriﬁcazione (movi
 
 Potere (Mag., 1/settimana):
 
-Permette di scegliere uno dei seguenti eﬀetti: Earth's Bastion (crea un Muro di Montagna), Forge
+Permette di scegliere uno dei seguenti effetti: Earth's Bastion (crea un Muro di Montagna), Forge
 
-of Life (sana la terra come Santiﬁcare), o Mountain's Judgment (un Terremoto Localizzato che
+of Life (sana la terra come Santificare), o Mountain's Judgment (un Terremoto Localizzato che
 
 risparmia i nani).
 
 • Costo: Devi seppellire una gemma o un'arma di qualità superiore (valore 1.000 mo) nel
 
-terreno come oﬀerta.
+terreno come offerta.
 
  Gem: Gem of Dwarven Might (Gemma della Potenza Nanica) (Rubino)
 
 Potere (Sopran., 1/settimana):
 
-Come azione rapida, avvolge il portatore e gli alleati entro 9 metri in una luce divina per 10 round,
+Come azione veloce, avvolge il portatore e gli alleati entro 9 metri in una luce divina per 10 round,
 
 conferendo Giusto Potere e Pelle di Pietra al portatore, Potere divino e Ispirare Coraggio (+3) agli
 
@@ -258,11 +258,11 @@ alleati.
 
 Eterna) (Potere Finale)
 
-Questo potere è un evento unico e irripetibile attivato durante il rituale ﬁnale.
+Questo potere è un evento unico e irripetibile attivato durante il rituale finale.
 
 Attivazione: Automatica all'arrivo nel passato.
 
-• Eﬀetti: Il portatore e gli alleati viaggiatori vengono curati completamente e ottengono
+• Effetti: Il portatore e gli alleati viaggiatori vengono curati completamente e ottengono
 Potere Divino e Cerchio magico contro il Male -raggio 9 metri. Tutti i nani entro 18 metri
 
 ottengono potenziamenti divini (tra cui Benedizione e Protezione dal male). Il portatore
@@ -278,7 +278,7 @@ superare un TS su Volontà (CD 20) o essere scossi.
 
 Quando entrambi gli artefatti sono branditi, la corona diventa senziente. Aegis Fang diventa una
 
-+4 Ascia da Guerra Nanica Sacra Ritornante (+2d6 danni sacri extra contro speciﬁci nemici). Il
++4 Ascia da Guerra Nanica Sacra Ritornante (+2d6 danni sacri extra contro specifici nemici). Il
 
 portatore ottiene immunità al controllo mentale, telepatia con i nani e può canalizzare Guarigione
 
@@ -302,7 +302,7 @@ Requisito della
 
 Missione (Esperienza
 
-Costo / Sﬁda
+Costo / Sfida
 
 Poteri Sbloccati
 
@@ -312,7 +312,7 @@ del Giocatore)
 
 Durante il riposo, Aegis
 
-Sacriﬁcio: Oﬀerta di
+Sacrificio: Offerta di
 
 Potere della Corona:
 
@@ -330,7 +330,7 @@ Requisito della
 
 Missione (Esperienza
 
-Costo / Sﬁda
+Costo / Sfida
 
 Poteri Sbloccati
 
@@ -346,7 +346,7 @@ della battaglia di
 
 lavorato o armi al
 
-Hammerﬁst per 10
+Hammerfist per 10
 
 risveglio. La proiezione
 
@@ -354,9 +354,9 @@ round. (Vedi la sezione
 
 lascia un "Marchio della
 
-"La Sﬁda del Sogno"
+"La Sfida del Sogno"
 
-Forgia" ﬁsico sul braccio
+Forgia" fisico sul braccio
 
 per i dettagli
 
@@ -382,7 +382,7 @@ deve liberare o
 
 (Prova della
 
-sconﬁggere un'anima
+sconfiggere un'anima
 
 Sala
 
@@ -394,9 +394,9 @@ schiavizzata da cultisti
 
 drow/illithid.
 
-Sacriﬁcio: 12.500 mo in
+Sacrificio: 12.500 mo in
 
-gemme o un'oﬀerta di
+gemme o un'offerta di
 
 fattura magistrale
 
@@ -420,7 +420,7 @@ the World
 
 profondo Nodo
 
-Sacriﬁcio: 40.500 mo in
+Sacrificio: 40.500 mo in
 
 Terrestre, comunicare
 
@@ -462,13 +462,13 @@ di 1d10 anni e il
 
 tornare all'inizio
 
-sacriﬁcio per gli alleati.
+sacrificio per gli alleati.
 
 dell'assedio e guidare i
 
 La Gem of Immutable
 
-nani ﬁno all'alba.
+nani fino all'alba.
 
 Time viene distrutta.
 
@@ -512,7 +512,7 @@ Il mondo si congela. Moradin parla alla mente del Portatore.
 
 "Figlio della Pietra, hai risvegliato la Memoria del Mondo. La battaglia che infuria ora, sulle
 
-mura di Hammerﬁst, è già iniziata. Il tuo corpo è lontano, ma il tuo spirito, legato a Aegis
+mura di Hammerfist, è già iniziata. Il tuo corpo è lontano, ma il tuo spirito, legato a Aegis
 
 Fang e ora a questa corona, può ancora colpire. Hai dieci rintocchi di martello (10
 
@@ -526,9 +526,9 @@ indebolirà l'orda quando tornerai davvero per riscrivere la storia. Scegli sagg
 
 forgia del destino attende la tua mano."
 
-La Sﬁda del Sogno: Proiezione Spirituale
+La Sfida del Sogno: Proiezione Spirituale
 
-Il Portatore viene trasportato spiritualmente a Hammerﬁst per una sﬁda tattica di 10 round. (Vedi
+Il Portatore viene trasportato spiritualmente a Hammerfist per una sfida tattica di 10 round. (Vedi
 
 Appendice A per i dettagli completi degli scontri).
 
@@ -544,15 +544,15 @@ Ma non sei illeso. Il peso di quella battaglia disperata, lo sforzo di manifesta
 
 attraverso lo spazio e il tempo, ti ha lasciato una profonda cicatrice nell'anima. Senti
 
-un'incredibile stanchezza spirituale, e il ricordo vivido della sconﬁtta imminente dei tuoi
+un'incredibile stanchezza spirituale, e il ricordo vivido della sconfitta imminente dei tuoi
 
-fratelli ti opprime. Sebbene il tuo corpo sia intatto, il tuo spirito è aﬀaticato.
+fratelli ti opprime. Sebbene il tuo corpo sia intatto, il tuo spirito è affaticato.
 
 Conseguenza Meccanica: Per le successive 24 ore, il Portatore subisce una penalità di
 
 -2 a tutti i Tiri Salvezza sulla Volontà.
 
-Il Sacriﬁcio: Consacrare la Vittoria Spirituale
+Il Sacrificio: Consacrare la Vittoria Spirituale
 
 (Testo di Moradin/Intuizione da leggere al giocatore):
 
@@ -562,7 +562,7 @@ pensiero, non tuo ma chiaro come una runa, si forma nella tua mente: "La vittori
 
 spirituale deve essere temprata nel metallo terreno. L'eco del martello deve essere
 
-onorata con l'acciaio. Oﬀri alla forgia ciò che la forgia comprende: armi temprate e metallo
+onorata con l'acciaio. Offri alla forgia ciò che la forgia comprende: armi temprate e metallo
 
 prezioso, non come pagamento, ma come ancora per legare la tua impresa alla realtà."
 
@@ -571,14 +571,14 @@ Dettagli Tecnici:
 • Costo: 2.500 mo in armi o argento.
 
 • Rituale: Rituale della Donazione (vedi Capitolo 4).
-• Ricompensa: Sblocco dei poteri Stone’s Awareness e Crown of Protection +2. L'aﬀresco
+• Ricompensa: Sblocco dei poteri Stone’s Awareness e Crown of Protection +2. L'affresco
 
 nella sala del ritrovamento si aggiorna.
 
 Rituale 2: Trial of the Deep Hall (Prova della Sala Profonda)
 
-• La Prova: Liberare o sconﬁggere un'anima eletta nanica maledetta nel Sottosuolo.
-• Il Sacriﬁcio: Forgiare gli Occhi del Tempo
+• La Prova: Liberare o sconfiggere un'anima eletta nanica maledetta nel Sottosuolo.
+• Il Sacrificio: Forgiare gli Occhi del Tempo
 
 (Testo di Moradin/Intuizione da leggere al giocatore):
 
@@ -588,7 +588,7 @@ ti sussurra: "Per vedere attraverso i secoli, la corona necessita di occhi. E gl
 
 della terra sono i cristalli forgiati dalla sua pressione. Le gemme sono la memoria
 
-cristallizzata della montagna. Per attivare il Topazio del Tempo, devi oﬀrirgli il ricordo
+cristallizzata della montagna. Per attivare il Topazio del Tempo, devi offrirgli il ricordo
 
 di altre pietre preziose. Stai fornendo alla forgia il materiale grezzo per creare una
 
@@ -600,7 +600,7 @@ chiave in grado di aprire le porte del tempo."
 ◦ Rituale: Rituale della Donazione.
 ◦ Ricompensa: Sblocco del potere Moradin’s Insight. Sintonizzazione della Gem of
 
-Immutable Time. L'aﬀresco si aggiorna.
+Immutable Time. L'affresco si aggiorna.
 
 Rituale 3: Anvil of the World (Incudine del Mondo)
 
@@ -608,7 +608,7 @@ Rituale 3: Anvil of the World (Incudine del Mondo)
 
 Moradin.
 
-• Il Sacriﬁcio: Il Cuore della Leggenda
+• Il Sacrificio: Il Cuore della Leggenda
 
 (Testo di Moradin da leggere al giocatore durante l'incontro diretto):
 
@@ -624,7 +624,7 @@ una leggenda vale più di un tesoro."
 
 "Un drago accumula oro. Un re nano lo usa per forgiare un futuro. Mostrami cosa
 
-sei. Oﬀri la ricchezza della terra alla sua stessa fonte, non come un pagamento, ma
+sei. Offri la ricchezza della terra alla sua stessa fonte, non come un pagamento, ma
 
 come un investimento nella sopravvivenza della tua stirpe. Consacra questo potere
 
@@ -636,13 +636,13 @@ qualcosa di eterno."
 
 • Dettagli Tecnici:
 
-◦ Costo: 40.500 mo in oggetti di artigianato + 1 Sacriﬁcio Personale (1 punto
+◦ Costo: 40.500 mo in oggetti di artigianato + 1 Sacrificio Personale (1 punto
 permanente di COS, un oggetto magico di valore, o una Missione Divina).
 
 ◦ Rituale: Rituale della Donazione + Intervento Divino.
 ◦ Ricompensa: Sblocco dei poteri Adamantine Will e Mantle of Stone and Spirit.
 
-Sintonizzazione completa di tutte e tre le gemme. L'aﬀresco si aggiorna.
+Sintonizzazione completa di tutte e tre le gemme. L'affresco si aggiorna.
 
 Rituale 4: Siege of the Eternal Forge (Assedio della Forgia Eterna)
 
@@ -650,7 +650,7 @@ Rituale 4: Siege of the Eternal Forge (Assedio della Forgia Eterna)
 
 nani alla vittoria.
 
-• Il Sacriﬁcio: Il Costo del Tempo
+• Il Sacrificio: Il Costo del Tempo
 
 ◦ Per gli Alleati: Avviene l'interazione con Moradin per negoziare il passaggio sicuro
 
@@ -662,19 +662,19 @@ La Gem of Immutable Time esplode in una luce accecante, creando una sfera
 
 di energia attorno a voi. All'interno, il mondo esterno scompare, sostituito da un
 
-vortice di ere geologiche che scorrono come ﬁumi impetuosi.
+vortice di ere geologiche che scorrono come fiumi impetuosi.
 
 ◦ L'Invecchiamento (Descrizione per il giocatore):
 
 Senti il peso degli anni che si comprime in pochi istanti. Vedi nuove ciocche
 
-grigie spuntare nella tua barba. Stai oﬀrendo una parte della tua vita alla forgia
+grigie spuntare nella tua barba. Stai offrendo una parte della tua vita alla forgia
 
 del tempo. [Tira 1d10 per determinare gli anni].
 
 • Dettagli Tecnici:
 
-◦ Costo: Invecchiamento permanente di 1d10 anni per il Portatore, più il sacriﬁcio per gli
+◦ Costo: Invecchiamento permanente di 1d10 anni per il Portatore, più il sacrificio per gli
 alleati (se applicabile). La Gem of Immutable Time viene permanentemente distrutta.
 ◦ Ricompensa: Attivazione dell'evento unico Aura of the Eternal Forge. Completamento
 
@@ -687,14 +687,14 @@ Poteri della Corona
 • Power: Stone’s Awareness (Percezione della Pietra) (Sopran.)
 
 ◦ Sblocco: Rituale 1. Attivazione: Continuo. LI: 20°.
-◦ Eﬀetto: +1 morale attacco/danni e +2 intuizione CA toccando pietra/terra. Individuare
+◦ Effetto: +1 morale attacco/danni e +2 intuizione CA toccando pietra/terra. Individuare
 
 Porte Segrete, Scoprire Trappole e Comprendere Linguaggi a volontà *(decisione DM 2026-07-04: valgono entrambe le liste master/HTML)*.
 
 • Power: Crown of Protection +2 (Corona della Protezione +2) (Str)
 
 ◦ Sblocco: Rituale 1. Attivazione: Continuo.
-◦ Eﬀetto: Bonus di deviazione +2 alla CA (diventa +3 dopo il Rituale 4).
+◦ Effetto: Bonus di deviazione +2 alla CA (diventa +3 dopo il Rituale 4).
 
 • Power: Moradin’s Insight (Visione di Moradin) (Sopran.)
 
@@ -702,21 +702,21 @@ Porte Segrete, Scoprire Trappole e Comprendere Linguaggi a volontà *(decisione 
 
 minuti. LI: 20°.
 
-◦ Eﬀetto: Concede Visione del Vero (come l'incantesimo). Fornisce +4 intuizione a
+◦ Effetto: Concede Visione del Vero (come l'incantesimo). Fornisce +4 intuizione a
 
 Artigianato (Fabbro).
 
 • Power: Adamantine Will (Volontà Adamantina) (Sopran.)
 
 ◦ Sblocco: Rituale 3. Attivazione: Continuo.
-◦ Eﬀetto: Immunità a charme e compulsione e +4 razziale ai TS vs eﬀetti mentali
+◦ Effetto: Immunità a charme e compulsione e +4 razziale ai TS vs effetti mentali
 
 toccando pietra/terra.
 
 • Power: Mantle of Stone and Spirit (Manto di Pietra e Spirito) (Sopran.)
 
 ◦ Sblocco: Rituale 3. Attivazione: Continuo.
-◦ Eﬀetto: Concede Mente Vuota (come l'incantesimo, ma soprannaturale) e riduzione al
+◦ Effetto: Concede Mente Vuota (come l'incantesimo, ma soprannaturale) e riduzione al
 danno 5/epic and evil. In un Nodo Terrestre, 1/mese, può lanciare Comunione (come
 
 l'incantesimo, LI 20°, azione 1 round).
@@ -729,25 +729,25 @@ Le Gemme Divine
 
 Frequenza: 1/mese. LI: 20°. TS: Tempra CD 25 (per alleati non protetti).
 
-◦ Eﬀetto: Trasporta il portatore e ﬁno a 8 alleati in un punto speciﬁco del passato.
+◦ Effetto: Trasporta il portatore e fino a 8 alleati in un punto specifico del passato.
 
 • Gem: Gem of True Earth (Gemma della Vera Terra)
 
 ◦ Sblocco: Rituale 3. Attivazione: Azione standard. Frequenza: 1/settimana. LI: 20°.
 
-TS: Riﬂessi CD 22 (per Terremoto).
+TS: Riflessi CD 22 (per Terremoto).
 
-◦ Eﬀetto: Lancia Muro di Pietra (versione potenziata), Santiﬁcare (versione potenziata) o
+◦ Effetto: Lancia Muro di Pietra (versione potenziata), Santificare (versione potenziata) o
 
 Terremoto (versione controllata).
 
 • Gem: Gem of Dwarven Might (Gemma della Potenza Nanica)
 
-◦ Sblocco: Rituale 3. Attivazione: Azione rapida. Frequenza: 1/settimana. Durata: 10
+◦ Sblocco: Rituale 3. Attivazione: Azione veloce. Frequenza: 1/settimana. Durata: 10
 
 round. LI: 20°.
 
-◦ Eﬀetto: Conferisce Possenza Divina e Pelle di Pietra al portatore; Pelle di Pietra e
+◦ Effetto: Conferisce Possenza Divina e Pelle di Pietra al portatore; Pelle di Pietra e
 
 Ispirare Coraggio (+4) agli alleati entro 9m.
 
@@ -755,44 +755,44 @@ Power: Aura of the Eternal Forge (Aura della Forgia Eterna)
 
 • Sblocco: Rituale 4. Attivazione: Automatica e istantanea. Frequenza: Evento unico.
 
-Durata: Fino all'alba. LI: 20°. TS: Volontà CD 20 (per eﬀetto Scosso sui nemici).
+Durata: Fino all'alba. LI: 20°. TS: Volontà CD 20 (per effetto Scosso sui nemici).
 
-• Eﬀetto: Cura completa e potenziamenti divini per i viaggiatori del tempo. Potenziamenti per
+• Effetto: Cura completa e potenziamenti divini per i viaggiatori del tempo. Potenziamenti per
 
 tutti i nani entro 30 metri. Aura di morale e paura.
 
 Sinergia con Aegis Fang
 
 • Sblocco: Possesso di entrambi gli oggetti dopo il Rituale 1. Attivazione: Continua.
-• Eﬀetto: La corona diventa senziente. Aegis Fang diventa una +4 Ascia da Guerra Nanica
+• Effetto: La corona diventa senziente. Aegis Fang diventa una +4 Ascia da Guerra Nanica
 Sacra Ritornante (+2d6 danni sacri vs aberranti, non morti, draghi). Il portatore ottiene
 
 immunità al controllo mentale, telepatia (90m) e può lanciare Guarigione (LI 15°) 1/giorno.
 
 Capitolo 4: Guida Narrativa e Segreti
 
-Gli Aﬀreschi della Sala del Ritrovamento
+Gli Affreschi della Sala del Ritrovamento
 
-Gli aﬀreschi sono il principale veicolo di indizi per il giocatore.
+Gli affreschi sono il principale veicolo di indizi per il giocatore.
 
-• Stato Iniziale: Gli aﬀreschi mostrano la creazione e la forgiatura di artefatti. L'ultimo pannello
+• Stato Iniziale: Gli affreschi mostrano la creazione e la forgiatura di artefatti. L'ultimo pannello
 
 visibile mostra un nano che scopre la corona. Il resto è sbiadito.
 
 ◦ Individuazione del Magico: Rivela un'aura di divinazione forte su tutta la parete.
 ◦ Vedere Invisibilità: Non rivela nulla di nuovo... per ora.
 
-• Dopo Forge’s Defense: L'aﬀresco si anima, mostrando la scena del sogno. Un nuovo
+• Dopo Forge’s Defense: L'affresco si anima, mostrando la scena del sogno. Un nuovo
 
 pannello si rivela magicamente.
 
-◦ Descrizione dell'Aﬀresco (da leggere al giocatore): "Dove prima c'era solo pietra
+◦ Descrizione dell'Affresco (da leggere al giocatore): "Dove prima c'era solo pietra
 
-sbiadita, ora vedi una nuova immagine, chiara e vivida. Raﬃgura un imponente tempio
+sbiadita, ora vedi una nuova immagine, chiara e vivida. Raffigura un imponente tempio
 
 nanico nelle profondità della terra. Al centro, un nano dall'aspetto nobile, vestito come
 
-un'anima eletta di Moradin, è avvolto da catene fatte d'ombra pura. Attorno a lui, ﬁgure
+un'anima eletta di Moradin, è avvolto da catene fatte d'ombra pura. Attorno a lui, figure
 
 contorte con tentacoli al posto del volto (illithid) e sacerdotesse crudeli dalla pelle
 
@@ -802,29 +802,29 @@ d'ossidiana (drow) celebrano un rituale blasfemo."
 
 necromanzia.
 
-◦ Vedere Invisibilità: Rivela deboli rune invisibili attorno alla cornice dell'aﬀresco che
+◦ Vedere Invisibilità: Rivela deboli rune invisibili attorno alla cornice dell'affresco che
 
 compongono un indovinello: "Dove l'onore è in catene e la fede è perduta, la chiave del
 
 tempo attende di essere trovata."
 
-• Dopo Trial of the Deep Hall: L'aﬀresco si aggiorna, mostrando il nano liberato. Un nuovo
+• Dopo Trial of the Deep Hall: L'affresco si aggiorna, mostrando il nano liberato. Un nuovo
 
 pannello appare.
 
-◦ Descrizione dell'Aﬀresco (da leggere al giocatore): "Un'altra sezione della parete
+◦ Descrizione dell'Affresco (da leggere al giocatore): "Un'altra sezione della parete
 
 prende vita. Mostra un nano in pellegrinaggio che scende in una voragine così
 
-profonda da sembrare senza fondo, ﬁno a raggiungere un nucleo di magma pulsante
+profonda da sembrare senza fondo, fino a raggiungere un nucleo di magma pulsante
 
-che ha la forma perfetta di un'incudine. Sopra di essa, ﬂuttua la sagoma spirituale di
+che ha la forma perfetta di un'incudine. Sopra di essa, fluttua la sagoma spirituale di
 
 Moradin, con un martello in mano, in attesa."
 
 • Dopo Anvil of the World: L'ultimo pannello si svela.
 
-◦ Descrizione dell'Aﬀresco (da leggere al giocatore): "L'intero ciclo è ora completo.
+◦ Descrizione dell'Affresco (da leggere al giocatore): "L'intero ciclo è ora completo.
 
 L'ultima, grande immagine è epica. Mostra te, con la corona in testa, che la tieni in alto.
 
@@ -834,13 +834,13 @@ su un campo di battaglia dove un'orda inarrestabile sta per travolgere una forte
 
 nanica... la stessa fortezza che hai visto nel tuo sogno."
 
-Appendice A: La Sﬁda del Sogno - Scenari Tattici
+Appendice A: La Sfida del Sogno - Scenari Tattici
 
 Descrizione Iniziale (Da leggere al giocatore all'arrivo):
 
 La tua visione si schiarisce. Ti trovi su un bastione di pietra battuto dal vento, l'aria piena
 
-di fumo e del puzzo di sangue. Sotto di te, la battaglia di Hammerﬁst infuria. È un incubo
+di fumo e del puzzo di sangue. Sotto di te, la battaglia di Hammerfist infuria. È un incubo
 
 di acciaio e urla. La tua forma è traslucida, un fantasma di energia divina. Moradin ti ha
 
@@ -860,12 +860,12 @@ complete integrate).
 
 Scena A: GORTHAK IL TRIFRONTE
 
-• Obiettivo: Inﬂiggere > 75 danni in 10 round.
+• Obiettivo: Infliggere > 75 danni in 10 round.
 • Statistiche del Nemico:
 
 ◦ GORTHAK IL TRIFRONTE (Ettin a Tre Teste Corazzato, GS 12):
 
-▪ PF: 195; CA: 22; TS: Temp +17, Riﬂ +7, Vol +8
+▪ PF: 195; CA: 22; TS: Temp +17, Rifl +7, Vol +8
 ▪ Attacchi: 3 Randelli Enormi +1 +20/+15/+10 (2d6+9)
 ▪ Tattiche: Attacca la barricata per 2 round. Se subisce > 40 danni, usa un attacco
 
@@ -881,12 +881,12 @@ round.
 
 Scena B: GENERALE GRIMJAW
 
-• Obiettivo: Inﬂiggere > 60 danni a Grimjaw in 10 round.
+• Obiettivo: Infliggere > 60 danni a Grimjaw in 10 round.
 • Statistiche dei Nemici:
 
 ◦ GENERALE GRIMJAW (Orog Guerriero 10/Signore della Guerra 3, GS 14):
 
-▪ PF: 178; CA: 25; TS: Temp +16, Riﬂ +8, Vol +10
+▪ PF: 178; CA: 25; TS: Temp +16, Rifl +8, Vol +10
 ▪ Tattiche: Non attacca. Usa Tattico Superiore. Attiva Presenza Intimidatoria (CD
 
 16) se il Portatore si avvicina.
@@ -908,20 +908,20 @@ Comandante per 5 round.
 
 Scena C: FAUCI DI PALUDE
 
-• Obiettivo: Impedire il soﬃo (al 3° round) inﬂiggendo > 80 danni al drago o uccidendo il
+• Obiettivo: Impedire il soffio (al 3° round) infliggendo > 80 danni al drago o uccidendo il
 
 cavaliere in 10 round.
 • Statistiche dei Nemici:
 
 ◦ FAUCI DI PALUDE (Drago Nero Adulto Avanzato, GS 15):
-▪ PF: 312; CA: 28; TS: Temp +21, Riﬂ +15, Vol +19
+▪ PF: 312; CA: 28; TS: Temp +21, Rifl +15, Vol +19
 ▪ Immunità: Acido, Paralisi, Sonno; RD: 10/magia; RI: 21
-▪ Soﬃo (Sop): Linea di 24m, 14d4 acido, TS Riﬂessi CD 29 dimezza.
-▪ Tattiche: Userà il suo soﬃo al 3° round.
+▪ Soffio (Sop): Linea di 24m, 14d4 acido, TS Riflessi CD 29 dimezza.
+▪ Tattiche: Userà il suo soffio al 3° round.
 
 ◦ CAVALIERE HOBGOBLIN (Guerriero 8/Guardia Nera 2, GS 10):
 
-▪ PF: 95; CA: 22; TS: Temp +10, Riﬂ +4, Vol +4
+▪ PF: 95; CA: 22; TS: Temp +10, Rifl +4, Vol +4
 ▪ Tattiche: Usa Punire il Bene (2/giorno), conferendo al drago +2 all'attacco e +10
 
 ai danni per un colpo.
@@ -948,9 +948,9 @@ la prima volta, non avviene un semplice risveglio di potere. Il mondo attorno a 
 
 Non appena il freddo metallo della corona tocca la tua fronte la tua vista è rapita per un
 
-attimo. Alcuni aﬀreschi lungo la parete della stanza dove stai combattendo diventano
+attimo. Alcuni affreschi lungo la parete della stanza dove stai combattendo diventano
 
-brillanti. Gli aﬀreschi mostrano la creazione e la forgiatura di artefatti. L'ultimo pannello
+brillanti. Gli affreschi mostrano la creazione e la forgiatura di artefatti. L'ultimo pannello
 
 visibile mostra un nano che scopre una corona. Il resto è sbiadito. Poi ogni suono
 
@@ -968,7 +968,7 @@ calda come il cuore di una forgia, risuona direttamente nella tua mente, non con
 
 ma con pura intenzione.
 
-Il Brieﬁng di Moradin
+Il Briefing di Moradin
 
 La presenza di Moradin avvolge la mente del Portatore. Non è un dialogo, ma una trasmissione di
 
@@ -978,7 +978,7 @@ conoscenza e scopo.
 
 "Figlio della Pietra, hai risvegliato la Memoria del Mondo. La battaglia che infuria ora, sulle
 
-mura di Hammerﬁst, è già iniziata. Il tuo corpo è lontano, ma il tuo spirito, legato a Aegis
+mura di Hammerfist, è già iniziata. Il tuo corpo è lontano, ma il tuo spirito, legato a Aegis
 
 Fang e ora a questa corona, può ancora colpire. Hai dieci rintocchi di martello (10
 
@@ -994,11 +994,11 @@ forgia del destino attende la tua mano."
 
 Subito dopo, la scena attorno al giocatore si dissolve in un turbine di luce e ombra, per poi
 
-ricomporsi sulle mura assediate della fortezza nanica di Hammerﬁst.
+ricomporsi sulle mura assediate della fortezza nanica di Hammerfist.
 
 Regole Speciali della Proiezione Spirituale
 
-• Durata: La sﬁda dura esattamente 10 round. Alla ﬁne del 10° round, il Portatore viene
+• Durata: La sfida dura esattamente 10 round. Alla fine del 10° round, il Portatore viene
 
 espulso, indipendentemente da cosa stia facendo.
 
@@ -1026,7 +1026,7 @@ vedere tre punti cruciali del campo di battaglia contemporaneamente. Deve scegli
 
 intervenire.
 
-Scelta A: Aﬀrontare Gorthak il Trifronte, l'Ariete Vivente
+Scelta A: Affrontare Gorthak il Trifronte, l'Ariete Vivente
 
 Descrizione della Scena:
 
@@ -1072,7 +1072,7 @@ G = Gorthak il Trifronte
 
 (Distanza iniziale da P a G: circa 27 metri, con discesa)
 
-Obiettivo: Inﬂiggere più di 95 danni a Gorthak entro 10 round per ferirlo gravemente e
+Obiettivo: Infliggere più di 95 danni a Gorthak entro 10 round per ferirlo gravemente e
 
 danneggiare una delle sue teste.
 
@@ -1081,7 +1081,7 @@ Statistiche Chiave (Gorthak il Trifronte, GS 12):
 • PF: 195; CA: 22
 • Attacchi: 3 Randelli +20 (2d6+9)
 • Tattiche: Gorthak ignorerà il Portatore per i primi 2 round, concentrandosi sulla barricata
-(ogni colpo inﬂigge 2d6+9 danni alla struttura). Dal 3° round, se ha subito più di 40 danni,
+(ogni colpo infligge 2d6+9 danni alla struttura). Dal 3° round, se ha subito più di 40 danni,
 
 userà uno dei suoi attacchi contro il Portatore (anche se non può danneggiarlo, è una
 
@@ -1115,7 +1115,7 @@ da quattro Orog d'élite, le sue Guardie Nere, immobili come statue di ferro. Da
 
 un'unità di Hobgoblin Guerrieri sta posizionando le scale d'assedio contro le mura,
 
-muovendosi con una disciplina terriﬁcante sotto il suo sguardo.
+muovendosi con una disciplina terrificante sotto il suo sguardo.
 
 Mappa Tattica B:
 
@@ -1147,7 +1147,7 @@ H = Hobgoblin Guerrieri (unità nemica)
 
 (Distanza iniziale da P a GR: circa 18 metri, con dislivello)
 
-Obiettivo: Superare le guardie e inﬂiggere più di 70 danni direttamente al Generale Grimjaw.
+Obiettivo: Superare le guardie e infliggere più di 70 danni direttamente al Generale Grimjaw.
 
 Statistiche Chiave:
 
@@ -1172,7 +1172,7 @@ round, non potrà usare Furia Comandante. Le sue Guardie Nere, avendo "fallito" 
 
 iniziano con un malus di -2 al morale.
 
-• Fallimento: Gli Hobgoblin scalano le mura al 4° round del sogno, guidati dall'eﬃcienza di
+• Fallimento: Gli Hobgoblin scalano le mura al 4° round del sogno, guidati dall'efficienza di
 
 Grimjaw. Quando la vera battaglia inizierà, un'unità di Hobgoblin Guerrieri partirà già in cima
 
@@ -1182,7 +1182,7 @@ Scelta C: Salvare la Fede, Ferire la Bestia
 
 Descrizione della Scena:
 
-Alla tua destra, una visione terriﬁcante. Fauci di Palude, un drago nero adulto la cui stazza
+Alla tua destra, una visione terrificante. Fauci di Palude, un drago nero adulto la cui stazza
 
 oscura il cielo, vola in cerchi lenti e predatori. Le sue scaglie umide brillano di una luce
 
@@ -1226,7 +1226,7 @@ K = Cavaliere Hobgoblin (in sella a D)
 
 (Distanza iniziale da P a D: 45 metri, in volo)
 
-Obiettivo: Impedire al drago di usare il suo soﬃo sulle Cantitrici. Ci sono due modi: inﬂiggere più
+Obiettivo: Impedire al drago di usare il suo soffio sulle Cantitrici. Ci sono due modi: infliggere più
 
 di 80 danni a Fauci di Palude per distrarlo, OPPURE uccidere il Cavaliere Hobgoblin (PF 95)
 
@@ -1239,7 +1239,7 @@ Statistiche Chiave:
 ◦ PF: 312; CA: 28; Velocità di Volo: 45m (scarsa)
 ◦ Tattiche: È in volo. Userà il suo movimento per avvicinarsi e al 3° round userà il suo
 
-Soﬃo (Linea 24m, 14d4 acido, CD Riﬂessi 29) sulle Cantitrici. Usa Attacco in Volo se il
+Soffio (Linea 24m, 14d4 acido, CD Riflessi 29) sulle Cantitrici. Usa Attacco in Volo se il
 
 Portatore si avvicina volando.
 
@@ -1254,7 +1254,7 @@ per dare al drago +2 al morale sugli attacchi.
 
 Conseguenze:
 
-• Successo: Il soﬃo del drago viene interrotto. Quando la vera battaglia inizierà, le Cantitrici
+• Successo: Il soffio del drago viene interrotto. Quando la vera battaglia inizierà, le Cantitrici
 
 della Pietra partiranno al completo e con un canto di Ispirare Coraggio (+2) già attivo su tutte
 
@@ -1262,7 +1262,7 @@ le unità naniche circostanti. Il drago (se ferito) o il suo nuovo cavaliere (se
 
 agiranno con più cautela.
 
-• Fallimento: Il soﬃo colpisce. Due delle cinque Cantitrici muoiono. All'inizio della vera
+• Fallimento: Il soffio colpisce. Due delle cinque Cantitrici muoiono. All'inizio della vera
 
 battaglia, il morale dei nani subirà un malus di -1 e l'abilità "Coro della Montagna" richiederà
 
@@ -1276,9 +1276,9 @@ Stone)
 
 Una Corona Leggendaria (Artefatto) di Moradin, Padre delle Forgia
 
-“Forgiata nel cuore profondo del mondo dalla ﬁamma stessa di Moradin,
+“Forgiata nel cuore profondo del mondo dalla fiamma stessa di Moradin,
 
-la Corona di Pietra Eterna è lo spirito inﬂessibile dei nani reso manifesto.”
+la Corona di Pietra Eterna è lo spirito inflessibile dei nani reso manifesto.”
 
 Tipo Artefatto: Corona Leggendaria
 

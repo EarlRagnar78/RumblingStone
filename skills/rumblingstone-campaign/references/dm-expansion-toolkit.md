@@ -241,7 +241,7 @@ Artifact: Phylactery of the Lich of Vraath Keep
   (everyone within 30 ft takes 10d6 negative energy damage, Fort DC 22 half).
 
 Hook: Found in stage 3 of main quest (Vraath Keep) OR purchased from an underground dealer in
-      Cannathgate for 12,000 gp (he doesn't know what it is).
+      Channathgate for 12,000 gp (he doesn't know what it is).
 
 Stage 1: Identify the Phylactery
   → Spellcraft DC 28 or Legend Lore → reveals its nature and the lich's location
@@ -296,7 +296,7 @@ Stage 1: What Is This?
 
 Stage 2: Destroying the Anchor
   Options (parallel to phylactery destruction logic):
-  → Submerge in blessed water at a temple of Selûne: Temple of Selûne in Cannathgate has a
+  → Submerge in blessed water at a temple of Selûne: Temple of Selûne in Channathgate has a
     blessed spring; 3-hour ritual; Tiamat cultists will try to stop it (8 fanatics + 1 cleric)
   → Counter-ritual at the Shaarcah Forest's heart: Elves offer to unmake it through forest magic;
     requires party to return the elves' stolen sacred idol (Side Quest: The Taken Idol)
@@ -324,9 +324,9 @@ Reward: Shaarcah Forest Conclave becomes Allied (provides 12 scouts + forest int
 
 [2] THE CRESSFALL ORPHANS
 20 children from burned Drellin's Ferry area are sheltered in Rethmar's mill, under the care of a
-traumatized halfling woman (Exp 1). Commander Sorann wants them evacuated to Cannathgate
+traumatized halfling woman (Exp 1). Commander Sorann wants them evacuated to Channathgate
 before the main assault. Escort mission — 3 days on the Old North Road / The Dawn Way, 2 random encounters.
-Reward: 600 XP; the halfling's uncle is a fence in Cannathgate who will identify items for free
+Reward: 600 XP; the halfling's uncle is a fence in Channathgate who will identify items for free
 
 [3] THE MURKMERE RIVER RUNNERS
 A band of lizardfolk (8 warriors, Cpt at Ftr 3) is opportunistically raiding both sides —
@@ -342,7 +342,7 @@ DM may reveal one encounter from the next chapter before it occurs.
 Reward: 700 XP; pre-knowledge of one upcoming encounter
 
 [5] THE RED WIZARD OBSERVER
-A Red Wizard named Zara Vel (Wiz 9, NE, Thay) is in Cannathgate, quietly observing the invasion.
+A Red Wizard named Zara Vel (Wiz 9, NE, Thay) is in Channathgate, quietly observing the invasion.
 She is NOT helping the horde — she's evaluating whether Thay can exploit the chaos afterward.
 Approach options: Ignore (she leaves; no consequence); Confront (she defends herself; CR 9);
 Negotiate (she'll share intelligence on the horde's logistics for a favor owed to Thay — moral
@@ -451,11 +451,11 @@ Copy this into each session log and update after major interactions:
 | Shaarcah Forest Conclave (elves) | Hostile | Will shift if idol returned |
 | Lizardfolk (Lhespenbog) | Neutral | Mercenary; 400gp would buy them |
 | Red Wizard (Zara Vel) | Neutral | Observing; can be leveraged |
-| Zhentarim (Cannathgate agent) | Neutral | Watching; could be enemy or tool |
+| Zhentarim (Channathgate agent) | Neutral | Watching; could be enemy or tool |
 | The Lich of Vraath Keep | Hostile (pact) | Shift possible if deception revealed |
 | Silverymoon (distant) | Friendly | Sertieren's contact; slow to respond |
 | Cult of the Dragon (local) | Enemy | Advance agent active; don't know PCs yet |
-| Harper Cell (Cannathgate) | Friendly | Overwhelmed; need PC support to act |
+| Harper Cell (Channathgate) | Friendly | Overwhelmed; need PC support to act |
 
 Faction Scales: Hostile / Unfriendly / Neutral / Friendly / Allied
 Allied factions provide active military or logistical support in the Battle of Rethmar.

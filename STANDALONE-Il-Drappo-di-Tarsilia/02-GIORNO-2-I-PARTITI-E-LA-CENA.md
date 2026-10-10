@@ -10,6 +10,7 @@ Serve: questo file, `REGOLE-DELLA-CORSA-PF1E.md` §3 e §4, `STATBLOCCHI-PF1E.md
 | 0 | Quickstart della serata |
 | 1 | Mattino: le prove in pista |
 | 2 | I Partiti — il mercato del grano |
+| 2-bis | La tavola di fuori (dove stanno i cinque mentre Vanna tratta) |
 | 3 | Il duello dei canti |
 | 4 | La Cena della vigilia |
 | 5 | L'uomo con la fascia grigia (beat di Nocca) |
@@ -100,6 +101,10 @@ settantadue minuti.)*<!-- /storico -->
 > con *individuazione dei pensieri* (ma la parete è di pietra: serve la porta aperta,
 > cioè serve che qualcuno la faccia aprire).
 
+**Dove stanno i cinque fuori**: a una tavola sotto il portico, descritta nel
+§2-bis. Il taglio di cinque minuti è una sua regola, e a farlo è l'uomo che la
+regge.
+
 **Le tre offerte sul tavolo** (dettaglio in `CONTRADE-DI-TARSILIA.md` §3):
 
 | Chi | Chiede | Offre | La trappola |
@@ -122,6 +127,118 @@ termine dell'ora, annuncia due patti che sono stati stretti senza di loro:
 la solitudine dà — **nessuno può tradirli**. Morale **+1**, e in Corsa nessuna
 contrada ha un obbligo verso di loro, ma nemmeno un motivo per prenderli di mira per
 primi.
+
+---
+
+### §2-bis · La tavola di fuori
+
+**A cosa serve.** Nel playtest alfa, coi Partiti giocati in blocco, cinque giocatori
+sono rimasti fuori scena per settantadue minuti. Il §2 li manda al duello dei canti e
+vuole un taglio ogni cinque minuti, ma non dice dove stanno quando sono fuori. Stanno
+qui: a una tavola, con un uomo che la regge e una regola che fa da sola il lavoro del
+timer da cucina. Ogni cinque minuti la tavola si rimescola, e il taglio cade nel mondo
+invece che nella voce del DM.
+
+**Si gioca solo se serve.** Se i Partiti scorrono e nessuno si annoia, salta tutto: il
+timer del §2 basta. Quando la si gioca, dura **un taglio per volta e mai di più**, e non
+allunga la serata: la fascia 0:30-1:20 di `07-GUIDA-DM-PASSO-PASSO.md` §4 resta quella.
+
+> **Read-aloud (lead: Andor — la macchina del regolamento).**
+>
+> *Sotto il portico hanno apparecchiato una tavola tonda per chi non può entrare.*
+> *Dodici sedie, dodici tazze, e davanti a ogni tazza un cartellino col numero. La*
+> *tisana è di salice e non è calda.*
+>
+> *A capotavola siede un uomo con un cappello da cerimoniere, di feltro, troppo alto*
+> *per il portico. Tiene sul palmo una clessidra da cinque minuti e non la guarda: la*
+> *ascolta. Appena prima dell'ultimo granello la gira.*
+>
+> *«Cinque minuti», dice. «Ne mancano sempre cinque. È il regolamento.»*
+>
+> *In fondo uno scrivano dorme col mento nell'inchiostro. Nessuno gli ha chiesto di*
+> *svegliarsi.*
+
+**Chi c'è.** Dodici sedie: i cinque PG fuori e un tenente per ognuna delle altre sette
+contrade, senza nome (se serve, pescalo da `09-KIT-ANTI-IMPROVVISAZIONE.md` §1). A
+capotavola, e **mai spostato**, il Maestro di Tavola.
+
+- **Il Maestro di Tavola** è il funzionario che applica il regolamento di `09-KIT` §3
+  (esperto 2, Sapienza nobiltà +6, Diplomazia +5), ed è lo stesso uomo che si rivede
+  alla Cena. Parla come chi legge un'ordinanza anche quando chiede il sale. Dà del voi
+  a tutti. Non si arrabbia e non si corrompe: si convince con una carta, e a questo
+  tavolo la carta è **l'articolo giusto**. Il tic è quello del kit: cita il numero
+  dell'articolo e lo sbaglia.
+- **Lo scrivano che dorme** è della Civetta (`04-LUOGHI-E-INTRIGO.md` §4). Vedi *Il
+  Dormiente*.
+
+**Il regolamento.** Sta inchiodato a un pilastro del portico, a quattro passi dalla
+tavola, in lettere piccole e fitte, coi numeri veri. Leggerlo non vuole una prova: ci
+vogliono quattro passi e un minuto, e chi ci va lo racconta agli altri. È un Fatto, e
+un Fatto non si tira.
+
+| Il Maestro dice | Il pilastro dice | Che cosa fa al tavolo |
+|---|---|---|
+| «Articolo 9» | **Art. 5.** Al campanello tutti si alzano e prendono la sedia a sinistra. Le tazze restano dove sono. | **Ogni cinque minuti il tavolo si rimescola.** Il campanello lo suona lui quando gira la clessidra: è il taglio del §2, dentro / fuori / dentro. |
+| «Articolo 12» | **Art. 21.** Con chi si aveva accanto prima non si parla. | Niente conciliaboli: ognuno deve lavorarsi un vicino nuovo. Chi parla col vecchio vicino paga il giro, una moneta d'argento nel piatto del Maestro, che la conta a voce alta. |
+| «Articolo 31» | **Art. 13.** Le porte del mercato si aprono per ventilare e lasciano passare soltanto ciò che si legge ad alta voce. | Vedi *La porta*. L'art. 31, quello che il Maestro cita, dice che i cavalli non entrano nel mercato. |
+
+**Chi si siede accanto a chi.** A ogni giro lo decidi tu, guardando la griglia di
+`05-INIZIAZIONE-E-EVENTI-PG.md` §5: chi non ha ancora avuto la sua scena sta accanto a
+chi ha qualcosa da dirgli. I tenenti parlano poco e dicono una cosa sola ciascuno,
+quella che la loro contrada vuole che si sappia. Chi esce dal portico, per esempio
+Berenice verso il duello dei canti del §3, lascia la sedia. Al ritorno ne trova una
+libera, mai la sua, e davanti a sé la tazza di un altro.
+
+**La porta.** Una volta per Partiti, se un PG dice **articolo tredici**, o ne cita il
+contenuto con il numero giusto, il Maestro risponde «Articolo trentuno, sì», perché
+sbaglia il numero anche mentre approva, e apre la porta del mercato per il tempo di un
+respiro. Il tavolo di fuori può far passare **un foglietto, dodici parole al massimo**.
+Il Maestro lo legge a tutti quelli di dentro, con la sua voce da ordinanza, perché
+l'articolo lo vuole letto ad alta voce. Quello che il foglietto dice, lo sentono i
+sette Capitani insieme a Vanna.
+
+| Capitano | Come prende il foglietto |
+|---|---|
+| **Attu** | Sorride. La sua clausola piccola è scritta per chi non legge. Se il foglietto dice di leggere il foglio, il sorriso si ferma, e il patto resta quello che è |
+| **Barbanera** | Non alza la testa e scrive qualcosa |
+| **Vesca** | Guarda Vanna, non il foglietto |
+
+Se il foglietto rivela qualcosa che un PG teneva per sé, vale la nota di regia di
+`05-INIZIAZIONE-E-EVENTI-PG.md` §4-bis: il segreto è del giocatore, e l'ha speso lui.
+
+**Il Dormiente.** Al secondo, al terzo e al quarto giro lo scrivano si sveglia a metà,
+dice **una frase** con la voce impastata e si riaddormenta senza ricordare niente. La
+frase è una diceria: 1d6 dalla tabella di `04-LUOGHI-E-INTRIGO.md` §5, senza ripetere.
+Contano come le dicerie del giorno, e non se ne tira un'altra. **Tu sai quali sono
+false** (la 3 e la 4); il tavolo no, e lo scrivano non si smentisce mai, perché dorme.
+Chi lo sveglia di proposito si sente citare l'articolo che protegge i funzionari a
+riposo, e la frase successiva non arriva.
+
+**Se qualcuno inventa un articolo** («quello sul bere in piedi»), il Maestro lo cerca
+sul pilastro e non lo trova. Dice che non c'è ancora. Dalla seduta dopo c'è, con un
+numero sbagliato, e costa una moneta d'argento.
+
+**Perché esiste, se glielo chiedono.** Il Maestro lo dice come si dice il prezzo del
+pane: *«Il regolamento è più vecchio del Drappo. Lo scrissero dopo che due tenenti,
+sempre seduti accanto, combinarono un patto che costò a un rione la sua stalla. Da
+allora nessuno resta seduto abbastanza da fidarsi.»*
+
+**La fine.** Quando suona davvero il timer da cucina, cioè la campana di mezzogiorno
+del §2, il Maestro lascia cadere l'ultimo granello. Poi chiude la mano sulla
+clessidra. *«Ecco. Cinque minuti.»*
+
+**Cosa lascia indietro, e cosa non è.**
+
+- **Non porta un indizio e non aggiunge un falso indizio.** Di falso indizio ce n'è uno
+  per modulo, e sono i quattro quaranta (`10-DOSSIER-DELLE-PISTE.md` §7). Il numero
+  sbagliato del Maestro si smaschera leggendo il pilastro, e le dicerie sono quelle
+  della tabella. Per questo i numeri di questa tavola evitano di proposito i quaranta.
+- **Non costa niente di tracciato.** Nessun contatore scende per colpa della tavola: il
+  peggio è una moneta d'argento e una tisana di corteccia.
+- **Torna alla Cena.** Chi ha corretto il Maestro con garbo lo ritrova a sera, e lui
+  lo saluta per nome. È l'unico a Tarsilia che lo fa, e per un funzionario è una
+  dichiarazione d'amicizia. Lo sfogo sul 4705 resta quello del `10-DOSSIER` §6, e lo
+  dice a chi ha vicino.
 
 ---
 

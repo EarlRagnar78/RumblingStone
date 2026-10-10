@@ -2321,6 +2321,7 @@ COL →  A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R
         ⬛ = Fauci di Diamante (élite) · 💠 = base corrosa del pilastro
         Gli Xorn NON restano 2 round in superficie: Earth Glide → readied action!
 ════════════════════════════════════════════════════════════════════════
+@tipo tattica caverna
 ```
 
 ### MAPPA T-3 — CAMPO DEI CRISTALLI VIVENTI (skill challenge, §6)
@@ -2342,6 +2343,7 @@ COL →  A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R  S  T
       💠 Cristallo Vivente (canta) · 💎 Madre Cristallo · 💚 crepato (riforgia!)
       🔴 runa di Varis · 🌫️ vuoto/gravità laterale (non attraversare) · ⬜ suolo
 ════════════════════════════════════════════════════════════════════════
+@tipo tattica caverna
 ```
 
 ### MAPPA T-4 — TEMPIO DI MITHRAL: approccio & salto gravitazionale (§7a)
@@ -2445,4 +2447,5 @@ Artemis. ALTARE centrale 🟩: lo Smeraldo 💚 LEVITA sopra; alla VITTORIA l'Al
 scende e la gemma diventa raggiungibile (§9). PARETI SFERICHE di cristallo:
 vista sul Piano oscuro fuori; aria pura dentro. Acustica: ogni colpo è un tuono.
 ════════════════════════════════════════════════════════════════════════
+@tipo tattica interni
 ```

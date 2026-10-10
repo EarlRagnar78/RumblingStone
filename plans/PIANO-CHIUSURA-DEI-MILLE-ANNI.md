@@ -186,7 +186,7 @@ facile il successivo**.
 | ✅ | **M2.1** §4-quater «Il Rituale della Forgia Eterna» | la scena in cui il Rubino entra nella Corona **durante o dopo il duello**, col nome canonico, e la Corona passa a **+3** | è il buco G1, ed è il pezzo che tutti gli altri presuppongono |
 | ✅ | **M2.2** Il bivio della Senzienza | dentro M2.1: **due rami scritti**, «Thorik ha donato» e «Thorik non ha donato», con cosa cambia **al tavolo** in entrambi | senza, M2.1 vale per metà dei tavoli |
 | ✅ | **M2.3** Il risveglio di **Aegis Fang** *(riscritto dopo la correzione di G2)* | vincere l'Assedio porta l'ascia allo **Stage 1**: il master lo deve **consegnare**, non lasciarlo a `state.md`. E l'Ego 14 ha una cosa da dire su Thorik, diversa nei due rami di DEF-3 §5 | è l'altro avanzamento che il canone attribuisce a questo viaggio e che il modulo non nomina |
-| ⬜ | **M2.4** Cucitura D16 | correggere ciò che M1.4 trova | dopo M2.1, perché il Rituale cambia cosa arriva a DEF-5 |
+| ✅ | **M2.4** Cucitura D16 *(niente da correggere: M1.4 ha trovato che regge, e G5, l'unico difetto incontrato cercando, l'ha chiuso M2.0)* | correggere ciò che M1.4 trova | dopo M2.1, perché il Rituale cambia cosa arriva a DEF-5 |
 | ✅ | **M2.5** ~~I nove box~~ → **verificato: non ha senso riscriverli** *(D-C, 2026-09-19)* | la verifica che il DM ha chiesto ha trovato che i nove erano **tre**, e che i tre non violano la norma. Il lotto si chiude **correggendo il metro**, non la prosa | il guadagno misurato è zero: riscrivere prosa buona per inseguire un numero sbagliato sarebbe stato il danno |
 | ✅ | **M2.6** Echo Ledger | le conseguenze nuove in `state.md` §7.E e in `ARC07-CONSEGUENZE-ECHI.md` | la regola: un'eco che non è nel registro non riemerge |
 

@@ -22,7 +22,7 @@ B  |🏔️|⚔️|🏔️|⛰️|🌲|🌲|🌲|🌲|🌲|🌲|  ← A02: HAMME
    ╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱
 C  |⛰️|⛰️|🌲|🌲|🌲|🌲|💀|🌲|🌲|🌲|  ← C07: CAMPO DROW 1 (30 drow, burning operations)
    ╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱
-D  |⛰️|🌲|🌲|🌲|⭐|🌲|🌲|💀|🌲|🟩|  ← D05: CERCHIO SACRO (Obiettivo Hellas!)
+D  |⛰️|🌲|🌲|🌲|⭐|🌲|🌲|💀|🌲|🟩|  ← D05: CERCHIO SACRO (Obiettivo Hella!)
    ╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱      D08: CAMPO DROW 2 (40 drow + 2 ogre)
 E  |🌲|🌲|🌲|🌲|🌲|🌲|🌲|🌲|🌲|🟩|  ← E10: Plains edge (transizione foresta-pianura)
    ╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱  ╲╱
@@ -177,6 +177,7 @@ DISTANZE CHIAVE:
 @path Avanzata PG (dal sentiero nord) ; O2 O9 O18 ; #2b9348
 @zone F10-X30 ; Zona verde protetta (raggio 15 m, +2 PF/round)
 @zone C7-AB33 ; Anello di fumo, cenere e terra bruciata (i drow bruciano la foresta)
+@tipo tattica esterno
 ```
 
 ---
@@ -187,7 +188,7 @@ DISTANZE CHIAVE:
 
 > Ma al centro... vita ostinata. Un alone verde luminescente protegge un cerchio interno di 30 metri. Sette monoliti di pietra antica si ergono come sentinelle, ciascuno alto 5 metri, incisi con rune druidiche che pulsano debole luce verde. Al centro esatto, vedete un altare naturale - una formazione rocciosa piatta coperta di muschio vivo e fiori che non dovrebbero esistere in inverno.
 
-> Hellas, la tua **Collana dei Semi Treant** BRUCIA contro il tuo petto. I semi tremano, quasi urlano silenziosamente: "Casa! Casa! Ma... dolore... corruzione..."
+> Hella, la tua **Collana dei Semi Treant** BRUCIA contro il tuo petto. I semi tremano, quasi urlano silenziosamente: "Casa! Casa! Ma... dolore... corruzione..."
 
 > [Pause]
 
@@ -227,7 +228,7 @@ DISTANZE CHIAVE:
    - Target immediatamente *Grappled* (+28 grapple)
    - Tira target fino a 15ft verso Treant
    - Può mantenere fino a 4 grapple contemporaneamente!
-   - **Priority:** SEMPRE prova grapple Hellas per primo!
+   - **Priority:** SEMPRE prova grapple Hella per primo!
 
 2. **Soffio Corrotto (Su):** 30ft cone, Recharge 1d4 rounds
    - 8d6 fire + 4d6 necrotic (mixed damage)
@@ -238,12 +239,12 @@ DISTANZE CHIAVE:
 3. **Richiamo Elementali Fuoco (Sp):** 1/ogni 3 rounds
    - Summon 1d4 Small Fire Elementals (appaiono random attorno perimetro verde)
    - Durano 8 rounds o fino distrutti
-   - **Elementali priorità:** Attack Hellas se lei al centro per rituale
+   - **Elementali priorità:** Attack Hella se lei al centro per rituale
 
 4. **Aura Corruzione (Su):** 15ft radius (3 quadrati)
    - Tutti alleati natura (druidi, animali, fey) prendono -2 attacchi, saves, skills
    - PG con abilità Nature sentono "wrongness" nauseante
-   - Hellas: Deve fare Concentration DC 20 per cast spells in aura!
+   - Hella: Deve fare Concentration DC 20 per cast spells in aura!
 
 5. **Animate Trees (Sp):** 1/day, standard action
    - Anima 2d4 alberi bruciati nel perimetro (fuori zona verde)
@@ -258,12 +259,12 @@ DISTANZE CHIAVE:
   - Move: 30ft verso centro (arriva Col Q, Riga 22)
   - Free Action: Roar (Intimidate +15, 60ft radius, tutti shaken 2 rounds se falliscono Will DC 18)
 
-- **Round 2:** Cast **Radici Avvinghianti** vs Hellas
+- **Round 2:** Cast **Radici Avvinghianti** vs Hella
   - Se successo grapple, inizia tirare verso di sé (15ft/round)
   - Se fallisce, cast su PG caster/ranged
 
 **PHASE 2 - Aggressive Control (Round 3-6):**
-- Mantiene grapple Hellas + Constrict ogni round (2d6+12 auto-damage!)
+- Mantiene grapple Hella + Constrict ogni round (2d6+12 auto-damage!)
 - **Soffio Corrotto** quando 2+ PG cluster vicini
 - **Animate Trees** per dividere party (alberi bloccano accesso centro)
 - **Summon Fire Elementals** per harassment
@@ -332,7 +333,7 @@ STARTING POSITIONS (Round 1, Treant emerge)
 PG PARTONO:
 - Col O, Riga 05 (appena entrati dalla porta nord)
 - Formation suggerita:
-  🔵 Hellas: Col O, Riga 05 (frontline, deve reach centro!)
+  🔵 Hella: Col O, Riga 05 (frontline, deve reach centro!)
   🔵 Borin (Aegis Fang): Col N, Riga 05 (left flank, tank)
   🔵 Artemis (Ranged): Col P, Riga 04 (backline, cover fire)
   🔵 PG4: Col O, Riga 04 (support/buff)
@@ -405,24 +406,24 @@ NEMICI ROUND 4 (Animated Trees):
 **Benefit Passivo:**
 - **Faerie Fire** at-will vs Treant (outline, negate concealment da fumo)
 
-### Collana dei Semi Treant (Hellas)
+### Collana dei Semi Treant (Hella)
 
 **Attivazione Automatica Ingresso Cerchio:**
-> I semi nella collana **GERMOGLIANO SPONTANEAMENTE**! Piccole radici e foglioline escono dai gusci. Hellas sente connessione empatica: "Fratello... dolore... salva... salva... SALVA!"
+> I semi nella collana **GERMOGLIANO SPONTANEAMENTE**! Piccole radici e foglioline escono dai gusci. Hella sente connessione empatica: "Fratello... dolore... salva... salva... SALVA!"
 
 **Abilità Sbloccata:**
-- **Empathic Connection (Sempre Attiva):** Hellas sente emozioni Treant
+- **Empathic Connection (Sempre Attiva):** Hella sente emozioni Treant
   - Capisce che Treant è in agonia, vuole essere liberato
   - Obtain hint: "Non ucciderlo! Purificalo!"
   - Bonus: +10 Sense Motive vs Treant (capisce intenzioni reali)
 
 - **Summon Treant Allies (1/day, se Treant purificato):**
   - Alla fine combattimento, se Treant salvato
-  - Collana può summon 1d4+1 Treant minori (Small/Medium) che si uniscono a Hellas
+  - Collana può summon 1d4+1 Treant minori (Small/Medium) che si uniscono a Hella
   - Disponibili per battaglia finale Brindol!
 
 **Ability durante Rituale (vedi sotto):**
-- Se Hellas usa Collana durante FASE 3 rituale: ottiene +5 bonus tutti ritual checks
+- Se Hella usa Collana durante FASE 3 rituale: ottiene +5 bonus tutti ritual checks
 - Semi forniscono energia naturale pura per contrastare corruzione
 
 ---
@@ -436,23 +437,23 @@ NEMICI ROUND 4 (Animated Trees):
 
 > "Perdonatemi... perdonatemi..." Una voce antica come montagne risuona nella vostra mente. "La corruzione... Red Hand... rituali drow... mi hanno piegato. Ho... resistito... ma troppo forte..."
 
-> Il Treant alza lentamente un ramo verso Hellas. I suoi occhi - knots nel legno - sembrano piangere linfa. "Druida... sento... sei... pura. Il Cerchio... chiama te. Ma io... troppo corrotto... se rimango... distruggo tutto."
+> Il Treant alza lentamente un ramo verso Hella. I suoi occhi - knots nel legno - sembrano piangere linfa. "Druida... sento... sei... pura. Il Cerchio... chiama te. Ma io... troppo corrotto... se rimango... distruggo tutto."
 
 **SCELTA PG - 3 Opzioni:**
 
 ### OPZIONE A: Purificazione Completa (BEST Outcome)
 
 **Richiede:**
-- **Hellas:** Wisdom (Nature) DC 25 - Identificare fonte corruzione
-- **Hellas:** Cast *Remove Curse* OR *Remove Disease* (CL check DC 22)
-- **Hellas:** Wisdom (Heal) DC 22 - Curare radici contaminate
+- **Hella:** Wisdom (Nature) DC 25 - Identificare fonte corruzione
+- **Hella:** Cast *Remove Curse* OR *Remove Disease* (CL check DC 22)
+- **Hella:** Wisdom (Heal) DC 22 - Curare radici contaminate
 - **Corona Adamantio holder:** Diplomacy DC 20 - Convince Treant accettare aiuto
 
 **Se Tutti Successi:**
 - Corruzione purificata! Treant ritorna sano (corteccia argento, occhi verde smeraldo)
 - **Nome Rivelato:** "Io sono... Radicesaggio... guardiano questo cerchio da 800 anni..."
 - **Alleato Permanente:** Radicesaggio + 20 Treant minori si uniscono difesa Brindol (battaglia finale!)
-- **Benedizione:** Hellas ottiene **Blessing of the Ancient Guardian**
+- **Benedizione:** Hella ottiene **Blessing of the Ancient Guardian**
   - +4 bonus permanente tutti saves vs corruzione/taint
   - 1/day può cast *Heal* come spell-like ability
 - **Intel Prezioso:** Radicesaggio conosce posizioni 3 campi drow (hex map dettagliata)
@@ -466,14 +467,14 @@ NEMICI ROUND 4 (Animated Trees):
 - Corruzione rallentata ma non curata
 - Radicesaggio: "Grazie... ma... non abbastanza. Devo... entrare dormienza. Secoli... forse..."
 - Entra ibernazione (non muore, ma non aiuta battaglia finale)
-- Hellas ottiene **Blessing (Minor):** +2 saves vs corruzione
+- Hella ottiene **Blessing (Minor):** +2 saves vs corruzione
 - Intel parziale: sa solo direzione generale campi drow
 
 ### OPZIONE C: Mercy Kill
 
 **Se PG falliscono tutti checks O decidono ucciderlo:**
 - Radicesaggio chiede: "Allora... liberatemi. Morte... meglio di questa agonia..."
-- Se Hellas lo uccide con **colpo di grazia coup de grace:**
+- Se Hella lo uccide con **colpo di grazia coup de grace:**
   - Treant muore in pace
   - Ultimo sussurro: "Cerchio... proteggerai tu... grazie..."
   - Corpo diventa **Treant Wood Log** (materiale crafting leggendario, valore 5,000gp)
@@ -489,7 +490,7 @@ NEMICI ROUND 4 (Animated Trees):
 - **Current Time:** 19:30-20:00 Day 20
 
 **DM Read to Players:**
-> La notte cala. Sopra gli alberi, vedete bagliori rossi all'orizzonte - incendi lontani. Sentite, portate dal vento notturno, urla di guerra e drago ruggiti. L'orda avanza. E domani... il Cerchio dovrà essere difeso mentre Hellas compie il rituale. Avete una notte per riposare. Usatela bene.
+> La notte cala. Sopra gli alberi, vedete bagliori rossi all'orizzonte - incendi lontani. Sentite, portate dal vento notturno, urla di guerra e drago ruggiti. L'orda avanza. E domani... il Cerchio dovrà essere difeso mentre Hella compie il rituale. Avete una notte per riposare. Usatela bene.
 
 **PG possono:**
 - Short rest (1 ora, recupero HP/alcune abilità)

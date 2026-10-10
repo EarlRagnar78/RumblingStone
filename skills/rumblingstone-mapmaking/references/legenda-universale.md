@@ -36,6 +36,9 @@
 | 🏰 | Muro / roccia solida | **sì** |
 | 🟪 | Pilastro / mithral | **sì** |
 | ⛰ | Montagne / creste rocciose | **sì** |
+| 🟤 | Pavimento di caverna | — |
+| 💧 | Acqua bassa o pozza | — |
+| 🫧 | Fogna o liquame | — |
 
 ## Unità (token con gradiente e anello)
 
@@ -94,6 +97,25 @@
 | 🔮 | Cristalli / altare magico | — |
 | 🪑 | Tavolo e sedie | — |
 | 🧱 | Muretto / copertura bassa (+4 CA) | — |
+| 🔒 | Porta chiusa a chiave o sbarrata | — |
+| ❔ | Porta segreta | — |
+| 🥅 | Saracinesca o grata | — |
+| 🪟 | Finestra o feritoia | — |
+| ⛓ | Sbarre di cella o gabbia | — |
+| 🔼 | Scala che sale | — |
+| 🔽 | Scala che scende | — |
+| 🔻 | Botola o pozzo | — |
+| 🪵 | Detriti e travi crollate | — |
+| 🗄 | Armadio o scaffale | **sì** |
+| 📚 | Libreria o archivio | **sì** |
+| 🧰 | Baule o forziere | — |
+| ⛲ | Fontana o cisterna | — |
+| ⚒ | Incudine e forgia | — |
+| 🧪 | Banco dell'alchimista | — |
+| 🛐 | Altare | — |
+| 🏗 | Gru o argano | — |
+| 🔺 | Stalagmite (copertura parziale) | — |
+| 🔷 | Cristallo gigante (copertura totale) | **sì** |
 
 `⬛ 🏰 🟪 ⛰` sono "solidi": ombra portata, contorno a inchiostro marcato,
 occlusione ambientale sul terreno adiacente, griglia chiara sopra.

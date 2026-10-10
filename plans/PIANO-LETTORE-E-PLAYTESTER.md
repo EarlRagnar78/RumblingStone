@@ -108,7 +108,7 @@ Misurate su DEF-4 prima e dopo, controllando a mano ogni segnalazione (G2, G6):
 
 - [x] le due letture cieche sul DEF-4 del tavolo, e la tabella §2
 
-### F3 · DEF-4 prima della prossima sessione — 🟡 in corso
+### F3 · DEF-4 prima della prossima sessione — ✅
 
 La sessione si è fermata prima dell'infiltrazione. Si parte dalle Scene 6-9.
 
@@ -138,8 +138,11 @@ La sessione si è fermata prima dell'infiltrazione. Si parte dalle Scene 6-9.
       🔴 nelle Scene 5-9, il playtester due (il corno durante lo scontro, il
       ritorno a piedi). Chiusi subito dopo, con il 🔴 del drago attaccato di
       notte e otto 🟠. Resoconto: `esperimenti/lettore-playtester-def4/SECONDA-LETTURA.md`
-- [ ] ⚠️ **da decidere (DM)**: TS, DV, RI e incantesimi di Skullcrusher (A.1)
-      non ci sono; i nomi e le regole marcati `[INFERRED]` in questo lotto
+- [x] ⚠️ **da decidere (DM)**: TS, DV, RI e incantesimi di Skullcrusher (A.1)
+      non ci sono; i nomi e le regole marcati `[INFERRED]` in questo lotto.
+      *(2026-10-07: TS, DV e RI chiusi con la D5, drago nero adulto maturo
+      dell'SRD. Talenti, abilità e incantesimi conosciuti restano `[INFERRED]`:
+      sono la domanda Q37 di F3-quinquies, con le altre marcature)*
 
 ⚠️ **Dal 2026-09-26 `DEF-4` non vale più come caso di calibrazione cieca.** La
 rubrica del playtester ha preso le domande del developer
@@ -147,7 +150,7 @@ rubrica del playtester ha preso le domande del developer
 sente il rumore?») sono nate dai suoi difetti. Una calibrazione nuova si fa su
 un modulo che la rubrica non ha mai visto.
 
-### F3-bis · DEF-4 prima della prossima serata — 🟡 (2026-09-27)
+### F3-bis · DEF-4 prima della prossima serata — ✅ (2026-09-27)
 
 `[engine: Opus, sessione principale; letture a freddo in subagenti ciechi · effort: xhigh · qualità: ciclo del master passi 1-6 sulle Scene 6-13, misura prima e dopo]` — **K** dove tocca il canone, **C** per il resto
 
@@ -204,12 +207,24 @@ developer e del playtester; la misura del miglioramento.
       sull'incudine alla vittoria, e resta nell'incasso), D13 (la custodia col
       glifo incatenata al polso di Grask), D18 (Forza CD 25 cooperativa), D22
       (1 tacca di base al ritorno), D28 (a) la forma della mappa
-- [ ] le decisioni del DM ancora aperte (D12, D14-D17, D19, D21, D23, D25-D27,
-      D28-b; e D7-D10 dalle fasi F3-F5)
-- [ ] **il lotto mappe D28**: la sezione a livelli di Hammerfist 372 (più si
+- [x] le decisioni del DM ancora aperte (D12, D14-D17, D19, D21, D23, D25-D27,
+      D28-b; e D7-D10 dalle fasi F3-F5). *(2026-10-07: decise il 2026-09-30 e
+      applicate con `f7303df`; la casella era rimasta indietro. Per DEF-4 restano
+      aperte D27, D39 e D40, più le marcature di F3-quinquies)*
+- [x] **il lotto mappe D28** *(fatto il 2026-10-08: M7-A orientata, M7-B col cortile della Scena 11, M7-C con le altezze, la sezione M7-S e le griglie M7-D, M7-E, M7-F in due stati in `Mappe/ARC07-MAPPE-HAMMERFIST-372-1372.md`; gli stati del 1372 decisi con D48 lo stesso giorno)* — *prioritario per il DM (2026-10-07)*: le stesse
+      mappe, con le modifiche del tempo, servono nel **1372** come campo di
+      battaglia dell'invasione di Hammerfist (ARC-08): prima per la **ritirata
+      progressiva** dei difensori fino al Cuore della Montagna, poi per la
+      **riconquista**, quando arrivano i Rumbling Stones (`DEF-5` e ARC-08).
+      Quindi ogni griglia ha due stati, 372 e 1372, e segna le vie fra un livello
+      e l'altro. La sezione a livelli di Hammerfist 372 (più si
       scende, più le sale sono ampie) e le griglie da 1,5 m di fucina, gallerie,
       alchimista, cappella e armeria, coerenti con le Scene 4-5 già giocate e
-      con le varianti del 1372. Si apre con `rumblingstone-mapmaking`
+      con le varianti del 1372. Si apre con `rumblingstone-mapmaking`.
+      *(2026-10-08, D8 di [COLLAUDO-MAPPE](PIANO-COLLAUDO-E-GENERAZIONE-MAPPE.md))*:
+      si disegna col set di simboli nuovo (porte per tipo, grate, scale che
+      salgono e scendono con `@collega`, arredi) e passa da `collaudo_mappe.py`
+      e dal collaudatore di mappe prima di dirsi fatto
 - [x] la **quarta lettura cieca** di DEF-4 (2026-09-30), sul testo fuso con la
       #183: tabella qui sotto, rapporti `lettura-quarta-*`
 - [x] le letture a freddo dopo, e la tabella prima/dopo
@@ -283,6 +298,232 @@ Restano aperti senza una decisione: la durata di una tacca nel mondo, il
 Cronolito, la tabella B4 e le ferite ancestrali, il momento in cui Balvar usa il
 Fuori-Posto, e gli oggetti del cortile che la mappa M7-B non ha (è un lotto di
 mappe, non di testo).
+
+### F3-ter · I banchi di ARC-08 e ARC-09 — ✅ (2026-10-07)
+
+`[engine: Opus, sessione principale · effort: medio · qualità: prezzi ricalcolati a mano sull'SRD, profili PF1e verificati sulla fonte, box al metro di read-aloud-adulti]` — **C**, con due decisioni al DM (D41, D42)
+
+Il DM, il 2026-10-06: *«cerca se ci sono aree nei luoghi dell'AP per il
+mercanteggio […] crea questi mercatini, cosa vendono, il valore massimo, in modo
+da non doverlo inventare al volo ogni volta»*. La norma del banco (F3-bis) era
+arrivata con una sola applicazione, la fucina di Gunnvor in DEF-4. Questo lotto
+è la seconda: gli archi che i master DEF non coprono ancora.
+
+Cosa ho guardato prima: `il-banco.md`, la Scena 5 di DEF-4 col conto giocato,
+il kit della Valle §2, i due audit del tesoro, le schede di Sal, Varis, il
+Collezionista, Sonjak, la cella Zhentarim, il Consiglio di Rethmar, e i file di
+luogo dell'arco 09. Nessun piano li copriva: PIANO-MASTER-DEF scriverà i master,
+e quando li scriverà ogni banco di qui entra nella scena che gli spetta.
+
+- [x] `08_.../ARC08-17-BANCO-HAMMERFIST-1372.md`: il banco chiuso durante
+      l'assedio, socchiuso dopo la Cerimonia (Hammerfist con 90 superstiti è un
+      villaggio impoverito), e le promesse della Guida messe contro i tempi di
+      fabbricazione dell'SRD. Tre strade per mantenerle, con le reliquie del 372
+      come proposta (D41)
+- [x] `09_.../Arco-Post-Hammerfist-BANCHI-E-MERCATI.md`: nove banchi (il Cerchio,
+      Dauth che cambia col calendario, la Torre di Zalkatar e il campo di Sonjak
+      con un terzo della merce maledetta dall'elenco SRD, i recinti di loxo e
+      centauri, Rethmar, Channathgate, Sal, il Collezionista con la sua
+      clausola), più dove il banco non c'è e gli echi di ogni banco
+- [x] «Damarath» letto come Rethmar (D2 di PIANO-REVISIONE-ARC09); il kit della
+      Valle §2 rimanda ai banchi e dice perché Channathgate supera il tetto dei
+      4.000 mo; i due indici d'arco e il quickstart di ARC-09 citano i file nuovi
+- [x] misure: 9 box, nessuno oltre le 12 righe, nessuna parentesi, nessun box con
+      più di un nome proprio nuovo (`fase1.py`); `ciclo_prosa segnala` 0 e 0
+      dopo una correzione; `validate_prosa --strict` e `validate_lingua --strict`
+      verdi; `copertura_scene --check` verde
+- [ ] le letture a freddo (lettore e playtester, codice `P-ABITATO`) quando i
+      banchi entrano nei master di PIANO-MASTER-DEF
+
+### F3-quater · Le monete antiche e le locande — ✅ (2026-10-07)
+
+`[engine: Opus, sessione principale · effort: medio · qualità: prezzi SRD verificati sulla fonte, box al metro]` — **C**, con una decisione al DM (D43)
+
+Il DM, il 2026-10-07, dopo aver chiuso D41 (B) e D42: *«cosa succede quando i
+mercanti dei luoghi si accorgono che vengono pagati con monete antiche, che
+informazioni hanno, hanno conseguenze? Verifica anche le locande e simili per
+dormire con i prezzi a notte, e creale per i vari quartieri delle città o
+luoghi, se hanno senso di esistere»*.
+
+- [x] D41 e D42 applicate: `ARC08-17` §2 con la strada B, i numeri di D42 marcati
+      `[CANONE — DM 2026-10-07, D42]` nei banchi e in `ARC08-17`
+- [x] banchi §9 · le monete antiche: cinque tipi (Thorek I, pre-imperiali di
+      `DEF-1`, elfiche di Rhest, di Talar, segnate dal Collezionista), le regole
+      (accorgersene, farle passare, a peso con una su dieci, da collezione a dieci
+      volte come in `DEF-1`, fonderle), e luogo per luogo chi se ne accorge, cosa
+      sa e cosa succede. Due righe nuove negli echi
+- [x] `ARC08-17` §3: le monete di Thorek I davanti al re, e dove si dorme nella rocca
+- [x] `09_.../Arco-Post-Hammerfist-LOCANDE.md`: le due locande del canone (il Ponte
+      Nuovo, Ai Tre Remi) e quelle nuove, una per quartiere dove ha senso (quattro a
+      Dauth, quattro a Rethmar, nove a Channathgate, compresi i balconi sul Campo),
+      coi prezzi SRD per il moltiplicatore della condizione, le stanze libere,
+      cosa si sente al bancone; dove non si dorme in locanda; le monete antiche al
+      bancone
+- [x] D43 decisa e applicata: zero monete di Thorek I in proporzione al conto, 6.250 mo di conio elfico nell'hoard di Regiarix, il prezzo da collezione solo sulle prime dieci monete
+
+### F3-quinquies · DEF-4 da chiudere: le marcature `[INFERRED]` — 🟡 (2026-10-07)
+
+`[engine: Opus, sessione principale · effort: alto · qualità: zero marcature senza risposta del DM, poi il giro delle quattro letture]` — **K**: ogni riga tocca il canone
+
+Il DM, il 2026-10-07: *«continua il piano aperto per DEF-4 aggiornandolo con le
+cose committate nel frattempo; fammi le domande per le parti inferred, in modo
+che anche quella parte si possa sbloccare»*.
+
+**Cosa è arrivato dopo il 30 settembre**, e tocca DEF-4:
+
+- il **registro delle letture a freddo** (`plans/letture-a-freddo.json`, L4 di
+  PIANO-AGENT-SKILLS-ESTERNE) e la lettura del **DM a freddo** del 2026-10-01
+  (L5). Oggi `registro_letture.py` la dà **scaduta**: il DM ha letto un testo che
+  non c'è più. Il master resta in avviso finché non ha una lettura nuova con
+  impronta;
+- la **revisione a due giri** (ADR-0077, L12): per DEF-4 c'è
+  `plans/scrittura/revisioni-D13/REVISIONE-ARC07-DEF-4-VIAGGIO-MILLE-ANNI-r1.md`,
+  con **una** modifica da approvare (un «sembra» nel box del russare del campo,
+  riga 1260);
+- nel testo, un'ultima nota «il box di prima» della Scena 13 era rimasta fuori
+  da `<!-- storico -->` e finiva in stampa: avvolta il 2026-10-07.
+
+**La misura di partenza** (`fase1.py`, `misura_craft`, `copertura_scene`,
+`domande_developer`, 2026-10-07): 2.930 righe, 13 scene, 32 box (0 oltre 12
+righe, 2 con parentesi, 2 con più di un nome proprio), congegni attivi 22 su
+23 (manca solo «ADR interni al documento»), `copertura_scene` 0 rilievi,
+`domande_developer` 5 rilievi tutti dichiarati, **51 marcature `[INFERRED]`** e
+56 `[CANONE]`.
+
+**Le domande.** Ogni marcatura è una domanda, raggruppate per scena. La
+proposta è quella che il testo dice oggi, salvo dove scrivo «correzione»: lì il
+testo ha un numero che non torna con l'SRD. Si risponde per numero («sì» tiene
+la proposta).
+
+| # | Dove | Domanda | Proposta |
+|---|---|---|---|
+| Q1 | Scena 4 | Con il consiglio fallito, cosa vuol dire «aiuti dimezzati»? | 2 pozioni di invisibilità invece di 4, Benedizioni a +1/+1, niente mappa del campo |
+| Q2 | Scena 5 | Il dormitorio dei PG erano gli alloggi dei minatori, con la crepa chiusa col piombo? | sì, colore |
+| Q3 | Scena 5 | Kettra ha **tre** bombe di fuoco sue, *palla di fuoco* 5d6, Riflessi CD 14, 750 mo l'una? | sì |
+| Q4 | Scena 5 | Il chierico incappucciato è la mano del Collezionista e non si incontra in ARC-07? | sì |
+| Q5 | Scena 5 | Le rune di Zeth sul modello di *dissolvi magie*: a che livello d'incantatore, e a che prezzo? | Zeth incantatore di **9°** nel 372 (proposta mia: il testo non dà un livello); prezzo da pergamena SRD (*dissolvi magie* 3° × 9° × 25 = **675 mo**, mirato o ad area) |
+| Q6 | Scena 5 | Il premio di Gunnvor vale sulle **vendite** dei PG, non sugli acquisti? | sì (corretto il 2026-09-30, resta da confermare) |
+| Q7 | Scena 5 | Il forziere del re paga fino a **10.000 mo**, solo con la fiducia piena e solo per cose che servono all'alba? | sì |
+| Q8 | Scena 5 | Il pesatore compra il resto **a metà, in gemme, fino a 15.000 mo**; le gemme dei PG a metà prezzo? | sì |
+| Q9 | Scena 5 | Le armi e armature naniche d'adamantio il forziere le paga a metà **anche oltre** il limite di 2.500 mo? | sì, è l'unica eccezione |
+| Q10 | Scena 5 | Il pesatore trattiene **una moneta su dieci** del 1372, e ha Percepire Intenzioni **+8**? | sì |
+| Q11 | Scena 5 | Ogni incantesimo di 4°-5° comprato stanotte toglie qualcosa alle mura: un tiro sul Registro delle Perdite di ARC-08 alla Scena 10? | sì |
+| Q12 | Scena 5 | Kettra ha Sapienza Magica **+15** (prende 10, CD 25)? | sì |
+| Q13 | Scena 5 | Nel 1372 nessun fabbro sa rifare il disegno di brina dell'ascia del gelo? | sì, eco |
+| Q14 | Scena 5, §7 | Gli echi della fucina: le monete del 1372 murate che riemergono in ARC-08 quando si scava, e le cose vendute che tornano come reliquie? | sì |
+| Q15 | Scena 6 | La pattuglia dei tre fallimenti: otto hobgoblin guerrieri di 4°, 1d6 a round per il corridore, una tacca in più | sì, con una **correzione**: otto creature di GS 3 fanno **EL 9**, non 10 (SRD, raddoppio = +2) |
+| Q16 | Scena 6 | I numeri della sorveglianza del campo (sei squadre su worg fuori, ronde di orchi, squadroni hobgoblin, vedette goblin) | sì: costruiti sulle organizzazioni SRD |
+| Q17 | Scena 6, blocco 3 | Se metà del gruppo fallisce Nascondersi davanti agli orchi, il blocco fallisce e conta un fallimento in più verso la pattuglia? | sì |
+| Q18 | Scena 6, blocco 4 | Le vedette goblin che strillano portano il blocco dopo a CD +2? | sì |
+| Q19 | Scena 6 | Grask veglia nella prima metà della notte e dorme nella seconda? | sì |
+| Q20 | Scena 7 | Tagliare la tenda altrove: Ascoltare delle guardie contro Muoversi Silenziosamente di chi taglia | sì |
+| Q21 | Scena 7 | Cosa fa Balvar quando comincia lo scontro: recuperato non combatte e indica la runa; in trattativa guarda un round, poi sta con chi vince; minacciato combatte | sì |
+| Q22 | Scena 7 | Hald è il figlio della sorella di Balvar; ha diciannove anni ed è di guardia sul camminamento est | sì |
+| Q23 | Scena 7 | Perché Balvar è con l'orda: esiliato senza processo, Abbathor, chiede che la fortezza cada in fretta e che chi si arrende sia risparmiato; e le tre ragioni per cui Zog'tar si fida | sì |
+| Q24 | Scena 7-8 | La tenda vale **EL 17** con Balvar e **16** senza (conto a mano con la DMG) | sì, sapendo che è al limite: rifatto con le regole DMG (Zog'tar 15 e Balvar 13 fanno circa 16; le quattro guardie di GS 8 insieme fanno 12, e aggiungono mezzo punto) viene **fra 16 e 17**. Scritto 17 tiene il tetto di APL+4 |
+| Q25 | Scena 7, 11 | Colpire la runa della Catena sotto la scaglia: regola della casa, attacco contro la CA **piena +4** (33 → 37), non di contatto | sì |
+| Q26 | Scena 8 | Il sacerdote della Mano (hobgoblin adepto 7, GS 6) arriva in 1d4+1 round, con *vedere invisibilità* se ha sentito il corno, e lancia *comando* CD 13 | sì |
+| Q27 | Scena 8 | Il ritorno a piedi: si rigiocano i cinque blocchi, Nascondersi CD 22 senza invisibilità, +4 se il corno ha suonato | sì |
+| Q28 | Scena 8 | Zog'tar catturato sa dove colpiranno all'alba: portarlo alle mura vale un successo in più nella Scena 10 | sì |
+| Q29 | Scena 8 | Se va male nella tenda: Zog'tar prende vivi i PG caduti, i nani li riprendono all'alba, il duello comincia con loro in mezzo al campo | sì |
+| Q30 | Scena 8, App. A | I gradi di Zog'tar (Ascoltare 8, Intimidire 10, Osservare 0) e delle guardie (nessuno nelle due abilità) | sì |
+| Q31 | Scena 9 | Vatore non ha statistiche: al primo colpo a segno il Cronolito lo porta via a fine turno, e *àncora dimensionale* non lo ferma | sì |
+| Q32 | Scena 10, 11 | Se l'alba li coglie fuori e falliscono la prova, il soffio va sul PG che ha tirato peggio; e il duello fuori si gioca sulla spianata davanti alla porta | sì |
+| Q33 | Scena 11 | Le corde delle gru: il gancio è un attacco di contatto a distanza contro la CA di contatto del drago (8), poi a terra si tira la corda (Forza CD 25 cooperativa, D18) | sì |
+| Q34 | Scena 11 | Le balestre pesanti delle mura (1d10, 36 m, un round per ricaricare) non passano la RD 10/magia, ma il drago si gira su chi lo colpisce | sì |
+| Q35 | §6 | Se attaccano la pattuglia di Durin: Durin si arrende alla prima ferita grave, la CD del consiglio sale di +4 | sì |
+| Q36 | §6 | Il drago attaccato di notte sulle colline: due round per orgoglio, poi via; il danno resta, il duello comincia senza sorpresa, costa 2 tacche | sì |
+| Q37 | App. A.1 | I talenti, le abilità e gli incantesimi conosciuti di Skullcrusher (otto talenti, stregone di 5°) | sì: sono quelli dell'SRD per un adulto maturo, scelti fra i suoi |
+| Q38 | App. A.5 | Re Thorek I e Thorgrim non combattono; se il tavolo li porta in combattimento decide il DM | sì |
+| Q39 | §8 | I PX di Skullcrusher: è la **D40** | vedi D40 |
+| Q40 | F3-bis | I cinque punti rimasti senza decisione: quanto dura una tacca nel mondo, il Cronolito, la tabella B4 e le ferite ancestrali, quando Balvar usa il Fuori-Posto, gli oggetti del cortile | proposta da scrivere dopo le risposte qui sopra: dipendono da Q21, Q25 e Q31 |
+
+Le decisioni ancora aperte per DEF-4 restano nella tabella in fondo: **D27**
+(il messaggio interrotto), **D39** (l'orologio senza margine), **D40** (i PX).
+
+- [x] le risposte del DM a Q1-Q40, D27, D39, D40, e la revisione D13
+      (2026-10-07). Tutte «sì» tranne quelle qui sotto
+- [x] le risposte nel testo: 49 marcature su 51 diventano
+      `[CANONE — DM 2026-10-07, Qn]`. Le risposte che cambiano qualcosa:
+      - **Q26**: nel 372 l'orda **non è la Mano Rossa**, è l'orda di Zog'tar
+        Deatheye. Il sacerdote diventa «il sacerdote dell'orda» (e la mano
+        dipinta di rosso diventa nera di fuliggine), la tabella delle forze,
+        l'intestazione di Zog'tar e i due echi «un generale in più» corretti.
+        Restano «Mano Rossa» solo le righe che parlano di oggetti portati dal 1372
+        e l'handout delle Cronache, che è canone D33
+      - **Q29**: i PG sconfitti nella tenda restano prigionieri fino all'alba, e
+        durante l'esecuzione **scompaiono nel nulla**. Dove ricompaiono è Q29-bis
+      - **Q37**: Skullcrusher prende il template **Avanzato** di PF1e completo
+        senza alzare il GS (297 pf, CA 33, morso +30, soffio CD 28, Presenza CD
+        25). `Boost log:` nel master e nella scheda del Bestiario; le cifre
+        corrette anche nella Quick-Reference e nella regia della Scena 11
+      - **Q15**: la correzione a EL 9 non entra: la pattuglia è di guerrieri di
+        4° con due talenti, GS 4 l'uno, e otto GS 4 fanno davvero EL 10. Era un
+        mio errore nella domanda (avevo preso il regular di GS 3 del Bestiario)
+      - **D13**: la modifica approvata, applicata a mano (`applica` avrebbe
+        ricostruito il file dal testo vecchio)
+- [x] le misure dopo: `validate_modules`, `copertura_scene`, `componenti`,
+      `domande_developer`, `validate_bestiario` verdi; box e congegni invariati
+      (32 box, 22 su 23); marcature `[INFERRED]` da 51 a **2**
+- [x] le due domande nuove *(applicate il 2026-10-07: l'incappucciato è Vatore)*: **Q4-bis** (l'incappucciato che dà i componenti a
+      Zeth è un agente del Collezionista, oppure è **Vatore** stesso, che quella
+      notte è nel campo?) e **Q29-bis** (dopo la scomparsa all'esecuzione, dove
+      ricompaiono i PG: proposta, nel cortile quando il drago cala, feriti come
+      sono, e il duello si gioca su M7-B)
+- [~] il giro delle quattro letture a freddo su DEF-4 (passo 6 del ciclo), con la
+      lettura del DM a freddo che rientra nel registro con l'impronta.
+      *(2026-10-07: rapporti in `esperimenti/def4-giro2/`. Lettore 🔴 1 · 🟠 12 ·
+      🟡 48: il 🔴 è il caso di Zog'tar vivo all'alba, che è canone; corretti
+      subito i 🟠 che il testo risolve (la CA della scaglia, 41; la soglia di fuga
+      allineata a D14; le Cronache del §9; dove sta la tabella B4). Le Cronache
+      dicono «quando l'orda calò» su richiesta del DM, e l'handout in uso aveva
+      ancora «venuti da un tempo che non era ancora», tolto come vuole D33.
+      Playtester e DM a freddo rilanciati a due alla volta dopo il limite di
+      richieste; il developer dopo)*. **Il giro 2, i conti**: lettore 🔴 1 · 🟠 12
+      · 🟡 48; playtester 🔴 0 · 🟠 7 · 🟡 16; developer 🔴 1 · 🟠 7 · 🟡 13; DM a
+      freddo 🔴 1 · 🟠 7 · 🟡 19. Corretti nel testo: CA 41 della scaglia, soglia a
+      ⅓ (~100 pf, FERITO GRAVE anche nel gruppo logorato), −2 e aiuti dimezzati
+      insieme, i modificatori della notte raccolti nella Scena 10, Vatore
+      riconoscibile nella Scena 9. I 🔴 rimasti sono canone o forma, e vanno al DM
+      come Q41-Q50. **Risposte del DM, 2026-10-07: sì a tutte**, applicate: Zog'tar
+      vivo all'alba (−1 successo, e con 0-1 sale sulla breccia), le corde con le
+      azioni preparate sullo stesso innesco, il riquadro «La vostra serata» in
+      §0 con le righe da riempire dal registro del 25 settembre, Hammerfist di
+      ottant'anni con la cinta rifatta, la posta del consiglio, Thorgrim vecchio
+      e vivo, i rinforzi in 1d4+2 e 2d4+2 round, i Treant +1 successo, *ristorare*
+      non toglie il −4. Il testo intero della targa l'ho scritto io: resta
+      `[INFERRED]` finché il DM non lo legge. Regola nuova del DM: **un subagente
+      alla volta**
+- [x] i 🟡 del giro 2 (96), corretti senza domande dove il testo li risolve
+      (2026-10-07). Q45 approvata dal DM: **zero `[INFERRED]`** nel master.
+      Corretti: la Zona 1 e il «non dire» rimandano alla Scena 3; il portale fuori
+      dalle mura; i PX in §8; la regia «più sopra»; due pietre accese alla fine
+      della Scena 12; il corno si prende solo alla tenda; le pozioni a 1.650 mo
+      (incantatore di 11°); il Torque sempre; i tempi al tavolo negli atti II e
+      III; Grask sveglio fino alla 4ª tacca; la targa incisa stamattina; la
+      CA di Zog'tar da 24 a **22** (l'armatura completa limita la DES a +1,
+      anche nel Bestiario); «Volare» e il tiro contrapposto dell'Appendice C. Gli
+      altri 🟡 sono mappe (D28: l'orientamento di M7-A, gli oggetti del cortile, le
+      posizioni nella tenda) o materiale da aggiungere (statistiche delle comparse
+      del campo, diversivi, un gesto per gli altri tre PG nel rito): restano per il
+      giro 3
+- [x] Zog'tar Avanzato PF1e completo senza alzare il GS (2026-10-07, il DM: deve
+      reggere più di due round contro questi PG e questi artefatti): 283 pf, 328
+      in Ira, CA 24, ascia +29 (3d6+22). La tenda resta a EL 17, il tetto.
+      `Boost log:` nel master e nel Bestiario. Skullcrusher era già Avanzato (Q37)
+- [x] Zog'tar rifatto su richiesta del DM (2026-10-07): Barbaro 14 / Guerriero 1
+      (stessi 15 DV e pf), RD 3/—, Volontà Indomita, armatura completa di
+      mithral (CA 26), Colpo Devastante al posto di danno in più, per non
+      uccidere Artemis in un colpo. La tenda è alta 6 m al palo e 3 m ai lati;
+      contro chi vola: giavellotti, il palo abbattuto, *dissolvi magie*,
+      *comando*. **Il drago sulla tenda**: il corno è magico (la runa gemella
+      della Catena), il drago arriva in circa 70 round, e se trova Zog'tar o le
+      guardie in piedi entra nello scontro, EL 18-19, voluto dal DM, con l'avviso
+      e l'uscita scritti
+- [x] il lotto mappe D28 (2026-10-08; è di F3-bis, vedi sopra)
+- [ ] **subito**: il giro 3 delle letture su DEF-4, un subagente alla volta
+- [ ] il passo 7: il ricordo del giorno dopo, e il quiz con la chiave già
+      approvata (D1)
 
 ### F4 · Gli altri master di ARC-07 — ⬜ · allargato il 2026-09-27 (ADR-0075)
 
@@ -496,7 +737,7 @@ manuali, così può misurare e segnare il problema, se esiste nell'avventura»*.
 | ~~D24~~ | F3-bis | ✅ **Decisa il 2026-09-27** (il DM: *«forse 6 tacche»*): dormire otto ore vale **6 tacche**. Con il consiglio segnato, chi dorme non fa in tempo a fare il campo prima dell'alba. (b) chiusa il 2026-09-28: al tavolo del 31 luglio i pf **non** sono tornati pieni, quindi vale l'SRD già scritto in DEF-2 |
 | ~~D25~~ | F3-bis | ✅ **Decisa il 2026-09-30**: sì a tutti e tre: (a) −2 ad attacchi e prove, senza la parola «confusi»; (b) il banchetto dà +1 ai TS; (c) con le campane suonate il drago perde il round di sorpresa della picchiata (Ascoltare CD 20). Era: **Tre rilievi di regole della prima lettura a freddo (2026-09-25) mai chiusi**, trovati rileggendo i rapporti vecchi. Il riposo breve era il quarto, e il playtester l'aveva già visto (#13). **(a)** Scena 1: «confusi 1d4 round (−2…)» è la condizione *confuso* dell'SRD o un −2? Proposta: *frastornato* non basta, quindi un −2 a attacchi e prove, scritto senza la parola «confusi». **(b)** Il +1 morale del banchetto e il +2 morale delle Benedizioni **non si sommano** in 3.5 (stesso tipo): proposta, il banchetto dà il +1 ai TS, dove le Benedizioni non arrivano. **(c)** Scena 11: «togliere al drago il vantaggio del suono in picchiata» non ha un numero. Proposta: con le campane suonate il drago perde il round di sorpresa della picchiata (ascoltare CD 20 per sentirlo arrivare) |
 | ~~D26~~ | F3-bis | ✅ **Decisa il 2026-09-30**: sì alla proposta: il registro delle letture a freddo in JSON e il cancello in CI che chiede una lettura nuova quando il master cambia. È un lotto da aprire. Era: **Il giro lettore, playtester e developer in automatico.** Oggi è obbligatorio (ADR-0075) ma lo ricorda solo il piano, e il riposo breve dimostra che un rilievo 🟡 può restare nel testo per giorni. Proposta: un registro in `plans/`, le letture a freddo in JSON, con per ogni master DEF, l'impronta del testo letto e i rilievi con il loro stato (corretto, residuo con ragione, domanda al DM); un cancello in CI che fallisce se il master è cambiato dopo l'ultima lettura, o se un rilievo 🔴 o 🟠 non ha uno stato. La lettura la fa un agente, non la CI: il cancello dice solo *quando* va rifatta. Costo: ogni modifica a un DEF, anche un refuso, chiede una lettura prima del merge, salvo una dichiarazione «modifica di sola forma» |
-| D27 | — | **Il messaggio del 2026-09-27 si interrompe a «considera che i…».** Cosa andava considerato? |
+| ~~D27~~ | — | ✅ **Decisa il 2026-10-07**: non c'era niente da considerare: il DM chiude la domanda. Era: **Il messaggio del 2026-09-27 si interrompe a «considera che i…».** Cosa andava considerato? |
 | ~~D28~~ | F3-bis | **La mappa di Hammerfist nel 372, dall'alto in basso.** Il DM, 2026-09-27: *«in ogni regno nanico, più si scende e più le stanze sono ampie, soprattutto le fucine grandi, come Erebor sotto la Montagna. Magari una mappa, anche con i camminamenti e le gallerie che le rune di Zeth riempiono come difesa contro un assalto interno, e il contorno delle mura esterne»*. Tre cose da decidere prima di disegnare: **(a)** che tipo di mappa (una sezione verticale a livelli, da consultare, o una griglia tattica da 1,5 m per giocarci sopra); **(b)** le rune di Zeth nelle gallerie sono già in gioco la prossima serata, con un effetto meccanico (per esempio un *glifo di interdizione* per corridoio), o solo colore; **(c)** la Scena 5 già giocata descrive tre forge e gallerie strette puntellate da poco: la fucina grande sta **sotto** quella giocata, oppure si riscrive il box. Proposta: (a) una sezione a livelli per il DM, più la griglia del solo cortile e delle mura, che c'è già (M7-B); (b) colore fino al 1372, dove Zeth è il Ghostlord; (c) la fucina grande sta sotto, e la si vede scendendo da Zeth  *(2026-09-28, il DM)*: la mappa è della **fucina, delle gallerie sotterranee, dell'alchimista, del chierico e dell'armeria**, e deve combaciare con il modulo, con le modifiche che il tempo porta (372 e 1372). ✅ **(a) decisa il 2026-09-28**: una **sezione a livelli** per il DM e le **griglie tattiche da 1,5 m** di fucina, gallerie, alchimista, cappella e armeria, con le varianti 372 e 1372. Il disegno è un lotto a sé (checklist F3-bis, con `rumblingstone-mapmaking`); resta aperta la (b), le rune di Zeth sui camminamenti con un effetto meccanico o solo colore |
 | ~~D21~~ | F3-bis | ✅ **Decisa il 2026-09-30**: sì: con 8 tacche o più la Scena 10 non si gioca, le mura valgono «a stento»; Muoversi Silenziosamente CD 20 fallito fa partire il duello col bersaglio già scelto dal drago. Era: **Con 8 tacche o più, la Scena 10 si gioca?** Il modulo fa cominciare il duello fuori dalle mura, ma non dice se la prova delle mura salta né quale esito vale. Proposta: la Scena 10 non si gioca, le mura valgono «a stento» (2-3 successi), e un fallimento della prova di Muoversi Silenziosamente CD 20 fa partire il duello con il drago che ha già scelto il suo bersaglio |
 | ~~D22~~ | F3-bis | ✅ **Decisa il 2026-09-28**: il ritorno a piedi costa **1 tacca** di base, più una per blocco fallito. Chiude l'unico 🔴 della terza lettura |
@@ -511,8 +752,28 @@ manuali, così può misurare e segnare il problema, se esiste nell'avventura»*.
 | D36 | F4 | **I 🟠 di regole di DEF-1, DEF-2 e DEF-3 che chiedono canone**, raccolti dalle letture a freddo del 2026-09-30 (`esperimenti/f4-def1-def3/`). **(a)** DEF-1: la Benedizione «ignora le penalità» ma la tabella della gravità le applica ridotte (−25%, −5): vale la tabella? **(b)** DEF-1: polvere ogni 10 minuti e stalattiti ogni 15 per tutto il viaggio, o solo come evento del d6? Proposta: solo come evento del d6, più la prova di gruppo per zona. **(c)** DEF-1: la via B contro gli Xorn non ha CD. Proposta: Intimidire o Diplomazia CD 18, come la via C; fallita, gli Xorn non sono accerchiati e si combatte senza il bonus. **(d)** DEF-1: al terzo fallimento di Thorik nel rito lo Smeraldo si incastona comunque? Proposta: sì, e il prezzo sono i malus già scritti. **(e)** DEF-2: il +1 sacro al rito viene dal toccare l'incisione o dal dormire nella Stanza? **(f)** DEF-3: la soglia dei 3 su 3 è «se Thorik rifiuta» nella Quick-Reference e «uno o nessun dono» nel §5: vale il §5? |
 | D37 | F4 | **DEF-1 Scena 7: Tordek da solo contro la Sentinella, e se cade?** (🔴 del playtester a freddo). L'anticamera immobilizza Thorik (Forza CD 28, che lui al massimo fa 27) e lascia Artemis prono e indifeso: se Tordek va a 0 pf il modulo non dice cosa succede, e gli altri due passano la scena senza agire. Proposta: la Sentinella è una prova, come Terros è un voto: quando Tordek cade la Magnetite si spegne, la Sentinella torna immobile, e si può ritentare dopo un riposo (−12 h). E per gli altri due un'azione possibile: Thorik può liberarsi con la CD 28 grazie all'aiuto di Artemis (+2), Artemis può parlare, e un suo incantesimo senza componenti somatiche passa |
 | D38 | F4 | **DEF-5: quando si gioca la Fase 0 dell'ARC-08?** (🔴 del playtester e del developer a freddo, 30 settembre). DEF-5 fa arrivare i PG nel Cuore della Montagna nell'ultima resistenza, col drago sulle mura e il riposo impossibile; la tabella dei rami prometteva una Fase 0 (consiglio di guerra, preparativi) prima della battaglia. Dopo D31 «sopra la prima ondata è già passata» le due cose non stanno insieme. Proposta: la Fase 0 si gioca **dopo** il drago ai bastioni: prima il Cuore, poi Fauci, poi il consiglio di guerra per le ondate che restano. E l'aura dell'Apparizione segue l'SRD della presenza terrificante: ogni orco tira, chi fallisce (quasi tutti, con Volontà −2 contro CD 25) è in panico, chi fa 20 è scosso; la Scena 3 si gioca con i pochi che restano e con i nemici che arrivano dopo (CM-1) |
-| D39 | F4 | **L'orologio di DEF-4 non ha margine.** Con le 3 tacche già spese dal gruppo di oggi, parlare con Balvar (1) o fallire un solo blocco del campo porta a 8 tacche: l'alba fuori dalle mura, e la Scena 10 non si gioca. Lo dicono sia il playtester sia il developer del giro 1. Proposta: **(a)** la soglia 🔴 passa a 9 tacche; **(b)** parlare con Balvar costa 0 se lo si fa durante lo scontro nella tenda; **(c)** si lascia così: l'alba fuori è l'esito più probabile, ed è voluto |
-| D40 | F4 | **I PX del beat sono circa tre volte la tabella SRD** (Skullcrusher: 5.400 a testa scritti, ~1.460 da tabella). Il 14° livello di DEF-5 poggia su quella cifra. Proposta: **(a)** si tiene la cifra come premio di storia, detto apertamente; **(b)** si scende al conto SRD, e il 14° arriva dopo DEF-5 |
+| ~~D39~~ | F4 | ✅ **Decisa il 2026-10-07**: (b): parlare con Balvar **durante** lo scontro nella tenda non costa tacche; prima di colpire costa ancora 1. Applicata nell'orologio della notte di DEF-4. Era: **L'orologio di DEF-4 non ha margine.** Con le 3 tacche già spese dal gruppo di oggi, parlare con Balvar (1) o fallire un solo blocco del campo porta a 8 tacche: l'alba fuori dalle mura, e la Scena 10 non si gioca. Lo dicono sia il playtester sia il developer del giro 1. Proposta: **(a)** la soglia 🔴 passa a 9 tacche; **(b)** parlare con Balvar costa 0 se lo si fa durante lo scontro nella tenda; **(c)** si lascia così: l'alba fuori è l'esito più probabile, ed è voluto |
+| ~~D40~~ | F4 | ✅ **Decisa il 2026-10-07**: (b): il duello al conto SRD, 1.460 PX a testa; il totale del beat scende a ~6.360, e il 14° arriva dopo DEF-5. Applicata in DEF-4 §8; DEF-5 §8 va rifatto con questa cifra. Era: **I PX del beat sono circa tre volte la tabella SRD** (Skullcrusher: 5.400 a testa scritti, ~1.460 da tabella). Il 14° livello di DEF-5 poggia su quella cifra. Proposta: **(a)** si tiene la cifra come premio di storia, detto apertamente; **(b)** si scende al conto SRD, e il 14° arriva dopo DEF-5 |
+| ~~D41~~ | F3-ter | ✅ **Decisa il 2026-10-07**: strada **B**. Il re dà il Giorno 21 le reliquie vendute a Gunnvor nel 372 e copre la differenza in gemme, fino a 10.000 mo per PG; vale anche la tacca nel legno del conto. Applicata in `ARC08-17` §2-§3 |
+| ~~D42~~ | F3-ter | ✅ **Decisa il 2026-10-07**: sì a tutto. Profili PF1e di Rethmar, Dauth e Channathgate, le casse, i loxo, la Cintura del monaco come premio del Torneo, il Tempio di Rethmar con un chierico di 13° e un diamante. Marcati `[CANONE — DM 2026-10-07, D42]` nei banchi e in `ARC08-17` |
+| ~~D43~~ | F3-quater | ✅ **Decisa il 2026-10-07** (il DM: *«1 calcola in proporzione, 2 ok»*). **(a)** In proporzione al conto della fucina le monete di Thorek I in tasca ai PG sono **zero**: la borsa al momento di pagare (10.000 in monete del 372, 6.314 in gemme, 19.603 in monete del 1372) è uguale ai conti (35.917), quindi tutto torna ai nani. **(b)** Sì: un quarto delle monete dell'hoard di Regiarix è conio elfico, **6.250 mo**, nella stessa proporzione delle reliquie di Rhest sul tesoro non magico. Applicata nei banchi §9 e in `ARC08-17` §3 |
+| ~~D44~~ | F3-bis, D28 | ✅ **Decisa il 2026-10-08** (il DM sceglie la proposta). **Da dove escono i PG di notte?** La **postierla** è nel muro sud, all'angolo sud-est, sotto la torre est: esce verso il fianco est del campo, col bosco come riparo. Corregge M7-A, che la dava a nord |
+| ~~D45~~ | F3-bis, D28 | ✅ **Decisa il 2026-10-08** (il DM: *«ci sono più fucine»*, poi lo schema proposto). **Le fucine di Hammerfist nel 372**: tre, una per livello. La **fucina originale** (la prima forgia) apre sul cortile: è quella che i Bracieri di Tordek riconoscono, dove si spinge il drago (Scena 11) e da cui viene l'incudine del rito (Scena 12); la **fucina di Gunnvor**, tre forge, dentro la montagna sul corridoio di cappella, alchimista e quartieri (Scena 5); la **fucina grande**, sotto le gallerie di Zeth, la più ampia. Chiude la (c) di D28 |
+| ~~D46~~ | F3-bis, D28 | ✅ **Decisa il 2026-10-08** (il DM sceglie la proposta). **La fortezza del 372 rispetto a quella del 1372**: è il **nucleo**. Esistono già il cortile (M7-B, che nel 1372 diventa il cortile interno), mura più basse (+4,5 m) e le sale nella montagna; fossato, cortile esterno, torri da 20 m e bastioni vengono nei secoli dopo |
+| ~~D47~~ | F3-bis, D28 | ✅ **Decisa il 2026-10-08** (il DM sceglie la proposta). **Dove sta l'armeria?** Accanto alla fucina di Gunnvor: la stanza del «mucchio buono» e delle armi per le mura. Nel 1372 è l'armeria nanica del banco di ARC-08 B4 |
+| ~~D48~~ | F3-bis, D28 | ✅ **Decisa il 2026-10-08** (il DM sceglie le proposte, una per una). **(a)** Il percorso e le misure come nelle griglie; **(b)** le rune di Zeth nel 1372 sono glifi di interdizione dell'SRD legati alla razza: un'esplosione per runa su chi non è nano, 4d8, Riflessi CD 14 dimezza (incantatore di 9°, come una pergamena, Q5), Cercare e Disattivare Congegni CD 28; **(c)** i leoni di pietra sono statue vuote, un'eco dei leoni spettrali del Ghostlord in ARC-09. Era: **Gli stati del 1372 delle sale sotto la montagna vanno bene?** Nessun master li descriveva, e le griglie M7-D, M7-E e M7-F del 1372 li propongono: la ritirata del Giorno 3 dal tunnel della statua alle gallerie di Zeth, poi alla fucina grande e al Cuore; gli orchi che saccheggiano il livello −1 dal corridoio principale; la riconquista al contrario; le rune di Zeth accese (D30) e due leoni di pietra nelle gallerie; le misure delle stanze. Resta da fissare l'effetto meccanico delle rune nel 1372. Proposta: approvare le griglie come sono e decidere le rune quando ARC-08 gioca la ritirata |
+
+<!-- eco: LETTORE-PLAYTESTER 2026-10-07 -->
+- **Decise**: D27 (niente da considerare, la domanda si chiude); D39 (b), Balvar a 0 tacche se gli si parla durante lo scontro; D40 (b), il duello ai PX della tabella SRD; D41, strada B (le reliquie del 372 date dal re il Giorno 21); D42, tutti e cinque i punti (profili delle città, casse, loxo, Cintura del monaco, Tempio di Rethmar); D43, in un secondo messaggio: le monete del 372 calcolate in proporzione (zero) e il conio elfico di Rhest (sì, 6.250 mo)
+- **Aperte**: nessuna. D43, aperta e chiusa lo stesso giorno: zero monete del 372 in proporzione, 6.250 mo di conio elfico nell'hoard di Regiarix
+- **Cambiate**: nessuna rispetto alle proposte
+- **Dedotto da me**: che «calcola in proporzione» voglia dire pagare ogni conto con la borsa in proporzione a quello che c'era dentro, banco per banco, e che il risultato zero vada scritto anche se toglie la scena più forte (la scena resta per una moneta trovata dopo); che il prezzo da collezione valga per le prime dieci monete per collezionista, altrimenti 6.250 monete elfiche varrebbero 62.500 mo; che con la B valga anche la parte della proposta sulle gemme a copertura della differenza, fino a 10.000 mo per PG, e la tacca nel legno del conto; che «D42 ok» copra tutti e cinque i punti; che le «monete antiche» siano tutte quelle che il gruppo può avere (Thorek I, le pre-imperiali di `DEF-1`, quelle di Rhest e di Talar, quelle del Collezionista) e non solo quelle del 372
+
+<!-- eco: LETTORE-PLAYTESTER 2026-10-08 -->
+- **Decise**: D44 la postierla nel muro sud sotto la torre est · D45 tre fucine su tre livelli · D46 il 372 è il nucleo della fortezza del 1372 · D47 l'armeria accanto alla fucina di Gunnvor · D48 il percorso del 1372 e le misure, le rune di Zeth glifi contro chi non è nano, i leoni vuoti
+- **Aperte**: nessuna. D48 è nata e si è chiusa lo stesso giorno
+- **Cambiate**: D45 dalla proposta «la fucina di Gunnvor e quella del cortile sono la stessa sala» a «tre fucine»
+- **Dedotto da me**: che la fucina originale del cortile sia la «prima forgia» da cui viene l'incudine della cappella e del rito; che la statua di un re nel cortile del 372 (Scena 3) sia la statua del Re Antenato del 1372 (H3-1), col tunnel scavato dopo; che le gallerie di Zeth siano i «passaggi antichi» della ritirata del 1372 verso il Cuore della Montagna; per D48, che la CD delle rune venga dalla regola delle pergamene (Q5, incantatore di 9°) e non da una Saggezza di Zeth nel 372 che nessuna scheda dà
 
 ## 5 · Validazione
 

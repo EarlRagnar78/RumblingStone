@@ -30,7 +30,7 @@ RIGHE ↓    │  │  │  │  │  │  │  │  │  │  │  │  │  �
 03    │ 🏰 🏰 🏰 🟪 🟪 🏮 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🏮 🟪 🟪 🏮 🏰 🏰
       │       └──┘ PILASTRO NW (D3-E4)                     └──┘ PILASTRO NE (O3-P4)
 04    │ 🏰 🏰 🏰 🟪 🟪 🏮 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🏮 🟪 🟪 🏮 🏰 🏰
-      │       3m×3m Mithril                                  3m×3m Mithril
+      │       3m×3m Mithral                                  3m×3m Mithral
 
 --- RIGA 05-08: AREA CENTRALE + TRONO ELEVATO ---
 05    │ 🏰 🏰 🏰 🏮 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🏮 🏮 🏰 🏰
@@ -51,7 +51,7 @@ RIGHE ↓    │  │  │  │  │  │  │  │  │  │  │  │  │  �
 11    │ 🏰 🏰 🏰 🟪 🟪 🏮 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🏮 🟪 🟪 🏮 🏰 🏰
       │       └──┘ PILASTRO SW (D11-E12)                    └──┘ PILASTRO SE (O11-P12)
 12    │ 🏰 🏰 🏰 🟪 🟪 🏮 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🏮 🟪 🟪 🏮 🏰 🏰
-      │       3m×3m Mithril                                  3m×3m Mithril
+      │       3m×3m Mithral                                  3m×3m Mithral
 
 --- RIGA 13: XANATHIRA + PORTA SUD ---
 13    │ 🏰 🏰 🏰 🏮 🏮 🏮 🟩 🟩 🟩 🟩 🔴 🟩 🟩 🟩 🏮 🏮 🏮 🏮 🏰 🏰
@@ -60,6 +60,7 @@ RIGHE ↓    │  │  │  │  │  │  │  │  │  │  │  │  │  �
       │                            └──┘ PORTA SUD: Col J-K (uscita verso Forgia)
 
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+@tipo tattica interni
 ```
 
 ### VISTA 2: PROSPETTIVA 3D (Guardando da Porta Nord)
@@ -72,7 +73,7 @@ VISTA INGRESSO (PG Guardano Sud) ↓
                   Torce Mura
                   
 🟪🟪 PILASTRO NW              PILASTRO NE 🟪🟪
-│  │ 3m×3m Mithril           Mithril 3m×3m │  │
+│  │ 3m×3m Mithral           Mithral 3m×3m │  │
 │  │                                       │  │
 │  │                                       │  │
 │  │         🔴 Yochlol 1   Yochlol 2 🔴  │  │
@@ -104,7 +105,7 @@ VISTA INGRESSO (PG Guardano Sud) ↓
 
 ### 📍 POSIZIONI PRECISE CON COORDINATE:
 
-**4 PILASTRI MITHRIL 🟪 (Copertura Totale +8 AC):**
+**4 PILASTRI Mithral 🟪 (Copertura Totale +8 AC):**
 - **NW:** Colonne D-E, Righe 3-4 (3m × 3m = 2×2 quadrati)
 - **NE:** Colonne O-P, Righe 3-4
 - **SW:** Colonne D-E, Righe 11-12
@@ -226,7 +227,7 @@ VISTA INGRESSO (PG Guardano Sud) ↓
 
 | Elemento | Dove | Effetto meccanico 3.5 |
 |---|---|---|
-| 4 Pilastri di Mithril 🟪 | NW D-E/3-4, NE O-P/3-4, SW D-E/11-12, SE O-P/11-12 (2×2 ognuno) | **copertura totale +8 CA**; PF 180, Durezza 15 (di fatto indistruttibili) |
+| 4 Pilastri di Mithral 🟪 | NW D-E/3-4, NE O-P/3-4, SW D-E/11-12, SE O-P/11-12 (2×2 ognuno) | **copertura totale +8 CA**; PF 180, Durezza 15 (di fatto indistruttibili) |
 | Trono elevato ⬛👑 | dais H-K/9-10, trono I-J/9-10 (+1,5 m) | **+1 CA, +2 al colpo** a chi sta sul dais |
 | Corona d'Adamantio 👑 | sopra il trono, J09 | obiettivo: prendibile a Belkram sconfitto |
 | Cerchio Demoniaco | 10 m diam. centrato J09 (7×7, area G-M/06-12) | **solo visivo** (nessun effetto meccanico); rune viola quando Belkram è attivo |
@@ -328,6 +329,7 @@ RIGHE ↓    │  │  │  │  │  │  │  │  │  │  │  │  │  �
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
 NOTA: A6 🕐 TIME PORTAL, A7, A8 altri affreschi non mostrati per brevità (SW, W, NW quadranti)
+@tipo tattica interni
 ```
 
 ---

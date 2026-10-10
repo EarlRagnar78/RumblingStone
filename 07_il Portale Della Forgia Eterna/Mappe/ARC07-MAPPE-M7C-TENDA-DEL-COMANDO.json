@@ -2,54 +2,550 @@
   "schema_version": "1.0",
   "title": "M7-C — La tenda del comando di Zog'tar (notte, ≈372 DR)",
   "scale_m_per_square": 1.5,
-  "map_size": [26, 20],
+  "map_size": [
+    26,
+    20
+  ],
   "base_terrain": "🟩",
   "north": "N",
+  "tipo": "tattica",
+  "ambiente": "esterno",
   "regions": [
-    { "terrain": "🟫", "rect": [8, 4, 10, 9], "label": "Dentro la tenda: terra battuta coperta di pelli" }
+    {
+      "terrain": "🟫",
+      "rect": [
+        8,
+        4,
+        10,
+        9
+      ],
+      "label": "Dentro la tenda: terra battuta coperta di pelli"
+    }
   ],
   "structures": [
-    { "type": "⛺", "line": [[7, 3], [18, 3]], "label": "Telo nord della tenda (pelle nera: si taglia in un round)" },
-    { "type": "⛺", "line": [[7, 13], [18, 13]], "label": "Telo sud della tenda" },
-    { "type": "⛺", "line": [[7, 3], [7, 13]], "label": "Telo ovest della tenda" },
-    { "type": "⛺", "line": [[18, 3], [18, 13]], "label": "Telo est della tenda" },
-    { "type": "🚪", "at": [12, 3], "label": "La soglia (runa 1: niente teletrasporti)" },
-    { "type": "🟪", "at": [12, 8], "label": "Palo centrale (runa 2: barriera di lame)" },
-    { "type": "🪑", "at": [9, 7], "label": "Tavola con la mappa di Hammerfist" },
-    { "type": "👑", "at": [12, 12], "label": "Seggio di ossa di Zog'tar" },
-    { "type": "🏮", "at": [9, 10], "label": "Braciere del seggio" },
-    { "type": "🏮", "at": [14, 5], "label": "Braciere della soglia" },
-    { "type": "🪓", "at": [17, 4], "label": "Rastrelliera delle guardie" },
-    { "type": "🦴", "at": [8, 4], "label": "Ossa di nani appese ai tiranti" },
-    { "type": "🦴", "at": [17, 8], "label": "Ossa di nani appese ai tiranti" },
-    { "type": "⛺", "center": [3, 3], "radius": 1, "label": "Tende dell'orda" },
-    { "type": "⛺", "center": [3, 9], "radius": 1, "label": "Tende dell'orda" },
-    { "type": "⛺", "center": [3, 16], "radius": 1, "label": "Tende dell'orda" },
-    { "type": "⛺", "center": [22, 10], "radius": 1, "label": "Tende dell'orda" },
-    { "type": "⛺", "center": [22, 16], "radius": 1, "label": "Tende dell'orda" },
-    { "type": "⛺", "center": [9, 17], "radius": 1, "label": "Tende dell'orda" },
-    { "type": "⛺", "center": [16, 17], "radius": 1, "label": "Tende dell'orda" }
+    {
+      "type": "⛺",
+      "line": [
+        [
+          7,
+          3
+        ],
+        [
+          18,
+          3
+        ]
+      ],
+      "label": "Telo nord della tenda, alto 3 m ai lati. Tagliarlo fa rumore: le guardie tirano Ascoltare contro il Muoversi Silenziosamente di chi taglia (Scena 7)"
+    },
+    {
+      "type": "⛺",
+      "line": [
+        [
+          7,
+          13
+        ],
+        [
+          18,
+          13
+        ]
+      ],
+      "label": "Telo sud della tenda"
+    },
+    {
+      "type": "⛺",
+      "line": [
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          13
+        ]
+      ],
+      "label": "Telo ovest della tenda"
+    },
+    {
+      "type": "⛺",
+      "line": [
+        [
+          18,
+          3
+        ],
+        [
+          18,
+          13
+        ]
+      ],
+      "label": "Telo est della tenda"
+    },
+    {
+      "type": "⛺",
+      "rect": [
+        18,
+        4,
+        1,
+        9
+      ],
+      "label": "Telo est: «il telo a sinistra» di Balvar"
+    },
+    {
+      "type": "⛺",
+      "rect": [
+        11,
+        13,
+        3,
+        1
+      ],
+      "label": "Telo del glifo [PROPOSTA: L14–N14]"
+    },
+    {
+      "type": "🚪",
+      "at": [
+        12,
+        3
+      ],
+      "label": "La soglia (runa 1: epurare invisibilità quando un nano la varca)"
+    },
+    {
+      "type": "🚪",
+      "at": [
+        13,
+        3
+      ],
+      "label": "La soglia, larga 3 m perché Zog'tar, Grande, ci passi [PROPOSTA]"
+    },
+    {
+      "type": "🟪",
+      "rect": [
+        12,
+        8,
+        1,
+        1
+      ],
+      "label": "Palo centrale, di legno"
+    },
+    {
+      "type": "🪑",
+      "at": [
+        9,
+        7
+      ],
+      "label": "Tavola con la mappa di Hammerfist"
+    },
+    {
+      "type": "👑",
+      "rect": [
+        12,
+        12,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🪓",
+      "at": [
+        17,
+        4
+      ],
+      "label": "Rastrelliera delle guardie"
+    },
+    {
+      "type": "🦴",
+      "at": [
+        7,
+        2
+      ],
+      "label": "Ossa di nani appese ai tiranti, fuori dalla tenda"
+    },
+    {
+      "type": "🦴",
+      "at": [
+        18,
+        2
+      ],
+      "label": "Ossa di nani appese ai tiranti, fuori dalla tenda"
+    },
+    {
+      "type": "🦴",
+      "at": [
+        6,
+        8
+      ],
+      "label": "Ossa di nani appese ai tiranti, fuori dalla tenda"
+    },
+    {
+      "type": "🦴",
+      "at": [
+        19,
+        8
+      ],
+      "label": "Ossa di nani appese ai tiranti, fuori dalla tenda"
+    },
+    {
+      "type": "⛺",
+      "center": [
+        3,
+        3
+      ],
+      "radius": 1,
+      "label": "Tende dell'orda"
+    },
+    {
+      "type": "⛺",
+      "center": [
+        3,
+        9
+      ],
+      "radius": 1,
+      "label": "Tende dell'orda"
+    },
+    {
+      "type": "⛺",
+      "center": [
+        3,
+        16
+      ],
+      "radius": 1,
+      "label": "Tende dell'orda"
+    },
+    {
+      "type": "⛺",
+      "center": [
+        23,
+        10
+      ],
+      "radius": 1,
+      "label": "Tenda del sacerdote dell'orda, a dieci passi dal telo est [PROPOSTA: X11]"
+    },
+    {
+      "type": "⛺",
+      "center": [
+        22,
+        16
+      ],
+      "radius": 1,
+      "label": "Tende dell'orda"
+    },
+    {
+      "type": "⛺",
+      "center": [
+        9,
+        17
+      ],
+      "radius": 1,
+      "label": "Tende dell'orda"
+    },
+    {
+      "type": "⛺",
+      "center": [
+        16,
+        17
+      ],
+      "radius": 1,
+      "label": "Tende dell'orda"
+    }
   ],
   "hazards": [
-    { "type": "🔥", "at": [5, 13], "label": "Falò", "effect": "luce fioca a 3 m: Nascondersi CD +4 nei quadretti vicini" },
-    { "type": "🔥", "at": [21, 13], "label": "Falò", "effect": "luce fioca a 3 m: Nascondersi CD +4 nei quadretti vicini" }
+    {
+      "type": "🟪",
+      "at": [
+        12,
+        8
+      ],
+      "label": "Palo centrale",
+      "effect": "di legno, alto 6 m: il simbolo è quello del pilastro, ma non è mithral. Regge la runa 2 di Balvar, la barriera di lame (stato E); abbatterlo: Forza CD 20, azione standard (stato F). Sopra il palo il telo è a 6 m, ai lati a 3 m (Scena 8)"
+    },
+    {
+      "type": "🔥",
+      "at": [
+        5,
+        13
+      ],
+      "label": "Falò",
+      "effect": "chi entra nella cella prende 1d6 da fuoco. Luce [PROPOSTA]: intensa entro 6 m, fioca fino a 12 m, come una torcia dell'SRD. Il telo ferma la luce: dentro la tenda non arriva"
+    },
+    {
+      "type": "🔥",
+      "at": [
+        21,
+        13
+      ],
+      "label": "Falò",
+      "effect": "chi entra nella cella prende 1d6 da fuoco. Luce [PROPOSTA]: intensa entro 6 m, fioca fino a 12 m, come una torcia dell'SRD. Il telo ferma la luce: dentro la tenda non arriva"
+    },
+    {
+      "type": "🏮",
+      "at": [
+        14,
+        5
+      ],
+      "label": "Braciere della soglia",
+      "effect": "luce [PROPOSTA]: intensa entro 4,5 m, fioca fino a 7,5 m, oltre è buio. La soglia (M4–N4) è in luce intensa e non dà occultamento (Scena 7)"
+    },
+    {
+      "type": "🏮",
+      "at": [
+        9,
+        10
+      ],
+      "label": "Braciere del seggio",
+      "effect": "luce [PROPOSTA]: intensa entro 4,5 m, fioca fino a 7,5 m, oltre è buio"
+    },
+    {
+      "type": "🟫",
+      "rect": [
+        15,
+        11,
+        3,
+        2
+      ],
+      "label": "Fondo buio [PROPOSTA]",
+      "effect": "dove i bracieri non arrivano: dà occultamento (Scena 7). Contro le guardie si tira Nascondersi contro il loro Osservare (+1, Appendice A.2): una prova entrando, un'altra se qualcuno si muove. [PROPOSTA: celle P12–R13, dai raggi dei bracieri]"
+    }
   ],
   "units": [
-    { "faction": "PG", "name": "I quattro, invisibili (Scena 6)", "token": "🔵", "area": { "rect": [11, 1, 4, 1] }, "quantity": 4 },
-    { "faction": "PG", "name": "Durik", "token": "🟢", "at": [10, 1] },
-    { "faction": "Orda", "name": "Zog'tar Deatheye (Grande)", "token": "⚫", "area": { "rect": [12, 10, 2, 2] }, "cr": "GS 14" },
-    { "faction": "Orda", "name": "Balvar Fuocospento, nell'angolo buio", "token": "🟡", "at": [17, 12], "cr": "GS 13" },
-    { "faction": "Orda", "name": "Guardia hobgoblin", "token": "🔴", "at": [10, 11], "cr": "Guerriero 8" },
-    { "faction": "Orda", "name": "Guardia hobgoblin", "token": "🔴", "at": [15, 11], "cr": "Guerriero 8" },
-    { "faction": "Orda", "name": "Guardia hobgoblin", "token": "🔴", "at": [11, 4], "cr": "Guerriero 8" },
-    { "faction": "Orda", "name": "Guardia hobgoblin", "token": "🔴", "at": [13, 4], "cr": "Guerriero 8" }
+    {
+      "faction": "PG",
+      "name": "I quattro PG, invisibili o nascosti (Scena 6)",
+      "token": "🔵",
+      "area": {
+        "rect": [
+          11,
+          1,
+          4,
+          1
+        ]
+      },
+      "quantity": 4
+    },
+    {
+      "faction": "Orda",
+      "name": "Zog'tar Deatheye (Grande), seduto sul seggio",
+      "token": "⚫",
+      "area": {
+        "rect": [
+          12,
+          11,
+          2,
+          2
+        ]
+      },
+      "cr": "GS 15",
+      "note": "Grande: il master compilato porta a mano «@taglia N13 ; Grande», che il compilatore non scrive"
+    },
+    {
+      "faction": "Orda",
+      "name": "Balvar Fuocospento, sullo sgabello nel fondo buio, a tre passi dal generale [PROPOSTA: P13]",
+      "token": "🟡",
+      "at": [
+        15,
+        12
+      ],
+      "cr": "GS 13"
+    },
+    {
+      "faction": "Orda",
+      "name": "Guardia hobgoblin, in ascolto davanti al seggio [PROPOSTA: cella]",
+      "token": "🔴",
+      "at": [
+        10,
+        11
+      ],
+      "cr": "Guerriero 8"
+    },
+    {
+      "faction": "Orda",
+      "name": "Guardia hobgoblin, in ascolto davanti al seggio [PROPOSTA: cella]",
+      "token": "🔴",
+      "at": [
+        11,
+        9
+      ],
+      "cr": "Guerriero 8"
+    },
+    {
+      "faction": "Orda",
+      "name": "Guardia hobgoblin, in ascolto davanti al seggio [PROPOSTA: cella]",
+      "token": "🔴",
+      "at": [
+        14,
+        9
+      ],
+      "cr": "Guerriero 8"
+    },
+    {
+      "faction": "Orda",
+      "name": "Guardia hobgoblin, in ascolto davanti al seggio [PROPOSTA: cella]",
+      "token": "🔴",
+      "at": [
+        15,
+        10
+      ],
+      "cr": "Guerriero 8"
+    },
+    {
+      "faction": "Orda",
+      "name": "Grask, l'araldo: dorme seduto fuori, dalla parte del campo, la custodia del corno incatenata al polso [PROPOSTA: N15]",
+      "token": "🔴",
+      "at": [
+        13,
+        14
+      ],
+      "cr": "Combattente 1"
+    },
+    {
+      "faction": "Orda",
+      "name": "Il sacerdote dell'orda, che dorme nella tenda accanto: arriva in 1d4+1 round [PROPOSTA: W11]",
+      "token": "🟡",
+      "at": [
+        22,
+        10
+      ],
+      "cr": "GS 6, adepto 7"
+    }
   ],
   "movements": [
-    { "name": "Il corridore hobgoblin (complicazione 6 della Scena 6)", "path": [[25, 6], [20, 2], [13, 2]], "color": "#d62828" }
+    {
+      "name": "Il corridore hobgoblin (complicazione 6 della Scena 6)",
+      "path": [
+        [
+          25,
+          6
+        ],
+        [
+          20,
+          2
+        ],
+        [
+          13,
+          2
+        ]
+      ],
+      "color": "#d62828"
+    },
+    {
+      "name": "Il sacerdote, dalla sua tenda alla soglia (1d4+1 round) [PROPOSTA: percorso]",
+      "path": [
+        [
+          22,
+          10
+        ],
+        [
+          19,
+          3
+        ],
+        [
+          15,
+          2
+        ]
+      ],
+      "color": "#7b2cbf"
+    },
+    {
+      "name": "Le ronde di orchi più vicine (1d4+2 round) [PROPOSTA: bordo ovest]",
+      "path": [
+        [
+          0,
+          11
+        ],
+        [
+          6,
+          11
+        ]
+      ],
+      "color": "#e85d04"
+    },
+    {
+      "name": "Gli squadroni hobgoblin (2d4+2 round) [PROPOSTA: bordo sud]",
+      "path": [
+        [
+          12,
+          19
+        ],
+        [
+          12,
+          15
+        ]
+      ],
+      "color": "#9d0208"
+    }
   ],
   "notes": [
-    "La tenda e' 18 m x 16,5 m, di pelle nera e ossa di nani; la geometria si cambia qui e si ricompila.",
-    "I PG arrivano da nord, dalla fortezza. La soglia e' illuminata, il fondo no: Balvar siede dove i bracieri non arrivano (Scena 7).",
-    "Runa 3: su Balvar (silenzio a comando). Runa 4: vuota, la incide durante lo scontro."
+    "Pre-allerta (corridore arrivato o allarme): Zog'tar in piedi con l'ascia, le quattro guardie in fila davanti al seggio in L11–O11 [PROPOSTA], Grask sveglio col corno; niente round di sorpresa, Ira al primo turno (Scena 8).",
+    "Un nano varca la soglia: la runa di epurare invisibilità rende visibile chi è invisibile entro 19,5 m, per 13 minuti e senza rumore; si passa alla Scena 8 senza round di sorpresa (Scena 6).",
+    "Qualcuno entra dal telo sopra il seggio: scoppio sonoro 5d8, Riflessi CD 18 dimezza, ed è l'allarme; nella bolla di silenzio non fa danni e non esce (Scena 6).",
+    "Balvar attiva la runa del palo: la barriera di lame taglia la tenda in due, 13d6, Riflessi CD 21 per evitarla (Scena 7) [PROPOSTA: lungo la riga 9, da I9 a R9].",
+    "Zog'tar abbatte il palo (Forza CD 20, azione standard) se il volo dura: il telo crolla, chi vola sotto finisce a terra intralciato finché non supera Riflessi CD 15 (un tentativo per round); lui e le guardie escono dal telo in un round (Scena 8).",
+    "Il corno ha suonato prima, o i PG si attardano: Skullcrusher arriva 70 round dopo il primo suono, scoperchia la tenda con un passaggio radente e soffia sulla linea che prende più PG; EL 18-19 (Scena 8).",
+    "Hella richiama Durik dal seme alla tenda: compare accanto a lei, costa una carica dell'Evocazione dei Guardiani e vale un'ora (Scena 6, variante dall'alto). Senza richiamo Durik è alla postierla o nel seme, e non è su questa mappa.",
+    "Le rune incise di Balvar sono quattro: la soglia, il palo, sé stesso (silenzio a comando) e la Catena del drago, sulla scaglia di Skullcrusher, fuori da questa mappa. La lastra d'ardesia che incide mentre combatte non è una runa attiva (Scena 7)."
+  ],
+  "tattiche": [
+    "**Disposizione iniziale** (Scena 7): Zog'tar è sul seggio (M12–N13) e racconta alle guardie come impalerà il re; le quattro guardie stanno davanti al seggio e ascoltano. Balvar è sullo sgabello nel fondo buio, a tre passi dal generale, e incide. Grask dorme seduto fuori, dalla parte del campo; il sacerdote dorme nella sua tenda. Se è **pre-allertato**, vedi lo stato B qui sotto.",
+    "**Da dove si entra** (Scene 6 e 7): dalla **soglia** (M4–N4), e con un nano fra loro scatta la runa (stato C); dal **telo est** (S5–S13), «il telo a sinistra» che Balvar consiglia, e si resta invisibili senza runa né glifo; dal **telo sopra il seggio** (L14–N14), che porta il glifo (stato D). Chi taglia la tenda altrove resta invisibile, ma il taglio fa rumore: le guardie tirano Ascoltare contro il suo Muoversi Silenziosamente.",
+    "**Round di sorpresa** (Scena 8): chi nessuno ha visto né sentito ha un'azione standard o di movimento. Parlare con Balvar in nanico antico, sottovoce, non conta come parlare ad alta voce. Zog'tar non perde la Destrezza alla CA (Schivare Prodigioso Migliorato) e fuori dall'Ira ha 283 pf.",
+    "**Round 1** (Scena 8): Ira Barbarica (*«A ME, CANI! ABBATTETE LE OMBRE!»*) e Occhio di Ossidiana su Thorik; le quattro guardie ingaggiano i PG più esposti. Al primo grido Grask suona il corno entro **1d4 round**, se nessuno se n'è occupato prima (Scena 6).",
+    "**Round 2-3** (Scena 8): carica chi fa più danni, Colpo Possente −5/+10 se ha colpito bene. Contro chi ha armatura leggera o niente usa il Colpo Devastante e lo scaglia contro il palo o fuori dal telo. Il sacerdote arriva **1d4+1 round** dopo il primo grido o il corno: dalla soglia lancia *comando* («Cadi!», Volontà CD 13) sul PG più vicino a Zog'tar, poi *benedizione* sulle guardie, poi *oscurità* per coprire la ritirata del generale.",
+    "**Balvar** (Scena 7): recuperato, non combatte e al primo round dice dov'è la runa della Catena; con la trattativa aperta guarda il primo round e poi sta con chi vince; minacciato o attaccato, *righteous might* al round 1, *slay living* (Tempra CD 20) al round 2, dal round 3 la runa del *silenzio* su di sé, la barriera di lame del palo e il martello.",
+    "**Chi vola sotto il telo** (6 m al palo, 3 m ai lati; Scena 8): resta fuori dalla portata dell'ascia. Zog'tar tira i tre giavellotti Grandi (+20, 1d8+13 in Ira) e, se il volo dura, abbatte il palo (stato F); le guardie tirano giavellotti (+9, 1d6+4); Balvar, se combatte, *dissolvi magie* e *comando superiore* «Cadi» (Volontà CD 20); il sacerdote *comando*.",
+    "**Rinforzi** (Scena 8): le ronde di orchi più vicine arrivano in **1d4+2 round**, gli squadroni hobgoblin in **2d4+2**. Le frecce dei bordi sono una proposta: la tenda sta al centro del campo, e arrivano da ogni lato.",
+    "**Morale** (Scene 7 e 8): sotto il **30% dei pf** Zog'tar combatte disperato e cerca di portare un PG con sé (un ultimo Colpo Possente pieno, −10/+20). Balvar sotto i **30 pf** non fugge e non implora: finisce di incidere la lastra e la lascia lì. Con la Via A (Intimidire CD 22 con la luce divina) Zog'tar arretra ed esce dalla tenda davanti alle sue guardie."
+  ],
+  "evoluzione": [
+    {
+      "stato": "B · pre-allerta",
+      "trigger": "il corridore è arrivato (Scena 6), o c'è stato un allarme",
+      "griglia": "Zog'tar in piedi con l'ascia in mano; le quattro guardie in fila davanti al seggio, L11–O11 [PROPOSTA: celle]; Grask sveglio a N15 col corno pronto",
+      "effetto": "niente round di sorpresa; l'Ira comincia al primo turno di Zog'tar. Balvar parla lo stesso, se i PG ci arrivano (Scena 8)"
+    },
+    {
+      "stato": "C · la soglia",
+      "trigger": "un nano varca la soglia (M4–N4)",
+      "griglia": "niente",
+      "effetto": "runa di *epurare invisibilità*: chi è invisibile entro 19,5 m diventa visibile per 13 minuti, senza rumore. Le guardie li vedono: Scena 8 senza round di sorpresa. Il *silenzio* non la ferma (Scene 6 e 7)"
+    },
+    {
+      "stato": "D · il glifo",
+      "trigger": "qualcuno entra dal telo sopra il seggio (L14–N14)",
+      "griglia": "niente",
+      "effetto": "*glifo di interdizione* legato ai nani: scoppio sonoro 5d8, Riflessi CD 18 dimezza; il boato è l'allarme. Nella bolla di *silenzio* non fa danni e non esce (Scena 6)"
+    },
+    {
+      "stato": "E · la barriera",
+      "trigger": "Balvar attiva la runa del palo (M9)",
+      "griglia": "un muro di lame taglia la tenda in due e separa il gruppo [PROPOSTA: lungo la riga 9, da I9 a R9]",
+      "effetto": "13d6, Riflessi CD 21 per evitarla (Scena 7)"
+    },
+    {
+      "stato": "F · il palo abbattuto",
+      "trigger": "Zog'tar abbatte il palo (Forza **CD 20**, azione standard), se il volo dura",
+      "griglia": "il telo crolla su tutta la tenda, I5–R13",
+      "effetto": "chi vola sotto finisce a terra, intralciato, finché non supera Riflessi **CD 15** (un tentativo per round); Zog'tar e le guardie escono dal telo in un round (Scena 8)"
+    },
+    {
+      "stato": "G · il drago",
+      "trigger": "il corno ha suonato prima dello scontro, o i PG si attardano: Skullcrusher arriva 70 round dopo il primo suono",
+      "griglia": "un passaggio radente strappa il telo: la tenda è scoperchiata",
+      "effetto": "soffia sulla linea che prende più PG, anche con dentro le guardie; poi resta a 12-15 m. EL 18-19, oltre il tetto, voluto dal DM (Scena 8)"
+    },
+    {
+      "stato": "H · Durik",
+      "trigger": "Hella lo richiama dal seme alla tenda",
+      "griglia": "Durik compare accanto a Hella",
+      "effetto": "costa una carica dell'Evocazione dei Guardiani e vale un'ora (Scena 6, variante dall'alto). Senza richiamo è alla postierla o nel seme, e non è su questa mappa"
+    }
+  ],
+  "note_dm": [
+    "**Le rune di Balvar sono quattro** (Scena 7): la soglia, il palo, sé stesso\n(*silenzio* a comando) e la Catena del drago, sulla scaglia di Skullcrusher,\nfuori da questa mappa. La lastra d'ardesia che incide mentre combatte non è\nuna runa attiva."
+  ],
+  "taglie": [
+    {
+      "at": [
+        13,
+        12
+      ],
+      "taglia": "Grande"
+    }
   ]
 }

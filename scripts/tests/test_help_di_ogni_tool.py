@@ -35,6 +35,9 @@ ESENTI = {
     "blender/costruisci_mappa":
         "gira DENTRO Blender e rifiuta di partire a mano: il driver e' "
         "render_map_blender.py, dove sta la logica provabile senza GPU",
+    "blender/rendi_oggetti":
+        "gira DENTRO Blender (o con il modulo bpy) e rifiuta di partire senza: "
+        "il driver e' build_oggetti_cc0.py, che ha --help e i test",
 }
 
 

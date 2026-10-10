@@ -1,21 +1,21 @@
 > ⚠️ DEPRECATED (2026-07): brainstorm storico. Canone corrente: INDICE-GENERALE + state.md.
 
-Inizio a dettagliare la Quest 1, la missione personale della druida Hellas, con mappe, incontri chiave ed eventi rituali. Dividerò in parti per rispettare il limite.  
+Inizio a dettagliare la Quest 1, la missione personale della druida Hella, con mappe, incontri chiave ed eventi rituali. Dividerò in parti per rispettare il limite.  
 
 ***
 
-# Quest 1 – Druida Hellas: Il Cerchio Sacro della Foresta
+# Quest 1 – Druida Hella: Il Cerchio Sacro della Foresta
 
 ## Parte 1: Introduzione e Arrivo al Cerchio
 
 ### Obiettivo  
 
-Hellas deve raggiungere il Cerchio Sacro, un antico luogo di potere naturale, per compiere un rituale che la trasformerà temporaneamente in un elementale della natura, potenziandola per le sfide future.
+Hella deve raggiungere il Cerchio Sacro, un antico luogo di potere naturale, per compiere un rituale che la trasformerà temporaneamente in un elementale della natura, potenziandola per le sfide future.
 
 ### Contesto narrativo  
 
 - Il gruppo riceve segnalazioni sulla devastazione provocata dall'orda della Mano Rossa che avanza rapidamente distruggendo villaggi e foreste.  
-- Hellas ha una visione/spinta degli spiriti della foresta verso un cerchio druidico nascosto.  
+- Hella ha una visione/spinta degli spiriti della foresta verso un cerchio druidico nascosto.  
 - Il tempo è limitato: l'incendio minaccia di estendersi nel raggio d’azione del rituale.
 
 ### Mappa suggerita  
@@ -29,7 +29,7 @@ Hellas deve raggiungere il Cerchio Sacro, un antico luogo di potere naturale, pe
 
 ### Evento rituale  
 
-- Hellas deve evocare una barriera di protezione naturale intorno al cerchio.  
+- Hella deve evocare una barriera di protezione naturale intorno al cerchio.  
 - Richiesto lancio di incantesimi druidici, combinato con prove di Saggezza (Religione o Natura) DC 20.  
 - La barriera tiene a bada gli incendi e depotenziamento di terreno infuocato.
 
@@ -44,35 +44,35 @@ Hellas deve raggiungere il Cerchio Sacro, un antico luogo di potere naturale, pe
 
 ### Evento rituale  
 
-- Hellas deve intonare il Canto della Terra, una melodia ancestrale per evocare il potere elementale.  
+- Hella deve intonare il Canto della Terra, una melodia ancestrale per evocare il potere elementale.  
 - Prove multiple di Concentrazione DC 18 e Intuizione DC 20 per mantenere il rituale puro senza disturbi.  
 - Perdita di concentrazione apporta graduali danni magici da fuoco come pressione crescente.
 
 ### Conseguenze  
 
-- Il successo evoca un elemento del potere naturale (un elementale della terra o spirito animale antico) che aiuterà Hellas temporaneamente.  
+- Il successo evoca un elemento del potere naturale (un elementale della terra o spirito animale antico) che aiuterà Hella temporaneamente.  
 - Fallimento causa danni all’area, un incendio parziale, e perdita temporanea del potere.
 
 ***
 
-Procedo ora a sviluppare la Quest 1 (missione personale di Hellas) a livello dettagliato, con mappe, incontri chiave, rituali e suggerimenti per il DM, integrando anche missioni secondarie prese da Red Hand of Doom aggiornate e livellate per gruppi di 3 PG, e tenendo conto che tutto dovrà convergere verso la battaglia finale a Damarath.
+Procedo ora a sviluppare la Quest 1 (missione personale di Hella) a livello dettagliato, con mappe, incontri chiave, rituali e suggerimenti per il DM, integrando anche missioni secondarie prese da Red Hand of Doom aggiornate e livellate per gruppi di 3 PG, e tenendo conto che tutto dovrà convergere verso la battaglia finale a Damarath.
 
 Dividerò in parti per gestire il limite di dimensione della chat.
 
 ***
 
-## Quest 1 – Druida Hellas: Il Cerchio Sacro della Foresta (Parte 1)
+## Quest 1 – Druida Hella: Il Cerchio Sacro della Foresta (Parte 1)
 
 ### Scenario  
 
 La Foresta Sacra, 60m×60m (40×40 caselle a griglia 1.5m)  
-Gentili spiriti naturali inviano visionarie richieste di aiuto al gruppo e in particolare alla druida Hellas. Il cerchio antico, un punto di potere della natura, sta per essere distrutto dall'avanzata infuocata dell'orda della Mano Rossa. Hellas deve compiere un rituale per incarnare temporaneamente l'essenza di un elementale della natura.
+Gentili spiriti naturali inviano visionarie richieste di aiuto al gruppo e in particolare alla druida Hella. Il cerchio antico, un punto di potere della natura, sta per essere distrutto dall'avanzata infuocata dell'orda della Mano Rossa. Hella deve compiere un rituale per incarnare temporaneamente l'essenza di un elementale della natura.
 
 ### Obiettivi  
 
 - Raggiungere il cerchio sacro prima che il fuoco lo distrugga  
 - Attivare la barriera di purificazione attraverso prove di saggezza e natura  
-- Proteggere Hellas e il rituale dagli attacchi di piromani drow e creature infuocate
+- Proteggere Hella e il rituale dagli attacchi di piromani drow e creature infuocate
 
 ### Meccaniche Ritualistiche (fase iniziale)  
 
@@ -88,11 +88,11 @@ Gentili spiriti naturali inviano visionarie richieste di aiuto al gruppo e in pa
 
 ***
 
-Ecco un dettaglio articolato di incontri, mappe, prove e combattimenti adatti alla quest personale di Hellas, che dura 2-3 sessioni, ispirati e bilanciati sugli standard di difficoltà e struttura della Red Hand of Doom (capitolo 2). Sarà avvincente, con il gruppo al centro e conseguenze dirette per il gran finale.
+Ecco un dettaglio articolato di incontri, mappe, prove e combattimenti adatti alla quest personale di Hella, che dura 2-3 sessioni, ispirati e bilanciati sugli standard di difficoltà e struttura della Red Hand of Doom (capitolo 2). Sarà avvincente, con il gruppo al centro e conseguenze dirette per il gran finale.
 
 ***
 
-# Quest 1 – Druida Hellas: Il Cerchio Sacro della Foresta (Parte Completa)
+# Quest 1 – Druida Hella: Il Cerchio Sacro della Foresta (Parte Completa)
 
 ### Ambientazione e Mappa  
 
@@ -116,13 +116,13 @@ Ecco un dettaglio articolato di incontri, mappe, prove e combattimenti adatti al
 **2. Attacco dei Piromani Drow (primi 2 incontri)**  
 
 - 2 Piromani Drow (classe incantatrice di livello adeguato + 3 guerrieri drow)  
-- Tattiche: Attacchi a distanza con fuoco e veleno, tende a colpire Hellas o PG guida.  
+- Tattiche: Attacchi a distanza con fuoco e veleno, tende a colpire Hella o PG guida.  
 - Possono usare copertura boschiva e minacce di fiamme per dividere il gruppo.
 
 **3. Spiriti Guardiani della Foresta (Boss Incontro)**  
 
 - Spirito della Natura Antico (mezzo elementale terra/mezzospiro)  
-- Comportamento: provoco Hellas o i PG per provare la loro purezza ed equilibrio.  
+- Comportamento: provoco Hella o i PG per provare la loro purezza ed equilibrio.  
 - Possiede attacchi magici, ma consente diplomazia e prove di carisma/saggezza.  
 - Sconfitta o riconciliazione: Ottenimento di benedizioni multiple e minor danno da fuoco nell’area.
 
@@ -133,7 +133,7 @@ Ecco un dettaglio articolato di incontri, mappe, prove e combattimenti adatti al
 **Fasi rituali concentrati nel Cerchio druidico (durata complessiva ~2 ore in gioco)**  
 
 - **Fase 1: Purificazione terreno**  
-  - Hellas usa incantesimi di guarigione, richieste prove magiche (Arcana o Natura DC 18).  
+  - Hella usa incantesimi di guarigione, richieste prove magiche (Arcana o Natura DC 18).  
   - Protezione dal fuoco nascente deve essere mantenuta (Concentrazione DC 16) a ogni interruzione da danni ambientali.
 
 - **Fase 2: Invocazione Elementale**  
@@ -142,7 +142,7 @@ Ecco un dettaglio articolato di incontri, mappe, prove e combattimenti adatti al
   - Supporto dagli altri PG via buff e azioni di copertura.
 
 - **Fase 3: Fusione Elementale**  
-  - Hellas entra in trance, sovrapposizione a un elementale per 20 minuti.  
+  - Hella entra in trance, sovrapposizione a un elementale per 20 minuti.  
   - Protezione significativa contro fuoco e danni fisici, nuove abilità offensive e difensive.  
   - Deve difendersi da attacchi concentrati dell’avanzata nemica.
 
@@ -151,6 +151,6 @@ Ecco un dettaglio articolato di incontri, mappe, prove e combattimenti adatti al
 ### Conseguenze e Collegamenti alla Campagna
 
 - Superare con successo conferisce ai PG un potente alleato temporaneo (elementale) o potenziamenti definiti per la battaglia finale.  
-- Ritardi compromettono la forza di Hellas e fanno espandere l’incendio in zone cruciali (math/campo battaglia).  
+- Ritardi compromettono la forza di Hella e fanno espandere l’incendio in zone cruciali (math/campo battaglia).  
 - Informazioni ottenute dal cerchio o dallo spirito possono svelare tattiche/posizioni nemiche nel gran finale.  
 - Collegamento a quest secondarie di riduzione dell’orda in stile Red Hand of Doom con timer e urgenza.

@@ -570,7 +570,7 @@ Gli spiriti degli antenati hanno "chiamato" temporaneamente quattro eroi nanici 
 *   1° (CD 16): *Cura Ferite Leggere* (x4), *Benedizione* (x2), *Favore Divino*
 *   0°: *Guida*, *Individuazione del Magico*, *Luce*, *Riparare*, *Resistenza*, *Virtù*
 **Talenti:** Incantesimi Potenziati, Creare Oggetti Meravigliosi, Volontà di Ferro, Scrivere Pergamene.
-**Equipaggiamento:** *Armatura a Bande +2*, *Scudo Pesante Runico +1* (RI 15), *Martello da Guerra Sacro +2*, *Simbolo Sacro di Mithril*.
+**Equipaggiamento:** *Armatura a Bande +2*, *Scudo Pesante Runico +1* (RI 15), *Martello da Guerra Sacro +2*, *Simbolo Sacro di Mithral*.
 
 **Tattiche di Combattimento:**
 - **Supporto:** Mantiene buff attivi su più alleati possibile
@@ -1892,7 +1892,7 @@ Se più di 4 bugbear sono caduti, i superstiti si dileguano nei tunnel. Gli hobg
 - `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` → MAPPA 3Z (master narrativo; immagine [158] `hammerfist-3z.png`)
 - storico (DEPRECATED, D12): `Mappe/_ARCHIVIO/Hammerfist-Lotto-3-FINALE.md` → MAPPA 3Z; `../07_il Portale Della Forgia Eterna/Mappe/TACTICAL-GRIDS-COMPLETE.md` → MAP 19: SILENT CROSSROADS (file combinato)
 
-Superata l'imboscata, la colonna riprende la marcia verso nord: l'antica porta di mithril del Cuore della Montagna è ormai vicina.
+Superata l'imboscata, la colonna riprende la marcia verso nord: l'antica porta di mithral del Cuore della Montagna è ormai vicina.
 
 ---
 
@@ -1910,7 +1910,7 @@ Superata l'imboscata, la colonna riprende la marcia verso nord: l'antica porta d
 ### 🕳️ **Il Cuore della Montagna**
 
 **Leggere:**
-> *"Attraverso un'antica porta di mithril ornata di rune che brillano di luce propria, si apre il Cuore della Montagna. È una caverna naturale di bellezza mozzafiato: il soffitto si perde nell'oscurità sopra le vostre teste, mentre stalattiti di cristallo riflettono la luce delle torce in mille colori. Al centro si erge un altare di pietra nera dedicato a Moradin, circondato dalle statue di dieci re nanici con occhi di rubino che sembrano seguire ogni vostro movimento. Questo è il luogo più sacro di Hammerfist, dove riposano gli spiriti degli antenati."*
+> *"Attraverso un'antica porta di mithral ornata di rune che brillano di luce propria, si apre il Cuore della Montagna. È una caverna naturale di bellezza mozzafiato: il soffitto si perde nell'oscurità sopra le vostre teste, mentre stalattiti di cristallo riflettono la luce delle torce in mille colori. Al centro si erge un altare di pietra nera dedicato a Moradin, circondato dalle statue di dieci re nanici con occhi di rubino che sembrano seguire ogni vostro movimento. Questo è il luogo più sacro di Hammerfist, dove riposano gli spiriti degli antenati."*
 
 
 <div style="page-break-before:always"></div>
@@ -1973,7 +1973,7 @@ I 90 nani superstiti si barricano nella Caverna Sacra. I PG devono affrontare on
 
 #### **INCONTRO 3B: L'Assalto Finale**
 **Leggere:**
-> *"Il suono degli orchi è ora assordante. Le porte di mithril tremano sotto i colpi dei randelli nemici, e potete sentire Grimjaw che urla ordini: 'Sfondate! Il Re nanico sta morendo! Finite quello che ha iniziato il drago!' Le rune sulle porte iniziano a scolorire sotto l'assalto magico dei preti hobgoblin. Avete forse un minuto prima che le difese cedano definitivamente."*
+> *"Il suono degli orchi è ora assordante. Le porte di mithral tremano sotto i colpi dei randelli nemici, e potete sentire Grimjaw che urla ordini: 'Sfondate! Il Re nanico sta morendo! Finite quello che ha iniziato il drago!' Le rune sulle porte iniziano a scolorire sotto l'assalto magico dei preti hobgoblin. Avete forse un minuto prima che le difese cedano definitivamente."*
 
 **L'Ultima Barricata:**
 - **90 Nani Superstiti** in formazione difensiva
@@ -2751,7 +2751,7 @@ STRAFING RUNS - ATTACCHI DALL'ALTO (Round 6-8)
 **Il Momento Culminante - Leggere con Passione:**
 > *"Dai bastioni di Hammerfist, Re Thorek - miracolosamente guarito dalle preghiere dei chierici - si alza in piedi brandendo il suo martello ancestrale. Accanto a lui, il Guerriero della Corona di Adamantio brilla letteralmente di potere regale, le tre gemme della corona che pulsano come stelle. 'FRATELLI!' tuona Re Thorek con voce che porta fino alla vallata. 'Guardate! I cieli combattono al nostro fianco! La montagna stessa ci benedice! Oggi non moriamo - oggi VINCIAMO!' "*
 
-> *"Il grido che si alza dai novanta nani superstiti è tale da far tremare le fondamenta della montagna. 'BARUK KHAZAD! KHAZAD AI-MENU!' Le loro voci si uniscono in un coro di guerra che non si sentiva da mille anni. Asce che brillano di luce divina, scudi che riflettono il potere degli antenati, barbe intrecciate con fili di mithril - questo non è più un esercito in rotta, è la vendetta stessa dei nani che prende forma fisica."*
+> *"Il grido che si alza dai novanta nani superstiti è tale da far tremare le fondamenta della montagna. 'BARUK KHAZAD! KHAZAD AI-MENU!' Le loro voci si uniscono in un coro di guerra che non si sentiva da mille anni. Asce che brillano di luce divina, scudi che riflettono il potere degli antenati, barbe intrecciate con fili di mithral - questo non è più un esercito in rotta, è la vendetta stessa dei nani che prende forma fisica."*
 
 **E la montagna risponde — leggere dopo una pausa piena, non subito:**
 > *"Non è un'eco. Sono le gallerie, tutte insieme."*

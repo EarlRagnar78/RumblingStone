@@ -41,9 +41,9 @@ decide l'ordine, non il costo.
 | P3 | Passate redazionali + `validate_lingua.py` | colophon C2 | ✅ (D + E) |
 | P4 | **Vendoring dei pacchetti Typst** | colophon §5 | ✅ **deciso: sì** (F1) |
 | P5 | `pdfcpu` per l'imposizione | colophon T1 | ✅ **deciso: sì** (F2) |
-| P6 | Server MCP sui 44 tool già descritti | colophon MCP-1 | — |
-| P7 | veraPDF + caratteri per riga + daltonismo | colophon T3/T6/T7 | dopo P1 |
-| P8 | `dm.py volume` — l'ordine dei mestieri | colophon §3.4 | dopo P1-P3 |
+| P6 | Server MCP sui 44 tool già descritti | colophon MCP-1 | ✅ (G1, PR #119, ADR-0030) |
+| P7 | veraPDF + caratteri per riga + daltonismo | colophon T3/T6/T7 | 🟡 caratteri per riga ✅ (G2, `validate_tipografia`, ADR-0032); veraPDF e daltonismo non tracciati |
+| P8 | `dm.py volume` — l'ordine dei mestieri | colophon §3.4 | ✅ (G3, PR #119, ADR-0031) |
 | P9 | Riscalatura a tre assi | Abbazia | ✅ (C) |
 | P10 | Avvertenza di contenuto e consenso del tavolo | Abbazia | ✅ (C) |
 | P11 | Igiene di licenza per documento | Abbazia | ✅ (E, §2) |

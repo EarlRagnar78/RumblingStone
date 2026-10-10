@@ -6,9 +6,9 @@ L'idea per la continuazione dell'arco narrativo è molto interessante e articola
 
 ## Continuazione Arco Narrativo dopo Battaglia di Hammerfist
 
-### 1. Avventura della Druida Hellas  
+### 1. Avventura della Druida Hella  
 
-- Hellas inizia un rituale sacro nella Foresta Sacra, in un cerchio antico druidico.  
+- Hella inizia un rituale sacro nella Foresta Sacra, in un cerchio antico druidico.  
 - Durante il rituale, si trasforma temporaneamente in un elementale della natura.  
 - Quest avventura è personale, permette sviluppo del personaggio e potenziamenti naturali.  
 - Meccaniche: prove rituali, sfide ambientali, incontri con spiriti elementali, ostacoli magici/ambientali nella foresta sacra.
@@ -60,7 +60,7 @@ Ecco uno schema dettagliato per la continuazione dell'arco narrativo, con missio
 - Dopo Hammerfist, ogni PG riceve messaggi, visioni o segnali divini che li indirizzano verso la loro missione personale.  
 - Questi messaggi possono arrivare tramite:  
   - Antiche rune naniche rinvenute ai resti di Hammerfist  
-  - Sogni e visioni inviate da Moradin o spiriti naturali (per Hellas)  
+  - Sogni e visioni inviate da Moradin o spiriti naturali (per Hella)  
   - Voci arcane che sussurrano nel portale dell’anello di Chaotic Illumination (per il Warlock)  
   - Inviti ufficiali al torneo da parte di nobili e maestri monaci di Dauth (per il Monaco)  
 - Tutti comprendono che il tempo è poco: l’orda della Mano Rossa distrugge villaggi e foreste rapidamente, e la città Dauth è la prima linea di difesa.
@@ -69,7 +69,7 @@ Ecco uno schema dettagliato per la continuazione dell'arco narrativo, con missio
 
 ## 2. Missioni Personali (in parallelo)  
 
-### A. Druida Hellas - Il Cerchio Sacro della Foresta  
+### A. Druida Hella - Il Cerchio Sacro della Foresta  
 
 - Obiettivo: compiere il rituale per trasformarsi temporaneamente in un Elementale della Natura.  
 - Difficoltà: Prove rituali sotto pressione, combinazione di magia druidica e controllo spirituale.  
@@ -125,7 +125,7 @@ Ecco una proposta dettagliata per ciascuna missione personale con mappe, incontr
 
 ***
 
-# Quest 1: Druida Hellas - Il Cerchio Sacro della Foresta
+# Quest 1: Druida Hella - Il Cerchio Sacro della Foresta
 
 ### Location  
 

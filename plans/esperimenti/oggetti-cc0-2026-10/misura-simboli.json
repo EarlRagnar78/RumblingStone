@@ -1,0 +1,374 @@
+{
+ "master": 31,
+ "mappe": 53,
+ "simboli_oggetto": 61,
+ "usati": 46,
+ "per_simbolo": [
+  {
+   "simbolo": "🔥",
+   "prop": "pr_fire",
+   "celle": 655,
+   "mappe": 14
+  },
+  {
+   "simbolo": "⬇",
+   "prop": "pr_down",
+   "celle": 603,
+   "mappe": 2
+  },
+  {
+   "simbolo": "🪨",
+   "prop": "pr_rocks",
+   "celle": 453,
+   "mappe": 17
+  },
+  {
+   "simbolo": "💥",
+   "prop": "pr_boom",
+   "celle": 423,
+   "mappe": 5
+  },
+  {
+   "simbolo": "🚪",
+   "prop": "pr_door",
+   "celle": 261,
+   "mappe": 32
+  },
+  {
+   "simbolo": "🗼",
+   "prop": "pr_tower",
+   "celle": 104,
+   "mappe": 9
+  },
+  {
+   "simbolo": "🧱",
+   "prop": "pr_lowwall",
+   "celle": 94,
+   "mappe": 7
+  },
+  {
+   "simbolo": "🏛",
+   "prop": "pr_temple",
+   "celle": 89,
+   "mappe": 3
+  },
+  {
+   "simbolo": "🏮",
+   "prop": "pr_brazier",
+   "celle": 88,
+   "mappe": 11
+  },
+  {
+   "simbolo": "🗿",
+   "prop": "pr_statue",
+   "celle": 87,
+   "mappe": 9
+  },
+  {
+   "simbolo": "⛺",
+   "prop": "pr_tent",
+   "celle": 85,
+   "mappe": 3
+  },
+  {
+   "simbolo": "🌉",
+   "prop": "pr_bridge",
+   "celle": 68,
+   "mappe": 7
+  },
+  {
+   "simbolo": "🌋",
+   "prop": "pr_volcano",
+   "celle": 63,
+   "mappe": 1
+  },
+  {
+   "simbolo": "🛏",
+   "prop": "pr_bed",
+   "celle": 29,
+   "mappe": 4
+  },
+  {
+   "simbolo": "🎯",
+   "prop": "pr_target",
+   "celle": 26,
+   "mappe": 8
+  },
+  {
+   "simbolo": "🔷",
+   "prop": "pr_crystal_giant",
+   "celle": 25,
+   "mappe": 1
+  },
+  {
+   "simbolo": "🏺",
+   "prop": "pr_urn",
+   "celle": 24,
+   "mappe": 4
+  },
+  {
+   "simbolo": "⚡",
+   "prop": "pr_bolt",
+   "celle": 22,
+   "mappe": 3
+  },
+  {
+   "simbolo": "⭐",
+   "prop": "pr_star",
+   "celle": 19,
+   "mappe": 5
+  },
+  {
+   "simbolo": "🖼",
+   "prop": "pr_mural",
+   "celle": 19,
+   "mappe": 2
+  },
+  {
+   "simbolo": "🪑",
+   "prop": "pr_table",
+   "celle": 15,
+   "mappe": 6
+  },
+  {
+   "simbolo": "🌳",
+   "prop": "pr_tree",
+   "celle": 13,
+   "mappe": 2
+  },
+  {
+   "simbolo": "✨",
+   "prop": "pr_sparkle",
+   "celle": 12,
+   "mappe": 4
+  },
+  {
+   "simbolo": "⚔",
+   "prop": "pr_swords",
+   "celle": 12,
+   "mappe": 3
+  },
+  {
+   "simbolo": "🔼",
+   "prop": "pr_stairs_up",
+   "celle": 12,
+   "mappe": 10
+  },
+  {
+   "simbolo": "🪓",
+   "prop": "pr_rack",
+   "celle": 11,
+   "mappe": 5
+  },
+  {
+   "simbolo": "💎",
+   "prop": "pr_gem",
+   "celle": 9,
+   "mappe": 4
+  },
+  {
+   "simbolo": "💀",
+   "prop": "pr_skull",
+   "celle": 7,
+   "mappe": 3
+  },
+  {
+   "simbolo": "🔽",
+   "prop": "pr_stairs_down",
+   "celle": 7,
+   "mappe": 6
+  },
+  {
+   "simbolo": "🕳",
+   "prop": "pr_pit",
+   "celle": 6,
+   "mappe": 4
+  },
+  {
+   "simbolo": "🪜",
+   "prop": "pr_stairs",
+   "celle": 6,
+   "mappe": 2
+  },
+  {
+   "simbolo": "👑",
+   "prop": "pr_crown",
+   "celle": 5,
+   "mappe": 3
+  },
+  {
+   "simbolo": "🛢",
+   "prop": "pr_barrel",
+   "celle": 5,
+   "mappe": 3
+  },
+  {
+   "simbolo": "🔮",
+   "prop": "pr_crystal",
+   "celle": 4,
+   "mappe": 4
+  },
+  {
+   "simbolo": "🪟",
+   "prop": "pr_window",
+   "celle": 4,
+   "mappe": 1
+  },
+  {
+   "simbolo": "🔺",
+   "prop": "pr_stalagmite",
+   "celle": 4,
+   "mappe": 1
+  },
+  {
+   "simbolo": "🔔",
+   "prop": "pr_bell",
+   "celle": 3,
+   "mappe": 3
+  },
+  {
+   "simbolo": "📦",
+   "prop": "pr_crate",
+   "celle": 3,
+   "mappe": 3
+  },
+  {
+   "simbolo": "🦴",
+   "prop": "pr_bones",
+   "celle": 2,
+   "mappe": 1
+  },
+  {
+   "simbolo": "🪵",
+   "prop": "pr_debris",
+   "celle": 2,
+   "mappe": 1
+  },
+  {
+   "simbolo": "🏗",
+   "prop": "pr_crane",
+   "celle": 2,
+   "mappe": 1
+  },
+  {
+   "simbolo": "🌀",
+   "prop": "pr_portal",
+   "celle": 1,
+   "mappe": 1
+  },
+  {
+   "simbolo": "🔒",
+   "prop": "pr_lockdoor",
+   "celle": 1,
+   "mappe": 1
+  },
+  {
+   "simbolo": "🔻",
+   "prop": "pr_trapdoor",
+   "celle": 1,
+   "mappe": 1
+  },
+  {
+   "simbolo": "⛲",
+   "prop": "pr_fountain",
+   "celle": 1,
+   "mappe": 1
+  },
+  {
+   "simbolo": "⚒",
+   "prop": "pr_anvil",
+   "celle": 1,
+   "mappe": 1
+  },
+  {
+   "simbolo": "🐴",
+   "prop": "pr_horse",
+   "celle": 0,
+   "mappe": 0
+  },
+  {
+   "simbolo": "🕸",
+   "prop": "pr_web",
+   "celle": 0,
+   "mappe": 0
+  },
+  {
+   "simbolo": "❄",
+   "prop": "pr_ice",
+   "celle": 0,
+   "mappe": 0
+  },
+  {
+   "simbolo": "⚰",
+   "prop": "pr_coffin",
+   "celle": 0,
+   "mappe": 0
+  },
+  {
+   "simbolo": "🍄",
+   "prop": "pr_mushrooms",
+   "celle": 0,
+   "mappe": 0
+  },
+  {
+   "simbolo": "🕯",
+   "prop": "pr_candles",
+   "celle": 0,
+   "mappe": 0
+  },
+  {
+   "simbolo": "🌾",
+   "prop": "pr_bush",
+   "celle": 0,
+   "mappe": 0
+  },
+  {
+   "simbolo": "❔",
+   "prop": "pr_secretdoor",
+   "celle": 0,
+   "mappe": 0
+  },
+  {
+   "simbolo": "🥅",
+   "prop": "pr_grate",
+   "celle": 0,
+   "mappe": 0
+  },
+  {
+   "simbolo": "⛓",
+   "prop": "pr_bars",
+   "celle": 0,
+   "mappe": 0
+  },
+  {
+   "simbolo": "🗄",
+   "prop": "pr_cabinet",
+   "celle": 0,
+   "mappe": 0
+  },
+  {
+   "simbolo": "📚",
+   "prop": "pr_books",
+   "celle": 0,
+   "mappe": 0
+  },
+  {
+   "simbolo": "🧰",
+   "prop": "pr_chest",
+   "celle": 0,
+   "mappe": 0
+  },
+  {
+   "simbolo": "🧪",
+   "prop": "pr_alchemy",
+   "celle": 0,
+   "mappe": 0
+  },
+  {
+   "simbolo": "🛐",
+   "prop": "pr_altar",
+   "celle": 0,
+   "mappe": 0
+  }
+ ]
+}

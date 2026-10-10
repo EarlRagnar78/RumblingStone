@@ -1,4 +1,4 @@
-# Nemici del Cerchio Sacro (Quest Hellas) [POINTER — statblocco nell'arco] [RIMANDO]
+# Nemici del Cerchio Sacro (Quest Hella) [POINTER — statblocco nell'arco] [RIMANDO]
 **Key stats**: → `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md` (i numeri stanno li'; duplicarli qui creerebbe una seconda copia che diverge alla prima errata — ADR-0021).
 
 **Faction**: cerchio-druid | **Role**: generalist | **Environment**: forest | **CR**: 9

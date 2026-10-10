@@ -266,6 +266,59 @@ Adventure: Boxed Text*](https://www.dndbeyond.com/posts/625-lets-design-an-adven
 
 ---
 
+## 4-ter · Il giro del 2026-10-03: il foglio di stile, e cosa i professionisti usano davvero
+
+Il DM ha chiesto se le skill di prosa usano i migliori meccanismi di
+automazione dell'editoria professionale, compatibili con le licenze del repo, e
+di misurare l'incremento. Decisione e misura in
+[ADR-0078](adr/ADR-0078-il-foglio-di-stile-si-esegue.md).
+
+**Inventario.** Quasi tutto c'era: guida di stile con soglie, punteggio MQM con
+severità e soglia dichiarata prima, κ fra valutatori, revisione a due giri,
+confronto prima/dopo. Mancava una pratica che ogni copyeditor professionale
+tiene: il **foglio di stile**, cioè le decisioni di grafia e di termine scritte
+una volta e rilette a ogni passata. WotC la fissa nella guida di casa (*mithral*,
+non *mithril*; *drop* a 0 pf; *make a check*); Vale la rende eseguibile con le
+regole `substitution` e `consistency` (MIT).
+
+**Cosa si è preso, e cosa no.**
+
+| | Esito |
+|---|---|
+| Foglio di stile eseguibile, tecnica di Vale e del copyeditor | **adottato**, in Python standard, nella tabella §8 del glossario |
+| Test di ogni regola accanto alla regola (`vale test`, 2026-10-01) | **adottato**: positivo e negativo per ogni riga |
+| Vale come programma | **no**: binario Go in CI, regole inglesi, nessuna funzione che il repo non copra |
+| Tetto di parole per sezione (formato WotC, 500-750 parole per incontro) | **no**, §3: è la taratura di un altro formato |
+| Lista di termini di regola da uniformare (*PF/HP*, *CA/AC*) | **no**: 789 CA contro 267 AC sono due registri, non un errore |
+
+**Misurato sul repo di gioco** (521 file, 837.305 parole, archivi esclusi):
+**17 refusi aperti** (*mithril* in 16 righe di 5 file, *Regiarax* in una), che
+nessuna norma pesata vedeva, e **4 scelte del DM** in 285 occorrenze (*Hellas*,
+*Channathgate*, *Therisol*, *azione rapida*). Il DM le ha prese lo stesso giorno
+(*Hella*, *Channathgate*, *Therysol*, *azione veloce*) e sono state applicate:
+200 righe in 24 file. Dopo la correzione i refusi sono 0 e il cancello CI è a zero.
+
+🔴 **Tre errori miei, tutti trovati dalla misura e non dalla lettura.**
+
+- I parser del glossario leggevano ogni tabella, quindi una forma esclusa
+  diventava un nome canonico. Si fermano ora prima del §8.
+- Il controllo «la riga spiega il cambio» cercava la forma canonica come
+  sottostringa: «hella» sta dentro «Hellas», e il rapporto contava zero
+  occorrenze della forma più diffusa.
+- Ho corretto una cartella dichiarata snapshot storico. L'ha fermato
+  `fase1.py --check`, dopo; il file è stato ripristinato e il controllo ora
+  conosce `_SNAPSHOT-STORICO.md`.
+
+**Il generatore di proposte** (`--proponi-grafie`): 9 candidati grezzi, 5 utili e
+4 falsi (due PNG diversi, un re e un PG, due parole inglesi). Precisione grezza
+**5 su 9**. I filtri sono tarati sullo stesso campione, quindi la precisione
+dopo i filtri non è indipendente. Non vede le differenze sull'ultima lettera:
+*Hella/Hellas* l'ha trovata un confronto con *Hella's*, per caso.
+
+**Limite dichiarato.** L'incremento è reale e piccolo: 17 occorrenze in 837.000
+parole, nessun documento cambia classe di punteggio. Il guadagno è che il foglio
+esiste, non ricade, e le scelte aperte sono un numero.
+
 ## 5 · Cosa alimenta
 
 | Va in | Cosa |

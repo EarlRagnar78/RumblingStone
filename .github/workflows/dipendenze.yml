@@ -1,0 +1,164 @@
+name: Dipendenze
+
+# PRATICHE PI-3b (DM, 2026-10-07): ogni aggiornamento di versione proposto da
+# Dependabot si prova prima di entrare. `ci.yml` gira comunque su ogni PR e
+# prova le versioni PIU' RECENTI, perche' i requirements hanno solo `>=`.
+# Questo workflow aggiunge le tre cose che `ci.yml` non vede:
+#
+# 1. `pip-audit` BLOCCANTE, sulle versioni che la CI installa e sulle versioni
+#    MINIME dichiarate. Il pavimento conta: `pip install -r requirements.txt`
+#    su un portatile che ha gia' pyyaml 6.0 non lo aggiorna, e un pavimento
+#    vulnerabile resta sul portatile del DM anche se la CI e' verde.
+# 2. I test sulle versioni minime: se un pavimento non basta piu' al codice,
+#    si vede qui e non la sera della sessione.
+# 3. L'immagine di scripts/booklet-container: si costruisce e stampa un PDF.
+#
+# In `ci.yml` pip-audit resta non bloccante fino al 2026-10-24 (PI-3). Qui e'
+# bloccante da subito, perche' qui girano solo le PR che toccano le dipendenze.
+
+on:
+  pull_request:
+    paths:
+      - "requirements*.txt"
+      - "scripts/booklet-container/**"
+      - ".github/workflows/**"
+      - ".github/dependabot.yml"
+  # Una vulnerabilita' nuova esce senza che nessuno tocchi il repo: il lunedi'
+  # prima di Dependabot (06:00 a Roma) l'audit gira da solo.
+  schedule:
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    name: pip-audit (ultime e minime)
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Versioni minime dichiarate (`>=` diventa `==`)
+        run: |
+          python - <<'EOF'
+          import re
+          righe = []
+          for f in ("requirements.txt", "requirements-dev.txt"):
+              for r in open(f, encoding="utf-8"):
+                  m = re.match(r"^([A-Za-z0-9_.\-\[\]]+)\s*>=\s*([^\s;#,]+)", r)
+                  if m:
+                      righe.append(f"{m.group(1)}=={m.group(2)}")
+          open("minime.txt", "w").write("\n".join(righe) + "\n")
+          print("\n".join(righe))
+          EOF
+
+      - name: Installa pip-audit
+        run: pip install "pip-audit>=2.10.1"
+
+      - name: Vulnerabilita' note — versioni che la CI installa
+        run: pip-audit -r requirements-dev.txt
+
+      - name: Vulnerabilita' note — versioni minime dichiarate
+        run: pip-audit -r minime.txt
+
+  minime:
+    name: Test sulle versioni minime
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0   # come in ci.yml: test_fase1 legge i rami
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Installa le versioni minime
+        run: |
+          python - <<'EOF'
+          import re
+          righe = []
+          for f in ("requirements.txt", "requirements-dev.txt"):
+              for r in open(f, encoding="utf-8"):
+                  m = re.match(r"^([A-Za-z0-9_.\-\[\]]+)\s*>=\s*([^\s;#,]+)", r)
+                  if m:
+                      righe.append(f"{m.group(1)}=={m.group(2)}")
+          open("minime.txt", "w").write("\n".join(righe) + "\n")
+          EOF
+          pip install -r minime.txt
+          pip list
+
+      - name: Unit tests — pytest
+        run: python -m pytest scripts/tests -q
+
+  docker:
+    name: Immagine booklet-container
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Costruisci l'immagine
+        run: docker build -t rumblingstone/booklet-pdf scripts/booklet-container
+
+      - name: Chromium stampa un PDF
+        run: |
+          docker run --rm --entrypoint sh rumblingstone/booklet-pdf -c '
+            chromium --version &&
+            chromium --headless --no-sandbox --disable-gpu \
+              --print-to-pdf=/tmp/prova.pdf "data:text/html,<h1>prova</h1>" &&
+            test "$(head -c 5 /tmp/prova.pdf)" = "%PDF-" &&
+            echo "PDF prodotto"'
+
+      - name: L'entrypoint parte col repo montato
+        run: docker run --rm -v "$PWD:/repo" rumblingstone/booklet-pdf --help
+
+  esito:
+    name: Esito per la PR di Dependabot
+    needs: [audit, minime, docker]
+    if: >-
+      always() && github.event_name == 'pull_request' &&
+      github.event.pull_request.user.login == 'dependabot[bot]' &&
+      contains(needs.*.result, 'failure')
+    runs-on: ubuntu-24.04
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Scrive nella PR cosa e' rotto e chi deve muoversi
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          AUDIT: ${{ needs.audit.result }}
+          MINIME: ${{ needs.minime.result }}
+          DOCKER: ${{ needs.docker.result }}
+          RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          {
+            echo "### Questo aggiornamento non entra così com'è"
+            echo
+            echo "| Controllo | Esito |"
+            echo "|---|---|"
+            echo "| pip-audit (ultime e minime) | $AUDIT |"
+            echo "| test sulle versioni minime | $MINIME |"
+            echo "| immagine booklet-container | $DOCKER |"
+            echo
+            if [ "$AUDIT" = failure ]; then
+              echo "- **Vulnerabilità nota**: un pacchetto dichiarato ha un avviso aperto. Si alza il pavimento in \`requirements*.txt\` alla versione corretta, o si dichiara l'eccezione."
+            fi
+            if [ "$MINIME" = failure ]; then
+              echo "- **Il codice del repo va aggiornato**: i test falliscono con le versioni dichiarate. Va corretto il codice in questa PR, oppure il pacchetto si ferma con \`@dependabot ignore <pacchetto>\`."
+            fi
+            if [ "$DOCKER" = failure ]; then
+              echo "- **L'immagine non si costruisce o Chromium non stampa**: va guardato il Dockerfile prima di unire."
+            fi
+            echo
+            echo "Anche \`CI\` va guardata: prova le versioni più recenti con tutti i cancelli del repo. Dettagli: $RUN"
+            echo
+            echo "<sub>Scritto da \`.github/workflows/dipendenze.yml\` (PRATICHE PI-3b).</sub>"
+          } > corpo.md
+          gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body-file corpo.md \
+            --edit-last --create-if-none

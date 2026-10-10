@@ -7,7 +7,7 @@ Arco-Post-Hammerfist-P2A-Torre-PARTE1.md
 
 ### 1. Contesto e aggancio
 
-Dopo la Quest Hellas, i PG ottengono indizi su una Torre Invisibile legata alla corona di adamantio e alla minaccia planare in arrivo.[file:43]  
+Dopo la Quest Hella, i PG ottengono indizi su una Torre Invisibile legata alla corona di adamantio e alla minaccia planare in arrivo.[file:43]  
 Artemis (alleata/PNG chiave) ha bisogno che i PG esplorino e “ripuliscano” la torre dai residui di magia illithid e caotica per riattivare un antico portale difensivo.[file:43]
 
 ### 2. Struttura generale del Livello 1

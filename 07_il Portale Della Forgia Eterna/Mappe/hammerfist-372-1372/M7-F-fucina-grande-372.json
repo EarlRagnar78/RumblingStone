@@ -1,0 +1,277 @@
+{
+ "schema_version": "1.0",
+ "title": "M7-F — La fucina grande, livello −3 (notte, ≈372 DR)",
+ "tipo": "tattica",
+ "ambiente": "interni",
+ "scale_m_per_square": 1.5,
+ "map_size": [
+  30,
+  22
+ ],
+ "base_terrain": "🏰",
+ "north": "N",
+ "regions": [
+  {
+   "terrain": "⬜",
+   "rect": [
+    3,
+    3,
+    24,
+    16
+   ],
+   "label": "La fucina grande (36 × 24 m, volta a 18 m)"
+  },
+  {
+   "terrain": "⬜",
+   "rect": [
+    13,
+    1,
+    3,
+    2
+   ],
+   "label": "Scala dalle gallerie di Zeth"
+  },
+  {
+   "terrain": "⬜",
+   "rect": [
+    27,
+    10,
+    3,
+    2
+   ],
+   "label": "Passaggio verso il basso"
+  }
+ ],
+ "structures": [
+  {
+   "type": "🔼",
+   "at": [
+    14,
+    1
+   ],
+   "label": "Scala alle gallerie (livello −2)",
+   "collega": "M7-E-gallerie-372.md AA22"
+  },
+  {
+   "type": "🚪",
+   "at": [
+    27,
+    10
+   ],
+   "label": "Verso le miniere profonde"
+  },
+  {
+   "type": "🚪",
+   "at": [
+    27,
+    11
+   ]
+  },
+  {
+   "type": "🟪",
+   "at": [
+    7,
+    7
+   ],
+   "label": "Pilastro"
+  },
+  {
+   "type": "🟪",
+   "at": [
+    7,
+    14
+   ]
+  },
+  {
+   "type": "🟪",
+   "at": [
+    11,
+    7
+   ]
+  },
+  {
+   "type": "🟪",
+   "at": [
+    11,
+    14
+   ]
+  },
+  {
+   "type": "🟪",
+   "at": [
+    18,
+    7
+   ]
+  },
+  {
+   "type": "🟪",
+   "at": [
+    18,
+    14
+   ]
+  },
+  {
+   "type": "🟪",
+   "at": [
+    22,
+    7
+   ]
+  },
+  {
+   "type": "🟪",
+   "at": [
+    22,
+    14
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    5,
+    3
+   ],
+   "label": "Forgia"
+  },
+  {
+   "type": "🏮",
+   "at": [
+    5,
+    18
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    9,
+    3
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    9,
+    18
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    13,
+    3
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    13,
+    18
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    17,
+    3
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    17,
+    18
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    21,
+    3
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    21,
+    18
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    25,
+    3
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    25,
+    18
+   ]
+  },
+  {
+   "type": "🛢",
+   "at": [
+    4,
+    10
+   ],
+   "label": "Vasche per temprare"
+  },
+  {
+   "type": "🛢",
+   "at": [
+    4,
+    11
+   ]
+  },
+  {
+   "type": "🪑",
+   "at": [
+    14,
+    10
+   ],
+   "label": "Banchi e incudini"
+  },
+  {
+   "type": "🪑",
+   "at": [
+    15,
+    10
+   ]
+  },
+  {
+   "type": "🪑",
+   "at": [
+    14,
+    11
+   ]
+  },
+  {
+   "type": "🪑",
+   "at": [
+    15,
+    11
+   ]
+  }
+ ],
+ "units": [
+  {
+   "faction": "Hammerfist",
+   "name": "Fabbri al lavoro per l'alba",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     5,
+     4,
+     20,
+     1
+    ]
+   },
+   "quantity": 24
+  }
+ ],
+ "notes": [
+  "D45 (2026-10-08): la terza fucina, la più ampia, sotto le gallerie di Zeth. «In ogni regno nanico, più si scende e più le stanze sono ampie» (il DM, D28).",
+  "Misure, pilastri e numero di forge sono quelli di questa griglia, approvati con D48. Nel 372 non è una scena giocata: la si vede dall'affaccio delle gallerie."
+ ]
+}

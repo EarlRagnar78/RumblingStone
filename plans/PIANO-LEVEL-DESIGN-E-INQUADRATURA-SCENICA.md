@@ -12,7 +12,7 @@
 > | Rami 0, A, B | delegati a `PIANO-PRODOTTO-TOOLKIT-VENDIBILE`, che a sua volta è stato assorbito da [PIANO-VENDIBILITA](PIANO-VENDIBILITA.md) (§6). A1, la legenda come dato, è fatto (ADR-0048, 2026-09-12) | niente: restano fuori da qui |
 > | §2-bis, le dipendenze Python a livelli | **superato**: ADR-0037 ha deciso la sola libreria standard, e l'ADR-0015 della #72 non è stato recuperato | non si applica |
 > | C1 scheda-mappa | non esiste; c'è solo `mappa-tattica-template.md` | valido |
-> | C2 le tre mappe peggiori | il Dirupo Mortale e l'Ondata 2 esistono; le metriche M1-M9 chiedono il linter di B1, che non c'è | valido, **dipende dal linter** di PIANO-VENDIBILITA |
+> | C2 le tre mappe peggiori | il Dirupo Mortale e l'Ondata 2 esistono; le metriche M1-M9 chiedono il linter di B1, che non c'è | valido, **dipende dal linter**, che dal 2026-10-08 è V1 e V5 di [PIANO-COLLAUDO-E-GENERAZIONE-MAPPE](PIANO-COLLAUDO-E-GENERAZIONE-MAPPE.md) (D6 di quel piano): PIANO-VENDIBILITA non lo elencava fra i suoi lotti |
 > | C3 parity pass | — | valido |
 > | D1 scheda-inquadratura | la skill `rumblingstone-art-direction` ha un **brief d'inquadratura** (§5: cosa c'è e perché), ma nessun prompt dichiara focale, altezza di camera o figura di scala | valido, **dentro la skill** e non come template a parte |
 > | D2 ordine percettivo nel read-aloud | 0 occorrenze nelle skill | valido; è una norma nuova, quindi va registrata (G3) |

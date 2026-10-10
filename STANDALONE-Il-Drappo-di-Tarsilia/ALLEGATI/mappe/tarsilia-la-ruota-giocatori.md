@@ -58,6 +58,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 46 ⬜ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜
 
 @north N
+@tipo tattica abitato
 @path Giro della Ruota (3 giri, senso orario) ; L10 AZ10 AZ37 L37 loop ; #b94a3c
 @zone S15-AT32 ; Mercato coperto del grano — i Partiti si trattano qui; dal tetto si vede tutta la pista
 @zone B18-E26 ; Palco della Sovrintendente — Tesio e Melchio: protestare, testimoniare

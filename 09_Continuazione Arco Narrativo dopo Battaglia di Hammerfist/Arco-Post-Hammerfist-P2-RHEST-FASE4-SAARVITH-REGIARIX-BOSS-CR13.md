@@ -65,7 +65,7 @@ Riporta lo **stato di allerta** deciso in Fase 3:
   acido in linea** (18 m, 12d4, Riflessi CD ~25 per metà) su 2–3 PG allineati,
   poi **si reimmerge** o prende quota bassa. Non resta in mischia.
 - **Fase B — Darkness e isolamento** (round 3–4): usa **Darkness** (facoltà
-  come da RHoD `[da RHoD — Regiarax]`) per spegnere metà arena e **separare** i
+  come da RHoD `[da RHoD — Regiarix]`) per spegnere metà arena e **separare** i
   PG; colpisce con voli radenti (artigli/morso) chi è isolato o in acqua, poi
   sparisce di nuovo nell'occultamento.
 - **Fase C — Disperata** (sotto ~30% pf): o **full attack** su un bersaglio che

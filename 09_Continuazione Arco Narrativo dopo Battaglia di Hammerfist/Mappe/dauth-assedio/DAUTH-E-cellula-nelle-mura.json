@@ -1,0 +1,136 @@
+{
+ "schema_version": "1.0",
+ "title": "Dauth, Carta E — La cellula nelle mura: corpo di guardia e poterna",
+ "tipo": "tattica",
+ "ambiente": "interni",
+ "scale_m_per_square": 1.5,
+ "map_size": [
+  8,
+  8
+ ],
+ "base_terrain": "🏰",
+ "north": "N",
+ "regions": [
+  {
+   "terrain": "⬜",
+   "rect": [
+    1,
+    1,
+    4,
+    3
+   ],
+   "label": "Il corpo di guardia"
+  },
+  {
+   "terrain": "⬜",
+   "rect": [
+    1,
+    5,
+    6,
+    1
+   ],
+   "label": "Il corridoio della poterna"
+  },
+  {
+   "terrain": "⬜",
+   "rect": [
+    6,
+    1,
+    1,
+    4
+   ],
+   "label": "Il corridoio cieco"
+  }
+ ],
+ "structures": [
+  {
+   "type": "🚪",
+   "at": [
+    2,
+    4
+   ],
+   "label": "Porta del corpo di guardia"
+  },
+  {
+   "type": "🔒",
+   "at": [
+    0,
+    5
+   ],
+   "label": "La poterna sul fossato ovest: i cardini limati"
+  },
+  {
+   "type": "🔻",
+   "at": [
+    6,
+    1
+   ],
+   "label": "Botola in fondo al corridoio cieco",
+   "collega": "fuori mappa ; dove porta la botola la carta non lo dice [INFERRED — needs DM confirmation]"
+  },
+  {
+   "type": "🔼",
+   "at": [
+    4,
+    1
+   ],
+   "label": "Scala al camminamento nord",
+   "collega": "fuori mappa ; il camminamento nord, da cui si sente raspare, non ha una griglia"
+  },
+  {
+   "type": "🪑",
+   "at": [
+    2,
+    2
+   ],
+   "label": "Tavolo della guardia"
+  },
+  {
+   "type": "🛏",
+   "at": [
+    1,
+    1
+   ],
+   "label": "Branda"
+  },
+  {
+   "type": "🪓",
+   "at": [
+    4,
+    3
+   ],
+   "label": "Rastrelliera"
+  }
+ ],
+ "units": [
+  {
+   "faction": "Guastatori",
+   "name": "Sabotatore con la chiave (Ladro 7) [INFERRED — needs DM confirmation]",
+   "token": "🔴",
+   "at": [
+    1,
+    5
+   ]
+  },
+  {
+   "faction": "Guastatori",
+   "name": "Guerriero drow (drow-fighter3-cr4); in alternativa un deathlock-cr8",
+   "token": "🔴",
+   "area": {
+    "rect": [
+     2,
+     5,
+     2,
+     1
+    ]
+   },
+   "quantity": 2,
+   "cr": "GS 4"
+  }
+ ],
+ "notes": [
+  "Se Artemis ha il patto GRAY-A, la cellula del Mascherato le indica la poterna: +2 alle prove per intercettarli. Con DARK nessun aiuto.",
+  "Se la poterna si apre, la cavalleria gnoll entra nel quartiere ovest. Esiti e Fronte: Carta E di DAY3-CITY-SIEGE.",
+  "Fonte: Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-CITY-SIEGE.md"
+ ]
+}

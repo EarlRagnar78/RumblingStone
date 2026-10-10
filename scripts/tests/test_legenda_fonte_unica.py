@@ -146,12 +146,16 @@ class TestLaFonteEUnaSola(unittest.TestCase):
         ammessi = {"blocks_movement", "blocks_sight", "blocks_line_of_effect",
                    "deroga_uvtt", "door", "cover", "obscurement", "move_cost",
                    "climb", "swim", "prone_concealment", "destructible",
-                   "nameable", "hazard", "light"}
+                   "nameable", "hazard", "light", "posa", "verso", "solo_master"}
         vocabolario = {
             "cover": {"none", "half", "three_quarters", "total"},
             "obscurement": {"none", "light", "heavy"},
             "climb": {"none", "easy", "moderate", "hard", "sheer"},
             "move_cost": {1, 2, 4},
+            # V2-bis di COLLAUDO-MAPPE: dove sta una tessera e' un fatto di
+            # spazio, non un numero di gioco.
+            "posa": {"nel_muro", "recinto", "fra_livelli", "sul_pavimento"},
+            "verso": {"su", "giu"},
         }
         for sim, voce in dati["symbols"].items():
             f = voce.get("function", {})
@@ -172,7 +176,10 @@ class TestLaFonteEUnaSola(unittest.TestCase):
         con = [s for s, v in legenda.simboli().items()
                if json.loads((ROOT / "scripts" / "legend.json")
                              .read_text(encoding="utf-8"))["symbols"][s].get("function")]
-        self.assertEqual(len(con), 57)
+        # +20 il 2026-10-08: il corredo di V2-bis di COLLAUDO-MAPPE (D8), ogni
+        # simbolo nuovo con la sua funzione dal primo giorno; +2 la sera, 🔺 e 🔷
+        # di RESA-ASSET R2 (ADR-0085)
+        self.assertEqual(len(con), 79)
         unita = [s for s, v in legenda.simboli().items() if v["mode"] == "unit"]
         self.assertEqual(len(unita), 6)
         for u in unita:
@@ -192,7 +199,9 @@ class TestLeDerogheSonoDichiarate(unittest.TestCase):
     test e' il prezzo della deroga: senza motivo, e' rossa.
     """
 
-    ATTESE = {"🌲", "🌳", "🚪"}
+    # 🔒 e ❔ (V2-bis, D8 del 2026-10-08) sono porte: derogano per la stessa
+    # ragione di 🚪, e ognuna lo scrive
+    ATTESE = {"🌲", "🌳", "🚪", "🔒", "❔"}
 
     def test_ogni_deroga_ha_un_motivo_vero(self):
         for sim, motivo in legenda.deroghe().items():
@@ -278,12 +287,25 @@ class TestLeAltezzeSonoModuliDiGriglia(unittest.TestCase):
 class TestLaMigrazioneNonHaCambiatoNiente(unittest.TestCase):
     """Il criterio d'uscita di ADR-0048 §4: nessuna regressione visiva."""
 
+    # ⚠️ Aggiornati di proposito il 2026-10-08 (V2-bis di COLLAUDO-MAPPE, D8):
+    # i simboli di allora valgono quel che valevano, e quelli nuovi entrano
+    # qui con nome e cognome. Un insieme che cresce senza toccare questo test
+    # resta rosso: e' il punto.
+    # E di nuovo la sera dello stesso giorno (RESA-ASSET R2, ADR-0085): 🔷, il
+    # cristallo gigante, blocca la vista ed e' quindi un muro anche in Foundry.
+    NUOVI_R2 = {"muri": {"🔷"}}
+    NUOVI_V2BIS = {
+        "muri": {"🗄", "📚"},
+        "porte": {"🔒", "❔", "🥅"},
+        "pericoli": {"🫧"},
+        "piatti": {"🔒", "❔", "🔻", "🪟"},
+    }
     CONGELATI = {
-        "muri": {"🏰", "⬛", "⛺", "⛰", "🟪", "🗼", "🏛", "🗿", "📦"},
-        "porte": {"🚪"},
-        "pericoli": {"🔥", "💥", "💀", "🕳", "⚡", "❄", "🕸", "🌋", "🟧", "🟥"},
+        "muri": {"🏰", "⬛", "⛺", "⛰", "🟪", "🗼", "🏛", "🗿", "📦"} | {"🗄", "📚"} | {"🔷"},
+        "porte": {"🚪"} | {"🔒", "❔", "🥅"},
+        "pericoli": {"🔥", "💥", "💀", "🕳", "⚡", "❄", "🕸", "🌋", "🟧", "🟥"} | {"🫧"},
         "pesanti": {"t_wall", "t_struct", "t_pillar", "t_mountain"},
-        "piatti": {"🚪", "⬇", "🎯", "⭐", "✨", "⚔", "🖼"},
+        "piatti": {"🚪", "⬇", "🎯", "⭐", "✨", "⚔", "🖼"} | {"🔒", "❔", "🔻", "🪟"},
     }
 
     def test_i_set_valgono_esattamente_quel_che_valevano(self):
@@ -302,7 +324,9 @@ class TestLaMigrazioneNonHaCambiatoNiente(unittest.TestCase):
         non tocca, perche' sono la prova che la migrazione le ha prese tutte.
         """
         self.assertEqual(set(legenda.piatti()), self.CONGELATI["piatti"])
-        self.assertEqual(len(legenda.altezze()), 31)
+        # 31 + 14 del corredo di V2-bis (2026-10-08) + 2 di RESA-ASSET R2 (🔺 1,5 m,
+        # 🔷 3 m), tutte sul modulo di griglia
+        self.assertEqual(len(legenda.altezze()), 47)
         self.assertEqual(len(legenda.texture()), 15)
         self.assertEqual(legenda.altezze()["🗼"], 9.0, "la torre: 6 quadretti")
         self.assertLess(legenda.altezze()["🕳"], 0, "la voragine resta uno scavo")
@@ -333,10 +357,12 @@ class TestLaMigrazioneNonHaCambiatoNiente(unittest.TestCase):
         self.assertLess(a["🧱"], a["🏰"], "il muretto e' piu' basso del muro")
         self.assertLess(a["🏰"], a["🗼"], "e la torre svetta su tutto")
 
-    def test_i_64_simboli_ci_sono_tutti(self):
+    def test_gli_86_simboli_ci_sono_tutti(self):
         """62 era il numero della spec di luglio; 🔳 e' entrato con ADR-0042, 🌫
-        con RIPRESA-PR 4j-4 (2026-09-24, dal ramo della PR #42)."""
-        self.assertEqual(len(legenda.simboli()), 64)
+        con RIPRESA-PR 4j-4 (2026-09-24, dal ramo della PR #42); i 20 del
+        corredo di V2-bis il 2026-10-08 (COLLAUDO-MAPPE, D8); 86 la sera, con 🔺 e
+        🔷 di RESA-ASSET R2 (ADR-0085)."""
+        self.assertEqual(len(legenda.simboli()), 86)
 
     def test_i_consumatori_vedono_gli_stessi_valori(self):
         import export_uvtt as eu
@@ -377,3 +403,61 @@ class TestLaMigrazioneNonHaCambiatoNiente(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestIlCorredoDiV2bis(unittest.TestCase):
+    """PIANO-COLLAUDO-E-GENERAZIONE-MAPPE, V2-bis (D8 e D9, 2026-10-08).
+
+    La legenda diceva cosa fa una tessera e non dove puo' stare. Il campo
+    `posa` lo dice, e il collaudo delle mappe lo verifica.
+    """
+
+    def _funzione(self, sim):
+        dati = json.loads((ROOT / "scripts" / "legend.json").read_text(encoding="utf-8"))
+        return dati["symbols"][sim].get("function", {})
+
+    def test_ogni_tessera_fra_livelli_ha_un_verso(self):
+        dati = json.loads((ROOT / "scripts" / "legend.json").read_text(encoding="utf-8"))
+        for sim, voce in dati["symbols"].items():
+            f = voce.get("function", {})
+            if f.get("posa") == "fra_livelli":
+                self.assertIn(f.get("verso"), ("su", "giu"), sim)
+            else:
+                self.assertNotIn("verso", f, f"{sim}: un verso senza passaggio fra livelli")
+
+    def test_salire_e_scendere_esistono_tutti_e_due(self):
+        """Una scala senza gemella del verso opposto non si potrebbe chiudere."""
+        self.assertEqual(self._funzione("🔼")["verso"], "su")
+        self.assertEqual(self._funzione("🔽")["verso"], "giu")
+
+    def test_solo_la_porta_segreta_resta_nel_master(self):
+        """D9: la porta segreta non compare nella versione per i giocatori."""
+        dati = json.loads((ROOT / "scripts" / "legend.json").read_text(encoding="utf-8"))
+        solo = {s for s, v in dati["symbols"].items()
+                if v.get("function", {}).get("solo_master")}
+        self.assertEqual(solo, {"❔"})
+
+    def test_le_chiusure_stanno_nel_muro(self):
+        for sim in ("🚪", "🔒", "❔", "🥅", "🪟"):
+            self.assertEqual(self._funzione(sim)["posa"], "nel_muro", sim)
+        self.assertEqual(self._funzione("⛓")["posa"], "recinto")
+
+    def test_la_scala_a_pioli_di_oggi_non_cambia_senso(self):
+        """Sei celle di Hammerfist la usano per salire ai camminamenti."""
+        self.assertNotIn("posa", self._funzione("🪜"))
+
+    def test_ogni_prop_e_ogni_pattern_hanno_il_loro_disegno(self):
+        import render_map_svg as rms
+        dati = json.loads((ROOT / "scripts" / "legend.json").read_text(encoding="utf-8"))
+        for sim, voce in dati["symbols"].items():
+            r = voce["render"]
+            if "prop" in r:
+                self.assertIn(r["prop"], rms.PROPS, f"{sim}: prop senza disegno")
+            if "pat" in r:
+                self.assertIn(r["pat"], rms.PATTERNS, f"{sim}: pattern senza disegno")
+        # 🔎 Trovato scrivendo questo test: t_dais (🔳, ADR-0042) non ha posto in
+        # Z_ORDER e si dipinge per ultimo, dopo i muri. Oggi non c'e' nessuna cella
+        # 🔳 nel repo, quindi nessun effetto; il controllo vale per i pattern nuovi.
+        for pat in ("t_cave", "t_shallow", "t_sewer"):
+            self.assertIn(pat, rms.Z_ORDER, f"{pat}: pattern senza ordine di pittura")
+

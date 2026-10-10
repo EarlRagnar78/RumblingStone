@@ -335,11 +335,11 @@ deve poter leggere **perché** è chiusa senza dover cercare il piano.
 
 ## Cosa resta da decidere al DM
 
-| # | Domanda |
-|---|---|
-| R6 | Il simbolo **⬛** copre tenda, edificio e dais: **tre glifi o uno?** Non si chiude con una riga in `WALL_SYMS` — cambierebbe gli SVG, non solo l'export |
-| R7 | La Corona di Thorik: il **+4 CAR** e la **non-rimovibilità** sono nel testo di P1 e nessuno li ha né confermati né revocati. Se valgono, valgono entrambi |
-| R8 | **Ordine di ripresa** delle quattro PR abbandonate. La mia proposta: **#63** (contenuto pronto, costo quasi zero, chiude un buco che si sente al tavolo) → **#52** (una rinominazione) → **#106** (serve la tua GPU per l'ultimo passo) → **#99 a lotti** (la più grossa e la più delicata) |
+Niente. R6 (tre glifi, [ADR-0042](adr/ADR-0042-tre-glifi-per-tre-cose.md)), R7 (la
+Corona di Thorik) e R8 (l'ordine di ripresa, passato a
+[PIANO-RIPRESA-PR-ABBANDONATE](PIANO-RIPRESA-PR-ABBANDONATE.md)) sono state decise
+il 2026-09-04 e chiuse nel CHANGELOG lo stesso giorno. *(Allineato il 2026-10-10:
+la tabella era rimasta com'era prima delle risposte.)*
 
 ## Piano di validazione
 

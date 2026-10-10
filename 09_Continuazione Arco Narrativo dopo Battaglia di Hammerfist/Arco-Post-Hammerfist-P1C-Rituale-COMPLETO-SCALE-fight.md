@@ -1,13 +1,13 @@
 Arco-Post-Hammerfist-P1C-Rituale-COMPLETO-SCALE.md
 ==================================================
 
-# Parte 1C – Rituale di Hellas e Tre Ondate Difensive  
+# Parte 1C – Rituale di Hella e Tre Ondate Difensive  
 
 (D&D 3.5 compliant, con scale di difficoltà)
 
 ## 1. Struttura generale
 
-Il Rituale si tiene in una radura difendibile che funge da “mini-dungeon” a ondate, mentre Hellas compie la trasformazione.[file:21]
+Il Rituale si tiene in una radura difendibile che funge da “mini-dungeon” a ondate, mentre Hella compie la trasformazione.[file:21]
 
 - Durata totale: 3 fasi da 20 minuti.  
 - Durante ogni fase c’è la possibilità di 1 ondata di nemici, per un totale di 3 ondate. [file:21]
@@ -50,11 +50,11 @@ Regola speciale:
 Tattiche:
 
 - I caster bombardano le aree dove si concentrano i difensori.  
-- I guerrieri cercano di sfondare fino a Hellas. [file:21]
+- I guerrieri cercano di sfondare fino a Hella. [file:21]
 
 Effetto sulla concentrazione:
 
-- Ogni volta che Hellas subisce danno: prova di Concentrazione CD 20; fallimento = la fase deve essere ripetuta (consuma più tempo).[file:21]
+- Ogni volta che Hella subisce danno: prova di Concentrazione CD 20; fallimento = la fase deve essere ripetuta (consuma più tempo).[file:21]
 
 ---
 
@@ -68,19 +68,19 @@ Effetto sulla concentrazione:
 
 Obiettivo dei nemici:
 
-- Eliminare Hellas o spezzare il cerchio rituale. [file:21]
+- Eliminare Hella o spezzare il cerchio rituale. [file:21]
 
 Condizione di fallimento immediato:
 
-- Se Hellas scende a 0 pf o meno e non viene curata entro 1 round, il rituale fallisce e non può essere ripetuto in questo arco narrativo. [file:21]
+- Se Hella scende a 0 pf o meno e non viene curata entro 1 round, il rituale fallisce e non può essere ripetuto in questo arco narrativo. [file:21]
 
 ---
 
 ## 6. Esito del rituale
 
-- Successo pieno (tutte e tre le fasi completate, Hellas viva, cerchio intatto):  
-  - Hellas ottiene piena forma di Avatar; Treant alleati disponibili durante l’assedio di Brindol. [file:21]
-- Successo parziale (Hellas viva ma cerchio danneggiato / fallimento di una fase):  
-  - Hellas ottiene solo parte dei poteri; bonus minori a Brindol, ma niente Treant completi. [file:21]
-- Fallimento (Hellas muore o il rituale viene interrotto definitivamente):  
-  - Nessun bonus da Hellas; possibile maledizione temporanea sulla foresta (hook per side quest). [file:21]
+- Successo pieno (tutte e tre le fasi completate, Hella viva, cerchio intatto):  
+  - Hella ottiene piena forma di Avatar; Treant alleati disponibili durante l’assedio di Brindol. [file:21]
+- Successo parziale (Hella viva ma cerchio danneggiato / fallimento di una fase):  
+  - Hella ottiene solo parte dei poteri; bonus minori a Brindol, ma niente Treant completi. [file:21]
+- Fallimento (Hella muore o il rituale viene interrotto definitivamente):  
+  - Nessun bonus da Hella; possibile maledizione temporanea sulla foresta (hook per side quest). [file:21]

@@ -164,6 +164,12 @@ La regola che rende il gate reale invece che teorico:
 > che le immagini sono generate. **Meglio otto e due segnaposto vettoriali**, che
 > almeno dichiarano cosa sono.
 
+🔢 **Per le tessere delle mappe il gate ha anche una misura** (ADR-0086): una
+tessera, generata o resa da un modello, sostituisce un glifo solo se
+`misura_resa.py` non la boccia (contrasto del contorno, confusione col simbolo
+vicino, distanza dalla tavolozza) **e** il DM la preferisce nel confronto alla
+cieca. La misura dice se si legge; se è più bella lo dice solo il DM.
+
 ⚠️ E il bias da conoscere: dopo quaranta generazioni si tiene tutto quello che è
 «abbastanza», perché si è stanchi. Il gate va applicato **il giorno dopo**, non
 alla fine della sessione di generazione.

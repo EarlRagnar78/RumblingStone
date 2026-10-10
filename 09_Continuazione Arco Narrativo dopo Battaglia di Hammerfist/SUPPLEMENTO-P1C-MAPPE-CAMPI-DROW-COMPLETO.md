@@ -47,6 +47,24 @@
 
 ### Mappa Tattica Completa
 
+> ✅ **Completata il 2026-10-09** a 53 × 40: prima aveva 25 righe su 40, larghe
+> 50-53 celle. **[PROPOSTA — needs DM confirmation]** sulle 15 righe ricostruite
+> (07, 09, 11, 13, 14, 16, 17, 19, 23, 28, 31, 32, 34, 36, 37): ognuna ripete la
+> riga disegnata sopra, senza figure, fuoco e casse, così l'incineratore resta
+> sulle righe 20-22 dove è disegnato. Le righe corte sono state allungate con
+> radura 🟩 prima della foresta est, quindi nessuna coordinata nominata si sposta.
+> La stessa griglia è nel P1C-Rituale, mappa 1: si modifica qui e si ricopia là.
+>
+> ⛺ **Le tende dal 2026-10-10** (ADR-0042). Il blocco ⬛ mescolava tende,
+> cortile, inceneritore e scorte, e il collaudo leggeva tutto come muro: le
+> figure dentro risultavano irraggiungibili. Ora il blocco è terra battuta 🟫 e
+> le tende sono posate come le descrive il testo: 3×3, con la Tenda 1 in I10-K12
+> e i vicoli sulle colonne L, P, T, X, AB, dove stanno le figure della riga 12.
+> **[PROPOSTA — needs DM confirmation]**: con le figure dove sono disegnate e
+> l'area I-AF, righe 08-20, ne entrano **13 su 15** senza chiudere nessuno dentro
+> e senza toccare il fuoco (2d6 entro 3 m). Per le altre due bisogna spostare
+> una figura o allargare l'area.
+
 ```
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 CAMPO DROW 1 - BURNING OPERATIONS BASE (80m × 60m, Grid 53×40, Scala 1.5m/sq)
@@ -66,81 +84,97 @@ RIGHE ↓    │  │  │  │  │  │  │  │  │  │  │  │  │  �
           TRIPWIRE ALARM (Col E-AJ, Riga 04): Spot DC 22 notice, Disable Device DC 20 disarm
           If triggered: Bell rings 🔔 (alerts ALL drow, Initiative surprise lost)
 
-05  🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲
+05  🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲
 
 --- PATTUGLIA NORD (2 Guerrieri) ---
-06  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲
+06  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲
                               └─┘ PATROL 1 (Col M06, cammina M06→Y06→Y15→M15→loop)          └─┘ PATROL 2 (AI06)
                               Guerriero Drow (Fighter 7): HP 58, AC 20, Longsword +11/+6 (1d8+4)
                               Pattern: 20min loop, Spot +8, Listen +8, Darkvision 120ft
 
+07  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲
 --- ZONE TENDE (15 Totali) ---
-08  🌲🌲🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+08  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
                       └──────────────────────────────────────────────────────┘ 
                       TENDE AREA (Col I-AF, Righe 08-20): 15 tende 4.5m×4.5m ciascuna (3×3 quadrati)
                       
-10  🌲🌲🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+09  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+10  🌲🌲🟩🟩🟩🟩🟩🟩⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
                     └─┘ TENDA 1 (I10-K12): 4 Guerrieri sleep (HP 52 ea, AC 18 se surprised)
                         Gear: Mithral chainmail, rapier, crossbow, 50gp ea
 
-12  🌲🌲🟩🟩🟩🟩🟩⬛⬛⬛⬛🔴⬛⬛⬛🟡⬛⬛⬛🔴⬛⬛⬛🟡⬛⬛⬛🔴⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+11  🌲🌲🟩🟩🟩🟩🟩🟩⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+12  🌲🌲🟩🟩🟩🟩🟩🟫⛺⛺⛺🔴⛺⛺⛺🟡⛺⛺⛺🔴⛺⛺⛺🟡⛺⛺⛺🔴⛺⛺⛺🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
                         └─┘ Guerr. (L12)  └─┘ PYRO 1 (O12, Wiz 8, HP 52, studying spellbook)
                                               └─┘ Guerr. (S12)  └─┘ PYRO 2 (V12)  └─┘ Guerr. (Y12)
 
-15  🌲🌲🟩🟩🟩🟩🟩⬛⬛🔴⬛⬛🔴⬛⬛⬛⬛🔴⬛⬛🔴⬛⬛🔴⬛⬛⬛🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+13  🌲🌲🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫⛺⛺⛺🟫🟫🟫🟫🟫🟫🟫🟫⛺⛺⛺🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+14  🌲🌲🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫⛺⛺⛺🟫🟫🟫🟫🟫🟫🟫🟫⛺⛺⛺🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+15  🌲🌲🟩🟩🟩🟩🟩🟫🟫🔴🟫🟫🔴⛺⛺⛺🟫🔴🟫🟫🔴🟫🟫🔴⛺⛺⛺🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
                     └─┘ Guerr. (J15)  └─┘ Guerr. (M15)     └─┘ Guerr. (R15)  └─┘ Guerr. (U15)  └─┘ Guerr. (X15)
 
+16  🌲🌲🟩🟩🟩🟩🟩🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+17  🌲🌲🟩🟩🟩🟩🟩🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
 --- AREA CENTRALE FUOCO (Incinerator) ---
-18  🌲🌲🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-20  🌲🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛🔥🔥🔥🔥🔥🔥🔥⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+18  🌲🌲🟩🟩🟩🟩🟩🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+19  🌲🌲🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+20  🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🔥🔥🔥🔥🔥🔥🔥🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
                                   └──────────────┘ INCINERATOR FUOCO (Col N-T, Riga 20-22)
                                   - Diametro: 10.5m (7 quadrati)
                                   - Danni: 2d6 fire se entro 3m, 4d6 se dentro
                                   - Luce: 36m radius (negates stealth approach)
                                   - Scopo: Burn captured equipment/bodies
 
-21  🌲🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛🔥🔥🔥🔥🔥🔥🔥🔥🔥⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-22  🌲🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛🔥🔥🔥🔥🔥🔥🔥⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+21  🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🔥🔥🔥🔥🔥🔥🔥🔥🔥🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+22  🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🔥🔥🔥🔥🔥🔥🔥🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
 
+23  🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
 --- COMMANDER TENT + ARMERIA ---
-24  🌲🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+24  🌲🟩🟩🟩🟩🟩🟩⛺⛺⛺⛺⛺🟫🟫⛺⛺⛺⛺⛺⛺🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
                     └─────────────────────┘ COMMAND TENT (Col H-T, Riga 24-27, 19.5m×6m)
                     
-25  🌲🟩🟩🟩🟩🟩🟩⬛⬛⚫⬛⬛⬛⬛⬛🏺🏺🏺⬛⬛⬛🟡⬛⬛⬛⬛🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+25  🌲🟩🟩🟩🟩🟩🟩⛺🟫⚫🟫🟫🟫🟫🟫🏺🏺🏺🟫⛺🟫🟡🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
                         └─┘ COMMANDER 1 (J25, Fighter 10, HP 85, AC 23, planning map)
                                         └────┘ Armeria (O-Q, 25): 20 longswords, 15 crossbow, 200 bolts
                                                     └─┘ PYRO 3 (U25, Wizard 8, brewing potion)
 
-26  🌲🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-27  🌲🟩🟩🟩🟩🟩🟩⬛⬛⚫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟡⬛⬛⬛⬛🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+26  🌲🟩🟩🟩🟩🟩🟩⛺🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫⛺🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+27  🌲🟩🟩🟩🟩🟩🟩⛺⛺⚫⛺⛺⛺⛺⛺⛺⛺⛺⛺⛺🟫🟡🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
                         └─┘ COMMANDER 2 (J27, Fighter 10, HP 82, AC 23, sleeping)
                                                     └─┘ PYRO 4 (U27, Wizard 8)
 
+28  🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
 --- CUCINA & SUPPLIES ---
-29  🌲🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+29  🌲🟩🟩🟩🟩🟩🟩⛺⛺⛺⛺⛺🟫🟫⛺⛺⛺⛺⛺⛺🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
                     └─────────────────────┘ CUCINA (H-T, 29-31): 2 drow cooks (non-combatant)
                     
-30  🌲🟩🟩🟩🟩🟩🟩⬛⬛🔴⬛⬛🟡⬛⬛🏺🏺🏺⬛⬛⬛🔴⬛⬛⬛⬛🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+30  🌲🟩🟩🟩🟩🟩🟩⛺🟫🔴🟫🟫🟡🟫🟫🏺🏺🏺🟫⛺🟫🔴🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
                         └─┘ Guardia (J30, Fighter 6)  └─┘ Pyro 5 (M30, eating)
                                         └────┘ FOOD SUPPLIES (O-Q30): 80 razioni, 20 wine barrels
                                                     └─┘ Guardia (U30)
 
+31  🌲🟩🟩🟩🟩🟩🟩⛺⛺⛺⛺⛺⛺⛺⛺⛺⛺⛺⛺⛺🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+32  🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
 --- PATTUGLIA SUD (3 Guerrieri) ---
-33  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+33  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
                                   └─┘ PATROL 3 (O33, loop O33→Z33→Z38→O38→loop)
                                                         └─┘ PATROL 4 (Z33)
 
-35  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+34  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+35  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
                                               └─┘ PATROL 5 (U35, solo scout)
 
+36  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+37  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
 --- PERIMETRO SUD (Foresta) ---
-38  🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+38  🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
 39  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
 40  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
 
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 SCALA GRID: 1 quadrato = 1.5m × 1.5m | DIMENSIONI TOTALI: 53 colonne × 40 righe = 80m × 60m
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+@tipo tattica esterno
 ```
 
 ### Riepilogo Forze Campo 1
@@ -160,7 +194,7 @@ SCALA GRID: 1 quadrato = 1.5m × 1.5m | DIMENSIONI TOTALI: 53 colonne × 40 righ
 | Tripwire perimetrale | riga 04, colonne E-AJ | Osservare CD 22 per notarlo, Disattivare Congegni CD 20; se scatta: campana 🔔, TUTTI i drow in allerta, sorpresa persa |
 | Fuochi tattici (incineratore) | area centrale 💥 (righe 20-23) | diametro 10,5 m; 2d6 fuoco/round entro 3 m, 4d6 dentro; luce 36 m (annulla approccio furtivo) |
 | Pattuglie | riga 06 (M06 e AI06, loop di 20 min) | Guerriero drow: Osservare +8, Ascoltare +8, scurovisione 36 m |
-| Tende | righe 08-20 e 25-32 (blocchi ⬛ 3×3) | bloccano linea di vista; dentro: −4 Ascoltare per chi dorme |
+| Tende ⛺ | 13 tende 3×3 fra le righe 10 e 18, la tenda del comando (H-T, 24-27) e la cucina (H-T, 29-31) col telo sul perimetro e l'ingresso a nord | bloccano linea di vista; dentro: −4 Ascoltare per chi dorme |
 
 ### ⚔️ TATTICHE (companion T5b, fonte: "Tattiche Raid" originale)
 
@@ -303,6 +337,7 @@ SCALA GRID: 1 quadrato = 1.5m × 1.5m | DIMENSIONI TOTALI: 65 colonne × 53 righ
 @zone N15-BA30 ; Area tende (25 tende, ~40 drow)
 @zone W25-AG28 ; Recinto ogre
 @zone N32-AN33 ; Tenda comando, tesoro, prigioni
+@tipo tattica esterno
 ```
 
 ### Forze Campo 2

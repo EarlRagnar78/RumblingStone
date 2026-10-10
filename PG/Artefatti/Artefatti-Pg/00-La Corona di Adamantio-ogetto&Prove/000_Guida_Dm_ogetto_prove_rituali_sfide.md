@@ -65,7 +65,7 @@ Permette di scegliere uno dei seguenti effetti: *Earth's Bastion* (crea un *Muro
 
 ### 3️⃣ **Gem: Gem of Dwarven Might (Gemma della Potenza Nanica) (Rubino)**
 **Potere (Sopran., 1/settimana):**
-Come azione rapida, avvolge il portatore e gli alleati entro 9 metri in una luce divina per 10 round, conferendo *Giusto Potere* e *Pelle di Pietra* al portatore, *Potere divino* e *Ispirare Coraggio* (+3) agli alleati.
+Come azione veloce, avvolge il portatore e gli alleati entro 9 metri in una luce divina per 10 round, conferendo *Giusto Potere* e *Pelle di Pietra* al portatore, *Potere divino* e *Ispirare Coraggio* (+3) agli alleati.
 *   **Costo:** Il portatore subisce -2 alla Forza per 24 ore.
 
 ---
@@ -198,7 +198,7 @@ Al termine dei 10 round, il Portatore torna bruscamente nel suo corpo.
     *   **Sblocco:** Rituale 3. **Attivazione:** Azione standard. **Frequenza:** 1/settimana. **LI:** 20°. **TS:** Riflessi CD 22 (per *Terremoto*).
     *   **Effetto:** Lancia *Muro di Pietra* (versione potenziata), *Santificare* (versione potenziata) o *Terremoto* (versione controllata).
 *   **Gem: Gem of Dwarven Might (Gemma della Potenza Nanica)**
-    *   **Sblocco:** Rituale 3. **Attivazione:** Azione rapida. **Frequenza:** 1/settimana. **Durata:** 10 round. **LI:** 20°.
+    *   **Sblocco:** Rituale 3. **Attivazione:** Azione veloce. **Frequenza:** 1/settimana. **Durata:** 10 round. **LI:** 20°.
     *   **Effetto:** Conferisce *Possenza Divina* e *Pelle di Pietra* al portatore; *Pelle di Pietra* e *Ispirare Coraggio* (+4) agli alleati entro 9m.
 
 ### **Power: Aura of the Eternal Forge (Aura della Forgia Eterna)**

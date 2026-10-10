@@ -93,14 +93,51 @@ def check_masters_senza_svg(root: Path, rendered_dirs: list[Path]) -> list[str]:
     return errors
 
 
-def render_master(md: Path) -> dict[str, str]:
+def render_master(md: Path, tema: str = "pergamena") -> dict[str, str]:
     """Return {expected_svg_filename: svg_text} for every map in a master."""
     maps = R.extract_maps(md.read_text(encoding="utf-8"))
     out: dict[str, str] = {}
     for i, g in enumerate(maps, 1):
         name = f"{md.stem}_map{i:02d}_{R.nome_mappa(g['title'])}.svg"
-        out[name] = R.render_svg(g, md.name)
+        out[name] = R.render_svg(g, md.name, tema)
     return out
+
+
+def check_tema_texture(repo_root: Path, rendered_dirs: list[Path]) -> tuple[list[str], int]:
+    """Il tema texture (D14 di RESA-ASSET): accanto a ogni `rendered/` c'è un
+    `rendered-texture/` con gli stessi nomi, allineato al master come la
+    pergamena. Vale solo quando le texture CC0 ci sono: prima di
+    `build_texture_cc0.py` un `rendered-texture/` è un errore, perché nessuno
+    lo potrebbe rigenerare."""
+    errors: list[str] = []
+    totale = 0
+    ci_sono = R._texture_cc0() is not None
+    cartelle = sorted({p.parent for p in repo_root.glob("**/rendered-texture/*.svg")})
+    if not ci_sono:
+        for d in cartelle:
+            errors.append(f"{d.relative_to(repo_root)}: SVG del tema texture senza le texture CC0 "
+                          f"(scripts/texture-cc0/): rigenera le texture o togli la cartella")
+        return errors, 0
+    for rdir in rendered_dirs:
+        tdir = rdir.parent / R.CARTELLA_TEMA["texture"]
+        attesi: dict[str, str] = {}
+        stems = {m.group("stem") for m in (SVG_NAME_RE.match(p.name) for p in rdir.glob("*.svg")) if m}
+        for stem in sorted(stems):
+            md = rdir.parent / f"{stem}.md"
+            if md.exists():
+                attesi.update(render_master(md, "texture"))
+        committati = {p.name: p for p in tdir.glob("*.svg")} if tdir.is_dir() else {}
+        totale += len(committati)
+        for n in sorted(set(attesi) - set(committati)):
+            errors.append(f"SVG del tema texture mancante: {tdir / n} — "
+                          f"render_map_svg.py --tema texture")
+        for n in sorted(set(committati) - set(attesi)):
+            errors.append(f"SVG del tema texture orfano: {tdir / n}")
+        for n in sorted(set(attesi) & set(committati)):
+            check_wellformed(committati[n], errors)
+            if attesi[n] != committati[n].read_text(encoding="utf-8"):
+                errors.append(f"SVG del tema texture NON allineato al master: {tdir / n}")
+    return errors, totale
 
 
 def check_wellformed(svg_path: Path, errors: list[str]) -> None:
@@ -180,6 +217,10 @@ def validate(repo_root: Path, as_json: bool = False) -> int:
     # 5. nessun master esce dal controllo perche' gli hanno tolto tutti gli SVG
     errors.extend(check_masters_senza_svg(repo_root, rendered_dirs))
 
+    # 6. il tema texture, gemello della pergamena quando le texture ci sono
+    err_tex, svg_tex = check_tema_texture(repo_root, rendered_dirs)
+    errors.extend(err_tex)
+
     if as_json:
         print(json.dumps({
             "tool": "validate_maps", "ok": not errors,
@@ -195,7 +236,8 @@ def validate(repo_root: Path, as_json: bool = False) -> int:
         return 1
 
     print(f"✓ validate_maps: {total_svg} SVG in {len(rendered_dirs)} dir rendered/, "
-          f"{total_masters} master — tutti ben formati, tracciabili e allineati.")
+          f"{total_masters} master — tutti ben formati, tracciabili e allineati."
+          + (f" Tema texture: {svg_tex} SVG." if svg_tex else ""))
     return 0
 
 

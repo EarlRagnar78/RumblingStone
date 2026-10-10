@@ -10,7 +10,14 @@
 #
 # Immagine base Debian stable + il pacchetto chromium della distro: nessun
 # download di browser fuori dal package manager.
-FROM debian:bookworm-slim
+#
+# Fissata per numero di versione e digest, non per nome in codice
+# (PRATICHE PI-3b, 2026-10-07): Dependabot (`.github/dependabot.yml`, ecosistema
+# `docker`) aggiorna il digest quando Debian ripubblica l'immagine con le
+# correzioni di sicurezza, e propone il 14 quando esce. Con `bookworm-slim` non
+# lo faceva, ed era rimasta su oldstable. Ogni sua PR costruisce l'immagine e
+# stampa un PDF di prova in `.github/workflows/dipendenze.yml`.
+FROM debian:13-slim@sha256:a29215f6a35e51e22adffa17f89e9d2ef06214e64a2bad10d765c46aea49f11f
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         chromium \

@@ -178,6 +178,21 @@ class TestAderenzaAlManifest(unittest.TestCase):
             self.assertEqual(set(M.descrittore(nome, t)["inputSchema"]["properties"]),
                              emesso[nome], nome)
 
+    def test_ogni_chiave_dello_schema_passa_il_filtro_dell_api(self):
+        # Fino al 2026-10-07 `campaign_branch` e `dm` avevano la chiave
+        # «status|guard|ensure»: l'API dei tool la rifiuta e il client scartava
+        # l'intero tool. Il server ne esponeva 75 su 77 senza dirlo.
+        import re
+        for nome, t in M.carica().items():
+            for chiave in M.descrittore(nome, t)["inputSchema"]["properties"]:
+                self.assertRegex(chiave, r"^[a-zA-Z0-9_.-]{1,64}$", f"{nome}: {chiave}")
+
+    def test_il_sottocomando_si_chiama_comando_e_resta_posizionale(self):
+        t = M.carica()["campaign_branch"]
+        self.assertIn("comando", M.descrittore("campaign_branch", t)["inputSchema"]["properties"])
+        argv = M.costruisci(t, {"comando": "status"})
+        self.assertEqual(argv[-1], "status")
+
     def test_ogni_tool_esposto_esiste_su_disco(self):
         for nome, t in M.carica().items():
             self.assertTrue((REPO / t["path"]).is_file(), f"{nome}: {t['path']}")

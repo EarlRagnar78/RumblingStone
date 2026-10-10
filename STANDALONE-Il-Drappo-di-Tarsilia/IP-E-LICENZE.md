@@ -132,6 +132,20 @@ compatibile anche con l'uso commerciale **con attribuzione**. L'obbligo è assol
 
 ---
 
+## §5-bis · Una fonte di pubblico dominio: la tavola di fuori
+
+La scena `02-GIORNO-2` §2-bis ha una ispirazione dichiarata: una scena di un romanzo
+vittoriano del 1865, di pubblico dominio ovunque. Non ne prende **nessun nome, nessuna
+battuta, nessun personaggio**: prende una logica, quella di un tavolo dove ci si sposta
+a ogni giro e dove una regola assurda ha ragioni precise. Il testo è tutto originale
+e sopravvive anche per chi non conosce l'originale (ADR-0080).
+
+⚠️ Le **traduzioni italiane** di quel romanzo non sono di pubblico dominio e non sono
+state usate. Se un'edizione futura vuole citare l'opera, la citazione va tradotta da
+zero e passa dal gate d'uscita di `rumblingstone-edizione`.
+
+---
+
 ## §6 · Riassunto per scenario d'uso
 
 | Scenario | Verdetto |

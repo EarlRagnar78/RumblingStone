@@ -68,7 +68,7 @@ restano nei loro piani e qui si citano:
 | Prima di | Serve | Dove sta | Perché |
 |---|---|---|---|
 | **A3** | ARC-07 al ciclo completo, DEF-5 per primo | PIANO-LETTORE **F4** | ARC-08 comincia dove finisce DEF-5, e il canone che A3 confronta sta nei master di ARC-07 |
-| **S1** | il cancello che segnala un master senza scene | PIANO-LETTORE **F6-a** | senza, un master di ARC-08 scritto con titoli diversi da `### SCENA` passerebbe i cancelli senza essere guardato |
+| **S1** | il cancello che segnala un master senza scene | PIANO-LETTORE **F6-a** ✅ (2026-09-27) | senza, un master di ARC-08 scritto con titoli diversi da `### SCENA` passerebbe i cancelli senza essere guardato |
 
 ⚠️ **Il riposo, nei sorgenti.** Dal 2026-09-27 `validate_modules` boccia
 «riposo breve/lungo» nei master DEF. Nei sorgenti di ARC-09 compare ancora
@@ -341,5 +341,5 @@ Per ogni master, prima di chiudere il lotto:
    aperte al DM);
 3. D1-D3 sono decise, la tabella A1 è approvata e A2 è misurato
    (2026-09-27). Prima di A3 va chiuso **F4 di PIANO-LETTORE** (ARC-07 al
-   ciclo del master, DEF-5 per primo), e prima di S1 **F6-a** (il cancello che
-   vede un master senza scene). Vedi §1-bis.
+   ciclo del master, DEF-5 per primo). **F6-a** (il cancello che vede un master
+   senza scene), che serviva prima di S1, è ✅ dal 2026-09-27. Vedi §1-bis.

@@ -564,6 +564,11 @@ master vi **rimanda**.
 > Definitivo**: `Mappe/ARC07-MAPPE-DEFINITIVO.md`. Le griglie qui sotto sono
 > identiche; là hanno gli add-on DM. **I booklet includono l'Atlante.**
 
+> 🗺️ **Le sale sopra il Cuore, nel 1372**: la ritirata del Giorno 3
+> e la riconquista passano dalle gallerie di Zeth e dalla fucina grande. Le
+> griglie del 1372 (M7-D, M7-E, M7-F) e la sezione M7-S stanno in
+> `Mappe/ARC07-MAPPE-HAMMERFIST-372-1372.md`.
+
 ### MAPPA CM-1 — IL CUORE DELLA MONTAGNA (arrivo & apparizione · Incontro 3B)
 
 > **Geometria CANONICA** (invariata): `08_.../Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md`
@@ -614,6 +619,7 @@ Ancestrali (cerchio a 20 m dall'altare, alte 4 m, occhi di rubino — copertura)
 🟨 piattaforme laterali Est/Ovest (+1,5 m, 6×3 m — tiratori) · 🔺 stalagmiti
 (copertura parziale) · 🔴 ondata nemica. Soffitto 40 m: stalattiti di cristallo
 BIOLUMINESCENTI (luce piena ovunque, niente *darkness*).
+@tipo tattica caverna
 ```
 
 ### ⏫ EVENTO CLIMAX — L'APPARIZIONE (la sfera dorata)

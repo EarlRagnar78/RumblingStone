@@ -1,0 +1,182 @@
+{
+ "schema_version": "1.0",
+ "title": "Dauth, Carta B — Il Razorfiend sui bastioni (Giorno 3)",
+ "tipo": "tattica",
+ "ambiente": "abitato",
+ "scale_m_per_square": 1.5,
+ "map_size": [
+  16,
+  4
+ ],
+ "base_terrain": "⬜",
+ "north": "N",
+ "structures": [
+  {
+   "type": "🧱",
+   "at": [
+    0,
+    3
+   ],
+   "label": "Merlo"
+  },
+  {
+   "type": "🧱",
+   "at": [
+    2,
+    3
+   ],
+   "label": "Merlo"
+  },
+  {
+   "type": "🧱",
+   "at": [
+    4,
+    3
+   ],
+   "label": "Merlo"
+  },
+  {
+   "type": "🧱",
+   "at": [
+    6,
+    3
+   ],
+   "label": "Merlo"
+  },
+  {
+   "type": "🧱",
+   "at": [
+    8,
+    3
+   ],
+   "label": "Merlo"
+  },
+  {
+   "type": "🧱",
+   "at": [
+    10,
+    3
+   ],
+   "label": "Merlo"
+  },
+  {
+   "type": "🧱",
+   "at": [
+    12,
+    3
+   ],
+   "label": "Merlo"
+  },
+  {
+   "type": "🧱",
+   "at": [
+    14,
+    3
+   ],
+   "label": "Merlo"
+  },
+  {
+   "type": "🔽",
+   "at": [
+    0,
+    0
+   ],
+   "label": "Scala alle vie della città",
+   "collega": "fuori mappa ; la città sotto il bastione non ha una griglia: la carta si gioca sul camminamento e in cielo"
+  },
+  {
+   "type": "🔽",
+   "at": [
+    15,
+    0
+   ],
+   "label": "Scala alle vie della città",
+   "collega": "fuori mappa ; la città sotto il bastione non ha una griglia: la carta si gioca sul camminamento e in cielo"
+  }
+ ],
+ "hazards": [
+  {
+   "type": "🎯",
+   "at": [
+    4,
+    1
+   ],
+   "label": "Balista 1",
+   "effect": "Arma d'assedio riusabile dai PG (Artiglieria): colpo 4d6, TS Riflessi; danneggiabile (la carta)"
+  },
+  {
+   "type": "🎯",
+   "at": [
+    11,
+    1
+   ],
+   "label": "Balista 2",
+   "effect": "Arma d'assedio riusabile dai PG (Artiglieria): colpo 4d6, TS Riflessi; danneggiabile (la carta)"
+  }
+ ],
+ "units": [
+  {
+   "faction": "Vanguard della Mano Rossa",
+   "name": "Razorfiend rosso, in volo basso a 9 m (razorfiend-red-cr9)",
+   "token": "⚫",
+   "at": [
+    8,
+    1
+   ],
+   "cr": "GS 9"
+  },
+  {
+   "faction": "Dauth",
+   "name": "Serventi della balista 1",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     3,
+     0,
+     2,
+     1
+    ]
+   },
+   "quantity": 2
+  },
+  {
+   "faction": "Dauth",
+   "name": "Serventi della balista 2",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     11,
+     0,
+     2,
+     1
+    ]
+   },
+   "quantity": 2
+  },
+  {
+   "faction": "Vanguard della Mano Rossa",
+   "name": "Cavalcatore gnoll col rampino, solo se il party è numeroso (gnoll-hyenodon-rider-cr4)",
+   "token": "🔴",
+   "at": [
+    5,
+    3
+   ],
+   "cr": "GS 4"
+  },
+  {
+   "faction": "Vanguard della Mano Rossa",
+   "name": "Cavalcatore gnoll col rampino, solo se il party è numeroso (gnoll-hyenodon-rider-cr4)",
+   "token": "🔴",
+   "at": [
+    9,
+    3
+   ],
+   "cr": "GS 4"
+  }
+ ],
+ "notes": [
+  "Le quote della carta: camminamento, volo basso a 9 m, volo alto. La griglia è il camminamento; il Razorfiend la attraversa a passate.",
+  "Merli in riga 04 (copertura bassa, +4 CA) alternati alle feritoie aperte da cui salgono i rampini. Esiti e Fronte: Carta B di DAY3-CITY-SIEGE.",
+  "Fonte: Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-CITY-SIEGE.md"
+ ]
+}

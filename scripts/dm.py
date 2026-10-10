@@ -12,7 +12,12 @@ diff del DM, regioni marcate `auto:`.
 
 Sottocomandi (fase del Playbook tra parentesi):
     prep      (§2)   catalogo → incontri → mappa → loot per la prossima sessione
-    maps      (prep) render SVG / valida le griglie emoji
+    maps      (prep) render SVG / valida le griglie emoji / URL di una città Watabou /
+                     texture: il tema con le texture CC0 per tutte le mappe /
+                     misura: la resa misurata, simboli e terreni (ADR-0086)
+    asset     (prep) texture e oggetti CC0 del tema texture (texture, oggetti) e
+                     asset di 2-Minute Tabletop per il tema dipinto: installa,
+                     stato, controlla (R4 di PIANO-RESA-E-ASSET-DELLE-MAPPE)
     post      (§4)   ledger XP → proposta diff state.md → checklist §4
     session   (§4+§7) ciclo su branch-per-gruppo (ADR-0007): end/next/status/branch
     gruppo    (§7)   gruppo nuovo da un modulo: ramo, reset, stato derivato (4f-4)
@@ -112,6 +117,18 @@ def cmd_prep(args: argparse.Namespace, extra: list[str]) -> int:
 def cmd_maps(args: argparse.Namespace, extra: list[str]) -> int:
     if args.action == "validate":
         return run("validate_maps.py", "--repo-root", str(REPO))
+    if args.action == "texture":
+        # il tema texture di tutte le mappe (D14 di RESA-ASSET): prima le texture CC0
+        rc = run("build_texture_cc0.py", "--check") or run("build_oggetti_cc0.py", "--check")
+        return rc or run("render_map_svg.py", "--tutti-i-master", "--tema", "texture")
+    if args.action == "misura":
+        # la resa misurata (ADR-0086): senza argomenti, il cancello della CI
+        return run("misura_resa.py", *(args.files or ["--check"]), *extra)
+    if args.action == "citta":
+        if len(args.files) != 1:
+            print("[dm] uso: dm.py maps citta <scheda>.watabou.json [--export svg]")
+            return 2
+        return run("watabou_citta.py", *args.files, *extra)
     if not args.files:
         print("[dm] uso: dm.py maps render <file.md ...> — file con griglie emoji "
               "(gli SVG finiscono in rendered/ accanto al sorgente)")
@@ -129,6 +146,20 @@ BESTIARIO = {
     "creatura": "genera_creatura.py",
     "conformita": "conformita_statblocchi.py",
 }
+
+
+def cmd_asset(args: argparse.Namespace, extra: list[str]) -> int:
+    if args.action == "texture":
+        return run("build_texture_cc0.py", *extra)
+    if args.action == "oggetti":
+        # gli oggetti di scena del tema texture, dai modelli 3D CC0 (R4-ter, D17)
+        return run("build_oggetti_cc0.py", *extra)
+    return run("asset_2mtt.py", args.action, *extra)
+
+
+def cmd_ambiente(args: argparse.Namespace, extra: list[str]) -> int:
+    # l'ambiente completo col registro e il rollback (AMBIENTE A5c-A5d, D1)
+    return run("ambiente.py", args.action, *extra)
 
 
 def cmd_bestiario(args: argparse.Namespace, extra: list[str]) -> int:
@@ -560,9 +591,16 @@ def cmd_doctor(args: argparse.Namespace, extra: list[str]) -> int:
     # ferma un gate della CI ed e' quindi un problema vero.
     try:
         import binari as _binari
+        _bpy = _binari.disponibile("bpy")
         for _b, _p in (*_binari.stato(), *_binari.stato_opzionali()):
             if _p:
                 ok(f"{_b.nome} presente ({_b.a_cosa_serve})")
+            elif _b.nome == "blender" and _bpy:
+                # il modulo fa le tessere degli oggetti; il binario serve solo
+                # al render 3D delle mappe (`render_map_blender.py`)
+                print("  ○ blender assente come programma, ma c'è il modulo bpy: le "
+                      "tessere degli oggetti si fanno; manca solo il PNG di "
+                      "`render_map_blender.py`")
             else:
                 print(f"  ○ {_b.nome} assente — {_b.ripiego}")
         for _lib, _c_e in _binari.stato_librerie():
@@ -582,6 +620,57 @@ def cmd_doctor(args: argparse.Namespace, extra: list[str]) -> int:
                 print(f"  ○ catena «{_catena}»: manca {', '.join(_mancano)}")
     except Exception as exc:  # doctor non deve mai crashare
         warn(f"check dipendenze esterne fallito: {exc}")
+
+    # le texture CC0 del tema texture (D13-D15): informative, mai un avviso
+    try:
+        import render_map_svg as _rms
+        _tex = _rms._texture_cc0()
+        if _tex:
+            ok(f"texture CC0 per il tema texture ({len(_tex[1])} tessere)")
+        else:
+            print("  ○ texture CC0 assenti — il tema texture non c'è, la pergamena sì "
+                  "(`dm.py asset texture`)")
+    except Exception as exc:  # doctor non deve mai crashare
+        warn(f"check texture CC0 fallito: {exc}")
+
+    # gli oggetti di scena del tema texture (R4-ter, D17): informativi, mai un avviso
+    try:
+        import render_map_svg as _rms
+        _ogg = _rms._oggetti_cc0()
+        if _ogg:
+            ok(f"oggetti CC0 per il tema texture ({len(_ogg[1])} tessere, "
+               f"{len(_ogg[0])} simboli; gli altri restano glifi)")
+        else:
+            print("  ○ oggetti CC0 assenti — nel tema texture gli oggetti restano glifi "
+                  "(`dm.py asset oggetti`)")
+    except Exception as exc:  # doctor non deve mai crashare
+        warn(f"check oggetti CC0 fallito: {exc}")
+
+    # la scheda della resa (ADR-0086): informativa; il cancello è in CI
+    try:
+        _scheda = REPO / "scripts" / "scheda-resa.json"
+        if _scheda.exists():
+            import json as _json
+            _sr = _json.loads(_scheda.read_text(encoding="utf-8"))
+            ok(f"scheda della resa: {len(_sr.get('preferenze_dm', {}))} simboli giudicati dal DM, "
+               f"{len(_sr.get('candidati', {}))} candidati misurati")
+        else:
+            print("  ○ scheda della resa assente (`dm.py maps misura --aggiorna`)")
+    except Exception as exc:  # doctor non deve mai crashare
+        warn(f"check scheda della resa fallito: {exc}")
+
+    # gli asset di terzi del tema dipinto: informativi, mai un avviso (R4)
+    try:
+        import asset_2mtt as _a2
+        _inst = _a2.pacchetti()
+        if _inst:
+            for _n, _p in _inst.items():
+                ok(f"2-Minute Tabletop «{_n}» ({_p['categoria']}, {len(_p['file'])} file)")
+        else:
+            print("  ○ 2-Minute Tabletop: nessun pacchetto — il tema dipinto non c'è, "
+                  "la pergamena sì (`dm.py asset installa`)")
+    except Exception as exc:  # doctor non deve mai crashare
+        warn(f"check asset di terzi fallito: {exc}")
 
     if problems:
         print(f"[dm] doctor: {problems} avvisi")
@@ -607,8 +696,17 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--refresh", action="store_true", help="rigenera il catalogo mostri")
 
     p = sub.add_parser("maps", help="render SVG / validazione griglie emoji")
-    p.add_argument("action", choices=["render", "validate"])
-    p.add_argument("files", nargs="*", help="file markdown con griglie (per render)")
+    p.add_argument("action", choices=["render", "validate", "citta", "texture", "misura"])
+    p.add_argument("files", nargs="*", help="file markdown con griglie (per render), "
+                                            "o la scheda *.watabou.json (per citta)")
+
+    # add_help=False: `dm.py asset installa --help` stampa l'aiuto dello script
+    p = sub.add_parser("asset", add_help=False,
+                       help="texture CC0 (texture: scarica e costruisce), oggetti CC0 del "
+                            "tema texture (oggetti: scarica, rende con Blender, --check) e asset di "
+                            "2-Minute Tabletop (installa <zip> --categoria base|premium / "
+                            "stato / controlla)")
+    p.add_argument("action", choices=["texture", "oggetti", "installa", "stato", "controlla"])
 
     # add_help=False: `--help` non lo prende dm.py ma lo script, così
     # `dm.py bestiario creatura --help` stampa l'aiuto di genera_creatura.
@@ -616,6 +714,12 @@ def main(argv: list[str] | None = None) -> int:
                        help="le creature: estrai / deriva / attributi / creatura / "
                             "conformita (i flag passano allo script)")
     p.add_argument("action", nargs="?", choices=list(BESTIARIO))
+
+    p = sub.add_parser("ambiente", add_help=False,
+                       help="l'ambiente di sviluppo completo col registro: piano / installa "
+                            "[--con blender,comfyui,typst] / stato / rimuovi [--venv] / "
+                            "adotta --apt-dal DATA")
+    p.add_argument("action", choices=["piano", "installa", "stato", "rimuovi", "adotta"])
 
     p = sub.add_parser("post", help="Playbook §4: XP ledger + diff state.md proposto")
     p.add_argument("--session", help="scansiona solo questo file di sessione")
@@ -712,8 +816,8 @@ def main(argv: list[str] | None = None) -> int:
     return {
         "prep": cmd_prep, "maps": cmd_maps, "post": cmd_post, "recap": cmd_recap,
         "handout": cmd_handout, "hype": cmd_hype, "dossier": cmd_dossier,
-        "booklet": cmd_booklet, "prompts": cmd_prompts, "bestiario": cmd_bestiario,
-        "session": cmd_session, "volume": cmd_volume, "corredo": cmd_corredo, "skills": cmd_skills, "doctor": cmd_doctor,
+        "booklet": cmd_booklet, "prompts": cmd_prompts, "bestiario": cmd_bestiario, "ambiente": cmd_ambiente,
+        "session": cmd_session, "asset": cmd_asset, "volume": cmd_volume, "corredo": cmd_corredo, "skills": cmd_skills, "doctor": cmd_doctor,
         "gruppo": cmd_gruppo,
     }[args.cmd](args, extra)
 

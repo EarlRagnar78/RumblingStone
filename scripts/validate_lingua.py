@@ -58,6 +58,16 @@ ERRORI: list[tuple[str, str]] = [
 AVVISI: list[tuple[str, str]] = [
     (r'(?<![=(])"[A-Za-zÀ-ù]', 'virgolette dritte → «» (o " " tipografiche)'),
     (r"(?<![A-Za-z])E'\s", "«E'» → È (maiuscola accentata)"),
+    # L'apostrofo non sostituisce l'accento («e'», «gia'», «perche'»). Solo le
+    # parole che un apostrofo finale non può che storpiare: *po'* e *da'* sono
+    # corretti e non stanno in lista. Una regex sola trova le stesse righe di
+    # LanguageTool (GR_04_002) e altre 58, senza i falsi *Da'* (ADR-0079).
+    (r"(?<![\w'’])(?:e|(?i:gia|piu|puo|cosi|perche|pero|citta|poiche|cioe|"
+     r"verra|andra|potra|fara|dira|dara|stara|virtu|liberta|qualita|facolta|"
+     r"universita|eta|novita|difficolta|possibilita|realta|identita|"
+     r"finche|benche|anziche|affinche|giacche|dopodiche|"
+     r"caffe|te|ahime|lunedi|martedi|mercoledi|giovedi|venerdi))'(?![\w'’])",
+     "apostrofo al posto dell'accento («e'» → è, «gia'» → già, «perche'» → perché)"),
 ]
 
 # Né spazio, né lettera, né punteggiatura: il codice mascherato non deve

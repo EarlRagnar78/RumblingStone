@@ -1,0 +1,82 @@
+{
+ "schema_version": "1.0",
+ "title": "Dauth, Carta C — Il cunicolo della cisterna, sotto il chiostro",
+ "tipo": "tattica",
+ "ambiente": "interni",
+ "scale_m_per_square": 1.5,
+ "map_size": [
+  5,
+  8
+ ],
+ "base_terrain": "🏰",
+ "north": "N",
+ "regions": [
+  {
+   "terrain": "🟤",
+   "rect": [
+    1,
+    1,
+    3,
+    6
+   ],
+   "label": "Il cunicolo, 3×6"
+  },
+  {
+   "terrain": "💧",
+   "rect": [
+    2,
+    2,
+    1,
+    5
+   ],
+   "label": "L'acqua della cisterna"
+  }
+ ],
+ "structures": [
+  {
+   "type": "🔼",
+   "at": [
+    2,
+    1
+   ],
+   "label": "Scala al chiostro",
+   "collega": "DAUTH-C1-chiostro-ospedale.md E06"
+  }
+ ],
+ "units": [
+  {
+   "faction": "Guastatori",
+   "name": "Violet Fungus (SRD), solo se le cisterne sono guaste",
+   "token": "🟢",
+   "at": [
+    1,
+    4
+   ],
+   "cr": "GS 3"
+  },
+  {
+   "faction": "Guastatori",
+   "name": "Violet Fungus (SRD), solo se le cisterne sono guaste",
+   "token": "🟢",
+   "at": [
+    3,
+    5
+   ],
+   "cr": "GS 3"
+  },
+  {
+   "faction": "Guastatori",
+   "name": "Guerriero drow (drow-fighter3-cr4), solo se le cisterne sono guaste",
+   "token": "🔴",
+   "at": [
+    2,
+    6
+   ],
+   "cr": "GS 4"
+  }
+ ],
+ "notes": [
+  "Le tracce di Yssaria, se è fuggita da Dauth (SUBQUEST-Hella), stanno qui.",
+  "Fonte: Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-CITY-SIEGE.md"
+ ]
+}

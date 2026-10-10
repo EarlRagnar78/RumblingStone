@@ -186,7 +186,7 @@ Intelligent items can communicate: empathy, speech, telepathy (progressively mor
 ### Draconic & Horde Gear
 *Sourced predominantly from Draconomicon and Red Hand of Doom logic.*
 - **Dragondoom (Artifact)**: A legendary weapon intrinsically tied to your campaign. Dragondoom represents an existential threat to dragonkind and is a critical centerpiece artifact in the war against Tiamat's horde.
-- **Dragonbane Weapons / Dragonfang Weapons**: Magical armaments highly sought after by the defenders of Rethmar and Cannathgate.
+- **Dragonbane Weapons / Dragonfang Weapons**: Magical armaments highly sought after by the defenders of Rethmar and Channathgate.
 - **Bands of the Blood Glass**: Magical bindings useful for restraining draconic beasts.
 - **Goggles of Draconic Vision**: Often found on elite Red Hand scouts, granting darkvision and blind-sense comparable to a true dragon.
 

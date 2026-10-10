@@ -308,7 +308,8 @@
       "render": {
         "mode": "icon",
         "prop": "pr_fire",
-        "fill": "#ffb4a2"
+        "fill": "#ffb4a2",
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": false,
@@ -332,7 +333,8 @@
       "render": {
         "mode": "icon",
         "prop": "pr_boom",
-        "fill": "#ffb4a2"
+        "fill": "#ffb4a2",
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": false,
@@ -352,7 +354,8 @@
       "render": {
         "mode": "icon",
         "prop": "pr_skull",
-        "fill": "#e9ecef"
+        "fill": "#e9ecef",
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": false,
@@ -373,7 +376,8 @@
         "mode": "icon",
         "prop": "pr_pit",
         "fill": "#495057",
-        "altezza_m": -3.0
+        "altezza_m": -3.0,
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": true,
@@ -436,7 +440,8 @@
         "prop": "pr_tree",
         "fill": "#b7e4c7",
         "altezza_m": 6.0,
-        "texture": "fogliame"
+        "texture": "fogliame",
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": true,
@@ -453,7 +458,8 @@
         "mode": "icon",
         "prop": "pr_star",
         "fill": "#fff3b0",
-        "piatto": true
+        "piatto": true,
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": false,
@@ -480,7 +486,8 @@
         "cover": "total",
         "obscurement": "none",
         "move_cost": 1,
-        "nameable": true
+        "nameable": true,
+        "posa": "nel_muro"
       }
     },
     "🗼": {
@@ -489,7 +496,8 @@
         "mode": "icon",
         "prop": "pr_tower",
         "fill": "#dee2e6",
-        "altezza_m": 9.0
+        "altezza_m": 9.0,
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": true,
@@ -513,7 +521,8 @@
         "cover": "none",
         "obscurement": "none",
         "move_cost": 1,
-        "nameable": true
+        "nameable": true,
+        "posa": "sul_pavimento"
       }
     },
     "🔔": {
@@ -521,7 +530,8 @@
       "render": {
         "mode": "icon",
         "prop": "pr_bell",
-        "fill": "#fff3b0"
+        "fill": "#fff3b0",
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": false,
@@ -537,7 +547,8 @@
       "render": {
         "mode": "icon",
         "prop": "pr_gem",
-        "fill": "#caf0f8"
+        "fill": "#caf0f8",
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": false,
@@ -561,7 +572,8 @@
         "cover": "half",
         "obscurement": "none",
         "move_cost": 1,
-        "nameable": true
+        "nameable": true,
+        "posa": "sul_pavimento"
       }
     },
     "🏮": {
@@ -570,7 +582,8 @@
         "mode": "icon",
         "prop": "pr_brazier",
         "fill": "#ffd166",
-        "altezza_m": 1.5
+        "altezza_m": 1.5,
+        "sopra_la_tessera": "pr_fire"
       },
       "function": {
         "blocks_movement": true,
@@ -581,7 +594,8 @@
         "light": {
           "raggio_m": 9.0,
           "colore": "ffd9a0"
-        }
+        },
+        "posa": "sul_pavimento"
       }
     },
     "🪓": {
@@ -598,7 +612,8 @@
         "cover": "half",
         "obscurement": "none",
         "move_cost": 1,
-        "nameable": true
+        "nameable": true,
+        "posa": "sul_pavimento"
       }
     },
     "🛏": {
@@ -615,7 +630,8 @@
         "cover": "none",
         "obscurement": "none",
         "move_cost": 1,
-        "nameable": true
+        "nameable": true,
+        "posa": "sul_pavimento"
       }
     },
     "📦": {
@@ -632,7 +648,8 @@
         "cover": "total",
         "obscurement": "none",
         "destructible": true,
-        "nameable": true
+        "nameable": true,
+        "posa": "sul_pavimento"
       }
     },
     "🐴": {
@@ -640,7 +657,8 @@
       "render": {
         "mode": "icon",
         "prop": "pr_horse",
-        "fill": "#e6ccb2"
+        "fill": "#e6ccb2",
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": false,
@@ -657,7 +675,8 @@
         "mode": "icon",
         "prop": "pr_web",
         "fill": "#dee2e6",
-        "altezza_m": 0.75
+        "altezza_m": 0.75,
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": false,
@@ -678,7 +697,8 @@
         "mode": "icon",
         "prop": "pr_ice",
         "fill": "#caf0f8",
-        "altezza_m": 0.0
+        "altezza_m": 0.0,
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": false,
@@ -698,7 +718,8 @@
       "render": {
         "mode": "icon",
         "prop": "pr_bolt",
-        "fill": "#fff3b0"
+        "fill": "#fff3b0",
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": false,
@@ -722,7 +743,8 @@
       "render": {
         "mode": "icon",
         "prop": "pr_portal",
-        "fill": "#caf0f8"
+        "fill": "#caf0f8",
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": false,
@@ -739,7 +761,8 @@
         "mode": "icon",
         "prop": "pr_down",
         "fill": "#dee2e6",
-        "piatto": true
+        "piatto": true,
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": false,
@@ -758,7 +781,8 @@
         "prop": "pr_temple",
         "fill": "#dee2e6",
         "altezza_m": 6.0,
-        "texture": "pietra-chiara"
+        "texture": "pietra-chiara",
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": true,
@@ -773,7 +797,8 @@
       "render": {
         "mode": "icon",
         "prop": "pr_volcano",
-        "fill": "#ffb4a2"
+        "fill": "#ffb4a2",
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": false,
@@ -811,7 +836,8 @@
         "mode": "icon",
         "prop": "pr_bridge",
         "fill": "#e6ccb2",
-        "altezza_m": 0.75
+        "altezza_m": 0.75,
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": false,
@@ -828,7 +854,8 @@
         "mode": "icon",
         "prop": "pr_target",
         "fill": "#fff3b0",
-        "piatto": true
+        "piatto": true,
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": false,
@@ -845,7 +872,8 @@
         "mode": "icon",
         "prop": "pr_mural",
         "fill": "#dee2e6",
-        "piatto": true
+        "piatto": true,
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": false,
@@ -862,7 +890,8 @@
         "mode": "icon",
         "prop": "pr_sparkle",
         "fill": "#fff3b0",
-        "piatto": true
+        "piatto": true,
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": false,
@@ -883,7 +912,8 @@
         "mode": "icon",
         "prop": "pr_swords",
         "fill": "#dee2e6",
-        "piatto": true
+        "piatto": true,
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": false,
@@ -908,7 +938,8 @@
         "cover": "half",
         "obscurement": "none",
         "move_cost": 1,
-        "nameable": true
+        "nameable": true,
+        "posa": "sul_pavimento"
       }
     },
     "🛢": {
@@ -924,7 +955,8 @@
         "cover": "half",
         "obscurement": "none",
         "destructible": true,
-        "nameable": true
+        "nameable": true,
+        "posa": "sul_pavimento"
       }
     },
     "🪜": {
@@ -932,7 +964,8 @@
       "render": {
         "mode": "icon",
         "prop": "pr_stairs",
-        "fill": "#dee2e6"
+        "fill": "#dee2e6",
+        "tessera_cc0": false
       },
       "function": {
         "blocks_movement": false,
@@ -1045,7 +1078,8 @@
         "light": {
           "raggio_m": 6.0,
           "colore": "b3e6ff"
-        }
+        },
+        "posa": "sul_pavimento"
       }
     },
     "🪑": {
@@ -1061,7 +1095,8 @@
         "cover": "half",
         "obscurement": "none",
         "move_cost": 2,
-        "nameable": true
+        "nameable": true,
+        "posa": "sul_pavimento"
       }
     },
     "🧱": {
@@ -1080,6 +1115,408 @@
         "move_cost": 1,
         "climb": "easy",
         "nameable": true
+      }
+    },
+    "🔒": {
+      "label": "Porta chiusa a chiave o sbarrata",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_lockdoor",
+        "fill": "#e6ccb2",
+        "piatto": true
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": true,
+        "deroga_uvtt": "come la porta 🚪: ha gia' la sua geometria nell'export, `door: true` produce un varco e non un segmento di muro. Chiusa a chiave cambia la CD per aprirla, non la geometria, e la CD sta nel profilo.",
+        "door": true,
+        "cover": "total",
+        "obscurement": "none",
+        "nameable": true,
+        "posa": "nel_muro"
+      }
+    },
+    "❔": {
+      "label": "Porta segreta",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_secretdoor",
+        "fill": "#ced4da",
+        "piatto": true
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": true,
+        "deroga_uvtt": "e' una porta, con la geometria di una porta nell'export. Che i giocatori non la vedano lo decide la versione per i giocatori (D9), dove si disegna come muro: non e' una proprieta' del varco.",
+        "door": true,
+        "cover": "total",
+        "obscurement": "none",
+        "nameable": true,
+        "posa": "nel_muro",
+        "solo_master": true
+      }
+    },
+    "🥅": {
+      "label": "Saracinesca o grata",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_grate",
+        "fill": "#dee2e6",
+        "altezza_m": 3.0
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": false,
+        "door": true,
+        "cover": "none",
+        "obscurement": "none",
+        "destructible": true,
+        "nameable": true,
+        "posa": "nel_muro"
+      }
+    },
+    "🪟": {
+      "label": "Finestra o feritoia",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_window",
+        "fill": "#dee2e6",
+        "piatto": true
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": false,
+        "cover": "three_quarters",
+        "obscurement": "none",
+        "nameable": true,
+        "posa": "nel_muro"
+      }
+    },
+    "⛓": {
+      "label": "Sbarre di cella o gabbia",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_bars",
+        "fill": "#dee2e6",
+        "altezza_m": 3.0
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "destructible": true,
+        "nameable": true,
+        "posa": "recinto"
+      }
+    },
+    "🔼": {
+      "label": "Scala che sale",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_stairs_up",
+        "fill": "#dee2e6",
+        "tessera_cc0": false
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 2,
+        "nameable": true,
+        "posa": "fra_livelli",
+        "verso": "su"
+      }
+    },
+    "🔽": {
+      "label": "Scala che scende",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_stairs_down",
+        "fill": "#ced4da",
+        "tessera_cc0": false
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 2,
+        "nameable": true,
+        "posa": "fra_livelli",
+        "verso": "giu"
+      }
+    },
+    "🔻": {
+      "label": "Botola o pozzo",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_trapdoor",
+        "fill": "#e6ccb2",
+        "piatto": true,
+        "tessera_cc0": false
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": true,
+        "posa": "fra_livelli",
+        "verso": "giu"
+      }
+    },
+    "🟤": {
+      "label": "Pavimento di caverna",
+      "render": {
+        "mode": "fill",
+        "pat": "t_cave",
+        "fill": "#9a8a76",
+        "altezza_m": 0.0
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": false
+      }
+    },
+    "💧": {
+      "label": "Acqua bassa o pozza",
+      "render": {
+        "mode": "fill",
+        "pat": "t_shallow",
+        "fill": "#9cc6d6",
+        "altezza_m": -0.75
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 2,
+        "nameable": false
+      }
+    },
+    "🫧": {
+      "label": "Fogna o liquame",
+      "render": {
+        "mode": "fill",
+        "pat": "t_sewer",
+        "fill": "#6f7a4c",
+        "altezza_m": -0.75
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 2,
+        "nameable": false,
+        "hazard": {
+          "kind": "disease",
+          "severity": "minor"
+        }
+      }
+    },
+    "🪵": {
+      "label": "Detriti e travi crollate",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_debris",
+        "fill": "#e6ccb2",
+        "altezza_m": 0.75
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 2,
+        "destructible": true,
+        "nameable": false
+      }
+    },
+    "🗄": {
+      "label": "Armadio o scaffale",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_cabinet",
+        "fill": "#e6ccb2",
+        "altezza_m": 1.5
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": true,
+        "cover": "total",
+        "obscurement": "none",
+        "destructible": true,
+        "nameable": true,
+        "posa": "sul_pavimento"
+      }
+    },
+    "📚": {
+      "label": "Libreria o archivio",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_books",
+        "fill": "#e6ccb2",
+        "altezza_m": 1.5
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": true,
+        "cover": "total",
+        "obscurement": "none",
+        "destructible": true,
+        "nameable": true,
+        "posa": "sul_pavimento"
+      }
+    },
+    "🧰": {
+      "label": "Baule o forziere",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_chest",
+        "fill": "#e6ccb2",
+        "altezza_m": 0.75
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "half",
+        "obscurement": "none",
+        "move_cost": 2,
+        "destructible": true,
+        "nameable": true,
+        "posa": "sul_pavimento"
+      }
+    },
+    "⛲": {
+      "label": "Fontana o cisterna",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_fountain",
+        "fill": "#caf0f8",
+        "altezza_m": 0.75
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": false,
+        "cover": "half",
+        "obscurement": "none",
+        "nameable": true,
+        "posa": "sul_pavimento"
+      }
+    },
+    "⚒": {
+      "label": "Incudine e forgia",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_anvil",
+        "fill": "#dee2e6",
+        "altezza_m": 0.75
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": false,
+        "cover": "half",
+        "obscurement": "none",
+        "nameable": true,
+        "posa": "sul_pavimento"
+      }
+    },
+    "🧪": {
+      "label": "Banco dell'alchimista",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_alchemy",
+        "fill": "#e6ccb2",
+        "altezza_m": 0.75
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": false,
+        "cover": "half",
+        "obscurement": "none",
+        "destructible": true,
+        "nameable": true,
+        "posa": "sul_pavimento"
+      }
+    },
+    "🛐": {
+      "label": "Altare",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_altar",
+        "fill": "#dee2e6",
+        "altezza_m": 0.75
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": false,
+        "cover": "half",
+        "obscurement": "none",
+        "nameable": true,
+        "posa": "sul_pavimento"
+      }
+    },
+    "🏗": {
+      "label": "Gru o argano",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_crane",
+        "fill": "#e6ccb2",
+        "altezza_m": 3.0,
+        "tessera_cc0": false
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": false,
+        "cover": "half",
+        "obscurement": "none",
+        "destructible": true,
+        "nameable": true,
+        "posa": "sul_pavimento"
+      }
+    },
+    "🔺": {
+      "label": "Stalagmite (copertura parziale)",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_stalagmite",
+        "fill": "#b8ad98",
+        "altezza_m": 1.5
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": false,
+        "cover": "half",
+        "obscurement": "none",
+        "destructible": true,
+        "nameable": false,
+        "posa": "sul_pavimento"
+      }
+    },
+    "🔷": {
+      "label": "Cristallo gigante (copertura totale)",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_crystal_giant",
+        "fill": "#a9d6e5",
+        "altezza_m": 3.0
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": true,
+        "cover": "total",
+        "obscurement": "none",
+        "nameable": true,
+        "posa": "sul_pavimento"
       }
     }
   }

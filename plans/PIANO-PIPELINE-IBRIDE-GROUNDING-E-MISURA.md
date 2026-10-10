@@ -232,6 +232,9 @@ Chi scrive la spec la scrive a mano, quadretto per quadretto, e quando a scriver
 è un modello il risultato è la classe di difetti che il repo ha già catalogato:
 la riga `17` duplicata di `Portale-Forgia-L2` (D12 di `RICERCA-MESTIERE`), la
 mappa che dichiarava 40×40 con righe da 24 a 26 celle (D6 di `RIPRESA-PR`).
+*(2026-10-09: D12 si è chiusa contando le celle. Il secondo «17» era una
+didascalia di 3 celle scritta col numero davanti; la griglia di PF-4 è
+stata completata a 33 × 33, D30 di RESA-ASSET.)*
 
 ### 3.2 · Il validatore di grounding non c'è, e da quattro giorni i dati per farlo ci sono
 

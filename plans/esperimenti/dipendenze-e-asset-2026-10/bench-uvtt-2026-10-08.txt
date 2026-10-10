@@ -1,0 +1,2 @@
+oggi:    1674 oggetti line_of_sight, 1674 segmenti (muri nel VTT)
+shapely: 175 polilinee, 1674 segmenti (muri nel VTT) · 14 ms

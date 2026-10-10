@@ -1,34 +1,75 @@
-# Dependabot — PIANO-PRATICHE-DI-INGEGNERIA, lotto PI-3 (PRATICHE D2, sì del
-# DM il 2026-09-24).
+# Dependabot — PIANO-PRATICHE-DI-INGEGNERIA, lotti PI-3 (PRATICHE D2, sì del
+# DM il 2026-09-24) e PI-3b (DM, 2026-10-07).
 #
-# Due ecosistemi, una volta alla settimana:
+# Tre ecosistemi, tutti il lunedì mattina alla stessa ora:
 #
 # * `pip` guarda requirements.txt e requirements-dev.txt, tutti e due nella
 #   radice. Il primo è ciò che il DM esegue (ADR-0037, stdlib-only più tre
 #   eccezioni), il secondo è ciò che gira in CI.
-# * `github-actions` guarda .github/workflows/. È il primo lavoro che ci si
-#   aspetta da qui: checkout@v4, setup-python@v5 e upload-artifact@v4 girano
-#   su Node.js 20, deprecato, e GitHub li forza già su Node.js 24.
+# * `github-actions` guarda .github/workflows/.
+# * `docker` guarda l'immagine base di scripts/booklet-container/Dockerfile,
+#   fissata per numero di versione e digest: Dependabot aggiorna il digest
+#   quando Debian ripubblica l'immagine e propone il salto quando esce la
+#   versione maggiore successiva. Un nome in codice come `bookworm-slim` non lo
+#   sapeva seguire.
+#
+# 🔴 **Una PR per ecosistema, non una per pacchetto** (DM, 2026-10-07: «le PR
+# settimanali vanno bene se non spalmate»). I `groups` raccolgono tutti gli
+# aggiornamenti di versione della settimana in una PR sola. Gli aggiornamenti
+# di sicurezza hanno un gruppo a parte, così un avviso non aspetta il lunedì e
+# non resta bloccato dietro un aggiornamento di versione che rompe.
+# Il prezzo è noto: se un pacchetto del gruppo rompe, la PR è rossa per tutti.
+# Si risolve dal commento della PR con `@dependabot ignore <pacchetto>` o
+# correggendo il codice nella PR stessa.
+#
+# Ogni PR passa da due workflow: `ci.yml`, come tutte, e `dipendenze.yml`,
+# che fa l'audit e prova le versioni minime dichiarate e l'immagine Docker.
+# Se la PR è rossa e l'audit è verde, è il codice del repo a dover cambiare:
+# il workflow lo scrive nella PR.
 #
 # ⚠️ `converters/` NON è qui, per decisione (PRATICHE D9, 2026-09-24).
 # `converters/Html_to_markdown` e `converters/pdf-to-md-engine` hanno i loro
 # requirements.txt, e il grafo delle dipendenze di GitHub li legge già: gli
 # avvisi di sicurezza arrivano comunque. Le PR di aggiornamento settimanali no,
 # finché nessuno usa quei convertitori con regolarità.
-#
-# Ogni PR di Dependabot passa dalla CI come le altre. Il limite a tre PR
-# aperte per ecosistema è voluto: sono PR piccole (PRATICHE D1), e tre alla
-# volta si leggono.
 version: 2
 updates:
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
       interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "Europe/Rome"
     open-pull-requests-limit: 3
+    groups:
+      pip-sicurezza:
+        applies-to: security-updates
+        patterns: ["*"]
+      pip-settimanale:
+        applies-to: version-updates
+        patterns: ["*"]
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "Europe/Rome"
     open-pull-requests-limit: 3
+    groups:
+      azioni-settimanale:
+        patterns: ["*"]
+
+  - package-ecosystem: "docker"
+    directory: "/scripts/booklet-container"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "Europe/Rome"
+    open-pull-requests-limit: 3
+    groups:
+      docker-settimanale:
+        patterns: ["*"]

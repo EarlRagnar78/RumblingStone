@@ -205,6 +205,10 @@ def rami_accanto(files: "list[Path]") -> None:
     """
     try:
         import contenuti_nei_rami as cnr
+        if cnr.shallow():
+            print("    ○ rami non misurati: il clone e' shallow, e i numeri sarebbero "
+                  "falsi. `git fetch --unshallow origin`, poi `fase1.py` di nuovo")
+            return
         refs = cnr.riferimenti("origin/main")
         trovati = cnr.mai_arrivati("origin/main", refs) if refs else {}
         esito = cnr.confronta(trovati, cnr.leggi_registro())

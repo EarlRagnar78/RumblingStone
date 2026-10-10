@@ -19,7 +19,7 @@ Basata sulla struttura della Battle of Brindol di Red Hand of Doom[web:86][web:1
   - Ghostlord (non morti pro/contro).  
   - Sabotaggio Drow & Missioni Brevi (logistica e ondate speciali ridotte).  
   - Torneo di Tordek (300 mercenari nani in arrivo).  
-  - Rituali di Hellas/druidi‑orsi. [web:86][web:109][web:115]
+  - Rituali di Hella/druidi‑orsi. [web:86][web:109][web:115]
 
 ---
 
@@ -212,7 +212,7 @@ Questo è il “terreno epico” che giustifica perché i PG non debbano affront
 ## 8. Rinforzi alleati (condizionati dalle quest)
 
 - **Druidi‑Orsi (circolo mutaforma)**:  
-  - Se Hellas ha completato il suo rituale, un piccolo circolo di druidi mutaforma (alla Beorn/Hobbit) appare in Fase 1–2 come cavalleria d’assalto, demolendo giganti e bestie da guerra.  
+  - Se Hella ha completato il suo rituale, un piccolo circolo di druidi mutaforma (alla Beorn/Hobbit) appare in Fase 1–2 come cavalleria d’assalto, demolendo giganti e bestie da guerra.  
 
 - **300 Mercenari Nani** (Dauth, torneo vinto):  
   - Se Tordek ha vinto il torneo e spedito il segnale, questi arrivano come fanteria pesante, stabilizzando i varchi nelle mura e proteggendo quartieri civili.  

@@ -1,0 +1,3 @@
+corpus: 44 mappe, 45749 celle percorribili, 168806 archi
+V7 strozzature e anelli · in casa 209 ms · networkx 461 ms · risultati identici su 44/44 mappe · 370 strozzature in tutto
+M1+M2 su 38 mappe · in casa 105 ms · scipy 20 ms · differenza massima 0.000000

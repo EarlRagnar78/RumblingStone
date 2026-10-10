@@ -31,4 +31,4 @@
 | pietre preziose | la metà. Una pietra non ferma un ogre |
 | monete forestiere | **a peso**. Una su dieci al pesatore |
 
-**Niente di drago. Niente di morto. Niente con la mano rossa.**
+**Niente di drago. Niente di morto. Niente d'orchi.**

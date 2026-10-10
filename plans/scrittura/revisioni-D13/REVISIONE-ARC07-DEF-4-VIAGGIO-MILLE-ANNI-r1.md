@@ -29,9 +29,12 @@ da seguire a voce o più monotona. Il giudizio resta di chi legge ad alta voce.
 
 ## Le modifiche
 
+> ✅ Approvata dal DM il 2026-10-07 e applicata **a mano** nel master: `applica`
+> avrebbe ricostruito il file dal testo di questa revisione, più vecchio.
+
 | ok | # | riga | prima | dopo | norma | auto |
 |---|---:|---:|---|---|---|:---:|
-| [ ] | 1 | 1260 | così > forte da sembrare vicino. | forte > come se venisse dalla tenda accanto. | sembra/pare | ✓ |
+| [x] | 1 | 1260 | così > forte da sembrare vicino. | forte > come se venisse dalla tenda accanto. | sembra/pare | ✓ |
 
 ## Il testo con le modifiche (CriticMarkup)
 

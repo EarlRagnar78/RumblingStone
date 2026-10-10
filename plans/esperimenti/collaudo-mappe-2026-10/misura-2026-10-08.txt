@@ -1,0 +1,17 @@
+griglie 38 in 18 file · >=12x12: 32 · celle 58499 · 1.4 s
+simboli ignoti: 82 celle in 3 griglie
+legenda locale che ridefinisce un simbolo universale: 57 voci in 10 griglie; contraddicono la funzione: 7
+    07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md · STANZA DELLA CORONA — 15 m × 19,5 m (10  · ⬛ = pavimento (ora pulito)
+    07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md · STANZA DELLA CORONA — 15 m × 19,5 m (10  · 🌀 = portale drow SIGILLATO (dietro il muro; 
+    07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md · IL CUORE DELLA MONTAGNA — caverna sacra  · ⬛ = pavimento di caverna
+    07_il Portale Della Forgia Eterna/Mappe/ARC07-MAPPE-DEFINITIVO.md · CAMERA CENTRALE — sfera Ø 60 m · ZERO-G  · 🌫 = ZERO-G DILEMMA: sull'Altare = Earth Mast
+    07_il Portale Della Forgia Eterna/Mappe/ARC07-MAPPE-DEFINITIVO.md · STANZA DELLA CORONA — 15 m × 19,5 m (10  · ⬛ = pavimento (ora pulito)
+    07_il Portale Della Forgia Eterna/Mappe/ARC07-MAPPE-DEFINITIVO.md · STANZA DELLA CORONA — 15 m × 19,5 m (10  · 🌀 = portale drow SIGILLATO (dietro il muro; 
+    07_il Portale Della Forgia Eterna/Mappe/ARC07-MAPPE-DEFINITIVO.md · IL CUORE DELLA MONTAGNA — caverna sacra  · ⬛ = pavimento di caverna
+porte (celle): 97 · a cavallo di un muro o del bordo 34 · nessun lato percorribile 28 · sospesa, nessun muro accanto 20 · muro accanto, non a cavallo 15
+griglie con >1 componente percorribile (>=4 celle): 9 · con sacche <4 celle: 11
+griglie con unita': 32 · unita' in componenti separate: 11
+header dimensioni dichiarato: 19 · @north: 20
+>=12x12: M1 mediana 0.42 (sotto 0,60: 19) · M2 mediana 0.52 (sopra 0,20: 22) · Grande 2x2 sotto l'80% del percorribile: 2
+legenda universale, simboli per concetto: porta 1 · porta segreta 0 · saracinesca o grata 0 · sbarre o gabbia 0 · botola 0 · scala 1 · salire o scendere 2 · finestra o feritoia 0
+nei file con griglie: 17 menzioni di grate, gabbie, prigioni, botole o porte segrete in 4 file; simboli fuori legenda nelle griglie: 11 tipi, 350 celle

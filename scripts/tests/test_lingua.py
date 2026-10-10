@@ -125,5 +125,33 @@ class TestFalsiPositivi(unittest.TestCase):
         self.assertEqual(errori, [])
 
 
+class TestApostrofoAlPostoDellAccento(unittest.TestCase):
+    """ADR-0079: una regex sola, ed è un avviso, mai un errore."""
+
+    def _avvisi(self, riga: str) -> list[str]:
+        e, a = _testo(riga + "\n")
+        self.assertEqual(e, [])
+        return [x for x in a if "apostrofo al posto" in x]
+
+    def test_le_forme_sbagliate_sono_un_avviso(self):
+        for riga in ("Il drago e' ferito.", "Non lo so perche' e partito.",
+                     "Era gia' tardi.", "Ne vale di piu' la pena.", "Cosi' fu.",
+                     "Si, ma Perche' proprio lui?"):
+            self.assertEqual(len(self._avvisi(riga)), 1, riga)
+
+    def test_le_forme_corrette_tacciono(self):
+        for riga in ("Dammi un po' di tempo.",        # po' è corretto
+                     "Da' la scena alla giocatrice.",  # da' imperativo di dare
+                     "L'ascia è scritta in `e'` nel codice.",  # solo il codice
+                     "Disse: 'Sara' la fine'.",        # apostrofo di citazione
+                     "Il re d'e'ra", ):                # lettera attaccata
+            self.assertEqual(self._avvisi(riga), [], riga)
+
+    def test_il_maiuscolo_a_inizio_frase_ha_la_sua_regola(self):
+        _, a = _testo("E' Terros prima della ricalibrazione.\n")
+        self.assertEqual(len([x for x in a if "apostrofo al posto" in x]), 0)
+        self.assertEqual(len([x for x in a if "maiuscola accentata" in x]), 1)
+
+
 if __name__ == "__main__":
     unittest.main()

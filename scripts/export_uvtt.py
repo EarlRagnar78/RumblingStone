@@ -44,7 +44,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import render_map_svg as rms  # noqa: E402
-from dmcore import legenda  # noqa: E402
+from dmcore import chiusure, legenda  # noqa: E402
 
 # I muri, le porte e le luci NON si dichiarano qui.
 #
@@ -139,17 +139,31 @@ def extract_walls(matrix) -> list[list[dict]]:
     return segments
 
 
-def extract_portals(matrix) -> list[dict]:
+def extract_portals(matrix, annotations=None, row_nums=None) -> list[dict]:
+    """One portal per door cell, a segment along the wall it sits in.
+
+    The axis comes from ``dmcore.chiusure`` (ADR-0083), the same answer the
+    renderer and ``collaudo_mappe`` use; an ``@verso`` directive wins. The old
+    rule here («wall above *or* below» = north-south wall) turned 13 portals of
+    96 the wrong way in the 2026-10-08 corpus.
+    """
     portals = []
     h = len(matrix)
     w = len(matrix[0]) if h else 0
+    row_nums = row_nums or list(range(1, h + 1))
+    versi = chiusure.versi_dichiarati(annotations or [])
+
+    def at(x, y):
+        if 0 <= y < h and 0 <= x < w:
+            return matrix[y][x] or None
+        return None
+
     for y in range(h):
         for x in range(w):
             if matrix[y][x] not in DOOR_SYMS:
                 continue
-            # orient the door across the wall run it sits in
-            vertical_wall = _is_wall(matrix, x, y - 1) or _is_wall(matrix, x, y + 1)
-            if vertical_wall:
+            asse = chiusure.asse_da_disegnare(at, x, y, rms.col_label(x), row_nums[y], versi)
+            if asse == chiusure.NS:
                 bounds = [{"x": x + 0.5, "y": y}, {"x": x + 0.5, "y": y + 1}]
             else:
                 bounds = [{"x": x, "y": y + 0.5}, {"x": x + 1, "y": y + 0.5}]
@@ -209,7 +223,7 @@ def build_uvtt(gmap: dict, ppg: int, image_b64: str = "",
         },
         "line_of_sight": extract_walls(matrix),
         "objects_line_of_sight": [],
-        "portals": extract_portals(matrix),
+        "portals": extract_portals(matrix, gmap.get("annotations"), sorted(gmap["rows"])),
         "lights": extract_lights(matrix, explicit_lights),
         "environment": {"baked_lighting": False, "ambient_light": "ffffff"},
         "image": image_b64,

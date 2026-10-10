@@ -98,6 +98,63 @@
       "idempotent": true
     },
     {
+      "id": "blender/rendi_oggetti",
+      "path": "scripts/blender/rendi_oggetti.py",
+      "category": "B-maps-pipeline",
+      "language": "python",
+      "invocation": "blender -b --factory-startup -noaudio -P scripts/blender/rendi_oggetti.py -- <lavoro.json>",
+      "summary": "Lo script che gira DENTRO Blender (o con il modulo bpy): importa ogni modello 3D CC0, lo centra nella cella con l'asse lungo est-ovest e la stessa impronta, e lo rende dall'alto con camera ortografica, sole da nord-ovest e ombra raccolta su un piano trasparente. Non si lancia a mano: il driver è build_oggetti_cc0.py.",
+      "use_case": "«Che cosa gira dentro Blender quando rendo gli oggetti di scena del tema texture, e dove stanno i lock di luce e scala?»",
+      "stability": "local-only",
+      "stdlib_only": true,
+      "external_bins": [
+        "blender"
+      ],
+      "args": [
+        {
+          "name": "lavoro",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il lavoro scritto dal driver: i lock e, per ogni tessera, il modello e il PNG d'uscita."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "<lavoro>.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<uscita dichiarata nel lavoro>.png",
+          "kind": "png",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "eseguito fuori da Blender, lavoro illeggibile, modello che non si importa o render fallito"
+      },
+      "determinism": {
+        "deterministic": false,
+        "seed_flag": null,
+        "notes": "Cycles con seme fisso; il render dipende dalla versione di Blender, e l'indice delle tessere registra l'impronta di ciò che è uscito."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true
+    },
+    {
       "id": "build-skills",
       "path": "scripts/build-skills.sh",
       "category": "F-skill-pipeline",
@@ -461,6 +518,142 @@
       ]
     },
     {
+      "id": "build_font_mappe",
+      "path": "scripts/build_font_mappe.py",
+      "category": "B-maps-pipeline",
+      "language": "python",
+      "invocation": "python3 scripts/build_font_mappe.py",
+      "summary": "Ricava dai font OFL dei volumi (scripts/fonts/) i due sottoinsiemi woff2 a peso fisso che il renderer incorpora in ogni mappa: EB Garamond regolare per il testo, Cinzel grassetto per titoli ed etichette (ADR-0085). Scrive anche copertura.json, con i caratteri e le loro larghezze, che il renderer usa per stringere i titoli che non entrano. fonttools serve solo qui; il renderer resta in libreria standard.",
+      "use_case": "«Le mappe hanno la faccia dei volumi su ogni macchina? Ho aggiunto un carattere che il sottoinsieme non ha.»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_bins": [],
+      "external_deps": [
+        "fonttools"
+      ],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Non scrive: esce 1 se manca un woff2 o non combacia con copertura.json."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "scripts/fonts/",
+          "kind": "directory",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "scripts/fonts/mappe/",
+          "kind": "directory",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "sottoinsiemi mancanti o diversi (--check)",
+        "2": "fonttools mancante"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "timestamp dei font fissati: due giri danno gli stessi byte"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false,
+        "notes": ""
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/build_font_mappe.py --check",
+      "tests": [
+        "scripts/tests/test_resa_mappe.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0085-la-resa-delle-mappe-e-uguale-su-ogni-macchina.md",
+        "scripts/fonts/README.md"
+      ]
+    },
+    {
+      "id": "build_emoji_noto",
+      "path": "scripts/build_emoji_noto.py",
+      "category": "B-maps-pipeline",
+      "language": "python",
+      "invocation": "python3 scripts/build_emoji_noto.py",
+      "summary": "Il ripiego per le emoji locali delle mappe (ADR-0085): per ogni emoji che una griglia usa e la legenda universale non conosce, scarica l'SVG di Noto Emoji (Apache-2.0, commit fissato), rinomina gli id interni e lo scrive in scripts/emoji-noto/, con licenza e crediti accanto. Il renderer lo incorpora al posto del font di sistema. --check non usa la rete.",
+      "use_case": "«Una mappa dichiara un simbolo suo: si vede uguale su ogni macchina?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Non scarica: esce 1 se un'emoji locale del corpus non ha il suo SVG."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "**/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "scripts/emoji-noto/",
+          "kind": "directory",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "emoji locale senza SVG (--check)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "commit di Noto fissato"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": true,
+        "notes": "solo senza --check: raw.githubusercontent.com"
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/build_emoji_noto.py --check",
+      "tests": [
+        "scripts/tests/test_resa_mappe.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0085-la-resa-delle-mappe-e-uguale-su-ogni-macchina.md",
+        "scripts/emoji-noto/CREDITS.md"
+      ]
+    },
+    {
       "id": "build_legend",
       "path": "scripts/build_legend.py",
       "category": "B-maps-pipeline",
@@ -529,6 +722,112 @@
       ],
       "docs": [
         "plans/adr/ADR-0048-legenda-funzionale-fonte-unica.md"
+      ]
+    },
+    {
+      "id": "collaudo_mappe",
+      "path": "scripts/collaudo_mappe.py",
+      "category": "B-maps-pipeline",
+      "language": "python",
+      "invocation": "python3 scripts/collaudo_mappe.py",
+      "summary": "Collauda le griglie-emoji come grafo (ADR-0082): simboli ignoti, legende locali che rovesciano un universale, nord, porte nel muro, scale con la loro gemella, porte segrete fuori dalla vista dei giocatori, unita' e obiettivi raggiungibili con le regole di movimento SRD, ingombro dei Grandi, M1, M2 e M4 come avvisi; l'asse di ogni porta, grata o fila di sbarre (ADR-0083) e le direttive @verso. In sola lettura.",
+      "use_case": "«Questa mappa si gioca? La porta sta nel muro, la scala porta da qualche parte, l'ogre arriva ai PG?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_deps": [
+        "tcod",
+        "scipy"
+      ],
+      "external_bins": [],
+      "args": [
+        {
+          "name": "files",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Master markdown da collaudare (default: il corpus della campagna)."
+        },
+        {
+          "name": "--json",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scrive il rapporto in JSON (scripts/schemas/map_findings.schema.json)."
+        },
+        {
+          "name": "--strict",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se resta un rilievo E non derogato."
+        },
+        {
+          "name": "--solo-errori",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Nel testo mostra solo i rilievi E."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "**/*.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "scripts/legend.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<--json>",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": "scripts/schemas/map_findings.schema.json"
+        }
+      ],
+      "exit_codes": {
+        "0": "rapporto prodotto, anche con rilievi",
+        "1": "rilievi E non derogati con --strict",
+        "2": "errore d'uso (file non trovato)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Stesso input, stesso rapporto: nessun campionamento, ordine delle celle fisso."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": "scripts/schemas/map_findings.schema.json",
+      "ci_smoke": "python scripts/collaudo_mappe.py --help",
+      "tests": [
+        "scripts/tests/test_collaudo_mappe.py",
+        "scripts/tests/test_chiusure.py",
+        "scripts/tests/test_collaudo_m4.py"
+      ],
+      "docs": [
+        "scripts/README-automation.md",
+        "skills/rumblingstone-mapmaking/SKILL.md",
+        "plans/PIANO-COLLAUDO-E-GENERAZIONE-MAPPE.md"
       ]
     },
     {
@@ -757,7 +1056,7 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/check_plans_discipline.py",
-      "summary": "Gate ADR-0009: modifiche strutturali (scripts/, skills/, converters/, .github/, plans/adr/) senza riga in plans/CHANGELOG.md -> exit 1.",
+      "summary": "Gate ADR-0009: modifiche strutturali (scripts/, skills/, converters/, .github/, plans/adr/) senza riga in plans/CHANGELOG.md -> exit 1. Passa se i commit strutturali sono tutti di Dependabot (PI-3b).",
       "use_case": "«Ho toccato scripts/ o un ADR: ho lasciato la riga di tracciatura che la regola d'oro chiede?»",
       "stability": "stable",
       "stdlib_only": true,
@@ -2192,7 +2491,9 @@
       "consumes_schema": null,
       "produces_schema": null,
       "ci_smoke": "python scripts/export_uvtt.py --help",
-      "tests": [],
+      "tests": [
+        "scripts/tests/test_chiusure.py"
+      ],
       "docs": [
         "scripts/README-automation.md"
       ]
@@ -3141,6 +3442,61 @@
       ]
     },
     {
+      "id": "avvia_languagetool",
+      "path": "scripts/avvia_languagetool.sh",
+      "category": "G-orchestration-governance",
+      "language": "bash",
+      "invocation": "./scripts/avvia_languagetool.sh [PORTA]",
+      "summary": "Avvia un server LanguageTool 6.8 locale (solo 127.0.0.1) per il secondo lettore di `ciclo_prosa.py segnala --languagetool`; scarica i jar da Maven Central in ~/.cache la prima volta.",
+      "use_case": "«Voglio una verifica in più sulla grammatica di un master, senza mandare il testo a un servizio esterno: come avvio il server?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_bins": [
+        "bash",
+        "java",
+        "mvn"
+      ],
+      "args": [
+        {
+          "name": "PORTA",
+          "type": "int",
+          "required": false,
+          "default": 8081,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Porta locale del server (default 8081)."
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "Java o Maven mancante"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Avvia un servizio; lo stesso testo dà gli stessi rilievi (misurato: due giri identici)."
+      },
+      "side_effects": {
+        "git_commit": false,
+        "network": true,
+        "writes_canon": false,
+        "notes": "Rete solo la prima volta (Maven Central); poi il server ascolta solo su 127.0.0.1."
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": null,
+      "tests": [
+        "scripts/tests/test_ciclo_prosa.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0079-un-secondo-rilevatore-per-la-prosa.md"
+      ],
+      "external_deps": []
+    },
+    {
       "id": "mcp_server",
       "path": "scripts/mcp_server.py",
       "category": "G-orchestration-governance",
@@ -3981,7 +4337,7 @@
         {
           "name": "files",
           "type": "path",
-          "required": true,
+          "required": false,
           "default": null,
           "choices": null,
           "repeatable": true,
@@ -4022,6 +4378,27 @@
           "choices": null,
           "repeatable": false,
           "desc": "Fallisce su anomalie non fatali."
+        },
+        {
+          "name": "--tema",
+          "type": "choice",
+          "required": false,
+          "default": "pergamena",
+          "choices": [
+            "pergamena",
+            "texture"
+          ],
+          "repeatable": false,
+          "desc": "pergamena (default, in rendered/) o texture: terreni con le texture CC0 di scripts/texture-cc0/, in rendered-texture/"
+        },
+        {
+          "name": "--tutti-i-master",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Ogni master che ha già un SVG in rendered/: per rifare un tema intero."
         }
       ],
       "inputs": [
@@ -4035,6 +4412,13 @@
       "outputs": [
         {
           "path": "**/rendered/*.svg",
+          "kind": "svg",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        },
+        {
+          "path": "**/rendered-texture/*.svg",
           "kind": "svg",
           "overwrites": true,
           "generated_header": true,
@@ -4059,7 +4443,10 @@
       "consumes_schema": null,
       "produces_schema": null,
       "ci_smoke": "python scripts/render_map_svg.py --help",
-      "tests": [],
+      "tests": [
+        "scripts/tests/test_chiusure.py",
+        "scripts/tests/test_resa_mappe.py"
+      ],
       "docs": [
         "scripts/README-automation.md",
         "skills/rumblingstone-mapmaking/SKILL.md"
@@ -5838,6 +6225,12 @@
           "kind": "svg",
           "required": true,
           "schema": null
+        },
+        {
+          "path": "**/rendered-texture/*.svg",
+          "kind": "svg",
+          "required": false,
+          "schema": null
         }
       ],
       "outputs": [
@@ -6204,7 +6597,7 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/validate_prosa.py",
-      "summary": "Misura la norma di italiano-nativo.md: calchi a firma inequivocabile (realizzi che, assumi che, eventualmente, nominalizzazioni) sempre; possessivo sulle parti del corpo e progressivo SOLO nel read-aloud (dipendono dal registro); tic dell'IA a densita' (antitesi 'non X: e Y' max 1 per documento, maiuscole di portento max 1, trattini lunghi); e la forma inglese di un nome che il glossario vuole tradotto. Non bloccante finche' il rumore non e' a zero; --strict alza a errore. Con --documenti misura guide, ADR, piani e skill invece del contenuto di gioco: sono due prose con due norme (ADR-0035). Con --prima-dopo confronta due versioni dello stesso testo e dice se la riscrittura ha migliorato: e' l'unica misura di qualita' che su questo corpus regge (ADR-0036); sui file nominati stampa sotto anche il profilo delle lunghezze delle frasi, in ordine di lettura con media e scarto, che e' informazione per chi legge e non entra nel verdetto.",
+      "summary": "Misura la norma di italiano-nativo.md: calchi a firma inequivocabile (realizzi che, assumi che, eventualmente, nominalizzazioni) sempre; possessivo sulle parti del corpo e progressivo SOLO nel read-aloud (dipendono dal registro); tic dell'IA a densita' (antitesi 'non X: e Y' max 1 per documento, maiuscole di portento max 1, trattini lunghi); la forma inglese di un nome che il glossario vuole tradotto e, dal 2026-10-03, le grafie che il foglio di stile (glossario §8) ha già escluso. Non bloccante finche' il rumore non e' a zero; --strict alza a errore. Con --documenti misura guide, ADR, piani e skill invece del contenuto di gioco: sono due prose con due norme (ADR-0035). Con --prima-dopo confronta due versioni dello stesso testo e dice se la riscrittura ha migliorato: e' l'unica misura di qualita' che su questo corpus regge (ADR-0036); sui file nominati stampa sotto anche il profilo delle lunghezze delle frasi, in ordine di lettura con media e scarto, che e' informazione per chi legge e non entra nel verdetto.",
       "use_case": "«Questo testo suona scritto da una macchina, e la riscrittura l'ha migliorato o peggiorato?»",
       "stability": "stable",
       "stdlib_only": true,
@@ -6254,6 +6647,24 @@
           "choices": null,
           "repeatable": false,
           "desc": "La revisione git con cui confrontare (default: HEAD)."
+        },
+        {
+          "name": "--foglio",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il foglio di stile (GLOSSARIO-E-LOCALIZZAZIONE.md §8) contro il repo di gioco, archivi esclusi: per ogni grafia esclusa le occorrenze e i file, i refusi aperti (con --strict, exit 1 se ce ne sono) e le scelte del DM ancora in sospeso. ADR-0078."
+        },
+        {
+          "name": "--proponi-grafie",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Coppie di nomi a una sola lettera di distanza, con almeno un nome del registro dei 322, da portare al foglio di stile. Sono proposte e non rilievi: decide un umano, dopo aver guardato il contesto. Non vede le differenze sull'ultima lettera."
         }
       ],
       "inputs": [
@@ -8145,7 +8556,7 @@
           "default": null,
           "choices": null,
           "repeatable": false,
-          "desc": "URL di un server LanguageTool: aggiunge le segnalazioni grammaticali (facoltativo)."
+          "desc": "Il secondo lettore (ADR-0079): URL di un server LanguageTool LOCALE, avviato da scripts/avvia_languagetool.sh. Tre regole, solo localhost, facoltativo e fuori dalla CI."
         },
         {
           "name": "--auto",
@@ -8268,6 +8679,877 @@
       ],
       "docs": [
         "plans/adr/ADR-0077-revisione-a-due-giri.md"
+      ]
+    },
+    {
+      "id": "asset_2mtt",
+      "path": "scripts/asset_2mtt.py",
+      "category": "B-maps-pipeline",
+      "language": "python",
+      "invocation": "python3 scripts/asset_2mtt.py",
+      "summary": "Installa i pacchetti di 2-Minute Tabletop che il DM ha scaricato, per il tema dipinto delle mappe (R4): estrae solo immagini e licenze in asset-esterni/ (ignorata da git), rifiuta percorsi pericolosi e link, registra categoria e impronte. `controlla` boccia la tabella simbolo → file che usa un pacchetto premium o un file assente.",
+      "use_case": "«Ho scaricato il pacchetto dei dungeon: come lo metto a disposizione delle mappe senza committarlo e senza uscire dalla licenza?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "azione",
+          "type": "choice",
+          "required": true,
+          "default": null,
+          "choices": [
+            "installa",
+            "stato",
+            "controlla"
+          ],
+          "repeatable": false,
+          "desc": "installa <zip> --categoria base|premium [--nome] · stato · controlla"
+        },
+        {
+          "name": "--categoria",
+          "type": "choice",
+          "required": false,
+          "default": null,
+          "choices": [
+            "base",
+            "premium"
+          ],
+          "repeatable": false,
+          "desc": "base = offerta libera, CC BY-NC · premium = a pagamento, solo al tavolo"
+        },
+        {
+          "name": "--nome",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Nome del pacchetto (default: dal nome dello zip)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "*.zip (immagini del pacchetto)",
+          "kind": "image",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "scripts/asset-2mtt.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "asset-esterni/2mtt/",
+          "kind": "directory",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "zip rifiutato o tabella che viola licenza o pacchetti",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false,
+        "notes": "scrive solo in asset-esterni/, ignorata da git"
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/asset_2mtt.py controlla",
+      "tests": [
+        "scripts/tests/test_asset_2mtt.py"
+      ],
+      "docs": [
+        "docs/guides/GUIDA-MAPPE.md",
+        "plans/PIANO-RESA-E-ASSET-DELLE-MAPPE.md"
+      ]
+    },
+    {
+      "id": "watabou_citta",
+      "path": "scripts/watabou_citta.py",
+      "category": "B-maps-pipeline",
+      "language": "python",
+      "invocation": "python3 scripts/watabou_citta.py",
+      "summary": "Da una scheda *.watabou.json committata (seme e parametri) ricava sempre lo stesso URL del Medieval Fantasy City Generator di Watabou, con export=svg|png|json se richiesto: la pianta di una città si rifà identica e il repo sa da dove viene (R5).",
+      "use_case": "«Mi serve la pianta di Dauth assediata: come la rigenero uguale fra un mese?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "scheda",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La scheda *.watabou.json."
+        },
+        {
+          "name": "--export",
+          "type": "choice",
+          "required": false,
+          "default": null,
+          "choices": [
+            "svg",
+            "png",
+            "json"
+          ],
+          "repeatable": false,
+          "desc": "Aggiunge export=…: il generatore esporta appena ha finito."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "*.watabou.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "stdout",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "scheda non valida"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "l'URL dipende solo dalla scheda"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/watabou_citta.py \"09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Mappe/dauth-assedio/dauth-pianta.watabou.json\"",
+      "tests": [
+        "scripts/tests/test_watabou_citta.py"
+      ],
+      "docs": [
+        "docs/guides/GUIDA-MAPPE.md",
+        "plans/PIANO-RESA-E-ASSET-DELLE-MAPPE.md"
+      ]
+    },
+    {
+      "id": "build_texture_cc0",
+      "path": "scripts/build_texture_cc0.py",
+      "category": "B-maps-pipeline",
+      "language": "python",
+      "invocation": "python3 scripts/build_texture_cc0.py",
+      "summary": "Le texture CC0 dei terreni per il tema texture delle mappe (D13-D15 di RESA-ASSET): scarica da Poly Haven la diffusa 1k di 11 texture fissate, ne controlla l'MD5 contro l'API, la riduce a una tessera webp da 256 px e scrive scripts/texture-cc0/ con l'indice. --check non usa la rete.",
+      "use_case": "«Come do alle mappe i materiali veri, pietra, terra, roccia, senza problemi di licenza se un giorno pubblico?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_deps": [
+        "Pillow"
+      ],
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Niente rete: le tessere combaciano con l'indice; esce 0 se le texture non sono ancora scaricate."
+        },
+        {
+          "name": "--da-cartella",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Costruisce dai <id>_diff_1k.jpg già scaricati in questa cartella."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "https://api.polyhaven.com/files/<id>",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "scripts/texture-cc0/",
+          "kind": "directory",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok (anche: texture non ancora scaricate, con --check)",
+        "1": "MD5 o impronta che non combacia, tessera mancante",
+        "2": "Pillow assente"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "id e risoluzione fissati; la tessera dipende dalla versione di Pillow, l'indice ne registra l'impronta"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": true,
+        "notes": "solo senza --check e senza --da-cartella: api.polyhaven.com, dl.polyhaven.org"
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/build_texture_cc0.py --check",
+      "tests": [
+        "scripts/tests/test_texture_cc0.py"
+      ],
+      "docs": [
+        "docs/guides/GUIDA-MAPPE.md",
+        "plans/PIANO-RESA-E-ASSET-DELLE-MAPPE.md"
+      ]
+    },
+    {
+      "id": "build_oggetti_cc0",
+      "path": "scripts/build_oggetti_cc0.py",
+      "category": "B-maps-pipeline",
+      "language": "python",
+      "invocation": "python3 scripts/build_oggetti_cc0.py",
+      "summary": "Gli oggetti di scena del tema texture delle mappe (R4-ter, D17 di RESA-ASSET): scarica i glTF 1k dei modelli Poly Haven fissati, ne verifica l'MD5 contro l'API, estrae i modelli Quaternius dallo zip Standard con impronta e licenza CC0 verificate, li rende dall'alto con Blender con luce, scala e camera fisse e scrive in scripts/oggetti-cc0/ le tessere webp e l'indice. --check non usa la rete.",
+      "use_case": "«Come metto sulle mappe rocce, statue, letti e barili veri al posto dei glifi, senza problemi di licenza e con la stessa luce per tutti?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_deps": [
+        "Pillow"
+      ],
+      "external_bins": [
+        "blender"
+      ],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Niente rete: le tessere combaciano con l'indice, sono CC0 e vengono da modelli verificati; esce 0 se le tessere non sono ancora fatte."
+        },
+        {
+          "name": "--prova",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Solo i modelli del giro di prova (PILOTA), per il confronto con il DM."
+        },
+        {
+          "name": "--scarica-solo",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scarica e verifica i modelli di Poly Haven in asset-esterni/oggetti-cc0/, senza Blender."
+        },
+        {
+          "name": "--rendi",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Rende dai modelli già scaricati, senza rete, dopo averne riverificato l'impronta."
+        },
+        {
+          "name": "--quaternius",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Lo zip Fantasy Props MegaKit [Standard]: impronta fissata, licenza CC0 letta, modelli della tabella estratti."
+        },
+        {
+          "name": "--elenca-quaternius",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Impronta, file di licenza e modelli glTF dello zip, per scrivere la tabella sui nomi veri."
+        },
+        {
+          "name": "--misura-stile",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Luminanza, contrasto, saturazione e dettaglio di ogni tessera, con le medie per fonte."
+        },
+        {
+          "name": "--blender",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il comando di Blender, se non è nel PATH (senza: il binario, poi il modulo bpy)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "https://api.polyhaven.com/files/<id>",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "Fantasy Props MegaKit[Standard].zip (scaricato dal DM da itch.io)",
+          "kind": "text",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "asset-esterni/oggetti-cc0/",
+          "kind": "directory",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "scripts/oggetti-cc0/",
+          "kind": "directory",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok (anche: tessere non ancora fatte, con --check)",
+        "1": "MD5 o impronta che non combacia, licenza non CC0, tessera mancante o non verificata, render fallito",
+        "2": "Pillow assente, o Blender assente quando serve rendere"
+      },
+      "determinism": {
+        "deterministic": false,
+        "seed_flag": null,
+        "notes": "id, lock e risoluzione fissati; la tessera dipende dalla versione di Blender e di Pillow, l'indice ne registra l'impronta e --check la verifica"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": true,
+        "notes": "solo senza --check, --rendi, --elenca-quaternius e --misura-stile: api.polyhaven.com, dl.polyhaven.org"
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/build_oggetti_cc0.py --check",
+      "tests": [
+        "scripts/tests/test_oggetti_cc0.py"
+      ],
+      "docs": [
+        "docs/guides/GUIDA-MAPPE.md",
+        "plans/PIANO-RESA-E-ASSET-DELLE-MAPPE.md"
+      ]
+    },
+    {
+      "id": "misura_resa",
+      "path": "scripts/misura_resa.py",
+      "category": "B-maps-pipeline",
+      "language": "python",
+      "invocation": "python3 scripts/misura_resa.py --check",
+      "summary": "La resa delle mappe misurata simbolo per simbolo e terreno per terreno (R8 di RESA-ASSET, D23-D26, ADR-0086): ogni simbolo-oggetto posato su un banco di prova reso dal renderer vero, nei due temi e su due terreni, rasterizzato con Chrome; contrasto del contorno (WCAG 1.4.11), bordo, SSIM col vicino, ΔE dalla tavolozza; per i terreni ΔE dal vicino, griglia, segnalino. Confronta i candidati coi glifi, prepara la pagina di scelta del DM (oggetti fra glifo e più fonti di tessere, terreni fra le texture; alla cieca o aperta, con «nessuna va bene» e «non vedo differenze», senza opzioni identiche) e ne registra i voti rivelando le fonti, tara alone e velature del tema texture; --check boccia ogni misura peggiorata oltre il 5% rispetto a scripts/scheda-resa.json; affianca mostra una mappa com'era a una revisione git e com'è sul disco, con la quota di pixel cambiati.",
+      "use_case": "«Questa tessera, questa texture, questa modifica al renderer migliora davvero la mappa o la peggiora, e di quanto?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_deps": [
+        "scikit-image",
+        "scipy",
+        "Pillow"
+      ],
+      "external_bins": [
+        "chromium"
+      ],
+      "args": [
+        {
+          "name": "azione",
+          "type": "choice",
+          "required": false,
+          "default": null,
+          "choices": [
+            "glifi",
+            "candidati",
+            "terreni",
+            "coppie",
+            "voti",
+            "appresa",
+            "tara",
+            "affianca",
+            "velature",
+            "terreni-scelta"
+          ],
+          "repeatable": false,
+          "desc": "glifi · candidati DIR · terreni · coppie DIR [--anche DIR2] · terreni-scelta DIR · voti voti.json · appresa B.json · tara · affianca MAPPA.svg -o out.png · velature MASTER.md -o out.png"
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Ricalcola e confronta con la scheda committata: esce 1 se una misura peggiora oltre il 5%."
+        },
+        {
+          "name": "--aggiorna",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Riscrive scripts/scheda-resa.json con le misure di oggi."
+        },
+        {
+          "name": "-o",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Dove scrivere il JSON, la pagina delle coppie o la taratura."
+        },
+        {
+          "name": "--seme",
+          "type": "int",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il seme dell'ordine delle coppie."
+        },
+        {
+          "name": "--celle",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scrive anche le celle in PNG, per misura_resa_appresa.py."
+        },
+        {
+          "name": "--rispetto-a",
+          "type": "str",
+          "required": false,
+          "default": "HEAD",
+          "choices": null,
+          "repeatable": false,
+          "desc": "affianca: la revisione git con cui confrontare la mappa."
+        },
+        {
+          "name": "--ritaglio",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "affianca: solo il rettangolo X0,Y0,X1,Y1 in pixel dell'SVG."
+        },
+        {
+          "name": "--registra",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "candidati: scrive i verdetti nella scheda, dove li legge build_oggetti_cc0 --check."
+        },
+        {
+          "name": "--anche",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "coppie: un'altra fonte di tessere da confrontare (ComfyUI accanto a CC0)."
+        },
+        {
+          "name": "--aperta",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "coppie, terreni-scelta: sotto ogni immagine la fonte e le misure, invece che alla cieca."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "scripts/scheda-resa.json",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "scripts/scheda-resa.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "scripts/texture-cc0/taratura.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok (anche: nessun browser, o scheda non ancora scritta, con --check)",
+        "1": "una misura peggiorata oltre la tolleranza",
+        "2": "numpy o scikit-image assenti, o uso errato"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": "--seme",
+        "notes": "il renderer è deterministico; la rasterizzazione dipende dalla versione di Chrome, per questo la tolleranza del 5%"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/misura_resa.py --check",
+      "tests": [
+        "scripts/tests/test_misura_resa.py"
+      ],
+      "docs": [
+        "docs/guides/GUIDA-MAPPE.md",
+        "plans/adr/ADR-0086-una-sostituzione-nella-resa-entra-solo-se-misurata-e-preferita.md"
+      ]
+    },
+    {
+      "id": "misura_resa_appresa",
+      "path": "scripts/misura_resa_appresa.py",
+      "category": "B-maps-pipeline",
+      "language": "python",
+      "invocation": "python3 scripts/misura_resa_appresa.py <celle> -o appresa.json",
+      "summary": "Il secondo parere della misura della resa (D26): CLIP-IQA, LPIPS e DISTS di piq (Apache-2.0) sulle celle esportate da misura_resa.py --celle. Gira sulla macchina del DM con torch e i pesi che piq scarica; registra versioni e sha256 dei pesi; non blocca niente.",
+      "use_case": "«Le metriche apprese della community sono d'accordo con me su quale cella è migliore?»",
+      "stability": "local-only",
+      "stdlib_only": false,
+      "external_deps": [
+        "torch",
+        "piq",
+        "Pillow"
+      ],
+      "external_bins": [],
+      "args": [
+        {
+          "name": "celle",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La cartella scritta da misura_resa.py --celle."
+        },
+        {
+          "name": "-o",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il JSON delle misure."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "<celle>/*.png",
+          "kind": "png",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<uscita>.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "cartella vuota o illeggibile",
+        "2": "torch o piq assenti"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "pesi fissati dalla versione di piq; lo sha256 dei pesi usati sta nell'uscita"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": true,
+        "notes": "al primo uso piq scarica i pesi da GitHub"
+      },
+      "idempotent": true
+    },
+    {
+      "id": "gate_locale",
+      "path": "scripts/gate_locale.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/gate_locale.py --rapido",
+      "summary": "I gate del job validate della CI eseguiti sulla macchina, letti da .github/workflows/ci.yml e non da una lista copiata: un gate nuovo in CI entra da solo. Salta, dicendolo, i passi che installano e quelli con espressioni di GitHub che qui non hanno valore; continue-on-error vale come avviso; --rapido salta i corridori dei test.",
+      "use_case": "«Prima di spingere: la CI tornerà verde?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_deps": [
+        "pyyaml"
+      ],
+      "external_bins": [
+        "bash",
+        "git"
+      ],
+      "args": [
+        {
+          "name": "--rapido",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Salta i corridori dei test (unittest, pytest)."
+        },
+        {
+          "name": "--elenco",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Elenca i passi e cosa ne farebbe, senza eseguire."
+        },
+        {
+          "name": "--solo",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Esegue solo i passi il cui nome o comando contiene il testo."
+        },
+        {
+          "name": "--base",
+          "type": "str",
+          "required": false,
+          "default": "main",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il ramo per i gate che confrontano."
+        }
+      ],
+      "inputs": [
+        {
+          "path": ".github/workflows/ci.yml",
+          "kind": "yaml",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "stdout",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "tutti i gate bloccanti verdi",
+        "1": "almeno un gate rosso",
+        "2": "ci.yml illeggibile"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "esegue i gate: il loro determinismo è il loro"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/gate_locale.py --elenco",
+      "tests": [
+        "scripts/tests/test_gate_locale.py"
+      ],
+      "docs": [
+        "plans/PIANO-AMBIENTE-RIPRODUCIBILE.md"
+      ]
+    },
+    {
+      "id": "ambiente",
+      "path": "scripts/ambiente.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/ambiente.py piano --con blender,comfyui,typst",
+      "summary": "L'ambiente di sviluppo completo installato col registro e tolto col rollback (AMBIENTE A5c-A5d, D1): pacchetti di sistema su Debian e Ubuntu con dpkg fotografato prima e dopo, requirements-completo.txt nel .venv, typst della CI in ~/.local/bin, ComfyUI in distrobox. Il registro possiede solo ciò che mancava; rimuovi toglie solo quello, mai autoremove né purge, e lascia un pacchetto nostro da cui dipende altro. adotta mette nel registro le installazioni apt fatte a mano da una data.",
+      "use_case": "«Come installo tutto, e come torno indietro?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "distrobox"
+      ],
+      "args": [
+        {
+          "name": "azione",
+          "type": "choice",
+          "required": true,
+          "default": null,
+          "choices": [
+            "piano",
+            "installa",
+            "stato",
+            "rimuovi",
+            "adotta"
+          ],
+          "repeatable": false,
+          "desc": "piano · installa · stato · rimuovi · adotta"
+        },
+        {
+          "name": "--con",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Moduli in più: blender, comfyui, typst."
+        },
+        {
+          "name": "--si",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Non chiede conferma."
+        },
+        {
+          "name": "--venv",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "rimuovi: toglie tutto il .venv del repo."
+        },
+        {
+          "name": "--apt-dal",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "adotta: le transazioni apt da questa data (AAAA-MM-GG)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "requirements-completo.txt",
+          "kind": "text",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "/var/log/apt/history.log",
+          "kind": "text",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "$XDG_STATE_HOME/rumblingstone/<id>/stato.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "fatto",
+        "1": "un passo fallito: il registro dice cosa c'è",
+        "2": "piattaforma o .venv non adatti"
+      },
+      "determinism": {
+        "deterministic": false,
+        "seed_flag": null,
+        "notes": "dipende da cosa c'è sulla macchina"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": true,
+        "system": true,
+        "notes": "installa e toglie pacchetti con sudo apt-get e dpkg-query (Debian, Ubuntu); per questo non esce come tool MCP"
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/ambiente.py --help",
+      "tests": [
+        "scripts/tests/test_ambiente_registro.py"
+      ],
+      "docs": [
+        "plans/PIANO-AMBIENTE-RIPRODUCIBILE.md",
+        "docs/guides/GUIDA-SETUP-MACCHINA.md"
       ]
     }
   ]

@@ -17,11 +17,11 @@ jobs:
     # la prova, non perche' e' cambiata l'etichetta (PRATICHE PI-3).
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0   # serve al gate di tracciatura (diff vs base ref)
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
 
@@ -179,6 +179,12 @@ jobs:
         continue-on-error: true
         run: python scripts/validate_prosa.py
 
+      # BLOCCANTE, soglia zero: il foglio di stile (glossario §8, ADR-0078).
+      # Una grafia gia' decisa non torna a scriversi nell'altro modo. Le scelte
+      # del DM ancora in sospeso (`DM?`) si contano ma non bloccano.
+      - name: Prosa — foglio di stile, zero refusi aperti
+        run: python scripts/validate_prosa.py --foglio --strict
+
       # 🔴 BLOCCANTE, e la ragione sta in ADR-0056: una norma editoriale che
       # nessuno misura non fa rumore quando viene ignorata. «read-aloud-adulti»
       # prescriveva box <= 12 righe da agosto e nessuno guardava; ADR-0014 era
@@ -221,6 +227,19 @@ jobs:
         continue-on-error: true
         run: python scripts/validate_tipografia.py
 
+      # ADR-0082, PIANO-COLLAUDO-E-GENERAZIONE-MAPPE V1: il rapporto del collaudo
+      # delle mappe, in sola lettura. Non blocca: il gate a tetto e' il lotto V4.
+      - name: Collaudo delle mappe (rapporto, non bloccante)
+        continue-on-error: true
+        run: python scripts/collaudo_mappe.py --solo-errori
+
+      # D23 di RESA-ASSET: la resa delle mappe si misura simbolo per simbolo e
+      # terreno per terreno, e nessuna misura peggiora oltre il 5% rispetto a
+      # scripts/scheda-resa.json senza che la scheda sia stata riscritta (e
+      # quindi passata dal DM nella PR). Rasterizza con il Chrome del runner.
+      - name: Resa delle mappe — nessuna misura peggiora (misura_resa)
+        run: python scripts/misura_resa.py --check
+
       - name: DM tool smoke tests
         run: |
           python scripts/suggest_encounter.py --help > /dev/null
@@ -234,6 +253,7 @@ jobs:
           python scripts/compile_map_json.py --help > /dev/null
           python scripts/export_uvtt.py --help > /dev/null
           python scripts/import_ultraclear.py --help > /dev/null
+          python scripts/collaudo_mappe.py --help > /dev/null
           python scripts/update_xp.py --check > /dev/null
           python scripts/hype_homebrew.py --help > /dev/null
           python scripts/dm_dossier.py --help > /dev/null
@@ -402,9 +422,9 @@ jobs:
     runs-on: ubuntu-24.04
     needs: validate
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
 
@@ -415,7 +435,7 @@ jobs:
         run: ./scripts/build-skills.sh --no-deploy
 
       - name: Upload packages artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: skill-packages
           path: build/

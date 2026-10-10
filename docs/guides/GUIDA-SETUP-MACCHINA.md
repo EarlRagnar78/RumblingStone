@@ -163,6 +163,59 @@ pip install pillow    # opzionale: senza, le immagini vengono incorporate non co
 sudo apt install pandoc texlive-xetex    # solo se usi `dm.py recap --pdf`
 ```
 
+### Tutto, per chi sviluppa, e come tornare indietro
+
+Gli extra qui sopra sono opzionali per scelta: la sera di gioco non li usa, e
+la CI installa solo `requirements-dev.txt`. Chi sviluppa li installa tutti con
+`ambiente.py`, che tiene un **registro** di ciò che installa e lo toglie con
+`rimuovi` (D1 di PIANO-AMBIENTE). Va lanciato col `.venv` attivo:
+
+```bash
+source .venv/bin/activate
+python scripts/ambiente.py piano --con blender,comfyui,typst     # cosa farebbe, senza toccare niente
+export COMFYUI_DIR=/srv/comfyui                                  # solo se vuoi ComfyUI
+python scripts/ambiente.py installa --con blender,comfyui,typst  # chiede conferma a ogni gruppo
+python scripts/ambiente.py stato                                 # cosa c'è nel registro
+python scripts/dm.py doctor
+```
+
+| Modulo | Cosa installa | Peso |
+|---|---|---|
+| sempre | pacchetti di sistema che mancano: chromium, pandoc, texlive-xetex, maven, default-jre, webp, inkscape, shellcheck; nel `.venv` `requirements-completo.txt` (bpy, torch per CPU, piq) | ~1 GB |
+| `blender` | il programma Blender da apt; con `bpy` serve solo al PNG di `render_map_blender.py` | ~400 MB |
+| `comfyui` | distrobox e podman, poi `scripts/comfyui-local/setup-distrobox.sh` in `COMFYUI_DIR` e, se dici sì, il checkpoint SDXL | ~15 GB |
+| `typst` | la versione fissata dalla CI in `~/.local/bin`, solo se typst manca | 40 MB |
+
+**Il registro** sta in `~/.local/state/rumblingstone/<id del clone>/stato.json`.
+Possiede solo ciò che prima mancava: per i pacchetti di sistema fotografa
+`dpkg` prima e dopo, e tiene la differenza, dipendenze comprese. Un pacchetto
+che avevi già non diventa mai suo.
+
+**Tornare indietro:**
+
+```bash
+python scripts/ambiente.py rimuovi           # toglie solo ciò che ha installato, chiedendo
+python scripts/ambiente.py rimuovi --venv    # in più cancella tutto il .venv del repo
+```
+
+`rimuovi` ti mostra la simulazione di `apt-get remove` prima di farlo. Non
+usa mai `autoremove` né `purge`, che toglierebbero anche ciò che non è suo.
+Se da un pacchetto suo ora dipende un pacchetto installato da te, quel
+pacchetto resta, e `rimuovi` dice perché. Toglie il box e la cartella di
+ComfyUI solo se li aveva creati lui, e typst solo se il file è ancora quello
+che aveva installato.
+
+**Quello che hai installato a mano prima** non è nel registro. Per affidarglielo
+c'è `adotta`: legge `/var/log/apt/history.log` e prende le transazioni dalla
+data che gli dai, limitandosi ai pacchetti che ci sono ancora:
+
+```bash
+python scripts/ambiente.py adotta --apt-dal 2026-10-09
+```
+
+⚠️ Adotta **tutte** le installazioni apt da quella data, anche quelle che non
+c'entrano col repo. Leggi l'elenco che ti mostra prima di dire sì.
+
 ### Container
 
 | Cosa | Dove |
@@ -177,16 +230,19 @@ sudo apt install pandoc texlive-xetex    # solo se usi `dm.py recap --pdf`
 
 ```bash
 python3 scripts/dm.py doctor                  # ✓ ovunque (i ○ opzionali vanno bene)
-python3 -m pytest scripts/tests -q            # la suite del repo
-python3 scripts/validate_skills.py            # skill ben formate
-python3 scripts/validate_maps.py              # SVG in sync coi master
-python3 scripts/validate_bestiario.py         # libreria mostri conforme
-python3 scripts/validate_modules.py           # master d'arco conformi
-python3 scripts/tools_manifest.py --check     # contratto dei tool allineato
+.venv/bin/python scripts/gate_locale.py --rapido   # i gate della CI, senza i test (~3 min)
+.venv/bin/python scripts/gate_locale.py            # tutti, test compresi
 ```
 
-Sono **gli stessi controlli della CI**: se passano qui, la tua PR non
-diventerà rossa per motivi ambientali.
+`gate_locale.py` legge i passi del job `validate` da `.github/workflows/ci.yml`
+e li esegue nell'ordine, quindi un gate aggiunto alla CI entra da solo.
+Salta i passi che installano qualcosa. Se un passo fallisce perché manca uno
+strumento che in CI viene installato (typst, per esempio), lo segna come
+avviso e dice quale. Con `--solo TESTO` esegue solo i passi che contengono
+quel testo; con `--elenco` mostra cosa farebbe senza eseguire niente.
+
+Se qui passano tutti, la PR non diventerà rossa per un gate che non hai fatto
+girare.
 
 ---
 

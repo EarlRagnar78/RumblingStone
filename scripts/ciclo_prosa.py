@@ -34,6 +34,13 @@ Da dove vengono le regole, e con che licenza (ADR-0077):
   Apache 2.0): `{~~vecchio~>nuovo~~}`, `{++aggiunto++}`, `{--tolto--}`,
   `{>>commento<<}`. Implementata qui con `difflib`, senza codice di terzi.
 
+Il **secondo lettore** (ADR-0079) è un passo facoltativo di `segnala`: con
+`--languagetool URL` (un server LanguageTool **locale**, avviato da
+`scripts/avvia_languagetool.sh`) si aggiungono le tre regole che la misura ha
+tenuto. Serve quando si vuole una verifica in più su un master o su un handout,
+non come cancello: non è in CI e non entra nel punteggio MQM. LanguageTool è LGPL
+e resta un servizio fuori dal repo.
+
 Solo stdlib. Deterministico: lo stesso input dà la stessa uscita.
 """
 from __future__ import annotations
@@ -285,26 +292,84 @@ def lettura(testo: str) -> "dict[str, float]":
             "ritmo": round(cv, 2), "frasi": len(frasi)}
 
 
-def languagetool(testo: str, url: str) -> "list[Segnalazione]":
-    """Le segnalazioni grammaticali di un server LanguageTool (LGPL), se ce n'è uno.
+#: Le sole regole di LanguageTool che la misura ha tenuto (ADR-0079): su 94.755
+#: rilievi del repo, tutte le altre erano rumore (gergo, inglese degli statblock,
+#: nomi). Ognuna ha trovato almeno un difetto vero che le altre vie non vedono.
+REGOLE_LANGUAGETOOL = (
+    "ARTICOLATA_SOSTANTIVO",        # il genere di un nome proprio che oscilla (*del Mano Rossa*)
+    "UNPAIRED_BRACKETS",            # una parentesi senza la sua compagna
+    "ITALIAN_WORD_REPEAT_RULE",     # *Solo solo nella Torre*
+)
+_LOCALI = ("localhost", "127.0.0.1", "::1", "[::1]")
 
-    Facoltativo e fuori dalla CI: si usa come servizio, quindi la sua licenza
-    non entra nel repo (ADR-0077). Senza rete, o con un server che non
-    risponde, avvisa e non segnala niente.
+
+def testo_piano(testo: str) -> str:
+    """Il markdown come testo da correggere, **una riga per riga sorgente**.
+
+    Così il numero di riga di LanguageTool è quello del file. Tabelle, codice,
+    front matter e HTML diventano righe vuote; il codice in linea diventa `§`, che
+    non è una parola: con una lettera, «X X» scatterebbe come parola ripetuta.
     """
-    dati = urllib.parse.urlencode({"text": testo, "language": "it"}).encode()
+    out, codice, fm = [], False, False
+    for i, r in enumerate(testo.split("\n")):
+        if i == 0 and r.strip() == "---":
+            fm = True
+            out.append("")
+            continue
+        if fm:
+            fm = r.strip() != "---"
+            out.append("")
+            continue
+        if r.lstrip().startswith("```"):
+            codice = not codice
+            out.append("")
+            continue
+        if codice or re.match(r"^\s*(\||<|!--|\[.*\]:|-{3,}|={3,})", r):
+            out.append("")
+            continue
+        r = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", r)
+        r = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", r)
+        r = re.sub(r"`[^`]*`", "§", r)
+        r = re.sub(r"^\s*(#{1,6}\s+|>\s?|[-*+]\s+|\d+\.\s+)+", "", r)
+        r = re.sub(r"(\*\*|__|\*|_)(?=\S)(.+?)(?<=\S)\1", r"\2", r).replace("**", "")
+        out.append(r)
+    return "\n".join(out)
+
+
+def languagetool(testo: str, url: str) -> "list[Segnalazione]":
+    """Il **secondo lettore**: le tre regole tenute di un server LanguageTool (LGPL).
+
+    Si usa quando serve una verifica in più, **non** in CI e non di default
+    (ADR-0079): è un servizio, quindi la sua licenza non entra nel repo, e deve
+    stare **in locale**. Un indirizzo che non sia `localhost` o `127.0.0.1` è
+    rifiutato: il testo della campagna non esce dalla macchina. Senza server,
+    avvisa e non segnala niente. Lo avvia `scripts/avvia_languagetool.sh`.
+    """
+    host = urllib.parse.urlsplit(url).hostname or ""
+    if host not in _LOCALI and f"[{host}]" not in _LOCALI:
+        print(f"⚠️ LanguageTool rifiutato ({url}): solo un server locale, il testo non esce dalla macchina")
+        return []
+    piano = testo_piano(testo)
+    dati = urllib.parse.urlencode({
+        "text": piano, "language": "it", "enabledOnly": "true",
+        "enabledRules": ",".join(REGOLE_LANGUAGETOOL)}).encode()
     try:
-        with urllib.request.urlopen(url.rstrip("/") + "/v2/check", dati, timeout=30) as r:
+        with urllib.request.urlopen(url.rstrip("/") + "/v2/check", dati, timeout=60) as r:
             risposta = json.load(r)
     except (OSError, ValueError) as e:
-        print(f"⚠️ LanguageTool non raggiungibile ({e}): nessuna segnalazione grammaticale")
+        print(f"⚠️ LanguageTool non raggiungibile ({e}): nessun secondo lettore")
         return []
+    u = piano.encode("utf-16-le")        # gli offset di LanguageTool sono unità UTF-16
     fuori = []
     for m in risposta.get("matches", []):
-        riga = testo.count("\n", 0, m.get("offset", 0)) + 1
+        # un'emoji vale due unità: con `piano.count` la riga scivolerebbe in avanti
+        prima = u[:2 * m.get("offset", 0)].decode("utf-16-le", "replace")
+        riga = prima.count("\n") + 1
         proposta = ", ".join(x["value"] for x in m.get("replacements", [])[:3])
-        fuori.append(Segnalazione(riga, riga, "grammatica",
-                                  f"{m.get('message', '')}" + (f" → {proposta}" if proposta else "")))
+        regola = m.get("rule", {}).get("id", "")
+        fuori.append(Segnalazione(riga, riga, "secondo lettore",
+                                  f"{regola}: {m.get('message', '')}"
+                                  + (f" → {proposta}" if proposta else "")))
     return fuori
 
 
@@ -652,7 +717,9 @@ def main(argv=None) -> int:
     sub = ap.add_subparsers(dest="cmd", required=True)
     s1 = sub.add_parser("segnala", help="primo giro: i passaggi da correggere")
     s1.add_argument("file", type=Path)
-    s1.add_argument("--languagetool", metavar="URL", help="un server LanguageTool (facoltativo)")
+    s1.add_argument("--languagetool", metavar="URL",
+                    help="il secondo lettore: un server LanguageTool LOCALE, avviato da "
+                         "scripts/avvia_languagetool.sh (facoltativo, ADR-0079)")
     s2 = sub.add_parser("revisione", help="il documento da approvare")
     s2.add_argument("originale", type=Path)
     s2.add_argument("riscritto", type=Path)

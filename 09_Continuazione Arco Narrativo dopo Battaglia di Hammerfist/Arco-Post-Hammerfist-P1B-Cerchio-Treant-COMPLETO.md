@@ -8,21 +8,21 @@ Arco-Post-Hammerfist-P1B-Cerchio-Treant-COMPLETO.md
 ## 1. Panoramica incontro
 
 - EL consigliato: 13 (4 PG di livello 11–12). [file:21]
-- Obiettivo: difendere Hellas e il Cerchio Sacro dall’assalto del Treant corrotto e dei Drow Pyromancer. [file:21]
+- Obiettivo: difendere Hella e il Cerchio Sacro dall’assalto del Treant corrotto e dei Drow Pyromancer. [file:21]
 - Tipo di incontro: battaglia campale tattica in foresta, con forte uso di coperture e fuoco. [file:21]
 
 ### Condizioni di vittoria
 
-- Successo pieno: Hellas sopravvive, Cerchio integro (Treant distrutto, almeno 1 Drow neutralizzato). [file:21]
-- Successo parziale: Hellas viva ma Cerchio danneggiato; penalità al Rituale successivo. [file:21]
-- Fallimento: Hellas uccisa o Cerchio distrutto; gravi malus all’assedio di Brindol. [file:21]
+- Successo pieno: Hella sopravvive, Cerchio integro (Treant distrutto, almeno 1 Drow neutralizzato). [file:21]
+- Successo parziale: Hella viva ma Cerchio danneggiato; penalità al Rituale successivo. [file:21]
+- Fallimento: Hella uccisa o Cerchio distrutto; gravi malus all’assedio di Brindol. [file:21]
 
 ---
 
 ## 2. Mappa tattica e terreno
 
 - Griglia: 40 × 40 quadretti, 1,5 m/quadretto. [file:21]
-- Centro: Cerchio Sacro (raggio 6 quadretti ≈ 9 m) con Hellas al centro. [file:21]
+- Centro: Cerchio Sacro (raggio 6 quadretti ≈ 9 m) con Hella al centro. [file:21]
 - Bordo sud: ingresso PG (fila 4). [file:21]
 - Bordo nord: linea dei Drow e del Treant (fila 20–24). [file:21]
 
@@ -75,7 +75,7 @@ Come definito nel file P1A (Mago5/Chierico5). [file:21]
 - Drow:  
   - Uno lancia Tela di ragno per spezzare il fronte dei PG.  
   - L’altro si prepara con protezioni (es. Resist Energy (fuoco) o Spell Resistance tattica se prevista). [file:21]
-- Hellas: si protegge con Barkskin e chiede aiuto ai PG; evita combattimento diretto. [file:21]
+- Hella: si protegge con Barkskin e chiede aiuto ai PG; evita combattimento diretto. [file:21]
 
 ### Round 2–3
 
@@ -84,13 +84,13 @@ Come definito nel file P1A (Mago5/Chierico5). [file:21]
   - Usa 2 schianti a round; se circondato, trample di nuovo. [file:21]
 - Drow: iniziano a spammare Palla di fuoco sui cluster di PG, cercando di non includere il Treant (che comunque è vulnerabile al fuoco). [file:21]
 - PG:  
-  - Devono decidere rapidamente se concentrarsi sul Treant (per difendere Hellas) o interrompere i Drow per evitare la devastazione. [file:21]
+  - Devono decidere rapidamente se concentrarsi sul Treant (per difendere Hella) o interrompere i Drow per evitare la devastazione. [file:21]
 
 ### Round 4+ (fase critica)
 
 - Se il Treant è ancora a piena forza:  
   - Potrebbe riuscire a raggiungere il Cerchio e provare a distruggerlo (CD 25 per colpo riuscito; 3 colpi per spezzare le rune). [file:21]
-- Se un Drow arriva in vista diretta di Hellas:  
+- Se un Drow arriva in vista diretta di Hella:  
   - Potrebbe tentare di colpirla con Palla di fuoco o raggio rovente (se presente nella lista incantesimi adattata). [file:21]
 
 ---
@@ -111,8 +111,8 @@ Come definito nel file P1A (Mago5/Chierico5). [file:21]
 - Tesoro nel campo dei Drow (da trovare dopo la battaglia):  
   - 2 bacchette (es. Wand of Fireball (20 cariche), Wand of Scorching Ray (15 cariche)).  
   - 3 pergamene divine di resistenza alle energie e cura.  
-  - Componenti rituali per Hellas (necessarie per la parte P1C). [file:21]
+  - Componenti rituali per Hella (necessarie per la parte P1C). [file:21]
 
 - Ricompensa narrativa:  
-  - Fiducia di Hellas.  
+  - Fiducia di Hella.  
   - Accesso al Rituale di Trasformazione e alle benedizioni della foresta. [file:21]

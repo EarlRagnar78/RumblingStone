@@ -25,7 +25,7 @@
 # Pavimento alzato a 9.0.3 il 2026-10-07 (PRATICHE PI-3b): `pip-audit` sulle
 # versioni MINIME dichiarate trova PYSEC-2026-1845 in pytest 8.0.0, corretto
 # in 9.0.3. La CI installava gia' la 9.x; chi aveva la 8 in locale no.
-pytest>=9.0.3
+pytest>=9.1.1
 
 # PRATICHE PI-3 (D2 del 2026-09-24): le vulnerabilita' note nelle dipendenze
 # dei due file. Gira in CI, non bloccante per il primo mese. Licenza

@@ -162,13 +162,16 @@ class TestIlPilastroDichiarato(unittest.TestCase):
              ).append(nome)
         # 2026-10-07: ARC-08 entra di proposito. `ARC08-17-BANCO-HAMMERFIST-1372.md`
         # porta il read-aloud etichettato col pilastro (il banco della rocca).
+        # 2026-10-11: DEF-1 entra di proposito. Il box di fine ora del
+        # contratto del Seme (§6-bis) porta l'etichetta del pilastro, come
+        # chiede editorial-standards.md §2.
         self.assertEqual(sorted(con), ["ARC-08 Hammerfist",
+                                       "DEF-1 Piano della Terra",
                                        "DEF-2 Ritorno e affreschi",
                                        "DEF-3 Resurrezione Hella",
                                        "DEF-4 Viaggio 1.000 anni",
                                        "DEF-5 Ritorno Hammerfist"])
         self.assertIn("★ Abbazia (stand-alone)", senza)
-        self.assertIn("DEF-1 Piano della Terra", senza)
 
 
 class TestGliStandardRedazionaliScrittiEMaiApplicati(unittest.TestCase):

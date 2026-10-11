@@ -117,6 +117,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-10-10 | AMBIENTE-RIPRODUCIBILE · PRATICHE (PI-3… | A2 in parte · Python 3.13 in CI, nel registro e nelle guide | 🟡 La #228 di Dependabot (gruppo `pip-settimanale`) alza i pavimenti a `numpy>=2.5.3` e `scipy>=1.18.1`, che chiedono Python >= 3.12: su 3.11 pip non trova vers… |
 | 2026-10-10 | RECUPERO · REGISTRO-NORME | L7: le tre pratiche di Infra-Iam-PKI e AiAgentInfrastructure (D7, il DM: *«adot… | ✅ `plans/adr-prenotati.json` (lo `0088` alla #99) e `validate_docs`: `--prossimo-adr` salta i prenotati, `--sorgenti` rosso su un prenotato usato da altri o ar… |
 | 2026-10-10 | RECUPERO · STATO-E-ORDINE · INDEX · AGE… | il riallineamento dopo il merge di #229, #230 e #232 (richiesta del DM: ricontr… | 🟡 La #216 portata sul `main` nuovo: sette conflitti risolti tenendo le righe di `main` e aggiungendo le sue, `docs/tools/` rigenerato, §4 e `MEMORIA.md` rigene… |
 | 2026-10-10 | STATO-E-ORDINE | la memoria in un posto solo (ADR-0087) | ✅ Richiesta del DM: tutta la memoria in un posto, senza perdere parti o decisioni; il DM sceglie «nel repo, generata». `MEMORIA.md` in radice, generato da… |
@@ -128,7 +129,6 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-10-10 | INDEX · CICLO-SESSIONE · VENDIBILITA ·… | il controllo di tutti i piani contro le loro checklist, il CHANGELOG e le tabel… | ✅ Un controllo in sola lettura su 55 righe dell'INDEX ha trovato 17 disallineamenti; verificati sui file uno per uno e corretti. I più gravi: CICLO-SESSIONE da… |
 | 2026-10-10 | RESA-E-ASSET · COLLAUDO-MAPPE · AMBIENT… | allineamento dei piani a ciò che è stato fatto e deciso il 2026-10-09 (richiest… | 🟡 Le righe dell'INDEX dei quattro piani toccati dalla #230 dicevano ancora 0% o 5% (RICERCA-MESTIERE, AMBIENTE) o D1-D22 (RESA): ora portano D1-D30, R8 e R4-qu… |
 | 2026-10-09 | RESA-E-ASSET-DELLE-MAPPE · COLLAUDO-MAP… | D28-D30: la pagina di scelta, M7-C corretta, le griglie di PF-4 e del Campo Dro… | 🟡 Il DM: la pagina alla cieca non diceva cosa mostrava, aveva coppie identiche e non permetteva «nessuna». Causa delle coppie identiche: simboli che la legenda… |
-| 2026-10-09 | RESA-E-ASSET-DELLE-MAPPE | le fasi 1-3 sulla macchina del DM, e i difetti che hanno trovato | 🟡 ComfyUI installato, GPU vista, SDXL verificato (sha256 nel registro di `comfyui_batch`). `tara --candidati` propone ⛰ → `lichen_rock` e 🔳 → `plank_flooring`;… |
 
 ## Le misure che si portano dietro
 

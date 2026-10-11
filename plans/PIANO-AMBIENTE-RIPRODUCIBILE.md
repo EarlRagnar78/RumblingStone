@@ -141,10 +141,11 @@ Questo documento e ADR-0081.
 - I checksum si copiano dalle release ufficiali dove ci sono, e si verificano sul file scaricato prima del commit; dove la release non li pubblica, si calcolano su un download e si dichiara che sono nostri.
 - Mutazione: cambiare la versione nel workflow fa fallire il test.
 
-### A2 · Python 3.13 e le tre piattaforme in CI ⬜
+### A2 · Python 3.13 e le tre piattaforme in CI 🟡
 `[engine: Sonnet 5 · effort: medio · qualità: i job Debian 13, Ubuntu 24.04 e distrobox verdi su main; un test boccia se ci.yml e il registro divergono]`
 - `PYTHON_MINIMO` e `setup-python` passano a 3.13, con l'emendamento ad ADR-0037 e il commento di `binari.py` che spiega perché 3.13. Se qualcosa si rompe sul passaggio, il lotto lo corregge.
 - `dipendenze.yml` passa a 3.13 nello stesso lotto, o il test delle minime proverebbe un'altra versione.
+- 🟡 **2026-10-10, PR #231**: fatta la parte Python, prima del lotto mappe D28, perché la PR di Dependabot #228 (numpy 2.5, scipy 1.18) non si installava su 3.11. `PYTHON_MINIMO`, `ci.yml`, `dipendenze.yml`, le due guide e l'emendamento ad ADR-0037 sono a 3.13. Restano il job Debian 13 in container e il test che boccia se `ci.yml` e il registro divergono oltre il minimo.
 - Il job Debian 13 in container gira i due corridori di test; i gate editoriali restano nel job principale (non dipendono dalla piattaforma).
 - Il job Bazzite è in A6, perché ha bisogno di `dm.py ambiente setup`.
 
@@ -325,7 +326,7 @@ appena esce, ed è già una risposta a «la mia macchina è come la CI?».
 
 - [x] A0 · brief corretto, audit, contratto, ADR-0081, D1-D10
 - [ ] A1 · versione e checksum nel registro, CI che legge da lì
-- [ ] A2 · Python 3.13 e le tre piattaforme in CI
+- [ ] A2 · Python 3.13 e le tre piattaforme in CI — 🟡 Python 3.13 fatto (PR #231), manca il job Debian 13
 - [ ] A3 · lock con hash e regola degli aggiornamenti
 - [ ] A4 · hook ridisegnati (D11)
 - [~] A5a · `ambiente piano/verifica/stato` (2026-10-09: `piano` e `stato` in `ambiente.py`; manca `verifica` con versioni e checksum, che aspetta A1)

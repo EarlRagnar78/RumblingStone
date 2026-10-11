@@ -23,7 +23,7 @@ jobs:
 
       - uses: actions/setup-python@v7
         with:
-          python-version: "3.11"
+          python-version: "3.13"
 
       - name: Install dependencies
         # ADR-0037, emendamento 2026-09-21: due piani. requirements.txt e' cio'
@@ -432,7 +432,7 @@ jobs:
 
       - uses: actions/setup-python@v7
         with:
-          python-version: "3.11"
+          python-version: "3.13"
 
       - name: Install dependencies
         run: pip install -r requirements.txt

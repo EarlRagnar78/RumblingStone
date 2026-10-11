@@ -14,7 +14,7 @@
 
 ```bash
 git clone <url-del-repo> RumblingStone && cd RumblingStone
-python3 --version                     # serve 3.11 o superiore
+python3 --version                     # serve 3.13 o superiore
 python3 scripts/dm.py doctor          # diagnosi: dice cosa manca
 ./scripts/build-skills.sh             # se usi agenti AI (Claude Code, Cursor, …)
 ```
@@ -42,7 +42,7 @@ teneva una lista sua e le due divergevano.
 
 | Componente | Serve per | Obbligatorio? |
 |---|---|---|
-| **Python 3.11+** | tutto. Gli script usano la sola libreria standard ([ADR-0037](../../plans/adr/ADR-0037-stdlib-only-e-le-sue-eccezioni.md)): niente `requirements.txt`, niente ambiente virtuale | ✅ sì |
+| **Python 3.13+** | tutto. Gli script usano la sola libreria standard ([ADR-0037](../../plans/adr/ADR-0037-stdlib-only-e-le-sue-eccezioni.md)): niente `requirements.txt`, niente ambiente virtuale | ✅ sì |
 | **git** | clonare, versionare, branch di gruppo | ✅ sì |
 | **bash** | i cinque script shell. Su Windows: Git Bash o WSL | quasi: gli equivalenti Python coprono il flusso principale |
 | **pyyaml** (`pip install pyyaml`) | il frontmatter delle skill. È l'unica libreria che un gate della CI pretende, e ADR-0037 la dichiara come debito | ✅ per le skill |
@@ -267,7 +267,7 @@ Se i tre comandi girano, la macchina è pronta.
 
 | Sintomo | Causa e rimedio |
 |---|---|
-| `python3: command not found` o versione < 3.11 | installa Python 3.11+; su Debian/Ubuntu `sudo apt install python3` |
+| `python3: command not found` o versione < 3.13 | installa Python 3.13+: su Debian 13 `sudo apt install python3`; su Ubuntu 24.04 (che ha 3.12) il PPA deadsnakes, `sudo apt install python3.13` |
 | `doctor` segnala **✗ monster_catalog** o «catalogo vecchio» | `python3 scripts/build_monster_catalog.py` |
 | Un agente non «vede» le skill aggiornate | `./scripts/sync-skills.sh` (e, se non usi Claude Code, `./scripts/install-git-hooks.sh` una volta sola) |
 | `validate_maps` rosso appena clonato | qualcuno ha committato un SVG disallineato: `python3 scripts/dm.py maps render <master>` e ricommitta ([GUIDA-MAPPE §6](GUIDA-MAPPE.md)) |

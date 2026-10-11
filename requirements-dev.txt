@@ -39,7 +39,8 @@ pip-audit>=2.10.1
 # verificare, in locale e in CI. Non si distribuisce col repo e non gira come
 # servizio di rete, quindi l'AGPL non chiede niente al repo. Per questo sta
 # qui e non in requirements.txt: al DM non serve per stampare.
-pymupdf>=1.24
+# Pavimento 1.24.11 dal 2026-10-10: la prima con wheel per Python 3.13.
+pymupdf>=1.24.11
 
 # ADR-0084 (DM, 2026-10-08: «obbligatoria nel collaudo»). La linea di vista di
 # `collaudo_mappe.py`: M4 esatta su tutte le 43.423 celle del corpus in 0,7 s,
@@ -54,7 +55,8 @@ numpy>=2.2
 # ADR-0084, emendamento della stessa sera (DM: «scipy per M1/M2»). M1 e M2 del
 # collaudo con `scipy.ndimage`: 20 ms contro 105 sul corpus, risultato identico
 # (plans/esperimenti/dipendenze-e-asset-2026-10/). Licenza BSD-3-Clause, 34 MB.
-scipy>=1.14
+# Pavimento 1.14.1 dal 2026-10-10: la prima con wheel per Python 3.13.
+scipy>=1.14.1
 
 # ADR-0085 (DM, 2026-10-08: «fonttools, solo sviluppo»). Ricava i sottoinsiemi
 # dei font OFL dei volumi che il renderer incorpora nelle mappe
@@ -67,4 +69,5 @@ fonttools[woff]>=4.60.2
 # resa delle mappe (`scripts/misura_resa.py`): SSIM, ΔE CIEDE2000, Sobel e la
 # conversione in Lab, sulle celle rasterizzate. BSD-3-Clause. Il cancello in CI
 # confronta la scheda committata; il renderer resta stdlib.
-scikit-image>=0.24
+# Pavimento 0.25 dal 2026-10-10: la prima con wheel per Python 3.13.
+scikit-image>=0.25

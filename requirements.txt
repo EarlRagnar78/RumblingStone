@@ -22,7 +22,9 @@
 # 13 file, fra cui dmcore/statedata.py: senza, lo stato di campagna non si
 # legge e i cancelli delle skill non partono. Non degrada: è un debito vero,
 # e ADR-0037 lo dice.
-pyyaml>=6.0
+# Pavimento 6.0.2 dal 2026-10-10 (Python 3.13, ADR-0081): la 6.0 non ha wheel
+# per 3.13 e il build dal sorgente fallisce con il Cython di oggi.
+pyyaml>=6.0.2
 
 # ── opzionali, con degradazione dichiarata ───────────────────────────────
 # build_image_derivatives.py (stampa come installarla ed esce 1) e

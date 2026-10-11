@@ -25,7 +25,8 @@
 # Pavimento alzato a 9.0.3 il 2026-10-07 (PRATICHE PI-3b): `pip-audit` sulle
 # versioni MINIME dichiarate trova PYSEC-2026-1845 in pytest 8.0.0, corretto
 # in 9.0.3. La CI installava gia' la 9.x; chi aveva la 8 in locale no.
-pytest>=9.0.3
+# 9.1.1 dal 2026-10-11, con gli aggiornamenti di Dependabot della #228.
+pytest>=9.1.1
 
 # PRATICHE PI-3 (D2 del 2026-09-24): le vulnerabilita' note nelle dipendenze
 # dei due file. Gira in CI, non bloccante per il primo mese. Licenza
@@ -39,8 +40,9 @@ pip-audit>=2.10.1
 # verificare, in locale e in CI. Non si distribuisce col repo e non gira come
 # servizio di rete, quindi l'AGPL non chiede niente al repo. Per questo sta
 # qui e non in requirements.txt: al DM non serve per stampare.
-# Pavimento 1.24.11 dal 2026-10-10: la prima con wheel per Python 3.13.
-pymupdf>=1.24.11
+# Pavimento 1.24.11 dal 2026-10-10 (la prima con wheel per Python 3.13),
+# 1.28.2 dal 2026-10-11 con gli aggiornamenti di Dependabot della #228.
+pymupdf>=1.28.2
 
 # ADR-0084 (DM, 2026-10-08: «obbligatoria nel collaudo»). La linea di vista di
 # `collaudo_mappe.py`: M4 esatta su tutte le 43.423 celle del corpus in 0,7 s,
@@ -50,20 +52,23 @@ pymupdf>=1.24.11
 # il collaudo gira in CI e nelle mani di chi disegna, non la sera al tavolo:
 # le mappe si disegnano, si renderizzano e si esportano senza.
 tcod>=21.2.1
-numpy>=2.2
+numpy>=2.5.3
 
 # ADR-0084, emendamento della stessa sera (DM: «scipy per M1/M2»). M1 e M2 del
 # collaudo con `scipy.ndimage`: 20 ms contro 105 sul corpus, risultato identico
 # (plans/esperimenti/dipendenze-e-asset-2026-10/). Licenza BSD-3-Clause, 34 MB.
-# Pavimento 1.14.1 dal 2026-10-10: la prima con wheel per Python 3.13.
-scipy>=1.14.1
+# Pavimento 1.14.1 dal 2026-10-10 (la prima con wheel per Python 3.13),
+# 1.18.1 dal 2026-10-11 con gli aggiornamenti di Dependabot della #228.
+# Dalla 1.18 scipy chiede Python 3.12 o piu', come numpy dalla 2.5.
+scipy>=1.18.1
 
 # ADR-0085 (DM, 2026-10-08: «fonttools, solo sviluppo»). Ricava i sottoinsiemi
 # dei font OFL dei volumi che il renderer incorpora nelle mappe
 # (`scripts/build_font_mappe.py`). Gira solo quando cambia l'insieme dei
 # caratteri: il renderer legge il risultato committato e resta stdlib. MIT.
 # Pavimento 4.60.2: pip-audit sulle minime trova CVE-2025-66034 nella 4.60.0.
-fonttools[woff]>=4.60.2
+# 4.66.1 dal 2026-10-11, con gli aggiornamenti di Dependabot della #228.
+fonttools[woff]>=4.66.1
 
 # D23-D24 di RESA-ASSET (DM, 2026-10-09: «misura + preferenza»). La misura della
 # resa delle mappe (`scripts/misura_resa.py`): SSIM, ΔE CIEDE2000, Sobel e la

@@ -60,6 +60,8 @@ class TestPythonMinimo(unittest.TestCase):
         with mock.patch.object(binari.sys, "version_info", (3, 8, 0)):
             self.assertFalse(binari.python_ok())
         with mock.patch.object(binari.sys, "version_info", (3, 11, 0)):
+            self.assertFalse(binari.python_ok())
+        with mock.patch.object(binari.sys, "version_info", (3, 13, 0)):
             self.assertTrue(binari.python_ok())
 
 

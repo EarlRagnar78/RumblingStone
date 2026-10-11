@@ -40,6 +40,10 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 3 | Ali d'Ombra (che qui chiedono Volare | 20 |
 | SCENA 4 | Osservare | 18 |
 | SCENA 5 | Sapienza Magica | 20 |
+| SCENA 5 | Volontà | 16 |
+| SCENA 5 | maledizione con prova di livello dell'incantatore | 20 |
+| SCENA 5 | Usare Oggetti Magici | 21 |
+| SCENA 5 | estirparlo | 20 |
 | SCENA 6 | Conoscenze (Arcane) | 18 |
 | SCENA 6 | Osservare | 20 |
 | SCENA 6 | Se un tiro va storto, FOR | 20 |
@@ -91,6 +95,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 5 | il corridoio, 2 di 3 | — | 5 |
 | SCENA 5 | il corridoio, 3 di 3 | — | 4 |
 | SCENA 5 | «Bravo. Solo tu potevi vederla. Consideralo un pegno di fiducia tra fu | — | 4 |
+| SCENA 5 | per Artemis, alla fine dell'ora | Andor lead | 7 |
 | SCENA 6 | l'oceano di roccia | — | 10 |
 | SCENA 6 | Sotto le dita, il mithral non è freddo: vibra appena, come un'incudine | — | 7 |
 | SCENA 7 | La stanza svanisce: sei sepolto vivo nella roccia. Panico primordiale, | — | 9 |

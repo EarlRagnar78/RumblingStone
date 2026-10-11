@@ -54,6 +54,8 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 5 | druido), Artemis con Usare Oggetti Magici | 23 |
 | SCENA 5 | la legge con Usare Oggetti Magici | 21 |
 | SCENA 5 | identifica una pozione con Sapienza Magica | 25 |
+| SCENA 5 | Tempra | 15 |
+| SCENA 5 | ha sulle dita (Scena 9, Osservare | 15 |
 | SCENA 6 | Finché dura l'invisibilità, Muoversi Silenziosamente | 20 |
 | SCENA 6 | Quando l'invisibilità finisce, Nascondersi | 22 |
 | SCENA 6 | sono due per quattro) tira Nascondersi | 22 |

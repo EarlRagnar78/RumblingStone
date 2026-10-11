@@ -957,7 +957,7 @@ finora la propria avidità nell'arco:
 
 Fino a qui il §6-bis diceva cosa **fa** il Seme, sparso in tre posti. Questa
 è la scheda completa, scritta perché Artemis lo identifica con la pergamena
-del re a ≈372 DR (`ARC07-DEF-4`, «Le dieci pozioni del gruppo»). Quello che
+del re a ≈372 DR (il Viaggio a mille anni fa, «Le dieci pozioni del gruppo»). Quello che
 segue è **tutto ciò che *identificare* rivela**, e il DM lo dice a voce.
 
 **L'oggetto.** Oggetto magico, **non** artefatto e **non** oggetto maledetto:

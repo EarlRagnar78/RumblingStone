@@ -1115,8 +1115,7 @@ alcune dal 2022 del tavolo. Kettra le identifica tutte e dieci in dieci
 minuti, con il 25 che le dà il prendere 10. Due la fermano: su quelle sa
 **cosa fanno**, e sa che **c'è dell'altro**, ma per dire cosa servirebbe un 30.
 Brynja ci passa sopra *individuazione del magico* e dice la scuola di
-quell'altro. La versione da dare ai giocatori è
-`homebrew/volume-mille-anni/05-HANDOUT-POZIONI-DI-KETTRA.md`.
+quell'altro. Ai giocatori si dà l'handout «Le dieci boccette».
 
 | # | Dove l'hanno presa | Cosa è (SRD) | Cosa nota Kettra |
 |---:|---|---|---|
@@ -1127,7 +1126,7 @@ quell'altro. La versione da dare ai giocatori è
 | 5 | stessi minotauri | *eroismo*, LI 5: +2 morale a attacchi, TS e prove di abilità per 50 minuti | pulita |
 | 6 | i nani sulla piattaforma d'osso (2024-07-05) | *cura ferite moderate*, LI 3: 2d8+3 | pulita. Stessa partita di quelle di Adrick Garthun |
 | 7 | il trono (2024-12-20) | *resistere all'energia* (fuoco), LI 3: resistenza 10 per 30 minuti | pulita. Vetro verde e spesso, tappo piombato, rune Dethek sul collo. Kettra ci passa il pollice sopra più del necessario: è il segno **della fucina del re**, la sua. Il vetro però non l'ha soffiato lei |
-| 8-9 | la stanza sotto la tomba, la chierica drow (2025-03-28) | *cura ferite moderate* ×2, LI 3 | pulite. È il kit personale della chierica (`04_.../drow-cleric.html`) |
+| 8-9 | la stanza sotto la tomba, la chierica drow (2025-03-28) | *cura ferite moderate* ×2, LI 3 | pulite. È il kit personale della chierica, dalla sua scheda |
 | 10 | stessa stanza | *invisibilità*, LI 3: 3 minuti | pulita |
 
 **La brodaglia degli sciamani** (n. 2). Una pozione di 2° livello che gli
@@ -1155,8 +1154,8 @@ mura all'alba manca.
 > maledizioni), l'unico tipo che nessuna prova potrebbe scoprire.
 
 Il **Seme-Mercato** di Varis non è fra queste: lo identifica Artemis, con la
-pergamena del re, e la scena si gioca al tavolo. La sua scheda è in
-`ARC07-DEF-1-PIANO-TERRA-TERROS.md` §6-bis, «Il contratto del Seme».
+pergamena del re, e la scena si gioca al tavolo. La sua scheda è nel
+Piano della Terra, §6-bis, «Il contratto del Seme».
 
 **Quanto hanno potuto vendere.** I nani sono ricchi di gemme e avari, ma
 l'assedio li frena. Il conto della notte, qualunque cosa il gruppo abbia

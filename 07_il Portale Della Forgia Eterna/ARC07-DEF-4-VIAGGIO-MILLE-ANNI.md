@@ -1108,6 +1108,56 @@ tempo, lancia *individuazione del magico* sugli altri oggetti e dice di ognuno
 la **scuola** (Sapienza Magica 15 + livello dell'incantesimo): la scuola, non
 cosa fa. Per sapere cosa fa un'arma o un anello serve la pergamena qui sopra.
 
+##### Le dieci pozioni del gruppo `[CANONE — DM 2026-10-11]`
+
+Sono le pozioni che il gruppo si portava dietro senza sapere cosa fossero,
+alcune dal 2022 del tavolo. Kettra le identifica tutte e dieci in dieci
+minuti, con il 25 che le dà il prendere 10. Due la fermano: su quelle sa
+**cosa fanno**, e sa che **c'è dell'altro**, ma per dire cosa servirebbe un 30.
+Brynja ci passa sopra *individuazione del magico* e dice la scuola di
+quell'altro. La versione da dare ai giocatori è
+`homebrew/volume-mille-anni/05-HANDOUT-POZIONI-DI-KETTRA.md`.
+
+| # | Dove l'hanno presa | Cosa è (SRD) | Cosa nota Kettra |
+|---:|---|---|---|
+| 1 | carro ribaltato, il goblin cavalcatore (sessione 2022-09-24) | *cura ferite leggere*, LI 1: 1d8+1 | etichetta in Comune e cera d'api, una bottega di Drellin's Ferry. Pulita |
+| 2 | stesso carro | **brodaglia degli sciamani**, vedi sotto | la riconosce subito e smette di ridere |
+| 3 | i quattro gnoll pompati (2022-11-27) | *forza del toro*, LI 3: +4 For per 3 minuti | pulita. È il motivo per cui gli gnoll erano pompati, con la *grazia del gatto* trovata insieme |
+| 4 | i minotauri (2022-11-27) | *cura ferite gravi*, LI 5: 3d8+5 | funziona, **ma c'è dell'altro**. Tappo di **cera nera**. Brynja: Divinazione. Vedi sotto |
+| 5 | stessi minotauri | *eroismo*, LI 5: +2 morale a attacchi, TS e prove di abilità per 50 minuti | pulita |
+| 6 | i nani sulla piattaforma d'osso (2024-07-05) | *cura ferite moderate*, LI 3: 2d8+3 | pulita. Stessa partita di quelle di Adrick Garthun |
+| 7 | il trono (2024-12-20) | *resistere all'energia* (fuoco), LI 3: resistenza 10 per 30 minuti | pulita. Vetro verde e spesso, tappo piombato, rune Dethek sul collo. Kettra ci passa il pollice sopra più del necessario: è il segno **della fucina del re**, la sua. Il vetro però non l'ha soffiato lei |
+| 8-9 | la stanza sotto la tomba, la chierica drow (2025-03-28) | *cura ferite moderate* ×2, LI 3 | pulite. È il kit personale della chierica (`04_.../drow-cleric.html`) |
+| 10 | stessa stanza | *invisibilità*, LI 3: 3 minuti | pulita |
+
+**La brodaglia degli sciamani** (n. 2). Una pozione di 2° livello che gli
+adepti dell'orda fanno bere a chi sale per primo sulle scale. Su un orco, un
+mezzorco o un goblinoide fa l'effetto di *eroismo* per 10 minuti. Su chiunque
+altro non dà niente: Tempra **CD 15** o **nauseato per 1d4 round**. Kettra l'ha
+già vista sui morti sotto le mura, e lo dice. È un'informazione, non un
+tranello: chi l'ha presa da un goblin della Mano Rossa nel 1372 scopre che la
+ricetta ha mille anni, e che gli sciamani di stanotte (Scena 6) la preparano
+ancora.
+
+**La cura con la cera nera** (n. 4). Viene dal covo del Collezionista, e la
+cera è quella che **Vatore** ha sulle dita (Scena 9, Osservare CD 15). È un
+oggetto maledetto con **difetto** (tabella SRD dei difetti, 26-29: un segno di
+riconoscimento): cura come una *cura ferite gravi*, e chi la beve si porta
+addosso **un riflesso violaceo sotto la pelle del polso**, che vedono soltanto
+gli agenti della gilda del Collezionista. Vatore lo vede. Il segno se ne va con
+*rimuovi maledizione*: Brynja ha l'ultima pergamena, e se la vendono, sulle
+mura all'alba manca.
+
+> **Perché la maledizione si vede.** Per l'SRD *identificare* rivela una
+> maledizione solo con l'1% per livello dell'incantatore. Qui la prova di
+> Kettra la segnala sempre: chi identifica deve essere premiato, non
+> ingannato. Nessuna delle dieci è un'*illusione* (01-15 della tabella delle
+> maledizioni), l'unico tipo che nessuna prova potrebbe scoprire.
+
+Il **Seme-Mercato** di Varis non è fra queste: lo identifica Artemis, con la
+pergamena del re, e la scena si gioca al tavolo. La sua scheda è in
+`ARC07-DEF-1-PIANO-TERRA-TERROS.md` §6-bis, «Il contratto del Seme».
+
 **Quanto hanno potuto vendere.** I nani sono ricchi di gemme e avari, ma
 l'assedio li frena. Il conto della notte, qualunque cosa il gruppo abbia
 venduto:

@@ -231,7 +231,7 @@ typst compile --font-path scripts/fonts --root . \
 
 | Cosa | Serve per | Obbligatorio? |
 |---|---|---|
-| **Python 3.11+** | tutto (gli script sono stdlib-only) | ✅ sì |
+| **Python 3.13+** | tutto (gli script sono stdlib-only) | ✅ sì |
 | **Chromium / Google Chrome** | i PDF | solo per `--pdf` / `--pdf-all` |
 | **Pillow** (`pip install pillow`) | ricomprimere le immagini > 600 KB nell'HTML | opzionale (senza, l'immagine viene incorporata così com'è) |
 | **Docker / Podman** | editor Homebrewery, o PDF senza installare un browser | opzionale |

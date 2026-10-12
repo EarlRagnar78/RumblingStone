@@ -50,9 +50,12 @@ MANCA = 2  # exit code: dipendenza assente. Distinto da 1 = fallimento vero.
 
 #: Versione minima di Python. E' quella che la CI installa e quella che la guida
 #: di setup chiede: se cambia, cambia qui e i due posti che la leggono seguono.
-#: Il 3.11 non e' prudenza, e' un vincolo reale: il codice usa `X | None` nelle
-#: annotazioni valutate e `tomllib`, e i test usano `unittest` moderno.
-PYTHON_MINIMO = (3, 11)
+#: E' il Python di Debian stable, oggi 3.13 (ADR-0081, D7 di
+#: AMBIENTE-RIPRODUCIBILE: «3.13 ovunque»; si sale quando sale Debian). Prima
+#: era 3.11, il minimo che il codice regge (`X | None` nelle annotazioni
+#: valutate, `tomllib`): numpy 2.5 e scipy 1.18 chiedono gia' 3.12, e la CI su
+#: 3.11 non le installava piu' (PR #228).
+PYTHON_MINIMO = (3, 13)
 
 
 class Binario(NamedTuple):

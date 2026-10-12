@@ -224,3 +224,20 @@ La regola di questa ADR non cambia per ciò che il DM esegue: renderer,
 export UVTT e la catena della sessione restano in libreria standard, e
 `test_ambiente` lo verifica. Le librerie Python degli strumenti sono ora
 quattro (`pyyaml`, `Pillow`, `tiktoken`, `tcod`), e due sono obbligatorie.
+
+---
+
+## Emendamento del 2026-10-10 — Python 3.13, il Python di Debian stable
+
+**Stato**: accettato dal DM (D7 di
+[AMBIENTE-RIPRODUCIBILE](../PIANO-AMBIENTE-RIPRODUCIBILE.md), 2026-10-08:
+*«3.13 ovunque»*) · **Dettaglio**: [ADR-0081](ADR-0081-il-contratto-d-ambiente.md).
+
+Il pavimento passa da 3.11 a 3.13, in `binari.PYTHON_MINIMO`, nei due workflow
+e nelle guide. Si sale quando sale Debian stable, e la regola vale anche per
+Dependabot. Il passaggio è arrivato prima del lotto A2 per un motivo
+concreto: la PR di Dependabot #228 alzava i pavimenti a `numpy>=2.5.3` e
+`scipy>=1.18.1`, che chiedono Python 3.12 o più nuovo, e la CI su 3.11 era
+rossa per tutti e sei i pacchetti del gruppo. Chi ha ancora 3.11 resta fuori,
+ed è voluto (ADR-0081). La regola di questa ADR non cambia: cambia solo la
+versione della libreria standard su cui vale.

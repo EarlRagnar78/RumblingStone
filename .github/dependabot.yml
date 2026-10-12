@@ -42,6 +42,11 @@ updates:
       time: "06:00"
       timezone: "Europe/Rome"
     open-pull-requests-limit: 3
+    # ⚠️ Python è quello di Debian stable, oggi 3.13 (AMBIENTE-RIPRODUCIBILE
+    # D7, DM 2026-10-08: «3.13 ovunque»; si sale quando sale Debian, e la
+    # regola vale per Dependabot). Una versione che chiede un Python più
+    # nuovo di quello della CI non si installa e fa rossa la PR di gruppo per
+    # tutti: si ferma qui con un `ignore`, finché Debian non sale.
     groups:
       pip-sicurezza:
         applies-to: security-updates

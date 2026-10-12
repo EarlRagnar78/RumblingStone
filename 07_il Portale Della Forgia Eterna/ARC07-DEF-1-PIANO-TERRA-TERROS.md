@@ -953,6 +953,93 @@ finora la propria avidità nell'arco:
 > mercato — un filo che lega passato e presente della rete di **Varis ↔ Il
 > Collezionista** (CANONE DM 2026-07-23: le due reti sono collegate).
 
+### Il contratto del Seme, per intero `[CANONE — DM 2026-10-11]`
+
+Fino a qui il §6-bis diceva cosa **fa** il Seme, sparso in tre posti. Questa
+è la scheda completa, scritta perché Artemis lo identifica con la pergamena
+del re a ≈372 DR (il Viaggio a mille anni fa, «Le dieci pozioni del gruppo»). Quello che
+segue è **tutto ciò che *identificare* rivela**, e il DM lo dice a voce.
+
+**L'oggetto.** Oggetto magico, **non** artefatto e **non** oggetto maledetto:
+*identificare* funziona e rivela tutto, senza la regola dell'1% delle
+maledizioni. Aura moderata di **Trasmutazione** (l'innesto che si radica) e
+**Ammaliamento** (la parte che parla), livello dell'incantatore 9. Un cabochon
+violetto grande come l'unghia del pollice, pesante come un pugno di piombo,
+sempre tiepido.
+
+**Le clausole** (sono il contratto):
+
+1. **Chi firma.** Il primo che la tocca **con la pelle nuda**: un dito basta,
+   anche senza volerlo. Guanto, panno o pinza non firmano. Non c'è tiro
+   salvezza, perché il Seme non costringe: aspetta.
+2. **La firma.** Il cabochon si scioglie nella pelle e lascia una vena violetta
+   nel palmo. Se chi firma porta un anello o un gioiello sulla mano, il Seme ci
+   si incastona: per Artemis, **nell'Anello**, che è proprio quello che Varis
+   gli chiede. L'Anello reagisce come nel riquadro «La reazione dell'Anello».
+3. **L'anticipo.** Alla firma il debitore riceve il **Frammento di Mercato**:
+   una volta sola, −25% su un acquisto oppure +4 di circostanza a una prova di
+   contrattazione o di Usare Oggetti Magici.
+4. **Il filo.** Chi tiene l'altro capo, il creditore, sa sempre in che
+   direzione e a che distanza si trova il debitore, se è sullo stesso piano.
+5. **La voce.** Il creditore può parlare al debitore, telepaticamente, un
+   minuto al giorno. Una volta alla settimana può tentare una
+   ***suggestione*** (Volontà **CD 16**). È il «controllo» che l'Anello può
+   spezzare con *Dawn's Defiance*.
+6. **La riscossione.** Una carica sola, e **appartiene al creditore**, non a chi
+   porta il Seme. Una volta il creditore chiede il pagamento: un favore, una
+   consegna, un silenzio. Niente obbliga il debitore a pagare. Chi rifiuta
+   però diventa **insolvente**, e da quel momento il creditore è libero di
+   **vendere il filo** a chi vuole.
+7. **Il recesso prima della firma.** Estirparlo pulito o disfarlo: Sapienza
+   Magica **CD 20**. *Dissolvi magie* lo spegne per 1d4 round.
+8. **Il recesso dopo la firma.** Il contratto si chiude **pagando la
+   riscossione**. In alternativa *spezzare incantamento* o *rimuovi
+   maledizione* con prova di livello dell'incantatore **CD 20**, oppure
+   *desiderio*.
+
+**Cosa *identificare* NON dice.** Il nome del creditore, le sue intenzioni, il
+legame con il Collezionista. Mostra soltanto **la firma della bottega**, incisa
+dentro la pietra e visibile solo alla luce dell'incantesimo: una bilancia con
+un filo d'argento avvolto al giogo. La rivedranno a Rethmar, sull'insegna di
+Varis, e allora capiranno.
+
+**A ≈372 DR il creditore non c'è ancora.** Varis nascerà fra quasi mille anni.
+Il contratto è intero, il filo non porta da nessuna parte e la voce tace. Se
+qualcuno firma lì, l'anticipo arriva subito e la vena si chiude, ma filo, voce
+e riscossione **si accendono solo al ritorno nel 1372**. Quel giorno Varis
+scopre un debitore che ha firmato mille anni prima di lui, e per un mercante
+non c'è niente di più interessante.
+
+#### La scena al tavolo — l'ora della pergamena
+
+*Si gioca di persona, con il giocatore di Artemis, e gli altri presenti.*
+
+1. **Lo zaino di Tordek.** Il Seme è lì dal 31 luglio. Artemis deve chiederlo,
+   e quello che dice a Tordek, o che non gli dice, è canone (eco E-07b). Se
+   Tordek chiede «cos'è?», la risposta la sceglie il giocatore.
+2. **La pergamena.** Usare Oggetti Magici **CD 21**. Il warlock può prendere 10
+   (*Deceive Item*, `[Private source — Complete Arcane]`).
+3. **L'ora.** Un'ora con il guanto sulla gemma. Conta **1 tacca** sul foglio
+   della notte: con le 3 già segnate, una scelta lenta in più porta verso le
+   7 tacche (si arriva alle mura correndo). In alternativa la si rimanda a
+   dopo la missione nel campo. È la scelta del tavolo, e va detta prima.
+4. **Il posto.** Brynja non la vuole sull'incudine della cappella («non qui»,
+   una volta, e la seconda più piano). Kettra la lascia fare nella bottega,
+   dietro la porta foderata di piombo.
+5. **Il DM legge le clausole** 1-8 a voce, nell'ordine, poi la firma della
+   bottega. Niente sul creditore.
+6. **Dopo**, il gruppo decide: estirparlo (CD 20), tenerlo com'è, darlo a
+   qualcuno, firmarlo. Ogni strada è nella tabella «Meccanica sintetica» qui
+   sopra, con la correzione dell'ultimo paragrafo per chi firma a ≈372 DR.
+
+> **Read-aloud (Andor lead) — per Artemis, alla fine dell'ora.** *La pergamena si accartoccia
+> in cenere tiepida. Sotto il guanto la gemma non è cambiata: lo stesso peso,
+> lo stesso calore di una mano appena tolta da una tasca. Ma adesso dentro la
+> pietra c'è una scrittura, fitta e ordinata, come in un libro mastro. In
+> fondo alla pagina c'è un segno: una bilancia con un filo d'argento avvolto al
+> giogo. Per tutta l'ora hai aspettato una voce. Non è venuta. Dall'altra
+> parte del filo non c'è ancora nessuno.*
+
 ---
 
 ## §7 — IL TEMPIO DI MITHRAL: PUZZLE GRAVITAZIONALE + SENTINELLA

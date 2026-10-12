@@ -41,7 +41,7 @@ jobs:
 
       - uses: actions/setup-python@v7
         with:
-          python-version: "3.11"
+          python-version: "3.13"
 
       - name: Versioni minime dichiarate (`>=` diventa `==`)
         run: |
@@ -76,7 +76,7 @@ jobs:
 
       - uses: actions/setup-python@v7
         with:
-          python-version: "3.11"
+          python-version: "3.13"
 
       - name: Installa le versioni minime
         run: |

@@ -8,12 +8,12 @@
 | # | Dove | Chi | GS | EL | Tesoro SRD per EL |
 |---|---|---|---|---|---|
 | 1 | Rethmar, superficie (facoltativo) | gli agenti di Sal o gli schiavi skum che sorvegliano la discesa | da costruire | 12-13 | 9.800-13.000 mo |
-| 2 | Cisterna, quota alta | 2 Ragni delle Catene (ragno fase avanzato a 14 DV, Enorme) | 9 ciascuno senza le catene (5 + 3 per 9 DV di bestia magica + 1 per la taglia), 10-11 con le catene | 12-13 | 13.000-17.000 mo |
+| 2 | Cisterna, quota alta | 2 Ragni delle Catene (ragno fase avanzato a 14 DV, Enorme) | 9 ciascuno senza le catene (5 + 3 per 9 DV di bestia magica + 1 per la taglia), 10-11 con le catene | 12-13 | 9.800-13.000 mo |
 | 3 | Cisterna, navate (facoltativo) | chuul avanzati nell'acqua bassa | 8-9 ciascuno | 13 | 13.000 mo |
 | 4 | Torre delle Volte | Mastro Tariq (chierico 13) + 2 skum guerriero 8 | 13 + 10 + 10 | 15 | 22.000 mo |
 | 5 | Santuario di Sale | Karkator (aboleth avanzato, Mastodontico) con il Cuore di Selenite | 15-17, da calcolare | 16-17 | 28.000-36.000 mo |
 
-Una sessione di 6-7 ore regge tre scontri pieni e uno o due brevi. Con i facoltativi fuori il budget sta fra **63.000** (EL 14 + 15 + 16) e **75.000 mo** (EL 14 + 15 + 17). Con tutti e cinque gli scontri arriva a circa **100.000 mo**.
+Una sessione di 6-7 ore regge tre scontri pieni e uno o due brevi. Con i facoltativi fuori il budget sta fra **63.000** (EL 13 + 15 + 16) e **71.000 mo** (EL 13 + 15 + 17). Con tutti e cinque gli scontri arriva a circa **97.000 mo**.
 
 ## Il tesoro della chat contro il budget
 
@@ -26,7 +26,7 @@ Una sessione di 6-7 ore regge tre scontri pieni e uno o due brevi. Con i facolta
 | Taglia del Visir | 25.000 mo e un palazzo |
 | **Totale** | circa **161.000 mo**, più il palazzo |
 
-Il tesoro della chat è il **doppio o più** del budget SRD della sessione, anche con tutti e cinque gli scontri. La proposta è riportarlo a circa 75.000-100.000 mo così:
+Il tesoro della chat è il **doppio o più** del budget SRD della sessione, anche con tutti e cinque gli scontri. La proposta è riportarlo a circa 70.000-97.000 mo così:
 
 - il Cuore resta, perché è il centro della storia: si ricalcola come oggetto meraviglioso con i suoi poteri dopo la purificazione (*creare acqua* a volontà, +2 alla CD degli incantesimi d'acqua). Il prezzo si calcola, non si dichiara;
 - Tariq ne porta uno solo fra l'arma +3 anarchica e l'anello +4;

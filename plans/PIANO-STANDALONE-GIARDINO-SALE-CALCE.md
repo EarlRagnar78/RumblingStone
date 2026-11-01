@@ -20,7 +20,7 @@ Il materiale vale come traccia, non come modulo: tre aree e tre scontri, mappe s
 | D2 | Collocazione | fuori canone, città inventata come l'Abbazia, per gruppi di 13°; un riquadro per Thorik, Tordek, Hella e Artemis; `state.md` non si tocca | card |
 | D3 | Ampiezza | media: un atto breve in città e 12-16 aree nella cisterna su tre quote, una sessione di 6-7 ore | card |
 | D4 | Titolo | *Il Giardino di Sale e Calce* | card |
-| D5 | Il boss | aboleth SRD avanzato a conti, potenziato con la regola della versione più terrificante (3.5, poi PF1e, poi SRD), fonte segnata | card |
+| D5 | Il boss | aboleth SRD avanzato a conti, potenziato con la regola della versione più terrificante (3.5, poi PF1e, poi SRD), fonte segnata | ✅ decisa dal DM il 2026-11-01 (card): la proposta |
 
 ## Fase A — Audit
 

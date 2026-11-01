@@ -105,6 +105,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | A0: inventario della chat Gemini e piano aperto | ✅ chat letta per intero, copia e inventario in project-files; cinque decisioni al DM (sistema, collocazione, ampiezza, titolo, boss) |
 | 2026-10-31 | STANDARD-STAMPA | I2 seguito: nessun disegno a caratteri stampato in tutto il repo | ✅ linee del tempo di Palio e Drappo in tabella; `validate_booklets` ferma i recinti con ≥ 20 caratteri di riquadro fuori dall'apparato |
 | 2026-10-30 | STANDARD-STAMPA | I2 seguito: le sei mappe schematiche di ARC-07 in pianta o in schema (ADR-0106… | ✅ nessuna griglia ASCII stampata nei booklet di ARC-07; T-5, R-1, S-1 in scala, T-1, T-4, M7-A schemi a 7,4 pt senza filtri, `render_schemi.py --check` in CI |
 | 2026-10-30 | STANDARD-STAMPA | I2 chiuso: pianta in stampa per tutte le 56 mappe del repo (ADR-0106), controll… | ✅ scritte sotto 7 pt 5.820→0 e filtri rasterizzati 418→0 sulle 56 mappe, nessun testo perso; ARC-07 righe sotto 7 pt a 0 in tutti e tre i volumi (Notte e Alba… |
@@ -116,7 +117,6 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-10-29 | ADR-0105 · riquadro unico delle creatur… | conversione ARC-07 e Palio; misura per booklet con tetti | 🟡 da 4/79 a 50/88 schede nel riquadro; ARC-07 e Palio al 100%; Abbazia e Drappo in corso |
 | 2026-10-29 | ARC-07 · il barile sulla tenda (decisio… | il DM accetta tutte le proposte ★ tranne B25 (*«tutti gli inferred ok a parte i… | ✅ B1-B15 e B22-B24 decise, i 22 INFERRED del documento diventano canone del 2026-10-29; poi B25 decisa dal DM con la card: la furia (le bande d'orchi corrono a… |
 | 2026-10-24 | ARC-07 · il barile sulla tenda (esperim… | la botte d'olio con le fiale della fenice lasciata cadere da 48 m sulla tenda d… | 🟡 Fisica della caduta (3,15 s, 30 m/s, deriva 20 cm), tiro di sgancio della casa che non rompe l'invisibilità, oggetto in caduta 15d6 (SRD 3.5), palle di fuoco… |
-| 2026-10-24 | RIPRESA-PR-ABBANDONATE | 4g-2, prima parte: le caratteristiche dei PG che il repo attesta | 🟡 15 caselle su 24 (Tordek dalla scheda PCGen, Hella da DEF-3, FOR di Thorik da P1); restano 9 al DM con un modulo |
 
 ## Le misure che si portano dietro
 

@@ -3,7 +3,7 @@
 **Cos'è.** I ritratti e le tavole che mancano alla serata della resurrezione e al
 volume del viaggio a mille anni fa, scritti **nello stesso formato e nello stesso
 stile del Drappo di Tarsilia**
-(`STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md`),
+(`10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md`),
 su richiesta del DM del 2026-09-24: le immagini devono sembrare della stessa mano.
 
 Si generano con la stessa pipeline:

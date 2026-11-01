@@ -265,7 +265,7 @@ dopo, anche.
 
    ```bash
    python3 scripts/export_booklet_typst.py \
-       STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-SCHEDE-PG.manifest.json
+       10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-SCHEDE-PG.manifest.json
    ```
 
    e vengono da cap. XIII + `FASCICOLO-SCHEDE-GIOCATORE.md`, che
@@ -445,9 +445,7 @@ delle tre giornate e i due contatori, Morale del Rione e Onore del Fantino.
 | Posta | la Matrice del Mythal per l'assedio di Rethmar | l'Istrice accorpata se non arriva fra i primi tre |
 | Solo lì | prove d'ammissione, Sospetto, Influenza, eventi di giro | Peso di contrada, tavola di fuori, curva nord |
 
-La misura completa, ripetibile con uno script, è in
-`plans/esperimenti/drappo-palio-2026-11-01/RAPPORTO.md`. Il dettaglio legale sta in
-`IP-E-LICENZE.md`.
+Il dettaglio legale sta in `IP-E-LICENZE.md`.
 
 
 \page
@@ -1528,7 +1526,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 primi tre, la contrada viene accorpata alla n. 3.
 
 > **Stemmi.** Gli otto scudi stanno in
-> `../09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/P2D-Palio-Allegati/stemmi/golarion/NN-*.svg`
+> `../../09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/P2D-Palio-Allegati/stemmi/golarion/NN-*.svg`
 > nell'ordine della tabella. Sono **generati**: si citano, non si copiano (vedi §7).
 
 ---

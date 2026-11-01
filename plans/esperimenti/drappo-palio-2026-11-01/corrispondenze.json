@@ -9,11 +9,11 @@
  "B": {
   "nome": "Drappo di Tarsilia",
   "file": [
-   "STANDALONE-Il-Drappo-di-Tarsilia/*.md"
+   "10-stand-alone/Il-Drappo-di-Tarsilia/*.md"
   ],
   "escludi": [
-   "STANDALONE-Il-Drappo-di-Tarsilia/IP-E-LICENZE.md",
-   "STANDALONE-Il-Drappo-di-Tarsilia/PROMPT-*.md"
+   "10-stand-alone/Il-Drappo-di-Tarsilia/IP-E-LICENZE.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/PROMPT-*.md"
   ]
  },
  "concetti": [

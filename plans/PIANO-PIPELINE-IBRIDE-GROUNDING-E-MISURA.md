@@ -407,7 +407,7 @@ con quei difetti dentro produrrebbe 194 falsi allarmi al primo giro e viene spen
 settimana dopo.
 
 **Il difetto vero, trovato e verificato a mano.**
-`STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/mappe/tarsilia-stalle.md` disegna
+`10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/mappe/tarsilia-stalle.md` disegna
 **tre box da 12 quadretti chiusi su quattro lati** da `🏰` (muratura piena:
 blocca vista e movimento), **senza un solo `🚪`**. Dentro due di essi stanno
 `🟢` a **H12** e **L12**, che il master stesso nomina: *«H12 box del cavallo»*,

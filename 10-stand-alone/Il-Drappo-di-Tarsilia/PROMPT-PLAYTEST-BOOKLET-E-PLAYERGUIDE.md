@@ -69,16 +69,16 @@ giocatori da 0,04 a 2,5 MB. Sono le figure: prima non c'erano.
 #    - rumblingstone-plans      (per chiudere: piano + INDEX + CHANGELOG, stesso commit)
 
 # 2. rigenerare gli oggetti da guardare
-cd STANDALONE-Il-Drappo-di-Tarsilia/homebrew
-python3 ../../scripts/build_booklet_html.py DRAPPO-BOOKLET-DM.manifest.json --format both
-python3 ../../scripts/build_booklet_html.py DRAPPO-BOOKLET-GIOCATORI.manifest.json --format both
+cd 10-stand-alone/Il-Drappo-di-Tarsilia/homebrew
+python3 ../../../scripts/build_booklet_html.py DRAPPO-BOOKLET-DM.manifest.json --format both
+python3 ../../../scripts/build_booklet_html.py DRAPPO-BOOKLET-GIOCATORI.manifest.json --format both
 
 # 3. la versione da stampa, che è quella dove l'impaginazione si vede davvero
-python3 ../../scripts/export_booklet_typst.py DRAPPO-BOOKLET-DM.manifest.json --all
-python3 ../../scripts/export_booklet_typst.py DRAPPO-BOOKLET-GIOCATORI.manifest.json
+python3 ../../../scripts/export_booklet_typst.py DRAPPO-BOOKLET-DM.manifest.json --all
+python3 ../../../scripts/export_booklet_typst.py DRAPPO-BOOKLET-GIOCATORI.manifest.json
 
 # 4. GUARDARLE. Non basta che compilino: rendere le pagine in PNG e passarle in rassegna
-typst compile --font-path ../../scripts/typst/fonts --root ../.. \
+typst compile --font-path ../../../scripts/typst/fonts --root ../../.. \
     --format png --ppi 110 DRAPPO-BOOKLET-DM.typ 'pagina{n}.png'   # serve --keep-typ al passo 3
 ```
 

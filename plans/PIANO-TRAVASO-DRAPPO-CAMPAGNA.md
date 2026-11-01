@@ -304,5 +304,5 @@ riga in `plans/CHANGELOG.md`.
 - [ADR-0020](adr/ADR-0020-edizione-da-stampa-su-un-secondo-binario.md): la catena di stampa, già condivisa
 - `skills/rumblingstone-indagine`: il vocabolario per A6
 - `skills/rumblingstone-playtest`: cosa misura se l'apparato funziona (ADR-0018: due tavoli veri)
-- `STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md`: il modello di A1
+- `10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md`: il modello di A1
 - `08_La Battaglia Di Hammerfist/ARC08-16-CUE-SONORI.md`: il modello dei suoni, e l'esempio di come si dichiara il debito

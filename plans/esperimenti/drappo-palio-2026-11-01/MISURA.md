@@ -6,16 +6,17 @@ Generato da `scripts/misura_derivazione.py`. Non modificare a mano: si rigenera 
 
 | Misura | Valore |
 |---|---|
-| Parole di A / di B | 27416 / 40933 |
-| 6-grammi di B presenti anche in A | 0,0% (7 su 40036) |
+| Parole di A / di B | 27416 / 41051 |
+| 6-grammi di B presenti anche in A | 0,0% (9 su 40154) |
 | 6-grammi di A presenti anche in B | 0,0% |
 | Jaccard dei 6-grammi | 0,0% |
-| Frasi di B quasi copiate da A (≥60% dei 4-grammi) | 0 su 2234 |
+| Frasi di B quasi copiate da A (≥60% dei 4-grammi) | 0 su 2240 |
 | Titoli di B simili a un titolo di A (≥0.75) | 9 su 261 |
 | Nomi propri ricorrenti in comune | 20 (Jaccard 8,3%) |
 
 ### Passaggi comuni più lunghi
 
+- 7 parole, `00-HUB-E-QUICKSTART-DM.md`: «morale del rione e onore del fantino»
 - 6 parole, `03-GIORNO-3-LO-STACCO-E-LA-CORSA.md`: «1 alba la benedizione del cavallo»
 - 6 parole, `03-GIORNO-3-LO-STACCO-E-LA-CORSA.md`: «la benedizione il cavallo entra nell'oratorio»
 - 6 parole, `05-INIZIAZIONE-E-EVENTI-PG.md`: «il momento in cui i giocatori»
@@ -40,7 +41,7 @@ Generato da `scripts/misura_derivazione.py`. Non modificare a mano: si rigenera 
 
 ### Nomi propri in comune
 
-Bruco (17/40), Cena (18/28), Civetta (36/8), Torre (27/12), Animali (12/18), Drago (17/6), Magica (14/6), Nonna (6/12), Partiti (4/13), Capitani (4/12), Rione (11/5), Ferrante (4/11), Curva (4/9), Leocorno (3/9), Intrattenere (4/7), Bardo (5/5), Mano (7/3), Oca (6/4), Salvatore (7/3), Golarion (6/3)
+Bruco (17/40), Cena (18/28), Civetta (36/8), Torre (27/12), Animali (12/18), Drago (17/6), Magica (14/6), Nonna (6/12), Partiti (4/13), Rione (11/6), Capitani (4/12), Ferrante (4/11), Curva (4/9), Leocorno (3/10), Intrattenere (4/7), Bardo (5/5), Mano (7/3), Oca (6/4), Salvatore (7/3), Golarion (6/3)
 
 ## Impianto (corrispondenze dichiarate)
 
@@ -48,9 +49,9 @@ Bruco (17/40), Cena (18/28), Civetta (36/8), Torre (27/12), Animali (12/18), Dra
 |---|---|---|---|---|---|
 | contrade | 10 | 1 | 1 | 0 | 91,7% |
 | png | 2 | 6 | 3 | 1 | 66,7% |
-| regole | 5 | 2 | 6 | 0 | 53,8% |
+| regole | 7 | 2 | 4 | 0 | 69,2% |
 | scene | 8 | 7 | 3 | 5 | 65,2% |
-| struttura | 5 | 0 | 4 | 5 | 35,7% |
+| struttura | 7 | 0 | 2 | 5 | 50,0% |
 
 | Concetto | Dimensione | Stato | Occ. A | Occ. B | Nota |
 |---|---|---|---|---|---|
@@ -58,11 +59,11 @@ Bruco (17/40), Cena (18/28), Civetta (36/8), Torre (27/12), Animali (12/18), Dra
 | I PG sono il governo di una contrada | struttura | stesso nome | 5 | 3 |  |
 | Tarato per PG di 12°-13° | struttura | solo A | 10 | 0 |  |
 | Tarato per sei PG di 3° | struttura | solo B | 0 | 9 |  |
-| Schede pregenerate | struttura | solo B | 0 | 3 |  |
-| Ingresso dei PG con prove d'ammissione | struttura | solo A | 11 | 0 |  |
-| Il Peso di contrada (quattro vie per pagarlo) | struttura | solo B | 0 | 10 |  |
-| Posta: Matrice del Mythal e Meraviglie d'assedio | struttura | solo A | 70 | 0 |  |
-| Posta: la contrada dei PG rischia l'accorpamento | struttura | solo B | 0 | 8 |  |
+| Schede pregenerate | struttura | solo B | 0 | 4 |  |
+| Ingresso dei PG con prove d'ammissione | struttura | stesso nome | 11 | 1 |  |
+| Il Peso di contrada (quattro vie per pagarlo) | struttura | solo B | 0 | 11 |  |
+| Posta: Matrice del Mythal e Meraviglie d'assedio | struttura | stesso nome | 70 | 1 |  |
+| Posta: la contrada dei PG rischia l'accorpamento | struttura | solo B | 0 | 9 |  |
 | Aggancio a clock e assedio della campagna | struttura | solo A | 26 | 0 |  |
 | Avanzamento a pietre miliari | struttura | stesso nome | 3 | 6 |  |
 | Epiloghi per esito | struttura | stesso nome | 8 | 8 |  |
@@ -75,7 +76,7 @@ Bruco (17/40), Cena (18/28), Civetta (36/8), Torre (27/12), Animali (12/18), Dra
 | Prove di corsa prima del Palio | scene | rinominato | 2 | 4 |  |
 | G2: i Partiti (accordi segreti fra contrade) | scene | stesso nome | 53 | 24 |  |
 | G2: il banco delle scommesse | scene | stesso nome | 1 | 2 |  |
-| G2: la tavola di fuori | scene | solo B | 0 | 5 |  |
+| G2: la tavola di fuori | scene | solo B | 0 | 6 |  |
 | La sbandierata in piazza | scene | stesso nome | 20 | 13 |  |
 | Sfida dei canti fra contrade | scene | rinominato | 6 | 17 |  |
 | G2 sera: la cena prima della corsa | scene | rinominato | 3 | 8 |  |
@@ -86,7 +87,7 @@ Bruco (17/40), Cena (18/28), Civetta (36/8), Torre (27/12), Animali (12/18), Dra
 | G3: corteo storico | scene | stesso nome | 7 | 18 |  |
 | G3: la partenza (Mossa / Stacco) | scene | rinominato | 24 | 29 |  |
 | La corsa in tre giri | scene | stesso nome | 9 | 8 |  |
-| Climax alla curva nord | scene | solo B | 0 | 36 |  |
+| Climax alla curva nord | scene | solo B | 0 | 37 |  |
 | Il decreto finale | scene | stesso nome | 16 | 23 |  |
 | G4: cavalcata di soccorso verso Rethmar | scene | solo A | 3 | 0 |  |
 | Il drappo dipinto in premio | scene | rinominato | 19 | 10 |  |
@@ -106,25 +107,25 @@ Bruco (17/40), Cena (18/28), Civetta (36/8), Torre (27/12), Animali (12/18), Dra
 | Oca | contrade | stesso nome | 72 | 50 |  |
 | Torre | contrade | stesso nome | 64 | 27 |  |
 | Bruco | contrade | stesso nome | 44 | 59 |  |
-| Istrice | contrade | stesso nome | 63 | 65 |  |
+| Istrice | contrade | stesso nome | 63 | 66 |  |
 | Drago | contrade | stesso nome | 53 | 18 |  |
 | Civetta | contrade | stesso nome | 67 | 23 |  |
-| Unicorno / Leocorno | contrade | stesso nome | 34 | 21 |  |
+| Unicorno / Leocorno | contrade | stesso nome | 34 | 22 |  |
 | Onda | contrade | stesso nome | 60 | 28 |  |
 | Divinità delle contrade | contrade | rinominato | 122 | 29 | una a una, da Faerûn a Golarion |
 | Gli otto motti del Palio | contrade | solo A | 28 | 0 | il Drappo li ha riscritti tutti |
 | Mappa delle rivalità | contrade | stesso nome | 14 | 2 |  |
 | Stemmi della serie Golarion | contrade | stesso nome | 3 | 2 |  |
-| Contatore del Morale | regole | stesso nome | 62 | 90 |  |
-| Contatore dell'Onore del Fantino | regole | stesso nome | 5 | 4 | stessi due contatori 0-10 del Master del Palio §3.3 |
+| Contatore del Morale | regole | stesso nome | 62 | 91 |  |
+| Contatore dell'Onore del Fantino | regole | stesso nome | 5 | 5 | stessi due contatori 0-10 del Master del Palio §3.3 |
 | Contatore Sospetto 0-5 | regole | solo A | 4 | 0 |  |
-| Influenza nei Partiti | regole | solo A | 16 | 0 |  |
+| Influenza nei Partiti | regole | stesso nome | 16 | 2 |  |
 | Skill challenge | regole | solo A | 7 | 0 |  |
 | Inseguimento a lunghezze | regole | stesso nome | 14 | 15 |  |
 | Frustare gli avversari in corsa | regole | rinominato | 40 | 20 |  |
 | Il cavallo scosso può vincere | regole | stesso nome | 28 | 12 |  |
 | Cadute di corsa | regole | stesso nome | 13 | 5 |  |
-| Eventi casuali di giro (d10) | regole | solo A | 2 | 0 |  |
+| Eventi casuali di giro (d10) | regole | stesso nome | 2 | 1 |  |
 | Cosa fanno i PG che non corrono | regole | rinominato | 4 | 1 |  |
 | Fantino Cavaliere o Ladro | regole | solo A | 7 | 0 |  |
 | Cavalli forti e deboli (bomboloni e brenne) | regole | solo A | 26 | 0 |  |
@@ -133,7 +134,7 @@ Bruco (17/40), Cena (18/28), Civetta (36/8), Torre (27/12), Animali (12/18), Dra
 
 | File | Parole | 6-grammi presenti in A |
 |---|---|---|
-| `00-HUB-E-QUICKSTART-DM.md` | 2355 | 0,0% |
+| `00-HUB-E-QUICKSTART-DM.md` | 2473 | 0,1% |
 | `01-GIORNO-1-LA-SORTE.md` | 2867 | 0,0% |
 | `02-GIORNO-2-I-PARTITI-E-LA-CENA.md` | 4340 | 0,0% |
 | `03-GIORNO-3-LO-STACCO-E-LA-CORSA.md` | 2971 | 0,1% |

@@ -13,7 +13,7 @@
       "tetto": 1,
       "perche": "il rimando al gate d'uscita IP (GUIDA-CONDIVISIONE-IP.md) nelle note d'edizione: è voluto, dice al lettore dove sta la regola per condividere il modulo"
     },
-    "STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-DM.manifest.json": {
+    "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-DM.manifest.json": {
       "tetto": 43,
       "perche": "la mappa dei file del modulo nell'hub (un modulo autonomo la dà al DM che lo scarica), i comandi per rigenerare le mappe, lo STATO-DEL-MODULO da stampare a parte: cosa sia apparato in un modulo autonomo lo decide il DM, lotto successivo di CICLO-SESSIONE 2g"
     }

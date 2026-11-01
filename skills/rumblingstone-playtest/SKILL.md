@@ -172,7 +172,7 @@ modulo (il villain è stato capito? il dilemma ha tenuto?).
 
 **Regole di raccolta**: anonime, compilate **prima di alzarsi**, lette **il giorno
 dopo**. Modello pronto:
-`STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md`.
+`10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md`.
 
 **Come si leggono**: cerca **le ripetizioni**, non le opinioni singole. Tre giocatori
 su sei che scrivono lo stesso punto morto = difetto del modulo. Uno solo = quella

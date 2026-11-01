@@ -22,150 +22,155 @@
  "B": {
   "nome": "Drappo di Tarsilia",
   "file": [
-   "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-   "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-   "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-   "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-   "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-   "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
-   "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-   "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-   "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-   "STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
-   "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
-   "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-   "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
-   "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-   "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md",
-   "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
-   "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
-   "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
-   "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+   "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
   ]
  },
  "testo": {
   "parole_A": 27416,
-  "parole_B": 40933,
+  "parole_B": 41051,
   "shingle_n": 6,
   "jaccard": 0.0001,
-  "shingle_comuni": 7,
-  "shingle_B": 40036,
+  "shingle_comuni": 9,
+  "shingle_B": 40154,
   "B_contenuto_in_A": 0.0002,
   "A_contenuto_in_B": 0.0003,
-  "frasi_B": 2234,
+  "frasi_B": 2240,
   "frasi_B_quasi_da_A": 0,
   "esempi_frasi": [],
   "passaggi_comuni_piu_lunghi": [
    {
+    "parole": 7,
+    "file": "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+    "testo": "morale del rione e onore del fantino"
+   },
+   {
     "parole": 6,
-    "file": "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+    "file": "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
     "testo": "1 alba la benedizione del cavallo"
    },
    {
     "parole": 6,
-    "file": "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+    "file": "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
     "testo": "la benedizione il cavallo entra nell'oratorio"
    },
    {
     "parole": 6,
-    "file": "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+    "file": "10-stand-alone/Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
     "testo": "il momento in cui i giocatori"
    },
    {
     "parole": 6,
-    "file": "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+    "file": "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
     "testo": "verde legnoferro e bruno di terra"
    },
    {
     "parole": 6,
-    "file": "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+    "file": "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
     "testo": "3 successi prima di 3 fallimenti"
    },
    {
     "parole": 6,
-    "file": "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+    "file": "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
     "testo": "la partenza sette cavalli entrano fra"
    },
    {
     "parole": 6,
-    "file": "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
+    "file": "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
     "testo": "non tradisce mai un patto bruco"
    }
   ],
   "per_file_B": {
-   "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md": {
-    "parole": 2355,
-    "contenuto_in_A": 0.0
+   "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md": {
+    "parole": 2473,
+    "contenuto_in_A": 0.0008
    },
-   "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md": {
+   "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md": {
     "parole": 2867,
     "contenuto_in_A": 0.0
    },
-   "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md": {
+   "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md": {
     "parole": 4340,
     "contenuto_in_A": 0.0
    },
-   "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md": {
+   "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md": {
     "parole": 2971,
     "contenuto_in_A": 0.0007
    },
-   "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md": {
+   "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md": {
     "parole": 1978,
     "contenuto_in_A": 0.0
    },
-   "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md": {
+   "10-stand-alone/Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md": {
     "parole": 2195,
     "contenuto_in_A": 0.0005
    },
-   "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md": {
+   "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md": {
     "parole": 3028,
     "contenuto_in_A": 0.0
    },
-   "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md": {
+   "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md": {
     "parole": 2047,
     "contenuto_in_A": 0.0
    },
-   "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md": {
+   "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md": {
     "parole": 1874,
     "contenuto_in_A": 0.0
    },
-   "STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md": {
+   "10-stand-alone/Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md": {
     "parole": 953,
     "contenuto_in_A": 0.0
    },
-   "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md": {
+   "10-stand-alone/Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md": {
     "parole": 3206,
     "contenuto_in_A": 0.0
    },
-   "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md": {
+   "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md": {
     "parole": 1596,
     "contenuto_in_A": 0.0006
    },
-   "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md": {
+   "10-stand-alone/Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md": {
     "parole": 1654,
     "contenuto_in_A": 0.0
    },
-   "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md": {
+   "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md": {
     "parole": 1991,
     "contenuto_in_A": 0.0
    },
-   "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md": {
+   "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md": {
     "parole": 615,
     "contenuto_in_A": 0.0
    },
-   "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md": {
+   "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md": {
     "parole": 2454,
     "contenuto_in_A": 0.0
    },
-   "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md": {
+   "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md": {
     "parole": 2094,
     "contenuto_in_A": 0.001
    },
-   "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md": {
+   "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md": {
     "parole": 2059,
     "contenuto_in_A": 0.0005
    },
-   "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md": {
+   "10-stand-alone/Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md": {
     "parole": 656,
     "contenuto_in_A": 0.0
    }
@@ -276,14 +281,14 @@
     "B": 13
    },
    {
+    "nome": "Rione",
+    "A": 11,
+    "B": 6
+   },
+   {
     "nome": "Capitani",
     "A": 4,
     "B": 12
-   },
-   {
-    "nome": "Rione",
-    "A": 11,
-    "B": 5
    },
    {
     "nome": "Ferrante",
@@ -298,7 +303,7 @@
    {
     "nome": "Leocorno",
     "A": 3,
-    "B": 9
+    "B": 10
    },
    {
     "nome": "Intrattenere",
@@ -346,12 +351,12 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md"
     ],
     "nota": ""
    },
@@ -369,8 +374,8 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md"
     ],
     "nota": ""
    },
@@ -401,10 +406,10 @@
     "occorrenze_B": 9,
     "file_A": [],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md"
     ],
     "nota": ""
    },
@@ -414,12 +419,12 @@
     "descrizione": "Schede pregenerate",
     "stato": "solo B",
     "occorrenze_A": 0,
-    "occorrenze_B": 3,
+    "occorrenze_B": 4,
     "file_A": [],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
     ],
     "nota": ""
    },
@@ -427,16 +432,18 @@
     "id": "ammissione",
     "dimensione": "struttura",
     "descrizione": "Ingresso dei PG con prove d'ammissione",
-    "stato": "solo A",
+    "stato": "stesso nome",
     "occorrenze_A": 11,
-    "occorrenze_B": 0,
+    "occorrenze_B": 1,
     "file_A": [
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md"
     ],
-    "file_B": [],
+    "file_B": [
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md"
+    ],
     "nota": ""
    },
    {
@@ -445,14 +452,15 @@
     "descrizione": "Il Peso di contrada (quattro vie per pagarlo)",
     "stato": "solo B",
     "occorrenze_A": 0,
-    "occorrenze_B": 10,
+    "occorrenze_B": 11,
     "file_A": [],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
     ],
     "nota": ""
    },
@@ -460,9 +468,9 @@
     "id": "posta-mythal",
     "dimensione": "struttura",
     "descrizione": "Posta: Matrice del Mythal e Meraviglie d'assedio",
-    "stato": "solo A",
+    "stato": "stesso nome",
     "occorrenze_A": 70,
-    "occorrenze_B": 0,
+    "occorrenze_B": 1,
     "file_A": [
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
@@ -473,7 +481,9 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md"
     ],
-    "file_B": [],
+    "file_B": [
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md"
+    ],
     "nota": ""
    },
    {
@@ -482,14 +492,14 @@
     "descrizione": "Posta: la contrada dei PG rischia l'accorpamento",
     "stato": "solo B",
     "occorrenze_A": 0,
-    "occorrenze_B": 8,
+    "occorrenze_B": 9,
     "file_A": [],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md"
     ],
     "nota": ""
    },
@@ -522,9 +532,9 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md"
     ],
     "nota": ""
    },
@@ -543,11 +553,11 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
     ],
     "nota": ""
    },
@@ -565,10 +575,10 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
     ],
     "nota": ""
    },
@@ -581,16 +591,16 @@
     "occorrenze_B": 24,
     "file_A": [],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
     ],
     "nota": ""
    },
@@ -608,8 +618,8 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md"
     ],
     "nota": "in B gli emissari ci sono, la locanda no"
    },
@@ -631,8 +641,8 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
     ],
     "nota": ""
    },
@@ -660,12 +670,12 @@
     "occorrenze_B": 10,
     "file_A": [],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
     ],
     "nota": ""
    },
@@ -681,9 +691,9 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
     ],
     "nota": ""
    },
@@ -709,17 +719,17 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
     ],
     "nota": ""
    },
@@ -734,8 +744,8 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md"
     ],
     "nota": ""
    },
@@ -745,13 +755,14 @@
     "descrizione": "G2: la tavola di fuori",
     "stato": "solo B",
     "occorrenze_A": 0,
-    "occorrenze_B": 5,
+    "occorrenze_B": 6,
     "file_A": [],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
     ],
     "nota": ""
    },
@@ -770,15 +781,15 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
     ],
     "nota": ""
    },
@@ -796,15 +807,15 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
     ],
     "nota": ""
    },
@@ -821,11 +832,11 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
     ],
     "nota": ""
    },
@@ -842,11 +853,11 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
     ],
     "nota": "A: drow di Sonjak GS 11-12; B: Sfregio GS 5"
    },
@@ -859,11 +870,11 @@
     "occorrenze_B": 7,
     "file_A": [],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md"
     ],
     "nota": ""
    },
@@ -881,16 +892,16 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md"
     ],
     "nota": ""
    },
@@ -903,8 +914,8 @@
     "occorrenze_B": 3,
     "file_A": [],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md"
     ],
     "nota": ""
    },
@@ -922,16 +933,16 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
     ],
     "nota": ""
    },
@@ -953,16 +964,16 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
     ],
     "nota": ""
    },
@@ -980,11 +991,11 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-MAPPE.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
     ],
     "nota": ""
    },
@@ -994,24 +1005,24 @@
     "descrizione": "Climax alla curva nord",
     "stato": "solo B",
     "occorrenze_A": 0,
-    "occorrenze_B": 36,
+    "occorrenze_B": 37,
     "file_A": [],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
     ],
     "nota": ""
    },
@@ -1032,15 +1043,15 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
     ],
     "nota": ""
    },
@@ -1076,14 +1087,14 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
     ],
     "nota": ""
    },
@@ -1124,20 +1135,20 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
     ],
     "nota": ""
    },
@@ -1160,18 +1171,18 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
     ],
     "nota": ""
    },
@@ -1186,8 +1197,8 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
     ],
     "nota": ""
    },
@@ -1208,22 +1219,22 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
     ],
     "nota": ""
    },
@@ -1245,19 +1256,19 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
     ],
     "nota": ""
    },
@@ -1278,10 +1289,10 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md"
     ],
     "nota": "ruoli diversi: A allibratore, B mediatore degli incarichi"
    },
@@ -1302,22 +1313,22 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
     ],
     "nota": ""
    },
@@ -1342,17 +1353,17 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md"
     ],
     "nota": ""
    },
@@ -1380,22 +1391,22 @@
     "occorrenze_B": 162,
     "file_A": [],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
     ],
     "nota": ""
    },
@@ -1455,19 +1466,19 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
     ],
     "nota": ""
    },
@@ -1495,16 +1506,16 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
     ],
     "nota": ""
    },
@@ -1531,20 +1542,20 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
     ],
     "nota": ""
    },
@@ -1554,7 +1565,7 @@
     "descrizione": "Istrice",
     "stato": "stesso nome",
     "occorrenze_A": 63,
-    "occorrenze_B": 65,
+    "occorrenze_B": 66,
     "file_A": [
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md",
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
@@ -1571,21 +1582,21 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
     ],
     "nota": ""
    },
@@ -1611,17 +1622,17 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
     ],
     "nota": ""
    },
@@ -1649,16 +1660,16 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
     ],
     "nota": ""
    },
@@ -1668,7 +1679,7 @@
     "descrizione": "Unicorno / Leocorno",
     "stato": "stesso nome",
     "occorrenze_A": 34,
-    "occorrenze_B": 21,
+    "occorrenze_B": 22,
     "file_A": [
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md",
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
@@ -1683,16 +1694,17 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
     ],
     "nota": ""
    },
@@ -1720,15 +1732,15 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
     ],
     "nota": ""
    },
@@ -1752,12 +1764,12 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
     ],
     "nota": "una a una, da Faerûn a Golarion"
    },
@@ -1794,8 +1806,8 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md"
     ],
     "nota": ""
    },
@@ -1811,7 +1823,7 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md"
     ],
     "nota": ""
    },
@@ -1821,7 +1833,7 @@
     "descrizione": "Contatore del Morale",
     "stato": "stesso nome",
     "occorrenze_A": 62,
-    "occorrenze_B": 90,
+    "occorrenze_B": 91,
     "file_A": [
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md",
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
@@ -1836,22 +1848,22 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
     ],
     "nota": ""
    },
@@ -1861,16 +1873,16 @@
     "descrizione": "Contatore dell'Onore del Fantino",
     "stato": "stesso nome",
     "occorrenze_A": 5,
-    "occorrenze_B": 4,
+    "occorrenze_B": 5,
     "file_A": [
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
     ],
     "nota": "stessi due contatori 0-10 del Master del Palio §3.3"
    },
@@ -1892,15 +1904,17 @@
     "id": "influenza",
     "dimensione": "regole",
     "descrizione": "Influenza nei Partiti",
-    "stato": "solo A",
+    "stato": "stesso nome",
     "occorrenze_A": 16,
-    "occorrenze_B": 0,
+    "occorrenze_B": 2,
     "file_A": [
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md"
     ],
-    "file_B": [],
+    "file_B": [
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md"
+    ],
     "nota": ""
    },
    {
@@ -1931,11 +1945,11 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
     ],
     "nota": ""
    },
@@ -1958,14 +1972,14 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
     ],
     "nota": ""
    },
@@ -1989,14 +2003,14 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
     ],
     "nota": ""
    },
@@ -2018,9 +2032,9 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
     ],
     "nota": ""
    },
@@ -2028,14 +2042,16 @@
     "id": "eventi-giro",
     "dimensione": "regole",
     "descrizione": "Eventi casuali di giro (d10)",
-    "stato": "solo A",
+    "stato": "stesso nome",
     "occorrenze_A": 2,
-    "occorrenze_B": 0,
+    "occorrenze_B": 1,
     "file_A": [
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md"
     ],
-    "file_B": [],
+    "file_B": [
+     "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md"
+    ],
     "nota": ""
    },
    {
@@ -2050,7 +2066,7 @@
      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md"
     ],
     "file_B": [
-     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+     "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
     ],
     "nota": ""
    },
@@ -2108,12 +2124,12 @@
     "quota_condivisa": 0.667
    },
    "regole": {
-    "stesso nome": 5,
+    "stesso nome": 7,
     "rinominato": 2,
-    "solo A": 6,
+    "solo A": 4,
     "solo B": 0,
     "assente": 0,
-    "quota_condivisa": 0.538
+    "quota_condivisa": 0.692
    },
    "scene": {
     "stesso nome": 8,
@@ -2124,12 +2140,12 @@
     "quota_condivisa": 0.652
    },
    "struttura": {
-    "stesso nome": 5,
+    "stesso nome": 7,
     "rinominato": 0,
-    "solo A": 4,
+    "solo A": 2,
     "solo B": 5,
     "assente": 0,
-    "quota_condivisa": 0.357
+    "quota_condivisa": 0.5
    }
   }
  }

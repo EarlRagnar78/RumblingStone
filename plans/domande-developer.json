@@ -13,18 +13,18 @@
       ],
       "perche": "il rito della resurrezione: stessa esclusione della §3"
     },
-    "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md": {
+    "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md": {
       "sistema": "pf1e",
       "modulo": "drappo",
       "perche": "modulo PF1e in tre file (AGENTS.md): Percezione e Furtivita' esistono, e i TS si contano sull'insieme; PG dal 1° al 4° livello (00-HUB, pietre miliari): D9 e D15 non si applicano",
       "apl": 3
     },
-    "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md": {
+    "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md": {
       "sistema": "pf1e",
       "modulo": "drappo",
       "apl": 3
     },
-    "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md": {
+    "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md": {
       "sistema": "pf1e",
       "modulo": "drappo",
       "apl": 3
@@ -85,14 +85,14 @@
       "ragione": "🔴 APERTO: lotto F5"
     },
     {
-      "file": "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+      "file": "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
       "regola": "D3",
       "scena": "—",
       "dettaglio": "nessun effetto chiede un TS su Riflessi (sull'intero modulo)",
       "ragione": "🔴 APERTO: una corsa di cavalli senza un Riflessi (la caduta, la curva); lotto F5"
     },
     {
-      "file": "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+      "file": "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
       "regola": "D3",
       "scena": "—",
       "dettaglio": "nessun effetto chiede un TS su Volontà (sull'intero modulo)",
@@ -141,7 +141,7 @@
       "ragione": "falso positivo: «senza round di sorpresa» rimanda alla Scena 8, dove lo scontro si gioca"
     },
     {
-      "file": "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+      "file": "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
       "regola": "D10",
       "scena": "§6 · Sera — la rissa alla fontana",
       "dettaglio": "scontro senza la riga di scala (tre o cinque PG, un PG assente)",
@@ -274,84 +274,84 @@
       "ragione": "vero: i sergenti vogliono il re, e «il re resta vivo?» non è scritto. Master già giocato e scritto prima della norma (§18, 2026-10-22): la regola vale dai master nuovi"
     },
     {
-      "file": "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+      "file": "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
       "regola": "D18",
       "scena": "§1 · Il decreto",
       "dettaglio": "scena giocabile senza la domanda sì/no (**Domanda:** … ?)",
       "ragione": "non letto a mano: la calibrazione del 2026-10-22 è su ARC-07 e ARC-08. Modulo scritto prima della norma (§18): la domanda entra se un lotto lo riscrive"
     },
     {
-      "file": "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+      "file": "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
       "regola": "D18",
       "scena": "§3 · L'offerta",
       "dettaglio": "scena giocabile senza la domanda sì/no (**Domanda:** … ?)",
       "ragione": "non letto a mano: la calibrazione del 2026-10-22 è su ARC-07 e ARC-08. Modulo scritto prima della norma (§18): la domanda entra se un lotto lo riscrive"
     },
     {
-      "file": "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+      "file": "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
       "regola": "D18",
       "scena": "§4 · Il Peso di contrada",
       "dettaglio": "scena giocabile senza la domanda sì/no (**Domanda:** … ?)",
       "ragione": "non letto a mano: la calibrazione del 2026-10-22 è su ARC-07 e ARC-08. Modulo scritto prima della norma (§18): la domanda entra se un lotto lo riscrive"
     },
     {
-      "file": "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+      "file": "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
       "regola": "D18",
       "scena": "§6 · Sera — la rissa alla fontana",
       "dettaglio": "scena giocabile senza la domanda sì/no (**Domanda:** … ?)",
       "ragione": "non letto a mano: la calibrazione del 2026-10-22 è su ARC-07 e ARC-08. Modulo scritto prima della norma (§18): la domanda entra se un lotto lo riscrive"
     },
     {
-      "file": "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+      "file": "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
       "regola": "D18",
       "scena": "§2 · I Partiti — il mercato del grano",
       "dettaglio": "scena giocabile senza la domanda sì/no (**Domanda:** … ?)",
       "ragione": "non letto a mano: la calibrazione del 2026-10-22 è su ARC-07 e ARC-08. Modulo scritto prima della norma (§18): la domanda entra se un lotto lo riscrive"
     },
     {
-      "file": "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+      "file": "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
       "regola": "D19",
       "scena": "§2 · I Partiti — il mercato del grano",
       "dettaglio": "«Se i PG non stringono nessun patto»: la scelta non dice dove si vede la conseguenza",
       "ragione": "falso positivo: la conseguenza è nominata in parole, «in Corsa nessuna contrada ha un obbligo verso di loro»"
     },
     {
-      "file": "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+      "file": "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
       "regola": "D18",
       "scena": "§4 · La Cena della vigilia",
       "dettaglio": "scena giocabile senza la domanda sì/no (**Domanda:** … ?)",
       "ragione": "non letto a mano: la calibrazione del 2026-10-22 è su ARC-07 e ARC-08. Modulo scritto prima della norma (§18): la domanda entra se un lotto lo riscrive"
     },
     {
-      "file": "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+      "file": "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
       "regola": "D18",
       "scena": "§5 · L'uomo con la fascia grigia",
       "dettaglio": "scena giocabile senza la domanda sì/no (**Domanda:** … ?)",
       "ragione": "non letto a mano: la calibrazione del 2026-10-22 è su ARC-07 e ARC-08. Modulo scritto prima della norma (§18): la domanda entra se un lotto lo riscrive"
     },
     {
-      "file": "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+      "file": "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
       "regola": "D18",
       "scena": "§6",
       "dettaglio": "scena giocabile senza la domanda sì/no (**Domanda:** … ?)",
       "ragione": "non letto a mano: la calibrazione del 2026-10-22 è su ARC-07 e ARC-08. Modulo scritto prima della norma (§18): la domanda entra se un lotto lo riscrive"
     },
     {
-      "file": "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+      "file": "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
       "regola": "D18",
       "scena": "§3 · L'ultima offerta",
       "dettaglio": "scena giocabile senza la domanda sì/no (**Domanda:** … ?)",
       "ragione": "non letto a mano: la calibrazione del 2026-10-22 è su ARC-07 e ARC-08. Modulo scritto prima della norma (§18): la domanda entra se un lotto lo riscrive"
     },
     {
-      "file": "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+      "file": "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
       "regola": "D19",
       "scena": "§4 · Lo Stacco",
       "dettaglio": "«Se i PG sono di rincorsa»: la scelta non dice dove si vede la conseguenza",
       "ragione": "falso positivo: è tattica della partenza, la conseguenza (+2 all'iniziativa, lo Stacco annullato) si vede subito"
     },
     {
-      "file": "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+      "file": "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
       "regola": "D18",
       "scena": "§6 · Terzo giro — la curva nord",
       "dettaglio": "scena giocabile senza la domanda sì/no (**Domanda:** … ?)",

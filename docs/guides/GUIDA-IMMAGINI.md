@@ -74,7 +74,7 @@ look comune e ancora storica, fissa i seed, POSTa i workflow all'API locale di
 ComfyUI e scrive le righe di `PROVENIENZA.txt`. Rifiuta i pesi non commerciali da
 solo. Vuole prompt **annotati**: il formato è una riga di commento HTML, e
 l'esemplare compilato è
-`STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/immagini/` (prompt + `README.md` con la
+`10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/immagini/` (prompt + `README.md` con la
 procedura completa, gate di rifiuto incluso).
 
 ### 1.2-bis Quello che si butta, e perché

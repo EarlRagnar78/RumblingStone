@@ -351,8 +351,8 @@ scripts/comfyui-local/ComfyUI/
 # Queste sei sono le derivate leggere dei ritratti dipinti (~100 KB l'una): le
 # schede da stampa le usano al posto dei PNG da 6 MB, e senza di esse un clone
 # fresco produrrebbe un PDF da quaranta megabyte senza dire niente a nessuno.
-# Come si rigenerano: STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/immagini/web/README.md
-!STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/immagini/web/*.jpg
+# Come si rigenerano: 10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/immagini/web/README.md
+!10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/immagini/web/*.jpg
 
 # Stessa ragione per l'ARC-07 (piano TRAVASO, lotto A3): i master dell'arco sono
 # WebP, e Typst un WebP lo DECODIFICA E RICOMPRIME mentre un JPEG lo incorpora

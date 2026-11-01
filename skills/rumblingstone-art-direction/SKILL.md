@@ -252,4 +252,4 @@ Detto perché non ci si illuda:
   operativa: generatori, salvataggio, troubleshooting
 - [`stile-illustrazione-handout.md`](../rumblingstone-mapmaking/references/stile-illustrazione-handout.md)
   — il vocabolario di stile e l'ancora storica
-- Esemplare: `STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md`
+- Esemplare: `10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md`

@@ -59,4 +59,4 @@ tavola-le-stalle.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 2
 tavola-tarsilia-citta.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 2752x1536 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
 
 # Derivate per impaginazione: web/*.webp — rigenerabili con
-#   python3 scripts/build_image_derivatives.py STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/immagini
+#   python3 scripts/build_image_derivatives.py 10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/immagini

@@ -29,7 +29,7 @@ Il resto di questa pagina spiega **perché** i comandi sono in quest'ordine.
 ## §2 · Prima di accendere la GPU: la scelta che non si disfa
 
 **La licenza sta nei pesi, non nel software**
-([ADR-0019](../../../plans/adr/ADR-0019-licenza-dei-pesi-non-del-software.md)).
+([ADR-0019](../../../../plans/adr/ADR-0019-licenza-dei-pesi-non-del-software.md)).
 ComfyUI è GPL-3.0 e non limita ciò che produce; i pesi sì.
 
 | Pesi | Licenza | Qui |
@@ -143,7 +143,7 @@ non la GPU.
 Non alla fine della sessione di generazione: **il giorno dopo**. Dopo quaranta
 generazioni si tiene tutto quello che è «abbastanza», perché si è stanchi. È il
 bias che la skill
-[`rumblingstone-art-direction`](../../../skills/rumblingstone-art-direction/SKILL.md) §6
+[`rumblingstone-art-direction`](../../../../skills/rumblingstone-art-direction/SKILL.md) §6
 nomina per non subirlo.
 
 Si butta e si rigenera se **anche solo una** è vera:
@@ -211,8 +211,8 @@ I booklet le pescano da sé, per nome di file: non c'è niente da agganciare a m
 | Cosa | Dove |
 |---|---|
 | I prompt, con le annotazioni leggibili dalla macchina | [`PROMPT-RITRATTI-E-TAVOLE.md`](PROMPT-RITRATTI-E-TAVOLE.md) |
-| Il mestiere: coerenza, schede-personaggio, lock, gate | [`rumblingstone-art-direction`](../../../skills/rumblingstone-art-direction/SKILL.md) |
-| Quali pesi si possono usare, e cosa si registra | [ADR-0019](../../../plans/adr/ADR-0019-licenza-dei-pesi-non-del-software.md) |
-| ComfyUI in container su Bazzite | [`scripts/comfyui-local/README.md`](../../../scripts/comfyui-local/README.md) |
-| La procedura generale delle immagini di campagna | [`GUIDA-IMMAGINI.md`](../../../docs/guides/GUIDA-IMMAGINI.md) |
-| Come i tool si incastrano fra loro | [`GUIDA-FLUSSO-LOCALE.md`](../../../docs/guides/GUIDA-FLUSSO-LOCALE.md) |
+| Il mestiere: coerenza, schede-personaggio, lock, gate | [`rumblingstone-art-direction`](../../../../skills/rumblingstone-art-direction/SKILL.md) |
+| Quali pesi si possono usare, e cosa si registra | [ADR-0019](../../../../plans/adr/ADR-0019-licenza-dei-pesi-non-del-software.md) |
+| ComfyUI in container su Bazzite | [`scripts/comfyui-local/README.md`](../../../../scripts/comfyui-local/README.md) |
+| La procedura generale delle immagini di campagna | [`GUIDA-IMMAGINI.md`](../../../../docs/guides/GUIDA-IMMAGINI.md) |
+| Come i tool si incastrano fra loro | [`GUIDA-FLUSSO-LOCALE.md`](../../../../docs/guides/GUIDA-FLUSSO-LOCALE.md) |

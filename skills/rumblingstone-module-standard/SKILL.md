@@ -212,7 +212,7 @@ incontri e prove, misteri).
     davvero**, con i template di `campaign/templates/homebrew/`, e porta in coda
     una nota per il DM che non si stampa (come si usa, cosa nessuno nota, cosa
     succede se lo firmano o lo stracciano).
-    Esemplare: `STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/handout/`.
+    Esemplare: `10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/handout/`.
 
 ## Regole di lavorazione (sempre)
 

@@ -408,7 +408,7 @@ Le 14 righe dove le due colonne divergono sono quelle da rileggere.
 
 | # | Regola | File:riga | Frammento | Primo lettore | Secondo lettore |
 |---|---|---|---|---|---|
-| 0 | ARTICOLATA_SOSTANTIVO | STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md:318 | «del Torre» | FP | TP |
+| 0 | ARTICOLATA_SOSTANTIVO | 10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md:318 | «del Torre» | FP | TP |
 | 1 | GR_04_002 | Bestiario/png/thorgrim-barbadiferro.md:45 | «e'» | TP | TP |
 | 2 | GR_04_002 | Bestiario/mostri/underdark-dovil-runecaster-cr7.md:3 | «e'» | TP | TP |
 | 3 | GR_04_002 | Bestiario/villain/ostro-il-muto-cr5.md:12 | «e'» | TP | TP |
@@ -452,7 +452,7 @@ Le 14 righe dove le due colonne divergono sono quelle da rileggere.
 | 41 | GR_04_002 | Bestiario/png/thorgrim-barbadiferro.md:54 | «e'» | TP | TP |
 | 42 | COMMA_PARENTHESIS_WHITESPACE | campaign/lore/dm-guide-to-be-adapted-tips&tricks.md:1159 | «,you» | FP | ALTRUI |
 | 43 | GR_04_002 | Bestiario/mostri/dire-worg-fiendish-corrotto-cr10.md:16 | «e'» | TP | TP |
-| 44 | ARTICOLATA_SOSTANTIVO | STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md:190 | «dal Torre» | FP | TP |
+| 44 | ARTICOLATA_SOSTANTIVO | 10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md:190 | «dal Torre» | FP | TP |
 | 45 | GR_04_002 | Bestiario/villain/ostro-il-muto-cr5.md:10 | «e'» | TP | TP |
 | 46 | GR_04_002 | Bestiario/villain/terros-l-antico-cr15.md:21 | «e'» | TP | TP |
 | 47 | GR_04_002 | Bestiario/mostri/grinza-megera-acquatica-cr4.md:16 | «e'» | TP | TP |
@@ -506,5 +506,5 @@ Le 14 righe dove le due colonne divergono sono quelle da rileggere.
 | 95 | COMMA_PARENTHESIS_WHITESPACE | Bestiario/villain/Zarim/zarim-illithid-luogotenente-cr12.md:3 | «,dungeon» | TP | FP |
 | 96 | ARTICOLATA_SOSTANTIVO | 09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md:143 | «del label» | FP | FP |
 | 97 | COMMA_PARENTHESIS_WHITESPACE | 07_il Portale Della Forgia Eterna/Immagini/PROMPT-IMMAGINI-07ILP.md:453 | «.» | TP | FP |
-| 98 | ARTICOLATA_SOSTANTIVO | STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md:387 | «alle Civetta» | FP | TP |
+| 98 | ARTICOLATA_SOSTANTIVO | 10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md:387 | «alle Civetta» | FP | TP |
 | 99 | GR_04_002 | Bestiario/mostri/avatar-minore-madre-funghi-cr13.md:12 | «e'» | TP | TP |

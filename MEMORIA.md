@@ -105,6 +105,9 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-01 | TRAVASO-DRAPPO-CAMPAGNA | C2 — Drappo e Palio collegati nei due sensi | ✅ D1 decisa dal DM (card: «Nei due sensi»). In testa a `…-P2D-PALIO-CHANNATHGATE-AVVENTURA.md` la riga «Versione derivata» che rimanda al Drappo; percorso e ra… |
+| 2026-11-01 | DRAPPO-DI-TARSILIA | Il modulo in `10-stand-alone/`, accanto all'Abbazia | ✅ Scelta del DM del 2026-11-01. `git mv` in `10-stand-alone/Il-Drappo-di-Tarsilia/` (trattini, come il nome di prima). Il vecchio percorso sostituito in 56 fil… |
+| 2026-11-01 | TRAVASO-DRAPPO-CAMPAGNA | C1 — quanto il Drappo e il Palio sono lo stesso modulo | ✅ `scripts/misura_derivazione.py` misura su due assi separati, con test. Il Drappo deriva dal Palio (git: 2026-07-01 contro 2026-08-14; piano; hub §10). Testo:… |
 | 2026-10-31 | STANDARD-STAMPA | I2 seguito: nessun disegno a caratteri stampato in tutto il repo | ✅ linee del tempo di Palio e Drappo in tabella; `validate_booklets` ferma i recinti con ≥ 20 caratteri di riquadro fuori dall'apparato |
 | 2026-10-30 | STANDARD-STAMPA | I2 seguito: le sei mappe schematiche di ARC-07 in pianta o in schema (ADR-0106… | ✅ nessuna griglia ASCII stampata nei booklet di ARC-07; T-5, R-1, S-1 in scala, T-1, T-4, M7-A schemi a 7,4 pt senza filtri, `render_schemi.py --check` in CI |
 | 2026-10-30 | STANDARD-STAMPA | I2 chiuso: pianta in stampa per tutte le 56 mappe del repo (ADR-0106), controll… | ✅ scritte sotto 7 pt 5.820→0 e filtri rasterizzati 418→0 sulle 56 mappe, nessun testo perso; ARC-07 righe sotto 7 pt a 0 in tutti e tre i volumi (Notte e Alba… |
@@ -114,13 +117,10 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-10-29 | STANDARD-STAMPA | D5 appendice delle creature, I3 schede che non si spezzano, I6 varianti e cieco… | 🟡 schede spezzate da 14 a 0, schede PG del Drappo fuori gabbia da 299 a 0; appendice in Typst, HTML e Homebrewery; 8 coppie cieche (interlinea 1,08 e box color… |
 | 2026-10-29 | STANDARD-STAMPA | A1 riferimenti AP, A2 prima misura di stampa | 🟡 `misura_stampa.py` in CI con tetti per booklet: 0 font non incorporati, 1.255 righe sotto 7 pt (etichette delle mappe), 222 immagini sotto 300 dpi, 14 riquad… |
 | 2026-10-29 | ADR-0105 · riquadro unico delle creatur… | conversione ARC-07 e Palio; misura per booklet con tetti | 🟡 da 4/79 a 50/88 schede nel riquadro; ARC-07 e Palio al 100%; Abbazia e Drappo in corso |
-| 2026-10-29 | ARC-07 · il barile sulla tenda (decisio… | il DM accetta tutte le proposte ★ tranne B25 (*«tutti gli inferred ok a parte i… | ✅ B1-B15 e B22-B24 decise, i 22 INFERRED del documento diventano canone del 2026-10-29; poi B25 decisa dal DM con la card: la furia (le bande d'orchi corrono a… |
-| 2026-10-24 | ARC-07 · il barile sulla tenda (esperim… | la botte d'olio con le fiale della fenice lasciata cadere da 48 m sulla tenda d… | 🟡 Fisica della caduta (3,15 s, 30 m/s, deriva 20 cm), tiro di sgancio della casa che non rompe l'invisibilità, oggetto in caduta 15d6 (SRD 3.5), palle di fuoco… |
-| 2026-10-24 | RIPRESA-PR-ABBANDONATE | 4g-2, prima parte: le caratteristiche dei PG che il repo attesta | 🟡 15 caselle su 24 (Tordek dalla scheda PCGen, Hella da DEF-3, FOR di Thorik da P1); restano 9 al DM con un modulo |
 
 ## Le misure che si portano dietro
 
-- **Decisioni**: 18 aperte, 305 chiuse (`decisioni_dm.py`).
+- **Decisioni**: 18 aperte, 306 chiuse (`decisioni_dm.py`).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

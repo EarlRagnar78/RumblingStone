@@ -37,7 +37,7 @@ lasciare file a metà: la catena HTML continua a funzionare da sola.
 
 Rigenera l'esemplare con:
     python3 scripts/export_booklet_typst.py \\
-        STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-DM.manifest.json --all
+        10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-DM.manifest.json --all
 
 Exit code: 0 = ok · 1 = binario assente o compilazione fallita · 2 = uso errato.
 """

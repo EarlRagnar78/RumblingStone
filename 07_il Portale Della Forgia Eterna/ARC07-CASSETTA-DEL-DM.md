@@ -10,7 +10,7 @@
 > aveva **una voce su nove** (il quick-reference dentro ogni master). Sei pagine
 > che nessuno legge per piacere, e che si aprono ogni volta che si gioca.
 >
-> **Modello**: `STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md` e
+> **Modello**: `10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md` e
 > `08_La Battaglia Di Hammerfist/ARC08-16-CUE-SONORI.md`.
 > **Stato**: apparato d'uso (non canone narrativo). **Data**: 2026-08-31.
 > <!-- /storico -->
@@ -273,6 +273,6 @@ onestà di `ARC08-16-CUE-SONORI.md`).
 - [ADR-0018](../plans/adr/ADR-0018-apparato-uso-obbligatorio.md) — perché l'apparato è parte del contenuto
 - [`PIANO-TRAVASO-DRAPPO-CAMPAGNA`](../plans/PIANO-TRAVASO-DRAPPO-CAMPAGNA.md) — il lotto A1 è questo file
 - `ARC07-00-INDICE.md` — l'indice dell'arco (file → parte → stato)
-- `STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md` — il modello
+- `10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md` — il modello
 - `08_La Battaglia Di Hammerfist/ARC08-16-CUE-SONORI.md` — il modello dei suoni
 <!-- /storico -->

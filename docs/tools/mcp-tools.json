@@ -1521,7 +1521,7 @@
         "additionalProperties": false
       },
       "outputs": [
-        "STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/tavole/fregi/fregio-*.svg",
+        "10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/tavole/fregi/fregio-*.svg",
         "docs/assets/fregi/fregio-*.svg"
       ],
       "exit_codes": {
@@ -3800,6 +3800,39 @@
       "deterministic": true
     },
     {
+      "name": "misura_derivazione",
+      "description": "«Il Drappo di Tarsilia è lo stesso modulo del Palio di Channathgate, e dove divergono?»\n\nQuanto due moduli sono lo stesso modulo, su due assi tenuti separati: il testo (6-grammi di parole, frasi quasi copiate, titoli e nomi propri in comune, automatico) e l'impianto (concetti di struttura, scene, PNG, contrade e regole dichiarati con le loro espressioni regolari in un JSON di corrispondenze, classificati come stesso nome, rinominato, solo A, solo B).",
+      "use_case": "«Il Drappo di Tarsilia è lo stesso modulo del Palio di Channathgate, e dove divergono?»",
+      "invocation": "python3 scripts/misura_derivazione.py CORRISPONDENZE.json [--json OUT.json] [--md OUT.md]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "corrispondenze": {
+            "type": "string",
+            "description": "JSON con i due corpus (schemi glob, esclusioni) e i concetti."
+          },
+          "json": {
+            "type": "string",
+            "description": "Scrive la misura completa in JSON."
+          },
+          "md": {
+            "type": "string",
+            "description": "Scrive il rapporto in Markdown; senza --json né --md lo stampa."
+          }
+        },
+        "required": [
+          "corrispondenze"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "corpus vuoto"
+      },
+      "deterministic": true
+    },
+    {
       "name": "misura_sintassi",
       "description": "«Quanti calchi sintattici e quante frasi oltre i due livelli di subordinate hanno i box di questo master?»\n\nI calchi sintattici di Cerruti (soggetto preverbale indefinito, aggettivo complesso anteposto, stare + gerundio, pronome soggetto) e i tratti alla Profiling-UD (profondità, livelli di subordinate, lunghezza delle dipendenze, MATTR e ripetizione dei lemmi) sui box read-aloud, con spaCy e it_core_news_md. Misura, non cancello: senza spaCy dice che salta ed esce 0.",
       "use_case": "«Quanti calchi sintattici e quante frasi oltre i due livelli di subordinate hanno i box di questo master?»",
@@ -4345,7 +4378,7 @@
     },
     {
       "name": "validate_standalone",
-      "description": "«Il modulo autoconclusivo è consegnabile, o ha riferimenti rotti e aree senza numero?»\n\nGate CI per i moduli autoconclusivi, in due famiglie: STANDALONE-* (master markdown — file obbligatori, riferimenti incrociati, schede pregenerate, termini 5e vietati, read-aloud minimi, contatori) e 10-stand-alone/* (moduli scritti in HTML — title, <h1>, link relativi, ancore e id non duplicati).",
+      "description": "«Il modulo autoconclusivo è consegnabile, o ha riferimenti rotti e aree senza numero?»\n\nGate CI per i moduli autoconclusivi, in due famiglie, tutte e due in 10-stand-alone/: i moduli con master markdown, riconosciuti dall'hub 00-*.md (file obbligatori, riferimenti incrociati, schede pregenerate, termini 5e vietati, read-aloud minimi, contatori) e i moduli scritti in HTML, con le pagine al primo livello (title, <h1>, link relativi, ancore e id non duplicati).",
       "use_case": "«Il modulo autoconclusivo è consegnabile, o ha riferimenti rotti e aree senza numero?»",
       "invocation": "python3 scripts/validate_standalone.py",
       "inputSchema": {

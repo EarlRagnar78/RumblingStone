@@ -186,7 +186,7 @@ jobs:
       - name: Validate DEF module masters (module-standard checklist, token-free review)
         run: python scripts/validate_modules.py
 
-      - name: Moduli standalone (STANDALONE-* e 10-stand-alone/*)
+      - name: Moduli standalone (10-stand-alone/*, markdown e HTML)
         run: python scripts/validate_standalone.py
 
       # La scheda d'entrata sta nella scena, e ogni scena ha il suo box
@@ -420,9 +420,9 @@ jobs:
       - name: Schede pregenerate — un PDF per giocatore
         run: |
           python scripts/export_booklet_typst.py \
-            STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-SCHEDE-PG.manifest.json \
+            10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-SCHEDE-PG.manifest.json \
             --per-scheda
-          test "$(ls STANDALONE-Il-Drappo-di-Tarsilia/homebrew/schede/*.pdf | wc -l)" -eq 6
+          test "$(ls 10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/schede/*.pdf | wc -l)" -eq 6
 
       - name: Map JSON contract + UVTT export round-trip (M1/M2)
         run: |

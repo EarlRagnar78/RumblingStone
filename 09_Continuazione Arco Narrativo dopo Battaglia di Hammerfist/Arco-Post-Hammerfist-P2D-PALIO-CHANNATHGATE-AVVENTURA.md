@@ -9,6 +9,12 @@
 > "Bard's Tale" (guerra delle ballate) + *War for the Crown* (sandbox politico a tempo).
 > **Tono**: *Andor* (intrigo lento e sporco) + *House of David* (fede civica viscerale)
 > + Tolkien (la festa sull'orlo del baratro).
+> **Versione derivata**: *Il Drappo di Tarsilia* è lo stesso sistema della corsa
+> riscritto da capo per Pathfinder 1e, con sei pregenerati di 3° e una città fuori
+> dai Reami. Si gioca da solo; qui al tavolo della campagna si gioca il Palio.
+> <!-- storico -->Cartella `10-stand-alone/Il-Drappo-di-Tarsilia/`; cosa hanno in
+> comune e dove divergono: `plans/esperimenti/drappo-palio-2026-11-01/RAPPORTO.md`
+> (decisione del DM del 2026-11-01, D1 di TRAVASO).<!-- /storico -->
 
 ---
 

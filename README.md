@@ -191,12 +191,12 @@ binari.
 
 ## Il modulo autonomo
 
-[*Il Drappo di Tarsilia*](STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md)
+[*Il Drappo di Tarsilia*](10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md)
 non condivide nulla con la campagna: **Pathfinder 1e** (solo il Manuale di
 gioco), Golarion, tre serate da 3-4 ore per sei giocatori con sei PG
 pregenerati di 3° livello, in una città fluviale originale dei Regni Fluviali.
 La situazione della proprietà intellettuale è in
-[IP-E-LICENZE](STANDALONE-Il-Drappo-di-Tarsilia/IP-E-LICENZE.md).
+[IP-E-LICENZE](10-stand-alone/Il-Drappo-di-Tarsilia/IP-E-LICENZE.md).
 
 ## Documentazione
 

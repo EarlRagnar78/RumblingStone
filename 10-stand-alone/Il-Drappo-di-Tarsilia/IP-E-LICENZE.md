@@ -6,7 +6,7 @@ rendiconto di **cosa è stato staccato e cosa no**.
 
 > ⚠️ Analisi documentale, **non parere legale**. Per un uso commerciale reale serve
 > un avvocato IP, e vale ancora la posture di
-> [`plans/adr/ADR-0005`](../plans/adr/ADR-0005-confini-ip-uso-non-commerciale.md).
+> [`plans/adr/ADR-0005`](../../plans/adr/ADR-0005-confini-ip-uso-non-commerciale.md).
 
 ---
 
@@ -119,7 +119,7 @@ Una passata sola, e il modulo è già attrezzata per riceverla: i nomi delle con
 compaiono in **nove file** e sono sostituibili con una tabella di rimpiazzo (l'ultima
 è stata fatta nella direzione opposta il 2026-08-15). Insieme vanno cambiate almeno
 **quattro figure su otto** negli scudi, altrimenti il cumulo resta. È il **Lotto 3**
-in [`plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md`](../plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md).
+in [`plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md`](../../plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md).
 
 ## §5 · Le icone degli stemmi
 

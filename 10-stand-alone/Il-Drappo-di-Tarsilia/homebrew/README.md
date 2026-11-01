@@ -21,13 +21,13 @@ Accanto a ogni `.html` c'è il gemello **`.hb.md`**: è il sorgente da incollare
 ## Rigenerare
 
 ```bash
-cd STANDALONE-Il-Drappo-di-Tarsilia/homebrew
+cd 10-stand-alone/Il-Drappo-di-Tarsilia/homebrew
 
 # HTML + sorgente Homebrewery
-python3 ../../scripts/build_booklet_html.py DRAPPO-BOOKLET-DM.manifest.json --format both
-python3 ../../scripts/build_booklet_html.py DRAPPO-BOOKLET-GIOCATORI.manifest.json --format both
-python3 ../../scripts/build_booklet_html.py DRAPPO-FASCICOLO-SCHEDE.manifest.json --format both
-python3 ../../scripts/build_booklet_html.py DRAPPO-PROP.manifest.json --format both
+python3 ../../../scripts/build_booklet_html.py DRAPPO-BOOKLET-DM.manifest.json --format both
+python3 ../../../scripts/build_booklet_html.py DRAPPO-BOOKLET-GIOCATORI.manifest.json --format both
+python3 ../../../scripts/build_booklet_html.py DRAPPO-FASCICOLO-SCHEDE.manifest.json --format both
+python3 ../../../scripts/build_booklet_html.py DRAPPO-PROP.manifest.json --format both
 ```
 
 ## L'edizione da stampa — un volume solo
@@ -37,7 +37,7 @@ manifest, un volume unico con tipografia embedded, fregi di capitolo e
 segnalibri veri.
 
 ```bash
-python3 ../../scripts/export_booklet_typst.py DRAPPO-BOOKLET-DM.manifest.json --all
+python3 ../../../scripts/export_booklet_typst.py DRAPPO-BOOKLET-DM.manifest.json --all
 ```
 
 Produce `DRAPPO-BOOKLET-DM-STAMPA.pdf` — **63 pagine, un file**. Serve il binario
@@ -46,7 +46,7 @@ Produce `DRAPPO-BOOKLET-DM-STAMPA.pdf` — **63 pagine, un file**. Serve il bina
 ## Le sei schede — una pagina A4 a testa
 
 ```bash
-python3 ../../scripts/export_booklet_typst.py DRAPPO-SCHEDE-PG.manifest.json
+python3 ../../../scripts/export_booklet_typst.py DRAPPO-SCHEDE-PG.manifest.json
 ```
 
 Produce `DRAPPO-SCHEDE-PG-STAMPA.pdf`: **sei pagine, sei schede**, niente
@@ -70,7 +70,7 @@ la scheda esce con una cornice tratteggiata al suo posto e l'esportatore lo dice
 ### Una scheda per giocatore
 
 ```bash
-python3 ../../scripts/export_booklet_typst.py DRAPPO-SCHEDE-PG.manifest.json --per-scheda
+python3 ../../../scripts/export_booklet_typst.py DRAPPO-SCHEDE-PG.manifest.json --per-scheda
 ```
 
 Aggiunge `schede/DRAPPO-SCHEDE-PG-<N>-<pg>.pdf`, sei file da una pagina, **senza
@@ -86,10 +86,10 @@ frontespizio**.
 ## I PDF per capitolo
 
 ```bash
-python3 ../../scripts/export_booklet_pdf.py DRAPPO-BOOKLET-DM.manifest.json --all
-python3 ../../scripts/export_booklet_pdf.py DRAPPO-BOOKLET-GIOCATORI.manifest.json --all
-python3 ../../scripts/export_booklet_pdf.py DRAPPO-FASCICOLO-SCHEDE.manifest.json --all
-python3 ../../scripts/export_booklet_pdf.py DRAPPO-PROP.manifest.json --all
+python3 ../../../scripts/export_booklet_pdf.py DRAPPO-BOOKLET-DM.manifest.json --all
+python3 ../../../scripts/export_booklet_pdf.py DRAPPO-BOOKLET-GIOCATORI.manifest.json --all
+python3 ../../../scripts/export_booklet_pdf.py DRAPPO-FASCICOLO-SCHEDE.manifest.json --all
+python3 ../../../scripts/export_booklet_pdf.py DRAPPO-PROP.manifest.json --all
 ```
 
 Finiscono in `pdf/`, un file A4 per capitolo (**una quarantina**: 19 per il DM, 3 per i

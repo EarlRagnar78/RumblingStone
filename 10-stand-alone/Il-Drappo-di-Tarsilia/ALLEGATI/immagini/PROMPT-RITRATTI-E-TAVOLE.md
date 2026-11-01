@@ -67,7 +67,7 @@ una scheda stampata.
 
 Sopra ogni blocco di prompt c'è **una riga di commento HTML**. Non si vede quando
 il markdown viene reso, non entra nei booklet, e serve a
-[`scripts/comfyui_batch.py`](../../../scripts/comfyui_batch.py) per generare la
+[`scripts/comfyui_batch.py`](../../../../scripts/comfyui_batch.py) per generare la
 serie da qui invece che a mano:
 
 ```

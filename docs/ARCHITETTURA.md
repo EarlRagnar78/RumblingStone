@@ -80,7 +80,7 @@ standard), [ADR-0099](../plans/adr/ADR-0099-la-piattaforma-ha-tre-canali-come-de
 flowchart TB
     subgraph CONT["Contenuto: lo legge un essere umano · CC BY-NC-SA 4.0"]
         ARC["00_ … 09_<br/>archi della campagna"]
-        SA["10-stand-alone/, STANDALONE-…<br/>moduli autonomi"]
+        SA["10-stand-alone/<br/>moduli autonomi"]
         BES["Bestiario/<br/>mostri, PNG, villain"]
         PG["PG/<br/>schede dei personaggi"]
         CAMP["campaign/<br/>state.md, sessioni, recap, playbook"]

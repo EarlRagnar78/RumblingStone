@@ -49,19 +49,19 @@ Onestamente, e in ordine di impatto visivo:
 Lavori sul repo RumblingStone, branch claude/golarion-pathfinder-campaign-xbyvzt.
 
 OBIETTIVO
-Portare il modulo autoconclusivo STANDALONE-Il-Drappo-di-Tarsilia/ da "completo come
+Portare il modulo autoconclusivo 10-stand-alone/Il-Drappo-di-Tarsilia/ da "completo come
 testo" a "libro illustrato di livello Paizo/WotC", e produrre il booklet definitivo.
 Il testo NON va riscritto: è collaudato (PLAYTEST-ALFA.md) e validato in CI.
 
 PRIMA DI TOCCARE QUALSIASI COSA — leggi in quest'ordine:
-1. STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md  (cos'è il modulo)
-2. STANDALONE-Il-Drappo-di-Tarsilia/PROMPT-GENERAZIONE-BOOKLET-DEFINITIVO.md §1-§2
+1. 10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md  (cos'è il modulo)
+2. 10-stand-alone/Il-Drappo-di-Tarsilia/PROMPT-GENERAZIONE-BOOKLET-DEFINITIVO.md §1-§2
    (cosa esiste e cosa manca: è l'inventario da cui parti)
 3. plans/adr/ADR-0017 (moduli autoconclusivi) e ADR-0018 (apparato d'uso obbligatorio)
 4. plans/adr/ADR-0015 (standard dei prompt immagine) e ADR-0013 (standard booklet)
 5. skills/rumblingstone-mapmaking/references/stile-illustrazione-handout.md
    (⚠️ il confine IP sull'arte: si descrivono le CONVENZIONI, mai un artista vivente)
-6. STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md
+6. 10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md
    (la bibbia visiva già scritta: palette, età, segni distintivi, formati)
 
 VINCOLI NON NEGOZIABILI

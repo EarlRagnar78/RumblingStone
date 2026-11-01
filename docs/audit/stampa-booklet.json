@@ -200,6 +200,24 @@
         "pagine_con_immagine_decimo": 0.031
       }
     },
+    "10-stand-alone/Il Giardino di Sale e Calce/homebrew/giardino-sale-calce.manifest.json": {
+      "tetti": {
+        "testi_sotto_minimo": 0,
+        "fuori_margine": 0,
+        "immagini_sotto_300dpi": 0,
+        "schede_spezzate": 0,
+        "font_non_incorporati": 0,
+        "rimandi_sbagliati": 1
+      },
+      "misura": {
+        "pagine": 25,
+        "corpo_mediano_pt": 10.0,
+        "corpo_minimo_pt": 7.0,
+        "schede": 7,
+        "pagine_con_immagine": 0.0,
+        "pagine_con_immagine_decimo": 0.0
+      }
+    },
     "10-stand-alone/L'abbazia Della Rotta Sicura/homebrew/abbazia-rotta-sicura.manifest.json": {
       "tetti": {
         "testi_sotto_minimo": 102,

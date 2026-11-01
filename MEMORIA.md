@@ -105,6 +105,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | C1, C5 (prima misura) | 🟡 il booklet 3.5 compila e converge (25 pagine, 7 schede, 0 spezzate): elenco degli incantesimi di Tariq fuori dal riquadro, che spezzandosi non convergeva; mi… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B6 | 🟡 cartella delle mappe rinominata in Mappe/ come nel resto del repo, così il catalogo dei mostri non scambia i titoli delle mappe per creature; catalogo rigene… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B1, B2-B4 (3.5), B8 | ✅ B1 e B8 · 🟡 B2-B4 per la 3.5: master, appendice delle creature e manifest in 10-stand-alone/Il Giardino di Sale e Calce/; validate_booklets, validate_prosa -… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B6 prima parte: otto mappe tattiche | 🟡 contratti JSON e master in 10-stand-alone/Il Giardino di Sale e Calce/mappe/, quattro temi di render, collaudo_mappe e qualita_mappe a 0 errori; D7 decisa (q… |
@@ -116,7 +117,6 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | A1: riscontro sull'SRD in cache delle creature, di Tariq e delle regole d'ambie… | ✅ D1 (doppio 3.5/PF1e) e D5 (aboleth a conti) decise; nessun numero della chat coincide con un'avanzata; due creature con taglia sbagliata per i DV; 5 incantes… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | A0: inventario della chat Gemini e piano aperto | ✅ chat letta per intero, copia e inventario in project-files; cinque decisioni al DM (sistema, collocazione, ampiezza, titolo, boss) |
 | 2026-10-31 | STANDARD-STAMPA | I2 seguito: nessun disegno a caratteri stampato in tutto il repo | ✅ linee del tempo di Palio e Drappo in tabella; `validate_booklets` ferma i recinti con ≥ 20 caratteri di riquadro fuori dall'apparato |
-| 2026-10-30 | STANDARD-STAMPA | I2 seguito: le sei mappe schematiche di ARC-07 in pianta o in schema (ADR-0106… | ✅ nessuna griglia ASCII stampata nei booklet di ARC-07; T-5, R-1, S-1 in scala, T-1, T-4, M7-A schemi a 7,4 pt senza filtri, `render_schemi.py --check` in CI |
 
 ## Le misure che si portano dietro
 

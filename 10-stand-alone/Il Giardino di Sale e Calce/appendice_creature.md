@@ -78,7 +78,7 @@ tipo: Umano chierico 13 di Umberlee · CM Medio
 ca: 24
 ca-dettaglio: contatto 11, colto alla sprovvista 24; 27 con veste magica ×2
 pf: 84
-pf-dado: 13d8+26 (97 con resistenza dell'orso)
+pf-dado: 13d8+26
 ts: Temp +12, Rifl +6, Vol +16
 attributi: For 12 Des 10 Cos 14 Int 13 Sag 22 Car 8
 velocita: 6 m
@@ -92,10 +92,14 @@ attacchi:
 
 **Capacità speciali**
 - **Domini** Acqua (intimorire le creature dell'acqua, 2/giorno) e Distruzione.
-- **Incantesimi preparati** (LI 13°, CD 16 + livello; D = dominio): 7° *blasfemia*, D *nube acida* · 6° *dissolvi magie superiore* ×2, *barriera di lame*, D *ferire* · 5° *giusto potere*, *colpo infuocato*, *uccidere i viventi*, *resistenza agli incantesimi*, D *tempesta di ghiaccio* · 4° *libertà di movimento*, *ancora dimensionale*, *veleno*, *camminare nell'aria*, D *controllare acqua* · 3° *veste magica* ×2 (già lanciate), *dissolvi magie*, *preghiera*, *protezione dall'energia*, D *contagio* · 2° *blocca persone* ×2, *silenzio*, *resistenza all'energia*, *resistenza dell'orso*, *esplosione sonora*, D *frantumare* · 1° *favore divino*, *scudo della fede*, *scudo entropico*, *anatema*, *comando* ×2, *santuario*, D *foschia occultante* · 0 *individuazione del magico*, *guida* ×2, *resistenza* ×2, *lettura del magico*.
+- **Incantesimi preparati** (LI 13°, CD 16 + livello): l'elenco è nel riquadro qui sotto.
 - **La nebbia di calce** è *nube acida*; **la pioggia di calce** è *tempesta di ghiaccio*: grandine di calce nel racconto, regole SRD.
 
-**Tattiche** Sulla mappa GS-4. Sotto i 30 pf scende la scala verso Karkator. Si arrende se gli si dimostra che lo scavo dei drow farà crollare la vasca (Raggirare o Diplomazia CD 25).
+**Tattiche** Sulla mappa GS-4. Sotto i 30 pf scende la scala verso Karkator. Si arrende se gli si dimostra che lo scavo dei drow farà crollare la vasca (Raggirare o Diplomazia CD 25). Con *resistenza dell'orso* ha 97 pf.
+
+{{note
+**Gli incantesimi di Tariq** (D = dominio). 7° *blasfemia*, D *nube acida* · 6° *dissolvi magie superiore* ×2, *barriera di lame*, D *ferire* · 5° *giusto potere*, *colpo infuocato*, *uccidere i viventi*, *resistenza agli incantesimi*, D *tempesta di ghiaccio* · 4° *libertà di movimento*, *ancora dimensionale*, *veleno*, *camminare nell'aria*, D *controllare acqua* · 3° *veste magica* ×2 (già lanciate), *dissolvi magie*, *preghiera*, *protezione dall'energia*, D *contagio* · 2° *blocca persone* ×2, *silenzio*, *resistenza all'energia*, *resistenza dell'orso*, *esplosione sonora*, D *frantumare* · 1° *favore divino*, *scudo della fede*, *scudo entropico*, *anatema*, *comando* ×2, *santuario*, D *foschia occultante* · 0 *individuazione del magico*, *guida* ×2, *resistenza* ×2, *lettura del magico*.
+}}
 
 ## Skum guerriero 8
 

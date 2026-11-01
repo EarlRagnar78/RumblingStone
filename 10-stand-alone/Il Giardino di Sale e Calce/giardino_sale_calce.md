@@ -297,7 +297,7 @@ Diciotto metri di scala di pietra attorno a un pozzo aperto, fino al Santuario. 
 
 Il Cuore è incastrato in quattro perni di bronzo calishita sull'isolotto. Staccarlo: rompere due perni (durezza 10, 30 pf ciascuno) o una prova di Forza CD 28. Chi lo tiene in mano subisce ogni round un tentativo di *asservire* di Karkator (Volontà CD 29) finché l'aboleth vive.
 
-> *Il Cuore è caldo. È l'unica cosa calda di tutta la grotta. Dentro, nella luce verde, si muove qualcosa che sembra acqua e non lo è, e se lo guardi abbastanza a lungo ti sembra di sentire il mare, un mare che non hai mai visto, che non ha rive.*
+> *Il Cuore è caldo. È l'unica cosa calda di tutta la grotta. Dentro, nella luce verde, si muove qualcosa che sembra acqua e non lo è, e da lì viene un rumore lontano di risacca: un mare che nessuno di voi ha mai visto, senza rive.*
 
 ## Atto III — Cosa fare del Cuore
 

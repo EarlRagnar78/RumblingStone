@@ -58,7 +58,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF
 |---|---|---|
 | 🟦 La vasca salmastra | L17 | l'acqua salata e densa sostiene: Nuotare CD 10, ma dentro c'è il muco di Karkator (Tempra CD 31 al primo round d'immersione). Karkator vi combatte con il bonus razziale +8 a Nuotare e senza penalità |
 | 🟨 Crosta di sale | F22 | Equilibrio CD 12 o cade prono |
-| 💎 Il Cuore di Selenite | Q14 | finché è nei perni Karkator ha rigenerazione 15 (lo ferisce solo l'acido) e può lanciare *inversione della gravità* una volta al giorno sulla grotta. Staccarlo: distruggere due perni o Forza CD 28 |
+| 💎 Il Cuore di Selenite | Q14 | finché è nei perni Karkator ha rigenerazione 15 (lo feriscono davvero solo il fuoco e il danno sacro) e può lanciare *inversione della gravità* una volta al giorno sulla grotta. Staccarlo: distruggere due perni o Forza CD 28 |
 
 ### ⚔️ TATTICHE (come si comportano i nemici — round per round)
 
@@ -70,7 +70,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF
 | Karkator | Karkator, aboleth mezzo-immondo avanzato a 24 DV, Mastodontico (GS 16) | ⚫ | 1 | — | T17 |
 | Karkator | Asserviti armati (guerriero 4), quattro, sul bordo della vasca | 🔴 | 4 | — | Y13–Z14 |
 
-- **Karkator sa che arrivano** dal momento in cui qualcuno tocca l'acqua della vasca di sopra: la sente. Prima che i PG entrino lancia *aura sacrilega* e ha attivi *armatura magica* e *volare* dal Cuore.
+- **Karkator sa che arrivano** dal momento in cui qualcuno tocca l'acqua della vasca di sopra: la sente. Prima che i PG entrino lancia *aura sacrilega* (capacità magica del mezzo-immondo) e ha attivi *armatura magica* e il volo che gli dà il Cuore.
 - **Round 1**: *asservire* (Volontà CD 29) sul combattente più forte, che gli fa da scudo. **Round 2**: *blasfemia* (incantesimo come mezzo-immondo) o *avvizzimento orrendo* se i PG sono sparsi. **Round 3**: *inversione della gravità* dal Cuore: chi non è ancorato cade verso la volta (12 m, 4d6) e poi ricade nella vasca.
 - **In mischia** colpisce con quattro tentacoli e cerca di trascinare un PG sott'acqua; chi è stato toccato dal muco (Tempra CD 31) e non può respirare nell'acqua sta annegando in pochi round. Hella con *libertà di movimento* e forma acquatica è il PG che lo può seguire.
 - **Si ritira** sotto il 20% dei pf nella galleria di drenaggio verso il Sottosuolo (scelta 13), portandosi via il Cuore se i perni sono ancora interi.
@@ -81,7 +81,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF
 | Stato | Trigger | Cosa cambia sulla griglia | Effetto meccanico |
 |---|---|---|---|
 | A (iniziale) | — | com'è disegnata | — |
-| B · gravità invertita | Karkator usa il potere del Cuore (1 volta al giorno) | per 1d4+1 round chi non è ancorato sta sulla volta | 4d6 nella caduta verso l'alto, altrettanti quando finisce se non sopra l'acqua; Artemis in volo non cade (vola), Tordek con caduta lenta dimezza |
+| B · gravità invertita | Karkator usa il potere del Cuore (1 volta al giorno) | fino a 15 round (LI 15°, Karkator la congeda quando vuole) chi non è ancorato sta sulla volta, 12 m più su | 4d6 nella caduta verso l'alto, altrettanti quando finisce, salvo chi ricade nella vasca; Artemis in volo non cade (vola), Tordek con caduta lenta dimezza |
 | C · Cuore staccato | i PG rompono due perni o tirano via il Cuore | la luce verde si spegne, il sale si incrina | Karkator perde la rigenerazione, il volo e l'armatura: torna GS 15. Chi tiene il Cuore subisce un tentativo di *asservire* ogni round finché non lo purifica |
 
 > **La grotta misura 48 × 42 m** con le pareti, circa 42 × 37,5 m di pavimento. È la sorgente salata che i Calishiti trovarono scavando la cisterna e murarono: Tariq l'ha riaperta, perché la Collezione del Collezionista vuole il Cuore che ci cresceva dentro.

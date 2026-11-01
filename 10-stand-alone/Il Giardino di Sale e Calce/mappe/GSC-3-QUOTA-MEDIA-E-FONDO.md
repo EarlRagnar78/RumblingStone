@@ -77,7 +77,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 | Tariq | Chuul avanzato | 🔴 | 1 | — | AD7 |
 | Tariq | Asserviti di Karkator: acquaioli della gilda, umani popolani, nell'acqua fino al petto (12) | 🟢 | 12 | — | Q20–V22 |
 
-- **I chuul stanno sul fondo** e salgono solo su chi scende dalle scalette o cade dal ponte. Dal ponte maestro non arrivano: la portata di un Enorme è 4,5 m, il ponte è a 6 m. **EL 13** con tutti e tre; è uno scontro facoltativo e lo si evita restando sul ponte.
+- **I chuul stanno sul fondo** e salgono solo su chi scende dalle scalette o cade dal ponte. Dal ponte maestro non arrivano: la loro portata è 3 m e il ponte è a 6 m. **EL 12** con tutti e tre (GS 9 ciascuno); è uno scontro facoltativo e lo si evita restando sul ponte.
 - **Gli asserviti** non combattono: lavorano a raschiare il sale dalle pareti perché Karkator lo vuole. Se i PG li liberano (scelta 7) sono 12 uomini da portare su, ed è il conflitto della scena.
 - **Il ponte maestro è la strada della Torre**: chi arriva dalla galleria della Cattedrale lo percorre per 43,5 m sotto gli occhi delle feritoie della Torre.
 

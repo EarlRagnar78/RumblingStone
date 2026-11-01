@@ -105,6 +105,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B1, B2-B4 (3.5), B8 | ✅ B1 e B8 · 🟡 B2-B4 per la 3.5: master, appendice delle creature e manifest in 10-stand-alone/Il Giardino di Sale e Calce/; validate_booklets, validate_prosa -… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B6 prima parte: otto mappe tattiche | 🟡 contratti JSON e master in 10-stand-alone/Il Giardino di Sale e Calce/mappe/, quattro temi di render, collaudo_mappe e qualita_mappe a 0 errori; D7 decisa (q… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B8 progetto: Rethmar e l'assedio | 🟡 15 scelte agganciate a Fronte, Morale Cittadino, contingenti e clock esistenti; tre ingressi (cripta della Cattedrale di Lathander, sfioratore nascosto, pozz… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B4 seconda parte: Tariq e skum; lotto B8 aperto | 🟡 Tariq chierico 13 di Umberlee GS 13 con nube acida al posto della nebbia di calce; skum guerriero 8 GS 10 (63 pf, non 115); B8 conseguenze sull'assedio di Re… |
@@ -116,7 +117,6 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-10-31 | STANDARD-STAMPA | I2 seguito: nessun disegno a caratteri stampato in tutto il repo | ✅ linee del tempo di Palio e Drappo in tabella; `validate_booklets` ferma i recinti con ≥ 20 caratteri di riquadro fuori dall'apparato |
 | 2026-10-30 | STANDARD-STAMPA | I2 seguito: le sei mappe schematiche di ARC-07 in pianta o in schema (ADR-0106… | ✅ nessuna griglia ASCII stampata nei booklet di ARC-07; T-5, R-1, S-1 in scala, T-1, T-4, M7-A schemi a 7,4 pt senza filtri, `render_schemi.py --check` in CI |
 | 2026-10-30 | STANDARD-STAMPA | I2 chiuso: pianta in stampa per tutte le 56 mappe del repo (ADR-0106), controll… | ✅ scritte sotto 7 pt 5.820→0 e filtri rasterizzati 418→0 sulle 56 mappe, nessun testo perso; ARC-07 righe sotto 7 pt a 0 in tutti e tre i volumi (Notte e Alba… |
-| 2026-10-30 | STANDARD-STAMPA | I2 prime mappe: modo stampa per M7-H e M7-C, stile pianta scelto al cieco | 🟡 scritte ≥ 7,4 pt, niente filtri rasterizzati; tetti ARC-07 giù: Notte e Alba 291→217 righe e 58→52 immagini, Resurrezione 330→256 e 68→62, Mille anni 291→217… |
 
 ## Le misure che si portano dietro
 

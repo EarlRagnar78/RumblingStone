@@ -35,7 +35,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @collega S15 ; fuori mappa ; la strada dei drow: due chilometri di galleria fino ai campi di Sonjak sotto la linea di Rethmar
 @taglia AB8 ; Enorme
 @mark 1 ; AL7 ; I PG, dallo sfioratore
-@mark 2 ; AB8 ; Chuul avanzato a 17 DV, Enorme, nella canaletta (se non è già stato affrontato in GS-3)
+@mark 2 ; AB8 ; Un quarto chuul avanzato a 17 DV, Enorme (GS 9), nella canaletta
 @mark 3 ; S14 ; Asserviti in catene che scavano (popolani rapiti a Rethmar, 8)
 @mark 4 ; T11 ; Capomastro drow di Sonjak (ranger 6 / ladro 3), sorveglia lo scavo
 ```
@@ -55,7 +55,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 | Fazione | Unità | Token | Q.tà | GS/EL | Area (coord.) |
 |---|---|---|---|---|---|
 | PG | I PG, dallo sfioratore | 🔵 | 4 | — | AK6–AL7 |
-| Tariq | Chuul avanzato a 17 DV, Enorme, nella canaletta (se non è già stato affrontato in GS-3) | 🔴 | 1 | — | AB8 |
+| Tariq | Un quarto chuul avanzato a 17 DV, Enorme (GS 9), nella canaletta | 🔴 | 1 | — | AB8 |
 | Karkator | Asserviti in catene che scavano (popolani rapiti a Rethmar, 8) | 🟢 | 8 | — | R13–T14 |
 | Sonjak | Capomastro drow di Sonjak (ranger 6 / ladro 3), sorveglia lo scavo | 🟣 | 1 | — | T11 |
 

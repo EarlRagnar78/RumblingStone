@@ -46,7 +46,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V
 
 | Elemento | Dove (coord.) | Effetto meccanico 3.5 |
 |---|---|---|
-| 🌫 La tromba della scala | I9 | aperta per 18 m fino al Santuario: chi ci cade o ci viene spinto (spingere oltrepassando, Tariq ha Spingere Migliorato sugli skum) prende 6d6 |
+| 🌫 La tromba della scala | I9 | aperta per 18 m fino al Santuario: chi ci cade o ci viene spinto (gli skum hanno Spingere Migliorato) prende 6d6 |
 
 ### ⚔️ TATTICHE (come si comportano i nemici — round per round)
 
@@ -59,7 +59,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V
 | Tariq | Skum guerriero 8 (GS 10) | 🔴 | 1 | — | G8 |
 | Tariq | Skum guerriero 8 (GS 10) | 🔴 | 1 | — | G14 |
 
-- **Se la Torre non è allertata**, Tariq è allo scrittoio e gli skum ai lati della porta. **Se è allertata** (Odo ha avvisato, i ragni sono fuggiti, i chuul hanno combattuto), Tariq ha già lanciato *resistenza agli incantesimi*, *veste magica*, *aura sacrilega* da pergamena e *camminare nell'aria*, e aspetta dietro la tromba delle scale.
+- **Se la Torre non è allertata**, Tariq è allo scrittoio e gli skum ai lati della porta. **Se è allertata** (Odo ha avvisato, i ragni sono fuggiti, i chuul hanno combattuto), Tariq ha già lanciato *resistenza agli incantesimi*, *libertà di movimento*, *giusto potere* e *camminare nell'aria* (le due *veste magica* sono attive dall'alba), e aspetta dietro la tromba delle scale.
 - **Round 1**: *barriera di lame* (CD 22) fra la porta e la tromba, per spezzare il gruppo; gli skum spingono chi passa verso la tromba (Spingere Migliorato). **Round 2**: *blasfemia* se almeno due PG sono a portata; altrimenti *dissolvi magie superiore* sul volatore. **Round 3+**: *ferire* sul guerriero più vicino, *colpo infuocato* sui gruppi.
 - **Tariq non muore per Sal.** Sotto i 30 pf scende la scala a chiocciola con *camminare nell'aria* verso Karkator e grida il suo nome: lo scontro finale comincia con Tariq al fianco dell'aboleth. Catturarlo vivo vale la scelta 6.
 - **EL 15** (Tariq GS 13 e due skum GS 10).

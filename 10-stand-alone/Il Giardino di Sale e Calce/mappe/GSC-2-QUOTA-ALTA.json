@@ -368,9 +368,9 @@
   "evoluzione": [
     {
       "stato": "B · nebbia di calce",
-      "trigger": "Tariq, dalla Torre, lancia *nebbia acida* sulle passerelle (scontro unito)",
+      "trigger": "Tariq, dalla Torre, lancia *nube acida* sulle passerelle (scontro unito)",
       "griglia": "una nube di 6 m di raggio su un incrocio",
-      "effetto": "2d6 acido a round, occultamento totale oltre 1,5 m; chi vola dentro a più di 9 m a round fa Tempra CD 22 o è nauseato per 1 round. Non fa cadere nessuno"
+      "effetto": "2d6 acido a round, occultamento totale oltre 1,5 m; chi vola dentro a più di 9 m a round fa Tempra CD 22 o è nauseato per 1 round (regola del modulo, non SRD). Non fa cadere nessuno"
     },
     {
       "stato": "C · passerella spezzata",

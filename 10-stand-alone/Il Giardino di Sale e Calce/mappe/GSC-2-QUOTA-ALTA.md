@@ -80,7 +80,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 | Stato | Trigger | Cosa cambia sulla griglia | Effetto meccanico |
 |---|---|---|---|
 | A (iniziale) | — | com'è disegnata | — |
-| B · nebbia di calce | Tariq, dalla Torre, lancia *nebbia acida* sulle passerelle (scontro unito) | una nube di 6 m di raggio su un incrocio | 2d6 acido a round, occultamento totale oltre 1,5 m; chi vola dentro a più di 9 m a round fa Tempra CD 22 o è nauseato per 1 round. Non fa cadere nessuno |
+| B · nebbia di calce | Tariq, dalla Torre, lancia *nube acida* sulle passerelle (scontro unito) | una nube di 6 m di raggio su un incrocio | 2d6 acido a round, occultamento totale oltre 1,5 m; chi vola dentro a più di 9 m a round fa Tempra CD 22 o è nauseato per 1 round (regola del modulo, non SRD). Non fa cadere nessuno |
 | C · passerella spezzata | un tratto prende 30 danni o un ragno ci si lancia sopra | un tratto di 3 quadretti diventa vuoto | Riflessi CD 15 per chi ci sta sopra, o cade |
 
 > **La Grande Cisterna misura 57 × 37,5 m** di pianta interna. La volta è a +18 m, le passerelle alte a +15, i ponti della quota media a +6, il fondo delle navate a 0, la vasca centrale scende a −6 e sotto di lei il Santuario di Sale sta a −12.

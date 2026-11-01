@@ -1,0 +1,302 @@
+{
+  "schema_version": "1.0",
+  "title": "GS-5 — Il Santuario di Sale (−12 m): la vasca del Cuore di Selenite e la tana di Karkator",
+  "scale_m_per_square": 1.5,
+  "map_size": [
+    32,
+    28
+  ],
+  "base_terrain": "🏰",
+  "north": "N",
+  "tipo": "tattica",
+  "ambiente": "caverna",
+  "luogo": "Rethmar, sotto la vasca della Grande Cisterna: la vecchia sorgente salata",
+  "regions": [
+    {
+      "terrain": "🟤",
+      "polygon": [
+        [
+          2,
+          4
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          30,
+          6
+        ],
+        [
+          30,
+          22
+        ],
+        [
+          22,
+          26
+        ],
+        [
+          10,
+          26
+        ],
+        [
+          2,
+          20
+        ]
+      ],
+      "label": "La grotta di sale: pareti bianche, cristalli che riflettono la luce verde del Cuore"
+    },
+    {
+      "terrain": "🟦",
+      "polygon": [
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          5
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          25,
+          18
+        ],
+        [
+          16,
+          22
+        ],
+        [
+          8,
+          18
+        ]
+      ],
+      "label": "La vasca salmastra: 9 m d'acqua, densa di sale e di muco"
+    },
+    {
+      "terrain": "🟨",
+      "rect": [
+        3,
+        20,
+        7,
+        3
+      ],
+      "label": "Crosta di sale"
+    },
+    {
+      "terrain": "🟨",
+      "rect": [
+        24,
+        3,
+        5,
+        3
+      ],
+      "label": "Crosta di sale"
+    }
+  ],
+  "structures": [
+    {
+      "type": "🔳",
+      "rect": [
+        15,
+        12,
+        3,
+        3
+      ],
+      "label": "L'isolotto di selenite, mezzo metro sopra l'acqua"
+    },
+    {
+      "type": "💎",
+      "at": [
+        16,
+        13
+      ],
+      "label": "Il Cuore di Selenite, incastrato in quattro perni di bronzo calishita (durezza 10, 30 pf ciascuno)"
+    },
+    {
+      "type": "🔮",
+      "at": [
+        6,
+        6
+      ],
+      "label": "Colonna di cristallo di sale"
+    },
+    {
+      "type": "🔮",
+      "at": [
+        26,
+        9
+      ],
+      "label": "Colonna di cristallo di sale"
+    },
+    {
+      "type": "🔮",
+      "at": [
+        6,
+        17
+      ],
+      "label": "Colonna di cristallo di sale"
+    },
+    {
+      "type": "🔮",
+      "at": [
+        26,
+        19
+      ],
+      "label": "Colonna di cristallo di sale"
+    },
+    {
+      "type": "🔮",
+      "at": [
+        20,
+        24
+      ],
+      "label": "Colonna di cristallo di sale"
+    },
+    {
+      "type": "🔼",
+      "at": [
+        16,
+        3
+      ],
+      "label": "Il sifone dal fondo della vasca della cisterna (GS-3): si arriva nuotando dall'alto",
+      "collega": "GSC-3-QUOTA-MEDIA-E-FONDO.md U15"
+    },
+    {
+      "type": "🔼",
+      "at": [
+        3,
+        14
+      ],
+      "label": "La scala a chiocciola della Torre delle Volte (GS-4)",
+      "collega": "GSC-4-TORRE-DELLE-VOLTE.md J10"
+    },
+    {
+      "type": "🔽",
+      "at": [
+        30,
+        14
+      ],
+      "label": "La galleria di drenaggio, in leggera discesa verso est (GS-6)",
+      "collega": "GSC-6-GALLERIA-DI-DRENAGGIO.md B08"
+    }
+  ],
+  "hazards": [
+    {
+      "type": "🟦",
+      "at": [
+        11,
+        16
+      ],
+      "label": "La vasca salmastra",
+      "effect": "l'acqua salata e densa sostiene: Nuotare CD 10, ma dentro c'è il muco di Karkator (Tempra CD 31 al primo round d'immersione). Karkator vi combatte con il bonus razziale +8 a Nuotare e senza penalità"
+    },
+    {
+      "type": "🟨",
+      "at": [
+        5,
+        21
+      ],
+      "label": "Crosta di sale",
+      "effect": "Equilibrio CD 12 o cade prono"
+    },
+    {
+      "type": "💎",
+      "at": [
+        16,
+        13
+      ],
+      "label": "Il Cuore di Selenite",
+      "effect": "finché è nei perni Karkator ha rigenerazione 15 (lo ferisce solo l'acido) e può lanciare *inversione della gravità* una volta al giorno sulla grotta. Staccarlo: distruggere due perni o Forza CD 28"
+    }
+  ],
+  "lights": [
+    {
+      "at": [
+        16,
+        13
+      ],
+      "range": 8,
+      "color": "7fffd4"
+    }
+  ],
+  "units": [
+    {
+      "faction": "PG",
+      "name": "I PG, dalla scala della Torre",
+      "token": "🔵",
+      "area": {
+        "rect": [
+          3,
+          12,
+          2,
+          2
+        ]
+      },
+      "quantity": 4
+    },
+    {
+      "faction": "Karkator",
+      "name": "Karkator, aboleth mezzo-immondo avanzato a 24 DV, Mastodontico (GS 16)",
+      "token": "⚫",
+      "at": [
+        19,
+        16
+      ]
+    },
+    {
+      "faction": "Karkator",
+      "name": "Asserviti armati (guerriero 4), quattro, sul bordo della vasca",
+      "token": "🔴",
+      "area": {
+        "rect": [
+          24,
+          12,
+          2,
+          2
+        ]
+      },
+      "quantity": 4
+    }
+  ],
+  "taglie": [
+    {
+      "at": [
+        19,
+        16
+      ],
+      "taglia": "Mastodontica"
+    }
+  ],
+  "tattiche": [
+    "**Karkator sa che arrivano** dal momento in cui qualcuno tocca l'acqua della vasca di sopra: la sente. Prima che i PG entrino lancia *aura sacrilega* e ha attivi *armatura magica* e *volare* dal Cuore.",
+    "**Round 1**: *asservire* (Volontà CD 29) sul combattente più forte, che gli fa da scudo. **Round 2**: *blasfemia* (incantesimo come mezzo-immondo) o *avvizzimento orrendo* se i PG sono sparsi. **Round 3**: *inversione della gravità* dal Cuore: chi non è ancorato cade verso la volta (12 m, 4d6) e poi ricade nella vasca.",
+    "**In mischia** colpisce con quattro tentacoli e cerca di trascinare un PG sott'acqua; chi è stato toccato dal muco (Tempra CD 31) e non può respirare nell'acqua sta annegando in pochi round. Hella con *libertà di movimento* e forma acquatica è il PG che lo può seguire.",
+    "**Si ritira** sotto il 20% dei pf nella galleria di drenaggio verso il Sottosuolo (scelta 13), portandosi via il Cuore se i perni sono ancora interi.",
+    "**EL 16**, 17 se Tariq è fuggito qui."
+  ],
+  "evoluzione": [
+    {
+      "stato": "B · gravità invertita",
+      "trigger": "Karkator usa il potere del Cuore (1 volta al giorno)",
+      "griglia": "per 1d4+1 round chi non è ancorato sta sulla volta",
+      "effetto": "4d6 nella caduta verso l'alto, altrettanti quando finisce se non sopra l'acqua; Artemis in volo non cade (vola), Tordek con caduta lenta dimezza"
+    },
+    {
+      "stato": "C · Cuore staccato",
+      "trigger": "i PG rompono due perni o tirano via il Cuore",
+      "griglia": "la luce verde si spegne, il sale si incrina",
+      "effetto": "Karkator perde la rigenerazione, il volo e l'armatura: torna GS 15. Chi tiene il Cuore subisce un tentativo di *asservire* ogni round finché non lo purifica"
+    }
+  ],
+  "note_dm": [
+    "**La grotta misura 48 × 42 m** con le pareti, circa 42 × 37,5 m di pavimento. È la sorgente salata che i Calishiti trovarono scavando la cisterna e murarono: Tariq l'ha riaperta, perché la Collezione del Collezionista vuole il Cuore che ci cresceva dentro."
+  ]
+}

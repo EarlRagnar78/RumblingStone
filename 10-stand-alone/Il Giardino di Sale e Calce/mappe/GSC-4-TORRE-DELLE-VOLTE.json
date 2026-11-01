@@ -1,0 +1,250 @@
+{
+  "schema_version": "1.0",
+  "title": "GS-4 — La Torre delle Volte: l'officina e lo studio di Mastro Tariq (+6 m)",
+  "scale_m_per_square": 1.5,
+  "map_size": [
+    22,
+    20
+  ],
+  "base_terrain": "🏰",
+  "north": "N",
+  "tipo": "tattica",
+  "ambiente": "interni",
+  "luogo": "Rethmar, la Grande Cisterna, dentro la Torre delle Volte",
+  "regions": [
+    {
+      "terrain": "⬜",
+      "rect": [
+        3,
+        3,
+        16,
+        14
+      ],
+      "label": "L'officina delle acque: modelli di chiuse in ottone, tavoli coperti di disegni calishiti"
+    },
+    {
+      "terrain": "⬜",
+      "rect": [
+        0,
+        10,
+        3,
+        1
+      ],
+      "label": "Il ponte maestro"
+    },
+    {
+      "terrain": "🌫",
+      "rect": [
+        8,
+        8,
+        3,
+        3
+      ],
+      "label": "La tromba della scala a chiocciola, aperta fino al fondo"
+    }
+  ],
+  "structures": [
+    {
+      "type": "🔽",
+      "at": [
+        1,
+        10
+      ],
+      "label": "Il ponte maestro, fuori dalla porta (GS-3)",
+      "collega": "GSC-3-QUOTA-MEDIA-E-FONDO.md AE14"
+    },
+    {
+      "type": "🚪",
+      "at": [
+        2,
+        10
+      ],
+      "label": "La porta della Torre: quercia cerchiata di bronzo, sbarrata da dentro se la Torre è allertata (Forza CD 25)"
+    },
+    {
+      "type": "🏰",
+      "line": [
+        [
+          13,
+          3
+        ],
+        [
+          13,
+          8
+        ]
+      ],
+      "label": "Parete dello studio"
+    },
+    {
+      "type": "🏰",
+      "line": [
+        [
+          14,
+          8
+        ],
+        [
+          18,
+          8
+        ]
+      ]
+    },
+    {
+      "type": "🔒",
+      "at": [
+        13,
+        6
+      ],
+      "label": "Porta dello studio: Scassinare CD 30, *serratura arcana*"
+    },
+    {
+      "type": "🗄",
+      "at": [
+        17,
+        4
+      ],
+      "label": "Lo scaffale delle carte: i disegni della galleria verso il Sottosuolo e le lettere di Sal (scelta 12)"
+    },
+    {
+      "type": "🪑",
+      "at": [
+        15,
+        5
+      ],
+      "label": "Lo scrittoio di Tariq"
+    },
+    {
+      "type": "📚",
+      "at": [
+        17,
+        6
+      ],
+      "label": "Trattati calishiti sulle acque"
+    },
+    {
+      "type": "🔽",
+      "at": [
+        9,
+        9
+      ],
+      "label": "La scala a chiocciola: scende di 18 m fino al Santuario di Sale (GS-5)",
+      "collega": "GSC-5-SANTUARIO-DI-SALE.md D15"
+    },
+    {
+      "type": "🧰",
+      "at": [
+        4,
+        15
+      ],
+      "label": "Le leve delle paratoie di scarico (stato B di GS-3)"
+    },
+    {
+      "type": "🪟",
+      "at": [
+        19,
+        12
+      ],
+      "label": "Feritoia sulla sala"
+    },
+    {
+      "type": "🪟",
+      "at": [
+        10,
+        17
+      ],
+      "label": "Feritoia sulla sala"
+    },
+    {
+      "type": "🪟",
+      "at": [
+        2,
+        7
+      ],
+      "label": "Feritoia sul ponte maestro"
+    },
+    {
+      "type": "🛐",
+      "at": [
+        16,
+        14
+      ],
+      "label": "L'altare di Umberlee: una conchiglia nera piena d'acqua di mare"
+    }
+  ],
+  "hazards": [
+    {
+      "type": "🌫",
+      "at": [
+        8,
+        8
+      ],
+      "label": "La tromba della scala",
+      "effect": "aperta per 18 m fino al Santuario: chi ci cade o ci viene spinto (spingere oltrepassando, Tariq ha Spingere Migliorato sugli skum) prende 6d6"
+    }
+  ],
+  "units": [
+    {
+      "faction": "PG",
+      "name": "I PG, dalla porta",
+      "token": "🔵",
+      "area": {
+        "rect": [
+          3,
+          9,
+          2,
+          2
+        ]
+      },
+      "quantity": 4
+    },
+    {
+      "faction": "Tariq",
+      "name": "Mastro Tariq, chierico 13 di Umberlee (GS 13)",
+      "token": "🟣",
+      "at": [
+        15,
+        12
+      ]
+    },
+    {
+      "faction": "Tariq",
+      "name": "Skum guerriero 8 (GS 10)",
+      "token": "🔴",
+      "at": [
+        6,
+        7
+      ]
+    },
+    {
+      "faction": "Tariq",
+      "name": "Skum guerriero 8 (GS 10)",
+      "token": "🔴",
+      "at": [
+        6,
+        13
+      ]
+    }
+  ],
+  "tattiche": [
+    "**Se la Torre non è allertata**, Tariq è allo scrittoio e gli skum ai lati della porta. **Se è allertata** (Odo ha avvisato, i ragni sono fuggiti, i chuul hanno combattuto), Tariq ha già lanciato *resistenza agli incantesimi*, *veste magica*, *aura sacrilega* da pergamena e *camminare nell'aria*, e aspetta dietro la tromba delle scale.",
+    "**Round 1**: *barriera di lame* (CD 22) fra la porta e la tromba, per spezzare il gruppo; gli skum spingono chi passa verso la tromba (Spingere Migliorato). **Round 2**: *blasfemia* se almeno due PG sono a portata; altrimenti *dissolvi magie superiore* sul volatore. **Round 3+**: *ferire* sul guerriero più vicino, *colpo infuocato* sui gruppi.",
+    "**Tariq non muore per Sal.** Sotto i 30 pf scende la scala a chiocciola con *camminare nell'aria* verso Karkator e grida il suo nome: lo scontro finale comincia con Tariq al fianco dell'aboleth. Catturarlo vivo vale la scelta 6.",
+    "**EL 15** (Tariq GS 13 e due skum GS 10)."
+  ],
+  "evoluzione": [
+    {
+      "stato": "B · barriera di lame",
+      "trigger": "Tariq la lancia al round 1",
+      "griglia": "un muro di lame lungo 6 m fra la porta e la scala",
+      "effetto": "15d6 danni a chi lo attraversa (Riflessi CD 22 dimezza)"
+    },
+    {
+      "stato": "C · fuga di Tariq",
+      "trigger": "Tariq sotto i 30 pf",
+      "griglia": "Tariq scende nella tromba",
+      "effetto": "arriva nel Santuario in 2 round e combatte accanto a Karkator: l'EL dello scontro finale sale di 1"
+    }
+  ],
+  "note_dm": [
+    "**L'officina misura 24 × 21 m** di pavimento, dentro mura spesse 1,5 m. Ha tre piani: il fondo con le chiuse, questa officina a +6 m e il terrazzo di guardia a +12 m (non serve una griglia, ci stanno solo due skum di vedetta se la Torre è allertata)."
+  ]
+}

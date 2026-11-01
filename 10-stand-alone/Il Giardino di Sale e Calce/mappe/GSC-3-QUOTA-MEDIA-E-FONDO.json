@@ -1,0 +1,417 @@
+{
+  "schema_version": "1.0",
+  "title": "GS-3 — La Grande Cisterna, quota media (+6 m) e fondo: ponte maestro, navate, vasca",
+  "scale_m_per_square": 1.5,
+  "map_size": [
+    40,
+    27
+  ],
+  "base_terrain": "💧",
+  "north": "N",
+  "tipo": "tattica",
+  "ambiente": "interni",
+  "luogo": "Rethmar, la Grande Cisterna sotto il Mercato del Ponte",
+  "regions": [
+    {
+      "terrain": "🏰",
+      "rect": [
+        0,
+        0,
+        40,
+        1
+      ]
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        0,
+        26,
+        40,
+        1
+      ]
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        0,
+        0,
+        1,
+        27
+      ]
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        39,
+        0,
+        1,
+        27
+      ]
+    },
+    {
+      "terrain": "🟦",
+      "rect": [
+        14,
+        9,
+        12,
+        9
+      ],
+      "label": "La vasca centrale: 6 m d'acqua torbida, con un velo di muco iridescente"
+    },
+    {
+      "terrain": "🟨",
+      "rect": [
+        3,
+        20,
+        8,
+        4
+      ],
+      "label": "Banchi di sale affiorati, scivolosi"
+    }
+  ],
+  "structures": [
+    {
+      "type": "🌉",
+      "line": [
+        [
+          1,
+          13
+        ],
+        [
+          29,
+          13
+        ]
+      ],
+      "label": "Il ponte maestro a +6 m, largo 1,5 m, con parapetto di ferro (copertura bassa no)"
+    },
+    {
+      "type": "🌉",
+      "line": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          24
+        ]
+      ],
+      "label": "Cornicione ovest a +6 m"
+    },
+    {
+      "type": "🌉",
+      "line": [
+        [
+          38,
+          2
+        ],
+        [
+          38,
+          24
+        ]
+      ],
+      "label": "Cornicione est a +6 m"
+    },
+    {
+      "type": "🌉",
+      "line": [
+        [
+          20,
+          2
+        ],
+        [
+          20,
+          12
+        ]
+      ],
+      "label": "Ponte nord verso la paratoia"
+    },
+    {
+      "type": "🌉",
+      "line": [
+        [
+          2,
+          2
+        ],
+        [
+          37,
+          2
+        ]
+      ]
+    },
+    {
+      "type": "🟪",
+      "at": [
+        5,
+        8
+      ],
+      "label": "Pilastro"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        15,
+        8
+      ],
+      "label": "Pilastro"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        25,
+        8
+      ],
+      "label": "Pilastro"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        35,
+        8
+      ],
+      "label": "Pilastro"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        5,
+        18
+      ],
+      "label": "Pilastro"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        15,
+        18
+      ],
+      "label": "Pilastro"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        25,
+        18
+      ],
+      "label": "Pilastro"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        35,
+        18
+      ],
+      "label": "Pilastro"
+    },
+    {
+      "type": "⬛",
+      "rect": [
+        31,
+        10,
+        6,
+        7
+      ],
+      "label": "La Torre delle Volte: sale dal fondo fino a +12 m, 9 × 10,5 m"
+    },
+    {
+      "type": "🔼",
+      "at": [
+        30,
+        13
+      ],
+      "label": "La porta della Torre sul ponte maestro (GS-4)",
+      "collega": "GSC-4-TORRE-DELLE-VOLTE.md B11"
+    },
+    {
+      "type": "🔼",
+      "at": [
+        1,
+        4
+      ],
+      "label": "Scala di ferro a pioli verso le passerelle alte",
+      "collega": "GSC-2-QUOTA-ALTA.md B05"
+    },
+    {
+      "type": "🔼",
+      "at": [
+        38,
+        22
+      ],
+      "label": "Scala di ferro a pioli verso le passerelle alte",
+      "collega": "GSC-2-QUOTA-ALTA.md AM23"
+    },
+    {
+      "type": "🔼",
+      "at": [
+        1,
+        13
+      ],
+      "label": "Lo sbocco della galleria di servizio dalla Cattedrale (GS-1)",
+      "collega": "GSC-1-CRIPTA-CATTEDRALE.md X08"
+    },
+    {
+      "type": "🔽",
+      "at": [
+        20,
+        14
+      ],
+      "label": "Il pozzo di scarico sul fondo della vasca, a −6 m: un sifone di 6 m porta al Santuario di Sale (Nuotare CD 15, 2 round in apnea)",
+      "collega": "GSC-5-SANTUARIO-DI-SALE.md Q04"
+    },
+    {
+      "type": "🧰",
+      "at": [
+        20,
+        2
+      ],
+      "label": "Le paratoie: regolano quanta acqua va alle fontane della città"
+    },
+    {
+      "type": "🪜",
+      "at": [
+        12,
+        14
+      ],
+      "label": "Scaletta dal ponte all'acqua delle navate"
+    },
+    {
+      "type": "🪜",
+      "at": [
+        27,
+        12
+      ],
+      "label": "Scaletta dal ponte all'acqua"
+    }
+  ],
+  "hazards": [
+    {
+      "type": "💧",
+      "at": [
+        7,
+        22
+      ],
+      "label": "Le navate allagate",
+      "effect": "1 m d'acqua sul fondo: costa 2 quadretti di movimento ogni quadretto, niente carica né corsa (SRD, acqua bassa profonda)"
+    },
+    {
+      "type": "🟦",
+      "at": [
+        17,
+        16
+      ],
+      "label": "Acqua della vasca",
+      "effect": "Nuotare CD 15 (acqua calma); chi la beve o ci si immerge con la bocca aperta rischia il muco di Karkator: Tempra CD 31 o la trasformazione dell'SRD (1d4+1 minuti)"
+    },
+    {
+      "type": "🟨",
+      "at": [
+        5,
+        21
+      ],
+      "label": "Sale affiorato",
+      "effect": "Equilibrio CD 12 per muoversi a più di metà velocità"
+    }
+  ],
+  "units": [
+    {
+      "faction": "PG",
+      "name": "I PG, dal ponte ovest o dalle scale",
+      "token": "🔵",
+      "area": {
+        "rect": [
+          2,
+          12,
+          2,
+          2
+        ]
+      },
+      "quantity": 4
+    },
+    {
+      "faction": "Tariq",
+      "name": "Chuul avanzato a 17 DV, Enorme (GS 9), sott'acqua nella navata sud",
+      "token": "🔴",
+      "at": [
+        9,
+        18
+      ]
+    },
+    {
+      "faction": "Tariq",
+      "name": "Chuul avanzato",
+      "token": "🔴",
+      "at": [
+        28,
+        20
+      ]
+    },
+    {
+      "faction": "Tariq",
+      "name": "Chuul avanzato",
+      "token": "🔴",
+      "at": [
+        29,
+        6
+      ]
+    },
+    {
+      "faction": "Tariq",
+      "name": "Asserviti di Karkator: acquaioli della gilda, umani popolani, nell'acqua fino al petto (12)",
+      "token": "🟢",
+      "area": {
+        "rect": [
+          16,
+          19,
+          6,
+          3
+        ]
+      },
+      "quantity": 12
+    }
+  ],
+  "taglie": [
+    {
+      "at": [
+        9,
+        18
+      ],
+      "taglia": "Enorme"
+    },
+    {
+      "at": [
+        28,
+        20
+      ],
+      "taglia": "Enorme"
+    },
+    {
+      "at": [
+        29,
+        6
+      ],
+      "taglia": "Enorme"
+    }
+  ],
+  "tattiche": [
+    "**I chuul stanno sul fondo** e salgono solo su chi scende dalle scalette o cade dal ponte. Dal ponte maestro non arrivano: la portata di un Enorme è 4,5 m, il ponte è a 6 m. **EL 13** con tutti e tre; è uno scontro facoltativo e lo si evita restando sul ponte.",
+    "**Gli asserviti** non combattono: lavorano a raschiare il sale dalle pareti perché Karkator lo vuole. Se i PG li liberano (scelta 7) sono 12 uomini da portare su, ed è il conflitto della scena.",
+    "**Il ponte maestro è la strada della Torre**: chi arriva dalla galleria della Cattedrale lo percorre per 43,5 m sotto gli occhi delle feritoie della Torre."
+  ],
+  "evoluzione": [
+    {
+      "stato": "B · Tariq abbassa l'acqua",
+      "trigger": "Tariq apre le paratoie di scarico dalla Torre",
+      "griglia": "le navate si svuotano, la vasca scende a 3 m",
+      "effetto": "i chuul restano allo scoperto (perdono il bonus sott'acqua) ma il sifone verso il Santuario si apre: Karkator può salire in 2 round"
+    },
+    {
+      "stato": "C · Karkator sale",
+      "trigger": "rumore di battaglia nella vasca, o Tariq lo chiama",
+      "griglia": "Karkator emerge al centro della vasca",
+      "effetto": "lo scontro finale si sposta qui, con le navate e i ponti come campo: vedi il Santuario per le tattiche"
+    }
+  ],
+  "note_dm": [
+    "**Stessa pianta di GS-2**, 9 m più in basso. I pilastri sono gli stessi: chi scende da una catena di GS-2 arriva nel quadretto corrispondente di questa mappa."
+  ]
+}

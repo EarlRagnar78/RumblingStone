@@ -1,6 +1,6 @@
 # PIANO — La stand alone della cisterna: «Il Giardino di Sale e Calce»
 
-> **Stato**: 🟡 aperto (2026-11-01). fase A chiusa; D1-D6 decise: due moduli, 3.5 canonico sotto Rethmar e PF1e autonomo in Qasr al-Milah · **Classe**: K (contenuto nuovo), con le tavole sulla catena delle mappe
+> **Stato**: 🟡 aperto (2026-11-01). fase A chiusa; D1-D7 decise: due moduli, 3.5 canonico sotto Rethmar e PF1e autonomo in Qasr al-Milah · **Classe**: K (contenuto nuovo), con le tavole sulla catena delle mappe
 > **Nasce da**: la richiesta del DM del 2026-11-01: *«aggiungere una altra stand alone nella folder delle stand alone […] prendendo tutti i dati e idee necessarie da questa chat di gemini e dai suoi documenti generati adattandosi e verificandone secondo il processo sviluppato finora per le altre stand alone per esempio la stand alone della abbazia»*.
 > **Sorgente**: la chat Gemini «One-shot D&D 3.5 e Pathfinder 1e» (creata il 2026-10-27, condivisa il 2026-11-01). Copia integrale e inventario in `/mnt/project-files/standalone-giardino-sale-calce/`, fuori dal repo: entra solo ciò che passa le verifiche.
 > **Decisioni collegate**: [ADR-0017](adr/ADR-0017-moduli-autoconclusivi-classe-di-artefatto.md) (i moduli autoconclusivi), [ADR-0103](adr/ADR-0103-le-regole-si-riscontrano-sull-srd-in-cache.md) (riscontro sull'SRD in cache), [ADR-0105](adr/ADR-0105-ogni-creatura-esce-nello-stesso-riquadro.md) (il riquadro delle creature), [ADR-0106](adr/ADR-0106-ogni-mappa-si-stampa-in-pianta.md) (ogni mappa in pianta).
@@ -22,6 +22,7 @@ Il materiale vale come traccia, non come modulo: tre aree e tre scontri, mappe s
 | D4 | Titolo | *Il Giardino di Sale e Calce* | ✅ decisa dal DM il 2026-11-01 (card): la proposta |
 | D5 | Il boss | aboleth SRD avanzato a conti, potenziato con la regola della versione più terrificante (3.5, poi PF1e, poi SRD), fonte segnata | ✅ decisa dal DM il 2026-11-01 (card): la proposta |
 | D6 | Canone: la versione 3.5 sotto Rethmar entra in ARC-09 o resta una stand alone? | stand alone con aggancio | ✅ decisa dal DM il 2026-11-01 (card, opzione C, non la proposta): **due moduli distinti**. La 3.5 è canonica, sotto Rethmar, prima dell'assedio, con Sonjak e Sal; la PF1e è autonoma, in Qasr al-Milah. Tutti e due stanno in `10-stand-alone/` |
+| D7 | Per quanti PG è la 3.5, visto che nel canone Hella è morta fino al rito? | tre PG più un posto libero | ✅ decisa dal DM il 2026-11-01 in chat, non la proposta: **quattro PG di 13° con Hella**. La morte canonica non conta in questo modulo |
 
 ## Fase A — Audit
 
@@ -37,7 +38,7 @@ Il materiale vale come traccia, non come modulo: tre aree e tre scontri, mappe s
 - [ ] **B3** Le aree della cisterna a prefisso di quota, ciascuna con box di luogo, cosa c'è e perché ci si torna (indice maestro).
 - [ ] **B4** Le creature nel riquadro unico: Ragno delle Catene sul ragno fase, chuul, cloaker, skum avanzati, Mastro Tariq chierico 11 con incantesimi veri, Karkator secondo D5. Numeri solo nello statblocco (ADR-0091). 🟡 Prima parte il 2026-11-01: [B4-CONTI-CREATURE-35](esperimenti/giardino-sale-calce-2026-11/B4-CONTI-CREATURE-35.md), Karkator (aboleth mezzo-immondo a 24 DV, GS 15, 16 col Cuore) e Ragno delle Catene (ragno fase a 14 DV, GS 10). Seconda parte lo stesso giorno: Mastro Tariq chierico 13 di Umberlee (domini Acqua e Distruzione, *nube acida* come nebbia di calce, GS 13) e skum guerriero 8 (GS 10); Tariq e skum EL 15.
 - [ ] **B5** Le interazioni di classe come leve con CD, costo e conseguenza, nella forma di regia del repo.
-- [ ] **B6** Le tavole: pianta a scala reale e sezione verticale per ogni ambiente con quota (ADR-0106), dal generatore del repo. Richiesta del DM del 2026-11-01: mappe tattiche dettagliate per ogni incontro e mappe d'ambientazione (Rethmar e la discesa).
+- [ ] **B6** Le tavole: pianta a scala reale e sezione verticale per ogni ambiente con quota (ADR-0106), dal generatore del repo. Richiesta del DM del 2026-11-01: mappe tattiche dettagliate per ogni incontro e mappe d'ambientazione (Rethmar e la discesa). 🟡 2026-11-01: otto mappe tattiche in `10-stand-alone/Il Giardino di Sale e Calce/mappe/` (contratti JSON, master compilati, SVG pergamena, texture, pianta e pianta da stampa), collaudo e qualità a 0 errori (voto medio 94). Mancano le sezioni verticali (render_schemi.py) e la pianta di Rethmar con i tre ingressi.
 - [ ] **B8** Rethmar e l'assedio (richiesta del DM del 2026-11-01): scene, villain, PNG e artefatti collegati a Rethmar, con scelte ampie per i PG e conseguenze sui difensori dell'assedio o vantaggi agli attaccanti, agganciate ai clock di ARC-09 in `campaign/state.yaml`. 🟡 Progetto il 2026-11-01: [B8-RETHMAR-E-ASSEDIO](esperimenti/giardino-sale-calce-2026-11/B8-RETHMAR-E-ASSEDIO.md), con 15 scelte e i loro effetti su Fronte, Morale Cittadino, contingenti e clock, tre ingressi (cripta della Cattedrale di Lathander, sfioratore nascosto, pozzo del mercato) e undici mappe.
 - [ ] **B7** Apparato d'uso dal Drappo: quickstart, guida al DM passo passo, kit anti-improvvisazione, scheda di playtest.
 
@@ -60,3 +61,5 @@ Il materiale vale come traccia, non come modulo: tre aree e tre scontri, mappe s
 | 2026-11-01 | B4 prima parte: Karkator è un aboleth mezzo-immondo Mastodontico a 24 DV (324 pf, CA 28 con aura e Cuore, GS 15; 16 col Cuore); il Ragno delle Catene è un ragno fase Enorme a 14 DV (GS 10). Tariq, skum e chuul nella seconda parte. |
 | 2026-11-01 | B4 seconda parte (Tariq, skum). Il DM chiede mappe tattiche e d'ambientazione dettagliate e il legame con l'assedio di Rethmar: lotto B8 aggiunto. |
 | 2026-11-01 | B8 progettato: verità 3.5 (Sonjak vuole il tunnel, il Collezionista il Cuore, Sal ha comprato Tariq), 15 scelte con effetti sull'assedio, tre ingressi chiesti dal DM, undici mappe. |
+| 2026-11-01 | D7 decisa da Jfs: la 3.5 è per quattro PG di 13° con Hella, anche se nel canone è morta fino al rito. Mostri, PNG ed EL restano tarati su quattro. |
+| 2026-11-01 | B6 prima parte: otto mappe tattiche (cripta della Cattedrale, sfioratore, piazza del pozzo, quota alta, quota media e fondo, Torre delle Volte, Santuario di Sale, galleria di drenaggio), con le scale collegate fra loro. |

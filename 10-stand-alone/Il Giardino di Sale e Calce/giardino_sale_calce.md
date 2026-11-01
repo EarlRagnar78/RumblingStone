@@ -52,37 +52,37 @@ La cisterna ha tre ingressi, e ognuno porta in un punto diverso: chi scende da u
 
 ## Le tavole
 
-![GS-1c — Il Mercato del Ponte e il pozzo grande (ingresso C)](mappe/rendered-stampa-pianta/GSC-1C-PIAZZA-DEL-POZZO_map01_gs-1c-il-mercato-del-ponte-e-il-pozzo-grande-ing.svg)
+![GS-1c — Il Mercato del Ponte e il pozzo grande (ingresso C)](Mappe/rendered-stampa-pianta/GSC-1C-PIAZZA-DEL-POZZO_map01_gs-1c-il-mercato-del-ponte-e-il-pozzo-grande-ing.svg)
 
-![GS-1c — indicazioni e legenda](mappe/rendered-stampa-pianta/GSC-1C-PIAZZA-DEL-POZZO_map01_gs-1c-il-mercato-del-ponte-e-il-pozzo-grande-ing_legenda.svg)
+![GS-1c — indicazioni e legenda](Mappe/rendered-stampa-pianta/GSC-1C-PIAZZA-DEL-POZZO_map01_gs-1c-il-mercato-del-ponte-e-il-pozzo-grande-ing_legenda.svg)
 
-![GS-1 — La cripta della Cattedrale di Lathander e la galleria di servizio (ingresso A)](mappe/rendered-stampa-pianta/GSC-1-CRIPTA-CATTEDRALE_map01_gs-1-la-cripta-della-cattedrale-di-lathander-e-l.svg)
+![GS-1 — La cripta della Cattedrale di Lathander e la galleria di servizio (ingresso A)](Mappe/rendered-stampa-pianta/GSC-1-CRIPTA-CATTEDRALE_map01_gs-1-la-cripta-della-cattedrale-di-lathander-e-l.svg)
 
-![GS-1 — indicazioni e legenda](mappe/rendered-stampa-pianta/GSC-1-CRIPTA-CATTEDRALE_map01_gs-1-la-cripta-della-cattedrale-di-lathander-e-l_legenda.svg)
+![GS-1 — indicazioni e legenda](Mappe/rendered-stampa-pianta/GSC-1-CRIPTA-CATTEDRALE_map01_gs-1-la-cripta-della-cattedrale-di-lathander-e-l_legenda.svg)
 
-![GS-1b — Lo sfioratore calishita sotto la riva del Cannath (ingresso B, nascosto)](mappe/rendered-stampa-pianta/GSC-1B-SFIORATORE_map01_gs-1b-lo-sfioratore-calishita-sotto-la-riva-del.svg)
+![GS-1b — Lo sfioratore calishita sotto la riva del Cannath (ingresso B, nascosto)](Mappe/rendered-stampa-pianta/GSC-1B-SFIORATORE_map01_gs-1b-lo-sfioratore-calishita-sotto-la-riva-del.svg)
 
-![GS-1b — indicazioni e legenda](mappe/rendered-stampa-pianta/GSC-1B-SFIORATORE_map01_gs-1b-lo-sfioratore-calishita-sotto-la-riva-del_legenda.svg)
+![GS-1b — indicazioni e legenda](Mappe/rendered-stampa-pianta/GSC-1B-SFIORATORE_map01_gs-1b-lo-sfioratore-calishita-sotto-la-riva-del_legenda.svg)
 
-![GS-2 — La Grande Cisterna, quota alta (+15 m): le passerelle e i nidi dei Ragni delle Catene](mappe/rendered-stampa-pianta/GSC-2-QUOTA-ALTA_map01_gs-2-la-grande-cisterna-quota-alta-15-m-le-passe.svg)
+![GS-2 — La Grande Cisterna, quota alta (+15 m): le passerelle e i nidi dei Ragni delle Catene](Mappe/rendered-stampa-pianta/GSC-2-QUOTA-ALTA_map01_gs-2-la-grande-cisterna-quota-alta-15-m-le-passe.svg)
 
-![GS-2 — indicazioni e legenda](mappe/rendered-stampa-pianta/GSC-2-QUOTA-ALTA_map01_gs-2-la-grande-cisterna-quota-alta-15-m-le-passe_legenda.svg)
+![GS-2 — indicazioni e legenda](Mappe/rendered-stampa-pianta/GSC-2-QUOTA-ALTA_map01_gs-2-la-grande-cisterna-quota-alta-15-m-le-passe_legenda.svg)
 
-![GS-3 — La Grande Cisterna, quota media (+6 m) e fondo: ponte maestro, navate, vasca](mappe/rendered-stampa-pianta/GSC-3-QUOTA-MEDIA-E-FONDO_map01_gs-3-la-grande-cisterna-quota-media-6-m-e-fondo.svg)
+![GS-3 — La Grande Cisterna, quota media (+6 m) e fondo: ponte maestro, navate, vasca](Mappe/rendered-stampa-pianta/GSC-3-QUOTA-MEDIA-E-FONDO_map01_gs-3-la-grande-cisterna-quota-media-6-m-e-fondo.svg)
 
-![GS-3 — indicazioni e legenda](mappe/rendered-stampa-pianta/GSC-3-QUOTA-MEDIA-E-FONDO_map01_gs-3-la-grande-cisterna-quota-media-6-m-e-fondo_legenda.svg)
+![GS-3 — indicazioni e legenda](Mappe/rendered-stampa-pianta/GSC-3-QUOTA-MEDIA-E-FONDO_map01_gs-3-la-grande-cisterna-quota-media-6-m-e-fondo_legenda.svg)
 
-![GS-4 — La Torre delle Volte: l'officina e lo studio di Mastro Tariq (+6 m)](mappe/rendered-stampa-pianta/GSC-4-TORRE-DELLE-VOLTE_map01_gs-4-la-torre-delle-volte-l-officina-e-lo-studio.svg)
+![GS-4 — La Torre delle Volte: l'officina e lo studio di Mastro Tariq (+6 m)](Mappe/rendered-stampa-pianta/GSC-4-TORRE-DELLE-VOLTE_map01_gs-4-la-torre-delle-volte-l-officina-e-lo-studio.svg)
 
-![GS-4 — indicazioni e legenda](mappe/rendered-stampa-pianta/GSC-4-TORRE-DELLE-VOLTE_map01_gs-4-la-torre-delle-volte-l-officina-e-lo-studio_legenda.svg)
+![GS-4 — indicazioni e legenda](Mappe/rendered-stampa-pianta/GSC-4-TORRE-DELLE-VOLTE_map01_gs-4-la-torre-delle-volte-l-officina-e-lo-studio_legenda.svg)
 
-![GS-5 — Il Santuario di Sale (−12 m): la vasca del Cuore di Selenite e la tana di Karkator](mappe/rendered-stampa-pianta/GSC-5-SANTUARIO-DI-SALE_map01_gs-5-il-santuario-di-sale-12-m-la-vasca-del-cuor.svg)
+![GS-5 — Il Santuario di Sale (−12 m): la vasca del Cuore di Selenite e la tana di Karkator](Mappe/rendered-stampa-pianta/GSC-5-SANTUARIO-DI-SALE_map01_gs-5-il-santuario-di-sale-12-m-la-vasca-del-cuor.svg)
 
-![GS-5 — indicazioni e legenda](mappe/rendered-stampa-pianta/GSC-5-SANTUARIO-DI-SALE_map01_gs-5-il-santuario-di-sale-12-m-la-vasca-del-cuor_legenda.svg)
+![GS-5 — indicazioni e legenda](Mappe/rendered-stampa-pianta/GSC-5-SANTUARIO-DI-SALE_map01_gs-5-il-santuario-di-sale-12-m-la-vasca-del-cuor_legenda.svg)
 
-![GS-6 — La galleria di drenaggio (−12 m): l'acqua rubata e la strada dei drow](mappe/rendered-stampa-pianta/GSC-6-GALLERIA-DI-DRENAGGIO_map01_gs-6-la-galleria-di-drenaggio-12-m-l-acqua-rubat.svg)
+![GS-6 — La galleria di drenaggio (−12 m): l'acqua rubata e la strada dei drow](Mappe/rendered-stampa-pianta/GSC-6-GALLERIA-DI-DRENAGGIO_map01_gs-6-la-galleria-di-drenaggio-12-m-l-acqua-rubat.svg)
 
-![GS-6 — indicazioni e legenda](mappe/rendered-stampa-pianta/GSC-6-GALLERIA-DI-DRENAGGIO_map01_gs-6-la-galleria-di-drenaggio-12-m-l-acqua-rubat_legenda.svg)
+![GS-6 — indicazioni e legenda](Mappe/rendered-stampa-pianta/GSC-6-GALLERIA-DI-DRENAGGIO_map01_gs-6-la-galleria-di-drenaggio-12-m-l-acqua-rubat_legenda.svg)
 
 **Le quote.** Il pavimento delle navate della cisterna è la quota 0 del modulo. La volta è a +18 m, le passerelle alte a +15, il ponte maestro e i cornicioni a +6, la vasca centrale scende a −6 e sotto di lei il Santuario di Sale e la galleria di drenaggio stanno a −12. La piazza del mercato è a +21. I pilastri sono gli stessi in GS-2 e GS-3: chi cala da una catena arriva nel quadretto corrispondente.
 

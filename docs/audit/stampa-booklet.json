@@ -236,7 +236,7 @@
         "pagine_con_immagine_decimo": 0.0
       }
     },
-    "STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BENVENUTO-TAVOLO.manifest.json": {
+    "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BENVENUTO-TAVOLO.manifest.json": {
       "tetti": {
         "testi_sotto_minimo": 0,
         "fuori_margine": 0,
@@ -254,7 +254,7 @@
         "pagine_con_immagine_decimo": 0.0
       }
     },
-    "STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-DM.manifest.json": {
+    "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-DM.manifest.json": {
       "tetti": {
         "testi_sotto_minimo": 30,
         "fuori_margine": 0,
@@ -272,7 +272,7 @@
         "pagine_con_immagine_decimo": 0.209
       }
     },
-    "STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-GIOCATORI.manifest.json": {
+    "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-GIOCATORI.manifest.json": {
       "tetti": {
         "testi_sotto_minimo": 0,
         "fuori_margine": 0,
@@ -290,7 +290,7 @@
         "pagine_con_immagine_decimo": 0.625
       }
     },
-    "STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-FASCICOLO-SCHEDE.manifest.json": {
+    "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-FASCICOLO-SCHEDE.manifest.json": {
       "tetti": {
         "testi_sotto_minimo": 0,
         "fuori_margine": 0,
@@ -308,7 +308,7 @@
         "pagine_con_immagine_decimo": 0.455
       }
     },
-    "STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-PROP.manifest.json": {
+    "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-PROP.manifest.json": {
       "tetti": {
         "testi_sotto_minimo": 0,
         "fuori_margine": 0,
@@ -326,7 +326,7 @@
         "pagine_con_immagine_decimo": 0.167
       }
     },
-    "STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-SCHEDE-PG.manifest.json": {
+    "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-SCHEDE-PG.manifest.json": {
       "tetti": {
         "testi_sotto_minimo": 0,
         "fuori_margine": 0,

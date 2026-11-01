@@ -4,7 +4,7 @@
 > **Nasce da**: la richiesta del DM del 2026-11-01: *«aggiungere una altra stand alone nella folder delle stand alone […] prendendo tutti i dati e idee necessarie da questa chat di gemini e dai suoi documenti generati adattandosi e verificandone secondo il processo sviluppato finora per le altre stand alone per esempio la stand alone della abbazia»*.
 > **Sorgente**: la chat Gemini «One-shot D&D 3.5 e Pathfinder 1e» (creata il 2026-10-27, condivisa il 2026-11-01). Copia integrale e inventario in `/mnt/project-files/standalone-giardino-sale-calce/`, fuori dal repo: entra solo ciò che passa le verifiche.
 > **Decisioni collegate**: [ADR-0017](adr/ADR-0017-moduli-autoconclusivi-classe-di-artefatto.md) (i moduli autoconclusivi), [ADR-0103](adr/ADR-0103-le-regole-si-riscontrano-sull-srd-in-cache.md) (riscontro sull'SRD in cache), [ADR-0105](adr/ADR-0105-ogni-creatura-esce-nello-stesso-riquadro.md) (il riquadro delle creature), [ADR-0106](adr/ADR-0106-ogni-mappa-si-stampa-in-pianta.md) (ogni mappa in pianta).
-> **Banco di riferimento**: `10-stand-alone/L'abbazia Della Rotta Sicura/` per forma, tavole, indice maestro e manifest; `STANDALONE-Il-Drappo-di-Tarsilia/` per l'apparato d'uso e il playtest (la sua cartella non si tocca: il DM sta decidendo se spostarla).
+> **Banco di riferimento**: `10-stand-alone/L'abbazia Della Rotta Sicura/` per forma, tavole, indice maestro e manifest; `10-stand-alone/Il-Drappo-di-Tarsilia/` per l'apparato d'uso e il playtest (spostato lì con la PR #302).
 
 ## Cosa porta la chat
 

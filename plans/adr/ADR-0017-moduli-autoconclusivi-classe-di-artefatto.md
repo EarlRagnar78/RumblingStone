@@ -2,7 +2,7 @@
 
 **Stato**: accettata
 **Data**: 2026-08-15
-**Decisione-fonte**: costruzione di `STANDALONE-Il-Drappo-di-Tarsilia/` (PR #103) e
+**Decisione-fonte**: costruzione di `10-stand-alone/Il-Drappo-di-Tarsilia/` (PR #103) e
 audit del DM del 2026-08-15 — *«ci sono eventi per i personaggi? un master ha tutto
 sotto controllo o ha bisogno di un'AI? cosa manca davvero?»*
 
@@ -30,6 +30,7 @@ Serviva una terza casella.
 
 **Un modulo autoconclusivo è una classe di artefatto distinta**, riconoscibile dal
 prefisso di cartella `STANDALONE-`, con un proprio contratto e un proprio gate.
+*(Emendamento del 2026-11-01, qui sotto: la cartella ora è `10-stand-alone/<nome>/`.)*
 
 ### 1. Il confine — cosa un modulo standalone non può fare
 
@@ -37,7 +38,7 @@ prefisso di cartella `STANDALONE-`, con un proprio contratto e un proprio gate.
   canone della campagna. Se ha bisogno di memoria fra le sessioni, se la tiene da sé
   (`STATO-DEL-MODULO.md`, un modello vuoto da copiare per gruppo).
 - **Non entra nel Bestiario** né nel catalogo mostri: i suoi statblocchi sono locali.
-  `build_monster_catalog.py` esclude `STANDALONE-*` — altrimenti mescolerebbe sistemi
+  `build_monster_catalog.py` esclude la cartella del modulo (oggi `Il-Drappo-di-Tarsilia`) — altrimenti mescolerebbe sistemi
   diversi nello stesso catalogo.
 - **Può riusare gli asset della campagna citandoli per percorso**, mai copiandoli:
   una copia diventa subito una copia vecchia. *(Gli stemmi del Drappo stanno ancora
@@ -113,11 +114,34 @@ non è locale al modulo: va in `scripts/` e segue ADR-0012 per intero.
   visibile cosa è davvero comune e cosa era specifico del Drappo — e allora il
   contratto del §2 va rivisto sui fatti, non sulle previsioni.
 
+## Emendamento del 2026-11-01 — una cartella per tutte le stand alone
+
+**Contesto.** Le stand alone stavano in due posti: il Drappo in
+`STANDALONE-Il-Drappo-di-Tarsilia/` alla radice, l'Abbazia in `10-stand-alone/`.
+Il DM il 2026-11-01: *«lo spostamento del drappo di tarsiglia nella cartella
+similmente a quello fatto per l'abbazia così tutte le stand alone sono nella stessa
+locazione»*.
+
+**Decisione.** Ogni modulo autoconclusivo sta in `10-stand-alone/<nome>/`; il Drappo
+è in `10-stand-alone/Il-Drappo-di-Tarsilia/` (trattini e non spazi, come il nome di
+prima, così i percorsi negli script e nei comandi restano senza virgolette). La classe
+di artefatto non la dice più il prefisso ma il contenuto: `validate_standalone.py`
+prende per modulo markdown la cartella con l'hub `00-*.md`, e per modulo HTML quella
+con le pagine `.html` al primo livello.
+
+**Conseguenze.** Tutti i rimandi del repo sono stati corretti nella stessa PR, e i
+link relativi che dal modulo escono verso il resto del repo hanno un `../` in più.
+`build_monster_catalog.py` esclude `Il-Drappo-di-Tarsilia`, non tutta
+`10-stand-alone/`, per non cambiare cosa si indicizza dell'Abbazia. Un modulo nuovo
+con master markdown si riconosce da sé, senza toccare lo script.
+
+**Da rivedere se** una stand alone ha bisogno di stare fuori da `10-stand-alone/`.
+
 ## Copertura
 
 - `scripts/validate_standalone.py`: il gate, in CI a ogni PR (incluse le quattro
   condizioni del §4)
 - `scripts/build_monster_catalog.py`: l'esclusione
-- `STANDALONE-Il-Drappo-di-Tarsilia/`: l'implementazione di riferimento
+- `10-stand-alone/Il-Drappo-di-Tarsilia/`: l'implementazione di riferimento
 - [ADR-0018](ADR-0018-apparato-uso-obbligatorio.md) — cosa deve contenere la guida
   del DM

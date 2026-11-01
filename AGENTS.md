@@ -45,7 +45,7 @@ skills/
 ├── npc-villain-boosting/   # when/whether/how to boost PNGs, villains, monsters
 └── dnd-35-rules/           # legacy meta-router (points to the skills above)
 
-STANDALONE-Il-Drappo-di-Tarsilia/  # self-contained PF1e module set in Golarion —
+10-stand-alone/Il-Drappo-di-Tarsilia/  # self-contained PF1e module set in Golarion —
            # shares the race SYSTEM with arc 09's Palio and nothing else
            # (no Faerûn, no RHoD, no campaign PCs). Start at 00-HUB-E-QUICKSTART-DM.md
 

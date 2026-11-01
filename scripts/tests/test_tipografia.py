@@ -41,7 +41,7 @@ class TestTitoli(unittest.TestCase):
 
     def test_i_master_dell_abbazia_non_saltano_piu(self):
         # Erano tre, e veraPDF li trovava indipendentemente nel PDF (PDF/UA 7.4.2-1).
-        for f in sorted((REPO / "10-stand-alone").rglob("*.md")):
+        for f in sorted((REPO / "10-stand-alone" / "L'abbazia Della Rotta Sicura").rglob("*.md")):
             self.assertEqual(T.salti_di_titolo(f.read_text(encoding="utf-8")), [], f.name)
 
 

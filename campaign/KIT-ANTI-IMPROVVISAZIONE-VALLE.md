@@ -6,7 +6,7 @@
 > faccia che non esiste**, e **un dado da tirare quando non hai deciso niente**.
 > Questa pagina li chiude, per qualunque arco.
 >
-> Modello: `STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md`,
+> Modello: `10-stand-alone/Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md`,
 > tarato sulla Valle e su un gruppo di **13°** (piano TRAVASO, lotto A4).
 >
 > Si stampa **una volta** e si tiene sotto il foglio del cast.
@@ -220,5 +220,5 @@ decidiamo la prossima volta»*:
 | Il canone: chi è vivo, chi sa cosa, l'Orologio | [`state.md`](state.md) |
 | Come si scrive un nome nuovo | [`GLOSSARIO-E-LOCALIZZAZIONE.md`](GLOSSARIO-E-LOCALIZZAZIONE.md) §7 |
 | Un incontro con i numeri giusti | `scripts/suggest_encounter.py` · `Bestiario/` |
-| Il modello di questo file | `STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md` |
+| Il modello di questo file | `10-stand-alone/Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md` |
 | L'apparato d'uso di cui questo fa parte | [ADR-0018](../plans/adr/ADR-0018-apparato-uso-obbligatorio.md) |

@@ -7,7 +7,7 @@ tutto quello che c'è davvero di lavoro dietro alla pubblicazione di un modulo c
 diventa memorabile per i giocatori e bello da masterizzare per i DM? E cosa può essere
 riportato nel repo principale per diventare canone?»*
 
-**Metodo**: audit del `STANDALONE-Il-Drappo-di-Tarsilia` e del repo contro la prassi
+**Metodo**: audit del `10-stand-alone/Il-Drappo-di-Tarsilia` e del repo contro la prassi
 editoriale consolidata delle avventure pubblicate (Paizo, WotC, produzione indie
 di qualità) — non contro un'indagine web fatta oggi, ma contro convenzioni note e
 verificabili aprendo un qualsiasi modulo stampato: foglio del cast, guida alla

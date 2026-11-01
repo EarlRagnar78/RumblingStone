@@ -5,7 +5,7 @@
 > silenzio in mezzo. Prima di questo file l'arco non aveva **nessun**
 > cue sonoro (il divario è registrato in
 > `plans/RICERCA-COSA-SERVE-A-UN-MODULO-PUBBLICABILE.md` A5). Modello:
-> `STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md` §5.
+> `10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md` §5.
 > **Regola**: **descrizioni, mai titoli di brani** — così ognuno usa
 > quello che ha (Syrinscape, una playlist, o le nocche sul tavolo).
 > **Stato**: canonico (apparato d'uso). **Ultima revisione**: 2026-08-23.

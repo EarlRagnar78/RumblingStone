@@ -1,0 +1,754 @@
+{
+ "_cos_e": "Corrispondenze fra il Palio di Channathgate (A, arco 09, 3.5, nato il 2026-07-01) e il Drappo di Tarsilia (B, stand alone PF1e, nato il 2026-08-14). Ogni concetto ha le espressioni regolari che lo riconoscono in A e, se in B ha un altro nome, in B. Senza 'B' si cercano in B le stesse parole di A. Sono una lettura umana: chi non è d'accordo cambia qui e rigenera con scripts/misura_derivazione.py.",
+ "A": {
+  "nome": "Palio di Channathgate (P2D)",
+  "file": [
+   "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-*.md"
+  ]
+ },
+ "B": {
+  "nome": "Drappo di Tarsilia",
+  "file": [
+   "10-stand-alone/Il-Drappo-di-Tarsilia/*.md"
+  ],
+  "escludi": [
+   "10-stand-alone/Il-Drappo-di-Tarsilia/IP-E-LICENZE.md",
+   "10-stand-alone/Il-Drappo-di-Tarsilia/PROMPT-*.md"
+  ]
+ },
+ "concetti": [
+  {
+   "id": "tre-giornate",
+   "dimensione": "struttura",
+   "descrizione": "Tre giornate, una per sessione",
+   "A": [
+    "\\b(3|tre) giorn[io]\\b"
+   ]
+  },
+  {
+   "id": "pg-uffici",
+   "dimensione": "struttura",
+   "descrizione": "I PG sono il governo di una contrada",
+   "A": [
+    "\\bDirigenza\\b"
+   ],
+   "B": [
+    "\\buffici della contrada\\b",
+    "sei uffici",
+    "\\bufficio di\\b"
+   ]
+  },
+  {
+   "id": "livello-alto",
+   "dimensione": "struttura",
+   "descrizione": "Tarato per PG di 12°-13°",
+   "A": [
+    "APL 1[23]",
+    "\\bAPL 12[–-]13\\b"
+   ]
+  },
+  {
+   "id": "livello-3",
+   "dimensione": "struttura",
+   "descrizione": "Tarato per sei PG di 3°",
+   "A": [
+    "\\bPG di 3°",
+    "\\bdi terzo livello\\b",
+    "\\b3° livello\\b"
+   ]
+  },
+  {
+   "id": "pregenerati",
+   "dimensione": "struttura",
+   "descrizione": "Schede pregenerate",
+   "A": [
+    "pregenerat"
+   ]
+  },
+  {
+   "id": "ammissione",
+   "dimensione": "struttura",
+   "descrizione": "Ingresso dei PG con prove d'ammissione",
+   "A": [
+    "prov[ae] d.ammissione",
+    "Mercato dei Sottobanco"
+   ]
+  },
+  {
+   "id": "peso-contrada",
+   "dimensione": "struttura",
+   "descrizione": "Il Peso di contrada (quattro vie per pagarlo)",
+   "A": [
+    "Peso di contrada"
+   ]
+  },
+  {
+   "id": "posta-mythal",
+   "dimensione": "struttura",
+   "descrizione": "Posta: Matrice del Mythal e Meraviglie d'assedio",
+   "A": [
+    "Mythal",
+    "Meraviglia d.assedio",
+    "Meraviglie"
+   ]
+  },
+  {
+   "id": "posta-accorpamento",
+   "dimensione": "struttura",
+   "descrizione": "Posta: la contrada dei PG rischia l'accorpamento",
+   "A": [
+    "accorpat"
+   ]
+  },
+  {
+   "id": "clock-campagna",
+   "dimensione": "struttura",
+   "descrizione": "Aggancio a clock e assedio della campagna",
+   "A": [
+    "March Clock",
+    "Ritual Clock",
+    "Day 42",
+    "Fas[ei] 0[–-]4"
+   ]
+  },
+  {
+   "id": "milestone",
+   "dimensione": "struttura",
+   "descrizione": "Avanzamento a pietre miliari",
+   "A": [
+    "milestone",
+    "pietre miliari"
+   ]
+  },
+  {
+   "id": "epiloghi",
+   "dimensione": "struttura",
+   "descrizione": "Epiloghi per esito",
+   "A": [
+    "epilog"
+   ]
+  },
+  {
+   "id": "echi",
+   "dimensione": "struttura",
+   "descrizione": "Echi per un seguito",
+   "A": [
+    "\\bechi\\b"
+   ]
+  },
+  {
+   "id": "apparato-uso",
+   "dimensione": "struttura",
+   "descrizione": "Apparato d'uso: kit, cassetta, dossier, collaudo",
+   "A": [
+    "anti-improvvisazione",
+    "cassetta del DM",
+    "dossier delle piste",
+    "playtest"
+   ]
+  },
+  {
+   "id": "apertura-offerte",
+   "dimensione": "scene",
+   "descrizione": "G1: offerte degli emissari alla locanda",
+   "A": [
+    "Tre Remi",
+    "\\bEmissari\\b"
+   ],
+   "nota": "in B gli emissari ci sono, la locanda no"
+  },
+  {
+   "id": "tratta",
+   "dimensione": "scene",
+   "descrizione": "G1: assegnazione dei cavalli (Tratta / Sorte)",
+   "A": [
+    "\\bTratta\\b"
+   ],
+   "B": [
+    "Sorte dei cavalli"
+   ],
+   "maiuscole": true
+  },
+  {
+   "id": "truffa-urna",
+   "dimensione": "scene",
+   "descrizione": "G1: truccare l'assegnazione",
+   "A": [
+    "Truffa dell.Urna"
+   ]
+  },
+  {
+   "id": "rissa-fontana",
+   "dimensione": "scene",
+   "descrizione": "G1 sera: rissa alla fontana",
+   "A": [
+    "rissa alla fontana"
+   ]
+  },
+  {
+   "id": "prove-pista",
+   "dimensione": "scene",
+   "descrizione": "Prove di corsa prima del Palio",
+   "A": [
+    "prove di batteria",
+    "PROVE-BATTERIA"
+   ],
+   "B": [
+    "prove in pista"
+   ]
+  },
+  {
+   "id": "partiti",
+   "dimensione": "scene",
+   "descrizione": "G2: i Partiti (accordi segreti fra contrade)",
+   "A": [
+    "\\bPartiti\\b"
+   ]
+  },
+  {
+   "id": "scommesse",
+   "dimensione": "scene",
+   "descrizione": "G2: il banco delle scommesse",
+   "A": [
+    "Banco delle Scommesse",
+    "allibrator"
+   ]
+  },
+  {
+   "id": "tavola-fuori",
+   "dimensione": "scene",
+   "descrizione": "G2: la tavola di fuori",
+   "A": [
+    "tavola di fuori"
+   ]
+  },
+  {
+   "id": "sbandierata",
+   "dimensione": "scene",
+   "descrizione": "La sbandierata in piazza",
+   "A": [
+    "sbandierat"
+   ]
+  },
+  {
+   "id": "canti",
+   "dimensione": "scene",
+   "descrizione": "Sfida dei canti fra contrade",
+   "A": [
+    "Guerra dei Canti",
+    "guerra delle ballate"
+   ],
+   "B": [
+    "duello dei canti"
+   ]
+  },
+  {
+   "id": "cena",
+   "dimensione": "scene",
+   "descrizione": "G2 sera: la cena prima della corsa",
+   "A": [
+    "Cena della Prova Generale"
+   ],
+   "B": [
+    "Cena della vigilia"
+   ]
+  },
+  {
+   "id": "assalto-stalla",
+   "dimensione": "scene",
+   "descrizione": "G2 notte: assalto alla stalla",
+   "A": [
+    "assalto alla stalla",
+    "Stalla e i Drow",
+    "stalla-assalto"
+   ],
+   "B": [
+    "assalto alle stalle"
+   ],
+   "nota": "A: drow di Sonjak GS 11-12; B: Sfregio GS 5"
+  },
+  {
+   "id": "fascia-grigia",
+   "dimensione": "scene",
+   "descrizione": "G2: l'uomo con la fascia grigia",
+   "A": [
+    "fascia grigia"
+   ]
+  },
+  {
+   "id": "benedizione",
+   "dimensione": "scene",
+   "descrizione": "G3 alba: benedizione del cavallo",
+   "A": [
+    "Benedizione"
+   ]
+  },
+  {
+   "id": "tintoria",
+   "dimensione": "scene",
+   "descrizione": "G3: salvataggio del fantino in tintoria",
+   "A": [
+    "salvataggio in tintoria",
+    "Se hanno preso Nocca"
+   ]
+  },
+  {
+   "id": "corteo",
+   "dimensione": "scene",
+   "descrizione": "G3: corteo storico",
+   "A": [
+    "\\bcorteo\\b"
+   ]
+  },
+  {
+   "id": "partenza",
+   "dimensione": "scene",
+   "descrizione": "G3: la partenza (Mossa / Stacco)",
+   "A": [
+    "\\bMossa\\b"
+   ],
+   "B": [
+    "\\bStacco\\b"
+   ]
+  },
+  {
+   "id": "tre-giri",
+   "dimensione": "scene",
+   "descrizione": "La corsa in tre giri",
+   "A": [
+    "\\b(3|tre) giri\\b"
+   ]
+  },
+  {
+   "id": "curva-nord",
+   "dimensione": "scene",
+   "descrizione": "Climax alla curva nord",
+   "A": [
+    "curva nord"
+   ]
+  },
+  {
+   "id": "decreto",
+   "dimensione": "scene",
+   "descrizione": "Il decreto finale",
+   "A": [
+    "\\bdecreto\\b"
+   ]
+  },
+  {
+   "id": "cavalcata-soccorso",
+   "dimensione": "scene",
+   "descrizione": "G4: cavalcata di soccorso verso Rethmar",
+   "A": [
+    "Cavalcata di Soccorso"
+   ]
+  },
+  {
+   "id": "drappo-dipinto",
+   "dimensione": "scene",
+   "descrizione": "Il drappo dipinto in premio",
+   "A": [
+    "Drappellone"
+   ],
+   "B": [
+    "Lino Rasca"
+   ]
+  },
+  {
+   "id": "fazzoletto",
+   "dimensione": "scene",
+   "descrizione": "Rito del fazzoletto di contrada",
+   "A": [
+    "Fazzoletto"
+   ]
+  },
+  {
+   "id": "autorita",
+   "dimensione": "png",
+   "descrizione": "Chi governa la corsa",
+   "A": [
+    "Gonfaloniere",
+    "\\bVosk\\b"
+   ],
+   "B": [
+    "Sovrintendente",
+    "Vidalia"
+   ]
+  },
+  {
+   "id": "capitani",
+   "dimensione": "png",
+   "descrizione": "I capitani delle altre contrade",
+   "A": [
+    "\\bCapitan[oi]\\b"
+   ]
+  },
+  {
+   "id": "fantini-rivali",
+   "dimensione": "png",
+   "descrizione": "I fantini delle altre contrade",
+   "A": [
+    "Roster",
+    "8 fantini"
+   ],
+   "B": [
+    "fantini rivali"
+   ]
+  },
+  {
+   "id": "villain-bruco",
+   "dimensione": "png",
+   "descrizione": "Mente del sabotaggio, dal Bruco",
+   "A": [
+    "Varis"
+   ],
+   "B": [
+    "Ottavia Vesca",
+    "\\bVesca\\b"
+   ]
+  },
+  {
+   "id": "esecutore",
+   "dimensione": "png",
+   "descrizione": "Esecutori del sabotaggio",
+   "A": [
+    "\\bdrow\\b",
+    "Sonjak"
+   ],
+   "B": [
+    "Sfregio"
+   ]
+  },
+  {
+   "id": "mediatore",
+   "dimensione": "png",
+   "descrizione": "Mediatore o allibratore",
+   "A": [
+    "\\bSal\\b"
+   ],
+   "B": [
+    "Corvino Salle"
+   ],
+   "nota": "ruoli diversi: A allibratore, B mediatore degli incarichi"
+  },
+  {
+   "id": "banchiere-oca",
+   "dimensione": "png",
+   "descrizione": "Il denaro dell'Oca",
+   "A": [
+    "Lady Kaal",
+    "Halveth"
+   ],
+   "B": [
+    "Gerlando Attu",
+    "\\bAttu\\b"
+   ]
+  },
+  {
+   "id": "profughi-istrice",
+   "dimensione": "png",
+   "descrizione": "L'Istrice dei profughi",
+   "A": [
+    "profugh"
+   ],
+   "B": [
+    "ospizio",
+    "profugh"
+   ]
+  },
+  {
+   "id": "pg-campagna",
+   "dimensione": "png",
+   "descrizione": "I quattro PG della campagna",
+   "A": [
+    "Thorik",
+    "Tordek",
+    "\\bHella\\b",
+    "Artemis"
+   ]
+  },
+  {
+   "id": "pg-pregenerati",
+   "dimensione": "png",
+   "descrizione": "I sei pregenerati",
+   "A": [
+    "Vanna Corsari",
+    "\\bNocca\\b",
+    "Ombra dei Salici",
+    "\\bTesio\\b",
+    "\\bBruma\\b",
+    "Melchio"
+   ]
+  },
+  {
+   "id": "collezionista",
+   "dimensione": "png",
+   "descrizione": "Il Collezionista e i villain della campagna",
+   "A": [
+    "Collezionista",
+    "Ghostlord"
+   ]
+  },
+  {
+   "id": "fantino-nonna",
+   "dimensione": "png",
+   "descrizione": "Il Fantino della Nonna (spettro)",
+   "A": [
+    "Fantino della Nonna"
+   ]
+  },
+  {
+   "id": "c-oca",
+   "dimensione": "contrade",
+   "descrizione": "Oca",
+   "A": [
+    "\\bOca\\b"
+   ]
+  },
+  {
+   "id": "c-torre",
+   "dimensione": "contrade",
+   "descrizione": "Torre",
+   "A": [
+    "\\bTorre\\b"
+   ]
+  },
+  {
+   "id": "c-bruco",
+   "dimensione": "contrade",
+   "descrizione": "Bruco",
+   "A": [
+    "\\bBruco\\b"
+   ]
+  },
+  {
+   "id": "c-istrice",
+   "dimensione": "contrade",
+   "descrizione": "Istrice",
+   "A": [
+    "\\bIstrice\\b"
+   ]
+  },
+  {
+   "id": "c-drago",
+   "dimensione": "contrade",
+   "descrizione": "Drago",
+   "A": [
+    "\\bDrago\\b"
+   ]
+  },
+  {
+   "id": "c-civetta",
+   "dimensione": "contrade",
+   "descrizione": "Civetta",
+   "A": [
+    "\\bCivetta\\b"
+   ]
+  },
+  {
+   "id": "c-unicorno",
+   "dimensione": "contrade",
+   "descrizione": "Unicorno / Leocorno",
+   "A": [
+    "\\bUnicorno\\b"
+   ],
+   "B": [
+    "\\bLeocorno\\b"
+   ]
+  },
+  {
+   "id": "c-onda",
+   "dimensione": "contrade",
+   "descrizione": "Onda",
+   "A": [
+    "\\bOnda\\b"
+   ]
+  },
+  {
+   "id": "dei",
+   "dimensione": "contrade",
+   "descrizione": "Divinità delle contrade",
+   "A": [
+    "Waukeen",
+    "\\bTorm\\b",
+    "Tempus",
+    "\\bMask\\b",
+    "Ilmater",
+    "Chauntea",
+    "Mystra",
+    "\\bShar\\b",
+    "\\bSune\\b",
+    "Milil",
+    "Valkur",
+    "Selûne"
+   ],
+   "B": [
+    "Abadar",
+    "Iomedae",
+    "Gorum",
+    "Norgorber",
+    "Sarenrae",
+    "Erastil",
+    "Nethys",
+    "Calistria",
+    "Shelyn",
+    "Gozreh",
+    "Desna"
+   ],
+   "nota": "una a una, da Faerûn a Golarion"
+  },
+  {
+   "id": "motti",
+   "dimensione": "contrade",
+   "descrizione": "Gli otto motti del Palio",
+   "A": [
+    "Al suono dell.oro",
+    "Oltre il ferro, la volontà",
+    "Nell.ombra mi rivolto",
+    "Pungo solo chi mi assale",
+    "Il cuore che arde",
+    "Guardo dove la notte tace",
+    "Ferisce e sana il corno",
+    "Il cielo mi colora"
+   ],
+   "nota": "il Drappo li ha riscritti tutti"
+  },
+  {
+   "id": "rivalita",
+   "dimensione": "contrade",
+   "descrizione": "Mappa delle rivalità",
+   "A": [
+    "rivalit"
+   ]
+  },
+  {
+   "id": "stemmi-golarion",
+   "dimensione": "contrade",
+   "descrizione": "Stemmi della serie Golarion",
+   "A": [
+    "stemmi/golarion"
+   ]
+  },
+  {
+   "id": "morale",
+   "dimensione": "regole",
+   "descrizione": "Contatore del Morale",
+   "A": [
+    "\\bMorale\\b"
+   ]
+  },
+  {
+   "id": "onore-fantino",
+   "dimensione": "regole",
+   "descrizione": "Contatore dell'Onore del Fantino",
+   "A": [
+    "Onore del Fantino"
+   ],
+   "nota": "stessi due contatori 0-10 del Master del Palio §3.3"
+  },
+  {
+   "id": "sospetto",
+   "dimensione": "regole",
+   "descrizione": "Contatore Sospetto 0-5",
+   "A": [
+    "contatore Sospetto",
+    "SOSPETTO \\(0"
+   ]
+  },
+  {
+   "id": "influenza",
+   "dimensione": "regole",
+   "descrizione": "Influenza nei Partiti",
+   "A": [
+    "INFLUENZA",
+    "\\bInfluenza\\b"
+   ]
+  },
+  {
+   "id": "skill-challenge",
+   "dimensione": "regole",
+   "descrizione": "Skill challenge",
+   "A": [
+    "Skill Challenge"
+   ],
+   "B": [
+    "sfida d.abilità",
+    "prove ripetute"
+   ]
+  },
+  {
+   "id": "lunghezze",
+   "dimensione": "regole",
+   "descrizione": "Inseguimento a lunghezze",
+   "A": [
+    "lunghezz"
+   ]
+  },
+  {
+   "id": "frusta",
+   "dimensione": "regole",
+   "descrizione": "Frustare gli avversari in corsa",
+   "A": [
+    "\\bnerb"
+   ],
+   "B": [
+    "scudisci"
+   ]
+  },
+  {
+   "id": "scosso",
+   "dimensione": "regole",
+   "descrizione": "Il cavallo scosso può vincere",
+   "A": [
+    "scoss"
+   ]
+  },
+  {
+   "id": "cadute",
+   "dimensione": "regole",
+   "descrizione": "Cadute di corsa",
+   "A": [
+    "\\bcadut"
+   ]
+  },
+  {
+   "id": "eventi-giro",
+   "dimensione": "regole",
+   "descrizione": "Eventi casuali di giro (d10)",
+   "A": [
+    "Eventi di Giro",
+    "evento di giro"
+   ]
+  },
+  {
+   "id": "bordo-pista",
+   "dimensione": "regole",
+   "descrizione": "Cosa fanno i PG che non corrono",
+   "A": [
+    "Bordo Pista"
+   ],
+   "B": [
+    "altri cinque PG"
+   ]
+  },
+  {
+   "id": "cavaliere-ladro",
+   "dimensione": "regole",
+   "descrizione": "Fantino Cavaliere o Ladro",
+   "A": [
+    "Fantino Cavaliere",
+    "Fantino Ladro"
+   ]
+  },
+  {
+   "id": "bomboloni",
+   "dimensione": "regole",
+   "descrizione": "Cavalli forti e deboli (bomboloni e brenne)",
+   "A": [
+    "bombolon",
+    "\\bbrenn"
+   ]
+  }
+ ],
+ "_escludi": "Da B escono IP-E-LICENZE.md e i PROMPT-*: citano il Palio come fonte apposta (tabella del lessico, crediti delle icone) e gonfierebbero i conti di cose che il modulo giocato non contiene. Con IP-E-LICENZE dentro, il testo comune passa da quasi zero al 2,4% di quel solo file."
+}

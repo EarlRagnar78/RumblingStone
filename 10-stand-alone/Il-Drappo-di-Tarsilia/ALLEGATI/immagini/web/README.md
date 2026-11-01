@@ -35,7 +35,7 @@ Le derivate si buttano e si rifanno; gli originali no. Dopo aver sostituito o
 aggiunto un ritratto in `ALLEGATI/immagini/`:
 
 ```bash
-cd STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/immagini
+cd 10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/immagini
 python3 - <<'PY'
 from PIL import Image
 from pathlib import Path

@@ -29,7 +29,7 @@ Uso:
     python3 scripts/comfyui_batch.py --solo ritratto-vanna --fissa-seed   # lo blocca
 
 Input:  un markdown coi blocchi annotati `<!-- img id=... size=... stile=... -->`
-        (default: STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md)
+        (default: 10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md)
 Output: `<cartella del markdown>/<id>.png`, una riga per file in
         `PROVENIENZA.txt` (la scelta) e, a ogni `--reroll`, una riga in
         `SCARTI.txt` (il giudizio che l'ha preceduta)
@@ -60,7 +60,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PROMPTS_DEFAULT = (
     ROOT
-    / "STANDALONE-Il-Drappo-di-Tarsilia"
+    / "10-stand-alone/Il-Drappo-di-Tarsilia"
     / "ALLEGATI"
     / "immagini"
     / "PROMPT-RITRATTI-E-TAVOLE.md"

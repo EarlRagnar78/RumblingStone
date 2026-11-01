@@ -16,7 +16,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent.parent
 MODULO = REPO / "scripts" / "render_map_blender.py"
-MAPPA = REPO / "STANDALONE-Il-Drappo-di-Tarsilia" / "ALLEGATI" / "mappe" / "tarsilia-la-ruota.json"
+MAPPA = REPO / "10-stand-alone/Il-Drappo-di-Tarsilia" / "ALLEGATI" / "mappe" / "tarsilia-la-ruota.json"
 
 spec = importlib.util.spec_from_file_location("render_map_blender", MODULO)
 rmb = importlib.util.module_from_spec(spec)

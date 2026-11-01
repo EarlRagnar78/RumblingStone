@@ -1,6 +1,6 @@
 # I prop — i quattro fogli che passano di mano
 
-> **La regola** ([ADR-0018](../../../plans/adr/ADR-0018-apparato-uso-obbligatorio.md)):
+> **La regola** ([ADR-0018](../../../../plans/adr/ADR-0018-apparato-uso-obbligatorio.md)):
 > ogni documento che la fiction consegna **si consegna davvero**. Un foglio che passa
 > di mano al tavolo vale dieci minuti di descrizione.
 

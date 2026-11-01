@@ -34,7 +34,7 @@ Conoscenze*. Il booklet del DM del Drappo è rigenerato. Il testo di prima:
 *della Torre* 15 volte e *del Torre* 12, e *alla Civetta* 8 volte contro 1 *alle
 Civetta*. È prosa che il master legge a voce: il tavolo sente l'incoerenza. Una
 domanda sola al DM («la contrada è *la Torre* o *il Torre*?»), poi 12 righe da
-uniformare in `STANDALONE-Il-Drappo-di-Tarsilia/`. Nello stesso passo gli altri
+uniformare in `10-stand-alone/Il-Drappo-di-Tarsilia/`. Nello stesso passo gli altri
 quattro difetti di concordanza che il secondo lettore ha confermato: *del Mano
 Rossa* ×3 (`ESPANSIONE NARRATIVA POST-HAMMERFIST.md`, righe 373, 439, 506), *nel
 Tana dei Minotauri* (riga 20 dello stesso file), *dalla Conoscenze*

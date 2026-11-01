@@ -20,7 +20,7 @@
 primi tre, la contrada viene accorpata alla n. 3.
 
 > **Stemmi.** Gli otto scudi stanno in
-> `../09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/P2D-Palio-Allegati/stemmi/golarion/NN-*.svg`
+> `../../09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/P2D-Palio-Allegati/stemmi/golarion/NN-*.svg`
 > nell'ordine della tabella. Sono **generati**: si citano, non si copiano (vedi §7).
 
 ---

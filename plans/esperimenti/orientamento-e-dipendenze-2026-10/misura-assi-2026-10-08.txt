@@ -13,4 +13,4 @@ mappe con almeno una chiusura nord-sud: 11
     2  07_il Portale Della Forgia Eterna/Mappe/hammerfist-372-1372/M7-F-fucina-grande-372.md #1
     2  08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md #1
     5  09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md #2
-    2  STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/mappe/tarsilia-stalle.md #1
+    2  10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/mappe/tarsilia-stalle.md #1

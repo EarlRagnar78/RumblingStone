@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""validate_standalone.py — gate CI per i moduli autoconclusivi (`STANDALONE-*/`).
+"""validate_standalone.py — gate CI per i moduli autoconclusivi (`10-stand-alone/*/`, e `STANDALONE-*/` se ne torna uno).
 
 `validate_modules.py` copre solo i master `ARC*-DEF-*.md` della campagna: i moduli
 standalone avevano **zero gate**. Questo script chiude il buco con controlli che una
@@ -19,9 +19,10 @@ regex può fare bene e un revisore umano fa male:
   7. **Generatori locali** (ADR-0017 §4) — i `.py` sotto la cartella del modulo devono
      essere stdlib-only, avere una docstring, essere citati in un `.md` e compilare.
 
-**Due famiglie di moduli, due serie di controlli.** I moduli `STANDALONE-*/` hanno
-master markdown e prendono i sette controlli qui sopra. I moduli sotto
-`10-stand-alone/*/` sono scritti direttamente in **HTML** — un supporto fuori da
+**Due famiglie di moduli, due serie di controlli.** I moduli con master markdown
+(riconosciuti dall'hub `00-*.md`: il Drappo, in `10-stand-alone/` dal 2026-11-01,
+prima in `STANDALONE-*/`) prendono i sette controlli qui sopra. Gli altri moduli
+sotto `10-stand-alone/*/` sono scritti direttamente in **HTML** — un supporto fuori da
 ADR-0003 e da entrambe le catene di impaginazione — e fino al 2026-09-02 non
 avevano **nessun** gate: la CI conosceva solo `STANDALONE-*`, e ~2.750 righe di
 modulo non erano viste da niente. Su HTML valgono i controlli che hanno senso:
@@ -85,13 +86,21 @@ def module_dirs(only: str | None) -> list[Path]:
     if only:
         p = (ROOT / only).resolve()
         return [p] if p.is_dir() and not _e_html(p) else []
-    return sorted(d for d in ROOT.iterdir() if d.is_dir() and d.name.startswith("STANDALONE-"))
+    vecchi = [d for d in ROOT.iterdir() if d.is_dir() and d.name.startswith("STANDALONE-")]
+    radice = ROOT / HTML_ROOT
+    # Dal 2026-11-01 anche i moduli markdown stanno in `10-stand-alone/` (il Drappo):
+    # li riconosce l'hub `00-*.md`, che i moduli HTML non hanno.
+    nuovi = [d for d in radice.iterdir() if d.is_dir() and not _e_html(d)
+             and any(re.match(REQUIRED["hub"], f.name) for f in d.glob("*.md"))] \
+        if radice.is_dir() else []
+    return sorted(vecchi + nuovi)
 
 
 def _e_html(d: Path) -> bool:
-    """Vero se la cartella è un modulo a supporto HTML (`10-stand-alone/<nome>/`)."""
+    """Vero se la cartella è un modulo a supporto HTML: sta in `10-stand-alone/` e ha
+    le pagine `.html` al primo livello (il Drappo le ha solo in `homebrew/`)."""
     radice = (ROOT / HTML_ROOT).resolve()
-    return radice in d.resolve().parents
+    return radice in d.resolve().parents and any(d.glob("*.html"))
 
 
 def html_module_dirs(only: str | None) -> list[Path]:

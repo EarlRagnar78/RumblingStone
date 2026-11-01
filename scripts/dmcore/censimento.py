@@ -149,6 +149,11 @@ def documenti_con_statistiche(root: Path) -> "list[str]":
             rel = str(p.relative_to(root))
             if "homebrew" in Path(rel).parts:
                 continue
+            # Il Drappo (PF1e, Golarion) non entra nel Bestiario (ADR-0017 §1).
+            # Stava fuori dal raggio finche' era in STANDALONE-*; dal 2026-11-01
+            # e' in 10-stand-alone/ e va escluso per nome, come fa il catalogo.
+            if "Il-Drappo-di-Tarsilia" in Path(rel).parts:
+                continue
             if _in_archivio(rel) and rel not in eletti:
                 continue
             if marche(p.read_text(encoding="utf-8", errors="replace")) >= SOGLIA:

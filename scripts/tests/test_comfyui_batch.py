@@ -16,7 +16,7 @@ REPO = Path(__file__).resolve().parent.parent.parent
 MODULO = REPO / "scripts" / "comfyui_batch.py"
 PROMPTS = (
     REPO
-    / "STANDALONE-Il-Drappo-di-Tarsilia"
+    / "10-stand-alone/Il-Drappo-di-Tarsilia"
     / "ALLEGATI"
     / "immagini"
     / "PROMPT-RITRATTI-E-TAVOLE.md"

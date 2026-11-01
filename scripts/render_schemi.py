@@ -534,7 +534,7 @@ def gs0_legenda() -> str:
 
 
 def _y_s1(q: float) -> float:
-    return 76 + (30 - q) * 4
+    return 60 + (30 - q) * 4
 
 
 def _x_s1(cella: float) -> float:
@@ -582,33 +582,33 @@ def gs_s1() -> str:
              "gli elementi sono proiettati su un piano")
     Y, X = _y_s1, _x_s1
     # la roccia e il suolo
-    f.el(f'<path d="M14 {Y(27):.1f} L108 {Y(27):.1f} L140 {Y(21):.1f} L396 {Y(21):.1f} L444 {Y(-13):.1f} '
-         f'L444 {Y(-19):.1f} L482 {Y(-19):.1f} L482 {Y(-24):.1f} L14 {Y(-24):.1f} z" fill="url(#sc-roccia)" '
+    f.el(f'<path d="M14 {Y(23):.1f} L108 {Y(23):.1f} L140 {Y(21):.1f} L396 {Y(21):.1f} L436 {Y(13):.1f} '
+         f'L436 {Y(9):.1f} L482 {Y(9):.1f} L482 {Y(-24):.1f} L14 {Y(-24):.1f} z" fill="url(#sc-roccia)" '
          f'stroke="{C["inchiostro"]}" stroke-width="1"/>')
-    # il Cannath e il ponte
-    f.el(f'<rect x="444" y="{Y(-13):.1f}" width="38" height="{Y(-19) - Y(-13):.1f}" fill="url(#sc-onde)"/>')
+    # il Cannath (in magra a +13: il foro sta 8 m sopra il fiume) e il ponte
+    f.el(f'<rect x="436" y="{Y(13):.1f}" width="46" height="{Y(9) - Y(13):.1f}" fill="url(#sc-onde)"/>')
     f.el(f'<rect x="396" y="{Y(21) - 3:.1f}" width="86" height="3" fill="{C["lastre_b"]}" '
          f'stroke="{C["inchiostro"]}" stroke-width="0.8"/>')
-    f.el(f'<rect x="452" y="{Y(21):.1f}" width="12" height="{Y(-19) - Y(21):.1f}" fill="{C["lastre_b"]}" '
+    f.el(f'<rect x="452" y="{Y(21):.1f}" width="12" height="{Y(9) - Y(21):.1f}" fill="{C["lastre_b"]}" '
          f'stroke="{C["inchiostro"]}" stroke-width="0.8"/>')
     f.t(470, Y(21) - 6, "il Ponte", CORPO, "middle", style="italic")
-    f.t(463, Y(-21) + 1, "il Cannath", CORPO, "middle", C["carta"], style="italic")
+    f.t(459, Y(10.6) + 2, "Cannath, +13", CORPO, "middle", style="italic")
     # la Cattedrale e la cripta
-    f.el(f'<path d="M30 {Y(27):.1f} L30 {Y(33):.1f} L64 {Y(36):.1f} L98 {Y(33):.1f} L98 {Y(27):.1f} z" '
+    f.el(f'<path d="M30 {Y(23):.1f} L30 {Y(29):.1f} L64 {Y(32):.1f} L98 {Y(29):.1f} L98 {Y(23):.1f} z" '
          f'fill="{C["piatto"]}" stroke="{C["inchiostro"]}" stroke-width="0.9"/>')
-    f.t(64, Y(29), "Cattedrale", CORPO, "middle", style="italic")
-    f.el(f'<rect x="40" y="{Y(25):.1f}" width="50" height="{Y(21) - Y(25):.1f}" fill="{ARIA}" '
+    f.t(64, Y(25), "Cattedrale", CORPO, "middle", style="italic")
+    f.el(f'<rect x="40" y="{Y(21):.1f}" width="50" height="{Y(17) - Y(21):.1f}" fill="{ARIA}" '
          f'stroke="{C["inchiostro"]}" stroke-width="0.9"/>')
-    f.el(f'<line x1="44" y1="{Y(27):.1f}" x2="44" y2="{Y(25):.1f}" stroke="{C["inchiostro"]}" stroke-width="0.8"/>')
+    f.el(f'<line x1="44" y1="{Y(23):.1f}" x2="44" y2="{Y(21):.1f}" stroke="{C["inchiostro"]}" stroke-width="0.8"/>')
     # la galleria di servizio (non in scala): dalla cripta al cornicione ovest
-    gal = [(90, Y(21.5)), (118, Y(17)), (126, Y(15.5))]
-    gal2 = [(134, Y(13)), (150, Y(6.4))]
+    gal = [(90, Y(17.5)), (118, Y(14)), (126, Y(12.6))]
+    gal2 = [(134, Y(11.2)), (150, Y(6.4))]
     for tratto in (gal, gal2):
         _via(f, tratto, colore=ARIA)
         d = " ".join(f"{'M' if i == 0 else 'L'}{x:.1f} {y:.1f}" for i, (x, y) in enumerate(tratto))
         f.el(f'<path d="{d}" fill="none" stroke="{ARIA}" stroke-width="7"/>')
         f.el(f'<path d="{d}" fill="none" stroke="{C["inchiostro"]}" stroke-width="0.6" stroke-dasharray="3 2"/>')
-    f.t(129, Y(14) + 2, "≈", 9, "middle", weight="bold")
+    f.t(129, Y(12) + 2, "≈", 9, "middle", weight="bold")
     # le piazze e le case sopra la cisterna
     for x0, w, h in ((150, 30, 9), (184, 24, 7), (300, 26, 8), (330, 30, 10), (364, 26, 7)):
         f.el(f'<path d="M{x0} {Y(21):.1f} l0 {-h} l{w / 2:.1f} -5 l{w / 2:.1f} 5 l0 {h} z" fill="{C["piatto"]}" '
@@ -687,15 +687,16 @@ def gs_s1() -> str:
     f.el(f'<path d="M{X(14):.1f} {Y(-16):.1f} q18 -8 46 -2 q12 3 22 0 l-6 6 q-30 6 -62 -4 z" fill="#c9c7bd" '
          f'stroke="{C["inchiostro"]}" stroke-width="0.8"/>')
     # la galleria di drenaggio verso il fiume (non in scala)
-    f.el(f'<path d="M{X(35):.1f} {Y(-10):.1f} L392 {Y(-10.4):.1f} M402 {Y(-10.6):.1f} L436 {Y(-11):.1f}" '
+    # sale di 25 m in 300 m: la sorgente del Santuario è in pressione e l'acqua la risale
+    f.el(f'<path d="M{X(35):.1f} {Y(-10):.1f} L392 {Y(-2):.1f} M402 {Y(0.6):.1f} L428 {Y(13.6):.1f}" '
          f'fill="none" stroke="{ARIA}" stroke-width="9"/>')
-    f.el(f'<path d="M{X(35):.1f} {Y(-12):.1f} L392 {Y(-12.4):.1f} M402 {Y(-12.6):.1f} L440 {Y(-13):.1f}" '
+    f.el(f'<path d="M{X(35):.1f} {Y(-12):.1f} L392 {Y(-4):.1f} M402 {Y(-1.4):.1f} L432 {Y(12.6):.1f}" '
          f'fill="none" stroke="{C["acqua_b"]}" stroke-width="1.6"/>')
-    f.el(f'<path d="M436 {Y(-13):.1f} l0 -6 a5 5 0 0 1 9 0 l0 6" fill="{C["acqua"]}" stroke="{C["inchiostro"]}" '
-         f'stroke-width="0.9"/>')
-    f.t(397, Y(-10) + 3, "≈", 9, "middle", weight="bold")
-    _via(f, [(414, Y(-12.7)), (408, Y(-20)), (404, Y(-23))], tratteggio=True)
-    f.el(f'<line x1="404" y1="{Y(-21):.1f}" x2="402" y2="{Y(-23.6):.1f}" stroke="{C["inchiostro"]}" '
+    f.el(f'<path d="M428 {Y(13):.1f} l0 -5 a4.5 4.5 0 0 1 9 0 l0 5" fill="{C["acqua"]}" '
+         f'stroke="{C["inchiostro"]}" stroke-width="0.9"/>')
+    f.t(397, Y(-1) + 3, "≈", 9, "middle", weight="bold")
+    _via(f, [(372, Y(-10.6)), (370, Y(-18)), (368, Y(-22))], tratteggio=True)
+    f.el(f'<line x1="368" y1="{Y(-21):.1f}" x2="367" y2="{Y(-23.6):.1f}" stroke="{C["inchiostro"]}" '
          f'stroke-width="0.8" marker-end="url(#sc-freccia)"/>')
     # il righello delle quote
     for q, s in ((21, "+21"), (18, "+18"), (15, "+15"), (12, "+12"), (6, "+6"), (0, "0"), (-6, "−6"),
@@ -705,10 +706,10 @@ def gs_s1() -> str:
     for q, s in ((18, "+18"), (15, "+15"), (12, "+12"), (6, "+6"), (0, "0"), (-6, "−6"), (-12, "−12")):
         f.t(X(1) - 4, Y(q) + 2.6, s, CORPO, "end", C["carta"] if q in (18,) else C["carta"], "bold")
     # i numeri
-    for n, x, y in ((1, 64, Y(23)), (2, 112, Y(22)), (3, X(20) - 12, Y(16)), (4, X(5), Y(13.4)),
+    for n, x, y in ((1, 64, Y(19)), (2, 112, Y(18)), (3, X(20) - 12, Y(16)), (4, X(5), Y(13.4)),
                     (5, X(26) - 2, Y(10.6)), (6, X(10), Y(8.6)), (7, X(33), Y(14.8)), (8, X(8), Y(3)),
                     (9, X(16), Y(-3)), (10, X(19) - 7, Y(-9.5)), (11, X(25), Y(-9.5)), (12, X(15), Y(-18.6)),
-                    (13, X(33) + 13, Y(-6)), (14, 410, Y(-6.6)), (15, 416, Y(-19)), (16, 450, Y(-8.6))):
+                    (13, X(33) + 13, Y(-6)), (14, 414, Y(-4)), (15, 384, Y(-19)), (16, 444, Y(17.4))):
         f.num(n, x, y)
     f.h = round(Y(-24) + 8)
     return f.svg()
@@ -718,7 +719,7 @@ def gs_s1_legenda() -> str:
     f = Foglio(500)
     f.titolo("GS-S1 · Indicazioni", "i numeri della sezione · le quote valgono per tutte le piante GS-1…GS-6")
     yl = f.legenda(56, [
-        (1, "La cripta della Cattedrale (ingresso A): 6 m sotto la navata. La quota non serve al gioco"),
+        (1, "La cripta della Cattedrale (ingresso A): 6 m sotto la navata, nel quartiere alto"),
         (2, "A2, la galleria di servizio: 400 m in discesa fino al cornicione ovest, a +6 (non in scala)"),
         (3, "Il pozzo grande del Mercato (ingresso C): la gabbia scende 6 m e attraversa la volta"),
         (4, "G2, il nido ovest, e un Ragno delle Catene sulla sua seta (GS-S2)"),
@@ -733,9 +734,10 @@ def gs_s1_legenda() -> str:
         (12, "Karkator nella vasca salmastra, profonda 9 m. La volta della grotta è a −1: sopra c'è un metro "
              "di roccia e poi il fondo delle navate"),
         (13, "T3, la scala a chiocciola: 18 m da +6 a −12, attorno a un pozzo aperto (6d6 a chi ci cade)"),
-        (14, "B2, la galleria di drenaggio: 300 m in leggera discesa fino al fiume (non in scala)"),
+        (14, "B2, la galleria di drenaggio: 300 m in salita fino al fiume, non in scala. Sale di 25 m, e l'acqua "
+             "la risale perché la sorgente del Santuario è in pressione"),
         (15, "B3, lo scavo dei drow: due chilometri verso sud e il Sottosuolo"),
-        (16, "B1, lo sfioratore (ingresso B): la bocca sotto la seconda pila del Ponte"),
+        (16, "B1, lo sfioratore (ingresso B): la bocca sotto la seconda pila del Ponte, sul pelo del Cannath (+13)"),
     ], colonne=1)
     f.h = round(yl + 6)
     return f.svg()
@@ -875,11 +877,122 @@ def gs_s2_legenda() -> str:
     return f.svg()
 
 
+# --- GS-R: Rethmar, il foro e i tre ingressi, sulla pianta canonica della città
+PIANTA_RETHMAR = (RADICE.parent / "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist" / "Mappe" / "rethmar"
+                  / "rethmar-pianta.svg")
+# La trasformazione metri → pixel della pianta (scripts/piante/rethmar.py: K, OX, OY). Se la pianta canonica cambia
+# taglia, questi tre numeri vanno ripresi da lì: genera_pianta_citta.py --check lo segnala per primo.
+R_K, R_OX, R_OY = 0.5393598899705937, 682.0, 500.0
+R_X0, R_Y0, R_LATO = -350.0, -390.0, 580.0        # la finestra, in metri: dal Ponte Nuovo alla Cattedrale
+R_TOP = 44.0
+
+
+def _r_px(x: float, y: float) -> tuple[float, float]:
+    """Un punto della città (metri della pianta) nel foglio dello schema."""
+    s = W / R_LATO
+    return (x - R_X0) * s, R_TOP + (y - R_Y0) * s
+
+
+def gs_r() -> str:
+    import re
+    f = Foglio(R_TOP + W + 4)
+    f.titolo("GS-R · Rethmar: il foro, la Cattedrale, il Ponte e i tre ingressi",
+             "sulla pianta canonica della città · in rosso gli ingressi, in blu quello che sta sotto le strade")
+    sorgente = PIANTA_RETHMAR.read_text(encoding="utf-8")
+    dentro = re.sub(r"^<svg[^>]*>|</svg>\s*$", "", sorgente.strip())
+    dentro = re.sub(r"<title>.*?</title>|<desc>.*?</desc>", "", dentro, flags=re.S)
+    vx, vy = R_OX + R_X0 * R_K, R_OY + R_Y0 * R_K
+    lato = R_LATO * R_K
+
+    def nella_finestra(m) -> str:
+        """Le scritte della pianta che la finestra taglierebbe a metà non vanno in stampa."""
+        x, y, corpo, ancora = float(m.group(1)), float(m.group(2)), float(m.group(3)), m.group(4)
+        largo = len(re.sub(r"<[^>]+>", "", m.group(5))) * corpo * 0.62
+        sx = {"start": 0.0, "middle": 0.5, "end": 1.0}.get(ancora, 0.0) * largo
+        dentro_ = (x - sx >= vx + 3 and x - sx + largo <= vx + lato - 3
+                   and y - corpo >= vy + 3 and y + 3 <= vy + lato)
+        return m.group(0) if dentro_ else ""
+    dentro = re.sub(r'<text x="([\d.]+)" y="([\d.]+)"[^>]*?font-size="([\d.]+)"[^>]*?text-anchor="(\w+)"[^>]*>(.*?)</text>',
+                    nella_finestra, dentro, flags=re.S)
+    f.el(f'<svg x="0" y="{R_TOP:g}" width="{W:g}" height="{W:g}" viewBox="{vx:.2f} {vy:.2f} {lato:.2f} {lato:.2f}">'
+         f'{dentro}</svg>')
+    f.el(f'<rect x="0" y="{R_TOP:g}" width="{W:g}" height="{W:g}" fill="none" stroke="{C["inchiostro"]}" '
+         f'stroke-width="1.2"/>')
+    P_ = _r_px
+    alone = 'stroke="#f6ecd2" stroke-width="2.6" paint-order="stroke"'
+
+    def scritta(x, y, testo, anchor="start", fill=None, size=CORPO, weight="normal"):
+        f.el(f'<text x="{x:.1f}" y="{y:.1f}" font-size="{size}" text-anchor="{anchor}" font-style="italic" '
+             f'font-weight="{weight}" fill="{fill or C["inchiostro"]}" {alone}>{escape(testo)}</text>')
+
+    # la cisterna sotto il foro, 57 × 37,5 m
+    cx, cy = -87.7, -226.5
+    x0, y0 = P_(cx - 28.5, cy - 18.75)
+    x1, y1 = P_(cx + 28.5, cy + 18.75)
+    f.el(f'<rect x="{x0:.1f}" y="{y0:.1f}" width="{x1 - x0:.1f}" height="{y1 - y0:.1f}" fill="{C["acqua"]}" '
+         f'fill-opacity="0.45" stroke="{C["acqua_b"]}" stroke-width="1.4" stroke-dasharray="4 2.5"/>')
+    # A: la galleria di servizio, dalla cripta della Cattedrale al cornicione ovest (circa 400 m)
+    a0, a1 = P_(-133, 163), P_(cx - 28.5, cy)
+    f.el(f'<path d="M{a0[0]:.1f} {a0[1]:.1f} L{a1[0]:.1f} {a1[1]:.1f}" fill="none" stroke="{C["acqua_b"]}" '
+         f'stroke-width="1.6" stroke-dasharray="5 3"/>')
+    # B: la galleria di drenaggio, dal Santuario alla bocca sotto la seconda pila (circa 300 m)
+    via = [P_(x, y) for x, y in ((-60, -226), (10, -212), (45, -250), (5, -292), (-60, -300), (-110, -293))]
+    d = " ".join(f"{'M' if i == 0 else 'L'}{x:.1f} {y:.1f}" for i, (x, y) in enumerate(via))
+    f.el(f'<path d="{d}" fill="none" stroke="{C["acqua_b"]}" stroke-width="1.6" stroke-dasharray="5 3"/>')
+    # le lettere degli ingressi
+    for s_, (x, y) in (("A", P_(-112, 150)), ("B", P_(-124, -300)), ("C", P_(cx + 17, cy + 8))):
+        _lettera(f, s_, x, y)
+    # le scritte
+    tx, ty = P_(cx - 28, cy + 30)
+    scritta(tx, ty, "la Grande Cisterna, 21 m sotto il foro", fill=C["acqua_b"])
+    tx, ty = P_(-128, 40)
+    scritta(tx, ty, "galleria di servizio, 400 m", "end", C["acqua_b"])
+    tx, ty = P_(52, -270)
+    scritta(tx, ty, "galleria di drenaggio, 300 m", fill=C["acqua_b"])
+    tx, ty = P_(-140, -310)
+    scritta(tx, ty, "la bocca dello sfioratore", "end", C["marker"])
+    tx, ty = P_(-200, -195)
+    scritta(tx, ty, "Mira Serani, sopra lo speziale", "end")
+    tx, ty = P_(25, -190)
+    scritta(tx, ty, "la bottega di Tariq")
+    # la barra di scala, 100 m
+    bx, by = 16.0, R_TOP + W - 16
+    lung = 100 * W / R_LATO
+    f.el(f'<rect x="{bx - 4:.1f}" y="{by - 14:.1f}" width="{lung + 30:.1f}" height="22" fill="#f6ecd2" '
+         f'fill-opacity="0.85"/>')
+    f.el(f'<path d="M{bx:.1f} {by:.1f} l{lung:.1f} 0 M{bx:.1f} {by - 3:.1f} l0 6 M{bx + lung:.1f} {by - 3:.1f} '
+         f'l0 6" stroke="{C["inchiostro"]}" stroke-width="1.2"/>')
+    f.t(bx + lung / 2, by - 5, "100 m", CORPO, "middle")
+    return f.svg()
+
+
+def gs_r_legenda() -> str:
+    f = Foglio(400)
+    f.titolo("GS-R · Indicazioni", "le lettere sono gli ingressi del modulo; i numeri sono quelli della pianta di Rethmar")
+    yl = f.legenda(56, [
+        ("A", "La Cattedrale di Lathander, nel quartiere alto: dalla cripta parte la galleria di servizio, 400 m in "
+              "discesa fino al cornicione ovest della cisterna (GS-1)"),
+        ("B", "Lo sfioratore: la bocca sotto la seconda pila del Ponte, sul pelo del Cannath. La galleria di "
+              "drenaggio gira a est del foro, sotto la biblioteca, e scende per 300 m fino al Santuario (GS-1b, GS-6)"),
+        ("C", "Il pozzo grande nel foro, sopra il centro della cisterna: la gabbia della gilda (GS-1c)"),
+        ("7", "Il Ponte sul Cannath, con le statue. Il gorgo contro corrente è a valle del pilone sud"),
+        ("8", "Il Mercato del Ponte, nel foro: la fila per l'acqua, Kesk Martellacqua all'argano"),
+        ("18", "La Cattedrale: Tredora Occhidoro, e Fratello Odo nella sacrestia"),
+        ("23", "Il Ponte Nuovo, la mescita di Kellin: lì si trova Sal"),
+        ("·", "Gli altri numeri sono quelli della pianta di Rethmar di ARC-09 (Porta Nord 3, foro 13, "
+              "Municipio 14, Tempio 16, Torrione 19)"),
+    ], colonne=1)
+    f.h = round(yl + 6)
+    return f.svg()
+
+
 SCHEMI = {
     "T-1-piano-della-terra.svg": t1,
     "T-4-approccio-al-tempio.svg": t4,
     "M7-A-hammerfist-372.svg": m7a,
     "M7-A-hammerfist-372_legenda.svg": m7a_legenda,
+    CARTELLA_GSC / "GS-R-rethmar-ingressi.svg": gs_r,
+    CARTELLA_GSC / "GS-R-rethmar-ingressi_legenda.svg": gs_r_legenda,
     CARTELLA_GSC / "GS-0-collegamenti.svg": gs0,
     CARTELLA_GSC / "GS-0-collegamenti_legenda.svg": gs0_legenda,
     CARTELLA_GSC / "GS-S1-sezione-cisterna.svg": gs_s1,

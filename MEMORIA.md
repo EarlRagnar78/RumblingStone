@@ -105,6 +105,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B6 chiuso | ✅ GS-R in render_schemi.py: i tre ingressi sulla pianta canonica di Rethmar; quote allineate al canone (Cannath a +13, foro 8 m sopra il fiume), sorgente del S… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B6 seconda parte: schemi e piante allineate | 🟡 GS-0 collegamenti, GS-S1 sezione della cisterna, GS-S2 Ragni delle Catene in render_schemi.py; GS-3/GS-4/GS-5 allineate (Torre 18 × 19,5 m, ponte maestro 39… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | C1 | 🟡 il box del Cuore non presuppone più che il PG lo guardi; attesa di §6.2 (2C) aggiornata a 20 box su 581 in STATO-E-ORDINE-DEI-PIANI |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | C1, C5 (prima misura) | 🟡 il booklet 3.5 compila e converge (25 pagine, 7 schede, 0 spezzate): elenco degli incantesimi di Tariq fuori dal riquadro, che spezzandosi non convergeva; mi… |
@@ -116,7 +117,6 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B4 prima parte: conti di Karkator e del Ragno delle Catene (3.5) | 🟡 Karkator aboleth mezzo-immondo a 24 DV, GS 15 (16 col Cuore); Ragno delle Catene ragno fase Enorme a 14 DV, GS 10; Tariq, skum e chuul da fare |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | A3: budget di EL e di tesoro; D6 decisa | ✅ due moduli separati; tesoro della chat circa 161.000 mo contro 63.000-97.000 del budget SRD; aboleth a 24 DV GS 12 prima del Cuore; fase A chiusa |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | A2: le capacità dei quattro PG nella cisterna; D2-D4 decise | ✅ 3.5 sotto Rethmar (Sonjak, Sal), PF1e in una città del deserto inventata; il monaco 3.5 non corre sui muri; equipaggiamento di tre PG assente dal repo; D6 (c… |
-| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | A1: riscontro sull'SRD in cache delle creature, di Tariq e delle regole d'ambie… | ✅ D1 (doppio 3.5/PF1e) e D5 (aboleth a conti) decise; nessun numero della chat coincide con un'avanzata; due creature con taglia sbagliata per i DV; 5 incantes… |
 
 ## Le misure che si portano dietro
 

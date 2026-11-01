@@ -73,5 +73,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 
 > **La galleria qui misura 57 m** dei 300 che corrono dal Santuario al fiume. Lo scavo verso sud è lungo due chilometri ed è stato fatto in sei settimane da asserviti e da magia: Sonjak ha pagato Tariq con i disegni e Karkator con i corpi.
 
+> **La galleria sale di 25 m** in 300 m, dal Santuario (−12) alla riva del Cannath (+13). L'acqua la risale perché la sorgente salata del Santuario è in pressione; il tratto in pianta è il primo, appena fuori dal Santuario.
+
 > Gli stati sono **esiti aperti** (D13): il trigger è dei dadi e delle scelte dei PG, mai del copione.
 

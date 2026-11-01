@@ -41,7 +41,7 @@ La cisterna ha tre ingressi, e ognuno porta in un punto diverso: chi scende da u
 | Ingresso | Come lo trovano | Dove arrivano | Chi li aspetta | Ordine degli scontri |
 |---|---|---|---|---|
 | **A · La cripta della Cattedrale di Lathander** (GS-1) | da Tredora Occhidoro o da Brenna: la cisterna era benedetta dal clero dell'Alba e dalla cripta parte la galleria di servizio. Tredora ha la chiave | a +6 m, sul ponte maestro, davanti alla Torre delle Volte | gli skum e Tariq, avvisati o no dal sacrestano di Sal | Torre, poi Santuario; i ragni e i chuul si possono evitare |
-| **B · Lo sfioratore calishita** (GS-1b, nascosto) | va scoperto: vedi gli indizi qui sotto | a −12 m, nella galleria di drenaggio sotto la riva del Cannath | la corrente, un chuul nella canaletta, lo scavo dei drow e gli asserviti in catene | galleria, poi Santuario alle spalle di Karkator; la Torre si può lasciare per ultima o saltare |
+| **B · Lo sfioratore calishita** (GS-1b, nascosto) | va scoperto: vedi gli indizi qui sotto | sulla riva del Cannath, a +13 m; la galleria di drenaggio scende per 300 m fino al Santuario, a −12 | la corrente, un chuul nella canaletta, lo scavo dei drow e gli asserviti in catene | galleria, poi Santuario alle spalle di Karkator; la Torre si può lasciare per ultima o saltare |
 | **C · Il pozzo grande del mercato** (GS-1c) | è sotto gli occhi di tutti: la gabbia della gilda sotto la piazza | a +15 m, sulle passerelle alte | i Ragni delle Catene e, se la Torre è allertata, la nube acida di Tariq | ragni, poi Torre, poi Santuario: è la strada più lunga |
 
 **Gli indizi dello sfioratore** (ne basta uno; senza nessuno l'ingresso B non c'è):
@@ -52,7 +52,11 @@ La cisterna ha tre ingressi, e ognuno porta in un punto diverso: chi scende da u
 
 ## Le tavole
 
-Prima le due tavole d'insieme: come si collegano le aree (GS-0) e la cisterna vista di fianco (GS-S1). Poi le piante, dall'ingresso al fondo.
+Prima le tavole d'insieme: dove stanno i tre ingressi sulla pianta di Rethmar (GS-R), come si collegano le aree (GS-0) e la cisterna vista di fianco (GS-S1). Poi le piante, dall'ingresso al fondo.
+
+![GS-R — Rethmar: il foro, la Cattedrale, il Ponte e i tre ingressi](Mappe/schemi/GS-R-rethmar-ingressi.svg)
+
+![GS-R — indicazioni](Mappe/schemi/GS-R-rethmar-ingressi_legenda.svg)
 
 ![GS-0 — Come si collegano le aree, e i tre ingressi da Rethmar](Mappe/schemi/GS-0-collegamenti.svg)
 
@@ -94,7 +98,7 @@ Prima le due tavole d'insieme: come si collegano le aree (GS-0) e la cisterna vi
 
 ![GS-6 — indicazioni e legenda](Mappe/rendered-stampa-pianta/GSC-6-GALLERIA-DI-DRENAGGIO_map01_gs-6-la-galleria-di-drenaggio-12-m-l-acqua-rubat_legenda.svg)
 
-**Le quote.** Il pavimento delle navate della cisterna è la quota 0 del modulo. La volta è a +18 m, le passerelle alte a +15, il ponte maestro e i cornicioni a +6, la vasca centrale scende a −6 e sotto di lei il Santuario di Sale e la galleria di drenaggio stanno a −12. La piazza del mercato è a +21, e la volta del Santuario è a −1: sopra c'è solo un metro di roccia sotto le navate. I pilastri sono gli stessi in GS-2 e GS-3: chi cala da una catena arriva nel quadretto corrispondente.
+**Le quote.** Il pavimento delle navate della cisterna è la quota 0 del modulo. La volta è a +18 m, le passerelle alte a +15, il ponte maestro e i cornicioni a +6, la vasca centrale scende a −6 e sotto di lei il Santuario di Sale e la galleria di drenaggio stanno a −12. La piazza del mercato è a +21 e il Cannath in magra a +13: il foro sta otto metri sopra il fiume, come sulla pianta di Rethmar. La volta del Santuario è a −1, sotto un metro di roccia. Il Santuario è una sorgente salata in pressione: la sua acqua risale la galleria di drenaggio fino al fiume, ed è per questo che chiudere la paratoia dello sfioratore fa salire l'acqua in città. I pilastri sono gli stessi in GS-2 e GS-3: chi cala da una catena arriva nel quadretto corrispondente.
 
 ## Il cast
 
@@ -272,7 +276,7 @@ Sei metri d'acqua torbida con il velo iridescente del muco. Sul fondo, il pozzo 
 
 ### G7 · Le paratoie
 
-Sul ponte nord, sopra le bocche che portano l'acqua alle fontane della città. Tariq le ha regolate perché le fontane ricevano poco e la cisterna sfoghi verso il fiume. **Conoscenze (architettura e ingegneria) CD 15**: rimetterle come erano, in un'ora di lavoro, restituisce l'acqua alla città anche se il Cuore resta acceso (ma l'acqua resta corrotta).
+Sul ponte nord, sopra le bocche che portano l'acqua alle fontane della città. Tariq le ha regolate perché le fontane ricevano poco e l'acqua della sorgente sfoghi verso il fiume. **Conoscenze (architettura e ingegneria) CD 15**: rimetterle come erano, in un'ora di lavoro, restituisce l'acqua alla città anche se il Cuore resta acceso (ma l'acqua resta corrotta).
 
 ### T1 · L'officina della Torre (GS-4)
 

@@ -35,9 +35,10 @@ Il materiale vale come traccia, non come modulo: tre aree e tre scontri, mappe s
 - [ ] **B1** Cartella `10-stand-alone/<titolo D4>/` con master markdown e manifest come l'Abbazia: verità, perché adesso, nota di tono, igiene di licenza.
 - [ ] **B2** L'atto in città (se D3 = media o ampia): il Visir, Nadia, i segni su Tariq, la discesa.
 - [ ] **B3** Le aree della cisterna a prefisso di quota, ciascuna con box di luogo, cosa c'è e perché ci si torna (indice maestro).
-- [ ] **B4** Le creature nel riquadro unico: Ragno delle Catene sul ragno fase, chuul, cloaker, skum avanzati, Mastro Tariq chierico 11 con incantesimi veri, Karkator secondo D5. Numeri solo nello statblocco (ADR-0091). 🟡 Prima parte il 2026-11-01: [B4-CONTI-CREATURE-35](esperimenti/giardino-sale-calce-2026-11/B4-CONTI-CREATURE-35.md), Karkator (aboleth mezzo-immondo a 24 DV, GS 15, 16 col Cuore) e Ragno delle Catene (ragno fase a 14 DV, GS 10).
+- [ ] **B4** Le creature nel riquadro unico: Ragno delle Catene sul ragno fase, chuul, cloaker, skum avanzati, Mastro Tariq chierico 11 con incantesimi veri, Karkator secondo D5. Numeri solo nello statblocco (ADR-0091). 🟡 Prima parte il 2026-11-01: [B4-CONTI-CREATURE-35](esperimenti/giardino-sale-calce-2026-11/B4-CONTI-CREATURE-35.md), Karkator (aboleth mezzo-immondo a 24 DV, GS 15, 16 col Cuore) e Ragno delle Catene (ragno fase a 14 DV, GS 10). Seconda parte lo stesso giorno: Mastro Tariq chierico 13 di Umberlee (domini Acqua e Distruzione, *nube acida* come nebbia di calce, GS 13) e skum guerriero 8 (GS 10); Tariq e skum EL 15.
 - [ ] **B5** Le interazioni di classe come leve con CD, costo e conseguenza, nella forma di regia del repo.
-- [ ] **B6** Le tavole: pianta a scala reale e sezione verticale per ogni ambiente con quota (ADR-0106), dal generatore del repo.
+- [ ] **B6** Le tavole: pianta a scala reale e sezione verticale per ogni ambiente con quota (ADR-0106), dal generatore del repo. Richiesta del DM del 2026-11-01: mappe tattiche dettagliate per ogni incontro e mappe d'ambientazione (Rethmar e la discesa).
+- [ ] **B8** Rethmar e l'assedio (richiesta del DM del 2026-11-01): scene, villain, PNG e artefatti collegati a Rethmar, con scelte ampie per i PG e conseguenze sui difensori dell'assedio o vantaggi agli attaccanti, agganciate ai clock di ARC-09 in `campaign/state.yaml`.
 - [ ] **B7** Apparato d'uso dal Drappo: quickstart, guida al DM passo passo, kit anti-improvvisazione, scheda di playtest.
 
 ## Fase C — Verifica
@@ -57,3 +58,4 @@ Il materiale vale come traccia, non come modulo: tre aree e tre scontri, mappe s
 | 2026-11-01 | D2-D4 decise: Rethmar per la 3.5 (legami con Sonjak e Sal), città inventata per la PF1e, ampiezza media, titolo della chat. A2 fatto: il monaco 3.5 non corre sui muri, la nebbia non deve togliere il volo ad Artemis, l'equipaggiamento di tre PG non è nel repo. D6 aperta. |
 | 2026-11-01 | D6 decisa: due moduli. A3 fatto: il tesoro della chat (circa 161.000 mo) supera da una volta e due terzi a due volte e mezza il budget SRD della sessione (63.000-97.000); l'aboleth avanzato a 24 DV fa GS 12 prima del Cuore. Fase A chiusa. |
 | 2026-11-01 | B4 prima parte: Karkator è un aboleth mezzo-immondo Mastodontico a 24 DV (324 pf, CA 28 con aura e Cuore, GS 15; 16 col Cuore); il Ragno delle Catene è un ragno fase Enorme a 14 DV (GS 10). Tariq, skum e chuul nella seconda parte. |
+| 2026-11-01 | B4 seconda parte (Tariq, skum). Il DM chiede mappe tattiche e d'ambientazione dettagliate e il legame con l'assedio di Rethmar: lotto B8 aggiunto. |

@@ -76,8 +76,63 @@ Due ragni fanno **EL 12**.
 
 **PF1e.** Ragno fase del Bestiary (GS 5) avanzato, con la stessa ragnatela costruita su quella del ragno gigante. Il passo etereo è identico.
 
-## Ancora da fare (B4, seconda parte)
+## Mastro Tariq, chierico 13 di Umberlee
 
-- Mastro Tariq, chierico 13, con la lista d'incantesimi rifatta (A1 §2).
-- Gli skum guerriero 8 e i chuul avanzati, se D3 li tiene.
+> Seconda parte, 2026-11-01. Fonti in cache: domini Acqua e Distruzione `spells/spell-list-i.md:1019` e `:863`; incantesimi con `riscontro_srd.py regola`.
+
+**Chi è, per il canone.** È un ingegnere delle acque del Calimshan, assunto da Rethmar per le cisterne (in un deserto le sa fare chiunque viva). Nella 3.5 il ponte con la PF1e è questo: Qasr al-Milah è la città da cui viene. Non è un asservito: Karkator lo domina, ma il patto con **Umberlee** (CM; nell'FR 1372 i suoi domini sono Caos, Distruzione, Male, Oceano, Tempesta e Acqua) l'ha scelto lui. Così i suoi incantesimi divini reggono, perché un chierico asservito contro la propria fede non li avrebbe. Lo ha portato Sal, per conto del Collezionista: sono i legami chiesti dal DM, da scrivere in B2.
+
+**Domini SRD scelti:** Acqua (*foschia occultante*, *nube di nebbia*, *respirare sott'acqua*, *controllare acqua*, *tempesta di ghiaccio*, *cono di freddo*, ***nube acida***) e Distruzione (*punire* 1/giorno: +4 al colpire, +13 danni).
+
+| Voce | Calcolo | Risultato |
+|---|---|---|
+| Caratteristiche | serie d'élite da umano: For 12, Des 10, Cos 14, Int 13, Sag 15 + 3 (4°, 8°, 12°) + 4 (*periapto della Saggezza +4*), Car 8 | Sag **22** (+6) |
+| pf | 13d8 + 26 | **84**; 97 con *resistenza dell'orso* |
+| BAB / lotta | +9/+4 | **+9 / +10** |
+| CA | 10 + armatura completa +2 (10) + scudo pesante +1 (3) + anello di protezione +1 | **24**; **27** con *veste magica* ×2 (+3 su armatura e scudo), contatto 11 |
+| TS | Tempra 8 + 2 + 2, Riflessi 4 + 0 + 2, Volontà 8 + 6 + 2 (mantello della resistenza +2) | **+12 / +6 / +16** |
+| Iniziativa | Iniziativa Migliorata | **+4** |
+| Velocità | 6 m in armatura completa | — |
+| Attacco | tridente +1: 9 + 1 + 1 | **tridente +11/+6 (1d8+2)** |
+| Talenti (6) | Iniziativa Migliorata, Incantesimi in Combattimento, Incantesimi Inarrestabili, Incantesimi Inarrestabili Superiore, Estendere Incantesimi, Incantesimi Rapidi | — |
+| Incantesimi per giorno | chierico 13 più bonus da Sag 22, più 1 di dominio per livello | 0: 6 · 1°: 7+1 · 2°: 6+1 · 3°: 5+1 · 4°: 5+1 · 5°: 4+1 · 6°: 3+1 · 7°: 1+1 |
+| CD | 16 + livello | — |
+| Scacciare | intimorire le creature dell'acqua (dominio), 3 − 1 = **2/giorno** | — |
+| **GS** | classe da PG | **13** |
+
+**Incantesimi preparati** (LI 13°; D = dominio). Sono quelli veri della chat, corretti secondo A1 §2:
+
+- **7°:** *blasfemia* (CD 23); D *nube acida*: è la «nebbia di calce» della chat, con regole SRD (occulta la vista come *nube di nebbia* e fa 2d6 d'acido a round).
+- **6°:** *dissolvi magie superiore* ×2, *barriera di lame* (CD 22); D *ferire* (Volontà CD 22 dimezza).
+- **5°:** *giusto potere*, *colpo infuocato* (CD 21), *uccidere i viventi* (CD 21), *resistenza agli incantesimi*; D *tempesta di ghiaccio*: è la «pioggia di calce», grandine di calce sul piano del racconto.
+- **4°:** *libertà di movimento*, *ancora dimensionale*, *veleno* (CD 20), *camminare nell'aria*; D *controllare acqua*: alza il bacino di 3 m, come le paratoie.
+- **3°:** *veste magica* ×2 (già lanciate), *dissolvi magie*, *preghiera*, *protezione dall'energia*; D *contagio*.
+- **2°:** *blocca persone* ×2, *silenzio*, *resistenza all'energia*, *resistenza dell'orso*, *esplosione sonora*; D *frantumare*.
+- **1°:** *favore divino*, *scudo della fede*, *scudo entropico*, *anatema*, *comando* ×2, *santuario*; D *foschia occultante*.
+- **0:** *individuazione del magico*, *guida* ×2, *resistenza* ×2, *lettura del magico*.
+
+**Equipaggiamento** (circa 33.000 mo): armatura completa +2, scudo pesante di metallo +1, tridente +1, periapto della Saggezza +4, mantello della resistenza +2, anello di protezione +1, simbolo sacro. Il tridente +3 anarchico e l'anello +4 della chat non ci sono: la chat sforava il budget (A3).
+
+**PF1e.** Chierico 11 / magus 2 della chat, o chierico 13 con i domini Acqua e Distruzione PF1e. Si scrive col modulo PF1e.
+
+## Skum guerriero 8 (2)
+
+| Voce | Calcolo | Risultato |
+|---|---|---|
+| Base | skum SRD: 2 DV d'aberrazione, For 19, Des 13, Cos 13, Int 10, Sag 10, Car 6; armatura naturale +2 | — |
+| Livelli | guerriero 8 (classe associata: GS +8); 10 DV in tutto, 2 aumenti messi su For | For **21** (+5) |
+| pf | 2d8 + 8d10 + 10 | **63** |
+| BAB / lotta | +1 + 8 = +9; lotta +14 | — |
+| CA | 10 + armatura completa +1 (9) + scudo leggero +1 (2) + armatura naturale 2 + Des 1 | **24**, contatto 11, colto alla sprovvista 23 |
+| TS | Tempra 0 + 6 + 1, Riflessi 0 + 2 + 1, Volontà 3 + 2 + 2 (Volontà di Ferro) | **+7 / +3 / +7** |
+| Talenti (9) | Allerta (base); Attacco Poderoso, Spingere Migliorato, Arma Focalizzata e Arma Focalizzata Superiore (tridente), Specializzazione in un'Arma (tridente), Iniziativa Migliorata, Riflessi in Combattimento, Volontà di Ferro | — |
+| Attacchi | tridente +1: 9 + 5 + 2 + 1 | **tridente +17/+12 (1d8+8)**, morso +9 (2d6+2), artiglio +9 (1d4+2); sott'acqua 2 rastrellate +9 (1d6+2) |
+| Spingere | d20 + 5 + 4, senza attacco d'opportunità | — |
+| **GS** | 2 + 8 | **10** |
+
+Tariq e i due skum fanno **EL 15**. La chat dava agli skum 115 pf: con questi DV e Cos 13 non tornano, e qui sono 63.
+
+## Ancora da fare
+
+- I chuul avanzati, solo se nella stesura delle aree (B3) entrano.
 - Il Cuore di Selenite come oggetto: prezzo calcolato e poteri dopo la purificazione.

@@ -385,7 +385,7 @@ Se il Cuore viene distrutto o dato via il totale scende a circa 76.500, dentro i
 
 {{note
 **ADR-02 — Tre ingressi, tre ordini degli scontri.**
-*Contesto:* richiesta del DM del 2026-11-01: un ingresso dalla cripta della Cattedrale e uno nascosto, con minacce diverse.
+*Contesto:* il DM voleva un ingresso dalla cripta della Cattedrale e uno nascosto, con minacce diverse.
 *Decisione:* tre ingressi a tre quote: +6 dalla Cattedrale, −12 dallo sfioratore, +15 dal pozzo del mercato.
 *Conseguenze:* ogni area dice come reagisce a seconda dell'ingresso. Il modulo è più lungo da preparare, ma la scelta dell'ingresso è dei giocatori e ha un peso.
 }}

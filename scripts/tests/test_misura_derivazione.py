@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import re  # noqa: F401
 import unittest
 from pathlib import Path
 
@@ -79,6 +80,22 @@ class Ripetibile(unittest.TestCase):
         # Solo la ripetibilità: MISURA.md è la fotografia del 2026-11-01 e
         # invecchia di proposito quando il Drappo o il Palio cambiano.
         self.assertEqual(uno, due)
+
+
+class RimandiNeiDueSensi(unittest.TestCase):
+    """D1 di PIANO-TRAVASO (DM, 2026-11-01): il derivato dichiara l'origine e
+    l'origine rimanda al derivato. Se uno dei due rimandi sparisce, rosso."""
+
+    def test_il_drappo_dichiara_il_palio(self):
+        hub = (ROOT / "10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md")
+        self.assertRegex(hub.read_text(encoding="utf-8"), r"Il Palio di\s+Channathgate")
+
+    def test_il_palio_rimanda_al_drappo(self):
+        palio = (ROOT / "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist"
+                 / "Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md")
+        testo = palio.read_text(encoding="utf-8")
+        self.assertIn("10-stand-alone/Il-Drappo-di-Tarsilia/", testo)
+        self.assertTrue((ROOT / "10-stand-alone/Il-Drappo-di-Tarsilia").is_dir())
 
 
 if __name__ == "__main__":

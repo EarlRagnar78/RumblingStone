@@ -13,7 +13,7 @@ python3 scripts/fase1.py <file>         # sempre, prima di toccare
 
 Poi si legge questa pagina dall'alto: prima cosa aspetta il DM, poi da dove riparte l'agente. Le regole di lavoro stanno in [`AGENTS.md`](AGENTS.md).
 
-## Aspetta il DM: 19 decisioni aperte
+## Aspetta il DM: 18 decisioni aperte
 
 Fonte: le tabelle `decisioni-dm` dei piani, aggregate in [STATO-E-ORDINE §4](plans/STATO-E-ORDINE-DEI-PIANI.md). Si risponde col numero e il piano: *«CODA-SECONDO-LETTORE D2 sì»*.
 
@@ -37,7 +37,6 @@ Fonte: le tabelle `decisioni-dm` dei piani, aggregate in [STATO-E-ORDINE §4](pl
 | `RECUPERO` | D6 | L3 | **RICONCILIAZIONE-PR-APERTE si chiude come superato?** R3, R6, R7, R8 sono decisi o fatti altrove (§2.3). *Proposta*: sì, ✅ con il rimando a dove sta ognuno |
 | `RIPRESA-PR` | D2 | F3 · 3d | **Riformulata il 2026-09-11: la domanda di prima partiva da un fatto falso.** Diceva *«i diciotto raster si generano sulla tua macchina — quando?»*, ma **esistono tutti e diciotto** (più le due extra), generati dal DM *… |
 | `RIPRESA-PR` | D11 | F4 · 4b | **L'ADR ex-0018 della #72: recuperato il 2026-09-11 come [ADR-0049](plans/adr/ADR-0049-edizione-commerciale-ap-originale.md), e resta 🔵 *proposta* — non accettata.** Dice che, *se e quando* si pubblica, si pubblica un *… |
-| `TRAVASO-GENEALOGIA` | D1 | C2 | **Come colleghiamo Drappo e Palio?** Proposta: nei due sensi (il Drappo dichiara l'origine, il Palio rimanda al Drappo con una riga, un test tiene i rimandi). Alternative: solo nel Drappo; fondere i due in un sistema de… |
 
 ### Revisioni della prosa da approvare: 0
 
@@ -106,6 +105,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-01 | TRAVASO-DRAPPO-CAMPAGNA | C2 — Drappo e Palio collegati nei due sensi | ✅ D1 decisa dal DM (card: «Nei due sensi»). In testa a `…-P2D-PALIO-CHANNATHGATE-AVVENTURA.md` la riga «Versione derivata» che rimanda al Drappo; percorso e ra… |
 | 2026-11-01 | DRAPPO-DI-TARSILIA | Il modulo in `10-stand-alone/`, accanto all'Abbazia | ✅ Scelta del DM del 2026-11-01. `git mv` in `10-stand-alone/Il-Drappo-di-Tarsilia/` (trattini, come il nome di prima). Il vecchio percorso sostituito in 56 fil… |
 | 2026-11-01 | TRAVASO-DRAPPO-CAMPAGNA | C1 — quanto il Drappo e il Palio sono lo stesso modulo | ✅ `scripts/misura_derivazione.py` misura su due assi separati, con test. Il Drappo deriva dal Palio (git: 2026-07-01 contro 2026-08-14; piano; hub §10). Testo:… |
 | 2026-10-31 | STANDARD-STAMPA | I2 seguito: nessun disegno a caratteri stampato in tutto il repo | ✅ linee del tempo di Palio e Drappo in tabella; `validate_booklets` ferma i recinti con ≥ 20 caratteri di riquadro fuori dall'apparato |
@@ -117,11 +117,10 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-10-29 | STANDARD-STAMPA | D5 appendice delle creature, I3 schede che non si spezzano, I6 varianti e cieco… | 🟡 schede spezzate da 14 a 0, schede PG del Drappo fuori gabbia da 299 a 0; appendice in Typst, HTML e Homebrewery; 8 coppie cieche (interlinea 1,08 e box color… |
 | 2026-10-29 | STANDARD-STAMPA | A1 riferimenti AP, A2 prima misura di stampa | 🟡 `misura_stampa.py` in CI con tetti per booklet: 0 font non incorporati, 1.255 righe sotto 7 pt (etichette delle mappe), 222 immagini sotto 300 dpi, 14 riquad… |
 | 2026-10-29 | ADR-0105 · riquadro unico delle creatur… | conversione ARC-07 e Palio; misura per booklet con tetti | 🟡 da 4/79 a 50/88 schede nel riquadro; ARC-07 e Palio al 100%; Abbazia e Drappo in corso |
-| 2026-10-29 | ARC-07 · il barile sulla tenda (decisio… | il DM accetta tutte le proposte ★ tranne B25 (*«tutti gli inferred ok a parte i… | ✅ B1-B15 e B22-B24 decise, i 22 INFERRED del documento diventano canone del 2026-10-29; poi B25 decisa dal DM con la card: la furia (le bande d'orchi corrono a… |
 
 ## Le misure che si portano dietro
 
-- **Decisioni**: 19 aperte, 305 chiuse (`decisioni_dm.py`).
+- **Decisioni**: 18 aperte, 306 chiuse (`decisioni_dm.py`).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

@@ -13,7 +13,7 @@
 > rispetto all'Arco della Forgia Eterna? e quali si potrebbero portare nella
 > campagna?»* — e la verifica dei file che ne è seguita (§1).
 
-**Stato**: 🟡 **riaperto** (2026-11-01): A1-A5 ✅ · B1-B2 ✅ · C1 ✅; aperti A6 (in attesa che ARC-07 finisca al tavolo) e C2 (D1 al DM) · **Data**: 2026-08-31, §3-bis il 2026-11-01
+**Stato**: 🟡 **riaperto** (2026-11-01): A1-A5 ✅ · B1-B2 ✅ · C1-C2 ✅; aperto solo A6 (in attesa che ARC-07 finisca al tavolo) · **Data**: 2026-08-31, §3-bis il 2026-11-01
 **Ambito**: apparato, tooling e formati. **Mai** la prosa giocata.
 
 ---
@@ -196,7 +196,7 @@ sequenze di sei parole su 40.036, nessuna frase); impianto condiviso al 62% dei 
 concetti (contrade 92%, scene 65%, PNG per ruolo 67%, regole 54%, struttura 36%).
 **Gate**: `pytest scripts/tests/test_misura_derivazione.py` · `validate_standalone.py`.
 
-### C2 · Il collegamento nei due sensi `⬜ gated: D1`
+### C2 · Il collegamento nei due sensi `✅ 2026-11-01`
 
 **Produce**: una riga in testa a `…-P2D-PALIO-CHANNATHGATE-AVVENTURA.md` che rimanda al
 Drappo come versione derivata, e un test che controlla che i due rimandi esistano.
@@ -209,7 +209,7 @@ vecchia, e il dubbio va al DM.
 
 | # | Fase | Domanda |
 |---|---|---|
-| D1 | C2 | **Come colleghiamo Drappo e Palio?** Proposta: nei due sensi (il Drappo dichiara l'origine, il Palio rimanda al Drappo con una riga, un test tiene i rimandi). Alternative: solo nel Drappo; fondere i due in un sistema della corsa comune (sconsigliata: riscrive testo collaudato) |
+| ~~D1~~ | C2 | ✅ **Decisa il 2026-11-01** (il DM, card: «Nei due sensi»). Era: **Come colleghiamo Drappo e Palio?** Proposta: nei due sensi (il Drappo dichiara l'origine, il Palio rimanda al Drappo con una riga, un test tiene i rimandi). Alternative: solo nel Drappo; fondere i due in un sistema della corsa comune (sconsigliata: riscrive testo collaudato) |
 
 ---
 
@@ -293,7 +293,7 @@ riga in `plans/CHANGELOG.md`.
 - ✅ **B1**: analisi di bilanciamento dei tre scontri del Drappo *(`06-VILLAIN` §7-bis: ~17-18 danni/round di gruppo, l'assalto dura 5-6 round, e Tesio cade in due colpi di Sfregio)*
 - ✅ **B2**: audit della ricchezza del Drappo *(`06-VILLAIN` §7-ter: si esce con quasi gli stessi soldi con cui si entra, ed è il punto del modulo)*
 - ✅ **C1**: misura della genealogia Drappo/Palio *(`plans/esperimenti/drappo-palio-2026-11-01/`: deriva dal Palio, 0 frasi in comune, 62% dell'impianto condiviso; hub del Drappo §10 corretto sulle contrade)*
-- ⬜ **C2**: collegamento nei due sensi *(gated: D1 al DM)*
+- ✅ **C2**: collegamento nei due sensi *(D1 decisa dal DM il 2026-11-01: riga «Versione derivata» in testa a `…-P2D-PALIO-CHANNATHGATE-AVVENTURA.md`, test `RimandiNeiDueSensi`)*
 
 ---
 

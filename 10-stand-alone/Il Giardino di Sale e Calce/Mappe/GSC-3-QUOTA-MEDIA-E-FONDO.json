@@ -78,7 +78,7 @@
           13
         ],
         [
-          29,
+          26,
           13
         ]
       ],
@@ -206,21 +206,21 @@
     {
       "type": "⬛",
       "rect": [
-        31,
-        10,
-        6,
-        7
+        27,
+        7,
+        12,
+        13
       ],
-      "label": "La Torre delle Volte: sale dal fondo fino a +12 m, 9 × 10,5 m"
+      "label": "La Torre delle Volte: sale dal fondo fino a +12 m, 18 × 19,5 m; i due pilastri est sono murati dentro"
     },
     {
       "type": "🔼",
       "at": [
-        30,
+        27,
         13
       ],
       "label": "La porta della Torre sul ponte maestro (GS-4)",
-      "collega": "GSC-4-TORRE-DELLE-VOLTE.md B11"
+      "collega": "GSC-4-TORRE-DELLE-VOLTE.md A07"
     },
     {
       "type": "🔼",
@@ -277,7 +277,7 @@
     {
       "type": "🪜",
       "at": [
-        27,
+        26,
         12
       ],
       "label": "Scaletta dal ponte all'acqua"
@@ -395,7 +395,7 @@
   "tattiche": [
     "**I chuul stanno sul fondo** e salgono solo su chi scende dalle scalette o cade dal ponte. Dal ponte maestro non arrivano: la loro portata è 3 m e il ponte è a 6 m. **EL 12** con tutti e tre (GS 9 ciascuno); è uno scontro facoltativo e lo si evita restando sul ponte.",
     "**Gli asserviti** non combattono: lavorano a raschiare il sale dalle pareti perché Karkator lo vuole. Se i PG li liberano (scelta 7) sono 12 uomini da portare su, ed è il conflitto della scena.",
-    "**Il ponte maestro è la strada della Torre**: chi arriva dalla galleria della Cattedrale lo percorre per 43,5 m sotto gli occhi delle feritoie della Torre."
+    "**Il ponte maestro è la strada della Torre**: chi arriva dalla galleria della Cattedrale lo percorre per 39 m sotto gli occhi delle feritoie della Torre."
   ],
   "evoluzione": [
     {

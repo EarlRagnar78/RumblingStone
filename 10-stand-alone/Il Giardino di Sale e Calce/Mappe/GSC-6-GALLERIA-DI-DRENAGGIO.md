@@ -30,7 +30,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @north N
 @tipo tattica caverna
 @luogo Rethmar, sotto la città fra il Santuario di Sale e il Cannath
-@collega B08 ; GSC-5-SANTUARIO-DI-SALE.md AE15
+@collega B08 ; GSC-5-SANTUARIO-DI-SALE.md AC23
 @collega AM08 ; GSC-1B-SFIORATORE.md W07
 @collega S15 ; fuori mappa ; la strada dei drow: due chilometri di galleria fino ai campi di Sonjak sotto la linea di Rethmar
 @taglia AB8 ; Enorme

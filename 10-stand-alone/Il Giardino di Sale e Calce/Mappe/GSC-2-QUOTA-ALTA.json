@@ -231,7 +231,7 @@
         33,
         11
       ],
-      "label": "Catena appesa alla volta, scende fino all'acqua: Scalare CD 15, e il ragno la sente vibrare"
+      "label": "Catena appesa alla volta, scende fino al terrazzo della Torre: Scalare CD 15, e il ragno la sente vibrare"
     },
     {
       "type": "⛓",
@@ -297,7 +297,7 @@
         10
       ],
       "label": "Il vuoto sopra la sala",
-      "effect": "fra le passerelle non c'è pavimento: chi cade fa 15 m fino alla quota media se finisce su un ponte (5d6), altrimenti 21 m fino all'acqua delle navate, profonda 1 m (6d6, l'acqua bassa non attutisce). Caduta lenta di Tordek: 12 m senza danni accanto a un pilastro"
+      "effect": "fra le passerelle non c'è pavimento: chi cade fa 3 m se finisce sul tetto della Torre (est, 1d6), 9 m fino alla quota media se finisce su un ponte o un cornicione (3d6), altrimenti 15 m fino al fondo delle navate, sotto 1 m d'acqua (5d6: l'acqua bassa non attutisce). Caduta lenta di Tordek: 12 m senza danni accanto a un pilastro"
     },
     {
       "type": "🕸",

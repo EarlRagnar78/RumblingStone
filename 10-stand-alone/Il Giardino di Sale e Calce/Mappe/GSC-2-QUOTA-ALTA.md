@@ -57,7 +57,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 
 | Elemento | Dove (coord.) | Effetto meccanico 3.5 |
 |---|---|---|
-| 🌫 Il vuoto sopra la sala | P11 | fra le passerelle non c'è pavimento: chi cade fa 15 m fino alla quota media se finisce su un ponte (5d6), altrimenti 21 m fino all'acqua delle navate, profonda 1 m (6d6, l'acqua bassa non attutisce). Caduta lenta di Tordek: 12 m senza danni accanto a un pilastro |
+| 🌫 Il vuoto sopra la sala | P11 | fra le passerelle non c'è pavimento: chi cade fa 3 m se finisce sul tetto della Torre (est, 1d6), 9 m fino alla quota media se finisce su un ponte o un cornicione (3d6), altrimenti 15 m fino al fondo delle navate, sotto 1 m d'acqua (5d6: l'acqua bassa non attutisce). Caduta lenta di Tordek: 12 m senza danni accanto a un pilastro |
 | 🕸 Ragnatele di catene | AI16 | terreno difficile; chi ci entra è intralciato come dalla ragnatela del ragno fase dell'SRD (Artista della Fuga CD 22, Forza CD 26) |
 
 ### ⚔️ TATTICHE (come si comportano i nemici — round per round)

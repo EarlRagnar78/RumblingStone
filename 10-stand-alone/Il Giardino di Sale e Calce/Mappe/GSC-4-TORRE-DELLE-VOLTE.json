@@ -3,8 +3,8 @@
   "title": "GS-4 — La Torre delle Volte: l'officina e lo studio di Mastro Tariq (+6 m)",
   "scale_m_per_square": 1.5,
   "map_size": [
-    22,
-    20
+    14,
+    13
   ],
   "base_terrain": "🏰",
   "north": "N",
@@ -16,9 +16,9 @@
       "terrain": "⬜",
       "rect": [
         3,
-        3,
-        16,
-        14
+        1,
+        10,
+        11
       ],
       "label": "L'officina delle acque: modelli di chiuse in ottone, tavoli coperti di disegni calishiti"
     },
@@ -26,8 +26,8 @@
       "terrain": "⬜",
       "rect": [
         0,
-        10,
-        3,
+        6,
+        2,
         1
       ],
       "label": "Il ponte maestro"
@@ -35,8 +35,8 @@
     {
       "terrain": "🌫",
       "rect": [
-        8,
-        8,
+        6,
+        5,
         3,
         3
       ],
@@ -47,17 +47,17 @@
     {
       "type": "🔽",
       "at": [
-        1,
-        10
+        0,
+        6
       ],
       "label": "Il ponte maestro, fuori dalla porta (GS-3)",
-      "collega": "GSC-3-QUOTA-MEDIA-E-FONDO.md AE14"
+      "collega": "GSC-3-QUOTA-MEDIA-E-FONDO.md AB14"
     },
     {
       "type": "🚪",
       "at": [
         2,
-        10
+        6
       ],
       "label": "La porta della Torre: quercia cerchiata di bronzo, sbarrata da dentro se la Torre è allertata (Forza CD 25)"
     },
@@ -65,12 +65,12 @@
       "type": "🏰",
       "line": [
         [
-          13,
-          3
+          9,
+          1
         ],
         [
-          13,
-          8
+          9,
+          4
         ]
       ],
       "label": "Parete dello studio"
@@ -79,93 +79,109 @@
       "type": "🏰",
       "line": [
         [
-          14,
-          8
+          9,
+          5
         ],
         [
-          18,
-          8
+          12,
+          5
         ]
       ]
     },
     {
       "type": "🔒",
       "at": [
-        13,
-        6
+        9,
+        3
       ],
       "label": "Porta dello studio: Scassinare CD 30, *serratura arcana*"
     },
     {
       "type": "🗄",
       "at": [
-        17,
-        4
+        12,
+        2
       ],
       "label": "Lo scaffale delle carte: i disegni della galleria verso il Sottosuolo e le lettere di Sal (scelta 12)"
     },
     {
       "type": "🪑",
       "at": [
-        15,
-        5
+        11,
+        3
       ],
       "label": "Lo scrittoio di Tariq"
     },
     {
       "type": "📚",
       "at": [
-        17,
-        6
+        12,
+        4
       ],
       "label": "Trattati calishiti sulle acque"
     },
     {
+      "type": "🟪",
+      "at": [
+        10,
+        1
+      ],
+      "label": "Pilastro della cisterna, murato nella Torre: attraversa lo studio dal fondo alla volta"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        10,
+        11
+      ],
+      "label": "Pilastro della cisterna, murato nella Torre"
+    },
+    {
       "type": "🔽",
       "at": [
-        9,
-        9
+        7,
+        6
       ],
       "label": "La scala a chiocciola: scende di 18 m fino al Santuario di Sale (GS-5)",
-      "collega": "GSC-5-SANTUARIO-DI-SALE.md D15"
+      "collega": "GSC-5-SANTUARIO-DI-SALE.md AC07"
     },
     {
       "type": "🧰",
       "at": [
         4,
-        15
+        10
       ],
       "label": "Le leve delle paratoie di scarico (stato B di GS-3)"
     },
     {
       "type": "🪟",
       "at": [
-        19,
-        12
+        6,
+        0
       ],
-      "label": "Feritoia sulla sala"
+      "label": "Feritoia sulla sala, verso le paratoie"
     },
     {
       "type": "🪟",
       "at": [
-        10,
-        17
+        6,
+        12
       ],
-      "label": "Feritoia sulla sala"
+      "label": "Feritoia sulla sala, verso le navate"
     },
     {
       "type": "🪟",
       "at": [
         2,
-        7
+        3
       ],
       "label": "Feritoia sul ponte maestro"
     },
     {
       "type": "🛐",
       "at": [
-        16,
-        14
+        11,
+        8
       ],
       "label": "L'altare di Umberlee: una conchiglia nera piena d'acqua di mare"
     }
@@ -174,8 +190,8 @@
     {
       "type": "🌫",
       "at": [
-        8,
-        8
+        6,
+        5
       ],
       "label": "La tromba della scala",
       "effect": "aperta per 18 m fino al Santuario: chi ci cade o ci viene spinto (gli skum hanno Spingere Migliorato) prende 6d6"
@@ -189,7 +205,7 @@
       "area": {
         "rect": [
           3,
-          9,
+          6,
           2,
           2
         ]
@@ -201,8 +217,8 @@
       "name": "Mastro Tariq, chierico 13 di Umberlee (GS 13)",
       "token": "🟣",
       "at": [
-        15,
-        12
+        11,
+        9
       ]
     },
     {
@@ -210,8 +226,8 @@
       "name": "Skum guerriero 8 (GS 10)",
       "token": "🔴",
       "at": [
-        6,
-        7
+        5,
+        3
       ]
     },
     {
@@ -219,8 +235,8 @@
       "name": "Skum guerriero 8 (GS 10)",
       "token": "🔴",
       "at": [
-        6,
-        13
+        5,
+        10
       ]
     }
   ],
@@ -245,6 +261,6 @@
     }
   ],
   "note_dm": [
-    "**L'officina misura 24 × 21 m** di pavimento, dentro mura spesse 1,5 m. Ha tre piani: il fondo con le chiuse, questa officina a +6 m e il terrazzo di guardia a +12 m (non serve una griglia, ci stanno solo due skum di vedetta se la Torre è allertata)."
+    "**L'officina misura 15 × 16,5 m** di pavimento, dentro mura spesse 1,5 m: fuori la Torre è 18 × 19,5 m, la stessa impronta di GS-3, e due pilastri della cisterna sono murati dentro. Ha tre piani: il fondo con le chiuse, questa officina a +6 m e il terrazzo di guardia a +12 m (non serve una griglia, ci stanno solo due skum di vedetta se la Torre è allertata)."
   ]
 }

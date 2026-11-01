@@ -17,19 +17,19 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 05 🏰 🔼 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🌉 🏰
 06 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🌉 🏰
 07 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🌉 💧 💧 💧 💧 💧 💧 💧 💧 🔴 💧 💧 💧 💧 💧 💧 💧 💧 🌉 🏰
-08 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🌉 🏰
-09 🏰 🌉 💧 💧 💧 🟪 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟪 💧 💧 💧 💧 🌉 💧 💧 💧 💧 🟪 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟪 💧 💧 🌉 🏰
-10 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟦 🟦 🟦 🟦 🟦 🟦 🌉 🟦 🟦 🟦 🟦 🟦 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🌉 🏰
-11 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟦 🟦 🟦 🟦 🟦 🟦 🌉 🟦 🟦 🟦 🟦 🟦 💧 💧 💧 💧 💧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 💧 🌉 🏰
-12 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟦 🟦 🟦 🟦 🟦 🟦 🌉 🟦 🟦 🟦 🟦 🟦 💧 💧 💧 💧 💧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 💧 🌉 🏰
-13 🏰 🌉 🔵 🔵 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟦 🟦 🟦 🟦 🟦 🟦 🌉 🟦 🟦 🟦 🟦 🟦 💧 🪜 💧 💧 💧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 💧 🌉 🏰
-14 🏰 🔼 🔵 🔵 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🔼 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 💧 🌉 🏰
-15 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🪜 💧 🟦 🟦 🟦 🟦 🟦 🟦 🔽 🟦 🟦 🟦 🟦 🟦 💧 💧 💧 💧 💧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 💧 🌉 🏰
-16 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 💧 💧 💧 💧 💧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 💧 🌉 🏰
-17 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 💧 💧 💧 💧 💧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 💧 🌉 🏰
-18 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🌉 🏰
-19 🏰 🌉 💧 💧 💧 🟪 💧 💧 💧 🔴 💧 💧 💧 💧 💧 🟪 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟪 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟪 💧 💧 🌉 🏰
-20 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟢 🟢 🟢 🟢 🟢 🟢 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🌉 🏰
+08 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🌉 💧 💧 💧 💧 💧 💧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🏰
+09 🏰 🌉 💧 💧 💧 🟪 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟪 💧 💧 💧 💧 🌉 💧 💧 💧 💧 🟪 💧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🏰
+10 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟦 🟦 🟦 🟦 🟦 🟦 🌉 🟦 🟦 🟦 🟦 🟦 💧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🏰
+11 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟦 🟦 🟦 🟦 🟦 🟦 🌉 🟦 🟦 🟦 🟦 🟦 💧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🏰
+12 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟦 🟦 🟦 🟦 🟦 🟦 🌉 🟦 🟦 🟦 🟦 🟦 💧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🏰
+13 🏰 🌉 🔵 🔵 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟦 🟦 🟦 🟦 🟦 🟦 🌉 🟦 🟦 🟦 🟦 🟦 🪜 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🏰
+14 🏰 🔼 🔵 🔵 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🌉 🔼 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🏰
+15 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🪜 💧 🟦 🟦 🟦 🟦 🟦 🟦 🔽 🟦 🟦 🟦 🟦 🟦 💧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🏰
+16 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 💧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🏰
+17 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 💧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🏰
+18 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 💧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🏰
+19 🏰 🌉 💧 💧 💧 🟪 💧 💧 💧 🔴 💧 💧 💧 💧 💧 🟪 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟪 💧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🏰
+20 🏰 🌉 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟢 🟢 🟢 🟢 🟢 🟢 💧 💧 💧 💧 💧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🏰
 21 🏰 🌉 💧 🟨 🟨 🟨 🟨 🟨 🟨 🟨 🟨 💧 💧 💧 💧 💧 🟢 🟢 🟢 🟢 🟢 🟢 💧 💧 💧 💧 💧 💧 🔴 💧 💧 💧 💧 💧 💧 💧 💧 💧 🌉 🏰
 22 🏰 🌉 💧 🟨 🟨 🟨 🟨 🟨 🟨 🟨 🟨 💧 💧 💧 💧 💧 🟢 🟢 🟢 🟢 🟢 🟢 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🌉 🏰
 23 🏰 🌉 💧 🟨 🟨 🟨 🟨 💧 🟨 🟨 🟨 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🔼 🏰
@@ -41,7 +41,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @north N
 @tipo tattica interni
 @luogo Rethmar, la Grande Cisterna sotto il Mercato del Ponte
-@collega AE14 ; GSC-4-TORRE-DELLE-VOLTE.md B11
+@collega AB14 ; GSC-4-TORRE-DELLE-VOLTE.md A07
 @collega B05 ; GSC-2-QUOTA-ALTA.md B05
 @collega AM23 ; GSC-2-QUOTA-ALTA.md AM23
 @collega B14 ; GSC-1-CRIPTA-CATTEDRALE.md X08
@@ -54,7 +54,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @mark 3 ; AC21 ; Chuul avanzato
 @mark 4 ; AD7 ; Chuul avanzato
 @mark 5 ; T21 ; Asserviti di Karkator: acquaioli della gilda, umani popolani, nell'acqua fino al petto (12)
-@zone AF11-AK17 ; La Torre delle Volte: sale dal fondo fino a +12 m, 9 × 10,5 m
+@zone AB8-AM20 ; La Torre delle Volte: sale dal fondo fino a +12 m, 18 × 19,5 m; i due pilastri est sono murati dentro
 ```
 
 ### 🌍 AMBIENTE (cosa impone il terreno — regole, non prosa)
@@ -79,7 +79,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 
 - **I chuul stanno sul fondo** e salgono solo su chi scende dalle scalette o cade dal ponte. Dal ponte maestro non arrivano: la loro portata è 3 m e il ponte è a 6 m. **EL 12** con tutti e tre (GS 9 ciascuno); è uno scontro facoltativo e lo si evita restando sul ponte.
 - **Gli asserviti** non combattono: lavorano a raschiare il sale dalle pareti perché Karkator lo vuole. Se i PG li liberano (scelta 7) sono 12 uomini da portare su, ed è il conflitto della scena.
-- **Il ponte maestro è la strada della Torre**: chi arriva dalla galleria della Cattedrale lo percorre per 43,5 m sotto gli occhi delle feritoie della Torre.
+- **Il ponte maestro è la strada della Torre**: chi arriva dalla galleria della Cattedrale lo percorre per 39 m sotto gli occhi delle feritoie della Torre.
 
 ### 🔄 EVOLUZIONE (come cambia la mappa — stati, non copione)
 

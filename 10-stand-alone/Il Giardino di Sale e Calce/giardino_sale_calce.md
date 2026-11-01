@@ -52,6 +52,16 @@ La cisterna ha tre ingressi, e ognuno porta in un punto diverso: chi scende da u
 
 ## Le tavole
 
+Prima le due tavole d'insieme: come si collegano le aree (GS-0) e la cisterna vista di fianco (GS-S1). Poi le piante, dall'ingresso al fondo.
+
+![GS-0 — Come si collegano le aree, e i tre ingressi da Rethmar](Mappe/schemi/GS-0-collegamenti.svg)
+
+![GS-0 — i tre ingressi](Mappe/schemi/GS-0-collegamenti_legenda.svg)
+
+![GS-S1 — La Grande Cisterna in sezione, da ovest a est](Mappe/schemi/GS-S1-sezione-cisterna.svg)
+
+![GS-S1 — indicazioni](Mappe/schemi/GS-S1-sezione-cisterna_legenda.svg)
+
 ![GS-1c — Il Mercato del Ponte e il pozzo grande (ingresso C)](Mappe/rendered-stampa-pianta/GSC-1C-PIAZZA-DEL-POZZO_map01_gs-1c-il-mercato-del-ponte-e-il-pozzo-grande-ing.svg)
 
 ![GS-1c — indicazioni e legenda](Mappe/rendered-stampa-pianta/GSC-1C-PIAZZA-DEL-POZZO_map01_gs-1c-il-mercato-del-ponte-e-il-pozzo-grande-ing_legenda.svg)
@@ -84,7 +94,7 @@ La cisterna ha tre ingressi, e ognuno porta in un punto diverso: chi scende da u
 
 ![GS-6 — indicazioni e legenda](Mappe/rendered-stampa-pianta/GSC-6-GALLERIA-DI-DRENAGGIO_map01_gs-6-la-galleria-di-drenaggio-12-m-l-acqua-rubat_legenda.svg)
 
-**Le quote.** Il pavimento delle navate della cisterna è la quota 0 del modulo. La volta è a +18 m, le passerelle alte a +15, il ponte maestro e i cornicioni a +6, la vasca centrale scende a −6 e sotto di lei il Santuario di Sale e la galleria di drenaggio stanno a −12. La piazza del mercato è a +21. I pilastri sono gli stessi in GS-2 e GS-3: chi cala da una catena arriva nel quadretto corrispondente.
+**Le quote.** Il pavimento delle navate della cisterna è la quota 0 del modulo. La volta è a +18 m, le passerelle alte a +15, il ponte maestro e i cornicioni a +6, la vasca centrale scende a −6 e sotto di lei il Santuario di Sale e la galleria di drenaggio stanno a −12. La piazza del mercato è a +21, e la volta del Santuario è a −1: sopra c'è solo un metro di roccia sotto le navate. I pilastri sono gli stessi in GS-2 e GS-3: chi cala da una catena arriva nel quadretto corrispondente.
 
 ## Il cast
 
@@ -234,9 +244,13 @@ Una gabbia di ferro per quattro persone, calata dall'argano per sei metri attrav
 
 ### G1 · Le passerelle alte (GS-2)
 
-> *La gabbia esce dalla volta e sotto non c'è niente. Una sala grande come una cattedrale, buia, con l'acqua venti metri più in basso che riflette la luce della tua lanterna in mille punti. Le passerelle partono dalla gabbia in quattro direzioni, assi di legno su travi di ferro, senza parapetto. E dalla volta pendono catene, decine di catene, che scendono fino all'acqua. Qualcuna si muove. Non c'è vento.*
+> *La gabbia esce dalla volta e sotto non c'è niente. Una sala grande come una cattedrale, buia, con l'acqua quindici metri più in basso che riflette la luce della tua lanterna in mille punti. Le passerelle partono dalla gabbia in quattro direzioni, assi di legno su travi di ferro, senza parapetto. E dalla volta pendono catene, decine di catene, che scendono fino all'acqua. Qualcuna si muove. Non c'è vento.*
 
-**Incontro (EL 12):** i due Ragni delle Catene. Vedi la mappa per la disposizione e le tattiche. **Chi arriva da A o da B** può non incontrarli mai: i ragni restano sulle volte finché qualcuno non tocca le catene.
+**Incontro (EL 12):** i due Ragni delle Catene. La pianta GS-2 dà la disposizione; la sezione qui sotto dà lo scontro di fianco, round per round, perché i ragni lo combattono in altezza: escono dall'Etereo sotto le passerelle e lanciano le catene invece della ragnatela.
+
+![GS-S2 — L'incontro coi Ragni delle Catene, in sezione](Mappe/schemi/GS-S2-ragni-delle-catene.svg)
+
+![GS-S2 — lo scontro, numero per numero](Mappe/schemi/GS-S2-ragni-delle-catene_legenda.svg) **Chi arriva da A o da B** può non incontrarli mai: i ragni restano sulle volte finché qualcuno non tocca le catene.
 
 ### G2 e G3 · I nidi dei ragni
 
@@ -246,7 +260,7 @@ Due intrichi di catene e seta fra le passerelle e la volta, a est e a ovest. Den
 
 > *Il ponte attraversa la sala a mezza altezza, dritto come una lama, con un parapetto di ferro battuto che qualcuno ha decorato di onde. In fondo c'è una torre che sale dall'acqua fino quasi alla volta, con le feritoie illuminate di verde. Sotto il ponte, nell'acqua delle navate, si muovono delle ombre lunghe come barche.*
 
-Il ponte è lungo 43,5 m dal cornicione ovest alla porta della Torre ed è sotto le feritoie per tutta la lunghezza. Chi lo percorre senza nascondersi è visto dalla Torre (Osservare degli skum di vedetta contro Nascondersi, con la penalità di −10 per chi corre).
+Il ponte è lungo 39 m dal cornicione ovest alla porta della Torre ed è sotto le feritoie per tutta la lunghezza. Chi lo percorre senza nascondersi è visto dalla Torre (Osservare degli skum di vedetta contro Nascondersi, con la penalità di −10 per chi corre).
 
 ### G5 · Le navate allagate
 

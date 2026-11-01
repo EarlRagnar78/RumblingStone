@@ -26,7 +26,7 @@ Una sessione di 6-7 ore regge tre scontri pieni e uno o due brevi. Con i facolta
 | Taglia del Visir | 25.000 mo e un palazzo |
 | **Totale** | circa **161.000 mo**, più il palazzo |
 
-Il tesoro della chat è il **doppio o più** del budget SRD della sessione, anche con tutti e cinque gli scontri. La proposta è riportarlo a circa 70.000-97.000 mo così:
+Il tesoro della chat è **due volte e mezza** il budget SRD con tre scontri e **una volta e due terzi** con tutti e cinque. La proposta è riportarlo a circa 70.000-97.000 mo così:
 
 - il Cuore resta, perché è il centro della storia: si ricalcola come oggetto meraviglioso con i suoi poteri dopo la purificazione (*creare acqua* a volontà, +2 alla CD degli incantesimi d'acqua). Il prezzo si calcola, non si dichiara;
 - Tariq ne porta uno solo fra l'arma +3 anarchica e l'anello +4;

@@ -1,0 +1,2136 @@
+{
+ "A": {
+  "nome": "Palio di Channathgate (P2D)",
+  "file": [
+   "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md",
+   "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+   "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+   "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+   "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+   "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md",
+   "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+   "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+   "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+   "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+   "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-MAPPE.md",
+   "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+   "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md",
+   "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md",
+   "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
+  ]
+ },
+ "B": {
+  "nome": "Drappo di Tarsilia",
+  "file": [
+   "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+   "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+   "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+   "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+   "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+   "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+   "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+   "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+   "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+   "STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
+   "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+   "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+   "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+   "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+   "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md",
+   "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+   "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+   "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
+   "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+  ]
+ },
+ "testo": {
+  "parole_A": 27416,
+  "parole_B": 40933,
+  "shingle_n": 6,
+  "jaccard": 0.0001,
+  "shingle_comuni": 7,
+  "shingle_B": 40036,
+  "B_contenuto_in_A": 0.0002,
+  "A_contenuto_in_B": 0.0003,
+  "frasi_B": 2234,
+  "frasi_B_quasi_da_A": 0,
+  "esempi_frasi": [],
+  "passaggi_comuni_piu_lunghi": [
+   {
+    "parole": 6,
+    "file": "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+    "testo": "1 alba la benedizione del cavallo"
+   },
+   {
+    "parole": 6,
+    "file": "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+    "testo": "la benedizione il cavallo entra nell'oratorio"
+   },
+   {
+    "parole": 6,
+    "file": "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+    "testo": "il momento in cui i giocatori"
+   },
+   {
+    "parole": 6,
+    "file": "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+    "testo": "verde legnoferro e bruno di terra"
+   },
+   {
+    "parole": 6,
+    "file": "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+    "testo": "3 successi prima di 3 fallimenti"
+   },
+   {
+    "parole": 6,
+    "file": "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+    "testo": "la partenza sette cavalli entrano fra"
+   },
+   {
+    "parole": 6,
+    "file": "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
+    "testo": "non tradisce mai un patto bruco"
+   }
+  ],
+  "per_file_B": {
+   "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md": {
+    "parole": 2355,
+    "contenuto_in_A": 0.0
+   },
+   "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md": {
+    "parole": 2867,
+    "contenuto_in_A": 0.0
+   },
+   "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md": {
+    "parole": 4340,
+    "contenuto_in_A": 0.0
+   },
+   "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md": {
+    "parole": 2971,
+    "contenuto_in_A": 0.0007
+   },
+   "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md": {
+    "parole": 1978,
+    "contenuto_in_A": 0.0
+   },
+   "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md": {
+    "parole": 2195,
+    "contenuto_in_A": 0.0005
+   },
+   "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md": {
+    "parole": 3028,
+    "contenuto_in_A": 0.0
+   },
+   "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md": {
+    "parole": 2047,
+    "contenuto_in_A": 0.0
+   },
+   "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md": {
+    "parole": 1874,
+    "contenuto_in_A": 0.0
+   },
+   "STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md": {
+    "parole": 953,
+    "contenuto_in_A": 0.0
+   },
+   "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md": {
+    "parole": 3206,
+    "contenuto_in_A": 0.0
+   },
+   "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md": {
+    "parole": 1596,
+    "contenuto_in_A": 0.0006
+   },
+   "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md": {
+    "parole": 1654,
+    "contenuto_in_A": 0.0
+   },
+   "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md": {
+    "parole": 1991,
+    "contenuto_in_A": 0.0
+   },
+   "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md": {
+    "parole": 615,
+    "contenuto_in_A": 0.0
+   },
+   "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md": {
+    "parole": 2454,
+    "contenuto_in_A": 0.0
+   },
+   "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md": {
+    "parole": 2094,
+    "contenuto_in_A": 0.001
+   },
+   "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md": {
+    "parole": 2059,
+    "contenuto_in_A": 0.0005
+   },
+   "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md": {
+    "parole": 656,
+    "contenuto_in_A": 0.0
+   }
+  }
+ },
+ "titoli": {
+  "titoli_A": 211,
+  "titoli_B": 261,
+  "titoli_B_simili_in_A": 9,
+  "soglia": 0.75,
+  "coppie": [
+   {
+    "B": "i cavalli",
+    "A": "i cavalli",
+    "somiglianza": 1.0
+   },
+   {
+    "B": "il cavallo scosso",
+    "A": "il cavallo scosso",
+    "somiglianza": 1.0
+   },
+   {
+    "B": "la corsa",
+    "A": "la corsa",
+    "somiglianza": 1.0
+   },
+   {
+    "B": "il corteo e la sbandierata",
+    "A": "il corteo e l'ultima sbandierata",
+    "somiglianza": 0.9
+   },
+   {
+    "B": "statistiche",
+    "A": "tattiche",
+    "somiglianza": 0.84
+   },
+   {
+    "B": "giorno 1 la sorte",
+    "A": "giorno 1 la tratta",
+    "somiglianza": 0.8
+   },
+   {
+    "B": "alba la benedizione",
+    "A": "alba la benedizione del cavallo",
+    "somiglianza": 0.76
+   },
+   {
+    "B": "i canti",
+    "A": "i fantini",
+    "somiglianza": 0.75
+   },
+   {
+    "B": "il duello dei canti",
+    "A": "il duello di canto a 3 scambi",
+    "somiglianza": 0.75
+   }
+  ]
+ },
+ "nomi": {
+  "nomi_A": 174,
+  "nomi_B": 88,
+  "comuni": 20,
+  "jaccard": 0.0826,
+  "elenco_comuni": [
+   {
+    "nome": "Bruco",
+    "A": 17,
+    "B": 40
+   },
+   {
+    "nome": "Cena",
+    "A": 18,
+    "B": 28
+   },
+   {
+    "nome": "Civetta",
+    "A": 36,
+    "B": 8
+   },
+   {
+    "nome": "Torre",
+    "A": 27,
+    "B": 12
+   },
+   {
+    "nome": "Animali",
+    "A": 12,
+    "B": 18
+   },
+   {
+    "nome": "Drago",
+    "A": 17,
+    "B": 6
+   },
+   {
+    "nome": "Magica",
+    "A": 14,
+    "B": 6
+   },
+   {
+    "nome": "Nonna",
+    "A": 6,
+    "B": 12
+   },
+   {
+    "nome": "Partiti",
+    "A": 4,
+    "B": 13
+   },
+   {
+    "nome": "Capitani",
+    "A": 4,
+    "B": 12
+   },
+   {
+    "nome": "Rione",
+    "A": 11,
+    "B": 5
+   },
+   {
+    "nome": "Ferrante",
+    "A": 4,
+    "B": 11
+   },
+   {
+    "nome": "Curva",
+    "A": 4,
+    "B": 9
+   },
+   {
+    "nome": "Leocorno",
+    "A": 3,
+    "B": 9
+   },
+   {
+    "nome": "Intrattenere",
+    "A": 4,
+    "B": 7
+   },
+   {
+    "nome": "Bardo",
+    "A": 5,
+    "B": 5
+   },
+   {
+    "nome": "Mano",
+    "A": 7,
+    "B": 3
+   },
+   {
+    "nome": "Oca",
+    "A": 6,
+    "B": 4
+   },
+   {
+    "nome": "Salvatore",
+    "A": 7,
+    "B": 3
+   },
+   {
+    "nome": "Golarion",
+    "A": 6,
+    "B": 3
+   }
+  ]
+ },
+ "impianto": {
+  "righe": [
+   {
+    "id": "tre-giornate",
+    "dimensione": "struttura",
+    "descrizione": "Tre giornate, una per sessione",
+    "stato": "stesso nome",
+    "occorrenze_A": 6,
+    "occorrenze_B": 10,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "pg-uffici",
+    "dimensione": "struttura",
+    "descrizione": "I PG sono il governo di una contrada",
+    "stato": "stesso nome",
+    "occorrenze_A": 5,
+    "occorrenze_B": 3,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "livello-alto",
+    "dimensione": "struttura",
+    "descrizione": "Tarato per PG di 12°-13°",
+    "stato": "solo A",
+    "occorrenze_A": 10,
+    "occorrenze_B": 0,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
+    ],
+    "file_B": [],
+    "nota": ""
+   },
+   {
+    "id": "livello-3",
+    "dimensione": "struttura",
+    "descrizione": "Tarato per sei PG di 3°",
+    "stato": "solo B",
+    "occorrenze_A": 0,
+    "occorrenze_B": 9,
+    "file_A": [],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "pregenerati",
+    "dimensione": "struttura",
+    "descrizione": "Schede pregenerate",
+    "stato": "solo B",
+    "occorrenze_A": 0,
+    "occorrenze_B": 3,
+    "file_A": [],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "ammissione",
+    "dimensione": "struttura",
+    "descrizione": "Ingresso dei PG con prove d'ammissione",
+    "stato": "solo A",
+    "occorrenze_A": 11,
+    "occorrenze_B": 0,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md"
+    ],
+    "file_B": [],
+    "nota": ""
+   },
+   {
+    "id": "peso-contrada",
+    "dimensione": "struttura",
+    "descrizione": "Il Peso di contrada (quattro vie per pagarlo)",
+    "stato": "solo B",
+    "occorrenze_A": 0,
+    "occorrenze_B": 10,
+    "file_A": [],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "posta-mythal",
+    "dimensione": "struttura",
+    "descrizione": "Posta: Matrice del Mythal e Meraviglie d'assedio",
+    "stato": "solo A",
+    "occorrenze_A": 70,
+    "occorrenze_B": 0,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md"
+    ],
+    "file_B": [],
+    "nota": ""
+   },
+   {
+    "id": "posta-accorpamento",
+    "dimensione": "struttura",
+    "descrizione": "Posta: la contrada dei PG rischia l'accorpamento",
+    "stato": "solo B",
+    "occorrenze_A": 0,
+    "occorrenze_B": 8,
+    "file_A": [],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "clock-campagna",
+    "dimensione": "struttura",
+    "descrizione": "Aggancio a clock e assedio della campagna",
+    "stato": "solo A",
+    "occorrenze_A": 26,
+    "occorrenze_B": 0,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md"
+    ],
+    "file_B": [],
+    "nota": ""
+   },
+   {
+    "id": "milestone",
+    "dimensione": "struttura",
+    "descrizione": "Avanzamento a pietre miliari",
+    "stato": "stesso nome",
+    "occorrenze_A": 3,
+    "occorrenze_B": 6,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "epiloghi",
+    "dimensione": "struttura",
+    "descrizione": "Epiloghi per esito",
+    "stato": "stesso nome",
+    "occorrenze_A": 8,
+    "occorrenze_B": 8,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "echi",
+    "dimensione": "struttura",
+    "descrizione": "Echi per un seguito",
+    "stato": "stesso nome",
+    "occorrenze_A": 9,
+    "occorrenze_B": 8,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "apparato-uso",
+    "dimensione": "struttura",
+    "descrizione": "Apparato d'uso: kit, cassetta, dossier, collaudo",
+    "stato": "solo B",
+    "occorrenze_A": 0,
+    "occorrenze_B": 24,
+    "file_A": [],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "apertura-offerte",
+    "dimensione": "scene",
+    "descrizione": "G1: offerte degli emissari alla locanda",
+    "stato": "stesso nome",
+    "occorrenze_A": 11,
+    "occorrenze_B": 2,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md"
+    ],
+    "nota": "in B gli emissari ci sono, la locanda no"
+   },
+   {
+    "id": "tratta",
+    "dimensione": "scene",
+    "descrizione": "G1: assegnazione dei cavalli (Tratta / Sorte)",
+    "stato": "rinominato",
+    "occorrenze_A": 19,
+    "occorrenze_B": 3,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "truffa-urna",
+    "dimensione": "scene",
+    "descrizione": "G1: truccare l'assegnazione",
+    "stato": "solo A",
+    "occorrenze_A": 3,
+    "occorrenze_B": 0,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md"
+    ],
+    "file_B": [],
+    "nota": ""
+   },
+   {
+    "id": "rissa-fontana",
+    "dimensione": "scene",
+    "descrizione": "G1 sera: rissa alla fontana",
+    "stato": "solo B",
+    "occorrenze_A": 0,
+    "occorrenze_B": 10,
+    "file_A": [],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "prove-pista",
+    "dimensione": "scene",
+    "descrizione": "Prove di corsa prima del Palio",
+    "stato": "rinominato",
+    "occorrenze_A": 2,
+    "occorrenze_B": 4,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "partiti",
+    "dimensione": "scene",
+    "descrizione": "G2: i Partiti (accordi segreti fra contrade)",
+    "stato": "stesso nome",
+    "occorrenze_A": 53,
+    "occorrenze_B": 24,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-MAPPE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "scommesse",
+    "dimensione": "scene",
+    "descrizione": "G2: il banco delle scommesse",
+    "stato": "stesso nome",
+    "occorrenze_A": 1,
+    "occorrenze_B": 2,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "tavola-fuori",
+    "dimensione": "scene",
+    "descrizione": "G2: la tavola di fuori",
+    "stato": "solo B",
+    "occorrenze_A": 0,
+    "occorrenze_B": 5,
+    "file_A": [],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "sbandierata",
+    "dimensione": "scene",
+    "descrizione": "La sbandierata in piazza",
+    "stato": "stesso nome",
+    "occorrenze_A": 20,
+    "occorrenze_B": 13,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "canti",
+    "dimensione": "scene",
+    "descrizione": "Sfida dei canti fra contrade",
+    "stato": "rinominato",
+    "occorrenze_A": 6,
+    "occorrenze_B": 17,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "cena",
+    "dimensione": "scene",
+    "descrizione": "G2 sera: la cena prima della corsa",
+    "stato": "rinominato",
+    "occorrenze_A": 3,
+    "occorrenze_B": 8,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "assalto-stalla",
+    "dimensione": "scene",
+    "descrizione": "G2 notte: assalto alla stalla",
+    "stato": "rinominato",
+    "occorrenze_A": 7,
+    "occorrenze_B": 9,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-MAPPE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
+    ],
+    "nota": "A: drow di Sonjak GS 11-12; B: Sfregio GS 5"
+   },
+   {
+    "id": "fascia-grigia",
+    "dimensione": "scene",
+    "descrizione": "G2: l'uomo con la fascia grigia",
+    "stato": "solo B",
+    "occorrenze_A": 0,
+    "occorrenze_B": 7,
+    "file_A": [],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "benedizione",
+    "dimensione": "scene",
+    "descrizione": "G3 alba: benedizione del cavallo",
+    "stato": "stesso nome",
+    "occorrenze_A": 14,
+    "occorrenze_B": 14,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "tintoria",
+    "dimensione": "scene",
+    "descrizione": "G3: salvataggio del fantino in tintoria",
+    "stato": "solo B",
+    "occorrenze_A": 0,
+    "occorrenze_B": 3,
+    "file_A": [],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "corteo",
+    "dimensione": "scene",
+    "descrizione": "G3: corteo storico",
+    "stato": "stesso nome",
+    "occorrenze_A": 7,
+    "occorrenze_B": 18,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "partenza",
+    "dimensione": "scene",
+    "descrizione": "G3: la partenza (Mossa / Stacco)",
+    "stato": "rinominato",
+    "occorrenze_A": 24,
+    "occorrenze_B": 29,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-MAPPE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "tre-giri",
+    "dimensione": "scene",
+    "descrizione": "La corsa in tre giri",
+    "stato": "stesso nome",
+    "occorrenze_A": 9,
+    "occorrenze_B": 8,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-MAPPE.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "curva-nord",
+    "dimensione": "scene",
+    "descrizione": "Climax alla curva nord",
+    "stato": "solo B",
+    "occorrenze_A": 0,
+    "occorrenze_B": 36,
+    "file_A": [],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "decreto",
+    "dimensione": "scene",
+    "descrizione": "Il decreto finale",
+    "stato": "stesso nome",
+    "occorrenze_A": 16,
+    "occorrenze_B": 23,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "cavalcata-soccorso",
+    "dimensione": "scene",
+    "descrizione": "G4: cavalcata di soccorso verso Rethmar",
+    "stato": "solo A",
+    "occorrenze_A": 3,
+    "occorrenze_B": 0,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md"
+    ],
+    "file_B": [],
+    "nota": ""
+   },
+   {
+    "id": "drappo-dipinto",
+    "dimensione": "scene",
+    "descrizione": "Il drappo dipinto in premio",
+    "stato": "rinominato",
+    "occorrenze_A": 19,
+    "occorrenze_B": 10,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-MAPPE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "fazzoletto",
+    "dimensione": "scene",
+    "descrizione": "Rito del fazzoletto di contrada",
+    "stato": "solo A",
+    "occorrenze_A": 16,
+    "occorrenze_B": 0,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md"
+    ],
+    "file_B": [],
+    "nota": ""
+   },
+   {
+    "id": "autorita",
+    "dimensione": "png",
+    "descrizione": "Chi governa la corsa",
+    "stato": "rinominato",
+    "occorrenze_A": 34,
+    "occorrenze_B": 45,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-MAPPE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "capitani",
+    "dimensione": "png",
+    "descrizione": "I capitani delle altre contrade",
+    "stato": "stesso nome",
+    "occorrenze_A": 31,
+    "occorrenze_B": 38,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "fantini-rivali",
+    "dimensione": "png",
+    "descrizione": "I fantini delle altre contrade",
+    "stato": "rinominato",
+    "occorrenze_A": 2,
+    "occorrenze_B": 3,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "villain-bruco",
+    "dimensione": "png",
+    "descrizione": "Mente del sabotaggio, dal Bruco",
+    "stato": "rinominato",
+    "occorrenze_A": 16,
+    "occorrenze_B": 85,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "esecutore",
+    "dimensione": "png",
+    "descrizione": "Esecutori del sabotaggio",
+    "stato": "rinominato",
+    "occorrenze_A": 94,
+    "occorrenze_B": 56,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-MAPPE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "mediatore",
+    "dimensione": "png",
+    "descrizione": "Mediatore o allibratore",
+    "stato": "rinominato",
+    "occorrenze_A": 21,
+    "occorrenze_B": 5,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md"
+    ],
+    "nota": "ruoli diversi: A allibratore, B mediatore degli incarichi"
+   },
+   {
+    "id": "banchiere-oca",
+    "dimensione": "png",
+    "descrizione": "Il denaro dell'Oca",
+    "stato": "rinominato",
+    "occorrenze_A": 23,
+    "occorrenze_B": 71,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "profughi-istrice",
+    "dimensione": "png",
+    "descrizione": "L'Istrice dei profughi",
+    "stato": "stesso nome",
+    "occorrenze_A": 39,
+    "occorrenze_B": 45,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "pg-campagna",
+    "dimensione": "png",
+    "descrizione": "I quattro PG della campagna",
+    "stato": "solo A",
+    "occorrenze_A": 13,
+    "occorrenze_B": 0,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md"
+    ],
+    "file_B": [],
+    "nota": ""
+   },
+   {
+    "id": "pg-pregenerati",
+    "dimensione": "png",
+    "descrizione": "I sei pregenerati",
+    "stato": "solo B",
+    "occorrenze_A": 0,
+    "occorrenze_B": 162,
+    "file_A": [],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "collezionista",
+    "dimensione": "png",
+    "descrizione": "Il Collezionista e i villain della campagna",
+    "stato": "solo A",
+    "occorrenze_A": 46,
+    "occorrenze_B": 0,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
+    ],
+    "file_B": [],
+    "nota": ""
+   },
+   {
+    "id": "fantino-nonna",
+    "dimensione": "png",
+    "descrizione": "Il Fantino della Nonna (spettro)",
+    "stato": "solo A",
+    "occorrenze_A": 1,
+    "occorrenze_B": 0,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
+    ],
+    "file_B": [],
+    "nota": ""
+   },
+   {
+    "id": "c-oca",
+    "dimensione": "contrade",
+    "descrizione": "Oca",
+    "stato": "stesso nome",
+    "occorrenze_A": 72,
+    "occorrenze_B": 50,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "c-torre",
+    "dimensione": "contrade",
+    "descrizione": "Torre",
+    "stato": "stesso nome",
+    "occorrenze_A": 64,
+    "occorrenze_B": 27,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-MAPPE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "c-bruco",
+    "dimensione": "contrade",
+    "descrizione": "Bruco",
+    "stato": "stesso nome",
+    "occorrenze_A": 44,
+    "occorrenze_B": 59,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "c-istrice",
+    "dimensione": "contrade",
+    "descrizione": "Istrice",
+    "stato": "stesso nome",
+    "occorrenze_A": 63,
+    "occorrenze_B": 65,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "c-drago",
+    "dimensione": "contrade",
+    "descrizione": "Drago",
+    "stato": "stesso nome",
+    "occorrenze_A": 53,
+    "occorrenze_B": 18,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "c-civetta",
+    "dimensione": "contrade",
+    "descrizione": "Civetta",
+    "stato": "stesso nome",
+    "occorrenze_A": 67,
+    "occorrenze_B": 23,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-MAPPE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "c-unicorno",
+    "dimensione": "contrade",
+    "descrizione": "Unicorno / Leocorno",
+    "stato": "stesso nome",
+    "occorrenze_A": 34,
+    "occorrenze_B": 21,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "c-onda",
+    "dimensione": "contrade",
+    "descrizione": "Onda",
+    "stato": "stesso nome",
+    "occorrenze_A": 60,
+    "occorrenze_B": 28,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-MAPPE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "dei",
+    "dimensione": "contrade",
+    "descrizione": "Divinità delle contrade",
+    "stato": "rinominato",
+    "occorrenze_A": 122,
+    "occorrenze_B": 29,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+    ],
+    "nota": "una a una, da Faerûn a Golarion"
+   },
+   {
+    "id": "motti",
+    "dimensione": "contrade",
+    "descrizione": "Gli otto motti del Palio",
+    "stato": "solo A",
+    "occorrenze_A": 28,
+    "occorrenze_B": 0,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
+    ],
+    "file_B": [],
+    "nota": "il Drappo li ha riscritti tutti"
+   },
+   {
+    "id": "rivalita",
+    "dimensione": "contrade",
+    "descrizione": "Mappa delle rivalità",
+    "stato": "stesso nome",
+    "occorrenze_A": 14,
+    "occorrenze_B": 2,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "stemmi-golarion",
+    "dimensione": "contrade",
+    "descrizione": "Stemmi della serie Golarion",
+    "stato": "stesso nome",
+    "occorrenze_A": 3,
+    "occorrenze_B": 2,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "morale",
+    "dimensione": "regole",
+    "descrizione": "Contatore del Morale",
+    "stato": "stesso nome",
+    "occorrenze_A": 62,
+    "occorrenze_B": 90,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/04-LUOGHI-E-INTRIGO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/05-INIZIAZIONE-E-EVENTI-PG.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "onore-fantino",
+    "dimensione": "regole",
+    "descrizione": "Contatore dell'Onore del Fantino",
+    "stato": "stesso nome",
+    "occorrenze_A": 5,
+    "occorrenze_B": 4,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/07-GUIDA-DM-PASSO-PASSO.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+    ],
+    "nota": "stessi due contatori 0-10 del Master del Palio §3.3"
+   },
+   {
+    "id": "sospetto",
+    "dimensione": "regole",
+    "descrizione": "Contatore Sospetto 0-5",
+    "stato": "solo A",
+    "occorrenze_A": 4,
+    "occorrenze_B": 0,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md"
+    ],
+    "file_B": [],
+    "nota": ""
+   },
+   {
+    "id": "influenza",
+    "dimensione": "regole",
+    "descrizione": "Influenza nei Partiti",
+    "stato": "solo A",
+    "occorrenze_A": 16,
+    "occorrenze_B": 0,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md"
+    ],
+    "file_B": [],
+    "nota": ""
+   },
+   {
+    "id": "skill-challenge",
+    "dimensione": "regole",
+    "descrizione": "Skill challenge",
+    "stato": "solo A",
+    "occorrenze_A": 7,
+    "occorrenze_B": 0,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md"
+    ],
+    "file_B": [],
+    "nota": ""
+   },
+   {
+    "id": "lunghezze",
+    "dimensione": "regole",
+    "descrizione": "Inseguimento a lunghezze",
+    "stato": "stesso nome",
+    "occorrenze_A": 14,
+    "occorrenze_B": 15,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "frusta",
+    "dimensione": "regole",
+    "descrizione": "Frustare gli avversari in corsa",
+    "stato": "rinominato",
+    "occorrenze_A": 40,
+    "occorrenze_B": 20,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-MAPPE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/06-VILLAIN-E-AGENDE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "scosso",
+    "dimensione": "regole",
+    "descrizione": "Il cavallo scosso può vincere",
+    "stato": "stesso nome",
+    "occorrenze_A": 28,
+    "occorrenze_B": 12,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/CONTRADE-DI-TARSILIA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/FASCICOLO-SCHEDE-GIOCATORE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "cadute",
+    "dimensione": "regole",
+    "descrizione": "Cadute di corsa",
+    "stato": "stesso nome",
+    "occorrenze_A": 13,
+    "occorrenze_B": 5,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-MAPPE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/10-DOSSIER-DELLE-PISTE.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-ALFA.md",
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "eventi-giro",
+    "dimensione": "regole",
+    "descrizione": "Eventi casuali di giro (d10)",
+    "stato": "solo A",
+    "occorrenze_A": 2,
+    "occorrenze_B": 0,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md"
+    ],
+    "file_B": [],
+    "nota": ""
+   },
+   {
+    "id": "bordo-pista",
+    "dimensione": "regole",
+    "descrizione": "Cosa fanno i PG che non corrono",
+    "stato": "rinominato",
+    "occorrenze_A": 4,
+    "occorrenze_B": 1,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md"
+    ],
+    "file_B": [
+     "STANDALONE-Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md"
+    ],
+    "nota": ""
+   },
+   {
+    "id": "cavaliere-ladro",
+    "dimensione": "regole",
+    "descrizione": "Fantino Cavaliere o Ladro",
+    "stato": "solo A",
+    "occorrenze_A": 7,
+    "occorrenze_B": 0,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
+    ],
+    "file_B": [],
+    "nota": ""
+   },
+   {
+    "id": "bomboloni",
+    "dimensione": "regole",
+    "descrizione": "Cavalli forti e deboli (bomboloni e brenne)",
+    "stato": "solo A",
+    "occorrenze_A": 26,
+    "occorrenze_B": 0,
+    "file_A": [
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md",
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md"
+    ],
+    "file_B": [],
+    "nota": ""
+   }
+  ],
+  "per_dimensione": {
+   "contrade": {
+    "stesso nome": 10,
+    "rinominato": 1,
+    "solo A": 1,
+    "solo B": 0,
+    "assente": 0,
+    "quota_condivisa": 0.917
+   },
+   "png": {
+    "stesso nome": 2,
+    "rinominato": 6,
+    "solo A": 3,
+    "solo B": 1,
+    "assente": 0,
+    "quota_condivisa": 0.667
+   },
+   "regole": {
+    "stesso nome": 5,
+    "rinominato": 2,
+    "solo A": 6,
+    "solo B": 0,
+    "assente": 0,
+    "quota_condivisa": 0.538
+   },
+   "scene": {
+    "stesso nome": 8,
+    "rinominato": 7,
+    "solo A": 3,
+    "solo B": 5,
+    "assente": 0,
+    "quota_condivisa": 0.652
+   },
+   "struttura": {
+    "stesso nome": 5,
+    "rinominato": 0,
+    "solo A": 4,
+    "solo B": 5,
+    "assente": 0,
+    "quota_condivisa": 0.357
+   }
+  }
+ }
+}

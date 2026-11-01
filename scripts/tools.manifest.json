@@ -11667,6 +11667,83 @@
       "optional_deps": [
         "pyyaml"
       ]
+    },
+    {
+      "id": "misura_derivazione",
+      "path": "scripts/misura_derivazione.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/misura_derivazione.py CORRISPONDENZE.json [--json OUT.json] [--md OUT.md]",
+      "summary": "Quanto due moduli sono lo stesso modulo, su due assi tenuti separati: il testo (6-grammi di parole, frasi quasi copiate, titoli e nomi propri in comune, automatico) e l'impianto (concetti di struttura, scene, PNG, contrade e regole dichiarati con le loro espressioni regolari in un JSON di corrispondenze, classificati come stesso nome, rinominato, solo A, solo B).",
+      "use_case": "«Il Drappo di Tarsilia è lo stesso modulo del Palio di Channathgate, e dove divergono?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "optional_deps": [],
+      "args": [
+        {
+          "name": "corrispondenze",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "JSON con i due corpus (schemi glob, esclusioni) e i concetti."
+        },
+        {
+          "name": "--json",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scrive la misura completa in JSON."
+        },
+        {
+          "name": "--md",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scrive il rapporto in Markdown; senza --json né --md lo stampa."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/esperimenti/drappo-palio-2026-11-01/corrispondenze.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "corpus vuoto"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Ordinamenti fissi: stesso ingresso, stessa uscita."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/misura_derivazione.py --help",
+      "tests": [
+        "scripts/tests/test_misura_derivazione.py"
+      ],
+      "docs": [
+        "plans/esperimenti/drappo-palio-2026-11-01/RAPPORTO.md",
+        "plans/PIANO-TRAVASO-DRAPPO-CAMPAGNA.md"
+      ]
     }
   ]
 }

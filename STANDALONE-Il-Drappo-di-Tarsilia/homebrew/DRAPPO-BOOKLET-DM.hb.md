@@ -434,8 +434,20 @@ semi già piantati sono questi — e sono semi, non capitoli scritti:
 Il sottosistema della corsa (contatori di morale, patti, Stacco, inseguimento a tre
 giri) è materiale originale dell'autore, sviluppato per l'arco *Il Palio di
 Channathgate* della campagna RumblingStone e qui **riscritto per PF1e e per una città
-che non sta nei Forgotten Realms**. Nomi, contrade, motti, PNG e trama di questo
-modulo sono nuovi. Il dettaglio legale sta in `IP-E-LICENZE.md`.
+che non sta nei Forgotten Realms**. Il testo è scritto da capo: nessuna frase viene dal
+Palio. Sono nuovi i motti, le livree, le divinità, i PNG e la città. Restano del Palio
+i **nomi delle otto contrade** (Unicorno diventa Leocorno), la sequenza delle scene
+delle tre giornate e i due contatori, Morale del Rione e Onore del Fantino.
+
+| | Palio di Channathgate | Questo modulo |
+|---|---|---|
+| Sistema e livello | 3.5, PG di 12°-13° della campagna | PF1e, sei pregenerati di 3° |
+| Posta | la Matrice del Mythal per l'assedio di Rethmar | l'Istrice accorpata se non arriva fra i primi tre |
+| Solo lì | prove d'ammissione, Sospetto, Influenza, eventi di giro | Peso di contrada, tavola di fuori, curva nord |
+
+La misura completa, ripetibile con uno script, è in
+`plans/esperimenti/drappo-palio-2026-11-01/RAPPORTO.md`. Il dettaglio legale sta in
+`IP-E-LICENZE.md`.
 
 
 \page

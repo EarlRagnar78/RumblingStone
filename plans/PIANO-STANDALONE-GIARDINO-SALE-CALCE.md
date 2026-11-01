@@ -1,6 +1,6 @@
 # PIANO — La stand alone della cisterna: «Il Giardino di Sale e Calce»
 
-> **Stato**: 🟡 aperto (2026-11-01). A0, A1 e A2 fatti; D1-D5 decise, D6 (canone o no) alla card · **Classe**: K (contenuto nuovo), con le tavole sulla catena delle mappe
+> **Stato**: 🟡 aperto (2026-11-01). fase A chiusa; D1-D6 decise: due moduli, 3.5 canonico sotto Rethmar e PF1e autonomo in Qasr al-Milah · **Classe**: K (contenuto nuovo), con le tavole sulla catena delle mappe
 > **Nasce da**: la richiesta del DM del 2026-11-01: *«aggiungere una altra stand alone nella folder delle stand alone […] prendendo tutti i dati e idee necessarie da questa chat di gemini e dai suoi documenti generati adattandosi e verificandone secondo il processo sviluppato finora per le altre stand alone per esempio la stand alone della abbazia»*.
 > **Sorgente**: la chat Gemini «One-shot D&D 3.5 e Pathfinder 1e» (creata il 2026-10-27, condivisa il 2026-11-01). Copia integrale e inventario in `/mnt/project-files/standalone-giardino-sale-calce/`, fuori dal repo: entra solo ciò che passa le verifiche.
 > **Decisioni collegate**: [ADR-0017](adr/ADR-0017-moduli-autoconclusivi-classe-di-artefatto.md) (i moduli autoconclusivi), [ADR-0103](adr/ADR-0103-le-regole-si-riscontrano-sull-srd-in-cache.md) (riscontro sull'SRD in cache), [ADR-0105](adr/ADR-0105-ogni-creatura-esce-nello-stesso-riquadro.md) (il riquadro delle creature), [ADR-0106](adr/ADR-0106-ogni-mappa-si-stampa-in-pianta.md) (ogni mappa in pianta).
@@ -21,14 +21,14 @@ Il materiale vale come traccia, non come modulo: tre aree e tre scontri, mappe s
 | D3 | Ampiezza | media: un atto breve in città e 12-16 aree nella cisterna su tre quote, una sessione di 6-7 ore | ✅ decisa dal DM il 2026-11-01 (card): la proposta |
 | D4 | Titolo | *Il Giardino di Sale e Calce* | ✅ decisa dal DM il 2026-11-01 (card): la proposta |
 | D5 | Il boss | aboleth SRD avanzato a conti, potenziato con la regola della versione più terrificante (3.5, poi PF1e, poi SRD), fonte segnata | ✅ decisa dal DM il 2026-11-01 (card): la proposta |
-| D6 | Canone: la versione 3.5 sotto Rethmar entra in ARC-09 (prima dell'assedio, con effetti su `state.md`) o resta una stand alone con un aggancio da usare se il DM vuole? | stand alone in `10-stand-alone/` con un riquadro d'aggancio ad ARC-09; `state.md` si tocca solo quando si gioca | card |
+| D6 | Canone: la versione 3.5 sotto Rethmar entra in ARC-09 o resta una stand alone? | stand alone con aggancio | ✅ decisa dal DM il 2026-11-01 (card, opzione C, non la proposta): **due moduli distinti**. La 3.5 è canonica, sotto Rethmar, prima dell'assedio, con Sonjak e Sal; la PF1e è autonoma, in Qasr al-Milah. Tutti e due stanno in `10-stand-alone/` |
 
 ## Fase A — Audit
 
 - [x] **A0** Inventario della chat e dei due PDF resi come testo (2026-11-01).
 - [x] **A1** Riscontro sull'SRD in cache di ogni regola, creatura e incantesimo citato (ADR-0103); tabella «idea della chat → regola 3.5 → fonte → scarto». Fatto il 2026-11-01: [A1-RISCONTRO-SRD](esperimenti/giardino-sale-calce-2026-11/A1-RISCONTRO-SRD.md).
 - [x] **A2** Le capacità dei quattro PG al 13° che toccano la cisterna (volo, scurovisione, forma selvatica, ki, invocazioni) da `campaign/state.yaml` e dalle schede, per tarare i pericoli senza annullarli. Fatto il 2026-11-01: [A2-CAPACITA-DEI-PG](esperimenti/giardino-sale-calce-2026-11/A2-CAPACITA-DEI-PG.md).
-- [ ] **A3** Budget: EL degli scontri e tesoro per livello del gruppo (DMG 3.5, tabella 5-1 e ricchezza per incontro).
+- [x] **A3** Budget: EL degli scontri e tesoro per livello del gruppo (DMG 3.5, tabella 5-1 e ricchezza per incontro). Fatto il 2026-11-01: [A3-BUDGET-EL-E-TESORO](esperimenti/giardino-sale-calce-2026-11/A3-BUDGET-EL-E-TESORO.md).
 
 ## Fase B — Scrittura
 
@@ -55,3 +55,4 @@ Il materiale vale come traccia, non come modulo: tre aree e tre scontri, mappe s
 | 2026-11-01 | Piano aperto. Chat letta per intero da link pubblico (il proxy del container la blocca, letta via servizio esterno); inventario e copia in `/mnt/project-files/standalone-giardino-sale-calce/`. D1-D5 alle card. |
 | 2026-11-01 | D5 e D1 decise alle card: boss a conti, sistema doppio 3.5 con note PF1e. A1 fatto: nessun numero della chat coincide con un'avanzata calcolata; cinque incantesimi di Tariq su tredici sbagliati. |
 | 2026-11-01 | D2-D4 decise: Rethmar per la 3.5 (legami con Sonjak e Sal), città inventata per la PF1e, ampiezza media, titolo della chat. A2 fatto: il monaco 3.5 non corre sui muri, la nebbia non deve togliere il volo ad Artemis, l'equipaggiamento di tre PG non è nel repo. D6 aperta. |
+| 2026-11-01 | D6 decisa: due moduli. A3 fatto: il tesoro della chat (circa 161.000 mo) è il doppio del budget SRD della sessione (63.000-100.000); l'aboleth avanzato a 24 DV fa GS 12 prima del Cuore. Fase A chiusa. |

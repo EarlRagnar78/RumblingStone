@@ -105,6 +105,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | A3: budget di EL e di tesoro; D6 decisa | ✅ due moduli separati; tesoro della chat circa 161.000 mo contro 63.000-100.000 del budget SRD; aboleth a 24 DV GS 12 prima del Cuore; fase A chiusa |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | A2: le capacità dei quattro PG nella cisterna; D2-D4 decise | ✅ 3.5 sotto Rethmar (Sonjak, Sal), PF1e in una città del deserto inventata; il monaco 3.5 non corre sui muri; equipaggiamento di tre PG assente dal repo; D6 (c… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | A1: riscontro sull'SRD in cache delle creature, di Tariq e delle regole d'ambie… | ✅ D1 (doppio 3.5/PF1e) e D5 (aboleth a conti) decise; nessun numero della chat coincide con un'avanzata; due creature con taglia sbagliata per i DV; 5 incantes… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | A0: inventario della chat Gemini e piano aperto | ✅ chat letta per intero, copia e inventario in project-files; cinque decisioni al DM (sistema, collocazione, ampiezza, titolo, boss) |
@@ -116,7 +117,6 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-10-29 | STANDARD-STAMPA | I6 primo cieco delle varianti | 🟡 box da leggere colorato scartato (4 a 0 per il riquadro); interlinea 1,08 contro 1,30 pari (2 a 2), resta 1,30 |
 | 2026-10-29 | STANDARD-STAMPA | D5 appendice delle creature, I3 schede che non si spezzano, I6 varianti e cieco… | 🟡 schede spezzate da 14 a 0, schede PG del Drappo fuori gabbia da 299 a 0; appendice in Typst, HTML e Homebrewery; 8 coppie cieche (interlinea 1,08 e box color… |
 | 2026-10-29 | STANDARD-STAMPA | A1 riferimenti AP, A2 prima misura di stampa | 🟡 `misura_stampa.py` in CI con tetti per booklet: 0 font non incorporati, 1.255 righe sotto 7 pt (etichette delle mappe), 222 immagini sotto 300 dpi, 14 riquad… |
-| 2026-10-29 | ADR-0105 · riquadro unico delle creatur… | conversione ARC-07 e Palio; misura per booklet con tetti | 🟡 da 4/79 a 50/88 schede nel riquadro; ARC-07 e Palio al 100%; Abbazia e Drappo in corso |
 
 ## Le misure che si portano dietro
 

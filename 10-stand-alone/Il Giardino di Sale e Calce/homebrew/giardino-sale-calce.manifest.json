@@ -25,6 +25,11 @@
       "title": "Appendice — Le creature e il Cuore",
       "file": "../appendice_creature.md",
       "tag": "dm"
+    },
+    {
+      "title": "Guida al tavolo",
+      "file": "../guida_al_tavolo.md",
+      "tag": "dm"
     }
   ]
 }

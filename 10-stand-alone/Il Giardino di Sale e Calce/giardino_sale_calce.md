@@ -149,6 +149,44 @@ L'aranea vive sopra la bottega dello speziale sul lato ovest della piazza, in fo
 | **Iven** | ragazzo del campo dei profughi, 14 anni | gli uomini-pesce sotto il ponte | indizio dell'ingresso B |
 | **Kesk Martellacqua** | capo della gilda degli acquaioli, umano popolano | che Tariq ha chiuso la cisterna «per lavori» e lo paga bene | non è complice, è avido: Intimidire o Diplomazia CD 18 e dice dei facchini nuovi. Se è nominato davanti al Consiglio, la gilda perde la cisterna |
 
+## Le leve dei PG
+
+Ogni PG ha nella cisterna almeno un punto in cui il gioco passa dalle sue mani. Le leve usano solo quello che il PG ha già, con le regole SRD o con le capacità degli artefatti già canone; dove una leva è una regola del modulo è scritto. Se un giocatore ne trova una migliore, vale la sua.
+
+### Thorik
+
+| La leva | Dove | Prova o costo | Cosa cambia |
+|---|---|---|---|
+| **Aegis Fang ferisce davvero Karkator.** Con la Corona, l'ascia fa 1d6 danni sacri in più, e la rigenerazione dell'aboleth non ferma il danno sacro | S1 | nessuna prova: basta colpire | è l'unico dei quattro che fa danno vero a ogni colpo. Karkator lo capisce al primo colpo e lo fa asservire o trascinare sott'acqua: Thorik diventa il bersaglio, e lo scontro si gioca attorno a lui |
+| **La teleferica.** Lancia l'ascia (ritorna) con una catena legata al manico fra due pilastri, e il gruppo passa sopra il vuoto | G1, G5 | tiro per colpire contro CA 10 del pilastro; Forza CD 20 per tendere la catena, un round | chi non vola attraversa le navate senza scendere fra i chuul. Una regola del modulo, costruita sull'ascia che ritorna |
+| **Il re riconosce l'anello.** Nel nido ovest c'è l'anello del clan del nano scomparso | G2 | Cercare CD 15 nel nido | non vale oro: vale la scena. Il re lo riporta alla famiglia, e il seguito nanico di Rethmar lo sa (Morale +1 fra i nani, a discrezione) |
+
+### Tordek
+
+| La leva | Dove | Prova o costo | Cosa cambia |
+|---|---|---|---|
+| **Ancoraggio della Montagna contro la gravità invertita.** I Bracieri lo rendono immune al movimento forzato due volte al giorno | S1, round 3 | azione immediata, uno dei due usi del giorno | in questo modulo vale anche contro l'*inversione della gravità* del Cuore: Tordek resta a terra mentre gli altri cadono sulla volta, ed è solo con Karkator per qualche round. Regola del modulo, da dire al giocatore quando la usa |
+| **Caduta lenta lungo le catene e i pilastri.** Scende 12 m senza danni se ha una parete o una catena a portata di mano | G1, T3 | nessuna | è il PG che arriva per primo dove il gruppo cade: dalle passerelle al ponte, giù per la tromba della chiocciola dietro a Tariq che fugge |
+| **Spezzare i perni del Cuore.** Il colpo senz'armi del monaco conta come arma magica e fa danni agli oggetti | S2 | due perni, durezza 10 e 30 pf ciascuno; oppure Forza CD 28 | stacca il Cuore senza toccarlo a mani nude: niente tentativo di *asservire* finché non lo prende qualcuno |
+
+### Hella
+
+| La leva | Dove | Prova o costo | Cosa cambia |
+|---|---|---|---|
+| **Calare l'acqua della vasca.** *Controllare acqua* abbassa la vasca centrale di sei metri: il sifone resta all'asciutto per la durata | G6, S1 | un incantesimo di 4° livello | il gruppo scende al Santuario senza nuotare nell'acqua di Karkator, e lui non sente arrivare nessuno. Nel Santuario, la stessa magia toglie all'aboleth metà della vasca |
+| **Seguirlo sott'acqua.** Forma selvatica acquatica o *respirare sott'acqua*, più *libertà di movimento* | S1 | gli incantesimi del giorno | è la sola che può andare a riprendere un compagno che Karkator trascina sul fondo. Il muco la tocca come gli altri (Tempra CD 31) |
+| **Santificare l'isolotto.** *Santificare* al posto del *consacrare* di Tredora | S2, dopo | un incantesimo di 5° livello e i suoi componenti | purifica il Cuore senza mettere in pericolo Tredora (scelta 1 dell'Atto III) |
+
+### Artemis
+
+| La leva | Dove | Prova o costo | Cosa cambia |
+|---|---|---|---|
+| **Vede dove gli altri non vedono.** L'Anello gli dà la scurovisione a 36 m e la vista nell'oscurità magica a 18 m | G1, S1 | nessuna | vede i ragni appena tornano nel Materiale e vede Karkator nel buio che lui crea. Per questo il ragno ovest e l'aboleth lo puntano per primi: Artemis è il motivo per cui i nemici cambiano piano |
+| **Il volatore che fa da esca.** Vola a 18 m con le Ali d'Ombra | G1 | nessuna, ma rischia le catene e la risonanza (GS-S2) | tiene i ragni lontani dagli altri due round. Se lo ancorano resta appeso, non cade: gli altri devono andare a prenderlo |
+| **Sintonizzarsi col Cuore.** Sente cosa c'è dall'altra parte | S2 | Sapienza Magica o Utilizzare Oggetti Magici CD 28 | è la scelta 3 dell'Atto III, e ha un prezzo: un patto con qualcosa che ascolta nel Piano dell'Acqua |
+
+**Quello che il repo non dice.** Le schede non registrano oggetti di volo o di respirazione acquatica per Thorik, Tordek e Hella, né le CD esatte di Artemis. Prima della serata chiedilo ai giocatori: se qualcuno ha un oggetto che salta una leva, la leva resta e il pericolo che evita è un pericolo in meno.
+
 ## Atto I — Rethmar ha sete
 
 **Obiettivo dell'atto:** i PG devono uscirne sapendo che l'acqua è corrotta da qualcosa che sta sotto la piazza, e avendo trovato almeno un ingresso. Da 60 a 90 minuti.

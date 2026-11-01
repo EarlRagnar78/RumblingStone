@@ -7,7 +7,7 @@
 **Party:** i quattro PG della campagna al 13° livello: Thorik, Tordek, Hella e Artemis (decisione D7 del DM: Hella c'è, anche se nel canone in quel momento è morta)
 **EL:** 12-17
 **Durata:** una sessione lunga (6-7 h) o due sedute
-**Aree:** tre ingressi e 14 aree su quattro livelli, più la città
+**Aree:** tre ingressi e 19 aree su quattro livelli (da A1 a S2), più la città
 **Quando:** fra il Giorno 28 e il Giorno 38 del March Clock, prima che l'orda arrivi davanti a Rethmar (Giorno 42)
 **Tono:** orrore acquatico, indagine in una città che si prepara alla guerra, scelte che contano per l'assedio
 }}
@@ -24,9 +24,9 @@ Tre padroni la vogliono, e nessuno si fida degli altri due.
 
 - **Sonjak**, la matrona drow, vuole una strada sotto le mura per la Notte dei Drow e una città assetata per l'assalto. Dalla galleria di drenaggio sul fondo della cisterna i suoi schiavi scavano da sei settimane un tunnel che arriva ai campi drow sotto la linea di Rethmar.
 - **Il Collezionista** vuole il **Cuore di Selenite**, una gemma del Piano dell'Acqua strappata a un santuario del Sottosuolo. Il Cuore cresce solo dentro una sorgente salata sotto una città viva, e la cisterna di Tariq ne aveva una, murata dai Calishiti: il **Santuario di Sale**.
-- **Karkator**, l'aboleth mezzo-immondo uscito dagli esperimenti di Sonjak sulle aberrazioni, vuole quello che vuole ogni aboleth: una città di schiavi. Il Cuore lo nutre e gli dà potere sull'acqua, e lui usa l'acqua per asservire chi la beve.
+- **Karkator**, un aboleth che i Calishiti murarono nella sorgente quattro secoli fa e che i rituali di Sonjak sulle aberrazioni hanno reso mezzo-immondo, vuole quello che vuole ogni aboleth: una città di schiavi. Il Cuore lo nutre e gli dà potere sull'acqua, e lui usa l'acqua per asservire chi la beve.
 
-In mezzo c'è **Sal**, Salvatore della Luna d'Argento, l'agente di superficie di Sonjak e del Collezionista. Ha comprato Tariq, che invecchiando si era votato in segreto a **Umberlee**, con la promessa che la dea gli avrebbe lasciato la sua opera più grande. Tariq ha riaperto il Santuario, ci ha portato Karkator, ha messo il Cuore nei perni di bronzo e da allora fa sfogare la cisterna verso il fiume perché la città non si accorga di quanto ne manca.
+In mezzo c'è **Sal**, Salvatore della Luna d'Argento, l'agente di superficie di Sonjak e del Collezionista. Ha comprato Tariq, che invecchiando si era votato in segreto a **Umberlee**, con la promessa che la dea gli avrebbe lasciato la sua opera più grande. Tariq ha riaperto il Santuario, ha liberato Karkator, ha messo il Cuore nei perni di bronzo e da allora fa sfogare la cisterna verso il fiume perché la città non si accorga di quanto ne manca.
 
 **I PG possono vincere senza combattere tutti.** Sonjak vuole il tunnel e del Cuore non le importa; il Collezionista vuole il Cuore e il tunnel lo considera un rischio; Karkator obbedisce a chi lo nutre, e Tariq teme Karkator più di Sal. Chi lo capisce può mettere uno contro l'altro.
 
@@ -136,7 +136,7 @@ Non scende nella cisterna e non combatte qui. Ma è dappertutto: paga il sacrest
 
 ### Mira Serani, la spia del Collezionista
 
-L'aranea vive sopra la bottega dello speziale sul lato ovest della piazza, in forma umana, e da lì guarda il pozzo grande. Non interviene mai. Riferisce: se vede i PG scendere, il Collezionista lo sa prima di sera, e se i PG risalgono con il Cuore, Mira li segue. Se la scoprono, vale quello che il Bestiario dice di lei.
+L'aranea vive sopra la bottega dello speziale sul lato ovest della piazza, in forma umana, e da lì guarda il pozzo grande. Non interviene mai. Riferisce: se vede i PG scendere, il Collezionista lo sa prima di sera, e se i PG risalgono con il Cuore, Mira li segue. In forma umana è una donna sui quarant'anni, minuta, con le dita macchiate di henné e una voce bassa che non alza mai; parla lenta, ripete l'ultima parola di chi le parla. In forma vera è un ragno grande come un cane. Se la scoprono non combatte: tratta, e se non basta fugge dalla finestra (aranea SRD, GS 4, con gli incantesimi da stregone).
 
 ### Gli altri
 
@@ -187,7 +187,7 @@ Ogni PG ha nella cisterna almeno un punto in cui il gioco passa dalle sue mani. 
 
 **Contro Karkator la magia di Hella e di Artemis non morde.** L'aboleth ha RI 34 e loro lanciano al LI 13: il blast, il *Rovo Eldritch* e gli incantesimi d'attacco non lo toccano. Funzionano *controllare acqua*, *santificare*, le evocazioni, la Trinità, il *Dono dell'Unità* e *Ombra di Mask* su Thorik. Il conto completo è nella simulazione degli scontri che accompagna il modulo.
 
-**Quello che il repo non dice.** Le schede non registrano oggetti di volo o di respirazione acquatica per Thorik, Tordek e Hella, né le CD esatte di Artemis. Prima della serata chiedilo ai giocatori: se qualcuno ha un oggetto che salta una leva, la leva resta e il pericolo che evita è un pericolo in meno.
+**Quello che le schede non dicono.** Le schede non registrano oggetti di volo o di respirazione acquatica per Thorik, Tordek e Hella, né le CD esatte di Artemis. Prima della serata chiedilo ai giocatori: se qualcuno ha un oggetto che salta una leva, la leva resta e il pericolo che evita è un pericolo in meno.
 
 ## Atto I — Rethmar ha sete
 
@@ -233,7 +233,7 @@ Rethmar a due settimane dall'assedio: carri di pietre verso le mura, ragazzi che
 > *I muti stanno seduti in fila contro il muro della baracca, le mani in grembo. Respirano piano, con la bocca un poco aperta. Una donna ha le guance bagnate, ma non piange: è la pelle che suda acqua. Quando passi le guardano tutti nello stesso momento, e nello stesso momento distolgono gli occhi.*
 
 {{note
-**Curare i muti adesso.** Il muco li sta trasformando lentamente: chi beve l'acqua corrotta fa un TS su Tempra CD 15 al giorno (la corruzione nell'acqua è diluita, non è il muco a contatto), e dopo tre fallimenti è asservito a Karkator finché lui vive o finché non gli si lancia *rimuovi maledizione* (CD 31 per la prova di livello dell'incantatore, perché la fonte è il muco di Karkator) o *guarigione*. **Regola del modulo**, costruita sul muco dell'SRD. Uccidere Karkator libera tutti gli asserviti entro un giorno; staccare il Cuore ferma la corruzione dell'acqua.
+**Curare i muti adesso.** Il muco li sta trasformando lentamente: chi beve l'acqua corrotta fa un TS su Tempra CD 15 al giorno (la corruzione nell'acqua è diluita, non è il muco a contatto), e dopo tre fallimenti è asservito a Karkator. L'asservito ha il nuovo TS dell'SRD ogni 24 ore solo se smette di bere quell'acqua (se la beve, il TS non c'è); altrimenti resta asservito finché Karkator vive o finché non gli si lancia *rimuovi maledizione* (CD 31 per la prova di livello dell'incantatore, perché la fonte è il muco di Karkator) o *guarigione*. **Regola del modulo**, costruita sul muco dell'SRD. Uccidere Karkator libera tutti gli asserviti entro un giorno; staccare il Cuore ferma la corruzione dell'acqua.
 }}
 
 ## Atto II — La Grande Cisterna
@@ -262,7 +262,7 @@ Si entra nuotando (Nuotare CD 15 nella corrente del Cannath) o calandosi dal pil
 
 **La paratoia.** Chiuderla (Forza CD 18, 2 round all'argano) ferma lo sfogo: in tre giorni l'acqua della città torna a salire. Tariq se ne accorge entro un'ora e la Torre si allerta.
 
-**I drow.** Se il clock di Sonjak è a 5 o più, due esploratori drow stanno sulla banchina e fuggono nella galleria al primo segno dei PG: non combattono. Prenderne uno vivo (sono ranger 6, con *oscurità* e la velocità dei drow) è una caccia, non uno scontro, e vale la scelta 12.
+**I drow.** Se il clock di Sonjak è a 5 o più, due esploratori drow stanno sulla banchina e fuggono nella galleria al primo segno dei PG: non combattono. Prenderne uno vivo (sono ranger 6, con *oscurità* e la velocità dei drow) è una caccia, non uno scontro, e vale la scelta 11: i prigionieri drow parlano.
 
 ### B2 · La galleria di drenaggio (GS-6)
 
@@ -284,7 +284,7 @@ Vedi l'Atto I. Scendere di giorno vuol dire farlo davanti a cinquanta persone; d
 
 ### C2 · La gabbia
 
-Una gabbia di ferro per quattro persone, calata dall'argano per sei metri attraverso la volta. Arriva al centro delle passerelle alte (G1). **Il rischio:** se i facchini di Sal sono in piazza e i PG scendono senza averli tolti di mezzo, uno di loro taglia la fune a metà discesa (vedi la mappa).
+Una gabbia di ferro per quattro persone, calata dall'argano per sei metri attraverso la volta. Arriva al centro delle passerelle alte (G1). **Il rischio:** se i facchini di Sal sono in piazza e i PG scendono senza averli tolti di mezzo, di giorno o di notte, uno di loro taglia la fune a metà discesa. La gabbia cade per tre metri sulle passerelle (1d6 a chi è dentro) e si incastra; chi era aggrappato fuori fa un TS su Riflessi CD 15 o cade fino all'acqua, 15 m sotto (5d6, dimezzati dall'acqua profonda).
 
 ### G1 · Le passerelle alte (GS-2)
 
@@ -308,7 +308,7 @@ Il ponte è lungo 39 m dal cornicione ovest alla porta della Torre ed è sotto l
 
 ### G5 · Le navate allagate
 
-Un metro d'acqua sul fondo, banchi di sale affiorati, e dodici asserviti che raschiano il sale dalle pareti perché Karkator lo vuole. **Incontro facoltativo (EL 12):** tre chuul avanzati sott'acqua. Salgono solo su chi scende dal ponte o ci cade. Gli asserviti non combattono; liberarli e portarli su è la scelta 8, ed è il conflitto della scena.
+Un metro d'acqua sul fondo, banchi di sale affiorati, e dodici asserviti che raschiano il sale dalle pareti perché Karkator lo vuole. **Incontro facoltativo (EL 12):** tre chuul avanzati sott'acqua. Salgono solo su chi scende dal ponte o ci cade. Gli asserviti non combattono. Portarli su è la scelta 8, ed è il conflitto della scena: non si oppongono, ma Karkator li richiama ogni ora e tornano verso l'acqua finché non li libera *rimuovi maledizione* o la sua morte. Portarli fuori vuol dire passare in mezzo ai chuul con dodici persone che non aiutano, oppure lasciarli lì e tornare dopo.
 
 ### G6 · La vasca centrale
 
@@ -322,9 +322,13 @@ Sul ponte nord, sopra le bocche che portano l'acqua alle fontane della città. T
 
 > *Dentro la Torre fa caldo e c'è odore di olio e di calce. Sui tavoli ci sono modelli di chiuse in ottone grandi come un bambino, disegni fissati con i chiodi, un compasso lungo un braccio. Nel mezzo la scala a chiocciola sprofonda in un pozzo di luce verde. Un uomo piccolo con la barba rossa si alza dallo scrittoio e si pulisce le mani sul grembiule, come un artigiano interrotto.*
 
-**Incontro (EL 15):** Mastro Tariq e due skum guerriero 8. Le tattiche e gli stati sono sulla mappa. **Chi arriva da A** entra dalla porta, nel pieno dell'officina. **Chi arriva da B** sale la scala a chiocciola dal Santuario e prende Tariq alle spalle; ma allora Karkator è già sveglio. **Chi arriva da C** ha fatto rumore con i ragni, e la Torre è allertata.
+**Incontro (EL 15):** Mastro Tariq e due skum guerriero 8.
 
-**Parlare con Tariq.** Funziona solo prima che cominci lo scontro o quando è sotto la metà dei pf. Vedi la leva nel cast.
+**La Torre tranquilla o allertata.** È allertata se Fratello Odo ha avvisato (il ragazzo di Odo ci mette un'ora dalla Cattedrale), se i ragni sono fuggiti, se i chuul hanno combattuto o se qualcuno ha mosso una paratoia. *Tranquilla*: Tariq è allo scrittoio e gli skum ai lati della porta, con addosso solo le due *veste magica* dell'alba. *Allertata*: Tariq ha già lanciato *resistenza agli incantesimi*, *libertà di movimento*, *giusto potere* e *camminare nell'aria* e aspetta dietro la tromba della scala; due skum di vedetta stanno sul terrazzo a +12 m. In più Tariq ha avvisato Karkator, che al Santuario sarà pronto.
+
+**Round per round.** Round 1: *barriera di lame* (15d6, Riflessi CD 22 dimezza) fra la porta e la tromba, per spezzare il gruppo; gli skum spingono chi passa verso la tromba (Spingere Migliorato; chi ci cade prende 6d6, vedi T3). Round 2: *blasfemia* se almeno due PG sono a portata (al LI 13 i PG di 13 DV restano storditi un round), altrimenti *dissolvi magie superiore* sul volatore. Dal round 3: *ferire* sul guerriero più vicino, *colpo infuocato* sui gruppi. Sotto i 30 pf Tariq scende la tromba con *camminare nell'aria* e grida il nome di Karkator: arriva al Santuario in due round, e lo scontro finale sale di un EL. **Chi arriva da A** entra dalla porta, nel pieno dell'officina. **Chi arriva da B** sale la scala a chiocciola dal Santuario e prende Tariq alle spalle; ma allora Karkator è già sveglio. **Chi arriva da C** ha fatto rumore con i ragni, e la Torre è allertata.
+
+**Parlare con Tariq.** Funziona solo prima che cominci lo scontro o quando è sotto la metà dei pf. Vedi la leva nel cast. La prova dello scavo non serve andarla a prendere in B3: sullo scaffale delle carte dell'officina ci sono i disegni della galleria verso il Sottosuolo, e con **Conoscenze (architettura e ingegneria) CD 20** ci si legge che lo scavo dei drow passa sotto la fondazione della vasca.
 
 ### T2 · Lo studio di Tariq
 
@@ -347,13 +351,21 @@ Diciotto metri di scala di pietra attorno a un pozzo aperto, fino al Santuario. 
 
 > *La scala finisce in una grotta bianca. Le pareti sono sale, sale puro, cresciuto in colonne e in ventagli che riflettono una luce verde e fredda. La luce viene dal centro di una vasca immobile, da una pietra grande come un cuore umano incastrata in un isolotto di cristallo. L'acqua della vasca non ha onde. Poi ne ha una, lunghissima, che parte dal centro e arriva fino ai tuoi piedi. Qualcosa sotto si è voltato.*
 
-**Incontro (EL 16, 17 con Tariq):** Karkator e quattro asserviti armati. Tattiche, gravità invertita e Cuore sono sulla mappa.
+**Incontro (EL 16, 17 con Tariq):** Karkator e quattro asserviti armati.
+
+**Karkator avvisato o no.** È avvisato se la Torre era allertata, se Tariq è fuggito da lui o se qualcuno ha toccato l'acqua della vasca o delle navate di sopra, perché la sente. Avvisato, ha già addosso *aura sacrilega* (CA 28) quando i PG entrano. Non avvisato, il round di sorpresa è dei PG, e al primo round Karkator lancia l'aura invece di *asservire*: chi arriva da B dalla galleria di drenaggio senza toccare l'acqua di sopra lo trova così.
+
+**Round per round.** Round 1: *asservire* (Volontà CD 29) sul combattente più forte. *Mente vuota* lo rende immune, e Karkator se ne accorge: al round dopo sceglie un altro. Round 2: *blasfemia* (LI 16: chi è entro 12 m ed è di 13 DV resta stordito un round e perde 2d6 di Forza per 2d4 round) o *avvizzimento orrendo* (16d6, Tempra CD 23 dimezza) se i PG sono sparsi. Round 3: *inversione della gravità*. Poi tentacoli: con una prova di lotta trascina un PG sott'acqua, dove il muco (Tempra CD 31) gli toglie l'aria.
+
+**La gravità invertita.** Una volta al giorno, dal Cuore, al LI 15: fino a sette cubi di 3 m sulla riva e sull'isolotto. La vasca resta fuori, quindi l'acqua rimane dov'è. Dura fino a 15 round, e Karkator la congeda quando vuole, purché resti entro 18 m dal Cuore. Chi è nell'area cade verso la volta della grotta, 11 m più su (la volta è a −1, il pavimento a −12), e prende 3d6; altrettanti quando la gravità torna, salvo chi ricade nella vasca. Con un TS su Riflessi CD 20 ci si aggrappa a una colonna di sale e si resta dove si è. Chi vola non cade; la caduta lenta dimezza.
+
+**Come finisce.** Finché il Cuore è nei perni, ogni danno che non sia fuoco o sacro è non letale, e a ogni suo turno la rigenerazione ne toglie 15. Karkator sviene quando il non letale accumulato supera i pf che gli restano, e fugge nella galleria di drenaggio quando il non letale accumulato arriva a 260 (l'80% dei suoi 324 pf). Se i perni sono rotti o il Cuore è a più di 18 m la rigenerazione finisce: il danno torna letale, e lui fugge sotto i 65 pf. Se fugge con i perni interi si porta via il Cuore.
 
 **Chi arriva da A o da C** ha già combattuto Tariq, e Karkator lo sa. **Chi arriva da B** sale la rampa dalla galleria di drenaggio e prende l'aboleth dal lato meno difeso, lontano dall'isolotto; ma se Tariq è ancora vivo, scende la scala al secondo round.
 
 ### S2 · Il Cuore di Selenite
 
-Il Cuore è incastrato in quattro perni di bronzo calishita sull'isolotto. Staccarlo: rompere due perni di bronzo vecchio (durezza 5, 20 pf ciascuno) o una prova di Forza CD 24. È la chiave dello scontro: senza il Cuore, Karkator perde rigenerazione, volo e *armatura magica*. Chi lo tiene in mano subisce ogni round un tentativo di *asservire* di Karkator (Volontà CD 29) finché l'aboleth vive.
+Il Cuore è incastrato in quattro perni di bronzo calishita sull'isolotto. Staccarlo: rompere due perni di bronzo vecchio (durezza 5, 20 pf ciascuno) o una prova di Forza CD 24. È la chiave dello scontro: senza il Cuore, Karkator perde la rigenerazione, il volo buono (gli restano 3 m in volo mediocre) e l'*armatura magica*. Chi lo tiene in mano subisce ogni round un tentativo di *asservire* di Karkator (Volontà CD 29) finché l'aboleth vive. È un'eccezione del Cuore: questi tentativi non contano nei tre al giorno e valgono a qualunque distanza fino a 1,5 km.
 
 > *Il Cuore è caldo. È l'unica cosa calda di tutta la grotta. Dentro, nella luce verde, si muove qualcosa che sembra acqua e non lo è, e da lì viene un rumore lontano di risacca: un mare che nessuno di voi ha mai visto, senza rive.*
 
@@ -363,14 +375,22 @@ Lo scontro con Karkator finisce in tre modi: muore, fugge nella galleria verso i
 
 | Scelta | Come | Cosa costa | Cosa dà |
 |---|---|---|---|
-| **Purificarlo** (scelta 1) | Tredora o un chierico buono: *consacrare* sull'isolotto, poi un'ora di preghiera all'alba; Hella con *santificare*. Senza Tredora, Sapienza Magica CD 25 per capire come | un'ora e un incantatore disposto; il Collezionista lo saprà | il Cuore diventa un oggetto meraviglioso (appendice); la cisterna è pulita in un giorno |
+| **Purificarlo** (scelta 1) | Tredora o un chierico buono: *consacrare* sul Cuore, poi un'ora di preghiera all'alba. Tredora non scende oltre la soglia: o il Cuore lo staccano e glielo portano alla Cattedrale, o lo fa un altro sull'isolotto; Hella con *santificare*. Senza Tredora, Sapienza Magica CD 25 per capire come | un'ora e un incantatore disposto; il Collezionista lo saprà | il Cuore diventa un oggetto meraviglioso (appendice); la cisterna è pulita in un giorno |
 | **Distruggerlo** (scelta 2) | durezza 20, 80 pf, o *disgiunzione* | niente, se non il valore | la cisterna è pulita in 24 ore; il Collezionista perde il premio per sempre |
-| **Tenerlo corrotto** (scelta 3) | Artemis si sintonizza: Sapienza Magica o Utilizzare Oggetti Magici CD 28 | un patto con qualcosa che ascolta nel Piano dell'Acqua. Ogni uso fa sentire il Cuore a Sonjak | un'arma per l'assedio: una volta, *inversione della gravità* su un settore |
-| **Darlo al Collezionista** | Mira Serani lo chiede, con una contropartita | il Collezionista avanza di 1 il suo clock e ha quello che voleva | un favore: il Collezionista lascia stare per una fase il Conte Valerius o un altro fronte che il DM sceglie |
+| **Tenerlo corrotto** (scelta 3) | Artemis si sintonizza: Sapienza Magica o Utilizzare Oggetti Magici CD 28 | un patto con qualcosa che ascolta nel Piano dell'Acqua. Ogni uso fa sentire il Cuore a Sonjak | un'arma per l'assedio: *inversione della gravità* una volta per settimana, cioè una volta nell'assedio, su un settore |
+| **Darlo al Collezionista** (scelta 16) | Mira Serani lo chiede, con una contropartita | il Collezionista avanza di 1 il suo clock e ha quello che voleva | un favore: il Collezionista lascia stare per una fase il Conte Valerius o un altro fronte che il DM sceglie |
 
 ## Le conseguenze sull'assedio
 
 Le scelte dei PG entrano nell'assedio di Rethmar attraverso i contatori che ARC-09 ha già. Ogni riga dice cosa cambia per i difensori e cosa per gli attaccanti; i valori si sommano a quelli della matrice degli esiti e del Morale Cittadino.
+
+{{note
+**I contatori che il modulo muove, con le scale di ARC-09.**
+- **Morale Cittadino**, da 0 a 10, parte a 5. A 7 o più: 150 miliziani volontari in più, Fronte +1, +1 ai check di Morale per ondata. Da 4 a 6: niente. A 3 o meno: Fronte −1 e −1 ai check. A 0 un quartiere si arrende da solo.
+- **Fronte**, nascosto ai giocatori: parte dal valore dello scenario (peggiore 2, base 3, medio 4, ottimale 6, leggendario 7). A ogni ondata i difensori tirano 1d20 + Fronte contro CD 15, 20 o 25; se falliscono un settore cede e il Fronte scende di 1.
+- **Clock di Sonjak** 4/8: a 8 la Notte dei Drow parte con tutte le sue ondate. **Clock di Sal** 0/6: a 6 l'Olio del Sabotaggio è sulle armi dei PG. **Clock del Collezionista** 5/8. **Clock di Zin'thara**: quello del suo volume. Sono i valori dello stato della campagna al Giorno 30; segna quelli della tua serata.
+- **Le Fasi**: 0 è la Notte dei Drow, 1 le ondate sulle mura, 2-4 le crisi dell'assedio fino alle statue di Varis.
+}}
 
 | # | Scelta | Difensori | Attaccanti |
 |---|---|---|---|
@@ -381,14 +401,15 @@ Le scelte dei PG entrano nell'assedio di Rethmar attraverso i contatori che ARC-
 | 5 | Tenere tutto segreto | nessun malus subito; se falliscono, al Giorno 40 Morale −2 invece di −1 | — |
 | 6 | Catturare Tariq vivo e portarlo al Consiglio | Morale +1. Tariq sa dell'Olio del Sabotaggio di Sal: se i PG agiscono, il trigger del clock di Sal non scatta | Sal capisce di essere scoperto: la consegna delle statue a Varis (Fase 4) scatta un giorno prima |
 | 7 | Uccidere Tariq | nessuna testimonianza; le chiuse vanno riparate (un giorno, Conoscenze (architettura e ingegneria) CD 25) | — |
-| 8 | Curare gli asserviti | 150 miliziani di nuovo in forza nel contingente della guarnigione; Morale +1 | — |
-| 9 | Lasciare gli asserviti al loro destino | la guarnigione perde 150 uomini; Morale −1 se si sa | nella Notte dei Drow gli asserviti aprono la poterna: un settore parte già in breccia |
+| 8 | Curare gli asserviti (i 44 della cisterna e i circa 100 che in città hanno bevuto e ubbidiscono senza saperlo, i venti muti sono i più avanti; li libera *rimuovi maledizione*, la morte di Karkator o il Cuore purificato entro il Giorno 40) | 150 miliziani di nuovo in forza nel contingente della guarnigione; Morale +1 | — |
+| 9 | Lasciare gli asserviti al loro destino (Karkator vivo e il Cuore acceso al Giorno 40) | la guarnigione perde 150 uomini; Morale −1 se si sa | nella Notte dei Drow gli asserviti aprono la poterna: un settore parte già in breccia |
 | 10 | Murare o far crollare lo scavo dei drow | sabotaggio drow +1 (una strada in meno per la Fase 0) | la Notte dei Drow perde un'ondata |
 | 11 | Lasciare lo scavo aperto e tendere un'imboscata | se riesce, sabotaggio drow +2 e i prigionieri drow parlano | se fallisce, la cisterna è la testa di ponte della Fase 0 sotto il Mercato del Ponte |
 | 12 | Leggere le carte dello studio | prove dei traffici fra Sonjak e il Collezionista: il clock di Zin'thara sale di 2 | — |
 | 13 | Lasciare vivi i Ragni delle Catene | — | nella Notte dei Drow i ragni escono dai pozzi di luce: un assassinio automatico su un comandante |
 | 14 | Lasciar fuggire Karkator | — | in Fase 2 Karkator è il centro di un rituale di Sonjak: una carta evento in più, GS 16 |
 | 15 | Il tempo | ogni giorno nella cisterna è un giorno di March Clock | — |
+| 16 | Dare il Cuore al Collezionista | il Collezionista lascia stare per una fase il Conte Valerius o un altro fronte che il DM sceglie | il clock del Collezionista sale di 1; Sonjak non lo sa, e la Notte dei Drow non cambia |
 
 **Se al Giorno 40 il Cuore è ancora acceso** valgono la riga del Morale «cisterne avvelenate non risolte» (−1), il Fronte −1 e la riga 9. **Il risultato migliore** (Cuore purificato, Tariq catturato, scavo chiuso o imboscata riuscita, asserviti curati) dà Fronte +1, Morale da +3 a +4, 150 uomini e sabotaggio drow 2: da solo non cambia lo scenario dell'assedio, ma sposta quello medio verso l'ottimale insieme alle altre quest.
 
@@ -427,8 +448,8 @@ Se il Cuore viene distrutto o dato via il totale scende a circa 76.500, dentro i
 |---|---|---|---|
 | **Karkator è un muro** | rigenerazione 15, RD 10/magia, RI 34: il gruppo lo colpisce e non scende | il Cuore è ancora nei perni | la luce verde dalla scala, la rigenerazione che si vede, Tariq che lo dice: tre semine. Se il tavolo non ci arriva, Karkator si allontana dall'isolotto per inseguire un PG e la rigenerazione si spegne oltre i 18 m |
 | **Annegamento a catena** | un PG paralizzato o asservito finisce sott'acqua e muore in tre round | chuul e tentacoli di Karkator in acqua profonda | Hella con *libertà di movimento* e forma acquatica; *respirare sott'acqua* nell'equipaggiamento. Chiedi al tavolo prima di scendere chi può respirare in acqua (A2: il repo non lo dice) |
-| **Gravità invertita** | quattro PG sulla volta e Karkator sotto | il potere del Cuore al round 3 | dura finché Karkator la tiene, ma lui deve restare entro 18 m dal Cuore; Artemis vola e non cade, Tordek dimezza con la caduta lenta |
-| **L'atto in città dura troppo** | due ore di indagine e la cisterna a mezzanotte | troppi PNG | Brenna ha già la risposta per l'ingresso C. Se dopo 60 minuti i PG non hanno un ingresso, Tredora manda a chiamarli |
+| **Gravità invertita** | quattro PG sulla volta e Karkator sotto | il potere del Cuore al round 3 | dura finché Karkator la tiene, ma lui deve restare entro 18 m dal Cuore; Artemis vola e non cade; Tordek resta a terra solo con l'Ancoraggio restituito, altrimenti la caduta lenta del monaco dimezza i danni se ha una colonna a portata |
+| **L'atto in città dura troppo** | due ore di indagine e la cisterna a mezzanotte | troppi PNG | Brenna ha già la risposta per l'ingresso C. Se dopo 60 minuti i PG non hanno un ingresso, Brenna li manda alla Cattedrale da Tredora |
 | **Tredora muore** | la Cattedrale perde la sua chierica a due settimane dall'assedio | i PG la portano nello scontro | Tredora si ferma sul ponte ovest e lo dice. Se la portano oltre, il costo è nella sua scheda (−2 Morale se cade in pubblico) |
 | **I PG ignorano lo scavo** | la galleria resta, e nessuno ha deciso | lo scavo sembra decorazione | il capomastro drow che fugge, l'anello del clan, le carte: il tunnel deve diventare la domanda «e adesso?». Se non ci arrivano, è la scelta 11 fallita per omissione |
 

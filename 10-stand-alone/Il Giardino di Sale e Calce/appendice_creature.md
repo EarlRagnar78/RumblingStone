@@ -14,9 +14,9 @@ pf: 324
 pf-dado: 24d8+216
 ts: Temp +17, Rifl +12, Vol +19 (+4 con aura sacrilega)
 attributi: For 38 Des 14 Cos 28 Int 19 Sag 17 Car 21
-velocita: 3 m, nuotare 18 m, volare 3 m (media); volare 9 m (buona) con il Cuore
+velocita: 3 m, nuotare 18 m, volare 3 m (media, le ali bastano appena a sollevarlo dall'acqua); volare 9 m (buona) con il Cuore
 iniziativa: +6
-sensi: scurovisione 18 m
+sensi: scurovisione 18 m, Ascoltare +32, Osservare +32
 attacchi:
   - 4 tentacoli +28 (2d6+14 più muco)
   - 2 artigli +28 (2d6+14)
@@ -36,7 +36,7 @@ attacchi:
 - **Capacità magiche del mezzo-immondo** (LI 16°, come gli psionici; l'SRD direbbe LI 24°, e al LI 24° la *blasfemia* uccide senza tiro salvezza i PG di 13°: **regola del modulo**, dalla simulazione degli scontri): *oscurità* 3/giorno, *aura sacrilega* 3/giorno (già addosso solo se è stato avvisato), *veleno* 3/giorno (CD 19); una volta al giorno *dissacrare*, *flagello sacrilego* (19), *contagio* (18), *blasfemia* (22), *profanare*, *avvizzimento orrendo* (23), *evoca mostri IX* (solo immondi), *distruzione* (22). *Punire il bene* 1/giorno (+20 danni).
 - **Il Cuore di Selenite** (finché è nei perni e Karkator è entro 18 m): rigenerazione 15, *armatura magica* permanente, volo 9 m buono, una volta al giorno *inversione della gravità* (LI 15°). **Regola del modulo.** Senza il Cuore torna GS 15.
 
-**Tattiche** Sono sulla mappa GS-5. In breve: *asservire* il combattente più forte, *blasfemia* o *avvizzimento orrendo* sui gruppi, *inversione della gravità* al terzo round, poi tentacoli e trascinamento sott'acqua. Con il Cuore acceso il danno che non è fuoco né sacro è non letale: Karkator sviene quando il non letale supera i pf attuali, e si ritira nella galleria di drenaggio quando arriva a 260 (o, senza Cuore, sotto i 65 pf).
+**Tattiche** Round per round, avviso, gravità invertita e fine dello scontro sono in S1 del modulo. In breve: *asservire* il combattente più forte, *blasfemia* o *avvizzimento orrendo* sui gruppi, *inversione della gravità* al terzo round, poi tentacoli e trascinamento sott'acqua. Con il Cuore acceso il danno che non è fuoco né sacro è non letale e la rigenerazione ne toglie 15 a ogni suo turno; Karkator fugge quando il non letale accumulato arriva a 260, o sotto i 65 pf se il Cuore è spento.
 
 ## Ragno delle Catene
 
@@ -52,7 +52,7 @@ ts: Temp +14, Rifl +11, Vol +5
 attributi: For 26 Des 15 Cos 21 Int 7 Sag 13 Car 10
 velocita: 12 m, scalare 6 m; scalare 12 m sulle catene
 iniziativa: +6
-sensi: scurovisione 18 m, visione crepuscolare
+sensi: scurovisione 18 m, visione crepuscolare, Ascoltare +10, Osservare +10
 attacchi:
   - Morso +20 (1d8+12 più veleno)
 ```
@@ -95,7 +95,7 @@ attacchi:
 - **Incantesimi preparati** (LI 13°, CD 16 + livello): l'elenco è nel riquadro qui sotto.
 - **La nebbia di calce** è *nube acida*; **la pioggia di calce** è *tempesta di ghiaccio*: grandine di calce nel racconto, regole SRD.
 
-**Tattiche** Sulla mappa GS-4. Sotto i 30 pf scende la scala verso Karkator. Si arrende se gli si dimostra che lo scavo dei drow farà crollare la vasca (Raggirare o Diplomazia CD 25). Con *resistenza dell'orso* ha 97 pf.
+**Tattiche** In T1 del modulo, round per round e con la Torre tranquilla o allertata. Sotto i 30 pf scende la scala verso Karkator. Si arrende se gli si dimostra che lo scavo dei drow farà crollare la vasca (Raggirare o Diplomazia CD 25). Con *resistenza dell'orso* ha 97 pf.
 
 {{note
 **Gli incantesimi di Tariq** (D = dominio). 7° *blasfemia*, D *nube acida* · 6° *dissolvi magie superiore* ×2, *barriera di lame*, D *ferire* · 5° *giusto potere*, *colpo infuocato*, *uccidere i viventi*, *resistenza agli incantesimi*, D *tempesta di ghiaccio* · 4° *libertà di movimento*, *ancora dimensionale*, *veleno*, *camminare nell'aria*, D *controllare acqua* · 3° *veste magica* ×2 (già lanciate), *dissolvi magie*, *preghiera*, *protezione dall'energia*, D *contagio* · 2° *blocca persone* ×2, *silenzio*, *resistenza all'energia*, *resistenza dell'orso*, *esplosione sonora*, D *frantumare* · 1° *favore divino*, *scudo della fede*, *scudo entropico*, *anatema*, *comando* ×2, *santuario*, D *foschia occultante* · 0 *individuazione del magico*, *guida* ×2, *resistenza* ×2, *lettura del magico*.
@@ -115,7 +115,7 @@ ts: Temp +7, Rifl +3, Vol +7
 attributi: For 21 Des 13 Cos 13 Int 10 Sag 10 Car 6
 velocita: 6 m, nuotare 12 m
 iniziativa: +5
-sensi: scurovisione 18 m
+sensi: scurovisione 18 m, Ascoltare +10, Osservare +10 (+4 sott'acqua)
 attacchi:
   - Tridente +1 +17/+12 (1d8+8)
   - Morso +9 (2d6+2) e artiglio +9 (1d4+2)
@@ -143,7 +143,7 @@ ts: Temp +11, Rifl +7, Vol +12
 attributi: For 30 Des 14 Cos 22 Int 10 Sag 14 Car 5
 velocita: 9 m, nuotare 6 m
 iniziativa: +6
-sensi: scurovisione 18 m
+sensi: scurovisione 18 m, Ascoltare +14, Osservare +14
 attacchi:
   - 2 chele +20 (4d6+10)
 ```
@@ -182,7 +182,7 @@ attacchi:
 ```
 **Statistiche** **Equipaggiamento** giaco di maglia sotto il grembiule da facchino, spada corta perfetta, balestra leggera, 2 pozioni di *cura ferite moderate*, 30 mo
 
-**Tattiche** Non attaccano per primi. Seguono, contano, riferiscono; tagliano la fune della gabbia se i PG scendono di notte senza permesso.
+**Tattiche** Non attaccano per primi. Seguono, contano, riferiscono; tagliano la fune della gabbia se i PG scendono senza averli tolti di mezzo, di giorno o di notte (C2).
 
 ## Asservito armato
 

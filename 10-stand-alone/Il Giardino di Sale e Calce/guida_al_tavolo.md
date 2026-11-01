@@ -171,4 +171,4 @@ La serata ha tre atti e tre strade. L'Atto I e l'Atto III sono uguali per tutti;
 | Quale riga della tabella delle conseguenze li ha sorpresi? | |
 | Cosa hanno inventato che il modulo non prevedeva? | |
 
-Le risposte vanno nel piano del modulo, nella Fase C: un modulo passa da alfa a beta quando un tavolo vero lo ha giocato e le correzioni sono scritte.
+Le risposte vanno nel piano del modulo, nella fase di verifica: un modulo passa da alfa a beta quando un tavolo vero lo ha giocato e le correzioni sono scritte.

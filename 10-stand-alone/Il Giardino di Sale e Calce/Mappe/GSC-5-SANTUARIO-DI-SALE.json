@@ -276,10 +276,10 @@
     }
   ],
   "tattiche": [
-    "**Karkator sa che arrivano** dal momento in cui qualcuno tocca l'acqua della vasca di sopra: la sente. Prima che i PG entrino lancia *aura sacrilega* (capacità magica del mezzo-immondo) e ha attivi *armatura magica* e il volo che gli dà il Cuore.",
+    "**Karkator è avvisato** se la Torre era allertata, se Tariq è fuggito da lui o se qualcuno ha toccato l'acqua della vasca di sopra: allora ha già *aura sacrilega*. Altrimenti il round di sorpresa è dei PG e lui la lancia al primo round. *Armatura magica* e volo del Cuore sono sempre attivi.",
     "**Round 1**: *asservire* (Volontà CD 29) sul combattente più forte, che gli fa da scudo. **Round 2**: *blasfemia* (LI 16: chi è entro 12 m ed è di 13 DV resta stordito un round e indebolito) o *avvizzimento orrendo* se i PG sono sparsi. **Round 3**: *inversione della gravità* dal Cuore: chi non è ancorato cade verso la volta (11 m, 3d6; 5 m e 1d6 sotto la vasca della cisterna, dove la volta scende) e poi ricade nella vasca.",
     "**In mischia** colpisce con quattro tentacoli e cerca di trascinare un PG sott'acqua; chi è stato toccato dal muco (Tempra CD 31) e non può respirare nell'acqua sta annegando in pochi round. Hella con *libertà di movimento* e forma acquatica è il PG che lo può seguire.",
-    "**Si ritira** sotto il 20% dei pf nella galleria di drenaggio verso il Sottosuolo (scelta 13), portandosi via il Cuore se i perni sono ancora interi.",
+    "**Si ritira** quando il danno non letale accumulato arriva a 260 (o sotto i 65 pf se il Cuore è spento) nella galleria di drenaggio verso il Sottosuolo (scelta 13), portandosi via il Cuore se i perni sono ancora interi.",
     "**EL 16**, 17 se Tariq è fuggito qui."
   ],
   "evoluzione": [
@@ -293,7 +293,7 @@
       "stato": "C · Cuore staccato",
       "trigger": "i PG rompono due perni o tirano via il Cuore",
       "griglia": "la luce verde si spegne, il sale si incrina",
-      "effetto": "Karkator perde la rigenerazione, il volo e l'armatura: torna GS 15. Chi tiene il Cuore subisce un tentativo di *asservire* ogni round finché non lo purifica"
+      "effetto": "Karkator perde la rigenerazione, il volo buono e l'armatura: torna GS 15. Chi tiene il Cuore subisce un tentativo di *asservire* ogni round finché non lo purifica"
     }
   ],
   "note_dm": [

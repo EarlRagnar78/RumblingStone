@@ -105,6 +105,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | C2 box misurati | ✅ 15 box contro Abbazia e DEF-4: nessun P1, metratura, parentesi o box oltre 12 righe; un «sembra» e un calco corretti; domande del developer a 0 col TS su Rif… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | C3 simulazione degli scontri | ✅ Ragni delle Catene e Tariq prove giuste; Karkator com'era scritto faceva un TPK (blasfemia al LI 24 uccide senza TS i PG di 13°, RI 34 annulla la magia di He… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B5 e B7 (3.5) | ✅ «Le leve dei PG» nel master (12 leve con dove, prova e conseguenza, una tabella per PG); guida_al_tavolo.md come capitolo 3 del booklet: avvio rapido, regia… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B6 chiuso | ✅ GS-R in render_schemi.py: i tre ingressi sulla pianta canonica di Rethmar; quote allineate al canone (Cannath a +13, foro 8 m sopra il fiume), sorgente del S… |
@@ -116,7 +117,6 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B6 prima parte: otto mappe tattiche | 🟡 contratti JSON e master in 10-stand-alone/Il Giardino di Sale e Calce/mappe/, quattro temi di render, collaudo_mappe e qualita_mappe a 0 errori; D7 decisa (q… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B8 progetto: Rethmar e l'assedio | 🟡 15 scelte agganciate a Fronte, Morale Cittadino, contingenti e clock esistenti; tre ingressi (cripta della Cattedrale di Lathander, sfioratore nascosto, pozz… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B4 seconda parte: Tariq e skum; lotto B8 aperto | 🟡 Tariq chierico 13 di Umberlee GS 13 con nube acida al posto della nebbia di calce; skum guerriero 8 GS 10 (63 pf, non 115); B8 conseguenze sull'assedio di Re… |
-| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B4 prima parte: conti di Karkator e del Ragno delle Catene (3.5) | 🟡 Karkator aboleth mezzo-immondo a 24 DV, GS 15 (16 col Cuore); Ragno delle Catene ragno fase Enorme a 14 DV, GS 10; Tariq, skum e chuul da fare |
 
 ## Le misure che si portano dietro
 

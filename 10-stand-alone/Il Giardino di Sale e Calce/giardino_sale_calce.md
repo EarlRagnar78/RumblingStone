@@ -222,7 +222,7 @@ Rethmar a due settimane dall'assedio: carri di pietre verso le mura, ragazzi che
 
 **La Cattedrale (GS-1).** Tredora riceve i PG nella navata.
 
-> *La Cattedrale di Lathander ha le vetrate a est, e anche nel tardo pomeriggio sembra mattina. Tredora Occhidoro scende i gradini dell'altare con una chiave di ferro lunga come un avambraccio. «L'ultimo che l'ha usata era il mio maestro. Benedicevamo l'acqua all'equinozio, scendevamo con il sole di bronzo e cantavamo alla vasca. Poi la gilda disse che costava troppo, e la porta restò chiusa.» Guarda la chiave. «Se è vero quello che dite, avremmo dovuto continuare.»*
+> *La Cattedrale di Lathander ha le vetrate a est, e anche nel tardo pomeriggio la luce è quella del mattino. Tredora Occhidoro scende i gradini dell'altare con una chiave di ferro lunga come un avambraccio. «L'ultimo che l'ha usata era il mio maestro. Benedicevamo l'acqua all'equinozio, scendevamo con il sole di bronzo e cantavamo alla vasca. Poi la gilda disse che costava troppo, e la porta restò chiusa.» Guarda la chiave. «Se è vero quello che dite, avremmo dovuto continuare.»*
 
 **La bottega di Tariq.** Una casa stretta sul lato nord del foro, chiusa. Dentro: disegni, modelli di chiuse in ottone, una conchiglia nera sull'altarino della camera. **Sapienza (religione) CD 15**: è il simbolo di Umberlee, la Regina della Rabbia, dea del mare che annega. Fra i disegni c'è lo sfioratore (indizio dell'ingresso B) e la pianta della cisterna senza il Santuario: chi la confronta con la pianta della gilda (Kesk ce l'ha) vede che sotto la vasca c'è uno spazio che nessuno ha disegnato.
 
@@ -294,7 +294,7 @@ Una gabbia di ferro per quattro persone, calata dall'argano per sei metri attrav
 
 ![GS-S2 — L'incontro coi Ragni delle Catene, in sezione](Mappe/schemi/GS-S2-ragni-delle-catene.svg)
 
-![GS-S2 — lo scontro, numero per numero](Mappe/schemi/GS-S2-ragni-delle-catene_legenda.svg) **Chi arriva da A o da B** può non incontrarli mai: i ragni restano sulle volte finché qualcuno non tocca le catene.
+![GS-S2 — lo scontro, numero per numero](Mappe/schemi/GS-S2-ragni-delle-catene_legenda.svg) **Chi cade dalle passerelle** fa un tiro salvezza su Riflessi CD 15 per afferrare una catena: se lo passa resta appeso e risale in un round (Scalare CD 15), se lo fallisce cade fino al ponte o all'acqua. **Chi arriva da A o da B** può non incontrarli mai: i ragni restano sulle volte finché qualcuno non tocca le catene.
 
 ### G2 e G3 · I nidi dei ragni
 

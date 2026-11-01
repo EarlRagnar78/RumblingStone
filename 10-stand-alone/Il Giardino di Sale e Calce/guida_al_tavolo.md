@@ -69,7 +69,7 @@ La serata ha tre atti e tre strade. L'Atto I e l'Atto III sono uguali per tutti;
 | Mastro Tariq | lenta, precisa, da artigiano; si pulisce le mani sul grembiule mentre parla | «Trentun anni a dare acqua a una città che non sa nemmeno il mio nome.» |
 | Sal | sorridente, affettuosa, parla di cose belle | «Che ascia magnifica. Chi l'ha forgiata sapeva che un giorno qualcuno l'avrebbe guardata così.» |
 | Brenna Sorvane | asciutta, conta tutto, non alza la voce | «Mi manca un terzo dell'acqua. Fra due settimane mi mancherà un terzo della città.» |
-| Tredora Occhidoro | calda, stanca, con il senso di colpa di chi ha smesso una cosa giusta | «Avremmo dovuto continuare.» |
+| Tredora Occhidoro | calda, stanca, si rimprovera di aver smesso una cosa giusta | «Avremmo dovuto continuare.» |
 | Kesk Martellacqua | da bottegaio, si lamenta dei costi | «Lavori. Lavori alla paratoia. Me l'ha detto il mastro, e il mastro paga.» |
 
 ## Il kit per quando il tavolo esce dal copione

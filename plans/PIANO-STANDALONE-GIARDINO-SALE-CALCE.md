@@ -45,7 +45,7 @@ Il materiale vale come traccia, non come modulo: tre aree e tre scontri, mappe s
 ## Fase C — Verifica
 
 - [ ] **C1** `validate_standalone`, `validate_booklets --stampa`, `validate_prosa`, `validate_lingua` verdi.
-- [ ] **C2** Box misurati con `ciclo_prosa.box_impoveriti` e lo standard del giro (ADR-0093, ADR-0095).
+- [x] **C2** Box misurati con `ciclo_prosa.box_impoveriti` e lo standard del giro (ADR-0093, ADR-0095). *(2026-11-01: il modulo è nuovo, quindi non c'è un prima da impoverire: misurati i 15 box con `misura_craft` contro Abbazia e DEF-4. Nessun P1, nessuna metratura, nessuna parentesi, nessun box oltre 12 righe; 5 su 14 oltre 4 frasi (Abbazia 1 su 11, DEF-4 17 su 37); sensoriali 48‰ (Abbazia 31‰, DEF-4 55‰); `ciclo_prosa segnala` aveva un «sembra» e un calco, corretti; D3 del developer chiusa con il TS su Riflessi di chi cade dalle passerelle)*
 - [x] **C3** Simulazione degli scontri contro i quattro PG con le loro risorse (come per il duello di ARC-07), con esiti in un file accanto al modulo. *(2026-11-01: `SIMULAZIONE-SCONTRI.md`; ragni e Tariq giusti, Karkator al LI 24 è un TPK; applicata la consigliata della card D-a, LI 16 e il Cuore come chiave, in attesa della scelta del DM)*
 - [ ] **C4** Lettura a freddo di lettore e playtester senza 🔴.
 - [ ] **C5** Booklet stampato e misurato con `misura_stampa.py`.

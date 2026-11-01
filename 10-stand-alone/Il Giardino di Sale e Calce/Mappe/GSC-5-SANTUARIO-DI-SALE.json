@@ -277,8 +277,8 @@
   ],
   "tattiche": [
     "**Karkator è avvisato** se la Torre era allertata, se Tariq è fuggito da lui o se qualcuno ha toccato l'acqua della vasca di sopra: allora ha già *aura sacrilega*. Altrimenti il round di sorpresa è dei PG e lui la lancia al primo round. *Armatura magica* e volo del Cuore sono sempre attivi.",
-    "**Round 1**: *asservire* (Volontà CD 29) sul combattente più forte, che gli fa da scudo. **Round 2**: *blasfemia* (LI 16: chi è entro 12 m ed è di 13 DV resta stordito un round e indebolito) o *avvizzimento orrendo* se i PG sono sparsi. **Round 3**: *inversione della gravità* dal Cuore: chi non è ancorato cade verso la volta (11 m, 3d6; 5 m e 1d6 sotto la vasca della cisterna, dove la volta scende) e poi ricade nella vasca.",
-    "**In mischia** colpisce con quattro tentacoli e cerca di trascinare un PG sott'acqua; chi è stato toccato dal muco (Tempra CD 31) e non può respirare nell'acqua sta annegando in pochi round. Hella con *libertà di movimento* e forma acquatica è il PG che lo può seguire.",
+    "**Round 1**: *asservire* (Volontà CD 29) sul combattente più forte, che gli fa da scudo. **Round 2**: *blasfemia* (LI 16: chi è entro 12 m ed è di 13 DV resta frastornato un round e indebolito) o *avvizzimento orrendo* se i PG sono sparsi. **Round 3**: *inversione della gravità* dal Cuore: chi non è ancorato cade verso la volta (11 m, 3d6; 5 m e 1d6 sotto la vasca della cisterna, dove la volta scende) e poi ricade nella vasca.",
+    "**In mischia** colpisce con quattro tentacoli e cerca di trascinare un PG sott'acqua; chi è trascinato giù e non respira in acqua annega con le regole dell'annegamento; chi fallisce il TS contro la nube di muco (Tempra CD 31) respira acqua e non aria per 3 ore, quindi sott'acqua sta bene ma annega quando torna su. Hella con *libertà di movimento* e forma acquatica è il PG che lo può seguire.",
     "**Si ritira** quando il danno non letale accumulato arriva a 260 (o sotto i 65 pf se il Cuore è spento) nella galleria di drenaggio verso il Sottosuolo (scelta 13), portandosi via il Cuore se i perni sono ancora interi.",
     "**EL 16**, 17 se Tariq è fuggito qui."
   ],
@@ -287,13 +287,13 @@
       "stato": "B · gravità invertita",
       "trigger": "Karkator usa il potere del Cuore (1 volta al giorno)",
       "griglia": "fino a 15 round (LI 15°, Karkator la congeda quando vuole) chi non è ancorato sta sulla volta, 11 m più su (5 m sotto la vasca della cisterna)",
-      "effetto": "3d6 nella caduta verso l'alto (1d6 dove la volta è bassa), altrettanti quando finisce, salvo chi ricade nella vasca; Artemis in volo non cade (vola), Tordek con caduta lenta dimezza"
+      "effetto": "3d6 nella caduta verso l'alto (1d6 dove la volta è bassa), altrettanti quando finisce, salvo chi ricade nella vasca; Artemis in volo non cade (vola), Tordek con la caduta lenta del monaco non prende danni"
     },
     {
       "stato": "C · Cuore staccato",
       "trigger": "i PG rompono due perni o tirano via il Cuore",
       "griglia": "la luce verde si spegne, il sale si incrina",
-      "effetto": "Karkator perde la rigenerazione, il volo buono e l'armatura: torna GS 15. Chi tiene il Cuore subisce un tentativo di *asservire* ogni round finché non lo purifica"
+      "effetto": "Karkator perde la rigenerazione, il volo buono e l'armatura: torna GS 15. Chi tocca il Cuore a pelle fa un TS contro *asservire* quando lo prende e poi uno al minuto finché non lo purifica"
     }
   ],
   "note_dm": [

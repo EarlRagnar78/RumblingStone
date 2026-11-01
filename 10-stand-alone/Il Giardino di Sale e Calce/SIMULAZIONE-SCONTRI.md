@@ -88,7 +88,7 @@ round) i PG di 13 DV, e paralizza il Treant (7 DV).
 | Round | Karkator | Gruppo | Danno non letale netto su Karkator |
 |---|---|---|---|
 | 1 | *asservire* su Thorik, sprecato | Thorik e Tordek si avvicinano (un attacco a testa), Hella evoca il Treant | ~4 |
-| 2 | *blasfemia*: Thorik, Tordek e il Treant storditi | niente | ~0 |
+| 2 | *blasfemia*: Thorik, Tordek e il Treant frastornati | niente | ~0 |
 | 3 | *inversione della gravità*: Thorik e Tordek cadono sulla volta (3d6) | Thorik lancia l'ascia (indebolito, −3) | ~0 |
 | 4 | *asservire* su Tordek, che fallisce | Thorik scende; Tordek ora è suo | ~0 |
 | 5 | full attack su Thorik (103) | Tordek fa la raffica su Hella (~26) | ~0 |
@@ -115,7 +115,7 @@ Tre cambi, tutti scritti nel modulo come regola del modulo:
 3. **Aura sacrilega solo se Karkator è avvisato.** Chi arriva da B senza farsi
    sentire lo trova a CA 24 e lo prende nel round di sorpresa.
 
-**Tavolo medio:** round 1 avvicinamento, round 2 storditi, round 3 gravità. Dal
+**Tavolo medio:** round 1 avvicinamento, round 2 frastornati, round 3 gravità. Dal
 quarto Thorik lavora sui perni (due round), poi Karkator è a CA 24 senza
 rigenerazione: 82 danni letali a round contro 324 pf, quindi fuga a 65 pf dopo
 3 round. Totale 9 round. Thorik o Tordek a terra una volta (103 a round contro
@@ -147,7 +147,7 @@ CA 27 con le due *veste magica*, 84 pf (97 con *resistenza dell'orso*). Thorik
 lo colpisce 1,65 volte a round per 18 (Tariq è caotico malvagio, il danno sacro
 vale): ~30. Il blast di Artemis contro contatto 11 fa ~25. Tariq scende a 30 pf
 in due round e scappa verso Karkator, come dice la tattica. La sua
-*blasfemia* è al LI 13: i PG di 13 DV sono solo storditi per un round. La
+*blasfemia* è al LI 13: i PG di 13 DV sono solo frastornati per un round. La
 *barriera di lame* (13d6, Riflessi CD 23) è il colpo che fa male. **Prova
 giusta.** Il suo arrivo nel Santuario al round 2 alza l'EL di 1, ed è un
 motivo in più per abbassare Karkator come al §6.

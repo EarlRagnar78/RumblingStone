@@ -105,6 +105,8 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | C4 playtester, C1, C5 | ✅ 44 rilievi, corretti i 3 🔴 (prove contro Sal con la scelta 17, come si arriva all'isolotto, TS di chi tocca il Cuore una volta al minuto) e quattro regole fu… |
+| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B2-B4 PF1e | ✅ modulo PF1e in Qasr al-Milah: master, sei mappe QM-1…QM-6, appendice PF1e (Karkator GS 16 col Cuore, Tariq chierico 13 di Hasharr), guida al tavolo e manifes… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | C4 prima parte: lettore a freddo | 🟡 39 rilievi (3 🔴, 11 🟠, 25 🟡): corretti i tre 🔴 (tattiche di Torre e Santuario nel modulo invece che solo sulla mappa, numeri della gravità invertita, soglia… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | C2 box misurati | ✅ 15 box contro Abbazia e DEF-4: nessun P1, metratura, parentesi o box oltre 12 righe; un «sembra» e un calco corretti; domande del developer a 0 col TS su Rif… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | C3 simulazione degli scontri | ✅ Ragni delle Catene e Tariq prove giuste; Karkator com'era scritto faceva un TPK (blasfemia al LI 24 uccide senza TS i PG di 13°, RI 34 annulla la magia di He… |
@@ -115,8 +117,6 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | C1, C5 (prima misura) | 🟡 il booklet 3.5 compila e converge (25 pagine, 7 schede, 0 spezzate): elenco degli incantesimi di Tariq fuori dal riquadro, che spezzandosi non convergeva; mi… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B6 | 🟡 cartella delle mappe rinominata in Mappe/ come nel resto del repo, così il catalogo dei mostri non scambia i titoli delle mappe per creature; catalogo rigene… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B1, B2-B4 (3.5), B8 | ✅ B1 e B8 · 🟡 B2-B4 per la 3.5: master, appendice delle creature e manifest in 10-stand-alone/Il Giardino di Sale e Calce/; validate_booklets, validate_prosa -… |
-| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B6 prima parte: otto mappe tattiche | 🟡 contratti JSON e master in 10-stand-alone/Il Giardino di Sale e Calce/mappe/, quattro temi di render, collaudo_mappe e qualita_mappe a 0 errori; D7 decisa (q… |
-| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B8 progetto: Rethmar e l'assedio | 🟡 15 scelte agganciate a Fronte, Morale Cittadino, contingenti e clock esistenti; tre ingressi (cripta della Cattedrale di Lathander, sfioratore nascosto, pozz… |
 
 ## Le misure che si portano dietro
 

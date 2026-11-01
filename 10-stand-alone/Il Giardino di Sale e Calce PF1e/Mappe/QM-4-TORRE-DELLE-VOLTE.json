@@ -1,0 +1,266 @@
+{
+  "schema_version": "1.0",
+  "title": "QM-4 — La Torre delle Volte: l'officina e lo studio di Mastro Tariq (+6 m)",
+  "scale_m_per_square": 1.5,
+  "map_size": [
+    14,
+    13
+  ],
+  "base_terrain": "🏰",
+  "north": "N",
+  "tipo": "tattica",
+  "ambiente": "interni",
+  "luogo": "Qasr al-Milah, la Grande Cisterna, dentro la Torre delle Volte",
+  "regions": [
+    {
+      "terrain": "⬜",
+      "rect": [
+        3,
+        1,
+        10,
+        11
+      ],
+      "label": "L'officina delle acque: modelli di chiuse in ottone, tavoli coperti di disegni degli antichi costruttori"
+    },
+    {
+      "terrain": "⬜",
+      "rect": [
+        0,
+        6,
+        2,
+        1
+      ],
+      "label": "Il ponte maestro"
+    },
+    {
+      "terrain": "🌫",
+      "rect": [
+        6,
+        5,
+        3,
+        3
+      ],
+      "label": "La tromba della scala a chiocciola, aperta fino al fondo"
+    }
+  ],
+  "structures": [
+    {
+      "type": "🔽",
+      "at": [
+        0,
+        6
+      ],
+      "label": "Il ponte maestro, fuori dalla porta (QM-3)",
+      "collega": "QM-3-QUOTA-MEDIA-E-FONDO.md AB14"
+    },
+    {
+      "type": "🚪",
+      "at": [
+        2,
+        6
+      ],
+      "label": "La porta della Torre: quercia cerchiata di bronzo, sbarrata da dentro se la Torre è allertata (Forza CD 25)"
+    },
+    {
+      "type": "🏰",
+      "line": [
+        [
+          9,
+          1
+        ],
+        [
+          9,
+          4
+        ]
+      ],
+      "label": "Parete dello studio"
+    },
+    {
+      "type": "🏰",
+      "line": [
+        [
+          9,
+          5
+        ],
+        [
+          12,
+          5
+        ]
+      ]
+    },
+    {
+      "type": "🔒",
+      "at": [
+        9,
+        3
+      ],
+      "label": "Porta dello studio: Scassinare CD 30, *serratura arcana*"
+    },
+    {
+      "type": "🗄",
+      "at": [
+        12,
+        2
+      ],
+      "label": "Lo scaffale delle carte: i disegni dello scavo verso il pozzo del palazzo e le ricevute di Hamid"
+    },
+    {
+      "type": "🪑",
+      "at": [
+        11,
+        3
+      ],
+      "label": "Lo scrittoio di Tariq"
+    },
+    {
+      "type": "📚",
+      "at": [
+        12,
+        4
+      ],
+      "label": "Trattati antichi sulle acque"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        10,
+        1
+      ],
+      "label": "Pilastro della cisterna, murato nella Torre: attraversa lo studio dal fondo alla volta"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        10,
+        11
+      ],
+      "label": "Pilastro della cisterna, murato nella Torre"
+    },
+    {
+      "type": "🔽",
+      "at": [
+        7,
+        6
+      ],
+      "label": "La scala a chiocciola: scende di 18 m fino al Santuario di Sale (QM-5)",
+      "collega": "QM-5-SANTUARIO-DI-SALE.md AC07"
+    },
+    {
+      "type": "🧰",
+      "at": [
+        4,
+        10
+      ],
+      "label": "Le leve delle paratoie di scarico (stato B di QM-3)"
+    },
+    {
+      "type": "🪟",
+      "at": [
+        6,
+        0
+      ],
+      "label": "Feritoia sulla sala, verso le paratoie"
+    },
+    {
+      "type": "🪟",
+      "at": [
+        6,
+        12
+      ],
+      "label": "Feritoia sulla sala, verso le navate"
+    },
+    {
+      "type": "🪟",
+      "at": [
+        2,
+        3
+      ],
+      "label": "Feritoia sul ponte maestro"
+    },
+    {
+      "type": "🛐",
+      "at": [
+        11,
+        8
+      ],
+      "label": "L'altare di Hasharr, il Pozzo Senza Fondo: una conchiglia nera piena d'acqua salata"
+    }
+  ],
+  "hazards": [
+    {
+      "type": "🌫",
+      "at": [
+        6,
+        5
+      ],
+      "label": "La tromba della scala",
+      "effect": "aperta per 18 m fino al Santuario: chi ci cade o ci viene spinto (gli skum hanno Spingere Migliorato) prende 6d6"
+    }
+  ],
+  "units": [
+    {
+      "faction": "PG",
+      "name": "I PG, dalla porta",
+      "token": "🔵",
+      "area": {
+        "rect": [
+          3,
+          6,
+          2,
+          2
+        ]
+      },
+      "quantity": 4
+    },
+    {
+      "faction": "Tariq",
+      "name": "Mastro Tariq, chierico 13 di Hasharr (GS 12)",
+      "token": "🟣",
+      "at": [
+        11,
+        9
+      ]
+    },
+    {
+      "faction": "Tariq",
+      "name": "Skum guerriero 8 (GS 10)",
+      "token": "🔴",
+      "at": [
+        5,
+        3
+      ]
+    },
+    {
+      "faction": "Tariq",
+      "name": "Skum guerriero 8 (GS 10)",
+      "token": "🔴",
+      "at": [
+        5,
+        10
+      ]
+    }
+  ],
+  "tattiche": [
+    "**Se la Torre non è allertata**, Tariq è allo scrittoio e gli skum ai lati della porta. **Se è allertata** (Hamid ha avvisato, i ragni sono fuggiti, i chuul hanno combattuto), Tariq ha già lanciato *resistenza agli incantesimi*, *libertà di movimento*, *potere giusto* e *camminare nell'aria* (le due *veste magica* sono attive dall'alba), e aspetta dietro la tromba delle scale.",
+    "**Round 1**: *barriera di lame* (CD 22) fra la porta e la tromba, per spezzare il gruppo; gli skum spingono chi passa verso la tromba (Spingere Migliorato). **Round 2**: *blasfemia* se almeno due PG sono a portata; altrimenti *dissolvi magie superiore* sul volatore. **Round 3+**: *ferire* sul guerriero più vicino, *colpo infuocato* sui gruppi.",
+    "**Tariq non muore per Hamid.** Sotto i 30 pf scende la scala a chiocciola con *camminare nell'aria* verso Karkator e grida il suo nome: lo scontro finale comincia con Tariq al fianco dell'aboleth. Catturarlo vivo e portarlo al Visir è la prova che scagiona la città.",
+    "**EL 14** (Tariq GS 12 e due skum GS 10)."
+  ],
+  "evoluzione": [
+    {
+      "stato": "B · barriera di lame",
+      "trigger": "Tariq la lancia al round 1",
+      "griglia": "un muro di lame lungo 6 m fra la porta e la scala",
+      "effetto": "15d6 danni a chi lo attraversa (Riflessi CD 22 dimezza)"
+    },
+    {
+      "stato": "C · fuga di Tariq",
+      "trigger": "Tariq sotto i 30 pf",
+      "griglia": "Tariq scende nella tromba",
+      "effetto": "arriva nel Santuario in 2 round e combatte accanto a Karkator: l'EL dello scontro finale sale di 1"
+    }
+  ],
+  "note_dm": [
+    "**L'officina misura 15 × 16,5 m** di pavimento, dentro mura spesse 1,5 m: fuori la Torre è 18 × 19,5 m, la stessa impronta di QM-3, e due pilastri della cisterna sono murati dentro. Ha tre piani: il fondo con le chiuse, questa officina a +6 m e il terrazzo di guardia a +12 m (non serve una griglia, ci stanno solo due skum di vedetta se la Torre è allertata)."
+  ]
+}

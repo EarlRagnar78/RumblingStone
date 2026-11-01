@@ -62,7 +62,7 @@ COLONNE:  A B C D E F G H I J K L M N
 | Stato | Trigger | Cosa cambia sulla griglia | Effetto meccanico |
 |---|---|---|---|
 | A (iniziale) | — | com'è disegnata | — |
-| B · barriera di lame | Tariq la lancia al round 1 | un muro di lame lungo 6 m fra la porta e la scala | 15d6 danni a chi lo attraversa (Riflessi CD 22 dimezza) |
+| B · barriera di lame | Tariq la lancia al round 1 | un muro di lame lungo 6 m fra la porta e la scala | 13d6 danni a chi lo attraversa (Riflessi CD 22 dimezza) |
 | C · fuga di Tariq | Tariq sotto i 30 pf | Tariq scende nella tromba | arriva nel Santuario in 2 round e combatte accanto a Karkator: l'EL dello scontro finale sale di 1 |
 
 > **L'officina misura 15 × 16,5 m** di pavimento, dentro mura spesse 1,5 m: fuori la Torre è 18 × 19,5 m, la stessa impronta di GS-3, e due pilastri della cisterna sono murati dentro. Ha tre piani: il fondo con le chiuse, questa officina a +6 m e il terrazzo di guardia a +12 m (non serve una griglia, ci stanno solo due skum di vedetta se la Torre è allertata).

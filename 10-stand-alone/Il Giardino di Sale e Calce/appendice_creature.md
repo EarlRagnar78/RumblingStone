@@ -210,7 +210,7 @@ attacchi:
 
 > *Una pietra verde grande come un cuore, tiepida, con dentro qualcosa che si muove come acqua e non lo è.*
 
-**Corrotto** (nei perni del Santuario): è la fonte dei poteri di Karkator descritti sopra. Chi lo tiene subisce ogni round un tentativo di *asservire* di Karkator finché l'aboleth vive. Si può sintonizzare (Sapienza Magica o Utilizzare Oggetti Magici CD 28): una volta per settimana *inversione della gravità* (LI 15°), e ogni uso fa avanzare di 1 il clock di Sonjak.
+**Corrotto** (nei perni del Santuario): è la fonte dei poteri di Karkator descritti sopra. Chi lo tocca a pelle fa un TS contro *asservire* di Karkator quando lo prende e poi uno al minuto (in una borsa non scatta), finché l'aboleth vive. Si può sintonizzare (Sapienza Magica o Utilizzare Oggetti Magici CD 28): una volta per settimana *inversione della gravità* (LI 15°), e ogni uso fa avanzare di 1 il clock di Sonjak.
 
 **Purificato** (*consacrare* più un'ora di preghiera all'alba, o *santificare*): oggetto meraviglioso, slot nessuno, LI 7°, aura moderata (evocazione e trasmutazione).
 

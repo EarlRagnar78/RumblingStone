@@ -1,6 +1,6 @@
 # PIANO — La stand alone della cisterna: «Il Giardino di Sale e Calce»
 
-> **Stato**: 🟡 aperto (2026-11-01). A0 fatto (inventario della chat); D1-D5 alle card del DM, il lavoro parte sulle proposte · **Classe**: K (contenuto nuovo), con le tavole sulla catena delle mappe
+> **Stato**: 🟡 aperto (2026-11-01). A0 e A1 fatti; D1 (sistema doppio) e D5 (boss a conti) decise, D2-D4 alle card · **Classe**: K (contenuto nuovo), con le tavole sulla catena delle mappe
 > **Nasce da**: la richiesta del DM del 2026-11-01: *«aggiungere una altra stand alone nella folder delle stand alone […] prendendo tutti i dati e idee necessarie da questa chat di gemini e dai suoi documenti generati adattandosi e verificandone secondo il processo sviluppato finora per le altre stand alone per esempio la stand alone della abbazia»*.
 > **Sorgente**: la chat Gemini «One-shot D&D 3.5 e Pathfinder 1e» (creata il 2026-10-27, condivisa il 2026-11-01). Copia integrale e inventario in `/mnt/project-files/standalone-giardino-sale-calce/`, fuori dal repo: entra solo ciò che passa le verifiche.
 > **Decisioni collegate**: [ADR-0017](adr/ADR-0017-moduli-autoconclusivi-classe-di-artefatto.md) (i moduli autoconclusivi), [ADR-0103](adr/ADR-0103-le-regole-si-riscontrano-sull-srd-in-cache.md) (riscontro sull'SRD in cache), [ADR-0105](adr/ADR-0105-ogni-creatura-esce-nello-stesso-riquadro.md) (il riquadro delle creature), [ADR-0106](adr/ADR-0106-ogni-mappa-si-stampa-in-pianta.md) (ogni mappa in pianta).
@@ -16,7 +16,7 @@ Il materiale vale come traccia, non come modulo: tre aree e tre scontri, mappe s
 
 | ID | Domanda | Proposta | Stato |
 |---|---|---|---|
-| D1 | Sistema | D&D 3.5, come l'Abbazia e i PG; Volare, Acrobazia e magus convertiti, warlock da *Complete Arcane* con nota di licenza | card |
+| D1 | Sistema | doppia: statblocchi e regole in D&D 3.5, con un riquadro di conversione PF1e per ogni creatura e regola d'ambiente; warlock da *Complete Arcane* con nota di licenza | ✅ decisa dal DM il 2026-11-01 (card, opzione C, non la proposta 3.5 sola) |
 | D2 | Collocazione | fuori canone, città inventata come l'Abbazia, per gruppi di 13°; un riquadro per Thorik, Tordek, Hella e Artemis; `state.md` non si tocca | card |
 | D3 | Ampiezza | media: un atto breve in città e 12-16 aree nella cisterna su tre quote, una sessione di 6-7 ore | card |
 | D4 | Titolo | *Il Giardino di Sale e Calce* | card |
@@ -25,7 +25,7 @@ Il materiale vale come traccia, non come modulo: tre aree e tre scontri, mappe s
 ## Fase A — Audit
 
 - [x] **A0** Inventario della chat e dei due PDF resi come testo (2026-11-01).
-- [ ] **A1** Riscontro sull'SRD in cache di ogni regola, creatura e incantesimo citato (ADR-0103); tabella «idea della chat → regola 3.5 → fonte → scarto».
+- [x] **A1** Riscontro sull'SRD in cache di ogni regola, creatura e incantesimo citato (ADR-0103); tabella «idea della chat → regola 3.5 → fonte → scarto». Fatto il 2026-11-01: [A1-RISCONTRO-SRD](esperimenti/giardino-sale-calce-2026-11/A1-RISCONTRO-SRD.md).
 - [ ] **A2** Le capacità dei quattro PG al 13° che toccano la cisterna (volo, scurovisione, forma selvatica, ki, invocazioni) da `campaign/state.yaml` e dalle schede, per tarare i pericoli senza annullarli.
 - [ ] **A3** Budget: EL degli scontri e tesoro per livello del gruppo (DMG 3.5, tabella 5-1 e ricchezza per incontro).
 
@@ -52,3 +52,4 @@ Il materiale vale come traccia, non come modulo: tre aree e tre scontri, mappe s
 | Data | Cosa |
 |---|---|
 | 2026-11-01 | Piano aperto. Chat letta per intero da link pubblico (il proxy del container la blocca, letta via servizio esterno); inventario e copia in `/mnt/project-files/standalone-giardino-sale-calce/`. D1-D5 alle card. |
+| 2026-11-01 | D5 e D1 decise alle card: boss a conti, sistema doppio 3.5 con note PF1e. A1 fatto: nessun numero della chat coincide con un'avanzata calcolata; cinque incantesimi di Tariq su tredici sbagliati. |

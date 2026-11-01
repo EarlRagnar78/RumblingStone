@@ -46,7 +46,7 @@ Il materiale vale come traccia, non come modulo: tre aree e tre scontri, mappe s
 
 - [ ] **C1** `validate_standalone`, `validate_booklets --stampa`, `validate_prosa`, `validate_lingua` verdi.
 - [ ] **C2** Box misurati con `ciclo_prosa.box_impoveriti` e lo standard del giro (ADR-0093, ADR-0095).
-- [ ] **C3** Simulazione degli scontri contro i quattro PG con le loro risorse (come per il duello di ARC-07), con esiti in un file accanto al modulo.
+- [x] **C3** Simulazione degli scontri contro i quattro PG con le loro risorse (come per il duello di ARC-07), con esiti in un file accanto al modulo. *(2026-11-01: `SIMULAZIONE-SCONTRI.md`; ragni e Tariq giusti, Karkator al LI 24 è un TPK; applicata la consigliata della card D-a, LI 16 e il Cuore come chiave, in attesa della scelta del DM)*
 - [ ] **C4** Lettura a freddo di lettore e playtester senza 🔴.
 - [ ] **C5** Booklet stampato e misurato con `misura_stampa.py`.
 

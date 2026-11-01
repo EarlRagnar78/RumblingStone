@@ -29,14 +29,14 @@ attacchi:
 **Statistiche** **Talenti** Allerta, Arma Naturale Migliorata (tentacolo), Attacco Poderoso, Abilità Focalizzata (*asservire*), Incantesimi in Combattimento, Iniziativa Migliorata, Riflessi Fulminei, Riflessi in Combattimento, Volontà di Ferro
 
 **Capacità speciali**
-- **Asservire** (Sop, 3/giorno, 9 m): Volontà CD 29. L'asservito obbedisce ai comandi telepatici; un nuovo TS ogni 24 ore se è a più di 1,5 km.
+- **Asservire** (Sop, 3/giorno, 9 m): Volontà CD 29. L'asservito obbedisce ai comandi telepatici finché non lo libera *rimuovi maledizione*; un nuovo TS ogni 24 ore, e il legame si rompe se Karkator muore o si allontana più di 1,5 km (SRD).
 - **Muco** (Str): chi è colpito da un tentacolo fa Tempra CD 31 o in 1d4+1 minuti la pelle diventa una membrana trasparente e viscida; fuori dall'acqua prende 1d12 danni ogni 10 minuti. *Rimuovi malattia* lo ferma, *guarire* lo annulla.
 - **Nube di muco** (Str): sott'acqua, chi gli sta a contatto fa Tempra CD 31 o respira acqua e non aria per 3 ore.
 - **Psionici** (Mag, a volontà, LI 16°): *schema ipnotico* (CD 17), *muro illusorio* (19), *miraggio arcano* (20), *immagine persistente* (20), *immagine programmata* (21), *proiettare immagine* (22), *velo* (21).
-- **Capacità magiche del mezzo-immondo** (LI 24°): *oscurità* 3/giorno, *aura sacrilega* 3/giorno, *veleno* 3/giorno (CD 19); una volta al giorno *dissacrare*, *flagello sacrilego* (19), *contagio* (18), *blasfemia* (22), *profanare*, *avvizzimento orrendo* (23), *evoca mostri IX* (solo immondi), *distruzione* (22). *Punire il bene* 1/giorno (+20 danni).
+- **Capacità magiche del mezzo-immondo** (LI 16°, come gli psionici; l'SRD direbbe LI 24°, e al LI 24° la *blasfemia* uccide senza tiro salvezza i PG di 13°: **regola del modulo**, dalla simulazione degli scontri): *oscurità* 3/giorno, *aura sacrilega* 3/giorno (già addosso solo se è stato avvisato), *veleno* 3/giorno (CD 19); una volta al giorno *dissacrare*, *flagello sacrilego* (19), *contagio* (18), *blasfemia* (22), *profanare*, *avvizzimento orrendo* (23), *evoca mostri IX* (solo immondi), *distruzione* (22). *Punire il bene* 1/giorno (+20 danni).
 - **Il Cuore di Selenite** (finché è nei perni e Karkator è entro 18 m): rigenerazione 15, *armatura magica* permanente, volo 9 m buono, una volta al giorno *inversione della gravità* (LI 15°). **Regola del modulo.** Senza il Cuore torna GS 15.
 
-**Tattiche** Sono sulla mappa GS-5. In breve: *asservire* il combattente più forte, *blasfemia* o *avvizzimento orrendo* sui gruppi, *inversione della gravità* al terzo round, poi tentacoli e trascinamento sott'acqua. Si ritira nella galleria di drenaggio sotto il 20% dei pf.
+**Tattiche** Sono sulla mappa GS-5. In breve: *asservire* il combattente più forte, *blasfemia* o *avvizzimento orrendo* sui gruppi, *inversione della gravità* al terzo round, poi tentacoli e trascinamento sott'acqua. Con il Cuore acceso il danno che non è fuoco né sacro è non letale: Karkator sviene quando il non letale supera i pf attuali, e si ritira nella galleria di drenaggio quando arriva a 260 (o, senza Cuore, sotto i 65 pf).
 
 ## Ragno delle Catene
 

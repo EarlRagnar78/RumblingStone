@@ -165,9 +165,9 @@ Ogni PG ha nella cisterna almeno un punto in cui il gioco passa dalle sue mani. 
 
 | La leva | Dove | Prova o costo | Cosa cambia |
 |---|---|---|---|
-| **Ancoraggio della Montagna contro la gravità invertita.** I Bracieri lo rendono immune al movimento forzato due volte al giorno | S1, round 3 | azione immediata, uno dei due usi del giorno | in questo modulo vale anche contro l'*inversione della gravità* del Cuore: Tordek resta a terra mentre gli altri cadono sulla volta, ed è solo con Karkator per qualche round. Regola del modulo, da dire al giocatore quando la usa |
+| **Ancoraggio della Montagna contro la gravità invertita.** Tordek lo ha donato a Hella (seme II della Collana): torna per una scena con la *Restituzione* | S1, round 3 | la *Restituzione* del seme II, che Hella può fare una volta sola per sempre | in questo modulo vale anche contro l'*inversione della gravità* del Cuore: Tordek resta a terra mentre gli altri cadono sulla volta, ed è solo con Karkator per qualche round. Regola del modulo, da dire al giocatore quando la usa |
 | **Caduta lenta lungo le catene e i pilastri.** Scende 12 m senza danni se ha una parete o una catena a portata di mano | G1, T3 | nessuna | è il PG che arriva per primo dove il gruppo cade: dalle passerelle al ponte, giù per la tromba della chiocciola dietro a Tariq che fugge |
-| **Spezzare i perni del Cuore.** Il colpo senz'armi del monaco conta come arma magica e fa danni agli oggetti | S2 | due perni, durezza 10 e 30 pf ciascuno; oppure Forza CD 28 | stacca il Cuore senza toccarlo a mani nude: niente tentativo di *asservire* finché non lo prende qualcuno |
+| **Spezzare i perni del Cuore.** Il colpo senz'armi del monaco conta come arma magica e fa danni agli oggetti | S2 | due perni di bronzo vecchio, durezza 5 e 20 pf ciascuno; oppure Forza CD 24 | stacca il Cuore senza toccarlo a mani nude: niente tentativo di *asservire* finché non lo prende qualcuno |
 
 ### Hella
 
@@ -184,6 +184,8 @@ Ogni PG ha nella cisterna almeno un punto in cui il gioco passa dalle sue mani. 
 | **Vede dove gli altri non vedono.** L'Anello gli dà la scurovisione a 36 m e la vista nell'oscurità magica a 18 m | G1, S1 | nessuna | vede i ragni appena tornano nel Materiale e vede Karkator nel buio che lui crea. Per questo il ragno ovest e l'aboleth lo puntano per primi: Artemis è il motivo per cui i nemici cambiano piano |
 | **Il volatore che fa da esca.** Vola a 18 m con le Ali d'Ombra | G1 | nessuna, ma rischia le catene e la risonanza (GS-S2) | tiene i ragni lontani dagli altri due round. Se lo ancorano resta appeso, non cade: gli altri devono andare a prenderlo |
 | **Sintonizzarsi col Cuore.** Sente cosa c'è dall'altra parte | S2 | Sapienza Magica o Utilizzare Oggetti Magici CD 28 | è la scelta 3 dell'Atto III, e ha un prezzo: un patto con qualcosa che ascolta nel Piano dell'Acqua |
+
+**Contro Karkator la magia di Hella e di Artemis non morde.** L'aboleth ha RI 34 e loro lanciano al LI 13: il blast, il *Rovo Eldritch* e gli incantesimi d'attacco non lo toccano. Funzionano *controllare acqua*, *santificare*, le evocazioni, la Trinità, il *Dono dell'Unità* e *Ombra di Mask* su Thorik. Il conto completo è nella simulazione degli scontri che accompagna il modulo.
 
 **Quello che il repo non dice.** Le schede non registrano oggetti di volo o di respirazione acquatica per Thorik, Tordek e Hella, né le CD esatte di Artemis. Prima della serata chiedilo ai giocatori: se qualcuno ha un oggetto che salta una leva, la leva resta e il pericolo che evita è un pericolo in meno.
 
@@ -351,7 +353,7 @@ Diciotto metri di scala di pietra attorno a un pozzo aperto, fino al Santuario. 
 
 ### S2 · Il Cuore di Selenite
 
-Il Cuore è incastrato in quattro perni di bronzo calishita sull'isolotto. Staccarlo: rompere due perni (durezza 10, 30 pf ciascuno) o una prova di Forza CD 28. Chi lo tiene in mano subisce ogni round un tentativo di *asservire* di Karkator (Volontà CD 29) finché l'aboleth vive.
+Il Cuore è incastrato in quattro perni di bronzo calishita sull'isolotto. Staccarlo: rompere due perni di bronzo vecchio (durezza 5, 20 pf ciascuno) o una prova di Forza CD 24. È la chiave dello scontro: senza il Cuore, Karkator perde rigenerazione, volo e *armatura magica*. Chi lo tiene in mano subisce ogni round un tentativo di *asservire* di Karkator (Volontà CD 29) finché l'aboleth vive.
 
 > *Il Cuore è caldo. È l'unica cosa calda di tutta la grotta. Dentro, nella luce verde, si muove qualcosa che sembra acqua e non lo è, e da lì viene un rumore lontano di risacca: un mare che nessuno di voi ha mai visto, senza rive.*
 

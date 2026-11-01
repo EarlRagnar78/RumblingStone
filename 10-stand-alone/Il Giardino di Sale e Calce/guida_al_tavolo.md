@@ -140,7 +140,7 @@ La serata ha tre atti e tre strade. L'Atto I e l'Atto III sono uguali per tutti;
 | *Asservire* di Karkator | Volontà CD 29 | appendice |
 | Sifone | Nuotare CD 15, due round in apnea | G6 |
 | Tromba della chiocciola | 18 m, 6d6 | T3 |
-| Perni del Cuore | durezza 10, 30 pf; o Forza CD 28 | S2 |
+| Perni del Cuore | durezza 5, 20 pf; o Forza CD 24 | S2 |
 | Porta dello studio | Scassinare CD 30 | T2 |
 | Paratoia dello sfioratore | Forza CD 18, due round | B1 |
 | Puntelli dello scavo | durezza 5, 20 pf ciascuno | B3 |

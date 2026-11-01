@@ -58,7 +58,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF
 |---|---|---|
 | 🟦 La vasca salmastra | L17 | l'acqua salata e densa sostiene: Nuotare CD 10, ma dentro c'è il muco di Karkator (Tempra CD 31 al primo round d'immersione). Karkator vi combatte con il bonus razziale +8 a Nuotare e senza penalità |
 | 🟨 Crosta di sale | F22 | Equilibrio CD 12 o cade prono |
-| 💎 Il Cuore di Selenite | Q14 | finché è nei perni Karkator ha rigenerazione 15 (lo feriscono davvero solo il fuoco e il danno sacro) e può lanciare *inversione della gravità* una volta al giorno sulla grotta. Staccarlo: distruggere due perni o Forza CD 28 |
+| 💎 Il Cuore di Selenite | Q14 | finché è nei perni Karkator ha rigenerazione 15 (lo feriscono davvero solo il fuoco e il danno sacro) e può lanciare *inversione della gravità* una volta al giorno sulla grotta. Staccarlo: distruggere due perni (durezza 5, 20 pf) o Forza CD 24 |
 
 ### ⚔️ TATTICHE (come si comportano i nemici — round per round)
 
@@ -71,7 +71,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF
 | Karkator | Asserviti armati (guerriero 4), quattro, fra la scala e la vasca | 🔴 | 4 | — | W7–X8 |
 
 - **Karkator sa che arrivano** dal momento in cui qualcuno tocca l'acqua della vasca di sopra: la sente. Prima che i PG entrino lancia *aura sacrilega* (capacità magica del mezzo-immondo) e ha attivi *armatura magica* e il volo che gli dà il Cuore.
-- **Round 1**: *asservire* (Volontà CD 29) sul combattente più forte, che gli fa da scudo. **Round 2**: *blasfemia* (incantesimo come mezzo-immondo) o *avvizzimento orrendo* se i PG sono sparsi. **Round 3**: *inversione della gravità* dal Cuore: chi non è ancorato cade verso la volta (11 m, 3d6; 5 m e 1d6 sotto la vasca della cisterna, dove la volta scende) e poi ricade nella vasca.
+- **Round 1**: *asservire* (Volontà CD 29) sul combattente più forte, che gli fa da scudo. **Round 2**: *blasfemia* (LI 16: chi è entro 12 m ed è di 13 DV resta stordito un round e indebolito) o *avvizzimento orrendo* se i PG sono sparsi. **Round 3**: *inversione della gravità* dal Cuore: chi non è ancorato cade verso la volta (11 m, 3d6; 5 m e 1d6 sotto la vasca della cisterna, dove la volta scende) e poi ricade nella vasca.
 - **In mischia** colpisce con quattro tentacoli e cerca di trascinare un PG sott'acqua; chi è stato toccato dal muco (Tempra CD 31) e non può respirare nell'acqua sta annegando in pochi round. Hella con *libertà di movimento* e forma acquatica è il PG che lo può seguire.
 - **Si ritira** sotto il 20% dei pf nella galleria di drenaggio verso il Sottosuolo (scelta 13), portandosi via il Cuore se i perni sono ancora interi.
 - **EL 16**, 17 se Tariq è fuggito qui.

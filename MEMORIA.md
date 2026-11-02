@@ -105,18 +105,18 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
-| 2026-11-01 | TRAVASO-DRAPPO-CAMPAGNA | C2 — Drappo e Palio collegati nei due sensi | ✅ D1 decisa dal DM (card: «Nei due sensi»). In testa a `…-P2D-PALIO-CHANNATHGATE-AVVENTURA.md` la riga «Versione derivata» che rimanda al Drappo; percorso e ra… |
-| 2026-11-01 | DRAPPO-DI-TARSILIA | Il modulo in `10-stand-alone/`, accanto all'Abbazia | ✅ Scelta del DM del 2026-11-01. `git mv` in `10-stand-alone/Il-Drappo-di-Tarsilia/` (trattini, come il nome di prima). Il vecchio percorso sostituito in 56 fil… |
-| 2026-11-01 | TRAVASO-DRAPPO-CAMPAGNA | C1 — quanto il Drappo e il Palio sono lo stesso modulo | ✅ `scripts/misura_derivazione.py` misura su due assi separati, con test. Il Drappo deriva dal Palio (git: 2026-07-01 contro 2026-08-14; piano; hub §10). Testo:… |
-| 2026-10-31 | STANDARD-STAMPA | I2 seguito: nessun disegno a caratteri stampato in tutto il repo | ✅ linee del tempo di Palio e Drappo in tabella; `validate_booklets` ferma i recinti con ≥ 20 caratteri di riquadro fuori dall'apparato |
-| 2026-10-30 | STANDARD-STAMPA | I2 seguito: le sei mappe schematiche di ARC-07 in pianta o in schema (ADR-0106… | ✅ nessuna griglia ASCII stampata nei booklet di ARC-07; T-5, R-1, S-1 in scala, T-1, T-4, M7-A schemi a 7,4 pt senza filtri, `render_schemi.py --check` in CI |
-| 2026-10-30 | STANDARD-STAMPA | I2 chiuso: pianta in stampa per tutte le 56 mappe del repo (ADR-0106), controll… | ✅ scritte sotto 7 pt 5.820→0 e filtri rasterizzati 418→0 sulle 56 mappe, nessun testo perso; ARC-07 righe sotto 7 pt a 0 in tutti e tre i volumi (Notte e Alba… |
-| 2026-10-30 | STANDARD-STAMPA | I2 prime mappe: modo stampa per M7-H e M7-C, stile pianta scelto al cieco | 🟡 scritte ≥ 7,4 pt, niente filtri rasterizzati; tetti ARC-07 giù: Notte e Alba 291→217 righe e 58→52 immagini, Resurrezione 330→256 e 68→62, Mille anni 291→217… |
-| 2026-10-29 | STANDARD-STAMPA | I3 correzioni dopo la rimisura su main | 🟡 titoli sillabati 23 → 0, colonne vuote 5 → 4, rimandi di pagina sbagliati 1 → 0 con misura nuova a tetto 0 |
-| 2026-10-29 | STANDARD-STAMPA | I6 primo cieco delle varianti | 🟡 box da leggere colorato scartato (4 a 0 per il riquadro); interlinea 1,08 contro 1,30 pari (2 a 2), resta 1,30 |
-| 2026-10-29 | STANDARD-STAMPA | D5 appendice delle creature, I3 schede che non si spezzano, I6 varianti e cieco… | 🟡 schede spezzate da 14 a 0, schede PG del Drappo fuori gabbia da 299 a 0; appendice in Typst, HTML e Homebrewery; 8 coppie cieche (interlinea 1,08 e box color… |
-| 2026-10-29 | STANDARD-STAMPA | A1 riferimenti AP, A2 prima misura di stampa | 🟡 `misura_stampa.py` in CI con tetti per booklet: 0 font non incorporati, 1.255 righe sotto 7 pt (etichette delle mappe), 222 immagini sotto 300 dpi, 14 riquad… |
-| 2026-10-29 | ADR-0105 · riquadro unico delle creatur… | conversione ARC-07 e Palio; misura per booklet con tetti | 🟡 da 4/79 a 50/88 schede nel riquadro; ARC-07 e Palio al 100%; Abbazia e Drappo in corso |
+| 2026-11-02 | STANDALONE-GIARDINO-SALE-CALCE | card D-a e gruppo PF1e | ✅ il DM sceglie le due consigliate: Karkator al LI 16 col Cuore come chiave, PF1e per un gruppo libero di 13°; già applicate, nessun cambio di testo nei moduli |
+| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | C4 playtester, C1, C5 | ✅ 44 rilievi, corretti i 3 🔴 (prove contro Sal con la scelta 17, come si arriva all'isolotto, TS di chi tocca il Cuore una volta al minuto) e quattro regole fu… |
+| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B2-B4 PF1e | ✅ modulo PF1e in Qasr al-Milah: master, sei mappe QM-1…QM-6, appendice PF1e (Karkator GS 16 col Cuore, Tariq chierico 13 di Hasharr), guida al tavolo e manifes… |
+| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | C4 prima parte: lettore a freddo | 🟡 39 rilievi (3 🔴, 11 🟠, 25 🟡): corretti i tre 🔴 (tattiche di Torre e Santuario nel modulo invece che solo sulla mappa, numeri della gravità invertita, soglia… |
+| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | C2 box misurati | ✅ 15 box contro Abbazia e DEF-4: nessun P1, metratura, parentesi o box oltre 12 righe; un «sembra» e un calco corretti; domande del developer a 0 col TS su Rif… |
+| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | C3 simulazione degli scontri | ✅ Ragni delle Catene e Tariq prove giuste; Karkator com'era scritto faceva un TPK (blasfemia al LI 24 uccide senza TS i PG di 13°, RI 34 annulla la magia di He… |
+| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B5 e B7 (3.5) | ✅ «Le leve dei PG» nel master (12 leve con dove, prova e conseguenza, una tabella per PG); guida_al_tavolo.md come capitolo 3 del booklet: avvio rapido, regia… |
+| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B6 chiuso | ✅ GS-R in render_schemi.py: i tre ingressi sulla pianta canonica di Rethmar; quote allineate al canone (Cannath a +13, foro 8 m sopra il fiume), sorgente del S… |
+| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B6 seconda parte: schemi e piante allineate | 🟡 GS-0 collegamenti, GS-S1 sezione della cisterna, GS-S2 Ragni delle Catene in render_schemi.py; GS-3/GS-4/GS-5 allineate (Torre 18 × 19,5 m, ponte maestro 39… |
+| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | C1 | 🟡 il box del Cuore non presuppone più che il PG lo guardi; attesa di §6.2 (2C) aggiornata a 20 box su 581 in STATO-E-ORDINE-DEI-PIANI |
+| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | C1, C5 (prima misura) | 🟡 il booklet 3.5 compila e converge (25 pagine, 7 schede, 0 spezzate): elenco degli incantesimi di Tariq fuori dal riquadro, che spezzandosi non convergeva; mi… |
+| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B6 | 🟡 cartella delle mappe rinominata in Mappe/ come nel resto del repo, così il catalogo dei mostri non scambia i titoli delle mappe per creature; catalogo rigene… |
 
 ## Le misure che si portano dietro
 

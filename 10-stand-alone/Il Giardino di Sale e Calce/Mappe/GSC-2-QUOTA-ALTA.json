@@ -1,0 +1,385 @@
+{
+  "schema_version": "1.0",
+  "title": "GS-2 — La Grande Cisterna, quota alta (+15 m): le passerelle e i nidi dei Ragni delle Catene",
+  "scale_m_per_square": 1.5,
+  "map_size": [
+    40,
+    27
+  ],
+  "base_terrain": "🌫",
+  "north": "N",
+  "tipo": "tattica",
+  "ambiente": "interni",
+  "luogo": "Rethmar, la Grande Cisterna sotto il Mercato del Ponte, 3 m sotto la volta",
+  "regions": [
+    {
+      "terrain": "🏰",
+      "rect": [
+        0,
+        0,
+        40,
+        1
+      ]
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        0,
+        26,
+        40,
+        1
+      ]
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        0,
+        0,
+        1,
+        27
+      ]
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        39,
+        0,
+        1,
+        27
+      ]
+    }
+  ],
+  "structures": [
+    {
+      "type": "🌉",
+      "line": [
+        [
+          1,
+          4
+        ],
+        [
+          38,
+          4
+        ]
+      ],
+      "label": "Passerelle di legno e ferro a +15 m, larghe 1,5 m, senza parapetto"
+    },
+    {
+      "type": "🌉",
+      "line": [
+        [
+          1,
+          13
+        ],
+        [
+          38,
+          13
+        ]
+      ]
+    },
+    {
+      "type": "🌉",
+      "line": [
+        [
+          1,
+          22
+        ],
+        [
+          38,
+          22
+        ]
+      ]
+    },
+    {
+      "type": "🌉",
+      "line": [
+        [
+          10,
+          1
+        ],
+        [
+          10,
+          25
+        ]
+      ]
+    },
+    {
+      "type": "🌉",
+      "line": [
+        [
+          20,
+          1
+        ],
+        [
+          20,
+          25
+        ]
+      ]
+    },
+    {
+      "type": "🌉",
+      "line": [
+        [
+          30,
+          1
+        ],
+        [
+          30,
+          25
+        ]
+      ]
+    },
+    {
+      "type": "🟪",
+      "at": [
+        5,
+        8
+      ],
+      "label": "Pilastro di tufo, dal fondo alla volta (Scalare CD 25, CD 30 dove il sale lo ricopre)"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        15,
+        8
+      ],
+      "label": "Pilastro di tufo, dal fondo alla volta (Scalare CD 25, CD 30 dove il sale lo ricopre)"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        25,
+        8
+      ],
+      "label": "Pilastro di tufo, dal fondo alla volta (Scalare CD 25, CD 30 dove il sale lo ricopre)"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        35,
+        8
+      ],
+      "label": "Pilastro di tufo, dal fondo alla volta (Scalare CD 25, CD 30 dove il sale lo ricopre)"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        5,
+        18
+      ],
+      "label": "Pilastro di tufo, dal fondo alla volta (Scalare CD 25, CD 30 dove il sale lo ricopre)"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        15,
+        18
+      ],
+      "label": "Pilastro di tufo, dal fondo alla volta (Scalare CD 25, CD 30 dove il sale lo ricopre)"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        25,
+        18
+      ],
+      "label": "Pilastro di tufo, dal fondo alla volta (Scalare CD 25, CD 30 dove il sale lo ricopre)"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        35,
+        18
+      ],
+      "label": "Pilastro di tufo, dal fondo alla volta (Scalare CD 25, CD 30 dove il sale lo ricopre)"
+    },
+    {
+      "type": "⛓",
+      "at": [
+        13,
+        6
+      ],
+      "label": "Catena appesa alla volta, scende fino all'acqua: Scalare CD 15, e il ragno la sente vibrare"
+    },
+    {
+      "type": "⛓",
+      "at": [
+        24,
+        10
+      ],
+      "label": "Catena appesa alla volta, scende fino all'acqua: Scalare CD 15, e il ragno la sente vibrare"
+    },
+    {
+      "type": "⛓",
+      "at": [
+        17,
+        16
+      ],
+      "label": "Catena appesa alla volta, scende fino all'acqua: Scalare CD 15, e il ragno la sente vibrare"
+    },
+    {
+      "type": "⛓",
+      "at": [
+        27,
+        20
+      ],
+      "label": "Catena appesa alla volta, scende fino all'acqua: Scalare CD 15, e il ragno la sente vibrare"
+    },
+    {
+      "type": "⛓",
+      "at": [
+        33,
+        11
+      ],
+      "label": "Catena appesa alla volta, scende fino al terrazzo della Torre: Scalare CD 15, e il ragno la sente vibrare"
+    },
+    {
+      "type": "⛓",
+      "at": [
+        7,
+        15
+      ],
+      "label": "Catena appesa alla volta, scende fino all'acqua: Scalare CD 15, e il ragno la sente vibrare"
+    },
+    {
+      "type": "🔼",
+      "at": [
+        20,
+        12
+      ],
+      "label": "La gabbia di discesa dal pozzo grande della piazza (GS-1c)",
+      "collega": "GSC-1C-PIAZZA-DEL-POZZO.md O12"
+    },
+    {
+      "type": "🔽",
+      "at": [
+        1,
+        4
+      ],
+      "label": "Scala di ferro a pioli lungo la parete ovest: scende di 9 m alla quota media (GS-3)",
+      "collega": "GSC-3-QUOTA-MEDIA-E-FONDO.md B05"
+    },
+    {
+      "type": "🔽",
+      "at": [
+        38,
+        22
+      ],
+      "label": "Scala di ferro a pioli lungo la parete est",
+      "collega": "GSC-3-QUOTA-MEDIA-E-FONDO.md AM23"
+    },
+    {
+      "type": "🕸",
+      "rect": [
+        31,
+        14,
+        7,
+        7
+      ],
+      "label": "Il nido est: ragnatele di catene e seta fra le passerelle e la volta"
+    },
+    {
+      "type": "🕸",
+      "rect": [
+        2,
+        15,
+        6,
+        6
+      ],
+      "label": "Il nido ovest"
+    }
+  ],
+  "hazards": [
+    {
+      "type": "🌫",
+      "at": [
+        15,
+        10
+      ],
+      "label": "Il vuoto sopra la sala",
+      "effect": "fra le passerelle non c'è pavimento: chi cade fa 3 m se finisce sul tetto della Torre (est, 1d6), 9 m fino alla quota media se finisce su un ponte o un cornicione (3d6), altrimenti 15 m fino al fondo delle navate, sotto 1 m d'acqua (5d6: l'acqua bassa non attutisce). Caduta lenta di Tordek: 12 m senza danni accanto a un pilastro"
+    },
+    {
+      "type": "🕸",
+      "at": [
+        34,
+        15
+      ],
+      "label": "Ragnatele di catene",
+      "effect": "terreno difficile; chi ci entra è intralciato come dalla ragnatela del ragno fase dell'SRD (Artista della Fuga CD 22, Forza CD 26)"
+    }
+  ],
+  "units": [
+    {
+      "faction": "PG",
+      "name": "I PG, scesi con la gabbia",
+      "token": "🔵",
+      "area": {
+        "rect": [
+          19,
+          13,
+          2,
+          1
+        ]
+      },
+      "quantity": 4
+    },
+    {
+      "faction": "Tariq",
+      "name": "Ragno delle Catene (ragno fase avanzato a 14 DV, Enorme)",
+      "token": "⚫",
+      "at": [
+        34,
+        17
+      ]
+    },
+    {
+      "faction": "Tariq",
+      "name": "Ragno delle Catene",
+      "token": "⚫",
+      "at": [
+        4,
+        17
+      ]
+    }
+  ],
+  "taglie": [
+    {
+      "at": [
+        34,
+        17
+      ],
+      "taglia": "Enorme"
+    },
+    {
+      "at": [
+        4,
+        17
+      ],
+      "taglia": "Enorme"
+    }
+  ],
+  "tattiche": [
+    "**I ragni sentono le catene.** Chiunque tocchi una catena o cammini sulle passerelle oltre i 3 m dalla gabbia fa vibrare la rete: i ragni non vengono sorpresi, salvo *silenzio* o volo.",
+    "**Round 1**: entrambi passano eterei (azione di movimento) e si muovono sotto le passerelle. **Round 2**: tornano materiali alle spalle del PG più isolato (azione gratuita), mordono e lanciano le catene (lancio di catene, 15 m) per ancorarlo alla passerella. **Dal round 3**: un ragno tiene l'ancorato, l'altro va sul volatore (Artemis): le catene a 15 m lo raggiungono anche in volo.",
+    "**Si ritirano** nell'etereo sotto il 25% dei pf e non tornano: riferiranno a Tariq (scelta 14).",
+    "**EL 12** con i due ragni (GS 10 ciascuno con le catene, conti in B4)."
+  ],
+  "evoluzione": [
+    {
+      "stato": "B · nebbia di calce",
+      "trigger": "Tariq, dalla Torre, lancia *nube acida* sulle passerelle (scontro unito)",
+      "griglia": "una nube di 6 m di raggio su un incrocio",
+      "effetto": "2d6 acido a round, occultamento totale oltre 1,5 m; chi vola dentro a più di 9 m a round fa Tempra CD 22 o è nauseato per 1 round (regola del modulo, non SRD). Non fa cadere nessuno"
+    },
+    {
+      "stato": "C · passerella spezzata",
+      "trigger": "un tratto prende 30 danni o un ragno ci si lancia sopra",
+      "griglia": "un tratto di 3 quadretti diventa vuoto",
+      "effetto": "Riflessi CD 15 per chi ci sta sopra, o cade"
+    }
+  ],
+  "note_dm": [
+    "**La Grande Cisterna misura 57 × 37,5 m** di pianta interna. La volta è a +18 m, le passerelle alte a +15, i ponti della quota media a +6, il fondo delle navate a 0, la vasca centrale scende a −6 e sotto di lei il Santuario di Sale sta a −12."
+  ]
+}

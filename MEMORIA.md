@@ -105,6 +105,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-02 | PIATTAFORMA-DI-SVILUPPO | P9 · Dependabot convertitori-settimanale | ✅ minimo di `transformers` portato a 5.22.1 a mano, invece del 5.22.0 di Dependabot: lo stesso valore entrato su EarlRagnar78 con la sua #32, così l'allineamen… |
 | 2026-11-02 | STANDALONE-GIARDINO-SALE-CALCE | card D-a e gruppo PF1e | ✅ il DM sceglie le due consigliate: Karkator al LI 16 col Cuore come chiave, PF1e per un gruppo libero di 13°; già applicate, nessun cambio di testo nei moduli |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | C4 playtester, C1, C5 | ✅ 44 rilievi, corretti i 3 🔴 (prove contro Sal con la scelta 17, come si arriva all'isolotto, TS di chi tocca il Cuore una volta al minuto) e quattro regole fu… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B2-B4 PF1e | ✅ modulo PF1e in Qasr al-Milah: master, sei mappe QM-1…QM-6, appendice PF1e (Karkator GS 16 col Cuore, Tariq chierico 13 di Hasharr), guida al tavolo e manifes… |
@@ -116,7 +117,6 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B6 seconda parte: schemi e piante allineate | 🟡 GS-0 collegamenti, GS-S1 sezione della cisterna, GS-S2 Ragni delle Catene in render_schemi.py; GS-3/GS-4/GS-5 allineate (Torre 18 × 19,5 m, ponte maestro 39… |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | C1 | 🟡 il box del Cuore non presuppone più che il PG lo guardi; attesa di §6.2 (2C) aggiornata a 20 box su 581 in STATO-E-ORDINE-DEI-PIANI |
 | 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | C1, C5 (prima misura) | 🟡 il booklet 3.5 compila e converge (25 pagine, 7 schede, 0 spezzate): elenco degli incantesimi di Tariq fuori dal riquadro, che spezzandosi non convergeva; mi… |
-| 2026-11-01 | STANDALONE-GIARDINO-SALE-CALCE | B6 | 🟡 cartella delle mappe rinominata in Mappe/ come nel resto del repo, così il catalogo dei mostri non scambia i titoli delle mappe per creature; catalogo rigene… |
 
 ## Le misure che si portano dietro
 

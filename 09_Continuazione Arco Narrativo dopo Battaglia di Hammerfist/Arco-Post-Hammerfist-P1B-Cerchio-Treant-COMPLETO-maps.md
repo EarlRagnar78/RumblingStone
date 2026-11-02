@@ -78,106 +78,89 @@ MISSIONI SECONDARIE DISPONIBILI (HEX):
 ```
 ═══════════════════════════════════════════════════════════════════════════════════════
 CERCHIO SACRO DELLA FORESTA (60m Diameter Circle)
+40 colonne × 40 righe · 1,5 m/quadretto · radura Ø 60 m, centro fra T20 e U21
 ═══════════════════════════════════════════════════════════════════════════════════════
 
         NORD ↑ (Ingresso PG)
-        
-COLONNE →  A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R  S  T  U  V  W  X  Y  Z AA AB AC AD AE AF AG AH AI AJ AK AL AM AN AO
-RIGHE ↓    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 
---- PERIMETRO NORD (Entrance Area) ---
-01  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-02  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🚪🚪🚪⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-                             └──┘ PG INGRESSO (Col N-P, Riga 02) - Sentiero naturale 4.5m
+COLONNE →  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF AG AH AI AJ AK AL AM AN
+RIGHE ↓
 
-03  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟫🟫🟫🟫🟫🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-04  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-                    └────────────┘ Burned Zone (terreno ennero, 1d4 fuoco residuo se rimane >1 round)
-
---- ZONA CORROTTA PERIMETRALE (Righe 05-10) ---
-05  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟫🟫🟫💥💥💥💥💥🟫🟫🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-06  ⬛⬛⬛⬛⬛⬛⬛⬛🟫🟫🟫💥💥💥💥💥💥💥💥💥🟫🟫🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-                        └──────────────┘ FUMO & CENERE (Obscurement 20%, Fort DC 15 o nauseato)
-
-07  ⬛⬛⬛⬛⬛⬛⬛🟫🟫💥💥💥💥💥💥💥💥💥💥💥💥💥🟫🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-08  ⬛⬛⬛⬛⬛⬛🟫🟫💥💥💥🟢🟢🟢🟢🟢🟢🟢🟢💥💥💥🟫🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-                            └──────────────┘ TRANSIZIONE: Zona Verde Inizia (barriera magica debole)
-
-09  ⬛⬛⬛⬛⬛🟫🟫💥💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥💥🟫🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-10  ⬛⬛⬛⬛🟫🟫💥💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥💥🟫🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-
---- ZONA VERDE PROTETTA (Righe 11-18) ---
-11  ⬛⬛⬛🟫🟫💥💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥💥🟫🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-12  ⬛⬛⬛🟫💥💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥💥🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-13  ⬛⬛🟫🟫💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥🟫🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-14  ⬛⬛🟫💥💥🟢🟢🟢🟢🗿🟢🟢🟢🟢🟢🟢🟢🟢🟢🗿🟢🟢🟢🟢💥💥🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-                        └─┘ MENHIR 1 (Nord, Col J14)                └─┘ MENHIR 2 (NE, Col U14)
-
---- CERCHIO CENTRALE MENHIR (Righe 15-25) ---
-15  ⬛⬛🟫💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-16  ⬛🟫🟫💥🟢🟢🟢🗿🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🗿🟢🟢🟢💥🟫🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-                    └─┘ MENHIR 3 (NW, Col H16)                        └─┘ MENHIR 4 (NE, Col W16)
-
-17  ⬛🟫💥💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥💥🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛
-18  ⬛🟫💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛
-19  ⬛🟫💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛
-20  ⬛🟫💥🟢🟢🟢🗿🟢🟢🟢🟢🟢🟢🟢⭐🟢🟢🟢🟢🟢🟢🟢🗿🟢🟢🟢💥🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛
-            └─┘ MENHIR 5 (W, Col G20)        └─┘ CENTRO ALTARE (Col O20)     └─┘ MENHIR 6 (E, Col X20)
-
-21  ⬛🟫💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛
-22  ⬛🟫💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛
-23  ⬛🟫💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛
-24  ⬛🟫🟫💥🟢🟢🟢🗿🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🗿🟢🟢🟢💥🟫🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛
-                    └─┘ MENHIR 7 (SW, Col H24)                        └─┘ ME (SE, Col W24 - TREANT EMERGE QUI!)
-
-25  ⬛⬛🟫💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-26  ⬛⬛🟫💥💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥💥🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-
---- ZONA SUD (Righe 27-40, simmetrica Nord) ---
-27  ⬛⬛🟫🟫💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥🟫🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-... [simmetrico fino a riga 40]
-40  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
+01  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
+02  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲   ← ingresso PG dal sentiero nord (T02)
+03  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
+04  🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲
+05  🌲🌲🌲🌲🌲🌲🌲🟫🟫🪵🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+06  🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🪵🟫🟫🌲🌲🌲🌲🌲🌲
+07  🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲
+08  🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲
+09  🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲
+10  🌲🌲🌲🟫🪵🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲
+11  🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🟧🌿🌿🌿🌿🌿🌿🟧🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🪵🟫🟫🌲🌲
+12  🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲
+13  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲
+14  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🗿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🗿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲   ← menhir 1 (N, O14) e 2 (NE, Z14)
+15  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🌲
+16  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🗿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🗿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🌲   ← menhir 3 (NO, M16) e 4 (NE, AB16)
+17  🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫
+18  🟫🟫🪵🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫
+19  🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🪵🟫🟫
+20  🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🗿🌿🌿🌿🌿🌿🌿🌿⭐⭐🌿🌿🌿🌿🌿🌿🌿🗿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫   ← menhir 5 (O, L20), altare T20-U21, menhir 6 (E, AC20)
+21  🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿⭐⭐🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫
+22  🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫
+23  🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫
+24  🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🗿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🗿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫   ← menhir 7 (SO, M24) e 8 (SE, AB24): il treant corrotto emerge qui
+25  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🌲
+26  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟧🟫🟫🟫🟫🟫🪵🟫🟫🌲
+27  🌲🟫🟫🪵🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲
+28  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲
+29  🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲
+30  🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🟧🌿🌿🌿🌿🌿🌿🟧🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲
+31  🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲
+32  🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲
+33  🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲
+34  🌲🌲🌲🌲🌲🟫🪵🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🪵🟫🌲🌲🌲🌲🌲
+35  🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲
+36  🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+37  🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲
+38  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🪵🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🪵🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
+39  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
+40  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
 
 ═══════════════════════════════════════════════════════════════════════════════════════
-
-LEGENDA TERRENI:
-⬛ = Foresta densa esterna (impenetrabile, solid terrain)
-🟫 = Burnt ground (1d4 fire residuo, difficult terrain)
-💥 = Fumo/cenere attiva (Obscurement 20%, Fort DC 15 ogni round)
-🟢 = Zona verde protetta (safe, rigenerazione +2 HP/round se dentro)
-🗿 = Menhir pietra (7 totali, 4.5m alti, indistruttibili)
-⭐ = Altare centrale (3m × 3m, focus rituale)
-🚪 = Ingresso PG
+LEGENDA · 🌿 zona verde protetta (raggio 15 m, +2 PF/round) · 🟧 cenere calda e fumo (raggio 15-18 m: occultamento 20%, Tempra CD 15) · 🟫 terra bruciata (1d4 fuoco residuo, terreno difficile) · 🪵 alberi bruciati abbattuti · 🗿 menhir (4,5 m) · ⭐ altare (3 × 3 m)
+═══════════════════════════════════════════════════════════════════════════════════════
 
 COORDINATE PRECISE:
-- Centro Altare: Col O, Riga 20 (3m × 3m = 2×2 quadrati)
-- Menhir 1 (Nord): Col J, Riga 14
-- Menhir 2 (NE): Col U, Riga 14
-- Menhir 3 (NW): Col H, Riga 16
-- Menhir 4 (NE): Col W, Riga 16
-- Menhir 5 (Ovest): Col G, Riga 20
-- Menhir 6 (Est): Col X, Riga 20
-- Menhir 7 (SW): Col H, Riga 24
-- Menhir 8 (SE): Col W, Riga 24 ← TREANT CORROTTO EMERGE DA QUI!
+- Centro Altare: Col T, Riga 20 (3m × 3m = 2×2 quadrati, T20-U21)
+- Menhir 1 (Nord): Col O, Riga 14
+- Menhir 2 (NE): Col Z, Riga 14
+- Menhir 3 (NW): Col M, Riga 16
+- Menhir 4 (NE): Col AB, Riga 16
+- Menhir 5 (Ovest): Col L, Riga 20
+- Menhir 6 (Est): Col AC, Riga 20
+- Menhir 7 (SW): Col M, Riga 24
+- Menhir 8 (SE): Col AB, Riga 24 ← TREANT CORROTTO EMERGE DA QUI!
 
 DISTANZE CHIAVE:
-- Ingresso (O02) → Centro Altare (O20): 27m (18 quadrati) - 1 move action
-- Centro Altare → Qualsiasi Menhir: 12m (8 quadrati)
+- Ingresso (T02) → Centro Altare (T20): 27m (18 quadrati) - 1 move action
+- Centro Altare → Qualsiasi Menhir: 12-13m (8-9 quadrati)
 - Raggio Zona Verde: 15m (10 quadrati) dal centro
 - Raggio Fumo/Cenere: 18m (12 quadrati) dal centro
+- Raggio della radura: 30m (20 quadrati): la foresta comincia al bordo della mappa
 
 --- ANNOTAZIONI (overlay professionale reso da render_map_svg.py) ---
 @north N
-@mark 1 ; O2 ; Ingresso PG (sentiero naturale 4,5 m)
-@mark 2 ; O20 ; Altare centrale (focus rituale)
-@mark 3 ; W24 ; Menhir SE — il Treant corrotto emerge qui
-@mark 4 ; J14 ; Cerchio dei menhir (8 pietre, 4,5 m)
-@path Squadra incendiaria drow (ovest) ; A16 D18 F20 ; #d62828
-@path Squadra incendiaria drow (est) ; AO16 AL18 AA20 ; #d62828
-@path Avanzata PG (dal sentiero nord) ; O2 O9 O18 ; #2b9348
-@zone F10-X30 ; Zona verde protetta (raggio 15 m, +2 PF/round)
-@zone C7-AB33 ; Anello di fumo, cenere e terra bruciata (i drow bruciano la foresta)
 @tipo tattica esterno
+@mark 1 ; T2 ; Ingresso PG (sentiero naturale 4,5 m)
+@mark 2 ; T20 ; Altare centrale (focus rituale)
+@mark 3 ; AB24 ; Menhir SE — il Treant corrotto emerge qui (Enorme, 3 × 3)
+@mark 4 ; O14 ; Cerchio dei menhir (8 pietre, 4,5 m)
+@path Squadra incendiaria drow (ovest) ; A17 E19 K20 ; #d62828
+@path Squadra incendiaria drow (est) ; AN17 AJ19 AE20 ; #d62828
+@path Avanzata PG (dal sentiero nord) ; T2 T9 T18 ; #2b9348
+@zone K10-AD31 ; Zona verde protetta (raggio 15 m, +2 PF/round)
+@zone I8-AF33 ; Anello di cenere e fumo (raggio 15-18 m)
 ```
 
 ---
@@ -192,7 +175,7 @@ DISTANZE CHIAVE:
 
 > [Pause]
 
-> Poi lo sentite. Un gemito profondo dalla terra stessa. Il menhir più a sud-est (Col W24) si spacca. Radici nere come catrame esplodono dalla terra...
+> Poi lo sentite. Un gemito profondo dalla terra stessa. Il menhir più a sud-est (Col AB24) si spacca. Radici nere come catrame esplodono dalla terra...
 
 ---
 
@@ -255,8 +238,8 @@ DISTANZE CHIAVE:
 **Tactics:**
 
 **PHASE 1 - Emergence (Round 1-2):**
-- **Round 1:** Emerge da Menhir SE (W24), roar intimidazione
-  - Move: 30ft verso centro (arriva Col Q, Riga 22)
+- **Round 1:** Emerge da Menhir SE (AB24), roar intimidazione
+  - Move: 30ft verso centro (arriva Col V, Riga 22)
   - Free Action: Roar (Intimidate +15, 60ft radius, tutti shaken 2 rounds se falliscono Will DC 18)
 
 - **Round 2:** Cast **Radici Avvinghianti** vs Hella
@@ -319,7 +302,7 @@ DISTANZE CHIAVE:
 - **Reach:** 10ft
 
 **Tactics:**
-- Bloccano accesso centro (Col M-Q zone)
+- Bloccano accesso centro (Col R-V zone)
 - Attaccano chiunque passa vicino
 - Ignoran fino distrutti (immune mind effects)
 
@@ -331,26 +314,26 @@ DISTANZE CHIAVE:
 STARTING POSITIONS (Round 1, Treant emerge)
 
 PG PARTONO:
-- Col O, Riga 05 (appena entrati dalla porta nord)
+- Col T, Riga 05 (appena entrati dalla porta nord)
 - Formation suggerita:
-  🔵 Hella: Col O, Riga 05 (frontline, deve reach centro!)
-  🔵 Borin (Aegis Fang): Col N, Riga 05 (left flank, tank)
-  🔵 Artemis (Ranged): Col P, Riga 04 (backline, cover fire)
-  🔵 PG4: Col O, Riga 04 (support/buff)
+  🔵 Hella: Col T, Riga 05 (frontline, deve reach centro!)
+  🔵 Borin (Aegis Fang): Col S, Riga 05 (left flank, tank)
+  🔵 Artemis (Ranged): Col U, Riga 04 (backline, cover fire)
+  🔵 PG4: Col T, Riga 04 (support/buff)
 
 NEMICI ROUND 1:
-🔴 TREANT: Emerge Col W, Riga 24 (Menhir SE)
-- Primo turno: Move verso centro (arriva Col Q, Riga 22)
+🔴 TREANT: Emerge Col AB, Riga 24 (Menhir SE)
+- Primo turno: Move verso centro (arriva Col V, Riga 22)
 
 NEMICI ROUND 3 (se summons):
-🔴 Fire Elem 1: Col G, Riga 12 (perimetro ovest verde)
-🔴 Fire Elem 2: Col X, Riga 12 (perimetro est verde)
-🔴 Fire Elem 3: Col O, Riga 28 (perimetro sud verde)
+🔴 Fire Elem 1: Col L, Riga 12 (perimetro ovest verde)
+🔴 Fire Elem 2: Col AC, Riga 12 (perimetro est verde)
+🔴 Fire Elem 3: Col T, Riga 28 (perimetro sud verde)
 (Random, 1d4 totali appaiono)
 
 NEMICI ROUND 4 (Animated Trees):
-🔴 Tree 1: Col M, Riga 15 (blocks approach ovest)
-🔴 Tree 2: Col R, Riga 15 (blocks approach est)
+🔴 Tree 1: Col R, Riga 15 (blocks approach ovest)
+🔴 Tree 2: Col W, Riga 15 (blocks approach est)
 (2d4 totali, DM choose strategic positions)
 ```
 

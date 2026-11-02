@@ -16,14 +16,16 @@ sopravvivere; **non farsi mai incrociare da Lorana**, l'unica che può
 smascherarla con un solo sguardo.
 **CR**: 8 (canon, calibrata PG 8-9) | **Race/Class**: aranea (mutaforma)
 Stregone 6 — statblock: `mira-serani-aranea-cr8.md` in questa cartella.
-Per il **ritorno ad APL 13** → ramo boost §5 (CR 11 skirmisher / CR 13-14 boss).
+Per il **ritorno ad APL 13** → ramo boost in §In combattimento (CR 11 skirmisher / CR 13-14 boss).
 **Key stats**: → `mira-serani-aranea-cr8.md`. Sintesi: mutaforma (bimba Piccola / adolescente
-Media), incantatrice-controllore, veleno, fuga via *invisibilità*/mutare forma, CD chiave 14-16.
+Media), incantatrice-controllore, veleno, fuga via *invisibilità superiore*/*porta dimensionale*/mutare forma, LI 9, CD chiave 14-17.
 **Token**: — (da assegnare)
 
 ---
 
-## 1. Chi è (canone DM 2026-07-20)
+## Chi è
+
+*Canone DM 2026-07-20.*
 
 Nell'AP originale Mira Serani è un'**aranea** — mostro mutaforma ragno-stregone
 — piazzata come spia della Mano Rossa a **Drellin's Ferry** (il Guado). Nella
@@ -49,9 +51,19 @@ essere scoperta.
 > aggiunge solo uno strato nascosto (regola «aggiungere alla storia» consentita,
 > §1 coherence). L'aranea opera dove opera Lorana (il Guado): geografia coerente.
 
----
+## Aspetto e voce
 
-## 2. Lo smascheramento (il cuore del PNG)
+Di norma è in forma alterata: una bimba profuga che desta tenerezza, o un'adolescente, a seconda di cosa le conviene (§Chi è).
+
+[DA SCRIVERE — come parla e come si muove «Mira», e com'è nella forma vera di aranea: nessun file del repo lo descrive. C'è solo la doppia forma umanoide, Piccola o Media.]
+
+## Cosa vuole
+
+Raccogliere intel su difese e artefatti dei PG per l'orda, e sopravvivere (campo **Motivation** in testa). Quello che teme ha un nome solo: Lorana, l'unica che la smaschera a vista (§Nella campagna).
+
+## Nella campagna
+
+### Lo smascheramento (il cuore del PNG)
 
 Lorana **sa che Mira è morta** e ne porta la spilla. Per questo una «Mira
 viva» è, per lei, un'impossibilità: la riconosce come impostora/aberrazione
@@ -69,9 +81,7 @@ viva» è, per lei, un'impossibilità: la riconosce come impostora/aberrazione
   potrebbero notare (una "bambina" che sparisce ogni volta che arriva la
   capitana).
 
----
-
-## 3. Tre agganci (col mondo già a catalogo)
+### Tre agganci (col mondo già a catalogo)
 
 1. **Onda profughi + infiltratori (state.md §2.5).** L'aranea è il volto
    "nobile" della stessa minaccia dei 3-5 infiltrati: mentre quelli rischiano
@@ -87,9 +97,28 @@ viva» è, per lei, un'impossibilità: la riconosce come impostora/aberrazione
    Lorana — un PNG di supporto — improvvisamente **centrale**: proteggerla,
    portarla ai posti giusti, o usarla come "rilevatore" vivente.
 
----
+## In combattimento
 
-## 4. Decisioni DM (risolte)
+I numeri e le tattiche sono in `mira-serani-aranea-cr8.md`: una spia che entra pre-buffata, semina zizzania e fugge appena la situazione si mette male.
+
+### Ramo di ritorno ad APL 13 (boost, quando ricompare)
+
+Lo statblock canon (`mira-serani-aranea-cr8.md`) è la sua forma da PG 8-9.
+Se ricompare contro il party **attuale (APL 13)**, boost via
+`skills/npc-villain-boosting/`:
+- **Skirmisher CR ~11** (resta una spia che fugge): Aranea Stregone 9
+  (LI 12 con l'innato dell'aranea → 6° livello incantesimi; *invisibilità superiore* e *porta dimensionale* li ha già al GS 8).
+- **Boss CR 13-14** (smette di fuggire, climax): + template
+  **Metà-Immondo/Advanced** e/o +2 DV, *volo*/*forma eterea*, con 2 guardie
+  ragno e terreno di ragnatele → EL da climax su APL 13.
+
+## Esiti possibili
+
+[DA SCRIVERE — nessun file del repo elenca cosa succede se i PG la catturano, la uccidono o la lasciano andare. Ci sono già lo smascheramento davanti a Lorana e la fuga (§Nella campagna), e i due rami del ritorno ad APL 13, skirmisher che fugge o boss che smette di fuggire (§In combattimento).]
+
+## Fonti e canone
+
+### Decisioni DM (risolte)
 
 - **Nome / collisione — RISOLTA (DM 2026-07-20).** La luogotenente *buona*
   di Lorana è stata **rinominata `Mira del Traghetto` → `Nania Seriv del
@@ -99,28 +128,15 @@ viva» è, per lei, un'impossibilità: la riconosce come impostora/aberrazione
   evoca comunque come **«l'Aranea»** per non confonderla con la bambina.
 - **CR / ruolo — DECISO (DM 2026-07-20).** Statblock **canon a CR 8**,
   calibrato per **PG 8-9** (la forma "spia senza scrupoli" da AP, come
-  incrociata sulla strada per Hammerfist). Ramo di ritorno ad APL 13 in §5.
+  incrociata sulla strada per Hammerfist). Ramo di ritorno ad APL 13 in §In combattimento.
 
----
-
-## 5. Ramo di ritorno ad APL 13 (boost, quando ricompare)
-
-Lo statblock canon (`mira-serani-aranea-cr8.md`) è la sua forma da PG 8-9.
-Se ricompare contro il party **attuale (APL 13)**, boost via
-`skills/npc-villain-boosting/`:
-- **Skirmisher CR ~11** (resta una spia che fugge): Aranea Stregone 9
-  (→ 4° livello incantesimi, *invisibilità superiore*, *porta dimensionale*).
-- **Boss CR 13-14** (smette di fuggire, climax): + template
-  **Metà-Immondo/Advanced** e/o +2 DV, *volo*/*forma eterea*, con 2 guardie
-  ragno e terreno di ragnatele → EL da climax su APL 13.
-
-## Righe applicate a `state.md` (canonizzazione 2026-07-20)
+### Righe applicate a `state.md` (canonizzazione 2026-07-20)
 
 > §3 (villain, senza clock numerico — trigger), §4 (cosa sa / hard counter
 > Lorana), §7 (thread [ARANEA]), §8 (changelog). Statblock **canon a CR 8**
-> (calibrato PG 8-9); ramo APL-13 nel §5 di questo dossier.
+> (calibrato PG 8-9); ramo APL-13 in §In combattimento di questo dossier.
 
-## Link
+### Link
 - Vittima/contro: `Bestiario/png/Lorana/Lorana/Lorana.md` (sezione DM segreta)
 - Catena intel: `Bestiario/villain/Sonjak/Sonjak.md`, `Bestiario/villain/Salvatore/`
 - Infiltratori: `campaign/state.md` §2.5; borseggio: `Bestiario/png/Lirien/Lirien.md`

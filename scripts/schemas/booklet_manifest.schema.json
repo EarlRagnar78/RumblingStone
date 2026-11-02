@@ -127,6 +127,14 @@
       ],
       "description": "Formato di composizione. 'a5' e' il libretto a una colonna (corpo 9.6 pt), da imporre poi due pagine per foglio A4 con 'dm volume --imposto' (ADR-0027): comporre in A5 tiene il corpo leggibile, imporre un volume A4 lo scala al 71%. Catene: stampa. La riga di comando (--formato) vince su questa."
     },
+    "schede": {
+      "type": "string",
+      "enum": [
+        "appendice",
+        "qui"
+      ],
+      "description": "Dove esce il riquadro intero delle creature (ADR-0105 punto 7). 'appendice' (predefinito): nell'incontro una riga con nome, GS, CA, pf, rimando e tattica, il riquadro in un'appendice in fondo al volume. 'qui': il riquadro dove è scritto, per i volumi da consegnare ai giocatori. Catene: entrambe."
+    },
     "chapters": {
       "type": "array",
       "minItems": 1,

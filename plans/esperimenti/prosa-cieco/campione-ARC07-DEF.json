@@ -1,0 +1,148 @@
+{
+ "ref": "origin/main",
+ "seme": 20261018,
+ "per_file": 4,
+ "parole_minime": 25,
+ "voci": [
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "indice": 2,
+   "titolo": "L'apertura dell'Affresco A5 (recuperato dall'Interludio — non tagliare)",
+   "testo": "«Il Fuoco ha purificato lo Spirito. Ora la Terra deve testare la Resistenza. Nella Profondità, dove la luce non tocca, troverete la Verità. Cercate l'incudine che non può essere spostata. Cercate lo Smeraldo della Forza.»",
+   "parole": 35
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "indice": 7,
+   "titolo": "SCENA 4 — Il giardino che canta",
+   "testo": "La foresta si apre di colpo, e il buio si accende. Davanti a voi, un giardino: migliaia di cristalli non più alti di un nano, cresciuti in triangoli, esagoni, cerchi concentrici — la geometria di una mente, non del caso. E si MUOVONO: si inclinano verso di voi come girasoli verso un sole che non c'è, e cantano. Non è metafora: ogni cristallo tiene una nota, e le migliaia di note insieme formano un accordo così vasto che arriva allo sterno prima che alle orecchie. Al centro del giardino, alta come tre nani, una madre di luce: sfaccettature a migliaia, e dietro ognuna, un pensiero.",
+   "parole": 105
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "indice": 12,
+   "titolo": "SCENA 5 — Il Seme-Mercato (si gioca dopo la Scena 7)",
+   "testo": "«Bravo. Solo tu potevi vederla. Consideralo un pegno di fiducia tra futuri soci: prendila, incastonala nell'Anello, e hai lo sconto a vita e la mia Falla come tuo magazzino personale. Il grande collezionista non lascerà mai un tesoro simile nella pietra di un piano dimenticato… vero?»",
+   "parole": 46
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "indice": 18,
+   "titolo": "8a. L'ARRIVO — la soglia, l'attracco e i primi sei secondi",
+   "testo": "La soglia si apre come una pupilla, e il mondo si apre con lei. Siete dentro una bolla. Una sfera di cristallo grande come la piazza di un mercato, e la sua parete è l'unica cosa che vi separa dal Piano della Terra: fuori, il buio preme contro il vetro, e dentro quel buio passano lentissime le sagome dei geodi giganti, come pesci troppo grandi intorno a una lanterna. L'aria qui dentro è pulita — la prima aria pulita da ore. Le narici se ne accorgono prima della testa.",
+   "parole": 89
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "indice": 3,
+   "titolo": "A1 — «L'Alba del Mondo» (NORD · statico)",
+   "testo": "Il primo affresco mostra un'era in cui il mondo era ancora caos. Al centro, alto dieci metri, MORADIN: muscoli di granito, barba intrecciata d'oro, mithral e adamantio, e negli occhi le fiamme della creazione. Davanti a lui un'incudine titanica, grande quanto una montagna. Nella sinistra, Frostforge — il martello leggendario, testa di adamantio stellare, manico di ferro grezzo. Nella destra, la CORONA DI ADAMANTIO in fase di nascita, che brilla come una stella appena accesa.",
+   "parole": 75
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "indice": 7,
+   "titolo": "A6 — «Il Viaggio Attraverso il Tempo» (SUD-OVEST · temporale → 80%)",
+   "testo": "Questo affresco è doloroso da guardare a lungo. Mostra due scene SOVRAPPOSTE, come una doppia esposizione che il cervello si rifiuta di separare. Nella prima — Anno −1000 — Hammerfist è giovane, le mura appena erette e ancora lucide; i nani combattono un'orda primitiva di orchetti, e un drago nero GIOVANE si tuffa sulle fortificazioni: il capostipite di una stirpe che riconoscerete. Nella seconda — Anno 1372, ADESSO — Hammerfist è assediata, le mura segnate, l'esercito della Mano Rossa schierato sotto, e Fauci di Palude — lo stesso sangue, mille anni più vecchio e più grande — circola sopra come un avvoltoio. Le due scene si alternano ogni tre battiti, e non capite quale sia «reale».",
+   "parole": 116
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "indice": 16,
+   "titolo": "🔮 ARTEMIS — la porta, dopo che hai già visto il negozio",
+   "testo": "Sai anche, con la stessa certezza, che qualcuno l'ha già aperta prima di te. Lo spiraglio non l'hai fatto tu, e sullo stipite, all'altezza della mano, il legno è consumato da un pollice che ci si è appoggiato molte volte.",
+   "parole": 40
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "indice": 17,
+   "titolo": "🌙 HELLA — dall'altra parte `[handout per la sua giocatrice]`",
+   "testo": "Non stai sognando: tu non dormi più. Ma per la prima volta da quando sei qui, qualcuno dorme vicino a te — abbastanza vicino da sentirli, tre respiri lenti che conosci come conosci il tuo nome. E c'è una quarta cosa, accanto a te, che non respira e sta ferma: una forma di polvere e mithral scuro che aspetta, con la pazienza dei cani, di essere chiamata. Tu non l'hai ancora chiamata. Non sai come. Poi, lontanissima, una voce di uomo — un nano, la voce di un nano che hai tenuto per mano — dice il tuo nome nel sonno. E per la prima volta da quando sei morta, hai freddo. È bellissimo. Il freddo è dei vivi.",
+   "parole": 119
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "indice": 1,
+   "titolo": "SCENA 1 — L'Altare del Cuore",
+   "testo": "La Sala della Forgia si è fatta silenziosa in un modo nuovo. Non il silenzio del vuoto: il silenzio di una sala che trattiene il fiato. Gli otto affreschi guardano dalle pareti — Moradin che forgia, i Quattro Eroi che prendono contorno, Hammerfist che brucia nel suo riquadro. Al centro, l'Altare arde di una fiamma dorata che non consuma. E lì, sulla pietra di mithral, giace il corpo di Hella: le mani incrociate sul petto, la pelle color cera, i tre semi di treant posati, uno su ciascuna mano e uno sulla fronte, che pulsano piano come se già sapessero. Therysol si scosta dalla veglia. Per la prima volta in giorni non ha più bisogno di montare la guardia, e non sa dove mettere le mani.",
+   "parole": 126
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "indice": 9,
+   "titolo": "DONO 1 — THORIK: «La Forza» → **Lo Scudo del Custode**",
+   "testo": "Thorik si toglie la Corona — l'unica altra volta è stato per incastonare lo Smeraldo — e la posa sul petto di Hella. Non prega. Dice soltanto: «Io so come si sta davanti. Adesso lo sai anche tu.»",
+   "parole": 38
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "indice": 10,
+   "titolo": "DONO 2 — TORDEK: «Il Respiro» → **Pelle di Adamantio**",
+   "testo": "Tordek non parla. Preme i palmi sulla terra ai due lati del corpo di Hella, e i Bracieri si spengono di un tono. Quando li rialza, il calore è passato in lei.",
+   "parole": 32
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "indice": 17,
+   "titolo": "SCENA 7 — Il racconto delle prove",
+   "testo": "Hella si volta verso Thorik, e c'è qualcosa nei suoi occhi ambra che lui non sa ancora leggere. «Quando eri nel Piano della Terra, sotto la montagna che ti schiacciava le spalle — ti sei sentito una mano fredda, una luce verde, che ti alleggeriva il peso. Ricordi?» Thorik ricorda: l'aveva scambiata per una benedizione senza nome. «Ero io, Thorik. Non potevo fare altro, da dove ero, che starti vicina. Hai portato peso per me senza saperlo, e io ho portato il tuo. Anche da morta. Siamo pari, tu e io — e non lo eravamo mai stati.»",
+   "parole": 98
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "indice": 3,
+   "titolo": "SCENA 2 — La pattuglia di Durin",
+   "testo": "Fra gli abeti il sentiero scende verso le mura, e dal sottobosco si alzano sette elmi insieme. Sette nani in armatura completa, gli scudi accostati, le asce basse. Quello davanti è più vecchio degli altri e stringe l'ascia doppia così forte che le nocche sono bianche. Nessuno si muove. Da lontano arriva il tonfo sordo dei tamburi dell'orda.",
+   "parole": 58
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "indice": 11,
+   "titolo": "I Treant: come lo viene a sapere Hella, e dove possono andare `[CANONE — DM 2026-10-12, D54]`",
+   "testo": "Sotto la fucina il caldo finisce di colpo. Le gallerie sono strette, puntellate con travi nuove che sanno ancora di resina, e ogni dieci passi una lampada a olio fa il suo cerchio di luce e poi niente. Sulle pareti ci sono segni a gesso, e metà sono stati cancellati col pollice. Da un punto più in fondo arriva il suono paziente di un martelletto su pietra.",
+   "parole": 67
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "indice": 15,
+   "titolo": "✈️ Variante — dall'alto, invisibili e in silenzio",
+   "testo": "Da quassù il campo è una brace sparsa su un pendio. I fuochi mandano tutti lo stesso odore di grasso, e nessuno, laggiù, guarda in alto. Un russare sale fin qui, forte come se venisse dalla tenda accanto. Poi la pietra fa il suo lavoro, e il mondo si spegne: niente russare, niente vento, nemmeno il fiato.",
+   "parole": 57
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "indice": 33,
+   "titolo": "SCENA 13 — Il Rubino e il ritorno",
+   "testo": "Poi la pietra prende fuoco. È un fuoco rosso e oro che non brucia: canta, una nota sola, lunga, che vi risuona nel cranio. Thorik sente nelle ossa una forza che non è sua, e davanti agli occhi gli passano dei lampi: il generale che cade nella tenda, due alberi in marcia che travolgono una fila di nemici, il momento in cui ognuno di voi ha scelto. La pietra li tiene tutti, uno per uno, come si tiene una cosa che servirà.",
+   "parole": 82
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "indice": 0,
+   "titolo": "SCENA 1 — Lo strappo fra le ere",
+   "testo": "Il rosso vi allunga e vi stringe in un filo tirato attraverso mille anni. Non fa male: è una vertigine, e davanti agli occhi le cose accadono al contrario. Il drago risale in cielo, il generale si rialza dalla polvere, le mura anneriscono di secoli in pochi battiti. Un re diventa polvere, e la sua stirpe fiorisce fino a un altro re, curvo su un trono. Poi pietra. Fuoco. Il rombo di una battaglia. Siete tornati, e siete tornati nel momento peggiore.",
+   "parole": 82
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "indice": 1,
+   "titolo": "SCENA 2 — L'apparizione",
+   "testo": "Sotto la luce che vi porta c'è la caverna più sacra della fortezza, e oggi è un mattatoio. Al centro un altare di basalto, intorno dieci statue di re con gli occhi di rubino. Novanta nani, di trecento, fanno un anello intorno all'altare, e la prima fila guarda le porte di mithral che gemono sotto gli arieti. Sull'altare è steso un re, la barba impastata di sangue e di acido, il respiro un sibilo. Una sacerdotessa anziana prega su di lui con le mani che tremano. Le rune sulle porte si spengono una alla volta. È il terzo giorno, ed è l'ora in cui la fortezza doveva cadere.",
+   "parole": 108
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "indice": 4,
+   "titolo": "La Corona si completa, dopo l'uso `[CANONE — DM, D6]`",
+   "testo": "La pietra nuova ha smesso di battere da sola. Per la prima volta da quando Thorik l'ha in testa, l'oro torna indietro da tutte e tre le pietre, e la luce che ne esce non è di nessuna delle tre: è di quello che adesso sono insieme. Il metallo gli si raffredda contro la fronte, e resta caldo come una mano.",
+   "parole": 61
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "indice": 6,
+   "titolo": "SCENA 3 — La pulizia e il passaggio",
+   "testo": "L'ultimo nemico sparisce nel corridoio nord, e il rumore se ne va con lui. Restano il fumo dei bracieri, il respiro dei feriti, e novanta nani che guardano voi e non sanno cosa dire. Poi il re, da terra, alza un braccio verso il soffitto.",
+   "parole": 45
+  }
+ ]
+}

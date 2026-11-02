@@ -52,7 +52,7 @@ col master markdown, che ne è la conversione; Aegis e Anello *Reforged*
 coincidono coi loro master. Quello che i PDF aggiungono è in §1.5 e §3.
 
 ⚠️ **Non letti**: i log delle sessioni vere, che nel repo non ci sono: `campaign/sessions/` ha una sessione di maggio e i log
-retroattivi `[INFERRED]`. Dove il tavolo ha deciso a voce e nessuno l'ha
+retroattivi, ricostruiti e non verbali. Dove il tavolo ha deciso a voce e nessuno l'ha
 scritto, questo audit non lo può sapere.
 
 ---
@@ -173,7 +173,7 @@ moduli giocati tengono separate:
 | File | Verdetto |
 |---|---|
 | `Aegis Fang.docx` / `.pdf` | fonte originale dello Stadio 0; **coincide** col master |
-| `00_Aegis_Fang-MASTER-DM.md` | ⭐ master, corretto. Un `[INFERRED]` si risolve dalla sua fonte (sotto) |
+| `00_Aegis_Fang-MASTER-DM.md` | ⭐ master, corretto. Il punto aperto dello Stadio 1 si risolve dalla sua fonte (sotto) |
 | `00_Aegis_Fang-SCHEDA-GIOCATORE-STATO-ATTUALE.md` | corretto (Doni v4-bis) |
 | `00_Aegis_Fang_Stadio0.html` / `_DM.html` | **definitive dopo questo audit**; prima portavano ancora il *Filo dell'Ascia* (Doni v1) e non avevano sinergie né la reazione dell'ascia al Dono |
 | `05_Aegis_Fang_Final_Awakening.html` | lo Stadio 1, fonte |
@@ -185,7 +185,7 @@ moduli giocati tengono separate:
 | *Filo dell'Ascia* | pagine HTML | **superato** (2026-09-12) |
 | Reazione al Dono di Thorik | `DEF-3` §5, master, scheda md; HTML: assente | aggiunta |
 | Bane contro Fauci (A7) | `DEF-2` §4; si gioca **stasera**, Atto I | casella nella pagina DM, non nella pagina giocatore (è una scoperta) |
-| Stadio 1: aura dei comandanti | master: `[INFERRED — effetto non quantificato]` | **risolto dalla fonte**: `05_…Final_Awakening.html` dice *telepatia coi nani entro 90 m* e *nani vicini immuni alla paura* (aura di 18 m nel calcolo del valore) |
+| Stadio 1: aura dei comandanti | master: effetto non quantificato (ora scritto nel master, Stadio 1) | **risolto dalla fonte**: `05_…Final_Awakening.html` dice *telepatia coi nani entro 90 m* e *nani vicini immuni alla paura* (aura di 18 m nel calcolo del valore) |
 | Stadio 1: quando | `.docx`/master: apoteosi all'Assedio + Corona senziente; `state.md`: vittoria dell'Assedio; `DEF-4` Scena 12: una scena | coincidono: tutto al Rituale 4 |
 
 ---
@@ -287,7 +287,7 @@ Doni sono già caselle. **Definitive, nessuna modifica.**
 | `00_SCHEDA-GIOCATORE-STATO-ATTUALE.md` (Corona) | nota 3-ter dei Doni v1 corretta; rimando alle pagine |
 | `LaCorona_di_Adamantio-DM.md` | banner con i quattro punti superati |
 | `00_Aegis_Fang_Stadio0{,_DM}.html` | Dono v4-bis, sinergie, Stadio 1 e A7 lato DM |
-| `00_Aegis_Fang-MASTER-DM.md` | `[INFERRED]` dello Stadio 1 risolto dalla fonte |
+| `00_Aegis_Fang-MASTER-DM.md` | punto aperto dello Stadio 1 risolto dalla fonte |
 | `00_Ring_Riforgiato{,_DM}.html` | Dono, note di crisi e dei moduli giocati lato DM |
 | `05_Bracieri_…Completa.html`, `00_Cintura_della_Devastazione.md` | Benedizione permanente; Dono nella pagina |
 | `ARTEFATTI-MATRICE-VERSIONI.md` | una riga «versione definitiva» per artefatto |
@@ -437,8 +437,10 @@ dalla scheda, o che manca un potere presente, è un buco. Regole usate (SRD,
   n usi al giorno = diviso (5 ÷ n); un incantesimo continuo che dura 24 ore = metà;
 - **LI minimo** dell'incantesimo, non il 20° dell'artefatto: è come la SRD prezza gli oggetti comuni;
 - **somma semplice**: è un **limite inferiore**. La SRD alza il prezzo quando un oggetto
-  ha più poteri diversi, ma il fattore che ricordo (×1,5 sul minore) e quello della
-  skill `items.md` (×2) non coincidono `[INFERRED — da verificare sul testo SRD]`;
+  ha più poteri diversi: il costo del potere minore si moltiplica per 1,5 (SRD,
+  *Creating Magic Items*, tabella dei prezzi stimati, «Multiply lower item cost
+  by 1.5»; confermato dal DM il 2026-10-17). Un oggetto che occupa uno spazio del
+  corpo, come la Corona, paga +50% su ogni potere in più;
 - **fuori tabella**: i poteri che la SRD non sa contare (1/settimana, 1/mese,
   viaggi nel tempo, RD speciali). Si elencano, non si inventano.
 

@@ -5,7 +5,7 @@
 > 🕰️ **Fazione d'epoca**, simmetrica a `orda-antica-372dr`: i difensori di
 > Hammerfist nel **~372 DR**. Distinti da `hammerfist-hero`, che sono gli eroi
 > del **1372** — mescolarli metterebbe due ere nello stesso incontro.
-**Source**: `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` Appendice A.3 (statblocco nel master DEFINITIVO — Nano Guerriero 6, PF 52, CA 22, Ascia Doppia +1; la guida alla porta di Hammerfist a ~372 DR)
+**Source**: `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` Appendice A.3 (statblocco nel master DEFINITIVO — Nano Guerriero 6, PF 52, CA 22, ascia da guerra nanica +1 e scudo pesante; la guida alla porta di Hammerfist a ~372 DR)
 **Status**: POINTER — NON duplicare lo statblock qui. Usare sempre il file d'arco.
 
 ## Summary
@@ -48,7 +48,7 @@ file di canone (master, glossario, errata), non questa voce.
 
 ⚠️ **Il livello, invece, resta una scelta aperta e piccola.** Guerriero 6
 (master) contro Guerriero 8 (archivio): Durin **non è mai uno scontro
-statuito** — guida i PG alla porta, e al più muore alle mura nella Scena 4,
+statuito** — guida i PG alla porta, e al più muore alle mura nella Scena 10,
 che è una battaglia di massa. Nessuno dei due numeri regge un incontro, e per
 questo la voce segue il master senza forzare.
 

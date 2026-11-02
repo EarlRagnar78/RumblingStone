@@ -2,7 +2,7 @@
 echo "🚀 Activating Intelligent PDF-to-MD Engine v2.2..."
 echo "🖥️  OS: bazzite"
 echo "🧠 Hardware: HIGH_PERFORMANCE"
-echo "🐍 Python: 3.12.12"
+echo "🐍 Python: 3.13"
 source venv/bin/activate
 echo "✅ Environment activated!"
 echo ""

@@ -10,7 +10,7 @@
 > aveva **una voce su nove** (il quick-reference dentro ogni master). Sei pagine
 > che nessuno legge per piacere, e che si aprono ogni volta che si gioca.
 >
-> **Modello**: `STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md` e
+> **Modello**: `10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md` e
 > `08_La Battaglia Di Hammerfist/ARC08-16-CUE-SONORI.md`.
 > **Stato**: apparato d'uso (non canone narrativo). **Data**: 2026-08-31.
 > <!-- /storico -->
@@ -48,6 +48,7 @@ prima.
 | **Skullcrusher il Nero** — il duello a −1000 | vincere davanti all'orda, perché il potere è ciò che gli altri hanno visto | dice **il nome** dell'avversario prima di colpire, ogni volta | `DEF-4` Scena 11 |
 | **Zog'tar** — il generale dell'orda | prendere Hammerfist. Sa uccidere diecimila uomini | parla ai suoi **contando**: «due file», «tre ore», «cento» | `DEF-4` Scena 8 |
 | **Balvar Fuocospento** — il runaio esiliato, consigliere | incidere di nuovo, per chi glielo lascia fare | **non smette di lavorare mentre ti parla**. La punta sull'ardesia continua sotto le sue frasi | `DEF-4` Scena 7 |
+| **Grask** — l'araldo col corno, fuori dalla tenda | non perdere più il corno | **non parla: soffia** | `DEF-4` Scene 6-8 |
 | **Vatore** (Sal a −1000) | la stessa cosa che vuole Sal oggi, mille anni prima | il tono del **collega**, non del nemico. Riconosce una firma, non un debito | `DEF-4` Scena 9 |
 
 ### Chi sta dalla vostra
@@ -58,7 +59,12 @@ prima.
 | **Therysol** — veglia il corpo di Hella | che qualcuno resti col morto. Non scende: veglia | frasi **corte e complete**. Non chiede mai niente | `DEF-2`, `DEF-3` |
 | **Re Thorek I** — Hammerfist ≈372 DR | reggere le mura fino all'alba | parla **al plurale** anche quando parla di sé: «la fortezza pensa» | `DEF-4` Scena 4 |
 | **Durin** — la pattuglia, di notte | portare a casa i suoi | ride **prima** di dire una cosa seria | `DEF-4` Scena 2, Appendice A |
-| **Thorgrim Barbadiferro** — l'antenato | che il martello torni in una mano che sa perché | nomina **il sangue**, mai la persona: «il sangue riconosce il sangue» | `DEF-4` Scena 4 |
+| **Thorgrim Barbadiferro** — l'antenato | che l'ascia torni in una mano che sa perché | nomina **il sangue**, mai la persona: «il sangue riconosce il sangue» | `DEF-4` Scena 4 |
+| **Sorella Brynja** — la cappella della fortezza | che all'alba ci siano incantesimi per le mura | **conta ad alta voce**, sempre; fa ogni domanda due volte, la seconda più piano | `DEF-4` Scena 5 |
+| **Kettra** — l'alchimista del re | finire le fiasche per le mura prima dell'alba | **ride** quando qualcosa sta quasi per andare storto, e solo allora | `DEF-4` Scena 5 |
+| **Gunnvor** — la maestra armaiola | che i duecento vecchi e ragazzi vadano sulle mura con un'arma vera | conta tutto in **braccia**: una pozione «vale un braccio» | `DEF-4` Scena 5 |
+| **Hrodgar** — il capitano delle mura | tenere il tratto est finché il re non gli dice di lasciarlo | dà gli ordini con **una parola sola** | `DEF-4` Scena 10 |
+| **Hald** — il nipote di Balvar, di guardia | il master non lo dice: è una recluta di diciannove anni, e non sa che lo zio esiliato è vivo, né che è nel campo | poco e **a bassa voce**; si drizza quando passa il capitano | `DEF-4` Scena 10 |
 | **Il Custode** (ruolo, non persona) | leggere i pannelli e ricordare un fatto vero | — (è una funzione: la assume un PG) | `DEF-2` §3-4 |
 
 ⚠️ **Fauci** e **Skullcrusher** arrivano da prima di quest'arco e tornano dopo:
@@ -82,6 +88,12 @@ non torna, e il PNG resta senza etichetta.
 | **Therysol** | *te-RÌ-sol* | |
 | **Durik** | *DÙ-rik* | ⚠️ e si confonde con **Durin**: uno emerge dal rituale, l'altro è la pattuglia di mille anni fa. Se li usi nella stessa serata, chiama il secondo «Durin della pattuglia» |
 | **Vatore** | *va-TÓ-re* | è **Sal** a −1000: al tavolo non dirlo mai per primo |
+| **Kettra** | *KÈT-tra* | |
+| **Brynja** | *BRÌN-ia* | la *j* si legge *i* |
+| **Gunnvor** | *GÙNN-vor* | |
+| **Grask** | *GRASK*, una sillaba | |
+| **Hrodgar** | *RÒD-gar*, la *h* non si sente | |
+| **Hald** | *HALD*, una sillaba, la *h* aspirata | ⚠️ non confonderlo con **Hella**: chiamalo «il ragazzo di Hrodgar» se serve |
 | **Hammerfist** | all'inglese, *HÀMMER-fist* | è così che lo dicono i giocatori da nove archi: non correggerli |
 
 ---
@@ -194,8 +206,8 @@ invecchia con le piattaforme (ADR-0018 «regola dei suoni»).
 | **La Sala e gli Affreschi** (`DEF-2`) | eco lunga di stanza vuota. Le voci dei PG tornano indietro: falle tornare anche quando parlano piano |
 | **Il Cuore di Moradin** (`DEF-3` §3-4) | **un battito.** Uno solo, lento, che si sente col corpo più che con l'orecchio. Smette quando Hella apre gli occhi |
 | **Hammerfist ≈372 DR, di notte** (`DEF-4` zona 2) | diecimila tende: cuoio, ferro, e voci in una lingua che non si capisce. **Mai grida**: è un accampamento che dorme |
-| **Le mura all'alba** (`DEF-4` scena 4) | tamburi, e sotto i tamburi **il drago che non si vede ancora** |
-| **Il duello con Skullcrusher** (`DEF-4` §4) | il pubblico. Non i colpi: **la folla che reagisce ai colpi** |
+| **Le mura all'alba** (`DEF-4` Scena 10) | tamburi, e sotto i tamburi **il drago che non si vede ancora** |
+| **Il duello con Skullcrusher** (`DEF-4` Scena 11) | il pubblico. Non i colpi: **la folla che reagisce ai colpi** |
 | **Il ritorno e la manifestazione** (`DEF-5` §4) | silenzio pieno, poi **una voce sola** che riconosce chi è arrivato |
 
 ---
@@ -209,7 +221,7 @@ Uno per master: il picco che il DM sa in anticipo, e che non manda di fretta.
 | `DEF-1` | **Il Distacco** — l'Altare si centra sul guardiano (§8b) | è il round in cui il tavolo capisce che la stanza combatte con loro, non contro |
 | `DEF-2` | **La Visione Condivisa** dei Quattro Eroi (§5) | l'unico momento dell'arco in cui i quattro vedono **la stessa cosa** |
 | `DEF-3` | **Hella apre gli occhi** (§7) | tre sessioni di lutto si chiudono in una riga. Non aggiungere niente dopo |
-| `DEF-4` | **Thorgrim consegna il martello** (scena 2) | mille anni di eredità in un gesto solo |
+| `DEF-4` | **Il colpo finale del duello** (Scena 11): chi abbatte Skullcrusher, e *«com'è che lo fai?»* | il drago di mille anni fa cade per mano loro, o fugge ferito. Il gesto di Thorgrim con l'ascia di Thorik (Scena 4) è già stato giocato |
 | `DEF-5` | **La manifestazione** (§4) | la disfatta che si ribalta davanti a chi l'aveva già data per persa |
 
 ⚠️ **La regola**: un beat che non sa qual è il suo picco lo brucia correndo. Se la
@@ -261,6 +273,6 @@ onestà di `ARC08-16-CUE-SONORI.md`).
 - [ADR-0018](../plans/adr/ADR-0018-apparato-uso-obbligatorio.md) — perché l'apparato è parte del contenuto
 - [`PIANO-TRAVASO-DRAPPO-CAMPAGNA`](../plans/PIANO-TRAVASO-DRAPPO-CAMPAGNA.md) — il lotto A1 è questo file
 - `ARC07-00-INDICE.md` — l'indice dell'arco (file → parte → stato)
-- `STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md` — il modello
+- `10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md` — il modello
 - `08_La Battaglia Di Hammerfist/ARC08-16-CUE-SONORI.md` — il modello dei suoni
 <!-- /storico -->

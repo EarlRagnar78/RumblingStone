@@ -4,6 +4,7 @@
 **In questo file**
 
 - 1. Where echoes live
+- 1-bis. La regola del cambio d'autore *(aggiunta 2026-08-10, dopo due errori veri)*
 - 2. Writing echoes (arming)
 - 3. Firing echoes (payoff)
 - 3-bis. Graded outcomes — the "regola pieno/ridotto" (Palio pattern)
@@ -48,6 +49,40 @@ Threads**, so no existing section is renumbered:
 Existing structures keep their jobs: promises/debts stay in §5, villain
 clocks in §2–§3. An echo is for *unstructured* consequence: the world's
 memory of a choice, good or evil, big or small.
+
+## 1-bis. La regola del cambio d'autore *(aggiunta 2026-08-10, dopo due errori veri)*
+
+> **Un'eco che cambia autore si riscrive da zero, oppure si annulla. Non si
+> rinomina. E l'ID non si riusa mai.**
+
+Perché esiste. Il pegno del Rituale 3 era stato attribuito al PG sbagliato; alla
+correzione, le due echi che ne dipendevano sono state *rinominate* invece che
+riscritte, e il difetto è sopravvissuto al fix:
+
+- **E-07c** era un'eco da **monaco** — *«una parata che prima gli riusciva, un
+  passo che non arriva»* — appiccicata a un guerriero che aveva **DES 10 di
+  base** e la Corona che gliene aveva già tolti 2. Il malus che l'eco chiedeva di
+  far vedere al tavolo **non si vede**. La riscrittura è partita dall'unica cosa
+  che era davvero sua: *ha pagato dove non si vede, e lo elogeranno per la metà
+  che si vede*.
+- **E-07e** era stata **rovesciata** su un altro PG. Ma un'eco registra una
+  **scelta**, e quel PG non ne aveva fatta nessuna: non gli era stato chiesto
+  niente e non aveva rinunciato a niente. **Rovesciare un'eco non la rende vera.**
+  Annullata, con la ragione scritta in tabella.
+
+**Il test, prima di armare un'eco**: *regge se le cambio l'autore?* Se sì, è
+scritta male — sta descrivendo un evento, non una scelta di **quel** personaggio.
+Un'eco buona è intrasferibile.
+
+**Corollario meccanico**: `campaign/state.yaml` § `echi:` pretende `autore` e
+`stato` (`armato`, `sparato`, `annullato`), e `nota_stato` sugli annullati;
+`validate_state.py` (R6) boccia un'eco annullata senza ragione e un ID usato due
+volte. La tabella §7.E di `state.md` è **generata** da lì
+(`scripts/render_state.py`): non si scrive a mano, e un'eco senza autore non è
+esprimibile. Gli annullati **restano in tabella**: un'eco cancellata porta via
+anche la lezione.
+
+*(Ripresa dalla PR #99, commit `f580bc1d`, il 2026-10-24: ADR-0088.)*
 
 ## 2. Writing echoes (arming)
 

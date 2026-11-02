@@ -1,6 +1,6 @@
 # PIANO — Le pratiche d'ingegneria del 2026, misurate sul repo
 
-> **Stato**: 🔵 pianificato (2026-09-24), **D1-D5 decise dal DM lo stesso giorno: sì a tutte** · **Classe**: G per la scelta, C per i lotti
+> **Stato**: 🟡 **in corso**, 30% (aperto il 2026-09-24, **D1-D5 decise dal DM lo stesso giorno: sì a tutte**, poi D1-D12): audit, PI-3 in parte, PI-3b, 38 rami cancellati *(allineato a `INDEX.md` il 2026-10-23, P15)* · **Classe**: G per la scelta, C per i lotti
 > **Nasce da**: domanda del DM del 2026-09-24, dopo la
 > [RICERCA-BDD-O-TDD](RICERCA-BDD-O-TDD-2026-09.md): *«non ha senso invece
 > integrare gli aspetti positivi di entrambi e limitare quelli negativi? Cioè,

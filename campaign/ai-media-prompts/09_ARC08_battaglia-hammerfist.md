@@ -299,3 +299,65 @@ leitmotiv è un drago che il tavolo impara ad aspettarsi.
 - **Riferimenti di stile** (mai da copiare, solo da puntare): il mistero del canto di Moria in Shore, la tensione di *Time* in Zimmer, la minaccia della *Marcia Imperiale* in Williams.
 
 > **Sorgenti Lore:** `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md`. Unità nemiche: Fauci di Palude (drago nero GS 15), Generale Grimjaw, Gorthak il Trifronte. Alleati: Re Thorek, Madre Superiora Dana, Cantitrici della Pietra, Signore Ventolesto (Gufo Celestiale).
+
+## 5. PROMPT DELLE MAPPE PER I GIOCATORI
+
+Migrati il 2026-10-16 da `08_La Battaglia Di Hammerfist/_ARCHIVIO/ARC08-92-DEPRECATO-atlante-visivo-v3-complete.md`, l'unico file che li conteneva. Il testo è quello originale; la griglia tattica di ogni mappa sta in `Mappe/Hammerfist-L{1,2,3}-REVISED-Ultra-Clear.md`. Il prompt della 3Y è già nell'atlante `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md`.
+
+### 🗺️ 1A-1 · Il Sentiero Nascosto
+
+> *"Arte fantasy digitale, stile D&D. Un canyon roccioso e stretto al crepuscolo. Un sentiero appena visibile si arrampica tra massi aguzzi e ombre profonde. In basso, tre orchi brutali in sella a lupi mostruosi delle dimensioni di cavalli pattugliano il passaggio. La scena è tesa, dominata dalla necessità di muoversi senza essere visti."*
+
+### 🗺️ 1A-2 · Il Torrione di Vedetta
+
+> *"Arte fantasy, D&D. Le rovine di un'antica torre di guardia in pietra si ergono sul bordo di un dirupo. Una ranger nana si è appostata in cima, scrutando con un cannocchiale. Sotto, in un piccolo spiazzo, un gruppo di dieci soldati hobgoblin corazzati è accampato attorno a un fuoco, ignaro della sua presenza. La tensione è palpabile."*
+
+### 🗺️ MAPPA 1 · Disposizione generale della battaglia
+
+> *"Inquadratura cinematografica epica, dall'alto e alle spalle dei difensori. Si vedono le mura massicce di una fortezza nanica incastonata in una montagna. Sotto, una vasta pianura è completamente coperta da un oceano di soldati hobgoblin e orchi, organizzati in reggimenti. Giganti preparano catapulte nelle retrovie, e un enorme drago nero volteggia minaccioso nel cielo."*
+
+### 🗺️ 2A · La fortezza, vista isometrica
+
+> *"Mappa tattica isometrica di una fortezza nanica. Mostra un cancello principale protetto da un ponte levatoio su un fossato. Due grandi torri quadrate sono ai lati delle mura. Dietro le mura, due cortili, uno esterno per la mobilitazione e uno interno, più sicuro, dove si trova il comando. Si vedono chiaramente le rampe e le scale che portano ai bastioni."*```
+
+### 🗺️ 2B · La fortezza, vista frontale dall'attaccante
+
+> *"Arte fantasy epica, D&D, vista dal basso. Un'imponente fortezza nanica di pietra grigia è incastonata nel fianco di una montagna. La visuale è quella di un'armata attaccante che guarda verso l'alto lungo un pendio fangoso e roccioso. Un profondo fossato difende mura alte e spesse. Un ponte levatoio è l'unico accesso a un cancello di ferro e legno. Due torri massicce e squadrate fiancheggiano le mura, irte di baliste e difensori. La fortezza appare inespugnabile, una sfida arrogante alla guerra stessa."*
+
+### 🗺️ MAPPA 4 · Evoluzione dei danni (tre schizzi)
+
+> *Mostra una serie di tre schizzi della fortezza: il primo con crepe e fumo; il secondo con un'ampia breccia nel muro da cui sciamano gli orchi; il terzo con il cancello in frantumi e il cortile invaso.*
+
+### 🗺️ 2B-Corretta · L'attacco del drago
+
+> *"Vista dal basso verso l'alto. Un enorme drago nero incombe sopra le merlature di un bastione di pietra, le sue ali oscurano il cielo. Dalle sue fauci spalancate si riversa un cono di fumo acido verde-nero, che sta per investire un gruppo di guerrieri nani, tra cui il loro re con una corona scintillante."*
+
+### 🗺️ 3X · L'ingresso ai passaggi antichi
+
+> *"Arte fantasy, D&D. Un cortile di una fortezza nanica in rovina. Il terreno è coperto di macerie e pozze di acido fumante. Un gruppo di nani sopravvissuti, che trasportano il loro re ferito, si affretta verso un passaggio segreto appena aperto alla base di una grande statua. Alle loro spalle, un'orda di orchi sta per fare irruzione nel cortile."*
+
+### 🗺️ 3Z · L'incrocio silenzioso
+
+> *"Arte fantasy oscura, D&D. Una caverna buia piena di stalagmiti che proiettano ombre lunghe e inquietanti alla luce delle torce. I nani sopravvissuti si raggruppano al centro, proteggendo il loro re ferito, mentre scrutano nervosamente le molteplici aperture dei tunnel che si diramano dall'incrocio. Dalle ombre, occhi malevoli li osservano, in attesa del momento giusto per colpire."*
+
+### 🗺️ MAPPA 5 · Il Cuore della Montagna
+
+> *"Arte fantasy epica, D&D. Una caverna sotterranea immensa e maestosa. Il soffitto è coperto di stalattiti di cristallo che brillano di luce propria. Al centro, su una piattaforma rialzata, si trova un altare runico circondato da statue colossali di antichi re nani. Un piccolo gruppo di guerrieri nani sopravvissuti ha formato un cerchio difensivo attorno all'altare, preparandosi per l'assalto finale che sta per arrivare dall'unico tunnel d'ingresso."*
+
+### 🗺️ 4X · Il campo finale, vista laterale prima della carica
+
+> *"Arte fantasy, D&D, inquadratura laterale. A sinistra, le mura di una fortezza nanica si ergono su un'altura. Un esercito di novanta nani, guidati da eroi scintillanti, è schierato appena fuori dal cancello, pronti a caricare giù per un pendio. A destra, a circa cento metri di distanza in una valle sottostante, i resti demoralizzati di un'armata di hobgoblin si preparano a ricevere l'impatto. Il cielo sopra di loro è nero e tempestoso."*
+
+### 🗺️ MAPPA 4 · La battaglia finale aerea e terrestre
+
+> *"Arte fantasy epica, cinematic. Un colossale drago nero è avvolto da uno sciame di gufi giganti dalle piume luminose, in mezzo a un cielo squarciato da fulmini magici. Sotto questa battaglia aerea, un esercito di nani guidato da eroi leggendari carica fuori dalle porte di una fortezza di montagna, scagliandosi contro i resti terrorizzati di un'armata di hobgoblin."*
+
+### Due descrizioni da leggere, dallo stesso atlante
+
+Per la 2A, quando i PG vedono la fortezza:
+
+> *"Le difese di Hammerfist sono state scavate nella montagna stessa, un capolavoro di ingegneria nanica progettato per resistere per secoli. Le mura esterne, alte dodici metri, sono sormontate da bastioni e fiancheggiate da due torri massicce che ospitano baliste pesanti."*
+
+Per la 3X, all'apertura del passaggio:
+
+> *"Alle vostre spalle, il cortile è un inferno... La guardia superstite vi indica una statua di un antico re nano... spingono la base della statua, rivelando un'apertura buia e polvorosa. È la vostra unica via di salvezza."*

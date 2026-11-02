@@ -20,7 +20,7 @@ voci:
 fonte: valori approssimati nella prosa d'origine (scritti con «~»)
 ```
 
-> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
+> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
 > **Perché esiste (DM 2026-07-20):** l'orda di RumblingStone è **molto più
 > grande** dell'AP originale (~10.000 vs ~6.000), quindi servono **elementi

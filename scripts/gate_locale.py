@@ -15,14 +15,14 @@ Cosa salta, e lo dice:
   è già pronta, o lo dice `dm.py doctor`;
 - i passi con espressioni `${{ … }}` diverse da `github.base_ref`, che qui non
   hanno valore;
-- con `--rapido`, i due corridori dei test (`unittest`, `pytest`).
+- con `--rapido`, il corridore dei test (`pytest`).
 
 Un passo con `continue-on-error` che fallisce è un avviso, non un errore. Lo è
 anche un passo che fallisce nominando uno strumento che in CI porta un passo
 «Install X» saltato qui (typst, per esempio), se sulla macchina manca.
 
     python3 scripts/gate_locale.py              # tutto il job validate
-    python3 scripts/gate_locale.py --rapido     # senza i corridori dei test
+    python3 scripts/gate_locale.py --rapido     # senza il corridore dei test
     python3 scripts/gate_locale.py --elenco     # cosa farebbe, senza eseguire
     python3 scripts/gate_locale.py --solo misura_resa --solo validate_maps
 
@@ -95,7 +95,7 @@ def esegui(voce: dict, env: dict) -> tuple[int, str, float]:
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[1])
-    ap.add_argument("--rapido", action="store_true", help="salta i corridori dei test (unittest, pytest)")
+    ap.add_argument("--rapido", action="store_true", help="salta il corridore dei test (pytest)")
     ap.add_argument("--elenco", action="store_true", help="elenca i passi e cosa ne farebbe, senza eseguire")
     ap.add_argument("--solo", action="append", default=[], metavar="TESTO",
                     help="esegue solo i passi il cui nome o comando contiene TESTO (ripetibile)")

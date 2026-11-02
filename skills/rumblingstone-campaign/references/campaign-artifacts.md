@@ -50,7 +50,7 @@ Adapted from Forgotten Realms lore (originally Wulfgar's warhammer). In this cam
 - **Lesser powers:** *cure moderate wounds* 3/day, *resist energy* 1/day
 - **Dragondoom** (DM 2026-09-25, D14: this is the axe's power vs dragons; no bane vs undead or aberrations at Stage 0) [Private — MIC p. 33]: melee property, +1 equivalent, CL 7th; 3/day, swift action (command), declared before the attack roll, vs a dragon-type creature Large or larger: +1d6 per size above Medium (+1d6 Large … +4d6 Colossal); wasted on a miss or a non-dragon target. Thrown attacks: the text is silent, the DM rules at the table
 - **Weight:** 4 kg
-- **Tonight (2026-09-25), fresco A7:** if Thorik rests the axe on the frame, it speaks and gains the **bane vs Fauci di Palude** (+2 attack, +3d6, ×4 crit, 1/encounter *shaken* 1d4 rounds, Will DC 22). Only vs Fauci; vs other dragons the Dragondoom smite applies
+- **Bane vs Fauci di Palude — obtained at the table on 2026-09-25 (DM 2026-10-15):** Thorik rested the axe on the frame of fresco A7, it spoke and gained the **bane vs Fauci di Palude** (+2 attack, +3d6, ×4 crit, 1/encounter *shaken* 1d4 rounds, Will DC 22). Only vs Fauci; vs other dragons the Dragondoom smite applies. For a future group, A7 gives the D82 version instead (`ARC07-DEF-2` §4: +1d6 on top of the *Dragondoom* plus *shaken*)
 
 ### Full Awakening (After Siege of the Eternal Forge Ritual)
 

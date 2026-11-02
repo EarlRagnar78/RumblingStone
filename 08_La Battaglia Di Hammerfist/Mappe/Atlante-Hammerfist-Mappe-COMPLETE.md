@@ -34,7 +34,7 @@ lettura narrativa, le immagini e i prompt, questo file è la fonte.
 |---|---|---|---|---|---|
 | 1 | 1A-1 Il Sentiero Nascosto | a✅ b✅ c✅ (DEPRECATED) | Lotto-1 ✅ (DEPRECATED) | `Hammerfist-L1-REVISED-Ultra-Clear.md` → MAPPA 1A-1 REVISED | **questo file** (narrativo) + L1-REVISED (griglia) |
 | 2 | 1A-2 Il Torrione di Vedetta | a✅ b✅ c✅ (DEPRECATED) | Lotto-1 ✅ (DEPRECATED) | `Hammerfist-L1-REVISED-Ultra-Clear.md` (griglia) | **questo file** (narrativo) + L1-REVISED (griglia) |
-| 3 | 1A-3 Campo della Mano Rossa | — | Lotto-1 ✅ (DEPRECATED) | `Hammerfist-L1-REVISED-Ultra-Clear.md` → MAPPA 1A-3 REVISED (strategica, 6 m/q) | **questo file** (narrativo) + L1-REVISED (griglia) |
+| 3 | 1A-3 Campo della Mano Rossa | — | Lotto-1 ✅ (DEPRECATED) | `Hammerfist-L1-REVISED-Ultra-Clear.md` → MAPPA 1A-3 REVISED (strategica, 60×60, 3 m/q) | **questo file** (narrativo) + L1-REVISED (griglia) |
 | 4 | MAPPA 1 Disposizione Generale G1 | a✅ b✅ c✅ (DEPRECATED) | — | `Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 1 REVISED (regia, 3 m/q) | **questo file** (narrativo) + L2-REVISED (griglia) |
 | 5 | MAPPA 2A/2B/2C Fortezza (top-down/frontale/laterale) | a/b/c avevano un'unica "MAPPA 2 Unificata" (DEPRECATED) — qui riorganizzata in 3 viste | Lotto-2 ✅ (2A/2B/2C, DEPRECATED) | `Hammerfist-L2-REVISED-Ultra-Clear.md` (griglia 2A; 2B = VISTA 4, 2C = VISTA 3) | **questo file** (narrativo) + L2-REVISED (griglia 2A + viste) |
 | 6 | MAPPA 2 Schieramento Difensivo Truppe | — | — | `Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 2 REVISED (tabella su coordinate 2A) | **questo file** (narrativo) + L2-REVISED (coordinate) |
@@ -49,8 +49,8 @@ lettura narrativa, le immagini e i prompt, questo file è la fonte.
 | 15 | MAPPA 4 Battaglia Finale Aerea e Terrestre | a✅ b✅ c✅ (DEPRECATED) | Lotto-3 ✅ (DEPRECATED) | `Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 4 REVISED (60×68 + vista altitudini) | **questo file** (narrativo) + L3-REVISED (griglia) |
 
 **File deprecati da questa matrice** (banner DEPRECATED aggiunto, D12 — puntano tutti qui):
-`ARC08-90-DEPRECATO-battle-stats-maps.md` (a), `ARC08-91-DEPRECATO-atlante-visivo-v2.md` (b),
-`ARC08-92-DEPRECATO-atlante-visivo-v3-complete.md` (c),
+`_ARCHIVIO/ARC08-90-DEPRECATO-battle-stats-maps.md` (a), `_ARCHIVIO/ARC08-91-DEPRECATO-atlante-visivo-v2.md` (b),
+`_ARCHIVIO/ARC08-92-DEPRECATO-atlante-visivo-v3-complete.md` (c),
 `Mappe/_ARCHIVIO/Hammerfist-Lotto-1-Ricognizione.md`, `Mappe/_ARCHIVIO/Hammerfist-Lotto-2-Assedio.md`, `Mappe/_ARCHIVIO/Hammerfist-Lotto-3-FINALE.md`.
 
 **File NON deprecati** (master tattici, lotto MAPPE-UC 2026-07-23 — copertura griglia COMPLETA):
@@ -104,8 +104,8 @@ questo file resta il master narrativo (descrizioni, immagini, prompt).
 **Immagine:** [148] `hammerfist-1a1.png` — **reale (C3)**: `immagini/13.webp` (mappa tattica), `immagini/sentieroNascosto.webp` + `immagini/00_PM.webp` (arte)
 
 **Tipo:** Infiltrazione tattica  
-**Scala:** 1 quadrato = 3 metri  
-  ⚠️ **[A4: deviazione dalla convenzione repo 1,5m/quadretto]** griglia ASCII originale disegnata a questa scala; non ridisegnata per evitare di alterare posizioni/distanze già usate nel testo (soffio, portate, velocità). DM: non mischiare quadretti di mappe a scale diverse nella stessa sessione.
+**Scala:** 1 quadrato = 1,5 metri (la griglia della L1)  
+**Quota:** il fondo del canyon a ~900 m s.l.m., +30 m sulla piana `[INFERRED]`  
 **Livello Sfida:** CD 5-12 (variabile approccio)
 
 **Descrizione Scenario:**
@@ -145,8 +145,8 @@ SUD ↓
 **Immagine:** [149] `hammerfist-1a2.png` — **reale (C3)**: `immagini/torreVedetta.webp` + `immagini/01.webp` (arte), `immagini/Generated Image October 03, 2025 - 6_09PM.webp` (mappa tattica)
 
 **Tipo:** Osservazione tattica  
-**Scala:** 1 quadrato = 3 metri  
-  ⚠️ **[A4: deviazione dalla convenzione repo 1,5m/quadretto]** griglia ASCII originale disegnata a questa scala; non ridisegnata per evitare di alterare posizioni/distanze già usate nel testo (soffio, portate, velocità). DM: non mischiare quadretti di mappe a scale diverse nella stessa sessione.
+**Scala:** 1 quadrato = 1,5 metri (la griglia della L1)  
+**Quota:** la base del torrione a ~930 m s.l.m., +60 m sulla piana del campo `[INFERRED]`  
 **Altezza:** Torrione 18m, Dirupo 40m caduta
 
 **Descrizione Scenario:**
@@ -197,46 +197,26 @@ Antica torre di guardia in pietra (rovina) si erge sul bordo di un dirupo scosce
 ---
 
 ### MAPPA 1A-3: CAMPO DELLA MANO ROSSA
-**Griglia ultra-clear:** `Hammerfist-L1-REVISED-Ultra-Clear.md` → MAPPA 1A-3 REVISED (strategica, 6 m/q)
+**Griglia ultra-clear:** `Hammerfist-L1-REVISED-Ultra-Clear.md` → MAPPA 1A-3 REVISED (strategica, 60×60, 3 m/q)
 **Immagine:** [150] `hammerfist-1a3.png` — **reale (C3)**: `immagini/03.webp` (orda schierata)
 
 **Tipo:** Vista strategica narrativa  
-**Scala:** Non tattica (400m distanza)  
+**Scala:** strategica, 3 m/quadretto; il campo è sulla piana (870 m s.l.m. `[INFERRED]`), a qualche miglio dalle mura e a 400 m dal Torrione; nell'assedio l'orda si riaccampa a 500 m-1 km dalle mura  
   ⚠️ **Vista strategica — NON è una griglia di combattimento.**
 **Visione:** Cannocchiale Dara dal Torrione
 
 **Descrizione Scenario:**
 Rappresentazione visiva di ciò che Dara vede con cannocchiale masterwork. Non è mappa combattimento, ma illustrazione strategica vastità e organizzazione esercito nemico 900 unità.
 
-**Composizione Esercito Visibile:**
+**Composizione Esercito Visibile** (per quartiere, come nella griglia della L1; le coordinate sono lì):
 
-**RETROGUARDIA (300-250m):**
-- Fauci di Palude (Drago Nero) + Cavaliere Hobgoblin
-- 20 War Adepts (Artiglieria magica sparsa)
-
-**ARTIGLIERIA PESANTE (250-200m):**
-- 8 Giganti delle Colline (Bombardamento)
-- 2 Ettin (Supporto pesante)
-- 4 Catapulte
-
-**COMANDO (200-150m):**
-- Tenda Generale Grimjaw (Stendardi Mano Rossa)
-- 4 Orog Guardie Nere elite
-- Gorthak Trifronte (Ettin a 3 teste)
-- 15 Doom Hand Warpriests
-- 10 Shamani Draconici
-
-**FANTERIA PESANTE (150-100m):**
-- 200 Hobgoblin Guerrieri veterani
-- 30 Hobgoblin Sergenti
-
-**CORPO PRINCIPALE (100-60m):**
-- 300 Fanteria Hobgoblin standard
-- 150 Fanteria Orchesca (carne cannone)
-
-**CAVALLERIA FLANCHI (60m+):**
-- 25 Worg Riders (Flanco Sinistro)
-- 25 Worg Riders (Flanco Destro)
+- **Quartiere hobgoblin:** sei centurie di 12 tende da 3 × 3 m in file, con corsie da 3 m e vie da 6 m. 300 Fanteria Hobgoblin standard, 200 veterani, 30 sergenti.
+- **Piazza del comando:** al centro, dentro uno steccato con quattro varchi. La tenda nera di Grimjaw (18 × 12 m col telo) sta sola nella piazza sgombra, con 4 Orog Guardie Nere e due tende di guardia.
+- **Chierici e adepti:** 15 Doom Hand Warpriests, 10 Shamani Draconici e 20 War Adepts, fra i blocchi e nelle tende dei capi.
+- **Clan degli orchi:** 150 Fanteria Orchesca, dieci fuochi ai fianchi della piazza, un clan per fuoco.
+- **Recinto dei worg:** 25 + 25 Worg Riders, contro il fianco ovest.
+- **Parco d'assedio:** in coda, verso la palude. Gorthak Trifronte, 4 catapulte, carri e botti, 8 Giganti delle Colline e 2 Ettin seduti dietro i carri.
+- **La palude:** Fauci di Palude sommerso, il cavaliere hobgoblin sulla riva.
 
 **Intelligence Ottenibile:**
 - **Osservare CD 15:** Conta approssimativa (800-1000 unità)
@@ -258,7 +238,7 @@ Rappresentazione visiva di ciò che Dara vede con cannocchiale masterwork. Non �
 **Funzione:** DM overview posizioni iniziali tutte forze
 
 **Descrizione Scenario:**
-Alba Giorno 1 assedio. Esercito Mano Rossa dispiegato formazioni militari perfette davanti mura Hammerfist. Vista dall'alto mostra progressione distanze: Drago 300m quota aerea, Artiglieria 200m, Fanteria 100-60m, Fossato 0m.
+Alba Giorno 1 assedio. Esercito Mano Rossa dispiegato formazioni militari perfette davanti mura Hammerfist. L'orda è salita all'alba dagli accampamenti della piana (870 m s.l.m., 500 m-1 km dalle mura) e si schiera sul pendio, che scende di 80 m in 300 m; l'unica via a passo pieno è la strada a tornanti larga 6 m. Vista dall'alto mostra progressione distanze: Drago 300m quota aerea, Artiglieria 200m, Fanteria 100-60m, Fossato 0m.
 
 **Formazioni Distanza (Dal Fossato):**
 
@@ -269,7 +249,7 @@ Alba Giorno 1 assedio. Esercito Mano Rossa dispiegato formazioni militari perfet
 - 20 War Adepts sparsi (Palle Fuoco, Raggi)
 
 **200m - BOMBARDAMENTO PESANTE:**
-- 8 Giganti (Lancio massi 120m gittata, 3d8 danni)
+- 8 Giganti (il masso ha incremento 36 m e arriva al massimo a 180 m: da qui non tirano. Salgono la strada fino al gomito a ~100 m dalle mura e tirano da lì, 3d8)
 - 2 Ettin (Supporto)
 
 **170m - COMANDO CENTRALE:**
@@ -294,7 +274,7 @@ Alba Giorno 1 assedio. Esercito Mano Rossa dispiegato formazioni militari perfet
 - 25 Worg Riders (Sinistra)
 - 25 Worg Riders (Destra)
 
-**0m - DIFESE NANICHE:**
+**0m - DIFESE NANICHE (950 m s.l.m., +80 m sulla piana `[INFERRED]`):**
 - Fossato 6m
 - Ponte Levatoio
 - Cancello Principale
@@ -311,8 +291,7 @@ Reference quick distanze e formazioni. Aggiorna posizioni mentre battaglia proce
 **Immagine:** [152] `hammerfist-map2a.png` — **reale (C3)**: `immagini/04.webp`, `immagini/Generated Image October 03, 2025 - 5_44PM.webp`, `immagini/new_maps/Generated Image October 03, 2025 - 6_14PM.webp` (mappe iso); `immagini/05.webp` (arte)
 
 **Tipo:** Mappa tattica isometrica top-down  
-**Scala:** 1 quadrato = 3×3 metri  
-  ⚠️ **[A4: deviazione dalla convenzione repo 1,5m/quadretto]** griglia ASCII originale disegnata a questa scala; non ridisegnata per evitare di alterare posizioni/distanze già usate nel testo (soffio, portate, velocità). DM: non mischiare quadretti di mappe a scale diverse nella stessa sessione.
+**Scala:** griglia a 1,5 m (L2); l'immagine è illustrativa  
 **Dettaglio:** Massimo, tutte strutture visibili
 
 **Descrizione Scenario:**
@@ -322,38 +301,40 @@ Vista dall'alto completa fortezza nanica Hammerfist. Mostra layout strategico da
 
 **NORD - CUORE MONTAGNA:**
 - Montagna solida impenetrabile
-- Bastione Nord B1-B2 (Difesa posteriore, 15m altezza)
-- Rampe accesso
+- Bastione Nord B1-B2 (terrazza a +120 m, 20 m sopra il cortile interno; B2 è la torre nord della fortezza del 372)
+- Scala interna alla cittadella, dietro il portale dell'atrio
 
 **CENTRO - CORTILE INTERNO:**
 - Area sicura iniziale
 - Comando Centrale (Re Thorek, Madre Dana)
-- 5 Unità Guerrieri Riserva
-- Ingegneri da Guerra (6 Baliste riparazione)
-- Porta Interna (Accesso controllato)
+- 2 Unità Guardie Reali (veterani scelti)
+- Ingegneri da Guerra (riparazioni, 4 unità)
+- Porta Interna in cima alla scarpa di 20 m: il cortile interno è a +100 m, quello esterno a +80
 
 **CENTRO - CORTILE ESTERNO:**
 - Area mobilitazione truppe
 - 5 Unità Nani d'Elite (Prima linea)
+- Riserva: 3 unità (2 di balestrieri, 1 di veterani), il DM la manda dove si apre la breccia
 - Rampe accesso Bastioni Sud
+- Due scale di 30 m salgono la scarpa fino al pianerottolo della Porta Interna
 
 **SUD - DIFESE ESTERNE:**
-- Bastione Sud G1-G2 (15m altezza, merlature)
-  - 4 Unit Guerrieri (2 per bastione)
+- Bastione Sud G1-G2 (15 m sul cortile esterno, merlature)
+  - 6 Unit Veterani (3 per bastione)
   - 2 Unit Balestrieri (1 per bastione)
   - 4 Baliste Pesanti totali (2 per bastione)
 - Torre Ovest (20m altezza)
-  - 2 Unit Balestrieri
+  - 1 Unit Balestrieri (10)
   - 2 Baliste Pesanti
   - Dara Occhiolesto posizione cecchino
 - Torre Est (20m altezza)
-  - 2 Unit Balestrieri
+  - 1 Unit Balestrieri (10)
   - 2 Baliste Pesanti
 
 **SUD - ACCESSO:**
-- Cancello Principale (10m larghezza, legno+ferro rinforzato)
-  - PF: 120, CA: 25, Durezza: 15
-- Ponte Levatoio (15m lunghezza)
+- Cancello Principale (6m di luce, 8m di altezza, legno+ferro rinforzato)
+  - PF: 200, CA: 25, Durezza: 15
+- Ponte Levatoio (7,5m lunghezza, 6m larghezza)
   - PF: 80, CA: 20, alzabile azione completo
 - Fossato Difensivo (6m largo, 3m profondo)
   - Acqua corrente, Nuotare CD 15 o annegamento
@@ -384,12 +365,12 @@ Vista dall'alto completa fortezza nanica Hammerfist. Mostra layout strategico da
 **Prospettiva:** Attaccante guardando verso l'alto
 
 **Descrizione Scenario:**
-Vista che esercito Mano Rossa ha quando affronta fortezza. Mostra imponenza difese naniche: pendio fangoso salita, fossato profondo, mura alte spesse, torri massicce, baliste minacciose. Serve ispirare soggezione attaccanti e orgoglio difensori.
+Vista che esercito Mano Rossa ha quando affronta fortezza. Mostra imponenza difese naniche: pendio di 300 m e 80 m di dislivello, strada a tornanti, fossato profondo, mura alte spesse, torri massicce, baliste minacciose. Serve ispirare soggezione attaccanti e orgoglio difensori.
 
 **Elementi Visibili dal Basso:**
 
 **TERRENO APPROCCIO:**
-- Pendio salita 15% (Terreno difficile, movimento ×0,5)
+- Pendio ~27% fuori strada (metà velocità); la strada a tornanti, larga 6 m e al 15%, è l'unico tratto a passo pieno
 - Fango e rocce scivolose (Equilibrio CD 12 o prone)
 
 **FOSSATO:**
@@ -403,7 +384,7 @@ Vista che esercito Mano Rossa ha quando affronta fortezza. Mostra imponenza dife
 - Merlature sommità (Copertura 3/4 difensori)
 
 **CANCELLO:**
-- 10m larghezza × 8m altezza
+- 6m di luce × 8m altezza
 - Legno ironwood rinforzato ferro
 - Sbarre multiple visibili
 - Simbolo Hammerfist (Martello + Corona) inciso
@@ -416,7 +397,7 @@ Vista che esercito Mano Rossa ha quando affronta fortezza. Mostra imponenza dife
 - Difensori visibili sommità
 
 **BASTIONI CENTRALI:**
-- 15m altezza (tra mura e torri)
+- 15 m sul cortile esterno (tra mura e torri)
 - Piattaforme sopraelevate
 - Baliste multiple posizionate
 - Bandiere Hammerfist sventolano
@@ -448,52 +429,43 @@ Vista from below rende fortezza appear **INESPUGNABILE**. Attaccanti devono:
 **Descrizione Scenario:**
 Vista laterale sezionata (Sud-Nord) mostra tutti livelli verticali fortezza dall'esterno fino cuore montagna. Serve DM comprendere elevazioni combattimenti, cadute, linee vista.
 
-**Sezione Sud → Nord (Livelli Altezza):**
+**Sezione Sud → Nord (Livelli Altezza):** le quote sono riferite alla piana; la tabella delle quote è in testa alla L2 (MISURE, «la fortezza a gradoni»).
 
 **ESTERNO SUD (Attaccanti):**
-- Livello 0m: Terreno base valle
-- Pendenza +3m: Salita verso mura (15% grade)
-- Livello -3m: Fossato profondità
+- 0 m (870 m s.l.m. `[INFERRED]`): la piana, gli accampamenti a 500 m-1 km
+- Da 0 a +80 m: il pendio, ~300 m in pianta (~27%), e la strada a tornanti al 15%
+- Fossato: 3 m sotto il piede del muro
 
-**DIFESE ESTERNE:**
-- Livello 0m: Base mura esterne (Fondamenta)
-- Livello +12m: Sommità mura principali (Walkway)
-- Livello +15m: Bastioni Sud G1-G2 (Platforms)
-- Livello +20m: Torri Est/Ovest sommità
+**FRONTE SUD E CORTILE ESTERNO (+80 m, 950 m s.l.m. `[INFERRED]`):**
+- Soglia del cancello e pavimento del cortile esterno: la quota di riferimento
+- +12 m sul cortile: camminamento delle mura
+- +15 m sul cortile: Bastioni Sud G1-G2
+- +20 m sul cortile: Torri Est/Ovest sommità
 
-**CORTILE ESTERNO:**
-- Livello 0m: Pavimento cortile (Stesso livello base mura)
-- Rampe: +1,5m per 10m lunghezza (Accesso bastioni)
+**SCARPA E PORTA INTERNA:**
+- Una scarpa di 20 m fra il cortile esterno e quello interno, con due scale di 30 m e un pianerottolo
+- La Porta Interna (il muro del 372) sta in cima, soglia a +100 m
 
-**PORTA INTERNA:**
-- Livello +3m: Soglia porta (Rialzata)
-- Difesa aggiuntiva: Scalini forzano rallentamento
-
-**CORTILE INTERNO:**
-- Livello +3m: Pavimento cortile interno (Più sicuro)
+**CORTILE INTERNO (+100 m, 970 m s.l.m. `[INFERRED]`):**
 - Comando Centrale qui (Protetto)
 
-**MURA INTERNE:**
-- Livello +3m: Base mura interne
-- Livello +15m: Sommità (Stessa altezza bastioni sud)
-
-**BASTIONI NORD:**
-- Livello +15m: Bastioni Nord B1-B2 (Difesa posteriore)
-- Montagna: Solida oltre (Impenetrabile)
-
-**NORD - MONTAGNA:**
-- Livello +15m+: Roccia montagna solida
+**BASTIONI NORD E CITTADELLA (+120 m, 990 m s.l.m. `[INFERRED]`):**
+- Bastioni Nord B1-B2, 20 m sopra il cortile interno, contro la roccia
+- Dietro il portale dell'atrio una scala interna sale alla cittadella
 - Cuore Montagna: Profondo interno (Sessione 3)
+
+**La fortezza del 372** aveva il cortile a +100 e la torre nord a +120; il ripiano a +80 era la spianata nuda dove battevano gli arieti.
 
 **Uso DM:**
 Reference quick altezze cadute:
-- Caduta Bastioni → Cortile: 15m (15d6 danni)
-- Caduta Torri → Fossato: 20m (20d6 danni)
-- Caduta Mura → Fossato: 15m (15d6 danni + annegamento CD 15)
+- Caduta Bastioni → Cortile esterno: 15 m (5d6 danni: 1d6 ogni 3 m, SRD)
+- Caduta Torri → Fossato: 23 m (7d6, la metà se l'acqua è profonda abbastanza; Nuotare CD 15)
+- Caduta Mura → Fossato: 15 m (5d6, Nuotare CD 15)
+- Caduta dalla scarpa o dai Bastioni Nord: 20 m (6d6)
 
 Linee vista verticali:
 - Bastioni Sud vedono Cortile Esterno: SI
-- Bastioni Sud vedono Cortile Interno: NO (mura interne bloccano)
+- Bastioni Sud vedono Cortile Interno: NO (sta 20 m più in alto, dietro la scarpa e il muro)
 - Torri vedono tutto: SI (altezza superiore)
 
 ---
@@ -508,53 +480,48 @@ Linee vista verticali:
 **Funzione:** DM tracking truppe durante battaglia
 
 **Descrizione Scenario:**
-Mappa schematica mostra DOVE ogni unità nanica posizionata all'inizio Giorno 1. Include 15 Unit Guerrieri, 8 Unit Balestrieri, 4 Unit d'Elite, 4 Unit Ingegneri, PNG chiave.
+Mappa schematica mostra DOVE ogni unità nanica posizionata all'inizio Giorno 1. Il conto è quello della L2 (MAPPA 2 REVISED): 300 nani in 30 unità da 10. Veterani 13 (2 sono le Guardie Reali), balestrieri 8, élite 5, ingegneri 4. Alle postazioni ne stanno 270; i 30 senza posto sono la riserva.
 
 **Distribuzione Forze Naniche (300 totali):**
 
-**TORRE OVEST (20 creature):**
-- 2 Unit Balestrieri (20 nani)
-- 2 Baliste Pesanti
+**TORRE OVEST (10):**
+- 1 Unit Balestrieri, 2 Baliste Pesanti
 - **Dara Occhiolesto** (Cecchino, Osservatore)
 
-**TORRE EST (20 creature):**
-- 2 Unit Balestrieri (20 nani)
-- 2 Baliste Pesanti
+**TORRE EST (10):**
+- 1 Unit Balestrieri, 2 Baliste Pesanti
 
-**BASTIONE SUD G1 (25 creature):**
-- 2 Unit Guerrieri (20 nani)
-- 1 Unit Balestrieri (10 nani)
-- 1 Balista Pesante
+**BASTIONE SUD G1 (40):**
+- 3 Unit Veterani + 1 Unit Balestrieri, 2 Baliste Pesanti
 - **Nala Cantapietre** (Infiltrazione, Sabotaggio)
 
-**BASTIONE SUD G2 (25 creature):**
-- 2 Unit Guerrieri (20 nani)
-- 1 Unit Balestrieri (10 nani)
-- 1 Balista Pesante
+**BASTIONE SUD G2 (40):**
+- 3 Unit Veterani + 1 Unit Balestrieri, 2 Baliste Pesanti
 
-**CORTILE ESTERNO (50 creature):**
-- 5 Unit Nani d'Elite (50 nani)
+**CORTILE ESTERNO (50):**
+- 5 Unit Nani d'Elite
 - **Borin Ferropugno** (Comando prima linea)
 - Posizione: Davanti Cancello Principale (Ready intercettare brecce)
 
-**CORTILE INTERNO - COMANDO (100 creature):**
+**RISERVA, CORTILE ESTERNO (30):**
+- 2 Unit Balestrieri + 1 Unit Veterani
+- Il DM la manda dove si apre la breccia
+
+**CORTILE INTERNO - COMANDO (20):**
 - **Re Thorek Hammerfist** (Comando Supremo)
-- 2 Unit Guardie Reali (20 nani elite)
+- 2 Unit Guardie Reali (veterani scelti)
 - **Madre Superiora Dana Forgiapietra** (Supporto divino)
 - 5 **Cantitrici della Pietra** (Buff massa)
-- 5 Unit Guerrieri Riserva (50 nani)
 - **Thorin Runaforte** (Supporto divino mobile)
 
-**BASTIONE NORD B1 (20 creature):**
-- 2 Unit Guerrieri (20 nani)
-- 1 Unit Balestrieri (10 nani)
+**BASTIONE NORD B1 (30, a +120 m):**
+- 2 Unit Veterani + 1 Unit Balestrieri, 1 Balista
 
-**BASTIONE NORD B2 (20 creature):**
-- 2 Unit Guerrieri (20 nani)
-- 1 Unit Balestrieri (10 nani)
+**BASTIONE NORD B2 (30, a +120 m):**
+- 2 Unit Veterani + 1 Unit Balestrieri, 1 Balista
 
-**INGEGNERI (40 creature):**
-- 4 Unit Ingegneri Guerra (40 esperti)
+**INGEGNERI (40):**
+- 4 Unit Ingegneri Guerra
 - Funzione: Riparano strutture (1d4 PF/round), Baliste, Trappole improvvisate
 - Posizione: Sparsi Cortile Interno (Ready emergenze)
 
@@ -563,7 +530,7 @@ DM aggiorna posizioni quando:
 - Unità si muove (ordine Re Thorek o PG)
 - Unità eliminata (segna X)
 - Rinforzi arrivano (segna nuove posizioni)
-- Ritirata ordinata (sposta verso Cortile Interno → Bastioni Nord → Tunnel Fuga)
+- Ritirata ordinata (scale della scarpa → Porta Interna → Cortile Interno → Tunnel Fuga; i Bastioni Nord coprono dall'alto)
 
 ---
 
@@ -582,8 +549,8 @@ Mappa mostra tre fasi distinte attacco coordinato Mano Rossa Giorno 1. Frecce in
 **FASE 1: BOMBARDAMENTO (Round 1-5)**
 
 **Attaccanti Coinvolti:**
-- **Giganti (200m):** Lanciano massi vs mura/torri
-  - Gittata: 120m
+- **Giganti (partono a ~210 m):** Lanciano massi vs mura/torri
+  - Gittata: incremento 36 m, al massimo 180 m (SRD). Salgono la strada fino al gomito a ~100 m dalle mura e tirano da lì, a −4; sulla strada sono bersagli per le baliste
   - Danni: 3d8 per masso
   - Target prioritari: Torri (distruggere baliste), Cancello (creare breccia)
   - Frequenza: 1 masso/2 round per gigante (8 giganti = 4 massi/round)
@@ -649,7 +616,7 @@ Mappa mostra tre fasi distinte attacco coordinato Mano Rossa Giorno 1. Frecce in
 **FASE 3: PRESSIONE CONTINUA (Round 11-15)**
 
 **Notte 1 → Giorno 2:**
-- Nemici si ritirano 200m (Fuori gittata frecce)
+- Nemici si ritirano agli accampamenti della piana, a 500 m-1 km (fuori tiro d'arco lungo, ~330 m); sul pendio restano pattuglie e giganti
 - Mantengono pressione: Adepti lanciano durante notte
 - Giganti working overnight: Creano rampa macerie verso breccia
 - Nani: Riparano CRITICAL (Cancello priority, Ingegneri 1d4 PF/round)
@@ -712,7 +679,7 @@ Tre schizzi side-by-side mostrano progressivo collasso difese Hammerfist durante
 **PANEL B: BRECCIA PRINCIPALE - METÀ GIORNO 2**
 
 **Stato Strutture:**
-- **Mura Est BRECCIA:** 8 metri larghezza, rampa macerie
+- **Mura Est BRECCIA:** 7,5 metri larghezza, rampa macerie
   - Orchi stream through (XXX marked)
   - Impossibile difendere efficace (flanked)
 - **Cancello Principale:** Sfondato parziale, barra centrale rotta
@@ -774,10 +741,10 @@ Visual aid helps players understand stakes without calculating PF numericamente.
 **Tipo:** Moment cinematico  
 **Scala:** Non griglia (Visual drama)  
   ⚠️ **Scena cinematica — NON è una griglia di combattimento.**
-**Timing:** Giorno 2, Round speciale
+**Timing:** Giorno 3, Round speciale
 
 **Descrizione Scenario:**
-Momento ICONICO campagna: Fauci di Palude dragon dive attack vs Re Thorek sui bastioni. Vista dal basso guardando alto, drago massive incombe sopra merlature, soffio acido cone 18m sta per engulf re nanico e guardie.
+Momento ICONICO campagna: Fauci di Palude dragon dive attack vs Re Thorek. Al corno del drago il Re è salito sul cancello per tenere i nani ai loro posti, e il soffio lo prende lì. Vista dal basso guardando alto, drago massive incombe sopra merlature, soffio acido cone 18m sta per engulf re nanico e guardie.
 
 **Elementi Visibili:**
 
@@ -790,13 +757,13 @@ Momento ICONICO campagna: Fauci di Palude dragon dive attack vs Re Thorek sui ba
 - Breath Weapon: Cono 18m verde-nero corrosivo streaming
 
 **BASTIONI CENTRALI (Target):**
-- Altezza: 15m (Vista dal basso li mostra elevated)
-- Walkway: 3m larghezza (Cramped, nowhere hide)
+- Altezza: 15 m sul cortile esterno (Vista dal basso li mostra elevated)
+- Camminamento: 4,5m larghezza (Cramped, nowhere hide)
 - Merlatures: Parziali copertura (Insufficiente vs breath)
 - Defenders: Visibili silhouettes contro sky
 
 **RE THOREK + GUARDIE:**
-- Thorek: Centro bastione, Corona brillante identifying
+- Thorek: sulla piattaforma sopra il cancello, fra G1 e G2, Corona brillante identifying
   - Martello Ancestrale alzato (Defiant gesture futile)
   - Armatura Completa +4 reflecting light
   - Espressione: Determinazione facing death
@@ -823,13 +790,13 @@ Momento ICONICO campagna: Fauci di Palude dragon dive attack vs Re Thorek sui ba
 - **Targets:** Re Thorek + 10 Guardie + Borin + Thorin (13 totali)
 - **Risultato Probabile:** 
   - Guardie (PF 42 media): 6-8 KO instant (Failed save = death)
-  - Re Thorek (PF 195): Survives (Resistenza + items), heavily wounded
+  - Re Thorek (PF 196): Survives (Resistenza + items), heavily wounded
   - Borin (PG): Tough call (Depends save)
   - Thorin (pregen, non ancora PG in questa scena — D6/D2): Likely survive (Chierico AC alto)
 
 **Controffensive Possibili:**
 - **Dara (Torre Ovest):** Crossbow Heavy +1 attack (Extreme range -6, +19 final = +13)
-  - Se hit: 1d10+3 danni (Insignificant vs drago PF 312 MA morale boost)
+  - Se hit: 1d10+3 danni (Insignificant vs drago PF 337 MA morale boost)
 - **Nala (Nascosta):** Ready action *Suggestione* quando drago vicino (Demoralize attempt)
 - **Baliste Torri:** Crew reload (Next round ready)
 - **Madre Dana:** Cast *Mass Cure Serious Wounds* (8d8+25 healing distributed, salvage survivors)
@@ -842,7 +809,7 @@ Questo è **TURNING POINT** Giorno 2. Soffio drago devastates leadership nanico,
 ## 🏃 SESSIONE 3: DALLE PROFONDITÀ DELLA TERRA
 
 ### MAPPA 3X: INGRESSO PASSAGGI ANTICHI
-**Griglia ultra-clear:** `Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA H3-1 (40×40, 1,5 m)
+**Griglia ultra-clear:** `Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA H3-1 (72×36, 1,5 m)
 **Immagine:** [157] `hammerfist-3x.png` — **reale (C3)**: `immagini/08.webp` (mappa evacuazione)
 
 **Tipo:** Escape tactical  
@@ -926,8 +893,8 @@ Cortile Interno ridotto inferno fumante. Pozze acido verde corrosivo steam ovunq
 
 ### MAPPA 3Y: IL PONTE SOSPESO
 **Griglia ultra-clear:** `Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 3Y REVISED (33×27, 1,5 m)
-**Immagine:** [157b] `hammerfist-3y.png` — **reale (C3)**: `immagini/09.webp` (Borin al ponte) — `[INFERRED — numero immagine non
-ancora assegnato, migrato da 00_ATLANTE VISIVO...-complete.md — A8]`
+**Immagine:** [157b] `hammerfist-3y.png` — **reale (C3)**: `immagini/09.webp` (Borin al ponte) — migrato da 00_ATLANTE VISIVO...-complete.md (A8); il numero
+[157b] resta senza immagine propria
 
 **Tipo:** Retroguardia / difesa a strozzatura
 **Scala:** 1 quadrato = 1,5 metri
@@ -935,7 +902,7 @@ ancora assegnato, migrato da 00_ATLANTE VISIVO...-complete.md — A8]`
 
 **Descrizione Scenario:**
 Il tunnel si allarga in una caverna divisa in due da un baratro buio e
-profondo. L'unico passaggio è un ponte di pietra stretto (3m) e senza
+profondo. L'unico passaggio è un ponte di pietra stretto (3m), lungo 15 m e senza
 parapetti: punto perfetto per una difesa disperata di retroguardia
 mentre il resto dei nani continua l'evacuazione verso MAPPA 3Z e
 MAPPA 5.
@@ -967,8 +934,7 @@ MAPPA 5.
 **Guida narrativa:** `../ARC08-01-GUIDA-DM.md` → Incontro 2F "L'Incrocio Silenzioso"
 
 **Tipo:** Ambush encounter  
-**Scala:** 1 quadrato = 2 metri  
-  ⚠️ **[A4: deviazione dalla convenzione repo 1,5m/quadretto]** griglia ASCII originale disegnata a questa scala; non ridisegnata per evitare di alterare posizioni/distanze già usate nel testo (soffio, portate, velocità). DM: non mischiare quadretti di mappe a scale diverse nella stessa sessione.
+**Scala:** 1 quadrato = 1,5 metri; la caverna è un ottagono di ~40 m con sei tunnel  
 **Timing:** 30 minuti dopo tunnel ingresso
 
 **Descrizione Scenario:**
@@ -994,13 +960,13 @@ Tunnel principale apre caverna più ampia piena stalagmiti proiettano ombre lung
 - **Nord-Ovest:** Tunnel imboscata 3 (Hobgoblin Sergente + 6 Guerrieri)
 
 **IMBOSCATA BUGBEAR (Est + Ovest):**
-- **8 Bugbear Assassini Totali:** Rogue 5/Assassin 2, CR 7 ciascuno
+- **8 Bugbear Assassini Totali:** Rogue 5/Assassin 2, CR 9 ciascuno (scheda `Bestiario/mostri/bugbear-assassino-ladro5-assassino2-cr9.md`: per l'SRD i livelli di classe si sommano al GS 2 della razza) `[CANONE — DM 2026-10-19, D10]`
 - **Tattiche:**
-  - Nascondersi in Ombra: Bonus +12 (Darkness tunnel + racial)
+  - Nascondersi in Ombra: Bonus +17 (scheda del Bestiario)
   - Osservare CD 25 per notarli PRIMA che attacchino
   - Target: Isolated creatures O Re Thorek (High-value)
   - Death Attack: CD 16 Fort O paralysis 1d6+2 round
-  - Sneak Attack: +5d6 damage FIRST strike
+  - Sneak Attack: +4d6 damage FIRST strike (3d6 rogue + 1d6 assassin, SRD)
 - **Trigger:** Attaccano quando nani al centro (Maximum targets vulnerable)
 
 **IMBOSCATA HOBGOBLIN (Nord-Ovest):**
@@ -1057,7 +1023,7 @@ Multi-threat simultaneous:
 **Timing:** Sessione 3 Incontro 3B (CLIMAX!)
 
 **Descrizione Scenario:**
-Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m altezza coperto stalattiti cristallo brillano luce propria (bioluminescent blue-white). Centro: Altare pietra nera dedicato Moradin, rialzato 3m piattaforma, circondato 10 statue colossali Re Nanici ancestrali (4m altezza ciascuno, occhi rubino brillanti). 90 nani superstiti formazione cerchio difensivo attorno altare, preparano ultima resistenza. Single mithral door Nord tunnel = unico ingresso... nemici arriving.
+Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m altezza coperto stalattiti cristallo brillano luce propria (bioluminescent blue-white). Centro: Altare pietra nera dedicato Moradin, rialzato 3m piattaforma, circondato 10 statue colossali Re Nanici ancestrali (4m altezza ciascuno, occhi rubino brillanti). 90 nani superstiti schierati davanti all'altare, rivolti all'unica porta, preparano ultima resistenza. Single mithral door Nord tunnel = unico ingresso... nemici arriving.
 
 **Elementi Mappa:**
 
@@ -1066,10 +1032,10 @@ Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m alt
 - **Elevazione:** +3m sopra pavimento caverna
 - **Materiale:** Pietra nera basaltica, rune oro Nanico incise
 - **Funzione Narrativa:** **PUNTO APPARIZIONE RUMBLING STONES!**
-  - Round 8 combattimento: Sfera dorata tricolore materializza 3m sopra altare
+  - Round 9-10 combattimento (guida, Incontro 3C; i giocatori prendono i PG al round 11): Sfera dorata tricolore materializza 3m sopra altare
   - Luce esplosione: Oro (Topazio) + Verde (Smeraldo) + Rosso (Rubino)
   - 4 Silhouette eroi emergono: Thorik, Tordek, Artemis, Hella
-  - Effetto: Benedizione istantanea 90 nani (+6 morale, 2d8 HP heal, immune fear 1h)
+  - Effetto: Benedizione istantanea 90 nani (cura 2d8 pf a tutti `[CANONE — DM 2026-10-18]`, immuni alla paura 1 ora; il morale lo dà l'Aura della Forgia Eterna di Thorik, +4 entro 30 m, se la usa: niente «+6 morale»)
 
 **10 STATUE RE ANCESTRALI:**
 - **Posizioni:** Circle 20m raggio attorno altare (Equidistanti)
@@ -1078,18 +1044,16 @@ Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m alt
 - **Occhi Rubino:** Brillano quando PG appear (Recognition ancestral bloodline)
 - **Simbolismo:** 10 generazioni Re Hammerfist (4.000+ anni storia)
 
-**CERCHIO DIFENSIVO NANICO:**
-- **Formazione:** 90 superstiti ring 360° attorno altare
-- **Spacing:** 3m tra guerrieri (Allow movement)
-- **Layers:**
-  - Outer: 60 Guerrieri (Shields up, spears ready)
-  - Middle: 20 Balestrieri (Crossbows loaded)
-  - Inner: 10 Leaders + Re Thorek + PNG Giocabili
+**LO SCHIERAMENTO NANICO** `[CANONE — DM 2026-10-30]` (prima era un anello di 360°: la porta è l'unico ingresso, e l'anello copriva pareti da cui non entra nessuno):
+- **Formazione:** 90 superstiti a 30 m dall'altare, rivolti alla porta nord
+- **Centro, davanti al varco:** 40 guerrieri su quattro file di scudi, dietro 12 balestrieri e 6 capi
+- **Due ali piegate verso l'altare (ovest ed est):** ciascuna 10 guerrieri, 4 balestrieri e 2 capi; tengono i fianchi del centro
+- **All'altare:** Re Thorek e i PNG giocabili; il sud resta scoperto
 - **Morale:** Desperate (-4 iniziale), transita +2 post-apparizione PG (Swing +6!)
 
 **RE THOREK XIII:**
 - **Condizione:** Critical (8 HP rimanenti, -187 HP persi)
-  - Stabilized (Thorin *Cure* spells)
+  - Avvelenato: una prova di Guarigione CD 25 a ogni round finché nessuno lo cura per magia; al terzo fallimento muore. *Neutralizzare veleno* o *guarigione* (SRD) fermano le prove, le *cure ferite* no `[CANONE — DM 2026-10-19, D12]`
   - Conscious but weak (Can speak, cannot fight)
   - Position: Center altare (Surrounded protectors)
 - **Momento Drammatico:** Quando PG appear, Thorek occhi aprono
@@ -1117,36 +1081,37 @@ Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m alt
 
 **ONDATE NEMICHE (Incontro 3B):**
 
-**Ondata 1 (Round 1-2): 30 ORCHI BERSERKER**
+**Ondata 1 (Round 3-4, come la guida): 30 ORCHI BERSERKER**
 - Charge tunnel → altare (Reckless)
-- **Effetto Apparizione PG (Round 1 finale):** 20/30 shaken (TS Will CD 25 failed)
+- **Effetto Apparizione PG (round 9-10, su chi è ancora in campo):** TS Volontà CD 20 o spaventati per 10 round (guida, «Effetti dell'Apparizione»)
   - Shaken: -2 all rolls (Morale broken)
   - Panico: 5 flee back tunnel
 
-**Ondata 2 (Round 3-5): 20 HOBGOBLIN SERGENTI**
+**Ondata 2 (Round 5-6, come la guida): 20 HOBGOBLIN SERGENTI**
 - Disciplinati, advance formazioni shield wall
 - **Immune fear** (Trained veterans)
 - Focus: Tenere nani engaged mentre ondata 3 arrives
 
-**Ondata 3 (Round 6-8): 15 BUGBEAR ASSASSINI**
-- Stealth approach (Nascondersi +12)
+**Ondata 3 (Round 7-8, come la guida): 15 BUGBEAR ASSASSINI**
+- Stealth approach (Nascondersi +17; scheda `Bestiario/mostri/bugbear-assassino-ladro5-assassino2-cr9.md`, GS 9) `[CANONE — DM 2026-10-19, D10]`
 - Target: Leaders + Re Thorek (Assassination attempts)
-- **Interrupted:** PG apparizione Round 8 = Surprise reversed!
+- **Interrupted:** PG apparizione round 9-10 = Surprise reversed!
 
-**Ondata Finale (Round 9-10): GRIMJAW + 10 OROG**
+**Ondata Finale (corno al round 11, ingresso al round 12): GRIMJAW + 10 OROG** `[CANONE — DM 2026-10-19, D11]`
+- Arriva quando i PG sono già in campo: entra dalla porta di mithral e punta l'altare (MAPPA 5 REVISED, stato F, ⚫ AH1 e la rotta nera). Guardie: `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md`
 - **Se Grimjaw vede situazione (PG arrived, morale swing):** 
   - Option A: Retreat strategic (Live fight another day)
   - Option B: Personal challenge Thorik (Arrogance)
 - **Se Grimjaw morto già Sessione 2:** Sostituisci Capitano Hobgoblin minore (Auto-retreat)
 
-**EVENTO CLIMAX (Round 8):**
+**EVENTO CLIMAX (Round 9-10):**
 
 **Narrativa Leggere:**
 > "Il cerchio nanico si stringe sempre più attorno all'altare. Re Thorek, gravemente ferito, bisbiglia preghiere a Moradin con voce spezzata. I nemici premono da ogni lato, e la speranza svanisce. Ma proprio quando tutto sembra perduto, l'altare di pietra nera inizia a brillare. Le rune dorate esplodono in luce accecante. Gli occhi di rubino delle dieci statue si accendono come stelle. E sopra l'altare, una sfera di luce tricolore - oro, verde e rosso - materializza dal nulla. La sfera pulsa una volta, due volte, poi esplode in un'esplosione non violenta di luce pura. Quando la luce si dissolve, quattro figure eroiche stanno sull'altare, armi in mano, potere divino emanante. I Rumbling Stones sono arrivati."
 
 **Effetti Meccanici Immediati:**
-- **Nani:** +6 morale (da -4 a +2), 2d8 HP heal tutti, immune fear 1h
-- **Nemici:** TS Will CD 25 O shaken 1d6 round (Majority fail)
+- **Nani:** cura 2d8 pf a tutti `[CANONE — DM 2026-10-18]`, immuni alla paura 1 ora; +4 di morale entro 30 m solo con l'Aura della Forgia Eterna di Thorik
+- **Nemici:** TS Volontà CD 20 o spaventati per 10 round (guida, «Effetti dell'Apparizione»)
 - **PG:** Full HP, tutti buff attivi, surprise round vs nemici
 
 **Transizione:** Da PNG giocabili (Borin/Dara/Thorin/Nala) → Veri PG (Thorik/Tordek/Artemis/Hella)
@@ -1165,35 +1130,35 @@ Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m alt
 **Timing:** Post-Cuore Montagna rally, prima carica finale
 
 **Descrizione Scenario:**
-Vista laterale (side profile) mostra vantaggio tattico geografico nani: Hammerfist fortress elevated rocky terrain 15m above valley floor. 90 nani superstiti + 4 PG schierati fuori cancello principale (Ora controllano exit), ready charge downhill. Pendenza 15% grade favorisce momentum carica. 120 metri distanza: Resti esercito Mano Rossa (400 superstiti) demoralized, disorganized in valley below.
+Vista laterale (side profile) mostra vantaggio tattico geografico nani: Hammerfist fortress elevated rocky terrain 80 m above the plain (950 m s.l.m. `[INFERRED]`). 90 nani superstiti + 4 PG schierati fuori cancello principale (Ora controllano exit), ready charge downhill. Il pendio (~27%, la strada al 15%) favorisce momentum carica. 120 metri distanza, ~30 m più in basso: Resti esercito Mano Rossa (400 superstiti) demoralized, disorganized in valley below.
 
 **Geografia Verticale:**
 
 **OVEST (Hammerfist):**
-- **Fortezza Base:** +15m elevazione sopra valley floor
+- **Fortezza Base:** +80 m sulla piana (950 m s.l.m. `[INFERRED]`)
 - **Cancello Principale:** Exit controllato nani (Ripreso Sessione 3 controffensiva)
-- **Pendenza:** 15% grade declino costante verso valley (120m horizontal = 18m vertical drop)
+- **Pendenza:** ~27% sul pendio, 15% sulla strada a tornanti (120 m in pianta = ~30 m di quota, dalle mura alla linea hobgoblin a ~920 m)
 - **Vantaggio:** Gravity assist carica (Velocity +50%, Impact damage +2)
 
 **CENTRO - CAMPO BATTAGLIA:**
 - **Distanza:** 120 metri horizontal
 - **Pendenza:** Costante downhill nani favor
 - **Terreno:** Open valley, alcuni macerie edifici esterni
-- **Weather:** Nubi temporale gathering (Maestro Tempestas arrival imminent)
+- **Weather:** Nubi temporale gathering: la tempesta di Orion (*controllare tempo*), con la musica di Maestro Tempestas `[CANONE — DM 2026-10-19, D14]`
 
 **EST (Valle):**
-- **Esercito Mano Rossa:** Livello 0m valley floor
+- **Esercito Mano Rossa:** sul pendio, la linea a ~920 m s.l.m. (+50 m sulla piana)
 - **Formazione:** Disordinata (Morale -6 post-defeat Cuore Montagna)
 - **Numeri:** 400 superstiti (Da 900 iniziali = -55% casualties)
   - 100 Hobgoblin veterani (Disciplinati ancora)
   - 200 Fanteria orchesca (Shaken, ready rout)
   - 80 Giganti/Ettin/lite (Ancora formidabili)
   - 20 Maghi/Chierici (Support flebile)
-- **Leadership:** Grimjaw absent (Morto O retreat), Gorthak present (Ultimo boss standing)
+- **Leadership:** Grimjaw morto nel 3B, oppure in campo con le guardie rimaste se nel 3B ha suonato la ritirata (`ARC08-02` §1, *Morale*); Gorthak present (Ultimo boss standing). Il dettaglio delle unità, con la fonte di ogni numero: guida § Sessione 4, «Chi è ancora in campo» `[CANONE — DM 2026-10-19, D13]`
 
 **Schieramento Nanico:**
 - **90 Guerrieri Veterani:** Formazione cuneo (Wedge charge optimal)
-- **Re Thorek XIII:** Rear position (Healed 100 HP via Dana, still weak)
+- **Re Thorek XIII:** Rear position (curato dai chierici di Dana nella mezza giornata fra la caverna e i bastioni, ~100 pf, still weak) `[CANONE — DM 2026-10-19, D13]`
 - **Madre Dana + Cantitrici:** Support rear (Buff spells, healing ready)
 - **4 PG (Rumbling Stones):** **TIP OF SPEAR** (Leading charge!)
   - Thorik: Punto cuneo, Corona blazing, Aegis-Fang ready
@@ -1225,7 +1190,7 @@ This map shows MOMENT BEFORE. Next map (4 Unified) shows DURING charge + aerial 
 **Tipo:** Epic cinematic dual-front  
 **Scala:** Strategic overview  
   ⚠️ **Vista strategica — NON è una griglia di combattimento.**
-**Timing:** Climax Sessione 4, Round 11-23
+**Timing:** Climax Sessione 4, Round 1-23 (la linea del tempo è quella della guida, § Incontro 4A `[CANONE — DM 2026-10-19, D9]`: cuneo ai round 1-5, urto al 6, logoramento 11-17, picchiata e presa di Thorik 18-20, duello 21-23)
 
 **Descrizione Scenario:**
 Vista cinematografica captures TWO simultaneous battles integrated:
@@ -1262,19 +1227,20 @@ Rappresenta absolute APEX campagna - every element converges single moment glory
 **BATTAGLIA AEREA (Sky):**
 
 **Tempesta Magica Controllata:**
-- **Maestro Tempestas:** Altitude 60m, conducts storm
-  - *Control Weather* + *Call Lightning Storm* combo
-  - Fulmini: 10d6 electrical, 1/round auto-target Fauci
+- **Maestro Tempestas:** Altitude 60m, conducts the music, not the storm `[CANONE — DM 2026-10-19, D14]`
+  - La tempesta la lancia **Orion** con *controllare tempo* prima della battaglia (druido 14°, SRD: 8d12 ore, raggio 3 miglia; dirige il vento, non i fulmini)
+  - Fulmini: la **Cantata della Tempesta Tonante** di Tempestas (2d6 per 3 round entro 18 m, Riflessi CD 23, `ARC08-02` §2) e *chiamare fulmini* di Orion (3d10 a fulmine in tempesta, Riflessi CD 20, SRD)
+  - Meteo SRD: vento violento −4 a distanza e Tempra CD 15 per i Piccoli; con la pioggia è una *tempesta*, e gli attacchi a distanza con armi diventano impossibili. **Deroga dichiarata dall'SRD**: l'occhio della tempesta sopra i bastioni, da dove gli arcieri alleati tirano senza i malus
   - Nubi nere: Oscurano drago visibility (-4 Osservare)
 
 **Fauci di Palude (Desperate):**
 - **Altitude:** Variable 30-45m (Evading gufi)
-- **Condition:** Wounded (-80 HP già, 232 rimanenti)
+- **Condition:** 337 pf se il P5 non è stato giocato; altrimenti 337 meno il carry-over di `ARC08-10` §4.1 `[CANONE — DM 2026-10-19, D9]`
   - Frecce ranger elfiche bleeding
   - Lightning burns scaglie
 - **Tattiche:** Aggressive suicide (Vendetta Bloodline vs Thorik overwhelms tactics)
   - Ignora gufi (Mistake!)
-  - Dive attack Thorik ground (Exposed!)
+  - Dive attack Thorik ground (Exposed!): lo prende in bocca, sale e lo lascia cadere (scheda, «La presa di Thorik») `[CANONE — DM 2026-10-19]`
 
 **Signore Ventolesto + Ranger:**
 - **Signore (Alpha Gufo):** Altitude 45m, coordinates
@@ -1284,23 +1250,24 @@ Rappresenta absolute APEX campagna - every element converges single moment glory
   - Composite Longbow +2: +15 att, 1d8+6 damage
   - Frecce Bane (Dragons): +2d6 additional
   - **Orion Pelleorsa (Druido):** SALTA SCHIENA DRAGO!
-    - Grapple check (+18) vs Fauci
-    - **Wild Shape: Dire Bear** forma (For 31)
-    - Riding drago forced downward (Peso 800kg!)
+    - **Wild Shape: Dire Bear** forma (For 31), presa il round prima: salto, forma e presa non stanno in un round solo (SRD)
+    - Lotta **contrapposta** (SRD): +24 dell'orso crudele contro +43 di Fauci, che se ne libera quasi sempre
+    - Il peso da solo non forza la discesa: Fauci scende **per scelta**, come dice la sua scheda (atterra sotto i 100 pf o per finire Thorik dopo averlo lasciato cadere) `[CANONE — DM 2026-10-19, D9]`
 
 **ARTEMIS BLACKROCK (Solo Aereo PG):**
 - **Altitude:** 30m (Below melee swarm)
-- **Tattiche:** Eldritch Blast spam (7d6, 250ft range)
+- **Tattiche:** Deflagrazione occulta (6d6, 18 m) [Private source — Complete Arcane]
   - Target: Fauci wings (Maneuverability penalty)
   - Ali Ombra: Superior maneuverability (Turn instant)
 
 **CONVERGENZA CLIMAX:**
 
-**Round 18-20: DRAGO ATTERRAGGIO FORZATO**
-- Orion sulla schiena (Grapple prevents full flight)
-- Lightning strike (10d6) ala destra
-- Artemis Eldritch Blast (7d6) ala sinistra
-- **Result:** Crash landing 60m davanti Thorik!
+**Round 18-20: LA PICCHIATA SU THORIK** `[CANONE — DM 2026-10-19, D9]`
+- Fauci scende per scelta: sotto i 100 pf, o per Thorik (scheda, `ARC08-02` §1; Odio della stirpe +4). Picchiata in volo con Attacco in Volo e **presa di Thorik** `[CANONE — DM 2026-10-19]`: morso e presa al round 18, salita con lui in bocca al 19, soffio sui compagni e caduta al 20 (scheda, «La presa di Thorik», una volta)
+- Orion sulla schiena, solo nei round in cui vince la lotta contrapposta; un fulmine di *chiamare fulmini* (3d10) su un'ala
+- Artemis Deflagrazione occulta (6d6) ala sinistra
+- **Result:** Thorik cade nella zona ⚡ (AB30-AG32 della MAPPA 4 REVISED), alle spalle della punta, a circa 30 m dalla linea; Fauci ci atterra al round 21 per finirlo; i PG convergono in 2 round
+- **Se i PG volano** con le pozioni: Fauci combatte in aria e non fugge (Fluttuare, soffio in linea, *Ghermire* solo su Thorik; guida § Incontro 4A, «ROUND 18-23»)
 
 **Round 21-23: DUELLO FINALE THORIK vs FAUCI**
 - **Ground melee:** Thorik vs Drago (Epic confronto)
@@ -1312,7 +1279,7 @@ Rappresenta absolute APEX campagna - every element converges single moment glory
   valori in `07_.../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`.
 - **Support:** Tordek joins (Flurry Blows), Artemis continues blast
 - **Fauci Desperate:** Full Attack Thorik (Morso+Artigli+Ali+Coda)
-- **Thorik Heroic:** Aegis-Fang throw (Crit 19-20/×3) + *Smite Evil*
+- **Thorik Heroic:** Aegis Fang (+2 Ritornante *Dragondoom*) + castigo *Dragondoom*, 3/giorno, +2d6 contro un drago Enorme (stato del ramo di gruppo, D14; il guerriero non ha *punire il male*)
 
 > **Esito — ramo condizionale, non un fatto compiuto (D10, piano
 > ARC-08 A1)**: quando Fauci scende **sotto i 50 PF** il **default**

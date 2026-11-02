@@ -19,9 +19,8 @@ voci:
   - Talenti: Incantare in Combattimento, Iniziativa/Scacciare Migliorato, Arma Focalizzata (flagello)
 ```
 
-> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d8+2», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD, il bonus da Cos 16.
 
-> [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili. ⚠ la CA di contatto suggerisce Des 10, la fonte dice 8: si tiene la fonte, la differenza può essere deviazione o schivata, da verificare.
+> [GENERATO] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. ⚠ la CA di contatto suggerisce Des 10, la fonte dice 8: si tiene la fonte, la differenza può essere deviazione o schivata, da verificare.
 
 Medium humanoid (dwarf, duergar), Cleric 3 (Abbathor; domini Inganno/Male), LE. **hp 24**; **AC 20**, touch 10, flat-footed 20 (piastre complete). Init +3; Vel 6 m. TS Temp +6, Rifl +0, Vol +4. BAB +2; Lotta +4.
 **Mischia** flagello perfetto +6 (1d8+2). Incantesimi da Cleric 3 (CD 11+liv; spontanee inflict): tipici *bane, cause fear, hold person, silence, comprehend languages*. SLA duergar. Scurovisione 36 m, immune paralisi/veleno, +2 vs incantesimi. For 15, Cos 16, Sag 13. Talenti: Incantare in Combattimento, Iniziativa/Scacciare Migliorato, Arma Focalizzata (flagello).

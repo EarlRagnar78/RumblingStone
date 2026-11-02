@@ -14,7 +14,7 @@
 > luoghi, se hanno senso di esistere»*.
 > **Stato**: le due locande che il canone ha già (il **Ponte Nuovo** di Kellin a
 > Rethmar, **Ai Tre Remi** a Channathgate) restano come sono. Tutte le altre sono
-> nuove e portano `[INFERRED — needs DM confirmation]` nel nome.
+> nuove, confermate dal DM il 2026-10-18.
 
 ---
 
@@ -81,9 +81,9 @@ due, e metà delle stanze chiude perché le finestre danno sulle mura.
 
 | Locanda | Dove | Stanza, a notte | Pasto | Stalla | Libere | Cosa si sente al bancone |
 |---|---|---:|---:|---:|---:|---|
-| **Le Arcate** `[INFERRED — needs DM confirmation]` | sopra il Mercato Basso | buona 6 mo · comune 1,5 mo | 1,5 mo · 9 ma | 1,5 mo | 3 | i prezzi della speziala di domani, e chi ha comprato cosa ieri |
+| **Le Arcate** | sopra il Mercato Basso | buona 6 mo · comune 1,5 mo | 1,5 mo · 9 ma | 1,5 mo | 3 | i prezzi della speziala di domani, e chi ha comprato cosa ieri |
 | **I dormitori dell'arena** | sotto le gradinate | gratis per i concorrenti e i loro secondi | il pasto dei concorrenti, gratis | gratis | quante ne servono | chi si è iscritto all'ultimo momento, e con che faccia. Qui dorme Tordek, se è iscritto, e chi lo accompagna come secondo |
-| **Il Barcone** `[INFERRED — needs DM confirmation]` | al porto fluviale, su una chiatta ormeggiata | comune 1,5 mo · povera 6 ma | 9 ma · 3 ma | — | 5 | il carico delle chiatte di stanotte. La Rete Nera ci ha il suo tavolo (banchi §2), e chi ci dorme è visto |
+| **Il Barcone** | nel borgo dei carrettieri, fuori dalla Porta Sud in fondo alla rampa | comune 1,5 mo · povera 6 ma | 9 ma · 3 ma | — | 5 | il carico dei carri di stanotte. La Rete Nera ci ha il suo tavolo (banchi §2), e chi ci dorme è visto |
 | **La foresteria della Confraternita** | dentro il chiostro di Ilmater | gratis, con un'offerta libera | il pasto dei monaci, povero, gratis | — | 2 | niente: si cena in silenzio. Sorella Maewen ci passa ogni sera |
 
 **Altrimenti**: le stalle dei mercanti fuori dalle mura, 3 ma a notte nel fieno.
@@ -114,7 +114,7 @@ Da bere sì. E da sentire, quanto volete.»*
 | Locanda | Quartiere | Stanza, a notte | Pasto | Stalla | Libere | Cosa si sente |
 |---|---|---:|---:|---:|---:|---|
 | **Il Ponte Nuovo** | quartiere basso | niente letti: una panca, 4 ma | 6 ma · 2 ma | — | panche per 6 | **tutto**: Kellin ha Raccogliere Informazioni da maestro (la sua scheda), e la sala è il polso della città. Le voci sull'orda, sugli infiltratori, sul Morale cittadino |
-| **La Bilancia** `[INFERRED — needs DM confirmation]` | quartiere alto, vicino ai magazzini di Thornwall | buona 4 mo | 1 mo | 1 mo | 2 | i contratti, i crediti, quanto costa l'orzo oggi. Ci cenano i consiglieri, e Varis due sere su tre |
+| **La Bilancia** | quartiere alto, vicino ai magazzini di Thornwall | buona 4 mo | 1 mo | 1 mo | 2 | i contratti, i crediti, quanto costa l'orzo oggi. Ci cenano i consiglieri, e Varis due sere su tre |
 | **La foresteria del Tempio** | quartiere alto | gratis per chi è ferito o in pellegrinaggio; un'offerta | povero, gratis | — | 1 | le preghiere per i morti di Talar. Il chierico sa chi è stato curato e chi no |
 | **Il campo di Lorana** | fuori dalle mura vecchie, verso il fiume | una tenda, gratis | il rancio della milizia, povero, gratis se si fa un turno di guardia | — | quante ne servono | le storie dei profughi, e i nomi di chi è sparito. Lorana ci passa all'alba |
 
@@ -123,7 +123,7 @@ borsa sotto la testa.
 
 ⚠️ **Il campo di Lorana ha i suoi ladri.** Chi ci dorme senza fare un turno di
 guardia tira **Osservare CD 18** all'alba: se fallisce, manca qualcosa di piccolo
-dalla borsa `[INFERRED — needs DM confirmation]`. Chi fa il turno di guardia non
+dalla borsa. Chi fa il turno di guardia non
 viene toccato, e la milizia se lo ricorda.
 
 ---
@@ -137,15 +137,15 @@ contrada.
 
 | Locanda | Quartiere · contrada | Stanza, a notte | Pasto | Stalla | Libere | Cosa si sente | Il rischio |
 |---|---|---:|---:|---:|---:|---|---|
-| **La Piuma** `[INFERRED — needs DM confirmation]` | The Golden Plume · l'Oca | **20 mo**, una suite, il bagno caldo compreso | banchetto, 10 mo | 4 mo | 2 | i debiti delle altre contrade. Il banchiere ci cena, e sa chi è in rosso | nessuno, salvo il conto |
-| **Il Guanto** `[INFERRED — needs DM confirmation]` | The Iron Bastion · la Torre | comune 1 mo | 6 ma | 1 mo | 4 | i turni sulle mura, e quanti mercenari la città paga | coprifuoco a mezzanotte: chi rientra dopo dorme in strada |
+| **La Piuma** | The Golden Plume · l'Oca | **20 mo**, una suite, il bagno caldo compreso | banchetto, 10 mo | 4 mo | 2 | i debiti delle altre contrade. Il banchiere ci cena, e sa chi è in rosso | nessuno, salvo il conto |
+| **Il Guanto** | The Iron Bastion · la Torre | comune 1 mo | 6 ma | 1 mo | 4 | i turni sulle mura dell'arg, e quanti mercenari la città paga | coprifuoco a mezzanotte: chi rientra dopo dorme in strada |
 | **La foresteria delle Guglie** | The Spell-Wyrm Spires · il Drago | buona 8 mo, **solo su invito** di un mago delle Guglie | 2 mo | — | 1 | il quasi-mythal: quanto manca, e cosa serve | le stanze sono protette da *allarme*: chi esce di notte lo sa tutto il palazzo |
-| **La Gora** `[INFERRED — needs DM confirmation]` | The Silver Weft · il Bruco | povera 8 ma | 4 ma | — | 6 | il mercato nero: chi compra, chi vende, chi è sparito. Zecca Voll ci beve (`...P2D-PALIO-STATBLOCCHI.md`) | **Rapidità di mano +12** contro ogni PG che dorme: chi non fa la guardia perde qualcosa `[INFERRED — needs DM confirmation]` |
-| **Le Stanze Cieche** `[INFERRED — needs DM confirmation]` | The Whispering Shadows · la Civetta | comune 2 mo; le stanze non hanno finestre sulla strada | 1,2 mo | — | 3 | niente, ad alta voce. Tutto, per chi paga: la Civetta compra e vende quello che si dice nelle stanze | **quello che i PG dicono qui lo sa la Civetta**, e il Conte Valerius il mattino dopo |
-| **Il Loggione** `[INFERRED — needs DM confirmation]` | The Gilded Horn · l'Unicorno | comune 2 mo, oppure gratis per chi suona la sera (**Intrattenere CD 15**) | 1,2 mo | 2 mo | 3 | le canzoni della Guerra delle Canzoni d'Osteria (`...P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md`), e chi le ha comprate | rumore fino all'alba: un incantatore che vuole le sue otto ore tira **Concentrazione CD 15**, e se fallisce gliene serve una in più prima di preparare gli incantesimi `[INFERRED — needs DM confirmation]` |
+| **La Gora** | The Silver Weft · il Bruco | povera 8 ma | 4 ma | — | 6 | il mercato nero: chi compra, chi vende, chi è sparito. Zecca Voll ci beve (`...P2D-PALIO-STATBLOCCHI.md`) | **Rapidità di mano +12** contro ogni PG che dorme: chi non fa la guardia perde qualcosa |
+| **Le Stanze Cieche** | The Whispering Shadows · la Civetta | comune 2 mo; le stanze non hanno finestre sulla strada | 1,2 mo | — | 3 | niente, ad alta voce. Tutto, per chi paga: la Civetta compra e vende quello che si dice nelle stanze | **quello che i PG dicono qui lo sa la Civetta**, e il Conte Valerius il mattino dopo |
+| **Il Loggione** | The Gilded Horn · l'Unicorno | comune 2 mo, oppure gratis per chi suona la sera (**Intrattenere CD 15**) | 1,2 mo | 2 mo | 3 | le canzoni della Guerra delle Canzoni d'Osteria (`...P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md`), e chi le ha comprate | rumore fino all'alba: un incantatore che vuole le sue otto ore tira **Concentrazione CD 15**, e se fallisce gliene serve una in più prima di preparare gli incantesimi |
 | **Ai Tre Remi** | The Tidal Crest · l'Onda | comune 2 mo · buona 8 mo | 1,2 mo | 2 mo | 4 | i barcaioli, le chiatte, chi parte di notte. La sera del Giorno 1 ci arrivano gli otto emissari | nessuno: è la scena del Giorno 1 |
 | **Il dormitorio dell'Istrice** | The Quill-Wood Refuge · l'Istrice | gratis, con un'offerta per i profughi | povero, gratis | — | quante ne servono | i nomi dei villaggi bruciati | nessuno: la milizia di Lorana fa la guardia. Chi dona almeno 50 mo conquista l'Istrice per il Palio (banchi §7, «Dove si va») |
-| **Il Campo** | The Sovereign Ring · piazza neutrale | **nessuna locanda**: durante la corsa si affittano i **balconi** sul Campo, **50 mo a posto** per la giornata della corsa `[INFERRED — needs DM confirmation]` | — | — | 8 posti | chi siede accanto a chi: i balconi sono la politica del Palio | chi affitta il balcone di una contrada rivale ne ha l'antipatia per un giorno |
+| **Il Campo** | The Sovereign Ring · piazza neutrale | **nessuna locanda**: durante la corsa si affittano i **balconi** sul Campo, **50 mo a posto** per la giornata della corsa | — | — | 8 posti | chi siede accanto a chi: i balconi sono la politica del Palio | chi affitta il balcone di una contrada rivale ne ha l'antipatia per un giorno |
 
 > **Read-aloud (Mercer lead) — un balcone sul Campo.** *Il balcone è una lastra di
 > pietra larga quanto un tavolo, con una ringhiera di ferro battuto e due sgabelli
@@ -154,7 +154,7 @@ contrada.
 > poco: odora di terra e di cavallo. Dal balcone accanto, a un braccio, una donna
 > coi colori di un'altra contrada vi guarda a lungo, e non sorride.*
 
-**Altrimenti**: fuori dalle mura, le stalle della Dawn Way, 1 ma, e la strada
+**Altrimenti**: fuori città, le stalle della Dawn Way all'arco dell'Alba, 1 ma, e la strada
 fino al Campo è un'ora a piedi nella folla.
 
 ---

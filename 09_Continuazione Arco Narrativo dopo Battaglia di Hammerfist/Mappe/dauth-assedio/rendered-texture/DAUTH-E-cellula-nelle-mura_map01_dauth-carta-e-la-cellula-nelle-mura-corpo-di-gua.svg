@@ -104,7 +104,7 @@
 <path d="M142 354H434" stroke="#7a6a50" stroke-width="0.7" opacity="0.7"/>
 <circle cx="54" cy="371" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
 <text x="54" y="374.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">1</text>
-<text x="68" y="375" font-size="11" fill="#3b2e1e">B6 — Sabotatore con la chiave (Ladro 7) [INFERRED — needs DM confirmation]</text>
+<text x="68" y="375" font-size="11" fill="#3b2e1e">B6 — Sabotatore con la chiave (Ladro 7)</text>
 <circle cx="54" cy="386" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
 <text x="54" y="389.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">2</text>
 <text x="68" y="390" font-size="11" fill="#3b2e1e">D6 — Guerriero drow (drow-fighter3-cr4)</text>

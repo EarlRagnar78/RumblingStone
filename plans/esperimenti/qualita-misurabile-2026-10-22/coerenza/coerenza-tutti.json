@@ -1,0 +1,328 @@
+{
+  "file_letti": [
+    "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+    "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+    "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-3-RESURREZIONE-HELLA.md",
+    "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+    "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+    "07_il Portale Della Forgia Eterna/ARC07-00-INDICE.md",
+    "07_il Portale Della Forgia Eterna/ARC07-ATLANTE-ASSET.md",
+    "07_il Portale Della Forgia Eterna/ARC07-CASSETTA-DEL-DM.md",
+    "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+    "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+    "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+    "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+    "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+    "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+    "07_il Portale Della Forgia Eterna/ARC07-HANDOUTS.md",
+    "07_il Portale Della Forgia Eterna/ARC07-MATRICE-VERSIONI.md",
+    "07_il Portale Della Forgia Eterna/ARC07-TESORO-WBL-AUDIT.md",
+    "07_il Portale Della Forgia Eterna/CORREZIONE-Boss-Fauci.md",
+    "07_il Portale Della Forgia Eterna/ERRATA-ARC07-35-Verification.md",
+    "07_il Portale Della Forgia Eterna/La_Piramide_Ricalibrata.md",
+    "07_il Portale Della Forgia Eterna/PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md",
+    "07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md",
+    "07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE1.md",
+    "07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE2.md",
+    "07_il Portale Della Forgia Eterna/PortaleForgia-P3-PianoFuoco-PARTE1.md",
+    "07_il Portale Della Forgia Eterna/PortaleForgia-P3-PianoFuoco-PARTE2.md",
+    "07_il Portale Della Forgia Eterna/PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md",
+    "07_il Portale Della Forgia Eterna/RicalibrazioneScontriPianoDelFuoco.md",
+    "08_La Battaglia Di Hammerfist/ARC08-00-INDICE.md",
+    "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+    "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+    "08_La Battaglia Di Hammerfist/ARC08-03-REGISTRO-PERDITE.md",
+    "08_La Battaglia Di Hammerfist/ARC08-04-MARCIA-MANO-ROSSA.md",
+    "08_La Battaglia Di Hammerfist/ARC08-10-ESITI-E-CONTINGENZE.md",
+    "08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md",
+    "08_La Battaglia Di Hammerfist/ARC08-12-CRONOLOGIA-MARCH-CLOCK.md",
+    "08_La Battaglia Di Hammerfist/ARC08-13-TESORO-WBL-AUDIT.md",
+    "08_La Battaglia Di Hammerfist/ARC08-14-ATLANTE-IMMAGINI.md",
+    "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md",
+    "08_La Battaglia Di Hammerfist/ARC08-16-CUE-SONORI.md",
+    "08_La Battaglia Di Hammerfist/ARC08-17-BANCO-HAMMERFIST-1372.md",
+    "08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md",
+    "08_La Battaglia Di Hammerfist/ERRATA-ARC08-35-Verification.md",
+    "08_La Battaglia Di Hammerfist/ERRATA-ARC08-DESCRIZIONE-EPICA.md",
+    "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md",
+    "08_La Battaglia Di Hammerfist/mass_combat_guide_Dm.md"
+  ],
+  "bestiario_letti": [
+    "Bestiario/mostri/hobgoblin-sergente-cr5.md",
+    "Bestiario/mostri/treant-di-adamantio-cr10.md",
+    "Bestiario/png/Borin_Ferropugno.md",
+    "Bestiario/png/Dana_Forgiapietra.md",
+    "Bestiario/png/Dara_Occhiolesto.md",
+    "Bestiario/png/Nala_Cantapietre.md",
+    "Bestiario/png/Orion_Pelleorsa.md",
+    "Bestiario/png/Tempestas/Tempestas.md",
+    "Bestiario/png/Thorin_Runaforte.md",
+    "Bestiario/png/durin-rocciadura-cr6.md",
+    "Bestiario/villain/Fauci_di_Palude.md",
+    "Bestiario/villain/Gorthak_il_Trifronte.md",
+    "Bestiario/villain/balvar-fuocospento-cr13.md",
+    "Bestiario/villain/skullcrusher-il-nero-cr14.md",
+    "Bestiario/villain/terros-l-antico-cr15.md",
+    "Bestiario/villain/zog-tar-deatheye-cr15.md"
+  ],
+  "entita": 105,
+  "attributi_estratti": 430,
+  "coppie_entita_attributo": 211,
+  "contraddizioni": [
+    {
+      "entita": "Gli hobgoblin sergenti",
+      "chiave": "hobgoblin sergenti",
+      "attributo": "CA",
+      "valori": [
+        {
+          "valore": "21",
+          "n": 1,
+          "occorrenze": [
+            {
+              "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+              "riga": 987,
+              "sezione": "A.2 · Gli hobgoblin sergenti (Scena 3)",
+              "testo": "Guerriero di 5°, GS 5: **37 pf**, CA 21 (19 senza scudo), velocità 6 m"
+            }
+          ]
+        },
+        {
+          "valore": "18",
+          "n": 2,
+          "occorrenze": [
+            {
+              "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+              "riga": 981,
+              "sezione": "**HOBGOBLIN SERGENTI (30 individui integrati)**",
+              "testo": "CA 18 (armatura completa, scudo pesante); PF 38 (5d10+10);"
+            },
+            {
+              "file": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+              "riga": 860,
+              "sezione": "**HOBGOBLIN SERGENTI**",
+              "testo": "**CA:** 18 | **PF:** 38 | **TS:** Temp +6, Rifl +2, Vol +2"
+            }
+          ]
+        }
+      ],
+      "id": "C001"
+    },
+    {
+      "entita": "Gli hobgoblin sergenti",
+      "chiave": "hobgoblin sergenti",
+      "attributo": "GS",
+      "valori": [
+        {
+          "valore": "5",
+          "n": 1,
+          "occorrenze": [
+            {
+              "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+              "riga": 987,
+              "sezione": "A.2 · Gli hobgoblin sergenti (Scena 3)",
+              "testo": "Guerriero di 5°, GS 5: **37 pf**, CA 21 (19 senza scudo), velocità 6 m"
+            }
+          ]
+        },
+        {
+          "valore": "4",
+          "n": 1,
+          "occorrenze": [
+            {
+              "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+              "riga": 978,
+              "sezione": "**HOBGOBLIN SERGENTI (30 individui integrati)**",
+              "testo": "STATISTICHE CREATURA SINGOLA (Guerriero Hobgoblin di 5° liv., GS 4):"
+            }
+          ]
+        }
+      ],
+      "id": "C002"
+    },
+    {
+      "entita": "Gli hobgoblin sergenti",
+      "chiave": "hobgoblin sergenti",
+      "attributo": "pf",
+      "valori": [
+        {
+          "valore": "37",
+          "n": 1,
+          "occorrenze": [
+            {
+              "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+              "riga": 987,
+              "sezione": "A.2 · Gli hobgoblin sergenti (Scena 3)",
+              "testo": "Guerriero di 5°, GS 5: **37 pf**, CA 21 (19 senza scudo), velocità 6 m"
+            }
+          ]
+        },
+        {
+          "valore": "38",
+          "n": 1,
+          "occorrenze": [
+            {
+              "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+              "riga": 981,
+              "sezione": "**HOBGOBLIN SERGENTI (30 individui integrati)**",
+              "testo": "CA 18 (armatura completa, scudo pesante); PF 38 (5d10+10);"
+            }
+          ]
+        }
+      ],
+      "id": "C003"
+    },
+    {
+      "entita": "Orog Guardie Nere",
+      "chiave": "orog guardie nere",
+      "attributo": "GS",
+      "valori": [
+        {
+          "valore": "6",
+          "n": 3,
+          "occorrenze": [
+            {
+              "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+              "riga": 1049,
+              "sezione": "**OROG GUARDIE NERE (4 Orog scelti)**",
+              "testo": "STATISTICHE CREATURA SINGOLA (Orog Guerriero di 5° liv., GS 6):"
+            },
+            {
+              "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+              "riga": 896,
+              "sezione": "**🔴 ESERCITO DELLA MANO ROSSA (900 unità)**",
+              "testo": "*   **Élite:** Cavaliere Hobgoblin (GS 10), Orog Guardie Nere (GS 6), Sergenti Hobgoblin (GS 4)."
+            },
+            {
+              "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+              "riga": 3318,
+              "sezione": "**ESERCITO DELLA MANO ROSSA (900 unità)**",
+              "testo": "*   **Élite:** Cavaliere Hobgoblin (GS 10), Orog Guardie Nere (GS 6), Sergenti Hobgoblin (GS 4)"
+            }
+          ]
+        },
+        {
+          "valore": "7",
+          "n": 1,
+          "occorrenze": [
+            {
+              "file": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+              "riga": 911,
+              "sezione": "**OROG GUARDIE NERE**",
+              "testo": "> Uno contro uno: `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md` (Guerriero 6, GS 7, CA 19, pf 63, ascia bipenne +1 +13/+8, 1d12+10). ⚠ **Non SRD**: l'orog è `[Private source — Monsters of Faerûn / Races of Faerû"
+            }
+          ]
+        }
+      ],
+      "id": "C004"
+    },
+    {
+      "entita": "Skullcrusher il Nero",
+      "chiave": "skullcrusher il nero",
+      "attributo": "GS",
+      "valori": [
+        {
+          "valore": "14",
+          "n": 2,
+          "occorrenze": [
+            {
+              "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+              "riga": 3862,
+              "sezione": "A.1 · Skullcrusher il Nero (Scena 11)",
+              "testo": "SKULLCRUSHER IL NERO — il Primo Nero (GS 14, Avanzato)"
+            },
+            {
+              "file": "Bestiario/villain/skullcrusher-il-nero-cr14.md",
+              "riga": 4,
+              "sezione": "Skullcrusher il Nero — drago nero ancestrale [POINTER — statblocco nell'arco] [RIMANDO]",
+              "testo": "**Faction**: orda-antica-372dr | **Role**: flier | **Environment**: aerial | **CR**: 14"
+            }
+          ]
+        },
+        {
+          "valore": "11",
+          "n": 1,
+          "occorrenze": [
+            {
+              "file": "07_il Portale Della Forgia Eterna/CORREZIONE-Boss-Fauci.md",
+              "riga": 242,
+              "sezione": "**SKULLCRUSHER IL NERO (Antenato)**",
+              "testo": "- **Anno -1000:** Adult Black Dragon CR 11"
+            }
+          ]
+        }
+      ],
+      "id": "C005"
+    },
+    {
+      "entita": "Zog'Tar Deatheye",
+      "chiave": "zog'tar deatheye",
+      "attributo": "GS",
+      "valori": [
+        {
+          "valore": "15",
+          "n": 6,
+          "occorrenze": [
+            {
+              "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+              "riga": 4005,
+              "sezione": "A.2 · Zog'tar Deatheye e le sue quattro guardie (Scena 8)",
+              "testo": "ZOG'TAR DEATHEYE — generale dell'orda antica (GS 15, Avanzato)"
+            },
+            {
+              "file": "Bestiario/villain/zog-tar-deatheye-cr15.md",
+              "riga": 4,
+              "sezione": "Zog'tar Deatheye — mezzo-ogre barbaro [POINTER — statblocco nell'arco] [RIMANDO]",
+              "testo": "**Faction**: orda-antica-372dr | **Role**: melee-heavy | **Environment**: mountain | **CR**: 15"
+            },
+            {
+              "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+              "riga": 2130,
+              "sezione": "⚖️ Il grigio — perché **crede di aver ragione** *(pilastro GoT)*",
+              "testo": "**Quanto pesa lo scontro.** Zog'tar (GS 15), Balvar (GS 13), le quattro"
+            }
+          ]
+        },
+        {
+          "valore": "14",
+          "n": 1,
+          "occorrenze": [
+            {
+              "file": "07_il Portale Della Forgia Eterna/ERRATA-ARC07-35-Verification.md",
+              "riga": 32,
+              "sezione": "1. XP PER INCONTRO (APL 13 / composizione D15)",
+              "testo": "| Zog'tar (P5) | 14 | ~4.200/PG | risoluzione veloce (fast-play) |"
+            }
+          ]
+        }
+      ],
+      "id": "C006"
+    }
+  ],
+  "per_attributo": {
+    "CA": 1,
+    "GS": 4,
+    "pf": 1
+  },
+  "occorrenze_per_attributo": {
+    "CA": 69,
+    "CD": 8,
+    "GS": 120,
+    "TS": 5,
+    "classi": 20,
+    "giorno": 2,
+    "iniziativa": 20,
+    "pf": 66,
+    "portatore": 20,
+    "titolo": 98,
+    "vivo/morto": 2
+  },
+  "confrontati_per_attributo": {
+    "CA": 15,
+    "CD": 3,
+    "GS": 30,
+    "classi": 3,
+    "pf": 17,
+    "portatore": 3,
+    "titolo": 8
+  }
+}

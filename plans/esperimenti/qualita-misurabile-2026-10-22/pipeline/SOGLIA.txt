@@ -1,0 +1,38 @@
+SOGLIA DEL MODELLO DI PREFERENZA — scritta il 2026-10-22 PRIMA di addestrarlo
+==========================================================================
+
+Che cosa si misura
+  L'accuratezza del modello nel prevedere quale delle due versioni il DM ha
+  scelto alla cieca, in leave-one-out sulle coppie: per ogni coppia il modello
+  si addestra su tutte le altre e predice quella lasciata fuori. Le coppie
+  votate «=» restano nel dataset ma non entrano nel conto.
+
+Il modello, fissato prima di vedere i risultati
+  - regressione logistica senza intercetta sulle differenze dei tratti
+    (versione A meno versione B), ogni coppia presa nei due versi;
+  - penalità L2 con lambda = 1,0 sui tratti divisi per il loro scarto
+    quadratico medio (calcolato sul solo insieme d'addestramento);
+  - undici tratti: log del rapporto delle parole, Gulpease, dettagli
+    sensoriali, gerundi in coda + avverbi in -mente (misura_craft --stile),
+    possessivi per mille, livelli_max di misura_sintassi (zero se spaCy
+    manca), MATTR a finestra 25, e le quattro regole di §2-ter misurate
+    rispetto all'originale: frase finale tolta, subordinata spezzata, nomi
+    propri tolti, monologo spezzato in battute.
+  Nessuno di questi numeri si cambia dopo aver visto l'accuratezza. Un modello
+  diverso è un'altra prova, con un'altra soglia scritta prima.
+
+La soglia
+  Il modello diventa misura automatica (ordina le candidate e può decidere una
+  coppia senza il cieco) solo se valgono entrambe:
+    1. il limite inferiore dell'intervallo di Wilson al 95% dell'accuratezza in
+       leave-one-out è sopra 0,50;
+    2. l'accuratezza è più alta di quella della regola banale «vince la più
+       lunga» sulle stesse coppie (una coppia di lunghezza uguale conta come
+       sbagliata per la regola banale).
+  Altrimenti il modello è un suggerimento: ordina le candidate che passano il
+  filtro, ma il giudice resta il voto cieco del DM, e la pipeline vale come
+  filtro di non regressione e raccoglitore di voti.
+
+Quando si rifà
+  A ogni `migliora_prosa.py esito`, con i voti nuovi aggiunti al dataset. La
+  soglia resta questa.

@@ -1,0 +1,29 @@
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 2631.70it/s]
+[transformers] [1mElectraModel LOAD REPORT[0m from: dbmdz/electra-base-italian-xxl-cased-discriminator
+Key                                               | Status     |  | 
+--------------------------------------------------+------------+--+-
+discriminator_predictions.dense_prediction.weight | UNEXPECTED |  | 
+discriminator_predictions.dense.bias              | UNEXPECTED |  | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED |  | 
+discriminator_predictions.dense.weight            | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+
+== stanza-accurate: 54 coppie, 95.8 s
+
+metrica            vinc>perd vinc<perd pari  accordo  p(binom)
+sogg_preverbale            3         1    50    0.75  0.625
+agg_complesso              1         0    53    1.00  1.000
+stare_gerundio             2         2    50    0.50  1.000
+pron_soggetto              0         2    52    1.00  0.500
+calchi                     6         3    45    0.67  0.508
+calchi‰                    7         5    42    0.58  0.774
+possessivi_corpo           1         0    53    1.00  1.000
+profondita_max            11        11    32    0.50  1.000
+profondita_media          17        24    13    0.59  0.349
+livelli_max               13         6    35    0.68  0.167
+frasi_oltre2%              0         1    53    1.00  1.000
+lungh_dip                 23        31     0    0.57  0.341
+mattr_lemmi               30        24     0    0.56  0.497
+rip_interna%              21         8    25    0.72  0.024

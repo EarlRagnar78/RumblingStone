@@ -41,7 +41,7 @@ in `editorial-standards.md`. Qui sta la **lingua**.
 
 | ❌ Traduttese | ✅ Italiano | Perché |
 |---|---|---|
-| «alzò **la sua** mano», «il **tuo** respiro si fa corto» | «alzò la mano», «il respiro si fa corto» | l'italiano **non mette il possessivo** su parti del corpo e cose proprie: è già implicito |
+| «alzò **la sua** mano», «il **tuo** respiro si fa corto» | «alzò la mano», «il respiro si fa corto» | l'italiano **non mette il possessivo** su parti del corpo e cose che si portano addosso: è già implicito. Gli altri possessivi («il suo re», «la loro città») sono liberi: dicono un legame, e i voti ciechi del DM li premiano (decisione del DM, 2026-10-23) |
 | «**Lui** si voltò. **Lui** non disse niente.» | «Si voltò. Non disse niente.» | l'italiano è **pro-drop**: il soggetto esplicito è enfasi, non norma |
 | «**stai** camminando nel buio» | «cammini nel buio» | il progressivo inglese non ha equivalente neutro: in italiano il presente basta |
 | «**realizzi** che è troppo tardi» | «capisci», «ti rendi conto» | *realizzare* = portare a compimento, non *to realize* |
@@ -224,7 +224,7 @@ ricorda (P1, D14). Il trattino lungo dopo «lui» è caduto con loro.
 
 ## 8. Checklist di revisione (30 secondi a handout)
 
-- [ ] Ho tolto **tutti** i possessivi inutili? (*la sua mano* → *la mano*)
+- [ ] Ho tolto i possessivi sulle **parti del corpo** e sulle cose addosso? (*la sua mano* → *la mano*; *il suo re* resta)
 - [ ] Ho tolto i **soggetti pronominali** non enfatici? (*tu senti* → *senti*)
 - [ ] C'è almeno **una dislocazione a sinistra** o un **c'è** presentativo?
 - [ ] I tempi verbali sono **coerenti** dentro ogni box?

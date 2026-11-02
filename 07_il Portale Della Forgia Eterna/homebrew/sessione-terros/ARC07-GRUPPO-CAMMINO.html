@@ -110,6 +110,30 @@
   .readaloud{ font-style:italic; }
   .vague{ font-style:italic; font-size:.86rem; opacity:.9; }
 
+  /* Il riquadro delle statistiche: la stessa forma del PDF (ADR-0105). */
+  .statblocco{ background:var(--note-bg); border-top:3px solid var(--rubric);
+      border-bottom:3px solid var(--rubric); padding:.6rem .9rem .7rem; margin:.9rem 0;
+      break-inside:avoid; font-size:.92rem; }
+  .statblocco .sb-testa{ display:flex; justify-content:space-between; align-items:baseline; gap:1rem;}
+  .statblocco .sb-nome{ font-family:'Cinzel',Georgia,serif; font-variant:small-caps; color:var(--rubric);
+      font-size:1.15rem; font-weight:600;}
+  .statblocco .sb-gs{ font-family:'Cinzel',Georgia,serif; color:var(--brass); white-space:nowrap;}
+  .statblocco .sb-tipo{ font-style:italic; color:#6b4f2a; margin:.05rem 0 .3rem;}
+  .statblocco .sb-fascia{ font-family:'Cinzel',Georgia,serif; font-size:.72rem; letter-spacing:.12em;
+      text-transform:uppercase; color:var(--rubric); border-bottom:1px solid var(--rubric);
+      margin:.5rem 0 .2rem; font-weight:600;}
+  .statblocco p{ margin:.15rem 0; text-align:left;}
+  .statblocco ul{ margin:.15rem 0 .2rem 1.1rem;}
+  .statblocco .sb-car{ display:grid; grid-template-columns:repeat(6,1fr); text-align:center; margin:.2rem 0;}
+  .statblocco .sb-car span{ display:block; font-size:.7rem; color:#6b4f2a; font-variant:small-caps;}
+  .sb-riga{ border-left:3px solid var(--rubric); padding:.2rem .7rem; margin:.8rem 0;}
+  .sb-riga .sb-testa{ display:flex; gap:.6rem; align-items:baseline;}
+  .sb-riga .sb-nome{ font-family:'Cinzel',Georgia,serif; font-variant:small-caps; color:var(--rubric); font-weight:600;}
+  .sb-riga .sb-gs{ font-family:'Cinzel',Georgia,serif; color:var(--brass);}
+  .sb-riga .sb-rimando{ margin-left:auto; font-style:italic; color:#6b4f2a; font-size:.85rem;}
+  .sb-riga .sb-fascia{ font-family:'Cinzel',Georgia,serif; font-size:.72rem; letter-spacing:.12em; color:var(--rubric);}
+  .sb-riga p{ margin:.15rem 0; text-align:left;}
+  .statblocco .sb-fonte{ font-size:.75rem; color:#6b4f2a; margin-top:.3rem;}
   pre.mono{ background:rgba(201,173,106,.18); border:1px solid var(--brass); padding:.6rem .8rem;
       overflow-x:auto; font-size:.8rem; line-height:1.35; font-family:ui-monospace,Consolas,monospace;}
   .figure{ margin:.8rem auto; text-align:center; }
@@ -195,6 +219,11 @@
   // dall'export PDF headless — ADR-0013 §5)
   if(location.hash && document.getElementById(location.hash.slice(1)))
     show(location.hash.slice(1));
+  // La riga dell'incontro porta alla scheda in appendice, che sta in un'altra scheda.
+  document.querySelectorAll('a.sb-rimando').forEach(a=>a.addEventListener('click',e=>{
+    const t=document.getElementById(a.getAttribute('href').slice(1)); if(!t) return;
+    e.preventDefault(); show(t.closest('section.pane').id); t.scrollIntoView();
+  }));
 </script>
 </body>
 </html>

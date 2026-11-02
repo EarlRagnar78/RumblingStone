@@ -78,10 +78,29 @@ class TestLeInclusioni(unittest.TestCase):
         testo = f"<!-- include: {self.rel}/s.md#statblocco -->\n<!-- /include -->"
         self.assertIn("```statblocco\ngs: 1\npf: 5\n```\n<!-- /include -->", comp.riallinea(testo))
 
+    def test_scheda_porta_il_nome_e_la_parte_leggibile(self):
+        (self.d / "s.md").write_text(
+            "# Xorn (CR 6) [CANONE]\n\n```statblocco\ngs: 6\nca: 24\npf: 52\nts: Temp +8\n```\n\n"
+            "Nota.\n\n**Difesa** CA 24\n\n**Tattiche** Scava via.\n\n## Altro\n", encoding="utf-8")
+        out = comp.riallinea(f"<!-- include: {self.rel}/s.md#scheda -->\n<!-- /include -->")
+        self.assertIn("nome: Xorn\n", out)
+        self.assertIn("**Difesa** CA 24", out)
+        self.assertIn("**Tattiche** Scava via.", out)
+        self.assertNotIn("Nota.", out)
+        self.assertNotIn("## Altro", out)
+
     def test_blocco_mancante_e_un_errore(self):
         (self.d / "f.md").write_text("niente\n", encoding="utf-8")
         with self.assertRaises(KeyError):
             comp.riallinea(f"<!-- include: {self.rel}/f.md#n -->\n<!-- /include -->")
+
+    def test_percorso_con_spazi(self):
+        sotto = self.d / "un arco"
+        sotto.mkdir()
+        (sotto / "f.md").write_text("<!-- blocco: n -->\nuno\n<!-- /blocco -->\n", encoding="utf-8")
+        testo = f"<!-- include: {self.rel}/un arco/f.md#n -->\nvecchio\n<!-- /include -->\n"
+        self.assertEqual(comp.riallinea(testo),
+                         f"<!-- include: {self.rel}/un arco/f.md#n -->\nuno\n<!-- /include -->\n")
 
     def test_riallineare_due_volte_non_cambia_niente(self):
         (self.d / "f.md").write_text("<!-- blocco: n -->\nuno\n<!-- /blocco -->\n", encoding="utf-8")
@@ -102,7 +121,7 @@ class TestIlRepo(unittest.TestCase):
 
     def test_def4_include_balvar_dal_bestiario(self):
         modulo = (ROOT / "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md").read_text(encoding="utf-8")
-        self.assertIn("<!-- include: Bestiario/villain/balvar-fuocospento-cr13.md#statblocco -->", modulo)
+        self.assertIn("<!-- include: Bestiario/villain/balvar-fuocospento-cr13.md#scheda -->", modulo)
 
 
 if __name__ == "__main__":

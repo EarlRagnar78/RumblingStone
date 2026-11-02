@@ -1,0 +1,2 @@
+nuova 8 · vecchia 8 · pari 0 su 16 · Wilson 95% [0.28, 0.72]
+incompleto: 16 coppie votate su 20

@@ -119,6 +119,18 @@ Il dossier è dove vivono le cose che i numeri non dicono: cosa vuole, di chi
 si fida, cosa succede se muore, cosa succede se scappa, e i **rami aperti**
 lasciati alle decisioni del DM.
 
+**La forma delle due schede** ([ADR-0091](../../plans/adr/ADR-0091-la-scheda-del-png-ha-una-forma.md)):
+lo statblocco porta **Difesa · Attacco · Statistiche · Capacità speciali ·
+Tattiche** in quest'ordine, come le AP di Pathfinder 1e; il dossier, se ha
+sezioni, porta **Chi è · Aspetto e voce · Cosa vuole · Nella campagna ·
+Esiti possibili · Fonti e canone**, più **In combattimento** quando rimanda a
+uno statblocco. I numeri stanno solo nello statblocco, e il dossier ci rimanda.
+Le schede di prova: Lorana, Ushgar, Balvar. Il conto:
+
+```bash
+python3 scripts/validate_bestiario.py --forma   # rapporto, non blocca
+```
+
 ---
 
 ## 5. Rigenerare il catalogo (passaggio che tutti dimenticano)

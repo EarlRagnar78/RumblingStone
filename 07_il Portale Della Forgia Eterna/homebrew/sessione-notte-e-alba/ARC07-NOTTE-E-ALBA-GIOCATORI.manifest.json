@@ -1,0 +1,54 @@
+{
+  "brand": "RUMBLING STONE · ARC-07 · IL PORTALE DELLA FORGIA ETERNA",
+  "title": "Le Voci della Notte",
+  "subtitle": "Le pagine da consegnare: gli echi della notte, il contratto del Seme, le dieci boccette",
+  "banner": "HANDOUT GIOCATORI",
+  "meta": "Da stampare e tagliare. Ogni pagina si consegna quando lo dice la regia del DM",
+  "header": "Le pagine ✉ della serata. Il DM le consegna una alla volta.",
+  "footer": "Le Voci della Notte",
+  "player_footer": "Le Voci della Notte",
+  "colophon": {
+    "edizione": "Volume dei giocatori",
+    "versione": "v1",
+    "data": "2026-10-12",
+    "autori": "Il DM di RumblingStone, con l'agente di scrittura del repo",
+    "basato_su": "D&D 3.5 SRD (OGL 1.0a); adattamento privato di Red Hand of Doom (Wizards of the Coast, 2006)",
+    "licenza": "materiale del tavolo, da consegnare ai giocatori quando lo dice la regia"
+  },
+  "front_matter": false,
+  "cover_image": "../../Immagini/tavola-hammerfist-giovane.jpg",
+  "out": "ARC07-NOTTE-E-ALBA-GIOCATORI.html",
+  "schede": "qui",
+  "chapters": [
+    {
+      "title": "✉ Echi — Thorik",
+      "file": "03-ECHI-THORIK.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ Echi — Tordek",
+      "file": "04-ECHI-TORDEK.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ Echi — Artemis",
+      "file": "05-ECHI-ARTEMIS.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ Echi — Hella",
+      "file": "06-ECHI-HELLA.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ Il contratto del Seme",
+      "file": "07-HANDOUT-CONTRATTO-DEL-SEME.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ Le dieci boccette",
+      "file": "../volume-mille-anni/05-HANDOUT-POZIONI-DI-KETTRA.md",
+      "tag": "player"
+    }
+  ]
+}

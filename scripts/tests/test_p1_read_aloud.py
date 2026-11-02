@@ -15,7 +15,11 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 import misura_craft as mc  # noqa: E402
 
-#: I 22 rilievi che **restano apposta** a lotto 2C chiuso, file per file.
+#: I 20 rilievi che **restano apposta** a lotto 2C chiuso, file per file.
+#: Erano 22 fino al 2026-10-18: la riscrittura di stile dei master ARC-07 ha
+#: riformulato due esenzioni senza toglierle, e il rilevatore non le pesca piu'.
+#: Il sogno di Thorik in `DEF-2` resta in seconda persona ma non dice piu'
+#: «vedi»; in `DEF-3` §5 «chiunque lo guardi» e' diventato «chi lo fissa».
 #: Non sono un residuo tollerato: sono cinque classi di cose che il rilevatore
 #: non sa distinguere dalla narrazione, e che la norma non riguarda.
 #:
@@ -23,10 +27,11 @@ import misura_craft as mc  # noqa: E402
 #:     Nania, Lythiel, Tempestas, la cellula di Dauth: parlano in seconda
 #:     persona al loro interlocutore, ed e' il loro registro;
 #:   * **canto** (1) — la ballata del Palio e' un testo cantato a qualcuno;
-#:   * **visione interiore** (2) — il sogno di Thorik in DEF-2, il flash della
-#:     visione di Moradin in P2;
-#:   * **falso positivo del rilevatore** (6) — «chiunque lo *guardi*» e
-#:     «chiunque *tocchi*» sono terza persona congiuntiva; «*VEDI* PARTE 2»,
+#:   * **visione interiore** (1) — il flash della visione di Moradin in P2
+#:     (il sogno di Thorik in DEF-2 non e' piu' contato dal 2026-10-18);
+#:   * **falso positivo del rilevatore** (5) — «chiunque *tocchi*» e' terza
+#:     persona congiuntiva («chiunque lo *guardi*» in DEF-3 non c'e' piu' dal
+#:     2026-10-18); «*VEDI* PARTE 2»,
 #:     «*Vedi* CONTRADE-STEMMI-CANTI» e «*vedi* `ARC07-DEF-1`» sono rimandi per
 #:     il DM finiti dentro un box; «da dove *arrivi* la voce» e' una
 #:     similitudine al congiuntivo;
@@ -36,8 +41,6 @@ ATTESI = {
     "PortaleForgia-P2-REVISED-Corretta-PARTE1.md": 4,
     "PortaleForgia-P1-REVISED-Corretta.md": 3,
     "Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md": 2,
-    "ARC07-DEF-2-RITORNO-E-AFFRESCHI.md": 1,
-    "ARC07-DEF-3-RESURREZIONE-HELLA.md": 1,
     "PortaleForgia-P2-REVISED-Corretta-PARTE2.md": 1,
     "CORREZIONE-Boss-Fauci.md": 1,
     "ARC08-01-GUIDA-DM.md": 1,
@@ -100,7 +103,7 @@ class TestP1(unittest.TestCase):
     def test_ogni_residuo_e_uno_dei_ventidue_dichiarati(self):
         """Il cancello del lotto 2C: chiuso il lotto, un rilievo nuovo e' un difetto.
 
-        I 22 che restano sono **elencati uno per uno** in
+        I 20 che restano (22 fino al 2026-10-18) sono **elencati uno per uno** in
         `plans/PIANO-QUATTRO-ORDINI-2026-09-20.md` §2C, con la loro classe:
         dialogo, canto, visione interiore, condizionale, falso positivo del
         rilevatore. Se questo test diventa rosso ci sono due casi, e vanno

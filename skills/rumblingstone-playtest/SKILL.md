@@ -89,7 +89,7 @@ e la sua rubrica fissa. Leggi le rubriche, non questo riassunto:
 |---|---|---|
 | **lettore** | *capisco cosa c'è, senza inventare?* (leggibilità) | [`references/lettore-a-freddo.md`](references/lettore-a-freddo.md) |
 | **playtester** | *quando i giocatori fanno quello che vogliono, il modulo risponde?* (giocabilità) | [`references/playtester-a-freddo.md`](references/playtester-a-freddo.md) |
-| **developer** | *si gioca? i numeri reggono l'SRD, e nessuno resta senza niente da fare?* | [`sviluppo-degli-incontri.md`](../rumblingstone-module-standard/references/sviluppo-degli-incontri.md), letto da un agente con i codici `V-` |
+| **developer** | *si gioca? i numeri reggono l'SRD, e nessuno resta senza niente da fare?* | [`sviluppo-degli-incontri.md`](../rumblingstone-module-standard/references/sviluppo-degli-incontri.md), letto da un agente, con i codici di «Come si scrive un rilievo del developer» |
 | **DM a freddo** *(primo passo obbligatorio, D9)* | *un DM che non l'ha scritto lo conduce stasera, con il tempo che ha?* (preparazione) | [`references/dm-a-freddo.md`](references/dm-a-freddo.md) |
 
 Cosa si fa dei rilievi, e quando si rifà il giro: `rumblingstone-module-standard`,
@@ -172,7 +172,7 @@ modulo (il villain è stato capito? il dilemma ha tenuto?).
 
 **Regole di raccolta**: anonime, compilate **prima di alzarsi**, lette **il giorno
 dopo**. Modello pronto:
-`STANDALONE-Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md`.
+`10-stand-alone/Il-Drappo-di-Tarsilia/PLAYTEST-SCHEDA-FEEDBACK.md`.
 
 **Come si leggono**: cerca **le ripetizioni**, non le opinioni singole. Tre giocatori
 su sei che scrivono lo stesso punto morto = difetto del modulo. Uno solo = quella
@@ -215,6 +215,34 @@ Mai un elenco di buoni propositi. Sempre **quattro campi**:
 Poi si applica **al file**, e nel file resta una riga che dice *«correzione del
 playtest, rilievo N»*. Fra sei mesi qualcuno chiederà perché quella regola è così: la
 risposta deve stare lì.
+
+### 7-bis. Le correzioni di un giro: `FIX.md` e `VERIFICA.md`
+
+Nel giro delle letture a freddo (`rumblingstone-module-standard`, «Il giro»)
+la correzione e la verifica hanno una tabella fissa ciascuna, così il giro
+dopo le può contare.
+
+`FIX.md`, una riga per rilievo dopo aver unito i doppi:
+
+```
+| Rilievo (rapporto#n) | Gravità | Esito | Cosa ho fatto / perché |
+| Xorn che emergono, mordono e si rituffano (DEV#1, PT#1, DM#4) | 🔴 | CORRETTO | Tattiche e legenda della T-2 riscritte sull'SRD … |
+```
+
+L'esito è uno di quattro: **CORRETTO**, **AL DM** (con la scheda in fondo,
+sezione «Decisioni per il DM»), **RESPINTO** (con fra « » la riga che lo
+smentisce), **RESIDUO** (con la ragione). La seconda passata è una sezione
+«Secondo giro» in fondo allo stesso file.
+
+`VERIFICA.md`, scritta da un agente che non ha fatto la correzione:
+
+```
+| Rilievo | Gravità | Giudizio | Prova (citazione dal master corretto) |
+```
+
+Il giudizio è **CHIUSO**, **PARZIALE**, **APERTO** o **IN ATTESA DEL DM**. Seguono
+due sezioni: «Controlli sui numeri introdotti dalla correzione» e «NUOVI», per
+gli errori che la correzione ha portato.
 
 ## 8. Cosa vale per le sessioni della campagna, non solo per i moduli
 

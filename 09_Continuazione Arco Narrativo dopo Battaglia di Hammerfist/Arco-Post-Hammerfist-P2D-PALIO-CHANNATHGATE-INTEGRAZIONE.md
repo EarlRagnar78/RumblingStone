@@ -40,16 +40,16 @@ Tre vincoli di coerenza, risolti a monte:
 
 ## 1. Geografia e Lore — Channathgate ampliata
 
-Channathgate (orig. **Dennovar**) è la **più grande città mercantile del vale dopo
-Rethmar**, sulla **Dawn Way** ~35 miglia a est di Rethmar (**~1,5 giorni** a cavallo, meno
-a marce forzate). Nel canone attuale è uno **stub**: "eastern gateway; largest city after
-Rethmar", **non ancora attaccata**, **+150 truppe ❓ solo via diplomazia**
-(`state.md` refugee ledger). **Questa avventura la trasforma nel motore geopolitico**
+Channathgate (orig. **Dennovar**) è la **città più popolosa del vale** (circa 25.000
+abitanti, più dei circa 11.600 della Dennovar del libro, per scelta del DM; Rethmar resta la capitale) `[CANONE — DM 2026-10-23]`, sulla **Dawn Way** ~35 miglia a est di Rethmar (**~1,5 giorni** a cavallo, meno
+a marce forzate). Nel canone attuale è uno **stub**: "eastern gateway", più popolosa di Rethmar,
+**città aperta** senza cinta (`P2D-Palio-Allegati/mappe/channathgate-pianta.svg`), **non ancora attaccata**, **+150 truppe ❓ solo via diplomazia**
+(registro dei profughi della campagna). **Questa avventura la trasforma nel motore geopolitico**
 che sblocca quel contributo — e molto altro.
 
 **Ampliamento canonico proposto:**
 - **Governo**: un **Governatore-Mercante** (il *Gonfaloniere*) + una **Balìa** di gilde.
-  Ricchissima, fortificata, **restia a sguarnirsi** per paura di restare indifesa.
+  Ricchissima, senza mura intorno ai rioni (solo l'arg è murato), **restia a sguarnirsi** per paura di restare indifesa.
 - **Cultura "Bard's Tale"**: metropoli di **gilde bardiche**, teatri all'aperto, piazze di
   pietra. La politica si fa **a suon di musica e propaganda** (vedi §7).
 - **Contrade**: 8 rioni storici (le contrade dell'AVVENTURA §1), nati come compagnie
@@ -138,8 +138,8 @@ e Channathgate dista **1,5 giorni**. Il calendario che tiene insieme tutto:
 > - **Day 29-30**: *"I casali del Channath centrale bruciano; i razziatori worg colpiscono i convogli."*
 > - **Day 30-31**: *"L'orda converge sul Crocevia del Channath — sarà lì entro due giorni."* (canone: Day 33)
 > - **Colore**: *"Dicono che a Witchcross i druidi preparino una resistenza disperata."* (cade ~Day 35)
-> **Non usare** "le mura cadono / Rethmar brucia": contraddice il clock. E il drago **blu**
-> è **Ozyrrandion** (impegnato alla Torre Invisibile, P2A); **Tyrgarun è nero e in riserva**
+> **Non usare** "le mura cadono / Rethmar brucia": contraddice il clock. E il drago **verde**
+> è **Ozyrrandion** (impegnato alla Torre Invisibile, P2A); **Tyrgarun è blu e in riserva**
 > fino alla Fase 3 — nessuno dei due bombarda granai durante il Palio.
 
 ### 3.2 Impatto sui Clock dei Villain

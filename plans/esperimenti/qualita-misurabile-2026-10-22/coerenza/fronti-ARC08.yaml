@@ -1,0 +1,116 @@
+# Fronti e orologi di ARC-08, ricavati dalla prosa dei file canonici — DATI DI
+# PROVA, non canone (lotto 7c, 2026-10-22). Stesse regole di fronti-ARC07.yaml:
+# `fonte: null` = dedotto da chi ha scritto questo file.
+#
+# Controllo: python3 scripts/coerenza_campagna.py fronti <questo file>
+schema_version: 1
+arco: ARC-08
+nota: >-
+  ARC-08 non ha schede «Vuole / Teme / Prossimo passo» per i suoi nemici: gli
+  impulsi vengono dalla scheda della marcia (ARC08-04) e da state.yaml. Il
+  March Clock e il Ritual Clock sono orologi di campagna a 42 e 18 passi;
+  i giorni d'assedio sono tre.
+master:
+  - 08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md
+  - 08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md
+  - 08_La Battaglia Di Hammerfist/ARC08-04-MARCIA-MANO-ROSSA.md
+  - 08_La Battaglia Di Hammerfist/ARC08-10-ESITI-E-CONTINGENZE.md
+  - 08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md
+  - 08_La Battaglia Di Hammerfist/ARC08-12-CRONOLOGIA-MARCH-CLOCK.md
+  - 08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md
+
+fronti:
+  - id: avanguardia-fauci
+    nome: L'avanguardia di Fauci di Palude su Hammerfist
+    tipo: avventura
+    impulso:
+      testo: Hammerfist come bersaglio d'opportunità e messaggio di terrore
+      fonte: 08_La Battaglia Di Hammerfist/ARC08-04-MARCIA-MANO-ROSSA.md:33
+    pericoli:
+      - nome: Fauci di Palude
+        impulso: tenere le mura dall'alto, e prendere il portatore dell'ascia
+        fonte: 08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:151
+      - nome: Generale Grimjaw
+        impulso: guidare l'assalto da terra
+        fonte: 08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:287
+      - nome: Gorthak il Trifronte
+        impulso: sfondare il cancello
+        fonte: 08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:330
+      - nome: Cavaliere hobgoblin di Fauci
+        impulso: dare il segnale dell'attacco finale col corno
+        fonte: 08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:245
+    presagi:
+      - testo: la notte prima, gli animali selvatici fuggono dalle montagne
+        chiavi: ["animali selvatici fuggono"]
+      - testo: il drago si alza in volo per la prima volta e sorvola le difese
+        chiavi: ["si alza in volo per la prima volta"]
+      - testo: un'ombra che passa e nessuno sa dire cos'era
+        chiavi: ["un'ombra che passa"]
+    catastrofe:
+      testo: Hammerfist cade; la Mano Rossa guadagna una fortezza e le fucine
+      fonte: 08_La Battaglia Di Hammerfist/ARC08-10-ESITI-E-CONTINGENZE.md:104
+    domande:
+      - testo: Fauci fugge ferito o muore nel duello?
+        fonte: null
+      - testo: Hammerfist regge fino al Giorno 3, quando arrivano i Rumbling Stones?
+        fonte: null
+    orologi: [giorni-assedio]
+    nota: >-
+      Quattro pericoli: i nemici principali della Guida sono quattro, e Dungeon
+      World ne vuole due o tre. Si potrebbe fondere il cavaliere in Fauci.
+
+  - id: marcia-mano-rossa
+    nome: La marcia della Mano Rossa su Rethmar
+    tipo: campagna
+    impulso:
+      testo: evocare l'Avatar di Tiamat durante l'assedio di Rethmar
+      fonte: campaign/state.yaml:352
+    pericoli:
+      - nome: Azarr Kul
+        impulso: il rituale dell'Avatar, che avanza sui sacrifici
+        fonte: campaign/state.yaml:352
+      - nome: l'orda principale
+        impulso: arrivare a Rethmar al Day 42
+        fonte: campaign/state.yaml:611
+    presagi:
+      - testo: Terrelton cade lo stesso giorno della vittoria
+        chiavi: ["caduta di Terrelton"]
+      - testo: il Fane di Tiamat da cui parte l'orda
+        chiavi: ["Fane di Tiamat"]
+      - testo: l'orda prende Terrelton e scende verso Rethmar
+        chiavi: ["scende verso Rethmar"]
+    catastrofe:
+      testo: l'Avatar di Tiamat si manifesta su Rethmar nella Fase 2
+      fonte: campaign/state.yaml:355
+    domande:
+      - testo: Le 150 lance di Re Thorek arrivano a Rethmar?
+        fonte: null   # ARC08-10 r.297 la scrive come rinforzo condizionale, non come domanda
+    orologi: [march-clock, ritual-clock]
+
+orologi:
+  - id: giorni-assedio
+    nome: I giorni dell'assedio
+    segmenti: 3
+    riempiti: 0
+    unita: giorni di battaglia
+    quando_si_riempie:
+      testo: al Giorno 3 i Rumbling Stones riemergono al Cuore della Montagna
+      fonte: 08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md:62
+    fonte: 08_La Battaglia Di Hammerfist/ARC08-12-CRONOLOGIA-MARCH-CLOCK.md:35
+  - id: march-clock
+    nome: March Clock
+    segmenti: 42
+    riempiti: 19
+    unita: giorni
+    quando_si_riempie:
+      testo: l'orda arriva a Rethmar e si accampa; comincia l'assedio
+      fonte: campaign/state.yaml:611
+    fonte: 08_La Battaglia Di Hammerfist/ARC08-12-CRONOLOGIA-MARCH-CLOCK.md:17
+  - id: ritual-clock
+    nome: Ritual Clock di Azarr Kul (state.yaml §3)
+    segmenti: 18
+    riempiti: 9
+    quando_si_riempie:
+      testo: l'Avatar di Tiamat si manifesta su Rethmar
+      fonte: campaign/state.yaml:355
+    fonte: campaign/state.yaml:353

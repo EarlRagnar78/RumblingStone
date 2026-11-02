@@ -1,0 +1,116 @@
+
+07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md  —  36 box, 2556 parole
+   calchi/box 0.14 (2.0‰ parole): sogg.prev 0.11 · agg.compl 0.03 · stare+ger 0.00  [fuori totale: pron.sogg 0.06, possessivi corpo 0.00 da validate_prosa]
+   profondità max 5.1 · livelli max 0.94 · frasi >2 livelli 0.0% · lungh.dip 2.25
+   MATTR lemmi 0.860 · ripetizione interna 5.4% · fra box 61.9%
+   lemmi in ≥4 box: luce 12, verde 10, pietra 10, mano 10, cristallo 9, roccia 7, peso 7, voce 6, suono 6, polvere 6
+   box con più calchi:
+     r.1707  calchi 2 liv 2 prof 7  Poi la collina respira. Una fenditura si apre lungo la parete di roccia, e la parete è una…
+            sogg_preverbale: Una fenditura si apre | due occhi di cristallo grezzo si accendono
+     r.418   calchi 1 liv 1 prof 5  Un rombo basso sale dal pavimento ed entra nelle ossa; le colonne tremano tutte sulla stes…
+            sogg_preverbale: Un rombo basso sale
+     r.517   calchi 1 liv 1 prof 6  Aegis Fang tira il braccio da una parte sola. Da quella parte, a portata di mano, piattafo…
+            agg_complesso: E lontanissimo, sopra quell'oceano, un cubo d'argento perfetto ruota
+
+07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md  —  22 box, 1633 parole
+   calchi/box 0.00 (0.0‰ parole): sogg.prev 0.00 · agg.compl 0.00 · stare+ger 0.00  [fuori totale: pron.sogg 0.14, possessivi corpo 0.00 da validate_prosa]
+   profondità max 5.4 · livelli max 1.36 · frasi >2 livelli 1.6% · lungh.dip 2.41
+   MATTR lemmi 0.880 · ripetizione interna 7.1% · fra box 54.3%
+   lemmi in ≥4 box: affresco 11, pietra 8, mano 7, luce 6, fuoco 6, porta 5, parete 5, nanico 5, dorato 5, sogno 4
+     r.535   3 livelli di subordinate  Questo affresco mostra eventi di pochi giorni fa, e la figura dipinta sei tu, Thorik. Si a…
+     r.948   3 livelli di subordinate  Sogni di essere ancora in ginocchio sull'Altare, col peso addosso, ma non lo porti da solo…
+
+07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md  —  20 box, 1104 parole
+   calchi/box 0.00 (0.0‰ parole): sogg.prev 0.00 · agg.compl 0.00 · stare+ger 0.00  [fuori totale: pron.sogg 0.35, possessivi corpo 0.00 da validate_prosa]
+   profondità max 4.5 · livelli max 1.00 · frasi >2 livelli 0.0% · lungh.dip 2.24
+   MATTR lemmi 0.890 · ripetizione interna 2.8% · fra box 58.4%
+   lemmi in ≥4 box: luce 8, petto 7, mano 7, pietra 6, cuore 6, battito 6, voce 5, tornare 5, occhio 5, corpo 5
+
+07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md  —  37 box, 2351 parole
+   calchi/box 0.08 (1.3‰ parole): sogg.prev 0.03 · agg.compl 0.00 · stare+ger 0.05  [fuori totale: pron.sogg 0.11, possessivi corpo 0.00 da validate_prosa]
+   profondità max 5.0 · livelli max 1.05 · frasi >2 livelli 0.0% · lungh.dip 2.35
+   MATTR lemmi 0.880 · ripetizione interna 5.0% · fra box 65.2%
+   lemmi in ≥4 box: pietra 13, muro 11, ascia 10, vecchio 9, mano 9, luce 8, guardare 8, fondo 8, passare 7, freddo 7
+   box con più calchi:
+     r.658   calchi 1 liv 2 prof 7  Lungo il corridoio i bambini e i vecchi scendono verso le miniere con un fagotto ciascuno,…
+            sogg_preverbale: un altro vecchio resta
+     r.721   calchi 1 liv 1 prof 5  Il vecchio sulla panca non si è mosso. Tiene le mani aperte verso la luce, i palmi in su, …
+            stare_gerundio: sta già parlando
+            pron_soggetto: lui non se ne accorge
+     r.2142  calchi 1 liv 2 prof 5  In fondo alla tenda, dove la luce dei bracieri non arriva, un vecchio è seduto su uno sgab…
+            stare_gerundio: sta incidendo
+
+07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md  —  9 box, 553 parole
+   calchi/box 0.11 (1.8‰ parole): sogg.prev 0.11 · agg.compl 0.00 · stare+ger 0.00  [fuori totale: pron.sogg 0.00, possessivi corpo 0.00 da validate_prosa]
+   profondità max 4.4 · livelli max 1.00 · frasi >2 livelli 0.0% · lungh.dip 2.31
+   MATTR lemmi 0.840 · ripetizione interna 4.8% · fra box 44.7%
+   lemmi in ≥4 box: luce 5, respiro 4, pietra 4, orco 4
+   box con più calchi:
+     r.386   calchi 1 liv 1 prof 6  Il rosso vi stringe in un filo tirato attraverso mille anni, e non fa male: è una vertigin…
+            sogg_preverbale: un re torna
+
+08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md  —  73 box, 4721 parole
+   calchi/box 0.23 (3.6‰ parole): sogg.prev 0.14 · agg.compl 0.01 · stare+ger 0.08  [fuori totale: pron.sogg 0.05, possessivi corpo 0.11 da validate_prosa]
+   profondità max 5.5 · livelli max 1.38 · frasi >2 livelli 0.9% · lungh.dip 2.20
+   MATTR lemmi 0.890 · ripetizione interna 2.7% · fra box 69.4%
+   lemmi in ≥4 box: nanico 24, occhio 17, nemico 17, drago 16, nero 14, guerra 14, voce 13, montagna 13, alzare 13, luce 12
+   box con più calchi:
+     r.1384  calchi 3 liv 1 prof 7  "La notte prima dell'assalto, fenomeni innaturali cominciano a manifestarsi. Il vento port…
+            sogg_preverbale: "La notte prima dell'assalto, fenomeni innaturali cominciano | un ruggito terrificante echeggia
+            stare_gerundio: sta annunciando
+     r.2058  calchi 2 liv 1 prof 5  "Il passaggio principale si apre in una caverna più vasta: una selva di stalagmiti si leva…
+            sogg_preverbale: una selva di stalagmiti si leva | Sei bocche di tunnel si spalancano
+     r.1434  calchi 1 liv 3 prof 6  "Un suono di corno echeggia per tre volte dalle linee nemiche. È il segnale. Come una mare…
+            sogg_preverbale: "Un suono di corno echeggia
+     r.1434  3 livelli di subordinate  "Un suono di corno echeggia per tre volte dalle linee nemiche. È il segnale. Come una mare…
+     r.2410  3 livelli di subordinate  "Proprio quando gli orchi sfondano l'ultima barricata e si gettano urlando verso l'altare …
+     r.2964  3 livelli di subordinate  "Fauci di Palude, realizzando che la battaglia è perduta, si volta verso il campo dove sta…
+
+08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md  —  6 box, 284 parole
+   calchi/box 0.00 (0.0‰ parole): sogg.prev 0.00 · agg.compl 0.00 · stare+ger 0.00  [fuori totale: pron.sogg 0.00, possessivi corpo 0.00 da validate_prosa]
+   profondità max 5.0 · livelli max 1.17 · frasi >2 livelli 0.0% · lungh.dip 2.02
+   MATTR lemmi 0.840 · ripetizione interna 3.6% · fra box 16.7%
+
+08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md  —  1 box, 74 parole
+   calchi/box 0.00 (0.0‰ parole): sogg.prev 0.00 · agg.compl 0.00 · stare+ger 0.00  [fuori totale: pron.sogg 0.00, possessivi corpo 0.00 da validate_prosa]
+   profondità max 5.0 · livelli max 2.00 · frasi >2 livelli 0.0% · lungh.dip 2.10
+   MATTR lemmi 0.860 · ripetizione interna 7.7% · fra box 0.0%
+
+08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md  —  6 box, 183 parole
+   calchi/box 0.00 (0.0‰ parole): sogg.prev 0.00 · agg.compl 0.00 · stare+ger 0.00  [fuori totale: pron.sogg 0.00, possessivi corpo 0.00 da validate_prosa]
+   profondità max 4.3 · livelli max 1.00 · frasi >2 livelli 0.0% · lungh.dip 2.02
+   MATTR lemmi 0.870 · ripetizione interna 4.1% · fra box 18.1%
+
+08_La Battaglia Di Hammerfist/ARC08-17-BANCO-HAMMERFIST-1372.md  —  1 box, 106 parole
+   calchi/box 0.00 (0.0‰ parole): sogg.prev 0.00 · agg.compl 0.00 · stare+ger 0.00  [fuori totale: pron.sogg 0.00, possessivi corpo 0.00 da validate_prosa]
+   profondità max 5.0 · livelli max 1.00 · frasi >2 livelli 0.0% · lungh.dip 2.48
+   MATTR lemmi 0.900 · ripetizione interna 4.3% · fra box 0.0%
+
+08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md  —  1 box, 163 parole
+   calchi/box 1.00 (6.1‰ parole): sogg.prev 0.00 · agg.compl 0.00 · stare+ger 1.00  [fuori totale: pron.sogg 4.00, possessivi corpo 1.00 da validate_prosa]
+   profondità max 5.0 · livelli max 1.00 · frasi >2 livelli 0.0% · lungh.dip 2.40
+   MATTR lemmi 0.880 · ripetizione interna 12.8% · fra box 0.0%
+   box con più calchi:
+     r.42    calchi 1 liv 1 prof 5  Re Thorek si volta verso i quattro di voi. Non sorride. La sua voce, già rauca dalla canti…
+            stare_gerundio: stavano spezzando
+            pron_soggetto: Voi non siete nani | Voi avete combattuto | Io vi avevo chiamato
+
+08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md  —  13 box, 602 parole
+   calchi/box 0.23 (5.0‰ parole): sogg.prev 0.15 · agg.compl 0.00 · stare+ger 0.08  [fuori totale: pron.sogg 0.00, possessivi corpo 0.00 da validate_prosa]
+   profondità max 5.1 · livelli max 1.46 · frasi >2 livelli 4.3% · lungh.dip 2.14
+   MATTR lemmi 0.870 · ripetizione interna 3.1% · fra box 28.6%
+   lemmi in ≥4 box: occhio 4
+   box con più calchi:
+     r.482   calchi 1 liv 1 prof 5  "Un'ombra colossale passa sopra i bastioni. Fauci di Palude si libra a sessanta metri d'al…
+            sogg_preverbale: Un'ombra colossale passa
+     r.1109  calchi 1 liv 2 prof 5  Un gufo più piccolo degli altri si stacca dalla formazione e si posa sul bastione, a tre p…
+            sogg_preverbale: Un gufo più piccolo degli altri si stacca
+     r.1141  calchi 1 liv 3 prof 5  "Fauci di Palude, realizzando che la battaglia è perduta, si volta verso il campo dove sta…
+            stare_gerundio: stanno avanzando
+     r.496   4 livelli di subordinate  "Fauci di Palude piega le ali e si lancia in picchiata come una meteora vivente. Il vento …
+     r.1141  3 livelli di subordinate  "Fauci di Palude, realizzando che la battaglia è perduta, si volta verso il campo dove sta…
+
+08_La Battaglia Di Hammerfist/mass_combat_guide_Dm.md  —  4 box, 87 parole
+   calchi/box 0.00 (0.0‰ parole): sogg.prev 0.00 · agg.compl 0.00 · stare+ger 0.00  [fuori totale: pron.sogg 0.00, possessivi corpo 0.00 da validate_prosa]
+   profondità max 3.2 · livelli max 0.25 · frasi >2 livelli 0.0% · lungh.dip 2.47
+   MATTR lemmi 0.890 · ripetizione interna 7.1% · fra box 22.4%

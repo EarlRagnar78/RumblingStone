@@ -19,9 +19,8 @@ voci:
   - Talenti: Schivare, Iniziativa Migliorata, Robustezza Migliorata
 ```
 
-> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d10+3», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD, il bonus da Cos 16 e Robustezza Migliorata.
 
-> [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili. ⚠ la CA di contatto suggerisce Des 10, la fonte dice 13: si tiene la fonte, la differenza può essere deviazione o schivata, da verificare.
+> [GENERATO] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. ⚠ la CA di contatto suggerisce Des 10, la fonte dice 13: si tiene la fonte, la differenza può essere deviazione o schivata, da verificare.
 
 Medium humanoid (dwarf, duergar), Fighter 2, LE. **hp 20**; **AC 19**, touch 10, flat-footed 19. Init +5; Vel 6 m. TS Temp +6, Rifl +1, Vol +0. BAB +2; Lotta +5.
 **Mischia** spada bastarda perfetta +3 (1d10+3). SLA duergar (*ingrandire*, *invisibilità* 1/giorno). Scurovisione 36 m, immune a paralisi/veleno, +2 vs incantesimi. For 17, Des 13, Cos 16. Talenti: Schivare, Iniziativa Migliorata, Robustezza Migliorata.

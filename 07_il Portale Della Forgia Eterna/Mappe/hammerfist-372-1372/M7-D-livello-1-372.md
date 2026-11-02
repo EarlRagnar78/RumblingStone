@@ -14,23 +14,23 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 02 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰
 03 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰
 04 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ 🔵 🔵 🔵 🔵 🔵 🔵 ⬜ 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰
-05 🏰 🏰 ⬜ 🛏 🛏 🛏 🛏 🛏 🛏 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰
-06 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰 ⬜ ⬜ ⬜ ⬜ 🔮 ⬜ ⬜ ⬜ 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ 🪑 ⬜ ⬜ ⬜ 🏰 🏰
-07 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ 🔵 ⬜ ⬜ 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ ⬜ 🔵 ⬜ ⬜ 🏰 🏰
-08 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ ⬜ ⬜ 🏺 ⬜ 🏰 🏰
-09 🏰 🏰 ⬜ ⬜ ⬜ 🏮 ⬜ ⬜ ⬜ 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰
+05 🏰 🏰 ⬜ 🛏 🛏 🛏 🛏 🛏 🛏 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ ⬜ ⬜ 🛢 🏰 🏰
+06 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰 🟪 ⬜ ⬜ ⬜ 🔮 ⬜ ⬜ 🟪 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ 🪑 ⬜ ⬜ 🛢 🏰 🏰
+07 🏰 🏰 ⬜ ⬜ ⬜ ⬜ 🪑 ⬜ ⬜ 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ 🔵 ⬜ ⬜ 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ ⬜ 🔵 ⬜ ⬜ 🏰 🏰
+08 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🛢 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ 🧪 ⬜ ⬜ 🏺 ⬜ 🏰 🏰
+09 🏰 🏰 🏰 ⬜ ⬜ 🏮 ⬜ ⬜ 🏰 🏰 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰 🏰
 10 🏰 🏰 🏰 🏰 🚪 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🚪 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🚪 🏰 🏰 🏰 🏰 🏰
 11 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰
 12 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰
 13 🏰 🏰 🚪 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🚪 🚪 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰
-14 🏰 ⬜ ⬜ ⬜ 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰
+14 🏰 ⬜ ⬜ ⬜ 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰 🏰 ⬜ ⬜ ⬜ ⬜ 🏰 🏰 🏰
 15 🏰 ⬜ 🔼 ⬜ 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ 🪑 🔵 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 ⬜ ⬜ 🪓 ⬜ 🪓 ⬜ 🏰 🏰
-16 🏰 ⬜ ⬜ ⬜ 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏺 🏺 ⬜ 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰
-17 🏰 ⬜ ⬜ ⬜ 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🪑 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🚪 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰
-18 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🔵 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰
+16 🏰 ⬜ ⬜ ⬜ 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏺 🏺 ⬜ 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ 🪓 🏰 🏰
+17 🏰 🏰 ⬜ 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🪑 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🚪 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰
+18 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🔵 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ 🪓 🏰 🏰
 19 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ 🔵 🔵 🔵 🔵 🔵 🔵 🔵 🔵 🔵 🔵 🔵 ⬜ ⬜ 🏰 ⬜ ⬜ 🪓 ⬜ 🪓 ⬜ 🏰 🏰
-20 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🔽 ⬜ 🏰 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🏰 🏰
-21 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ 🏮 ⬜ ⬜ ⬜ 🏮 ⬜ ⬜ ⬜ 🏮 ⬜ ⬜ ⬜ 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰
+20 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬜ ⬜ ⚒ ⬜ ⬜ ⬜ ⚒ ⬜ ⬜ ⬜ ⚒ ⬜ 🔽 ⬜ 🏰 🏰 ⬜ ⬜ ⬜ ⬜ 🏰 🏰 🏰
+21 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 ⬛ 🏮 ⬛ 🛢 ⬛ 🏮 ⬛ 🛢 ⬛ 🏮 ⬛ ⬜ 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰
 22 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰
 23 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰
 
@@ -76,9 +76,9 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 | Stato | Trigger | Cosa cambia sulla griglia | Effetto meccanico |
 |---|---|---|---|
 | A (iniziale) | — | com'è disegnata | — |
-| B | [trigger] | Canone 372: DEF-4 Scena 5 (quartieri, cappella due porte più in là, bottega in fondo al corridoio della fucina, tre forge); D45 (tre fucine) e D47 (armeria accanto alla fucina di Gunnvor) del 2026-10-08. | [effetto] |
+| B | [trigger] | Canone 372: DEF-4 Scena 5 (quartieri, cappella alla porta dopo i quartieri, bottega in fondo al corridoio della fucina, tre forge); D45 (tre fucine) e D47 (armeria accanto alla fucina di Gunnvor) del 2026-10-08. | [effetto] |
 | B | [trigger] | Le misure delle stanze sono quelle di questa griglia, approvate con D48. | [effetto] |
-| B | [trigger] | Sotto la fucina il caldo finisce di colpo: la scala di Y20 scende alle gallerie di Zeth (M7-E). | [effetto] |
+| B | [trigger] | Sotto la fucina il caldo finisce di colpo: la scala di Z20 scende alle gallerie di Zeth (M7-E). | [effetto] |
 
 > Gli stati sono **esiti aperti** (D13): il trigger è dei dadi e delle scelte dei PG, mai del copione.
 

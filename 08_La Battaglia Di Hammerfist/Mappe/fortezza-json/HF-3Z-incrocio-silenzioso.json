@@ -1,0 +1,599 @@
+{
+ "schema_version": "1.0",
+ "title": "MAPPA 3Z REVISED: L'Incrocio Silenzioso (imboscata)",
+ "scale_m_per_square": 1.5,
+ "map_size": [
+  33,
+  33
+ ],
+ "base_terrain": "⛰",
+ "north": "N",
+ "tipo": "tattica",
+ "ambiente": "caverna",
+ "regions": [
+  {
+   "terrain": "🟤",
+   "polygon": [
+    [
+     9,
+     3
+    ],
+    [
+     23,
+     3
+    ],
+    [
+     29,
+     9
+    ],
+    [
+     29,
+     23
+    ],
+    [
+     23,
+     29
+    ],
+    [
+     9,
+     29
+    ],
+    [
+     3,
+     23
+    ],
+    [
+     3,
+     9
+    ]
+   ],
+   "label": "La caverna dell'Incrocio, 40 m da parete a parete"
+  },
+  {
+   "terrain": "🟤",
+   "rect": [
+    15,
+    0,
+    3,
+    4
+   ],
+   "label": "Tunnel NORD, verso il Cuore"
+  },
+  {
+   "terrain": "🟤",
+   "rect": [
+    15,
+    29,
+    3,
+    4
+   ],
+   "label": "Tunnel SUD, da dove arriva la colonna"
+  },
+  {
+   "terrain": "🟤",
+   "rect": [
+    0,
+    15,
+    4,
+    3
+   ],
+   "label": "Tunnel OVEST"
+  },
+  {
+   "terrain": "🟤",
+   "rect": [
+    29,
+    15,
+    4,
+    3
+   ],
+   "label": "Tunnel EST"
+  },
+  {
+   "terrain": "🟤",
+   "polygon": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     7,
+     5
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "label": "Tunnel NORD-OVEST"
+  },
+  {
+   "terrain": "🟤",
+   "polygon": [
+    [
+     30,
+     0
+    ],
+    [
+     32,
+     0
+    ],
+    [
+     32,
+     2
+    ],
+    [
+     27,
+     7
+    ],
+    [
+     25,
+     5
+    ]
+   ],
+   "label": "Tunnel NORD-EST, vuoto"
+  }
+ ],
+ "structures": [
+  {
+   "type": "🔺",
+   "at": [
+    11,
+    7
+   ],
+   "label": "Stalagmite S1"
+  },
+  {
+   "type": "🔺",
+   "at": [
+    21,
+    6
+   ],
+   "label": "Stalagmite S2"
+  },
+  {
+   "type": "🔺",
+   "at": [
+    5,
+    12
+   ],
+   "label": "Stalagmite S3"
+  },
+  {
+   "type": "🔺",
+   "at": [
+    27,
+    11
+   ],
+   "label": "Stalagmite S4"
+  },
+  {
+   "type": "🔺",
+   "at": [
+    11,
+    6
+   ],
+   "label": "Stalagmite S5, scalabile (Scalare CD 10)"
+  },
+  {
+   "type": "🔺",
+   "at": [
+    6,
+    21
+   ],
+   "label": "Stalagmite S6"
+  },
+  {
+   "type": "🔺",
+   "at": [
+    26,
+    22
+   ],
+   "label": "Stalagmite S7"
+  },
+  {
+   "type": "🔺",
+   "at": [
+    20,
+    27
+   ],
+   "label": "Stalagmite S8"
+  },
+  {
+   "type": "⛰",
+   "rect": [
+    15,
+    15,
+    3,
+    3
+   ],
+   "label": "Pilastro dell'Incrocio, roccia viva incisa di rune: il giro attorno"
+  },
+  {
+   "type": "🏮",
+   "at": [
+    10,
+    11
+   ],
+   "label": "Torce naniche piantate"
+  },
+  {
+   "type": "🏮",
+   "at": [
+    22,
+    11
+   ],
+   "label": "Torce naniche piantate"
+  },
+  {
+   "type": "🏮",
+   "at": [
+    10,
+    21
+   ],
+   "label": "Torce naniche piantate"
+  },
+  {
+   "type": "🏮",
+   "at": [
+    22,
+    21
+   ],
+   "label": "Torce naniche piantate"
+  }
+ ],
+ "units": [
+  {
+   "faction": "Nani",
+   "name": "Anello esterno NORD, scudi in fuori (Guerrieri veterani)",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     8,
+     9,
+     17,
+     1
+    ]
+   },
+   "quantity": 17
+  },
+  {
+   "faction": "Nani",
+   "name": "Anello esterno SUD (Guerrieri veterani)",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     8,
+     23,
+     17,
+     1
+    ]
+   },
+   "quantity": 17
+  },
+  {
+   "faction": "Nani",
+   "name": "Anello esterno OVEST (Guerrieri veterani)",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     8,
+     10,
+     1,
+     13
+    ]
+   },
+   "quantity": 13
+  },
+  {
+   "faction": "Nani",
+   "name": "Anello esterno EST (Guerrieri veterani)",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     24,
+     10,
+     1,
+     13
+    ]
+   },
+   "quantity": 13
+  },
+  {
+   "faction": "Nani",
+   "name": "Balestrieri, cerchio interno NORD",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     13,
+     13,
+     7,
+     1
+    ]
+   },
+   "quantity": 7
+  },
+  {
+   "faction": "Nani",
+   "name": "Balestrieri, cerchio interno SUD",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     13,
+     19,
+     7,
+     1
+    ]
+   },
+   "quantity": 7
+  },
+  {
+   "faction": "Nani",
+   "name": "Balestrieri, cerchio interno OVEST",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     13,
+     14,
+     1,
+     5
+    ]
+   },
+   "quantity": 3
+  },
+  {
+   "faction": "Nani",
+   "name": "Balestrieri, cerchio interno EST",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     19,
+     14,
+     1,
+     5
+    ]
+   },
+   "quantity": 3
+  },
+  {
+   "faction": "Nani",
+   "name": "Re Thorek XIII sulla barella (8 PF, morente)",
+   "token": "🔵",
+   "at": [
+    16,
+    18
+   ]
+  },
+  {
+   "faction": "Nani",
+   "name": "Portatori della barella",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     15,
+     18,
+     1,
+     1
+    ]
+   },
+   "quantity": 1
+  },
+  {
+   "faction": "Nani",
+   "name": "Portatori della barella",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     17,
+     18,
+     1,
+     1
+    ]
+   },
+   "quantity": 1
+  },
+  {
+   "faction": "Nani",
+   "name": "Borin Ferropugno (Ftr)",
+   "token": "🔵",
+   "at": [
+    16,
+    14
+   ]
+  },
+  {
+   "faction": "Nani",
+   "name": "Thorin Runaforte (Clr), accanto al Re",
+   "token": "🔵",
+   "at": [
+    14,
+    18
+   ]
+  },
+  {
+   "faction": "Nani",
+   "name": "Nala Cantapietre (Brd)",
+   "token": "🔵",
+   "at": [
+    14,
+    14
+   ]
+  },
+  {
+   "faction": "Nani",
+   "name": "Dara Occhiolesto (Rgr), ai piedi della stalagmite S5",
+   "token": "🔵",
+   "at": [
+    11,
+    8
+   ]
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Bugbear Assassini, tunnel EST (Rog5/Asn2)",
+   "token": "🔴",
+   "area": {
+    "rect": [
+     30,
+     15,
+     2,
+     2
+    ]
+   },
+   "quantity": 4,
+   "cr": "GS 9 cad."
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Bugbear Assassini, tunnel OVEST (Rog5/Asn2)",
+   "token": "🔴",
+   "area": {
+    "rect": [
+     1,
+     16,
+     2,
+     2
+    ]
+   },
+   "quantity": 4,
+   "cr": "GS 9 cad."
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Sergente hobgoblin, tunnel NORD-OVEST",
+   "token": "⚫",
+   "at": [
+    5,
+    4
+   ]
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Hobgoblin di diversione, tunnel NORD-OVEST",
+   "token": "🔴",
+   "area": {
+    "rect": [
+     2,
+     1,
+     2,
+     2
+    ]
+   },
+   "quantity": 4
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Hobgoblin di diversione, tunnel NORD-OVEST",
+   "token": "🔴",
+   "area": {
+    "rect": [
+     4,
+     3,
+     1,
+     1
+    ]
+   },
+   "quantity": 1
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Hobgoblin di diversione, tunnel NORD-OVEST",
+   "token": "🔴",
+   "area": {
+    "rect": [
+     4,
+     2,
+     1,
+     1
+    ]
+   },
+   "quantity": 1
+  }
+ ],
+ "movements": [
+  {
+   "name": "Round 1: diversione hobgoblin (NO → anello nord)",
+   "path": [
+    [
+     4,
+     3
+    ],
+    [
+     8,
+     7
+    ],
+    [
+     12,
+     8
+    ]
+   ],
+   "color": "#e0a100"
+  },
+  {
+   "name": "Round 2: bugbear EST → Re Thorek",
+   "path": [
+    [
+     30,
+     16
+    ],
+    [
+     25,
+     17
+    ],
+    [
+     20,
+     18
+    ],
+    [
+     17,
+     19
+    ]
+   ],
+   "color": "#d62828"
+  },
+  {
+   "name": "Round 2: bugbear OVEST → comandanti",
+   "path": [
+    [
+     2,
+     17
+    ],
+    [
+     7,
+     17
+    ],
+    [
+     13,
+     16
+    ]
+   ],
+   "color": "#d62828"
+  },
+  {
+   "name": "Round 4 (eventuale): 30 orchi inseguitori dal SUD",
+   "path": [
+    [
+     16,
+     32
+    ],
+    [
+     16,
+     28
+    ],
+    [
+     16,
+     24
+    ]
+   ],
+   "color": "#8c2fb8"
+  }
+ ]
+}

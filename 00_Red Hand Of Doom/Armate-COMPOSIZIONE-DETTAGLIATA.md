@@ -1,7 +1,7 @@
 # Armate — Composizione Dettagliata (RHoD Army Atlas)
 
 > **🛡️ Canonizzazione 2026-05-05**: il DM ha **accettato** tutte le
-> derivazioni precedentemente marcate `[INFERRED]` (unità in
+> derivazioni delle unità prima non confermate (unità in
 > `Bestiario/`) e tutti i puntatori a `PNG/` come canone di
 > campagna. Flag `[INFERRED]` → `[ACCEPTED — DM-canon 2026-05-05]`.
 > Le unità restano valide per encounter building e mass combat; i
@@ -131,7 +131,7 @@
 |---|---|---|---|---|
 | **Abithriax** | Red Adult | 15 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Arbitrax Drago Rosso.htm` | Vivo, Rethmar Fase 1 |
 | **Regiarix** | Black Young Adult | 10 | `09_.../Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | A rischio (P2 Rhest) |
-| **Ozyrrandion** | Blue Adult (AP) / green cr8 variant | 8-14 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Ozyrrandion drago Verde cr8.pcg` + `green dragon.htm` | A rischio (P2A Torre) |
+| **Ozyrrandion** | Green Adult (AP), 22 DV | 14 | `Bestiario/villain/ozyrrandion-drago-verde-cr14.md` (base storica: `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Ozyrrandion drago Verde cr8.pcg` + `green dragon.htm`) | A rischio (P2A Torre) |
 | **Tyrgarun** | **Blue Old (terrore dei cieli, D11 v2)** | **18** | [ACCEPTED] `Bestiario/villain/Tyrgarun/tyrgarun-blue-old-cr18.md` | Vivo; hazard aereo Fasi 1-3, inchiodato dal Mythal in Fase 4 (CR eff. ~16-17) — NON cavalcatura di Azarr Kul |
 | **Fauci di Palude** | Black Adult avanzato | 15 | `08_…/00_Schede_dei_Personaggi_Unità_…md` §1 | Ramo condizionale D10, non deciso (default: fugge <50 PF, assente da Rethmar; alternativa: ucciso ad Hammerfist) |
 | Draon-hamann (cr8) | Red Young (escort) | 8 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Draon-hamann-cr8.pcg` | Gith mount |
@@ -162,7 +162,7 @@ Varianti colore Tiamat. Base template + delta per colore.
 | Koth (Signore dei Dragoni) | 9 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/signore dei Dragoni Koth.htm` | Vraath Keep / field commander |
 | Saarvith | 11 | `09_…/Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | Rhest boss |
 | Zalkatar | 13 | `09_…/Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` | Torre Invisibile boss |
-| Karruk | 10 | [ACCEPTED] `Bestiario/villain/Wyrmlord_Karruk/wyrmlord-karruk-cr10.md` | Rethmar Fase 1 assault leader |
+| Karruk | 13 | [ACCEPTED] `Bestiario/villain/Wyrmlord_Karruk/wyrmlord-karruk-cr13.md` | Rethmar Fase 1 assault leader |
 | Ulwai Stormcaller (Bard) | 8 | Base: `Lómyn redTongue bard 8.pcg` | Variante nominata |
 
 ---
@@ -311,7 +311,7 @@ Per l'uso in Rethmar Fase 1-4 (difensori) o encounter di supporto.
 | Druido Avarthel cr9 | 9 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/druido Avarthel cr9.htm` | Cerchio Sacro support |
 | Cerchio Sacro Druid 7 (Hella ally) | 7 | [ACCEPTED] `Bestiario/mostri/cerchio-druid7-cr7.md` | +150 |
 | Treant (ally) | 8 | [REF MM p.244] | +Cerchio Treant |
-| Tempestas (Bardo/Arcimago) | 15 | `Bestiario/png/Tempestas/` + `08_…/00_Schede_dei_Personaggi…md` §2 | NPC |
+| Tempestas (Bardo/Cantore delle tempeste) | 14 | `Bestiario/png/Tempestas/` + `08_…/00_Schede_dei_Personaggi…md` §2 | NPC |
 | Signore Ventolesto (Gufo Celestiale Alpha) | 8 | `08_…/00_Schede_dei_Personaggi…md` §2 | NPC |
 | Orion Pelleorsa (Druido umano) | 9 | `08_…/00_Schede_dei_Personaggi…md` §2 | NPC |
 | Capitano Lunapiena (Ranger elfico) | 10 | `08_…/00_Schede_dei_Personaggi…md` §2 | NPC |
@@ -340,7 +340,7 @@ Tutti marcati `[ACCEPTED — DM-canon 2026-05-05]`; fonte AP RHoD + SRD/MM/FRCS.
 | Zarim (Illithid luogotenente) | 12 | `Bestiario/villain/Zarim/zarim-illithid-luogotenente-cr12.md` | 09 P2B Torneo |
 | Xal'thor (Illithid Commander) | 14 | `Bestiario/villain/Xal_thor/xal-thor-illithid-commander-cr14.md` | 09 P2B Day 3 |
 | Ondata Giganti — mass wave | 15 | `Bestiario/mostri/ondata-giganti-fanteria-cr15.md` | 09 Fase 1-3 |
-| Azarr Kul (finale) | 15 | `Bestiario/villain/Azarr_Kul/azarr-kul-final-cr15.md` | 09 Fase 3 |
+| Azarr Kul (finale) | 17 | `Bestiario/villain/Azarr_Kul/azarr-kul-final-cr17.md` | 09 Fase 3 |
 | Avatar di Tiamat | 17 | `Bestiario/villain/Avatar_Tiamat/avatar-tiamat-cr17.md` | 09 Fase 3 climax |
 
 ### 16b. Ghostlord Branch (Undead Aberration)
@@ -356,10 +356,10 @@ Tutti marcati `[ACCEPTED — DM-canon 2026-05-05]`; fonte AP RHoD + SRD/MM/FRCS.
 | Capitana Lorana | 7 | `Bestiario/png/Lorana/capitana-lorana-cr7.md` | Rethmar ally, milizia |
 | Therysol (tiefling mezzo-drago) | 9 | `Bestiario/png/Therysol/therysol-tiefling-mezzodrago-cr9.md` | Rakshasa hunter ally |
 | Githyanki Knight Elite | 10 | `Bestiario/mostri/githyanki-knight-elite-cr10.md` | Rethmar wave |
-| Dauth Commander (mercenari nani) | 11 | `Bestiario/png/dauth-commander-mercenari-nani-cr11.md` | Rethmar ally |
+| Dauth Commander (mercenari nani) | 12 | `Bestiario/png/dauth-commander-mercenari-nani-cr12.md` | Rethmar ally |
 | Druid-Bear Ally (wildshape tank) | 12 | `Bestiario/png/druid-bear-ally-cr12.md` | Cerchio Sacro |
-| Arci-Druido Circolo | 14 | `Bestiario/png/arci-druido-circolo-cr14.md` | Cerchio Sacro boss |
-| Arcimago Circolo degli Otto | 14 | `Bestiario/png/arcimago-circolo-otto-cr14.md` | Starsong/Circle ally |
+| Arci-Druido Circolo | 17 | `Bestiario/png/arci-druido-circolo-cr17.md` | Cerchio Sacro boss |
+| Arcimago Circolo degli Otto | 17 | `Bestiario/png/arcimago-circolo-otto-cr17.md` | Starsong/Circle ally |
 
 ### 16d. Villain Politici / Shadow Masters
 

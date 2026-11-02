@@ -1,0 +1,55 @@
+# Scheda di Thorik come dato — lotto 4g-1 di PIANO-RIPRESA-PR-ABBANDONATE (ADR-0088).
+#
+# Porta solo i fatti che il repo deve tenere onesti: caratteristiche e
+# modificatori permanenti, ognuno con la sua fonte. Classe, PF, stato e artefatti
+# sono di campaign/state.yaml (`party`, `artefatti`) e qui non si copiano.
+# `null` = [INFERRED]: il repo non conosce il valore, e non si inventa. I valori
+# veri arrivano col lotto 4g-2, dalle schede del DM.
+# La vista leggibile, thorik.md, si rigenera con `python3 scripts/render_pg.py`.
+schema_version: 1
+pg: Thorik
+
+caratteristiche:
+  # FOR 20 è il numero del modulo al tavolo (Sentinella, chi porta il corpo).
+  # Il lotto 4g-2 lo prende così; se comprende un oggetto, lo dice il DM.
+  for: {base: 20, attuale: 20, attestato_da: "07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md"}
+  # La sola catena attestata per intero: il modulo scrive «DES: 10 → 8 (-2 Corona)»
+  # quando la indossa, e il rito dello Smeraldo toglie altri 2.
+  des: {base: 10, attuale: 6, attestato_da: "07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md"}
+  cos: {base: null, attuale: null, attestato_da: null}
+  int: {base: null, attuale: null, attestato_da: null}
+  sag: {base: null, attuale: null, attestato_da: null}
+  # CAR 8 → 12, un solo +4. È il conto del canone giocato: state.yaml del ramo
+  # di gruppo (campaign-group-rumblingstone) dà «−4 DES / +2 COS / +4 CAR
+  # permanenti» in tutto, e la scheda giocatore della Corona, rivista, scrive
+  # «+4 CAR (8 → 12)». P1 e DEF-1 attribuiscono quel +4 l'uno alla Corona e
+  # l'altro al rito: è lo stesso punto, contato una volta. Il DM il 2026-10-23:
+  # il canone è quello giocato dal gruppo e dagli artefatti rivisti.
+  # Qui sta col rito, come in state.yaml, che è il master (ADR-0050).
+  car: {base: 8, attuale: 12, attestato_da: "PG/Artefatti/Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/00_SCHEDA-GIOCATORE-STATO-ATTUALE.md"}
+
+modificatori_permanenti:
+- caratteristica: DES
+  delta: -2
+  causa: Ha indossato la Corona di Adamantio, «peso e restrizione movimenti testa».
+  quando: ARC-07 P1, Corona indossata
+  cita: '**-2 Destrezza** (peso e restrizione movimenti testa)'
+  fonte: "07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md"
+- caratteristica: DES
+  delta: -2
+  causa: Il Peso del Mondo accettato nel corpo al rito dello Smeraldo; lo paga il portatore.
+  quando: rito dello Smeraldo, 2026-07-31
+  cita: '**−2 DES**, **+2 COS** e **+4 CAR**, permanenti'
+  fonte: "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md"
+- caratteristica: COS
+  delta: 2
+  causa: Il Peso del Mondo accettato nel corpo al rito dello Smeraldo.
+  quando: rito dello Smeraldo, 2026-07-31
+  cita: '**−2 DES**, **+2 COS** e **+4 CAR**, permanenti'
+  fonte: "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md"
+- caratteristica: CAR
+  delta: 4
+  causa: Il Peso del Mondo accettato nel corpo al rito dello Smeraldo (D84, 2026-10-12).
+  quando: rito dello Smeraldo, 2026-07-31
+  cita: '**−2 DES**, **+2 COS** e **+4 CAR**, permanenti'
+  fonte: "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md"

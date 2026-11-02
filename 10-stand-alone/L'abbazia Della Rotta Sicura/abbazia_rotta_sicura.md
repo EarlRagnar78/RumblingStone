@@ -50,16 +50,36 @@ Tre settimane fa **Madre Ilaria Sonda**, la vecchia responsabile delle Ancelle, 
 
 ## Il cast
 
-{{note
-**Padre Anselmo Grifo — Abate** Umano vampiro, chierico 7 · **GS 9** · MN Medio (non-morto, aumentato)
-**PF** 45 (7d12) · **Iniz** +6 · **Vel** 9 m · **CA** 23 (contatto 12, colto alla sprovvista 21)
-**BAB** +5 · **Att** schianto +9 (1d6+6 più risucchio di energia) o mazzafrusto +1 +10 (1d8+5)
-**TS** Temp +5, Rifl +6, Vol +10 · **For** 18 **Des** 14 **Cos** — **Int** 15 **Sag** 20 **Car** 18
-**Speciali** RD 10/argento e magia, guarigione rapida 5, resistenza a scacciare +4, resistenza al freddo e all'elettricità 10, forma gassosa, ragno rampicante, forma alternativa (pipistrello, nebbia), *dominare* (Vol CD 18), *figli della notte*, risucchio di energia (2 livelli negativi, Temp CD 18)
-**Incantesimi** (chierico 7, domini Male e Acqua): *bane, doom, cause fear* / *hold person, silence, spiritual weapon* / *bestow curse, dispel magic, animate dead* / *divine power, freedom of movement, inflict critical wounds*
-**Debolezze** luce solare diretta (distrutto nel round successivo all'esposizione), **acqua corrente (3d6/round, distrutto dopo 3 round consecutivi)**, paletto di legno, respinto da simbolo sacro presentato (Vol CD 25), non può entrare in un'abitazione senza invito
-**Tattica** Non combatte mai per primo. Parla, mente, *domina* il PG con il TS Volontà più basso, e se le cose si mettono male fugge in forma gassosa verso la cella (15). Non scende mai in G27 durante l'alta marea, e i PG possono capire perché.
-}}
+```statblocco
+nome: Padre Anselmo Grifo, Abate
+gs: 9
+tipo: Umano vampiro, chierico 7 · MN Medio (non-morto, aumentato)
+ca: 23
+ca-dettaglio: contatto 12, colto alla sprovvista 21
+pf: 45
+pf-dado: 7d12
+ts: Temp +5, Rifl +6, Vol +10
+attributi: For 18 Des 14 Cos — Int 15 Sag 20 Car 18
+velocita: 9 m
+iniziativa: +6
+attacchi:
+  - Schianto +9 (1d6+6 più risucchio di energia)
+  - Mazzafrusto +1 +10 (1d8+5)
+```
+**Iniziativa** +6
+
+**Difesa** **CA 23** (contatto 12, colto alla sprovvista 21) · **pf 45** (7d12) · TS Tempra +5, Riflessi +6, Volontà +10 · RD 10/argento e magia, guarigione rapida 5, resistenza a scacciare +4, resistenza al freddo e all'elettricità 10
+
+**Attacco** Vel 9 m · **Mischia** schianto +9 (1d6+6 più risucchio di energia) o mazzafrusto +1 +10 (1d8+5) · BAB +5
+
+**Statistiche** For 18, Des 14, Cos —, Int 15, Sag 20, Car 18
+
+**Capacità speciali**
+- **Speciali**: forma gassosa, ragno rampicante, forma alternativa (pipistrello, nebbia), *dominare* (Vol CD 18), *figli della notte*, risucchio di energia (2 livelli negativi, Temp CD 18).
+- **Incantesimi** (chierico 7, domini Male e Acqua): *bane, doom, cause fear* / *hold person, silence, spiritual weapon* / *bestow curse, dispel magic, animate dead* / *divine power, freedom of movement, inflict critical wounds*.
+- **Debolezze**: luce solare diretta (distrutto nel round successivo all'esposizione), **acqua corrente (3d6/round, distrutto dopo 3 round consecutivi)**, paletto di legno, respinto da simbolo sacro presentato (Vol CD 25), non può entrare in un'abitazione senza invito.
+
+**Tattiche** Non combatte mai per primo. Parla, mente, *domina* il PG con il TS Volontà più basso, e se le cose si mettono male fugge in forma gassosa verso la cella (15). Non scende mai in G27 durante l'alta marea, e i PG possono capire perché.
 
 {{note
 **Le Tre Sorelle del Frangente — concilio di megere** **Grinza** (megera acquatica, GS 4) · **Còlpa** (megera verde, GS 5) · **Marèa** (annis, GS 6)
@@ -68,26 +88,57 @@ Tre settimane fa **Madre Ilaria Sonda**, la vecchia responsabile delle Ancelle, 
 **Uso previsto:** **non si presentano mai tutte e tre insieme** se il gruppo non ha alleati. La notte della consegna Marèa è in G27 e Grinza in acqua (EL 8); Còlpa arriva al terzo round dell'ultimo scontro **solo se i PG hanno ignorato tutti i segnali**. Se il gruppo ha liberato i prigionieri o ha messo abate e corsari l'uno contro l'altro, il concilio si dissolve e le megere fuggono in mare: è una vittoria legittima e va concessa.
 }}
 
-{{note
-**Madre Ilaria Sonda — fantasma (alleata)** Umana fantasma, chierica 5 · **GS 7** · NB · **PF** 27 · **CA** 15 (contatto 15)
-**Speciali** incorporea, manifestazione, *tocco corruttore* 1d6, *gemito spaventoso* (Vol CD 16), *malvolenza* (Vol CD 16) — **non usa nessuna di queste se non viene attaccata**
-**Vincolo** È morta tentando di far fuggire due Ancelle. Non può lasciare il sacello (20) finché i corpi delle vittime restano nella grotta o finché il rito non è spezzato.
-**Cosa dà, e a quale prezzo:** parla solo a chi presenta un simbolo sacro o supera **Diplomazia CD 18** (CD 13 se i PG le mostrano un oggetto delle Ancelle preso dalle celle). Ogni domanda le costa: dopo tre risposte svanisce fino al giorno seguente. **Scegliete bene le domande** — dillo esplicitamente ai giocatori.
+```statblocco
+nome: Madre Ilaria Sonda, fantasma (alleata)
+gs: 7
+tipo: Umana fantasma, chierica 5 · NB
+ca: 15
+ca-dettaglio: contatto 15
+pf: 27
+ts: —
+```
+**Difesa** **CA 15** (contatto 15) · **pf 27** · incorporea
+
+**Capacità speciali**
+- **Speciali**: manifestazione, *tocco corruttore* 1d6, *gemito spaventoso* (Vol CD 16), *malvolenza* (Vol CD 16): **non usa nessuna di queste se non viene attaccata**.
+- **Vincolo**: è morta tentando di far fuggire due Ancelle. Non può lasciare il sacello (20) finché i corpi delle vittime restano nella grotta o finché il rito non è spezzato.
+
+**Tattiche** **Cosa dà, e a quale prezzo:** parla solo a chi presenta un simbolo sacro o supera **Diplomazia CD 18** (CD 13 se i PG le mostrano un oggetto delle Ancelle preso dalle celle). Ogni domanda le costa: dopo tre risposte svanisce fino al giorno seguente. **Scegliete bene le domande**: dillo esplicitamente ai giocatori.
+
 **Le tre risposte migliori:** (a) l'abate non è vivo e teme l'acqua corrente; (b) sotto il pavimento della cappella c'è la botola, e dietro il corpo di guardia ci sono i vivi; (c) l'altare si sommerge al colmo della marea, e ciò che vi è legato sopra muore lì.
-}}
 
-{{note
-**Tiberio Sarda — fantasma di corsaro (ostile-utile)** Umano fantasma, ladro 4 · **GS 6** · NM · **PF** 22 · **CA** 16 (contatto 16)
-Ammutinato, gettato in mare da Malaluna due anni fa. Odia i corsari più di quanto odi i vivi. Attacca al primo round; si ferma se qualcuno pronuncia il nome di Ghebro Malaluna (**Sapienza (locali) CD 15**, o basta averlo sentito in osteria). Poi contratta: rivela il **segnale del fanale** (tre lampi lunghi, due corti) in cambio della promessa che Malaluna muoia. Se i PG mentono, tornerà.
-}}
+```statblocco
+nome: Tiberio Sarda, fantasma di corsaro (ostile-utile)
+gs: 6
+tipo: Umano fantasma, ladro 4 · NM
+ca: 16
+ca-dettaglio: contatto 16
+pf: 22
+ts: —
+```
+**Difesa** **CA 16** (contatto 16) · **pf 22**
 
-{{note
-**Ghebro Malaluna — capitano della Zanna di Bruma** Umano guerriero 6/ladro 2 · **GS 8** · NM
-**PF** 58 · **CA** 20 · **Att** sciabola +1 +13/+8 (1d6+6, 18-20) e pugnale +11 (1d4+2)
-**TS** Temp +8, Rifl +8, Vol +3 · **Speciali** attacco furtivo +1d6, schivare prodigioso
-**Seguito** 6 corsari (umano guerriero 3, GS 2, PF 22, CA 16, scimitarra +6 1d6+3, balestra leggera +5) e 2 arcieri (umano ladro 3, GS 3, arco corto +6 1d6, attacco furtivo +2d6)
-**Il fulcro:** Malaluna non sa cosa sia l'abate. Crede di comprare schiavi da un prete corrotto. **Sapienza (nobiltà) o Raggirare CD 20** per convincerlo del contrario; se ci riescono, i corsari si voltano contro l'abbazia e l'EL del finale crolla di due punti. Questa è la soluzione che il documento vuole premiare.
-}}
+**Tattiche** Ammutinato, gettato in mare da Malaluna due anni fa. Odia i corsari più di quanto odi i vivi. Attacca al primo round; si ferma se qualcuno pronuncia il nome di Ghebro Malaluna (**Sapienza (locali) CD 15**, o basta averlo sentito in osteria). Poi contratta: rivela il **segnale del fanale** (tre lampi lunghi, due corti) in cambio della promessa che Malaluna muoia. Se i PG mentono, tornerà.
+
+```statblocco
+nome: Ghebro Malaluna, capitano della Zanna di Bruma
+gs: 8
+tipo: Umano guerriero 6/ladro 2 · NM
+ca: 20
+pf: 58
+ts: Temp +8, Rifl +8, Vol +3
+attacchi:
+  - Sciabola +1 +13/+8 (1d6+6, 18-20) e pugnale +11 (1d4+2)
+```
+**Difesa** **CA 20** · **pf 58** · TS Tempra +8, Riflessi +8, Volontà +3
+
+**Attacco** **Mischia** sciabola +1 +13/+8 (1d6+6, 18-20) e pugnale +11 (1d4+2)
+
+**Capacità speciali**
+- **Speciali**: attacco furtivo +1d6, schivare prodigioso.
+- **Seguito**: 6 corsari (umano guerriero 3, GS 2, PF 22, CA 16, scimitarra +6 1d6+3, balestra leggera +5) e 2 arcieri (umano ladro 3, GS 3, arco corto +6 1d6, attacco furtivo +2d6).
+
+**Tattiche** **Il fulcro:** Malaluna non sa cosa sia l'abate. Crede di comprare schiavi da un prete corrotto. **Sapienza (nobiltà) o Raggirare CD 20** per convincerlo del contrario; se ci riescono, i corsari si voltano contro l'abbazia e l'EL del finale crolla di due punti. Questa è la soluzione che il documento vuole premiare.
 
 ### Il borgo
 

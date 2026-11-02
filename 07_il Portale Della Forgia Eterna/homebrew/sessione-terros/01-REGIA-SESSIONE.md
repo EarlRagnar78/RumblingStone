@@ -155,7 +155,7 @@ vecchio in mano, **butta quelle pagine**.
 | **Piattaforma dell'Altare** | «Ø 6 m» (Terros da solo ne occupava 9 quadretti su 16) | **13,5 × 9 m = 9 × 6 quadretti**, angoli smussati. MAPPA T-6 ridisegnata |
 | **Spinta di Terros** | a ogni schianto a segno | **1 volta per round, la scegli tu**, su uno dei colpi andati a segno. Gratis, nessun AdO per nessuno |
 | **Chi resiste alla Spinta** | prova di FOR CD 25 | idem, **ma i nani con i piedi a terra sommano +4** (Stabilità nanica — non vale fluttuando) |
-| **«Radice a Terra» di Thorik** | prova contrapposta vs **Lotta +40** — matematicamente impossibile | **prova di FOR contro CD 25 statica**, con due bonus che i suoi indizi gli hanno seminato |
+| **«Radice a Terra» di Thorik** | prova contrapposta vs **Lotta +42** — matematicamente impossibile | **prova di FOR contro CD 25 statica**, con due bonus che i suoi indizi gli hanno seminato |
 | **§8c** | non esisteva | **manuale d'uso del guardiano**: cosa fa Terros contro Blast, tentacoli, lotta e sinergie |
 
 ### La geografia della Spinta, in due righe
@@ -178,7 +178,7 @@ L'Altare non è un disco simmetrico: è **lungo 9 quadretti e largo 6**.
 
 È una **prova di Forza**: `d20 + modificatore di FOR` (Thorik ha FOR 20 → **+5**)
 contro **CD 25**. Non è contrapposta: la vecchia stesura la faceva tirare
-contro Lotta +40 ed era **impossibile** (massimo 27 contro minimo 41).
+contro Lotta +42 ed era **impossibile** (massimo 27 contro minimo 43).
 
 | Elemento | Bonus |
 |---|---|

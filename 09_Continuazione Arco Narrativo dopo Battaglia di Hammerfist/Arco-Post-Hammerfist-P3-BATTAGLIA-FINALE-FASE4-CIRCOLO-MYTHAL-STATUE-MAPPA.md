@@ -6,7 +6,7 @@ Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE4-CIRCOLO-MYTHAL-STATUE-MAPPA.md
 ## 1. Layout della piazza centrale
 
 - Griglia suggerita: 30 × 30 quadretti.  
-- Forma: piazza quasi circolare, al centro di Rethmar.
+- Forma: il centro del foro di Rethmar, la piazza grande dietro la porta del ponte, irregolare (circa 215 × 100 m), dove arrivano le vie maestre delle porte Nord, Ovest ed Est `[CANONE — DM 2026-10-23]`. I 30 quadretti (45 m) ne prendono il centro; dove sta il foro in città lo dice la pianta, `Mappe/rethmar/rethmar-pianta.svg`.
 
 Elementi principali:
 
@@ -88,7 +88,7 @@ Segna aree:
 ### 🌍 AMBIENTE (companion T5c, consolidato dal layout della piazza)
 
 *Mappa in prosa (niente griglia-emoji → nessun SVG). Scala 1,5 m/quadretto.
-Piazza quasi circolare 30×30 al centro di Rethmar.*
+Il centro del foro irregolare (circa 215 × 100 m), 30×30 dietro la porta del ponte di Rethmar.*
 
 | Elemento | Dove | Effetto meccanico 3.5 |
 |---|---|---|
@@ -110,7 +110,7 @@ Piazza quasi circolare 30×30 al centro di Rethmar.*
 | Stato | Trigger | Cosa cambia sulla griglia | Effetto meccanico |
 |---|---|---|---|
 | A — Rito in corso | i caster attivano il Mythal | statue = copertura totale; minacce a rotazione sui caster | i PG difendono gli 8 punti |
-| B — Caster perso | un caster del Circolo cade | posizione scoperta | il Mythal **rallenta/vacilla** (protezione ridotta) `[INFERRED — soglia esatta al DM]` |
+| B — Caster perso | un caster del Circolo cade | posizione scoperta | il Mythal **vacilla**: per ogni caster caduto una statua in meno si anima nello stato C, e con tre caduti il Mythal non si completa (canone del DM 2026-10-18) |
 | C — Mythal completo | gli 8 reggono fino alla fine | **le 4 statue si animano in Golem colossali** | escono a spazzare macchine/giganti/draghi residui (o 1-2 restano a scudo) → svolta della battaglia |
 
 > Esiti aperti (D13): completare il Mythal dipende da quanti caster i PG

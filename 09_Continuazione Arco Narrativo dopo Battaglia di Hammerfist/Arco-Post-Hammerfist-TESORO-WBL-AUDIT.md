@@ -103,7 +103,7 @@ non tesoro da drago.
 | Bacchette (2-3, semi-cariche) | ~15.000 mo |
 | Oggetti meravigliosi (aiuti allo studio: *lenti*, *veste*, *ioun stone* SRD) | ~20.000 mo |
 | Componenti/materiali di laboratorio liquidabili | ~10.000 mo |
-| **"Seme di Porta"** (se recuperato da Sethrax/Orbe) `[INFERRED — plot item, valore a discrezione]` | ~10.000 mo |
+| **"Seme di Porta"** (se recuperato da Sethrax/Orbe) (plot item, valore a discrezione) | ~10.000 mo |
 
 ---
 

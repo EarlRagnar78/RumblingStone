@@ -99,7 +99,7 @@
 | Draxoksus, hobgoblin sciamano draconico mezzo-immondo | pcg + 3 htm (+ copia in `Incontro-RedHandof-doom/` 📸) | 7 | 🔁 L1 (una scheda) |
 | Druido Avarthel | pcg + htm | 9 | 🔁 L1 |
 | Goblin worg raider | pcg + htm | 5 | 🔁 L1 |
-| Ozyrrandion, drago verde (3 grafie) | 2 pcg + htm | 8 | 🔁 L1 (una scheda; RHoD) |
+| Ozyrrandion, drago verde (3 grafie) | 2 pcg + htm | 8 | 🔁 L1 (una scheda; RHoD) → `villain/ozyrrandion-drago-verde-cr14.md`, verde adulto GS 14 |
 | Hell Hound mezzo-immondo | pcg + 2 htm | 4 | 🔁 L1 |
 | Hell Hound draconico | 2 pcg (+ copia `regolari/`) | — | 🔁 L1 |
 | Hobgoblin bladebearer 6 liv (+ variante longsword) | 2 pcg + 2 htm | ~6 | 🔁 L1 — dedup con «portalame» (versione IT, `regolari/`) |

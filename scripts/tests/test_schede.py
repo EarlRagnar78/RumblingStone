@@ -26,7 +26,7 @@ sys.path.insert(0, str(REPO / "scripts"))
 from dmcore.schede import SchedaError, leggi_schede  # noqa: E402
 from export_booklet_typst import ROOT, inline, schede_di, sorgente  # noqa: E402
 
-DRAPPO = REPO / "STANDALONE-Il-Drappo-di-Tarsilia"
+DRAPPO = REPO / "10-stand-alone/Il-Drappo-di-Tarsilia"
 PREGEN = DRAPPO / "PREGEN-SEI-SCHEDE-PF1E.md"
 FASCICOLO = DRAPPO / "FASCICOLO-SCHEDE-GIOCATORE.md"
 MANIFEST = DRAPPO / "homebrew" / "DRAPPO-SCHEDE-PG.manifest.json"

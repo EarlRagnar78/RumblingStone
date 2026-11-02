@@ -1,0 +1,197 @@
+{
+ "vecchia": {
+  "file": "plans/esperimenti/mappe-strumenti-2026-10-22/out/pipeline/giro1/gen-grotta-2.md",
+  "mappa": 1,
+  "dimensioni": [
+   32,
+   24
+  ],
+  "voto": 90
+ },
+ "nuova": {
+  "file": "plans/esperimenti/mappe-strumenti-2026-10-22/out/pipeline/giro1/gen-grotta-2-riparata.md",
+  "mappa": 1,
+  "dimensioni": [
+   32,
+   24
+  ],
+  "voto": 98
+ },
+ "stesse_dimensioni": true,
+ "hamming_simboli": {
+  "celle": 27,
+  "quota": 0.0352
+ },
+ "hamming_classi": {
+  "celle": 27,
+  "quota": 0.0352
+ },
+ "transizioni": {
+  ".→O": 25,
+  "M→.": 2
+ },
+ "jaccard": {
+  "muro": 0.9952,
+  "blocco": 0.9386,
+  "percorribile": 0.9239,
+  "copertura": null,
+  "creature": 1.0,
+  "porte": null,
+  "pericolo": null
+ },
+ "ncd_lzma": 0.2143,
+ "voto": {
+  "prima": 90,
+  "dopo": 98,
+  "delta": 8
+ },
+ "metriche_delta": {
+  "anelli": {
+   "prima": 0,
+   "dopo": 3,
+   "delta": 3
+  },
+  "anelli_strutturali": {
+   "prima": 0,
+   "dopo": 3,
+   "delta": 3
+  },
+  "bordo_aperto": {
+   "prima": 0.0,
+   "dopo": 0.02,
+   "delta": 0.02
+  },
+  "celle_per_creatura": {
+   "prima": 44.1,
+   "dopo": 41.2,
+   "delta": -2.9
+  },
+  "copertura": {
+   "prima": 0.365,
+   "dopo": 0.506,
+   "delta": 0.141
+  },
+  "distanza_media_m": {
+   "prima": 40.3,
+   "dopo": 41.2,
+   "delta": 0.9
+  },
+  "fila_indiana": {
+   "prima": 0.003,
+   "dopo": 0.024,
+   "delta": 0.021
+  },
+  "ingressi": {
+   "prima": 0,
+   "dopo": 2,
+   "delta": 2
+  },
+  "libere": {
+   "prima": 0.46,
+   "dopo": 0.43,
+   "delta": -0.03
+  },
+  "m1": {
+   "prima": 0.635,
+   "dopo": 0.812,
+   "delta": 0.177
+  },
+  "m2": {
+   "prima": 0.365,
+   "dopo": 0.094,
+   "delta": -0.271
+  },
+  "simboli": {
+   "prima": 3,
+   "dopo": 4,
+   "delta": 1
+  }
+ },
+ "rilievi_spariti": [
+  "m2/vuoto@None",
+  "struttura/senza-anelli@None",
+  "struttura/un-ingresso@None"
+ ],
+ "rilievi_comparsi": [],
+ "profonde": {
+  "prima": {
+   "file": "plans/esperimenti/mappe-strumenti-2026-10-22/out/pipeline/giro1/gen-grotta-2.md",
+   "mappa": 1,
+   "titolo": "GROTTA seme 2",
+   "celle_percorribili": 353,
+   "vga": {
+    "componenti": 1,
+    "connettivita_media": 274.16,
+    "md_media": 1.227,
+    "integrazione_media": 39.01,
+    "integrazione_min": 6.397,
+    "integrazione_max": 77.0,
+    "intelligibilita_r2": 0.716,
+    "clustering_medio": 0.89
+   },
+   "accesso": {
+    "componenti": 1,
+    "connettivita_media": 6.87,
+    "md_media": 10.315,
+    "integrazione_media": 0.665,
+    "integrazione_min": 0.333,
+    "integrazione_max": 0.909,
+    "intelligibilita_r2": 0.265,
+    "clustering_medio": 0.515
+   },
+   "vad_r": 0.677,
+   "isovista_media_m2": 616.9,
+   "simmetria": {
+    "orizzontale": 0.661,
+    "verticale": 0.617,
+    "rotazione": 0.815
+   },
+   "pattern_2x2": {
+    "distinti": 30,
+    "entropia_bit": 2.348,
+    "kl_vs_corpus": 1.9746
+   },
+   "leniency_per_100": 1.13
+  },
+  "dopo": {
+   "file": "plans/esperimenti/mappe-strumenti-2026-10-22/out/pipeline/giro1/gen-grotta-2-riparata.md",
+   "mappa": 1,
+   "titolo": "GROTTA seme 2 (riparata)",
+   "celle_percorribili": 330,
+   "vga": {
+    "componenti": 1,
+    "connettivita_media": 249.62,
+    "md_media": 1.248,
+    "integrazione_media": 34.156,
+    "integrazione_min": 6.33,
+    "integrazione_max": 68.276,
+    "intelligibilita_r2": 0.739,
+    "clustering_medio": 0.877
+   },
+   "accesso": {
+    "componenti": 1,
+    "connettivita_media": 6.47,
+    "md_media": 10.845,
+    "integrazione_media": 0.612,
+    "integrazione_min": 0.326,
+    "integrazione_max": 0.835,
+    "intelligibilita_r2": 0.1,
+    "clustering_medio": 0.52
+   },
+   "vad_r": 0.656,
+   "isovista_media_m2": 561.6,
+   "simmetria": {
+    "orizzontale": 0.62,
+    "verticale": 0.573,
+    "rotazione": 0.755
+   },
+   "pattern_2x2": {
+    "distinti": 39,
+    "entropia_bit": 2.8,
+    "kl_vs_corpus": 1.9823
+   },
+   "leniency_per_100": 1.21
+  }
+ },
+ "impronta": "a5ce30fd8cec7d70"
+}

@@ -1,0 +1,92 @@
+diff --git a/.github/workflows/ci.yml b/.github/workflows/ci.yml
+index 6eb4ca5a..9c2409ec 100644
+--- a/.github/workflows/ci.yml
++++ b/.github/workflows/ci.yml
+@@ -367,13 +367,13 @@ jobs:
+           python scripts/compile_map_json.py /tmp/ci-uc.draft.json --validate-only
+           python -c "import json; r=json.load(open('/tmp/ci-uc.conflicts.json')); assert r['report_version'] and 'conflicts' in r, 'report malformato'; print('import_ultraclear OK')"
+ 
+-      # 🔴 Entrambi i corridori, e non e' ridondanza. Il 2026-09-21 tre file di
+-      # test giravano in locale sotto pytest e NON in CI sotto unittest: due non
+-      # si importavano, uno era fatto di funzioni nude che `unittest` importa
+-      # senza eseguire — 966 prove viste, 942 eseguite. Con pytest ammesso
+-      # (emendamento ad ADR-0037) il buco si riapre al contrario, quindi si
+-      # girano tutti e due e `test_i_test_girano_in_ci.py` verifica che vedano
+-      # lo stesso numero.
++      # Un corridore solo dal <data della decisione del DM>. Il 2026-09-21 tre
++      # file di test giravano sotto pytest e non sotto unittest (966 prove viste,
++      # 942 eseguite), e per un mese la suite e' girata due volte: circa 200 s
++      # di CI a ogni push. La parita' resta presidiata senza il secondo giro:
++      # `test_i_test_girano_in_ci.py`, che pytest esegue, importa ogni modulo
++      # con `unittest discover`, vuole una TestCase in ogni file e confronta il
++      # conto di `unittest` con `pytest --collect-only`.
+       # ADR-0059: il punteggio pesato. Nasce verde per costruzione (la soglia
+       # viene dalla distribuzione misurata del repo), quindi un rosso qui e' un
+       # documento che e' peggiorato, non una soglia importata da un manuale.
+@@ -384,10 +384,7 @@ jobs:
+           # ADR-0077, estensione: nessuna revisione applicata ha peggiorato la misura
+           python scripts/ciclo_prosa.py registro --check
+ 
+-      - name: Unit tests — unittest (il corridore storico, ADR-0007)
+-        run: python -m unittest discover -s scripts/tests -v
+-
+-      - name: Unit tests — pytest (il secondo corridore, ADR-0037 em. 2026-09-21)
++      - name: Unit tests — pytest (ADR-0037 em. 2026-09-21)
+         run: python -m pytest scripts/tests -q
+ 
+       - name: dm.py unified CLI smoke test (K-C3)
+diff --git a/scripts/gate_locale.py b/scripts/gate_locale.py
+index f1d99c4d..147ba7ae 100755
+--- a/scripts/gate_locale.py
++++ b/scripts/gate_locale.py
+@@ -15,14 +15,14 @@ Cosa salta, e lo dice:
+   è già pronta, o lo dice `dm.py doctor`;
+ - i passi con espressioni `${{ … }}` diverse da `github.base_ref`, che qui non
+   hanno valore;
+-- con `--rapido`, i due corridori dei test (`unittest`, `pytest`).
++- con `--rapido`, il corridore dei test (`pytest`).
+ 
+ Un passo con `continue-on-error` che fallisce è un avviso, non un errore. Lo è
+ anche un passo che fallisce nominando uno strumento che in CI porta un passo
+ «Install X» saltato qui (typst, per esempio), se sulla macchina manca.
+ 
+     python3 scripts/gate_locale.py              # tutto il job validate
+-    python3 scripts/gate_locale.py --rapido     # senza i corridori dei test
++    python3 scripts/gate_locale.py --rapido     # senza il corridore dei test
+     python3 scripts/gate_locale.py --elenco     # cosa farebbe, senza eseguire
+     python3 scripts/gate_locale.py --solo misura_resa --solo validate_maps
+ 
+@@ -95,7 +95,7 @@ def esegui(voce: dict, env: dict) -> tuple[int, str, float]:
+ 
+ def main(argv=None) -> int:
+     ap = argparse.ArgumentParser(description=__doc__.splitlines()[1])
+-    ap.add_argument("--rapido", action="store_true", help="salta i corridori dei test (unittest, pytest)")
++    ap.add_argument("--rapido", action="store_true", help="salta il corridore dei test (pytest)")
+     ap.add_argument("--elenco", action="store_true", help="elenca i passi e cosa ne farebbe, senza eseguire")
+     ap.add_argument("--solo", action="append", default=[], metavar="TESTO",
+                     help="esegue solo i passi il cui nome o comando contiene TESTO (ripetibile)")
+diff --git a/scripts/tests/test_i_test_girano_in_ci.py b/scripts/tests/test_i_test_girano_in_ci.py
+index bab6e4d2..1965d83a 100644
+--- a/scripts/tests/test_i_test_girano_in_ci.py
++++ b/scripts/tests/test_i_test_girano_in_ci.py
+@@ -1,4 +1,4 @@
+-"""Che i test girino davvero in CI, sotto **entrambi** i corridori.
++"""Che i test girino davvero in CI, e che girerebbero sotto **entrambi** i corridori.
+ 
+ 🔴 **Il difetto che presidia, misurato il 2026-09-21.** La CI eseguiva
+ `python -m unittest discover -s scripts/tests` e pytest non era installato
+@@ -14,9 +14,11 @@ Il conto: in locale pytest vedeva 966 prove, la CI ne eseguiva **942**.
+ ⚠️ **E la cura ha riaperto il buco al contrario.** L'emendamento del 2026-09-21
+ ad ADR-0037 ammette pytest come dipendenza di **sviluppo**, e da quel momento le
+ funzioni nude girano sotto pytest e **non** sotto `unittest`: chi le scrive
+-vede verde e non si accorge di niente. Per questo il repo gira entrambi i
+-corridori e questo file misura la **parita'**: se i due non vedono lo stesso
+-numero di prove, qualcosa non gira da qualche parte.
++vede verde e non si accorge di niente. Per un mese il repo ha girato entrambi
++i corridori; dal <data della decisione del DM> la CI gira solo pytest, e questo
++file misura la **parita'** senza il secondo giro: ogni modulo si importa sotto
++`unittest discover`, ogni file ha una TestCase, e i due conti coincidono. Se
++non coincidono, qualcosa girerebbe sotto un corridore e non sotto l'altro.
+ 
+ Questo file usa la sola libreria standard di proposito: e' il controllo che
+ deve funzionare anche quando l'altro corridore non e' installato.

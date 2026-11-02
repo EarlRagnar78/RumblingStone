@@ -8,7 +8,8 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 
 | Chi | Dove si incontra | Vuole | Come parla |
 |---|---|---|---|
-| Therysol | SCENA 1 | — | in silenzio. Se le chiedono di risvegliare Hella, spiega che serve il Cuore di Moradin e il dono di ognuno (§8) |
+| Therysol | SCENA 1 | — | in silenzio, e quando parla usa frasi corte, non chiede mai niente e di Hella parla al presente. Sa di aver contato i respiri che il corpo non faceva, e che il corpo si gira verso sud: l'ha rimesso dritto più volte. Non sa niente di dove sia lo spirito. Se spostano il corpo non lo impedisce, cammina accanto. Se le chiedono di risvegliare Hella, spiega che serve il Cuore di Moradin e il dono di ognuno (§8) |
+| Durik | SCENA 1 | — | non abbaia: fa un click di roccia. Non risponde ai PG, non è ancora di Hella: si lega a lei al rito (`DEF-3` §7). Lo muove la giocatrice di Hella (§1) `[CANONE — DM 2026-10-18]` |
 | Moradin | SCENA 2 | — | una frase sola, per Thorik, poi sorride e torna a battere (A1). In A3 parla dopo il pianto |
 | Aegis Fang | SCENA 2 | — | vibra e parla, ed è un evento rarissimo: nomina Skullcrusher e Thorgrim (A7) |
 | Hella | SCENA 2 | — | non parla. Preme una mano sul vetro dall'interno e lascia inciso il suo simbolo |
@@ -28,20 +29,24 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 
 | Scena | Luogo o momento | Pilastro | Righe |
 |---|---|---|---:|
-| SCENA 1 | la Sala | LotR lead + Salvatore | 9 |
-| SCENA 2 | gli affreschi, A1, 1 di 2 | LotR lead, deep time | 7 |
-| SCENA 2 | Quando siete partiti, | Casa di Davide — l'anointing dipinto | 11 |
-| SCENA 2 | Questo affresco mostra | Salvatore — la memoria che sanguina | 11 |
-| SCENA 2 | L'affresco di Est, che era una finestra di gravità e | — | 5 |
-| SCENA 2 | 1 di 2 | Andor lead — il tempo incerto | 10 |
-| SCENA 2 | Quando posate il corpo di Hella davanti alla tela, la luce | — | 7 |
-| SCENA 3 | l'affresco A2, la visione | — | 8 |
-| SCENA 4 | la Stanza della Corona | Salvatore + Casa di Davide | 10 |
-| SCENA 4 | la Stanza della Corona, l'incisione | — | 6 |
-| SCENA 5 | la Sala, l'addormentarsi (Salvatore + LotR) | — | 8 |
-| SCENA 5 | Sogni di essere ancora inginocchiato sull'Altare, e il peso c'è ancora | — | 7 |
-| SCENA 5 | Sogni una fiera. Non una fiera nanica: banchi bassi, teli chiari, una | — | 11 |
-| SCENA 5 | Il bazar te lo ricordi ancora: i teli chiari, i registri, tutto quel | — | 4 |
-| SCENA 5 | Sai anche, con la stessa certezza, che **qualcuno l'ha già aperta prim | — | 4 |
-| SCENA 5 | Non stai sognando: tu non dormi più. Ma per la prima volta da quando s | — | 11 |
-| SCENA 5 | Vi svegliate insieme, e nessuno dice niente per un | LotR | 5 |
+| SCENA 1 | la Sala, l'arrivo | LotR lead, Salvatore support | 9 |
+| SCENA 2 | gli affreschi, A1 «L'Alba del Mondo» | LotR lead, Casa di Davide support | 7 |
+| SCENA 2 | gli affreschi, A1, dopo che hanno guardato | LotR lead, Casa di Davide support | 7 |
+| SCENA 2 | gli affreschi, A2 | Casa di Davide lead, LotR support | 9 |
+| SCENA 2 | gli affreschi, A3 | Salvatore lead, Casa di Davide support | 11 |
+| SCENA 2 | gli affreschi, A5, la Terra che si chiude | LotR lead, Mercer support | 6 |
+| SCENA 2 | gli affreschi, A6 «Il Viaggio Attraverso il Tempo», 1 di 2 | Andor lead, LotR support | 9 |
+| SCENA 2 | gli affreschi, A6, 2 di 2, dopo tre battiti | Andor lead, LotR support | 5 |
+| SCENA 2 | gli affreschi, A8, la manifestazione | Casa di Davide lead, Salvatore support | 8 |
+| SCENA 3 | l'affresco A2, la visione | Casa di Davide lead, LotR support | 8 |
+| SCENA 4 | la Stanza della Corona, l'ingresso | Salvatore lead, Casa di Davide support | 9 |
+| SCENA 4 | la Stanza della Corona, l'incisione, per Thorik | Salvatore lead, Casa di Davide support | 6 |
+| SCENA 5 | la Sala, l'addormentarsi | Salvatore lead, LotR support | 7 |
+| SCENA 5 | la Sala, il sogno di Thorik | Salvatore lead | 6 |
+| SCENA 5 | la Sala, il sogno di Tordek | Andor lead, Salvatore support | 10 |
+| SCENA 5 | la Sala, il sogno di Artemis, 1 di 2 | Andor lead, BG3 support | 5 |
+| SCENA 5 | la Sala, il sogno di Artemis, 2 di 2, quando ha riconosciuto la porta | Andor lead, BG3 support | 6 |
+| SCENA 5 | la Sala, il sogno di Artemis, senza il bazar | Andor lead | 1 |
+| SCENA 5 | la Sala, il sogno di Hella, dall'altra parte, 1 di 2 | Casa di Davide lead, LotR support | 6 |
+| SCENA 5 | la Sala, il sogno di Hella, dall'altra parte, 2 di 2 | Casa di Davide lead, LotR support | 4 |
+| SCENA 5 | la Sala, il risveglio | LotR lead | 4 |

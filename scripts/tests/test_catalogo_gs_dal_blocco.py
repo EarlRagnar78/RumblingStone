@@ -45,8 +45,8 @@ class TestGsDalBlocco(unittest.TestCase):
         import yaml
         cat = yaml.safe_load((ROOT / "scripts/monster_catalog.yaml").read_text(encoding="utf-8"))
         per_file = {r["source_file"]: r["cr"] for r in cat["monsters"]}
-        for f, gs in (("Bestiario/villain/Azarr_Kul/Azarr_Kul/Azarr_Kul.md", 15.0),
-                      ("Bestiario/villain/Sonjak/Sonjak.md", 13.0),
+        for f, gs in (("Bestiario/villain/Azarr_Kul/Azarr_Kul/Azarr_Kul.md", 17.0),
+                      ("Bestiario/villain/Sonjak/Sonjak.md", 14.0),
                       ("Bestiario/png/Lythiel/Lythiel.md", 8.0)):
             self.assertEqual(per_file[f], gs, f)
 

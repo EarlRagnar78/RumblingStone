@@ -1,0 +1,41 @@
+# Scheda di Tordek come dato — lotto 4g-1 di PIANO-RIPRESA-PR-ABBANDONATE (ADR-0088).
+#
+# Porta solo i fatti che il repo deve tenere onesti: caratteristiche e
+# modificatori permanenti, ognuno con la sua fonte. Classe, PF, stato e artefatti
+# sono di campaign/state.yaml (`party`, `artefatti`) e qui non si copiano.
+# `null` = [INFERRED]: il repo non conosce il valore, e non si inventa. I valori
+# veri arrivano col lotto 4g-2, dalle schede del DM.
+# La vista leggibile, tordek.md, si rigenera con `python3 scripts/render_pg.py`.
+schema_version: 1
+pg: Tordek
+
+# Lotto 4g-2 (2026-10-24): i valori sono della scheda PCGen del giocatore al 12°
+# livello (Roberto). Al 13° (Monaco 9) non c'è un aumento di caratteristica. La
+# base è la colonna BASE SCORE della scheda; l'attuale conta anche gli oggetti
+# indossati, come la Corona per Thorik e la Collana per Hella: è il numero che
+# si usa al tavolo (FOR 20). Se il DM vuole fuori gli oggetti comuni, si tolgono
+# le tre voci qui sotto e l'attuale torna uguale alla base.
+caratteristiche:
+  for: {base: 18, attuale: 20, attestato_da: "PG/Artefatti/Artefatti-Pg/Tordek/Tordek Durinheart 12 lvl modificato.pdf"}
+  des: {base: 14, attuale: 16, attestato_da: "PG/Artefatti/Artefatti-Pg/Tordek/Tordek Durinheart 12 lvl modificato.pdf"}
+  cos: {base: 16, attuale: 16, attestato_da: "PG/Artefatti/Artefatti-Pg/Tordek/Tordek Durinheart 12 lvl modificato.pdf"}
+  int: {base: 14, attuale: 14, attestato_da: "PG/Artefatti/Artefatti-Pg/Tordek/Tordek Durinheart 12 lvl modificato.pdf"}
+  sag: {base: 16, attuale: 18, attestato_da: "PG/Artefatti/Artefatti-Pg/Tordek/Tordek Durinheart 12 lvl modificato.pdf"}
+  car: {base: 8, attuale: 8, attestato_da: "PG/Artefatti/Artefatti-Pg/Tordek/Tordek Durinheart 12 lvl modificato.pdf"}
+
+modificatori_permanenti:
+- caratteristica: FOR
+  delta: 2
+  causa: Guanti della Potenza dell'Orco indossati (+2 di potenziamento).
+  quando: scheda PCGen al 12° livello
+  fonte: "PG/Artefatti/Artefatti-Pg/Tordek/Tordek Durinheart 12 lvl modificato.pdf"
+- caratteristica: DES
+  delta: 2
+  causa: Stivali (DES +2) indossati (+2 di potenziamento).
+  quando: scheda PCGen al 12° livello
+  fonte: "PG/Artefatti/Artefatti-Pg/Tordek/Tordek Durinheart 12 lvl modificato.pdf"
+- caratteristica: SAG
+  delta: 2
+  causa: Fascia (SAG +2) indossata (+2 di potenziamento).
+  quando: scheda PCGen al 12° livello
+  fonte: "PG/Artefatti/Artefatti-Pg/Tordek/Tordek Durinheart 12 lvl modificato.pdf"

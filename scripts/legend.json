@@ -1062,6 +1062,24 @@
         "nameable": true
       }
     },
+    "🎪": {
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)",
+      "render": {
+        "mode": "fill",
+        "pat": "t_telo",
+        "fill": "#5e4b3b",
+        "heavy": true,
+        "altezza_m": 3.0
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": true,
+        "cover": "total",
+        "obscurement": "none",
+        "destructible": true,
+        "nameable": true
+      }
+    },
     "🔮": {
       "label": "Cristalli / altare magico",
       "render": {

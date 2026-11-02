@@ -119,7 +119,7 @@ la piazza impazzire per un cavallo senza cavaliere che taglia il traguardo.
 ### 4.4 La Corsa "sotto le frecce" *(in campagna, opzionale)*
 Se il DM vuole massima tensione: mentre i cavalli corrono, una **staffetta** irrompe —
 *"I casali del Channath centrale bruciano! L'orda sarà al Crocevia in due giorni!"* — e a
-ovest, oltre le mura, si indovina il fumo dei razziatori worg. **Coerenza col March Clock**:
+ovest, oltre il fiume, si indovina il fumo dei razziatori worg. **Coerenza col March Clock**:
 al giorno della corsa (Day 30-31) l'orda NON è a Rethmar (arriva al Day 42) — il fumo è
 delle fattorie del Channath, non della città. Non cambia le regole, ma ogni tiro pesa il
 doppio: i PG corrono **letteralmente** per decidere chi difenderà il fronte.

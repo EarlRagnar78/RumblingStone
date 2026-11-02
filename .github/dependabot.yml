@@ -27,11 +27,10 @@
 # Se la PR è rossa e l'audit è verde, è il codice del repo a dover cambiare:
 # il workflow lo scrive nella PR.
 #
-# ⚠️ `converters/` NON è qui, per decisione (PRATICHE D9, 2026-09-24).
-# `converters/Html_to_markdown` e `converters/pdf-to-md-engine` hanno i loro
-# requirements.txt, e il grafo delle dipendenze di GitHub li legge già: gli
-# avvisi di sicurezza arrivano comunque. Le PR di aggiornamento settimanali no,
-# finché nessuno usa quei convertitori con regolarità.
+# `converters/` era fuori per decisione (PRATICHE D9, 2026-09-24). Dal
+# 2026-10-23 è dentro (D6 di PIANO-PIATTAFORMA, DM: «D6 b»), con una voce sua
+# e gruppi suoi: un aggiornamento di torch o docling che rompe i convertitori
+# non fa rossa la PR delle dipendenze del DM, e viceversa.
 version: 2
 updates:
   - package-ecosystem: "pip"
@@ -52,6 +51,25 @@ updates:
         applies-to: security-updates
         patterns: ["*"]
       pip-settimanale:
+        applies-to: version-updates
+        patterns: ["*"]
+
+  - package-ecosystem: "pip"
+    directories:
+      - "/converters/pdf-to-md-engine"
+      - "/converters/Html_to_markdown"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "Europe/Rome"
+    open-pull-requests-limit: 2
+    # Stessa regola di Python della voce sopra: 3.13 finché Debian non sale.
+    groups:
+      convertitori-sicurezza:
+        applies-to: security-updates
+        patterns: ["*"]
+      convertitori-settimanale:
         applies-to: version-updates
         patterns: ["*"]
 

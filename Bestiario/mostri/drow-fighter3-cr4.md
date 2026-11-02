@@ -13,7 +13,7 @@ velocita: 30 ft
 iniziativa: +3
 ```
 
-> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ Cos 14 ricavata da pf 22 su 3 DV, ma la scheda scrive 12: si tiene la scheda, da verificare.
+> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ Cos 14 ricavata da pf 22 su 3 DV, ma la scheda scrive 12: si tiene la scheda, da verificare.
 
 **Size/Type**: Medium humanoid (elf) | **HD**: 3d10+6 (22 HP)
 **AC**: 19 (+5 MW chain shirt, +3 Dex, +1 light shield) | **Init**: +3 | **Speed**: 30 ft

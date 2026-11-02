@@ -19,7 +19,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-import superficie_norme as sn  # noqa: E402
+# La superficie vive dentro validate_norme_editoriali dal 2026-10-22 (lotto 7e
+# di PIANO-AVVENTURE-COMMUNITY): stesse prove, un modulo solo.
+import validate_norme_editoriali as sn  # noqa: E402
 import validate_norme_editoriali as vne  # noqa: E402
 
 
@@ -102,12 +104,13 @@ class TestIlCancelloMorde(unittest.TestCase):
 
     def test_il_gate_del_registro_richiama_questo(self):
         """L'ordine del DM era «inseriscilo nella catena in modo che possa
-        essere richiamato in automatico»: la prova che il collegamento c'e'."""
+        essere richiamato in automatico»: il cancello del registro esegue la
+        superficie (`problemi()` al punto 6) e la CI esegue il cancello."""
         sorgente = (ROOT / "scripts" / "validate_norme_editoriali.py").read_text(
             encoding="utf-8")
-        self.assertIn("superficie_norme", sorgente)
+        self.assertIn("errori.extend(problemi())", sorgente)
         ci = (ROOT / ".github" / "workflows" / "ci.yml").read_text(encoding="utf-8")
-        self.assertIn("superficie_norme.py --check", ci)
+        self.assertIn("python scripts/validate_norme_editoriali.py", ci)
 
 
 if __name__ == "__main__":  # pragma: no cover

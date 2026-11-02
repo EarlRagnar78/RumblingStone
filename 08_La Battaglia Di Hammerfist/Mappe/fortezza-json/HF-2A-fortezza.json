@@ -1,0 +1,784 @@
+{
+ "schema_version": "1.0",
+ "title": "MAPPA 2A REVISED: Fortezza Hammerfist top-down (scala piena)",
+ "units_in": "meters",
+ "scale_m_per_square": 1.5,
+ "map_size": [
+  180,
+  120
+ ],
+ "base_terrain": "🟩",
+ "north": "N",
+ "tipo": "strategica",
+ "ambiente": "esterno",
+ "regions": [
+  {
+   "terrain": "⛰",
+   "rect": [
+    0.0,
+    0.0,
+    180.0,
+    30.0
+   ]
+  },
+  {
+   "terrain": "⬜",
+   "rect": [
+    45.0,
+    30.0,
+    90.0,
+    30.0
+   ]
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    45.0,
+    63.0,
+    90.0,
+    40.5
+   ]
+  },
+  {
+   "terrain": "🟦",
+   "rect": [
+    33.0,
+    109.5,
+    114.0,
+    6.0
+   ]
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    87.0,
+    117.0,
+    6.0,
+    3.0
+   ],
+   "label": "Strada a tornanti: dal ponte scende di 80 m fino alla piana (MAPPA 1)"
+  }
+ ],
+ "structures": [
+  {
+   "type": "🏰",
+   "rect": [
+    39.0,
+    30.0,
+    6.0,
+    79.5
+   ]
+  },
+  {
+   "type": "🏰",
+   "rect": [
+    135.0,
+    30.0,
+    6.0,
+    79.5
+   ]
+  },
+  {
+   "type": "🏰",
+   "rect": [
+    39.0,
+    103.5,
+    102.0,
+    6.0
+   ]
+  },
+  {
+   "type": "🧱",
+   "rect": [
+    39.0,
+    30.0,
+    1.5,
+    79.5
+   ]
+  },
+  {
+   "type": "🧱",
+   "rect": [
+    139.5,
+    30.0,
+    1.5,
+    79.5
+   ]
+  },
+  {
+   "type": "🧱",
+   "rect": [
+    39.0,
+    108.0,
+    102.0,
+    1.5
+   ]
+  },
+  {
+   "type": "🏰",
+   "rect": [
+    45.0,
+    60.0,
+    90.0,
+    3.0
+   ]
+  },
+  {
+   "type": "🚪",
+   "rect": [
+    87.0,
+    60.0,
+    6.0,
+    3.0
+   ],
+   "label": "PORTA INTERNA: la porta del 372 con la targa; luce 6 m, muro 3 m, in cima alla scarpa di 20 m (cortile interno a +100), 90 pf"
+  },
+  {
+   "type": "🔳",
+   "rect": [
+    33.0,
+    30.0,
+    12.0,
+    12.0
+   ],
+   "label": "Bastione Nord B1: 12 × 12 m, terrazza a +120 m, 30 nani + 1 balista"
+  },
+  {
+   "type": "🔳",
+   "rect": [
+    135.0,
+    30.0,
+    12.0,
+    12.0
+   ],
+   "label": "Bastione Nord B2: 12 × 12 m, terrazza a +120 m (la torre nord del 372), 30 nani + 1 balista"
+  },
+  {
+   "type": "🧱",
+   "rect": [
+    33.0,
+    30.0,
+    1.5,
+    12.0
+   ]
+  },
+  {
+   "type": "🧱",
+   "rect": [
+    33.0,
+    40.5,
+    12.0,
+    1.5
+   ]
+  },
+  {
+   "type": "🧱",
+   "rect": [
+    145.5,
+    30.0,
+    1.5,
+    12.0
+   ]
+  },
+  {
+   "type": "🧱",
+   "rect": [
+    135.0,
+    40.5,
+    12.0,
+    1.5
+   ]
+  },
+  {
+   "type": "🔳",
+   "rect": [
+    72.0,
+    97.5,
+    15.0,
+    12.0
+   ],
+   "label": "Bastione Sud G1 (Porta Ovest): 15 × 12 m, 15 m sul cortile esterno, 40 nani + 2 baliste"
+  },
+  {
+   "type": "🔳",
+   "rect": [
+    93.0,
+    97.5,
+    15.0,
+    12.0
+   ],
+   "label": "Bastione Sud G2: 15 × 12 m, 15 m sul cortile esterno, 40 nani + 2 baliste"
+  },
+  {
+   "type": "🧱",
+   "rect": [
+    72.0,
+    108.0,
+    15.0,
+    1.5
+   ]
+  },
+  {
+   "type": "🧱",
+   "rect": [
+    93.0,
+    108.0,
+    15.0,
+    1.5
+   ]
+  },
+  {
+   "type": "🟫",
+   "rect": [
+    87.0,
+    103.5,
+    6.0,
+    4.5
+   ]
+  },
+  {
+   "type": "🚪",
+   "rect": [
+    87.0,
+    108.0,
+    6.0,
+    1.5
+   ],
+   "label": "CANCELLO PRINCIPALE: luce 6 m, alto 8 m, 200 pf; soglia a +80 m sulla piana (950 m s.l.m.)"
+  },
+  {
+   "type": "🌉",
+   "rect": [
+    87.0,
+    109.5,
+    6.0,
+    7.5
+   ],
+   "label": "Ponte levatoio: 6 × 7,5 m, scavalca il fossato di 6 m, 80 pf"
+  },
+  {
+   "type": "🗼",
+   "rect": [
+    39.0,
+    100.5,
+    9.0,
+    9.0
+   ],
+   "label": "Torre Ovest (Porta Ovest): 9 × 9 m, +20 m, 2 baliste, 10 balestrieri"
+  },
+  {
+   "type": "🗼",
+   "rect": [
+    132.0,
+    100.5,
+    9.0,
+    9.0
+   ],
+   "label": "Torre Est: 9 × 9 m, +20 m, 2 baliste, 10 balestrieri"
+  },
+  {
+   "type": "🎯",
+   "at": [
+    42.0,
+    108.0
+   ]
+  },
+  {
+   "type": "🎯",
+   "at": [
+    45.0,
+    108.0
+   ]
+  },
+  {
+   "type": "🎯",
+   "at": [
+    133.5,
+    108.0
+   ]
+  },
+  {
+   "type": "🎯",
+   "at": [
+    136.5,
+    108.0
+   ]
+  },
+  {
+   "type": "🎯",
+   "at": [
+    73.5,
+    106.5
+   ]
+  },
+  {
+   "type": "🎯",
+   "at": [
+    78.0,
+    106.5
+   ]
+  },
+  {
+   "type": "🎯",
+   "at": [
+    100.5,
+    106.5
+   ]
+  },
+  {
+   "type": "🎯",
+   "at": [
+    105.0,
+    106.5
+   ]
+  },
+  {
+   "type": "🎯",
+   "at": [
+    37.5,
+    39.0
+   ]
+  },
+  {
+   "type": "🎯",
+   "at": [
+    141.0,
+    39.0
+   ]
+  },
+  {
+   "type": "🪜",
+   "at": [
+    78.0,
+    97.5
+   ]
+  },
+  {
+   "type": "🪜",
+   "at": [
+    100.5,
+    97.5
+   ]
+  },
+  {
+   "type": "🪜",
+   "at": [
+    43.5,
+    37.5
+   ]
+  },
+  {
+   "type": "🪜",
+   "at": [
+    135.0,
+    37.5
+   ]
+  },
+  {
+   "type": "🪜",
+   "at": [
+    45.0,
+    64.5
+   ]
+  },
+  {
+   "type": "🪜",
+   "at": [
+    133.5,
+    64.5
+   ]
+  },
+  {
+   "type": "🪜",
+   "at": [
+    48.0,
+    100.5
+   ]
+  },
+  {
+   "type": "🪜",
+   "at": [
+    130.5,
+    100.5
+   ]
+  },
+  {
+   "type": "🪜",
+   "at": [
+    64.5,
+    102.0
+   ]
+  },
+  {
+   "type": "🪜",
+   "at": [
+    114.0,
+    102.0
+   ]
+  },
+  {
+   "type": "🗿",
+   "rect": [
+    78.0,
+    31.5,
+    3.0,
+    3.0
+   ],
+   "label": "Statua del Re Antenato: 4 m, base 3 × 3 m, a 1,5 m dalla roccia; dietro, il tunnel di fuga"
+  },
+  {
+   "type": "❔",
+   "at": [
+    78.0,
+    28.5
+   ]
+  },
+  {
+   "type": "🚪",
+   "rect": [
+    87.0,
+    28.5,
+    6.0,
+    1.5
+   ],
+   "label": "Porta dell'atrio della cittadella (6 m): cade il Giorno 3"
+  },
+  {
+   "type": "🪜",
+   "rect": [
+    57.0,
+    63.0,
+    30.0,
+    3.0
+   ],
+   "label": "Scala ovest della scarpa: 30 m di rampa, sale di 20 m dal cortile esterno (+80) al pianerottolo della Porta Interna (+100)"
+  },
+  {
+   "type": "🪜",
+   "rect": [
+    93.0,
+    63.0,
+    30.0,
+    3.0
+   ],
+   "label": "Scala est della scarpa, gemella della ovest"
+  },
+  {
+   "type": "🔳",
+   "rect": [
+    87.0,
+    63.0,
+    6.0,
+    3.0
+   ],
+   "label": "Pianerottolo davanti alla Porta Interna, +100 m"
+  },
+  {
+   "type": "🏰",
+   "rect": [
+    58.5,
+    66.0,
+    63.0,
+    1.5
+   ],
+   "label": "Scarpa di 20 m fra il cortile esterno (+80) e il cortile interno (+100)"
+  }
+ ],
+ "units": [
+  {
+   "faction": "Nani",
+   "name": "Re Thorek XIII",
+   "token": "🔵",
+   "at": [
+    88.5,
+    49.5
+   ],
+   "cr": "Ftr/Nobile GS 16"
+  },
+  {
+   "faction": "Nani",
+   "name": "Guardie Reali",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     90.0,
+     49.5,
+     6.0,
+     1.5
+    ]
+   },
+   "quantity": 20,
+   "cr": "elite"
+  },
+  {
+   "faction": "Nani",
+   "name": "Madre Dana Forgiapietra",
+   "token": "🔵",
+   "at": [
+    90.0,
+    52.5
+   ],
+   "cr": "Clr 14"
+  },
+  {
+   "faction": "Nani",
+   "name": "Cantitrici della Pietra",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     82.5,
+     46.5,
+     7.5,
+     1.5
+    ]
+   },
+   "quantity": 5,
+   "cr": "Clr/Brd 11"
+  },
+  {
+   "faction": "Nani",
+   "name": "Thorin Runaforte",
+   "token": "🔵",
+   "at": [
+    87.0,
+    52.5
+   ],
+   "cr": "Clr"
+  },
+  {
+   "faction": "Nani",
+   "name": "Ingegneri da Guerra",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     45.0,
+     57.0,
+     6.0,
+     3.0
+    ]
+   },
+   "quantity": 40,
+   "cr": "GS 3"
+  },
+  {
+   "faction": "Nani",
+   "name": "Nani d'Élite (cuneo)",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     76.5,
+     76.5,
+     24.0,
+     4.5
+    ]
+   },
+   "quantity": 50,
+   "cr": "GS 4"
+  },
+  {
+   "faction": "Nani",
+   "name": "Borin Ferropugno",
+   "token": "🔵",
+   "at": [
+    88.5,
+    79.5
+   ],
+   "cr": "Ftr"
+  },
+  {
+   "faction": "Nani",
+   "name": "Dara Occhiolesto",
+   "token": "🔵",
+   "at": [
+    43.5,
+    102.0
+   ],
+   "cr": "Rgr"
+  },
+  {
+   "faction": "Nani",
+   "name": "Balestrieri Torre Ovest",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     40.5,
+     103.5,
+     7.5,
+     3.0
+    ]
+   },
+   "quantity": 10,
+   "cr": "GS 3"
+  },
+  {
+   "faction": "Nani",
+   "name": "Balestrieri Torre Est",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     133.5,
+     103.5,
+     7.5,
+     3.0
+    ]
+   },
+   "quantity": 10,
+   "cr": "GS 3"
+  },
+  {
+   "faction": "Nani",
+   "name": "Nala Cantapietre",
+   "token": "🔵",
+   "at": [
+    75.0,
+    97.5
+   ],
+   "cr": "Brd"
+  },
+  {
+   "faction": "Nani",
+   "name": "Difensori bastione G1",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     72.0,
+     99.0,
+     15.0,
+     6.0
+    ]
+   },
+   "quantity": 40,
+   "cr": "GS 3-4"
+  },
+  {
+   "faction": "Nani",
+   "name": "Difensori bastione G2",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     93.0,
+     99.0,
+     15.0,
+     6.0
+    ]
+   },
+   "quantity": 40,
+   "cr": "GS 3-4"
+  },
+  {
+   "faction": "Nani",
+   "name": "Difensori bastione B1 Nord",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     34.5,
+     31.5,
+     9.0,
+     7.5
+    ]
+   },
+   "quantity": 30,
+   "cr": "GS 3-4"
+  },
+  {
+   "faction": "Nani",
+   "name": "Difensori bastione B2 Nord",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     136.5,
+     31.5,
+     9.0,
+     7.5
+    ]
+   },
+   "quantity": 30,
+   "cr": "GS 3-4"
+  },
+  {
+   "faction": "Nani",
+   "name": "Riserva del cortile esterno: 2 unità di balestrieri e 1 di veterani; il DM la manda dove si apre la breccia",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     105.0,
+     82.5,
+     15.0,
+     3.0
+    ]
+   },
+   "quantity": 30,
+   "cr": "GS 3-4"
+  }
+ ],
+ "movements": [
+  {
+   "name": "Ritirata progressiva (cortile esterno → scala ovest della scarpa → Porta Interna → cortile interno → statua e tunnel)",
+   "path": [
+    [
+     88.5,
+     79.5
+    ],
+    [
+     57.75,
+     70.5
+    ],
+    [
+     57.75,
+     64.5
+    ],
+    [
+     88.5,
+     64.5
+    ],
+    [
+     88.5,
+     61.5
+    ],
+    [
+     88.5,
+     45.0
+    ],
+    [
+     81.0,
+     33.0
+    ],
+    [
+     81.0,
+     30.0
+    ],
+    [
+     78.0,
+     28.5
+    ]
+   ],
+   "color": "#2c8c3c"
+  },
+  {
+   "name": "Approccio Mano Rossa (da SUD)",
+   "path": [
+    [
+     88.5,
+     118.5
+    ],
+    [
+     88.5,
+     111.0
+    ]
+   ],
+   "color": "#d62828"
+  }
+ ],
+ "notes": [
+  "Geometria di riferimento: tabella MISURE in testa a Hammerfist-L2-REVISED-Ultra-Clear.md (2026-10-21); quote a gradoni decise dal DM il 2026-10-22 (+80 cortile esterno, +100 cortile interno, +120 torri e cittadella)."
+ ],
+ "luogo": "Hammerfist, porta principale",
+ "quota": "950 m ; s.l.m., la soglia del cancello principale",
+ "dislivello": "+80 m ; sulla piana, in fondo alla strada a tornanti",
+ "deroghe": [
+  {
+   "codice": "oggetti/porta-enorme",
+   "motivo": "il cancello, la Porta Interna e la porta dell'atrio hanno la luce di 6 m della tabella MISURE: sono portoni da fortezza, non porte"
+  }
+ ]
+}

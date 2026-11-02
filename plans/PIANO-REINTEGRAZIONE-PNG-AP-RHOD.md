@@ -57,7 +57,7 @@ il dossier.
 | PNG AP | Ruolo AP | Stato repo | Azione |
 |---|---|---|---|
 | Capitana Soranna Anitah | capitano della guardia | 🔁 = **Capitana Lorana** (`png/Lorana/capitana-lorana-cr7.md`) | nessuna (canone) |
-| Jorr Natherson | boscaiolo, guida del Witchwood | ✅ `png/jorr-natherson-cr7.md` | nessuna |
+| Jorr Natherson | boscaiolo, guida del Witchwood | ✅ `png/jorr-natherson-cr8.md` | nessuna |
 | Avarthel | druido mezzelfo, custode del ponte | ✅ `png/avarthel-druido-cr9.md` | nessuna |
 | Morlin Coalhewer | fabbro nano | ✅ `png/morlin-coalhewer-cr12.md` (riusato fazione Dauth) | nessuna |
 | **Norro Wiston** | Portavoce (capo politico) del Guado | ❌ (1 sola citazione in `dm-guide-to-be-adapted`) | **R1** ✅ |

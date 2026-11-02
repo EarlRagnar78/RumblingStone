@@ -1,0 +1,195 @@
+{
+ "vecchia": {
+  "file": "plans/esperimenti/mappe-strumenti-2026-10-22/out/pipeline/giro1/gen-bsp-1.md",
+  "mappa": 1,
+  "dimensioni": [
+   30,
+   22
+  ],
+  "voto": 93
+ },
+ "nuova": {
+  "file": "plans/esperimenti/mappe-strumenti-2026-10-22/out/pipeline/giro1/gen-bsp-1-riparata.md",
+  "mappa": 1,
+  "dimensioni": [
+   30,
+   22
+  ],
+  "voto": 100
+ },
+ "stesse_dimensioni": true,
+ "hamming_simboli": {
+  "celle": 6,
+  "quota": 0.0091
+ },
+ "hamming_classi": {
+  "celle": 6,
+  "quota": 0.0091
+ },
+ "transizioni": {
+  "M→.": 6
+ },
+ "jaccard": {
+  "muro": 0.9873,
+  "blocco": 0.9873,
+  "percorribile": 0.9689,
+  "copertura": null,
+  "creature": 1.0,
+  "porte": null,
+  "pericolo": null
+ },
+ "ncd_lzma": 0.2105,
+ "voto": {
+  "prima": 93,
+  "dopo": 100,
+  "delta": 7
+ },
+ "metriche_delta": {
+  "anelli": {
+   "prima": 0,
+   "dopo": 1,
+   "delta": 1
+  },
+  "anelli_strutturali": {
+   "prima": 0,
+   "dopo": 1,
+   "delta": 1
+  },
+  "bordo_aperto": {
+   "prima": 0.0,
+   "dopo": 0.02,
+   "delta": 0.02
+  },
+  "celle_per_creatura": {
+   "prima": 23.4,
+   "dopo": 24.1,
+   "delta": 0.7
+  },
+  "copertura": {
+   "prima": 0.807,
+   "dopo": 0.813,
+   "delta": 0.006
+  },
+  "distanza_media_m": {
+   "prima": 62.2,
+   "dopo": 45.8,
+   "delta": -16.4
+  },
+  "distanza_min_m": {
+   "prima": 61.5,
+   "dopo": 45.0,
+   "delta": -16.5
+  },
+  "distanza_min_q": {
+   "prima": 41.0,
+   "dopo": 30.0,
+   "delta": -11.0
+  },
+  "fila_indiana": {
+   "prima": 0.128,
+   "dopo": 0.155,
+   "delta": 0.027
+  },
+  "ingressi": {
+   "prima": 0,
+   "dopo": 2,
+   "delta": 2
+  },
+  "libere": {
+   "prima": 0.283,
+   "dopo": 0.292,
+   "delta": 0.009
+  },
+  "round_al_contatto": {
+   "prima": 4,
+   "dopo": 3,
+   "delta": -1
+  }
+ },
+ "rilievi_spariti": [
+  "fazioni/lontane@None",
+  "struttura/un-ingresso@None"
+ ],
+ "rilievi_comparsi": [],
+ "profonde": {
+  "prima": {
+   "file": "plans/esperimenti/mappe-strumenti-2026-10-22/out/pipeline/giro1/gen-bsp-1.md",
+   "mappa": 1,
+   "titolo": "BSP seme 1",
+   "celle_percorribili": 187,
+   "vga": {
+    "componenti": 1,
+    "connettivita_media": 29.58,
+    "md_media": 2.913,
+    "integrazione_media": 2.855,
+    "integrazione_min": 1.403,
+    "integrazione_max": 4.983,
+    "intelligibilita_r2": 0.709,
+    "clustering_medio": 0.731
+   },
+   "accesso": {
+    "componenti": 1,
+    "connettivita_media": 4.84,
+    "md_media": 17.354,
+    "integrazione_media": 0.326,
+    "integrazione_min": 0.177,
+    "integrazione_max": 0.481,
+    "intelligibilita_r2": 0.028,
+    "clustering_medio": 0.549
+   },
+   "vad_r": 0.823,
+   "isovista_media_m2": 66.6,
+   "simmetria": {
+    "orizzontale": 0.733,
+    "verticale": 0.648,
+    "rotazione": 0.667
+   },
+   "pattern_2x2": {
+    "distinti": 27,
+    "entropia_bit": 2.689,
+    "kl_vs_corpus": 2.3605
+   },
+   "leniency_per_100": 2.14
+  },
+  "dopo": {
+   "file": "plans/esperimenti/mappe-strumenti-2026-10-22/out/pipeline/giro1/gen-bsp-1-riparata.md",
+   "mappa": 1,
+   "titolo": "BSP seme 1 (riparata)",
+   "celle_percorribili": 193,
+   "vga": {
+    "componenti": 1,
+    "connettivita_media": 29.98,
+    "md_media": 2.729,
+    "integrazione_media": 3.085,
+    "integrazione_min": 1.555,
+    "integrazione_max": 5.054,
+    "intelligibilita_r2": 0.7,
+    "clustering_medio": 0.719
+   },
+   "accesso": {
+    "componenti": 1,
+    "connettivita_media": 4.77,
+    "md_media": 15.123,
+    "integrazione_media": 0.374,
+    "integrazione_min": 0.248,
+    "integrazione_max": 0.552,
+    "intelligibilita_r2": 0.009,
+    "clustering_medio": 0.524
+   },
+   "vad_r": 0.744,
+   "isovista_media_m2": 67.5,
+   "simmetria": {
+    "orizzontale": 0.715,
+    "verticale": 0.648,
+    "rotazione": 0.667
+   },
+   "pattern_2x2": {
+    "distinti": 27,
+    "entropia_bit": 2.728,
+    "kl_vs_corpus": 2.3531
+   },
+   "leniency_per_100": 2.07
+  }
+ },
+ "impronta": "e5f36f115cd63eef"
+}

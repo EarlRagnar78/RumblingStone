@@ -97,7 +97,7 @@
     15,
     9
    ],
-   "label": "Porta della cappella, due porte più in là"
+   "label": "Porta della cappella, la prossima dopo i quartieri"
   },
   {
    "type": "🚪",
@@ -313,6 +313,267 @@
    ],
    "label": "Scala al livello 0: corridoio principale, sala del consiglio, cortile",
    "collega": "fuori mappa ; il livello 0 (sala del consiglio e corridoio principale) non ha una griglia tattica: M7-S lo mostra in sezione"
+  },
+  {
+   "type": "⚒",
+   "at": [
+    15,
+    19
+   ],
+   "label": "Incudine, un passo davanti alla forgia"
+  },
+  {
+   "type": "⚒",
+   "at": [
+    19,
+    19
+   ]
+  },
+  {
+   "type": "⚒",
+   "at": [
+    23,
+    19
+   ]
+  },
+  {
+   "type": "🏰",
+   "at": [
+    2,
+    8
+   ]
+  },
+  {
+   "type": "🏰",
+   "at": [
+    8,
+    8
+   ]
+  },
+  {
+   "type": "🪑",
+   "at": [
+    6,
+    6
+   ],
+   "label": "Il tavolaccio dei minatori"
+  },
+  {
+   "type": "🛢",
+   "at": [
+    8,
+    7
+   ],
+   "label": "La botte dell'acqua"
+  },
+  {
+   "type": "🏰",
+   "at": [
+    11,
+    8
+   ]
+  },
+  {
+   "type": "🏰",
+   "at": [
+    18,
+    8
+   ]
+  },
+  {
+   "type": "🟪",
+   "at": [
+    11,
+    5
+   ],
+   "label": "Lesene lasciate nella roccia: fra loro e gli angoli, nicchie"
+  },
+  {
+   "type": "🟪",
+   "at": [
+    18,
+    5
+   ]
+  },
+  {
+   "type": "🏰",
+   "at": [
+    28,
+    4
+   ]
+  },
+  {
+   "type": "🏰",
+   "at": [
+    33,
+    8
+   ]
+  },
+  {
+   "type": "🛢",
+   "at": [
+    33,
+    4
+   ],
+   "label": "Barili di zolfo e di salnitro"
+  },
+  {
+   "type": "🛢",
+   "at": [
+    33,
+    5
+   ]
+  },
+  {
+   "type": "🧪",
+   "at": [
+    29,
+    7
+   ],
+   "label": "Il fornello e gli alambicchi di Kettra"
+  },
+  {
+   "type": "🏰",
+   "at": [
+    13,
+    13
+   ]
+  },
+  {
+   "type": "🏰",
+   "at": [
+    26,
+    13
+   ]
+  },
+  {
+   "type": "🏰",
+   "at": [
+    13,
+    20
+   ]
+  },
+  {
+   "type": "🏰",
+   "at": [
+    26,
+    20
+   ]
+  },
+  {
+   "type": "⬛",
+   "at": [
+    14,
+    20
+   ],
+   "label": "Il banco delle forge, in muratura contro la roccia: forge e vasche murate in fila"
+  },
+  {
+   "type": "⬛",
+   "at": [
+    16,
+    20
+   ]
+  },
+  {
+   "type": "⬛",
+   "at": [
+    18,
+    20
+   ]
+  },
+  {
+   "type": "⬛",
+   "at": [
+    20,
+    20
+   ]
+  },
+  {
+   "type": "⬛",
+   "at": [
+    22,
+    20
+   ]
+  },
+  {
+   "type": "⬛",
+   "at": [
+    24,
+    20
+   ]
+  },
+  {
+   "type": "🛢",
+   "at": [
+    17,
+    20
+   ],
+   "label": "Vasca per temprare, murata fra due forge"
+  },
+  {
+   "type": "🛢",
+   "at": [
+    21,
+    20
+   ]
+  },
+  {
+   "type": "🏰",
+   "at": [
+    28,
+    13
+   ]
+  },
+  {
+   "type": "🏰",
+   "at": [
+    33,
+    13
+   ]
+  },
+  {
+   "type": "🏰",
+   "at": [
+    28,
+    19
+   ]
+  },
+  {
+   "type": "🏰",
+   "at": [
+    33,
+    19
+   ]
+  },
+  {
+   "type": "🪓",
+   "at": [
+    33,
+    15
+   ],
+   "label": "Rastrelliere a muro"
+  },
+  {
+   "type": "🪓",
+   "at": [
+    33,
+    17
+   ]
+  },
+  {
+   "type": "🏰",
+   "at": [
+    1,
+    16
+   ]
+  },
+  {
+   "type": "🏰",
+   "at": [
+    3,
+    16
+   ]
   }
  ],
  "units": [
@@ -381,8 +642,8 @@
   }
  ],
  "notes": [
-  "Canone 372: DEF-4 Scena 5 (quartieri, cappella due porte più in là, bottega in fondo al corridoio della fucina, tre forge); D45 (tre fucine) e D47 (armeria accanto alla fucina di Gunnvor) del 2026-10-08.",
+  "Canone 372: DEF-4 Scena 5 (quartieri, cappella alla porta dopo i quartieri, bottega in fondo al corridoio della fucina, tre forge); D45 (tre fucine) e D47 (armeria accanto alla fucina di Gunnvor) del 2026-10-08.",
   "Le misure delle stanze sono quelle di questa griglia, approvate con D48.",
-  "Sotto la fucina il caldo finisce di colpo: la scala di Y20 scende alle gallerie di Zeth (M7-E)."
+  "Sotto la fucina il caldo finisce di colpo: la scala di Z20 scende alle gallerie di Zeth (M7-E)."
  ]
 }

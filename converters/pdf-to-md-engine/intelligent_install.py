@@ -66,11 +66,11 @@ class IntelligentInstaller:
         return basic_info
     
     def _check_python_312(self):
-        """Check if Python 3.12 is available for magika compatibility"""
-        for cmd in ["python3.12", "/usr/bin/python3.12", "python3"]:
+        """Check if Python 3.13 is available for magika compatibility"""
+        for cmd in ["python3.13", "/usr/bin/python3.13", "python3"]:
             try:
                 result = subprocess.run([cmd, "--version"], capture_output=True, text=True)
-                if "3.12" in result.stdout:
+                if "3.13" in result.stdout:
                     return cmd
             except:
                 continue
@@ -234,9 +234,9 @@ class IntelligentInstaller:
         # Hardware-aware optional dependencies
         optional_deps = []
         
-        # Python 3.12 specific packages (magika compatibility)
+        # Python 3.13 specific packages (magika compatibility)
         if self.system_info["python_312_available"]:
-            optional_deps.append("magika>=0.5.0")
+            optional_deps.append("magika>=1.0.3")
         
         # PDF engines based on hardware
         if "docling" in tools["pdf_engines"]:
@@ -374,7 +374,7 @@ class IntelligentInstaller:
         print(f"🔧 {description}")
         
         try:
-            result = subprocess.run(cmd, shell=True, check=True, 
+            subprocess.run(cmd, shell=True, check=True, 
                                   capture_output=True, text=True)
             print(f"   ✅ Success")
             return True
@@ -398,9 +398,9 @@ class IntelligentInstaller:
         print(f"💾 Memory: {self.system_info['memory_gb']:.1f}GB")
         print(f"🐍 Python: {self.system_info['python_version']}")
         if self.system_info["python_312_available"]:
-            print(f"✅ Python 3.12: Available (magika support)")
+            print(f"✅ Python 3.13: Available (magika support)")
         else:
-            print(f"⚠️  Python 3.12: Not available (limited magika support)")
+            print(f"⚠️  Python 3.13: Not available (limited magika support)")
         print(f"🎮 GPU: {'Available' if self.hardware_profile['gpu_available'] else 'Not Available'}")
         print()
         
@@ -411,13 +411,13 @@ class IntelligentInstaller:
             for cmd, desc in system_packages:
                 self.run_command(cmd, desc, ignore_errors=True)
         
-        # Setup Python environment with 3.12 preference
+        # Setup Python environment with 3.13 preference
         print("🐍 Setting up Python environment...")
         
-        # Use Python 3.12 if available for full compatibility (especially magika)
+        # Use Python 3.13 if available for full compatibility (especially magika)
         python_cmd = self.system_info["python_312_available"] or sys.executable
         if self.system_info["python_312_available"]:
-            print(f"✅ Using Python 3.12: {python_cmd}")
+            print(f"✅ Using Python 3.13: {python_cmd}")
         else:
             print(f"⚠️  Using system Python: {python_cmd} (may have compatibility issues)")
         
@@ -639,6 +639,7 @@ echo ""
         working_tools = self._test_available_tools(python_cmd)
         
         # Test pytesseract with proper tesseract path configuration
+        success_count = 0
         for module, name in test_imports:
             if module == "pytesseract":
                 # Configure tesseract path for pytesseract
@@ -803,7 +804,7 @@ echo ""
         
         print("\n🎯 INTELLIGENT FEATURES v2.2:")
         print("   • Hardware-aware dependency selection")
-        print("   • Python 3.12 optimization (magika support)")
+        print("   • Python 3.13 optimization (magika support)")
         print("   • OS-specific system package management")
         print("   • Auto-detects optimal extraction method")
         print("   • Adapts to hardware capabilities")
@@ -817,8 +818,8 @@ def main():
     """Main installation function"""
     
     # Check Python version
-    if sys.version_info < (3, 9):
-        print("❌ Python 3.9+ required")
+    if sys.version_info < (3, 13):
+        print("❌ Python 3.13+ required (ADR-0099: la Python di Debian stable)")
         return 1
     
     installer = IntelligentInstaller()

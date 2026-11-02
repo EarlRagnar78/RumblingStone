@@ -67,11 +67,31 @@ class TestIntenzione(unittest.TestCase):
         fonte, testo = RL.intenzione(ROOT / "07_il Portale Della Forgia Eterna" / "ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md")
         self.assertIn("riquadro", fonte)
         self.assertIn("Zog'tar", testo)
+        # dal 2026-10-18 anche DEF-5 apre il §0 col riquadro (riscrittura di stile)
+        fonte, testo = RL.intenzione(ROOT / "07_il Portale Della Forgia Eterna" / "ARC07-DEF-5-RITORNO-HAMMERFIST.md")
+        self.assertIn("riquadro", fonte)
+        self.assertIn("Re Thorek", testo)
 
     def test_senza_riquadro_si_ripiega_sul_quickstart(self):
-        fonte, testo = RL.intenzione(ROOT / "07_il Portale Della Forgia Eterna" / "ARC07-DEF-5-RITORNO-HAMMERFIST.md")
+        """Il ripiego, su un master che il riquadro non ce l'ha.
+
+        Fino al 2026-10-18 il bersaglio era `ARC07-DEF-5`, che allora apriva
+        il §0 senza riquadro. La riscrittura di stile di quel giorno gli ha
+        dato «La serata in tre frasi» e ha tenuto tutto il Quickstart (dove
+        siete, chi c'e', cosa segnare da DEF-4, cosa stampare, i tempi, dove
+        porta): il master non ha perso niente, e' il bersaglio del test che
+        non provava piu' il ripiego. Un master vero che oggi non ha il
+        riquadro puo' riceverlo domani, quindi il ripiego si prova su un
+        master scritto apposta, come il master muto qui sotto; il riquadro
+        vero resta provato su DEF-4 e DEF-5 nel test accanto."""
+        with tempfile.TemporaryDirectory() as tmp:
+            senza = Path(tmp) / "M.md"
+            senza.write_text("# Modulo\n\n## §0 — QUICKSTART DM\n\n**Dove siete.** Sulla "
+                             "soglia della forgia.\n\n**Chi c'e'.** Il re.\n", encoding="utf-8")
+            fonte, testo = RL.intenzione(senza)
         self.assertIn("QUICKSTART", fonte.upper())
-        self.assertTrue(testo)
+        self.assertNotIn("riquadro", fonte)
+        self.assertEqual(testo, "**Dove siete.** Sulla soglia della forgia.")
 
     def test_un_master_senza_intenzione_e_un_rilievo(self):
         with tempfile.TemporaryDirectory() as tmp:

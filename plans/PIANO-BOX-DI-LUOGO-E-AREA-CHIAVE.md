@@ -6,7 +6,7 @@
 > fatta (lotto F2.10 di PIANO-MISURA-EDITORIALE-STANDARD); qui sta come si
 > scrive, con quali template, e dove si applica.
 >
-> **Stato**: 🟡 B0 fatto, il resto aspetta D1-D6 · **Decisore**: DM ·
+> **Stato**: 🟡 B0 fatto, D1 decisa il 2026-10-18, il resto aspetta D2-D6 · **Decisore**: DM ·
 > **Si lavora**: in una chat a parte, svincolata da PIANO-AGENT-SKILLS-ESTERNE
 > **Gate**: `misura_craft --box`, `componenti.py --check`, `validate_norme_editoriali.py`
 
@@ -165,7 +165,7 @@ Opus, ciclo del master) · B6 **R** (ricognizione sui master nuovi)]
 
 | # | Lotto | Domanda |
 |---|---|---|
-| D1 | B3 | **Il tetto del box di luogo: righe, frasi o caratteri?** Oggi la norma è ≤ 12 righe; *Dungeon* conta le frasi; i 300-500 caratteri non hanno fonte. Proposta: si tiene ≤ 12 righe come norma pesata; **≤ 4 frasi** diventa norma **minore** per il solo box di luogo, pesata quando i box dichiarano il tipo (D3), perché oggi colpirebbe anche le aperture di scena da 8-12 righe, che sono legittime; i caratteri restano un indicatore |
+| ~~D1~~ | B3 | ✅ **Decisa il 2026-10-18** (il DM: *«La 3 ok»*, sulla proposta qui sotto). La fonte che mancava per la lunghezza ora c'è: dScryb (Merwin, Sims) dà 30-70 parole per il box, oltre 100 è lungo; nei box di luogo dei moduli gratuiti Paizo la mediana è 42 parole (ADR-0093, `plans/esperimenti/avventure-community/note-prosa-web.md`). I caratteri restano un indicatore. **Il tetto del box di luogo: righe, frasi o caratteri?** Oggi la norma è ≤ 12 righe; *Dungeon* conta le frasi; i 300-500 caratteri non hanno fonte. Proposta: si tiene ≤ 12 righe come norma pesata; **≤ 4 frasi** diventa norma **minore** per il solo box di luogo, pesata quando i box dichiarano il tipo (D3), perché oggi colpirebbe anche le aperture di scena da 8-12 righe, che sono legittime; i caratteri restano un indicatore |
 | D2 | B0 | **Le dimensioni nella prima frase del box** («camera quadrata di quaranta piedi»), come nel modello del 2026-10-01, o il paragone di ADR-0014 con le misure nei Dati per il DM? Proposta: resta ADR-0014. Dal modello esterno si prende la struttura (le caratteristiche della stanza fuori dal box), non le misure nella voce |
 | D3 | B2 | **Ogni box dichiara il suo tipo?** Per esempio `**Read-aloud (luogo · Salvatore lead).**`, con i tipi luogo, ingresso, round, rivelazione, chiusura. Sblocca la norma «niente creature nel box di luogo» e le soglie per tipo della tabella del §2 di `read-aloud-adulti.md`, che oggi nessuno può misurare. Proposta: sì, sui master nuovi (S1-S4 di PIANO-MASTER-DEF), scritto da chi scrive il box e controllato da `componenti.py`; non sui DEF già giocati |
 | D4 | — | **I box già giocati fuori dalle nuove misure**: nei DEF di ARC-07, 27 box oltre i 500 caratteri e 61 oltre le quattro frasi. Proposta: non si toccano, come per D9 di PIANO-LETTORE: si spezzano solo se lo chiedi, e senza cambiare una parola |
@@ -175,8 +175,8 @@ Opus, ciclo del master) · B6 **R** (ricognizione sui master nuovi)]
 ## 6 · Validazione
 
 - ogni lotto: `fase1.py` sui bersagli prima di toccarli (G6), poi
-  `misura_craft --box`, `validate_norme_editoriali.py`,
-  `superficie_norme.py --check`, `decisioni_dm.py --check`, i test dello
+  `misura_craft --box`, `validate_norme_editoriali.py` (che dal 2026-10-22
+  contiene anche la superficie delle norme scoperte), `decisioni_dm.py --check`, i test dello
   script toccato
 - B5 tocca uno stand-alone: segue i sette passi del ciclo del master
   (ADR-0075), letture a freddo comprese

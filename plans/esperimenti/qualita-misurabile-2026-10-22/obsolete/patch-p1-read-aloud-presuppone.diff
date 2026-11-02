@@ -1,0 +1,333 @@
+diff --git a/campaign/misure/baseline-punteggi.json b/campaign/misure/baseline-punteggi.json
+index 09fbba2a..ab71fd09 100644
+--- a/campaign/misure/baseline-punteggi.json
++++ b/campaign/misure/baseline-punteggi.json
+@@ -1,7 +1,7 @@
+ {
+-  "data": "2026-10-10",
++  "data": "2026-10-22",
+   "versione_specifiche": 1,
+-  "norme_pesate": 13,
++  "norme_pesate": 12,
+   "documenti": {
+     "00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.md": 99.66,
+     "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md": 100.0,
+@@ -9,13 +9,6 @@
+     "00_Red Hand Of Doom/prompt_chatGpt_per_setting_campagna.md": 100.0,
+     "04_tomba_di_Belkram/00_Celebromorfosi/stanza_celebromorfosi.md": 100.0,
+     "04_tomba_di_Belkram/02_Celebromorfosi/stanza_celebromorfosi.md": 100.0,
+-    "06_Stanza-corona-di-adamantio/_ARCHIVIO/CoronaDiAdamantio/Belkram.md": 100.0,
+-    "06_Stanza-corona-di-adamantio/_ARCHIVIO/CoronaDiAdamantio/Descrizioni.md": 100.0,
+-    "06_Stanza-corona-di-adamantio/_ARCHIVIO/CoronaDiAdamantio/Descrizioni_finali_italiano.md": 100.0,
+-    "06_Stanza-corona-di-adamantio/_ARCHIVIO/CoronaDiAdamantio/Tactics_and_maps.md": 100.0,
+-    "06_Stanza-corona-di-adamantio/_ARCHIVIO/CoronaDiAdamantio/Treasure&Xp.md": 100.0,
+-    "06_Stanza-corona-di-adamantio/_ARCHIVIO/CoronaDiAdamantio/maps.md": 100.0,
+-    "06_Stanza-corona-di-adamantio/_ARCHIVIO/CoronaDiAdamantio/villans.md": 100.0,
+     "06_Stanza-corona-di-adamantio/StanzaCoronaDiAdamantio/Belkram.md": 100.0,
+     "06_Stanza-corona-di-adamantio/StanzaCoronaDiAdamantio/Descrizioni.md": 100.0,
+     "06_Stanza-corona-di-adamantio/StanzaCoronaDiAdamantio/Descrizioni_finali_italiano.md": 100.0,
+@@ -28,16 +21,16 @@
+     "07_il Portale Della Forgia Eterna/ARC07-ATLANTE-ASSET.md": 100.0,
+     "07_il Portale Della Forgia Eterna/ARC07-CASSETTA-DEL-DM.md": 100.0,
+     "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md": 100.0,
+-    "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md": 99.47,
+-    "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md": 97.59,
+-    "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md": 98.73,
+-    "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md": 99.69,
+-    "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md": 99.85,
+-    "07_il Portale Della Forgia Eterna/ARC07-HANDOUTS.md": 97.65,
++    "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md": 99.81,
++    "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md": 99.38,
++    "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md": 99.53,
++    "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md": 99.98,
++    "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md": 99.83,
++    "07_il Portale Della Forgia Eterna/ARC07-HANDOUTS.md": 98.82,
+     "07_il Portale Della Forgia Eterna/ARC07-MATRICE-VERSIONI.md": 100.0,
+     "07_il Portale Della Forgia Eterna/ARC07-TESORO-WBL-AUDIT.md": 100.0,
+-    "07_il Portale Della Forgia Eterna/CORREZIONE-Boss-Fauci.md": 95.76,
+-    "07_il Portale Della Forgia Eterna/Immagini/PROMPT-IMMAGINI-07ILP.md": 92.15,
++    "07_il Portale Della Forgia Eterna/CORREZIONE-Boss-Fauci.md": 96.02,
++    "07_il Portale Della Forgia Eterna/Immagini/PROMPT-IMMAGINI-07ILP.md": 93.07,
+     "07_il Portale Della Forgia Eterna/Immagini/PROMPT-RITRATTI-E-TAVOLE-ARC07.md": 100.0,
+     "07_il Portale Della Forgia Eterna/La_Piramide_Ricalibrata.md": 92.97,
+     "07_il Portale Della Forgia Eterna/Mappe/ARC07-MAPPE-DEFINITIVO.md": 100.0,
+@@ -53,40 +46,39 @@
+     "07_il Portale Della Forgia Eterna/Mappe/hammerfist-372-1372/M7-F-fucina-grande-1372.md": 100.0,
+     "07_il Portale Della Forgia Eterna/Mappe/hammerfist-372-1372/M7-F-fucina-grande-372.md": 100.0,
+     "07_il Portale Della Forgia Eterna/PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md": 100.0,
+-    "07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md": 95.65,
+-    "07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE1.md": 94.54,
+-    "07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE2.md": 98.45,
++    "07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md": 95.91,
++    "07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE1.md": 94.82,
++    "07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE2.md": 98.54,
+     "07_il Portale Della Forgia Eterna/PortaleForgia-P3-PianoFuoco-PARTE1.md": 97.64,
+     "07_il Portale Della Forgia Eterna/PortaleForgia-P3-PianoFuoco-PARTE2.md": 96.62,
+     "07_il Portale Della Forgia Eterna/PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md": 100.0,
+     "07_il Portale Della Forgia Eterna/RicalibrazioneScontriPianoDelFuoco.md": 98.54,
+     "08_La Battaglia Di Hammerfist/ARC08-00-INDICE.md": 100.0,
+-    "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md": 98.4,
+-    "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md": 100.0,
++    "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md": 98.47,
++    "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md": 99.7,
+     "08_La Battaglia Di Hammerfist/ARC08-03-REGISTRO-PERDITE.md": 100.0,
+     "08_La Battaglia Di Hammerfist/ARC08-04-MARCIA-MANO-ROSSA.md": 100.0,
+     "08_La Battaglia Di Hammerfist/ARC08-10-ESITI-E-CONTINGENZE.md": 100.0,
+-    "08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md": 99.32,
++    "08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md": 99.36,
+     "08_La Battaglia Di Hammerfist/ARC08-12-CRONOLOGIA-MARCH-CLOCK.md": 100.0,
+     "08_La Battaglia Di Hammerfist/ARC08-13-TESORO-WBL-AUDIT.md": 100.0,
+     "08_La Battaglia Di Hammerfist/ARC08-14-ATLANTE-IMMAGINI.md": 100.0,
+     "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md": 98.26,
+     "08_La Battaglia Di Hammerfist/ARC08-16-CUE-SONORI.md": 100.0,
+     "08_La Battaglia Di Hammerfist/ARC08-17-BANCO-HAMMERFIST-1372.md": 100.0,
+-    "08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md": 99.03,
++    "08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md": 99.04,
+     "08_La Battaglia Di Hammerfist/Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md": 99.93,
+     "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md": 100.0,
+     "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md": 100.0,
+     "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md": 100.0,
+-    "08_La Battaglia Di Hammerfist/_ARCHIVIO/PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA.md": 100.0,
+-    "08_La Battaglia Di Hammerfist/_ARCHIVIO/combat_prompts_guide.md": 100.0,
+-    "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md": 99.79,
++    "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md": 99.8,
+     "08_La Battaglia Di Hammerfist/mass_combat_guide_Dm.md": 99.85,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md": 100.0,
+-    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HANDOUTS.md": 87.44,
+-    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md": 96.94,
++    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-CREATURE-MANO-ROSSA-INDICE.md": 100.0,
++    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HANDOUTS.md": 87.92,
++    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md": 97.28,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md": 99.13,
+-    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md": 98.24,
++    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md": 99.12,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md": 100.0,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md": 99.22,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md": 98.97,
+@@ -122,7 +114,7 @@
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-CONSEGUENZE-ECHI-LUNGO-PERIODO.md": 100.0,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-CITY-SIEGE.md": 100.0,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md": 100.0,
+-    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Artemis.md": 98.49,
++    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Artemis.md": 98.79,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md": 100.0,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Thorik.md": 100.0,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-MAPPE-COMPLETO-2.md": 100.0,
+@@ -142,18 +134,18 @@
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE3-Giorno3-Finale-e-Invasione.md": 100.0,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-RUMBLING-STONE-SIDEMISSIONS.md": 100.0,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md": 99.35,
+-    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md": 99.43,
++    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-BALLATE.md": 100.0,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md": 100.0,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md": 100.0,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md": 100.0,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md": 100.0,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md": 100.0,
+-    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md": 97.99,
++    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md": 98.49,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md": 98.47,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md": 99.44,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md": 99.51,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-MAPPE.md": 100.0,
+-    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md": 99.39,
++    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md": 99.69,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md": 100.0,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md": 99.24,
+     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md": 100.0,
+@@ -210,12 +202,14 @@
+     "Bestiario/README.md": 100.0,
+     "Bestiario/mostri/README-CATALOGO-STORICO.md": 100.0,
+     "Bestiario/mostri/aberrazione-fungina-alfa-cr12.md": 100.0,
++    "Bestiario/mostri/abishai-azzurro-mano-cr11.md": 100.0,
+     "Bestiario/mostri/avatar-minore-madre-funghi-cr13.md": 100.0,
+     "Bestiario/mostri/avversario-agile-giorno1-cr9.md": 100.0,
+     "Bestiario/mostri/avversario-brawler-pugno-pesante-cr9.md": 100.0,
+     "Bestiario/mostri/blue-psion-cr1.md": 100.0,
+     "Bestiario/mostri/bone-naga-cr10.md": 100.0,
+     "Bestiario/mostri/bruto-deforme-sottosuolo-cr11.md": 100.0,
++    "Bestiario/mostri/bugbear-assassino-ladro5-assassino2-cr9.md": 100.0,
+     "Bestiario/mostri/carcassa-vivente-cr9.md": 100.0,
+     "Bestiario/mostri/centaur-chieftain-cr7.md": 100.0,
+     "Bestiario/mostri/centaur-ranger4-corrupted-cr5.md": 100.0,
+@@ -252,6 +246,7 @@
+     "Bestiario/mostri/elementale-del-caos-cr11.md": 100.0,
+     "Bestiario/mostri/erinni-rethmar-cr8.md": 100.0,
+     "Bestiario/mostri/flind-cr3.md": 100.0,
++    "Bestiario/mostri/furia-della-mano-cr10.md": 100.0,
+     "Bestiario/mostri/ghost-lion-spettrale-cr8.md": 100.0,
+     "Bestiario/mostri/githyanki-captain-gish-cr12.md": 100.0,
+     "Bestiario/mostri/githyanki-knight-elite-cr10.md": 100.0,
+@@ -268,6 +263,7 @@
+     "Bestiario/mostri/grimlock-ceremorfo-cr5.md": 100.0,
+     "Bestiario/mostri/grinza-megera-acquatica-cr4.md": 100.0,
+     "Bestiario/mostri/guardiano-di-luce-cr10.md": 100.0,
++    "Bestiario/mostri/gufo-gigante-celestiale-cr6.md": 100.0,
+     "Bestiario/mostri/half-illithid-yochlol-cr11.md": 100.0,
+     "Bestiario/mostri/hell-hound-mezzoimmondo-cr4.md": 100.0,
+     "Bestiario/mostri/hobgoblin-bladebearer-ftr6-cr6.md": 100.0,
+@@ -282,6 +278,7 @@
+     "Bestiario/mostri/leoni-spettrali-cr7.md": 100.0,
+     "Bestiario/mostri/loxo-shaman6-cr7.md": 100.0,
+     "Bestiario/mostri/loxo-warrior3-cr4.md": 100.0,
++    "Bestiario/mostri/lucertola-del-tuono-cr10.md": 100.0,
+     "Bestiario/mostri/marea-annis-cr6.md": 100.0,
+     "Bestiario/mostri/monaco-pugno-del-destino-cr7.md": 100.0,
+     "Bestiario/mostri/myconid-elite-guard-cr5.md": 100.0,
+@@ -296,6 +293,7 @@
+     "Bestiario/mostri/ondata-giganti-fanteria-cr15.md": 100.0,
+     "Bestiario/mostri/orco-berserk-barbaro2-cr2.md": 100.0,
+     "Bestiario/mostri/orco-regular-warrior4-cr3.md": 100.0,
++    "Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md": 100.0,
+     "Bestiario/mostri/pillar-golem-arena-cr8.md": 100.0,
+     "Bestiario/mostri/presentatore-arena-cr2.md": 100.0,
+     "Bestiario/mostri/razorfiend-blackspawn-alfa-cr13.md": 100.0,
+@@ -311,6 +309,7 @@
+     "Bestiario/mostri/skeletal-dire-lion-cr6.md": 100.0,
+     "Bestiario/mostri/soprastante-drow-cr10.md": 100.0,
+     "Bestiario/mostri/spettri-di-conoscenza-cr7.md": 100.0,
++    "Bestiario/mostri/spezzamente-kulkor-zhul-cr12.md": 100.0,
+     "Bestiario/mostri/swarm-pseudodraconici-gith-cr8.md": 100.0,
+     "Bestiario/mostri/teschio-nero-commander-cr10.md": 100.0,
+     "Bestiario/mostri/thayan-heavy-infantry-cr3.md": 100.0,
+@@ -318,6 +317,7 @@
+     "Bestiario/mostri/thayan-red-wizard7-cr9.md": 100.0,
+     "Bestiario/mostri/thug-sicario-ftr3-cr3.md": 100.0,
+     "Bestiario/mostri/tiamat-warpriest-elite-cr11.md": 100.0,
++    "Bestiario/mostri/treant-di-adamantio-cr10.md": 100.0,
+     "Bestiario/mostri/underdark-cleric-ainin-cr5.md": 100.0,
+     "Bestiario/mostri/underdark-dovil-runecaster-cr7.md": 100.0,
+     "Bestiario/mostri/warpriest-tiamat-cr7.md": 100.0,
+@@ -335,13 +335,13 @@
+     "Bestiario/png/Lorana/Lorana/Lorana.md": 100.0,
+     "Bestiario/png/Lorana/capitana-lorana-cr7.md": 100.0,
+     "Bestiario/png/Lythiel/Lythiel.md": 100.0,
+-    "Bestiario/png/Maewen/Maewen.md": 99.55,
++    "Bestiario/png/Maewen/Maewen.md": 99.61,
+     "Bestiario/png/Nala_Cantapietre.md": 100.0,
+     "Bestiario/png/Orion_Pelleorsa.md": 100.0,
+     "Bestiario/png/Re_Thorek_Hammerfist.md": 100.0,
+     "Bestiario/png/Secondo_Anello_Rethmar/Secondo_Anello_Rethmar.md": 100.0,
+     "Bestiario/png/Signore_Ventolesto.md": 100.0,
+-    "Bestiario/png/Tempestas/Tempestas.md": 99.29,
++    "Bestiario/png/Tempestas/Tempestas.md": 99.41,
+     "Bestiario/png/Therysol/Therysol/Therysol.md": 100.0,
+     "Bestiario/png/Therysol/therysol-tiefling-mezzodrago-cr9.md": 100.0,
+     "Bestiario/png/Thorin_Runaforte.md": 100.0,
+@@ -387,7 +387,7 @@
+     "Bestiario/villain/Ghaurush_Cenerevento/Ghaurush_Cenerevento.md": 100.0,
+     "Bestiario/villain/Ghaurush_Cenerevento/ghaurush-cenerevento-cr16.md": 100.0,
+     "Bestiario/villain/Ghaurush_Cenerevento/ghaurush-cenerevento-secondo-incontro-cr18.md": 100.0,
+-    "Bestiario/villain/Ghostlord/Ghostlord.md": 99.36,
++    "Bestiario/villain/Ghostlord/Ghostlord.md": 99.43,
+     "Bestiario/villain/Gorthak_il_Trifronte.md": 100.0,
+     "Bestiario/villain/Il_Collezionista_Rakshasa/Il_Collezionista_Rakshasa.md": 100.0,
+     "Bestiario/villain/Il_Collezionista_Rakshasa/il-collezionista-rakshasa-cr18.md": 100.0,
+@@ -432,12 +432,12 @@
+     "Bestiario/villain/retriever-cr11.md": 100.0,
+     "Bestiario/villain/saarvith-regiarix-cr13.md": 100.0,
+     "Bestiario/villain/sedda-corvara-cr6.md": 100.0,
+-    "Bestiario/villain/skullcrusher-il-nero-cr12.md": 100.0,
++    "Bestiario/villain/skullcrusher-il-nero-cr14.md": 100.0,
+     "Bestiario/villain/terros-l-antico-cr15.md": 100.0,
+     "Bestiario/villain/xal-thor-forma-del-nucleo-cr16.md": 100.0,
+     "Bestiario/villain/xilthra-velssin-cr13.md": 100.0,
+     "Bestiario/villain/zog-tar-deatheye-cr15.md": 100.0,
+-    "PG/Artefatti/ARTEFATTI-AUDIT-POTERI-2026-09-25.md": 99.06,
++    "PG/Artefatti/ARTEFATTI-AUDIT-POTERI-2026-09-25.md": 99.07,
+     "PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md": 98.19,
+     "PG/Artefatti/Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/000_Corona_adamantio_ogetto.md": 94.17,
+     "PG/Artefatti/Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/000_Guida_Dm_ogetto_prove_rituali_sfide.md": 95.29,
+@@ -446,7 +446,7 @@
+     "PG/Artefatti/Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/00_Schede_avvenimenti_Corona_di_Adamantio-ALT.md": 96.45,
+     "PG/Artefatti/Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/00_Schede_avvenimenti_Corona_di_adamantio.md": 96.45,
+     "PG/Artefatti/Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/00_corona_di_adamantio_completa_italiano.md": 97.21,
+-    "PG/Artefatti/Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/00_corona_di_adamantio_i_rituali_descrizioni_interventi_divini.md": 92.62,
++    "PG/Artefatti/Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/00_corona_di_adamantio_i_rituali_descrizioni_interventi_divini.md": 93.29,
+     "PG/Artefatti/Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/00_corona_di_adamantio_momento_risveglio_1_prova_scheda_giocatore.md": 94.51,
+     "PG/Artefatti/Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/00_scheda_Giocatore.md": 93.68,
+     "PG/Artefatti/Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/01_Scheda_Giocatore_Sintesi_Pratica_Fase2.md": 88.24,
+@@ -461,12 +461,12 @@
+     "PG/Artefatti/Artefatti-Pg/Artemis/Cerebromorphosis/party_intervention_system.md": 100.0,
+     "PG/Artefatti/Artefatti-Pg/Hella/00_Collana-SCHEDA-GIOCATORE-STATO-ATTUALE.md": 100.0,
+     "PG/Artefatti/Artefatti-Pg/Hella/01_Collana_dei_Semi_Eterni.md": 97.51,
+-    "PG/Artefatti/Artefatti-Pg/Tordek/00_Cintura_della_Devastazione.md": 90.0,
++    "PG/Artefatti/Artefatti-Pg/Tordek/00_Cintura_della_Devastazione.md": 90.38,
+     "PG/Artefatti/Artefatti-Pg/Tordek/01_Bracieri_Gemelli_di_Moradin.md": 100.0,
+     "PG/Artefatti/Artefatti-Pg/Tordek/02_Risveglio_Bracieri_di_Moradin.md": 100.0,
+     "PG/Artefatti/Artefatti-Pg/Tordek/03_Risveglio_Completo_Bracieri_Terra.md": 99.43,
+     "PG/Artefatti/Artefatti-Pg/Tordek/04_Bracieri_Gemelli_Scheda_PG_Fuoco.md": 100.0,
+-    "PG/Artefatti/Artefatti-Pg/Tordek/05_Bracieri_Gemelli_Scheda_PG_Completa.md": 98.92,
++    "PG/Artefatti/Artefatti-Pg/Tordek/05_Bracieri_Gemelli_Scheda_PG_Completa.md": 99.28,
+     "PG/Artefatti/Artefatti-Pg/Tordek/README-tooling-locale.md": 100.0,
+     "PG/Artefatti/Artefatti-Pg/ringOfChaoticIllumination/00_Ring-SCHEDA-GIOCATORE-STATO-ATTUALE.md": 100.0,
+     "PG/Artefatti/Artefatti-Pg/ringOfChaoticIllumination/00_Ring_of_Chaotic_Illumination_Revised.md": 91.07,
+diff --git a/plans/STATO-E-ORDINE-DEI-PIANI.md b/plans/STATO-E-ORDINE-DEI-PIANI.md
+index bec1dff1..fd3f76e0 100644
+--- a/plans/STATO-E-ORDINE-DEI-PIANI.md
++++ b/plans/STATO-E-ORDINE-DEI-PIANI.md
+@@ -789,7 +789,7 @@ per momento del ciclo.
+ |---|---|---|---|
+ | ✅ | **2C** — i box read-aloud che presuppongono un'azione del giocatore | [PIANO-QUATTRO-ORDINI](PIANO-QUATTRO-ORDINI-2026-09-20.md) §2C | *chiuso il 2026-09-21*: `misura_craft --p1` → **22 su 477**, e sono un **elenco nominale** (12 dialoghi · 6 falsi positivi · 2 visioni · 1 canto · 1 condizionale), ancorato file per file da `test_ogni_residuo_e_uno_dei_ventidue_dichiarati`. ⚠️ **Non si porta a zero**: il rilevatore dichiara di non distinguere il dialogo dalla narrazione *(485 box dal 2026-09-25: una nota di allineamento in `DEF-2` A3, le battute di Moradin che chiedono i Doni in `DEF-3` §5, e i quattro box nuovi di `DEF-4` riordinato: il bosco, la sala del trono, la postierla, la tenda; i residui restano 22. I lotti 2f e 2g di CICLO-SESSIONE lo lasciano a 485: il sogno di Artemis spezzato in due battute ne aggiunge uno in `DEF-2`; in `DEF-1` sparisce una riga che il rilevatore scambiava per un box (`>   *DES 10 → 8*)`), riscrivendo il rimando alla Corona. Dal 2026-10-07 i box sono **511** su 487 file: `main` era già a 502, e l'attesa passava solo perché i file misurati erano 485; i banchi di ARC-08 e ARC-09 aggiungono due file e nove box, le locande un file e due box: **513** su 488. I residui restano 22. Il 2026-10-11 il contratto del Seme in `DEF-1` §6-bis aggiunge un box, la fine dell'ora della pergamena: **515**, residui sempre 22. Lo stesso giorno il torque del re alla Scena 12 di `DEF-4` ne aggiunge un altro: **516**, residui 22. Il 2026-10-16 una nota di verifica dei numeri nelle schede dell'arco 08, citata in blocco, conta come box: **518**, residui 22. Il 2026-10-18 la riscrittura di stile dei cinque master di ARC-07 spezza i box lunghi sotto il tetto delle 12 righe: **551** box, e i residui scendono a **20**, perché due esenzioni sono state riformulate senza sparire: il sogno di Thorik in `DEF-2` non dice più «vedi», e in `DEF-3` §5 «chiunque lo guardi» è diventato «chi lo fissa». Lo stesso giorno le correzioni del secondo giro di lettura su ARC-07 aggiungono un box: **552**, residui 20. La sera stessa la varianza delle lunghezze, presa dal corpus di box scritti da persone, unisce i box che descrivono lo stesso luogo: **538**, residui 20. Dopo il voto cieco del DM tornano le otto versioni vecchie vincitrici e i monologhi spezzati si riuniscono: **532**; la correzione dei box impoveriti ne riunisce altri due: **530**, residui 20. Il 2026-10-21 il contratto del Seme, in quattro box nel master `DEF-1` §6-bis e altri quattro nell'HANDOUT 5, ne aggiunge otto: **544**, residui 20)* <!-- attesa: 20 box su 544 --> |
+ | ⬜ | **M1-M3** — marcare gli incontri | [PIANO-MARCATURA-DEGLI-INCONTRI](PIANO-MARCATURA-DEGLI-INCONTRI.md) | `python3 scripts/validate_modules.py --tetto-el` → oggi **zero incontri marcati** |
+-| ✅ | **F1.1/F1.2/F1.3** — mappare le norme su severità | [PIANO-MISURA-EDITORIALE](PIANO-MISURA-EDITORIALE-STANDARD.md) | *chiuso il 2026-09-21*: `punteggio_mqm --norme` → **12 norme su 41** (la mattina erano **4 su 39**, e il «~40» era scritto a mano e sbagliato; poi F2.7-F2.9 hanno collegato i rilevatori che esistevano e registrato due norme mai elencate). *(42 dal 2026-09-24: si è aggiunta la regola 3 degli echi, non misurata; 43 dal 2026-09-25: la mappa che entra in colonna o va su A4, misurata dal gate di stampa; 44 lo stesso giorno: niente esce dalla colonna, misurata in parte; 45: la storia delle scelte fuori stampa; 46: le tabelle che in colonna vanno a capo; 50 col lotto 2f di CICLO-SESSIONE: il corredo della serata, i suoi PDF, le immagini con un servizio, la hero map di Canva AI; 52 col 2g: l'apparato fuori dalla stampa, una pagina una volta; 53 col lotto T10 di TRASVERSALE: la versione su ogni pagina di artefatto; 54 col T10-h: l'immagine dentro la pagina; 55 col lotto F1 di LETTORE-E-PLAYTESTER: chi e dove sta scritto nella scena; 59 con le domande del developer, da RICERCA-MANUALE-DEL-MASTER; 62 con ADR-0074 e il quiz a due agenti: l'apparato generato e le copie sincronizzate, la chiave del quiz, il tetto degli appunti; 63 con domande_developer, che misura quattro righe delle domande del developer e divide la §1 dalla §7; 69 col lotto L1 di AGENT-SKILLS-ESTERNE, il 2026-10-01: il lettore a freddo legge a scene, con il diario; 70 con L2: ogni master dichiara la sua serata; 71 con L4: la lettura nuova quando il master cambia; 75 con D13: niente «sembra» nel read-aloud; 76 con ADR-0077: i tic minori in gruppo; 77 con la lettura che frena l'automatico; 78 con l'indice dei references; 82 col merge del 2026-10-02 della PR #188, che porta le quattro del lotto F2.10 di MISURA-EDITORIALE: il box di luogo in poche frasi, senza creature, nell'ordine consigliato, e l'area chiave di *Dungeon*; 83 col lotto F2.11 del 2026-10-03: il foglio di stile, la grafia dei nomi e dei termini; 85 col lotto V1 di COLLAUDO-MAPPE, il 2026-10-08: la mappa tattica collaudata come grafo, e il suo nord; 86 con V2-quater, la sera: le chiusure nel verso del loro muro; 87 con la D18: ogni mappa dichiara la sua categoria; 88 con la D9 di RESA-ASSET, il 2026-10-09: la licenza dei file di terzi e i pacchetti premium fuori da ciò che esce; 89 con D17-D22, lo stesso giorno: gli oggetti di scena da modelli 3D CC0 verificati, e i simboli che restano glifi; 90 con D23-D26: una sostituzione nella resa entra solo se misurata e preferita dal DM; 93 e 13 nel punteggio con le due della #216: «sembra» e «pare» nei box, D13 di AGENT-SKILLS, e la revisione che non alza il punteggio, ADR-0077; 96 con le tre di D7 di RECUPERO: numeri ADR prenotati, modello di ADR, modello di PR; 97 con la §8 delle domande del developer, il 2026-10-12: ogni scontro possibile ha la sua tattica; 101 con le tre di ADR-0092, il 2026-10-18: le quattro domande dell'alto livello misurate, le quattro da leggere, la riga «Statistiche base»; 102 con ADR-0093: la norma pro-drop di `italiano-nativo.md` §1, provata e non misurata; 104 col primo voto cieco, la sera: il box riscritto non perde i dettagli sensoriali, e il monologo resta un blocco; 105 con le lunghezze che variano, approvate dal DM dal corpus; 111 con ADR-0097, il 2026-10-21: la skill esterna scrittura-italiana come eccezione; 112 col lotto 7b di AVVENTURE-COMMUNITY, il 2026-10-22: la domanda della scena, la scelta che si vede, il presagio del boss e la rete degli indizi, misurate da domande_developer; 95 col lotto 7e dello stesso giorno, che toglie quattro righe che non erano norme, porta undici letture e fatti del tavolo fuori dal conto e fonde in una le tre norme dei nodi)* <!-- attesa: 95 norme; qui ne entrano 13 --> La severità è una colonna del registro — **1 critico · 15 maggiori · 20 minori**. *(Qui stava anche l'opzione «discriminante» di misura_craft, «zero congegni-rumore su 23»: l'opzione è uscita col lotto 7e, dopo aver risposto, e i congegni sono 15.)* |
++| ✅ | **F1.1/F1.2/F1.3** — mappare le norme su severità | [PIANO-MISURA-EDITORIALE](PIANO-MISURA-EDITORIALE-STANDARD.md) | *chiuso il 2026-09-21*: `punteggio_mqm --norme` → **12 norme su 41** (la mattina erano **4 su 39**, e il «~40» era scritto a mano e sbagliato; poi F2.7-F2.9 hanno collegato i rilevatori che esistevano e registrato due norme mai elencate). *(42 dal 2026-09-24: si è aggiunta la regola 3 degli echi, non misurata; 43 dal 2026-09-25: la mappa che entra in colonna o va su A4, misurata dal gate di stampa; 44 lo stesso giorno: niente esce dalla colonna, misurata in parte; 45: la storia delle scelte fuori stampa; 46: le tabelle che in colonna vanno a capo; 50 col lotto 2f di CICLO-SESSIONE: il corredo della serata, i suoi PDF, le immagini con un servizio, la hero map di Canva AI; 52 col 2g: l'apparato fuori dalla stampa, una pagina una volta; 53 col lotto T10 di TRASVERSALE: la versione su ogni pagina di artefatto; 54 col T10-h: l'immagine dentro la pagina; 55 col lotto F1 di LETTORE-E-PLAYTESTER: chi e dove sta scritto nella scena; 59 con le domande del developer, da RICERCA-MANUALE-DEL-MASTER; 62 con ADR-0074 e il quiz a due agenti: l'apparato generato e le copie sincronizzate, la chiave del quiz, il tetto degli appunti; 63 con domande_developer, che misura quattro righe delle domande del developer e divide la §1 dalla §7; 69 col lotto L1 di AGENT-SKILLS-ESTERNE, il 2026-10-01: il lettore a freddo legge a scene, con il diario; 70 con L2: ogni master dichiara la sua serata; 71 con L4: la lettura nuova quando il master cambia; 75 con D13: niente «sembra» nel read-aloud; 76 con ADR-0077: i tic minori in gruppo; 77 con la lettura che frena l'automatico; 78 con l'indice dei references; 82 col merge del 2026-10-02 della PR #188, che porta le quattro del lotto F2.10 di MISURA-EDITORIALE: il box di luogo in poche frasi, senza creature, nell'ordine consigliato, e l'area chiave di *Dungeon*; 83 col lotto F2.11 del 2026-10-03: il foglio di stile, la grafia dei nomi e dei termini; 85 col lotto V1 di COLLAUDO-MAPPE, il 2026-10-08: la mappa tattica collaudata come grafo, e il suo nord; 86 con V2-quater, la sera: le chiusure nel verso del loro muro; 87 con la D18: ogni mappa dichiara la sua categoria; 88 con la D9 di RESA-ASSET, il 2026-10-09: la licenza dei file di terzi e i pacchetti premium fuori da ciò che esce; 89 con D17-D22, lo stesso giorno: gli oggetti di scena da modelli 3D CC0 verificati, e i simboli che restano glifi; 90 con D23-D26: una sostituzione nella resa entra solo se misurata e preferita dal DM; 93 e 13 nel punteggio con le due della #216: «sembra» e «pare» nei box, D13 di AGENT-SKILLS, e la revisione che non alza il punteggio, ADR-0077; 96 con le tre di D7 di RECUPERO: numeri ADR prenotati, modello di ADR, modello di PR; 97 con la §8 delle domande del developer, il 2026-10-12: ogni scontro possibile ha la sua tattica; 101 con le tre di ADR-0092, il 2026-10-18: le quattro domande dell'alto livello misurate, le quattro da leggere, la riga «Statistiche base»; 102 con ADR-0093: la norma pro-drop di `italiano-nativo.md` §1, provata e non misurata; 104 col primo voto cieco, la sera: il box riscritto non perde i dettagli sensoriali, e il monologo resta un blocco; 105 con le lunghezze che variano, approvate dal DM dal corpus; 111 con ADR-0097, il 2026-10-21: la skill esterna scrittura-italiana come eccezione; 112 col lotto 7b di AVVENTURE-COMMUNITY, il 2026-10-22: la domanda della scena, la scelta che si vede, il presagio del boss e la rete degli indizi, misurate da domande_developer; 95 col lotto 7e dello stesso giorno, che toglie quattro righe che non erano norme, porta undici letture e fatti del tavolo fuori dal conto e fonde in una le tre norme dei nodi)* <!-- attesa: 95 norme; qui ne entrano 12 --> La severità è una colonna del registro — **1 critico · 15 maggiori · 20 minori**. *(Qui stava anche l'opzione «discriminante» di misura_craft, «zero congegni-rumore su 23»: l'opzione è uscita col lotto 7e, dopo aver risposto, e i congegni sono 15.)* |
+ | 🟡 | **F1.5 + F3.3** — i due campioni e il κ | idem | ✅ F1.5 chiuso; F3.3 **eseguito sul campione B: κ = 0,0** *(misurato 2026-09-21)*. La metrica si dichiara non affidabile e **non entra in CI**. Le manca una norma che morda, e la strada è la verifica aritmetica degli statblocchi, sbloccata dagli `attributi` (riga sotto) |
+ | ✅ | **Conformità meccanica degli statblocchi** — tutti i lotti chiusi: L1, L2, L2-bis, L3, L4, L5, L6, L6-ter, L7; restano solo **decisioni del DM** (§9) | [RICERCA-CONFORMITA-MECCANICA-STATBLOCCHI](RICERCA-CONFORMITA-MECCANICA-STATBLOCCHI.md) §8-9 | `python3 scripts/conformita_statblocchi.py --check` → **ogni `pf-dado` registra i dadi vita** · `python3 scripts/conformita_statblocchi.py --riepilogo` → **101 tornano, 0 da correggere, 0 scarti del generatore, 0 decisioni aperte al DM** *(misurato 2026-09-23, dopo D1-D12)* <!-- attesa: da correggere 0 --> |
+ | ✅ | ~~i 27 ADR mancanti in `docs/INDEX.md` §4~~ | *nessun lotto: non c'era niente da fare* | `validate_docs --sorgenti` → **0** *(misurato 2026-09-21)*. 🐛 **I 27 non sono mai esistiti**: il buco più grande che `plans/adr/` abbia mai avuto è stato **uno**, il 2026-09-12, e da `14694c4` (16 settembre) l'indice è completo. Vedi §6.5 |
+diff --git a/scripts/punteggio_mqm.py b/scripts/punteggio_mqm.py
+index f39232c7..5b077d59 100644
+--- a/scripts/punteggio_mqm.py
++++ b/scripts/punteggio_mqm.py
+@@ -148,7 +148,7 @@ def _sembra(testo: str, _percorso: Path) -> "dict[str, int]":
+                                    if vp.sembra_esitanti(mc.corpo_del_box(b)))}
+ 
+ 
+-RILEVATORI = (_difetti_box, _caratteristiche, _prosa, _p1, _metrature, _sembra)
++RILEVATORI = (_difetti_box, _caratteristiche, _prosa, _metrature, _sembra)
+ 
+ 
+ def carica_specifiche() -> dict:
+diff --git a/scripts/specifiche-qualita.yaml b/scripts/specifiche-qualita.yaml
+index e8c6ad65..ec54a5f1 100644
+--- a/scripts/specifiche-qualita.yaml
++++ b/scripts/specifiche-qualita.yaml
+@@ -85,10 +85,10 @@ norme:
+     severita: maggiore
+     rilevatore: "validate_prosa.rilievi"
+     norma: "module-standard §5 — un testo per i giocatori senza una sola ancora nominata"
+-  read_aloud_presuppone:
+-    severita: minore
+-    rilevatore: "misura_craft.box_con_p1"
+-    norma: "read-aloud-adulti.md + linee guida Dungeon — il read-aloud non presuppone un'azione né un senso"
++  # read_aloud_presuppone: fuori dal punteggio dal <data della decisione del DM>.
++  # Dei 22 residui dichiarati dal lotto 2C, 12 sono dialoghi, 6 falsi positivi e
++  # 4 casi leciti: la precisione su quello che resta e' circa zero. Resta
++  # l'indicatore `misura_craft --p1` e il test che ancora i residui file per file.
+   metratura_nella_voce_narrante:
+     severita: minore
+     rilevatore: "misura_craft.metrature_nei_box"
+diff --git a/skills/REGISTRO-NORME-EDITORIALI.md b/skills/REGISTRO-NORME-EDITORIALI.md
+index 562a3d2e..ce302dda 100644
+--- a/skills/REGISTRO-NORME-EDITORIALI.md
++++ b/skills/REGISTRO-NORME-EDITORIALI.md
+@@ -106,7 +106,7 @@
+ | `PIANO-COLLAUDO-E-GENERAZIONE-MAPPE` §8 · Campo Drow 1 | la griglia del **Campo Drow 1** sta in due master (il SUPPLEMENTO-P1C, con le didascalie, e il P1C-Rituale, dove si gioca) e le due copie sono **identiche** | **minore** | 🟢 `test_campo_drow_1_copia.py` |
+ | `rumblingstone-mapmaking` · `collaudo-mappe.md` | una mappa nuova o ridisegnata passa dal **collaudatore a freddo** (rubrica `M-…`) prima di dirsi fatta | **minore** | 🟡 non c'è un cancello che sappia se il collaudatore è passato: lo dice il rapporto della sua lettura, che si salva accanto alla mappa come le letture dei master. Un registro come `registro_letture.py` per le mappe è un lotto possibile, non fatto |
+ | `ADR-0060` (norma WotC/Paizo) | **caratteristiche e abilità maiuscole** nelle quattro forme meccaniche: `Forza 25` · `Nuotare +9` · `prova di X` con una CD · `bonus di X` | **minore** · `caratteristica_minuscola` | 🟢 `validate_prosa.py --caratteristiche` — 258 occorrenze sotto controllo, soglia **zero**, e **fuori dalle quattro forme non si misura** (una frase discorsiva senza CD non si vede: costerebbe più falsi positivi di quanti errori trovi) |
+-| `read-aloud-adulti.md` §1 punto 6 + linee guida *Dungeon* | il read-aloud **non presuppone un'azione né un senso del giocatore** | **minore** · `read_aloud_presuppone` | 🟢 `misura_craft --p1` — da **104 box su 477 (22%)** a **22 (5%)** col lotto 2C, e i 22 sono un elenco nominale, non un residuo: 12 dialoghi, 1 canto, 2 visioni interiori, 6 falsi positivi del rilevatore, 1 condizionale. Il cancello è `test_ogni_residuo_e_uno_dei_ventidue_dichiarati`, che àncora il conto **file per file**: un rilievo in più è rosso, e va corretto il testo, non il test. ⚠️ Resta vero che il rilevatore non distingue la **narrazione** dal **dialogo** — per questo il conto atteso non è zero, e non lo sarà mai |
++| `read-aloud-adulti.md` §1 punto 6 + linee guida *Dungeon* | il read-aloud **non presuppone un'azione né un senso del giocatore** | **minore** | 🟡 `misura_craft --p1`, indicatore fuori dal punteggio MQM per decisione del DM (dei residui, 12 dialoghi e 6 falsi positivi) — da **104 box su 477 (22%)** a **22 (5%)** col lotto 2C, e i 22 sono un elenco nominale, non un residuo: 12 dialoghi, 1 canto, 2 visioni interiori, 6 falsi positivi del rilevatore, 1 condizionale. Il cancello è `test_ogni_residuo_e_uno_dei_ventidue_dichiarati`, che àncora il conto **file per file**: un rilievo in più è rosso, e va corretto il testo, non il test. ⚠️ Resta vero che il rilevatore non distingue la **narrazione** dal **dialogo** — per questo il conto atteso non è zero, e non lo sarà mai |
+ | `read-aloud-adulti.md` §1 punto 7 + Shawn Merwin (*D&D Beyond*) | nel read-aloud **niente *«sembra»* né *«pare»***; *«come se»* resta, perché è un paragone (D13 di PIANO-AGENT-SKILLS-ESTERNE); il «sembra» smentito entro la frase dopo resta (D17) | **minore** · `box_sembra_pare` | 🟢 `punteggio_mqm.py`, norma `box_sembra_pare`, dal 2026-10-03, col rilevatore `validate_prosa.sembra_esitanti` (fino al 2026-10-22 stava nel banco di L11, `voto_scrittura`, tolto col lotto 7e: è l'unica superficie della norma). Sui file di gioco il rilevatore contava **34 box su 501** (2026-10-01) e non era un cancello né entrava nel punteggio MQM: ci è entrato col lotto che li ha corretti. 🐛 *(2026-10-02)* non vedeva il participio né il passato remoto («ti è sembrato», «parve»): trovato dalla prima prova di `ciclo_prosa.py`, corretto, e il conto sui file di gioco resta 34. 🐛 Lo stesso giorno, leggendo i box uno per uno: «appare» stava nel rilevatore e non nella norma, e nei file di gioco vuol dire «diventa visibile». Tolto: **30 box su 501**. Il lotto che li corregge, approvato dal DM il 2026-10-03, è applicato: 25 box corretti, 27 modifiche. ✅ *(2026-10-03)* **D17**: il «sembra» smentito entro la frase dopo resta, e il rilevatore lo salta (`sembra_esitanti`). Sui file di gioco restano **3 box su 502**: un PNG che parla, un modello da riempire, e un box di `P3-PianoFuoco-PARTE2` dove la smentita sta nella battuta dopo, che il rilevatore dei box non apre (la riga ⬜ di STATO-E-ORDINE §0) |
+ | `italiano-nativo.md` §9.2-ter e §9.2-quater + Humanizer (blader, MIT), regola «weak alone» (ADR-0077) | i **tic minori** (copula elusa, importanza dichiarata, antitesi, trattino come respiro) da soli sono italiano corretto; **due diversi nella stessa unità di prosa** (paragrafo, voce d'elenco, box) chiedono di riscrivere l'unità | **minore** | 🟡 `ciclo_prosa.py segnala`, norma «tic minori in gruppo». Dal 2026-10-22 non conta più la watchlist di §9.2-quater (zero scatti in tutto il repo, e la regex non vedeva le forme frequenti) né *sembra/pare*, che contava anche fuori dai box dove la norma non vale: quella norma la guarda `box_sembra_pare`. Un tic che sta tutto dentro un altro non conta due volte, e l'etichetta di regia resta fuori. Sui master ARC-07 il 2026-10-02: 17, 9, 12, 6 e 2 unità da DEF-1 a DEF-5. ⚠️ La soglia di due viene da Humanizer e **non è tarata su questo repo**: per questo resta fuori dal punteggio MQM e non è un cancello |
+ | `ADR-0077`, estensione del 2026-10-03 | una **revisione applicata non abbassa il punteggio MQM** né fa crescere una norma; e la riscrittura **si ferma** dopo un giro che non abbassa le segnalazioni, o al terzo | — si misura e non si pesa: è un cancello sul processo, non una qualità del testo | 🟢 `ciclo_prosa.py registro --check` in CI, sul registro `plans/scrittura/miglioramenti.json` (11 revisioni D13: segnalazioni da 293 a 265, MQM +2,52). Il tetto dei giri lo dice `ciclo_prosa.py misura`, ed è un indicatore: chi riscrive lo legge, nessun cancello lo impone |
+@@ -147,8 +147,8 @@
+ 
+ | | Norme registrate |
+ |---|---:|
+-| 🟢 misurate | 43 |
+-| 🟡 misurate in parte, con il limite scritto | 39 |
++| 🟢 misurate | 42 |
++| 🟡 misurate in parte, con il limite scritto | 40 |
+ | 🔴 **non misurate, con la ragione scritta** | 13 |
+ | ⚪ non applicabili | 0 |
+ 

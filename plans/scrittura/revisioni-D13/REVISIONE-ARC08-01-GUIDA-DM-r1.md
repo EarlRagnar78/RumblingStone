@@ -74,7 +74,7 @@ Il testo intero, con le due versioni dentro: `applica` le ricostruisce da qui.
         *   🦉 Signore Ventolesto (Gufo Gigante Celestiale Alpha)
         *   🌟 Ranger Elfici sui Gufi
         *   🐻 Orion Pelleorsa (Druido Umano)
-        *   🎶 Maestro Tempestas (Mezzelfo Bardo/Arcimago)
+        *   🎶 Maestro Tempestas (Mezzelfo Bardo/Cantore delle tempeste)
     *   **PNG Giocabili per le Prime Sessioni**
         *   Come Gestire i Personaggi Temporanei
         *   ⚔️ Borin Ferropugno (Nano Guerriero/Campione Nanico)
@@ -383,7 +383,7 @@ SIMBOLI TATTICI:
 
 <div style="page-break-before:always"></div>
 
-#### **🎵 LE CANTITRICI DELLA PIETRA (5 Nane Chierico 8°/Bardo 4°, GS 11 ciascuna)**
+#### **🎵 LE CANTITRICI DELLA PIETRA (5 Nane Chierico 8°/Bardo 4°, GS 12 ciascuna)**
 **Descrizione da Leggere:**
 > *"Cinque nane si fanno avanti, le loro voci già armonizzate in un canto basso e potente. Sono le Cantitrici della Pietra, sacerdotesse-barde che uniscono la magia divina di Moradin alla tradizione musicale nanica. I loro canti fanno tremare le montagne e possono spezzare il ferro nemico o riforgiare il coraggio alleato."*
 
@@ -488,7 +488,7 @@ SIMBOLI TATTICI:
 
 <div style="page-break-before:always"></div>
 
-#### **🎶 MAESTRO TEMPESTAS (Mezzelfo Bardo 12°/Arcimago 2°, GS 14)**
+#### **🎶 MAESTRO TEMPESTAS (Mezzelfo Bardo 12°/Cantore delle tempeste 2°, GS 14)**
 **Descrizione da Leggere:**
 > *"Maestro Tempestas è un mezzelfo dalle origini misteriose, i cui occhi cambiano colore con le condizioni atmosferiche: grigi durante la calma, blu elettrico durante le tempeste. La sua lira magica è intagliata dal corno di un drago blu antico, e ogni nota che suona richiama i venti e i fulmini a danzare secondo la sua volontà."*
 
@@ -501,7 +501,7 @@ SIMBOLI TATTICI:
 **Attacco Base:** +9; 
 **Lotta:** +10
 **Attacco:** *Spada Lunga Tonante +1* +11 in mischia (1d8+2 più 1d8 sonoro)
-**Capacità Speciali:** Musica Bardica (Ispirare Coraggio +3, 12/giorno), Conoscenze Bardiche, Arcimago (Maestria degli Elementi Elettrico/Sonoro).
+**Capacità Speciali:** Musica Bardica (Ispirare Coraggio +3, 12/giorno), Conoscenze Bardiche, Cantore delle tempeste (canto del tuono e della pioggia).
 **Incantesimi da Bardo Conosciuti (CL 12°; 3/4/4/3/2 per giorno):**
 *   4° (CD 19): *Urlo Superiore*, *Dominare Persone*, *Porta Dimensionale*, *Libertà di Movimento*
 *   3° (CD 18): *Fulmine*, *Velocità*, *Dissolvi Magie*, *Suggestione*, *Paura*
@@ -713,7 +713,7 @@ L'esercito è organizzato in quattro linee d'assalto principali, con supporto ae
 *(Statistiche e tattiche complete per ogni tipo di unità)*
 
 *   **Comandanti:** Re Thorek Hammerfist (GS 16), Madre Superiora Dana (GS 14).
-*   **Élite:** Nani d'Élite (GS 4, **Tattica:** difendono il cancello e i punti strategici), Cantitrici della Pietra (GS 11, **Tattica:** usano i loro canti di massa nei momenti critici).
+*   **Élite:** Nani d'Élite (GS 4, **Tattica:** difendono il cancello e i punti strategici), Cantitrici della Pietra (GS 12, **Tattica:** usano i loro canti di massa nei momenti critici).
 *   **Fanteria Pesante:** Guerrieri Nanici Veterani (GS 4, **Tattica:** formano muri di scudi impenetrabili sulle mura).
 *   **Fanteria a Distanza:** Balestrieri Nanici (GS 3, **Tattica:** si concentrano sui comandanti e sulle unità speciali nemiche).
 *   **Supporto Tecnico:** Ingegneri da Guerra (GS 3, **Tattica:** operano le baliste e riparano le fortificazioni danneggiate).
@@ -3067,7 +3067,7 @@ CERIMONIA DELLE ASCE - TRAMONTO
 
 ### **ESERCITO NANICO DI HAMMERFIST (300 unità)**
 *   **Comandanti:** Re Thorek Hammerfist (GS 16), Madre Superiora Dana (GS 14)
-*   **Élite:** Nani d'Élite (GS 4), Cantitrici della Pietra (GS 11)
+*   **Élite:** Nani d'Élite (GS 4), Cantitrici della Pietra (GS 12)
 *   **Fanteria Pesante:** Guerrieri Nanici Veterani (GS 4)
 *   **Fanteria a Distanza:** Balestrieri Nanici (GS 3)
 *   **Supporto Tecnico:** Ingegneri da Guerra (GS 3)

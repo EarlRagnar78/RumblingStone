@@ -77,7 +77,6 @@ class UnifiedPDFConverter:
                 
                 # Analyze PDF characteristics for optimal method selection
                 characteristics = analyze_pdf_characteristics(pdf_path)
-                strategy = get_extraction_strategy(characteristics)
                 
                 logger.info(f"PDF Analysis: {characteristics.optimal_extraction_method} "
                            f"(confidence: {characteristics.extraction_confidence:.2f})")

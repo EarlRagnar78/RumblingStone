@@ -64,6 +64,14 @@ class TestIControlliDeiBox(unittest.TestCase):
     def test_senza_box_nessuna_etichetta_vale(self):
         assert not _controlli("Solo prosa per il DM.\n")["box_etichettato"]
 
+    def test_senza_box_nessun_controllo_di_box_passa(self):
+        # Prima un testo senza box passava i sei controlli sui box: la
+        # spazzatura prendeva 78% in verifica (I1, 2026-10-10).
+        c = _controlli("La caverna sembra enorme (circa 30 metri). Fine.\n")
+        for k in ("box_tetto_righe", "box_un_nome", "box_senza_parentesi",
+                  "box_senza_sembra", "box_p1", "box_senza_metrature"):
+            assert not c[k], k
+
 
 class TestIControlliDeiDocumenti(unittest.TestCase):
     def test_tre_antitesi_sono_troppe(self):

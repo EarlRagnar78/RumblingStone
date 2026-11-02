@@ -1,0 +1,86 @@
+Lotto 7c · calibrazione del rilevatore di contraddizioni (2026-10-22)
+=====================================================================
+
+Comando:  python3 scripts/coerenza_campagna.py tutto --fronti fronti-ARC07.yaml fronti-ARC08.yaml \
+            --archi "07_il Portale Della Forgia Eterna" "08_La Battaglia Di Hammerfist" --bestiario --out .
+Uscita:   coerenza.json, coerenza.txt (perimetro), coerenza-tutti.json (con --tutti)
+
+Perimetro: 33 file d'arco (master DEF, apparati, cassetta, echi, handout, carry-over
+B4, e tutto ARC-08 tranne le ERRATA) + 16 voci del Bestiario le cui entità compaiono
+negli archi. Fuori: _ARCHIVIO, ERRATA, CORREZIONE, MATRICE, PIANO-REVISIONE, le
+ricalibrazioni e PortaleForgia-P1/P2/P3 (precedono il consolidamento). Con --tutti
+si leggono anche quelli: 46 file.
+
+Rilievi letti a mano: tutti (4 nel perimetro, 6 con --tutti). Ogni riga è stata
+aperta nei due file e, dove c'era, nella voce del Bestiario.
+
+ID    entità · attributo                valori · dove                                          esito
+----  --------------------------------  -----------------------------------------------------  -----
+C001  hobgoblin sergenti · CA            21 ARC07-DEF-5:987  /  18 ARC08-01:981 (e ARC08-02:860)  VERO
+C002  hobgoblin sergenti · GS            5  ARC07-DEF-5:987  /  4  ARC08-01:978                     VERO
+C003  hobgoblin sergenti · pf            37 ARC07-DEF-5:987  /  38 ARC08-01:981                     VERO
+      → una contraddizione sola vista tre volte. DEF-5 A.2 usa la voce del Bestiario
+        ricalcolata al conto SRD il 2026-10-12 (D78: guerriero di 5°, 5d10+10 = 37 pf,
+        GS 5, CA 21 con lo scudo); ARC08-01 «HOBGOBLIN SERGENTI» e ARC08-02 §5 tengono
+        il profilo vecchio (GS 4, PF 38, CA 18). Sono gli stessi sergenti della stessa
+        notte (Cuore della Montagna, Giorno 3): il DM che passa da DEF-5 ad ARC-08 trova
+        due schede. Da allineare in ARC08-01 r.978-981 e ARC08-02 r.860.
+C004  orog guardie nere · GS             6  ARC08-01:1049 (Guerriero 5, CA 19, 52 pf)  /           VERO
+                                         7  ARC08-02:911  (rimanda al Bestiario: Guerriero 6, 63 pf)
+      → la voce Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md lo sa già e
+        chiama quella di ARC08-01 «stampa del repo», e la sua «la prima scelta del
+        D10»; ma ARC08-01 stampa ancora lo statblocco Guerriero 5 / GS 6. Due file
+        canonici dello stesso arco, due schede: decide il DM quale resta.
+
+Solo con --tutti (file fuori perimetro):
+C005  Skullcrusher il Nero · GS         14 ARC07-DEF-4:3862 / 11 CORREZIONE-Boss-Fauci.md:242      VERO (annesso storico)
+      → l'indice dell'arco tiene CORREZIONE-Boss-Fauci tra gli «annessi vivi»; la sua
+        sezione «CONNESSIONE ANNO -1000» dice ancora «Adult Black Dragon CR 11» e
+        «Thorik SkullDark» (nome che l'indice dichiara superato). Bassa priorità.
+C006  Zog'tar Deatheye · GS             15 ARC07-DEF-4:4005 / 14 ERRATA-ARC07-35-Verification.md:32 VERO (errata non aggiornata)
+      → la tabella PX dell'errata ha aggiornato la riga di Skullcrusher e non quella
+        di Zog'tar, che oggi è «GS 15, Avanzato» nel master e nel Bestiario.
+
+PRECISIONE
+  perimetro:  4 veri su 4 rilievi (100%), cioè 2 contraddizioni distinte.
+  --tutti:    6 veri su 6 (100%), 4 contraddizioni distinte.
+  Onestà sul numero: 6 rilievi sono pochi, l'intervallo è largo (Wilson 95% su 6/6:
+  61%-100%). Quattro rilievi falsi sono stati eliminati DURANTE la messa a punto,
+  prima della lettura finale, e vanno contati come costo della prudenza, non come
+  precisione: «Madre» contro «Madre Superiora» (forma breve, ora compatibile),
+  «guerriero 4» contro «guerriero 4/monaco 9» per Tordek (parentesi letta male,
+  ora ogni classe), «APL 13 / CA 28» presi per classi (ora c'è l'elenco delle
+  classi), «Ogre Skullcrusher (GS 5)» attribuito a Skullcrusher il Nero (ora un
+  alias breve preceduto da un altro nome proprio non conta).
+
+COPERTURA (cosa vuol dire «poche contraddizioni»)
+  399 occorrenze lette; attributi confrontati in 2+ posti: GS 30, pf 17, CA 15,
+  titolo 8, CD 3, classi 3, portatore d'artefatto 3. Le copie degli statblocchi
+  fra ARC08-01 e ARC08-02 (Fauci, Grimjaw, Gorthak, Dana, Thorek, i quattro pregen,
+  Orion, Tempestas, Ventolesto) concordano tutte: GS, pf, CA e CD del soffio.
+  I fatti di prosa sono quasi assenti per costruzione: «vivo/morto» ha 2 occorrenze
+  (nei master quasi ogni frase sulla morte è condizionale, ed è giusto che il
+  filtro le scarti), età 0 (l'unica, Thorin 280 anni, è scritta una volta sola),
+  anni DR 0, distanze fra luoghi nominati 0, giorno del March Clock 1. Il
+  rilevatore non vede i fatti scritti senza un nome davanti (es. «il re non muore
+  in DEF-5») né le contraddizioni fra un nome breve ambiguo e quello intero
+  («Re Thorek» resta fuori perché Thorek I e Thorek Hammerfist sono due persone).
+
+FRONTI E OROLOGI (dati di prova, non canone)
+  ARC-07: 4 fronti (3 d'avventura, 1 di campagna), 4 orologi.
+    - 27 campi scritti nei master, 3 dedotti: le 3 domande sulla posta su 4 fronti
+      (l'unica scritta come domanda è quella della Custode, DEF-3 r.969).
+    - Presagi: 12/12 trovati nei master (per costruzione: le chiavi vengono dalla prosa).
+    - F1: il Debito della Radice ha un pericolo solo.
+    - Orologi: l'orologio della notte (8 tacche, 3 segnate, «sorge il sole») è già un
+      orologio di Blades. Il Countdown di A7 è in ore, non in segmenti (O1, O2): le sue
+      cinque righe dell'affresco sono già 4 soglie più la catastrofe. Collezionista
+      5/8 e Sal 0/6 (state.yaml) conformi.
+  ARC-08: 2 fronti, 3 orologi.
+    - 16 campi scritti, 3 dedotti (tutte le domande: nessuna è scritta come domanda).
+    - F1: l'avanguardia ha 4 pericoli (Fauci, Grimjaw, Gorthak, il cavaliere).
+    - Orologi conformi 0/3: giorni d'assedio 3, March Clock 42, Ritual Clock 18.
+      Sono tracciati di campagna, non orologi da tavolo; se il DM li vuole sotto lo
+      schema, il Ritual Clock 9/18 è a metà e diventa 3/6 o 4/8: decisione sua.
+  state.yaml (villain, solo lettura): 9/13 orologi conformi; fuori Azarr Kul 9/18 e
+  tre righe che non sono orologi a segmenti (Xal'thor, Sethrax, Mira Serani).

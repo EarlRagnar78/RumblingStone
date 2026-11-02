@@ -109,7 +109,7 @@ class TestIlCancelloMorde(unittest.TestCase):
         """ADR-0053 applicato al registro: un rimando che non esiste **sembra
         copertura**, ed e' peggio di un buco dichiarato."""
         testo = REGISTRO.read_text(encoding="utf-8").replace(
-            "🟢 congegno `chiusura su decision point`",
+            "🟢 congegno `regia etichettata **Read-aloud (X)**`",
             "🟢 congegno `questo non esiste`")
         errori = self._con_registro(testo)
         self.assertTrue(any("questo non esiste" in e for e in errori), errori)

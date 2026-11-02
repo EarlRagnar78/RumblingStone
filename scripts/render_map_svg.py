@@ -91,11 +91,30 @@ EMOJI_NOTO = Path(__file__).resolve().parent / "emoji-noto"
 # pergamena. Una tessera copre CELLE_PER_TESSERA quadretti per lato. Gli SVG
 # di questo tema vanno in `rendered-texture/`, accanto a `rendered/`.
 TEXTURE_CC0 = Path(__file__).resolve().parent / "texture-cc0"
-TEMI = ("pergamena", "texture")
+TEMI = ("pergamena", "texture", "pianta")
 CELLE_PER_TESSERA = 2
 VELATURA = 0.30    # opacità del colore del terreno sopra la texture: tarata dal DM
                    # il 2026-10-09 sulle texture vere (D16), fra 0,45 e 0,20
-CARTELLA_TEMA = {"pergamena": "rendered", "texture": "rendered-texture"}
+CARTELLA_TEMA = {"pergamena": "rendered", "texture": "rendered-texture", "pianta": "rendered-pianta"}
+# Il modo stampa (`--stampa`, in `rendered-stampa-<tema>/`; ADR-0105, M7-H)
+# vale per ogni tema. Una mappa grande stampata nel booklet si
+# rimpicciolisce fino a 0,3 e le scritte scendono a 3 pt. Qui ogni scritta ha
+# un corpo in punti, per una mappa stampata larga quanto la gabbia A4 del
+# booklet (21 cm − 2,0 − 1,5 di margini = 17,5 cm), mai sotto i 7 pt della
+# misura di stampa. Indicazioni e legenda vanno in un secondo SVG (`_legenda`)
+# perché a 7 pt non entrano sotto la griglia senza che il foglio diventi più
+# alto che largo e torni a rimpicciolirsi. Niente filtri: Typst li
+# rasterizza a 288 dpi, sotto i 300 della misura.
+LARGHEZZA_STAMPA_PT = 496.0
+
+
+def cartella_stampa(tema: str) -> str:
+    """La cartella del modo stampa di un tema: `rendered-stampa-pianta/`…"""
+    return f"rendered-stampa-{tema}"
+
+
+
+CORPO_STAMPA_PT = 7.4
 # D24 di RESA-ASSET: sulle texture i glifi perdevano contrasto (mediana 7,9 →
 # 4,5 misurata da misura_resa.py) e alcuni terreni si confondevano (⛰ e 🔳 a
 # ΔE 1,2). Nel tema texture un alone del colore della carta sta sotto ogni
@@ -317,7 +336,7 @@ HEAVY_PATS = set(legenda.pattern_pesanti())
 # paint order: backgrounds first, solids last (small overlaps hide seams)
 Z_ORDER = ["t_void", "t_grass", "t_veg", "t_sand", "t_earth", "t_cave", "t_floor", "t_lava",
            "t_lethal", "t_deep", "t_water", "t_shallow", "t_sewer", "t_forest", "t_mountain",
-           "t_struct", "t_pillar", "t_wall"]
+           "t_telo", "t_struct", "t_pillar", "t_wall"]
 
 # ---------------------------------------------------------------------------
 # Procedural texture patterns (pure SVG, deterministic — no external assets)
@@ -466,6 +485,17 @@ PATTERNS: dict[str, str] = {
         '<circle cx="7" cy="20" r="1.8" fill="none" stroke="#9aa66b" stroke-width="0.8"/>'
         '<circle cx="19" cy="6" r="1.3" fill="none" stroke="#9aa66b" stroke-width="0.8"/>'
         '<circle cx="22" cy="22" r="1" fill="none" stroke="#9aa66b" stroke-width="0.7"/>'),
+    # 🎪 telo di tenda visto dall'alto (2026-10-21): pelle scura a teli cuciti,
+    # le cuciture tratteggiate e un velo piu' chiaro a ogni secondo telo. Si
+    # distingue da ⬛ (tratteggio diagonale della muratura) e da 🏰.
+    "t_telo": _pattern("t_telo", 28,
+        '<rect width="28" height="28" fill="#5e4b3b"/>'
+        '<rect y="14" width="28" height="14" fill="#6a5644"/>'
+        '<path d="M0 0.6h28M0 14.3h28" stroke="#3f3227" stroke-width="1.1"/>'
+        '<path d="M0 2.4h28M0 16.1h28" stroke="#8a735c" stroke-width="0.7" '
+        'stroke-dasharray="2 1.6"/>'
+        '<circle cx="9" cy="8" r="1" fill="#544334"/>'
+        '<circle cx="21" cy="22" r="0.9" fill="#776149"/>'),
 }
 
 # ---------------------------------------------------------------------------
@@ -1307,7 +1337,7 @@ def _region_path(cells: set[tuple[int, int]], ox: int, oy: int) -> str:
     return "".join(parts)
 
 
-def _compass_svg(cx: float, cy: float, r: float, north_deg: float) -> str:
+def _compass_svg(cx: float, cy: float, r: float, north_deg: float, corpo: float = 11) -> str:
     """Compass rose; the needle/'N' point to 'north_deg' measured clockwise
     from screen-up (0 = North is up)."""
     g = [f'<g transform="translate({_n(cx)},{_n(cy)}) rotate({_n(north_deg)})">']
@@ -1319,7 +1349,7 @@ def _compass_svg(cx: float, cy: float, r: float, north_deg: float) -> str:
              f'fill="{INK_SOFT}" opacity="0.5"/>')
     g.append(f'<path d="M0 {_n(-r)}L{_n(r * 0.24)} 0L0 {_n(-r * 0.22)}'
              f'L{_n(-r * 0.24)} 0Z" fill="{INK}"/>')
-    g.append(f'<text x="0" y="{_n(-r - 6)}" font-size="11" font-weight="bold" '
+    g.append(f'<text x="0" y="{_n(-r - 6)}" font-size="{_n(corpo)}" font-weight="bold" '
              f'text-anchor="middle" fill="{INK}">N</text>')
     g.append("</g>")
     return "".join(g)
@@ -1335,9 +1365,55 @@ def _arrowhead(x1: float, y1: float, x2: float, y2: float, color: str, size: flo
             f'L{_n(p2[0])} {_n(p2[1])}Z" fill="{color}"/>')
 
 
-def render_svg(grid: dict, source_name: str, tema: str = "pergamena") -> str:
+def _testi_indicazioni(ann: dict) -> list[str]:
+    """Le righe delle INDICAZIONI, nell'ordine in cui si disegnano."""
+    testi = [f"{col_label(m['coord'][0])}{m['coord'][1]} — {m['text']}" for m in ann["marks"]]
+    for p in ann["paths"]:
+        route = " → ".join(f"{col_label(c[0])}{c[1]}" for c in p["coords"])
+        if p["loop"]:
+            route += " → (loop)"
+        testi.append(f"{p['label']}: {route}")
+    testi += [f"{col_label(z['a'][0])}{z['a'][1]}–{col_label(z['b'][0])}{z['b'][1]} — {z['text']}"
+              for z in ann["zones"]]
+    return testi
+
+
+def _etichetta(emoji: str, local_legend: dict) -> str:
+    """Il nome di un simbolo nella LEGENDA."""
+    spec = SYMBOLS.get(emoji)
+    return (spec["it"] if spec and spec["it"] else "") or local_legend.get(emoji) \
+        or "(simbolo locale — vedi legenda del file sorgente)"
+
+
+def _lettera_zona(i: int) -> str:
+    """La lettera della zona `i` nel tema stampa: minuscola, per non
+    confonderla con le colonne (A, B, … AA)."""
+    return chr(ord("a") + i) if i < 26 else f"z{i + 1}"
+
+
+def _a_capo(testo: str, caratteri: float) -> list[str]:
+    """Spezza `testo` in righe di al più `caratteri` caratteri, fra le parole."""
+    righe: list[str] = []
+    riga = ""
+    for parola in testo.split(" "):
+        if riga and len(riga) + 1 + len(parola) > caratteri:
+            righe.append(riga)
+            riga = parola
+        else:
+            riga = f"{riga} {parola}" if riga else parola
+    return righe + [riga] if riga else righe or [""]
+
+
+def render_svg(grid: dict, source_name: str, tema: str = "pergamena", parte: str = "mappa",
+               stampa: bool = False) -> str:
+    """`stampa`: il modo di stampa (LARGHEZZA_STAMPA_PT), dove `parte` è "mappa"
+    (griglia e scritte sopra) o "legenda" (indicazioni e legenda, l'altra pagina)."""
     if tema not in TEMI:
         raise ValueError(f"tema: uno di {', '.join(TEMI)}")
+    if tema == "pianta":
+        # lo stile delle piante delle città (ADR-0102): un modulo suo, stessi simboli
+        from render_map_pianta import render_pianta  # noqa: PLC0415 (importa questo modulo)
+        return render_pianta(grid, source_name, stampa, parte)
     rows = grid["rows"]
     row_nums = sorted(rows)
     n_rows = row_nums[-1] - row_nums[0] + 1
@@ -1360,6 +1436,43 @@ def render_svg(grid: dict, source_name: str, tema: str = "pergamena") -> str:
     legend_rows = math.ceil(len(used) / 2) if two_cols else len(used)
     legend_h = 18 + LEGEND_ROW_H * legend_rows
     height = ly + legend_h + 26
+
+    sola_legenda = stampa and parte == "legenda"
+    # u: px dell'SVG per punto stampato. k_leg: la scala del gruppo della legenda,
+    # disegnata con le misure di sempre, perché il suo corpo più piccolo (9,5 px,
+    # i numeri dei segnalini) esca a CORPO_STAMPA_PT.
+    u = width / LARGHEZZA_STAMPA_PT
+    k_leg = CORPO_STAMPA_PT * u / 9.5
+    leg_ox, leg_destra = ox, width - MARGIN
+    righe_ind: dict[int, list[str]] = {}
+    local_legend = grid.get("local_legend") or {}
+    ordine_leg = sorted(used, key=_legend_key)
+    n_corti = len(ordine_leg)
+    if stampa and not sola_legenda:
+        header_h = round(23 * u)
+        # oltre la Z le colonne hanno due lettere, e a 7 pt due vicine si
+        # toccano: le dispari salgono di una riga
+        oy = round(header_h + (16.5 if n_cols > 26 else 8.5) * u)
+        sb_y = round(oy + grid_h + 9 * u)
+        height = round(sb_y + 8 * u)
+    elif sola_legenda:
+        # coordinate virtuali: tutto il gruppo è scalato di k_leg
+        larga_v = width / k_leg
+        leg_ox, leg_destra = 14, larga_v - 14
+        # le voci che non entrano in mezza riga vanno in fondo, a tutta riga
+        mezza = (leg_destra - leg_ox) / 2 - 27
+        corti = [e for e in ordine_leg if len(_etichetta(e, local_legend)) * 5.5 <= mezza]
+        ordine_leg = corti + [e for e in ordine_leg if e not in corti]
+        n_corti = len(corti)
+        two_cols = n_corti > 1
+        legend_rows = math.ceil(n_corti / 2) if two_cols else n_corti
+        alto_v = 0
+        for i, t in enumerate(_testi_indicazioni(ann)):
+            righe_ind[i] = _a_capo(t, (leg_destra - leg_ox - 24) / 5.5)
+            alto_v += 15 + 13 * (len(righe_ind[i]) - 1)
+        ann_y = 30
+        ly = (ann_y + 17 + alto_v + 14) if ann_items else 30
+        height = round((ly + 18 + LEGEND_ROW_H * (legend_rows + len(used) - n_corti) + 4) * k_leg)
 
     base = _resolve_bases(rows, n_cols)
     used_pats = sorted({p for r in base.values() for p in r if p})
@@ -1506,338 +1619,380 @@ def render_svg(grid: dict, source_name: str, tema: str = "pergamena") -> str:
         f'stroke="{INK}" stroke-width="2" opacity="0.85"/>'
     )
 
-    # --- header --------------------------------------------------------------
-    title = _esc(grid["title"])
-    corpo, comprimi = _corpo_titolo(grid["title"], width - 2 * MARGIN)
-    stretto = (f' textLength="{_n(width - 2 * MARGIN)}" lengthAdjust="spacingAndGlyphs"'
-               if comprimi else "")
-    out.append(
-        f'<text x="{MARGIN}" y="34" font-size="{_n(corpo)}" font-weight="bold" '
-        f'fill="{INK}" letter-spacing="0.5"{stretto}>{title}</text>'
-    )
-    scale_m = grid.get("scale_m") or 1.5
-    scale_txt = f"{scale_m:g}".replace(".", ",")
-    out.append(
-        f'<text x="{MARGIN}" y="51" font-size="11" font-style="italic" fill="{INK_SOFT}">'
-        f'{n_cols}×{n_rows} quadretti · scala {scale_txt} m/quadretto</text>'
-    )
+    if not sola_legenda:
+        # --- header --------------------------------------------------------------
+        title = _esc(grid["title"])
+        if stampa:
+            # il titolo non scende sotto il corpo minimo: se non ci sta, si comprime
+            corpo = 9 * u
+            comprimi = _corpo_titolo(grid["title"], width - 2 * MARGIN - 24, corpo)[0] < corpo
+        else:
+            corpo, comprimi = _corpo_titolo(grid["title"], width - 2 * MARGIN)
+        stretto = (f' textLength="{_n(width - 2 * MARGIN - (24 if stampa else 0))}" lengthAdjust="spacingAndGlyphs"'
+                   if comprimi else "")
+        out.append(
+            f'<text x="{MARGIN}" y="{_n(12 * u) if stampa else 34}" font-size="{_n(corpo)}" '
+            f'font-weight="bold" fill="{INK}" letter-spacing="0.5"{stretto}>{title}</text>'
+        )
+        scale_m = grid.get("scale_m") or 1.5
+        scale_txt = f"{scale_m:g}".replace(".", ",")
+        out.append(
+            f'<text x="{MARGIN}" y="{_n(21 * u) if stampa else 51}" '
+            f'font-size="{_n(CORPO_STAMPA_PT * u) if stampa else 11}" font-style="italic" fill="{INK_SOFT}">'
+            f'{n_cols}×{n_rows} quadretti · scala {scale_txt} m/quadretto</text>'
+        )
 
-    # --- map plate -----------------------------------------------------------
-    out.append(
-        f'<rect x="{ox - 5}" y="{oy - 5}" width="{grid_w + 10}" height="{grid_h + 10}" '
-        f'fill="{PLATE}" stroke="{INK}" stroke-width="1.6"/>'
-    )
+        # --- map plate -----------------------------------------------------------
+        out.append(
+            f'<rect x="{ox - 5}" y="{oy - 5}" width="{grid_w + 10}" height="{grid_h + 10}" '
+            f'fill="{PLATE}" stroke="{INK}" stroke-width="1.6"/>'
+        )
 
-    # --- organic terrain regions ----------------------------------------------
-    out.append(f'<g clip-path="url(#clipgrid)">')
-    # light terrains (slight self-stroke overlap hides seams between regions)
-    for p in order:
-        if p in HEAVY_PATS:
-            continue
-        out.append(
-            f'<path d="{paths[p]}" fill="url(#{p})" fill-rule="evenodd" '
-            f'stroke="url(#{p})" stroke-width="2.4" stroke-linejoin="round"/>'
-        )
-    if heavy_union_d:
-        # ambient occlusion: floor darkens beside walls (inner half is
-        # covered by the wall fill drawn right after)
-        out.append(
-            f'<path d="{heavy_union_d}" fill="none" stroke="#241c10" '
-            f'stroke-width="9" opacity="0.22" filter="url(#aoblur)"/>'
-        )
-        # cast shadow, then the solids themselves
-        out.append(
-            f'<path d="{heavy_union_d}" fill="#241c10" fill-rule="evenodd" '
-            f'opacity="0.28" filter="url(#softblur)" transform="translate(2.6,3.4)"/>'
-        )
-        for p in heavy_present:
+        # --- organic terrain regions ----------------------------------------------
+        out.append(f'<g clip-path="url(#clipgrid)">')
+        # light terrains (slight self-stroke overlap hides seams between regions)
+        for p in order:
+            if p in HEAVY_PATS:
+                continue
             out.append(
                 f'<path d="{paths[p]}" fill="url(#{p})" fill-rule="evenodd" '
                 f'stroke="url(#{p})" stroke-width="2.4" stroke-linejoin="round"/>'
             )
-    # low-frequency tonal mottling breaks texture repetition
-    out.append(
-        f'<rect x="{ox}" y="{oy}" width="{grid_w}" height="{grid_h}" '
-        f'filter="url(#mottle)" opacity="0.35"/>'
-    )
-    # inked hand-drawn boundaries
-    for p in order:
-        if p in HEAVY_PATS:
-            continue
+        if heavy_union_d:
+            # ambient occlusion: floor darkens beside walls (inner half is
+            # covered by the wall fill drawn right after)
+            out.append(
+                f'<path d="{heavy_union_d}" fill="none" stroke="#241c10" '
+                f'stroke-width="9" opacity="0.22" filter="url(#aoblur)"/>'
+            )
+            # cast shadow, then the solids themselves
+            out.append(
+                f'<path d="{heavy_union_d}" fill="#241c10" fill-rule="evenodd" '
+                f'opacity="0.28" filter="url(#softblur)" transform="translate(2.6,3.4)"/>'
+            )
+            for p in heavy_present:
+                out.append(
+                    f'<path d="{paths[p]}" fill="url(#{p})" fill-rule="evenodd" '
+                    f'stroke="url(#{p})" stroke-width="2.4" stroke-linejoin="round"/>'
+                )
+        # low-frequency tonal mottling breaks texture repetition
         out.append(
-            f'<path d="{paths[p]}" fill="none" stroke="{INK_SOFT}" stroke-width="0.9" '
-            f'opacity="0.5" stroke-linejoin="round" filter="url(#rough)"/>'
+            f'<rect x="{ox}" y="{oy}" width="{grid_w}" height="{grid_h}" '
+            f'filter="url(#mottle)" opacity="0.35"/>'
         )
-    for p in heavy_present:
-        out.append(
-            f'<path d="{paths[p]}" fill="none" stroke="#241c10" stroke-width="1.8" '
-            f'opacity="0.9" stroke-linejoin="round" filter="url(#rough)"/>'
-        )
-    out.append("</g>")
-
-    # --- grid lines (thin every square, thick every 5) ------------------------
-    grid_d = "".join(
-        f"M{ox + c * CELL} {oy}v{grid_h}" for c in range(n_cols + 1) if c % 5
-    ) + "".join(
-        f"M{ox} {oy + r * CELL}h{grid_w}" for r in range(n_rows + 1) if r % 5
-    )
-    grid5_d = "".join(
-        f"M{ox + c * CELL} {oy}v{grid_h}" for c in range(0, n_cols + 1, 5)
-    ) + "".join(
-        f"M{ox} {oy + r * CELL}h{grid_w}" for r in range(0, n_rows + 1, 5)
-    )
-    out.append(f'<path d="{grid_d}" stroke="#2e2313" stroke-width="0.6" opacity="0.3" fill="none"/>')
-    out.append(f'<path d="{grid5_d}" stroke="#2e2313" stroke-width="1.4" opacity="0.48" fill="none"/>')
-    if heavy_union_d:
-        # light grid pass over dark solids, so squares stay countable there
-        out.append(
-            f'<g clip-path="url(#clipheavy)">'
-            f'<path d="{grid_d}" stroke="{PAPER}" stroke-width="0.6" opacity="0.16" fill="none"/>'
-            f'<path d="{grid5_d}" stroke="{PAPER}" stroke-width="1.4" opacity="0.26" fill="none"/>'
-            f'</g>'
-        )
-
-    # --- illustrated props and unit tokens --------------------------------------
-    # doors, grates and bars take their axis from the neighbours (ADR-0083):
-    # the glyphs are drawn for an east-west wall and turn 90° in a north-south one
-    def _at(cx_: int, ry_: int):
-        if not (0 <= ry_ < len(row_nums)) or cx_ < 0:
-            return None
-        cells_ = rows[row_nums[ry_]]
-        return cells_[cx_] if cx_ < len(cells_) else None
-    versi = chiusure.versi_dichiarati(grid.get("annotations", []) or [])
-    alone = _alone() if tema == "texture" and tex else 0.0
-    for r, rn in enumerate(row_nums):
-        cells = rows[rn]
-        for c in range(n_cols):
-            emoji = cells[c] if c < len(cells) else None
-            if emoji is None:
+        # inked hand-drawn boundaries
+        for p in order:
+            if p in HEAVY_PATS:
                 continue
-            spec = SYMBOLS.get(emoji)
-            x, y = ox + c * CELL, oy + r * CELL
-            cx, cy = x + CELL / 2, y + CELL / 2
-            if alone and not (spec and spec["mode"] == "fill"):
-                out.append(f'<circle cx="{_n(cx)}" cy="{_n(cy)}" r="{_n(CELL * 0.46)}" '
-                           f'fill="{PAPER}" opacity="{alone}" filter="url(#softblur)"/>')
-            if spec and spec["mode"] == "unit":
-                rr = CELL * 0.37
-                out.append(
-                    f'<ellipse cx="{cx + 1.4}" cy="{cy + 2.2}" rx="{rr}" ry="{rr * 0.82}" '
-                    f'fill="#241c10" opacity="0.3"/>'
-                )
-                out.append(
-                    f'<circle cx="{cx}" cy="{cy}" r="{rr}" fill="url(#{_grad_id(spec["fill"])})" '
-                    f'stroke="#241c10" stroke-width="1.6"/>'
-                )
-                out.append(
-                    f'<circle cx="{cx}" cy="{cy}" r="{rr - 2.4}" fill="none" '
-                    f'stroke="#ffffff" stroke-width="0.9" opacity="0.55"/>'
-                )
-            elif spec and spec.get("prop") and (tess := _tessera_oggetto(ogg, emoji, r, c, _cella)):
-                # la tessera porta la sua ombra: niente ellisse disegnata
-                out.append(f'<use href="#oc_{tess}" x="{x}" y="{y}" '
-                           f'width="{CELL}" height="{CELL}"/>')
-                if emoji in SOPRA_LA_TESSERA:
-                    m = CELL * 0.22
-                    out.append(f'<use href="#{SOPRA_LA_TESSERA[emoji]}" x="{_n(x + m)}" '
-                               f'y="{_n(y + m - 2)}" width="{_n(CELL - 2 * m)}" '
-                               f'height="{_n(CELL - 2 * m)}"/>')
-            elif spec and spec.get("prop"):
-                variants = VARIANTS.get(spec["prop"], [spec["prop"]])
-                prop = variants[(r * 7 + c * 13) % len(variants)]
-                ns = chiusure.e_chiusura(emoji) and chiusure.asse_da_disegnare(
-                    _at, c, r, col_label(c), rn, versi) == chiusure.NS
-                rx_, ry_ = (4.5, 9) if ns else (9, 4.5)
-                out.append(
-                    f'<ellipse cx="{cx + 1}" cy="{cy + 3}" rx="{rx_}" ry="{ry_}" '
-                    f'fill="#241c10" opacity="0.2"/>'
-                )
-                ruota = f' transform="rotate(90 {_n(cx)} {_n(cy)})"' if ns else ""
-                out.append(
-                    f'<use href="#{prop}" x="{x}" y="{y}" '
-                    f'width="{CELL}" height="{CELL}"{ruota}/>'
-                )
-            elif spec is None or spec["mode"] == "icon":
-                out.append(
-                    f'<ellipse cx="{cx}" cy="{cy + 6}" rx="7.5" ry="2.8" '
-                    f'fill="#241c10" opacity="0.14"/>'
-                )
-                if emoji in noto:
-                    out.append(f'<use href="#{noto[emoji][0]}" x="{x + 5}" y="{y + 5}" '
-                               f'width="{CELL - 10}" height="{CELL - 10}"/>')
-                else:
+            out.append(
+                f'<path d="{paths[p]}" fill="none" stroke="{INK_SOFT}" stroke-width="0.9" '
+                f'opacity="0.5" stroke-linejoin="round" filter="url(#rough)"/>'
+            )
+        for p in heavy_present:
+            out.append(
+                f'<path d="{paths[p]}" fill="none" stroke="#241c10" stroke-width="1.8" '
+                f'opacity="0.9" stroke-linejoin="round" filter="url(#rough)"/>'
+            )
+        out.append("</g>")
+
+        # --- grid lines (thin every square, thick every 5) ------------------------
+        grid_d = "".join(
+            f"M{ox + c * CELL} {oy}v{grid_h}" for c in range(n_cols + 1) if c % 5
+        ) + "".join(
+            f"M{ox} {oy + r * CELL}h{grid_w}" for r in range(n_rows + 1) if r % 5
+        )
+        grid5_d = "".join(
+            f"M{ox + c * CELL} {oy}v{grid_h}" for c in range(0, n_cols + 1, 5)
+        ) + "".join(
+            f"M{ox} {oy + r * CELL}h{grid_w}" for r in range(0, n_rows + 1, 5)
+        )
+        out.append(f'<path d="{grid_d}" stroke="#2e2313" stroke-width="0.6" opacity="0.3" fill="none"/>')
+        out.append(f'<path d="{grid5_d}" stroke="#2e2313" stroke-width="1.4" opacity="0.48" fill="none"/>')
+        if heavy_union_d:
+            # light grid pass over dark solids, so squares stay countable there
+            out.append(
+                f'<g clip-path="url(#clipheavy)">'
+                f'<path d="{grid_d}" stroke="{PAPER}" stroke-width="0.6" opacity="0.16" fill="none"/>'
+                f'<path d="{grid5_d}" stroke="{PAPER}" stroke-width="1.4" opacity="0.26" fill="none"/>'
+                f'</g>'
+            )
+
+        # --- illustrated props and unit tokens --------------------------------------
+        # doors, grates and bars take their axis from the neighbours (ADR-0083):
+        # the glyphs are drawn for an east-west wall and turn 90° in a north-south one
+        def _at(cx_: int, ry_: int):
+            if not (0 <= ry_ < len(row_nums)) or cx_ < 0:
+                return None
+            cells_ = rows[row_nums[ry_]]
+            return cells_[cx_] if cx_ < len(cells_) else None
+        versi = chiusure.versi_dichiarati(grid.get("annotations", []) or [])
+        alone = _alone() if tema == "texture" and tex else 0.0
+        for r, rn in enumerate(row_nums):
+            cells = rows[rn]
+            for c in range(n_cols):
+                emoji = cells[c] if c < len(cells) else None
+                if emoji is None:
+                    continue
+                spec = SYMBOLS.get(emoji)
+                x, y = ox + c * CELL, oy + r * CELL
+                cx, cy = x + CELL / 2, y + CELL / 2
+                if alone and not (spec and spec["mode"] == "fill"):
+                    out.append(f'<circle cx="{_n(cx)}" cy="{_n(cy)}" r="{_n(CELL * 0.46)}" '
+                               f'fill="{PAPER}" opacity="{alone}" filter="url(#softblur)"/>')
+                if spec and spec["mode"] == "unit":
+                    rr = CELL * 0.37
                     out.append(
-                        f'<text x="{cx}" y="{cy + 6}" font-size="17" '
-                        f'text-anchor="middle">{emoji}</text>'
+                        f'<ellipse cx="{cx + 1.4}" cy="{cy + 2.2}" rx="{rr}" ry="{rr * 0.82}" '
+                        f'fill="#241c10" opacity="0.3"/>'
                     )
+                    out.append(
+                        f'<circle cx="{cx}" cy="{cy}" r="{rr}" fill="url(#{_grad_id(spec["fill"])})" '
+                        f'stroke="#241c10" stroke-width="1.6"/>'
+                    )
+                    out.append(
+                        f'<circle cx="{cx}" cy="{cy}" r="{rr - 2.4}" fill="none" '
+                        f'stroke="#ffffff" stroke-width="0.9" opacity="0.55"/>'
+                    )
+                elif spec and spec.get("prop") and (tess := _tessera_oggetto(ogg, emoji, r, c, _cella)):
+                    # la tessera porta la sua ombra: niente ellisse disegnata
+                    out.append(f'<use href="#oc_{tess}" x="{x}" y="{y}" '
+                               f'width="{CELL}" height="{CELL}"/>')
+                    if emoji in SOPRA_LA_TESSERA:
+                        m = CELL * 0.22
+                        out.append(f'<use href="#{SOPRA_LA_TESSERA[emoji]}" x="{_n(x + m)}" '
+                                   f'y="{_n(y + m - 2)}" width="{_n(CELL - 2 * m)}" '
+                                   f'height="{_n(CELL - 2 * m)}"/>')
+                elif spec and spec.get("prop"):
+                    variants = VARIANTS.get(spec["prop"], [spec["prop"]])
+                    prop = variants[(r * 7 + c * 13) % len(variants)]
+                    ns = chiusure.e_chiusura(emoji) and chiusure.asse_da_disegnare(
+                        _at, c, r, col_label(c), rn, versi) == chiusure.NS
+                    rx_, ry_ = (4.5, 9) if ns else (9, 4.5)
+                    out.append(
+                        f'<ellipse cx="{cx + 1}" cy="{cy + 3}" rx="{rx_}" ry="{ry_}" '
+                        f'fill="#241c10" opacity="0.2"/>'
+                    )
+                    ruota = f' transform="rotate(90 {_n(cx)} {_n(cy)})"' if ns else ""
+                    out.append(
+                        f'<use href="#{prop}" x="{x}" y="{y}" '
+                        f'width="{CELL}" height="{CELL}"{ruota}/>'
+                    )
+                elif spec is None or spec["mode"] == "icon":
+                    out.append(
+                        f'<ellipse cx="{cx}" cy="{cy + 6}" rx="7.5" ry="2.8" '
+                        f'fill="#241c10" opacity="0.14"/>'
+                    )
+                    if emoji in noto:
+                        out.append(f'<use href="#{noto[emoji][0]}" x="{x + 5}" y="{y + 5}" '
+                                   f'width="{CELL - 10}" height="{CELL - 10}"/>')
+                    else:
+                        out.append(
+                            f'<text x="{cx}" y="{cy + 6}" font-size="17" '
+                            f'text-anchor="middle">{emoji}</text>'
+                        )
 
-    # --- coordinates ------------------------------------------------------------
-    for c in range(n_cols):
+        # --- coordinates ------------------------------------------------------------
+        c_coord = _n(CORPO_STAMPA_PT * u) if stampa else "10"
+        for c in range(n_cols):
+            out.append(
+                f'<text x="{ox + c * CELL + CELL / 2}" '
+                f'y="{_n(oy - (10.5 if n_cols > 26 and c % 2 else 2.5) * u) if stampa else oy - 8}" '
+                f'font-size="{c_coord}" text-anchor="middle" fill="{INK_SOFT}">{col_label(c)}</text>'
+            )
+        filled = grid.get("filled", set())
+        for r, rn in enumerate(row_nums):
+            color = "#b1a184" if rn in filled else INK_SOFT
+            y_r = oy + r * CELL + CELL / 2
+            out.append(
+                f'<text x="{ox - (4 if stampa else 9)}" '
+                f'y="{_n(y_r + 0.36 * CORPO_STAMPA_PT * u) if stampa else oy + r * CELL + CELL / 2 + 3}" '
+                f'font-size="{c_coord}" text-anchor="end" fill="{color}">{rn:02d}</text>'
+            )
+
+        # --- annotation overlay: zones, movement routes, numbered callouts ----------
+        row_min = row_nums[0]
+
+        def _cc(cell):  # (col, printed_row) -> pixel center
+            cx0, rn = cell
+            return ox + cx0 * CELL + CELL / 2, oy + (rn - row_min) * CELL + CELL / 2
+
+        # zones first (under routes/marks)
+        for iz, z in enumerate(ann["zones"]):
+            (ax, ay0), (bx, by0) = z["a"], z["b"]
+            x0 = ox + min(ax, bx) * CELL
+            y0 = oy + (min(ay0, by0) - row_min) * CELL
+            w = (abs(bx - ax) + 1) * CELL
+            h = (abs(by0 - ay0) + 1) * CELL
+            out.append(
+                f'<rect x="{_n(x0)}" y="{_n(y0)}" width="{_n(w)}" height="{_n(h)}" '
+                f'rx="4" fill="none" stroke="#2c2313" stroke-width="1.6" '
+                f'stroke-dasharray="5 4" opacity="0.75"/>'
+            )
+            if stampa:
+                # in stampa la zona porta solo la sua lettera: il testo è nella legenda
+                cz = CORPO_STAMPA_PT * u
+                out.append(f'<rect x="{_n(x0 + 2)}" y="{_n(y0 + 2)}" width="{_n(cz * 0.9)}" '
+                           f'height="{_n(cz * 1.05)}" rx="2" fill="{PAPER}" opacity="0.88"/>')
+                out.append(f'<text x="{_n(x0 + 2 + cz * 0.45)}" y="{_n(y0 + 2 + cz * 0.8)}" '
+                           f'font-size="{_n(cz)}" font-style="italic" text-anchor="middle" '
+                           f'fill="#2c2313">{_lettera_zona(iz)}</text>')
+            else:
+                out.append(
+                    f'<text x="{_n(x0 + 4)}" y="{_n(y0 + 13)}" font-size="10.5" '
+                    f'font-weight="bold" fill="#2c2313">{_esc(z["text"])}</text>'
+                )
+
+        # movement routes (dashed, arrowhead, start dot, label near start)
+        for p in ann["paths"]:
+            pts = [_cc(c) for c in p["coords"]]
+            if p["loop"]:
+                pts = pts + [pts[0]]
+            d = "M" + "L".join(f"{_n(x)} {_n(y)}" for x, y in pts)
+            out.append(
+                f'<path d="{d}" fill="none" stroke="#ffffff" stroke-width="3.6" '
+                f'opacity="0.55" stroke-linejoin="round" stroke-linecap="round"/>'
+            )
+            out.append(
+                f'<path d="{d}" fill="none" stroke="{p["color"]}" stroke-width="2" '
+                f'stroke-dasharray="7 4" stroke-linejoin="round" stroke-linecap="round"/>'
+            )
+            (sx, sy) = pts[0]
+            out.append(f'<circle cx="{_n(sx)}" cy="{_n(sy)}" r="3.4" fill="{p["color"]}" '
+                       f'stroke="#ffffff" stroke-width="1"/>')
+            (x1, y1), (x2, y2) = pts[-2], pts[-1]
+            out.append(_arrowhead(x1, y1, x2, y2, p["color"]))
+
+        # numbered callouts (badge at cell corner)
+        for m in ann["marks"]:
+            cx, cy = _cc(m["coord"])
+            bx, by = cx + CELL * 0.30, cy - CELL * 0.30
+            cm = CORPO_STAMPA_PT * u if stampa else 9.5
+            out.append(f'<circle cx="{_n(bx)}" cy="{_n(by)}" r="{_n(cm * 0.68) if stampa else 7}" '
+                       f'fill="#1a140a" stroke="#ffffff" stroke-width="1.1"/>')
+            out.append(f'<text x="{_n(bx)}" y="{_n(by + (cm * 0.36 if stampa else 3.4))}" font-size="{_n(cm)}" '
+                       f'font-weight="bold" text-anchor="middle" fill="#fff">'
+                       f'{_esc(str(m["n"]))}</text>')
+
+        # compass rose (always), top-right inside the map plate
+        if stampa:
+            out.append(_compass_svg(ox + grid_w - 26, oy + 34, 15, ann["north"],
+                                    CORPO_STAMPA_PT * u))
+        else:
+            out.append(_compass_svg(ox + grid_w - 22, oy + 22, 15, ann["north"]))
+
+        # --- scale bar (5 squares = 7,5 m, alternating cartographic segments) -------
+        for i in range(5):
+            fill = INK if i % 2 == 0 else PAPER
+            out.append(
+                f'<rect x="{ox + i * CELL}" y="{sb_y - 5}" width="{CELL}" height="7" '
+                f'fill="{fill}" stroke="{INK}" stroke-width="1"/>'
+            )
+        bar_m = f"{5 * scale_m:g}".replace(".", ",")
         out.append(
-            f'<text x="{ox + c * CELL + CELL / 2}" y="{oy - 8}" font-size="10" '
-            f'text-anchor="middle" fill="{INK_SOFT}">{col_label(c)}</text>'
+            f'<text x="{ox + 5 * CELL + 10}" y="{_n(sb_y + 0.3 * CORPO_STAMPA_PT * u) if stampa else sb_y + 3}" '
+            f'font-size="{_n(CORPO_STAMPA_PT * u) if stampa else 11}" '
+            f'fill="{INK}">{bar_m} m (5 quadretti)</text>'
         )
-    filled = grid.get("filled", set())
-    for r, rn in enumerate(row_nums):
-        color = "#b1a184" if rn in filled else INK_SOFT
-        out.append(
-            f'<text x="{ox - 9}" y="{oy + r * CELL + CELL / 2 + 3}" font-size="10" '
-            f'text-anchor="end" fill="{color}">{rn:02d}</text>'
-        )
-
-    # --- annotation overlay: zones, movement routes, numbered callouts ----------
-    row_min = row_nums[0]
-
-    def _cc(cell):  # (col, printed_row) -> pixel center
-        cx0, rn = cell
-        return ox + cx0 * CELL + CELL / 2, oy + (rn - row_min) * CELL + CELL / 2
-
-    # zones first (under routes/marks)
-    for z in ann["zones"]:
-        (ax, ay0), (bx, by0) = z["a"], z["b"]
-        x0 = ox + min(ax, bx) * CELL
-        y0 = oy + (min(ay0, by0) - row_min) * CELL
-        w = (abs(bx - ax) + 1) * CELL
-        h = (abs(by0 - ay0) + 1) * CELL
-        out.append(
-            f'<rect x="{_n(x0)}" y="{_n(y0)}" width="{_n(w)}" height="{_n(h)}" '
-            f'rx="4" fill="none" stroke="#2c2313" stroke-width="1.6" '
-            f'stroke-dasharray="5 4" opacity="0.75"/>'
-        )
-        out.append(
-            f'<text x="{_n(x0 + 4)}" y="{_n(y0 + 13)}" font-size="10.5" '
-            f'font-weight="bold" fill="#2c2313">{_esc(z["text"])}</text>'
-        )
-
-    # movement routes (dashed, arrowhead, start dot, label near start)
-    for p in ann["paths"]:
-        pts = [_cc(c) for c in p["coords"]]
-        if p["loop"]:
-            pts = pts + [pts[0]]
-        d = "M" + "L".join(f"{_n(x)} {_n(y)}" for x, y in pts)
-        out.append(
-            f'<path d="{d}" fill="none" stroke="#ffffff" stroke-width="3.6" '
-            f'opacity="0.55" stroke-linejoin="round" stroke-linecap="round"/>'
-        )
-        out.append(
-            f'<path d="{d}" fill="none" stroke="{p["color"]}" stroke-width="2" '
-            f'stroke-dasharray="7 4" stroke-linejoin="round" stroke-linecap="round"/>'
-        )
-        (sx, sy) = pts[0]
-        out.append(f'<circle cx="{_n(sx)}" cy="{_n(sy)}" r="3.4" fill="{p["color"]}" '
-                   f'stroke="#ffffff" stroke-width="1"/>')
-        (x1, y1), (x2, y2) = pts[-2], pts[-1]
-        out.append(_arrowhead(x1, y1, x2, y2, p["color"]))
-
-    # numbered callouts (badge at cell corner)
-    for m in ann["marks"]:
-        cx, cy = _cc(m["coord"])
-        bx, by = cx + CELL * 0.30, cy - CELL * 0.30
-        out.append(f'<circle cx="{_n(bx)}" cy="{_n(by)}" r="7" fill="#1a140a" '
-                   f'stroke="#ffffff" stroke-width="1.1"/>')
-        out.append(f'<text x="{_n(bx)}" y="{_n(by + 3.4)}" font-size="9.5" '
-                   f'font-weight="bold" text-anchor="middle" fill="#fff">'
-                   f'{_esc(str(m["n"]))}</text>')
-
-    # compass rose (always), top-right inside the map plate
-    out.append(_compass_svg(ox + grid_w - 22, oy + 22, 15, ann["north"]))
-
-    # --- scale bar (5 squares = 7,5 m, alternating cartographic segments) -------
-    for i in range(5):
-        fill = INK if i % 2 == 0 else PAPER
-        out.append(
-            f'<rect x="{ox + i * CELL}" y="{sb_y - 5}" width="{CELL}" height="7" '
-            f'fill="{fill}" stroke="{INK}" stroke-width="1"/>'
-        )
-    bar_m = f"{5 * scale_m:g}".replace(".", ",")
-    out.append(
-        f'<text x="{ox + 5 * CELL + 10}" y="{sb_y + 3}" font-size="11" '
-        f'fill="{INK}">{bar_m} m (5 quadretti)</text>'
-    )
 
     # --- indications legend (movements / callouts / zones) ----------------------
-    if ann_items:
+    if sola_legenda:
+        ox = leg_ox
+        out.append(f'<g transform="scale({_n(k_leg)})">')
+    destra = leg_destra
+    disegna_legende = sola_legenda or not stampa
+    n_voce = 0
+
+    def _righe(testo: str, x: float, y: float) -> float:
+        """Scrive una voce delle INDICAZIONI (a capo solo nel tema stampa) e
+        dice di quanto scende la voce dopo."""
+        righe = righe_ind.get(n_voce) or [testo]
+        for j, riga in enumerate(righe):
+            out.append(f'<text x="{x}" y="{_n(y + 13 * j)}" font-size="11" fill="{INK}">'
+                       f'{_esc(riga)}</text>')
+        return 15 + 13 * (len(righe) - 1)
+
+    testi_ind = _testi_indicazioni(ann)
+    if ann_items and disegna_legende:
         out.append(
             f'<text x="{ox}" y="{ann_y}" font-size="12" font-weight="bold" '
             f'fill="{INK}" letter-spacing="2">INDICAZIONI</text>'
         )
         out.append(
-            f'<path d="M{ox + 96} {ann_y - 4}H{width - MARGIN}" stroke="{INK_SOFT}" '
+            f'<path d="M{ox + 96} {ann_y - 4}H{_n(destra)}" stroke="{INK_SOFT}" '
             f'stroke-width="0.7" opacity="0.7"/>'
         )
         ey = ann_y + 17
         for m in ann["marks"]:
-            cx0, rn = m["coord"]
-            coord_lbl = f"{col_label(cx0)}{rn}"
             out.append(f'<circle cx="{ox + 8}" cy="{ey - 4}" r="7" fill="#1a140a" '
                        f'stroke="#fff" stroke-width="1"/>')
             out.append(f'<text x="{ox + 8}" y="{ey - 0.6}" font-size="9.5" '
                        f'font-weight="bold" text-anchor="middle" fill="#fff">'
                        f'{_esc(str(m["n"]))}</text>')
-            out.append(f'<text x="{ox + 22}" y="{ey}" font-size="11" fill="{INK}">'
-                       f'{coord_lbl} — {_esc(m["text"])}</text>')
-            ey += 15
+            ey += _righe(testi_ind[n_voce], ox + 22, ey)
+            n_voce += 1
         for p in ann["paths"]:
             out.append(f'<line x1="{ox}" y1="{ey - 4}" x2="{ox + 16}" y2="{ey - 4}" '
                        f'stroke="{p["color"]}" stroke-width="2" stroke-dasharray="6 3"/>')
             out.append(_arrowhead(ox + 10, ey - 4, ox + 18, ey - 4, p["color"], 5))
-            route = " → ".join(f"{col_label(c[0])}{c[1]}" for c in p["coords"])
-            if p["loop"]:
-                route += " → (loop)"
-            out.append(f'<text x="{ox + 24}" y="{ey}" font-size="11" fill="{INK}">'
-                       f'{_esc(p["label"])}: {route}</text>')
-            ey += 15
-        for z in ann["zones"]:
+            ey += _righe(testi_ind[n_voce], ox + 24, ey)
+            n_voce += 1
+        for iz, z in enumerate(ann["zones"]):
             out.append(f'<rect x="{ox}" y="{ey - 11}" width="15" height="12" rx="2" '
                        f'fill="none" stroke="#2c2313" stroke-width="1.4" '
                        f'stroke-dasharray="4 3"/>')
-            za = f"{col_label(z['a'][0])}{z['a'][1]}"
-            zb = f"{col_label(z['b'][0])}{z['b'][1]}"
-            out.append(f'<text x="{ox + 22}" y="{ey}" font-size="11" fill="{INK}">'
-                       f'{za}–{zb} — {_esc(z["text"])}</text>')
-            ey += 15
+            if stampa:
+                out.append(f'<text x="{ox + 7.5}" y="{ey - 1.6}" font-size="9.5" font-style="italic" '
+                           f'text-anchor="middle" fill="#2c2313">{_lettera_zona(iz)}</text>')
+            ey += _righe(testi_ind[n_voce], ox + 22, ey)
+            n_voce += 1
 
     # --- legend -------------------------------------------------------------------
-    out.append(
-        f'<text x="{ox}" y="{ly}" font-size="12" font-weight="bold" fill="{INK}" '
-        f'letter-spacing="2">LEGENDA</text>'
-    )
-    out.append(
-        f'<path d="M{ox + 74} {ly - 4}H{width - MARGIN}" stroke="{INK_SOFT}" '
-        f'stroke-width="0.7" opacity="0.7"/>'
-    )
-    col_w = (width - 2 * MARGIN) / 2 if two_cols else width - 2 * MARGIN
-    local_legend = grid.get("local_legend") or {}
-    for i, emoji in enumerate(sorted(used, key=_legend_key)):
-        spec = SYMBOLS.get(emoji)
-        label = (spec["it"] if spec and spec["it"] else "") or local_legend.get(emoji) \
-            or "(simbolo locale — vedi legenda del file sorgente)"
-        col = i // legend_rows if two_cols else 0
-        row_i = i % legend_rows if two_cols else i
-        lx = ox + col * col_w
-        y = ly + 18 + row_i * LEGEND_ROW_H
-        if spec and spec["mode"] == "unit":
-            out.append(
-                f'<circle cx="{lx + 9}" cy="{y - 4}" r="7.5" '
-                f'fill="url(#{_grad_id(spec["fill"])})" stroke="#241c10" stroke-width="1.2"/>'
-            )
-        elif spec and spec["mode"] == "fill":
-            out.append(
-                f'<rect x="{lx}" y="{y - 12}" width="19" height="15" fill="url(#{spec["pat"]})" '
-                f'stroke="{INK_SOFT}" stroke-width="0.7"/>'
-            )
-        elif spec and spec.get("prop") and ogg and emoji in ogg[0]:
-            out.append(f'<use href="#oc_{ogg[0][emoji][0]}" x="{lx - 1}" y="{y - 14}" '
-                       f'width="20" height="20"/>')
-        elif spec and spec.get("prop"):
-            out.append(
-                f'<use href="#{spec["prop"]}" x="{lx}" y="{y - 13}" width="18" height="18"/>'
-            )
-        elif emoji in noto:
-            out.append(f'<use href="#{noto[emoji][0]}" x="{lx + 1}" y="{y - 13}" width="17" height="17"/>')
-        else:
-            out.append(f'<text x="{lx}" y="{y}" font-size="14">{emoji}</text>')
-        out.append(f'<text x="{lx + 27}" y="{y}" font-size="11" fill="{INK}">{emoji} — {label}</text>')
+    if disegna_legende:
+        out.append(
+            f'<text x="{ox}" y="{ly}" font-size="12" font-weight="bold" fill="{INK}" '
+            f'letter-spacing="2">LEGENDA</text>'
+        )
+        out.append(
+            f'<path d="M{ox + 74} {ly - 4}H{_n(destra)}" stroke="{INK_SOFT}" '
+            f'stroke-width="0.7" opacity="0.7"/>'
+        )
+        col_w = (destra - ox) / 2 if two_cols else destra - ox
+        for i, emoji in enumerate(ordine_leg):
+            spec = SYMBOLS.get(emoji)
+            label = _etichetta(emoji, local_legend)
+            if i < n_corti:
+                col = i // legend_rows if two_cols else 0
+                row_i = i % legend_rows if two_cols else i
+            else:
+                col, row_i = 0, legend_rows + i - n_corti
+            lx = ox + col * col_w
+            y = ly + 18 + row_i * LEGEND_ROW_H
+            if spec and spec["mode"] == "unit":
+                out.append(
+                    f'<circle cx="{lx + 9}" cy="{y - 4}" r="7.5" '
+                    f'fill="url(#{_grad_id(spec["fill"])})" stroke="#241c10" stroke-width="1.2"/>'
+                )
+            elif spec and spec["mode"] == "fill":
+                out.append(
+                    f'<rect x="{lx}" y="{y - 12}" width="19" height="15" fill="url(#{spec["pat"]})" '
+                    f'stroke="{INK_SOFT}" stroke-width="0.7"/>'
+                )
+            elif spec and spec.get("prop") and ogg and emoji in ogg[0]:
+                out.append(f'<use href="#oc_{ogg[0][emoji][0]}" x="{lx - 1}" y="{y - 14}" '
+                           f'width="20" height="20"/>')
+            elif spec and spec.get("prop"):
+                out.append(
+                    f'<use href="#{spec["prop"]}" x="{lx}" y="{y - 13}" width="18" height="18"/>'
+                )
+            elif emoji in noto:
+                out.append(f'<use href="#{noto[emoji][0]}" x="{lx + 1}" y="{y - 13}" width="17" height="17"/>')
+            else:
+                out.append(f'<text x="{lx}" y="{y}" font-size="14">{emoji}</text>')
+            # in stampa l'emoji esce come un quadratino vuoto: basta il disegno a sinistra
+            voce = label if stampa else f"{emoji} — {label}"
+            out.append(f'<text x="{lx + 27}" y="{y}" font-size="11" fill="{INK}">{voce}</text>')
+    if sola_legenda:
+        out.append("</g>")
 
     # --- provenienza -----------------------------------------------------------------
     # Un commento e non un testo: chi apre il file la legge, la stampa no. Era
@@ -1849,6 +2004,12 @@ def render_svg(grid: dict, source_name: str, tema: str = "pergamena") -> str:
     )
 
     out.append("</svg>")
+    if stampa:
+        # Niente filtri (vedi LARGHEZZA_STAMPA_PT): la grana della carta, la
+        # marezzatura e l'occlusione se ne vanno, ombre e bordi restano netti.
+        # Via anche la vignettatura: Typst ne fa due strati raster a 72 dpi.
+        out = [r for r in out if not any(f"url(#{f})" in r for f in ("mottle", "aoblur", "vign"))]
+        out = [re.sub(r' filter="url\(#\w+\)"', "", r) for r in out]
     return "\n".join(out)
 
 
@@ -1856,21 +2017,29 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("files", nargs="*", help="markdown file(s) containing emoji-grid maps")
     ap.add_argument("--tutti-i-master", action="store_true",
-                    help="ogni master che ha gia' un SVG in rendered/ (per rifare un tema intero)")
+                    help="ogni master che ha gia' un SVG in rendered/ (per rifare un tema intero); "
+                         "col tema pianta solo le cartelle che hanno adottato rendered-pianta/, "
+                         "tranne in --stampa, che vale per tutte (ADR-0106)")
     ap.add_argument("-o", "--outdir", help="output directory (default: rendered/ next to input)")
     ap.add_argument("--map", type=int, help="render only map #N (1-based) of each file")
     ap.add_argument("--list", action="store_true", help="list maps found, render nothing")
     ap.add_argument("--strict", action="store_true",
                     help="fail if declared header dims (N col × M righe) don't match parsed cells")
     ap.add_argument("--tema", choices=TEMI, default="pergamena",
-                    help="pergamena (default, in rendered/) o texture: terreni con le texture "
-                         "CC0 di scripts/texture-cc0/, in rendered-texture/")
+                    help="pergamena (default, in rendered/); texture: terreni con le texture "
+                         "CC0 di scripts/texture-cc0/, in rendered-texture/; pianta: lo stile "
+                         "delle piante delle città (ADR-0102), in rendered-pianta/")
+    ap.add_argument("--stampa", action="store_true",
+                    help="modo stampa del tema: scritte in punti per il booklet A4, mappa e "
+                         "legenda in due SVG, in rendered-stampa-<tema>/ (GUIDA-MAPPE §5.5)")
     args = ap.parse_args()
     if args.tutti_i_master:
         radice = Path(__file__).resolve().parent.parent
         args.files = sorted({str(p.parent.parent / f"{p.name.split('_map')[0]}.md")
                              for p in radice.glob("**/rendered/*_map[0-9][0-9]_*.svg")
-                             if (p.parent.parent / f"{p.name.split('_map')[0]}.md").exists()})
+                             if (p.parent.parent / f"{p.name.split('_map')[0]}.md").exists()
+                             and (args.tema != "pianta" or args.stampa
+                                  or (p.parent.parent / CARTELLA_TEMA["pianta"]).is_dir())})
     if not args.files:
         ap.error("indica i file, oppure --tutti-i-master")
     if args.tema == "texture" and not _texture_cc0():
@@ -1907,15 +2076,23 @@ def main() -> int:
                 n_cols = max(len(c) for c in rows.values())
                 print(f"  {i:2d}. {g['title']}  ({n_cols}×{len(rows)} celle)")
             continue
-        outdir = Path(args.outdir) if args.outdir else path.parent / CARTELLA_TEMA[args.tema]
+        outdir = Path(args.outdir) if args.outdir else path.parent / (
+            cartella_stampa(args.tema) if args.stampa else CARTELLA_TEMA[args.tema])
         outdir.mkdir(parents=True, exist_ok=True)
         for i, g in enumerate(maps, 1):
             if args.map and i != args.map:
                 continue
             name = f"{path.stem}_map{i:02d}_{nome_mappa(g['title'])}.svg"
-            (outdir / name).write_text(render_svg(g, path.name, args.tema), encoding="utf-8")
+            (outdir / name).write_text(render_svg(g, path.name, args.tema, stampa=args.stampa),
+                                       encoding="utf-8")
             print(f"✓ {outdir / name}")
             total += 1
+            if args.stampa:
+                leg = name.removesuffix(".svg") + "_legenda.svg"
+                (outdir / leg).write_text(render_svg(g, path.name, args.tema, "legenda", True),
+                                          encoding="utf-8")
+                print(f"✓ {outdir / leg}")
+                total += 1
     if not args.list:
         print(f"Totale: {total} SVG generati")
     if args.strict and dim_errors:

@@ -56,6 +56,7 @@ scheda che non elenca i suoi talenti non si giudica sul +4 dell'iniziativa.
     python3 scripts/conformita_statblocchi.py              # rapporto per file
     python3 scripts/conformita_statblocchi.py --riepilogo  # solo i conti
     python3 scripts/conformita_statblocchi.py --json       # per chi elabora
+    python3 scripts/conformita_statblocchi.py --master [FILE ...]  # i master, solo rapporto
 """
 from __future__ import annotations
 
@@ -374,7 +375,7 @@ def riepilogo(giudizi: "list[dict]") -> dict:
 # ---------------------------------------------------------------------------
 #: La marca delle righe `pf-dado` riscritte da qui: specifica, come quella di
 #: genera_attributi, perche' un secondo giro deve riconoscerle.
-MARCA_PF = "> [INFERRED — needs DM confirmation] `pf-dado` "
+MARCA_PF = "> [GENERATO] `pf-dado` "
 AFFIDABILI = ("trascritte", "copiate", "a mano")
 
 
@@ -571,6 +572,126 @@ def controlla_pf_dado() -> "list[str]":
     return problemi
 
 
+# ---------------------------------------------------------------------------
+# Gli statblocchi scritti nei master (D7 di MASTER-DEF, 2026-10-18)
+# ---------------------------------------------------------------------------
+#: Nel giro su ARC-07 sei delle nove discrepanze con l'SRD erano aritmetica
+#: (CA, pf, lotta) dentro i master, dove questo controllo non guardava. I master
+#: scrivono lo statblocco nella forma `**Campo:** valore`, non in quella del
+#: Bestiario, quindi qui si leggono solo i quattro conti che non chiedono la
+#: composizione delle classi. E' un **rapporto**: segnala, non blocca la CI,
+#: perche' i master hanno proprietari diversi (ARC-07 e' di un altro thread).
+CAMPO_MASTER = re.compile(r"^\*\*(Caratteristiche|Iniziativa|CA|PF|Attacco Base|Lotta|Talenti):\*\*\s*(.*)$")
+TITOLO = re.compile(r"^#{2,6}\s+(.+?)\s*$")
+DADI = re.compile(r"(\d+)d(\d+)")
+#: Il modificatore speciale di taglia per la lotta (SRD, Combat II), letto dal
+#: modificatore di taglia alla CA: Piccola +1 → −4, Grande −1 → +4, Enorme −2 → +8,
+#: Mastodontica −4 → +12, Colossale −8 → +16.
+LOTTA_DA_CA = {1: -4, 2: -8, 4: -12, 0: 0, -1: 4, -2: 8, -4: 12, -8: 16}
+
+
+def _blocchi_del_master(testo: str):
+    """Ogni gruppo di righe `**Campo:**` contigue (fino a 40 righe) che ha almeno pf e CA."""
+    righe = testo.split("\n")
+    titolo, blocco = "", None
+    for n, r in enumerate(righe, 1):
+        t = TITOLO.match(r)
+        if t:
+            if blocco and "PF" in blocco["campi"]:
+                yield blocco
+            titolo, blocco = re.sub(r"[*#]", "", t.group(1)).strip(), None
+            continue
+        m = CAMPO_MASTER.match(r.strip())
+        if not m:
+            continue
+        nome, valore = m.groups()
+        if blocco is None or nome in blocco["campi"] or n - blocco["ultima"] > 40:
+            if blocco and "PF" in blocco["campi"]:
+                yield blocco
+            blocco = {"titolo": titolo, "riga": n, "campi": {}, "ultima": n}
+        blocco["campi"][nome] = (n, valore)
+        blocco["ultima"] = n
+    if blocco and "PF" in blocco["campi"]:
+        yield blocco
+
+
+def _mod_caratteristica(car: str, quale: str) -> "int | None":
+    m = re.search(quale + r"\s+(\d+)", car)
+    return mod(int(m.group(1))) if m else None
+
+
+def conti_del_master(blocco: dict) -> "list[dict]":
+    c = {k: v[1] for k, v in blocco["campi"].items()}
+    fuori = []
+
+    def scarto(campo, scritto, atteso, nota=""):
+        fuori.append({"campo": campo, "riga": blocco["campi"][campo][0],
+                      "scritto": scritto, "atteso": atteso, "nota": nota})
+
+    # pf: la media dei dadi, arrotondata in basso sul totale, piu' il bonus
+    m = re.match(r"\s*(\d+)\s*\(([^)]*)\)", c.get("PF", ""))
+    if m:
+        dentro = m.group(2).split(";")[-1]
+        dadi = DADI.findall(dentro)
+        bonus = re.search(r"\d+d\d+\s*([+-]\s*\d+)\s*$", dentro.strip())
+        if dadi and (bonus or re.fullmatch(r"[\dd+\s]+", dentro.strip())):
+            media = math.floor(sum(int(n) * (int(f) + 1) / 2 for n, f in dadi))
+            atteso = media + (int(bonus.group(1).replace(" ", "")) if bonus else 0)
+            if atteso != int(m.group(1)):
+                scarto("PF", int(m.group(1)), atteso, f"media dei dadi {media}")
+    # CA: 10 piu' le voci fra parentesi, se la parentesi le elenca
+    m = re.match(r"\s*(\d+)\s*\(([^)]*)\)", c.get("CA", ""))
+    taglia_ca = 0
+    if m and not re.search(r"forma|con \*", m.group(2)):
+        # una voce e' un numero col segno seguito dal suo nome («+6 giaco di
+        # maglia +2»: il +2 e' il potenziamento, gia' dentro il +6)
+        voci = re.findall(r"([+-]\s*\d+)\s+[^\W\d_]", m.group(2).replace("−", "-"))
+        tg = re.search(r"([+-]\d+)\s*taglia", m.group(2).replace("−", "-"))
+        taglia_ca = int(tg.group(1)) if tg else 0
+        if voci:
+            atteso = 10 + sum(int(v.replace(" ", "")) for v in voci)
+            if atteso != int(m.group(1)):
+                scarto("CA", int(m.group(1)), atteso, "10 più le voci fra parentesi")
+    car = c.get("Caratteristiche", "")
+    # iniziativa: mod Des, +4 con Iniziativa Migliorata (solo se i talenti sono scritti)
+    m = re.match(r"\s*([+-]\d+)", c.get("Iniziativa", ""))
+    des = _mod_caratteristica(car, "Des")
+    if m and des is not None and "Talenti" in c:
+        atteso = des + (4 if re.search(r"Iniziativa Migliorata|Improved Initiative", c["Talenti"]) else 0)
+        if int(m.group(1)) < atteso:
+            scarto("Iniziativa", int(m.group(1)), atteso, "mod Des, +4 con Iniziativa Migliorata")
+    # lotta: BAB + mod For + taglia
+    mb = re.match(r"\s*\+?(\d+)", c.get("Attacco Base", ""))
+    ml = re.match(r"\s*([+-]\d+)", c.get("Lotta", ""))
+    forza = _mod_caratteristica(car, "For")
+    if mb and ml and forza is not None and taglia_ca in LOTTA_DA_CA:
+        atteso = int(mb.group(1)) + forza + LOTTA_DA_CA[taglia_ca]
+        if int(ml.group(1)) != atteso:
+            scarto("Lotta", int(ml.group(1)), atteso, "BAB + For + taglia")
+    return fuori
+
+
+def rapporto_master(files: "list[Path]") -> "list[dict]":
+    esito = []
+    for p in files:
+        testo = p.read_text(encoding="utf-8", errors="replace")
+        for b in _blocchi_del_master(testo):
+            for x in conti_del_master(b):
+                percorso = p.relative_to(ROOT) if p.is_relative_to(ROOT) else p
+                esito.append({"file": str(percorso), "titolo": b["titolo"], **x})
+    return esito
+
+
+def master_di_default() -> "list[Path]":
+    fuori = []
+    for p in sorted(ROOT.glob("0[0-9]_*/*.md")):
+        if "_ARCHIVIO" in p.parts:
+            continue
+        if "DEF-" in p.name or p.parent.name.startswith("08_"):
+            fuori.append(p)
+    return fuori
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--riepilogo", action="store_true")
@@ -581,7 +702,22 @@ def main(argv=None) -> int:
                     help="come sopra, ma stampa senza scrivere")
     ap.add_argument("--check", action="store_true",
                     help="gate: ogni `pf-dado` registra i dadi vita, e quelli riscritti tornano")
+    ap.add_argument("--master", nargs="*", metavar="FILE",
+                    help="rapporto sugli statblocchi scritti nei master (default: i DEF e ARC-08); "
+                         "non e' un cancello, esce sempre 0")
     args = ap.parse_args(argv)
+    if args.master is not None:
+        files = [Path(f).resolve() for f in args.master] or master_di_default()
+        r = rapporto_master(files)
+        if args.json:
+            print(json.dumps(r, ensure_ascii=False, indent=1))
+            return 0
+        for x in r:
+            print(f"  {x['file']}:{x['riga']} [{x['titolo'][:50]}] {x['campo']} "
+                  f"{x['scritto']} ≠ {x['atteso']} ({x['nota']})")
+        print(f"STATBLOCCHI NEI MASTER — {len(files)} file, {len(r)} conti che non tornano "
+              "(rapporto, non cancello: D7 di MASTER-DEF)")
+        return 0
     if args.check:
         problemi = controlla_pf_dado()
         for x in problemi:

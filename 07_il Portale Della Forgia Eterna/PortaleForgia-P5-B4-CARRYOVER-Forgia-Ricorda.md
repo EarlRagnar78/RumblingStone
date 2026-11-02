@@ -2,9 +2,9 @@
 ## Ponte meccanico P5 (duello con Skullcrusher, ≈372 DR) → ARC-08 (Fauci di Palude, 1372 DR)
 
 > **Stato (B4)**: ⭐ deliverable cross-arc più importante dell'arco. Traduce
-> l'**esito del duello con Skullcrusher** (P5 fast-play, Scena 5) in un
+> l'**esito del duello con Skullcrusher** (oggi `ARC07-DEF-4`, Scena 11; nel vecchio P5 fast-play era la Scena 5) in un
 > **effetto quantificato** sullo statblock di **Fauci di Palude** nell'ARC-08
-> (GS 15, 312 PF)<!-- apparato -->, `08_.../00_Schede_dei_Personaggi_Unità_e_Regolamento_di_Battaglia.md`.
+> (GS 15, 337 PF)<!-- apparato -->, `08_.../00_Schede_dei_Personaggi_Unità_e_Regolamento_di_Battaglia.md`.
 > Chiude il task **ARC-08 A12**<!-- /apparato -->.
 >
 > **Fonte narrativa**: Moradin, P5-DEFINITIVO-PARTE2 r.290 — *«Ogni ferita che
@@ -20,20 +20,22 @@
 
 ## 1. INPUT DAL P5 (cosa registra il fast-play)
 
-Dalla **Scena 5** del duello si registrano due dati:
+Dalla **Scena 11 di `ARC07-DEF-4`**, il duello, si registrano due dati (nel vecchio P5 era la Scena 5; stasera la Scena 5 è la notte nella fortezza):
 
 1. **Esito del duello**: `UCCISO` / `FERITO GRAVE` / `FUGGITO`.
 2. **Ferite ancestrali segnate** (`N`): numero di colpi andati a segno su
    Skullcrusher durante il duello (la "Cicatrice della Forgia"). Cap
-   consigliato **N ≤ 3** ai fini del bonus.
+   consigliato **N ≤ 3** ai fini del bonus. Con un gruppo di 13° tre colpi a
+   segno arrivano già al secondo round: **N arriva a 3 quasi sempre**, e il
+   bonus pieno è l'esito normale, non il premio raro.
 
 ---
 
 ## 2. TABELLA ESITO → EFFETTO SU FAUCI DI PALUDE (1372)
 
-| Esito del duello | Effetto sullo statblock di Fauci (GS 15, 312 PF) | Razionale |
+| Esito del duello | Effetto sullo statblock di Fauci (GS 15, 337 PF) | Razionale |
 |---|---|---|
-| **UCCISO** (Skullcrusher a 0 pf) | **Cicatrice ancestrale attiva**: Fauci entra in campo con **−10% PF** (312 → **281 PF**) e **Presenza Terrificante CD 25 → 23** contro i **portatori degli artefatti** (Thorik/Corona, Tordek/Bracieri+Cintura, Hella/Collana, Artemis/Ring). | La stirpe porta la ferita mortale del capostipite: il sangue "ricorda" di poter cadere. |
+| **UCCISO** (Skullcrusher a 0 pf) | **Cicatrice ancestrale attiva**: Fauci entra in campo con **−10% PF** (337 → **303 PF**<!-- storico -->; prima della verifica dei conti del 2026-10-16 i pf erano 312 e il valore 281<!-- /storico -->) e **Presenza Terrificante CD 25 → 23** contro i **portatori degli artefatti** (Thorik/Corona, Tordek/Bracieri+Cintura, Hella/Collana, Artemis/Ring). | La stirpe porta la ferita mortale del capostipite: il sangue "ricorda" di poter cadere. |
 | **FERITO GRAVE** (fugge sotto ⅓ pf) | **−1 uso del soffio**: il primo **Soffio a Cono** (1/giorno) è **indisponibile**; il soffio in linea parte comunque ma la **prima** volta a −2 alla CD (27 invece di 29). Nessuna riduzione di PF. | La ferita non è letale ma "storpia" l'arma migliore del sangue. |
 | **FUGGITO** (Skullcrusher si allontana quasi illeso) | Fauci **vi ha visti e riconosciuti**: **+2 iniziativa** e nessuna sorpresa contro di voi (sa chi siete) **MA morale fragile** — **fugge sotto i 75 PF** invece di 50 (soglia di ritirata alzata di 25). | Il drago è forte ma il sangue teme già i "quattro del futuro": più cauto, meno disposto a morire. |
 
@@ -49,7 +51,7 @@ Indipendente dall'esito (si somma), riflette P5-DEF-P2 r.294:
   - **+1 di competenza ai tiri per colpire** contro Fauci, **oppure**
   - **+1d6 danni** ai colpi che vanno a segno su Fauci.
 - Cap: **N ≤ 3** (max **+3 TxC** o **+3d6**).
-- **Cicatrice fisica** (se Aegis Fang colpì Skullcrusher in volo, P5 Scena 5):
+- **Cicatrice fisica** (se Aegis Fang colpì Skullcrusher in volo, `ARC07-DEF-4` Scena 11):
   Fauci ha una **cicatrice a forma di martello** su un'ala → **−2 metri alla
   Volare** (45 → 43) e i PG che lo sanno hanno **+2 di circostanza** a
   colpirlo mentre è in volo.

@@ -150,6 +150,136 @@
     1
    ],
    "label": "Nicchia del leone"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    19,
+    11,
+    1,
+    1
+   ],
+   "label": "L'affaccio, scavato tondo"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    20,
+    11,
+    1,
+    1
+   ],
+   "label": "L'affaccio, scavato tondo"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    22,
+    13,
+    1,
+    1
+   ],
+   "label": "L'affaccio, scavato tondo"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    18,
+    15,
+    1,
+    1
+   ],
+   "label": "L'affaccio, scavato tondo"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    19,
+    15,
+    1,
+    1
+   ],
+   "label": "L'affaccio, scavato tondo"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    3,
+    19,
+    1,
+    1
+   ],
+   "label": "Imbocco delle miniere, allargato a colpi di piccone"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    4,
+    19,
+    1,
+    1
+   ],
+   "label": "Imbocco delle miniere, allargato a colpi di piccone"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    2,
+    22,
+    1,
+    1
+   ],
+   "label": "Imbocco delle miniere, allargato a colpi di piccone"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    3,
+    22,
+    1,
+    1
+   ],
+   "label": "Imbocco delle miniere, allargato a colpi di piccone"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    7,
+    11,
+    1,
+    1
+   ],
+   "label": "Nicchia vuota: la lampada del 372 non c'è più"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    7,
+    17,
+    1,
+    1
+   ],
+   "label": "Nicchia vuota: la lampada del 372 non c'è più"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    16,
+    16,
+    1,
+    1
+   ],
+   "label": "Nicchia vuota: la lampada del 372 non c'è più"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    26,
+    7,
+    1,
+    1
+   ],
+   "label": "Nicchia vuota: la lampada del 372 non c'è più"
   }
  ],
  "structures": [
@@ -230,6 +360,42 @@
     19
    ],
    "label": "Leone di pietra di Zeth, vuoto"
+  },
+  {
+   "type": "🏰",
+   "at": [
+    17,
+    12
+   ]
+  },
+  {
+   "type": "🏰",
+   "at": [
+    17,
+    14
+   ]
+  },
+  {
+   "type": "🏰",
+   "at": [
+    21,
+    14
+   ]
+  },
+  {
+   "type": "🪵",
+   "at": [
+    5,
+    20
+   ],
+   "label": "Travi dei puntelli, rovesciate dal crollo"
+  },
+  {
+   "type": "🪵",
+   "at": [
+    4,
+    21
+   ]
   }
  ],
  "hazards": [
@@ -351,8 +517,12 @@
      18
     ],
     [
-     25,
+     15,
      18
+    ],
+    [
+     15,
+     9
     ],
     [
      25,

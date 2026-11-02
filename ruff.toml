@@ -1,0 +1,42 @@
+# ruff — il cancello dei bug, non dello stile (ADR-0099, PIANO-PIATTAFORMA).
+#
+# Misurato il 2026-10-23 su scripts/ e converters/: con le regole di default
+# ruff dà 424 rilievi, quasi tutti di stile (`if x: y` su una riga, import non
+# usati) che il repo scrive così di proposito. Con le sole regole qui sotto ne
+# restano 18 su scripts/, nessuno un bug a runtime, e 10 su converters/, di cui
+# 3 sono bug veri (un NameError all'import, uno a fine installazione, uno
+# inghiottito da un except). La misura sta in
+# plans/esperimenti/piattaforma-2026-10-23/MISURE.md.
+#
+# Si allarga solo con una misura: una regola nuova entra se, sul repo di quel
+# giorno, i suoi rilievi sono difetti veri almeno 1 volta su 2 (B023, per
+# esempio, ha dato 20 falsi allarmi su 20 e resta fuori).
+#
+#   ruff check            # quello che fa la CI
+#   ruff check --statistics --select ALL scripts   # per guardare, non per bocciare
+
+# La versione unica di Python (D7 di AMBIENTE-RIPRODUCIBILE).
+target-version = "py313"
+
+# converters/ è dentro dal 2026-10-23 (D6 di PIANO-PIATTAFORMA, DM: «D6 b»): i
+# suoi 10 rilievi sono corretti, 3 erano bug veri. Gli esclusi sono generati o
+# di terzi.
+extend-exclude = ["build", "asset-esterni", "scripts/Old"]
+
+[lint]
+select = [
+    "E9",    # errori di sintassi e di indentazione
+    "F63",   # confronti sbagliati (`is` con un letterale, tuple sempre vere)
+    "F7",    # break/continue/return fuori posto
+    "F82",   # nomi non definiti (F821-F823): il NameError prima di eseguire
+    "F811",  # una funzione o un import ridefiniti senza essere usati
+    "F841",  # variabili assegnate e mai lette
+    "PLE",   # errori certi di pylint (format sbagliati, caratteri invisibili)
+    "B034",  # re.sub/re.split con count, maxsplit o flags posizionali: deprecato
+             # in 3.13, e in import_ultraclear.py dava 120 avvisi nei test
+]
+
+[lint.per-file-ignores]
+# Lo spazio di larghezza zero nel docstring è l'esempio di ciò che la funzione
+# toglie: va letto così com'è.
+"scripts/validate_corredo.py" = ["PLE2515"]

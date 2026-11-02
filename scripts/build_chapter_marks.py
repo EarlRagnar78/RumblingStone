@@ -34,7 +34,7 @@ C = BOX / 2
 
 # Destinazioni canoniche di --all
 DEST = {
-    "drappo": "STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/tavole/fregi",
+    "drappo": "10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/tavole/fregi",
     "campagna": "docs/assets/fregi",
 }
 

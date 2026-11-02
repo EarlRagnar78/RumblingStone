@@ -21,7 +21,8 @@ con la sua CD. Questo script li legge, e ne fa tre cose.
 
    dove la fonte delimita il blocco con `<!-- blocco: numeri -->` …
    `<!-- /blocco -->`; `#statblocco` prende invece il recinto ```statblocco
-   della scheda (ADR-0021), senza marcatori nella fonte. Il testo copiato resta nel sorgente, così chi apre il
+   della scheda (ADR-0021), senza marcatori nella fonte, e `#scheda` il recinto
+   con la parte leggibile di ADR-0091 che lo segue (ADR-0105). Il testo copiato resta nel sorgente, così chi apre il
    file senza stamparlo lo legge; la fonte resta una sola, perché lo script lo
    riscrive dalla fonte e la CI boccia una copia che non combacia più.
 
@@ -46,6 +47,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 import copertura_scene as cs  # noqa: E402  (scene, contratto e schede si leggono in un posto solo)
 import misura_craft as mc  # noqa: E402
+from dmcore import statblock as sb  # noqa: E402
 
 INTESTAZIONE = ("<!-- generato da scripts/componenti.py --apparato: non modificare a mano, "
                 "si rigenera dal master (ADR-0074) -->\n")
@@ -55,9 +57,11 @@ _RIGA_SCHEDA = re.compile(r"^\|\s*\*\*(Aspetto|Vuole|Suona|Sa|Teme|Vende)\*\*\s*
 #: che la precedono: alla prima misura su DEF-4 quel criterio ne perdeva 13 su 43
 #: («FOR o DES grezza», «Conoscenze storia», «Forza o attacco, CD 18»). Qui entra
 #: ogni CD, e l'etichetta è la coda della sua cella o frase (_etichetta_prova).
+#: Il percorso della fonte può avere spazi: le cartelle degli archi ne hanno
+#: («07_il Portale Della Forgia Eterna»). Finisce al «#» del nome del blocco.
 _CD = re.compile(r"\bCD\s*\*{0,2}\s*(\d+)")
 _TAGLIO = re.compile(r"[|;:]|[.!?]\s+(?=[A-ZÀ-Ù«\"])|\n\s*(?:>\s*)?(?:\n|[-|])|—|\*\*\s|\bCD\s*\*{0,2}\s*\d+\*{0,2},?")
-_INCLUDE = re.compile(r"(<!--\s*include:\s*(?P<src>[^#\s]+)#(?P<nome>[\w-]+)\s*-->\n)(?P<corpo>.*?)"
+_INCLUDE = re.compile(r"(<!--\s*include:\s*(?P<src>[^#\n]+?)#(?P<nome>[\w-]+)\s*-->\n)(?P<corpo>.*?)"
                       r"(<!--\s*/include\s*-->)", re.S)
 
 
@@ -198,11 +202,33 @@ def blocco(sorgente: Path, nome: str) -> str:
     della scheda (ADR-0021): un componente che ha già un tipo non ha bisogno
     di un segnaposto in più nel file che lo contiene."""
     testo = sorgente.read_text(encoding="utf-8")
-    if nome == "statblocco":
+    if nome in ("statblocco", "scheda"):
         m = re.search(r"^```statblocco\n.*?^```[ \t]*$", testo, re.S | re.M)
         if not m:
             raise KeyError(f"{sorgente.relative_to(ROOT)}: manca il blocco ```statblocco")
-        return m.group(0) + "\n"
+        if nome == "statblocco":
+            return m.group(0) + "\n"
+        # `#scheda` è la scheda di stampa (ADR-0105): il recinto più la parte
+        # leggibile di ADR-0091, cioè le righe da **Iniziativa** o **Difesa**
+        # alla fine di **Tattiche**. Le note fra le due, nel Bestiario, restano
+        # nel Bestiario.
+        righe = testo.split("\n")
+        inizio = next((k for k, r in enumerate(righe)
+                       if re.match(r"^\*\*(Iniziativa|Difesa)\*\*", r.strip())), None)
+        if inizio is None:
+            raise KeyError(f"{sorgente.relative_to(ROOT)}: manca la parte leggibile "
+                           "(ADR-0091, **Difesa** …) per «#scheda»")
+        _, fine = sb.sezioni_leggibili(righe, inizio)
+        leggibile = "\n".join(righe[inizio:fine]).rstrip("\n")
+        recinto = m.group(0)
+        # Il nome sulla barra del riquadro: quello della scheda, non il titolo
+        # della sezione che la include («A.4 · Balvar Fuocospento (Scena 7)»).
+        h1 = re.search(r"^# (.+)$", testo, re.M)
+        if h1 and not re.search(r"^nome:", recinto, re.M):
+            nome = re.sub(r"\s*\[[A-Z]+[^\]]*\]", "", h1.group(1)).strip()
+            nome = re.sub(r"\s*\((?:CR|GS)[^)]*\)\s*$", "", nome).strip()
+            recinto = recinto.replace("```statblocco\n", f"```statblocco\nnome: {nome}\n", 1)
+        return recinto + "\n" + leggibile + "\n"
     m = re.search(rf"<!--\s*blocco:\s*{re.escape(nome)}\s*-->\n?(.*?)<!--\s*/blocco\s*-->", testo, re.S)
     if not m:
         raise KeyError(f"{sorgente.relative_to(ROOT)}: manca il blocco «{nome}»")
@@ -220,6 +246,8 @@ def file_con_inclusioni() -> "list[Path]":
     for f in sorted(ROOT.rglob("*.md")):
         rel = f.relative_to(ROOT).as_posix()
         if rel.startswith(("build/", ".claude/", ".git/")) or "_ARCHIVIO/" in rel:
+            continue
+        if rel.endswith(".hb.md"):  # generato dal booklet (ADR-0003): porta il segnaposto, non è una fonte
             continue
         try:
             if "<!-- include:" in f.read_text(encoding="utf-8"):

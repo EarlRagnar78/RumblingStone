@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "title": "Tarsilia — le stalle dell'Istrice (assalto notturno)",
+  "tipo": "tattica",
+  "ambiente": "interni",
+  "luogo": "Tarsilia, stalle dell'Istrice",
+  "deroghe": [
+    { "codice": "m4/esposizione", "motivo": "una stalla è una sala sola: le assi dei box coprono ma non nascondono, e il testo del Giorno 2 §6 vuole che dal fienile si veda tutto. La selleria e il carro del fieno spezzano la vista dove serve" }
+  ],
+  "scale_m_per_square": 1.5,
+  "map_size": [21, 15],
+  "base_terrain": "🟫",
+  "north": "N",
+  "regions": [
+    { "terrain": "🟫", "rect": [0, 1, 21, 1], "label": "Il vicolo nord, largo 1,5 m fra la stalla e le case di fronte: da qui Sfregio sale sul tetto del fienile" },
+    { "terrain": "🟨", "rect": [2, 3, 8, 3], "label": "Fienile — soppalco a 3 m sopra le balle di fieno. Si sale con la scala a pioli in K05 (2 round) o Scalare CD 12; caduta 1d6 + prono. Nel tetto, sopra G04, la botola" }
+  ],
+  "structures": [
+    { "type": "⬛", "rect": [0, 0, 21, 1], "label": "Le case di fronte, sul vicolo nord" },
+    { "type": "🏰", "line": [[1, 2], [20, 2]], "label": "Muri di mattone crudo, spessi 1,5 m alla base: la stalla regge il fienile" },
+    { "type": "🏰", "line": [[20, 2], [20, 14]] },
+    { "type": "🏰", "line": [[20, 14], [1, 14]] },
+    { "type": "🏰", "line": [[1, 14], [1, 2]] },
+    { "type": "🏰", "line": [[12, 4], [15, 4]], "label": "Selleria: una stanza di 3 × 3 m in mezzo alla stalla, con la porta sul corridoio. Ci si gira attorno" },
+    { "type": "🏰", "line": [[15, 4], [15, 7]] },
+    { "type": "🏰", "line": [[15, 7], [12, 7]] },
+    { "type": "🏰", "line": [[12, 7], [12, 4]] },
+    { "type": "🧱", "line": [[2, 9], [17, 9]], "label": "Assi dei box, alte 1,5 m: copertura, si scavalcano con Acrobazia CD 10. Il varco in ogni fronte è la mezza porta del box" },
+    { "type": "🧱", "line": [[5, 9], [5, 13]] },
+    { "type": "🧱", "line": [[9, 9], [9, 13]] },
+    { "type": "🧱", "line": [[13, 9], [13, 13]] },
+    { "type": "🧱", "line": [[17, 9], [17, 13]] },
+    { "type": "🟫", "at": [3, 9] },
+    { "type": "🟫", "at": [7, 9] },
+    { "type": "🟫", "at": [11, 9] },
+    { "type": "🟫", "at": [15, 9] },
+    { "type": "🚪", "at": [1, 8] },
+    { "type": "🚪", "at": [20, 5] },
+    { "type": "🚪", "at": [20, 6] },
+    { "type": "🚪", "at": [13, 7] },
+    { "type": "🪟", "at": [14, 2] },
+    { "type": "🪜", "at": [10, 4] },
+    { "type": "📦", "at": [2, 5] },
+    { "type": "📦", "at": [3, 5] },
+    { "type": "🪓", "at": [14, 5] },
+    { "type": "🛢", "at": [3, 12] },
+    { "type": "📦", "at": [18, 12] },
+    { "type": "📦", "rect": [17, 5, 1, 3], "label": "Il carro del fieno, scaricato a metà, con le stanghe verso il portone: copertura totale, spezza la vista fra il portone e il corridoio" },
+    { "type": "🏮", "at": [10, 7] }
+  ],
+  "hazards": [
+    { "type": "🔥", "at": [10, 6], "label": "Paglia (tutto il piano terra)", "effect": "Se prende fuoco: 1d6/round a chi ci sta. Fumo in 3 round: Tempra CD 15 a round o soffocare, −2 a tutto" },
+    { "type": "🎯", "at": [6, 3], "label": "BOTOLA DEL FIENILE (G4)", "effect": "Da qui entra Sfregio mentre i bravacci fanno rumore alla porta sul canale. Percezione CD 20 per sentirlo" },
+    { "type": "⛲", "at": [2, 7], "label": "ABBEVERATOIO (C8)", "effect": "Il secondo obiettivo di Sfregio: veleno lento nell'acqua (il cavallo rende metà). L'acqua viene dal canale, accanto alla porta B9" },
+    { "type": "🪟", "at": [14, 2], "label": "FINESTRA ALTA (O3)", "effect": "Via di fuga di Sfregio, a 3 m da terra sopra il corridoio nord. Acrobazia CD 12 per uscirne senza rallentare" }
+  ],
+  "units": [
+    { "faction": "Istrice", "name": "Ombra (dorme in stalla)", "token": "🔵", "at": [8, 7], "cr": "druida 3", "note": "Percezione +10: è lei che si accorge" },
+    { "faction": "Cavalli", "name": "Il cavallo della contrada", "token": "🟢", "at": [7, 11], "cr": "animale GS 1", "note": "H12 — calcia 1d4+2 a chiunque gli sia adiacente a fine round, amici compresi" },
+    { "faction": "Cavalli", "name": "Regina, la mula", "token": "🟢", "at": [11, 11], "cr": "animale", "note": "22 anni. Batte lo zoccolo: è il primo allarme. Liberata, blocca il corridoio" },
+    { "faction": "Assalitori", "name": "Sfregio", "token": "⚫", "at": [6, 3], "cr": "ladro 4, GS 3", "note": "entra dalla botola. NON ingaggia. Fugge a 8 pf" },
+    { "faction": "Assalitori", "name": "Bravaccio 1", "token": "🔴", "at": [0, 8], "cr": "guerriero 1", "note": "sulla fondamenta, alla porta sul canale (B9): fanno rumore apposta" },
+    { "faction": "Assalitori", "name": "Bravaccio 2", "token": "🔴", "at": [0, 7], "cr": "guerriero 1", "note": "" },
+    { "faction": "Assalitori", "name": "Bravaccio 3 (Pico)", "token": "🔴", "at": [0, 9], "cr": "guerriero 1", "note": "17 anni. Se i PG l'hanno curato al Giorno 1, si arrende subito" },
+    { "faction": "Assalitori", "name": "Bravaccio 4", "token": "🔴", "at": [0, 10], "cr": "guerriero 1", "note": "" }
+  ],
+  "notes": [
+    "Coordinate come nel testo del Giorno 2 §6: B9 porta sul canale, G4 botola del fienile, H12 box del cavallo, O3 finestra alta.",
+    "Due ingressi a terra e due dall'alto: la porta sul canale (B9), il portone da carro sul cortile della contrada (U6-U7), la botola del fienile (G4) e la finestra alta (O3). La colonna A è la fondamenta lungo il canale, che scorre a ovest fuori carta.",
+    "La selleria in mezzo (M5-P8) fa un anello: chi insegue gira attorno, e da un lato all'altro non ci si vede.",
+    "Obiettivo di Sfregio, in ordine: azzoppare il cavallo con la pasta corrosiva (1 round intero, cavallo fermo) → avvelenare l'abbeveratoio → portarsi via Nocca.",
+    "Se i PG preparano una trappola: iniziativa a loro, +2 CA a chi è in copertura preparata, e Sfregio perde l'attacco furtivo del primo round.",
+    "Sconfitta dei PG: nessuno viene finito. Gli assalitori prendono ciò per cui sono venuti e se ne vanno."
+  ]
+}

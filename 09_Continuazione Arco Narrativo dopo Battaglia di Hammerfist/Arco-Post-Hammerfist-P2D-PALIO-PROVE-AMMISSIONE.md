@@ -128,7 +128,7 @@ mette i PG dentro l'oscuro collegamento drow/Collezionista (GIORNO2 §3.3).
 ---
 
 ## 4 · L'ISTRICE — "La Notte del Campo"
-**Prova**: gestire una crisi improvvisa nel campo profughi fuori le mura.
+**Prova**: gestire una crisi improvvisa nel campo profughi ai margini della città.
 **Cast**: **Nania Seriv del Traghetto** (luogotenente di Lorana, NB); centinaia di profughi;
 un **incendio doloso** (o un'epidemia — scegli) appiccato da un infiltrato.
 

@@ -127,7 +127,6 @@ def extract_images_from_pdf(pdf_path: Path, assets_dir: Path) -> Tuple[List[Path
     
     # Suppress libpng warnings during image processing
     import contextlib
-    import sys
     
     @contextlib.contextmanager
     def suppress_stderr():
@@ -486,8 +485,6 @@ class EnhancedOCREngine:
 def process_pdf_enhanced(pdf_path: Path):
     """Enhanced PDF processing with better text extraction and chapter detection"""
     # Import resource management classes locally to avoid circular imports
-    import gc
-    import time
     import json
     import shutil
     

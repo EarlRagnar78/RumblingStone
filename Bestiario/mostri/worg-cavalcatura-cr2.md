@@ -19,9 +19,8 @@ voci:
   - Talenti: Allerta, Attacco Naturale Migliorato (morso), Robustezza Migliorata
 ```
 
-> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d8+4», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD e dai DV razziali dichiarati, il bonus da Cos 15 e Robustezza Migliorata.
 
-> [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
+> [GENERATO] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`.
 
 Medium magical beast, NE, 6 HD (avanzato dal worg MM 4 HD). **hp 51** (Robustezza Migliorata); **AC 14**, touch 12, flat-footed 12. Init +2; Vel 15 m. TS Temp +7, Rifl +7, Vol +4. BAB +6; Lotta +9.
 **Mischia** morso +9 (1d8+4) + **Sgambettare** (trip). Scurovisione 18 m, visione crepuscolare, fiuto. Ascoltare/Osservare +7. Talenti: Allerta, Attacco Naturale Migliorato (morso), Robustezza Migliorata.

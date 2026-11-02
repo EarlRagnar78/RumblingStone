@@ -42,8 +42,8 @@ vincoli*).
 
 ### Stadio 0 — Base (dal `.docx`, canonico ORA)
 - **Arma**: Ascia da guerra Nanica **Ritornante** *Dragondoom* (MIC p. 33)
-  **+2**. [INFERRED: 1d10 taglienti da *Dwarven Waraxe* Media, 20/×3 — dalle
-  regole standard 3.5, non esplicitato nel `.docx`.]
+  **+2**: 1d10 taglienti, 20/×3, come la *Dwarven Waraxe* Media dell'SRD (il
+  `.docx` non lo dice).
 - **Senziente**: Int 10, Sag 15, Car 15; **Ego 14**; comunica parlando e in
   telepatia; Scurovisione 18 m + Udito.
 - **Poteri inferiori**: *cura ferite moderate* 3/giorno; *resistere
@@ -75,17 +75,17 @@ vincoli*).
   (oltre al Ritornante di base).
 - **Taglio del Cacciatore** (proprietà Sacra estesa): i **+2d6 danni sacri**
   della qualità *Holy* colpiscono le creature malvagie E — per estensione di
-  lore dell'arma — anche **Aberranti, Non-morti e Draghi**. [INFERRED:
-  l'estensione a tipi non-malvagi è un tratto d'artefatto dichiarato
-  nell'HTML fonte, non una regola SRD generica — confermare al tavolo.]
+  lore dell'arma — anche **Aberranti, Non-morti e Draghi**. ⚠ **Non SRD**:
+  l'estensione a tipi non malvagi è un tratto d'artefatto dichiarato
+  nell'HTML fonte (canone del DM 2026-10-18).
 - **Condotto Divino di Moradin** (*Divine Channeling*, Mag): 1/giorno, azione
   standard, raggio 9 m — il portatore martella il suolo e canalizza
   **Guarigione (Heal), LI 15°**, selettivamente su **tutti i nani alleati**
   entro 9 m dallo schianto.
 - **Aura di sinergia razziale** (passiva): presenza telepatica coi
   comandanti nanici in campo: **telepatia coi nani entro 90 m**, e i **nani
-  vicini (18 m) sono immuni alla paura**. *(Era `[INFERRED — effetto non
-  quantificato]`; risolto dalla fonte il 2026-09-25: l'HTML li quantifica
+  vicini (18 m) sono immuni alla paura**. *(Era un effetto non
+  quantificato; risolto dalla fonte il 2026-09-25: l'HTML li quantifica
   entrambi, il raggio di 18 m sta nel suo calcolo del valore. Audit:
   `../../ARTEFATTI-AUDIT-POTERI-2026-09-25.md` §2.)*
 

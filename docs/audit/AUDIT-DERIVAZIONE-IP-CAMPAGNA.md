@@ -52,7 +52,7 @@ Fra parentesi: occorrenze **per 1.000 parole**.
 | `campaign/` | 95.117 | 725 (**7,6**) | 60 (0,6) | 15 (0,2) | 6 (0,1) |
 | `Bestiario/` | 74.978 | 225 (**3,0**) | 17 (0,2) | 0 | 0 |
 | `PG/` | 63.494 | 1 (0,0) | 0 | 0 | 0 |
-| `STANDALONE-Il-Drappo-di-Tarsilia` | 63.870 | 3 (**0,0**) | 0 | 0 | 0 |
+| `10-stand-alone/Il-Drappo-di-Tarsilia` | 63.870 | 3 (**0,0**) | 0 | 0 | 0 |
 | **totale** | **801.606** | | | | |
 
 ---
@@ -121,7 +121,7 @@ def testo(d):
                      for f in Path(d).rglob("*.md")
                      if not any(x in str(f) for x in ("/rendered/", "/homebrew/", "/_ARCHIVIO/")))
 for d in sorted(p for p in Path(".").glob("[01]*") if p.is_dir()) + \
-         [Path(x) for x in ("campaign", "Bestiario", "PG", "STANDALONE-Il-Drappo-di-Tarsilia")]:
+         [Path(x) for x in ("campaign", "Bestiario", "PG", "10-stand-alone/Il-Drappo-di-Tarsilia")]:
     t = testo(d); w = len(t.split())
     if not w:
         print(f"{str(d)[:36]:<38}{0:>8}  (vuoto)"); continue

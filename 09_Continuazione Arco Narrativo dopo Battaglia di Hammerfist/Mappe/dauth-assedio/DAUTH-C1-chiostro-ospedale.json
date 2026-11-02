@@ -109,7 +109,7 @@
     8
    ],
    "label": "Barelle",
-   "effect": "Terreno ingombro (la carta) [INFERRED — needs DM confirmation: costa doppio come il terreno difficile]"
+   "effect": "Terreno ingombro (la carta) (costa doppio come il terreno difficile)"
   },
   {
    "type": "🛏",
@@ -119,7 +119,7 @@
     1,
     8
    ],
-   "effect": "Terreno ingombro (la carta) [INFERRED — needs DM confirmation: costa doppio come il terreno difficile]"
+   "effect": "Terreno ingombro (la carta) (costa doppio come il terreno difficile)"
   }
  ],
  "units": [

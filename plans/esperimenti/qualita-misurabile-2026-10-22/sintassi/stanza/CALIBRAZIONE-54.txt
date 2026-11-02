@@ -1,0 +1,36 @@
+
+== spacy: 54 coppie, 0.8 s
+
+metrica            vinc>perd vinc<perd pari  accordo  p(binom)
+sogg_preverbale            5         1    48    0.83  0.219
+agg_complesso              1         1    52    0.50  1.000
+stare_gerundio             2         2    50    0.50  1.000
+pron_soggetto              1         2    51    0.67  1.000
+calchi                     8         4    42    0.67  0.388
+calchi‰                    9         6    39    0.60  0.607
+possessivi_corpo           1         0    53    1.00  1.000
+profondita_max            13        13    28    0.50  1.000
+profondita_media          18        22    14    0.55  0.636
+livelli_max               15         5    34    0.75  0.041
+frasi_oltre2%              0         1    53    1.00  1.000
+lungh_dip                 25        25     4    0.50  1.000
+mattr_lemmi               27        25     2    0.52  0.890
+rip_interna%              21         9    24    0.70  0.043
+
+== stanza: 54 coppie, 47.2 s
+
+metrica            vinc>perd vinc<perd pari  accordo  p(binom)
+sogg_preverbale            3         1    50    0.75  0.625
+agg_complesso              0         0    54    0.00  1.000
+stare_gerundio             2         2    50    0.50  1.000
+pron_soggetto              0         3    51    1.00  0.250
+calchi                     5         3    46    0.62  0.727
+calchi‰                    6         5    43    0.55  1.000
+possessivi_corpo           1         0    53    1.00  1.000
+profondita_max            12        11    31    0.52  1.000
+profondita_media          19        20    15    0.51  1.000
+livelli_max               12         5    37    0.71  0.143
+frasi_oltre2%              0         0    54    0.00  1.000
+lungh_dip                 24        29     1    0.55  0.583
+mattr_lemmi               29        25     0    0.54  0.683
+rip_interna%              20        10    24    0.67  0.099

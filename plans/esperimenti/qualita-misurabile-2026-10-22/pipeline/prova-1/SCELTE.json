@@ -1,0 +1,218 @@
+{
+ "box": [
+  {
+   "id": "P01",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "box": 0,
+   "titolo": "SCENA 1 — Il portale e il bosco al tramonto",
+   "originale": "Per un istante lunghissimo i colori si rovesciano, e vi passano davanti vite intere di nani: nascono, battono il ferro, invecchiano, in un tempo più corto di un respiro. Poi torna il peso, e con il peso il freddo. Le ferite non ci sono più. Siete in piedi in un bosco. Gli alberi sono vecchi, le radici grosse come un uomo sdraiato, e l'aria sa di foglie marce e di fumo lontano. Il sole è già dietro il crinale. Uno di voi ha le ginocchia bagnate e non si ricorda di essere caduto.",
+   "candidate": [
+    {
+     "n": 1,
+     "testo": "Per un istante lunghissimo i colori si rovesciano, e vi passano davanti vite intere di nani: nascono, battono il ferro, invecchiano, tutto in meno di un respiro. Poi torna il peso, e con il peso il freddo. Le ferite non ci sono più. Siete in piedi in un bosco di alberi vecchi, con radici grosse come un uomo sdraiato, e l'aria sa di foglie marce e di fumo lontano. Il sole è già dietro il crinale. Uno di voi ha le ginocchia bagnate e non si ricorda di essere caduto.",
+     "scartata": [],
+     "punteggio": 0.449
+    },
+    {
+     "n": 2,
+     "testo": "Per un istante lunghissimo i colori si rovesciano, e vi passano davanti vite intere di nani: nascono, battono il ferro, invecchiano, in un tempo più corto di un respiro. Poi torna il peso, e con il peso il freddo, che morde le dita. Le ferite non ci sono più. Siete in piedi in un bosco. Gli alberi sono vecchi, le radici grosse come un uomo sdraiato, e l'aria sa di foglie marce e di fumo lontano. Il sole è già dietro il crinale. Uno di voi ha le ginocchia bagnate e non si ricorda di essere caduto.",
+     "scartata": [],
+     "punteggio": 0.607
+    },
+    {
+     "n": 3,
+     "testo": "Per un istante lunghissimo i colori si rovesciano, e vi passano davanti vite intere di nani: nascono, battono il ferro, invecchiano, in un tempo più corto di un respiro. Poi torna il peso, e con il peso il freddo. Le ferite non ci sono più. Siete in piedi in un bosco. Gli alberi sono vecchi, le radici grosse come un uomo sdraiato, e l'aria sa di foglie marce e di fumo lontano. Il sole è già dietro il crinale, e fra i tronchi resta una luce rossa. Uno di voi ha le ginocchia bagnate e non si ricorda di essere caduto.",
+     "scartata": [],
+     "punteggio": 0.611
+    },
+    {
+     "n": 4,
+     "testo": "Per un istante lunghissimo i colori si rovesciano e vi passano davanti vite intere di nani, che nascono, battono il ferro e invecchiano in un tempo più corto di un respiro. Poi torna il peso, e con il peso il freddo. Le ferite non ci sono più. Siete in piedi in un bosco dove gli alberi sono vecchi e le radici grosse come un uomo sdraiato, e l'aria sa di foglie marce e di fumo lontano. Il sole è già dietro il crinale. Uno di voi ha le ginocchia bagnate e non si ricorda di essere caduto.",
+     "scartata": [],
+     "punteggio": 0.469
+    }
+   ],
+   "vincitrice": 3,
+   "punteggio": 0.611
+  },
+  {
+   "id": "P02",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "box": 21,
+   "titolo": "Come si combatte, se si arriva a combatterlo",
+   "originale": "Tre rune nane, tutte spezzate a metà dallo stesso colpo di punta. Sotto, inciso più a fondo, un nome: Hald. Poi una freccia, verso nord.",
+   "candidate": [
+    {
+     "n": 1,
+     "testo": "Tre rune nane, spezzate tutte a metà dallo stesso colpo di punta. Più sotto, inciso più a fondo, un nome: Hald. Poi una freccia che punta a nord.",
+     "scartata": [],
+     "punteggio": 0.311
+    },
+    {
+     "n": 2,
+     "testo": "Tre rune nane, e tutte e tre spezzate a metà dallo stesso colpo di punta. Sotto, inciso più a fondo nella pietra, un nome: Hald. Poi una freccia, verso nord.",
+     "scartata": [],
+     "punteggio": 0.272
+    },
+    {
+     "n": 3,
+     "testo": "Tre rune nane spezzate a metà, tutte dallo stesso colpo di punta. Sotto, scavato più a fondo, un nome: Hald. E una freccia, verso nord.",
+     "scartata": [],
+     "punteggio": 0.384
+    },
+    {
+     "n": 4,
+     "testo": "Tre rune nane. Tutte spezzate a metà dallo stesso colpo di punta. Sotto, inciso più a fondo, un nome: Hald. Poi una freccia, verso nord.",
+     "scartata": [],
+     "punteggio": 0.746
+    }
+   ],
+   "vincitrice": 4,
+   "punteggio": 0.746
+  },
+  {
+   "id": "P03",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "box": 28,
+   "titolo": "SCENA 11 — Il duello con Skullcrusher",
+   "originale": "Per un istante la Corona ti mostra due immagini sovrapposte: questo drago adesso, e un altro drago sopra mura che bruciano, mura che non hai mai visto.",
+   "candidate": [
+    {
+     "n": 1,
+     "testo": "Per un istante la Corona ti mostra due immagini, una sopra l'altra: questo drago, adesso, e un altro drago sopra mura che bruciano. Mura che non hai mai visto.",
+     "scartata": [],
+     "punteggio": 0.693
+    },
+    {
+     "n": 2,
+     "testo": "Per un istante la Corona ti mostra due immagini sovrapposte: questo drago, qui, adesso; e un altro drago, sopra mura che bruciano, mura che non hai mai visto.",
+     "scartata": [],
+     "punteggio": 0.728
+    },
+    {
+     "n": 3,
+     "testo": "Per un istante la Corona ti mette davanti due immagini sovrapposte: questo drago adesso, e un altro drago sopra mura in fiamme, mura che non hai mai visto.",
+     "scartata": [],
+     "punteggio": 0.628
+    },
+    {
+     "n": 4,
+     "testo": "Per un istante la Corona ti mostra due immagini sovrapposte. Questo drago, adesso. E un altro drago, sopra mura che bruciano: mura che non hai mai visto.",
+     "scartata": [],
+     "punteggio": 0.88
+    }
+   ],
+   "vincitrice": 4,
+   "punteggio": 0.88
+  },
+  {
+   "id": "P04",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "box": 32,
+   "titolo": "Momento 4 — l'Aura della Forgia Eterna `[CANONE — DM 2026-09-20]`",
+   "originale": "Il vecchio accanto all'incudine alza la testa e guarda la luce dietro Thorik. In tutto il cortile i feriti smettono di essere feriti: un fabbro con una gamba sola si tira su contro il muro, il muro gli si apre sotto la mano come argilla, e lui ci infila la gamba e resta in piedi. Nessuno grida. Ottocento nani guardano un nano con una corona, e per un lungo momento, nel cortile, c'è solo il respiro della forgia.",
+   "candidate": [
+    {
+     "n": 1,
+     "testo": "Il vecchio accanto all'incudine alza la testa e guarda la luce alle spalle di Thorik. In tutto il cortile i feriti smettono di essere feriti: un fabbro con una gamba sola si tira su contro il muro, la pietra gli si apre sotto la mano come argilla, e lui ci infila il moncone e resta in piedi. Nessuno grida. Ottocento nani guardano un nano con una corona, e per un lungo momento, nel cortile, c'è solo il respiro della forgia.",
+     "scartata": [],
+     "punteggio": 0.454
+    },
+    {
+     "n": 2,
+     "testo": "Il vecchio accanto all'incudine alza la testa e guarda la luce dietro Thorik. In tutto il cortile i feriti smettono di esserlo. Un fabbro con una gamba sola si tira su contro il muro; il muro gli si apre sotto la mano come argilla, e lui ci infila la gamba e resta in piedi. Nessuno grida. Ottocento nani guardano un nano con una corona, e per un lungo momento, nel cortile, c'è solo il respiro della forgia.",
+     "scartata": [
+      "regola 4, subordinata spezzata"
+     ],
+     "punteggio": 0.1
+    },
+    {
+     "n": 3,
+     "testo": "Accanto all'incudine il vecchio alza la testa e guarda la luce dietro Thorik. In tutto il cortile le ferite si chiudono: un fabbro con una gamba sola si tira su contro il muro, il muro gli cede sotto la mano come argilla calda, e lui ci infila il moncone e resta in piedi. Nessuno grida. Ottocento nani guardano un nano con una corona, e per un lungo momento, nel cortile, c'è solo il respiro della forgia.",
+     "scartata": [],
+     "punteggio": 0.588
+    },
+    {
+     "n": 4,
+     "testo": "Il vecchio accanto all'incudine alza la testa e guarda la luce dietro Thorik. In tutto il cortile i feriti smettono di essere feriti. Un fabbro con una gamba sola si tira su contro il muro, e il muro gli si apre sotto la mano come argilla: lui ci infila il moncone, e resta in piedi. Nessuno grida. Ottocento nani guardano un nano con una corona, e per un lungo momento, nel cortile, c'è solo il respiro della forgia.",
+     "scartata": [
+      "regola 4, subordinata spezzata"
+     ],
+     "punteggio": 0.097
+    }
+   ],
+   "vincitrice": 3,
+   "punteggio": 0.588
+  },
+  {
+   "id": "P05",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "box": 21,
+   "titolo": "**INTRODUZIONE SESSIONE 2:**",
+   "originale": "\"L'alba del primo giorno d'assedio sorge pallida e spettrale. L'esercito della Mano Rossa si è dispiegato in formazioni perfette davanti alle mura di Hammerfist. Al centro, Generale Grimjaw siede sul suo warg gigante nero, la sua armatura demoniaca che riflette le prime luci del sole come metallo insanguinato. Alla sua destra, l'orrenda massa di Gorthak il Trifronte brandisce tre randelli enormi, le sue teste che discutono animatamente in linguaggio gigante. Sopra di tutti, Fauci di Palude plana minaccioso, le sue ali che proiettano ombre di morte sulle rocce sottostanti.\"",
+   "candidate": [
+    {
+     "n": 1,
+     "testo": "\"L'alba del primo giorno d'assedio sorge pallida. Davanti alle mura di Hammerfist l'esercito della Mano Rossa è schierato in formazioni perfette. Al centro siede il Generale Grimjaw, in sella a un warg gigante nero, e l'armatura demoniaca riflette le prime luci del sole come metallo insanguinato. Alla sua destra la massa di Gorthak il Trifronte stringe tre randelli enormi, e le teste litigano fra loro in gigante. Sopra di tutti plana Fauci di Palude, e le sue ali stendono ombre di morte sulle rocce sottostanti.\"",
+     "scartata": [],
+     "punteggio": 0.003
+    },
+    {
+     "n": 2,
+     "testo": "\"L'alba del primo giorno d'assedio sorge pallida, quasi spettrale. Davanti alle mura di Hammerfist l'esercito della Mano Rossa si è disposto in formazioni perfette. Al centro il Generale Grimjaw siede su un warg gigante nero; l'armatura demoniaca prende le prime luci del sole e le rimanda rosse, come metallo insanguinato. Alla sua destra Gorthak il Trifronte, una massa orrenda, brandisce tre randelli enormi, e le sue teste discutono fra loro in gigante. Sopra tutti plana Fauci di Palude, minaccioso, e le ali gettano ombre di morte sulle rocce sottostanti.\"",
+     "scartata": [],
+     "punteggio": 0.004
+    },
+    {
+     "n": 3,
+     "testo": "\"Sorge pallida e spettrale l'alba del primo giorno d'assedio. Davanti alle mura di Hammerfist l'esercito della Mano Rossa si è schierato in formazioni perfette. Al centro il Generale Grimjaw siede su un warg gigante nero, con un'armatura demoniaca che alle prime luci del sole riluce come metallo insanguinato. Alla sua destra Gorthak il Trifronte, un'orrenda massa di carne, brandisce tre randelli enormi mentre le sue teste discutono animatamente in gigante. Sopra di tutti plana Fauci di Palude, minaccioso, e le sue ali proiettano ombre di morte sulle rocce sottostanti.\"",
+     "scartata": [],
+     "punteggio": 0.063
+    },
+    {
+     "n": 4,
+     "testo": "\"L'alba del primo giorno d'assedio sorge pallida. Davanti alle mura di Hammerfist l'esercito della Mano Rossa aspetta in formazioni perfette. Al centro, su un warg gigante nero, siede il Generale Grimjaw, e l'armatura demoniaca riflette le prime luci come metallo insanguinato. Alla sua destra Gorthak il Trifronte brandisce tre randelli enormi, e le sue teste litigano in gigante. Sopra tutti plana Fauci di Palude, e le ali gettano ombre di morte sulle rocce sottostanti.\"",
+     "scartata": [],
+     "punteggio": 0.005
+    }
+   ],
+   "vincitrice": 3,
+   "punteggio": 0.063
+  },
+  {
+   "id": "P06",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+   "box": 2,
+   "titolo": "**BORIN FERROPUGNO, Il Martello di Hammerfist**",
+   "originale": "\"Sei il nipote del precedente Re, un nano nel fiore degli anni che vive per la battaglia. Grida 'Seguitemi!' e gettati per primo nella mischia. Il tuo compito è tenere la linea e proteggere il Re.\"",
+   "candidate": [
+    {
+     "n": 1,
+     "testo": "\"Sei il nipote del Re che c'era prima, un nano nel pieno degli anni che vive per la battaglia. Grida 'Seguitemi!' e buttati per primo nella mischia. Il tuo compito è tenere la linea e proteggere il Re.\"",
+     "scartata": [],
+     "punteggio": 0.46
+    },
+    {
+     "n": 2,
+     "testo": "\"Sei il nipote del precedente Re: un nano nel fiore degli anni, che vive per la battaglia. Gridi 'Seguitemi!' e ti getti per primo nella mischia. Il tuo compito è tenere la linea, e proteggere il Re.\"",
+     "scartata": [],
+     "punteggio": 0.668
+    },
+    {
+     "n": 3,
+     "testo": "\"Sei il nipote del precedente Re, un nano nel fiore degli anni che vive per la battaglia e per il rumore del ferro. Grida 'Seguitemi!' e gettati per primo nella mischia. Il tuo compito è tenere la linea e proteggere il Re.\"",
+     "scartata": [],
+     "punteggio": 0.327
+    },
+    {
+     "n": 4,
+     "testo": "\"Sei il nipote del precedente Re, un nano nel fiore degli anni, e vivi per la battaglia. Grida 'Seguitemi!' e gettati per primo nella mischia: il tuo compito è tenere la linea e proteggere il Re.\"",
+     "scartata": [],
+     "punteggio": 0.333
+    }
+   ],
+   "vincitrice": 2,
+   "punteggio": 0.668
+  }
+ ]
+}

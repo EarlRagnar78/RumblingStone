@@ -36,6 +36,7 @@
 | 🏰 | Muro / roccia solida | **sì** |
 | 🟪 | Pilastro / mithral | **sì** |
 | ⛰ | Montagne / creste rocciose | **sì** |
+| 🎪 | Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia) | **sì** |
 | 🟤 | Pavimento di caverna | — |
 | 💧 | Acqua bassa o pozza | — |
 | 🫧 | Fogna o liquame | — |
@@ -117,7 +118,7 @@
 | 🔺 | Stalagmite (copertura parziale) | — |
 | 🔷 | Cristallo gigante (copertura totale) | **sì** |
 
-`⬛ 🏰 🟪 ⛰` sono "solidi": ombra portata, contorno a inchiostro marcato,
+`⬛ 🏰 🟪 ⛰ 🎪` sono "solidi": ombra portata, contorno a inchiostro marcato,
 occlusione ambientale sul terreno adiacente, griglia chiara sopra.
 
 <!-- legenda:auto-end -->

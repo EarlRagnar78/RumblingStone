@@ -180,47 +180,157 @@ La quarta colonna è la parte utile di queste tabelle. Senza di essa l'atmosfera
 
 Tutto SRD 3.5. La riga in rosso è ciò che questa creatura fa *in questa avventura*, che è l'unica cosa che il manuale non può dirti.
 
-{{note
-**Scheletro umano · GS 1/3** NM Medio non-morto · **PF** 6 (1d12) · **CA** 15 · **Iniz** +5
-**Att** artiglio +1 (1d4+1) o scimitarra +1 (1d6+1) · **TS** Temp +0, Rifl +2, Vol +2
-RD 5/contundente, immune al freddo, tratti dei non-morti A3, sei esemplari. Con A4 profanata hanno +1 e +2 pf per DV. Riconsacrare l'altare li riporta a livello base: è la ricompensa concreta per il chierico.
-}}
+```statblocco
+nome: Scheletro umano (6)
+gs: 1/3
+tipo: NM Medio non-morto
+ca: 15
+pf: 6
+pf-dado: 1d12
+ts: Temp +0, Rifl +2, Vol +2
+iniziativa: +5
+attacchi:
+  - Artiglio +1 (1d4+1) o scimitarra +1 (1d6+1)
+```
+**Iniziativa** +5
 
-{{note
-**Wight · GS 3** ML Medio non-morto · **PF** 26 (4d12) · **CA** 15 · **Iniz** +1
-**Att** schianto +3 (1d4+1 più risucchio di energia) · **TS** Temp +1, Rifl +2, Vol +4
-**Risucchio di energia:** 1 livello negativo, Tempra CD 14 per non renderlo permanente. Chi muore diventa un wight sotto il loro controllo C19, tre esemplari, ex Ancelle. Danno un round di preavviso (i coperchi si spostano). Chiamarle per nome — i nomi sono nel registro — le fa perdere un round. È l'unico modo di combatterle senza che faccia solo schifo.
-}}
+**Difesa** **CA 15** · **pf 6** (1d12) · TS Tempra +0, Riflessi +2, Volontà +2 · RD 5/contundente, immune al freddo, tratti dei non-morti
 
-{{note
-**Lacedon (ghoul acquatico) · GS 1** CM Medio non-morto · **PF** 13 (2d12) · **CA** 14 · **Vel** 9 m, nuotare 9 m
-**Att** morso +2 (1d6+1 più paralisi) e 2 artigli +0 (1d3 più paralisi)
-**Paralisi:** Tempra CD 12, 1d6+2 round. Gli elfi sono immuni. Fetore, Tempra CD 12 C24, sei esemplari. La paralisi contro 4 PG è il singolo pericolo più subdolo dell'avventura: due PG paralizzati e il combattimento è finito. Tieni aperta la ritirata verso 19 e usane quattro invece di sei se il gruppo è già logoro.
-}}
+**Attacco** **Mischia** artiglio +1 (1d4+1) o scimitarra +1 (1d6+1)
 
-{{note
-**Skum · GS 2** ML Medio mostruoso (acquatico) · **PF** 13 (2d8+4) · **CA** 14 · **Vel** 6 m, nuotare 12 m
-**Att** 2 artigli +4 (1d4+2) e morso +2 (1d6+1) · **TS** Temp +5, Rifl +3, Vol +3
-Anfibio, scurovisione 18 m Quattro esemplari in G27. Combattono in acqua e trascinano: prova contrapposta di Lottare per portare un PG sott'acqua. Sono la ragione per cui i PG non devono finire in acqua nello scontro finale.
-}}
+**Tattiche** A3, sei esemplari. Con A4 profanata hanno +1 e +2 pf per DV. Riconsacrare l'altare li riporta a livello base: è la ricompensa concreta per il chierico.
 
-{{note
-**Grinza — megera acquatica · GS 4** CM Medio mostruoso · **PF** 26 (4d8+8) · **CA** 14 · **Vel** 9 m, nuotare 12 m
-**Att** 2 artigli +6 (1d4+4) · **TS** Temp +3, Rifl +3, Vol +4 · RI 14
-**Sguardo mortale:** chiunque entro 9 m la veda, Tempra CD 13 o −2d6 Forza. **Orrore:** chi la vede, Tempra CD 13 o *indebolito* 3d6 round C23, di guardia alle celle. Lo sguardo mortale è a *vista*, non un attacco: combatterla al buio con luce controllata dimezza il pericolo. Un ladro furbo lo capisce da solo.
-}}
+```statblocco
+nome: Wight (3)
+gs: 3
+tipo: ML Medio non-morto
+ca: 15
+pf: 26
+pf-dado: 4d12
+ts: Temp +1, Rifl +2, Vol +4
+iniziativa: +1
+attacchi:
+  - Schianto +3 (1d4+1 più risucchio di energia)
+```
+**Iniziativa** +1
 
-{{note
-**Còlpa — megera verde · GS 5** NM Medio mostruoso · **PF** 45 (9d8+9) · **CA** 22 · **Vel** 9 m, nuotare 9 m
-**Att** 2 artigli +11 (1d4+4) · **TS** Temp +4, Rifl +6, Vol +7 · RI 18, RD 5/freddo ferro
-**Poteri:** *dancing lights, disguise self, ghost sound, invisibility, pass without trace, tongues, water breathing*, forza innaturale, imitazione perfetta di voci La valvola di sicurezza. Entra **solo** se i PG hanno ignorato ogni segnale. Se entra, usa *disguise self* e imita la voce di un prigioniero: è più efficace di qualunque artiglio.
-}}
+**Difesa** **CA 15** · **pf 26** (4d12) · TS Tempra +1, Riflessi +2, Volontà +4
 
-{{note
-**Marèa — annis · GS 6** CM Grande mostruoso · **PF** 51 (7d8+21) · **CA** 20 · **Vel** 12 m
-**Att** 2 artigli +11 (1d6+7) e morso +9 (1d6+3) · **TS** Temp +5, Rifl +5, Vol +6
-RD 2/—, RI 19 · **Stritolare** 2d6+10 se colpisce con entrambi gli artigli · *disguise self, fog cloud* 3/giorno Officia il rito in G27. Lo stritolare su un PG di 7° livello fa in media 17 danni per round: non lasciarla mai colpire due volte lo stesso bersaglio senza che il tavolo lo veda arrivare. È lei che ha lasciato i segni sulle caviglie di Madre Ilaria.
-}}
+**Attacco** **Mischia** schianto +3 (1d4+1 più risucchio di energia)
+
+**Capacità speciali**
+- **Risucchio di energia:** 1 livello negativo, Tempra CD 14 per non renderlo permanente. Chi muore diventa un wight sotto il loro controllo.
+
+**Tattiche** C19, tre esemplari, ex Ancelle. Danno un round di preavviso (i coperchi si spostano). Chiamarle per nome (i nomi sono nel registro) le fa perdere un round. È l'unico modo di combatterle senza che faccia solo schifo.
+
+```statblocco
+nome: Lacedon (ghoul acquatico) (6)
+gs: 1
+tipo: CM Medio non-morto
+ca: 14
+pf: 13
+pf-dado: 2d12
+ts: —
+velocita: 9 m, nuotare 9 m
+attacchi:
+  - Morso +2 (1d6+1 più paralisi) e 2 artigli +0 (1d3 più paralisi)
+```
+**Difesa** **CA 14** · **pf 13** (2d12)
+
+**Attacco** Vel 9 m, nuotare 9 m · **Mischia** morso +2 (1d6+1 più paralisi) e 2 artigli +0 (1d3 più paralisi)
+
+**Capacità speciali**
+- **Paralisi:** Tempra CD 12, 1d6+2 round. Gli elfi sono immuni.
+- **Fetore**, Tempra CD 12.
+
+**Tattiche** C24, sei esemplari. La paralisi contro 4 PG è il singolo pericolo più subdolo dell'avventura: due PG paralizzati e il combattimento è finito. Tieni aperta la ritirata verso 19 e usane quattro invece di sei se il gruppo è già logoro.
+
+```statblocco
+nome: Skum (4)
+gs: 2
+tipo: ML Medio mostruoso (acquatico)
+ca: 14
+pf: 13
+pf-dado: 2d8+4
+ts: Temp +5, Rifl +3, Vol +3
+velocita: 6 m, nuotare 12 m
+sensi: scurovisione 18 m
+attacchi:
+  - 2 artigli +4 (1d4+2) e morso +2 (1d6+1)
+```
+**Difesa** **CA 14** · **pf 13** (2d8+4) · TS Tempra +5, Riflessi +3, Volontà +3
+
+**Attacco** Vel 6 m, nuotare 12 m · **Mischia** 2 artigli +4 (1d4+2) e morso +2 (1d6+1)
+
+**Capacità speciali**
+- Anfibio.
+
+**Tattiche** Quattro esemplari in G27. Combattono in acqua e trascinano: prova contrapposta di Lottare per portare un PG sott'acqua. Sono la ragione per cui i PG non devono finire in acqua nello scontro finale.
+
+```statblocco
+nome: Grinza, megera acquatica
+gs: 4
+tipo: CM Medio mostruoso
+ca: 14
+pf: 26
+pf-dado: 4d8+8
+ts: Temp +3, Rifl +3, Vol +4
+velocita: 9 m, nuotare 12 m
+attacchi:
+  - 2 artigli +6 (1d4+4)
+```
+**Difesa** **CA 14** · **pf 26** (4d8+8) · TS Tempra +3, Riflessi +3, Volontà +4 · RI 14
+
+**Attacco** Vel 9 m, nuotare 12 m · **Mischia** 2 artigli +6 (1d4+4)
+
+**Capacità speciali**
+- **Sguardo mortale:** chiunque entro 9 m la veda, Tempra CD 13 o −2d6 Forza.
+- **Orrore:** chi la vede, Tempra CD 13 o *indebolito* 3d6 round.
+
+**Tattiche** C23, di guardia alle celle. Lo sguardo mortale è a *vista*, non un attacco: combatterla al buio con luce controllata dimezza il pericolo. Un ladro furbo lo capisce da solo.
+
+```statblocco
+nome: Còlpa, megera verde
+gs: 5
+tipo: NM Medio mostruoso
+ca: 22
+pf: 45
+pf-dado: 9d8+9
+ts: Temp +4, Rifl +6, Vol +7
+velocita: 9 m, nuotare 9 m
+attacchi:
+  - 2 artigli +11 (1d4+4)
+```
+**Difesa** **CA 22** · **pf 45** (9d8+9) · TS Tempra +4, Riflessi +6, Volontà +7 · RI 18, RD 5/freddo ferro
+
+**Attacco** Vel 9 m, nuotare 9 m · **Mischia** 2 artigli +11 (1d4+4)
+
+**Capacità speciali**
+- **Poteri:** *dancing lights, disguise self, ghost sound, invisibility, pass without trace, tongues, water breathing*, forza innaturale, imitazione perfetta di voci.
+
+**Tattiche** La valvola di sicurezza. Entra **solo** se i PG hanno ignorato ogni segnale. Se entra, usa *disguise self* e imita la voce di un prigioniero: è più efficace di qualunque artiglio.
+
+```statblocco
+nome: Marèa, annis
+gs: 6
+tipo: CM Grande mostruoso
+ca: 20
+pf: 51
+pf-dado: 7d8+21
+ts: Temp +5, Rifl +5, Vol +6
+velocita: 12 m
+attacchi:
+  - 2 artigli +11 (1d6+7) e morso +9 (1d6+3)
+```
+**Difesa** **CA 20** · **pf 51** (7d8+21) · TS Tempra +5, Riflessi +5, Volontà +6 · RD 2/—, RI 19
+
+**Attacco** Vel 12 m · **Mischia** 2 artigli +11 (1d6+7) e morso +9 (1d6+3)
+
+**Capacità speciali**
+- **Stritolare** 2d6+10 se colpisce con entrambi gli artigli.
+- *Disguise self, fog cloud* 3/giorno.
+
+**Tattiche** Officia il rito in G27. Lo stritolare su un PG di 7° livello fa in media 17 danni per round: non lasciarla mai colpire due volte lo stesso bersaglio senza che il tavolo lo veda arrivare. È lei che ha lasciato i segni sulle caviglie di Madre Ilaria.
 
 {{note
 **Concilio delle Sorelle** Tre megere entro 9 m l'una dall'altra, LI 9:
@@ -228,25 +338,78 @@ RD 2/—, RI 19 · **Stritolare** 2d6+10 se colpisce con entrambi gli artigli ·
 Ogni potere 1/giorno; occorre un'azione di round completo di tutte e tre **EL 10 riunito.** Le corone di salicornia di Vecchia Nuta annullano il primo effetto da concilio su chi le porta. *Forcecage* è l'incantesimo che chiude la partita: se lo usi, usalo per separare, non per eliminare.
 }}
 
-{{note
-**Corsaro · GS 2** Umano guerriero 3 · **PF** 22 · **CA** 16 · **Iniz** +2
-**Att** scimitarra +6 (1d6+3, 18-20) o balestra leggera +5 (1d8, 19-20)
-**TS** Temp +4, Rifl +3, Vol +1 Sei esemplari. **Scossi** (−2 a tutto) se entro 6 m da una megera. Non superano mai la banchina. Si arrendono se Malaluna cade o si volta: non sono fanatici, sono impiegati.
-}}
+```statblocco
+nome: Corsaro (6)
+gs: 2
+tipo: Umano guerriero 3
+ca: 16
+pf: 22
+ts: Temp +4, Rifl +3, Vol +1
+iniziativa: +2
+attacchi:
+  - Scimitarra +6 (1d6+3, 18-20)
+  - Balestra leggera +5 (1d8, 19-20)
+```
+**Iniziativa** +2
 
-{{note
-**Arciere corsaro · GS 3** Umano ladro 3 · **PF** 15 · **CA** 17 · **Iniz** +4
-**Att** arco corto +6 (1d6, ×3) · attacco furtivo +2d6, schivare prodigioso
-**TS** Temp +2, Rifl +7, Vol +2 Due esemplari, sulla lancia. Sparano dal buio: i PG con torcia sono bersagli e loro no. Spegnere le luci è una scelta tattica valida e va premiata.
-}}
+**Difesa** **CA 16** · **pf 22** · TS Tempra +4, Riflessi +3, Volontà +1
 
-{{note
-**Guardia del borgo · GS 1/2** Umano guerriero 1 · **PF** 9 · **CA** 15 · **Att** lancia +3 (1d8+1) Quattro, più Orsola. Non sono soldati: se muore uno, gli altri tre scappano a meno che Orsola non sia in vista.
-}}
+**Attacco** **Mischia** scimitarra +6 (1d6+3, 18-20) · **Distanza** balestra leggera +5 (1d8, 19-20)
 
-{{note
-**Ancella · GS 1/3** Umana popolano 1 · **PF** 4 · **CA** 11 · nessun attacco significativo Le nove vive in A10; le quattro prigioniere in C22. **Non combattono e non corrono a lungo** (velocità 6 m dopo la prigionia). Sono un carico, ed è questo il punto.
-}}
+**Tattiche** Sei esemplari. **Scossi** (−2 a tutto) se entro 6 m da una megera. Non superano mai la banchina. Si arrendono se Malaluna cade o si volta: non sono fanatici, sono impiegati.
+
+```statblocco
+nome: Arciere corsaro (2)
+gs: 3
+tipo: Umano ladro 3
+ca: 17
+pf: 15
+ts: Temp +2, Rifl +7, Vol +2
+iniziativa: +4
+attacchi:
+  - Arco corto +6 (1d6, ×3)
+```
+**Iniziativa** +4
+
+**Difesa** **CA 17** · **pf 15** · TS Tempra +2, Riflessi +7, Volontà +2
+
+**Attacco** **Distanza** arco corto +6 (1d6, ×3) · attacco furtivo +2d6
+
+**Capacità speciali**
+- Schivare prodigioso.
+
+**Tattiche** Due esemplari, sulla lancia. Sparano dal buio: i PG con torcia sono bersagli e loro no. Spegnere le luci è una scelta tattica valida e va premiata.
+
+```statblocco
+nome: Guardia del borgo (4)
+gs: 1/2
+tipo: Umano guerriero 1
+ca: 15
+pf: 9
+ts: —
+attacchi:
+  - Lancia +3 (1d8+1)
+```
+**Difesa** **CA 15** · **pf 9**
+
+**Attacco** **Mischia** lancia +3 (1d8+1)
+
+**Tattiche** Quattro, più Orsola. Non sono soldati: se muore uno, gli altri tre scappano a meno che Orsola non sia in vista.
+
+```statblocco
+nome: Ancella
+gs: 1/3
+tipo: Umana popolano 1
+ca: 11
+pf: 4
+ts: —
+velocita: 6 m (dopo la prigionia)
+```
+**Difesa** **CA 11** · **pf 4**
+
+**Attacco** Vel 6 m (dopo la prigionia) · nessun attacco significativo
+
+**Tattiche** Le nove vive in A10; le quattro prigioniere in C22. **Non combattono e non corrono a lungo**. Sono un carico, ed è questo il punto.
 
 {{note
 **Rimandi** **Padre Anselmo Grifo** (vampiro, chierico 7, GS 9): documento principale.

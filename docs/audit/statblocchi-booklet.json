@@ -1,0 +1,14 @@
+{
+  "_cos_e": "Per ogni booklet, quante schede di creatura possono uscire fuori dal riquadro (ADR-0105). Si scende soltanto: --aggiorna non alza un tetto. Lo legge scripts/misura_statblocchi_booklet.py --check.",
+  "tetti": {
+    "07_il Portale Della Forgia Eterna/homebrew/sessione-notte-e-alba/ARC07-NOTTE-E-ALBA-BOOKLET.manifest.json": 0,
+    "07_il Portale Della Forgia Eterna/homebrew/sessione-resurrezione-mille-anni/ARC07-SERATA-GIOCATORI.manifest.json": 0,
+    "07_il Portale Della Forgia Eterna/homebrew/sessione-resurrezione-mille-anni/ARC07-SERATA-RESURREZIONE-BOOKLET.manifest.json": 0,
+    "07_il Portale Della Forgia Eterna/homebrew/sessione-terros/ARC07-SESSIONE-TERROS-BOOKLET.manifest.json": 0,
+    "07_il Portale Della Forgia Eterna/homebrew/volume-mille-anni/ARC07-MILLE-ANNI-VOLUME.manifest.json": 0,
+    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/homebrew/PALIO-BOOKLET.manifest.json": 0,
+    "10-stand-alone/L'abbazia Della Rotta Sicura/homebrew/abbazia-rotta-sicura.manifest.json": 0,
+    "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-DM.manifest.json": 6,
+    "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-FASCICOLO-SCHEDE.manifest.json": 6
+  }
+}

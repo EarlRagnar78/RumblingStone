@@ -16,13 +16,12 @@ attacchi:
   - Mischia randello enorme +13 (2d8+10) o 2 slam +13 (1d8+7)
 ```
 
-> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «4d8», una parte sola dei dadi vita. I dadi vengono dalla formula che la scheda scrive, il bonus da Cos 17 e Robustezza.
 
-> [INFERRED — needs DM confirmation] correzione 3.5 da `scripts/conformita_statblocchi.py`: lotta +18 → **+22**: BAB 7 + For 25 (+7) + Grande (+4) + **Lottare Migliorato** (+4), talento che la scheda elenca e la lotta non contava. La For 25 è confermata dall'attacco +13 e dal danno 2d8+10.
+> correzione 3.5 da `scripts/conformita_statblocchi.py`: lotta +18 → **+22**: BAB 7 + For 25 (+7) + Grande (+4) + **Lottare Migliorato** (+4), talento che la scheda elenca e la lotta non contava. La For 25 è confermata dall'attacco +13 e dal danno 2d8+10.
 
-> [INFERRED — needs DM confirmation] correzione 3.5 da `scripts/conformita_statblocchi.py`: Tempra +10 → **+11**: gigante 4 DV (+4) + Barbaro 4 (+4) + Cos 17 (+3). Il +10 era la Cos 15 **prima dell'innesto**; pf 68, `pf-dado` +27 e la CD 17 dello Sbuffo contano già la Cos 17.
+> correzione 3.5 da `scripts/conformita_statblocchi.py`: Tempra +10 → **+11**: gigante 4 DV (+4) + Barbaro 4 (+4) + Cos 17 (+3). Il +10 era la Cos 15 **prima dell'innesto**; pf 68, `pf-dado` +27 e la CD 17 dello Sbuffo contano già la Cos 17.
 
-> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
+> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
 Large giant (fungal graft), CE. **DV 4d8 + 4d12**. **hp 68**. **CA 18** (−1 taglia, +7 naturale [+5 base, +2 corteccia fungina], +3 pelle, −1 Des), contatto 8, colto alla sprovvista 18. Iniziativa −1. Vel 12 m.
 **TS** Temp +11, Rifl +1, Vol +2. **BAB/Lotta** +7/**+22**.

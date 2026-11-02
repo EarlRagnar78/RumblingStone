@@ -1,0 +1,20 @@
+# Scheda di Artemis come dato — lotto 4g-1 di PIANO-RIPRESA-PR-ABBANDONATE (ADR-0088).
+#
+# Porta solo i fatti che il repo deve tenere onesti: caratteristiche e
+# modificatori permanenti, ognuno con la sua fonte. Classe, PF, stato e artefatti
+# sono di campaign/state.yaml (`party`, `artefatti`) e qui non si copiano.
+# `null` = [INFERRED]: il repo non conosce il valore, e non si inventa. I valori
+# veri arrivano col lotto 4g-2, dalle schede del DM.
+# La vista leggibile, artemis.md, si rigenera con `python3 scripts/render_pg.py`.
+schema_version: 1
+pg: Artemis
+
+caratteristiche:
+  for: {base: null, attuale: null, attestato_da: null}
+  des: {base: null, attuale: null, attestato_da: null}
+  cos: {base: null, attuale: null, attestato_da: null}
+  int: {base: null, attuale: null, attestato_da: null}
+  sag: {base: null, attuale: null, attestato_da: null}
+  car: {base: null, attuale: null, attestato_da: null}
+
+modificatori_permanenti: []

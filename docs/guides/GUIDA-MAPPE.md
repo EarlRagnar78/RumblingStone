@@ -22,6 +22,9 @@ python3 scripts/dm.py maps render "<percorso>/<MASTER>.md"
 # controllare che tutti gli SVG del repo siano in sync coi master
 python3 scripts/dm.py maps validate
 
+# le stesse mappe nello stile delle piante delle città → rendered-pianta/ (§5.4)
+python3 scripts/dm.py maps pianta "<percorso>/<MASTER>.md"
+
 # PNG ad alta risoluzione (stampa / import manuale in un VTT)
 python3 scripts/export_map_png.py "<percorso>/rendered/<mappa>.svg" --scale 3
 
@@ -615,6 +618,98 @@ quale carta dell'assedio viene ogni parametro e quali il canone non fissa.
 
 Le cinque mappe tattiche dell'assedio (carte A-E) sono griglie del repo, in
 `Mappe/dauth-assedio/`, compilate dai loro contratti JSON e collaudate.
+
+### 5.4 Le piante delle città del repo e il tema pianta (ADR-0102)
+
+Le piante che fanno fede per Rethmar, Dauth e Channathgate non vengono da
+Watabou: le disegna il generatore del repo, in `scripts/piante/`. Il motore
+`organica.py` fa i quartieri (celle di Voronoi rilassate), le vie sui loro
+bordi, i lotti e le mura con le torri. Un programma per città (`rethmar.py`,
+`dauth.py`, `channathgate.py`) fissa la forma, il seme e le taglie scelte dal
+DM, e scrive la legenda con i numeri dei luoghi. Serve `requirements-dev.txt`
+(shapely, numpy, scipy). La sera al tavolo si stampa l'SVG committato.
+
+```bash
+# rifà la pianta di una città nel suo posto canonico, e stampa i conti
+python3 scripts/dm.py maps citta rethmar
+# controlla che le tre piante committate siano quelle che i programmi producono
+python3 scripts/dm.py maps citta --check
+# una prova da guardare senza toccare la pianta vera
+python3 scripts/genera_pianta_citta.py dauth -o /tmp/dauth-prova.svg
+```
+
+Per cambiare una pianta si cambia il programma, mai l'SVG: un numero della
+legenda fuori posto si sposta nel programma e la pianta si rigenera. Poi si
+guarda il risultato a occhio, perché il controllo dice solo che la pianta è
+quella del programma, non che è giusta.
+
+Lo stesso stile vale per le mappe tattiche: `--tema pianta` disegna una griglia
+emoji con la roccia tratteggiata e i bordi frastagliati, il lastricato a corsi
+e i terreni con la loro trama, poi sotto la mappa il riquadro «Luoghi» (le
+`@mark`) e la legenda. La griglia, i simboli e le celle calpestabili sono gli
+stessi della pergamena: la roccia si sposta al massimo di un quarto di quadretto.
+
+```bash
+# le mappe di un master nello stile delle piante → rendered-pianta/
+python3 scripts/dm.py maps pianta "<percorso>/<MASTER>.md"
+# tutte le cartelle che hanno già adottato il tema
+python3 scripts/dm.py maps pianta
+```
+
+Il tema si adotta una cartella alla volta. Dove esiste `rendered-pianta/`,
+`validate_maps` lo vuole completo e allineato ai master, come la pergamena;
+dove non esiste nessuno lo pretende. ARC-07 l'ha adottato il 2026-10-23.
+
+### 5.5 Il modo stampa: ogni mappa nel booklet A4 (ADR-0105, ADR-0106)
+
+Una mappa larga più di una trentina di colonne, nel booklet, entra solo
+rimpicciolita: M7-H (44×40) usciva a scala 0,3, con coordinate e legenda fra
+3 e 3,8 pt, e i filtri (grana, marezzatura, ombre sfumate) diventavano strati
+raster a 288 dpi. `misura_stampa.py` li conta tutti.
+
+```bash
+python3 scripts/render_map_svg.py --tema pianta --stampa "<percorso>/<MASTER>.md"
+```
+
+`--stampa` vale per ogni tema e scrive in `rendered-stampa-<tema>/` due SVG
+per mappa:
+
+- `…_mapNN_….svg`: la griglia, con ogni scritta in punti per una mappa larga
+  quanto la gabbia A4 (17,5 cm) e mai sotto i 7,4 pt. Le colonne a due
+  lettere si sfalsano su due righe; le zone portano solo una lettera
+  minuscola in corsivo (*a*, *b*…); niente filtri né vignettatura.
+- `…_mapNN_…_legenda.svg`: luoghi, zone, percorsi e legenda, con le voci
+  lunghe a capo, da mettere nella pagina dopo.
+
+Nel booklet va il tema **pianta** (lo stile delle piante delle città, §5.4):
+Jfs l'ha scelto al cieco del 2026-10-30 contro pergamena e texture, tutte e
+tre dentro i tetti di stampa. Dal 2026-10-30 è lo standard di **ogni** mappa
+del repo (ADR-0106):
+
+- accanto a ogni `rendered/` c'è un `rendered-stampa-pianta/` con la mappa e
+  la `_legenda` di ogni master. Si rigenerano tutte insieme con
+  `python3 scripts/render_map_svg.py --tutti-i-master --tema pianta --stampa`;
+  `validate_maps` segnala quelle mancanti e quelle non allineate al master;
+- nel master di un booklet una mappa generata si punta solo da
+  `rendered-stampa-pianta/`, seguita dalla sua `_legenda`, ognuna seguita da
+  `<!-- nuova-pagina -->`. `validate_booklets` ferma la pergamena e la mappa
+  senza legenda;
+- la griglia ASCII di una mappa che il renderer sa disegnare non si stampa:
+  nel master resta fra `<!-- apparato -->` e `<!-- /apparato -->`, dopo la
+  pianta. `validate_booklets` ferma la griglia stampata. Una vista che non
+  sta su una griglia (una sezione, una carta non in scala) diventa uno schema
+  disegnato nello stile della pianta da `scripts/render_schemi.py`, che la CI
+  controlla con `--check`. Una linea del tempo o un diagramma a caratteri
+  diventa una tabella: `validate_booklets` ferma ogni disegno a riquadri
+  stampato;
+- la mappa alta (più di 1,2 volte la larghezza) allarga il foglio fino al
+  rapporto della pagina, così le scritte restano a 7,4 pt; la legenda lunga
+  mette luoghi e zone su due colonne;
+- in stampa la voce di legenda è intera, parentesi comprese («copertura +4
+  CA, terreno difficile»), e i simboli locali prendono il nome dalla legenda
+  del master.
+
+Pergamena e texture restano per lo schermo e per i VTT.
 
 ---
 

@@ -130,7 +130,10 @@ def file_di_contenuto() -> list[Path]:
     for d in ROOT.iterdir():
         if not d.is_dir() or not d.name.startswith(CONTENUTO):
             continue
-        out.extend(p for p in d.rglob("*.md") if not p.name.endswith(".hb.md"))
+        # `_testi-altrui/`: conversioni di manuali e siti altrui (RICERCA-ARCHI-SENZA-TESTO
+        # D12), tenute come sono; i loro refusi sono della fonte e non si correggono.
+        out.extend(p for p in d.rglob("*.md")
+                   if not p.name.endswith(".hb.md") and "_testi-altrui" not in p.parts)
     return sorted(out)
 
 
@@ -138,6 +141,8 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("files", nargs="*", help="file da controllare (default: tutto il contenuto)")
     ap.add_argument("--strict", action="store_true", help="gli avvisi diventano errori")
+    ap.add_argument("--avvisi", action="store_true",
+                    help="elenca gli avvisi; senza, se ne stampa solo il conto per tipo")
     args = ap.parse_args(argv)
 
     bersagli = [Path(f).resolve() for f in args.files] if args.files else file_di_contenuto()
@@ -153,10 +158,20 @@ def main(argv=None) -> int:
     if args.strict:
         errori += avvisi
         avvisi = []
-    for a in avvisi[:20]:
-        print(f"  ⚠ {a}")
-    if len(avvisi) > 20:
-        print(f"  ⚠ … e altri {len(avvisi) - 20} avvisi")
+    # Gli avvisi sono fermi da un mese (2.450 il 2026-09-24, 2.442 il
+    # 2026-10-22) e i primi venti stampati in CI non li legge nessuno. Dal
+    # 2026-10-22 (lotto 7e di AVVENTURE-COMMUNITY) se ne stampa il conto per
+    # tipo; l'elenco con --avvisi.
+    if args.avvisi:
+        for a in avvisi:
+            print(f"  ⚠ {a}")
+    elif avvisi:
+        per_tipo: dict[str, int] = {}
+        for a in avvisi:
+            tipo = re.sub(r"^.*?:\d+: ", "", a)   # «file:riga: perché»
+            per_tipo[tipo] = per_tipo.get(tipo, 0) + 1
+        print("  ⚠ avvisi (--avvisi per l'elenco): " + " · ".join(
+            f"{n} {tipo}" for tipo, n in sorted(per_tipo.items(), key=lambda kv: -kv[1])))
     if errori:
         print(f"✗ validate_lingua: {len(errori)} refusi in {len(bersagli)} file")
         for e in errori[:60]:

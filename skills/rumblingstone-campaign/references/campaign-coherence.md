@@ -37,6 +37,16 @@ lower-rank file as needing an update.
 5. Inferred / model knowledge                         (last resort, must be flagged)
 ```
 
+**What the table played lives on the group branch, not on `main`.** Rank 1
+means `campaign/state.md` and the session logs of the group's branch
+(`git show origin/campaign-group-<name>:campaign/state.md`; for the first
+table `campaign-group-rumblingstone`, ADR-0090). The `state.md` on `main` is
+the template's state and lags behind. Read the group branch before asking the
+DM a canon question and before rejecting a reader's finding by citing the
+world state: in the second round on ARC-07 (2026-10-18) this closed three
+questions, opened three, and caught a correct rejection that cited the wrong
+source.
+
 If you cannot find a fact in 1–4, **say so**. Do not invent. Ask the DM or
 mark the suggestion as `[INFERRED — needs DM confirmation]`.
 

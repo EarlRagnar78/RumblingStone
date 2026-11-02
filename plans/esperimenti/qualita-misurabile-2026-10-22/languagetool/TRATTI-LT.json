@@ -1,0 +1,553 @@
+{
+ "_nota": "Rilievi di LanguageTool 6.8 sulle coppie di VOTI.json (migliora_prosa.py languagetool). lt_refusi: TYPOS senza le parole del dizionario dei nomi; lt_altri: tutti gli altri gruppi.",
+ "giro2-2": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro2-3": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 1
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 1
+  }
+ },
+ "giro2-4": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro2-5": {
+  "vincente": {
+   "lt_refusi": 1,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro2-6": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro2-7": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro2-8": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro2-9": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro2-10": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro2-11": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro2-12": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro2-13": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro2-16": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro2-17": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro2-18": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro2-20": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro3-1": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro3-3": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro3-4": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro3-6": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro3-8": {
+  "vincente": {
+   "lt_refusi": 1,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 1,
+   "lt_altri": 0
+  }
+ },
+ "giro3-14": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro3-17": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro3-22": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "giro3-23": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "prova-3": {
+  "vincente": {
+   "lt_refusi": 1,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 1,
+   "lt_altri": 0
+  }
+ },
+ "prova-5": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "prova-8": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "prova-11": {
+  "vincente": {
+   "lt_refusi": 1,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 1,
+   "lt_altri": 0
+  }
+ },
+ "prova-12": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "prova-15": {
+  "vincente": {
+   "lt_refusi": 1,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 1,
+   "lt_altri": 0
+  }
+ },
+ "prova-16": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "prova-17": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "prova-20": {
+  "vincente": {
+   "lt_refusi": 1,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 1,
+   "lt_altri": 0
+  }
+ },
+ "prova-21": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "prova-23": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "prova-27": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "prova-31": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "riscrittura-2026-10-22-1-1": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 1
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 1
+  }
+ },
+ "riscrittura-2026-10-22-1-2": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "riscrittura-2026-10-22-1-3": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "riscrittura-2026-10-22-1-4": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "riscrittura-2026-10-22-1-5": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "riscrittura-2026-10-22-1-6": {
+  "vincente": {
+   "lt_refusi": 1,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 1,
+   "lt_altri": 0
+  }
+ },
+ "riscrittura-2026-10-22-1-8": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "riscrittura-2026-10-22-1-9": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "riscrittura-2026-10-22-1-10": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "riscrittura-2026-10-22-1-11": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "riscrittura-2026-10-22-1-12": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "riscrittura-2026-10-22-1-13": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "riscrittura-2026-10-22-1-14": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "riscrittura-2026-10-22-1-16": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 1
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "riscrittura-2026-10-22-2-1": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 1
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 1
+  }
+ },
+ "riscrittura-2026-10-22-2-2": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ },
+ "riscrittura-2026-10-22-2-3": {
+  "vincente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  },
+  "perdente": {
+   "lt_refusi": 0,
+   "lt_altri": 0
+  }
+ }
+}

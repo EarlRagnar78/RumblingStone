@@ -1,0 +1,325 @@
+BASE ARC-07 (5 DEF) e ARC-08 — rilievi della catena V e della catena N
+tempi: V 2.57 s · N 7.58 s (coerenza 3.81 s) + caricamento spaCy 1.61 s — una corsa, 4 core locali; il caricamento di spaCy è a parte
+
+file                                                        box     V     N  solo V  solo N  entr.  puliti V  puliti N
+tale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md   36    25     6      24       5      1        13        31
+ale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md   22    14     3      13       2      1        10        19
+tale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md   20    11     1      10       0      1        10        19
+tale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md   37    20     3      20       3      0        17        34
+tale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md    9     6     1       6       1      0         4         8
+08_La Battaglia Di Hammerfist/ARC08-00-INDICE.md              0     0     0       0       0      0         0         0
+08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md           73   119    40      93      14     26        11        45
+ia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md    6     9     3       6       0      3         0         3
+08_La Battaglia Di Hammerfist/ARC08-03-REGISTRO-PERDITE.md    0     0     0       0       0      0         0         0
+8_La Battaglia Di Hammerfist/ARC08-04-MARCIA-MANO-ROSSA.md    0     0     0       0       0      0         0         0
+La Battaglia Di Hammerfist/ARC08-10-ESITI-E-CONTINGENZE.md    0     0     0       0       0      0         0         0
+08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md        1     2     1       1       0      1         0         0
+Battaglia Di Hammerfist/ARC08-12-CRONOLOGIA-MARCH-CLOCK.md    0     0     0       0       0      0         0         0
+08_La Battaglia Di Hammerfist/ARC08-13-TESORO-WBL-AUDIT.md    0     0     0       0       0      0         0         0
+08_La Battaglia Di Hammerfist/ARC08-14-ATLANTE-IMMAGINI.md    0     0     0       0       0      0         0         0
+_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md    6     6     2       4       0      2         2         4
+08_La Battaglia Di Hammerfist/ARC08-16-CUE-SONORI.md          0     0     0       0       0      0         0         0
+ Battaglia Di Hammerfist/ARC08-17-BANCO-HAMMERFIST-1372.md    1     0     0       0       0      0         1         1
+08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md     1     2     1       2       1      0         0         0
+ers-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md   13    14     6      12       4      2         3         9
+08_La Battaglia Di Hammerfist/mass_combat_guide_Dm.md         4     1     1       0       0      1         3         3
+TOTALE                                                      229   229    68     191      30     38        74       176
+
+rilievi per norma (box):
+norma                                V     N  famiglia · strumento
+senza c'è né dislocazione          129     0  solo V · misura_craft --costrutto-italiano
+box con più nomi propri             53     0  solo V · misura_craft nomi_propri (MQM box_piu_di_un_nome_proprio)
+gerundio in coda                    10    10  comuni · misura_craft --stile
+sogg_preverbale                      0    18  solo N · misura_sintassi
+stare+gerundio                       7    10  comuni · validate_prosa CALCHI_READ_ALOUD (V) · + misura_sintassi (N)
+maiuscole_di_enfasi                  8     8  comuni · validate_prosa
+box con parentesi                    7     7  comuni · misura_craft difetti_dei_box
+tic minori in gruppo                 4     4  comuni · ciclo_prosa DEBOLI
+possessivo sul corpo                 8     0  solo V · validate_prosa CALCHI_READ_ALOUD
+oltre due livelli                    0     7  solo N · misura_sintassi
+sembra/pare                          2     2  comuni · voto_scrittura sembra_esitanti
+agg_complesso                        0     2  solo N · misura_sintassi
+P1                                   1     0  solo V · misura_craft P1
+
+scene (domande_developer): V = D1-D17, N = D1-D21 (D20 indicatore)
+file                                                       scene    V    N  regole solo N
+tale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md    10    0    5  D18 4 D19 1
+ale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md     5    0    0  
+tale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md     8    0    0  
+tale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md    13    6   15  D18 8 D19 1
+tale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md     3    2    4  D18 2
+08_La Battaglia Di Hammerfist/ARC08-00-INDICE.md               0    0    0  
+08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md            22    3    7  D18 3 D19 1
+ia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md     0    0    0  
+08_La Battaglia Di Hammerfist/ARC08-03-REGISTRO-PERDITE.md     0    0    0  
+8_La Battaglia Di Hammerfist/ARC08-04-MARCIA-MANO-ROSSA.md     0    0    0  
+La Battaglia Di Hammerfist/ARC08-10-ESITI-E-CONTINGENZE.md     0    0    0  
+08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md         0    0    0  
+Battaglia Di Hammerfist/ARC08-12-CRONOLOGIA-MARCH-CLOCK.md     0    0    0  
+08_La Battaglia Di Hammerfist/ARC08-13-TESORO-WBL-AUDIT.md     0    0    0  
+08_La Battaglia Di Hammerfist/ARC08-14-ATLANTE-IMMAGINI.md     0    0    0  
+_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md     0    0    0  
+08_La Battaglia Di Hammerfist/ARC08-16-CUE-SONORI.md           0    0    0  
+ Battaglia Di Hammerfist/ARC08-17-BANCO-HAMMERFIST-1372.md     0    0    0  
+08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md      0    0    0  
+ers-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md     7    9    9  
+08_La Battaglia Di Hammerfist/mass_combat_guide_Dm.md          0    0    0  
+
+coerenza_campagna fatti (solo N): ARC-07: 0 contraddizioni su 90 attributi, 17 file · ARC-08: 1 contraddizioni su 276 attributi, 16 file
+
+PER BOX (V: rilievi catena vecchia · N: catena nuova · = in entrambe)
+
+07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md
+  r.371     52p  V 1 N 0  SCENA 1 — Il risveglio nella Sala, e l'a  V:senza c'è né dislocazione×1
+  r.418    100p  V 2 N 1  L'apertura dell'Affresco A5 (recuperato   V:box con più nomi propri×1, V:senza c'è né dislocazione×1, N:sogg_preverbale×1
+  r.429     35p  V 1 N 0  L'apertura dell'Affresco A5 (recuperato   V:senza c'è né dislocazione×1
+  r.440     53p  V 0 N 0  L'apertura dell'Affresco A5 (recuperato   pulito
+  r.517     69p  V 1 N 1  SCENA 2 — Le piattaforme di cristallo     V:senza c'è né dislocazione×1, N:agg_complesso×1
+  r.548     73p  V 1 N 0  ZONA 1 — Le Piattaforme di Cristallo (0–  V:senza c'è né dislocazione×1
+  r.645     82p  V 1 N 0  SCENA 3 — La foresta, e gli Xorn al pila  V:senza c'è né dislocazione×1
+  r.667     41p  V 1 N 1  SCENA 3 — La foresta, e gli Xorn al pila  V:senza c'è né dislocazione×1, N:sogg_preverbale×1
+  r.857    105p  V 1 N 1  SCENA 4 — Il giardino che canta           =tic minori in gruppo×1
+  r.1003    37p  V 1 N 0  SCENA 5 — Il Seme-Mercato (si gioca dopo  V:senza c'è né dislocazione×1
+  r.1008    99p  V 1 N 0  SCENA 5 — Il Seme-Mercato (si gioca dopo  V:senza c'è né dislocazione×1
+  r.1184    87p  V 0 N 0  Il contratto del Seme, per intero `[CANO  pulito
+  r.1195    54p  V 1 N 0  Il contratto del Seme, per intero `[CANO  V:senza c'è né dislocazione×1
+  r.1202    94p  V 1 N 0  Il contratto del Seme, per intero `[CANO  V:senza c'è né dislocazione×1
+  r.1212    48p  V 1 N 0  Il contratto del Seme, per intero `[CANO  V:senza c'è né dislocazione×1
+  r.1311    59p  V 0 N 0  La scena al tavolo — l'ora della pergame  pulito
+  r.1327   105p  V 1 N 0  SCENA 6 — L'oceano di roccia, e il salto  V:box con più nomi propri×1
+  r.1412    17p  V 0 N 0  7a. Raggiungere il Tempio (co-op: Ancora  pulito
+  r.1418    57p  V 1 N 0  7a. Raggiungere il Tempio (co-op: Ancora  V:senza c'è né dislocazione×1
+  r.1448    42p  V 1 N 0  7b. ⚒️ ANTICAMERA DELLA MAGNETITE — La S  V:senza c'è né dislocazione×1
+  r.1456    34p  V 1 N 0  7b. ⚒️ ANTICAMERA DELLA MAGNETITE — La S  V:senza c'è né dislocazione×1
+  r.1463    46p  V 0 N 0  7b. ⚒️ ANTICAMERA DELLA MAGNETITE — La S  pulito
+  r.1566   101p  V 0 N 0  7b. ⚒️ ANTICAMERA DELLA MAGNETITE — La S  pulito
+  r.1682    89p  V 1 N 0  8a. L'ARRIVO — la soglia, l'attracco e i  V:senza c'è né dislocazione×1
+  r.1690   105p  V 0 N 0  8a. L'ARRIVO — la soglia, l'attracco e i  pulito
+  r.1707   101p  V 1 N 2  8a. L'ARRIVO — la soglia, l'attracco e i  V:senza c'è né dislocazione×1, N:sogg_preverbale×2
+  r.1739   121p  V 0 N 0  8b. IL DISTACCO — l'Altare si centra sul  pulito
+  r.1992   119p  V 2 N 0  8b. IL DISTACCO — l'Altare si centra sul  V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.2511    51p  V 0 N 0  ROUND 1 — «Il contatto»                   pulito
+  r.2547    30p  V 1 N 0  ROUND 1 — «Il contatto»                   V:senza c'è né dislocazione×1
+  r.2554    53p  V 1 N 0  ROUND 2 — «La resistenza»                 V:senza c'è né dislocazione×1
+  r.2588    35p  V 1 N 0  ROUND 2 — «La resistenza»                 V:senza c'è né dislocazione×1
+  r.2595    52p  V 0 N 0  ROUND 3 — «L'assestamento»                pulito
+  r.2625    62p  V 0 N 0  ROUND 3 — «L'assestamento»                pulito
+  r.2644   132p  V 0 N 0  FASE 3 — L'Incastonatura e il Ritorno di  pulito
+  r.2826    55p  V 0 N 0  SCENA 10 — Il ritorno alla Sala           pulito
+
+07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md
+  r.234     46p  V 1 N 0  Cosa mostra A7, valore per valore         V:senza c'è né dislocazione×1
+  r.371    109p  V 2 N 0  ZONA A — La Sala della Forgia Eterna (l'  V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.476     75p  V 1 N 1  A1 — «L'Alba del Mondo» (NORD · statico)  =maiuscole_di_enfasi×1
+  r.484     62p  V 2 N 0  A1 — «L'Alba del Mondo» (NORD · statico)  V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.515    107p  V 0 N 0  A2 — «I Quattro Eroi Predestinati» (NORD  pulito
+  r.535    121p  V 1 N 1  A3 — «La Visione del Risveglio» (NORD-ES  V:box con più nomi propri×1, N:oltre due livelli×1
+  r.598     66p  V 1 N 0  A5 — «Il Portale della Terra» (EST · por  V:senza c'è né dislocazione×1
+  r.609     99p  V 0 N 0  A6 — «Il Viaggio Attraverso il Tempo» (S  pulito
+  r.619     42p  V 1 N 0  A6 — «Il Viaggio Attraverso il Tempo» (S  V:senza c'è né dislocazione×1
+  r.686     82p  V 1 N 0  A8 — «Il Ritorno Trionfale» (SUD · vuoto  V:senza c'è né dislocazione×1
+  r.769     84p  V 1 N 0  SCENA 3 — La Visione Condivisa            V:box con più nomi propri×1
+  r.803    107p  V 1 N 0  SCENA 4 — La Stanza della Corona          V:box con più nomi propri×1
+  r.831     66p  V 0 N 0  SCENA 4 — La Stanza della Corona          pulito
+  r.916     74p  V 1 N 0  Prima la regola, perché è la domanda che  V:senza c'è né dislocazione×1
+  r.948     61p  V 0 N 1  🛡️ THORIK — le mani fredde sotto la trav  N:oltre due livelli×1
+  r.983    115p  V 0 N 0  ⚒️ TORDEK — lo zaino                      pulito
+  r.1003    45p  V 1 N 0  🔮 ARTEMIS — la porta, dopo che hai già v  V:senza c'è né dislocazione×1
+  r.1009    61p  V 0 N 0  🔮 ARTEMIS — la porta, dopo che hai già v  pulito
+  r.1020    11p  V 0 N 0  🔮 ARTEMIS — la porta, dopo che hai già v  pulito
+  r.1030    63p  V 0 N 0  🌙 HELLA — dall'altra parte `[handout per  pulito
+  r.1037    47p  V 0 N 0  🌙 HELLA — dall'altra parte `[handout per  pulito
+  r.1047    42p  V 0 N 0  Al risveglio                              pulito
+
+07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md
+  r.356    126p  V 2 N 1  SCENA 1 — L'Altare del Cuore              =tic minori in gruppo×1, V:box con più nomi propri×1
+  r.459     67p  V 0 N 0  La riga che nessuno ha ancora detto a Th  pulito
+  r.489     96p  V 0 N 0  SCENA 2 — Il Cuore di Moradin             pulito
+  r.601     57p  V 1 N 0  ⚙️ Come si gioca questo rito: la regia<!  V:box con più nomi propri×1
+  r.613     36p  V 0 N 0  ⚙️ Come si gioca questo rito: la regia<!  pulito
+  r.657     37p  V 1 N 0  🔨 Come lo chiede Moradin: il perché, lo   V:senza c'è né dislocazione×1
+  r.666      9p  V 0 N 0  🔨 Come lo chiede Moradin: il perché, lo   pulito
+  r.682      8p  V 0 N 0  🔨 Come lo chiede Moradin: il perché, lo   pulito
+  r.725     35p  V 0 N 0  DONO 1 — THORIK: «La Forza» → Lo Scudo d  pulito
+  r.762     37p  V 1 N 0  DONO 2 — TORDEK: «Il Respiro» → Pelle di  V:senza c'è né dislocazione×1
+  r.787     27p  V 1 N 0  DONO 3 — ARTEMIS: «La Scintilla» → Il Ro  V:senza c'è né dislocazione×1
+  r.957     81p  V 0 N 0  SCENA 5 — La Custode delle Radici         pulito
+  r.1043    26p  V 0 N 0  SCENA 6 — Il risveglio                    pulito
+  r.1049    81p  V 1 N 0  SCENA 6 — Il risveglio                    V:senza c'è né dislocazione×1
+  r.1065    58p  V 1 N 0  SCENA 6 — Il risveglio                    V:senza c'è né dislocazione×1
+  r.1076    81p  V 0 N 0  SCENA 6 — Il risveglio                    pulito
+  r.1151    98p  V 0 N 0  SCENA 7 — Il racconto delle prove         pulito
+  r.1193    39p  V 1 N 0  §8-bis — LA PRIMA ORA DOPO IL RITO        V:senza c'è né dislocazione×1
+  r.1239    52p  V 1 N 0  SCENA 8 — La soglia                       V:senza c'è né dislocazione×1
+  r.1269    34p  V 1 N 0  SCENA 8 — La soglia                       V:senza c'è né dislocazione×1
+
+07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md
+  r.444     93p  V 0 N 0  SCENA 1 — Il portale e il bosco al tramo  pulito
+  r.485     55p  V 1 N 0  SCENA 1 — Il portale e il bosco al tramo  V:senza c'è né dislocazione×1
+  r.513     74p  V 0 N 0  SCENA 2 — La pattuglia di Durin           pulito
+  r.588     75p  V 0 N 0  SCENA 3 — La porta e la targa di bronzo   pulito
+  r.605     50p  V 1 N 0  SCENA 3 — La porta e la targa di bronzo   V:senza c'è né dislocazione×1
+  r.658    105p  V 0 N 1  SCENA 4 — Il consiglio di guerra di Re T  N:sogg_preverbale×1
+  r.721     87p  V 1 N 1  SCENA 4 — Il consiglio di guerra di Re T  V:senza c'è né dislocazione×1, N:stare+gerundio×1
+  r.730     21p  V 0 N 0  SCENA 4 — Il consiglio di guerra di Re T  pulito
+  r.930     87p  V 0 N 0  SCENA 5 — La notte nella fortezza         pulito
+  r.947     65p  V 0 N 0  SCENA 5 — La notte nella fortezza         pulito
+  r.970     60p  V 1 N 0  SCENA 5 — La notte nella fortezza         V:senza c'è né dislocazione×1
+  r.1040    67p  V 0 N 0  I Treant: come lo viene a sapere Hella,   pulito
+  r.1135   118p  V 0 N 0  ⚒️ La fucina di notte — Gunnvor, e lo sc  pulito
+  r.1578    50p  V 1 N 0  SCENA 6 — Il mare di tende                V:senza c'è né dislocazione×1
+  r.1616    81p  V 0 N 0  SCENA 6 — Il mare di tende                pulito
+  r.1789    57p  V 1 N 0  ✈️ Variante — dall'alto, invisibili e in  V:senza c'è né dislocazione×1
+  r.1964    29p  V 1 N 0  SCENA 7 — La tenda del comando            V:senza c'è né dislocazione×1
+  r.1968    81p  V 0 N 0  SCENA 7 — La tenda del comando            pulito
+  r.2142    49p  V 1 N 1  ⚖️ Il grigio — perché crede di aver ragi  V:senza c'è né dislocazione×1, N:stare+gerundio×1
+  r.2148    29p  V 1 N 0  ⚖️ Il grigio — perché crede di aver ragi  V:senza c'è né dislocazione×1
+  r.2152    28p  V 1 N 0  ⚖️ Il grigio — perché crede di aver ragi  V:senza c'è né dislocazione×1
+  r.2337    25p  V 1 N 0  Come si combatte, se si arriva a combatt  V:senza c'è né dislocazione×1
+  r.2396    44p  V 1 N 0  SCENA 8 — Zog'tar                         V:senza c'è né dislocazione×1
+  r.2774    71p  V 0 N 0  SCENA 9 — Vatore, fra le tende            pulito
+  r.2784     9p  V 0 N 0  SCENA 9 — Vatore, fra le tende            pulito
+  r.2897    83p  V 0 N 0  SCENA 10 — Le mura all'alba               pulito
+  r.2929    61p  V 1 N 0  SCENA 10 — Le mura all'alba               V:senza c'è né dislocazione×1
+  r.3091    88p  V 0 N 0  SCENA 11 — Il duello con Skullcrusher     pulito
+  r.3109    27p  V 1 N 0  SCENA 11 — Il duello con Skullcrusher     V:senza c'è né dislocazione×1
+  r.3256    45p  V 1 N 0  Tattiche di Skullcrusher — regia round p  V:senza c'è né dislocazione×1
+  r.3466   113p  V 0 N 0  La scena, i primi tre momenti             pulito
+  r.3495    35p  V 1 N 0  La scena, i primi tre momenti             V:senza c'è né dislocazione×1
+  r.3541    78p  V 0 N 0  Momento 4 — l'Aura della Forgia Eterna `  pulito
+  r.3571    62p  V 1 N 0  Momento 5 — il torque del re `[CANONE —   V:senza c'è né dislocazione×1
+  r.3600    48p  V 1 N 0  SCENA 13 — Il Rubino e il ritorno         V:senza c'è né dislocazione×1
+  r.3606    82p  V 1 N 0  SCENA 13 — Il Rubino e il ritorno         V:senza c'è né dislocazione×1
+  r.3614    61p  V 1 N 0  SCENA 13 — Il Rubino e il ritorno         V:senza c'è né dislocazione×1
+
+07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md
+  r.386     80p  V 0 N 1  SCENA 1 — Lo strappo fra le ere           N:sogg_preverbale×1
+  r.452     63p  V 0 N 0  SCENA 2 — L'apparizione                   pulito
+  r.458     98p  V 0 N 0  SCENA 2 — L'apparizione                   pulito
+  r.467     20p  V 0 N 0  SCENA 2 — L'apparizione                   pulito
+  r.471     65p  V 1 N 0  SCENA 2 — L'apparizione                   V:senza c'è né dislocazione×1
+  r.579     61p  V 1 N 0  La Corona si completa, dopo l'uso `[CANO  V:senza c'è né dislocazione×1
+  r.640     53p  V 1 N 0  SCENA 3 — La pulizia e il passaggio       V:senza c'è né dislocazione×1
+  r.744     45p  V 1 N 0  Se i PG…                                  V:senza c'è né dislocazione×1
+  r.802     55p  V 2 N 0  Il passaggio di consegne                  V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+
+08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md
+  r.153     62p  V 1 N 0  🐉 FAUCI DI PALUDE (Drago Nero Adulto Ava  V:box con più nomi propri×1
+  r.228     99p  V 2 N 1  🐉 FAUCI DI PALUDE (Drago Nero Adulto Ava  =box con parentesi×1, V:senza c'è né dislocazione×1
+  r.289     66p  V 2 N 0  ⚔️ GENERALE GRIMJAW (Orog Guerriero 10°/  V:possessivo sul corpo×1, V:senza c'è né dislocazione×1
+  r.332     59p  V 1 N 0  👹 GORTHAK IL TRIFRONTE (Ettin a Tre Test  V:box con più nomi propri×1
+  r.380     60p  V 2 N 0  👑 RE THOREK HAMMERFIST (Nano Guerriero 1  V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.415     55p  V 3 N 0  ⛪ MADRE SUPERIORA DANA FORGIAPIETRA (Nan  V:box con più nomi propri×1, V:possessivo sul corpo×1, V:senza c'è né dislocazione×1
+  r.474     51p  V 0 N 0  🎵 LE CANTITRICI DELLA PIETRA (5 Nane Chi  pulito
+  r.510     46p  V 2 N 1  🎵 LE CANTITRICI DELLA PIETRA (5 Nane Chi  =box con parentesi×1, V:senza c'è né dislocazione×1
+  r.520     54p  V 1 N 1  🦉 SIGNORE VENTOLESTO (Gufo Gigante Celes  =gerundio in coda×1
+  r.596     53p  V 1 N 0  🐻 ORION PELLEORSA (Druido Umano di 14° l  V:senza c'è né dislocazione×1
+  r.638     56p  V 2 N 0  🎶 MAESTRO TEMPESTAS (Mezzelfo Bardo 12°/  V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.688     51p  V 2 N 0  ⚔️ BORIN FERROPUGNO (Nano Guerriero 10°/  V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.728     40p  V 2 N 0  🏹 DARA OCCHIOLESTO (Nana Ranger 8°/Esplo  V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.771     56p  V 3 N 1  ⚡ THORIN RUNAFORTE (Nano Chierico 9°/Sac  =box con parentesi×1, V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.822     62p  V 2 N 0  🎭 NALA CANTAPIETRE (Nana Bardo 8°/Spia M  V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.1193    56p  V 2 N 1  PRIMA DELL'INTRODUZIONE — L'ORDA SI SENT  =tic minori in gruppo×1, V:senza c'è né dislocazione×1
+  r.1204    82p  V 1 N 0  INTRODUZIONE DA LEGGERE AI GIOCATORI:     V:box con più nomi propri×1
+  r.1350    99p  V 1 N 0  ⚔️ Incontro 1B: Il Consiglio di Guerra    V:box con più nomi propri×1
+  r.1384    71p  V 1 N 3  🌩️ Incontro 1E: Presagi Funesti           =stare+gerundio×1, N:sogg_preverbale×2
+  r.1393    67p  V 1 N 0  🐉 Incontro 1F: La Dimostrazione di Forza  V:senza c'è né dislocazione×1
+  r.1405     7p  V 0 N 0  🐉 Incontro 1F: La Dimostrazione di Forza  pulito
+  r.1426    89p  V 2 N 0  INTRODUZIONE SESSIONE 2:                  V:box con più nomi propri×1, V:possessivo sul corpo×1
+  r.1434    67p  V 2 N 2  Round 1: L'Iniziazione                    V:box con più nomi propri×1, V:senza c'è né dislocazione×1, N:oltre due livelli×1, N:sogg_preverbale×1
+  r.1673    64p  V 1 N 0  Round 6-7: La Pressione Cresce            V:box con più nomi propri×1
+  r.1684    54p  V 3 N 2  Round 6-7: La Pressione Cresce            =gerundio in coda×1, =sembra/pare×1, V:senza c'è né dislocazione×1
+  r.1695    71p  V 0 N 0  Round 8-9: L'Intervento del Drago         pulito
+  r.1723    74p  V 1 N 0  INTRODUZIONE GIORNO 2:                    V:box con più nomi propri×1
+  r.1746    66p  V 3 N 1  INCONTRO ÉLITE 2C: Duello dei Comandanti  =stare+gerundio×1, V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.1771    66p  V 1 N 0  🛡️ Round 11-12: Le Cantitrici della Piet  V:senza c'è né dislocazione×1
+  r.1800    70p  V 1 N 0  INTRODUZIONE GIORNO 3:                    V:box con più nomi propri×1
+  r.1823    89p  V 4 N 2  🐉 Il Momento Critico: L'Attacco Definiti  =maiuscole_di_enfasi×1, =stare+gerundio×1, V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.2034    68p  V 2 N 0  🏃‍♂️ La Ritirata Disperata                V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.2058    95p  V 0 N 2  INCONTRO 2F: L'INCROCIO SILENZIOSO (Imbo  N:sogg_preverbale×2
+  r.2114    47p  V 0 N 0  ROUND 2: LE LAME NEL BUIO                 pulito
+  r.2150    84p  V 3 N 0  INTRODUZIONE SESSIONE 3:                  V:box con più nomi propri×1, V:possessivo sul corpo×1, V:senza c'è né dislocazione×1
+  r.2158    94p  V 2 N 0  🕳️ Il Cuore della Montagna                V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.2212    77p  V 4 N 1  INCONTRO 3A: Il Cerchio della Disperazio  =gerundio in coda×1, V:box con più nomi propri×1, V:possessivo sul corpo×1, V:senza c'è né dislocazione×1
+  r.2220    61p  V 2 N 1  INCONTRO 3B: L'Assalto Finale             =stare+gerundio×1, V:senza c'è né dislocazione×1
+  r.2410    69p  V 3 N 3  INCONTRO 3C: Il Miracolo della Sfera      =gerundio in coda×2, V:senza c'è né dislocazione×1, N:oltre due livelli×1
+  r.2412    61p  V 2 N 1  INCONTRO 3C: Il Miracolo della Sfera      V:box con più nomi propri×1, V:senza c'è né dislocazione×1, N:sogg_preverbale×1
+  r.2416    70p  V 3 N 1  Il Grido di Riconoscimento:               V:box con più nomi propri×1, V:possessivo sul corpo×1, V:senza c'è né dislocazione×1, N:sogg_preverbale×1
+  r.2480    82p  V 3 N 2  INCONTRO 3D: La Vendetta dei Nani         =box con parentesi×1, =maiuscole_di_enfasi×1, V:senza c'è né dislocazione×1
+  r.2484    30p  V 1 N 0  INCONTRO 3D: La Vendetta dei Nani         V:senza c'è né dislocazione×1
+  r.2706    79p  V 4 N 2  INTRODUZIONE SESSIONE 4:                  =gerundio in coda×1, =stare+gerundio×1, V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.2730    72p  V 0 N 1  INCONTRO 4A: I Presagi del Cielo          N:sogg_preverbale×1
+  r.2742    80p  V 1 N 0  INCONTRO 4B: L'Arrivo dei Gufi            V:senza c'è né dislocazione×1
+  r.2744    70p  V 2 N 1  INCONTRO 4B: L'Arrivo dei Gufi            =maiuscole_di_enfasi×1, V:possessivo sul corpo×1
+  r.2854    61p  V 3 N 1  INCONTRO BOSS 4A: Gufi vs Drago - Il Due  =maiuscole_di_enfasi×1, V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.2871    60p  V 2 N 0  INCONTRO BOSS 4A: Gufi vs Drago - Il Due  V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.2875    57p  V 1 N 1  INCONTRO BOSS 4A: Gufi vs Drago - Il Due  V:senza c'è né dislocazione×1, N:sogg_preverbale×1
+  r.2878    84p  V 2 N 0  INCONTRO BOSS 4A: Gufi vs Drago - Il Due  V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.2895    73p  V 3 N 1  INCONTRO BOSS 4A: Gufi vs Drago - Il Due  =maiuscole_di_enfasi×1, V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.2946    40p  V 1 N 0  ROUND 18-23: LA PICCHIATA E IL DUELLO `[  V:senza c'è né dislocazione×1
+  r.2964    66p  V 3 N 2  Se Fauci fugge (sotto i 50 pf)            =stare+gerundio×1, V:box con più nomi propri×1, V:senza c'è né dislocazione×1, N:oltre due livelli×1
+  r.2979    64p  V 0 N 0  INCONTRO 4B: La Pioggia di Morte Elfica   pulito
+  r.3057    76p  V 3 N 1  INCONTRO 4C: "BARUK KHAZAD! KHAZAD AI-ME  =maiuscole_di_enfasi×1, V:P1×1, V:box con più nomi propri×1
+  r.3059    77p  V 2 N 2  INCONTRO 4C: "BARUK KHAZAD! KHAZAD AI-ME  =maiuscole_di_enfasi×1, V:senza c'è né dislocazione×1, N:agg_complesso×1
+  r.3062    10p  V 0 N 0  INCONTRO 4C: "BARUK KHAZAD! KHAZAD AI-ME  pulito
+  r.3128    72p  V 0 N 0  Meccaniche della Carica Epica:            pulito
+  r.3143    63p  V 2 N 0  INCONTRO BOSS 4D: Gli Ultimi Campioni     V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.3217    52p  V 1 N 0  IL CAMPO DOPO LA BATTAGLIA                V:senza c'è né dislocazione×1
+  r.3219    58p  V 1 N 0  IL CAMPO DOPO LA BATTAGLIA                V:senza c'è né dislocazione×1
+  r.3255    70p  V 0 N 0  LE LAPIDI DI FERRO                        pulito
+  r.3258    54p  V 2 N 0  LE LAPIDI DI FERRO                        V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.3262    87p  V 2 N 0  IL MOMENTO DI RIFLESSIONE                 V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.3266    88p  V 2 N 0  L'ADDIO AGLI ALLEATI                      V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.3275    67p  V 1 N 0  ONORI REGALI                              V:box con più nomi propri×1
+  r.3294    70p  V 1 N 0  UN MESE DOPO                              V:box con più nomi propri×1
+  r.3305    65p  V 0 N 1  LA CANZONE DEI BARDI                      N:sogg_preverbale×1
+  r.3693    36p  V 1 N 0  Scheda 1: BORIN FERROPUGNO, Il Martello   V:senza c'è né dislocazione×1
+  r.3718    28p  V 2 N 1  Scheda 2: DARA OCCHIOLESTO, L'Occhio del  =gerundio in coda×1, V:senza c'è né dislocazione×1
+  r.3746    33p  V 1 N 0  Scheda 3: THORIN RUNAFORTE, La Voce di M  V:senza c'è né dislocazione×1
+  r.3774    35p  V 1 N 0  Scheda 4: NALA CANTAPIETRE, La Lama Nasc  V:senza c'è né dislocazione×1
+
+08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md
+  r.115     98p  V 2 N 1  FAUCI DI PALUDE                           =box con parentesi×1, V:senza c'è né dislocazione×1
+  r.439     46p  V 2 N 1  LE CANTITRICI DELLA PIETRA                =box con parentesi×1, V:senza c'è né dislocazione×1
+  r.619     36p  V 1 N 0  BORIN FERROPUGNO, Il Martello di Hammerf  V:senza c'è né dislocazione×1
+  r.643     28p  V 2 N 1  DARA OCCHIOLESTO, L'Occhio delle Montagn  =gerundio in coda×1, V:senza c'è né dislocazione×1
+  r.670     33p  V 1 N 0  THORIN RUNAFORTE, La Voce di Moradin      V:senza c'è né dislocazione×1
+  r.697     35p  V 1 N 0  NALA CANTAPIETRE, La Lama Nascosta        V:senza c'è né dislocazione×1
+
+08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md
+  r.83      71p  V 2 N 1  2. La cucitura D16 — il salto del Rubino  =tic minori in gruppo×1, V:box con più nomi propri×1
+
+08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md
+  r.25      36p  V 1 N 0  HANDOUT 1 — BORIN FERROPUGNO, Il Martell  V:senza c'è né dislocazione×1
+  r.40      19p  V 1 N 1  HANDOUT 2 — DARA OCCHIOLESTO, L'Occhio d  =gerundio in coda×1
+  r.55      18p  V 0 N 0  HANDOUT 3 — THORIN RUNAFORTE, La Voce di  pulito
+  r.69      18p  V 0 N 0  HANDOUT 4 — NALA CANTAPIETRE, La Lama Na  pulito
+  r.89      58p  V 1 N 0  HANDOUT 5 — La Runa di Pietra dei Custod  V:senza c'è né dislocazione×1
+  r.119     36p  V 3 N 1  HANDOUT 6 — Il Canto della Cantillazione  =box con parentesi×1, V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+
+08_La Battaglia Di Hammerfist/ARC08-17-BANCO-HAMMERFIST-1372.md
+  r.60      99p  V 0 N 0  §1 · Durante la difesa: il banco è chius  pulito
+
+08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md
+  r.42     164p  V 2 N 1  2. Atto 3 — Il riconoscimento dei Custod  V:box con più nomi propri×1, V:possessivo sul corpo×1, N:stare+gerundio×1
+
+08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md
+  r.482     45p  V 0 N 1  FASE 1: L'AVVISTAMENTO (Round 1)          N:sogg_preverbale×1
+  r.496     52p  V 2 N 2  FASE 2: LA PICCHIATA MORTALE (Round 2-3)  =gerundio in coda×1, V:senza c'è né dislocazione×1, N:oltre due livelli×1
+  r.802     50p  V 1 N 0  ROUND 9-10: L'APPARIZIONE MIRACOLOSA      V:senza c'è né dislocazione×1
+  r.805     44p  V 1 N 0  ROUND 9-10: L'APPARIZIONE MIRACOLOSA      V:senza c'è né dislocazione×1
+  r.1109    57p  V 1 N 1  ROUND 1-2: L'ATTACCO COORDINATO           V:senza c'è né dislocazione×1, N:sogg_preverbale×1
+  r.1141    66p  V 3 N 2  ROUND 5: FAUCI RESTA IN ARIA `[CANONE —   =stare+gerundio×1, V:box con più nomi propri×1, V:senza c'è né dislocazione×1, N:oltre due livelli×1
+  r.1232    65p  V 1 N 0  ROUND 6: L'IMPATTO DEVASTANTE             V:senza c'è né dislocazione×1
+  r.1286    40p  V 1 N 0  ROUND 18-23: LA PICCHIATA E IL DUELLO `[  V:senza c'è né dislocazione×1
+  r.1366    54p  V 2 N 0  LA CERIMONIA DELLE ASCE:                  V:box con più nomi propri×1, V:senza c'è né dislocazione×1
+  r.1371    43p  V 0 N 0  I DISCORSI COMMEMORATIVI:                 pulito
+  r.1379    25p  V 1 N 0  GLI ADDII DEGLI ALLEATI:                  V:senza c'è né dislocazione×1
+  r.1382    26p  V 1 N 0  GLI ADDII DEGLI ALLEATI:                  V:senza c'è né dislocazione×1
+  r.1385    22p  V 0 N 0  GLI ADDII DEGLI ALLEATI:                  pulito
+
+08_La Battaglia Di Hammerfist/mass_combat_guide_Dm.md
+  r.469     34p  V 0 N 0  APERTURA ROUND:                           pulito
+  r.472     18p  V 0 N 0  ATTACCO RIUSCITO:                         pulito
+  r.475     14p  V 1 N 1  MOMENTO EROICO:                           =sembra/pare×1
+  r.478     17p  V 0 N 0  CAMBIO SITUAZIONE:                        pulito

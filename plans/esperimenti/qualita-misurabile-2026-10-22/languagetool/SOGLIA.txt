@@ -1,0 +1,44 @@
+SOGLIA DELLE VARIANTI DEL MODELLO — scritta il 2026-10-23 PRIMA di farne il leave-one-out
+=====================================================================================
+
+Il modello base è quello di pipeline/SOGLIA.txt (undici tratti, logistica senza
+intercetta, L2 con lambda = 1,0, tratti divisi per lo scarto quadratico) e fa
+33 su 54 = 0,611 in leave-one-out. Le varianti qui sotto sono altre prove:
+cambiano solo i tratti, tutto il resto resta uguale (stesse 54 coppie decise,
+stesso lambda, stesso Newton). Nessun numero di questa pagina si cambia dopo
+aver visto le accuratezze.
+
+Le varianti
+  base       11 tratti.
+  +LT        13: base + lt_refusi (rilievi TYPOS di LanguageTool 6.8 che il
+             dizionario dei nomi non spiega) + lt_altri (tutti gli altri
+             rilievi, di ogni categoria).
+  +ppl       13: base + nll_token (log della perplessità di Qwen2.5-0.5B) +
+             token_per_parola (token del tokenizzatore diviso parole del
+             testo). La lunghezza è già nel base (parole_log): il peso di
+             nll_token si legge a lunghezza controllata.
+  +Stanza    24: base + gli stanza_* del file dei tratti esterni, tolti
+             stanza_parole e stanza_frasi (doppioni della lunghezza): tredici.
+  +tutto     28: base + LT + ppl + Stanza.
+  Un tratto che manca per una versione (box nuovo, file assente) vale zero
+  nella differenza: la coppia si decide sugli altri.
+
+Che cosa vuol dire «migliora»
+  Una variante migliora il base solo se valgono tutte e due:
+    1. McNemar esatto appaiato sulle stesse 54 coppie (coppie che una indovina
+       e l'altra no) con p < 0,05 / 4 = 0,0125 (Bonferroni sulle quattro
+       varianti);
+    2. il limite inferiore di Wilson al 95% della variante sopra 0,50 (la
+       soglia di pipeline/SOGLIA.txt).
+  Una variante che fa più coppie del base senza passare il punto 1 è un
+  segnale da rifare con più voti, non un miglioramento.
+
+Il filtro
+  Un gruppo di rilievi di LanguageTool entra nel filtro di non regressione di
+  `migliora` solo se la sua precisione letta a mano (PRECISIONE.json) è almeno
+  0,70 su almeno cinque rilievi letti.
+
+Correzione del 2026-10-23, dopo il primo giro: qui c'era scritto «i quindici
+stanza_*» e quindi 26 e 30 tratti. Il file ne ha quindici in tutto, e la regola
+scritta (togliere parole e frasi) ne lascia tredici: 24 e 28. È cambiato il
+conto, non la regola né quali tratti entrano.

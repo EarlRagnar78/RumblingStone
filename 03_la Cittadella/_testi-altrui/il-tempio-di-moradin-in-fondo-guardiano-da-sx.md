@@ -1,0 +1,33 @@
+# Il Tempio di Moradin (testo altrui)
+
+**Cos'è.** La conversione in markdown di `03_la Cittadella/il Tempio di Moradin - in fondo guardiano da sx.txt`, per poterla cercare. È testo
+di altri: *Expedition to Undermountain* (Wizards of the Coast, 2007), sezione del tempio nanico, tradotta. Non è canone della campagna e non è testo del DM.
+
+**Perché è qui.** Decisione D12 di
+[`RICERCA-ARCHI-SENZA-TESTO`](../../plans/RICERCA-ARCHI-SENZA-TESTO-2026-10.md)
+§4, cambiata dal DM il 2026-10-24: convertire anche questi file, e cercare
+dopo dove tenerli. Finché resta nel repo non va pubblicato né condiviso fuori
+dal tavolo.
+
+**Come è stata fatta.** Conversione automatica, senza correzioni: gli a capo
+dei file sono rimasti dove si poteva, i
+titoli sono stati riconosciuti a occhio dallo script, e gli errori della
+fonte restano.
+
+---
+
+Otto pilastri, ciascuno di 3m di diametro, si innalzano per 24 metri per sostenere il soffitto ad arco di questo grandioso tempio. I pilastri sono scolpiti nella roccia, e una splendida vena di mithral si snoda lungo l'intera lunghezza di ciascuno di essi, espandendosi anche sul soffitto e sul pavimento. La parete posteriore del tempio è adornata con un'incisione simmetrica di una gemma sfaccettata che fluttua all'interno di una montagna. Rune sono incise sotto l'incisione.
+
+Ciascuno degli otto pilastri è adornato con simboli scolpiti. Da sinistra a destra, essi rappresentano: due anelli d'argento; un libro aperto; una maschera di bronzo lucente con fori per gli occhi di fiamma; una moneta d'oro; un martello e un'incudine; una fiamma che si innalza da un ago d'acciaio; una spada sguainata avvolta in due spirali di fiamma; e due asce da battaglia incrociate.
+
+Se un qualsiasi PG è in grado di leggere il Nanico, lui o lei comprende le rune incise sulla parete posteriore. Esse recitano: "Racchiuso da un disegno divino, l'essenza del fulcro protegge il rifugio del mio retaggio ancestrale."
+
+"Racchiuso da un disegno divino" indica ai PG di osservare non solo i simboli sacri in questa stanza, ma anche quelli nelle camere superiori delle stazioni di guardia.
+
+"L'essenza del fulcro" si riferisce specificamente alle chiavi che possono trovare dietro quei simboli sacri, come descritto nella sezione Chiavi della Tomba a pagina 121.
+
+"Protegge il rifugio del mio retaggio ancestrale" si riferisce alle chiavi, che custodiscono il lascito di coloro che costruirono questo tempio: i nani del clan Melairkyn.
+
+Un tiro riuscito di Conoscenza (religione) con CD 10 permette a un PG di riconoscere questi simboli come rappresentazioni sacre di molte divinità del pantheon nanico. Un tiro riuscito di Conoscenza (religione) con CD 15 per ciascun simbolo permette a un personaggio di riconoscere la specifica divinità rappresentata. Oltre a conoscere il nome della divinità, il personaggio ha una conoscenza generale della sfera di influenza di quel dio.
+
+Un esame più attento dei simboli sui pilastri rivela un piccolo buco per chiave sotto ciascuno di essi. Il buco è incastonato nella forma di una gemma fluttuante, della stessa forma e dimensione dei bottoni che possono essere ottenuti dalle stazioni di guardia sopra, come descritto nella sezione Chiavi della Tomba a pagina 121. Inserendo le chiavi della tomba in ciascuno degli otto pilastri, i PG fanno sì che un nono pilastro si innalzi di 5 piedi dal centro del pavimento nella parte posteriore del tempio. Questo pilastro, privo di decorazioni, ha un alloggiamento per la nona chiave della tomba. Si tratta in realtà dell'ascensore che scende nella tomba sottostante. Inserendo l'ultima chiave della tomba nel foro in cima al pilastro, quest'ultimo inizia a scendere lentamente nel pavimento (abbastanza lentamente da dare ai PG l'opportunità di salirvi sopra, se lo desiderano), spirando verso il basso sotto il tempio e nella Tomba di Belkram.

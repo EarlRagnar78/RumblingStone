@@ -11,7 +11,7 @@
         "origin/claude/stone-audit-best-practices-yver7k"
       ],
       "stato": "in-volo",
-      "dove": "PR #99 aperta; PIANO-RIPRESA-PR-ABBANDONATE F4 (4f-4, 4f-5, 4g, 4h)"
+      "dove": "PR #99 chiusa il 2026-10-24 (ADR-0088, scelta A del DM): 4a-4f su main, 4g-1 con la #278, inventory_inferred, regola delle echi §1-bis e nota Golarion ripresi il 2026-10-24; il ramo resta per 4g-2; 4h respinto (ADR-0007, ADR-0090); audit di agosto, validate_links e frontmatter.py superati"
     },
     {
       "ref": [

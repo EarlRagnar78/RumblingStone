@@ -37,7 +37,7 @@ blocco. Il conto di ADR-0064 («55 scelti») era sbagliato per questo: i
 file davvero scelti sono **18**.
 
 🔴 **Lo strato 3 e' una scelta, non una misura**, e per questo **ogni blocco
-scritto porta `[INFERRED — needs DM confirmation]`**, con la sua provenienza e
+scritto porta `[GENERATO]`** (quelli del 2026-10-18 confermati in blocco dal DM), con la sua provenienza e
 le divergenze trovate: e' la regola 5 di `AGENTS.md`. Il confine con ADR-0033
 lo discutono ADR-0064 e ADR-0065.
 
@@ -115,7 +115,7 @@ viene prima dalla Tempra, che e' un'identita' esatta.
 ## Uso
 
     python3 scripts/genera_attributi.py              # proposta a video, non scrive
-    python3 scripts/genera_attributi.py --scrivi     # applica, marcando [INFERRED]
+    python3 scripts/genera_attributi.py --scrivi     # applica, marcando [GENERATO]
     python3 scripts/genera_attributi.py --rigenera   # riscrive i soli blocchi suoi
     python3 scripts/genera_attributi.py --taratura   # errore dello strato 3 sulle fonti
     python3 scripts/genera_attributi.py --check      # esce 1 se un blocco generato non torna
@@ -222,7 +222,7 @@ def applica(prop: "list[dict]", rigenera: bool = False) -> int:
         t = t[:fine] + "\n\n" + r["marca"] + t[fine:]
         r["file"].write_text(t, encoding="utf-8")
         scritti += 1
-    print(f"✓ scritti {scritti} blocchi `attributi`, tutti marcati [INFERRED]")
+    print(f"✓ scritti {scritti} blocchi `attributi`, tutti marcati [GENERATO]")
     return 0
 
 

@@ -17,11 +17,10 @@ attacchi:
   - Distanza roccia +7 (2d6+7, gittata 36 m)
 ```
 
-> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «4d8», una parte sola dei dadi vita. I dadi vengono dalla formula che la scheda scrive, il bonus da Cos 15 e Robustezza.
 
-> [INFERRED — needs DM confirmation] correzione 3.5 da `scripts/conformita_statblocchi.py`: Riflessi +1 → **+2**: gigante 4 DV (+1) + Barbaro 6 (+2) + Des 8 (−1). La Des 8 è confermata da tre numeri della scheda: «−1 Des» nella CA, contatto 8, iniziativa −1. L'ira non tocca la Destrezza, quindi anche in ira è +2.
+> correzione 3.5 da `scripts/conformita_statblocchi.py`: Riflessi +1 → **+2**: gigante 4 DV (+1) + Barbaro 6 (+2) + Des 8 (−1). La Des 8 è confermata da tre numeri della scheda: «−1 Des» nella CA, contatto 8, iniziativa −1. L'ira non tocca la Destrezza, quindi anche in ira è +2.
 
-> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
+> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
 Large giant, CE. **DV 4d8 + 6d12**. **hp 77** (**97 in ira**). **CA 18** (−1 taglia, +5 naturale, +5 cotta di maglia, −1 Des), contatto 8, colto alla sprovvista 18 — **16 in ira**. Iniziativa −1. Vel 12 m (12 m anche in armatura: andatura veloce da Barbaro).
 **TS** Temp +11, Rifl +2, Vol +3 (**+13/+2/+5 in ira**). **BAB/Lotta** +9/**+20**.

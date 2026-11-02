@@ -16,7 +16,7 @@ attacchi:
   - Mischia picca lunga +1 +13/+8 (1d8+5/×3, portata 3 m)
 ```
 
-> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
+> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
 Medium humanoid (orc), CE. **DV 11d8**. **hp 74**. **CA 21** (+9 corazza di piastre +1, +1 Des, +1 anello), contatto 12, colto alla sprovvista 20. Iniziativa +1. Vel 6 m (corazza).
 **TS** Temp +11, Rifl +6, Vol +13 (mantello di resistenza +2 incluso). **BAB/Lotta** +8/+11.

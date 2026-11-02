@@ -1,0 +1,82 @@
+# DM a freddo — ARC07-DEF-3, la resurrezione di Hella
+
+Conteggio: 🔴 0 · 🟠 8 · 🟡 20 (28 rilievi).
+
+| # | Scena | Codice | Cosa manca | Gravità | Prova |
+|---|---|---|---|---|---|
+| 1 | Passo 1 · vista | D-SERATA | Il paragrafo della serata dice dove si è e lo scopo, ma non la forma della serata: i Doni, la Custode e la soglia del portale si ricavano solo dai titoli. Ho risposto bene, ma solo mettendo insieme i titoli da §3 a §8-ter. | 🟡 | «Resta un solo atto prima di lasciare la Forgia: **riportarla indietro.**» |
+| 2 | Passo 1 · vista | D-AVVERSARIO | Dalla vista non si capisce chi si oppone né che cosa voglia: la Custode compare solo come «creditrice paziente». Il suo *Vuole* («che il vuoto lasciato dalla radice strappata si colmi») sta nella scheda d'entrata, che la vista non mostra. | 🟡 | «Read-aloud (GoT lead, la creditrice paziente)» |
+| 3 | Passo 1 · vista | D-PREPARA | La lista «Cosa stampare» non arriva nella vista, e con lei il PDF Benedizioni e i nomi dei fogli. Ho visto il titolo «✉ Cosa si consegna, e quando», ma nessuna voce. | 🟡 | «il PDF Benedizioni» |
+| 4 | Passo 1 · vista | D-RUMORE | Metà dei grassetti visibili sono d'apparato, e due righe di CD sono duplicate e non dicono a che cosa servano. Gli «~3g 16h» non dicono che sono il countdown di Hammerfist. | 🟡 | «**Sistema: D&D 3.5 SRD** (max PF1e), MAI 5e.» |
+| 5 | §0, §4, §8-ter | P-HANDOUT | Il testo dei fogli non è nel modulo: la preghiera completa, gli echi privati, la seconda metà dell'eco di Hella, le Cronache dei Quattro Eroi («il momento in cui i giocatori scoprono di essere la profezia»). Senza il volume *Il Cuore e la Porta* non so che cosa leggeranno i giocatori, né che cosa rivelano le Cronache. | 🟠 | «Poi la preghiera per intero, in italiano, dall'handout.» |
+| 6 | §0 | P-HANDOUT / D-SALTO | Il momento dei primi due fogli rimanda a un file esterno (la regia della serata, «Atto 0» e «Atto I, punto 3»). La parola «risveglio» è ambigua: indica il risveglio del gruppo nella Sala o quello di Hella del §7? Solo il §7 chiarisce («ce l'ha già dall'Atto I»). | 🟠 | «all'inizio del risveglio nella Sala (regia, Atto I, punto 3)» |
+| 7 | §0, §12 | P-HANDOUT | Il modulo parla di «sei fogli», ma la tabella ha sette righe e nomina otto titoli (Hella tornata e Durik sono due fogli). Non so quanti fogli devo avere in mano. | 🟡 | «Il DM ha sul tavolo sei fogli per i giocatori.» |
+| 8 | §8-bis | D-PREPARA | Le tre Benedizioni di Moradin su Hella stanno solo nel PDF di `DEF-2` §7. Sono bonus meccanici e il modulo non li elenca: al tavolo non so dire che cosa riceve Hella, oltre ai due aggiunti qui. | 🟠 | «le tre del PDF (`DEF-2` §7) **+**:» |
+| 9 | §0, §8-ter | P-MONDO | L'orologio non torna. Il §0 fa scendere il countdown di una sola ora (3g 15h), ma la chiusura della soglia dice che Hella respira da tre ore. In mezzo ci sono anche «la prima ora dopo il rito» (§8-bis) e i tentativi da 10 minuti. Non so quale tempo restante dichiarare ai giocatori, e alla soglia è proprio la posta della scelta «cercare un'alternativa». | 🟠 | «l'orologio scende di un'ora, a **~3g 15h**» · «e una di loro respira da tre ore» |
+| 10 | Scena 1, §4 | P-CONGEGNI | Lo Step 4 è dichiarato automatico, ma la porta DES dà +1 allo Step 4 e la tabella di regia gli scrive un esito di fallimento («un seme non germoglia»). Il bonus non serve a niente, e il fallimento non può accadere. | 🟡 | «\| 4 — Germinazione semi \| (Moradin) \| automatico \| — \| — \|» · «+1 allo Step 4» |
+| 11 | §4 | D-SALTO | Il fallimento dello Step 6 (anche questo automatico) rimanda al §9, ma lì la tabella copre solo lo Step 5. | 🟡 | «\| **6** \| → §7 \| → §9, tabella dei modi di fallimento \|» |
+| 12 | §2-bis | P-STATO | Regola sbagliata: −4 al punteggio di DES vale sempre −2 al modificatore, non «un punto solo». Si contraddice con la porta DES del §2, che dice «−2 alla prova». La CA, i Riflessi e l'iniziativa di Thorik restano incerti. | 🟡 | «fanno **−4 al punteggio** — un punto solo di CA, Riflessi e iniziativa al tavolo.» |
+| 13 | §0-bis, §5 | P-INTERAZIONI | Che cosa dona Thorik? Il dono è scritto come «il +2 di deflessione» (che toglierebbe 2 punti di CA), ma il costo è −1 CA e la Battuta 3 dice che la deflessione scende a +1. Il numero vero (−1) si ricava, ma la frase da leggere ai giocatori è ambigua. | 🟡 | «**Cosa dona.** Il **+2 di deflessione alla CA** che la Corona dà **a lui**.» · «da **+2** a **+1**» |
+| 14 | §5 | P-STATO | Un warlock di 13° ha di base 6d6 di *Eldritch Blast* (Complete Arcane: 7d6 al 14°). Il modulo non dice da dove venga il settimo dado: se Artemis ha 6d6, il dono lo porta a 5d6 e tutte le cifre del §5 e del §10 cambiano. | 🟡 | «da **7d6** a **6d6**» |
+| 15 | §6 | P-INTERAZIONI / P-CONFINE | Le risposte A e B prevedono che sia Hella ad accettare o a negare il debito, ma allo Step 5 Hella non ha coscienza: tornerà solo al §7. Il modulo non dice se la giocatrice di Hella può parlare con la Custode, né come. | 🟠 | «(Hella o il party si impegnano a un servizio futuro verso il Sogno)» · «Fino al risveglio: **nessuna coscienza**» |
+| 16 | §9 | P-CONGEGNI | Regola attribuita all'SRD che l'SRD non dice. Nel 3.5 un livello negativo, dopo 24 ore, richiede un TS su Tempra e, se fallisce, diventa perdita di livello (d20srd, Special Abilities, Energy Drain). Qui è una regola della casa presentata come SRD: l'esito è scritto, ma un giocatore che conosce la regola contesterà. | 🟡 | «**Il livello negativo** della riga «1 su 3» è quello dell'SRD: non diventa mai perdita di livello» |
+| 17 | §9 | P-CONGEGNI | Con 2 successi su 3 «un dono attecchisce a metà», ma il PG che ha fallito la Volontà può non aver donato. Di quale dono si tratta, allora? E che cosa vuol dire «a metà» in termini meccanici? | 🟡 | «il PG che ha fallito lo scopre **a −1.000**, nel momento peggiore» |
+| 18 | §0-bis, §4, §5, §9 | D-SALTO / D-RICORDO | Le regole dello Step 5 sono sparse in quattro sezioni: la soglia di successi, che dipende da quanti doni sono stati versati; la conversione «2 successi valgono la riga 1 su 3»; il ritiro con il Sud occupato; quando entra la Custode. Il giorno dopo sono dovuto tornare indietro tre volte, per più di un minuto. | 🟠 | «2 successi valgono la riga «1 su 3», 1 successo la riga «0 su 3»» |
+| 19 | Scena 1, §9 | P-CONFINE | La scheda di Therysol le fa sapere già la soluzione del vicolo cieco (il Sud), che il §9 le fa dire solo dopo un'ora. Niente dice che cosa risponde se un PG la interroga prima del rito. In più, la porta CAR «premia» con quasi la stessa battuta che Therysol dice comunque in apertura. | 🟡 | «Che il corpo **si gira verso sud**: l'ha rimesso dritto undici volte» |
+| 20 | §7, App. A | P-CONGEGNI | Le regole dell'Evocazione dei Guardiani si contraddicono. Il §7 dice 3/g con i semi che tornano all'alba, poi che i due Treant insieme spengono l'Evocazione per un mese, poi che Durik distrutto torna solo all'alba (dopo aver detto che lo richiama il terzo seme). L'Appendice A dice «al massimo due, uno per seme». Stasera Hella «prova il corpo nuovo» (§8-bis), e la giocatrice lo chiederà. | 🟠 | «Chiamare i due Treant insieme spegne l'Evocazione per un mese: Durik distrutto torna solo all'alba» |
+| 21 | App. A | P-STATO | La CA di Hella è sbagliata nella sua scomposizione. Il cuoio borchiato +2 vale +5, il druido non aggiunge la SAG alla CA, mancano lo scudo di legno +1 e i +3 naturali della Collana, e l'armatura è leggera, non «media». Il totale 20 non si ricostruisce. Non so nemmeno se SAG 20 comprenda già il +4 della Collana. | 🟠 | «CA 20 (+2 cuoio borch., +5 SAG nat. druida)» |
+| 22 | App. A | D-PREPARA | Durik, che da stasera è sempre in scena, non ha uno statblocco per il DM (solo DV, RD, tremorsense). Al Treant mancano DV, TS e caratteristiche, e «Luce di Lathander» non è definita. | 🟡 | «COMPAGNO — DURIK RIFORGIATO (12 DV) · RD 5/adamantio · Tremorsense» |
+| 23 | §11 C | P-STATO | Il valore della bacchetta è sbagliato. Con la formula SRD (750 × livello dell'incantesimo × LI) una bacchetta da chierico di *cura ferite moderate* costa 4.500 mo a 50 cariche, cioè circa 2.250 mo a 25; come incantesimo da druido di 3° livello costa di più. Il lordo di 16.900 mo è sottostimato. | 🟡 | «\| **Bacchetta di Cura Ferite Moderate** (25 cariche) \| ~1.600 mo \|» |
+| 24 | App. B | P-FLUSSO | La mappa R-1 mette Tordek e Artemis sulla stessa riga di Thorik, a nord dell'Altare, non a est e a ovest sul cerchio. Il testo dell'appendice dice che il cerchio «sta sull'Altare», mentre la Scena 1 dice «attorno». | 🟡 | «Il cerchio del rito sta sull'Altare» |
+| 25 | Tutto il modulo | D-TEMPO | Nessuna durata reale della serata e nessuna indicazione su che cosa tagliare se il tempo stringe. L'unica durata è quella nel mondo di gioco. | 🟡 | «Il rito dura circa un'ora, e non c'è riposo prima della soglia» |
+| 26 | §2-bis, §7, §9 | D-PREPARA | Rimandi che al tavolo non so sciogliere: il «Rituale 4» della Corona, la «Prova di Risonanza» contro «Zog'tar», il «countdown A7» (è lo stesso di Hammerfist?). | 🟡 | «La voce arriva col Rituale 4» |
+| 27 | §11 A | P-STATO | Il modulo non dice se Hella, che torna a metà serata, riceve i ~1.900 PX del beat, e quali voci. | 🟡 | «A. Budget PX del beat (party 3→4 PG, APL eff. 12-13 · PG di 13°)» |
+| 28 | §8-ter, §12 | P-FLUSSO | Il punto in cui finisce la serata non è chiaro. La chiusura del §8-ter lascia il portale chiuso con un «Che fate?», il ponte del §12 dà la soglia per attraversata, e le Cronache si consegnano «mentre la Corona apre il varco». Se il gruppo sceglie «cercare un'alternativa», le Cronache non si consegnano? | 🟡 | «Il portale è chiuso. La Corona è pronta.» · «la soglia (§8-ter) è stata attraversata» |
+
+## Passo 1 · le quattro risposte, dalla sola vista (scritte prima di aprire il modulo)
+
+**1 · Cosa succede stasera, in tre frasi.** I PG sono nella Sala della Forgia Eterna, davanti all'Altare del Cuore di Moradin, e celebrano un rito corale in sei passi per riportare in vita Hella, il cui corpo è vegliato da Therysol. Nel mezzo del rito Moradin chiede a Thorik, Tordek e Artemis un dono ciascuno (Scudo del Custode, Pelle di Adamantio, Rovo Eldritch), che si può anche rifiutare; quando lo spirito di Hella varca la soglia si manifesta la Custode delle Radici, che riscuote un debito (rami A/B/C). Allo Step 6 Hella si risveglia, Durik si lega a lei e nasce la Collana; Hella racconta le tre prove dell'Incudine del Mondo, e la serata chiude su una soglia (l'affresco A6) verso un viaggio a mille anni fa.
+
+**2 · Chi si oppone ai PG, e cosa vuole.** Non lo so con certezza. La vista non mostra un nemico da combattere: l'unica figura antagonista è la Custode delle Radici, «la creditrice paziente», che vuole il pagamento di un «Debito della Radice». Che cosa chieda in concreto, e che cosa siano i rami A/B/C, la vista non lo dice. L'altra «opposizione» è il prezzo che chiede Moradin, cioè i doni.
+
+**3 · Cosa devo preparare prima di sedermi.** Il riferimento rapido del Rito in sei passi con le CD; la mappa del cerchio del rito (Appendice B) e la MAPPA S-1 del DEF-2, che sta in un altro file; gli statblocchi di Hella risorta e del Treant di Adamantio (Appendice A); i tre doni con le loro meccaniche (§5); gli handout (§12 e «Cosa si consegna», senza sapere quali siano); le immagini dell'atlante C1 e la musica; il corredo di Hella; i PX. Non so che cosa siano «~3g 16h» e «~3g 15h».
+
+**4 · Quale elemento della vista mi ha fatto rispondere.** Il paragrafo «Dove siete»; i titoli da §3 a §8-ter con le righe «In scena»; il titolo del §6 e il read-aloud della Scena 5. Non mi hanno detto niente i grassetti «Sistema: D&D 3.5 SRD», «1,5 m/quadretto», «Sostituisce e fonde», «Quando si gioca · dopo · prima», e le CD duplicate.
+
+**Confronto col modulo.** Le risposte 1 e 2 erano giuste nella sostanza. Alla 3 mancavano il PDF Benedizioni, i fogli dei giocatori per nome, il fatto che il countdown è di Hammerfist e che lo «possiede» il DEF-2, e la regia esterna della serata (rilievi 3, 6 e 8).
+
+## Passo 2 · la preparazione, voce per voce
+
+Tempo dichiarato: un'ora. Il modulo è di circa 14.700 parole: in un'ora l'ho letto tutto, ma senza il tempo di rileggerlo per il flusso. La voce P-FLUSSO è stata fatta solo in parte, in coda.
+
+| Voce | Cosa ho preparato | Esito |
+|---|---|---|
+| P-RILIEVI | Le risposte che darei al tavolo. Orologio: dichiaro 3g 15h e ignoro le «tre ore» (r. 9). Thorik: −1 CA (r. 13). Lo Step 4 non fallisce mai (r. 10). Alla Custode risponde il gruppo; la giocatrice di Hella può dire una frase «dal sogno» solo se il gruppo sceglie A o B (r. 15, è un'invenzione mia). Evocazione: due Treant per giorno, uno per seme, Durik dal terzo seme all'alba (r. 20, invenzione mia). | fatto, con invenzioni segnate |
+| P-GRUPPO | I PG non sanno che lo spirito di Hella ha già compiuto il viaggio, né che la «presenza verde» era lei (§1, §8). Thorik ha nascosto il vero costo dello Smeraldo (E-07c). Hella ha sentito Thorik dire il suo nome nel sonno. | fatto (dal modulo; state.md non disponibile) |
+| P-MONDO | Il countdown di Hammerfist (3g 15h dopo il rito, un'ora in meno se c'è l'indagine del Sud). La Custode si muove da sola, e il ramo B fa risalire qualcosa in ARC-09. | fatto; orologio contraddittorio (r. 9) |
+| P-STATO | Gruppo riposato; Thorik con DES −4 di punteggio; il Cuore si spende una volta sola; Durik accanto al corpo. | fatto; la scheda di Hella non torna (r. 21) |
+| P-STILE | I box sensoriali e le tre colonne «cosa NON dire» del §2 segnate; la pronuncia del nanico annotata. | fatto |
+| P-IMMAGINI | Quattro tavole e una mappa citate per percorso; non posso verificare che esistano. | non verificabile |
+| P-HANDOUT | Otto fogli citati, e nessun testo nel modulo. | manca nel materiale che ho (r. 5, 6, 7) |
+| P-FLUSSO | Scena 1 → gemme → Cuore → Step 1-4 → Step 5 (Doni, poi richiamo, poi Custode) → Step 6 → racconto → prima ora → soglia. Il ramo del fallimento passa per il §9. | parziale, il tempo è finito qui |
+| P-DOMANDE | «Posso donare più di una cosa?» (non previsto). «Perdo il +2?» (§5, −1). «Che fa la Collana?» (§7, confuso). «Therysol, hai notato qualcosa?» (r. 19). «Quanto tempo abbiamo?» (r. 9). | segnate |
+| P-CONGEGNI | Il rito a turni con le aperture e gli esiti già scritti; lo Step 5 con le soglie; il vicolo cieco del Sud con la porta di Therysol. | fatto, ma sparso (r. 18) |
+| P-INTERAZIONI | Le reazioni dei quattro artefatti al dono e al rifiuto (§5); il Marchio di Varis sull'Anello; Durik come pegno nel ramo C. | fatto |
+
+Chi parla per primo: **Therysol**, piano, senza voltarsi: *«Undicimila. Poi ho smesso di contare.»* Poi Moradin, dalla Corona e dall'ascia, sul reliquiario.
+
+## Passo 3 · il giorno dopo, dai soli appunti
+
+- *Chi entra per primo, e cosa dice?* Therysol, con la battuta degli undicimila: la ricordavo. Ma non ricordavo se la porta CAR le dia qualcosa di diverso (r. 19).
+- *Se chiedono quanti successi servono allo Step 5?* Ricordavo «2 su 3». Non ricordavo la regola dei doni versati né la conversione dei successi: sono tornato al §9 e al §0-bis (r. 18).
+- *Se chiedono quanto tempo resta?* Gli appunti dicono 3g 15h, e una nota mi avverte del contrasto con le «tre ore»: la risposta è un'invenzione mia (r. 9).
+- *Se la giocatrice di Hella chiede le Benedizioni?* Gli appunti non le hanno, e il modulo nemmeno (r. 8).
+- *Dove sono dovuto tornare indietro?* Al §9 per il fallimento, al §7 per l'Evocazione, al §0 per il momento del foglio di Hella. Ho perso in tutto qualche minuto, e più di 30 secondi ogni volta.
+- Invenzioni del DM, segnate come tali: chi risponde alla Custode al posto di Hella; la regola dell'Evocazione; il tempo dell'orologio.
+
+## Cosa questa lettura non ha potuto verificare
+
+- L'esistenza e il contenuto dei file esterni: il volume dei giocatori *Il Cuore e la Porta*, la regia `01-REGIA-SERATA.md`, il PDF Benedizioni del `DEF-2` §7, la MAPPA S-1, le immagini in `Immagini/`, la mappa SVG dell'Appendice B, `LaCanzoneDellePietre.mp3`, le schede degli artefatti in `PG/Artefatti/`.
+- Lo stato reale del gruppo in `campaign/state.md` (DES di Thorik, dadi di *Eldritch Blast* di Artemis, valore della deflessione della Corona).
+- La progressione del warlock e il talento *Extra Wild Shape*, che non sono nell'SRD (Complete Arcane, Complete Divine).
+- Gli incantesimi al giorno del druido di 12°: la pagina d20srd del druido non si è caricata, e il servizio Firecrawl non aveva crediti. La regola dei livelli negativi è stata verificata su d20srd (Special Abilities).

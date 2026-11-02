@@ -1,161 +1,268 @@
-# Rumbling Stone
+<div align="center">
 
-**RumblingStone** is a custom D&D 3.5 campaign set in the Forgotten Realms (Faerûn, 1372 DR).
-It is heavily based on *Red Hand of Doom* (Jacobs & Baker, 2006) and adapted from the Elsir Vale to the Dalelands region.
-This repository contains session logs, NPC data, encounters, lore, and custom mechanics tailored for an adult gaming group (emphasizing "Premium Design" and "Shine Time" mechanics).
+# ⚒️ RumblingStone
 
-> 📚 **Documentation index**: start at [`docs/INDEX.md`](docs/INDEX.md) — the
-> categorized entry point to every doc (tools & scripts, guides, ADRs, plans,
-> skills). The tool registry ([`docs/tools/`](docs/tools/)) is machine-readable
-> and generated from [`scripts/tools.manifest.json`](scripts/tools.manifest.json).
+**Una campagna di D&D 3.5 nei Forgotten Realms, con gli strumenti che la
+preparano, la controllano e la stampano.**
 
-## Campaign Arcs (Directory Structure)
+*Red Hand of Doom* portata nella Valle di Cannath (l'Elsir Vale adattata,
+Faerûn, 1372 DR), per un tavolo adulto di PG al 13° livello.
 
-The campaign is organized into chronological and locational arcs:
+[![CI](https://github.com/gsamuele78/RumblingStone/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/gsamuele78/RumblingStone/actions/workflows/ci.yml)
+[![Release](https://github.com/gsamuele78/RumblingStone/actions/workflows/release.yml/badge.svg)](https://github.com/gsamuele78/RumblingStone/actions/workflows/release.yml)
+[![Ultimo rilascio](https://img.shields.io/github/v/release/gsamuele78/RumblingStone?label=rilascio&sort=semver)](https://github.com/gsamuele78/RumblingStone/releases)
+[![Keep a Changelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog-E05735)](CHANGELOG.md)
+[![SemVer](https://img.shields.io/badge/versioni-SemVer%202.0-blue)](https://semver.org/lang/it/)
 
-- **00_Red Hand Of Doom**: The foundation and initial setup of the Red Hand of Doom adaptation.
-- **01_LaMiniera**: Exploration and encounters within the local mining facilities.
-- **02_scaladossa-abbattor-funghi**: The treacherous ascent and fungal environments.
-- **03_la Cittadella**: Infiltration and battles surrounding the enemy stronghold.
-- **04_tomba_di_Belkram**: The ancient dwarven burial grounds and its hidden dangers.
-- **05_aa-stanza-runica**: Puzzles and magical confrontations in the arcane chambers.
-- **06_Stanza-corona-di-adamantio**: The epic encounter surrounding the mythical adamantine artifact.
-- **07_il Portale Della Forgia Eterna**: High-stakes planar and elemental battles to secure the eternal forge.
-- **08_La Battaglia Di Hammerfist**: Strategic, large-scale warfare defending the dwarven settlement.
-- **09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist**: Narrative continuation and aftermath of the major conflict.
+[![Python 3.13](https://img.shields.io/badge/python-3.13-3776AB?logo=python&logoColor=white)](plans/adr/ADR-0099-la-piattaforma-ha-tre-canali-come-debian.md)
+[![Testo: CC BY-NC-SA 4.0](https://img.shields.io/badge/testo-CC%20BY--NC--SA%204.0-lightgrey)](LICENSE)
+[![Strumenti: MIT](https://img.shields.io/badge/strumenti-MIT-yellow)](LICENSES.md)
+[![OGL 1.0a](https://img.shields.io/badge/regole-OGL%201.0a-8B0000)](OGL.txt)
+[![D&D 3.5](https://img.shields.io/badge/sistema-D%26D%203.5-red)](skills/dnd-35-srd/SKILL.md)
+[![Dependabot](https://img.shields.io/badge/Dependabot-attivo-025E8C?logo=dependabot)](.github/dependabot.yml)
+[![Sigstore](https://img.shields.io/badge/rilasci-attestati%20Sigstore-6E40C9)](docs/RILASCIO.md)
 
-## Standalone Module — *Il Drappo di Tarsilia* (Pathfinder 1e · Golarion)
+[Architettura](docs/ARCHITETTURA.md) ·
+[Indice dei documenti](docs/INDEX.md) ·
+[Playbook del DM](campaign/DM-CAMPAIGN-PLAYBOOK.md) ·
+[Strumenti](docs/tools/README.md) ·
+[Piani](plans/INDEX.md) ·
+[Changelog](CHANGELOG.md)
 
-Besides the main campaign, the repo ships one **self-contained module** that shares
-none of its setting: [`STANDALONE-Il-Drappo-di-Tarsilia/`](STANDALONE-Il-Drappo-di-Tarsilia/).
+</div>
 
-Three sessions of 3–4 hours for **six players**, **six pregenerated 3rd-level
-characters**, **Pathfinder 1st Edition** (Core Rulebook only), set in an original
-river city of Golarion's River Kingdoms. It reuses the *system* of the Channathgate
-race arc (the author's own material) and nothing else: no Faerûn, no *Red Hand of
-Doom*, no campaign PCs. Start at
-[`00-HUB-E-QUICKSTART-DM.md`](STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md);
-the IP rundown is in
-[`IP-E-LICENZE.md`](STANDALONE-Il-Drappo-di-Tarsilia/IP-E-LICENZE.md).
+---
 
-## Characters
+## Indice
 
-### PG (Player Characters)
+- [Che cos'è](#che-cosè)
+- [Cosa c'è dentro](#cosa-cè-dentro)
+- [Come funziona](#come-funziona)
+- [Per iniziare](#per-iniziare)
+- [La campagna](#la-campagna)
+- [Il modulo autonomo](#il-modulo-autonomo)
+- [Documentazione](#documentazione)
+- [Versioni e rilasci](#versioni-e-rilasci)
+- [Contribuire](#contribuire)
+- [Licenze e proprietà intellettuale](#licenze-e-proprietà-intellettuale)
 
-The core heroes of the campaign (Detailed in `PG/`):
+## Che cos'è
 
-- **Artemis** (Warlock 13): The analytical "Senior Developer," focused on stealth, tactical exploitation, and planar commerce.
-- **Thorik** (Guerriero 13): The strategic "Manager," navigating military tactics and political diplomacy.
-- **Tordek** (Guerriero 4 / Monaco 9): The out-of-the-box "Engineer," manipulating the battlefield environment and hunting ancient loot.
-- **Hella** (Ranger / Druido): The moral compass, bound to a stone-infused rhinoceros companion, anchoring the group's ethics.
+RumblingStone è due cose nello stesso repo:
 
-### PNG (NPCs & Villains)
+1. **Una campagna giocata.** Dieci archi (00-09) che portano *Red Hand of
+   Doom* nella Valle di Cannath, con un Bestiario proprio, quattro PG, lo stato
+   della campagna aggiornato dopo ogni serata e moduli autonomi.
+2. **Un'officina per scriverla e giocarla.** Una CLI unica (`dm.py`), oltre 100
+   script che controllano i master, disegnano le mappe e impaginano i volumi da
+   stampa, 18 skill che istruiscono gli agenti AI, e una CI che boccia ciò che
+   non è all'altezza prima che arrivi al tavolo.
 
-Important non-player characters and antagonists (Detailed in `Bestiario/villain/` and `Bestiario/png/`):
+Il principio di fondo è che **il markdown è la verità**: si scrive e si
+corregge solo il master, e PDF, mappe, recap e pacchetti si rigenerano.
 
-- **Maestro Varis "Seta-Argento"**: Opportunistic planar merchant, urban broker in Rethmar, CR 6.
-- **Conte Valerius**: Nobility entangled in funding the enemy, demanding social/political finesse to defeat.
-- **Il Collezionista (Rakshasa)**: A deadly collector of rare artifacts and secrets, the shadow mastermind, GS 17–19.
-- **Salvatore "Sal" della Luna d'Argento** (`Bestiario/villain/Salvatore/`): Temporal spy and soul-harvester. Flamboyant desert merchant, secretly "Vatore" who witnessed the PCs at Hammerfist -1000 DR. Bard 8/Sublime Chord 1/Spy 5, GS 14. Supplies living statues to Varis. Introduced Day 28–32, Arc 09 P2C.
-- **Azarr Kul** (`Bestiario/villain/Azarr_Kul/`): High Wyrmlord of Tiamat. Half-Blue-Dragon Hobgoblin, Cleric 10/Fighter 4, GS 15. Commands the Red Hand horde and fights on foot; Tyrgarun (Old Blue Dragon, CR 18) is a separate sky-terror encounter, not his mount. Boss of Rethmar Phase 3.
-- **Sonjak / Matrona Sajak** (`Bestiario/villain/Sonjak/`): Drow Cleric Matrona. Cleric 10/Matrona 3, GS 13. Commands underground Drow forces in Cannath Vale; Sal's employer on the surface. Clock 4/8, triggering Phase 0 Night of the Drow.
-- **Conte Valerius** (`Bestiario/villain/Conte_Valerius/`): Political villain. Expert 4/Aristocrat 4. Legally finances the Red Hand horde through "patriotic emergency loans." Cannot be defeated in combat; requires a political or investigative approach. Clock 2/8.
-- **Maestro Varis "Seta-Argento"** (`Bestiario/png/Varis_Seta_Argento/`): Urban broker in Rethmar. Rogue 4/Expert 4, CR 6. Knowingly sells petrified living creatures as artwork. Potential ally for Artemis; key link in the statue supply chain. Distinct from Sal (who is the field agent/supplier).
-- **Ghostlord / Arcano Zeth il Murato** (`Bestiario/villain/Ghostlord/`): Druidic Lich of the Thornwaste. Druid 13/Lich, GS 13. Ancient master builder of Hammerfist, tricked into lichdom. Ally or enemy depending on party choices; Hella's key NPC. Holds 20 spectral lions as potential reinforcements at Rethmar.
-- **Xal'thor** (`Bestiario/villain/Xal_thor/`): Illithid Githyanki Commander. Psion 6 (effective GS 14). Targets Tordek's Bracieri as planar keys to the Eternal Forge. Fixed trigger: attacks Dauth Tournament Day 3 regardless of party action. Potential wildcard at Rethmar if not stopped.
-- **Therysol** (`Bestiario/png/Therysol/`): Tiefling Half-Dragon, former Underdark merchant, hunting Il Collezionista. Ally NPC, GS 9.
-- **Capitana Lorana** (`Bestiario/png/Lorana/`): Secondary NPC, GS 7. Fighter 6/Expert 2. Survivor of the initial Red Hand attack (Arc 00), led ~800 refugees to Rethmar. Non-official Council voice; her field intel is worth -1 CR to Phase 1 if shared with Thorik. Key reconnection NPC for all four PCs.
-- **Consiglio di Rethmar** (`Bestiario/png/Consiglio_Rethmar/`): 7-member political body (Lady Kaal, Halveth, Jarmaath, Sorvane, Pyriel, Thornwall, Lorana). Default vote = surrender without party intervention. Three council sessions (Day 30/33/35) with concrete battle impact on all Rethmar phases. Halveth active during Phase 0 → +1 CR (drow know temple layout).
+## Cosa c'è dentro
 
-## Repository Layout & Agent Support
+| | Cosa | Dove |
+|---|---|---|
+| 📜 | Archi della campagna, master **DEF** al livello di un Adventure Path | `00_…` → `09_…` |
+| 👹 | Bestiario: mostri, PNG, villain con statblocco e dossier a sezioni fisse | [`Bestiario/`](Bestiario/) |
+| 🧝 | Schede dei quattro PG | [`PG/`](PG/) |
+| 🗺️ | Mappe a scala reale: griglia, JSON, SVG pergamena, PNG, UVTT per Foundry e Roll20 | [GUIDA-MAPPE](docs/guides/GUIDA-MAPPE.md) |
+| 📕 | Booklet e volumi di stampa: HTML, Homebrewery, PDF con typst | [GUIDA-BOOKLET-E-PDF](docs/guides/GUIDA-BOOKLET-E-PDF.md) |
+| 🎲 | Stato della campagna, sessioni, recap per PG, ledger dei PE | [`campaign/`](campaign/) |
+| 🧠 | 18 skill per agenti: regole 3.5 e PF1e, lore 1372 DR, stile, mappe, editoria | [`skills/`](skills/) |
+| 🛠️ | `dm.py` e gli script, ognuno con il suo contratto nel manifest | [`scripts/`](scripts/), [registro](docs/tools/README.md) |
+| 🧭 | Piani, 97 ADR, decisioni del DM tracciate | [`plans/`](plans/) |
+| ✍️ | Misure della prosa e voto al cieco del DM | ADR-0093 |
 
-- **`campaign/`**: Core campaign files.
-  - `sessions/`: Chronological session logs.
-  - `npcs/` & `locations/`: Key figures and environment descriptions.
-  - `encounters/`: Custom encounter design and tactics.
-  - `lore/`: House rules, setting details, and DM strategy (e.g., `csmpaign players.md`).
-- **`skills/`**: Fourteen focused AI-agent skills + a legacy router. Rules are sourced from the d20 SRD (D&D 3.5) and the Pathfinder 1e SRD:
-  - `dnd-35-srd/`: pure 3.5 mechanics (d20srd.org)
-  - `forgotten-realms-lore/`: Faerûn 1372 DR canon
-  - `rumblingstone-campaign/`: this campaign (PCs, artifacts, arcs, coherence)
-  - `rumblingstone-narrative-style/`: nine-pillar style engine, mandatory for all content generation
-  - `rumblingstone-mapmaking/`: battle-map pipeline (3 modes, JSON contract, UVTT export)
-  - `rumblingstone-automation/`: `dm.py` CLI + session-state pipeline on group branches (ADR-0007)
-  - `rumblingstone-plans/`: work-plan archive discipline (INDEX, CHANGELOG, ADRs)
-  - `pathfinder-1e-srd/`: PF1e rules, simple templates, CR benchmarks, 3.5↔PF conversion
-  - `npc-villain-boosting/`: when/whether/how to boost PNGs, villains, and monsters
-  - `rumblingstone-art-direction/`: visual bible, character sheets, the rejection gate
-  - `rumblingstone-editoria/`: layout & typography of the printed volumes (ADR-0020/0021)
-  - `rumblingstone-module-standard/`: the depth an AP-quality module master must reach
-  - `rumblingstone-playtest/`: how a module is tested before and after the table
-  - `rumblingstone-debugging/`: root-cause debugging of the repo's own infrastructure
-  - `dnd-35-rules/`: legacy meta-router pointing at the ones above
-- **`.github/workflows/ci.yml`**: CI validates skill frontmatter/links/data YAML and builds all per-agent skill packages on every PR.
+## Come funziona
 
-## Design Philosophy (Mastering for Adults)
+Il disegno completo, con ventiquattro diagrammi (infrastruttura, integrazione fra
+strumenti e fonti, casi d'uso, la catena della prosa, la serata, il giro
+delle letture, i rilasci),
+sta in **[docs/ARCHITETTURA.md](docs/ARCHITETTURA.md)**. In breve:
 
-This campaign uses a **Reactive State Machine Design**. It emphasizes severe consequences for actions, intense political intrigue, destructible environments, and "Shine Time" personalized hooks for each player character to eliminate railroading and maximize player agency.
+```mermaid
+flowchart LR
+    F["🌐 Fonti<br/>SRD 3.5, PF1e, PDF,<br/>Watabou"] --> M["📝 Master markdown<br/>e contratti JSON"]
+    M --> G{"🛡️ Cancelli<br/>validate_*, misure,<br/>giro delle letture"}
+    G -->|"verde"| O["📤 PDF, mappe, recap,<br/>pacchetti delle skill"]
+    G -->|"rosso"| M
+    O --> T(["🎲 Il tavolo"])
+    T -->|"dm.py session end<br/>sul ramo di gruppo"| S["campaign/state.md"]
+    S --> M
+```
 
-## For DMs — Start Here
+## Per iniziare
 
-If you are running (or planning to run) this campaign, read
-**[`campaign/DM-CAMPAIGN-PLAYBOOK.md`](campaign/DM-CAMPAIGN-PLAYBOOK.md)** first.
-It covers:
+Serve **Python 3.13** (quella di Debian 13) e git. Tutto il resto è
+facoltativo e `dm.py doctor` dice cosa manca e cosa succede senza.
 
-- The 3-level state model (Canonico / Scenario / Vivo) and how to avoid losing progress
-- Pre-session, during-session, and post-session workflow checklists
-- Worked example of a `YYYY-MM-DD_session-N.md` file
-- Worked diff example of how to update `campaign/state.md` after a session
-- `§0 Campaign Status At-a-Glance` dashboard template (see top of `campaign/state.md`)
-- Dual-clock reference (March Clock + Ritual Clock)
-- **Reset procedure** to start the campaign with a new group (branch-per-group,
-  via `python3 scripts/dm.py gruppo nuovo`, a question form; no YAML by hand)
+```bash
+git clone https://github.com/gsamuele78/RumblingStone.git
+cd RumblingStone
+pip install -r requirements.txt          # pyyaml, Pillow, tiktoken
+python3 scripts/dm.py --version          # la versione del repo
+python3 scripts/dm.py doctor             # cosa c'è sulla macchina
+python3 scripts/dm.py --help             # tutti i comandi
+```
 
-Blank templates for a fresh group live in `campaign/templates/`.
+Per chi usa un agente AI (Claude Code, Cursor, Windsurf e altri):
 
-## Sviluppo & automazione — dove trovare le cose
+```bash
+./scripts/build-skills.sh                # pacchetti delle skill per ogni agente
+```
 
-Indice unico dei documenti "di sviluppo" del repo (roadmap, script, container):
+oppure si scarica l'archivio delle skill già costruito e firmato dalla
+[pagina dei rilasci](https://github.com/gsamuele78/RumblingStone/releases).
+
+Per sviluppare e far girare le prove come in CI:
+
+```bash
+pip install -r requirements-dev.txt
+python3 -m pytest scripts/tests -q
+```
+
+La guida passo passo per una macchina nuova (hook git, ramo di gruppo,
+container facoltativi) è
+[GUIDA-SETUP-MACCHINA](docs/guides/GUIDA-SETUP-MACCHINA.md).
+
+## La campagna
+
+Chi dirige la campagna parte dal
+**[Playbook del DM](campaign/DM-CAMPAIGN-PLAYBOOK.md)**: il modello di stato a
+tre livelli, il prima, durante e dopo della serata, gli orologi, e come
+ripartire con un gruppo nuovo (`python3 scripts/dm.py gruppo nuovo`, un
+questionario, nessun YAML a mano). Ogni gruppo gioca sul suo ramo
+`campaign-group-<nome>` ([ADR-0007](plans/adr/ADR-0007-scritture-canone-triplo-vincolo.md)).
+
+<details>
+<summary><b>Gli archi</b></summary>
+
+| Arco | Cartella |
+|---|---|
+| 00 · L'adattamento di *Red Hand of Doom* | `00_Red Hand Of Doom` |
+| 01 · La miniera | `01_LaMiniera` |
+| 02 · La Scala d'Ossa e l'Abbattor dei funghi | `02_scaladossa-abbattor-funghi` |
+| 03 · La Cittadella | `03_la Cittadella` |
+| 04 · La tomba di Belkram | `04_tomba_di_Belkram` |
+| 05 · La stanza runica | `05_aa-stanza-runica` |
+| 06 · La stanza della Corona di Adamantio | `06_Stanza-corona-di-adamantio` |
+| 07 · Il Portale della Forgia Eterna | `07_il Portale Della Forgia Eterna` |
+| 08 · La battaglia di Hammerfist | `08_La Battaglia Di Hammerfist` |
+| 09 · Dopo Hammerfist: Rethmar, Dauth, Channathgate | `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist` |
+
+</details>
+
+<details>
+<summary><b>I personaggi giocanti</b></summary>
+
+| PG | Classe | Al tavolo |
+|---|---|---|
+| **Thorik** | Guerriero 13 | lo stratega, l'erede della Corona di Adamantio |
+| **Tordek** | Guerriero 4 / Monaco 9 | l'ingegnere del campo di battaglia, i Bracieri Gemelli |
+| **Hella** | Ranger / Druido | la bussola morale, con il compagno rinoceronte di pietra |
+| **Artemis** | Warlock 13 | l'analista: furtività, commercio planare |
+
+</details>
+
+<details>
+<summary><b>PNG e villain principali</b></summary>
+
+- **Azarr Kul**, Gran Signore dei Wyrm di Tiamat, il comandante dell'orda della Mano Rossa.
+- **Il Collezionista**, rakshasa collezionista di artefatti e segreti, la mente nell'ombra.
+- **Sonjak**, matrona drow che muove le forze del Sottosuolo nella Valle.
+- **Conte Valerius**, che finanzia l'orda con prestiti «patriottici»: non si batte con la spada.
+- **Salvatore «Sal» della Luna d'Argento**, spia temporale e mercante del deserto.
+- **Maestro Varis «Seta-Argento»**, mediatore di Rethmar che vende statue che erano vive.
+- **Zeth il Murato**, il lich druido del Thornwaste, alleato o nemico secondo le scelte del gruppo.
+- **Xal'thor**, comandante githyanki illithid sulle tracce dei Bracieri.
+- **Therysol**, **Capitana Lorana**, il **Consiglio di Rethmar**.
+
+Schede e dossier in [`Bestiario/villain/`](Bestiario/villain/) e
+[`Bestiario/png/`](Bestiario/png/), costruiti con lo standard di ADR-0091.
+
+</details>
+
+Lo stile del tavolo: conseguenze che durano archi interi, intrigo politico,
+ambienti distruttibili e un momento di gloria scritto per ogni PG, senza
+binari.
+
+## Il modulo autonomo
+
+[*Il Drappo di Tarsilia*](10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md)
+non condivide nulla con la campagna: **Pathfinder 1e** (solo il Manuale di
+gioco), Golarion, tre serate da 3-4 ore per sei giocatori con sei PG
+pregenerati di 3° livello, in una città fluviale originale dei Regni Fluviali.
+La situazione della proprietà intellettuale è in
+[IP-E-LICENZE](10-stand-alone/Il-Drappo-di-Tarsilia/IP-E-LICENZE.md).
+
+## Documentazione
 
 | Vuoi… | Documento |
 |---|---|
-| **Roadmap / cosa manca / cosa migliorare** (stato piani, %, gate, prossimi passaggi) | [`plans/INDEX.md`](plans/INDEX.md) — con [`plans/CHANGELOG.md`](plans/CHANGELOG.md) per la storia lotto-per-lotto |
-| **Script DM: cosa fanno, quali parametri, cosa producono** (tool map completa + `dm.py`) | [`scripts/README-automation.md`](scripts/README-automation.md) |
-| **Condividere il materiale** (mandarlo ai giocatori, stamparlo, pubblicarlo, e perché la vendita oggi non è conforme) | [`docs/guides/GUIDA-CONDIVISIONE-IP.md`](docs/guides/GUIDA-CONDIVISIONE-IP.md) |
-| **Preparare una macchina nuova** (o un secondo DM): prerequisiti, skill per agenti, branch di gruppo, verifica finale | [`docs/guides/GUIDA-SETUP-MACCHINA.md`](docs/guides/GUIDA-SETUP-MACCHINA.md) |
-| **Generare booklet e PDF per la sessione** (guida completa: manifest, HTML, Homebrewery, PDF A4 per giocatori/DM, prerequisiti, troubleshooting) | [`docs/guides/GUIDA-BOOKLET-E-PDF.md`](docs/guides/GUIDA-BOOKLET-E-PDF.md) |
-| **Generare le immagini della campagna** (prompt, generatori, coerenza d'arco, dove salvarle e come agganciarle) | [`docs/guides/GUIDA-IMMAGINI.md`](docs/guides/GUIDA-IMMAGINI.md) |
-| **Fare una mappa** (3 modalità, griglia emoji, JSON per eserciti, SVG/PNG/UVTT per Foundry e Roll20) | [`docs/guides/GUIDA-MAPPE.md`](docs/guides/GUIDA-MAPPE.md) |
-| **Aggiungere un mostro, un PNG o un villain** (dove, come si scrive, catalogo, gate CI, quando potenziare) | [`docs/guides/GUIDA-BESTIARIO.md`](docs/guides/GUIDA-BESTIARIO.md) |
-| **Container in locale** (Homebrewery self-hosted, nativo o Docker chiavi-in-mano; container PDF opzionale) | [`scripts/homebrew-local/README.md`](scripts/homebrew-local/README.md) · [`scripts/booklet-container/README.md`](scripts/booklet-container/README.md) |
-| **Perché delle scelte strutturali** (decisioni architetturali) | [`plans/adr/`](plans/adr/) — incl. ADR-0004 (container) e ADR-0005 (confini IP) |
-| **Disciplina di tracciatura** (regola d'oro: chiudo un lotto → aggiorno checklist + INDEX + CHANGELOG) | skill [`skills/rumblingstone-plans/`](skills/rumblingstone-plans/SKILL.md) |
+| capire come è fatto il progetto | [ARCHITETTURA](docs/ARCHITETTURA.md) |
+| trovare un documento qualsiasi | [docs/INDEX.md](docs/INDEX.md) |
+| sapere cosa fa uno script, i parametri, cosa produce | [registro dei tool](docs/tools/README.md), [README-automation](scripts/README-automation.md) |
+| la roadmap e cosa manca | [plans/INDEX.md](plans/INDEX.md), [plans/CHANGELOG.md](plans/CHANGELOG.md) |
+| il perché delle scelte | [plans/adr/](plans/adr/) |
+| preparare una macchina | [GUIDA-SETUP-MACCHINA](docs/guides/GUIDA-SETUP-MACCHINA.md) |
+| stampare booklet e PDF | [GUIDA-BOOKLET-E-PDF](docs/guides/GUIDA-BOOKLET-E-PDF.md) |
+| fare una mappa | [GUIDA-MAPPE](docs/guides/GUIDA-MAPPE.md) |
+| aggiungere un mostro, un PNG, un villain | [GUIDA-BESTIARIO](docs/guides/GUIDA-BESTIARIO.md) |
+| generare le immagini | [GUIDA-IMMAGINI](docs/guides/GUIDA-IMMAGINI.md) |
+| i container locali (Homebrewery, PDF, ComfyUI) | [homebrew-local](scripts/homebrew-local/README.md), [booklet-container](scripts/booklet-container/README.md), [comfyui-local](scripts/comfyui-local/README.md) |
+| condividere il materiale | [GUIDA-CONDIVISIONE-IP](docs/guides/GUIDA-CONDIVISIONE-IP.md) |
+| le regole per gli agenti | [AGENTS.md](AGENTS.md), [skills/ORCHESTRAZIONE.md](skills/ORCHESTRAZIONE.md) |
 
-## Setup Instructions
+## Versioni e rilasci
 
-> 📘 **Guida completa passo-passo** (prerequisiti, skill per agenti, hook git,
-> branch di gruppo, extra e verifica finale):
-> [`docs/guides/GUIDA-SETUP-MACCHINA.md`](docs/guides/GUIDA-SETUP-MACCHINA.md).
-> Qui sotto il minimo indispensabile.
+Le versioni seguono il [versionamento semantico](https://semver.org/lang/it/)
+e i cambiamenti sono in [CHANGELOG.md](CHANGELOG.md). **Rilasciare è unire una
+PR** ([ADR-0100](plans/adr/ADR-0100-il-rilascio-e-una-pr.md)): il workflow
+Release crea il tag, pubblica l'archivio riproducibile delle skill con le
+impronte SHA-256 e un'attestazione di provenienza Sigstore. Come verificare un
+archivio scaricato è in [docs/RILASCIO.md](docs/RILASCIO.md).
 
-1. Clone the repository to your local machine.
-2. If using AI Agents (Claude Code, Cursor, Windsurf), run `./scripts/build-skills.sh` to build per-agent skill packages and deploy them to your user-level paths. Per-agent mirrors are not committed to git: regenerate them locally.
-3. Review `AGENTS.md` to understand campaign conventions and agent instructions.
+La piattaforma è una sola: **Python 3.13 ovunque**, e ogni componente di terzi
+sta in uno dei tre canali unstable, testing e stable, come i pacchetti in
+Debian ([ADR-0099](plans/adr/ADR-0099-la-piattaforma-ha-tre-canali-come-debian.md)).
 
-## Licensing Information
+## Contribuire
 
-> 📘 **Cosa posso farci in pratica?** (mandarlo ai giocatori, stamparlo, pubblicarlo, venderlo):
-> [`docs/guides/GUIDA-CONDIVISIONE-IP.md`](docs/guides/GUIDA-CONDIVISIONE-IP.md) — la posture di
-> ADR-0005 tradotta in procedura, caso per caso.
+Il lavoro passa da un ramo e da una PR, con il modello in
+[`.github/pull_request_template.md`](.github/pull_request_template.md). Prima di
+aprirla:
 
-This project contains private lore adaptations based on *Red Hand of Doom*. Mechanical content belongs to the respective owners of the D&D 3.5 OGL/SRD.
+- la CI deve essere verde: `python3 -m pytest scripts/tests -q` e i cancelli
+  `validate_*` in locale danno lo stesso esito;
+- un lotto chiuso aggiorna nello stesso commit il piano, `plans/INDEX.md` e
+  `plans/CHANGELOG.md` (skill [rumblingstone-plans](skills/rumblingstone-plans/SKILL.md));
+- un cambiamento per chi usa gli strumenti va sotto «Non rilasciato» in
+  [CHANGELOG.md](CHANGELOG.md);
+- una scelta strutturale diventa un ADR, con il numero prenotato in
+  `plans/adr-prenotati.json`;
+- i documenti seguono [rumblingstone-prosa-documenti](skills/rumblingstone-prosa-documenti/SKILL.md),
+  la prosa di gioco [rumblingstone-narrative-style](skills/rumblingstone-narrative-style/SKILL.md).
 
-**Licenze, due e col taglio dichiarato** ([`LICENSES.md`](LICENSES.md), [ADR-0029](plans/adr/ADR-0029-licenza-doppia-testo-e-script.md)):
-il **testo** (avventure, canone, guide, skill) è **CC BY-NC-SA 4.0**; gli **strumenti** in `scripts/`
-sono **MIT**. La regola per i casi di confine: se lo legge un essere umano al tavolo è testo, se lo
-esegue una macchina è strumento. ⚠️ Il contenuto derivato dall'**SRD 3.5 e da Pathfinder 1e resta
-Open Game Content sotto OGL 1.0a**: chi lo ridistribuisce si porta dietro la Sezione 15, che con il
-testo della licenza sta in [`OGL.txt`](OGL.txt). E i componenti di terzi vendorizzati
-(`droplet`, `in-dexter`, `systematic-debugging`) tengono la loro.
+## Licenze e proprietà intellettuale
 
-Il repo è a **uso privato / non commerciale**: contiene IP di terzi (Wizards of the Coast / Forgotten Realms non-SRD) che nessuna licenza dell'autore può sanare, e l'arco "Palio di Channathgate" evoca segni tutelati del Palio di Siena. La posture per scenario d'uso (privato OK · pubblicazione gratuita a rischio basso · commerciale non conforme senza bonifiche) e la relativa checklist sono in [`plans/adr/ADR-0005`](plans/adr/ADR-0005-confini-ip-uso-non-commerciale.md) e nel rapporto `09_.../Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md`.
+Due licenze, con il taglio dichiarato in [LICENSES.md](LICENSES.md)
+([ADR-0029](plans/adr/ADR-0029-licenza-doppia-testo-e-script.md)): se lo legge
+un essere umano al tavolo è testo, se lo esegue una macchina è strumento.
+
+| Parte | Licenza |
+|---|---|
+| Testo: avventure, canone, guide, skill | [CC BY-NC-SA 4.0](LICENSE) |
+| Strumenti in `scripts/` | MIT |
+| Contenuto derivato da SRD 3.5 e Pathfinder 1e | Open Game Content, [OGL 1.0a](OGL.txt) con la Sezione 15 |
+| Componenti di terzi inclusi (`droplet`, `in-dexter`, `systematic-debugging`) | la loro |
+
+> [!WARNING]
+> Il repo è a **uso privato e non commerciale**. Contiene IP di terzi (Wizards
+> of the Coast, Forgotten Realms fuori dall'SRD) che nessuna licenza
+> dell'autore può sanare, e l'arco del Palio di Channathgate evoca segni
+> tutelati del Palio di Siena. Cosa si può fare caso per caso è in
+> [GUIDA-CONDIVISIONE-IP](docs/guides/GUIDA-CONDIVISIONE-IP.md) e
+> [ADR-0005](plans/adr/ADR-0005-confini-ip-uso-non-commerciale.md).

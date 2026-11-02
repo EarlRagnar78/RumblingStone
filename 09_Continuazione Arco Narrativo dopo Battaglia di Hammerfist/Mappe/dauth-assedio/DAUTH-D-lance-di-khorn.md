@@ -19,6 +19,9 @@ COLONNE:  A B C D E F G H I J K L M N
 
 @north E
 @tipo tattica abitato
+@luogo Dauth, mura ovest
+@quota 556 m ; s.l.m., la strada dietro le mura ovest
+@dislivello +4 m ; sulla sella delle colline ovest, oltre il fossato
 @collega C02 ; fuori mappa ; il camminamento delle mura ovest non ha una griglia: la carta D è di comando, non uno scontro
 @collega L02 ; fuori mappa ; il camminamento delle mura ovest non ha una griglia: la carta D è di comando, non uno scontro
 @mark 1 ; G4 ; Le 150 lance di Re Thorek, al comando di Khorn Spada-di-Fuoco: asset, +2 al morale del settore

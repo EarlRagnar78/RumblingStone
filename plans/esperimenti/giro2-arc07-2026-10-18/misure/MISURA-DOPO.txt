@@ -1,0 +1,17 @@
+## box_metri
+ARC-07 DEF: box 142 | parole mediana 51 (IQR 41-62) | >100 parole 0 | 30-70 125 | sensi mediana 2, ≤1 senso 52 | telecomando 0 | echi/box 0.5
+ARC07-DEF-1-PIANO-TERRA-: box 43 | parole mediana 49 (IQR 42-60) | >100 parole 0 | 30-70 39 | sensi mediana 2, ≤1 senso 21 | telecomando 0 | echi/box 0.5
+ARC07-DEF-2-RITORNO-E-AF: box 31 | parole mediana 51 (IQR 44-60) | >100 parole 0 | 30-70 30 | sensi mediana 2, ≤1 senso 5 | telecomando 0 | echi/box 0.6
+ARC07-DEF-3-RESURREZIONE: box 20 | parole mediana 38 (IQR 33-67) | >100 parole 0 | 30-70 14 | sensi mediana 2, ≤1 senso 9 | telecomando 0 | echi/box 0.2
+ARC07-DEF-4-VIAGGIO-MILL: box 39 | parole mediana 55 (IQR 40-67) | >100 parole 0 | 30-70 34 | sensi mediana 2, ≤1 senso 17 | telecomando 0 | echi/box 0.4
+ARC07-DEF-5-RITORNO-HAMM: box 9 | parole mediana 61 (IQR 54-64) | >100 parole 0 | 30-70 8 | sensi mediana 2, ≤1 senso 0 | telecomando 0 | echi/box 0.6
+## mqm
+✓   99.91  [master_def] 07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md
+✓   99.98  [master_def] 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md
+✓  100.00  [master_def] 07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md
+✓  100.00  [master_def] 07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md
+✓  100.00  [master_def] 07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md
+## box
+bersaglio                        box  >12 righe  parentesi  >1 nome  >4 frasi  >500 car
+## stile
+## craft

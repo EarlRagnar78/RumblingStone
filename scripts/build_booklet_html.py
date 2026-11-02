@@ -58,6 +58,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from dmcore.testo import capitoli_del_volume, leggi_per_la_stampa, riscala_link, togli_storico  # noqa: E402
+from dmcore.statblock import (  # noqa: E402
+    FASCE, StatblockError, accosta_parte_leggibile, caratteristiche, etichetta_gs, leggi as leggi_statblocco,
+    sezioni_leggibili, senza_caratteristiche,
+)
 
 # ---------------------------------------------------------------------------
 # Lo stile «pergamena» canonico (identico all'anteprima visiva e all'artefatto
@@ -209,6 +213,30 @@ CSS = """
   .readaloud{ font-style:italic; }
   .vague{ font-style:italic; font-size:.86rem; opacity:.9; }
 
+  /* Il riquadro delle statistiche: la stessa forma del PDF (ADR-0105). */
+  .statblocco{ background:var(--note-bg); border-top:3px solid var(--rubric);
+      border-bottom:3px solid var(--rubric); padding:.6rem .9rem .7rem; margin:.9rem 0;
+      break-inside:avoid; font-size:.92rem; }
+  .statblocco .sb-testa{ display:flex; justify-content:space-between; align-items:baseline; gap:1rem;}
+  .statblocco .sb-nome{ font-family:'Cinzel',Georgia,serif; font-variant:small-caps; color:var(--rubric);
+      font-size:1.15rem; font-weight:600;}
+  .statblocco .sb-gs{ font-family:'Cinzel',Georgia,serif; color:var(--brass); white-space:nowrap;}
+  .statblocco .sb-tipo{ font-style:italic; color:#6b4f2a; margin:.05rem 0 .3rem;}
+  .statblocco .sb-fascia{ font-family:'Cinzel',Georgia,serif; font-size:.72rem; letter-spacing:.12em;
+      text-transform:uppercase; color:var(--rubric); border-bottom:1px solid var(--rubric);
+      margin:.5rem 0 .2rem; font-weight:600;}
+  .statblocco p{ margin:.15rem 0; text-align:left;}
+  .statblocco ul{ margin:.15rem 0 .2rem 1.1rem;}
+  .statblocco .sb-car{ display:grid; grid-template-columns:repeat(6,1fr); text-align:center; margin:.2rem 0;}
+  .statblocco .sb-car span{ display:block; font-size:.7rem; color:#6b4f2a; font-variant:small-caps;}
+  .sb-riga{ border-left:3px solid var(--rubric); padding:.2rem .7rem; margin:.8rem 0;}
+  .sb-riga .sb-testa{ display:flex; gap:.6rem; align-items:baseline;}
+  .sb-riga .sb-nome{ font-family:'Cinzel',Georgia,serif; font-variant:small-caps; color:var(--rubric); font-weight:600;}
+  .sb-riga .sb-gs{ font-family:'Cinzel',Georgia,serif; color:var(--brass);}
+  .sb-riga .sb-rimando{ margin-left:auto; font-style:italic; color:#6b4f2a; font-size:.85rem;}
+  .sb-riga .sb-fascia{ font-family:'Cinzel',Georgia,serif; font-size:.72rem; letter-spacing:.12em; color:var(--rubric);}
+  .sb-riga p{ margin:.15rem 0; text-align:left;}
+  .statblocco .sb-fonte{ font-size:.75rem; color:#6b4f2a; margin-top:.3rem;}
   pre.mono{ background:rgba(201,173,106,.18); border:1px solid var(--brass); padding:.6rem .8rem;
       overflow-x:auto; font-size:.8rem; line-height:1.35; font-family:ui-monospace,Consolas,monospace;}
   .figure{ margin:.8rem auto; text-align:center; }
@@ -339,6 +367,197 @@ def spoglia_homebrewery(testo: str) -> str:
         fuori.append(re.sub(r"\{\{[^{}\n]*\}\}", "", ln))
     return "\n".join(fuori)
 
+#: Le schede intere raccolte per l'appendice (ADR-0105 punto 7): chiave →
+#: (nome, ancora, riquadro senza tattica). ``None`` quando il volume le vuole
+#: dove sono scritte (`"schede": "qui"` nel manifest).
+APPENDICE: dict[str, tuple[str, str, str]] | None = None
+
+
+def statblocco_html(corpo: str, titolo: str = "", sezioni=()) -> str:
+    """Il blocco ```statblocco, con le righe di ADR-0091 che lo seguono, come
+    riquadro a fasce: la stessa forma di `#statblocco` nel tema Typst (ADR-0105).
+    Un blocco che non si legge resta visibile com'era, come codice: meglio un
+    blocco brutto che un buco nel booklet.
+
+    Con l'appendice attiva il riquadro intero va in ``APPENDICE`` e qui resta
+    la riga dell'incontro: nome, GS, CA, pf, il collegamento e la tattica."""
+    intero = _statblocco_intero(corpo, titolo, sezioni, con_tattica=APPENDICE is None)
+    if APPENDICE is None or not intero.startswith('<div class="statblocco">'):
+        return intero
+    sb = leggi_statblocco("```statblocco\n" + corpo + "\n```")
+    nome = sb.nome or titolo
+    if intero not in APPENDICE:
+        APPENDICE[intero] = (nome, f"sb-{len(APPENDICE) + 1}", intero)
+    ancora = APPENDICE[intero][1]
+    per = {s.etichetta: s for s in sezioni}
+    pf = sb.pf + (f" ({sb.pf_dado})" if sb.pf_dado else "")
+    ca = sb.ca + (f", {sb.ca_dettaglio}" if sb.ca_dettaglio else "")
+    gs = etichetta_gs(sb.gs)
+    conti = " · ".join(f"<b>{e}</b> {inline_md(v)}" for e, v in (("CA", ca), ("pf", pf)) if v)
+    if "Tattiche" in per:
+        t = per["Tattiche"]
+        tattica = (f"<p>{inline_md(t.testo)}</p>" if t.testo else "") + (
+            "<ul>" + "".join(f"<li>{inline_md(v)}</li>" for v in t.voci) + "</ul>" if t.voci else "")
+    else:
+        tattica = f"<p>{inline_md(sb.tattica)}</p>" if sb.tattica else ""
+    return ('<div class="sb-riga"><div class="sb-testa"><span class="sb-nome">'
+            + inline_md(nome) + "</span>"
+            + (f'<span class="sb-gs">{html.escape(gs)}</span>' if gs else "")
+            + f'<a class="sb-rimando" href="#{ancora}">scheda in appendice</a></div>'
+            + (f"<p>{conti}</p>" if conti else "")
+            + (f'<div class="sb-fascia">Tattiche</div>{tattica}' if tattica else "")
+            + "</div>")
+
+
+def _statblocco_intero(corpo: str, titolo: str, sezioni, con_tattica: bool = True) -> str:
+    try:
+        sb = leggi_statblocco("```statblocco\n" + corpo + "\n```")
+    except StatblockError:
+        sb = None
+    if sb is None:
+        return '<pre class="mono">' + html.escape(corpo) + "</pre>"
+    per = {s.etichetta: s for s in sezioni}
+    coppie = caratteristiche(sb.attributi)
+
+    def in_riga(*voci: tuple[str, str]) -> str:
+        """Le voci di una fascia su una riga, separate da «·», come nel PDF."""
+        piene = [f"<b>{html.escape(e)}</b> {inline_md(v)}" for e, v in voci if v]
+        return f"<p>{' · '.join(piene)}</p>" if piene else ""
+
+    def sezione(s) -> str:
+        testo = s.testo
+        if s.etichetta == "Statistiche" and len(coppie) == 6:
+            testo = senza_caratteristiche(testo)
+        fuori = f"<p>{inline_md(testo)}</p>" if testo else ""
+        if s.voci:
+            fuori += "<ul>" + "".join(f"<li>{inline_md(v)}</li>" for v in s.voci) + "</ul>"
+        return fuori
+
+    pf = sb.pf + (f" ({sb.pf_dado})" if sb.pf_dado else "")
+    ca = sb.ca + (f", {sb.ca_dettaglio}" if sb.ca_dettaglio else "")
+    dai_campi = {
+        "Difesa": in_riga(("CA", ca), ("pf", pf), ("TS", sb.ts)),
+        "Attacco": in_riga(("Vel", sb.velocita),
+                           *(tuple((a.split(None, 1) + [""])[:2]) for a in sb.attacchi)),
+        "Statistiche": in_riga(
+            *([] if len(coppie) == 6 else coppie),
+            *((v.split(":", 1)[0].strip(), v.split(":", 1)[1].strip() if ":" in v else "")
+              for v in sb.voci)),
+        "Capacità speciali": "",
+        "Tattiche": f"<p>{inline_md(sb.tattica)}</p>" if sb.tattica else "",
+    }
+    parti = ['<div class="statblocco">',
+             '<div class="sb-testa"><span class="sb-nome">'
+             + inline_md(sb.nome or titolo) + "</span>"
+             + (f'<span class="sb-gs">{html.escape(etichetta_gs(sb.gs))}</span>' if etichetta_gs(sb.gs) else "") + "</div>"]
+    if sb.tipo:
+        parti.append(f'<div class="sb-tipo">{inline_md(sb.tipo)}</div>')
+    if "Iniziativa" in per:
+        parti.append(f"<p><b>Iniziativa</b> {inline_md(per['Iniziativa'].testo)}</p>")
+    else:
+        pezzi = [f"<b>Iniziativa</b> {inline_md(sb.iniziativa)}"] if sb.iniziativa else []
+        pezzi += [f"<b>Sensi</b> {inline_md(sb.sensi)}"] if sb.sensi else []
+        if pezzi:
+            parti.append("<p>" + " · ".join(pezzi) + "</p>")
+    for fascia in FASCE:
+        if fascia == "Tattiche" and not con_tattica:
+            continue
+        contenuto = sezione(per[fascia]) if fascia in per else dai_campi[fascia]
+        if fascia == "Statistiche" and len(coppie) == 6:
+            if coppie:
+                contenuto = ('<div class="sb-car">' + "".join(
+                    f"<div><span>{k}</span><b>{v}</b></div>" for k, v in coppie)
+                    + "</div>" + contenuto)
+        if contenuto:
+            parti.append(f'<div class="sb-fascia">{fascia}</div>' + contenuto)
+    if sb.fonte:
+        parti.append(f'<div class="sb-fonte">{inline_md(sb.fonte)}</div>')
+    parti.append("</div>")
+    return "".join(parti)
+
+
+#: Come ``APPENDICE``, per la via Homebrewery: riquadro → (nome, riquadro).
+APPENDICE_HB: dict[str, tuple[str, str]] | None = None
+
+
+def statblocchi_homebrewery(md: str) -> str:
+    """I blocchi ```statblocco come riquadro `{{monster,frame}}` di Homebrewery V3,
+    con le fasce di ADR-0105: la terza uscita del booklet ha la stessa forma
+    delle altre due. Un blocco che non si legge resta com'è."""
+    righe = accosta_parte_leggibile(md).split("\n")
+    fuori: list[str] = []
+    i = 0
+    while i < len(righe):
+        if righe[i].strip() != "```statblocco":
+            fuori.append(righe[i])
+            i += 1
+            continue
+        j = i + 1
+        while j < len(righe) and righe[j].strip() != "```":
+            j += 1
+        corpo = "\n".join(righe[i + 1:j])
+        try:
+            sb = leggi_statblocco("```statblocco\n" + corpo + "\n```")
+        except StatblockError:
+            sb = None
+        if sb is None:
+            fuori.extend(righe[i:j + 1])
+            i = j + 1
+            continue
+        sezioni, k = sezioni_leggibili(righe, j + 1)
+        per = {s.etichetta: s for s in sezioni}
+        nome = sb.nome or next((r.lstrip("#").strip() for r in reversed(fuori)
+                                if r.startswith("#")), "")
+        hb = ["{{monster,frame", f"## {nome}",
+              f"*{sb.tipo}*" + (f" · {etichetta_gs(sb.gs)}" if etichetta_gs(sb.gs) else ""), "___"]
+        if "Iniziativa" in per:
+            hb.append(f"**Iniziativa** {per['Iniziativa'].testo}")
+        elif sb.iniziativa or sb.sensi:
+            hb.append(" · ".join(x for x in (
+                f"**Iniziativa** {sb.iniziativa}" if sb.iniziativa else "",
+                f"**Sensi** {sb.sensi}" if sb.sensi else "") if x))
+        pf = sb.pf + (f" ({sb.pf_dado})" if sb.pf_dado else "")
+        ca = sb.ca + (f", {sb.ca_dettaglio}" if sb.ca_dettaglio else "")
+        dai_campi = {
+            "Difesa": [f"**CA** {ca}", f"**pf** {pf}", f"**TS** {sb.ts}"],
+            "Attacco": ([f"**Velocità** {sb.velocita}"] if sb.velocita else [])
+                       + [f"**{a.split(None, 1)[0]}** " + (a.split(None, 1) + [""])[1]
+                          for a in sb.attacchi],
+            "Statistiche": ([sb.attributi] if sb.attributi else []) + list(sb.voci),
+            "Capacità speciali": [],
+            "Tattiche": [sb.tattica] if sb.tattica else [],
+        }
+        tattica: list[str] = []
+        for fascia in FASCE:
+            if fascia in per:
+                s = per[fascia]
+                contenuto = ([s.testo] if s.testo else []) + [f"- {v}" for v in s.voci]
+            else:
+                contenuto = dai_campi[fascia]
+            if fascia == "Tattiche" and APPENDICE_HB is not None:
+                tattica = contenuto
+                continue
+            if contenuto:
+                hb += ["", f"**{fascia.upper()}**", "___"] + [c + "  " for c in contenuto]
+        if sb.fonte:
+            hb += ["", f"*{sb.fonte}*"]
+        hb.append("}}")
+        if APPENDICE_HB is None:
+            fuori.extend(hb)
+        else:
+            # ADR-0105 punto 7: il riquadro in appendice, qui la riga e la tattica.
+            APPENDICE_HB.setdefault("\n".join(hb), (nome, "\n".join(hb)))
+            gs = etichetta_gs(sb.gs)
+            conti = " · ".join(f"**{e}** {v}" for e, v in (("CA", ca), ("pf", pf)) if v.strip())
+            fuori += ["{{note", f"##### {nome}" + (f" · {gs}" if gs else ""),
+                      (conti + " · " if conti else "") + "*scheda in appendice*"]
+            if tattica:
+                fuori += ["", "**TATTICHE**"] + [c + "  " for c in tattica]
+            fuori.append("}}")
+        i = k
+    return "\n".join(fuori)
+
+
 def md_to_html(md: str, base: Path) -> str:
     """Convertitore markdown→HTML minimale ma fedele ai master del repo:
     heading, tabelle, citazioni (→ cornice .desc), liste, code fence
@@ -346,6 +565,7 @@ def md_to_html(md: str, base: Path) -> str:
     # La storia delle scelte non va in stampa (stessa funzione della catena Typst).
     md = togli_storico(md)
     md = re.sub(r"<!--.*?-->", "", md, flags=re.S)
+    md = accosta_parte_leggibile(md)
     lines = md.splitlines()
     out: list[str] = []
     i, n = 0, len(lines)
@@ -355,6 +575,8 @@ def md_to_html(md: str, base: Path) -> str:
     ol: list[str] = []
     table: list[str] = []
     code: list[str] | None = None
+    recinto = ""
+    ultimo_titolo = ""
 
     def flush_para() -> None:
         if para:
@@ -411,6 +633,11 @@ def md_to_html(md: str, base: Path) -> str:
         ln = lines[i]
         if code is not None:
             if ln.strip().startswith("```"):
+                if recinto == "```statblocco":
+                    sezioni, i = sezioni_leggibili(lines, i + 1)
+                    out.append(statblocco_html("\n".join(code), ultimo_titolo, sezioni))
+                    code = None
+                    continue
                 out.append('<pre class="mono">' + html.escape("\n".join(code)) + "</pre>")
                 code = None
             else:
@@ -421,6 +648,7 @@ def md_to_html(md: str, base: Path) -> str:
         if s.startswith("```"):
             flush_all()
             code = []
+            recinto = s
             i += 1
             continue
         m = re.match(r"^!\[([^\]]*)\]\(([^)]+)\)\s*$", s)
@@ -436,7 +664,8 @@ def md_to_html(md: str, base: Path) -> str:
         if s.startswith("#"):
             flush_all()
             level = len(s) - len(s.lstrip("#"))
-            text = inline_md(s.lstrip("#").strip())
+            ultimo_titolo = s.lstrip("#").strip()
+            text = inline_md(ultimo_titolo)
             if level <= 2:
                 out.append(f'<h2 class="sec">{text}</h2>')
             elif level == 3:
@@ -563,6 +792,8 @@ def build(manifest_path: Path, out_override: Path | None = None) -> Path:
     # il cui titolo non è uno spoiler, es. il Palio).
     player_footer = mf.get("player_footer", footer)
 
+    global APPENDICE
+    APPENDICE = {} if mf.get("schede", "appendice") == "appendice" else None
     panes = [cover]
     tabs = ['<button role="tab" aria-selected="true" data-pane="c0">Copertina</button>']
     for k, ch in enumerate(mf["chapters"], 1):
@@ -580,6 +811,23 @@ def build(manifest_path: Path, out_override: Path | None = None) -> Path:
     <span class="n">{k + 1}</span></div>
   </div>
 </section>""")
+
+    if APPENDICE:
+        # L'appendice delle creature (ADR-0105 punto 7): ogni riquadro intero
+        # una volta sola, in ordine di nome, come nel PDF.
+        k = len(mf["chapters"]) + 1
+        schede = "".join(f'<div id="{ancora}">{riquadro}</div>' for nome, ancora, riquadro
+                         in sorted(APPENDICE.values(), key=lambda v: v[0].lower()))
+        tabs.append(f'<button role="tab" aria-selected="false" data-pane="c{k}">Appendice: le creature</button>')
+        panes.append(f"""
+<section class="pane" id="c{k}">
+  <div class="sheet">
+    <div class="chapter-body"><h2>Appendice: le creature</h2>{schede}</div>
+    <div class="pagefoot"><span>{html.escape(footer)} · Appendice</span>
+    <span class="n">{k + 1}</span></div>
+  </div>
+</section>""")
+    APPENDICE = None
 
     page = f"""<!DOCTYPE html>
 <html lang="it">
@@ -611,6 +859,11 @@ def build(manifest_path: Path, out_override: Path | None = None) -> Path:
   // dall'export PDF headless — ADR-0013 §5)
   if(location.hash && document.getElementById(location.hash.slice(1)))
     show(location.hash.slice(1));
+  // La riga dell'incontro porta alla scheda in appendice, che sta in un'altra scheda.
+  document.querySelectorAll('a.sb-rimando').forEach(a=>a.addEventListener('click',e=>{{
+    const t=document.getElementById(a.getAttribute('href').slice(1)); if(!t) return;
+    e.preventDefault(); show(t.closest('section.pane').id); t.scrollIntoView();
+  }}));
 </script>
 </body>
 </html>
@@ -627,6 +880,23 @@ HB_TAGS = {"dm": "{{note\n##### ⚠ SOLO DM\nQuesto capitolo è materiale del DM
 def build_hb(manifest_path: Path, out_override: Path | None = None) -> Path:
     """Via Homebrewery (ADR-0013): stesso manifest → sorgente V3 .hb.md
     per l'editor self-hosted (nativo o Docker, ``dm.py hype``)."""
+    out, testo = testo_hb(manifest_path, out_override)
+    out.write_text(testo, encoding="utf-8")
+    return out
+
+
+def percorso_hb(manifest_path: Path, out_override: Path | None = None) -> Path:
+    """Dove va il .hb.md: accanto all'HTML, col suo nome."""
+    mf = json.loads(manifest_path.read_text(encoding="utf-8"))
+    html_out = out_override or (manifest_path.parent /
+                                mf.get("out", manifest_path.stem.replace(".manifest", "") + ".html"))
+    stem = html_out.name[:-5] if html_out.name.endswith(".html") else html_out.name
+    return html_out.parent / (stem + ".hb.md")
+
+
+def testo_hb(manifest_path: Path, out_override: Path | None = None) -> tuple[Path, str]:
+    """Il .hb.md del manifest, senza scriverlo: (dove va, il testo).
+    `validate_booklets` lo confronta con quello committato."""
     base = manifest_path.parent
     mf = json.loads(manifest_path.read_text(encoding="utf-8"))
     title = mf.get("title", "Booklet")
@@ -650,19 +920,19 @@ def build_hb(manifest_path: Path, out_override: Path | None = None) -> Path:
     # in `07_arco/homebrew/sessione/BOOKLET.hb.md` — due livelli piu' in basso —
     # lo stesso link finisce su `07_arco/homebrew/plans/adr/Y.md`, che non
     # esiste. Erano **41 link rotti su 44** in otto booklet (lotto E1).
-    html_out = out_override or (base / mf.get("out", manifest_path.stem.replace(".manifest", "") + ".html"))
-    stem = html_out.name[:-5] if html_out.name.endswith(".html") else html_out.name
-    out = html_out.parent / (stem + ".hb.md")
+    out = percorso_hb(manifest_path, out_override)
     dest = out.resolve().parent
 
     capitoli = capitoli_del_volume(base, mf)
 
     def _incorpora(sorgente: Path) -> str:
-        return riscala_link(togli_storico(leggi_per_la_stampa(sorgente, capitoli)),
+        return riscala_link(statblocchi_homebrewery(togli_storico(leggi_per_la_stampa(sorgente, capitoli))),
                             sorgente.resolve().parent, dest)
 
     if mf.get("intro_md"):
         parts += ["\\page\n", _incorpora(base / mf["intro_md"])]
+    global APPENDICE_HB
+    APPENDICE_HB = {} if mf.get("schede", "appendice") == "appendice" else None
     for ch in mf["chapters"]:
         parts.append("\n\\page\n")
         parts.append(f"# {ch['title']}\n")
@@ -670,8 +940,11 @@ def build_hb(manifest_path: Path, out_override: Path | None = None) -> Path:
         if tag:
             parts.append(tag + "\n")
         parts.append(_incorpora(base / ch["file"]))
-    out.write_text("\n".join(parts) + "\n", encoding="utf-8")
-    return out
+    if APPENDICE_HB:
+        parts += ["\n\\page\n", "# Appendice: le creature\n"]
+        parts += [r for _, r in sorted(APPENDICE_HB.values(), key=lambda v: v[0].lower())]
+    APPENDICE_HB = None
+    return out, "\n".join(parts) + "\n"
 
 
 def main(argv: list[str] | None = None) -> int:

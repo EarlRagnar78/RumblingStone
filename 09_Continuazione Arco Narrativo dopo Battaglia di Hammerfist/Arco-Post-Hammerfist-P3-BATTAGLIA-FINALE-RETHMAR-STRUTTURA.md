@@ -156,7 +156,7 @@ Non usi il Fane fisico, ma un “altare campale” nel cuore della battaglia.[we
 
 - Campo rituale devastato, cerchio di fuoco e ombre, cielo aperto con portale crepitante.  
 - Azarr Kul (mezzo‑drago hobgoblin warpriest di Tiamat, CR 15), **a terra** — combatte sempre da solo, Tyrgarun NON è sua cavalcatura (D11 v2) +  
-  - 2–4 Erinni o Abishai (CR 9–11 ciascuna),  
+  - 2–4 Erinni o Abishai (CR 9–11 ciascuna; abishai: `Bestiario/mostri/abishai-azzurro-mano-cr11.md`),  
   - **Avatar di Tiamat**: versione ridotta di Aspect of Tiamat (CR 17 base, modulato per il tuo party).
   - **Tyrgarun** resta minaccia aerea a orologeria (non ancora affrontabile — vola ancora); se già ucciso/messo in fuga altrove, vedi tabella conseguenze in `Bestiario/villain/Azarr_Kul/Azarr_Kul/Azarr_Kul.md`.
 
@@ -270,7 +270,7 @@ quantificato, mai un wargame:
 | Ruolo | PG tipico | Effetto meccanico |
 |---|---|---|
 | **Comandante** | Thorik / Tordek | +2 al check di Morale di **un** settore per l'ondata corrente (Thorik, Custode Eterno con titolo di Re Thorek, dà +3) |
-| **Campione** | Tordek / Thorik | Duello pubblico contro un capo nemico (Wyrmlord Karruk CR 10, capitano hobgoblin CR 8): se vinto, l'ondata di quel settore perde 1 grado di CD (pesante→leggera) e +1 Fronte |
+| **Campione** | Tordek / Thorik | Duello pubblico contro un capo nemico (Wyrmlord Karruk CR 13, capitano hobgoblin CR 8): se vinto, l'ondata di quel settore perde 1 grado di CD (pesante→leggera) e +1 Fronte |
 | **Fulcro Arcano** | Artemis | Sbarramento arcano/utility: **nega una passata di soffio** di Tyrgarun o di un Razorfiend a un settore (vedi §9.4), o dissolve un focus/evocazione |
 | **Salvatore** | Hella | Triage/evacuazione di massa: annulla per una campana il malus di un settore civile in crisi (ospedale, rifugiati) e stabilizza il Morale Cittadino |
 
@@ -288,7 +288,7 @@ esce un numero che corrisponde a una carta già in gioco, promuovilo a carta.)
 | 4 | Incendio in un quartiere (rifugiati, -1 Morale Cittadino) | Crollo strutturale (statua/campanile) — hazard mappa |
 | 5 | Atto d'eroismo PNG (Lorana/Sorvane): +1 Fronte narrato | Un Arcimago del Circolo cade: -1 concentrazione Mythal |
 | 6 | Convoglio-riserva di Lorana sotto attacco (S2 EVENT-DECK) | Ondata di rinforzi extraplanari (se Mythal non attivo) |
-| 7 | Duello richiesto da un Wyrmlord (Campione, §9.2) | Avatar usa Aura di Terrore (Will CD 26 area) |
+| 7 | Duello richiesto da un Wyrmlord (Campione, §9.2) | Avatar usa Aura di Terrore (Will CD 29 area) |
 | 8 | Sabotaggio interno drow (poterna/polveriera) | Statue-Golem si attivano male (1 round di ritardo) |
 | 9 | Gli Esperimenti Fungini sfondano un muro (Ondata 4) | Focus rituale sopravvissuto rilascia backlash |
 | 10 | Rifugiati in fuga bloccano una via (scelta morale) | Karruk irrompe con la guardia del Teschio Nero |
@@ -306,13 +306,13 @@ CR 18 in volo con Flyby è imbattibile per design. Si gioca a **scalini**.
 
 **FASE 1 — Hazard di bombardamento (contromosse quantificate).** Ogni 1d4 round
 Tyrgarun fa una **passata di soffio** su un settore: **linea 30 m, 20d8
-elettricità, Riflessi CD 29 per metà** (serventi e milizia in area muoiono se non
+elettricità, Riflessi CD 32 per metà** (serventi e milizia in area muoiono se non
 in copertura). I PG **non lo abbattono** — lo **negano**, con contromosse che il
 DM tratta come check, non come combattimento:
 
 | Contromossa | Meccanica | Effetto se riuscita |
 |---|---|---|
-| **Nidi di balliste** (2-4 sui bastioni) | Artiglieria: attacco a distanza +8, danno 4d6, CA di Tyrgarun 35 (contatto 8 in avvicinamento); ogni nido ha CA 5, 60 pf, RD 5 | Una passata deviata (Tyrgarun sale fuori portata 1d4 round) |
+| **Nidi di balliste** (2-4 sui bastioni) | Artiglieria: attacco a distanza +8, danno 4d6, CA di Tyrgarun 37 (contatto 8 in avvicinamento); ogni nido ha CA 5, 60 pf, RD 5 | Una passata deviata (Tyrgarun sale fuori portata 1d4 round) |
 | **Squadroni di gufi giganti Tiri Kitor** (se alleanza D9) | 20 gufi = "asset" astratto; ogni round negano **1 passata** ingaggiandolo in volo | Tyrgarun non può bombardare quel settore |
 | **Missione-esca dei PG** | I PG attirano Tyrgarun con un bersaglio ghiotto (l'Artefatto Maligno, un focus arcano di Artemis): Raggirare/Conoscenze CD 22 | Tyrgarun spreca 1d4 round su un'esca; nessun danno ai settori |
 | **Fulcro Arcano** (§9.2, Artemis) | Sbarramento di *eldritch blast*/utility | Nega **1 passata** a un settore |

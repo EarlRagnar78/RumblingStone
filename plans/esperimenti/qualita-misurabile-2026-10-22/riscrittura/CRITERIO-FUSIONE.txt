@@ -1,0 +1,34 @@
+CRITERIO DELLA FUSIONE (F) — scritto il 2026-10-22 PRIMA di misurare le versioni V e N
+================================================================================
+
+Le famiglie di rilievi, per ogni box:
+  comuni   rilievi che entrambe le catene danno: calchi «sempre», stare+gerundio,
+           parentesi, metratura, «sembra/pare», box oltre 12 righe, tic minori in
+           gruppo, gerundio in coda, maiuscole, trattino, antitesi, terminologia,
+           box impoverito (meno dettagli sensoriali dell'originale)
+  solo V   nomi propri distinti >1 (PG esclusi), possessivo su parte del corpo,
+           box senza «c'è»/dislocazione (--costrutto-italiano), P1
+  solo N   soggetto preverbale, aggettivo complesso anteposto, frase oltre due
+           livelli di subordinate (misura_sintassi)
+
+1. Esclusione. Una versione che cambia un fatto (ciclo_prosa.confronta_fatti
+   non vuoto: nomi del registro, numeri, CD) o che risulta impoverita
+   (ciclo_prosa.box_impoveriti) è esclusa, salvo che lo siano tutte e due.
+2. Dominanza. Se una delle due ha, famiglia per famiglia, non più rilievi
+   dell'altra e in almeno una ne ha meno, F è quella versione, parola per parola.
+3. Pari. Se hanno gli stessi conteggi in tutte le famiglie, F è quella con più
+   dettagli sensoriali (misura_craft.dettagli_sensoriali); a parità, N.
+4. Vittorie incrociate (ognuna vince in una famiglia diversa). F è una fusione
+   scritta a mano: si parte da N e si portano dentro, frase per frase, le
+   correzioni di V che tolgono i rilievi che N ha e V no, senza toccare il resto.
+   F si accetta solo se:
+     a) il totale dei rilievi delle tre famiglie è ≤ al minimo fra V e N,
+     b) i dettagli sensoriali sono ≥ al minimo fra V e N,
+     c) i fatti restano invariati rispetto all'originale.
+   Se una condizione manca, F è la versione col totale più basso (a parità, la
+   regola 3).
+5. F si manda al cieco contro l'originale solo dove il testo di F è diverso sia
+   da V sia da N (regola 4). Dove F coincide con V o con N, il voto V contro N
+   dice già quale si preferisce.
+
+Nessun numero di questo criterio è stato scelto guardando i risultati.

@@ -27,6 +27,14 @@ class TestMeters(unittest.TestCase):
         self.assertEqual(out["units_in"], "squares")  # flag consumed
         self.assertEqual(spec["map_size"], [45, 33])   # original untouched
 
+    def test_taglie_meters_to_squares(self):
+        spec = {"title": "Test", "scale_m_per_square": 1.5, "units_in": "meters",
+                "map_size": [45, 45],
+                "taglie": [{"at": [28.5, 34.5], "taglia": "Enorme"}]}
+        out = C.normalize_units(spec)
+        self.assertEqual(out["taglie"][0]["at"], [19, 23])
+        self.assertEqual(out["taglie"][0]["taglia"], "Enorme")
+
     def test_meters_equal_squares_grid(self):
         """A meters spec and the hand-computed squares spec paint the SAME grid."""
         meters = {

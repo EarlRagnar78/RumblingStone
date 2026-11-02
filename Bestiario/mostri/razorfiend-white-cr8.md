@@ -12,9 +12,8 @@ velocita: 40 ft, fly 50 ft (average), swim 30 ft
 iniziativa: +4
 ```
 
-> [INFERRED — needs DM confirmation] `ts` ricalcolati dal SRD il 2026-09-23: drago 9 DV (TS tutti buoni, +6) + Cos 18 (+4) / Des 11 (+0) / Sag 12 (+1). Il blocco portava «Temp +7, Rifl +6, Vol +6», derivati da `derive_statblocks --apply-ts` con Cos 13, che la formula del DM smentisce. `pf-dado` trascritto dalla prosa («**HD**»). ⚠ La Volontà dipende da una Sag generata.
+> [CANONE — DM 2026-09-23, D10] `ts` ricalcolati dal SRD il 2026-09-23: drago 9 DV (TS tutti buoni, +6) + Cos 18 (+4) / Des 11 (+0) / Sag 12 (+1). Il blocco portava «Temp +7, Rifl +6, Vol +6», derivati da `derive_statblocks --apply-ts` con Cos 13, che la formula del DM smentisce. `pf-dado` trascritto dalla prosa («**HD**»). ⚠ La Volontà dipende da una Sag generata.
 
-> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 **Size/Type**: Large dragon (cold) | **HD**: 9d12+36 (94 HP)
 **AC**: 23 | **Init**: +4 | **Speed**: 40 ft, fly 50 ft (average), swim 30 ft

@@ -1,0 +1,45 @@
+{
+ "campione_ref": "",
+ "dopo": "",
+ "seme": 20261025,
+ "coppie": [
+  {
+   "n": 1,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/cieco/testi-f-o.md",
+   "titolo": "Box B01",
+   "nuova": "A",
+   "somiglianza": 0.949,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 2,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/cieco/testi-f-o.md",
+   "titolo": "Box B02",
+   "nuova": "B",
+   "somiglianza": 0.957,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 3,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/cieco/testi-f-o.md",
+   "titolo": "Box B03",
+   "nuova": "A",
+   "somiglianza": 0.963,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  }
+ ],
+ "confronto": {
+  "vecchia": "O",
+  "nuova": "F",
+  "nota": "«nuova» nella chiave = la seconda versione del confronto"
+ }
+}

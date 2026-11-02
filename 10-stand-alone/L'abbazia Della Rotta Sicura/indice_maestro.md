@@ -197,8 +197,26 @@ MEDIO **D10 · Il tesoro ignora il mago**
 
 {{note
 MEDIO **D11 · Fra' Timoteo non ha statistiche**
-**Difetto:** è il PNG più usato dell'Atto II e non ha un blocco. **Correzione:** umano chierico 2 · PF 11 · CA 13 · TS Temp +4, Rifl +0, Vol +6 · Diplomazia +6, Sapienza (religione) +5 · scaccia non-morti 4/giorno (livello effettivo 2, inutile qui ed è il punto) · incantesimi 3/2+1. **Non combatte mai per primo.**
+**Difetto:** è il PNG più usato dell'Atto II e non ha un blocco. **Correzione:** la scheda qui sotto.
 }}
+
+```statblocco
+nome: Fra' Timoteo
+gs: —
+tipo: Umano chierico 2
+ca: 13
+pf: 11
+ts: Temp +4, Rifl +0, Vol +6
+```
+**Difesa** **CA 13** · **pf 11** · TS Tempra +4, Riflessi +0, Volontà +6
+
+**Statistiche** **Abilità** Diplomazia +6, Sapienza (religione) +5
+
+**Capacità speciali**
+- Scaccia non-morti 4/giorno (livello effettivo 2, inutile qui ed è il punto).
+- Incantesimi 3/2+1.
+
+**Tattiche** **Non combatte mai per primo.**
 
 {{note
 MEDIO **D12 · La durata dichiarata non regge**

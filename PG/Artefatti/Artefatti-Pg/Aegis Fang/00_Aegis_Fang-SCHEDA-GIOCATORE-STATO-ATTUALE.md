@@ -31,6 +31,7 @@ un drago è nei paraggi, senti l'arma… svegliarsi appena.*
 | **+2 al colpo e ai danni** | bonus di potenziamento |
 | **Ritornante** (*Returning*) | se lanciata, torna in mano a inizio del tuo turno successivo |
 | **Dragondoom** | efficace contro le creature draconiche (vedi MIC p. 33) |
+| **Bane contro Fauci di Palude** | dall'affresco A7 (2026-09-25): contro Fauci +2 per colpire, +3d6 danni, critico ×4; 1 volta per scontro, azione gratuita, Fauci scosso 1d4 round (Volontà CD 22 nega). Solo contro Fauci |
 
 **Poteri (l'arma li attiva, 1/giorno o come indicato):**
 

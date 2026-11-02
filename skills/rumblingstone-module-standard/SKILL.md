@@ -212,7 +212,7 @@ incontri e prove, misteri).
     davvero**, con i template di `campaign/templates/homebrew/`, e porta in coda
     una nota per il DM che non si stampa (come si usa, cosa nessuno nota, cosa
     succede se lo firmano o lo stracciano).
-    Esemplare: `STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/handout/`.
+    Esemplare: `10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/handout/`.
 
 ## Regole di lavorazione (sempre)
 
@@ -245,7 +245,16 @@ Sono sette, e ognuna viene da un difetto vero: chi resta senza niente da fare
 salvezza, chi sente il rumore, il boss che cambia invece di allungarsi, lo
 skill challenge scritto per intero, e chi si diverte in ogni scena. Da dove
 vengono, e cosa è stato scartato:
-`plans/RICERCA-MANUALE-DEL-MASTER-2026-09.md`.
+`plans/RICERCA-MANUALE-DEL-MASTER-2026-09.md`. Dalla §9 alla §16 le domande
+dell'alto livello, prese dalle avventure della community
+(`plans/RICERCA-AVVENTURE-COMMUNITY-2026-10.md`, ADR-0092): il segreto che regge
+a una divinazione, la riga di scala per ogni scontro, il mostro insostituibile,
+il pericolo che qualcuno usa, l'incontro che resta uno, il rinforzo che i PG
+vedono arrivare, niente orde di GS basso al 13°, il PG fuori gioco per un TS.
+Dalla §18 alla §21 le regole d'architettura (`plans/RICERCA-QUALITA-MISURABILE-2026-10.md`
+§4): la domanda sì o no di ogni scena, la scelta che dice dove se ne vede la
+conseguenza, il boss annunciato in due scene prima, la rete degli indizi
+marcata con tre indizi per conclusione.
 
 ### Il ciclo completo: quando un master si chiama DEF
 
@@ -263,8 +272,8 @@ ricopia ([ADR-0075](../../plans/adr/ADR-0075-il-ciclo-del-master-vale-per-ogni-p
 | 1 | **Scene riconoscibili**: in un master `ARC*-DEF-*` ogni scena apre con `### SCENA …`; uno stand-alone con struttura sua dichiara il suo titolo di scena nel profilo di `plans/copertura-scene.json` | i cancelli contano le scene; ⚠️ un modulo con zero scene riconosciute passa senza essere guardato |
 | 2 | **Contratto «In scena»** in ogni scena, schede d'entrata, Comparse (ADR-0073). Dove i PG hanno tempo libero in un luogo abitato, una tabella **Chi si trova qui** con sei righe: comando, culto, rimedi, bottega, messaggi, guardia; una riga vuota si scrive «nessuno». Dove qualcuno vende, **il banco** ([`references/il-banco.md`](references/il-banco.md)): cosa vende e quante, i servizi, chi identifica e in quanto tempo, cosa compra e fino a quale tetto; la spezia dei mercanti è facoltativa | `copertura_scene.py --check`, profilo severo, con C6 (chi vende senza un prezzo); la tabella e il banco completo li chiede il playtester (`P-ABITATO`), non ancora un cancello |
 | 3 | **Componenti** nella forma fissa, apparato generato, statblocchi inclusi dal Bestiario (ADR-0074) | `componenti.py --check` |
-| 4 | **Le domande del developer** ([`references/sviluppo-degli-incontri.md`](references/sviluppo-degli-incontri.md)) | `domande_developer.py --check`, più la lettura delle domande che lo script non vede |
-| 5 | **I box al metro** di `read-aloud-adulti.md`: ≤ 12 righe, un nome proprio nuovo, niente parentesi | `misura_craft.py --box` (non blocca in CI: si esegue) |
+| 4 | **Le domande del developer** ([`references/sviluppo-degli-incontri.md`](references/sviluppo-degli-incontri.md)) | `domande_developer.py --check`, più la lettura delle domande che lo script non vede; `coerenza_campagna.py fatti` sull'arco nuovo e su quelli che cita: lo stesso PNG o mostro non ha due schede (GS, pf, CA, CD, classi) in due scene. In CI su ARC-07/08 col file `plans/coerenza-residui.json` |
+| 5 | **I box al metro** di `read-aloud-adulti.md`: ≤ 12 righe, un nome proprio nuovo, niente parentesi | `misura_craft.py --box` (non blocca in CI: si esegue). Facoltativo, dove spaCy è installato: `misura_sintassi.py --per-box` per i calchi sintattici; ogni rilievo si guarda prima di riscrivere (`read-aloud-adulti.md` §2-ter, 5) |
 | 6 | **Il giro delle quattro letture a freddo**: lettore, playtester, developer e DM, su un modulo che la rubrica non ha visto, e poi quello che dicono (qui sotto, «Il giro») | [`lettore-a-freddo.md`](../rumblingstone-playtest/references/lettore-a-freddo.md) e [`playtester-a-freddo.md`](../rumblingstone-playtest/references/playtester-a-freddo.md): nessun 🔴; [`sviluppo-degli-incontri.md`](references/sviluppo-degli-incontri.md) letto da un agente. Il DM a freddo ([`dm-a-freddo.md`](../rumblingstone-playtest/references/dm-a-freddo.md)): il primo passo, la vista di chi scorre, è obbligatorio (D9); senza la sua lettura `registro_letture.py` lascia il master in avviso |
 | 7 | **Il ricordo del giorno dopo**: un agente nuovo risponde dal solo diario della lettura a scene, e le risposte si mettono accanto alla serata che il master dichiara. Dove c'è già una chiave approvata dal DM, anche il **quiz a due agenti** (D1 di PIANO-AGENT-SKILLS-ESTERNE, 2026-10-01) | `ricordo_lettura.py domande` e `intenzione`; [`quiz-a-due-agenti.md`](../rumblingstone-playtest/references/quiz-a-due-agenti.md) per il quiz, con `quiz_lettura.py --check` che controlla solo la forma della chiave. Un master che non dichiara la sua serata è un rilievo |
 
@@ -278,13 +287,17 @@ giri, da 2 🔴 a 0 al playtester), scritta perché valga per ogni DEF.
 
 1. **Una copia a freddo**: il master senza i blocchi `storico` e `apparato`,
    che non vanno in stampa, in una cartella con le quattro rubriche e nient'altro.
-2. **Quattro agenti nuovi, uno per rubrica**, in parallelo. Ognuno legge solo
+2. **Quattro agenti nuovi, uno per rubrica**, uno alla volta (il DM, D8 di
+   MASTER-DEF, 2026-10-18: un giro più lento costa meno di quattro agenti
+   che si pestano). Ognuno legge solo
    la sua rubrica e il modulo. Il DM a freddo legge scena per scena senza
    guardare avanti, e il giorno dopo scrive cosa ricorda prima di riaprire.
 3. **Il triage di chi orchestra**, rilievo per rilievo, in quest'ordine:
    - **il testo lo risolve già** (due regole per la stessa cosa, un numero
      diverso in due punti): si corregge sul posto, e la versione che vince è
-     quella che il master dichiara canone;
+     quella che il master dichiara canone. Prima di leggere, `python3
+     scripts/conformita_statblocchi.py --master <file>` fa i conti degli
+     statblocchi scritti nel master;
    - **manca prosa** (un luogo senza box, un PNG senza scheda, una cosa da dire
      a voce che non c'è, un handout promesso e non scritto): la domanda 2 di
      `ORCHESTRAZIONE.md` risponde da sé, il giocatore la sentirà, quindi si
@@ -296,11 +309,42 @@ giri, da 2 🔴 a 0 al playtester), scritta perché valga per ogni DEF.
    - **manca canone** (una regola che il modulo non ha, un fatto che nessuno
      ha deciso): una decisione nel piano, con la sua proposta, e nel frattempo
      la marcatura `[INFERRED — needs DM confirmation]`. Non si inventa.
-4. **Di nuovo il giro**, con agenti nuovi, finché nessuna delle quattro
+   Prima di mandare una domanda al DM, o di respingere un rilievo citando lo
+   stato del mondo, si legge il **canone giocato sul ramo di gruppo**
+   (`git show origin/campaign-group-<nome>:campaign/state.md` e i diari delle
+   sessioni), non lo `state.md` di `main`. Nel secondo giro su ARC-07 questo ha
+   chiuso tre decisioni e ne ha aperte tre, e ha mostrato un rifiuto giusto che
+   citava la fonte sbagliata.
+4. **La correzione, rilievo per rilievo.** Un correttore per master unisce i
+   rilievi doppi e dà a ogni 🔴 e 🟠 uno di tre esiti: **corretto** nel master;
+   **al DM**, se tocca canone o bilanciamento, con la scheda della decisione;
+   **respinto**, citando fra « » la riga del master o dell'SRD che lo smentisce.
+   Un residuo vero, che resta perché correggerlo costa più di quanto rende, è
+   un quarto caso e porta la sua ragione. Gli esiti vanno in `FIX.md`, nella
+   forma di `rumblingstone-playtest` §7. Una correzione che tocca una mappa o la
+   sua legenda passa dal collaudo delle mappe
+   (`rumblingstone-mapmaking/references/collaudo-mappe.md`, «Il giro completo»),
+   e la stessa mappa si corregge **anche nell'Atlante dell'arco**: in ogni giro
+   su ARC-07 l'Atlante e il master davano due versioni della stessa mappa.
+5. **La verifica, con un agente nuovo.** Un verificatore che non ha visto né le
+   letture né la correzione giudica ogni 🔴 e 🟠 sul master corretto: CHIUSO,
+   PARZIALE, APERTO o IN ATTESA DEL DM, con la citazione dal master corretto che
+   lo prova. Poi cerca gli errori **introdotti** dalla correzione, soprattutto
+   nei numeri nuovi. Il rapporto va in `VERIFICA.md`. Sui due giri di ARC-07 la
+   verifica ha trovato 25 correzioni parziali e 3 🟠 nuovi, che senza di lei
+   sarebbero stati contati come chiusi.
+6. **La seconda passata.** Il correttore chiude i parziali e i nuovi della
+   verifica, in fondo a `FIX.md`.
+7. **Di nuovo il giro**, con agenti nuovi, finché nessuna delle quattro
    letture ha un 🔴. I 🟠 rimasti hanno ognuno una riga: corretto, residuo con
    la ragione, o decisione del DM.
-5. **L'archivio**: i rapporti di ogni giro in `plans/esperimenti/<master>-giro-N/`,
-   i conteggi nel piano. È la storia da cui si vede se il master migliora.
+8. **L'archivio**: i rapporti di ogni giro in `plans/esperimenti/<master>-giro-N/`,
+   i conteggi nel piano, e ogni lettura in `registro_letture.py` (`--intero`
+   se è stata fatta sul master intero). È la storia da cui si vede se il master migliora. Le
+   decisioni del DM nate dal giro vanno nella tabella `decisioni-dm` del piano
+   che possiede il master, perché `decisioni_dm.py` legge solo quelle, e nel
+   master si marcano `[CANONE — DM <data>]`, col codice della decisione
+   accanto quando serve ritrovarla (`G2-08` nel secondo giro su ARC-07).
 
 Le letture trovano, i cancelli impediscono che torni: un tipo di rilievo che
 ricompare in due master diversi diventa una regola di `copertura_scene.py` o
@@ -324,8 +368,18 @@ prosa, coerenza e design (ciò che una regex non vede).
 `python scripts/domande_developer.py --check` fa le domande del developer
 ([`references/sviluppo-degli-incontri.md`](references/sviluppo-degli-incontri.md))
 sulla forma del testo: e se volano, e se sono invisibili, chi sente il rumore,
-i tre TS, la soglia del boss, lo skill challenge per intero. Un master nuovo
+i tre TS, la soglia del boss, lo skill challenge per intero, la domanda della
+scena, la conseguenza delle scelte, il presagio del boss. Un master nuovo
 nasce senza rilievi, o con la ragione di ognuno in `plans/domande-developer.json`.
+
+`python scripts/coerenza_campagna.py fatti --check plans/coerenza-residui.json …`
+(lotto 7c di AVVENTURE-COMMUNITY) confronta i numeri delle stesse entità fra le
+scene e gli archi: una contraddizione nuova blocca, una risolta si toglie dal
+file dei residui. Da ARC-08 in poi ogni arco ha anche i suoi fronti e orologi
+in `ARCnn-FRONTI.yaml` nella cartella dell'arco (decisione del DM, 2026-10-23;
+ARC-07 resta com'è): `coerenza_campagna.py fronti` li controlla in CI contro
+`scripts/schemas/fronti_orologi.schema.json`. Un orologio che conta giorni o ore
+lo dichiara in `unita` e tiene la sua durata; gli altri hanno 4, 6 o 8 tacche.
 
 `python scripts/componenti.py --check` (ADR-0074) verifica l'apparato generato
 e le **copie sincronizzate**: un blocco scritto una volta in un file e copiato

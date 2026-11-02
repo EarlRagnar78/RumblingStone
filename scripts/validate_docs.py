@@ -241,17 +241,26 @@ def _is_generated_mirror(rel: str) -> bool:
     return first.startswith(".") and first not in {".github", ".gitignore"}
 
 
+# Un blocco con il linguaggio dichiarato è codice, non un albero: le righe di
+# un diagramma Mermaid o di una sessione di shell (`flowchart LR`, `cd repo`)
+# sembrano nomi di file. Trovato il 2026-10-23 con i diagrammi del README.
+CODE_FENCES = {"mermaid", "bash", "sh", "shell", "console", "python", "py",
+               "json", "yaml", "yml", "toml", "typst", "js", "javascript"}
+
+
 def paths_from_tree_blocks(text: str) -> list[tuple[int, str]]:
     """Percorsi ricostruiti dai blocchi-albero. Ritorna [(riga, percorso)]."""
     out: list[tuple[int, str]] = []
     in_fence = False
+    is_code = False
     stack: list[str] = []
     for lineno, raw in enumerate(text.splitlines(), start=1):
         if raw.lstrip().startswith("```"):
             in_fence = not in_fence
+            is_code = in_fence and raw.lstrip()[3:].strip().lower() in CODE_FENCES
             stack = []
             continue
-        if not in_fence:
+        if not in_fence or is_code:
             continue
         line = raw.split("#", 1)[0].rstrip()
         if not line.strip():

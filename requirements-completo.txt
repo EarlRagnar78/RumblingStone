@@ -28,3 +28,11 @@ bpy>=5.2; python_version == "3.13"
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch>=2.5
 piq>=0.8
+
+# ADR-0101 (catena della prosa): la sintassi dei box con spaCy, facoltativa
+# (`misura_sintassi.py`, `dm.py prosa sintassi`). spaCy e' MIT; il modello
+# italiano `it_core_news_md` e' CC BY-NC-SA 3.0, quindi si installa qui nel
+# .venv e non entra nel repo. Circa 45 MB. Prova sui 38 voti ciechi del DM in
+# plans/esperimenti/qualita-misurabile-2026-10-22/sintassi/.
+spacy>=3.8
+it_core_news_md @ https://github.com/explosion/spacy-models/releases/download/it_core_news_md-3.8.0/it_core_news_md-3.8.0-py3-none-any.whl

@@ -1,0 +1,121 @@
+# I booklet del Drappo
+
+Impaginati con il motore del repo (lo stesso del booklet del Palio di Channathgate e
+della sessione della Forgia Eterna): stile pergamena, tab DM/giocatore, mappe e
+stemmi vettoriali inline, **niente dipendenze esterne**.
+
+| Booklet | A chi va | Cosa contiene |
+|---|---|---|
+| **`DRAPPO-BOOKLET-DM.html`** | ⚠️ solo DM | tutto: regia, luoghi, agende dei villain, le tre giornate, statblocchi, playtest, stato del modulo, feedback, IP — 18 capitoli |
+| **`DRAPPO-BOOKLET-GIOCATORI.html`** | ✉ giocatori, **uno per uno** | benvenuti a Tarsilia + i sei background. ⚠️ **Non è zero-spoiler per il gruppo**: contiene tutte e sei «La cosa che non dici». Va bene mandato al *singolo* giocatore; girato nel gruppo brucia i sei segreti prima della prima serata |
+| **`DRAPPO-BENVENUTO-TAVOLO.html`** | ✉ **a tutti** | il solo volantino di benvenuto: questo sì che si manda al gruppo prima della serata. 2 pagine |
+| **`DRAPPO-FASCICOLO-SCHEDE.html`** | ✉ giocatori | le sei schede (numeri) + il retro (background, legami, ritratto). Da stampare fronte-retro |
+| **`DRAPPO-PROP.html`** | ✉ da consegnare | i quattro prop: il contratto, il registro, la ricevuta, il decreto. Una pagina l'uno |
+| **`DRAPPO-SCHEDE-PG.manifest.json`** | ✉ giocatori | **solo stampa**: le sei schede vere, una pagina A4 a testa, ritratto compreso — vedi più sotto |
+
+Accanto a ogni `.html` c'è il gemello **`.hb.md`**: è il sorgente da incollare in
+[Homebrewery](https://homebrewery.naturalcrit.com/) se preferisci impaginare là.
+
+---
+
+## Rigenerare
+
+```bash
+cd 10-stand-alone/Il-Drappo-di-Tarsilia/homebrew
+
+# HTML + sorgente Homebrewery
+python3 ../../../scripts/build_booklet_html.py DRAPPO-BOOKLET-DM.manifest.json --format both
+python3 ../../../scripts/build_booklet_html.py DRAPPO-BOOKLET-GIOCATORI.manifest.json --format both
+python3 ../../../scripts/build_booklet_html.py DRAPPO-FASCICOLO-SCHEDE.manifest.json --format both
+python3 ../../../scripts/build_booklet_html.py DRAPPO-PROP.manifest.json --format both
+```
+
+## L'edizione da stampa — un volume solo
+
+Accanto ai PDF per capitolo c'è la **seconda catena** (ADR-0020): stesso
+manifest, un volume unico con tipografia embedded, fregi di capitolo e
+segnalibri veri.
+
+```bash
+python3 ../../../scripts/export_booklet_typst.py DRAPPO-BOOKLET-DM.manifest.json --all
+```
+
+Produce `DRAPPO-BOOKLET-DM-STAMPA.pdf` — **63 pagine, un file**. Serve il binario
+`typst` (Apache 2.0): se manca, lo script dice come installarlo ed esce pulito.
+
+## Le sei schede — una pagina A4 a testa
+
+```bash
+python3 ../../../scripts/export_booklet_typst.py DRAPPO-SCHEDE-PG.manifest.json
+```
+
+Produce `DRAPPO-SCHEDE-PG-STAMPA.pdf`: **sei pagine, sei schede**, niente
+copertina e niente indice — si stampa e si dà in mano. Ogni pagina ha la fascia
+alta col ritratto, il pannello di sinistra con chi sei (background in prima
+persona, equipaggiamento, legami, il tuo problema), quello di destra con lo
+statblocco (CA, pf, TS, i sei attributi, attacchi, abilità, talenti,
+incantesimi), e in fondo «come si gioca in un minuto».
+
+> **Questo manifest è solo per la stampa.** I dati arrivano da
+> `../PREGEN-SEI-SCHEDE-PF1E.md` e `../FASCICOLO-SCHEDE-GIOCATORE.md`, che
+> restano i master: cambia la CA lì e cambia sulla scheda. La versione a
+> **schermo** delle stesse due pagine è `DRAPPO-FASCICOLO-SCHEDE.html`, che le
+> impagina come testo — non passarci `export_booklet_typst.py` aspettandoti le
+> schede: il layout a pannelli lo accende `"layout": "schede"`, che sta solo qui.
+
+I ritratti li prende da `../ALLEGATI/immagini/web/` (le derivate leggere; senza
+di quelle il PDF passerebbe da 0,9 MB a una quarantina). Se un ritratto manca,
+la scheda esce con una cornice tratteggiata al suo posto e l'esportatore lo dice.
+
+### Una scheda per giocatore
+
+```bash
+python3 ../../../scripts/export_booklet_typst.py DRAPPO-SCHEDE-PG.manifest.json --per-scheda
+```
+
+Aggiunge `schede/DRAPPO-SCHEDE-PG-<N>-<pg>.pdf`, sei file da una pagina, **senza
+frontespizio**.
+
+> ⚠️ **Il fascicolo unico non si gira nel gruppo.** Su ogni scheda c'è *«la cosa
+> che non dici»* — la paura di Nocca per la curva nord, il morso che teneva Ombra
+> vent'anni fa, il torto che Berenice sa di avere. Sei segreti che il modulo
+> spende nelle tre serate, e che il PDF completo brucia tutti insieme prima
+> ancora di cominciare. Il fascicolo è per te e per la stampante; ai giocatori
+> vanno i singoli.
+
+## I PDF per capitolo
+
+```bash
+python3 ../../../scripts/export_booklet_pdf.py DRAPPO-BOOKLET-DM.manifest.json --all
+python3 ../../../scripts/export_booklet_pdf.py DRAPPO-BOOKLET-GIOCATORI.manifest.json --all
+python3 ../../../scripts/export_booklet_pdf.py DRAPPO-FASCICOLO-SCHEDE.manifest.json --all
+python3 ../../../scripts/export_booklet_pdf.py DRAPPO-PROP.manifest.json --all
+```
+
+Finiscono in `pdf/`, un file A4 per capitolo (**una quarantina**: 19 per il DM, 3 per i
+giocatori, 3 per il fascicolo, 5 per i prop, copertine incluse).
+
+> ⚠️ **I PDF non sono committati**: `.gitignore` esclude `*.pdf` in tutto il repo,
+> perché sono **artefatti rigenerabili** e pesano. I due comandi qui sopra li
+> ricreano in meno di un minuto — servono solo un Chromium/Chrome sulla macchina, che
+> l'esportatore trova da solo.
+
+## Se cambi il contenuto
+
+I booklet **non hanno testo proprio**: assemblano i file `.md` del modulo. Modifica il
+capitolo alla fonte (per esempio `../06-VILLAIN-E-AGENDE.md`) e rigenera. Le due sole
+pagine che vivono qui dentro sono:
+
+- `DRAPPO-BOOKLET-INTRO.md` — la presentazione in copertina del booklet del DM;
+- `DRAPPO-VOLANTINO-GIOCATORI.md` — il ✉ *Benvenuti a Tarsilia*, spoiler-free.
+
+## Le copertine
+
+Vengono dalle tavole vettoriali (`../ALLEGATI/tavole/`) e sono **inlined come SVG**,
+non come immagini: restano nitide a qualsiasi ingrandimento e in stampa.
+
+| Booklet | Copertina |
+|---|---|
+| DM | `il-drappo.svg` — il telo dipinto, con le nove facce |
+| Giocatori | `tarsilia-citta.svg` — la mappa della città |
+| Fascicolo | `ritratto-vanna.svg` |

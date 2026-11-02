@@ -100,6 +100,7 @@ class AIEnhancer:
     def _fix_grammar(self, text: str) -> str:
         """Fix grammar and spelling errors"""
         try:
+            import language_tool_python
             tool = self.models['grammar']
             matches = tool.check(text)
             corrected = language_tool_python.utils.correct(text, matches)

@@ -579,8 +579,8 @@ diciotto.
 > | **4d** ✅ `state.yaml` (ADR-0017) | **K** canone | `[**Opus 5** · xhigh-max · `state.md` **rigenerato è identico** a quello committato]` — **chiuso 2026-09-16/17 (4d-1 … 4d-8), riverificato il 2026-09-24** (§4.9.0) |
 > | **4e** ✅ una sola via di scrittura | **C** costruzione | `[Sonnet 5 · alto · un test **sui file veri**, non su fixture — vedi §4.4]` — **chiuso 2026-09-24** (§4.9): il front-matter coi delta, 8 mutazioni su 8 rosse |
 > | **4f** prodotto e partita | **C** costruzione | `[Sonnet 5 · alto · un test che dimostra che il reset **non eredita niente**]` |
-> | **4g** schede PG a dati | **K** canone | `[**Opus 5** · alto · le schede generate combaciano con quelle scritte a mano]` |
-> | **4h** `groups/<slug>/` | **G** giudizio | `[Opus 5 · xhigh · **PR dedicata**, come dice la #99 stessa]` |
+> | **4g** schede PG a dati | **C** (4g-1) + **K** (4g-2) | `[Opus 5 · alto · le schede generate combaciano con quelle scritte a mano]` — **4g-1 ✅ 2026-10-23** (§4.13): lo strumento; **4g-2 ⬜** i valori dalle schede del DM |
+> | **4h** `groups/<slug>/` | **G** giudizio | `[Opus 5 · xhigh · **PR dedicata**, come dice la #99 stessa]` — **proposto di non portarlo** (ADR-0088): `main` ha scelto il ramo per gruppo (ADR-0007, ADR-0090) |
 >
 > ⚠️ **Quattro lotti su otto sono K o G.** È la misura di quanto questa fase
 > tocchi il canone, e la ragione per cui **non si mergia in blocco**.
@@ -1138,11 +1138,11 @@ Vale per **ogni** commit di **ogni** fase.
 | # | Fase | Domanda |
 |---|---|---|
 | ~~D1~~ | F1 | ✅ **decisa 2026-09-05: archiviazione.** I tre master e i loro 7 SVG in `_ARCHIVIO/`; gli SVG non cancellati, così la cartella resta dentro il raggio di `validate_maps` |
-| D2 | F3 · 3d | **Riformulata il 2026-09-11: la domanda di prima partiva da un fatto falso.** Diceva *«i diciotto raster si generano sulla tua macchina — quando?»*, ma **esistono tutti e diciotto** (più le due extra), generati dal DM **con Gemini** il 2026-08-15, montati nel modulo, `validate_standalone` verde. `comfyui_batch --lista` dava «6 da fare» per un **disallineamento di nomi**, corretto in questo lotto. La domanda vera è: **l'arte del Drappo è di Gemini, la catena di F3 genera con SDXL in locale — quale delle due è il canone del modulo?** Le differenze che contano (ADR-0019 §2, che questo caso l'aveva previsto): Gemini **non espone il seed**, quindi la serie è irripetibile e il PNG è la sorgente; i suoi termini sono un **contratto che cambia**, verificato per di più su fonti secondarie; SDXL è OpenRAIL++-M, **perpetua**. Di contro la provenienza di Gemini è **firmata C2PA**, e SDXL su queste immagini **nessuno l'ha visto**. 🔵 **Metodo scelto dal DM il 2026-09-11: collaudo prima di scegliere** — la decisione **resta aperta**, si chiude quando il DM ha visto il confronto. Il DM: *«voglio fare prima un collaudo con 2 o 3 immagini e vedere davvero la qualità prima di buttare quelle di Gemini, che sono carine»*. Si generano **due o tre** immagini con SDXL in una cartella a parte, si mettono accanto alle attuali, e A (tenere Gemini) o B (rigenerare tutto) si sceglie **guardando**. Il collaudo chiude anche il buco vero di F3 — la catena mai provata contro un ComfyUI reale — al costo di due immagini invece che diciotto |
+| D2 | F3 · 3d | **Riformulata il 2026-09-11: la domanda di prima partiva da un fatto falso.** Diceva *«i diciotto raster si generano sulla tua macchina — quando?»*, ma **esistono tutti e diciotto** (più le due extra), generati dal DM **con Gemini** il 2026-08-15, montati nel modulo, `validate_standalone` verde. `comfyui_batch --lista` dava «6 da fare» per un **disallineamento di nomi**, corretto in questo lotto. La domanda vera è: **l'arte del Drappo è di Gemini, la catena di F3 genera con SDXL in locale — quale delle due è il canone del modulo?** Le differenze che contano (ADR-0019 §2, che questo caso l'aveva previsto): Gemini **non espone il seed**, quindi la serie è irripetibile e il PNG è la sorgente; i suoi termini sono un **contratto che cambia**, verificato per di più su fonti secondarie; SDXL è OpenRAIL++-M, **perpetua**. Di contro la provenienza di Gemini è **firmata C2PA**, e SDXL su queste immagini **nessuno l'ha visto**. 🔵 **Metodo scelto dal DM il 2026-09-11: collaudo prima di scegliere** — la decisione **resta aperta**, si chiude quando il DM ha visto il confronto. Il DM: *«voglio fare prima un collaudo con 2 o 3 immagini e vedere davvero la qualità prima di buttare quelle di Gemini, che sono carine»*. Si generano **due o tre** immagini con SDXL in una cartella a parte, si mettono accanto alle attuali, e A (tenere Gemini) o B (rigenerare tutto) si sceglie **guardando**. Il collaudo chiude anche il buco vero di F3 — la catena mai provata contro un ComfyUI reale — al costo di due immagini invece che diciotto · *Proposta di RECUPERO (era la sua D3, 2026-10-10), sulla #106*: il collaudo delle due o tre immagini si fa con la #230 installata; la #106 si chiude subito come «contenuto portato», e la D2 resta aperta in RIPRESA-PR senza tenere aperta una PR |
 | ~~D3~~ | F4 · 4c | ✅ **chiusa il 2026-09-12, eseguita nello stesso commit in cui e' stata dichiarata chiusa** (la lezione di D4). Il DM ha risposto il 2026-09-11 e il lotto 4c ha applicato entrambe le risposte: il **Giorno di Marcia 19** e' il punto di sincronia a cui il calendario torna col viaggio nel tempo — non un difetto, un tempo verbale, corretto; il **-2 COS di Thorik** era registrato come versato per una scena mai giocata, tolto dal presente insieme ai **-500 PE di Tordek**, che avevano lo stesso difetto e che nessuno aveva notato. 🔎 **E il lotto ha trovato il resto della stessa crepa**: §1 collocava tutti e quattro i PG dopo Hammerfist e dava **Hella viva**, mentre §6 dello stesso file la dava *«dead — resurrection pending»*. Vedi **§4.2-quater** |
 | ~~D13~~ | F4 · 4c | ✅ **DECISA E ATTUATA il 2026-09-12, nello stesso commit.** Il DM ha approvato la **v4-bis**, con l'ultima taratura sua: **−1 CA invece di −2** per Thorik. 🛡️ **Thorik** dona il **+2 di deflessione della Corona** → **Scudo del Custode** (1/g, immediata: Hella prende il danno di un alleato entro 9 m **dimezzato**) + **l'Eco del Custode**, che e' l'idea del DM: quando lei scuda qualcuno **lui e' accelerato 3 round e si muove verso chi e' stato protetto** — l'anello si chiude, la protezione data torna al donatore trasformata in velocita'. ⚒️ **Tordek** dona **Ancoraggio della Montagna** → **Pelle di Adamantio RD 3/adamantino**. 🔮 **Artemis** dona **1d6 di Eldritch Blast** (7d6 → 6d6) → **Rovo Eldritch** a volonta': il DM ha visto che il dono precedente **si sovrapponeva** a quello di Thorik (stessa casella, dare tempo a un altro). ⚒️ **Reazioni degli artefatti al dono e al rifiuto**, tutte reversibili e tutte fondate sulla personalita' gia' in scheda. 🌱 **E il potere #6 della Collana non e' piu' `[da definire col DM]`**: il seme **restituisce** al donatore, una volta sola, e decide Hella. **Attuato in 17 file** + **12 istantanee** in `_ARCHIVIO/doni-v1-2026-09-12/`. Vedi **§4.2-quinquies** |
 | ~~D4~~ | F4 | ✅ **chiusa il 2026-09-11: non era una domanda.** Misurato invece di ricordare: il `PALIO-BOOKLET` cita **14 file** — 8 stemmi, 4 mappe, 2 immagini — ed **esistono tutti e 14**. SVG veri da 2,7-5,4 KB, due PNG da ~2 MB, e `CREDITS.md` con l'attribuzione **CC BY 3.0** a game-icons.net già in regola. Niente da produrre, niente da togliere. 🔎 Settimo presupposto invecchiato di questa campagna, e la chiusura era rimasta indietro di un giro: annunciata il 2026-09-11 e non eseguita nello stesso commit |
-| D11 | F4 · 4b | **L'ADR ex-0018 della #72: recuperato il 2026-09-11 come [ADR-0049](adr/ADR-0049-edizione-commerciale-ap-originale.md), e resta 🔵 *proposta* — non accettata.** Dice che, *se e quando* si pubblica, si pubblica un **AP originale autonomo**, mai un'espansione di RHoD, e porta il **perimetro della v1**. ✅ **I due avvertimenti che bloccavano la domanda sono tolti**: l'audit mancante è stato **rifatto da zero** ([`AUDIT-DERIVAZIONE-IP-CAMPAGNA`](../docs/audit/AUDIT-DERIVAZIONE-IP-CAMPAGNA.md)), e la tesi **regge sul repo di oggi** — archi 07+08 a **0,2** e **0,7** occorrenze RHoD per 1.000 parole contro il **5,6** dell'arco 09. 🔎 **E la misura ha aggiunto due cose che la #72 non sapeva**: il **`Bestiario/` è a 3,0** e **esce col modulo** — un perimetro che tace su di lui lascia fuori il conto una dipendenza vera — e i **moduli autoconclusivi sono già puliti** (`10-stand-alone` e il Drappo a **0,0**), quindi su quest'asse il prodotto della linea 3 di `PIANO-VENDIBILITA` è pronto. 🔴 **Cosa resta da decidere al DM**: (a) si adotta il perimetro così com'è? (b) il **bestiario** sta dentro o fuori? (c) l'ADR resta proposta finché non c'è la **verifica di un avvocato IP**, che l'audit non sostituisce — conta i nomi, non la struttura |
+| D11 | F4 · 4b | **L'ADR ex-0018 della #72: recuperato il 2026-09-11 come [ADR-0049](adr/ADR-0049-edizione-commerciale-ap-originale.md), e resta 🔵 *proposta* — non accettata.** Dice che, *se e quando* si pubblica, si pubblica un **AP originale autonomo**, mai un'espansione di RHoD, e porta il **perimetro della v1**. ✅ **I due avvertimenti che bloccavano la domanda sono tolti**: l'audit mancante è stato **rifatto da zero** ([`AUDIT-DERIVAZIONE-IP-CAMPAGNA`](../docs/audit/AUDIT-DERIVAZIONE-IP-CAMPAGNA.md)), e la tesi **regge sul repo di oggi** — archi 07+08 a **0,2** e **0,7** occorrenze RHoD per 1.000 parole contro il **5,6** dell'arco 09. 🔎 **E la misura ha aggiunto due cose che la #72 non sapeva**: il **`Bestiario/` è a 3,0** e **esce col modulo** — un perimetro che tace su di lui lascia fuori il conto una dipendenza vera — e i **moduli autoconclusivi sono già puliti** (`10-stand-alone` e il Drappo a **0,0**), quindi su quest'asse il prodotto della linea 3 di `PIANO-VENDIBILITA` è pronto. 🔴 **Cosa resta da decidere al DM**: (a) si adotta il perimetro così com'è? (b) il **bestiario** sta dentro o fuori? (c) l'ADR resta proposta finché non c'è la **verifica di un avvocato IP**, che l'audit non sostituisce — conta i nomi, non la struttura · *Proposta di RECUPERO (era la sua D4, 2026-10-10)*: passa a voce di `adozioni-in-attesa.json` con la condizione «VENDIBILITA autorizzato», e lascia §4 |
 | ~~D14~~ | F4 · 4d-2 | ✅ **CHIUSA E ATTUATA il 2026-09-16, nello stesso commit.** Il DM: *«la riga va in state.yml e poi riportata in state.md»*. Misurata, la risposta regge: la tabella dei waypoint è **dato puro** (10 righe) e il March Day è **un campo** (`march_clock.giorno_corrente`); il paragrafo di cinque righe che spiega perché il Giorno 19 è un bersaglio e non un passato resta **prosa, sotto e fuori** dalla regione generata. Separati, la macchina riscrive la sua riga a ogni sessione senza mai toccare la nota del DM — che era il nodo. ⚠️ La regione `auto:march-clock` **sparisce**, e marcarla oggi sarebbe *peggio* di prima: una regione dentro una `gen:state:` sono due scrittori sullo stesso testo. Sparisce anche `RETHMAR_DAY = 42`, cablato in `state_apply`: era la seconda fonte di verità più piccola del repo, e sopravviveva perché nessuno aveva mai eseguito il tool. Vedi **§4.8.9** e [ADR-0052](adr/ADR-0052-cosa-e-dato-e-cosa-e-prosa.md) |
 | ~~D16~~ | F4 · 4d-2 | ✅ **CHIUSA E ATTUATA il 2026-09-16, nello stesso commit.** Il DM ha scelto l'enumerazione **con il compagno**: `attivo · latitante · neutralizzato · morto · ignoto`, più `reversibile`. ⚒️ `neutralizzato` copre il caso più frequente al tavolo — sconfitto ma non morto — e senza di lui il DM dovrebbe scrivere `morto` per non scrivere `attivo`. 🔴 **E `reversibile` è la metà che conta**: in questa campagna un morto torna (il Ghostlord nasce da un morto, Sal è protetto da un paradosso auto-consistente, Hella è morta in attesa del rito), quindi registrare «morto» senza dire se è definitivo è registrare **meno di quel che il canone sa**. La regola **R9** lo pretende. ⚠️ `state_apply` scrive `stato` ma **non** `reversibile`: il primo è la lettura letterale del log, il secondo è una decisione narrativa, e R9 la chiede al DM alla prima esecuzione — provato sul canone vero. 🔎 **§4 conoscenze è stata esclusa dopo averla misurata**, benché il DM avesse chiesto di includerla: tre righe non sono persone e tre persone compaiono sotto due nomi, quindi `stato` lì vorrebbe dire un valore privo di senso in tre casi e due copie divergenti in altri tre. Va nell'anagrafica del lotto della chiave. Vedi **§4.8.9** |
 | ~~D17~~ | F4 · 4d-4 | ✅ **CHIUSA il 2026-09-17 — e la domanda aveva una premessa falsa, trovata dal DM.** Era posta come «i due villain senza scheda: si scrivono, si contano o escono da §3?». 🐛 **Tre delle quattro voci che avevo dichiarato senza scheda ce l'avevano.** Il DM: *«controlla bene negli archi o nel bestiario se c'è qualcosa magari annegato come prosa»*. **Zalkatar** ha uno statblocco a **GS 13** (14d4+70, CA 24) in `09_…/P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md`; **Saarvith + Regiarix** ne hanno uno a **GS 13** in `09_…/P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`, e il file `FASE4` accanto dichiara esplicitamente *«le statistiche sono lì; questo è la regia dello scontro»*; il **Cerchio Druidico** ne ha uno in `Bestiario/mostri/cerchio-druid7-cr7.md`, marcato [ACCEPTED — DM-canon 2026-05-05]. L'errore non è stato non trovarle: ho cercato **solo dentro `Bestiario/`**, e allargando la ricerca ho **troncato l'output a sei righe** concludendo da una lista tagliata. ✅ Non c'era niente da scrivere né da togliere: c'era da **cercare meglio**. Resta **un** buco su 28 (`lathander-mask`), ed è corretto. ⚠️ **Conseguenza di progetto**: una scheda non vive per forza nel `Bestiario/`, e un cancello tarato lì avrebbe continuato a dare per mancanti due boss da GS 13. Nasce **R13**, che mette alla prova ogni buco dichiarato contro tutto il repo. Vedi **§4.8.10** e [ADR-0053](adr/ADR-0053-la-chiave-verso-il-bestiario-si-dichiara.md) |\n| ~~D6~~ | F1 | ✅ **decisa 2026-09-04: ridisegnata.** `…P1C` mappa 3 dichiarava 40×40 e aveva righe da 24 a 26 celle: rifatta **26×29**, nessuna coordinata del testo cambiata |
@@ -3110,6 +3110,84 @@ prototipo, contro `main` prima del merge della parte di codice:
 Un numero alto qui non vuol dire lavoro perso: dice dove leggere, e la lettura
 è scritta nel sotto-lotto. I sei rami si possono cancellare quando la PR della
 parte di codice di 4j è su `main`; la cancellazione la fa il DM.
+
+### 4.13 · Lotto **4g-1** — lo strumento delle schede PG `[✅ 2026-10-23, #278 · 4g-2 ⬜ · ADR-0088 accettata]`
+
+#### FASE 1 · Audit, sul repo del 2026-10-23
+
+- La #99 è **863 commit** indietro: le sue schede non si copiano, si rifanno.
+- Le schede della #99 hanno le caratteristiche a `null` (23 caselle su 24):
+  lo scheletro vale, i valori non ci sono. Classe, PF e stato sono già in
+  `state.yaml` → `party`: copiarli farebbe due master.
+- Il canone è cambiato da agosto: il rito dello Smeraldo dà **−2 DES / +2 COS /
+  +4 CAR** a Thorik (D84, 2026-10-12), e i dati della #99 non lo sapevano.
+- Il gate di agosto, girato sul repo di oggi, dava **7 derive, tutte false**:
+  «Nessun −2 COS» letto come affermazione; «−4 DES» (la somma dei due −2) non
+  riconosciuto; i resoconti di `plans/esperimenti/` che citano un PG per il
+  costo di un altro.
+- `PG/` era dichiarata partita in §4.10.0 ma il reset non la toccava: con le
+  schede, un gruppo nuovo avrebbe avuto la CI rossa al primo push.
+
+#### FASE 2 · Sviluppo
+
+`scripts/validate_pg.py` e `scripts/render_pg.py` ripresi dalla #99, con lo
+schema `pg_scheda.schema.json` ristretto: la scheda porta caratteristiche e
+modificatori permanenti con la loro fonte, **e basta**. Il controllo 5 rifiuta
+classe, PF, stato e artefatti indicando dove stanno, e vuole una scheda per
+ogni PG di `party`. I tre falsi positivi sono corretti nel gate. Le quattro
+schede in `PG/schede/` portano solo i quattro modificatori di Thorik già
+attestati. Il reset (`dmcore/partita.py`, azione `schede`) toglie le schede
+del tavolo di prima e ne crea una vuota per ogni PG del nuovo `party`.
+
+#### FASE 3 · Validazione
+
+| Cosa | Esito |
+|---|---|
+| `validate_pg.py`, `render_pg.py --check` sul repo | ✅ verdi, 22 caselle `[INFERRED]` contate |
+| gli stessi sul ramo `campaign-group-rumblingstone` con questo ramo fuso sopra (il canone giocato) | ✅ verdi, nessun conflitto |
+| `test_validate_pg.py` | 25 test; **14 mutazioni su 14 rosse** (fra cui: togliere il −2 DES della Corona) |
+| `test_new_group.py` | il gruppo nuovo ha le sue schede e `validate_pg` verde; le schede del repo vero non si toccano |
+
+#### Cosa resta: 4g-2
+
+I valori delle caratteristiche dalle schede del DM, confermati da un modulo
+(D19). Il CAR di Thorik è già deciso: **8 → 12**. P1 (la Corona) e DEF-1 (il
+rito, D84) scrivono lo stesso +4 due volte; il DM il 2026-10-23: *«il canone è
+quello giocato nel gruppo»*, e lì `state.yaml` conta +4 CAR in tutto, come la
+scheda giocatore della Corona rivista («8 → 12»). Resta solo una differenza di
+attribuzione (Corona o rito), che non cambia il numero.
+
+**4g-2, prima parte `[🟡 2026-10-24]`.** Dal repo stesso: 15 caselle su 24.
+
+| PG | Fonte | Caselle |
+|---|---|---|
+| Tordek | la scheda PCGen del giocatore al 12° (`Tordek Durinheart 12 lvl modificato.pdf`); al 13° nessun aumento | 6 su 6 |
+| Hella | ARC07-DEF-3 App. A.1, canone del DM 2026-10-18 (SAG 20 con il +4 della Collana) | 6 su 6 |
+| Thorik | FOR 20 da P1, più DES e CAR della 4g-1 | 3 su 6 |
+| Artemis | nessun numero nel repo | 0 su 6 |
+
+Scelta di default, da confermare: l'attuale conta gli oggetti indossati (i +2
+di Tordek), come la Corona e la Collana, perché è il numero del tavolo.
+Restano al DM, con un modulo: COS, INT e SAG di Thorik e le sei di Artemis.
+Trovato strada facendo: P1, P2 e la tabella della lotta di DEF-1 danno a Tordek
+FOR 14, la sua scheda dice 20.
+
+### 4.14 · La #99 si chiude, e tre pezzi si riprendono `[✅ 2026-10-24]`
+
+Il DM ha scelto A: chiudere la #99 (l'ha chiusa il thread padre il
+2026-10-24) e riprendere da `main` i tre pezzi che nessun lotto copriva.
+Misura: le righe aggiunte dalla #99 (almeno 30 caratteri) cercate su `main`
+con la 4g-1. Il resto delle righe «mancanti» è testo di agosto che `main` ha
+riscritto (`state.yaml`, `state.md`, i test, il manifest).
+
+| Pezzo | Dove arriva | Prova |
+|---|---|---|
+| `inventory_inferred.py` (G4) | `scripts/`, test in `scripts/tests/test_inventory_inferred.py`, baseline `docs/audit/inferred-baseline.json` (260 aperti), manifest | 12 test, nessuno scrive nel repo; `--check` in CI non bloccante (canale testing, ADR-0099) |
+| la regola del cambio d'autore (`f580bc1d`) | `skills/rumblingstone-narrative-style/references/consequence-echoes.md` §1-bis | i fatti citati (E-07c armata di Thorik, E-07e annullata) riscontrati su `state.yaml` |
+| la serie Golarion (`c019d7ef`) | `Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md` §4 | coerente con `stemmi/golarion/README.md` §«Licenza e IP» |
+
+Il ratchet diventa un cancello solo se il DM lo promuove, come ogni canale
+testing. Resta aperto 4g-2.
 
 ## Come si misura che il piano è finito
 

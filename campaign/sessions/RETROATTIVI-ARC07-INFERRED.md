@@ -1,20 +1,20 @@
 # Log retroattivi ARC-06 finale → ARC-07 (ricostruzione)
 
-> ⚠️ **`[INFERRED — needs DM confirmation]`**: questi log sono una
+> ⚠️ **Ricostruiti, non verbale** (DM 2026-10-18): questi log sono una
 > **ricostruzione dell'engine** dai file di canone (piano ARC-07 §G0-G3,
 > `campaign-chronicle.md`, `coherence.md`, i master P1-P4 e il file-risultati del
-> viaggio). **L'intervista al DM (task B1) non è ancora avvenuta**: date,
-> giocatori presenti e dettagli di tavolo sono da confermare/correggere. Ogni
-> valore non attestato è marcato `[INFERRED]`. Formato AGENTS.md (Summary /
+> viaggio). Il DM li ha accettati il 2026-10-18 senza un verbale: date,
+> giocatori presenti e dettagli di tavolo non sono registrati, e dove il
+> tavolo ricorda diversamente vince il tavolo. Formato AGENTS.md (Summary /
 > Key decisions / XP / Loot / Next hooks). Non sovrascrivono nulla: sono la
 > memoria mancante che il cruscotto di `state.md` (post-A0) assorbirà.
 
 ---
 
-## LOG R0 — Finale ARC-06: la Stanza della Corona e la morte di Hella `[INFERRED]`
+## LOG R0 — Finale ARC-06: la Stanza della Corona e la morte di Hella `[ricostruito]`
 
 **In-world**: ARC-06 (Stanza della Corona di Adamantio) · **Livello**: ~11-12
-**Giocatori**: `[INFERRED]`
+**Giocatori**: non registrati
 
 ### Summary
 Le **Yochlol half-illithid mandate da Sonjak** (Matrona Sajak) irrompono nella
@@ -29,10 +29,12 @@ al party; il corpo di Hella viene recuperato.
 ### Key decisions
 - Il party sceglie di **portare il corpo di Hella** alla Sala della Forgia
   Eterna anziché tentare una resurrezione immediata (impossibile lì).
-- Belkram, redento, `[INFERRED]` consegna/lascia qualcosa al party? (da chiedere)
+- Belkram muore redento. Le sue ultime parole sono «sono in pace», e fa un
+  cenno a Thorik: lo riconosce degno degli avi e portatore della Corona (DM
+  2026-10-18).
 
 ### XP / Loot
-- `[INFERRED]` — EL 17 su party 13°: bilanciato dagli artefatti (villans.md r.1).
+- EL 17 su party 13°: bilanciato dagli artefatti (villans.md r.1).
   XP non registrati.
 
 ### Next hooks
@@ -41,7 +43,7 @@ al party; il corpo di Hella viene recuperato.
 
 ---
 
-## LOG R1 — ARC-07 P1-P2: ingresso e Sala della Forgia Eterna `[INFERRED]`
+## LOG R1 — ARC-07 P1-P2: ingresso e Sala della Forgia Eterna `[ricostruito]`
 
 **In-world**: ARC-07 Parte 1-2 · **Livello**: 13°
 
@@ -58,14 +60,14 @@ poi la battaglia antica).
 - Tordek attiva la **Cintura della Devastazione** al rito della Sala (P2).
 
 ### XP / Loot
-- `[INFERRED]`.
+- Non registrati.
 
 ### Next hooks
 - Aprire il **Portale del Fuoco** per recuperare il Topazio.
 
 ---
 
-## LOG R2 — ARC-07 P3: Piano del Fuoco, il Topazio `[INFERRED]`
+## LOG R2 — ARC-07 P3: Piano del Fuoco, il Topazio `[ricostruito]`
 
 **In-world**: ARC-07 Parte 3 · **Livello**: 13°
 
@@ -76,7 +78,7 @@ Anziano guardiano dell'Altare). Superano le prove e la Piramide finale
 Corona attiva oggi (G2). I Bracieri di Tordek si risvegliano sul versante Fuoco.
 
 ### Key decisions / XP / Loot
-- `[INFERRED]` — giocato con i valori delle ricalibrazioni del Fuoco.
+- Giocato con i valori delle ricalibrazioni del Fuoco.
 
 ### Next hooks
 - Interludio → **Piano della Terra** (Smeraldo).
@@ -106,7 +108,12 @@ fuoco**. (Dettaglio completo nel file-risultati.)
 
 ---
 
-## LOG R4 — ARC-07 P4: Piano della Terra (IN CORSO) `[INFERRED]`
+## LOG R4 — ARC-07 P4: Piano della Terra
+
+> **Nota (2026-10-17)**: il P4 è stato giocato. Rituale Legacy 3 il 31 luglio,
+> resurrezione di Hella (P3B) il 25 settembre: lo dicono il ramo di gruppo
+> `campaign-group-rumblingstone` (`campaign/state.md`, Corona di Adamantio) e
+> `campaign/sessions/2026-09-25_session-4.md`. Il log sotto resta com'era.
 
 **In-world**: ARC-07 Parte 4 · **Livello**: 13° · **Composizione**: 3 PG (D15)
 
@@ -118,7 +125,7 @@ inviato del Collezionista** incontrato. Stato: **in corso** (G3) — l'esito del
 boss e lo Smeraldo sono il punto a cui è arrivato il tavolo.
 
 ### Key decisions / XP / Loot
-- `[INFERRED]` — punto di gioco corrente; da riprendere con P3B (resurrezione) → P5.
+- Punto di gioco al momento della ricostruzione; ripreso con P3B (resurrezione) → P5, vedi la nota in testa a questo log.
 
 ### Next hooks
 - **P3B**: rituale di resurrezione di Hella (doni del viaggio R3).

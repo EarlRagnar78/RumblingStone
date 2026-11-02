@@ -28,9 +28,9 @@ duplicare qui.**
 | Elemento | Stato all'inizio del finale di Hammerfist |
 |---|---|
 | **Hella** | Viva, template **Ibrido Treant** attivo; porta la **Collana dei Semi Eterni** con **Durik nel terzo seme** (compagno maschile) |
-| **Thorik** | **−2 CON permanente** (sacrificato per la resurrezione, MAI ripristinato) |
+| **Thorik** | **−4 DES / +2 COS / +4 CAR permanenti** (−2 DES dalla Corona quando l'ha indossata; −2 DES, +2 COS e +4 CAR dal rito dello Smeraldo). ⚠️ **Nessun −2 COS.** Al rito di Hella ha donato il **+2 di deflessione della Corona** (Scudo del Custode): resta a **−1 CA permanente**, ed è accelerato 3 round verso chi Hella protegge. Porta il **Debito della Radice** (E-07g), prezzo ignoto. Fonte: `campaign/state.md` §1 del ramo di gruppo |
 | **Cuore di Moradin** | **Speso** (catalizzatore della resurrezione — uso singolo bruciato) |
-| **Corona di Adamantio** | **3 gemme accese**: Topazio (Tempo), Smeraldo (Terra), Rubino (Cuore della Leggenda) |
+| **Corona di Adamantio** | **Topazio** (Tempo) e **Smeraldo** (Terra) accesi; il **Rubino** (la Possanza Nanica) si accende alla vittoria della battaglia antica e **si consuma** nel salto che li riporta qui (uso singolo, D16). Dal Rituale 4: Corona +3, Senzienza, *Aura della Forgia Eterna* 1/settimana, che la prima volta dura fino all'alba della battaglia antica (`PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md` del ramo di gruppo) |
 | **Party** | APL **13** (D8), tutti gli artefatti nello stato di `state.md` §6 |
 
 ---
@@ -60,15 +60,22 @@ più nero della battaglia presente**, non in un interludio tranquillo.
 P6-INTEGRAZIONE-Completa.md` r.621-753)**:
 
 - **Giorno 3 dell'assedio** (≈ March Clock Day 18-19, vedi
-  `ARC08-12-CRONOLOGIA-MARCH-CLOCK.md`), Round 2 dell'ultima resistenza.
+  `ARC08-12-CRONOLOGIA-MARCH-CLOCK.md`), **round 9-10** dell'ultima resistenza
+  (guida, Incontro 3C); i giocatori prendono i loro PG al round 11.
 - **90 guerrieri nanici** superstiti, morale −4.
-- **Re Thorek** a **8 pf**, avvelenato dal soffio del drago, morente;
-  Madre Dana tenta di guarirlo.
+- **Re Thorek** a **8 pf**, avvelenato dal soffio del drago, morente:
+  una prova di Guarigione CD 25 a ogni round finché nessuno lo cura per
+  magia, e al terzo fallimento muore `[CANONE — DM 2026-10-19, D12]`.
+  Madre Dana lo tiene in vita con le mani: le restano 20 pf e un solo
+  *Muro di Pietra* `[CANONE — DM 2026-10-18]`.
 - Le **porte di mithral** cedono sotto l'assalto orchesco.
-- Al cedere delle porte (fine Round 2), **luce divina** esplode
+- Quando gli orchi sfondano l'ultima barricata (round 9-10), **luce divina** esplode
   sull'altare: le rune dorate, gli occhi di rubino delle statue, e la
   sfera tricolore (Topazio oro + Smeraldo verde + Rubino rosso) sopra
   l'altare. Da lì emergono i quattro.
+- **Grimjaw** non è ancora nella caverna: alla fine del round 11 il suo
+  corno suona nel tunnel nord, e al round 12 entra dalla porta di mithral
+  con le guardie (MAPPA 5, stato F) `[CANONE — DM 2026-10-19, D11]`.
 
 > **Read-aloud (raccordo, DM)** — cuce il salto all'Incontro 3B; il
 > testo pieno della manifestazione è in P6:
@@ -78,7 +85,7 @@ P6-INTEGRAZIONE-Completa.md` r.621-753)**:
 > il rombo di un assedio. Non la quiete della Forgia — il **fragore**
 > del Cuore della Montagna che sta per cadere. Sopra l'altare di
 > Moradin, la Corona vi deposita nel mezzo dell'ultima resistenza dei
-> Novanta, nell'istante esatto in cui le porte di mithral si spezzano.
+> Novanta, nell'istante esatto in cui l'ultima barricata si spezza.
 > È il vostro momento."*
 
 ---
@@ -90,6 +97,10 @@ Hammerfist"** (Borin, Dara, Thorin Runaforte, Nala). Qui li lasciano e
 riprendono i loro **PG reali** (Rumbling Stones).
 
 ### 3.1 Cosa sanno i PG di ciò che i pregen hanno visto
+
+I giocatori hanno vissuto i tre giorni dentro lo strappo del Rubino, come
+visione della Corona (`ARC08-15-HANDOUTS-GIOCATORE.md`, handout 0)
+`[CANONE — DM 2026-10-21, D4]`.
 
 I Rumbling Stones **non hanno vissuto** l'assedio — ma **arrivano
 informati**, perché il salto del Rubino porta con sé la memoria della
@@ -109,10 +120,12 @@ battaglia antica *e* perché i bonus del flashback maturano come
 Ogni PG entra in scena con un beat proprio (il DM li distribuisce nel
 Round dell'apparizione):
 
-- **Thorik** (guerriero, Corona a 3 gemme): tocca terra per primo, la
+- **Thorik** (guerriero, Corona con Topazio e Smeraldo; il Rubino si è consumato nel salto): tocca terra per primo, la
   Corona che brucia tricolore; Re Thorek — a 8 pf — apre gli occhi e lo
-  **riconosce** (stesso sangue, la Corona che risponde). È il fulcro
-  della carica.
+  **riconosce** (stesso sangue, la Corona che risponde). Ha fiato per una
+  frase sola, prima di perdere i sensi: *«Moradin ha… ascoltato… la
+  Forgia… eterna…»* (`Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md`,
+  MAPPA 5). È il fulcro della carica.
 - **Tordek** (monaco, Bracieri + **Cintura della Devastazione**, D17):
   atterra tra i nemici e le porte spezzate, aura di ki visibile; apre
   un varco a mani nude dove le porte hanno ceduto.
@@ -130,7 +143,9 @@ Prima di iniziare il Round della riscossa, il DM somma i bonus del
 flashback (`ARC08-10-ESITI-E-CONTINGENZE.md` §5) e li applica al
 finale: iniziativa di massa, PNG vivi, −CR agli incontri, morale dei
 90, comandanti nemici logorati. È qui che il lavoro dei pregen "paga"
-— **in vantaggio tattico, non in esperienza** (D9).
+— **in vantaggio tattico, non in esperienza** (D9). Se il flashback coi
+pregen non è stato giocato, vale il default di
+`ARC08-10-ESITI-E-CONTINGENZE.md` §5.5.
 
 ---
 

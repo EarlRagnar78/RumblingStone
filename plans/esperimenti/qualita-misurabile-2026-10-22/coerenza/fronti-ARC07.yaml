@@ -1,0 +1,184 @@
+# Fronti e orologi di ARC-07, ricavati dalla prosa dei master — DATI DI PROVA,
+# non canone (lotto 7c, 2026-10-22).
+#
+# Servono a misurare quanto i master già rispettano lo schema
+# `scripts/schemas/fronti_orologi.schema.json`: ogni campo che il master scrive
+# porta la sua `fonte` file:riga; `fonte: null` vuol dire che il campo l'ha
+# DEDOTTO chi ha scritto questo file, perché il master non lo dice. Il conteggio
+# dei dedotti è la misura; i dedotti non entrano nel canone.
+#
+# Controllo: python3 scripts/coerenza_campagna.py fronti <questo file>
+schema_version: 1
+arco: ARC-07
+nota: >-
+  Tre fronti d'avventura e uno di campagna. L'avversario di DEF-2 è dichiarato
+  come «l'orologio di A7» (r.84), e il master lo misura in ore, non in segmenti.
+  L'orologio della notte di DEF-4 è l'unico già scritto come un orologio di
+  Blades: 8 tacche, quante ne sono segnate, cosa succede quando finiscono.
+master:
+  - 07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md
+  - 07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md
+  - 07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md
+  - 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md
+  - 07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md
+
+fronti:
+  - id: assedio-hammerfist-1372
+    nome: L'assedio di Hammerfist, visto dalla Sala (1372)
+    tipo: avventura
+    impulso:
+      testo: la battaglia non aspetta nessuno, la breccia avanza a ogni sonno
+      fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md:238
+    pericoli:
+      - nome: l'orologio di A7 (il tempo)
+        impulso: scendere a ogni riposo fino alla breccia
+        fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md:84
+      - nome: l'orda dell'avanguardia di Fauci
+        impulso: prendere le mura con torri, ariete e ondate
+        fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md:228
+      - nome: Fauci di Palude
+        impulso: tenere le mura dall'alto finché i PG non arrivano
+        fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md:239
+    presagi:
+      - testo: sull'affresco A7 le torri d'assedio sono in costruzione
+        chiavi: ["torri d'assedio ancora in costruzione"]
+      - testo: prima ondata, i primi corpi coperti sui camminamenti
+        chiavi: ["prima ondata"]
+      - testo: un ariete alle porte e una crepa che non si richiude
+        chiavi: ["crepa sottile che non si richiude"]
+    catastrofe:
+      testo: breccia aperta, combattimento dentro le mura, ARC-08 in Fase 0 dura
+      fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md:232
+    domande:
+      - testo: I PG arrivano prima che A7 scenda sotto i due giorni?
+        fonte: null
+    orologi: [countdown-a7]
+
+  - id: orda-zogtar-372
+    nome: L'orda di Zog'tar sotto la Hammerfist giovane (≈372 DR)
+    tipo: avventura
+    impulso:
+      testo: prendere Hammerfist in fretta, prima che l'assedio diventi fame
+      fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:2074
+    pericoli:
+      - nome: Zog'tar Deatheye
+        impulso: prendere Hammerfist; sa uccidere, non sa dove colpire le mura
+        fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:1981
+      - nome: Balvar Fuocospento
+        impulso: far cadere la fortezza in fretta, e che qualcuno dica che c'era
+        fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:2074
+      - nome: Skullcrusher il Nero
+        impulso: il tesoro del re, e un secondo re ucciso davanti all'orda
+        fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:2267
+    presagi:
+      - testo: il corno di Grask, gemello della runa sulla scaglia
+        chiavi: ["corno di Grask"]
+      - testo: la runa-vincolo, la Catena del drago
+        chiavi: ["runa-vincolo"]
+      - testo: il mare di tende che si sveglia
+        chiavi: ["mare di tende"]
+    catastrofe:
+      testo: l'alba coglie i PG fuori dalle mura; il drago ha già scelto il bersaglio
+      fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:885
+    domande:
+      - testo: Spezzano la Catena prima che il drago cali sul cortile?
+        fonte: null
+    orologi: [notte-372]
+
+  - id: debito-della-radice
+    nome: Il Debito della Radice
+    tipo: avventura
+    impulso:
+      testo: che il vuoto lasciato dalla radice strappata si colmi
+      fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md:975
+    pericoli:
+      - nome: la Custode delle Radici
+        impulso: riscuotere il debito, senza odio e senza fretta
+        fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md:975
+    presagi:
+      - testo: lo spirito della druida morta ha sfiorato il giardino
+        chiavi: ["ha sfiorato il giardino"]
+      - testo: la Custode compare al Sud del cerchio
+        chiavi: ["Custode delle Radici"]
+    catastrofe:
+      testo: il vuoto si colma da sé, e la natura non è delicata (ramo B)
+      fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md:996
+    domande:
+      - testo: «Ma il debito resta. Chi lo porta?»
+        fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md:969
+    orologi: []
+    nota: Un pericolo solo; il secondo (ciò che risale dal Sogno, ramo B) è un esito, non un attore.
+
+  - id: collezionista-e-varis
+    nome: Il Collezionista e la sua rete (Varis, Sal/Vatore)
+    tipo: campagna
+    impulso:
+      testo: prendere la gemma di riserva della Corona prima che i PG la usino
+      fonte: campaign/state.yaml:317
+    pericoli:
+      - nome: Il Collezionista
+        impulso: la gemma della Corona, e Conte Valerius in mano
+        fonte: campaign/state.yaml:317
+      - nome: Varis «Seta-Argento»
+        impulso: un socio che gli sia debitore (il Seme-Mercato)
+        fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md:1030
+      - nome: Vatore (Sal, mille anni prima)
+        impulso: potere, e il conto lo pagano altri
+        fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:2743
+    presagi:
+      - testo: il Seme-Mercato nel Tempio
+        chiavi: ["Seme-Mercato"]
+      - testo: il Marchio di Credito planare
+        chiavi: ["Marchio di Credito"]
+      - testo: il Sigillo di Ossidiana che divora anime
+        chiavi: ["Sigillo di Ossidiana"]
+      - testo: la cera nera sulle dita dell'incappucciato
+        chiavi: ["cera nera"]
+    catastrofe:
+      testo: pressione legale contro il party; Conte Valerius congela i beni
+      fonte: campaign/state.yaml:320
+    domande:
+      - testo: Artemis resta debitore di Varis?
+        fonte: null
+    orologi: [collezionista, sal]
+
+orologi:
+  - id: countdown-a7
+    nome: Countdown di Hammerfist (affresco A7)
+    segmenti: null
+    riempiti: null
+    unita: ore residue alla breccia (3g 20h all'arrivo), non segmenti
+    quando_si_riempie:
+      testo: sotto i due giorni la breccia è aperta e scatta il §8
+      fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md:232
+    fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md:160
+    nota: >-
+      Il master lo tiene in ore con un registro dei riposi (−12 h fuori, −4 h
+      nella Sala). Le cinque righe di A7 (3g 20h, 3g 16h, 3g 08h, 3g 04h,
+      sotto 2g) sono già quattro soglie più la catastrofe: un orologio a 4
+      segmenti ci starebbe, ma convertirlo è una decisione del DM.
+  - id: notte-372
+    nome: L'orologio della notte
+    segmenti: 8
+    riempiti: 3
+    quando_si_riempie:
+      testo: quando le tacche finiscono sorge il sole, e comincia la Scena 10
+      fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:878
+    fonte: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:849
+    nota: 3 tacche già segnate al tavolo del 25 settembre (r.843).
+  - id: collezionista
+    nome: Clock del Collezionista (state.yaml §3)
+    segmenti: 8
+    riempiti: 5
+    quando_si_riempie:
+      testo: pressione legale contro il party; Valerius congela i beni
+      fonte: campaign/state.yaml:320
+    fonte: campaign/state.yaml:318
+  - id: sal
+    nome: Clock di Sal (state.yaml §3)
+    segmenti: 6
+    riempiti: 0
+    quando_si_riempie:
+      testo: l'olio di sabotaggio è sulle armi; le statue di Varis a piena forza
+      fonte: campaign/state.yaml:313
+    fonte: campaign/state.yaml:311

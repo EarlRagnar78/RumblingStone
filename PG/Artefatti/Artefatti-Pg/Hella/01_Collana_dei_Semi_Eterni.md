@@ -64,7 +64,7 @@ incidente.
 #### 3. Avatar della Radice (1/giorno – Sop)
 Azione standard. Hella si trasforma in **Ibrido Treant/Nano di taglia
 Enorme** per 10 round: +8 Forza, portata estesa, attacchi di schianto
-(profilo completo in P3B). È la "forma d'Avatar" citata dai file di
+(profilo completo in `DEF-3`, Appendice A.3 `[CANONE — DM 2026-10-18]`). È la "forma d'Avatar" citata dai file di
 campagna — spesa la carica, torna disponibile all'alba.
 
 #### 4. Evocazione dei Guardiani (3/giorno – Sop, un seme per evocazione)

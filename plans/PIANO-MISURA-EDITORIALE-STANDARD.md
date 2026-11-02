@@ -325,7 +325,7 @@ box sotto 40. Entra come **minore**, e solo quando il box è fuori dalla fascia
 |---|---|---|
 | ✅ | **F3.1** Il cancello morde, per ogni severità | un critico iniettato → **rosso anche con punteggio alto**; un maggiore iniettato → punteggio scende di 5 volte un minore; rimosso → verde |
 | ✅ | **F3.2** Nessun documento buono bocciato | alla soglia iniziale, **zero** master DEF in rosso. Se ne cade uno, la soglia è sbagliata, non il documento |
-| 🟡 | **F3.3** κ sui due campioni | **ESEGUITO sul campione B il 2026-09-21: κ = 0,0.** La metrica **si dichiara non affidabile**, come la regola prescrive. ⚠️ La causa non è il giudice — Po e Pe sono **entrambi 0,95** — ma la soglia, che promuove 20 su 20. Il campione **A resta da votare**, e il suo valore oggi non è il κ ma **l'elenco di cosa la metrica non vede**: `campioni_kappa.py --scheda A` |
+| 🟡 | **F3.3** κ sui due campioni | **Strumento tolto il <data della decisione del DM>** (lotto 7e di AVVENTURE-COMMUNITY): il campione A non ha mai avuto voti, ADR-0093 ha fatto del cieco il solo giudice; i campioni e i voti restano in `campaign/misure/` come archivio. **ESEGUITO sul campione B il 2026-09-21: κ = 0,0.** La metrica **si dichiara non affidabile**, come la regola prescrive. ⚠️ La causa non è il giudice — Po e Pe sono **entrambi 0,95** — ma la soglia, che promuove 20 su 20. Il campione **A resta da votare**, e il suo valore oggi non è il κ ma **l'elenco di cosa la metrica non vede**: `campioni_kappa.py --scheda A` |
 | ⬜ | **F3.5** Non-regressione | `misura_craft` continua a girare: il punteggio **affianca**, non sostituisce |
 
 ---

@@ -136,15 +136,20 @@ Terreno:
 ### Campo C – Base di Comando e Portale
 
 - 40 × 40 quadretti.  
-- Tenda centrale grande a (20,20) (8×8 quadretti).  
+- Tenda di comando: padiglione di 8 × 8 quadretti (12 × 12 m, quattro pali) da (23,16) a (30,23), ingresso a ovest.  
 - Cerchio di evocazione davanti alla tenda (18,20).  
-- Portale minore: area circolare di raggio 3 quadretti centrata su (16,20).  
+- Portale minore: area circolare di raggio 3 quadretti centrata su (16,20), cioè da (13,17) a (19,23); il cerchio ne tocca il bordo est.  
+- Fra il bordo del portale (19) e il telo (23) restano 3 quadretti liberi, 4,5 m: il fuoco del portale non lambisce la tenda.  
+
+> ✏️ 2026-10-21: prima la tenda era centrata su (20,20) e conteneva il cerchio, il
+> portale e le quattro guardie «agli angoli». Spostata a est di 7 quadretti, con
+> la stessa misura; cerchio e portale restano dov'erano.
 
 Posizioni iniziali:
 
-- Comandante drow: all’interno della tenda (20,20).  
+- Comandante drow: all’interno della tenda (27,20).  
 - Sacerdotessa: vicino al cerchio di evocazione (18,20).  
-- 4 guardie: agli angoli della tenda (18,18), (18,22), (22,18), (22,22).  
+- 4 guardie: fuori dagli angoli della tenda (22,15), (22,24), (31,15), (31,24).  
 - Demone evocato: appare nel cerchio se il portale viene attivato o se il combattimento dura oltre X round (a discrezione del DM).
 
 Terreno:
@@ -165,7 +170,7 @@ Statblock nemici nella seconda metà di questo stesso file (§1-9).*
 | **Rituale di Hella (3 ondate)** | 30×30 | cerchio rituale (raggio 5, centro 15,15, Hella); dentro = terreno normale, fuori = bosco; accessi ondate N (file 1-3) / E (col 28-30) / S-O (a scelta DM); ruscello opz. a ovest (+2 vs fuoco se sdraiati) |
 | **Campo Drow A** (ricognizione) | 30×30 | palizzata Ø~10 (centro 15,15), cancello sud, 2 torrette (SE 22,22 / N 6,15) |
 | **Campo Drow B** (piromantico) | 36×36 | piattaforma rialzata Ø~10 (18,18), cerchio di rune (anello 2 q), 4 monoliti a croce; attorno bosco bruciato (difficile + fumo) |
-| **Campo Drow C** (comando/portale) | 40×40 | tenda 8×8 (20,20), cerchio di evocazione (18,20), portale minore (raggio 3, 16,20); casse/barili = copertura leggera |
+| **Campo Drow C** (comando/portale) | 40×40 | tenda 8×8 da (23,16) a (30,23), cerchio di evocazione (18,20), portale minore (raggio 3, 16,20), 4,5 m fra portale e telo; casse/barili = copertura leggera |
 
 ### ⚔️ TATTICHE (companion T5c — statblock §1-9 in questo file)
 

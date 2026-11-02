@@ -18,7 +18,9 @@ from __future__ import annotations
 
 from pathlib import Path
 
-__version__ = "0.1.0"
+# La versione del progetto (ADR-0100): si alza nella PR di rilascio insieme
+# alla sezione `## [X.Y.Z]` di CHANGELOG.md, e il merge è il rilascio.
+__version__ = "1.0.0"
 
 #: Root del repository (…/scripts/dmcore/__init__.py → parents[2])
 REPO = Path(__file__).resolve().parents[2]

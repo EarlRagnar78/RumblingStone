@@ -1,7 +1,7 @@
 # PIANO — «Il Drappo di Tarsilia»: il Palio come modulo autonomo (Golarion · PF1e)
 
-**Stato**: 🟡 in corso — Lotti 1, 2 e 5 chiusi (impianto · profondità AP · apparato d'uso e governance)
-**Aperto**: 2026-08-14
+**Stato**: 🟡 in corso, ~90% — Lotti 1, 2, 5 e 8 chiusi (impianto · profondità AP · apparato d'uso e governance · booklet con PDF), più il kit giocatore e il dossier delle piste (corrispondenza in §3); L9 scritto, collaudo a freddo da fare; L6 con capitolato scritto; L3 e L4 aperti *(allineato a `INDEX.md` il 2026-10-23, P15)*
+**Aperto**: 2026-08-14 · **Cartella**: `10-stand-alone/Il-Drappo-di-Tarsilia/` dal 2026-11-01 (prima `STANDALONE-Il-Drappo-di-Tarsilia/` alla radice; ADR-0017, emendamento)
 **Richiesta-fonte (DM, 2026-08-14)**: *«dato il palio di Channathgate possiamo fare
 una variante per sessioni di qualche ora, per 6 persone, per 3 giorni, ambientata a
 Golarion per Pathfinder 1e non remastered, con 6 PG massimo con schede pregenerate e
@@ -65,7 +65,7 @@ nel piano e nelle note di provenienza, e nient'altro.
 
 ### Lotto 1 — Impianto giocabile ✅ *(chiuso 2026-08-14)*
 
-- [x] `STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md`: hub, quickstart,
+- [x] `10-stand-alone/Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md`: hub, quickstart,
       contratto del tavolo, cosa stampare, ponte fra le tre sessioni
 - [x] `CONTRADE-DI-TARSILIA.md`: le otto contrade: livree, motti nuovi, canti con
       effetti, rivalità, tabella di corrispondenza con gli stemmi SVG
@@ -174,7 +174,7 @@ tavolo trova il resto. Il passo 3 (componenti) vale se il contratto è attivo.
 
 Il modulo è completo come **testo** e come **impaginazione**; non è ancora un **libro
 illustrato**. Il divario è misurato e il capitolato d'appalto sta in
-`STANDALONE-Il-Drappo-di-Tarsilia/PROMPT-GENERAZIONE-BOOKLET-DEFINITIVO.md`, che
+`10-stand-alone/Il-Drappo-di-Tarsilia/PROMPT-GENERAZIONE-BOOKLET-DEFINITIVO.md`, che
 contiene anche il prompt autosufficiente da passare a una sessione nuova.
 
 - [x] Inventario di cosa esiste, e i sei divari verso il livello Paizo/WotC (§1-§2)
@@ -353,4 +353,4 @@ Sistema e impianto derivano da `09_Continuazione Arco Narrativo dopo Battaglia d
 Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-*.md` (materiale originale dell'autore).
 Le bonifiche applicate sono quelle del §7 di
 `...P2D-PALIO-VERIFICA-LEGALE-IP.md`; il dettaglio di quali sono chiuse e quali
-restano aperte sta in `STANDALONE-Il-Drappo-di-Tarsilia/IP-E-LICENZE.md`.
+restano aperte sta in `10-stand-alone/Il-Drappo-di-Tarsilia/IP-E-LICENZE.md`.

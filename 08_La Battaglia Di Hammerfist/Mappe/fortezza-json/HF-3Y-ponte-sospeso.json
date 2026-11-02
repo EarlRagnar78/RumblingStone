@@ -1,0 +1,301 @@
+{
+ "schema_version": "1.0",
+ "title": "MAPPA 3Y REVISED: Il Ponte Sospeso (retroguardia)",
+ "scale_m_per_square": 1.5,
+ "map_size": [
+  33,
+  27
+ ],
+ "base_terrain": "⛰",
+ "north": "N",
+ "tipo": "tattica",
+ "ambiente": "caverna",
+ "regions": [
+  {
+   "terrain": "🟤",
+   "rect": [
+    4,
+    1,
+    25,
+    8
+   ],
+   "label": "Sponda nord"
+  },
+  {
+   "terrain": "🟥",
+   "rect": [
+    4,
+    9,
+    25,
+    10
+   ],
+   "label": "Il baratro: 15 m di vuoto, il fondo non si vede"
+  },
+  {
+   "terrain": "🟤",
+   "rect": [
+    4,
+    19,
+    25,
+    7
+   ],
+   "label": "Sponda sud"
+  },
+  {
+   "terrain": "🟤",
+   "rect": [
+    15,
+    0,
+    3,
+    1
+   ],
+   "label": "Uscita nord, verso l'Incrocio"
+  },
+  {
+   "terrain": "🟤",
+   "rect": [
+    6,
+    26,
+    4,
+    1
+   ],
+   "label": "Tunnel sud-ovest, da dove arrivano gli inseguitori"
+  },
+  {
+   "terrain": "🟤",
+   "rect": [
+    22,
+    26,
+    4,
+    1
+   ],
+   "label": "Tunnel sud-est"
+  }
+ ],
+ "structures": [
+  {
+   "type": "🌉",
+   "rect": [
+    16,
+    9,
+    2,
+    10
+   ],
+   "label": "Ponte di pietra, 15 × 3 m, senza parapetti"
+  },
+  {
+   "type": "🪨",
+   "at": [
+    12,
+    5
+   ],
+   "label": "Roccia, copertura per Dara"
+  },
+  {
+   "type": "🪨",
+   "at": [
+    20,
+    5
+   ],
+   "label": "Roccia, copertura per Thorin"
+  },
+  {
+   "type": "🕳",
+   "at": [
+    15,
+    13
+   ],
+   "label": "Buco nell'arcata"
+  },
+  {
+   "type": "🕳",
+   "at": [
+    18,
+    13
+   ],
+   "label": "Buco nell'arcata"
+  },
+  {
+   "type": "⛰",
+   "rect": [
+    5,
+    4,
+    3,
+    3
+   ],
+   "label": "Colonna di roccia, sponda nord"
+  },
+  {
+   "type": "⛰",
+   "rect": [
+    25,
+    4,
+    3,
+    3
+   ],
+   "label": "Colonna di roccia, sponda nord"
+  },
+  {
+   "type": "⛰",
+   "rect": [
+    8,
+    19,
+    3,
+    3
+   ],
+   "label": "Colonna di roccia, sponda sud"
+  },
+  {
+   "type": "⛰",
+   "rect": [
+    22,
+    19,
+    3,
+    3
+   ],
+   "label": "Colonna di roccia, sponda sud"
+  }
+ ],
+ "units": [
+  {
+   "faction": "Nani",
+   "name": "Borin Ferropugno (Ftr), testa di ponte sud",
+   "token": "🔵",
+   "at": [
+    16,
+    17
+   ]
+  },
+  {
+   "faction": "Nani",
+   "name": "Dara Occhiolesto (Rgr)",
+   "token": "🔵",
+   "at": [
+    12,
+    4
+   ]
+  },
+  {
+   "faction": "Nani",
+   "name": "Thorin Runaforte (Clr)",
+   "token": "🔵",
+   "at": [
+    20,
+    4
+   ]
+  },
+  {
+   "faction": "Nani",
+   "name": "Nala Cantapietre (Brd)",
+   "token": "🔵",
+   "at": [
+    16,
+    3
+   ]
+  },
+  {
+   "faction": "Nani",
+   "name": "Colonna superstiti in marcia (85 nani, un quadretto ogni quattro)",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     10,
+     2,
+     5,
+     2
+    ]
+   },
+   "quantity": 10
+  },
+  {
+   "faction": "Nani",
+   "name": "Colonna superstiti in marcia",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     17,
+     2,
+     3,
+     2
+    ]
+   },
+   "quantity": 6
+  },
+  {
+   "faction": "Nani",
+   "name": "Colonna superstiti, i portatori",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     15,
+     3,
+     1,
+     1
+    ]
+   },
+   "quantity": 1
+  },
+  {
+   "faction": "Nani",
+   "name": "Re Thorek XIII sulla barella (8 PF, morente)",
+   "token": "🔵",
+   "at": [
+    15,
+    2
+   ]
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Inseguitori, prima ondata (Orchi/Hobgoblin)",
+   "token": "🔴",
+   "area": {
+    "rect": [
+     8,
+     23,
+     15,
+     2
+    ]
+   },
+   "quantity": 30,
+   "cr": "GS 1/2-1"
+  }
+ ],
+ "movements": [
+  {
+   "name": "Colonna nanica → uscita nord (verso 3Z)",
+   "path": [
+    [
+     16,
+     7
+    ],
+    [
+     16,
+     2
+    ],
+    [
+     16,
+     0
+    ]
+   ],
+   "color": "#2c8c3c"
+  },
+  {
+   "name": "Spinta inseguitori → ponte",
+   "path": [
+    [
+     8,
+     25
+    ],
+    [
+     16,
+     20
+    ],
+    [
+     16,
+     13
+    ]
+   ],
+   "color": "#d62828"
+  }
+ ]
+}

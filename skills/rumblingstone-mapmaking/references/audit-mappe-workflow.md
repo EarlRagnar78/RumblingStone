@@ -104,6 +104,8 @@ python3 scripts/export_map_png.py "<rendered>.svg"                # PNG locale
 # → ISPEZIONE VISIVA del PNG (obbligatoria: leggi l'immagine, confronta i
 #   token con la griglia ASCII cella per cella — è così che si trovano le
 #   celle fantasma e le scale sbagliate)
+python3 scripts/collaudo_mappe.py "<atlante>.md"                 # si gioca? (ADR-0082)
+python3 scripts/qualita_mappe.py "<atlante>.md"                  # quanto è buona? (ADR-0098)
 python3 scripts/validate_maps.py                                  # byte-identity
 python3 scripts/build_monster_catalog.py                          # sync catalogo
 ```

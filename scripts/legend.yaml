@@ -719,6 +719,26 @@ symbols:
       obscurement: none
       destructible: true
       nameable: true
+  # 🎪 il telo di una tenda grande, visto dall'alto (DM, 2026-10-21: «ricontrolla
+  # le mappe ... e' strano che abbia tante altre piccole tende attaccate alla
+  # tenda principale»). ⛺ e' un'icona, e un'icona per cella disegna ogni
+  # quadretto di parete come una tendina a se': la parete di M7-C usciva come
+  # quaranta tende in fila. 🎪 e' un riempimento: celle contigue fanno una forma
+  # sola, una parete di pelle o una tenda piccola intera (2x2 quadretti, il
+  # contubernium di 3x3 m). ⛺ resta com'era per le mappe che lo usano.
+  # Altezza 3,0 m: la parete laterale della tenda del comando (Scena 8).
+  # Funzione identica a ⛺: un telo teso blocca la vista e si taglia.
+  # Ricerca e misure: plans/esperimenti/mappe-campo-2026-10-21/RICERCA-ACCAMPAMENTI.md
+  "🎪":
+    label: "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    render: {mode: fill, pat: t_telo, fill: "#5e4b3b", heavy: true, altezza_m: 3.0}
+    function:
+      blocks_movement: true
+      blocks_sight: true
+      cover: total
+      obscurement: none
+      destructible: true
+      nameable: true
   "🔮":
     label: "Cristalli / altare magico"
     render: {mode: icon, prop: pr_crystal, fill: "#caf0f8"}

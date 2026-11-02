@@ -33,7 +33,7 @@
 ## 🖥️ System Requirements
 
 ### Minimum Requirements
-- **Python**: 3.9+
+- **Python**: 3.13 (la Python di Debian stable, ADR-0099)
 - **RAM**: 4GB (8GB+ recommended)
 - **CPU**: 2+ cores (4+ cores recommended)
 - **Storage**: 2GB free space

@@ -1,0 +1,133 @@
+{
+  "corsa": "L-gemma4e4bitqat-1",
+  "modello": "gemma4:e4b-it-qat",
+  "url": "http://127.0.0.1:11434/v1",
+  "contesto": "pieno",
+  "temperatura": 0.7,
+  "seme": 1,
+  "max_token": 1500,
+  "tetto_fonte": 12000,
+  "inizio": "2026-10-10T22:25:18+0200",
+  "casi": {
+    "S01": {
+      "secondi": 45.3,
+      "uso": {
+        "prompt_tokens": 21931,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens": 969,
+        "total_tokens": 22900
+      },
+      "impronta_prompt": "15065af76a44ad7d"
+    },
+    "S02": {
+      "secondi": 39.5,
+      "uso": {
+        "prompt_tokens": 12291,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens": 1162,
+        "total_tokens": 13453
+      },
+      "impronta_prompt": "9eda02430b24a8a8"
+    },
+    "S03": {
+      "secondi": 39.7,
+      "uso": {
+        "prompt_tokens": 12291,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens": 1160,
+        "total_tokens": 13451
+      },
+      "impronta_prompt": "af5969f265f92d51"
+    },
+    "S04": {
+      "secondi": 34.7,
+      "uso": {
+        "prompt_tokens": 12291,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens": 994,
+        "total_tokens": 13285
+      },
+      "impronta_prompt": "00f91d47e19252ce"
+    },
+    "S05": {
+      "secondi": 19.5,
+      "uso": {
+        "prompt_tokens": 2133,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens": 679,
+        "total_tokens": 2812
+      },
+      "impronta_prompt": "3e892d0f533b317b"
+    },
+    "S06": {
+      "secondi": 27.7,
+      "uso": {
+        "prompt_tokens": 23276,
+        "prompt_tokens_details": {
+          "cached_tokens": 21418
+        },
+        "completion_tokens": 848,
+        "total_tokens": 24124
+      },
+      "impronta_prompt": "e96802b75e26950b"
+    },
+    "S07": {
+      "secondi": 50.0,
+      "uso": {
+        "prompt_tokens": 12291,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens": 1500,
+        "total_tokens": 13791
+      },
+      "impronta_prompt": "a129b6c5058978ca"
+    },
+    "S08": {
+      "secondi": 35.2,
+      "uso": {
+        "prompt_tokens": 22572,
+        "prompt_tokens_details": {
+          "cached_tokens": 21418
+        },
+        "completion_tokens": 1096,
+        "total_tokens": 23668
+      },
+      "impronta_prompt": "8ea960301fa08d1a"
+    },
+    "S09": {
+      "secondi": 13.1,
+      "uso": {
+        "prompt_tokens": 24231,
+        "prompt_tokens_details": {
+          "cached_tokens": 21418
+        },
+        "completion_tokens": 345,
+        "total_tokens": 24576
+      },
+      "impronta_prompt": "b8d0351abb9e065c"
+    },
+    "S10": {
+      "secondi": 25.4,
+      "uso": {
+        "prompt_tokens": 2125,
+        "prompt_tokens_details": {
+          "cached_tokens": 1620
+        },
+        "completion_tokens": 910,
+        "total_tokens": 3035
+      },
+      "impronta_prompt": "9819f7aaaa07b338"
+    }
+  }
+}

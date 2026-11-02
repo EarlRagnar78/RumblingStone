@@ -136,19 +136,19 @@ Può essere rivale onorevole o sparring master.
 
 Puoi usarlo come mini‑boss prima di Xal’thor, o come comandante di ondate.
 
-**Zarim** – Mind Flayer 8 DV con livelli da Psion 4
+**Zarim** – Mind Flayer 8 DV con livelli da Psion 4 (GS 12; statblocco completo e tattiche nel Bestiario, `Bestiario/villain/Zarim/zarim-illithid-luogotenente-cr12.md`, che vale in caso di differenza)
 
-- PF 72 (8d8 + 4d4, Cos 14)  
-- CA 22 (Des + armatura mentale), RI 19  
+- PF 73 (8d8 + 4d4 + 27, Cos 14 e Robustezza)  
+- CA 23 con *armatura inerziale* e *schermo di forza* attivi (15 senza), RI 25  
 - For 12, Des 14, Cos 14, Int 18, Sag 16, Car 16  
 - Attacchi:
   - 4 tentacoli +10 (1d4+1), se tutti colpiscono può tentare estrazione cervello (TS Temp CD 19 o morte)  
-- TS: Temp +7, Rif +6, Vol +11  
+- TS: Temp +9, Rif +7, Vol +15 (mantello della resistenza +2, Tempra Possente)  
 
 **Poteri psionici chiave** (trattali come incantesimi):
 
-- 3/giorno: *mind blast* (cono 18 m, stordito 3d4 round, Vol CD 17 nega).  
-- 3/giorno: *psionic charm monster* (Vol CD 17).  
+- A volontà: *mind blast* (cono 18 m, stordito 3d4 round, Vol CD 19 nega).  
+- A volontà: *psionic charm monster* (Vol CD 17), *suggestion* (Vol CD 16), *levitate*, *plane shift*.  
 - 1/giorno: *psionic dimension door*.
 
 **Mossa speciale**
@@ -179,7 +179,7 @@ Per la Fase 3 puoi dare a Xal’thor una forma iconica potenziata.
 
 - Usa le sue normali stat, ma in Fase 3:
 
-  - CA +2 (26), PF +20 (110 totali, se non già sotto).  
+  - CA +2 (26), PF +20 (116 totali, se non già sotto).  
   - Tutti i Mind Blast: +2 CD (19).  
   - Ogni round rigenera 5 pf finché il nucleo non è distrutto.
 

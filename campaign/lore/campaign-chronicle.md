@@ -47,7 +47,9 @@ The party has no rogue. They handle traps via Tordek's high Monk saves, arcane u
 
 ## PART 2: ADVENTURE ARC TIMELINE (Chronological)
 
-### Phase A: Red Hand of Doom — Opening (Levels 4–6)
+### Phase A: Red Hand of Doom — Opening (Level 8)
+
+> `[DM 2026-10-23]` The party **starts at 8th level** (`campagna_flusso.txt`: *«partono dall'ottavo livello»*; the XP ledger opens at 28,000 XP). Levels 4–6 were never played. Decision D7 of `plans/RICERCA-ARCHI-SENZA-TESTO-2026-10.md`.
 
 **Arc 00 — Drellin's Ferry & the Red Hand**
 
@@ -56,9 +58,15 @@ The party has no rogue. They handle traps via Tordek's high Monk saves, arcane u
 - **Drellin's Ferry Assault:** The town is attacked and ultimately destroyed by the horde.
 - **Thorik dies** defending Drellin's Ferry. He is resurrected through divine intervention of Moradin and bonds with the artifact **Aegis Fang** (a dwarven waraxe adapted from FR lore).
 - **Capitana Lorana's garrison falls** during the same opening assault wave. The party meets Lorana there for the first time. **A travelling half-elf bard, Maestro Tempestas (canonized 2026-05-04)**, is caught in the assault while passing through on diplomatic business for Rethmar. He uses *Shadow Walk* and *Sleep* to help the party + Lorana evacuate ~23 civilians from a collapsing district. Tempestas considers himself in **lifelong debt** to the party from this moment. He reappears as a recurring messenger NPC in Arc 09 (post-Hammerfist hooks). See `Bestiario/png/Tempestas/Tempestas.md`.
+- **Opening notes played at the table** `[DM 2026-10-23]` (from `00_Red Hand Of Doom/campagna_flusso.txt`, decision D8):
+  - **Lando Norris** intercedes with Lord Jarmaath and raises the offer from 3,500 to 4,500 gp;
+  - **Khalzon Burn**, the chief who wears the dragon mask;
+  - the **necromancer of Castel Wrath** raises the giants' skeletons and the remains of the Death Moon tribe (the ogres stay skeletons, the orcs become zombies);
+  - a **cyclops giant** and a **mantimera** replace the chimera;
+  - the goblins fight alongside orcs, ogres, orc shamans and ogre magi **enslaved by the hobgoblins**, with two orc barbarians in the major fights.
 - Source files: `00_Red Hand Of Doom/`, `PG/Artefatti/Artefatti-Pg/Aegis Fang/`, `Bestiario/png/Lorana/Lorana/Lorana.md`, `Bestiario/png/Tempestas/Tempestas.md`
 
-### Phase B: Hammerfist Hills & The Quest for the Corona (Levels 6–8)
+### Phase B: Hammerfist Hills & The Quest for the Corona (Level 8)
 
 After Drellin's Ferry, the party travels to **Hammerfist Holds** in The North Wall mountains. There, dwarven clerical oracles — guided by visions from Moradin — explain that an ancient artifact, the **Corona di Adamantio**, must be found to save the dwarven kingdom from the imminent horde battle. The **Hammerfist King** gives the party a quest to descend into the Underdark and recover it.
 
@@ -192,8 +200,9 @@ The party descends through a chain of connected underground locations:
 
 - **Source:** `02_scaladossa-abbattor-funghi/`
 - **Adapted from:** *Expedition to Undermountain* — Belkram's Fall section SKeletal Scaffold sections (p.123)
-- **Enemies:** evil dwarwen of abador necromancer
-- **Key Events:** after defeating the necromancer, the party finds the ring of Chaotic Illumination that it bonds with Artemis .
+- **Enemies:** duergar **cleric of Abbathor** (CR 11, `Bestiario/villain/abbathor-cleric11-cr11.md`) with two blackguards and three duergar mage-thieves `[DM 2026-10-23, D9]`
+- **One duergar mage-thief escapes** and returns in Arc 03 in front of the temple `[DM 2026-10-23, D10]`
+- **Key Events:** after defeating the cleric, the party finds the ring of Chaotic Illumination that it bonds with Artemis .
   
 #### Arc 03 — La Cittadella (Abandoned Citadel)
 
@@ -203,7 +212,9 @@ The party descends through a chain of connected underground locations:
   - Moradin Temple with Undead Beholder (CR ~13, defeated)
   - Runic frescoes containing clues about the Corona di Adamantio
   - Abandoned dwarven citadel with lore about the ancient kingdom
-  - Encounter with a group of drow slavers and their leader, a drow sorcerer, who are also looking for the Corona di Adamantio and command a retriever monster (defeated)
+  - Encounter with a group of drow slavers and their leader, a drow sorcerer, who are also looking for the Corona di Adamantio and command a retriever monster (defeated). The sorcerer commands the retriever **on commission from the clerics of Abbathor**, who want Aegis Fang brought back to their king `[DM 2026-10-23, D11]`
+  - **Fight in front of the Temple of Moradin** (EL 14) `[DM 2026-10-23, D11]`: the captain of the drow house, three drow warriors, the duergar mage who escaped the Scala d'Ossa, **Zanna** (Large phase spider) and the **Shadow Marsh Horror**, played at 110 hp and AC 21. The guards' poison is the dark-light mineral
+  - In the temple, a **warlock** (CR 9) and **three wraiths** stand with the Undead Beholder behind the pillars `[DM 2026-10-23, D11]`
 
 #### Arc 04 — Tomba di Belkram (Belkram's Tomb)
 
@@ -221,12 +232,18 @@ The party descends through a chain of connected underground locations:
 
 - **Source:** `05_aa-stanza-runica/`
 - Ancient dwarven runic puzzle room
+- **The spirit in the sarcophagus is Thorek I** Forgiamartello, the ancestor of a thousand years ago (the same as the statue in the Cuore) `[DM 2026-10-23, D2]`
+- The **Gemma del Legame Spirituale** is the **key to the Crown's chamber**, not a gem of the Crown: the Crown's gems stay three `[DM 2026-10-23, D3]`
+- **No Blessing of Thorek and no extra spell slot** were awarded; the XP stays at 5,800 per PC `[DM 2026-10-23, D4]`
+- Transcription of the three PDFs, with the values that apply: `05_aa-stanza-runica/ARC05-STANZA-RUNICA-TRASCRIZIONE.md`
 - **La Quest della Gemma dell'Antico Portatore** — spiritual plane (5,800 XP per
   PC, the single largest award in the ledger)
 - **HELLA LOSES THE MYCELIUM GIFT** `[DM 2026-07-26]` — the pivotal consequence
   of this arc:
   - the party **burns the fungi** present in the room, provoking the
-    **fungal wrath**
+    **fungal wrath**. In the PDFs the zurkhwood spiral leads to the hidden
+    rune: that stays the long way, and the fire was the party's shortcut
+    `[DM 2026-10-23, D1]`
   - the gift granted in the *Gardens of Resplendent Hues* is **revoked**
   - **it was never a price — it was a condition**, and the party violated it
     without knowing it existed
@@ -327,7 +344,7 @@ The party descends through a chain of connected underground locations:
 |---|---|---|
 | **Red Hand Army** | 900 (7:1 numerical advantage) | Fauci di Palude (Black Dragon CR 15), Generale Grimjaw (Orog Fighter 10/Warlord 3, CR 14), Gorthak il Trifronte (3-Headed Ettin, CR 12) |
 | **Hammerfist Dwarves** | 300 | Re Thorek Hammerfist (Fighter 15/Noble 2, CR 16), Madre Superiora Dana Forgiapietra (Cleric 12/Divine Singer 3, CR 14) |
-| **External Allies** | ~20 | Signore Ventolesto (Celestial Giant Owl, CR 8), 12 Ranger Elfici su Gufi (CR 8 each), Orion Pelleorsa (Druid 14, CR 14), Maestro Tempestas (Bard 12/Archmage 2, CR 14) |
+| **External Allies** | ~20 | Signore Ventolesto (Celestial Giant Owl, CR 8), 12 Ranger Elfici su Gufi (CR 8 each), Orion Pelleorsa (Druid 14, CR 14), Maestro Tempestas (Bard 12/Stormsinger 2, CR 14) |
 
 **Red Hand Structure:** 4 assault lines — 1st Wave (450 hobgoblin/orc infantry), 2nd Wave (233 heavy infantry + sergeants), 3rd Line (45 giants/artiglieria + mages), 4th Line (66 command/reserve), Aerial (Fauci di Palude + rider), Flanks (50 Worg Riders)
 
@@ -340,7 +357,7 @@ The party descends through a chain of connected underground locations:
 
 - **Session 2 — Tre Giorni di Sangue e Ferro:**
   - **Day 1:** Assault on outer walls — Hobgoblin waves + Gorthak charges gate
-  - **Day 2:** La Breccia nella Roccia — Commander duels, protect the Cantitrici della Pietra (5 Cleric 8/Bard 4 singers, CR 11 each — group ability "Coro della Montagna": Earthquake/Mass Cure/Greater Shout)
+  - **Day 2:** La Breccia nella Roccia — Commander duels, protect the Cantitrici della Pietra (5 Cleric 8/Bard 4 singers, CR 12 each — group ability "Coro della Montagna": Earthquake/Mass Cure/Greater Shout)
   - **Day 3:** Il Soffio della Disperazione — Fauci di Palude dragon attack (acid breath + acid cone variant), desperate retreat into mountain depths
 
 - **Session 3 — Dalle Profondità della Terra:**
@@ -509,7 +526,7 @@ and back to the surface for the Red Hand campaign mainline.
 [02_Scaladossa — Skeletal Scaffold]
   ├── Source: 02_scaladossa-abbattor-funghi/
   ├── Adapted from: Expedition to Undermountain — Belkram's Fall, Skeletal Scaffold (p.123)
-  ├── Enemies: evil dwarven necromancer of Abbathor
+  ├── Enemies: duergar cleric of Abbathor (CR 11) + blackguards + mage-thieves; one mage escapes
   └── ★ KEY EVENT: Ring of Chaotic Illumination found → bonds with Artemis
         ↓
 [03_la Cittadella — Abandoned Citadel]
@@ -519,8 +536,11 @@ and back to the surface for the Red Hand campaign mainline.
   ├── Moradin Temple with Undead Beholder (CR ~13, defeated)
   ├── Runic frescoes (Corona di Adamantio clues)
   ├── Abandoned dwarven citadel with ancient kingdom lore
-  └── ★ Drow slavers encounter: drow sorcerer + retriever monster (defeated)
-      └── Drow also searching for Corona di Adamantio
+  ├── ★ Drow slavers encounter: drow sorcerer + retriever monster (defeated),
+  │   │ retriever on commission from the clerics of Abbathor (Aegis Fang)
+  │   └── Drow also searching for Corona di Adamantio
+  ├── EL 14 in front of the temple: drow house, escaped duergar, Zanna, Shadow Marsh Horror
+  └── Warlock CR 9 + 3 wraiths with the Undead Beholder
         ↓
 [04_tomba_di_Belkram — Belkram's Tomb]
   ├── Source: 04_tomba_di_Belkram/, 04_tomba_di_Belkram/00_Celebromorfosi/

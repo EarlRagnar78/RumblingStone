@@ -35,6 +35,8 @@ Queste schede sono progettate per velocizzare il combattimento di massa.
 3.  **Note / Status:** Usa questa colonna per annotare qualsiasi effetto temporaneo che influenzi una specifica unità, come un bonus da *Preghiera*, un malus del morale, o se è ingaggiata in mischia con un PG.
 4.  **Abilità Speciali:** Sono riportate solo le parole chiave. Fai riferimento alla scheda completa dell'unità per la descrizione dettagliata se necessario.
 5.  **Eroi e PNG:** I personaggi unici (alleati e comandanti) sono in una sezione a parte, dove puoi tracciare i loro PF reali e lo stato.
+6.  **Il tiro sul Registro** `[CANONE — DM 2026-10-12, D62]`: quando il banco della rocca (`ARC08-17`) chiede «un tiro sul *Registro delle Perdite*» per un incantesimo di 4° livello o più comprato stanotte, si tolgono **1d4 PFU**, prima della battaglia, a un'unità di **Guerrieri Nanici Veterani** scelta dal DM. È la cura che manca a quell'unità all'alba.
+    ⚠️ I tiri del viaggio nel 372 (`ARC07-DEF-4`, il **dado dei caduti**) **non** arrivano qui: riguardano la fortezza di mille anni prima, e nel 1372 tornano solo come eco, senza togliere un quadratino.
 
 ---
 <div style="page-break-before:always"></div>
@@ -257,11 +259,11 @@ Queste schede sono progettate per velocizzare il combattimento di massa.
 | | | |
 | **Generale Grimjaw** | _______ / 178 | Furia Comandante `[ ]` |
 | **Gorthak il Trifronte** | _______ / 195 | Furia sotto 97 PF |
-| **Fauci di Palude** | _______ / 312 | Soffio a Cono `[ ]` |
+| **Fauci di Palude** | _______ / 337 (meno il carry-over, `ARC08-10` §4.1) | Soffio a Cono `[ ]` · Presa di Thorik `[ ]` |
 | | | |
 | **ARRIVO RINFORZI (SESSIONE 4)** | | |
 | **Signore Ventolesto** | _______ / 95 | Punire il Male `[ ]` |
 | **Capitano Lunapiena** | _______ / 88 | Corno del Valhalla `[ ]` Frecce Morte Drago `[ ] [ ] [ ]` |
 | **Orion Pelleorsa** | _______ / 98 | Forma Selvatica `[ ][ ][ ][ ][ ]` |
-| **Maestro Tempestas** | _______ / 84 | Musica Bardica `[ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]` |
+| **Maestro Tempestas** | _______ / 91 | Musica Bardica `[ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]` |
 | **Ranger Elfici (11)** | *Tracciati come unità o narrativamente* | |

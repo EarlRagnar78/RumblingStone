@@ -5,7 +5,7 @@ Ensures system works even when some tools fail to install
 
 from pathlib import Path
 import json
-from typing import Dict, List
+from typing import Dict, List, Tuple
 from loguru import logger
 
 class FallbackManager:

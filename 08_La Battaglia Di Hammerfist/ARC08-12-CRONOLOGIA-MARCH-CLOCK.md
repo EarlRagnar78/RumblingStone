@@ -29,8 +29,8 @@ La tabella sotto allinea i due.
 
 | March Clock | Evento | Chi gioca | Fonte |
 |---|---|---|---|
-| **Day 1** | L'avanguardia di Fauci di Palude si stacca dall'orda al Fane di Tiamat `[INFERRED]` e prende una rotta indipendente verso Hammerfist | — (fuori scena) | `ARC08-04-MARCIA-MANO-ROSSA.md` §1 |
-| **~settimane prima** → Day ~12-15 | **Flashback pregen — Ricognizione** (Sessione 1): i 4 pregen "Eroi di Hammerfist" scoprono la colonna in avvicinamento. La finestra esatta d'inizio è ampia (D6: "qualche settimana prima") `[INFERRED — needs DM: pin d'inizio della ricognizione]` | **Pregen** (D6) | D6; `ARC08-04-...` §3 |
+| **Day 1** | L'avanguardia di Fauci di Palude si stacca dall'orda al Fane di Tiamat e prende una rotta indipendente verso Hammerfist | — (fuori scena) | `ARC08-04-MARCIA-MANO-ROSSA.md` §1 |
+| **~settimane prima** → Day ~12-15 | **Flashback pregen — Ricognizione** (Sessione 1): i 4 pregen "Eroi di Hammerfist" scoprono la colonna in avvicinamento. La finestra esatta d'inizio è ampia (D6: "qualche settimana prima"): il giorno lo sceglie il DM quando fa partire il flashback | **Pregen** (D6) | D6; `ARC08-04-...` §3 |
 | Day ~15-16 | **Preparazione difese** (Sessione 1, Incontro 1B): baliste, trappole, schieramento | **Pregen** | Guida DM Sessione 1 |
 | **Day 16-18** | **Assedio — Giorni 1-3 della battaglia** (Sessione 2 + prima metà 3): mura, soffio del drago, ultima resistenza. *(Giorno d'assedio 1 = March Clock Day 16 ca.)* | **Pregen** | Guida DM Sessioni 2-3 |
 | **Day 18-19** | **Riemersione dei Rumbling Stones** = **Giorno 3 dell'assedio**: salto del Rubino (ARC-07 D16), arrivo al Cuore della Montagna, Incontro 3B. Passaggio di testimone pregen→PG | **PG reali** (E6) | D16; `ARC08-11-PONTE-ARRIVO.md`; P6 Incontro 3B |
@@ -58,7 +58,7 @@ La tabella sotto allinea i due.
    il piano B6 proponeva "Day 12-16". Qui: la **ricognizione** può
    iniziare anche settimane prima (D6), mentre l'**assedio giocato dai
    pregen** è fissato al Day 16-18 (deriva a ritroso dal Day 19). Il pin
-   esatto d'inizio della ricognizione resta `[INFERRED]` — il DM lo
+   esatto d'inizio della ricognizione è una scelta di tavolo: il DM lo
    fissa in base a quando fa partire il flashback.
 
 ---

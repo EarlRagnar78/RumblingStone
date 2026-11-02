@@ -18,6 +18,7 @@ Arco-Post-Hammerfist-P2A-Torre-PARTE4-MAPPE-Boss-Zalkatar.md
 Posizioni iniziali:
 
 - Zalkatar: esattamente al centro della piattaforma (16,16).  
+- Ozyrrandion (Enorme, 3 × 3 quadretti): invisibile, in volo sotto la volta sopra il braccio nord (file 2-4, colonne 15-17); la volta è alta almeno 15 m (DM 2026-10-18).  
 - PG: entrano dal braccio sud (fila 30–32, colonna 16). [file:46]
 
 ---
@@ -57,6 +58,7 @@ Sanctum 32×32 a croce: piattaforma centrale + 4 bracci.*
 | Elemento | Dove | Effetto meccanico 3.5 |
 |---|---|---|
 | Piattaforma di Zalkatar | centro, raggio 4, (16,16); 4 rampe (N/S/E/O) | il boss vi inizia; le rampe sono gli accessi |
+| Volta del sanctum | sopra tutta la croce, alta almeno 15 m | Ozyrrandion vola e fluttua sopra i PG; chi non vola non lo raggiunge in mischia |
 | **Braccio Nord** — cristalli di memoria | braccio N | copertura parziale + possibili effetti psionici |
 | **Braccio Sud** — vasca di energia | braccio S | **terreno difficile + 2d6 acido/round** |
 | **Braccio Est** — portale instabile | braccio E | zona di distorsione: **Volontà CD 15 o nausea** |
@@ -65,6 +67,7 @@ Sanctum 32×32 a croce: piattaforma centrale + 4 bracci.*
 ### ⚔️ TATTICHE (companion T5c — boss Zalkatar in 3 fasi)
 
 - **Zalkatar** inizia al centro (16,16); i PG entrano dal **braccio sud** (fila 30-32, col 16).
+- **Ozyrrandion** inizia invisibile sotto la volta del braccio nord; soffia sull'imbocco sud al primo attacco (scheda del drago, §Tattiche). Con lui l'incontro è EL 16.
 - Combatte in **3 fasi crescenti** (vedi EVOLUZIONE): distanza → mischia → swarm.
 - Usare i bracci con criterio: Ovest/Nord per copertura; **evitare** Sud (acido) ed Est (distorsione) salvo manovra deliberata.
 - Statblock: file TESTO/statblocchi della Torre (P2A) + `...STATBLOCCHI-EPICI` per riferimento.

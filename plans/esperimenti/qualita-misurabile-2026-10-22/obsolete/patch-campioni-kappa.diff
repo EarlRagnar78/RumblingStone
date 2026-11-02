@@ -1,0 +1,661 @@
+diff --git a/docs/tools/README.md b/docs/tools/README.md
+index 4b75639f..2dfeff83 100644
+--- a/docs/tools/README.md
++++ b/docs/tools/README.md
+@@ -5,9 +5,9 @@
+ 
+ > Vista umana del contratto machine-readable [`registry.json`](registry.json). Fonte di verita': `scripts/tools.manifest.json`.
+ 
+-**108 tool** · convenzione exit code `0=ok · 1=errore-dominio · 2=errore-uso`.
++**107 tool** · convenzione exit code `0=ok · 1=errore-dominio · 2=errore-uso`.
+ 
+-**Da un client MCP** ([`mcp-tools.json`](mcp-tools.json), [ADR-0030](../../plans/adr/ADR-0030-server-mcp-sui-tool.md)): `python3 scripts/mcp_server.py` — JSON-RPC su stdio, catalogo preso da questo stesso manifest. È **read-only per difetto**: i tool marcati «Canone» qui sotto sono elencati ma non partono senza `--allow-write`, perché il canone si scrive su un branch di gruppo con l'occhio del DM sopra (ADR-0007). Le voci esposte sono 102: le cartelle di `converters/` non sono programmi e non compaiono.
++**Da un client MCP** ([`mcp-tools.json`](mcp-tools.json), [ADR-0030](../../plans/adr/ADR-0030-server-mcp-sui-tool.md)): `python3 scripts/mcp_server.py` — JSON-RPC su stdio, catalogo preso da questo stesso manifest. È **read-only per difetto**: i tool marcati «Canone» qui sotto sono elencati ma non partono senza `--allow-write`, perché il canone si scrive su un branch di gruppo con l'occhio del DM sopra (ADR-0007). Le voci esposte sono 101: le cartelle di `converters/` non sono programmi e non compaiono.
+ 
+ ## A · Session Prep (incontri · mappe · tesoro)
+ 
+@@ -107,7 +107,6 @@
+ | `ambiente.py` | «Come installo tutto, e come torno indietro?»<br>L'ambiente di sviluppo completo installato col registro e tolto col rollback (AMBIENTE A5c-A5d, D1): pacchetti di sistema su Debian e Ubuntu con dpkg fotografato prima e dopo, requirements-completo.txt nel .venv, typst della CI in ~/.local/bin, ComfyUI in distrobox. Il registro possiede solo ciò che mancava; rimuovi toglie solo quello, mai autoremove né purge, e lascia un pacchetto nostro da cui dipende altro. adotta mette nel registro le installazioni apt fatte a mano da una data. | **azione** · --con · --si · --venv · --apt-dal | — | — | — | `0` · `1` · `2` |
+ | `avvia_languagetool.sh` | «Voglio una verifica in più sulla grammatica di un master, senza mandare il testo a un servizio esterno: come avvio il server?»<br>Avvia un server LanguageTool 6.8 locale (solo 127.0.0.1) per il secondo lettore di `ciclo_prosa.py segnala --languagetool`; scarica i jar da Maven Central in ~/.cache la prima volta. | PORTA | ✔ | — | — | `0` · `1` |
+ | `azzera_partita.py` | «Un gruppo nuovo riparte da zero: cosa si azzera, cosa resta, e la sua CI e' verde?»<br>Azzera la PARTITA per un gruppo nuovo (stato, storico, sessioni, recap) e lascia il prodotto; l'elenco e' dmcore/partita.py. Valida il nuovo state.yaml prima di scrivere e rigenera state.md (ADR-0050 §7). | --check | — | ✔ | — | `0` · `1` |
+-| `campioni_kappa.py` | «Il punteggio dice 97,9: il DM sarebbe d'accordo?» Se non lo e', il numero misura il suo autore.<br>Estrae i due campioni disgiunti (20+20, stratificati per classe, seme fisso) e calcola il kappa di Cohen fra il giudizio di un valutatore e quello della macchina. Sotto kappa 0,60 la metrica si dichiara NON affidabile e non entra in CI: e' la regola del piano, e il 2026-09-21 ha detto di no (kappa 0,0 con accordo osservato e atteso entrambi a 0,95). | --estrai · --scheda · --kappa | ✔ | — | — | `0` · `1` |
+ | `check_plans_discipline.py` | «Ho toccato scripts/ o un ADR: ho lasciato la riga di tracciatura che la regola d'oro chiede?»<br>Gate ADR-0009: modifiche strutturali (scripts/, skills/, converters/, .github/, plans/adr/) senza riga in plans/CHANGELOG.md -> exit 1. Passa se i commit strutturali sono tutti di Dependabot (PI-3b). | --base · --head · --json | ✔ | — | — | `0` · `1` |
+ | `ciclo_prosa.py` | «Cosa è cambiato rispetto all'originale, perché, e cosa resta da correggere dopo che ho approvato?»<br>L12 (D15 e D16 del 2026-10-02, ADR-0077): dal segnalare al correggere, con una revisione a due giri come fra revisore e autore. `segnala` riusa i rilevatori registrati e aggiunge la regola «debole da solo» di Humanizer (tic minori diversi nello stesso paragrafo); `revisione` scrive il documento da approvare, con ogni modifica in CriticMarkup, numerata, motivata da una norma, e le due garanzie (nessun controllo peggiora, nessun fatto cambia); `applica` porta nell'originale solo le modifiche spuntate, mai su main, e alza la riga `revisione-testo: rN`. Il documento riporta anche la lettura prima e dopo (indice Gulpease e ritmo delle frasi); con `--auto` si applicano senza lettore le modifiche motivate che, da sole, non cambiano un fatto, non peggiorano un controllo e non peggiorano la lettura, e il documento le segna `[x] auto`. LanguageTool (LGPL) è un servizio facoltativo, mai in CI. Dal 2026-10-03 (estensione di ADR-0077) misura anche di quanto la prosa è migliorata: il documento di revisione porta il punteggio MQM e le segnalazioni norma per norma prima e dopo, con la garanzia che MQM non scenda; `lotto` prepara per ogni file il pacchetto da riscrivere e la classifica per MQM; `misura` dà il delta fra un giro di riscrittura e l'altro; `applica` scrive ogni revisione in `plans/scrittura/miglioramenti.json`, e `registro --check` è il cancello in CI. MQM richiede pyyaml: senza, il ciclo funziona e il punteggio manca. | segnala FILE · revisione ORIGINALE RISCRITTO · -o · applica REVISIONE · --data · --languagetool · --auto · lotto FILE... · misura ORIGINALE RISCRITTO · registro · --check · rigenera REVISIONE.md | ✔ | — | — | `0` · `1` · `2` |
+ | `cieco_versioni.py` | «Il master rifatto è scritto meglio di prima, o ha solo meno difetti?»<br>Il confronto cieco fra due versioni degli stessi box read-aloud (ADR-0093): campione congela con un seme i box da confrontare prima di riscrivere; coppie appaia i box nella versione nuova (difflib, stessa intestazione), li mette in ordine casuale e scrive la scheda per il DM con la chiave a parte; esito scioglie la chiave e applica il criterio dei 14 su 20, con l'intervallo di Wilson. | campione · coppie · esito | ✔ | — | — | `0` |
+diff --git a/docs/tools/mcp-tools.json b/docs/tools/mcp-tools.json
+index f3a8f595..c86bf447 100644
+--- a/docs/tools/mcp-tools.json
++++ b/docs/tools/mcp-tools.json
+@@ -2455,41 +2455,6 @@
+       },
+       "deterministic": false
+     },
+-    {
+-      "name": "campioni_kappa",
+-      "description": "«Il punteggio dice 97,9: il DM sarebbe d'accordo?» Se non lo e', il numero misura il suo autore.\n\nEstrae i due campioni disgiunti (20+20, stratificati per classe, seme fisso) e calcola il kappa di Cohen fra il giudizio di un valutatore e quello della macchina. Sotto kappa 0,60 la metrica si dichiara NON affidabile e non entra in CI: e' la regola del piano, e il 2026-09-21 ha detto di no (kappa 0,0 con accordo osservato e atteso entrambi a 0,95).",
+-      "use_case": "«Il punteggio dice 97,9: il DM sarebbe d'accordo?» Se non lo e', il numero misura il suo autore.",
+-      "invocation": "python3 scripts/campioni_kappa.py",
+-      "inputSchema": {
+-        "type": "object",
+-        "properties": {
+-          "estrai": {
+-            "type": "boolean",
+-            "description": "F1.5: scrive i due campioni disgiunti a seme fisso."
+-          },
+-          "scheda": {
+-            "type": "string",
+-            "description": "Stampa la scheda da compilare per il campione A o B. Il punteggio della macchina NON e' mostrato, apposta.",
+-            "enum": [
+-              "A",
+-              "B"
+-            ]
+-          },
+-          "kappa": {
+-            "type": "boolean",
+-            "description": "F3.3: l'accordo fra i voti e la macchina, se i voti ci sono."
+-          }
+-        },
+-        "required": [],
+-        "additionalProperties": false
+-      },
+-      "outputs": [],
+-      "exit_codes": {
+-        "0": "ok",
+-        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
+-      },
+-      "deterministic": true
+-    },
+     {
+       "name": "check_plans_discipline",
+       "description": "«Ho toccato scripts/ o un ADR: ho lasciato la riga di tracciatura che la regola d'oro chiede?»\n\nGate ADR-0009: modifiche strutturali (scripts/, skills/, converters/, .github/, plans/adr/) senza riga in plans/CHANGELOG.md -> exit 1. Passa se i commit strutturali sono tutti di Dependabot (PI-3b).",
+diff --git a/docs/tools/registry.json b/docs/tools/registry.json
+index c3cff16e..fdffda18 100644
+--- a/docs/tools/registry.json
++++ b/docs/tools/registry.json
+@@ -2,7 +2,7 @@
+   "generated_by": "scripts/tools_manifest.py",
+   "source": "scripts/tools.manifest.json",
+   "manifest_version": "1.0.0",
+-  "tool_count": 108,
++  "tool_count": 107,
+   "tools": [
+     {
+       "id": "suggest_encounter",
+@@ -6208,84 +6208,6 @@
+         "scripts/README-automation.md"
+       ]
+     },
+-    {
+-      "id": "campioni_kappa",
+-      "path": "scripts/campioni_kappa.py",
+-      "category": "G-orchestration-governance",
+-      "language": "python",
+-      "invocation": "python3 scripts/campioni_kappa.py",
+-      "summary": "Estrae i due campioni disgiunti (20+20, stratificati per classe, seme fisso) e calcola il kappa di Cohen fra il giudizio di un valutatore e quello della macchina. Sotto kappa 0,60 la metrica si dichiara NON affidabile e non entra in CI: e' la regola del piano, e il 2026-09-21 ha detto di no (kappa 0,0 con accordo osservato e atteso entrambi a 0,95).",
+-      "use_case": "«Il punteggio dice 97,9: il DM sarebbe d'accordo?» Se non lo e', il numero misura il suo autore.",
+-      "stability": "stable",
+-      "stdlib_only": true,
+-      "external_bins": [],
+-      "args": [
+-        {
+-          "name": "--estrai",
+-          "type": "bool",
+-          "required": false,
+-          "default": false,
+-          "choices": null,
+-          "repeatable": false,
+-          "desc": "F1.5: scrive i due campioni disgiunti a seme fisso."
+-        },
+-        {
+-          "name": "--scheda",
+-          "type": "str",
+-          "required": false,
+-          "default": null,
+-          "choices": [
+-            "A",
+-            "B"
+-          ],
+-          "repeatable": false,
+-          "desc": "Stampa la scheda da compilare per il campione A o B. Il punteggio della macchina NON e' mostrato, apposta."
+-        },
+-        {
+-          "name": "--kappa",
+-          "type": "bool",
+-          "required": false,
+-          "default": false,
+-          "choices": null,
+-          "repeatable": false,
+-          "desc": "F3.3: l'accordo fra i voti e la macchina, se i voti ci sono."
+-        }
+-      ],
+-      "inputs": [
+-        {
+-          "path": "skills/REGISTRO-NORME-EDITORIALI.md",
+-          "kind": "markdown",
+-          "required": true,
+-          "schema": null
+-        }
+-      ],
+-      "outputs": [],
+-      "exit_codes": {
+-        "0": "ok",
+-        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
+-      },
+-      "determinism": {
+-        "deterministic": true,
+-        "seed_flag": null,
+-        "notes": "Sola lettura."
+-      },
+-      "side_effects": {
+-        "writes_canon": false,
+-        "git_commit": false,
+-        "network": false
+-      },
+-      "idempotent": true,
+-      "consumes_schema": null,
+-      "produces_schema": null,
+-      "ci_smoke": "python scripts/validate_norme_editoriali.py",
+-      "tests": [
+-        "scripts/tests/test_help_di_ogni_tool.py",
+-        "scripts/tests/test_norme_editoriali.py"
+-      ],
+-      "docs": [
+-        "plans/adr/ADR-0056-una-norma-senza-misura-non-esiste.md"
+-      ]
+-    },
+     {
+       "id": "check_plans_discipline",
+       "path": "scripts/check_plans_discipline.py",
+diff --git a/plans/PIANO-MISURA-EDITORIALE-STANDARD.md b/plans/PIANO-MISURA-EDITORIALE-STANDARD.md
+index 016f50aa..c0a70fbd 100644
+--- a/plans/PIANO-MISURA-EDITORIALE-STANDARD.md
++++ b/plans/PIANO-MISURA-EDITORIALE-STANDARD.md
+@@ -325,7 +325,7 @@ box sotto 40. Entra come **minore**, e solo quando il box è fuori dalla fascia
+ |---|---|---|
+ | ✅ | **F3.1** Il cancello morde, per ogni severità | un critico iniettato → **rosso anche con punteggio alto**; un maggiore iniettato → punteggio scende di 5 volte un minore; rimosso → verde |
+ | ✅ | **F3.2** Nessun documento buono bocciato | alla soglia iniziale, **zero** master DEF in rosso. Se ne cade uno, la soglia è sbagliata, non il documento |
+-| 🟡 | **F3.3** κ sui due campioni | **ESEGUITO sul campione B il 2026-09-21: κ = 0,0.** La metrica **si dichiara non affidabile**, come la regola prescrive. ⚠️ La causa non è il giudice — Po e Pe sono **entrambi 0,95** — ma la soglia, che promuove 20 su 20. Il campione **A resta da votare**, e il suo valore oggi non è il κ ma **l'elenco di cosa la metrica non vede**: `campioni_kappa.py --scheda A` |
++| 🟡 | **F3.3** κ sui due campioni | **Strumento tolto il <data della decisione del DM>** (lotto 7e di AVVENTURE-COMMUNITY): il campione A non ha mai avuto voti, ADR-0093 ha fatto del cieco il solo giudice; i campioni e i voti restano in `campaign/misure/` come archivio. **ESEGUITO sul campione B il 2026-09-21: κ = 0,0.** La metrica **si dichiara non affidabile**, come la regola prescrive. ⚠️ La causa non è il giudice — Po e Pe sono **entrambi 0,95** — ma la soglia, che promuove 20 su 20. Il campione **A resta da votare**, e il suo valore oggi non è il κ ma **l'elenco di cosa la metrica non vede**: `campioni_kappa.py --scheda A` |
+ | ⬜ | **F3.5** Non-regressione | `misura_craft` continua a girare: il punteggio **affianca**, non sostituisce |
+ 
+ ---
+diff --git a/plans/esperimenti/avventure-community/note-prosa-inventario.md b/plans/esperimenti/avventure-community/note-prosa-inventario.md
+index f6ed1bf8..6126bcec 100644
+--- a/plans/esperimenti/avventure-community/note-prosa-inventario.md
++++ b/plans/esperimenti/avventure-community/note-prosa-inventario.md
+@@ -18,7 +18,7 @@ Legenda: **[L]** = letto in un file o in un'uscita · **[I]** = mia inferenza.
+ | `scripts/validate_lingua.py` | refusi meccanici (accenti, virgolette, apostrofo al posto dell'accento); «o sono errori o non sono niente» | sì | **sì** sugli errori (`ci.yml:177-178`); avvisi non bloccanti | 637 file, 0 refusi, 2.458 avvisi |
+ | `scripts/lettura_a_scene.py` | non misura: serve un master una scena alla volta al lettore e al playtester a freddo, con diario a campi fissi (`ago`, `so adesso`) per trovare `L-ORDINE` | sì (serve il testo) | no | — (strumento di procedura) |
+ | `scripts/quiz_lettura.py` | quiz a due agenti: risposte dagli appunti contro libro aperto, confronto a radici di parola con la chiave | sì | **sì**, solo `--check` sulla forma delle chiavi (`ci.yml:163-164`) | 2 chiavi (ARC07-DEF-4, DEF-5), ben formate |
+-| `scripts/campioni_kappa.py` | κ di Cohen fra macchina (MQM promosso/bocciato) e un giudice, su due campioni disgiunti a seme fisso | sì | no (soglia κ ≥ 0,60 per entrare in CI) | campione A (DM): **nessun voto**; campione B (modello): n=20, Po 0,95, **κ = 0,0** |
++| `campioni_kappa.py` (tolto il <data della decisione del DM>) | κ di Cohen fra macchina (MQM promosso/bocciato) e un giudice, su due campioni disgiunti a seme fisso | sì | no (soglia κ ≥ 0,60 per entrare in CI) | campione A (DM): **nessun voto**; campione B (modello): n=20, Po 0,95, **κ = 0,0** |
+ | `ciclo_prosa.py segnala --languagetool` (ADR-0079) | secondo lettore LanguageTool locale, 3 regole | sì | no, non pesa in MQM | non eseguito (serve Java e il server locale) |
+ | `banco_prosa_locale.py` (solo nella PR #234, non su main) | genera i 10 casi con un LLM locale; `coppie` = foglio alla cieca; `esito` = quota con Wilson e κ giudice/DM | sì, con seme dichiarato | solo `--dry-run`, `coppie`, `esito` | gemma4 e4b: 40% / 42%; cieco 0/10 contro B-con |
+ 
+diff --git a/scripts/campioni_kappa.py b/scripts/campioni_kappa.py
+deleted file mode 100644
+index ffa24ef2..00000000
+--- a/scripts/campioni_kappa.py
++++ /dev/null
+@@ -1,217 +0,0 @@
+-#!/usr/bin/env python3
+-"""campioni_kappa.py — i due campioni disgiunti e l'accordo fra la macchina e chi decide.
+-
+-## Perche' esiste
+-
+-Il punteggio di `punteggio_mqm` dice che un documento vale 97,9. La domanda che
+-nessuna metrica risponde da sola e': **il DM sarebbe d'accordo?** Se non lo e',
+-il numero misura il suo autore, non il repo — ed e' il pilastro che
+-`PIANO-MISURA-EDITORIALE-STANDARD` §1.4 dichiara mancante fin dalla prima
+-stesura.
+-
+-La misura standard e' il **κ di Cohen**: l'accordo fra due valutatori,
+-corretto per l'accordo che si otterrebbe **a caso**. Due giudici che dicono
+-«promosso» al 95% dei documenti concordano nel 90% dei casi anche tirando i
+-dadi: la percentuale grezza non dice niente, il κ si'.
+-
+-    κ = (Po − Pe) / (1 − Pe)
+-
+-dove `Po` e' l'accordo osservato e `Pe` quello atteso per caso. La soglia del
+-piano e' **κ ≥ 0,60** (Landis & Koch: «substantial»): sotto, la metrica **non
+-entra in CI** e si dichiara non affidabile.
+-
+-## I due campioni, e perche' sono disgiunti
+-
+-Il DM ha scelto due campioni distinti invece di due passaggi sullo stesso. E'
+-la scelta giusta: due valutatori sullo *stesso* campione misurano l'accordo ma
+-non la **copertura**; due campioni disgiunti misurano anche se la metrica
+-regge su materiale diverso.
+-
+-| | Campione A | Campione B |
+-|---|---|---|
+-| **chi giudica** | il **DM** | un secondo modello |
+-| **cosa misura** | l'accordo fra la macchina e chi decide | la tenuta su materiale che il DM non ha visto |
+-
+-⚠️ **Il κ che conta e' quello di A.** Se B da' κ alto e A basso, la metrica e'
+-coerente con se stessa e in disaccordo col DM — e in quel caso **ha torto la
+-metrica**.
+-
+-🔴 **E il bias del giudice B va scritto, non nascosto.** Il secondo giudice e'
+-il modello di questa sessione, che ha **scritto meta' dei rilevatori**. Non e'
+-indipendente da loro: tendera' a concordare con la macchina piu' di un giudice
+-estraneo, e il κ(B) e' quindi un **limite superiore ottimistico**. Serve a
+-prendere gli errori grossolani, non a certificare la metrica.
+-
+-## L'estrazione
+-
+-Stratificata per classe, **disgiunta**, a **seme fisso**: due esecuzioni sullo
+-stesso commit danno gli stessi 40 file, nello stesso ordine. Senza seme fisso
+-il campione cambierebbe a ogni esecuzione e il κ non sarebbe confrontabile con
+-se stesso.
+-
+-## Uso
+-
+-    python3 scripts/campioni_kappa.py --estrai        # F1.5: i due campioni
+-    python3 scripts/campioni_kappa.py --scheda A      # la scheda da compilare
+-    python3 scripts/campioni_kappa.py --kappa         # F3.3: l'accordo, se i voti ci sono
+-
+-Decisione: ADR-0059 §κ · piano: F1.5 e F3.3.
+-"""
+-from __future__ import annotations
+-
+-import argparse
+-import json
+-import random
+-import sys
+-from collections import Counter
+-from pathlib import Path
+-
+-ROOT = Path(__file__).resolve().parent.parent
+-sys.path.insert(0, str(ROOT / "scripts"))
+-
+-import punteggio_mqm as pm  # noqa: E402
+-
+-CAMPIONI = ROOT / "campaign" / "misure" / "campioni-kappa.json"
+-VOTI = ROOT / "campaign" / "misure" / "voti-kappa.json"
+-SEME = 20260921          # la data dell'estrazione: fisso, e dichiarato
+-PER_CAMPIONE = 20
+-
+-
+-def estrai() -> dict:
+-    """I due campioni disgiunti, stratificati per classe, a seme fisso."""
+-    spec = pm.carica_specifiche()
+-    per_classe: "dict[str, list[str]]" = {}
+-    for f in pm.bersagli(spec, None):
+-        e = pm.valuta(f, spec)
+-        if e.get("classe") and e.get("punteggio") is not None:
+-            per_classe.setdefault(e["classe"], []).append(e["file"])
+-    rng = random.Random(SEME)
+-    a: "list[str]" = []
+-    b: "list[str]" = []
+-    # Stratificazione proporzionale, con almeno un documento per classe: senza
+-    # il minimo, `master_def` (5 file su 515) uscirebbe quasi sempre a zero e
+-    # il campione non direbbe niente sulla classe piu' curata del repo.
+-    totale = sum(len(v) for v in per_classe.values())
+-    for classe in sorted(per_classe):
+-        pool = sorted(per_classe[classe])
+-        rng.shuffle(pool)
+-        quota = max(1, round(PER_CAMPIONE * len(pool) / totale))
+-        a.extend(pool[:quota])
+-        b.extend(pool[quota:quota * 2])
+-    return {
+-        "seme": SEME,
+-        "per_campione": PER_CAMPIONE,
+-        "A": {"giudice": "il DM", "file": sorted(a[:PER_CAMPIONE])},
+-        "B": {"giudice": "un secondo modello (bias dichiarato: ha scritto "
+-                         "meta' dei rilevatori — il kappa di B e' un limite "
+-                         "superiore ottimistico)",
+-              "file": sorted(b[:PER_CAMPIONE])},
+-    }
+-
+-
+-def kappa(coppie: "list[tuple[str, str]]") -> "dict | None":
+-    """κ di Cohen su giudizi binari `promosso` / `bocciato`."""
+-    if not coppie:
+-        return None
+-    n = len(coppie)
+-    concordi = sum(1 for x, y in coppie if x == y)
+-    po = concordi / n
+-    cx, cy = Counter(x for x, _ in coppie), Counter(y for _, y in coppie)
+-    pe = sum(cx[k] * cy[k] for k in set(cx) | set(cy)) / (n * n)
+-    k = 1.0 if pe == 1 else (po - pe) / (1 - pe)
+-    return {"n": n, "accordo_osservato": round(po, 4),
+-            "accordo_atteso_per_caso": round(pe, 4), "kappa": round(k, 4),
+-            "lettura": _lettura(k), "supera_la_soglia": k >= 0.60}
+-
+-
+-def _lettura(k: float) -> str:
+-    """Landis & Koch 1977, la scala che il piano cita."""
+-    if k < 0:    return "peggio del caso"
+-    if k < 0.21: return "lieve"
+-    if k < 0.41: return "discreto"
+-    if k < 0.61: return "moderato"
+-    if k < 0.81: return "sostanziale"
+-    return "quasi perfetto"
+-
+-
+-def giudizio_macchina(percorso: str) -> str:
+-    spec = pm.carica_specifiche()
+-    e = pm.valuta(ROOT / percorso, spec)
+-    ok, _ = pm.promosso(e, spec)
+-    return "promosso" if ok else "bocciato"
+-
+-
+-def stampa_scheda(quale: str, dati: dict) -> None:
+-    c = dati[quale]
+-    print(f"\nSCHEDA DI VALUTAZIONE — campione {quale}\n" + "=" * 70)
+-    print(f"Giudice: {c['giudice']}\n")
+-    print("Per ogni documento, una sola domanda, e NON e' «e' bello»:\n")
+-    print("  «Questo documento rispetta le norme dichiarate abbastanza da")
+-    print("   poter essere consegnato al tavolo cosi' com'e'?»   promosso / bocciato\n")
+-    print("⚠️  Il punteggio della macchina NON e' stampato qui, apposta: vederlo")
+-    print("    prima di decidere e' il modo piu' rapido per misurare zero.\n")
+-    for i, f in enumerate(c["file"], 1):
+-        print(f"  {i:2}. [ promosso / bocciato ]  {f}")
+-    print(f"\nI voti si scrivono in {VOTI.relative_to(ROOT)}, nella forma:")
+-    print('  {"A": {"percorso/del/file.md": "promosso", ...}, "B": {...}}\n')
+-
+-
+-def main(argv=None) -> int:
+-    ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+-    ap.add_argument("--estrai", action="store_true", help="F1.5: scrive i due campioni")
+-    ap.add_argument("--scheda", choices=("A", "B"), help="la scheda da compilare")
+-    ap.add_argument("--kappa", action="store_true", help="F3.3: l'accordo, se i voti ci sono")
+-    args = ap.parse_args(argv)
+-
+-    if args.estrai:
+-        dati = estrai()
+-        CAMPIONI.parent.mkdir(parents=True, exist_ok=True)
+-        CAMPIONI.write_text(json.dumps(dati, ensure_ascii=False, indent=2) + "\n",
+-                            encoding="utf-8")
+-        sovrapposti = set(dati["A"]["file"]) & set(dati["B"]["file"])
+-        print(f"✓ campioni estratti in {CAMPIONI.relative_to(ROOT)} — "
+-              f"A: {len(dati['A']['file'])} · B: {len(dati['B']['file'])} · "
+-              f"sovrapposizione: {len(sovrapposti)}")
+-        return 1 if sovrapposti else 0
+-
+-    if not CAMPIONI.exists():
+-        print("✗ i campioni non sono stati estratti: `--estrai` prima")
+-        return 1
+-    dati = json.loads(CAMPIONI.read_text(encoding="utf-8"))
+-
+-    if args.scheda:
+-        stampa_scheda(args.scheda, dati)
+-        return 0
+-
+-    if args.kappa:
+-        voti = json.loads(VOTI.read_text(encoding="utf-8")) if VOTI.exists() else {}
+-        uscita = 0
+-        for quale in ("A", "B"):
+-            print(f"\nκ — campione {quale}  ({dati[quale]['giudice']})")
+-            suoi = voti.get(quale, {})
+-            coppie = [(v, giudizio_macchina(f))
+-                      for f, v in sorted(suoi.items()) if f in dati[quale]["file"]]
+-            if not coppie:
+-                print("  🔴 nessun voto: il κ non esiste, e la metrica NON entra")
+-                print(f"     in CI finche' non esiste. `--scheda {quale}` stampa la scheda.")
+-                if quale == "A":
+-                    uscita = 0   # non e' un errore: e' un lavoro che spetta al DM
+-                continue
+-            r = kappa(coppie)
+-            print(f"  n={r['n']}  Po={r['accordo_osservato']}  "
+-                  f"Pe={r['accordo_atteso_per_caso']}")
+-            print(f"  **κ = {r['kappa']}** — {r['lettura']}  "
+-                  f"({'✓ sopra' if r['supera_la_soglia'] else '🔴 SOTTO'} la soglia 0,60)")
+-            if quale == "A" and not r["supera_la_soglia"]:
+-                print("  🔴 Il κ che conta e' questo: la metrica si dichiara NON")
+-                print("     affidabile e non entra in CI. Ha torto la metrica, non il DM.")
+-        print()
+-        return uscita
+-
+-    print(f"A: {len(dati['A']['file'])} documenti · B: {len(dati['B']['file'])} · "
+-          f"seme {dati['seme']}")
+-    return 0
+-
+-
+-if __name__ == "__main__":  # pragma: no cover
+-    sys.exit(main())
+diff --git a/scripts/tests/test_campioni_kappa.py b/scripts/tests/test_campioni_kappa.py
+deleted file mode 100644
+index a935ce08..00000000
+--- a/scripts/tests/test_campioni_kappa.py
++++ /dev/null
+@@ -1,149 +0,0 @@
+-"""F1.5 e F3.3 — i due campioni, e il κ che dice di no.
+-
+-⚠️ **Meta' di queste prove verifica che il κ sappia dire zero.** Una metrica
+-d'accordo che non puo' bocciare non valida niente: il caso del 2026-09-21 —
+-Po 0,95, Pe 0,95, **κ 0,0** — e' il caso che conta, ed e' quello che la
+-percentuale grezza avrebbe nascosto dietro un «95% d'accordo».
+-"""
+-from __future__ import annotations
+-
+-import json
+-import sys
+-import unittest
+-from pathlib import Path
+-
+-ROOT = Path(__file__).resolve().parents[2]
+-sys.path.insert(0, str(ROOT / "scripts"))
+-
+-import campioni_kappa as ck  # noqa: E402
+-
+-
+-class TestIlKappaEQuelloDiCohen(unittest.TestCase):
+-    def test_accordo_totale_con_giudizi_vari(self):
+-        c = [("promosso", "promosso")] * 10 + [("bocciato", "bocciato")] * 10
+-        self.assertEqual(ck.kappa(c)["kappa"], 1.0)
+-
+-    def test_disaccordo_totale_e_negativo(self):
+-        c = [("promosso", "bocciato")] * 10 + [("bocciato", "promosso")] * 10
+-        self.assertLess(ck.kappa(c)["kappa"], 0)
+-
+-    def test_accordo_alto_ma_per_caso_vale_zero(self):
+-        """🔴 Il caso vero del repo, e la ragione per cui si usa il κ e non la
+-        percentuale: 19 accordi su 20 sembrano un ottimo risultato, e non
+-        valgono niente se entrambi i giudici dicono «promosso» a tutto."""
+-        c = [("promosso", "promosso")] * 19 + [("bocciato", "promosso")]
+-        r = ck.kappa(c)
+-        self.assertEqual(r["accordo_osservato"], 0.95)
+-        self.assertEqual(r["accordo_atteso_per_caso"], 0.95)
+-        self.assertEqual(r["kappa"], 0.0)
+-        self.assertFalse(r["supera_la_soglia"])
+-
+-    def test_la_soglia_e_quella_del_piano(self):
+-        self.assertTrue(ck.kappa([("p", "p")] * 9 + [("b", "b")] * 11)["supera_la_soglia"])
+-        self.assertFalse(ck.kappa([("p", "p")] * 19 + [("b", "p")])["supera_la_soglia"])
+-
+-    def test_la_lettura_e_landis_e_koch(self):
+-        for k, atteso in ((-0.1, "peggio del caso"), (0.1, "lieve"),
+-                          (0.3, "discreto"), (0.5, "moderato"),
+-                          (0.7, "sostanziale"), (0.9, "quasi perfetto")):
+-            self.assertEqual(ck._lettura(k), atteso, k)
+-
+-    def test_nessun_voto_non_e_un_kappa_zero(self):
+-        """Un campione non votato e' **assenza di misura**, non accordo nullo:
+-        confonderli direbbe «la metrica e' inaffidabile» dove il vero e' «non
+-        e' stata ancora provata»."""
+-        self.assertIsNone(ck.kappa([]))
+-
+-
+-class TestICampioniSonoOnesti(unittest.TestCase):
+-    def setUp(self):
+-        self.dati = json.loads(ck.CAMPIONI.read_text(encoding="utf-8"))
+-
+-    def test_sono_disgiunti(self):
+-        a, b = set(self.dati["A"]["file"]), set(self.dati["B"]["file"])
+-        self.assertEqual(a & b, set(), "i due campioni si sovrappongono")
+-
+-    def test_il_seme_e_fisso_e_l_estrazione_riproducibile(self):
+-        """Senza seme fisso il campione cambierebbe a ogni esecuzione e il κ
+-        non sarebbe confrontabile con se stesso."""
+-        self.assertEqual(ck.estrai()["A"]["file"], ck.estrai()["A"]["file"])
+-        self.assertEqual(self.dati["seme"], ck.SEME)
+-
+-    def test_ogni_file_del_campione_esiste(self):
+-        for quale in ("A", "B"):
+-            for f in self.dati[quale]["file"]:
+-                self.assertTrue((ROOT / f).exists(), f)
+-
+-    def test_il_bias_del_giudice_B_e_dichiarato(self):
+-        """🔴 Il giudice B ha scritto meta' dei rilevatori. Tacerlo renderebbe
+-        il suo κ una certificazione invece che un limite superiore."""
+-        self.assertIn("bias", self.dati["B"]["giudice"].lower())
+-
+-
+-class TestIlVerdettoSulRepoEScrittoDovunque(unittest.TestCase):
+-    def test_il_piano_dichiara_la_metrica_non_validata(self):
+-        piano = (ROOT / "plans" / "PIANO-MISURA-EDITORIALE-STANDARD.md").read_text(
+-            encoding="utf-8")
+-        self.assertIn("κ = 0,0", piano)
+-        # ⚠️ Si cerca la **frase della regola**, non una formulazione: il piano
+-        # scrive «NON è validata» in maiuscolo dentro il grassetto, e la prima
+-        # stesura di questa prova cercava la minuscola. Un test che dipende da
+-        # come e' scritta una frase invecchia alla prima riscrittura.
+-        self.assertIn("non affidabile", piano)
+-
+-    def test_i_voti_di_B_ci_sono_e_quelli_di_A_no(self):
+-        voti = json.loads(ck.VOTI.read_text(encoding="utf-8"))
+-        self.assertEqual(len(voti["B"]), 20)
+-        self.assertEqual(voti["A"], {},
+-                         "i voti di A li scrive il DM: non si inventano")
+-
+-
+-if __name__ == "__main__":  # pragma: no cover
+-    unittest.main()
+-
+-
+-class TestLaBaselineMisuraIlMiglioramento(unittest.TestCase):
+-    """ADR-0036 dice *«si misura il miglioramento, non lo stato»*, e fino al
+-    2026-09-21 mancava la linea di base: il miglioramento si confrontava a
+-    occhio fra due esecuzioni. Un confronto a memoria non e' una misura."""
+-
+-    def setUp(self):
+-        import punteggio_mqm as pm  # noqa: PLC0415
+-        self.pm = pm
+-        self.b = json.loads(pm.BASELINE.read_text(encoding="utf-8"))
+-
+-    def test_la_baseline_e_per_documento_non_solo_aggregata(self):
+-        """L'aggregato dice CHE qualcosa e' peggiorato, non QUALE."""
+-        self.assertGreater(len(self.b["documenti"]), 400)
+-
+-    def test_dichiara_con_quante_norme_e_stata_presa(self):
+-        """🔴 Il confronto vale solo a metro costante: un metro con piu' denti
+-        da' numeri piu' bassi sugli **stessi** documenti, e senza questo campo
+-        il calo sembrerebbe un peggioramento del repo."""
+-        self.assertIn("norme_pesate", self.b)
+-        self.assertEqual(self.b["norme_pesate"],
+-                         len(self.pm.carica_specifiche()["norme"]))
+-
+-    def test_ogni_documento_della_baseline_esiste(self):
+-        for f in list(self.b["documenti"])[:60]:
+-            self.assertTrue((ROOT / f).exists(), f)
+-
+-    def test_il_confronto_con_se_stessa_non_trova_differenze(self):
+-        esiti = [{"file": f, "punteggio": p}
+-                 for f, p in self.b["documenti"].items()]
+-        import io, contextlib  # noqa: PLC0415
+-        buf = io.StringIO()
+-        with contextlib.redirect_stdout(buf):
+-            self.pm.confronta_baseline(esiti)
+-        uscita = buf.getvalue()
+-        self.assertIn("migliorati: 0", uscita)
+-        self.assertIn("peggiorati: 0", uscita)
+-
+-    def test_un_peggioramento_si_vede(self):
+-        esiti = [{"file": f, "punteggio": p - 3}
+-                 for f, p in list(self.b["documenti"].items())[:5]]
+-        import io, contextlib  # noqa: PLC0415
+-        buf = io.StringIO()
+-        with contextlib.redirect_stdout(buf):
+-            self.pm.confronta_baseline(esiti)
+-        self.assertIn("peggiorati: 5", buf.getvalue())
+diff --git a/scripts/tools.manifest.json b/scripts/tools.manifest.json
+index 38ea6134..c8e0bac3 100644
+--- a/scripts/tools.manifest.json
++++ b/scripts/tools.manifest.json
+@@ -6616,84 +6616,6 @@
+         "plans/adr/ADR-0056-una-norma-senza-misura-non-esiste.md"
+       ]
+     },
+-    {
+-      "id": "campioni_kappa",
+-      "path": "scripts/campioni_kappa.py",
+-      "category": "G-orchestration-governance",
+-      "language": "python",
+-      "invocation": "python3 scripts/campioni_kappa.py",
+-      "summary": "Estrae i due campioni disgiunti (20+20, stratificati per classe, seme fisso) e calcola il kappa di Cohen fra il giudizio di un valutatore e quello della macchina. Sotto kappa 0,60 la metrica si dichiara NON affidabile e non entra in CI: e' la regola del piano, e il 2026-09-21 ha detto di no (kappa 0,0 con accordo osservato e atteso entrambi a 0,95).",
+-      "use_case": "«Il punteggio dice 97,9: il DM sarebbe d'accordo?» Se non lo e', il numero misura il suo autore.",
+-      "stability": "stable",
+-      "stdlib_only": true,
+-      "external_bins": [],
+-      "args": [
+-        {
+-          "name": "--estrai",
+-          "type": "bool",
+-          "required": false,
+-          "default": false,
+-          "choices": null,
+-          "repeatable": false,
+-          "desc": "F1.5: scrive i due campioni disgiunti a seme fisso."
+-        },
+-        {
+-          "name": "--scheda",
+-          "type": "str",
+-          "required": false,
+-          "default": null,
+-          "choices": [
+-            "A",
+-            "B"
+-          ],
+-          "repeatable": false,
+-          "desc": "Stampa la scheda da compilare per il campione A o B. Il punteggio della macchina NON e' mostrato, apposta."
+-        },
+-        {
+-          "name": "--kappa",
+-          "type": "bool",
+-          "required": false,
+-          "default": false,
+-          "choices": null,
+-          "repeatable": false,
+-          "desc": "F3.3: l'accordo fra i voti e la macchina, se i voti ci sono."
+-        }
+-      ],
+-      "inputs": [
+-        {
+-          "path": "skills/REGISTRO-NORME-EDITORIALI.md",
+-          "kind": "markdown",
+-          "required": true,
+-          "schema": null
+-        }
+-      ],
+-      "outputs": [],
+-      "exit_codes": {
+-        "0": "ok",
+-        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
+-      },
+-      "determinism": {
+-        "deterministic": true,
+-        "seed_flag": null,
+-        "notes": "Sola lettura."
+-      },
+-      "side_effects": {
+-        "writes_canon": false,
+-        "git_commit": false,
+-        "network": false
+-      },
+-      "idempotent": true,
+-      "consumes_schema": null,
+-      "produces_schema": null,
+-      "ci_smoke": "python scripts/validate_norme_editoriali.py",
+-      "tests": [
+-        "scripts/tests/test_help_di_ogni_tool.py",
+-        "scripts/tests/test_norme_editoriali.py"
+-      ],
+-      "docs": [
+-        "plans/adr/ADR-0056-una-norma-senza-misura-non-esiste.md"
+-      ]
+-    },
+     {
+       "id": "validate_prosa",
+       "path": "scripts/validate_prosa.py",

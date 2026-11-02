@@ -1,6 +1,6 @@
 # PIANO — L'ambiente riproducibile: la macchina come la CI
 
-> **Stato**: 🔵 pianificato (2026-10-08), D1-D11 decise dal DM lo stesso giorno · **Classe**: G per il contratto, C per i lotti
+> **Stato**: 🟡 **in corso**, 20% (aperto il 2026-10-08, D1-D11 decise dal DM lo stesso giorno): A0 ✅, A5c senza la prova in container, metà di A5a e A5d anticipati il 2026-10-09 (#230); A1-A3 da rimisurare contro ADR-0099 (P22) *(allineato a `INDEX.md` il 2026-10-23, P15)* · **Classe**: G per il contratto, C per i lotti
 > **Nasce da**: un brief incollato dal DM il 2026-10-08, *«Deterministic
 > Developer & TTRPG Campaign Environment Bootstrapper, CI-Parity Framework, and
 > Verification System»*, con la richiesta: *«verifica prima questo prompt e

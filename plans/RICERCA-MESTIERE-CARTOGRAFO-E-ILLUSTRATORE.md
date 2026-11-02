@@ -1,6 +1,6 @@
 # 🎨 RICERCA — Il mestiere: cartografia e illustrazione a confronto con la pratica professionale
 
-> **Stato**: 🔵 **aperta, da eseguire** · **Data**: 2026-09-04
+> **Stato**: 🟡 **in corso**, 25% (D7-D10 decise il 2026-09-11, D12 chiusa il 2026-10-09): F1 lotto K ✅, i lotti R di F1 e F2 da fare *(allineato a `INDEX.md` il 2026-10-23, P15)* · **Data**: 2026-09-04
 > **Richiesta-fonte (DM)**: *«la generazione delle mappe usa tutte le best
 > practice e le tecniche utilizzate dai cartografi, ed automatizzabili o
 > generabili by AI tools? La stessa domanda è per le illustrazioni: utilizzano

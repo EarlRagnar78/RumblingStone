@@ -22,7 +22,7 @@ I file con nome-hash sono stati rinominati per soggetto (identificato a vista):
 | `incantatore-oscuro-fuoco.webp` | incantatore oscuro con fuoco in mano e bastone dall'occhio rosso | deathlock / negromante Ghostlord |
 | `orda-non-morti-ombra.webp` | orda di non-morti ombra che travolge un guerriero | scena Battaglia Finale / non-morti |
 | `ranger-gufo-mascherata.webp` | ranger elfica mascherata con gufo → **Lythiel** | `png/Lythiel/` ✅ assegnato |
-| `cacciatore-ranger-balestra.webp` | ranger rude con balestra → **Jorr** | `png/jorr-natherson-cr7.md` ✅ assegnato |
+| `cacciatore-ranger-balestra.webp` | ranger rude con balestra → **Jorr** | `png/jorr-natherson-cr8.md` ✅ assegnato |
 | `drago-cavaliere-alato.webp` | drago cavalcato da cavaliere alato | Tyrgarun / scena aerea |
 | `armata di nani.webp` | schiera di nani in armatura | token di unità nanica (battaglie di massa) |
 

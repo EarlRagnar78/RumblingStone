@@ -119,6 +119,18 @@ def extract_table_headers(content: str) -> list[str]:
     return headers
 
 
+def _quando() -> str:
+    """L'ora di costruzione. Con SOURCE_DATE_EPOCH (la convenzione delle build
+    riproducibili, che il workflow Release imposta alla data del commit) è
+    fissa, e due costruzioni dello stesso commit danno gli stessi byte (ADR-0100)."""
+    import datetime
+    import os
+    epoca = os.environ.get("SOURCE_DATE_EPOCH")
+    if epoca:
+        return datetime.datetime.fromtimestamp(int(epoca), datetime.timezone.utc).isoformat()
+    return datetime.datetime.now(datetime.timezone.utc).isoformat()
+
+
 def infer_domains_from_content(filename: str, content: str) -> list[str]:
     """Infer domain tags by scanning content for keyword clusters."""
     stem = Path(filename).stem
@@ -132,7 +144,7 @@ def infer_domains_from_content(filename: str, content: str) -> list[str]:
         if hits >= 2:  # At least 2 keyword matches = include domain
             domains.append(domain)
 
-    return list(set(domains))
+    return sorted(set(domains))
 
 
 def build_file_entry(md_file: Path, build_dir: Path) -> dict[str, Any]:
@@ -249,7 +261,7 @@ def main():
 
     index = {
         "_meta": {
-            "generated": __import__('datetime').datetime.now(__import__('datetime').timezone.utc).isoformat(),
+            "generated": _quando(),
             "total_files": len(entries),
             "total_domains": len(domain_index),
             "usage": (

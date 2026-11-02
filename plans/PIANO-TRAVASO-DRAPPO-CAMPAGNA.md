@@ -13,7 +13,7 @@
 > rispetto all'Arco della Forgia Eterna? e quali si potrebbero portare nella
 > campagna?»* — e la verifica dei file che ne è seguita (§1).
 
-**Stato**: 🔵 pianificato · **Data**: 2026-08-31
+**Stato**: 🟡 **riaperto** (2026-11-01): A1-A5 ✅ · B1-B2 ✅ · C1-C2 ✅; aperto solo A6 (in attesa che ARC-07 finisca al tavolo) · **Data**: 2026-08-31, §3-bis il 2026-11-01
 **Ambito**: apparato, tooling e formati. **Mai** la prosa giocata.
 
 ---
@@ -179,6 +179,40 @@ attestati sono marcati `[INFERRED]`.
 
 ---
 
+## §3-bis · Direzione C — la genealogia, misurata *(2026-11-01)*
+
+Domanda del DM del 2026-11-01: *«se è lo stesso modulo il drappo che è derivato dovrà
+mettere l'origine, mentre se è vero il contrario le indicazioni devono andare nel senso
+opposto; se sono diversi bisogna capire misurando quando sono identici e poi decidere,
+permettendo la giocabilità sia nella campagna che come stand alone»*.
+
+### C1 · Misurare quanto sono lo stesso modulo `✅ 2026-11-01`
+
+**Produce**: `scripts/misura_derivazione.py` (solo stdlib, con test) e
+`plans/esperimenti/drappo-palio-2026-11-01/` con le corrispondenze dichiarate, la misura
+e il rapporto. Corregge l'hub del Drappo §10, che diceva nuove anche le contrade.
+**Esito**: il Drappo deriva dal Palio (git, piano, hub). Testo in comune quasi nullo (7
+sequenze di sei parole su 40.036, nessuna frase); impianto condiviso al 62% dei 74
+concetti (contrade 92%, scene 65%, PNG per ruolo 67%, regole 54%, struttura 36%).
+**Gate**: `pytest scripts/tests/test_misura_derivazione.py` · `validate_standalone.py`.
+
+### C2 · Il collegamento nei due sensi `✅ 2026-11-01`
+
+**Produce**: una riga in testa a `…-P2D-PALIO-CHANNATHGATE-AVVENTURA.md` che rimanda al
+Drappo come versione derivata, e un test che controlla che i due rimandi esistano.
+**Perché è gated**: il piano del Drappo (§1, 2026-08-14) dice che nessun file dell'arco 09
+si tocca. Una riga di rimando non crea dipendenza e non cambia testo giocato, quindi per
+la regola del DM del 2026-10-31 non c'è regressione misurabile; ma supera una decisione
+vecchia, e il dubbio va al DM.
+
+<!-- decisioni-dm: TRAVASO-GENEALOGIA -->
+
+| # | Fase | Domanda |
+|---|---|---|
+| ~~D1~~ | C2 | ✅ **Decisa il 2026-11-01** (il DM, card: «Nei due sensi»). Era: **Come colleghiamo Drappo e Palio?** Proposta: nei due sensi (il Drappo dichiara l'origine, il Palio rimanda al Drappo con una riga, un test tiene i rimandi). Alternative: solo nel Drappo; fondere i due in un sistema della corsa comune (sconsigliata: riscrive testo collaudato) |
+
+---
+
 ## §4 · Ordine di esecuzione, e perché questo
 
 ```
@@ -225,6 +259,7 @@ Tutto il resto è parallelizzabile.
 | A5 | `validate_booklets.py` |
 | A6 | `validate_modules.py` · rilettura con `rumblingstone-indagine` |
 | B1, B2 | `validate_standalone.py` |
+| C1, C2 | `pytest scripts/tests/test_misura_derivazione.py` · `validate_standalone.py` |
 
 **Tracciatura** (regola d'oro, ADR-0009): ogni lotto chiuso aggiorna **nello stesso
 commit** la checklist qui sotto, la riga di questo piano in `plans/INDEX.md` e una
@@ -257,6 +292,8 @@ riga in `plans/CHANGELOG.md`.
 - ⬜ **A6**: dossier delle piste per ARC-09 *(gated: ARC-07 finito al tavolo)*
 - ✅ **B1**: analisi di bilanciamento dei tre scontri del Drappo *(`06-VILLAIN` §7-bis: ~17-18 danni/round di gruppo, l'assalto dura 5-6 round, e Tesio cade in due colpi di Sfregio)*
 - ✅ **B2**: audit della ricchezza del Drappo *(`06-VILLAIN` §7-ter: si esce con quasi gli stessi soldi con cui si entra, ed è il punto del modulo)*
+- ✅ **C1**: misura della genealogia Drappo/Palio *(`plans/esperimenti/drappo-palio-2026-11-01/`: deriva dal Palio, 0 frasi in comune, 62% dell'impianto condiviso; hub del Drappo §10 corretto sulle contrade)*
+- ✅ **C2**: collegamento nei due sensi *(D1 decisa dal DM il 2026-11-01: riga «Versione derivata» in testa a `…-P2D-PALIO-CHANNATHGATE-AVVENTURA.md`, test `RimandiNeiDueSensi`)*
 
 ---
 
@@ -267,5 +304,5 @@ riga in `plans/CHANGELOG.md`.
 - [ADR-0020](adr/ADR-0020-edizione-da-stampa-su-un-secondo-binario.md): la catena di stampa, già condivisa
 - `skills/rumblingstone-indagine`: il vocabolario per A6
 - `skills/rumblingstone-playtest`: cosa misura se l'apparato funziona (ADR-0018: due tavoli veri)
-- `STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md`: il modello di A1
+- `10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md`: il modello di A1
 - `08_La Battaglia Di Hammerfist/ARC08-16-CUE-SONORI.md`: il modello dei suoni, e l'esempio di come si dichiara il debito

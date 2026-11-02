@@ -77,7 +77,7 @@ leggere.
 L'esito del duello con Skullcrusher (P5 Scena 5) colora il **tono del Rubino /
 della Corona** — eco narrativa, distinta dal carry-over **meccanico** B4:
 
-| Esito duello | Eco del Rubino ("Cuore della Leggenda") | Riflesso RP nell'ARC-08 |
+| Esito duello | Eco del Rubino («la Possanza Nanica») | Riflesso RP nell'ARC-08 |
 |---|---|---|
 | **UCCISO** | *"Nessuna pietà"* — la Corona è **severa, implacabile**: la leggenda è stata scritta col sangue | Thorik parla con autorità dura; i nani lo trattano da eroe-giudice |
 | **FERITO GRAVE** | Tono **equilibrio/dovere** — la ferita ricordata, non la morte | il più neutro; la Corona "pesa" ma non domina |

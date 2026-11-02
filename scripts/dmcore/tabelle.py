@@ -315,7 +315,7 @@ ADEPTO = _griglia("""
 #: SRD «Table: The Bard» — l'incantatore ibrido, spontaneo, che si ferma al 6°
 #: livello d'incantesimo. Ancore verificate in repo: 1, 5, 10, 15, 20
 #: (`dnd-35-srd/references/classes.md` §Bard).
-#: ⚠️ Il bardo serve davvero: `Bestiario/png/lomyn-redtongue-bardo4-cr3.md` è un
+#: ⚠️ Il bardo serve davvero: `Bestiario/png/lomyn-redtongue-bardo8-cr8.md` è un
 #: bardo, e fino al lotto I il generatore non sapeva costruirlo.
 BARDO = _griglia("""
 1: 2

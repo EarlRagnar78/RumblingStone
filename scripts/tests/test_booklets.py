@@ -483,6 +483,35 @@ class TestManifestDelRepo(unittest.TestCase):
                 errori, _ = controlla_manifest(m, self.schema)
                 self.assertEqual(errori, [])
 
+    def test_hb_md_vecchio_viene_segnalato(self):
+        # 2026-10-30: HTML rifatto, .hb.md di prima, e nessuno lo vedeva
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "c.md").write_text("# c\n\ntesto nuovo\n", encoding="utf-8")
+            mp = Path(d) / "X.manifest.json"
+            mp.write_text(json.dumps({"title": "x", "chapters": [{"title": "C", "file": "c.md"}]}),
+                          encoding="utf-8")
+            self.assertEqual(controlla_manifest(mp, self.schema)[0], [])  # senza .hb.md: libero
+            (Path(d) / "X.hb.md").write_text("vecchio\n", encoding="utf-8")
+            errori, _ = controlla_manifest(mp, self.schema)
+            self.assertTrue(any("X.hb.md non allineato" in e for e in errori), errori)
+
+    def test_griglia_disegnabile_stampata_viene_fermata(self):
+        # la griglia vera di S-2, nell'atlante di ARC-07
+        atlante = (REPO / "07_il Portale Della Forgia Eterna" / "Mappe" /
+                   "ARC07-MAPPE-DEFINITIVO.md").read_text(encoding="utf-8")
+        inizio = atlante.rfind("```", 0, atlante.index(" STANZA DELLA CORONA —"))
+        griglia = atlante[inizio:atlante.index("```", inizio + 3) + 3] + "\n"
+        with tempfile.TemporaryDirectory() as d:
+            mp = Path(d) / "X.manifest.json"
+            mp.write_text(json.dumps({"title": "x", "chapters": [{"title": "C", "file": "c.md"}]}),
+                          encoding="utf-8")
+            (Path(d) / "c.md").write_text(griglia, encoding="utf-8")
+            errori, _ = controlla_manifest(mp, self.schema)
+            self.assertTrue(any("stampata in c.md" in e for e in errori), errori)
+            (Path(d) / "c.md").write_text(f"<!-- apparato -->\n{griglia}<!-- /apparato -->\n",
+                                          encoding="utf-8")
+            self.assertEqual(controlla_manifest(mp, self.schema)[0], [])
+
     def test_una_chiave_inventata_viene_rifiutata(self):
         with tempfile.TemporaryDirectory() as d:
             cap = Path(d) / "c.md"
@@ -592,3 +621,16 @@ class TestColophon(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestSchemaAsciiStampato(unittest.TestCase):
+    def test_schema_a_riquadri_fuori_dall_apparato_viene_fermato(self):
+        import validate_booklets as V
+
+        disegno = "```\n" + "┌────────┐\n│ torre  │\n└────────┘\n" * 2 + "```\n"
+        with tempfile.TemporaryDirectory() as d:
+            m = Path(d) / "m.md"
+            m.write_text("# x\n\n" + disegno, encoding="utf-8")
+            self.assertEqual(len(V._schemi_ascii_stampati(m, "m.md")), 1)
+            m.write_text("# x\n\n<!-- apparato -->\n" + disegno + "<!-- /apparato -->\n", encoding="utf-8")
+            self.assertEqual(V._schemi_ascii_stampati(m, "m.md"), [])

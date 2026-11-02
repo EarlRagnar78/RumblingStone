@@ -34,8 +34,18 @@ Uso:
     python3 scripts/registro_letture.py --check               # il cancello
     python3 scripts/registro_letture.py --registra <master> --ruolo lettore \\
         --corsa <corsa>/<lettore> [--rapporto R.md]           # aggiunge una lettura
+    python3 scripts/registro_letture.py --registra <master> --ruolo developer \\
+        --intero [--impronta SHA256] [--rapporto R.md]        # lettura sul master intero
     python3 scripts/registro_letture.py --sola-forma <master> --ragione "…"
     python3 scripts/registro_letture.py --confronta <corsaA>/<l> <corsaB>/<l>
+
+**La lettura sul master intero** (D7 di MASTER-DEF, 2026-10-18). I giri su
+ARC-07 hanno letto il master intero, senza `lettura_a_scene.py`, e il registro
+non li vedeva. `--intero` li registra con `"modo": "intero"`: l'impronta e'
+quella del master di oggi, o quella data con `--impronta` se la lettura e'
+stata fatta su un testo di prima. E' un ripiego: la norma resta la lettura a
+scene, e il registro dice quale delle due e'. Il **developer** e' un ruolo che
+si registra ma non entra fra gli obbligatori del cancello.
 
 Solo libreria standard.
 Exit code: 0 = ok o avviso · 1 = un master sotto cancello ha una lettura da rifare · 2 = registro malformato.
@@ -55,6 +65,7 @@ REGISTRO = ROOT / "plans" / "letture-a-freddo.json"
 GLOB_MASTER = "ARC*-DEF-*.md"
 FUORI = ("_ARCHIVIO/", "build/", ".claude/", "homebrew/")
 RUOLI_OBBLIGATORI = ("lettore", "playtester", "dm")  # dm: D9 del 2026-10-01
+RUOLI = RUOLI_OBBLIGATORI + ("developer",)  # developer: D7 di MASTER-DEF, 2026-10-18
 STATI = ("corretto", "residuo", "domanda")
 _RIGA_RILIEVO = re.compile(r"^\|\s*(\d+)\s*\|.*?(🔴|🟠)", re.M)
 
@@ -155,6 +166,16 @@ def registra(rel: str, ruolo: str, corsa: Path, rapporto: "Path | None") -> dict
             "rilievi": rilievi_dal_rapporto(rapporto) if rapporto else []}
 
 
+def registra_intero(rel: str, ruolo: str, rapporto: "Path | None", impronta_letta: "str | None") -> dict:
+    corrente = impronta((ROOT / rel).read_text(encoding="utf-8"))
+    if impronta_letta is not None and not re.fullmatch(r"[0-9a-f]{64}", impronta_letta):
+        raise ValueError("--impronta vuole lo sha256 del testo letto, 64 cifre esadecimali")
+    return {"ruolo": ruolo, "data": dt.date.today().isoformat(), "modo": "intero",
+            "rapporto": rapporto.relative_to(ROOT).as_posix() if rapporto else None,
+            "corsa": None, "impronta": impronta_letta or corrente, "smesso_a": None,
+            "rilievi": rilievi_dal_rapporto(rapporto) if rapporto else []}
+
+
 def confronta(a: Path, b: Path) -> str:
     """Scena per scena, l'ago prima e dopo: dove la lettura e' cambiata."""
     def leggi(c: Path) -> "dict[str, str]":
@@ -175,9 +196,11 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--check", action="store_true", help="il cancello: avviso finche' il registro non e' popolato, poi bloccante")
     ap.add_argument("--registra", metavar="MASTER", help="aggiunge la lettura di una corsa di lettura_a_scene.py")
-    ap.add_argument("--ruolo", choices=("lettore", "playtester", "dm"))
+    ap.add_argument("--ruolo", choices=RUOLI)
     ap.add_argument("--corsa", type=Path, help="<corsa>/<lettore>, con stato.json")
     ap.add_argument("--rapporto", type=Path, help="il rapporto con la tabella dei rilievi")
+    ap.add_argument("--intero", action="store_true", help="la lettura e' sul master intero, senza corsa")
+    ap.add_argument("--impronta", help="con --intero: lo sha256 del testo letto, se non e' quello di oggi")
     ap.add_argument("--sola-forma", metavar="MASTER", help="dichiara che il master e' cambiato solo nella forma")
     ap.add_argument("--ragione")
     ap.add_argument("--confronta", nargs=2, type=Path, metavar=("A", "B"))
@@ -193,11 +216,12 @@ def main(argv=None) -> int:
         return 2
     voci = dati.setdefault("master", {})
     if a.registra:
-        if not (a.ruolo and a.corsa):
-            ap.error("--registra vuole --ruolo e --corsa")
+        if not a.ruolo or not (a.corsa or a.intero) or (a.corsa and a.intero):
+            ap.error("--registra vuole --ruolo e una fra --corsa e --intero")
         try:
-            voci.setdefault(a.registra, {"letture": [], "sola_forma": []})["letture"].append(
-                registra(a.registra, a.ruolo, a.corsa, a.rapporto))
+            lettura = (registra_intero(a.registra, a.ruolo, a.rapporto, a.impronta) if a.intero
+                       else registra(a.registra, a.ruolo, a.corsa, a.rapporto))
+            voci.setdefault(a.registra, {"letture": [], "sola_forma": []})["letture"].append(lettura)
         except ValueError as e:
             print(f"✗ {e}")
             return 1

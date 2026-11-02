@@ -1,0 +1,6 @@
+ARC-07 DEF: box 128 | parole mediana 54 (IQR 34-69) | >100 parole 0 | 30-70 69 | sensi mediana 2, ≤1 senso 52 | telecomando 0 | echi/box 0.5
+ARC07-DEF-1-PIANO-TERRA-: box 36 | parole mediana 52 (IQR 30-65) | >100 parole 0 | 30-70 20 | sensi mediana 2, ≤1 senso 17 | telecomando 0 | echi/box 0.7
+ARC07-DEF-2-RITORNO-E-AF: box 26 | parole mediana 58 (IQR 39-66) | >100 parole 0 | 30-70 15 | sensi mediana 2, ≤1 senso 9 | telecomando 0 | echi/box 0.6
+ARC07-DEF-3-RESURREZIONE: box 20 | parole mediana 38 (IQR 28-70) | >100 parole 0 | 30-70 10 | sensi mediana 2, ≤1 senso 9 | telecomando 0 | echi/box 0.3
+ARC07-DEF-4-VIAGGIO-MILL: box 37 | parole mediana 57 (IQR 38-72) | >100 parole 0 | 30-70 19 | sensi mediana 2, ≤1 senso 15 | telecomando 0 | echi/box 0.4
+ARC07-DEF-5-RITORNO-HAMM: box 9 | parole mediana 61 (IQR 40-72) | >100 parole 0 | 30-70 5 | sensi mediana 2, ≤1 senso 2 | telecomando 0 | echi/box 0.6

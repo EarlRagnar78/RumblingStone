@@ -30,7 +30,7 @@ Solo stdlib.
 from __future__ import annotations
 
 import os
-from pathlib import PurePosixPath
+from pathlib import Path, PurePosixPath
 
 import re
 import unicodedata

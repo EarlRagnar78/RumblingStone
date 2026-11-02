@@ -4,14 +4,16 @@
 > **Stato**: canonico — **master tattico completo della Sessione 1** (piano
 > ARC-08, lotto MAPPE-UC 2026-07-23). Copre in griglia ultra-clear TUTTE le
 > mappe della sessione: **1A-2** (Torrione, sotto), **1A-1** (Sentiero
-> Nascosto) e **1A-3** (Campo della Mano Rossa, griglia strategica).
+> Nascosto), **1A-3** (Campo della Mano Rossa, vista strategica) e **1D**
+> (il pendio dell'avanguardia).
 > Narrativa/immagini: `Atlante-Hammerfist-Mappe-COMPLETE.md` (master visivo).
 > Le griglie nuove sono compilate da JSON (Modalità 3, `compile_map_json.py`).
 
 ### Indice mappe di questo file
 1. **MAPPA 1A-2 REVISED** — Torrione di Vedetta (40×40, 1,5 m)
 2. **MAPPA 1A-1 REVISED** — Il Sentiero Nascosto (20×100, 1,5 m)
-3. **MAPPA 1A-3 REVISED** — Campo della Mano Rossa (40×50, 6 m/quadretto, strategica)
+3. **MAPPA 1A-3 REVISED** — Campo della Mano Rossa (60×60, 3 m/quadretto, strategica)
+4. **MAPPA 1D** — Il pendio sotto le mura, l'avanguardia (12×12, 1,5 m)
 
 ---
 
@@ -74,22 +76,25 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @mark 2 ; V37 ; Thorin Runaforte (Clr)
 @mark 3 ; W37 ; Nala Cantapietre (Brd)
 @mark 4 ; C37 ; Borin Ferropugno (Ftr)
-@mark 5 ; W26 ; Sergente Hobgoblin (sveglio, comando) (GS 2)
-@mark 6 ; V22 ; Guardia 1 (pattuglia) (GS 1)
-@mark 7 ; X28 ; Guardia 2 (pattuglia) (GS 1)
-@mark 8 ; V23 ; Dormienti Tenda 1 (GS 1)
-@mark 9 ; V25 ; Dormienti Tenda 2 (GS 1)
-@mark 10 ; X28 ; Dormienti Tenda 3 (GS 1)
+@mark 5 ; W26 ; Sergente Hobgoblin (sveglio, comando) (GS 6)
+@mark 6 ; V22 ; Guardia 1 (pattuglia) (GS 2)
+@mark 7 ; X28 ; Guardia 2 (pattuglia) (GS 2)
+@mark 8 ; V23 ; Dormienti Tenda 1 (GS 2)
+@mark 9 ; V25 ; Dormienti Tenda 2 (GS 2)
+@mark 10 ; X28 ; Dormienti Tenda 3 (GS 2)
 @path Dara scala il torrione (6 round) → osservazione +18 m ; U37 Q21 P11 ; #1d6fd8
 @path Pattuglia Guardia 1 (loop 2 min) ; V22 X22 X24 V24 loop ; #d62828
 @path Pattuglia Guardia 2 (loop 2 min, opposto) ; X28 V28 V26 X26 loop ; #d62828
-@zone K5-L7 ; Rocce di copertura (+4 CA; Nala vi si nasconde, Nascondersi CD 20)
+@zone K5-L7 ; Rocce di copertura (+4 CA; riparo per Nascondersi)
 @zone N10-Q13 ; Torrione di vedetta (18 m; Scalare CD 12, ~6 round; cima = copertura quasi totale, +2 circostanza a Osservare)
 @zone U22-V23 ; Tenda 1 (3 hobgoblin dormienti)
 @zone U24-V25 ; Tenda 2 (2 hobgoblin dormienti)
 @zone W27-X28 ; Tenda 3 (2 hobgoblin dormienti)
 @zone V25-X26 ; Fuoco del campo hobgoblin
 @tipo tattica esterno
+@luogo Torrione di Vedetta, valle di Hammerfist
+@quota 930 m ; s.l.m., la base del torrione
+@dislivello +60 m ; sulla piana del campo, 400 m a est
 ```
 
 ### VISTA 2: PROSPETTIVA 3D (Guardando da Sud verso Nord)
@@ -210,42 +215,35 @@ TEMPO SCALATA: 6 rounds @ Scalare CD 12
 - Posizione: Colonne 11-12, Righe 05-07
 - Size: 3m × 4.5m (2×3 quadrati)
 - Cover: +4 AC (partial cover)
-- Uso: Nala può nascondersi qui (Nascondersi CD 20)
+- Uso: Nala può nascondersi qui (Nascondersi contrapposto all'Osservare delle guardie, master Scena 4)
 
 ---
 
 ### 🎯 SEQUENZA TATTICA SUGGERITA:
 
+> Le prove e gli esiti sono quelli del master, Scena 4, Fase 2 e Fase 3
+> (`../ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md`). Questa sequenza li segue; dove non
+> coincidessero, vale il master.
+
 **FASE 1 - AVVICINAMENTO (Righe 37 → 30):**
-1. Tutti 4 PG: Nascondersi CD 20 muoversi da Riga 37 a Riga 30 (stealth approach)
-2. Borin: Rimane Riga 30, Colonna 10 (guarda pattuglie)
-3. Dara/Thorin/Nala: Continuano Riga 20 (più vicino torre/campo)
+1. Nascondersi e Muoversi Silenziosamente **contrapposti** a Osservare +2 e Ascoltare +3 delle guardie (il sergente +1/+1; chi dorme Ascoltare a −10). Il fuoco toglie 5 a Nascondersi entro 12 m.
+2. Borin e Thorin non salgono: restano al riparo delle rocce o girano largo sul fianco, per scelta del giocatore.
+3. Nala, entro 9 m dal fuoco, capisce il sergente con Ascoltare CD 15.
 
 **FASE 2 - SCALATA TORRE (Dara):**
 1. Dara: Muove da Col 21 Riga 20 → Col 14 Riga 10 (base torre)
-2. Inizia scalata: Scalare CD 12, 6 rounds salita
-3. Altri: Nascosti Riga 20, observano hobgoblin (lookout)
+2. Scalare CD 12, 6 round (Dara prende 10 e sale); in cima la merlatura dà copertura quasi totale verso la valle.
+3. Il timing sulle guardie è sotto (HAZARD PATROL PATTERN).
 
-**FASE 3 - OSSERVAZIONE (Dara Top +18m):**
-1. Dara TOP torre: Colonna 15, Riga 11 (+18m altezza)
-2. Guarda EST 400m: Campo nemico visibile
-3. Osservare CD 20: Conta precisa 900 unità
-4. Osservare CD 25: Identifica Grimjaw, Gorthak, Drago
-5. Osservare CD 30: Layout tattico completo, punti deboli
-6. Tempo: 10 minuti osservazione
+**FASE 3 - OSSERVAZIONE (Dara, cima a +18 m):**
+1. Dara ha **cinque round** prima che le guardie passino sotto la torre: una prova di Osservare a round, vale la migliore. Dopo uno scontro aperto, una prova sola.
+2. Nessuna penalità di distanza per contare un esercito; senza cannocchiale le CD salgono di 10. Nessun bonus per l'altezza.
+3. Gradini: **20** il conto (novecento, gli otto giganti); **25** i comandi (Grimjaw, Gorthak, i chierici di Tiamat); **30** la palude e il drago.
 
-**FASE 4 - SCELTA (Combat o Stealth):**
-
-**OPZIONE A - STEALTH (Success = Esfiltrare Non Visti):**
-- Dara: Discende torre (6 rounds)
-- Tutti: Retreat Riga 40 (foresta sud)
-- Result: Intelligence completa, nessun allarme
-
-**OPZIONE B - COMBAT (Eliminate Hobgoblins):**
-- Surprise Round: Se tutti Nascondersi CD 25 successo
-- Focus: Kill Sergente FIRST (prevents alarm horn)
-- Guardie: Respond Round 2 (7 dormenti wake)
-- Risk: Se horn suonato = 50 orchi reinforcements 10 rounds
+**FASE 4 - USCITA:**
+- **Pulito**: nessuno li vede, o chi li vede non torna e i corpi spariscono.
+- **Scontro**: EL 9 circa. Il sergente sotto i 25 pf fugge e, se ha un'azione, suona il corno.
+- **Corno**: dopo che Dara ha contato è «visti ma via»; prima, «allarme, e niente vista». Dopo il corno, cinquanta orchi in 10 round: si scappa per il canyon.
 
 ---
 
@@ -260,7 +258,7 @@ TEMPO SCALATA: 6 rounds @ Scalare CD 12
 
 **Torre Top → Campo Nemico (400m EST):**
 - From Torre (Col 15) to Enemy Camp: 400m EST (off-map)
-- Dara usa Osservare dai +18m di elevazione (+2 di circostanza per il terreno rialzato)
+- Dara usa Osservare dalla cima, senza bonus per l'altezza e senza penalità di distanza (master, Scena 4, Fase 3)
 
 **Dirupo → Torre:**
 - Cliff Edge (Col 10) → Torre Base (Col 14): 6m (4 quadrati)
@@ -301,9 +299,9 @@ Round 81-100: Col 24, Row 28 (loop restart)
 
 | Elemento | Dove | Effetto meccanico 3.5 |
 |---|---|---|
-| Torrione antico 🗼 | col 14-17, righe 10-13; cima +18 m | **Scalare CD 12** (~6 round di salita); dalla cima +18 m → *Osservare* con +2 di circostanza |
+| Torrione antico 🗼 | col 14-17, righe 10-13; cima +18 m | **Scalare CD 12** (6 round di salita); in cima copertura quasi totale verso la valle; *Osservare* a gradini 20 / 25 / 30, senza bonus d'altezza |
 | Dirupo Ovest ⛰️ | col 01-10, tutto il lato | **caduta 40 m = 40d6** (morte quasi certa); qualunque spinta a ovest è letale |
-| Rocce copertura 🟫 | col 11-12, righe 05-07 | **+4 CA** (copertura parziale); Nala vi si nasconde (Nascondersi CD 20) |
+| Rocce copertura 🟫 | col 11-12, righe 05-07 | **+4 CA** (copertura parziale); riparo per Nascondersi, contrapposto all'Osservare delle guardie |
 | Fuoco centrale 🔥 | col 22-24, righe 25-26 | luce intensa 6 m / fioca 12 m → **−5 a Nascondersi entro 12 m** |
 | Campo Hobgoblin | col 21-25, righe 20-28 | tende dei dormienti + fuoco (vedi TATTICHE) |
 
@@ -311,23 +309,25 @@ Round 81-100: Col 24, Row 28 (loop restart)
 
 ### ⚔️ TATTICHE (companion T5b, consolidato da SEQUENZA TATTICA + PATROL)
 
-- **10 Hobgoblin**: 1 **Sergente** sveglio al comando (col 23, riga 26); **2 Guardie** in pattuglia (loop orario/antiorario, 2 min/giro, pattern round-per-round nel file); **7 dormienti** in 3 tende.
-- **Avvicinamento furtivo**: i PG muovono da riga 37 in Nascondersi CD 20; Dara scala la torre col **timing sulle pattuglie** (iniziare quando entrambe le guardie sono sul lato opposto).
-- **Osservazione dalla cima** (Dara, +18 m): *Osservare* a soglie — CD 20 conta ~900 unità, CD 25 identifica Grimjaw/Gorthak/Drago, CD 30 layout e punti deboli.
-- **Se combattimento (Opzione B)**: sorpresa se tutti Nascondersi CD 25; **uccidere per primo il Sergente** per impedire il corno d'allarme. ⚠ **Corno suonato → 50 orchi di rinforzo in 10 round**: la soglia di fallimento della missione furtiva.
-- **Morale**: gli hobgoblin danno l'allarme e resistono se il Sergente vive; senza comando (Sergente morto) sono disorganizzati `[INFERRED]`.
+> Le prove e gli esiti sono quelli del master, Scena 4, Fase 2 (`../ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md`):
+> questa tabella li riassume.
+
+- **10 Hobgoblin**: 1 **Sergente** sveglio al fuoco (col 23, riga 26); **2 Guardie** in pattuglia (loop orario/antiorario, 2 min/giro, pattern round-per-round nel file); **7 dormienti** in 3 tende. Con tre pregen, sei più il sergente.
+- **Avvicinamento furtivo**: Nascondersi e Muoversi Silenziosamente **contrapposti** a guardie (+2/+3) e sergente (+1/+1); chi dorme tira Ascoltare a −10; il fuoco dà −5 a Nascondersi entro 12 m. Dara scala col **timing sulle pattuglie**.
+- **Osservazione dalla cima** (Dara): cinque round, una prova a round, gradini 20 / 25 / 30 come nel master; due round e una prova sola dopo uno scontro aperto.
+- **Se si combatte**: EL 9 circa. Il sergente sotto i **25 pf** fugge verso il campo e, se ha un'azione, suona il corno. ⚠ **Corno → 50 orchi in 10 round**: si scappa, non si combatte.
+- **Il prigioniero**: Intimidire CD 23 (scelta del modulo); dice da dove sale l'avanguardia e come combatte Gorthak.
 
 ### 🔄 EVOLUZIONE (companion T5b, consolidato dalle 4 fasi)
 
 | Stato | Trigger | Cosa cambia | Effetto |
 |---|---|---|---|
-| A — Avvicinamento (righe 37→30) | Nascondersi CD 20 | i PG si posizionano, Borin copre le pattuglie | nessun allarme |
-| B — Scalata + osservazione | timing pattuglie | Dara sale (6 round), osserva il campo nemico | intelligence acquisita per soglie |
-| C — Stealth (successo) | esfiltrazione non vista | ritiro a riga 40 | intel completa, **nessun allarme** |
-| C' — Combat | i PG ingaggiano | Sergente vivo = corno → **50 orchi in 10 round** | scontro che scala rapidamente |
+| A — Avvicinamento (righe 37→30) | prove contrapposte | i PG si posizionano; Borin e Thorin restano giù | nessun allarme |
+| B — Scalata + osservazione | timing pattuglie | Dara sale (6 round), cinque round di Osservare | gradino 20 / 25 / 30 |
+| C — Pulito | nessuno li vede, o i corpi spariscono | ritiro per il canyon | «Eliminazione silenziosa» |
+| C' — Scontro | i PG ingaggiano | il sergente fugge sotto i 25 pf | se suona dopo il conto «visti ma via», prima «allarme, e niente vista» |
 
-> Esiti aperti (D13): stealth o combattimento, e se il corno suona, dipende
-> dai tiri (Nascondersi/Osservare) e dalle scelte dei PG, non da un copione.
+> Esiti aperti: dipendono dai tiri e dalle scelte dei PG, non da un copione.
 
 
 ---
@@ -335,8 +335,8 @@ Round 81-100: Col 24, Row 28 (loop restart)
 ## MAPPA 1A-1 REVISED: IL SENTIERO NASCOSTO - ULTRA CHIARA
 **SVG**: `rendered/Hammerfist-L1-REVISED-Ultra-Clear_map02_mappa-1a-1-revised-il-sentiero-nascosto-canyon-c.svg` (rigenerare dopo ogni modifica)
 **Dimensioni:** 30m × 150m (20 colonne × 100 righe, 1,5 m/quadretto)
-**Incontro:** infiltrazione — 3 Orchi su Worg (pattuglia, GS 3 cad.)
-**Quando si usa:** Sessione 1, Incontro 1A FASE 1 (guida: `../ARC08-01-GUIDA-DM.md` § Incontro 1A)
+**Incontro:** infiltrazione — 3 goblin cavalcatori su 3 worg (pattuglia, goblin GS 5, worg da 6 DV; EL 8)
+**Quando si usa:** Sessione 1, Incontro 1A FASE 1 (master: `../ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md`, Scena 4)
 **Origine griglia:** compilata da JSON (Modalità 3) — coordinate identiche al Lotto-1 storico (K52/L52/L53, rocce 1-7, partenza riga 99)
 
 ### 🎯 OBIETTIVO PG:
@@ -356,11 +356,11 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T
 07 ⛰ ⛰ 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 ⛰ ⛰
 08 ⛰ ⛰ 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 ⛰ ⛰
 09 ⛰ ⛰ 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 ⛰ ⛰
-10 ⛰ ⛰ 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟫 🟫 🟩 🟩 🟩 🟩 ⛰ ⛰ ⛰ ⛰
-11 ⛰ ⛰ 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟫 🟫 🟩 🟩 🟩 🟩 ⛰ ⛰ ⛰ ⛰
-12 ⛰ ⛰ 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟫 🟫 🟩 🟩 🟩 🟩 ⛰ ⛰ ⛰ ⛰
-13 ⛰ ⛰ 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟫 🟫 🟩 🟩 🟩 🟩 ⛰ ⛰ ⛰ ⛰
-14 ⛰ ⛰ 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟫 🟫 🟩 🟩 🟩 🟩 ⛰ ⛰ ⛰ ⛰
+10 ⛰ ⛰ ⛰ ⛰ ⛰ ⛰ ⛰ 🟩 🟫 🟫 🟫 🟫 🟩 ⛰ ⛰ ⛰ ⛰ ⛰ ⛰ ⛰
+11 ⛰ ⛰ ⛰ ⛰ ⛰ ⛰ ⛰ 🟩 🟫 🟫 🟫 🟫 🟩 ⛰ ⛰ ⛰ ⛰ ⛰ ⛰ ⛰
+12 ⛰ ⛰ ⛰ ⛰ ⛰ ⛰ ⛰ 🟩 🟫 🟫 🟫 🟫 🟩 ⛰ ⛰ ⛰ ⛰ ⛰ ⛰ ⛰
+13 ⛰ ⛰ ⛰ ⛰ ⛰ ⛰ ⛰ 🟩 🟫 🟫 🟫 🟫 🟩 ⛰ ⛰ ⛰ ⛰ ⛰ ⛰ ⛰
+14 ⛰ ⛰ ⛰ ⛰ ⛰ ⛰ ⛰ 🟩 🟫 🟫 🟫 🟫 🟩 ⛰ ⛰ ⛰ ⛰ ⛰ ⛰ ⛰
 15 ⛰ ⛰ 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟫 🟫 🟩 🪨 🪨 🪨 🟩 🟩 ⛰ ⛰
 16 ⛰ ⛰ 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟫 🟫 🟩 🪨 🪨 🪨 🟩 🟩 ⛰ ⛰
 17 ⛰ ⛰ 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟫 🟫 🟩 🪨 🪨 🪨 🟩 🟩 ⛰ ⛰
@@ -449,15 +449,15 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T
 100 ⛰ ⛰ ⛰ ⛰ ⛰ 🟩 🟩 🟩 🟫 🟫 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 ⛰ ⛰
 
 @north N
-@mark 1 ; K52 ; Worg Rider 1 (Orco su Worg, GS 3)
-@mark 2 ; L52 ; Worg Rider 2 (Orco su Worg, GS 3)
-@mark 3 ; L53 ; Worg Rider Capo (Orco su Worg, GS 3)
+@mark 1 ; K52 ; Goblin su worg 1 (goblin guerriero 5°, GS 5)
+@mark 2 ; L52 ; Goblin su worg 2 (goblin guerriero 5°, GS 5)
+@mark 3 ; L53 ; Goblin su worg, il capo (goblin guerriero 5°, GS 5)
 @mark 4 ; H99 ; Borin Ferropugno (Ftr/Campione nanico)
 @mark 5 ; I99 ; Dara Occhiolesto (Rgr)
 @mark 6 ; J99 ; Thorin Runaforte (Clr)
 @mark 7 ; K99 ; Nala Cantapietre (Brd)
 @path Pattuglia Worg (loop 5 min) ; K50 K75 K95 loop ; #d62828
-@path Rotta furtiva PG (sud→nord) ; J99 I93 O84 I74 P62 I40 O17 J6 ; #1d6fd8
+@path Rotta furtiva PG (sud→nord) ; J99 I93 O84 I74 P62 I40 O17 L14 J6 ; #1d6fd8
 @zone H5-L5 ; Roccia 1 (H05-L05): copertura totale +8 CA
 @zone N15-P17 ; Roccia 2 (N15-P17): copertura parziale +4 CA
 @zone G38-I40 ; Roccia 3 (G38-I40): copertura totale +8 CA
@@ -466,11 +466,16 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T
 @zone N82-P84 ; Roccia 6 (N82-P84): copertura parziale +4 CA
 @zone G92-I94 ; Roccia 7 (G92-I94): copertura totale +8 CA
 @tipo tattica esterno
+@luogo Sentiero Nascosto, canyon di Hammerfist
+@quota 900 m ; s.l.m., il fondo del canyon a metà salita
+@dislivello +30 m ; sulla piana, alla bocca sud del canyon
+@deroga fazioni/lontane ; è una ricognizione furtiva: la pattuglia di worg gira lontana apposta, e il contatto è il fallimento della scena
+@deroga spazio/disperso ; il canyon è lungo 150 m perché la scena è la risalita, non lo scontro: si gioca a tratti, riga per riga
 ```
 
 ### 📍 POSIZIONI PRECISE CON COORDINATE:
 
-**3 ORCHI SU WORG (pattuglia circolare, loop 5 minuti):**
+**3 GOBLIN SU WORG (pattuglia circolare, loop 5 minuti):**
 - **Worg 1** (fiancheggiatore sinistro): **K52**
 - **Worg 2** (fiancheggiatore destro): **L52**
 - **Worg 3 — CAPO** (porta il corno d'allarme): **L53**
@@ -490,16 +495,18 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T
 | 6 | N82-P84 | parziale +4 CA |
 | 7 | G92-I94 | totale +8 CA |
 
-### 🎯 SFIDA FURTIVA (skill challenge):
-- **4 successi prima di 3 fallimenti**; 1 prova ogni 15 m di avanzata (10 quadretti)
-- **Nascondersi CD 18** (evitare avvistamento) + **Muoversi Silenziosamente CD 20** (evitare suoni)
-- Bonus: +4 Nascondersi dietro le rocce; +2 al gruppo se 1 PG fa da vedetta; **+5 CD** MS sul terreno difficile
-- La finestra sicura per attraversare la riga 52 è quando la pattuglia è nel terzo più lontano del loop (K75-K95)
+### 🎯 PROVE FURTIVE (come nel master, Scena 4, Fase 1):
+
+> Le prove e gli esiti sono quelli del master (`../ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md`):
+> la sfida a successi della prima stesura è superata.
+
+- Ognuno tira **Nascondersi** contro l'Osservare migliore della pattuglia (il worg, +7) e **Muoversi Silenziosamente** contro l'Ascoltare (il worg, +7); il DM tira una volta per tutta la pattuglia. Nascondersi chiede un riparo: fra una roccia e l'altra chi è allo scoperto è visto, se la pattuglia guarda da quella parte.
+- **La finestra**: con Sopravvivenza CD 15 Dara legge il vento e il giro; il gruppo passa quando i worg sono in fondo al giro (K75-K95), a più di 30 m e sottovento: **−10** all'Osservare e all'Ascoltare della pattuglia, e il fiuto fuori raggio. Senza la finestra si passa a 6 m, senza penalità.
 
 ### 🔍 DISTANZE CHIAVE:
 - Partenza PG (riga 99) → linea pattuglia (riga 52): **~70 m (47 quadretti)** = 4-5 prove furtive
 - Linea pattuglia → uscita nord (riga 01): **~76 m (51 quadretti)**
-- Olfatto dei Worg: individuano odori entro **9 m (6 quadretti)** — non attraversare sopravento
+- Fiuto dei worg: **9 m** (6 quadretti); **18 m** se il vento porta l'odore verso di loro, **4,5 m** se lo porta via. Il fiuto dice presenza e direzione, non il quadretto (master, Scena 4)
 
 ### 🌍 AMBIENTE (companion — regole, non prosa)
 
@@ -508,141 +515,213 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T
 | Pareti del canyon ⛰ | colonne A-B e S-T (+ gole a nord) | impraticabili senza Scalare CD 20; bloccano linea di vista |
 | Sentiero 🟫 | colonne I-L, tutta la lunghezza | percorso naturale: veloce ma esposto |
 | Rocce 🪨 (1-7) | tabella sopra | copertura +4/+8 CA; +4 a Nascondersi |
-| Strozzatura | righe 10-14 (est) | passaggio obbligato largo ~9 m |
-| Crepuscolo | tutta la mappa | luce fioca: occultamento 20% oltre 18 m `[INFERRED]` |
+| Strozzatura | righe 10-14, colonne H-M | passaggio obbligato largo 9 m (6 quadretti) fra pareti di roccia |
+| Luce | tutta la mappa | mattina presto, luce piena: nessun occultamento, la scurovisione non conta |
 
 ### ⚔️ TATTICHE (pattuglia Worg)
 
-- **Routine:** loop K50↔K95 in 5 minuti; Worg 3 (capo) resta 1 quadretto dietro i fiancheggiatori.
-- **Se un PG è avvistato:** i 3 caricano il bersaglio più vicino; il capo suona il **corno al round 2** se lo scontro non è finito.
-- **Corno suonato → 50+ orchi di rinforzo in ~5 minuti** (50 round): è la soglia di fallimento della missione.
-- **Eliminazione silenziosa:** uccidere PRIMA Worg 3 (corno); i worg senza cavaliere fuggono con morale <50% `[INFERRED]`.
+> Le prove e gli esiti sono quelli del master, Scena 4, Fase 1 (`../ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md`):
+> questa tabella li riassume.
+
+- **Routine:** avanti e indietro fra le righe 50 e 95, un giro ogni cinque minuti; Worg 3 (il capo, piuma rossa) resta 1 quadretto dietro i fiancheggiatori.
+- **Se il fiuto scatta:** la pattuglia si ferma, il worg annusa, e per un round Osservare e Ascoltare a **+5**. Chi è invisibile non è trovato, ma la pattuglia resta lì un altro giro.
+- **Se un PG è visto:** i goblin non caricano. Il primo fischia, i worg si mettono di traverso sul sentiero, i goblin tirano con l'arco. Il capo suona il corno se ha un round libero; se no gira il worg e scappa verso il campo, 60 m a round.
+- **Eliminazione silenziosa:** nessuno fugge e i corpi si nascondono (Forza CD 10, un minuto a corpo); una pattuglia che non rientra viene cercata.
 
 ### 🔄 EVOLUZIONE
 
 | Stato | Trigger | Cosa cambia | Effetto |
 |---|---|---|---|
-| A — Routine | — | pattuglia in loop | infiltrazione possibile |
-| B — Allerta | 1 fallimento furtivo | pattuglia converge sul punto del rumore, Osservare +5 | seconda prova o scontro |
-| C — Scontro | PG visti | carica dei 3 worg; corno al round 2 | GS 3×3, gestibile |
-| D — Allarme | corno suonato | 50+ orchi in 5 min dal campo NE | missione furtiva fallita: ritirata o TPK |
+| A — Routine | — | pattuglia in giro | passaggio possibile, meglio con la finestra |
+| B — Fiuto | qualcuno passa nel raggio | la pattuglia si ferma, +5 per un round | seconda prova |
+| C — Visti | prova persa o allo scoperto | fischio, worg di traverso, archi | il capo suona o scappa |
+| D — Fuga o corno | il capo esce dal canyon, o suona | l'allarme arriva al campo | la ricognizione finisce al massimo «visti ma via» |
 
-> Esiti aperti (D13): dipende dai tiri e dal timing sulla pattuglia, non dal copione.
+> Esiti aperti: dipendono dai tiri e dal timing sulla pattuglia, non dal copione.
 
 ---
 
-## MAPPA 1A-3 REVISED: CAMPO DELLA MANO ROSSA - GRIGLIA STRATEGICA
-**SVG**: `rendered/Hammerfist-L1-REVISED-Ultra-Clear_map03_mappa-1a-3-revised-campo-della-mano-rossa-grigli.svg` (rigenerare dopo ogni modifica)
-**Dimensioni:** 240m × 300m (40 colonne × 50 righe) — **scala in deroga 6 m/quadretto (A4)**
-  ⚠️ Vista strategica dal Torrione (400 m): serve all'intelligence e alla regia, **NON al combattimento a quadretti**. Non mischiare quadretti di mappe a scale diverse.
+## MAPPA 1A-3 REVISED: CAMPO DELLA MANO ROSSA - VISTA STRATEGICA
+**SVG**: `rendered/Hammerfist-L1-REVISED-Ultra-Clear_map03_mappa-1a-3-revised-campo-della-mano-rossa-vista.svg` (rigenerare dopo ogni modifica)
+**Dimensioni:** 180m × 180m (60 colonne × 60 righe · **3 m/quadretto**, mappa strategica: `@tipo strategica`)
+**Contratto:** `fortezza-json/HF-1A3-campo-mano-rossa.json` (rifatta il 2026-10-22 sul modello della M7-C di ARC-07)
+**Dove sta:** sulla piana a 870 m s.l.m. `[INFERRED]`, a qualche miglio dalle mura (le sentinelle vedono solo polvere e fuochi: DEF-1, Zona 1). Il Torrione la guarda da 400 m. Quando l'assedio comincia, l'orda si riaccampa con lo stesso ordine a 500 m-1 km dalle mura, fuori tiro d'arco lungo (~330 m), e sale per la strada a tornanti (L2, MAPPA 1).
+  ⚠️ Vista strategica dal Torrione: serve all'intelligence e alla regia, **NON al combattimento a quadretti**. Le tende sono alla loro misura: il contubernium hobgoblin 3 × 3 m è un quadretto, la tenda nera del comando 18 × 12 m col telo. Non mischiare quadretti di mappe a scale diverse.
 **Incontro:** nessuno — osservazione (Dara col cannocchiale, Incontro 1A FASE 3)
-**Quando si usa:** Sessione 1 (guida: `../ARC08-01-GUIDA-DM.md` § Incontro 1A Fase 3); stessa disposizione, vista dal lato fortezza, in `Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 1 REVISED
+**Quando si usa:** Sessione 1 (master: `../ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md`, Scena 4, Fase 3); stessa disposizione, vista dal lato fortezza, in `Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 1 REVISED
 
 ### 🎯 OBIETTIVO PG:
 **Dara osserva e conta: ogni soglia di Osservare superata = intelligence in più per la difesa (Sessione 2).**
 
-### VISTA 1: GRIGLIA STRATEGICA CON COORDINATE (40×50, 1 quadretto = 6 m)
+### VISTA 1: GRIGLIA STRATEGICA CON COORDINATE (60×60, 1 quadretto = 3 m)
 
 ```
-MAPPA 1A-3 REVISED: Campo della Mano Rossa (griglia strategica)
-COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF AG AH AI AJ AK AL AM AN
-01 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-02 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-03 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-04 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-05 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-06 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-07 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-08 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-09 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-10 🟩 🟩 🔴 🔴 🔴 🔴 🔴 🔴 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔴 🔴 🔴 🔴 🔴 🔴 🟩 🟩
-11 🟩 🟩 🔴 🔴 🔴 🔴 🔴 🔴 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔴 🔴 🔴 🔴 🔴 🔴 🟩 🟩
-12 🟩 🟩 🔴 🔴 🔴 🔴 🔴 🔴 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔴 🔴 🔴 🔴 🔴 🔴 🟩 🟩
-13 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-14 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-15 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-16 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-17 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-18 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-19 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-20 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-21 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-22 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-23 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-24 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-25 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-26 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟡 🟡 🟡 🟡 🟡 🟩 🟩 🟩 ⚫ 🟩 🟩 🟡 🟡 🟡 🟡 🟡 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-27 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟡 🟡 🟡 🟡 🟡 🟩 🟩 🟩 🟩 🟩 🟩 🟡 🟡 🟡 🟡 🟡 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-28 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-29 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 ⛺ 🟩 🟩 ⚫ 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-30 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 ⛺ ⛺ 🔴 🔴 🔴 🔴 🔴 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-31 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-32 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-33 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-34 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟣 🟣 🟣 🟣 🟣 🟣 🟣 🟣 🟩 🟩 🟩 🟩 🟣 🟣 🟣 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-35 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟣 🟣 🟣 🟣 🟣 🟣 🟣 🟣 🟩 🟩 🟩 🟩 🟣 🟣 🟣 🟩 🟩 🟩 🎯 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-36 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-37 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-38 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-39 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-40 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-41 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-42 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-43 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-44 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-45 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-46 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-47 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-48 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟣 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-49 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
-50 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+MAPPA 1A-3 REVISED: Campo della Mano Rossa (vista strategica)
+DIMENSIONI: 60 colonne × 60 righe · 3 m/quadretto
+COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF AG AH AI AJ AK AL AM AN AO AP AQ AR AS AT AU AV AW AX AY AZ BA BB BC BD BE BF BG BH
+01 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+02 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+03 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+04 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+05 🟩 🟩 🟩 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+06 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+07 🟩 🟩 🟩 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+08 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+09 🧱 🧱 🧱 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+10 🧱 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+11 🧱 🔴 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+12 🧱 🔴 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+13 🧱 🔴 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+14 🧱 🔴 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+15 🧱 🔴 🟩 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+16 🧱 🔴 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+17 🧱 🔴 🟩 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+18 🧱 🔴 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+19 🧱 🟩 🟩 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+20 🧱 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+21 🧱 🧱 🧱 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+22 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+23 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+24 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+25 🟩 🟩 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟩 🟩
+26 🟩 🟩 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟩 🟩
+27 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+28 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+29 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+30 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔴 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩
+31 🟩 🟩 🟩 🟩 🟩 🔥 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔥 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🟫 🟫 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔥 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔥 🟩 🟩 🟩 🟩 🟩
+32 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🧱 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🧱 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+33 🟩 🟩 🟩 🟩 ⛺ 🟩 🟩 ⛺ 🟩 🟩 🟩 🟩 ⛺ 🟩 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🧱 🟫 🟫 ⛺ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⛺ 🟫 🟫 🧱 🟩 🟩 🟩 🟩 🟩 🟩 ⛺ 🟩 🟩 ⛺ 🟩 🟩 🟩 🟩 ⛺ 🟩 🟩 ⛺ 🟩 🟩 🟩
+34 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🧱 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🧱 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+35 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🧱 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🧱 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+36 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🧱 🟫 🟫 🟫 🟫 🟫 🎪 🎪 🎪 🎪 🎪 🎪 🟫 🟫 🟫 🟫 🟫 🧱 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+37 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟫 🟫 🟫 🎪 🎪 🎪 🎪 🎪 🎪 🟫 🟫 🟫 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+38 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟫 🟫 🟫 🎪 🎪 🎪 🎪 🎪 🎪 🟫 🟫 🟫 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩
+39 🟩 🟩 🟩 🟩 🟩 🔥 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔥 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🧱 🟫 🟫 🟫 🟫 🟫 🎪 🎪 🎪 🎪 🎪 🎪 🟫 🟫 🟫 🟫 🟫 🧱 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔥 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔥 🟩 🟩 🟩 🟩 🟩
+40 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🧱 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🧱 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+41 🟩 🟩 🟩 🟩 ⛺ 🟩 🟩 ⛺ 🟩 🟩 🟩 🟩 ⛺ 🟩 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🧱 🟫 🟫 🔥 🟫 🟫 🟫 🟫 🟫 ⚫ 🟫 🟫 🟫 🟫 🔥 🟫 🟫 🧱 🟩 🟩 🟩 🟩 🟩 🟩 ⛺ 🟩 🟩 ⛺ 🟩 🟩 🟩 🟩 ⛺ 🟩 🟩 ⛺ 🟩 🟩 🟩
+42 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🧱 🟫 🟫 🟫 🟫 🟫 🟫 🔴 🔴 🔴 🔴 🟫 🟫 🟫 🟫 🟫 🟫 🧱 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+43 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🧱 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🧱 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+44 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🟫 🟫 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+45 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+46 🟩 🟩 🟩 🟩 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+47 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔥 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🎯 🟩 🎯 🟩 🟩 🟫 🟫 🟩 🟩 🎯 🟩 🎯 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔥 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+48 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 ⚫ 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+49 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 ⛺ 🟩 🟩 ⛺ 🟩 🟩 🟩 🟩 🛢 🟩 🛢 🟩 🛢 🟩 🛢 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🛢 🟩 🛢 🟩 🛢 🟩 🛢 🟩 🟩 🟩 🟩 🟩 ⛺ 🟩 🟩 ⛺ 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+50 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+51 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟣 🟣 🟣 🟣 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟣 🟣 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+52 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟣 🟣 🟣 🟣 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+53 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+54 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧
+55 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧
+56 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 ⚫ 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧
+57 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧
+58 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟣 🟣 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧
+59 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟣 🟣 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧
+60 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧 💧
 
 @north N
-@mark 1 ; F11 ; Worg Riders (fianco sinistro) (GS 3 cad.)
-@mark 2 ; AJ11 ; Worg Riders (fianco destro) (GS 3 cad.)
-@mark 3 ; U15 ; Fanteria Orchesca (GS 1/2)
-@mark 4 ; U18 ; Fanteria Hobgoblin Standard (GS 1/2)
-@mark 5 ; U22 ; Hobgoblin Guerrieri Veterani + Sergenti (GS 1-2)
-@mark 6 ; U26 ; Gorthak il Trifronte (Ettin 3 teste, boss)
-@mark 7 ; O27 ; Doom Hand Warpriests (Chierici)
-@mark 8 ; Z27 ; Shamani Draconici (Adepti)
-@mark 9 ; U29 ; Generale Grimjaw (Orog War/Signore della Guerra)
-@mark 10 ; U30 ; Orog Guardie Nere (Elite)
-@mark 11 ; O35 ; Giganti delle Colline (GS 7 cad.)
-@mark 12 ; X35 ; Ettin (GS 6 cad.)
-@mark 13 ; U43 ; War Adepts (Incantatori)
-@mark 14 ; U48 ; Fauci di Palude + Cavaliere Hobgoblin (Drago Nero Adulto Avanzato)
-@path Pattuglia perimetrale worg (loop) ; D9 AK9 AK47 D47 loop ; #d62828
-@tipo tattica esterno
+@tipo strategica esterno
+@luogo Campo della Mano Rossa, piana di Hammerfist
+@quota 870 m ; s.l.m., la piana
+@dislivello 0 m ; sulla piana: Hammerfist è 80 m più in alto, a qualche miglio a nord
+@mark 1 ; AE41 ; Generale Grimjaw davanti alla tenda nera, coi capitani (Orog War/Signore della Guerra)
+@mark 2 ; AE42 ; Orog Guardie Nere (élite)
+@mark 3 ; AD48 ; Gorthak il Trifronte fra le catapulte (Ettin 3 teste, boss)
+@mark 4 ; U52 ; Giganti delle Colline, seduti per terra dietro i carri (GS 7 cad.)
+@mark 5 ; AN51 ; Ettin (GS 6 cad.)
+@mark 6 ; B15 ; Worg nel recinto, coi cavalieri goblin (GS 3 cad.)
+@mark 7 ; AE23 ; Doom Hand Warpriests e Shamani Draconici, sparsi fra i blocchi (chierici e adepti)
+@mark 8 ; AC30 ; Sentinelle hobgoblin ai varchi dello steccato
+@mark 9 ; AE59 ; Fauci di Palude, sommerso nell'acqua nera (Drago Nero Adulto Avanzato)
+@mark 10 ; AH56 ; Il cavaliere hobgoblin, in piedi sulla riva accanto alla sella
+@path Pattuglia perimetrale worg (loop) ; B3 BG3 BG52 B52 loop ; #d62828
+@zone AB36-AG39 ; La tenda nera di Grimjaw: padiglione a tre pali, 18 × 12 m col telo, sola in mezzo alla piazza
 ```
 
-### 📍 COMPOSIZIONE ESERCITO (900 unità, per fascia di distanza dal fossato):
+### 📍 COMPOSIZIONE DEL CAMPO (900 unità, per quartiere):
 
-| Fascia | Unità | Quantità | Note tattiche |
-|---|---|---|---|
-| 300 m (righe 47-50) | **Fauci di Palude** + Cavaliere Hobgoblin | 1 | drago nero adulto avanzato, QUOTA 45 m, pattuglia circolare |
-| 250 m (righe 42-43) | War Adepts | 20 | artiglieria magica sparsa (*Palla di Fuoco*, *Raggi*) |
-| 200 m (righe 34-35) | Giganti delle Colline + Ettin + 4 catapulte | 8+2 | massi: gittata 120 m, 3d8 |
-| 170 m (righe 29-30) | **Generale Grimjaw** + 4 Orog Guardie Nere | 5 | tenda comando, stendardi |
-| 150 m (righe 26-27) | **Gorthak** + 15 Warpriests + 10 Shamani | 26 | comando d'assalto e supporto |
-| 120 m (righe 21-23) | Hobgoblin Veterani + Sergenti | 230 | 2ª ondata pesante |
-| 100 m (righe 17-19) | Fanteria Hobgoblin Standard | 300 | 1ª ondata principale |
-| 80-90 m (righe 14-15) | Fanteria Orchesca | 150 | carne da cannone |
-| 60 m (righe 10-12) | Worg Riders (2 fianchi) | 25+25 | cavalleria d'aggiramento |
+| Quartiere | Dove | Chi | Quantità | Come si riconosce |
+|---|---|---|---|---|
+| Quartiere hobgoblin | sei centurie, E-U e AK-BA righe 05-19 | Fanteria Hobgoblin Standard + Veterani e Sergenti | 300 + 230 | 72 tende da 3 × 3 m in file, otto soldati a tenda, corsie da 3 m e vie da 6 m: «blocchi di cento, in quadrato» |
+| Via principale e via trasversale | AD-AE (nord-sud), righe 25-26 (est-ovest) | — | — | larghe 6 m, la principale sale verso la fortezza |
+| Piazza del comando | steccato V-AM righe 31-44, quattro varchi | **Generale Grimjaw** (AE41) + 4 Orog Guardie Nere | 5 | la tenda nera AB-AG 36-39, sola nella piazza sgombra; due tende delle guardie a 9 m, i falò lontani dal telo |
+| Chierici e adepti | sparsi fra i blocchi, AA-AH riga 23 | Doom Hand Warpriests + Shamani Draconici | 15 + 10 | tonache con la mano rossa dipinta |
+| Clan degli orchi | dieci fuochi ai fianchi della piazza, D-P e AS-BE righe 30-50 | Fanteria Orchesca | 150 | ripari di pelle storti attorno al fuoco della banda, un clan per fuoco |
+| Recinto dei worg | A-C righe 09-21 | Worg Riders | 25 + 25 | steccato contro il fianco ovest |
+| Parco d'assedio | S-AR righe 47-52 | **Gorthak** (AD48), 4 catapulte, carri e botti dei viveri, 8 Giganti delle Colline e 2 Ettin seduti dietro i carri | 1 + 8 + 2 | le figure «alte quanto le tende in piedi» |
+| War Adepts | con i chierici, la notte nelle tende dei capi | War Adepts | 20 | — |
+| La palude | righe 54-60 | **Fauci di Palude** sommerso (AD58), il cavaliere hobgoblin sulla riva (AH56) | 1 + 1 | l'acqua che si muove contro corrente |
 
-### 🎯 INTELLIGENCE A SOGLIE (Dara, Osservare — 10 minuti di osservazione):
-- **CD 15:** conta approssimativa (800-1000 unità)
-- **CD 20:** conta precisa (900), identifica gli 8 giganti → **+2 Iniziativa di massa dei nani**
-- **CD 25:** identifica tutti i comandanti (Grimjaw, Gorthak, il drago)
-- **CD 30:** layout tattico completo e punti deboli
-- **Sopravvivenza CD 22:** identifica le rotte d'approccio nemiche
+La disposizione di battaglia del Giorno 1, coi reparti sul pendio a 60-300 m dal fossato, è la MAPPA 1 REVISED di `Hammerfist-L2-REVISED-Ultra-Clear.md`: all'alba l'orda sale dagli accampamenti dell'assedio, a 500 m-1 km dalle mura, per la strada a tornanti e si schiera lì.
+
+### 🎯 INTELLIGENCE A SOGLIE (Dara, Osservare — cinque round dalla cima):
+
+> Le prove e gli esiti sono quelli del master, Scena 4, Fase 3 (`../ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md`),
+> coi suoi box: le soglie della prima stesura sono superate.
+
+- **Sotto 20:** la massa, senza numeri: «sembrano migliaia».
+- **CD 20:** il conto, novecento, e gli otto giganti dietro i carri.
+- **CD 25:** i comandi, cioè Grimjaw alla tenda nera, Gorthak fra le catapulte, i chierici di Tiamat; è l'«Intelligence completa», la leva del Giorno 1.
+- **CD 30:** la palude, l'ombra del drago e il suo cavaliere.
+- Nessuna penalità di distanza; senza cannocchiale le CD salgono di 10. Le rotte d'approccio, il pendio davanti al Cancello, si vedono senza prova.
 
 ### 🌍 AMBIENTE / ⚔️ TATTICHE / 🔄 EVOLUZIONE
-- **Ambiente:** mappa d'intelligence — nessun terreno giocato; la pattuglia perimetrale worg (rotta tratteggiata) è l'unico elemento dinamico che può sorprendere osservatori troppo vicini.
-- **Tattiche:** l'ordine di battaglia sopra È la tattica nemica del Giorno 1 (bande da retro a fronte); vedi MAPPA 1 REVISED (L2) per la versione di regia con fasi e movimenti.
+- **Ambiente:** mappa d'intelligence — nessun terreno giocato; la pattuglia perimetrale worg (rotta tratteggiata) è l'unico elemento dinamico che può sorprendere osservatori troppo vicini. La piana è aperta: chi scende al campo di notte è visto (DEF-1, Scena 4).
+- **Tattiche:** il campo dice l'ordine di battaglia: gli hobgoblin in testa alla strada, gli orchi ai fianchi, il parco d'assedio e i giganti in coda; vedi MAPPA 1 REVISED (L2) per lo schieramento sul pendio con fasi e movimenti.
 - **Evoluzione:** dopo il Giorno 1 le quantità calano con le perdite (Registro: `../ARC08-03-REGISTRO-PERDITE.md`); rigiocare la conta è inutile — aggiorna la tabella FORZE.
 
 ---
+
+## MAPPA 1D: IL PENDIO SOTTO LE MURA — L'AVANGUARDIA
+**SVG**: `rendered/Hammerfist-L1-REVISED-Ultra-Clear_map04_mappa-1d-il-pendio-sotto-le-mura.svg` (rigenerare dopo ogni modifica)
+**Dimensioni:** 18 m × 18 m (12 colonne × 12 righe, 1,5 m/quadretto)
+**Incontro:** la scaramuccia dell'avanguardia (battaglia campale, libretto §13) e il duello col sergente hobgoblin (GS 6)
+**Quando si usa:** Sessione 1, Incontro 1D (master: `../ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md`, Scena 8 e Appendice B)
+
+Gli oggetti sono a grandezza vera; la mappa è il tratto di pendio dove si
+gioca il duello col sergente e la retroguardia. Le quattro squadre lavorano
+lungo duecento metri di pendio, una per cantiere. Il nord è in alto, verso
+le mura; il pendio scende a sud, verso la valle e la cresta di Grimjaw, a
+400 m fuori mappa.
+
+```
+MAPPA 1D: Il pendio sotto le mura
+12 col × 12 righe · 1,5 m
+COLONNE:  A B C D E F G H I J K L
+01 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰
+02 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫
+03 🌲 🟩 🟩 🪵 🪵 🪵 🪵 🪵 🟩 🟩 🟩 🌲
+04 🟩 💀 💀 🟩 🟩 🟩 🟩 🟩 🟩 💀 💀 🟩
+05 🟩 🔵 🟩 🟩 🪨 🪨 🪨 🟩 🟩 🔵 🟩 🟩
+06 🌲 🟩 🟩 🟩 🪨 🪨 🪨 🟩 🟩 🟩 🟩 🌲
+07 🟩 🟩 💀 💀 🟩 🟫 🟩 🟩 💀 💀 🟩 🟩
+08 🟩 🟩 🔵 🟩 🟩 🟫 🟩 🟩 🟩 🔵 🟩 🟩
+09 🌲 🟩 🟩 🟩 🟩 🟫 🟫 🟩 🟩 🟩 🟩 🌲
+10 🟩 🟩 🌾 🌾 🟩 🟩 🟫 🟩 🌾 🌾 🟩 🟩
+11 🟩 🔴 🌾 🌾 🟩 ⚫ 🟫 🟩 🌾 🌾 🔴 🟩
+12 🌲 🟩 🟩 🟩 🟩 🔴 🟫 🔴 🟩 🟩 🟩 🌲
+LEGENDA · 🏰 la cinta, 12 m · 🟫 il sentiero · 🟩 il pendio, in discesa verso sud · 🪵 pino abbattuto, 7,5 m di tronco, terreno difficile · 💀 fossa a metà, 3 × 1,5 m: un cantiere · 🪨 la frana, legata con le corde: 4d6 su F7-G12, Riflessi CD 15 dimezza · 🌲 pino · 🌾 boscaglia, occultamento 20% · 🔵 gli eroi · 🔴 lupi e hobgoblin · ⚫ il sergente
+@north N
+@mark 1 ; B5 ; Borin e la Guardia del Cancello
+@mark 2 ; J5 ; Dara e i balestrieri
+@mark 3 ; C8 ; Thorin e i veterani
+@mark 4 ; J8 ; Nala e i veterani
+@mark 5 ; F11 ; il sergente (dal round 3)
+@zone D3-H3 ; Pino abbattuto
+@zone B4-C4 ; Cantiere 1
+@zone J4-K4 ; Cantiere 2
+@zone C7-D7 ; Cantiere 3
+@zone I7-J7 ; Cantiere 4
+@zone E5-G6 ; Frana
+@zone C10-D11 ; Boscaglia
+@zone I10-J11 ; Boscaglia
+@path Verso la cresta (400 m a sud) ; F7 F9 G10 G12 ; #8a5a2b
+@tipo tattica esterno
+@luogo Hammerfist, pendio sotto le mura
+@quota 945 m ; s.l.m., il piede della cinta
+@dislivello +75 m ; sulla piana, che comincia 300 m più a sud
+```
 
 ---
 

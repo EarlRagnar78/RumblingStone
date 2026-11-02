@@ -1,16 +1,18 @@
 # Le dieci boccette
 
 <!-- consegna -->
-> *Per tutto il tavolo, dopo la visita alla bottega e alla cappella. Le
-> pozioni le identifica **Kettra, l'alchimista del re**, nella sua bottega in
-> fondo al corridoio della fucina. **Sorella Brynja, la chierica di Moradin
-> che tiene la cappella**, passa la mano sulle due che fermano Kettra. La
-> gemma nello zaino di Tordek non è qui: quella si gioca al tavolo.*
+> *Per tutto il tavolo, dopo il giro della bottega e della cappella. Le dieci
+> boccette le identifica l'alchimista del re, e su due si ferma: la n. 2 e la
+> n. 4. Sulla n. 4 passa la mano anche la chierica della cappella. La gemma
+> nello zaino di Tordek non è qui: quella si gioca al tavolo.*
 <!-- /consegna -->
 
 ---
 
-> **Read-aloud (Mercer lead).** *Kettra stende un panno sul banco, sposta la
+**Per tutto il tavolo**: si legge insieme, si passa di mano, e ognuno la
+rilegge quando vuole.
+
+> *Kettra stende un panno sul banco, sposta la
 > cassa di sabbia con il piede e mette in fila le vostre dieci boccette come
 > soldati. Le stappa una alla volta. Annusa, ne versa una goccia sul dorso
 > della mano, la assaggia con la punta della lingua. Un minuto ciascuna. Non
@@ -36,7 +38,7 @@ non dice niente. A voi sì.
 **La numero 7.** Vetro verde e spesso, tappo piombato, una riga di rune naniche
 attorno al collo.
 
-> **Read-aloud (Tolkien lead).** *Kettra ci passa sopra il pollice. Poi ci
+> *Kettra ci passa sopra il pollice. Poi ci
 > ripassa. È più tempo di quanto ne abbia dato alle altre nove messe insieme.*
 
 **KETTRA (piano, senza ridere):** *«Questo è il segno della fucina del re. Il
@@ -51,8 +53,7 @@ quelli che salivano per primi sulle scale. La danno gli sciamani, là fuori.»*
 funziona. Su un goblin anche. Su di voi no. Non bevetela.»*
 
 *A chi non è orco né goblinoide non dà niente: Tempra CD 15, o nauseati per
-1d4 round. E qualcuno di voi l'ha presa a un goblin della Mano Rossa: la
-ricetta ha mille anni.*
+1d4 round.*
 
 **La numero 4.** Kettra la assaggia e annuisce: cura, e cura bene. Poi la gira
 contro la lampada e ci passa l'unghia sul tappo. Cera nera.
@@ -60,7 +61,7 @@ contro la lampada e ci passa l'unghia sul tappo. Cera nera.
 **KETTRA (a mezza voce):** *«Cura. Ma c'è dentro un'altra cosa, e non ce l'ha
 messa un alchimista.»*
 
-> **Read-aloud (Andor lead).** *Brynja si avvicina con le mani screpolate e la
+> *Brynja si avvicina con le mani screpolate e la
 > tiene sospesa sopra la boccetta, senza toccarla. Muove le labbra. Conta,
 > come sempre.*
 

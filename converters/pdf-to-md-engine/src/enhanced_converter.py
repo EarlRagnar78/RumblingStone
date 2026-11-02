@@ -11,7 +11,7 @@ import fitz
 import magika
 
 from .enhanced_processor import process_pdf_enhanced
-from .pdf_analyzer import analyze_pdf_characteristics, get_extraction_strategy
+from .pdf_analyzer import analyze_pdf_characteristics
 
 @dataclass
 class ConversionResult:
@@ -61,7 +61,6 @@ class EnhancedPDFConverter:
         
         # Analyze PDF characteristics for optimal method selection
         characteristics = analyze_pdf_characteristics(pdf_path)
-        strategy = get_extraction_strategy(characteristics)
         
         logger.info(f"PDF Analysis: {characteristics.optimal_extraction_method} "
                    f"(confidence: {characteristics.extraction_confidence:.2f})")

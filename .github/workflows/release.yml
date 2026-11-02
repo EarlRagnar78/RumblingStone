@@ -1,0 +1,233 @@
+# Rilascio automatico (ADR-0100, ripreso da iemod-fetch ADR-0027).
+#
+# Quando su main arriva un CHANGELOG.md la cui sezione `## [X.Y.Z]` più recente
+# non ha ancora un tag, scripts/release_plan.py sceglie il commit da rilasciare
+# (l'unione in cui __version__ è diventato X.Y.Z). Questo workflow riesegue la
+# CI intera su quel commit, costruisce i pacchetti delle skill, li firma con le
+# impronte SHA-256, crea il tag vX.Y.Z e pubblica il rilascio GitHub con quella
+# sezione come note. Il tag lo crea questo run, con il suo GITHUB_TOKEN: nessun
+# segreto a lunga vita. Un tag spinto a mano funziona lo stesso.
+#
+# Niente workflow_dispatch: un run a mano che sceglie la versione eseguirebbe
+# codice di un commit qualsiasi con i permessi del ramo principale (CodeQL,
+# cache poisoning). Per rifare un rilascio si rilancia il run fallito da
+# Actions; per un commit preciso si spinge il tag a mano (docs/RILASCIO.md).
+#
+# Una PR che cambia questa catena la prova sul proprio commit: piano e
+# costruzione sì, tag e rilascio mai. Così anche un aggiornamento di
+# Dependabot a un'azione usata solo qui si prova prima di entrare.
+name: Release
+
+on:
+  push:
+    branches: [main]
+    paths: ["CHANGELOG.md", "scripts/dmcore/__init__.py"]
+    tags: ["v*"]
+  pull_request:
+    paths: [".github/workflows/release.yml", "scripts/release_plan.py",
+            "scripts/release_notes.py"]
+
+permissions:
+  contents: read
+
+concurrency:
+  # I rilasci si mettono in fila; la prova di una PR ha un gruppo suo, così non
+  # ferma mai un rilascio e un push più nuovo la sostituisce.
+  group: ${{ github.event_name == 'pull_request' && format('release-{0}', github.ref) || 'release' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  decide:
+    name: Cosa si rilascia, e su quale commit
+    runs-on: ubuntu-24.04
+    outputs:
+      release: ${{ steps.plan.outputs.release == 'true' && steps.gate.outputs.go == 'true' && 'true' || 'false' }}
+      tag: ${{ steps.plan.outputs.tag }}
+      sha: ${{ steps.plan.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v7
+        with: { fetch-depth: 0, fetch-tags: true }
+      - uses: actions/setup-python@v7
+        with: { python-version: "3.13" }
+      - name: Piano
+        id: plan
+        env:
+          REF_TYPE: ${{ github.ref_type }}
+          REF_NAME: ${{ github.ref_name }}
+          EVENT: ${{ github.event_name }}
+          HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+          REPO: ${{ github.repository }}
+        run: |
+          if [ "$EVENT" = "pull_request" ]; then
+            if [ "$HEAD_REPO" = "$REPO" ]; then
+              python scripts/release_plan.py --pull-request >> "$GITHUB_OUTPUT"
+            else
+              echo "::notice::prova saltata: la PR viene da un fork"
+              echo "release=false" >> "$GITHUB_OUTPUT"
+            fi
+          elif [ "$REF_TYPE" = "tag" ]; then
+            # Un tag spinto a mano: si rilascia esattamente ciò che indica.
+            { echo "release=true"; echo "tag=$REF_NAME"; echo "sha=$GITHUB_SHA"; } >> "$GITHUB_OUTPUT"
+          else
+            python scripts/release_plan.py >> "$GITHUB_OUTPUT"
+          fi
+          cat "$GITHUB_OUTPUT"
+      # GITHUB_TOKEN non può creare un tag su un commit i cui workflow
+      # differiscono da quelli di main (non ha mai il permesso `workflows`):
+      # GitHub risponde 403 all'ultimo passo. Lo si dice subito, con le due
+      # uscite descritte in docs/RILASCIO.md.
+      - name: Il tag si può creare con il token di questo run
+        id: gate
+        env:
+          DIFFER: ${{ steps.plan.outputs.workflows_differ }}
+          TAG: ${{ steps.plan.outputs.tag }}
+          SHA: ${{ steps.plan.outputs.sha }}
+        run: |
+          go=true
+          if [ "$DIFFER" = "true" ]; then
+            why="$TAG va su $SHA, i cui workflow differiscono da quelli di main: GITHUB_TOKEN non può creare quel tag. Spingi il tag a mano (git tag -a $TAG $SHA -m $TAG && git push origin $TAG). Vedi docs/RILASCIO.md."
+            echo "::notice::non ancora rilasciata - $why"
+            go=false
+          fi
+          echo "go=$go" >> "$GITHUB_OUTPUT"
+      # I job dopo eseguono il codice del commit scelto con i permessi del ramo
+      # principale (CodeQL: cache poisoning). Fuori dalla prova di una PR quel
+      # commit deve stare già nella storia di main: un tag spinto su un commit
+      # che main non contiene si ferma qui.
+      - name: Il commit da rilasciare è già su main
+        if: steps.plan.outputs.release == 'true' && github.event_name != 'pull_request'
+        env:
+          SHA: ${{ steps.plan.outputs.sha }}
+        run: |
+          git fetch -q origin main
+          git merge-base --is-ancestor "$SHA" origin/main \
+            || { echo "::error::$SHA non è nella storia di main: non si rilascia"; exit 1; }
+
+  # Le note pubblicate seguono il CHANGELOG: una sezione corretta raggiunge il
+  # suo rilascio al push successivo. Modificare un rilascio non crea ref.
+  notes:
+    name: Note dei rilasci allineate al CHANGELOG
+    if: github.ref_type != 'tag' && github.event_name == 'push'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with: { python-version: "3.13" }
+      - name: Allinea
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: python scripts/release_notes.py sync
+
+  # Il cancello intero sul commit da rilasciare. Sulla prova di una PR non
+  # serve: la CI della PR lo esegue già sullo stesso commit.
+  verify:
+    name: Di nuovo tutta la CI
+    needs: [decide]
+    if: needs.decide.outputs.release == 'true' && github.event_name != 'pull_request'
+    uses: ./.github/workflows/ci.yml
+
+  build:
+    name: Pacchetti delle skill
+    needs: [decide, verify]
+    if: >-
+      always() && needs.decide.outputs.release == 'true' &&
+      (needs.verify.result == 'success' || needs.verify.result == 'skipped')
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with: { ref: "${{ needs.decide.outputs.sha }}", persist-credentials: false }
+      - uses: actions/setup-python@v7
+        with: { python-version: "3.13" }
+      - name: Il tag e la versione nel codice coincidono
+        env:
+          TAG: ${{ needs.decide.outputs.tag }}
+        run: |
+          v=$(python scripts/dm.py --version | awk '{print $2}')
+          test "v$v" = "$TAG" || { echo "::error::$TAG ma __version__ dice $v"; exit 1; }
+      - run: pip install -r requirements.txt
+      # Riproducibile: con SOURCE_DATE_EPOCH alla data del commit l'indice
+      # delle skill non scrive l'ora di oggi, e l'archivio fissa ordine dei
+      # nomi, proprietario e data; gzip senza nome né ora. Misurato: tre
+      # costruzioni dello stesso commit, la stessa impronta.
+      - name: Costruisci i pacchetti
+        run: |
+          echo "SOURCE_DATE_EPOCH=$(git log -1 --format=%ct)" >> "$GITHUB_ENV"
+          SOURCE_DATE_EPOCH=$(git log -1 --format=%ct) ./scripts/build-skills.sh --no-deploy
+      - name: Archivio e impronte
+        env:
+          TAG: ${{ needs.decide.outputs.tag }}
+        run: |
+          mkdir -p dist
+          tar --sort=name --owner=0 --group=0 --numeric-owner --mtime="@$SOURCE_DATE_EPOCH" \
+              -C build -cf - . | gzip -n -9 > "dist/rumblingstone-skills-$TAG.tar.gz"
+          (cd dist && sha256sum ./* > SHA256SUMS && cat SHA256SUMS)
+      - uses: actions/upload-artifact@v7
+        with:
+          name: dist
+          path: dist/
+          retention-days: 14
+
+  # Provenienza firmata con Sigstore senza chiavi: l'identità che firma è
+  # questo workflow. Gira anche sulla prova di una PR, e lì dice il vero: quel
+  # workflow ha prodotto quei byte, e niente viene pubblicato.
+  attest:
+    name: Provenienza
+    needs: [decide, build]
+    # always(): sulla prova di una PR `verify` è saltato, e senza always() un
+    # salto a monte salta anche questo job, anche con `build` riuscito.
+    if: always() && needs.build.result == 'success' && (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+    steps:
+      - uses: actions/download-artifact@v8
+        with: { name: dist, path: dist }
+      - uses: actions/attest-build-provenance@v4
+        with:
+          subject-path: "dist/*.tar.gz"
+
+  publish:
+    name: Tag e rilascio GitHub
+    needs: [decide, build, attest]
+    if: >-
+      always() && needs.attest.result == 'success' && github.event_name != 'pull_request'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+        with: { ref: "${{ needs.decide.outputs.sha }}", persist-credentials: false }
+      - uses: actions/setup-python@v7
+        with: { python-version: "3.13" }
+      - uses: actions/download-artifact@v8
+        with: { name: dist, path: dist }
+      - name: Note dal CHANGELOG
+        env:
+          TAG: ${{ needs.decide.outputs.tag }}
+        run: |
+          {
+            python scripts/release_notes.py notes "$TAG"
+            echo
+            echo "### Verifica lo scaricamento"
+            echo
+            echo '```'
+            cat dist/SHA256SUMS
+            echo '```'
+            echo
+            echo "Controllo: \`sha256sum -c SHA256SUMS\` nella cartella dei file scaricati, e \`gh attestation verify <archivio> --repo $GITHUB_REPOSITORY\` per sapere chi l'ha costruito."
+          } > notes.md
+          cat notes.md
+      - name: Pubblica
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ needs.decide.outputs.tag }}
+          SHA: ${{ needs.decide.outputs.sha }}
+        run: |
+          # Se il tag esiste già (spinto a mano) gh lo usa; altrimenti lo crea
+          # su $SHA.
+          gh release create "$TAG" dist/* --target "$SHA" --title "$TAG" --notes-file notes.md

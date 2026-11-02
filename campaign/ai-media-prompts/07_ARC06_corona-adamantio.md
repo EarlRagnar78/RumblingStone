@@ -168,4 +168,4 @@ mortal earth-tones (the dwarf warrior).
 
 ---
 
-> **Sorgenti Lore:** `06_Stanza-corona-di-adamantio/CoronaDiAdamantio/Belkram.md`, `06_Stanza-corona-di-adamantio/CoronaDiAdamantio/villans.md`, `06_Stanza-corona-di-adamantio/CoronaDiAdamantio/Descrizioni.md`, `07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md` (§3-§6). Immagini di riferimento: `CoronaDiAdamantio.webp`, `Belkram&Cagnone.webp`, `Urialle.webp`.
+> **Sorgenti Lore:** `06_Stanza-corona-di-adamantio/StanzaCoronaDiAdamantio/Belkram.md`, `06_Stanza-corona-di-adamantio/StanzaCoronaDiAdamantio/villans.md`, `06_Stanza-corona-di-adamantio/StanzaCoronaDiAdamantio/Descrizioni.md`, `07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md` (§3-§6). Immagini di riferimento: `CoronaDiAdamantio.webp`, `Belkram&Cagnone.webp`, `Urialle.webp`.

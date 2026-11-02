@@ -4,7 +4,7 @@ Cerimonia-delle-100-Asce.md
 # Cerimonia delle 100 Asce — *Chiusura della Battaglia di Hammerfist*
 ## *Il momento in cui il re commemora i caduti, e i fili dell'arco successivo cominciano a tirarsi.*
 
-> **Status:** canone di campagna RumblingStone (2026-05-04). Evento canonico **finale** dell'Arco 08 (Battaglia di Hammerfist). Si tiene il **Giorno 21** post-vittoria (3 giorni dopo la Sessione 4). Funziona come **scena di chiusura emotiva** per Hammerfist e come **zona di atterraggio organica** per i hook personali dei PG verso Arco 09 (P1, P2A, P2B, P3).
+> **Status:** canone di campagna RumblingStone (2026-05-04). Evento canonico **finale** dell'Arco 08 (Battaglia di Hammerfist). Si tiene il **Giorno 21**, due giorni dopo la fine della battaglia (Day 19: `ARC08-12-CRONOLOGIA-MARCH-CLOCK.md`). Funziona come **scena di chiusura emotiva** per Hammerfist e come **zona di atterraggio organica** per i hook personali dei PG verso Arco 09 (P1, P2A, P2B, P3).
 >
 > **Tono di riferimento:** *Tolkien* (i Campi del Pelennor, dopo) + *House of David* (la commemorazione che è anche una chiamata) + *Andor* (i diplomatici che arrivano coi loro ordini privati).
 
@@ -16,13 +16,13 @@ Cerimonia-delle-100-Asce.md
 
 ### 1.1 Il rito
 
-- **100 asce cerimoniali** (non 210) sono piantate in cerchio nella **Sala di Pietra Antica** (l'atrio della cittadella). Ogni ascia rappresenta **un'unità o un guerriero notevole** — non una persona singola: è simbolico. Sono asce di **adamantio rituale** (non utilizzabili in battaglia, lavorate solo per la cerimonia).
+- **100 asce cerimoniali** (non 210: le asce dei caduti restano piantate sul campo dalla sera della battaglia, ed è un altro rito) sono piantate in cerchio nella **Sala di Pietra Antica** (l'atrio della cittadella). Ogni ascia rappresenta **un'unità o un guerriero notevole** — non una persona singola: è simbolico. Sono asce di **adamantio rituale** (non utilizzabili in battaglia, lavorate solo per la cerimonia).
 - Le asce sono **dipinte di rosso** alla base (sangue rituale, mescolato con cera nera) e **dorate alla lama** (simbolo del valore).
-- Re Thorek pronuncia il **nome di ognuno dei 210 caduti** — nani anziani fanno la cantillazione tradizionale ("ricordato, ricordato, ricordato"). Ci vogliono **3 ore reali**.
+- Re Thorek pronuncia il **nome di ognuno dei 210 caduti** — nani anziani fanno la cantillazione tradizionale ("ricordato, ricordato, ricordato"). Ci vogliono **3 ore** nel mondo.
 - Al termine, ogni famiglia caduta riceve **una runa di memoria** (oggetto cerimoniale, non magico).
-- Il rito si chiude con **il Giuramento delle 90** — i sopravvissuti pronunciano collettivamente: *"Per i centodiciotto. Per i novantadue. Per i nove di Drellin's Ferry. Camminiamo."* (210 = 118 a Hammerfist + 92 nei mesi precedenti + 9 a Drellin's Ferry caduti accanto a Thorik in Arco 00.)
+- Il rito si chiude con **il Giuramento delle 90** — i sopravvissuti pronunciano collettivamente: *"Per i centodiciotto. Per i novantadue. Per i nove di Drellin's Ferry. Camminiamo."* Il conto dei caduti è 210 = 118 a Hammerfist + 92 nei mesi precedenti. I nove di Drellin's Ferry, caduti accanto a Thorik nell'Arco 00, si nominano nel Giuramento ma non si contano `[CANONE — DM 2026-10-19, D17]`.
 
-### 1.2 Cosa accade durante la cerimonia (3 ore reali, ~2 ore di gioco)
+### 1.2 Cosa accade durante la cerimonia (3 ore nel mondo; al tavolo 20-30 minuti, vedi le note per il DM in fondo)
 
 > Il DM scaglia in 4 atti. **Niente combattimento.** Solo dialogo, atmosfera, hook che atterrano.
 
@@ -49,18 +49,20 @@ Cerimonia-delle-100-Asce.md
 
 **Effetto canonico (già presente in `state.md`):** i 4 PG sono Custodi Eterni. La rune di pietra è il **simbolo fisico**: 5 cm di diametro, leggero, da portare al collo o cinta. Concede:
 - Riconoscimento formale a Hammerfist e in qualsiasi insediamento nano lealista.
-- –4 alle CD diplomatiche con autorità nani.
+- **+2 di circostanza a Diplomazia** con i nani del Vale, e con chi riconosce il titolo, mentre la runa è portata a vista (`ARC08-10-ESITI-E-CONTINGENZE.md` §6.2, canone del DM 2026-10-18).
 - **Effetto al Giuramento delle 90:** i 90 sopravvissuti, **se chiamati personalmente da uno dei 4 PG**, sono **giurati di onore** — possono essere convocati come **rinforzi** al massimo 1 volta nella campagna, fino a 30 effettivi.
 
 ---
 
 ## 3. Atto 2 (compressed) — Gli arrivi esterni
 
-> Mentre Re Thorek pronuncia i nomi, **tre figure straniere** entrano nella Sala. Si fermano discrete sul fondo, in piedi, ad ascoltare. Re Thorek li nota senza interrompersi. Il loro arrivo è coordinato — **non casuale**.
+> Mentre Re Thorek pronuncia i nomi, due figure venute da fuori entrano nella Sala. Si fermano sul fondo, in piedi, ad ascoltare. Re Thorek le nota senza interrompersi. Non sono venute insieme.
+
+Ognuna ha la sua ragione: le note per il DM in fondo, §9. Due figure, non coordinate `[CANONE — DM 2026-10-19, D20]`.
 
 ### 3.1 Maestro Tempestas (Rethmar)
 
-- Indossa **camicia con emblema di Rethmar** sopra la cotta. Si nota perché Hammerfist non è abituata a Rethmar in cerimonia.
+- Indossa **camicia con emblema di Rethmar** sopra la cotta. Due giorni prima ha combattuto sopra la valle, e i veterani lo riconoscono: la camicia dice che stavolta viene come inviato. Si nota perché Hammerfist non è abituata a Rethmar in cerimonia.
 - È venuto **per ordine di Brenna Sorvane** per due ragioni:
   1. **Onorare i caduti** di Hammerfist a nome del Consiglio di Rethmar (gesto diplomatico — Rethmar riconosce il sacrificio di Hammerfist contro il Red Hand).
   2. **Raccogliere intel sulle posizioni del Red Hand** dai veterani della battaglia (intelligence per la difesa di Rethmar).
@@ -71,11 +73,11 @@ Cerimonia-delle-100-Asce.md
 
 ### 3.2 Capitana Lythiel Alar-Wen (Sacred Forest, Cerchio della Quercia Vecchia)
 
-- Una dei 12 ranger elfici sui gufi giganti che sono arrivati a Hammerfist alla Sessione 4. Resta dopo la battaglia per la cerimonia.
+- È a Hammerfist dalla Sessione 4: cavalca coi gufi giganti, e in battaglia riconosce Hella `[CANONE — DM 2026-10-19, D16]` (la battuta è nell'Incontro 4A di `ARC08-01-GUIDA-DM.md`): è canone del ramo di gruppo (`campaign/state.md`, tabella dei PNG: «Direct recognition during Hammerfist Battle Sessione 4; canonized 2026-05-04»). Arriva come inviata del Sacred Forest, non come una dei ranger di Lunapiena (D13, `ARC08-02` §2). Resta dopo la battaglia per la cerimonia.
 - È venuta **per ordine dell'Arcidruidessa Saraah** (sua maestra) per:
   1. **Onorare i caduti** di Hammerfist (i druidi del Sacred Forest considerano la Sala di Pietra Antica un **luogo sacro di natura interrotta** — meritano di onorarlo).
   2. **Consegnare formalmente la Ghianda del Cerchio a Hella** durante o dopo la cerimonia (vedi `Bestiario/png/Lythiel/Lythiel.md`).
-- La sua presenza è **silenziosa** ma **carica**. Hella la sente arrivare prima ancora di vederla (Sapienza Naturale CD 12, automatico).
+- La sua presenza è **silenziosa** ma **carica**. Hella la sente arrivare prima ancora di vederla (nessuna prova).
 
 ### 3.3 Niente envoy di Dauth alla Cerimonia (per design)
 
@@ -124,7 +126,7 @@ Durante l'Atto 3 (mentre Re Thorek consegna le rune di pietra), **l'Anello di Ch
 
 **Trigger secondari (dopo la Cerimonia):**
 - **Notte 22 o 23**: **sogno della Doppia Maschera** — Lathander e Mask appaiono in sogno e rivelano l'identità di Zalkatar (ex-chierico di Mask) + movente (lettura sperimentale dell'Anello, non uccisione). Vedi `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md` §3.4.
-- **Cena di Hammerfist (Giorno 21 sera)**: se Tempestas nota l'Anello brillare di Artemis (Sapienza Magica CD 14, automatico), si avvicina e rivela la **conversazione drow intercettata 3 settimane fa** (*"il dottore della torre invisibile vuole il portatore dell'anello caotico" + "fine Mirtul, poi la torre cammina"*) + offre **mappa approssimativa** del Cannath Vale settentrionale. Vedi `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md` §3.2.
+- **Cena di Hammerfist (Giorno 21 sera)**: se Tempestas nota l'Anello brillare di Artemis (Sapienza Magica CD 14), si avvicina e rivela la **conversazione drow intercettata 3 settimane fa** (*"il dottore della torre invisibile vuole il portatore dell'anello caotico" + "fine Mirtul, poi la torre cammina"*) + offre **mappa approssimativa** del Cannath Vale settentrionale. Vedi `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md` §3.2.
 
 ### 5.4 Per Thorik — *La Lettera*
 

@@ -5,7 +5,16 @@
 > leggerli** prima della prima sessione.
 > **Stato**: canonico (indice; canone di trama in `campaign/state.md`,
 > **non ancora giocato** — piano ARC-08 A0). **Ultima revisione**:
-> 2026-07-02.
+> 2026-10-21.
+
+<!-- storico -->
+> 🧭 **Perché questo indice è cambiato così spesso (ottobre 2026).** Il
+> 2026-10-16 il censimento delle versioni ha mandato sei file superati in
+> `_ARCHIVIO`. Fra il 2026-10-21 e il 2026-10-22 sono entrati i file del
+> flashback dei pregen: handout 0, libretto della battaglia campale
+> (ADR-0096), master della Sessione 1 (`ARC08-DEF-1`) e della Sessione 2
+> (`ARC08-DEF-2`); ogni nuovo master ha preso la sua riga qui.
+<!-- /storico -->
 
 ---
 
@@ -49,7 +58,11 @@ Hammerfist si gioca su **due livelli di personaggi**:
 2. `ARC08-12-CRONOLOGIA-MARCH-CLOCK.md` — dove cadono le sessioni sul
    calendario.
 3. `ARC08-01-GUIDA-DM.md` — la guida completa (PNG, esercito, sessioni,
-   read-aloud).
+   read-aloud). La **Sessione 1** coi pregen è nel suo master,
+   `ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md` (dieci scene, l'avanguardia, la
+   tabella delle leve), e la guida vi rimanda; la **Sessione 2** nel suo,
+   `ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md` (i tre giorni dell'assedio col
+   libretto, il soffio sul Re, la ritirata e l'incrocio).
 4. `hammerfist_encounters-...-Guida-agli-Scontri-final.md` — gli scontri
    sessione per sessione.
 5. `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` — **master visivo**
@@ -68,8 +81,9 @@ Hammerfist si gioca su **due livelli di personaggi**:
 11. `ARC08-16-CUE-SONORI.md` — i suoni della serata (si legge una
     volta, prima della Sessione 1; sono quattro cue per sessione).
 
-**Cosa stampare per il tavolo**: i **4 pregen** (schede giocatore, quando
-pronte in B5/C4), il **registro perdite** (`ARC08-03`), le **mappe
+**Cosa stampare per il tavolo**: la **visione della Corona** e i **4 pregen**
+(`ARC08-15`, handout 0 e 1-4), il **libretto della battaglia campale**
+(`ARC08-18`, una copia per giocatore; `ARC08-19` resta al DM), il **registro perdite** (`ARC08-03`), le **mappe
 master** rilevanti alla sessione.
 
 ---
@@ -82,6 +96,8 @@ master** rilevanti alla sessione.
 |---|---|---|
 | `ARC08-00-INDICE.md` | Questo indice + quickstart | Canonico |
 | `ARC08-01-GUIDA-DM.md` | Guida DM completa (PNG, esercito, sessioni) | Canonico (master narrativo) |
+| `ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md` | Master DEF della Sessione 1 coi pregen: l'avvistamento in dieci scene, la scaramuccia dell'avanguardia (1D), la tabella che traduce gli esiti nelle leve del libretto (`APPARATO-` generato accanto) | Canonico (master DEF, scritto 2026-10-21, giro da fare) |
+| `ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md` | Master DEF della Sessione 2 coi pregen: i tre giorni dell'assedio col libretto e i duelli coi comandanti, il soffio sul Re (2B), la ritirata (H3-1), l'incrocio silenzioso (2F), la tabella dei bonus verso `ARC08-10` §5.2-5.3 (`APPARATO-` generato accanto) | Canonico (master DEF, scritto 2026-10-22, giro da fare) |
 | `ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` | Schede PNG/unità + regolamento di massa | Canonico |
 | `ARC08-03-REGISTRO-PERDITE.md` | Registro perdite da tavolo | Canonico |
 | `ARC08-04-MARCIA-MANO-ROSSA.md` | Scheda logistica dell'avanguardia (A6) | Canonico |
@@ -93,25 +109,28 @@ master** rilevanti alla sessione.
 | `ARC08-15-HANDOUTS-GIOCATORE.md` | Handout stampabili: pregen, runa, canto, mappa giocatore (C4) | Canonico |
 | `ARC08-16-CUE-SONORI.md` | Cue sonori dell'arco (apparato d'uso [ADR-0018](../plans/adr/ADR-0018-apparato-uso-obbligatorio.md) §5) | Canonico |
 | `ARC08-17-BANCO-HAMMERFIST-1372.md` | Il banco della rocca: chiuso durante l'assedio, socchiuso dopo la Cerimonia; le promesse della Guida e le tre strade per mantenerle (norma `il-banco.md`) | Proposta |
+| `ARC08-18-LIBRETTO-BATTAGLIA-CAMPALE.md` | Il libretto della battaglia campale per giocatori e DM: il sistema di `mass_combat_guide_Dm.md` con i dadi in mano al tavolo, tre modi di giocare i pregen ([ADR-0096](../plans/adr/ADR-0096-la-battaglia-campale-si-gioca-con-un-libretto.md)) | Proposta |
+| `ARC08-19-SEGRETI-DELL-ORDA.md` | Solo DM: capacità dei reparti dell'orda, carte dell'avanguardia, scelte fra i numeri dell'arco che non si accordavano ([ADR-0096](../plans/adr/ADR-0096-la-battaglia-campale-si-gioca-con-un-libretto.md)) | Proposta |
 | `ERRATA-ARC08-DESCRIZIONE-EPICA.md` | Riconciliazione col testo narrativo del DM (nomi, sorte di Thorek, khuzdul, cronologia) | Canonico |
 | `ERRATA-ARC08-35-Verification.md` | Verifica meccanica 3.5 (B5) | Canonico |
 | `Cerimonia-delle-100-Asce.md` | Chiusura arco + hook ARC-09 (D3) | Canonico (benchmark, NON riscrivere) |
 | `hammerfist_encounters-...-final.md` | Guida agli scontri | Canonico |
 | `mass_combat_guide_Dm.md` | Sistema di combattimento di massa | Canonico (**fonte unica normativa**, C1; raccordo ARC-09) |
-| `combat_prompts_guide.md` | Sequenza di prompt per il combattimento di massa | Canonico (di supporto) |
 | `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` | **Master visivo** (17 mappe, matrice in testa) | Canonico (master, A8) |
-| `Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md` | Griglie ultra-clear Sessione 1: 1A-1, 1A-2, 1A-3 | Canonico (master tattico, A8+MAPPE-UC) |
+| `Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md` | Griglie ultra-clear Sessione 1: 1A-1, 1A-2, 1A-3, 1D (il pendio dell'avanguardia) | Canonico (master tattico, A8+MAPPE-UC) |
 | `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md` | Griglie ultra-clear Sessione 2: 2A (+2B/2C viste), MAPPA 1/2A-1, 2, 3, 4, 2B-Corretta | Canonico (master tattico, A8+MAPPE-UC) |
 | `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` | Griglie ultra-clear Sessioni 3-4: 3X/H3-1, 3Y, 3Z, 5, 4X, 4-finale | Canonico (master tattico, A8+MAPPE-UC) |
 
 ### Deprecati — non usare (banner + puntatore al master)
 
+Dal 2026-10-16 i deprecati senza contenuto proprio stanno in `_ARCHIVIO/`, con lo stub del piano di revisione e `combat_prompts_guide.md` (i prompt con cui è stato generato il sistema di massa, nessun materiale di gioco). I prompt d'immagine di `ARC08-92`, che nessun altro file aveva, sono migrati in `campaign/ai-media-prompts/09_ARC08_battaglia-hammerfist.md` §5.
+
 | File | Motivo | Sostituito da |
 |---|---|---|
-| `ARC08-90-DEPRECATO-battle-stats-maps.md` | Sottoinsieme superato dell'atlante (A8) | `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` |
-| `ARC08-91-DEPRECATO-atlante-visivo-v2.md` | Generazione superata dell'atlante (A8) | idem |
-| `ARC08-92-DEPRECATO-atlante-visivo-v3-complete.md` | Generazione superata dell'atlante (A8) | idem |
-| `ARC08-93-DEPRECATO-sessione-interrotta.md` | Stub generico fuori canone (A6) | `ARC08-01-GUIDA-DM.md` |
+| `_ARCHIVIO/ARC08-90-DEPRECATO-battle-stats-maps.md` | Sottoinsieme superato dell'atlante (A8) | `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` |
+| `_ARCHIVIO/ARC08-91-DEPRECATO-atlante-visivo-v2.md` | Generazione superata dell'atlante (A8) | idem |
+| `_ARCHIVIO/ARC08-92-DEPRECATO-atlante-visivo-v3-complete.md` | Generazione superata dell'atlante (A8); i suoi prompt d'immagine sono in `campaign/ai-media-prompts/09_ARC08_battaglia-hammerfist.md` §5 | idem |
+| `_ARCHIVIO/ARC08-93-DEPRECATO-sessione-interrotta.md` | Stub generico fuori canone (A6) | `ARC08-01-GUIDA-DM.md` |
 | `Mappe/_ARCHIVIO/Hammerfist-Lotto-1-Ricognizione.md` | Generazione mappe superata (A8) | `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` (+ L1-REVISED) |
 | `Mappe/_ARCHIVIO/Hammerfist-Lotto-2-Assedio.md` | Generazione mappe superata (A8) | idem (+ L2-REVISED) |
 | `Mappe/_ARCHIVIO/Hammerfist-Lotto-3-FINALE.md` | Generazione mappe superata (A8) | idem (+ L3-REVISED) |

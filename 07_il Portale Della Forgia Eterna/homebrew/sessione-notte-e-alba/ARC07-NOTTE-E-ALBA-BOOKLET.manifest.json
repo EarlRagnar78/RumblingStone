@@ -1,0 +1,61 @@
+{
+  "brand": "RUMBLING STONE · ARC-07 · IL PORTALE DELLA FORGIA ETERNA",
+  "title": "La Notte e l'Alba",
+  "subtitle": "Hammerfist mille anni fa · il campo dell'orda · le mura · il duello con Skullcrusher",
+  "banner": "BOOKLET DI SESSIONE",
+  "meta": "Sessione D&D 3.5 di circa tre ore per 4 personaggi di 13° livello · Faerûn, ≈372 DR · Campagna privata RumblingStone · regia della serata, cast e voci, il viaggio a mille anni fa dalla Scena 5 al duello, la tabella delle ferite. Le pagine ✉ sono nel volume dei giocatori",
+  "header": "La serata dopo quella del 2026-09-25: dalla notte nella fortezza all'esito del duello, con stop prima del rito all'incudine. Le pagine ✉ sono nel volume dei giocatori, e la regia dice quando consegnarle.",
+  "footer": "La Notte e l'Alba",
+  "player_footer": "Le Voci della Notte",
+  "colophon": {
+    "edizione": "Booklet di sessione",
+    "versione": "v1",
+    "data": "2026-10-12",
+    "autori": "Il DM di RumblingStone, con l'agente di scrittura del repo",
+    "basato_su": "D&D 3.5 SRD (OGL 1.0a); adattamento privato di Red Hand of Doom (Wizards of the Coast, 2006)",
+    "licenza": "materiale del DM, uso privato del tavolo, non diffondere",
+    "nota": "Il master si stampa intero perché la serata comincia a metà della Scena 5: la regia dice da dove aprirlo"
+  },
+  "cover_image": "../../Immagini/web/tavola-skullcrusher-nel-cortile.jpg",
+  "intro_md": "00-INTRO-DOVE-SIAMO.md",
+  "out": "ARC07-NOTTE-E-ALBA-BOOKLET.html",
+  "chapters": [
+    {
+      "title": "I · Regia della serata",
+      "file": "01-REGIA-SERATA.md",
+      "tag": "dm"
+    },
+    {
+      "title": "II · Il Seme-Mercato: l'ora della pergamena",
+      "file": "02-IL-SEME.md",
+      "tag": "dm",
+      "capolettera": false
+    },
+    {
+      "title": "III · La cassetta del DM: cast, pronuncia, read-aloud, suoni",
+      "file": "../../ARC07-CASSETTA-DEL-DM.md",
+      "tag": "dm"
+    },
+    {
+      "title": "IV · Il Viaggio a Mille Anni fa",
+      "file": "../../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "tag": "dm"
+    },
+    {
+      "title": "V · La Forgia ricorda le ferite",
+      "file": "../../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md",
+      "tag": "dm"
+    },
+    {
+      "title": "VI · Durik, il compagno di Hella",
+      "file": "../sessione-resurrezione-mille-anni/08-SCHEDA-DURIK.md",
+      "tag": "dm"
+    },
+    {
+      "title": "VII · Il barile sulla tenda di Zog'tar",
+      "file": "../../ARC07-BARILE-SULLA-TENDA.md",
+      "tag": "dm"
+    }
+  ],
+  "fregio": "../../../docs/assets/fregi/fregio-arco-07-forgia.svg"
+}

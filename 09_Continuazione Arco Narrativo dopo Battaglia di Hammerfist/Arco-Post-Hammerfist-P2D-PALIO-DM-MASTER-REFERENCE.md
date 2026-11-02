@@ -125,15 +125,12 @@ Morale del Rione**; l'**Onore del Fantino** è il TS contro le offerte di corruz
 
 ## 4. Struttura in 3–4 Sessioni
 
-```
- SESSIONE 1  ── SESSIONE 2 ───────── SESSIONE 3 ──────── SESSIONE 4 (climax)
- Arrivo +       La Tratta +           La Cena + i          La Mossa + la Corsa
- Emissari +     i primi Partiti +     sabotaggi notturni + + Esiti + cavalcata
- Prova          la Sbandierata        i drow di Sonjak     di soccorso a Rethmar
-   │                │                     │                    │
- scegli la       trucca (o no)         proteggi cavallo     vinci/perdi → Meraviglia,
- CONTRADA        l'urna                e fantino            voto Consiglio, rinforzi
-```
+| Sessione | Che cosa succede | La scelta dei PG |
+|---|---|---|
+| 1 | Arrivo, Emissari e la Prova | scegliere la contrada |
+| 2 | La Tratta, i primi Partiti e la Sbandierata | truccare l'urna, o no |
+| 3 | La Cena, i sabotaggi notturni e i drow di Sonjak | proteggere cavallo e fantino |
+| 4 (climax) | La Mossa, la Corsa, gli Esiti e la cavalcata di soccorso a Rethmar | vincere o perdere: la Meraviglia, il voto del Consiglio, i rinforzi |
 
 - **Sessione 1 — Il Mercato dei Sottobanco** (mezza sessione RP + una Prova d'Ammissione).
 - **Sessione 2 — La Tratta e i Partiti** (skill challenge dell'urna + diplomazia).

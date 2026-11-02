@@ -24,7 +24,8 @@ class Voce:
     #: `stato` (state.yaml: template + anagrafica PNG del gruppo di prima),
     #: `template` (copia di `sorgente`), `svuota` (cancella i file del modello
     #: `percorso`, la cartella resta), `rimuovi` (un file generato: lo rifa' il
-    #: suo comando quando serve)
+    #: suo comando quando serve), `schede` (svuota e rifa' una scheda PG vuota
+    #: per ogni PG del nuovo `party`, ADR-0088)
     azione: str
     sorgente: "str | None" = None
     nota: str = ""
@@ -49,6 +50,9 @@ PARTITA: "tuple[Voce, ...]" = (
     Voce("campaign/DM-DOSSIER.hb.md", "rimuovi", nota="`dm.py dossier` lo rifa'"),
     Voce("campaign/group.yaml", "rimuovi",
          nota="porta il nome del gruppo di prima: `dm.py session branch --group` lo rifa'"),
+    Voce("PG/schede/*", "schede",
+         nota="le schede del tavolo di prima se ne vanno; ogni PG del nuovo `party` "
+              "ne riceve una vuota, con la sua vista (ADR-0088)"),
 )
 
 #: Partita dichiarata che il reset NON tocca ancora, col lotto che la chiude.

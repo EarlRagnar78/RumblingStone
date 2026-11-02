@@ -1,0 +1,54 @@
+{
+ "seme": 20261023,
+ "criterio": "box di ARC-07 e ARC-08 con almeno 25 parole, non note di regola (né dadi, pf, caratteristiche), non congelati, non nel campione della riscrittura, non già votati",
+ "box": [
+  {
+   "id": "P01",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "box": 0,
+   "titolo": "SCENA 1 — Il portale e il bosco al tramonto",
+   "parole": 93,
+   "testo": "Per un istante lunghissimo i colori si rovesciano, e vi passano davanti vite intere di nani: nascono, battono il ferro, invecchiano, in un tempo più corto di un respiro. Poi torna il peso, e con il peso il freddo. Le ferite non ci sono più. Siete in piedi in un bosco. Gli alberi sono vecchi, le radici grosse come un uomo sdraiato, e l'aria sa di foglie marce e di fumo lontano. Il sole è già dietro il crinale. Uno di voi ha le ginocchia bagnate e non si ricorda di essere caduto."
+  },
+  {
+   "id": "P02",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "box": 21,
+   "titolo": "Come si combatte, se si arriva a combatterlo",
+   "parole": 25,
+   "testo": "Tre rune nane, tutte spezzate a metà dallo stesso colpo di punta. Sotto, inciso più a fondo, un nome: Hald. Poi una freccia, verso nord."
+  },
+  {
+   "id": "P03",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "box": 28,
+   "titolo": "SCENA 11 — Il duello con Skullcrusher",
+   "parole": 27,
+   "testo": "Per un istante la Corona ti mostra due immagini sovrapposte: questo drago adesso, e un altro drago sopra mura che bruciano, mura che non hai mai visto."
+  },
+  {
+   "id": "P04",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "box": 32,
+   "titolo": "Momento 4 — l'Aura della Forgia Eterna `[CANONE — DM 2026-09-20]`",
+   "parole": 78,
+   "testo": "Il vecchio accanto all'incudine alza la testa e guarda la luce dietro Thorik. In tutto il cortile i feriti smettono di essere feriti: un fabbro con una gamba sola si tira su contro il muro, il muro gli si apre sotto la mano come argilla, e lui ci infila la gamba e resta in piedi. Nessuno grida. Ottocento nani guardano un nano con una corona, e per un lungo momento, nel cortile, c'è solo il respiro della forgia."
+  },
+  {
+   "id": "P05",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "box": 21,
+   "titolo": "**INTRODUZIONE SESSIONE 2:**",
+   "parole": 89,
+   "testo": "\"L'alba del primo giorno d'assedio sorge pallida e spettrale. L'esercito della Mano Rossa si è dispiegato in formazioni perfette davanti alle mura di Hammerfist. Al centro, Generale Grimjaw siede sul suo warg gigante nero, la sua armatura demoniaca che riflette le prime luci del sole come metallo insanguinato. Alla sua destra, l'orrenda massa di Gorthak il Trifronte brandisce tre randelli enormi, le sue teste che discutono animatamente in linguaggio gigante. Sopra di tutti, Fauci di Palude plana minaccioso, le sue ali che proiettano ombre di morte sulle rocce sottostanti.\""
+  },
+  {
+   "id": "P06",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+   "box": 2,
+   "titolo": "**BORIN FERROPUGNO, Il Martello di Hammerfist**",
+   "parole": 36,
+   "testo": "\"Sei il nipote del precedente Re, un nano nel fiore degli anni che vive per la battaglia. Grida 'Seguitemi!' e gettati per primo nella mischia. Il tuo compito è tenere la linea e proteggere il Re.\""
+  }
+ ]
+}

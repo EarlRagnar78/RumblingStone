@@ -1,0 +1,4337 @@
+{
+ "base": "C",
+ "mappe": [
+  {
+   "codice": "1A-2",
+   "confronti": {
+    "A→C": {
+     "area_quadretti": 1600,
+     "celle_cambiate": {
+      "classi": 0,
+      "quota_classi": 0.0,
+      "quota_simboli": 0.0,
+      "simboli": 0
+     },
+     "jaccard_classi": {
+      ".": 1.0,
+      "H": 1.0,
+      "K": 1.0,
+      "M": 1.0,
+      "O": null,
+      "P": null,
+      "S": null,
+      "U": 1.0
+     },
+     "jaccard_gruppi": {
+      "blocco": 1.0,
+      "percorribile": 1.0
+     },
+     "metriche_delta": {},
+     "ncd_lzma": 0.1818,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "contesto/quota-mancante@-"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [],
+     "voto": {
+      "delta": 1,
+      "dopo": 94,
+      "prima": 93
+     }
+    },
+    "B→C": {
+     "area_quadretti": 1600,
+     "celle_cambiate": {
+      "classi": 0,
+      "quota_classi": 0.0,
+      "quota_simboli": 0.0,
+      "simboli": 0
+     },
+     "jaccard_classi": {
+      ".": 1.0,
+      "H": 1.0,
+      "K": 1.0,
+      "M": 1.0,
+      "O": null,
+      "P": null,
+      "S": null,
+      "U": 1.0
+     },
+     "jaccard_gruppi": {
+      "blocco": 1.0,
+      "percorribile": 1.0
+     },
+     "metriche_delta": {},
+     "ncd_lzma": 0.1818,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "contesto/quota-mancante@-"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [],
+     "voto": {
+      "delta": 1,
+      "dopo": 94,
+      "prima": 93
+     }
+    }
+   },
+   "file": "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md",
+   "mappa": 1,
+   "svg": "svg/Hammerfist-L1-REVISED-Ultra-Clear-01-1a-2.svg",
+   "titolo": "MAPPA 1A-2 REVISED: Il Torrione di Vedetta (griglia densa)",
+   "versioni": {
+    "A": {
+     "abbinata_per": "titolo",
+     "codice": "1A-2",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      40,
+      40
+     ],
+     "dislivello": null,
+     "mappa": 1,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 0,
+      "qualita": 1
+     },
+     "quota": null,
+     "rilievi": [
+      "contesto/quota-mancante@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 1A-2 REVISED: Il Torrione di Vedetta (griglia densa)",
+     "voto": 93
+    },
+    "B": {
+     "abbinata_per": "titolo",
+     "codice": "1A-2",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      40,
+      40
+     ],
+     "dislivello": null,
+     "mappa": 1,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 0,
+      "qualita": 1
+     },
+     "quota": null,
+     "rilievi": [
+      "contesto/quota-mancante@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 1A-2 REVISED: Il Torrione di Vedetta (griglia densa)",
+     "voto": 93
+    },
+    "C": {
+     "codice": "1A-2",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      40,
+      40
+     ],
+     "dislivello": {
+      "m": 60.0,
+      "riferimento": "sulla piana del campo, 400 m a est"
+     },
+     "mappa": 1,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 0,
+      "qualita": 0
+     },
+     "quota": {
+      "m": 930.0,
+      "riferimento": "s.l.m., la base del torrione"
+     },
+     "rilievi": [
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 1A-2 REVISED: Il Torrione di Vedetta (griglia densa)",
+     "voto": 94
+    }
+   }
+  },
+  {
+   "codice": "1A-1",
+   "confronti": {
+    "A→C": {
+     "area_quadretti": 2000,
+     "celle_cambiate": {
+      "classi": 40,
+      "quota_classi": 0.02,
+      "quota_simboli": 0.02,
+      "simboli": 40
+     },
+     "jaccard_classi": {
+      ".": 0.9731,
+      "H": null,
+      "K": 1.0,
+      "M": 0.9177,
+      "O": null,
+      "P": null,
+      "S": null,
+      "U": 1.0
+     },
+     "jaccard_gruppi": {
+      "blocco": 0.9177,
+      "percorribile": 0.9743
+     },
+     "metriche_delta": {
+      "celle_per_creatura": {
+       "delta": -5.7,
+       "dopo": 216.3,
+       "prima": 222.0
+      },
+      "copertura": {
+       "delta": 0.013,
+       "dopo": 0.254,
+       "prima": 0.241
+      },
+      "densita_icone": {
+       "delta": 0.001,
+       "dopo": 0.039,
+       "prima": 0.038
+      },
+      "libere": {
+       "delta": -0.02,
+       "dopo": 0.757,
+       "prima": 0.777
+      },
+      "m1": {
+       "delta": 0.025,
+       "dopo": 0.469,
+       "prima": 0.444
+      },
+      "m2": {
+       "delta": -0.026,
+       "dopo": 0.521,
+       "prima": 0.547
+      }
+     },
+     "ncd_lzma": 0.2857,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "contesto/quota-mancante@-",
+      "fazioni/lontane@-",
+      "spazio/disperso@-"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [
+      [
+       ".→M",
+       40
+      ]
+     ],
+     "voto": {
+      "delta": 7,
+      "dopo": 94,
+      "prima": 87
+     }
+    },
+    "B→C": {
+     "area_quadretti": 2000,
+     "celle_cambiate": {
+      "classi": 0,
+      "quota_classi": 0.0,
+      "quota_simboli": 0.0,
+      "simboli": 0
+     },
+     "jaccard_classi": {
+      ".": 1.0,
+      "H": null,
+      "K": 1.0,
+      "M": 1.0,
+      "O": null,
+      "P": null,
+      "S": null,
+      "U": 1.0
+     },
+     "jaccard_gruppi": {
+      "blocco": 1.0,
+      "percorribile": 1.0
+     },
+     "metriche_delta": {},
+     "ncd_lzma": 0.1786,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "contesto/quota-mancante@-",
+      "fazioni/lontane@-",
+      "spazio/disperso@-"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [],
+     "voto": {
+      "delta": 7,
+      "dopo": 94,
+      "prima": 87
+     }
+    }
+   },
+   "file": "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md",
+   "mappa": 2,
+   "svg": "svg/Hammerfist-L1-REVISED-Ultra-Clear-02-1a-1.svg",
+   "titolo": "MAPPA 1A-1 REVISED: Il Sentiero Nascosto (canyon completo)",
+   "versioni": {
+    "A": {
+     "abbinata_per": "titolo",
+     "codice": "1A-1",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      20,
+      100
+     ],
+     "dislivello": null,
+     "mappa": 2,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 0,
+      "qualita": 7
+     },
+     "quota": null,
+     "rilievi": [
+      "contesto/quota-mancante@-",
+      "fazioni/lontane@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-",
+      "spazio/disperso@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 1A-1 REVISED: Il Sentiero Nascosto (canyon completo)",
+     "voto": 87
+    },
+    "B": {
+     "abbinata_per": "titolo",
+     "codice": "1A-1",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      20,
+      100
+     ],
+     "dislivello": null,
+     "mappa": 2,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 0,
+      "qualita": 7
+     },
+     "quota": null,
+     "rilievi": [
+      "contesto/quota-mancante@-",
+      "fazioni/lontane@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-",
+      "spazio/disperso@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 1A-1 REVISED: Il Sentiero Nascosto (canyon completo)",
+     "voto": 87
+    },
+    "C": {
+     "codice": "1A-1",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      20,
+      100
+     ],
+     "dislivello": {
+      "m": 30.0,
+      "riferimento": "sulla piana, alla bocca sud del canyon"
+     },
+     "mappa": 2,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 0,
+      "qualita": 0
+     },
+     "quota": {
+      "m": 900.0,
+      "riferimento": "s.l.m., il fondo del canyon a metà salita"
+     },
+     "rilievi": [
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-"
+     ],
+     "rilievi_derogati": [
+      "fazioni/lontane@-",
+      "spazio/disperso@-"
+     ],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 1A-1 REVISED: Il Sentiero Nascosto (canyon completo)",
+     "voto": 94
+    }
+   }
+  },
+  {
+   "codice": "1A-3",
+   "confronti": {
+    "A→C": {
+     "area_quadretti": 3600,
+     "celle_cambiate": {
+      "classi": 2098,
+      "quota_classi": 0.5828,
+      "quota_simboli": 0.6581,
+      "simboli": 2369
+     },
+     "jaccard_classi": {
+      ".": 0.425,
+      "H": 0.0,
+      "K": 0.0,
+      "M": 0.0,
+      "O": 0.0,
+      "P": null,
+      "S": null,
+      "U": 0.0281
+     },
+     "jaccard_gruppi": {
+      "blocco": 0.0,
+      "percorribile": 0.5361
+     },
+     "metriche_delta": {
+      "anelli": {
+       "delta": 122,
+       "dopo": 123,
+       "prima": 1
+      },
+      "anelli_strutturali": {
+       "delta": 1,
+       "dopo": 1,
+       "prima": 0
+      },
+      "area_m2": {
+       "delta": 27900,
+       "dopo": 32400,
+       "prima": 4500
+      },
+      "celle": {
+       "delta": 1600,
+       "dopo": 3600,
+       "prima": 2000
+      },
+      "celle_per_creatura": {
+       "delta": 84.8,
+       "dopo": 90.9,
+       "prima": 6.1
+      },
+      "copertura": {
+       "delta": 0.261,
+       "dopo": 0.268,
+       "prima": 0.007
+      },
+      "creature": {
+       "delta": -290,
+       "dopo": 38,
+       "prima": 328
+      },
+      "densita_icone": {
+       "delta": 0.024,
+       "dopo": 0.025,
+       "prima": 0.001
+      },
+      "fila_indiana": {
+       "delta": 0.031,
+       "dopo": 0.031,
+       "prima": 0.0
+      },
+      "flipmat": {
+       "delta": 1.16,
+       "dopo": 2.61,
+       "prima": 1.45
+      },
+      "libere": {
+       "delta": -0.039,
+       "dopo": 0.959,
+       "prima": 0.998
+      },
+      "m1": {
+       "delta": 0.455,
+       "dopo": 0.473,
+       "prima": 0.018
+      },
+      "m2": {
+       "delta": -0.459,
+       "dopo": 0.523,
+       "prima": 0.982
+      },
+      "nemici": {
+       "delta": -290,
+       "dopo": 38,
+       "prima": 328
+      },
+      "scala_m": {
+       "delta": 1.5,
+       "dopo": 3.0,
+       "prima": 1.5
+      },
+      "simboli": {
+       "delta": 7,
+       "dopo": 10,
+       "prima": 3
+      }
+     },
+     "ncd_lzma": 0.7928,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "contesto/quota-mancante@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-",
+      "oggetti/tende-a-grappolo@R29",
+      "scala/titolo@-"
+     ],
+     "stesse_dimensioni": false,
+     "transizioni": [
+      [
+       "V→.",
+       1528
+      ],
+      [
+       "U→.",
+       311
+      ],
+      [
+       ".→M",
+       83
+      ],
+      [
+       ".→K",
+       67
+      ],
+      [
+       "V→M",
+       50
+      ],
+      [
+       "V→U",
+       15
+      ],
+      [
+       ".→U",
+       13
+      ],
+      [
+       ".→H",
+       7
+      ],
+      [
+       ".→O",
+       6
+      ],
+      [
+       "U→M",
+       5
+      ],
+      [
+       "V→H",
+       5
+      ],
+      [
+       "M→.",
+       4
+      ],
+      [
+       "U→K",
+       2
+      ],
+      [
+       "V→O",
+       2
+      ]
+     ],
+     "voto": {
+      "delta": 14,
+      "dopo": 100,
+      "prima": 86
+     }
+    },
+    "B→C": {
+     "area_quadretti": 3600,
+     "celle_cambiate": {
+      "classi": 2098,
+      "quota_classi": 0.5828,
+      "quota_simboli": 0.6581,
+      "simboli": 2369
+     },
+     "jaccard_classi": {
+      ".": 0.425,
+      "H": 0.0,
+      "K": 0.0,
+      "M": 0.0,
+      "O": 0.0,
+      "P": null,
+      "S": null,
+      "U": 0.0281
+     },
+     "jaccard_gruppi": {
+      "blocco": 0.0,
+      "percorribile": 0.5361
+     },
+     "metriche_delta": {
+      "anelli": {
+       "delta": 122,
+       "dopo": 123,
+       "prima": 1
+      },
+      "anelli_strutturali": {
+       "delta": 1,
+       "dopo": 1,
+       "prima": 0
+      },
+      "area_m2": {
+       "delta": -39600,
+       "dopo": 32400,
+       "prima": 72000
+      },
+      "celle": {
+       "delta": 1600,
+       "dopo": 3600,
+       "prima": 2000
+      },
+      "celle_per_creatura": {
+       "delta": 84.8,
+       "dopo": 90.9,
+       "prima": 6.1
+      },
+      "copertura": {
+       "delta": 0.261,
+       "dopo": 0.268,
+       "prima": 0.007
+      },
+      "creature": {
+       "delta": -290,
+       "dopo": 38,
+       "prima": 328
+      },
+      "densita_icone": {
+       "delta": 0.024,
+       "dopo": 0.025,
+       "prima": 0.001
+      },
+      "fila_indiana": {
+       "delta": 0.031,
+       "dopo": 0.031,
+       "prima": 0.0
+      },
+      "flipmat": {
+       "delta": 1.16,
+       "dopo": 2.61,
+       "prima": 1.45
+      },
+      "libere": {
+       "delta": -0.039,
+       "dopo": 0.959,
+       "prima": 0.998
+      },
+      "m1": {
+       "delta": 0.455,
+       "dopo": 0.473,
+       "prima": 0.018
+      },
+      "m2": {
+       "delta": -0.459,
+       "dopo": 0.523,
+       "prima": 0.982
+      },
+      "nemici": {
+       "delta": -290,
+       "dopo": 38,
+       "prima": 328
+      },
+      "scala_m": {
+       "delta": -3.0,
+       "dopo": 3.0,
+       "prima": 6.0
+      },
+      "simboli": {
+       "delta": 7,
+       "dopo": 10,
+       "prima": 3
+      }
+     },
+     "ncd_lzma": 0.7928,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "contesto/quota-mancante@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-",
+      "oggetti/tende-a-grappolo@R29",
+      "scala/tattica-non-a-1-5@-",
+      "scala/titolo@-"
+     ],
+     "stesse_dimensioni": false,
+     "transizioni": [
+      [
+       "V→.",
+       1528
+      ],
+      [
+       "U→.",
+       311
+      ],
+      [
+       ".→M",
+       83
+      ],
+      [
+       ".→K",
+       67
+      ],
+      [
+       "V→M",
+       50
+      ],
+      [
+       "V→U",
+       15
+      ],
+      [
+       ".→U",
+       13
+      ],
+      [
+       ".→H",
+       7
+      ],
+      [
+       ".→O",
+       6
+      ],
+      [
+       "U→M",
+       5
+      ],
+      [
+       "V→H",
+       5
+      ],
+      [
+       "M→.",
+       4
+      ],
+      [
+       "U→K",
+       2
+      ],
+      [
+       "V→O",
+       2
+      ]
+     ],
+     "voto": {
+      "delta": 17,
+      "dopo": 100,
+      "prima": 83
+     }
+    }
+   },
+   "file": "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md",
+   "mappa": 3,
+   "svg": "svg/Hammerfist-L1-REVISED-Ultra-Clear-03-1a-3.svg",
+   "titolo": "MAPPA 1A-3 REVISED: Campo della Mano Rossa (vista strategica)",
+   "versioni": {
+    "A": {
+     "abbinata_per": "codice",
+     "codice": "1A-3",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      40,
+      50
+     ],
+     "dislivello": null,
+     "mappa": 3,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 0,
+      "qualita": 8
+     },
+     "quota": null,
+     "rilievi": [
+      "contesto/quota-mancante@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-",
+      "oggetti/tende-a-grappolo@R29",
+      "scala/titolo@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 1A-3 REVISED: Campo della Mano Rossa (griglia strategica)",
+     "voto": 86
+    },
+    "B": {
+     "abbinata_per": "codice",
+     "codice": "1A-3",
+     "dimensioni_dichiarate": [
+      40,
+      50
+     ],
+     "dimensioni_quadretti": [
+      40,
+      50
+     ],
+     "dislivello": null,
+     "mappa": 3,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 0,
+      "qualita": 11
+     },
+     "quota": null,
+     "rilievi": [
+      "contesto/quota-mancante@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-",
+      "oggetti/tende-a-grappolo@R29",
+      "scala/tattica-non-a-1-5@-",
+      "scala/titolo@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 6.0,
+     "scala_nella_griglia": true,
+     "titolo": "MAPPA 1A-3 REVISED: Campo della Mano Rossa (griglia strategica)",
+     "voto": 83
+    },
+    "C": {
+     "codice": "1A-3",
+     "dimensioni_dichiarate": [
+      60,
+      60
+     ],
+     "dimensioni_quadretti": [
+      60,
+      60
+     ],
+     "dislivello": {
+      "m": 0.0,
+      "riferimento": "sulla piana: Hammerfist è 80 m più in alto, a qualche miglio a nord"
+     },
+     "mappa": 3,
+     "penalita": {
+      "collaudo_avvisi": 0,
+      "collaudo_errori": 0,
+      "qualita": 0
+     },
+     "quota": {
+      "m": 870.0,
+      "riferimento": "s.l.m., la piana"
+     },
+     "rilievi": [],
+     "rilievi_derogati": [],
+     "scala_m": 3.0,
+     "scala_nella_griglia": true,
+     "titolo": "MAPPA 1A-3 REVISED: Campo della Mano Rossa (vista strategica)",
+     "voto": 100
+    }
+   }
+  },
+  {
+   "codice": "1D",
+   "confronti": {
+    "A→C": {
+     "area_quadretti": 144,
+     "celle_cambiate": {
+      "classi": 0,
+      "quota_classi": 0.0,
+      "quota_simboli": 0.0,
+      "simboli": 0
+     },
+     "jaccard_classi": {
+      ".": 1.0,
+      "H": 1.0,
+      "K": 1.0,
+      "M": 1.0,
+      "O": null,
+      "P": null,
+      "S": null,
+      "U": 1.0
+     },
+     "jaccard_gruppi": {
+      "blocco": 1.0,
+      "percorribile": 1.0
+     },
+     "metriche_delta": {},
+     "ncd_lzma": 0.0465,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "contesto/quota-mancante@-"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [],
+     "voto": {
+      "delta": 1,
+      "dopo": 98,
+      "prima": 97
+     }
+    },
+    "B→C": {
+     "area_quadretti": 144,
+     "celle_cambiate": {
+      "classi": 0,
+      "quota_classi": 0.0,
+      "quota_simboli": 0.0,
+      "simboli": 0
+     },
+     "jaccard_classi": {
+      ".": 1.0,
+      "H": 1.0,
+      "K": 1.0,
+      "M": 1.0,
+      "O": null,
+      "P": null,
+      "S": null,
+      "U": 1.0
+     },
+     "jaccard_gruppi": {
+      "blocco": 1.0,
+      "percorribile": 1.0
+     },
+     "metriche_delta": {},
+     "ncd_lzma": 0.0465,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "contesto/quota-mancante@-"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [],
+     "voto": {
+      "delta": 1,
+      "dopo": 98,
+      "prima": 97
+     }
+    }
+   },
+   "file": "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md",
+   "mappa": 4,
+   "svg": "svg/Hammerfist-L1-REVISED-Ultra-Clear-04-1d.svg",
+   "titolo": "MAPPA 1D: Il pendio sotto le mura",
+   "versioni": {
+    "A": {
+     "abbinata_per": "titolo",
+     "codice": "1D",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      12,
+      12
+     ],
+     "dislivello": null,
+     "mappa": 4,
+     "penalita": {
+      "collaudo_avvisi": 2,
+      "collaudo_errori": 0,
+      "qualita": 1
+     },
+     "quota": null,
+     "rilievi": [
+      "contesto/quota-mancante@-",
+      "m4/esposizione@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 1D: Il pendio sotto le mura",
+     "voto": 97
+    },
+    "B": {
+     "abbinata_per": "titolo",
+     "codice": "1D",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      12,
+      12
+     ],
+     "dislivello": null,
+     "mappa": 4,
+     "penalita": {
+      "collaudo_avvisi": 2,
+      "collaudo_errori": 0,
+      "qualita": 1
+     },
+     "quota": null,
+     "rilievi": [
+      "contesto/quota-mancante@-",
+      "m4/esposizione@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 1D: Il pendio sotto le mura",
+     "voto": 97
+    },
+    "C": {
+     "codice": "1D",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      12,
+      12
+     ],
+     "dislivello": {
+      "m": 75.0,
+      "riferimento": "sulla piana, che comincia 300 m più a sud"
+     },
+     "mappa": 4,
+     "penalita": {
+      "collaudo_avvisi": 2,
+      "collaudo_errori": 0,
+      "qualita": 0
+     },
+     "quota": {
+      "m": 945.0,
+      "riferimento": "s.l.m., il piede della cinta"
+     },
+     "rilievi": [
+      "m4/esposizione@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 1D: Il pendio sotto le mura",
+     "voto": 98
+    }
+   }
+  },
+  {
+   "codice": "2A",
+   "confronti": {
+    "A→C": {
+     "area_quadretti": 9600,
+     "celle_cambiate": {
+      "classi": 1608,
+      "quota_classi": 0.1675,
+      "quota_simboli": 0.4381,
+      "simboli": 4206
+     },
+     "jaccard_classi": {
+      ".": 0.7978,
+      "H": null,
+      "K": 0.0,
+      "M": 0.6278,
+      "O": null,
+      "P": 0.4138,
+      "S": null,
+      "U": 0.1537
+     },
+     "jaccard_gruppi": {
+      "blocco": 0.6278,
+      "percorribile": 0.8482
+     },
+     "metriche_delta": {
+      "anelli": {
+       "delta": 1,
+       "dopo": 4,
+       "prima": 3
+      },
+      "bordo_aperto": {
+       "delta": -0.03,
+       "dopo": 0.6,
+       "prima": 0.63
+      },
+      "celle_per_creatura": {
+       "delta": -6.7,
+       "dopo": 26.7,
+       "prima": 33.4
+      },
+      "copertura": {
+       "delta": 0.031,
+       "dopo": 0.133,
+       "prima": 0.102
+      },
+      "creature": {
+       "delta": 27,
+       "dopo": 250,
+       "prima": 223
+      },
+      "densita_icone": {
+       "delta": 0.036,
+       "dopo": 0.045,
+       "prima": 0.009
+      },
+      "fila_indiana": {
+       "delta": 0.001,
+       "dopo": 0.001,
+       "prima": 0.0
+      },
+      "ingressi": {
+       "delta": 86,
+       "dopo": 91,
+       "prima": 5
+      },
+      "libere": {
+       "delta": -0.082,
+       "dopo": 0.695,
+       "prima": 0.777
+      },
+      "m1": {
+       "delta": 0.026,
+       "dopo": 0.22,
+       "prima": 0.194
+      },
+      "m2": {
+       "delta": 0.114,
+       "dopo": 0.462,
+       "prima": 0.348
+      },
+      "mura_sottili": {
+       "delta": -0.89,
+       "dopo": 0.09,
+       "prima": 0.98
+      },
+      "pg": {
+       "delta": 27,
+       "dopo": 250,
+       "prima": 223
+      },
+      "simboli": {
+       "delta": 3,
+       "dopo": 15,
+       "prima": 12
+      },
+      "vicoli_ciechi": {
+       "delta": 4,
+       "dopo": 6,
+       "prima": 2
+      }
+     },
+     "ncd_lzma": 0.7852,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "coerenza/mura-sottili@-",
+      "contesto/quota-mancante@-",
+      "oggetti/porta-enorme@BE41",
+      "oggetti/porta-enorme@BE72"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [
+      [
+       ".→M",
+       933
+      ],
+      [
+       ".→U",
+       185
+      ],
+      [
+       "M→.",
+       134
+      ],
+      [
+       "U→.",
+       130
+      ],
+      [
+       ".→K",
+       105
+      ],
+      [
+       "M→K",
+       51
+      ],
+      [
+       "U→M",
+       28
+      ],
+      [
+       "K→.",
+       13
+      ],
+      [
+       "K→M",
+       8
+      ],
+      [
+       "P→.",
+       6
+      ],
+      [
+       ".→P",
+       5
+      ],
+      [
+       "P→M",
+       4
+      ],
+      [
+       "M→U",
+       2
+      ],
+      [
+       "P→K",
+       2
+      ],
+      [
+       "U→K",
+       2
+      ]
+     ],
+     "voto": {
+      "delta": 8,
+      "dopo": 100,
+      "prima": 92
+     }
+    },
+    "B→C": {
+     "area_quadretti": 9600,
+     "celle_cambiate": {
+      "classi": 110,
+      "quota_classi": 0.0115,
+      "quota_simboli": 0.0206,
+      "simboli": 198
+     },
+     "jaccard_classi": {
+      ".": 0.9826,
+      "H": null,
+      "K": 1.0,
+      "M": 0.9857,
+      "O": null,
+      "P": 1.0,
+      "S": null,
+      "U": 0.7718
+     },
+     "jaccard_gruppi": {
+      "blocco": 0.9857,
+      "percorribile": 0.9937
+     },
+     "metriche_delta": {
+      "anelli": {
+       "delta": 1,
+       "dopo": 4,
+       "prima": 3
+      },
+      "anelli_strutturali": {
+       "delta": 1,
+       "dopo": 3,
+       "prima": 2
+      },
+      "celle_per_creatura": {
+       "delta": 2.6,
+       "dopo": 26.7,
+       "prima": 24.1
+      },
+      "copertura": {
+       "delta": 0.014,
+       "dopo": 0.133,
+       "prima": 0.119
+      },
+      "creature": {
+       "delta": -28,
+       "dopo": 250,
+       "prima": 278
+      },
+      "densita_icone": {
+       "delta": 0.013,
+       "dopo": 0.045,
+       "prima": 0.032
+      },
+      "ingressi": {
+       "delta": 80,
+       "dopo": 91,
+       "prima": 11
+      },
+      "libere": {
+       "delta": -0.004,
+       "dopo": 0.695,
+       "prima": 0.699
+      },
+      "m1": {
+       "delta": 0.016,
+       "dopo": 0.22,
+       "prima": 0.204
+      },
+      "m2": {
+       "delta": 0.003,
+       "dopo": 0.462,
+       "prima": 0.459
+      },
+      "mura_sottili": {
+       "delta": 0.09,
+       "dopo": 0.09,
+       "prima": 0.0
+      },
+      "pg": {
+       "delta": -28,
+       "dopo": 250,
+       "prima": 278
+      }
+     },
+     "ncd_lzma": 0.1852,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "contesto/quota-mancante@-",
+      "oggetti/porta-enorme@BG20",
+      "oggetti/porta-enorme@BG41",
+      "oggetti/porta-enorme@BG73"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [
+      [
+       "U→.",
+       48
+      ],
+      [
+       ".→M",
+       42
+      ],
+      [
+       ".→U",
+       20
+      ]
+     ],
+     "voto": {
+      "delta": 7,
+      "dopo": 100,
+      "prima": 93
+     }
+    }
+   },
+   "file": "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md",
+   "mappa": 1,
+   "svg": "svg/Hammerfist-L2-REVISED-Ultra-Clear-01-2a.svg",
+   "titolo": "MAPPA 2A REVISED: Fortezza Hammerfist top-down (scala piena)",
+   "versioni": {
+    "A": {
+     "abbinata_per": "titolo",
+     "codice": "2A",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      120,
+      80
+     ],
+     "dislivello": null,
+     "mappa": 1,
+     "penalita": {
+      "collaudo_avvisi": 0,
+      "collaudo_errori": 0,
+      "qualita": 8
+     },
+     "quota": null,
+     "rilievi": [
+      "coerenza/mura-sottili@-",
+      "contesto/quota-mancante@-",
+      "oggetti/porta-enorme@BE41",
+      "oggetti/porta-enorme@BE72"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 2A REVISED: Fortezza Hammerfist top-down (scala piena)",
+     "voto": 92
+    },
+    "B": {
+     "abbinata_per": "titolo",
+     "codice": "2A",
+     "dimensioni_dichiarate": [
+      120,
+      80
+     ],
+     "dimensioni_quadretti": [
+      120,
+      80
+     ],
+     "dislivello": null,
+     "mappa": 1,
+     "penalita": {
+      "collaudo_avvisi": 0,
+      "collaudo_errori": 0,
+      "qualita": 7
+     },
+     "quota": null,
+     "rilievi": [
+      "contesto/quota-mancante@-",
+      "oggetti/porta-enorme@BG20",
+      "oggetti/porta-enorme@BG41",
+      "oggetti/porta-enorme@BG73"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": true,
+     "titolo": "MAPPA 2A REVISED: Fortezza Hammerfist top-down (scala piena)",
+     "voto": 93
+    },
+    "C": {
+     "codice": "2A",
+     "dimensioni_dichiarate": [
+      120,
+      80
+     ],
+     "dimensioni_quadretti": [
+      120,
+      80
+     ],
+     "dislivello": {
+      "m": 80.0,
+      "riferimento": "sulla piana, in fondo alla strada a tornanti"
+     },
+     "mappa": 1,
+     "penalita": {
+      "collaudo_avvisi": 0,
+      "collaudo_errori": 0,
+      "qualita": 0
+     },
+     "quota": {
+      "m": 950.0,
+      "riferimento": "s.l.m., la soglia del cancello principale"
+     },
+     "rilievi": [],
+     "rilievi_derogati": [
+      "oggetti/porta-enorme@BG20",
+      "oggetti/porta-enorme@BG41",
+      "oggetti/porta-enorme@BG73"
+     ],
+     "scala_m": 1.5,
+     "scala_nella_griglia": true,
+     "titolo": "MAPPA 2A REVISED: Fortezza Hammerfist top-down (scala piena)",
+     "voto": 100
+    }
+   }
+  },
+  {
+   "codice": "1",
+   "confronti": {
+    "A→C": {
+     "area_quadretti": 6480,
+     "celle_cambiate": {
+      "classi": 108,
+      "quota_classi": 0.0167,
+      "quota_simboli": 0.1142,
+      "simboli": 740
+     },
+     "jaccard_classi": {
+      ".": 0.9819,
+      "H": null,
+      "K": 0.0,
+      "M": 0.5047,
+      "O": null,
+      "P": 1.0,
+      "S": null,
+      "U": 1.0
+     },
+     "jaccard_gruppi": {
+      "blocco": 0.5047,
+      "percorribile": 0.9918
+     },
+     "metriche_delta": {
+      "anelli": {
+       "delta": -1,
+       "dopo": 0,
+       "prima": 1
+      },
+      "anelli_strutturali": {
+       "delta": -1,
+       "dopo": 0,
+       "prima": 1
+      },
+      "area_m2": {
+       "delta": 43740,
+       "dopo": 58320,
+       "prima": 14580
+      },
+      "bordo_aperto": {
+       "delta": 0.09,
+       "dopo": 0.93,
+       "prima": 0.84
+      },
+      "celle_per_creatura": {
+       "delta": 0.1,
+       "dopo": 14.3,
+       "prima": 14.2
+      },
+      "copertura": {
+       "delta": 0.067,
+       "dopo": 0.079,
+       "prima": 0.012
+      },
+      "densita_icone": {
+       "delta": 0.005,
+       "dopo": 0.006,
+       "prima": 0.001
+      },
+      "fila_indiana": {
+       "delta": 0.002,
+       "dopo": 0.002,
+       "prima": 0.0
+      },
+      "ingressi": {
+       "delta": 1,
+       "dopo": 2,
+       "prima": 1
+      },
+      "libere": {
+       "delta": 0.009,
+       "dopo": 0.992,
+       "prima": 0.983
+      },
+      "m1": {
+       "delta": 0.173,
+       "dopo": 0.198,
+       "prima": 0.025
+      },
+      "m2": {
+       "delta": -0.174,
+       "dopo": 0.801,
+       "prima": 0.975
+      },
+      "scala_m": {
+       "delta": 1.5,
+       "dopo": 3.0,
+       "prima": 1.5
+      },
+      "simboli": {
+       "delta": 4,
+       "dopo": 13,
+       "prima": 9
+      }
+     },
+     "ncd_lzma": 0.8433,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "contesto/quota-mancante@-",
+      "oggetti/tende-a-grappolo@AA62"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [
+      [
+       ".→K",
+       55
+      ],
+      [
+       "M→.",
+       53
+      ]
+     ],
+     "voto": {
+      "delta": 4,
+      "dopo": 100,
+      "prima": 96
+     }
+    },
+    "B→C": {
+     "area_quadretti": 6480,
+     "celle_cambiate": {
+      "classi": 60,
+      "quota_classi": 0.0093,
+      "quota_simboli": 0.1031,
+      "simboli": 668
+     },
+     "jaccard_classi": {
+      ".": 0.99,
+      "H": null,
+      "K": 0.0,
+      "M": 0.9153,
+      "O": null,
+      "P": 1.0,
+      "S": null,
+      "U": 1.0
+     },
+     "jaccard_gruppi": {
+      "blocco": 0.9153,
+      "percorribile": 0.9992
+     },
+     "metriche_delta": {
+      "anelli": {
+       "delta": -1,
+       "dopo": 0,
+       "prima": 1
+      },
+      "anelli_strutturali": {
+       "delta": -1,
+       "dopo": 0,
+       "prima": 1
+      },
+      "copertura": {
+       "delta": 0.068,
+       "dopo": 0.079,
+       "prima": 0.011
+      },
+      "densita_icone": {
+       "delta": 0.005,
+       "dopo": 0.006,
+       "prima": 0.001
+      },
+      "libere": {
+       "delta": 0.001,
+       "dopo": 0.992,
+       "prima": 0.991
+      },
+      "m1": {
+       "delta": 0.177,
+       "dopo": 0.198,
+       "prima": 0.021
+      },
+      "m2": {
+       "delta": -0.178,
+       "dopo": 0.801,
+       "prima": 0.979
+      },
+      "simboli": {
+       "delta": 3,
+       "dopo": 13,
+       "prima": 10
+      }
+     },
+     "ncd_lzma": 0.8157,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "contesto/quota-mancante@-",
+      "oggetti/tende-a-grappolo@AA62"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [
+      [
+       ".→K",
+       55
+      ],
+      [
+       "M→.",
+       5
+      ]
+     ],
+     "voto": {
+      "delta": 4,
+      "dopo": 100,
+      "prima": 96
+     }
+    }
+   },
+   "file": "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md",
+   "mappa": 2,
+   "svg": "svg/Hammerfist-L2-REVISED-Ultra-Clear-02-1.svg",
+   "titolo": "MAPPA 1 REVISED: Disposizione Generale Giorno 1 (0-300 m)",
+   "versioni": {
+    "A": {
+     "abbinata_per": "titolo",
+     "codice": "1",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      60,
+      108
+     ],
+     "dislivello": null,
+     "mappa": 2,
+     "penalita": {
+      "collaudo_avvisi": 0,
+      "collaudo_errori": 0,
+      "qualita": 4
+     },
+     "quota": null,
+     "rilievi": [
+      "contesto/quota-mancante@-",
+      "oggetti/tende-a-grappolo@AA62"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 1 REVISED: Disposizione Generale Giorno 1 (0-300 m)",
+     "voto": 96
+    },
+    "B": {
+     "abbinata_per": "titolo",
+     "codice": "1",
+     "dimensioni_dichiarate": [
+      60,
+      108
+     ],
+     "dimensioni_quadretti": [
+      60,
+      108
+     ],
+     "dislivello": null,
+     "mappa": 2,
+     "penalita": {
+      "collaudo_avvisi": 0,
+      "collaudo_errori": 0,
+      "qualita": 4
+     },
+     "quota": null,
+     "rilievi": [
+      "contesto/quota-mancante@-",
+      "oggetti/tende-a-grappolo@AA62"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 3.0,
+     "scala_nella_griglia": true,
+     "titolo": "MAPPA 1 REVISED: Disposizione Generale Giorno 1 (0-300 m)",
+     "voto": 96
+    },
+    "C": {
+     "codice": "1",
+     "dimensioni_dichiarate": [
+      60,
+      108
+     ],
+     "dimensioni_quadretti": [
+      60,
+      108
+     ],
+     "dislivello": {
+      "m": 80.0,
+      "riferimento": "sulla piana, che comincia alla riga 101"
+     },
+     "mappa": 2,
+     "penalita": {
+      "collaudo_avvisi": 0,
+      "collaudo_errori": 0,
+      "qualita": 0
+     },
+     "quota": {
+      "m": 950.0,
+      "riferimento": "s.l.m., la soglia del cancello"
+     },
+     "rilievi": [],
+     "rilievi_derogati": [],
+     "scala_m": 3.0,
+     "scala_nella_griglia": true,
+     "titolo": "MAPPA 1 REVISED: Disposizione Generale Giorno 1 (0-300 m)",
+     "voto": 100
+    }
+   }
+  },
+  {
+   "codice": "2B-CORRETTA",
+   "confronti": {
+    "A→C": {
+     "area_quadretti": 1040,
+     "celle_cambiate": {
+      "classi": 248,
+      "quota_classi": 0.2385,
+      "quota_simboli": 0.9913,
+      "simboli": 1031
+     },
+     "jaccard_classi": {
+      ".": 0.764,
+      "H": 0.0,
+      "K": 0.0,
+      "M": 0.0,
+      "O": null,
+      "P": 0.0,
+      "S": null,
+      "U": 0.0244
+     },
+     "jaccard_gruppi": {
+      "blocco": 0.0,
+      "percorribile": 0.9769
+     },
+     "metriche_delta": {
+      "anelli": {
+       "delta": -1,
+       "dopo": 0,
+       "prima": 1
+      },
+      "anelli_strutturali": {
+       "delta": -1,
+       "dopo": 0,
+       "prima": 1
+      },
+      "celle_per_creatura": {
+       "delta": -16.1,
+       "dopo": 18.9,
+       "prima": 35.0
+      },
+      "copertura": {
+       "delta": -0.047,
+       "dopo": 0.092,
+       "prima": 0.139
+      },
+      "creature": {
+       "delta": 26,
+       "dopo": 55,
+       "prima": 29
+      },
+      "densita_icone": {
+       "delta": 0.016,
+       "dopo": 0.043,
+       "prima": 0.027
+      },
+      "distanza_media_m": {
+       "delta": 3.4,
+       "dopo": 13.9,
+       "prima": 10.5
+      },
+      "distanza_min_m": {
+       "delta": -3.0,
+       "dopo": 7.5,
+       "prima": 10.5
+      },
+      "distanza_min_q": {
+       "delta": -2.0,
+       "dopo": 5.0,
+       "prima": 7.0
+      },
+      "ingressi": {
+       "delta": 2,
+       "dopo": 8,
+       "prima": 6
+      },
+      "libere": {
+       "delta": 0.023,
+       "dopo": 1.0,
+       "prima": 0.977
+      },
+      "m1": {
+       "delta": -0.081,
+       "dopo": 0.163,
+       "prima": 0.244
+      },
+      "m2": {
+       "delta": 0.081,
+       "dopo": 0.837,
+       "prima": 0.756
+      },
+      "nemici": {
+       "delta": 32,
+       "dopo": 33,
+       "prima": 1
+      },
+      "pg": {
+       "delta": -6,
+       "dopo": 22,
+       "prima": 28
+      },
+      "simboli": {
+       "delta": 2,
+       "dopo": 10,
+       "prima": 8
+      },
+      "strozzatura": {
+       "delta": 16,
+       "dopo": 26,
+       "prima": 10
+      }
+     },
+     "ncd_lzma": 0.6271,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "coerenza/mura-sottili@-",
+      "contesto/quota-mancante@-",
+      "posa/nel-muro@W15"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [
+      [
+       ".→U",
+       50
+      ],
+      [
+       "H→.",
+       46
+      ],
+      [
+       ".→H",
+       43
+      ],
+      [
+       ".→K",
+       30
+      ],
+      [
+       "U→.",
+       26
+      ],
+      [
+       "K→.",
+       24
+      ],
+      [
+       "M→.",
+       24
+      ],
+      [
+       "H→U",
+       3
+      ],
+      [
+       "P→.",
+       1
+      ],
+      [
+       "U→H",
+       1
+      ]
+     ],
+     "voto": {
+      "delta": 16,
+      "dopo": 94,
+      "prima": 78
+     }
+    },
+    "B→C": {
+     "area_quadretti": 1040,
+     "celle_cambiate": {
+      "classi": 0,
+      "quota_classi": 0.0,
+      "quota_simboli": 0.0,
+      "simboli": 0
+     },
+     "jaccard_classi": {
+      ".": 1.0,
+      "H": 1.0,
+      "K": 1.0,
+      "M": null,
+      "O": null,
+      "P": null,
+      "S": null,
+      "U": 1.0
+     },
+     "jaccard_gruppi": {
+      "blocco": null,
+      "percorribile": 1.0
+     },
+     "metriche_delta": {},
+     "ncd_lzma": 0.1356,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "contesto/quota-mancante@-"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [],
+     "voto": {
+      "delta": 1,
+      "dopo": 94,
+      "prima": 93
+     }
+    }
+   },
+   "file": "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md",
+   "mappa": 3,
+   "svg": "svg/Hammerfist-L2-REVISED-Ultra-Clear-03-2b-corretta.svg",
+   "titolo": "MAPPA 2B-CORRETTA REVISED: Attacco del Drago sui Bastioni",
+   "versioni": {
+    "A": {
+     "abbinata_per": "titolo",
+     "codice": "2B-CORRETTA",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      40,
+      26
+     ],
+     "dislivello": null,
+     "mappa": 3,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 12,
+      "qualita": 4
+     },
+     "quota": null,
+     "rilievi": [
+      "coerenza/mura-sottili@-",
+      "contesto/quota-mancante@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-",
+      "posa/nel-muro@W15"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 2B-CORRETTA REVISED: Attacco del Drago sui Bastioni",
+     "voto": 78
+    },
+    "B": {
+     "abbinata_per": "titolo",
+     "codice": "2B-CORRETTA",
+     "dimensioni_dichiarate": [
+      40,
+      26
+     ],
+     "dimensioni_quadretti": [
+      40,
+      26
+     ],
+     "dislivello": null,
+     "mappa": 3,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 0,
+      "qualita": 1
+     },
+     "quota": null,
+     "rilievi": [
+      "contesto/quota-mancante@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": true,
+     "titolo": "MAPPA 2B-CORRETTA REVISED: Attacco del Drago sui Bastioni",
+     "voto": 93
+    },
+    "C": {
+     "codice": "2B-CORRETTA",
+     "dimensioni_dichiarate": [
+      40,
+      26
+     ],
+     "dimensioni_quadretti": [
+      40,
+      26
+     ],
+     "dislivello": {
+      "m": 15.0,
+      "riferimento": "sul cortile esterno (+95 m sulla piana)"
+     },
+     "mappa": 3,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 0,
+      "qualita": 0
+     },
+     "quota": {
+      "m": 965.0,
+      "riferimento": "s.l.m., la piattaforma sopra il cancello"
+     },
+     "rilievi": [
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": true,
+     "titolo": "MAPPA 2B-CORRETTA REVISED: Attacco del Drago sui Bastioni",
+     "voto": 94
+    }
+   }
+  },
+  {
+   "codice": "H3-1",
+   "confronti": {
+    "A→C": {
+     "area_quadretti": 2880,
+     "celle_cambiate": {
+      "classi": 1900,
+      "quota_classi": 0.6597,
+      "quota_simboli": 0.8688,
+      "simboli": 2502
+     },
+     "jaccard_classi": {
+      ".": 0.3586,
+      "H": 0.0,
+      "K": 0.0185,
+      "M": 0.057,
+      "O": null,
+      "P": 0.0,
+      "S": null,
+      "U": 0.0113
+     },
+     "jaccard_gruppi": {
+      "blocco": 0.057,
+      "percorribile": 0.4559
+     },
+     "metriche_delta": {
+      "anelli_strutturali": {
+       "delta": -3,
+       "dopo": 1,
+       "prima": 4
+      },
+      "area_m2": {
+       "delta": 2232,
+       "dopo": 5832,
+       "prima": 3600
+      },
+      "bordo_aperto": {
+       "delta": -0.39,
+       "dopo": 0.61,
+       "prima": 1.0
+      },
+      "celle": {
+       "delta": 992,
+       "dopo": 2592,
+       "prima": 1600
+      },
+      "celle_per_creatura": {
+       "delta": 4.8,
+       "dopo": 12.6,
+       "prima": 7.8
+      },
+      "copertura": {
+       "delta": 0.064,
+       "dopo": 0.239,
+       "prima": 0.175
+      },
+      "creature": {
+       "delta": -24,
+       "dopo": 167,
+       "prima": 191
+      },
+      "densita_icone": {
+       "delta": 0.077,
+       "dopo": 0.1,
+       "prima": 0.023
+      },
+      "distanza_media_m": {
+       "delta": 74.0,
+       "dopo": 89.9,
+       "prima": 15.9
+      },
+      "distanza_min_m": {
+       "delta": 20.3,
+       "dopo": 33.8,
+       "prima": 13.5
+      },
+      "distanza_min_q": {
+       "delta": 13.5,
+       "dopo": 22.5,
+       "prima": 9.0
+      },
+      "fila_indiana": {
+       "delta": -0.003,
+       "dopo": 0.0,
+       "prima": 0.003
+      },
+      "flipmat": {
+       "delta": 0.72,
+       "dopo": 1.88,
+       "prima": 1.16
+      },
+      "ingressi": {
+       "delta": 79,
+       "dopo": 83,
+       "prima": 4
+      },
+      "libere": {
+       "delta": -0.117,
+       "dopo": 0.814,
+       "prima": 0.931
+      },
+      "m1": {
+       "delta": 0.041,
+       "dopo": 0.388,
+       "prima": 0.347
+      },
+      "m2": {
+       "delta": -0.214,
+       "dopo": 0.439,
+       "prima": 0.653
+      },
+      "nemici": {
+       "delta": -12,
+       "dopo": 72,
+       "prima": 84
+      },
+      "pg": {
+       "delta": -12,
+       "dopo": 95,
+       "prima": 107
+      },
+      "round_al_contatto": {
+       "delta": 1,
+       "dopo": 2,
+       "prima": 1
+      },
+      "simboli": {
+       "delta": 7,
+       "dopo": 15,
+       "prima": 8
+      },
+      "strozzatura": {
+       "delta": -28,
+       "dopo": 6,
+       "prima": 34
+      }
+     },
+     "ncd_lzma": 0.7416,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "contesto/quota-mancante@-",
+      "oggetti/fuoco-enorme@R34"
+     ],
+     "stesse_dimensioni": false,
+     "transizioni": [
+      [
+       "V→.",
+       839
+      ],
+      [
+       "V→M",
+       222
+      ],
+      [
+       ".→M",
+       201
+      ],
+      [
+       ".→U",
+       118
+      ],
+      [
+       "U→.",
+       116
+      ],
+      [
+       ".→V",
+       98
+      ],
+      [
+       "V→K",
+       49
+      ],
+      [
+       "U→V",
+       36
+      ],
+      [
+       "V→U",
+       36
+      ],
+      [
+       "M→V",
+       26
+      ],
+      [
+       "M→.",
+       25
+      ],
+      [
+       ".→K",
+       23
+      ],
+      [
+       "U→M",
+       23
+      ],
+      [
+       "H→.",
+       20
+      ],
+      [
+       "M→K",
+       16
+      ],
+      [
+       ".→H",
+       10
+      ],
+      [
+       "U→K",
+       8
+      ],
+      [
+       "M→U",
+       7
+      ],
+      [
+       "K→.",
+       6
+      ],
+      [
+       "V→H",
+       6
+      ],
+      [
+       "M→P",
+       5
+      ],
+      [
+       "U→H",
+       4
+      ],
+      [
+       "K→M",
+       2
+      ],
+      [
+       "K→U",
+       2
+      ],
+      [
+       "P→M",
+       2
+      ]
+     ],
+     "voto": {
+      "delta": 3,
+      "dopo": 94,
+      "prima": 91
+     }
+    },
+    "B→C": {
+     "area_quadretti": 2592,
+     "celle_cambiate": {
+      "classi": 90,
+      "quota_classi": 0.0347,
+      "quota_simboli": 0.0656,
+      "simboli": 170
+     },
+     "jaccard_classi": {
+      ".": 0.9565,
+      "H": 1.0,
+      "K": 1.0,
+      "M": 0.9129,
+      "O": null,
+      "P": 1.0,
+      "S": null,
+      "U": 0.7068
+     },
+     "jaccard_gruppi": {
+      "blocco": 0.9129,
+      "percorribile": 0.9805
+     },
+     "metriche_delta": {
+      "anelli": {
+       "delta": 1,
+       "dopo": 4,
+       "prima": 3
+      },
+      "anelli_strutturali": {
+       "delta": 1,
+       "dopo": 1,
+       "prima": 0
+      },
+      "celle_per_creatura": {
+       "delta": -0.9,
+       "dopo": 12.6,
+       "prima": 13.5
+      },
+      "copertura": {
+       "delta": 0.047,
+       "dopo": 0.239,
+       "prima": 0.192
+      },
+      "creature": {
+       "delta": 8,
+       "dopo": 167,
+       "prima": 159
+      },
+      "densita_icone": {
+       "delta": 0.039,
+       "dopo": 0.1,
+       "prima": 0.061
+      },
+      "distanza_media_m": {
+       "delta": 58.6,
+       "dopo": 89.9,
+       "prima": 31.3
+      },
+      "distanza_min_m": {
+       "delta": 14.3,
+       "dopo": 33.8,
+       "prima": 19.5
+      },
+      "distanza_min_q": {
+       "delta": 9.5,
+       "dopo": 22.5,
+       "prima": 13.0
+      },
+      "ingressi": {
+       "delta": 80,
+       "dopo": 83,
+       "prima": 3
+      },
+      "libere": {
+       "delta": -0.016,
+       "dopo": 0.814,
+       "prima": 0.83
+      },
+      "m1": {
+       "delta": 0.052,
+       "dopo": 0.388,
+       "prima": 0.336
+      },
+      "m2": {
+       "delta": 0.009,
+       "dopo": 0.439,
+       "prima": 0.43
+      },
+      "nemici": {
+       "delta": 8,
+       "dopo": 72,
+       "prima": 64
+      },
+      "round_al_contatto": {
+       "delta": 1,
+       "dopo": 2,
+       "prima": 1
+      },
+      "simboli": {
+       "delta": 1,
+       "dopo": 15,
+       "prima": 14
+      }
+     },
+     "ncd_lzma": 0.2247,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "contesto/quota-mancante@-",
+      "oggetti/fuoco-enorme@AE21",
+      "oggetti/fuoco-enorme@AM21",
+      "oggetti/porta-enorme@AI03"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [
+      [
+       ".→M",
+       34
+      ],
+      [
+       ".→U",
+       32
+      ],
+      [
+       "U→.",
+       16
+      ],
+      [
+       "U→M",
+       8
+      ]
+     ],
+     "voto": {
+      "delta": 7,
+      "dopo": 94,
+      "prima": 87
+     }
+    }
+   },
+   "file": "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md",
+   "mappa": 1,
+   "svg": "svg/Hammerfist-L3-REVISED-Ultra-Clear-01-h3-1.svg",
+   "titolo": "MAPPA H3-1 REVISED: Cortile sfondato, ultima difesa ed evacuazione",
+   "versioni": {
+    "A": {
+     "abbinata_per": "titolo",
+     "codice": "H3-1",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      40,
+      40
+     ],
+     "dislivello": null,
+     "mappa": 1,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 0,
+      "qualita": 3
+     },
+     "quota": null,
+     "rilievi": [
+      "contesto/quota-mancante@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-",
+      "oggetti/fuoco-enorme@R34"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA H3-1 REVISED: Cortile sfondato, ultima difesa ed evacuazione",
+     "voto": 91
+    },
+    "B": {
+     "abbinata_per": "titolo",
+     "codice": "H3-1",
+     "dimensioni_dichiarate": [
+      72,
+      36
+     ],
+     "dimensioni_quadretti": [
+      72,
+      36
+     ],
+     "dislivello": null,
+     "mappa": 1,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 0,
+      "qualita": 7
+     },
+     "quota": null,
+     "rilievi": [
+      "contesto/quota-mancante@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-",
+      "oggetti/fuoco-enorme@AE21",
+      "oggetti/fuoco-enorme@AM21",
+      "oggetti/porta-enorme@AI03"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": true,
+     "titolo": "MAPPA H3-1 REVISED: Cortile sfondato, ultima difesa ed evacuazione",
+     "voto": 87
+    },
+    "C": {
+     "codice": "H3-1",
+     "dimensioni_dichiarate": [
+      72,
+      36
+     ],
+     "dimensioni_quadretti": [
+      72,
+      36
+     ],
+     "dislivello": {
+      "m": 20.0,
+      "riferimento": "sul cortile esterno, oltre la scarpa"
+     },
+     "mappa": 1,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 0,
+      "qualita": 0
+     },
+     "quota": {
+      "m": 970.0,
+      "riferimento": "s.l.m., il cortile interno"
+     },
+     "rilievi": [
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-"
+     ],
+     "rilievi_derogati": [
+      "oggetti/fuoco-enorme@AE21",
+      "oggetti/fuoco-enorme@AM21",
+      "oggetti/porta-enorme@AI03"
+     ],
+     "scala_m": 1.5,
+     "scala_nella_griglia": true,
+     "titolo": "MAPPA H3-1 REVISED: Cortile sfondato, ultima difesa ed evacuazione",
+     "voto": 94
+    }
+   }
+  },
+  {
+   "codice": "3Y",
+   "confronti": {
+    "A→C": {
+     "area_quadretti": 891,
+     "celle_cambiate": {
+      "classi": 80,
+      "quota_classi": 0.0898,
+      "quota_simboli": 0.6779,
+      "simboli": 604
+     },
+     "jaccard_classi": {
+      ".": 0.7832,
+      "H": 1.0,
+      "K": 1.0,
+      "M": 0.8694,
+      "O": 1.0,
+      "P": 0.0,
+      "S": null,
+      "U": 0.4744
+     },
+     "jaccard_gruppi": {
+      "blocco": 0.8703,
+      "percorribile": 0.9403
+     },
+     "metriche_delta": {
+      "anelli": {
+       "delta": 4,
+       "dopo": 6,
+       "prima": 2
+      },
+      "anelli_strutturali": {
+       "delta": 4,
+       "dopo": 4,
+       "prima": 0
+      },
+      "bordo_aperto": {
+       "delta": -0.02,
+       "dopo": 0.09,
+       "prima": 0.11
+      },
+      "celle_per_creatura": {
+       "delta": 1.4,
+       "dopo": 11.5,
+       "prima": 10.1
+      },
+      "copertura": {
+       "delta": 0.096,
+       "dopo": 0.283,
+       "prima": 0.187
+      },
+      "creature": {
+       "delta": -11,
+       "dopo": 52,
+       "prima": 63
+      },
+      "distanza_media_m": {
+       "delta": -2.2,
+       "dopo": 12.7,
+       "prima": 14.9
+      },
+      "distanza_min_m": {
+       "delta": 7.5,
+       "dopo": 9.0,
+       "prima": 1.5
+      },
+      "distanza_min_q": {
+       "delta": 5.0,
+       "dopo": 6.0,
+       "prima": 1.0
+      },
+      "fila_indiana": {
+       "delta": 0.01,
+       "dopo": 0.01,
+       "prima": 0.0
+      },
+      "libere": {
+       "delta": -0.043,
+       "dopo": 0.671,
+       "prima": 0.714
+      },
+      "m1": {
+       "delta": 0.206,
+       "dopo": 0.594,
+       "prima": 0.388
+      },
+      "m2": {
+       "delta": -0.206,
+       "dopo": 0.406,
+       "prima": 0.612
+      },
+      "nemici": {
+       "delta": -11,
+       "dopo": 30,
+       "prima": 41
+      },
+      "round_al_contatto": {
+       "delta": 1,
+       "dopo": 1,
+       "prima": 0
+      },
+      "simboli": {
+       "delta": -1,
+       "dopo": 6,
+       "prima": 7
+      },
+      "strozzatura": {
+       "delta": -14,
+       "dopo": 11,
+       "prima": 25
+      }
+     },
+     "ncd_lzma": 0.5882,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "fazioni/a-contatto@-",
+      "posa/nel-muro@Q01",
+      "struttura/senza-anelli@-"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [
+      [
+       ".→M",
+       38
+      ],
+      [
+       "U→.",
+       26
+      ],
+      [
+       ".→U",
+       15
+      ],
+      [
+       "P→.",
+       1
+      ]
+     ],
+     "voto": {
+      "delta": 16,
+      "dopo": 94,
+      "prima": 78
+     }
+    },
+    "B→C": {
+     "area_quadretti": 891,
+     "celle_cambiate": {
+      "classi": 80,
+      "quota_classi": 0.0898,
+      "quota_simboli": 0.6779,
+      "simboli": 604
+     },
+     "jaccard_classi": {
+      ".": 0.7832,
+      "H": 1.0,
+      "K": 1.0,
+      "M": 0.8694,
+      "O": 1.0,
+      "P": 0.0,
+      "S": null,
+      "U": 0.4744
+     },
+     "jaccard_gruppi": {
+      "blocco": 0.8703,
+      "percorribile": 0.9403
+     },
+     "metriche_delta": {
+      "anelli": {
+       "delta": 4,
+       "dopo": 6,
+       "prima": 2
+      },
+      "anelli_strutturali": {
+       "delta": 4,
+       "dopo": 4,
+       "prima": 0
+      },
+      "bordo_aperto": {
+       "delta": -0.02,
+       "dopo": 0.09,
+       "prima": 0.11
+      },
+      "celle_per_creatura": {
+       "delta": 1.4,
+       "dopo": 11.5,
+       "prima": 10.1
+      },
+      "copertura": {
+       "delta": 0.096,
+       "dopo": 0.283,
+       "prima": 0.187
+      },
+      "creature": {
+       "delta": -11,
+       "dopo": 52,
+       "prima": 63
+      },
+      "distanza_media_m": {
+       "delta": -2.2,
+       "dopo": 12.7,
+       "prima": 14.9
+      },
+      "distanza_min_m": {
+       "delta": 7.5,
+       "dopo": 9.0,
+       "prima": 1.5
+      },
+      "distanza_min_q": {
+       "delta": 5.0,
+       "dopo": 6.0,
+       "prima": 1.0
+      },
+      "fila_indiana": {
+       "delta": 0.01,
+       "dopo": 0.01,
+       "prima": 0.0
+      },
+      "libere": {
+       "delta": -0.043,
+       "dopo": 0.671,
+       "prima": 0.714
+      },
+      "m1": {
+       "delta": 0.206,
+       "dopo": 0.594,
+       "prima": 0.388
+      },
+      "m2": {
+       "delta": -0.206,
+       "dopo": 0.406,
+       "prima": 0.612
+      },
+      "nemici": {
+       "delta": -11,
+       "dopo": 30,
+       "prima": 41
+      },
+      "round_al_contatto": {
+       "delta": 1,
+       "dopo": 1,
+       "prima": 0
+      },
+      "simboli": {
+       "delta": -1,
+       "dopo": 6,
+       "prima": 7
+      },
+      "strozzatura": {
+       "delta": -14,
+       "dopo": 11,
+       "prima": 25
+      }
+     },
+     "ncd_lzma": 0.5882,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "fazioni/a-contatto@-",
+      "posa/nel-muro@Q01",
+      "struttura/senza-anelli@-"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [
+      [
+       ".→M",
+       38
+      ],
+      [
+       "U→.",
+       26
+      ],
+      [
+       ".→U",
+       15
+      ],
+      [
+       "P→.",
+       1
+      ]
+     ],
+     "voto": {
+      "delta": 16,
+      "dopo": 94,
+      "prima": 78
+     }
+    }
+   },
+   "file": "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md",
+   "mappa": 2,
+   "svg": "svg/Hammerfist-L3-REVISED-Ultra-Clear-02-3y.svg",
+   "titolo": "MAPPA 3Y REVISED: Il Ponte Sospeso (retroguardia)",
+   "versioni": {
+    "A": {
+     "abbinata_per": "titolo",
+     "codice": "3Y",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      33,
+      27
+     ],
+     "dislivello": null,
+     "mappa": 2,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 12,
+      "qualita": 4
+     },
+     "quota": null,
+     "rilievi": [
+      "fazioni/a-contatto@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-",
+      "posa/nel-muro@Q01",
+      "struttura/senza-anelli@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 3Y REVISED: Il Ponte Sospeso (retroguardia)",
+     "voto": 78
+    },
+    "B": {
+     "abbinata_per": "titolo",
+     "codice": "3Y",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      33,
+      27
+     ],
+     "dislivello": null,
+     "mappa": 2,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 12,
+      "qualita": 4
+     },
+     "quota": null,
+     "rilievi": [
+      "fazioni/a-contatto@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-",
+      "posa/nel-muro@Q01",
+      "struttura/senza-anelli@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 3Y REVISED: Il Ponte Sospeso (retroguardia)",
+     "voto": 78
+    },
+    "C": {
+     "codice": "3Y",
+     "dimensioni_dichiarate": [
+      33,
+      27
+     ],
+     "dimensioni_quadretti": [
+      33,
+      27
+     ],
+     "dislivello": null,
+     "mappa": 2,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 0,
+      "qualita": 0
+     },
+     "quota": null,
+     "rilievi": [
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": true,
+     "titolo": "MAPPA 3Y REVISED: Il Ponte Sospeso (retroguardia)",
+     "voto": 94
+    }
+   }
+  },
+  {
+   "codice": "3Z",
+   "confronti": {
+    "A→C": {
+     "area_quadretti": 1089,
+     "celle_cambiate": {
+      "classi": 528,
+      "quota_classi": 0.4848,
+      "quota_simboli": 0.9862,
+      "simboli": 1074
+     },
+     "jaccard_classi": {
+      ".": 0.2834,
+      "H": 0.0,
+      "K": 0.0,
+      "M": 0.4929,
+      "O": 0.0,
+      "P": 0.0,
+      "S": null,
+      "U": 0.1111
+     },
+     "jaccard_gruppi": {
+      "blocco": 0.4965,
+      "percorribile": 0.5156
+     },
+     "metriche_delta": {
+      "anelli": {
+       "delta": 8,
+       "dopo": 12,
+       "prima": 4
+      },
+      "anelli_strutturali": {
+       "delta": 1,
+       "dopo": 1,
+       "prima": 0
+      },
+      "bordo_aperto": {
+       "delta": 0.06,
+       "dopo": 0.17,
+       "prima": 0.11
+      },
+      "celle_per_creatura": {
+       "delta": 3.3,
+       "dopo": 6.6,
+       "prima": 3.3
+      },
+      "copertura": {
+       "delta": -0.183,
+       "dopo": 0.371,
+       "prima": 0.554
+      },
+      "creature": {
+       "delta": -18,
+       "dopo": 106,
+       "prima": 124
+      },
+      "densita_icone": {
+       "delta": -0.031,
+       "dopo": 0.0,
+       "prima": 0.031
+      },
+      "distanza_media_m": {
+       "delta": 6.2,
+       "dopo": 11.7,
+       "prima": 5.5
+      },
+      "distanza_min_m": {
+       "delta": 7.5,
+       "dopo": 9.0,
+       "prima": 1.5
+      },
+      "distanza_min_q": {
+       "delta": 5.0,
+       "dopo": 6.0,
+       "prima": 1.0
+      },
+      "fila_indiana": {
+       "delta": 0.001,
+       "dopo": 0.001,
+       "prima": 0.0
+      },
+      "ingressi": {
+       "delta": 2,
+       "dopo": 6,
+       "prima": 4
+      },
+      "libere": {
+       "delta": 0.267,
+       "dopo": 0.646,
+       "prima": 0.379
+      },
+      "m1": {
+       "delta": -0.192,
+       "dopo": 0.716,
+       "prima": 0.908
+      },
+      "m2": {
+       "delta": 0.035,
+       "dopo": 0.088,
+       "prima": 0.053
+      },
+      "nemici": {
+       "delta": -10,
+       "dopo": 15,
+       "prima": 25
+      },
+      "pg": {
+       "delta": -8,
+       "dopo": 91,
+       "prima": 99
+      },
+      "round_al_contatto": {
+       "delta": 1,
+       "dopo": 1,
+       "prima": 0
+      },
+      "simboli": {
+       "delta": -2,
+       "dopo": 4,
+       "prima": 6
+      },
+      "strozzatura": {
+       "delta": -28,
+       "dopo": 5,
+       "prima": 33
+      }
+     },
+     "ncd_lzma": 0.7162,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "fazioni/a-contatto@-",
+      "posa/nel-muro@A18",
+      "posa/nel-muro@AG18",
+      "posa/nel-muro@H06",
+      "posa/nel-muro@P01",
+      "posa/nel-muro@P33",
+      "posa/nel-muro@Z06",
+      "spazio/affollato@-",
+      "struttura/senza-anelli@-"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [
+      [
+       "M→.",
+       298
+      ],
+      [
+       "U→.",
+       94
+      ],
+      [
+       ".→U",
+       57
+      ],
+      [
+       ".→M",
+       23
+      ],
+      [
+       "M→U",
+       22
+      ],
+      [
+       "M→O",
+       7
+      ],
+      [
+       "P→.",
+       6
+      ],
+      [
+       "U→M",
+       5
+      ],
+      [
+       ".→O",
+       3
+      ],
+      [
+       "K→.",
+       3
+      ],
+      [
+       "H→.",
+       2
+      ],
+      [
+       "K→U",
+       2
+      ],
+      [
+       "O→.",
+       2
+      ],
+      [
+       "O→U",
+       2
+      ],
+      [
+       "U→O",
+       2
+      ]
+     ],
+     "voto": {
+      "delta": 55,
+      "dopo": 98,
+      "prima": 43
+     }
+    },
+    "B→C": {
+     "area_quadretti": 1089,
+     "celle_cambiate": {
+      "classi": 528,
+      "quota_classi": 0.4848,
+      "quota_simboli": 0.9862,
+      "simboli": 1074
+     },
+     "jaccard_classi": {
+      ".": 0.2834,
+      "H": 0.0,
+      "K": 0.0,
+      "M": 0.4929,
+      "O": 0.0,
+      "P": 0.0,
+      "S": null,
+      "U": 0.1111
+     },
+     "jaccard_gruppi": {
+      "blocco": 0.4965,
+      "percorribile": 0.5156
+     },
+     "metriche_delta": {
+      "anelli": {
+       "delta": 8,
+       "dopo": 12,
+       "prima": 4
+      },
+      "anelli_strutturali": {
+       "delta": 1,
+       "dopo": 1,
+       "prima": 0
+      },
+      "bordo_aperto": {
+       "delta": 0.06,
+       "dopo": 0.17,
+       "prima": 0.11
+      },
+      "celle_per_creatura": {
+       "delta": 3.3,
+       "dopo": 6.6,
+       "prima": 3.3
+      },
+      "copertura": {
+       "delta": -0.183,
+       "dopo": 0.371,
+       "prima": 0.554
+      },
+      "creature": {
+       "delta": -18,
+       "dopo": 106,
+       "prima": 124
+      },
+      "densita_icone": {
+       "delta": -0.031,
+       "dopo": 0.0,
+       "prima": 0.031
+      },
+      "distanza_media_m": {
+       "delta": 6.2,
+       "dopo": 11.7,
+       "prima": 5.5
+      },
+      "distanza_min_m": {
+       "delta": 7.5,
+       "dopo": 9.0,
+       "prima": 1.5
+      },
+      "distanza_min_q": {
+       "delta": 5.0,
+       "dopo": 6.0,
+       "prima": 1.0
+      },
+      "fila_indiana": {
+       "delta": 0.001,
+       "dopo": 0.001,
+       "prima": 0.0
+      },
+      "ingressi": {
+       "delta": 2,
+       "dopo": 6,
+       "prima": 4
+      },
+      "libere": {
+       "delta": 0.267,
+       "dopo": 0.646,
+       "prima": 0.379
+      },
+      "m1": {
+       "delta": -0.192,
+       "dopo": 0.716,
+       "prima": 0.908
+      },
+      "m2": {
+       "delta": 0.035,
+       "dopo": 0.088,
+       "prima": 0.053
+      },
+      "nemici": {
+       "delta": -10,
+       "dopo": 15,
+       "prima": 25
+      },
+      "pg": {
+       "delta": -8,
+       "dopo": 91,
+       "prima": 99
+      },
+      "round_al_contatto": {
+       "delta": 1,
+       "dopo": 1,
+       "prima": 0
+      },
+      "simboli": {
+       "delta": -2,
+       "dopo": 4,
+       "prima": 6
+      },
+      "strozzatura": {
+       "delta": -28,
+       "dopo": 5,
+       "prima": 33
+      }
+     },
+     "ncd_lzma": 0.7162,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "fazioni/a-contatto@-",
+      "posa/nel-muro@A18",
+      "posa/nel-muro@AG18",
+      "posa/nel-muro@H06",
+      "posa/nel-muro@P01",
+      "posa/nel-muro@P33",
+      "posa/nel-muro@Z06",
+      "spazio/affollato@-",
+      "struttura/senza-anelli@-"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [
+      [
+       "M→.",
+       298
+      ],
+      [
+       "U→.",
+       94
+      ],
+      [
+       ".→U",
+       57
+      ],
+      [
+       ".→M",
+       23
+      ],
+      [
+       "M→U",
+       22
+      ],
+      [
+       "M→O",
+       7
+      ],
+      [
+       "P→.",
+       6
+      ],
+      [
+       "U→M",
+       5
+      ],
+      [
+       ".→O",
+       3
+      ],
+      [
+       "K→.",
+       3
+      ],
+      [
+       "H→.",
+       2
+      ],
+      [
+       "K→U",
+       2
+      ],
+      [
+       "O→.",
+       2
+      ],
+      [
+       "O→U",
+       2
+      ],
+      [
+       "U→O",
+       2
+      ]
+     ],
+     "voto": {
+      "delta": 55,
+      "dopo": 98,
+      "prima": 43
+     }
+    }
+   },
+   "file": "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md",
+   "mappa": 3,
+   "svg": "svg/Hammerfist-L3-REVISED-Ultra-Clear-03-3z.svg",
+   "titolo": "MAPPA 3Z REVISED: L'Incrocio Silenzioso (imboscata)",
+   "versioni": {
+    "A": {
+     "abbinata_per": "titolo",
+     "codice": "3Z",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      33,
+      33
+     ],
+     "dislivello": null,
+     "mappa": 3,
+     "penalita": {
+      "collaudo_avvisi": 2,
+      "collaudo_errori": 48,
+      "qualita": 7
+     },
+     "quota": null,
+     "rilievi": [
+      "fazioni/a-contatto@-",
+      "m4/esposizione@-",
+      "posa/nel-muro@A18",
+      "posa/nel-muro@AG18",
+      "posa/nel-muro@H06",
+      "posa/nel-muro@P01",
+      "posa/nel-muro@P33",
+      "posa/nel-muro@Z06",
+      "spazio/affollato@-",
+      "struttura/senza-anelli@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 3Z REVISED: L'Incrocio Silenzioso (imboscata)",
+     "voto": 43
+    },
+    "B": {
+     "abbinata_per": "titolo",
+     "codice": "3Z",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      33,
+      33
+     ],
+     "dislivello": null,
+     "mappa": 3,
+     "penalita": {
+      "collaudo_avvisi": 2,
+      "collaudo_errori": 48,
+      "qualita": 7
+     },
+     "quota": null,
+     "rilievi": [
+      "fazioni/a-contatto@-",
+      "m4/esposizione@-",
+      "posa/nel-muro@A18",
+      "posa/nel-muro@AG18",
+      "posa/nel-muro@H06",
+      "posa/nel-muro@P01",
+      "posa/nel-muro@P33",
+      "posa/nel-muro@Z06",
+      "spazio/affollato@-",
+      "struttura/senza-anelli@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 3Z REVISED: L'Incrocio Silenzioso (imboscata)",
+     "voto": 43
+    },
+    "C": {
+     "codice": "3Z",
+     "dimensioni_dichiarate": [
+      33,
+      33
+     ],
+     "dimensioni_quadretti": [
+      33,
+      33
+     ],
+     "dislivello": null,
+     "mappa": 3,
+     "penalita": {
+      "collaudo_avvisi": 2,
+      "collaudo_errori": 0,
+      "qualita": 0
+     },
+     "quota": null,
+     "rilievi": [
+      "m4/esposizione@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": true,
+     "titolo": "MAPPA 3Z REVISED: L'Incrocio Silenzioso (imboscata)",
+     "voto": 98
+    }
+   }
+  },
+  {
+   "codice": "5",
+   "confronti": {
+    "A→C": {
+     "area_quadretti": 3551,
+     "celle_cambiate": {
+      "classi": 51,
+      "quota_classi": 0.0144,
+      "quota_simboli": 0.0146,
+      "simboli": 52
+     },
+     "jaccard_classi": {
+      ".": 0.9715,
+      "H": 1.0,
+      "K": 1.0,
+      "M": 0.9699,
+      "O": 1.0,
+      "P": 0.6667,
+      "S": null,
+      "U": 1.0
+     },
+     "jaccard_gruppi": {
+      "blocco": 0.9699,
+      "percorribile": 0.9733
+     },
+     "metriche_delta": {
+      "anelli": {
+       "delta": 4,
+       "dopo": 15,
+       "prima": 11
+      },
+      "anelli_strutturali": {
+       "delta": 4,
+       "dopo": 4,
+       "prima": 0
+      },
+      "bordo_aperto": {
+       "delta": -0.01,
+       "dopo": 0.02,
+       "prima": 0.03
+      },
+      "celle_per_creatura": {
+       "delta": -0.3,
+       "dopo": 10.2,
+       "prima": 10.5
+      },
+      "copertura": {
+       "delta": 0.038,
+       "dopo": 0.2,
+       "prima": 0.162
+      },
+      "densita_icone": {
+       "delta": -0.001,
+       "dopo": 0.004,
+       "prima": 0.005
+      },
+      "distanza_media_m": {
+       "delta": 1.6,
+       "dopo": 24.2,
+       "prima": 22.6
+      },
+      "distanza_min_m": {
+       "delta": 21.0,
+       "dopo": 22.5,
+       "prima": 1.5
+      },
+      "distanza_min_q": {
+       "delta": 14.0,
+       "dopo": 15.0,
+       "prima": 1.0
+      },
+      "fila_indiana": {
+       "delta": 0.003,
+       "dopo": 0.003,
+       "prima": 0.0
+      },
+      "ingressi": {
+       "delta": 1,
+       "dopo": 2,
+       "prima": 1
+      },
+      "libere": {
+       "delta": -0.012,
+       "dopo": 0.524,
+       "prima": 0.536
+      },
+      "m1": {
+       "delta": 0.084,
+       "dopo": 0.447,
+       "prima": 0.363
+      },
+      "m2": {
+       "delta": -0.082,
+       "dopo": 0.553,
+       "prima": 0.635
+      },
+      "nemici": {
+       "delta": -1,
+       "dopo": 13,
+       "prima": 14
+      },
+      "pg": {
+       "delta": 1,
+       "dopo": 169,
+       "prima": 168
+      },
+      "round_al_contatto": {
+       "delta": 2,
+       "dopo": 2,
+       "prima": 0
+      },
+      "simboli": {
+       "delta": 2,
+       "dopo": 11,
+       "prima": 9
+      },
+      "strozzatura": {
+       "delta": -16,
+       "dopo": 4,
+       "prima": 20
+      }
+     },
+     "ncd_lzma": 0.3644,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "dimensioni/oltre-tavolo@-",
+      "fazioni/a-contatto@-",
+      "oggetti/porta-enorme@AE05",
+      "struttura/senza-anelli@-",
+      "struttura/un-ingresso@-"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [
+      [
+       ".→M",
+       44
+      ],
+      [
+       "M→.",
+       5
+      ],
+      [
+       "P→M",
+       2
+      ]
+     ],
+     "voto": {
+      "delta": 13,
+      "dopo": 94,
+      "prima": 81
+     }
+    },
+    "B→C": {
+     "area_quadretti": 3551,
+     "celle_cambiate": {
+      "classi": 51,
+      "quota_classi": 0.0144,
+      "quota_simboli": 0.0146,
+      "simboli": 52
+     },
+     "jaccard_classi": {
+      ".": 0.9715,
+      "H": 1.0,
+      "K": 1.0,
+      "M": 0.9699,
+      "O": 1.0,
+      "P": 0.6667,
+      "S": null,
+      "U": 1.0
+     },
+     "jaccard_gruppi": {
+      "blocco": 0.9699,
+      "percorribile": 0.9733
+     },
+     "metriche_delta": {
+      "anelli": {
+       "delta": 4,
+       "dopo": 15,
+       "prima": 11
+      },
+      "anelli_strutturali": {
+       "delta": 4,
+       "dopo": 4,
+       "prima": 0
+      },
+      "bordo_aperto": {
+       "delta": -0.01,
+       "dopo": 0.02,
+       "prima": 0.03
+      },
+      "celle_per_creatura": {
+       "delta": -0.3,
+       "dopo": 10.2,
+       "prima": 10.5
+      },
+      "copertura": {
+       "delta": 0.038,
+       "dopo": 0.2,
+       "prima": 0.162
+      },
+      "densita_icone": {
+       "delta": -0.001,
+       "dopo": 0.004,
+       "prima": 0.005
+      },
+      "distanza_media_m": {
+       "delta": 1.6,
+       "dopo": 24.2,
+       "prima": 22.6
+      },
+      "distanza_min_m": {
+       "delta": 21.0,
+       "dopo": 22.5,
+       "prima": 1.5
+      },
+      "distanza_min_q": {
+       "delta": 14.0,
+       "dopo": 15.0,
+       "prima": 1.0
+      },
+      "fila_indiana": {
+       "delta": 0.003,
+       "dopo": 0.003,
+       "prima": 0.0
+      },
+      "ingressi": {
+       "delta": 1,
+       "dopo": 2,
+       "prima": 1
+      },
+      "libere": {
+       "delta": -0.012,
+       "dopo": 0.524,
+       "prima": 0.536
+      },
+      "m1": {
+       "delta": 0.084,
+       "dopo": 0.447,
+       "prima": 0.363
+      },
+      "m2": {
+       "delta": -0.082,
+       "dopo": 0.553,
+       "prima": 0.635
+      },
+      "nemici": {
+       "delta": -1,
+       "dopo": 13,
+       "prima": 14
+      },
+      "pg": {
+       "delta": 1,
+       "dopo": 169,
+       "prima": 168
+      },
+      "round_al_contatto": {
+       "delta": 2,
+       "dopo": 2,
+       "prima": 0
+      },
+      "simboli": {
+       "delta": 2,
+       "dopo": 11,
+       "prima": 9
+      },
+      "strozzatura": {
+       "delta": -16,
+       "dopo": 4,
+       "prima": 20
+      }
+     },
+     "ncd_lzma": 0.3644,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "dimensioni/oltre-tavolo@-",
+      "fazioni/a-contatto@-",
+      "oggetti/porta-enorme@AE05",
+      "struttura/senza-anelli@-",
+      "struttura/un-ingresso@-"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [
+      [
+       ".→M",
+       44
+      ],
+      [
+       "M→.",
+       5
+      ],
+      [
+       "P→M",
+       2
+      ]
+     ],
+     "voto": {
+      "delta": 13,
+      "dopo": 94,
+      "prima": 81
+     }
+    }
+   },
+   "file": "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md",
+   "mappa": 4,
+   "svg": "svg/Hammerfist-L3-REVISED-Ultra-Clear-04-5.svg",
+   "titolo": "MAPPA 5 REVISED: Il Cuore della Montagna (ultima resistenza)",
+   "versioni": {
+    "A": {
+     "abbinata_per": "titolo",
+     "codice": "5",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      67,
+      53
+     ],
+     "dislivello": null,
+     "mappa": 4,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 0,
+      "qualita": 13
+     },
+     "quota": null,
+     "rilievi": [
+      "dimensioni/oltre-tavolo@-",
+      "fazioni/a-contatto@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-",
+      "oggetti/porta-enorme@AE05",
+      "struttura/senza-anelli@-",
+      "struttura/un-ingresso@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 5 REVISED: Il Cuore della Montagna (ultima resistenza)",
+     "voto": 81
+    },
+    "B": {
+     "abbinata_per": "titolo",
+     "codice": "5",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      67,
+      53
+     ],
+     "dislivello": null,
+     "mappa": 4,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 0,
+      "qualita": 13
+     },
+     "quota": null,
+     "rilievi": [
+      "dimensioni/oltre-tavolo@-",
+      "fazioni/a-contatto@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-",
+      "oggetti/porta-enorme@AE05",
+      "struttura/senza-anelli@-",
+      "struttura/un-ingresso@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 5 REVISED: Il Cuore della Montagna (ultima resistenza)",
+     "voto": 81
+    },
+    "C": {
+     "codice": "5",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      67,
+      53
+     ],
+     "dislivello": null,
+     "mappa": 4,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 0,
+      "qualita": 0
+     },
+     "quota": null,
+     "rilievi": [
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-"
+     ],
+     "rilievi_derogati": [
+      "dimensioni/oltre-tavolo@-",
+      "oggetti/porta-enorme@AF05"
+     ],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 5 REVISED: Il Cuore della Montagna (ultima resistenza)",
+     "voto": 94
+    }
+   }
+  },
+  {
+   "codice": "4",
+   "confronti": {
+    "A→C": {
+     "area_quadretti": 4080,
+     "celle_cambiate": {
+      "classi": 414,
+      "quota_classi": 0.1015,
+      "quota_simboli": 0.177,
+      "simboli": 722
+     },
+     "jaccard_classi": {
+      ".": 0.8882,
+      "H": 1.0,
+      "K": 0.0,
+      "M": 0.1169,
+      "O": null,
+      "P": 1.0,
+      "S": null,
+      "U": 1.0
+     },
+     "jaccard_gruppi": {
+      "blocco": 0.1169,
+      "percorribile": 0.8987
+     },
+     "metriche_delta": {
+      "bordo_aperto": {
+       "delta": 0.39,
+       "dopo": 0.91,
+       "prima": 0.52
+      },
+      "celle_per_creatura": {
+       "delta": 1.3,
+       "dopo": 12.7,
+       "prima": 11.4
+      },
+      "copertura": {
+       "delta": -0.002,
+       "dopo": 0.031,
+       "prima": 0.033
+      },
+      "densita_icone": {
+       "delta": 0.002,
+       "dopo": 0.009,
+       "prima": 0.007
+      },
+      "fila_indiana": {
+       "delta": 0.002,
+       "dopo": 0.002,
+       "prima": 0.0
+      },
+      "libere": {
+       "delta": 0.1,
+       "dopo": 0.987,
+       "prima": 0.887
+      },
+      "m1": {
+       "delta": 0.007,
+       "dopo": 0.074,
+       "prima": 0.067
+      },
+      "m2": {
+       "delta": -0.007,
+       "dopo": 0.926,
+       "prima": 0.933
+      },
+      "simboli": {
+       "delta": 5,
+       "dopo": 13,
+       "prima": 8
+      }
+     },
+     "ncd_lzma": 0.6466,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "contesto/quota-mancante@-",
+      "dimensioni/oltre-tavolo@-",
+      "fazioni/a-contatto@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-",
+      "scala/tattica-non-a-1-5@-"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [
+      [
+       "M→.",
+       406
+      ],
+      [
+       ".→K",
+       6
+      ],
+      [
+       "M→K",
+       2
+      ]
+     ],
+     "voto": {
+      "delta": 15,
+      "dopo": 100,
+      "prima": 85
+     }
+    },
+    "B→C": {
+     "area_quadretti": 4080,
+     "celle_cambiate": {
+      "classi": 366,
+      "quota_classi": 0.0897,
+      "quota_simboli": 0.1436,
+      "simboli": 586
+     },
+     "jaccard_classi": {
+      ".": 0.9012,
+      "H": 1.0,
+      "K": 0.0,
+      "M": 0.1304,
+      "O": null,
+      "P": 1.0,
+      "S": null,
+      "U": 1.0
+     },
+     "jaccard_gruppi": {
+      "blocco": 0.1304,
+      "percorribile": 0.9106
+     },
+     "metriche_delta": {
+      "bordo_aperto": {
+       "delta": 0.28,
+       "dopo": 0.91,
+       "prima": 0.63
+      },
+      "celle_per_creatura": {
+       "delta": 1.2,
+       "dopo": 12.7,
+       "prima": 11.5
+      },
+      "densita_icone": {
+       "delta": 0.001,
+       "dopo": 0.009,
+       "prima": 0.008
+      },
+      "fila_indiana": {
+       "delta": -0.001,
+       "dopo": 0.002,
+       "prima": 0.003
+      },
+      "ingressi": {
+       "delta": -1,
+       "dopo": 2,
+       "prima": 3
+      },
+      "libere": {
+       "delta": 0.088,
+       "dopo": 0.987,
+       "prima": 0.899
+      },
+      "m1": {
+       "delta": 0.015,
+       "dopo": 0.074,
+       "prima": 0.059
+      },
+      "m2": {
+       "delta": -0.015,
+       "dopo": 0.926,
+       "prima": 0.941
+      },
+      "simboli": {
+       "delta": 1,
+       "dopo": 13,
+       "prima": 12
+      }
+     },
+     "ncd_lzma": 0.5489,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "contesto/quota-mancante@-",
+      "dimensioni/oltre-tavolo@-",
+      "fazioni/a-contatto@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-",
+      "scala/tattica-non-a-1-5@-"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [
+      [
+       "M→.",
+       358
+      ],
+      [
+       ".→K",
+       6
+      ],
+      [
+       "M→K",
+       2
+      ]
+     ],
+     "voto": {
+      "delta": 15,
+      "dopo": 100,
+      "prima": 85
+     }
+    }
+   },
+   "file": "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md",
+   "mappa": 5,
+   "svg": "svg/Hammerfist-L3-REVISED-Ultra-Clear-05-4.svg",
+   "titolo": "MAPPA 4 REVISED: Battaglia Finale Terrestre (carica in discesa)",
+   "versioni": {
+    "A": {
+     "abbinata_per": "titolo",
+     "codice": "4",
+     "dimensioni_dichiarate": [
+      60,
+      68
+     ],
+     "dimensioni_quadretti": [
+      60,
+      68
+     ],
+     "dislivello": null,
+     "mappa": 5,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 0,
+      "qualita": 9
+     },
+     "quota": null,
+     "rilievi": [
+      "contesto/quota-mancante@-",
+      "dimensioni/oltre-tavolo@-",
+      "fazioni/a-contatto@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-",
+      "scala/tattica-non-a-1-5@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 3.0,
+     "scala_nella_griglia": true,
+     "titolo": "MAPPA 4 REVISED: Battaglia Finale Terrestre (carica in discesa)",
+     "voto": 85
+    },
+    "B": {
+     "abbinata_per": "titolo",
+     "codice": "4",
+     "dimensioni_dichiarate": [
+      60,
+      68
+     ],
+     "dimensioni_quadretti": [
+      60,
+      68
+     ],
+     "dislivello": null,
+     "mappa": 5,
+     "penalita": {
+      "collaudo_avvisi": 6,
+      "collaudo_errori": 0,
+      "qualita": 9
+     },
+     "quota": null,
+     "rilievi": [
+      "contesto/quota-mancante@-",
+      "dimensioni/oltre-tavolo@-",
+      "fazioni/a-contatto@-",
+      "m1/copertura@-",
+      "m2/vuoto@-",
+      "m4/esposizione@-",
+      "scala/tattica-non-a-1-5@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 3.0,
+     "scala_nella_griglia": true,
+     "titolo": "MAPPA 4 REVISED: Battaglia Finale Terrestre (carica in discesa)",
+     "voto": 85
+    },
+    "C": {
+     "codice": "4",
+     "dimensioni_dichiarate": [
+      60,
+      68
+     ],
+     "dimensioni_quadretti": [
+      60,
+      68
+     ],
+     "dislivello": {
+      "m": 50.0,
+      "riferimento": "sulla piana, che comincia 300 m a sud delle mura, fuori mappa"
+     },
+     "mappa": 5,
+     "penalita": {
+      "collaudo_avvisi": 0,
+      "collaudo_errori": 0,
+      "qualita": 0
+     },
+     "quota": {
+      "m": 920.0,
+      "riferimento": "s.l.m., la linea hobgoblin alla riga 39"
+     },
+     "rilievi": [],
+     "rilievi_derogati": [],
+     "scala_m": 3.0,
+     "scala_nella_griglia": true,
+     "titolo": "MAPPA 4 REVISED: Battaglia Finale Terrestre (carica in discesa)",
+     "voto": 100
+    }
+   }
+  },
+  {
+   "codice": "1D",
+   "confronti": {
+    "A→C": {
+     "area_quadretti": 144,
+     "celle_cambiate": {
+      "classi": 0,
+      "quota_classi": 0.0,
+      "quota_simboli": 0.0,
+      "simboli": 0
+     },
+     "jaccard_classi": {
+      ".": 1.0,
+      "H": 1.0,
+      "K": 1.0,
+      "M": 1.0,
+      "O": null,
+      "P": null,
+      "S": null,
+      "U": 1.0
+     },
+     "jaccard_gruppi": {
+      "blocco": 1.0,
+      "percorribile": 1.0
+     },
+     "metriche_delta": {},
+     "ncd_lzma": 0.0465,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "contesto/quota-mancante@-"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [],
+     "voto": {
+      "delta": 1,
+      "dopo": 98,
+      "prima": 97
+     }
+    },
+    "B→C": {
+     "area_quadretti": 144,
+     "celle_cambiate": {
+      "classi": 0,
+      "quota_classi": 0.0,
+      "quota_simboli": 0.0,
+      "simboli": 0
+     },
+     "jaccard_classi": {
+      ".": 1.0,
+      "H": 1.0,
+      "K": 1.0,
+      "M": 1.0,
+      "O": null,
+      "P": null,
+      "S": null,
+      "U": 1.0
+     },
+     "jaccard_gruppi": {
+      "blocco": 1.0,
+      "percorribile": 1.0
+     },
+     "metriche_delta": {},
+     "ncd_lzma": 0.0465,
+     "rilievi_comparsi": [],
+     "rilievi_spariti": [
+      "contesto/quota-mancante@-"
+     ],
+     "stesse_dimensioni": true,
+     "transizioni": [],
+     "voto": {
+      "delta": 1,
+      "dopo": 98,
+      "prima": 97
+     }
+    }
+   },
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "mappa": 1,
+   "svg": "svg/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA-01-1d.svg",
+   "titolo": "MAPPA 1D: Il pendio sotto le mura",
+   "versioni": {
+    "A": {
+     "abbinata_per": "titolo",
+     "codice": "1D",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      12,
+      12
+     ],
+     "dislivello": null,
+     "mappa": 1,
+     "penalita": {
+      "collaudo_avvisi": 2,
+      "collaudo_errori": 0,
+      "qualita": 1
+     },
+     "quota": null,
+     "rilievi": [
+      "contesto/quota-mancante@-",
+      "m4/esposizione@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 1D: Il pendio sotto le mura",
+     "voto": 97
+    },
+    "B": {
+     "abbinata_per": "titolo",
+     "codice": "1D",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      12,
+      12
+     ],
+     "dislivello": null,
+     "mappa": 1,
+     "penalita": {
+      "collaudo_avvisi": 2,
+      "collaudo_errori": 0,
+      "qualita": 1
+     },
+     "quota": null,
+     "rilievi": [
+      "contesto/quota-mancante@-",
+      "m4/esposizione@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 1D: Il pendio sotto le mura",
+     "voto": 97
+    },
+    "C": {
+     "codice": "1D",
+     "dimensioni_dichiarate": null,
+     "dimensioni_quadretti": [
+      12,
+      12
+     ],
+     "dislivello": {
+      "m": 75.0,
+      "riferimento": "sulla piana, che comincia 300 m più a sud"
+     },
+     "mappa": 1,
+     "penalita": {
+      "collaudo_avvisi": 2,
+      "collaudo_errori": 0,
+      "qualita": 0
+     },
+     "quota": {
+      "m": 945.0,
+      "riferimento": "s.l.m., il piede della cinta"
+     },
+     "rilievi": [
+      "m4/esposizione@-"
+     ],
+     "rilievi_derogati": [],
+     "scala_m": 1.5,
+     "scala_nella_griglia": false,
+     "titolo": "MAPPA 1D: Il pendio sotto le mura",
+     "voto": 98
+    }
+   }
+  }
+ ],
+ "schema": "map_versions/1",
+ "senza_corrispondente": [],
+ "strumento": "scripts/confronta_mappe.py",
+ "versioni": {
+  "A": {
+   "blob": {
+    "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md": "102d0d1361aa145a5ea75077d642887f2cd0fa66",
+    "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md": "992a51887b8cce4d2a568ce1773a1bd54739783c",
+    "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md": "737a8942b81741ae93eb7e3ddf0d7ad31403fb7b",
+    "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md": "e92480825eeb7391bd92ae458d7afa87b4867c79"
+   },
+   "ref": "d726e6a2"
+  },
+  "B": {
+   "blob": {
+    "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md": "102d0d1361aa145a5ea75077d642887f2cd0fa66",
+    "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md": "acf1815260d819cbf0fda51615f1eedb603ee268",
+    "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md": "2a6b439ab4b7cd26a7e5cb099a2041ff45bf5cfb",
+    "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md": "f460012386fd7cb3f2e477c68c2a5ee2550f198c"
+   },
+   "ref": "9359a0af"
+  },
+  "C": {
+   "blob": {
+    "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md": "f9acdb2efcf9a6bbc96ef6786415af98bf80fb45",
+    "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md": "28897b407270f12a04ec8c597e04f4b86fff38f1",
+    "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md": "85c1b1b15f01a475a4746c1324485bd80cf2714b",
+    "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md": "cb7ba70a146fdd7600bc39b7cb36531d4220d9a2"
+   },
+   "ref": "c6b61123"
+  }
+ }
+}

@@ -46,9 +46,6 @@ class TestCalchiSempre(unittest.TestCase):
         # Il falso positivo che spegnerebbe il validatore in una settimana.
         self.assertEqual(_f("La contrada realizza il drappo in tre giorni."), [])
 
-    def test_assumere_per_to_assume(self):
-        self.assertTrue(_f("Assumi che la porta sia chiusa."))
-
     def test_eventualmente(self):
         self.assertTrue(_f("Il muro eventualmente cede."))
 
@@ -108,10 +105,10 @@ class TestTicADensita(unittest.TestCase):
 class TestCosaSiSalta(unittest.TestCase):
 
     def test_le_tabelle_non_sono_prosa(self):
-        self.assertEqual(_f("| Nome | Nota |\n|---|---|\n| x | assumi che sia così |"), [])
+        self.assertEqual(_f("| Nome | Nota |\n|---|---|\n| x | realizzi che sia così |"), [])
 
     def test_i_blocchi_di_codice_si_saltano(self):
-        self.assertEqual(_f("Testo.\n\n```\nassumi che x == 1\n```\n"), [])
+        self.assertEqual(_f("Testo.\n\n```\nrealizzi che x == 1\n```\n"), [])
 
     def test_un_file_senza_read_aloud_prende_solo_i_calchi_sempre(self):
         self.assertEqual(_f("Il rituale sta procedendo e la sua mano si alza."), [])

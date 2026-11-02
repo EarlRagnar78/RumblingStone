@@ -150,7 +150,7 @@ class TestLaDeduplicaNonProduceDoppioni(unittest.TestCase):
 
 class TestIlPoolNonSiRestringe(unittest.TestCase):
     def test_il_pool_e_cresciuto_spezzando(self):
-        """305 → 352 (4d-5) → 372 (4d-6) → 397 (D18) → 384 (4d-8) → 381 → 380 (L7) → **379**.
+        """305 → 352 (4d-5) → 372 (4d-6) → 397 (D18) → 384 (4d-8) → 381 → 380 (L7) → 379 → **378**.
 
         🔴 **La soglia scende per la seconda volta, e ogni unita' ha un nome.**
         Il primo calo (397 → 384) furono i **13 soggetti con due record** — una
@@ -166,6 +166,7 @@ class TestIlPoolNonSiRestringe(unittest.TestCase):
         | 3 | **Skullcrusher, secondo record** | riaffiorato per un attimo togliendo l'ERRATA dalle fonti dichiarate della voce, e richiuso rimettendocela |
         | 4 | **Ushgar «Occhio Reso», secondo record** *(2026-09-23)* | il dossier portava un suo blocco con TS diversi dallo statblocco `ushgar-occhio-reso-cr13.md`; ora e' `[RIMANDO]`, e Ushgar resta **una** voce, quella dello statblocco |
         | 5 | **«ARC-07 · DEFINITIVO #4 — IL VIAGGIO A 1.000 ANNI FA», GS 10** *(2026-09-25)* | **non era una creatura**: era il titolo del master, letto come mostro per la riga «scontro CR 10» dello skill challenge. Riordinando `DEF-4` la riga dice «GS 10», come il resto del repo, e la voce falsa sparisce |
+        | 6 | **le due bozze della quest di Starsong Hill e il titolo della loro sezione** *(2026-10-18)* | tre record (idra a 8 teste, drago verde giovane, «Creatura della Quest (esempi CR 13)») diventano uno: il DM ha scelto la **piroidra a 12 teste**, GS 13. Due erano alternative, una era un titolo |
 
         ⚠️ **Zero creature giocabili in meno nel pool.** Una era doppia, una
         non era una creatura, una era un artefatto della deduplica.
@@ -174,7 +175,7 @@ class TestIlPoolNonSiRestringe(unittest.TestCase):
         numero scende ancora senza che nessuno abbia scritto perche', il
         cancello deve tornare rosso.
         """
-        self.assertGreaterEqual(len(CATALOGO), 379)
+        self.assertGreaterEqual(len(CATALOGO), 378)
 
     def test_ogni_record_ha_una_fonte_che_esiste(self):
         for m in CATALOGO:
@@ -191,10 +192,10 @@ class TestIlPoolNonSiRestringe(unittest.TestCase):
 class TestLeDecisioniDiCanoneDel17Settembre(unittest.TestCase):
     """Due numeri discordi, decisi dal DM e scritti dove si leggono."""
 
-    def test_skullcrusher_il_nero_vale_dodici(self):
+    def test_skullcrusher_il_nero_vale_quattordici(self):
         m = [x for x in CATALOGO if "Skullcrusher il Nero" in x["name"]]
         self.assertEqual(len(m), 1)
-        self.assertEqual(m[0]["cr"], 12.0)
+        self.assertEqual(m[0]["cr"], 14.0)  # DEF-4 A.1, Q37; file rinominato il 2026-10-19
         archivio = (ROOT / "07_il Portale Della Forgia Eterna" / "_ARCHIVIO"
                     / "PortaleForgia-P6-INTEGRAZIONE-Completa.md").read_text(encoding="utf-8")
         self.assertNotIn("Skullcrusher il Nero** (Adult Black Dragon CR 11)", archivio,
@@ -203,7 +204,7 @@ class TestLeDecisioniDiCanoneDel17Settembre(unittest.TestCase):
         # 🔎 E la voce non cita piu' l'archivio: i numeri (PF 240, CA 27) sono
         # nel master vivo, e il FASTPLAY che citava non ha **nessuna** marca.
         voce = (ROOT / "Bestiario" / "villain"
-                / "skullcrusher-il-nero-cr12.md").read_text(encoding="utf-8")
+                / "skullcrusher-il-nero-cr14.md").read_text(encoding="utf-8")
         self.assertNotIn("_ARCHIVIO", voce.split("## Notes")[0],
                          "la testa della voce torna a puntare a un archivio")
         self.assertIn("ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md", voce)

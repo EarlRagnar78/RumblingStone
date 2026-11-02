@@ -95,6 +95,13 @@ PG = ("Thorik", "Tordek", "Hella", "Artemis")
 #: Ogni congegno: (etichetta, regex, dove è dichiarato).
 #: Il terzo campo non è decorazione: un congegno che nessun documento del repo
 #: dichiara non è un criterio, è un gusto personale — e non entra qui.
+#: 🔎 Il 2026-10-22 (lotto 7e di PIANO-AVVENTURE-COMMUNITY) ne sono usciti
+#: otto, con la misura nell'inventario delle misure obsolete: sei contavano una
+#: parola e non un congegno (ogni nome di PG, ogni «Round N», ogni «Orologio»,
+#: ogni «indizio», ogni «…» di quattro caratteri, gli ADR interni che solo
+#: l'Abbazia ha), e due hanno un rilevatore migliore in `domande_developer.py`:
+#: «se i PG…» la D19 (la scelta con la conseguenza), «scalare lo scontro» la D10
+#: (la riga di scala, 6 veri su 9). Lo spotlight resta in `--spotlight`.
 CONGEGNI = [
     # 🔴 Contava SOLO i box che cominciano con prosa in corsivo nuda, e
     # saltava quelli scritti nella forma che `editorial-standards` §2
@@ -106,21 +113,9 @@ CONGEGNI = [
      re.compile(r"^>\s*(?:\*\*Read-aloud[^*\n]*\*\*\s*)?[*_][^*_\s]", re.M | re.I),
      "module-standard §6 — prosa NUOVA per ogni ambiente"),
 
-    ("contingenze «se i PG…»",
-     re.compile(r"\bSe (?:i PG|il party|i giocatori|falliscono|il gruppo)\b", re.I),
-     "module-standard §9 — e SEMPRE la riga sconfitta"),
 
-    ("scalare lo scontro",
-     re.compile(r"scalar\w+ lo scontro|party più (?:forte|debole)|PG abbattuto", re.I),
-     "module-standard §8 — sidebar obbligatoria del boss"),
 
-    ("spotlight per PG",
-     re.compile(r"\b(?:" + "|".join(PG) + r")\b", re.I),
-     "module-standard §5 — ogni PG ha un beat suo"),
 
-    ("tattiche round-per-round",
-     re.compile(r"\bRound\s*\d|round-per-round|Round 1[–-]2", re.I),
-     "module-standard §7 — dal punto di vista del MOSTRO"),
 
     ("vie non combattive",
      re.compile(r"vi[ae] non combattiv|senza combattere|Diplomazia\s*C[DA]|"
@@ -133,36 +128,24 @@ CONGEGNI = [
                 r"si ricorder|torner[àa] (?:a|nel|nella)", re.I),
      "pilastro 7 (BG3) — una scelta scrive un'eco che torna"),
 
-    ("orologio / countdown",
-     re.compile(r"\bOrologio\b|countdown|clock\b|\bgiro\s+\d+/\d+", re.I),
-     "module-standard §3 — orologi attivi"),
 
     ("prove grezze di caratteristica",
      re.compile(r"\b(?:FOR|DES|COS|INT|SAG|CAR|Forza|Destrezza|Costituzione|"
                 r"Intelligenza|Saggezza|Carisma)\b[*_\s]*(?:grezz|C[DA]\s*\d)", re.I),
      "skill indagine — le SEI PORTE, per i PG senza gradi"),
 
-    ("nodo d'indizio",
-     re.compile(r"\bindizi?o?\b|Fatto/Lettura/Nome|regola dei tre indizi", re.I),
-     "skill indagine — Fatto / Lettura / Nome"),
 
     ("modi di fallimento dichiarati",
      re.compile(r"modi di fall|fallimento a metà|costo, non (?:stop|blocco)|"
                 r"vicolo cieco", re.I),
      "Abbazia §«Modi di fallimento al tavolo»"),
 
-    ("ADR interni al documento",
-     re.compile(r"^\*{0,2}ADR-\d+\s*[—–-]\s*\S", re.M),
-     "🔎 Abbazia — il PERCHÉ di ogni scelta, dentro l'avventura"),
 
     ("quarta colonna sensoriale",
      re.compile(r"quarta colonna|cosa NON dire|non lo dici mai|"
                 r"appartiene a chi (?:tira|fa la domanda)", re.I),
      "ADR-0057 (era ADR-12 dell'Abbazia) — contro «l'atmosfera divora l'indagine»"),
 
-    ("battute di dialogo",
-     re.compile(r"«[^»]{4,}»|\"[^\"\n]*?\s\S+\s\S+[^\"\n]*?[.!?…,]\""),
-     "pilastro 6 (Mercer) — ogni PNG ha una voce sua"),
 
     ("esiti etichettati",
      re.compile(r"^[>\s|*-]*\*{0,2}Esit[oi]\b|\btre finali\b|finali progettat|"
@@ -446,6 +429,182 @@ def difetti_dei_box(testo: str) -> "dict[str, int]":
 
 
 # ─────────────────────────────────────────────────────────────────────────
+# STILE — tre indicatori di forma che il repo non contava (ADR-0093)
+#
+# Vengono dal secondo giro di ricerca del 2026-10-18 (PIANO-AVVENTURE-COMMUNITY,
+# lotto 4). Ognuno ha una fonte che dice **perché** conta, e una misura sui box
+# di oggi che dice **se separa** qualcosa. Nessuno pesa nel punteggio: sono
+# indicatori, come `>4 frasi` e `>500 car`, finché il cieco del DM non dice che
+# correggerli migliora il testo. Il bersaglio non è lo zero: è la banda dei
+# box già passati dal ciclo di prosa (ADR-0077).
+#
+#   * **gerundio in coda** — virgola, gerundio, fine della frase. I modelli
+#     istruiti usano le participiali da 2 a 5 volte più degli umani, ed è lo
+#     scarto più largo di tutti (Reinhart e altri, PNAS 2025); in italiano la
+#     forma è il gerundio appeso. Il 2026-10-18 separa ARC-08 (9 su 5.164
+#     parole di box, 9 veri su 9) dai DEF di ARC-07 (0).
+#   * **avverbi in -mente** — Browne e King li danno come il segno dello
+#     scrittore che spiega; Blatt (2017) trova una correlazione con il giudizio
+#     sui romanzi inglesi sotto le 50 ogni 10.000 parole. Il riferimento
+#     umano italiano (Gruppo Chimera) sta fra 3,8 e 13,4‰: ARC-08 5,8‰ ci sta
+#     dentro, i DEF di ARC-07 (da 0 a 1,2‰) ne stanno sotto.
+#   * **battute lunghe** — le battute dei PNG nella forma prescritta, oltre 25
+#     e oltre 40 parole (la regola d'industria dei dialoghi di gioco).
+#
+# 🔴 **Due candidati provati e scartati, con la misura.** Il *pronome soggetto
+# tonico* (la norma pro-drop di `italiano-nativo.md` §1) dà 3 colpi in tutti i
+# box, e sono tutti e tre cambi di soggetto legittimi («Appoggia la testa sul
+# petto di Hella […]. Lei alza una mano»): precisione 0 su 3. Senza sapere chi
+# era il soggetto prima, una regex non distingue l'enfasi dal calco. La
+# *spiegazione dopo il gesto* («come a dire», «segno che») fa zero ovunque: non
+# separa niente. Contare male in negativo è peggio che non contare.
+#
+# ⚠️ I falsi positivi del gerundio sono parole in -ando/-endo che gerundi non
+# sono: le escludiamo per nome, e la lista è il limite dichiarato.
+# ─────────────────────────────────────────────────────────────────────────
+
+#: Parole in -ando/-endo che non sono gerundi.
+NON_GERUNDI = frozenset({
+    "quando", "comando", "secondo", "tremendo", "orrendo", "stupendo",
+    "reverendo", "nefando", "venerando", "dividendo", "orlando", "fernando",
+})
+
+#: Parole in -mente che non sono avverbi.
+NON_AVVERBI = frozenset({
+    "mente", "demente", "clemente", "inclemente", "veemente", "semente",
+    "fremente", "frementi", "dormente", "sementi", "menti",
+})
+
+_GERUNDIO = r"[a-zàèéìòù]{2,}(?:ando|endo)(?:l[oaie]|gli|ne|si|ci|vi|mi|ti)?"
+
+#: Virgola, gerundio, al più 80 caratteri senza un'altra virgola, poi la fine.
+#: La virgola esclusa toglie l'inciso («, raffreddandosi, prese la forma»),
+#: che è italiano normale: i due falsi positivi del primo giro erano incisi.
+_GERUNDIO_IN_CODA = re.compile(rf",\s+({_GERUNDIO})\b[^.!?;:,\n]{{0,80}}[.!?]", re.I)
+
+_AVVERBIO_MENTE = re.compile(r"\b([a-zàèéìòù]{3,}mente)\b", re.I)
+
+#: Le fasce del riferimento umano italiano, ogni 1.000 parole di box: dieci
+#: titoli del Gruppo Chimera misurati con questi stessi rilevatori il 2026-10-18
+#: (`plans/esperimenti/avventure-community/note-prosa-corpus.md` §5). Prima
+#: c'era un allarme a 5‰ preso da Blatt, su romanzi inglesi: cadeva sulla
+#: mediana umana italiana (5,5‰), e 7 titoli su 10 lo superavano. Fuori fascia,
+#: in basso come in alto, è un indizio da guardare, non un difetto.
+FASCIA_MENTE = (3.8, 13.4)
+#: La lunghezza tipica di un box, e quanti box umani ci stanno: 46% nel Gruppo
+#: Chimera, 52% in Paizo (note-prosa-corpus.md §2). Sopra REGOLARITA_ALTA la
+#: varianza è sotto ogni autore misurato: un indicatore, non un tetto.
+LUNGHEZZA_TIPICA = (30, 70)
+REGOLARITA_ALTA = 70
+FASCIA_GERUNDIO = (1.0, 3.1)
+#: Sotto queste parole di box un avverbio sposta il tasso di oltre il 2‰: la
+#: fascia non si giudica.
+PAROLE_PER_LA_FASCIA = 1000
+
+
+def rispetto_alla_fascia(per_mille: float, fascia: "tuple[float, float]",
+                         parole: int) -> str:
+    """«↓» sotto la fascia, «↑» sopra, «·» dentro, «–» se il campione è troppo piccolo."""
+    if parole < PAROLE_PER_LA_FASCIA:
+        return "–"
+    basso, alto = fascia
+    return "↓" if per_mille < basso else "↑" if per_mille > alto else "·"
+
+#: Le battute dei PNG nella forma di `editorial-standards.md` §2. La parola
+#: d'ordine dell'industria è circa 25 parole per battuta e non oltre 40
+#: (BioWare, citata dalla Neverwinter Vault); sono indicatori.
+BATTUTA_LUNGA = 25
+BATTUTA_TROPPO_LUNGA = 40
+_BATTUTA = re.compile(
+    r"\*\*[A-ZÀ-Ù][^*\n]{1,40}(?:\([^)\n]{2,30}\))?\s*:?\*\*\s*\*?«(.+?)»", re.S)
+
+
+def _parole(testo: str) -> int:
+    return len(re.findall(r"[A-Za-zÀ-ÿ']+", testo))
+
+
+def gerundi_in_coda(corpo: str) -> "list[str]":
+    """I gerundi appesi in fondo a una frase, esclusi quelli che non lo sono."""
+    return [m.group(1) for m in _GERUNDIO_IN_CODA.finditer(corpo)
+            if m.group(1).lower() not in NON_GERUNDI]
+
+
+def avverbi_mente(corpo: str) -> "list[str]":
+    return [m.group(1) for m in _AVVERBIO_MENTE.finditer(corpo)
+            if m.group(1).lower() not in NON_AVVERBI]
+
+
+#: L'indice Gulpease (Lucisano e Piemontese, 1988), tarato sull'italiano:
+#: 89 + (300 frasi − 10 lettere) / parole. Fra 60 e 80 un testo è facile per
+#: chi ha la licenza media. Entra il 2026-10-21 con il contratto del Seme: il
+#: giocatore non l'aveva capito, e fra le versioni riscritte l'unica
+#: differenza che si vedeva era questa (67 → 72,6), confermata dal cieco del DM.
+#: È un indicatore: premia le frasi corte, e la prosa d'autore non le vuole sempre.
+_FINE_FRASE_G = re.compile(r"[.!?…:;]+(?=\s|$)")
+
+
+def gulpease(testo: str) -> float:
+    parole = re.findall(r"[A-Za-zÀ-ÿ']+|\d+", testo)
+    if not parole:
+        return 0.0
+    lettere = sum(len(w.replace("'", "")) for w in parole)
+    frasi = max(1, len(_FINE_FRASE_G.findall(testo)))
+    return 89 + (300 * frasi - 10 * lettere) / len(parole)
+
+
+def battute_png(testo: str) -> "list[int]":
+    """Le parole di ogni battuta scritta nella forma prescritta, ovunque nel file."""
+    return [_parole(m.group(1)) for m in _BATTUTA.finditer(testo)]
+
+
+#: I dettagli che si vedono, si sentono, si toccano o si annusano: luce e
+#: colore, suono e silenzio, caldo, freddo e corpo, aria e materia. È il segnale
+#: del primo voto cieco del DM (2026-10-18, ADR-0093): nelle cinque coppie in
+#: cui la riscrittura ne toglieva, il DM ha scelto la vecchia cinque volte su
+#: cinque. ⚠️ Il lessico è scritto **dopo** aver visto quei voti: sulle sedici
+#: coppie spiega 12 delle 14 che decide, e va provato sulle coppie di controllo
+#: del giro successivo prima di fidarsene di più.
+_SENSORIALE = re.compile(
+    r"\b(?:luc\w*|buio|fiamm\w*|fuoc\w*|fumo|brill\w*|ard\w*|accend\w*|spegn\w*"
+    r"|ombr\w*|vetr\w*|cristall\w*|or[oi]|verd\w*|ross\w*|ner[aoie]|dorat\w*"
+    r"|argent\w*|color\w*|cer[ao]|cant\w*|not[ae]|suon\w*|rombo|rimbomb\w*|tonf\w*"
+    r"|tamburi|sibil\w*|grid\w*|urla\w*|gem\w*|silenzi\w*|respir\w*|voce|rumore"
+    r"|accordo|fredd\w*|cald\w*|tiepid\w*|calore|pelle|dito|mani?|nocche|sterno"
+    r"|cranio|ossa|narici|aria|odor\w*|neve|sangue|acido|polvere|pietra|nebbia"
+    r"|pulsa\w*|trem\w*|scald\w*)\b", re.I)
+
+
+def dettagli_sensoriali(corpo: str) -> int:
+    """Quante parole di percezione ha un testo (indicatore, senza peso)."""
+    return len(_SENSORIALE.findall(corpo))
+
+
+def stile_dei_box(testo: str) -> "dict[str, float]":
+    """I due indicatori sui box, più la lunghezza delle battute.
+
+    Il denominatore è lo stesso di `--box`: `box_read_aloud`. Le battute si
+    contano nel file intero, perché la forma prescritta vive anche fuori dai box.
+    """
+    box = [corpo_del_box(b) for b in box_read_aloud(testo)]
+    parole = sum(_parole(c) for c in box)
+    ger = sum(len(gerundi_in_coda(c)) for c in box)
+    men = sum(len(avverbi_mente(c)) for c in box)
+    sens = sum(dettagli_sensoriali(c) for c in box)
+    batt = battute_png(testo)
+    per_mille = (lambda n: 1000 * n / parole) if parole else (lambda n: 0.0)
+    return {"box": len(box), "parole": parole,
+            "gerundio in coda": ger, "gerundio ‰": per_mille(ger),
+            "-mente": men, "-mente ‰": per_mille(men),
+            "sensoriali": sens, "sensoriali ‰": per_mille(sens),
+            "Gulpease": gulpease(" ".join(box)),
+            "30-70 %": (100 * sum(1 for c in box if LUNGHEZZA_TIPICA[0] <= _parole(c) <= LUNGHEZZA_TIPICA[1])
+                        / len(box)) if box else 0.0,
+            "battute": len(batt),
+            f"battute >{BATTUTA_LUNGA}": sum(1 for n in batt if n > BATTUTA_LUNGA),
+            f"battute >{BATTUTA_TROPPO_LUNGA}": sum(1 for n in batt if n > BATTUTA_TROPPO_LUNGA)}
+
+
+# ─────────────────────────────────────────────────────────────────────────
 # P1 — il read-aloud che presuppone un'azione o un senso del giocatore
 #
 # La norma viene dalle linee guida di *Dungeon* (Paizo) e dice due cose:
@@ -678,71 +837,11 @@ BERSAGLI = {
     "ARC-09 Rhest": [f"{A9}/Arco-Post-Hammerfist-P2-RHEST-*.md"],
     "ARC-09 Battaglia Finale": [f"{A9}/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-*.md"],
     "ARC-08 Hammerfist": [f"{A8}/ARC08-*.md", f"{A8}/Cerimonia-delle-100-Asce.md"],
+    # Gli handout si misurano come i master (ADR-0094): li legge il giocatore.
+    "Handout ARC-07": [f"{A7}/ARC07-HANDOUTS.md"],
+    "Handout ARC-08": [f"{A8}/ARC08-15-HANDOUTS-GIOCATORE.md"],
+    "Handout ARC-09": [f"{A9}/Arco-Post-Hammerfist-HANDOUTS.md"],
 }
-
-
-def potere_discriminante(dati: dict, etichette: "list[str]",
-                         righe: dict) -> "list[tuple]":
-    """Per ogni congegno: quante coppie di bersagli separa, su tutte le coppie.
-
-    **Che domanda risponde.** Un congegno serve a **distinguere** un documento
-    da un altro. Se su tutti i bersagli da' lo stesso numero — tipicamente
-    zero — non distingue niente: e' una riga in piu' nella tabella che nessuno
-    puo' usare per decidere. E' il controllo *non-discriminating* della
-    skill-creator, applicato al mestiere invece che alle skill.
-
-    **Due misure, e la seconda corregge la prima.** Il conteggio grezzo separa
-    anche solo perche' un documento e' piu' lungo: ARC-08 ha 6.096 righe e
-    DEF-5 ne ha 516, quindi *qualunque* congegno frequente li separa. La
-    densita' per 1.000 righe toglie la taglia di mezzo, e un congegno che
-    separa **solo** in grezzo separa per la ragione sbagliata.
-    """
-    nomi = list(dati)
-    coppie = [(a, b) for i, a in enumerate(nomi) for b in nomi[i + 1:]]
-    fuori = []
-    for e in etichette:
-        grezzo = sum(1 for a, b in coppie if dati[a][e] != dati[b][e])
-        dens = sum(1 for a, b in coppie
-                   if abs(dati[a][e] * 1000 / righe[a]
-                          - dati[b][e] * 1000 / righe[b]) > 0.05)
-        zeri = sum(1 for n in nomi if dati[n][e] == 0)
-        fuori.append((e, grezzo, dens, zeri, len(coppie), len(nomi)))
-    return sorted(fuori, key=lambda r: (r[2], r[1]))
-
-
-def stampa_discriminante(dati: dict, etichette: "list[str]", righe: dict) -> None:
-    righe_out = potere_discriminante(dati, etichette, righe)
-    tot_coppie, tot_bers = righe_out[0][4], righe_out[0][5]
-    print(f"\n\nPOTERE DISCRIMINANTE — quante delle {tot_coppie} coppie di "
-          f"bersagli ogni congegno separa\n")
-    print("⚠️  Non e' un voto sui documenti: e' un voto sui CONGEGNI. Un congegno")
-    print("    a zero coppie non dice niente su nessun documento, e la tabella in")
-    print("    cui compare e' piu' lunga senza essere piu' informativa.\n")
-    print("    La colonna che decide e' «densita'»: il grezzo separa anche solo")
-    print("    perche' un bersaglio e' dieci volte piu' lungo di un altro.\n")
-    print(f"{'congegno':38} {'grezzo':>7} {'densita':>8} "
-          f"{'a zero':>7} {'verdetto':>10}")
-    for e, grezzo, dens, zeri, tot, nb in righe_out:
-        if dens == 0:
-            v = "🔴 rumore"
-        elif zeri == nb - 1:
-            v = "🟡 un solo"
-        elif dens < tot // 4:
-            v = "🟡 debole"
-        else:
-            v = "🟢 separa"
-        print(f"{e[:38]:38} {grezzo:>4}/{tot:<2} {dens:>5}/{tot:<2} "
-              f"{zeri:>3}/{nb:<3} {v:>10}")
-    rumore = [e for e, _, d, *_ in righe_out if d == 0]
-    print(f"\n  🔴 {len(rumore)} congegni su {len(righe_out)} non separano "
-          f"nessuna coppia.")
-    for e in rumore:
-        print(f"       {e}")
-    print("\n  ⚠️  «rumore» non vuol dire «norma da buttare»: vuol dire che il")
-    print("      RILEVATORE, su questi bersagli, non produce informazione. Un")
-    print("      congegno a zero ovunque puo' essere una norma vera che nessuno")
-    print("      applica — e allora il difetto sta nei documenti, non nel metro.")
-    print("      I due casi si distinguono guardando i documenti, non la tabella.\n")
 
 
 def _stampa_per_file(titolo: str, sottotitolo: str, rilevatore, avviso: str) -> None:
@@ -791,9 +890,9 @@ def main() -> int:
     ap.add_argument("--costrutto-italiano", action="store_true",
                     help="i box senza «c'e'» presentativo ne' dislocazione a "
                          "sinistra (italiano-nativo.md §8) — INDIZIO, sovrastima")
-    ap.add_argument("--discriminante", action="store_true",
-                    help="quante coppie di bersagli ogni congegno separa: "
-                         "un congegno che non ne separa nessuna e' rumore")
+    ap.add_argument("--stile", action="store_true",
+                    help="gerundio in coda, avverbi in -mente, battute lunghe "
+                         "dei PNG (ADR-0093)")
     args = ap.parse_args()
 
     if args.p1:
@@ -870,16 +969,47 @@ def main() -> int:
         print("🔴 Nessuna di queste soglie e' sotto cancello: `validate_modules`")
         print("   conta le occorrenze della PAROLA «read-aloud» e si ferma a 5.\n")
         print(f"{'bersaglio':30} {'box':>5} {'>12 righe':>10} "
-              f"{'parentesi':>10} {'>1 nome':>8} {'>4 frasi':>9} {'>500 car':>9}")
+              f"{'parentesi':>10} {'>1 nome*':>8} {'>4 frasi':>9} {'>500 car':>9}")
         for nome, modelli in BERSAGLI.items():
             testo, _, _ = carica(modelli)
             d = difetti_dei_box(testo)
             print(f"{nome:30} {d['box']:>5} {d['oltre 12 righe']:>10} "
                   f"{d['con parentesi']:>10} {d['>1 nome proprio']:>8} "
                   f"{d['oltre 4 frasi']:>9} {d['oltre 500 caratteri']:>9}")
-        print("\n   >4 frasi e >500 car sono INDICATORI, non soglie del repo: la")
+        print("\n   * >1 nome conta i nomi DISTINTI, non quelli nuovi: un nome che il tavolo")
+        print("   conosce non si cambia in perifrasi per stare sotto (read-aloud-adulti §2-ter).")
+        print("   >4 frasi e >500 car sono INDICATORI, non soglie del repo: la")
         print("   prima viene da *Dungeon* («poche frasi»), la seconda dalla proposta")
         print("   del 2026-10-01. Decide il DM (PIANO-BOX-DI-LUOGO-E-AREA-CHIAVE, D1).")
+        print()
+
+    if args.stile:
+        print("\n\nSTILE DEI BOX — indicatori senza peso (ADR-0093)\n")
+        print(f"{'bersaglio':30} {'box':>5} {'parole':>7} {'ger.coda':>9} "
+              f"{'‰':>5} {'-mente':>7} {'‰':>5} "
+              f"{'sens.':>6} {'‰':>5} {'Gulp.':>6} {'30-70':>6} {'battute':>8} {'>25':>4} {'>40':>4}")
+        for nome, modelli in BERSAGLI.items():
+            testo, _, _ = carica(modelli)
+            d = stile_dei_box(testo)
+            fascia = (rispetto_alla_fascia(d["gerundio ‰"], FASCIA_GERUNDIO, d["parole"])
+                      + rispetto_alla_fascia(d["-mente ‰"], FASCIA_MENTE, d["parole"]))
+            print(f"{nome:30} {d['box']:>5} {d['parole']:>7} "
+                  f"{d['gerundio in coda']:>9} {d['gerundio ‰']:>5.1f} "
+                  f"{d['-mente']:>7} {d['-mente ‰']:>5.1f} "
+                  f"{d['sensoriali']:>6} {d['sensoriali ‰']:>5.1f} "
+                  f"{d['Gulpease']:>6.1f} "
+                  f"{d['30-70 %']:>5.0f}{'!' if d['30-70 %'] > REGOLARITA_ALTA else ' '} "
+                  f"{d['battute']:>8} {d[f'battute >{BATTUTA_LUNGA}']:>4} "
+                  f"{d[f'battute >{BATTUTA_TROPPO_LUNGA}']:>4}   {fascia}")
+        print("\n   ‰ = ogni 1.000 parole di box. Le due frecce finali sono gerundio e")
+        print(f"   -mente contro la fascia umana italiana ({FASCIA_GERUNDIO[0]}-{FASCIA_GERUNDIO[1]}‰ e")
+        print(f"   {FASCIA_MENTE[0]}-{FASCIA_MENTE[1]}‰, Gruppo Chimera): ↓ sotto, ↑ sopra, · dentro,")
+        print(f"   – meno di {PAROLE_PER_LA_FASCIA} parole. Nessuna colonna e' una norma: decide il")
+        print("   confronto (`cieco_versioni.py coppie`): la misura fra due versioni dello")
+        print("   stesso box, e il cieco del DM dove la misura non decide. «sens.» sono le")
+        print("   parole di percezione: un box che ne perde, per il DM, peggiora. «30-70» è la")
+        print(f"   quota dei box fra 30 e 70 parole (umani 46-52%); «!» oltre il {REGOLARITA_ALTA}%.")
+        print("   «Gulp.» è l'indice di leggibilità Gulpease (0-100, più alto = più facile).")
         print()
 
     if args.metrature:
@@ -906,9 +1036,6 @@ def main() -> int:
             "    box che rispetta la norma in un modo che non vede finisce qui.\n"
             "    Una norma positiva rilevata a meta' produce penalita' FALSE:\n"
             "    contare male in negativo e' peggio che non contare.")
-
-    if args.discriminante:
-        stampa_discriminante(dati, etichette, righe)
 
     if args.copertura:
         banchi = [n for n in dati if n.startswith("★")]

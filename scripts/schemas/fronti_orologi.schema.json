@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/gsamuele78/RumblingStone/scripts/schemas/fronti_orologi.schema.json",
+  "title": "Fronti e orologi di un arco RumblingStone",
+  "description": "Contratto minimo dei fronti (Dungeon World, «Fronts») e degli orologi (Blades in the Dark, «Progress clocks») di un arco. Lo schema vincola la FORMA; i numeri del mestiere (2-3 pericoli, 1-3 o 3-5 presagi, 1-3 domande, segmenti 4/6/8 o un intero positivo per l'orologio a tempo che dichiara `unita`, riempiti <= totale) e il presagio che deve stare scritto in un master li controlla scripts/coerenza_campagna.py, perché il sottoinsieme di draft-07 del repo non ha maxItems né minimum. Ogni campo di prosa porta una `fonte` file:riga quando il master lo scrive; `fonte: null` vuol dire DEDOTTO, e il controllo li conta (lotto 7c, RICERCA-QUALITA-MISURABILE-2026-10 §4).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "arco", "master", "fronti", "orologi"],
+  "definitions": {
+    "voce": {
+      "description": "Un fatto di prosa e dove sta. fonte null = dedotto da chi ha scritto i dati, non scritto nel master.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["testo", "fonte"],
+      "properties": {
+        "testo": {"type": "string", "minLength": 3},
+        "fonte": {"type": ["string", "null"], "pattern": "^[^:]+:[0-9]+$"}
+      }
+    }
+  },
+  "properties": {
+    "schema_version": {"const": 1},
+    "arco": {"type": "string", "pattern": "^ARC-[0-9]{2}$"},
+    "nota": {"type": ["string", "null"]},
+    "master": {
+      "description": "I file in cui un presagio deve comparire (percorsi dalla radice del repo).",
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 3}
+    },
+    "fronti": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "nome", "tipo", "impulso", "pericoli", "presagi", "catastrofe", "domande", "orologi"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+          "nome": {"type": "string", "minLength": 3},
+          "tipo": {"enum": ["avventura", "campagna"]},
+          "impulso": {"$ref": "#/definitions/voce"},
+          "pericoli": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["nome", "impulso", "fonte"],
+              "properties": {
+                "nome": {"type": "string", "minLength": 2},
+                "impulso": {"type": "string", "minLength": 3},
+                "fonte": {"type": ["string", "null"], "pattern": "^[^:]+:[0-9]+$"}
+              }
+            }
+          },
+          "presagi": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["testo", "chiavi"],
+              "properties": {
+                "testo": {"type": "string", "minLength": 3},
+                "chiavi": {
+                  "description": "Parole o frasi che, trovate in un master, dicono che il presagio è scritto. Ne basta una.",
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {"type": "string", "minLength": 3}
+                }
+              }
+            }
+          },
+          "catastrofe": {"$ref": "#/definitions/voce"},
+          "domande": {"type": "array", "items": {"$ref": "#/definitions/voce"}},
+          "orologi": {"type": "array", "items": {"type": "string", "pattern": "^[a-z0-9-]+$"}},
+          "nota": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "orologi": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "nome", "segmenti", "riempiti", "quando_si_riempie", "fonte"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+          "nome": {"type": "string", "minLength": 3},
+          "segmenti": {"type": ["integer", "null"]},
+          "riempiti": {"type": ["integer", "null"]},
+          "unita": {"description": "Per un orologio che conta un tempo (giorni, ore): con l'unità dichiarata i segmenti possono essere un intero positivo qualsiasi (DM, 2026-10-23).", "type": ["string", "null"]},
+          "quando_si_riempie": {"$ref": "#/definitions/voce"},
+          "fonte": {"type": ["string", "null"], "pattern": "^[^:]+:[0-9]+$"},
+          "nota": {"type": ["string", "null"]}
+        }
+      }
+    }
+  }
+}

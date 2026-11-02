@@ -1,0 +1,29 @@
+{
+  "versione": 1,
+  "serata": "2026-10-12",
+  "titolo": "La notte del campo e il duello all'alba",
+  "arco": "ARC-07",
+  "pg": [
+    "Thorik",
+    "Tordek",
+    "Artemis",
+    "Hella"
+  ],
+  "booklet_dm": "ARC07-NOTTE-E-ALBA-BOOKLET.manifest.json",
+  "fogli_giocatori": "ARC07-NOTTE-E-ALBA-GIOCATORI.manifest.json",
+  "echi": {
+    "Thorik": "03-ECHI-THORIK.md",
+    "Tordek": "04-ECHI-TORDEK.md",
+    "Artemis": "05-ECHI-ARTEMIS.md",
+    "Hella": "06-ECHI-HELLA.md"
+  },
+  "carte_e_handout": [
+    "07-HANDOUT-CONTRATTO-DEL-SEME.md",
+    "../volume-mille-anni/05-HANDOUT-POZIONI-DI-KETTRA.md"
+  ],
+  "immagini": {
+    "prompt": [],
+    "note": "Nessuna immagine nuova: la serata usa i ritratti e la tavola di Skullcrusher già nel master."
+  },
+  "note": "Serata di circa tre ore: DEF-4 dalla Scena 5 all'esito del duello, stop prima della Scena 12. Il volume del −1000 (volume-mille-anni/) è un libro a sé e non fa parte di questo corredo."
+}

@@ -6,6 +6,7 @@
 - 1. La cosa che cambia tutto: **si ascolta, non si legge**
 - 2. Lunghezza: la finestra reale è più corta di quanto sembri
 - 2-bis. Il box di luogo: poche frasi, un ordine, niente creature
+- 2-ter. Riscrivere un box che c'è: si taglia il superfluo, non ciò che si sente
 - 3. Cosa premia questo pubblico
 - 4. Cosa li fa staccare (e sono tutti errori di genere, non di lingua)
 - 5. Il registro alto senza il ridicolo
@@ -58,8 +59,8 @@ tornare indietro; chi ascolta no. Da qui i vincoli che la pagina non ha:
 7. **Niente *«sembra»* né *«pare»*.** Il narratore che esita toglie al tavolo
    la certezza su ciò che vede: se la sala è vuota, è vuota; se non lo è, la
    cosa che non torna si descrive. *«Come se»* resta, perché è un paragone.
-   Viene da Shawn Merwin (*D&D Beyond*); misura: `voto_scrittura.py`,
-   controllo `box_senza_sembra` (D13).
+   Viene da Shawn Merwin (*D&D Beyond*); misura: `punteggio_mqm.py`, norma
+   `box_sembra_pare`, col rilevatore `validate_prosa.sembra_esitanti` (D13).
    **Il confine**: *«sembra»* seguito dalla smentita resta. *«Quella che
    sembrava una parete — è una palpebra»*: lì il narratore non esita, prepara
    il colpo. La smentita arriva entro la frase dopo, con *«invece»*, *«non lo
@@ -85,6 +86,18 @@ sbagliato. Non è il tuo respiro: è la frase.
 ⚠️ **Oltre le 12 righe l'attenzione cade, e con adulti cade in silenzio** —
 non ti interrompono, smettono di ascoltare e tu non te ne accorgi. Se un box
 supera le 12 righe: o è due box, o metà è ridondante.
+
+**Le lunghezze variano.** La tabella sopra è già una varietà: un box d'urto da
+due righe accanto a un'apertura da dieci. Un autore umano alterna così; un
+master riscritto per stare sotto i tetti tende a fare tutti i box uguali. Nel
+corpus di riferimento (`plans/esperimenti/avventure-community/note-prosa-corpus.md`
+§2) il 46-52% dei box sta fra 30 e 70 parole; il rifacimento di ARC-07 della
+#249 ci metteva il 90%, e il DM ha chiesto di riportarlo verso il corpus.
+
+⚙️ `misura_craft --stile`, colonna `30-70`: la quota dei box fra 30 e 70
+parole. È un indicatore e non un tetto (ADR-0036 non vuole soglie assolute
+sulla prosa di gioco): sopra il 70% i box sono più regolari di qualunque
+autore misurato, e vale la pena guardarli.
 
 ---
 
@@ -130,6 +143,54 @@ spiegazione.
 ⚙️ `python3 scripts/misura_craft.py --box` conta i box oltre le **quattro
 frasi** e oltre i **500 caratteri**. Sono indicatori, non soglie: il tetto del
 repo resta quello delle righe, finché il DM non decide (PIANO-BOX-DI-LUOGO-E-AREA-CHIAVE, D1).
+
+## 2-ter. Riscrivere un box che c'è: si taglia il superfluo, non ciò che si sente
+
+Il primo confronto cieco del DM (2026-10-18, [ADR-0093](../../../plans/adr/ADR-0093-la-prosa-migliora-se-la-sceglie-il-dm-alla-cieca.md),
+`plans/esperimenti/prosa-cieco/ESITO-ARC07-2026-10-18.md`) ha messo una
+riscrittura di ARC-07 contro l'originale: 8 a 8. I numeri del repo erano
+migliorati tutti; il DM no. E le sue scelte avevano due regole.
+
+1. **Una riscrittura non toglie dettagli sensoriali.** Luce, colore, suono,
+   caldo e freddo, il corpo che sente: dove la versione nuova ne aveva meno,
+   il DM ha scelto la vecchia cinque volte su cinque. Si tagliano le
+   maiuscole d'enfasi, le date, i nomi in più e le spiegazioni: lì la nuova
+   ha vinto.
+2. **Un monologo resta un blocco.** Spezzarlo in battute con un inciso in
+   corsivo fra l'una e l'altra ha perso tutte e due le volte. Il gesto
+   dentro il monologo si scrive dentro il monologo.
+
+⚙️ `python3 scripts/cieco_versioni.py coppie` applica le due regole a ogni
+coppia di versioni e manda al cieco solo quelle che non decide, più quattro
+di controllo; `misura_craft --stile` conta i dettagli sensoriali per file
+(colonna `sens.`). ⚠️ Il tetto di un nome proprio **nuovo** per box (§1) non chiede di togliere i
+nomi che il tavolo conosce: `misura_craft --box` conta i nomi **distinti**,
+perché non sa quali siano nuovi, e un nome noto cambiato in perifrasi per
+stare sotto quella colonna insegue l'indicatore, non la norma. Il voto non ne
+fa una terza regola: Moradin diventato «il dio dei nani» ha perso (coppia 5),
+ma Fauci di Palude diventato «un drago enorme dalle ali nere» e Hella
+diventata «la druida» hanno vinto (6 e 10).
+
+Le due regole vengono da sedici coppie e da un lessico
+scritto dopo averle viste: se il DM smentisce più di un controllo su quattro,
+`esito` lo dice e si torna al cieco intero.
+
+Il cieco del 2026-10-22 (catena vecchia contro nuova su 16 box di ARC-07 e
+ARC-08, `plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/ESITO-VOTO.md`,
+8 a 5 per la vecchia) aggiunge tre cautele per chi riscrive:
+
+3. **Non si taglia la frase che chiude con enfasi.** Togliere la riga che
+   «spiega» (l'etichetta LAMP) ha perso quattro volte su quattro: lo
+   spettacolo «terrificante e magnifico», la chiusa sull'eroe. Si tolgono
+   le parole goffe, tradotte o ricercate, non la chiusa.
+4. **Spezzare una subordinata non è un rimedio automatico.** Nella prova ha
+   vinto una volta e perso una, e sulle 38 coppie già votate vince più spesso
+   la versione con più subordinate (11 su 12). Si spezza solo dove al terzo
+   livello l'orecchio si perde (§1, regola 2), non per far tacere un indicatore.
+5. **Un rilievo di `misura_sintassi` si guarda prima di riscrivere.** Tre
+   riscritture fatte su un falso del parser hanno perso tutte, due per
+   «ritmo». Il soggetto messo dopo il verbo, quando il calco è vero, ha
+   vinto.
 
 ---
 

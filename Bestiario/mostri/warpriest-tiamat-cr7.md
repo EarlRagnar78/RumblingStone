@@ -13,7 +13,7 @@ velocita: 20 ft
 iniziativa: +1
 ```
 
-> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
+> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
 **Size/Type**: Medium humanoid (hobgoblin usually) | **HD**: 7d8+14 (44 HP)
 **AC**: 20 (+7 full plate, +2 heavy shield, +1 Dex) | **Init**: +1 | **Speed**: 20 ft

@@ -3,7 +3,7 @@
 > **Cos'è**: l'esecuzione delle cinque istruzioni date dal DM il 2026-09-20,
 > tre delle quali chiudono altrettante code lasciate aperte dalla PR #151.
 >
-> **Stato**: 🟡 in corso (2026-09-20) · **Ramo**: `claude/open-prs-plans-review-fu4qcp`
+> **Stato**: ✅ **chiuso** (2026-09-21, aperto il 2026-09-20) *(allineato a `INDEX.md` il 2026-10-23, P15)* · **Ramo**: `claude/open-prs-plans-review-fu4qcp`
 > **Gate**: `misura_craft --p1` · `validate_norme_editoriali` ·
 > `validate_prosa` · `pytest scripts/tests`
 
@@ -200,13 +200,15 @@ che le tiene ferme è `test_ogni_residuo_e_uno_dei_ventidue_dichiarati`, che
 | | **totale** | **104** | **82** | **22** |
 
 **I 22, per classe** — l'elenco vive anche nel test, perché un elenco che
-sta solo in un piano non ferma nessuno:
+sta solo in un piano non ferma nessuno. Dal 2026-10-18 sono **20**: la
+riscrittura di stile dei master di ARC-07 ha riformulato due esenzioni, e
+la tabella segna i due conti col prima e il dopo:
 
 | Classe | Quanti | Cos'è |
 |---|---:|---|
 | **dialogo** | 12 | Moradin, Aegis Fang, Mask e Lathander, Re Thorek, Nania, Lythiel, Tempestas, la cellula di Dauth. Parlano in seconda persona a chi hanno davanti, ed è il loro registro: è la prima esenzione scritta in questo lotto |
-| **falso positivo del rilevatore** | 6 | tre classi, tutte vere: «chiunque lo *guardi*» e «chiunque *tocchi*» sono **terza persona congiuntiva**; «*VEDI* PARTE 2», «*Vedi* CONTRADE-STEMMI-CANTI» e «*vedi* `ARC07-DEF-1`» sono **rimandi per il DM** finiti dentro un box; «da dove *arrivi* la voce» è una **similitudine al congiuntivo** |
-| **visione interiore** | 2 | il sogno di Thorik in DEF-2, il flash della visione di Moradin in P2: la seconda esenzione |
+| **falso positivo del rilevatore** | 6 → 5 | tre classi, tutte vere: «chiunque lo *guardi*» e «chiunque *tocchi*» sono **terza persona congiuntiva** (*il primo, in DEF-3 §5, dal 2026-10-18 è «chi lo fissa» e non si conta più*); «*VEDI* PARTE 2», «*Vedi* CONTRADE-STEMMI-CANTI» e «*vedi* `ARC07-DEF-1`» sono **rimandi per il DM** finiti dentro un box; «da dove *arrivi* la voce» è una **similitudine al congiuntivo** |
+| **visione interiore** | 2 → 1 | il sogno di Thorik in DEF-2, il flash della visione di Moradin in P2: la seconda esenzione. *Dal 2026-10-18 il sogno di Thorik, riscritto, non dice più «vedi» e il rilevatore non lo conta* |
 | **canto** | 1 | la ballata del Palio è un testo cantato a qualcuno |
 | **condizionale che la scelta la lascia** | 1 | «Non parla finché tu non la *prendi*» dice al DM cosa fa Lythiel **se** il giocatore prende la ghianda. È esattamente la forma che la norma chiede, e viene contata lo stesso |
 

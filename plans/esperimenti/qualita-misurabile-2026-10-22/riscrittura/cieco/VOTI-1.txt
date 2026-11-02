@@ -1,0 +1,14 @@
+1 B ritmo
+2 A ritmo
+3 B
+4 =
+5 B ritmo
+6 B
+8 A
+9 B
+10 A
+11 A
+12 A
+13 A
+14 A
+16 A

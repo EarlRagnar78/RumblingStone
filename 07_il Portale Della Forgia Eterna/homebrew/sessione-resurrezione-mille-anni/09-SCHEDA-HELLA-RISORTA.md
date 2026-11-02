@@ -35,11 +35,11 @@ persona, stessi ricordi, stessi livelli: **Ranger 1 / Druida 12**.
 | Cosa | Effetto |
 |---|---|
 | **Resistenza al freddo 15** | |
-| **Rigenerazione 1** | 1 pf per round finché tocchi terra o pietra naturale. Non nel round dopo aver preso danno da fuoco |
+| **Guarigione rapida 1** | 1 pf per round finché tocchi terra o pietra naturale. Non nel round dopo aver preso danno da fuoco `[CANONE — DM 2026-10-18]`. ⚠ Non SRD: la guarigione rapida dell'SRD non dipende dal terreno |
 | **Radicamento** | 1 volta al giorno, 5 round: niente e nessuno ti spinge, ti travolge o ti sbilancia. Non ti muovi |
 | **Il Marchio della Veritade** | +4 a Diplomazia con i nani di Moradin. 1 volta al giorno, una verità detta in faccia: Volontà **CD 17** o chi l'ascolta è scosso |
 | **La Radice Silenziosa** | +2 a Percepire Intenzioni. 1 volta al giorno, empatia immediata con chi hai davanti |
-| **Le Radici del Mondo** | la rigenerazione vale anche su suolo sacro o druidico. 1 volta al giorno, **Radicamento corale**: per 5 round gli alleati entro 9 m hanno +1 morale ai tiri salvezza, e tu resti ferma |
+| **Le Radici del Mondo** | la guarigione rapida vale anche su suolo sacro o druidico `[CANONE — DM 2026-10-18]`. 1 volta al giorno, **Radicamento corale**: per 5 round gli alleati entro 9 m hanno +1 morale ai tiri salvezza, e tu resti ferma |
 | **Empatia vegetale +4** | |
 | **Fotosintesi** | 1 volta al giorno, un'ora di sole pieno: recuperi **2d8 pf** |
 | **Il Sogno della Terra** | 1 volta al giorno, fai una domanda alla terra: *divinazione*, livello dell'incantatore 12 |
@@ -63,12 +63,29 @@ non si fonde nel corpo nuovo.
 |---|---|
 | **Saggezza della Terra** | +4 di potenziamento alla Saggezza. ⚠️ **Non si somma** al Periapto di Saggezza: vale il bonus più alto |
 | **Corteccia del Guardiano** | +3 di armatura naturale alla CA |
-| **Avatar della Radice** | 1 volta al giorno, azione standard: diventi un **Ibrido Treant Enorme** per 10 round. +8 FOR, portata estesa, schianti. Torna all'alba |
+| **Avatar della Radice** | 1 volta al giorno, azione standard: diventi un **Ibrido Treant Enorme** per 10 round. +8 FOR, portata estesa, schianti: CA 21, 2 schianti +13 (2d6+5), portata 4,5 m, travolgere 2d6+7 (Riflessi CD 21); l'equipaggiamento si fonde, la Collana no `[CANONE — DM 2026-10-18]`. ⚠ Non SRD: la taglia sale di due categorie col solo +8 FOR. Torna all'alba |
 | **Evocazione dei Guardiani** | 3 volte al giorno, azione standard, un seme per volta. Semi I e II: un **Treant di Adamantio**, per **1 ora**. Seme III: **Durik**, se è stato distrutto: torna subito, per un'ora, e all'alba è di nuovo intero. I semi usati tornano all'alba |
 
-**Treant di Adamantio** *(evocato)* · Grande · 90 pf · RD 10/adamantio · CA 24 ·
-velocità 9 m · 2 schianti **+18** (2d8+9) · danni doppi a oggetti e strutture,
-ignora la durezza sotto 20 · i suoi colpi contano come adamantio.
+```statblocco
+nome: Treant di Adamantio (evocato)
+gs: —
+tipo: Vegetale Grande
+ca: 24
+pf: 90
+ts: Temp +12, Rifl +3, Vol +8
+velocita: 9 m
+attacchi:
+  - 2 schianti +18 (2d8+9)
+```
+**Difesa** **CA 24** · **pf 90** · TS Tempra +12, Riflessi +3, Volontà +8 · **RD 10/adamantio** `[CANONE — DM 2026-10-18]`
+
+**Attacco** Vel 9 m · **Mischia** 2 schianti **+18** (2d8+9) · portata 3 m
+
+**Capacità speciali**
+- **Travolgere** 2d8+13 (Riflessi CD 24).
+- **Colpi d'adamantio**: danni doppi a oggetti e strutture, ignora la durezza sotto 20; i suoi colpi contano come adamantio.
+
+⚠ Non SRD: FOR, armatura naturale e schianti da 2d8 restano quelli di un Treant Enorme anche da Grande.
 
 **Due Treant insieme costano caro.** Al massimo due, uno per seme. Se li chiami
 tutti e due nello stesso momento, per **un mese** la Collana non evoca più:

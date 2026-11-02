@@ -400,7 +400,7 @@ def _parse_pg_positions(md_text: str) -> list[PgPos]:
         m = _PG_RE.search(s)
         if not m:
             continue
-        name = re.split(r":", s, 1)[0]
+        name = re.split(r":", s, maxsplit=1)[0]
         name = re.sub(r"[*`]", "", name).strip()
         if not name or len(name) > 60 or name.lower() in seen:
             continue
@@ -734,7 +734,6 @@ def rule_nonuniform(ctx: Ctx) -> list[Conflict]:
     p = ctx.pmap
     if not any(p.matrix):
         return []
-    widths = [len([c for c in row]) for row in p.matrix]
     # use the pre-pad widths from raw parse is hard; approximate with trimmed base
     trimmed = []
     for row in p.matrix:

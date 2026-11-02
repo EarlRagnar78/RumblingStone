@@ -1,4 +1,4 @@
-html2text>=2020.1.16
-Pillow>=9.0.0
-requests>=2.25.0
-beautifulsoup4>=4.9.0
+html2text>=2025.4.15
+Pillow>=13.0.0
+requests>=2.34.2
+beautifulsoup4>=4.15.0

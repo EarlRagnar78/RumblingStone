@@ -31,7 +31,9 @@ cupo, come brace sotto la cenere.
 - **Cariche di Devastazione**: **3/giorno** (ricaricano all'alba). Come azione
   gratuita prima di un colpo in mischia, Tordek spende 1 carica per aggiungere
   **+2d6 danni** al colpo (danno "da devastazione", non tipizzato elementale).
-  `[verifica del valore esatto MIC in B5 — l'errata dell'arco]`
+  Valori fissati dal DM: dall'ARC-07 **4 cariche al giorno, +2d6 ciascuna**,
+  senza crescendo `[CANONE — DM 2026-10-18]`. ⚠ Non SRD: oggetto custom sul
+  modello dei *Devastation Gauntlets* `[Private source — Magic Item Compendium]`.
 - **Sinergia forgia (P2, resa permanente)**: dall'ARC-07, dopo il rito della
   Sala della Forgia, le cariche salgono a **4/giorno**, **per sempre** (decisione DM 2026-07-04: la Benedizione della Forgia è permanente; «fino a fine avventura» era la stesura precedente)
   (potenziamento narrato in `PortaleForgia-P2-REVISED-Corretta-PARTE1.md`).

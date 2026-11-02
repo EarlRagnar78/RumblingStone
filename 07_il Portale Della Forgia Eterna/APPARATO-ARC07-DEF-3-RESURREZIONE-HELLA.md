@@ -17,29 +17,32 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 
 | Scena | Prova | CD |
 |---|---|---:|
+| SCENA 1 | con Osservare | 20 |
 | SCENA 3 | Invocazione (Thorik · Conoscenze religioni | 15 |
 | SCENA 3 | Canalizzazione (Tordek · Concentrazione | 20 |
 | SCENA 3 | Stabilizzazione (Artemis · Utilizzare Oggetti Magici | 18 |
+| SCENA 4 | Thorik tira Volontà | 14 |
 | SCENA 4 | Volontà | 18 |
 
 ## L'indice dei read-aloud, in ordine di gioco
 
 | Scena | Luogo o momento | Pilastro | Righe |
 |---|---|---|---:|
-| SCENA 1 | l'Altare | LotR lead + liturgia | 10 |
-| SCENA 2 | l'Altare, il reliquiario | Salvatore, il sacro che si sente nel corpo | 9 |
-| SCENA 3 | il cerchio, lo Step 2 | — | 4 |
-| SCENA 4 | il cerchio, battuta 1 di 4 | — | 9 |
-| SCENA 4 | Il battito torna al suo passo. La voce no: resta. | — | 8 |
-| SCENA 4 | Il Cuore rallenta. Sotto l'Altare, il battito aspetta. | — | 5 |
-| SCENA 4 | «custodiscono i sacrifici che i compagni offrirono al rituale»*, e da | — | 2 |
-| SCENA 4 | Thorik si toglie la Corona — l'unica altra volta è stato per incastona | — | 3 |
-| SCENA 4 | Tordek non parla. Preme i palmi sulla terra ai due lati del corpo di H | — | 2 |
-| SCENA 4 | Artemis apre la mano sopra il cuore fermo e lascia andare una scheggia | — | 3 |
-| SCENA 5 | la Sala, la soglia fra i mondi | GoT lead, la creditrice paziente | 9 |
-| SCENA 6 | Luce divina esplode dall'Altare. Per tre secondi la forma di Moradin — | — | 5 |
-| SCENA 6 | l'Altare | Salvatore, il ritorno | 8 |
-| SCENA 6 | le prime parole (voce rauca, non usata da settimane) | — | 6 |
-| SCENA 6 | Prima che qualcuno possa | Salvatore — il ritorno del fedele | 8 |
-| SCENA 7 | la Sala | Casa di Davide, il debito che si scioglie | 8 |
+| SCENA 1 | l'Altare | LotR lead | 10 |
+| SCENA 2 | l'Altare, il reliquiario | Salvatore lead | 8 |
+| SCENA 3 | il cerchio, lo Step 2 | Mercer lead | 5 |
+| SCENA 3 | lo Step 3 | Andor support | 4 |
+| SCENA 4 | il cerchio, battuta 1 di 4 | Casa di Davide lead | 4 |
+| SCENA 4 | Il battito torna al suo passo. La voce resta. | — | 1 |
+| SCENA 4 | Il Cuore rallenta. Sotto l'Altare, il battito aspetta. | — | 1 |
+| SCENA 4 | il primo Dono | Casa di Davide lead | 4 |
+| SCENA 4 | il secondo Dono | Mercer lead | 4 |
+| SCENA 4 | il terzo Dono | Andor lead | 3 |
+| SCENA 5 | la Sala, la soglia fra i mondi | GoT lead | 7 |
+| SCENA 6 | l'Altare, lo Step 6 | Casa di Davide lead | 3 |
+| SCENA 6 | il ritorno | Salvatore lead | 7 |
+| SCENA 6 | le prime parole, con la voce rauca | Mercer lead | 5 |
+| SCENA 6 | il ritorno del fedele | Salvatore lead | 7 |
+| SCENA 7 | la Sala, il debito che si scioglie | Casa di Davide lead | 8 |
 | SCENA 8 | l'affresco A6 | Andor lead, la tensione che non alza la voce | 5 |
+| SCENA 8 | la chiusura | Andor lead | 3 |

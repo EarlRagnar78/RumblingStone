@@ -1,0 +1,77 @@
+{
+ "campione_ref": "",
+ "dopo": "",
+ "seme": 20261024,
+ "coppie": [
+  {
+   "n": 1,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/pipeline/cieco/_testi-provvisori.md",
+   "titolo": "Box P01",
+   "nuova": "B",
+   "somiglianza": 0.962,
+   "stato": "valida",
+   "misura": "nuova",
+   "perche": "2 dettagli sensoriali in più",
+   "controllo": true
+  },
+  {
+   "n": 2,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/pipeline/cieco/_testi-provvisori.md",
+   "titolo": "Box P02",
+   "nuova": "B",
+   "somiglianza": 0.985,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 3,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/pipeline/cieco/_testi-provvisori.md",
+   "titolo": "Box P03",
+   "nuova": "A",
+   "somiglianza": 0.961,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 4,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/pipeline/cieco/_testi-provvisori.md",
+   "titolo": "Box P04",
+   "nuova": "A",
+   "somiglianza": 0.89,
+   "stato": "valida",
+   "misura": "nuova",
+   "perche": "1 dettagli sensoriali in più",
+   "controllo": true
+  },
+  {
+   "n": 5,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/pipeline/cieco/_testi-provvisori.md",
+   "titolo": "Box P05",
+   "nuova": "B",
+   "somiglianza": 0.795,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 6,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/pipeline/cieco/_testi-provvisori.md",
+   "titolo": "Box P06",
+   "nuova": "B",
+   "somiglianza": 0.972,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  }
+ ],
+ "confronto": {
+  "vecchia": "originale",
+  "nuova": "vincitrice della pipeline"
+ }
+}

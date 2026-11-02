@@ -1,0 +1,282 @@
+{
+ "campione_ref": "e0ce0e6",
+ "dopo": "",
+ "seme": 20261020,
+ "coppie": [
+  {
+   "n": 1,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "titolo": "L'apertura dell'Affresco A5 (recuperato dall'Interludio — non tagliare)",
+   "nuova": "B",
+   "somiglianza": 0.869,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 2,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "titolo": "SCENA 3 — La foresta, e gli Xorn al pilastro",
+   "nuova": "B",
+   "somiglianza": 1.0,
+   "stato": "identica",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 3,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "titolo": "La scena al tavolo — l'ora della pergamena",
+   "nuova": "B",
+   "somiglianza": 0.906,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 4,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "titolo": "8a. L'ARRIVO — la soglia, l'attracco e i primi sei secondi",
+   "nuova": "A",
+   "somiglianza": 0.967,
+   "stato": "valida",
+   "misura": "nuova",
+   "perche": "1 dettagli sensoriali in più",
+   "controllo": true
+  },
+  {
+   "n": 5,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "titolo": "ROUND 2 — «La resistenza»",
+   "nuova": "A",
+   "somiglianza": 1.0,
+   "stato": "identica",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 6,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "titolo": "Cosa mostra A7, valore per valore",
+   "nuova": "B",
+   "somiglianza": 0.937,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 7,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "titolo": "A3 — «La Visione del Risveglio» (NORD-EST · personale Thorik)",
+   "nuova": "A",
+   "somiglianza": 1.0,
+   "stato": "identica",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 8,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "titolo": "SCENA 4 — La Stanza della Corona",
+   "nuova": "A",
+   "somiglianza": 0.957,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 9,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "titolo": "Prima la regola, perché è la domanda che nasce sempre",
+   "nuova": "A",
+   "somiglianza": 1.0,
+   "stato": "identica",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 10,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "titolo": "🌙 HELLA — dall'altra parte `[handout per la sua giocatrice]`",
+   "nuova": "A",
+   "somiglianza": 1.0,
+   "stato": "identica",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 11,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "titolo": "La riga che nessuno ha ancora detto a Thorik",
+   "nuova": "A",
+   "somiglianza": 1.0,
+   "stato": "identica",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 12,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "titolo": "⚙️ Come si gioca questo rito: la regia<!-- apparato --> (ADR-0014)<!-- /apparato -->",
+   "nuova": "A",
+   "somiglianza": 1.0,
+   "stato": "identica",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 13,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "titolo": "🔨 Come lo chiede Moradin: il perché, lo scopo, il prezzo<!-- storico --> `[riscritto 2026-09-25 su richiesta del DM]`<!-- /storico -->",
+   "nuova": "A",
+   "somiglianza": 1.0,
+   "stato": "identica",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 14,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "titolo": "DONO 3 — ARTEMIS: «La Scintilla» → **Il Rovo Eldritch**",
+   "nuova": "B",
+   "somiglianza": 0.921,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 15,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "titolo": "SCENA 6 — Il risveglio",
+   "nuova": "A",
+   "somiglianza": 1.0,
+   "stato": "identica",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 16,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "titolo": "SCENA 4 — Il consiglio di guerra di Re Thorek I",
+   "nuova": "A",
+   "somiglianza": 1.0,
+   "stato": "identica",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 17,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "titolo": "SCENA 4 — Il consiglio di guerra di Re Thorek I",
+   "nuova": "A",
+   "somiglianza": 0.862,
+   "stato": "valida",
+   "misura": "nuova",
+   "perche": "2 dettagli sensoriali in più",
+   "controllo": true
+  },
+  {
+   "n": 18,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "titolo": "⚖️ Il grigio — perché **crede di aver ragione** *(pilastro GoT)*",
+   "nuova": "B",
+   "somiglianza": 1.0,
+   "stato": "identica",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 19,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "titolo": "SCENA 8 — Zog'tar",
+   "nuova": "B",
+   "somiglianza": 1.0,
+   "stato": "identica",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 20,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "titolo": "La scena, i primi tre momenti",
+   "nuova": "A",
+   "somiglianza": 1.0,
+   "stato": "identica",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 21,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "titolo": "SCENA 2 — L'apparizione",
+   "nuova": "A",
+   "somiglianza": 1.0,
+   "stato": "identica",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 22,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "titolo": "SCENA 2 — L'apparizione",
+   "nuova": "B",
+   "somiglianza": 0.99,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 23,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "titolo": "La Corona si completa, dopo l'uso `[CANONE — DM, D6]`",
+   "nuova": "B",
+   "somiglianza": 0.908,
+   "stato": "valida",
+   "misura": "nuova",
+   "perche": "1 dettagli sensoriali in più",
+   "controllo": true
+  },
+  {
+   "n": 24,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "titolo": "SCENA 3 — La pulizia e il passaggio",
+   "nuova": "A",
+   "somiglianza": 1.0,
+   "stato": "identica",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 25,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "titolo": "Il passaggio di consegne",
+   "nuova": "B",
+   "somiglianza": 1.0,
+   "stato": "identica",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  }
+ ]
+}

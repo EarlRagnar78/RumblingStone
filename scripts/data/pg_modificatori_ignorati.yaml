@@ -1,0 +1,50 @@
+# Modificatori permanenti che i documenti affermano ma che NON vanno sulla
+# scheda di un PG, ognuno con la ragione scritta.
+#
+# Regola (PR #99, lotto G14; riportata dal lotto 4g-1, ADR-0088): `validate_pg.py`
+# non vieta nulla, obbliga a dichiarare. Una tripla (PG, delta, caratteristica)
+# trovata nei documenti si chiude in due modi soli: la si registra sulla scheda,
+# oppure la si dismette qui dicendo perché. Non esiste una terza via, ed è
+# apposta: è il silenzio che ha fatto sparire il −2 DES della Corona per tre
+# generazioni di schede.
+ignorati:
+- pg: Thorik
+  caratteristica: COS
+  delta: -2
+  ragione: >-
+    NON È CANONE. «Nessun −2 COS» sta in state.yaml dal redesign dei Doni v2
+    (commit d4eea53, 2026-09-12), e i sei punti dei master che lo davano per
+    pagato sono stati corretti (D-D, plans/CHANGELOG.md). Le occorrenze rimaste
+    stanno nel CHANGELOG, che è un registro storico: racconta l'errore, non lo
+    commette. Il costo della resurrezione di Hella non è ancora versato.
+
+# PARTITA DOPPIA: il libro mastro dei moduli, di fronte a quello delle schede.
+#
+# `fonti_primarie` elenca i file in cui un costo permanente NASCE (non quelli
+# che lo ricitano) e, per ciascuno, che cosa quel file stabilisce. Ogni voce
+# `attesta` dev'essere presente sulla scheda di quel PG **con quel file come
+# `fonte`**: le due colonne devono quadrare.
+#
+# Il confronto per *tipo* non basta: Thorik ha DUE −2 DES, dalla Corona indossata
+# e dal rito, e cancellandone uno il tipo resterebbe coperto dall'altro.
+#
+# P1 scrive anche «CAR: 8 → 12 (+4 Corona)», e qui NON è attestato: è lo stesso
+# +4 CAR che DEF-1 (D84) mette sul rito. Il canone giocato ne conta uno solo
+# (state.yaml del ramo di gruppo: «+4 CAR» in tutto; scheda giocatore della
+# Corona: «8 → 12»), e la scheda lo tiene col rito come state.yaml.
+fonti_primarie:
+- file: 07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md
+  cosa: >-
+    Il beat in cui Thorik prende la Corona e se la mette in fronte. Blocco
+    «Effetti Meccanici Corona (Incompleta - Parte 1)»: DES 10 → 8, CA 22 → 21.
+  attesta:
+  - {pg: Thorik, caratteristica: DES, delta: -2}
+- file: 07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md
+  cosa: >-
+    §9 Fase 1: il Peso del Mondo accettato nel corpo al rito dello Smeraldo,
+    giocato il 2026-07-31. Lo paga il PORTATORE. Gli effetti sono quelli di D84
+    (2026-10-12).
+  attesta:
+  - {pg: Thorik, caratteristica: DES, delta: -2}
+  - {pg: Thorik, caratteristica: COS, delta: 2}
+  - {pg: Thorik, caratteristica: CAR, delta: 4}

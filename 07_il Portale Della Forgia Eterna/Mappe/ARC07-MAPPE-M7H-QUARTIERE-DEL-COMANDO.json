@@ -1,0 +1,1225 @@
+{
+  "schema_version": "1.0",
+  "title": "M7-H — Il campo del capo: lo spiazzo, la Guardia della Mano e i clan (notte, ≈372 DR)",
+  "scale_m_per_square": 1.5,
+  "map_size": [
+    44,
+    40
+  ],
+  "base_terrain": "🟩",
+  "north": "N",
+  "tipo": "tattica",
+  "ambiente": "esterno",
+  "luogo": "Hammerfist ≈372 DR, la tenda del comando sulla piana dell'orda",
+  "quota": "870 m ; s.l.m., la piana dell'orda [INFERRED — needs DM confirmation: il DM ha fissato la piana a quota 0, non la quota sul mare]",
+  "dislivello": "0 m ; sulla piana dell'orda: porta e cortile sono 100 m più in alto, a nord, a circa 1 km di cammino dalla postierla",
+  "regions": [
+    {
+      "terrain": "🟫",
+      "rect": [
+        14,
+        10,
+        15,
+        19
+      ],
+      "label": "Lo spiazzo del capo: terra battuta dagli zoccoli e dai piedi, senza recinto"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        12,
+        12,
+        19,
+        15
+      ]
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        10,
+        15,
+        23,
+        9
+      ]
+    },
+    {
+      "terrain": "⬜",
+      "rect": [
+        17,
+        17,
+        9,
+        5
+      ],
+      "label": "Dentro la tenda: assi e pelli stese sul terreno"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        20,
+        0,
+        3,
+        8
+      ],
+      "label": "La via battuta verso la fortezza"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        21,
+        31,
+        3,
+        9
+      ],
+      "label": "La via battuta verso le colline"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        35,
+        18,
+        9,
+        3
+      ],
+      "label": "La via battuta verso est"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        0,
+        18,
+        8,
+        3
+      ],
+      "label": "La via battuta fra i clan degli orchi"
+    }
+  ],
+  "structures": [
+    {
+      "type": "🎪",
+      "line": [
+        [
+          16,
+          16
+        ],
+        [
+          26,
+          16
+        ]
+      ],
+      "label": "Telo nord della tenda, parete alta 3 m. Tagliarlo fa rumore: le guardie tirano Ascoltare contro il Muoversi Silenziosamente di chi taglia (Scena 7)"
+    },
+    {
+      "type": "🎪",
+      "line": [
+        [
+          16,
+          22
+        ],
+        [
+          26,
+          22
+        ]
+      ],
+      "label": "Telo sud della tenda"
+    },
+    {
+      "type": "🎪",
+      "line": [
+        [
+          16,
+          16
+        ],
+        [
+          16,
+          22
+        ]
+      ],
+      "label": "Telo ovest della tenda"
+    },
+    {
+      "type": "🎪",
+      "line": [
+        [
+          26,
+          16
+        ],
+        [
+          26,
+          22
+        ]
+      ],
+      "label": "Telo est della tenda"
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        26,
+        17,
+        1,
+        5
+      ],
+      "label": "Telo est: «il telo a sinistra» di Balvar"
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        21,
+        22,
+        3,
+        1
+      ],
+      "label": "Telo del glifo"
+    },
+    {
+      "type": "🚪",
+      "at": [
+        20,
+        16
+      ],
+      "label": "La soglia (runa 1: epurare invisibilità quando un nano la varca)"
+    },
+    {
+      "type": "🚪",
+      "at": [
+        21,
+        16
+      ],
+      "label": "La soglia, larga 3 m perché Zog'tar, Grande, ci passi"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        18,
+        19
+      ],
+      "label": "Palo ovest, di legno, alto 6 m"
+    },
+    {
+      "type": "🟪",
+      "rect": [
+        21,
+        19,
+        1,
+        1
+      ],
+      "label": "Palo centrale, di legno"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        24,
+        19
+      ],
+      "label": "Palo est, di legno, alto 6 m"
+    },
+    {
+      "type": "🪑",
+      "at": [
+        17,
+        17
+      ],
+      "label": "Tavola con la mappa di Hammerfist"
+    },
+    {
+      "type": "👑",
+      "rect": [
+        22,
+        21,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🪓",
+      "at": [
+        25,
+        17
+      ],
+      "label": "Rastrelliera delle guardie"
+    },
+    {
+      "type": "🦴",
+      "at": [
+        15,
+        15
+      ],
+      "label": "Ossa di nani appese ai tiranti, fuori dalla tenda"
+    },
+    {
+      "type": "🦴",
+      "at": [
+        27,
+        15
+      ],
+      "label": "Ossa di nani appese ai tiranti, fuori dalla tenda"
+    },
+    {
+      "type": "🦴",
+      "at": [
+        15,
+        23
+      ],
+      "label": "Ossa di nani appese ai tiranti, fuori dalla tenda"
+    },
+    {
+      "type": "🦴",
+      "at": [
+        27,
+        23
+      ],
+      "label": "Ossa di nani appese ai tiranti, fuori dalla tenda"
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        9,
+        9,
+        2,
+        2
+      ],
+      "label": "Tende dei servi e del bottino del capo: dentro non ci sono soldati"
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        14,
+        8,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        27,
+        8,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        32,
+        15,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        32,
+        23,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        29,
+        28,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        17,
+        29,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        11,
+        27,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        8,
+        22,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        8,
+        13,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        31,
+        11,
+        2,
+        2
+      ],
+      "label": "Tenda del turno dopo"
+    },
+    {
+      "type": "🗿",
+      "at": [
+        18,
+        13
+      ],
+      "label": "Palo dei trofei: teschi di nani, code di lupo, lo stendardo della Mano Rossa"
+    },
+    {
+      "type": "🗿",
+      "at": [
+        24,
+        13
+      ],
+      "label": "Palo dei trofei"
+    },
+    {
+      "type": "📦",
+      "at": [
+        13,
+        15
+      ],
+      "label": "Il bottino della valle, ammucchiato davanti al capo perché i capiclan lo vedano"
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        9,
+        3,
+        2,
+        2
+      ],
+      "label": "Tende della Guardia della Mano, otto hobgoblin per tenda, a gruppi attorno al fuoco"
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        16,
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        12,
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        25,
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        32,
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        28,
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        35,
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        42,
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        38,
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        35,
+        11,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        42,
+        11,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        38,
+        8,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        38,
+        15,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        35,
+        25,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        42,
+        25,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        38,
+        22,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        38,
+        29,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        9,
+        34,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        16,
+        34,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        12,
+        38,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        26,
+        34,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        33,
+        34,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        29,
+        38,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        38,
+        32,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        0,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        5,
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        1,
+        5,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        5,
+        5,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        0,
+        10,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        2,
+        9,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        5,
+        11,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        1,
+        15,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        0,
+        23,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        5,
+        22,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        0,
+        27,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        4,
+        28,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        0,
+        33,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        5,
+        34,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        1,
+        38,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🎪",
+      "rect": [
+        4,
+        37,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🐴",
+      "at": [
+        18,
+        38
+      ],
+      "label": "I lupi da guerra della Guardia, legati ai picchetti"
+    },
+    {
+      "type": "📦",
+      "at": [
+        25,
+        1
+      ],
+      "label": "Carri del bottino, senza buoi, lasciati dove si sono fermati"
+    },
+    {
+      "type": "📦",
+      "at": [
+        26,
+        1
+      ]
+    },
+    {
+      "type": "🗿",
+      "at": [
+        5,
+        17
+      ],
+      "label": "Il palo degli sciamani degli orchi"
+    }
+  ],
+  "hazards": [
+    {
+      "type": "🟪",
+      "at": [
+        21,
+        19
+      ],
+      "label": "Palo centrale",
+      "effect": "di legno, alto 6 m come gli altri due: il simbolo è quello del pilastro, ma non è mithral. È il palo maestro: le due metà del colmo si incastrano su di lui. Regge la runa 2 di Balvar, la barriera di lame (stato E); abbatterlo: Forza CD 20, azione standard (stato F). Sotto il colmo il telo è a 6 m, ai lati a 3 m (Scena 8)"
+    },
+    {
+      "type": "🔥",
+      "at": [
+        21,
+        12
+      ],
+      "label": "Il fuoco del consiglio",
+      "effect": "davanti alla soglia, dove il capo parla ai capiclan; a notte fonda è brace: chi entra nella cella prende 1d6 da fuoco, la luce è fioca e solo entro 3 m"
+    },
+    {
+      "type": "🔥",
+      "at": [
+        11,
+        19
+      ],
+      "label": "Fuoco delle sentinelle ovest",
+      "effect": "due sentinelle sulla via battuta: chi entra nella cella prende 1d6 da fuoco. Luce: intensa entro 6 m, fioca fino a 12 m, come una torcia dell'SRD"
+    },
+    {
+      "type": "🔥",
+      "at": [
+        31,
+        19
+      ],
+      "label": "Fuoco delle sentinelle est",
+      "effect": "due sentinelle sulla via battuta: chi entra nella cella prende 1d6 da fuoco. Luce: intensa entro 6 m, fioca fino a 12 m, come una torcia dell'SRD"
+    },
+    {
+      "type": "🔥",
+      "at": [
+        15,
+        24
+      ],
+      "label": "Falò della guardia",
+      "effect": "chi entra nella cella prende 1d6 da fuoco. Luce: intensa entro 6 m, fioca fino a 12 m, come una torcia dell'SRD. Il telo ferma la luce: dentro la tenda non arriva"
+    },
+    {
+      "type": "🔥",
+      "at": [
+        27,
+        24
+      ],
+      "label": "Falò della guardia",
+      "effect": "chi entra nella cella prende 1d6 da fuoco. Luce: intensa entro 6 m, fioca fino a 12 m, come una torcia dell'SRD. Il telo ferma la luce: dentro la tenda non arriva"
+    },
+    {
+      "type": "🏮",
+      "at": [
+        19,
+        17
+      ],
+      "label": "Braciere della soglia",
+      "effect": "luce (non SRD: l'SRD non ha bracieri, il raggio sta fra la torcia e la lampada comune perché il fondo buio resti buio): intensa entro 4,5 m, fioca fino a 7,5 m, oltre è buio. La soglia (M9–N9) è in luce intensa e non dà occultamento (Scena 7)"
+    },
+    {
+      "type": "🏮",
+      "at": [
+        18,
+        21
+      ],
+      "label": "Braciere del seggio",
+      "effect": "luce (non SRD, come il braciere della soglia): intensa entro 4,5 m, fioca fino a 7,5 m, oltre è buio"
+    },
+    {
+      "type": "🔥",
+      "at": [
+        13,
+        4
+      ],
+      "label": "Fuoco della lancia della Guardia della Mano",
+      "effect": "attorno dormono otto hobgoblin per tenda: chi entra nella cella prende 1d6 da fuoco. Luce: intensa entro 6 m, fioca fino a 12 m, come una torcia dell'SRD"
+    },
+    {
+      "type": "🔥",
+      "at": [
+        29,
+        4
+      ],
+      "label": "Fuoco della lancia",
+      "effect": "attorno dormono otto hobgoblin per tenda: chi entra nella cella prende 1d6 da fuoco. Luce: intensa entro 6 m, fioca fino a 12 m, come una torcia dell'SRD"
+    },
+    {
+      "type": "🔥",
+      "at": [
+        39,
+        4
+      ],
+      "label": "Fuoco della lancia",
+      "effect": "attorno dormono otto hobgoblin per tenda: chi entra nella cella prende 1d6 da fuoco. Luce: intensa entro 6 m, fioca fino a 12 m, come una torcia dell'SRD"
+    },
+    {
+      "type": "🔥",
+      "at": [
+        39,
+        12
+      ],
+      "label": "Fuoco della lancia",
+      "effect": "attorno dormono otto hobgoblin per tenda: chi entra nella cella prende 1d6 da fuoco. Luce: intensa entro 6 m, fioca fino a 12 m, come una torcia dell'SRD"
+    },
+    {
+      "type": "🔥",
+      "at": [
+        39,
+        26
+      ],
+      "label": "Fuoco della lancia",
+      "effect": "attorno dormono otto hobgoblin per tenda: chi entra nella cella prende 1d6 da fuoco. Luce: intensa entro 6 m, fioca fino a 12 m, come una torcia dell'SRD"
+    },
+    {
+      "type": "🔥",
+      "at": [
+        13,
+        35
+      ],
+      "label": "Fuoco della lancia",
+      "effect": "attorno dormono otto hobgoblin per tenda: chi entra nella cella prende 1d6 da fuoco. Luce: intensa entro 6 m, fioca fino a 12 m, come una torcia dell'SRD"
+    },
+    {
+      "type": "🔥",
+      "at": [
+        30,
+        35
+      ],
+      "label": "Fuoco della lancia",
+      "effect": "attorno dormono otto hobgoblin per tenda: chi entra nella cella prende 1d6 da fuoco. Luce: intensa entro 6 m, fioca fino a 12 m, come una torcia dell'SRD"
+    },
+    {
+      "type": "🔥",
+      "at": [
+        39,
+        36
+      ],
+      "label": "Fuoco della lancia",
+      "effect": "attorno dormono otto hobgoblin per tenda: chi entra nella cella prende 1d6 da fuoco. Luce: intensa entro 6 m, fioca fino a 12 m, come una torcia dell'SRD"
+    },
+    {
+      "type": "🔥",
+      "at": [
+        3,
+        3
+      ],
+      "label": "Fuoco della banda della Zanna",
+      "effect": "il fuoco comune di una banda d'orchi: chi entra nella cella prende 1d6 da fuoco. Luce: intensa entro 6 m, fioca fino a 12 m. Attorno dormono una ventina d'orchi e lo sciamano della banda"
+    },
+    {
+      "type": "🔥",
+      "at": [
+        3,
+        12
+      ],
+      "label": "Fuoco della banda del Corvo",
+      "effect": "il fuoco comune di una banda d'orchi: chi entra nella cella prende 1d6 da fuoco. Luce: intensa entro 6 m, fioca fino a 12 m. Attorno dormono una ventina d'orchi e lo sciamano della banda"
+    },
+    {
+      "type": "🔥",
+      "at": [
+        3,
+        25
+      ],
+      "label": "Fuoco della banda dell'Ascia Rotta",
+      "effect": "il fuoco comune di una banda d'orchi: chi entra nella cella prende 1d6 da fuoco. Luce: intensa entro 6 m, fioca fino a 12 m. Attorno dormono una ventina d'orchi e lo sciamano della banda"
+    },
+    {
+      "type": "🔥",
+      "at": [
+        3,
+        35
+      ],
+      "label": "Fuoco della banda dei Teschi",
+      "effect": "il fuoco comune di una banda d'orchi: chi entra nella cella prende 1d6 da fuoco. Luce: intensa entro 6 m, fioca fino a 12 m. Attorno dormono una ventina d'orchi e lo sciamano della banda"
+    }
+  ],
+  "units": [
+    {
+      "faction": "PG",
+      "name": "I PG in volo, invisibili, a 48 m sopra la tenda",
+      "token": "🔵",
+      "at": [
+        22,
+        18
+      ],
+      "quantity": 4
+    },
+    {
+      "faction": "Orda",
+      "name": "Zog'tar Deatheye (Grande), seduto sul seggio",
+      "token": "⚫",
+      "area": {
+        "rect": [
+          22,
+          20,
+          2,
+          2
+        ]
+      },
+      "cr": "GS 15",
+      "note": "Grande: il master compilato porta «@taglia P14 ; Grande»"
+    },
+    {
+      "faction": "Orda",
+      "name": "Balvar Fuocospento, sullo sgabello nel fondo buio, a tre passi dal generale",
+      "token": "🟡",
+      "at": [
+        25,
+        21
+      ],
+      "cr": "GS 13"
+    },
+    {
+      "faction": "Orda",
+      "name": "Guardia hobgoblin, in ascolto accanto al seggio",
+      "token": "🔴",
+      "at": [
+        20,
+        20
+      ],
+      "cr": "Guerriero 8"
+    },
+    {
+      "faction": "Orda",
+      "name": "Guardia hobgoblin, in ascolto accanto al seggio",
+      "token": "🔴",
+      "at": [
+        21,
+        20
+      ],
+      "cr": "Guerriero 8"
+    },
+    {
+      "faction": "Orda",
+      "name": "Guardia hobgoblin, in ascolto accanto al seggio",
+      "token": "🔴",
+      "at": [
+        24,
+        21
+      ],
+      "cr": "Guerriero 8"
+    },
+    {
+      "faction": "Orda",
+      "name": "Guardia hobgoblin, in ascolto accanto al seggio",
+      "token": "🔴",
+      "at": [
+        20,
+        21
+      ],
+      "cr": "Guerriero 8"
+    },
+    {
+      "faction": "Orda",
+      "name": "Grask, l'araldo: seduto fuori, dalla parte del campo, la custodia del corno incatenata al polso; sveglio fino alla 4ª tacca, addormentato dalla 5ª",
+      "token": "🔴",
+      "at": [
+        23,
+        23
+      ],
+      "cr": "Combattente 1"
+    },
+    {
+      "faction": "Orda",
+      "name": "Il sacerdote dell'orda, che dorme dietro il seggio: si alza al primo grido",
+      "token": "🟡",
+      "at": [
+        21,
+        21
+      ],
+      "cr": "GS 6, adepto 7"
+    },
+    {
+      "faction": "Orda",
+      "name": "Una lancia della Guardia della Mano, otto per tenda",
+      "token": "🔴",
+      "at": [
+        29,
+        6
+      ],
+      "quantity": 24,
+      "cr": "Guerriero 4"
+    },
+    {
+      "faction": "Orda",
+      "name": "Una lancia della Guardia della Mano",
+      "token": "🔴",
+      "at": [
+        30,
+        33
+      ],
+      "quantity": 24,
+      "cr": "Guerriero 4"
+    },
+    {
+      "faction": "Orda",
+      "name": "Banda d'orchi del Corvo, attorno al fuoco",
+      "token": "🔴",
+      "at": [
+        2,
+        13
+      ],
+      "quantity": 20,
+      "cr": "GS ½"
+    },
+    {
+      "faction": "Orda",
+      "name": "Le sentinelle della via est",
+      "token": "🔴",
+      "at": [
+        37,
+        20
+      ],
+      "quantity": 2,
+      "cr": "Guerriero 4"
+    }
+  ],
+  "movements": [
+    {
+      "name": "Le ronde di orchi dalla via ovest (1d4+2 round)",
+      "path": [
+        [
+          0,
+          19
+        ],
+        [
+          8,
+          19
+        ]
+      ],
+      "color": "#e85d04"
+    },
+    {
+      "name": "Le lance della Guardia dalla via sud (2d4+2 round)",
+      "path": [
+        [
+          22,
+          39
+        ],
+        [
+          22,
+          31
+        ]
+      ],
+      "color": "#9d0208"
+    },
+    {
+      "name": "Le lance della Guardia dalla via nord (2d4+2 round)",
+      "path": [
+        [
+          21,
+          0
+        ],
+        [
+          21,
+          8
+        ]
+      ],
+      "color": "#9d0208"
+    },
+    {
+      "name": "Le sentinelle della via est",
+      "path": [
+        [
+          37,
+          19
+        ],
+        [
+          34,
+          19
+        ]
+      ],
+      "color": "#d62828"
+    },
+    {
+      "name": "Le due guardie del turno dopo",
+      "path": [
+        [
+          31,
+          13
+        ],
+        [
+          28,
+          24
+        ],
+        [
+          22,
+          23
+        ]
+      ],
+      "color": "#7b2cbf"
+    }
+  ],
+  "notes": [
+    "M7-H è M7-C con il campo attorno: lo spiazzo è lo stesso e le sue coordinate sono quelle di M7-C spostate di otto colonne e otto righe (la N12 di M7-C qui è V20).",
+    "Il modello è il campo di un capo nomade, non il castrum romano: niente recinto e niente file diritte. La tenda del capo sta sola in mezzo allo spiazzo; attorno, a 20-30 m, le lance della Guardia della Mano, quattro tende da otto attorno al fuoco della lancia, a gruppi staccati; a ovest i clan degli orchi, ripari storti attorno al fuoco della banda, con il vuoto fra un clan e l'altro. Le vie sono solo terra battuta, a raggiera dallo spiazzo.",
+    "Le misure: tende da otto di 3 × 3 m, 3 m di vuoto fra il fuoco e il telo, almeno 4,5 m fra un gruppo e l'altro (plans/esperimenti/mappe-campo-2026-10-21/RICERCA-ACCAMPAMENTI.md, la parte sui campi mongoli e d'avventura).",
+    "Il barile: i PG volano a 48 m, invisibili. La deviazione, la caduta, l'olio e il fuoco sono in il supplemento «Il barile sulla tenda». All'aperto le palle di fuoco arrivano a 6 m dall'impatto e l'olio a 7: nessuna tenda della Guardia è così vicina al telo del comando."
+  ],
+  "tattiche": [
+    "**Il campo si sveglia** (Scena 8): il boato si sente in tutto il campo. Le sentinelle dei fuochi gridano e restano al loro posto; le ronde d'orchi arrivano dalla via ovest in 1d4+2 round, le lance della Guardia dalle vie nord e sud in 2d4+2, il tempo di svegliarsi e armarsi. Finché Zog'tar è in piedi non vanno addosso alla tenda: fanno quadrato nello spiazzo, a una decina di metri dal telo, e portano acqua e pelli bagnate.",
+    "**Chi guarda in alto**: nessuno, al primo round. Dal secondo gli sciamani dei clan cercano chi ha lanciato, e chi ha *vedere invisibilità* guarda il cielo; a 48 m la scurovisione (18 m) non arriva, e le stelle non bastano per vedere un invisibile che non si muove."
+  ],
+  "evoluzione": [
+    {
+      "stato": "I · il barile",
+      "trigger": "il barile cade sulla tenda",
+      "griglia": "la tenda brucia; lo spiazzo attorno resta sgombro",
+      "effetto": "allarme in tutto il campo; i rinforzi arrivano per le vie battute"
+    },
+    {
+      "stato": "J · i barilotti",
+      "trigger": "i PG lasciano cadere uno dei barilotti da 10 litri",
+      "griglia": "l'olio copre i quadretti entro 3 m da dove cade",
+      "effetto": "su una via dove si ammassano i rinforzi, su una lancia che si sveglia, o sulla tenda del turno dopo: le regole sono in il supplemento «Il barile sulla tenda»"
+    }
+  ],
+  "note_dm": [
+    "**Il campo qui misura 66 × 60 m**: lo spiazzo del capo, con attorno la Guardia della Mano e i primi clan. Oltre il bordo il campo continua per mezzo chilometro in ogni direzione (M7-A)."
+  ],
+  "taglie": [
+    {
+      "at": [
+        23,
+        21
+      ],
+      "taglia": "Grande"
+    }
+  ]
+}

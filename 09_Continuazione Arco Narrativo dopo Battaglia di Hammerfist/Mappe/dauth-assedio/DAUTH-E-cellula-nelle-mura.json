@@ -66,7 +66,7 @@
     1
    ],
    "label": "Botola in fondo al corridoio cieco",
-   "collega": "fuori mappa ; dove porta la botola la carta non lo dice [INFERRED — needs DM confirmation]"
+   "collega": "fuori mappa ; la botola scende al condotto di scolo sotto le mura, da dove è entrata la cellula e da dove fugge"
   },
   {
    "type": "🔼",
@@ -105,7 +105,7 @@
  "units": [
   {
    "faction": "Guastatori",
-   "name": "Sabotatore con la chiave (Ladro 7) [INFERRED — needs DM confirmation]",
+   "name": "Sabotatore con la chiave (Ladro 7)",
    "token": "🔴",
    "at": [
     1,

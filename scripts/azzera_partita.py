@@ -65,8 +65,8 @@ def piano(radice: Path) -> "list[tuple[str, Path]]":
     """(azione, file) per ogni file che il reset tocca, senza toccarne nessuno."""
     out: list[tuple[str, Path]] = []
     for v in PARTITA:
-        if v.azione == "svuota":
-            out += [("svuota", p) for p in sorted(radice.glob(v.percorso))]
+        if v.azione in ("svuota", "schede"):
+            out += [(v.azione, p) for p in sorted(radice.glob(v.percorso))]
         elif v.azione == "rimuovi":
             if (radice / v.percorso).exists():
                 out.append(("rimuovi", radice / v.percorso))
@@ -128,6 +128,12 @@ def azzera(radice: Path, testo_stato: "str | None" = None) -> "list[str]":
             if dest.exists():
                 dest.unlink()
                 resoconto.append(f"rimosso   {v.percorso}  ({v.nota})")
+        elif v.azione == "schede":
+            import render_pg
+            nuove = render_pg.crea_schede(
+                radice, [str(p["pg"]) for p in dati.get("party") or []])
+            resoconto.append(f"rifatte   {v.percorso}  ({len(nuove)} schede vuote, "
+                             "una per PG del nuovo party)")
         else:  # pragma: no cover - l'elenco e' un dato: un'azione ignota e' un refuso
             raise ResetError(f"azione sconosciuta «{v.azione}» per {v.percorso}")
 

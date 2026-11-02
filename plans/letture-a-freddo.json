@@ -62,6 +62,44 @@
           "nota": "corsa intera: vista, preparazione a scene e giorno dopo",
           "rilievi_rossi_e_arancio": 8,
           "rilievi": []
+        },
+        {
+          "ruolo": "dm",
+          "data": "2026-10-12",
+          "rapporto": "plans/esperimenti/def5-giro2/def5-giro2-DM.md",
+          "corsa": "plans/esperimenti/def5-giro2/corsa-dm/dm",
+          "impronta": "d2bd27dc10134c0f8a11c8aca3ecf5e85718618af619c0a2be5a9ca46afc89df",
+          "smesso_a": null,
+          "rilievi": [
+            {
+              "n": 1,
+              "gravita": "🟠",
+              "stato": "corretto"
+            },
+            {
+              "n": 2,
+              "gravita": "🟠",
+              "stato": "corretto"
+            },
+            {
+              "n": 3,
+              "gravita": "🟠",
+              "stato": "corretto"
+            },
+            {
+              "n": 4,
+              "gravita": "🟠",
+              "stato": "residuo",
+              "ragione": "corrette le righe di §9 (le due immagini non mostrano la scena); le quattro immagini mancanti sono lavoro di art-direction, fuori da questo piano"
+            },
+            {
+              "n": 5,
+              "gravita": "🟠",
+              "stato": "corretto"
+            }
+          ],
+          "nota": "corsa intera: vista, preparazione a scene e giorno dopo",
+          "rilievi_rossi_e_arancio": 5
         }
       ],
       "sola_forma": []
@@ -292,9 +330,131 @@
           "nota": "primo passo, la vista di chi scorre (serata ✓ (riquadro), chi si oppone ✓); master identico a quello del commit 10127b7 da cui è stata fatta la vista",
           "rilievi_rossi_e_arancio": 0,
           "rilievi": []
+        },
+        {
+          "ruolo": "dm",
+          "data": "2026-10-12",
+          "rapporto": "plans/esperimenti/def4-giro3/def4-giro3-DM.md",
+          "corsa": "plans/esperimenti/def4-giro3/corsa-dm/dm",
+          "impronta": "547080e28f2b8bb7f7f69f8fc985388097972e4607b60f9af45924a44fea7ae9",
+          "smesso_a": null,
+          "rilievi": [
+            {
+              "n": 1,
+              "gravita": "🟠",
+              "stato": "residuo",
+              "ragione": "gli esiti del rito per questo gruppo stanno nel log del ramo campaign-group-rumblingstone (ADR-0090), non nel master, che vale per i gruppi futuri"
+            },
+            {
+              "n": 2,
+              "gravita": "🟠",
+              "stato": "domanda",
+              "nota": "D49"
+            },
+            {
+              "n": 3,
+              "gravita": "🟠",
+              "stato": "residuo",
+              "ragione": "il punto di ripresa della serata sta nel log del ramo di gruppo e nel riquadro «La vostra serata», che vi rimanda"
+            },
+            {
+              "n": 4,
+              "gravita": "🟠",
+              "stato": "domanda",
+              "nota": "D62"
+            },
+            {
+              "n": 5,
+              "gravita": "🟠",
+              "stato": "corretto"
+            },
+            {
+              "n": 6,
+              "gravita": "🟠",
+              "stato": "domanda",
+              "nota": "D50"
+            },
+            {
+              "n": 7,
+              "gravita": "🟠",
+              "stato": "domanda",
+              "nota": "D55"
+            },
+            {
+              "n": 9,
+              "gravita": "🟠",
+              "stato": "domanda",
+              "nota": "D60"
+            },
+            {
+              "n": 10,
+              "gravita": "🟠",
+              "stato": "domanda",
+              "nota": "D61"
+            }
+          ]
+        },
+        {
+          "ruolo": "dm",
+          "data": "2026-10-12",
+          "rapporto": "plans/esperimenti/def4-giro4/def4-giro4-DM.md",
+          "corsa": "plans/esperimenti/def4-giro4/corsa-dm/dm",
+          "impronta": "e8687781560b1ded83803f14e4b7332e9fc676e03e5019b88a5a7172c93f8288",
+          "smesso_a": null,
+          "rilievi": [
+            {
+              "n": 1,
+              "gravita": "🟠",
+              "stato": "corretto"
+            },
+            {
+              "n": 2,
+              "gravita": "🟠",
+              "stato": "corretto"
+            },
+            {
+              "n": 3,
+              "gravita": "🟠",
+              "stato": "corretto"
+            },
+            {
+              "n": 4,
+              "gravita": "🟠",
+              "stato": "corretto",
+              "nota": "D75 A"
+            },
+            {
+              "n": 5,
+              "gravita": "🟠",
+              "stato": "corretto"
+            },
+            {
+              "n": 6,
+              "gravita": "🟠",
+              "stato": "corretto"
+            },
+            {
+              "n": 8,
+              "gravita": "🟠",
+              "stato": "corretto"
+            },
+            {
+              "n": 9,
+              "gravita": "🟠",
+              "stato": "corretto",
+              "nota": "D76: non ancora giocati, il master lo dice in §0"
+            }
+          ]
         }
       ],
-      "sola_forma": []
+      "sola_forma": [
+        {
+          "da": "38f3d85160b903fe5f99204eb984371a78d89b4ca5a6748a9833a7dd7199973f",
+          "a": "fc0cf94b97920831e5fc1af14617beac3be2600657a8658e0fdfe0eb240c137b",
+          "data": "2026-10-12",
+          "ragione": "D74 (2026-10-12): solo i tag [INFERRED] diventati [CANONE — DM 2026-10-12, D74] e un punto; nessuna riga di contenuto cambiata (git diff 3909e7e 21e7fc1)"
+        }
+      ]
     }
   }
 }

@@ -126,6 +126,7 @@ and at most two support pillars, chosen by scene type. The mixer:
 | **Le passate redazionali** — il *giro*, non la norma: le tre passate (struttura → voce → bozze), quando un testo è **chiuso**, e i tre soli casi che lo riaprono. La 2ª si legge **ad alta voce**: il traduttese si sente e non si vede | **`references/passate-redazionali.md`** |
 | **Read-aloud per adulti che leggono fantasy** — si ascolta non si legge, lunghezze per tipo di box, competenza concreta, cosa fa staccare, checklist | **`references/read-aloud-adulti.md`** |
 | **Italiano nativo + anti-riconoscibilità** — calchi, dislocazioni, diminutivi, tempi, ritmo, registro nanico (§1-8) · **i tic dell'IA: antitesi «non X: è Y», tricolon, chiuse a effetto, tutto-è-significativo** (§9) · checklist | **`references/italiano-nativo.md`** |
+| **La skill esterna scrittura-italiana, come eccezione**: si apre solo per un documento in gioco fatto di regole, per un testo che il tavolo non ha capito o per un box con Gulpease sotto 60; il testo resta fuori dal repo (CC BY-SA) e dove contraddice il repo vince il repo ([ADR-0097](../../plans/adr/ADR-0097-scrittura-italiana-entra-come-eccezione.md)) | `references/scrittura-italiana-eccezione.md` |
 
 **Worked exemplar in repo**: the Palio di Channathgate
 (`09_.../Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md` + allegati)
@@ -196,6 +197,14 @@ Run the coherence self-check (`campaign-coherence.md` §6) first, then:
    peggiora; ci si ferma dopo un giro che non abbassa le segnalazioni, o al
    terzo. Su più file, `ciclo_prosa.py lotto` prepara un pacchetto per file
    (estensione di ADR-0077, 2026-10-03).
+9. **Se riscrivi un box che c'era, passa dalla catena della prosa** (ADR-0101,
+   tutta sotto `dm.py prosa <azione>`). Prima `coerenza fatti` sui due archi
+   toccati, perché un fatto cambiato è il difetto che il DM non perdona; poi
+   `sintassi --per-box` per guardare i rilievi prima di riscrivere
+   (`read-aloud-adulti.md` §2-ter, cautela 5); poi `migliora FILE --box N
+   --candidate C.md`, che scarta le candidate che cambiano un fatto o
+   impoveriscono il box. La migliore la decide il DM al cieco (`cieco`,
+   ADR-0093): nessuna misura automatica ha mai previsto il suo voto.
 
 ---
 

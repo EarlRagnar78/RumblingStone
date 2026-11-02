@@ -1,36 +1,38 @@
 Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-STATBLOCCHI.md
 ==============================================================
 
-# Stat blocchi – Ghostlord e Lair (CR 13)  
+# Stat blocchi – Ghostlord e Lair (CR 15)  
 
 (D&D 3.5)
 
 > **Fonte-stat unica**: la scheda autoritativa di Zeth il Murato è
-> `Bestiario/villain/Ghostlord/Ghostlord.md` (GS 13/14, tattiche, filatteria, leoni spettrali,
+> `Bestiario/villain/Ghostlord/Ghostlord.md` (GS 15, EL 15-16 coi leoni, tattiche, filatteria, leoni spettrali,
 > esiti). Questo file resta il **dettaglio incantesimi e statistiche del lair**,
 > **subordinato** alla scheda PNG: in caso di discrepanza numerica vince la scheda
 > PNG, e la riconciliazione finale è demandata al task **B5** (verifica 3.5).
 
-## 1. Ghostlord – Lich Druidico (CR 13)
+## 1. Ghostlord – Lich Druidico (CR 15)
 
 Ispirato al druid lich di RHoD, ma upscalato a incontro per PG ~12.[web:78][web:99]
 
 - Taglia/Tipo: Medio Non Morto (Lich, Druid).  
-- DV: Druido 13 → 13d8 (pf ~58; puoi alzare a 80–90 per più resistenza).  
+- DV: Druido 13 con l'archetipo lich → 13d12 (pf 90). Numeri allineati alla scheda del Bestiario.  
 - Iniziativa: +2.  
 - Velocità: 9 m.  
-- CA: 24–26 (10 +5 armatura naturale lich, +4 armatura magica, +2 Des, +1–3 deflessione).  
+- CA: 26 (10 +5 armatura naturale lich, +5 *pelle coriacea*, +2 Des, +4 deflessione); contatto 16, colto alla sprovvista 24.  
 - BAB/Grapple: +9 / +9.  
 - Attacchi:
-  - Tocco paralizzante lich +9 in mischia (1d8 freddo + paralisi, Tempra CD 19).  
-- TS: Temp +7, Rif +7, Vol +13.  
-- Caratteristiche indicative: For 10, Des 14, Cos —, Int 16, Sag 20, Car 15.
+  - Tocco paralizzante lich +9 contatto in mischia (1d8+5 energia negativa, Volontà CD 19 dimezza; Tempra CD 19 o paralisi permanente).  
+- TS: Temp +8, Rif +8, Vol +13.  
+- RD 15/contundente e magia; resistenza allo scacciare +4.  
+- Caratteristiche: For 10, Des 14, Cos —, Int 16, Sag 20, Car 17 (mantello del carisma +2).
 
 ### Incantesimi (Druido 13)
 
 - Livello incantatore: 13.  
 - Incantesimi tipici preparati:
-  - 0: *detect magic, cure minor/inflict, guidance, resistance* (versioni malvage).  
+  - Al giorno: 6/7/6/5/5/4/2/1, CD 15 + livello.  
+  - 0: *detect magic, cure minor wounds, guidance, resistance*.  
   - 1: *entangle, obscuring mist, detect snares and pits, longstrider*.  
   - 2: *barkskin, fog cloud, flame blade, soften earth and stone*.  
   - 3: *call lightning, contagion, protection from energy*.  
@@ -77,7 +79,7 @@ Ispirato al druid lich di RHoD, ma upscalato a incontro per PG ~12.[web:78][web:
   - Passare attraverso muri/pavimenti.
   - Resistenza a incanalare +4, ringiovanimento.
 
-Usane 2–3 in camera del lich per portare l'incontro a CR 13.
+Usane 2–3 in camera del lich: col Ghostlord a GS 15 l'incontro sale a EL 15-16.
 
 ---
 
@@ -85,11 +87,13 @@ Usane 2–3 in camera del lich per portare l'incontro a CR 13.
 
 Ad esempio, **Ulwai Stormcaller** o equivalente:
 
-- Classe: Bardo 8 / Chierico 4 (o Stregone 10).  
-- PF: ~70–80.  
-- Incantesimi: focus su *lightning bolt, dispel magic, haste, fear*.  
+> Statblocco nel Bestiario: `Bestiario/villain/emissario-red-hand-cr12.md` (vale in caso di differenza).
+
+- Classe: Chierico 12 di Tiamat (hobgoblin d'élite), GS 12.  
+- PF: 72.  
+- Incantesimi: focus su *barriera di lame, ferire, dissolvi magie, silenzio*; senza incantesimi arcani (la vecchia proposta Bardo 8 / Chierico 4 è superata).  
 - Ruolo: ultimo ostacolo prima del Ghostlord, rappresentante diretto di Azarr Kul.
 
 ---
 
-Questo chiude il blocco Ghostlord con doppia via (alleanza/combattimento) a CR 13.
+Questo chiude il blocco Ghostlord con doppia via (alleanza/combattimento) a CR 15.

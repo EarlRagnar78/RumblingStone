@@ -1,0 +1,201 @@
+{
+  "_leggimi": "Chiave del quiz a due agenti per ARC07-DEF-5 (skills/rumblingstone-playtest/references/quiz-a-due-agenti.md). Ogni alternativa è una lista di radici: la risposta è giusta se le contiene tutte. Le domande chiedono i fatti che servono al tavolo, non i numeri che il DM cerca sulla pagina. È canone: la approva il DM. Le domande evitano i dettagli ancora aperti in D77. Approvata dal DM il 2026-10-15. La q4 accetta anche «Volontà… fuggono» (DM, 2026-10-15).",
+  "modulo": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+  "stato": "approvata",
+  "domande": [
+    {
+      "id": "q1",
+      "domanda": "Dove e quando li deposita il Rubino?",
+      "accettate": [
+        [
+          "cuore",
+          "montagna"
+        ],
+        [
+          "caverna",
+          "1372"
+        ],
+        [
+          "caverna",
+          "giorno 3"
+        ],
+        [
+          "caverna",
+          "sacra"
+        ]
+      ]
+    },
+    {
+      "id": "q2",
+      "domanda": "Chi è sull'altare quando arrivano, e in che stato?",
+      "accettate": [
+        [
+          "thorek",
+          "acido"
+        ],
+        [
+          "re",
+          "acido"
+        ],
+        [
+          "thorek",
+          "8"
+        ],
+        [
+          "re",
+          "8"
+        ]
+      ]
+    },
+    {
+      "id": "q3",
+      "domanda": "Chi parla per primo nella caverna, e cosa dice?",
+      "accettate": [
+        [
+          "dana",
+          "tornati"
+        ]
+      ]
+    },
+    {
+      "id": "q4",
+      "domanda": "Cosa fa l'aura dell'Apparizione agli orchi?",
+      "accettate": [
+        [
+          "volont",
+          "panico"
+        ],
+        [
+          "25",
+          "panico"
+        ],
+        [
+          "volont",
+          "fugg"
+        ],
+        [
+          "paura",
+          "fugg"
+        ],
+        [
+          "panico"
+        ]
+      ]
+    },
+    {
+      "id": "q5",
+      "domanda": "Cosa dà l'Apparizione ai nani?",
+      "accettate": [
+        [
+          "+6"
+        ],
+        [
+          "sei",
+          "morale"
+        ],
+        [
+          "morale",
+          "paura"
+        ]
+      ]
+    },
+    {
+      "id": "q6",
+      "domanda": "Chi entra dalla porta dopo il primo round, e quanti sono?",
+      "accettate": [
+        [
+          "20",
+          "hobgoblin"
+        ],
+        [
+          "venti",
+          "hobgoblin"
+        ]
+      ]
+    },
+    {
+      "id": "q7",
+      "domanda": "Perché Re Thorek non si rialza, e cosa lo rimette in piedi?",
+      "accettate": [
+        [
+          "esaust",
+          "ristorare"
+        ]
+      ]
+    },
+    {
+      "id": "q8",
+      "domanda": "Cosa costa a Hella chiamare i due Treant insieme?",
+      "accettate": [
+        [
+          "evocazione",
+          "mese"
+        ],
+        [
+          "spent",
+          "mese"
+        ]
+      ]
+    },
+    {
+      "id": "q9",
+      "domanda": "Se il −1000 è andato male, cosa cambia nell'apparizione?",
+      "accettate": [
+        [
+          "luminos"
+        ],
+        [
+          "+4"
+        ],
+        [
+          "cinque",
+          "orchi"
+        ],
+        [
+          "5",
+          "orchi"
+        ]
+      ]
+    },
+    {
+      "id": "q10",
+      "domanda": "Come finisce la serata?",
+      "accettate": [
+        [
+          "dana",
+          "portale"
+        ]
+      ]
+    },
+    {
+      "id": "q11",
+      "domanda": "Dove porta il portale?",
+      "accettate": [
+        [
+          "bastion"
+        ],
+        [
+          "porta ovest"
+        ]
+      ]
+    },
+    {
+      "id": "q12",
+      "domanda": "Cosa si dà ai giocatori prima del portale?",
+      "accettate": [
+        [
+          "px",
+          "handout"
+        ],
+        [
+          "px",
+          "stato dei custodi"
+        ],
+        [
+          "punti esperienza",
+          "handout"
+        ]
+      ]
+    }
+  ]
+}

@@ -16,11 +16,11 @@ attacchi:
   - Mischia spada corta +1 +12/+7 (1d6+2/19-20)
 ```
 
-> [INFERRED — needs DM confirmation] correzione 3.5 da `scripts/conformita_statblocchi.py`: Riflessi +12 → **+13**: Ladro 4 (+4) + Assassino 5 (+4) + Des 20 (+5). La Des 20 è confermata dall'attacco con Arma Accurata (+12). ⚠ La lotta +6 e il danno della spada presuppongono For 10-11, non 12: quella la decide il DM.
+> Correzione 3.5 da `scripts/conformita_statblocchi.py`: Riflessi +12 → **+13**: Ladro 4 (+4) + Assassino 5 (+4) + Des 20 (+5). La Des 20 è confermata dall'attacco con Arma Accurata (+12). La Forza l'ha decisa il DM (D3, qui sotto).
 
-> [INFERRED — needs DM confirmation] correzione 3.5 da `scripts/conformita_statblocchi.py`: **D3, deciso dal DM il 2026-09-23: For 12.** Lotta +6 → **+7** (BAB +6, For +1) e spada corta +1 1d6+1 → **1d6+2** (For +1, potenziamento +1). L'attacco resta +12: usa la Destrezza con Arma Accurata.
+> [CANONE — DM 2026-09-23, D3] correzione 3.5 da `scripts/conformita_statblocchi.py`: **D3, deciso dal DM il 2026-09-23: For 12.** Lotta +6 → **+7** (BAB +6, For +1) e spada corta +1 1d6+1 → **1d6+2** (For +1, potenziamento +1). L'attacco resta +12: usa la Destrezza con Arma Accurata.
 
-> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ Cos 12 ricavata da pf 40 su 9 DV, ma la scheda scrive 10: si tiene la scheda, da verificare.
+> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ Cos 12 ricavata da pf 40 su 9 DV, ma la scheda scrive 10: si tiene la scheda, da verificare.
 
 Medium humanoid (elf), NE. **DV 9d6**. **hp 40**. **CA 20** (+5 Des, +4 giaco di maglia mithral +1, +1 anello), contatto 16, colto alla sprovvista 16. Iniziativa +9. Vel 9 m.
 **TS** Temp +4, Rifl +13, Vol +5 (+2 razziale vs incantesimi, +2 vs ammaliamenti, **+3 vs veleni**). **BAB/Lotta** +6/+7. **RI 20**.

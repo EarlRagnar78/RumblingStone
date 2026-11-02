@@ -58,6 +58,7 @@ from __future__ import annotations
 import argparse
 import copy
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -213,6 +214,11 @@ def normalize_units(spec: dict) -> dict:
         if "path" in mv:
             mv["path"] = _conv_points(mv["path"], s, w, errors)
 
+    for i, tg in enumerate(out.get("taglie", []) or []):
+        w = f"taglie[{i}]"
+        if "at" in tg:
+            tg["at"] = _conv_point(tg["at"], s, w, errors)
+
     if errors:
         raise SpecError("JSON in metri non convertibile — correggi e reinvia:\n  - "
                         + "\n  - ".join(errors))
@@ -248,6 +254,23 @@ def validate(spec: dict) -> tuple[int, int]:
         errors.append(f"'ambiente': uno di {', '.join(_legenda.AMBIENTI_MAPPA)}.")
     if "ambiente" in spec and "tipo" not in spec:
         errors.append("'ambiente' senza 'tipo': dichiara anche il tipo.")
+    # vista, contesto e deroghe (ADR-0098): le direttive che il collaudo legge
+    if "vista" in spec and spec["vista"] != "giocatori":
+        errors.append("'vista': l'unico valore e' «giocatori».")
+    for chiave in ("quota", "dislivello"):
+        if chiave in spec and not (isinstance(spec[chiave], str)
+                                   and re.match(r"^\s*[+\-−]?\d+(?:[.,]\d+)?\s*(m|metri|ft|piedi)\b",
+                                                spec[chiave], re.I)):
+            errors.append(f"'{chiave}': un numero in metri o piedi, poi «; riferimento» "
+                          f"(es. «12 m ; s.l.m.»).")
+    if "luogo" in spec and not (isinstance(spec["luogo"], str) and len(spec["luogo"].strip()) >= 3):
+        errors.append("'luogo': il nome del luogo, almeno 3 caratteri.")
+    for i, d in enumerate(spec.get("deroghe", []) or []):
+        if not (isinstance(d, dict) and isinstance(d.get("codice"), str)
+                and re.fullmatch(r"[a-z0-9]+/[a-z0-9-]+", d["codice"].strip())):
+            errors.append(f"deroghe[{i}]: 'codice' come nel collaudo, es. «m2/vuoto».")
+        elif not (isinstance(d.get("motivo"), str) and len(d["motivo"].strip()) >= 15):
+            errors.append(f"deroghe[{i}]: 'motivo' di almeno 15 caratteri, o la deroga vale come assente.")
 
     # map_size
     size = spec.get("map_size")
@@ -534,6 +557,15 @@ def _annotation_lines(spec: dict) -> list[str]:
         lines.append(f"@north {spec['north']}")
     if spec.get("tipo"):
         lines.append(f"@tipo {spec['tipo']}" + (f" {spec['ambiente']}" if spec.get("ambiente") else ""))
+    if spec.get("vista"):
+        lines.append(f"@vista {spec['vista']}")
+    # il rilievo e il contesto (ADR-0098): dove sta la mappa nel mondo
+    for chiave in ("luogo", "quota", "dislivello"):
+        if spec.get(chiave):
+            lines.append(f"@{chiave} {spec[chiave].strip()}")
+    # le soglie non rispettate di proposito, con la ragione
+    for d in spec.get("deroghe", []) or []:
+        lines.append(f"@deroga {d['codice'].strip()} ; {d['motivo'].strip()}")
 
     # le gemelle delle tessere fra livelli (D12): il collaudo le segue
     for obj in spec.get("structures", []) or []:

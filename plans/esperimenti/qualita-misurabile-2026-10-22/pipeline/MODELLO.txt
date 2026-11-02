@@ -1,0 +1,23 @@
+Modello di preferenza sui voti ciechi del DM (migliora_prosa.py modello)
+
+coppie decise: 59 (pari esclusi: 2) · spaCy: sì
+leave-one-out: 39 su 59 = 0.661 · Wilson 95% [0.534, 0.769] · test del segno p = 0.018
+caso: 0.500 · «vince la più lunga»: 30 su 59 = 0.508 (pari di lunghezza 5), Wilson 95% [0.384, 0.632]
+
+soglia (SOGLIA.txt): Wilson basso > 0.50 e meglio della più lunga → SUPERATA: il modello è misura automatica
+
+pesi su tutte le coppie (tratti divisi per lo scarto quadratico; + = la versione con più di questo tende a vincere):
+  possessivi‰            +0.761
+  gulpease               +0.592
+  gerundi_mente          +0.543
+  sensoriali             +0.502
+  subordinata_spezzata   -0.425
+  monologo_spezzato      -0.425
+  livelli_max            +0.329
+  nomi_tolti             +0.220
+  mattr25                +0.207
+  frase_finale_tolta     -0.090
+  parole_log             -0.015
+
+⚠️ Le regole 1-4 di §2-ter vengono da questi stessi voti (giro 2 e riscrittura):
+i loro pesi sono letti sui dati che le hanno suggerite, e il leave-one-out non lo corregge.

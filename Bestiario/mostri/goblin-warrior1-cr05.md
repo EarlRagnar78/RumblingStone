@@ -15,9 +15,9 @@ velocita: 30 ft
 iniziativa: +1
 ```
 
-> [INFERRED — needs DM confirmation] correzione 3.5 da `scripts/conformita_statblocchi.py`: **D1, deciso dal DM il 2026-09-23: For 11**, la Forza del goblin SRD. Lotta −3 (BAB +1, For +0, Piccolo −4) e spada corta +2 (BAB +1, For +0, taglia +1) la presupponevano già; cambiano la riga delle caratteristiche (For 9 → **11**) e il danno della spada (1d6−1 → **1d6**).
+> [CANONE — DM 2026-09-23, D1] correzione 3.5 da `scripts/conformita_statblocchi.py`: **D1, deciso dal DM il 2026-09-23: For 11**, la Forza del goblin SRD. Lotta −3 (BAB +1, For +0, Piccolo −4) e spada corta +2 (BAB +1, For +0, taglia +1) la presupponevano già; cambiano la riga delle caratteristiche (For 9 → **11**) e il danno della spada (1d6−1 → **1d6**).
 
-> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
+> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
 **Size/Type**: Small humanoid (goblinoid) | **HD**: 1d8+1 (5 HP)
 **AC**: 15 (+1 size, +1 Dex, +2 leather, +1 light shield) | **Init**: +1 | **Speed**: 30 ft

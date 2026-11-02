@@ -62,6 +62,16 @@ numpy>=2.5.3
 # Dalla 1.18 scipy chiede Python 3.12 o piu', come numpy dalla 2.5.
 scipy>=1.18.1
 
+# ADR-0102 (DM, 2026-10-23: «lo strumento delle mappe nel repo»). Le piante di
+# Rethmar, Dauth e Channathgate si disegnano con `scripts/piante/` (poligoni,
+# offset delle mura, lotti), che lavora con shapely sopra numpy e scipy; la
+# sera al tavolo si stampa l'SVG committato, quindi al DM non serve. Licenza
+# BSD-3-Clause. Canale testing (ADR-0099): versione fissata, e in CI
+# `genera_pianta_citta.py --check` confronta le piante committate byte per
+# byte in un passo non bloccante. Se una versione nuova di GEOS cambia un
+# arrotondamento, quel passo lo dice e la pianta si rigenera.
+shapely==2.2.0
+
 # ADR-0085 (DM, 2026-10-08: «fonttools, solo sviluppo»). Ricava i sottoinsiemi
 # dei font OFL dei volumi che il renderer incorpora nelle mappe
 # (`scripts/build_font_mappe.py`). Gira solo quando cambia l'insieme dei
@@ -76,3 +86,16 @@ fonttools[woff]>=4.66.1
 # confronta la scheda committata; il renderer resta stdlib.
 # Pavimento 0.25 dal 2026-10-10: la prima con wheel per Python 3.13.
 scikit-image>=0.25
+
+# ADR-0099 (PIANO-PIATTAFORMA P0, 2026-10-23): il linter, in canale TESTING.
+# Versione esatta perche' le regole cambiano fra le versioni minori: un
+# aggiornamento di Dependabot che porta rilievi nuovi si legge, non si subisce.
+# Misura in plans/esperimenti/piattaforma-2026-10-23/MISURE.md. MIT. Solo
+# sviluppo: il DM non lo esegue.
+ruff==0.16.9
+
+# ADR-0099, D3 di PIANO-PIATTAFORMA (DM, 2026-10-23): i test in parallelo, in
+# canale TESTING. Li usa solo il job `testing` di ci.yml (`pytest -n auto`);
+# il job principale lo installa e non lo usa finché non sale a stable. In
+# locale la suite passa da 219 s a 67 s su 4 core. MIT.
+pytest-xdist==3.8.0

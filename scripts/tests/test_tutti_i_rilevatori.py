@@ -34,7 +34,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 import misura_craft as mc  # noqa: E402
 import punteggio_mqm as pm  # noqa: E402
-import superficie_norme as sn  # noqa: E402
+import validate_norme_editoriali as sn  # noqa: E402
 import validate_prosa as vp  # noqa: E402
 
 #: I rilevatori di testo del repo, con il loro ingresso.

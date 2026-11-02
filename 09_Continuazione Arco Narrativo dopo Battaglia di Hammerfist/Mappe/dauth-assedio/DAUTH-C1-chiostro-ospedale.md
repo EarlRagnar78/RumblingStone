@@ -32,8 +32,8 @@ COLONNE:  A B C D E F G H I J
 
 | Elemento | Dove (coord.) | Effetto meccanico 3.5 |
 |---|---|---|
-| 🛏 Barelle | B2–B9 | Terreno ingombro (la carta) [INFERRED — needs DM confirmation: costa doppio come il terreno difficile] |
-| 🛏 Giaciglio | I2–I9 | Terreno ingombro (la carta) [INFERRED — needs DM confirmation: costa doppio come il terreno difficile] |
+| 🛏 Barelle | B2–B9 | Terreno ingombro (la carta) (costa doppio come il terreno difficile) |
+| 🛏 Giaciglio | I2–I9 | Terreno ingombro (la carta) (costa doppio come il terreno difficile) |
 
 ### ⚔️ TATTICHE (come si comportano i nemici — round per round)
 

@@ -167,10 +167,10 @@ restare vecchia. Se cambi la CA nel `PREGEN-*.md`, cambia nella scheda stampata.
 > **I ritratti pesanti vanno ridotti.** Un PNG da 6 MB per scheda fa un PDF da
 > quaranta megabyte. Metti le derivate leggere in una cartella `web/` e
 > nominala **per prima** in `ritratti` — vedi
-> `STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/immagini/web/README.md`.
+> `10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/immagini/web/README.md`.
 
 Esempio completo nel repo:
-`STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-SCHEDE-PG.manifest.json`.
+`10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-SCHEDE-PG.manifest.json`.
 
 **Un PDF per giocatore**, oltre al fascicolo:
 

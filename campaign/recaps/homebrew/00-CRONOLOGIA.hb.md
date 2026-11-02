@@ -40,15 +40,15 @@ in quest'ordine.*
 - `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/homebrew/PALIO-BOOKLET-FASCICOLO-P2D.hb.md`
 - `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/homebrew/PALIO-BOOKLET.hb.md`
 - `PG/Artefatti/Artefatti-Pg/Hella/00_Collana-SCHEDA-GIOCATORE-STATO-ATTUALE.hb.md`
-- `STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/handout/PROP-01-il-contratto-di-vesca.hb.md`
-- `STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/handout/PROP-02-la-pagina-del-registro.hb.md`
-- `STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/handout/PROP-03-la-ricevuta-del-mediatore.hb.md`
-- `STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/handout/PROP-04-il-decreto.hb.md`
-- `STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BENVENUTO-TAVOLO.hb.md`
-- `STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-DM.hb.md`
-- `STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-GIOCATORI.hb.md`
-- `STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-FASCICOLO-SCHEDE.hb.md`
-- `STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-PROP.hb.md`
+- `10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/handout/PROP-01-il-contratto-di-vesca.hb.md`
+- `10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/handout/PROP-02-la-pagina-del-registro.hb.md`
+- `10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/handout/PROP-03-la-ricevuta-del-mediatore.hb.md`
+- `10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/handout/PROP-04-il-decreto.hb.md`
+- `10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BENVENUTO-TAVOLO.hb.md`
+- `10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-DM.hb.md`
+- `10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-GIOCATORI.hb.md`
+- `10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-FASCICOLO-SCHEDE.hb.md`
+- `10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-PROP.hb.md`
 
 {{pageNumber,auto}}
 {{footnote CRONACHE DEI CUSTODI ETERNI · CRONOLOGIA}}

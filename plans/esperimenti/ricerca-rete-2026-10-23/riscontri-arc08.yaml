@@ -1,0 +1,517 @@
+# Riscontri SRD dei master ARC08-DEF-1 e ARC08-DEF-2 (ADR-0103).
+# Si eseguono con:
+#   python3 scripts/riscontro_srd.py riscontra plans/esperimenti/ricerca-rete-2026-10-23/riscontri-arc08.yaml
+# Il formato è nella docstring di scripts/riscontro_srd.py. Le regex dei master
+# cercano il testo com'è scritto (con i ** del grassetto); quelle dell'SRD
+# cercano il testo inglese, tabelle HTML comprese. Il gruppo (?P<v>...) è il
+# valore che lo script confronta. Le regole sono quelle numeriche (o di un
+# termine chiuso) che il master attribuisce all'SRD o prende da una scheda SRD.
+
+versione: 1
+riscontri:
+
+  # ------------------------------------------------------------ DEF-1
+  - id: DEF1-fiuto
+    cosa: fiuto dei worg, raggio
+    fonte: srd35
+    file: basic-rules-and-legal/special-abilities-and-conditions.md
+    regola: 'generally within (?P<v>\d+) feet\. If the opponent is upwind'
+    master: &DEF1 "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md"
+    affermazione: 'sente chi gli passa entro \*\*(?P<v>[\d,]+) m\*\*'
+    confronto: numero
+    scala: 0.3
+
+  - id: DEF1-fiuto-sopravento
+    cosa: fiuto, odore portato dal vento verso il worg
+    fonte: srd35
+    file: basic-rules-and-legal/special-abilities-and-conditions.md
+    regola: 'upwind, the range is (?P<v>\d+) feet'
+    master: *DEF1
+    affermazione: 'il raggio sale a\s+\*\*(?P<v>[\d,]+) m\*\*'
+    confronto: numero
+    scala: 0.3
+
+  - id: DEF1-fiuto-sottovento
+    cosa: fiuto, odore portato via dal vento
+    fonte: srd35
+    file: basic-rules-and-legal/special-abilities-and-conditions.md
+    regola: 'downwind, the range is (?P<v>\d+) feet'
+    master: *DEF1
+    affermazione: 'scende a \*\*(?P<v>[\d,]+) m\*\* \(SRD\)'
+    confronto: numero
+    scala: 0.3
+
+  - id: DEF1-A2-fiuto
+    cosa: scheda del worg (App. A.2), fiuto
+    fonte: srd35
+    file: basic-rules-and-legal/special-abilities-and-conditions.md
+    regola: 'generally within (?P<v>\d+) feet'
+    master: *DEF1
+    affermazione: '\*\*fiuto\*\* \((?P<v>[\d,]+) m;'
+    confronto: numero
+    scala: 0.3
+
+  - id: DEF1-A2-fiuto-vento
+    cosa: scheda del worg (App. A.2), fiuto col vento a favore
+    fonte: srd35
+    file: basic-rules-and-legal/special-abilities-and-conditions.md
+    regola: 'upwind, the range is (?P<v>\d+) feet'
+    master: *DEF1
+    affermazione: '(?P<v>[\d,]+) m se il vento gli porta l''odore'
+    confronto: numero
+    scala: 0.3
+
+  - id: DEF1-A2-fiuto-controvento
+    cosa: scheda del worg (App. A.2), fiuto col vento contrario
+    fonte: srd35
+    file: basic-rules-and-legal/special-abilities-and-conditions.md
+    regola: 'downwind, the range is (?P<v>\d+) feet'
+    master: *DEF1
+    affermazione: '(?P<v>[\d,]+) m se lo porta via'
+    confronto: numero
+    scala: 0.3
+
+  - id: DEF1-worg-DV
+    cosa: worg dell'SRD, Dadi Vita
+    fonte: srd35
+    file: monsters/monsters-t-z.md
+    regola: '## Worg\n[\s\S]*?Hit Dice:</th><td>(?P<v>\d+)d10'
+    master: *DEF1
+    affermazione: 'l''SRD dà (?P<v>\d+) DV e 30 pf'
+    confronto: numero
+
+  - id: DEF1-worg-pf
+    cosa: worg dell'SRD, punti ferita
+    fonte: srd35
+    file: monsters/monsters-t-z.md
+    regola: '## Worg\n[\s\S]*?Hit Dice:</th><td>4d10\+8 \((?P<v>\d+) hp\)'
+    master: *DEF1
+    affermazione: 'l''SRD dà 4 DV e (?P<v>\d+) pf'
+    confronto: numero
+
+  - id: DEF1-worg-velocita
+    cosa: worg, velocità (il potenziamento non la cambia)
+    fonte: srd35
+    file: monsters/monsters-t-z.md
+    regola: '## Worg\n[\s\S]*?Speed:</th><td>(?P<v>\d+) ft\.'
+    master: *DEF1
+    affermazione: 'CA 14 · pf 51 · Temp \+7, Rifl \+7, Vol \+4 · velocità (?P<v>\d+) m'
+    confronto: numero
+    scala: 0.3
+
+  - id: DEF1-aiutare-CD
+    cosa: aiutare un altro in una prova, la CD
+    fonte: srd35
+    file: basic-rules-and-legal/skills-i.md
+    regola: 'If you roll a (?P<v>\d+) or higher on your check, the character you are helping gets a \+2'
+    master: *DEF1
+    affermazione: 'prova CD (?P<v>\d+), \+2 a chi tira'
+    confronto: numero
+
+  - id: DEF1-aiutare-bonus
+    cosa: aiutare un altro in una prova, il bonus
+    fonte: srd35
+    file: basic-rules-and-legal/skills-i.md
+    regola: 'the character you are helping gets a \+(?P<v>\d+) bonus'
+    master: *DEF1
+    affermazione: 'prova CD 10, \+(?P<v>\d+) a chi tira'
+    confronto: numero
+
+  - id: DEF1-presenza-per-categoria
+    cosa: presenza terrificante, raggio per categoria d'età
+    fonte: srd35
+    file: monsters/monsters-dr-dw.md
+    regola: 'radius of (?P<v>\d+) feet x the dragon’s age category'
+    master: *DEF1
+    affermazione: '\((?P<v>[\d,]+) m per categoria d''età\)'
+    confronto: numero
+    scala: 0.3
+
+  - id: DEF1-presenza-adulto
+    cosa: "presenza terrificante nell'SRD per la categoria di Fauci (categoria × 9 m); Fauci è un adulto maturo per canone (ARC08-01 r. 231, Bestiario), il master scriveva «adulto», corretto il 2026-10-23"
+    fonte: srd35
+    file: monsters/monsters-dr-dw.md
+    regola: '<td>(?P<v>\d+) Mature adult</td>'
+    master: *DEF1
+    affermazione: 'l''SRD dà (?P<v>\d+) m all''adulto'
+    confronto: numero
+    scala: 9
+
+  - id: DEF1-A5-presenza-adulto
+    cosa: "scheda di Fauci (App. A.5), raggio SRD della presenza per l'adulto maturo; il master scriveva «per un adulto» (54 m), corretto il 2026-10-23"
+    fonte: srd35
+    file: monsters/monsters-dr-dw.md
+    regola: '<td>(?P<v>\d+) Mature adult</td>'
+    master: *DEF1
+    affermazione: '(?P<v>\d+) m nell''SRD per l''adulto maturo'
+    confronto: numero
+    scala: 9
+
+  - id: DEF1-A5-soffio-linea
+    cosa: Fauci, drago Enorme, lunghezza della linea
+    fonte: srd35
+    file: monsters/monsters-dr-dw.md
+    regola: '<tr><td>Huge</td><td>(?P<v>\d+) ft\.</td>'
+    master: *DEF1
+    affermazione: 'soffio in linea di (?P<v>\d+) m'
+    confronto: numero
+    scala: 0.3
+
+  - id: DEF1-A5-soffio-danni
+    cosa: Fauci, danni del soffio dell'adulto maturo
+    fonte: srd35
+    file: monsters/monsters-dr-dw.md
+    regola: '<td>Mature adult</td><td>H</td>(?:<td>[^<]*</td>){12}<td>(?P<v>\d+d4)'
+    master: *DEF1
+    affermazione: 'soffio in linea di 30 m \*\*(?P<v>\d+d4)\*\*'
+    confronto: termine
+
+  - id: DEF1-A5-CA
+    cosa: Fauci, CA dell'adulto maturo
+    fonte: srd35
+    file: monsters/monsters-dr-dw.md
+    regola: 'fly 150 ft\. \(poor\), swim 60 ft\.</td><td>\+0</td><td>(?P<v>\d+) \(–2 size'
+    master: *DEF1
+    affermazione: 'servono: CA \*\*(?P<v>\d+)\*\*'
+    confronto: numero
+
+  - id: DEF1-A5-RI
+    cosa: Fauci, resistenza agli incantesimi dell'adulto maturo
+    fonte: srd35
+    file: monsters/monsters-dr-dw.md
+    regola: 'DR 10/magic</td><td>5th</td><td>(?P<v>\d+)</td>'
+    master: *DEF1
+    affermazione: 'RD 10/magia, RI \*\*(?P<v>\d+)\*\*'
+    confronto: numero
+
+  - id: DEF1-A5-volo
+    cosa: Fauci, velocità di volo
+    fonte: srd35
+    file: monsters/monsters-dr-dw.md
+    regola: '<td>Mature adult</td><td>60 ft\., fly (?P<v>\d+) ft\. \(poor\)'
+    master: *DEF1
+    affermazione: 'volare (?P<v>\d+) m \(scarsa\)'
+    confronto: numero
+    scala: 0.3
+
+  # ------------------------------------------------------------ DEF-2
+  - id: DEF2-freccia-effetto
+    cosa: freccia assassina, TS fallito (la discordanza della ricerca)
+    fonte: srd35
+    file: magic-items/magic-items-ii-armor-and-weapons.md
+    regola: '\*\*Slaying Arrow:\*\*[^\n]*?Fortitude save or (?P<v>die)'
+    master: &DEF2 "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md"
+    affermazione: 'Tempra \*\*CD 20\*\* o (?P<v>subisce\s+\*\*50 danni\*\*|muore)'
+    confronto: termine
+    equivale: {die: [muore]}
+
+  - id: DEF2-freccia-effetto-PF1e
+    cosa: freccia assassina in PF1e (da dove vengono i 50 danni)
+    fonte: pf1
+    libro: book-ue.db
+    sezione: Slaying Arrow
+    regola: 'save or take (?P<v>\d+) points of damage'
+    master: *DEF2
+    affermazione: 'i (?P<v>\d+) danni al posto della morte'
+    confronto: numero
+
+  - id: DEF2-freccia-CD
+    cosa: freccia assassina, CD del TS
+    fonte: srd35
+    file: magic-items/magic-items-ii-armor-and-weapons.md
+    regola: '\*\*Slaying Arrow:\*\*[^\n]*?a DC (?P<v>\d+) Fortitude'
+    master: *DEF2
+    affermazione: 'Tempra \*\*CD (?P<v>\d+)\*\* o muore'
+    confronto: numero
+
+  - id: DEF2-freccia-prezzo
+    cosa: freccia assassina, prezzo
+    fonte: srd35
+    file: magic-items/magic-items-ii-armor-and-weapons.md
+    regola: 'Price (?P<v>[\d,]+) gp \(_slaying arrow_\)'
+    master: *DEF2
+    affermazione: '\| (?P<v>[\d.]+) mo l''una \(SRD\)'
+    confronto: numero
+
+  - id: DEF2-comunione
+    cosa: comunione, tempo di lancio
+    fonte: srd35
+    file: spells/spells-c.md
+    regola: '## Commune\n(?:.*\n){0,8}?\*\*Casting Time:\*\* (?P<v>10) minutes'
+    master: *DEF2
+    affermazione: '(?P<v>dieci) minuti di preghiera'
+    confronto: termine
+    equivale: {"10": [dieci]}
+
+  - id: DEF2-spremersi-penalita
+    cosa: spremersi, penalità a colpire e alla CA
+    fonte: srd35
+    file: basic-rules-and-legal/combat-ii-movement-modifiers-and-special-actions.md
+    regola: 'Squeezing through a space</td><td>–(?P<v>\d+)</td><td>–4</td>'
+    master: *DEF2
+    affermazione: '−(?P<v>\d+) a colpire e alla CA'
+    confronto: numero
+
+  - id: DEF2-gigante-colline-pf
+    cosa: gigante delle colline dell'SRD, punti ferita
+    fonte: srd35
+    file: monsters/monsters-g.md
+    regola: '### Hill Giant\n[\s\S]*?Hit Dice:</th><td>12d8\+48 \((?P<v>\d+) hp\)'
+    master: *DEF2
+    affermazione: 'SRD: (?P<v>\d+) pf, e un colpo'
+    confronto: numero
+
+  - id: DEF2-gigante-colline-CA
+    cosa: gigante delle colline dell'SRD, CA
+    fonte: srd35
+    file: monsters/monsters-g.md
+    regola: '### Hill Giant\n[\s\S]*?Armor Class:</th><td>(?P<v>\d+) \('
+    master: *DEF2
+    affermazione: 'contro \*\*CA (?P<v>\d+)\*\* \(gigante\s+delle colline'
+    confronto: numero
+
+  - id: DEF2-nuotare-armatura
+    cosa: nuotare con l'armatura
+    fonte: srd35
+    file: basic-rules-and-legal/skills-ii.md
+    regola: 'Swim checks are subject to (?P<v>double) the normal armor check penalty'
+    master: *DEF2
+    affermazione: 'nuota con la penalità d''armatura\s+(?P<v>doppia)'
+    confronto: termine
+    equivale: {double: [doppia]}
+
+  - id: DEF2-trattenere-fiato
+    cosa: trattenere il fiato
+    fonte: srd35
+    file: basic-rules-and-legal/wilderness-weather-and-environment.md
+    regola: 'hold her breath for a number of rounds equal to (?P<v>twice) her Constitution'
+    master: *DEF2
+    affermazione: 'numero di round pari al (?P<v>doppio) della Costituzione'
+    confronto: termine
+    equivale: {twice: [doppio]}
+
+  - id: DEF2-guarigione-naturale
+    cosa: guarigione naturale per notte
+    fonte: srd35
+    file: basic-rules-and-legal/combat-i-basics.md
+    regola: 'you recover (?P<v>\d+) hit point per character level'
+    master: *DEF2
+    affermazione: 'SRD: (?P<v>\d+) per DV'
+    confronto: numero
+
+  - id: DEF2-togliere-armatura
+    cosa: togliere un'armatura pesante
+    fonte: srd35
+    file: basic-rules-and-legal/equipment.md
+    regola: 'Half-plate or full plate</td><td>4 minutes<sup>2</sup></td><td>4 minutes<sup>1</sup></td><td>(?P<v>1d4\+1) minutes'
+    master: *DEF2
+    affermazione: 'Si slaccia in (?P<v>1d4\+1) minuti'
+    confronto: termine
+
+  - id: DEF2-prono-mischia
+    cosa: prono, CA contro la mischia
+    fonte: srd35
+    file: basic-rules-and-legal/combat-ii-movement-modifiers-and-special-actions.md
+    regola: '<td>Prone</td><td>–(?P<v>\d+)</td><td>\+4</td>'
+    master: *DEF2
+    affermazione: 'prono −(?P<v>\d+) contro\s+la mischia'
+    confronto: numero
+
+  - id: DEF2-stabilizzare
+    cosa: stabilizzare un morente con Guarire
+    fonte: srd35
+    file: basic-rules-and-legal/combat-i-basics.md
+    regola: 'make him stable with a DC (?P<v>\d+) Heal check'
+    master: *DEF2
+    affermazione: 'Guarire CD (?P<v>\d+)'
+    confronto: numero
+
+  - id: DEF2-morte
+    cosa: soglia della morte
+    fonte: srd35
+    file: basic-rules-and-legal/special-abilities-and-conditions.md
+    regola: 'reaches –(?P<v>\d+) hit points, she is dead'
+    master: *DEF2
+    affermazione: 'A −(?P<v>\d+) muore'
+    confronto: numero
+
+  - id: DEF2-spinta-base
+    cosa: spinta (bull rush), spostamento base
+    fonte: srd35
+    file: basic-rules-and-legal/combat-ii-movement-modifiers-and-special-actions.md
+    regola: 'you push him back (?P<v>\d+) feet\. If you wish'
+    master: *DEF2
+    affermazione: 'lo sposta di (?P<v>[\d,]+) m'
+    confronto: numero
+    scala: 0.3
+
+  - id: DEF2-spinta-ogni-5
+    cosa: spinta, spostamento per ogni 5 punti
+    fonte: srd35
+    file: basic-rules-and-legal/combat-ii-movement-modifiers-and-special-actions.md
+    regola: 'an additional (?P<v>\d+) feet for each 5 points'
+    master: *DEF2
+    affermazione: 'più (?P<v>[\d,]+) m ogni 5 punti'
+    confronto: numero
+    scala: 0.3
+
+  - id: DEF2-stabilita-nani
+    cosa: stabilità dei nani contro la spinta
+    fonte: srd35
+    file: basic-rules-and-legal/races.md
+    regola: 'gains a \+(?P<v>\d+) bonus on ability checks made to resist being bull rushed'
+    master: *DEF2
+    affermazione: '\+(?P<v>\d+) di stabilità dei nani'
+    confronto: numero
+
+  - id: DEF2-attacco-mortale
+    cosa: attacco mortale, round di studio
+    fonte: srd35
+    file: basic-rules-and-legal/prestige-classes.md
+    regola: 'studies his victim for (?P<v>\d+) rounds'
+    master: *DEF2
+    affermazione: 'chiede\s+(?P<v>tre) round di studio'
+    confronto: termine
+    equivale: {"3": [tre]}
+
+  - id: DEF2-schivare-migliorato
+    cosa: schivare prodigioso migliorato, livelli di ladro in più per fiancheggiare
+    fonte: srd35
+    file: basic-rules-and-legal/character-classes-ii.md
+    regola: 'at least (?P<v>four) more rogue levels'
+    master: *DEF2
+    affermazione: 'da un ladro di (?P<v>quattro) livelli più alto'
+    confronto: termine
+    equivale: {four: [quattro]}
+
+  - id: DEF2-soffio-ricarica
+    cosa: il soffio torna dopo 1d4 round
+    fonte: srd35
+    file: monsters/monsters-dr-dw.md
+    regola: 'once every (?P<v>1d4) rounds'
+    master: *DEF2
+    affermazione: '(?:\(|ogni )(?P<v>1d4) round'
+    confronto: termine
+
+  - id: DEF2-A5-presenza
+    cosa: scheda di Fauci (App. A.5), raggio SRD dell'adulto maturo
+    fonte: srd35
+    file: monsters/monsters-dr-dw.md
+    regola: '<td>(?P<v>\d+) Mature adult</td>'
+    master: *DEF2
+    affermazione: '(?P<v>\d+) m nell''SRD per l''adulto maturo'
+    confronto: numero
+    scala: 9
+
+  - id: DEF2-A5-soffio-linea
+    cosa: Fauci, drago Enorme, lunghezza della linea
+    fonte: srd35
+    file: monsters/monsters-dr-dw.md
+    regola: '<tr><td>Huge</td><td>(?P<v>\d+) ft\.</td>'
+    master: *DEF2
+    affermazione: '\*\*soffio\*\* in linea di (?P<v>\d+) m'
+    confronto: numero
+    scala: 0.3
+
+  - id: DEF2-A5-soffio-danni
+    cosa: Fauci, danni del soffio dell'adulto maturo
+    fonte: srd35
+    file: monsters/monsters-dr-dw.md
+    regola: '<td>Mature adult</td><td>H</td>(?:<td>[^<]*</td>){12}<td>(?P<v>\d+d4)'
+    master: *DEF2
+    affermazione: 'in linea di 30 m, (?P<v>\d+d4) acido'
+    confronto: termine
+
+  - id: DEF2-A5-CA
+    cosa: Fauci, CA dell'adulto maturo
+    fonte: srd35
+    file: monsters/monsters-dr-dw.md
+    regola: 'fly 150 ft\. \(poor\), swim 60 ft\.</td><td>\+0</td><td>(?P<v>\d+) \(–2 size'
+    master: *DEF2
+    affermazione: 'Enorme · CA \*\*(?P<v>\d+)\*\*'
+    confronto: numero
+
+  - id: DEF2-A5-RI
+    cosa: Fauci, resistenza agli incantesimi dell'adulto maturo
+    fonte: srd35
+    file: monsters/monsters-dr-dw.md
+    regola: 'DR 10/magic</td><td>5th</td><td>(?P<v>\d+)</td>'
+    master: *DEF2
+    affermazione: 'RD 10/magia, RI \*\*(?P<v>\d+)\*\*'
+    confronto: numero
+
+  - id: DEF2-A5-volo
+    cosa: Fauci, velocità di volo
+    fonte: srd35
+    file: monsters/monsters-dr-dw.md
+    regola: '<td>Mature adult</td><td>60 ft\., fly (?P<v>\d+) ft\. \(poor\)'
+    master: *DEF2
+    affermazione: 'volare (?P<v>\d+) m \(scarsa\)'
+    confronto: numero
+    scala: 0.3
+
+  - id: DEF2-A5-scudo
+    cosa: "scudo di Fauci, durata (stregone di 7°: 1 minuto per livello)"
+    fonte: srd35
+    file: spells/spells-s.md
+    regola: '## Shield\n(?:.*\n){0,14}?\*\*Duration:\*\* (?P<v>\d+) min\./level'
+    master: *DEF2
+    affermazione: '\*scudo\*, che dura (?P<v>\d+) minuti'
+    confronto: numero
+    scala: 7
+
+  - id: DEF2-A2-troll-pf
+    cosa: troll dell'ariete (SRD 3.5), punti ferita
+    fonte: srd35
+    file: monsters/monsters-t-z.md
+    regola: '## Troll\n[\s\S]*?Hit Dice:</th><td>6d8\+36 \((?P<v>\d+) hp\)'
+    master: *DEF2
+    affermazione: 'Troll dell''ariete[^\n]*?pf \*\*(?P<v>\d+)\*\*'
+    confronto: numero
+
+  - id: DEF2-A2-troll-CA
+    cosa: troll, CA
+    fonte: srd35
+    file: monsters/monsters-t-z.md
+    regola: '## Troll\n[\s\S]*?Armor Class:</th><td>(?P<v>\d+) \('
+    master: *DEF2
+    affermazione: 'Troll dell''ariete[^\n]*?CA \*\*(?P<v>\d+)\*\*'
+    confronto: numero
+
+  - id: DEF2-A2-troll-artigli
+    cosa: troll, bonus degli artigli
+    fonte: srd35
+    file: monsters/monsters-t-z.md
+    regola: '## Troll\n[\s\S]*?2 claws \+(?P<v>\d+) melee \(1d6\+6\)'
+    master: *DEF2
+    affermazione: '2 artigli \+(?P<v>\d+) \(1d6\+6\)'
+    confronto: numero
+
+  - id: DEF2-A2-troll-sbranare
+    cosa: troll, sbranare
+    fonte: srd35
+    file: monsters/monsters-t-z.md
+    regola: '## Troll\n[\s\S]*?Rend (?P<v>2d6\+\d+)'
+    master: *DEF2
+    affermazione: '\*\*sbranare\*\* (?P<v>\S+) se'
+    confronto: termine
+
+  - id: DEF2-A2-troll-scurovisione
+    cosa: troll, scurovisione
+    fonte: srd35
+    file: monsters/monsters-t-z.md
+    regola: '## Troll\n[\s\S]*?Darkvision (?P<v>\d+) ft\.'
+    master: *DEF2
+    affermazione: 'scurovisione (?P<v>\d+) m, visione crepuscolare, fiuto'
+    confronto: numero
+    scala: 0.3
+
+  - id: DEF2-A2-troll-velocita
+    cosa: troll, velocità
+    fonte: srd35
+    file: monsters/monsters-t-z.md
+    regola: '## Troll\n[\s\S]*?Speed:</th><td>(?P<v>\d+) ft\.'
+    master: *DEF2
+    affermazione: 'Troll dell''ariete[^\n]*?velocità (?P<v>\d+) m'
+    confronto: numero
+    scala: 0.3

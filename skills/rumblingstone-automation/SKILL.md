@@ -179,6 +179,13 @@ al tavolo si chiude con `dm.py session end` sul ramo del gruppo (ADR-0007).
   `creatura` → `genera_creatura`, `conformita` → `conformita_statblocchi`.
   `dm.py bestiario creatura --help` stampa l'aiuto dello script, e il codice
   d'uscita è quello dello script. Gli script restano invocabili per nome.
+- `prosa <azione> [flag]`: la catena della prosa (ADR-0101) da un solo
+  ingresso, nell'ordine d'uso. `misura` → `misura_craft`, `ciclo` →
+  `ciclo_prosa`, `mqm` → `punteggio_mqm`, `sintassi` → `misura_sintassi`
+  (spaCy, facoltativo), `coerenza` → `coerenza_campagna`, `domande` →
+  `domande_developer`, `migliora` → `migliora_prosa`, `cieco` →
+  `cieco_versioni`, `banco` → `banco_prosa_locale`, `voto` → `voto_scrittura`.
+  Senza azione stampa la catena; i flag e il codice d'uscita sono dello script.
 - `post --session <file>`: flusso manuale legacy (ledger + report-only).
 - `recap --hype` · `handout --tipo T --da <file>` · `dossier` (⚠️ solo DM) —
   vesti Homebrewery V3: i `.hb.md` sono **generati**, mai editati a mano.

@@ -1,0 +1,19 @@
+Calibrazione delle misure sintattiche (it_core_news_md) su 38 coppie votate
+
+metrica            vinc>perd vinc<perd pari  accordo  p(binom)
+sogg_preverbale            1         0    37    1.00  1.000
+agg_complesso              0         0    38    0.00  1.000
+stare_gerundio             1         1    36    0.50  1.000
+pron_soggetto              1         2    35    0.67  1.000
+calchi                     2         1    35    0.67  1.000
+calchi‰                    3         3    32    0.50  1.000
+possessivi_corpo           0         0    38    0.00  1.000
+profondita_max            10        10    18    0.50  1.000
+profondita_media          11        15    12    0.58  0.557
+livelli_max               11         1    26    0.92  0.006
+frasi_oltre2%              0         0    38    0.00  1.000
+lungh_dip                 20        16     2    0.56  0.618
+mattr_lemmi               18        19     1    0.51  1.000
+rip_interna%              15         7    16    0.68  0.134
+
+Totali dei rilievi (vincenti / perdenti): sogg_preverbale 4/3, agg_complesso 0/0, stare_gerundio 2/2, pron_soggetto 6/7, calchi 6/5, possessivi_corpo 0/0

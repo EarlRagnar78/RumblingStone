@@ -31,8 +31,8 @@
 |---|---|---|---|---|---|
 | `Mappe/Portale-Forgia-L1-REVISED-UltraClear.md` | MAPPA PF-1: Stanza della Corona (20×14) | Sì | Sì | **completo (T5b, s9)** | ok |
 | `Mappe/Portale-Forgia-L1-REVISED-UltraClear.md` | MAPPA PF-2: Sala della Forgia Eterna (27×27) | Sì | Sì | **completo (T5b, s9)** | ok |
-| `Mappe/Portale-Forgia-L2-REVISED-UltraClear.md` | Mappa #1 (21×53) — titolo grezzo `[COLONNA K = 15m da Nord]` | Sì | Sì (titolo automatico impreciso — vedi nota 1) | **completo (T5b, s9 — PF-3 Corridoio del Fuoco)** | ok |
-| `Mappe/Portale-Forgia-L2-REVISED-UltraClear.md` | MAPPA PF-4: Forgia Adamantina (33×25) | Sì | Sì | **completo (T5b, s9)** | ok |
+| `Mappe/Portale-Forgia-L2-REVISED-UltraClear.md` | Mappa #1 (21×53) — PF-3 Corridoio del Fuoco (titolo corretto il 2026-10-21) | Sì | Sì | **completo (T5b, s9 — PF-3 Corridoio del Fuoco)** | ok |
+| `Mappe/Portale-Forgia-L2-REVISED-UltraClear.md` | MAPPA PF-4: Forgia Adamantina (33×33) | Sì | Sì | **completo (T5b, s9)** | ok |
 | `Mappe/_ARCHIVIO/Portale-Forgia-L3-FINALE-REVISED.md` | Foresta di Cristallo Gigante + Camera Sferica Boss + altre (4 fence) | No (usa "1.5m/5ft" solo in legenda) | **No** | n/a | **KO — nota 2** |
 | `Mappe/_ARCHIVIO/TACTICAL-GRIDS-COMPLETE.md` | Spec testuali (coordinate in prosa, no griglia visuale) | Sì (in header standard) | **No** | n/a | **KO — nota 3** |
 | `Mappe/Atlante-Visivo-Mappe.md` | — (file STUB dichiarato, rimanda a TACTICAL-GRIDS) | — | No | — | n/a |
@@ -54,8 +54,8 @@
 | `Mappe/_ARCHIVIO/Hammerfist-Lotto-3-FINALE.md` | Ground Battle 120m×200m (30×71) | Sì | Sì | nessuno | ok |
 | `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` | Diagrammi ASCII box-drawing (▓, ║, no griglia numerata a celle) | Parziale (in prosa) | **No** | n/a (è l'atlante-indice) | **KO — nota 3** |
 | `ARC08-14-ATLANTE-IMMAGINI.md` | — (catalogo immagini, non è un master mappa) | — | No | — | n/a |
-| `ARC08-91-DEPRECATO-atlante-visivo-v2.md` ⚠️ DEPRECATED | Diagrammi ASCII box-drawing pre-Ultra-Clear | No | **No** | n/a (superato da L1-L3 Ultra-Clear) | **KO — nota 4** |
-| `ARC08-92-DEPRECATO-atlante-visivo-v3-complete.md` ⚠️ DEPRECATED | Diagrammi ASCII box-drawing pre-Ultra-Clear | No | **No** | n/a (superato da L1-L3 Ultra-Clear) | **KO — nota 4** |
+| `_ARCHIVIO/ARC08-91-DEPRECATO-atlante-visivo-v2.md` ⚠️ DEPRECATED | Diagrammi ASCII box-drawing pre-Ultra-Clear | No | **No** | n/a (superato da L1-L3 Ultra-Clear) | **KO — nota 4** |
+| `_ARCHIVIO/ARC08-92-DEPRECATO-atlante-visivo-v3-complete.md` ⚠️ DEPRECATED | Diagrammi ASCII box-drawing pre-Ultra-Clear | No | **No** | n/a (superato da L1-L3 Ultra-Clear) | **KO — nota 4** |
 
 ## Arco 09 — Continuazione dopo Hammerfist
 

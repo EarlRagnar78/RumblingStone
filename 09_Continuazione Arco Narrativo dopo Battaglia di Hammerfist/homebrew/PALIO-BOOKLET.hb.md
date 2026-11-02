@@ -90,6 +90,13 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 > Mappa master della città:
 > `P2D-Palio-Allegati/immagini/channathgate-mappa.png` (pianta illustrata coi
 > nomi FR dei quartieri; schema vettoriale di servizio: `mappe/channathgate-citta.svg`).
+> Per misure, rioni e fiume vale la pianta in scala
+> `mappe/channathgate-pianta.svg`: una città aperta, senza cinta, di circa 250 ha
+> fra il nucleo del bazar (66 ha), i rioni, due rabad e i giardini, con l'arg murato di 5 ha
+> sulla sua terrazza; circa 25.000 abitanti, profughi esclusi, la città più popolosa
+> della valle, più di Rethmar. È più grande della Dennovar del libro (circa 11.600)
+> per scelta del DM, perché la valle regga l'orda di circa 10.000. Se
+> dovesse reggere un assedio conterebbe solo sull'arg e sui muri dei rioni.
 > Vista cinematografica della Piazza (aerea + livello strada verso The Seat):
 > `P2D-Palio-Allegati/immagini/piazza-del-palio-panorama.png`.
 
@@ -108,7 +115,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 | **The Gilded Horn** | **L'Unicorno** | Sune/Milil | Aldric Thornwall | Arpa della Tempesta Bardica |
 | **The Tidal Crest** | **L'Onda** | Valkur/Selûne | Gonfaloniere + Gilda dei Barcaioli | La Marea Montante |
 | **The Sovereign Ring** | **Il Campo** (piazza neutrale) | — | nessuna fazione | il Palio stesso |
-| **"The Seat"** (mappa) | il palazzo-fortezza del governo | — | il Consiglio | vedi §Palazzo |
+| **"The Seat"** (mappa) | il **Palazzo dei Nove**, palazzo-fortezza del governo | — | il Consiglio | vedi §Palazzo |
 
 ---
 
@@ -124,7 +131,7 @@ economica. Superbi, intoccabili, tengono i cordoni della borsa della città.
 Distretto-fortezza dell'esercito cittadino: torri di pietra, ferriere,
 disciplina rigida. La sua carta in difesa (e leva politica) è l'antico
 **Golem d'Assedio**, titano di pietra vincolato alla porta principale del
-rione, pronto a destarsi se le mura vengono violate.
+rione, pronto a destarsi se il muro del rione viene violato.
 
 ### The Silver Weft — Il Bruco
 Nominalmente il rione dei tessitori, famoso per le sete filate d'argento.
@@ -138,7 +145,7 @@ Come un istrice: difensivo fuori, pacifico dentro. Santuario dei profughi
 di guerra, retto dalla milizia non ufficiale — e ferocemente leale — della
 **Capitana Lorana**. Lo protegge il **Mythal della Selva Viva**: quando il
 pericolo si avvicina, rovi di legnoferro affilati come rasoi crescono
-lungo le mura.
+lungo il muro del rione.
 
 ### The Spell-Wyrm Spires — Il Drago
 Enclave d'élite di maghi, studiosi e arcanisti, in rigorosa **Astensione**
@@ -150,7 +157,7 @@ dalla politica quotidiana. Tutta la loro esistenza è dedicata al
 Quartiere quieto e notturno dove i segreti sono la valuta corrente. È
 avvolto nei **Muri Illusori**: per un estraneo le strade sembrano vicoli
 ciechi e i muri pieni sono in realtà archi aperti. Il **Conte Valerius**
-coordina la rete di spie dalla sua tenuta fuori le mura: la Civetta sa
+coordina la rete di spie dalla sua tenuta fuori città: la Civetta sa
 sempre cosa tramano gli altri.
 
 ### The Gilded Horn — L'Unicorno
@@ -175,17 +182,13 @@ Guado**, pista del Palio — cap. IX §4.)*
 
 ---
 
-## §Palazzo — "The Seat" (il palazzo-fortezza del governo)
+## §Palazzo — il Palazzo dei Nove ("The Seat")
 
-Sulla pianta è marcato **"The Seat"**. Il DM ha raccolto quattro nomi
-cerimoniali possibili `[PROPOSTA — needs DM choice]`:
+Sulla pianta è marcato **"The Seat"**. Il nome è **Palazzo dei Nove**
+(*The High Seat of the Nine*): le nove parti in
+tregua, cioè le otto contrade e il Campo, siedono sotto lo stesso tetto e
+nessuna si fida delle altre.
 
-| Nome italiano | Nome FR (EN) | Atmosfera |
-|---|---|---|
-| Palazzo dei Nove | **The High Seat of the Nine** | politica, intrighi, tregua fra le 9 parti (8 contrade + il Campo) |
-| Palazzo dei Gonfaloni | **The Palace of the Eight Banners** | gli stendardi delle 8 contrade sulla facciata; equilibrio precario |
-| Palazzo della Torre | **The Sovereign Spire** | la guglia magica (aggancio al Quasi-Mythal del Drago) |
-| Rocca del Duca | **The Grand Ducal Hold of the Ring** | tono militare, legge ferrea, affaccio sul Sovereign Ring |
 
 ---
 
@@ -218,6 +221,10 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 > "Bard's Tale" (guerra delle ballate) + *War for the Crown* (sandbox politico a tempo).
 > **Tono**: *Andor* (intrigo lento e sporco) + *House of David* (fede civica viscerale)
 > + Tolkien (la festa sull'orlo del baratro).
+> **Versione derivata**: *Il Drappo di Tarsilia* è lo stesso sistema della corsa
+> riscritto da capo per Pathfinder 1e, con sei pregenerati di 3° e una città fuori
+> dai Reami. Si gioca da solo; qui al tavolo della campagna si gioca il Palio.
+> 
 
 ---
 
@@ -994,6 +1001,7 @@ pioggia/fango.
 Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 }}
 
+<!-- revisione-testo: r1 · 2026-10-03 -->
 # Parte 2D — Le 8 Prove d'Ammissione (scena per scena)
 
 > Allegato di cap. X (§2) e cap. VI (§2.1).
@@ -1091,8 +1099,8 @@ Ferrante può diventare la voce che a Rethmar **tiene Jarmaath sulla difesa**.
 
 **Read-aloud**
 > *Voll vi consegna una cassa che pesa troppo per il suo volume. — "Non chiedete cosa c'è
-> dentro. Chiedete solo: da che porta entra?" Sorride. La cassa, per un istante, sembra…
-> respirare.*
+> dentro. Chiedete solo: da che porta entra?" Sorride. La cassa, per un istante, si gonfia
+> e si sgonfia.*
 
 **Beat 1 — La via (piano)**: i PG scelgono l'approccio — fogna (Furtività), corruzione
 (Raggirare/oro), diversivo (un PG crea caos altrove). Ogni piano ha la sua DC.
@@ -1123,7 +1131,7 @@ mette i PG dentro l'oscuro collegamento drow/Collezionista (GIORNO2 §3.3).
 ---
 
 ## 4 · L'ISTRICE — "La Notte del Campo"
-**Prova**: gestire una crisi improvvisa nel campo profughi fuori le mura.
+**Prova**: gestire una crisi improvvisa nel campo profughi ai margini della città.
 **Cast**: **Nania Seriv del Traghetto** (luogotenente di Lorana, NB); centinaia di profughi;
 un **incendio doloso** (o un'epidemia — scegli) appiccato da un infiltrato.
 
@@ -1906,7 +1914,7 @@ la piazza impazzire per un cavallo senza cavaliere che taglia il traguardo.
 ### 4.4 La Corsa "sotto le frecce" *(in campagna, opzionale)*
 Se il DM vuole massima tensione: mentre i cavalli corrono, una **staffetta** irrompe —
 *"I casali del Channath centrale bruciano! L'orda sarà al Crocevia in due giorni!"* — e a
-ovest, oltre le mura, si indovina il fumo dei razziatori worg. **Coerenza col March Clock**:
+ovest, oltre il fiume, si indovina il fumo dei razziatori worg. **Coerenza col March Clock**:
 al giorno della corsa (Day 30-31) l'orda NON è a Rethmar (arriva al Day 42) — il fumo è
 delle fattorie del Channath, non della città. Non cambia le regole, ma ogni tiro pesa il
 doppio: i PG corrono **letteralmente** per decidere chi difenderà il fronte.
@@ -2124,15 +2132,12 @@ Morale del Rione**; l'**Onore del Fantino** è il TS contro le offerte di corruz
 
 ## 4. Struttura in 3–4 Sessioni
 
-```
- SESSIONE 1  ── SESSIONE 2 ───────── SESSIONE 3 ──────── SESSIONE 4 (climax)
- Arrivo +       La Tratta +           La Cena + i          La Mossa + la Corsa
- Emissari +     i primi Partiti +     sabotaggi notturni + + Esiti + cavalcata
- Prova          la Sbandierata        i drow di Sonjak     di soccorso a Rethmar
-   │                │                     │                    │
- scegli la       trucca (o no)         proteggi cavallo     vinci/perdi → Meraviglia,
- CONTRADA        l'urna                e fantino            voto Consiglio, rinforzi
-```
+| Sessione | Che cosa succede | La scelta dei PG |
+|---|---|---|
+| 1 | Arrivo, Emissari e la Prova | scegliere la contrada |
+| 2 | La Tratta, i primi Partiti e la Sbandierata | truccare l'urna, o no |
+| 3 | La Cena, i sabotaggi notturni e i drow di Sonjak | proteggere cavallo e fantino |
+| 4 (climax) | La Mossa, la Corsa, gli Esiti e la cavalcata di soccorso a Rethmar | vincere o perdere: la Meraviglia, il voto del Consiglio, i rinforzi |
 
 - **Sessione 1 — Il Mercato dei Sottobanco** (mezza sessione RP + una Prova d'Ammissione).
 - **Sessione 2 — La Tratta e i Partiti** (skill challenge dell'urna + diplomazia).
@@ -2249,16 +2254,16 @@ Tre vincoli di coerenza, risolti a monte:
 
 ## 1. Geografia e Lore — Channathgate ampliata
 
-Channathgate (orig. **Dennovar**) è la **più grande città mercantile del vale dopo
-Rethmar**, sulla **Dawn Way** ~35 miglia a est di Rethmar (**~1,5 giorni** a cavallo, meno
-a marce forzate). Nel canone attuale è uno **stub**: "eastern gateway; largest city after
-Rethmar", **non ancora attaccata**, **+150 truppe ❓ solo via diplomazia**
-(`state.md` refugee ledger). **Questa avventura la trasforma nel motore geopolitico**
+Channathgate (orig. **Dennovar**) è la **città più popolosa del vale** (circa 25.000
+abitanti, più dei circa 11.600 della Dennovar del libro, per scelta del DM; Rethmar resta la capitale), sulla **Dawn Way** ~35 miglia a est di Rethmar (**~1,5 giorni** a cavallo, meno
+a marce forzate). Nel canone attuale è uno **stub**: "eastern gateway", più popolosa di Rethmar,
+**città aperta** senza cinta (`P2D-Palio-Allegati/mappe/channathgate-pianta.svg`), **non ancora attaccata**, **+150 truppe ❓ solo via diplomazia**
+(registro dei profughi della campagna). **Questa avventura la trasforma nel motore geopolitico**
 che sblocca quel contributo — e molto altro.
 
 **Ampliamento canonico proposto:**
 - **Governo**: un **Governatore-Mercante** (il *Gonfaloniere*) + una **Balìa** di gilde.
-  Ricchissima, fortificata, **restia a sguarnirsi** per paura di restare indifesa.
+  Ricchissima, senza mura intorno ai rioni (solo l'arg è murato), **restia a sguarnirsi** per paura di restare indifesa.
 - **Cultura "Bard's Tale"**: metropoli di **gilde bardiche**, teatri all'aperto, piazze di
   pietra. La politica si fa **a suon di musica e propaganda** (vedi §7).
 - **Contrade**: 8 rioni storici (le contrade dell'AVVENTURA §1), nati come compagnie
@@ -2347,8 +2352,8 @@ e Channathgate dista **1,5 giorni**. Il calendario che tiene insieme tutto:
 > - **Day 29-30**: *"I casali del Channath centrale bruciano; i razziatori worg colpiscono i convogli."*
 > - **Day 30-31**: *"L'orda converge sul Crocevia del Channath — sarà lì entro due giorni."* (canone: Day 33)
 > - **Colore**: *"Dicono che a Witchcross i druidi preparino una resistenza disperata."* (cade ~Day 35)
-> **Non usare** "le mura cadono / Rethmar brucia": contraddice il clock. E il drago **blu**
-> è **Ozyrrandion** (impegnato alla Torre Invisibile, P2A); **Tyrgarun è nero e in riserva**
+> **Non usare** "le mura cadono / Rethmar brucia": contraddice il clock. E il drago **verde**
+> è **Ozyrrandion** (impegnato alla Torre Invisibile, P2A); **Tyrgarun è blu e in riserva**
 > fino alla Fase 3 — nessuno dei due bombarda granai durante il Palio.
 
 ### 3.2 Impatto sui Clock dei Villain
@@ -2807,21 +2812,22 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 ## 1. I Fantini (i due archetipi)
 
 ### 1.1 Fantino Cavaliere — "corsa pulita" (GS 8)
-Umano Guerriero 6 / Cavaliere-ish. **CA** 18 (armatura leggera da corsa) · **PF** 55 ·
-**For** 14 **Des** 16 **Cos** 13. **TS** Temp +7 Rifl +6 Vol +4.
-- **Cavalcare +16** (foco: corsa), *Combattere in Sella*, *Cavalcata Poderosa*, *Attacco in Corsa*.
-- **Nerbo** +9 mischia, 1d4+2 non letale; su colpo, bersaglio Cavalcare DC 15 o Sbilanciato.
-- **Legame col cavallo**: +2 alle prove di Cavalcare del proprio destriero (empatia).
-- **Tattica**: cariche pulite, tiene la corda interna, nerba solo per difendersi. Onore alto.
+{{note
+##### Fantino Cavaliere · GS 8
+**CA** 18, armatura leggera da corsa · **pf** 55 · *scheda in appendice*
+
+**TATTICHE**
+Cariche pulite, tiene la corda interna, nerba solo per difendersi. Onore alto.  
+}}
 
 ### 1.2 Fantino Ladro — "corsa assassina" (GS 8)
-Mezzelfo Ladro 8. **CA** 19 · **PF** 44 · **Des** 18. **TS** Temp +4 Rifl +10 Vol +3.
-- **Cavalcare +12**, **Raggirare +14**, **Furtività +14**, *Attacco Furtivo +4d6*.
-- **Nerbo con aghi**: +11 mischia, 1d4+1 + veleno (CD 14, 1d2 Des); *Attacco Furtivo* se il
-  rivale è Colto alla Sprovvista (curva cieca, Zona 5).
-- **Sbilanciare/Spingere in sella** +13. **Slealtà**: una volta a corsa può fingere una
-  caduta per far inciampare chi lo segue (Riflessi DC 18).
-- **Tattica**: sta dietro, colpisce nelle curve cieche, punta a **disarcionare** più che a vincere.
+{{note
+##### Fantino Ladro · GS 8
+**CA** 19 · **pf** 44 · *scheda in appendice*
+
+**TATTICHE**
+Sta dietro, colpisce nelle curve cieche, punta a **disarcionare** più che a vincere.  
+}}
 
 ---
 
@@ -2868,21 +2874,31 @@ Statistiche-corsa astratte (mod. applicato ai tiri di Zona del fantino):
 ## 3. I Sicari di Sonjak (assalto alla stalla, Giorno 2 notte, GS 11–12)
 
 ### 3.1 Drow Assassino ×2 (GS 9 cad.)
-Drow Ladro 5 / Assassino 4. **CA** 21 · **PF** 58 · **Des** 20. **TS** Rifl +12.
-- **Attacco Furtivo +6d6**, **Morte Improvvisa** (CD 18), *Nascondersi nelle Ombre*.
-- **Innata**: *Oscurità*, *Fuoco delle Fate*. Balestra a mano + veleno drow (sonno, CD 17).
-- **Obiettivo**: **il cavallo**, non i PG — colpire e sparire. Se scoperti, coprono la fuga.
+{{note
+##### Drow Assassino (2) · GS 9
+**CA** 21 · **pf** 58 · *scheda in appendice*
+
+**TATTICHE**
+**Obiettivo**: **il cavallo**, non i PG: colpire e sparire. Se scoperti, coprono la fuga.  
+}}
+
 
 ### 3.2 Drow Chierica di Lolth (GS 10)
-Drow Chierico 9. **CA** 22 · **PF** 63 · **Sag** 18. **Incantesimi** fino al 5° (Comando
-Superiore, Ragnatela, Silenzio, Flagello Insetti). *Oscurità*, *Individuazione Magico*.
-- Comanda l'assalto; usa **Silenzio** per soffocare gli allarmi, **Ragnatela** in stalla.
-- **Cattura viva** = intel Fase 0 Rethmar + −1 clock Sonjak.
+{{note
+##### Drow Chierica di Lolth · GS 10
+**CA** 22 · **pf** 63 · *scheda in appendice*
+
+**TATTICHE**
+Comanda l'assalto; usa **Silenzio** per soffocare gli allarmi, **Ragnatela** in stalla. **Cattura viva** = intel Fase 0 Rethmar + −1 clock Sonjak.  
+}}
+
 
 ### 3.3 Servitore della Spora (GS 3, ariete vivente)
-Umanoide fungino mindless (dall'esperimento di Sonjak, §2.4a CALCOLI). **PF** 32 · carica
-suicida, **veleno da contatto CD 16**, esplode in spore alla morte (Tempra CD 14 o
-1 round *nauseato*). 1–2 presenti.
+{{note
+##### Servitore della Spora (1-2) · GS 3
+**CA** — · **pf** 32 · *scheda in appendice*
+}}
+
 
 > **Prova documentale**: su un drow, il **sigillo del mercante di Channathgate** (rete de
 > *Il Collezionista*) → collega Sonjak, la Civetta/Valerius e i drow. Aggancio ai registri.
@@ -2977,10 +2993,20 @@ illustrata coi nomi FR dei quartieri — **master visivo della città**, DM
 2026-07-17; corrispondenze in cap. I).
 Schema vettoriale di servizio: `P2D-Palio-Allegati/mappe/channathgate-citta.svg`
 
+> **Quale pianta vale.** Per misure, rioni, ingressi, fiume e
+> distanze vale la pianta in scala `P2D-Palio-Allegati/mappe/channathgate-pianta.svg`;
+> il PNG del DM resta l'illustrazione e dà la posizione dei rioni, che la
+> pianta in scala rispetta. Lo schema `channathgate-citta.svg` serve solo a
+> vedere gli otto rioni a colpo d'occhio. Misure, abitanti e posizioni della pianta sono
+> canone.
+
+![Channathgate, pianta in scala](../P2D-Palio-Allegati/mappe/channathgate-pianta.svg)
+
 ![Channathgate](../P2D-Palio-Allegati/mappe/channathgate-citta.svg)
 
-Città-porto sul **Fiume Cannath** (~35 mi a est di Rethmar). Mura, **Porta dell'Alba**
-(Dawn Way), **Porta del Porto**, **Darsena/Flotta** (Onda). Otto rioni-contrada attorno
+Città-porto sul **Fiume Cannath** (~35 mi a est di Rethmar), aperta: niente cinta, mura
+solo all'arg. **Porta dell'Alba** (Dawn Way) e **Porta del Porto** sono archi di dogana sulla
+strada (sulla pianta in scala, Arco dell'Alba e Arco del Porto), **Darsena/Flotta** (Onda). Otto rioni-contrada attorno
 alla **Piazza del Guado** centrale. Usa questa mappa per: gli spostamenti fra rioni per i
 **partiti**, l'infiltrazione nel palazzo della **Civetta** (registri di Valerius), la
 **stalla** dei PG (assalto drow) e il **porto** (Meraviglia dell'Onda).
@@ -2988,7 +3014,10 @@ alla **Piazza del Guado** centrale. Usa questa mappa per: gli spostamenti fra ri
 ---
 
 ## 3. Rotta di soccorso — Channathgate ▸ Rethmar
-**File**: `P2D-Palio-Allegati/mappe/rotta-soccorso.svg`
+**File**: `P2D-Palio-Allegati/mappe/rotta-soccorso.svg`. Le due rotte in scala
+stanno sulla regionale della valle, `00_Red Hand Of Doom/Immagini/Area Map/Red Hand of Doom -Maps/ForgottenRealms/Shaar-ChannathVale/cannath-vale-regionale.svg`:
+il Cannath esce dal lago di Channathgate, passa lungo il lato ovest della città e
+a Cannathcross, e arriva a Rethmar dopo circa 42 miglia.
 
 ![Rotta di soccorso](../P2D-Palio-Allegati/mappe/rotta-soccorso.svg)
 
@@ -3025,6 +3054,7 @@ per mappa. Companion di raccordo:*
 |---|---|---|
 | **Piazza del Palio** (corsa) | `piazza-del-palio.svg` | anello a conchiglia, orario, 3 giri, tufo; 6 Zone con DC 18-24 (Curva del Guado DC 24 = la più letale; Curva del Boia = muro cieco, caduta 4d6); catino interno = folla (6.000) |
 | **Channathgate città** | `channathgate-citta.svg` | 8 rioni-contrada, Porta dell'Alba/del Porto, Darsena; spostamenti dei partiti, infiltrazione Civetta, porto |
+| **Channathgate in scala** | `channathgate-pianta.svg` | la pianta che vale per le misure: arg (Palazzo dei Nove), maidan (il Campo), bazar coperto, giardini murati, qanat, Darsena e chiuse; città aperta di circa 250 ha e 25.000 abitanti: mura e torri solo all'arg (828 m, 27 torri e 2 alla porta), fossi e muri di rione con porte di quartiere |
 | **Rotta di soccorso** | `rotta-soccorso.svg` | Dawn Way (~35 mi, 1,5 gg, cavalleria) vs Fiume Cannath (~1 gg, flotta); **deadline Day 38** per la Fase 1 |
 | **Stalla — assalto drow** | `stalla-assalto-drow.svg` | 1 quadretto = 5 ft, GS 11-12; drow dalla botola SO con *Oscurità/Silenzio*, buio totale |
 
@@ -3046,3 +3076,104 @@ per mappa. Companion di raccordo:*
 > Esiti aperti (D13): chi vince il Palio, se la stalla regge e per quale rotta
 > arrivano i rinforzi dipende dalle scelte dei PG e dai dadi.
 
+
+\page
+
+# Appendice: le creature
+
+{{monster,frame
+## Drow Assassino (2)
+*Drow Ladro 5 / Assassino 4* · GS 9
+___
+
+**DIFESA**
+___
+**CA 21** · **pf 58** · TS Riflessi +12  
+
+**ATTACCO**
+___
+Balestra a mano + veleno drow (sonno, CD 17) · **Attacco Furtivo** +6d6  
+
+**STATISTICHE**
+___
+Des 20  
+
+**CAPACITÀ SPECIALI**
+___
+- **Morte Improvvisa** (CD 18), *Nascondersi nelle Ombre*.  
+- **Innata**: *Oscurità*, *Fuoco delle Fate*.  
+}}
+{{monster,frame
+## Drow Chierica di Lolth
+*Drow Chierico 9* · GS 10
+___
+
+**DIFESA**
+___
+**CA 22** · **pf 63**  
+
+**STATISTICHE**
+___
+Sag 18  
+
+**CAPACITÀ SPECIALI**
+___
+- **Incantesimi** fino al 5° (Comando Superiore, Ragnatela, Silenzio, Flagello Insetti). *Oscurità*, *Individuazione Magico*.  
+}}
+{{monster,frame
+## Fantino Cavaliere
+*Umano Guerriero 6 / Cavaliere-ish · corsa pulita* · GS 8
+___
+
+**DIFESA**
+___
+**CA 18** (armatura leggera da corsa) · **pf 55** · TS Tempra +7, Riflessi +6, Volontà +4  
+
+**ATTACCO**
+___
+**Mischia** nerbo +9 (1d4+2 non letale); su colpo, il bersaglio fa Cavalcare DC 15 o è Sbilanciato  
+
+**STATISTICHE**
+___
+For 14, Des 16, Cos 13 · **Abilità** Cavalcare +16 (foco: corsa) · **Talenti** *Combattere in Sella*, *Cavalcata Poderosa*, *Attacco in Corsa*  
+
+**CAPACITÀ SPECIALI**
+___
+- **Legame col cavallo**: +2 alle prove di Cavalcare del proprio destriero (empatia).  
+}}
+{{monster,frame
+## Fantino Ladro
+*Mezzelfo Ladro 8 · corsa assassina* · GS 8
+___
+
+**DIFESA**
+___
+**CA 19** · **pf 44** · TS Tempra +4, Riflessi +10, Volontà +3  
+
+**ATTACCO**
+___
+**Mischia** nerbo con aghi +11 (1d4+1 + veleno CD 14, 1d2 Des); *Attacco Furtivo* se il rivale è Colto alla Sprovvista (curva cieca, Zona 5) · **Sbilanciare/Spingere in sella** +13  
+
+**STATISTICHE**
+___
+Des 18 · **Abilità** Cavalcare +12, Raggirare +14, Furtività +14  
+
+**CAPACITÀ SPECIALI**
+___
+- *Attacco Furtivo* +4d6.  
+- **Slealtà**: una volta a corsa può fingere una caduta per far inciampare chi lo segue (Riflessi DC 18).  
+}}
+{{monster,frame
+## Servitore della Spora (1-2)
+*Umanoide fungino mindless, ariete vivente (dall'esperimento di Sonjak, §2.4a CALCOLI)* · GS 3
+___
+
+**DIFESA**
+___
+**pf 32**  
+
+**CAPACITÀ SPECIALI**
+___
+- **Carica suicida**, **veleno da contatto CD 16**.  
+- **Esplode** in spore alla morte (Tempra CD 14 o 1 round *nauseato*).  
+}}

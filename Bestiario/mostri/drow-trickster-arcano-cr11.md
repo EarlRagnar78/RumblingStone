@@ -16,11 +16,10 @@ attacchi:
   - Mischia stocco +5 (1d6)
 ```
 
-> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «3d6», una parte sola dei dadi vita. I dadi vengono dalla formula che la scheda scrive, il bonus da Cos 12.
 
-> [INFERRED — needs DM confirmation] correzione 3.5 da `scripts/conformita_statblocchi.py`: **D4, deciso dal DM il 2026-09-23: BAB +5**, cioè Ladro 3 (+2), Mago 5 (+2), Trickster Arcano 2 (+1). Lotta +3 → **+4** (For 8, −1). Stocco +5 e balestra a mano +9 tornano già con +5.
+> [CANONE — DM 2026-09-23, D4] correzione 3.5 da `scripts/conformita_statblocchi.py`: **D4, deciso dal DM il 2026-09-23: BAB +5**, cioè Ladro 3 (+2), Mago 5 (+2), Trickster Arcano 2 (+1). Lotta +3 → **+4** (For 8, −1). Stocco +5 e balestra a mano +9 tornano già con +5.
 
-> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
+> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
 Medium humanoid (elf), NE. **DV 3d6 + 7d4**. **hp 38**. **CA 19** (+4 Des, +4 *armatura magica*, +1 anello), contatto 15, colto alla sprovvista 15. Iniziativa +4. Vel 9 m.
 **TS** Temp +5, Rifl +11, Vol +8 (+2 razziale vs incantesimi, +2 vs ammaliamenti). **BAB/Lotta** +5/+4. **RI 21**.

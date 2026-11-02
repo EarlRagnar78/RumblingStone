@@ -37,7 +37,7 @@ lasciare file a metà: la catena HTML continua a funzionare da sola.
 
 Rigenera l'esemplare con:
     python3 scripts/export_booklet_typst.py \\
-        STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-DM.manifest.json --all
+        10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-DM.manifest.json --all
 
 Exit code: 0 = ok · 1 = binario assente o compilazione fallita · 2 = uso errato.
 """
@@ -54,7 +54,10 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from dmcore.testo import capitoli_del_volume, leggi_per_la_stampa, slug, togli_storico  # noqa: E402
 from dmcore.schede import Scheda, SchedaError, leggi_schede  # noqa: E402
-from dmcore.statblock import StatblockError, leggi as leggi_statblocco  # noqa: E402
+from dmcore.statblock import (  # noqa: E402
+    StatblockError, accosta_parte_leggibile, etichetta_gs, caratteristiche, leggi as leggi_statblocco,
+    sezioni_leggibili, senza_caratteristiche,
+)
 
 import binari  # noqa: E402  (accanto a questo file)
 
@@ -437,6 +440,7 @@ def md_to_typ(md: str, base: Path | None = None, capolettera: bool = False) -> s
     dove il ritratto arriva per un'altra strada). `capolettera` mette il
     versale d'apertura sul primo paragrafo vero del capitolo.
     """
+    md = accosta_parte_leggibile(md)      # la scheda è un riquadro solo (ADR-0105)
     # Un'immagine in mezzo a una riga di testo diventa una riga sua: il resto
     # del convertitore lavora per blocchi, e una figura non è un blocco inline.
     if base is not None:
@@ -525,7 +529,10 @@ def md_to_typ(md: str, base: Path | None = None, capolettera: bool = False) -> s
                 # Il blocco statistiche non è codice: è un riquadro (ADR-0021).
                 # Stamparlo come `raw` vorrebbe dire mettere in un manuale la
                 # forma-dato invece del mostro.
-                out.append(statblocco_typ("\n".join(blocco), ultimo_titolo))
+                # Le righe di ADR-0091 che lo seguono entrano nello stesso
+                # riquadro, come fasce (ADR-0105): la scheda è una.
+                sezioni, i = sezioni_leggibili(righe, i)
+                out.append(statblocco_typ("\n".join(blocco), ultimo_titolo, sezioni))
                 continue
             celle = max((larghezza_visiva(r) for r in blocco), default=0)
             larga = False
@@ -653,7 +660,7 @@ def md_to_typ(md: str, base: Path | None = None, capolettera: bool = False) -> s
     return "\n".join(out)
 
 
-def statblocco_typ(corpo: str, titolo_corrente: str = "") -> str:
+def statblocco_typ(corpo: str, titolo_corrente: str = "", sezioni=()) -> str:
     """Un blocco ```statblocco → una chiamata a `#statblocco()` del tema.
 
     Se il blocco non si legge, il volume NON si costruisce a metà: si dice
@@ -669,7 +676,7 @@ def statblocco_typ(corpo: str, titolo_corrente: str = "") -> str:
     nome = sb.nome or titolo_corrente
     voci = [f"nome: {json.dumps(nome, ensure_ascii=False)}"]
     for chiave, valore in (
-        ("tipo", sb.tipo), ("gs", sb.gs), ("iniziativa", sb.iniziativa),
+        ("tipo", sb.tipo), ("gs", etichetta_gs(sb.gs)), ("iniziativa", sb.iniziativa),
         ("sensi", sb.sensi), ("pf", (sb.pf + (f" ({sb.pf_dado})" if sb.pf_dado else "")).strip()),
         ("velocita", sb.velocita), ("tattica", sb.tattica), ("fonte", sb.fonte),
     ):
@@ -701,7 +708,24 @@ def statblocco_typ(corpo: str, titolo_corrente: str = "") -> str:
             "(" + json.dumps(v.split(":", 1)[0].strip(), ensure_ascii=False) + ", ["
             + inline(v.split(":", 1)[1].strip() if ":" in v else "") + "]), "
             for v in sb.voci) + ")")
+    if sezioni:
+        voci.append("sezioni: (" + "".join(
+            f"{json.dumps(s.etichetta, ensure_ascii=False)}: "
+            f"[{_sezione_typ(s, len(caratteristiche(sb.attributi)) == 6)}], "
+            for s in sezioni) + ")")
     return "#statblocco(\n  " + ",\n  ".join(voci) + ",\n)"
+
+
+def _sezione_typ(s, con_griglia: bool) -> str:
+    """Il contenuto di una fascia: la riga, poi le voci come elenco."""
+    testo = s.testo
+    if s.etichetta == "Statistiche" and con_griglia:
+        testo = senza_caratteristiche(testo)
+    pezzi = [inline(testo)] if testo else []
+    if s.etichetta == "Iniziativa" and pezzi:
+        pezzi[0] = "*Iniziativa* " + pezzi[0]    # la riga sotto il nome, senza fascia
+    pezzi += ["- " + inline(v) for v in s.voci]
+    return "\n".join(pezzi)
 
 
 # ── le schede pregenerate ────────────────────────────────────────────────────
@@ -859,6 +883,7 @@ CHIAVI_NOTE = {
     "title", "subtitle", "brand", "banner", "meta", "footer", "header",
     "player_footer", "front_matter", "cover_image", "cover_tag", "intro_md",
     "out", "chapters", "carta", "capolettera", "fregio", "colophon", "formato",
+    "schede",
 }
 CHIAVI_SOLO_HTML = {"player_footer", "header", "cover_tag", "out"}
 
@@ -1031,6 +1056,12 @@ def sorgente(man: dict, base: Path, tutti: bool, carta: str = "avorio",
     # in questo volume, o se ne vanno (ADR-0070, classe D).
     nel_volume = capitoli_del_volume(base, man)
     parti = intestazione(man, base=base, carta=carta, formato=formato)
+    # Dove sta il riquadro intero delle creature (ADR-0105 punto 7): in
+    # appendice, con la riga e la tattica nell'incontro; «qui» per i volumi che
+    # le schede le vogliono dove sono scritte.
+    appendice = man.get("schede", "appendice") == "appendice"
+    if appendice:
+        parti.append('#modo-schede.update("appendice")')
     predefinito = bool(man.get("capolettera", True))
     for cap, titolo, f in elenco:
         if cap.get("layout") == "schede":
@@ -1046,6 +1077,8 @@ def sorgente(man: dict, base: Path, tutti: bool, carta: str = "avorio",
         corpo = re.sub(r"\A\s*=\s[^\n]*\n", "", corpo)   # il titolo lo dà il manifest
         parti.append(corpo)
         parti.append("")
+    if appendice:
+        parti.append("#appendice-creature()")
     testo = "\n".join(parti)
     # L'indice analitico e' opt-in dal manifest: non tutti i volumi lo vogliono
     # (un teaser di due pagine con un indice analitico e' una presa in giro).

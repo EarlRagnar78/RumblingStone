@@ -84,12 +84,30 @@
 // dire «questa voce finisce qui» senza spendere una riga bianca.
 #let fine = box(baseline: 0%)[#h(0.35em)#text(fill: seppia, size: 8pt)[⬦]]
 
+// Le varianti di impaginazione da provare alla cieca (piano dello standard di
+// stampa, I6). Arrivano da `typst compile --input chiave=valore`, cioè da
+// `scripts/varianti_stampa.py`; senza --input il libro è quello di sempre.
+#let VARIANTE = (
+  // l'interlinea del testo, come `leading` di Typst: 0.62em dà 1,30 volte il corpo
+  interlinea: sys.inputs.at("interlinea", default: "0.62em"),
+  // «riquadro»: il box sul fondo colorato; «colore»: corsivo colorato nel testo,
+  // senza riquadro, come fanno WotC e Paizo
+  leggi: sys.inputs.at("leggi", default: "riquadro"),
+)
+#let inchiostroLeggi = rgb("#5b3417")
+
 // Read-aloud: il testo che si legge ad alta voce al tavolo.
-#let leggi(body) = block(
-  width: 100%, fill: boxLeggi, inset: (x: 9pt, y: 8pt), radius: 2pt,
-  stroke: (left: 2pt + seppia),
-  breakable: true,
-)[#text(style: "italic", size: 9.4pt, fill: inchiostro)[#body]]
+// Il segnaposto <leggi> dice in che pagine stanno i box (scripts/varianti_stampa.py).
+#let leggi(body) = [#metadata("leggi") <leggi>] + if VARIANTE.leggi == "colore" {
+  block(width: 100%, inset: (left: 0.6em), above: 0.9em, below: 0.9em, breakable: true,
+    text(style: "italic", size: 9.8pt, fill: inchiostroLeggi)[#body])
+} else {
+  block(
+    width: 100%, fill: boxLeggi, inset: (x: 9pt, y: 8pt), radius: 2pt,
+    stroke: (left: 2pt + seppia),
+    breakable: true,
+  )[#text(style: "italic", size: 9.4pt, fill: inchiostro)[#body]]
+}
 
 // Nota di regia per il DM.
 #let nota(body) = block(
@@ -301,55 +319,262 @@
   }
 }
 
+// Dove sta il riquadro intero (ADR-0105 punto 7, D5 del piano dello standard di
+// stampa). «appendice»: nel punto dell'incontro esce una riga col nome, il GS,
+// CA e pf e il rimando alla pagina, più la tattica di quell'incontro; il
+// riquadro intero va nell'appendice in fondo (`appendice-creature`), una volta
+// sola per creatura. «qui»: il riquadro intero esce dove è scritto, come nei
+// fascicoli di schede da dare in mano. L'esportatore sceglie dal manifest.
+#let modo-schede = state("modo-schede", "qui")
+
 // Blocco statistiche: il riquadro del mostro/PNG, coi numeri dove il DM li
 // cerca invece che dentro un paragrafo (ADR-0021). I campi arrivano già
 // strutturati da `dmcore.statblock`: qui c'è solo la forma.
+//
+// La forma è una sola per ogni creatura, dal goblin al drago (ADR-0105): il
+// nome e il GS sulla barra, il tipo sotto, la riga dell'iniziativa, poi le
+// fasce DIFESA, ATTACCO, STATISTICHE, CAPACITÀ SPECIALI e TATTICHE, come nelle
+// AP. Le fasce si riempiono con le righe leggibili di ADR-0091 (`sezioni`)
+// quando la scheda le ha, e se no coi campi del blocco: la forma non cambia,
+// cambia solo quanto è piena. Una fascia senza niente dentro non si stampa.
 #let statblocco(
   nome: "", tipo: "", gs: "", iniziativa: "", sensi: "",
   ca: "", pf: "", ts: "", velocita: "",
   attributi: (), attacchi: (), voci: (), tattica: "", fonte: "",
+  sezioni: (:),
   larga: false,
 ) = {
-  let corpo = block(
+  let fascia(titolo, corpo) = if corpo != none [
+    #v(3.5pt)
+    #block(width: 100%, below: 3pt, stroke: (bottom: 0.6pt + rosso), inset: (bottom: 1.5pt))[
+      #text(font: TITOLI, size: 7.4pt, weight: 600, fill: rosso, tracking: 0.8pt)[#upper(titolo)]
+    ]
+    #corpo
+  ]
+  // Dai campi, le voci di una fascia stanno su una riga sola separate da «·»,
+  // come le righe di ADR-0091: le due vie danno lo stesso riquadro.
+  let in-riga(coppie) = {
+    let piene = coppie.filter(c => c.at(1) != "" and c.at(1) != [])
+    if piene.len() == 0 { none } else { piene.map(c => [*#c.at(0)* #c.at(1)]).join([ · ]) }
+  }
+  let difesa = sezioni.at("Difesa", default: in-riga((("CA", ca), ("pf", pf), ("TS", ts))))
+  let attacco = sezioni.at("Attacco", default: in-riga(
+    (("Vel", velocita),) + attacchi.map(a => (a.at(0), a.at(1)))))
+  // La griglia delle caratteristiche solo quando ci sono tutte e sei: con
+  // tre colonne su sei il riquadro sembra rotto. Altrimenti stanno in riga.
+  let griglia-car = attributi.len() == 6
+  let statistiche = {
+    let testo = sezioni.at("Statistiche", default: in-riga(
+      (if griglia-car { () } else { attributi.map(((k, v)) => (k, v)) }) + voci.map(v => (v.at(0), v.at(1)))))
+    if not griglia-car and testo == none { none } else [
+      #if griglia-car [
+        #grid(columns: (1fr,) * attributi.len(), column-gutter: 4pt,
+          ..attributi.map(((k, v)) => align(center)[
+            #text(font: TITOLI, size: 7pt, fill: seppia)[#upper(k)] \
+            #text(size: 9pt, weight: 600)[#v]
+          ]))
+        #v(2pt)
+      ]
+      #testo
+    ]
+  }
+  let capacita = sezioni.at("Capacità speciali", default: none)
+  let tattiche = sezioni.at("Tattiche", default: if tattica == "" { none } else [#tattica])
+  let apertura = sezioni.at("Iniziativa", default: {
+    let pezzi = ()
+    if iniziativa != "" { pezzi.push([*Iniziativa* #iniziativa]) }
+    if sensi != "" { pezzi.push([*Sensi* #sensi]) }
+    if pezzi.len() == 0 { none } else { pezzi.join([ · ]) }
+  })
+
+  let testa = grid(columns: (1fr, auto), align: (left + bottom, right + bottom),
+    par(justify: false, text(font: TITOLI, size: 12pt, weight: 600, fill: rosso, hyphenate: false)[#nome]),
+    if gs != "" { text(font: TITOLI, size: 9pt, fill: seppia)[#gs] } else { [] })
+  let resto(tattiche) = [
+    #if tipo != "" [ #v(1pt) #text(size: 8.6pt, style: "italic", fill: seppia)[#tipo] ]
+    #set text(size: 8.8pt)
+    #set par(spacing: 0.5em, first-line-indent: 0pt, justify: false)
+    #if apertura != none { v(2pt); apertura }
+    #fascia("Difesa", difesa)
+    #fascia("Attacco", attacco)
+    #fascia("Statistiche", statistiche)
+    #fascia("Capacità speciali", capacita)
+    #if tattiche != none [
+      #fascia("Tattiche", text(size: 8.5pt)[#tattiche])
+    ]
+    #if fonte != "" [ #v(3pt) #text(size: 7.4pt, fill: seppia)[#fonte] ]
+  ]
+  let intero(tattiche, spezzabile: true) = block(
     width: 100%, fill: boxLato, inset: (x: 9pt, y: 8pt), radius: 2pt,
     stroke: (top: 1.4pt + rosso, bottom: 1.4pt + rosso),
-    breakable: true,
+    breakable: spezzabile,
   )[
-    #grid(columns: (1fr, auto), align: (left + bottom, right + bottom),
-      text(font: TITOLI, size: 12pt, weight: 600, fill: rosso)[#nome],
-      if gs != "" { text(font: TITOLI, size: 9pt, fill: seppia)[GS #gs] } else { [] })
-    #if tipo != "" [ #v(1pt) #text(size: 8.6pt, style: "italic", fill: seppia)[#tipo] ]
-    #v(3pt)
-    #line(length: 100%, stroke: 0.5pt + seppia)
-    #v(3pt)
-    #set text(size: 8.8pt)
-    #let riga(e, v) = if v != "" [ *#e* #v \ ]
-    #riga("Iniziativa", iniziativa)
-    #riga("Sensi", sensi)
-    #riga("CA", ca)
-    #riga("pf", pf)
-    #riga("TS", ts)
-    #riga("Velocità", velocita)
-    #if attributi.len() > 0 [
-      #v(2pt)
-      #grid(columns: (1fr,) * attributi.len(), column-gutter: 4pt,
-        ..attributi.map(((k, v)) => align(center)[
-          #text(font: TITOLI, size: 7pt, fill: seppia)[#upper(k)] \
-          #text(size: 9pt, weight: 600)[#v]
-        ]))
-      #v(2pt)
-    ]
-    #for a in attacchi [ *#a.at(0)* #a.at(1) \ ]
-    #for v in voci [ *#v.at(0)* #v.at(1) \ ]
-    #if tattica != "" [
-      #v(2pt)
-      #line(length: 100%, stroke: 0.4pt + seppia.lighten(40%))
-      #v(2pt)
-      #text(size: 8.4pt, style: "italic")[*Tattica.* #tattica]
-    ]
-    #if fonte != "" [ #v(2pt) #text(size: 7.4pt, fill: seppia)[#fonte] ]
+    // Segnaposti invisibili per la misura di stampa (scripts/misura_stampa.py):
+    // la pagina del primo e dell'ultimo segnaposto dice se il riquadro si spezza.
+    #metadata(to-string(nome)) <sb-inizio>
+    #testa
+    #resto(tattiche)
+    #metadata(to-string(nome)) <sb-fine>
   ]
-  if larga { place(top, float: true, scope: "parent", clearance: 10pt, corpo) } else { corpo }
+  // Il riquadro più alto di una colonna, in appendice: si spezza per forza, e
+  // allora fa come Red Hand of Doom. In fondo al pezzo «continua» e dove; in
+  // cima al pezzo dopo il nome ripetuto con «(segue)». Testata e piede sono
+  // quelli di una tabella, che Typst ripete a ogni pezzo; il contesto dice se
+  // il pezzo è il primo o l'ultimo.
+  // `accanto`: il riquadro comincia nella colonna di sinistra e finisce in
+  // quella di destra della stessa pagina, in due pezzi. Allora la colonna
+  // basta a dire quale pezzo è, senza chiedere a Typst dove sono la testa e
+  // la fine: meno giri di impaginazione.
+  let lungo(chiave, accanto: false) = {
+    let inizio() = query(<sb-app>).filter(m => m.value == chiave).first().location()
+    let fine() = query(selector(<sb-fine>).after(inizio())).first().location()
+    table(columns: 1, stroke: none, inset: (x: 9pt, y: 0pt), fill: boxLato,
+      table.header(repeat: true, table.cell(inset: (x: 9pt, top: 8pt, bottom: 2pt),
+        stroke: (top: 1.4pt + rosso))[
+        #context {
+          let primo = if accanto { here().position().x < page.width / 2 } else {
+            here().page() == inizio().page() and calc.abs(here().position().y - inizio().position().y) < 30pt and calc.abs(here().position().x - inizio().position().x) < 40pt }
+          if primo { testa } else {
+            text(font: TITOLI, size: 9.5pt, weight: 600, fill: rosso, hyphenate: false)[#nome]
+            text(size: 8pt, style: "italic", fill: seppia)[ (segue)]
+          }
+        }
+      ]),
+      table.cell(inset: (x: 9pt, y: 2pt))[
+        #metadata(to-string(nome)) <sb-inizio>
+        #resto(none)
+        #metadata(to-string(nome)) <sb-fine>
+      ],
+      table.footer(repeat: true, table.cell(inset: (x: 9pt, top: 2pt, bottom: 6pt),
+        stroke: (bottom: 1.4pt + rosso))[
+        #context {
+          let qui = here().position()
+          let ultimo = if accanto { qui.x >= page.width / 2 or fine().position().x < page.width / 2 } else {
+            // La colonna, non la x esatta: il piede è allineato a destra e
+            // la sua x cade lontano da quella del segnaposto di fine.
+            let f = fine()
+            here().page() == f.page() and (qui.x < page.width / 2) == (f.position().x < page.width / 2) }
+          // Il piede ha la stessa altezza con e senza «continua»: se cambiasse,
+          // cambierebbe anche dove si spezza il riquadro e Typst non
+          // troverebbe un'impaginazione stabile.
+          let dove = if page.columns > 1 and qui.x < page.width / 2 [nella colonna accanto] else [a pagina #(counter(page).get().first() + 1)]
+          let riga = align(right, text(size: 8pt, style: "italic", fill: seppia)[continua #dove])
+          if ultimo { hide(riga) } else { riga }
+        }
+      ]),
+    )
+  }
+  // La chiave dice se due comparse sono la stessa creatura: stesso nome e
+  // stessi numeri. La tattica non conta, perché cambia da un incontro all'altro.
+  let chiave = to-string(nome) + "|" + repr(intero(none))
+  context {
+    if modo-schede.get() != "appendice" {
+      let corpo = intero(tattiche)
+      if larga { place(top, float: true, scope: "parent", clearance: 10pt, corpo) } else { corpo }
+      return
+    }
+    [#metadata((chiave: chiave, nome: to-string(nome), intero: intero(none, spezzabile: false),
+                lungo: lungo(chiave), accanto: lungo(chiave, accanto: true))) <sb-dato>]
+    // La riga dell'incontro: quanto serve per tenere il conto al tavolo, e la
+    // pagina dove sta il resto. I campi brevi, non le fasce: CA e pf.
+    let pagina = {
+      let qui = query(<sb-app>).filter(m => m.value == chiave)
+      if qui.len() > 0 { counter(page).at(qui.first().location()).first() } else { none }
+    }
+    let pezzi = ()
+    if ca != "" and ca != [] { pezzi.push([*CA* #ca]) }
+    if pf != "" and pf != [] { pezzi.push([*pf* #pf]) }
+    // Spezzabile: sotto un float a tutta pagina Typst 0.15 sbaglia lo spazio
+    // che resta in colonna, e un blocco che non si spezza finiva sopra il piede
+    // (Abbazia, p. 26, 2026-10-29). Il nome resta attaccato alla prima riga.
+    block(width: 100%, breakable: true, above: 0.9em, below: 0.6em,
+      stroke: (left: 2pt + rosso), inset: (left: 7pt, y: 3pt))[
+      #set par(first-line-indent: 0pt, justify: false, spacing: 0.4em)
+      #text(font: TITOLI, size: 9.5pt, weight: 600, fill: rosso, hyphenate: false)[#nome]
+      #if gs != "" { h(0.4em); text(font: TITOLI, size: 8pt, fill: seppia)[#gs] }
+      #if pagina != none {
+        h(1fr); text(size: 8.4pt, style: "italic", fill: seppia)[scheda a pagina #pagina]
+      }
+      #if pezzi.len() > 0 [ \ #text(size: 8.8pt)[#pezzi.join([ · ])] ]
+      #if tattiche != none [
+        #v(2pt)
+        #text(font: TITOLI, size: 7.4pt, weight: 600, fill: rosso, tracking: 0.8pt)[TATTICHE]
+        #v(1pt)
+        #text(size: 8.6pt)[#tattiche]
+      ]
+    ]
+  }
+}
+
+// L'appendice delle creature: ogni riquadro intero una volta sola, in ordine
+// di nome, a due colonne. Un riquadro non si spezza mai a pagina girata
+// (criterio WotC del piano, I6): nella colonna di destra, se non entra, passa
+// intero alla pagina dopo; in quella di sinistra continua nella colonna
+// accanto, col «continua» in fondo e il nome ripetuto in cima. Se
+// nessuna scheda è andata in appendice, la pagina non esiste.
+#let appendice-creature(titolo: "Appendice: le creature") = context {
+  let viste = (:)
+  for m in query(<sb-dato>) {
+    if m.value.chiave not in viste { viste.insert(m.value.chiave, m.value) }
+  }
+  if viste.len() == 0 { return }
+  let elenco = viste.values().sorted(key: v => lower(v.nome))
+  capitolo-aperto(titolo, none)
+  [#metadata(none) <sb-app-inizio>]
+  // Le misure della pagina. La larghezza della colonna è quella delle tabelle
+  // (`TABELLA-COLONNA`); l'altezza è la pagina meno i margini.
+  let a5 = page.width < 16cm
+  let due = page.columns > 1
+  let larghezza = if due { TABELLA-COLONNA } else { page.width - if a5 { 2.6cm } else { 3.5cm } }
+  let colonna = page.height - if a5 { 2.9cm } else { 4.1cm }
+  let cima = if a5 { 1.5cm } else { 2.1cm }
+  let fondo-col = page.height - if a5 { 1.4cm } else { 2.0cm }
+  // Dove cade ogni riquadro si calcola qui, sommando le altezze, e non con
+  // `here()`: un riquadro che non si spezza si porta dietro anche la propria
+  // posizione nella colonna dopo, e una scelta presa sulla posizione chiede
+  // a Typst giri di impaginazione in più che non convergono. Il conto è
+  // prudente (spazio fra i riquadri largo, colonna destra della prima pagina
+  // presa alla stessa altezza della sinistra): sbaglia solo nel senso di
+  // spostare un riquadro che sarebbe entrato, come prima.
+  let inizio = query(<sb-app-inizio>)
+  let y-prima = if inizio.len() > 0 { inizio.first().location().position().y } else { cima }
+  let spazio = 12pt
+  let col = 0
+  let y = y-prima
+  let cima-destra = y-prima
+  for v in elenco {
+    let alto = measure(v.intero, width: larghezza).height
+    let resta = fondo-col - y
+    // Nella colonna di sinistra un riquadro che non entra continua nella
+    // colonna accanto, sulla stessa pagina, invece di lasciare bianca metà
+    // della colonna (ARC-07 Notte e Alba p. 100, colonna piena al 29%,
+    // rimisura del 2026-10-29). Non gira pagina: il criterio WotC regge.
+    let nella-accanto = due and col == 0 and resta > 6cm and alto > resta and alto - resta < (fondo-col - cima-destra) * 0.9
+    if nella-accanto {
+      [#metadata(v.chiave) <sb-app>]
+      block(width: 100%, below: 1em, v.accanto)
+      col = 1
+      y = cima-destra + alto - resta + 30pt + spazio
+    } else if alto < colonna * 0.92 {
+      [#metadata(v.chiave) <sb-app>]
+      block(width: 100%, breakable: false, below: 1em, v.intero)
+      if alto > resta {
+        if due and col == 0 { col = 1; y = cima-destra } else { col = 0; y = cima; cima-destra = cima }
+      }
+      y += alto + spazio
+    } else {
+      // Più alto di una colonna: comincia in cima a una pagina, così due
+      // colonne lo tengono senza girare pagina; più alto di due, comincia su
+      // una pagina pari e si legge sulle due facciate aperte.
+      pagebreak(weak: true, to: if due and alto > colonna * 1.85 { "even" } else { none })
+      [#metadata(v.chiave) <sb-app>]
+      block(width: 100%, below: 1em, v.lungo)
+      cima-destra = cima
+      if not due or alto <= colonna { col = 0; y = cima + alto + spazio }
+      else if alto <= colonna * 2 { col = 1; y = cima + alto - colonna + 30pt + spazio }
+      else { col = 0; y = cima + alto - colonna * 2 + 60pt + spazio }
+    }
+  }
 }
 
 // La pagina dei crediti, sul verso del frontespizio — dov'e' in un manuale
@@ -447,7 +672,7 @@
   )
   set text(font: SERIF, size: if a5 { 9.6pt } else { 10.2pt },
            fill: inchiostro, lang: "it")
-  set par(justify: true, leading: 0.62em, first-line-indent: 1.1em)
+  set par(justify: true, leading: eval(VARIANTE.interlinea), first-line-indent: 1.1em)
 
   // Il § nei TITOLI diventa un numero dentro un medaglione — la stessa cornice
   // circolare dei fregi di capitolo, così il libro ha un segno solo invece di

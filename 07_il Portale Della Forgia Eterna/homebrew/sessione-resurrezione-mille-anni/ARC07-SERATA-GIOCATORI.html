@@ -110,6 +110,30 @@
   .readaloud{ font-style:italic; }
   .vague{ font-style:italic; font-size:.86rem; opacity:.9; }
 
+  /* Il riquadro delle statistiche: la stessa forma del PDF (ADR-0105). */
+  .statblocco{ background:var(--note-bg); border-top:3px solid var(--rubric);
+      border-bottom:3px solid var(--rubric); padding:.6rem .9rem .7rem; margin:.9rem 0;
+      break-inside:avoid; font-size:.92rem; }
+  .statblocco .sb-testa{ display:flex; justify-content:space-between; align-items:baseline; gap:1rem;}
+  .statblocco .sb-nome{ font-family:'Cinzel',Georgia,serif; font-variant:small-caps; color:var(--rubric);
+      font-size:1.15rem; font-weight:600;}
+  .statblocco .sb-gs{ font-family:'Cinzel',Georgia,serif; color:var(--brass); white-space:nowrap;}
+  .statblocco .sb-tipo{ font-style:italic; color:#6b4f2a; margin:.05rem 0 .3rem;}
+  .statblocco .sb-fascia{ font-family:'Cinzel',Georgia,serif; font-size:.72rem; letter-spacing:.12em;
+      text-transform:uppercase; color:var(--rubric); border-bottom:1px solid var(--rubric);
+      margin:.5rem 0 .2rem; font-weight:600;}
+  .statblocco p{ margin:.15rem 0; text-align:left;}
+  .statblocco ul{ margin:.15rem 0 .2rem 1.1rem;}
+  .statblocco .sb-car{ display:grid; grid-template-columns:repeat(6,1fr); text-align:center; margin:.2rem 0;}
+  .statblocco .sb-car span{ display:block; font-size:.7rem; color:#6b4f2a; font-variant:small-caps;}
+  .sb-riga{ border-left:3px solid var(--rubric); padding:.2rem .7rem; margin:.8rem 0;}
+  .sb-riga .sb-testa{ display:flex; gap:.6rem; align-items:baseline;}
+  .sb-riga .sb-nome{ font-family:'Cinzel',Georgia,serif; font-variant:small-caps; color:var(--rubric); font-weight:600;}
+  .sb-riga .sb-gs{ font-family:'Cinzel',Georgia,serif; color:var(--brass);}
+  .sb-riga .sb-rimando{ margin-left:auto; font-style:italic; color:#6b4f2a; font-size:.85rem;}
+  .sb-riga .sb-fascia{ font-family:'Cinzel',Georgia,serif; font-size:.72rem; letter-spacing:.12em; color:var(--rubric);}
+  .sb-riga p{ margin:.15rem 0; text-align:left;}
+  .statblocco .sb-fonte{ font-size:.75rem; color:#6b4f2a; margin-top:.3rem;}
   pre.mono{ background:rgba(201,173,106,.18); border:1px solid var(--brass); padding:.6rem .8rem;
       overflow-x:auto; font-size:.8rem; line-height:1.35; font-family:ui-monospace,Consolas,monospace;}
   .figure{ margin:.8rem auto; text-align:center; }
@@ -297,14 +321,15 @@
 <hr class="rule">
 <h2 class="sec">Da aggiungere alla scheda</h2>
 <h3 class="sub">Quello che hai portato dal viaggio</h3>
-<div class="tablewrap"><table><thead><tr><th>Cosa</th><th>Effetto</th></tr></thead><tbody><tr><td><strong>Resistenza al freddo 15</strong></td><td></td></tr><tr><td><strong>Rigenerazione 1</strong></td><td>1 pf per round finché tocchi terra o pietra naturale. Non nel round dopo aver preso danno da fuoco</td></tr><tr><td><strong>Radicamento</strong></td><td>1 volta al giorno, 5 round: niente e nessuno ti spinge, ti travolge o ti sbilancia. Non ti muovi</td></tr><tr><td><strong>Il Marchio della Veritade</strong></td><td>+4 a Diplomazia con i nani di Moradin. 1 volta al giorno, una verità detta in faccia: Volontà <strong>CD 17</strong> o chi l'ascolta è scosso</td></tr><tr><td><strong>La Radice Silenziosa</strong></td><td>+2 a Percepire Intenzioni. 1 volta al giorno, empatia immediata con chi hai davanti</td></tr><tr><td><strong>Le Radici del Mondo</strong></td><td>la rigenerazione vale anche su suolo sacro o druidico. 1 volta al giorno, <strong>Radicamento corale</strong>: per 5 round gli alleati entro 9 m hanno +1 morale ai tiri salvezza, e tu resti ferma</td></tr><tr><td><strong>Empatia vegetale +4</strong></td><td></td></tr><tr><td><strong>Fotosintesi</strong></td><td>1 volta al giorno, un'ora di sole pieno: recuperi <strong>2d8 pf</strong></td></tr><tr><td><strong>Il Sogno della Terra</strong></td><td>1 volta al giorno, fai una domanda alla terra: <em>divinazione</em>, livello dell'incantatore 12</td></tr><tr><td><strong>Scurovisione 27 m</strong></td><td></td></tr></tbody></table></div>
+<div class="tablewrap"><table><thead><tr><th>Cosa</th><th>Effetto</th></tr></thead><tbody><tr><td><strong>Resistenza al freddo 15</strong></td><td></td></tr><tr><td><strong>Guarigione rapida 1</strong></td><td>1 pf per round finché tocchi terra o pietra naturale. Non nel round dopo aver preso danno da fuoco. ⚠ Non SRD: la guarigione rapida dell'SRD non dipende dal terreno</td></tr><tr><td><strong>Radicamento</strong></td><td>1 volta al giorno, 5 round: niente e nessuno ti spinge, ti travolge o ti sbilancia. Non ti muovi</td></tr><tr><td><strong>Il Marchio della Veritade</strong></td><td>+4 a Diplomazia con i nani di Moradin. 1 volta al giorno, una verità detta in faccia: Volontà <strong>CD 17</strong> o chi l'ascolta è scosso</td></tr><tr><td><strong>La Radice Silenziosa</strong></td><td>+2 a Percepire Intenzioni. 1 volta al giorno, empatia immediata con chi hai davanti</td></tr><tr><td><strong>Le Radici del Mondo</strong></td><td>la guarigione rapida vale anche su suolo sacro o druidico. 1 volta al giorno, <strong>Radicamento corale</strong>: per 5 round gli alleati entro 9 m hanno +1 morale ai tiri salvezza, e tu resti ferma</td></tr><tr><td><strong>Empatia vegetale +4</strong></td><td></td></tr><tr><td><strong>Fotosintesi</strong></td><td>1 volta al giorno, un'ora di sole pieno: recuperi <strong>2d8 pf</strong></td></tr><tr><td><strong>Il Sogno della Terra</strong></td><td>1 volta al giorno, fai una domanda alla terra: <em>divinazione</em>, livello dell'incantatore 12</td></tr><tr><td><strong>Scurovisione 27 m</strong></td><td></td></tr></tbody></table></div>
 <h3 class="sub">Il prezzo</h3>
 <p><strong>Vulnerabilità al fuoco</strong>: il fuoco ti fa <strong>+50%</strong>. È quello che hai pagato per la Via della Radice.</p>
 <h3 class="sub">La Collana dei Semi Eterni</h3>
 <p>Un torc di legno e metallo, alla temperatura di chi lo porta. Tre semi: due verdi venati d'adamantio, il terzo grigio-verde e ruvido. Toccandolo senti il peso di una testa appoggiata sul petto.</p>
 <p><strong>Funziona sempre</strong>, anche in forma selvatica: ha le radici sotto la pelle, e non si fonde nel corpo nuovo.</p>
-<div class="tablewrap"><table><thead><tr><th>Potere</th><th>Effetto</th></tr></thead><tbody><tr><td><strong>Saggezza della Terra</strong></td><td>+4 di potenziamento alla Saggezza. ⚠️ <strong>Non si somma</strong> al Periapto di Saggezza: vale il bonus più alto</td></tr><tr><td><strong>Corteccia del Guardiano</strong></td><td>+3 di armatura naturale alla CA</td></tr><tr><td><strong>Avatar della Radice</strong></td><td>1 volta al giorno, azione standard: diventi un <strong>Ibrido Treant Enorme</strong> per 10 round. +8 FOR, portata estesa, schianti. Torna all'alba</td></tr><tr><td><strong>Evocazione dei Guardiani</strong></td><td>3 volte al giorno, azione standard, un seme per volta. Semi I e II: un <strong>Treant di Adamantio</strong>, per <strong>1 ora</strong>. Seme III: <strong>Durik</strong>, se è stato distrutto: torna subito, per un'ora, e all'alba è di nuovo intero. I semi usati tornano all'alba</td></tr></tbody></table></div>
-<p><strong>Treant di Adamantio</strong> <em>(evocato)</em> · Grande · 90 pf · RD 10/adamantio · CA 24 · velocità 9 m · 2 schianti <strong>+18</strong> (2d8+9) · danni doppi a oggetti e strutture, ignora la durezza sotto 20 · i suoi colpi contano come adamantio.</p>
+<div class="tablewrap"><table><thead><tr><th>Potere</th><th>Effetto</th></tr></thead><tbody><tr><td><strong>Saggezza della Terra</strong></td><td>+4 di potenziamento alla Saggezza. ⚠️ <strong>Non si somma</strong> al Periapto di Saggezza: vale il bonus più alto</td></tr><tr><td><strong>Corteccia del Guardiano</strong></td><td>+3 di armatura naturale alla CA</td></tr><tr><td><strong>Avatar della Radice</strong></td><td>1 volta al giorno, azione standard: diventi un <strong>Ibrido Treant Enorme</strong> per 10 round. +8 FOR, portata estesa, schianti: CA 21, 2 schianti +13 (2d6+5), portata 4,5 m, travolgere 2d6+7 (Riflessi CD 21); l'equipaggiamento si fonde, la Collana no. ⚠ Non SRD: la taglia sale di due categorie col solo +8 FOR. Torna all'alba</td></tr><tr><td><strong>Evocazione dei Guardiani</strong></td><td>3 volte al giorno, azione standard, un seme per volta. Semi I e II: un <strong>Treant di Adamantio</strong>, per <strong>1 ora</strong>. Seme III: <strong>Durik</strong>, se è stato distrutto: torna subito, per un'ora, e all'alba è di nuovo intero. I semi usati tornano all'alba</td></tr></tbody></table></div>
+<div class="statblocco"><div class="sb-testa"><span class="sb-nome">Treant di Adamantio (evocato)</span></div><div class="sb-tipo">Vegetale Grande</div><div class="sb-fascia">Difesa</div><p><strong>CA 24</strong> · <strong>pf 90</strong> · TS Tempra +12, Riflessi +3, Volontà +8 · <strong>RD 10/adamantio</strong></p><div class="sb-fascia">Attacco</div><p>Vel 9 m · <strong>Mischia</strong> 2 schianti <strong>+18</strong> (2d8+9) · portata 3 m</p><div class="sb-fascia">Capacità speciali</div><ul><li><strong>Travolgere</strong> 2d8+13 (Riflessi CD 24).</li><li><strong>Colpi d'adamantio</strong>: danni doppi a oggetti e strutture, ignora la durezza sotto 20; i suoi colpi contano come adamantio.</li></ul></div>
+<p>⚠ Non SRD: FOR, armatura naturale e schianti da 2d8 restano quelli di un Treant Enorme anche da Grande.</p>
 <p><strong>Due Treant insieme costano caro.</strong> Al massimo due, uno per seme. Se li chiami tutti e due nello stesso momento, per <strong>un mese</strong> la Collana non evoca più: niente Treant, e se Durik cade non torna subito, ma all'alba. Il resto della Collana non si spegne.</p>
 <h3 class="sub">I doni dei tuoi compagni</h3>
 <div class="tablewrap"><table><thead><tr><th></th><th>Seme</th><th>Da chi</th><th>Cosa ti dà</th></tr></thead><tbody><tr><td>☐</td><td>I</td><td>Thorik, la sua deflessione</td><td><strong>Scudo del Custode</strong>: 1 volta al giorno, azione immediata, prendi su di te il danno destinato a un alleato entro 9 m, <strong>dimezzato</strong>. E Thorik scatta verso chi hai protetto, accelerato per tre round</td></tr><tr><td>☐</td><td>II</td><td>Tordek, il suo Ancoraggio</td><td><strong>Pelle di Adamantio</strong>: <strong>RD 3/adamantino</strong>. La tua unica</td></tr><tr><td>☐</td><td>III</td><td>Artemis, un dado del suo colpo</td><td><strong>Rovo Eldritch</strong>: a volontà, azione standard, contatto a distanza 18 m, <strong>2d6</strong>, metà rovi e metà fuoco. È magico: la resistenza agli incantesimi vale</td></tr></tbody></table></div>
@@ -344,7 +369,7 @@
 <p><strong>Se non gli dai ordini, ti protegge.</strong> Si mette fra te e il pericolo che percepisce. Chi vuole arrivarti addosso deve passare da lui o girargli intorno.</p>
 <p><strong>Il click vuol dire: sotto.</strong> Quando Durik fa il click, qualcosa si muove a terra entro 18 m. Chiedi al DM dove.</p>
 <p><strong>Non è fatto per combattere da solo.</strong> È uno scudo che morde. Rende bene a fianco di Thorik o di Tordek, per prendere un nemico ai fianchi, o quando afferra e tiene fermo qualcuno mentre gli altri lavorano. Mandato da solo contro un nemico grosso, non regge.</p>
-<p><strong>Se viene distrutto</strong> torna polvere, e la polvere torna nel terzo seme della Collana. Con una carica dell'<strong>Evocazione dei Guardiani</strong> lo richiami subito, per un'ora. All'alba è di nuovo intero, e resta. Se l'Evocazione è spenta, perché hai chiamato i due Treant insieme, non puoi richiamarlo subito: torna all'alba.</p>
+<p><strong>Se viene distrutto</strong> torna polvere, e la polvere torna nel terzo seme della Collana. Con una carica dell'<strong>Evocazione dei Guardiani</strong> lo richiami subito, per un'ora. All'alba è di nuovo intero, e resta. Se l'Evocazione è spenta, perché hai chiamato i due Treant insieme, non puoi richiamarlo subito: torna all'alba. I due Treant chiamati insieme all'alba della battaglia sono l'eccezione: l'Evocazione non si spegne, e la carica che resta richiama Durik.</p>
 <hr class="rule">
 <h2 class="sec">Come cresce</h2>
 <p>Durik non cresce con i tuoi livelli. Cresce con le <strong>Prove di Risonanza</strong>: momenti in cui il legame fra voi si mette alla prova. Il DM te lo dice quando succede, di solito dopo.</p>
@@ -409,6 +434,11 @@
   // dall'export PDF headless — ADR-0013 §5)
   if(location.hash && document.getElementById(location.hash.slice(1)))
     show(location.hash.slice(1));
+  // La riga dell'incontro porta alla scheda in appendice, che sta in un'altra scheda.
+  document.querySelectorAll('a.sb-rimando').forEach(a=>a.addEventListener('click',e=>{
+    const t=document.getElementById(a.getAttribute('href').slice(1)); if(!t) return;
+    e.preventDefault(); show(t.closest('section.pane').id); t.scrollIntoView();
+  }));
 </script>
 </body>
 </html>

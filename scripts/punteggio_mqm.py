@@ -80,7 +80,6 @@ def _difetti_box(testo: str, _percorso: Path) -> "dict[str, int]":
     return {
         "box_oltre_12_righe": d["oltre 12 righe"],
         "box_con_parentesi": d["con parentesi"],
-        "box_piu_di_un_nome_proprio": d[">1 nome proprio"],
     }
 
 
@@ -103,7 +102,8 @@ def _prosa(_testo: str, percorso: Path) -> "dict[str, int]":
     la terminologia non canonica e' `maggiore`, ed e' la prima norma pesata che
     non sia una prassi da un punto.
     """
-    conta: "dict[str, int]" = {k: 0 for k in vp.NORME if k != "caratteristica_minuscola"}
+    conta: "dict[str, int]" = {k: 0 for k in vp.NORME
+                               if k not in ("caratteristica_minuscola", "possessivo_parte_del_corpo")}
     for chiave, _ in vp.rilievi(percorso):
         if chiave in conta:
             conta[chiave] += 1
@@ -142,14 +142,13 @@ def _sembra(testo: str, _percorso: Path) -> "dict[str, int]":
 
     Entra nel punteggio col lotto che ha corretto i box (2026-10-03), come il
     registro delle norme aveva scritto. Il «sembra» smentito entro la frase dopo
-    non conta: `voto_scrittura.sembra_esitanti` lo salta.
+    non conta: `validate_prosa.sembra_esitanti` lo salta.
     """
-    import voto_scrittura as vs  # noqa: PLC0415
     return {"box_sembra_pare": sum(1 for b in mc.box_read_aloud(testo)
-                                   if vs.sembra_esitanti(mc.corpo_del_box(b)))}
+                                   if vp.sembra_esitanti(mc.corpo_del_box(b)))}
 
 
-RILEVATORI = (_difetti_box, _caratteristiche, _prosa, _p1, _metrature, _sembra)
+RILEVATORI = (_difetti_box, _caratteristiche, _prosa, _metrature, _sembra)
 
 
 def carica_specifiche() -> dict:
@@ -254,16 +253,15 @@ def stampa_norme(spec: dict) -> None:
         # Dal 2026-09-21 ogni norma scoperta porta il suo stato di superficie,
         # cosi' la riga smette di essere una scusa e diventa un elenco di lavoro
         # con il suo prerequisito accanto (ADR-0062).
-        import superficie_norme as sn  # noqa: PLC0415
         conta: "dict[str, int]" = {}
-        for r in sn.misura():
+        for r in vne.misura():
             conta[r["stato"]] = conta.get(r["stato"], 0) + 1
         print("\n   Delle scoperte, cosa manca davvero — "
-              "`python3 scripts/superficie_norme.py` per il dettaglio:")
+              "`python3 scripts/validate_norme_editoriali.py --superficie` per il dettaglio:")
         for stato, n in sorted(conta.items()):
-            print(f"     {sn.ETICHETTA[stato]:26} {n}")
-        print("   🔎 Per otto su nove **non manca il codice**: manca il dato, la")
-        print("      convenzione di marcatura, o il fatto non sta nel testo.")
+            print(f"     {vne.ETICHETTA[stato]:26} {n}")
+        print("   🔎 Quasi mai **manca il codice**: manca il dato, la convenzione")
+        print("      di marcatura, o il fatto non sta nel testo.")
         pesi = [spec["severita"][n["severita"]]["peso"] for n in spec["norme"].values()]
         print(f"   🔎 E pesano poco: {sum(1 for p in pesi if p == 1)} minori su "
               f"{len(pesi)}. Il punteggio di oggi misura il bordo, non il centro "

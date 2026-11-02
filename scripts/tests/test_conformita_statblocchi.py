@@ -259,7 +259,14 @@ class TestIlGiroCircolare(unittest.TestCase):
     """
 
     def test_la_tempra_viene_prima_della_media(self):
-        s = LC.leggi(ROOT / "Bestiario/png/Khorn/khorn-ufficiale-hammerfist-cr8.md")
+        # i numeri di Khorn com'erano quando il difetto e' stato trovato, con le
+        # caratteristiche generate: dal 2026-10-16 la scheda vera le ha scritte a
+        # mano, e la ricostruzione legge la Cos invece della Tempra.
+        s = scheda("gs: 8\ntipo: Medium humanoid (dwarf), Fighter 8, LG\npf: 76\n"
+                   "pf-dado: 1d8+6\nts: Temp +9, Rifl +3, Vol +4\n"
+                   "attributi: For 16 Des 4 Cos 16 Int 9 Sag 11 Car 15\n"
+                   "attacchi:\n  - Mischia martello da guerra +1 +14/+9 (1d8+6/x3)")
+        s.provenienza = "generate"
         c = C.pf_dado_corretto(s, forza=True)
         self.assertEqual(c["nuovo"], "8d10+24")
         self.assertIn("dalla Tempra +9", c["bonus"])
@@ -286,3 +293,43 @@ class TestIlGiroCircolare(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestStatblocchiNeiMaster(unittest.TestCase):
+    """D7 di MASTER-DEF: i conti degli statblocchi scritti nei master."""
+
+    FAUCI = (
+        "#### FAUCI DI PALUDE\n"
+        "**Caratteristiche:** For 31, Des 10, Cos 25, Int 16, Sag 17, Car 16\n"
+        "**Iniziativa:** +4;\n"
+        "**CA:** 29 (-2 taglia, +21 naturale), contatto 8\n"
+        "**PF:** {pf} (25d12+175)\n"
+        "**Attacco Base:** +25;\n"
+        "**Lotta:** +43\n"
+        "**Talenti:** Allerta, Iniziativa Migliorata\n"
+    )
+
+    def conti(self, testo):
+        return [x for b in C._blocchi_del_master(testo) for x in C.conti_del_master(b)]
+
+    def test_la_scheda_giusta_torna(self):
+        self.assertEqual(self.conti(self.FAUCI.format(pf=337)), [])
+
+    def test_i_pf_vecchi_di_fauci_non_tornano(self):
+        # il 312 della Guida DM prima della #241: 25d12 fanno 162 di media
+        (x,) = self.conti(self.FAUCI.format(pf=312))
+        self.assertEqual((x["campo"], x["scritto"], x["atteso"]), ("PF", 312, 337))
+
+    def test_il_potenziamento_dell_armatura_non_e_una_voce(self):
+        testo = ("#### TEMPESTAS\n**Caratteristiche:** For 10, Des 16\n"
+                 "**CA:** 20 (+6 giaco di maglia +2, +3 Des, +1 deflessione), contatto 14\n"
+                 "**PF:** 91 (14d6+42)\n")
+        self.assertEqual(self.conti(testo), [])
+
+    def test_la_lotta_conta_la_taglia(self):
+        testo = self.FAUCI.format(pf=337).replace("+43", "+35")
+        (x,) = self.conti(testo)
+        self.assertEqual((x["campo"], x["atteso"]), ("Lotta", 43))
+
+    def test_e_un_rapporto_non_un_cancello(self):
+        self.assertEqual(C.main(["--master", str(ROOT / "08_La Battaglia Di Hammerfist" / "ARC08-01-GUIDA-DM.md")]), 0)

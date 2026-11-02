@@ -1,0 +1,656 @@
+{
+  "fronti": [
+    {
+      "arco": "ARC-07",
+      "violazioni": [
+        {
+          "regola": "F1",
+          "dove": "debito-della-radice",
+          "messaggio": "1 pericoli: Dungeon World ne vuole 2-3"
+        },
+        {
+          "regola": "O1",
+          "dove": "countdown-a7",
+          "messaggio": "segmenti = None (ore residue alla breccia (3g 20h all'arrivo), non segmenti): Blades in the Dark ne vuole 4, 6 o 8"
+        },
+        {
+          "regola": "O2",
+          "dove": "countdown-a7",
+          "messaggio": "riempiti = None su None: deve stare fra 0 e il totale"
+        }
+      ],
+      "misure": {
+        "fronti": 4,
+        "orologi": 4,
+        "orologi_conformi": 3,
+        "presagi": 12,
+        "presagi_nei_master": 12,
+        "campi_espliciti": 27,
+        "campi_dedotti": 3,
+        "dedotti": [
+          "assedio-hammerfist-1372.domande[0]",
+          "orda-zogtar-372.domande[0]",
+          "collezionista-e-varis.domande[0]"
+        ]
+      },
+      "presagi": [
+        {
+          "fronte": "assedio-hammerfist-1372",
+          "presagio": "sull'affresco A7 le torri d'assedio sono in costruzione",
+          "chiavi": [
+            "torri d'assedio ancora in costruzione"
+          ],
+          "trovato": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md:228"
+        },
+        {
+          "fronte": "assedio-hammerfist-1372",
+          "presagio": "prima ondata, i primi corpi coperti sui camminamenti",
+          "chiavi": [
+            "prima ondata"
+          ],
+          "trovato": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md:230"
+        },
+        {
+          "fronte": "assedio-hammerfist-1372",
+          "presagio": "un ariete alle porte e una crepa che non si richiude",
+          "chiavi": [
+            "crepa sottile che non si richiude"
+          ],
+          "trovato": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md:231"
+        },
+        {
+          "fronte": "orda-zogtar-372",
+          "presagio": "il corno di Grask, gemello della runa sulla scaglia",
+          "chiavi": [
+            "corno di Grask"
+          ],
+          "trovato": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:2255"
+        },
+        {
+          "fronte": "orda-zogtar-372",
+          "presagio": "la runa-vincolo, la Catena del drago",
+          "chiavi": [
+            "runa-vincolo"
+          ],
+          "trovato": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:2076"
+        },
+        {
+          "fronte": "orda-zogtar-372",
+          "presagio": "il mare di tende che si sveglia",
+          "chiavi": [
+            "mare di tende"
+          ],
+          "trovato": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:58"
+        },
+        {
+          "fronte": "debito-della-radice",
+          "presagio": "lo spirito della druida morta ha sfiorato il giardino",
+          "chiavi": [
+            "ha sfiorato il giardino"
+          ],
+          "trovato": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md:910"
+        },
+        {
+          "fronte": "debito-della-radice",
+          "presagio": "la Custode compare al Sud del cerchio",
+          "chiavi": [
+            "Custode delle Radici"
+          ],
+          "trovato": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md:98"
+        },
+        {
+          "fronte": "collezionista-e-varis",
+          "presagio": "il Seme-Mercato nel Tempio",
+          "chiavi": [
+            "Seme-Mercato"
+          ],
+          "trovato": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md:52"
+        },
+        {
+          "fronte": "collezionista-e-varis",
+          "presagio": "il Marchio di Credito planare",
+          "chiavi": [
+            "Marchio di Credito"
+          ],
+          "trovato": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md:180"
+        },
+        {
+          "fronte": "collezionista-e-varis",
+          "presagio": "il Sigillo di Ossidiana che divora anime",
+          "chiavi": [
+            "Sigillo di Ossidiana"
+          ],
+          "trovato": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:67"
+        },
+        {
+          "fronte": "collezionista-e-varis",
+          "presagio": "la cera nera sulle dita dell'incappucciato",
+          "chiavi": [
+            "cera nera"
+          ],
+          "trovato": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:125"
+        }
+      ],
+      "orologi": [
+        {
+          "id": "countdown-a7",
+          "nome": "Countdown di Hammerfist (affresco A7)",
+          "segmenti": null,
+          "riempiti": null,
+          "conforme": false
+        },
+        {
+          "id": "notte-372",
+          "nome": "L'orologio della notte",
+          "segmenti": 8,
+          "riempiti": 3,
+          "conforme": true
+        },
+        {
+          "id": "collezionista",
+          "nome": "Clock del Collezionista (state.yaml §3)",
+          "segmenti": 8,
+          "riempiti": 5,
+          "conforme": true
+        },
+        {
+          "id": "sal",
+          "nome": "Clock di Sal (state.yaml §3)",
+          "segmenti": 6,
+          "riempiti": 0,
+          "conforme": true
+        }
+      ]
+    },
+    {
+      "arco": "ARC-08",
+      "violazioni": [
+        {
+          "regola": "F1",
+          "dove": "avanguardia-fauci",
+          "messaggio": "4 pericoli: Dungeon World ne vuole 2-3"
+        },
+        {
+          "regola": "O1",
+          "dove": "giorni-assedio",
+          "messaggio": "segmenti = 3 (giorni di battaglia): Blades in the Dark ne vuole 4, 6 o 8"
+        },
+        {
+          "regola": "O1",
+          "dove": "march-clock",
+          "messaggio": "segmenti = 42 (giorni): Blades in the Dark ne vuole 4, 6 o 8"
+        },
+        {
+          "regola": "O1",
+          "dove": "ritual-clock",
+          "messaggio": "segmenti = 18: Blades in the Dark ne vuole 4, 6 o 8"
+        }
+      ],
+      "misure": {
+        "fronti": 2,
+        "orologi": 3,
+        "orologi_conformi": 0,
+        "presagi": 6,
+        "presagi_nei_master": 6,
+        "campi_espliciti": 16,
+        "campi_dedotti": 3,
+        "dedotti": [
+          "avanguardia-fauci.domande[0]",
+          "avanguardia-fauci.domande[1]",
+          "marcia-mano-rossa.domande[0]"
+        ]
+      },
+      "presagi": [
+        {
+          "fronte": "avanguardia-fauci",
+          "presagio": "la notte prima, gli animali selvatici fuggono dalle montagne",
+          "chiavi": [
+            "animali selvatici fuggono"
+          ],
+          "trovato": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:1384"
+        },
+        {
+          "fronte": "avanguardia-fauci",
+          "presagio": "il drago si alza in volo per la prima volta e sorvola le difese",
+          "chiavi": [
+            "si alza in volo per la prima volta"
+          ],
+          "trovato": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:1393"
+        },
+        {
+          "fronte": "avanguardia-fauci",
+          "presagio": "un'ombra che passa e nessuno sa dire cos'era",
+          "chiavi": [
+            "un'ombra che passa"
+          ],
+          "trovato": "08_La Battaglia Di Hammerfist/ARC08-04-MARCIA-MANO-ROSSA.md:104"
+        },
+        {
+          "fronte": "marcia-mano-rossa",
+          "presagio": "Terrelton cade lo stesso giorno della vittoria",
+          "chiavi": [
+            "caduta di Terrelton"
+          ],
+          "trovato": "08_La Battaglia Di Hammerfist/ARC08-04-MARCIA-MANO-ROSSA.md:114"
+        },
+        {
+          "fronte": "marcia-mano-rossa",
+          "presagio": "il Fane di Tiamat da cui parte l'orda",
+          "chiavi": [
+            "Fane di Tiamat"
+          ],
+          "trovato": "08_La Battaglia Di Hammerfist/ARC08-04-MARCIA-MANO-ROSSA.md:17"
+        },
+        {
+          "fronte": "marcia-mano-rossa",
+          "presagio": "l'orda prende Terrelton e scende verso Rethmar",
+          "chiavi": [
+            "scende verso Rethmar"
+          ],
+          "trovato": "08_La Battaglia Di Hammerfist/ARC08-10-ESITI-E-CONTINGENZE.md:195"
+        }
+      ],
+      "orologi": [
+        {
+          "id": "giorni-assedio",
+          "nome": "I giorni dell'assedio",
+          "segmenti": 3,
+          "riempiti": 0,
+          "conforme": false
+        },
+        {
+          "id": "march-clock",
+          "nome": "March Clock",
+          "segmenti": 42,
+          "riempiti": 19,
+          "conforme": false
+        },
+        {
+          "id": "ritual-clock",
+          "nome": "Ritual Clock di Azarr Kul (state.yaml §3)",
+          "segmenti": 18,
+          "riempiti": 9,
+          "conforme": false
+        }
+      ]
+    }
+  ],
+  "orologi_state": [
+    {
+      "villain": "Sonjak (Drow Cleric Matrona) — also \"Matrona Sajak\" in Sal's operative",
+      "png_id": "sonjak",
+      "clock": "4/8",
+      "riga": "campaign/state.yaml:304",
+      "quando_si_riempie": true,
+      "segmenti": 8,
+      "riempiti": 4,
+      "conforme": true,
+      "motivo": null
+    },
+    {
+      "villain": "Salvatore \"Sal\" della Luna d'Argento",
+      "png_id": "salvatore",
+      "clock": "0/6",
+      "riga": "campaign/state.yaml:311",
+      "quando_si_riempie": true,
+      "segmenti": 6,
+      "riempiti": 0,
+      "conforme": true,
+      "motivo": null
+    },
+    {
+      "villain": "Il Collezionista (Rakshasa)",
+      "png_id": "il-collezionista",
+      "clock": "5/8",
+      "riga": "campaign/state.yaml:318",
+      "quando_si_riempie": true,
+      "segmenti": 8,
+      "riempiti": 5,
+      "conforme": true,
+      "motivo": null
+    },
+    {
+      "villain": "Zalkatar (Illithid Warlock)",
+      "png_id": "zalkatar",
+      "clock": "6/8",
+      "riga": "campaign/state.yaml:325",
+      "quando_si_riempie": true,
+      "segmenti": 8,
+      "riempiti": 6,
+      "conforme": true,
+      "motivo": null
+    },
+    {
+      "villain": "Wyrmlord Saarvith + Regiarix",
+      "png_id": "saarvith-regiarix",
+      "clock": "3/8",
+      "riga": "campaign/state.yaml:332",
+      "quando_si_riempie": true,
+      "segmenti": 8,
+      "riempiti": 3,
+      "conforme": true,
+      "motivo": null
+    },
+    {
+      "villain": "Xal'thor (Illithid Coordinator, psionic)",
+      "png_id": "xal-thor",
+      "clock": "Fixed: triggers Day 3 of Tournament regardless",
+      "riga": "campaign/state.yaml:339",
+      "quando_si_riempie": true,
+      "segmenti": null,
+      "riempiti": null,
+      "conforme": false,
+      "motivo": "non è un orologio a segmenti"
+    },
+    {
+      "villain": "Sethrax il Velato (Illithid emissary, Zalkatar's conclave)",
+      "png_id": "sethrax",
+      "clock": "Sync to Tournament (Day 1 = arrival; Day 2 = entered as finalist; Day 3 Round 7 = forced unmasking by Xal'thor's portal)",
+      "riga": "campaign/state.yaml:346",
+      "quando_si_riempie": true,
+      "segmenti": null,
+      "riempiti": null,
+      "conforme": false,
+      "motivo": "non è un orologio a segmenti"
+    },
+    {
+      "villain": "Azarr Kul (High Wyrmlord) — Ritual Clock, see §2.0 (NOT the March Cloc",
+      "png_id": "azarr-kul",
+      "clock": "9/18",
+      "riga": "campaign/state.yaml:353",
+      "quando_si_riempie": true,
+      "segmenti": 18,
+      "riempiti": 9,
+      "conforme": false,
+      "motivo": "18 segmenti (O1)"
+    },
+    {
+      "villain": "Conte Valerius (manipulator)",
+      "png_id": "conte-valerius",
+      "clock": "2/8",
+      "riga": "campaign/state.yaml:360",
+      "quando_si_riempie": true,
+      "segmenti": 8,
+      "riempiti": 2,
+      "conforme": true,
+      "motivo": null
+    },
+    {
+      "villain": "Mira Serani «l'Aranea» (aranea mutaforma, Red Hand intel) — canonizzat",
+      "png_id": "mira-serani",
+      "clock": "Trigger, non clock numerico",
+      "riga": "campaign/state.yaml:367",
+      "quando_si_riempie": true,
+      "segmenti": null,
+      "riempiti": null,
+      "conforme": false,
+      "motivo": "non è un orologio a segmenti"
+    },
+    {
+      "villain": "Ghaurush «Cenerevento» (Ogre magi/Stregone 8, GS 16; GS 18 al secondo ",
+      "png_id": "ghaurush",
+      "clock": "0/6",
+      "riga": "campaign/state.yaml:311",
+      "quando_si_riempie": true,
+      "segmenti": 6,
+      "riempiti": 0,
+      "conforme": true,
+      "motivo": null
+    },
+    {
+      "villain": "Zin'thara Vel'Ryn «la Voce di Ragnatela» (Illusionista 9/Danzatrice de",
+      "png_id": "zin-thara",
+      "clock": "2/8",
+      "riga": "campaign/state.yaml:360",
+      "quando_si_riempie": true,
+      "segmenti": 8,
+      "riempiti": 2,
+      "conforme": true,
+      "motivo": null
+    },
+    {
+      "villain": "Ushgar «Occhio Reso» (Orco montano/Barbaro 13, GS 13) — approvato 2026",
+      "png_id": "ushgar",
+      "clock": "0/4",
+      "riga": "campaign/state.yaml:388",
+      "quando_si_riempie": true,
+      "segmenti": 4,
+      "riempiti": 0,
+      "conforme": true,
+      "motivo": null
+    }
+  ],
+  "fatti": {
+    "file_letti": [
+      "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+      "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+      "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-3-RESURREZIONE-HELLA.md",
+      "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+      "07_il Portale Della Forgia Eterna/ARC07-00-INDICE.md",
+      "07_il Portale Della Forgia Eterna/ARC07-ATLANTE-ASSET.md",
+      "07_il Portale Della Forgia Eterna/ARC07-CASSETTA-DEL-DM.md",
+      "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+      "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+      "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+      "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+      "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+      "07_il Portale Della Forgia Eterna/ARC07-HANDOUTS.md",
+      "07_il Portale Della Forgia Eterna/ARC07-TESORO-WBL-AUDIT.md",
+      "07_il Portale Della Forgia Eterna/PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md",
+      "08_La Battaglia Di Hammerfist/ARC08-00-INDICE.md",
+      "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+      "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+      "08_La Battaglia Di Hammerfist/ARC08-03-REGISTRO-PERDITE.md",
+      "08_La Battaglia Di Hammerfist/ARC08-04-MARCIA-MANO-ROSSA.md",
+      "08_La Battaglia Di Hammerfist/ARC08-10-ESITI-E-CONTINGENZE.md",
+      "08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md",
+      "08_La Battaglia Di Hammerfist/ARC08-12-CRONOLOGIA-MARCH-CLOCK.md",
+      "08_La Battaglia Di Hammerfist/ARC08-13-TESORO-WBL-AUDIT.md",
+      "08_La Battaglia Di Hammerfist/ARC08-14-ATLANTE-IMMAGINI.md",
+      "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md",
+      "08_La Battaglia Di Hammerfist/ARC08-16-CUE-SONORI.md",
+      "08_La Battaglia Di Hammerfist/ARC08-17-BANCO-HAMMERFIST-1372.md",
+      "08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md",
+      "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md",
+      "08_La Battaglia Di Hammerfist/mass_combat_guide_Dm.md"
+    ],
+    "bestiario_letti": [
+      "Bestiario/mostri/hobgoblin-sergente-cr5.md",
+      "Bestiario/mostri/treant-di-adamantio-cr10.md",
+      "Bestiario/png/Borin_Ferropugno.md",
+      "Bestiario/png/Dana_Forgiapietra.md",
+      "Bestiario/png/Dara_Occhiolesto.md",
+      "Bestiario/png/Nala_Cantapietre.md",
+      "Bestiario/png/Orion_Pelleorsa.md",
+      "Bestiario/png/Tempestas/Tempestas.md",
+      "Bestiario/png/Thorin_Runaforte.md",
+      "Bestiario/png/durin-rocciadura-cr6.md",
+      "Bestiario/villain/Fauci_di_Palude.md",
+      "Bestiario/villain/Gorthak_il_Trifronte.md",
+      "Bestiario/villain/balvar-fuocospento-cr13.md",
+      "Bestiario/villain/skullcrusher-il-nero-cr14.md",
+      "Bestiario/villain/terros-l-antico-cr15.md",
+      "Bestiario/villain/zog-tar-deatheye-cr15.md"
+    ],
+    "entita": 89,
+    "attributi_estratti": 399,
+    "coppie_entita_attributo": 193,
+    "contraddizioni": [
+      {
+        "entita": "Gli hobgoblin sergenti",
+        "chiave": "hobgoblin sergenti",
+        "attributo": "CA",
+        "valori": [
+          {
+            "valore": "21",
+            "n": 1,
+            "occorrenze": [
+              {
+                "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+                "riga": 987,
+                "sezione": "A.2 · Gli hobgoblin sergenti (Scena 3)",
+                "testo": "Guerriero di 5°, GS 5: **37 pf**, CA 21 (19 senza scudo), velocità 6 m"
+              }
+            ]
+          },
+          {
+            "valore": "18",
+            "n": 2,
+            "occorrenze": [
+              {
+                "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+                "riga": 981,
+                "sezione": "**HOBGOBLIN SERGENTI (30 individui integrati)**",
+                "testo": "CA 18 (armatura completa, scudo pesante); PF 38 (5d10+10);"
+              },
+              {
+                "file": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+                "riga": 860,
+                "sezione": "**HOBGOBLIN SERGENTI**",
+                "testo": "**CA:** 18 | **PF:** 38 | **TS:** Temp +6, Rifl +2, Vol +2"
+              }
+            ]
+          }
+        ],
+        "id": "C001"
+      },
+      {
+        "entita": "Gli hobgoblin sergenti",
+        "chiave": "hobgoblin sergenti",
+        "attributo": "GS",
+        "valori": [
+          {
+            "valore": "5",
+            "n": 1,
+            "occorrenze": [
+              {
+                "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+                "riga": 987,
+                "sezione": "A.2 · Gli hobgoblin sergenti (Scena 3)",
+                "testo": "Guerriero di 5°, GS 5: **37 pf**, CA 21 (19 senza scudo), velocità 6 m"
+              }
+            ]
+          },
+          {
+            "valore": "4",
+            "n": 1,
+            "occorrenze": [
+              {
+                "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+                "riga": 978,
+                "sezione": "**HOBGOBLIN SERGENTI (30 individui integrati)**",
+                "testo": "STATISTICHE CREATURA SINGOLA (Guerriero Hobgoblin di 5° liv., GS 4):"
+              }
+            ]
+          }
+        ],
+        "id": "C002"
+      },
+      {
+        "entita": "Gli hobgoblin sergenti",
+        "chiave": "hobgoblin sergenti",
+        "attributo": "pf",
+        "valori": [
+          {
+            "valore": "37",
+            "n": 1,
+            "occorrenze": [
+              {
+                "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+                "riga": 987,
+                "sezione": "A.2 · Gli hobgoblin sergenti (Scena 3)",
+                "testo": "Guerriero di 5°, GS 5: **37 pf**, CA 21 (19 senza scudo), velocità 6 m"
+              }
+            ]
+          },
+          {
+            "valore": "38",
+            "n": 1,
+            "occorrenze": [
+              {
+                "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+                "riga": 981,
+                "sezione": "**HOBGOBLIN SERGENTI (30 individui integrati)**",
+                "testo": "CA 18 (armatura completa, scudo pesante); PF 38 (5d10+10);"
+              }
+            ]
+          }
+        ],
+        "id": "C003"
+      },
+      {
+        "entita": "Orog Guardie Nere",
+        "chiave": "orog guardie nere",
+        "attributo": "GS",
+        "valori": [
+          {
+            "valore": "6",
+            "n": 3,
+            "occorrenze": [
+              {
+                "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+                "riga": 1049,
+                "sezione": "**OROG GUARDIE NERE (4 Orog scelti)**",
+                "testo": "STATISTICHE CREATURA SINGOLA (Orog Guerriero di 5° liv., GS 6):"
+              },
+              {
+                "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+                "riga": 896,
+                "sezione": "**🔴 ESERCITO DELLA MANO ROSSA (900 unità)**",
+                "testo": "*   **Élite:** Cavaliere Hobgoblin (GS 10), Orog Guardie Nere (GS 6), Sergenti Hobgoblin (GS 4)."
+              },
+              {
+                "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+                "riga": 3318,
+                "sezione": "**ESERCITO DELLA MANO ROSSA (900 unità)**",
+                "testo": "*   **Élite:** Cavaliere Hobgoblin (GS 10), Orog Guardie Nere (GS 6), Sergenti Hobgoblin (GS 4)"
+              }
+            ]
+          },
+          {
+            "valore": "7",
+            "n": 1,
+            "occorrenze": [
+              {
+                "file": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+                "riga": 911,
+                "sezione": "**OROG GUARDIE NERE**",
+                "testo": "> Uno contro uno: `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md` (Guerriero 6, GS 7, CA 19, pf 63, ascia bipenne +1 +13/+8, 1d12+10). ⚠ **Non SRD**: l'orog è `[Private source — Monsters of Faerûn / Races of Faerû"
+              }
+            ]
+          }
+        ],
+        "id": "C004"
+      }
+    ],
+    "per_attributo": {
+      "CA": 1,
+      "GS": 2,
+      "pf": 1
+    },
+    "occorrenze_per_attributo": {
+      "CA": 64,
+      "CD": 8,
+      "GS": 101,
+      "TS": 5,
+      "classi": 20,
+      "giorno": 1,
+      "iniziativa": 20,
+      "pf": 63,
+      "portatore": 19,
+      "titolo": 96,
+      "vivo/morto": 2
+    },
+    "confrontati_per_attributo": {
+      "CA": 15,
+      "CD": 3,
+      "GS": 30,
+      "classi": 3,
+      "pf": 17,
+      "portatore": 3,
+      "titolo": 8
+    }
+  }
+}

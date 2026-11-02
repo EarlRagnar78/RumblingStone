@@ -148,8 +148,8 @@ Il Torneo è la scena di Tordek, ma gli altri PG hanno agganci propri. Stato att
   promuove a modulo il vecchio riferimento orfano `DAY3-CITY-SIEGE`.
 
 > **Nota (regola §0.3 del piano)**: le sub-quest sono ora **progettate**. I dettagli
-> **nuovi** introdotti (PNG di servizio, toponimi, bonus minori) sono marcati
-> `[INFERRED]` nei rispettivi file, in attesa di conferma DM; i **beat e bonus
+> **nuovi** introdotti (PNG di servizio, toponimi, bonus minori) sono stati
+> confermati dal DM il 2026-10-18; i **beat e bonus
 > canonici** restano quelli degli hook sorgente, che vincono in caso di conflitto.
 
 ---

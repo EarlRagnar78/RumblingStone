@@ -1,0 +1,1434 @@
+{
+ "schema_version": "1.0",
+ "title": "MAPPA 1A-3 REVISED: Campo della Mano Rossa (vista strategica)",
+ "scale_m_per_square": 3,
+ "map_size": [
+  60,
+  60
+ ],
+ "base_terrain": "🟩",
+ "north": "N",
+ "tipo": "strategica",
+ "ambiente": "esterno",
+ "luogo": "Campo della Mano Rossa, piana di Hammerfist",
+ "quota": "870 m ; s.l.m., la piana",
+ "dislivello": "0 m ; sulla piana: Hammerfist è 80 m più in alto, a qualche miglio a nord",
+ "regions": [
+  {
+   "terrain": "🟫",
+   "rect": [
+    29,
+    0,
+    2,
+    31
+   ],
+   "label": "Via principale nord, larga 6 m: verso Hammerfist, a qualche miglio"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    2,
+    24,
+    56,
+    2
+   ],
+   "label": "Via trasversale, larga 6 m"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    29,
+    44,
+    2,
+    10
+   ],
+   "label": "Via sud, verso la palude"
+  },
+  {
+   "terrain": "💧",
+   "rect": [
+    0,
+    53,
+    60,
+    7
+   ],
+   "label": "La palude: acqua ferma alla caviglia, giunchi"
+  },
+  {
+   "terrain": "🟦",
+   "rect": [
+    18,
+    56,
+    24,
+    4
+   ],
+   "label": "L'acqua nera e profonda dove si nasconde Fauci"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    22,
+    31,
+    16,
+    12
+   ],
+   "label": "La piazza del comando: terra battuta, sgombra"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    29,
+    30,
+    2,
+    1
+   ]
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    29,
+    43,
+    2,
+    1
+   ]
+  }
+ ],
+ "structures": [
+  {
+   "type": "⛺",
+   "at": [
+    4,
+    4
+   ],
+   "label": "Centuria hobgoblin 1: 12 tende da 3 × 3 m, otto soldati a tenda, in file con le corsie"
+  },
+  {
+   "type": "⛺",
+   "at": [
+    4,
+    6
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    4,
+    8
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    6,
+    4
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    6,
+    6
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    6,
+    8
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    8,
+    4
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    8,
+    6
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    8,
+    8
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    10,
+    4
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    10,
+    6
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    10,
+    8
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    14,
+    4
+   ],
+   "label": "Centuria hobgoblin 2: 12 tende da 3 × 3 m, otto soldati a tenda, in file con le corsie"
+  },
+  {
+   "type": "⛺",
+   "at": [
+    14,
+    6
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    14,
+    8
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    16,
+    4
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    16,
+    6
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    16,
+    8
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    18,
+    4
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    18,
+    6
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    18,
+    8
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    20,
+    4
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    20,
+    6
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    20,
+    8
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    36,
+    4
+   ],
+   "label": "Centuria hobgoblin 3: 12 tende da 3 × 3 m, otto soldati a tenda, in file con le corsie"
+  },
+  {
+   "type": "⛺",
+   "at": [
+    36,
+    6
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    36,
+    8
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    38,
+    4
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    38,
+    6
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    38,
+    8
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    40,
+    4
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    40,
+    6
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    40,
+    8
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    42,
+    4
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    42,
+    6
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    42,
+    8
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    46,
+    4
+   ],
+   "label": "Centuria hobgoblin 4: 12 tende da 3 × 3 m, otto soldati a tenda, in file con le corsie"
+  },
+  {
+   "type": "⛺",
+   "at": [
+    46,
+    6
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    46,
+    8
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    48,
+    4
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    48,
+    6
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    48,
+    8
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    50,
+    4
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    50,
+    6
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    50,
+    8
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    52,
+    4
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    52,
+    6
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    52,
+    8
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    4,
+    14
+   ],
+   "label": "Centuria hobgoblin 5: 12 tende da 3 × 3 m, otto soldati a tenda, in file con le corsie"
+  },
+  {
+   "type": "⛺",
+   "at": [
+    4,
+    16
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    4,
+    18
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    6,
+    14
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    6,
+    16
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    6,
+    18
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    8,
+    14
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    8,
+    16
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    8,
+    18
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    10,
+    14
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    10,
+    16
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    10,
+    18
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    46,
+    14
+   ],
+   "label": "Centuria hobgoblin 6: 12 tende da 3 × 3 m, otto soldati a tenda, in file con le corsie"
+  },
+  {
+   "type": "⛺",
+   "at": [
+    46,
+    16
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    46,
+    18
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    48,
+    14
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    48,
+    16
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    48,
+    18
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    50,
+    14
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    50,
+    16
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    50,
+    18
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    52,
+    14
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    52,
+    16
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    52,
+    18
+   ]
+  },
+  {
+   "type": "🧱",
+   "line": [
+    [
+     21,
+     30
+    ],
+    [
+     28,
+     30
+    ]
+   ],
+   "label": "Steccato di pali appuntiti attorno alla piazza del comando, alto 1,5 m, quattro varchi"
+  },
+  {
+   "type": "🧱",
+   "line": [
+    [
+     31,
+     30
+    ],
+    [
+     38,
+     30
+    ]
+   ]
+  },
+  {
+   "type": "🧱",
+   "line": [
+    [
+     21,
+     43
+    ],
+    [
+     28,
+     43
+    ]
+   ]
+  },
+  {
+   "type": "🧱",
+   "line": [
+    [
+     31,
+     43
+    ],
+    [
+     38,
+     43
+    ]
+   ]
+  },
+  {
+   "type": "🧱",
+   "line": [
+    [
+     21,
+     31
+    ],
+    [
+     21,
+     35
+    ]
+   ]
+  },
+  {
+   "type": "🧱",
+   "line": [
+    [
+     21,
+     38
+    ],
+    [
+     21,
+     42
+    ]
+   ]
+  },
+  {
+   "type": "🧱",
+   "line": [
+    [
+     38,
+     31
+    ],
+    [
+     38,
+     35
+    ]
+   ]
+  },
+  {
+   "type": "🧱",
+   "line": [
+    [
+     38,
+     38
+    ],
+    [
+     38,
+     42
+    ]
+   ]
+  },
+  {
+   "type": "🎪",
+   "rect": [
+    27,
+    35,
+    6,
+    4
+   ],
+   "label": "La tenda nera di Grimjaw: padiglione a tre pali, 18 × 12 m col telo, sola in mezzo alla piazza"
+  },
+  {
+   "type": "⛺",
+   "at": [
+    24,
+    32
+   ],
+   "label": "Tenda delle Guardie Nere orog, a 9 m dalla tenda nera"
+  },
+  {
+   "type": "⛺",
+   "at": [
+    35,
+    32
+   ],
+   "label": "Tenda delle Guardie Nere orog"
+  },
+  {
+   "type": "⛺",
+   "at": [
+    3,
+    29
+   ],
+   "label": "Clan d'orchi 1: ripari di pelle attorno al fuoco della banda"
+  },
+  {
+   "type": "⛺",
+   "at": [
+    7,
+    29
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    4,
+    32
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    7,
+    32
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    11,
+    29
+   ],
+   "label": "Clan d'orchi 2: ripari di pelle attorno al fuoco della banda"
+  },
+  {
+   "type": "⛺",
+   "at": [
+    15,
+    29
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    12,
+    32
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    15,
+    32
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    3,
+    37
+   ],
+   "label": "Clan d'orchi 3: ripari di pelle attorno al fuoco della banda"
+  },
+  {
+   "type": "⛺",
+   "at": [
+    7,
+    37
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    4,
+    40
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    7,
+    40
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    11,
+    37
+   ],
+   "label": "Clan d'orchi 4: ripari di pelle attorno al fuoco della banda"
+  },
+  {
+   "type": "⛺",
+   "at": [
+    15,
+    37
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    12,
+    40
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    15,
+    40
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    44,
+    29
+   ],
+   "label": "Clan d'orchi 5: ripari di pelle attorno al fuoco della banda"
+  },
+  {
+   "type": "⛺",
+   "at": [
+    48,
+    29
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    45,
+    32
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    48,
+    32
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    52,
+    29
+   ],
+   "label": "Clan d'orchi 6: ripari di pelle attorno al fuoco della banda"
+  },
+  {
+   "type": "⛺",
+   "at": [
+    56,
+    29
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    53,
+    32
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    56,
+    32
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    44,
+    37
+   ],
+   "label": "Clan d'orchi 7: ripari di pelle attorno al fuoco della banda"
+  },
+  {
+   "type": "⛺",
+   "at": [
+    48,
+    37
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    45,
+    40
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    48,
+    40
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    52,
+    37
+   ],
+   "label": "Clan d'orchi 8: ripari di pelle attorno al fuoco della banda"
+  },
+  {
+   "type": "⛺",
+   "at": [
+    56,
+    37
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    53,
+    40
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    56,
+    40
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    7,
+    45
+   ],
+   "label": "Clan d'orchi 9: ripari di pelle attorno al fuoco della banda"
+  },
+  {
+   "type": "⛺",
+   "at": [
+    11,
+    45
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    8,
+    48
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    11,
+    48
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    48,
+    45
+   ],
+   "label": "Clan d'orchi 10: ripari di pelle attorno al fuoco della banda"
+  },
+  {
+   "type": "⛺",
+   "at": [
+    52,
+    45
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    49,
+    48
+   ]
+  },
+  {
+   "type": "⛺",
+   "at": [
+    52,
+    48
+   ]
+  },
+  {
+   "type": "🧱",
+   "line": [
+    [
+     0,
+     8
+    ],
+    [
+     0,
+     20
+    ]
+   ],
+   "label": "Recinto dei worg, ovest"
+  },
+  {
+   "type": "🧱",
+   "line": [
+    [
+     0,
+     8
+    ],
+    [
+     2,
+     8
+    ]
+   ]
+  },
+  {
+   "type": "🧱",
+   "line": [
+    [
+     0,
+     20
+    ],
+    [
+     2,
+     20
+    ]
+   ]
+  },
+  {
+   "type": "🛢",
+   "at": [
+    16,
+    48
+   ],
+   "label": "Carri dei viveri e botti"
+  },
+  {
+   "type": "🛢",
+   "at": [
+    18,
+    48
+   ],
+   "label": "Carri dei viveri e botti"
+  },
+  {
+   "type": "🛢",
+   "at": [
+    20,
+    48
+   ],
+   "label": "Carri dei viveri e botti"
+  },
+  {
+   "type": "🛢",
+   "at": [
+    22,
+    48
+   ],
+   "label": "Carri dei viveri e botti"
+  },
+  {
+   "type": "🛢",
+   "at": [
+    37,
+    48
+   ],
+   "label": "Carri dei viveri e botti"
+  },
+  {
+   "type": "🛢",
+   "at": [
+    39,
+    48
+   ],
+   "label": "Carri dei viveri e botti"
+  },
+  {
+   "type": "🛢",
+   "at": [
+    41,
+    48
+   ],
+   "label": "Carri dei viveri e botti"
+  },
+  {
+   "type": "🛢",
+   "at": [
+    43,
+    48
+   ],
+   "label": "Carri dei viveri e botti"
+  },
+  {
+   "type": "🎯",
+   "at": [
+    24,
+    46
+   ],
+   "label": "Catapulta"
+  },
+  {
+   "type": "🎯",
+   "at": [
+    26,
+    46
+   ],
+   "label": "Catapulta"
+  },
+  {
+   "type": "🎯",
+   "at": [
+    33,
+    46
+   ],
+   "label": "Catapulta"
+  },
+  {
+   "type": "🎯",
+   "at": [
+    35,
+    46
+   ],
+   "label": "Catapulta"
+  }
+ ],
+ "hazards": [
+  {
+   "type": "🔥",
+   "at": [
+    24,
+    40
+   ],
+   "label": "Falò della guardia del comando",
+   "effect": "1d6 fuoco a chi entra nella cella"
+  },
+  {
+   "type": "🔥",
+   "at": [
+    35,
+    40
+   ],
+   "label": "Falò della guardia del comando",
+   "effect": "1d6 fuoco a chi entra nella cella"
+  },
+  {
+   "type": "🔥",
+   "at": [
+    5,
+    30
+   ],
+   "label": "Fuoco comune di un clan d'orchi",
+   "effect": "1d6 fuoco a chi entra nella cella"
+  },
+  {
+   "type": "🔥",
+   "at": [
+    13,
+    30
+   ],
+   "label": "Fuoco comune di un clan d'orchi",
+   "effect": "1d6 fuoco a chi entra nella cella"
+  },
+  {
+   "type": "🔥",
+   "at": [
+    5,
+    38
+   ],
+   "label": "Fuoco comune di un clan d'orchi",
+   "effect": "1d6 fuoco a chi entra nella cella"
+  },
+  {
+   "type": "🔥",
+   "at": [
+    13,
+    38
+   ],
+   "label": "Fuoco comune di un clan d'orchi",
+   "effect": "1d6 fuoco a chi entra nella cella"
+  },
+  {
+   "type": "🔥",
+   "at": [
+    46,
+    30
+   ],
+   "label": "Fuoco comune di un clan d'orchi",
+   "effect": "1d6 fuoco a chi entra nella cella"
+  },
+  {
+   "type": "🔥",
+   "at": [
+    54,
+    30
+   ],
+   "label": "Fuoco comune di un clan d'orchi",
+   "effect": "1d6 fuoco a chi entra nella cella"
+  },
+  {
+   "type": "🔥",
+   "at": [
+    46,
+    38
+   ],
+   "label": "Fuoco comune di un clan d'orchi",
+   "effect": "1d6 fuoco a chi entra nella cella"
+  },
+  {
+   "type": "🔥",
+   "at": [
+    54,
+    38
+   ],
+   "label": "Fuoco comune di un clan d'orchi",
+   "effect": "1d6 fuoco a chi entra nella cella"
+  },
+  {
+   "type": "🔥",
+   "at": [
+    9,
+    46
+   ],
+   "label": "Fuoco comune di un clan d'orchi",
+   "effect": "1d6 fuoco a chi entra nella cella"
+  },
+  {
+   "type": "🔥",
+   "at": [
+    50,
+    46
+   ],
+   "label": "Fuoco comune di un clan d'orchi",
+   "effect": "1d6 fuoco a chi entra nella cella"
+  }
+ ],
+ "units": [
+  {
+   "faction": "Mano Rossa",
+   "name": "Generale Grimjaw davanti alla tenda nera, coi capitani",
+   "token": "⚫",
+   "at": [
+    30,
+    40
+   ],
+   "cr": "Orog War/Signore della Guerra"
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Orog Guardie Nere",
+   "token": "🔴",
+   "area": {
+    "rect": [
+     28,
+     41,
+     4,
+     1
+    ]
+   },
+   "quantity": 4,
+   "cr": "élite"
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Gorthak il Trifronte fra le catapulte",
+   "token": "⚫",
+   "at": [
+    29,
+    47
+   ],
+   "cr": "Ettin 3 teste, boss"
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Giganti delle Colline, seduti per terra dietro i carri",
+   "token": "🟣",
+   "area": {
+    "rect": [
+     18,
+     50,
+     4,
+     2
+    ]
+   },
+   "quantity": 8,
+   "cr": "GS 7 cad."
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Ettin",
+   "token": "🟣",
+   "area": {
+    "rect": [
+     38,
+     50,
+     2,
+     1
+    ]
+   },
+   "quantity": 2,
+   "cr": "GS 6 cad."
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Worg nel recinto, coi cavalieri goblin",
+   "token": "🔴",
+   "area": {
+    "rect": [
+     1,
+     10,
+     1,
+     8
+    ]
+   },
+   "quantity": 50,
+   "cr": "GS 3 cad."
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Doom Hand Warpriests e Shamani Draconici, sparsi fra i blocchi",
+   "token": "🟡",
+   "area": {
+    "rect": [
+     26,
+     22,
+     8,
+     1
+    ]
+   },
+   "quantity": 25,
+   "cr": "chierici e adepti"
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Sentinelle hobgoblin ai varchi dello steccato",
+   "token": "🔴",
+   "area": {
+    "rect": [
+     28,
+     29,
+     1,
+     1
+    ]
+   },
+   "quantity": 2
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Fauci di Palude, sommerso nell'acqua nera",
+   "token": "🟣",
+   "area": {
+    "rect": [
+     29,
+     57,
+     2,
+     2
+    ]
+   },
+   "cr": "Drago Nero Adulto Avanzato"
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Il cavaliere hobgoblin, in piedi sulla riva accanto alla sella",
+   "token": "⚫",
+   "at": [
+    33,
+    55
+   ]
+  }
+ ],
+ "movements": [
+  {
+   "name": "Pattuglia perimetrale worg (loop)",
+   "path": [
+    [
+     1,
+     2
+    ],
+    [
+     58,
+     2
+    ],
+    [
+     58,
+     51
+    ],
+    [
+     1,
+     51
+    ]
+   ],
+   "loop": true,
+   "color": "#d62828"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+== Fronti ARC-07
+   fronti 4 · orologi 4 (conformi a 4/6/8: 3) · presagi nei master 12/12 · campi scritti nel master 27, dedotti 3
+   ✗ F1 debito-della-radice: 1 pericoli: Dungeon World ne vuole 2-3
+   ✗ O1 countdown-a7: segmenti = None (ore residue alla breccia (3g 20h all'arrivo), non segmenti): Blades in the Dark ne vuole 4, 6 o 8
+   ✗ O2 countdown-a7: riempiti = None su None: deve stare fra 0 e il totale
+   ✓ presagio [assedio-hammerfist-1372] sull'affresco A7 le torri d'assedio sono in costruzione → 07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md:228
+   ✓ presagio [assedio-hammerfist-1372] prima ondata, i primi corpi coperti sui camminamenti → 07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md:230
+   ✓ presagio [assedio-hammerfist-1372] un ariete alle porte e una crepa che non si richiude → 07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md:231
+   ✓ presagio [orda-zogtar-372] il corno di Grask, gemello della runa sulla scaglia → 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:2255
+   ✓ presagio [orda-zogtar-372] la runa-vincolo, la Catena del drago → 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:2076
+   ✓ presagio [orda-zogtar-372] il mare di tende che si sveglia → 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:58
+   ✓ presagio [debito-della-radice] lo spirito della druida morta ha sfiorato il giardino → 07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md:910
+   ✓ presagio [debito-della-radice] la Custode compare al Sud del cerchio → 07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md:98
+   ✓ presagio [collezionista-e-varis] il Seme-Mercato nel Tempio → 07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md:52
+   ✓ presagio [collezionista-e-varis] il Marchio di Credito planare → 07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md:180
+   ✓ presagio [collezionista-e-varis] il Sigillo di Ossidiana che divora anime → 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:67
+   ✓ presagio [collezionista-e-varis] la cera nera sulle dita dell'incappucciato → 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:125
+== Fronti ARC-08
+   fronti 2 · orologi 3 (conformi a 4/6/8: 0) · presagi nei master 6/6 · campi scritti nel master 16, dedotti 3
+   ✗ F1 avanguardia-fauci: 4 pericoli: Dungeon World ne vuole 2-3
+   ✗ O1 giorni-assedio: segmenti = 3 (giorni di battaglia): Blades in the Dark ne vuole 4, 6 o 8
+   ✗ O1 march-clock: segmenti = 42 (giorni): Blades in the Dark ne vuole 4, 6 o 8
+   ✗ O1 ritual-clock: segmenti = 18: Blades in the Dark ne vuole 4, 6 o 8
+   ✓ presagio [avanguardia-fauci] la notte prima, gli animali selvatici fuggono dalle montagne → 08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:1384
+   ✓ presagio [avanguardia-fauci] il drago si alza in volo per la prima volta e sorvola le dif → 08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:1393
+   ✓ presagio [avanguardia-fauci] un'ombra che passa e nessuno sa dire cos'era → 08_La Battaglia Di Hammerfist/ARC08-04-MARCIA-MANO-ROSSA.md:104
+   ✓ presagio [marcia-mano-rossa] Terrelton cade lo stesso giorno della vittoria → 08_La Battaglia Di Hammerfist/ARC08-04-MARCIA-MANO-ROSSA.md:114
+   ✓ presagio [marcia-mano-rossa] il Fane di Tiamat da cui parte l'orda → 08_La Battaglia Di Hammerfist/ARC08-04-MARCIA-MANO-ROSSA.md:17
+   ✓ presagio [marcia-mano-rossa] l'orda prende Terrelton e scende verso Rethmar → 08_La Battaglia Di Hammerfist/ARC08-10-ESITI-E-CONTINGENZE.md:195
+== Orologi dei villain in campaign/state.yaml: 9/13 conformi
+   ✓ sonjak             4/8                                      
+   ✓ salvatore          0/6                                      
+   ✓ il-collezionista   5/8                                      
+   ✓ zalkatar           6/8                                      
+   ✓ saarvith-regiarix  3/8                                      
+   ✗ xal-thor           Fixed: triggers Day 3 of Tournament rega non è un orologio a segmenti
+   ✗ sethrax            Sync to Tournament (Day 1 = arrival; Day non è un orologio a segmenti
+   ✗ azarr-kul          9/18                                     18 segmenti (O1)
+   ✓ conte-valerius     2/8                                      
+   ✗ mira-serani        Trigger, non clock numerico              non è un orologio a segmenti
+   ✓ ghaurush           0/6                                      
+   ✓ zin-thara          2/8                                      
+   ✓ ushgar             0/4                                      
+
+== Fatti: 33 file d'arco, 16 del Bestiario, 89 entità, 399 occorrenze, 4 contraddizioni candidate
+   occorrenze per attributo: {'CA': 64, 'CD': 8, 'GS': 101, 'TS': 5, 'classi': 20, 'giorno': 1, 'iniziativa': 20, 'pf': 63, 'portatore': 19, 'titolo': 96, 'vivo/morto': 2}
+   attributi letti in 2+ posti (confrontati): {'CA': 15, 'CD': 3, 'GS': 30, 'classi': 3, 'pf': 17, 'portatore': 3, 'titolo': 8}
+   contraddizioni per attributo: {'CA': 1, 'GS': 2, 'pf': 1}
+-- C001 Gli hobgoblin sergenti · CA
+     21                     ×1   07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md:987
+     18                     ×2   08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:981
+-- C002 Gli hobgoblin sergenti · GS
+     5                      ×1   07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md:987
+     4                      ×1   08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:978
+-- C003 Gli hobgoblin sergenti · pf
+     37                     ×1   07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md:987
+     38                     ×1   08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:981
+-- C004 Orog Guardie Nere · GS
+     6                      ×3   08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:1049
+     7                      ×1   08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md:911

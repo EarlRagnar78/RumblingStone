@@ -49,7 +49,7 @@ Scenario:
 Nemici consigliati:
 
 - Azarr Kul (CR 15, come stat epico).  
-- 2 Erinni/Abishai (CR 9–11).  
+- 2 Erinni/Abishai (CR 9–11; abishai: `Bestiario/mostri/abishai-azzurro-mano-cr11.md`).  
 - 2 Gith Knight d’élite (CR 10) o 1 drago minore superstite.  
 
 CR combinato: 17–18, ma puoi considerare che l’Avatar ancora non agisce pienamente (un paio di effetti ambientali, non attacchi completi).

@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 107,
+  "tool_count": 126,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -1212,6 +1212,154 @@
       ]
     },
     {
+      "id": "confronta_mappe",
+      "path": "scripts/confronta_mappe.py",
+      "category": "B-maps-pipeline",
+      "language": "python",
+      "invocation": "python3 scripts/confronta_mappe.py VECCHIA.md[:N] NUOVA.md[:N] | --versioni NOME=REF ... --base NOME --out DIR FILE.md ...",
+      "summary": "Due o piu' versioni delle stesse mappe misurate cella per cella: celle cambiate (simboli e classi, numero e quota), Jaccard per classe di cella, transizioni di classe, NCD con lzma, voto di qualita_mappe.py prima e dopo con i rilievi spariti e comparsi, dimensioni, scala e quote. Con --versioni estrae i master da git (git show), abbina le mappe per titolo, codice MAPPA o posizione, scrive confronto.json a chiavi ordinate e un SVG affiancato per mappa con le celle cambiate cerchiate. Misura e basta: non tocca le mappe.",
+      "use_case": "«Quanto e' cambiata davvero questa mappa dal rifacimento, e il voto e' salito per quello?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_deps": [
+        "tcod",
+        "scipy"
+      ],
+      "external_bins": [
+        "git"
+      ],
+      "args": [
+        {
+          "name": "posizionali",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Coppia: VECCHIA.md[:N] NUOVA.md[:N] (N da 1). Con --versioni: i master da confrontare, relativi al repo."
+        },
+        {
+          "name": "--json",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Coppia: scrive il confronto in JSON (chiavi ordinate)."
+        },
+        {
+          "name": "--svg",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Coppia: scrive l'SVG affiancato con le celle cambiate cerchiate."
+        },
+        {
+          "name": "--versioni",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Versioni git come NOME=REF, es. A=d726e6a2 B=9359a0af C=HEAD."
+        },
+        {
+          "name": "--base",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --versioni: la versione contro cui si confronta ogni altra."
+        },
+        {
+          "name": "--estrai",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --versioni: dove scrivere i file estratti (default: cartella temporanea)."
+        },
+        {
+          "name": "--out",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --versioni: cartella di confronto.json e svg/."
+        },
+        {
+          "name": "--strict",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se una mappa resta senza corrispondente in qualche versione."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "**/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "scripts/legend.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<--json>",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "<--out>/confronto.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "confronto prodotto",
+        "1": "mappa senza corrispondente con --strict",
+        "2": "errore d'uso (file o ref inesistente, mappa fuori numero, dipendenze mancanti)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Nessun campionamento; le versioni si identificano con il blob git, non con l'ora o il percorso di estrazione. L'NCD dipende dalla versione di liblzma."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/confronta_mappe.py --help",
+      "tests": [
+        "scripts/tests/test_confronta_mappe.py"
+      ],
+      "docs": [
+        "plans/esperimenti/confronto-mappe-arc08-2026-10-22/CONFRONTO.md",
+        "plans/adr/ADR-0098-la-qualita-delle-mappe-si-misura-con-uno-standard.md"
+      ]
+    },
+    {
       "id": "export_map_png",
       "path": "scripts/export_map_png.py",
       "category": "B-maps-pipeline",
@@ -1431,6 +1579,103 @@
       ],
       "docs": [
         "scripts/README-automation.md"
+      ]
+    },
+    {
+      "id": "genera_pianta_citta",
+      "path": "scripts/genera_pianta_citta.py",
+      "category": "B-maps-pipeline",
+      "language": "python",
+      "invocation": "python3 scripts/genera_pianta_citta.py",
+      "summary": "Rigenera le piante di Rethmar, Dauth e Channathgate dai loro programmi in scripts/piante/ (motore organica.py: Voronoi, vie, lotti, mura), nel posto canonico; con --check controlla che le piante committate siano identiche a quelle che i programmi producono (ADR-0102).",
+      "use_case": "«Ho spostato una porta di Rethmar nel programma: come rifaccio la pianta, e come so che quella nel repo è ancora quella vera?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "citta",
+          "type": "choice",
+          "required": false,
+          "default": null,
+          "choices": [
+            "channathgate",
+            "dauth",
+            "rethmar"
+          ],
+          "repeatable": false,
+          "desc": "La città da rigenerare."
+        },
+        {
+          "name": "--tutte",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Tutte e tre le città."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Non scrive: controlla che le piante committate siano allineate."
+        },
+        {
+          "name": "-o/--out",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scrive qui invece che nel posto canonico (una città, senza --check)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "scripts/piante/",
+          "kind": "directory",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "09_*/**/*-pianta.svg",
+          "kind": "svg",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "pianta non allineata o programma fallito",
+        "2": "mancano shapely, numpy o scipy"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "seme fisso per città; una versione nuova di GEOS può cambiare un arrotondamento, e --check lo dice"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/genera_pianta_citta.py --help",
+      "tests": [
+        "scripts/tests/test_tema_pianta.py"
+      ],
+      "docs": [
+        "docs/guides/GUIDA-MAPPE.md",
+        "plans/adr/ADR-0102-lo-stile-delle-piante-e-i-generatori-delle-citta-nel-repo.md"
       ]
     },
     {
@@ -1875,6 +2120,128 @@
       "idempotent": true
     },
     {
+      "id": "qualita_mappe",
+      "path": "scripts/qualita_mappe.py",
+      "category": "B-maps-pipeline",
+      "language": "python",
+      "invocation": "python3 scripts/qualita_mappe.py",
+      "summary": "Misura le griglie-emoji contro lo standard di qualita' delle mappe (ADR-0098): spazio libero, anelli (buchi dello spazio percorribile), ingressi, vicoli ciechi vuoti, celle in fila indiana, copertura, distanza e strozzatura fra PG e nemici, celle per creatura, Flip-Mat occupati, taglia delle creature, scala dichiarata contro scala disegnata, teli, fuochi, porte e mura fuori misura, densita' dei simboli. Errori solo per i fatti (intestazione che mente, direttiva fuori griglia), avvisi per le soglie di mestiere; un voto da 0 a 100 che somma anche i rilievi del collaudo. Due varchi contano come ingressi distinti solo a 10 passi l'uno dall'altro. Con --profonde, metriche di configurazione senza soglia solo nel JSON. In sola lettura.",
+      "use_case": "«Quali mappe sono le meno plausibili o le meno giocabili, e perche'?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_deps": [
+        "tcod",
+        "scipy"
+      ],
+      "external_bins": [],
+      "args": [
+        {
+          "name": "files",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Master markdown da misurare (default: il corpus della campagna, lo stesso del collaudo)."
+        },
+        {
+          "name": "--json",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scrive metriche, rilievi, penalita' e voto in JSON (schema map_quality/1)."
+        },
+        {
+          "name": "--classifica",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Stampa la tabella markdown dal voto peggiore, con le copie identiche su una riga."
+        },
+        {
+          "name": "--strict",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se resta un rilievo E non derogato."
+        },
+        {
+          "name": "--solo-errori",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Nel testo mostra solo i rilievi E."
+        },
+        {
+          "name": "--profonde",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Aggiunge al JSON, sotto la chiave «profonde» di ogni tattica, le metriche senza soglia di qualita_mappe_profonde.py: space syntax alla vista e a piedi (profondita' media, integrazione, intelligibilita'), correlazione vista-accesso, simmetria, pattern 2x2. Non tocca voto ne' rilievi; vuole --json."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "**/*.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "scripts/legend.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<--json>",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "rapporto prodotto, anche con rilievi",
+        "1": "rilievi E non derogati con --strict",
+        "2": "errore d'uso (file non trovato, dipendenze mancanti)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Stesso input, stesso rapporto: nessun campionamento, ordine delle celle fisso."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/qualita_mappe.py --help",
+      "tests": [
+        "scripts/tests/test_qualita_mappe.py",
+        "scripts/tests/test_qualita_mappe_profonde.py"
+      ],
+      "docs": [
+        "skills/rumblingstone-mapmaking/references/standard-qualita-mappe.md",
+        "plans/adr/ADR-0098-la-qualita-delle-mappe-si-misura-con-uno-standard.md"
+      ]
+    },
+    {
       "id": "render_map_blender",
       "path": "scripts/render_map_blender.py",
       "category": "B-maps-pipeline",
@@ -2173,6 +2540,65 @@
       "docs": [
         "scripts/README-automation.md",
         "skills/rumblingstone-mapmaking/SKILL.md"
+      ]
+    },
+    {
+      "id": "render_schemi",
+      "path": "scripts/render_schemi.py",
+      "category": "B-maps-pipeline",
+      "language": "python",
+      "invocation": "python3 scripts/render_schemi.py",
+      "summary": "Gli schemi di ARC-07 che non stanno su una griglia (T-1, T-4, M7-A; ADR-0106 §5): li disegna nello stile della pianta (carta, inchiostro, numeri rossi, corpo minimo 7,4 pt, nessun filtro) in 07_il Portale Della Forgia Eterna/Mappe/schemi/. L'SVG non si ritocca a mano: si cambia lo script.",
+      "use_case": "«Una sezione o una carta non in scala va nel booklet: come la stampo senza la griglia ASCII?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Non scrive: esce 1 se un SVG non è quello dello script."
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "path": "07_il Portale Della Forgia Eterna/Mappe/schemi/",
+          "kind": "directory",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "schema non allineato (--check)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "nessun caso, coordinate fisse"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false,
+        "notes": "scrive solo gli SVG degli schemi"
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/render_schemi.py --check",
+      "tests": [
+        "scripts/tests/test_tema_stampa.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0106-ogni-mappa-si-stampa-in-pianta.md",
+        "docs/guides/GUIDA-MAPPE.md"
       ]
     },
     {
@@ -2502,6 +2928,78 @@
       ],
       "docs": [
         "scripts/README-automation.md"
+      ]
+    },
+    {
+      "id": "render_pg",
+      "path": "scripts/render_pg.py",
+      "category": "C-post-session-canon",
+      "language": "python",
+      "invocation": "python3 scripts/render_pg.py",
+      "summary": "Genera PG/schede/<pg>.md da PG/schede/<pg>.yaml: le caratteristiche come catena (10 → 8 Corona → 6 rito) e i modificatori permanenti con la fonte. Classe, PF e stato non li copia: rimanda a campaign/state.yaml (RIPRESA-PR 4g-1, ADR-0088).",
+      "use_case": "«Da dove viene la DES di Thorik, un passo alla volta?»",
+      "stability": "stable",
+      "stdlib_only": false,
+      "external_bins": [
+        "python3"
+      ],
+      "external_deps": [
+        "pyyaml"
+      ],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Gate CI: segnala il drift, non scrive."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "PG/schede/",
+          "kind": "directory",
+          "required": true,
+          "schema": "scripts/schemas/pg_scheda.schema.json"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "PG/schede/",
+          "kind": "directory",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok / in sync",
+        "1": "drift (--check)",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Stesso YAML, stesso testo."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false,
+        "notes": "Scrive solo i .md accanto ai .yaml."
+      },
+      "idempotent": true,
+      "consumes_schema": "scripts/schemas/pg_scheda.schema.json",
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/render_pg.py --check",
+      "tests": [
+        "scripts/tests/test_validate_pg.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0088-la-pr-99-si-chiude-e-le-schede-pg-ripartono-da-main.md",
+        "plans/PIANO-RIPRESA-PR-ABBANDONATE.md"
       ]
     },
     {
@@ -2955,6 +3453,91 @@
       ]
     },
     {
+      "id": "validate_pg",
+      "path": "scripts/validate_pg.py",
+      "category": "C-post-session-canon",
+      "language": "python",
+      "invocation": "python3 scripts/validate_pg.py",
+      "summary": "Gate sulle schede PG in PG/schede/*.yaml: ogni modificatore permanente ha una fonte che esiste e (se `cita`) dice ancora quella frase; base + delta = attuale; ogni costo affermato «permanente» nei .md e' sulla scheda o dismesso con una ragione in scripts/data/pg_modificatori_ignorati.yaml; le fonti primarie quadrano con le schede; i PG sono quelli di `party` in state.yaml, e classe, PF, stato e artefatti non si copiano sulla scheda (RIPRESA-PR 4g-1, ADR-0088).",
+      "use_case": "«Il −2 DES della Corona e' ancora scritto da qualche parte, con la sua fonte, o e' sparito un'altra volta?»",
+      "stability": "stable",
+      "stdlib_only": false,
+      "external_bins": [
+        "python3"
+      ],
+      "external_deps": [
+        "pyyaml"
+      ],
+      "args": [
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Uscita machine-readable."
+        },
+        {
+          "name": "--verbose",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Elenca i modificatori per PG."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "PG/schede/",
+          "kind": "directory",
+          "required": true,
+          "schema": "scripts/schemas/pg_scheda.schema.json"
+        },
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "required": true,
+          "schema": "scripts/schemas/campaign_state.schema.json"
+        },
+        {
+          "path": "scripts/data/pg_modificatori_ignorati.yaml",
+          "kind": "yaml",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "coerente",
+        "1": "incoerenze o derive",
+        "2": "errore d'uso o scheda illeggibile"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false,
+        "notes": ""
+      },
+      "idempotent": true,
+      "consumes_schema": "scripts/schemas/pg_scheda.schema.json",
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/validate_pg.py",
+      "tests": [
+        "scripts/tests/test_validate_pg.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0088-la-pr-99-si-chiude-e-le-schede-pg-ripartono-da-main.md",
+        "plans/PIANO-RIPRESA-PR-ABBANDONATE.md"
+      ]
+    },
+    {
       "id": "validate_state",
       "path": "scripts/validate_state.py",
       "category": "C-post-session-canon",
@@ -3169,7 +3752,7 @@
       "inputs": [],
       "outputs": [
         {
-          "path": "STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/tavole/fregi/fregio-*.svg",
+          "path": "10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/tavole/fregi/fregio-*.svg",
           "kind": "svg",
           "overwrites": true,
           "generated_header": false,
@@ -3462,7 +4045,7 @@
       ],
       "inputs": [
         {
-          "path": "STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md",
+          "path": "10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md",
           "kind": "markdown",
           "required": true,
           "schema": null
@@ -4097,6 +4680,239 @@
       ]
     },
     {
+      "id": "misura_stampa",
+      "path": "scripts/misura_stampa.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/misura_stampa.py --tutti --check",
+      "summary": "Compila ogni booklet e ne misura il PDF come un controllo di prestampa: font non incorporati, testo sotto 7 pt, testo oltre la gabbia dei margini speculari, immagini sotto 300 dpi, riquadri di creatura spezzati fra due pagine (dai segnaposti <sb-inizio>/<sb-fine> del tema, letti con typst eval), più corpo mediano e quota di pagine illustrate. --check confronta con i tetti di docs/audit/stampa-booklet.json, che --aggiorna fa solo scendere. Serve PyMuPDF (requirements-dev.txt, come validate_corredo --stampa).",
+      "use_case": "«Questo booklet si stampa bene? Cosa è peggiorato o migliorato rispetto all'ultima volta?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_deps": [],
+      "external_bins": [
+        "typst"
+      ],
+      "args": [
+        {
+          "name": "manifest",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "I manifest da misurare."
+        },
+        {
+          "name": "--tutti",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Ogni booklet con un manifest."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Le misure in JSON."
+        },
+        {
+          "name": "--dettaglio",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cosa sfora, pagina per pagina."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se un booklet supera un suo tetto o non è registrato."
+        },
+        {
+          "name": "--aggiorna",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Riscrive il registro; i tetti scendono soltanto."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "**/*.manifest.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "docs/audit/stampa-booklet.json",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "docs/audit/stampa-booklet.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "build/misura-stampa/*.pdf",
+          "kind": "pdf",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "un booklet sopra un suo tetto o non registrato (--check)",
+        "2": "manca PyMuPDF"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "typst e font fissati: stesso sorgente, stesso PDF, stesse misure"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/misura_stampa.py --help",
+      "tests": [
+        "scripts/tests/test_misura_stampa.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0105-ogni-creatura-esce-nello-stesso-riquadro.md"
+      ]
+    },
+    {
+      "id": "misura_statblocchi_booklet",
+      "path": "scripts/misura_statblocchi_booklet.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/misura_statblocchi_booklet.py --check",
+      "summary": "Conta, booklet per booklet, le schede di creatura e la forma in cui escono in stampa (ADR-0105): riquadro (il recinto ```statblocco), griglia (un recinto qualunque), prosa, tabella, sciolta. --stampa conta anche i riquadri nel sorgente Typst; --check confronta i fuori forma con i tetti di docs/audit/statblocchi-booklet.json, che --aggiorna fa solo scendere.",
+      "use_case": "«Le creature di questo booklet escono tutte nello stesso riquadro, e quante ne mancano?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_deps": [],
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--dettaglio",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Elenca ogni scheda fuori forma con la sua riga."
+        },
+        {
+          "name": "--stampa",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Conta i #statblocco( nel sorgente Typst di ogni booklet."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Stampa la misura in JSON."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se un booklet ha più schede fuori forma del suo tetto."
+        },
+        {
+          "name": "--aggiorna",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Riscrive i tetti, solo verso il basso."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "**/*.manifest.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "docs/audit/statblocchi-booklet.json",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "docs/audit/statblocchi-booklet.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "un booklet sopra il suo tetto (--check)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "legge solo i master e i manifest"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/misura_statblocchi_booklet.py --check",
+      "tests": [
+        "scripts/tests/test_riquadro_statblocco.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0105-ogni-creatura-esce-nello-stesso-riquadro.md"
+      ]
+    },
+    {
       "id": "session_recap",
       "path": "scripts/session_recap.py",
       "category": "D-materials",
@@ -4251,6 +5067,15 @@
           "choices": null,
           "repeatable": false,
           "desc": "Esito machine-readable su stdout."
+        },
+        {
+          "name": "--salta-corredo",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --stampa: non compila i volumi di un corredo, che validate_corredo.py --stampa compila e misura (in CI erano compilati due volte)."
         }
       ],
       "inputs": [
@@ -4424,6 +5249,108 @@
       "docs": [
         "skills/rumblingstone-automation/SKILL.md",
         "scripts/README-automation.md"
+      ]
+    },
+    {
+      "id": "varianti_stampa",
+      "path": "scripts/varianti_stampa.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/varianti_stampa.py MANIFEST.json --out CARTELLA",
+      "summary": "Compila lo stesso booklet in più varianti del tema (interlinea, box da leggere senza riquadro), passate con typst --input; misura ogni PDF con misura_stampa e scarta la variante che peggiora una misura con tetto rispetto al libro di sempre. Con le varianti rimaste prepara CIECO.pdf: coppie di pagine con lo stesso testo, una per versione, in ordine casuale, e la chiave in CHIAVE.json. Serve PyMuPDF.",
+      "use_case": "«Quale impaginazione si legge meglio al tavolo? Fammi scegliere senza sapere quale è quale.»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_deps": [],
+      "external_bins": [
+        "typst"
+      ],
+      "args": [
+        {
+          "name": "manifest",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il manifest del booklet."
+        },
+        {
+          "name": "--out",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cartella del fascicolo cieco, fuori dal repo."
+        },
+        {
+          "name": "--seme",
+          "type": "int",
+          "required": false,
+          "default": 20261029,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Seme del caso: stesse coppie a ogni esecuzione."
+        },
+        {
+          "name": "--coppie",
+          "type": "int",
+          "required": false,
+          "default": 4,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Coppie per variante."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "**/*.manifest.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<out>/CIECO.pdf",
+          "kind": "pdf",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "<out>/CHIAVE.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "un booklet sopra un suo tetto o non registrato (--check)",
+        "2": "manca PyMuPDF"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "typst e font fissati: stesso sorgente, stesso PDF, stesse misure"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/misura_stampa.py --help",
+      "tests": [
+        "scripts/tests/test_misura_stampa.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0105-ogni-creatura-esce-nello-stesso-riquadro.md"
       ]
     },
     {
@@ -6171,6 +7098,13 @@
           "overwrites": true,
           "generated_header": false,
           "schema": null
+        },
+        {
+          "path": "PG/schede/",
+          "kind": "directory",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": "scripts/schemas/pg_scheda.schema.json"
         }
       ],
       "exit_codes": {
@@ -6186,7 +7120,7 @@
         "writes_canon": true,
         "git_commit": false,
         "network": false,
-        "notes": "Cancella sessioni, recap, brief e i file generati dallo stato vecchio. Lo chiama new-campaign-group.sh sul branch del gruppo nuovo."
+        "notes": "Cancella sessioni, recap, brief e i file generati dallo stato vecchio. Lo chiama new-campaign-group.sh sul branch del gruppo nuovo. Rifa' PG/schede/ vuote per i PG del nuovo party (ADR-0088)."
       },
       "idempotent": true,
       "consumes_schema": "scripts/schemas/campaign_state.schema.json",
@@ -6200,81 +7134,261 @@
       ]
     },
     {
-      "id": "campioni_kappa",
-      "path": "scripts/campioni_kappa.py",
+      "id": "banco_prosa_locale",
+      "path": "scripts/banco_prosa_locale.py",
       "category": "G-orchestration-governance",
       "language": "python",
-      "invocation": "python3 scripts/campioni_kappa.py",
-      "summary": "Estrae i due campioni disgiunti (20+20, stratificati per classe, seme fisso) e calcola il kappa di Cohen fra il giudizio di un valutatore e quello della macchina. Sotto kappa 0,60 la metrica si dichiara NON affidabile e non entra in CI: e' la regola del piano, e il 2026-09-21 ha detto di no (kappa 0,0 con accordo osservato e atteso entrambi a 0,95).",
-      "use_case": "«Il punteggio dice 97,9: il DM sarebbe d'accordo?» Se non lo e', il numero misura il suo autore.",
-      "stability": "stable",
+      "invocation": "python3 scripts/banco_prosa_locale.py {corsa --url URL --modello M [--etichetta E] [--ripetizione N] [--contesto pieno|ridotto|nessuno] [--dry-run] | coppie --a CORSA --b CORSA -o FOGLIO.md | esito FOGLIO.md [--giudice FOGLIO.md]}",
+      "summary": "ADR-0089 (I2, 2026-10-10): un modello locale sugli stessi dieci casi delle skill di scrittura. `corsa` chiama un endpoint compatibile OpenAI (llama-server, Ollama, vLLM) e scrive plans/scrittura/corse/L-<etichetta>-<n>/ con corsa.json (modello, parametri, tempi), che voto_scrittura vota come le altre corse; senza servizio esce 3 e non scrive niente (ADR-0067). `coppie` prepara un foglio alla cieca per il DM con la chiave a parte; `esito` dà la quota di preferenze con l'intervallo di Wilson e, con --giudice, il κ di Cohen e l'accordo grezzo.",
+      "use_case": "«Un modello che gira sul mio portatile scrive la prosa del tavolo abbastanza bene da usarlo, e come lo so senza fidarmi delle classifiche altrui?»",
+      "stability": "beta",
       "stdlib_only": true,
       "external_bins": [],
+      "external_deps": [],
       "args": [
         {
-          "name": "--estrai",
-          "type": "bool",
+          "name": "corsa",
+          "type": "subcommand",
           "required": false,
-          "default": false,
+          "default": null,
           "choices": null,
           "repeatable": false,
-          "desc": "F1.5: scrive i due campioni disgiunti a seme fisso."
+          "desc": "Genera i dieci casi contro il modello locale."
         },
         {
-          "name": "--scheda",
+          "name": "--url",
           "type": "str",
           "required": false,
           "default": null,
-          "choices": [
-            "A",
-            "B"
-          ],
+          "choices": null,
           "repeatable": false,
-          "desc": "Stampa la scheda da compilare per il campione A o B. Il punteggio della macchina NON e' mostrato, apposta."
+          "desc": "Endpoint compatibile OpenAI, es. http://127.0.0.1:8080/v1 (o BANCO_URL)."
         },
         {
-          "name": "--kappa",
+          "name": "--modello",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Nome del modello come lo chiama il server (o BANCO_MODELLO)."
+        },
+        {
+          "name": "--etichetta",
+          "type": "str",
+          "required": false,
+          "default": "locale",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Nome della condizione: la cartella e' L-<etichetta>-<n>."
+        },
+        {
+          "name": "--ripetizione",
+          "type": "int",
+          "required": false,
+          "default": 1,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Numero della ripetizione."
+        },
+        {
+          "name": "--contesto",
+          "type": "choice",
+          "required": false,
+          "default": "pieno",
+          "choices": [
+            "pieno",
+            "ridotto",
+            "nessuno"
+          ],
+          "repeatable": false,
+          "desc": "Quanto delle skill entra nel prompt."
+        },
+        {
+          "name": "--insieme",
+          "type": "choice",
+          "required": false,
+          "default": "tutti",
+          "choices": [
+            "tutti",
+            "taratura",
+            "verifica"
+          ],
+          "repeatable": false,
+          "desc": "Quali casi."
+        },
+        {
+          "name": "--caso",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Solo questo caso (ripetibile), es. S02 per misurare i tempi prima della corsa intera."
+        },
+        {
+          "name": "--temperatura",
+          "type": "float",
+          "required": false,
+          "default": 0.7,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Temperatura di campionamento."
+        },
+        {
+          "name": "--seme",
+          "type": "int",
+          "required": false,
+          "default": 1,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Seme passato al server."
+        },
+        {
+          "name": "--max-token",
+          "type": "int",
+          "required": false,
+          "default": 1500,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Tetto dei token in uscita."
+        },
+        {
+          "name": "--tetto-fonte",
+          "type": "int",
+          "required": false,
+          "default": 12000,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Caratteri massimi dell'estratto del master."
+        },
+        {
+          "name": "--timeout",
+          "type": "int",
+          "required": false,
+          "default": 900,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Secondi di attesa per caso."
+        },
+        {
+          "name": "--dry-run",
           "type": "bool",
           "required": false,
           "default": false,
           "choices": null,
           "repeatable": false,
-          "desc": "F3.3: l'accordo fra i voti e la macchina, se i voti ci sono."
+          "desc": "Stampa le dimensioni dei prompt: nessuna rete, nessun file."
+        },
+        {
+          "name": "coppie",
+          "type": "subcommand",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Foglio alla cieca fra due corse, chiave a parte."
+        },
+        {
+          "name": "--a",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Corsa di riferimento, es. B-con-1."
+        },
+        {
+          "name": "--b",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Corsa sfidante, es. L-gemma26moe-1."
+        },
+        {
+          "name": "-o",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Dove scrivere il foglio."
+        },
+        {
+          "name": "esito",
+          "type": "subcommand",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Legge il foglio compilato e la chiave."
+        },
+        {
+          "name": "--giudice",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Lo stesso foglio compilato da un giudice automatico."
         }
       ],
       "inputs": [
         {
-          "path": "skills/REGISTRO-NORME-EDITORIALI.md",
+          "path": "plans/scrittura/casi.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "skills/rumblingstone-narrative-style/references/*.md",
           "kind": "markdown",
           "required": true,
           "schema": null
         }
       ],
-      "outputs": [],
+      "outputs": [
+        {
+          "path": "plans/scrittura/corse/L-<etichetta>-<n>/*.md",
+          "kind": "markdown",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "plans/scrittura/corse/L-<etichetta>-<n>/corsa.json",
+          "kind": "json",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
       "exit_codes": {
         "0": "ok",
-        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
+        "2": "errore d'uso (manca --url/--modello, corsa gia' esistente)",
+        "3": "servizio non raggiungibile: nessun file scritto"
       },
       "determinism": {
-        "deterministic": true,
-        "seed_flag": null,
-        "notes": "Sola lettura."
+        "deterministic": false,
+        "seed_flag": "--seme",
+        "notes": "corsa dipende dal modello e dal server; coppie e' deterministico col seme; esito e --dry-run sono deterministici."
       },
       "side_effects": {
         "writes_canon": false,
         "git_commit": false,
-        "network": false
+        "network": true
       },
-      "idempotent": true,
+      "idempotent": false,
       "consumes_schema": null,
       "produces_schema": null,
-      "ci_smoke": "python scripts/validate_norme_editoriali.py",
+      "ci_smoke": "python scripts/banco_prosa_locale.py corsa --dry-run",
       "tests": [
-        "scripts/tests/test_help_di_ogni_tool.py",
-        "scripts/tests/test_norme_editoriali.py"
+        "scripts/tests/test_banco_prosa_locale.py"
       ],
       "docs": [
-        "plans/adr/ADR-0056-una-norma-senza-misura-non-esiste.md"
+        "plans/adr/ADR-0089-un-llm-locale-per-la-prosa-si-misura-prima.md"
       ]
     },
     {
@@ -6520,6 +7634,226 @@
       "docs": [
         "plans/PIANO-AGENT-SKILLS-ESTERNE.md",
         "plans/adr/ADR-0077-revisione-a-due-giri.md"
+      ]
+    },
+    {
+      "id": "cieco_versioni",
+      "path": "scripts/cieco_versioni.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/cieco_versioni.py {campione|coppie|esito} ...",
+      "summary": "Il confronto cieco fra due versioni degli stessi box read-aloud (ADR-0093): campione congela con un seme i box da confrontare prima di riscrivere; coppie appaia i box nella versione nuova (difflib, stessa intestazione), li mette in ordine casuale e scrive la scheda per il DM con la chiave a parte; esito scioglie la chiave e applica il criterio dei 14 su 20, con l'intervallo di Wilson.",
+      "use_case": "«Il master rifatto è scritto meglio di prima, o ha solo meno difetti?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "campione",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Sceglie e congela i box: --ref, --seme, --per-file, --uscita, FILE..."
+        },
+        {
+          "name": "coppie",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scheda e chiave: --campione, --dopo, --seme, --scheda, --chiave."
+        },
+        {
+          "name": "esito",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scioglie la chiave: --chiave, --voti."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/esperimenti/prosa-cieco/campione-ARC07-DEF.json",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": "--seme",
+        "notes": "Campione e ordine delle coppie dipendono solo dal seme; la versione si legge con git show."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/cieco_versioni.py --help",
+      "tests": [
+        "scripts/tests/test_cieco_versioni.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0093-la-prosa-migliora-se-la-sceglie-il-dm-alla-cieca.md",
+        "plans/esperimenti/prosa-cieco/FOTOGRAFIA-ARC07-2026-10-18.md"
+      ]
+    },
+    {
+      "id": "coerenza_campagna",
+      "path": "scripts/coerenza_campagna.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/coerenza_campagna.py {fronti FILE.yaml... [--state] | fatti DIR... [--bestiario] [--tutti] | tutto --fronti F... --archi D... --out DIR}",
+      "summary": "Lotto 7c, coerenza. `fronti`: un file di fronti e orologi contro scripts/schemas/fronti_orologi.schema.json e le regole del mestiere (2-3 pericoli, presagi 1-3 o 3-5 scritti in un master, 1-3 domande, segmenti 4/6/8, riempiti <= totale, quando si riempie), e conta i campi che il master scrive contro quelli dedotti; con --state misura gli orologi dei villain di state.yaml. `fatti`: il rilevatore prudente di contraddizioni fra scene e archi (GS, pf, CA, TS, CD, classi, titolo, eta', anni DR, vivo/morto, portatore d'artefatto, giorno del March Clock), con file:riga di ogni valore. Misura, non cancello.",
+      "use_case": "«Lo stesso PNG ha due GS in due file dell'arco? Gli orologi di questo arco hanno 4, 6 o 8 segmenti e un presagio scritto?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_bins": [
+        "python3"
+      ],
+      "external_deps": [
+        "pyyaml"
+      ],
+      "args": [
+        {
+          "name": "cmd",
+          "type": "subcommand",
+          "required": true,
+          "default": null,
+          "choices": [
+            "fronti",
+            "fatti",
+            "tutto"
+          ],
+          "repeatable": false,
+          "desc": "fronti = controlla fronti e orologi; fatti = contraddizioni; tutto = entrambi, con JSON e riassunto in --out."
+        },
+        {
+          "name": "--state",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "(fronti) Misura anche gli orologi dei villain di campaign/state.yaml, in sola lettura."
+        },
+        {
+          "name": "--bestiario",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "(fatti, tutto) Legge anche le voci del Bestiario le cui entita' compaiono negli archi."
+        },
+        {
+          "name": "--tutti",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "(fatti) Legge anche i file fuori perimetro (ERRATA, CORREZIONE, ricalibrazioni, P1-P3)."
+        },
+        {
+          "name": "--out",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "(tutto) Cartella dove scrivere coerenza.json e coerenza.txt."
+        },
+        {
+          "name": "--rigido",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "(tutto) Exit 1 se i fronti hanno violazioni."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "(fronti, fatti) Uscita machine-readable."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/esperimenti/qualita-misurabile-2026-10-22/coerenza/fronti-*.yaml",
+          "kind": "yaml",
+          "required": false,
+          "schema": "scripts/schemas/fronti_orologi.schema.json"
+        },
+        {
+          "path": "07_il Portale Della Forgia Eterna/",
+          "kind": "directory",
+          "required": false
+        },
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "required": false,
+          "schema": "scripts/schemas/campaign_state.schema.json"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<--out>/coerenza.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false
+        },
+        {
+          "path": "<--out>/coerenza.txt",
+          "kind": "text",
+          "overwrites": true,
+          "generated_header": false
+        }
+      ],
+      "exit_codes": {
+        "0": "nessuna violazione nei fronti, o misura eseguita (fatti, tutto)",
+        "1": "violazioni nei fronti (fronti; tutto solo con --rigido)",
+        "2": "errore d'uso, file o cartella mancante, pyyaml assente"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Solo regex e ordinamenti stabili; nessun modello."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false,
+        "notes": "Scrive solo con `tutto`, nella cartella --out."
+      },
+      "idempotent": true,
+      "consumes_schema": "scripts/schemas/fronti_orologi.schema.json",
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/coerenza_campagna.py --help",
+      "tests": [
+        "scripts/tests/test_coerenza_campagna.py"
+      ],
+      "docs": [
+        "plans/RICERCA-QUALITA-MISURABILE-2026-10.md"
       ]
     },
     {
@@ -6877,7 +8211,7 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/dm.py",
-      "summary": "Entrypoint unico: orchestra tutti gli script per fase del Playbook (prep/post/session/recap/handout/maps/hype/dossier/skills/doctor/bestiario). ADR-0002. Il sottocomando «volume» (ADR-0031) esegue la catena editoriale in ordine da un manifest a un volume, e chiude ricordando il cancello d'uscita IP: non e' automatizzabile, ma e' il momento in cui va detto. «corredo» fa lo stesso per tutti i volumi e i fogli di una serata.",
+      "summary": "Entrypoint unico: orchestra tutti gli script per fase del Playbook (prep/post/session/recap/handout/maps/hype/dossier/skills/doctor/bestiario/prosa). ADR-0002. Il sottocomando «volume» (ADR-0031) esegue la catena editoriale in ordine da un manifest a un volume, e chiude ricordando il cancello d'uscita IP: non e' automatizzabile, ma e' il momento in cui va detto. «corredo» fa lo stesso per tutti i volumi e i fogli di una serata.",
       "use_case": "«Devo fare una cosa con il repo e non ricordo quale script: da dove passo?»",
       "stability": "stable",
       "stdlib_only": true,
@@ -6886,7 +8220,7 @@
       ],
       "args": [
         {
-          "name": "prep|post|session|recap|handout|maps|hype|dossier|skills|doctor|volume|corredo|bestiario",
+          "name": "prep|post|session|recap|handout|maps|hype|dossier|skills|doctor|volume|corredo|bestiario|prosa",
           "type": "subcommand",
           "required": true,
           "default": null,
@@ -6903,10 +8237,11 @@
             "doctor",
             "volume",
             "corredo",
-            "bestiario"
+            "bestiario",
+            "prosa"
           ],
           "repeatable": false,
-          "desc": "Sottocomando di fase; i flag sono inoltrati allo script sottostante. «volume» e' la catena dei mestieri in ordine (prosa, lingua, manifest, colophon, schermo, stampa, imposizione) e assorbe il «dm.py stampa» mai fatto. «bestiario» passa i flag a uno dei cinque script delle creature (estrai, deriva, attributi, creatura, conformita). «corredo» fa l'intero corredo della serata da un *.corredo.json: controlla i pezzi, fa ogni volume con la catena di «volume» e misura i PDF."
+          "desc": "Sottocomando di fase; i flag sono inoltrati allo script sottostante. «volume» e' la catena dei mestieri in ordine (prosa, lingua, manifest, colophon, schermo, stampa, imposizione) e assorbe il «dm.py stampa» mai fatto. «bestiario» passa i flag a uno dei cinque script delle creature (estrai, deriva, attributi, creatura, conformita). «corredo» fa l'intero corredo della serata da un *.corredo.json: controlla i pezzi, fa ogni volume con la catena di «volume» e misura i PDF. «prosa» passa i flag a uno degli script della catena della prosa (ADR-0101), in ordine d'uso: misura, ciclo, mqm, sintassi, coerenza, domande, migliora, cieco, banco, voto."
         }
       ],
       "inputs": [
@@ -6946,7 +8281,9 @@
       "consumes_schema": null,
       "produces_schema": null,
       "ci_smoke": "python scripts/dm.py doctor --ci",
-      "tests": [],
+      "tests": [
+        "scripts/tests/test_dm_prosa.py"
+      ],
       "docs": [
         "scripts/README-automation.md"
       ]
@@ -6957,7 +8294,7 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/domande_developer.py [--check] [--file X.md] [--json]",
-      "summary": "Le domande del developer di sviluppo-degli-incontri.md (dai due manuali del DM) misurate sulla forma del testo: D1 nemico in volo e chi resta a terra, D2 volo e invisibilità nei luoghi sorvegliati, D3 Tempra/Riflessi/Volontà, D4 chi sente il rumore, D5 la soglia del boss, D6 lo skill challenge scritto per intero, D6-5E abilità estranee al sistema. Indicatori: profili e residui con la ragione in plans/domande-developer.json.",
+      "summary": "Le domande del developer di sviluppo-degli-incontri.md (dai due manuali del DM) misurate sulla forma del testo: D1 nemico in volo e chi resta a terra, D2 volo e invisibilità nei luoghi sorvegliati, D3 Tempra/Riflessi/Volontà, D4 chi sente il rumore, D5 la soglia del boss, D6 lo skill challenge scritto per intero, D6-5E abilità estranee al sistema; dal 2026-10-18 (ADR-0092) D9 i segreti contro la divinazione, D10 la riga di scala per scontro, D15 le orde di GS basso, D16 il PG fuori gioco per un TS. Indicatori: profili e residui con la ragione in plans/domande-developer.json.",
       "use_case": "«Se i PG volano, si rendono invisibili o fanno rumore, il modulo lo dice, o dovrò inventarlo al tavolo?»",
       "stability": "beta",
       "stdlib_only": true,
@@ -7607,6 +8944,129 @@
       ]
     },
     {
+      "id": "inventory_inferred",
+      "path": "scripts/inventory_inferred.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/inventory_inferred.py",
+      "summary": "Inventario e ratchet dei marcatori INFERRED: separa i marcatori dei documenti vivi (debito aperto, sorvegliato) da quelli di plans/ e dei changelog (storici) e di docs/audit/ (meta), perché contati insieme darebbero un numero che non può scendere. Ripreso dalla PR #99 (lotto G4, ADR-0088); canale testing (ADR-0099), --check non bloccante in CI.",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--path",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Sottoalbero da scansionare (default: tutto il repo)."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Gate CI: fallisce se il debito APERTO sale sopra la baseline."
+        },
+        {
+          "name": "--update-baseline",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Riscrive la baseline col conteggio attuale."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Report in JSON (opt-in)."
+        },
+        {
+          "name": "--out",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "File dell'inventario (default: docs/audit/INFERRED-INVENTARIO.md)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "**/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "required": false,
+          "schema": "scripts/schemas/campaign_state.schema.json"
+        },
+        {
+          "path": "docs/audit/inferred-baseline.json",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "docs/audit/INFERRED-INVENTARIO.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        },
+        {
+          "path": "docs/audit/inferred-baseline.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "il debito aperto è salito sopra la baseline",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/inventory_inferred.py --check",
+      "tests": [
+        "scripts/tests/test_inventory_inferred.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0088-la-pr-99-si-chiude-e-le-schede-pg-ripartono-da-main.md"
+      ],
+      "use_case": "«Quanti marcatori INFERRED aperti ha il repo, dove stanno, e quanti ne ho tolti con questo lotto?»",
+      "optional_deps": [
+        "pyyaml"
+      ]
+    },
+    {
       "id": "lettura_a_scene",
       "path": "scripts/lettura_a_scene.py",
       "category": "G-orchestration-governance",
@@ -7823,12 +9283,148 @@
       "idempotent": true
     },
     {
+      "id": "migliora_prosa",
+      "path": "scripts/migliora_prosa.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/migliora_prosa.py {dataset|modello|scegli|migliora|campione|esito|languagetool} ...",
+      "summary": "La pipeline che sceglie la riscrittura di un box read-aloud e misura se è migliore col voto cieco del DM (ADR-0093). dataset raccoglie in un JSON tutte le coppie votate alla cieca; modello addestra una logistica L2 sulle differenze dei tratti (misura_craft, Gulpease, possessivi, livelli di misura_sintassi, MATTR, regole 1-4 di read-aloud-adulti §2-ter) e la valida in leave-one-out contro il caso e contro «vince la più lunga», con la soglia scritta prima in SOGLIA.txt; migliora filtra le candidate scritte da un agente (confronta_fatti, box_impoveriti, regole di §2-ter) e le ordina; campione ed esito fanno la scheda cieca con cieco_versioni e registrano i voti. Non chiama modelli linguistici. Facoltativo: languagetool interroga un server LanguageTool locale (6.8, LGPL, fuori dal repo) su VOTI.json e sui box di ARC-07/08, legge la precisione scritta a mano, fa la calibrazione col test del segno e il confronto delle varianti del modello (+LT, +ppl, +Stanza da --tratti-esterni) con McNemar; migliora --lt aggiunge al filtro i gruppi di rilievi con precisione >= 0,70. Senza server salta con un messaggio ed esce 0.",
+      "use_case": "«Fra queste quattro riscritture del box quale tengo, e la pipeline batte davvero l'originale al cieco?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [
+        "spacy"
+      ],
+      "args": [
+        {
+          "name": "dataset",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Ricostruisce pipeline/VOTI.json dalle coppie votate (tiene i voti della pipeline)."
+        },
+        {
+          "name": "modello",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Leave-one-out, caso, «vince la più lunga», pesi: --scrivi aggiorna MODELLO.txt; --varianti [--tratti-esterni FILE] confronta base, +LT, +ppl, +Stanza, +tutto con McNemar."
+        },
+        {
+          "name": "scegli",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Box da migliorare con un seme: --seme, --n, --uscita."
+        },
+        {
+          "name": "migliora",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "FILE --box N --candidate C.md [--scelte S.json --id P01] [--lt URL]: filtra, ordina, dice la migliore."
+        },
+        {
+          "name": "campione",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scheda cieca vincitrice contro originale: --scelte, --seme, --scheda, --chiave."
+        },
+        {
+          "name": "esito",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Registra i voti e rifà il modello: --scelte, --chiave, --voti [--data]."
+        },
+        {
+          "name": "languagetool",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "[--url U] [--tratti-esterni F] [--scrivi] | --campione N --seme S --uscita F: rilievi di LanguageTool, precisione, calibrazione, varianti (languagetool/MISURE.txt)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/esperimenti/qualita-misurabile-2026-10-22/COPPIE-VOTATE.json",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "plans/esperimenti/qualita-misurabile-2026-10-22/pipeline/VOTI.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "plans/esperimenti/qualita-misurabile-2026-10-22/languagetool/MISURE.txt",
+          "kind": "text",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "plans/esperimenti/qualita-misurabile-2026-10-22/languagetool/TRATTI-LT.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": "--seme",
+        "notes": "Il modello è deterministico (Newton, nessun caso); scelta dei box e ordine delle coppie dipendono dal seme. Con o senza spaCy i tratti cambiano (livelli_max). languagetool e --lt chiamano solo un server locale (localhost:8081 o LANGUAGETOOL_URL)."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": true
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/migliora_prosa.py --help",
+      "tests": [
+        "scripts/tests/test_migliora_prosa.py"
+      ],
+      "docs": [
+        "plans/esperimenti/qualita-misurabile-2026-10-22/pipeline/README.md",
+        "plans/adr/ADR-0093-la-prosa-migliora-se-la-sceglie-il-dm-alla-cieca.md",
+        "plans/esperimenti/qualita-misurabile-2026-10-22/languagetool/README.md"
+      ]
+    },
+    {
       "id": "misura_craft",
       "path": "scripts/misura_craft.py",
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/misura_craft.py",
-      "summary": "Conta i congegni di mestiere dichiarati (read-aloud, contingenze, orologi, pilastro lead/support...) in ogni arco e li confronta con i due banchi: Abbazia e Palio.",
+      "summary": "Conta i congegni di mestiere dichiarati (read-aloud, echi, pilastro lead/support, regia, [HDYWTDT]...) in ogni arco e li confronta con i due banchi: Abbazia e Palio.",
       "use_case": "«Lo stile e i congegni nuovi sono arrivati in questa parte, o e' rimasta indietro?»",
       "stability": "beta",
       "stdlib_only": true,
@@ -7887,15 +9483,6 @@
           "desc": "i read-aloud che presuppongono un'azione o un senso del giocatore (norma Dungeon/Paizo)"
         },
         {
-          "name": "--discriminante",
-          "type": "bool",
-          "required": false,
-          "default": false,
-          "desc": "Quante coppie di bersagli ogni congegno separa, in conteggio grezzo e in densita' per 1.000 righe: un congegno che non ne separa nessuna non produce informazione (lotto F1.3 di PIANO-MISURA-EDITORIALE).",
-          "choices": null,
-          "repeatable": false
-        },
-        {
           "name": "--metrature",
           "type": "bool",
           "required": false,
@@ -7912,6 +9499,15 @@
           "desc": "I box senza un «c'e'» presentativo ne' una dislocazione a sinistra (italiano-nativo.md §8). INDIZIO che sovrastima: la dislocazione e' rilevata a meta', quindi questa norma NON pesa nel punteggio.",
           "choices": null,
           "repeatable": false
+        },
+        {
+          "name": "--stile",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Gerundio in coda, avverbi in -mente, battute lunghe dei PNG: indicatori senza peso (ADR-0093)."
         }
       ],
       "inputs": [
@@ -7948,6 +9544,165 @@
       ],
       "docs": [
         "plans/PIANO-PORTARE-IL-MESTIERE-DEI-BANCHI.md"
+      ]
+    },
+    {
+      "id": "misura_derivazione",
+      "path": "scripts/misura_derivazione.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/misura_derivazione.py CORRISPONDENZE.json [--json OUT.json] [--md OUT.md]",
+      "summary": "Quanto due moduli sono lo stesso modulo, su due assi tenuti separati: il testo (6-grammi di parole, frasi quasi copiate, titoli e nomi propri in comune, automatico) e l'impianto (concetti di struttura, scene, PNG, contrade e regole dichiarati con le loro espressioni regolari in un JSON di corrispondenze, classificati come stesso nome, rinominato, solo A, solo B).",
+      "use_case": "«Il Drappo di Tarsilia è lo stesso modulo del Palio di Channathgate, e dove divergono?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "optional_deps": [],
+      "args": [
+        {
+          "name": "corrispondenze",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "JSON con i due corpus (schemi glob, esclusioni) e i concetti."
+        },
+        {
+          "name": "--json",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scrive la misura completa in JSON."
+        },
+        {
+          "name": "--md",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scrive il rapporto in Markdown; senza --json né --md lo stampa."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/esperimenti/drappo-palio-2026-11-01/corrispondenze.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "corpus vuoto"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Ordinamenti fissi: stesso ingresso, stessa uscita."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/misura_derivazione.py --help",
+      "tests": [
+        "scripts/tests/test_misura_derivazione.py"
+      ],
+      "docs": [
+        "plans/esperimenti/drappo-palio-2026-11-01/RAPPORTO.md",
+        "plans/PIANO-TRAVASO-DRAPPO-CAMPAGNA.md"
+      ]
+    },
+    {
+      "id": "misura_sintassi",
+      "path": "scripts/misura_sintassi.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/misura_sintassi.py [--file X.md] [--json] [--per-box]",
+      "summary": "I calchi sintattici di Cerruti (soggetto preverbale indefinito, aggettivo complesso anteposto, stare + gerundio, pronome soggetto) e i tratti alla Profiling-UD (profondità, livelli di subordinate, lunghezza delle dipendenze, MATTR e ripetizione dei lemmi) sui box read-aloud, con spaCy e it_core_news_md. Misura, non cancello: senza spaCy dice che salta ed esce 0.",
+      "use_case": "«Quanti calchi sintattici e quante frasi oltre i due livelli di subordinate hanno i box di questo master?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_bins": [],
+      "external_deps": [
+        "spacy"
+      ],
+      "optional_deps": [
+        "spacy",
+        "it_core_news_md"
+      ],
+      "args": [
+        {
+          "name": "--file",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Un master da misurare (ripetibile); senza, la base ARC-07 DEF e ARC-08."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Uscita JSON."
+        },
+        {
+          "name": "--per-box",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Tutti i box, non solo i peggiori."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "07_il Portale Della Forgia Eterna/ARC07-DEF-*.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok, anche senza spaCy (misura saltata)",
+        "2": "file assente"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Stesso modello spaCy, stesso risultato; il modello CC BY-NC-SA 3.0 non entra nel repo."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/misura_sintassi.py --help",
+      "tests": [
+        "scripts/tests/test_misura_sintassi.py"
+      ],
+      "docs": [
+        "plans/RICERCA-QUALITA-MISURABILE-2026-10.md",
+        "plans/esperimenti/qualita-misurabile-2026-10-22/sintassi/README.md"
       ]
     },
     {
@@ -8332,6 +10087,157 @@
       ]
     },
     {
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "python3",
+        "gh"
+      ],
+      "external_deps": [],
+      "consumes_schema": null,
+      "produces_schema": null,
+      "idempotent": true,
+      "tests": [
+        "scripts/tests/test_rilascio.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0100-il-rilascio-e-una-pr.md",
+        "docs/RILASCIO.md"
+      ],
+      "id": "release_notes",
+      "path": "scripts/release_notes.py",
+      "invocation": "python3 scripts/release_notes.py notes VERSIONE | sync",
+      "summary": "Le note di rilascio vengono dalla sezione del CHANGELOG.md di progetto (ADR-0100): `notes` la stampa, `sync` riscrive con gh le note pubblicate che non corrispondono più, lasciando il blocco delle impronte.",
+      "use_case": "«Ho corretto una riga del CHANGELOG di una versione già rilasciata: come arriva al rilascio?»",
+      "args": [
+        {
+          "name": "azione",
+          "type": "choice",
+          "required": true,
+          "default": null,
+          "choices": [
+            "notes",
+            "sync"
+          ],
+          "repeatable": false,
+          "desc": "notes VERSIONE stampa la sezione; sync allinea i rilasci pubblicati."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "CHANGELOG.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": true,
+        "notes": "sync modifica le note dei rilasci GitHub con gh."
+      },
+      "ci_smoke": "python3 scripts/release_notes.py notes 1.0.0"
+    },
+    {
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "python3",
+        "git"
+      ],
+      "external_deps": [],
+      "consumes_schema": null,
+      "produces_schema": null,
+      "idempotent": true,
+      "tests": [
+        "scripts/tests/test_rilascio.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0100-il-rilascio-e-una-pr.md",
+        "docs/RILASCIO.md"
+      ],
+      "id": "release_plan",
+      "path": "scripts/release_plan.py",
+      "invocation": "python3 scripts/release_plan.py [VERSIONE | --pull-request]",
+      "summary": "Sceglie cosa rilascia il workflow Release e su quale commit (ADR-0100, ripreso da iemod-fetch): la sezione [X.Y.Z] più recente di CHANGELOG.md, etichettata vX.Y.Z sul commit first-parent in cui __version__ è diventato X.Y.Z, o sulla testa di main se i pacchetti non sono cambiati. Stampa le righe per $GITHUB_OUTPUT.",
+      "use_case": "«Ho unito la PR di rilascio: quale commit diventa v1.1.0, e il token può crearne il tag?»",
+      "args": [
+        {
+          "name": "VERSIONE",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Rilascia questa versione anche se ha già un tag; vuoto = la più recente del CHANGELOG."
+        },
+        {
+          "name": "--pull-request",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Prova generale sul commit della PR, con la sua versione."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "CHANGELOG.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "scripts/dmcore/__init__.py",
+          "kind": "text",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "-",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "la versione non è mai stata scritta in __version__",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Dipende solo dalla storia git e dai tag."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false,
+        "notes": "Solo letture git."
+      },
+      "ci_smoke": null
+    },
+    {
       "id": "ricordo_lettura",
       "path": "scripts/ricordo_lettura.py",
       "category": "G-orchestration-governance",
@@ -8395,69 +10301,137 @@
       ]
     },
     {
-      "id": "superficie_norme",
-      "path": "scripts/superficie_norme.py",
+      "id": "riscontro_srd",
+      "path": "scripts/riscontro_srd.py",
       "category": "G-orchestration-governance",
       "language": "python",
-      "invocation": "python3 scripts/superficie_norme.py",
-      "summary": "Per ogni norma editoriale che nessuno misura, dice se manca il CODICE o manca il DATO: superficie vuota (la convenzione esiste e ha zero occorrenze), convenzione assente (nessuno ha deciso come si marca), oggetto assente (il file non esiste) o fuori dominio (il fatto non sta nel testo). Deterministico e idempotente: solo conteggi di forme dichiarate su un insieme di file ordinato.",
-      "use_case": "«Undici norme sono marcate non-misurate: quante posso davvero chiudere scrivendo codice?» La risposta misurata e' una su nove.",
-      "stability": "stable",
-      "stdlib_only": true,
+      "invocation": "python3 scripts/riscontro_srd.py {scarica|regola NOME|riscontra FILE.yaml|licenza}",
+      "summary": "Riscontra le regole dei master sul testo dell'SRD 3.5 (olimot/srd-v3.5-md) e del PRD PF1e (devonjones/PSRD-Data), entrambi OGL 1.0a, scaricati da raw.githubusercontent.com a commit fissato con lo sha256 di ogni file in una cache fuori dal repo (~/.cache/rumblingstone/srd o $RUMBLINGSTONE_SRD_CACHE). Cerca una regola per nome, oppure esegue un file di riscontri YAML/JSON: per ogni voce una regex nella fonte e una nel master, con il confronto numerico (scala piedi→metri), di termine (con equivalenze) o di sola presenza; esito concorda, discorda o non trovata, con la citazione di file e riga. Canale testing (ADR-0103).",
+      "use_case": "«Questa regola che il master attribuisce all'SRD c'è davvero, e il numero è quello?»",
+      "stability": "beta",
+      "stdlib_only": false,
       "external_bins": [],
+      "optional_deps": [
+        "pyyaml"
+      ],
       "args": [
         {
-          "name": "--json",
-          "type": "bool",
+          "name": "--cache",
+          "type": "path",
           "required": false,
-          "default": false,
+          "default": null,
           "choices": null,
           "repeatable": false,
-          "desc": "Report in JSON, per la catena."
+          "desc": "Cartella della cache (default: $RUMBLINGSTONE_SRD_CACHE, poi $XDG_CACHE_HOME/rumblingstone/srd, poi ~/.cache/rumblingstone/srd)."
         },
         {
-          "name": "--check",
+          "name": "--offline",
           "type": "bool",
           "required": false,
           "default": false,
           "choices": null,
           "repeatable": false,
-          "desc": "Esce 1 se una riga ha smesso di dire il vero. Una superficie VUOTA non boccia: e' un fatto, non un difetto."
+          "desc": "Non scarica: se la cache è incompleta esce 3."
+        },
+        {
+          "name": "comando",
+          "type": "subcommand",
+          "required": true,
+          "default": null,
+          "choices": [
+            "scarica",
+            "regola",
+            "riscontra",
+            "licenza"
+          ],
+          "repeatable": false,
+          "desc": "scarica | regola | riscontra | licenza."
         }
       ],
       "inputs": [
         {
-          "path": "skills/REGISTRO-NORME-EDITORIALI.md",
+          "path": "<FILE dei riscontri>.yaml|.json",
+          "kind": "yaml",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "**/*.md",
           "kind": "markdown",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "<cache>/srd-v3.5-md-<commit>/",
+          "kind": "directory",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "<cache>/PSRD-Data-<commit>/",
+          "kind": "directory",
           "required": true,
           "schema": null
         }
       ],
-      "outputs": [],
+      "outputs": [
+        {
+          "path": "stdout",
+          "kind": "markdown",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "<--md>",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "<--json>",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "<cache>/",
+          "kind": "directory",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
       "exit_codes": {
-        "0": "ok",
-        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
+        "0": "rapporto prodotto, anche con discordanze",
+        "1": "con --strict una discordanza o una regola non trovata; uno sha256 che non combacia; `regola` senza risultati",
+        "2": "errore d'uso (file dei riscontri illeggibile, regex sbagliata, master inesistente)",
+        "3": "fonti non disponibili: cache incompleta e rete assente, o --offline",
+        "130": "interruzione utente"
       },
       "determinism": {
         "deterministic": true,
         "seed_flag": null,
-        "notes": "Sola lettura."
+        "notes": "Fonti fissate per commit e sha256; esiti nell'ordine del file; il JSON ha le chiavi ordinate e nessuna data."
       },
       "side_effects": {
         "writes_canon": false,
         "git_commit": false,
-        "network": false
+        "network": true
       },
       "idempotent": true,
       "consumes_schema": null,
       "produces_schema": null,
-      "ci_smoke": "python scripts/validate_norme_editoriali.py",
+      "ci_smoke": "python scripts/riscontro_srd.py --help",
       "tests": [
-        "scripts/tests/test_help_di_ogni_tool.py",
-        "scripts/tests/test_norme_editoriali.py"
+        "scripts/tests/test_riscontro_srd.py"
       ],
       "docs": [
-        "plans/adr/ADR-0056-una-norma-senza-misura-non-esiste.md"
+        "plans/adr/ADR-0103-le-regole-si-riscontrano-sull-srd-in-cache.md",
+        "plans/esperimenti/ricerca-rete-2026-10-23/RICERCA.md",
+        "docs/ARCHITETTURA.md"
       ]
     },
     {
@@ -8682,6 +10656,15 @@
           "choices": null,
           "repeatable": false,
           "desc": "Gli avvisi (virgolette dritte, E') diventano errori."
+        },
+        {
+          "name": "--avvisi",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Elenca gli avvisi uno per uno; senza, se ne stampa solo il conto per tipo (dal 2026-10-22)."
         }
       ],
       "inputs": [
@@ -8806,7 +10789,26 @@
       "stability": "beta",
       "stdlib_only": true,
       "external_bins": [],
-      "args": [],
+      "args": [
+        {
+          "name": "--superficie",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La tabella delle norme scoperte: manca il codice o manca il dato (era superficie_norme.py, ADR-0062)."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --superficie: il rapporto in JSON."
+        }
+      ],
       "inputs": [
         {
           "path": "skills/REGISTRO-NORME-EDITORIALI.md",
@@ -8963,7 +10965,7 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/validate_standalone.py",
-      "summary": "Gate CI per i moduli autoconclusivi, in due famiglie: STANDALONE-* (master markdown — file obbligatori, riferimenti incrociati, schede pregenerate, termini 5e vietati, read-aloud minimi, contatori) e 10-stand-alone/* (moduli scritti in HTML — title, <h1>, link relativi, ancore e id non duplicati).",
+      "summary": "Gate CI per i moduli autoconclusivi, in due famiglie, tutte e due in 10-stand-alone/: i moduli con master markdown, riconosciuti dall'hub 00-*.md (file obbligatori, riferimenti incrociati, schede pregenerate, termini 5e vietati, read-aloud minimi, contatori) e i moduli scritti in HTML, con le pagine al primo livello (title, <h1>, link relativi, ancore e id non duplicati).",
       "use_case": "«Il modulo autoconclusivo è consegnabile, o ha riferimenti rotti e aree senza numero?»",
       "stability": "stable",
       "stdlib_only": true,
@@ -8981,7 +10983,7 @@
       ],
       "inputs": [
         {
-          "path": "STANDALONE-*/**/*.md",
+          "path": "10-stand-alone/*/**/*.md",
           "kind": "markdown",
           "required": false,
           "schema": null
@@ -9658,6 +11660,91 @@
       ],
       "docs": [
         "scripts/README-automation.md"
+      ]
+    },
+    {
+      "id": "qualita_mappe_profonde",
+      "path": "scripts/qualita_mappe_profonde.py",
+      "category": "lib",
+      "language": "python",
+      "invocation": "python3 scripts/qualita_mappe.py --json OUT.json --profonde",
+      "summary": "Le metriche di configurazione di una mappa tattica, senza soglia, che qualita_mappe.py --profonde scrive solo nel JSON (ADR-0098): space syntax sul grafo di visibilita' e su quello di movimento (profondita' media, integrazione HH, intelligibilita'), correlazione fra integrazione alla vista e a piedi, simmetria sulle classi di cella, diversita' dei pattern 2x2 (Lucas e Volz). Vista con lo shadowcasting simmetrico di Albert Ford e cammini minimi a bit, in libreria standard. Da plans/esperimenti/mappe-strumenti-2026-10-22/metriche_nuove.py. Non ha una riga di comando sua.",
+      "use_case": "«Questa mappa e' piu' profonda o piu' aperta di quella? La nuova versione ha cambiato la configurazione?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [],
+      "inputs": [],
+      "outputs": [],
+      "exit_codes": {},
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Nodi nell'ordine delle celle, numeri arrotondati a 4 decimali: stesso JSON al byte a ogni esecuzione, qualunque PYTHONHASHSEED."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "tests": [
+        "scripts/tests/test_qualita_mappe_profonde.py"
+      ],
+      "docs": [
+        "skills/rumblingstone-mapmaking/references/standard-qualita-mappe.md"
+      ]
+    },
+    {
+      "id": "render_map_pianta",
+      "path": "scripts/render_map_pianta.py",
+      "category": "lib",
+      "language": "library",
+      "invocation": "python3 scripts/render_map_svg.py --tema pianta",
+      "summary": "Il tema «pianta» di render_map_svg (ADR-0102): le griglie emoji nello stile delle piante delle città, con roccia tratteggiata dai contorni frastagliati, lastricato a corsi, pannello «Luoghi» e legenda sotto la mappa, in rendered-pianta/. Stessi simboli e stessa griglia del tema pergamena. Non è un CLI.",
+      "use_case": "«Come vedo la Fucina grande nello stesso stile delle piante di Rethmar e Dauth?»",
+      "stability": "library",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [],
+      "inputs": [
+        {
+          "path": "scripts/legend.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "*/rendered-pianta/*.svg",
+          "kind": "svg",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {},
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "il frastagliamento della roccia viene da un rumore fisso legato al nome del master"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": null,
+      "tests": [
+        "scripts/tests/test_tema_pianta.py"
+      ],
+      "docs": [
+        "docs/guides/GUIDA-MAPPE.md",
+        "plans/adr/ADR-0102-lo-stile-delle-piante-e-i-generatori-delle-citta-nel-repo.md"
       ]
     }
   ]

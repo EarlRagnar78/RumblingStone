@@ -1,0 +1,313 @@
+{
+ "spacy-lg": {
+  "secondi": 3.1,
+  "rilievi": [
+   {
+    "file": "ARC07-DEF-1-PIANO-TERRA-",
+    "riga": 669,
+    "tipo": "sogg_preverbale",
+    "testo": ", e dalle ferite pendono"
+   },
+   {
+    "file": "ARC07-DEF-1-PIANO-TERRA-",
+    "riga": 1010,
+    "tipo": "pron_soggetto",
+    "testo": "Tu sai leggere"
+   },
+   {
+    "file": "ARC07-DEF-1-PIANO-TERRA-",
+    "riga": 1709,
+    "tipo": "sogg_preverbale",
+    "testo": "Una fenditura si apre"
+   },
+   {
+    "file": "ARC07-DEF-1-PIANO-TERRA-",
+    "riga": 1709,
+    "tipo": "sogg_preverbale",
+    "testo": "due occhi di cristallo grezzo si accendono"
+   },
+   {
+    "file": "ARC07-DEF-1-PIANO-TERRA-",
+    "riga": 1741,
+    "tipo": "pron_soggetto",
+    "testo": "tu sei ancora mezzo"
+   },
+   {
+    "file": "ARC07-DEF-2-RITORNO-E-AF",
+    "riga": 769,
+    "tipo": "pron_soggetto",
+    "testo": "Voi quattro siete davanti a Re"
+   },
+   {
+    "file": "ARC07-DEF-2-RITORNO-E-AF",
+    "riga": 1030,
+    "tipo": "pron_soggetto",
+    "testo": "Tu non dormi"
+   },
+   {
+    "file": "ARC07-DEF-2-RITORNO-E-AF",
+    "riga": 1037,
+    "tipo": "agg_complesso",
+    "testo": "Poi, lontanissima, la voce"
+   },
+   {
+    "file": "ARC07-DEF-3-RESURREZIONE",
+    "riga": 725,
+    "tipo": "pron_soggetto",
+    "testo": "Io so"
+   },
+   {
+    "file": "ARC07-DEF-3-RESURREZIONE",
+    "riga": 1049,
+    "tipo": "pron_soggetto",
+    "testo": "lei inspira"
+   },
+   {
+    "file": "ARC07-DEF-3-RESURREZIONE",
+    "riga": 1065,
+    "tipo": "stare_gerundio",
+    "testo": "sto ancora sognando"
+   },
+   {
+    "file": "ARC07-DEF-3-RESURREZIONE",
+    "riga": 1065,
+    "tipo": "pron_soggetto",
+    "testo": "Io… dove… respirare è difficile.» Gli occhi ambra cercano"
+   },
+   {
+    "file": "ARC07-DEF-3-RESURREZIONE",
+    "riga": 1076,
+    "tipo": "pron_soggetto",
+    "testo": "Lei alza"
+   },
+   {
+    "file": "ARC07-DEF-3-RESURREZIONE",
+    "riga": 1151,
+    "tipo": "pron_soggetto",
+    "testo": "lui non sa ancora leggere"
+   },
+   {
+    "file": "ARC07-DEF-3-RESURREZIONE",
+    "riga": 1151,
+    "tipo": "pron_soggetto",
+    "testo": "io ho portato"
+   },
+   {
+    "file": "ARC07-DEF-3-RESURREZIONE",
+    "riga": 1193,
+    "tipo": "pron_soggetto",
+    "testo": "lei la tiene"
+   },
+   {
+    "file": "ARC07-DEF-4-VIAGGIO-MILL",
+    "riga": 735,
+    "tipo": "stare_gerundio",
+    "testo": "sta già parlando"
+   },
+   {
+    "file": "ARC07-DEF-4-VIAGGIO-MILL",
+    "riga": 735,
+    "tipo": "pron_soggetto",
+    "testo": "lui non se ne accorge"
+   },
+   {
+    "file": "ARC07-DEF-4-VIAGGIO-MILL",
+    "riga": 984,
+    "tipo": "pron_soggetto",
+    "testo": "lei ride"
+   },
+   {
+    "file": "ARC07-DEF-4-VIAGGIO-MILL",
+    "riga": 2177,
+    "tipo": "stare_gerundio",
+    "testo": "sta incidendo"
+   },
+   {
+    "file": "ARC07-DEF-4-VIAGGIO-MILL",
+    "riga": 2187,
+    "tipo": "pron_soggetto",
+    "testo": "Tu ne hai"
+   },
+   {
+    "file": "ARC07-DEF-4-VIAGGIO-MILL",
+    "riga": 3593,
+    "tipo": "pron_soggetto",
+    "testo": "lui ci infila"
+   },
+   {
+    "file": "ARC07-DEF-5-RITORNO-HAMM",
+    "riga": 387,
+    "tipo": "sogg_preverbale",
+    "testo": "un re torna"
+   },
+   {
+    "file": "ARC08-01-GUIDA-DM",
+    "riga": 1350,
+    "tipo": "pron_soggetto",
+    "testo": "loro non hanno"
+   },
+   {
+    "file": "ARC08-01-GUIDA-DM",
+    "riga": 1384,
+    "tipo": "sogg_preverbale",
+    "testo": "un ruggito terrificante echeggia"
+   },
+   {
+    "file": "ARC08-01-GUIDA-DM",
+    "riga": 1384,
+    "tipo": "stare_gerundio",
+    "testo": "sta annunciando"
+   },
+   {
+    "file": "ARC08-01-GUIDA-DM",
+    "riga": 1434,
+    "tipo": "sogg_preverbale",
+    "testo": "\"Un suono di corno echeggia"
+   },
+   {
+    "file": "ARC08-01-GUIDA-DM",
+    "riga": 1673,
+    "tipo": "sogg_preverbale",
+    "testo": "Gorthak il Trifronte avanza"
+   },
+   {
+    "file": "ARC08-01-GUIDA-DM",
+    "riga": 1746,
+    "tipo": "stare_gerundio",
+    "testo": "sta organizzando"
+   },
+   {
+    "file": "ARC08-01-GUIDA-DM",
+    "riga": 1746,
+    "tipo": "pron_soggetto",
+    "testo": "io riprenderò"
+   },
+   {
+    "file": "ARC08-01-GUIDA-DM",
+    "riga": 1771,
+    "tipo": "sogg_preverbale",
+    "testo": "Dal Tempio interno emerge"
+   },
+   {
+    "file": "ARC08-01-GUIDA-DM",
+    "riga": 1823,
+    "tipo": "stare_gerundio",
+    "testo": "sta dirigendo"
+   },
+   {
+    "file": "ARC08-01-GUIDA-DM",
+    "riga": 2058,
+    "tipo": "sogg_preverbale",
+    "testo": "una selva di stalagmiti si leva"
+   },
+   {
+    "file": "ARC08-01-GUIDA-DM",
+    "riga": 2058,
+    "tipo": "sogg_preverbale",
+    "testo": "Sei bocche di tunnel si spalancano"
+   },
+   {
+    "file": "ARC08-01-GUIDA-DM",
+    "riga": 2220,
+    "tipo": "stare_gerundio",
+    "testo": "sta morendo"
+   },
+   {
+    "file": "ARC08-01-GUIDA-DM",
+    "riga": 2412,
+    "tipo": "sogg_preverbale",
+    "testo": "quattro figure emergono"
+   },
+   {
+    "file": "ARC08-01-GUIDA-DM",
+    "riga": 2706,
+    "tipo": "stare_gerundio",
+    "testo": "sta accadendo"
+   },
+   {
+    "file": "ARC08-01-GUIDA-DM",
+    "riga": 2730,
+    "tipo": "sogg_preverbale",
+    "testo": "fiera e furiosa, echeggia"
+   },
+   {
+    "file": "ARC08-01-GUIDA-DM",
+    "riga": 2875,
+    "tipo": "sogg_preverbale",
+    "testo": "Un gufo più piccolo degli altri si stacca"
+   },
+   {
+    "file": "ARC08-01-GUIDA-DM",
+    "riga": 2964,
+    "tipo": "stare_gerundio",
+    "testo": "stanno avanzando"
+   },
+   {
+    "file": "ARC08-01-GUIDA-DM",
+    "riga": 3217,
+    "tipo": "sogg_preverbale",
+    "testo": ", un silenzio surreale scende"
+   },
+   {
+    "file": "ARC08-01-GUIDA-DM",
+    "riga": 3305,
+    "tipo": "pron_soggetto",
+    "testo": "voi sapete"
+   },
+   {
+    "file": "Cerimonia-delle-100-Asce",
+    "riga": 42,
+    "tipo": "sogg_preverbale",
+    "testo": "se mai un nano del nostro Pugno cadrà"
+   },
+   {
+    "file": "Cerimonia-delle-100-Asce",
+    "riga": 42,
+    "tipo": "stare_gerundio",
+    "testo": "stavano spezzando"
+   },
+   {
+    "file": "Cerimonia-delle-100-Asce",
+    "riga": 42,
+    "tipo": "pron_soggetto",
+    "testo": "Voi non siete nani"
+   },
+   {
+    "file": "Cerimonia-delle-100-Asce",
+    "riga": 42,
+    "tipo": "pron_soggetto",
+    "testo": "Voi avete combattuto"
+   },
+   {
+    "file": "Cerimonia-delle-100-Asce",
+    "riga": 42,
+    "tipo": "pron_soggetto",
+    "testo": "Io vi avevo chiamato"
+   },
+   {
+    "file": "Cerimonia-delle-100-Asce",
+    "riga": 42,
+    "tipo": "pron_soggetto",
+    "testo": "Voi siete tornati"
+   },
+   {
+    "file": "hammerfist_encounters-La",
+    "riga": 482,
+    "tipo": "sogg_preverbale",
+    "testo": "Un'ombra colossale passa"
+   },
+   {
+    "file": "hammerfist_encounters-La",
+    "riga": 1109,
+    "tipo": "sogg_preverbale",
+    "testo": "Un gufo più piccolo degli altri si stacca"
+   },
+   {
+    "file": "hammerfist_encounters-La",
+    "riga": 1141,
+    "tipo": "stare_gerundio",
+    "testo": "stanno avanzando"
+   }
+  ]
+ }
+}

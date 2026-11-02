@@ -101,7 +101,6 @@ class PDFTextLayerAnalyzer:
     def _analyze_page(self, page_num: int) -> PageAnalysis:
         """Analyze a single page for text and image content"""
         page = self.doc[page_num]
-        plumber_page = self.plumber_pdf.pages[page_num]
         
         # Extract text blocks with position
         text_blocks = self._extract_text_blocks(page, page_num)

@@ -17,11 +17,10 @@ attacchi:
   - Distanza lancio di massi +11 (3d8+15, incremento di gittata 55 m)
 ```
 
-> [INFERRED — needs DM confirmation] correzione 3.5 da `scripts/conformita_statblocchi.py`: lotta +30 → **+34**: BAB 12 + For 31 (+10) + Enorme (+8) + **Lottare Migliorato** (+4), talento che la scheda elenca e la lotta non contava. La For 31 è confermata dall'attacco +20.
+> correzione 3.5 da `scripts/conformita_statblocchi.py`: lotta +30 → **+34**: BAB 12 + For 31 (+10) + Enorme (+8) + **Lottare Migliorato** (+4), talento che la scheda elenca e la lotta non contava. La For 31 è confermata dall'attacco +20.
 
-> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «14d8», una parte sola dei dadi vita. I dadi vengono dalla formula che la scheda scrive, il bonus da Cos 23 e Robustezza.
 
-> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
+> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
 Huge giant (earth), CE. **DV 14d8 + 2d12**. **hp 172**. **CA 26** (−2 taglia, +1 Des, +14 naturale, +3 pelle), contatto 9, colto alla sprovvista 25. Iniziativa +1. Vel **15 m** (movimento veloce). Spazio/portata **4,5 m / 4,5 m**.
 **TS** Temp +18, Rifl +5, Vol +7. **BAB/Lotta** +12/**+34**.
@@ -33,7 +32,7 @@ Huge giant (earth), CE. **DV 14d8 + 2d12**. **hp 172**. **CA 26** (−2 taglia, 
 
 - **Ira (1/giorno, 8 round)**: For 35, Cos 27 → **hp 204**, randello **+22/+17 (3d8+18)**, **CA 24**, Vol +9.
 - **Cattura massi (Str)**: Riflessi CD 15 per afferrare al volo un masso lanciato contro di lui — e **rilanciarlo nello stesso round** se ha un'azione. Contro un gruppo che usa il terreno, è la risposta.
-- **Malocchio (Sop, 1/giorno)** — **[INFERRED: unica capacità non attestata di questa scheda]**: come *infliggere maledizione* (Vol **CD 18** nega), gittata 9 m. L'occhio grosso è quello che guarda. **Non è un effetto mentale** — passa il *Mind Blank* di Thorik. Se il DM la vuole togliere, la scheda resta GS 11 senza altri aggiustamenti.
+- **Malocchio (Sop, 1/giorno)** — **unica capacità non attestata di questa scheda**, approvata dal DM con la scheda `[CANONE — DM 2026-08-05]` (`plans/CHANGELOG.md`, L6 INCANTATORI-MEMORABILI): come *infliggere maledizione* (Vol **CD 18** nega), gittata 9 m. L'occhio grosso è quello che guarda. **Non è un effetto mentale** — passa il *Mind Blank* di Thorik. Se il DM la vuole togliere, la scheda resta GS 11 senza altri aggiustamenti.
 
 **Tattiche**: **non carica per prima cosa.** Apre a distanza — due o tre massi da 55 metri mentre il gruppo attraversa lo spazio aperto — e scende in mischia solo quando i PG sono già impegnati con qualcun altro. Con portata 4,5 m e Riflessi in Combattimento minaccia un'area enorme: chi prova a superarlo per arrivare al chierico prende un attacco di opportunità da 3d8+15. Con Sbilanciare Migliorato **atterra e poi colpisce il prono**.
 

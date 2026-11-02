@@ -57,8 +57,8 @@ Verified vs SRD Table: Estimating Magic Item Gold Piece Values:
 | Use-activated or continuous | spell level × caster level × 2,000 gp |
 
 Modifiers: n charges/day → divide by (5 ÷ n); no space limitation ×2;
-uncustomary slot ×1.5; multiple different abilities: ×2 the lesser ability
-costs; charged (50) version of unlimited item = ½ price. Ability bonus
+uncustomary slot ×1.5; multiple different abilities: ×1.5 the lower item
+cost; charged (50) version of unlimited item = ½ price. Ability bonus
 (enhancement) = bonus² × 1,000 gp; AC/natural/deflection = bonus² × 2,000;
 resistance saves = bonus² × 1,000; competence skill = bonus² × 100;
 SR = 10,000 gp per point over SR 12 (min SR 13). (0-level spells count as ½.)
@@ -142,8 +142,8 @@ SR = 10,000 gp per point over SR 12 (min SR 13). (0-level spells count as ½.)
 
 ## Scrolls
 
-**Activation**: Read Magic to identify; Use Magic Device (DC 20+spell level) to use another's scroll
-**Failure**: Roll d% < spell level percentage → wild surge; caster level check to avoid mishap
+**Activation**: *read magic* (or Spellcraft DC 20 + spell level) to decipher; the spell must be on your class list and you need the ability score a caster of that spell would need. Use Magic Device to use any other scroll: **DC 20 + caster level** (SRD, Use Magic Device, «Use a scroll»)
+**Failure**: if the scroll's caster level is higher than yours, caster level check DC = scroll's caster level + 1; on a failure, Wisdom check DC 5 to avoid a mishap
 **Arcane vs Divine**: Arcane casters cannot use divine scrolls without Use Magic Device and vice versa
 
 **Pricing**:

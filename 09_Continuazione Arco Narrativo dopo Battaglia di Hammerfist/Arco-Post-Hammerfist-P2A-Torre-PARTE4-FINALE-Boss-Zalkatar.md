@@ -20,6 +20,17 @@ I PG raggiungono il sanctum di Zalkatar, un illithid warlock/psionico che ha cor
 
 ### 2. Tre fasi dello scontro
 
+**Ozyrrandion nel sanctum (DM 2026-10-18).** Il drago verde adulto (scheda in
+`Bestiario/villain/ozyrrandion-drago-verde-cr14.md`) è qui, accanto a Zalkatar:
+invisibile e sospeso sotto la volta, alta almeno 15 m, sopra il braccio nord.
+Lo scontro è uno solo, a **EL 16** (APL 13 + 3, sotto il tetto di 17). Mentre
+Zalkatar tratta, il drago prova *suggestione* su chi parla; al primo attacco
+soffia sull'imbocco del braccio sud e tiene lontani dalla piattaforma i PG che
+salgono. Il patto fra i due è d'interesse: se Zalkatar cade, fugge o accetta una
+delle opzioni 2-4, Ozyrrandion se ne va dal portale est verso l'Orda, e i PG lo
+ritrovano a Rethmar accanto a Tyrgarun. Le sue tattiche round per round stanno
+nella sua scheda.
+
 **Fase 1 – Duello a Distanza (100–50% pf Zalkatar)**
 
 - Zalkatar combatte da una piattaforma rialzata, usando *Mind Blast*, *Psychic Vampire* e incantesimi di controllo (es. *black tentacles*, *slow*).  
@@ -32,7 +43,7 @@ I PG raggiungono il sanctum di Zalkatar, un illithid warlock/psionico che ha cor
 
 **Fase 3 – Swarm/Caos (sotto 25% pf)**
 
-- Zalkatar evoca un *swarm* di pseudopodi caotici e attiva un “collasso planare” (TS Volontà CD 20 o *confusion*).  
+- Zalkatar evoca un *swarm* di pseudopodi caotici e attiva un “collasso planare” (TS Volontà CD 24 o *confusion*; la CD è quella dello statblocco).  
 - Fine possibile con distruzione, imprigionamento o fuga. [file:46]
 
 ---

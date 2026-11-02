@@ -6,7 +6,7 @@
 > Tarsilia, l'Abbazia della Rotta Sicura). L'ordine l'ha dato il DM il
 > 2026-09-25: *«poi i DEF di ARC-08, poi ARC-09 e tutti gli stand-alone»*.
 >
-> **Stato**: 🟡 D1-D3 decise, A1 approvato e A2 misurato il 2026-09-27; prima di A3 va chiuso F4 di PIANO-LETTORE (ARC-07 al ciclo completo) · **Decisore**: DM ·
+> **Stato**: 🟡 D1-D3 decise, A1 approvato e A2 misurato il 2026-09-27; F4 di PIANO-LETTORE chiuso il 2026-10-15; A3 letto il 2026-10-15; D4 decisa il 2026-10-21 (il flashback dei pregen resta prima), D5 decisa il 2026-10-21 (tutte le consigliate), D6 aperta al DM · **Decisore**: DM ·
 > **Standard**: [`rumblingstone-module-standard`](../skills/rumblingstone-module-standard/SKILL.md)
 > **Gate**: ogni master fa i **sette passi del ciclo completo** di
 > `rumblingstone-module-standard` (scene `### SCENA`, contratto «In scena»,
@@ -148,9 +148,10 @@ si tagliano sulle sessioni che la guida e gli scontri già usano.
 handout, `ARC08-16` cue, e gli eserciti della Guida DM (righe 635-942). Gli
 `APPARATO-ARC08-DEF-*` li genera `componenti.py` (ADR-0074), non si scrivono.
 
-**Fuori dai master**: `ARC08-90…93` (deprecati), i due `ERRATA-ARC08-*` (si
-verifica che siano applicati e basta), `combat_prompts_guide` (prompt d'immagine,
-casa in `campaign/ai-media-prompts/`), lo stub `PIANO-REVISIONE-ARC08`.
+**Fuori dai master**: `ARC08-90…93` (deprecati), `combat_prompts_guide` e lo stub
+`PIANO-REVISIONE-ARC08` sono in `08_…/_ARCHIVIO/` dal 2026-10-16 (vedi «Le
+versioni di ARC-08» sotto A3). I due `ERRATA-ARC08-*` restano vivi finché i
+master non assorbono l'ultimo punto aperto.
 
 ⚠️ **La Cerimonia delle 100 Asce** era canone fissato da non riscrivere (D3 di
 REVISIONE-ARC08). Il DM il 2026-09-27 (Q2): *«controlla prima e se serve la
@@ -285,6 +286,193 @@ duellanti: colonne 16-20 nella prima, 18-22 nella seconda. Solo la seconda è
 centrata sulla griglia 40×40, e in DEF-04 si tiene quella. Nessuna delle due è
 una griglia (`MAPPE-CENSIMENTO`, nota 8).
 
+## A3 · Il canone di ARC-08 contro il tavolo — 🟡 letto il 2026-10-15, D4 decisa il 2026-10-21, aspetta D5
+
+Una lettura in sola lettura, fatta da un agente, dei file vivi di ARC-08 contro il ramo di gruppo
+(`state.md`, log delle sessioni 3 e 4), i master di ARC-07 e le reference
+di coerenza. Il risultato, punto per punto con file e riga, è in
+[`esperimenti/a3-arc08/A3-canone-arc08.md`](esperimenti/a3-arc08/A3-canone-arc08.md).
+
+ARC-08 è scritto come se DEF-5 non esistesse. **43 punti**: 24 contraddizioni
+con il canone giocato o deciso, 10 esiti dati per giocati che non lo sono, 9
+dubbi per il DM. I più pesanti:
+
+- manca la Fase 0 che DEF-5 fissa (il Cuore, poi Fauci ai bastioni, poi il
+  consiglio di guerra); al suo posto c'è mezza giornata di battaglia con i
+  pregen (D4);
+- gli effetti dell'arrivo non sono quelli di DEF-5: CD e danni
+  dell'Apparizione, Dana che cura il re, le Cantitrici di 12° invece che di 5°;
+- «mai il 14°» (`ARC08-10:51`) contro D90 (`DEF-5:546`), e quindi l'audit
+  del tesoro di `ARC08-13` va ricalcolato;
+- 50.000 mo e un feudo promessi ancora in `ARC08-01:2974` e `:3264`, contro
+  D41 e D42.
+
+Ho ricontrollato a mano questi tre riferimenti. La lettura non ha coperto i due file
+`ERRATA-ARC08-*`, che potrebbero già correggere alcuni punti, né le schede del
+Bestiario. Il master S1a li legge prima di scrivere.
+
+Ha trovato anche un errore nel ramo di gruppo: `state.md` dà ancora per «non
+contratti» i due debiti del rito. Lo correggo con una patch solo dopo che il DM
+avrà confermato che il rito è stato giocato.
+
+### Le versioni di ARC-08 — censite e archiviate il 2026-10-16
+
+Il DM, il 2026-10-16: *«controlla che nell'arco 08 ci sono varie versioni […]
+quali sono le più aggiornate, coerenti e complete e quelle che aggiungono
+contenuto […] le altre vanno archiviate»*, e poco dopo: *«anche l'ultima
+versione può richiamare solo parte di altri file, per esempio di mappe o
+sezioni»*. Il confronto è quindi per sezione e per mappa, non per file:
+[`esperimenti/a3-arc08/censimento-versioni-arc08.md`](esperimenti/a3-arc08/censimento-versioni-arc08.md).
+Un file va in archivio solo se nessuna sua parte è la migliore.
+
+- **In `08_…/_ARCHIVIO/`**: `ARC08-90`, `91`, `93`, lo stub del piano di
+  revisione, `combat_prompts_guide`, e `ARC08-92` dopo aver copiato i dodici
+  prompt d'immagine e le due descrizioni che aveva solo lui in
+  `campaign/ai-media-prompts/09_ARC08…` §5.
+- **Si fondono nei master S1**: `ARC08-01` (struttura, dalle Élite in poi) e
+  `hammerfist_encounters`, che **non** è un sottoinsieme della Guida: ha
+  l'incontro 1B «Preparazione», il 2A in tre fasi con i troll, i GS e i PE
+  degli incontri, i discorsi dell'epilogo e i bonus di fine sessione. Si
+  archivia dopo la fusione.
+- **Mappe**: la griglia migliore è sempre in L1-L3, descrizione e immagine
+  nell'atlante COMPLETE. Fuori cartella, `ARC07-DEF-5` (CM-1) e le M7-D/E/F
+  del 1372 sono più nuove per l'Apparizione e la ritirata.
+- Le divergenze degli statblocchi sono in
+  [`esperimenti/a3-arc08/statblocchi-arc08-per-schede.md`](esperimenti/a3-arc08/statblocchi-arc08-per-schede.md),
+  per il lavoro sulle schede (PR #241).
+
+## A4 · Lo standard del giro, dai giri su ARC-07 — 🟡 2026-10-18, norme e script fatti, D7 e D8 decise
+
+Il DM, il 2026-10-18: *«controlla cosa hanno aggiunto ai vari giri nei thread
+che non è ancora diventato standard e che vale la pena aggiungere, non solo le
+mappe»*. L'audit, in sola lettura sui due giri di ARC-07, sulla cartella
+condivisa e sulle PR #246 e #251, è
+[`esperimenti/a3-arc08/AUDIT-GIRI-STANDARD-2026-10-18.md`](esperimenti/a3-arc08/AUDIT-GIRI-STANDARD-2026-10-18.md):
+58 pratiche, nove lacune.
+
+Fatto in questo lotto, con [ADR-0095](adr/ADR-0095-il-giro-ha-correzione-verifica-e-seconda-passata.md) (proposta):
+
+- [x] «Il giro» di `rumblingstone-module-standard` passa da cinque a otto passi:
+  correzione con quattro esiti, verifica di un agente nuovo, seconda passata;
+  il canone dal ramo di gruppo; le mappe corrette in ogni copia; le decisioni
+  del giro nella tabella del piano (B1, B4, B5, B6 dell'audit)
+- [x] `rumblingstone-playtest` §7-bis, la forma di `FIX.md` e `VERIFICA.md`
+- [x] `sviluppo-degli-incontri.md` §17 (quattro domande) e il codice dei rilievi (B3)
+- [x] `campaign-coherence.md`, il ramo di gruppo; `collaudo-mappe.md`, il primo
+  rapporto vero e le due copie; `RULES-VERIFICATION.md`, i mirror e il criterio (B2, testo)
+- [x] cinque righe 🔴 nel registro delle norme e in `superficie_norme.py`
+
+Resta, dopo il sì del DM a D7:
+
+- [x] `conformita_statblocchi.py --master` legge gli statblocchi scritti nei master: pf contro i dadi, CA contro le voci, iniziativa, lotta. È un rapporto e non un cancello. Su ARC-08 oggi dà zero; sulla Guida DM di prima della #241 ne trova nove, Fauci a 312 compreso. Le schede compatte di ARC-07 non le legge (B2)
+- [x] `registro_letture.py --intero` registra le letture sul master intero, e `--ruolo developer` il developer, che non entra fra gli obbligatori del cancello (B7)
+
+<!-- eco: MASTER-DEF 2026-10-18 -->
+- **Decise**: D7, prima le sette pratiche e poi il giro su ARC-08; D8, la copia locale dell'SRD e i lettori uno alla volta.
+- **Aperte**: D4, D5, D6 (flashback, risposte di A3, censimento delle versioni).
+- **Cambiate**: «Il giro» di `module-standard` diceva «in parallelo», ora dice uno alla volta.
+- **Dedotto da me**: `conformita_statblocchi.py` sui master esce come rapporto e non blocca la CI, perché segnalerebbe i master di ARC-07, che sono di un altro thread.
+
+Le lacune B8 e B9 sono delle PR #251 e #246 e sono state girate ai loro thread.
+
+### Il giro su ARC-08, dal 3B alla Cerimonia — ✅ 2026-10-19, D9-D20 decise e applicate
+
+Il primo giro con lo standard di A4: developer, playtester, DM a freddo e
+collaudatore delle mappe, uno alla volta, poi correzione, verifica e seconda
+passata. Rapporti e conti in
+[`esperimenti/giro-arc08-2026-10-19/`](esperimenti/giro-arc08-2026-10-19/README.md):
+13 🔴 e 61 🟠 nelle letture, 74 dopo aver unito i doppi; 37 corretti, 35 al DM,
+1 respinto, 1 residuo; la verifica ha trovato 15 parziali, 0 aperti, 2 🟠 nuovi,
+chiusi nella seconda passata insieme all'Atlante. Restano le dodici decisioni
+D9-D20 e due residui. Le parti dei pregen (Sessioni 1-3A) restano, perché il DM ha deciso D4 così il 2026-10-21, e avranno un giro loro.
+
+Il DM ha scelto le dodici consigliate lo stesso giorno, e sono applicate ai
+file d'arco e al Bestiario (tre schede nuove: bugbear assassino GS 9, gufo
+gigante celestiale GS 6, guardia nera orog GS 7). Cosa è cambiato file per
+file è in
+[`APPLICAZIONE-D9-D20.md`](esperimenti/giro-arc08-2026-10-19/APPLICAZIONE-D9-D20.md).
+
+<!-- eco: MASTER-DEF 2026-10-19 -->
+- **Decise**, tutte come consigliate: D9, Fauci nella versione con la picchiata e il duello; D10, le schede mancanti dall'SRD; D11, Grimjaw al round 12 col corno all'11; D12, il tiro di Guarigione per Re Thorek; D13, mezza giornata senza riposo fino ai bastioni, con l'elenco delle unità nemiche; D14, Orion e la deroga per gli arcieri; D15, il cavaliere e «Se lo divinano»; D16, Lythiel in Sessione 4; D17, 210 caduti; D18, la serata; D19, i PE dell'Appendice C con le righe di scala; D20, due figure nell'Atto 2.
+- **Aperte**: D4, D5, D6; la strada dalla caverna ai bastioni; i 70 élite e i 5 war adept della Sessione 4; la scheda di Lythiel nel Bestiario, che dice ancora un'altra cosa.
+- **Cambiate**: i pf di Fauci senza il P5. La carta diceva 232, ma era un numero sbagliato mio: 232 era nella vecchia mappa un drago già ferito di 80 pf, e `ARC08-10` §4.1 dice che senza il P5 lo statblocco resta invariato. Ora sono 337, il valore più forte e quello della regola.
+- **Dedotto da me**: Fauci scende per scelta, sotto i 100 pf o per finire Thorik (Odio della stirpe), perché la presa di Orion da sola non lo tiene; Dana a 20 pf con un solo *muro di pietra*, perché il canone del 2026-10-18 batte la versione F; un round senza prova di Guarigione conta come fallito.
+
+**La presa di Thorik, 2026-10-19.** Dal thread di ARC-07 arriva una scelta del
+DM: la presa in bocca (*Ghermire*) non è più di Skullcrusher, ed è la firma di
+Fauci contro Thorik, da quando riconosce Aegis Fang. È applicata nella
+picchiata dei round 18-20, con i numeri ricalcolati sulla scheda e riscontrati
+sull'SRD
+([`PRESA-DI-THORIK.md`](esperimenti/giro-arc08-2026-10-19/PRESA-DI-THORIK.md)).
+Restano `[INFERRED]` quattro punti: quante prese per incontro, lo *Scosso* del
+Bane e l'Odio della stirpe sulle prove di lotta, il nome che Fauci pronuncia.
+Il 2026-10-20 il DM ha chiesto le contromosse dei PG secondo l'SRD e una
+variante per aggrapparsi al drago: sono nella scheda di Fauci (`ARC08-02` §1)
+e nella sua copia in `ARC08-01`, con il conto del carico (Fauci regge fino a
+circa 1.665 kg senza rallentare). La variante, Scalare CD 25, è canone del DM;
+che cosa succede sul collo resta `[INFERRED]`.
+Lo stesso giorno il DM ha chiuso i quattro punti: una presa per incontro; lo
+*Scosso* del Bane toglie 2 alle prove di lotta di Fauci; l'Odio della stirpe
+vale anche sulla lotta (+27 con la sola bocca); Fauci non sa i nomi, riconosce
+l'ascia della cicatrice ancestrale e chiama Thorik «Portatore».
+Il DM ha poi confermato le due regole scritte da me: sul collo il drago non
+morde Thorik e lui ripete Scalare CD 25 a ogni turno di Fauci; colpito
+all'ala, se fallisce il TS sui Riflessi, Fauci scende di 22,5 m.
+
+<!-- eco: MASTER-DEF 2026-10-21 -->
+- **Decise**: D4, il flashback con i pregen resta prima del 3B, com'è oggi; la consigliata era saltarlo. D5, carta per carta: le undici risposte di A3 tutte come le consigliate. D21, le zone di Hammerfist dal 372 al 1372. D22, le trappole valgono i giorni 1 e 2.
+- **Aperte**: D6, una carta per domanda (manca `combat_prompts_guide`); il giro sulle Sessioni 1-3A, che con D4 restano nel master; la strada dalla caverna ai bastioni; i 70 élite e i 5 war adept della Sessione 4; la scheda di Lythiel nel Bestiario.
+- **Cambiate**: S1a non parte più dal consiglio di guerra di DEF-5 ma dal flashback dei pregen, e i bonus D9 si leggono da come va il flashback, non dai valori di default.
+- **Dedotto da me**: la carta su Dana era scritta male (sembrava il soffio): il DM ha precisato che il soffio lo prende il re, e ha tenuto D92 com'è (Dana fa da scudo al re contro le frecce in caverna). La carta sulle ferite segnate le attribuiva alla Fase 0: sono i colpi su Skullcrusher nel duello di ARC-07; la risposta non cambia.
+
+Lo stesso giorno il DM ha chiesto come far accettare i pregen ai giocatori, e
+ha proposto lui la cornice: i tre giorni dell'assedio sono una visione della
+Corona dentro lo strappo del Rubino, fra la Scena 1 e la Scena 2 di DEF-5.
+È l'handout 0 di `ARC08-15`, con le regole al tavolo in chiaro e una nota per
+il DM. Resta `[INFERRED]` che la *Mente Vuota* di Thorik non blocchi la
+visione. Il giro sulle Sessioni 1-3A comincia dalle schede dei pregen negli
+handout 1-4, che hanno ancora i numeri di prima della correzione del
+Bestiario del 2026-10-16 (Borin CA 24 invece di 25, Dara 98 pf invece di
+102, Thorin 108 invece di 114, Nala 84 invece di 90).
+
+Sempre il 2026-10-21 il DM ha chiesto di far giocare l'assedio come battaglia
+campale, con un libretto di poche pagine per giocatori e DM e tre modi di
+giocare (solo i pregen, le truppe, i pregen alla testa delle truppe). È
+`ARC08-18-LIBRETTO-BATTAGLIA-CAMPALE.md` ([ADR-0096](adr/ADR-0096-la-battaglia-campale-si-gioca-con-un-libretto.md),
+proposta), tarato con le simulazioni di
+`plans/esperimenti/battaglia-campale-2026-10-21/`. Le sessioni diventano 0
+(regole e battaglia di prova), poi 1, 2 e 3a. Poi il DM ha tenuto
+l'avvistamento e spostato la prova nella Sessione 1: una scaramuccia
+dell'avanguardia in cui i pregen scavano trappole. Le sessioni restano tre, e
+il libretto ha ora il terreno, le macchine e le capacità dei reparti; quelle
+dell'orda stanno in `ARC08-19`, solo per il DM. I bonus si leggono da
+`ARC08-10` §5.4-bis, `[INFERRED]`.
+Ogni pregen ha la sua carta dei poteri con i numeri già fatti (handout 1-4
+bis), e le schede degli handout 1-4 hanno ora i numeri del Bestiario. Chi non
+vuole un pregen gioca il capitano o l'orda (libretto §9). Manca la prova al
+tavolo.
+
+Il giro sulla Sessione 1 coi pregen (quattro letture a freddo, poi il
+[triage](esperimenti/giro-arc08-sessione1-2026-10-21/TRIAGE.md) in 60 voci)
+ha avuto la prima correzione il 2026-10-21, sui file che non sono la
+Sessione 1: libretto (`ARC08-18`), segreti dell'orda (`ARC08-19`), handout
+(`ARC08-15`) e script della battaglia campale. Le trappole valgono il Giorno 1
+o il Giorno 2, i giganti tirano un macigno per settore, la ritirata
+dell'avanguardia è di gruppo; con le prove rifatte la riga «Feroce» del
+libretto passa a 8-9 su 10 di breccia contenuta. L'avanguardia ha un mazzo
+per round, il sergente uno statblocco, la ricognizione pattuglia e scout dalle
+schede di *Red Hand of Doom* (non SRD). I pregen hanno abilità, lingue e
+caratteristiche, col conto in
+[`ABILITA-PREGEN.md`](esperimenti/giro-arc08-sessione1-2026-10-21/ABILITA-PREGEN.md).
+Restano la Sessione 1 riscritta a scene (`ARC08-01`), `ARC08-10`, `ARC08-02`,
+la mappa del pendio e le due voci per il DM (quando si spiega il libretto, e
+se il §12 resta nel libretto dei giocatori).
+Il 2026-10-21 la Sessione 1 riscritta a scene è diventata il master S1a (sotto),
+con `ARC08-10` §5.1 e §5.4-bis, le schede di `ARC08-02` §3 e la mappa del
+pendio. Le due voci sono decise: il libretto si spiega a pezzi (T28), e il §12
+del libretto passa nei segreti dell'orda come §4 (T31: lo sposta il
+coordinatore dopo S1a; il master punta già lì).
+
 ## FASE 2 — Sviluppo / attuazione
 
 Un lotto per master, nell'ordine dato dal DM. Ogni lotto è **K** per la parte
@@ -297,6 +485,42 @@ tabella A1. Statblocchi inclusi dal Bestiario con `#statblocco` (ADR-0074). In
 S1d la Cerimonia delle 100 Asce si misura prima (Q2 del DM) e si riscrive solo
 nella forma.
 
+- [x] **S1a** · `ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md` — **scritto, giro da fare**
+  (2026-10-21). Dieci scene in ordine di tempo (apertura, notte prima,
+  rapporto, 1A ricognizione, 1B-1 Consiglio, 1B-2 Preparazione, 1C drago, 1D
+  avanguardia, 1E presagi, notte dei fuochi), la tabella delle leve, gli
+  statblocchi compatti scritti a mano dal Bestiario e da `ARC08-19` §2 (non
+  con `#statblocco`: le schede di *Red Hand of Doom* nel Bestiario non hanno
+  il recinto), la MAPPA 1D in `Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md`.
+  Correzioni applicate dal triage: T1-T3, T5-T8, T10-T13, T16-T22, la parte
+  di `ARC08-01` di T4, T9, T14, T15, T44, T52, T56, e T57-T59. Restano i passi
+  6-7 del ciclo (lettore e playtester a freddo).
+- [x] **S1b** · `ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md` — **scritto, giro da fare**
+  (2026-10-22). Nove scene in ordine di tempo, dal Day 16 al Day 18: l'alba
+  del Giorno 1 con le leve della Sessione 1 e l'ultimo pezzo del libretto,
+  l'assalto alle mura col libretto (2A) con Gorthak sul ponte e il sorvolo del
+  drago, la notte, il Giorno 2 della breccia con Grimjaw (2C) e le Cantitrici
+  (2D), la notte, il Giorno 3 col corno e il soffio sul Re (2E e 2B sulla
+  2B-CORRETTA), la ritirata (H3-1), l'incrocio silenzioso (2F, 3Z), la porta di
+  mithral; la tabella dei bonus verso `ARC08-10` §5.2-5.3, le tattiche dei
+  comandanti round per round, gli statblocchi compatti; le mappe solo per
+  rimando. La Sessione 2 di `ARC08-01` rimanda al master. Dodici scelte
+  `[INFERRED]` sono domande per il DM nel blocco d'apparato in testa al
+  master (il Giorno 3 qui o nella Sessione 3, le baliste contro Fauci, il Re a
+  8 pf, Gorthak a metà, i troll, lo sportello, Grimjaw senza sfidante, la
+  riserva a +3, le frecce di Dara, i nani al Cuore, il sorvolo, il Re ferito
+  nel libretto). Restano i passi 6-7 del ciclo.
+  **Giro fatto il 2026-10-22** ([triage](esperimenti/giro-arc08-sessione2-2026-10-22/TRIAGE.md),
+  [verifica](esperimenti/giro-arc08-sessione2-2026-10-22/VERIFICA.md)):
+  quattro letture a freddo, 177 rilievi (1 🔴, 63 🟠, 113 🟡) in 41 voci e 5
+  respinte; corrette tutte tranne T18 e T26, limiti dichiarati. La domanda 1
+  (il Giorno 3 qui, A di default) e la 3 (il Re a 8 pf fissi per l'acido)
+  sono `[CANONE — DM 2026-10-22]`, e il Re ha una procedura, «Il conto del
+  Re»; la ritirata ha un tiro, i bugbear l'Osservare contrapposto, Fauci gli
+  attacchi a terra. Sei domande nuove al DM (13-18). La verifica: nessun 🔴,
+  19 voci chiuse e 6 parziali, 13 rilievi nuovi corretti nella seconda
+  passata salvo il peso del master (22.400 parole).
+
 **S2 · ARC-09, i master del seguito** `[engine: Opus · effort: xhigh · qualità: ciclo del master, passi 1-7, su ognuno dei dodici]`
 Fonti nella tabella A1. Un sotto-lotto per master (S2a-S2l). Qui confluiscono S5
 (la Torre) e S6 (la Battaglia Finale) di MESTIERE-BANCHI. I nomi di abilità
@@ -306,12 +530,16 @@ della 5ª edizione trovati in A2 si correggono nel master che li contiene.
 È già vicino allo standard. Il lotto porta il contratto «In scena» (F5 di
 PIANO-LETTORE) e i quattro rilievi aperti di `domande_developer` (Riflessi e
 Volontà sull'intero modulo). **Non** diventa un `ARC*-DEF-*`: resta uno
-stand-alone ADR-0017.
+stand-alone ADR-0017. Da PIANO-LETTORE arrivano anche le **sette sezioni senza box**, fra cui la
+rivelazione del Drappo di Lino Rasca (Giorno 3 §8), e il foglio del cast come
+fonte delle schede (F5 di quel piano, spostata qui dal DM il 2026-10-12).
 
 **S4 · L'Abbazia** `[engine: Opus · effort: medio · qualità: validate_standalone + ciclo del master, passi 1, 2 e 4 come note]` — confermato dal DM (D3, 2026-09-27). Salta i passi 3 e 5-7: la prosa non cambia, e quei passi misurano la prosa
 Solo forma: il contratto «In scena», e i rilievi di `domande_developer`
 (l'invisibilità al corpo di guardia, Riflessi e Volontà), come note del DM e non
-come prosa riscritta.
+come prosa riscritta. Da F5 di PIANO-LETTORE (spostata qui il 2026-10-12) arriva una domanda per
+il DM: l'Atto II e le stanze in stile *keyed* vogliono un box a stanza? Con
+D3 («solo forma») la risposta di partenza è no.
 
 ## FASE 3 — Testing / validazione
 
@@ -333,6 +561,25 @@ Per ogni master, prima di chiudere il lotto:
 | ~~D1~~ | A1 | ✅ **Decisa il 2026-09-27.** ARC-08: **quattro master**; ARC-09: **uno per beat**, circa dodici. Le fonti hanno spostato il taglio di ARC-08 rispetto alla proposta (il passaggio pregen → PG cade a metà della Sessione 3, non fra due master): la tabella in «A1» taglia per sessione, e attende l'OK |
 | ~~D2~~ | S1-S2 | ✅ **Decisa il 2026-09-27: rifinire.** I master nascono completi di read-aloud, battute, contingenze e vie non combattive. Chiude anche la D2 di MESTIERE-BANCHI: confluiscono qui S5 e S6. S4 resta là perché riguarda ARC-07 (vedi §1) |
 | ~~D3~~ | S4 | ✅ **Decisa il 2026-09-27: sì, solo forma.** Il contratto «In scena» e i rilievi di `domande_developer` come note del DM; nessuna riga di prosa cambiata, coerente con la D1 di MESTIERE-BANCHI |
+| ~~D4~~ | A3 | ✅ **Decisa il 2026-10-21: prima, com'è oggi.** Il flashback con i pregen di ARC-08: **salta** (S1a parte dal consiglio di guerra di DEF-5, e i bonus D9 prendono i valori di default), **dopo** (giocato come ricordo) o **prima** (com'è oggi)? La consigliata era salta; il DM tiene le Sessioni 1-3A con i pregen prima del 3B, e S1a parte da lì |
+| ~~D5~~ | A3 | ✅ **Decisa il 2026-10-21, una per una, tutte come le consigliate**: il bane di A7 non si somma al +2 del carry-over; il tetto di 3 ferite segnate resta; il log della sessione 4 si corregge secondo DEF-4; Dana viva (e D92 resta: in caverna fa da scudo al re contro le frecce, mentre il soffio lo ha preso il re); gli echi di DEF-4 entrano; Tempestas presente con la tempesta; Borin e Dara sulle asce sono i pregen, con i cognomi giusti e solo se muoiono; 118 diventa 109; runa +2 a Diplomazia; Aegis Fang allo Stadio 1 all'arrivo; vale D90 (14° al primo riposo dopo Hammerfist). Si applicano nei master di ARC-08 (S1a e seguenti) |
+| D6 | A3 | Le domande del censimento delle versioni (D1-D4, D6-D15 nel file, le consigliate fra parentesi): soffio di 2B su Riflessi; PF di Fauci dal massimo della sua scheda meno il carry-over; bonus della carica ricalcolato; cancello a 120 PF; `hammerfist_encounters` archiviato dopo la fusione; i troll in 2A; 210 asce sul campo e 100 in sala; 1B con Consiglio e poi Preparazione; 8 giganti; morale +3; la revisione r1 di `hammerfist_encounters` scartata; Cuore a 1,5 m; onori di `ARC08-17`; ERRATA archiviati quando i master li assorbono. Consigliata: sì a tutte |
+| ~~D7~~ | A4 | ✅ **Decisa il 2026-10-18: prima le sette.** Le norme del giro restano scritte nelle skill (ADR-0095) e si fanno anche i due script: `conformita_statblocchi.py` sugli statblocchi dei master, come rapporto e non come cancello, e `registro_letture.py` per le letture intere e il developer. Poi il giro su ARC-08 |
+| ~~D8~~ | A4 | ✅ **Decisa il 2026-10-18: SRD locale, uno alla volta.** I numeri si verificano sulla copia markdown dell'SRD 3.5 (OGL, fuori dal repo), coi mirror come ripiego; i lettori del giro leggono uno alla volta, e «Il giro» di `module-standard` lo dice |
+| ~~D9~~ | giro | ✅ **Decisa il 2026-10-19: F, l'unica in cui i PG affrontano il boss.** Fauci di Palude: la versione F (si schianta ai round 18-20 e duella coi PG, Thorik in punta), quella di A e B (fugge al round 5 e lo combattono i PNG) o un ibrido (fugge sotto i 50 pf, salvo che i PG lo inseguano in volo)? I pf di partenza sono 337 meno il carry-over (337 se il P5 non è stato giocato: la carta diceva 232 per errore, vedi l'eco del 2026-10-19). Applicata in `esperimenti/giro-arc08-2026-10-19/APPLICAZIONE-D9-D20.md` |
+| ~~D10~~ | giro | ✅ **Decisa il 2026-10-19: aggiungerle dall'SRD.** Le schede che mancano (bugbear, guardie orog di Grimjaw, gufi giganti): aggiungerle a `Bestiario/mostri/` dall'SRD, o sostituirle con schede che esistono? Applicata in `esperimenti/giro-arc08-2026-10-19/APPLICAZIONE-D9-D20.md` |
+| ~~D11~~ | giro | ✅ **Decisa il 2026-10-19: round 12 col corno all'11.** Quando arriva Grimjaw nel 3B: al round 12 con un corno al round 11, ai round 9-10 insieme ai PG, o ai round 14-15? Applicata in `esperimenti/giro-arc08-2026-10-19/APPLICAZIONE-D9-D20.md` |
+| ~~D12~~ | giro | ✅ **Decisa il 2026-10-19: il tiro.** Re Thorek morente: Guarigione CD 25 a ogni round finché nessuno lo cura per magia, e tre fallimenti lo uccidono, oppure la morte per scelta del DM? E Dana, 20 pf e un muro o metà delle risorse? Applicata in `esperimenti/giro-arc08-2026-10-19/APPLICAZIONE-D9-D20.md` |
+| ~~D13~~ | giro | ✅ **Decisa il 2026-10-19: il default.** Dalla caverna ai bastioni: mezza giornata senza riposo lungo (il default scritto), oppure un riposo di 8 ore e gli scontri della Sessione 4 alzati? Si aggiunge l'elenco delle unità nemiche ancora in campo, che il Registro vuoto non dà. Applicata in `esperimenti/giro-arc08-2026-10-19/APPLICAZIONE-D9-D20.md` |
+| ~~D14~~ | giro | ✅ **Decisa il 2026-10-19: Orion e la deroga.** La tempesta della 4A: Orion lancia *controllare il tempo* prima della battaglia, con una deroga dichiarata per gli arcieri alleati; solo vento violento; o la tempesta piena dell'SRD, senza attacchi a distanza? Applicata in `esperimenti/giro-arc08-2026-10-19/APPLICAZIONE-D9-D20.md` |
+| ~~D15~~ | giro | ✅ **Decisa il 2026-10-19: scriverli.** Il cavaliere di Fauci: tre cose che sa e un blocco «Se lo divinano», scritti dopo D9, oppure muore o tace? Applicata in `esperimenti/giro-arc08-2026-10-19/APPLICAZIONE-D9-D20.md` |
+| ~~D16~~ | giro | ✅ **Decisa il 2026-10-19: lo stato del gruppo.** Lythiel cavalca coi gufi e riconosce Hella in Sessione 4, come dice lo stato del gruppo, oppure il riconoscimento slitta alla Cerimonia? Applicata in `esperimenti/giro-arc08-2026-10-19/APPLICAZIONE-D9-D20.md` |
+| ~~D17~~ | giro | ✅ **Decisa il 2026-10-19: 210.** I 210 caduti: 118 + 92, coi 9 di Drellin's Ferry nominati nel Giuramento ma non contati, e i superstiti dal Registro PFU; oppure il numero sale a 219? Applicata in `esperimenti/giro-arc08-2026-10-19/APPLICAZIONE-D9-D20.md` |
+| ~~D18~~ | giro | ✅ **Decisa il 2026-10-19: il default.** La serata: il 3B e la Sessione 4 insieme e la Cerimonia la serata dopo (il default scritto), oppure solo il 3B? Applicata in `esperimenti/giro-arc08-2026-10-19/APPLICAZIONE-D9-D20.md` |
+| ~~D19~~ | giro | ✅ **Decisa il 2026-10-19: l'Appendice C.** EL e PE del 3B e della 4A: l'Appendice C (2.600 e 4.600 PE al gruppo) togliendo l'EL 17 dichiarato, o l'EL 17 con lo scontro reso davvero tale? Poi le righe di scala. Applicata in `esperimenti/giro-arc08-2026-10-19/APPLICAZIONE-D9-D20.md` |
+| ~~D20~~ | giro | ✅ **Decisa il 2026-10-19: due.** Il box dell'Atto 2 della Cerimonia: due figure venute da fuori e non insieme, come dicono le note per il DM dello stesso file, oppure le tre figure coordinate del box originale? Applicata in `esperimenti/giro-arc08-2026-10-19/APPLICAZIONE-D9-D20.md` |
+| ~~D21~~ | zone | ✅ **Decisa il 2026-10-21, carta per carta, tutte come le consigliate.** Le zone di Hammerfist dal 372 al 1372 ([`ZONE-HAMMERFIST-372-1372.md`](esperimenti/a3-arc08/ZONE-HAMMERFIST-372-1372.md)): la «Porta Ovest» di DEF-5 è la Torre Ovest con il bastione G1, e le sei torri che Fauci abbatte sono le sei postazioni (2 torri e 4 bastioni); il tunnel della statua scende al Cuore (D48), si corregge L3; la porta dal cortile alla montagna c'è, è l'atrio della cittadella e cade il Giorno 3; la bocca del tunnel sta dietro la statua; il cortile è quello di L2 (la porta della targa del 372 è la Porta Interna); la statua del Re Antenato è il nonno di Re Thorek I; una delle dieci statue del Cuore è Re Thorek I; tutte le proposte `[INFERRED]` del rapporto adottate. Più le scale delle mappe dal thread delle mappe di ARC-07, da rifare |
+| ~~D22~~ | giro S1 | ✅ **Decisa il 2026-10-21: giorni 1 e 2.** Una trappola dell'avanguardia annulla una tacca del Giorno 1 o del Giorno 2 (DEVELOPER R7: breccia chiusa 67/75/84/89% con 0/2/4/6 trappole) |
 
 ## Come si riparte in una chat nuova
 
@@ -340,6 +587,5 @@ Per ogni master, prima di chiudere il lotto:
 2. leggere questo piano e `plans/STATO-E-ORDINE-DEI-PIANI.md` §4 (le decisioni
    aperte al DM);
 3. D1-D3 sono decise, la tabella A1 è approvata e A2 è misurato
-   (2026-09-27). Prima di A3 va chiuso **F4 di PIANO-LETTORE** (ARC-07 al
-   ciclo del master, DEF-5 per primo). **F6-a** (il cancello che vede un master
+   (2026-09-27). F4 di PIANO-LETTORE è chiuso (2026-10-15) e A3 è letto e D4 è decisa (il flashback resta prima): si riparte da D5, poi il giro sulle Sessioni 1-3A e S1a. **F6-a** (il cancello che vede un master
    senza scene), che serviva prima di S1, è ✅ dal 2026-09-27. Vedi §1-bis.

@@ -51,16 +51,24 @@ CATALOGO = yaml.safe_load(
 #: (ADR-0053): un'esclusione senza motivo scritto e' indistinguibile da una
 #: dimenticanza, ed e' cosi' che questo cancello aveva perso l'Abbazia.
 FUORI_RAGGIO = {
+    "05_aa-stanza-runica/ARC05-STANZA-RUNICA-TRASCRIZIONE.md":
+        "trascrizione d'archivio dei PDF (RICERCA-ARCHI-SENZA-TESTO D1-D6, decise il 2026-10-23): "
+        "le voci POINTER entrano con P30-a, insieme alle schede che mancano nel Bestiario",
     "06_Stanza-corona-di-adamantio/StanzaCoronaDiAdamantio/00-La Corona di Adamantio-ogetto&Prove/000_Guida_Dm_Corona_adamantio_ogetto_prove_rituali_sfide.md":
         "guida all'artefatto: le marche sono bonus di gemme e CD di rituali, non creature",
     "06_Stanza-corona-di-adamantio/StanzaCoronaDiAdamantio/00-La Corona di Adamantio-ogetto&Prove/00_corona_di_adamantio_momento_risveglio_1_prova_scheda_giocatore.md":
         "scheda per il giocatore della Corona: poteri dell'artefatto, nessuna creatura",
     "07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md":
         "schede dei PG (§1 «Il party degli avventurieri»): i PG non stanno nel Bestiario",
+    "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md":
+        "handout dei pregen per i giocatori: copie delle schede, che stanno in Bestiario/png/ (2026-10-21)",
     "08_La Battaglia Di Hammerfist/mass_combat_guide_Dm.md":
         "sistema di combattimento di massa: le statistiche sono esempi di unita', non un roster",
     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1C-Rituale-COMPLETO-SCALE.md":
         "regia del rituale; i drow delle tre ondate hanno schede proprie in Bestiario/mostri/drow-*",
+    "10-stand-alone/L'abbazia Della Rotta Sicura/indice_maestro.md":
+        "indice del dry-run: l'unica scheda e' Fra' Timoteo (correzione D11, ADR-0105), PNG che non "
+        "combatte e senza GS dichiarato, quindi niente da dare al pool degli incontri",
 }
 
 #: Dove una voce puo' dichiarare il proprio bersaglio.

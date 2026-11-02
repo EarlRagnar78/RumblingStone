@@ -5,7 +5,7 @@
 > **Scopo**: dare a ogni tratta di viaggio dell'arco (Day 20-42) la sua tabella
 > d%, con **EL dichiarato** e **≥ 1/3 di voci non-combat**. Riusa gli incontri già
 > pronti delle **MISSIONI-BREVI** e le fazioni/PNG esistenti — non introduce canone.
-> **Regola §0.2**: solo 3.5 SRD/MM. Statblock via `Bestiario/`.
+> **Regola §0.2**: solo 3.5 SRD/MM e le creature canoniche del `Bestiario/`. Statblock via `Bestiario/`.
 
 ---
 
@@ -91,10 +91,10 @@
 |---|---|---|---|
 | 01-14 | 🕊 **Ultima carovana di Sal in fuga** — se l'olio di sabotaggio è stato pagato, eco a Rethmar (Fase 1). | — | Non-combat |
 | 15-27 | 🕊 **Esploratore ferito di Rethmar/Brenna** con dispacci sull'orda (intel −1 CR a una fase, come Rhest). | — | Non-combat |
-| 28-42 | **Colonna di fanteria della Mano Rossa** (retroguardia). `.../thayan-heavy-infantry-cr3.md` ×6 + `.../hobgoblin-captain-cr8.md`. | 13 | Combat |
+| 28-42 | **Colonna di fanteria della Mano Rossa** (retroguardia). `.../thayan-heavy-infantry-cr3.md` ×6 + `.../hobgoblin-captain-cr8.md`; oppure, in testa alla colonna, `.../furia-della-mano-cr10.md` ×3 dietro 6 fanti. | 13 | Combat |
 | 43-57 | **Cavaliere Thayan + Mago Rosso** (mercenari alleati dell'orda). `.../thayan-knight-cr8.md` + `.../thayan-red-wizard7-cr9.md`. | 12 | Combat |
 | 58-72 | **Élite Warpriest di Tiamat** (sacrifici lungo la marcia). `.../tiamat-warpriest-elite-cr11.md`. | 12 | Combat |
-| 73-86 | **Razorfiend** (colore a scelta) in caccia. `.../razorfiend-red-cr9.md`. | 11 | Combat |
+| 73-86 | **Razorfiend** (colore a scelta) in caccia, `.../razorfiend-red-cr9.md` (EL 11); oppure **lucertole del tuono** sotto la sabbia della pista, `.../lucertola-del-tuono-cr10.md` ×3 (EL 13). | 11-13 | Combat |
 | 87-96 | **Comandante Teschio Nero** con distaccamento. `.../teschio-nero-commander-cr10.md`. | 13 | Combat |
 | 97-00 | 🕊 **Bivio morale**: un villaggio da evacuare mentre l'orda si avvicina (nessun nemico — scelta di tempo). | — | Non-combat |
 
@@ -156,7 +156,7 @@
 | 15-30 | **Orda di non-morti traboccante** (la fabbrica è al massimo). `.../skeletal-dire-lion-cr6.md` ×2 + `.../deathlock-cr8.md`. | 12 | Combat |
 | 31-47 | **Bone Naga** + scheletri élite. `.../bone-naga-cr10.md` + non-morti SRD. | 12 | Combat |
 | 48-64 | **Aberrazione fungina alfa** (eco MB-2/4, spore aggressive). | 12 | Combat |
-| 65-80 | **Distaccamento della Mano Rossa** che raccoglie non-morti come truppa. `.../emissario-red-hand-cr12.md` + non-morti. | 13 | Combat |
+| 65-80 | **Distaccamento della Mano Rossa** che raccoglie non-morti come truppa. `.../emissario-red-hand-cr12.md` + non-morti, oppure `.../spezzamente-kulkor-zhul-cr12.md` + non-morti. | 13 | Combat |
 | 81-93 | 🕊 **Il Ghostlord in persona** (se non ancora incontrato) — scena di trattativa, non scontro obbligato (vedi `...P3-Ghostlord-LICH-ALLEANZA-TESTO.md`). | — | Non-combat |
 | 94-00 | **Avatar minore di Madre dei Funghi** (se un rituale non fu interrotto). | 13 | Combat |
 
@@ -174,6 +174,24 @@
 - **Intel di viaggio**: gli incontri 🕊 con esploratori/dispacci possono concedere il
   bonus "intel → −1 CR a una fase" già canonico a Rhest (`...P2-RHEST-CONSEGUENZE-ESITI.md`).
 
+### 5.1 Le creature della Mano Rossa nella fase avanzata
+
+Tre voci Day 31-42 (2.2 28-42, 2.2 73-86, 4.2 65-80) offrono una seconda
+composizione con le creature del Bestiario ricostruite dalla web enhancement di
+*Red Hand of Doom*: Furia della Mano, lucertola del tuono e Spezzamente del
+Kulkor Zhul. Le fasce d% non cambiano; il DM sceglie la composizione. Le schede
+e le combinazioni pronte sono indicizzate in
+`Arco-Post-Hammerfist-CREATURE-MANO-ROSSA-INDICE.md`.
+
+---|---|---|---|
+| 2.2, 28-42 | colonna di fanteria | 3 Furie della Mano (§4) dietro 6 fanti regolari | 13 |
+| 2.2, 73-86 | Razorfiend in caccia | 3 lucertole del tuono (§3) sotto la sabbia della pista | 13 |
+| 4.2, 65-80 | distaccamento con l'emissario | Spezzamente del Kulkor Zhul (§2) e i suoi non-morti | 13 |
+
+⚠️ Queste creature sono ricostruite su regole SRD 3.5, ma l'idea viene da un
+supplemento privato (la web enhancement di *Red Hand of Doom*). Escono quindi
+dalla regola «solo 3.5 SRD/MM» di questa tabella: usarle è una scelta del DM.
+
 ---
 
 ## 6. Checklist di sessione (DM)
@@ -189,7 +207,7 @@
 ## 7. Cross-link
 
 - **Incontri lunghi riusati:** `Arco-Post-Hammerfist-P3-MISSIONI-BREVI-CR12-TESTO.md` (MB-1…6) · `...-STATBLOCCHI-FUNGHI-GITH-DROW.md`
-- **Statblock unità:** `Bestiario/`
+- **Statblock unità:** `Bestiario/` · creature della Mano Rossa della §5.1: `Arco-Post-Hammerfist-CREATURE-MANO-ROSSA-INDICE.md`
 - **Profughi (zona bosco/Thornwaste):** `Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md`
 - **Sal mercante (deserto/Vale):** `Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md`
 - **Cisterne/spore drow (Vale/bosco):** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md`

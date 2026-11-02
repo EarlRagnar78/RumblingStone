@@ -166,5 +166,30 @@ class TestNumerazioneAree(unittest.TestCase):
         self.assertEqual(w, [])
 
 
+class TestFamiglie(unittest.TestCase):
+    """Dal 2026-11-01 anche il Drappo (master markdown) sta in `10-stand-alone/`:
+    la famiglia la dice il contenuto, non il prefisso della cartella."""
+
+    def test_markdown_e_html_nella_stessa_radice(self):
+        import validate_standalone as vs
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            md = root / "10-stand-alone" / "Modulo-md"
+            md.mkdir(parents=True)
+            (md / "00-HUB.md").write_text("# hub", encoding="utf-8")
+            (md / "homebrew").mkdir()
+            (md / "homebrew" / "x.html").write_text(BUONA, encoding="utf-8")
+            ht = root / "10-stand-alone" / "Modulo html"
+            ht.mkdir()
+            (ht / "pagina.html").write_text(BUONA, encoding="utf-8")
+            vecchio, vecchia = vs.ROOT, vs.HTML_ROOT
+            try:
+                vs.ROOT = root
+                self.assertEqual([p.name for p in vs.module_dirs(None)], ["Modulo-md"])
+                self.assertEqual([p.name for p in vs.html_module_dirs(None)], ["Modulo html"])
+            finally:
+                vs.ROOT, vs.HTML_ROOT = vecchio, vecchia
+
+
 if __name__ == "__main__":
     unittest.main()

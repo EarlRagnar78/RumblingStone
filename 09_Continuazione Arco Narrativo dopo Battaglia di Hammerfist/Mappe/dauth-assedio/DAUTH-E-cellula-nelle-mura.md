@@ -21,9 +21,9 @@ COLONNE:  A B C D E F G H
 
 @north N
 @tipo tattica interni
-@collega G02 ; fuori mappa ; dove porta la botola la carta non lo dice [INFERRED — needs DM confirmation]
+@collega G02 ; fuori mappa ; la botola scende al condotto di scolo sotto le mura, da dove è entrata la cellula e da dove fugge
 @collega E02 ; fuori mappa ; il camminamento nord, da cui si sente raspare, non ha una griglia
-@mark 1 ; B6 ; Sabotatore con la chiave (Ladro 7) [INFERRED — needs DM confirmation]
+@mark 1 ; B6 ; Sabotatore con la chiave (Ladro 7)
 @mark 2 ; D6 ; Guerriero drow (drow-fighter3-cr4); in alternativa un deathlock-cr8 (GS 4)
 ```
 
@@ -40,7 +40,7 @@ COLONNE:  A B C D E F G H
 
 | Fazione | Unità | Token | Q.tà | GS/EL | Area (coord.) |
 |---|---|---|---|---|---|
-| Guastatori | Sabotatore con la chiave (Ladro 7) [INFERRED — needs DM confirmation] | 🔴 | 1 | — | B6 |
+| Guastatori | Sabotatore con la chiave (Ladro 7) | 🔴 | 1 | — | B6 |
 | Guastatori | Guerriero drow (drow-fighter3-cr4); in alternativa un deathlock-cr8 | 🔴 | 2 | GS 4 | C6–D6 |
 
 - **Disposizione iniziale**: [chi è dove e perché — vedi tabella Forze]

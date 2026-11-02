@@ -1,0 +1,282 @@
+[
+ {
+  "id": 1,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (LotR lead) — il passaggio.** *Per un istante lunghissimo i\n> colori si rovesciano, e vi passano davanti vite intere di nani: nascono,\n> battono il ferro, invecchiano, in un tempo più corto di un respiro. Poi torna\n> il peso, e con il peso il freddo. Le ferite non ci sono più.*\n>\n> *Siete in piedi in un bosco. Gli alberi sono vecchi, le radici grosse come un\n> uomo sdraiato, e l'aria sa di foglie marce e di fumo lontano. Il sole è già\n> dietro il crinale. Uno di voi ha le ginocchia bagnate e non si ricorda di\n> essere caduto.*",
+  "nuovo": "> **Read-aloud (LotR lead) — il passaggio.** *Per un istante lunghissimo i\n> colori si rovesciano, e vi passano davanti vite intere di nani: nascono,\n> battono il ferro, invecchiano, in un tempo più corto di un respiro. Poi torna\n> il peso, e con il peso il freddo. Le ferite non ci sono più.*\n>\n> *Siete in piedi in un bosco. Gli alberi sono vecchi, le radici grosse come un\n> uomo sdraiato, e l'aria sa di foglie marce e di fumo lontano. Il sole è già\n> dietro il crinale. Uno di voi ha le ginocchia bagnate e non si ricorda di\n> essere caduto.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: box già buono per l'ascolto (periodi brevi, ultima immagine che resta, dettagli sensoriali fitti); ogni ritocco toccava fatti o sensi."
+ },
+ {
+  "id": 2,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (LotR lead) — la fortezza, da lontano.** *A ovest, fra i\n> tronchi, si vedono le torri di una fortezza che conoscete, più basse di come\n> le ricordate. Più in là, verso sud, i fuochi dell'orda cominciano ad\n> accendersi uno alla volta, e non finiscono. Sopra le mura gira un'ombra con le\n> ali. Fa un cerchio lento, poi un altro, e non scende.*",
+  "nuovo": "> **Read-aloud (LotR lead) — la fortezza, da lontano.** *A ovest, fra i\n> tronchi, si vedono le torri di una fortezza che conoscete, più basse di come\n> le ricordate. Più in là, verso sud, i fuochi dell'orda cominciano ad\n> accendersi uno alla volta, e non finiscono. Sopra le mura gira un'ombra con le\n> ali. Fa un cerchio lento, poi un altro, e non scende.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: quattro frasi corte in ordine di sguardo, chiude sull'ombra che non scende; nessun difetto per l'ascolto da correggere senza toccare il senso."
+ },
+ {
+  "id": 3,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (LotR lead) — la porta, deep time al contrario.** *Conoscete Hammerfist:\n> le sale annerite dai secoli, le statue consumate, i nomi dei re incisi e\n> reincisi. Questa Hammerfist non ha ancora storia. Le mura sono bianche di\n> pietra appena tagliata, gli spigoli ancora vivi, e nel cortile c'è la statua\n> di un re, una sola. Dietro le mura le forge battono giorno e notte.\n> Accanto al battente è appesa una targa di bronzo lucida\n> come una pentola nuova, e sotto, sul selciato, qualcosa luccica.*",
+  "nuovo": "> **Read-aloud (LotR lead) — la porta, deep time al contrario.** *Conoscete Hammerfist:\n> le sale annerite dai secoli, le statue consumate, i nomi dei re incisi e\n> reincisi. Questa Hammerfist non ha ancora storia. Le mura sono di pietra\n> appena tagliata, bianche, con gli spigoli ancora vivi, e nel cortile c'è la\n> statua di un re, una sola. Dietro le mura le forge battono giorno e notte.\n> Accanto al battente è appesa una targa di bronzo lucida\n> come una pentola nuova, e sotto, sul selciato, qualcosa luccica.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Sciolto «bianche di pietra appena tagliata» in «di pietra appena tagliata, bianche, con gli spigoli ancora vivi»: ordine naturale e soggetto-predicato vicini (perspicuitas, ascolto); stessi fatti e sensi."
+ },
+ {
+  "id": 4,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Casa di Davide lead) — la targa.** *«Quando il nero verrà dal\n> cielo e il ferro dal piano, quattro eroi dal fuoco e dalla pietra staranno\n> sulle mura. Uno porta la pietra in fronte, uno il fuoco nei pugni. Uno tiene\n> in mano la luce e l'ombra, e una ha passato la morte. Moradin li ha visti.»*",
+  "nuovo": "> **Read-aloud (Casa di Davide lead) — la targa.** *«Quando il nero verrà dal\n> cielo e il ferro dal piano, quattro eroi dal fuoco e dalla pietra staranno\n> sulle mura. Uno porta la pietra in fronte, uno il fuoco nei pugni. Uno tiene\n> in mano la luce e l'ombra, e una ha passato la morte. Moradin li ha visti.»*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: è il testo della targa, documento in gioco e profezia di canone; il repo vuole che non spieghi sé stesso e ogni ritocco ne cambierebbe la lettera."
+ },
+ {
+  "id": 5,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Casa di Davide lead) — la sala del consiglio, il re.** *Lungo il corridoio\n> i bambini e i vecchi scendono verso le miniere con un fagotto ciascuno, e al\n> vostro passaggio la gente smette di parlare. La sala è lunga quanto una\n> strada, e i pilastri sono ancora bianchi. In fondo, su un seggio di pietra\n> fredda senza cuscino, c'è un nano vecchissimo in armatura, con una grande\n> ascia appoggiata al ginocchio: sulla lama c'è un disegno di brina che non si\n> scioglie. Si alza piano, un pezzo alla volta, come si carica un carro, e\n> guarda solo la fronte di chi porta la corona.\n> Sulla panca accanto, un altro vecchio resta seduto.*",
+  "nuovo": "> **Read-aloud (Casa di Davide lead) — la sala del consiglio, il re.** *Lungo il corridoio\n> i bambini e i vecchi scendono verso le miniere con un fagotto ciascuno, e al\n> vostro passaggio la gente smette di parlare. La sala è lunga quanto una\n> strada, e i pilastri sono ancora bianchi. In fondo, su un seggio di pietra\n> fredda senza cuscino, c'è un nano vecchissimo in armatura. Tiene una grande\n> ascia appoggiata al ginocchio, e sulla lama c'è un disegno di brina che non si\n> scioglie. Il vecchio si alza piano, un pezzo alla volta, come si carica un\n> carro, e guarda solo la fronte di chi porta la corona.\n> Sulla panca accanto, un altro vecchio resta seduto.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Spezzato il periodo del re in due e ri-ancorato il soggetto («Il vecchio si alza»): dopo «brina» l'orecchio perdeva chi si alza (§1 punto 4 del repo; periodi brevi e paratassi per l'ascolto, skill esterna §4)."
+ },
+ {
+  "id": 6,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (LotR lead) — i quartieri ospiti.** *Una sala bassa e fredda,\n> scavata nella roccia: il soffitto porta ancora i colpi dello scalpello, dritti e\n> fitti come le righe di un registro. Sei brande di legno nuovo lungo il muro,\n> e su ognuna una coperta piegata in quattro da qualcuno che aveva fretta.\n> In fondo un focolare che tira male. Nel soffitto c'è una crepa chiusa col\n> piombo, e sotto non ci dorme nessuno.\n> Dalla porta aperta entra il rumore della fortezza che non dorme: martelli,\n> passi, un bambino che piange e poi smette.*",
+  "nuovo": "> **Read-aloud (LotR lead) — i quartieri ospiti.** *Una sala bassa e fredda,\n> scavata nella roccia: il soffitto porta ancora i colpi dello scalpello, dritti e\n> fitti come le righe di un registro. Sei brande di legno nuovo lungo il muro,\n> e su ognuna una coperta piegata in quattro da qualcuno che aveva fretta.\n> In fondo un focolare che tira male. Nel soffitto c'è una crepa chiusa col\n> piombo, e sotto non ci dorme nessuno.\n> Dalla porta aperta entra il rumore della fortezza che non dorme: martelli,\n> passi, un bambino che piange e poi smette.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: box di luogo già in ordine (spazio, cose, crepa) con chiusa sul dettaglio inutile del bambino; nessun intervento migliora senza togliere sensi."
+ },
+ {
+  "id": 7,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Casa di Davide lead) — la cappella.** *Al posto dell'altare\n> c'è un'incudine vecchia, portata giù dalla prima forgia, e intorno ai piedi\n> la pietra è consumata a conca da generazioni di ginocchia. Venti chierici\n> dormono seduti, con la schiena al muro freddo, per essere già in piedi quando\n> li chiameranno. Una sola è sveglia: conta fiale su un panno in un sussurro, e\n> ricomincia da capo ogni volta che arriva a trenta.*",
+  "nuovo": "> **Read-aloud (Casa di Davide lead) — la cappella.** *Al posto dell'altare\n> c'è un'incudine vecchia, portata giù dalla prima forgia, e intorno ai piedi\n> la pietra è consumata a conca da generazioni di ginocchia. Venti chierici\n> dormono seduti, con la schiena al muro freddo, per essere già in piedi quando\n> li chiameranno. Una sola è sveglia: conta fiale su un panno in un sussurro, e\n> ricomincia da capo ogni volta che arriva a trenta.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: tre frasi concrete, competenza (la pietra consumata a conca), chiusa sul gesto che si ripete; nulla da correggere per l'ascolto."
+ },
+ {
+  "id": 8,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Andor lead) — la bottega.** *Una porta bassa, foderata di\n> piombo. Dentro l'aria sa di zolfo e punge gli occhi. Sul banco, in fila come\n> soldati, fiasche di terracotta tappate con la cera, e sotto il banco una cassa di\n> sabbia per quando qualcosa va storto. Una nana senza sopracciglia ne riempie\n> una col cucchiaio, piano. A metà il cucchiaio le trema, e lei ride.*",
+  "nuovo": "> **Read-aloud (Andor lead) — la bottega.** *Una porta bassa, foderata di\n> piombo. Dentro l'aria sa di zolfo e punge gli occhi. Sul banco, in fila come\n> soldati, fiasche di terracotta tappate con la cera, e sotto il banco una cassa di\n> sabbia per quando qualcosa va storto. Una nana senza sopracciglia riempie\n> una fiasca col cucchiaio, piano. A metà il cucchiaio le trema, e lei ride.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "«ne riempie una» diventa «riempie una fiasca»: il «ne» dopo la cassa di sabbia era ambiguo all'orecchio; ripresa lessicale al posto del pronome (coesione, skill esterna §2b)."
+ },
+ {
+  "id": 9,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Andor lead) — le gallerie.** *Sotto la fucina il caldo finisce\n> di colpo. Le gallerie sono strette, puntellate con travi nuove che sanno\n> ancora di resina, e ogni dieci passi una lampada a olio fa il suo cerchio di\n> luce e poi niente. Sulle pareti ci sono segni a gesso, e metà sono stati\n> cancellati col pollice. Da un punto più in fondo arriva il suono paziente di\n> un martelletto su pietra.*",
+  "nuovo": "> **Read-aloud (Andor lead) — le gallerie.** *Sotto la fucina il caldo finisce\n> di colpo. Le gallerie sono strette, puntellate con travi nuove che sanno\n> ancora di resina, e ogni dieci passi una lampada a olio fa il suo cerchio di\n> luce e poi niente. Sulle pareti ci sono segni a gesso, e metà sono stati\n> cancellati col pollice. Da un punto più in fondo arriva il suono paziente di\n> un martelletto su pietra.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: box breve e preciso, chiude sul suono del martelletto; nessun difetto per l'ascolto."
+ },
+ {
+  "id": 10,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Salvatore lead, Andor support) — la fucina e il banco.** *La\n> fucina è l'unico posto della fortezza dove nessuno parla sottovoce, e l'aria\n> sa di carbone e di scoria. Davanti a\n> tre forge accese aspettano file di ragazzi con quello che hanno trovato: un piccone,\n> una vanga, la spada del padre. Una nana con le braccia bruciate fino al gomito\n> guarda ogni lama di taglio contro la brace e la mette in uno di due mucchi,\n> senza dire quale sia il buono. Sul banco dietro di lei, poco: qualche fiasca\n> chiusa con la cera, un mazzo di frecce, un'ascia avvolta in un panno grigio che nessuno\n> tocca. La nana non smette di lavorare quando la porta si apre. Alza il mento verso\n> quello che avete addosso, e aspetta.*",
+  "nuovo": "> **Read-aloud (Salvatore lead, Andor support) — la fucina e il banco.** *La\n> fucina è l'unico posto della fortezza dove nessuno parla sottovoce, e l'aria\n> sa di carbone e di scoria. Davanti a\n> tre forge accese aspettano file di ragazzi con quello che hanno trovato: un piccone,\n> una vanga, la spada del padre. Una nana con le braccia bruciate fino al gomito\n> guarda ogni lama di taglio contro la brace e la mette in uno di due mucchi,\n> senza dire quale sia il buono. Sul banco dietro di lei, poco: qualche fiasca\n> chiusa con la cera, un mazzo di frecce, un'ascia avvolta in un panno grigio che nessuno\n> tocca. La nana non smette di lavorare quando la porta si apre. Alza il mento verso\n> quello che avete addosso, e aspetta.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: lungo ma entro il tetto, con soggetti già ri-ancorati («La nana») e chiusa sull'attesa; tagliare toglierebbe fatti o oggetti che i giocatori useranno."
+ },
+ {
+  "id": 11,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Andor lead) — la postierla.** *A notte fonda si apre una\n> feritoia bassa nella roccia viva, di quelle che gli esploratori usano da\n> sempre e che nessun cronista scrive. Il fiato esce bianco nel freddo. Durin vi\n> accompagna fino all'imboccatura, vi mette una mano guantata sul braccio, apre\n> la bocca e la richiude.*",
+  "nuovo": "> **Read-aloud (Andor lead) — la postierla.** *A notte fonda si apre una\n> feritoia bassa nella roccia viva, di quelle che gli esploratori usano da\n> sempre e che nessun cronista mette per iscritto. Il fiato esce bianco nel\n> freddo. Durin vi accompagna fino all'imboccatura, vi mette una mano guantata\n> sul braccio, apre la bocca e la richiude.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "«che nessun cronista scrive» diventa «che nessun cronista mette per iscritto»: proprietà del verbo, una feritoia non si scrive (skill esterna, parola giusta); stessi fatti e sensi."
+ },
+ {
+  "id": 12,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Salvatore lead) — il campo.** *Fuori dalle mura il buio è vivo:\n> diecimila fra orchetti, hobgoblin e cose peggiori dormono attorno a mille\n> fuochi, e il campo si stende fino\n> all'orizzonte come un mare in cui ogni onda è una gola che russa. L'aria sa\n> di grasso bruciato, di ferro e di bestia, e da qualche parte, al centro, c'è\n> la tenda del generale. Fra i fuochi passano le ronde, e lontano ulula un\n> lupo. Un passo falso, e il mare si sveglia tutto insieme.\n> Che fate?*",
+  "nuovo": "> **Read-aloud (Salvatore lead) — il campo.** *Fuori dalle mura il buio è vivo.\n> Diecimila fra orchetti, hobgoblin e cose peggiori dormono attorno a mille\n> fuochi, e il campo si stende fino all'orizzonte: un mare in cui ogni onda è\n> una gola che russa. L'aria sa di grasso bruciato, di ferro e di bestia, e da\n> qualche parte, al centro, c'è la tenda del generale. Fra i fuochi passano le\n> ronde, e lontano ulula un lupo. Un passo falso, e il mare si sveglia tutto\n> insieme.\n> Che fate?*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Spezzato il primo periodo (circa 40 parole) in due e reso il paragone con i due punti: periodi più brevi e paratassi per l'ascolto (skill esterna §4); stesse parole e sensi, chiusa su «Che fate?»."
+ },
+ {
+  "id": 13,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Salvatore lead) — il volo.** *Da quassù il campo è una\n> brace sparsa su un pendio. I fuochi mandano tutti lo stesso odore di\n> grasso, e nessuno, laggiù, guarda in alto. Un russare sale fin qui, forte\n> come se venisse dalla tenda accanto. Poi la pietra fa il suo lavoro, e il mondo si\n> spegne: niente russare, niente vento, nemmeno il fiato.*",
+  "nuovo": "> **Read-aloud (Salvatore lead) — il volo.** *Da quassù il campo è una\n> brace sparsa su un pendio. I fuochi mandano tutti lo stesso odore di\n> grasso, e nessuno, laggiù, guarda in alto. Un russare sale fin qui, forte\n> come se venisse dalla tenda accanto. Poi la pietra fa il suo lavoro, e il mondo si\n> spegne: niente russare, niente vento, nemmeno il fiato.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: box del volo già costruito per l'orecchio, con il silenzio che chiude; nessun intervento senza perdere sensi."
+ },
+ {
+  "id": 14,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Andor lead) — la tenda.** *Al centro del campo, una tenda più\n> alta delle altre, di pelle nera, con ossa ai tiranti che battono nel vento.\n> Le pattuglie qui non passano. Dentro si ride.*",
+  "nuovo": "> **Read-aloud (Andor lead) — la tenda.** *Al centro del campo, una tenda più\n> alta delle altre, di pelle nera, con ossa ai tiranti che battono nel vento.\n> Le pattuglie qui non passano. Dentro si ride.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: tre frasi secche, chiusa «Dentro si ride»; la brevità è il colpo (§2 del repo)."
+ },
+ {
+  "id": 15,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Salvatore lead) — dentro.** *Fa caldo, e c'è puzza di sangue\n> secco e di carne mezza cruda. Sulla tavola, una mappa di Hammerfist piena di\n> croci rosse. In fondo, su un seggio di vertebre e di teschi inchiodati, un\n> mezzo-ogre grande quanto una porta di stalla, con una pietra nera al posto\n> dell'occhio destro e l'ascia appoggiata alla spalla, racconta alle guardie\n> come impalerà il re sul bastione più alto, e ride da solo.\n> Quattro hobgoblin in armatura nera ascoltano, le mani sulle armi.*",
+  "nuovo": "> **Read-aloud (Salvatore lead) — dentro.** *Fa caldo, e c'è puzza di sangue\n> secco e di carne mezza cruda. Sulla tavola, una mappa di Hammerfist piena di\n> croci rosse. In fondo, su un seggio di vertebre e di teschi inchiodati, c'è un\n> mezzo-ogre grande quanto una porta di stalla. Ha una pietra nera al posto\n> dell'occhio destro e l'ascia appoggiata alla spalla. Racconta alle guardie\n> come impalerà il re sul bastione più alto, e ride da solo.\n> Quattro hobgoblin in armatura nera ascoltano, le mani sulle armi.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Sciolto il periodo del mezzo-ogre (soggetto lontano dal verbo, due incisi) in tre frasi con «c'è» presentativo: soggetto vicino al verbo, niente incisi lunghi (repo §1 punto 3; skill esterna §4); stessi fatti e sensi."
+ },
+ {
+  "id": 16,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Andor lead) — il primo incontro, 1 di 3, poi FERMATI.** *In fondo alla tenda, dove\n> la luce dei bracieri non arriva, un vecchio è seduto su uno sgabello da\n> bottega. Grembiule di cuoio. Sulle ginocchia una lastra di ardesia che sta\n> incidendo con una punta di ferro, piano, come se fuori non ci fossero\n> diecimila tende e un drago.*",
+  "nuovo": "> **Read-aloud (Andor lead) — il primo incontro, 1 di 3, poi FERMATI.** *In fondo alla tenda, dove\n> la luce dei bracieri non arriva, un vecchio è seduto su uno sgabello da\n> bottega. Grembiule di cuoio. Sulle ginocchia ha una lastra di ardesia, e la\n> incide con una punta di ferro, piano, come se fuori non ci fossero\n> diecimila tende e un drago.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "«una lastra di ardesia che sta incidendo» diventa «ha una lastra di ardesia, e la incide»: il «che» faceva sentire la lastra come soggetto; tolto anche il progressivo (italiano-nativo §1, perspicuitas)."
+ },
+ {
+  "id": 17,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Andor lead) — 2 di 3, dopo che qualcuno ha reagito.** *Alza la\n> testa e vi guarda lentamente, uno per uno. Sulla gemma del vostro capo si\n> ferma un istante di troppo. Poi torna a incidere. Non chiama la guardia.*",
+  "nuovo": "> **Read-aloud (Andor lead) — 2 di 3, dopo che qualcuno ha reagito.** *Il vecchio\n> alza la testa e vi guarda lentamente, uno per uno. Sulla gemma del vostro capo\n> si ferma un istante di troppo. Poi torna a incidere. Non chiama la guardia.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Ripreso il soggetto («Il vecchio») in apertura: il box 2 di 3 si legge dopo una pausa e «Alza la testa» non aveva più un soggetto per chi ascolta (read-aloud §1.4 ri-ancorare; skill esterna: tema/rema in coesione-e-connettivi §2a). Nient'altro toccato."
+ },
+ {
+  "id": 18,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Andor lead) — 3 di 3, solo quando il silenzio diventa scomodo.** *Il vecchio parla piano, da artigiano, senza fretta: «Quella\n> corona la finirono con tre gemme. Tu ne hai due.» Un colpo di punta\n> sull'ardesia. «Quindi non è oggi.»*",
+  "nuovo": "> **Read-aloud (Andor lead) — 3 di 3, solo quando il silenzio diventa scomodo.** *Il vecchio parla piano, da artigiano, senza fretta: «Quella\n> corona la finirono con tre gemme. Tu ne hai due.» Un colpo di punta\n> sull'ardesia. «Quindi non è oggi.»*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: monologo con il gesto dentro, già un blocco (§2-ter.2); l'unico appiglio era l'assonanza piano/artigiano, ma toglierla costa «piano» (suono) o aggiunge parole. Resta com'è."
+ },
+ {
+  "id": 19,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Salvatore).** *Tre rune nane, tutte spezzate a metà dallo\n> stesso colpo di punta. Sotto, inciso più a fondo, un nome: Hald. Poi una\n> freccia, verso nord.*",
+  "nuovo": "> **Read-aloud (Salvatore).** *Tre rune nane, tutte spezzate a metà dallo\n> stesso colpo di punta. Sotto, inciso più a fondo, un nome: Hald. Poi una\n> freccia, verso nord.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: tre frasi brevi, un solo nome, chiude sulla freccia (§1.5). Non c'è niente da tagliare né da chiarire per l'orecchio."
+ },
+ {
+  "id": 20,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Salvatore lead) — la tenda, il seggio.** *Il mezzo-ogre si alza\n> dal seggio, e i teschi inchiodati sbattono fra loro come nacchere. Non grida\n> subito. Prima gira la testa, e la pietra nera dove dovrebbe esserci l'occhio\n> si ferma sul più vicino di voi. Poi l'ascia lascia la spalla.*\n>\n> **Che fate?**",
+  "nuovo": "> **Read-aloud (Salvatore lead) — la tenda, il seggio.** *Il mezzo-ogre si alza\n> dal seggio, e i teschi inchiodati sbattono fra loro come nacchere. Non grida\n> subito. Prima gira la testa, e la pietra nera dove dovrebbe esserci l'occhio\n> si ferma sul più vicino di voi. Poi l'ascia scende dalla spalla.*\n>\n> **Che fate?**",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "«l'ascia lascia la spalla» → «l'ascia scende dalla spalla»: tolto lo scontro di sillabe che a voce inciampa (skill esterna, retorica-efficacia §4 eufonia: cacofonie). Stesso gesto, nient'altro cambiato."
+ },
+ {
+  "id": 21,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Andor lead) — fra le tende, l'incontro che non capiscono.** *Tra due tende c'è un uomo che non è dell'orda, vestito di ombre cucite bene,\n> con qualcosa avvolto in un panno stretto al petto. Non attacca. Non scappa\n> nemmeno, subito. Vi fissa come si fissa una cosa che non dovrebbe esistere, e sussurra,\n> più a sé stesso che a voi: «…quattro. Eravate davvero in quattro.» Poi torna la\n> maschera, un sorriso freddo, un passo indietro verso l'ombra. Che fate?*",
+  "nuovo": "> **Read-aloud (Andor lead) — fra le tende, l'incontro che non capiscono.** *Tra due tende c'è un uomo che non è dell'orda.\n> Veste ombre cucite bene, e stringe al petto qualcosa avvolto in un panno.\n> Non attacca. E non scappa, non subito. Vi fissa come si fissa una cosa che\n> non dovrebbe esistere, e sussurra, più a sé stesso che a voi: «…quattro.\n> Eravate davvero in quattro.» Poi gli torna la maschera: un sorriso freddo, e\n> un passo indietro verso l'ombra. Che fate?*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Spezzato il primo periodo a tre apposizioni in due frasi coordinate, «Non scappa nemmeno, subito» → «E non scappa, non subito», «Poi torna la maschera, …» → «Poi gli torna la maschera: …» (skill esterna retorica-efficacia §4 testi per l'ascolto: paratassi, niente catene di incisi). Battuta di Vatore intatta, stessi dettagli (ombre, freddo, ombra)."
+ },
+ {
+  "id": 22,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Salvatore lead, LotR support) — le mura.** *Il primo ariete\n> arriva alle mura che il sole non è ancora sopra il crinale, e il legno prende\n> la pietra con un rimbombo che arriva allo sterno prima che alle orecchie. Il\n> camminamento vi si muove sotto i piedi di un dito. Un nano accanto a voi si sputa\n> nelle mani e riprende l'ascia senza dire niente; quello dopo di lui ha la\n> barba incastrata nella cinghia dell'elmo, e non ha il tempo di liberarla. In\n> basso, le scale salgono.*\n>\n> **Che fate?**",
+  "nuovo": "> **Read-aloud (Salvatore lead, LotR support) — le mura.** *Il primo ariete\n> arriva alle mura che il sole non è ancora sopra il crinale, e il legno prende\n> la pietra con un rimbombo che arriva allo sterno prima che alle orecchie. Il\n> camminamento vi si muove sotto i piedi di un dito. Un nano accanto a voi si sputa\n> nelle mani e riprende l'ascia senza dire niente; quello dopo di lui ha la\n> barba incastrata nella cinghia dell'elmo, e non ha il tempo di liberarla. In\n> basso, le scale salgono.*\n>\n> **Che fate?**",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: apertura di round già costruita per l'ascolto (periodo lungo, poi frasi corte, chiude sulle scale); il doppio «arriva» è l'unica ripetizione e cambiarlo toccherebbe l'immagine del rimbombo."
+ },
+ {
+  "id": 23,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Salvatore lead) — il camminamento.** *Il camminamento è largo\n> quanto un tavolo da pranzo e lungo quanto la fortezza, e sotto l'orda non\n> urla più: ha smesso quando ha cominciato a salire, e il silenzio che ha\n> lasciato è peggio. Un uncino morde la pietra a tre passi da voi, poi un\n> altro, poi sei insieme. Il capitano delle mura guarda voi, non i suoi.*\n>\n> **Che fate?**",
+  "nuovo": "> **Read-aloud (Salvatore lead) — il camminamento.** *Il camminamento è largo\n> quanto un tavolo da pranzo e lungo quanto la fortezza. Sotto, l'orda non\n> urla più: ha smesso quando ha cominciato a salire, e il silenzio che ha\n> lasciato è peggio. Un uncino morde la pietra a tre passi da voi, poi un\n> altro, poi sei insieme. Il capitano delle mura guarda voi, non i suoi.*\n>\n> **Che fate?**",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "«e sotto l'orda non urla più» → «. Sotto, l'orda non urla più»: a voce «sotto l'orda» si sentiva come complemento di luogo; il punto e la virgola dopo «Sotto» sciolgono l'ambiguità (skill esterna, punteggiatura per l'ascolto; read-aloud §1.2). Resto identico."
+ },
+ {
+  "id": 24,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Salvatore lead) — il cortile.** *Prima arriva il freddo: passa\n> un'ombra, e l'aria del cortile perde dieci gradi in un respiro, e la pelle\n> lo sa prima di voi. Poi il rumore, un risucchio come quello del mare che si\n> tira indietro, e le braci della forgia si piegano tutte nella stessa\n> direzione. Un nano vicino a voi lascia\n> cadere lo scudo e non si china a raccoglierlo.*\n>\n> *Dove passa basso, la pietra fuma. L'acido gli cola dalle fauci chiuse e si mangia il selciato come acqua\n> nella neve.*\n>\n> **Che fate?**",
+  "nuovo": "> **Read-aloud (Salvatore lead) — il cortile.** *Prima arriva il freddo: passa\n> un'ombra, e l'aria del cortile perde dieci gradi in un respiro, e la pelle\n> lo sa prima di voi. Poi il rumore, un risucchio come quello del mare che si\n> tira indietro, e le braci della forgia si piegano tutte nella stessa\n> direzione. Un nano vicino a voi lascia\n> cadere lo scudo e non si china a raccoglierlo.*\n>\n> *Dove passa basso, la pietra fuma. L'acido gli cola dalle fauci chiuse e si mangia il selciato come acqua\n> nella neve.*\n>\n> **Che fate?**",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico. Da segnalare al DM: nel secondo capoverso «gli cola dalle fauci» e «dove passa basso» non hanno un antecedente maschile (l'ultimo nome è «un'ombra»); risolverlo vuol dire nominare il drago, ed è una scelta di rivelazione che spetta al DM, non a una riscrittura."
+ },
+ {
+  "id": 25,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Mercer lead) — la visione, solo per Thorik.** *Per un istante\n> la Corona ti mostra due immagini sovrapposte: questo drago adesso, e un altro\n> drago sopra mura che bruciano, mura che non hai mai visto.*",
+  "nuovo": "> **Read-aloud (Mercer lead) — la visione, solo per Thorik.** *Per un istante\n> la Corona ti mostra due immagini sovrapposte: questo drago adesso, e un altro\n> drago sopra mura che bruciano, mura che non hai mai visto.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: micro-box d'artefatto per un solo PG, la seconda persona è corretta (§1.6) e la ripetizione «mura… mura» è la chiusa voluta."
+ },
+ {
+  "id": 26,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Salvatore lead) — la runa sotto la scaglia.** *Sotto la scaglia\n> calda del petto, più pallida delle altre, corre una riga di rune naniche\n> incise a punta, fitte come i conti di un mercante. L'ultima riga è più piccola e\n> più fonda delle altre, ed è quella che il drago non ha mai letto.*",
+  "nuovo": "> **Read-aloud (Salvatore lead) — la runa sotto la scaglia.** *Sotto la scaglia\n> calda del petto, più pallida delle altre, corre una riga di rune naniche\n> incise a punta, fitte come i conti di un mercante. L'ultima riga è più piccola e\n> più fonda delle altre, ed è quella che il drago non ha mai letto.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico. Da segnalare al DM: «corre una riga di rune» e poi «L'ultima riga» si contraddicono (una riga sola non ha un'ultima); correggerlo cambia un dato della Catena, e il contratto di conservazione lo vieta senza conferma."
+ },
+ {
+  "id": 27,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (LotR lead) — l'incudine, e l'incasso che si chiude.** *L'altare\n> è un'incudine, e si vede: il piano è segnato da mille anni di martelli, in un\n> cortile pieno di feriti. Nessuno l'ha toccata, eppure sul ferro, dove un\n> attimo fa non c'era niente, adesso c'è una pietra rossa grande come una noce,\n> ancora calda come appena uscita dal fuoco. I nani più vicini fanno un passo indietro, e nessuno spiega niente.\n> Tutti guardano la corona, e l'incasso vuoto si riempie. La pietra nuova non\n> si mescola alla luce delle altre due: batte da sola, come un secondo cuore, e\n> tira verso un punto che nessuno nel cortile vede. Il metallo si scalda\n> contro la fronte, e non si raffredda.*",
+  "nuovo": "> **Read-aloud (LotR lead) — l'incudine, e l'incasso che si chiude.** *L'altare\n> è un'incudine, e si vede: il piano è segnato da mille anni di martelli.\n> Intorno, il cortile è pieno di feriti. Nessuno l'ha toccata, eppure sul ferro,\n> dove un attimo fa non c'era niente, adesso c'è una pietra rossa grande come\n> una noce, calda come se uscisse in quel momento dal fuoco. I nani più vicini\n> fanno un passo indietro, e nessuno spiega niente.\n> Tutti guardano la corona, e l'incasso vuoto si riempie. La pietra nuova non\n> si mescola alla luce delle altre due: batte da sola, come un secondo cuore, e\n> tira verso un punto che nessuno nel cortile vede. Il metallo si scalda\n> contro la fronte, e non si raffredda.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Staccato «in un cortile pieno di feriti» dalla frase dei martelli («Intorno, il cortile è pieno di feriti»), perché appeso in coda si legava ai martelli; «calda come appena uscita» → «calda come se uscisse in quel momento dal fuoco» (congiuntivo, italiano-nativo §2). Tolto «ancora», ridondante con «adesso». Stessi dettagli, dieci righe."
+ },
+ {
+  "id": 28,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Mercer lead) — l'ascia prende la parola.** *L'ascia si scalda\n> nella mano di Thorik, e non è il calore della forgia. Per la prima volta in tre\n> anni si fa sentire senza che nessuno l'abbia interrogata. Nel cortile nessuno\n> guarda le armi.*",
+  "nuovo": "> **Read-aloud (Mercer lead) — l'ascia prende la parola.** *L'ascia si scalda\n> nella mano di Thorik, e non è il calore della forgia. Per la prima volta in tre\n> anni si fa sentire senza che nessuno l'abbia interrogata. Nel cortile nessuno\n> guarda le armi.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: tre frasi, il calore dell'ascia, chiude su un dettaglio di mondo (§1.5). Non c'è un taglio che non perda qualcosa."
+ },
+ {
+  "id": 29,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (LotR lead) — l'aura.** *Il vecchio accanto all'incudine alza la\n> testa e guarda la luce dietro Thorik. In tutto il cortile i feriti smettono di essere feriti:\n> un fabbro con una gamba sola si tira su contro il muro, il muro gli si apre\n> sotto la mano come argilla, e lui ci infila la gamba e resta in piedi.\n> Nessuno grida. Ottocento nani guardano un nano con una corona, e per un\n> lungo momento, nel cortile, c'è solo il respiro della forgia.*",
+  "nuovo": "> **Read-aloud (LotR lead) — l'aura.** *Il vecchio accanto all'incudine alza la\n> testa e guarda la luce dietro Thorik. In tutto il cortile i feriti smettono di essere feriti:\n> un fabbro con una gamba sola si tira su contro il muro, il muro gli si apre\n> sotto la mano come argilla, e lui ci infila la gamba e resta in piedi.\n> Nessuno grida. Ottocento nani guardano un nano con una corona, e per un\n> lungo momento, nel cortile, c'è solo il respiro della forgia.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: «un nano con una corona» è una scelta voluta di sguardo, non un epiteto pigro; il box è già il salto di registro di §5."
+ },
+ {
+  "id": 30,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Casa di Davide lead) — il torque.** *Il re si fa avanti, e per\n> la prima volta da ieri sera non ha l'ascia in pugno. Porta le mani al collo e\n> apre il fermaglio: oro vecchio, ritorto come una corda, consumato liscio dove\n> la barba lo sfrega da cent'anni. Non chiama il sergente. Lo chiude lui attorno\n> al collo di Thorik, e il metallo è ancora caldo del re.*",
+  "nuovo": "> **Read-aloud (Casa di Davide lead) — il torque.** *Il re si fa avanti, e per\n> la prima volta da ieri sera non ha l'ascia in pugno. Porta le mani al collo e\n> apre il fermaglio: oro vecchio, ritorto come una corda, consumato liscio dove\n> la barba lo sfrega da cent'anni. Non chiama il sergente. Lo chiude lui attorno\n> al collo di Thorik, e il metallo è ancora caldo del re.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: concreto e di mestiere (oro ritorto, consumato dalla barba), chiude sul calore del re. Già conforme a §3."
+ },
+ {
+  "id": 31,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (Casa di Davide lead) — l'incudine, 1 di 3: la profezia compiuta.** *L'orda,\n> senza generale e senza drago a spronarla, si sfalda come sabbia, e\n> Hammerfist regge. Sulla fronte di Thorik il Rubino, che all'incudine la\n> luce l'ha presa, adesso la dà: calda come sangue, e non si abbassa. Un nano\n> vicino alla forgia si toglie l'elmo e non sa perché.*",
+  "nuovo": "> **Read-aloud (Casa di Davide lead) — l'incudine, 1 di 3: la profezia compiuta.** *L'orda,\n> senza generale e senza drago a spronarla, si sfalda come sabbia, e\n> Hammerfist regge. All'incudine il Rubino ha preso la luce; adesso, sulla\n> fronte di Thorik, la dà: calda come sangue, e non si abbassa. Un nano\n> vicino alla forgia si toglie l'elmo e non sa perché.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Sciolta la relativa con dislocazione dentro («il Rubino, che all'incudine la luce l'ha presa, adesso la dà») in due coordinate: «All'incudine il Rubino ha preso la luce; adesso, sulla fronte di Thorik, la dà» (read-aloud §1.2, al massimo due livelli; skill esterna retorica-efficacia §4 paratassi per l'ascolto)."
+ },
+ {
+  "id": 32,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "vecchio": "> **Read-aloud (LotR lead) — l'incudine, 3 di 3: la voce.** *Poi una voce, come\n> una campana che batte una volta sola: «Ben fatto, figli miei. Avete salvato\n> la fortezza come doveva accadere. Avete chiuso il cerchio.» Nessuno ha visto muoversi una bocca:\n> la voce è nei denti, e ci resta. La luce comincia a tirare e vi porta via, verso\n> casa, verso una fortezza che brucia mille anni più in là.*",
+  "nuovo": "> **Read-aloud (LotR lead) — l'incudine, 3 di 3: la voce.** *Poi una voce, come\n> una campana che batte una volta sola: «Ben fatto, figli miei. Avete salvato\n> la fortezza come doveva accadere. Avete chiuso il cerchio.» Nessuno ha visto muoversi una bocca:\n> la voce è nei denti, e ci resta. La luce comincia a tirare e vi porta via, verso\n> casa, verso una fortezza che brucia mille anni più in là.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: monologo divino in un blocco (§2-ter.2), la voce nei denti è il dettaglio nel corpo che chiede editorial §2."
+ },
+ {
+  "id": 33,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+  "vecchio": "> **Read-aloud (LotR lead) — la caverna, sotto la luce.** *Sotto la luce che vi\n> porta si apre una caverna grande come una cattedrale. Le stalattiti fanno\n> luce da sole, fredda, fino agli angoli. Al centro c'è un altare di basalto, e\n> intorno dieci statue di re con gli occhi di rubino. A nord le porte di mithral\n> gemono sotto gli arieti, e le rune incise sui battenti si spengono una alla volta.*",
+  "nuovo": "> **Read-aloud (LotR lead) — la caverna, sotto la luce.** *Sotto la luce che vi\n> porta si apre una caverna grande come una cattedrale. Le stalattiti fanno\n> luce da sole, fredda, fino agli angoli. Al centro c'è un altare di basalto, e\n> intorno dieci statue di re con gli occhi di rubino. A nord le porte di mithral\n> gemono sotto gli arieti, e le rune incise sui battenti si spengono una alla volta.*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: box di luogo già nell'ordine di §2-bis (spazio, luce, cosa lo occupa, per ultima la porta che cede)."
+ },
+ {
+  "id": 34,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+  "vecchio": "> **Read-aloud (Salvatore lead) — la caverna, il primo round.** *Gli orchi\n> scappano verso la porta, e ne restano due, con le lame alte e le gambe che\n> tremano. Dietro i fuggiaschi, nel varco, compare uno scudo, poi un altro: una\n> fila che non scappa e non urla, e avanza al passo, in silenzio. Un fischio, e\n> gli scudi si chiudono. Che fate?*",
+  "nuovo": "> **Read-aloud (Salvatore lead) — la caverna, il primo round.** *Gli orchi\n> scappano verso la porta, e ne restano due, con le lame alte e le gambe che\n> tremano. Dietro i fuggiaschi, nel varco, compare uno scudo, poi un altro: una\n> fila che non scappa e non urla, e avanza al passo, in silenzio. Un fischio, e\n> gli scudi si chiudono. Che fate?*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: round corto che chiude su «Che fate?»; inoltre la nota di regia sotto il box sostituisce alla lettera «ne restano due», che va lasciato com'è."
+ },
+ {
+  "id": 35,
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+  "vecchio": "> **Read-aloud (LotR lead) — la caverna, il portale.** *Dana prega per il tempo\n> di un respiro, e sulla parete si apre un arco di luce dorata. Dall'altra parte\n> entrano il vento e il fumo dei bastioni, con un odore di pietra bruciata.\n> Lassù, attraverso la roccia, arriva un boato lungo, poi un altro, e Aegis Fang\n> ha smesso di cantare: ascolta. Che fate?*",
+  "nuovo": "> **Read-aloud (LotR lead) — la caverna, il portale.** *Dana prega per il tempo\n> di un respiro, e sulla parete si apre un arco di luce dorata. Dall'altra parte\n> entrano il vento e il fumo dei bastioni, con un odore di pietra bruciata.\n> Lassù, attraverso la roccia, arriva un boato lungo, poi un altro, e Aegis Fang\n> ha smesso di cantare: ascolta. Che fate?*",
+  "verdetto": "('indecisa', 'stessi dettagli sensoriali')",
+  "nota": "Identico: chiusura d'arco con odore, luce e suono, e l'ascia che ascolta come ultima cosa; non c'è niente da sciogliere per l'orecchio."
+ }
+]

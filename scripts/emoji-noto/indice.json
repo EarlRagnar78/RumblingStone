@@ -41,6 +41,10 @@
    "file": "emoji_u1f6e1.svg",
    "celle": 5
   },
+  "🤖": {
+   "file": "emoji_u1f916.svg",
+   "celle": 1
+  },
   "🥋": {
    "file": "emoji_u1f94b.svg",
    "celle": 5
@@ -48,6 +52,10 @@
   "🦄": {
    "file": "emoji_u1f984.svg",
    "celle": 1
+  },
+  "🧲": {
+   "file": "emoji_u1f9f2.svg",
+   "celle": 28
   }
  }
 }

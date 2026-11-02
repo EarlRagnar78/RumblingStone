@@ -13,7 +13,7 @@ velocita: 30 ft
 iniziativa: +3
 ```
 
-> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
+> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
 **Size/Type**: Medium humanoid (elf) | **HD**: 7d4+7 (24 HP)
 **AC**: 18 (+3 Dex, +5 mage armor, +0 armor) | **Init**: +3 | **Speed**: 30 ft

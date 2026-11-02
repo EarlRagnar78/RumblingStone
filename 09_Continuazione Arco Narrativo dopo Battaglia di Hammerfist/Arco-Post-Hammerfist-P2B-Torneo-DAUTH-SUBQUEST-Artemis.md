@@ -1,7 +1,7 @@
 # Parte 2B — SUB-QUEST DI ARTEMIS · BERIAH E IL CULTO DELLA MASCHERA
 
 > **Versione**: v1 (2026-07-02) — file creato in **Lotto B (generativo)** per sciogliere
-> il riferimento `[INFERRED — sub-quest da scrivere in Lotto B]` di
+> il rimando «sub-quest da scrivere in Lotto B» di
 > `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` §5.
 > **Beat sorgente (canone)**: `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md`
 > §3.4 (Sogno della Doppia Maschera), §4.3 (via C — Dauth), §6 (tabella echi).
@@ -71,7 +71,7 @@ Lathander** (canone: la stessa che tornerà nel Sogno della Doppia Maschera,
 **Setting**: il Mercato Basso, sotto le arcate di pietra a nord dell'arena. Odore di
 rame ossidato, incenso a buon mercato, spezie. Un banco di "curiosità di corte"
 tenuto da un mediatore magro dal mezzo-guanto di seta grigia: **Vashet**
-`[INFERRED — PNG nuovo di servizio, Umano Esperto 6 / Ladro 3, confermabile dal DM]`.
+(PNG di servizio, Umano Esperto 6 / Ladro 3).
 
 **Trigger**: Vashet nota l'Anello (Osservare passivo; è il suo mestiere). Manda un
 ragazzino a lasciare cadere ai piedi di Artemis una **tessera di ceramica nera** con
@@ -159,8 +159,7 @@ Artemis mette la Maschera di Beriah una volta.
 - **Beneficio meccanico**: **+5 competenza a Osservare e Percepire Intenzioni per
   tutta la permanenza a Dauth** (Day 30–32); una volta a scena, *lettura del
   nemico*: dichiari un avversario e conosci una sua debolezza tattica (equivalente
-  narrativo di *scrutare*, 1/scontro) `[INFERRED — bonus di servizio, bilanciabile
-  dal DM]`.
+  narrativo di *scrutare*, 1/scontro, canone del DM 2026-10-18).
 - **Costo (eco)**: Artemis è **debitore della cellula** (1 favore non specificato).
   → si attiva la **cellula del Mascherato a Rethmar** come *carta wildcard* (vedi §5;
   aggancio all'EVENT-DECK C7 e a `HOOKS-Artemis` §3.4 variante maschera).
@@ -213,9 +212,9 @@ Vashet, o forza il retrobottega.
   è una cellula di ladri, non guerra):
   - **Vashet** (Esperto 6/Ladro 3, EL 8): CA 17, pf 42, Furtivo +3d6, colpisce di
     sorpresa; fugge se scende sotto 15 pf.
-  - **2 Sicari del Mascherato** `[INFERRED]` (Ladro 8): CA 19, pf 44 cad., Furtivo
+  - **2 Sicari del Mascherato** (Ladro 8): CA 19, pf 44 cad., Furtivo
     +4d6, *dardo avvelenato* (veleno da contatto, TS Tempra CD 16, 1d6 Des/1d6 Des).
-  - **1 Confessore d'Ombra** `[INFERRED]` (Chierico 7 di Mask, dominio Trickery/
+  - **1 Confessore d'Ombra** (Chierico 7 di Mask, dominio Trickery/
     Darkness): CA 18, pf 45, *tenebra*, *silenzio*, *comando*, *cura ferite gravi*.
   - Mappa: retrobottega 6×9 quadretti (**scala 1,5 m/quadretto**), due uscite,
     botola sul canale (fuga di Vashet), scaffali (copertura +4).
@@ -239,8 +238,8 @@ round se Artemis lo insegue.
   **espulso da Dauth** entro dodici ore, e deve uscire prima dell'alba del Day 31. Può
   rientrare solo il Day 32, sotto copertura, per l'assedio.
 - **Eco**: la cellula del Mascherato giura vendetta personale. Entro trenta giorni
-  manda **tre sicari** (Ladro 10 / Assassino 5 `[INFERRED — statblock da scrivere se
-  il ramo si gioca]`), non con un attacco eroico: un agguato silenzioso, di solito
+  manda **tre sicari** (Ladro 10 / Assassino 5; lo statblocco si scrive se il
+  ramo si gioca), non con un attacco eroico: un agguato silenzioso, di solito
   durante un riposo lungo. Il Conte Valerius usa l'episodio per accusare i Custodi di
   violenza politica: **+1** al suo clock (`campaign/state.md` §3). Nel Sogno della
   Torre la voce di Mask non c'è proprio.

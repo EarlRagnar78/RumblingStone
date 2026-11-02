@@ -110,6 +110,96 @@
     2
    ],
    "label": "Imbocco delle miniere (dove scendono bambini e vecchi)"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    19,
+    11,
+    1,
+    1
+   ],
+   "label": "L'affaccio, scavato tondo"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    20,
+    11,
+    1,
+    1
+   ],
+   "label": "L'affaccio, scavato tondo"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    22,
+    13,
+    1,
+    1
+   ],
+   "label": "L'affaccio, scavato tondo"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    18,
+    15,
+    1,
+    1
+   ],
+   "label": "L'affaccio, scavato tondo"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    19,
+    15,
+    1,
+    1
+   ],
+   "label": "L'affaccio, scavato tondo"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    3,
+    19,
+    1,
+    1
+   ],
+   "label": "Imbocco delle miniere, allargato a colpi di piccone"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    4,
+    19,
+    1,
+    1
+   ],
+   "label": "Imbocco delle miniere, allargato a colpi di piccone"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    2,
+    22,
+    1,
+    1
+   ],
+   "label": "Imbocco delle miniere, allargato a colpi di piccone"
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    3,
+    22,
+    1,
+    1
+   ],
+   "label": "Imbocco delle miniere, allargato a colpi di piccone"
   }
  ],
  "structures": [
@@ -173,6 +263,56 @@
    "at": [
     10,
     8
+   ]
+  },
+  {
+   "type": "🏰",
+   "at": [
+    17,
+    12
+   ]
+  },
+  {
+   "type": "🏰",
+   "at": [
+    17,
+    14
+   ]
+  },
+  {
+   "type": "🏰",
+   "at": [
+    21,
+    14
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    7,
+    11
+   ],
+   "label": "Lampada a olio in una nicchia del muro, ogni dieci passi"
+  },
+  {
+   "type": "🏮",
+   "at": [
+    7,
+    17
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    16,
+    16
+   ]
+  },
+  {
+   "type": "🏮",
+   "at": [
+    26,
+    7
    ]
   }
  ],

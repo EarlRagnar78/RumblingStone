@@ -1,0 +1,119 @@
+[
+ {
+  "file": "07_il Portale Della Forgia Eterna/Mappe/Portale-Forgia-L2-REVISED-UltraClear.md",
+  "mappa": 1,
+  "titolo": "PF-3 CORRIDOIO DEL FUOCO (Fire Gauntlet)",
+  "celle_percorribili": 667,
+  "vga": {
+   "componenti": 1,
+   "connettivita_media": 584.36,
+   "md_media": 1.124,
+   "integrazione_media": 94.863,
+   "integrazione_min": 7.664,
+   "integrazione_max": 133.447,
+   "intelligibilita_r2": 0.831,
+   "clustering_medio": 0.941
+  },
+  "accesso": {
+   "componenti": 1,
+   "connettivita_media": 7.18,
+   "md_media": 18.672,
+   "integrazione_media": 0.404,
+   "integrazione_min": 0.263,
+   "integrazione_max": 0.527,
+   "intelligibilita_r2": 0.057,
+   "clustering_medio": 0.488
+  },
+  "vad_r": 0.36,
+  "isovista_media_m2": 1314.8,
+  "simmetria": {
+   "orizzontale": 0.948,
+   "verticale": 0.881,
+   "rotazione": 0.889
+  },
+  "pattern_2x2": {
+   "distinti": 75,
+   "entropia_bit": 3.702,
+   "kl_vs_corpus": 2.0108
+  },
+  "leniency_per_100": 49.18
+ },
+ {
+  "file": "07_il Portale Della Forgia Eterna/Mappe/hammerfist-372-1372/M7-F-fucina-grande-372.md",
+  "mappa": 1,
+  "titolo": "M7-F — La fucina grande, livello −3 (notte, ≈372 DR)",
+  "celle_percorribili": 362,
+  "vga": {
+   "componenti": 1,
+   "connettivita_media": 274.64,
+   "md_media": 1.241,
+   "integrazione_media": 27.874,
+   "integrazione_min": 5.543,
+   "integrazione_max": 45.64,
+   "intelligibilita_r2": 0.68,
+   "clustering_medio": 0.8
+  },
+  "accesso": {
+   "componenti": 1,
+   "connettivita_media": 6.53,
+   "md_media": 9.767,
+   "integrazione_media": 0.705,
+   "integrazione_min": 0.431,
+   "integrazione_max": 0.969,
+   "intelligibilita_r2": 0.269,
+   "clustering_medio": 0.488
+  },
+  "vad_r": 0.724,
+  "isovista_media_m2": 617.9,
+  "simmetria": {
+   "orizzontale": 0.894,
+   "verticale": 0.921,
+   "rotazione": 0.824
+  },
+  "pattern_2x2": {
+   "distinti": 54,
+   "entropia_bit": 3.467,
+   "kl_vs_corpus": 1.209
+  },
+  "leniency_per_100": -0.55
+ },
+ {
+  "file": "07_il Portale Della Forgia Eterna/Mappe/ARC07-MAPPE-M7C-TENDA-DEL-COMANDO.md",
+  "mappa": 1,
+  "titolo": "M7-C — La tenda del comando di Zog'tar (notte, ≈372 DR)",
+  "celle_percorribili": 493,
+  "vga": {
+   "componenti": 1,
+   "connettivita_media": 193.06,
+   "md_media": 1.739,
+   "integrazione_media": 9.539,
+   "integrazione_min": 2.504,
+   "integrazione_max": 13.892,
+   "intelligibilita_r2": 0.871,
+   "clustering_medio": 0.727
+  },
+  "accesso": {
+   "componenti": 1,
+   "connettivita_media": 6.3,
+   "md_media": 13.721,
+   "integrazione_media": 0.51,
+   "integrazione_min": 0.353,
+   "integrazione_max": 0.608,
+   "intelligibilita_r2": 0.37,
+   "clustering_medio": 0.477
+  },
+  "vad_r": 0.345,
+  "isovista_media_m2": 434.4,
+  "simmetria": {
+   "orizzontale": 0.858,
+   "verticale": 0.839,
+   "rotazione": 0.823
+  },
+  "pattern_2x2": {
+   "distinti": 72,
+   "entropia_bit": 4.196,
+   "kl_vs_corpus": 1.4534
+  },
+  "leniency_per_100": -3.14
+ }
+]

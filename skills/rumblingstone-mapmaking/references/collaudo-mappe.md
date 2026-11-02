@@ -176,16 +176,23 @@ potuto verificare**: il divertimento, i tempi reali al tavolo, le scene sociali
 sulla mappa.
 
 > Questi dettagli (sola lettura, il canone, le due citazioni, le 25 righe, la
-> riga dei verificati) stavano nel prompt dell'unica esecuzione del ruolo, il
-> 2026-10-08 nella #226, e non qui. Quell'esecuzione fu interrotta quando la
-> bozza D28 fu ritirata: il ruolo **non ha ancora prodotto un rapporto vero**.
+> riga dei verificati) stavano nel prompt della prima esecuzione del ruolo, il
+> 2026-10-08 nella #226, interrotta quando la bozza D28 fu ritirata. Il primo
+> rapporto vero è del 2026-10-09, su M7-C:
+> `plans/esperimenti/collaudo-mappe-2026-10/COLLAUDATORE-M7C-2026-10-09.md`
+> (18 rilievi, 0 dallo strumento).
 
 ## Il giro completo
 
 1. Chi disegna scrive la griglia con la legenda universale e le direttive.
 2. `collaudo_mappe.py` sul file, fino a zero errori o deroghe motivate.
+   Poi `qualita_mappe.py` sullo stesso file: zero errori, e gli avvisi
+   corretti o derogati per scritto
+   ([standard-qualita-mappe.md](standard-qualita-mappe.md)).
 3. `render_map_svg.py`, poi il PNG, e la verifica a vista (STEP 5 di
    `audit-mappe-workflow.md`).
 4. Il collaudatore a freddo, in un subagente, con i quattro materiali.
-5. Le correzioni di chi ha disegnato; di nuovo i passi 2 e 3.
+5. Le correzioni di chi ha disegnato; di nuovo i passi 2 e 3. Se la mappa
+   ha una copia nell'Atlante dell'arco e una nel master, si correggono
+   tutte e due nello stesso commit.
 6. Il DM, che decide le deroghe e le posizioni dubbie.

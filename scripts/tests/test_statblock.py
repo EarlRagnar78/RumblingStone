@@ -90,7 +90,7 @@ class TestEstrazione(unittest.TestCase):
         testo = (REPO / "Bestiario/villain/Sethrax_il_Velato/Sethrax.md").read_text(encoding="utf-8")
         sb, _ = estrai(togli_blocco(testo))
         self.assertEqual(sb.gs, "12")
-        self.assertEqual(sb.ts, "Temp +5, Rifl +5, Vol +11")
+        self.assertEqual(sb.ts, "Temp +5, Rifl +6, Vol +15")
 
     def test_mezzo_grado_di_sfida(self):
         sb, _ = estrai("**CR**: 1/2\n\nAC 12. hp 5. TS Temp +2, Rifl +0, Vol +0.")

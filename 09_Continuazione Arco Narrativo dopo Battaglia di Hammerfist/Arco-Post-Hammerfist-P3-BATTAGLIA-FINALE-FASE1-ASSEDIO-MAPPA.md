@@ -20,6 +20,8 @@ La mappa della città può essere astratta in **settori**, ognuno associato a un
   - Porta Sud,  
   - torri agli angoli,  
   - quartieri interni (tempio, piazza centrale, magazzini, residenziale).
+- Pianta della città, con le porte, la breccia sud e la poterna: `Mappe/rethmar/rethmar-pianta.svg`. Quattro porte a torri gemelle (Nord sul ponte, Ovest, Est, Sud) e la poterna; mura alte 6 m, senza fossato, con il Cannath a nord. È una grande città di circa 18.000 abitanti (110 ha dentro le mura), più della Brindol del libro, perché regga l'orda di circa 10.000 (scelta del DM, 2026-10-22) `[CANONE — DM 2026-10-23]`.
+- Quanti uomini servono sulle mura `[INFERRED — needs DM confirmation]`: la cinta della pianta è lunga 4,3 km, con 95 torri (1,2 km sono il muro sul fiume). Con la regola del Burghal Hidage (0,8 uomini per metro di mura) servono circa 3.400 difensori. Gli uomini abili, il 18% di 18.000 abitanti, sono circa 3.240: la sola leva non basta di poco. Sommata ai difensori degli scenari di `...ARMATE-SYNC.md` §3 (da circa 1.280 nel peggiore a circa 3.980 nel leggendario) fa da circa 4.500 a circa 7.200 uomini, e le mura si coprono in ogni scenario; quanti reggono davvero l'urto lo dicono gli scenari, non questa regola.
 
 Non serve mappare tutto in dettaglio: puoi creare **3 mappe tattiche separate** per:
 
@@ -32,7 +34,7 @@ Non serve mappare tutto in dettaglio: puoi creare **3 mappe tattiche separate** 
 ## 2. Mappa Porta Ovest (Ondata 1)
 
 - Griglia: 30 × 30.  
-- Mura orizzontali, con porta centrale (larghezza 4 quadretti).  
+- Mura orizzontali, con porta centrale (larghezza 3 quadretti).  
 - Esterno:  
   - terreno aperto, qualche barricata, 1–2 macchine d’assedio.  
 - Interno:  
@@ -94,7 +96,7 @@ città (60×40) si gioca su 3 sotto-mappe tattiche, una per ondata.*
 
 | Sotto-mappa | Griglia | Elementi / copertura |
 |---|---|---|
-| **Porta Ovest** (Ondata 1) | 30×30 | mura orizzontali, porta centrale 4 q; esterno aperto con barricate + 1-2 macchine d'assedio; interno = cortile militare |
+| **Porta Ovest** (Ondata 1) | 30×30 | mura orizzontali, porta centrale 3 q; esterno aperto con barricate + 1-2 macchine d'assedio; interno = cortile militare |
 | **Cielo** (Ondata 2) | 25×25 (o vista laterale con quote) | torri alte = postazioni PG incantatori/arcieri; aree pericolose (reti, campanili, rooftop) |
 | **Breccia** (Ondata 3) | 30×20 | tratto di mura crollate (varco 6-8 q); esterno roccioso/sconnesso = **copertura media**; interno = stretto corridoio urbano verso piazza |
 

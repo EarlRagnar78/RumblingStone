@@ -40,7 +40,7 @@
   inset: (x: 3pt, y: if grande { 4.5pt } else { 3pt }),
 )[
   #set align(center)
-  #text(font: "Cinzel", size: 6.9pt, fill: seppia, tracking: 0.7pt)[#etichetta]
+  #text(font: "Cinzel", size: 7pt, fill: seppia, tracking: 0.7pt)[#etichetta]
   #v(if grande { -4pt } else { -3.5pt })
   #text(size: if grande { 21pt } else { 13.5pt }, weight: 600, fill: inchiostro)[#valore]
   #if sotto != none {
@@ -55,7 +55,7 @@
   width: 100%, fill: campo, radius: 2pt, stroke: 0.5pt + bordo, inset: (y: 3.5pt),
 )[
   #set align(center)
-  #text(font: "Cinzel", size: 6.7pt, fill: seppia, tracking: 0.5pt)[#sigla]
+  #text(font: "Cinzel", size: 7pt, fill: seppia, tracking: 0.5pt)[#sigla]
   #v(-4.5pt)
   #text(size: 15pt, weight: 600)[#punteggio]
   #v(-5pt)
@@ -259,6 +259,6 @@
   }
   #if piede != "" {
     v(3pt)
-    align(center)[#text(font: "Cinzel", size: 6.9pt, fill: seppia, tracking: 1.2pt)[#piede]]
+    align(center)[#text(font: "Cinzel", size: 7pt, fill: seppia, tracking: 1.2pt)[#piede]]
   }
 ]

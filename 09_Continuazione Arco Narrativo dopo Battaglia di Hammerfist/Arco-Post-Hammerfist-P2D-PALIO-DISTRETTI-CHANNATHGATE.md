@@ -6,6 +6,13 @@
 > Meraviglie combaciano ✓). <!-- /storico -->Mappa master della città:
 > `P2D-Palio-Allegati/immagini/channathgate-mappa.png` (pianta illustrata coi
 > nomi FR dei quartieri; schema vettoriale di servizio: `mappe/channathgate-citta.svg`).
+> Per misure, rioni e fiume vale la pianta in scala
+> `mappe/channathgate-pianta.svg`: una città aperta, senza cinta, di circa 250 ha
+> fra il nucleo del bazar (66 ha), i rioni, due rabad e i giardini, con l'arg murato di 5 ha
+> sulla sua terrazza; circa 25.000 abitanti, profughi esclusi, la città più popolosa
+> della valle, più di Rethmar. È più grande della Dennovar del libro (circa 11.600)
+> per scelta del DM, perché la valle regga l'orda di circa 10.000. Se
+> dovesse reggere un assedio conterebbe solo sull'arg e sui muri dei rioni `[CANONE — DM 2026-10-23]`.
 > Vista cinematografica della Piazza (aerea + livello strada verso The Seat):
 > `P2D-Palio-Allegati/immagini/piazza-del-palio-panorama.png`.
 > <!-- storico -->
@@ -29,7 +36,7 @@
 | **The Gilded Horn** | **L'Unicorno** | Sune/Milil | Aldric Thornwall | Arpa della Tempesta Bardica |
 | **The Tidal Crest** | **L'Onda** | Valkur/Selûne | Gonfaloniere + Gilda dei Barcaioli | La Marea Montante |
 | **The Sovereign Ring** | **Il Campo** (piazza neutrale) | — | nessuna fazione | il Palio stesso |
-| **"The Seat"** (mappa) | il palazzo-fortezza del governo | — | il Consiglio | vedi §Palazzo |
+| **"The Seat"** (mappa) | il **Palazzo dei Nove**, palazzo-fortezza del governo | — | il Consiglio | vedi §Palazzo |
 
 ---
 
@@ -45,7 +52,7 @@ economica. Superbi, intoccabili, tengono i cordoni della borsa della città.
 Distretto-fortezza dell'esercito cittadino: torri di pietra, ferriere,
 disciplina rigida. La sua carta in difesa (e leva politica) è l'antico
 **Golem d'Assedio**, titano di pietra vincolato alla porta principale del
-rione, pronto a destarsi se le mura vengono violate.
+rione, pronto a destarsi se il muro del rione viene violato.
 
 ### The Silver Weft — Il Bruco
 Nominalmente il rione dei tessitori, famoso per le sete filate d'argento.
@@ -59,7 +66,7 @@ Come un istrice: difensivo fuori, pacifico dentro. Santuario dei profughi
 di guerra, retto dalla milizia non ufficiale — e ferocemente leale — della
 **Capitana Lorana**. Lo protegge il **Mythal della Selva Viva**: quando il
 pericolo si avvicina, rovi di legnoferro affilati come rasoi crescono
-lungo le mura.
+lungo il muro del rione.
 
 ### The Spell-Wyrm Spires — Il Drago
 Enclave d'élite di maghi, studiosi e arcanisti, in rigorosa **Astensione**
@@ -71,7 +78,7 @@ dalla politica quotidiana. Tutta la loro esistenza è dedicata al
 Quartiere quieto e notturno dove i segreti sono la valuta corrente. È
 avvolto nei **Muri Illusori**: per un estraneo le strade sembrano vicoli
 ciechi e i muri pieni sono in realtà archi aperti. Il **Conte Valerius**
-coordina la rete di spie dalla sua tenuta fuori le mura: la Civetta sa
+coordina la rete di spie dalla sua tenuta fuori città: la Civetta sa
 sempre cosa tramano gli altri.
 
 ### The Gilded Horn — L'Unicorno
@@ -96,10 +103,15 @@ Guado**, pista del Palio — `...GIORNO3-4-CORSA-ESITI.md` §4.)*
 
 ---
 
-## §Palazzo — "The Seat" (il palazzo-fortezza del governo)
+## §Palazzo — il Palazzo dei Nove ("The Seat")
 
-Sulla pianta è marcato **"The Seat"**. Il DM ha raccolto quattro nomi
-cerimoniali possibili `[PROPOSTA — needs DM choice]`:
+Sulla pianta è marcato **"The Seat"**. Il nome è **Palazzo dei Nove**
+(*The High Seat of the Nine*) `[CANONE — DM 2026-10-18]`: le nove parti in
+tregua, cioè le otto contrade e il Campo, siedono sotto lo stesso tetto e
+nessuna si fida delle altre.
+
+<!-- storico -->
+Fino al 2026-10-18 erano quattro nomi possibili, raccolti dal DM:
 
 | Nome italiano | Nome FR (EN) | Atmosfera |
 |---|---|---|
@@ -107,6 +119,7 @@ cerimoniali possibili `[PROPOSTA — needs DM choice]`:
 | Palazzo dei Gonfaloni | **The Palace of the Eight Banners** | gli stendardi delle 8 contrade sulla facciata; equilibrio precario |
 | Palazzo della Torre | **The Sovereign Spire** | la guglia magica (aggancio al Quasi-Mythal del Drago) |
 | Rocca del Duca | **The Grand Ducal Hold of the Ring** | tono militare, legge ferrea, affaccio sul Sovereign Ring |
+<!-- /storico -->
 
 ---
 

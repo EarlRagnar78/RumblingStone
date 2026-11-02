@@ -116,8 +116,7 @@ lista di buff pre-cast con **durate esplicite** e **2 effetti a innesco**. CR sa
 | *prayer* | +1 alleati / −1 nemici entro 12 m | 12 round |
 | *shield of faith* | +2 deflessione (già in CA sopra) | 140 min |
 
-**2 effetti a innesco (Contingent/oggetti) `[INFERRED — via Craft Contingent Spell
-o pergamene sacerdotali, a discrezione DM]`:**
+**2 effetti a innesco (Contingent/oggetti) `[Private source — Complete Arcane: Craft Contingent Spell]`, o pergamene sacerdotali:**
 1. *Heal* automatico su di sé quando scende sotto **40 pf** (1/scontro).
 2. *Word of recall* / *plane shift* al Fane quando scende sotto **15 pf** (fuga per
    ARC-10) **oppure** *divine power* ri-innescato (se il DM vuole il combattimento
@@ -218,7 +217,7 @@ Fonte tabella esiti: `Bestiario/villain/Sethrax_il_Velato/Sethrax.md`. In scena 
 
 ## 6. CATCH DI COERENZA (trovato durante la verifica — fuori 3.5 ma importante)
 
-`Bestiario/villain/Azarr_Kul/azarr-kul-final-cr15.md` (riga Summary)
+`Bestiario/villain/Azarr_Kul/azarr-kul-final-cr17.md` (riga Summary)
 diceva ancora **"mounts Tyrgarun"** — **contraddice D11 v2 e la sessione A7**
 (Azarr Kul **NON** cavalca Tyrgarun; il drago è terrore dei cieli separato,
 inchiodato dal Mythal). **Corretto in place** (vedi §7). Anche il CR del file
@@ -261,7 +260,7 @@ place quando si tocca il file, o si tengono come **checklist di verifica al tavo
 2. `Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md` — CA contatto/colto, raffica monaci, RI.
 3. `Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` — RI non cumulativa, azioni 3.5.
 4. `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md` — ✅ Azarr Kul fatto; Erinni/Avatar note.
-5. `Bestiario/villain/Azarr_Kul/azarr-kul-final-cr15.md` — ✅ Tyrgarun coerenza fatta.
+5. `Bestiario/villain/Azarr_Kul/azarr-kul-final-cr17.md` — ✅ Tyrgarun coerenza fatta.
 
 ---
 

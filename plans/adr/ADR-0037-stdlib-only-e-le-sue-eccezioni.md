@@ -241,3 +241,22 @@ concreto: la PR di Dependabot #228 alzava i pavimenti a `numpy>=2.5.3` e
 rossa per tutti e sei i pacchetti del gruppo. Chi ha ancora 3.11 resta fuori,
 ed è voluto (ADR-0081). La regola di questa ADR non cambia: cambia solo la
 versione della libreria standard su cui vale.
+
+---
+
+## Emendamento del 2026-10-23 — un corridore dei test solo, la parità resta
+
+**Stato**: accettato dal DM (D2 di
+[PIATTAFORMA-DI-SVILUPPO](../PIANO-PIATTAFORMA-DI-SVILUPPO.md), 2026-10-23:
+*«D1-d5 ok»*) · **Dettaglio**: [ADR-0099](ADR-0099-la-piattaforma-ha-tre-canali-come-debian.md).
+
+La CI non esegue più la suite due volte. Il passo `python -m unittest discover`
+costava 222 s su 914 del job principale per rieseguire prove che pytest aveva
+già eseguito. La ragione per cui c'era, il difetto del 2026-09-21, resta
+presidiata da `test_i_test_girano_in_ci.py`: conta le prove che vedono i due
+corridori senza eseguirle e boccia se non combaciano. Quindi i test continuano
+a essere scritti come `unittest.TestCase` e a girare con la sola libreria
+standard, e `python -m unittest discover -s scripts/tests` resta un comando
+valido sul portatile del DM senza pytest. Cambia solo che la CI non lo esegue
+per intero.
+

@@ -70,6 +70,50 @@
       ],
       "description": "L'ambiente di una mappa tattica: quale corredo di simboli le serve. Va con `tipo`. Elenco in dmcore/legenda.py, AMBIENTI_MAPPA."
     },
+    "vista": {
+      "type": "string",
+      "enum": [
+        "giocatori"
+      ],
+      "description": "La versione per i giocatori (D9 di PIANO-COLLAUDO-E-GENERAZIONE-MAPPE): il compilatore scrive `@vista giocatori`, e il collaudo boccia le porte segrete."
+    },
+    "luogo": {
+      "type": "string",
+      "minLength": 3,
+      "description": "Il luogo che unisce le mappe dello stesso punto (ADR-0098): il compilatore scrive `@luogo`."
+    },
+    "quota": {
+      "type": "string",
+      "minLength": 3,
+      "description": "L'altezza del punto piu' usato della mappa, con il riferimento dopo il `;` (es. «12 m ; s.l.m.»). Il compilatore scrive `@quota`; lo standard di qualita' la chiede alle mappe all'aperto, di abitato e strategiche (ADR-0098)."
+    },
+    "dislivello": {
+      "type": "string",
+      "minLength": 3,
+      "description": "Quanto quel punto sta sopra (+) o sotto (-) il terreno intorno che conta per la scena (es. «+4 m ; sul canale»). Il compilatore scrive `@dislivello` (ADR-0098)."
+    },
+    "deroghe": {
+      "type": "array",
+      "description": "Le soglie del collaudo o dello standard di qualita' che questa mappa non rispetta di proposito, con la ragione: il compilatore scrive `@deroga <codice> ; <motivo>`. Un motivo sotto i 15 caratteri vale come assente.",
+      "items": {
+        "type": "object",
+        "required": [
+          "codice",
+          "motivo"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "codice": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+/[a-z0-9-]+$"
+          },
+          "motivo": {
+            "type": "string",
+            "minLength": 15
+          }
+        }
+      }
+    },
     "north": {
       "type": "string",
       "description": "Orientamento cartografico: verso in alto della mappa. Valori N/NE/E/SE/S/SW/W/NW oppure gradi (0-359). Ruota la bussola nell'SVG. Default: N (nord in alto)."

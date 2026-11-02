@@ -124,7 +124,7 @@ class AncoreIncantatori(unittest.TestCase):
                       "in 3.5 chierico e druido hanno la stessa griglia")
 
     def test_bardo(self):
-        """Il bardo serviva davvero: `lomyn-redtongue-bardo4-cr3` è nel
+        """Il bardo serviva davvero: `lomyn-redtongue-bardo8-cr8` è nel
         Bestiario, e fino al lotto I il generatore non sapeva costruirlo."""
         righe = _righe_markdown(self.testo, "Verified anchor rows (SRD Table: The Bard")
         self.assertTrue(righe, "la skill non ha le righe d'ancora del bardo")

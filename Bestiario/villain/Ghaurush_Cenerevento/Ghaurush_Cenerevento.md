@@ -10,7 +10,7 @@
 **Location**: retrovie dell'orda, dove ci sono acqua corrente e roccia — non dorme mai in tenda
 **Motivation**: Azarr Kul gli ha promesso le gallerie alte di Hammerfist e le miniere che ci stanno sotto. Ghaurush non serve Tiamat; **incassa**. Quando la valle sarà sua, i primi a pagargli il pedaggio saranno gli hobgoblin che oggi lo chiamano alleato.
 **CR**: 16 (variante *Advanced* CR 17) | **Race/Class**: Ogre magi, Stregone 8
-**Key stats**: vedi `ghaurush-cenerevento-cr16.md` — hp 107, CA 21 (25 con *scudo*), volo a volontà, **rigenerazione 5**, *pelle di pietra* (RD 10/adamantio), muro di fuoco dal bastone, cono di freddo CD 21
+**Key stats**: vedi `ghaurush-cenerevento-cr16.md` — hp 107, CA 22 (26 con *scudo*), volo a volontà, **rigenerazione 5**, *pelle di pietra* (RD 10/adamantio), muro di fuoco dal bastone, cono di freddo CD 21
 **Token**: — (nessuno assegnato; `Bestiario/tokens/da-catalogare/` da verificare)
 
 ---
@@ -23,13 +23,28 @@ Della guerra santa di Azarr Kul pensa quello che un appaltatore pensa del sermon
 
 Ha una vanità sola, e riguarda il mestiere: **non gli piace sprecare uomini**. Un generale che perde metà avanguardia per prendere una porta, secondo Ghaurush, è un generale che non sa contare. Per questo, quando può, tratta. E per questo, quando i PG gli si mettono davanti, la prima cosa che fa non è alzare le mani.
 
-## Voce
+## Aspetto e voce
+
+Com'è lo dice il read-aloud del primo incontro (§Nella campagna): gigante dalla pelle azzurra, corna corte, unghie limate, un mantello che nessun ogre saprebbe portare.
+
+### Voce
 
 Lento. Cortese fino a essere irritante. Usa parole da contratto anche quando parla di morti — *«pareggio»*, *«sconto»*, *«pedaggio»*, *«a mie spese»*. Chiama tutti col titolo, mai col nome, e la prima volta che chiama qualcuno col nome vuol dire che ha smesso di trattare.
 
 Una costruzione sua, da ripetergli in bocca: comincia le frasi con **«Mettiamola così.»**
 
-## Read-aloud — primo incontro (apertura di scena)
+## Cosa vuole
+
+Le gallerie alte delle Colline di Hammerfist e le miniere sotto, come concessione e non come bottino: è il campo **Motivation** in testa, e il «diritto di scavo» di §Chi è.
+
+[DA SCRIVERE — cosa teme Ghaurush: nessun file del repo lo dice. C'è già la sua sola vanità (non sprecare uomini, §Chi è) e il fatto che non morirà per Azarr Kul (§Rapporti).]
+
+## Nella campagna
+
+- Collocazioni consigliate: **incontro di viaggio ARC-09 Giorni 33-38** (`Arco-Post-Hammerfist-INCONTRI-VIAGGIO-CANNATH-VALE.md`) o **Rethmar Fase 1**. Sconsigliato all'Arco 08: l'avanguardia ha già Grimjaw e Gorthak, e un terzo comandante affolla.
+- Con 2 `ogre-frantumapietra-barbaro6-cr9.md` l'incontro sta a **EL ≈ 16,6**, sotto il tetto APL+4. Se il DM lo vuole solo, usare la **variante *Advanced* CR 17**.
+
+### Read-aloud — primo incontro (apertura di scena)
 
 > C'è vento caldo, e non c'è fuoco da nessuna parte.
 >
@@ -39,7 +54,7 @@ Una costruzione sua, da ripetergli in bocca: comincia le frasi con **«Mettiamol
 >
 > «Signori Custodi. Mettiamola così: io ho un preventivo, e voi siete la voce che lo fa salire.» Chiude il libro. La cenere che avete addosso da mezz'ora, adesso capite da dove viene. «Sentiamo se possiamo pareggiare senza spendere.»
 
-## L'offerta (la scena, prima del combattimento)
+### L'offerta (la scena, prima del combattimento)
 
 Ghaurush propone un baratto: **lui non attacca le gallerie alte, i nani non difendono la vena bassa**. Un confine sotto terra, scritto, firmato, e un pedaggio ragionevole sul minerale.
 
@@ -51,7 +66,20 @@ Nessuna risposta è gratis:
 - **Trattativa vera** — Diplomazia CD 25 per strappare una tregua di 3 giorni sul fronte delle colline. Costo: Ghaurush chiede in pegno una cosa che i PG hanno e non usano, e sa già quale (il **Seme-Mercato** nello zaino di Tordek, `state.md` §7.E E-07b). Se lo ottiene, lo vende a Varis entro un mese e la valle sente la scossa in ARC-09.
 - **Accettazione** — la vanguardia si sposta davvero, −1 CS alla Fase 1 di Rethmar. E a Hammerfist qualcuno lo viene a sapere.
 
-## Perché è pericoloso proprio per questi PG
+## Rapporti
+
+*Il mondo, non i PG.*
+
+- **Azarr Kul** — committente. Ghaurush lo rispetta come si rispetta chi paga puntuale. Non morirà per lui.
+- **Sonjak** — concorrente. Vendono lo stesso servizio allo stesso cliente e si detestano con perfetta educazione. Ghaurush ha in mano due lettere che dimostrano che la Matrona tratta anche col Collezionista alle spalle della Mano Rossa: le tiene, non le usa. Aspetta che valgano di più. **I PG possono arrivarci prima di lui.**
+- **Generale Grimjaw** — lo considera un macellaio caro. Se Grimjaw muore all'Arco 08, Ghaurush eredita l'avanguardia e la usa meglio.
+- **Gli Ogre Frantumapietra** — sua scorta d'onore, non sua truppa: li ha portati dalle gallerie profonde e li paga a parte.
+
+## In combattimento
+
+I numeri e le tattiche round per round sono in `ghaurush-cenerevento-cr16.md` (primo incontro) e in `ghaurush-cenerevento-secondo-incontro-cr18.md` (il ritorno).
+
+### Perché è pericoloso proprio per questi PG
 
 Il gruppo ha imparato a vincere schiacciando: Thorik regge, Tordek arriva addosso, Hella cura, Artemis brucia. Ghaurush non si fa mai raggiungere. Vola, si sposta di 12 metri, taglia il campo con un muro di fuoco che nessun tiro salvezza evita, e mette Hella dal lato sbagliato del muro. Poi aspetta.
 
@@ -60,25 +88,21 @@ Le due cose che il tavolo si ricorderà:
 1. **L'ascia di Thorik non buca.** Con *pelle di pietra* addosso ha RD 10/adamantio. Aegis Fang è sacra, e sacra non basta. Bucano i pugni di Tordek e i Treant della Collana. Il nano che di solito risolve, per due round, guarda.
 2. **Per fermargli la rigenerazione serve fuoco**, e il fuoco lo porta chi sta accanto a Hella. Ogni fiammata che spegne il generale è una fiammata che sulla druida vale una volta e mezza.
 
-## Rapporti (il mondo, non i PG)
-
-- **Azarr Kul** — committente. Ghaurush lo rispetta come si rispetta chi paga puntuale. Non morirà per lui.
-- **Sonjak** — concorrente. Vendono lo stesso servizio allo stesso cliente e si detestano con perfetta educazione. Ghaurush ha in mano due lettere che dimostrano che la Matrona tratta anche col Collezionista alle spalle della Mano Rossa: le tiene, non le usa. Aspetta che valgano di più. **I PG possono arrivarci prima di lui.**
-- **Generale Grimjaw** — lo considera un macellaio caro. Se Grimjaw muore all'Arco 08, Ghaurush eredita l'avanguardia e la usa meglio.
-- **Gli Ogre Frantumapietra** — sua scorta d'onore, non sua truppa: li ha portati dalle gallerie profonde e li paga a parte.
-
 ## Esiti possibili
 
 - **Ucciso** — l'orda perde il suo unico comandante che sa contare. −1 CS alla Fase 1 di Rethmar, e le due lettere su Sonjak restano addosso al cadavere: se i PG perquisiscono, aprono il ramo «Sonjak tradisce la Mano Rossa».
-- **Fuggito** (forma gassosa / metamorfosi, sotto il 25% dei pf — **esito di default**) — riappare a Rethmar Fase 1, e stavolta ha visto lavorare i PG: nel secondo incontro apre con *dissolvi magie* sull'anello di Artemis e piazza il muro di fuoco sulla Collana.
+- **Fuggito** (forma gassosa / metamorfosi, sotto il 25% dei pf — **esito di default**) — riappare a Rethmar Fase 1, e stavolta ha visto lavorare i PG: nel secondo incontro apre con *muro di forza* per dividere il gruppo, e tiene *dissolvi magie* per l'anello di Artemis se lei lo scavalca in volo; il muro di fuoco arriva dopo, sul secondo asse (scheda del secondo incontro, §Tattiche).
 - **Accordo rispettato** — nessun agguato nelle gallerie alte. Ghaurush **mantiene la parola**: è quello che rende difficile odiarlo, ed è il punto.
 - **Accordo tradito dai PG** — al secondo incontro non tratta e non parla. Chiama Thorik per nome.
 
-## Note DM
+## Al tavolo
 
-- Collocazioni consigliate: **incontro di viaggio ARC-09 Giorni 33-38** (`Arco-Post-Hammerfist-INCONTRI-VIAGGIO-CANNATH-VALE.md`) o **Rethmar Fase 1**. Sconsigliato all'Arco 08: l'avanguardia ha già Grimjaw e Gorthak, e un terzo comandante affolla.
-- Con 2 `ogre-frantumapietra-barbaro6-cr9.md` l'incontro sta a **EL ≈ 16,6**, sotto il tetto APL+4. Se il DM lo vuole solo, usare la **variante *Advanced* CR 17**.
 - **Da non fare**: giocarlo come un bruto che urla. Se urla, è un altro mostro e tanto valeva usare Gorthak.
+
+## Fonti e canone
+
+### Note DM
+
 - Se approvato dal DM, aggiungere: riga villain in `state.md` §3 (clock proposto **0/6**, agenda «negoziare o prendere le gallerie alte»), riga in §4 (cosa sa: che i Custodi Eterni portano artefatti divini, per rapporti dell'avanguardia; **non** sa quali).
 
 Boost log: 2026-08-02 — creato a CR 16 via livelli di classe su base SRD *Ogre Mage*; variante *Advanced* CR 17 documentata nello statblock.

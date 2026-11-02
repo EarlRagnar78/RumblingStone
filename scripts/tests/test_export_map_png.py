@@ -145,5 +145,56 @@ class TestCleanDegradation(unittest.TestCase):
         self.assertIn("Chromium/Chrome", err.getvalue())
 
 
+def _png(larg, righe):
+    """PNG RGB non interlacciato con una riga per colore, filtro «Sub»."""
+    import struct
+    import zlib
+    grezzi = b"".join(b"\x01" + bytes(c) + b"\x00" * 3 * (larg - 1) for c in righe)
+
+    def pezzo(tipo, d):
+        return struct.pack(">I", len(d)) + tipo + d + struct.pack(">I", zlib.crc32(tipo + d))
+    ihdr = struct.pack(">IIBBBBB", larg, len(righe), 8, 2, 0, 0, 0)
+    return (b"\x89PNG\r\n\x1a\n" + pezzo(b"IHDR", ihdr)
+            + pezzo(b"IDAT", zlib.compress(grezzi)) + pezzo(b"IEND", b""))
+
+
+class TestTagliaPng(unittest.TestCase):
+    """Il Chromium headless nuovo toglie alla finestra la fascia della cornice:
+    la finestra si apre più alta e il PNG si riporta all'altezza dell'SVG."""
+
+    def test_tiene_le_prime_righe_e_resta_un_png_valido(self):
+        import struct
+        import tempfile
+        import zlib
+        f = Path(tempfile.mkdtemp()) / "m.png"
+        f.write_bytes(_png(3, [(255, 0, 0), (0, 255, 0), (0, 0, 255), (9, 9, 9)]))
+        emp.taglia_png(f, 2)
+        dati = f.read_bytes()
+        self.assertEqual(struct.unpack(">II", dati[16:24]), (3, 2))
+        i, idat = 8, b""
+        while i < len(dati):
+            n = struct.unpack(">I", dati[i:i + 4])[0]
+            tipo, corpo, crc = dati[i + 4:i + 8], dati[i + 8:i + 8 + n], dati[i + 8 + n:i + 12 + n]
+            self.assertEqual(struct.unpack(">I", crc)[0], zlib.crc32(tipo + corpo))
+            if tipo == b"IDAT":
+                idat += corpo
+            i += 12 + n
+        grezzi = zlib.decompress(idat)
+        self.assertEqual(len(grezzi), 2 * (1 + 9))
+        self.assertEqual(grezzi[1:4], bytes((255, 0, 0)))
+        self.assertEqual(grezzi[11:14], bytes((0, 255, 0)))
+
+    def test_non_allunga_un_png_gia_basso(self):
+        import tempfile
+        f = Path(tempfile.mkdtemp()) / "m.png"
+        f.write_bytes(_png(2, [(1, 2, 3)]))
+        prima = f.read_bytes()
+        emp.taglia_png(f, 5)
+        self.assertEqual(f.read_bytes(), prima)
+
+    def test_il_browser_apre_la_finestra_piu_alta(self):
+        self.assertGreater(emp.MARGINE_FINESTRA, 88)
+
+
 if __name__ == "__main__":
     unittest.main()

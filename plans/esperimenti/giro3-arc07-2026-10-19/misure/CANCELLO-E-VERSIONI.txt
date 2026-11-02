@@ -1,0 +1,31 @@
+== 07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md
+box cambiati: 11
+misura       box 32→32  parole 2232→2225  sens 157→160  -mente 2→2  30-70 56→56
+segnalazioni 14→4 · MQM [99.8, 99.8] · Gulpease [64.9, 65.2] · ritmo [0.65, 0.65]
+✓ passa
+== 07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md
+box cambiati: 8
+misura       box 22→22  parole 1585→1580  sens 97→103  -mente 0→1  30-70 50→50
+segnalazioni 5→5 · MQM [99.38, 99.38] · Gulpease [64.7, 63.6] · ritmo [0.63, 0.59]
+✓ passa
+== 07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md
+box cambiati: 4
+misura       box 20→20  parole 1085→1085  sens 81→82  -mente 1→1  30-70 55→50
+segnalazioni 5→3 · MQM [99.48, 99.53] · Gulpease [74.7, 74.4] · ritmo [0.77, 0.76]
+✓ passa
+== 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md
+box cambiati: 7
+misura       box 37→37  parole 2260→2284  sens 120→126  -mente 1→1  30-70 43→43
+segnalazioni 10→0 · MQM [99.98, 99.98] · Gulpease [66.6, 66.9] · ritmo [0.64, 0.64]
+✓ passa
+== 07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md
+box cambiati: 2
+misura       box 9→9  parole 540→536  sens 54→55  -mente 0→0  30-70 67→67
+segnalazioni 3→1 · MQM [99.82, 99.82] · Gulpease [65.9, 66.1] · ritmo [0.59, 0.58]
+✓ passa
+| versione | box | parole | mediana | sens. | sens. ‰ | -mente | -mente ‰ | 30-70 % | segnalazioni | MQM medio | impoveriti vs prima della #249 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| prima del rifacimento | 108 | 7852 | 66.5 | 398 | 50.7 | 3 | 0.4 | 48 | 91 | 99.14 | 0 |
+| #249 | 128 | 6971 | 54.0 | 488 | 70.0 | 4 | 0.6 | 54 | 23 | 99.98 | 15 |
+| #251 (main) | 120 | 7702 | 61.0 | 509 | 66.1 | 4 | 0.5 | 52 | 37 | 99.69 | 1 |
+| giro 3 | 120 | 7710 | 61.5 | 526 | 68.2 | 5 | 0.6 | 51 | 13 | 99.7 | 0 |

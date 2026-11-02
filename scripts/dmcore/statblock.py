@@ -440,3 +440,145 @@ def togli_blocco(testo: str) -> str:
     except StopIteration:
         return testo
     return "\n".join(righe[:inizio] + righe[fine + 1:]).lstrip("\n")
+
+
+# ── la parte leggibile (ADR-0091) e la scheda di stampa (ADR-0105) ──────────
+# Il blocco ```statblocco dice i numeri; le righe che lo seguono nella forma di
+# ADR-0091 dicono come si legge la creatura al tavolo. In stampa le due cose
+# formano un riquadro solo, a fasce come nelle AP: DIFESA, ATTACCO,
+# STATISTICHE, CAPACITÀ SPECIALI, TATTICHE. Chi impagina (PDF, HTML,
+# Homebrewery) legge le righe qui, così il riquadro ha la stessa forma ovunque.
+
+#: Le etichette della parte leggibile, nell'ordine di ADR-0091.
+SEZIONI = ("Iniziativa", "Difesa", "Attacco", "Statistiche", "Capacità speciali", "Tattiche")
+#: Le fasce del riquadro, cioè le sezioni che hanno un titolo in stampa.
+#: «Iniziativa» no: è la riga sotto il nome, come nelle AP.
+FASCE = SEZIONI[1:]
+_SEZIONE = re.compile(r"^\*\*(" + "|".join(re.escape(s) for s in SEZIONI) + r")\*\*:?\s*(.*)$")
+_FINE_SCHEDA = re.compile(r"^(#|```|\||>|<!--|Notes?:|Boost log|\*\*Benchmark\*\*)")
+
+
+@dataclass
+class Sezione:
+    etichetta: str
+    testo: str = ""
+    voci: list[str] = field(default_factory=list)
+
+
+def sezioni_leggibili(righe: list[str], i: int) -> tuple[list[Sezione], int]:
+    """Le sezioni di ADR-0091 che cominciano alla riga `i` (righe vuote saltate).
+
+    Ritorna le sezioni e l'indice della prima riga che non ne fa parte. Se alla
+    riga `i` non comincia una sezione, ritorna `([], i)` e non consuma niente:
+    un blocco ```statblocco da solo resta un riquadro coi soli numeri.
+    """
+    j = i
+    while j < len(righe) and not righe[j].strip():
+        j += 1
+    if j >= len(righe) or not _SEZIONE.match(righe[j].strip()):
+        return [], i
+    fuori: list[Sezione] = []
+    while j < len(righe):
+        s = righe[j].strip()
+        m = _SEZIONE.match(s)
+        if m:
+            fuori.append(Sezione(m.group(1), m.group(2).strip()))
+            j += 1
+            continue
+        if not s:
+            k = j
+            while k < len(righe) and not righe[k].strip():
+                k += 1
+            if k < len(righe) and _SEZIONE.match(righe[k].strip()):
+                j = k
+                continue
+            break
+        if _FINE_SCHEDA.match(s):
+            break
+        corrente = fuori[-1]
+        if s.startswith("- "):
+            corrente.voci.append(s[2:].strip())
+        elif corrente.voci and righe[j][:1] in " \t":
+            corrente.voci[-1] += " " + s
+        else:
+            corrente.testo = (corrente.testo + " " + s).strip()
+        j += 1
+    return fuori, j
+
+
+_CARATTERISTICHE = re.compile(
+    r"^\s*(?:\**(?:For|Des|Cos|Int|Sag|Car|FOR|DES|COS|INT|SAG|CAR)\.?\s*[+-]?(?:\d+|—|-)\**"
+    r"(?:\s*\([^)]*\))?\s*,?\s*)+[·;]?\s*")
+
+
+def senza_caratteristiche(testo: str) -> str:
+    """La riga **Statistiche** senza le caratteristiche in testa: in stampa
+    stanno nella griglia del riquadro, e scriverle due volte confonde. Se una
+    caratteristica porta una parentesi che non è il solo modificatore
+    («For 30 (36 in Ira)»), la riga resta intera: la griglia ha solo il
+    numero, e la parentesi andrebbe persa."""
+    m = _CARATTERISTICHE.match(testo)
+    # «(+3)» è il modificatore, che la griglia non mostra ma si ricava: si
+    # toglie. Ogni altra parentesi («(36 in Ira)») è un'informazione.
+    if not m or re.search(r"\((?!\s*[+−-]?\d+\s*\))", m.group(0)):
+        return testo
+    # Si toglie solo un gruppo che le contiene tutte e sei: se la riga
+    # intercala un commento («Sag 20, con il +4 della Collana, Car 12»), la
+    # griglia non lo dice, e la riga resta intera.
+    if len(re.findall(r"(?i)\b(?:for|des|cos|int|sag|car)\b", m.group(0))) < 6:
+        return testo
+    return testo[m.end():]
+
+
+def caratteristiche(attributi: str) -> list[tuple[str, str]]:
+    """Le coppie (sigla, valore) del campo `attributi`, in qualunque ordine.
+
+    Le schede scrivono «For 12 Des 14 Cos 16 …» senza virgole (94 su 99 il
+    2026-09-26). La griglia del riquadro si stampa solo con tutte e sei."""
+    coppie = re.findall(r"\b(For|Des|Cos|Int|Sag|Car)\b\.?\s*([+-]?\d+|—|-)", attributi)
+    return [(k, v) for k, v in coppie]
+
+
+def etichetta_gs(gs: str) -> str:
+    """Quel che il riquadro scrive accanto al nome: «GS 12» per un numero,
+    il testo così com'è per un PG («PG di 13°»), niente per «—»."""
+    gs = gs.strip()
+    if gs in ("", "—", "-"):
+        return ""
+    return f"GS {gs}" if re.match(r"[~≈½\d]", gs) else gs
+
+
+def accosta_parte_leggibile(testo: str) -> str:
+    """Porta la parte leggibile di una scheda subito sotto il suo blocco.
+
+    Nel Bestiario fra il blocco ```statblocco e le righe di ADR-0091 ci sono le
+    note del DM (i conti, le fonti, lo storico). Un booklet che stampa la
+    scheda intera (il volume di ARC-07 include quella di Balvar) avrebbe il
+    riquadro coi soli numeri, poi le note, poi le righe leggibili sciolte:
+    tre pezzi invece di uno. Qui le righe leggibili salgono sotto il blocco, e
+    le note restano dopo il riquadro. Si cerca solo fino al titolo seguente:
+    oltre, la parte leggibile è di un'altra creatura.
+    """
+    righe = testo.split("\n")
+    i = 0
+    while i < len(righe):
+        if righe[i].strip() != APERTURA:
+            i += 1
+            continue
+        fine = next((k for k in range(i + 1, len(righe)) if righe[k].strip() == CHIUSURA), None)
+        if fine is None:
+            break
+        if sezioni_leggibili(righe, fine + 1)[0]:
+            i = fine + 1
+            continue
+        k = fine + 1
+        while k < len(righe) and not righe[k].startswith("#") and righe[k].strip() != APERTURA:
+            if re.match(r"^\*\*(Iniziativa|Difesa)\*\*", righe[k].strip()):
+                break
+            k += 1
+        if k < len(righe) and re.match(r"^\*\*(Iniziativa|Difesa)\*\*", righe[k].strip()):
+            _, dopo = sezioni_leggibili(righe, k)
+            parte = righe[k:dopo]
+            righe = righe[:fine + 1] + parte + [""] + righe[fine + 1:k] + righe[dopo:]
+        i = fine + 1
+    return "\n".join(righe)

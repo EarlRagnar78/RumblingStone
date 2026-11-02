@@ -134,10 +134,18 @@ festa»* — la loro politica di tutela copre anche contesti d'uso offensivi.
 
 ## 4. Elementi verificati e risultati POSITIVI
 
-- **Stemmi SVG** (`P2D-Palio-Allegati/stemmi/*.svg`): arte vettoriale originale,
-  composizioni diverse dall'iconografia ufficiale, con innesti Faerûn (moneta di Waukeen,
-  disco di Shar, stella di Mystra, catene spezzate, falce di Selûne). **Non sono copie**
-  degli stemmi reali. ✅
+- **Stemmi SVG — serie Faerûn** (`P2D-Palio-Allegati/stemmi/*.svg`): arte vettoriale
+  originale, composizioni diverse dall'iconografia ufficiale, con innesti Faerûn (moneta
+  di Waukeen, disco di Shar, stella di Mystra, catene spezzate, falce di Selûne). **Non
+  sono copie** degli stemmi reali. ✅
+- ⚠️ **Stemmi SVG — serie Golarion** (`P2D-Palio-Allegati/stemmi/golarion/*.svg`), aggiunta
+  il **2026-08-10**: stessi scudi e stesse figure, ma i simboli in campo sono quelli delle
+  **divinità di Paizo** (Abadar, Iomedae, Gorum, Norgorber, Sarenrae, Erastil, Nethys,
+  Calistria, Shelyn, Gozreh, Desna). **Nomi e simboli divini di Golarion sono IP di Paizo
+  Inc.**: l'uso qui è **non commerciale, da tavolo**, dentro il perimetro della *Community
+  Use Policy*. 🟠 **Conseguenza per §5**: questa serie **non è portabile** in un'eventuale
+  edizione commerciale — in quello scenario si pubblica la sola serie Faerûn, o si
+  ridisegnano i simboli. Dettagli e mappatura: `stemmi/golarion/README.md` §«Licenza e IP».
 - **Tavole raster** (`channathgate-mappa.png`, panorama): città immaginaria, distretti
   con nomi inglesi originali; nessuno stemma/bandiera senese riprodotto. ✅ (resta il
   problema del label "Piazza il Campo", §3.4, e la **provenienza non documentata** dei

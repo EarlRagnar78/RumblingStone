@@ -1,0 +1,29 @@
+# Scheda di Hella come dato — lotto 4g-1 di PIANO-RIPRESA-PR-ABBANDONATE (ADR-0088).
+#
+# Porta solo i fatti che il repo deve tenere onesti: caratteristiche e
+# modificatori permanenti, ognuno con la sua fonte. Classe, PF, stato e artefatti
+# sono di campaign/state.yaml (`party`, `artefatti`) e qui non si copiano.
+# `null` = [INFERRED]: il repo non conosce il valore, e non si inventa. I valori
+# veri arrivano col lotto 4g-2, dalle schede del DM.
+# La vista leggibile, hella.md, si rigenera con `python3 scripts/render_pg.py`.
+schema_version: 1
+pg: Hella
+
+# Lotto 4g-2 (2026-10-24): la scheda di Hella risorta in ARC07-DEF-3 App. A.1,
+# canone del DM del 2026-10-18 (Decisione 5 del giro su ARC-07): SAG 20
+# comprende già il +4 della Collana, quindi la base è 16.
+caratteristiche:
+  for: {base: 12, attuale: 12, attestato_da: "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md"}
+  des: {base: 10, attuale: 10, attestato_da: "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md"}
+  cos: {base: 18, attuale: 18, attestato_da: "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md"}
+  int: {base: 13, attuale: 13, attestato_da: "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md"}
+  sag: {base: 16, attuale: 20, attestato_da: "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md"}
+  car: {base: 12, attuale: 12, attestato_da: "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md"}
+
+modificatori_permanenti:
+- caratteristica: SAG
+  delta: 4
+  causa: Saggezza della Terra della Collana dei Semi Eterni.
+  quando: ARC-07, Hella risorta (DEF-3)
+  cita: 'SAG 20(+5), con il +4 della Collana'
+  fonte: "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md"

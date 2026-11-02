@@ -1,0 +1,167 @@
+{
+ "campione_ref": "origin/main",
+ "dopo": "f0ed4465",
+ "seme": 9142,
+ "coppie": [
+  {
+   "n": 1,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "titolo": "L'apertura dell'Affresco A5 (recuperato dall'Interludio — non tagliare)",
+   "nuova": "A",
+   "somiglianza": 1.0,
+   "stato": "identica"
+  },
+  {
+   "n": 2,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "titolo": "SCENA 4 — Il giardino che canta",
+   "nuova": "A",
+   "somiglianza": 0.7,
+   "stato": "valida"
+  },
+  {
+   "n": 3,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "titolo": "SCENA 5 — Il Seme-Mercato (si gioca dopo la Scena 7)",
+   "nuova": "B",
+   "somiglianza": 0.218,
+   "stato": "valida (ricomposta a mano: il box è stato spezzato in battute e l'appaiamento automatico ne prendeva un pezzo)"
+  },
+  {
+   "n": 4,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "titolo": "8a. L'ARRIVO — la soglia, l'attracco e i primi sei secondi",
+   "nuova": "A",
+   "somiglianza": 0.819,
+   "stato": "valida"
+  },
+  {
+   "n": 5,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "titolo": "A1 — «L'Alba del Mondo» (NORD · statico)",
+   "nuova": "B",
+   "somiglianza": 0.534,
+   "stato": "valida"
+  },
+  {
+   "n": 6,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "titolo": "A6 — «Il Viaggio Attraverso il Tempo» (SUD-OVEST · temporale → 80%)",
+   "nuova": "B",
+   "somiglianza": 0.64,
+   "stato": "valida"
+  },
+  {
+   "n": 7,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "titolo": "🔮 ARTEMIS — la porta, dopo che hai già visto il negozio",
+   "nuova": "A",
+   "somiglianza": 0.597,
+   "stato": "valida"
+  },
+  {
+   "n": 8,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "titolo": "🌙 HELLA — dall'altra parte `[handout per la sua giocatrice]`",
+   "nuova": "B",
+   "somiglianza": 0.599,
+   "stato": "valida"
+  },
+  {
+   "n": 9,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "titolo": "SCENA 1 — L'Altare del Cuore",
+   "nuova": "A",
+   "somiglianza": 0.614,
+   "stato": "valida"
+  },
+  {
+   "n": 10,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "titolo": "DONO 1 — THORIK: «La Forza» → **Lo Scudo del Custode**",
+   "nuova": "B",
+   "somiglianza": 0.792,
+   "stato": "valida"
+  },
+  {
+   "n": 11,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "titolo": "DONO 2 — TORDEK: «Il Respiro» → **Pelle di Adamantio**",
+   "nuova": "A",
+   "somiglianza": 0.851,
+   "stato": "valida"
+  },
+  {
+   "n": 12,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "titolo": "SCENA 7 — Il racconto delle prove",
+   "nuova": "A",
+   "somiglianza": 0.217,
+   "stato": "valida (ricomposta a mano: il box è stato spezzato in battute e l'appaiamento automatico ne prendeva un pezzo)"
+  },
+  {
+   "n": 13,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "titolo": "SCENA 2 — La pattuglia di Durin",
+   "nuova": "B",
+   "somiglianza": 0.791,
+   "stato": "valida"
+  },
+  {
+   "n": 14,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "titolo": "I Treant: come lo viene a sapere Hella, e dove possono andare `[CANONE — DM 2026-10-12, D54]`",
+   "nuova": "A",
+   "somiglianza": 1.0,
+   "stato": "identica"
+  },
+  {
+   "n": 15,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "titolo": "✈️ Variante — dall'alto, invisibili e in silenzio",
+   "nuova": "A",
+   "somiglianza": 1.0,
+   "stato": "identica"
+  },
+  {
+   "n": 16,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "titolo": "SCENA 13 — Il Rubino e il ritorno",
+   "nuova": "B",
+   "somiglianza": 0.893,
+   "stato": "valida"
+  },
+  {
+   "n": 17,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "titolo": "SCENA 1 — Lo strappo fra le ere",
+   "nuova": "A",
+   "somiglianza": 0.875,
+   "stato": "valida"
+  },
+  {
+   "n": 18,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "titolo": "SCENA 2 — L'apparizione",
+   "nuova": "A",
+   "somiglianza": 0.592,
+   "stato": "valida"
+  },
+  {
+   "n": 19,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "titolo": "La Corona si completa, dopo l'uso `[CANONE — DM, D6]`",
+   "nuova": "B",
+   "somiglianza": 1.0,
+   "stato": "identica"
+  },
+  {
+   "n": 20,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "titolo": "SCENA 3 — La pulizia e il passaggio",
+   "nuova": "A",
+   "somiglianza": 0.692,
+   "stato": "valida"
+  }
+ ]
+}

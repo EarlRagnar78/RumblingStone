@@ -1,0 +1,519 @@
+{
+ "schema_version": "1.0",
+ "title": "MAPPA H3-1 REVISED: Cortile sfondato, ultima difesa ed evacuazione",
+ "units_in": "meters",
+ "scale_m_per_square": 1.5,
+ "map_size": [
+  108.0,
+  54.0
+ ],
+ "base_terrain": "🟩",
+ "north": "N",
+ "tipo": "tattica",
+ "ambiente": "esterno",
+ "regions": [
+  {
+   "terrain": "⛰",
+   "rect": [
+    0.0,
+    0.0,
+    108.0,
+    4.5
+   ]
+  },
+  {
+   "terrain": "⬜",
+   "rect": [
+    9.0,
+    4.5,
+    90.0,
+    30.0
+   ]
+  },
+  {
+   "terrain": "🟫",
+   "rect": [
+    9.0,
+    37.5,
+    90.0,
+    16.5
+   ]
+  }
+ ],
+ "structures": [
+  {
+   "type": "🏰",
+   "rect": [
+    3.0,
+    4.5,
+    6.0,
+    49.5
+   ]
+  },
+  {
+   "type": "🏰",
+   "rect": [
+    99.0,
+    4.5,
+    6.0,
+    49.5
+   ]
+  },
+  {
+   "type": "🧱",
+   "rect": [
+    3.0,
+    4.5,
+    1.5,
+    49.5
+   ]
+  },
+  {
+   "type": "🧱",
+   "rect": [
+    103.5,
+    4.5,
+    1.5,
+    49.5
+   ]
+  },
+  {
+   "type": "🔳",
+   "rect": [
+    0.0,
+    4.5,
+    9.0,
+    12.0
+   ],
+   "label": "Bastione Nord B1, terrazza a +120 m (20 m sopra il cortile)"
+  },
+  {
+   "type": "🧱",
+   "rect": [
+    0.0,
+    15.0,
+    9.0,
+    1.5
+   ]
+  },
+  {
+   "type": "🔳",
+   "rect": [
+    99.0,
+    4.5,
+    9.0,
+    12.0
+   ],
+   "label": "Bastione Nord B2, terrazza a +120 m: la torre nord del 372"
+  },
+  {
+   "type": "🧱",
+   "rect": [
+    99.0,
+    15.0,
+    9.0,
+    1.5
+   ]
+  },
+  {
+   "type": "🏰",
+   "rect": [
+    9.0,
+    34.5,
+    90.0,
+    3.0
+   ]
+  },
+  {
+   "type": "🪵",
+   "rect": [
+    51.0,
+    34.5,
+    6.0,
+    3.0
+   ],
+   "label": "PORTA INTERNA SFONDATA: le macerie dei battenti, l'orda entra da qui"
+  },
+  {
+   "type": "🪨",
+   "rect": [
+    3.0,
+    18.0,
+    6.0,
+    9.0
+   ],
+   "label": "BRECCIA OVEST nella cinta (macerie, terreno difficile)"
+  },
+  {
+   "type": "🪨",
+   "rect": [
+    99.0,
+    18.0,
+    6.0,
+    9.0
+   ],
+   "label": "BRECCIA EST nella cinta (macerie, terreno difficile)"
+  },
+  {
+   "type": "🗿",
+   "rect": [
+    42.0,
+    6.0,
+    3.0,
+    3.0
+   ],
+   "label": "Statua del Re Antenato (4 m; base spingibile For CD 20 / Storia CD 15: rivela il tunnel)"
+  },
+  {
+   "type": "❔",
+   "at": [
+    42.0,
+    3.0
+   ]
+  },
+  {
+   "type": "🔒",
+   "rect": [
+    51.0,
+    3.0,
+    6.0,
+    1.5
+   ],
+   "label": "Porta dell'atrio, sbarrata: gli orchi la sfondano dopo la ritirata"
+  },
+  {
+   "type": "💀",
+   "at": [
+    24.0,
+    13.5
+   ]
+  },
+  {
+   "type": "💀",
+   "at": [
+    66.0,
+    18.0
+   ]
+  },
+  {
+   "type": "💀",
+   "at": [
+    36.0,
+    27.0
+   ]
+  },
+  {
+   "type": "💀",
+   "at": [
+    78.0,
+    24.0
+   ]
+  },
+  {
+   "type": "🪜",
+   "rect": [
+    21.0,
+    37.5,
+    30.0,
+    3.0
+   ],
+   "label": "Scala ovest della scarpa: 30 m di rampa, sale di 20 m dal cortile esterno (+80) al pianerottolo (+100)"
+  },
+  {
+   "type": "🪜",
+   "rect": [
+    57.0,
+    37.5,
+    30.0,
+    3.0
+   ],
+   "label": "Scala est della scarpa, gemella della ovest"
+  },
+  {
+   "type": "🔳",
+   "rect": [
+    51.0,
+    37.5,
+    6.0,
+    3.0
+   ],
+   "label": "Pianerottolo davanti alla Porta Interna, +100 m"
+  },
+  {
+   "type": "🏰",
+   "rect": [
+    22.5,
+    40.5,
+    63.0,
+    1.5
+   ],
+   "label": "Scarpa di 20 m fra cortile esterno (+80) e cortile interno (+100)"
+  }
+ ],
+ "hazards": [
+  {
+   "type": "🔥",
+   "rect": [
+    45.0,
+    30.0,
+    6.0,
+    3.0
+   ],
+   "label": "Incendi ai lati della Porta Interna",
+   "effect": "1d6 fuoco/round; fumo: occultamento 20% entro 3 m"
+  },
+  {
+   "type": "🔥",
+   "rect": [
+    57.0,
+    30.0,
+    6.0,
+    3.0
+   ]
+  }
+ ],
+ "units": [
+  {
+   "faction": "Nani",
+   "name": "Nucleo (portatori, feriti, leader) (misti)",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     39.0,
+     12.0,
+     18.0,
+     4.5
+    ]
+   },
+   "quantity": 36
+  },
+  {
+   "faction": "Nani",
+   "name": "Anello difensivo — arco OVEST (guerrieri)",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     33.0,
+     9.0,
+     3.0,
+     12.0
+    ]
+   },
+   "quantity": 15
+  },
+  {
+   "faction": "Nani",
+   "name": "Anello difensivo — arco EST (guerrieri)",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     60.0,
+     9.0,
+     3.0,
+     12.0
+    ]
+   },
+   "quantity": 15
+  },
+  {
+   "faction": "Nani",
+   "name": "Anello difensivo — arco SUD (verso la Porta Interna) (guerrieri)",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     36.0,
+     21.0,
+     18.0,
+     3.0
+    ]
+   },
+   "quantity": 24
+  },
+  {
+   "faction": "Nani",
+   "name": "Re Thorek XIII (barella) (8 PF, morente)",
+   "token": "🔵",
+   "at": [
+    46.5,
+    13.5
+   ]
+  },
+  {
+   "faction": "Nani",
+   "name": "Thorin Runaforte (Clr)",
+   "token": "🔵",
+   "at": [
+    48.0,
+    13.5
+   ]
+  },
+  {
+   "faction": "Nani",
+   "name": "Borin Ferropugno (Ftr)",
+   "token": "🔵",
+   "at": [
+    45.0,
+    6.0
+   ]
+  },
+  {
+   "faction": "Nani",
+   "name": "Dara Occhiolesto (Rgr)",
+   "token": "🔵",
+   "at": [
+    43.5,
+    6.0
+   ]
+  },
+  {
+   "faction": "Nani",
+   "name": "Nala Cantapietre (Brd)",
+   "token": "🔵",
+   "at": [
+    40.5,
+    4.5
+   ]
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Orda salita dalle scale della scarpa (SUD) (GS 1/2)",
+   "token": "🔴",
+   "area": {
+    "rect": [
+     45.0,
+     43.5,
+     18.0,
+     6.0
+    ]
+   },
+   "quantity": 120
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Fiancheggiatori dalla breccia EST (GS 1/2)",
+   "token": "🔴",
+   "area": {
+    "rect": [
+     105.0,
+     18.0,
+     3.0,
+     9.0
+    ]
+   },
+   "quantity": 40
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Fiancheggiatori dalla breccia OVEST (GS 1/2)",
+   "token": "🔴",
+   "area": {
+    "rect": [
+     0.0,
+     18.0,
+     3.0,
+     9.0
+    ]
+   },
+   "quantity": 40
+  }
+ ],
+ "movements": [
+  {
+   "name": "Assalto orchi su per la scala ovest e dentro la PORTA INTERNA sfondata",
+   "path": [
+    [
+     45.0,
+     46.5
+    ],
+    [
+     22.5,
+     42.0
+    ],
+    [
+     22.5,
+     39.0
+    ],
+    [
+     52.5,
+     39.0
+    ],
+    [
+     52.5,
+     36.0
+    ],
+    [
+     48.0,
+     24.0
+    ]
+   ],
+   "color": "#d62828"
+  },
+  {
+   "name": "Assalto orchi dalla BRECCIA EST",
+   "path": [
+    [
+     106.5,
+     22.5
+    ],
+    [
+     99.0,
+     22.5
+    ],
+    [
+     63.0,
+     18.0
+    ]
+   ],
+   "color": "#d62828"
+  },
+  {
+   "name": "Assalto orchi dalla BRECCIA OVEST",
+   "path": [
+    [
+     0.0,
+     22.5
+    ],
+    [
+     7.5,
+     22.5
+    ],
+    [
+     33.0,
+     18.0
+    ]
+   ],
+   "color": "#d62828"
+  },
+  {
+   "name": "Evacuazione nani → tunnel dietro la statua (NORD)",
+   "path": [
+    [
+     46.5,
+     13.5
+    ],
+    [
+     45.0,
+     4.5
+    ],
+    [
+     42.0,
+     3.0
+    ]
+   ],
+   "color": "#2c8c3c"
+  }
+ ],
+ "luogo": "Hammerfist, cortile interno",
+ "quota": "970 m ; s.l.m., il cortile interno",
+ "dislivello": "+20 m ; sul cortile esterno, oltre la scarpa",
+ "deroghe": [
+  {
+   "codice": "oggetti/fuoco-enorme",
+   "motivo": "sono incendi delle baracche ai lati della Porta Interna, non fuochi da campo: 6 × 3 m ciascuno"
+  },
+  {
+   "codice": "oggetti/porta-enorme",
+   "motivo": "la porta dell'atrio è il portone della cittadella, 6 m come nella tabella MISURE in testa alla L2"
+  }
+ ]
+}

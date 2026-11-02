@@ -1,0 +1,330 @@
+{
+ "generate": [
+  {
+   "voto_prima": 93,
+   "rilievi_prima": [
+    "fazioni/lontane",
+    "struttura/un-ingresso"
+   ],
+   "voto_dopo": 100,
+   "rilievi_dopo": [],
+   "mosse": [
+    {
+     "mossa": "scava4",
+     "celle": [
+      "M07=⬜",
+      "M08=⬜",
+      "M09=⬜",
+      "M10=⬜"
+     ],
+     "voto": 97,
+     "avvicinamento": 1.5
+    },
+    {
+     "mossa": "ingresso",
+     "celle": [
+      "L01=⬜"
+     ],
+     "voto": 97,
+     "avvicinamento": 2.5
+    },
+    {
+     "mossa": "ingresso",
+     "celle": [
+      "A17=⬜"
+     ],
+     "voto": 100,
+     "avvicinamento": 3.5
+    }
+   ],
+   "valutazioni": 48,
+   "tipo": "bsp",
+   "seme": 1
+  },
+  {
+   "voto_prima": 97,
+   "rilievi_prima": [
+    "struttura/un-ingresso"
+   ],
+   "voto_dopo": 100,
+   "rilievi_dopo": [],
+   "mosse": [
+    {
+     "mossa": "ingresso",
+     "celle": [
+      "A03=⬜"
+     ],
+     "voto": 97,
+     "avvicinamento": 1.5
+    },
+    {
+     "mossa": "ingresso",
+     "celle": [
+      "A15=⬜"
+     ],
+     "voto": 100,
+     "avvicinamento": 2.5
+    },
+    {
+     "mossa": "scava2",
+     "celle": [
+      "L09=⬜",
+      "L10=⬜"
+     ],
+     "voto": 100,
+     "avvicinamento": 3.5
+    }
+   ],
+   "valutazioni": 56,
+   "tipo": "bsp",
+   "seme": 2
+  },
+  {
+   "voto_prima": 93,
+   "rilievi_prima": [
+    "fazioni/lontane",
+    "struttura/un-ingresso"
+   ],
+   "voto_dopo": 100,
+   "rilievi_dopo": [],
+   "mosse": [
+    {
+     "mossa": "scava2",
+     "celle": [
+      "M15=⬜",
+      "N15=⬜"
+     ],
+     "voto": 97,
+     "avvicinamento": 1.5
+    },
+    {
+     "mossa": "ingresso",
+     "celle": [
+      "A03=⬜"
+     ],
+     "voto": 97,
+     "avvicinamento": 2.5
+    },
+    {
+     "mossa": "ingresso",
+     "celle": [
+      "A11=⬜"
+     ],
+     "voto": 100,
+     "avvicinamento": 3.5
+    }
+   ],
+   "valutazioni": 68,
+   "tipo": "bsp",
+   "seme": 3
+  },
+  {
+   "voto_prima": 97,
+   "rilievi_prima": [
+    "struttura/un-ingresso"
+   ],
+   "voto_dopo": 100,
+   "rilievi_dopo": [],
+   "mosse": [
+    {
+     "mossa": "ingresso",
+     "celle": [
+      "A18=🟤"
+     ],
+     "voto": 97,
+     "avvicinamento": 2.487
+    },
+    {
+     "mossa": "ingresso",
+     "celle": [
+      "AF15=🟤"
+     ],
+     "voto": 100,
+     "avvicinamento": 3.488
+    },
+    {
+     "mossa": "copertura",
+     "celle": [
+      "G06=🪨"
+     ],
+     "voto": 100,
+     "avvicinamento": 3.5
+    }
+   ],
+   "valutazioni": 128,
+   "tipo": "grotta",
+   "seme": 1
+  },
+  {
+   "voto_prima": 90,
+   "rilievi_prima": [
+    "m2/vuoto",
+    "m4/esposizione",
+    "struttura/senza-anelli",
+    "struttura/un-ingresso"
+   ],
+   "voto_dopo": 98,
+   "rilievi_dopo": [
+    "m4/esposizione"
+   ],
+   "mosse": [
+    {
+     "mossa": "blocco3x3",
+     "celle": [
+      "O11=🔺",
+      "O12=🔺",
+      "O13=🔺",
+      "P11=🔺",
+      "P12=🔺",
+      "P13=🔺",
+      "Q11=🔺",
+      "Q12=🔺",
+      "Q13=🔺"
+     ],
+     "voto": 95,
+     "avvicinamento": 1.422
+    },
+    {
+     "mossa": "ingresso",
+     "celle": [
+      "H01=🟤"
+     ],
+     "voto": 95,
+     "avvicinamento": 2.423
+    },
+    {
+     "mossa": "ingresso",
+     "celle": [
+      "Q01=🟤"
+     ],
+     "voto": 98,
+     "avvicinamento": 3.425
+    },
+    {
+     "mossa": "blocco4x2",
+     "celle": [
+      "P15=🔺",
+      "P16=🔺",
+      "Q15=🔺",
+      "Q16=🔺",
+      "R15=🔺",
+      "R16=🔺",
+      "S15=🔺",
+      "S16=🔺"
+     ],
+     "voto": 98,
+     "avvicinamento": 3.47
+    },
+    {
+     "mossa": "blocco2x4",
+     "celle": [
+      "L10=🔺",
+      "L11=🔺",
+      "L12=🔺",
+      "L13=🔺",
+      "M10=🔺",
+      "M11=🔺",
+      "M12=🔺",
+      "M13=🔺"
+     ],
+     "voto": 98,
+     "avvicinamento": 3.5
+    }
+   ],
+   "valutazioni": 117,
+   "tipo": "grotta",
+   "seme": 2
+  },
+  {
+   "voto_prima": 95,
+   "rilievi_prima": [
+    "m4/esposizione",
+    "struttura/un-ingresso"
+   ],
+   "voto_dopo": 95,
+   "rilievi_dopo": [
+    "m4/esposizione",
+    "struttura/un-ingresso"
+   ],
+   "mosse": [
+    {
+     "mossa": "ingresso",
+     "celle": [
+      "U01=🟤"
+     ],
+     "voto": 95,
+     "avvicinamento": 2.419
+    },
+    {
+     "mossa": "blocco4x2",
+     "celle": [
+      "N10=🔺",
+      "N11=🔺",
+      "O10=🔺",
+      "O11=🔺",
+      "P10=🔺",
+      "P11=🔺",
+      "Q10=🔺",
+      "Q11=🔺"
+     ],
+     "voto": 95,
+     "avvicinamento": 2.465
+    },
+    {
+     "mossa": "blocco2x4",
+     "celle": [
+      "T11=🔺",
+      "T12=🔺",
+      "T13=🔺",
+      "T14=🔺",
+      "U11=🔺",
+      "U12=🔺",
+      "U13=🔺",
+      "U14=🔺"
+     ],
+     "voto": 95,
+     "avvicinamento": 2.5
+    }
+   ],
+   "valutazioni": 80,
+   "tipo": "grotta",
+   "seme": 3
+  }
+ ],
+ "canone": {
+  "voto_prima": 95,
+  "rilievi_prima": [
+   "m4/esposizione",
+   "struttura/senza-anelli"
+  ],
+  "voto_dopo": 98,
+  "rilievi_dopo": [
+   "m4/esposizione"
+  ],
+  "mosse": [
+   {
+    "mossa": "blocco4x2",
+    "celle": [
+     "I11=📦",
+     "I12=📦",
+     "J11=📦",
+     "J12=📦",
+     "K11=📦",
+     "K12=📦",
+     "L11=📦",
+     "L12=📦"
+    ],
+    "voto": 98,
+    "avvicinamento": 3.5
+   }
+  ],
+  "valutazioni": 26,
+  "file": "07_il Portale Della Forgia Eterna/Mappe/hammerfist-372-1372/M7-F-fucina-grande-372.md"
+ },
+ "determinismo": {
+  "giro1": "532b58d1fc8b467f",
+  "giro2": "532b58d1fc8b467f",
+  "rapporti_identici": true,
+  "file_identici": true
+ }
+}

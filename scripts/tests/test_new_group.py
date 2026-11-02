@@ -37,10 +37,20 @@ PG_DEL_PRIMO = [p["pg"] for p in STATO_VERO["party"]]
 
 
 def _copia(dest: Path) -> None:
-    """`campaign/` e `scripts/` copiati, tutto il resto del repo collegato."""
+    """`campaign/`, `scripts/` e `PG/schede/` copiati, tutto il resto collegato.
+
+    `PG/` non si collega intera: il reset riscrive `PG/schede/` (ADR-0088), e
+    attraverso un collegamento riscriverebbe le schede del repo vero.
+    """
     for nome in ("campaign", "scripts"):
         shutil.copytree(ROOT / nome, dest / nome,
                         ignore=shutil.ignore_patterns("__pycache__"))
+    (dest / "PG").mkdir()
+    for voce in (ROOT / "PG").iterdir():
+        if voce.name == "schede":
+            shutil.copytree(voce, dest / "PG" / "schede")
+        else:
+            (dest / "PG" / voce.name).symlink_to(voce)
     for voce in ROOT.iterdir():
         if not (dest / voce.name).exists() and voce.name != ".git":
             (dest / voce.name).symlink_to(voce)
@@ -114,6 +124,22 @@ class TestIlResetSuiFileVeri(unittest.TestCase):
         nuovo, mancanti = render_state.apply_regions(md, dati)
         self.assertEqual(mancanti, [])
         self.assertEqual(nuovo, md)
+
+    def test_le_schede_pg_sono_del_gruppo_nuovo(self):
+        """Le schede del primo tavolo se ne vanno, i PG nuovi hanno la loro (ADR-0088)."""
+        import subprocess
+        schede = self.radice / "PG" / "schede"
+        for nome in PG_DEL_PRIMO:
+            self.assertFalse((schede / f"{nome.lower()}.yaml").exists())
+        dati = yaml.safe_load(self._testo("campaign/state.yaml"))
+        self.assertEqual(len(list(schede.glob("*.yaml"))), len(dati["party"]))
+        for script in ("validate_pg.py", "render_pg.py"):
+            argomenti = ["--check"] if script == "render_pg.py" else []
+            r = subprocess.run([sys.executable, str(self.radice / "scripts" / script), *argomenti],
+                               capture_output=True, text=True)
+            self.assertEqual(r.returncode, 0, f"{script} rosso sul gruppo nuovo:\n{r.stdout}{r.stderr}")
+        self.assertTrue((ROOT / "PG" / "schede" / "thorik.yaml").exists(),
+                        "il reset ha toccato le schede del repo vero")
 
     def test_non_eredita_niente_della_partita(self):
         for rel in ("campaign/state.yaml", "campaign/state.md", "campaign/state-changelog.md",

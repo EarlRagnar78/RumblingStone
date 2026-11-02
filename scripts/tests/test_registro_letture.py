@@ -107,6 +107,28 @@ class TestCancello(unittest.TestCase):
                                           encoding="utf-8")
         self.assertEqual(self.RL.main(["--registra", self.rel, "--ruolo", "lettore", "--corsa", str(corsa)]), 1)
 
+    def test_la_lettura_intera_del_developer_si_registra(self):
+        # D7 di MASTER-DEF: i giri su ARC-07 hanno letto il master intero
+        self._registro()
+        rapporto = self.root / "DEV.md"
+        rapporto.write_text("| # | Scena | Codice |\n|---|---|---|\n| 1 | 3 | §8 · regola | 🔴 |\n", encoding="utf-8")
+        self.assertEqual(self.RL.main(["--registra", self.rel, "--ruolo", "developer", "--intero",
+                                       "--rapporto", str(rapporto)]), 0)
+        voce = json.loads(self.RL.REGISTRO.read_text(encoding="utf-8"))["master"][self.rel]
+        dev = voce["letture"][-1]
+        self.assertEqual((dev["modo"], dev["impronta"], dev["rilievi"][0]["gravita"]),
+                         ("intero", _sha(self.TESTO), "🔴"))
+
+    def test_il_developer_non_e_un_ruolo_obbligatorio(self):
+        self._registro(ruoli=("developer",))
+        (self.root / self.rel).write_text(self.TESTO + "cambiato\n", encoding="utf-8")
+        self.assertEqual(self.RL.main(["--check"]), 0)
+
+    def test_corsa_e_intero_insieme_no(self):
+        self._registro()
+        with self.assertRaises(SystemExit):
+            self.RL.main(["--registra", self.rel, "--ruolo", "lettore", "--intero", "--corsa", "x"])
+
     def test_il_confronto_mette_le_due_letture_affiancate(self):
         a, b = self.root / "a", self.root / "b"
         for cartella, ago in ((a, "-1"), (b, "+2")):

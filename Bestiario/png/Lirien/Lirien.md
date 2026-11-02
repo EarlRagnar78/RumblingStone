@@ -1,6 +1,5 @@
 # Lirien Amaranti — «Il Giullare Spezzato»
 
-
 ```statblocco
 gs: 4
 ca: 16
@@ -23,15 +22,16 @@ ts: Temp +2, Rifl +9, Vol +1
 **Location**: Rethmar, quartiere basso — di giorno al mulino dei bambini, la sera passa il cappello al «Ponte Nuovo» di Kellin Shadowbanks
 **Motivation**: ridere in faccia alla farsa del mondo prima che la farsa rida di lui; e — sotto il trucco — non permettere che il Maestro faccia a qualcun altro ciò che ha fatto a lui.
 **CR**: 4 (build liv. 5) — volutamente NON scalato all'APL 13: è un civile straordinario, non una minaccia; per renderlo rilevante in combattimento passare da `skills/npc-villain-boosting/` | **Race/Class**: mezzelfo, Ladro (Scout) 4 / Bardo (di Corte) 1 — progressione futura del giocatore: → Bardo 8 / Arcane Trickster 4 (liv. 16)
-**Key stats** *(trascritte dalla scheda PF1e v2 del giocatore, blocco liv. 5)*: PF 33; CA 16 (tatto 13); Iniziativa +7; TS +2/+9/+1; Pugnale perfetto +7 (1d4−1, 19-20/×2); Frusta perfetta +6 (1d3−1 nonletale, portata 10 ft, Trip/Disarm, CMB +7 con Agile Maneuvers); Furtivo +2d6 (Skirmisher: attiva con movimento 10+ ft); Intimidire +12/+14; Satira Bardica −1 (nemici entro 9 m); talenti: Arma Focalizzata (pugnale), Arma Accurata, Enforcer, EWP frusta; incantesimi da bardo 1° (CD 14): *Risata Incontenibile*, *Unto*; trucchetti: *Suono Fantasma*, *Prestidigitazione*, *Ninnananna*, *Messaggio*.
+**Key stats** *(trascritte dalla scheda PF1e v2 del giocatore, blocco liv. 5)*: PF 33; CA 16 (tatto 13); Iniziativa +7; TS +2/+9/+1; Pugnale perfetto +7 (1d4−1, 19-20/×2); Frusta perfetta +6 (1d3−1 nonletale, portata 10 ft, Trip/Disarm, CMB +7 con Agile Maneuvers); Furtivo +2d6 (Skirmisher: attiva con movimento 10+ ft); Intimidire +12/+14; Satira Bardica −1 (nemici entro 9 m); talenti: Arma Accurata, Enforcer, Iniziativa Migliorata, Manovre Agili; incantesimi da bardo 1° (CD 14): *Risata Incontenibile*, *Unto*; trucchetti: *Suono Fantasma*, *Prestidigitazione*, *Ninnananna*, *Messaggio*.
 **Nota conversione 3.5**: al tavolo 3.5 leggere Scout-Ladro ≈ Ladro con Attacco Furtivo +2d6, Enforcer ≈ Intimidire demoralizzante gratuito sul danno nonletale, Satira ≈ *inspire* invertita (−1 nemici). Nessuna meccanica nuova: tutto ciò che fa è già coperto da Intimidire/Raggirare/Furtivo SRD.
+> ✔ Conti PF1e chiusi dal DM il 2026-10-18 senza toccare i numeri: Iniziativa +7 e BMC +7 «con Agile Maneuvers» vengono da Iniziativa Migliorata e Manovre Agili, che prendono il posto di Competenza nelle Armi Esotiche (frusta), doppione perché il bardo PF1e sa già usare la frusta, e di Arma Focalizzata (pugnale). Senza Arma Focalizzata il pugnale perfetto torna a +7 con Des +3 (BAB +3, Des +3, perfetto +1); la frusta perfetta, a +6, resta un punto sotto lo stesso conto. Restano da leggere sulla scheda del giocatore i punteggi di caratteristica, che il file non riporta.
 **Token**: — (da assegnare; il trucco da Pierrot — lacrime nere colate, sorriso rosso asimmetrico — è il segno distintivo)
-
-Boost log: (vuoto)
 
 ---
 
-## 1. Chi è (adattamento Faerûn 1372 DR del background del giocatore)
+## Chi è
+
+### 1. Chi è (adattamento Faerûn 1372 DR del background del giocatore)
 
 Orfano mezzelfo cresciuto invisibile nei vicoli — nell'adattamento FR non
 Magnimar ma **Rethmar stessa** (canone): il ritorno da profugo è quindi
@@ -63,13 +63,23 @@ suoni), il *Guanto del Suggeritore* (+2 Rapidità di Mano/Disattivare
 Congegni), la *Fiala del Sangue d'Ottobre* (l'ultima vittima del Maestro —
 quando la stringe, la Satira diventa gelida).
 
----
+## Aspetto e voce
 
-## 2. I tre intrecci proposti (con PNG già a catalogo)
+[DA SCRIVERE — la scheda non dice com'è né come parla. C'è solo il trucco da Pierrot (campo **Token**, in testa) e il suo senso (§1).]
+
+## Cosa vuole
+
+Il *Want* è nel campo **Motivation**, in testa.
+
+[DA SCRIVERE — cosa teme: la scheda non lo dice.]
+
+## Nella campagna
+
+### 2. I tre intrecci proposti (con PNG già a catalogo)
 
 > Tre agganci minimi come da piano §4. Tutti a esiti aperti (D13).
 
-### 2.1 Il Maestro e la rete delle statue (Varis → Sal → Il Collezionista)
+#### 2.1 Il Maestro e la rete delle statue (Varis → Sal → Il Collezionista)
 
 Il Maestro non è sparito *(canone — DM 2026-07-20)*: artisti che
 trasformano il dolore in «opere» trovano sempre un mercato, e il mercato in
@@ -86,7 +96,7 @@ borseggio: **chi gli crede?** Perché la verità emerga serve che i PG lo
 prendano sul serio — la rivelazione resta in mano loro (guardia di
 protagonismo, §4).
 
-### 2.2 Tempestas — due mezzelfi, due maschere
+#### 2.2 Tempestas — due mezzelfi, due maschere
 
 Il **Maestro Tempestas** (`Bestiario/png/Tempestas/Tempestas.md`) è tutto
 ciò che Lirien detesta fingere di detestare: mezzelfo, bardo, *di corte*
@@ -99,7 +109,7 @@ sue reti non sentono — le voci del quartiere basso, la sala di Kellin.
 sabotaggio comico · o il canale che salva la vita a Tempestas quando i
 sicari drow lo cercano (thread [HOOKS ↔ TEMPESTAS], state.md §7).
 
-### 2.3 Il borseggio sbagliato (gli infiltratori dell'onda profughi)
+#### 2.3 Il borseggio sbagliato (gli infiltratori dell'onda profughi)
 
 Fra i profughi camminano **3-5 infiltrati** della Mano Rossa (state.md
 §2.5). Lirien, per abitudine e per fame, borseggia — e nella borsa
@@ -111,9 +121,7 @@ torna ai proprietari con il suo nome attaccato; (c) i PG non gli danno
 retta → la Fase 0 si complica esattamente come da tabella §2.5. In ogni
 ramo, lo scompiglio lo crea lui — **risolverlo tocca ai PG**.
 
----
-
-## 3. Meccanica «scompiglio» (come usarlo al tavolo)
+### 3. Meccanica «scompiglio» (come usarlo al tavolo)
 
 Lirien è un **generatore di complicazioni a bassa frequenza**, non un
 motore di trama. Uso consigliato: al massimo **una comparsa per sessione**,
@@ -132,20 +140,21 @@ clock dei villain o piani della Mano Rossa oltre ciò che un profugo sente
 per strada (§3 di state.md comanda); non combatte volentieri (GS 4 in un
 mondo di GS 13); se minacciato fugge — con stile, ma fugge.
 
----
+## In combattimento
 
-## 4. Guardia di protagonismo PG (obbligatoria)
+Non ha uno statblocco a parte: i numeri sono nel blocco e nel campo **Key stats** in testa, con la **Nota conversione 3.5**.
 
-Test della skill narrativa applicato: Lirien **apre porte, non le
-attraversa**. Riconosce le statue ma non può smascherare la rete; trova
-l'oggetto drow ma non può fermare la Fase 0; punge Halveth ma non può farlo
-cadere. Ogni suo filo termina in una scelta dei PG. Se in gioco inizia a
-risolvere ciò che spetta ai PG, il DM lo «spegne»: quella sera il Giullare
-non si presenta al Ponte Nuovo.
+**Tattiche**: la scheda dice che non combatte volentieri e che, se minacciato, fugge (§3, *Limiti duri*). Quando non può scappare:
+- *Prima del combattimento*: non lo cerca mai. Se lo vede arrivare, mette fra sé e i nemici una folla, un vicolo o un mucchio di casse, e lancia *unto* sul passaggio.
+- *Durante il combattimento*: round 1, la **Satira** (−1 ai nemici entro 9 m) e una battuta che li fa arrabbiare con lui invece che con chi protegge. Poi tiene la distanza con la frusta, a 3 m: sbilancia o disarma chi si avvicina, e quando ha mosso di almeno 3 m colpisce col pugnale chi è a terra (attacco furtivo +2d6, da Scout). *Risata incontenibile* (CD 14) sul nemico più grosso, appena ne ha bisogno. Ogni danno non letale della frusta lo usa per demoralizzare (Enforcer).
+- *Morale*: appena si apre un'uscita, la prende. Sotto metà pf, o se resta solo, si arrende con un inchino e una battuta, e prova a comprarsi la vita con quello che ha visto (§2.3). Per i bambini del mulino non scappa.
 
----
 
-## 5. Promozione a PG (opzione futura)
+## Esiti possibili
+
+I rami aperti dei tre intrecci sono in §2.2 (*Esiti aperti*) e §2.3 (*Triangolo di rischio*).
+
+### 5. Promozione a PG (opzione futura)
 
 La scheda del giocatore è pensata per il gioco (build liv. 3→16, PF1e,
 revisione talenti inclusa). Se un giorno Lirien entra in un **branch di
@@ -154,7 +163,20 @@ sua «vita da PNG» pregressa: tutto ciò che il DM ha canonizzato qui è il
 suo passato giocabile. In quel caso il PNG esce di scena (stesso
 personaggio, non due copie).
 
-## Righe applicate a `state.md` (canonizzazione 2026-07-20)
+## Al tavolo
+
+### 4. Guardia di protagonismo PG (obbligatoria)
+
+Test della skill narrativa applicato: Lirien **apre porte, non le
+attraversa**. Riconosce le statue ma non può smascherare la rete; trova
+l'oggetto drow ma non può fermare la Fase 0; punge Halveth ma non può farlo
+cadere. Ogni suo filo termina in una scelta dei PG. Se in gioco inizia a
+risolvere ciò che spetta ai PG, il DM lo «spegne»: quella sera il Giullare
+non si presenta al Ponte Nuovo.
+
+## Fonti e canone
+
+### Righe applicate a `state.md` (canonizzazione 2026-07-20)
 
 > Applicate (vedi `state.md` §8, riga 2026-07-20):
 >
@@ -166,3 +188,5 @@ personaggio, non due copie).
 >   sa ciò che si dice al Ponte Nuovo».
 > - **§7 (thread)**: «[LIRIEN] Il Giullare Spezzato ha visto qualcosa nelle
 >   statue — i PG gli daranno retta prima che lo faccia qualcun altro?»
+
+Boost log: (vuoto)

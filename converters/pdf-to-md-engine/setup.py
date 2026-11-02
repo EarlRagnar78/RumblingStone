@@ -117,28 +117,28 @@ def install_system_dependencies():
     return True
 
 def setup_python_environment():
-    """Setup Python virtual environment with Python 3.12 for full compatibility"""
-    print("\n🐍 Setting up Python environment with Python 3.12...")
+    """Setup Python virtual environment with Python 3.13 for full compatibility"""
+    print("\n🐍 Setting up Python environment with Python 3.13...")
     
-    # Check if python3.12 is available
+    # Check if python3.13 is available
     python312_cmd = None
-    for cmd in ["python3.12", "/usr/bin/python3.12", "python3"]:
+    for cmd in ["python3.13", "/usr/bin/python3.13", "python3"]:
         try:
             result = subprocess.run([cmd, "--version"], capture_output=True, text=True)
-            if "3.12" in result.stdout:
+            if "3.13" in result.stdout:
                 python312_cmd = cmd
-                print(f"✅ Found Python 3.12: {cmd}")
+                print(f"✅ Found Python 3.13: {cmd}")
                 break
         except:
             continue
     
     if not python312_cmd:
-        print("⚠️  Python 3.12 not found, using system Python (may have compatibility issues)")
+        print("⚠️  Python 3.13 not found, using system Python (may have compatibility issues)")
         python312_cmd = sys.executable
     
-    # Create virtual environment with Python 3.12
+    # Create virtual environment with Python 3.13
     if not Path("venv").exists():
-        if not run_command(f"{python312_cmd} -m venv venv", "Creating Python 3.12 virtual environment"):
+        if not run_command(f"{python312_cmd} -m venv venv", "Creating Python 3.13 virtual environment"):
             return False
     
     # Determine pip command
@@ -172,7 +172,7 @@ def setup_python_environment():
     for dep in core_deps:
         run_command(f"{pip_cmd} install '{dep}'", f"Installing {dep.split('>=')[0]}", ignore_errors=True)
     
-    # Install all optional dependencies (now compatible with Python 3.12)
+    # Install all optional dependencies (now compatible with Python 3.13)
     optional_deps = [
         "docling>=2.0.0",
         "torch>=2.0.0",
@@ -299,8 +299,8 @@ def main():
     print("=" * 70)
     
     # Check Python version
-    if sys.version_info < (3, 9):
-        print("❌ Python 3.9+ required")
+    if sys.version_info < (3, 13):
+        print("❌ Python 3.13+ required (ADR-0099: la Python di Debian stable)")
         return 1
     
     print(f"✅ Python {sys.version.split()[0]} detected")

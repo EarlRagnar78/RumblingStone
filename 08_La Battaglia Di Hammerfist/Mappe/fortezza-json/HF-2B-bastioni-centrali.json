@@ -1,0 +1,374 @@
+{
+ "schema_version": "1.0",
+ "title": "MAPPA 2B-CORRETTA REVISED: Attacco del Drago sui Bastioni",
+ "units_in": "meters",
+ "scale_m_per_square": 1.5,
+ "map_size": [
+  60.0,
+  39.0
+ ],
+ "base_terrain": "🟩",
+ "north": "N",
+ "tipo": "tattica",
+ "ambiente": "esterno",
+ "regions": [
+  {
+   "terrain": "🟫",
+   "rect": [
+    0.0,
+    0.0,
+    60.0,
+    25.5
+   ]
+  },
+  {
+   "terrain": "🟦",
+   "rect": [
+    0.0,
+    31.5,
+    60.0,
+    6.0
+   ]
+  }
+ ],
+ "structures": [
+  {
+   "type": "⬜",
+   "rect": [
+    0.0,
+    25.5,
+    12.0,
+    4.5
+   ]
+  },
+  {
+   "type": "⬜",
+   "rect": [
+    48.0,
+    25.5,
+    12.0,
+    4.5
+   ]
+  },
+  {
+   "type": "🔳",
+   "rect": [
+    12.0,
+    19.5,
+    15.0,
+    12.0
+   ],
+   "label": "Bastione G1 (Porta Ovest), 15 m sul cortile esterno: 15 × 12 m"
+  },
+  {
+   "type": "🔳",
+   "rect": [
+    33.0,
+    19.5,
+    15.0,
+    12.0
+   ],
+   "label": "Bastione G2, 15 m sul cortile esterno: 15 × 12 m"
+  },
+  {
+   "type": "🔳",
+   "rect": [
+    27.0,
+    25.5,
+    6.0,
+    4.5
+   ],
+   "label": "Sopra il cancello, 15 m sul cortile esterno: il cancello è sotto, sfondato"
+  },
+  {
+   "type": "🧱",
+   "rect": [
+    0.0,
+    30.0,
+    60.0,
+    1.5
+   ]
+  },
+  {
+   "type": "🪵",
+   "rect": [
+    27.0,
+    31.5,
+    6.0,
+    6.0
+   ],
+   "label": "Relitto del ponte levatoio nel fossato (crollato il Giorno 2)"
+  },
+  {
+   "type": "🎯",
+   "at": [
+    13.5,
+    28.5
+   ]
+  },
+  {
+   "type": "🎯",
+   "at": [
+    18.0,
+    28.5
+   ]
+  },
+  {
+   "type": "🎯",
+   "at": [
+    40.5,
+    28.5
+   ]
+  },
+  {
+   "type": "🎯",
+   "at": [
+    45.0,
+    28.5
+   ]
+  },
+  {
+   "type": "🪜",
+   "at": [
+    18.0,
+    19.5
+   ]
+  },
+  {
+   "type": "🪜",
+   "at": [
+    40.5,
+    19.5
+   ]
+  },
+  {
+   "type": "🪜",
+   "at": [
+    4.5,
+    24.0
+   ]
+  },
+  {
+   "type": "🪜",
+   "at": [
+    54.0,
+    24.0
+   ]
+  }
+ ],
+ "hazards": [
+  {
+   "type": "🟥",
+   "rect": [
+    19.5,
+    25.5,
+    21.0,
+    3.0
+   ],
+   "label": "Cono del soffio, 18 m: acido 14d4, Riflessi CD 29 dimezza",
+   "effect": "14d4 acido, Riflessi CD 29 dimezza; dopo, terreno difficile per 10 minuti"
+  },
+  {
+   "type": "🟥",
+   "rect": [
+    21.0,
+    24.0,
+    6.0,
+    1.5
+   ]
+  },
+  {
+   "type": "🟥",
+   "rect": [
+    33.0,
+    24.0,
+    6.0,
+    1.5
+   ]
+  },
+  {
+   "type": "🟥",
+   "rect": [
+    21.0,
+    28.5,
+    18.0,
+    1.5
+   ]
+  },
+  {
+   "type": "🟥",
+   "rect": [
+    22.5,
+    30.0,
+    15.0,
+    1.5
+   ]
+  }
+ ],
+ "units": [
+  {
+   "faction": "Mano Rossa",
+   "name": "Fauci di Palude, Enorme 3 × 3, 15 m sopra il camminamento (Drago Nero Adulto Avanzato)",
+   "token": "🟣",
+   "area": {
+    "rect": [
+     27.0,
+     33.0,
+     4.5,
+     4.5
+    ]
+   }
+  },
+  {
+   "faction": "Nani",
+   "name": "Guardie Reali (Elite, PF ~42)",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     21.0,
+     25.5,
+     18.0,
+     1.5
+    ]
+   },
+   "quantity": 15
+  },
+  {
+   "faction": "Nani",
+   "name": "Re Thorek XIII (Ftr/Nobile, PF 195): salito sul cancello al corno del drago, per tenere i nani ai posti",
+   "token": "🔵",
+   "at": [
+    28.5,
+    27.0
+   ]
+  },
+  {
+   "faction": "Nani",
+   "name": "Borin Ferropugno (Ftr)",
+   "token": "🔵",
+   "at": [
+    27.0,
+    27.0
+   ]
+  },
+  {
+   "faction": "Nani",
+   "name": "Thorin Runaforte (Clr)",
+   "token": "🔵",
+   "at": [
+    42.0,
+    22.5
+   ]
+  },
+  {
+   "faction": "Nani",
+   "name": "Nala Cantapietre (Brd)",
+   "token": "🔵",
+   "at": [
+    4.5,
+    22.5
+   ]
+  },
+  {
+   "faction": "Nani",
+   "name": "Madre Dana Forgiapietra (Clr 14)",
+   "token": "🔵",
+   "at": [
+    30.0,
+    12.0
+   ]
+  },
+  {
+   "faction": "Nani",
+   "name": "Cantitrici della Pietra (Clr/Brd)",
+   "token": "🔵",
+   "area": {
+    "rect": [
+     36.0,
+     12.0,
+     7.5,
+     1.5
+    ]
+   },
+   "quantity": 5
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Orchi sulla riva del fossato",
+   "token": "🔴",
+   "area": {
+    "rect": [
+     6.0,
+     37.5,
+     18.0,
+     1.5
+    ]
+   },
+   "quantity": 12
+  },
+  {
+   "faction": "Mano Rossa",
+   "name": "Orchi sulla riva del fossato",
+   "token": "🔴",
+   "area": {
+    "rect": [
+     37.5,
+     37.5,
+     18.0,
+     1.5
+    ]
+   },
+   "quantity": 12
+  }
+ ],
+ "movements": [
+  {
+   "name": "Picchiata di Fauci (60→30 m di quota, round prec.), da sud",
+   "path": [
+    [
+     51.0,
+     37.5
+    ],
+    [
+     31.5,
+     34.5
+    ]
+   ],
+   "color": "#1d6fd8"
+  },
+  {
+   "name": "Evacuazione: scala di G1, poi il cortile esterno fino alla Porta Interna (45 m a nord)",
+   "path": [
+    [
+     28.5,
+     27.0
+    ],
+    [
+     19.5,
+     24.0
+    ],
+    [
+     18.0,
+     19.5
+    ],
+    [
+     18.0,
+     0.0
+    ]
+   ],
+   "color": "#2c8c3c"
+  }
+ ],
+ "taglie": [
+  {
+   "at": [
+    28.5,
+    34.5
+   ],
+   "taglia": "Enorme"
+  }
+ ],
+ "luogo": "Hammerfist, bastioni sud",
+ "quota": "965 m ; s.l.m., la piattaforma sopra il cancello",
+ "dislivello": "+15 m ; sul cortile esterno (+95 m sulla piana)"
+}

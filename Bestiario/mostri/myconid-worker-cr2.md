@@ -18,10 +18,10 @@ voci:
   - Talenti: Allerta, Resistenza Fisica
 ```
 
-> [INFERRED — needs DM confirmation] correzione 3.5 da `scripts/conformita_statblocchi.py`: Tempra +6 → **+8**: vegetale 4 DV, Tempra buona (+4) + Cos 18 (+4). La Cos 18 è quella di `4d8+16`; il +6 era la Cos 14 della bozza.
+> correzione 3.5 da `scripts/conformita_statblocchi.py`: Tempra +6 → **+8**: vegetale 4 DV, Tempra buona (+4) + Cos 18 (+4). La Cos 18 è quella di `4d8+16`; il +6 era la Cos 14 della bozza.
 
-> [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili. ⚠ Cos 18 ricavata da pf 34 su 4 DV: la fonte dice 14, lo statblocco è stato adattato e vince lo statblocco
+> [GENERATO] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. ⚠ Cos 18 ricavata da pf 34 su 4 DV: la fonte dice 14, lo statblocco è stato adattato e vince lo statblocco
 
 Small plant, 4d8+16. **hp 34**; **AC 15** (+1 taglia, +4 naturale), touch 11, flat-footed 15. Vel 6 m. TS Temp +8, Rifl +1, Vol +2. BAB +3; Lotta +0.
 **Mischia** schianto +5 (1d4+1). Scurovisione 18 m, tratti vegetali. Ascoltare/Osservare +6. Talenti: Allerta, Resistenza Fisica.
-Notes: operai della colonia (in gruppo). ⚠️ La sorgente annota «CR 3» nel calcolo XP; 4 HD Small ≈ **CR 2** `[INFERRED]`.
+Notes: operai della colonia (in gruppo). ⚠️ La sorgente annota «CR 3» nel calcolo XP; 4 HD Small ≈ **CR 2**.

@@ -5,7 +5,7 @@
 > silenzio in mezzo. Prima di questo file l'arco non aveva **nessun**
 > cue sonoro (il divario è registrato in
 > `plans/RICERCA-COSA-SERVE-A-UN-MODULO-PUBBLICABILE.md` A5). Modello:
-> `STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md` §5.
+> `10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md` §5.
 > **Regola**: **descrizioni, mai titoli di brani** — così ognuno usa
 > quello che ha (Syrinscape, una playlist, o le nocche sul tavolo).
 > **Stato**: canonico (apparato d'uso). **Ultima revisione**: 2026-08-23.
@@ -52,7 +52,7 @@ Tre corollari pratici:
 | **1A — la ricognizione** (pattuglia di worg) | **niente.** Il respiro dei giocatori è il cue. Se qualcuno chiede «cosa si sente?», rispondi «voi» |
 | **1B — il Consiglio di Guerra** | interno pieno: il bastone di Dana sulla pietra, eco corta. Nessuna musica sotto le decisioni |
 | **1E — i Presagi** | gli animali che se ne vanno. **E poi il vuoto che lasciano**: il bosco che smette di fare rumore è più inquietante di un ruggito |
-| **1F — la dimostrazione di Fauci** | **taglia tutto.** Un colpo d'ala. Poi il sibilo dell'acido sulla torre di vedetta, lungo, e la pietra che cola |
+| **1C — la dimostrazione di Fauci** | **taglia tutto.** Un colpo d'ala. Poi il sibilo dell'acido sulla torre di vedetta, lungo, e la pietra che cola |
 
 ---
 

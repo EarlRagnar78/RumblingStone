@@ -1,0 +1,245 @@
+{
+  "schema_version": "1.0",
+  "title": "GS-1 — La cripta della Cattedrale di Lathander e la galleria di servizio (ingresso A)",
+  "scale_m_per_square": 1.5,
+  "map_size": [
+    26,
+    16
+  ],
+  "base_terrain": "🏰",
+  "north": "N",
+  "tipo": "tattica",
+  "ambiente": "interni",
+  "luogo": "Rethmar, sotto la Cattedrale di Lathander (n. 18 della pianta)",
+  "regions": [
+    {
+      "terrain": "⬜",
+      "rect": [
+        2,
+        2,
+        14,
+        11
+      ],
+      "label": "La cripta dei vescovi dell'Alba: volta a crociera alta 4,5 m, pavimento di marmo rosa"
+    },
+    {
+      "terrain": "⬜",
+      "rect": [
+        17,
+        6,
+        8,
+        2
+      ],
+      "label": "La galleria di servizio: 2,4 m di larghezza, scavata nel tufo, scende verso nord per 400 m"
+    },
+    {
+      "terrain": "⬜",
+      "rect": [
+        18,
+        9,
+        5,
+        4
+      ],
+      "label": "La sacrestia bassa, dove si tengono i paramenti della benedizione delle acque"
+    }
+  ],
+  "structures": [
+    {
+      "type": "🔼",
+      "at": [
+        2,
+        7
+      ],
+      "label": "Scala alla navata della Cattedrale",
+      "collega": "fuori mappa ; la navata della Cattedrale di Lathander, 6 m più su"
+    },
+    {
+      "type": "🔒",
+      "at": [
+        16,
+        7
+      ],
+      "label": "Porta di ferro della galleria: Scassinare CD 30, durezza 10, 60 pf; la chiave ce l'ha Tredora"
+    },
+    {
+      "type": "🚪",
+      "at": [
+        20,
+        8
+      ],
+      "label": "Porta della sacrestia bassa, di legno, non chiusa"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        6,
+        5
+      ],
+      "label": "Pilastro"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        6,
+        9
+      ],
+      "label": "Pilastro"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        11,
+        5
+      ],
+      "label": "Pilastro"
+    },
+    {
+      "type": "🟪",
+      "at": [
+        11,
+        9
+      ],
+      "label": "Pilastro"
+    },
+    {
+      "type": "⚰",
+      "at": [
+        3,
+        3
+      ],
+      "label": "Sarcofago di un vescovo"
+    },
+    {
+      "type": "⚰",
+      "at": [
+        3,
+        11
+      ],
+      "label": "Sarcofago"
+    },
+    {
+      "type": "⚰",
+      "at": [
+        14,
+        3
+      ],
+      "label": "Sarcofago"
+    },
+    {
+      "type": "⚰",
+      "at": [
+        14,
+        11
+      ],
+      "label": "Sarcofago"
+    },
+    {
+      "type": "🛐",
+      "at": [
+        8,
+        2
+      ],
+      "label": "Altare dell'Alba: il sole di bronzo che il clero portava giù per benedire la cisterna"
+    },
+    {
+      "type": "🕯",
+      "at": [
+        7,
+        3
+      ],
+      "label": "Candelabro"
+    },
+    {
+      "type": "🕯",
+      "at": [
+        9,
+        3
+      ],
+      "label": "Candelabro"
+    },
+    {
+      "type": "📦",
+      "at": [
+        21,
+        11
+      ],
+      "label": "Cassoni dei paramenti"
+    },
+    {
+      "type": "🔽",
+      "at": [
+        23,
+        7
+      ],
+      "label": "La galleria di servizio scende: 400 m in pendenza fino al ponte ovest della Grande Cisterna",
+      "collega": "GSC-3-QUOTA-MEDIA-E-FONDO.md B14"
+    }
+  ],
+  "hazards": [
+    {
+      "type": "🟨",
+      "at": [
+        18,
+        6
+      ],
+      "label": "Soglia della galleria",
+      "effect": "sull'architrave c'è il sole di Lathander: un non morto che lo attraversa subisce 2d6 danni (consacrazione permanente del vecchio clero, Sapienza Magica CD 20 per riconoscerla)"
+    }
+  ],
+  "units": [
+    {
+      "faction": "PG",
+      "name": "I quattro PG, scesi dalla navata",
+      "token": "🔵",
+      "area": {
+        "rect": [
+          3,
+          6,
+          2,
+          2
+        ]
+      },
+      "quantity": 4
+    },
+    {
+      "faction": "Alleati",
+      "name": "Tredora Occhidoro, chierica di Lathander 9, con la chiave",
+      "token": "🟢",
+      "at": [
+        8,
+        4
+      ]
+    },
+    {
+      "faction": "Sal",
+      "name": "Fratello Odo, sacrestano a libro paga di Sal (esperto 3)",
+      "token": "🔴",
+      "at": [
+        20,
+        10
+      ]
+    }
+  ],
+  "tattiche": [
+    "**Nessuno scontro previsto.** È la scena dove Tredora consegna la chiave e racconta della benedizione delle acque: l'ultima fu trentun anni fa, poi la cisterna passò alla gilda degli acquaioli e la porta restò chiusa.",
+    "**Fratello Odo** ascolta dalla sacrestia (Muoversi Silenziosamente +6 contro Ascoltare dei PG). Se non lo scoprono, un'ora dopo un piccione parte dal campanile: Tariq sa da che parte arrivano e la Torre è allertata da ovest (vedi GS-4).",
+    "Odo scoperto crolla con Intimidire CD 15 e dice tutto quello che sa: la paga viene da «un uomo con l'anello di sale» (Sal), e lui doveva avvisare se qualcuno chiedeva della porta di ferro."
+  ],
+  "evoluzione": [
+    {
+      "stato": "B · Odo avvisa",
+      "trigger": "i PG non scoprono Odo",
+      "griglia": "la sacrestia resta vuota; sul campanile un piccione",
+      "effetto": "Torre allertata da ovest: gli skum aspettano sul ponte ovest con l'azione preparata, Tariq ha già lanciato i suoi incantesimi di durata lunga"
+    },
+    {
+      "stato": "C · Tredora scende",
+      "trigger": "i PG le chiedono di venire fino alla soglia",
+      "griglia": "Tredora segue fino al ponte ovest e si ferma lì",
+      "effetto": "dopo lo scontro con Karkator può purificare il Cuore (scelta 1 della tabella delle conseguenze). Non combatte: se i PG la mettono in pericolo, la Cattedrale perde la sua chierica per l'assedio"
+    }
+  ],
+  "note_dm": [
+    "**La cripta misura 21 × 16,5 m** (14 × 11 quadretti). La galleria è lunga 400 m e la si percorre in poco più di 5 minuti a passo normale: la scena si stacca quando i PG la imboccano e riprende sul ponte ovest della cisterna (GS-3)."
+  ]
+}

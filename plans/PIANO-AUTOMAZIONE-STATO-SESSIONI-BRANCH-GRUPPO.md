@@ -14,7 +14,7 @@
 > l'analisi dei punti duri, l'architettura proposta, i lotti di lavoro con
 > stime, il piano di test e le domande aperte per il DM.
 
-**Stato**: 🟢 **approvato** (decisioni DM 2026-07-20 — vedi §8 con le risposte) — pronto per il Lotto A
+**Stato**: 🟢 **implementato** (lotti A-F ✅, E-bis con LLM escluso dal DM; decisioni DM del 2026-07-20 in §8); resta il collaudo di `session end` alla prima sessione reale *(allineato a `INDEX.md` il 2026-10-23, P15)*
 **Decisioni architetturali collegate**: ADR-0002 (dm.py orchestratore), ADR-0003 (markdown master / layout generati — governa il §3-bis), ADR-0007 (bozza, §6 qui sotto)
 
 ---

@@ -10,7 +10,7 @@
 > 7 seggi, `png/Consiglio_Rethmar/`): tempio, torre di magia, guardia
 > cittadina, esploratori. Servono alle **Fasi 0-4 della Battaglia di Rethmar**
 > (guarigione di massa, potenza arcana, ordine pubblico, intel).
-> **`[INFERRED — needs DM confirmation]`** — preparazione: ruoli dall'AP
+> **Confermato dal DM il 2026-10-18** — preparazione: ruoli dall'AP
 > (`[Private — Red Hand of Doom]`), stats stimate; canonizzazione a valle
 > quando entrano in gioco. Regola D13: esiti aperti.
 >
@@ -24,10 +24,10 @@
 ## 1. Tredora Occhidoro (Tredora Goldenbrow) — Somma Sacerdotessa di Lathander
 
 **Role**: ally (fede, guarigione di massa)
-**Status**: viva, alla Cattedrale di Rethmar `[INFERRED — needs DM confirmation]`
+**Status**: viva, alla Cattedrale di Rethmar
 **Location**: Cattedrale di Lathander, quartiere alto di Rethmar
 **Motivation**: tenere in vita più difensori possibile durante l'assedio; l'alba dopo la notte è la promessa del suo dio (Pelor dell'AP → **Lathander** in FR 1372).
-**CR**: ~9 (chierico) `[INFERRED]` | **Race/Class**: umana, Chierica di Lathander ~9 — statblock: `[Private — Red Hand of Doom]`
+**CR**: 9 (chierica) | **Race/Class**: umana, Chierica di Lathander 9 — statblock: `[Private — Red Hand of Doom]`
 **Key stats**: incantatrice divina di supporto/guarigione; non combattente di linea.
 **Esiti possibili** (decisione VP "schieramento dei chierici", vedi `campaign/lore/dm-guide-to-be-adapted-tips&tricks.md`):
 - **Chierici alla Cattedrale**: +2 VP, guarigione dei civili migliore, **Tredora sopravvive** (non esposta) — ma meno pozioni di cura disponibili ai PG in battaglia.
@@ -42,10 +42,10 @@ Boost log: (vuoto)
 ## 2. Immerstal il Rosso — il Mago della Città
 
 **Role**: ally (potenza arcana)
-**Status**: vivo, torre di magia di Rethmar `[INFERRED — needs DM confirmation]`
+**Status**: vivo, torre di magia di Rethmar
 **Location**: Rethmar — la sua torre nel quartiere dei mestieri
 **Motivation**: difendere la città che lo ha lasciato in pace per decenni; è il **metro di paragone** della potenza arcana del Vale («più forte di Immerstal il Rosso» è come si misura un mago, `dm-guide` §Cromar).
-**CR**: ~10-11 (mago) `[INFERRED]` | **Race/Class**: umano, Mago ~10 — statblock: `[Private — Red Hand of Doom]`
+**CR**: 11 (mago) | **Race/Class**: umano, Mago 11 — statblock: `[Private — Red Hand of Doom]`
 **Key stats**: incantatore d'assalto; **vola e lancia** — massima efficacia dove può colpire dall'alto e a distanza (`dm-guide` §Streets of Blood).
 **Esiti possibili**:
 - In battaglia è una delle poche risorse capaci di **contrastare le forze alate** dell'orda (manticore, wyvern, i draghi minori) e le ondate di giganti nelle strade. La sua perdita ha un «Loss Effect» dedicato nella tabella Streets of Blood.
@@ -60,10 +60,10 @@ Boost log: (vuoto)
 ## 3. Capitano Ulverth — la Guardia del Leone
 
 **Role**: ally (ordine pubblico, giustizia, mura interne)
-**Status**: vivo, caserma della Guardia del Leone `[INFERRED — needs DM confirmation]`
+**Status**: vivo, caserma della Guardia del Leone
 **Location**: Rethmar — Torrione cittadino (con le sue segrete)
 **Motivation**: tenere l'ordine dentro le mura mentre fuori è la guerra; risponde alla catena di comando di **Brenna Sorvane** (milizia).
-**CR**: ~6-7 (guerriero) `[INFERRED]` | **Race/Class**: umano, Guerriero ~7 — statblock: `[Private — Red Hand of Doom]`
+**CR**: 7 (guerriero) | **Race/Class**: umano, Guerriero 7 — statblock: `[Private — Red Hand of Doom]`
 **Key stats**: comandante di guardie cittadine competente; il suo forte è il presidio urbano quartiere-per-quartiere, non la sortita.
 **Esiti possibili**:
 - **Ordine pubblico durante l'assedio**: saccheggi, panico, code alle porte — Ulverth è il freno. A Morale Cittadino basso, tiene (o non tiene) i quartieri: aggancio diretto alla soglia Morale ≤3 (Consiglio §Morale).
@@ -78,10 +78,10 @@ Boost log: (vuoto)
 ## 4. Teyani Sura — l'Esploratrice della Guardia del Leone
 
 **Role**: ally (intel di lungo raggio, gancio verso Rhest)
-**Status**: viva, in arrivo a Rethmar dalla Rhest Trail `[INFERRED — needs DM confirmation]`
+**Status**: viva, in arrivo a Rethmar dalla Rhest Trail
 **Location**: strada verso nord/Rhest → Rethmar
 **Motivation**: portare l'allarme del blocco a nord: la strada per i rinforzi settentrionali è tagliata, e qualcosa si annida nelle paludi di Rhest.
-**CR**: ~5-6 (ranger/guerriera) `[INFERRED]` | **Race/Class**: umana, Ranger ~6 — statblock: `[Private — Red Hand of Doom]`
+**CR**: 6 (ranger) | **Race/Class**: umana, Ranger 6 — statblock: `[Private — Red Hand of Doom]`
 **Key stats**: esploratrice montata; intel di prima mano sui movimenti a nord.
 **Esiti possibili**:
 - È il **gancio classico verso Rhest** (`dm-guide` §411): riferisce di essere stata attaccata sulla Rhest Trail da hobgoblin e ogre, e di un blocco che impedisce ai rinforzi del nord di arrivare → aggancio diretto all'**Arco 09 P2 Rhest** (Saarvith + Regiarix, state.md §0/§3). Se i PG rompono il blocco → sblocco dei rinforzi settentrionali (difensori §2.4).

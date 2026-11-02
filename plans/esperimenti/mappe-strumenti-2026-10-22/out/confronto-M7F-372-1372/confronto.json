@@ -1,0 +1,179 @@
+{
+ "vecchia": {
+  "file": "07_il Portale Della Forgia Eterna/Mappe/hammerfist-372-1372/M7-F-fucina-grande-372.md",
+  "mappa": 1,
+  "dimensioni": [
+   30,
+   22
+  ],
+  "voto": 95
+ },
+ "nuova": {
+  "file": "07_il Portale Della Forgia Eterna/Mappe/hammerfist-372-1372/M7-F-fucina-grande-1372.md",
+  "mappa": 1,
+  "dimensioni": [
+   30,
+   22
+  ],
+  "voto": 95
+ },
+ "stesse_dimensioni": true,
+ "hamming_simboli": {
+  "celle": 46,
+  "quota": 0.0697
+ },
+ "hamming_classi": {
+  "celle": 46,
+  "quota": 0.0697
+ },
+ "transizioni": {
+  "U→.": 20,
+  ".→U": 18,
+  ".→K": 8
+ },
+ "jaccard": {
+  "muro": 1.0,
+  "blocco": 1.0,
+  "percorribile": 1.0,
+  "copertura": 0.3333,
+  "creature": 0.0,
+  "porte": 1.0,
+  "pericolo": null
+ },
+ "ncd_lzma": 0.3214,
+ "voto": {
+  "prima": 95,
+  "dopo": 95,
+  "delta": 0
+ },
+ "metriche_delta": {
+  "celle_per_creatura": {
+   "prima": 18.1,
+   "dopo": 20.1,
+   "delta": 2.0
+  },
+  "copertura": {
+   "prima": 0.652,
+   "dopo": 0.729,
+   "delta": 0.077
+  },
+  "creature": {
+   "prima": 20,
+   "dopo": 18,
+   "delta": -2
+  },
+  "densita_icone": {
+   "prima": 0.019,
+   "dopo": 0.041,
+   "delta": 0.022
+  },
+  "m1": {
+   "prima": 0.934,
+   "dopo": 0.983,
+   "delta": 0.049
+  },
+  "m2": {
+   "prima": 0.039,
+   "dopo": 0.006,
+   "delta": -0.033
+  },
+  "nemici": {
+   "prima": 0,
+   "dopo": 10,
+   "delta": 10
+  },
+  "pg": {
+   "prima": 20,
+   "dopo": 8,
+   "delta": -12
+  },
+  "simboli": {
+   "prima": 9,
+   "dopo": 10,
+   "delta": 1
+  }
+ },
+ "rilievi_spariti": [],
+ "rilievi_comparsi": [],
+ "profonde": {
+  "prima": {
+   "file": "07_il Portale Della Forgia Eterna/Mappe/hammerfist-372-1372/M7-F-fucina-grande-372.md",
+   "mappa": 1,
+   "titolo": "M7-F — La fucina grande, livello −3 (notte, ≈372 DR)",
+   "celle_percorribili": 362,
+   "vga": {
+    "componenti": 1,
+    "connettivita_media": 274.64,
+    "md_media": 1.241,
+    "integrazione_media": 27.874,
+    "integrazione_min": 5.543,
+    "integrazione_max": 45.64,
+    "intelligibilita_r2": 0.68,
+    "clustering_medio": 0.8
+   },
+   "accesso": {
+    "componenti": 1,
+    "connettivita_media": 6.53,
+    "md_media": 9.767,
+    "integrazione_media": 0.705,
+    "integrazione_min": 0.431,
+    "integrazione_max": 0.969,
+    "intelligibilita_r2": 0.269,
+    "clustering_medio": 0.488
+   },
+   "vad_r": 0.724,
+   "isovista_media_m2": 617.9,
+   "simmetria": {
+    "orizzontale": 0.894,
+    "verticale": 0.921,
+    "rotazione": 0.824
+   },
+   "pattern_2x2": {
+    "distinti": 54,
+    "entropia_bit": 3.467,
+    "kl_vs_corpus": 1.209
+   },
+   "leniency_per_100": -0.55
+  },
+  "dopo": {
+   "file": "07_il Portale Della Forgia Eterna/Mappe/hammerfist-372-1372/M7-F-fucina-grande-1372.md",
+   "mappa": 1,
+   "titolo": "M7-F/1372 — La fucina grande, livello −3 (Giorno 3 dell'assedio)",
+   "celle_percorribili": 362,
+   "vga": {
+    "componenti": 1,
+    "connettivita_media": 274.64,
+    "md_media": 1.241,
+    "integrazione_media": 27.874,
+    "integrazione_min": 5.543,
+    "integrazione_max": 45.64,
+    "intelligibilita_r2": 0.68,
+    "clustering_medio": 0.8
+   },
+   "accesso": {
+    "componenti": 1,
+    "connettivita_media": 6.53,
+    "md_media": 9.767,
+    "integrazione_media": 0.705,
+    "integrazione_min": 0.431,
+    "integrazione_max": 0.969,
+    "intelligibilita_r2": 0.269,
+    "clustering_medio": 0.488
+   },
+   "vad_r": 0.724,
+   "isovista_media_m2": 617.9,
+   "simmetria": {
+    "orizzontale": 0.864,
+    "verticale": 0.952,
+    "rotazione": 0.83
+   },
+   "pattern_2x2": {
+    "distinti": 59,
+    "entropia_bit": 3.676,
+    "kl_vs_corpus": 1.0046
+   },
+   "leniency_per_100": 1.1
+  }
+ },
+ "impronta": "93a281e2513e6821"
+}

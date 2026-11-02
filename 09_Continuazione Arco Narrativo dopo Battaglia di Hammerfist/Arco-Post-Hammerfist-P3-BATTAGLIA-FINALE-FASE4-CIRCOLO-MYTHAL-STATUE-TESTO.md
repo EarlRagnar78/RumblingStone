@@ -93,7 +93,7 @@ Ogni round, l’Orda (e gli eventuali resti extraplanari) lancia un’azione dis
 Esempi di ondate/scene (scegline 3–5 per non allungare troppo):
 
 1. **Assalto Demoniaco/Diavolesco Residuo**  
-   - 2–3 Erinni o Abishai ancora vivi, forse un piccolo demone volante, si tuffano verso il cerchio.  
+   - 2–3 Erinni o Abishai ancora vivi (abishai: `Bestiario/mostri/abishai-azzurro-mano-cr11.md`), forse un piccolo demone volante, si tuffano verso il cerchio.  
    - PG devono intercettarli prima che raggiungano i caster.
 
 2. **Colpo di Coda dei Githyanki**  

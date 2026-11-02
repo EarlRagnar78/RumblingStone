@@ -12,8 +12,10 @@ diff del DM, regioni marcate `auto:`.
 
 Sottocomandi (fase del Playbook tra parentesi):
     prep      (§2)   catalogo → incontri → mappa → loot per la prossima sessione
-    maps      (prep) render SVG / valida le griglie emoji / URL di una città Watabou /
-                     texture: il tema con le texture CC0 per tutte le mappe /
+    maps      (prep) render SVG / valida le griglie emoji / texture: il tema con le
+                     texture CC0 per tutte le mappe / pianta: lo stile delle piante
+                     (ADR-0102) / citta: le piante delle città del repo, o l'URL
+                     di una scheda Watabou /
                      misura: la resa misurata, simboli e terreni (ADR-0086)
     asset     (prep) texture e oggetti CC0 del tema texture (texture, oggetti) e
                      asset di 2-Minute Tabletop per il tema dipinto: installa,
@@ -25,6 +27,8 @@ Sottocomandi (fase del Playbook tra parentesi):
     handout   (prep) handout giocatori in markdown Homebrewery V3
     bestiario (prep) i cinque script delle creature: estrai, deriva, attributi,
                      creatura, conformita
+    prosa     (prep) la catena della prosa in ordine (ADR-0101): misura, ciclo,
+                     mqm, sintassi, coerenza, domande, migliora, cieco, banco, voto
     skills    (manutenzione) build/sync pipeline skill multi-agente
     doctor    (tutte) diagnosi ambiente e freschezza del catalogo
 
@@ -35,6 +39,7 @@ Esempi:
     python3 scripts/dm.py recap --hype
     python3 scripts/dm.py handout --tipo lettera --da bozza.md
     python3 scripts/dm.py bestiario creatura --gs 7 --ruolo bruto
+    python3 scripts/dm.py prosa coerenza fatti "07_il Portale Della Forgia Eterna"
     python3 scripts/dm.py doctor
 
 I flag non riconosciuti da `prep`/`recap` vengono inoltrati allo script
@@ -124,11 +129,18 @@ def cmd_maps(args: argparse.Namespace, extra: list[str]) -> int:
     if args.action == "misura":
         # la resa misurata (ADR-0086): senza argomenti, il cancello della CI
         return run("misura_resa.py", *(args.files or ["--check"]), *extra)
+    if args.action == "pianta":
+        # il tema delle piante (ADR-0102): i master indicati, o le cartelle che l'hanno adottato
+        return run("render_map_svg.py", "--tema", "pianta", *(args.files or ["--tutti-i-master"]), *extra)
     if args.action == "citta":
-        if len(args.files) != 1:
-            print("[dm] uso: dm.py maps citta <scheda>.watabou.json [--export svg]")
+        # le piante delle città del repo (ADR-0102), o l'URL di una scheda Watabou
+        if len(args.files) == 1 and args.files[0].endswith(".watabou.json"):
+            return run("watabou_citta.py", *args.files, *extra)
+        if len(args.files) > 1:
+            print("[dm] uso: dm.py maps citta [rethmar|dauth|channathgate] [--check] "
+                  "oppure dm.py maps citta <scheda>.watabou.json [--export svg]")
             return 2
-        return run("watabou_citta.py", *args.files, *extra)
+        return run("genera_pianta_citta.py", *(args.files or ["--tutte"]), *extra)
     if not args.files:
         print("[dm] uso: dm.py maps render <file.md ...> — file con griglie emoji "
               "(gli SVG finiscono in rendered/ accanto al sorgente)")
@@ -145,6 +157,24 @@ BESTIARIO = {
     "attributi": "genera_attributi.py",
     "creatura": "genera_creatura.py",
     "conformita": "conformita_statblocchi.py",
+}
+
+
+#: `dm.py prosa <azione>` → lo script della catena della prosa (ADR-0101), nell'ordine
+#: in cui si usano: prima si misura, poi si controllano fatti e domande, poi si
+#: riscrive e decide il DM al cieco. Gli ultimi due sono il banco delle skill di
+#: scrittura e del modello locale (ADR-0089).
+PROSA = {
+    "misura": "misura_craft.py",
+    "ciclo": "ciclo_prosa.py",
+    "mqm": "punteggio_mqm.py",
+    "sintassi": "misura_sintassi.py",
+    "coerenza": "coerenza_campagna.py",
+    "domande": "domande_developer.py",
+    "migliora": "migliora_prosa.py",
+    "cieco": "cieco_versioni.py",
+    "banco": "banco_prosa_locale.py",
+    "voto": "voto_scrittura.py",
 }
 
 
@@ -170,6 +200,16 @@ def cmd_bestiario(args: argparse.Namespace, extra: list[str]) -> int:
         print("[dm] i flag passano allo script: `dm.py bestiario <azione> --help`")
         return 2
     return run(BESTIARIO[args.action], *extra)
+
+
+def cmd_prosa(args: argparse.Namespace, extra: list[str]) -> int:
+    if not args.action:
+        print("[dm] uso: dm.py prosa <azione> [flag dello script]")
+        for azione, script in PROSA.items():
+            print(f"      {azione:9} → {script}")
+        print("[dm] i flag passano allo script: `dm.py prosa <azione> --help`")
+        return 2
+    return run(PROSA[args.action], *extra)
 
 
 def cmd_post(args: argparse.Namespace, extra: list[str]) -> int:
@@ -478,6 +518,15 @@ def cmd_session(args: argparse.Namespace, extra: list[str]) -> int:
     if args.yes:
         ses += ["--yes"]
     rc |= run("state_apply.py", *ses, "--commit", *extra)
+    if rc != 0:
+        # prima stampava «✓ … committate» anche con state_apply uscito a 2
+        print(
+            "\n[dm] ✗ session end incompleto: un passo sopra è fallito, e "
+            "niente è stato committato da lui. Controlla il messaggio, "
+            "correggi e rilancia.",
+            file=sys.stderr,
+        )
+        return rc
     print(
         "\n[dm] ✓ session end: ledger XP aggiornato, regioni marcate di "
         "state.md applicate (su conferma) e committate.\n"
@@ -682,12 +731,21 @@ def cmd_doctor(args: argparse.Namespace, extra: list[str]) -> int:
 # ------------------------------------------------------------------ main
 
 
+def _versione() -> str:
+    """La versione del progetto (ADR-0100), senza importare dmcore all'avvio."""
+    import re
+    testo = (Path(__file__).parent / "dmcore" / "__init__.py").read_text(encoding="utf-8")
+    m = re.search(r'^__version__ = "([^"]+)"', testo, re.MULTILINE)
+    return m.group(1) if m else "?"
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(
         prog="dm.py",
         description="CLI unica del DM RumblingStone — orchestra gli script di scripts/ "
                     "per fase del Playbook (prep / post / recap / handout).",
     )
+    ap.add_argument("--version", action="version", version=f"%(prog)s {_versione()}")
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     p = sub.add_parser("prep", help="Playbook §2: proposte incontro+mappa+loot")
@@ -696,8 +754,9 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--refresh", action="store_true", help="rigenera il catalogo mostri")
 
     p = sub.add_parser("maps", help="render SVG / validazione griglie emoji")
-    p.add_argument("action", choices=["render", "validate", "citta", "texture", "misura"])
-    p.add_argument("files", nargs="*", help="file markdown con griglie (per render), "
+    p.add_argument("action", choices=["render", "validate", "citta", "texture", "pianta", "misura"])
+    p.add_argument("files", nargs="*", help="file markdown con griglie (per render e pianta), "
+                                            "la città (rethmar, dauth, channathgate; nessuna = tutte) "
                                             "o la scheda *.watabou.json (per citta)")
 
     # add_help=False: `dm.py asset installa --help` stampa l'aiuto dello script
@@ -714,6 +773,11 @@ def main(argv: list[str] | None = None) -> int:
                        help="le creature: estrai / deriva / attributi / creatura / "
                             "conformita (i flag passano allo script)")
     p.add_argument("action", nargs="?", choices=list(BESTIARIO))
+
+    p = sub.add_parser("prosa", add_help=False,
+                       help="la catena della prosa (ADR-0101): misura / ciclo / mqm / sintassi / "
+                            "coerenza / domande / migliora / cieco / banco / voto")
+    p.add_argument("action", nargs="?", choices=list(PROSA))
 
     p = sub.add_parser("ambiente", add_help=False,
                        help="l'ambiente di sviluppo completo col registro: piano / installa "
@@ -816,7 +880,7 @@ def main(argv: list[str] | None = None) -> int:
     return {
         "prep": cmd_prep, "maps": cmd_maps, "post": cmd_post, "recap": cmd_recap,
         "handout": cmd_handout, "hype": cmd_hype, "dossier": cmd_dossier,
-        "booklet": cmd_booklet, "prompts": cmd_prompts, "bestiario": cmd_bestiario, "ambiente": cmd_ambiente,
+        "booklet": cmd_booklet, "prompts": cmd_prompts, "bestiario": cmd_bestiario, "prosa": cmd_prosa, "ambiente": cmd_ambiente,
         "session": cmd_session, "asset": cmd_asset, "volume": cmd_volume, "corredo": cmd_corredo, "skills": cmd_skills, "doctor": cmd_doctor,
         "gruppo": cmd_gruppo,
     }[args.cmd](args, extra)

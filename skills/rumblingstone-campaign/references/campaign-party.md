@@ -121,7 +121,7 @@ Current party level: **13** | Party size: **4 PCs**
 - Resurrected through Moradin's divine intervention + party sacrifices
 - During resurrection: her spirit walked the **Soglia della Forgia** (Threshold of the Forge), a liminal space that resonates with the Dream Dwarf Earth Dream. Passed three trials concurrent with P4 Earth Plane events.
 - Transformation: **Dream Dwarf / Treant Hybrid**: greenish skin, amber-gold eyes, bark-textured hair
-- Post-resurrection: Earth Dream connection is **permanently amplified** by the Soglia experience. Vulnerability to fire, Cold Resistance 10, Regeneration 1 (on natural earth)
+- Post-resurrection: Earth Dream connection is **permanently amplified** by the Soglia experience. Vulnerability to fire, Cold Resistance 10, Fast healing 1 (on natural earth or stone; not in the round after fire damage) `[CANONE — DM 2026-10-18]` ⚠ Non SRD (terrain-bound)
 - Post-resurrection companion: **Durik Riforgiato** (Stone Guardian, Magical Beast 10-14 HD), her dead riding dog reforged from Terros dust and Crystal fragments during the Emerald Ritual
 - Currently completing the post-Hammerfist Sacred Forest druid ritual for nature avatar form
 

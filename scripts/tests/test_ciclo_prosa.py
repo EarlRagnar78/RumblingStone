@@ -46,8 +46,19 @@ class TestSegnala(unittest.TestCase):
         self.assertNotIn("tic minori in gruppo", _norme("Nel cuore della notte il campo dorme.\n"))
 
     def test_due_tic_minori_diversi_si(self):
-        testo = "La forgia rappresenta un vero e proprio patto fra i clan.\n"
+        testo = "La forgia rappresenta il patto. Non è un muro: è una porta.\n\nNon è un dono: è un debito.\n"
         self.assertIn("tic minori in gruppo", _norme(testo))
+
+    def test_un_antitesi_sola_nel_documento_non_e_un_tic(self):
+        # La soglia di validate_prosa: piu' di una per documento.
+        testo = "La forgia rappresenta il patto. Non è un muro: è una porta.\n"
+        self.assertNotIn("tic minori in gruppo", _norme(testo))
+
+    def test_il_trattino_conta_oltre_il_tre_per_cento(self):
+        rado = "La forgia rappresenta il patto " + "e la pietra " * 20 + "— e resta."
+        self.assertEqual(cp.tic_deboli(rado), ["copula elusa"])
+        self.assertEqual(cp.tic_deboli("La forgia rappresenta — il patto."),
+                         ["copula elusa", "trattino come respiro"])
 
     def test_lo_stesso_trattino_non_conta_due_volte(self):
         # «Non è X — è Y» è un'antitesi, non un'antitesi più un trattino.
@@ -416,3 +427,67 @@ class TestRigenera(unittest.TestCase):
         prima = self.rev.read_text(encoding="utf-8")
         self.assertEqual(cp.rigenera(self.rev), 0)
         self.assertEqual(self.rev.read_text(encoding="utf-8"), prima)
+
+
+class TestDettagliNellaBattutaAccanto(unittest.TestCase):
+    """DEF-4 Scena 11 nella #251: il grido di Aegis Fang esce dal box e diventa
+    la battuta prima del box. Le parole ci sono ancora."""
+
+    PRIMA = ("## Scena 11\n\n"
+             "> 🎚️ **Se e solo se Thorik tiene Aegis Fang in mano** — *un secondo box, corto,\n"
+             "> e a lui soltanto*: **AEGIS FANG (non canta: urla, dentro il cranio):**\n"
+             "> *«SANGUE ANTICO. ARTEFICE DI LACRIME.»* — *e per un istante la Corona ti\n"
+             "> mostra due immagini sovrapposte: questo drago adesso, e un altro drago sopra\n"
+             "> mura che bruciano, che non hai mai visto.*\n")
+    DOPO = ("## Scena 11\n\n"
+            "**AEGIS FANG (non canta: urla, dentro il cranio):** *«SANGUE ANTICO. ARTEFICE\n"
+            "DI LACRIME.»*\n\n"
+            "> **Read-aloud (Mercer lead) — la visione, solo per Thorik.** *Per un istante\n"
+            "> la Corona ti mostra due immagini sovrapposte: questo drago adesso, e un altro\n"
+            "> drago sopra mura che bruciano, mura che non hai mai visto.*\n")
+
+    def test_il_grido_passato_alla_battuta_non_impoverisce(self):
+        self.assertEqual(cp.box_impoveriti(self.PRIMA, self.DOPO), [])
+
+    def test_senza_la_battuta_il_box_e_impoverito(self):
+        senza = self.DOPO.split("\n\n", 2)
+        senza = senza[0] + "\n\n" + senza[2]
+        self.assertEqual(len(cp.box_impoveriti(self.PRIMA, senza)), 1)
+
+
+class TestConfronta(unittest.TestCase):
+    def test_un_file_senza_versione_di_prima_non_si_confronta(self):
+        with tempfile.TemporaryDirectory(dir=cp.RADICE) as d:
+            f = Path(d) / "nuovo.md"
+            f.write_text("> *Un box nuovo.*\n", encoding="utf-8")
+            with mock.patch("builtins.print"):
+                self.assertEqual(cp.confronta_cmd("HEAD", [f]), 0)
+
+    def test_un_file_uguale_non_peggiora(self):
+        f = cp.RADICE / "07_il Portale Della Forgia Eterna" / "ARC07-HANDOUTS.md"
+        with mock.patch("builtins.print") as stampa:
+            self.assertEqual(cp.confronta_cmd("HEAD", [f]), 0)
+        self.assertIn("1 file su 1", stampa.call_args_list[-1].args[0])
+
+
+class TestConfrontaNumeriAggiunti(unittest.TestCase):
+    def test_un_numero_solo_aggiunto_non_peggiora(self):
+        with tempfile.TemporaryDirectory(dir=cp.RADICE) as d:
+            f = Path(d) / "x.md"
+            prima, dopo = "Il muro regge.\n", "Il muro regge (Scalare CD 25).\n"
+            with mock.patch("subprocess.run") as run:
+                run.return_value = mock.Mock(returncode=0, stdout=prima)
+                f.write_text(dopo, encoding="utf-8")
+                with mock.patch("builtins.print") as stampa:
+                    esito = cp.confronta_cmd("HEAD", [f])
+            self.assertEqual(esito, 0, stampa.call_args_list)
+            self.assertIn("solo aggiunti", stampa.call_args_list[0].args[0])
+
+    def test_un_numero_cambiato_peggiora(self):
+        with tempfile.TemporaryDirectory(dir=cp.RADICE) as d:
+            f = Path(d) / "x.md"
+            with mock.patch("subprocess.run") as run:
+                run.return_value = mock.Mock(returncode=0, stdout="Scalare CD 20.\n")
+                f.write_text("Scalare CD 25.\n", encoding="utf-8")
+                with mock.patch("builtins.print"):
+                    self.assertEqual(cp.confronta_cmd("HEAD", [f]), 1)

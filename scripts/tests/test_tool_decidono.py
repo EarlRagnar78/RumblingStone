@@ -188,6 +188,41 @@ class TestCheckPlansDiscipline(BaseDecisione):
                             esegui("check_plans_discipline.py", "--repo-root", str(d),
                                    "--base", "HEAD~1", "--head", "HEAD"))
 
+    def _tocca_changelog(self, d: Path, riga: str) -> None:
+        (d / "plans" / "CHANGELOG.md").write_text(
+            "| Data | Piano |\n|---|---|\n" + riga + "\n", encoding="utf-8")
+        subprocess.run(["git", "add", "-A"], cwd=str(d), capture_output=True, check=True)
+        subprocess.run(["git", "commit", "-qm", "riga"], cwd=str(d),
+                       capture_output=True, check=True)
+
+    def test_riga_senza_esito_viene_bocciata(self):
+        """P15: due righe del 2026-10-12 erano entrate con quattro colonne."""
+        with cartella() as d:
+            self._repo_git(d)
+            self._tocca_changelog(d, "| 2026-10-12 | PROVA | lotto | ramo `x` |")
+            self.assertEsce("check_plans_discipline", 1,
+                            esegui("check_plans_discipline.py", "--repo-root", str(d),
+                                   "--base", "HEAD~1", "--head", "HEAD"))
+
+    def test_barra_non_protetta_nell_esito_viene_bocciata(self):
+        """GFM spezza la cella anche dentro gli apici inversi."""
+        with cartella() as d:
+            self._repo_git(d)
+            self._tocca_changelog(d, "| 2026-09-01 | PROVA | lotto | — | ✅ `--renderer auto|inkscape` |")
+            self.assertEsce("check_plans_discipline", 1,
+                            esegui("check_plans_discipline.py", "--repo-root", str(d),
+                                   "--base", "HEAD~1", "--head", "HEAD"))
+
+    def test_barra_protetta_e_riga_senza_barra_finale_passano(self):
+        with cartella() as d:
+            self._repo_git(d)
+            self._tocca_changelog(
+                d, "| 2026-09-01 | PROVA | lotto | — | ✅ `auto\\|inkscape` |\n"
+                   "| 2026-10-08 | PROVA | lotto | — | ✅ senza barra finale")
+            self.assertEsce("check_plans_discipline", 0,
+                            esegui("check_plans_discipline.py", "--repo-root", str(d),
+                                   "--base", "HEAD~1", "--head", "HEAD"))
+
     def test_modifica_non_strutturale_passa(self):
         with cartella() as d:
             self._repo_git(d)

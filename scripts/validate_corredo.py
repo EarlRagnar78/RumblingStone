@@ -410,7 +410,9 @@ def stampa(manifest: Path) -> "tuple[list[str], str]":
         if esito.returncode != 0 or not pdf.is_file():
             coda = (esito.stderr or esito.stdout).strip().splitlines()[-4:]
             return [f"{_rel(manifest)}: la stampa fallisce — " + " / ".join(coda)], ""
-        return misura_pdf(pdf, manifest)
+        import validate_booklets as vb  # noqa: PLC0415
+        difetti, nota = misura_pdf(pdf, manifest)
+        return vb.controlla_volume(manifest, pdf) + difetti, nota
     finally:
         if not cera_prima:
             pdf.unlink(missing_ok=True)

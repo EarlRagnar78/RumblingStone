@@ -35,8 +35,10 @@ import argparse
 import os
 import re
 import shutil
+import struct
 import subprocess
 import sys
+import zlib
 from pathlib import Path
 
 INKSCAPE_CANDIDATES = [
@@ -123,16 +125,51 @@ def run_inkscape(binary: str, svg: Path, out: Path, sw: int, sh: int) -> int:
     return 0
 
 
+#: Il Chromium headless «nuovo» toglie alla finestra una fascia per la cornice
+#: che non disegna (88 px con Chromium 140): con --window-size alto quanto
+#: l'SVG, il fondo della mappa (la legenda) usciva tagliato. La finestra si apre
+#: più alta di questo margine e il PNG si riporta all'altezza dell'SVG.
+MARGINE_FINESTRA = 240
+
+
+def taglia_png(path: Path, altezza: int) -> None:
+    """Tiene le prime `altezza` righe di un PNG non interlacciato, con la sola
+    libreria standard: i filtri di una riga guardano solo la riga sopra, quindi
+    togliere righe dal fondo lascia valide quelle che restano."""
+    dati = path.read_bytes()
+    pezzi, i = [], 8
+    while i < len(dati):
+        n = struct.unpack(">I", dati[i:i + 4])[0]
+        pezzi.append((dati[i + 4:i + 8], dati[i + 8:i + 8 + n]))
+        i += 12 + n
+    ihdr = pezzi[0][1]
+    larg, alt, prof, colore, _, _, interl = struct.unpack(">IIBBBBB", ihdr)
+    if interl or alt <= altezza:
+        return
+    canali = {0: 1, 2: 3, 3: 1, 4: 2, 6: 4}[colore]
+    riga = 1 + (larg * canali * prof + 7) // 8
+    grezzi = zlib.decompress(b"".join(d for t, d in pezzi if t == b"IDAT"))
+    nuovo_ihdr = struct.pack(">IIBBBBB", larg, altezza, prof, colore, *ihdr[10:13])
+
+    def pezzo(tipo: bytes, d: bytes) -> bytes:
+        return struct.pack(">I", len(d)) + tipo + d + struct.pack(">I", zlib.crc32(tipo + d))
+    corpo = [pezzo(b"IHDR", nuovo_ihdr)]
+    corpo += [pezzo(t, d) for t, d in pezzi[1:] if t not in (b"IDAT", b"IEND")]
+    corpo += [pezzo(b"IDAT", zlib.compress(grezzi[:riga * altezza], 9)), pezzo(b"IEND", b"")]
+    path.write_bytes(dati[:8] + b"".join(corpo))
+
+
 def run_browser(binary: str, svg: Path, out: Path, w: int, h: int, scale: float) -> int:
     cmd = [
         binary, "--headless", "--no-sandbox", "--disable-gpu",
         "--hide-scrollbars", f"--force-device-scale-factor={scale}",
-        f"--screenshot={out}", f"--window-size={w},{h}", svg.as_uri(),
+        f"--screenshot={out}", f"--window-size={w},{h + MARGINE_FINESTRA}", svg.as_uri(),
     ]
     res = subprocess.run(cmd, capture_output=True, text=True)
     if res.returncode != 0 or not out.exists():
         print(res.stderr.strip() or "screenshot fallito", file=sys.stderr)
         return 1
+    taglia_png(out, round(h * scale))
     return 0
 
 

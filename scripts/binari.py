@@ -127,6 +127,13 @@ OPZIONALI = (
          "  macOS          xcode-select --install",
          "senza git il repo non si clona: in pratica c'e' sempre, ed e' l'unico "
          "di questo gruppo che non ha un ripiego vero."),
+    _opz("gh", "il workflow Release: allineare le note dei rilasci pubblicati al "
+               "CHANGELOG (`release_notes.py sync`, ADR-0100)",
+         "  sui runner di GitHub c'e' gia'\n"
+         "  Debian/Ubuntu  sudo apt install gh\n"
+         "  Fedora         sudo dnf install gh",
+         "serve solo in CI; in locale il CHANGELOG si scrive senza, e le note si "
+         "allineano al push successivo su main."),
     _opz("bash", "gli script shell: build-skills, sync-skills, install-git-hooks, "
                  "new-campaign-group, avvia_languagetool, Image-to-webp",
          "  Linux/macOS    c'e' gia'\n"
@@ -290,6 +297,20 @@ LIBRERIE = (
                 "tessere degli oggetti non si rifanno, e il tema texture usa quelle "
                 "committate o i glifi.",
     ),
+    # ADR-0101 (catena della prosa): la sintassi dei box, facoltativa. Il modello
+    # italiano `it_core_news_md` e' CC BY-NC-SA 3.0: si installa nel .venv, non
+    # entra mai nel repo, e va bene finche' il progetto resta non commerciale.
+    Libreria(
+        nome="spacy", modulo="spacy",
+        a_cosa_serve="la sintassi dei box (`misura_sintassi.py`: calchi, "
+                     "subordinate, profondita') e il tratto `livelli_max` di "
+                     "`migliora_prosa.py`, col modello `it_core_news_md`",
+        installa="  pip install -r requirements-completo.txt   (spacy e il modello it_core_news_md)",
+        obbligatoria=False,
+        ripiego="`misura_sintassi.py` esce con 2 e dice come installarla; "
+                "`migliora_prosa.py` stima la subordinata spezzata dal numero di "
+                "frasi e di subordinanti. Nessun cancello della CI ne dipende.",
+    ),
     Libreria(
         nome="fonttools", modulo="fontTools",
         a_cosa_serve="ricavare i sottoinsiemi dei font OFL che le mappe incorporano",
@@ -314,6 +335,10 @@ CATENE = {
     "misura della resa": ("scikit-image", "chromium"),
     "recap in PDF": ("pandoc", "xelatex"),
     "skill per gli agenti": ("pyyaml",),
+    "prosa misurata (misura, ciclo, mqm, cieco)": (),
+    "coerenza fra scene e archi": ("pyyaml",),
+    "sintassi della prosa": ("spacy",),
+    "secondo lettore LanguageTool": ("java", "mvn"),
 }
 
 

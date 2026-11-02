@@ -1,0 +1,206 @@
+diff --git a/scripts/misura_craft.py b/scripts/misura_craft.py
+index e53413d8..0ec65be0 100644
+--- a/scripts/misura_craft.py
++++ b/scripts/misura_craft.py
+@@ -438,16 +438,10 @@ def difetti_dei_box(testo: str) -> "dict[str, int]":
+ # correggerli migliora il testo. Il bersaglio non è lo zero: è la banda dei
+ # box già passati dal ciclo di prosa (ADR-0077).
+ #
+-#   * **gerundio in coda** — virgola, gerundio, fine della frase. I modelli
+-#     istruiti usano le participiali da 2 a 5 volte più degli umani, ed è lo
+-#     scarto più largo di tutti (Reinhart e altri, PNAS 2025); in italiano la
+-#     forma è il gerundio appeso. Il 2026-10-18 separa ARC-08 (9 su 5.164
+-#     parole di box, 9 veri su 9) dai DEF di ARC-07 (0).
+-#   * **avverbi in -mente** — Browne e King li danno come il segno dello
+-#     scrittore che spiega; Blatt (2017) trova una correlazione con il giudizio
+-#     sui romanzi inglesi sotto le 50 ogni 10.000 parole. Il riferimento
+-#     umano italiano (Gruppo Chimera) sta fra 3,8 e 13,4‰: ARC-08 5,8‰ ci sta
+-#     dentro, i DEF di ARC-07 (da 0 a 1,2‰) ne stanno sotto.
++#   * gerundio in coda e avverbi in -mente: tolti il <data della decisione del
++#     DM>. Nella calibrazione sui 38 voti ciechi non hanno mai distinto il
++#     vincitore (gerundi 0/0/38 pari, -mente 2/0/36): la forma che contano il
++#     DM non la vede.
+ #   * **battute lunghe** — le battute dei PNG nella forma prescritta, oltre 25
+ #     e oltre 40 parole (la regola d'industria dei dialoghi di gioco).
+ #
+@@ -463,53 +457,11 @@ def difetti_dei_box(testo: str) -> "dict[str, int]":
+ # sono: le escludiamo per nome, e la lista è il limite dichiarato.
+ # ─────────────────────────────────────────────────────────────────────────
+ 
+-#: Parole in -ando/-endo che non sono gerundi.
+-NON_GERUNDI = frozenset({
+-    "quando", "comando", "secondo", "tremendo", "orrendo", "stupendo",
+-    "reverendo", "nefando", "venerando", "dividendo", "orlando", "fernando",
+-})
+-
+-#: Parole in -mente che non sono avverbi.
+-NON_AVVERBI = frozenset({
+-    "mente", "demente", "clemente", "inclemente", "veemente", "semente",
+-    "fremente", "frementi", "dormente", "sementi", "menti",
+-})
+-
+-_GERUNDIO = r"[a-zàèéìòù]{2,}(?:ando|endo)(?:l[oaie]|gli|ne|si|ci|vi|mi|ti)?"
+-
+-#: Virgola, gerundio, al più 80 caratteri senza un'altra virgola, poi la fine.
+-#: La virgola esclusa toglie l'inciso («, raffreddandosi, prese la forma»),
+-#: che è italiano normale: i due falsi positivi del primo giro erano incisi.
+-_GERUNDIO_IN_CODA = re.compile(rf",\s+({_GERUNDIO})\b[^.!?;:,\n]{{0,80}}[.!?]", re.I)
+-
+-_AVVERBIO_MENTE = re.compile(r"\b([a-zàèéìòù]{3,}mente)\b", re.I)
+-
+-#: Le fasce del riferimento umano italiano, ogni 1.000 parole di box: dieci
+-#: titoli del Gruppo Chimera misurati con questi stessi rilevatori il 2026-10-18
+-#: (`plans/esperimenti/avventure-community/note-prosa-corpus.md` §5). Prima
+-#: c'era un allarme a 5‰ preso da Blatt, su romanzi inglesi: cadeva sulla
+-#: mediana umana italiana (5,5‰), e 7 titoli su 10 lo superavano. Fuori fascia,
+-#: in basso come in alto, è un indizio da guardare, non un difetto.
+-FASCIA_MENTE = (3.8, 13.4)
+ #: La lunghezza tipica di un box, e quanti box umani ci stanno: 46% nel Gruppo
+ #: Chimera, 52% in Paizo (note-prosa-corpus.md §2). Sopra REGOLARITA_ALTA la
+ #: varianza è sotto ogni autore misurato: un indicatore, non un tetto.
+ LUNGHEZZA_TIPICA = (30, 70)
+ REGOLARITA_ALTA = 70
+-FASCIA_GERUNDIO = (1.0, 3.1)
+-#: Sotto queste parole di box un avverbio sposta il tasso di oltre il 2‰: la
+-#: fascia non si giudica.
+-PAROLE_PER_LA_FASCIA = 1000
+-
+-
+-def rispetto_alla_fascia(per_mille: float, fascia: "tuple[float, float]",
+-                         parole: int) -> str:
+-    """«↓» sotto la fascia, «↑» sopra, «·» dentro, «–» se il campione è troppo piccolo."""
+-    if parole < PAROLE_PER_LA_FASCIA:
+-        return "–"
+-    basso, alto = fascia
+-    return "↓" if per_mille < basso else "↑" if per_mille > alto else "·"
+-
+ #: Le battute dei PNG nella forma di `editorial-standards.md` §2. La parola
+ #: d'ordine dell'industria è circa 25 parole per battuta e non oltre 40
+ #: (BioWare, citata dalla Neverwinter Vault); sono indicatori.
+@@ -523,17 +475,6 @@ def _parole(testo: str) -> int:
+     return len(re.findall(r"[A-Za-zÀ-ÿ']+", testo))
+ 
+ 
+-def gerundi_in_coda(corpo: str) -> "list[str]":
+-    """I gerundi appesi in fondo a una frase, esclusi quelli che non lo sono."""
+-    return [m.group(1) for m in _GERUNDIO_IN_CODA.finditer(corpo)
+-            if m.group(1).lower() not in NON_GERUNDI]
+-
+-
+-def avverbi_mente(corpo: str) -> "list[str]":
+-    return [m.group(1) for m in _AVVERBIO_MENTE.finditer(corpo)
+-            if m.group(1).lower() not in NON_AVVERBI]
+-
+-
+ #: L'indice Gulpease (Lucisano e Piemontese, 1988), tarato sull'italiano:
+ #: 89 + (300 frasi − 10 lettere) / parole. Fra 60 e 80 un testo è facile per
+ #: chi ha la licenza media. Entra il 2026-10-21 con il contratto del Seme: il
+@@ -587,14 +528,10 @@ def stile_dei_box(testo: str) -> "dict[str, float]":
+     """
+     box = [corpo_del_box(b) for b in box_read_aloud(testo)]
+     parole = sum(_parole(c) for c in box)
+-    ger = sum(len(gerundi_in_coda(c)) for c in box)
+-    men = sum(len(avverbi_mente(c)) for c in box)
+     sens = sum(dettagli_sensoriali(c) for c in box)
+     batt = battute_png(testo)
+     per_mille = (lambda n: 1000 * n / parole) if parole else (lambda n: 0.0)
+     return {"box": len(box), "parole": parole,
+-            "gerundio in coda": ger, "gerundio ‰": per_mille(ger),
+-            "-mente": men, "-mente ‰": per_mille(men),
+             "sensoriali": sens, "sensoriali ‰": per_mille(sens),
+             "Gulpease": gulpease(" ".join(box)),
+             "30-70 %": (100 * sum(1 for c in box if LUNGHEZZA_TIPICA[0] <= _parole(c) <= LUNGHEZZA_TIPICA[1])
+@@ -891,8 +828,8 @@ def main() -> int:
+                     help="i box senza «c'e'» presentativo ne' dislocazione a "
+                          "sinistra (italiano-nativo.md §8) — INDIZIO, sovrastima")
+     ap.add_argument("--stile", action="store_true",
+-                    help="gerundio in coda, avverbi in -mente, battute lunghe "
+-                         "dei PNG (ADR-0093)")
++                    help="parole sensoriali, Gulpease, lunghezze dei box, battute "
++                         "lunghe dei PNG (ADR-0093)")
+     args = ap.parse_args()
+ 
+     if args.p1:
+@@ -985,26 +922,18 @@ def main() -> int:
+ 
+     if args.stile:
+         print("\n\nSTILE DEI BOX — indicatori senza peso (ADR-0093)\n")
+-        print(f"{'bersaglio':30} {'box':>5} {'parole':>7} {'ger.coda':>9} "
+-              f"{'‰':>5} {'-mente':>7} {'‰':>5} "
++        print(f"{'bersaglio':30} {'box':>5} {'parole':>7} "
+               f"{'sens.':>6} {'‰':>5} {'Gulp.':>6} {'30-70':>6} {'battute':>8} {'>25':>4} {'>40':>4}")
+         for nome, modelli in BERSAGLI.items():
+             testo, _, _ = carica(modelli)
+             d = stile_dei_box(testo)
+-            fascia = (rispetto_alla_fascia(d["gerundio ‰"], FASCIA_GERUNDIO, d["parole"])
+-                      + rispetto_alla_fascia(d["-mente ‰"], FASCIA_MENTE, d["parole"]))
+             print(f"{nome:30} {d['box']:>5} {d['parole']:>7} "
+-                  f"{d['gerundio in coda']:>9} {d['gerundio ‰']:>5.1f} "
+-                  f"{d['-mente']:>7} {d['-mente ‰']:>5.1f} "
+                   f"{d['sensoriali']:>6} {d['sensoriali ‰']:>5.1f} "
+                   f"{d['Gulpease']:>6.1f} "
+                   f"{d['30-70 %']:>5.0f}{'!' if d['30-70 %'] > REGOLARITA_ALTA else ' '} "
+                   f"{d['battute']:>8} {d[f'battute >{BATTUTA_LUNGA}']:>4} "
+-                  f"{d[f'battute >{BATTUTA_TROPPO_LUNGA}']:>4}   {fascia}")
+-        print("\n   ‰ = ogni 1.000 parole di box. Le due frecce finali sono gerundio e")
+-        print(f"   -mente contro la fascia umana italiana ({FASCIA_GERUNDIO[0]}-{FASCIA_GERUNDIO[1]}‰ e")
+-        print(f"   {FASCIA_MENTE[0]}-{FASCIA_MENTE[1]}‰, Gruppo Chimera): ↓ sotto, ↑ sopra, · dentro,")
+-        print(f"   – meno di {PAROLE_PER_LA_FASCIA} parole. Nessuna colonna e' una norma: decide il")
++                  f"{d[f'battute >{BATTUTA_TROPPO_LUNGA}']:>4}")
++        print("\n   ‰ = ogni 1.000 parole di box. Nessuna colonna e' una norma: decide il")
+         print("   confronto (`cieco_versioni.py coppie`): la misura fra due versioni dello")
+         print("   stesso box, e il cieco del DM dove la misura non decide. «sens.» sono le")
+         print("   parole di percezione: un box che ne perde, per il DM, peggiora. «30-70» è la")
+diff --git a/scripts/tests/test_misura_craft.py b/scripts/tests/test_misura_craft.py
+index eebfd6d9..052827c4 100644
+--- a/scripts/tests/test_misura_craft.py
++++ b/scripts/tests/test_misura_craft.py
+@@ -415,24 +415,6 @@ if __name__ == "__main__":
+ class TestStileDeiBox(unittest.TestCase):
+     """ADR-0093: tre indicatori, e i casi che li fanno sbagliare."""
+ 
+-    def test_gerundio_appeso_in_fondo_alla_frase(self):
+-        self.assertEqual(MC.gerundi_in_coda(
+-            "Il drago scende sul campo, formando una tempesta di fuoco."), ["formando"])
+-
+-    def test_l_inciso_fra_due_virgole_non_e_coda(self):
+-        # Il falso positivo del primo giro: italiano normale.
+-        self.assertEqual(MC.gerundi_in_coda(
+-            "Il metallo, raffreddandosi, prese la forma di un cubo."), [])
+-
+-    def test_quando_e_secondo_non_sono_gerundi(self):
+-        self.assertEqual(MC.gerundi_in_coda("Lo vedi, quando il sole cala."), [])
+-        self.assertEqual(MC.gerundi_in_coda("Arriva un messo, secondo il patto."), [])
+-
+-    def test_avverbi_in_mente_e_le_parole_che_non_lo_sono(self):
+-        self.assertEqual(MC.avverbi_mente("Cammina lentamente, la mente altrove."),
+-                         ["lentamente"])
+-        self.assertEqual(MC.avverbi_mente("Un vento inclemente, una semente."), [])
+-
+     def test_battute_nella_forma_prescritta(self):
+         testo = ("**BALVAR (piano):** *«Sta' buono.»*\n\n"
+                  "**DURIN:** *«" + " ".join(["parola"] * 30) + "»*\n")
+@@ -444,8 +426,7 @@ class TestStileDeiBox(unittest.TestCase):
+                  "Lentamente, il fumo sale.*\n")
+         d = MC.stile_dei_box(testo)
+         self.assertEqual(d["box"], 1)
+-        self.assertEqual(d["gerundio in coda"], 1)
+-        self.assertEqual(d["-mente"], 1)
++        self.assertNotIn("gerundio in coda", d)
+ 
+ 
+ class TestGulpease(unittest.TestCase):
+@@ -474,13 +455,3 @@ class TestLunghezzeCheVariano(unittest.TestCase):
+         self.assertEqual(MC.stile_dei_box(testo)["30-70 %"], 75.0)
+ 
+ 
+-class TestFasciaUmana(unittest.TestCase):
+-    """ADR-0093: fuori fascia in basso è un indizio come in alto."""
+-
+-    def test_sotto_dentro_sopra(self):
+-        self.assertEqual(MC.rispetto_alla_fascia(0.5, MC.FASCIA_MENTE, 2000), "↓")
+-        self.assertEqual(MC.rispetto_alla_fascia(5.5, MC.FASCIA_MENTE, 2000), "·")
+-        self.assertEqual(MC.rispetto_alla_fascia(20.0, MC.FASCIA_MENTE, 2000), "↑")
+-
+-    def test_campione_piccolo_non_si_giudica(self):
+-        self.assertEqual(MC.rispetto_alla_fascia(0.0, MC.FASCIA_MENTE, 400), "–")

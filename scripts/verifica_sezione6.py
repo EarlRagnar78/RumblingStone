@@ -73,7 +73,7 @@ TIMEOUT = 900
 CONSENTITI = frozenset({
     "misura_craft.py", "punteggio_mqm.py", "validate_docs.py",
     "validate_modules.py", "validate_prosa.py", "validate_norme_editoriali.py",
-    "validate_booklets.py", "superficie_norme.py", "decisioni_dm.py",
+    "validate_booklets.py", "decisioni_dm.py",
     # aggiunti il 2026-09-23 su ordine del DM (lotti degli statblocchi): sono
     # in sola lettura con le opzioni che §6.2 cita, e SCRITTURA li protegge
     "genera_attributi.py", "validate_bestiario.py", "conformita_statblocchi.py",

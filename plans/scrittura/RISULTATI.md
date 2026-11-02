@@ -1,6 +1,12 @@
 # L11 · Il giro sulle skill di scrittura: i risultati
 
-Il voto è `scripts/voto_scrittura.py`: ogni controllo chiama un rilevatore che
+> **2026-10-23.** Il lotto 7e di PIANO-AVVENTURE-COMMUNITY voleva togliere il
+> banco, perché i suoi controlli sono già dentro `punteggio_mqm.py` e la
+> condizione B-con era al 100% (soffitto). Resta, perché `banco_prosa_locale.py`
+> (ADR-0089) gli fa votare le corse del modello locale. Il rilevatore di
+> «sembra»/«pare» ora vive in `validate_prosa.py` e il banco lo riusa.
+
+Il voto è `voto_scrittura.py`: ogni controllo chiama un rilevatore che
 esiste già nel repo (`misura_craft`, `validate_prosa`) e una norma registrata.
 I casi sono in `casi.json`: dieci, cinque di taratura e cinque di verifica, una
 coppia per genere (apertura, combattimento, dialogo, testo per un giocatore,
@@ -117,3 +123,99 @@ tutte le corse senza che A o B cambino di un voto:
 Le corse segnalano di nuovo le tre incoerenze di canone della tornata B, e una
 quarta: il Rubino ha tre descrizioni diverse («Cuore della Leggenda» in
 `DEF-4` e `DEF-5`, altre due altrove). Sono per il DM.
+
+## Il voto non regala più i box (ADR-0089, I1, 2026-10-10)
+
+Un testo di due righe senza box, con «sembra», una parentesi e una metratura,
+prendeva 81% in taratura e 78% in verifica: i sei controlli sui box passavano
+quando il box non c'era. Ora falliscono, e lo stesso testo prende 44% e 42%.
+Nessuna corsa di questa pagina cambia di un voto, perché in tutte il box c'era
+dove il caso lo chiedeva. Restano superati per intero, anche dalla spazzatura,
+i quattro casi che non hanno un controllo di presenza (S04, S05, S08, S10): per
+confrontare due generatori si leggono i casi di box e di dialogo.
+
+Le corse di un modello locale si scrivono con `scripts/banco_prosa_locale.py`
+in `corse/L-<modello>-<n>/` e si votano qui come le altre.
+
+## La prima corsa locale: `gemma4:e4b-it-qat` sull'ASUS (2026-10-10), scartata
+
+Il DM l'ha fatta girare sul portatile con Bazzite (RTX 4050, 6 GB), con
+`scripts/llm-locale/prova.sh` e il contesto pieno. Il voto è stato 40% in
+taratura e 60% in verifica. **Quei numeri non misurano il modello**, e la corsa
+è in [`scartate/`](scartate/README.md).
+
+Qui avevo scritto che il server non tagliava nessun prompt. Era falso: lo
+avevo letto in una riga del log, che riguardava il primo caso e basta. I
+`prompt_tokens` di `corsa.json` dicono altro:
+
+| caso | caratteri del prompt | token contati dal server | caratteri per token |
+|---|---:|---:|---:|
+| S01, S06, S08 | 75.000-79.000 | 21.900-23.300 | 3,4 |
+| S02, S03, S04, S07 | ~86.600 | **12.291** ciascuno | 7,0 |
+| S09 | 82.256 | 24.231 | 3,4 |
+
+I quattro prompt più lunghi superavano i 24.576 token di contesto, e llama.cpp
+dentro Ollama li ha tagliati a metà senza dare errore. S09 è entrato, ma ha
+lasciato 345 token alla risposta, che è uscita vuota. S07 si è fermato al
+tetto di 1.500 token a metà di una parola. Restano validi cinque casi su dieci.
+
+Su quei cinque si vede comunque qualcosa. In S01 e S06 il modello scrive il
+read-aloud etichettato, ma in paragrafi normali e non nella citazione in
+corsivo (`> *…*`) che la norma prescrive. Rimesso nella forma giusta a mano,
+ogni box cade ancora su due o tre norme di sostanza: più di un nome proprio,
+«sembra», una decisione presa per i giocatori. In S02, che però è uno dei
+casi tagliati, il modello scrive l'esito delle azioni di tutti e cinque i PG.
+
+Dopo questa corsa, `banco_prosa_locale` controlla tre cose:
+
+- **prima di chiamare** il server, se il prompt stimato più la risposta supera
+  il contesto: in quel caso non parte (codice 4);
+- **dopo ogni caso**, se il server ha contato meno di un token ogni cinque
+  caratteri (il prompt è stato tagliato), se la risposta è vuota o si è fermata
+  al tetto;
+- se un caso è guasto, la corsa va in `prove-locali/`, fuori dal voto
+  (codice 5).
+
+Il contesto predefinito passa a 32.768 token e il tetto di risposta a 3.000.
+I tempi invece si possono già usare: da 13 a 50 secondi a caso, circa 32
+token al secondo, 40 strati su 43 nella GPU.
+
+## La corsa valida: `gemma4:e4b-it-qat` sull'ASUS (2026-10-11)
+
+La stessa prova, rifatta con 32.768 token di contesto e 3.000 di risposta.
+Nessun caso guasto: ogni prompt è arrivato intero (da 21.931 a 25.889 token per
+i casi di gioco) e ogni risposta si è chiusa da sola. Da 20 a 84 secondi a
+caso, 533 secondi in tutto.
+
+| condizione | taratura | verifica |
+|---|---:|---:|
+| B-con | 96/96 (100%) | 99/99 (100%) |
+| A-senza | 86/96 (89%) | 81/99 (81%) |
+| spazzatura (I1) | 44% | 42% |
+| **L-gemma4e4bitqat-1** | **13/32 (40%)** | **14/33 (42%)** |
+
+Il voto è al livello della spazzatura, e quasi tutto per una ragione sola.
+In quattro casi su sei di gioco (S01, S02, S06, S07) il modello scrive il
+read-aloud, spesso etichettato e in S02 e S07 chiuso su «Che fate?», ma in
+paragrafi normali. La citazione in corsivo (`> *…*`) che la norma prescrive non
+c'è, e senza il box cadono gli otto controlli che lo riguardano.
+
+**Una prova diagnostica**, che non è la misura: rimettendo quei paragrafi nella
+forma del box con uno script, senza toccare una parola, il voto sale a 30/32 in
+taratura e 30/33 in verifica (94% e 91%). Restano due forme di dialogo, un
+trattino e un `hdywtdt`. Quindi la forma delle norme si può recuperare dopo, con
+un passo meccanico. Il resto il banco non lo vede, e si legge nei testi:
+
+- in S02 il modello scrive azioni ed esiti dei cinque PG («Il tuo martello…
+  incontra la prima scaglia»), cioè decide per i giocatori;
+- nessun caso di combattimento porta le meccaniche che B-con mette accanto al
+  box (la CD della Presenza Terrificante, chi non tira e perché, le righe per
+  esito).
+
+La soglia di ADR-0089 per «rispetta le norme» è il 90% in verifica: con il 42%
+non la passa.
+
+**Il foglio alla cieca** (DM, 2026-10-11): B-con preferita in 10 coppie su 10,
+nessun pari. Quota della sfidante 0/10, Wilson al 95% [0,00, 0,28]. La soglia
+per «il DM la usa come bozza» era 3 su 10 fra preferite e pari: anche qui no,
+e senza un caso al limite.

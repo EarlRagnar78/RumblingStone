@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0",
+  "title": "GS-1b — Lo sfioratore calishita sotto la riva del Cannath (ingresso B, nascosto)",
+  "scale_m_per_square": 1.5,
+  "map_size": [
+    26,
+    14
+  ],
+  "base_terrain": "🏰",
+  "north": "N",
+  "tipo": "tattica",
+  "ambiente": "caverna",
+  "luogo": "Rethmar, riva sud del Cannath, a valle del Ponte (n. 7 della pianta)",
+  "regions": [
+    {
+      "terrain": "🌊",
+      "rect": [
+        0,
+        0,
+        5,
+        14
+      ],
+      "label": "Il Cannath: corrente forte sotto il pilone del ponte"
+    },
+    {
+      "terrain": "🌊",
+      "rect": [
+        5,
+        5,
+        15,
+        3
+      ],
+      "label": "Il canale di sfioro, volta a botte alta 3 m, acqua alla cintura che corre VERSO il fiume"
+    },
+    {
+      "terrain": "🟤",
+      "rect": [
+        5,
+        4,
+        15,
+        1
+      ],
+      "label": "Cornicione di servizio largo 60 cm"
+    },
+    {
+      "terrain": "💧",
+      "rect": [
+        18,
+        3,
+        7,
+        8
+      ],
+      "label": "La camera della paratoia: acqua bassa, 60 cm"
+    },
+    {
+      "terrain": "🟤",
+      "rect": [
+        21,
+        4,
+        4,
+        5
+      ],
+      "label": "Banchina della paratoia"
+    }
+  ],
+  "structures": [
+    {
+      "type": "⛓",
+      "at": [
+        5,
+        4
+      ],
+      "label": "Grata calishita, spezzata dall'interno: le sbarre piegate verso il fiume"
+    },
+    {
+      "type": "🧰",
+      "at": [
+        24,
+        4
+      ],
+      "label": "L'argano della paratoia, ingrassato di fresco"
+    },
+    {
+      "type": "🕯",
+      "at": [
+        23,
+        8
+      ],
+      "label": "Una candela di grasso di pesce, spenta da poco"
+    },
+    {
+      "type": "🔽",
+      "at": [
+        22,
+        6
+      ],
+      "label": "La galleria di drenaggio scende verso sud-ovest, sotto la città (GS-6)",
+      "collega": "GSC-6-GALLERIA-DI-DRENAGGIO.md AM08"
+    }
+  ],
+  "hazards": [
+    {
+      "type": "🌊",
+      "at": [
+        1,
+        2
+      ],
+      "label": "La corrente del Cannath",
+      "effect": "acqua agitata: Nuotare CD 15 per tenersi; con un fallimento di 5 o più la corrente porta via 6 m verso valle"
+    },
+    {
+      "type": "🌊",
+      "at": [
+        10,
+        6
+      ],
+      "label": "Corrente rovesciata",
+      "effect": "si cammina con l'acqua alla cintura a metà velocità; chi cade va trascinato 3 m verso il fiume a round (Forza CD 12 per fermarsi). La corrente esce perché Tariq fa sfogare la cisterna: è l'acqua che manca alla città"
+    }
+  ],
+  "units": [
+    {
+      "faction": "PG",
+      "name": "I quattro PG, arrivati dal fiume",
+      "token": "🔵",
+      "area": {
+        "rect": [
+          2,
+          5,
+          2,
+          2
+        ]
+      },
+      "quantity": 4
+    },
+    {
+      "faction": "Sonjak",
+      "name": "Pattuglia drow di passaggio (2 esploratori, ranger 6), solo con il clock di Sonjak a 5 o più",
+      "token": "🟣",
+      "area": {
+        "rect": [
+          23,
+          6,
+          2,
+          2
+        ]
+      },
+      "quantity": 2
+    }
+  ],
+  "tattiche": [
+    "**Lo sfioratore si scopre, non si trova per caso** (vedi gli indizi nel capitolo «Gli ingressi»). Senza indizio, dal fiume si vede solo il pilone.",
+    "**I drow non combattono qui.** Se il clock di Sonjak è a 5 o più, due esploratori stanno chiudendo la paratoia; al primo segno dei PG fuggono nella galleria e avvisano il campo sotto la linea di Rethmar. Catturarne uno vale l'indizio della scelta 12.",
+    "**Indizi sulla banchina**: Sopravvivenza CD 18 mostra impronte di piedi palmati (skum) e di stivali morbidi (drow) che vanno nella stessa direzione; Cercare CD 20 trova un gettone d'osso con il ragno di Sonjak."
+  ],
+  "evoluzione": [
+    {
+      "stato": "B · paratoia chiusa",
+      "trigger": "i PG chiudono la paratoia con l'argano (Forza CD 18, 2 round)",
+      "griglia": "la corrente del canale si ferma",
+      "effetto": "la cisterna smette di sfogare: in tre giorni l'acqua della città torna a salire (scelta 9). Tariq se ne accorge in 1 ora"
+    }
+  ],
+  "note_dm": [
+    "**Il canale è lungo 22,5 m** in pianta, ma l'intero sfioratore dal fiume alla galleria è lungo 60 m: quello che conta è la camera della paratoia, dove i PG decidono se chiuderla."
+  ]
+}

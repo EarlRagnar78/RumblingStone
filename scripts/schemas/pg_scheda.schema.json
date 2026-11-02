@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pg_scheda.schema.json",
+  "title": "Scheda PG come dato (PG/schede/<pg>.yaml)",
+  "description": "I fatti di un PG che il repo deve tenere onesti: caratteristiche e modificatori permanenti con la loro fonte (RIPRESA-PR 4g-1, ADR-0088). Classe, PF, stato e artefatti NON stanno qui: sono di campaign/state.yaml (blocco `party` e `artefatti`), e una seconda copia sarebbe la prima a restare indietro. validate_pg.py rifiuta queste chiavi.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "pg", "caratteristiche", "modificatori_permanenti"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "pg": {
+      "description": "Il nome come compare in `party[].pg` di campaign/state.yaml.",
+      "type": "string",
+      "minLength": 2
+    },
+    "nome_completo": {"type": ["string", "null"]},
+    "razza": {"type": ["string", "null"]},
+    "allineamento": {"type": ["string", "null"]},
+    "caratteristiche": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["for", "des", "cos", "int", "sag", "car"],
+      "patternProperties": {
+        "^(for|des|cos|int|sag|car)$": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["base", "attuale", "attestato_da"],
+          "properties": {
+            "base": {"type": ["integer", "null"]},
+            "attuale": {"type": ["integer", "null"]},
+            "attestato_da": {
+              "description": "Il file che attesta i valori. null = [INFERRED]: il repo non li conosce e non si inventano (li porta il lotto 4g-2 dalle schede del DM).",
+              "type": ["string", "null"]
+            }
+          }
+        }
+      }
+    },
+    "modificatori_permanenti": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["caratteristica", "delta", "causa", "fonte"],
+        "properties": {
+          "caratteristica": {"enum": ["FOR", "DES", "COS", "INT", "SAG", "CAR"]},
+          "delta": {"type": "integer"},
+          "causa": {"type": "string", "minLength": 3},
+          "quando": {"type": ["string", "null"]},
+          "cita": {
+            "description": "Una frase che deve comparire, identica, nel file `fonte`.",
+            "type": ["string", "null"]
+          },
+          "fonte": {"type": "string", "minLength": 3}
+        }
+      }
+    },
+    "vincoli": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["vincolo", "fonte"],
+        "properties": {
+          "vincolo": {"type": "string"},
+          "conseguenze": {"type": ["string", "null"]},
+          "fonte": {"type": "string"}
+        }
+      }
+    },
+    "note": {"type": ["string", "null"]}
+  }
+}

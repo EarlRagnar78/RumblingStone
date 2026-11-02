@@ -1,0 +1,100 @@
+[
+ {
+  "id": "N12a / P#39 / DM-R12 / T36",
+  "cosa": "freccia assassina, effetto a TS fallito",
+  "srd": "35",
+  "file": "magic-items/magic-items-ii-armor-and-weapons.md",
+  "cerca": "\\*\\*Slaying Arrow:\\*\\*[^\\n]*",
+  "master": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+  "master_cerca": "Tempra \\*\\*CD 20\\*\\* o subisce\\s+\\*\\*50 danni\\*\\*",
+  "discorda": true,
+  "srd_dice": "save or die",
+  "master_dice": "50 danni, attribuiti all'SRD 3.5"
+ },
+ {
+  "id": "N12a (PF1e)",
+  "cosa": "freccia assassina in PF1e",
+  "srd": "pf1",
+  "db": "book-ue.db",
+  "nome": "Slaying Arrow",
+  "cerca": "DC 20 Fortitude save or take 50 points of damage",
+  "master": null,
+  "srd_dice": "50 danni: è la regola PF1e (Ultimate Equipment)",
+  "master_dice": null
+ },
+ {
+  "id": "N12a (TS riuscito)",
+  "cosa": "freccia assassina, danni extra a TS riuscito (la 3.0 dava 3d6?)",
+  "srd": "35",
+  "file": "magic-items/magic-items-ii-armor-and-weapons.md",
+  "cerca": "\\*\\*Slaying Arrow:\\*\\*[^\\n]*",
+  "assente": "3d6",
+  "master": null,
+  "srd_dice": "nessun danno extra nel testo 3.5",
+  "master_dice": null
+ },
+ {
+  "id": "N12b / P#36 / T1",
+  "cosa": "togliere armatura pesante",
+  "srd": "35",
+  "file": "basic-rules-and-legal/equipment.md",
+  "cerca": "Half-plate or full plate</td><td>4 minutes<sup>2</sup></td><td>4 minutes<sup>1</sup></td><td>1d4\\+1 minutes<sup>1</sup>",
+  "master": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+  "master_cerca": "1d4\\+1 minuti",
+  "srd_dice": "1d4+1 minuti; con aiuto la metà",
+  "master_dice": "1d4+1 minuti (il TRIAGE scrive «con aiuto»: con aiuto è la metà)"
+ },
+ {
+  "id": "P#38 / T35",
+  "cosa": "comunione, tempo di lancio",
+  "srd": "35",
+  "file": "spells/spells-c.md",
+  "cerca": "## Commune\\n(?:.*\\n){0,8}?\\*\\*Casting Time:\\*\\* 10 minutes",
+  "master": "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md",
+  "master_cerca": "Comunione\\*\\*\\* \\(5°\\) \\| 10 minuti",
+  "srd_dice": "10 minuti",
+  "master_dice": "10 minuti"
+ },
+ {
+  "id": "DM-R20 / T35",
+  "cosa": "comando, verbi",
+  "srd": "35",
+  "file": "spells/spells-c.md",
+  "cerca": "_Approach:_(?:.*\\n){0,10}?_Halt:_",
+  "master": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+  "master_cerca": "Lascia",
+  "srd_dice": "elenco chiuso nel 3.5 («You may select from the following options»): Approach, Drop, Fall, Flee, Halt",
+  "master_dice": "«Lascia!» = Drop"
+ },
+ {
+  "id": "DM-R9 / T30",
+  "cosa": "Scalare: corda con parete CD 0, velocità un quarto",
+  "srd": "35",
+  "file": "basic-rules-and-legal/skills-i.md",
+  "cerca": "one-quarter your speed",
+  "master": null,
+  "srd_dice": "un quarto della velocità per azione di movimento (metà con −5)",
+  "master_dice": "5 round, 3 con l'accelerata"
+ },
+ {
+  "id": "P#17 / T5",
+  "cosa": "scudo, durata",
+  "srd": "35",
+  "file": "spells/spells-s.md",
+  "cerca": "## Shield\\n(?:.*\\n){0,14}?\\*\\*Duration:\\*\\* 1 min\\./level",
+  "master": null,
+  "srd_dice": "1 minuto per livello",
+  "master_dice": "7 minuti a ogni passaggio"
+ },
+ {
+  "id": "D-R3 / R1",
+  "cosa": "ettin, due armi senza penalità e iterativi per mano",
+  "srd": "35",
+  "file": "monsters/monsters-e-f.md",
+  "cerca": "2 morningstars \\+12/\\+7 melee",
+  "master": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+  "master_cerca": "due randelli \\+21/\\+16/\\+11",
+  "srd_dice": "ogni mano ha gli iterativi (+12/+7 con BAB +7)",
+  "master_dice": "sei colpi"
+ }
+]

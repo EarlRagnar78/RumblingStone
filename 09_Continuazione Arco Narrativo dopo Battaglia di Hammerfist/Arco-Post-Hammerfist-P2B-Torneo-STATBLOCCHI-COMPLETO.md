@@ -197,32 +197,32 @@ Tutti i valori sono pensati per un party di livello 11–12. Adatta leggermente 
 ### Statblocco reale (sotto la maschera)
 
 - Taglia/Tipo: Aberrazione Medio (Mind Flayer).
-- DV: 8d8 + 5d4 + 26 (pf medi 70).
+- DV: 8d8 + 5d4 + 26 (pf medi 74).
 - Iniziativa: +5 (+1 Des, +4 Improved Initiative).
 - Velocità: 9 m.
 - CA: 22 (10 base, +1 Des, +3 Armatura [tuta psicoadattiva], +4 Naturale, +4 Deflessione [scudo psionico passivo, swift action 3/giorno]).
   - Touch 15 / Flat-footed 21.
-- BAB/Grapple: +7 / +8.
+- BAB/Grapple: +8 / +9.
 - Attacchi (forma reale rivelata):
   - 4 Tentacoli +9 (1d4+1 ciascuno; se 4 colpiscono lo stesso bersaglio → grapple → estrazione cervello al round successivo, TS Tempra CD 18 o morte).
   - In forma “Kethran”: pugno senz’armi +12/+7 (1d8+3) — danno medio per simulare un Monk 11 (in realtà i tentacoli incappucciati eseguono i colpi).
-- Caratteristiche: For 12 (+1), Des 12 (+1), Cos 14 (+2), **Int 20 (+5)**, Sag 17 (+3), Car 15 (+2).
-- TS: Temp +5, Rif +5, Vol +11.
-- RI 21.
-- Abilità chiave: Bluff +12, Conoscenze (arcane, planari, dungeoneering) +18 ciascuna, Camuffare +14 (+22 con *Disguise Self* psionico), Diplomazia +12, Percezione (Ascoltare/Osservare) +14, Psicocrafting +18.
-- Talenti: Improved Initiative, Combat Casting, Psicocrafter, Inner Strength, Iron Will.
+- Caratteristiche: For 12 (+1), Des 12 (+1), Cos 14 (+2), **Int 20 (+5)**, Sag 17 (+3), Car 17 (+3, mantello del carisma +2).
+- TS: Temp +5, Rif +6, Vol +15 (Iron Will, Lightning Reflexes).
+- RI 25.
+- Abilità chiave: Bluff +12, Conoscenze (arcane, planari, dungeoneering) +18 ciascuna, Camuffare +14 (+22 con *Disguise Self* psionico), Diplomazia +12, Ascoltare/Osservare +14, Psicocrafting +18.
+- Talenti: Improved Initiative, Combat Casting, Psicocrafter, Inner Strength, Iron Will, Lightning Reflexes.
 
 ### Capacità speciali
 
-- **Mind Blast** (Su, iconico Illithid): cono 18 m, 1d4 round storditi, TS Volontà CD 17, ricarica 1d4 round.
+- **Mind Blast** (Su, iconico Illithid): cono 18 m, 3d4 round storditi, TS Volontà CD 17, ricarica 1d4 round.
 - **Detect Thoughts** (Su, sempre attivo entro 18 m, **filtrato** in modalità covert: il bersaglio percepisce solo un vago disagio invece della pressione mentale tipica).
 - **Disguise Self psionico** (Su, sempre attivo, manifestazione gratuita): aspetto umano realistico. Annullato istantaneamente se subisce 30+ danni in un singolo colpo, se il *Disguise* viene investito da *True Seeing* / *Greater Dispel Magic* CL 11+, o se l’Orbe delle Otto Porte viene aperta a Porta 3+ entro 9 m.
 - **Slave Psionico (allievo)**: lo accompagna sempre. È un monaco umano (Adept 1) con cervello già parzialmente cerebromorfizzato — funge da “voce” per Sethrax e da bersaglio sacrificabile. Statistiche pari a un Adept 1 (PF 6, AC 12, parla con voce piatta).
 
-### Poteri psionici (5° livello, PP 33)
+### Poteri psionici (5° livello, PP 37)
 
-- *Charm Monster* (Vol CD 17), 3/giorno — usato in arena travestito come “Stunning Fist” mentale.
-- *Suggestion* (Vol CD 16), 3/giorno.
+- *Charm Monster* (Vol CD 17), a volontà — usato in arena travestito come “Stunning Fist” mentale.
+- *Suggestion* (Vol CD 16), a volontà.
 - *Mental Barrier* (+4 CA come azione immediata), 3/giorno.
 - *Psionic Dimension Door*, 3/giorno — fuga rapida.
 - *Psionic Plane Shift*, 1/giorno — fuga di emergenza verso la **Torre Invisibile** (questo è il dettaglio che dà il primo indizio chiave ad Artemis).
@@ -231,10 +231,10 @@ Tutti i valori sono pensati per un party di livello 11–12. Adatta leggermente 
 ### Statblocco di copertura (durante incontri pubblici, prima dello smascheramento)
 
 Quando Sethrax combatte come “Kethran Mano di Pietra” senza svelarsi, usa **questi numeri ridotti** per credibilità (Monk 11 generico):
-- PF 70 (uguali, ma narrativamente “regge da monaco”).
+- PF 74 (uguali, ma narrativamente “regge da monaco”).
 - CA 24 (10 base, +5 Des “simulato”, +3 Sag, +1 Dodge, +4 bonus monaco, +1 Mental Barrier passivo).
 - BAB +8/+3 (finto), Unarmed +13/+8 (1d10+3) — tentacoli camuffati come pugni.
-- TS finti annunciati: Temp +9, Rif +11, Vol +9 (i Volontà reali sono +11, ma li dichiara come Sag-driven da monaco).
+- TS finti annunciati: Temp +9, Rif +11, Vol +9 (i Volontà reali sono +15, ma li dichiara come Sag-driven da monaco).
 - **Non usa Mind Blast.** Non usa tentacoli visibili. Non usa estrazione cervello.
 
 ### Trigger di smascheramento (priorità per il DM)
@@ -260,7 +260,7 @@ Quando Sethrax combatte come “Kethran Mano di Pietra” senza svelarsi, usa **
 ### Note per il Master
 
 - Sethrax è il **gancio narrativo** che **collega l’Arco P2B (Tordek/Torneo) all’Arco P2A (Artemis/Torre)**. Il suo destino al Torneo determina la difficoltà dell’incontro finale di Artemis con Zalkatar.
-- È deliberatamente **CR 12** (sotto Xal’thor CR 14 e Zalkatar CR 13): è un emissario, non un boss. Va trattato come **scena tattica + indizio**, non come scontro definitivo.
+- È deliberatamente **CR 12** (sotto Xal’thor e Zalkatar, entrambi GS 14): è un emissario, non un boss. Va trattato come **scena tattica + indizio**, non come scontro definitivo.
 - Tono: Sethrax è **lucido, sarcastico, professionale**. Opposto del fanatismo militare di Xal’thor. Aiuta a far sentire ai PG che il “mondo Illithid” non è monolitico — diversi conclavi vogliono cose diverse, e i PG sono dentro a una guerra per procura.
 
 ---

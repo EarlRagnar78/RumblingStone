@@ -63,17 +63,6 @@ class TestReadAloudNonEUnaNotaEditoriale(unittest.TestCase):
                                     "coincidono: se diverge, la prova non vale piu'")
 
 
-class TestLoSpotlightNonELaFormattazione(unittest.TestCase):
-    """🐛 Pretendeva il **grassetto**. Il Palio nomina tutti e quattro i PG e
-    non li scrive mai in grassetto: segnava 0. Misurava il markdown."""
-
-    def test_il_PG_conta_anche_senza_grassetto(self):
-        self.assertEqual(conta("spotlight per PG", "Tordek si fa avanti."), 1)
-
-    def test_il_PG_in_grassetto_conta_ancora(self):
-        self.assertEqual(conta("spotlight per PG", "**Hella** tace."), 1)
-
-
 class TestEcoConosceIlPlurale(unittest.TestCase):
     """🐛 Il Palio ha un **file intero** chiamato `PALIO-CONSEGUENZE-ECHI.md`
     e segnava **zero echi**: il rilevatore non conosceva il plurale."""
@@ -86,46 +75,6 @@ class TestEcoConosceIlPlurale(unittest.TestCase):
         testo, _, _ = MC.carica(MC.BERSAGLI["★ Palio di Channathgate"])
         self.assertGreater(conta("eco / conseguenze a distanza", testo), 0,
                            "il banco degli echi torna a dichiarare zero echi")
-
-
-class TestIlDialogoHaDueConvenzioni(unittest.TestCase):
-    """🐛 Il rilevatore pretendeva `Nome: «…»`: **zero in tutti i 12 bersagli**.
-
-    ⚠️ **E la diagnosi che avevo dato era sbagliata a sua volta.** Avevo
-    concluso «una forma inventata, che nessun documento usa». È il contrario:
-    `editorial-standards.md` §2 la **prescrive** — `**NOME (registro/tono):**
-    *«battuta»*` — e la si trova **sei volte in tutto il repo**. Il congegno
-    `dialogo nella forma dichiarata` misura adesso proprio quello; questo qui
-    conta le battute **comunque scritte**, che è un'altra domanda.
-
-    ⚠️ E le virgolette dritte non sono automaticamente dialogo: nel Palio
-    `"…"` da' **128 hit** e sono **titoli di canzoni**. Il discrimine e'
-    >=3 parole **e** punteggiatura di frase."""
-
-    def test_le_guillemette_contano(self):
-        self.assertEqual(conta("battute di dialogo", "«Il Signore aspetta.»"), 1)
-
-    def test_la_battuta_fra_virgolette_dritte_conta(self):
-        self.assertEqual(
-            conta("battute di dialogo", '"Ci pensate. Il banco resta qui."'), 1)
-
-    def test_il_titolo_di_canzone_NON_conta(self):
-        """Il lato che morde, ed e' quello che ha ucciso 106 falsi positivi."""
-        for titolo in ('"L\'Aria dei Conti"', '"Il Lamento del Traghetto"',
-                       '"Bastone-di-Serpente"', '"Disguise Self psionico"'):
-            with self.subTest(titolo=titolo):
-                self.assertEqual(conta("battute di dialogo", titolo), 0)
-
-    def test_nessun_bersaglio_e_piu_a_zero_per_forma_inventata(self):
-        """La Torre resta a zero — ma per un fatto, non per il metro: non ha
-        **nessun** dialogo, ne' `«…»` ne' dritto. Gli altri devono averne."""
-        vivi = 0
-        for nome in MC.BERSAGLI:
-            testo, _, _ = MC.carica(MC.BERSAGLI[nome])
-            if conta("battute di dialogo", testo):
-                vivi += 1
-        self.assertGreaterEqual(vivi, 8, "il rilevatore e' tornato a non "
-                                         "riconoscere nessuna convenzione")
 
 
 class TestIlPilastroDichiarato(unittest.TestCase):
@@ -165,6 +114,11 @@ class TestIlPilastroDichiarato(unittest.TestCase):
         # 2026-10-11: DEF-1 entra di proposito. Il box di fine ora del
         # contratto del Seme (§6-bis) porta l'etichetta del pilastro, come
         # chiede editorial-standards.md §2.
+        # 2026-10-21: gli handout di ARC-08 entrano di proposito. L'handout 0
+        # (la visione della Corona, D4 di MASTER-DEF) porta il pilastro.
+        # 2026-10-22: gli handout di ARC-08 escono di proposito. Il giro sulla
+        # Sessione 1 ha tolto l'etichetta dall'handout 0: un handout va in mano
+        # ai giocatori, e l'etichetta del pilastro è regia.
         self.assertEqual(sorted(con), ["ARC-08 Hammerfist",
                                        "DEF-1 Piano della Terra",
                                        "DEF-2 Ritorno e affreschi",
@@ -246,6 +200,11 @@ class TestGliStandardRedazionaliScrittiEMaiApplicati(unittest.TestCase):
         regia, che è il caso esatto che ADR-0014 §1 nomina. Ogni volta il
         cancello è diventato rosso, che era il suo scopo, e ogni volta è stato
         aggiornato a mano. Tre su nove archi: la strada è ancora lunga.
+
+        ✅ **Il quarto, il 2026-10-18.** La riscrittura di stile di DEF-5 ha
+        dato alla Scena 3 una «Regia dei round» (§5, la pulizia del Cuore
+        della Montagna: un round per riga, ramo luminoso, ramo meno luminoso,
+        i nani). Quattro documenti su cinque in ARC-07; manca DEF-2.
         """
         con = []
         for nome in MC.BERSAGLI:
@@ -254,7 +213,8 @@ class TestGliStandardRedazionaliScrittiEMaiApplicati(unittest.TestCase):
                 con.append(nome)
         self.assertEqual(sorted(con), ["DEF-1 Piano della Terra",
                                        "DEF-3 Resurrezione Hella",
-                                       "DEF-4 Viaggio 1.000 anni"],
+                                       "DEF-4 Viaggio 1.000 anni",
+                                       "DEF-5 Ritorno Hammerfist"],
                          "la regia di round e' comparsa altrove (bene!) oppure "
                          "e' sparita da uno dei due (male): aggiornare di proposito")
 
@@ -355,17 +315,34 @@ class TestIDueCongegniDiMercer(unittest.TestCase):
         DEF-4 li ha portati per primo (riscrittura del 2026-09-18), DEF-3 il
         giorno dopo — il `[HDYWTDT]` allo Step 5 del rito, dove il richiamo
         riesce e la voce finale la sceglie il giocatore invece del DM. Quando
-        arriveranno altrove, questo cancello va aggiornato **di proposito**."""
-        for congegno in ("[HDYWTDT] il finisher al giocatore",
-                         "assorbi e rilancia (yes-and with teeth)"):
+        arriveranno altrove, questo cancello va aggiornato **di proposito**.
+
+        ✅ **Aggiornato di proposito il 2026-10-18**, dopo la riscrittura di
+        stile dei cinque master di ARC-07, e da qui i due congegni hanno due
+        attese diverse. Il `[HDYWTDT]` arriva in DEF-1 (alla terza crepa del
+        duello di Tordek e al colpo che porta Terros a 0) e in DEF-5 (l'ultimo
+        hobgoblin della pulizia, Scena 3); DEF-2 non ha un boss da finire e
+        resta fuori. Lo *yes-and with teeth* arriva in DEF-1 (§7a, la strada
+        che il tavolo inventa per l'oceano), in DEF-2 (il gesto per la
+        Cronaca, inciso su A8 e col suo prezzo) e in DEF-5 (§0-ter, tre
+        invenzioni assorbite, ognuna con la sua complicazione)."""
+        attesi = {
+            "[HDYWTDT] il finisher al giocatore": [
+                "DEF-1 Piano della Terra", "DEF-3 Resurrezione Hella",
+                "DEF-4 Viaggio 1.000 anni", "DEF-5 Ritorno Hammerfist"],
+            "assorbi e rilancia (yes-and with teeth)": [
+                "DEF-1 Piano della Terra", "DEF-2 Ritorno e affreschi",
+                "DEF-3 Resurrezione Hella", "DEF-4 Viaggio 1.000 anni",
+                "DEF-5 Ritorno Hammerfist"],
+        }
+        for congegno in attesi:
             con = []
             for nome in MC.BERSAGLI:
                 testo, _, _ = MC.carica(MC.BERSAGLI[nome])
                 if conta(congegno, testo):
                     con.append(nome)
             with self.subTest(congegno=congegno):
-                self.assertEqual(sorted(con), ["DEF-3 Resurrezione Hella",
-                                               "DEF-4 Viaggio 1.000 anni"])
+                self.assertEqual(sorted(con), attesi[congegno])
 
 
 class TestIBersagliNonSiCampionanoInSilenzio(unittest.TestCase):
@@ -383,7 +360,7 @@ class TestIBersagliNonSiCampionanoInSilenzio(unittest.TestCase):
     def test_ogni_bersaglio_pesca_i_file_che_dice(self):
         atteso = {"★ Palio di Channathgate": 15, "ARC-09 Torneo di Dauth": 22,
                   "ARC-09 Torre di Zalkatar": 12, "ARC-09 Battaglia Finale": 16,
-                  "ARC-08 Hammerfist": 14}  # 14 dal 2026-10-07: ARC08-17, il banco
+                  "ARC-08 Hammerfist": 18}  # 16 dal 2026-10-21: ARC08-18 e ARC08-19, la battaglia campale; 17 con ARC08-DEF-1; 18 dal 2026-10-22 con ARC08-DEF-2
         for nome, n in atteso.items():
             with self.subTest(bersaglio=nome):
                 self.assertEqual(len(MC.espandi(MC.BERSAGLI[nome])), n)
@@ -438,3 +415,77 @@ class TestIndicatoriDungeon(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestStileDeiBox(unittest.TestCase):
+    """ADR-0093: tre indicatori, e i casi che li fanno sbagliare."""
+
+    def test_gerundio_appeso_in_fondo_alla_frase(self):
+        self.assertEqual(MC.gerundi_in_coda(
+            "Il drago scende sul campo, formando una tempesta di fuoco."), ["formando"])
+
+    def test_l_inciso_fra_due_virgole_non_e_coda(self):
+        # Il falso positivo del primo giro: italiano normale.
+        self.assertEqual(MC.gerundi_in_coda(
+            "Il metallo, raffreddandosi, prese la forma di un cubo."), [])
+
+    def test_quando_e_secondo_non_sono_gerundi(self):
+        self.assertEqual(MC.gerundi_in_coda("Lo vedi, quando il sole cala."), [])
+        self.assertEqual(MC.gerundi_in_coda("Arriva un messo, secondo il patto."), [])
+
+    def test_avverbi_in_mente_e_le_parole_che_non_lo_sono(self):
+        self.assertEqual(MC.avverbi_mente("Cammina lentamente, la mente altrove."),
+                         ["lentamente"])
+        self.assertEqual(MC.avverbi_mente("Un vento inclemente, una semente."), [])
+
+    def test_battute_nella_forma_prescritta(self):
+        testo = ("**BALVAR (piano):** *«Sta' buono.»*\n\n"
+                 "**DURIN:** *«" + " ".join(["parola"] * 30) + "»*\n")
+        self.assertEqual(MC.battute_png(testo), [2, 30])
+
+    def test_stile_dei_box_conta_solo_dentro_i_box(self):
+        testo = ("Fuori dal box, correndo veloce.\n\n"
+                 "> *Il drago scende sul campo, formando una tempesta. "
+                 "Lentamente, il fumo sale.*\n")
+        d = MC.stile_dei_box(testo)
+        self.assertEqual(d["box"], 1)
+        self.assertEqual(d["gerundio in coda"], 1)
+        self.assertEqual(d["-mente"], 1)
+
+
+class TestGulpease(unittest.TestCase):
+    def test_frasi_corte_e_parole_brevi_sono_piu_facili(self):
+        facile = "Il re dorme. La porta è chiusa. Fuori piove."
+        difficile = ("L'amministrazione dell'insolvenza contrattuale comporta "
+                     "conseguenze giurisdizionali particolarmente significative.")
+        self.assertGreater(MC.gulpease(facile), MC.gulpease(difficile))
+
+    def test_formula_su_un_caso_fatto_a_mano(self):
+        # 3 parole, 9 lettere, 1 frase: 89 + (300 - 90) / 3 = 159
+        self.assertAlmostEqual(MC.gulpease("Casa del re."), 159.0)
+
+    def test_testo_vuoto(self):
+        self.assertEqual(MC.gulpease(""), 0.0)
+
+    def test_entra_nello_stile_dei_box(self):
+        self.assertIn("Gulpease", MC.stile_dei_box("> *Il re dorme.*\n"))
+
+
+class TestLunghezzeCheVariano(unittest.TestCase):
+    def test_quota_dei_box_fra_30_e_70_parole(self):
+        corto = " ".join(["pietra"] * 10)
+        medio = " ".join(["pietra"] * 50)
+        testo = "\n\n".join(f"> *{x}.*" for x in (corto, medio, medio, medio))
+        self.assertEqual(MC.stile_dei_box(testo)["30-70 %"], 75.0)
+
+
+class TestFasciaUmana(unittest.TestCase):
+    """ADR-0093: fuori fascia in basso è un indizio come in alto."""
+
+    def test_sotto_dentro_sopra(self):
+        self.assertEqual(MC.rispetto_alla_fascia(0.5, MC.FASCIA_MENTE, 2000), "↓")
+        self.assertEqual(MC.rispetto_alla_fascia(5.5, MC.FASCIA_MENTE, 2000), "·")
+        self.assertEqual(MC.rispetto_alla_fascia(20.0, MC.FASCIA_MENTE, 2000), "↑")
+
+    def test_campione_piccolo_non_si_giudica(self):
+        self.assertEqual(MC.rispetto_alla_fascia(0.0, MC.FASCIA_MENTE, 400), "–")

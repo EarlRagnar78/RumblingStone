@@ -1,0 +1,62 @@
+Misure di LanguageTool 6.8 (migliora_prosa.py languagetool --scrivi)
+
+testi: 109 versioni distinte delle 55 coppie di VOTI.json in 15.8 s; 229 box di ARC-07 e ARC-08 in 34.9 s
+dizionario dei nomi (registro di misura_craft + glossario): 668 voci con le radici
+
+rilievi sulle coppie di VOTI.json: refusi_grezzi 145, refusi 13, grammatica 7, stile 0, ripetizioni 0, punteggiatura 0  (refusi = grezzi meno le parole del dizionario)
+  refusi        MORFOLOGIK_RULE_IT_IT            145
+  grammatica    ER_01_001                        4
+  grammatica    UPPERCASE_SENTENCE_START         3
+
+rilievi sui box di ARC-07 e ARC-08: refusi_grezzi 335, refusi 61, grammatica 9, stile 1, ripetizioni 0, punteggiatura 1  (refusi = grezzi meno le parole del dizionario)
+  refusi        MORFOLOGIK_RULE_IT_IT            335
+  grammatica    UPPERCASE_SENTENCE_START         8
+  grammatica    ER_01_001                        1
+  stile         ST_03_001                        1
+  punteggiatura UNPAIRED_BRACKETS                1
+
+precisione letta a mano (PRECISIONE.json, 30 rilievi sui box; soglia 0.7 su almeno 5):
+  grammatica     0 veri su 9 = 0.00
+  punteggiatura  0 veri su 1 = 0.00
+  refusi         0 veri su 19 = 0.00
+  stile          1 veri su 1 = 1.00
+gruppi nel filtro: nessuno
+
+calibrazione sulle coppie decise (la vincente ha meno rilievi?), test del segno, Bonferroni su 6:
+  refusi         vincente con meno  0, con più  1 · p 1.000 · corretto 1.000
+  grammatica     vincente con meno  0, con più  1 · p 1.000 · corretto 1.000
+  stile          vincente con meno  0, con più  0 · p 1.000 · corretto 1.000
+  ripetizioni    vincente con meno  0, con più  0 · p 1.000 · corretto 1.000
+  punteggiatura  vincente con meno  0, con più  0 · p 1.000 · corretto 1.000
+  refusi_grezzi  vincente con meno  3, con più  3 · p 1.000 · corretto 1.000
+
+sonda di richiamo: 6 su 20 frasi con un errore voluto hanno almeno un rilievo; mancate:
+  accordo        Le ragazza sono andate a casa.
+  ausiliare      Io ho andato al mare ieri.
+  e/è            Lui disse che e bello.
+  articolo       Una amico mio è arrivato.
+  periodo ipotetico Se lo sapevo, venivo.
+  pronome doppio Gli ho detto a lei di venire.
+  elisione       Il nano prende la ascia.
+  ripetizione    Sono andato a casa a casa.
+  ce/c'è         C'è ne sono tre.
+  accordo        Ci sono stati molte battaglie.
+  accordo        I nani è arrivati.
+  preposizione   La spada di il re.
+  accordo        Si è rotto la spada.
+  ripetizione    Il re ha detto che verrà domani, domani.
+
+Varianti del modello (languagetool/SOGLIA.txt): leave-one-out sulle stesse coppie,
+McNemar esatto contro il base, soglia p < 0.0125 (Bonferroni su 4) e Wilson basso > 0,50
+
+  variante  tratti  giuste   acc.  Wilson 95%      solo base solo var. p McNemar  migliora
+  base          11  33/54   0.611  [0.478, 0.730]                                 (riferimento)
+  +LT           13  34/54   0.630  [0.496, 0.746]          2         3     1.000  no
+  +ppl          13  30/54   0.556  [0.424, 0.680]          5         2     0.453  no
+  +Stanza       24  33/54   0.611  [0.478, 0.730]          5         5     1.000  no
+  +tutto        28  31/54   0.574  [0.442, 0.697]          7         5     0.774  no
+  pesi dei tratti nuovi in +LT: lt_refusi +0.730, lt_altri +0.457
+  pesi dei tratti nuovi in +ppl: nll_token -0.192, token_per_parola -0.028
+  pesi dei tratti nuovi in +Stanza: stanza_pron_soggetto -2.335, stanza_profondita_max -0.678, stanza_livelli_max +0.675, stanza_possessivi_corpo +0.646, stanza_mattr_lemmi +0.592, stanza_rip_interna% +0.443, stanza_profondita_media -0.265, stanza_calchi -0.107, stanza_sogg_preverbale -0.097, stanza_stare_gerundio -0.045, stanza_lungh_dip +0.024, stanza_agg_complesso +0.000, stanza_frasi_oltre2% +0.000
+  pesi dei tratti nuovi in +tutto: stanza_pron_soggetto -2.164, stanza_livelli_max +0.743, stanza_profondita_max -0.702, stanza_mattr_lemmi +0.672, stanza_possessivi_corpo +0.601, stanza_rip_interna% +0.421, lt_altri +0.347, nll_token -0.318, stanza_profondita_media -0.313, lt_refusi +0.277, token_per_parola -0.224, stanza_calchi -0.126, stanza_sogg_preverbale -0.124, stanza_lungh_dip +0.092, stanza_stare_gerundio -0.040, stanza_agg_complesso +0.000, stanza_frasi_oltre2% +0.000
+perplessità e lunghezza: nll_token più bassa nella vincente 35 su 54 (p 0.040); tolta la lunghezza (pendenza -0.265 su log token) 34 contro 20 (p 0.076)

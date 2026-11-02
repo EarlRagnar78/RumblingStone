@@ -14,6 +14,7 @@ Le scelte che il diff non spiega da solo.
 - [ ] piano, riga in `plans/INDEX.md` e riga in `plans/CHANGELOG.md` nello **stesso commit** (regola d'oro di `rumblingstone-plans`)
 - [ ] le decisioni del DM nelle tabelle `<!-- decisioni-dm: … -->`, con l'eco; §4 di STATO rigenerato con `decisioni_dm.py --emit`
 - [ ] un ADR nuovo ha il numero prenotato in `plans/adr-prenotati.json` e la prenotazione è tolta in questa PR
+- [ ] un cambio della superficie pubblica (CLI `dm.py`, contratti dei file, skill, versione di Python) ha una riga in «Non rilasciato» di `CHANGELOG.md` (ADR-0100)
 - [ ] una norma nuova è registrata in `skills/REGISTRO-NORME-EDITORIALI.md` con chi la misura (G3)
 
 ## Controlli eseguiti

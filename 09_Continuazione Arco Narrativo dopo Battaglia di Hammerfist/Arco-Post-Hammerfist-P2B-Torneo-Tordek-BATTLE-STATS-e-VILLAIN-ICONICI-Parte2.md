@@ -138,12 +138,14 @@ Stats 3.5, mosse speciali e frasi d’impatto
 
 ## 6) Xal’thor — Comandante Illithid, Boss finale multi‑fase
 
-- PF: 90 (12d8+24) – in Fase 3 opzionale +20 (110)
-- CA: 24 (26 in Forma del Nucleo); Touch 18  
-- Caratteristiche: Str 12, Des 14, Cos 16, Int 20, Sag 18, Car 16
-- TS: Temp +8, Rif +9, Vol +13
+> Numeri allineati alla scheda del Bestiario (`Bestiario/villain/Xal_thor/Xal_thor/Xal_thor.md`), che vale in caso di differenza.
+
+- PF: 96 (8d8+6d4+42, Illithid + Psion 6) – in Fase 3 opzionale +20 (116)
+- CA: 24 (26 in Forma del Nucleo); Touch 16; RI 25
+- Caratteristiche: Str 14, Des 14, Cos 16, Int 22, Sag 17, Car 16 (For e Cos con gli oggetti)
+- TS: Temp +9, Rif +10, Vol +16
 - Attacchi:
-  - 4 tentacoli +12 (1d6+2); con tutti e 4 a segno contro lo stesso bersaglio può tentare estrazione cervello (Tempra CD 19 o morte).
+  - 4 tentacoli +12 (1d6+2); con tutti e 4 a segno contro lo stesso bersaglio può tentare estrazione cervello (Tempra CD 20 o morte).
 - Capacità psioniche trattate come incantesimi:
   - Mind Blast (cono 18 m, 3d6 Int, Vol CD 17, stun 1r on fail) 3/round max.  
   - Dominate creature, charm, shield psionico, dimension door psionico.

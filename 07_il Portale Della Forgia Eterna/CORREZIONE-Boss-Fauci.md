@@ -45,18 +45,18 @@
 
 | Statistica | Valore | Dettaglio |
 |------------|--------|-----------|
-| **HP** | 312 (GS 15) / 285 (GS 12) | 25d12+175 / 22 DV potenziato |
-| **CA** | 28-29 | -2 taglia, +20 naturale, +1 Des |
-| **Velocità** | 18m terra / 50m volo (media) | Nuotare 18m |
+| **HP** | 337 (GS 15) / 285 (GS 12) | 25d12+175 / 22 DV potenziato |
+| **CA** | 29 | -2 taglia, +21 naturale (GS 15) |
+| **Velocità** | 18m terra / 45m volo (scarsa) | Nuotare 18m |
 | **Attacco Base** | +25 / +22 | Lotta +43 / +40 |
 
 ### **ATTACCHI COMPLETI**
 
 **In Terra (Full Attack):**
-- Morso +30/+27: **2d8+10** (crit 19-20/×2)
-- 2 Artigli +25/+22: **2d6+5**
-- 2 Ali +25/+22: **1d8+5**
-- Coda +25/+22: **2d6+15**
+- Morso +35/+27: **2d8+10** (crit 19-20/×2)
+- 2 Artigli +33/+22: **2d6+5**
+- 2 Ali +33/+22: **1d8+5**
+- Coda +33/+22: **2d6+15**
 - **SpazioPortata:** 4,5m/3m (morso 4,5m)
 
 ---
@@ -64,9 +64,9 @@
 ## 💀 CAPACITÀ SPECIALI ICONICHE
 
 ### **1. SOFFIO ACIDO (Soprannaturale)**
-- **Tipo:** Linea 24-30m  
+- **Tipo:** Linea 30m (GS 15)  
 - **Danni:** 14d4 acido (GS 15) / 12d4 (GS 12)  
-- **TS:** Riflessi CD 26-29 dimezza  
+- **TS:** Riflessi CD 29 (GS 15) / 26 (GS 12) dimezza  
 - **Frequenza:** 1d4 round ricarica  
 - **Effetto Narrativo:** *"Lacido CORRODE PIETRA. Armature SI SCIOLGONO (-2 CA permanente). Porte in legno EVAPORANO."*
 

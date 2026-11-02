@@ -1,4 +1,4 @@
-"""Che i test girino davvero in CI, sotto **entrambi** i corridori.
+"""Che i test girino davvero in CI, e che girerebbero sotto **entrambi** i corridori.
 
 🔴 **Il difetto che presidia, misurato il 2026-09-21.** La CI eseguiva
 `python -m unittest discover -s scripts/tests` e pytest non era installato
@@ -14,9 +14,11 @@ Il conto: in locale pytest vedeva 966 prove, la CI ne eseguiva **942**.
 ⚠️ **E la cura ha riaperto il buco al contrario.** L'emendamento del 2026-09-21
 ad ADR-0037 ammette pytest come dipendenza di **sviluppo**, e da quel momento le
 funzioni nude girano sotto pytest e **non** sotto `unittest`: chi le scrive
-vede verde e non si accorge di niente. Per questo il repo gira entrambi i
-corridori e questo file misura la **parita'**: se i due non vedono lo stesso
-numero di prove, qualcosa non gira da qualche parte.
+vede verde e non si accorge di niente. Per un mese il repo ha girato entrambi
+i corridori; dal <data della decisione del DM> la CI gira solo pytest, e questo
+file misura la **parita'** senza il secondo giro: ogni modulo si importa sotto
+`unittest discover`, ogni file ha una TestCase, e i due conti coincidono. Se
+non coincidono, qualcosa girerebbe sotto un corridore e non sotto l'altro.
 
 Questo file usa la sola libreria standard di proposito: e' il controllo che
 deve funzionare anche quando l'altro corridore non e' installato.

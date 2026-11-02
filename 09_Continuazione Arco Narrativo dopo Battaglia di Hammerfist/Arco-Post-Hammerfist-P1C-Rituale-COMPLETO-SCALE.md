@@ -34,15 +34,23 @@
 > di comandanti, pyromancer e pattuglie sono quelle del SUPPLEMENTO, con le sue
 > didascalie. **Si modifica là**, e si ricopia qui.
 >
-> **[PROPOSTA — needs DM confirmation]** sulle 15 righe ricostruite (07, 09, 11,
+> <!-- storico -->
+> [CANONE — DM 2026-10-18] sulle 15 righe ricostruite, che valgono così al tavolo (07, 09, 11,
 > 13, 14, 16, 17, 19, 23, 28, 31, 32, 34, 36, 37): ognuna ripete la riga disegnata
 > sopra, senza figure, fuoco e casse. Le righe disegnate più corte di 53 celle
 > sono state allungate con radura 🟩 prima della foresta est.
+> <!-- /storico -->
+>
+> 🎪 **Dal 2026-10-21 il campo è a scala reale**: 15 tende da 4,5 m in quadro attorno
+> all'incineratore, 3 m fra un telo e l'altro, fossa del fuoco di 3 × 3 m a 10,5 m
+> dalla tenda più vicina, tenda del comando e cucina staccate, a est. Le coordinate
+> sono nel SUPPLEMENTO.
 **Forze:** 30 Drow (20 guerrieri, 8 pyromancer, 2 commanders)
 
 ```
 ═══════════════════════════════════════════════════════════════════════════════════
 CAMPO DROW 1 - BURNING OPERATIONS (80m × 60m = 53×40 grid, 1.5m/square)
+53 colonne × 40 righe · 1,5 m/quadretto · 79,5 × 60 m
 ═══════════════════════════════════════════════════════════════════════════════════
 
 COLONNE →  A … AA … BA (53 colonne)
@@ -52,39 +60,39 @@ COLONNE →  A … AA … BA (53 colonne)
 03  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
 04  🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲🌲
 05  🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲
-06  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲
-07  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲
-08  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-09  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-10  🌲🌲🟩🟩🟩🟩🟩🟩⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-11  🌲🌲🟩🟩🟩🟩🟩🟩⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-12  🌲🌲🟩🟩🟩🟩🟩🟫⛺⛺⛺🔴⛺⛺⛺🟡⛺⛺⛺🔴⛺⛺⛺🟡⛺⛺⛺🔴⛺⛺⛺🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-13  🌲🌲🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫⛺⛺⛺🟫🟫🟫🟫🟫🟫🟫🟫⛺⛺⛺🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-14  🌲🌲🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫⛺⛺⛺🟫🟫🟫🟫🟫🟫🟫🟫⛺⛺⛺🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-15  🌲🌲🟩🟩🟩🟩🟩🟫🟫🔴🟫🟫🔴⛺⛺⛺🟫🔴🟫🟫🔴🟫🟫🔴⛺⛺⛺🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-16  🌲🌲🟩🟩🟩🟩🟩🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-17  🌲🌲🟩🟩🟩🟩🟩🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-18  🌲🌲🟩🟩🟩🟩🟩🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫⛺⛺⛺🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-19  🌲🌲🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-20  🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🔥🔥🔥🔥🔥🔥🔥🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-21  🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🔥🔥🔥🔥🔥🔥🔥🔥🔥🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-22  🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🔥🔥🔥🔥🔥🔥🔥🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-23  🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-24  🌲🟩🟩🟩🟩🟩🟩⛺⛺⛺⛺⛺🟫🟫⛺⛺⛺⛺⛺⛺🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-25  🌲🟩🟩🟩🟩🟩🟩⛺🟫⚫🟫🟫🟫🟫🟫🏺🏺🏺🟫⛺🟫🟡🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-26  🌲🟩🟩🟩🟩🟩🟩⛺🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫⛺🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-27  🌲🟩🟩🟩🟩🟩🟩⛺⛺⚫⛺⛺⛺⛺⛺⛺⛺⛺⛺⛺🟫🟡🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-28  🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-29  🌲🟩🟩🟩🟩🟩🟩⛺⛺⛺⛺⛺🟫🟫⛺⛺⛺⛺⛺⛺🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-30  🌲🟩🟩🟩🟩🟩🟩⛺🟫🔴🟫🟫🟡🟫🟫🏺🏺🏺🟫⛺🟫🔴🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-31  🌲🟩🟩🟩🟩🟩🟩⛺⛺⛺⛺⛺⛺⛺⛺⛺⛺⛺⛺⛺🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-32  🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-33  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-34  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-35  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-36  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+06  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲
+07  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+08  🌲🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+09  🌲🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🎪🎪🎪🟫🟫🎪🎪🎪🟫🟫🎪🎪🎪🟫🟫🎪🎪🎪🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+10  🌲🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🎪🎪🎪🟫🔴🎪🎪🎪🟫🟫🎪🎪🎪🟫🔴🎪🎪🎪🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+11  🌲🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🎪🎪🎪🟫🟫🎪🎪🎪🟫🟫🎪🎪🎪🟫🟫🎪🎪🎪🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+12  🌲🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+13  🌲🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟡🟫🎪🎪🚪🎪🎪🎪🟫🟫🌲🌲🌲🌲🌲🌲🌲
+14  🌲🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟡🟫🟫🟫🟫🟫🟡🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🎪⬜⚫🪑🪓🎪🟫🟫🌲🌲🌲🌲🌲🌲🌲
+15  🌲🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🎪🎪🎪🟫🟫🟫🎪🟪⬜⬜🟪🎪🟫🟫🌲🌲🌲🌲🌲🌲🌲
+16  🌲🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🎪🎪🎪🟫🟫🟫🎪🛏⚫⬜🏺🎪🟫🟫🌲🌲🌲🌲🌲🌲🌲
+17  🌲🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🎪🎪🎪🟫🟡🟫🎪🎪🎪🎪🎪🎪🟫🟫🌲🌲🌲🌲🌲🌲🌲
+18  🌲🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+19  🌲🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🔴🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🔴🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+20  🌲🟩🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🟫🔥🔥🟫🟫🟫🪵🟫🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+21  🌲🟩🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🟫🔥🔥🟫🟫🟫🪵🟫🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+22  🌲🟩🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+23  🌲🟩🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🎪🎪🎪🎪🎪🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+24  🌲🟩🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🔴🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🔴🟫🟫🟫🔴🎪🛢🛢🏺🎪🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+25  🌲🟩🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🎪🎪🎪🟫🟫🟫🚪🟡⬜🔴🎪🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+26  🌲🟩🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🎪🎪🎪🟫🟫🟫🎪🎪🎪🎪🎪🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+27  🌲🟩🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+28  🌲🟩🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+29  🌲🟩🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+30  🌲🟩🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🔥🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+31  🌲🟩🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🎪🎪🎪🟫🟫🎪🎪🎪🟫🟫🔴🟫🔴🟫🟫🎪🎪🎪🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+32  🌲🟩🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🎪🎪🎪🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🎪🎪🎪🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+33  🌲🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🎪🎪🎪🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🎪🎪🎪🟫🟫🎪🎪🎪🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+34  🌲🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+35  🌲🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+36  🌲🌲🟩🟩🟩🟩🟩🟩🟫🟫🟫🟫🟫🟫🔴🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🔴🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
 37  🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
-38  🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
+38  🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲🌲🌲🌲🌲🌲
 39  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
 40  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
 
@@ -99,10 +107,11 @@ FORZE PRESENTI:
 - 2 Commander (Fighter 10) - Tactical command
 
 EQUIPAGGIAMENTO:
-- 15 Tende (shelter)
+- 15 Tende (shelter), più la tenda del comando e la cucina
 - 1 Incinerator centrale (fuoco 24/7)
 - Stockpile armi/armor (loot se raid!)
 - Cibo 30 giorni (80 razioni)
+@north N
 @tipo tattica esterno
 ```
 
@@ -172,7 +181,7 @@ SPECIALITÀ:
 
 **Collana Semi Treant Preparation:**
 > Hella, mentre studi le rune, i semi della tua collana iniziano a **brillare luce verde**. Senti loro "parlare" telepaticamente: "Madre... oggi... nasciamo! Protezione... daremo!"
-> - **Opzione:** Hella può PIANTARE i 4 semi attorno altare (Col N-P-Q range)
+> - **Opzione:** Hella può PIANTARE i 4 semi attorno altare (Col S-U-V range)
 > - Tempo: 10 minuti piantare tutti
 > - **Effetto:** Durante rituale, semi crescono rapidamente in **4 Treant Seedlings** (Medium) che proteggono Hella!
 
@@ -181,13 +190,13 @@ SPECIALITÀ:
 - **Melee:** Slam +10 (1d8+6)
 - **Special:** Entangle 15ft radius (Ref DC 15)
 - **Durata:** Tutto rituale (poi tornano semi)
-- **Tactics:** Formano perimetro difensivo attorno Hella (Col N-Q, Riga 18-22)
+- **Tactics:** Formano perimetro difensivo attorno Hella (Col R-W, Righe 18-23)
 
 ---
 
 ### FASE 1 RITUALE: PURIFICAZIONE (15 minuti in-game, ore 08:00-08:15)
 
-**Hella Posizione:** Centro Altare Col O, Riga 20
+**Hella Posizione:** Centro Altare Col T, Riga 20
 
 **Mechaniche:**
 1. **Round 1-5 (primi 5 minuti):** Wisdom (Nature) DC 20
@@ -228,23 +237,23 @@ SPECIALITÀ:
 ONDATA 1 ARRIVAL (Round 8 Fase 1)
 
 NEMICI arrivano da:
-🔴 Hell Hound 1: Col O, Riga 35 (sud, sprint verso Hella)
-🔴 Hell Hound 2: Col T, Riga 35
-🔴 Guerr. 1-2: Col M-N, Riga 33 (flanking ovest)
-🔴 Guerr. 3-4: Col Q-R, Riga 33 (flanking est)
-🔴 Guerr. 5-6: Col O-P, Riga 32 (center push)
+🔴 Hell Hound 1: Col T, Riga 35 (sud, sprint verso Hella)
+🔴 Hell Hound 2: Col Y, Riga 35
+🔴 Guerr. 1-2: Col R-S, Riga 33 (flanking ovest)
+🔴 Guerr. 3-4: Col V-W, Riga 33 (flanking est)
+🔴 Guerr. 5-6: Col T-U, Riga 32 (center push)
 
 PG DIFENSORI:
-🔵 Borin: Col O, Riga 22 (frontline, 6m da Hella)
-🔵 PG2: Col L, Riga 20 (flank west)
-🔵 PG3: Col S, Riga 20 (flank east)
-🔵 Hella: Col O, Riga 20 (CENTRO, casting, vulnerabile!)
+🔵 Borin: Col T, Riga 22 (frontline, 3m da Hella)
+🔵 PG2: Col Q, Riga 20 (flank west)
+🔵 PG3: Col X, Riga 20 (flank east)
+🔵 Hella: Col T, Riga 20 (CENTRO, casting, vulnerabile!)
 
 SE Seedlings piantati:
-🌱 Seedling 1: Col N, Riga 19 (difende ovest)
-🌱 Seedling 2: Col P, Riga 19 (difende est)
-🌱 Seedling 3: Col N, Riga 21 (difende ovest-sud)
-🌱 Seedling 4: Col P, Riga 21 (difende est-sud)
+🌳 Seedling 1: Col S, Riga 20 (difende ovest)
+🌳 Seedling 2: Col V, Riga 20 (difende est)
+🌳 Seedling 3: Col T, Riga 19 (difende nord)
+🌳 Seedling 4: Col U, Riga 22 (difende sud)
 ```
 
 **Tattiche Drow Ondata 1:**
@@ -319,7 +328,7 @@ SE Seedlings piantati:
 - **Drow Poison:** Fort DC 18, unconscious 1d4 hours + 2d4 Str damage
 
 **Tactics:**
-- **Pre-Combat:** Invisibility + Move silenziosamente Col X, Riga 20 (nascosto albero)
+- **Pre-Combat:** Invisibility + Move silenziosamente Col AC, Riga 20 (nascosto albero)
 - **Round 1:** Study Hella (Death Attack prep, 3 rounds needed)
 - **Round 2-3:** Continue study mentre combattimento distrae PG
 - **Round 4:** **DEATH ATTACK vs Hella!**
@@ -368,7 +377,7 @@ SE Seedlings piantati:
 - **Healing:** *Cure Serious Wounds* 3d8+8 su alleati injured
 
 **Positioning:**
-- Start: Col K, Riga 25 (Cleric 1) + Col U, Riga 25 (Cleric 2)
+- Start: Col P, Riga 25 (Cleric 1) + Col Z, Riga 25 (Cleric 2)
 - Range: 120ft *Flame Strike* easily reach Hella centro
 
 ---
@@ -396,40 +405,66 @@ SE Seedlings piantati:
 
 ```
 ONDATA 2 POSITIONS (Round 22 Fase 2)
+40 colonne × 40 righe · 1,5 m/quadretto · radura Ø 60 m, centro fra T20 e U21
 
          NORD ↑
-         
-   A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 
-10 🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩💥💥💥💥💥💥💥💥🟩🟩🟩🟩🟩🟩🌲
-15 🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩💥💥🟢🟢🟢🟢🟢💥💥🟩🟩🟩🟩🟩🟩🌲
+COLONNE →  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF AG AH AI AJ AK AL AM AN
 
-18 🌲🟩🟩🟩🟩🟩🟩🟩💥🟢🟢🟢🌱🟢⭐🟢🌱🟢🟢💥🟩🟩🟩🟩🟩🌲
-                              └─┘      └─┘     └─┘      └─┘
-                           Seedl.1   Hella  Seedl.2  (Seedl.3-4 sud)
-
-20 🌲🟩🔵🟩🟩🟩🟩🟩💥🟢🟢🟢🟢🟢🔵🟢🟢🟢🟢💥🟩🟩🟩🟩🔵🌲
-      └─┘ PG2 (C20)                      └─┘ Borin (O22, moved up)      └─┘ PG3 (U20)
-
-25 🌲🟩🟩🟩🟩🟩🟩🟩💥🟢🟢🔴🟢🟢🟢🟢🟢🔴🟢💥🟩🟩🟩🟩🟩🌲
-                            └─┘ Vet1       └─┘ Vet2 (avanzano)
-
-27 🌲🟩🟩🟩🟩🟩🟩🟩💥🟢🔴🔴🟢🟢🟢🟢🟢🔴🔴💥🟩🟩🟩🟩🟩🌲
-                          └──┘ Vet3-4      └──┘ Clerics casting
-                          
-30 🌲🟩🟩🟩🟩🟩🟩🟩💥💥🟢🟢🟢🟢🟢🟢🟢💥💥🟩🟩🟩🟩🟩🟩🌲
-
-35 🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⚫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲
-                                  └─┘ ASSASSIN INVISIBLE! (O35, sneaking)
+01  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
+02  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
+03  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
+04  🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲
+05  🌲🌲🌲🌲🌲🌲🌲🟫🟫🪵🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+06  🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🪵🟫🟫🌲🌲🌲🌲🌲🌲
+07  🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲
+08  🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲
+09  🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲
+10  🌲🌲🌲🟫🪵🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲
+11  🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🟧🌿🌿🌿🌿🌿🌿🟧🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🪵🟫🟫🌲🌲
+12  🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲
+13  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲
+14  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🗿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🗿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲
+15  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🌲
+16  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🗿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🗿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🌲
+17  🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫
+18  🟫🟫🪵🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫
+19  🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌳🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🪵🟫🟫   ← alberello 3 (T19)
+20  🟫🟫🟫🟫🟫🟫🟫🔵🟧🟧🌿🗿🌿🌿🌿🌿🌿🌿🌳🔵⭐🌳🌿🌿🌿🔵🌿🌿🗿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫   ← PG2 (H20), alberello 1 (S20), Hella sull'altare (T20), alberello 2 (V20), PG3 (Z20)
+21  🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿⭐⭐🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫
+22  🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🔵🌳🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫   ← Borin (T22), alberello 4 (U22)
+23  🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫
+24  🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🗿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🗿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫
+25  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🔴🌿🌿🌿🌿🌿🔴🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🌲   ← veterani Vet1 (Q25) e Vet2 (W25), avanzano
+26  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟧🟫🟫🟫🟫🟫🪵🟫🟫🌲
+27  🌲🟫🟫🪵🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🔴🔴🌿🌿🌿🌿🌿🟡🟡🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲   ← Vet3-4 (P27-Q27), chierici in lancio (W27-X27)
+28  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲
+29  🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲
+30  🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🟧🌿🌿🌿🌿🌿🌿🟧🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲
+31  🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲
+32  🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲
+33  🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲
+34  🌲🌲🌲🌲🌲🟫🪵🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🪵🟫🌲🌲🌲🌲🌲
+35  🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫⚫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲   ← ASSASSINO INVISIBILE (T35)
+36  🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+37  🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲
+38  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🪵🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🪵🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
+39  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
+40  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
 
          SUD ↓
 
-DISTANZE:
-- Hella (O20) → Hell Hounds (O35): 22.5m (15 quadrati) - 2 rounds arrival
-- Clerics (L-R, 27) → Hella: 10.5m (7 quadrati) - FLAME STRIKE RANGE!
-- Assassin (O35) → Hella: 22.5m (15 quadrati) - 3 rounds sneak if undetected
+═══════════════════════════════════════════════════════════════════════════════════════
+LEGENDA · 🌿 zona verde protetta (raggio 15 m, +2 PF/round) · 🟧 cenere calda e fumo (raggio 15-18 m: occultamento 20%, Tempra CD 15) · 🟫 terra bruciata (1d4 fuoco residuo, terreno difficile) · 🪵 alberi bruciati abbattuti · 🗿 menhir (4,5 m) · ⭐ altare (3 × 3 m) · 🌳 alberello treant (Medio)
+═══════════════════════════════════════════════════════════════════════════════════════
 
-SCALA: Ogni quadrato = 1.5m × 1.5m
+DISTANZE:
+- Hella (T20) → Hell Hounds (T35): 22.5m (15 quadrati) - 2 rounds arrival
+- Clerics (P-X, 27) → Hella: 10.5m (7 quadrati) - FLAME STRIKE RANGE!
+- Assassin (T35) → Hella: 22.5m (15 quadrati) - 3 rounds sneak if undetected
+
+SCALA: Ogni quadrato = 1.5m × 1.5m · stessa radura e stesse coordinate della mappa del Cerchio Sacro (P1B)
+@north N
 @tipo tattica esterno
 ```
 
@@ -533,7 +568,7 @@ SCALA: Ogni quadrato = 1.5m × 1.5m
 
 **Tactics:**
 - **Objective:** KILL Hella or force rituale failure
-- **Round 1:** Charge diretta (60ft double move, arriva Col O Riga 28)
+- **Round 1:** Charge diretta (60ft double move, arriva Col T Riga 28)
 - **Round 2:** Full attack vs Hella or Borin (whoever blocks)
 - **Round 3+:** Power Attack -5/+5, Cleave chains se uccide seedling/PG
 - **If losing:** Usa potion, retreat per regroup
@@ -550,7 +585,7 @@ SCALA: Ogni quadrato = 1.5m × 1.5m
 
 **Tactics:**
 - Summonato Round 36 da Wyrmlord (scroll uso)
-- Appare Col O, Riga 30 (between Wyrmlord and Hella)
+- Appare Col T, Riga 30 (between Wyrmlord and Hella)
 - Objective: Burn path to Hella (ignora altri PG)
 
 ---
@@ -582,24 +617,24 @@ SCALA: Ogni quadrato = 1.5m × 1.5m
 FINAL ASSAULT MAP (Round 36 Fase 3)
 
 NEMICI Sud Ingresso:
-⚫ Wyrmlord: Col O, Riga 38 (Commander, preparing charge)
-🔴 Ogre 1: Col L, Riga 36 (Left flank, raging)
-🔴 Ogre 2: Col S, Riga 36 (Right flank, raging)
-🔴 Greater Fire Elem: Col O, Riga 34 (Center, flame form)
-🔴 Drow Warriors (10): Cols H-V, Righe 34-36 (spread formation)
+⚫ Wyrmlord: Col T, Riga 38 (Commander, preparing charge)
+🔴 Ogre 1: Col Q, Riga 36 (Left flank, raging)
+🔴 Ogre 2: Col X, Riga 36 (Right flank, raging)
+🔴 Greater Fire Elem: Col T, Riga 34 (Center, flame form)
+🔴 Drow Warriors (10): Cols M-AA, Righe 34-36 (spread formation)
 
 PG DEFENDERS (Exhausted, some wounded):
-🔵 Borin: Col O, Riga 24 (Frontline solo! Holding line!)
-🔵 PG2-3: Cols M + R, Riga 25 (Flanks, wounded likely)
-🔵 Hella: Col O, Riga 20 (TRANCE, defenseless AC 10!)
+🔵 Borin: Col T, Riga 24 (Frontline solo! Holding line!)
+🔵 PG2-3: Cols R + W, Riga 25 (Flanks, wounded likely)
+🔵 Hella: Col T, Riga 20 (TRANCE, defenseless AC 10!)
 
-🌱 Seedlings (if alive): Cols N-P, Righe 19-21 (some destroyed likely)
-🟢 Earth Elementals (if summoned): Cols L + S, Riga 23 (intercept)
+🌳 Seedlings (if alive): S20, V20, T19, U22 (some destroyed likely)
+🟢 Earth Elementals (if summoned): Cols Q + X, Riga 23 (intercept)
 
 DISTANZE CRITICAL:
-- Wyrmlord (O38) → Hella (O20): 27m (18 quadrati) - 3 rounds charge
-- Ogres (L-S, 36) → Seedlings (N-P, 20): 24m (16 quadrati) - 2 rounds
-- Fire Elem (O34) → Hella (O20): 21m (14 quadrati) - 2 rounds
+- Wyrmlord (T38) → Hella (T20): 27m (18 quadrati) - 3 rounds charge
+- Ogres (Q36, X36) → Seedlings (S20, V20): 24m (16 quadrati) - 2 rounds
+- Fire Elem (T34) → Hella (T20): 21m (14 quadrati) - 2 rounds
 
 SCALA: 1 quadrato = 1.5m × 1.5m
 ```
@@ -622,7 +657,7 @@ SCALA: 1 quadrato = 1.5m × 1.5m
 - **Visual:** Aegis Fang lascia scia blu energia, Borin = muro invalicabile
 
 **Se Borin usa vs Wyrmlord Round 37:**
-- Wyrmlord fermato Col O, Riga 26 (prima raggiungere Hella!)
+- Wyrmlord fermato Col T, Riga 26 (prima raggiungere Hella!)
 - Borin colpo AoO: +25 hit, 1d10+15 + 2d6 dragon bane (Wyrmlord serve draghi!)
 - Wyrmlord forced melee duello con Borin (Hella safe!)
 
@@ -663,7 +698,7 @@ SCALA: 1 quadrato = 1.5m × 1.5m
 - **Visual:** Muro luce arcobaleno distorta, realtà sembra "glitch"
 
 **Posizionamento Tattico:**
-- Mettere wall Col O, Righe 28-34 (between nemici e Hella)
+- Mettere wall Col T, Righe 28-34 (between nemici e Hella)
 - Force drow/ogres aggirare (perde 2-3 rounds movement!)
 
 ---
@@ -675,14 +710,15 @@ SCALA: 1 quadrato = 1.5m × 1.5m
 **ABILITY UNLOCK: Guardian Wall (Automatico Round 41):**
 - 4 Seedlings diventano **Young Treants** (1 round growth)
   - HP: aumenta a 80 ciascuno
-  - Size: Medium → Large (3×3 quadrati ciascuno!)
+  - Size: Medium → Large (2×2 quadrati ciascuno: 3 × 3 m)
   - AC: aumenta a 22
   - Slam: aumenta a +14 (2d6+8)
 - Formano **Perfect Square** attorno Hella:
-  - Treant 1: Col N-O, Riga 18-19 (Nord-Ovest)
-  - Treant 2: Col P-Q, Riga 18-19 (Nord-Est)
-  - Treant 3: Col N-O, Riga 21-22 (Sud-Ovest)
-  - Treant 4: Col P-Q, Riga 21-22 (Sud-Est)
+  - Treant 1: Col R-S, Righe 20-21 (Ovest, cresce dall'alberello in S20)
+  - Treant 2: Col V-W, Righe 20-21 (Est, dall'alberello in V20)
+  - Treant 3: Col T-U, Righe 18-19 (Nord, dall'alberello in T19)
+  - Treant 4: Col T-U, Righe 22-23 (Sud, dall'alberello in U22)
+  - Chiudono i quattro lati dell'altare (T20-U21): fra un treant e l'altro resta solo l'angolo
 - **Total Protection:** Nemici MUST destroy tutti 4 prima reach Hella!
 
 **Visual:**
@@ -797,57 +833,89 @@ SCALA: 1 quadrato = 1.5m × 1.5m
 
 ```
 DESPERATE LAST STAND (Round 36-40)
+40 colonne × 40 righe · 1,5 m/quadretto · radura Ø 60 m, centro fra T20 e U21
 
       NORD ↑
 
-  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+COLONNE →  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF AG AH AI AJ AK AL AM AN
 
-10 🌲🌲🟩🟩🟩🟩🟩💥💥💥💥🟢🟢🟢🟢🟢🟢🟢💥💥💥🟩🟩🟩🟩🌲
-11 🌲🌲🟩🟩🟩🟩🟩💥💥💥💥🟢🟢🟢🟢🟢🟢🟢💥💥💥🟩🟩🟩🟩🌲
-12 🌲🌲🟩🟩🟩🟩🟩💥💥💥💥🟢🟢🟢🟢🟢🟢🟢💥💥💥🟩🟩🟩🟩🌲
-13 🌲🟩🟩🟩🟩🟩💥💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥💥🟩🟩🟩🟩🌲
-14 🌲🟩🟩🟩🟩🟩💥💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥💥🟩🟩🟩🟩🌲
-15 🌲🟩🟩🟩🟩🟩💥💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥💥🟩🟩🟩🟩🌲
-16 🌲🟩🟩🟩🟩🟩💥💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥💥🟩🟩🟩🟩🌲
-17 🌲🟩🟩🟩🟩🟩💥💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥🟩🟩🟩🟩🌲
-18 🌲🟩🟩🟩🟩🟩💥💥🟢🟢🟢🟢🌳🟢🟢🟢🟢🌳🟢🟢💥🟩🟩🟩🟩🌲
-                          └─┘         └─┘ Young Treants (LARGE!)
-19 🌲🟩🟩🔵🟩💥🟢🟢🟢🟢🌳🌳✨💎✨🌳🌳🟢🟢🟢💥🟩🔵🟩🟩🌲
-      └─┘ PG2            └────┘ └─┘ └────┘ Treant Wall + Hella TRANCE!
-20 🌲🟩🟩🟩🟩💥🟢🟢🟢🟢🟢🟢✨💎✨🟢🟢🟢🟢🟢💥🟩🟩🟩🟩🌲
-                                └──┘ Glowing transformation (crescita vertical energia)
-21 🌲🟩🟩🟩🟩💥🟢🟢🟢🟢🌳🌳✨💎✨🌳🌳🟢🟢🟢💥🟩🟩🟩🟩🌲
-                          └────┘ └─┘ └────┘
-22 🌲🟩🟩🟩🟩🟩💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥🟩🟩🟩🟩🌲
-23 🌲🟩🟩🟩🟩🟩💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥🟩🟩🟩🟩🌲
-24 🌲🟩🟩🟩🔵🟩💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥🟩🔵🟩🟩🌲
-      └─┘ Borin SOLO!                           └─┘ PG3 (wounded)
-25 🌲🟩🟩🟩🟩🟩💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥🟩🟩🟩🟩🌲
-26 🌲🟩🟩🟩🟩🟩💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥🟩🟩🟩🟩🌲
-27 🌲🟩🟩🟩🟩🟩💥💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥💥🟩🟩🟩🟩🌲
-28 🌲🟩🟩🟩🟩🟩💥💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥💥🟩🟩🟩🟩🌲
-29 🌲🟩🟩🟩🟩🟩💥💥🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢💥💥🟩🟩🟩🟩🌲
-30 🌲🟩🟩🟩🟩🟩🟩💥💥💥🟢🟢🟢🔥🔥🔥🟢🟢💥💥💥🟩🟩🟩🟩🌲
-                                └────┘ Greater Fire Elemental (O30)
-31 🌲🟩🟩🟩🟩🟩🟩💥💥💥🟢🟢🟢🟢🟢🟢🟢🟢💥💥💥🟩🟩🟩🟩🌲
-32 🌲🟩🟩🟩🟩🟩🟩🟩💥💥🟢🟢🟢🟢🟢🟢🟢💥💥🟩🟩🟩🟩🟩🟩🌲
-33 🌲🟩🟩🟩🟩🟩🟩🟩💥💥🟢🟢🟢🟢🟢🟢🟢💥💥🟩🟩🟩🟩🟩🟩🌲
-34 🌲🟩🟩🟩🟩🟩🟩🟩🟩💥🔴🔴🔴🔴🔴🔴🔴💥🟩🟩🟩🟩🟩🟩🟩🌲
-                        └──────────────┘ 10 Drow Warriors advancing
-35 🌲🟩🟩🟩🟩🟩🟩🟩🟩💥🟢🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲
-36 🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🔴🟩🟩🟩🟩🟩🟩🟩🌲
-                      └─┘ Ogre 1           └─┘ Ogre 2 (flanks)
-37 🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲
-38 🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⚫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲
-                              └─┘ WYRMLORD (preparing charge Round 37!)
+01  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
+02  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
+03  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
+04  🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲
+05  🌲🌲🌲🌲🌲🌲🌲🟫🟫🪵🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲
+06  🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🪵🟫🟫🌲🌲🌲🌲🌲🌲
+07  🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲
+08  🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲
+09  🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲
+10  🌲🌲🌲🟫🪵🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲
+11  🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🟧🌿🌿🌿🌿🌿🌿🟧🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🪵🟫🟫🌲🌲
+12  🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲
+13  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲
+14  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🗿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🗿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲
+15  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🌲
+16  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🗿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🗿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🌲
+17  🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫
+18  🟫🟫🪵🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫   ← al round 41 qui cresce il treant nord (T18-U19)
+19  🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌳🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🪵🟫🟫   ← alberello 3 (T19)
+20  🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🗿🌿🌿🌿🌿🌿🌿🌳🔵✨🌳🌿🌿🌿🌿🌿🌿🗿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫   ← alberello 1 (S20), Hella in trance sull'altare T20, alberello 2 (V20)
+21  🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿✨✨🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫
+22  🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌳🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫   ← alberello 4 (U22)
+23  🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫
+24  🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🗿🌿🌿🌿🌿🌿🌿🔵🌿🌿🌿🌿🌿🌿🌿🗿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫   ← Borin SOLO! (T24)
+25  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🔵🌿🌿🌿🌿🔵🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🌲   ← PG2 (R25) e PG3 (W25)
+26  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟧🟫🟫🟫🟫🟫🪵🟫🟫🌲
+27  🌲🟫🟫🪵🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲
+28  🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲
+29  🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲
+30  🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🟧🌿🌿🌿🌿🌿🌿🟧🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲
+31  🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲
+32  🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟧🟧🟧🟧🟧🟧🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲
+33  🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲
+34  🌲🌲🌲🌲🌲🟫🪵🟫🟫🟫🟫🟫🔴🟫🔴🟫🔴🟫🟫🟣🟣🟫🔴🟫🔴🟫🔴🟫🟫🟫🟫🟫🟫🪵🟫🌲🌲🌲🌲🌲   ← elementale del fuoco superiore T34-U35 (Grande); 10 guerrieri drow M-AA, righe 34-36
+35  🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟣🟣🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲
+36  🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🔴🟫🔴🟫🔴🔴🟫🟫🟫🔴🟫🔴🔴🟫🔴🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲   ← ogre 1 Q36-R37 e ogre 2 X36-Y37 (Grandi)
+37  🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🔴🔴🟫🟫🟫🟫🟫🔴🔴🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲
+38  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🪵🟫🟫🟫🟫⚫🟫🟫🟫🟫🟫🟫🪵🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲   ← WYRMLORD (T38), carica al round 37
+39  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
+40  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🟫🟫🟫🟫🟫🟫🟫🟫🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
 
       SUD ↓
 
+═══════════════════════════════════════════════════════════════════════════════════════
+LEGENDA · 🌿 zona verde protetta (raggio 15 m, +2 PF/round) · 🟧 cenere calda e fumo (raggio 15-18 m: occultamento 20%, Tempra CD 15) · 🟫 terra bruciata (1d4 fuoco residuo, terreno difficile) · 🪵 alberi bruciati abbattuti · 🗿 menhir (4,5 m) · ⭐ altare (3 × 3 m) · 🌳 alberello treant (Medio; al round 41 diventa un treant giovane, Grande, 2 × 2) · ✨ trasformazione in corso · 🟣 elementale del fuoco
+═══════════════════════════════════════════════════════════════════════════════════════
+
 SCALA GRID: 1 quadrato = 1,5 m × 1,5 m
-DIMENSIONI TOTALI MAPPA: 26 colonne (A-Z) × 29 righe (10-38) = 39 m × 43,5 m
+DIMENSIONI TOTALI MAPPA: 40 colonne × 40 righe = 60 m × 60 m, la stessa radura del Cerchio Sacro
+@north N
 @tipo tattica esterno
+@luogo Witchwood, Cerchio Sacro della Foresta
+@quota 300 m ; s.l.m., fondovalle della Witchwood [INFERRED — needs DM confirmation]
+@dislivello 0 m ; la radura è in piano con il bosco intorno
+@deroga m1/copertura ; radura del rituale bruciata dai drow: i ripari sono i sei menhir e i quattro alberelli, e difendere un altare scoperto è la scena
+@deroga m2/vuoto ; l'anello di cenere è campo aperto per costruzione: i drow lo attraversano sotto il tiro dei PG, ed è voluto
+@deroga m4/esposizione ; radura tonda di 60 m senza muri: da quasi ogni punto si vede l'altare, che è ciò che i nemici cercano
+@taglia T34 ; Grande
+@taglia Q36 ; Grande
+@taglia X36 ; Grande
 ```
 
+> 🌿 **Le tre mappe del Cerchio con le stesse misure, dal 2026-10-21.** Il Cerchio
+> Sacro (P1B), l'Ondata 2 e quest'ultima mappa disegnano la stessa radura tonda di
+> **60 m di diametro** (40 × 40 quadretti), con l'altare in T20-U21, la zona verde
+> di 15 m di raggio e l'anello di cenere fino a 18 m. Prima la radura era un ovale di
+> 35 × 48 m fuori centro in una mappa e 15 × 30 m nelle altre due, la foresta era
+> disegnata come muratura e la radura come gettoni di creature. Per centrarla
+> **tutte le colonne del Cerchio sono slittate di cinque lettere** (O → T, L → Q,
+> S → X …); le righe sono rimaste le stesse, e con loro tutte le distanze del
+> testo. I treant giovani sono Grandi e occupano 2 × 2 quadretti; il treant
+> corrotto, Enorme, ne occupa 3 × 3. In questa mappa, che è il round 36-40, i
+> quattro sono ancora alberelli Medi in S20, V20, T19 e U22, come nell'Ondata 2:
+> diventano il muro vivente solo al round 41 (R20-S21, V20-W21, T18-U19, T22-U23),
+> e fino ad allora i nemici arrivano all'altare passando fra loro.
+>
+> <!-- storico -->
 > ⚠️ **Griglia ridisegnata il 2026-09-04** (ADR-0043 §4). L'intestazione
 > dichiarava *«40 colonne × 40 righe = 60m × 60m»* e la griglia disegnata era
 > **sparsa e irregolare**: 14 righe campione invece di 29 contigue, e larghezze
@@ -858,6 +926,7 @@ DIMENSIONI TOTALI MAPPA: 26 colonne (A-Z) × 29 righe (10-38) = 39 m × 43,5 m
 > colonna dalle righe disegnate sopra e sotto — nessun segnalino di creatura è
 > stato inventato, perché dove stavano le creature lo dice la sequenza
 > round-by-round qui sotto e non la mappa.
+> <!-- /storico -->
 
 ---
 
@@ -865,15 +934,15 @@ DIMENSIONI TOTALI MAPPA: 26 colonne (A-Z) × 29 righe (10-38) = 39 m × 43,5 m
 
 **ROUND 36:**
 - **Wyrmlord:** Move 30ft + Intimidate roar (Fear aura)
-  - Arriva Col O, Riga 35
+  - Arriva Col T, Riga 35
   - Fear DC 18: PG shaken se falliscono
-- **Ogres:** RAGE + Charge 60ft → Arrivano Col L + S, Riga 26
+- **Ogres:** RAGE + Charge 60ft → Arrivano Col Q + X, Riga 26
   - Next round: Smash treants!
-- **Fire Elemental:** Move 30ft → Col O, Riga 31
+- **Fire Elemental:** Move 30ft → Col T, Riga 31
 - **Drow Warriors:** Advance spread → Righe 30-32
 
 **ROUND 37 - CRITICAL:**
-- **Wyrmlord:** CHARGE Hella! (60ft, arriva Col O, Riga 26 se non intercettato!)
+- **Wyrmlord:** CHARGE Hella! (60ft, arriva Col T, Riga 26 se non intercettato!)
   - **Aegis Fang Intercept:** Borin può bloccare (vedi sopra)
   - Se non bloccato: Full attack vs Hella AC 10! (+20/+15/+10, quasi auto-hit!)
 - **Ogres:** Full Attack vs Treants NW/NE

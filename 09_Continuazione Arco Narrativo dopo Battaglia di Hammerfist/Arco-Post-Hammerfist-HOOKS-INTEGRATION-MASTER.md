@@ -153,7 +153,7 @@ Giorno 42  Assedio, Riti & Avatar, Mythal & finale (Phase 1-4).
 > **Collana dei Semi Eterni a 3 slot-dono vuoti**. Questi slot diventano
 > **3 quest personali opzionali** in ARC-09 — *un atto di sacrificio per
 > slot* — che riusano poteri già canonici (vedi sinergie future F1-F4,
-> `[PROPOSTA]`, in `PG/Artefatti/SINERGIE-ARTEFATTI-MASTER.md`). Innesti
+> canone dal 2026-09-25, in `PG/Artefatti/SINERGIE-ARTEFATTI-MASTER.md`). Innesti
 > naturali: il **rito druidico di Saraah** (Giorno 25) e il **Cerchio del
 > Sacred Forest** (P1). Se il rituale non è stato giocato o i doni sono stati
 > concessi, questo hook **non esiste** (Collana già completa). Fonte:
@@ -342,5 +342,5 @@ Sintesi rapida per i 4 PG:
 - **Torre Invisibile (P2A) arc:** `Arco-Post-Hammerfist-P2A-Torre-PARTE*.md`
 - **Ghostlord arc files:** `Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-TESTO.md`
 - **Ramo del rifiuto P3B (echi del rituale Hella → slot-dono Collana):** `07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` §2-BIS
-- **Sinergie future Collana (F1-F4, `[PROPOSTA]`):** `PG/Artefatti/SINERGIE-ARTEFATTI-MASTER.md`
+- **Sinergie future Collana (F1-F4, canone dal 2026-09-25):** `PG/Artefatti/SINERGIE-ARTEFATTI-MASTER.md`
 - **Stato campagna:** `campaign/state.md`

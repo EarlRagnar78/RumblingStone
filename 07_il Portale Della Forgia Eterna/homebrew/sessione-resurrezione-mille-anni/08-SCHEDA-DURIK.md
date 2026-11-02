@@ -81,7 +81,8 @@ contro un nemico grosso, non regge.
 Collana. Con una carica dell'**Evocazione dei Guardiani** lo richiami subito,
 per un'ora. All'alba è di nuovo intero, e resta. Se l'Evocazione è spenta,
 perché hai chiamato i due Treant insieme, non puoi richiamarlo subito: torna
-all'alba.
+all'alba. I due Treant chiamati insieme all'alba della battaglia sono
+l'eccezione: l'Evocazione non si spegne, e la carica che resta richiama Durik.
 
 ---
 

@@ -2740,16 +2740,18 @@ antenato di Othrek (Hammerfist 1372).
 gs: 13
 tipo: Medium humanoid (dwarf), Chierico 9 di Abbathor / Runecaster 4, NE
 ca: 24
-ca-dettaglio: contatto 12, colto 22 (mithral +2, anello +2, DES +2)
-pf: 96
+ca-dettaglio: contatto 14, colto 22 (armatura completa di mithral +2, anello di protezione +2, DES +2)
+pf: 101
+pf-dado: 13d8+39
 ts: Temp +13, Rifl +8, Vol +17
 attributi: For 12 Des 14 Cos 16 Int 16 Sag 20 Car 14
 velocita: 6 m
 iniziativa: +2
 sensi: scurovisione 18 m; Ascoltare +5, Osservare +5
 attacchi:
-  - Mischia martello da guerra runico +1 +10/+5 (1d8+2)
+  - Mischia martello da guerra runico +1 +11/+6 (1d8+2)
 voci:
+  - Talenti: Incidere Rune, Volontà di Ferro, Riflessi Fulminei, Incantare in Combattimento, Scrivere Pergamene
   - Abilità: Percepire Intenzioni +13, Concentrazione +19, Sapienza Magica +19, Conoscenze (storia) +19, Artigianato (incidere rune) +19
 ```
 <!-- /include -->

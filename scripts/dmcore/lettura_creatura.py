@@ -291,7 +291,7 @@ def dalla_scheda(testo: str) -> "tuple[dict, str] | None":
     scheda porta **una** sestina: due (una variante, un'ira) sono una scelta.
     """
     fuori = BLOCCO.sub("", testo)
-    fuori = "\n".join(r for r in fuori.splitlines() if not r.startswith("> [INFERRED"))
+    fuori = "\n".join(r for r in fuori.splitlines() if not r.startswith(("> [INFERRED", "> [GENERATO")))
     trovate = {tuple(_punteggio(v) for v in m) for m in SESTINA.findall(fuori)}
     if len(trovate) != 1:
         return None
@@ -355,12 +355,12 @@ def senza_note(testo: str) -> str:
 
 
 #: La riga che marca un blocco **scritto da `genera_attributi`**. E' specifica: un
-#: `[INFERRED` generico gia' presente nel file non basta, perche' parla
+#: `[INFERRED` o `[GENERATO` generico gia' presente nel file non basta, perche' parla
 #: d'altro, e `--check` e `--rigenera` devono ritrovare esattamente i blocchi
 #: suoi. La coda dice **da dove** vengono i numeri, file per file.
-MARCA = "> [INFERRED — needs DM confirmation] `attributi` "
+MARCA = "> [GENERATO] `attributi` "
 CODA_FONTE = ("trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da "
-              "`scripts/genera_attributi.py`. Confermali o correggili.")
+              "`scripts/genera_attributi.py`.")
 CODA_SCHEDA = ("copiati dalla riga delle caratteristiche di questa stessa scheda "
                "da `scripts/genera_attributi.py`.")
 CODA_ARRAY = ("generati da `scripts/genera_attributi.py`: array del Manuale del DM "

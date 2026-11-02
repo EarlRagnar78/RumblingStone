@@ -1,0 +1,188 @@
+{
+ "campione_ref": "",
+ "dopo": "",
+ "seme": 20261025,
+ "coppie": [
+  {
+   "n": 1,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/cieco/testi-v-n.md",
+   "titolo": "Box B01",
+   "nuova": "A",
+   "somiglianza": 0.949,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 2,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/cieco/testi-v-n.md",
+   "titolo": "Box B02",
+   "nuova": "B",
+   "somiglianza": 0.957,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 3,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/cieco/testi-v-n.md",
+   "titolo": "Box B03",
+   "nuova": "A",
+   "somiglianza": 0.963,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 4,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/cieco/testi-v-n.md",
+   "titolo": "Box B04",
+   "nuova": "B",
+   "somiglianza": 0.997,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 5,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/cieco/testi-v-n.md",
+   "titolo": "Box B05",
+   "nuova": "B",
+   "somiglianza": 0.994,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 6,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/cieco/testi-v-n.md",
+   "titolo": "Box B06",
+   "nuova": "A",
+   "somiglianza": 0.984,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 7,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/cieco/testi-v-n.md",
+   "titolo": "Box B07",
+   "nuova": "B",
+   "somiglianza": 1.0,
+   "stato": "identica",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 8,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/cieco/testi-v-n.md",
+   "titolo": "Box B08",
+   "nuova": "A",
+   "somiglianza": 0.979,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 9,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/cieco/testi-v-n.md",
+   "titolo": "Box B09",
+   "nuova": "A",
+   "somiglianza": 0.813,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 10,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/cieco/testi-v-n.md",
+   "titolo": "Box B10",
+   "nuova": "B",
+   "somiglianza": 0.793,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 11,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/cieco/testi-v-n.md",
+   "titolo": "Box B11",
+   "nuova": "A",
+   "somiglianza": 0.9,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 12,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/cieco/testi-v-n.md",
+   "titolo": "Box B12",
+   "nuova": "A",
+   "somiglianza": 0.958,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 13,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/cieco/testi-v-n.md",
+   "titolo": "Box B13",
+   "nuova": "A",
+   "somiglianza": 0.938,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 14,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/cieco/testi-v-n.md",
+   "titolo": "Box B14",
+   "nuova": "B",
+   "somiglianza": 0.839,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 15,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/cieco/testi-v-n.md",
+   "titolo": "Box B15",
+   "nuova": "B",
+   "somiglianza": 1.0,
+   "stato": "identica",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 16,
+   "file": "plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/cieco/testi-v-n.md",
+   "titolo": "Box B16",
+   "nuova": "B",
+   "somiglianza": 0.799,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  }
+ ],
+ "confronto": {
+  "vecchia": "V",
+  "nuova": "N",
+  "nota": "«nuova» nella chiave = la seconda versione del confronto"
+ }
+}

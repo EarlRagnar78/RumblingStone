@@ -109,8 +109,8 @@ PARTI_DEL_CORPO = (r"man[oi]|braccia?|test[ae]|occhi?|respiro|cuore|petto|schien
 CALCHI_SEMPRE: list[tuple[str, str]] = [
     (rf"\brealizz(?:o|i|a|iamo|ate|ano|ato|ata)\s+(?:subito\s+|che\b)",
      "«realizzi che» → capisci / ti rendi conto (realizzare = portare a compimento)"),
-    (r"\bassum(?:o|i|e|iamo|ete|ono)\s+che\b",
-     "«assumi che» → dai per scontato / immagini (to assume ≠ assumere)"),
+    # «assumi che» tolto il 2026-10-22 (lotto 7e di AVVENTURE-COMMUNITY): zero
+    # scatti in tutto il repo dal giorno in cui la regola esiste.
     (r"\b(?:la\s+sensazione|un\s+senso|il\s+senso)\s+di\s+\w+",
      "nominalizzazione all'inglese: l'italiano verbalizza («cadi», non «la sensazione di cadere»)"),
     (r"\beventualmente\b",
@@ -145,6 +145,36 @@ MAIUSCOLE = re.compile(r"\b[A-ZÀÈÉÌÒÙ]{3,}\b")
 # fra spazi, e resta contato — anche fra numeri («Chiuso 2026-09-03 — 157
 # su 157»), motivo per cui l'esclusione chiede la enne E l'assenza di spazi.
 TRATTINO = re.compile(r"—|(?<![0-9])–|–(?![0-9])")
+
+# «Sembra» e «pare» nel read-aloud (read-aloud-adulti.md §1 punto 7, D13 e D17
+# di AGENT-SKILLS-ESTERNE). Stavano in `voto_scrittura.py`, il banco di L11,
+# che dal lotto 7e di AVVENTURE-COMMUNITY li riusa da qui: la regex serve a MQM
+# (`box_sembra_pare`) e a `ciclo_prosa segnala`, e vive qui con gli altri
+# rilevatori di prosa. «Come se» resta fuori: è un paragone.
+# ⚠️ Il 2026-10-02 mancavano il participio e il passato remoto («ti è
+# sembrato», «parve»); lo stesso giorno «appare» è uscito perché nei file di
+# gioco vuol dire «diventa visibile».
+SEMBRA = re.compile(r"\b(sembr(?:a|ano|ava|avano|are|ato|ata|ati|ate|ò|arono)|"
+                    r"pa(?:re|iono|reva|revano|rso|rsa|rsi|rse|rve|rvero))\b", re.I)
+# D17 (2026-10-03): il «sembra» smentito entro la frase dopo è lecito («Quella
+# che sembrava una parete — è una palpebra»). Un «è» da solo non basta.
+SMENTITA = re.compile(r"\b(?:invece|non lo (?:è|era|sono|erano)|"
+                      r"si rivel(?:a|ano|ava|avano|ò|arono))\b|\s[—–-]\s*(?:è|era)\b", re.I)
+_FINE_FRASE = re.compile(r"[.!?…]+")
+
+
+def sembra_esitanti(corpo: str) -> "list[re.Match]":
+    """I «sembra» e «pare» di un box che la norma vieta: tutti, tranne quelli
+    smentiti entro la frase dopo (D17)."""
+    fuori = []
+    for m in SEMBRA.finditer(corpo):
+        dopo = corpo[m.end():]
+        fini = list(_FINE_FRASE.finditer(dopo))
+        limite = fini[1].end() if len(fini) > 1 else len(dopo)
+        if not SMENTITA.search(dopo[:limite]):
+            fuori.append(m)
+    return fuori
+
 # Sigle e acronimi del repo: maiuscoli per necessità, non per enfasi.
 SIGLE = {
     "CD", "GS", "PG", "PGS", "DM", "PNG", "SRD", "OGL", "XP", "PX", "TS", "CA", "BAB",
@@ -914,6 +944,10 @@ NORME = (
     "maiuscole_di_enfasi",
     "trattino_come_respiro",
     "caratteristica_minuscola",
+    # Indicatore senza peso dal <data della decisione del DM>: nella calibrazione
+    # sui 38 voti ciechi i possessivi sono piu' alti nel VINCITORE 11 volte e nel
+    # perdente 3 (p 0,057). Si stampa, e MQM non lo pesa.
+    "possessivo_parte_del_corpo",
 )
 
 
@@ -949,9 +983,10 @@ def rilievi(f: Path) -> "list[tuple[str, str]]":
     if not readaloud.strip():
         return fuori
 
-    for pattern, perche in CALCHI_READ_ALOUD:
+    for i, (pattern, perche) in enumerate(CALCHI_READ_ALOUD):
+        chiave = "possessivo_parte_del_corpo" if i == 0 else "calco_dall_inglese"
         for m in re.finditer(pattern, readaloud, re.I):
-            fuori.append(("calco_dall_inglese",
+            fuori.append((chiave,
                           f"{rel}: read-aloud — {perche}  «…{m.group(0)}…»"))
 
     n_ant = len(ANTITESI.findall(readaloud))

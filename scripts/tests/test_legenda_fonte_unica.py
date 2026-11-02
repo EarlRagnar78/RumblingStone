@@ -178,8 +178,9 @@ class TestLaFonteEUnaSola(unittest.TestCase):
                              .read_text(encoding="utf-8"))["symbols"][s].get("function")]
         # +20 il 2026-10-08: il corredo di V2-bis di COLLAUDO-MAPPE (D8), ogni
         # simbolo nuovo con la sua funzione dal primo giorno; +2 la sera, 🔺 e 🔷
-        # di RESA-ASSET R2 (ADR-0085)
-        self.assertEqual(len(con), 79)
+        # di RESA-ASSET R2 (ADR-0085); +1 il 2026-10-21, 🎪 il telo di tenda
+        # (mappe del campo di ARC-07), con la funzione di ⛺
+        self.assertEqual(len(con), 80)
         unita = [s for s, v in legenda.simboli().items() if v["mode"] == "unit"]
         self.assertEqual(len(unita), 6)
         for u in unita:
@@ -294,6 +295,9 @@ class TestLaMigrazioneNonHaCambiatoNiente(unittest.TestCase):
     # E di nuovo la sera dello stesso giorno (RESA-ASSET R2, ADR-0085): 🔷, il
     # cristallo gigante, blocca la vista ed e' quindi un muro anche in Foundry.
     NUOVI_R2 = {"muri": {"🔷"}}
+    # E il 2026-10-21 (mappe del campo di ARC-07): 🎪, il telo di tenda come
+    # riempimento, e' un muro come ⛺, con un pattern pesante suo.
+    NUOVI_TELO = {"muri": {"🎪"}, "pesanti": {"t_telo"}}
     NUOVI_V2BIS = {
         "muri": {"🗄", "📚"},
         "porte": {"🔒", "❔", "🥅"},
@@ -301,10 +305,11 @@ class TestLaMigrazioneNonHaCambiatoNiente(unittest.TestCase):
         "piatti": {"🔒", "❔", "🔻", "🪟"},
     }
     CONGELATI = {
-        "muri": {"🏰", "⬛", "⛺", "⛰", "🟪", "🗼", "🏛", "🗿", "📦"} | {"🗄", "📚"} | {"🔷"},
+        "muri": {"🏰", "⬛", "⛺", "⛰", "🟪", "🗼", "🏛", "🗿", "📦"} | {"🗄", "📚"} | {"🔷"}
+                | {"🎪"},
         "porte": {"🚪"} | {"🔒", "❔", "🥅"},
         "pericoli": {"🔥", "💥", "💀", "🕳", "⚡", "❄", "🕸", "🌋", "🟧", "🟥"} | {"🫧"},
-        "pesanti": {"t_wall", "t_struct", "t_pillar", "t_mountain"},
+        "pesanti": {"t_wall", "t_struct", "t_pillar", "t_mountain"} | {"t_telo"},
         "piatti": {"🚪", "⬇", "🎯", "⭐", "✨", "⚔", "🖼"} | {"🔒", "❔", "🔻", "🪟"},
     }
 
@@ -325,8 +330,8 @@ class TestLaMigrazioneNonHaCambiatoNiente(unittest.TestCase):
         """
         self.assertEqual(set(legenda.piatti()), self.CONGELATI["piatti"])
         # 31 + 14 del corredo di V2-bis (2026-10-08) + 2 di RESA-ASSET R2 (🔺 1,5 m,
-        # 🔷 3 m), tutte sul modulo di griglia
-        self.assertEqual(len(legenda.altezze()), 47)
+        # 🔷 3 m) + 🎪 il telo di tenda (2026-10-21, 3 m), tutte sul modulo di griglia
+        self.assertEqual(len(legenda.altezze()), 48)
         self.assertEqual(len(legenda.texture()), 15)
         self.assertEqual(legenda.altezze()["🗼"], 9.0, "la torre: 6 quadretti")
         self.assertLess(legenda.altezze()["🕳"], 0, "la voragine resta uno scavo")
@@ -357,12 +362,13 @@ class TestLaMigrazioneNonHaCambiatoNiente(unittest.TestCase):
         self.assertLess(a["🧱"], a["🏰"], "il muretto e' piu' basso del muro")
         self.assertLess(a["🏰"], a["🗼"], "e la torre svetta su tutto")
 
-    def test_gli_86_simboli_ci_sono_tutti(self):
+    def test_gli_87_simboli_ci_sono_tutti(self):
         """62 era il numero della spec di luglio; 🔳 e' entrato con ADR-0042, 🌫
         con RIPRESA-PR 4j-4 (2026-09-24, dal ramo della PR #42); i 20 del
         corredo di V2-bis il 2026-10-08 (COLLAUDO-MAPPE, D8); 86 la sera, con 🔺 e
-        🔷 di RESA-ASSET R2 (ADR-0085)."""
-        self.assertEqual(len(legenda.simboli()), 86)
+        🔷 di RESA-ASSET R2 (ADR-0085); 87 il 2026-10-21 con 🎪, il telo di
+        tenda delle mappe del campo di ARC-07."""
+        self.assertEqual(len(legenda.simboli()), 87)
 
     def test_i_consumatori_vedono_gli_stessi_valori(self):
         import export_uvtt as eu
@@ -458,6 +464,6 @@ class TestIlCorredoDiV2bis(unittest.TestCase):
         # 🔎 Trovato scrivendo questo test: t_dais (🔳, ADR-0042) non ha posto in
         # Z_ORDER e si dipinge per ultimo, dopo i muri. Oggi non c'e' nessuna cella
         # 🔳 nel repo, quindi nessun effetto; il controllo vale per i pattern nuovi.
-        for pat in ("t_cave", "t_shallow", "t_sewer"):
+        for pat in ("t_cave", "t_shallow", "t_sewer", "t_telo"):
             self.assertIn(pat, rms.Z_ORDER, f"{pat}: pattern senza ordine di pittura")
 

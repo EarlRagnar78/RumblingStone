@@ -10,7 +10,7 @@
 > nell'arco** (`09_.../Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-*`,
 > STATBLOCCHI/TESTO/MAPPE, master d'arco): qui si dà **identità e agganci**
 > ai nomi, si **cross-linka** lo statblock esistente, senza duplicare numeri.
-> **`[INFERRED — needs DM confirmation]`** dove non attestato; ruoli AP =
+> **Confermato dal DM il 2026-10-18** dove non attestato; ruoli AP =
 > `[Private — Red Hand of Doom]`. Gate: prima di giocare **P3-Starsong**
 > (state.md §0, Day 30-35). Regola D13: esiti aperti.
 
@@ -19,14 +19,14 @@
 ## 1. Sellyria Starsinger — la Voce del Cerchio Tiri Kitor
 
 **Role**: ally (leader/druidessa-cantrice della tribù)
-**Status**: viva, Starsong Hill — compare nel TESTO d'arco (§93) `[INFERRED — needs DM confirmation]`
+**Status**: viva, Starsong Hill — compare nel TESTO d'arco (§93)
 **Location**: Starsong Hill (Tiri Kitor), fra le paludi di Rhest
 **Motivation**: proteggere la tribù (~500 anime) e i luoghi sacri; **decide se e quanto** la sua gente marci con Rethmar.
-**CR**: `[INFERRED]` (leader; per lo scontro/alleanza usa gli statblock d'arco) | **Race/Class**: elfa (druida/bardo) `[Private — RHoD]`
+**CR**: nessuno, non combatte `[CANONE — DM 2026-10-18]` (se si arriva allo scontro con la tribù, si usano Killiar e i cacciatori Tiri Kitor degli statblocchi d'arco) | **Race/Class**: elfa (druida/bardo) `[Private — RHoD]`
 **Key stats**: puntatore → statblock d'arco in `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-STATBLOCCHI.md`.
 **Esiti possibili**:
 - È **il perno del P3-Starsong**: se i PG la convincono, invia **1/5 della tribù come forza da guerra** (+120: 100 ranger + 20 gufi giganti, difensori §2.4). Se falliscono, i Tiri Kitor restano a difendere solo i propri boschi.
-- La sua fiducia si guadagna aiutando la tribù (la Quest della Creatura, STATBLOCCHI §4) — non con la retorica.
+- La sua fiducia si guadagna aiutando la tribù (la Quest della Creatura: la piroidra a 12 teste, STATBLOCCHI §4) — non con la retorica.
 **Notes**: aggancio: alleanza elfi (§2.4), gancio di Hella (druidessa, `[HOOKS ↔ HELLA]`), quest d'arco. Cantatrice → possibile eco tematica con **Trellara** (§4).
 
 Boost log: (vuoto)
@@ -36,7 +36,7 @@ Boost log: (vuoto)
 ## 2. Killiar Arrowswift — l'Arciere Esploratore
 
 **Role**: ally (scout/guerriero Tiri Kitor)
-**Status**: vivo, Starsong Hill `[INFERRED — needs DM confirmation]`
+**Status**: vivo, Starsong Hill
 **Location**: pattuglie ai margini delle paludi di Rhest
 **Motivation**: difendere i confini della tribù; è la lama dove Sellyria è la voce.
 **CR**: **11-12** (statblock esistente) | **Race/Class**: elfo ranger/guerriero
@@ -53,10 +53,10 @@ Boost log: (vuoto)
 ## 3. Illian Snowmantle — l'Anziano Scettico
 
 **Role**: neutral (voce del dissenso nel cerchio)
-**Status**: vivo, Starsong Hill `[INFERRED — needs DM confirmation]`
+**Status**: vivo, Starsong Hill
 **Location**: Starsong Hill
 **Motivation**: tenere i Tiri Kitor **fuori** dalla guerra dei "corti" (umani/nani): ha già visto la tribù pagare per alleanze altrui.
-**CR**: `[INFERRED]` | **Race/Class**: elfo anziano (druido/consigliere) `[Private — RHoD]`
+**CR**: nessuno, non combatte `[CANONE — DM 2026-10-18]` | **Race/Class**: elfo anziano (druido/consigliere) `[Private — RHoD]`
 **Key stats**: non combattente di linea; il suo peso è politico dentro il cerchio.
 **Esiti possibili**:
 - È **l'ostacolo interno** all'alleanza: la scena con Sellyria non è un sì automatico: Illian argomenta il no. I PG devono rispondergli (con fatti, non promesse) o conquistarne il rispetto tramite la Quest della tribù.
@@ -69,16 +69,16 @@ Boost log: (vuoto)
 
 ## 4. Trellara Nightshadow — la Barda in Lutto
 
-**Role**: ally (memoria e morale della tribù) `[INFERRED — needs DM confirmation]`
-**Status**: viva, Starsong Hill — porta un lutto recente (le perdite dei Tiri Kitor contro le avanguardie della Mano Rossa) `[INFERRED]`
+**Role**: ally (memoria e morale della tribù; DM 2026-10-18)
+**Status**: viva, Starsong Hill — porta un lutto recente (le perdite dei Tiri Kitor contro le avanguardie della Mano Rossa)
 **Location**: Starsong Hill
 **Motivation**: dare un nome e un canto ai caduti della tribù prima che la guerra li cancelli.
-**CR**: `[INFERRED]` | **Race/Class**: elfa barda `[Private — RHoD / adattamento]`
+**CR**: nessuno, non combatte `[CANONE — DM 2026-10-18]` | **Race/Class**: elfa barda `[Private — RHoD / adattamento]`
 **Key stats**: incantatrice/bardo di supporto; la sua arma è il canto che tiene su il morale.
 **Esiti possibili**:
 - **Specchio elfico di Lirien** (`png/Lirien/`, §2.2 Tempestas): due musici, due lutti — se i fili si toccano (Rethmar), scena tematica potente.
 - Se i PG onorano i caduti Tiri Kitor (con lei) → bonus di morale/accoglienza al cerchio; se sbrigativi → Illian (§3) ha una freccia in più al suo arco.
-**Notes**: figura più `[INFERRED]` del gruppo (poche tracce AP) — canonizzare il ruolo esatto col DM prima del gioco. Aggancio: Sellyria (canto), Lirien/Tempestas (musici in lutto), morale del cerchio.
+**Notes**: figura meno attestata del gruppo (poche tracce AP): il ruolo scritto qui è canone del DM dal 2026-10-18. Aggancio: Sellyria (canto), Lirien/Tempestas (musici in lutto), morale del cerchio.
 
 Boost log: (vuoto)
 
@@ -87,10 +87,10 @@ Boost log: (vuoto)
 ## 5. Vecchio Warklegnaw — il Gigante del Witchwood
 
 **Role**: ally (potenziale) / wildcard del bosco
-**Status**: vivo, nel profondo del Witchwood `[INFERRED — needs DM confirmation]`
+**Status**: vivo, nel profondo del Witchwood
 **Location**: Witchwood (il bosco tra il Guado e le colline)
 **Motivation**: farsi lasciare in pace; odia la Mano Rossa che gli brucia il bosco più di quanto diffidi dei "piccoli".
-**CR**: ~10-12 (gigante) `[INFERRED]` | **Race/Class**: gigante delle foreste — statblock: `[Private — RHoD]` o base MM 3.5 (Forest Giant/Hill Giant advanced) via `skills/npc-villain-boosting/`
+**CR**: 12 (gigante) | **Race/Class**: gigante delle foreste — statblock: `[Private — RHoD]` o base MM 3.5 (Forest Giant/Hill Giant advanced) via `skills/npc-villain-boosting/`
 **Key stats**: bruto da mischia con conoscenza del terreno; se alleato, un'unità pesante.
 **Esiti possibili**:
 - **Alleato del bosco**: se i PG lo convincono (o gli fanno un favore — scacciare i taglialegna hobgoblin), diventa una forza d'urto per un'imboscata nel Witchwood o un rinforzo a sorpresa.

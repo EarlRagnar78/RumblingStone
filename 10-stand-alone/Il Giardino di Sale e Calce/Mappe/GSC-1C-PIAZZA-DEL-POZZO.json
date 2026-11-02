@@ -1,0 +1,391 @@
+{
+  "schema_version": "1.0",
+  "title": "GS-1c — Il Mercato del Ponte e il pozzo grande (ingresso C)",
+  "scale_m_per_square": 1.5,
+  "map_size": [
+    30,
+    22
+  ],
+  "base_terrain": "⬜",
+  "north": "N",
+  "tipo": "tattica",
+  "ambiente": "abitato",
+  "luogo": "Rethmar, il foro alla testa del ponte (n. 8 e 13 della pianta)",
+  "quota": "21 m ; sopra il pavimento della Grande Cisterna, che è la quota 0 del modulo",
+  "dislivello": "-3 m ; la piazza è in piano, la via della porta del ponte scende di 3 m verso il fiume",
+  "regions": [
+    {
+      "terrain": "⬛",
+      "rect": [
+        0,
+        0,
+        30,
+        3
+      ],
+      "label": "Case e botteghe sul lato nord, verso la porta del ponte"
+    },
+    {
+      "terrain": "⬛",
+      "rect": [
+        0,
+        19,
+        30,
+        3
+      ],
+      "label": "Il portico del municipio e le case del lato sud"
+    },
+    {
+      "terrain": "⬛",
+      "rect": [
+        0,
+        3,
+        3,
+        16
+      ],
+      "label": "Botteghe del lato ovest"
+    },
+    {
+      "terrain": "⬛",
+      "rect": [
+        27,
+        3,
+        3,
+        16
+      ],
+      "label": "Botteghe del lato est"
+    }
+  ],
+  "structures": [
+    {
+      "type": "🚪",
+      "at": [
+        14,
+        2
+      ],
+      "label": "Via verso la porta del ponte"
+    },
+    {
+      "type": "🚪",
+      "at": [
+        14,
+        19
+      ],
+      "label": "Via verso il municipio"
+    },
+    {
+      "type": "🚪",
+      "at": [
+        2,
+        10
+      ],
+      "label": "Bottega dello speziale (Mira Serani vi abita sopra)"
+    },
+    {
+      "type": "⛲",
+      "at": [
+        7,
+        6
+      ],
+      "label": "Pozzo di luce nord-ovest, grata di ferro"
+    },
+    {
+      "type": "⛲",
+      "at": [
+        22,
+        6
+      ],
+      "label": "Pozzo di luce nord-est"
+    },
+    {
+      "type": "⛲",
+      "at": [
+        7,
+        16
+      ],
+      "label": "Pozzo di luce sud-ovest"
+    },
+    {
+      "type": "⛲",
+      "at": [
+        22,
+        16
+      ],
+      "label": "Pozzo di luce sud-est"
+    },
+    {
+      "type": "🧱",
+      "line": [
+        [
+          12,
+          9
+        ],
+        [
+          16,
+          9
+        ]
+      ],
+      "label": "Parapetto del pozzo grande, alto 1 m"
+    },
+    {
+      "type": "🧱",
+      "line": [
+        [
+          12,
+          13
+        ],
+        [
+          16,
+          13
+        ]
+      ]
+    },
+    {
+      "type": "🧱",
+      "line": [
+        [
+          12,
+          10
+        ],
+        [
+          12,
+          12
+        ]
+      ]
+    },
+    {
+      "type": "🧱",
+      "line": [
+        [
+          16,
+          10
+        ],
+        [
+          16,
+          12
+        ]
+      ]
+    },
+    {
+      "type": "🕳",
+      "at": [
+        13,
+        10
+      ],
+      "label": "Bocca del pozzo grande, 4,5 m di diametro"
+    },
+    {
+      "type": "🕳",
+      "at": [
+        15,
+        10
+      ]
+    },
+    {
+      "type": "🕳",
+      "at": [
+        13,
+        12
+      ]
+    },
+    {
+      "type": "🕳",
+      "at": [
+        15,
+        12
+      ]
+    },
+    {
+      "type": "🕳",
+      "at": [
+        14,
+        10
+      ]
+    },
+    {
+      "type": "🕳",
+      "at": [
+        13,
+        11
+      ]
+    },
+    {
+      "type": "🕳",
+      "at": [
+        15,
+        11
+      ]
+    },
+    {
+      "type": "🕳",
+      "at": [
+        14,
+        12
+      ]
+    },
+    {
+      "type": "🔽",
+      "at": [
+        14,
+        11
+      ],
+      "label": "La gabbia di discesa: scende 6 m fino alle passerelle alte (GS-2)",
+      "collega": "GSC-2-QUOTA-ALTA.md U13"
+    },
+    {
+      "type": "🏗",
+      "at": [
+        17,
+        11
+      ],
+      "label": "L'argano della gabbia, con il guardiano della gilda degli acquaioli"
+    },
+    {
+      "type": "📦",
+      "at": [
+        5,
+        4
+      ],
+      "label": "Banco"
+    },
+    {
+      "type": "📦",
+      "at": [
+        10,
+        4
+      ],
+      "label": "Banco"
+    },
+    {
+      "type": "📦",
+      "at": [
+        19,
+        4
+      ],
+      "label": "Banco"
+    },
+    {
+      "type": "📦",
+      "at": [
+        24,
+        4
+      ],
+      "label": "Banco"
+    },
+    {
+      "type": "📦",
+      "at": [
+        5,
+        17
+      ],
+      "label": "Banco"
+    },
+    {
+      "type": "📦",
+      "at": [
+        24,
+        17
+      ],
+      "label": "Banco"
+    },
+    {
+      "type": "🛢",
+      "at": [
+        9,
+        14
+      ],
+      "label": "Botti d'acqua razionata, con la guardia"
+    },
+    {
+      "type": "🛢",
+      "at": [
+        19,
+        14
+      ],
+      "label": "Botti d'acqua razionata"
+    }
+  ],
+  "units": [
+    {
+      "faction": "PG",
+      "name": "I quattro PG",
+      "token": "🔵",
+      "area": {
+        "rect": [
+          13,
+          16,
+          2,
+          2
+        ]
+      },
+      "quantity": 4
+    },
+    {
+      "faction": "Sal",
+      "name": "Uomini di Sal travestiti da facchini (guerriero 6), quattro",
+      "token": "🔴",
+      "area": {
+        "rect": [
+          20,
+          8,
+          2,
+          2
+        ]
+      },
+      "quantity": 4
+    },
+    {
+      "faction": "Collezionista",
+      "name": "Mira Serani, alla finestra sopra lo speziale (aranea)",
+      "token": "🟣",
+      "at": [
+        3,
+        10
+      ]
+    },
+    {
+      "faction": "Rethmar",
+      "name": "Guardia della gilda all'argano",
+      "token": "🟢",
+      "at": [
+        18,
+        11
+      ]
+    },
+    {
+      "faction": "Rethmar",
+      "name": "Folla in fila per l'acqua razionata (una cinquantina)",
+      "token": "🟢",
+      "area": {
+        "rect": [
+          8,
+          15,
+          12,
+          2
+        ]
+      },
+      "quantity": 50
+    }
+  ],
+  "tattiche": [
+    "**La piazza è piena.** Di giorno c'è la fila per l'acqua razionata: qualunque scontro qui è uno scontro davanti a cinquanta testimoni, e il Morale Cittadino lo registra (scelta 4).",
+    "**Gli uomini di Sal** non attaccano per primi: seguono, contano, riferiscono. Attaccano solo se i PG provano a scendere di notte senza il permesso della gilda, e allora mirano all'argano: tagliare la fune con la gabbia a metà discesa (CA 14, 10 pf, durezza 2) fa cadere chi c'è dentro per 6 m sulle passerelle (2d6).",
+    "**Mira Serani** guarda e basta. Se vede i PG scendere, il Collezionista lo sa prima di sera."
+  ],
+  "evoluzione": [
+    {
+      "stato": "B · scontro in piazza",
+      "trigger": "i PG attaccano gli uomini di Sal o vengono attaccati",
+      "griglia": "la folla scappa verso i vicoli in 1 round",
+      "effetto": "Morale Cittadino −1 se muore un civile; la guardia cittadina arriva in 2d4 round e chiede conto ai PG"
+    },
+    {
+      "stato": "C · fune tagliata",
+      "trigger": "un uomo di Sal taglia la fune dell'argano",
+      "griglia": "la gabbia precipita",
+      "effetto": "2d6 danni per caduta a chi è dentro, Riflessi CD 15 per aggrapparsi alla catena di guida e dimezzare"
+    }
+  ],
+  "note_dm": [
+    "**La piazza misura 36 × 24 m** fra le facciate. Il pozzo grande attraversa 6 m di volta e sbuca sopra le passerelle alte; i quattro pozzi di luce sono grate su condotti di 60 cm, troppo stretti per un Medio senza magia."
+  ]
+}

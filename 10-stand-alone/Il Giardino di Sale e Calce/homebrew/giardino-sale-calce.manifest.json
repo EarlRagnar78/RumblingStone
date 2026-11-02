@@ -1,0 +1,35 @@
+{
+  "brand": "RUMBLING STONE · MODULO AUTOCONCLUSIVO",
+  "title": "Il Giardino di Sale e Calce",
+  "subtitle": "Avventura autoconclusiva per D&D 3.5: Rethmar prima dell'assedio, l'acqua della città e ciò che ci vive sotto",
+  "banner": "EDIZIONE DA TAVOLO",
+  "meta": "4 PG di 13° · EL 12-17 · una sessione lunga (6-7 h) o due sedute · tre ingressi e 14 aree su quattro livelli · orrore acquatico, indagine, assedio",
+  "colophon": {
+    "edizione": "Edizione da tavolo",
+    "versione": "v0 (bozza, prima della simulazione)",
+    "data": "1 novembre 2026",
+    "autori": "G. Samuele",
+    "basato_su": "SRD 3.5 e OGL 1.0a per le creature e le regole; Forgotten Realms e canone della campagna RumblingStone per luoghi, divinità e villain",
+    "licenza": "Materiale del DM, uso privato e non commerciale: contiene nomi dei Forgotten Realms, non è Open Content. Non diffondere fuori dal tavolo senza passare il cancello d'uscita della guida alla condivisione dell'IP del repo",
+    "nota": "Versione canonica della campagna. La versione Pathfinder in Qasr al-Milah è un altro modulo."
+  },
+  "footer": "Il Giardino di Sale e Calce · edizione da tavolo",
+  "out": "giardino-sale-calce.html",
+  "chapters": [
+    {
+      "title": "Il Giardino di Sale e Calce",
+      "file": "../giardino_sale_calce.md",
+      "tag": "dm"
+    },
+    {
+      "title": "Appendice — Le creature e il Cuore",
+      "file": "../appendice_creature.md",
+      "tag": "dm"
+    },
+    {
+      "title": "Guida al tavolo",
+      "file": "../guida_al_tavolo.md",
+      "tag": "dm"
+    }
+  ]
+}

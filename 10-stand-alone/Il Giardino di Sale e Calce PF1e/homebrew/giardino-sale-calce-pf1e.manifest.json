@@ -1,0 +1,35 @@
+{
+  "brand": "MODULO AUTOCONCLUSIVO · PATHFINDER 1E",
+  "title": "Il Giardino di Sale e Calce",
+  "subtitle": "Avventura autoconclusiva per Pathfinder 1e: Qasr al-Milah, la città sul sale, e ciò che vive sotto la sua acqua",
+  "banner": "EDIZIONE DA TAVOLO",
+  "meta": "4 PG di 13° (righe di scala per 11° e 15°) · EL 8-17 · una sessione lunga (6-7 h) o due sedute · due ingressi e 16 aree su quattro livelli · orrore acquatico in una città del deserto",
+  "colophon": {
+    "edizione": "Edizione da tavolo",
+    "versione": "v0 (bozza, prima del playtest)",
+    "data": "1 novembre 2026",
+    "autori": "G. Samuele",
+    "basato_su": "Pathfinder Roleplaying Game Reference Document e Bestiario, OGL 1.0a, per le creature e le regole",
+    "licenza": "Le regole e le creature sono Open Game Content sotto OGL 1.0a. Qasr al-Milah, Karkator, Hasharr, il Cuore di Selenite, i Ragni delle Catene e i PNG sono originali del modulo. Nessun nome dell'ambientazione ufficiale del Pathfinder",
+    "nota": "Modulo a parte. La versione per D&D 3.5 a Rethmar è un altro modulo."
+  },
+  "footer": "Il Giardino di Sale e Calce · Pathfinder 1e · edizione da tavolo",
+  "out": "giardino-sale-calce-pf1e.html",
+  "chapters": [
+    {
+      "title": "Il Giardino di Sale e Calce",
+      "file": "../giardino_sale_calce_pf1e.md",
+      "tag": "dm"
+    },
+    {
+      "title": "Appendice — Le creature e il Cuore",
+      "file": "../appendice_creature.md",
+      "tag": "dm"
+    },
+    {
+      "title": "Guida al tavolo",
+      "file": "../guida_al_tavolo.md",
+      "tag": "dm"
+    }
+  ]
+}

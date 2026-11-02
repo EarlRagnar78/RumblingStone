@@ -1,12 +1,12 @@
 # AI Enhancement Dependencies
 # Core AI/ML libraries
-transformers>=5.20.2
+transformers>=5.22.0
 torch>=2.0.0
 torchvision>=0.15.0
 
 # Text processing and NLP
 language-tool-python>=3.4.0
-spacy>=3.8.16
+spacy>=3.8.18
 nltk>=3.10.4
 
 # Vision and image processing

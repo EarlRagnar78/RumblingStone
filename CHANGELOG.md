@@ -81,6 +81,10 @@ Il tag e il rilascio li crea il workflow Release (ADR-0100).
 - `validate_booklets` controlla anche che il `.hb.md` committato di un booklet sia quello che il manifest produce oggi (`build_booklet_html.testo_hb`): i `.hb.md` di Notte e Alba, Resurrezione e Mille anni erano rimasti alla versione prima del capitolo del barile e delle mappe nuove.
 - Nei booklet di ARC-07 le griglie ASCII delle mappe tattiche (T-2, T-3, T-6, S-2, M7-B, e CM-1 e CM-2 in DEF-5) lasciano il posto alla pianta in stampa con la legenda; la griglia resta nel master come apparato. `validate_booklets` ferma una griglia disegnabile stampata in un booklet. Le sei schematiche passano anche loro: T-5, R-1 e S-1 ridisegnate in scala in `ARC07-MAPPE-SCHEMATICHE-IN-SCALA.md` (S-1 sulla pianta di PF-2 con gli affreschi di DEF-2), T-1, T-4 e M7-A come schemi senza griglia generati da `scripts/render_schemi.py` (`--check` in CI). In CM-1 e CM-2 (e nella MAPPA 5 di ARC-08) i 90 nani non stanno più ad anello ma schierati verso la porta, centro pesante e due ali piegate (scelta del DM, 2026-10-30); i numeri dello scontro non cambiano. Lo standard vale per tutto il repo: `validate_booklets` ferma ogni disegno a riquadri stampato in un booklet, e le due linee del tempo che restavano (Palio, Drappo) sono diventate tabelle.
 ### Modificato
+- `converters/pdf-to-md-engine`: minimi di `transformers` (5.22.1) e `spacy` (3.8.18)
+  alzati da Dependabot (gruppo convertitori-settimanale, PR #304), allineati a EarlRagnar78.
+- `scripts/booklet-container`: immagine base `debian:13-slim` aggiornata al digest
+  nuovo da Dependabot (gruppo docker-settimanale, PR #303).
 - `converters/pdf-to-md-engine`: minimo di `nltk` alzato a 3.10.4 da Dependabot
   (gruppo convertitori-settimanale, PR #294).
 - `scripts/booklet-container`: immagine base `debian:13-slim` aggiornata al digest

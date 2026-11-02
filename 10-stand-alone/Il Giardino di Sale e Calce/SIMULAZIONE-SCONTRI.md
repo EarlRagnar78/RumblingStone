@@ -20,7 +20,7 @@ Artemis 75 e 20). Ogni conto è un valore atteso, critici esclusi.
    tutti non letali, e lui ne recupera 15. Lui ne fa circa 100 a round a un PG
    solo. Il tavolo medio perde Thorik al quinto round con Karkator quasi
    intatto; il tavolo furbo dura di più e perde lo stesso.
-4. **La proposta (card al DM):** blasfemia al LI 16, come gli psionici
+4. **La proposta, scelta dal DM il 2026-11-02:** blasfemia al LI 16, come gli psionici
    dell'aboleth, e il Cuore come chiave dello scontro (perni più deboli, *aura
    sacrilega* solo se Karkator è stato avvisato). Con le due modifiche lo
    scontro dura 7-9 round con un PG a terra, che è la misura usata per il duello
@@ -156,7 +156,7 @@ motivo in più per abbassare Karkator come al §6.
 
 | # | Domanda | Cosa cambia |
 |---|---|---|
-| D-a | Blasfemia al LI 24, al LI 16, o col testo PF1e (Volontà CD 22, chi la passa prende 3d6+24)? | la card. Col testo PF1e si muore lo stesso una o due volte su quattro |
+| D-a | Blasfemia al LI 24, al LI 16, o col testo PF1e (Volontà CD 22, chi la passa prende 3d6+24)? | ✅ LI 16, deciso dal DM il 2026-11-02. Col testo PF1e si moriva lo stesso una o due volte su quattro |
 | D-b | Una *pergamena di rimuovi maledizione* nello studio di Tariq? | Tordek asservito si libera in un round invece di restare contro il gruppo |
 | D-c | L'*inversione della gravità* prende anche l'acqua della vasca? | se sì, Karkator resta all'asciutto sulla volta con i PG |
 | D-d | Aegis Fang è d'adamantio? | se sì ignora la durezza dei perni, e il Cuore si stacca in un round |

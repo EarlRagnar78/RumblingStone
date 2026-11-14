@@ -23,6 +23,9 @@ ts: Temp +7, Rifl +6, Vol +4
 attributi: For 14 Des 16 Cos 13
 attacchi:
   - Nerbo +9 (1d4+2 non letale)
+voci:
+  - Equipaggiamento da combattimento: pozione di cura ferite moderate, pozioni di contrastare elementi (2)
+  - Altro equipaggiamento: giaco di maglia +1, nerbo
 ```
 **Difesa** **CA 18** (armatura leggera da corsa) · **pf 55** · TS Tempra +7, Riflessi +6, Volontà +4
 
@@ -34,6 +37,8 @@ attacchi:
 
 **Capacità speciali**
 - **Legame col cavallo**: +2 alle prove di Cavalcare del proprio destriero (empatia).
+
+> RC-001 (2026-11-14, ADR-0134) `[CANONE — DM 2026-11-14, RC-001]`: il giaco di maglia +1 è l'armatura leggera che spiega la CA 18 (10, +3 Des, +5 armatura); le pozioni vengono dal PNG dei Codex PF1e «Adventuring Blacksmith» (Guerriero 6), che per il resto porta armatura completa e martelli e non entra. Il nerbo è l'arma della scheda e non ha un prezzo nell'SRD. Valore 1.650 mo contro i 5.600 del 6° livello (DMG 3.5, Tabella 4-23).
 
 ### 1.2 Fantino Ladro — "corsa assassina" (GS 8)
 ```statblocco

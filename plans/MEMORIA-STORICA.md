@@ -1538,3 +1538,14 @@ repo scritto con altre parole.
 - **Testo:** il DM ha scelto sulla card del 2026-11-14 di tenere i 16 dadi vita e di portare il grado di sfida a 7. La scheda toglie «2x HD», il file diventa `skeletal-dire-lion-cr7.md`, `IN_ATTESA` del grado di sfida torna vuoto. Violazioni 31 → 30 contro main e88959fd.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** nel tipo non si può scrivere «avanzato» né ripetere «scheletro» accanto a «skeleton»: `gs.modello_noto` vede un avanzamento o un secondo modello e il grado torna non verificabile. Restano al DM il livello d'incontro delle due righe del viaggio verso Cannath Vale che usano questi leoni e l'armatura naturale +4 (lo scheletro Grande dell'SRD ha +2).
+
+### MS-0135 · 2026-11-14 · ADR-0134: il corredo del Fantino Cavaliere del Palio
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0134
+- **Temi:** schede equipaggiamento regole palio
+- **Origine:** riga del 2026-11-14 «ADR-0134, regola RC-001: il corredo del Fantino Cavaliere del Palio» in `plans/CHANGELOG.md`
+- **Testo:** il Fantino Cavaliere ha giaco di maglia +1, nerbo, una pozione di cura ferite moderate e due di contrastare elementi; 1.650 mo su 5.600.
+- **Trovato nel repo:** `ADR-0134` → `plans/adr/ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md` · `campaign/REGOLE-CUSTOM.md`
+- **Solo qui:** sulla card il DM aveva tre scelte (armatura leggera e pozioni; le stesse più il mantello della resistenza +1 del «Troglodyte Champion», TS +8/+7/+5; nessun corredo) e ha scelto la prima. La scheda dice solo «armatura leggera da corsa»: il giaco di maglia +1 (1.250 mo) è l'armatura leggera meno cara che dà +5; anche il cuoio borchiato +2 (4.175 mo) lo darebbe. Il tetto è contato sul 6° livello della classe; la scheda dichiara GS 8 e «Cavaliere-ish», quindi il livello effettivo non è certo. Sulla card la pozione era chiamata «resistere agli elementi»: il nome del lessico è «contrastare elementi».

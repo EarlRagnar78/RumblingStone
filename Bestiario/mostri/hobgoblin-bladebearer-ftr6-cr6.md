@@ -17,7 +17,7 @@ velocita: 9 m
 iniziativa: +3
 voci:
   - Equipaggiamento da combattimento: pozione di cura ferite gravi, pozioni di cura ferite moderate (3), pozione di pelle coriacea +2, pozione di ritarda veleno
-  - Altro equipaggiamento: giaco di maglia +1, doppia ascia orchesca +1 (una testa +1, l'altra perfetta), mantello della resistenza +1
+  - Altro equipaggiamento: giaco di maglia +1, doppia ascia orchesca (una testa +1, l'altra perfetta), mantello della resistenza +1
 ```
 
 > [GENERATO] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`.

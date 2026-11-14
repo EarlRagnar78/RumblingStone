@@ -349,6 +349,30 @@ def _penalita_di_prova(testo: str, regole: dict, sistema: str) -> "tuple[int, st
     return trovate[0] if len(trovate) == 1 else (0, "")
 
 
+def _scheda_per_scheda(p: Path, giudica) -> "tuple[list[dict], list[dict]]":
+    """Applica `giudica(p, testo, riga0, dal_nome)` al file, o a ognuna delle sue schede.
+
+    Un file con più recinti (un master d'arco) si taglia coi blocchi di
+    `--fatti`: ogni scheda si giudica da sola, dal suo titolo alla scheda dopo,
+    e le sue voci portano il titolo nella chiave `scheda`. `riga0` sono le righe
+    che precedono il pezzo nel file; `dal_nome` le parole del nome del file che
+    aiutano a riconoscere la razza (vuote in un master, dove il nome del file
+    non dice di chi è la scheda)."""
+    import conformita_statblocchi as C
+    intero = p.read_text(encoding="utf-8", errors="replace")
+    with contextlib.redirect_stderr(io.StringIO()):
+        recinti = list(C._recinti_del_master(intero))
+    if len(recinti) <= 1:
+        return giudica(p, intero, 0, p.stem.replace("-", " "))
+    righe = intero.split("\n")
+    viol, nv = [], []
+    for b in _blocchi_dei_fatti(righe, VT.sistema_di(p, intero)):
+        v, n = giudica(p, "\n".join(righe[b["inizio"] - 1:b["fine"]]), b["inizio"] - 1, "")
+        viol += [dict(x, scheda=b["titolo"]) for x in v]
+        nv += [dict(x, scheda=b["titolo"]) for x in n]
+    return viol, nv
+
+
 def abilita(p: Path) -> "tuple[list[dict], list[dict]]":
     """(violazioni, non verificabili) dei gradi delle abilità.
 
@@ -365,14 +389,20 @@ def abilita(p: Path) -> "tuple[list[dict], list[dict]]":
     La penalità di armatura alla prova (lotto 6): l'armatura e lo scudo della riga della CA
     abbassano il bonus scritto delle abilità di forza e destrezza che la subiscono, quindi
     alzano i gradi minimi; si conta la più bassa possibile (oggetti perfetti).
-    Con margini larghi vede gli errori grossi, non quelli di un punto."""
+    Con margini larghi vede gli errori grossi, non quelli di un punto.
+    Un file con più schede si giudica scheda per scheda (`_scheda_per_scheda`)."""
+    return _scheda_per_scheda(p, _abilita_di_una_scheda)
+
+
+def _abilita_di_una_scheda(p: Path, testo: str, riga0: int, dal_nome: str) -> "tuple[list[dict], list[dict]]":
+    """Il giudizio di `abilita` su una scheda sola (vedi `_scheda_per_scheda`)."""
     import lessico_regole as LR
     from dmcore import sistemi as S
-    f = VT.leggi(p) or {}
-    s = L.leggi(p)
+    f = VT.leggi_testo(testo, p) or {}
+    s = L.leggi_testo(testo, p)
     if s is None:
         return [], []
-    n_riga, riga = next(((i + 1, m.group(1)) for i, r in enumerate(s.testo.splitlines())
+    n_riga, riga = next(((i + 1 + riga0, m.group(1)) for i, r in enumerate(s.testo.splitlines())
                          if (m := RIGA_ABILITA.search(r)) and re.search(r"[+−-]\d", m.group(1))), (None, None))
     if riga is None:
         return [], []
@@ -453,7 +483,7 @@ def abilita(p: Path) -> "tuple[list[dict], list[dict]]":
     # delle razze dell'SRD, razza e sinergie si contano voce per voce invece del margine fisso
     preciso, scritte = None, {en for _, en, _ in voci}
     if sue is not None and not razziali and regole.get("margine"):
-        dove_ = " ".join((riga_tipo, s.testo.split("\n", 1)[0], p.stem.replace("-", " ")))
+        dove_ = " ".join((riga_tipo, s.testo.split("\n", 1)[0], dal_nome))
         razza_ = _razza_srd(dove_, regole) or _razza_senza_dv(
             S.dati(sistema, "creature.costruzione").get("mdl") or {"razze": {}, "nomi": {}}, dove_, s.tipo or riga_tipo)
         if razza_ is not None and not re.search(r"razzial|racial", s.testo, re.I):
@@ -1494,9 +1524,15 @@ def velocita(p: Path) -> "tuple[list[dict], list[dict]]":
     barbaro (non in armatura pesante) o del monaco (senza armatura né scudo),
     ridotta dall'armatura media o pesante se la razza rallenta. Il mithral conta
     una categoria più leggera. Chi nomina stivali della velocità o un incantesimo che la cambia, o
-    scrive una nota nella riga stessa, non è una violazione: è un non verificabile."""
+    scrive una nota nella riga stessa, non è una violazione: è un non verificabile.
+    Un file con più schede si giudica scheda per scheda (`_scheda_per_scheda`)."""
+    return _scheda_per_scheda(p, _velocita_di_una_scheda)
+
+
+def _velocita_di_una_scheda(p: Path, testo: str, riga0: int, dal_nome: str) -> "tuple[list[dict], list[dict]]":
+    """Il giudizio di `velocita` su una scheda sola (vedi `_scheda_per_scheda`)."""
     from dmcore import sistemi as S
-    s = L.leggi(p)
+    s = L.leggi_testo(testo, p)
     if s is None:
         return [], []
     sistema = VT.sistema_di(p, s.testo)
@@ -1509,11 +1545,11 @@ def velocita(p: Path) -> "tuple[list[dict], list[dict]]":
     if not mv or len(righe) != 1:
         return [], []
     m = righe[0]
-    n_riga = s.testo[:m.start()].count("\n") + 1
+    n_riga = s.testo[:m.start()].count("\n") + 1 + riga0
     base = {"file": VT_rel(p), "riga": n_riga, "verifica": "velocita", "fonte": sistema}
     numero = float(m.group(1).replace(",", "."))
     ha = round(numero * mv["piedi_per_metro_e_mezzo"] / 1.5) if m.group(2).lower() == "m" else round(numero)
-    f = VT.leggi(p) or {}
+    f = VT.leggi_testo(testo, p) or {}
     livelli: dict[str, int] = {}
     it = _classi_it()
     for nome, n in dict(f.get("livelli") or L.livelli_di_classe(s)).items():
@@ -1523,7 +1559,7 @@ def velocita(p: Path) -> "tuple[list[dict], list[dict]]":
     if not livelli or sum(g.n for g in s.gruppi) != sum(livelli.values()) + sum(
             int(v.rpartition(" ")[2]) for v in ignote):
         return [], []                                   # dadi vita razziali: la velocità è della creatura
-    dove = " ".join((s.tipo or "", s.testo.split("\n", 1)[0], p.stem.replace("-", " ")))
+    dove = " ".join((s.tipo or "", s.testo.split("\n", 1)[0], dal_nome))
     razza = _razza_srd(dove, gradi) or _razza_senza_dv(
         S.dati(sistema, "creature.costruzione").get("mdl") or {"razze": {}, "nomi": {}}, dove, s.tipo or "")
     if razza is None or razza not in mv["razze"]:
@@ -1718,9 +1754,15 @@ def linguaggi(p: Path) -> "tuple[list[dict], list[dict]]":
     Solo per chi scrive una riga «Linguaggi» (una sola, fuori dalle righe di
     storia): una delle sette razze dell'SRD, o una razza senza dadi vita razziali
     (hobgoblin, orco, drow…), ha i suoi linguaggi automatici, il druido ha il Druidico. Quanti linguaggi in più si possono avere non si
-    giudica: dipende da regione e gradi che la scheda non scrive."""
+    giudica: dipende da regione e gradi che la scheda non scrive.
+    Un file con più schede si giudica scheda per scheda (`_scheda_per_scheda`)."""
+    return _scheda_per_scheda(p, _linguaggi_di_una_scheda)
+
+
+def _linguaggi_di_una_scheda(p: Path, testo: str, riga0: int, dal_nome: str) -> "tuple[list[dict], list[dict]]":
+    """Il giudizio di `linguaggi` su una scheda sola (vedi `_scheda_per_scheda`)."""
     from dmcore import sistemi as S
-    s = L.leggi(p)
+    s = L.leggi_testo(testo, p)
     if s is None:
         return [], []
     sistema = VT.sistema_di(p, s.testo)
@@ -1731,19 +1773,19 @@ def linguaggi(p: Path) -> "tuple[list[dict], list[dict]]":
         return [], []
     if not d:
         return [], []
-    trovate = [(n + 1, m.group(1)) for n, r in enumerate(s.testo.split("\n")) if not _RIGA_DI_STORIA.match(r)
+    trovate = [(n + 1 + riga0, m.group(1)) for n, r in enumerate(s.testo.split("\n")) if not _RIGA_DI_STORIA.match(r)
                for m in _RIGA_LINGUAGGI.finditer(r)]
     if len(trovate) != 1:
         return [], []
     n_riga, scritti = trovate[0]
     attesi, perche = [], []
-    dove = " ".join((s.tipo or "", s.testo.split("\n", 1)[0], p.stem.replace("-", " ")))
+    dove = " ".join((s.tipo or "", s.testo.split("\n", 1)[0], dal_nome))
     razza = _razza_srd(dove, gradi) or _razza_senza_dv(
         S.dati(sistema, "creature.costruzione").get("mdl") or {"razze": {}, "nomi": {}}, dove, s.tipo or "")
     if razza in d["razze"]:
         attesi += d["razze"][razza]
         perche.append(razza)
-    f = VT.leggi(p) or {}
+    f = VT.leggi_testo(testo, p) or {}
     it = _classi_it()
     for nome in dict(f.get("livelli") or L.livelli_di_classe(s)):
         en = it.get(nome.lower(), nome.lower())
@@ -2082,20 +2124,7 @@ def ricchezza(p: Path) -> "tuple[list[dict], list[dict]]":
     `equipaggiamento.da_png` e la tabella non la giudica. Una riga
     «Equipaggiamento sopra la tabella: … DM …» dichiara lo scarto come scelta
     del DM, e la verifica tace."""
-    import conformita_statblocchi as C
-    intero = p.read_text(encoding="utf-8", errors="replace")
-    with contextlib.redirect_stderr(io.StringIO()):
-        recinti = list(C._recinti_del_master(intero))
-    if len(recinti) <= 1:
-        return _ricchezza_di_una_scheda(p, intero, 0, p.stem.replace("-", " "))
-    # un file con più schede (un master d'arco): ognuna si giudica da sola, dal suo titolo alla scheda dopo
-    righe = intero.split("\n")
-    viol, nv = [], []
-    for b in _blocchi_dei_fatti(righe, VT.sistema_di(p, intero)):
-        v, n = _ricchezza_di_una_scheda(p, "\n".join(righe[b["inizio"] - 1:b["fine"]]), b["inizio"] - 1, "")
-        viol += [dict(x, scheda=b["titolo"]) for x in v]
-        nv += [dict(x, scheda=b["titolo"]) for x in n]
-    return viol, nv
+    return _scheda_per_scheda(p, _ricchezza_di_una_scheda)
 
 
 def _ricchezza_di_una_scheda(p: Path, testo: str, riga0: int, dal_nome: str) -> "tuple[list[dict], list[dict]]":

@@ -1375,3 +1375,13 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** nella #425 era stato scritto che le schede allungate di ARC07-DEF-4 non davano violazioni nuove: era vero solo perché non erano lette. L'ha notato il thread del volume, ed è stato detto a Jfs. Una misura che tace va controllata: tace perché è in regola o perché non guarda?
 
+### MS-0120 · 2026-11-14 · Regole, lotti 6 e 7: velocità, linguaggi e abilità di un file con più schede
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole velocita linguaggi abilita master verifica-scheda
+- **Origine:** riga del 2026-11-14 «lotti 6 e 7: velocità, linguaggi e abilità di un file con più schede» in `plans/CHANGELOG.md`
+- **Testo:** `velocita`, `linguaggi` e `abilita` giudicano scheda per scheda i file con più schede, con la stessa funzione di `ricchezza` (`_scheda_per_scheda`). Violazioni 30 → 30, non verificabili 383 → 384. Nei 5 master con più recinti `velocita` legge 11 schede (prima 0), `linguaggi` 3 (prima 0), `abilita` 11 (prima 5).
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** il guadagno è piccolo e va detto: nessuna violazione nuova, e 13 schede su 30 dei master non si leggono perché il recinto non ha attributi o GS. Per misurare contro la versione di prima serve un worktree pulito: `git worktree add` su una cartella rimasta da una prova vecchia non la aggiorna, e la prima misura confrontava con un commit di giorni fa (54 violazioni invece di 30).

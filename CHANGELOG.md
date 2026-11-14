@@ -18,6 +18,7 @@ Il tag e il rilascio li crea il workflow Release (ADR-0100).
 ## [Non rilasciato]
 
 ### Aggiunto
+- `verifica_scheda`, verifiche `velocita`, `linguaggi` e `abilita`: un file con più schede si giudica scheda per scheda, come `ricchezza` (ADR-0126, lotti 6 e 7).
 - `verifica_scheda`, verifica `ricchezza`: un file con più schede (un master d'arco) si giudica scheda per scheda, col titolo nella chiave `scheda` (ADR-0126, lotto 8, quinta parte).
 - Master ARC-07, Durin Rocciadura: scudo pesante perfetto al posto dello scudo pesante +1, CA 21 (prima 22); l'equipaggiamento torna sotto la Tabella 4-23 per un PNG di 6° (scelta del DM, card del 2026-11-14).
 - `verifica_scheda`, verifica `velocita`: giudica anche nove razze senza dadi vita razziali; la velocità ridotta di chi non scompone la CA è un dubbio e non una violazione (ADR-0126, lotto 7, sesta parte).

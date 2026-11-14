@@ -1224,8 +1224,33 @@ archi 0 → 1. È Durin Rocciadura (ARC07-DEF-4, riga 4428): armatura completa +
 scudo pesante +1 e ascia da guerra nanica +1 valgono 6.137 mo contro i 5.600 di
 un PNG di 6°. La scheda non si tocca: card al DM, titolo in `IN_ATTESA` del
 cancello nuovo `Archi` di `test_ricchezza.py`.
+Il DM ha scelto sulla card del 2026-11-14 lo scudo pesante perfetto al posto
+dello scudo pesante +1: CA 22 → 21, `IN_ATTESA` vuoto, violazioni 1 → 0.
 
 **Limiti dichiarati.** Le altre verifiche che leggono una scheda sola
 (`velocita`, `linguaggi`, `abilita`) non sono ancora portate ai file con più
 schede.
+
+### Lotti 6 e 7 — velocità, linguaggi e abilità di un file con più schede (2026-11-14)
+
+**Contesto.** Il limite dichiarato qui sopra: in un master d'arco `velocita` e
+`linguaggi` uscivano mute (chiedono una sola riga in tutto il file) e `abilita`
+giudicava soltanto la prima scheda.
+
+**Decisione.** Il taglio fatto per `ricchezza` diventa una funzione sola,
+`_scheda_per_scheda(p, giudica)`, e le quattro verifiche la usano. `VT.leggi`
+ha la gemella `VT.leggi_testo` per leggere i livelli di classe del pezzo e non
+del file.
+
+**Conseguenze.** Misura su `Bestiario 0*/`: violazioni 30 → 30, non
+verificabili 383 → 384 (un dubbio di `abilita` che prima usciva una volta ora
+esce per due schede). I file con più recinti sono 5, con 30 schede, 17
+leggibili: `velocita` ne legge 11 (prima 0), `linguaggi` 3 (prima 0), `abilita`
+11 (prima le 5 in testa ai file). Nessuna violazione nuova e nessuna scheda
+toccata.
+
+**Limiti dichiarati.** 13 schede su 30 dei master non si leggono (senza riga
+degli attributi o del GS nel recinto). Le altre verifiche di `verifica_scheda`
+(talenti, incantatori, prestigio, difese, grado di sfida) hanno ciascuna il suo
+modo di trattare i master e non passano da questa funzione.
 

@@ -1538,3 +1538,14 @@ repo scritto con altre parole.
 - **Testo:** il DM ha scelto sulla card del 2026-11-14 di tenere i 16 dadi vita e di portare il grado di sfida a 7. La scheda toglie «2x HD», il file diventa `skeletal-dire-lion-cr7.md`, `IN_ATTESA` del grado di sfida torna vuoto. Violazioni 31 → 30 contro main e88959fd.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** nel tipo non si può scrivere «avanzato» né ripetere «scheletro» accanto a «skeleton»: `gs.modello_noto` vede un avanzamento o un secondo modello e il grado torna non verificabile. Restano al DM il livello d'incontro delle due righe del viaggio verso Cannath Vale che usano questi leoni e l'armatura naturale +4 (lo scheletro Grande dell'SRD ha +2).
+
+### MS-0135 · 2026-11-14 · Regole: l'armatura naturale dei modelli dell'SRD
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole armatura-naturale modelli scheletro mezzo-immondo mezzo-drago lich vampiro zombi
+- **Origine:** riga del 2026-11-14 «lotto 5 nona parte» in `plans/CHANGELOG.md`
+- **Testo:** le voci di `[gs.modelli_gs]` portano la chiave `naturale` con la riga «Armor Class» dei modelli dell'SRD; il controllo sta dentro `creatura_base`. Violazioni 30 → 31 e non verificabili 368 → 369 contro main 4e40d6c7: la violazione nuova è lo Skeletal Dire Lion (+4 contro +2), portata al DM su card.
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** la base è nota solo per le razze fatte di livelli di classe (0, coboldo +1); altrove si giudica il minimo del modello. Una CA scritta come «contatto 11, alla sprovvista 16» non è un conto e non dà violazione. Azarr Kul finale, Therysol e il Ghostlord non sono giudicati perché il tipo non nomina il modello. `naturale_razze` sta dentro `[gs.modelli_gs]`, non in `[gs]`.

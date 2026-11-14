@@ -148,6 +148,46 @@ class TestGiudizi(unittest.TestCase):
         viol, _ = giudica(dadi="2d8+2d12+12")
         self.assertIn("numero.dv.razziali", regole(viol))
 
+    def test_armatura_naturale_col_modello(self):
+        """SRD, riga «Armor Class» dei modelli: mezzi +1/+4, lich almeno +5, vampiro +6, scheletro e zombi per taglia."""
+        def nat(**campi):
+            viol, nv = giudica(fonte="prova", dadi="6d8", **campi)
+            return ([v for v in viol if v["regola"] == "numero.CA.naturale"],
+                    [v for v in nv if v["regola"] == "numero.CA.naturale"])
+        # razza della fonte con soli livelli di classe: la base è 0 (il coboldo +1), il conto è esatto
+        self.assertEqual(nat(tipo="Medium outsider (native), hobgoblin mezzo-immondo, Guerriero 6, LM", ca="+3 Des, +1 naturale"), ([], []))
+        v, _ = nat(tipo="Medium outsider (native), hobgoblin mezzo-immondo, Guerriero 6, LM", ca="+3 Des, +3 naturale")
+        self.assertEqual((v[0]["atteso"], v[0]["ha"]), (1, 3))
+        self.assertEqual(nat(tipo="Small dragon, coboldo mezzo-drago, Stregone 6, LM", ca="+1 taglia, +5 naturale"), ([], []))
+        self.assertEqual(nat(tipo="Medium undead, human vampire, Guerriero 6, LM", ca="+6 naturale"), ([], []))
+        self.assertEqual(nat(tipo="Medium undead, umano lich, Mago 11, NM", ca="+5 naturale"), ([], []))
+        # lo scheletro ha il numero della taglia, qualunque sia la base; lo zombi sta sopra la base
+        v, _ = nat(tipo="Large undead, skeleton, NM", ca="-1 taglia, +4 naturale")
+        self.assertEqual((v[0]["atteso"], v[0]["ha"]), (2, 4))
+        self.assertEqual(nat(tipo="Huge undead, skeleton, NM", ca="-2 taglia, +3 naturale"), ([], []))
+        v, _ = nat(tipo="Large undead, zombie, NM", ca="-1 taglia, +2 naturale")
+        self.assertEqual(v[0]["atteso"], "almeno +3")
+        # base fuori dai dati: sopra il minimo del modello non si giudica
+        v, n = nat(tipo="Large outsider, troll half-fiend, CM", ca="-1 taglia, +6 naturale")
+        self.assertEqual((v, len(n)), ([], 1))
+        v, _ = nat(tipo="Large dragon, troll half-dragon, CM", ca="-1 taglia, +3 naturale")
+        self.assertEqual(v[0]["atteso"], "almeno +4")
+        # la CA senza addendi non è un conto; con gli addendi e senza la naturale è una violazione
+        v, n = nat(tipo="Medium outsider, hobgoblin half-fiend, Guerriero 6, LM", ca="contatto 11, alla sprovvista 16")
+        self.assertEqual((v, len(n)), ([], 1))
+        v, _ = nat(tipo="Medium outsider, hobgoblin half-fiend, Guerriero 6, LM", ca="+3 Des, +5 armatura")
+        self.assertEqual(v[0]["ha"], "nessuna")
+        # la variante del DM si dichiara come per la base
+        riga = "> Armatura naturale diversa dalla base: +4 contro +2, scelta del DM (RC-099)."
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / "prova.md"
+            p.write_text(SCHEDA.format(titolo="Prova", fonte="prova", tipo="Large undead, skeleton, NM",
+                                       ca="-1 taglia, +4 naturale", dadi="6d12", attacco="Mischia artiglio +5 (1d6+4)")
+                         + "\n" + riga + "\n", encoding="utf-8")
+            self.assertNotIn("numero.CA.naturale", regole(V.creatura_base(p)[0]))
+        # fantasma, celestiale e immondo non hanno una regola loro
+        self.assertEqual(nat(tipo="Medium undead, human ghost, Guerriero 6, LM", ca="+4 naturale"), ([], []))
+
     def test_armatura_naturale_diversa(self):
         viol, _ = giudica(ca="-1 taglia, +7 naturale, +3 pelle")
         v = next(x for x in viol if x["regola"] == "numero.CA.naturale")

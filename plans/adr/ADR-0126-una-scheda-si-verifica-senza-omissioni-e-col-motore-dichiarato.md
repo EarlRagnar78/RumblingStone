@@ -1363,3 +1363,15 @@ Se la taglia non è quella della base il grado atteso è un intervallo: +1 se è
 **Conseguenze.** Il file diventa `Bestiario/mostri/skeletal-dire-lion-cr7.md`, perché `extract_statblocks --check` vuole il grado nel nome; aggiornati i rimandi vivi (composizione delle armate, incontri del viaggio verso Cannath Vale, catalogo storico, baseline dei punteggi), rigenerati catalogo e impronta. `IN_ATTESA` di `test_grado_di_sfida.py` torna vuoto. Misura contro main e88959fd: violazioni 31 → 30, non verificabili 368 = 368.
 
 **Non toccato, resta al DM.** Il livello d'incontro delle due righe della tabella del viaggio che usano questi leoni (10 e 12) e i PX. L'armatura naturale +4 della scheda: lo scheletro Grande dell'SRD ha +2, e il controllo dell'armatura naturale dei modelli non c'è ancora.
+
+### Lotto 5, nona parte — l'armatura naturale dei modelli dell'SRD (2026-11-14)
+
+**Contesto.** Il controllo dell'armatura naturale guardava solo la creatura base dichiarata. Chi porta un modello (mezzo-immondo, mezzo-drago, lich, vampiro, scheletro, zombi) restava fuori, e lo Skeletal Dire Lion scriveva +4 senza che nessuno lo vedesse.
+
+**Decisione.** Ogni voce di `[gs.modelli_gs]` in `sistemi/dnd35/dati/gs.toml` prende una chiave `naturale` con la riga «Armor Class» del suo «Creating a …» dell'SRD: mezzo-celestiale e mezzo-immondo +1 sopra la base, mezzo-drago +4, vampiro +6, lich +5 o la base se è più alta, scheletro il numero della taglia al posto della base, zombi un numero per taglia sopra la base. `gs.naturale_col_modello` fa il conto; `verifica_scheda._naturale_col_modello` lo applica alle schede con un blocco solo e un solo modello riconosciuto (lo stesso riconoscimento del grado di sfida), dentro la verifica `creatura_base` e con la regola `numero.CA.naturale`.
+
+**Dove la base si conosce.** Lo scheletro non ne ha bisogno. Per gli altri la base è nota solo se il tipo nomina una razza di `razze_fonte`, cioè una razza fatta di soli livelli di classe: 0, il coboldo +1 (`naturale_razze`). Negli altri casi si giudica solo il minimo che il modello dà da solo, e sopra il minimo la scheda resta non verificabile. La variante del DM si dichiara con la stessa riga «Armatura naturale diversa dalla base: N …».
+
+**Misura** contro main 4e40d6c7 con `verifica_scheda.py Bestiario 0*/`: violazioni 30 → 31, non verificabili 368 → 369. La violazione nuova è vera: `skeletal-dire-lion-cr7.md` scrive +4 e lo scheletro Grande ha +2 (card al DM, la scheda non si tocca prima della risposta). Il non verificabile nuovo è `hell-hound-mezzoimmondo-cr4.md`, che scrive la CA senza addendi. Draxoksus (hobgoblin mezzo-immondo, +1) ora è giudicato e torna.
+
+**Limiti dichiarati.** Azarr Kul (versione finale) e Therysol sono mezzi-draghi ma il tipo scrive solo «dragon (augmented …)»: il modello non si riconosce e il loro +4 non è giudicato. Il Ghostlord non ha la riga del tipo nel blocco: il +5 da lich non è giudicato. Il fantasma (bonus di deviazione dal Carisma) e il licantropo (+2, forme diverse) non hanno la chiave. Le caratteristiche che i modelli cambiano non sono in questo pezzo. PF1e non ha `[gs.modelli_gs]`: lì il controllo tace.

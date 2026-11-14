@@ -49,18 +49,25 @@ outsider = 2
 # `soglie`: [dadi vita fino a, aumento]; `piu`: aumento fisso; `per_dv`: [dadi vita fino a, grado]
 # (scheletro e zombi: il grado viene dai dadi vita, la base non serve). L'ordine conta: prima i «mezzi».
 # Il licantropo conta i dadi vita dell'animale, che la scheda non separa: resta non verificabile.
+# `naturale` (lotto 5, nona parte): la riga «Armor Class» dello stesso «Creating a …». `piu`: sopra la base
+# (mezzo-celestiale e mezzo-immondo +1, mezzo-drago +4, vampiro +6); `almeno`: +5 o la base se è più alta (lich);
+# `taglia`: il numero che sostituisce la base (scheletro); `piu_taglia`: sopra la base, per taglia (zombi).
+# Il fantasma tiene la base solo sul piano etereo e prende un bonus di deviazione: non è qui.
+# `naturale_razze`: le sole razze di `razze_fonte` che hanno armatura naturale (coboldo +1, monsters-k-l.md);
+# le altre hanno 0, e con soli livelli di classe la base è quella.
+naturale_razze = [["kobold|cobold[oi]", 1]]
 ordine = ["half-celestial", "half-fiend", "half-dragon", "celestial", "fiendish", "lich", "vampire", "ghost", "skeleton", "zombie"]
 neutri = ["template", "archetipo", "augmented"]  # parole che accompagnano un modello riconosciuto
-"half-celestial" = { nomi = ["half-celestial", "mezz[oa]?[- ]?celest\\w*"], soglie = [[5, 1], [10, 2], [999, 3]] }
-"half-fiend" = { nomi = ["half-fiend", "mezz[oa]?[- ]?(?:immond|demon|diavol)\\w*"], soglie = [[4, 1], [10, 2], [999, 3]] }
-"half-dragon" = { nomi = ["half-dragon", "mezz[oa]?[- ]?drag\\w*"], piu = 2, minimo = 3 }
+"half-celestial" = { nomi = ["half-celestial", "mezz[oa]?[- ]?celest\\w*"], soglie = [[5, 1], [10, 2], [999, 3]], naturale = { piu = 1 } }
+"half-fiend" = { nomi = ["half-fiend", "mezz[oa]?[- ]?(?:immond|demon|diavol)\\w*"], soglie = [[4, 1], [10, 2], [999, 3]], naturale = { piu = 1 } }
+"half-dragon" = { nomi = ["half-dragon", "mezz[oa]?[- ]?drag\\w*"], piu = 2, minimo = 3, naturale = { piu = 4 } }
 celestial = { nomi = ["celestial\\w*"], soglie = [[3, 0], [7, 1], [999, 2]] }
 fiendish = { nomi = ["fiendish", "immond\\w*"], soglie = [[3, 0], [7, 1], [999, 2]] }
-lich = { nomi = ["\\blich\\b"], piu = 2 }
-vampire = { nomi = ["vampir\\w*\\b(?!\\s+spawn)"], piu = 2 }
+lich = { nomi = ["\\blich\\b"], piu = 2, naturale = { almeno = 5 } }
+vampire = { nomi = ["vampir\\w*\\b(?!\\s+spawn)"], piu = 2, naturale = { piu = 6 } }
 ghost = { nomi = ["\\bghost\\b", "fantasma"], piu = 2 }
-skeleton = { nomi = ["skeleton", "skeletal", "scheletr\\w*"], per_dv = [[1, "1/3"], [3, "1"], [5, "2"], [7, "3"], [9, "4"], [11, "5"], [14, "6"], [17, "7"], [20, "8"]] }
-zombie = { nomi = ["zombi\\w*"], per_dv = [[1, "1/4"], [2, "1/2"], [4, "1"], [6, "2"], [10, "3"], [14, "4"], [16, "5"], [20, "6"]] }
+skeleton = { nomi = ["skeleton", "skeletal", "scheletr\\w*"], per_dv = [[1, "1/3"], [3, "1"], [5, "2"], [7, "3"], [9, "4"], [11, "5"], [14, "6"], [17, "7"], [20, "8"]], naturale = { taglia = { Fine = 0, Diminutive = 0, Tiny = 0, Small = 1, Medium = 2, Large = 2, Huge = 3, Gargantuan = 6, Colossal = 10 } } }
+zombie = { nomi = ["zombi\\w*"], per_dv = [[1, "1/4"], [2, "1/2"], [4, "1"], [6, "2"], [10, "3"], [14, "4"], [16, "5"], [20, "6"]], naturale = { piu_taglia = { Fine = 0, Diminutive = 0, Tiny = 0, Small = 1, Medium = 2, Large = 3, Huge = 4, Gargantuan = 7, Colossal = 11 } } }
 
 [gs.razze]  # {pg, png, come la scheda la nomina}
 drow = { pg = 1, png = 0, nomi = ["drow"], fonte = "monsters-e-f.md" }

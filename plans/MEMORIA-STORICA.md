@@ -1484,3 +1484,14 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** la prima forma della dichiarazione cercava il numero in tutta la riga, e «15 contro il 13» faceva passare anche una scheda che scrivesse 13: ora conta solo il primo numero dopo i due punti. Il file di Tyrgarun è stato rinominato in `tyrgarun-blue-very-old-cr19.md`: `extract_statblocks.py --check` boccia un blocco con GS 19 in un file «cr18»; le citazioni vive seguono, quelle storiche no. Il GS «16–17» a terra della Fase 4 e la riga «Boost log» della scheda non sono stati toccati: restano al DM.
 
+### MS-0130 · 2026-11-14 · Regole, lotto 5 settima parte: il grado di sfida dei modelli dell'SRD
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole grado-di-sfida modelli scheletro zombi mezzo-immondo celestiale verifica-scheda conformita
+- **Origine:** riga del 2026-11-14 «lotto 5 settima parte: il grado di sfida dei modelli dell'SRD» in `plans/CHANGELOG.md`
+- **Testo:** `gs.atteso` conta dieci modelli dell'SRD 3.5 con `[gs.modelli_gs]`: aumento per soglie di dadi vita (celestiale, immondo, mezzo-celestiale, mezzo-immondo), aumento fisso (mezzo-drago, lich, vampiro, fantasma), grado dai dadi vita (scheletro, zombi). Violazioni 30 → 31, non verificabili 375 → 373 contro main af9d9a10. Nella stessa PR `conformita_statblocchi` smette di leggere una voce di equipaggiamento come attacco.
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** `vampir\w*(?!\s+spawn)` non esclude «vampire spawn», perché `\w*` torna indietro di una lettera: serve `\b` prima del lookahead. Tre schede col modello (hell hound mezzo-immondo, gufo gigante celestiale, ariete celestiale) restano non verificabili perché la base manca da `creature_base.toml`: è il pezzo successivo. Lo Skeletal Dire Lion scrive «2x HD», ma il modello scheletro non raddoppia i dadi vita: lo fa lo zombi.
+

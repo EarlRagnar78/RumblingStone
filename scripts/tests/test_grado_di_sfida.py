@@ -73,7 +73,9 @@ class Conto(unittest.TestCase):
     def test_il_mezzorco_non_e_un_modello_il_mezzo_immondo_si(self):
         self.assertIsNone(GS.modello("Medium humanoid (orc), mezzorco, half-orc", T35))
         self.assertIsNotNone(GS.modello("segugio infernale mezzo-immondo", T35))
-        self.assertIn("perche", GS.atteso({"fighter": 3}, 0, None, "half-fiend human", T35))
+        # dal lotto 5, settima parte, il mezzo-immondo ha il suo conto: guerriero di 3°, +1 fino a 4 dadi vita
+        self.assertEqual(GS.atteso({"fighter": 3}, 0, None, "half-fiend human", T35)["min"], 4)
+        self.assertIn("perche", GS.atteso({"fighter": 3}, 0, None, "human, pseudonatural template", T35))
 
     def test_creatura_base_con_livelli_e_una_forbice(self):
         """SRD, improving-monsters.md: ogre GS 3 con 4 DV; Barbaro 6 associato dà 9, non associato
@@ -135,10 +137,41 @@ class Scheda(unittest.TestCase):
         self.assertIn("perche", GS.atteso({}, 3, ogre, "ogre", T35, dichiarata=True))   # meno dadi vita della base
 
 
+class Modelli(unittest.TestCase):
+    """I modelli dell'SRD col conto scritto nella riga «Challenge Rating» (lotto 5, settima parte)."""
+
+    def test_scheletro_e_zombi_dai_dadi_vita(self):
+        e = GS.atteso({}, 16, None, "Large undead, skeleton template", T35)
+        self.assertEqual((e["min"], e["max"], e["regola"]), (7, 7, "gs.modello.dv"))
+        self.assertEqual(GS.atteso({}, 1, None, "scheletro umano", T35)["min"], GS.frazione("1/3"))
+        self.assertEqual(GS.atteso({}, 4, None, "zombi di ogre", T35)["min"], 1)
+        self.assertIn("perche", GS.atteso({}, 24, None, "skeleton", T35))              # oltre i 20 dadi vita
+        self.assertIn("perche", GS.atteso({"fighter": 2}, 4, None, "skeleton", T35))   # i livelli si perdono
+
+    def test_base_piu_aumento(self):
+        ogre = {"gs": 3, "dv": 4, "tipo": "giant"}
+        self.assertEqual(GS.atteso({}, 4, ogre, "ogre mezzo-immondo", T35)["min"], 4)      # fino a 4 DV: +1
+        self.assertEqual(GS.atteso({}, 4, ogre, "ogre immondo", T35)["min"], 4)            # da 4 a 7 DV: +1
+        self.assertEqual(GS.atteso({}, 4, ogre, "half-dragon ogre", T35)["min"], 5)        # +2
+        self.assertEqual(GS.atteso({}, 4, ogre, "ghost ogre (template)", T35)["min"], 5)
+        # hobgoblin con sei livelli da PG, mezzo-immondo: 6, più 2 fra 5 e 10 dadi vita
+        e = GS.atteso({"dragon shaman": 6}, 0, None, "hobgoblin mezzo-immondo, Dragon Shaman 6", T35)
+        self.assertEqual((e["min"], e["max"], e["regola"]), (8, 8, "gs.modello"))
+        # mezzo-drago: mai sotto 3
+        self.assertEqual(GS.atteso({"warrior": 1}, 0, None, "half-dragon kobold warrior", T35)["min"], 3)
+
+    def test_due_modelli_o_un_avanzamento_non_si_contano(self):
+        ogre = {"gs": 3, "dv": 4, "tipo": "giant"}
+        for dove in ("ogre mezzo-immondo avanzato", "ogre celestiale mezzo-drago", "ogre licantropo", "vampire spawn",
+                     "ogre mezzo-immondo in sella"):
+            self.assertIn("perche", GS.atteso({}, 4, ogre, dove, T35), dove)
+
+
 class Bestiario(unittest.TestCase):
     #: scarti veri in attesa della decisione del DM (card del thread delle regole): oggi nessuno.
     #: Arbitrax e Tyrgarun sono chiusi dalle risposte del DM del 2026-11-14 (RC-002; molto vecchio, GS 19)
-    IN_ATTESA: "set[str]" = set()
+    #: Skeletal Dire Lion: 16 dadi vita da scheletro = GS 7, la scheda scrive 6 (card al DM del 2026-11-14)
+    IN_ATTESA: "set[str]" = {"skeletal-dire-lion-cr6.md"}
 
     def test_il_bestiario_non_ha_altri_scarti(self):
         trovate, attese = [], set()

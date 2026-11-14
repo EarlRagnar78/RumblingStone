@@ -1320,3 +1320,22 @@ Se la taglia non è quella della base il grado atteso è un intervallo: +1 se è
 **Misura** (contro main 99c09bb6). `verifica_scheda.py Bestiario 0*/`: violazioni 34 → 30, non verificabili 378 → 375.
 
 **Conseguenze.** `IN_ATTESA` del cancello del grado di sfida è vuoto. Il file di Tyrgarun diventa `tyrgarun-blue-very-old-cr19.md`: `extract_statblocks.py --check` vuole nel nome il GS del blocco. Il GS «16–17» di Tyrgarun a terra (Fase 4) non è stato ricalcolato: resta al DM.
+
+### Lotto 5, settima parte — il grado di sfida dei modelli dell'SRD (2026-11-14)
+
+**Contesto.** Una scheda con un modello nel tipo o nel titolo usciva sempre non verificabile. Dieci modelli dell'SRD 3.5 hanno il conto scritto nella riga «Challenge Rating» del loro «Creating a …».
+
+**Decisione.** `gs.toml` ha `[gs.modelli_gs]`:
+
+- aumento per soglie di dadi vita: celestiale e immondo (0, +1, +2 a 3, 7 e oltre), mezzo-celestiale (+1, +2, +3 a 5, 10 e oltre), mezzo-immondo (+1, +2, +3 a 4, 10 e oltre);
+- aumento fisso: mezzo-drago +2 e mai sotto 3; lich, vampiro e fantasma +2;
+- grado dai dadi vita: scheletro e zombi. La base non serve, i livelli di classe si perdono.
+
+`gs.modello_noto` riconosce un solo modello e toglie le parole che lo accompagnano («template», «archetipo», «augmented»). Se resta un avanzamento, una cavalcatura o un secondo modello il grado resta non verificabile. Per i modelli ad aumento il conto è quello della scheda senza modello, più l'aumento; i dadi vita per le soglie sono quelli razziali più i livelli.
+
+**Cosa non entra.** Il licantropo conta i dadi vita dell'animale, che la scheda non separa. Il mezzo dado vita dello scheletro (GS 1/6) e dello zombi (GS 1/8) non si legge. I modelli dei manuali non OGL non sono nei dati. L'armatura naturale e le caratteristiche che il modello cambia non si riscontrano ancora.
+
+**Misura** (contro main af9d9a10). `verifica_scheda.py Bestiario 0*/`: violazioni 30 → 31, non verificabili 375 → 373. Draxoksus ora è giudicato e torna (hobgoblin di 6° mezzo-immondo, 6 + 2). Skeletal Dire Lion da non verificabile a violazione: 16 dadi vita da scheletro danno 7, la scheda scrive 6. Hell hound mezzo-immondo, gufo gigante celestiale e ariete celestiale restano non verificabili per un'altra ragione: la loro base non è in `creature_base.toml`.
+
+**Conseguenze.** Skeletal Dire Lion entra in `IN_ATTESA` fino alla risposta del DM (card del 2026-11-14). Nella stessa PR: `conformita_statblocchi._attacco_di_scheda` non legge più come attacco una voce di equipaggiamento, talenti o abilità («doppia ascia orchesca +1 (…)» in una scheda senza `attacchi:`); lo stato dei numeri sul repo non cambia.
+

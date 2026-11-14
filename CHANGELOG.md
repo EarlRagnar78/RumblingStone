@@ -18,6 +18,7 @@ Il tag e il rilascio li crea il workflow Release (ADR-0100).
 ## [Non rilasciato]
 
 ### Aggiunto
+- `verifica_scheda`, verifica `gs`: dieci modelli dell'SRD 3.5 hanno il loro conto del grado di sfida (celestiale, immondo, mezzo-celestiale, mezzo-immondo, mezzo-drago, lich, vampiro, fantasma, scheletro, zombi; `[gs.modelli_gs]` in `gs.toml`, ADR-0126).
 - `verifica_scheda`: una variante del DM si dichiara nella scheda con una riga «Armatura naturale diversa dalla base: N …» o «Grado di sfida diverso dalla regola: N …» e la voce di `campaign/REGOLE-CUSTOM.md`; la verifica la accetta solo se il numero è quello della scheda (ADR-0126). Scritte le tre risposte del DM del 2026-11-14: monaco «Pugno del Destino» a 15 m, Arbitrax variante RC-002, Tyrgarun molto vecchio col grado di sfida a 19 (il file diventa `tyrgarun-blue-very-old-cr19.md`).
 - `verifica_scheda`, verifica `gs`: una creatura che dichiara la sua base e ha più dadi vita si giudica con la tabella dell'SRD 3.5 per chi avanza per dadi vita (`[gs.avanzamento]` in `gs.toml`; ADR-0126, lotto 5, sesta parte).
 - `verifica_scheda`, verifiche `creatura_base` e `gs`: i draghi veri dell'SRD 3.5 si giudicano per colore e categoria d'età (armatura naturale e grado di sfida); `creature_base.toml` ha le 120 voci di `[draghi_eta]` (ADR-0126, lotto 5, quinta parte).
@@ -223,6 +224,7 @@ Il tag e il rilascio li crea il workflow Release (ADR-0100).
 - `voto_scrittura` resta, perché il banco del modello locale (ADR-0089) lo usa per votare le sue corse: il rilevatore del «sembra» ora vive in `validate_prosa` e il banco lo riusa (PR #264).
 
 ### Corretto
+- `conformita_statblocchi`: in una scheda senza `attacchi:` una voce di equipaggiamento con un «+1» non è più letta come l'attacco della scheda.
 - Stampa: `misura_stampa.parole_ripetute` toglie le testatine riga per riga. Nei capitoli di poche pagine la testatina contava come copia; i valori del registro scendono di poco (serata 12,3% → 11,8% a parità di testo).
 - I titoli ricomposti dal tema Typst perdevano l'apostrofo («LALBA» per «L'ALBA»): `to-string` ora rende gli apostrofi.
 - `coerenza_campagna fatti --state` (ADR-0125): se `state.yaml` non ha `march_clock.giorno_arrivo`, S1 finisce fra i `non_verificabili` invece di tacere; `ancore_state()` legge `STATE` alla chiamata, non all'import (il test della CLI ora prova davvero lo state indicato). Dalla revisione automatica della #379.

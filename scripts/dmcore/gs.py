@@ -66,6 +66,46 @@ def modello(dove: str, tabella: dict) -> "str | None":
     return None
 
 
+def modello_noto(dove: str, tabella: dict) -> "tuple[str, dict, str] | None":
+    """(nome, voce, testo senza il modello) se `dove` dichiara un solo modello di `[modelli_gs]`
+    e nient'altro che cambi il grado di sfida (avanzamento, cavalcatura, un secondo modello)."""
+    dati = tabella.get("modelli_gs") or {}
+    resto, trovati = dove, []
+    for nome in dati.get("ordine", []):
+        for espr in dati[nome]["nomi"]:
+            if re.search(espr, resto, re.I):
+                resto = re.sub(espr, " ", resto, flags=re.I)
+                trovati.append(nome)
+                break
+    for parola in dati.get("neutri", []):
+        resto = re.sub(parola, " ", resto, flags=re.I)
+    if len(trovati) != 1 or modello(resto, tabella):
+        return None
+    return trovati[0], dati[trovati[0]], resto
+
+
+def _col_modello(noto: "tuple[str, dict, str]", livelli: "dict[str, int]", dv_razziali: int, base: "dict | None",
+                 tabella: dict, dichiarata: bool, stessa_taglia: "bool | None") -> dict:
+    """Il grado di sfida con un modello dell'SRD: per dadi vita (scheletro, zombi) o base più aumento."""
+    nome, voce, resto = noto
+    tot = sum(livelli.values())
+    if "per_dv" in voce:
+        if tot or not dv_razziali:
+            return {"perche": f"«{nome}»: il grado viene dai dadi vita, e la scheda ha livelli di classe o non scrive i dadi"}
+        g = next((frazione(grado) for fino, grado in voce["per_dv"] if dv_razziali <= fino), None)
+        if g is None:
+            return {"perche": f"«{nome}» con {dv_razziali} dadi vita: fuori dalla tabella del modello"}
+        return {"min": g, "max": g, "regola": "gs.modello.dv", "conto": f"{nome} con {dv_razziali} dadi vita"}
+    senza = atteso(livelli, dv_razziali, base, resto, tabella, dichiarata, stessa_taglia)
+    if "perche" in senza:
+        return senza
+    dv = dv_razziali + tot
+    piu = voce["piu"] if "piu" in voce else next(a for fino, a in voce["soglie"] if dv <= fino)
+    basso, alto = (max(x + piu, Fraction(voce.get("minimo", 0))) for x in (senza["min"], senza["max"]))
+    return {"min": basso, "max": alto, "regola": "gs.modello",
+            "conto": f"{senza['conto']}; {nome} {piu:+d} con {dv} dadi vita"}
+
+
 def atteso(livelli: "dict[str, int]", dv_razziali: int, base: "dict | None", dove: str,
            tabella: dict, dichiarata: bool = False, stessa_taglia: "bool | None" = None) -> dict:
     """{"min", "max", "regola", "conto"} oppure {"perche": …} se non si ricostruisce.
@@ -78,7 +118,10 @@ def atteso(livelli: "dict[str, int]", dv_razziali: int, base: "dict | None", dov
     """
     m = modello(dove, tabella)
     if m:
-        return {"perche": f"«{m}» nel tipo o nel titolo: modello, avanzamento o cavalcatura cambiano il grado di sfida"}
+        noto = modello_noto(dove, tabella)
+        if noto is None:
+            return {"perche": f"«{m}» nel tipo o nel titolo: modello, avanzamento o cavalcatura cambiano il grado di sfida"}
+        return _col_modello(noto, livelli, dv_razziali, base, tabella, dichiarata, stessa_taglia)
     png = set(tabella.get("classi_png", []))
     l_png = sum(n for c, n in livelli.items() if c in png)
     l_pg = sum(n for c, n in livelli.items() if c not in png)

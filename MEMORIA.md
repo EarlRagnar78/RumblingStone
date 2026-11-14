@@ -85,6 +85,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 settima parte: il grado di sfida dei modelli dell'SRD.… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, le tre risposte del DM sulle card: monaco «Pugno del Destino» a 15 m… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: le quattro decisioni del DM sulle card del 14/11. Il d… | Sedici schede con corredo contro le undici di main; due schede con i tiri salvezza +1. Restano senza: monaco (mantello, dopo la correzione della velocità), bla… |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 sesta parte: il grado di sfida di chi avanza per dadi vita.… | In PR |
@@ -96,12 +97,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 7 sesta parte: la velocità delle razze senza dadi vita razziali… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 6 terza parte: razze dei mostri, taglia e velocità nelle abilit… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 7 quinta parte: i linguaggi delle razze senza dadi vita razzial… | In PR |
-| 2026-11-14 | GENERATORE-CREATURE-E-PNG | Lotto J, i modelli semplici di PF1e (card del DM del 2026-11-13, «Sì, col threa… | In PR |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 129 voci, l'ultima MS-0129 del 2026-11-14 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 130 voci, l'ultima MS-0130 del 2026-11-14 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

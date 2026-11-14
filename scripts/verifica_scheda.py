@@ -1251,7 +1251,15 @@ def creatura_base(p: Path) -> "tuple[list[dict], list[dict]]":
                            testo=f"la scheda non scrive i dadi vita: i {voce['dv']}d{voce['dado']} di {nome} non si riscontrano"))
         # armatura naturale: la base, se la taglia è la stessa
         nat = re.search(r"([+-]?\d+)\s*(?:naturale|natural|nat\b)", (sb.ca_dettaglio or "").replace("−", "-"), re.I)
-        if nat and stessa:
+        from dmcore import gs as GS
+        from dmcore import sistemi as S
+        dichiarato = voce.get("drago") and GS.modello(sb.tipo or "", S.dati(sis, "creature.costruzione").get("gs") or {})
+        if nat and dichiarato:
+            # un modello dichiarato nel tipo («Avanzato») cambia l'armatura naturale del drago
+            nv.append(dict(base, regola="numero.CA.naturale",
+                           testo=f"«{dichiarato}» nel tipo: l'armatura naturale di {nome} ({voce['naturale']:+d}) "
+                                 f"cambia col modello e non si riscontra"))
+        elif nat and stessa:
             ha = int(nat.group(1))
             if ha != voce["naturale"]:
                 viol.append(dict(base, regola="numero.CA.naturale", atteso=voce["naturale"], ha=ha,

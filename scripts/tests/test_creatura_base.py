@@ -176,6 +176,11 @@ class TestGiudizi(unittest.TestCase):
                            ca="-2 taglia, +18 naturale", dadi="21d12+105")
         self.assertNotIn("numero.dv.razziali", regole(viol))
         self.assertTrue([x for x in nv if "avanzato per dadi vita" in x["testo"]])
+        # un modello dichiarato nel tipo («Avanzato», +2 di armatura naturale) non è una violazione
+        viol, nv = giudica(titolo="Prova, Drago Rosso (Young Adult)", fonte="PCGen",
+                           tipo="Huge dragon (fire), 19 HD, LE, Avanzato", ca="-2 taglia, +20 naturale", dadi="19d12+95")
+        self.assertNotIn("numero.CA.naturale", regole(viol))
+        self.assertTrue([x for x in nv if "cambia col modello" in x["testo"]])
 
 
 if __name__ == "__main__":

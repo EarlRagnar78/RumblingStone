@@ -1440,3 +1440,14 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** il guadagno sul repo di oggi è di 17 voci: il lavoro serve alle schede che il thread del volume riempie dai Codex. Errori trovati per strada e corretti: gli shuriken prezzati come arma e non come proiettili, «unholy water» letta come acqua santa, «pozione di scudo della fede +2» letta come scudo +2, «arco lungo composito (+1 For)» contato 100 mo invece di 200. Le 33 voci che ha solo PF1e non si prezzano dall'SRD 3.5 e vanno a card.
 
+### MS-0126 · 2026-11-14 · Regole, lotto 5 quinta parte: i draghi veri per colore e categoria d'età
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole draghi creatura-base grado-di-sfida armatura-naturale verifica-scheda
+- **Origine:** riga del 2026-11-14 «lotto 5 quinta parte: i draghi veri per colore e categoria d'età» in `plans/CHANGELOG.md`
+- **Testo:** `creature_base.toml` ha le 120 voci dei draghi veri dell'SRD 3.5 per colore ed età, generate da `estrai_creature_base.py`. `verifica_scheda` giudica armatura naturale e grado di sfida di un drago che dichiara colore ed età. Violazioni 30 → 33, non verificabili 376 → 380. Le tre violazioni nuove (Arbitrax due, Tyrgarun una) sono su card al DM.
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** la prima versione dava tre violazioni false su Skullcrusher: ha «Avanzato» nel tipo (+2 di armatura naturale, canone del DM) e ora un modello dichiarato esce «non verificabile». Dadi vita diversi dall'età non sono una violazione perché i draghi crescono dentro l'età. L'adulto rosso dell'SRD ha Sag 19, più del maturo: è così nella fonte e i dati generati non si correggono a mano.
+

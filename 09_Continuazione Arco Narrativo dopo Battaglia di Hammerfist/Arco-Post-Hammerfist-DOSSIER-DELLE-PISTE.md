@@ -13,8 +13,8 @@
 > della skill `rumblingstone-indagine`.
 >
 > ⚠️ **Non aggiunge canone.** Ogni nodo cita il file e la sezione da cui viene.
-> Le tre aggiunte nuove sono marcate **[NUOVO]**, sono facoltative e sono
-> andate a Jfs su card con la scelta consigliata (§13). Le letture che il
+> Le tre aggiunte nuove sono andate a Jfs su card con la scelta consigliata, e
+> Jfs le ha decise il 2026-11-14: sono marcate **[DM 2026-11-14]** (§13). Le letture che il
 > dossier propone senza che un file le scriva sono marcate **[LETTURA]**: il DM
 > le usa o le lascia, e non diventano canone finché il tavolo non le gioca.
 >
@@ -243,10 +243,11 @@ non lo incontrano o non lo perquisiscono, **Sethrax** ne dà una copia quando si
 smaschera al Torneo (A6): arriva dopo il 30 Mirtul e dice dove la Torre **è già
 andata**.
 
-> ⚠️ **Il buco onesto**: la squadra di piromanti è una voce di tabella d%
-> (15% per giornata di marcia nel Witchwood, solo nella finestra G20-30). Un
-> nodo che porta il Fatto più forte della pista non dovrebbe dipendere da un
-> tiro di tabella. La soluzione consigliata è in §13, scelta S1 **[NUOVO]**.
+> **Scena fissa [DM 2026-11-14]**: la squadra di piromanti era una voce di
+> tabella d% (15% per giornata di marcia nel Witchwood, solo nella finestra
+> G20-30). Jfs ha scelto la scena fissa (§13, S1): la squadra c'è fra il G22 e
+> il G26 sulla strada che il gruppo fa davvero, nel Witchwood se va alla Foresta
+> Sacra, nel Vale centrale se Artemis parte da solo verso nord.
 > I piromanti sono già canone come presenza al Cerchio Sacro: Lythiel sa che
 > «piromanti drow ne stanno bruciando i nodi periferici»
 > (`Bestiario/png/Lythiel/Lythiel.md` §Con i PG).
@@ -461,11 +462,12 @@ possono incrociarle coi registri di Zin'thara, le consegne di «materiale» al
 Collezionista con date e pegni
 (`Bestiario/villain/Zin_thara_Vel_Ryn/Zin_thara_Vel_Ryn.md` §Il ramo che vale la
 pena giocare).
-**Cosa produce**: Ghaurush ucciso e perquisito apre il ramo «Sonjak tradisce la
-Mano Rossa» (Ghaurush.md §Esiti possibili), ma **nessun file scrive cosa
-produce quel ramo**. La soluzione consigliata è in §13, scelta S2 **[NUOVO]**.
-Zin'thara voltata produce già **−1 CS alla Notte dei Drow (Fase 0)** e la tenda
-della Matrona (Zin'thara.md).
+**Cosa produce**: Ghaurush ucciso e perquisito, o le lettere comprate in
+trattativa (S3), apre il ramo «Sonjak tradisce la Mano Rossa» (Ghaurush.md
+§Esiti possibili). Nessun file scriveva cosa producesse; Jfs ha deciso
+**[DM 2026-11-14]** (§13, S2) che vale l'effetto già scritto per Zin'thara
+voltata: **−1 CS alla Notte dei Drow (Fase 0)** e la tenda della Matrona
+(Zin'thara.md). Lettere e registri insieme non si sommano.
 
 ### C1 · Le due lettere di Ghaurush — G33-38, viaggio; o Rethmar Fase 1
 
@@ -485,13 +487,15 @@ INNOCENZA  Un generale che tiene corrispondenza: ha un registro in pelle di
 |---|---|
 | perquisire il cadavere | il Fatto, senza tiro (regola del §0) |
 | **FOR** (fisica) | il registro e le lettere stanno in una custodia legata al corpo di un gigante di quattro secoli: aprirla senza bruciare la carta vuol dire tenere ferma una cosa che pesa come un uomo **[LETTURA]** |
-| CAR (trattativa vera, Diplomazia CD 25, Ghaurush.md §L'offerta) | Ghaurush tratta un pedaggio, e chi tratta capisce che ha altro in vendita. **Se le lettere entrano nella trattativa** è la scelta S3 **[NUOVO]** (§13) |
+| CAR (trattativa vera, Diplomazia CD 25, Ghaurush.md §L'offerta) | Ghaurush tratta un pedaggio, e chi tratta capisce che ha altro in vendita. Le lettere entrano nella trattativa **al posto** del Seme-Mercato: chi le prende rinuncia alla tregua di tre giorni **[DM 2026-11-14]** (§13, S3) |
 | INT | Ghaurush e Sonjak si detestano «con perfetta educazione»: chi tiene le prove contro un concorrente non le brucia mai |
 
 > ⚠️ **Il buco onesto**: l'esito di default di Ghaurush è la **fuga** sotto il
 > 25% dei pf (Ghaurush.md §Esiti possibili). Se fugge, le lettere fuggono con
-> lui fino al secondo incontro, a Rethmar Fase 1, dopo la Notte dei Drow. Per
-> questo C1 non può essere l'unico nodo della pista: la rete passa da C2-C7.
+> lui fino al secondo incontro, a Rethmar Fase 1, dopo la Notte dei Drow. Jfs ha
+> aperto la seconda strada **[DM 2026-11-14]** (§13, S3): con la Diplomazia CD 25
+> Ghaurush vende le lettere al posto del Seme-Mercato, e chi le prende rinuncia
+> alla tregua. C1 resta comunque non l'unico nodo: la rete passa da C2-C7.
 
 ### C2 · I registri di Zin'thara — campi drow (G30-36) o Notte dei Drow (G40)
 
@@ -682,7 +686,7 @@ entrata: il PNG che ha parlato ha fatto un favore, e il mondo lo ricorda.
 | **G21** | Cerimonia, l'Anello vibra (A1). Tempestas consegna la lettera di Brenna (handout 1) | — | — |
 | **G21-22** | Tempestas alla cena | niente sulla Torre | Tempestas nota l'Anello che brilla (Sapienza Magica CD 14) e si avvicina da sé: *«Custode, il vostro anello canta»* (HOOKS §3.2). È il suo mestiere, non un favore |
 | **notte 22 o 23** | Sogno della Doppia Maschera (B5) | — | — |
-| **G22-26** | i piromanti bruciano i nodi del Cerchio (Lythiel.md) | la carta del cielo | vedi §13, S1: la squadra sta sulla strada che il gruppo fa davvero **[NUOVO]** |
+| **G22-26** | i piromanti bruciano i nodi del Cerchio (Lythiel.md) | la carta del cielo | la squadra sta sulla strada che il gruppo fa davvero (§13, S1) **[DM 2026-11-14]** |
 | **G23** | vibrazione: *«Lui è quasi pronto»* (clock 7/8) | nessuna mossa verso nord | la vibrazione arriva in pubblico, e stavolta il bagliore lo vedono tutti (HOOKS §7: è un effetto fisico) **[LETTURA]** |
 | **G25** | rito di Saraah per Hella (handout 6) | la direzione | Saraah, finito il rito di Hella, chiede dell'Anello che ha sentito nel Cerchio: lo chiede per il Cerchio, non per Artemis, e il rito di HOOKS §3.3 parte da lì **[LETTURA]** |
 | **G27** | vibrazione: *«Lui parte stanotte»* (clock 8/8) | la Torre ancora non trovata | l'ultima vibrazione **non** è un indizio: è il costo che arriva (§9) |
@@ -691,7 +695,7 @@ entrata: il PNG che ha parlato ha fatto un favore, e il mondo lo ricorda.
 | **G30** | **la Torre cammina** | — | da qui la carta del cielo dice dove la Torre **è andata**, non dov'è |
 | **G30-32** | Torneo di Dauth, Sethrax (A6, B6) | niente sulla pista B | se Tordek lo aiuta contro Xal'thor, Sethrax gli dice la frase sui debiti (Sethrax.md); se no, resta A6 |
 | **G30-36** | Sabotaggio dei campi drow (P3) | i registri | Zin'thara, se il suo clock è salito, si lascia trovare: vuole vendere, e i PG sono uno dei tre compratori del trigger (`state.yaml`) **[LETTURA]** |
-| **G33-38** | Ghaurush, «Il Preventivo» (`PIANO-INNESTI-SFIDE-NEI-BEAT-DI-CAMPAGNA` §4) | le lettere | vedi §13, S3 **[NUOVO]** |
+| **G33-38** | Ghaurush, «Il Preventivo» (`PIANO-INNESTI-SFIDE-NEI-BEAT-DI-CAMPAGNA` §4) | le lettere | Ghaurush le mette in vendita al posto del Seme-Mercato, con la Diplomazia CD 25 (§13, S3) **[DM 2026-11-14]** |
 | **G35-37** | sosta di Sonjak (`state.yaml`, waypoint) | Sajak = Sonjak | è il momento in cui Sonjak.md vuole l'«a-ha»: poco prima della Notte dei Drow, troppo tardi per cambiare piano |
 | **G40** | Notte dei Drow, il Prisma (C7) | — | — |
 | **G42** | Rethmar | — | §10 |
@@ -775,13 +779,15 @@ Solo effetti già scritti; nessun numero nuovo.
 | Sethrax fuggito col Seme di Porta | Zalkatar e l'Avatar hanno +2 RI; Artemis tira Concentrazione a CD +2 per il taglio dei legami; alla Torre Zalkatar ha +2 CR effettivo | stesso §PG3; `state.yaml`, trigger di Sethrax |
 | Sogno della Doppia Maschera vissuto | +2 TS Volontà e +1d6 (o +2d6) contro Zalkatar alla Torre; dopo, la «cortesia non richiesta» a Lathander e Mask, che a Rethmar resta colore e non intervento | `HOOKS-Artemis` §3.4, §6; MYTHAL §PG3 |
 | Ghaurush ucciso | −1 CS alla Fase 1; le lettere sul cadavere | `Ghaurush.md` §Esiti |
-| Accordo con Ghaurush | −1 CS alla Fase 1; il Seme-Mercato di Tordek in pegno, rivenduto a Varis entro un mese | `Ghaurush.md` §L'offerta |
+| Trattativa vera con Ghaurush, tregua (Diplomazia CD 25) | tregua di 3 giorni sul fronte delle colline; il Seme-Mercato di Tordek in pegno, rivenduto a Varis entro un mese | `Ghaurush.md` §L'offerta |
+| Trattativa vera con Ghaurush, lettere (Diplomazia CD 25) | le lettere al posto del Seme-Mercato: niente tregua, il Seme resta a Tordek, e le lettere valgono come Zin'thara voltata (S2) | §13, S3 **[DM 2026-11-14]** |
+| Accettazione dell'offerta di Ghaurush | −1 CS alla Fase 1; a Hammerfist qualcuno lo viene a sapere | `Ghaurush.md` §L'offerta |
 | Zin'thara voltata | −1 CS alla Notte dei Drow (Fase 0); i PG entrano al campo sapendo dove dorme la Matrona | `Zin'thara.md` §Il ramo |
 | Zin'thara uccisa | Fase 0 più rozza: +1 ondata, −1 CS | `Zin'thara.md` §Esiti |
 | Drow preso vivo al Palio | intel sulla Fase 0, −1 al clock di Sonjak | `P2D-GIORNO2` §3.3 |
 | Sal scoperto prima di Rethmar | arriva senza trappole; vantaggio nella Fase 4 | `P2C`, tabella delle conseguenze |
 | Statue del carro liberate | il contingente della Fase 4 cala di 3 unità | `P2C` §Collegamento con la Fase 4 |
-| Le lettere usate | **non scritto**: vedi §13, S2 **[NUOVO]** | — |
+| Le lettere usate | −1 CS Fase 0 e la tenda della Matrona, come Zin'thara voltata; non si sommano ai registri | §13, S2 **[DM 2026-11-14]** |
 
 > «CS» è l'unità che le schede di Ghaurush e Zin'thara usano per la difficoltà
 > di una fase; il repo non la definisce altrove. Il dossier la riporta com'è.
@@ -827,8 +833,8 @@ un fatto che il tavolo non ha visto, non è una deduzione: è il DM che si spieg
 |---|---|---|
 | `HANDOUTS` handout 7 | rimandava a `SUBQUEST-Artemis` §4.3, che non esiste: l'indizio gratuito sta in §4.1 | corretto il rimando, nessun cambio di contenuto |
 | `P2A-Torre-PARTE1` §1 e §3 | scritto prima degli hook v2: chiama Artemis «alleata/PNG chiave», mette la Torre «dopo la Quest Hella» e dà un «globo runico di Artemis» per vedere l'invisibile | **non toccato**: è un master dell'arco. Va letto come superato da `HOOKS-Artemis` v2; la correzione è lavoro a parte |
-| `INCONTRI-VIAGGIO` §1.1 contro handout 7 | la carta del cielo sta su un incontro di tabella d% | scelta S1 a Jfs (§13) |
-| `Ghaurush.md` §Esiti | «aprono il ramo "Sonjak tradisce la Mano Rossa"», ma il ramo non è scritto | scelta S2 a Jfs (§13) |
+| `INCONTRI-VIAGGIO` §1.1 contro handout 7 | la carta del cielo stava su un incontro di tabella d% | deciso da Jfs: scena fissa (§13, S1) |
+| `Ghaurush.md` §Esiti | «aprono il ramo "Sonjak tradisce la Mano Rossa"», ma il ramo non era scritto | deciso da Jfs: come Zin'thara voltata (§13, S2) |
 | `ESPANSIONE` §1.4 | prima stesura, con «Varis» nel ruolo del Collezionista | letto con la correzione del 2026-09-24 (C5) |
 | `state.yaml` P2A «Day 28-35» contro la scadenza del G30 | non è una contraddizione: dopo il G30 la Torre si insegue fino al G35 (`P2A-Torre-PARTE4-FINALE` §4) | spiegato in §9 |
 
@@ -851,41 +857,47 @@ ARC-07 e la Battaglia di Hammerfist saranno giocati:
 
 ## §13 · Le scelte nuove, e le soluzioni consigliate
 
-Tre aggiunte, tutte facoltative, tutte andate a Jfs su card con il nome della
-scheda, il file e la riga. Finché Jfs non sceglie, il dossier si gioca **senza**.
+Tre aggiunte, andate a Jfs su card con il nome della scheda, il file e la riga.
+Jfs le ha decise tutte e tre il 2026-11-14, ognuna con l'opzione consigliata.
+Le altre opzioni restano scritte qui sotto, per chi rilegge il perché.
 
-### S1 · La squadra dei piromanti: tiro di tabella o scena fissa? **[NUOVO]**
+### S1 · La squadra dei piromanti: tiro di tabella o scena fissa? **[DM 2026-11-14]**
 
 `HANDOUTS` handout 7 («Quando darlo») mette la carta sul mago dei piromanti
 drow, che sta in `INCONTRI-VIAGGIO-CANNATH-VALE` §1.1, voce 56-70: 15% per
 giornata di marcia, solo nel Witchwood.
 
-**Consigliata**: scena fissa. La squadra c'è, fra il G22 e il G26, sulla strada
+**Scelta da Jfs (era la consigliata)**: scena fissa. La squadra c'è, fra il G22 e il G26, sulla strada
 che il gruppo fa davvero: nel Witchwood se va alla Foresta Sacra (dove Lythiel
 dice già che i piromanti bruciano i nodi), nel Vale centrale se Artemis parte da
 solo verso nord. Il tiro di tabella resta per gli altri incontri. La seconda
-occasione (la copia di Sethrax) resta com'è.
+occasione (la copia di Sethrax) resta com'è. Scartate: tenere il tiro d% 56-70
+(la carta può non uscire mai) e la scena fissa solo nel Witchwood (Artemis da
+solo verso nord non la troverebbe).
 
-### S2 · Cosa producono le due lettere, se i PG le hanno? **[NUOVO]**
+### S2 · Cosa producono le due lettere, se i PG le hanno? **[DM 2026-11-14]**
 
 `Ghaurush.md` §Esiti possibili dice che le lettere «aprono il ramo "Sonjak
 tradisce la Mano Rossa"», e nessun file scrive cosa produce.
 
-**Consigliata**: le lettere valgono lo stesso effetto già scritto per Zin'thara
+**Scelta da Jfs (era la consigliata)**: le lettere valgono lo stesso effetto già scritto per Zin'thara
 voltata (**−1 CS alla Notte dei Drow, Fase 0**, e la tenda della Matrona), perché
 sono lo stesso tipo di prova contro la stessa persona. Non si sommano: lettere e
 registri insieme danno il Nome (C1 + C2), non due volte lo sconto. Nessun numero
-nuovo.
+nuovo. Scartate: consegnarle alla Mano Rossa con un effetto nuovo da tarare, e
+lasciare il ramo al DM al tavolo.
 
-### S3 · Ghaurush può mettere le lettere sul tavolo della trattativa? **[NUOVO]**
+### S3 · Ghaurush può mettere le lettere sul tavolo della trattativa? **[DM 2026-11-14]**
 
 `Ghaurush.md` §Rapporti: le tiene «aspettando che valgano di più», e §L'offerta:
 chiede in pegno il Seme-Mercato.
 
-**Consigliata**: sì, ma solo con la Diplomazia CD 25 già scritta, e **al posto**
+**Scelta da Jfs (era la consigliata)**: sì, ma solo con la Diplomazia CD 25 già scritta, e **al posto**
 del Seme-Mercato, non in più: Ghaurush vende la cosa che vale di più a chi la
 paga. Così C1 non dipende più dall'esito di default (la fuga), e il prezzo resta
-un prezzo: chi prende le lettere rinuncia alla tregua di tre giorni.
+un prezzo: chi prende le lettere rinuncia alla tregua di tre giorni. Scartate:
+lettere solo dal cadavere (con la fuga di default non si avrebbero quasi mai) e
+lettere in più del Seme (tregua e lettere insieme).
 
 ---
 
@@ -935,7 +947,7 @@ Nodi      C1 Lettere di Ghaurush ..... G33-38 / Rethmar F1 (FOR, CAR, INT)
 Falso     Halveth è dappertutto, e non è il nodo (§8)
 Picco     lettere + registri, o Sal che dice «Sajak»
 Se falliscono  +1 CS Fase 1 (Ghaurush), Zin'thara a un altro compratore
-Effetto   −1 CS Fase 0 (Zin'thara voltata); lettere: scelta S2
+Effetto   −1 CS Fase 0 (Zin'thara voltata o lettere, non si sommano)
 ```
 
 ---

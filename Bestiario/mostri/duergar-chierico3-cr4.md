@@ -21,6 +21,7 @@ attacchi:
   - Mischia flagello perfetto +6 (1d8+2)
 voci:
   - Talenti: Incantare in Combattimento, Arma Focalizzata (flagello)
+  - Altro equipaggiamento: armatura completa, scudo pesante di acciaio, flagello perfetto, balestra leggera con 20 quadrelli, amuleto dell'armatura naturale +1, 700 mo
 ```
 
 
@@ -33,3 +34,7 @@ Notes: sacerdote minore del culto di Abbathor al ponte.
 > correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-12, lotto 1-bis): campo `sensi` aggiunto, duergar: scurovisione 36 m (SRD, «Dwarf, Duergar»). La scheda non la scriveva.
 
 > correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-13, decisione del DM sulla card): 3 DV danno 2 talenti e la scheda ne aveva 4. Tolti **Scacciare Migliorato** e **Iniziativa Migliorata**; restano Incantare in Combattimento e Arma Focalizzata (flagello). Iniziativa +3 → **−1** (Des 8, senza il +4 del talento).
+
+> RC-001 (2026-11-14, ADR-0134): corredo trascritto dalle «Possessions» dell'export PCGen citato in testa. Dal PNG dei Codex PF1e «Scholar Priest» `[CANONE — DM 2026-11-14, RC-001]` non entra niente: il corredo dell'export è già sopra il tetto. Valore 3.865 mo, monete escluse, contro i 3.300 del livello effettivo 4 (DMG 3.5, Tabella 4-23).
+
+> Equipaggiamento sopra la tabella: scelta del DM (card del 14/11) `[CANONE — DM 2026-11-14]`. L'amuleto dell'armatura naturale +1 è dentro la CA 20 e resta.

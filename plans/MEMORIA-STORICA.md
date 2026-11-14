@@ -1462,3 +1462,13 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** la regola non si applica a una base trovata per nome. Flind (Manuale dei Mostri II) e ogre Skullcrusher (Races of Faerûn) hanno «gnoll» e «ogre» nel nome ma sono mostri loro: contarli come avanzati avrebbe dato due violazioni false (flind GS 1 invece di 3).
 
+### MS-0128 · 2026-11-14 · ADR-0134: le quattro decisioni del DM sul corredo
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0134
+- **Temi:** schede equipaggiamento regole bestiario
+- **Origine:** riga del 2026-11-14 «ADR-0134, regola RC-001: le quattro decisioni del DM sulle card del 14/11» in `plans/CHANGELOG.md`
+- **Testo:** duergar chierico 3 e Ainin tengono il corredo dell'export sopra la Tabella 4-23, dichiarato come scelta del DM; per l'orco regular vale la scheda del 18/10 e non il .pcg; il mantello della resistenza +1 dei Codex entra nel goblin incursore su worg e nel Portalame, coi tiri salvezza +1.
+- **Trovato nel repo:** `ADR-0134` → `plans/adr/ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md` · `campaign/REGOLE-CUSTOM.md`
+- **Solo qui:** il «sì» agli oggetti che alzano CA e tiri salvezza tocca in pratica solo il mantello della resistenza +1: l'anello e l'amuleto del Bloodfire Sorcerer Kulkorzhul li ha già, il mantello non entra nel chierico della Mano del Destino (5.567 + 1.000 supera 5.600), la cintura della forza del gigante +2 nel 3.5 non esiste a quel prezzo (punto 7 della regola: DM). Il monaco «Pugno del Destino» resta fuori da questa PR: il suo Riflessi +8 ha un +1 che la scheda non spiega e la scheda è in mano al thread delle regole per la velocità. La riga «Equipaggiamento sopra la tabella: … DM» è quella che `verifica_scheda.ricchezza` riconosce. La scheda dell'orco regular non aveva `voci:` nello statblocco: aggiunte.

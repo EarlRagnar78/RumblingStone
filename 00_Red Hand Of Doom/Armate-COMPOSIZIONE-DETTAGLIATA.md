@@ -284,6 +284,10 @@ Fonte principale: file Arc-04/05/06/07 + `Bestiario/pregen-pcgen/` vari.
 | Spectre | 7 | [REF MM p.232] | Ghostlord pride |
 | Allip | 3 | [REF MM p.11] | Minion non-morto |
 
+<!-- storico -->
+> Storia della tabella: Skeletal Dire Lion da GS 6 a GS 7 e file `skeletal-dire-lion-cr7.md` (decisione del DM del 2026-11-14: 16 dadi vita da scheletro, ADR-0126); Tyrgarun da «Old» GS 18 a «Very Old» GS 19 (decisione del DM del 2026-11-14).
+<!-- /storico -->
+
 Ghostlord branch completo:
 
 - `09_…/Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-STATBLOCCHI.md`

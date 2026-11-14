@@ -124,7 +124,8 @@ class Scheda(unittest.TestCase):
 
 class Bestiario(unittest.TestCase):
     #: scarti veri in attesa della decisione del DM (card del thread delle regole)
-    IN_ATTESA: "set[str]" = set()
+    #: Arbitrax: giovane adulto rosso dell'SRD = GS 13, la scheda scrive 15 (card al DM del 2026-11-14)
+    IN_ATTESA: "set[str]" = {"arbitrax-drago-rosso-cr15.md"}
 
     def test_il_bestiario_non_ha_altri_scarti(self):
         trovate, attese = [], set()

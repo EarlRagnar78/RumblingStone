@@ -129,6 +129,43 @@ def draghi(cartella: Path) -> "dict[str, dict]":
     return out
 
 
+_TAGLIA_SIGLA = {"T": "Tiny", "S": "Small", "M": "Medium", "L": "Large", "H": "Huge", "G": "Gargantuan", "C": "Colossal"}
+
+
+def draghi_per_eta(cartella: Path) -> "dict[str, dict]":
+    """I draghi veri per colore e categoria d'età: taglia, dadi vita, caratteristiche, armatura
+    naturale e grado di sfida, dalle tabelle «X Dragons by Age» e «X Dragon Abilities by Age»
+    e dalla riga «Challenge Ratings» di ogni drago."""
+    out: dict[str, dict] = {}
+    for f in sorted(cartella.glob("*.md")):
+        testo = f.read_text(encoding="utf-8")
+        for m in re.finditer(r"^### (\w+) Dragon\n(.*?)(?=^### |^## |\Z)", testo, flags=re.S | re.M):
+            colore, corpo = m.group(1).lower(), m.group(2)
+            gs = re.search(r"\*\*Challenge Ratings?:\*\*([^\n]+)", corpo)
+            per_eta = re.search(r"<table[^>]*>(?:(?!</table>).)*Dragons by Age</th>.*?</table>", corpo, flags=re.S)
+            capacita = re.search(r"<table[^>]*>(?:(?!</table>).)*Abilities by Age</th>.*?</table>", corpo, flags=re.S)
+            if not (gs and per_eta and capacita):
+                continue
+            gradi = {e.strip().lower(): int(n) for e, n in re.findall(r"([A-Za-z ]+?) (\d+)(?:;|$)", gs.group(1).strip())}
+            naturale = {}
+            for r in (_celle(x) for x in re.findall(r"<tr>(.*?)</tr>", capacita.group(0), flags=re.S)):
+                n = re.search(r"\+(\d+) natural", r[3]) if len(r) > 3 else None
+                if n:
+                    naturale[r[0].lower()] = int(n.group(1))
+            voci = {}
+            for r in (_celle(x) for x in re.findall(r"<tr>(.*?)</tr>", per_eta.group(0), flags=re.S)):
+                dv = re.match(r"(\d+)d12", r[2]) if len(r) > 8 else None
+                eta = r[0].lower() if r else ""
+                if not dv or r[1] not in _TAGLIA_SIGLA or eta not in gradi or eta not in naturale:
+                    continue
+                voci[eta] = {"taglia": _TAGLIA_SIGLA[r[1]], "dv": int(dv.group(1)), "naturale": naturale[eta],
+                             "car": dict(zip(("for", "des", "cos", "int", "sag", "car"), map(int, r[3:9]))),
+                             "gs": gradi[eta]}
+            if voci:
+                out[colore] = voci
+    return out
+
+
 def creature_prd(cartella: Path) -> "dict[str, dict]":
     """Le creature dei Bestiary PF1e (PSRD-Data, tabella `creature_details` di book-b1…b4.db)."""
     import sqlite3
@@ -200,6 +237,12 @@ def main(argv: "list[str]") -> int:
         print("# tabella «Dragon Space/Reach, Attacks, and Damage» di monsters-dr-dw.md.\n[draghi]")
         for taglia, att in draghi(Path(argv[2])).items():
             print(f'{taglia} = {_toml(att)}')
+        print("\n# I draghi veri per colore e categoria d'età: taglia, dadi vita (d12), armatura naturale,")
+        print("# caratteristiche e grado di sfida, dalle tabelle «Dragons by Age» e «Dragon Abilities by Age».")
+        for colore, voci in sorted(draghi_per_eta(Path(argv[2])).items()):
+            print(f"\n[draghi_eta.{colore}]")
+            for eta, voce in voci.items():
+                print(f'"{eta}" = {_toml(voce)}')
     return 0
 
 

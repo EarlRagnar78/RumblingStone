@@ -1235,7 +1235,12 @@ def creatura_base(p: Path) -> "tuple[list[dict], list[dict]]":
         # dadi vita razziali: «4d8» dell'ogre deve stare nei dadi scritti
         dadi = " ".join(x for x in (sb.pf_dado or "", sb.tipo or "") if x)
         scritti = re.findall(r"(\d+)d(\d+)", dadi)
-        if scritti and isinstance(voce["dv"], int):
+        if scritti and voce.get("drago") and not any(n == str(voce["dv"]) for n, _ in scritti):
+            # un drago vero cresce di dadi vita dentro la sua età (riga «Advancement»): non è un errore
+            nv.append(dict(base, regola="numero.dv.razziali",
+                           testo=f"dadi vita {'+'.join(f'{n}d{f}' for n, f in scritti)} contro i {voce['dv']}d12 di "
+                                 f"{nome}: avanzato per dadi vita o di un'altra categoria d'età"))
+        elif scritti and isinstance(voce["dv"], int):
             if (str(voce["dv"]), str(voce["dado"])) not in scritti:
                 viol.append(dict(base, regola="numero.dv.razziali", atteso=f"{voce['dv']}d{voce['dado']}",
                                  ha="+".join(f"{n}d{f}" for n, f in scritti),

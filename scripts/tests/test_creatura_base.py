@@ -151,6 +151,32 @@ class TestGiudizi(unittest.TestCase):
                           ca="-2 taglia, +20 naturale", dadi="19d12+95", attacco="Mischia morso +27 (4d6+10)")
         self.assertIn("numero.danno.dado", regole(viol))
 
+    def test_drago_vero_con_la_categoria_d_eta(self):
+        # colore ed età scritti: la base porta dadi vita, armatura naturale e grado di sfida dell'SRD
+        nome, voce = CB.drago("Prova, Drago Rosso (Young Adult)", "Huge")
+        self.assertEqual((nome, voce["dv"], voce["naturale"], voce["gs"]), ("young adult red dragon", 19, 18, 13))
+        self.assertEqual(CB.drago("drago rosso adulto maturo", "Huge")[0], "mature adult red dragon")
+        self.assertEqual(CB.drago("Blue Old Dragon", "Huge")[0], "old blue dragon")
+        self.assertEqual(CB.drago("drago verde molto vecchio", "Huge")[0], "very old green dragon")
+        # la taglia non è quella dell'età, o l'età non è scritta: restano solo gli attacchi della taglia
+        self.assertNotIn("dv", CB.drago("Drago Rosso (Young Adult)", "Large")[1])
+        self.assertNotIn("dv", CB.drago("Drago Rosso", "Huge")[1])
+        # 120 voci: dieci colori per dodici età
+        from dmcore import sistemi as S
+        eta = S.dati("dnd35", "creature.base")["draghi_eta"]
+        self.assertEqual((len(eta), {len(v) for v in eta.values()}), (10, {12}))
+        # l'armatura naturale è quella dell'età; i dadi vita in più sono un avanzamento, non un errore
+        viol, _ = giudica(titolo="Prova, Drago Rosso (Young Adult)", fonte="PCGen", tipo="Huge dragon (fire), 19 HD, LE",
+                          ca="-2 taglia, +18 naturale", dadi="19d12+95")
+        self.assertEqual(regole(viol) & {"numero.dv.razziali", "numero.CA.naturale"}, set())
+        viol, _ = giudica(titolo="Prova, Drago Rosso (Young Adult)", fonte="PCGen", tipo="Huge dragon (fire), 19 HD, LE",
+                          ca="-2 taglia, +24 naturale", dadi="19d12+95")
+        self.assertIn("numero.CA.naturale", regole(viol))
+        viol, nv = giudica(titolo="Prova, Drago Rosso (Young Adult)", fonte="PCGen", tipo="Huge dragon (fire), 21 HD, LE",
+                           ca="-2 taglia, +18 naturale", dadi="21d12+105")
+        self.assertNotIn("numero.dv.razziali", regole(viol))
+        self.assertTrue([x for x in nv if "avanzato per dadi vita" in x["testo"]])
+
 
 if __name__ == "__main__":
     unittest.main()

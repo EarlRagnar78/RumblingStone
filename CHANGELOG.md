@@ -18,6 +18,7 @@ Il tag e il rilascio li crea il workflow Release (ADR-0100).
 ## [Non rilasciato]
 
 ### Aggiunto
+- Stampa: in una pagina a una colonna la scheda di una creatura esce su due colonne dentro il suo riquadro (ADR-0133, in prova fino al 2026-11-28). Le schede basse restano intere; nelle pagine a due colonne non cambia niente.
 - Stampa: le carte da tavolo. Un capitolo del manifest con `"layout": "carte"` (e la chiave `contrade`) esce in carte da 63 × 88 mm, nove per foglio A4, coi dati letti dalle tabelle dei master; prime: le 36 carte della corsa del Drappo di Tarsilia (`DRAPPO-CARTE-DA-TAVOLO.manifest.json`), PDF/UA-1 e PDF/A-2a. Disegnate senza una serata giocata: si rivedono dopo la prima.
 - Immagini: `scripts/provenienza_immagini.py` scrive nelle copie `web/` la dichiarazione di provenienza del master (campo IPTC `DigitalSourceType`, letta dal manifesto C2PA firmato), senza ricomprimerle; `build_image_derivatives.py` la mette da sé quando rigenera una copia (ADR-0132). Nei booklet PDF 36 immagini su 89 ora dicono di essere generate.
 - Stampa: i booklet PDF sono anche PDF/A-2a (ISO 19005-2, il PDF per l'archiviazione), insieme a PDF/UA-1 (ADR-0131). Se typst non riesce, `export_booklet_typst.py` esce col solo PDF/UA-1 e lo dice. I 20 booklet passano veraPDF in tutti e due i profili.

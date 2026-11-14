@@ -1331,3 +1331,13 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `09_…/Immagini-Handout/carta-del-cielo/PROVENIENZA.txt` · `09_…/Immagini-Handout/carta-del-cielo/carta-del-cielo-zalkatar.ssc` · handout 7 in `Arco-Post-Hammerfist-HANDOUTS.md`
 - **Solo qui:** la voce è nata MS-0114 ed è diventata MS-0115 al riallineo dopo la #425. SkyCultureMaker, il plugin nominato nel §3.1, c'è nella 26.2 ma è solo a finestre: non ha comandi da script, quindi `index.json` è scritto a mano e il plugin non migliora alcuna misura. La 26.2 rifiuta i `.fab` («Failed to find index.json») e non ha più `core.setSkyLanguage`. Senza schermo restava appesa a `quitStellarium` finché in `config.ini` non ci sono il luogo fisso, `automatic_updates_enabled=false` e `flag_search_online=false`. L'AppImage legge `/usr/share/stellarium` se c'è una 23.4 installata da apt. ArchaeoLines accende di suo tutte le sue linee: vanno spente una per una; l'etichetta del parallelo non compare nell'immagine. Fra 23.4 e 26.2 senza segno cambiano circa 25.000 pixel di disegno, senza differenze che si vedano.
 
+### MS-0116 · 2026-11-14 · ADR-0133: la scheda a tutta pagina va su due colonne
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0133
+- **Temi:** schede stampa booklet typst
+- **Origine:** riga del 2026-11-14 «ADR-0133, la scheda a tutta pagina va su due colonne dentro il riquadro» in `plans/CHANGELOG.md`
+- **Testo:** terza PR dello standard delle schede. Nelle pagine a una colonna il corpo della scheda esce su due colonne pari dentro il riquadro, come le colonne dei manuali PF1e e 3.5. Scelta del DM sulla card del 2026-11-13, in prova fino al 2026-11-28.
+- **Trovato nel repo:** `ADR-0133` → `plans/adr/ADR-0133-la-scheda-a-tutta-pagina-va-su-due-colonne.md` · `scripts/tests/test_scheda_due_colonne.py`
+- **Solo qui:** in typst un blocco di altezza fissa con dentro `columns(2)` si spezza da sé a pagina girata e le colonne riprendono: provato con una scheda di 4000 parole, nessuna parola persa. L'altezza del blocco è metà del corpo misurato a mezza larghezza più 16 pt, perché le fasce non si dividono mai a metà esatta. La misura delle righe lunghe non è nel repo: conta le righe dentro i riquadri col fondo del tema larghi più di metà pagina che contengono la fascia DIFESA; un primo conto per corpo del carattere prendeva anche piedi e colophon e dava 80 righe invece di 11. Durante la misura ho usato `git stash` per provare che il test fallisce senza la modifica mentre `misura_stampa` girava: ho fermato e rifatto la misura da capo. Il worktree di confronto aveva ancora la modifica della prova: fermato e rifatto anche quello. Il DM ha visto la prova con la soglia a 6 cm, e la soglia è rimasta quella.

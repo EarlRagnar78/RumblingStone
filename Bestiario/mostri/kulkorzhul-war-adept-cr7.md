@@ -1,4 +1,4 @@
-# KulkorZhul War Adept (Sorcerer 7, dragonblood) [TRANSCRIBED — PCGen, L1 2026-07-08]
+# KulkorZhul War Adept (Hobgoblin Sorcerer 7, dragonblood) [TRANSCRIBED — PCGen, L1 2026-07-08]
 **Faction**: red-hand | **Role**: caster-arcane | **Environment**: any | **CR**: 7 | **Source**: PCGen export `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/KulkorZhul war Adept cr8_no spell.htm` (+ 4 varianti cr9) | **Status**: transcribed-pcgen
 
 

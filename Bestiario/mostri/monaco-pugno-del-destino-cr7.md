@@ -1,4 +1,4 @@
-# Monaco «Pugno del Destino» (Monk 7) [TRANSCRIBED — PCGen, L1 2026-07-08]
+# Monaco «Pugno del Destino» (Hobgoblin Monk 7) [TRANSCRIBED — PCGen, L1 2026-07-08]
 **Faction**: red-hand | **Role**: melee-heavy | **Environment**: any | **CR**: 7 | **Source**: PCGen export `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/monaco pugno del destino cr7.htm` | **Status**: transcribed-pcgen
 
 

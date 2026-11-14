@@ -121,11 +121,25 @@ class Scheda(unittest.TestCase):
         self.assertEqual(nv, [])
         self.assertEqual([(x["atteso"], x["ha"]) for x in v], [("10", "12")])
 
+    def test_avanzata_per_dadi_vita(self):
+        # SRD, «Improved Monster CR Increase»: drago +1 ogni 2 DV aggiunti, gigante +1 ogni 4
+        drago = {"gs": 13, "dv": 20, "tipo": "dragon"}
+        e = GS.atteso({}, 22, drago, "drago verde adulto", T35, dichiarata=True, stessa_taglia=True)
+        self.assertEqual((e["min"], e["max"], e["regola"]), (14, 14, "gs.base.avanzata"))
+        ogre = {"gs": 3, "dv": 4, "tipo": "giant"}
+        e = GS.atteso({}, 8, ogre, "ogre", T35, dichiarata=True, stessa_taglia=False)
+        self.assertEqual((e["min"], e["max"]), (4, 5))            # +1 se è cresciuta di taglia
+        # trovata solo per nome (un flind non è uno gnoll avanzato), o con livelli di classe: non si conta
+        self.assertIn("perche", GS.atteso({}, 8, ogre, "ogre", T35))
+        self.assertIn("perche", GS.atteso({"barbarian": 2}, 8, ogre, "ogre", T35, dichiarata=True))
+        self.assertIn("perche", GS.atteso({}, 3, ogre, "ogre", T35, dichiarata=True))   # meno dadi vita della base
+
 
 class Bestiario(unittest.TestCase):
     #: scarti veri in attesa della decisione del DM (card del thread delle regole)
     #: Arbitrax: giovane adulto rosso dell'SRD = GS 13, la scheda scrive 15 (card al DM del 2026-11-14)
-    IN_ATTESA: "set[str]" = {"arbitrax-drago-rosso-cr15.md"}
+    #: Tyrgarun: «Old» GS 18 con 30 DV, tre più del vecchio blu = GS 19 (card al DM del 2026-11-14)
+    IN_ATTESA: "set[str]" = {"arbitrax-drago-rosso-cr15.md", "tyrgarun-blue-old-cr18.md"}
 
     def test_il_bestiario_non_ha_altri_scarti(self):
         trovate, attese = [], set()

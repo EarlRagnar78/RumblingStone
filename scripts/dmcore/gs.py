@@ -67,12 +67,14 @@ def modello(dove: str, tabella: dict) -> "str | None":
 
 
 def atteso(livelli: "dict[str, int]", dv_razziali: int, base: "dict | None", dove: str,
-           tabella: dict) -> dict:
+           tabella: dict, dichiarata: bool = False, stessa_taglia: "bool | None" = None) -> dict:
     """{"min", "max", "regola", "conto"} oppure {"perche": …} se non si ricostruisce.
 
     `livelli` ha i nomi inglesi delle classi; `base` è la voce di `creature.base`
     (serve `gs` e `dv`) o None; `dove` è il testo (tipo, titolo) in cui cercare
-    razza e modelli.
+    razza e modelli. `dichiarata`: la scheda dichiara la base (fonte, o colore ed età di un
+    drago), non la si è solo trovata per nome: solo allora i dadi vita in più sono un
+    avanzamento della stessa creatura. `stessa_taglia`: la taglia è quella della base.
     """
     m = modello(dove, tabella)
     if m:
@@ -106,7 +108,15 @@ def atteso(livelli: "dict[str, int]", dv_razziali: int, base: "dict | None", dov
     if gs_base is None:
         return {"perche": f"grado di sfida della base illeggibile ({base['gs']})"}
     if isinstance(base.get("dv"), int) and dv_razziali and dv_razziali != base["dv"]:
-        return {"perche": f"{dv_razziali} dadi vita razziali contro i {base['dv']} della base: avanzata per dadi vita"}
+        ogni = (tabella.get("avanzamento") or {}).get(base.get("tipo", ""))
+        if not (dichiarata and ogni and dv_razziali > base["dv"] and not tot):
+            return {"perche": f"{dv_razziali} dadi vita razziali contro i {base['dv']} della base: avanzata per dadi vita"}
+        # SRD, «Table: Improved Monster CR Increase»: +1 ogni `ogni` dadi vita aggiunti; +1 se cresce di taglia
+        in_piu = dv_razziali - base["dv"]
+        basso = gs_base + in_piu // ogni
+        return {"min": basso, "max": basso + (0 if stessa_taglia else 1), "regola": "gs.base.avanzata",
+                "conto": f"base {scritto(gs_base)} con {base['dv']} DV, {in_piu} dadi vita in più: +1 ogni {ogni}"
+                         + ("" if stessa_taglia else ", +1 se è cresciuta di taglia")}
     if not tot:
         return {"min": gs_base, "max": gs_base, "regola": "gs.base", "conto": f"la base ha {scritto(gs_base)}"}
     dv = base["dv"] if isinstance(base.get("dv"), int) else dv_razziali

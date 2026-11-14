@@ -38,6 +38,12 @@ animal = 3
 dragon = 2
 outsider = 2
 
+[gs.nomi_base]  # come una scheda nomina una creatura base → la sua chiave in creature_base.toml
+# Solo dove il nome della scheda non è quello del blocco dell'SRD (che scrive «Hellhound» sotto il titolo «Hell Hound»).
+"hell hound" = "hellhound"
+"segugio infernale" = "hellhound"
+"gufo gigante" = "owl, giant"
+
 [gs.modelli_gs]  # i modelli dell'SRD col loro conto del grado di sfida (lotto 5, settima parte)
 # SRD, riga «Challenge Rating» di ogni «Creating a …» (monsters-b-c, e-f, g, h-i, k-l, s, t-z).
 # `soglie`: [dadi vita fino a, aumento]; `piu`: aumento fisso; `per_dv`: [dadi vita fino a, grado]

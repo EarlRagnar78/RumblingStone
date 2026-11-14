@@ -160,6 +160,13 @@ class Modelli(unittest.TestCase):
         # mezzo-drago: mai sotto 3
         self.assertEqual(GS.atteso({"warrior": 1}, 0, None, "half-dragon kobold warrior", T35)["min"], 3)
 
+    def test_il_nome_della_scheda_trova_la_base(self):
+        """«Hell Hound» nel titolo è «hellhound» nei dati (`[gs.nomi_base]`): 3, più 1 da mezzo-immondo con 4 dadi vita."""
+        tipo = "Medium outsider (evil, extraplanar, fire, lawful), 4 HD, LE"
+        self.assertEqual(giudica("4", tipo, "4d8+8", titolo="Hell Hound mezzo-immondo", nome="hell-hound-cr4.md"), ([], []))
+        v, _ = giudica("6", tipo, "4d8+8", titolo="Hell Hound mezzo-immondo", nome="hell-hound-cr6.md")
+        self.assertEqual([(x["atteso"], x["ha"]) for x in v], [("4", "6")])
+
     def test_due_modelli_o_un_avanzamento_non_si_contano(self):
         ogre = {"gs": 3, "dv": 4, "tipo": "giant"}
         for dove in ("ogre mezzo-immondo avanzato", "ogre celestiale mezzo-drago", "ogre licantropo", "vampire spawn",

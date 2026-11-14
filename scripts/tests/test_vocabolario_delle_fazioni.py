@@ -173,7 +173,7 @@ class TestUnSoggettoUnRecord(unittest.TestCase):
         indice = {}
         for m in CATALOGO:
             indice.setdefault(m["name"].split("—")[0].split("(")[0].strip(), m)
-        for nome, fazione, cr in (("Tyrgarun", "red-hand", 18.0),
+        for nome, fazione, cr in (("Tyrgarun", "red-hand", 19.0),      # molto vecchio, DM 2026-11-14
                                   ("Khorn", "dauth-defender", 8.0),
                                   ("Mira Serani", "red-hand", 8.0)):
             with self.subTest(soggetto=nome):

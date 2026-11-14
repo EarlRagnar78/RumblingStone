@@ -217,7 +217,7 @@ scarto esce come «decisione aperta» e non come errore.
 | # | Statblocco | Domanda |
 |---|---|---|
 | ~~D1~~ | `goblin-warrior1-cr05` | ✅ **decisa dal DM il 2026-09-23: For 11**, la Forza del goblin SRD. Cambiano la riga delle caratteristiche e il danno (1d6−1 → 1d6); lotta e attacco la presupponevano già |
-| ~~D2~~ | `tyrgarun-blue-old-cr18` | ✅ **decisa dal DM il 2026-09-23: lotta +49, For 33 resta.** Tenere +46 voleva dire For 26-27 e abbassare morso, artigli, ali, coda e stritolamento, che tornavano tutti con For 33 |
+| ~~D2~~ | `tyrgarun-blue-very-old-cr19` | ✅ **decisa dal DM il 2026-09-23: lotta +49, For 33 resta.** Tenere +46 voleva dire For 26-27 e abbassare morso, artigli, ali, coda e stritolamento, che tornavano tutti con For 33 |
 | ~~D3~~ | `drow-assassina-lolth-cr10` | ✅ **decisa dal DM il 2026-09-23: For 12.** Lotta +6 → +7, danno della spada corta 1d6+1 → 1d6+2; l'attacco con Arma Accurata non cambia |
 | ~~D4~~ | `drow-trickster-arcano-cr11` | ✅ **decisa dal DM il 2026-09-23: BAB +5.** Lotta +3 → +4; stocco e balestra tornavano già |
 | ~~D5~~ | `ghost-lion-spettrale-cr8` | ✅ **decisa dal DM il 2026-09-23, in due passi.** Prima: trascrivere la fonte d'arco. Poi: *«verifica se è coerente con 3.5 o PF1e e scegli la versione più forte»*. Sulla base della fonte (9 DV, Des 18, Sag 12, Car 24) il **fantasma PF1e** vince: pf 103 contro 58, Tempra +10 contro +3, BAB +6 contro +4, tocco corruttore 8d6 contro 1d6. Il verificatore impara la variante PF1e dei non morti (d8, BAB ¾, Carisma per pf e Tempra), solo dove il `tipo` la dichiara. La fonte d'arco §2 diventa una copia di regia con il rimando alla scheda. ⚠ Regole del template citate a memoria: SRD e PRD bloccati dalla rete |

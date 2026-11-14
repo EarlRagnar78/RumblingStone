@@ -490,7 +490,7 @@ lecito (metà al Palio, metà alle sedute del Consiglio).
 **Contenuti:**
 
 - **Azarr Kul** appare (CR 15 Cleric 10/Fighter 4, hobgoblin mezzo-drago blu), combatte **a terra**
-- **Tyrgarun**, drago blu Old (CR 18), NON è una sua cavalcatura (D11 v2): è il terrore dei cieli della Fase 1 (hazard di bombardamento), poi minaccia aerea a orologeria in Fase 2-3, e viene inchiodato a terra dal Mythal solo in Fase 4 — incontro separato, vedi `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md` §6
+- **Tyrgarun**, drago blu molto vecchio (CR 19), NON è una sua cavalcatura (D11 v2): è il terrore dei cieli della Fase 1 (hazard di bombardamento), poi minaccia aerea a orologeria in Fase 2-3, e viene inchiodato a terra dal Mythal solo in Fase 4 — incontro separato, vedi `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md` §6
 - Final Boss Battle multi-phase epic:
   - Sotto-fase A: Avvicinamento, Azarr Kul + guardia scelta (CR 16)
   - Sotto-fase B: Avatar di Tiamat manifesto (CR 17, 3 teste attive, soffi elementali)

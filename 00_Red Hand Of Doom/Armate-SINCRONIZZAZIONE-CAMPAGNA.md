@@ -148,7 +148,7 @@ logistico, +rischio igiene/cibo).
 | **Day 38-39** | Hobgoblin Captains (CR 8, ~24) coordinano assalto | Avanguardia Rethmar | Promozione visibile: "ogni compagnia ha un capitano draconico" |
 | **Day 42 (Fase 1)** | Abithriax (CR 15) + Wyrmlord Karruk (CR 10) + Ondata Giganti (EL 15, wave ×1) | Rethmar mura | Assalto inaugurale Fase 1 |
 | **Day 42 (Fase 2)** | Warpriest élite CR 11 (×6) + non-morti Ghostlord (se ostile) | Circolo Mythal / statue | Ritualisti tentano di rompere il Mythal |
-| **Day 42 (Fase 3)** | Azarr Kul (CR 15) + Tyrgarun (drago Old CR 18, inchiodato a terra dal Mythal) + Ondata Giganti wave ×2 | Rethmar breccia | Boss-fight principale |
+| **Day 42 (Fase 3)** | Azarr Kul (CR 15) + Tyrgarun (drago molto vecchio CR 19, inchiodato a terra dal Mythal) + Ondata Giganti wave ×2 | Rethmar breccia | Boss-fight principale |
 | **Ritual Clock `/18 = 18`** | **Avatar di Tiamat (CR 17)** evocato | Sopra Rethmar | **Climax conditional**: solo se Ritual Clock completa |
 | **Ritual Clock `/18 ≥ 15` + Collezionista alleato** | Il Collezionista (CR 18) interviene | Rethmar interno (politica) | **Climax shadow**: non encounter ordinario — social/stealth |
 

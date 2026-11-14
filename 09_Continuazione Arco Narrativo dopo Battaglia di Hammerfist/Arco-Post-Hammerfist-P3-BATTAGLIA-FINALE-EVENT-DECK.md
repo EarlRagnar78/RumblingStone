@@ -60,7 +60,7 @@ qualcosa di esistente, è un errore da correggere.**
 | 5 | Il Tradimento di Halveth | **S2** | Consiglio_Rethmar §2 (Halveth); state.md §7 | Thorik |
 | 6 | Il Convoglio di Lorana | **S2** | `capitana-lorana-cr7`; state.md §7 (Riserva Lorana) | Hella |
 | 7 | La Breccia della Porta Ovest | **S1** | FASE1-ASSEDIO §3; `ondata-giganti-fanteria-cr15` | Thorik |
-| 8 | Tyrgarun sui Bastioni | **S1** | STRUTTURA §9.4 (C1.d); `tyrgarun-blue-old-cr18` | Artemis |
+| 8 | Tyrgarun sui Bastioni | **S1** | STRUTTURA §9.4 (C1.d); `tyrgarun-blue-very-old-cr19` | Artemis |
 | 9 | Combattimenti di Strada | **S1** | archetipo Brindol; `hobgoblin-*`, `gnoll-hyenodon-rider-cr4` | Tordek |
 | 10 | I Leoni del Ghostlord | **S2** | `ghost-lion-spettrale-cr8`; Ghostlord-TESTO (3 rami, D7) | Hella |
 | 11 | La Difesa del Tempio-Ospedale | **S1** | archetipo Brindol (cappella); eco Fase 0 | Hella |
@@ -211,10 +211,10 @@ Per ogni carta **non giocata**, tira **1d20 + Fronte corrente** vs **CD 18**:
 ---
 
 ## CARTA 8 — TYRGARUN SUI BASTIONI  ·  [S1]  ·  *spotlight: Artemis*  ·  Fase 1-3 / Day 42
-- **Trigger**: il **drago blu Old Tyrgarun** (CR 18) plana sui bastioni con passate di soffio. **Questa carta È il set-piece C1.d** (STRUTTURA §9.4): si gioca come **hazard con contromosse**, non come scontro frontale.
+- **Trigger**: il **drago blu molto vecchio Tyrgarun** (CR 19) plana sui bastioni con passate di soffio. **Questa carta È il set-piece C1.d** (STRUTTURA §9.4): si gioca come **hazard con contromosse**, non come scontro frontale.
 - **Read-aloud**: *Il cielo si oscura di una sola ala. Tyrgarun scende in picchiata e il suo soffio corre lungo il bastione come un fiume di fulmini: torri di guardia diventano cenere. Poi risale, intoccabile, e i suoi occhi cercano chi tra voi maneggia la magia.*
 - **Mappa**: tratto di bastione **20×5** (1,5 m/q) + cielo (quote: camminamento / volo basso / volo alto); balliste (2-4, riusabili dai PG: colpo 4d6) come contromosse; copertura sotto le merlature.
-- **Nemici**: Tyrgarun **profilo aereo** (`tyrgarun-blue-old-cr18.md`; soffio linea 30 m 20d8 elettr., Ref CD 32). **Non si abbatte** — si **nega** con le 4 contromosse di STRUTTURA §9.4 (balliste, gufi Tiri-Kitor, missione-esca, Fulcro Arcano di Artemis).
+- **Nemici**: Tyrgarun **profilo aereo** (`tyrgarun-blue-very-old-cr19.md`; soffio linea 30 m 20d8 elettr., Ref CD 32). **Non si abbatte** — si **nega** con le 4 contromosse di STRUTTURA §9.4 (balliste, gufi Tiri-Kitor, missione-esca, Fulcro Arcano di Artemis).
 - **Posta**: negare le passate a un settore; è la prova di Rethmar della grammatica anti-drago (già assaggiata a Dauth col Razorfiend, DAY3-CITY-SIEGE Carta B).
 - **Esiti**: **Vittoria** (passate negate ripetutamente) → +1 Fronte; Tyrgarun ripiega a ricaricare. **Parziale** (contromosse a intermittenza) → +0, balliste perse. **Sconfitta** (2+ passate a segno) → −2 Fronte, un settore cede (breccia → Carta 7/9).
 - **Se ignorata**: Tyrgarun brucia le difese aeree → −2 Fronte; le altre carte aeree diventano più dure. **Fase 4**: quando il Mythal lo inchioda (§7 STRUTTURA), il DM può aprire una **coda** di questa carta col profilo a terra (CR ~16-17).

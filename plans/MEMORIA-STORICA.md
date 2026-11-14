@@ -1473,7 +1473,18 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0134` → `plans/adr/ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md` · `campaign/REGOLE-CUSTOM.md`
 - **Solo qui:** il «sì» agli oggetti che alzano CA e tiri salvezza tocca in pratica solo il mantello della resistenza +1: l'anello e l'amuleto del Bloodfire Sorcerer Kulkorzhul li ha già, il mantello non entra nel chierico della Mano del Destino (5.567 + 1.000 supera 5.600), la cintura della forza del gigante +2 nel 3.5 non esiste a quel prezzo (punto 7 della regola: DM). Il monaco «Pugno del Destino» resta fuori da questa PR: il suo Riflessi +8 ha un +1 che la scheda non spiega e la scheda è in mano al thread delle regole per la velocità. La riga «Equipaggiamento sopra la tabella: … DM» è quella che `verifica_scheda.ricchezza` riconosce. La scheda dell'orco regular non aveva `voci:` nello statblocco: aggiunte.
 
-### MS-0129 · 2026-11-14 · ADR-0134: il corredo dell'Hobgoblin Bladebearer
+### MS-0129 · 2026-11-14 · Regole: le tre risposte del DM su monaco, Arbitrax e Tyrgarun
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole schede variante-del-dm regole-custom draghi grado-di-sfida velocita verifica-scheda
+- **Origine:** riga del 2026-11-14 «le tre risposte del DM sulle card» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha risposto alle tre card del 2026-11-14. Monaco «Pugno del Destino»: velocità 15 m, «Hobgoblin» nel titolo. Arbitrax: variante del DM, +24 di armatura naturale e GS 15 restano, voce RC-002 delle regole custom. Tyrgarun: molto vecchio, GS 19. `verifica_scheda` accetta una variante dichiarata nella scheda se porta il numero della scheda e «DM», una voce RC o un ADR. Misura contro main 99c09bb6: violazioni 34 → 30, non verificabili 378 → 375.
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** la prima forma della dichiarazione cercava il numero in tutta la riga, e «15 contro il 13» faceva passare anche una scheda che scrivesse 13: ora conta solo il primo numero dopo i due punti. Il file di Tyrgarun è stato rinominato in `tyrgarun-blue-very-old-cr19.md`: `extract_statblocks.py --check` boccia un blocco con GS 19 in un file «cr18»; le citazioni vive seguono, quelle storiche no. Il GS «16–17» a terra della Fase 4 e la riga «Boost log» della scheda non sono stati toccati: restano al DM.
+
+### MS-0130 · 2026-11-14 · ADR-0134: il corredo dell'Hobgoblin Bladebearer
 
 - **Data:** 2026-11-14
 - **PR:** —

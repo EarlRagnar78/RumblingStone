@@ -637,7 +637,7 @@ checklist qui sotto.
   scalini (hazard Fase 1 con 4 contromosse quantificate, clock aereo Fasi 2-3,
   inchiodato dal Mythal in Fase 4). Coerente col prototipo DAY3-CITY-SIEGE.
   **Fix di coerenza (residuo A7)**: rinominato statblock
-  `tyrgarun-black-adult-cr13.md` → **`tyrgarun-blue-old-cr18.md`** e riscritto a
+  `tyrgarun-black-adult-cr13.md` → **`tyrgarun-blue-very-old-cr19.md`** e riscritto a
   blue Old CR 18 (profilo aereo + profilo a terra ~16-17); aggiornati i 3
   riferimenti (monster_catalog.yaml, Armate-COMPOSIZIONE-DETTAGLIATA, UNITA-NUOVE
   README). **C2**: contatore **Morale Cittadino di Rethmar 0-10** in

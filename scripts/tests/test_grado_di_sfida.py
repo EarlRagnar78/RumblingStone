@@ -136,10 +136,9 @@ class Scheda(unittest.TestCase):
 
 
 class Bestiario(unittest.TestCase):
-    #: scarti veri in attesa della decisione del DM (card del thread delle regole)
-    #: Arbitrax: giovane adulto rosso dell'SRD = GS 13, la scheda scrive 15 (card al DM del 2026-11-14)
-    #: Tyrgarun: «Old» GS 18 con 30 DV, tre più del vecchio blu = GS 19 (card al DM del 2026-11-14)
-    IN_ATTESA: "set[str]" = {"arbitrax-drago-rosso-cr15.md", "tyrgarun-blue-old-cr18.md"}
+    #: scarti veri in attesa della decisione del DM (card del thread delle regole): oggi nessuno.
+    #: Arbitrax e Tyrgarun sono chiusi dalle risposte del DM del 2026-11-14 (RC-002; molto vecchio, GS 19)
+    IN_ATTESA: "set[str]" = set()
 
     def test_il_bestiario_non_ha_altri_scarti(self):
         trovate, attese = [], set()

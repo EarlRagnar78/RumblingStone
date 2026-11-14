@@ -292,6 +292,10 @@ def riferimenti_rotti(d: dict) -> "list[str]":
             if pid and pid not in noti:
                 errs.append(f"R10 · {nome}[{i}]: png_id '{pid}' non e' "
                             "nell'anagrafica `png`")
+            chi = r.get("informato_da")
+            if chi and chi not in noti:
+                errs.append(f"R10 · {nome}[{i}]: informato_da '{chi}' non e' "
+                            "nell'anagrafica `png`")
     return errs
 
 

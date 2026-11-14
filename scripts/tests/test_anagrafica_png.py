@@ -136,7 +136,7 @@ class TestLaChiaveEMiglioreDelConfrontoDiStringhe(unittest.TestCase):
         ("villain", 3, "Xal_thor", "zalkatar"),
         ("villain", 4, "Wyrmlord_Karruk", "saarvith-regiarix"),
         ("conoscenze", 9, "Sethrax", "zalkatar"),
-        ("conoscenze", 18, "druid-bear-ally", "cerchio-sacro"),
+        ("conoscenze", 19, "druid-bear-ally", "cerchio-sacro"),
     ]
 
     def test_dove_il_matcher_sbagliava_l_anagrafica_non_lo_segue(self):

@@ -80,7 +80,7 @@ class TestNessunaPerditaDiCanone(unittest.TestCase):
     """Contato nei DUE sensi: nessuna riga sparisce, nessuna compare dal nulla."""
 
     ATTESI = {"archi": 22, "party": 4, "artefatti": 8, "echi": 7,
-              "villain": 13, "conoscenze": 31,
+              "villain": 13, "conoscenze": 33,
               "difensori_rethmar": 9, "scenari_rethmar": 5}
 
     def test_ogni_sezione_ha_i_record_che_aveva_la_tabella(self):
@@ -146,9 +146,9 @@ class TestIlTempoNonDichiaratoSiConta(unittest.TestCase):
     def test_il_conteggio_e_quello_misurato(self):
         import validate_state as vs
         buchi = vs.righe_senza_tempo(_dati())
-        self.assertEqual(buchi, {"villain": 13, "conoscenze": 31,
+        self.assertEqual(buchi, {"villain": 13, "conoscenze": 33,
                                  "difensori_rethmar": 9, "scenari_rethmar": 5})
-        self.assertEqual(sum(buchi.values()), 58)
+        self.assertEqual(sum(buchi.values()), 60)
 
     def test_dove_il_canone_il_tempo_lo_dichiara_e_obbligatorio(self):
         """Gli archi ce l'hanno per riga, e li' non si deroga."""

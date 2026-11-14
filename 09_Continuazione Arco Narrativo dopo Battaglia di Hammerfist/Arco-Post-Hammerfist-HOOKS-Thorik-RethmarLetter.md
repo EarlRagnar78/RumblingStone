@@ -4,7 +4,7 @@ Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md
 # Hook Thorik — *La Lettera di Brenna* (con scambio bidirezionale di intel)
 
 > **TL;DR (DM cheat-sheet):**
-> - **Day 21** Cerimonia 100 Asce (sala-mappa) → Tempestas consegna lettera privata di Brenna Sorvane (sigillo personale, NON ufficiale di Rethmar — bypassa Halveth).
+> - **Day 22**, il giorno dopo la Cerimonia delle 100 Asce (prima della cena, §2) → Tempestas consegna lettera privata di Brenna Sorvane (sigillo personale, NON ufficiale di Rethmar — bypassa Halveth).
 > - **Lettera contiene**: 3-4 split del Consiglio (Brenna + Pyriel + Jarmaath vs Kaal + Halveth + Sorvane + Thornwall); Halveth corrotto da Conte Valerius; Lorana viva a Rethmar; richiesta lettera Re Thorek + alleanza + 150 lance + Thorik in persona.
 > - **Day 21-22 — Scambio intel bidirezionale**: Tempestas chiede intel Red Hand (Vanguard, Wyrmlords); offre Halveth corrotto + Lorana posizione + Conte Valerius politica.
 > - **4 vie**: Va personalmente / Negozia con condizioni (Diplomazia CD 22) / Manda lettera + lance ma resta / Rifiuta (DARK: Halveth domina, Phase 0 +2 difficoltà).
@@ -74,7 +74,7 @@ Brenna ha sentito di Hammerfist (gli uccelli messaggeri sono arrivati il Giorno 
 
    Il voto del Consiglio è 3 a 4 contro la difesa.
    Il pareggio si rompe in nostro favore SOLO se
-   uno di voi quattro Custodi presta una "voce
+   uno di voi quattro presta una "voce
    d'autorità" — e Hammerfist accetta una nostra
    alleanza formale.
 

@@ -11383,17 +11383,17 @@
      ],
      "Rifl": [
       8,
-      7,
+      8,
       0
      ],
      "Temp": [
-      7,
-      7,
+      8,
+      8,
       0
      ],
      "Vol": [
-      7,
-      7,
+      8,
+      8,
       0
      ],
      "attacco": [
@@ -11476,7 +11476,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "trascritte",
-    "senza_note": 1990,
+    "senza_note": 2021,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/monaco pugno del destino cr7.htm",
@@ -11493,20 +11493,24 @@
      ]
     ],
     "taglia": 0,
-    "talenti": {},
+    "talenti": {
+     "Rifl": 1,
+     "Temp": 1,
+     "Vol": 1
+    },
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
       2,
-      "ricavata da Temp +7 (base +5)"
+      "ricavata da Temp +8 (base +6)"
      ],
      "Des": [
-      3,
-      "ricavata da Rifl +8 (base +5)"
+      2,
+      "ricavata da Rifl +8 (base +6)"
      ],
      "Sag": [
       2,
-      "ricavata da Vol +7 (base +5)"
+      "ricavata da Vol +8 (base +6)"
      ]
     },
     "vincoli": {
@@ -11555,9 +11559,9 @@
     "provenienza": "trascritte",
     "tipo": "Medium humanoid (goblinoid), Monk 7 (ordine del Pugno del Destino), LE",
     "ts": [
-     7,
      8,
-     7
+     8,
+     8
     ]
    }
   },

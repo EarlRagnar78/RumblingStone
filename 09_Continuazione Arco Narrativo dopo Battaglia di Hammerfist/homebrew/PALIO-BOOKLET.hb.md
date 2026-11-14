@@ -2820,6 +2820,8 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 Cariche pulite, tiene la corda interna, nerba solo per difendersi. Onore alto.  
 }}
 
+> RC-001: il giaco di maglia +1 è l'armatura leggera che spiega la CA 18 (10, +3 Des, +5 armatura); le pozioni vengono dal PNG dei Codex PF1e «Adventuring Blacksmith» (Guerriero 6), che per il resto porta armatura completa e martelli e non entra. Il nerbo è l'arma della scheda e non ha un prezzo nell'SRD. Valore 1.650 mo contro i 5.600 del 6° livello (DMG 3.5, Tabella 4-23).
+
 ### 1.2 Fantino Ladro — "corsa assassina" (GS 8)
 {{note
 ##### Fantino Ladro · GS 8

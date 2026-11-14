@@ -205,7 +205,7 @@
 > Cannath Vale, 56-70, `INCONTRI-VIAGGIO-CANNATH-VALE`), prima di fine Mirtul.
 > Se i PG non lo incontrano o non lo perquisiscono, **Sethrax** ne dà una copia
 > quando si smaschera al Torneo, come indizio gratuito sull'arco della Torre
-> (`P2B-Torneo-DAUTH-SUBQUEST-Artemis` §4.3): arriva dopo il 30 Mirtul, quindi
+> (`P2B-Torneo-DAUTH-SUBQUEST-Artemis` §4.1): arriva dopo il 30 Mirtul, quindi
 > la carta dice dove la Torre **è già andata**.
 > Un foglio rotondo di pelle sottile, inchiostro bruno, nessuna firma.
 

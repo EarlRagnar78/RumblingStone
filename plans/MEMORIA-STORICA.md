@@ -1538,3 +1538,14 @@ repo scritto con altre parole.
 - **Testo:** il DM ha scelto sulla card del 2026-11-14 di tenere i 16 dadi vita e di portare il grado di sfida a 7. La scheda toglie «2x HD», il file diventa `skeletal-dire-lion-cr7.md`, `IN_ATTESA` del grado di sfida torna vuoto. Violazioni 31 → 30 contro main e88959fd.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** nel tipo non si può scrivere «avanzato» né ripetere «scheletro» accanto a «skeleton»: `gs.modello_noto` vede un avanzamento o un secondo modello e il grado torna non verificabile. Restano al DM il livello d'incontro delle due righe del viaggio verso Cannath Vale che usano questi leoni e l'armatura naturale +4 (lo scheletro Grande dell'SRD ha +2).
+
+### MS-0135 · 2026-11-14 · A6: il dossier delle piste di ARC-09
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** —
+- **Temi:** indagine piste ARC-09 torre-invisibile zalkatar sonjak collezionista ghaurush zin-thara carta-del-cielo travaso gate
+- **Origine:** riga del 2026-11-14 «A6, il dossier delle piste di ARC-09» in `plans/CHANGELOG.md`
+- **Testo:** `Arco-Post-Hammerfist-DOSSIER-DELLE-PISTE.md` riscrive come piste i tre misteri di ARC-09: la torre che cammina (congegno, A1-A7), il «dottore» che compra i drow (B1-B6, pista morale senza bonus) e le due lettere di Sonjak (C1-C7). Gate «dopo ARC-07» tolto da Jfs il 2026-11-14 nel progetto, superando la sua card D5 del 2026-11-13. Tre scelte nuove a Jfs su card: S1 piromanti in scena fissa, S2 effetto delle lettere uguale a Zin'thara voltata, S3 lettere nella trattativa di Ghaurush al posto del Seme-Mercato.
+- **Trovato nel repo:** `plans/PIANO-TRAVASO-DRAPPO-CAMPAGNA.md` §A6 · `skills/rumblingstone-indagine`
+- **Solo qui:** il nodo più forte della pista della torre (la carta del cielo) stava su una voce di tabella d% al 15% per giornata; le lettere di Ghaurush stanno su un villain il cui esito di default è la fuga; il ramo «Sonjak tradisce la Mano Rossa» non aveva effetto scritto; l'handout 7 rimandava a un §4.3 della sub-quest di Artemis che non esiste (è §4.1); `P2A-Torre-PARTE1` §1 chiama ancora Artemis «alleata/PNG chiave», lasciato com'è. Saraah è marcata `[NON-CREATURA]` come Thorgrim: persona senza numeri in nessun file, e `test_bestiario_h` ne elenca le schede. «CS» delle schede di Ghaurush e Zin'thara non è definito altrove nel repo.

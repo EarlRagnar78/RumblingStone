@@ -1798,8 +1798,8 @@ monsters:
     role: caster-arcane
     environment: any
     source_file: "Bestiario/mostri/kulkorzhul-war-adept-cr7.md"
-  - id: monaco-pugno-del-destino-monk-7-40f6dd
-    name: "Monaco «Pugno del Destino» (Monk 7)"
+  - id: monaco-pugno-del-destino-hobgoblin-monk-7-40f6dd
+    name: "Monaco «Pugno del Destino» (Hobgoblin Monk 7)"
     cr: 7.0
     faction: red-hand
     role: melee-heavy
@@ -2135,9 +2135,9 @@ monsters:
     role: boss-caster
     environment: any
     source_file: "Bestiario/villain/Ghaurush_Cenerevento/ghaurush-cenerevento-secondo-incontro-cr18.md"
-  - id: tyrgarun-blue-old-dragon-sky-terror-of-rethmar-d8e679
-    name: "Tyrgarun — Blue Old Dragon (Sky-Terror of Rethmar)"
-    cr: 18.0
+  - id: tyrgarun-blue-very-old-dragon-sky-terror-of-rethmar-d8e679
+    name: "Tyrgarun — Blue Very Old Dragon (Sky-Terror of Rethmar)"
+    cr: 19.0
     faction: red-hand
     role: aerial-hazard
     environment: aerial

@@ -185,7 +185,7 @@ che fa il suo mestiere — DM 2026-09-11, D3.*
 | Giganti + Ogre + Ettin | 180 | NO PG alliance — stay with Red Hand |
 | Forze Alate (Manticore, Wyvern, Hell Hounds, Chimera) | 140 | |
 | Casters Mano Rossa (War Adepts, Blue, Warpriests di Tiamat) | 55 | |
-| **Dragons (5 AP-original upscaled)** | 5 | Abithriax (Red adult) / Regiarix (Black young, Rhest) / Ozyrrandion (Green adult, Tower — colore RHoD) / **Tyrgarun (Blue Old, CR 18 — sky-terror of the battle, NOT Azarr Kul's mount, D11 v2)** / **Fauci di Palude** (Black adult, Hammerfist vanguard — **conditional branch, D10, not yet resolved**: default = flees gravely wounded, may return later as a narrative hook, not guaranteed at Rethmar; PG-kill branch = dies at Hammerfist, −1 dragon, see §2.3) |
+| **Dragons (5 AP-original upscaled)** | 5 | Abithriax (Red adult) / Regiarix (Black young, Rhest) / Ozyrrandion (Green adult, Tower — colore RHoD) / **Tyrgarun (Blue Very Old, CR 19 — sky-terror of the battle, NOT Azarr Kul's mount, D11 v2)** / **Fauci di Palude** (Black adult, Hammerfist vanguard — **conditional branch, D10, not yet resolved**: default = flees gravely wounded, may return later as a narrative hook, not guaranteed at Rethmar; PG-kill branch = dies at Hammerfist, −1 dragon, see §2.3) |
 | **Draconic spawn = Razorfiend (Tiamat colors)** | 8 | Assigned to Wyrmlord villains upscaled — **tier élite CR 13 «Blackspawn Alfa»** (`Bestiario/mostri/razorfiend-blackspawn-alfa-cr13.md`, DM 2026-07-20); i razorfiend CR 8-9 restano truppa d'ondata |
 | Compagnia Drow di Sonjak | 305 | |
 | Githyanki di Vaereth | 375 | |

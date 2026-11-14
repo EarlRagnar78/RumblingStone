@@ -1305,3 +1305,18 @@ Se la taglia non è quella della base il grado atteso è un intervallo: +1 se è
 
 **Conseguenze.** Tyrgarun entra in `IN_ATTESA` del cancello del grado di sfida insieme ad Arbitrax, fino alla risposta del DM.
 
+### Le tre risposte del DM del 2026-11-14: monaco, Arbitrax, Tyrgarun
+
+**Contesto.** Tre scarti stavano su card al DM: la velocità del monaco «Pugno del Destino», armatura naturale e grado di sfida di Arbitrax, età e grado di sfida di Tyrgarun. Il DM ha risposto il 2026-11-14.
+
+**Decisione.**
+
+- Monaco «Pugno del Destino»: velocità 24 m → 15 m (hobgoblin 9 m, più 6 m del monaco di 7°); «Hobgoblin» torna nel titolo.
+- Arbitrax: variante del DM, i numeri restano (armatura naturale +24, GS 15). È la voce RC-002 di `campaign/REGOLE-CUSTOM.md`.
+- Tyrgarun: molto vecchio, GS 19, come l'SRD per 30 DV e +29 di armatura naturale. Le citazioni vive negli archi e in `state.md` seguono.
+
+**Come si dichiara una variante.** Una riga «Armatura naturale diversa dalla base: N …» o «Grado di sfida diverso dalla regola: N …» con «DM», una voce RC o un ADR. Il primo numero dopo i due punti deve essere quello della scheda: se la scheda cambia e la riga no, lo scarto torna. È la stessa forma di «Equipaggiamento sopra la tabella» (lotto 8).
+
+**Misura** (contro main 920259b0). `verifica_scheda.py Bestiario 0*/`: violazioni @V@, non verificabili @N@.
+
+**Conseguenze.** `IN_ATTESA` del cancello del grado di sfida è vuoto. Il nome del file di Tyrgarun resta `tyrgarun-blue-old-cr18.md`. Il GS «16–17» di Tyrgarun a terra (Fase 4) non è stato ricalcolato: resta al DM.

@@ -11466,7 +11466,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "trascritte",
-    "senza_note": 1979,
+    "senza_note": 1990,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/monaco pugno del destino cr7.htm",
@@ -22477,7 +22477,9 @@
    }
   },
   "Bestiario/villain/Tyrgarun/tyrgarun-blue-old-cr18.md": {
-   "controlla": [],
+   "controlla": [
+    "Bestiario/villain/Tyrgarun/tyrgarun-blue-old-cr18.md: il blocco dice GS 19 e il nome del file dice GS 18 — uno dei due è rimasto indietro"
+   ],
    "genera": [
     {
      "Car": 18,
@@ -22503,7 +22505,7 @@
     [
      "array elite del Manuale del DM (creatura)",
      "variazione a seme fisso: Sag +1, Car −1",
-     "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 18) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
+     "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 19) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
      "taglia (SRD, Improving Monsters): For +16, Des -4, Cos +8",
      "Des 10 **derivata dalla CA di contatto** — il vincolo batte l'array",
      "Des 10 **ricavata dall'iniziativa** — il vincolo batte l'array",
@@ -22615,7 +22617,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "copiate",
-    "senza_note": 6332,
+    "senza_note": 6343,
     "sestine_citate": [],
     "taglia": -2,
     "talenti": {
@@ -22697,7 +22699,7 @@
       "nome": "dragon"
      }
     ],
-    "gs": 18.0,
+    "gs": 19.0,
     "lotta": 49,
     "mischia": "morso +39 (2d8+11); 2 artigli +37 (2d6+5); 2 ali +37 (1d8+5); coda +37 (2d6+16); stritolamento (2d8+16)",
     "pf": 405,
@@ -24388,7 +24390,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "copiate",
-    "senza_note": 5060,
+    "senza_note": 5061,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/Arbitrax Drago Rosso.htm",

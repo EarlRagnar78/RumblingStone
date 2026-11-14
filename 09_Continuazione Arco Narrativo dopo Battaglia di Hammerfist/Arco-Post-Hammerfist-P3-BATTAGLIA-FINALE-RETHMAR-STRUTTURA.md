@@ -105,7 +105,7 @@ Basata sulla struttura di ondate di Brindol (Red Hand of Doom), ma potenziata.[w
 
 I PG possono essere spostati dove serve di più: mura, quartiere tempio, porta principale.
 
-**Tyrgarun (D11 v2)**: parallelamente alle ondate, il drago blu Old (CR 18) è un *hazard* di bombardamento aereo separato — passate di soffio sui bastioni con contromosse quantificate (balliste, gufi Tiri Kitor, missione-esca dei PG). Non è un incontro frontale: a CR 18 in volo è imbattibile per design. Meccaniche dettagliate del set-piece: Lotto C1(d).
+**Tyrgarun (D11 v2)**: parallelamente alle ondate, il drago blu molto vecchio (CR 19) è un *hazard* di bombardamento aereo separato — passate di soffio sui bastioni con contromosse quantificate (balliste, gufi Tiri Kitor, missione-esca dei PG). Non è un incontro frontale: a CR 18 in volo è imbattibile per design. Meccaniche dettagliate del set-piece: Lotto C1(d).
 
 ---
 

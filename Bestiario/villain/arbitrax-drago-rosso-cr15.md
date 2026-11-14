@@ -49,6 +49,10 @@ Huge dragon (fire), 19 HD, LE.
 
 > ⚠ **Non SRD** (DM 2026-10-18, vince la versione più forte): la CA 32 della fonte PCGen supera di 6 l'SRD del rosso giovane adulto (26, +18 naturale). I +6 di armatura naturale sono un tratto suo, scaglie più spesse di quelle della sua età, e non un oggetto: il collo, l'unico posto per un amuleto dell'armatura naturale, porta già l'amuleto della salute +2 che tiene Cos 23, i 237 pf e la CD 25 del soffio.
 
+> `[CANONE — DM 2026-11-14, RC-002]` Variante del DM, numeri di oggi.
+> Armatura naturale diversa dalla base: +24 contro il +18 del rosso giovane adulto dell'SRD 3.5, scelta del DM (RC-002).
+> Grado di sfida diverso dalla regola: 15 contro il 13 del rosso giovane adulto dell'SRD 3.5, scelta del DM (RC-002).
+
 Benchmark: PF T1-1 riga 15: CA 32 sopra (30) / pf 237 sopra (220) / attacco +27 sopra (+24) / danno pieno ~84 sopra (70) / CD 25 sopra (23) / TS buono +17 sotto (18). È il GS che `state.md` e i calcoli degli eserciti danno ad Abithriax («Red adult», GS 15).
 
 Notes: il drago rosso dell'avanguardia (ruolo di Abithriax nel RHoD originale). Statblock d'arco correlati: Fauci di Palude (ARC-08).

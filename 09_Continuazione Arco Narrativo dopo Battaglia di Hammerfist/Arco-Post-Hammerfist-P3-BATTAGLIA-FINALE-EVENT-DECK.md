@@ -211,7 +211,7 @@ Per ogni carta **non giocata**, tira **1d20 + Fronte corrente** vs **CD 18**:
 ---
 
 ## CARTA 8 — TYRGARUN SUI BASTIONI  ·  [S1]  ·  *spotlight: Artemis*  ·  Fase 1-3 / Day 42
-- **Trigger**: il **drago blu Old Tyrgarun** (CR 18) plana sui bastioni con passate di soffio. **Questa carta È il set-piece C1.d** (STRUTTURA §9.4): si gioca come **hazard con contromosse**, non come scontro frontale.
+- **Trigger**: il **drago blu molto vecchio Tyrgarun** (CR 19) plana sui bastioni con passate di soffio. **Questa carta È il set-piece C1.d** (STRUTTURA §9.4): si gioca come **hazard con contromosse**, non come scontro frontale.
 - **Read-aloud**: *Il cielo si oscura di una sola ala. Tyrgarun scende in picchiata e il suo soffio corre lungo il bastione come un fiume di fulmini: torri di guardia diventano cenere. Poi risale, intoccabile, e i suoi occhi cercano chi tra voi maneggia la magia.*
 - **Mappa**: tratto di bastione **20×5** (1,5 m/q) + cielo (quote: camminamento / volo basso / volo alto); balliste (2-4, riusabili dai PG: colpo 4d6) come contromosse; copertura sotto le merlature.
 - **Nemici**: Tyrgarun **profilo aereo** (`tyrgarun-blue-old-cr18.md`; soffio linea 30 m 20d8 elettr., Ref CD 32). **Non si abbatte** — si **nega** con le 4 contromosse di STRUTTURA §9.4 (balliste, gufi Tiri-Kitor, missione-esca, Fulcro Arcano di Artemis).

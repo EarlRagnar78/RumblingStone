@@ -8682,18 +8682,18 @@
       0
      ],
      "Rifl": [
-      5,
-      5,
+      6,
+      6,
       0
      ],
      "Temp": [
-      7,
-      7,
+      8,
+      8,
       0
      ],
      "Vol": [
-      5,
-      5,
+      6,
+      6,
       0
      ],
      "iniziativa": [
@@ -8766,7 +8766,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "trascritte",
-    "senza_note": 1419,
+    "senza_note": 1753,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/hobgoblin bladebearer 6 liv.htm",
@@ -8784,21 +8784,23 @@
     ],
     "taglia": 0,
     "talenti": {
-     "Vol": 2
+     "Rifl": 1,
+     "Temp": 1,
+     "Vol": 3
     },
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
       2,
-      "ricavata da Temp +7 (base +5)"
+      "ricavata da Temp +8 (base +6)"
      ],
      "Des": [
       3,
-      "ricavata da Rifl +5 (base +2)"
+      "ricavata da Rifl +6 (base +3)"
      ],
      "Sag": [
       1,
-      "ricavata da Vol +5 (base +4)"
+      "ricavata da Vol +6 (base +5)"
      ]
     },
     "vincoli": {
@@ -8845,9 +8847,9 @@
     "provenienza": "trascritte",
     "tipo": "Medium humanoid (goblinoid), Fighter 6, LE",
     "ts": [
-     7,
-     5,
-     5
+     8,
+     6,
+     6
     ]
    }
   },

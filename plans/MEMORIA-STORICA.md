@@ -1472,3 +1472,14 @@ repo scritto con altre parole.
 - **Testo:** duergar chierico 3 e Ainin tengono il corredo dell'export sopra la Tabella 4-23, dichiarato come scelta del DM; per l'orco regular vale la scheda del 18/10 e non il .pcg; il mantello della resistenza +1 dei Codex entra nel goblin incursore su worg e nel Portalame, coi tiri salvezza +1.
 - **Trovato nel repo:** `ADR-0134` → `plans/adr/ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md` · `campaign/REGOLE-CUSTOM.md`
 - **Solo qui:** il «sì» agli oggetti che alzano CA e tiri salvezza tocca in pratica solo il mantello della resistenza +1: l'anello e l'amuleto del Bloodfire Sorcerer Kulkorzhul li ha già, il mantello non entra nel chierico della Mano del Destino (5.567 + 1.000 supera 5.600), la cintura della forza del gigante +2 nel 3.5 non esiste a quel prezzo (punto 7 della regola: DM). Il monaco «Pugno del Destino» resta fuori da questa PR: il suo Riflessi +8 ha un +1 che la scheda non spiega e la scheda è in mano al thread delle regole per la velocità. La riga «Equipaggiamento sopra la tabella: … DM» è quella che `verifica_scheda.ricchezza` riconosce. La scheda dell'orco regular non aveva `voci:` nello statblocco: aggiunte.
+
+### MS-0129 · 2026-11-14 · ADR-0134: il corredo dell'Hobgoblin Bladebearer
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0134
+- **Temi:** schede equipaggiamento regole bestiario
+- **Origine:** riga del 2026-11-14 «ADR-0134, regola RC-001: il corredo dell'Hobgoblin Bladebearer» in `plans/CHANGELOG.md`
+- **Testo:** il Bladebearer ha il corredo dei suoi due export PCGen (Build A nello statblocco, Build B in nota) più una pozione di cura ferite moderate e il mantello della resistenza +1 del «Troglodyte Champion»; tiri salvezza +1.
+- **Trovato nel repo:** `ADR-0134` → `plans/adr/ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md` · `campaign/REGOLE-CUSTOM.md`
+- **Solo qui:** la doppia ascia orchesca +1 dell'export ha una testa sola incantata («Axe, Orc Double +1;-»): 60 mo + 600 del perfetto sulle due teste + 2.000 = 2.660 mo; il verificatore la legge come un'ascia +1 da 2.306. Con pozione e mantello la Build A arriva a 7.160 su 7.200: non c'è più posto per niente. La cintura della forza del gigante +2 dei Codex (4.000 mo come i guanti del potere dell'ogre) non entra in nessuna delle schede che la avrebbero dal loro PNG: supera il tetto ovunque, quindi non serve una decisione del DM. Lythiel sta a circa 23.800 mo su 9.400 per l'amuleto della salute +4 che tiene i suoi pf 60: card al DM.

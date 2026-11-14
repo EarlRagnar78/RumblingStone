@@ -86,6 +86,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 settima parte: il grado di sfida dei modelli dell'SRD.… | In PR |
+| 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: il corredo dell'Hobgoblin Bladebearer. Le due build ha… | Schede di `Bestiario/mostri/` con corredo da 14 a 15; valore 7.160 mo su 7.200 (Build A), 6.640 (Build B). |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, le tre risposte del DM sulle card: monaco «Pugno del Destino» a 15 m… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: le quattro decisioni del DM sulle card del 14/11. Il d… | Sedici schede con corredo contro le undici di main; due schede con i tiri salvezza +1. Restano senza: monaco (mantello, dopo la correzione della velocità), bla… |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 sesta parte: il grado di sfida di chi avanza per dadi vita.… | In PR |
@@ -96,12 +97,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 8 quinta parte: la ricchezza di un file con più schede.… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 7 sesta parte: la velocità delle razze senza dadi vita razziali… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 6 terza parte: razze dei mostri, taglia e velocità nelle abilit… | In PR |
-| 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 7 quinta parte: i linguaggi delle razze senza dadi vita razzial… | In PR |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 130 voci, l'ultima MS-0130 del 2026-11-14 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 131 voci, l'ultima MS-0131 del 2026-11-14 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

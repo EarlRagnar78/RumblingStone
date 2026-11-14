@@ -1484,14 +1484,25 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** la prima forma della dichiarazione cercava il numero in tutta la riga, e «15 contro il 13» faceva passare anche una scheda che scrivesse 13: ora conta solo il primo numero dopo i due punti. Il file di Tyrgarun è stato rinominato in `tyrgarun-blue-very-old-cr19.md`: `extract_statblocks.py --check` boccia un blocco con GS 19 in un file «cr18»; le citazioni vive seguono, quelle storiche no. Il GS «16–17» a terra della Fase 4 e la riga «Boost log» della scheda non sono stati toccati: restano al DM.
 
-### MS-0130 · 2026-11-14 · Regole, lotto 5 settima parte: il grado di sfida dei modelli dell'SRD
+### MS-0130 · 2026-11-14 · ADR-0134: il corredo dell'Hobgoblin Bladebearer
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0134
+- **Temi:** schede equipaggiamento regole bestiario
+- **Origine:** riga del 2026-11-14 «ADR-0134, regola RC-001: il corredo dell'Hobgoblin Bladebearer» in `plans/CHANGELOG.md`
+- **Testo:** il Bladebearer ha il corredo dei suoi due export PCGen (Build A nello statblocco, Build B in nota) più una pozione di cura ferite moderate e il mantello della resistenza +1 del «Troglodyte Champion»; tiri salvezza +1.
+- **Trovato nel repo:** `ADR-0134` → `plans/adr/ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md` · `campaign/REGOLE-CUSTOM.md`
+- **Solo qui:** la doppia ascia orchesca +1 dell'export ha una testa sola incantata («Axe, Orc Double +1;-»): 60 mo + 600 del perfetto sulle due teste + 2.000 = 2.660 mo; il verificatore la legge come un'ascia +1 da 2.306. Con pozione e mantello la Build A arriva a 7.160 su 7.200: non c'è più posto per niente. La cintura della forza del gigante +2 dei Codex (4.000 mo come i guanti del potere dell'ogre) non entra in nessuna delle schede che la avrebbero dal loro PNG: supera il tetto ovunque, quindi non serve una decisione del DM. Lythiel sta a circa 23.800 mo su 9.400 per l'amuleto della salute +4 che tiene i suoi pf 60: card al DM.
+
+### MS-0131 · 2026-11-14 · Regole, lotto 5 settima parte: il grado di sfida dei modelli dell'SRD
 
 - **Data:** 2026-11-14
 - **PR:** —
 - **ADR:** ADR-0126
 - **Temi:** regole grado-di-sfida modelli scheletro zombi mezzo-immondo celestiale verifica-scheda conformita
 - **Origine:** riga del 2026-11-14 «lotto 5 settima parte: il grado di sfida dei modelli dell'SRD» in `plans/CHANGELOG.md`
-- **Testo:** `gs.atteso` conta dieci modelli dell'SRD 3.5 con `[gs.modelli_gs]`: aumento per soglie di dadi vita (celestiale, immondo, mezzo-celestiale, mezzo-immondo), aumento fisso (mezzo-drago, lich, vampiro, fantasma), grado dai dadi vita (scheletro, zombi). Violazioni 30 → 31, non verificabili 375 → 372 contro main af9d9a10. Nella stessa PR `conformita_statblocchi` smette di leggere una voce di equipaggiamento come attacco.
+- **Testo:** `gs.atteso` conta dieci modelli dell'SRD 3.5 con `[gs.modelli_gs]`: aumento per soglie di dadi vita (celestiale, immondo, mezzo-celestiale, mezzo-immondo), aumento fisso (mezzo-drago, lich, vampiro, fantasma), grado dai dadi vita (scheletro, zombi). Violazioni 30 → 31, non verificabili 375 → 372 contro main ce805024. Nella stessa PR `conformita_statblocchi` smette di leggere una voce di equipaggiamento come attacco.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** `vampir\w*(?!\s+spawn)` non esclude «vampire spawn», perché `\w*` torna indietro di una lettera: serve `\b` prima del lookahead. L'SRD scrive «Hellhound» nel blocco sotto il titolo «Hell Hound»: `[gs.nomi_base]` in `gs.toml` porta i nomi delle schede alle chiavi dei dati. Il gufo gigante celestiale resta non verificabile perché avanza anche per dadi vita e la sua fonte nomina un modello. Lo Skeletal Dire Lion scrive «2x HD», ma il modello scheletro non raddoppia i dadi vita: lo fa lo zombi.
 

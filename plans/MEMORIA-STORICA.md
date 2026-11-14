@@ -1418,3 +1418,15 @@ repo scritto con altre parole.
 - **Testo:** `velocita`, `linguaggi` e `abilita` giudicano scheda per scheda i file con più schede, con la stessa funzione di `ricchezza` (`_scheda_per_scheda`). Violazioni 30 → 30, non verificabili 383 → 384. Nei 5 master con più recinti `velocita` legge 11 schede (prima 0), `linguaggi` 3 (prima 0), `abilita` 11 (prima 5).
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** il guadagno è piccolo e va detto: nessuna violazione nuova, e 13 schede su 30 dei master non si leggono perché il recinto non ha attributi o GS. Per misurare contro la versione di prima serve un worktree pulito: `git worktree add` su una cartella rimasta da una prova vecchia non la aggiorna, e la prima misura confrontava con un commit di giorni fa (54 violazioni invece di 30).
+
+### MS-0124 · 2026-11-14 · Regole, lotto 8 sesta parte: merci, proiettili, pezzi doppi e arco composito
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole ricchezza prezzi oggetti merci proiettili arco-composito verifica-scheda
+- **Origine:** riga del 2026-11-14 «lotto 8 sesta parte: merci, proiettili, pezzi doppi e arco composito nei prezzi 3.5» in `plans/CHANGELOG.md`
+- **Testo:** `ricchezza` conta le merci dell'SRD 3.5, i proiettili, le armi a più pezzi, lo scudo d'acciaio, la mezza armatura, le pozioni con la forza nel nome e l'arco composito con la Forza scritta. I dati li genera `estrai_oggetti.py` in `oggetti.toml` (`merci`, `ammo`, `scudi_acciaio`, `arco_forza`). Elenco dei Codex del thread del volume: 0 → 63 voci col prezzo su 96. Nel repo 472 → 489 voci col prezzo. Violazioni 30 → 30, non verificabili 384 → 384.
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** il guadagno sul repo di oggi è di 17 voci: il lavoro serve alle schede che il thread del volume riempie dai Codex. Errori trovati per strada e corretti: gli shuriken prezzati come arma e non come proiettili, «unholy water» letta come acqua santa, «pozione di scudo della fede +2» letta come scudo +2, «arco lungo composito (+1 For)» contato 100 mo invece di 200. Le 33 voci che ha solo PF1e non si prezzano dall'SRD 3.5 e vanno a card.
+

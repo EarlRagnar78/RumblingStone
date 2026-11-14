@@ -1254,3 +1254,19 @@ degli attributi o del GS nel recinto). Le altre verifiche di `verifica_scheda`
 (talenti, incantatori, prestigio, difese, grado di sfida) hanno ciascuna il suo
 modo di trattare i master e non passano da questa funzione.
 
+### Lotto 8, sesta parte — merci, proiettili, pezzi doppi e arco composito (2026-11-14)
+
+**Contesto.** Il thread del volume riempie le schede con l'equipaggiamento dei Codex e ha mandato l'elenco di 96 voci che `ricchezza` non sapeva prezzare: nessuna aveva un prezzo su main. Una voce senza prezzo non entra nel totale, quindi la verifica dà «almeno N mo» più basso del vero e una scheda troppo ricca passa.
+
+**Decisione.** I prezzi che l'SRD 3.5 ha si leggono dall'SRD, col generatore e non a mano:
+
+- `estrai_oggetti.py` scrive in `oggetti.toml` le merci di «Table: Goods and Services» (`[oggetti.comuni.merci]`; sotto 1 mo valgono 0), i proiettili col numero di pezzi del prezzo (`ammo`), lo scudo d'acciaio (`scudi_acciaio`), le armi che costano 0, le perle del potere e le collane delle palle di fuoco per tipo, il costo per punto di Forza dell'arco composito (`arco_forza`: 100 mo il lungo, 75 il corto) e i 6 mo di fattura perfetta di un proiettile.
+- `_oggetti_col_prezzo` conta: le merci in inglese e in italiano (i nomi italiani vengono dal lessico, tipo `equipaggiamento`); le armi a più pezzi («2 pugnali +1», «giavellotti (4)») e al plurale; i proiettili comuni e magici (potenziamento diviso 50 per pezzo, più fattura e prezzo base); lo scudo «d'acciaio» scritto prima o dopo il bonus; «mezza armatura»; le pozioni con la forza nel nome e il numero di dosi; l'arco composito con la Forza scritta fra parentesi («(For +1)», «(+2 Str)»).
+- «Pozione di scudo della fede +2» non è più letta come uno scudo +2.
+
+**Cosa non entra.** L'arco composito conta la Forza solo se sta scritta accanto al nome: dal bonus ai danni non si deduce. Gli oggetti che ha solo PF1e (terbutje, dogslicer, o-yoroi, headband…) non hanno prezzo nell'SRD 3.5 e restano fuori: 33 voci su 96, che vanno a card e le porta il thread del volume. Ferro freddo, argento alchemico, veleni e «worth N gp» sono un secondo giro.
+
+**Misura** (worktree pulito su 7193c7b7 contro il ramo). Elenco dei Codex: 0 → 63 voci col prezzo su 96. Nelle righe di equipaggiamento di `Bestiario` e degli archi: 472 → 489 voci col prezzo, 2.218.392 → 2.271.561 mo contati. `verifica_scheda.py Bestiario 0*/`: violazioni 30 → 30, non verificabili 384 → 384; cambiano due testi di «non verificabile» perché il totale sale (Therysol 20.335 → 20.435 mo per la lente; Vreek 22.100 → 26.704 mo per i due pugnali +1, prima contati zero). Il guadagno nel repo di oggi è piccolo (17 voci): serve alle schede che il thread del volume sta riempiendo.
+
+**Conseguenze.** Lo scudo pesante «d'acciaio» +2 vale 4.170 mo e non 4.157: il test che lo fissava è aggiornato. Un totale che sale può far scattare una violazione di ricchezza su una scheda che prima passava per difetto: è il comportamento voluto, e una scheda non si corregge senza la risposta del DM.
+

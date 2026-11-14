@@ -85,6 +85,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 8 sesta parte: merci, proiettili, pezzi doppi e arco composito… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotti 6 e 7: velocità, linguaggi e abilità di un file con più schede.… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 8 quinta parte: la ricchezza di un file con più schede.… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 7 sesta parte: la velocità delle razze senza dadi vita razziali… | In PR |
@@ -96,12 +97,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134 e ADR-0126, lotto 8 quarta parte: l'equipaggiamento standard. Scelta d… | In PR |
 | 2026-11-14 | STANDARD-SCHEDE | ADR-0091, le voci che mancavano nelle schede di ARC07-DEF-4. Dopo l'ordine (rig… | `verifica_scheda.py Bestiario 0*/`: 33 violazioni e 374 non verificabili, come su main (la verifica `ricchezza` non legge ancora «Altro equipaggiamento»); due… |
 | 2026-11-14 | RICERCA-TOOL-LGM-2026 | §3.1, la carta del cielo come handout: handout 7 di ARC-09 «La carta del cielo… | In PR |
-| 2026-11-13 | AVVENTURE-COMMUNITY | Canone di «chi sa cosa» (scelte del DM del 2026-11-13 su D1-D4 e sulla riga 69… | ✅ righe di «chi sa cosa» con un giorno: 0 su 31 → 27 su 33; T2 su main 0 violazioni; T1 resta in laboratorio (servono chiave del fatto, alias e finestre dei fi… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 123 voci, l'ultima MS-0123 del 2026-11-14 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 124 voci, l'ultima MS-0124 del 2026-11-14 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

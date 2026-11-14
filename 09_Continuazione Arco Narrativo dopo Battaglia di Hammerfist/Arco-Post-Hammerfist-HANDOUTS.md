@@ -203,9 +203,12 @@
 > **Quando darlo** (deciso dal DM il 2026-11-14, sulla card: «tutte e due»). La
 > carta sta addosso al mago della **squadra di piromanti drow** (tabella del
 > Cannath Vale, 56-70, `INCONTRI-VIAGGIO-CANNATH-VALE`), prima di fine Mirtul.
+> La squadra è una scena fissa fra il Day 22 e il 26 sulla strada che il gruppo
+> fa davvero: Witchwood se va alla Foresta Sacra, Vale centrale se Artemis va
+> solo verso nord [DM 2026-11-14, dossier delle piste §13 S1].
 > Se i PG non lo incontrano o non lo perquisiscono, **Sethrax** ne dà una copia
 > quando si smaschera al Torneo, come indizio gratuito sull'arco della Torre
-> (`P2B-Torneo-DAUTH-SUBQUEST-Artemis` §4.3): arriva dopo il 30 Mirtul, quindi
+> (`P2B-Torneo-DAUTH-SUBQUEST-Artemis` §4.1): arriva dopo il 30 Mirtul, quindi
 > la carta dice dove la Torre **è già andata**.
 > Un foglio rotondo di pelle sottile, inchiostro bruno, nessuna firma.
 

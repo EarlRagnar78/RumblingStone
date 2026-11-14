@@ -2,7 +2,7 @@
 // vista dal luogo del prossimo passo della Torre. Il Sigillo e la sua stella-chiave allo zenit.
 // Provenienza e uso: PROVENIENZA.txt accanto a questo file; handout 7 in
 // Arco-Post-Hammerfist-HANDOUTS.md. Si lancia con:
-//   stellarium --startup-script carta-del-cielo-zalkatar.ssc
+//   ./Stellarium-26.2-qt6-x86_64.AppImage --startup-script carta-del-cielo-zalkatar.ssc
 // dopo aver copiato cultura-del-cielo/rumblingstone in ~/.stellarium/skycultures/
 // e sostituito CARTELLA_DI_USCITA con una cartella vera.
 // I tre numeri che decidono la carta:
@@ -10,8 +10,12 @@
 //   2000-06-01 00:04 UT a longitudine 0 = mezzanotte del 30 Mirtul (giorno 152 dell'anno di Harptos;
 //   i 4 minuti portano la stella-chiave esattamente sul meridiano, a mezzanotte e' a un grado);
 //   a quell'ora la stella-chiave passa sul meridiano.
+// Stellarium 26.2 o successiva: la cultura del cielo e' nel formato index.json (la 23.x non la legge).
+// Il cerchio rosso e' un segno fisso (MarkerMgr), non il segno animato della selezione:
+// due lanci danno la stessa immagine pixel per pixel. Il cerchio verde e' il parallelo
+// del Sigillo (plugin ArchaeoLines, declinazione 38.922): ogni stella che ci passa sopra
+// sale allo zenit su quel luogo.
 core.setAppLanguage("it");
-core.setSkyLanguage("it");
 core.setSkyCulture("rumblingstone");
 core.setObserverLocation(0.0, 38.922, 0, 0, "Passo della Torre", "Earth");
 core.setDate("2000-06-01T00:04:00", "utc");
@@ -39,9 +43,31 @@ core.setGuiVisible(false);
 StelMovementMgr.setFlagTracking(false);
 StelMovementMgr.lookZenith();
 StelMovementMgr.zoomTo(182, 0);
-core.selectObjectByName("HIP 81833", true);
-StelMovementMgr.setFlagTracking(false);
-StelMovementMgr.lookZenith();
+MarkerMgr.markerEquatorial("16h42m53.8s", "+38d55m20s", true, true, "circle", "#d01010", 16, false, -1, false);
+ArchaeoLines.enableArchaeoLines(true);
+ArchaeoLines.showCrossquarters(false);
+ArchaeoLines.showCurrentMoon(false);
+ArchaeoLines.showCurrentSun(false);
+ArchaeoLines.showEquinox(false);
+ArchaeoLines.showGeographicLocation1(false);
+ArchaeoLines.showGeographicLocation2(false);
+ArchaeoLines.showMajorStandstills(false);
+ArchaeoLines.showMinorStandstills(false);
+ArchaeoLines.showNadirPassage(false);
+ArchaeoLines.showPolarCircles(false);
+ArchaeoLines.showSelectedObject(false);
+ArchaeoLines.showSelectedObjectAzimuth(false);
+ArchaeoLines.showSelectedObjectHourAngle(false);
+ArchaeoLines.showSolstices(false);
+ArchaeoLines.showZenithPassage(false);
+ArchaeoLines.showCustomAltitude1(false);
+ArchaeoLines.showCustomAltitude2(false);
+ArchaeoLines.showCustomAzimuth1(false);
+ArchaeoLines.showCustomAzimuth2(false);
+ArchaeoLines.showCustomDeclination2(false);
+ArchaeoLines.showCustomDeclination1(true);
+ArchaeoLines.setCustomDeclination1(38.922);
+ArchaeoLines.setCustomDeclination1Label("parallelo del Sigillo");
 core.wait(4);
 core.screenshot("zalkatar", false, "CARTELLA_DI_USCITA/", true);
 core.wait(2);

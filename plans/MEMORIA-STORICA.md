@@ -1320,7 +1320,18 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0134` → `plans/adr/ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md`; `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** le sette schede sopra la tabella non vengono dal prezzo base ma dal leggere l'equipaggiamento dove le schede lo scrivevano già, dentro la riga delle Statistiche: prima la verifica non lo vedeva. Una scheda scrive l'equipaggiamento due volte (recinto e prosa) e la prima versione l'avrebbe contato doppio. La quarta riga della Tabella 14-9 nel PRD somma 1.750 mo nelle categorie contro un totale di 1.650. Il thread del volume ha segnalato le forme non lette; Durin non risulta sopra la tabella con la misura di oggi.
 
-### MS-0115 · 2026-11-14 · Generatore, lotto J: i sette modelli semplici di PF1e
+### MS-0115 · 2026-11-14 · RICERCA-TOOL-LGM-2026 §3.1: la carta del cielo con Stellarium 26.2
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0005 ADR-0019
+- **Temi:** arc09 handout immagini indagine
+- **Origine:** riga del 2026-11-14 «§3.1, la carta del cielo passa a Stellarium 26.2» in `plans/CHANGELOG.md`
+- **Testo:** Jfs, 2026-11-14: «usalo e aggiorna Stellarium se migliora il risultato ed il miglioramento è misurabile». Misura: due lanci dello stesso script davano 619 pixel diversi con la 23.4 (la stella-chiave segnata dalla selezione, che è animata) e ne danno 0 con la 26.2 e un segno fisso (`MarkerMgr.markerEquatorial`). Sulla card del 2026-11-14 Jfs ha scelto «Sì, con il parallelo»: il plugin ArchaeoLines traccia la declinazione 38,922, il parallelo della stella-chiave.
+- **Trovato nel repo:** `09_…/Immagini-Handout/carta-del-cielo/PROVENIENZA.txt` · `09_…/Immagini-Handout/carta-del-cielo/carta-del-cielo-zalkatar.ssc` · handout 7 in `Arco-Post-Hammerfist-HANDOUTS.md`
+- **Solo qui:** la voce è nata MS-0114 ed è diventata MS-0115 al riallineo dopo la #425. SkyCultureMaker, il plugin nominato nel §3.1, c'è nella 26.2 ma è solo a finestre: non ha comandi da script, quindi `index.json` è scritto a mano e il plugin non migliora alcuna misura. La 26.2 rifiuta i `.fab` («Failed to find index.json») e non ha più `core.setSkyLanguage`. Senza schermo restava appesa a `quitStellarium` finché in `config.ini` non ci sono il luogo fisso, `automatic_updates_enabled=false` e `flag_search_online=false`. L'AppImage legge `/usr/share/stellarium` se c'è una 23.4 installata da apt. ArchaeoLines accende di suo tutte le sue linee: vanno spente una per una; l'etichetta del parallelo non compare nell'immagine. Fra 23.4 e 26.2 senza segno cambiano circa 25.000 pixel di disegno, senza differenze che si vedano.
+
+### MS-0116 · 2026-11-14 · Generatore, lotto J: i sette modelli semplici di PF1e
 
 - **Data:** 2026-11-14
 - **PR:** —
@@ -1331,7 +1342,7 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0034` → `plans/adr/ADR-0034-generare-dalle-tabelle.md`
 - **Solo qui:** il vecchio conto del modello Avanzato lasciava ferma l'iniziativa e scriveva «+2 Advanced» nel dettaglio della CA invece di alzare Destrezza e armatura naturale; l'ha trovato il test del conto esatto. `pf-dado` registra i dadi e i bonus che non vengono dalla Costituzione, quindi un modello non lo tocca: cambia il bonus nella riga del tipo. I dadi di danno seguono le tabelle delle armi del Core Rulebook; da 2d6 in su le tabelle delle armi e degli attacchi naturali divergono, e un dado che la tabella non ha resta com'è e viene dichiarato. Per disfare un modello serve la traccia di ciò che ha fatto: il passo dei dadi all'ingiù non è l'inverso di quello all'insù.
 
-### MS-0116 · 2026-11-14 · Regole, lotto 7 quinta parte: linguaggi di hobgoblin, orco, drow, duergar
+### MS-0117 · 2026-11-14 · Regole, lotto 7 quinta parte: linguaggi di hobgoblin, orco, drow, duergar
 
 - **Data:** 2026-11-14
 - **PR:** —
@@ -1342,7 +1353,7 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** le razze coi dadi vita razziali (bugbear, gnoll, ogre, troll) restano fuori apposta: la riga dell'SRD è per il personaggio giocante. Un test vecchio dava il drow come «razza fuori dalla tabella» ed è stato girato.
 
-### MS-0117 · 2026-11-14 · Regole, lotto 6 terza parte: razze dei mostri, taglia e velocità nelle abilità
+### MS-0118 · 2026-11-14 · Regole, lotto 6 terza parte: razze dei mostri, taglia e velocità nelle abilità
 
 - **Data:** 2026-11-14
 - **PR:** —
@@ -1353,7 +1364,7 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** la prima estrazione dava «hide = 1» ai Piccoli, perché l'espressione prendeva il «+1» dell'attacco nella stessa frase; l'ha mostrato il diff del file dati. Le schede di prova dei talenti erano un orco barbaro tarato sul margine fisso: ora sono uno gnoll.
 
-### MS-0118 · 2026-11-14 · Regole, lotto 7 sesta parte: velocità di hobgoblin, orco, drow, duergar
+### MS-0119 · 2026-11-14 · Regole, lotto 7 sesta parte: velocità di hobgoblin, orco, drow, duergar
 
 - **Data:** 2026-11-14
 - **PR:** —
@@ -1364,7 +1375,7 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** due schede di hobgoblin regolari scrivono 6 m senza scomporre la CA: la prima versione le dava per violazioni, ed erano solo armature non nominate. Da lì la regola del dubbio. La correzione diretta del nome dell'armatura del bladebearer è stata fermata: una scheda si cambia solo con la risposta del DM, anche quando è un errore di trascrizione.
 
-### MS-0119 · 2026-11-14 · Regole, lotto 8 quinta parte: la ricchezza di un file con più schede
+### MS-0120 · 2026-11-14 · Regole, lotto 8 quinta parte: la ricchezza di un file con più schede
 
 - **Data:** 2026-11-14
 - **PR:** —
@@ -1375,7 +1386,7 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** nella #425 era stato scritto che le schede allungate di ARC07-DEF-4 non davano violazioni nuove: era vero solo perché non erano lette. L'ha notato il thread del volume, ed è stato detto a Jfs. Una misura che tace va controllata: tace perché è in regola o perché non guarda?
 
-### MS-0120 · 2026-11-14 · Regole, lotti 6 e 7: velocità, linguaggi e abilità di un file con più schede
+### MS-0121 · 2026-11-14 · Regole, lotti 6 e 7: velocità, linguaggi e abilità di un file con più schede
 
 - **Data:** 2026-11-14
 - **PR:** —

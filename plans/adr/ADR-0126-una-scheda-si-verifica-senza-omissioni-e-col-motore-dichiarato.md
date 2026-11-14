@@ -1339,3 +1339,19 @@ Se la taglia non è quella della base il grado atteso è un intervallo: +1 se è
 
 **Conseguenze.** Skeletal Dire Lion entra in `IN_ATTESA` fino alla risposta del DM (card del 2026-11-14). Nella stessa PR: `conformita_statblocchi._attacco_di_scheda` non legge più come attacco una voce di equipaggiamento, talenti o abilità («doppia ascia orchesca +1 (…)» in una scheda senza `attacchi:`); lo stato dei numeri sul repo non cambia.
 
+
+### Lotto 5, ottava parte — la base dichiarata con un modello che non ne cambia i numeri (2026-11-14)
+
+**Contesto.** Una fonte che nomina un modello non dichiarava mai la base: il gufo gigante celestiale («SRD 3.5 (gufo gigante, avanzamento a 8 DV, modello celestiale)») restava senza riscontro su dadi vita, armatura naturale, dadi degli attacchi e grado di sfida.
+
+**Decisione.** Tre regole, tutte in `creature_base.dichiarata` e in `verifica_scheda.creatura_base`:
+
+- celestiale e immondo (SRD, celestial-creature e fiendish-creature) lasciano alla base dadi vita, armatura naturale e attacchi: la fonte che nomina solo loro dichiara la base. I «mezzi» (mezzo-celestiale, mezzo-immondo, mezzo-drago) no, perché cambiano armatura naturale e caratteristiche;
+- la base può stare fra parentesi dopo «SRD 3.5» e avere il nome di `[gs.nomi_base]` («gufo gigante», «hell hound»);
+- se la fonte dichiara l'avanzamento («avanzamento a 8 DV», «advanced to 8 HD») e i dadi scritti sono quelli, con il dado della base, i dadi vita in più non sono una violazione. Il grado di sfida li conta già (tabella «Improved Monster CR Increase»).
+
+**Cosa non entra.** Il massimo della riga «Advancement» di ogni creatura non è nei dati: un avanzamento dichiarato oltre quel massimo passa. Le caratteristiche che crescono con la taglia non si riscontrano. L'armatura naturale dei «mezzi» e dello scheletro resta da fare.
+
+**Misura** (contro main 2ade1d5c). `verifica_scheda.py Bestiario 0*/`: violazioni 31 = 31, non verificabili 372 → 369. Le tre voci tolte sono del gufo gigante celestiale, ora giudicato per intero e in regola (3 della base, +1 per quattro dadi vita in più, +2 da celestiale con 8 dadi vita = 6). Nessun'altra scheda cambia giudizio.
+
+**Scartato in corsa.** Far dichiarare la base a qualsiasi fonte che ne contenga il nome accanto a un modello: l'Ogre Skullcrusher (Races of Faerûn, col nome «Ogre» nel percorso del file) diventava un ogre dell'SRD avanzato e prendeva una violazione falsa sul grado di sfida.

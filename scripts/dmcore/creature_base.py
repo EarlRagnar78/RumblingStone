@@ -19,10 +19,13 @@ from dmcore import sistemi as S
 __all__ = ["tabella", "creatura", "dichiarata", "drago", "attacco_naturale"]
 
 #: dopo queste parole la fonte nomina la creatura: «SRD», «MM», «MM p.33», «Monster Manual»
-_PRIMA = r"(?:\bsrd(?:\s+3\.5)?|\bmm(?:\s+i)?|\bmonster manual(?:\s+i)?)(?:\s+p\.?\s*\d+)?\s*[:,]?\s*(?:base\s+)?[*_]{0,2}"
+_PRIMA = r"(?:\bsrd(?:\s+3\.5)?|\bmm(?:\s+i)?|\bmonster manual(?:\s+i)?)(?:\s+p\.?\s*\d+)?\s*[:,]?\s*(?:\(\s*)?(?:base\s+)?[*_]{0,2}"
 _ARCHETIPO = re.compile(
     r"template|archetipo|skeleton|scheletr|zombi|fiendish|immond|celestial|half-|mezzo-|mezz[oa] |ghost|"
     r"spettral|vampir|lich|lycanthrop|licantrop|were\w+|mannar|advanced|avanzat|innest|graft|pseudonatural", re.I)
+#: i modelli dell'SRD che lasciano dadi vita, armatura naturale e attacchi della base come sono
+#: (celestial-creature.md e fiendish-creature.md: cambiano qualità speciali, tipo e grado di sfida)
+_SENZA_NUMERI = re.compile(r"(?<!half-)(?<!mezzo-)(?<!mezzo )(?<!mezza )\b(?:celestial[ei]?|fiendish|immond[oaie])\b", re.I)
 #: il nome italiano o inglese dell'attacco nella scheda → il nome nell'SRD
 _ATTACCHI = (
     (r"\bmors[oi]\b|\bbite\b|\bzann[ae]\b", ("bite",)),
@@ -57,6 +60,13 @@ def _nomi(sistema: str) -> "tuple[tuple[str, str], ...]":
         if ", " in k:
             a, b = k.split(", ", 1)
             out.setdefault(f"{b} {a}", k)
+    try:  # i nomi italiani o scritti diversamente dall'SRD («gufo gigante», «hell hound»)
+        altri = (S.dati(sistema, "creature.costruzione").get("gs") or {}).get("nomi_base") or {}
+    except S.ErroreSistemi:
+        altri = {}
+    for scritto, k in altri.items():
+        if k in out:
+            out.setdefault(scritto, k)
     return tuple(sorted(out.items(), key=lambda kv: -len(kv[0])))
 
 
@@ -69,8 +79,8 @@ def dichiarata(fonte: str, sistema: str = "dnd35") -> "tuple[str, dict] | None":
 
     None anche quando la fonte nomina un archetipo: la base c'è, ma i suoi
     numeri non valgono più così come sono."""
-    testo = (fonte or "").lower()
-    if not testo or _ARCHETIPO.search(testo):
+    testo = _SENZA_NUMERI.sub(" ", (fonte or "").lower())
+    if not testo.strip() or _ARCHETIPO.search(testo):
         return None
     for scritto, chiave in _nomi(sistema):
         if re.search(_PRIMA + re.escape(scritto) + r"s?\b", testo):

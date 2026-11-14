@@ -1175,6 +1175,8 @@ def classe_armatura(p: Path) -> "tuple[list[dict], list[dict]]":
     return viol, nv
 
 
+#: l'avanzamento per dadi vita che la fonte dichiara: «avanzamento a 8 DV», «advanced to 8 HD»
+_AVANZAMENTO_DICHIARATO = re.compile(r"(?:avanzament\w+|advance[d]?)\s+(?:a|to)\s+(\d+)\s*(?:DV|HD|dadi vita)\b", re.I)
 _FONTE_SCHEDA = re.compile(r"\*\*(?:Source|Fonte)\*\*\s*:?\s*([^|\n]*)", re.I)
 _TAGLIE_IT = {"minuscola": "Fine", "minuta": "Diminutive", "piccolissima": "Tiny", "piccola": "Small",
               "media": "Medium", "grande": "Large", "enorme": "Huge", "mastodontica": "Gargantuan",
@@ -1257,7 +1259,11 @@ def creatura_base(p: Path) -> "tuple[list[dict], list[dict]]":
                            testo=f"dadi vita {'+'.join(f'{n}d{f}' for n, f in scritti)} contro i {voce['dv']}d12 di "
                                  f"{nome}: avanzato per dadi vita o di un'altra categoria d'età"))
         elif scritti and isinstance(voce["dv"], int):
-            if (str(voce["dv"]), str(voce["dado"])) not in scritti:
+            fonte = _FONTE_SCHEDA.search(testo) if len(blocchi) == 1 else None
+            av = _AVANZAMENTO_DICHIARATO.search(fonte.group(1)) if fonte else None
+            if av and int(av.group(1)) > voce["dv"] and (av.group(1), str(voce["dado"])) in scritti:
+                pass  # la fonte dichiara l'avanzamento («avanzamento a 8 DV») e i dadi scritti sono quelli
+            elif (str(voce["dv"]), str(voce["dado"])) not in scritti:
                 viol.append(dict(base, regola="numero.dv.razziali", atteso=f"{voce['dv']}d{voce['dado']}",
                                  ha="+".join(f"{n}d{f}" for n, f in scritti),
                                  testo=f"dadi vita {'+'.join(f'{n}d{f}' for n, f in scritti)}: la creatura base "

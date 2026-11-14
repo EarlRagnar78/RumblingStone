@@ -38,6 +38,30 @@ animal = 3
 dragon = 2
 outsider = 2
 
+[gs.nomi_base]  # come una scheda nomina una creatura base → la sua chiave in creature_base.toml
+# Solo dove il nome della scheda non è quello del blocco dell'SRD (che scrive «Hellhound» sotto il titolo «Hell Hound»).
+"hell hound" = "hellhound"
+"segugio infernale" = "hellhound"
+"gufo gigante" = "owl, giant"
+
+[gs.modelli_gs]  # i modelli dell'SRD col loro conto del grado di sfida (lotto 5, settima parte)
+# SRD, riga «Challenge Rating» di ogni «Creating a …» (monsters-b-c, e-f, g, h-i, k-l, s, t-z).
+# `soglie`: [dadi vita fino a, aumento]; `piu`: aumento fisso; `per_dv`: [dadi vita fino a, grado]
+# (scheletro e zombi: il grado viene dai dadi vita, la base non serve). L'ordine conta: prima i «mezzi».
+# Il licantropo conta i dadi vita dell'animale, che la scheda non separa: resta non verificabile.
+ordine = ["half-celestial", "half-fiend", "half-dragon", "celestial", "fiendish", "lich", "vampire", "ghost", "skeleton", "zombie"]
+neutri = ["template", "archetipo", "augmented"]  # parole che accompagnano un modello riconosciuto
+"half-celestial" = { nomi = ["half-celestial", "mezz[oa]?[- ]?celest\\w*"], soglie = [[5, 1], [10, 2], [999, 3]] }
+"half-fiend" = { nomi = ["half-fiend", "mezz[oa]?[- ]?(?:immond|demon|diavol)\\w*"], soglie = [[4, 1], [10, 2], [999, 3]] }
+"half-dragon" = { nomi = ["half-dragon", "mezz[oa]?[- ]?drag\\w*"], piu = 2, minimo = 3 }
+celestial = { nomi = ["celestial\\w*"], soglie = [[3, 0], [7, 1], [999, 2]] }
+fiendish = { nomi = ["fiendish", "immond\\w*"], soglie = [[3, 0], [7, 1], [999, 2]] }
+lich = { nomi = ["\\blich\\b"], piu = 2 }
+vampire = { nomi = ["vampir\\w*\\b(?!\\s+spawn)"], piu = 2 }
+ghost = { nomi = ["\\bghost\\b", "fantasma"], piu = 2 }
+skeleton = { nomi = ["skeleton", "skeletal", "scheletr\\w*"], per_dv = [[1, "1/3"], [3, "1"], [5, "2"], [7, "3"], [9, "4"], [11, "5"], [14, "6"], [17, "7"], [20, "8"]] }
+zombie = { nomi = ["zombi\\w*"], per_dv = [[1, "1/4"], [2, "1/2"], [4, "1"], [6, "2"], [10, "3"], [14, "4"], [16, "5"], [20, "6"]] }
+
 [gs.razze]  # {pg, png, come la scheda la nomina}
 drow = { pg = 1, png = 0, nomi = ["drow"], fonte = "monsters-e-f.md" }
 duergar = { pg = 1, png = 0, nomi = ["duergar"], fonte = "monsters-dr-dw.md" }

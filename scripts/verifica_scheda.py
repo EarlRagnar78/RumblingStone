@@ -1343,8 +1343,9 @@ def grado_di_sfida(p: Path) -> "tuple[list[dict], list[dict]]":
         tipo_en = (s.tipo or "").lower()
         for it_, en_ in _TIPI_IT.items():
             tipo_en = tipo_en.replace(it_, en_)
-        for come, chiave in CB._nomi(sistema):
-            v = CB.tabella(sistema)[chiave]
+        altri = tuple((tabella.get("nomi_base") or {}).items())
+        for come, chiave in altri + CB._nomi(sistema):
+            v = CB.tabella(sistema).get(chiave) or {}
             if re.search(rf"\b{re.escape(come)}s?\b", dove, re.I) and v.get("tipo") and v["tipo"] in tipo_en \
                     and "dv" in v and v.get("gs") is not None:
                 voce = v

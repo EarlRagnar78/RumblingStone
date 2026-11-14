@@ -1510,14 +1510,20 @@ UNO_CONTRO_UNO = re.compile(r"[Uu]no contro uno:?\**\s*`([^`]+\.md)`(?:\s*§\s*�
 TITOLO_UNITA = re.compile(r"^#{2,4}\s+\**(.+?)\**\s*$", re.M)
 
 
+#: Le voci del blocco che elencano oggetti, talenti o abilità: un «+1» lì è un potenziamento, non un attacco
+_VOCE_NON_ATTACCO = re.compile(r"(?:altro\s+|other\s+)?(?:equipaggiamento|equipment|possessions|gear|tesoro|treasure|"
+                               r"talenti|feats|abilit[àa]|skills)\b", re.I)
+
+
 def _attacco_di_scheda(s: Scheda) -> str:
-    """La riga del primo attacco in mischia, o del primo attacco qualunque."""
+    """La riga del primo attacco in mischia, o del primo attacco qualunque. Le voci
+    dell'equipaggiamento non contano: «doppia ascia orchesca +1 (…)» è un oggetto."""
     if s.mischia:
         return s.mischia
     blocco = L.BLOCCO.search(s.testo)
     voci = re.findall(r"^\s*-\s*(.+)$", blocco.group(1), re.M) if blocco else []
     for v in voci:
-        if not re.match(r"(?:Distanza|Ranged)\b", v, re.I) and PRIMO_ATTACCO.search(v):
+        if not re.match(r"(?:Distanza|Ranged)\b", v, re.I) and not _VOCE_NON_ATTACCO.match(v) and PRIMO_ATTACCO.search(v):
             return v
     return ""
 

@@ -280,7 +280,7 @@ Fonte principale: file Arc-04/05/06/07 + `Bestiario/pregen-pcgen/` vari.
 | Grell Necromante / Patriarca | 7/9 | `01_LaMiniera/grell necromante.txt` / `grellPatriarca.txt` | Miniera |
 | Bone Naga (Ghostlord) | 10 | [CANONE — DM 2026-05-05] `Bestiario/mostri/bone-naga-cr10.md` | MM II |
 | Deathlock | 8 | [CANONE — DM 2026-05-05] `Bestiario/mostri/deathlock-cr8.md` | MM III |
-| Skeletal Dire Lion | 6 | [CANONE — DM 2026-05-05] `Bestiario/mostri/skeletal-dire-lion-cr6.md` | Pride Ghostlord |
+| Skeletal Dire Lion | 7 | [CANONE — DM 2026-05-05] `Bestiario/mostri/skeletal-dire-lion-cr7.md` | Pride Ghostlord |
 | Spectre | 7 | [REF MM p.232] | Ghostlord pride |
 | Allip | 3 | [REF MM p.11] | Minion non-morto |
 

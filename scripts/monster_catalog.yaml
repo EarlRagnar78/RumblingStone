@@ -1163,13 +1163,6 @@ monsters:
     role: boss
     environment: elemental-earth
     source_file: "Bestiario/villain/terros-l-antico-cr15.md"
-  - id: skeletal-dire-lion-ghostlord-pride-4c7cc1
-    name: "Skeletal Dire Lion (Ghostlord Pride)"
-    cr: 6.0
-    faction: ghostlord-undead
-    role: melee-shock
-    environment: any
-    source_file: "Bestiario/mostri/skeletal-dire-lion-cr6.md"
   - id: leoni-spettrali-guardie-incorporee-afd43d
     name: "Leoni Spettrali (guardie incorporee)"
     cr: 7.0
@@ -1177,6 +1170,13 @@ monsters:
     role: generalist
     environment: any
     source_file: "Bestiario/mostri/leoni-spettrali-cr7.md"
+  - id: skeletal-dire-lion-ghostlord-pride-77ef0e
+    name: "Skeletal Dire Lion (Ghostlord Pride)"
+    cr: 7.0
+    faction: ghostlord-undead
+    role: melee-shock
+    environment: any
+    source_file: "Bestiario/mostri/skeletal-dire-lion-cr7.md"
   - id: deathlock-ghostlord-mage-0c1f7a
     name: "Deathlock (Ghostlord mage)"
     cr: 8.0

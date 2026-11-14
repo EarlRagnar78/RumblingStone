@@ -15803,7 +15803,7 @@
     ]
    }
   },
-  "Bestiario/mostri/skeletal-dire-lion-cr6.md": {
+  "Bestiario/mostri/skeletal-dire-lion-cr7.md": {
    "controlla": [],
    "genera": [
     {
@@ -15829,11 +15829,11 @@
     },
     [
      "array elite del Manuale del DM (creatura)",
-     "variazione a seme fisso: Cos +1, Car −1",
-     "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 6) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
+     "variazione a seme fisso: Sag +1, Cos −1",
+     "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 7) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
      "taglia (SRD, Improving Monsters): For +8, Des -2, Cos +4",
      "Des 14 **letta da ca-dettaglio** — il vincolo batte l'array",
-     "Sag 10 **ricavata da Vol +10 (base +10)** — il tetto del TS batte l'array",
+     "Sag 11 **ricavata da Vol +10 (base +10)** — il tetto del TS batte l'array",
      "Cos — : non morto, nessun punteggio di Costituzione (SRD, tipo Undead)",
      "Int —, Sag 10, Car 1: modello scheletro/zombi (SRD)"
     ]
@@ -15869,7 +15869,7 @@
      ],
      "pf_media": 104
     },
-    "file": "Bestiario/mostri/skeletal-dire-lion-cr6.md",
+    "file": "Bestiario/mostri/skeletal-dire-lion-cr7.md",
     "provenienza": "copiate",
     "scarti": {},
     "template": null,
@@ -15927,7 +15927,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "copiate",
-    "senza_note": 864,
+    "senza_note": 893,
     "sestine_citate": [],
     "taglia": -1,
     "talenti": {},
@@ -15969,7 +15969,7 @@
      16,
      192
     ],
-    "file": "Bestiario/mostri/skeletal-dire-lion-cr6.md",
+    "file": "Bestiario/mostri/skeletal-dire-lion-cr7.md",
     "legale": true,
     "media": 104,
     "motivo": null,
@@ -15999,12 +15999,12 @@
       "nome": "undead"
      }
     ],
-    "gs": 6.0,
+    "gs": 7.0,
     "lotta": null,
     "mischia": "",
     "pf": 104,
     "provenienza": "copiate",
-    "tipo": "Large undead HD 16d12 (104 HP with skeleton template 2x HD)",
+    "tipo": "Large undead HD 16d12 (104 HP; dire lion of 16 HD with skeleton template)",
     "ts": [
      5,
      7,
@@ -44423,7 +44423,7 @@
     "scritta": "attributi: For 22 Des 12 Cos 20 Int 8 Sag 13 Car 12"
    },
    {
-    "file": "Bestiario/mostri/skeletal-dire-lion-cr6.md",
+    "file": "Bestiario/mostri/skeletal-dire-lion-cr7.md",
     "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.",
     "note": [
      "letta dalla riga delle caratteristiche della scheda stessa"
@@ -45596,7 +45596,7 @@
       }
      ],
      [
-      "skeletal-dire-lion-cr6.md",
+      "skeletal-dire-lion-cr7.md",
       {
        "Car": 10,
        "Cos": "—",

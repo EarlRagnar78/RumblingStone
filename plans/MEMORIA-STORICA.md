@@ -1516,3 +1516,14 @@ repo scritto con altre parole.
 - **Testo:** `creature_base.dichiarata` accetta una fonte che nomina celestiale o immondo, la base fra parentesi e i nomi di `[gs.nomi_base]`; `verifica_scheda.creatura_base` accetta i dadi vita di un avanzamento che la fonte dichiara. Violazioni 31 = 31, non verificabili 372 → 369 contro main 2ade1d5c: il gufo gigante celestiale è giudicato per intero e in regola.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** la prima versione faceva dichiarare la base a ogni fonte col nome della creatura accanto a un modello, e l'Ogre Skullcrusher (Races of Faerûn, «Ogre» nel percorso del file citato) prendeva una violazione falsa sul grado di sfida: la base si dichiara solo dopo «SRD», «MM» o «Monster Manual». `_recinti_del_master` non vede un blocco senza `ca:` e `ts:`: una scheda di prova troppo corta non arriva mai a `_base_del_blocco`. Il massimo della riga «Advancement» non è nei dati.
+
+### MS-0133 · 2026-11-14 · Regole: lo Skeletal Dire Lion ha 16 dadi vita e grado di sfida 7
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole grado-di-sfida scheletro skeletal-dire-lion ghostlord decisione-dm
+- **Origine:** riga del 2026-11-14 «risposta del DM sulla card dello Skeletal Dire Lion» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha scelto sulla card del 2026-11-14 di tenere i 16 dadi vita e di portare il grado di sfida a 7. La scheda toglie «2x HD», il file diventa `skeletal-dire-lion-cr7.md`, `IN_ATTESA` del grado di sfida torna vuoto. Violazioni 31 → 30 contro main b448fd33.
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** nel tipo non si può scrivere «avanzato» né ripetere «scheletro» accanto a «skeleton»: `gs.modello_noto` vede un avanzamento o un secondo modello e il grado torna non verificabile. Restano al DM il livello d'incontro delle due righe del viaggio verso Cannath Vale che usano questi leoni e l'armatura naturale +4 (lo scheletro Grande dell'SRD ha +2).

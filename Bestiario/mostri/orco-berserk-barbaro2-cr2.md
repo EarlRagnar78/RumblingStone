@@ -21,6 +21,8 @@ attacchi:
   - Mischia grande ascia perfetta a due mani +9 (1d12+9/x3); ascia da lancio +8 (1d6+6)
 voci:
   - Talenti: Carica Possente (Powerful Charge)
+  - Equipaggiamento da combattimento: olio di arma magica
+  - Altro equipaggiamento: cuoio borchiato +1, ascia bipenne perfetta, giavellotto perfetto, ascia da lancio, abito da esploratore; dall'export, col nome della fonte: *masterwork potion belt*
 ```
 
 > [GENERATO] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. ⚠ la CA di contatto suggerisce Des 8, la fonte dice 13: si tiene la fonte, la differenza può essere deviazione o schivata, da verificare.
@@ -32,3 +34,5 @@ Notes: ondate d'assalto orchesche al fianco della Mano Rossa.
 > correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-12): il talento era scritto «Carica Devastante» (*Spirited Charge*, che chiede Combattere in Sella); la fonte PCGen dice *Powerful Charge* (Eberron), ora «Carica Possente».
 
 > correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-12, lotto 1-bis): campo `sensi` aggiunto, orco: scurovisione 18 m (SRD). La scheda non la scriveva.
+
+> RC-001 (2026-11-14, ADR-0134): corredo trascritto dalle «Possessions» dell'export PCGen citato in testa; dal PNG dei Codex PF1e «Boggard Savage» `[CANONE — DM 2026-11-14, RC-001]` entra l'olio; le due pozioni di cura ferite moderate porterebbero il valore sopra il tetto. Armatura e armi restano quelle della scheda; gli oggetti dei Codex che cambierebbero CA o tiri salvezza aspettano la decisione del DM. Valore 1.864 mo, monete escluse, contro i 2.000 del livello effettivo 2 (DMG 3.5, Tabella 4-23).

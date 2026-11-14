@@ -20,6 +20,8 @@ attacchi:
   - Mischia mazza pesante +1 +6 (1d8+2); scudo +0 (1d4+1)
 voci:
   - Talenti: Incantare in Combattimento, Arma Focalizzata (mazza pesante)
+  - Equipaggiamento da combattimento: pergamena di evoca mostri III, pergamena di arma spirituale, pozioni di cura ferite leggere (3)
+  - Altro equipaggiamento: corazza di bande +1, scudo pesante di acciaio +1, mazza pesante +1, abito da esploratore
 ```
 
 
@@ -30,3 +32,5 @@ Medium humanoid (goblinoid), Cleric 5 (Mano del Destino di Tiamat), LE. **hp 41*
 Notes: i chierici «Doom Hand» del culto di Tiamat (RHoD); **Zarr** è l'esemplare nominato usato al ponte/avanguardia.
 
 > correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-12, lotto 1-bis, regola del DM «il numero più forte, se si ricostruisce»): lo scudo pesante dà +2 (SRD): il +3 scritto si tiene dichiarandolo +1. La CA non cambia.
+
+> RC-001 (2026-11-14, ADR-0134): corredo trascritto dalle «Possessions» dell'export PCGen citato in testa; dal PNG dei Codex PF1e «Noble Crusader» `[CANONE — DM 2026-11-14, RC-001]` non entra niente: la pozione di forza del toro porterebbe il valore sopra il tetto. Armatura e armi restano quelle della scheda; gli oggetti dei Codex che cambierebbero CA o tiri salvezza aspettano la decisione del DM. Valore 5.567 mo, monete escluse, contro i 5.600 del livello effettivo 6 (DMG 3.5, Tabella 4-23).

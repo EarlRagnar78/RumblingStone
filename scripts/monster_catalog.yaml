@@ -1791,8 +1791,8 @@ monsters:
     role: generalist
     environment: any
     source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/regolari/hobgoblin-portalame cr7.htm"
-  - id: kulkorzhul-war-adept-sorcerer-7-dragonblood-a2e218
-    name: "KulkorZhul War Adept (Sorcerer 7, dragonblood)"
+  - id: kulkorzhul-war-adept-hobgoblin-sorcerer-7-dragonblood-a2e218
+    name: "KulkorZhul War Adept (Hobgoblin Sorcerer 7, dragonblood)"
     cr: 7.0
     faction: red-hand
     role: caster-arcane

@@ -1,4 +1,4 @@
-# KulkorZhul War Adept (Sorcerer 7, dragonblood) [TRANSCRIBED — PCGen, L1 2026-07-08]
+# KulkorZhul War Adept (Hobgoblin Sorcerer 7, dragonblood) [TRANSCRIBED — PCGen, L1 2026-07-08]
 **Faction**: red-hand | **Role**: caster-arcane | **Environment**: any | **CR**: 7 | **Source**: PCGen export `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/KulkorZhul war Adept cr8_no spell.htm` (+ 4 varianti cr9) | **Status**: transcribed-pcgen
 
 
@@ -20,6 +20,8 @@ attacchi:
   - Mischia lancia perfetta a due mani +4 (1d8/x3); Distanza lancia +7 (1d8/x3)
 voci:
   - Talenti: Draconic Heritage, Draconic Power, Draconic Vigor
+  - Equipaggiamento da combattimento: pozioni di cura ferite moderate (2), pergamena di velocità, pergamene di invisibilità (2), pergamena di evoca mostri IV, pergamene di volare (2)
+  - Altro equipaggiamento: amuleto dell'armatura naturale +1, bracciali dell'armatura +1, anello di protezione +1, mantello della resistenza +1, lancia perfetta, abito da studioso
 ```
 
 
@@ -29,3 +31,5 @@ Medium humanoid (goblinoid, dragonblood), Sorcerer 7, LE. **hp 33** (7 HD); **AC
 **Mischia** lancia perfetta a due mani +4 (1d8/x3); **Distanza** lancia +7 (1d8/x3). Incantesimi da Sorcerer 7 (CD 13+liv, tipici: *mage armor, magic missile, shield, Horizikaul's boom, daze*). Famiglio. Scurovisione 18 m. Talenti: Draconic Heritage, Draconic Power, Draconic Vigor.
 **Varianti elementali (Sorcerer 8, ~CR 8)** — file DM `cr9 acid/fire/ice/lightning`: hp 46, TS +6/+6/+6, BAB +4, lancia +5/+8; aggiungono gli *orb* del colore (acid arrow/orb of acid · fireball-line fire · ice darts/slow · orb of electricity/thunderhead). Una scheda, quattro colori — non quattro file.
 Notes: gli adepti da guerra KulkorZhul (RHoD). ⚠️ I filename DM dicono «cr8/cr9», l'export PCGen calcola CR 7/8: qui vale l'export; se il DM preferisce il CR dei filename, alzarlo a mano.
+
+> RC-001 (2026-11-14, ADR-0134): corredo trascritto dalle «Possessions» dell'export PCGen citato in testa; dal PNG dei Codex PF1e «Bloodfire Sorcerer» (unico Sorcerer 7 dei Codex) entrano le due pergamene di volare. Armatura e armi restano quelle della scheda; gli oggetti dei Codex che cambierebbero CA o tiri salvezza aspettano la decisione del DM. Valore 9.032 mo, monete escluse, contro i 9.400 del livello effettivo 8 (DMG 3.5, Tabella 4-23).

@@ -167,6 +167,19 @@ class Modelli(unittest.TestCase):
         v, _ = giudica("6", tipo, "4d8+8", titolo="Hell Hound mezzo-immondo", nome="hell-hound-cr6.md")
         self.assertEqual([(x["atteso"], x["ha"]) for x in v], [("4", "6")])
 
+    def test_base_dichiarata_avanzata_col_modello(self):
+        """Gufo gigante (3, 4 DV) avanzato a 8 DV: +1 ogni 3 dadi vita; celestiale con 8 dadi vita: +2."""
+        scheda = SCHEDA.replace("# {titolo}\n", "# {titolo}\n**Faction**: prova | **CR**: {gs} | **Source**: SRD 3.5 (gufo "
+                                "gigante, avanzamento a 8 DV, modello celestiale) | **Status**: prova\n").replace(
+            "pf: 30\n", "ca: 16\nca-dettaglio: (-1 taglia, +4 Des, +3 naturale)\npf: 52\nts: Temp +7, Rifl +10, Vol +4\n")
+        with tempfile.TemporaryDirectory() as d:
+            for gs, attese in (("6", []), ("7", [("6", "7")])):
+                p = Path(d) / f"gufo-cr{gs}.md"
+                p.write_text(scheda.format(gs=gs, tipo="Large magical beast (extraplanar), 8 DV, NB", dadi="8d10+8",
+                                           titolo="Gufo gigante celestiale"), encoding="utf-8")
+                v, nv = V.grado_di_sfida(p)
+                self.assertEqual(([(x["atteso"], x["ha"]) for x in v], nv), (attese, []))
+
     def test_due_modelli_o_un_avanzamento_non_si_contano(self):
         ogre = {"gs": 3, "dv": 4, "tipo": "giant"}
         for dove in ("ogre mezzo-immondo avanzato", "ogre celestiale mezzo-drago", "ogre licantropo", "vampire spawn",

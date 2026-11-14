@@ -91,6 +91,29 @@ class TestDichiarazione(unittest.TestCase):
                       "SRD *Stone Giant* + template semplice PF1e"):
             self.assertIsNone(CB.dichiarata(fonte), fonte)
 
+    def test_celestiale_e_immondo_lasciano_i_numeri_della_base(self):
+        """SRD, celestial e fiendish creature: dadi vita, armatura naturale e attacchi restano quelli della base."""
+        for fonte, attesa in (("SRD 3.5 (gufo gigante, avanzamento a 8 DV, modello celestiale)", "owl, giant"),
+                              ("SRD *Ogre* immondo", "ogre"), ("MM Fiendish Dire Wolf", "dire wolf"),
+                              ("SRD Hell Hound celestiale", "hellhound")):
+            self.assertEqual((CB.dichiarata(fonte) or [None])[0], attesa, fonte)
+        # i «mezzi» cambiano armatura naturale e caratteristiche: non dichiarano
+        for fonte in ("SRD *Ogre* mezzo-immondo", "SRD half-celestial ogre", "SRD ogre mezzo celestiale"):
+            self.assertIsNone(CB.dichiarata(fonte), fonte)
+
+    def test_la_fonte_dichiara_l_avanzamento(self):
+        gufo = dict(tipo="Large magical beast (extraplanar), 8 DV, NB", ca="-1 taglia, +4 Des, +3 naturale",
+                    attacco="Mischia morso +6 (1d8+2)")
+        fonte = "SRD 3.5 (gufo gigante, avanzamento a 8 DV, modello celestiale)"
+        self.assertEqual(giudica(fonte=fonte, dadi="8d10+8", **gufo), ([], []))
+        # i dadi scritti non sono quelli dichiarati, o la fonte non dichiara l'avanzamento
+        for f, dadi in ((fonte, "9d10+9"), ("SRD 3.5 (gufo gigante, modello celestiale)", "8d10+8")):
+            viol, _ = giudica(fonte=f, dadi=dadi, **gufo)
+            self.assertEqual(regole(viol), {"numero.dv.razziali"}, (f, dadi))
+        # il dado del morso resta quello della base
+        viol, _ = giudica(fonte=fonte, dadi="8d10+8", **dict(gufo, attacco="Mischia morso +6 (1d6+2)"))
+        self.assertEqual(regole(viol), {"numero.danno.dado"})
+
     def test_il_tipo_deve_essere_quello_della_base(self):
         # «MM Rakshasa + Rogue 3» su un umanoide è il cultista di un rakshasa
         viol, nv = giudica(fonte="MM Rakshasa + PHB Rogue 3", tipo="Medium humanoid, LE", dadi="3d6+6")

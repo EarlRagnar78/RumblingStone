@@ -1506,3 +1506,13 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** `vampir\w*(?!\s+spawn)` non esclude «vampire spawn», perché `\w*` torna indietro di una lettera: serve `\b` prima del lookahead. L'SRD scrive «Hellhound» nel blocco sotto il titolo «Hell Hound»: `[gs.nomi_base]` in `gs.toml` porta i nomi delle schede alle chiavi dei dati. Il gufo gigante celestiale resta non verificabile perché avanza anche per dadi vita e la sua fonte nomina un modello. Lo Skeletal Dire Lion scrive «2x HD», ma il modello scheletro non raddoppia i dadi vita: lo fa lo zombi.
 
+### MS-0132 · 2026-11-14 · Regole, lotto 5 ottava parte: la base dichiarata con un modello che non ne cambia i numeri
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole creatura-base modelli celestiale immondo avanzamento dadi-vita gufo-gigante verifica-scheda
+- **Origine:** riga del 2026-11-14 «lotto 5 ottava parte: la base dichiarata con un modello che non ne cambia i numeri» in `plans/CHANGELOG.md`
+- **Testo:** `creature_base.dichiarata` accetta una fonte che nomina celestiale o immondo, la base fra parentesi e i nomi di `[gs.nomi_base]`; `verifica_scheda.creatura_base` accetta i dadi vita di un avanzamento che la fonte dichiara. Violazioni 31 = 31, non verificabili 372 → 369 contro main 2ade1d5c: il gufo gigante celestiale è giudicato per intero e in regola.
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** la prima versione faceva dichiarare la base a ogni fonte col nome della creatura accanto a un modello, e l'Ogre Skullcrusher (Races of Faerûn, «Ogre» nel percorso del file citato) prendeva una violazione falsa sul grado di sfida: la base si dichiara solo dopo «SRD», «MM» o «Monster Manual». `_recinti_del_master` non vede un blocco senza `ca:` e `ts:`: una scheda di prova troppo corta non arriva mai a `_base_del_blocco`. Il massimo della riga «Advancement» non è nei dati.

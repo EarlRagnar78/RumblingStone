@@ -38,4 +38,4 @@ Notes: fanteria pesante duergar del ponte.
 
 > correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-12, lotto 2 di ADR-0126): critico di «Mischia spada bastarda perfetta» scritto (19-20, tabella delle armi dell'SRD).
 
-> RC-001 (2026-11-14, ADR-0134): corredo trascritto dalle «Possessions» dell'export PCGen citato in testa; dal PNG dei Codex PF1e «Duergar Sergeant» (scelta del DM sulla card del 14/11) entrano le pozioni e il fuoco dell'alchimista. Armatura e armi restano quelle della scheda; gli oggetti dei Codex che cambierebbero CA o tiri salvezza aspettano la decisione del DM. Valore 1.145 mo, monete escluse, contro i 2.500 del livello effettivo 3 (DMG 3.5, Tabella 4-23).
+> RC-001 (2026-11-14, ADR-0134): corredo trascritto dalle «Possessions» dell'export PCGen citato in testa; dal PNG dei Codex PF1e «Duergar Sergeant» `[CANONE — DM 2026-11-14, RC-001]` entrano le pozioni e il fuoco dell'alchimista. Armatura e armi restano quelle della scheda; gli oggetti dei Codex che cambierebbero CA o tiri salvezza aspettano la decisione del DM. Valore 1.145 mo, monete escluse, contro i 2.500 del livello effettivo 3 (DMG 3.5, Tabella 4-23).

@@ -21,7 +21,7 @@ attacchi:
 voci:
   - Talenti: Tirare in Sella, Combattere in Sella, Tiro Ravvicinato, Tiro Preciso, Arma Focalizzata (arco corto)
   - Equipaggiamento da combattimento: pozione di cura ferite moderate
-  - Altro equipaggiamento: cuoio borchiato +1, buckler di legnoscuro, arco corto composito perfetto con 40 frecce, scimitarra perfetta, abito da esploratore, 2 torce, sacco, una perla rosa; dall'export, coi nomi della fonte: *masterwork bandoleer*, *masterwork potion belt*, *fluorspar*, *Angelar's skin* (nel sacco)
+  - Altro equipaggiamento: cuoio borchiato +1, buckler di legnoscuro (portato, non imbracciato), arco corto composito perfetto con 40 frecce, scimitarra perfetta, abito da esploratore, 2 torce, sacco, una perla rosa; dall'export, coi nomi della fonte: *masterwork bandoleer*, *masterwork potion belt*, *fluorspar*, *Angelar's skin* (nel sacco)
 ```
 
 
@@ -31,4 +31,4 @@ Small humanoid (goblinoid), Fighter 5, LE. **hp 42** (5 HD); **AC 19**, touch 15
 **Distanza** arco corto composito perfetto +12 (1d4/x3), +13 (1d4+1) entro 9 m (Tiro Ravvicinato/Preciso). **Mischia** scimitarra perfetta +7 (1d4/18-20). Scurovisione 18 m. Talenti: Tirare in Sella, Combattere in Sella, Tiro Ravvicinato, Tiro Preciso, Arma Focalizzata (arco corto).
 Notes: cavalca il worg (vedi `worg-cavalcatura-cr2.md`); coppia raider+worg ≈ EL 6.
 
-> RC-001 (2026-11-14, ADR-0134): corredo trascritto dalle «Possessions» dell'export PCGen citato in testa; dal PNG dei Codex PF1e «Orc Lieutenant» (scelta del DM sulla card del 14/11) entra la pozione. Il buckler è nell'export ma la CA non lo conta. Armatura e armi restano quelle della scheda; gli oggetti dei Codex che cambierebbero CA o tiri salvezza aspettano la decisione del DM. Valore 2.472 mo, monete escluse, contro i 4.300 del livello effettivo 5 (DMG 3.5, Tabella 4-23).
+> RC-001 (2026-11-14, ADR-0134): corredo trascritto dalle «Possessions» dell'export PCGen citato in testa; dal PNG dei Codex PF1e «Orc Lieutenant» `[CANONE — DM 2026-11-14, RC-001]` entra la pozione. Il buckler è nell'export ma la CA non lo conta. Armatura e armi restano quelle della scheda; gli oggetti dei Codex che cambierebbero CA o tiri salvezza aspettano la decisione del DM. Valore 2.482 mo, monete escluse, contro i 4.300 del livello effettivo 5 (DMG 3.5, Tabella 4-23).

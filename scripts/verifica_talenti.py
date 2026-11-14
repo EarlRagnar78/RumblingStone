@@ -159,7 +159,12 @@ def sistema_di(p: Path, testo: str) -> str:
 
 def leggi(p: Path) -> "dict | None":
     """I fatti di una scheda che servono ai prerequisiti, o None se non ha talenti."""
-    s = L.leggi(p)
+    return leggi_testo(p.read_text(encoding="utf-8", errors="replace"), p)
+
+
+def leggi_testo(t: str, p: Path) -> "dict | None":
+    """Come `leggi`, su un testo già letto: una scheda sola di un file che ne ha più d'una."""
+    s = L.leggi_testo(t, p)
     if s is None:
         return None
     righe = s.testo.splitlines()

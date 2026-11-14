@@ -55,8 +55,11 @@ class TestDati(unittest.TestCase):
 
     def test_razze_e_chi_non_rallenta(self):
         self.assertEqual(self.m["razze"], {"human": 30, "dwarf": 20, "elf": 30, "gnome": 20, "half-elf": 30,
-                                           "half-orc": 30, "halfling": 20})
-        self.assertEqual(self.m["non_rallenta"], ["dwarf"])
+                                           "half-orc": 30, "halfling": 20,
+                                           # le razze senza dadi vita razziali, dal capitolo dei mostri
+                                           "aasimar": 30, "goblin": 30, "hobgoblin": 30, "kobold": 30, "orc": 30,
+                                           "tiefling": 30, "drow": 30, "duergar": 20, "svirfneblin": 20})
+        self.assertEqual(self.m["non_rallenta"], ["dwarf", "duergar"])
 
     def test_categorie_delle_armature(self):
         a = self.m["armature"]
@@ -129,19 +132,54 @@ class TestVelocita(unittest.TestCase):
         self.assertEqual((v, len(n)), ([], 1))
 
     def test_chi_non_si_giudica(self):
-        # una razza che non è delle sette dell'SRD: la sua velocità il plugin non la sa
-        self.assertEqual(giudica("12 m", razza="goblinoid"), ([], []))
-        self.assertEqual(giudica("12 m", razza="orc"), ([], []))
+        # una razza coi dadi vita razziali o fuori dalle tabelle: la sua velocità il plugin non la sa
+        self.assertEqual(giudica("12 m", razza="gnoll"), ([], []))
+        self.assertEqual(giudica("12 m", razza="goblinoid"), ([], []))       # goblinoide senza il nome della razza
+
+    def test_le_razze_senza_dadi_vita_razziali(self):
+        """Lotto 7, sesta parte: hobgoblin, orco, drow, duergar… dal capitolo dei mostri dell'SRD."""
+        def hob(velocita, **k):
+            with tempfile.TemporaryDirectory() as d:
+                q = Path(d) / "hobgoblin-prova-cr4.md"
+                q.write_text(SCHEDA.format(razza="goblinoid", classe=k.get("classe", "Fighter 4"), ca=k.get("ca", "+1 Des"),
+                                           velocita=velocita, dadi=k.get("dadi", "4d10+8"), coda=""), encoding="utf-8")
+                v, n = V.velocita(q)
+            return [(x["atteso"], x["ha"]) for x in v], len(n)
+        self.assertEqual(hob("9 m"), ([], 0))
+        self.assertEqual(hob("12 m"), ([(30, 40)], 0))
+        self.assertEqual(hob("9 m", ca="+5 corazza di piastre, +1 Des"), ([(20, 30)], 0))
+        self.assertEqual(hob("9 m", ca="+5 corazza di piastre, +1 Des", classe="Barbarian 4", dadi="4d12+8"), ([], 0))
+        self.assertEqual(hob("12 m", ca="+5 corazza di piastre, +1 Des", classe="Barbarian 4", dadi="4d12+8"),
+                         ([(30, 40)], 0))
+
+    def test_velocita_ridotta_con_la_ca_non_scomposta_e_un_dubbio(self):
+        # 6 m è la velocità di un umano in armatura media o pesante: se la scheda non scompone la CA non si giudica
+        with tempfile.TemporaryDirectory() as d:
+            q = Path(d) / "prova-cr4.md"
+            q.write_text(SCHEDA.format(razza="human", classe="Fighter 4", ca="+1 Des", velocita="6 m", dadi="4d10+8",
+                                       coda="").replace(" (+1 Des)", ""), encoding="utf-8")
+            v, n = V.velocita(q)
+        self.assertEqual((v, len(n)), ([], 1))
+        self.assertIn("non scompone la CA", n[0]["testo"])
+        self.assertEqual(len(giudica("6 m")[0]), 1)                           # con le voci scritte è una violazione
+
+    #: schede con una decisione aperta del DM
+    IN_ATTESA: "set[str]" = set()
 
     def test_il_bestiario_non_ha_violazioni(self):
-        fuori = []
+        fuori, attese = [], set()
         for p in sorted((ROOT / "Bestiario").rglob("*.md")):
             try:
                 v, _ = V.velocita(p)
             except Exception as e:                                        # noqa: BLE001
                 self.fail(f"{p.name}: {e}")
+            if p.name in self.IN_ATTESA:
+                if v:
+                    attese.add(p.name)
+                continue
             fuori += [f"{x['file']}: {x['testo']}" for x in v]
         self.assertEqual(fuori, [])
+        self.assertEqual(attese, self.IN_ATTESA, "una scheda in attesa è stata corretta: toglierla dall'elenco")
 
 
 if __name__ == "__main__":

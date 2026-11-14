@@ -208,7 +208,25 @@ umano_per_livello = 1
 "use magic device" = ["decipher script", "spellcraft"]
 "use rope" = ["escape artist"]
 
-# il bonus razziale alle abilità delle sette razze dell'SRD (anche se vale solo in certi casi)
+# il bonus di razza e di taglia alle abilità (anche se vale solo in certi casi): le sette razze
+# dell'SRD e le nove senza dadi vita razziali del capitolo dei mostri (le chiavi di mdl.toml)
+[razze."aasimar"]
+"listen" = 2
+"spot" = 2
+
+[razze."drow"]
+"listen" = 2
+"search" = 2
+"spot" = 2
+
+[razze."duergar"]
+"appraise" = 2
+"craft" = 2
+"listen" = 1
+"move silently" = 4
+"search" = 2
+"spot" = 1
+
 [razze."dwarf"]
 "appraise" = 2
 "craft" = 2
@@ -221,7 +239,13 @@ umano_per_livello = 1
 
 [razze."gnome"]
 "craft" = 2
+"hide" = 4
 "listen" = 2
+
+[razze."goblin"]
+"hide" = 4
+"move silently" = 4
+"ride" = 4
 
 [razze."half-elf"]
 "diplomacy" = 2
@@ -234,11 +258,33 @@ umano_per_livello = 1
 
 [razze."halfling"]
 "climb" = 2
+"hide" = 4
 "jump" = 2
 "listen" = 2
 "move silently" = 2
 
+[razze."hobgoblin"]
+"move silently" = 4
+
 [razze."human"]
+
+[razze."kobold"]
+"craft" = 2
+"hide" = 4
+"profession" = 2
+"search" = 2
+
+[razze."orc"]
+
+[razze."svirfneblin"]
+"craft" = 2
+"hide" = 8
+"listen" = 2
+"search" = 2
+
+[razze."tiefling"]
+"bluff" = 2
+"hide" = 2
 
 # come una scheda nomina le sette razze (espressioni regolari, italiano e inglese); una
 # sottorazza (drow, duergar…) ha i suoi bonus in un'altra pagina e non è qui
@@ -257,6 +303,13 @@ altre = ["drow", "duergar", "svirfneblin", "derro", "aasimar", "tiefling", "gith
 # circostanza, SRD «Tools and Skill Kits»); `sinergia` è il +2 di ogni fonte con 5 gradi
 oggetto = 2
 sinergia = 2
+
+# SRD, Saltare: la velocità diversa da `velocita` piedi toglie `meno` o dà `piu` ogni `ogni` piedi
+[salto]
+velocita = 30
+ogni = 10
+meno = 6
+piu = 4
 
 [fuori_classe]
 # SRD, «Skills Summary»: un grado in un'abilità fuori classe costa 2 punti e il massimo

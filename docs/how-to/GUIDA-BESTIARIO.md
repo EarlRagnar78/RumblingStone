@@ -172,6 +172,23 @@ il GS**. Il template vale GS +1: la creatura è venduta come GS *n* e picchia co
 GS *n+1*, e **lo dichiara di sé** in una voce del blocco. È una riga sola da
 disfare se al tavolo è troppo.
 
+**`--template NOME`** applica uno dei sette modelli semplici di Pathfinder 1e
+al blocco finito, sempre senza cambiare il GS scritto: `advanced` (è
+`--piu-cattivi`), `giant` (una taglia in più, +4 a Forza e Costituzione, −2 a
+Destrezza, +3 di armatura naturale, dadi di danno un passo più su), `young` (il
+contrario, e vale GS −1: serve ad alleggerire), `celestial`, `fiendish`,
+`entropic`, `resolute` (scurovisione, resistenze, riduzione del danno,
+resistenza agli incantesimi e punire una volta al giorno, secondo i dadi vita).
+Il blocco dice in una voce quanto vale davvero e la riga `fonte:` lo ripete. I
+numeri stanno in `sistemi/pf1e/dati/modelli.toml`, ognuno con la sua fonte nel
+PRD. Gigante non si applica a una creatura Colossale, Giovane né a una
+Piccolissima né a un drago. Gli archetipi di classe non sono modelli e il
+generatore non li ha.
+
+```bash
+python3 scripts/genera_creatura.py --gs 7 --ruolo bruto --template giant
+```
+
 Su un incantatore `--piu-cattivi` accende anche **`--incantesimi pf1e`**, che
 innesta gli incantesimi PF1e che in 3.5 **non esistono** — la linea della *fossa*,
 *scirocco*, *saette*, *benedizione del fervore*. Uno per livello d'incantesimo,

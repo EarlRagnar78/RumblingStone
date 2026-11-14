@@ -8,7 +8,7 @@ taglia: Media
 spazio: 1,5 m
 portata: 1,5 m
 ca: 20
-ca-dettaglio: (+7 corazza di piastre +2, +2 Des, +1 deflessione)
+ca-dettaglio: (+7 corazza di piastre di mithral +2, +2 Des, +1 deflessione)
 pf: 105
 pf-dado: 10d12+40
 ts: Temp +13, Rifl +7, Vol +6
@@ -30,7 +30,7 @@ fonte: ricostruzione del repo su SRD 3.5, 2026-10-18
 
 **Tattiche** *Prima del combattimento*: avanza in squadra di quattro, in fila, dietro a uno scudo di fanteria regolare. · *Durante il combattimento*: entra in ira al primo round e carica; Attacco Poderoso a −5 su chi ha la CA più bassa. Incalzare sui feriti. · *Morale*: non si ritira mai in ira. Finita l'ira, sotto i 25 pf si arrende se nessun ufficiale lo vede.
 
-**Statistiche** For 21 Des 15 Cos 18 Int 10 Sag 12 Car 8 · BAB +10/+5; Lotta +15 (in ira +17) · Talenti Attacco Poderoso, Incalzare, Arma Focalizzata (ascia bipenne), Iniziativa Migliorata · Abilità Ascoltare +14, Intimidire +12, Saltare +19, Scalare +15 · Linguaggi Comune, Goblin · Equipaggiamento corazza di piastre +2, ascia bipenne +1, cintura della forza del gigante +4, amuleto della salute +2, mantello della resistenza +2, anello di protezione +1
+**Statistiche** For 21 Des 15 Cos 18 Int 10 Sag 12 Car 8 · BAB +10/+5; Lotta +15 (in ira +17) · Talenti Attacco Poderoso, Incalzare, Arma Focalizzata (ascia bipenne), Iniziativa Migliorata · Abilità Ascoltare +14, Intimidire +12, Saltare +19, Scalare +15 · Linguaggi Comune, Goblin · Equipaggiamento corazza di piastre di mithral +2, ascia bipenne +1, cintura della forza del gigante +4, amuleto della salute +2, mantello della resistenza +2, anello di protezione +1
 
 **Capacità speciali**
 - *Ira (Str)*: 3/giorno, For e Cos +4, Volontà +2, CA −2, per 9 round.
@@ -41,7 +41,7 @@ fonte: ricostruzione del repo su SRD 3.5, 2026-10-18
 
 **Versioni**
 - *Stampa 3.5* (`[Private — Red Hand of Doom WE, pp. 7, 12, 25]`): GS 4, a gruppi fino a ventiquattro.
-- *Questa* (più forte): barbaro 10 con equipaggiamento d'élite. ⚠ **Oltre la ricchezza SRD**: circa 32.700 mo contro le 16.000 di un PNG di 10° livello.
+- *Questa* (più forte): barbaro 10 con equipaggiamento d'élite. ⚠ **Oltre la ricchezza SRD**: circa 36.700 mo contro le 16.000 di un PNG di 10° livello.
 - *PF1e*: l'ira PF1e dà gli stessi +4/+4 e aggiunge i *poteri d'ira*; con *Sangue di bestia* o *Forza sovrumana* la Furia picchia più forte. Con il solo *Advanced* sale a GS 11.
 
 Benchmark: PF T1-1 riga 10: CA 20 sotto (24) / pf 125 in ira poco sotto (130) / attacco +19 in ira sopra (+18) / danno con Attacco Poderoso ~45 pari (45) / TS buono +15 sopra (+13). Cannone di vetro voluto, come gli ogre frantumapietra.

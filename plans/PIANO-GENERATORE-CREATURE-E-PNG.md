@@ -3,9 +3,9 @@
 > **Stato**: ✅ **A→I chiusi** (2026-09-03). Le tre domande di §7.6 hanno avuto
 > risposta e il lotto I è fatto: 21 celle, 18 liste, `ranger`/`paladino`/`bardo`
 > che prima il generatore non sapeva costruire, e la variante PF1e sugli
-> incantesimi. **Aperti**: i lotti **J** e **K**, proposti in §9 e §10 su
-> richiesta del DM; decisi da Jfs il 2026-11-13 (D5 del piano di recupero):
-> **J sì**, col thread delle regole; **K in attesa** della milestone v1.2.0.
+> incantesimi. **Lotto J fatto** (2026-11-14, autorizzato dal DM sulla card del
+> 2026-11-13): i sette modelli semplici di PF1e, `--template`. **Aperto**: il
+> lotto **K**, proposto in §10; il DM lo ha messo dopo le regole complete.
 > **Il debito del Bestiario è chiuso: 157 schede su 157 sistemate.** · **Aperto**: 2026-09-02 · **Avviato**: 2026-09-03
 > **Decisioni del DM (§5)**: taratura **SRD 3.5 di norma, PF1e come variante
 > più cattiva**; il generatore serve per **quello che nel Bestiario non c'è**;
@@ -566,11 +566,17 @@ sottile abbastanza da essere una scelta del DM.
 
 ## §9 · PROPOSTA — Lotto J: i template semplici di PF1e
 
-> 📅 **2026-11-13, Jfs sulla card (D5 del piano di recupero): «sì, col thread
-> delle regole»**: dati nel plugin PF1e con la fonte per riga e i test; gli
-> archetipi di classe restano fuori, come dice questa sezione.
->
-> ⚠️ **Proposta, non autorizzata** (fino al 2026-11-13). Nasce da una domanda del DM: *«ha senso
+> ✅ **Fatto il 2026-11-14.** Il DM ha risposto «Sì, col thread delle regole»
+> sulla card del 2026-11-13. I sette modelli (Advanced, Giant, Young,
+> Celestial, Fiendish, Entropic, Resolute) stanno in
+> `sistemi/pf1e/dati/modelli.toml` con la fonte per riga, riscontrati sul PRD da
+> `riscontra_modelli.py`; il conto è in `scripts/dmcore/modelli.py` (`applica`,
+> `disfa`); `genera_creatura.py --template NOME`, e `--piu-cattivi` è
+> `--template advanced`. Un test per modello col conto esatto in
+> `scripts/tests/test_modelli.py`. Gli archetipi di classe restano fuori. Il
+> testo qui sotto è la proposta com'era.
+
+> ⚠️ **Proposta, non autorizzata.** Nasce da una domanda del DM: *«ha senso
 > inserire i template (archetipi) di Pathfinder 1e per versioni potenziate dei
 > PNG e mostri della 3.5, quelli sotto licenza aperta e non chiusi da Paizo?»*
 

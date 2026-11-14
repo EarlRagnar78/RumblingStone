@@ -12,6 +12,16 @@
 "half-orc" = ["Common", "Orc"]
 "halfling" = ["Common", "Halfling"]
 "human" = ["Common"]
+# SRD, mostri: «Automatic Languages» delle razze senza dadi vita razziali (le chiavi di mdl.toml)
+"aasimar" = ["Common", "Celestial"]
+"drow" = ["Common", "Elven", "Undercommon"]
+"duergar" = ["Common", "Dwarven", "Undercommon"]
+"goblin" = ["Common", "Goblin"]
+"hobgoblin" = ["Common", "Goblin"]
+"kobold" = ["Draconic"]
+"orc" = ["Common", "Orc"]
+"svirfneblin" = ["Undercommon", "Gnome", "Common"]
+"tiefling" = ["Common", "Infernal"]
 
 [linguaggi.classi]
 # SRD, druido: «A druid also knows Druidic»
@@ -26,3 +36,8 @@ druid = ["Druidic"]
 "Orc" = "orchesco|orc"
 "Halfling" = "halfling"
 "Druidic" = "druidico|druidic"
+"Goblin" = "goblin"
+"Draconic" = "draconico|draconic"
+"Undercommon" = "sottocomune|undercommon"
+"Celestial" = "celestiale|celestial"
+"Infernal" = "infernale|infernal"

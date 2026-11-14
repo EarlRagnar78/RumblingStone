@@ -1121,3 +1121,136 @@ uno scudo si prezza dal bonus alla CA, quindi «d'acciaio» vale come «di
 legno» (7 mo invece di 20); la ricerca nei Codex lascia «?» sugli oggetti che
 `ricchezza` non riconosce. Il lotto 8 è chiuso per il 3.5; restano i prezzi
 degli oggetti PF1e.
+
+### Lotto 7, quinta parte — i linguaggi delle razze senza dadi vita razziali (2026-11-14)
+
+**Contesto.** La verifica `linguaggi` conosceva solo le sette razze del
+capitolo delle razze. Una scheda di hobgoblin, orco, drow o duergar con la riga
+dei linguaggi non si giudicava. L'ha chiesto il thread del volume, che scrive
+le righe dei linguaggi nelle schede.
+
+**Decisione.** `estrai_linguaggi.py` legge anche la riga «Automatic Languages»
+che l'SRD scrive nel capitolo dei mostri per nove razze di `mdl.toml`: aasimar,
+drow, duergar, goblin, hobgoblin, coboldo, orco, svirfneblin, tiefling. Il
+marinide non ha la riga e resta fuori. La razza si riconosce come in
+`ricchezza`: un solo nome di `[mdl.nomi]`, col suo tipo, e nessun modello nel
+titolo. Restano fuori le razze coi dadi vita razziali (bugbear, gnoll, ogre,
+troll, lucertoloide e le altre): per loro la riga dell'SRD vale per il
+personaggio giocante, e il mostro del manuale può parlare meno.
+
+**Conseguenze.** Misura su `Bestiario 0*/`: violazioni di `linguaggi` 0 → 0.
+Banco `muta_linguaggi.py`: schede giudicate 7 → 14 su 24 con la riga, linguaggi
+tolti e trovati 13 su 13 → 27 su 27. Nessuna scheda toccata.
+
+### Lotto 6, terza parte — razze dei mostri, taglia e velocità nelle abilità (2026-11-14)
+
+**Contesto.** Il margine contato voce per voce valeva solo per le sette razze
+del capitolo delle razze. Un hobgoblin o un orco fatti di soli livelli di classe
+tenevano il margine fisso di 4. Due regole dell'SRD mancavano del tutto: il +4
+di taglia a Nascondersi dei Piccoli e il modificatore della velocità a Saltare.
+
+**Decisione.** `estrai_gradi.py` legge i bonus alle abilità anche dal capitolo
+dei mostri, per le nove razze senza dadi vita razziali che hanno la sezione dei
+personaggi (le stesse dei linguaggi). Una sottorazza tiene per tetto anche i
+bonus della razza da cui viene: il drow quelli dell'elfo, il duergar quelli del
+nano, lo svirfneblin quelli dello gnomo. Razziale e taglia si sommano, perché
+sono bonus di tipo diverso. `[salto]` porta la regola di Saltare: +4 ogni 10
+piedi di velocità sopra i 30, −6 ogni 10 sotto. La velocità è quella scritta
+nella scheda, e conta solo dove il margine è contato.
+
+**Conseguenze.** Misura su `Bestiario 0*/`, verifica `abilita`: violazioni
+0 → 1, non verificabili 2 → 2. La violazione nuova è Bothor e Malvur, nani a 6
+metri con Saltare +6: con 9 gradi, +5 di Forza, −6 di armatura e scudo e −6 di
+velocità la regola dà +2. La scheda non si tocca: decide il DM sulla card.
+Banco `muta_abilita.py`: una abilità +4, 4 → 6 su 31; tutte +3, 10 → 12;
+ciascuna +4, 16 su 162 → 24 su 160. Il guadagno è piccolo perché poche schede
+di queste razze scrivono la riga delle abilità coi numeri.
+
+**Limiti dichiarati.** La velocità scritta si prende per buona: se è sbagliata,
+anche il conto di Saltare lo è. La verifica `velocita` conosce ancora solo le
+sette razze. I bonus razziali delle razze coi dadi vita razziali restano nel
+margine fisso.
+
+### Lotto 7, sesta parte — la velocità delle razze senza dadi vita razziali (2026-11-14)
+
+**Contesto.** La verifica `velocita` giudicava solo le sette razze. La terza
+parte del lotto 6 prende per buona la velocità scritta per il conto di Saltare:
+serviva giudicare quella velocità anche per hobgoblin, orchi e drow.
+
+**Decisione.** `estrai_movimento.py` legge «base land speed» dal capitolo dei
+mostri per aasimar, goblin, hobgoblin, coboldo, orco e tiefling; drow, duergar
+e svirfneblin tengono la velocità di elfo, nano e gnomo, e il duergar come il
+nano non rallenta in armatura. Regola nuova di prudenza, che vale per tutte le
+razze: se la velocità scritta è quella ridotta da un'armatura media o pesante e
+la scheda non scompone la CA, l'esito è un dubbio e non una violazione.
+
+**Conseguenze.** Misura su `Bestiario 0*/`, verifica `velocita`: violazioni
+0 → 2, schede giudicate 18 → 34 su 100. Le due violazioni sono vere e aspettano
+il DM su due card: la Furia della Mano va a 12 m con una corazza di piastre,
+che è media (la regola dà 9 m); il bladebearer hobgoblin scrive «corazza di
+piastre +1» dove l'esportazione PCGen citata dice «Chain Shirt +1». Stanno in
+`IN_ATTESA` di `test_velocita.py`. Banco `muta_velocita.py`: più 3 m da 15 su 18
+a 27 su 34, meno 3 m da 15 su 18 a 26 su 34.
+
+### Addendum 2026-11-14: tre decisioni del DM sulle card dei lotti 6 e 7
+
+Il DM ha risposto alle tre card lo stesso giorno, e le schede sono scritte:
+
+- Bothor e Malvur: «Correggi a +2». Saltare +6 → +2 in `Bestiario/png/bothor-malvur-cr6.md`.
+- Furia della Mano: «Corazza di mithral, resta 12 m». La corazza di piastre +2
+  è di mithral, conta leggera e i 12 m sono legali. La ricchezza dichiarata
+  sopra il tetto sale da circa 32.700 a circa 36.700 mo contro 16.000.
+- Bladebearer hobgoblin: «Scrivi giaco di maglia +1», come nella fonte PCGen.
+
+Misura dopo le risposte: `abilita` 0 violazioni, `velocita` 0 violazioni,
+`IN_ATTESA` di `test_velocita.py` vuoto.
+
+### Lotto 8, quinta parte — la ricchezza di un file con più schede (2026-11-14)
+
+**Contesto.** `ricchezza` usciva senza dire niente quando il file aveva più di
+un recinto `statblocco`. Le dodici schede di ARC07-DEF-4 non erano giudicate
+contro la Tabella 4-23, e una misura «senza violazioni nuove» lì voleva dire
+«non controllate». L'ha trovato il thread del volume leggendo il codice.
+
+**Decisione.** Un file con più schede si taglia coi blocchi di `--fatti`
+(`_blocchi_dei_fatti`): ogni scheda va dal suo titolo alla scheda dopo e si
+giudica da sola, con la riga contata nel file e il titolo nella chiave
+`scheda`. La dichiarazione «Equipaggiamento sopra la tabella» vale solo per la
+scheda che la porta. In un master il nome del file non aiuta a riconoscere la
+razza: conta solo il titolo della scheda.
+
+**Conseguenze.** Misura su `Bestiario 0*/`: violazioni di `ricchezza` negli
+archi 0 → 1. È Durin Rocciadura (ARC07-DEF-4, riga 4428): armatura completa +1,
+scudo pesante +1 e ascia da guerra nanica +1 valgono 6.137 mo contro i 5.600 di
+un PNG di 6°. La scheda non si tocca: card al DM, titolo in `IN_ATTESA` del
+cancello nuovo `Archi` di `test_ricchezza.py`.
+Il DM ha scelto sulla card del 2026-11-14 lo scudo pesante perfetto al posto
+dello scudo pesante +1: CA 22 → 21, `IN_ATTESA` vuoto, violazioni 1 → 0.
+
+**Limiti dichiarati.** Le altre verifiche che leggono una scheda sola
+(`velocita`, `linguaggi`, `abilita`) non sono ancora portate ai file con più
+schede.
+
+### Lotti 6 e 7 — velocità, linguaggi e abilità di un file con più schede (2026-11-14)
+
+**Contesto.** Il limite dichiarato qui sopra: in un master d'arco `velocita` e
+`linguaggi` uscivano mute (chiedono una sola riga in tutto il file) e `abilita`
+giudicava soltanto la prima scheda.
+
+**Decisione.** Il taglio fatto per `ricchezza` diventa una funzione sola,
+`_scheda_per_scheda(p, giudica)`, e le quattro verifiche la usano. `VT.leggi`
+ha la gemella `VT.leggi_testo` per leggere i livelli di classe del pezzo e non
+del file.
+
+**Conseguenze.** Misura su `Bestiario 0*/`: violazioni 30 → 30, non
+verificabili 383 → 384 (un dubbio di `abilita` che prima usciva una volta ora
+esce per due schede). I file con più recinti sono 5, con 30 schede, 17
+leggibili: `velocita` ne legge 11 (prima 0), `linguaggi` 3 (prima 0), `abilita`
+11 (prima le 5 in testa ai file). Nessuna violazione nuova e nessuna scheda
+toccata.
+
+**Limiti dichiarati.** 13 schede su 30 dei master non si leggono (senza riga
+degli attributi o del GS nel recinto). Le altre verifiche di `verifica_scheda`
+(talenti, incantatori, prestigio, difese, grado di sfida) hanno ciascuna il suo
+modo di trattare i master e non passano da questa funzione.
+

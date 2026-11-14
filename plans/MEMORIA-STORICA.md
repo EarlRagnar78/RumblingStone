@@ -1428,3 +1428,15 @@ repo scritto con altre parole.
 - **Testo:** undici schede di `Bestiario/mostri/` hanno le voci «Equipaggiamento da combattimento» e «Altro equipaggiamento». Il corredo è quello della riga «Possessions» dell'export PCGen; dai Codex PF1e entrano solo uso limitato e attrezzatura, entro la Tabella 4-23 al livello effettivo. Nessun numero di scheda cambia.
 - **Trovato nel repo:** `ADR-0134` → `plans/adr/ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md` · `campaign/REGOLE-CUSTOM.md`
 - **Solo qui:** l'audit dell'equipaggiamento guardava solo i file .md e dava 24 schede senza corredo: dodici lo avevano nell'export PCGen (riga «Possessions», o righe EQUIPNAME nel .pcg). Tolto quello, il PNG dei Codex aggiunge poco: armi e armature doppiano quelle della scheda, mantelli e anelli cambierebbero i numeri. Tre export stanno sopra il tetto (duergar chierico 3, Ainin, orco regular) e l'orco regular non torna con la scheda confermata il 18/10: decisioni del DM, fuori da questa PR. Scrivere il mantello della resistenza nel corredo fa rifare a `genera_attributi.py --rigenera --scrivi` la marca della Saggezza (hobgoblin regular), e dopo va riscritta l'impronta delle creature. `ricchezza` somma un minimo: i valori nelle note delle schede sono contati a mano coi prezzi dell'SRD.
+
+### MS-0125 · 2026-11-14 · Regole, lotto 8 sesta parte: merci, proiettili, pezzi doppi e arco composito
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole ricchezza prezzi oggetti merci proiettili arco-composito verifica-scheda
+- **Origine:** riga del 2026-11-14 «lotto 8 sesta parte: merci, proiettili, pezzi doppi e arco composito nei prezzi 3.5» in `plans/CHANGELOG.md`
+- **Testo:** `ricchezza` conta le merci dell'SRD 3.5, i proiettili, le armi a più pezzi, lo scudo d'acciaio, la mezza armatura, le pozioni con la forza nel nome e l'arco composito con la Forza scritta. I dati li genera `estrai_oggetti.py` in `oggetti.toml` (`merci`, `ammo`, `scudi_acciaio`, `arco_forza`). Elenco dei Codex del thread del volume: 0 → 63 voci col prezzo su 96. Nel repo 472 → 489 voci col prezzo. Violazioni 30 → 30, non verificabili 384 → 384.
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** il guadagno sul repo di oggi è di 17 voci: il lavoro serve alle schede che il thread del volume riempie dai Codex. Errori trovati per strada e corretti: gli shuriken prezzati come arma e non come proiettili, «unholy water» letta come acqua santa, «pozione di scudo della fede +2» letta come scudo +2, «arco lungo composito (+1 For)» contato 100 mo invece di 200. Le 33 voci che ha solo PF1e non si prezzano dall'SRD 3.5 e vanno a card.
+

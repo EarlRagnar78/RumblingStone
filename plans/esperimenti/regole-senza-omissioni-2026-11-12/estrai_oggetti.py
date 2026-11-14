@@ -58,6 +58,16 @@ NOMI = [
     ("boots of speed", r"stivali\s+(?:di|della)\s+velocit[àa]|boots\s+of\s+speed"),
     ("ring of mind shielding", r"(?:anello|ring)\s+(?:di|dello|of)\s+(?:mind shielding|schermo mentale)"),
 ]
+#: la perla del potere col livello fra parentesi o dopo («pearl of power (1st)», «perla del potere di 1°»)
+NOMI += [(f"pearl of power, {n}{s}-level spell",
+          rf"(?:perla\s+del\s+potere|pearl\s+of\s+power)\s*(?:\(|,|di|del)?\s*{n}(?:{s}|°|º)")
+         for n, s in zip(range(1, 10), ("st", "nd", "rd", "th", "th", "th", "th", "th", "th"))]
+#: la collana delle palle di fuoco col tipo in numeri romani, dal più lungo («VII» prima di «VI» e di «V»)
+NOMI += [(f"necklace of fireballs type {r}",
+          rf"(?:collana\s+(?:delle|di)\s+palle\s+di\s+fuoco|necklace\s+of\s+fireballs)\s+(?:(?:tipo|type)\s+)?{r}(?![ivx\w])")
+         for r in ("vii", "iii", "vi", "iv", "ii", "v", "i")]
+#: le parti di «Table: Goods and Services» che un PNG porta addosso (vestiti, vitto, trasporti e servizi no)
+MERCI = ("Adventuring Gear", "Special Substances and Items", "Tools and Skill Kits", "Mounts and Related Gear")
 
 
 def _celle(riga: str) -> "list[str]":
@@ -164,9 +174,11 @@ def materiali(base: Path) -> "dict[str, dict[str, int]]":
 def comuni(base: Path) -> "dict[str, dict]":
     """Il prezzo in mo intere di armi, armature e scudi comuni («Table: Weapons», «Table: Armor and
     Shields») e della fattura perfetta. Gli scudi vanno per bonus di CA, col prezzo più basso: una
-    scheda dice «scudo pesante» e non se è di legno o d'acciaio. Chi costa meno di 1 mo resta fuori."""
+    scheda dice «scudo pesante» e non se è di legno o d'acciaio. Armature e scudi sotto 1 mo restano
+    fuori; un'arma che costa meno di 1 mo, o niente (bastone ferrato, randello), vale 0: così la
+    scheda che la nomina ha un oggetto riconosciuto. `ammo` è quanti proiettili compra il prezzo."""
     f = (base / "basic-rules-and-legal" / "equipment.md").read_text(encoding="utf-8")
-    out: dict[str, dict] = {"armi": {}, "armature": {}, "scudi": {}}
+    out: dict[str, dict] = {"armi": {}, "armature": {}, "scudi": {}, "scudi_acciaio": {}, "ammo": {}}
     for m in re.finditer(r"<table[^>]*><caption>Table: (Weapons|Armor and Shields)</caption>(.*?)</table>", f, re.S):
         dove = ""
         for r in (_celle(x) for x in re.findall(r"<tr>(.*?)</tr>", m.group(2), re.S)):
@@ -175,23 +187,65 @@ def comuni(base: Path) -> "dict[str, dict]":
             nome = re.sub(r"\s+", " ", re.sub(r"\d$", "", r[0].replace("&nbsp;", " "))).strip().lower()
             dove = {"shields": "scudi", "extras": "", "light armor": "armature"}.get(nome, dove)
             mo = _mo(r[1])
+            if m.group(1) == "Weapons" and len(r) > 4 and (mo is not None or re.fullmatch(r"—|\d+ [sc]p", r[1])):
+                senza = re.sub(r"\s*\(\d+\)$", "", nome)
+                out["armi"].setdefault(senza, mo or 0)
+                if (q := re.search(r"\((\d+)\)$", nome)):
+                    out["ammo"].setdefault(senza, int(q.group(1)))
+                continue
             if mo is None or mo < 1:
                 continue
             if m.group(1) == "Weapons":
-                out["armi"].setdefault(re.sub(r"\s*\(\d+\)$", "", nome), mo)
+                continue
             elif dove == "armature":
                 out["armature"][nome] = mo
             elif dove == "scudi" and (b := re.fullmatch(r"\+(\d)\d?", r[2])):
                 out["scudi"][b.group(1)] = min(out["scudi"].get(b.group(1), mo), mo)
-    arma = re.search(r"The masterwork quality adds (\d+) gp to the cost of a normal weapon", f)
+                if "steel" in nome:
+                    out["scudi_acciaio"][b.group(1)] = mo
+    arma = re.search(r"The masterwork quality adds (\d+) gp to the cost of a normal weapon \(or (\d+) gp to the "
+                     r"cost of a single unit of ammunition\)", f)
     armatura = re.search(r"A masterwork suit of armor or shield costs an extra (\d+) gp", f)
-    out["perfetta"] = {"arma": int(arma.group(1)), "armatura": int(armatura.group(1))}
+    out["perfetta"] = {"arma": int(arma.group(1)), "armatura": int(armatura.group(1)),
+                       "proiettile": int(arma.group(2))}
+    # l'arco composito fatto per una Forza: quanto costa ogni punto («adds 100 gp to its cost»)
+    out["arco_forza"] = {che.lower(): int(mo) for che, mo in re.findall(
+        r"\*\*(Longbow|Shortbow), Composite:?\*\*:?[^\n]*?adds (\d+) gp to its cost", f)}
+    return out
+
+
+def merci(base: Path) -> "dict[str, int]":
+    """Il prezzo in mo intere delle merci di «Table: Goods and Services» che un PNG porta addosso
+    (`MERCI`). Chi costa meno di 1 mo vale 0. Una riga rientrata prende il nome della riga madre
+    («Saddle» + «Military» → «saddle, military»), a meno che lo ripeta già («Horse, heavy»)."""
+    f = (base / "basic-rules-and-legal" / "equipment.md").read_text(encoding="utf-8")
+    m = re.search(r"<table[^>]*><caption>Table: Goods and Services</caption>(.*?)</table>", f, re.S)
+    out: dict[str, int] = {}
+    parte, madre = "", ""
+    for grezza in re.findall(r"<tr>(.*?)</tr>", m.group(1), re.S):
+        r = _celle(grezza)
+        if "<th>" in grezza:
+            parte = r[0] if r[0] != "Item" else parte
+            continue
+        if parte not in MERCI or len(r) < 2:
+            continue
+        rientrata = r[0].startswith("&nbsp;")
+        nome = re.sub(r"\s*\([^)]*\)", "", r[0].replace("&nbsp;", " ")).strip().lower().replace("’", "'")
+        if not rientrata:
+            madre = nome
+        elif madre.split(",")[0] not in nome and madre != "horse":      # «Pony» e «Warpony» stanno sotto «Horse»
+            nome = f"{madre}, {nome}" if "," not in madre else f"{madre} {nome}"
+        prezzo = r[1].strip()
+        if (g := re.fullmatch(r"([\d,]+) gp", prezzo)):
+            out[nome] = int(g.group(1).replace(",", ""))
+        elif re.fullmatch(r"\d+ [sc]p", prezzo):
+            out[nome] = 0
     return out
 
 
 def testo(base: Path) -> str:
     pot, pr = potenziamento(base), prezzi(base)
-    cap, perg, mat, com = capacita(base), pergamene(base), materiali(base), comuni(base)
+    cap, perg, mat, com, mer = capacita(base), pergamene(base), materiali(base), comuni(base), merci(base)
     righe = [
         "# sistemi/dnd35/dati/oggetti.toml — prezzi degli oggetti magici e valore dell'equipaggiamento",
         "# di un PNG per livello (ADR-0126, lotto 8)",
@@ -230,11 +284,17 @@ def testo(base: Path) -> str:
     righe += ["", "[oggetti.perfetta]",
               "# SRD, «Masterwork Weapons» e «Masterwork Armor»: quanto costa in più la fattura perfetta (mo)"]
     righe += [f"{k} = {v}" for k, v in com["perfetta"].items()]
-    for che, nota in (("armi", "«Table: Weapons»: prezzo dell'arma di taglia Media (mo intere)"),
+    for che, nota in (("armi", "«Table: Weapons»: prezzo dell'arma di taglia Media (mo intere; 0 sotto 1 mo)"),
+                      ("ammo", "«Table: Weapons»: quanti proiettili compra il prezzo scritto"),
                       ("armature", "«Table: Armor and Shields»: prezzo dell'armatura (mo)"),
-                      ("scudi", "«Table: Armor and Shields»: per bonus di CA, lo scudo che costa meno (mo)")):
+                      ("scudi", "«Table: Armor and Shields»: per bonus di CA, lo scudo che costa meno (mo)"),
+                      ("scudi_acciaio", "«Table: Armor and Shields»: per bonus di CA, lo scudo d'acciaio (mo)"),
+                      ("arco_forza", "«Longbow, Composite» e «Shortbow, Composite»: mo per punto di Forza dell'arco")):
         righe += ["", f"[oggetti.comuni.{che}]", f"# SRD, {nota}"]
         righe += [f'"{k}" = {v}' for k, v in sorted(com[che].items())]
+    righe += ["", "[oggetti.comuni.merci]",
+              "# SRD, «Table: Goods and Services» (attrezzatura, sostanze, attrezzi, cavalcature): mo intere, 0 sotto 1 mo"]
+    righe += [f'"{k}" = {v}' for k, v in sorted(mer.items())]
     righe += ["", "# come una scheda scrive un oggetto (espressioni regolari; non vengono dall'SRD). «N» è il bonus letto."]
     for nome, schema in NOMI:
         righe += ["[[oggetti.nomi]]", f'nome = "{nome}"', f"schema = '''{schema}'''", ""]

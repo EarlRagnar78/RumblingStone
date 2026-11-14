@@ -1328,9 +1328,10 @@ scudo = 1000
 # SRD, «Masterwork Weapons» e «Masterwork Armor»: quanto costa in più la fattura perfetta (mo)
 arma = 300
 armatura = 150
+proiettile = 6
 
 [oggetti.comuni.armi]
-# SRD, «Table: Weapons»: prezzo dell'arma di taglia Media (mo intere)
+# SRD, «Table: Weapons»: prezzo dell'arma di taglia Media (mo intere; 0 sotto 1 mo)
 "arrows" = 1
 "axe, orc double" = 60
 "axe, throwing" = 8
@@ -1338,7 +1339,9 @@ armatura = 150
 "bolas" = 5
 "bolts" = 1
 "bolts, crossbow" = 1
+"bullets, sling" = 0
 "chain, spiked" = 25
+"club" = 0
 "crossbow, hand" = 100
 "crossbow, heavy" = 50
 "crossbow, light" = 35
@@ -1346,6 +1349,7 @@ armatura = 150
 "crossbow, repeating light" = 250
 "dagger" = 2
 "dagger, punching" = 2
+"dart" = 0
 "falchion" = 75
 "flail" = 8
 "flail, dire" = 90
@@ -1376,6 +1380,7 @@ armatura = 150
 "nunchaku" = 2
 "pick, heavy" = 8
 "pick, light" = 4
+"quarterstaff" = 0
 "ranseur" = 10
 "rapier" = 20
 "sai" = 1
@@ -1388,15 +1393,25 @@ armatura = 150
 "shuriken" = 1
 "siangham" = 3
 "sickle" = 6
+"sling" = 0
 "spear" = 2
 "sword, bastard" = 35
 "sword, short" = 10
 "sword, two-bladed" = 100
 "trident" = 15
+"unarmed strike" = 0
 "urgrosh, dwarven" = 50
 "waraxe, dwarven" = 30
 "warhammer" = 12
 "whip" = 1
+
+[oggetti.comuni.ammo]
+# SRD, «Table: Weapons»: quanti proiettili compra il prezzo scritto
+"arrows" = 20
+"bolts" = 10
+"bolts, crossbow" = 10
+"bullets, sling" = 10
+"shuriken" = 5
 
 [oggetti.comuni.armature]
 # SRD, «Table: Armor and Shields»: prezzo dell'armatura (mo)
@@ -1418,6 +1433,133 @@ armatura = 150
 "1" = 3
 "2" = 7
 "4" = 30
+
+[oggetti.comuni.scudi_acciaio]
+# SRD, «Table: Armor and Shields»: per bonus di CA, lo scudo d'acciaio (mo)
+"1" = 9
+"2" = 20
+
+[oggetti.comuni.arco_forza]
+# SRD, «Longbow, Composite» e «Shortbow, Composite»: mo per punto di Forza dell'arco
+"longbow" = 100
+"shortbow" = 75
+
+[oggetti.comuni.merci]
+# SRD, «Table: Goods and Services» (attrezzatura, sostanze, attrezzi, cavalcature): mo intere, 0 sotto 1 mo
+"acid" = 10
+"alchemist's fire" = 20
+"alchemist's lab" = 500
+"antitoxin" = 50
+"artisan's tools" = 5
+"artisan's tools, masterwork" = 55
+"backpack" = 2
+"barrel" = 2
+"basket" = 0
+"bedroll" = 0
+"bell" = 1
+"bit and bridle" = 2
+"blanket, winter" = 0
+"block and tackle" = 5
+"bottle, wine, glass" = 2
+"bucket" = 0
+"caltrops" = 1
+"candle" = 0
+"canvas" = 0
+"case, map or scroll" = 1
+"chain" = 30
+"chalk, 1 piece" = 0
+"chest" = 2
+"climber's kit" = 80
+"crowbar" = 2
+"disguise kit" = 50
+"dog, guard" = 25
+"dog, riding" = 150
+"donkey or mule" = 8
+"everburning torch" = 110
+"feed" = 0
+"firewood" = 0
+"fishhook" = 0
+"fishing net, 25 sq. ft." = 4
+"flask" = 0
+"flint and steel" = 1
+"grappling hook" = 1
+"hammer" = 0
+"healer's kit" = 50
+"holy symbol, silver" = 25
+"holy symbol, wooden" = 1
+"holy water" = 25
+"horse, heavy" = 200
+"horse, light" = 75
+"hourglass" = 25
+"ink" = 8
+"inkpen" = 0
+"jug, clay" = 0
+"ladder, 10-foot" = 0
+"lamp, common" = 0
+"lantern, bullseye" = 12
+"lantern, hooded" = 7
+"lock, amazing" = 150
+"lock, average" = 40
+"lock, good" = 80
+"lock, very simple" = 20
+"magnifying glass" = 100
+"manacles" = 15
+"manacles, masterwork" = 50
+"mirror, small steel" = 10
+"mug/tankard, clay" = 0
+"musical instrument, common" = 5
+"musical instrument, masterwork" = 100
+"oil" = 0
+"paper" = 0
+"parchment" = 0
+"pick, miner's" = 3
+"pitcher, clay" = 0
+"piton" = 0
+"pole, 10-foot" = 0
+"pony" = 30
+"pot, iron" = 0
+"pouch, belt" = 1
+"ram, portable" = 10
+"rations, trail" = 0
+"rope, hempen" = 1
+"rope, silk" = 10
+"sack" = 0
+"saddle, exotic military" = 60
+"saddle, exotic pack" = 15
+"saddle, exotic riding" = 30
+"saddle, military" = 20
+"saddle, pack" = 5
+"saddle, riding" = 10
+"saddlebags" = 4
+"scale, merchant's" = 2
+"sealing wax" = 1
+"sewing needle" = 0
+"signal whistle" = 0
+"signet ring" = 5
+"sledge" = 1
+"smokestick" = 20
+"soap" = 0
+"spade or shovel" = 2
+"spell component pouch" = 5
+"spellbook, wizard's" = 15
+"spyglass" = 1000
+"stabling" = 0
+"sunrod" = 2
+"tanglefoot bag" = 50
+"tent" = 10
+"thieves' tools" = 30
+"thieves' tools, masterwork" = 100
+"thunderstone" = 30
+"tindertwig" = 1
+"tool, masterwork" = 50
+"torch" = 0
+"vial, ink or potion" = 1
+"warhorse, heavy" = 400
+"warhorse, light" = 150
+"warpony" = 100
+"water clock" = 1000
+"waterskin" = 1
+"whetstone" = 0
 
 # come una scheda scrive un oggetto (espressioni regolari; non vengono dall'SRD). «N» è il bonus letto.
 [[oggetti.nomi]]
@@ -1471,3 +1613,67 @@ schema = '''stivali\s+(?:di|della)\s+velocit[àa]|boots\s+of\s+speed'''
 [[oggetti.nomi]]
 nome = "ring of mind shielding"
 schema = '''(?:anello|ring)\s+(?:di|dello|of)\s+(?:mind shielding|schermo mentale)'''
+
+[[oggetti.nomi]]
+nome = "pearl of power, 1st-level spell"
+schema = '''(?:perla\s+del\s+potere|pearl\s+of\s+power)\s*(?:\(|,|di|del)?\s*1(?:st|°|º)'''
+
+[[oggetti.nomi]]
+nome = "pearl of power, 2nd-level spell"
+schema = '''(?:perla\s+del\s+potere|pearl\s+of\s+power)\s*(?:\(|,|di|del)?\s*2(?:nd|°|º)'''
+
+[[oggetti.nomi]]
+nome = "pearl of power, 3rd-level spell"
+schema = '''(?:perla\s+del\s+potere|pearl\s+of\s+power)\s*(?:\(|,|di|del)?\s*3(?:rd|°|º)'''
+
+[[oggetti.nomi]]
+nome = "pearl of power, 4th-level spell"
+schema = '''(?:perla\s+del\s+potere|pearl\s+of\s+power)\s*(?:\(|,|di|del)?\s*4(?:th|°|º)'''
+
+[[oggetti.nomi]]
+nome = "pearl of power, 5th-level spell"
+schema = '''(?:perla\s+del\s+potere|pearl\s+of\s+power)\s*(?:\(|,|di|del)?\s*5(?:th|°|º)'''
+
+[[oggetti.nomi]]
+nome = "pearl of power, 6th-level spell"
+schema = '''(?:perla\s+del\s+potere|pearl\s+of\s+power)\s*(?:\(|,|di|del)?\s*6(?:th|°|º)'''
+
+[[oggetti.nomi]]
+nome = "pearl of power, 7th-level spell"
+schema = '''(?:perla\s+del\s+potere|pearl\s+of\s+power)\s*(?:\(|,|di|del)?\s*7(?:th|°|º)'''
+
+[[oggetti.nomi]]
+nome = "pearl of power, 8th-level spell"
+schema = '''(?:perla\s+del\s+potere|pearl\s+of\s+power)\s*(?:\(|,|di|del)?\s*8(?:th|°|º)'''
+
+[[oggetti.nomi]]
+nome = "pearl of power, 9th-level spell"
+schema = '''(?:perla\s+del\s+potere|pearl\s+of\s+power)\s*(?:\(|,|di|del)?\s*9(?:th|°|º)'''
+
+[[oggetti.nomi]]
+nome = "necklace of fireballs type vii"
+schema = '''(?:collana\s+(?:delle|di)\s+palle\s+di\s+fuoco|necklace\s+of\s+fireballs)\s+(?:(?:tipo|type)\s+)?vii(?![ivx\w])'''
+
+[[oggetti.nomi]]
+nome = "necklace of fireballs type iii"
+schema = '''(?:collana\s+(?:delle|di)\s+palle\s+di\s+fuoco|necklace\s+of\s+fireballs)\s+(?:(?:tipo|type)\s+)?iii(?![ivx\w])'''
+
+[[oggetti.nomi]]
+nome = "necklace of fireballs type vi"
+schema = '''(?:collana\s+(?:delle|di)\s+palle\s+di\s+fuoco|necklace\s+of\s+fireballs)\s+(?:(?:tipo|type)\s+)?vi(?![ivx\w])'''
+
+[[oggetti.nomi]]
+nome = "necklace of fireballs type iv"
+schema = '''(?:collana\s+(?:delle|di)\s+palle\s+di\s+fuoco|necklace\s+of\s+fireballs)\s+(?:(?:tipo|type)\s+)?iv(?![ivx\w])'''
+
+[[oggetti.nomi]]
+nome = "necklace of fireballs type ii"
+schema = '''(?:collana\s+(?:delle|di)\s+palle\s+di\s+fuoco|necklace\s+of\s+fireballs)\s+(?:(?:tipo|type)\s+)?ii(?![ivx\w])'''
+
+[[oggetti.nomi]]
+nome = "necklace of fireballs type v"
+schema = '''(?:collana\s+(?:delle|di)\s+palle\s+di\s+fuoco|necklace\s+of\s+fireballs)\s+(?:(?:tipo|type)\s+)?v(?![ivx\w])'''
+
+[[oggetti.nomi]]
+nome = "necklace of fireballs type i"
+schema = '''(?:collana\s+(?:delle|di)\s+palle\s+di\s+fuoco|necklace\s+of\s+fireballs)\s+(?:(?:tipo|type)\s+)?i(?![ivx\w])'''

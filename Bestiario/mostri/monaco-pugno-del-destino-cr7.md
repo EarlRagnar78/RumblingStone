@@ -19,6 +19,8 @@ attacchi:
   - Mischia catena chiodata perfetta a due mani +10 (2d4+4); raffica di colpi +7/+7 (1d8+3, ki = magico)
 voci:
   - Talenti: Riflessi in Combattimento, Arma Focalizzata (catena chiodata), Competenza nelle Armi Esotiche (catena chiodata), Pugno Stordente, Lottare Migliorato, Sbilanciare Migliorato
+  - Equipaggiamento da combattimento: pozione di cura ferite leggere, pozione di velocità, pozioni di armatura magica (2), oli di arma magica (2)
+  - Altro equipaggiamento: bracciali dell'armatura +2, anello di protezione +1, catena chiodata perfetta, 7 mp, 5 mo
 ```
 
 > [GENERATO] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`.
@@ -28,3 +30,5 @@ Medium humanoid (goblinoid), Monk 7 (ordine del Pugno del Destino), LE. **hp 52*
 Notes: campioni monastici hobgoblin del culto; ottimi inseguitori (vel 24 m).
 
 > `[CANONE — regola, ADR-0118]` L'export PCGen scriveva catena +10/+10 e raffica +9/+9/+9: con BAB +5 un Monaco 7 ha un attacco solo con la catena, e la raffica è di due colpi senz'armi a −1 (SRD, tabella del monaco: +4/+4, più For +3 = **+7/+7**). La catena perfetta dà +9 (BAB +5, For +3, +1). Versione più forte e legale: **Arma Focalizzata (catena chiodata)** al posto di Schivare tiene il **+10** della scheda. I talenti ora sono scritti tutti: tre di livello (Arma Focalizzata, Competenza nelle Armi Esotiche, Pugno Stordente) e i bonus del monaco (Lottare Migliorato, Riflessi in Combattimento, Sbilanciare Migliorato).
+
+> RC-001 (2026-11-14, ADR-0134): corredo trascritto dalle «Possessions» dell'export PCGen citato in testa; dal PNG dei Codex PF1e «Harrying Brute» (unico Monk 7 dei Codex) entrano le pozioni di armatura magica e gli oli di arma magica. Armatura e armi restano quelle della scheda; gli oggetti dei Codex che cambierebbero CA o tiri salvezza aspettano la decisione del DM. Valore 7.325 mo, monete escluse, contro i 9.400 del livello effettivo 8 (DMG 3.5, Tabella 4-23).

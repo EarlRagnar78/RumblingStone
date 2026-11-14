@@ -1418,8 +1418,18 @@ repo scritto con altre parole.
 - **Testo:** `velocita`, `linguaggi` e `abilita` giudicano scheda per scheda i file con più schede, con la stessa funzione di `ricchezza` (`_scheda_per_scheda`). Violazioni 30 → 30, non verificabili 383 → 384. Nei 5 master con più recinti `velocita` legge 11 schede (prima 0), `linguaggi` 3 (prima 0), `abilita` 11 (prima 5).
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** il guadagno è piccolo e va detto: nessuna violazione nuova, e 13 schede su 30 dei master non si leggono perché il recinto non ha attributi o GS. Per misurare contro la versione di prima serve un worktree pulito: `git worktree add` su una cartella rimasta da una prova vecchia non la aggiorna, e la prima misura confrontava con un commit di giorni fa (54 violazioni invece di 30).
+### MS-0124 · 2026-11-14 · ADR-0134: il corredo delle schede PCGen e i Codex come complemento
 
-### MS-0124 · 2026-11-14 · Regole, lotto 8 sesta parte: merci, proiettili, pezzi doppi e arco composito
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0134
+- **Temi:** schede equipaggiamento regole bestiario
+- **Origine:** riga del 2026-11-14 «ADR-0134, regola RC-001 applicata alle prime undici schede del Bestiario» in `plans/CHANGELOG.md`
+- **Testo:** undici schede di `Bestiario/mostri/` hanno le voci «Equipaggiamento da combattimento» e «Altro equipaggiamento». Il corredo è quello della riga «Possessions» dell'export PCGen; dai Codex PF1e entrano solo uso limitato e attrezzatura, entro la Tabella 4-23 al livello effettivo. Nessun numero di scheda cambia.
+- **Trovato nel repo:** `ADR-0134` → `plans/adr/ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md` · `campaign/REGOLE-CUSTOM.md`
+- **Solo qui:** l'audit dell'equipaggiamento guardava solo i file .md e dava 24 schede senza corredo: dodici lo avevano nell'export PCGen (riga «Possessions», o righe EQUIPNAME nel .pcg). Tolto quello, il PNG dei Codex aggiunge poco: armi e armature doppiano quelle della scheda, mantelli e anelli cambierebbero i numeri. Tre export stanno sopra il tetto (duergar chierico 3, Ainin, orco regular) e l'orco regular non torna con la scheda confermata il 18/10: decisioni del DM, fuori da questa PR. Scrivere il mantello della resistenza nel corredo fa rifare a `genera_attributi.py --rigenera --scrivi` la marca della Saggezza (hobgoblin regular), e dopo va riscritta l'impronta delle creature. `ricchezza` somma un minimo: i valori nelle note delle schede sono contati a mano coi prezzi dell'SRD.
+
+### MS-0125 · 2026-11-14 · Regole, lotto 8 sesta parte: merci, proiettili, pezzi doppi e arco composito
 
 - **Data:** 2026-11-14
 - **PR:** —

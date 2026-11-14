@@ -21,6 +21,7 @@ attacchi:
   - Mischia stocco perfetto +2 (1d6+1/18-20)
 voci:
   - Talenti: Iniziativa Migliorata
+  - Altro equipaggiamento: cuoio borchiato perfetto, stocco perfetto, balestra leggera perfetta, 160 mo
 ```
 
 > correzione 3.5 da `scripts/conformita_statblocchi.py`: BAB +1 → **+0** e lotta +2 → **+1**: un Ladro di 1° ha BAB +0 (¾ di 1, per difetto); l'attacco +2 dello stocco lo presupponeva già.
@@ -38,3 +39,5 @@ Notes: l'incontro del ponte (culto di Abbathor). L'export PCGen dà CR 1; vale 2
 > correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-13, decisione del DM sulla card): 1 DV dà 1 talento e la scheda ne aveva 2. Tolto **Schivare**; resta Iniziativa Migliorata. La CA non contava il +1 di schivare: nessun numero cambia.
 
 > decisione del DM (2026-11-13, card del grado di sfida): GS da 1 a 2. SRD 3.5, «Dwarf, Duergar»: un duergar con livelli di classe da PG ha grado di sfida pari al livello +1: Rogue 1 (1 DV) vale GS 2. Il file passa da `duergar-ladro1-cr1.md` a `duergar-ladro1-cr2.md`. Nessun altro numero cambia.
+
+> RC-001 (2026-11-14, ADR-0134): corredo trascritto dalle «Possessions» dell'export PCGen citato in testa; il PNG dei Codex PF1e «Duergar Slaver» `[CANONE — DM 2026-11-14, RC-001]` non ha oggetti a uso limitato né attrezzatura: non aggiunge niente. L'export non elenca quadrelli; le monete sono scritte «gp (160) (16,000 gp)» e si leggono 160. Armatura e armi restano quelle della scheda; gli oggetti dei Codex che cambierebbero CA o tiri salvezza aspettano la decisione del DM. Valore 830 mo, monete escluse, contro i 2.000 del livello effettivo 2 (DMG 3.5, Tabella 4-23).

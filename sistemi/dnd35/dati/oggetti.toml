@@ -1439,6 +1439,11 @@ proiettile = 6
 "1" = 9
 "2" = 20
 
+[oggetti.comuni.arco_forza]
+# SRD, «Longbow, Composite» e «Shortbow, Composite»: mo per punto di Forza dell'arco
+"longbow" = 100
+"shortbow" = 75
+
 [oggetti.comuni.merci]
 # SRD, «Table: Goods and Services» (attrezzatura, sostanze, attrezzi, cavalcature): mo intere, 0 sotto 1 mo
 "acid" = 10

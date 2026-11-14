@@ -1972,6 +1972,15 @@ def _oggetti_col_prezzo(riga: str, d: dict, sistema: str) -> "list[tuple[str, in
             return comuni.get("scudi_acciaio" if acciaio else "scudi", {}).get(str(scudi[nome][0]), 0)
         return comuni.get("armature", {}).get(inglesi.get(armature.get(nome), ""), 0)
 
+    def per_la_forza(nome: str, dopo: str) -> "tuple[int, str]":
+        """Quanto costa in più l'arco composito fatto per una Forza scritta accanto: «(For +1)», «(+2 Str)»."""
+        if "composit" not in nome.lower():
+            return 0, ""
+        m = _FORZA_DELL_ARCO.match(dopo)
+        punti = int(m.group(1) or m.group(2)) if m else 0
+        che_arco = "longbow" if re.search(r"lung|long", nome, re.I) else "shortbow"
+        return punti * (comuni.get("arco_forza") or {}).get(che_arco, 0), f" (For +{punti})" if punti else ""
+
     def in_piu(materiale: "str | None", nome: str, che: str) -> "tuple[int, str]":
         """Quanto costa in più l'oggetto di adamantio o di mithral, se la tabella ha la sua categoria."""
         if not materiale:
@@ -2031,9 +2040,11 @@ def _oggetti_col_prezzo(riga: str, d: dict, sistema: str) -> "list[tuple[str, in
                 # un oggetto magico è di fattura perfetta: prezzo comune, fattura, potenziamento. Il mithral
                 # e l'adamantio hanno la fattura già nel loro prezzo
                 fattura = 0 if piu else perfetta.get(che, 0) if base(nome, che) else 0
+                arco, per_forza = per_la_forza(nome, riga[m.end():])
                 trovati.append((f"{f'{pezzi} × ' if pezzi > 1 else ''}{nome} +{n}{detto}"
-                                f"{''.join(' ' + x for x in dette)}{_D_ACCIAIO if acciaio and 'steel' not in nome else ''} ({che})",
-                                (tabella[n + bonus - 1] + mo + piu + base(nome, che, acciaio) + fattura) * pezzi))
+                                f"{''.join(' ' + x for x in dette)}{_D_ACCIAIO if acciaio and 'steel' not in nome else ''}"
+                                f"{per_forza} ({che})",
+                                (tabella[n + bonus - 1] + mo + piu + base(nome, che, acciaio) + fattura + arco) * pezzi))
     # lo stesso senza il «+N» dopo il nome: «mithral chainmail», «+1 mithral full plate», «ascia di adamantio»
     for nomi, tabella, che in ((list(armature) + list(scudi), d["potenziamento"]["armatura"], "armatura"),
                                (armi, d["potenziamento"]["arma"], "arma")):
@@ -2105,8 +2116,10 @@ def _oggetti_col_prezzo(riga: str, d: dict, sistema: str) -> "list[tuple[str, in
                     continue
                 acciaio = nome in scudi and bool(_ACCIAIO.search(m.group(0)) or _ACCIAIO.match(riga[m.end():]))
                 presi.append(m.span())
-                trovati.append((f"{nome}{' perfetta' if fine else ''}{_D_ACCIAIO if acciaio and 'steel' not in nome else ''} ({che})",
-                                base(nome, che, acciaio) + (perfetta.get(che, 0) if fine else 0)))
+                arco, per_forza = per_la_forza(nome, riga[m.end():])
+                trovati.append((f"{nome}{' perfetta' if fine else ''}{_D_ACCIAIO if acciaio and 'steel' not in nome else ''}"
+                                f"{per_forza} ({che})",
+                                base(nome, che, acciaio) + (perfetta.get(che, 0) if fine else 0) + arco))
     # proiettili magici: il prezzo del potenziamento è per 50 (SRD, nota a «Table: Weapons»), più la
     # fattura perfetta di ognuno e il prezzo comune; «+1 frost bolts (6)», «5 frecce infuocate +1»
     ammo = comuni.get("ammo") or {}
@@ -2179,6 +2192,8 @@ def _oggetti_col_prezzo(riga: str, d: dict, sistema: str) -> "list[tuple[str, in
 #: ciò che sta davanti a un nome dentro una pozione, una pergamena o una bacchetta («pozione di scudo della fede»)
 _DENTRO_POZIONE = re.compile(r"(?<!\w)(?:pozion[ei]|oli[oi]|potions?|oils?|pergamen[ae]|scrolls?|bacchett[ae]|wands?)\s+"
                              r"(?:di|del|dello|della|dei|degli|delle|dell['’]|of)\s*[^,;|()]*$", re.I)
+#: la Forza per cui è fatto un arco composito, scritta fra parentesi subito dopo: «(For +1)», «(+2 Str)»
+_FORZA_DELL_ARCO = re.compile(r"\s*\(\s*(?:\+(\d)\s*(?:For|Str)\w*|(?:For|Str)\w*\s*\+(\d))\s*\)", re.I)
 #: lo scudo d'acciaio costa più di quello di legno (SRD, «Table: Armor and Shields»)
 _ACCIAIO = re.compile(r"\s*(?:d['’]\s*|di\s+|in\s+)?(?<!\w)(?:acciaio|metallo|steel|metal)(?!\w)", re.I)
 _D_ACCIAIO = " d'acciaio"

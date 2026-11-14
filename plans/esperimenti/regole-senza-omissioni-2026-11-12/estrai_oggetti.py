@@ -208,6 +208,9 @@ def comuni(base: Path) -> "dict[str, dict]":
     armatura = re.search(r"A masterwork suit of armor or shield costs an extra (\d+) gp", f)
     out["perfetta"] = {"arma": int(arma.group(1)), "armatura": int(armatura.group(1)),
                        "proiettile": int(arma.group(2))}
+    # l'arco composito fatto per una Forza: quanto costa ogni punto («adds 100 gp to its cost»)
+    out["arco_forza"] = {che.lower(): int(mo) for che, mo in re.findall(
+        r"\*\*(Longbow|Shortbow), Composite:?\*\*:?[^\n]*?adds (\d+) gp to its cost", f)}
     return out
 
 
@@ -285,7 +288,8 @@ def testo(base: Path) -> str:
                       ("ammo", "«Table: Weapons»: quanti proiettili compra il prezzo scritto"),
                       ("armature", "«Table: Armor and Shields»: prezzo dell'armatura (mo)"),
                       ("scudi", "«Table: Armor and Shields»: per bonus di CA, lo scudo che costa meno (mo)"),
-                      ("scudi_acciaio", "«Table: Armor and Shields»: per bonus di CA, lo scudo d'acciaio (mo)")):
+                      ("scudi_acciaio", "«Table: Armor and Shields»: per bonus di CA, lo scudo d'acciaio (mo)"),
+                      ("arco_forza", "«Longbow, Composite» e «Shortbow, Composite»: mo per punto di Forza dell'arco")):
         righe += ["", f"[oggetti.comuni.{che}]", f"# SRD, {nota}"]
         righe += [f'"{k}" = {v}' for k, v in sorted(com[che].items())]
     righe += ["", "[oggetti.comuni.merci]",

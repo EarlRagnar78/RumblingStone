@@ -191,6 +191,12 @@ class TestOggetti(unittest.TestCase):
                          [("mezza armatura (armatura)", 600), ("scudo pesante d'acciaio (armatura)", 20)])
         self.assertEqual(self.trova("scudo pesante di legno, heavy steel shield"),
                          [("heavy steel shield (armatura)", 20), ("scudo pesante (armatura)", 7)])
+        # l'arco composito fatto per una Forza: 100 mo per punto il lungo, 75 il corto (SRD)
+        self.assertEqual(self.trova("arco lungo composito (+1 For), arco corto composito (For +2)"),
+                         [("arco corto composito (For +2) (arma)", 225), ("arco lungo composito (For +1) (arma)", 200)])
+        self.assertEqual(self.trova("arco lungo composito +1 (For +2)"),
+                         [("arco lungo composito +1 (For +2) (arma)", 2600)])
+        self.assertEqual(self.trova("arco lungo composito (+1)"), [("arco lungo composito (arma)", 100)])
         # la pozione di scudo della fede non è uno scudo +2
         self.assertEqual(self.trova("pozione di scudo della fede +2"), [("potion of shield of faith +2 (potion)", 50)])
         self.assertEqual(self.trova("pozione di scudo della fede +3, scudo pesante +1"),
@@ -213,6 +219,8 @@ class TestOggetti(unittest.TestCase):
                          [("bastone ferrato (arma)", 0), ("fishing net, 25 sq. ft.", 4), ("randello (arma)", 0)])
         self.assertEqual((self.d["perfetta"], self.d["comuni"]["scudi"]),
                          ({"arma": 300, "armatura": 150, "proiettile": 6}, {"1": 3, "2": 7, "4": 30}))
+        self.assertEqual((self.d["comuni"]["scudi_acciaio"], self.d["comuni"]["arco_forza"]),
+                         ({"1": 9, "2": 20}, {"longbow": 100, "shortbow": 75}))
 
     def test_senza_bonus_non_ha_prezzo(self):
         self.assertEqual(self.trova("mantello del carisma +3"), [])
@@ -355,7 +363,7 @@ class TestDoveStaScritto(unittest.TestCase):
     def test_materiale_dello_scudo_fra_nome_e_bonus(self):
         d = S.dati("dnd35", "creature.costruzione")["oggetti"]
         self.assertEqual(V._oggetti_col_prezzo("scudo pesante d'acciaio +2", d, "dnd35"),
-                         [("scudo pesante +2 (armatura)", 4157)])
+                         [("scudo pesante +2 d'acciaio (armatura)", 4170)])   # d'acciaio: 20 mo, non i 7 del legno
 
     def test_il_dm_dichiara_lo_scarto(self):
         coda = ("**Equipaggiamento** amuleto della salute +2\n\n"

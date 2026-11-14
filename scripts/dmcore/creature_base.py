@@ -86,17 +86,55 @@ _DRAGO_VERO = re.compile(
     rf"\bdragon\s*\(\s*{_COLORE_EN}\b", re.I)
 
 
+#: le dodici categorie d'età dei draghi veri, dalla più lunga: «giovane adulto» prima di «adulto»
+_ETA_DRAGO = (
+    ("great wyrm", r"great wyrm|grande dragone"), ("wyrmling", r"wyrmling|cucciol[oa]"), ("wyrm", r"wyrm"),
+    ("ancient", r"ancient|antic[oa]"), ("very old", r"very old|molto vecchi[oa]"),
+    ("mature adult", r"mature adult|adult[oa] matur[oa]"), ("young adult", r"young adult|giovane adult[oa]"),
+    ("very young", r"very young|molto giovane"), ("old", r"old|vecchi[oa]"), ("adult", r"adult|adult[oa]"),
+    ("juvenile", r"juvenile|adolescente"), ("young", r"young|giovane"),
+)
+_COLORI = (("red", r"red|ross[oa]"), ("blue", r"blue|blu|azzurr[oa]"), ("green", r"green|verde"),
+           ("black", r"black|ner[oa]"), ("white", r"white|bianc[oa]"), ("brass", r"brass|d'ottone"),
+           ("bronze", r"bronze|di bronzo"), ("copper", r"copper|di rame"), ("gold", r"gold|d'oro"),
+           ("silver", r"silver|d'argento"))
+
+
+def eta_del_drago(testo: str, sistema: str = "dnd35") -> "tuple[str, str, dict] | None":
+    """(colore, età, voce) del drago vero che il `testo` dichiara con colore e categoria d'età
+    («Drago Rosso (Young Adult)», «Blue Old Dragon»), o None se manca una delle due."""
+    try:
+        per_eta = S.dati(sistema, "creature.base").get("draghi_eta", {})
+    except S.ErroreSistemi:
+        return None
+    vero = _DRAGO_VERO.search(testo or "")
+    if not vero or not per_eta:
+        return None
+    colore = next((c for c, schema in _COLORI if re.search(rf"(?<![\w'])(?:{schema})(?![\w'])", vero.group(0), re.I)), None)
+    eta = next((e for e, schema in _ETA_DRAGO if re.search(rf"(?<!\w)(?:{schema})(?!\w)", testo, re.I)), None)
+    if not colore or not eta or eta not in per_eta.get(colore, {}):
+        return None
+    return colore, eta, per_eta[colore][eta]
+
+
 def drago(testo: str, taglia: "str | None", sistema: str = "dnd35") -> "tuple[str, dict] | None":
-    """La «base» di un drago vero di quella `taglia`: solo gli attacchi naturali, che per i
-    draghi cromatici e metallici vengono dalla taglia. Viverne, draghi tartaruga e mezzi-draghi
-    sono di tipo drago ma hanno i loro dadi: senza un colore nel `testo` non si usa."""
+    """La «base» di un drago vero di quella `taglia`: gli attacchi naturali, che per i draghi
+    cromatici e metallici vengono dalla taglia. Se il `testo` dice anche la categoria d'età e la
+    taglia è quella dell'età, la base porta dadi vita, armatura naturale, caratteristiche e grado
+    di sfida di quel drago. Viverne, draghi tartaruga e mezzi-draghi sono di tipo drago ma hanno
+    i loro dadi: senza un colore nel `testo` non si usa."""
     try:
         per_taglia = S.dati(sistema, "creature.base").get("draghi", {})
     except S.ErroreSistemi:
         return None
     if not taglia or taglia not in per_taglia or not _DRAGO_VERO.search(testo or ""):
         return None
-    return f"drago {taglia}", {"taglia": taglia, "tipo": "dragon", "attacchi": per_taglia[taglia]}
+    voce = {"taglia": taglia, "tipo": "dragon", "attacchi": per_taglia[taglia]}
+    quale = eta_del_drago(testo, sistema)
+    if quale and quale[2]["taglia"] == taglia:
+        colore, eta, dati = quale
+        return f"{eta} {colore} dragon", dict(voce, dado=12, drago=True, **{k: dati[k] for k in ("dv", "naturale", "car", "gs")})
+    return f"drago {taglia}", voce
 
 
 def attacco_naturale(nome: str, base: dict) -> "dict | None":

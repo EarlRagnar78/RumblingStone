@@ -1235,7 +1235,12 @@ def creatura_base(p: Path) -> "tuple[list[dict], list[dict]]":
         # dadi vita razziali: «4d8» dell'ogre deve stare nei dadi scritti
         dadi = " ".join(x for x in (sb.pf_dado or "", sb.tipo or "") if x)
         scritti = re.findall(r"(\d+)d(\d+)", dadi)
-        if scritti and isinstance(voce["dv"], int):
+        if scritti and voce.get("drago") and not any(n == str(voce["dv"]) for n, _ in scritti):
+            # un drago vero cresce di dadi vita dentro la sua età (riga «Advancement»): non è un errore
+            nv.append(dict(base, regola="numero.dv.razziali",
+                           testo=f"dadi vita {'+'.join(f'{n}d{f}' for n, f in scritti)} contro i {voce['dv']}d12 di "
+                                 f"{nome}: avanzato per dadi vita o di un'altra categoria d'età"))
+        elif scritti and isinstance(voce["dv"], int):
             if (str(voce["dv"]), str(voce["dado"])) not in scritti:
                 viol.append(dict(base, regola="numero.dv.razziali", atteso=f"{voce['dv']}d{voce['dado']}",
                                  ha="+".join(f"{n}d{f}" for n, f in scritti),
@@ -1246,7 +1251,15 @@ def creatura_base(p: Path) -> "tuple[list[dict], list[dict]]":
                            testo=f"la scheda non scrive i dadi vita: i {voce['dv']}d{voce['dado']} di {nome} non si riscontrano"))
         # armatura naturale: la base, se la taglia è la stessa
         nat = re.search(r"([+-]?\d+)\s*(?:naturale|natural|nat\b)", (sb.ca_dettaglio or "").replace("−", "-"), re.I)
-        if nat and stessa:
+        from dmcore import gs as GS
+        from dmcore import sistemi as S
+        dichiarato = voce.get("drago") and GS.modello(sb.tipo or "", S.dati(sis, "creature.costruzione").get("gs") or {})
+        if nat and dichiarato:
+            # un modello dichiarato nel tipo («Avanzato») cambia l'armatura naturale del drago
+            nv.append(dict(base, regola="numero.CA.naturale",
+                           testo=f"«{dichiarato}» nel tipo: l'armatura naturale di {nome} ({voce['naturale']:+d}) "
+                                 f"cambia col modello e non si riscontra"))
+        elif nat and stessa:
             ha = int(nat.group(1))
             if ha != voce["naturale"]:
                 viol.append(dict(base, regola="numero.CA.naturale", atteso=voce["naturale"], ha=ha,

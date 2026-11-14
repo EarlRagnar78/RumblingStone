@@ -1270,3 +1270,20 @@ modo di trattare i master e non passano da questa funzione.
 
 **Conseguenze.** Lo scudo pesante «d'acciaio» +2 vale 4.170 mo e non 4.157: il test che lo fissava è aggiornato. Un totale che sale può far scattare una violazione di ricchezza su una scheda che prima passava per difetto: è il comportamento voluto, e una scheda non si corregge senza la risposta del DM.
 
+### Lotto 5, quinta parte — i draghi veri per colore e categoria d'età (2026-11-14)
+
+**Contesto.** Dei draghi veri `creature.base` aveva solo il dado degli attacchi per taglia. Dadi vita, armatura naturale e grado di sfida di un drago stanno nelle tabelle per età dell'SRD, e senza quelle i tre draghi del Bestiario uscivano «dadi vita razziali senza una creatura base riconosciuta».
+
+**Decisione.** `estrai_creature_base.py` genera `[draghi_eta.<colore>]` in `creature_base.toml`: dieci colori per dodici età (120 voci) con taglia, dadi vita, armatura naturale, caratteristiche e grado di sfida, dalle tabelle «Dragons by Age» e «Dragon Abilities by Age» e dalla riga «Challenge Ratings». `creature_base.drago` porta questi numeri solo se il testo dice colore **ed** età («Drago Rosso (Young Adult)», «drago nero adulto maturo») e la taglia della scheda è quella dell'età. Poi:
+
+- l'armatura naturale diversa da quella dell'età è una violazione (`numero.CA.naturale`);
+- il grado di sfida si giudica dalla base, come per le altre creature;
+- dadi vita diversi da quelli dell'età non sono una violazione: un drago cresce di dadi vita dentro la sua età (riga «Advancement»), e la scheda può essere di un'altra età. Esce «non verificabile»;
+- un modello scritto nel tipo («Avanzato») cambia l'armatura naturale: «non verificabile», non violazione.
+
+**Cosa non entra.** L'età non si deduce dai dadi vita o dalla taglia: va scritta. Caratteristiche, tiri salvezza, soffio e resistenza agli incantesimi per età non si giudicano ancora. I draghi di PF1e restano alla loro tabella dei Bestiary.
+
+**Misura** (contro main bff08716). `verifica_scheda.py Bestiario 0*/`: violazioni 30 → 33, non verificabili 376 → 380. Le tre violazioni nuove sono vere e stanno su card al DM del 14/11: Arbitrax (GS 15 contro 13 e armatura naturale +24 contro +18 del giovane adulto rosso) e Tyrgarun (armatura naturale +29 contro +26: il titolo dice «Old», il corpo è del molto vecchio). Ozyrrandion torna: +19 è l'adulto verde, e i 22 dadi vita sono un avanzamento dichiarato. Skullcrusher (tre blocchi, «Avanzato» nel tipo) esce «non verificabile». I tre «senza una creatura base riconosciuta» dei draghi spariscono.
+
+**Conseguenze.** Arbitrax entra in `IN_ATTESA` del cancello del grado di sfida finché il DM non risponde. Le schede non si toccano senza la sua risposta.
+

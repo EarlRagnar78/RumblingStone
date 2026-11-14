@@ -461,6 +461,19 @@ class TestCancelloDeiNumeri(unittest.TestCase):
                              "Arma Focalizzata (martello da guerra)", 0)
         self.assertEqual(r[:2], (14, 14))
 
+    def test_l_equipaggiamento_non_e_un_attacco(self):
+        """Senza `attacchi:` la voce «Altro equipaggiamento: … ascia +1 (…)» non è l'attacco della scheda."""
+        testo = ("# Portalame (Fighter 6)\n\n```statblocco\ngs: 6\ntipo: Medium humanoid (goblinoid), Fighter 6, LE\n"
+                 "pf: 50\nattributi: For 16 Des 16 Cos 15 Int 10 Sag 12 Car 8\nvoci:\n"
+                 "  - Altro equipaggiamento: giaco di maglia +1, doppia ascia orchesca +1 (una testa perfetta)\n"
+                 "  - Talenti: Arma Focalizzata (ascia) +1 (già contato)\n{attacco}```\n")
+        with tempfile.TemporaryDirectory() as d:
+            q = Path(d) / "portalame-cr6.md"
+            q.write_text(testo.format(attacco=""), encoding="utf-8")
+            self.assertEqual(C._attacco_di_scheda(LC.leggi(q)), "")
+            q.write_text(testo.format(attacco="  - Morso +9 (1d6+3)\n"), encoding="utf-8")
+            self.assertEqual(C._attacco_di_scheda(LC.leggi(q)), "Morso +9 (1d6+3)")
+
     def test_arma_focalizzata_vale_per_la_sua_arma(self):
         # Karkator: il talento è sul tentacolo, il morso non lo prende
         testo = "  - Morso +17 (2d8+9)\n  - 4 tentacoli +16 (2d6+4)\nTalenti Arma Focalizzata (tentacolo)"

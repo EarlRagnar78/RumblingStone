@@ -18,6 +18,11 @@ Terza prova (lotto 8, terza parte): un'armatura completa +1 di adamantio, un'asc
 bipenne di adamantio e un bastone del fuoco con 40 cariche (33.200 mo; senza
 materiali e bastoni 1.000). Conta le sole violazioni.
 
+Quarta prova (lotto 8, quarta parte, ADR-0134): gli stessi oggetti della prima scritti
+nella forma di ADR-0091, dentro la riga delle Statistiche e nelle due voci «Equipaggiamento
+da combattimento» e «Altro equipaggiamento». Conta le sole violazioni: misura se la
+verifica legge l'equipaggiamento dove le schede lo scrivono.
+
 Uso: python3 muta_ricchezza.py  (scrive misure-ricchezza.json accanto)
 """
 from __future__ import annotations
@@ -40,6 +45,11 @@ MATERIALI = ("\n\n**Equipaggiamento** armatura completa +1 di adamantio, ascia b
              "bastone del fuoco (40 cariche)\n")
 
 
+#: quarta prova (lotto 8, quarta parte): la forma di ADR-0091 e le due voci
+NELLA_RIGA = ("\n\n**Statistiche** For 10 · **Equipaggiamento da combattimento** 2 pozioni di *cura ferite gravi* · "
+              "**Altro equipaggiamento** *anello di protezione +5*, *mantello della resistenza +5* · **Linguaggi** Comune\n")
+
+
 def main() -> int:
     conto = {"schede lette": 0, "con equipaggiamento dal prezzo certo": 0, "già fuori regola": 0,
              "sopra il 15° livello": 0}
@@ -47,6 +57,7 @@ def main() -> int:
     perse = []
     speciale = {"violazione": 0, "scritte": 0}
     materiali = {"violazione": 0, "scritte": 0}
+    nella_riga = {"violazione": 0, "scritte": 0}
     for p in sorted((ROOT / "Bestiario").rglob("*.md")):
         s = V.L.leggi(p)
         if s is None or not sum(g.n for g in s.gruppi):
@@ -70,6 +81,9 @@ def main() -> int:
             q.write_text(testo + MATERIALI, encoding="utf-8")
             materiali["violazione"] += bool(V.ricchezza(q)[0])
             materiali["scritte"] += 1
+            q.write_text(testo + NELLA_RIGA, encoding="utf-8")
+            nella_riga["violazione"] += bool(V.ricchezza(q)[0])
+            nella_riga["scritte"] += 1
             q.write_text(testo + AGGIUNTA, encoding="utf-8")
             v, n = V.ricchezza(q)
         if v:
@@ -82,7 +96,7 @@ def main() -> int:
             esito["niente"] += 1
             perse.append(str(p.relative_to(ROOT)))
     fuori = {"conto": conto, "esito": esito, "perse": perse, "capacità speciale e pozioni": speciale,
-             "materiali e bastone": materiali}
+             "materiali e bastone": materiali, "nella riga delle statistiche": nella_riga}
     (Path(__file__).parent / "misure-ricchezza.json").write_text(
         json.dumps(fuori, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     for k, n in {**conto, **esito}.items():
@@ -91,6 +105,7 @@ def main() -> int:
         print("  persa:", x)
     print(f"{'arma con capacità speciale e pozioni':40} {speciale['violazione']}/{speciale['scritte']}")
     print(f"{'materiali speciali e bastone':40} {materiali['violazione']}/{materiali['scritte']}")
+    print(f"{'nella riga delle Statistiche':40} {nella_riga['violazione']}/{nella_riga['scritte']}")
     return 0
 
 

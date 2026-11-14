@@ -1,22 +1,26 @@
 {
  "conto": {
   "schede lette": 125,
-  "con equipaggiamento dal prezzo certo": 7,
-  "già fuori regola": 0,
-  "sopra il 15° livello": 13
+  "con equipaggiamento dal prezzo certo": 28,
+  "già fuori regola": 7,
+  "sopra il 15° livello": 10
  },
  "esito": {
-  "violazione": 57,
-  "non verificabile": 55,
+  "violazione": 50,
+  "non verificabile": 58,
   "niente": 0
  },
  "perse": [],
  "capacità speciale e pozioni": {
-  "violazione": 57,
-  "scritte": 125
+  "violazione": 50,
+  "scritte": 118
  },
  "materiali e bastone": {
-  "violazione": 52,
-  "scritte": 125
+  "violazione": 49,
+  "scritte": 118
+ },
+ "nella riga delle statistiche": {
+  "violazione": 50,
+  "scritte": 118
  }
 }

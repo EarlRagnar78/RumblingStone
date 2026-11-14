@@ -1324,6 +1324,101 @@ media = 4000
 pesante = 9000
 scudo = 1000
 
+[oggetti.perfetta]
+# SRD, «Masterwork Weapons» e «Masterwork Armor»: quanto costa in più la fattura perfetta (mo)
+arma = 300
+armatura = 150
+
+[oggetti.comuni.armi]
+# SRD, «Table: Weapons»: prezzo dell'arma di taglia Media (mo intere)
+"arrows" = 1
+"axe, orc double" = 60
+"axe, throwing" = 8
+"battleaxe" = 10
+"bolas" = 5
+"bolts" = 1
+"bolts, crossbow" = 1
+"chain, spiked" = 25
+"crossbow, hand" = 100
+"crossbow, heavy" = 50
+"crossbow, light" = 35
+"crossbow, repeating heavy" = 400
+"crossbow, repeating light" = 250
+"dagger" = 2
+"dagger, punching" = 2
+"falchion" = 75
+"flail" = 8
+"flail, dire" = 90
+"flail, heavy" = 15
+"gauntlet" = 2
+"gauntlet, spiked" = 5
+"glaive" = 8
+"greataxe" = 20
+"greatclub" = 5
+"greatsword" = 50
+"guisarme" = 9
+"halberd" = 10
+"hammer, gnome hooked" = 20
+"hammer, light" = 1
+"handaxe" = 6
+"javelin" = 1
+"kama" = 2
+"kukri" = 8
+"lance" = 10
+"longbow" = 75
+"longbow, composite" = 100
+"longspear" = 5
+"longsword" = 15
+"mace, heavy" = 12
+"mace, light" = 5
+"morningstar" = 8
+"net" = 20
+"nunchaku" = 2
+"pick, heavy" = 8
+"pick, light" = 4
+"ranseur" = 10
+"rapier" = 20
+"sai" = 1
+"sap" = 1
+"scimitar" = 15
+"scythe" = 18
+"shortbow" = 30
+"shortbow, composite" = 75
+"shortspear" = 1
+"shuriken" = 1
+"siangham" = 3
+"sickle" = 6
+"spear" = 2
+"sword, bastard" = 35
+"sword, short" = 10
+"sword, two-bladed" = 100
+"trident" = 15
+"urgrosh, dwarven" = 50
+"waraxe, dwarven" = 30
+"warhammer" = 12
+"whip" = 1
+
+[oggetti.comuni.armature]
+# SRD, «Table: Armor and Shields»: prezzo dell'armatura (mo)
+"banded mail" = 250
+"breastplate" = 200
+"chain shirt" = 100
+"chainmail" = 150
+"full plate" = 1500
+"half-plate" = 600
+"hide" = 15
+"leather" = 10
+"padded" = 5
+"scale mail" = 50
+"splint mail" = 200
+"studded leather" = 25
+
+[oggetti.comuni.scudi]
+# SRD, «Table: Armor and Shields»: per bonus di CA, lo scudo che costa meno (mo)
+"1" = 3
+"2" = 7
+"4" = 30
+
 # come una scheda scrive un oggetto (espressioni regolari; non vengono dall'SRD). «N» è il bonus letto.
 [[oggetti.nomi]]
 nome = "ring of protection +N"

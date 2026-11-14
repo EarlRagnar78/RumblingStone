@@ -101,6 +101,8 @@ def creature(cartella: Path) -> "dict[str, dict]":
                 mdl = re.match(r"\+(\d+)", v("level adjustment"))
                 if mdl:
                     voce["mdl"] = int(mdl.group(1))
+                if "character class" in v("advancement").lower():
+                    voce["avanza"] = "classe"
                 gs = re.match(r"(\d+(?:/\d+)?)", v("challenge rating"))
                 if gs:
                     voce["gs"] = gs.group(1) if "/" in gs.group(1) else int(gs.group(1))
@@ -187,6 +189,9 @@ def main(argv: "list[str]") -> int:
           "# sulla tabella creature_details di book-b1…b4.db di PSRD-Data (PRD PF1e, OGL). Non si corregge a mano.")
     print("# dv/dado = dadi vita razziali; naturale = bonus di armatura naturale; attacchi = attacchi")
     print("# naturali col dado della creatura e quanti; mdl = modificatore di livello; gs = grado di sfida.")
+    if srd:
+        print("# avanza = \"classe\": la riga «Advancement» dice «By character class» (SRD, «Improving Monsters»:")
+        print("# solo queste creature hanno l'equipaggiamento di un PNG; le altre hanno un tesoro).")
     print(f"# {len(cr)} creature.\n\n[creature_base]")
     for nome in sorted(cr):
         print(f'"{nome}" = {_toml(cr[nome])}')

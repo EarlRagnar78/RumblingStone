@@ -72,3 +72,5 @@ era (testo dell'incontro epico): pf 84, CA 24 scomposta «8 piastre + 2 scudo + 
 <!-- /storico -->
 
 > correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-12): al 2° livello era scritto *profanare* (*Unhallow*, 5°); l'incantesimo di 2° è *dissacrare* (*Desecrate*).
+
+> Equipaggiamento sopra la tabella: scelta del DM (card del 2026-11-14). Vale almeno 26.890 mo contro i 21.000 della Tabella 4-23 del DMG 3.5 per il livello effettivo 11; il GS resta 11 e nessun numero cambia.

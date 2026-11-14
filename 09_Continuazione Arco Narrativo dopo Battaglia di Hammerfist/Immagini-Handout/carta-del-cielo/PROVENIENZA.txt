@@ -3,16 +3,29 @@ PROVENIENZA DELLE IMMAGINI — ARC-09, carta del cielo di Zalkatar (handout 7)
 Formato di riga (ADR-0019 §2):
   <file> · <strumento> · <licenza/contratto> · seed <n> · <data> · <chi>
 
-carta-del-cielo-zalkatar.png         · Stellarium 23.4 (GPL-2.0+), script carta-del-cielo-zalkatar.ssc, cultura del cielo cultura-del-cielo/rumblingstone · catalogo stellare Hipparcos di Stellarium; immagine e figure del repo · seed — (deterministico: due lanci dello stesso script differiscono solo nei 36×36 pixel del segno sulla stella-chiave, che Stellarium anima) · 2026-11-14 · Claude per Jfs
+carta-del-cielo-zalkatar.png         · Stellarium 26.2 (GPL-2.0+, AppImage ufficiale), plugin ArchaeoLines, script carta-del-cielo-zalkatar.ssc, cultura del cielo cultura-del-cielo/rumblingstone (index.json) · catalogo stellare Hipparcos di Stellarium; immagine e figure del repo · seed — (deterministico: due lanci dello stesso script danno la stessa immagine pixel per pixel) · 2026-11-14 · Claude per Jfs
 carta-del-cielo-zalkatar-stampa.png  · derivata dalla precedente con Pillow (comando sotto) · come sopra · seed — · 2026-11-14 · Claude per Jfs
 
+Prima versione (#422, 2026-11-14): Stellarium 23.4 da apt, cultura nel formato
+vecchio (.fab). La 26.2 non legge più quel formato; la 23.4 non ha il segno fisso
+(MarkerMgr non disegnava) e segnava la stella con la selezione, che è animata:
+due lanci differivano in 619 pixel. Il parallelo del Sigillo è stato aggiunto
+su scelta del DM (card del 2026-11-14).
+
 Come si rifà (container Ubuntu 24.04, nessuno schermo):
-  apt-get install stellarium                     # 23.4; NON è una dipendenza del repo
+  scaricare Stellarium-26.2-qt6-x86_64.AppImage dalle release di
+    github.com/Stellarium/stellarium (592 MB; NON è una dipendenza del repo) ed
+    estrarla con --appimage-extract se FUSE manca
+  se c'è uno Stellarium installato da apt, spostare /usr/share/stellarium:
+    l'AppImage altrimenti legge quei dati
   cp -r cultura-del-cielo/rumblingstone ~/.stellarium/skycultures/
   in ~/.stellarium/config.ini: [video] fullscreen=false, screen_w=1400, screen_h=1400;
-    [scripts] flag_allow_screenshots_dir=true; plugin MeteorShowers, Exoplanets, Novae, Oculars spenti
+    [scripts] flag_allow_screenshots_dir=true; [init_location] location fissa
+    (per esempio Paris, Western Europe), non «auto»; automatic_updates_enabled=false;
+    flag_search_online=false (senza questi tre Stellarium resta appeso alla
+    chiusura); [plugins_load_at_startup] ArchaeoLines=true, gli altri come vengono
   LIBGL_ALWAYS_SOFTWARE=1 xvfb-run -a -s "-screen 0 1500x1500x24 +extension GLX" \
-    stellarium --startup-script carta-del-cielo-zalkatar.ssc
+    ./squashfs-root/AppRun --startup-script carta-del-cielo-zalkatar.ssc
   Variante da stampa (inchiostro su carta, fuori dall'orizzonte vuoto):
     python3 -c 'import sys;from PIL import Image,ImageOps,ImageDraw as D;i=Image.open(sys.argv[1]).convert("RGB");w,h=i.size;g=ImageOps.invert(ImageOps.grayscale(i)).point(lambda v:255 if v>248 else int(v*.55));k,c=(52,30,16),(236,222,190);s=ImageOps.colorize(g,black=k,white=c);m=Image.new("L",(w,h));D.Draw(m).ellipse((12,12,w-12,h-12),fill=255);o=Image.new("RGB",(w,h),c);o.paste(s,(0,0),m);D.Draw(o).ellipse((12,12,w-12,h-12),outline=k,width=3);o.save(sys.argv[2],optimize=True)' \
       carta-del-cielo-zalkatar.png carta-del-cielo-zalkatar-stampa.png

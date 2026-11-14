@@ -58,3 +58,5 @@ Boost log: trascrizione completa dal .pcg — GS 6 → 6 — CA, pf, attacco e T
 - era: CA ~19, pf ~51 (6d10+12), TS Temp +7, Rifl +3, Vol +3, ascia da battaglia +11/+6 (1d8+4/x3), BAB +6, stimati nella prosa della scheda senza leggere l'equipaggiamento del .pcg.
 - era: For 16 e Cos 14, Car 8, cioè le caratteristiche del .pcg prima della razza e senza i guanti.
 <!-- /storico -->
+
+> Equipaggiamento sopra la tabella: scelta del DM (card del 2026-11-14). Vale almeno 7.222 mo contro i 5.600 della Tabella 4-23 del DMG 3.5 per il livello effettivo 6; il GS resta 6 e nessun numero cambia.

@@ -33,6 +33,6 @@
 "creature.armi" = "le armi: dado per taglia Media, critico, impugnatura, il dado al cambiare della taglia, i talenti che danno bonus al danno (ADR-0126, lotto 2)"
 "creature.incantatori" = "gli incantatori: incantesimi al giorno e conosciuti per livello di classe, caratteristica che lancia, incantesimi bonus, slot di dominio (ADR-0126, lotto 3)"
 "creature.prestigio" = "i requisiti delle classi di prestigio: bonus di attacco base, gradi, talenti, razza, allineamento, livello d'incantesimo; solo nomi e numeri (ADR-0126, lotto 3-bis)"
-"creature.base" = "le creature base: taglia, tipo, dadi vita razziali, armatura naturale, caratteristiche, attacchi naturali col dado, modificatore di livello (ADR-0126, lotto 5)"
+"creature.base" = "le creature base: taglia, tipo, dadi vita razziali, armatura naturale, caratteristiche, attacchi naturali col dado, modificatore di livello, chi avanza per classe (ADR-0126, lotto 5; ADR-0134)"
 "bonus.cumulo" = "il cumulo dei bonus per tipo e le sorgenti (oggetti, talenti, razze) che una scheda può dichiarare sui tiri salvezza e sull'attacco (ADR-0126)"
 "stampa.etichette" = "le sigle meccaniche stampate nel riquadro della creatura (CA, pf, TS, Vel, GS, Iniziativa, Sensi)"

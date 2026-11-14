@@ -1309,7 +1309,40 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0091` → `plans/adr/ADR-0091-la-scheda-del-png-ha-una-forma.md` · `docs/audit/stampa-booklet.json`
 - **Solo qui:** bastano quattro righe in più nelle schede di guardie e sacerdote per spezzare Balvar, prima ancora che le sue tre righe tornino intere. `verifica_scheda` legge l'equipaggiamento solo da una riga che comincia con «Equipaggiamento»: non vede né la voce dentro le Statistiche (la forma di ADR-0091) né «Altro equipaggiamento», quindi la misura di `ricchezza` non si muove; detto al thread delle regole. `linguaggi.toml` ha solo le razze dei PG: per hobgoblin e orco i linguaggi automatici stanno nelle voci dei mostri dell'SRD. Sulla card avevo scritto «due pagine affiancate» senza verificarlo, e l'ho corretto subito dopo. La riga 994 di questo file è storia e non si corregge, anche dove l'audit del 2026-11-13 la trova superata. Nella stessa PR le righe ferme trovate dall'audit del 2026-11-13: P09 e inventario Gemini in STATO-E-ORDINE, casella VOL-3 del piano di stampa.
 
-### MS-0114 · 2026-11-13 · I giorni di «chi sa cosa» in state.yaml e la regola T2
+### MS-0114 · 2026-11-14 · ADR-0134: l'equipaggiamento standard dai Codex PF1e entro il valore del 3.5
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0134, ADR-0126
+- **Temi:** regole schede equipaggiamento
+- **Origine:** riga del 2026-11-14 «ADR-0134 e ADR-0126, lotto 8 quarta parte: l'equipaggiamento standard» in `plans/CHANGELOG.md`
+- **Testo:** Jfs, 2026-11-13 sera: l'equipaggiamento standard di mostri e PNG non si inventa, si prende dalle tabelle dei manuali in modo deterministico; sulla card ha scelto «Codex PF1e, livello effettivo». Nel repo entrano i 454 PNG dei due Codex, la Tabella 14-9, il prezzo base degli oggetti comuni, la regola «Improving Monsters» e il registro delle regole custom con la voce RC-001. Sette schede vere risultano sopra la Tabella 4-23 (Avarthel, Bothor e Malvur, il comandante dei mercenari di Dauth, il blackguard e il chierico di Abbathor, Krusk, Ur-Vrax): Jfs ha risposto «Tieni e dichiara» alle sette card il 2026-11-14 e ogni scheda porta la riga «Equipaggiamento sopra la tabella: scelta del DM», senza cambiare numeri. Misura: violazioni 30 → 30 (37 senza le dichiarazioni), non verificabili 372 → 374; banco, quarta prova 0 → 50 su 118.
+- **Trovato nel repo:** `ADR-0134` → `plans/adr/ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md`; `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** le sette schede sopra la tabella non vengono dal prezzo base ma dal leggere l'equipaggiamento dove le schede lo scrivevano già, dentro la riga delle Statistiche: prima la verifica non lo vedeva. Una scheda scrive l'equipaggiamento due volte (recinto e prosa) e la prima versione l'avrebbe contato doppio. La quarta riga della Tabella 14-9 nel PRD somma 1.750 mo nelle categorie contro un totale di 1.650. Il thread del volume ha segnalato le forme non lette; Durin non risulta sopra la tabella con la misura di oggi.
+
+### MS-0115 · 2026-11-14 · RICERCA-TOOL-LGM-2026 §3.1: la carta del cielo con Stellarium 26.2
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0005 ADR-0019
+- **Temi:** arc09 handout immagini indagine
+- **Origine:** riga del 2026-11-14 «§3.1, la carta del cielo passa a Stellarium 26.2» in `plans/CHANGELOG.md`
+- **Testo:** Jfs, 2026-11-14: «usalo e aggiorna Stellarium se migliora il risultato ed il miglioramento è misurabile». Misura: due lanci dello stesso script davano 619 pixel diversi con la 23.4 (la stella-chiave segnata dalla selezione, che è animata) e ne danno 0 con la 26.2 e un segno fisso (`MarkerMgr.markerEquatorial`). Sulla card del 2026-11-14 Jfs ha scelto «Sì, con il parallelo»: il plugin ArchaeoLines traccia la declinazione 38,922, il parallelo della stella-chiave.
+- **Trovato nel repo:** `09_…/Immagini-Handout/carta-del-cielo/PROVENIENZA.txt` · `09_…/Immagini-Handout/carta-del-cielo/carta-del-cielo-zalkatar.ssc` · handout 7 in `Arco-Post-Hammerfist-HANDOUTS.md`
+- **Solo qui:** la voce è nata MS-0114 ed è diventata MS-0115 al riallineo dopo la #425. SkyCultureMaker, il plugin nominato nel §3.1, c'è nella 26.2 ma è solo a finestre: non ha comandi da script, quindi `index.json` è scritto a mano e il plugin non migliora alcuna misura. La 26.2 rifiuta i `.fab` («Failed to find index.json») e non ha più `core.setSkyLanguage`. Senza schermo restava appesa a `quitStellarium` finché in `config.ini` non ci sono il luogo fisso, `automatic_updates_enabled=false` e `flag_search_online=false`. L'AppImage legge `/usr/share/stellarium` se c'è una 23.4 installata da apt. ArchaeoLines accende di suo tutte le sue linee: vanno spente una per una; l'etichetta del parallelo non compare nell'immagine. Fra 23.4 e 26.2 senza segno cambiano circa 25.000 pixel di disegno, senza differenze che si vedano.
+
+### MS-0116 · 2026-11-14 · ADR-0133: la scheda a tutta pagina va su due colonne
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0133
+- **Temi:** schede stampa booklet typst
+- **Origine:** riga del 2026-11-14 «ADR-0133, la scheda a tutta pagina va su due colonne dentro il riquadro» in `plans/CHANGELOG.md`
+- **Testo:** terza PR dello standard delle schede. Nelle pagine a una colonna il corpo della scheda esce su due colonne pari dentro il riquadro, come le colonne dei manuali PF1e e 3.5. Scelta del DM sulla card del 2026-11-13, in prova fino al 2026-11-28.
+- **Trovato nel repo:** `ADR-0133` → `plans/adr/ADR-0133-la-scheda-a-tutta-pagina-va-su-due-colonne.md` · `scripts/tests/test_scheda_due_colonne.py`
+- **Solo qui:** in typst un blocco di altezza fissa con dentro `columns(2)` si spezza da sé a pagina girata e le colonne riprendono: provato con una scheda di 4000 parole, nessuna parola persa. L'altezza del blocco è metà del corpo misurato a mezza larghezza più 16 pt, perché le fasce non si dividono mai a metà esatta. La misura delle righe lunghe non è nel repo: conta le righe dentro i riquadri col fondo del tema larghi più di metà pagina che contengono la fascia DIFESA; un primo conto per corpo del carattere prendeva anche piedi e colophon e dava 80 righe invece di 11. Durante la misura ho usato `git stash` per provare che il test fallisce senza la modifica mentre `misura_stampa` girava: ho fermato e rifatto la misura da capo. Il worktree di confronto aveva ancora la modifica della prova: fermato e rifatto anche quello. Il DM ha visto la prova con la soglia a 6 cm, e la soglia è rimasta quella.
+
+### MS-0117 · 2026-11-13 · I giorni di «chi sa cosa» in state.yaml e la regola T2
 
 - **Data:** 2026-11-13
 - **PR:** —

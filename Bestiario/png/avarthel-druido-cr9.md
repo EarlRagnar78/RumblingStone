@@ -66,3 +66,5 @@ Boost log: correzione dei conti con equipaggiamento — GS 9 → 9 — LI 11 →
 - era: incantesimi «tipici» nella scheda (*calmare animali, dominare animali, zanna magica superiore, crescita vegetale, onda fissa*), non presi dall'export.
 - era: tre talenti su quattro (mancava Scrivere Pergamene).
 <!-- /storico -->
+
+> Equipaggiamento sopra la tabella: scelta del DM (card del 2026-11-14). Vale almeno 22.801 mo contro i 12.000 della Tabella 4-23 del DMG 3.5 per il livello effettivo 9; il GS resta 9 e nessun numero cambia.

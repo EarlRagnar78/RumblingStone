@@ -1721,7 +1721,11 @@ def linguaggi(p: Path) -> "tuple[list[dict], list[dict]]":
                       f"(SRD, linguaggi automatici)"}], []
 
 
-_TESTA_EQUIP = re.compile(r"^\W*(?:equipaggiamento|equipment|possessions|gear|oggetti magici|magic items)\b", re.I)
+_TESTA_EQUIP = re.compile(r"^\W*(?:equipaggiamento|altro equipaggiamento|equipment|possessions|(?:combat |other )?gear|"
+                          r"oggetti magici|magic items)\b", re.I)
+#: «· **Equipaggiamento** …» dentro la riga delle Statistiche (la forma di ADR-0091): fino alla voce dopo
+_EQUIP_NELLA_RIGA = re.compile(r"·\s*\*\*((?:altro\s+)?equipaggiamento(?:\s+da\s+combattimento)?)\*\*:?\s*(.+?)"
+                               r"(?=\s·\s+\*\*|$)", re.I)
 _FINE_EQUIP = re.compile(r"^\s*(?:#{1,6}\s|---+\s*$|\*\*[^*|]{2,60}\*\*\s*:?\s*$|```)")
 
 
@@ -1740,7 +1744,25 @@ def _righe_dell_equipaggiamento(testo: str) -> "list[tuple[int, str]]":
                 dentro = False
             elif r.strip() and not _RIGA_DI_STORIA.match(r):
                 out.append((n, r))
+        elif "·" in r and not _RIGA_DI_STORIA.match(r):
+            out += [(n, m.group(2)) for m in _EQUIP_NELLA_RIGA.finditer(r)]
     return out
+
+
+def _senza_la_copia(testo: str, oggetti: "list[tuple[int, tuple[str, int]]]") -> "list[tuple[int, tuple[str, int]]]":
+    """Una scheda scrive l'equipaggiamento due volte, nel recinto `statblocco` e nella prosa sotto:
+    è lo stesso equipaggiamento, e si conta una volta sola, dalla parte che ne riconosce di più."""
+    nel_recinto, dentro = set(), False
+    for n, r in enumerate(testo.split("\n"), 1):
+        if r.lstrip().startswith("```"):
+            dentro = not dentro
+        elif dentro:
+            nel_recinto.add(n)
+    blocco = [o for o in oggetti if o[0] in nel_recinto]
+    prosa = [o for o in oggetti if o[0] not in nel_recinto]
+    if not blocco or not prosa:
+        return oggetti
+    return blocco if sum(o[1][1] for o in blocco) >= sum(o[1][1] for o in prosa) else prosa
 
 
 _PREFISSI_OGGETTO = (("ring of ", "anell[oi]"), ("rod of ", "vergh?[ae]"), ("staff of ", "baston[ei]"))
@@ -1783,6 +1805,7 @@ def _oggetti_del_lessico(sistema: str) -> "tuple[tuple[re.Pattern, str], ...]":
 
 
 _MATERIALE = r"mithr[ai]l|adamantin[eoa]|adamantio"
+_PERFETTA = r"perfett[oaie]|masterwork|mwk"
 _MATERIALE_DOPO = re.compile(rf"\s*(?:(?:di|in|d['’])\s*)?(?<!\w)({_MATERIALE})(?!\w)", re.I)
 _MATERIALE_PRIMA = re.compile(rf"(?<!\w)({_MATERIALE})\s+$", re.I)
 
@@ -1855,6 +1878,20 @@ def _oggetti_col_prezzo(riga: str, d: dict, sistema: str) -> "list[tuple[str, in
     categorie = {(v["ca"], v["des_max"]): v["categoria"]
                  for v in S.dati(sistema, "creature.costruzione").get("movimento", {}).get("armature", {}).values()}
 
+    comuni, perfetta = d.get("comuni") or {}, d.get("perfetta") or {}
+    inglesi = {(v["ca"], v["des_max"]): k
+               for k, v in S.dati(sistema, "creature.costruzione").get("movimento", {}).get("armature", {}).items()}
+    prezzo_arma = {n: comuni.get("armi", {}).get(a["nome"].lower(), 0)
+                   for a in S.dati(sistema, "creature.armi").get("armi", []) for n in a["nomi"]}
+
+    def base(nome: str, che: str) -> int:
+        """Il prezzo dell'oggetto comune: l'arma di taglia Media, l'armatura, lo scudo meno caro col suo bonus."""
+        if che == "arma":
+            return 0 if nome in scudi or nome in armature else prezzo_arma.get(nome, 0)
+        if nome in scudi:
+            return comuni.get("scudi", {}).get(str(scudi[nome][0]), 0)
+        return comuni.get("armature", {}).get(inglesi.get(armature.get(nome), ""), 0)
+
     def in_piu(materiale: "str | None", nome: str, che: str) -> "tuple[int, str]":
         """Quanto costa in più l'oggetto di adamantio o di mithral, se la tabella ha la sua categoria."""
         if not materiale:
@@ -1868,16 +1905,17 @@ def _oggetti_col_prezzo(riga: str, d: dict, sistema: str) -> "list[tuple[str, in
     for nomi, tabella, che in ((list(armature) + list(scudi), d["potenziamento"]["armatura"], "armatura"),
                                (armi, d["potenziamento"]["arma"], "arma")):
         for nome in sorted(set(nomi), key=len, reverse=True):
-            for m in re.finditer(rf"(?<!\w){re.escape(nome)}(?!\w)((?:\s+[^\W\d]+){{0,3}})\s*\+(\d+)(?!\d)([^,;|()]*)",
-                                 riga, re.I):
-                n = int(m.group(2))
+            # «spada lunga infuocata +1 …» oppure, all'inglese, «+1 flaming longsword»
+            for m in re.finditer(rf"(?<!\w){re.escape(nome)}(?!\w)((?:\s+[^\W\d]+(?:['’][^\W\d]+)?){{0,3}})\s*\+(\d+)(?!\d)([^,;|()]*)"
+                                 rf"|(?<![\w+])\+(\d+)\s+((?:[^\W\d]+\s+){{0,3}}?){re.escape(nome)}(?!\w)", riga, re.I):
+                n = int(m.group(2) or m.group(4))
                 if not (1 <= n <= len(tabella) and libero(*m.span())):
                     continue
                 # una capacità conta solo se sta attaccata al nome o al bonus («spadone sacrilego +2»,
                 # «spada lunga +1 infuocata e affilata»): più in là può essere un nome proprio
                 bonus, mo, dette = 0, 0, []
                 # il materiale conta come le capacità: attaccato al nome o al bonus, prima o dopo
-                tratti = [m.group(1), m.group(3)]
+                tratti = [m.group(1), m.group(3)] if m.group(2) else [m.group(5), ""]
                 materiale = None
                 for i, tratto in enumerate(tratti):
                     mm = _MATERIALE_DOPO.match(tratto) if i else _MATERIALE_DOPO.search(tratto)
@@ -1900,8 +1938,11 @@ def _oggetti_col_prezzo(riga: str, d: dict, sistema: str) -> "list[tuple[str, in
                     bonus, mo, dette = 0, 0, []     # oltre la tabella: resta il solo potenziamento
                 piu, detto = in_piu(materiale, nome, che)
                 presi.append(m.span())
+                # un oggetto magico è di fattura perfetta: prezzo comune, fattura, potenziamento. Il mithral
+                # e l'adamantio hanno la fattura già nel loro prezzo
+                fattura = 0 if piu else perfetta.get(che, 0) if base(nome, che) else 0
                 trovati.append((f"{nome} +{n}{detto}{''.join(' ' + x for x in dette)} ({che})",
-                                tabella[n + bonus - 1] + mo + piu))
+                                tabella[n + bonus - 1] + mo + piu + base(nome, che) + fattura))
     # lo stesso senza il «+N» dopo il nome: «mithral chainmail», «+1 mithral full plate», «ascia di adamantio»
     for nomi, tabella, che in ((list(armature) + list(scudi), d["potenziamento"]["armatura"], "armatura"),
                                (armi, d["potenziamento"]["arma"], "arma")):
@@ -1913,7 +1954,8 @@ def _oggetti_col_prezzo(riga: str, d: dict, sistema: str) -> "list[tuple[str, in
                 if not piu or n > len(tabella) or not libero(*m.span()):
                     continue
                 presi.append(m.span())
-                trovati.append((f"{nome}{f' +{n}' if n else ''}{detto} ({che})", piu + (tabella[n - 1] if n else 0)))
+                trovati.append((f"{nome}{f' +{n}' if n else ''}{detto} ({che})",
+                                piu + base(nome, che) + (tabella[n - 1] if n else 0)))
     # pozioni e pergamene di un incantesimo, bacchette con le cariche scritte
     incantesimi = _incantesimi_it()
     for parole, prefisso, tabella in ((r"pozion[ei]|oli[oi]|potions?|oils?", "potion of ", d["prezzi"]),
@@ -1952,6 +1994,20 @@ def _oggetti_col_prezzo(riga: str, d: dict, sistema: str) -> "list[tuple[str, in
             if nome in d["prezzi"] and libero(*m.span()):
                 presi.append(m.span())
                 trovati.append((nome, d["prezzi"][nome]))
+    # armi, armature e scudi comuni, con la fattura perfetta se sta scritta accanto. Un nome corto
+    # («pelle», «rete») conta solo se è di fattura perfetta: da solo può essere un'altra cosa
+    for nomi, che in ((list(armature) + list(scudi), "armatura"), (armi, "arma")):
+        for nome in sorted(set(nomi), key=len, reverse=True):
+            mo = base(nome, che)
+            if mo < 1:
+                continue
+            for m in re.finditer(rf"(?<!\w)(?:({_PERFETTA})\s+)?{re.escape(nome)}(?!\w)"
+                                 rf"(?:\s+(?:[^\W\d]+\s+){{0,2}}?(?:di\s+fattura\s+)?({_PERFETTA})(?!\w))?", riga, re.I):
+                fine = bool(m.group(1) or m.group(2))
+                if (len(nome) < 6 and not fine) or not libero(*m.span()):
+                    continue
+                presi.append(m.span())
+                trovati.append((f"{nome}{' perfetta' if fine else ''} ({che})", mo + (perfetta.get(che, 0) if fine else 0)))
     return trovati
 
 
@@ -1966,6 +2022,10 @@ def _tipo_en(tipo: str) -> str:
     return tipo
 
 
+#: La riga con cui il DM dichiara che l'equipaggiamento supera la tabella per scelta sua
+_SOPRA_LA_TABELLA = re.compile(r"^>?\s*equipaggiamento (?:sopra|oltre) la tabella[^\n]*\b(?:DM|ADR-\d+)\b", re.I | re.M)
+
+
 def ricchezza(p: Path) -> "tuple[list[dict], list[dict]]":
     """Il valore dell'equipaggiamento contro quello di un PNG del suo livello (ADR-0126, lotto 8).
 
@@ -1977,7 +2037,13 @@ def ricchezza(p: Path) -> "tuple[list[dict], list[dict]]":
     quello effettivo: dadi vita più il modificatore di livello della creatura
     base, o della razza senza dadi vita razziali (`[mdl]`: hobgoblin, drow,
     orco…); se né razza né base si conoscono, o la scheda nomina un modello,
-    uno scarto è un non verificabile. Sotto la tabella non si dice niente."""
+    uno scarto è un non verificabile. Sotto la tabella non si dice niente.
+    Una creatura base che non avanza per classe («Advancement» dell'SRD) e
+    senza livelli di classe ha un tesoro, non l'equipaggiamento di un PNG
+    (SRD, «Improving Monsters»): lo scarto è un non verificabile
+    `equipaggiamento.da_png` e la tabella non la giudica. Una riga
+    «Equipaggiamento sopra la tabella: … DM …» dichiara lo scarto come scelta
+    del DM, e la verifica tace."""
     import conformita_statblocchi as C
     from dmcore import sistemi as S
     s = L.leggi(p)
@@ -1989,14 +2055,15 @@ def ricchezza(p: Path) -> "tuple[list[dict], list[dict]]":
         gradi = S.dati(sistema, "creature.gradi")
     except S.ErroreSistemi:
         return [], []
-    if not d:
+    if not d or "per_livello" not in d.get("png", {}):
+        # PF1e ha la Tabella 14-9 ma non ancora i prezzi dei suoi oggetti: non si giudica
         return [], []
     with contextlib.redirect_stderr(io.StringIO()):
         blocchi = list(C._recinti_del_master(s.testo))
     if len(blocchi) > 1:
         return [], []
     righe = _righe_dell_equipaggiamento(s.testo)
-    oggetti = [(n, o) for n, r in righe for o in _oggetti_col_prezzo(r, d, sistema)]
+    oggetti = _senza_la_copia(s.testo, [(n, o) for n, r in righe for o in _oggetti_col_prezzo(r, d, sistema)])
     dadi_vita = sum(g.n for g in s.gruppi)
     if not oggetti or not dadi_vita:
         return [], []
@@ -2018,6 +2085,13 @@ def ricchezza(p: Path) -> "tuple[list[dict], list[dict]]":
             mdl = senza_dv["razze"][sue[0]]["mdl"]
     if mdl is None and blocchi:
         trovata = _base_del_blocco(s.testo, blocchi[0]["sb"], True, sistema)
+        if trovata and trovata[1].get("avanza") != "classe" and not L.livelli_di_classe(s):
+            # SRD, «Improving Monsters»: l'equipaggiamento di un PNG spetta solo a chi avanza per classe
+            return [], [dict(base, regola="equipaggiamento.da_png",
+                             testo=f"equipaggiamento per almeno {totale} mo ({elenco}), ma «{trovata[0]}» non avanza "
+                                   f"per classe e la scheda non ha livelli di classe: per l'SRD («Improving "
+                                   f"Monsters») ha un tesoro, non l'equipaggiamento di un PNG, e la Tabella 4-23 "
+                                   f"non la giudica")]
         if trovata and isinstance(trovata[1].get("mdl"), int):
             mdl = trovata[1]["mdl"]
     if mdl is None:
@@ -2028,7 +2102,7 @@ def ricchezza(p: Path) -> "tuple[list[dict], list[dict]]":
     if livello > len(tabella):
         return [], [dict(base, testo=f"livello effettivo {livello}: la tabella dei PNG si ferma al {len(tabella)}°")]
     limite = tabella[livello - 1]
-    if totale <= limite:
+    if totale <= limite or _SOPRA_LA_TABELLA.search(s.testo):
         return [], []
     return [dict(base, atteso=f"al più {limite} mo", ha=f"almeno {totale} mo",
                  testo=f"equipaggiamento per almeno {totale} mo ({elenco}) contro i {limite} mo di un PNG di "

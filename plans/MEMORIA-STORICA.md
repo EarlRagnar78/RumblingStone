@@ -1516,3 +1516,14 @@ repo scritto con altre parole.
 - **Testo:** `creature_base.dichiarata` accetta una fonte che nomina celestiale o immondo, la base fra parentesi e i nomi di `[gs.nomi_base]`; `verifica_scheda.creatura_base` accetta i dadi vita di un avanzamento che la fonte dichiara. Violazioni 31 = 31, non verificabili 372 → 369 contro main 2ade1d5c: il gufo gigante celestiale è giudicato per intero e in regola.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** la prima versione faceva dichiarare la base a ogni fonte col nome della creatura accanto a un modello, e l'Ogre Skullcrusher (Races of Faerûn, «Ogre» nel percorso del file citato) prendeva una violazione falsa sul grado di sfida: la base si dichiara solo dopo «SRD», «MM» o «Monster Manual». `_recinti_del_master` non vede un blocco senza `ca:` e `ts:`: una scheda di prova troppo corta non arriva mai a `_base_del_blocco`. Il massimo della riga «Advancement» non è nei dati.
+
+### MS-0133 · 2026-11-14 · ADR-0134: Lythiel senza l'amuleto e i tiri salvezza del monaco
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0134
+- **Temi:** schede equipaggiamento regole bestiario png
+- **Origine:** riga del 2026-11-14 «ADR-0134, regola RC-001: due decisioni del DM sulle card del 14/11» in `plans/CHANGELOG.md`
+- **Testo:** Lythiel perde l'amuleto della salute +4 (Cos 13, pf 44, Tempra +8, Concentrazione +7); il Monaco «Pugno del Destino» prende il mantello della resistenza +1 e passa a +8/+8/+8.
+- **Trovato nel repo:** `ADR-0134` → `plans/adr/ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md` · `campaign/REGOLE-CUSTOM.md`
+- **Solo qui:** sulla card di Lythiel il DM aveva tre scelte (tenere il corredo sopra il tetto come scelta del DM, amuleto +2, via l'amuleto) e ha scelto la terza contro la consigliata: l'amuleto era entrato il 16/10 solo per far tornare i pf 60 della scheda. La soglia di morale di Lythiel («sotto 20 pf») non è stata toccata: su 44 pf è quasi la metà, prima era un terzo. Sul monaco le scelte erano regola più mantello (+8/+8/+8), numeri dell'export più mantello (+8/+9/+8), niente mantello; il +8 ai Riflessi dell'export PCGen resta senza spiegazione.

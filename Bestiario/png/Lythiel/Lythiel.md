@@ -10,10 +10,10 @@ spazio: 1,5 m
 portata: 1,5 m
 ca: 19
 ca-dettaglio: contatto 14, colto alla sprovvista 15 (+5 cuoio borchiato +2, +4 Des); 21 con pelle coriacea
-pf: 60
-pf-dado: 8d8+24
-ts: Temp +10, Rifl +11, Vol +6
-attributi: For 14 Des 18 Cos 17 Int 14 Sag 16 Car 12
+pf: 44
+pf-dado: 8d8+8
+ts: Temp +8, Rifl +11, Vol +6
+attributi: For 14 Des 18 Cos 13 Int 14 Sag 16 Car 12
 velocita: 9 m a piedi
 iniziativa: +8
 attacchi:
@@ -138,12 +138,12 @@ Niente subito. Solo: *"Quando vedi Saraah, dille che ho mantenuto la promessa. L
 |:---|:---:|:---:|
 | **Forza** | 14 | +2 |
 | **Destrezza** | 18 | +4 |
-| **Costituzione** | 17 | +3 |
+| **Costituzione** | 13 | +1 |
 | **Intelligenza** | 14 | +2 |
 | **Saggezza** | 16 | +3 |
 | **Carisma** | 12 | +1 |
 
-**Punti Ferita:** 60 (8d8 + 24 Cos; Cos 17 con l'*amuleto della salute +4*, dono del Cerchio)
+**Punti Ferita:** 44 (8d8 + 8 Cos)
 **Iniziativa:** +8 (+4 Des, +4 Iniziativa Migliorata)
 **Velocità:** 9 m a piedi; 24 m volo (sul gufo)
 **Sensi:** visione crepuscolare
@@ -151,7 +151,7 @@ Niente subito. Solo: *"Quando vedi Saraah, dille che ho mantenuto la promessa. L
 **Classe Armatura:** 19 (10 base, +4 Des, +5 cuoio borchiato +2); 21 con *pelle coriacea*
 *Contatto 14 / Colto alla sprovvista 15*
 
-**Tiri Salvezza:** Tempra +10, Riflessi +11, Volontà +6 (+2 contro ammaliamento, immune al *sonno* magico; +1 a tutti dal *mantello della resistenza +1*)
+**Tiri Salvezza:** Tempra +8, Riflessi +11, Volontà +6 (+2 contro ammaliamento, immune al *sonno* magico; +1 a tutti dal *mantello della resistenza +1*)
 
 **BAB/Lotta:** +8 / +10
 
@@ -182,9 +182,9 @@ Niente subito. Solo: *"Quando vedi Saraah, dille che ho mantenuto la promessa. L
 Seguire Tracce, Tiro Rapido, Resistenza Fisica, Tiro Multiplo (bonus di classe); Critico Migliorato (arco lungo), Abilità Focalizzata (Conoscenze natura), Iniziativa Migliorata.
 
 #### Abilità chiave
-Conoscenze (Natura) +13, Sopravvivenza +14, Cavalcare (con Inathiel) +15, Osservare +14, Ascoltare +14, Concentrazione +9, Muoversi Silenziosamente +12, Nascondersi +12.
+Conoscenze (Natura) +13, Sopravvivenza +14, Cavalcare (con Inathiel) +15, Osservare +14, Ascoltare +14, Concentrazione +7, Muoversi Silenziosamente +12, Nascondersi +12.
 
-Benchmark: PF T1-1 riga 8: CA 19 (21 con *pelle coriacea*) vs 21 / pf 60 vs 100 (sotto) / atk +13 vs +15 (2 sotto) / danni con Tiro Rapido circa 22 vs 35 / TS buoni +10 e +11 vs +11. Arciera da seconda linea: colpisce quasi come il suo GS, non lo regge.
+Benchmark: PF T1-1 riga 8: CA 19 (21 con *pelle coriacea*) vs 21 / pf 44 vs 100 (sotto) / atk +13 vs +15 (2 sotto) / danni con Tiro Rapido circa 22 vs 35 / TS buoni +8 e +11 vs +11. Arciera da seconda linea: colpisce quasi come il suo GS, non lo regge.
 
 ## Esiti possibili
 
@@ -230,7 +230,9 @@ Benchmark: PF T1-1 riga 8: CA 19 (21 con *pelle coriacea*) vs 21 / pf 60 vs 100 
 
 ### Conti corretti
 
-Boost log: correzione dei conti (SRD) — GS 8 → 8 — talento libero assegnato a Iniziativa Migliorata, incantesimi da ranger scritti; pf 60 e Volontà +6 tenuti con un amuleto della salute +4 e un mantello della resistenza +1.
+Boost log: correzione dei conti (SRD) — GS 8 → 8 — talento libero assegnato a Iniziativa Migliorata, incantesimi da ranger scritti; Volontà +6 tenuta con un mantello della resistenza +1.
+
+> `[CANONE — DM 2026-11-14, RC-001]` Via l'*amuleto della salute +4* (16.000 mo: da solo portava il corredo a circa 23.800 mo contro i 9.400 del livello effettivo 8, DMG 3.5, Tabella 4-23). Costituzione **17 → 13**, pf **60 → 44** (8d8+8), Tempra **+10 → +8**, Concentrazione **+9 → +7**. Il mantello della resistenza +1 resta.
 
 <!-- storico -->
 > Valori superati, campo per campo (dalla scheda prima della revisione del 2026-10-16):
@@ -240,4 +242,6 @@ Boost log: correzione dei conti (SRD) — GS 8 → 8 — talento libero assegnat
 > - era: arco 1d8+3 ×3 → ora 19–20/×3, per il Critico Migliorato che la scheda già elencava
 > - era: «Sa lanciare 0 incantesimi»; un ranger di 8° ne lancia (2/1 con Sag 16) → ora incantesimi da ranger, e la frase parla di quelli da druida
 > - era: «Resistente (+2 Tempra contro elementi naturali)», che non è un privilegio del ranger → ora Resistenza Fisica, il talento bonus che dà; «Tiro Multiplo» e «Manyshot» elencati come due talenti, che sono lo stesso
+> Valori superati il 2026-11-14 (decisione del DM, RC-001):
+> - era: Cos 17, pf 60 (8d8+24), Tempra +10, Concentrazione +9, con l'amuleto della salute +4 → ora Cos 13, pf 44 (8d8+8), Tempra +8, Concentrazione +7, senza amuleto
 <!-- /storico -->

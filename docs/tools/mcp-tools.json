@@ -3469,7 +3469,7 @@
           },
           "state": {
             "type": "boolean",
-            "description": "(fronti) Misura anche gli orologi dei villain di campaign/state.yaml, in sola lettura. (fatti) Aggiunge le regole S1, S5, S6, S7 contro campaign/state.yaml, con regola, atteso, ha e file:riga (ADR-0125)."
+            "description": "(fronti) Misura anche gli orologi dei villain di campaign/state.yaml, in sola lettura. (fatti) Aggiunge le regole S1, S5, S6, S7 e T2 (catena di chi informa chi) contro campaign/state.yaml, con regola, atteso, ha e file:riga (ADR-0125)."
           },
           "tattiche": {
             "type": "boolean",

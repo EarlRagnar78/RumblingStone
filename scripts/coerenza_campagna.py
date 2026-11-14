@@ -46,7 +46,9 @@ Scopo
              S6  modifiche permanenti di un PG: stesso segno e nessuna
                  caratteristica che party[].hp non tocca
              S7  ogni eco `armato` è citato per ID in almeno un file d'arco
-           e conta ciò che non si può verificare («chi sa cosa» senza tempo).
+             T2  chi informa un PNG (`conoscenze[].informato_da`) sa qualcosa
+                 non dopo di lui (`dal_giorno`)
+           e conta ciò che non si può verificare («chi sa cosa» senza giorno).
            Con --tattiche aggiunge la regola che ha l'atteso nella scheda
            (ADR-0125, aggiunta del 2026-11-13, canale testing):
              S8  un incantesimo (in corsivo) o un talento (con le maiuscole,
@@ -911,7 +913,7 @@ def rileva_contraddizioni(dirs: list[Path], bestiario: bool = False,
 # S2 (waypoint), S3 (finestre delle quest) e S4 (livello del party) restano nel
 # laboratorio finché la precisione non passa. Misura, non cancello: una frase
 # d'autore sfugge quasi sempre (1 parafrasi su 18).
-REGOLE_STORIA = ("S1", "S5", "S6", "S7")
+REGOLE_STORIA = ("S1", "S5", "S6", "S7", "T2")
 STAT = {"FOR": "FOR", "DES": "DES", "COS": "COS", "INT": "INT", "SAG": "SAG", "CAR": "CAR",
         "STR": "FOR", "DEX": "DES", "CON": "COS", "WIS": "SAG", "CHA": "CAR"}
 COND_STORIA = re.compile(
@@ -958,7 +960,10 @@ def ancore_state(path: Path | None = None) -> dict:
                   for e in d.get("echi") or [] if e.get("stato") == "armato"]
     con = d.get("conoscenze") or []
     an["conoscenze"] = len(con)
-    an["conoscenze_senza_tempo"] = sum(1 for c in con if "tempo" not in c)
+    # il tempo di una conoscenza è il giorno del March Clock (`dal_giorno`, dal 2026-11-13)
+    an["conoscenze_senza_tempo"] = sum(1 for c in con if c.get("dal_giorno") is None)
+    an["chi_sa"] = [{"png_id": c.get("png_id"), "dal_giorno": c.get("dal_giorno"),
+                     "informato_da": c.get("informato_da"), "indice": i} for i, c in enumerate(con)]
     return an
 
 
@@ -1054,10 +1059,28 @@ def verifica_storia(files: list[Path], an: dict, echi_in: list[Path] | None = No
             if not re.search(r"(?<![\w-])" + re.escape(e["id"]) + r"(?!\w)", corpus):
                 v("S7 eco armato senza scena", f"{e['id']} citato in almeno un file d'arco "
                   f"(miccia: {e['miccia']})", "0 file", an.get("fonte", _rel(STATE)), 0, "")
+    # T2 catena rotta: chi informa deve sapere qualcosa non dopo di chi è informato.
+    # state.yaml non ha una chiave per il fatto, quindi il confronto è fra PNG, non
+    # fra fatti: la regola vede l'informatore che non sa nulla in tempo, non quello
+    # che sa in tempo un'altra cosa.
+    primo: dict[str, int] = {}
+    for c in an.get("chi_sa", []):
+        if c["dal_giorno"] is not None:
+            primo[c["png_id"]] = min(c["dal_giorno"], primo.get(c["png_id"], c["dal_giorno"]))
+    for c in an.get("chi_sa", []):
+        chi, g = c["informato_da"], c["dal_giorno"]
+        if not chi or g is None:
+            continue
+        if chi not in primo:
+            v("T2 catena rotta", f"{chi} sa qualcosa entro il Giorno {g}", "nessuna riga con un giorno",
+              an.get("fonte", _rel(STATE)), 0, f"conoscenze[{c['indice']}] {c['png_id']} informato_da {chi}")
+        elif primo[chi] > g:
+            v("T2 catena rotta", f"{chi} sa qualcosa entro il Giorno {g}", f"dal Giorno {primo[chi]}",
+              an.get("fonte", _rel(STATE)), 0, f"conoscenze[{c['indice']}] {c['png_id']} informato_da {chi}")
     return {
         "regole": list(REGOLE_STORIA),
         "violazioni": viol,
-        "non_verificabili": {"chi sa cosa (conoscenze senza tempo)":
+        "non_verificabili": {"chi sa cosa (conoscenze senza giorno)":
                              f"{an.get('conoscenze_senza_tempo', 0)} su {an.get('conoscenze', 0)}"}
         | ({} if ga else {"S1 arrivo dell'orda": "state.yaml senza march_clock.giorno_arrivo"}),
         "ancore": {k: an[k] for k in ("giorno_arrivo", "portatori", "modifiche")} | {
@@ -1291,7 +1314,7 @@ def main(argv: list[str] | None = None) -> int:
     b.add_argument("--tutti", action="store_true", help="legge anche i file fuori perimetro")
     b.add_argument("--state", action="store_true",
                    help="aggiunge le regole con l'àncora in campaign/state.yaml (S1 arrivo "
-                        "dell'orda, S5 portatore, S6 modifiche permanenti, S7 echi armati "
+                        "dell'orda, S5 portatore, S6 modifiche permanenti, T2 chi informa chi, S7 echi armati "
                         "senza scena): regola, atteso, ha, file:riga (ADR-0125)")
     b.add_argument("--tattiche", action="store_true",
                    help="aggiunge la regola S8: un incantesimo (in corsivo) o un talento (con le "

@@ -90,18 +90,18 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134 e ADR-0126, lotto 8 quarta parte: l'equipaggiamento standard. Scelta d… | In PR |
 | 2026-11-14 | STANDARD-SCHEDE | ADR-0091, le voci che mancavano nelle schede di ARC07-DEF-4. Dopo l'ordine (rig… | `verifica_scheda.py Bestiario 0*/`: 33 violazioni e 374 non verificabili, come su main (la verifica `ricchezza` non legge ancora «Altro equipaggiamento»); due… |
 | 2026-11-14 | RICERCA-TOOL-LGM-2026 | §3.1, la carta del cielo come handout: handout 7 di ARC-09 «La carta del cielo… | In PR |
+| 2026-11-13 | AVVENTURE-COMMUNITY | Canone di «chi sa cosa» (scelte del DM del 2026-11-13 su D1-D4 e sulla riga 69… | ✅ righe di «chi sa cosa» con un giorno: 0 su 31 → 27 su 33; T2 su main 0 violazioni; T1 resta in laboratorio (servono chiave del fatto, alias e finestre dei fi… |
 | 2026-11-13 | CHIUSURA-CATENA-EDITORIALE | ADR-0132: le copie delle immagini tengono la dichiarazione di provenienza.… | ✅ copie con master firmato che dichiarano la sorgente 0 → 28 su 28; immagini JPEG nei 20 booklet PDF 0 → 36 su 89, in 8 booklet (i cinque del Drappo al complet… |
 | 2026-11-13 | DRAPPO-DI-TARSILIA-STANDALONE-PF1E | Voce B3 della ricerca sul modulo pubblicabile: le carte da tavolo del Drappo, f… | In PR |
 | 2026-11-13 | RECUPERO-DECISIONI | L4 · I piani fermi, una casella alla volta (e D5 chiusa) | ✅ D5 decisa da Jfs voce per voce (11 risposte sulle card del 13/11) e applicata: 14 caselle, 5 lotti con milestone o thread, 1 regola, 8 attese; nel registro d… |
 | 2026-11-13 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 8 terza parte: adamantio, mithral, bastoni con le cariche.… | In PR Nella stessa PR cinque decisioni del DM del 13/11 sulle card: duergar con classi da PG a GS 2 e 8 (file rinominati), goblin combattente a GS 1/3, tre rig… |
 | 2026-11-13 | STANDARD-SCHEDE | ADR-0091, aggiornamento: le schede nell'ordine delle AP PF1e. Jfs ha confrontat… | In PR |
 | 2026-11-13 | CHIUSURA-CATENA-EDITORIALE | ADR-0131: il volume da stampa è anche PDF/A-2a (ISO 19005-2).… | ✅ veraPDF 1.28.2 sui 20 booklet: PDF/A-2a 0 → 20 conformi, controlli falliti 544 → 0 (484 trasparenza senza intento d'uscita, 60 metadati XMP); PDF/UA-1 resta… |
-| 2026-11-13 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, due decisioni del DM sulle card delle difese (2026-11-13): la RI del… | In PR |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 116 voci, l'ultima MS-0116 del 2026-11-14 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 117 voci, l'ultima MS-0117 del 2026-11-13 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

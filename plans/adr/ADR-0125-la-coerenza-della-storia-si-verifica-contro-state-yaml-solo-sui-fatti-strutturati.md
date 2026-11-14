@@ -96,6 +96,34 @@ i fatti né scritto altrove nel file (pozioni, pergamene, capacità magiche).
   Su main 32 menzioni in più e 2 falsi allarmi su 2 («un muro di forza» dei
   PG, «soffio di fuoco» del drago), nessun errore vero trovato.
 
+## Aggiunta del 2026-11-13: i giorni di «chi sa cosa» e la regola T2
+
+Il DM ha chiuso le quattro domande della proposta
+(`plans/esperimenti/grafo-eventi-2026-11-12/PROPOSTA-GIORNI-CHI-SA-COSA.md`) e
+la riga 69 di ARC07-DEF-1. Le righe di `conoscenze` in `state.yaml` hanno due
+campi facoltativi: `dal_giorno` (giorno del March Clock, 0 = prima del Day 1)
+e `informato_da` (`png_id`). `validate_state` (R10) vuole che `informato_da`
+sia nell'anagrafica. `coerenza_campagna fatti --state` ha la regola **T2**:
+chi informa un PNG sa qualcosa non dopo di lui.
+
+- **Che cosa ha deciso il DM e che cosa no.** Decisi: la lettera di Brenna
+  (Thorik comandante, consegna al Giorno 22), Norro e il titolo (dal Giorno
+  23), Brenna e Lorana (direttamente, dal 16-18), «I Rumbling Stones» in
+  DEF-1, e il Collezionista che sa dei Custodi e degli artefatti dalla sua
+  gilda, dal Giorno 22 (riga nuova). Dei 27 giorni **proposti** il DM ne ha confermati 22 su card; i cinque a
+  fiducia bassa restano senza giorno: un buco contato vale più di un giorno
+  indovinato.
+- **T1 non entra.** La regola temporale sulla prosa («un PNG mostra di sapere
+  prima del suo giorno») ha bisogno di tre cose che `state.yaml` non ha: una
+  chiave per il fatto, gli alias del PNG e la finestra di giorni di ogni file.
+  Resta in `grafo.py`, dove su main dava 1 rilievo vero su 3.
+- **T2 è debole.** Senza una chiave per il fatto il confronto è fra PNG: vede
+  l'informatore che non sa nulla in tempo, non quello che sa in tempo un'altra
+  cosa. Su main 0 violazioni; la catena che il laboratorio aveva trovato
+  (Tempestas → Brenna) è stata sciolta dal DM, non dalla regola.
+- **Non verificabili**: le righe senza `dal_giorno`, 6 su 33: i Tiri Kitor,
+  che non sanno nulla, e le cinque non confermate.
+
 **Da rivedere se**: il DM dà il tempo alle righe di §4 «chi sa cosa» (allora
 le regole diventano temporali, e Prolog o clingo vanno rimisurati come dice
 ADR-0124); oppure su 30 rilievi letti in canale testing la precisione delle

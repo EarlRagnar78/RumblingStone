@@ -143,6 +143,46 @@ class TestOggetti(unittest.TestCase):
         self.assertEqual(c["armatura"]["glamered"], {"mo": 2700})
         self.assertEqual((self.d["pergamene"]["fireball"], self.d["pergamene"]["cure light wounds"]), (375, 25))
 
+    def test_merci_dell_srd(self):
+        # «Table: Goods and Services»: sostanze, attrezzi, cavalcature, col numero fra parentesi
+        self.assertEqual(self.trova("alchemist's fire (2), smokesticks (2), everburning torch, silver unholy symbol"),
+                         [("2 × alchemist's fire", 40), ("2 × smokestick", 40), ("everburning torch", 110),
+                          ("holy symbol, silver", 25)])
+        self.assertEqual(self.trova("mwk thieves' tools, military saddle, riding dog, wooden holy symbol"),
+                         [("dog, riding", 150), ("holy symbol, wooden", 1), ("saddle, military", 20),
+                          ("thieves' tools, masterwork", 100)])
+        self.assertEqual(self.trova("fuoco dell'alchimista (2), pietra del tuono, acquasanta"),
+                         [("2 × alchemist's fire", 40), ("holy water", 25), ("thunderstone", 30)])
+        # sotto 1 mo l'oggetto è riconosciuto e vale 0; l'acqua sacrilega non è nella tabella
+        self.assertEqual(self.trova("bedroll, whetstone, unholy water"), [("bedroll", 0), ("whetstone", 0)])
+        # un nome di una parola sola dentro una voce più lunga non è la merce
+        self.assertEqual(self.trova("chiave del lucchetto, torch of the damned"), [])
+        self.assertEqual(self.d["comuni"]["merci"]["warhorse, heavy"], 400)
+
+    def test_armi_a_piu_pezzi_e_proiettili(self):
+        self.assertEqual(self.trova("javelins (7), sap, spear, quarterstaff, daggers (5)"),
+                         [("5 × dagger (arma)", 10), ("7 × javelin (arma)", 7), ("quarterstaff (arma)", 0),
+                          ("sap (arma)", 1), ("spear (arma)", 2)])
+        self.assertEqual(self.trova("mwk javelins (2)"), [("2 × javelin perfetta (arma)", 602)])
+        # proiettili: 1 mo ogni 20 frecce, 6 mo l'uno di fattura perfetta, il potenziamento vale per 50
+        self.assertEqual(self.trova("arrows (20), shuriken (20), mwk arrows (10)"),
+                         [("10 × arrows perfetti", 60), ("20 × arrows", 1), ("20 × shuriken", 4)])
+        self.assertEqual(self.trova("+1 arrows (5)"), [("5 × arrows +1", 230)])          # (2000/50 + 6 + 1/20) × 5
+        self.assertEqual(self.trova("+1 dwarf-bane arrows (2), 5 frecce infuocate +1"),
+                         [("2 × arrows +1 bane", 332), ("5 × arrows +1 flaming", 830)])
+        # senza il numero dei proiettili il prezzo non c'è
+        self.assertEqual(self.trova("frecce +1"), [])
+        self.assertEqual(self.d["comuni"]["ammo"], {"arrows": 20, "bolts": 10, "bolts, crossbow": 10,
+                                                    "bullets, sling": 10, "shuriken": 5})
+
+    def test_pozioni_bacchette_e_nomi_col_livello(self):
+        self.assertEqual(self.trova("potion of barkskin, potions of barkskin (2)"),
+                         [("2 × potion of barkskin +2 (potion)", 600), ("potion of barkskin +2 (potion)", 300)])
+        self.assertEqual(self.trova("wand of cure light wounds (20 charges)"), [("wand of cure light wounds", 300)])
+        self.assertEqual(self.trova("pearl of power (1st), necklace of fireballs I"),
+                         [("necklace of fireballs type i", 1650), ("pearl of power, 1st-level spell", 1000)])
+        self.assertEqual(self.trova("necklace of fireballs type VII"), [("necklace of fireballs type vii", 9150)])
+
     def test_oggetti_comuni_e_fattura_perfetta(self):
         self.assertEqual(self.trova("spada lunga perfetta, armatura completa, 2 pozioni"),
                          [("armatura completa (armatura)", 1500), ("spada lunga perfetta (arma)", 315)])
@@ -152,10 +192,12 @@ class TestOggetti(unittest.TestCase):
         self.assertEqual(self.trova("armatura completa +1, scudo pesante +1, ascia da guerra nanica +1"),
                          [("armatura completa +1 (armatura)", 2650), ("ascia da guerra nanica +1 (arma)", 2330),
                           ("scudo pesante +1 (armatura)", 1157)])
-        # un nome corto da solo può essere un'altra cosa; chi costa meno di 1 mo non si conta
-        self.assertEqual(self.trova("pelle di worg, rete da pesca, randello, bastone ferrato"), [])
+        # un nome corto dentro una voce più lunga può essere un'altra cosa («pelle di worg»); l'arma
+        # che è tutta la voce si riconosce anche a 0 mo, e la rete da pesca è una merce dell'SRD
+        self.assertEqual(self.trova("pelle di worg, rete da pesca, randello, bastone ferrato"),
+                         [("bastone ferrato (arma)", 0), ("fishing net, 25 sq. ft.", 4), ("randello (arma)", 0)])
         self.assertEqual((self.d["perfetta"], self.d["comuni"]["scudi"]),
-                         ({"arma": 300, "armatura": 150}, {"1": 3, "2": 7, "4": 30}))
+                         ({"arma": 300, "armatura": 150, "proiettile": 6}, {"1": 3, "2": 7, "4": 30}))
 
     def test_senza_bonus_non_ha_prezzo(self):
         self.assertEqual(self.trova("mantello del carisma +3"), [])

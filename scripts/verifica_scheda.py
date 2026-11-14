@@ -1961,7 +1961,7 @@ def _oggetti_col_prezzo(riga: str, d: dict, sistema: str) -> "list[tuple[str, in
     comuni, perfetta = d.get("comuni") or {}, d.get("perfetta") or {}
     inglesi = {(v["ca"], v["des_max"]): k
                for k, v in S.dati(sistema, "creature.costruzione").get("movimento", {}).get("armature", {}).items()}
-    prezzo_arma = {n: comuni.get("armi", {}).get(a["nome"].lower(), 0)
+    prezzo_arma = {n: comuni.get("armi", {}).get(re.sub(r"\s*\(\d+\)$", "", a["nome"].lower()), 0)
                    for a in S.dati(sistema, "creature.armi").get("armi", []) for n in a["nomi"]}
 
     def base(nome: str, che: str) -> int:
@@ -1985,6 +1985,8 @@ def _oggetti_col_prezzo(riga: str, d: dict, sistema: str) -> "list[tuple[str, in
     for nomi, tabella, che in ((list(armature) + list(scudi), d["potenziamento"]["armatura"], "armatura"),
                                (armi, d["potenziamento"]["arma"], "arma")):
         for nome in sorted(set(nomi), key=len, reverse=True):
+            if che == "arma" and any(re.fullmatch(s, nome, re.I) for s in _AMMO.values()):
+                continue                                # proiettili: il potenziamento vale per 50, più sotto
             # «spada lunga infuocata +1 …» oppure, all'inglese, «+1 flaming longsword»
             for m in re.finditer(rf"(?<!\w){re.escape(nome)}(?!\w)((?:\s+[^\W\d]+(?:['’][^\W\d]+)?){{0,3}})\s*\+(\d+)(?!\d)([^,;|()]*)"
                                  rf"|(?<![\w+])\+(\d+)\s+((?:[^\W\d]+\s+){{0,3}}?){re.escape(nome)}(?!\w)", riga, re.I):
@@ -2042,13 +2044,15 @@ def _oggetti_col_prezzo(riga: str, d: dict, sistema: str) -> "list[tuple[str, in
                                       (r"pergamen[ae]|scrolls?", "", d.get("pergamene", {})),
                                       (r"bacchett[ae]|wands?", "wand of ", d["prezzi"])):
         for m in re.finditer(rf"(?<!\w){_QUANTI}(?:{parole})\s+{_PREP}[*_]*([^*_,;|()×]+?)[*_]*\s*"
-                             rf"(?:[×x]\s*(\d+)\s*)?(?:\((\d+)\s+cariche\)|\(|[,;|.]|$)", riga, re.I):
+                             rf"(?:[×x]\s*(\d+)\s*)?(?:\((\d+)\s+(?:cariche|charges)\)|\((\d+)\)|\(|[,;|.]|$)", riga, re.I):
             import lessico_regole as LR
             detto = m.group(2).strip()
             en = incantesimi.get(LR.norma(detto), detto).lower().replace("’", "'")
             # più voci per lo stesso incantesimo (livello dell'incantatore diverso): vale la meno cara
-            chiavi = sorted((k for k in tabella if k == prefisso + en or k.startswith(f"{prefisso}{en} (")),
-                            key=lambda k: tabella[k])
+            # e più voci per la stessa pozione con la forza nel nome («barkskin +2», «protection from
+            # arrows 10/magic»): anche lì la meno cara
+            chiavi = sorted((k for k in tabella if k == prefisso + en
+                             or re.match(rf"{re.escape(prefisso + en)} [(+\d]", k)), key=lambda k: tabella[k])
             if not chiavi or not libero(*m.span()):
                 continue
             if prefisso == "wand of ":
@@ -2056,7 +2060,7 @@ def _oggetti_col_prezzo(riga: str, d: dict, sistema: str) -> "list[tuple[str, in
                     continue
                 mo, n = tabella[chiavi[0]] * min(int(m.group(4)), 50) // 50, 1
             else:
-                mo, n = tabella[chiavi[0]], quanti(m.group(1)) * int(m.group(3) or 1)
+                mo, n = tabella[chiavi[0]], quanti(m.group(1)) * int(m.group(3) or m.group(5) or 1)
             presi.append(m.span())
             trovati.append((f"{n} × {chiavi[0]}" if n > 1 else chiavi[0], mo * n))
     # bastoni: solo con le cariche scritte, in proporzione alle 50 di un bastone nuovo
@@ -2079,8 +2083,8 @@ def _oggetti_col_prezzo(riga: str, d: dict, sistema: str) -> "list[tuple[str, in
     for nomi, che in ((list(armature) + list(scudi), "armatura"), (armi, "arma")):
         for nome in sorted(set(nomi), key=len, reverse=True):
             mo = base(nome, che)
-            if mo < 1:
-                continue
+            if mo < 1 or any(re.fullmatch(s, nome, re.I) for s in _AMMO.values()):
+                continue                                # i proiettili si contano più sotto, col loro numero
             for m in re.finditer(rf"(?<!\w)(?:({_PERFETTA})\s+)?{re.escape(nome)}(?!\w)"
                                  rf"(?:\s+(?:[^\W\d]+\s+){{0,2}}?(?:di\s+fattura\s+)?({_PERFETTA})(?!\w))?", riga, re.I):
                 fine = bool(m.group(1) or m.group(2))
@@ -2088,7 +2092,108 @@ def _oggetti_col_prezzo(riga: str, d: dict, sistema: str) -> "list[tuple[str, in
                     continue
                 presi.append(m.span())
                 trovati.append((f"{nome}{' perfetta' if fine else ''} ({che})", mo + (perfetta.get(che, 0) if fine else 0)))
+    # proiettili magici: il prezzo del potenziamento è per 50 (SRD, nota a «Table: Weapons»), più la
+    # fattura perfetta di ognuno e il prezzo comune; «+1 frost bolts (6)», «5 frecce infuocate +1»
+    ammo = comuni.get("ammo") or {}
+    for chiave, s in _AMMO.items():
+        per = ammo.get(chiave)
+        if not per:
+            continue
+        for m in re.finditer(rf"(?<!\w){_QUANTI}(?:\+(\d)\s+((?:[\w'’-]+\s+){{0,2}}?)(?:{s})|(?:{s})((?:\s+[^\W\d]+){{0,2}}?)\s*\+(\d))"
+                             rf"(?!\w)\s*(?:\((\d+)\))?", riga, re.I):
+            n, tratto = int(m.group(2) or m.group(5)), (m.group(3) or m.group(4) or "")
+            quante = int(m.group(6)) if m.group(6) else quanti(m.group(1)) if m.group(1) else 0
+            if not quante or not libero(*m.span()):
+                continue                                # senza il numero dei proiettili il prezzo non c'è
+            # «dwarf-bane»: la capacità è bane, il nemico scelto non cambia il prezzo
+            bonus, mo, dette, resto = 0, 0, [], re.sub(r"[\w'’]+-bane\b", "bane", tratto, flags=re.I)
+            while True:
+                resto = re.sub(r"^\s*(?:e\s+|and\s+)?", "", resto)
+                c = next(((x.match(resto), v, en) for x, v, en in capacita.get("arma", ()) if x.match(resto)), None)
+                if c is None:
+                    break
+                resto, bonus, mo = resto[c[0].end():], bonus + c[1].get("bonus", 0), mo + c[1].get("mo", 0)
+                dette.append(c[2])
+            if resto.strip() or n + bonus > len(d["potenziamento"]["arma"]):
+                continue                                # una parola che il conto non conosce: non si prezza
+            presi.append(m.span())
+            l_uno = (d["potenziamento"]["arma"][n + bonus - 1] + mo) / 50 + perfetta.get("proiettile", 0) \
+                + comuni["armi"].get(chiave, 0) / per
+            trovati.append((f"{quante} × {chiave} +{n}{''.join(' ' + x for x in dette)}", int(l_uno * quante)))
+
+    def voce_intera(schema: str):
+        """Lo schema quando è tutta la voce dell'elenco (fra virgole), col numero davanti o fra parentesi."""
+        return re.finditer(rf"(?:^|[,;:])\s*{_QUANTI}(?:({_PERFETTA})\s+)?{schema}(?:\s+({_PERFETTA}))?"
+                           rf"\s*(?:\((\d+)\)|[×x]\s*(\d+))?\s*(?=$|[,;.])", riga, re.I)
+
+    # proiettili comuni che sono tutta la voce: «arrows (20)», «10 quadrelli perfetti»
+    for chiave, s in _AMMO.items():
+        for m in voce_intera(rf"(?:{s})") if ammo.get(chiave) else ():
+            if not libero(*m.span()):
+                continue
+            n = int(m.group(4) or m.group(5) or 0) or quanti(m.group(1))
+            fine = bool(m.group(2) or m.group(3))
+            uno = comuni["armi"].get(chiave, 0) / ammo[chiave] + (perfetta.get("proiettile", 0) if fine else 0)
+            presi.append(m.span())
+            trovati.append((f"{n} × {chiave}{' perfetti' if fine else ''}", int(uno * n)))
+    # un'arma comune che è tutta la voce: anche col nome corto, al plurale, a più pezzi, e a 0 mo
+    for nome in sorted(set(armi), key=len, reverse=True):
+        if nome not in prezzo_arma or nome in scudi or nome in armature:
+            continue
+        for m in voce_intera(rf"{re.escape(nome)}(?:e?s)?"):
+            if not libero(*m.span()):
+                continue
+            n = int(m.group(4) or m.group(5) or 0) or quanti(m.group(1))
+            fine = bool(m.group(2) or m.group(3))
+            uno = prezzo_arma[nome] + (perfetta.get("arma", 0) if fine else 0)
+            presi.append(m.span())
+            trovati.append((f"{f'{n} × ' if n > 1 else ''}{nome}{' perfetta' if fine else ''} (arma)", int(uno * n)))
+    # le merci dell'SRD (attrezzatura, sostanze alchemiche, attrezzi, cavalcature): un nome di più
+    # parole vale dovunque nella riga, uno di una parola sola quando è tutta la voce
+    for schema, chiave, sciolto in _merci_del_lessico(sistema):
+        for m in (re.finditer(rf"(?<!\w){_QUANTI}(){schema}()\s*(?:\((\d+)\)|[×x]\s*(\d+))?", riga, re.I)
+                  if sciolto else voce_intera(schema)):
+            if not libero(*m.span()):
+                continue
+            n = int(m.group(4) or m.group(5) or 0) or quanti(m.group(1))
+            presi.append(m.span())
+            trovati.append((f"{f'{n} × ' if n > 1 else ''}{chiave}", comuni["merci"][chiave] * n))
     return trovati
+
+
+#: come una scheda scrive i proiettili di `[oggetti.comuni.ammo]` (la chiave è quella di «Table: Weapons»)
+_AMMO = {"arrows": r"arrows?|frecc(?:ia|e)", "bolts": r"(?:crossbow\s+)?bolts?|quadrell[oi]",
+         "bullets, sling": r"sling\s+bullets?|proiettil[ei]\s+da\s+fionda", "shuriken": r"shuriken"}
+
+
+@lru_cache(maxsize=None)
+def _merci_del_lessico(sistema: str) -> "tuple[tuple[str, str, bool], ...]":
+    """(schema, chiave del prezzo, vale dovunque) delle merci di `[oggetti.comuni.merci]`: il nome
+    dell'SRD nei due ordini («holy symbol, wooden», «wooden holy symbol»), al plurale, con la
+    fattura perfetta scritta in tre modi, e i nomi italiani del lessico (`equipaggiamento`)."""
+    import lessico_regole as LR
+    from dmcore import sistemi as S
+    merci = (S.dati(sistema, "creature.costruzione").get("oggetti", {}).get("comuni") or {}).get("merci") or {}
+    italiani: dict[str, list[str]] = {}
+    for v in LR.tabella_35():
+        if v["tipo"] == "equipaggiamento":
+            en = re.sub(r"\s*\([^)]*\)", "", v["srd35"]).lower().replace("’", "'").strip()
+            italiani.setdefault(en, []).extend(
+                re.sub(r"\s*\([^)]*\)", "", n).strip() for n in [v["it"]] + (v.get("varianti") or "").split("|") if n)
+    out = []
+    for chiave in merci:
+        testa, _, coda = chiave.partition(", ")
+        forme = {chiave}
+        if coda and " or " not in chiave and not re.search(r"\d", chiave):
+            forme |= {f"{coda} {testa}", f"{testa} {coda}"}
+        forme |= set(italiani.get(chiave, []))
+        for f in forme:
+            s = re.escape(f).replace("\\ ", r"\s+").replace("'", "['’]")
+            s = re.sub(r"masterwork", f"(?:{_PERFETTA})", s)
+            # SRD, «Holy Symbol»: il simbolo sacrilego è come quello sacro
+            s = (s.replace("holy", "(?:un)?holy") if "symbol" in f else s) + r"(?:e?s)?"
+            out.append((s + r"(?!\w)", chiave, " " in f.strip() and len(f) >= 8))
+    return tuple(sorted(out, key=lambda x: -len(x[0])))
 
 
 _MODELLO = re.compile(r"half[- ]|mezzo?[- ]?(?:drag|immond|celest)|vampir|lich\b|licantrop|lycanthrop|\bwere|mannar|"

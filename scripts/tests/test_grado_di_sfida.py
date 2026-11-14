@@ -190,8 +190,8 @@ class Modelli(unittest.TestCase):
 class Bestiario(unittest.TestCase):
     #: scarti veri in attesa della decisione del DM (card del thread delle regole): oggi nessuno.
     #: Arbitrax e Tyrgarun sono chiusi dalle risposte del DM del 2026-11-14 (RC-002; molto vecchio, GS 19)
-    #: Skeletal Dire Lion: 16 dadi vita da scheletro = GS 7, la scheda scrive 6 (card al DM del 2026-11-14)
-    IN_ATTESA: "set[str]" = {"skeletal-dire-lion-cr6.md"}
+    #: Skeletal Dire Lion chiuso dalla risposta del DM del 2026-11-14 (16 dadi vita, GS 7)
+    IN_ATTESA: "set[str]" = set()
 
     def test_il_bestiario_non_ha_altri_scarti(self):
         trovate, attese = [], set()

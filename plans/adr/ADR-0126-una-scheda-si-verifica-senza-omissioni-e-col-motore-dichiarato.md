@@ -1355,3 +1355,11 @@ Se la taglia non è quella della base il grado atteso è un intervallo: +1 se è
 **Misura** (contro main 2ade1d5c). `verifica_scheda.py Bestiario 0*/`: violazioni 31 = 31, non verificabili 372 → 369. Le tre voci tolte sono del gufo gigante celestiale, ora giudicato per intero e in regola (3 della base, +1 per quattro dadi vita in più, +2 da celestiale con 8 dadi vita = 6). Nessun'altra scheda cambia giudizio.
 
 **Scartato in corsa.** Far dichiarare la base a qualsiasi fonte che ne contenga il nome accanto a un modello: l'Ogre Skullcrusher (Races of Faerûn, col nome «Ogre» nel percorso del file) diventava un ogre dell'SRD avanzato e prendeva una violazione falsa sul grado di sfida.
+
+### Lotto 5 — risposta del DM sullo Skeletal Dire Lion (2026-11-14)
+
+**Decisione del DM** (card del thread delle regole, 2026-11-14): i 16 dadi vita restano e il grado di sfida è 7, il valore che l'SRD dà a uno scheletro da 16 dadi vita. La scheda toglie «2x HD» (il modello scheletro non raddoppia i dadi vita) e scrive che il leone crudele ha 16 dadi vita di suo.
+
+**Conseguenze.** Il file diventa `Bestiario/mostri/skeletal-dire-lion-cr7.md`, perché `extract_statblocks --check` vuole il grado nel nome; aggiornati i rimandi vivi (composizione delle armate, incontri del viaggio verso Cannath Vale, catalogo storico, baseline dei punteggi), rigenerati catalogo e impronta. `IN_ATTESA` di `test_grado_di_sfida.py` torna vuoto. Misura contro main e88959fd: violazioni 31 → 30, non verificabili 368 = 368.
+
+**Non toccato, resta al DM.** Il livello d'incontro delle due righe della tabella del viaggio che usano questi leoni (10 e 12) e i PX. L'armatura naturale +4 della scheda: lo scheletro Grande dell'SRD ha +2, e il controllo dell'armatura naturale dei modelli non c'è ancora.

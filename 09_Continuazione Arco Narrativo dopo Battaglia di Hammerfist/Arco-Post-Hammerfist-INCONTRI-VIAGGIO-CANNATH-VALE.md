@@ -142,7 +142,7 @@
 |---|---|---|---|
 | 01-15 | 🕊 **Profughi allo stremo** al margine della brughiera (eco `HOOKS-Ghostlord-Refugees`). | — | Non-combat |
 | 16-28 | 🕊 **Leone spettrale solitario** che *osserva* — messaggero del Ghostlord, non ostile se non provocato. `.../ghost-lion-spettrale-cr8.md`. | —/8 | Misto |
-| 29-45 | **Sciame di non-morti minori** dalla fabbrica. `.../skeletal-dire-lion-cr6.md` + scheletri/zombie SRD. | 10 | Combat |
+| 29-45 | **Sciame di non-morti minori** dalla fabbrica. `.../skeletal-dire-lion-cr7.md` + scheletri/zombie SRD. | 10 | Combat |
 | 46-62 | **Deathlock** (guardiano non-morto). `.../deathlock-cr8.md`. | 10 | Combat |
 | 63-78 | **Bone Naga** che pattuglia un sentiero. `.../bone-naga-cr10.md`. | 11 | Combat |
 | 79-92 | **Campo hobgoblin abbandonato** (assorbito dai non-morti) — loot + indizi (→ 🕊 se esplorato con cautela). | 10 | Misto |
@@ -153,7 +153,7 @@
 | d% | Incontro | EL | Tipo |
 |---|---|---|---|
 | 01-14 | 🕊 **Emissari del Ghostlord** (leoni spettrali) con un messaggio/offerta (eco ramo alleanza). | — | Non-combat |
-| 15-30 | **Orda di non-morti traboccante** (la fabbrica è al massimo). `.../skeletal-dire-lion-cr6.md` ×2 + `.../deathlock-cr8.md`. | 12 | Combat |
+| 15-30 | **Orda di non-morti traboccante** (la fabbrica è al massimo). `.../skeletal-dire-lion-cr7.md` ×2 + `.../deathlock-cr8.md`. | 12 | Combat |
 | 31-47 | **Bone Naga** + scheletri élite. `.../bone-naga-cr10.md` + non-morti SRD. | 12 | Combat |
 | 48-64 | **Aberrazione fungina alfa** (eco MB-2/4, spore aggressive). | 12 | Combat |
 | 65-80 | **Distaccamento della Mano Rossa** che raccoglie non-morti come truppa. `.../emissario-red-hand-cr12.md` + non-morti, oppure `.../spezzamente-kulkor-zhul-cr12.md` + non-morti. | 13 | Combat |

@@ -89,7 +89,7 @@
 
 - `bone-naga-cr10.md`
 - `deathlock-cr8.md`
-- `skeletal-dire-lion-cr6.md`
+- `skeletal-dire-lion-cr7.md`
 
 ### Alleati difensori
 

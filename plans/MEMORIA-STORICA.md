@@ -1527,3 +1527,14 @@ repo scritto con altre parole.
 - **Testo:** Lythiel perde l'amuleto della salute +4 (Cos 13, pf 44, Tempra +8, Concentrazione +7); il Monaco «Pugno del Destino» prende il mantello della resistenza +1 e passa a +8/+8/+8.
 - **Trovato nel repo:** `ADR-0134` → `plans/adr/ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md` · `campaign/REGOLE-CUSTOM.md`
 - **Solo qui:** sulla card di Lythiel il DM aveva tre scelte (tenere il corredo sopra il tetto come scelta del DM, amuleto +2, via l'amuleto) e ha scelto la terza contro la consigliata: l'amuleto era entrato il 16/10 solo per far tornare i pf 60 della scheda. La soglia di morale di Lythiel («sotto 20 pf») non è stata toccata: su 44 pf è quasi la metà, prima era un terzo. Sul monaco le scelte erano regola più mantello (+8/+8/+8), numeri dell'export più mantello (+8/+9/+8), niente mantello; il +8 ai Riflessi dell'export PCGen resta senza spiegazione.
+
+### MS-0134 · 2026-11-14 · Regole: lo Skeletal Dire Lion ha 16 dadi vita e grado di sfida 7
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole grado-di-sfida scheletro skeletal-dire-lion ghostlord decisione-dm
+- **Origine:** riga del 2026-11-14 «risposta del DM sulla card dello Skeletal Dire Lion» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha scelto sulla card del 2026-11-14 di tenere i 16 dadi vita e di portare il grado di sfida a 7. La scheda toglie «2x HD», il file diventa `skeletal-dire-lion-cr7.md`, `IN_ATTESA` del grado di sfida torna vuoto. Violazioni 31 → 30 contro main e88959fd.
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** nel tipo non si può scrivere «avanzato» né ripetere «scheletro» accanto a «skeleton»: `gs.modello_noto` vede un avanzamento o un secondo modello e il grado torna non verificabile. Restano al DM il livello d'incontro delle due righe del viaggio verso Cannath Vale che usano questi leoni e l'armatura naturale +4 (lo scheletro Grande dell'SRD ha +2).

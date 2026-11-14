@@ -4300,7 +4300,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "trascritte",
-    "senza_note": 1470,
+    "senza_note": 1640,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/Duergar_figther_ponte/Duergar_Chierico_3liv_4cr.html",
@@ -7951,18 +7951,18 @@
       0
      ],
      "Rifl": [
-      5,
-      5,
+      6,
+      6,
       0
      ],
      "Temp": [
-      6,
-      6,
+      7,
+      7,
       0
      ],
      "Vol": [
-      1,
-      1,
+      2,
+      2,
       0
      ],
      "iniziativa": [
@@ -8046,7 +8046,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "trascritte",
-    "senza_note": 1769,
+    "senza_note": 1799,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/goblin worg raider cr5.htm",
@@ -8063,20 +8063,24 @@
      ]
     ],
     "taglia": 1,
-    "talenti": {},
+    "talenti": {
+     "Rifl": 1,
+     "Temp": 1,
+     "Vol": 1
+    },
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
       2,
-      "ricavata da Temp +6 (base +4)"
+      "ricavata da Temp +7 (base +5)"
      ],
      "Des": [
       4,
-      "ricavata da Rifl +5 (base +1)"
+      "ricavata da Rifl +6 (base +2)"
      ],
      "Sag": [
       0,
-      "ricavata da Vol +1 (base +1)"
+      "ricavata da Vol +2 (base +2)"
      ]
     },
     "vincoli": {
@@ -8143,9 +8147,9 @@
     "provenienza": "trascritte",
     "tipo": "Small humanoid (goblinoid), Fighter 5, LE",
     "ts": [
+     7,
      6,
-     5,
-     1
+     2
     ]
    }
   },
@@ -9295,18 +9299,18 @@
       0
      ],
      "Rifl": [
-      5,
-      5,
+      6,
+      6,
       0
      ],
      "Temp": [
-      7,
-      7,
+      8,
+      8,
       0
      ],
      "Vol": [
-      3,
-      3,
+      4,
+      4,
       0
      ],
      "attacco": [
@@ -9395,7 +9399,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "trascritte",
-    "senza_note": 1737,
+    "senza_note": 1767,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/regolari/hobgoblin-portalame cr7.htm",
@@ -9412,20 +9416,24 @@
      ]
     ],
     "taglia": 0,
-    "talenti": {},
+    "talenti": {
+     "Rifl": 1,
+     "Temp": 1,
+     "Vol": 1
+    },
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
       2,
-      "ricavata da Temp +7 (base +5)"
+      "ricavata da Temp +8 (base +6)"
      ],
      "Des": [
       3,
-      "ricavata da Rifl +5 (base +2)"
+      "ricavata da Rifl +6 (base +3)"
      ],
      "Sag": [
       1,
-      "ricavata da Vol +3 (base +2)"
+      "ricavata da Vol +4 (base +3)"
      ]
     },
     "vincoli": {
@@ -9492,9 +9500,9 @@
     "provenienza": "trascritte",
     "tipo": "Medium humanoid (goblinoid), Fighter 7, LE",
     "ts": [
-     7,
-     5,
-     3
+     8,
+     6,
+     4
     ]
    }
   },
@@ -14046,7 +14054,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "copiate",
-    "senza_note": 933,
+    "senza_note": 1156,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/orc_regular.pcg",
@@ -17359,7 +17367,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "trascritte",
-    "senza_note": 1724,
+    "senza_note": 2076,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/Underdark cleric cr5 Ainin.htm",

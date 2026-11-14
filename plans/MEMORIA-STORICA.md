@@ -1371,7 +1371,7 @@ repo scritto con altre parole.
 - **ADR:** ADR-0126
 - **Temi:** regole ricchezza equipaggiamento master verifica-scheda
 - **Origine:** riga del 2026-11-14 «lotto 8 quinta parte» in `plans/CHANGELOG.md`
-- **Testo:** `ricchezza` giudica scheda per scheda anche i file con più schede. Prima usciva senza dire niente, e ARC07-DEF-4 non era controllato contro la Tabella 4-23. Una violazione vera: Durin Rocciadura ha 6.137 mo di equipaggiamento contro i 5.600 di un PNG di 6°. La scheda aspetta il DM.
+- **Testo:** `ricchezza` giudica scheda per scheda anche i file con più schede. Prima usciva senza dire niente, e ARC07-DEF-4 non era controllato contro la Tabella 4-23. Una violazione vera: Durin Rocciadura ha 6.137 mo di equipaggiamento contro i 5.600 di un PNG di 6°. Il DM ha scelto sulla card del 14/11 lo scudo pesante perfetto al posto del +1: CA 22 → 21, valore sotto il tetto, tre booklet rigenerati.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** nella #425 era stato scritto che le schede allungate di ARC07-DEF-4 non davano violazioni nuove: era vero solo perché non erano lette. L'ha notato il thread del volume, ed è stato detto a Jfs. Una misura che tace va controllata: tace perché è in regola o perché non guarda?
 

@@ -342,7 +342,7 @@ class TestPiuSchedeNelFile(unittest.TestCase):
 
 class Archi(unittest.TestCase):
     #: schede dei master d'arco sopra la Tabella 4-23, con una decisione aperta del DM (titolo della scheda)
-    IN_ATTESA: "set[str]" = {"A.3 · Durin Rocciadura (Scena 2)"}
+    IN_ATTESA: "set[str]" = set()
 
     def test_gli_archi_non_hanno_altri_scarti(self):
         trovate, attese = [], set()

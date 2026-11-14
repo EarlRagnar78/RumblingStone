@@ -447,7 +447,26 @@
     // la pagina del primo e dell'ultimo segnaposto dice se il riquadro si spezza.
     #metadata(to-string(nome)) <sb-inizio>
     #testa
-    #resto(tattiche)
+    // ADR-0133: in una pagina a una colonna la scheda sarebbe larga tutta la
+    // pagina, con righe da 130 caratteri e più. Burnt Offerings e Red Hand of
+    // Doom stampano la scheda sempre in una colonna di due: qui il corpo si
+    // divide in due colonne pari dentro il riquadro. Sotto i 6 cm resta
+    // intero: due colonne di tre righe si leggono peggio di una. Il blocco è
+    // alto metà del corpo più 16pt di gioco, perché le fasce non si dividono
+    // mai esattamente a metà; se il riquadro si spezza a pagina girata, le
+    // due colonne riprendono nella pagina dopo.
+    #context {
+      if page.columns == 1 {
+        layout(size => {
+          let canale = 16pt
+          let meta = (size.width - canale) / 2
+          let alto = measure(block(width: meta, resto(tattiche))).height
+          if alto < 6cm { resto(tattiche) } else {
+            block(width: 100%, height: alto / 2 + 16pt, columns(2, gutter: canale, resto(tattiche)))
+          }
+        })
+      } else { resto(tattiche) }
+    }
     #metadata(to-string(nome)) <sb-fine>
   ]
   // Il riquadro più alto di una colonna, in appendice: si spezza per forza, e

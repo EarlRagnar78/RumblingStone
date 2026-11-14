@@ -1331,7 +1331,18 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `09_…/Immagini-Handout/carta-del-cielo/PROVENIENZA.txt` · `09_…/Immagini-Handout/carta-del-cielo/carta-del-cielo-zalkatar.ssc` · handout 7 in `Arco-Post-Hammerfist-HANDOUTS.md`
 - **Solo qui:** la voce è nata MS-0114 ed è diventata MS-0115 al riallineo dopo la #425. SkyCultureMaker, il plugin nominato nel §3.1, c'è nella 26.2 ma è solo a finestre: non ha comandi da script, quindi `index.json` è scritto a mano e il plugin non migliora alcuna misura. La 26.2 rifiuta i `.fab` («Failed to find index.json») e non ha più `core.setSkyLanguage`. Senza schermo restava appesa a `quitStellarium` finché in `config.ini` non ci sono il luogo fisso, `automatic_updates_enabled=false` e `flag_search_online=false`. L'AppImage legge `/usr/share/stellarium` se c'è una 23.4 installata da apt. ArchaeoLines accende di suo tutte le sue linee: vanno spente una per una; l'etichetta del parallelo non compare nell'immagine. Fra 23.4 e 26.2 senza segno cambiano circa 25.000 pixel di disegno, senza differenze che si vedano.
 
-### MS-0116 · 2026-11-14 · Generatore, lotto J: i sette modelli semplici di PF1e
+### MS-0116 · 2026-11-14 · ADR-0133: la scheda a tutta pagina va su due colonne
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0133
+- **Temi:** schede stampa booklet typst
+- **Origine:** riga del 2026-11-14 «ADR-0133, la scheda a tutta pagina va su due colonne dentro il riquadro» in `plans/CHANGELOG.md`
+- **Testo:** terza PR dello standard delle schede. Nelle pagine a una colonna il corpo della scheda esce su due colonne pari dentro il riquadro, come le colonne dei manuali PF1e e 3.5. Scelta del DM sulla card del 2026-11-13, in prova fino al 2026-11-28.
+- **Trovato nel repo:** `ADR-0133` → `plans/adr/ADR-0133-la-scheda-a-tutta-pagina-va-su-due-colonne.md` · `scripts/tests/test_scheda_due_colonne.py`
+- **Solo qui:** in typst un blocco di altezza fissa con dentro `columns(2)` si spezza da sé a pagina girata e le colonne riprendono: provato con una scheda di 4000 parole, nessuna parola persa. L'altezza del blocco è metà del corpo misurato a mezza larghezza più 16 pt, perché le fasce non si dividono mai a metà esatta. La misura delle righe lunghe non è nel repo: conta le righe dentro i riquadri col fondo del tema larghi più di metà pagina che contengono la fascia DIFESA; un primo conto per corpo del carattere prendeva anche piedi e colophon e dava 80 righe invece di 11. Durante la misura ho usato `git stash` per provare che il test fallisce senza la modifica mentre `misura_stampa` girava: ho fermato e rifatto la misura da capo. Il worktree di confronto aveva ancora la modifica della prova: fermato e rifatto anche quello. Il DM ha visto la prova con la soglia a 6 cm, e la soglia è rimasta quella.
+
+### MS-0117 · 2026-11-14 · Generatore, lotto J: i sette modelli semplici di PF1e
 
 - **Data:** 2026-11-14
 - **PR:** —
@@ -1342,7 +1353,7 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0034` → `plans/adr/ADR-0034-generare-dalle-tabelle.md`
 - **Solo qui:** il vecchio conto del modello Avanzato lasciava ferma l'iniziativa e scriveva «+2 Advanced» nel dettaglio della CA invece di alzare Destrezza e armatura naturale; l'ha trovato il test del conto esatto. `pf-dado` registra i dadi e i bonus che non vengono dalla Costituzione, quindi un modello non lo tocca: cambia il bonus nella riga del tipo. I dadi di danno seguono le tabelle delle armi del Core Rulebook; da 2d6 in su le tabelle delle armi e degli attacchi naturali divergono, e un dado che la tabella non ha resta com'è e viene dichiarato. Per disfare un modello serve la traccia di ciò che ha fatto: il passo dei dadi all'ingiù non è l'inverso di quello all'insù.
 
-### MS-0117 · 2026-11-14 · Regole, lotto 7 quinta parte: linguaggi di hobgoblin, orco, drow, duergar
+### MS-0118 · 2026-11-14 · Regole, lotto 7 quinta parte: linguaggi di hobgoblin, orco, drow, duergar
 
 - **Data:** 2026-11-14
 - **PR:** —
@@ -1353,7 +1364,7 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** le razze coi dadi vita razziali (bugbear, gnoll, ogre, troll) restano fuori apposta: la riga dell'SRD è per il personaggio giocante. Un test vecchio dava il drow come «razza fuori dalla tabella» ed è stato girato.
 
-### MS-0118 · 2026-11-14 · Regole, lotto 6 terza parte: razze dei mostri, taglia e velocità nelle abilità
+### MS-0119 · 2026-11-14 · Regole, lotto 6 terza parte: razze dei mostri, taglia e velocità nelle abilità
 
 - **Data:** 2026-11-14
 - **PR:** —
@@ -1364,7 +1375,7 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** la prima estrazione dava «hide = 1» ai Piccoli, perché l'espressione prendeva il «+1» dell'attacco nella stessa frase; l'ha mostrato il diff del file dati. Le schede di prova dei talenti erano un orco barbaro tarato sul margine fisso: ora sono uno gnoll.
 
-### MS-0119 · 2026-11-14 · Regole, lotto 7 sesta parte: velocità di hobgoblin, orco, drow, duergar
+### MS-0120 · 2026-11-14 · Regole, lotto 7 sesta parte: velocità di hobgoblin, orco, drow, duergar
 
 - **Data:** 2026-11-14
 - **PR:** —
@@ -1375,7 +1386,7 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** due schede di hobgoblin regolari scrivono 6 m senza scomporre la CA: la prima versione le dava per violazioni, ed erano solo armature non nominate. Da lì la regola del dubbio. La correzione diretta del nome dell'armatura del bladebearer è stata fermata: una scheda si cambia solo con la risposta del DM, anche quando è un errore di trascrizione.
 
-### MS-0120 · 2026-11-14 · Regole, lotto 8 quinta parte: la ricchezza di un file con più schede
+### MS-0121 · 2026-11-14 · Regole, lotto 8 quinta parte: la ricchezza di un file con più schede
 
 - **Data:** 2026-11-14
 - **PR:** —
@@ -1386,7 +1397,7 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** nella #425 era stato scritto che le schede allungate di ARC07-DEF-4 non davano violazioni nuove: era vero solo perché non erano lette. L'ha notato il thread del volume, ed è stato detto a Jfs. Una misura che tace va controllata: tace perché è in regola o perché non guarda?
 
-### MS-0121 · 2026-11-14 · Regole, lotti 6 e 7: velocità, linguaggi e abilità di un file con più schede
+### MS-0122 · 2026-11-14 · Regole, lotti 6 e 7: velocità, linguaggi e abilità di un file con più schede
 
 - **Data:** 2026-11-14
 - **PR:** —

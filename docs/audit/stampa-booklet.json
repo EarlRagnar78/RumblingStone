@@ -43,7 +43,7 @@
         "sigle_morte": 0,
         "righe_brevi_incomplete": 0,
         "titoli_rovinati": 0,
-        "parole_ripetute": 11336
+        "parole_ripetute": 11340
       }
     },
     "07_il Portale Della Forgia Eterna/homebrew/sessione-notte-e-alba/ARC07-NOTTE-E-ALBA-GIOCATORI.manifest.json": {
@@ -88,14 +88,14 @@
         "schede": 24,
         "pagine_con_immagine": 0.024,
         "pagine_con_immagine_decimo": 0.079,
-        "parole": 70308,
+        "parole": 70314,
         "quota_parole_ripetute": 0.119
       },
       "in_prova": {
         "sigle_morte": 0,
         "righe_brevi_incomplete": 0,
         "titoli_rovinati": 0,
-        "parole_ripetute": 8398
+        "parole_ripetute": 8401
       }
     },
     "07_il Portale Della Forgia Eterna/homebrew/sessione-resurrezione-mille-anni/ARC07-SERATA-GIOCATORI.manifest.json": {
@@ -134,20 +134,20 @@
         "rimandi_sbagliati": 0
       },
       "misura": {
-        "pagine": 173,
+        "pagine": 172,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 7.0,
         "schede": 30,
         "pagine_con_immagine": 0.035,
         "pagine_con_immagine_decimo": 0.081,
-        "parole": 100486,
+        "parole": 100481,
         "quota_parole_ripetute": 0.095
       },
       "in_prova": {
         "sigle_morte": 0,
         "righe_brevi_incomplete": 0,
         "titoli_rovinati": 0,
-        "parole_ripetute": 9541
+        "parole_ripetute": 9539
       }
     },
     "07_il Portale Della Forgia Eterna/homebrew/sessione-ritorno-forgia/ARC07-RITORNO-FORGIA-BOOKLET.manifest.json": {

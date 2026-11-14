@@ -4548,7 +4548,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "trascritte",
-    "senza_note": 1356,
+    "senza_note": 1584,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/Duergar_figther_ponte/Duergar_guerriero_2liv_3cr.html",
@@ -4797,7 +4797,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "trascritte",
-    "senza_note": 1309,
+    "senza_note": 1414,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/Duergar_figther_ponte/Duergar_ladro_1liv_2cr.html",
@@ -8046,7 +8046,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "trascritte",
-    "senza_note": 1354,
+    "senza_note": 1742,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/goblin worg raider cr5.htm",
@@ -9146,7 +9146,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "trascritte",
-    "senza_note": 1621,
+    "senza_note": 1872,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/hobgoblin doom hand cleric 5 liv.htm",
@@ -9395,7 +9395,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "trascritte",
-    "senza_note": 1546,
+    "senza_note": 1737,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/regolari/hobgoblin-portalame cr7.htm",
@@ -9511,7 +9511,7 @@
     },
     [
      "trascritta dalla fonte `hobgoblin regular 3 liv.htm`",
-     "⚠ Sag al più 7 ricavata da Vol +1 (base +3), ma 9 viene da un dato più forte: si tiene, da verificare."
+     "⚠ Sag al più 5 ricavata da Vol +1 (base +4), ma 9 viene da un dato più forte: si tiene, da verificare."
     ]
    ],
    "genera_senza_fonte": [
@@ -9521,7 +9521,7 @@
      "Des": 12,
      "For": 12,
      "Int": 8,
-     "Sag": 7
+     "Sag": 5
     },
     [
      "array standard del Manuale del DM (PNG con classe)",
@@ -9531,7 +9531,7 @@
      "Des 12 **ricavata dall'iniziativa** — il vincolo batte l'array",
      "Cos 14 **ricavata da pf 23 su 3 DV** — il vincolo batte l'array",
      "For 12 **ricavata da BAB e lotta** — il vincolo batte l'array",
-     "Sag 7 **ricavata da Vol +1 (base +3)** — il tetto del TS batte l'array"
+     "Sag 5 **ricavata da Vol +1 (base +4)** — il tetto del TS batte l'array"
     ]
    ],
    "giudica": {
@@ -9547,18 +9547,18 @@
      ],
      "Rifl": [
       3,
-      2,
+      3,
       0
      ],
      "Temp": [
       6,
-      5,
+      6,
       0
      ],
      "Vol": [
       1,
-      2,
-      -1
+      3,
+      -2
      ],
      "attacco": [
       6,
@@ -9587,8 +9587,8 @@
     "scarti": {
      "Vol": [
       1,
-      2,
-      -1
+      3,
+      -2
      ]
     },
     "template": null,
@@ -9652,7 +9652,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "trascritte",
-    "senza_note": 1482,
+    "senza_note": 1748,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/hobgoblin regular 3 liv.htm",
@@ -9670,21 +9670,23 @@
     ],
     "taglia": 0,
     "talenti": {
-     "Vol": 2
+     "Rifl": 1,
+     "Temp": 1,
+     "Vol": 3
     },
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
-      3,
-      "ricavata da Temp +6 (base +3)"
+      2,
+      "ricavata da Temp +6 (base +4)"
      ],
      "Des": [
-      2,
-      "ricavata da Rifl +3 (base +1)"
+      1,
+      "ricavata da Rifl +3 (base +2)"
      ],
      "Sag": [
-      -2,
-      "ricavata da Vol +1 (base +3)"
+      -3,
+      "ricavata da Vol +1 (base +4)"
      ]
     },
     "vincoli": {
@@ -10214,17 +10216,17 @@
      ],
      "Rifl": [
       4,
-      3,
+      4,
       0
      ],
      "Temp": [
       8,
-      7,
+      8,
       0
      ],
      "Vol": [
       2,
-      1,
+      2,
       0
      ],
      "attacco": [
@@ -10313,7 +10315,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "trascritte",
-    "senza_note": 1249,
+    "senza_note": 1597,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/hobgoblin veterans 6 liv.htm",
@@ -10330,20 +10332,24 @@
      ]
     ],
     "taglia": 0,
-    "talenti": {},
+    "talenti": {
+     "Rifl": 1,
+     "Temp": 1,
+     "Vol": 1
+    },
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
-      3,
-      "ricavata da Temp +8 (base +5)"
+      2,
+      "ricavata da Temp +8 (base +6)"
      ],
      "Des": [
-      2,
-      "ricavata da Rifl +4 (base +2)"
+      1,
+      "ricavata da Rifl +4 (base +3)"
      ],
      "Sag": [
-      0,
-      "ricavata da Vol +2 (base +2)"
+      -1,
+      "ricavata da Vol +2 (base +3)"
      ]
     },
     "vincoli": {
@@ -10439,7 +10445,7 @@
      "Des": 16,
      "For": 10,
      "Int": 16,
-     "Sag": 10
+     "Sag": 8
     },
     [
      "array elite del Manuale del DM (PNG con classe)",
@@ -10449,7 +10455,8 @@
      "Des 18 **derivata dalla CA di contatto** — il vincolo batte l'array",
      "Des 16 **ricavata dall'iniziativa** — il vincolo batte l'array",
      "Cos 14 **ricavata da pf 33 su 7 DV** — il vincolo batte l'array",
-     "For 10 **ricavata da BAB e lotta** — il vincolo batte l'array"
+     "For 10 **ricavata da BAB e lotta** — il vincolo batte l'array",
+     "Sag 8 **ricavata da Vol +5 (base +6)** — il tetto del TS batte l'array"
     ]
    ],
    "giudica": {
@@ -10463,17 +10470,17 @@
      ],
      "Rifl": [
       6,
-      5,
+      6,
       0
      ],
      "Temp": [
       5,
-      4,
+      5,
       0
      ],
      "Vol": [
       5,
-      4,
+      5,
       0
      ],
      "attacco": [
@@ -10562,7 +10569,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "trascritte",
-    "senza_note": 1802,
+    "senza_note": 2166,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/KulkorZhul war Adept cr8_no spell.htm",
@@ -10579,20 +10586,24 @@
      ]
     ],
     "taglia": 0,
-    "talenti": {},
+    "talenti": {
+     "Rifl": 1,
+     "Temp": 1,
+     "Vol": 1
+    },
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
-      3,
-      "ricavata da Temp +5 (base +2)"
+      2,
+      "ricavata da Temp +5 (base +3)"
      ],
      "Des": [
-      4,
-      "ricavata da Rifl +6 (base +2)"
+      3,
+      "ricavata da Rifl +6 (base +3)"
      ],
      "Sag": [
-      0,
-      "ricavata da Vol +5 (base +5)"
+      -1,
+      "ricavata da Vol +5 (base +6)"
      ]
     },
     "vincoli": {
@@ -11455,7 +11466,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "trascritte",
-    "senza_note": 1715,
+    "senza_note": 1979,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/monaco pugno del destino cr7.htm",
@@ -12863,7 +12874,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 1560,
+    "senza_note": 1771,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {},
@@ -13822,7 +13833,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "trascritte",
-    "senza_note": 1364,
+    "senza_note": 1615,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/orco berserk 2liv .htm",
@@ -43863,10 +43874,10 @@
    },
    {
     "file": "Bestiario/mostri/hobgoblin-regular-warrior3-cr2.md",
-    "marca": "> [GENERATO] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. ⚠ Sag al più 7 ricavata da Vol +1 (base +3), ma 9 viene da un dato più forte: si tiene, da verificare.",
+    "marca": "> [GENERATO] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. ⚠ Sag al più 5 ricavata da Vol +1 (base +4), ma 9 viene da un dato più forte: si tiene, da verificare.",
     "note": [
      "trascritta dalla fonte `hobgoblin regular 3 liv.htm`",
-     "⚠ Sag al più 7 ricavata da Vol +1 (base +3), ma 9 viene da un dato più forte: si tiene, da verificare."
+     "⚠ Sag al più 5 ricavata da Vol +1 (base +4), ma 9 viene da un dato più forte: si tiene, da verificare."
     ],
     "riga": "attributi: For 13 Des 13 Cos 14 Int 10 Sag 9 Car 8",
     "scritta": "attributi: For 13 Des 13 Cos 14 Int 10 Sag 9 Car 8"
@@ -44377,7 +44388,7 @@
        "Des": 12,
        "For": 12,
        "Int": 8,
-       "Sag": 7
+       "Sag": 5
       }
      ],
      [
@@ -44434,7 +44445,7 @@
        "Des": 16,
        "For": 10,
        "Int": 16,
-       "Sag": 10
+       "Sag": 8
       }
      ],
      [
@@ -44628,7 +44639,7 @@
       }
      ]
     ],
-    "entro_1_mod": 0.88,
+    "entro_1_mod": 0.87,
     "file": 22,
     "insieme": "fonti",
     "mae": 1.23,

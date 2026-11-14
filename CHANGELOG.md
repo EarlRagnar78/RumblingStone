@@ -18,6 +18,7 @@ Il tag e il rilascio li crea il workflow Release (ADR-0100).
 ## [Non rilasciato]
 
 ### Aggiunto
+- `verifica_scheda`, verifica `gs`: una creatura che dichiara la sua base e ha più dadi vita si giudica con la tabella dell'SRD 3.5 per chi avanza per dadi vita (`[gs.avanzamento]` in `gs.toml`; ADR-0126, lotto 5, sesta parte).
 - `verifica_scheda`, verifiche `creatura_base` e `gs`: i draghi veri dell'SRD 3.5 si giudicano per colore e categoria d'età (armatura naturale e grado di sfida); `creature_base.toml` ha le 120 voci di `[draghi_eta]` (ADR-0126, lotto 5, quinta parte).
 - `verifica_scheda`, verifica `ricchezza`: contano anche le merci dell'SRD 3.5, i proiettili, le armi a più pezzi, lo scudo d'acciaio, la mezza armatura, le pozioni con la forza nel nome e l'arco composito fatto per la Forza; `oggetti.toml` ha le tabelle nuove `merci`, `ammo`, `scudi_acciaio` e `arco_forza` (ADR-0126, lotto 8, sesta parte).
 - Stampa: in una pagina a una colonna la scheda di una creatura esce su due colonne dentro il suo riquadro (ADR-0133, in prova fino al 2026-11-28). Le schede basse restano intere; nelle pagine a due colonne non cambia niente.

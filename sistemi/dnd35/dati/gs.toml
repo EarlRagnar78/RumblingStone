@@ -18,6 +18,26 @@ modelli = ["half-(?!orc|elf)", "mezz[oa]?[- ]?(?:immond|drag|celest|demon|diavol
 razze_fonte = ["human", "uman[oaie]", "dwarf", "nan[oaie]", "elf", "elf[oaie]", "gnome", "gnom[oaie]", "halfling", "half-elf", "mezzelf[oaie]", "half-orc", "mezzorc[ohie]+", "orc", "orc[ohie]+", "hobgoblin", "goblin", "kobold", "cobold[oi]", "drow", "duergar", "svirfneblin", "aasimar", "tiefling"]
 fuori_fonte = ["orog", "githyanki", "githzerai", "tanarukk", "fey'ri", "loxo", "gigante"]
 
+[gs.avanzamento]  # dadi vita aggiunti per +1 al grado di sfida, per tipo d'origine
+# SRD, improving-monsters.md, «Table: Improved Monster CR Increase». Vale solo se la scheda dichiara
+# la base e non ha livelli di classe («Do not stack this CR increase with any increase from class levels»).
+# La crescita di taglia dà +1 a parte; le capacità speciali aggiunte non sono nei dati.
+aberration = 4
+construct = 4
+elemental = 4
+fey = 4
+giant = 4
+humanoid = 4
+ooze = 4
+plant = 4
+undead = 4
+vermin = 4
+animal = 3
+"magical beast" = 3
+"monstrous humanoid" = 3
+dragon = 2
+outsider = 2
+
 [gs.razze]  # {pg, png, come la scheda la nomina}
 drow = { pg = 1, png = 0, nomi = ["drow"], fonte = "monsters-e-f.md" }
 duergar = { pg = 1, png = 0, nomi = ["duergar"], fonte = "monsters-dr-dw.md" }

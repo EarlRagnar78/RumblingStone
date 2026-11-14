@@ -1333,7 +1333,8 @@ def grado_di_sfida(p: Path) -> "tuple[list[dict], list[dict]]":
                     and "dv" in v and v.get("gs") is not None:
                 voce = v
                 break
-    esito = GS.atteso(livelli, dv_razziali, voce, dove, tabella)
+    esito = GS.atteso(livelli, dv_razziali, voce, dove, tabella, dichiarata=trovata is not None,
+                      stessa_taglia=trovata[2] if trovata else None)
     if "perche" in esito:
         return [], [dict(base, regola="numero.gs", testo=esito["perche"])]
     if esito["min"] <= ha <= esito["max"]:

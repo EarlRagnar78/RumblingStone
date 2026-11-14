@@ -209,11 +209,13 @@
 > la carta dice dove la Torre **è già andata**.
 > Un foglio rotondo di pelle sottile, inchiostro bruno, nessuna firma.
 
-![Carta del cielo di Zalkatar: cielo di mezzanotte visto dall'alto, con il meridiano nord-sud, dieci costellazioni con i loro nomi e una stella cerchiata al centro esatto, nel Sigillo](Immagini-Handout/carta-del-cielo/carta-del-cielo-zalkatar-stampa.png)
+![Carta del cielo di Zalkatar: cielo di mezzanotte visto dall'alto, con il meridiano nord-sud, dieci costellazioni con i loro nomi, una stella cerchiata al centro esatto, nel Sigillo, e un cerchio più grande che passa per quella stella e per la stella più luminosa dell'Anello](Immagini-Handout/carta-del-cielo/carta-del-cielo-zalkatar-stampa.png)
 
 > *Le stelle sono puntini d'inchiostro, i nomi in Comune in una grafia piccola e
 > diritta. Una riga taglia il cerchio da nord a sud. Al centro, dove la riga
-> passa, qualcuno ha ripassato tre volte un anello intorno a una stella sola.*
+> passa, qualcuno ha ripassato tre volte un anello intorno a una stella sola.
+> Un secondo cerchio, tirato col compasso, parte da quella stella e gira largo
+> verso nord.*
 
 > **Nota DM: l'indizio a tre strati** (skill `rumblingstone-indagine`).
 > - **Fatto osservabile**: è il cielo di mezzanotte. La riga è il meridiano; il
@@ -234,6 +236,11 @@
 >   Deciso dal DM il 2026-11-14: il passo va **un grado più a sud** del pianoro
 >   della Torre, cioè circa 110 km (tre giorni di marcia a 9 m, quattro a 6 m).
 >   La carta non dipende da questa scelta: se cambia, cambia solo questa riga.
+- **Il cerchio grande** è il parallelo del Sigillo: le stelle che ci stanno sopra
+  passano tutte sopra la testa di chi è nel luogo del passo, una dopo l'altra.
+  Ci sta sopra anche la stella più luminosa dell'**Anello**, che si vede bene
+  anche in una notte velata: per un PG che misura, è la conferma che il cerchio
+  non è un ornamento (Conoscenze (geografia) CD 15 lo capisce a colpo d'occhio).
 > - **Nome**: «il Sigillo si chiude sulla Torre». È il calcolo del rito di
 >   spostamento di Zalkatar, la stessa vibrazione che sente l'Anello di Artemis.
 > - **Perché non si falsifica**: il cielo è lo stesso per tutti. Una copia con

@@ -1088,3 +1088,36 @@ testo del talento è riscontrato sull'SRD («Monster Feats»). Misura su
 `Bestiario 0*/`: violazioni 33 → 30, non verificabili 375 → 372. Il nome
 `goblin-warrior1-cr05.md` resta per scelta del DM: `extract_statblocks.py`
 lo sa da `GS_COL_NOME_VECCHIO`. Il `pf-dado` di Terros è `30d8+213`.
+
+### Lotto 8, quarta parte — prezzo base, dove sta scritto l'equipaggiamento, dati di ADR-0134 (2026-11-14)
+
+`oggetti.toml` del 3.5 ha `[oggetti.comuni]` (66 armi, 12 armature, scudi
+per bonus alla CA, dalle tabelle «Weapons» e «Armor and Shields» dell'SRD) e
+`[oggetti.perfetta]` (300 mo l'arma, 150 l'armatura). La verifica `ricchezza`
+somma il prezzo base e la fattura a ogni arma o armatura magica e conta gli
+oggetti comuni; legge l'equipaggiamento anche dentro la riga delle Statistiche
+(la forma di ADR-0091) e nelle voci «Equipaggiamento da combattimento» e
+«Altro equipaggiamento», e lo conta una volta sola se sta sia nel recinto sia
+nella prosa. Regola nuova `equipaggiamento.da_png`: una creatura base che non
+avanza per classe e non ha livelli di classe ha un tesoro, e la Tabella 4-23
+non la giudica (`avanza = "classe"` su 52 creature di `creature_base.toml`).
+Una riga «Equipaggiamento sopra la tabella: … DM …» dichiara lo scarto come
+scelta del DM. I dati di PF1e (Tabella 14-9 e 454 PNG dei Codex) e la regola
+ibrida stanno in [ADR-0134](ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md).
+
+**Conseguenze.** Misura su `Bestiario 0*/`: violazioni 30 → 30, non
+verificabili 372 → 374. Sette schede vere superano la tabella dei PNG ora che
+l'equipaggiamento si legge dov'è scritto: Avarthel, Bothor e Malvur, il
+comandante dei mercenari di Dauth, il blackguard e il chierico di Abbathor,
+Krusk, Ur-Vrax. Il DM ha risposto alle sette card il 2026-11-14 («Tieni e
+dichiara»): ogni scheda porta la riga «Equipaggiamento sopra la tabella:
+scelta del DM» col valore, il tetto e il GS, nessun numero cambia e
+`IN_ATTESA` di `test_ricchezza.py` è vuoto. Senza le sette dichiarazioni la
+misura sarebbe 37. Banco `muta_ricchezza.py`,
+quarta prova (gli oggetti della prima scritti nella riga delle Statistiche):
+0 → 50 su 118. Limiti: una scheda PF1e non si giudica (mancano i prezzi
+PF1e); ferro freddo, argento alchemico e gli altri materiali restano fuori;
+uno scudo si prezza dal bonus alla CA, quindi «d'acciaio» vale come «di
+legno» (7 mo invece di 20); la ricerca nei Codex lascia «?» sugli oggetti che
+`ricchezza` non riconosce. Il lotto 8 è chiuso per il 3.5; restano i prezzi
+degli oggetti PF1e.

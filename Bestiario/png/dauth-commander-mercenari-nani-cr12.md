@@ -66,3 +66,5 @@ Boost log: adozione della versione d'arco (Guerriero 12, DM-canon) con conti rif
 > era: Guerriero 11, pf 71 (11d10), CA 20 (+0 Des, +10 armatura), TS Temp +8, Rifl +3, Vol +4, iniziativa +0, For 14 Des 10 Cos 13 Int 8 Sag 12 Car 17, spada lunga +13 (1d8+2), equipaggiamento 16.350 mo, da blocco generato (ADR-0034).
 > era: nel modulo d'arco «PF ~120», «CA 26–28», ascia +23/+18/+13 (1d10+9), comando +1 morale entro 9 m.
 > <!-- /storico -->
+
+> Equipaggiamento sopra la tabella: scelta del DM (card del 2026-11-14). Vale almeno 53.137 mo contro i 27.000 della Tabella 4-23 del DMG 3.5 per il livello effettivo 12; il GS resta 12 e nessun numero cambia.

@@ -12,6 +12,8 @@ Dall'SRD 3.5 (olimot/srd-v3.5-md@c7f30a0c, OGL), solo nomi e numeri:
   capacita       le tabelle delle capacità speciali di armi, armature e scudi
   pergamene      le tabelle delle pergamene arcane e divine
   materiali      «Special Materials»: quanto costano in più adamantio e mithral
+  comuni         «Equipment»: il prezzo di armi, armature e scudi non magici e della
+                 fattura perfetta
 
 Non dall'SRD (che non l'ha), solo numeri:
   png            Dungeon Master's Guide 3.5, Tabella 4-23 «NPC Gear Value», riscontrata il
@@ -159,9 +161,37 @@ def materiali(base: Path) -> "dict[str, dict[str, int]]":
     return out
 
 
+def comuni(base: Path) -> "dict[str, dict]":
+    """Il prezzo in mo intere di armi, armature e scudi comuni («Table: Weapons», «Table: Armor and
+    Shields») e della fattura perfetta. Gli scudi vanno per bonus di CA, col prezzo più basso: una
+    scheda dice «scudo pesante» e non se è di legno o d'acciaio. Chi costa meno di 1 mo resta fuori."""
+    f = (base / "basic-rules-and-legal" / "equipment.md").read_text(encoding="utf-8")
+    out: dict[str, dict] = {"armi": {}, "armature": {}, "scudi": {}}
+    for m in re.finditer(r"<table[^>]*><caption>Table: (Weapons|Armor and Shields)</caption>(.*?)</table>", f, re.S):
+        dove = ""
+        for r in (_celle(x) for x in re.findall(r"<tr>(.*?)</tr>", m.group(2), re.S)):
+            if len(r) < 3:
+                continue
+            nome = re.sub(r"\s+", " ", re.sub(r"\d$", "", r[0].replace("&nbsp;", " "))).strip().lower()
+            dove = {"shields": "scudi", "extras": "", "light armor": "armature"}.get(nome, dove)
+            mo = _mo(r[1])
+            if mo is None or mo < 1:
+                continue
+            if m.group(1) == "Weapons":
+                out["armi"].setdefault(re.sub(r"\s*\(\d+\)$", "", nome), mo)
+            elif dove == "armature":
+                out["armature"][nome] = mo
+            elif dove == "scudi" and (b := re.fullmatch(r"\+(\d)\d?", r[2])):
+                out["scudi"][b.group(1)] = min(out["scudi"].get(b.group(1), mo), mo)
+    arma = re.search(r"The masterwork quality adds (\d+) gp to the cost of a normal weapon", f)
+    armatura = re.search(r"A masterwork suit of armor or shield costs an extra (\d+) gp", f)
+    out["perfetta"] = {"arma": int(arma.group(1)), "armatura": int(armatura.group(1))}
+    return out
+
+
 def testo(base: Path) -> str:
     pot, pr = potenziamento(base), prezzi(base)
-    cap, perg, mat = capacita(base), pergamene(base), materiali(base)
+    cap, perg, mat, com = capacita(base), pergamene(base), materiali(base), comuni(base)
     righe = [
         "# sistemi/dnd35/dati/oggetti.toml — prezzi degli oggetti magici e valore dell'equipaggiamento",
         "# di un PNG per livello (ADR-0126, lotto 8)",
@@ -197,6 +227,14 @@ def testo(base: Path) -> str:
         righe += ["", f"[oggetti.materiali.{nome}]",
                   "# SRD, «Special Materials»: costo in più dell'oggetto (mo), per categoria"]
         righe += [f"{k} = {v}" for k, v in voci.items()]
+    righe += ["", "[oggetti.perfetta]",
+              "# SRD, «Masterwork Weapons» e «Masterwork Armor»: quanto costa in più la fattura perfetta (mo)"]
+    righe += [f"{k} = {v}" for k, v in com["perfetta"].items()]
+    for che, nota in (("armi", "«Table: Weapons»: prezzo dell'arma di taglia Media (mo intere)"),
+                      ("armature", "«Table: Armor and Shields»: prezzo dell'armatura (mo)"),
+                      ("scudi", "«Table: Armor and Shields»: per bonus di CA, lo scudo che costa meno (mo)")):
+        righe += ["", f"[oggetti.comuni.{che}]", f"# SRD, {nota}"]
+        righe += [f'"{k}" = {v}' for k, v in sorted(com[che].items())]
     righe += ["", "# come una scheda scrive un oggetto (espressioni regolari; non vengono dall'SRD). «N» è il bonus letto."]
     for nome, schema in NOMI:
         righe += ["[[oggetti.nomi]]", f'nome = "{nome}"', f"schema = '''{schema}'''", ""]

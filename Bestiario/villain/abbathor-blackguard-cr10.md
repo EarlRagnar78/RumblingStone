@@ -67,3 +67,5 @@ era (testo dell'incontro epico): umano, pf 98 (10d10+30 con Cos 14), CA 25 con d
 era: GS 9 nel blocco e nell'intestazione, e il nome del file finiva in -cr9.
 era: tipo Blackguard 10, TS Temp +14, colpire il bene 3/giorno (+10 ai danni), attacco furtivo +3d6, incantesimi 3/3/3/1 a LI 10, comandare non morti come chierico di 8°: la versione dell'incontro epico, non legale a 10 livelli.
 <!-- /storico -->
+
+> Equipaggiamento sopra la tabella: scelta del DM (card del 2026-11-14). Vale almeno 52.322 mo contro i 16.000 della Tabella 4-23 del DMG 3.5 per il livello effettivo 10; il GS resta 10 e nessun numero cambia.

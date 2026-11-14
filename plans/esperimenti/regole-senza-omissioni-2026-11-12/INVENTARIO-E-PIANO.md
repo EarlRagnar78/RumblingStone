@@ -528,3 +528,15 @@ verificabili 374 → 375 (Ghaurush Cenerevento GS 16: 36.300 mo contro 35.000,
 razza senza modificatore di livello noto). Banco, terza prova: 1 → 52 su 125.
 Resta del lotto 8: prezzo base degli oggetti comuni, tabella PF1e.
 
+### Lotto 8, quarta parte: prezzo base, forme di ADR-0091, dati di ADR-0134 (2026-11-14)
+
+`[oggetti.comuni]` e `[oggetti.perfetta]` nel 3.5; `ricchezza` conta prezzo
+base e fattura, legge la riga delle Statistiche e le due voci
+dell'equipaggiamento, non conta due volte recinto e prosa; regola
+`equipaggiamento.da_png` («Improving Monsters», 52 creature che avanzano per
+classe). PF1e: `oggetti.toml` (Tabella 14-9) e `codex.toml` (454 PNG), da
+`estrai_codex.py` (`--check`, `--cerca CLASSE LIVELLO`). Misura: violazioni
+30 → 30 (sette schede vere sopra la tabella, dichiarate dal DM sulle card
+del 2026-11-14 con la riga «Equipaggiamento sopra la tabella»), non
+verificabili 372 → 374. Banco, quarta prova: 0 → 50 su 118. Lotto 8 chiuso
+per il 3.5; restano i prezzi degli oggetti PF1e.

@@ -60,3 +60,5 @@ Combinazioni ed EL: da solo EL 10; con 4 Sciamani Draconici [DA SCRIVERE — sch
 
 Notes: guida spirituale dei contingenti di orchi e di ogre, sottoposto ai sacerdoti della Mano del Destino. Non è un bruto: predica con voce gelida, porta una cotta di scaglie di drago nero e un mazzafrusto a cinque teste, e al posto dell'occhio perduto ha una gemma rossa che pulsa, «dono» della Regina `[INFERRED — La gemma all'occhio fa qualcosa?; base: descrizione della chat Gemini, senza regole: qui è solo aspetto]`. Entra nel Bestiario per la card INVENTARIO D2 `[CANONE — DM 2026-11-08, INVENTARIO D2]`; la scena di ARC-08 la decide il lotto S1.
 Boost log: 2026-11-09 — conti della chat Gemini corretti (GS 8 → 9 per i 9 livelli) e archetipo Avanzato PF1e per tenere Sag e pf dichiarati — GS 8 → 10 — la build di Gemini non tornava, e il DM vuole la versione più forte (card D2, regola del 2026-10-18).
+
+> Equipaggiamento sopra la tabella: scelta del DM (card del 2026-11-14). Vale almeno 34.615 mo contro i 12.000 della Tabella 4-23 del DMG 3.5 per il livello effettivo 9; il GS resta 10 e nessun numero cambia.

@@ -1,0 +1,19 @@
+# sistemi/pf1e/dati/oggetti.toml — il valore dell'equipaggiamento di un PNG per livello (ADR-0134)
+#
+# GENERATO da plans/esperimenti/regole-senza-omissioni-2026-11-12/estrai_codex.py
+# dalla sezione «Table: NPC Gear» di book-cr.db di PSRD-Data (PRD PF1e, Core Rulebook,
+# Tabella 14-9, OGL). Non si corregge a mano. Valori in mo.
+
+[oggetti.png]
+# base = PNG con classi da PNG, dal 1° al 20° livello; eroico = PNG con classi da PG, dal 1° al 20°
+base = [260, 390, 780, 1650, 2400, 3450, 4650, 6000, 7800, 10050, 12750, 16350, 21000, 27000, 34800, 45000, 58500, 75000, 96000, 123000]
+eroico = [390, 780, 1650, 2400, 3450, 4650, 6000, 7800, 10050, 12750, 16350, 21000, 27000, 34800, 45000, 58500, 75000, 96000, 123000, 159000]
+
+[oggetti.png.categorie]
+# una voce per riga della tabella (21): la riga del PNG base di livello N è la N-esima, quella
+# dell'eroico di livello N è la (N + 1)-esima
+armi = [50, 100, 350, 650, 900, 1400, 2350, 2700, 3000, 3500, 4000, 6000, 8500, 9000, 12000, 17000, 19000, 24000, 30000, 40000, 55000]
+protezione = [130, 150, 200, 800, 1000, 1400, 1650, 2000, 2500, 3000, 4000, 4500, 5500, 8000, 10500, 13500, 18000, 23000, 28000, 35000, 40000]
+magia = [0, 0, 0, 0, 0, 0, 0, 500, 1000, 2000, 3000, 4000, 5000, 7000, 9000, 11000, 16000, 20000, 28000, 35000, 44000]
+uso_limitato = [40, 40, 80, 100, 300, 450, 450, 600, 800, 1050, 1250, 1350, 1500, 2500, 2800, 3000, 4000, 6500, 8000, 11000, 18000]
+attrezzatura = [40, 100, 150, 200, 200, 200, 200, 200, 500, 500, 500, 500, 500, 500, 500, 500, 1500, 1500, 2000, 2000, 2000]

@@ -130,6 +130,17 @@ def _abilita_in(testo: str, chiave: "dict[str, str]") -> "list[str]":
     return [a for a in sorted(chiave, key=len, reverse=True) if re.search(rf"\b{re.escape(a)}\b", t)]
 
 
+def salto(base: Path) -> "dict[str, int]":
+    """Il modificatore della velocità a Saltare («If your speed is less than 30
+    feet, you take a –6 penalty for every 10 feet of speed less than 30 feet…
+    you gain a +4 bonus for every 10 feet beyond 30 feet»)."""
+    t = (base / "basic-rules-and-legal" / "skills-ii.md").read_text(encoding="utf-8")
+    m = re.search(r"If your speed is less than (\d+) feet, you take a [–-](\d+) penalty for every (\d+) feet of speed "
+                  r"less than \d+ feet\. If your speed is greater than \d+ feet, you gain a \+(\d+) bonus for every "
+                  r"\d+ feet beyond", t)
+    return {"velocita": int(m.group(1)), "ogni": int(m.group(3)), "meno": int(m.group(2)), "piu": int(m.group(4))}
+
+
 def sinergie(base: Path, chiave: "dict[str, str]") -> "dict[str, list[str]]":
     """Abilità → le abilità che con 5 gradi le danno +2 («If you have 5 or more
     ranks in Bluff, Knowledge (nobility and royalty), or Sense Motive, you get
@@ -187,24 +198,71 @@ def penalita_di_prova(base: Path, chiave: "dict[str, str]") -> "tuple[list[str],
     return sorted(con), sorted(doppia), armature, scudi
 
 
+#: le razze senza dadi vita razziali (chiavi di mdl.toml): file dei mostri, titolo del loro
+#: capitolo «… as Characters» e la razza di cui sono sottorazza (ne tengono i bonus come tetto)
+RAZZE_DEI_MOSTRI = {"aasimar": ("monsters-o-r.md", "Aasimar as Characters", None),
+                    "drow": ("monsters-e-f.md", "Drow", "elf"),
+                    "duergar": ("monsters-dr-dw.md", "Duergar", "dwarf"),
+                    "goblin": ("monsters-g.md", "Goblins as Characters", None),
+                    "hobgoblin": ("monsters-h-i.md", "Hobgoblin Characters", None),
+                    "kobold": ("monsters-k-l.md", "Kobold Characters", None),
+                    "orc": ("monsters-o-r.md", "Orcs as Characters", None),
+                    "svirfneblin": ("monsters-g.md", "Svirfneblin", "gnome"),
+                    "tiefling": ("monsters-o-r.md", "Tieflings as Characters", None)}
+
+
+def _bonus_del_blocco(blocco: str, chiave: "dict[str, str]") -> "tuple[dict[str, int], dict[str, int]]":
+    """(bonus razziali, bonus di taglia) alle abilità scritti in un blocco di
+    tratti. «+4 bonus on Hide checks» nella riga della taglia Piccola è di
+    taglia; «which improves to +4 underground» alza il razziale: è un tetto."""
+    razziali: "dict[str, int]" = {}
+    taglia: "dict[str, int]" = {}
+    for n, tipo, resto, coda in re.findall(
+            r"\+(\d) (racial |size )?bonus on ([^.+]+?) checks(, which improves to \+\d)?", blocco):
+        if not tipo and "hide" not in resto.lower():
+            continue  # «+4 bonus on ability checks» dei nani: non è un'abilità
+        n = max(int(n), int(coda[-1]) if coda else 0)
+        dove = razziali if tipo == "racial " else taglia
+        for a in _abilita_in(resto, chiave):
+            dove[a] = max(dove.get(a, 0), n)
+    return razziali, taglia
+
+
 def razze(base: Path, chiave: "dict[str, str]") -> "dict[str, dict[str, int]]":
-    """Razza dell'SRD → il bonus razziale più alto che dà a ogni abilità («+2
-    racial bonus on Listen, Search, and Spot checks»), anche quando vale solo
-    in certi casi (la pietra dei nani): è un tetto. Una razza senza bonus
-    esce con la tabella vuota, perché «nessun bonus» è un fatto anche quello."""
+    """Razza dell'SRD → il bonus più alto che razza e taglia danno a ogni
+    abilità («+2 racial bonus on Listen, Search, and Spot checks», «+4 size
+    bonus on Hide checks»), anche quando vale solo in certi casi (la pietra dei
+    nani): è un tetto. Razziale e taglia si sommano, perché sono tipi diversi.
+    Una razza senza bonus esce con la tabella vuota, perché «nessun bonus» è un
+    fatto anche quello. Dopo le sette razze, le nove senza dadi vita razziali
+    del capitolo dei mostri; una sottorazza tiene per tetto anche i bonus della
+    razza da cui viene."""
     t = (base / "basic-rules-and-legal" / "races.md").read_text(encoding="utf-8")
     nomi = {"Humans": "human", "Dwarves": "dwarf", "Elves": "elf", "Gnomes": "gnome", "Half-Elves": "half-elf",
             "Half-Orcs": "half-orc", "Halflings": "halfling"}
-    out = {}
+    grezzi: "dict[str, tuple[dict[str, int], dict[str, int]]]" = {}
     for blocco in re.split(r"^## ", t, flags=re.M)[1:]:
         nome = nomi.get(blocco.split("\n", 1)[0].strip())
-        if not nome:
-            continue
-        voci: "dict[str, int]" = {}
-        for n, resto in re.findall(r"\+(\d) racial bonus on ([^.]+?) checks", blocco):
-            for a in _abilita_in(resto, chiave):
-                voci[a] = max(voci.get(a, 0), int(n))
-        out[nome] = dict(sorted(voci.items()))
+        if nome:
+            grezzi[nome] = _bonus_del_blocco(blocco, chiave)
+    for nome, (file, titolo, madre) in RAZZE_DEI_MOSTRI.items():
+        righe, dentro, blocco = (base / "monsters" / file).read_text(encoding="utf-8").split("\n"), False, []
+        for riga in righe:
+            m = re.match(r"#+ (.+)$", riga)
+            if m:
+                dentro = m.group(1).strip() == titolo
+            elif dentro:
+                blocco.append(riga)
+        assert blocco, nome
+        raz, tag = _bonus_del_blocco("\n".join(blocco), chiave)
+        if madre:
+            for a, n in grezzi[madre][0].items():
+                raz[a] = max(raz.get(a, 0), n)
+            for a, n in grezzi[madre][1].items():
+                tag[a] = max(tag.get(a, 0), n)
+        grezzi[nome] = (raz, tag)
+    out = {nome: dict(sorted({a: raz.get(a, 0) + tag.get(a, 0) for a in set(raz) | set(tag)}.items()))
+           for nome, (raz, tag) in grezzi.items()}
     return dict(sorted(out.items()))
 
 
@@ -304,7 +362,8 @@ def genera() -> str:
         "[sinergie]",
         *[f"{_q(a)} = [{', '.join(_q(x) for x in v)}]" for a, v in sinergie(CACHE, k).items()],
         "",
-        "# il bonus razziale alle abilità delle sette razze dell'SRD (anche se vale solo in certi casi)",
+        "# il bonus di razza e di taglia alle abilità (anche se vale solo in certi casi): le sette razze",
+        "# dell'SRD e le nove senza dadi vita razziali del capitolo dei mostri (le chiavi di mdl.toml)",
         *[riga for r, v in razze(CACHE, k).items()
           for riga in (f"[razze.{_q(r)}]", *[f"{_q(a)} = {n}" for a, n in v.items()], "")],
         "# come una scheda nomina le sette razze (espressioni regolari, italiano e inglese); una",
@@ -318,6 +377,10 @@ def genera() -> str:
         "# circostanza, SRD «Tools and Skill Kits»); `sinergia` è il +2 di ogni fonte con 5 gradi",
         "oggetto = 2",
         "sinergia = 2",
+        "",
+        "# SRD, Saltare: la velocità diversa da `velocita` piedi toglie `meno` o dà `piu` ogni `ogni` piedi",
+        "[salto]",
+        *[f"{a} = {n}" for a, n in salto(CACHE).items()],
         "",
         "[fuori_classe]",
         "# SRD, «Skills Summary»: un grado in un'abilità fuori classe costa 2 punti e il massimo",

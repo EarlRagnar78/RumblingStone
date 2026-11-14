@@ -400,7 +400,7 @@ class TestStoria(unittest.TestCase):
     def test_chi_sa_cosa_dichiarato_non_verificabile(self):
         p = _scrivi(self.arco, "M.md", "# M\n")
         r = cc.verifica_storia([p], self.an, [self.arco])
-        self.assertEqual(r["non_verificabili"], {"chi sa cosa (conoscenze senza tempo)": "1 su 1"})
+        self.assertEqual(r["non_verificabili"], {"chi sa cosa (conoscenze senza giorno)": "1 su 1"})
 
     def test_cli_fatti_state_json(self):
         import contextlib
@@ -417,7 +417,7 @@ class TestStoria(unittest.TestCase):
             cc.STATE = vecchio
         self.assertEqual(rc, 0)   # misura, non cancello
         storia = json.loads(buf.getvalue())["storia"]
-        self.assertEqual(storia["regole"], ["S1", "S5", "S6", "S7"])
+        self.assertEqual(storia["regole"], ["S1", "S5", "S6", "S7", "T2"])
         self.assertTrue(any(v["regola"].startswith("S5") for v in storia["violazioni"]))
 
     def test_cli_legge_lo_state_indicato(self):
@@ -440,6 +440,32 @@ class TestStoria(unittest.TestCase):
         self.assertEqual(storia["ancore"]["giorno_arrivo"], 37)
         self.assertEqual([(v["atteso"], v["ha"]) for v in storia["violazioni"] if v["regola"].startswith("S1")],
                          [("Giorno 37", "Giorno 42")])
+
+    def test_t2_catena_rotta(self):
+        def con(*righe):
+            return dict(self.an, chi_sa=[dict(zip(("png_id", "dal_giorno", "informato_da", "indice"), r + (i,)))
+                                         for i, r in enumerate(righe)])
+        def t2(an):
+            return [(v["atteso"], v["ha"]) for v in cc.verifica_storia([], an, [])["violazioni"]
+                    if v["regola"].startswith("T2")]
+        # chi informa lo sa prima: nessuna violazione
+        self.assertEqual(t2(con(("capo", 21, None), ("agente", 23, "capo"))), [])
+        # chi informa lo sa dopo
+        self.assertEqual(t2(con(("capo", 25, None), ("agente", 23, "capo"))),
+                         [("capo sa qualcosa entro il Giorno 23", "dal Giorno 25")])
+        # chi informa non ha righe con un giorno
+        self.assertEqual(t2(con(("capo", None, None), ("agente", 23, "capo"))),
+                         [("capo sa qualcosa entro il Giorno 23", "nessuna riga con un giorno")])
+        # limite dichiarato: il confronto è fra PNG, non fra fatti (basta una riga in tempo)
+        self.assertEqual(t2(con(("capo", 0, None), ("capo", 30, None), ("agente", 23, "capo"))), [])
+        # una riga senza giorno non si giudica
+        self.assertEqual(t2(con(("capo", 25, None), ("agente", None, "capo"))), [])
+
+    def test_state_vero_ha_i_giorni_e_nessuna_catena_rotta(self):
+        an = cc.ancore_state()
+        r = cc.verifica_storia([], an, [])
+        self.assertEqual([v for v in r["violazioni"] if v["regola"].startswith("T2")], [])
+        self.assertEqual(an["conoscenze_senza_tempo"], 6, "le righe di «chi sa cosa» senza giorno sono 6: i Tiri Kitor e le 5 che il DM non ha confermato")
 
     def test_s1_senza_giorno_arrivo_dichiarato(self):
         an = dict(self.an, giorno_arrivo=None)

@@ -1342,7 +1342,83 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0133` → `plans/adr/ADR-0133-la-scheda-a-tutta-pagina-va-su-due-colonne.md` · `scripts/tests/test_scheda_due_colonne.py`
 - **Solo qui:** in typst un blocco di altezza fissa con dentro `columns(2)` si spezza da sé a pagina girata e le colonne riprendono: provato con una scheda di 4000 parole, nessuna parola persa. L'altezza del blocco è metà del corpo misurato a mezza larghezza più 16 pt, perché le fasce non si dividono mai a metà esatta. La misura delle righe lunghe non è nel repo: conta le righe dentro i riquadri col fondo del tema larghi più di metà pagina che contengono la fascia DIFESA; un primo conto per corpo del carattere prendeva anche piedi e colophon e dava 80 righe invece di 11. Durante la misura ho usato `git stash` per provare che il test fallisce senza la modifica mentre `misura_stampa` girava: ho fermato e rifatto la misura da capo. Il worktree di confronto aveva ancora la modifica della prova: fermato e rifatto anche quello. Il DM ha visto la prova con la soglia a 6 cm, e la soglia è rimasta quella.
 
-### MS-0117 · 2026-11-14 · ADR-0134: il corredo delle schede PCGen e i Codex come complemento
+### MS-0117 · 2026-11-13 · I giorni di «chi sa cosa» in state.yaml e la regola T2
+
+- **Data:** 2026-11-13
+- **PR:** —
+- **ADR:** ADR-0125
+- **Temi:** coerenza storia canone state
+- **Origine:** voce scritta con la PR, per la riga del 2026-11-13 «Canone di «chi sa cosa»» in `plans/CHANGELOG.md`
+- **Testo:** Il DM ha risposto a D1-D4 della proposta dei giorni e alla riga 69 di ARC07-DEF-1. `conoscenze[]` ha `dal_giorno` e `informato_da`; 27 righe su 33 hanno un giorno: dei 27 proposti il DM ne ha confermati 22 su card («Sì, tranne i 5 a fiducia bassa») e i cinque dedotti senza fonte restano senza giorno (Sonjak su Sal, Ghostlord, Xal'thor sui Bracieri, il Collezionista su Therysol, Therysol sulla cella di Dauth). Il Collezionista sa dei Custodi e degli artefatti dalla sua gilda, dal Giorno 22 (card del DM). Lettera di Brenna: Thorik comandante, niente «Custodi Eterni», consegna al Giorno 22; Brenna sa della vittoria dal Giorno 19 (uccelli) e di Lorana di persona. Norro conosce il titolo dal Giorno 23. DEF-1 r.69: «I Rumbling Stones». `coerenza_campagna fatti --state` ha T2; su main 0 violazioni.
+- **Trovato nel repo:** `ADR-0125` → `plans/adr/` (file ADR-0125, «i giorni di chi sa cosa e la regola T2») · la proposta → `plans/esperimenti/grafo-eventi-2026-11-12/PROPOSTA-GIORNI-CHI-SA-COSA.md`
+- **Solo qui:** T1 non è entrata perché state.yaml non ha chiave del fatto, alias e finestre dei file; T2 senza chiave del fatto confronta i PNG e non i fatti. Brenna non ha `informato_da: tempestas`: col giorno 19 sarebbe stata una catena rotta, perché Tempestas ha la sua prima riga al 21, e il DM ha messo gli uccelli come fonte della vittoria. Zalkatar ha il giorno 26 scritto, uguale a quello di Sethrax che lo informa nello stesso giorno. Le righe 6 e 17 (Conte Valerius) restano doppie: nessuna risposta del DM. Per la riga del Collezionista il canone non dava una fonte sola: Sonjak non sa delle tre gemme e Mira non ha legami con la gilda, quindi è andata a card. Il dossier del DM rigenerato porta anche i livelli degli archi che erano rimasti indietro dal 17/10. Il coordinatore aveva prenotato MS-0114: il cancello vuole la sequenza, quindi il numero si rifà al riallineo.
+
+### MS-0118 · 2026-11-14 · Generatore, lotto J: i sette modelli semplici di PF1e
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0034
+- **Temi:** generatore creature modelli pf1e
+- **Origine:** riga del 2026-11-14 «Lotto J, i modelli semplici di PF1e» in `plans/CHANGELOG.md`
+- **Testo:** Jfs ha autorizzato il lotto J sulla card del 2026-11-13 («Sì, col thread delle regole»). Il generatore applica al blocco finito i sette modelli semplici del Bestiary di PF1e senza cambiare il GS scritto: i numeri stanno in `sistemi/pf1e/dati/modelli.toml` con la fonte per riga, il conto in `scripts/dmcore/modelli.py`, l'opzione è `--template`. `--piu-cattivi` è `--template advanced`. Gli archetipi di classe restano fuori.
+- **Trovato nel repo:** `ADR-0034` → `plans/adr/ADR-0034-generare-dalle-tabelle.md`
+- **Solo qui:** il vecchio conto del modello Avanzato lasciava ferma l'iniziativa e scriveva «+2 Advanced» nel dettaglio della CA invece di alzare Destrezza e armatura naturale; l'ha trovato il test del conto esatto. `pf-dado` registra i dadi e i bonus che non vengono dalla Costituzione, quindi un modello non lo tocca: cambia il bonus nella riga del tipo. I dadi di danno seguono le tabelle delle armi del Core Rulebook; da 2d6 in su le tabelle delle armi e degli attacchi naturali divergono, e un dado che la tabella non ha resta com'è e viene dichiarato. Per disfare un modello serve la traccia di ciò che ha fatto: il passo dei dadi all'ingiù non è l'inverso di quello all'insù.
+
+### MS-0119 · 2026-11-14 · Regole, lotto 7 quinta parte: linguaggi di hobgoblin, orco, drow, duergar
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole linguaggi razze verifica-scheda
+- **Origine:** riga del 2026-11-14 «lotto 7 quinta parte» in `plans/CHANGELOG.md`
+- **Testo:** La verifica `linguaggi` giudica anche nove razze senza dadi vita razziali, coi linguaggi automatici che l'SRD scrive nel capitolo dei mostri. L'ha chiesto il thread del volume. Schede giudicate nel Bestiario 7 → 14 su 24, banco 13 → 27 su 27, nessuna violazione e nessuna scheda toccata.
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** le razze coi dadi vita razziali (bugbear, gnoll, ogre, troll) restano fuori apposta: la riga dell'SRD è per il personaggio giocante. Un test vecchio dava il drow come «razza fuori dalla tabella» ed è stato girato.
+
+### MS-0120 · 2026-11-14 · Regole, lotto 6 terza parte: razze dei mostri, taglia e velocità nelle abilità
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole abilità razze saltare verifica-scheda
+- **Origine:** riga del 2026-11-14 «lotto 6 terza parte» in `plans/CHANGELOG.md`
+- **Testo:** Il margine dei gradi contato voce per voce vale anche per nove razze senza dadi vita razziali. Entrano il +4 di taglia a Nascondersi dei Piccoli e il modificatore della velocità a Saltare. Una violazione nuova, vera: Bothor e Malvur hanno Saltare +6 dove la regola dà +2. Il DM ha risposto «Correggi a +2» sulla card e la scheda è corretta.
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** la prima estrazione dava «hide = 1» ai Piccoli, perché l'espressione prendeva il «+1» dell'attacco nella stessa frase; l'ha mostrato il diff del file dati. Le schede di prova dei talenti erano un orco barbaro tarato sul margine fisso: ora sono uno gnoll.
+
+### MS-0121 · 2026-11-14 · Regole, lotto 7 sesta parte: velocità di hobgoblin, orco, drow, duergar
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole velocità razze armature verifica-scheda
+- **Origine:** riga del 2026-11-14 «lotto 7 sesta parte» in `plans/CHANGELOG.md`
+- **Testo:** La verifica `velocita` giudica anche nove razze senza dadi vita razziali: schede giudicate 18 → 34. Due violazioni vere, su card al DM: la Furia della Mano a 12 m con un'armatura media e il bladebearer hobgoblin con il nome dell'armatura sbagliato rispetto alla fonte PCGen. Il DM ha risposto sulle card: corazza di mithral per la Furia (resta a 12 m), giaco di maglia +1 per il bladebearer.
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** due schede di hobgoblin regolari scrivono 6 m senza scomporre la CA: la prima versione le dava per violazioni, ed erano solo armature non nominate. Da lì la regola del dubbio. La correzione diretta del nome dell'armatura del bladebearer è stata fermata: una scheda si cambia solo con la risposta del DM, anche quando è un errore di trascrizione.
+
+### MS-0122 · 2026-11-14 · Regole, lotto 8 quinta parte: la ricchezza di un file con più schede
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole ricchezza equipaggiamento master verifica-scheda
+- **Origine:** riga del 2026-11-14 «lotto 8 quinta parte» in `plans/CHANGELOG.md`
+- **Testo:** `ricchezza` giudica scheda per scheda anche i file con più schede. Prima usciva senza dire niente, e ARC07-DEF-4 non era controllato contro la Tabella 4-23. Una violazione vera: Durin Rocciadura ha 6.137 mo di equipaggiamento contro i 5.600 di un PNG di 6°. Il DM ha scelto sulla card del 14/11 lo scudo pesante perfetto al posto del +1: CA 22 → 21, valore sotto il tetto, tre booklet rigenerati.
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** nella #425 era stato scritto che le schede allungate di ARC07-DEF-4 non davano violazioni nuove: era vero solo perché non erano lette. L'ha notato il thread del volume, ed è stato detto a Jfs. Una misura che tace va controllata: tace perché è in regola o perché non guarda?
+
+### MS-0123 · 2026-11-14 · Regole, lotti 6 e 7: velocità, linguaggi e abilità di un file con più schede
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole velocita linguaggi abilita master verifica-scheda
+- **Origine:** riga del 2026-11-14 «lotti 6 e 7: velocità, linguaggi e abilità di un file con più schede» in `plans/CHANGELOG.md`
+- **Testo:** `velocita`, `linguaggi` e `abilita` giudicano scheda per scheda i file con più schede, con la stessa funzione di `ricchezza` (`_scheda_per_scheda`). Violazioni 30 → 30, non verificabili 383 → 384. Nei 5 master con più recinti `velocita` legge 11 schede (prima 0), `linguaggi` 3 (prima 0), `abilita` 11 (prima 5).
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** il guadagno è piccolo e va detto: nessuna violazione nuova, e 13 schede su 30 dei master non si leggono perché il recinto non ha attributi o GS. Per misurare contro la versione di prima serve un worktree pulito: `git worktree add` su una cartella rimasta da una prova vecchia non la aggiorna, e la prima misura confrontava con un commit di giorni fa (54 violazioni invece di 30).
+### MS-0124 · 2026-11-14 · ADR-0134: il corredo delle schede PCGen e i Codex come complemento
 
 - **Data:** 2026-11-14
 - **PR:** —

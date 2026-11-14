@@ -66,7 +66,7 @@
 
 ## §0 — QUICKSTART DM (una pagina)
 
-**Dove siete.** I Custodi Eterni sono entrati nel Portale della Forgia
+**Dove siete.** I Rumbling Stones sono entrati nel Portale della Forgia
 Eterna per recuperare le tre gemme della Corona di Adamantio e riportare in
 vita **Hella Oakenshield**, morta nella Stanza della Corona (ARC-06). Il
 **Topazio del Tempo** è già stato forgiato nel Piano del Fuoco. Ora si scende

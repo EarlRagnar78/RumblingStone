@@ -16,10 +16,11 @@ from dmcore import sistemi as S  # noqa: E402
 from tests.test_difese import SCHEDA  # noqa: E402
 
 
-def giudica(coda: str, razza: str = "dwarf", classe: str = "Fighter 3", dadi: str = "3d10+6") -> list:
+def giudica(coda: str, razza: str = "dwarf", classe: str = "Fighter 3", dadi: str = "3d10+6",
+            titolo: str = "Prova") -> list:
     with tempfile.TemporaryDirectory() as d:
         q = Path(d) / "prova-cr4.md"
-        q.write_text(SCHEDA.format(titolo="Prova", tipo=f"Medium humanoid ({razza})", classe=classe, dadi=dadi,
+        q.write_text(SCHEDA.format(titolo=titolo, tipo=f"Medium humanoid ({razza})", classe=classe, dadi=dadi,
                                    coda=coda), encoding="utf-8")
         if V.L.leggi(q) is None:
             raise AssertionError("la scheda di prova non si legge")
@@ -34,7 +35,13 @@ class TestDati(unittest.TestCase):
         self.assertEqual(d["razze"], {"dwarf": ["Common", "Dwarven"], "elf": ["Common", "Elven"],
                                       "gnome": ["Common", "Gnome"], "half-elf": ["Common", "Elven"],
                                       "half-orc": ["Common", "Orc"], "halfling": ["Common", "Halfling"],
-                                      "human": ["Common"]})
+                                      "human": ["Common"],
+                                      "aasimar": ["Common", "Celestial"], "drow": ["Common", "Elven", "Undercommon"],
+                                      "duergar": ["Common", "Dwarven", "Undercommon"],
+                                      "goblin": ["Common", "Goblin"], "hobgoblin": ["Common", "Goblin"],
+                                      "kobold": ["Draconic"], "orc": ["Common", "Orc"],
+                                      "svirfneblin": ["Undercommon", "Gnome", "Common"],
+                                      "tiefling": ["Common", "Infernal"]})
         self.assertEqual(d["classi"], {"druid": ["Druidic"]})
         for voci in list(d["razze"].values()) + list(d["classi"].values()):
             self.assertLessEqual(set(voci), set(d["nomi"]))
@@ -61,6 +68,29 @@ class TestLinguaggi(unittest.TestCase):
         self.assertEqual(giudica("**Linguaggi** Comune, Shaaran", razza="human"), [])
         self.assertEqual(len(giudica("**Linguaggi** Shaaran", razza="human")), 1)
 
+    def test_razze_senza_dadi_vita_razziali(self):
+        """Hobgoblin, orco, drow, duergar, coboldo: SRD, capitolo dei mostri, «… as Characters»."""
+        hob = {"razza": "goblinoid", "titolo": "Hobgoblin sergente"}
+        self.assertEqual(giudica("**Linguaggi** Comune, Goblin", **hob), [])
+        v = giudica("**Linguaggi** Comune, Infernale", **hob)
+        self.assertEqual(len(v), 1)
+        self.assertEqual(v[0][1], ["Common", "Goblin"])
+        self.assertIn("hobgoblin", v[0][2])
+        orco = {"razza": "orc", "titolo": "Orco razziatore"}
+        self.assertEqual(giudica("**Linguaggi** Comune, Orchesco", **orco), [])
+        self.assertEqual(len(giudica("**Linguaggi** Orchesco", **orco)), 1)
+        drow = {"razza": "elf", "titolo": "Drow esploratrice"}
+        self.assertEqual(giudica("**Linguaggi** Comune, Elfico, Sottocomune", **drow), [])
+        self.assertIn("Undercommon", giudica("**Linguaggi** Comune, Elfico", **drow)[0][2])
+        duergar = {"razza": "dwarf", "titolo": "Duergar guardia"}
+        self.assertIn("Undercommon", giudica("**Linguaggi** Comune, Nanico", **duergar)[0][2])
+        coboldo = {"razza": "reptilian", "titolo": "Coboldo stregone"}
+        self.assertEqual(giudica("**Linguaggi** Draconico", **coboldo), [])
+        self.assertEqual(len(giudica("**Linguaggi** Comune", **coboldo)), 1)
+
+    def test_un_modello_nel_titolo_ferma_il_giudizio(self):
+        self.assertEqual(giudica("**Linguaggi** Infernale", razza="goblinoid", titolo="Hobgoblin mezzo-immondo"), [])
+
     def test_il_druido_ha_il_druidico(self):
         d = {"razza": "human", "classe": "Druid 5", "dadi": "5d8+10"}
         self.assertEqual(giudica("**Linguaggi** Comune, Druidico, Silvano", **d), [])
@@ -77,7 +107,9 @@ class TestLinguaggi(unittest.TestCase):
 
     def test_una_razza_fuori_dalla_tabella(self):
         self.assertEqual(giudica("**Linguaggi** Goblin", razza="goblinoid"), [])
-        self.assertEqual(giudica("**Linguaggi** Sottocomune", razza="elf, drow"), [])
+        self.assertEqual(giudica("**Linguaggi** Gnoll", razza="gnoll", titolo="Gnoll predone"), [])
+        # il drow è nella tabella dal lotto delle razze senza dadi vita razziali
+        self.assertEqual(len(giudica("**Linguaggi** Sottocomune", razza="elf, drow")), 1)
 
 
 class Bestiario(unittest.TestCase):

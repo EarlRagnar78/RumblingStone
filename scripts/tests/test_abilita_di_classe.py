@@ -55,7 +55,21 @@ class TestDati(unittest.TestCase):
         self.assertEqual(self.r["sinergie"]["tumble"], ["jump"])
         self.assertEqual(self.r["razze"]["elf"], {"listen": 2, "search": 2, "spot": 2})
         self.assertEqual(self.r["razze"]["human"], {})
-        self.assertEqual(set(self.r["razze"]), set(self.r["razze_nomi"]) - {"altre"})
+        senza_dv = set(S.dati("dnd35", "creature.costruzione")["mdl"]["razze"]) - {"merfolk"}
+        self.assertEqual(set(self.r["razze"]), (set(self.r["razze_nomi"]) - {"altre"}) | senza_dv)
+
+    def test_razza_e_taglia_si_sommano(self):
+        """Lotto 6, terza parte: il +4 di taglia a Nascondersi dei Piccoli e le razze senza dadi vita razziali."""
+        self.assertEqual(self.r["razze"]["halfling"]["hide"], 4)
+        self.assertEqual(self.r["razze"]["gnome"], {"craft": 2, "hide": 4, "listen": 2})
+        self.assertEqual(self.r["razze"]["hobgoblin"], {"move silently": 4})
+        self.assertEqual(self.r["razze"]["goblin"], {"hide": 4, "move silently": 4, "ride": 4})
+        self.assertEqual(self.r["razze"]["orc"], {})
+        self.assertEqual(self.r["razze"]["drow"], self.r["razze"]["elf"])                 # sottorazza: tiene l'elfo
+        self.assertEqual(self.r["razze"]["duergar"]["move silently"], 4)
+        self.assertEqual(self.r["razze"]["duergar"]["appraise"], 2)                       # dal nano
+        self.assertEqual(self.r["razze"]["svirfneblin"]["hide"], 8)                       # +4 sottoterra, +4 di taglia
+        self.assertEqual(self.r["salto"], {"velocita": 30, "ogni": 10, "meno": 6, "piu": 4})
 
     def test_ogni_abilita_dei_dati_ha_la_sua_chiave(self):
         chiave = self.r["chiave"]
@@ -128,6 +142,28 @@ class TestMargineVero(unittest.TestCase):
         # Raggirare dà +2 a Intimidire: con Raggirare nella riga il margine sale a 4
         con = _umano(self.testo).replace("Intimidate +7", "Bluff +1, Intimidate +10")
         self.assertEqual(_prova("umano-sergente-cr5.md", con)[0], [])
+
+    def test_hobgoblin_senza_la_parola_razziale_ha_il_margine_contato(self):
+        """Lotto 6, terza parte: l'hobgoblin ha +4 razziale a Muoversi Silenziosamente e niente a Intimidire."""
+        pulita = re.sub(r"(?i)razzial\w*|racial", "di razza", self.testo)
+        self.assertEqual(_prova(SERGENTE.name, pulita)[0], [])
+        viol, _ = _prova(SERGENTE.name, pulita.replace("Intimidate +7", "Intimidate +10"))
+        self.assertEqual([(v["regola"], v["ha"], v["atteso"]) for v in viol], [("gradi.massimo", 9, 8)])
+
+    def test_la_velocita_conta_a_saltare(self):
+        """SRD, Saltare: +4 ogni 10 piedi sopra i 30, −6 ogni 10 sotto. Umano Fighter 5, For 14 (+2),
+        massimo 8, 20 piedi di velocità (la penalità dell'armatura qui non si legge e non conta)."""
+        def gradi(salto: str, velocita: str = "20 ft") -> list:
+            testo = _umano(self.testo).replace("Intimidate +7", f"Jump {salto}")
+            self.assertIn("velocita: 20 ft (armored)", testo)
+            testo = testo.replace("velocita: 20 ft (armored)", f"velocita: {velocita} (armored)")
+            return [v["ha"] for v in _prova("umano-sergente-cr5.md", testo)[0]]
+        self.assertEqual(gradi("+6"), [])                    # 6 − 2 − 2 di margine + 6 di velocità = 8
+        self.assertEqual(gradi("+7"), [9])
+        self.assertEqual(gradi("+12", "30 ft"), [])          # a 30 piedi la velocità non conta
+        self.assertEqual(gradi("+13", "30 ft"), [9])
+        self.assertEqual(gradi("+16", "40 ft"), [])          # +4 sopra i 30
+        self.assertEqual(gradi("+17", "12 m"), [9])
 
     def test_chi_non_e_di_una_razza_dell_srd_tiene_il_margine_di_prima(self):
         # lo stesso +10 sull'hobgoblin vero non è una violazione

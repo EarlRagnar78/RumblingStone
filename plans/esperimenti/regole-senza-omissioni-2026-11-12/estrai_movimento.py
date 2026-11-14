@@ -5,7 +5,8 @@ Uso: python3 estrai_movimento.py [<cartella srd-v3.5-md>]            # scrive il
      python3 estrai_movimento.py --check [<cartella srd-v3.5-md>]    # 1 se il file non è aggiornato
 
 Dall'SRD 3.5 (olimot/srd-v3.5-md@c7f30a0c, OGL), solo nomi e numeri:
-  razze     «Human base land speed is 30 feet», e chi non rallenta in armatura
+  razze     «Human base land speed is 30 feet», e chi non rallenta in armatura;
+            poi nove razze senza dadi vita razziali dal capitolo dei mostri
   armature  la categoria (leggera, media, pesante) di ogni armatura di «Armor and
             Shields», con bonus e Des massima per riconoscerla
   ridotta   «Base Speed / Reduced Speed» di «Carrying Capacity»
@@ -23,6 +24,10 @@ DEST = ROOT / "sistemi" / "dnd35" / "dati" / "movimento.toml"
 CACHE = Path.home() / ".cache" / "rumblingstone" / "srd" / "srd-v3.5-md-c7f30a0ce11a"
 RAZZE = {"Human": "human", "Dwarf": "dwarf", "Elf": "elf", "Gnome": "gnome", "Half-elf": "half-elf",
          "Half-orc": "half-orc", "Halfling": "halfling"}
+MOSTRI = {"aasimar": ("monsters-o-r.md", "aasimar"), "goblin": ("monsters-g.md", "goblin"),
+          "hobgoblin": ("monsters-h-i.md", "hobgoblin"), "kobold": ("monsters-k-l.md", "kobold"),
+          "orc": ("monsters-o-r.md", "orc"), "tiefling": ("monsters-o-r.md", "tiefling")}
+SOTTORAZZE = {"drow": "elf", "duergar": "dwarf", "svirfneblin": "gnome"}
 CATEGORIE = {"Light armor": "leggera", "Medium armor": "media", "Heavy armor": "pesante"}
 
 
@@ -39,6 +44,16 @@ def razze(base: Path) -> "tuple[dict[str, int], list[str]]":
             velocita[RAZZE[nome]] = int(piedi)
             if re.search(r"even when wearing medium or heavy armor", resto):
                 non_rallenta.append(RAZZE[nome])
+    # le razze senza dadi vita razziali (chiavi di mdl.toml): «—A hobgoblin’s base land speed is 30 feet»
+    # nel capitolo dei mostri; una sottorazza tiene la velocità della razza da cui viene
+    for razza, (file, nome) in MOSTRI.items():
+        m = re.search(rf"^— ?An? {nome} ?’s base land speed is (\d+) feet\.",
+                      (base / "monsters" / file).read_text(encoding="utf-8"), re.M)
+        velocita[razza] = int(m.group(1))
+    for razza, madre in SOTTORAZZE.items():
+        velocita[razza] = velocita[madre]
+        if madre in non_rallenta:
+            non_rallenta.append(razza)
     return velocita, non_rallenta
 
 
@@ -85,7 +100,7 @@ def genera(base: Path) -> str:
     v, non = razze(base)
     arm, rid = armature(base), ridotta(base)
     barbaro, non_pesante, monaco = classi(base)
-    assert len(v) == 7 and len(arm) == 12 and len(monaco) == 20, (v, len(arm), len(monaco))
+    assert len(v) == 16 and len(arm) == 12 and len(monaco) == 20, (v, len(arm), len(monaco))
     q = lambda s: '"' + s + '"'  # noqa: E731
     return "\n".join([
         "# sistemi/dnd35/dati/movimento.toml — la velocità a terra 3.5 (ADR-0126, lotto 7)",

@@ -77,6 +77,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from dmcore import caratteristiche as CAR  # noqa: E402
 from dmcore import incantesimi as INC  # noqa: E402
+from dmcore import modelli as MOD  # noqa: E402
 from dmcore import tabelle as T  # noqa: E402
 from dmcore import sistemi as S  # noqa: E402
 from dmcore.progressione import ts_base_di  # noqa: E402
@@ -368,7 +369,8 @@ def genera(gs: int, *, tipo: str = "humanoid", taglia: str = "medium",
            classe: tuple[str, int] | None = None, piu_cattivi: bool = False,
            rng: random.Random | None = None, funzione: str | None = None,
            incantesimi_pf1e: bool | None = None,
-           talenti: str | None = "dnd35") -> tuple[Statblocco, Conto]:
+           talenti: str | None = "dnd35",
+           modello: str | None = None) -> tuple[Statblocco, Conto]:
     """Un blocco completo, e il conto che l'ha prodotto.
 
     `funzione` è la funzione da incantatore (controllore · blaster · supporto ·
@@ -383,7 +385,20 @@ def genera(gs: int, *, tipo: str = "humanoid", taglia: str = "medium",
 
     `talenti` è il sistema di cui si applicano i talenti (`applica_talenti`);
     None li lascia a chi converte il blocco in un altro sistema dopo.
+
+    `modello` è un modello semplice di PF1e (`dmcore/modelli.py`, lotto J):
+    advanced, giant, young, celestial, fiendish, entropic, resolute. Si applica
+    al blocco finito senza cambiare il GS scritto. `piu_cattivi` è il modello
+    «advanced» coi bersagli e gli incantesimi di PF1e: i due nomi dicono la
+    stessa cosa e chiederli insieme con un modello diverso è un errore.
     """
+    if modello:
+        modello = MOD.modello(modello)["chiave"]
+        if modello == "advanced":
+            piu_cattivi = True
+        elif piu_cattivi:
+            raise ValueError("«più cattivi» è il modello advanced: non si somma a "
+                             f"«{modello}»")
     rng = rng or random.Random()
     ruolo = normalizza_ruolo(ruolo)
     if ruolo not in RUOLI:
@@ -400,12 +415,17 @@ def genera(gs: int, *, tipo: str = "humanoid", taglia: str = "medium",
     else:
         sb, conto = _genera_mostro(gs, tipo, taglia, R, dv, piu_cattivi, conto, rng)
 
-    if piu_cattivi:
-        _applica_advanced(sb, conto)
+    traccia = None
+    if piu_cattivi or modello:
+        traccia = MOD.applica(sb, modello or "advanced")
+        for riga in traccia.righe:
+            conto.rincaro(riga)
     if talenti:
         applica_talenti(sb, conto, talenti, ruolo, rng)
     sb.fonte = _fonte(gs, tipo, taglia, ruolo, classe, piu_cattivi, conto,
                       funzione, incantesimi_pf1e)
+    if traccia:
+        sb.fonte += f" template={traccia.modello}-PF1e-gs-reale={traccia.gs_reale}"
     return sb, conto
 
 
@@ -746,53 +766,6 @@ def _collaudo_png(pf: int, ca: int, gs: int, gs_atteso: int, ruolo: str,
     conto(f"per confronto, un MOSTRO di GS {gs} avrebbe {bersaglio['pf']} pf e "
           f"CA {bersaglio['ca']}: questo PNG ({pf} pf, CA {ca}) non regge un "
           "incontro da solo, e va accompagnato o protetto")
-
-
-def _applica_advanced(sb: Statblocco, conto: Conto) -> None:
-    """Il template Advanced di PF1e, applicato senza alzare il GS.
-
-    Regole di ricostruzione: +4 a tutte le caratteristiche, +2 di armatura
-    naturale. Vale GS +1 — e non alzarlo è il punto: la creatura è più cattiva
-    di quanto il suo GS prometta, che è quello che il DM ha chiesto. Una riga
-    sola da disfare quando al tavolo è troppo.
-    """
-    attr = {}
-    for pezzo in sb.attributi.split():
-        if pezzo.isdigit() and attr:
-            ultimo = list(attr)[-1]
-            attr[ultimo] = int(pezzo) + ADVANCED["caratteristiche"]
-        elif pezzo == "—" and attr:
-            attr[list(attr)[-1]] = "—"     # chi non ha il punteggio non lo guadagna
-        else:
-            attr[pezzo] = None
-    sb.attributi = " ".join(f"{k} {v}" for k, v in attr.items())
-
-    # senza Costituzione il template non dà pf (il PF1e li ridà al non morto
-    # col Carisma, ma lo fa converti, che li ricalcola)
-    delta_cos = 0 if attr.get("Cos") == "—" else ADVANCED["caratteristiche"] // 2
-    dv = int(sb.pf_dado.split("d")[0])
-    sb.pf = str(int(sb.pf) + delta_cos * dv)
-    sb.ca = str(int(sb.ca) + ADVANCED["naturale"] + ADVANCED["caratteristiche"] // 2)
-    sb.ca_dettaglio = sb.ca_dettaglio.rstrip(")") + f", +{ADVANCED['naturale']} Advanced)"
-    delta_tiri = ADVANCED["caratteristiche"] // 2
-    sb.attacchi = [_rincara_attacco(a, delta_tiri) for a in sb.attacchi]
-    sb.ts = re.sub(r"([+-]\d+)",
-                   lambda mm: f"{int(mm.group(1)) + delta_tiri:+d}", sb.ts)
-    sb.voci.append("⚠ template Advanced (PF1e) applicato SENZA alzare il GS: "
-                   f"vale in realtà GS {int(sb.gs) + ADVANCED['gs_reale']}")
-    conto.rincaro(f"+{ADVANCED['caratteristiche']} a tutte le caratteristiche "
-                  f"(→ {delta_cos * dv:+d} pf, {delta_cos:+d} CA da Des), "
-                  f"+{ADVANCED['naturale']} armatura naturale")
-    conto.rincaro(f"il template vale GS +{ADVANCED['gs_reale']} e NON è stato "
-                  f"contato: la creatura è venduta come GS {sb.gs} ma picchia "
-                  f"come un GS {int(sb.gs) + ADVANCED['gs_reale']}")
-
-
-def _rincara_attacco(riga: str, delta: int) -> str:
-    """Le regole rapide di Advanced: +2 su tutti i tiri, danno compreso."""
-    riga = re.sub(r"([+-]\d+) \(", lambda m: f"{int(m.group(1)) + delta:+d} (", riga, count=1)
-    return re.sub(r"\(([0-9d]+)([+-]\d+)?\)",
-                  lambda m: f"({m.group(1)}{int(m.group(2) or 0) + delta:+d})", riga)
 
 
 # ── gli incantesimi scelti ──────────────────────────────────────────────────
@@ -1164,7 +1137,11 @@ def costruisci_parser() -> argparse.ArgumentParser:
                    help="forza la matrice standard (13,12,11,10,9,8)")
     p.add_argument("--piu-cattivi", action="store_true",
                    help="sale ai bersagli PF1e, più duri a pari GS. Ogni rincaro "
-                        "è elencato in fonte:")
+                        "è elencato in fonte:. È «--template advanced»")
+    p.add_argument("--template", default=None, metavar="NOME", choices=MOD.nomi(),
+                   help="un modello semplice di PF1e applicato al blocco finito senza "
+                        "cambiare il GS scritto: " + ", ".join(MOD.nomi()) + ". Il blocco "
+                        "dice in una voce quanto vale davvero")
     p.add_argument("--sistema", default=None,
                    help="sistema di gioco del blocco (sistemi.toml): pf1e ricalcola dado, BAB, "
                         "TS, BMC/DMC e gradi dal PRD (dmcore/creature_pf1e.py). Se omesso, "
@@ -1293,6 +1270,10 @@ def main(argv: list[str] | None = None) -> int:
         if args.sistema != "pf1e":
             raise SystemExit(f"genera_creatura: nessuna conversione per «{args.sistema}»")
         from dmcore import creature_pf1e as CP
+        if args.classe and args.template:
+            raise SystemExit("genera_creatura: --template su un PNG PF1e con classe non è "
+                             "ancora gestito (BMC e DMC non si ricalcolano); funziona sui "
+                             "mostri e sui blocchi 3.5")
         if args.classe:
             # PF1e: costruito dalle tabelle del PRD (classi.toml), per tutte le
             # classi e in multiclasse, non portato dal 3.5
@@ -1313,16 +1294,25 @@ def main(argv: list[str] | None = None) -> int:
 
     rng = random.Random(args.seed)
     fuori = []
+    if args.template and args.piu_cattivi and args.template != "advanced":
+        raise SystemExit("genera_creatura: --piu-cattivi è --template advanced, non si "
+                         f"somma a --template {args.template}")
     for i in range(args.quanti):
-        sb, conto = genera(args.gs, tipo=args.tipo, taglia=args.taglia,
-                           ruolo=args.ruolo, dv=args.dv, elite=args.elite,
-                           classe=args.classe, piu_cattivi=args.piu_cattivi,
-                           rng=rng, funzione=args.funzione,
-                           incantesimi_pf1e=(None if args.incantesimi is None
-                                             else args.incantesimi == "pf1e"),
-                           talenti=None if args.sistema == "pf1e" else "dnd35")
+        try:
+            sb, conto = genera(args.gs, tipo=args.tipo, taglia=args.taglia,
+                               ruolo=args.ruolo, dv=args.dv, elite=args.elite,
+                               classe=args.classe, piu_cattivi=args.piu_cattivi,
+                               modello=args.template,
+                               rng=rng, funzione=args.funzione,
+                               incantesimi_pf1e=(None if args.incantesimi is None
+                                                 else args.incantesimi == "pf1e"),
+                               talenti=None if args.sistema == "pf1e" else "dnd35")
+        except MOD.ModelloVietato as e:
+            raise SystemExit(f"genera_creatura: {e}")
         if args.sistema == "pf1e":
-            sb, righe = CP.converti(sb, args.tipo, args.taglia, pf_bersaglio=bersaglio_di(
+            # un modello può aver cambiato la taglia: si converte quella del blocco
+            sb, righe = CP.converti(sb, args.tipo, MOD.taglia_di(sb) if args.template
+                                    else args.taglia, pf_bersaglio=bersaglio_di(
                 args.gs, normalizza_ruolo(args.ruolo), piu_cattivi=False)[0]["pf"])
             conto.righe.extend(righe)
             if conto.talenti and not conto.talenti.get("livelli"):

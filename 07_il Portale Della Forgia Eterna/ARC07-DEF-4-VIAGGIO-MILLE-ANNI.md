@@ -4410,8 +4410,8 @@ tipo: Nano Medio · Guerriero 6
 taglia: Media
 spazio: 1,5 m
 portata: 1,5 m
-ca: 22
-ca-dettaglio: arm. completa +1, scudo pesante +1
+ca: 21
+ca-dettaglio: arm. completa +1, scudo pesante perfetto
 pf: 52
 ts: Temp +8, Rifl +2, Vol +4
 attributi: For 18 Cos 16 Sag 14
@@ -4419,13 +4419,13 @@ sensi: scurovisione 18 m
 attacchi:
   - Mischia ascia da guerra nanica +1 +11 (1d10+5, ×3), a una mano
 ```
-**Difesa** **CA 22** (arm. completa +1, scudo pesante +1) · **pf 52** · TS Temp +8, Rifl +2, Vol +4
+**Difesa** **CA 21** (arm. completa +1, scudo pesante perfetto) · **pf 52** · TS Temp +8, Rifl +2, Vol +4
 
 **Attacco** **Mischia** ascia da guerra nanica +1 +11 (1d10+5, ×3), a una mano
 
 **Tattiche** Non vuole lo scontro con i PG e sa di non reggerlo: alla prima ferita grave getta l'ascia e grida *«Se siete dei nostri, dimostratelo!»* (§6, «Attaccano la pattuglia di Durin»). Nella Scena 6 li accompagna fino alla postierla e lì resta (la tiene aperta per il ritorno, Scena 8).
 
-**Statistiche** For 18, Cos 16, Sag 14 · BAB +6; Lotta +10 · **Linguaggi** Comune, Nanico · **Qualità speciali** tratti dei nani (SRD) · **Altro equipaggiamento** armatura completa +1, scudo pesante +1, ascia da guerra nanica +1
+**Statistiche** For 18, Cos 16, Sag 14 · BAB +6; Lotta +10 · **Linguaggi** Comune, Nanico · **Qualità speciali** tratti dei nani (SRD) · **Altro equipaggiamento** armatura completa +1, scudo pesante perfetto, ascia da guerra nanica +1
 
 **Onesto e leale fino alla morte** una volta convinto; antenato di Othrek (Hammerfist 1372).
 

@@ -306,6 +306,57 @@ class TestDoveStaScritto(unittest.TestCase):
         self.assertEqual(giudica(coda), ([], []))
 
 
+class TestPiuSchedeNelFile(unittest.TestCase):
+    """Un master d'arco ha più schede: ognuna si giudica da sola (lotto 8, quinta parte)."""
+
+    def _master(self, *code: str) -> "tuple[list, list]":
+        import tempfile
+        from tests.test_difese import SCHEDA
+        pezzi = [SCHEDA.format(coda=c, titolo=f"Scheda {k + 1}", tipo="Medium humanoid (human)", classe="Fighter 3",
+                               dadi="3d10+6").replace("# Scheda", "## Scheda") for k, c in enumerate(code)]
+        with tempfile.TemporaryDirectory() as d:
+            q = Path(d) / "master.md"
+            q.write_text("# Arco di prova\n\n" + "\n\n".join(pezzi), encoding="utf-8")
+            return V.ricchezza(q)
+
+    def test_la_scheda_ricca_esce_col_suo_titolo_e_la_sua_riga(self):
+        ricca = "**Equipaggiamento** amuleto della salute +2, mantello della resistenza +1"       # 5.000 > 2.500
+        povera = "**Equipaggiamento** mantello della resistenza +1"
+        v, n = self._master(povera, ricca, povera)
+        self.assertEqual([(x["scheda"], x["regola"]) for x in v], [("Scheda 2 [INFERRED]", "equipaggiamento.valore")])
+        self.assertEqual(n, [])
+        da_sola = giudica(ricca)[0][0]
+        self.assertGreater(v[0]["riga"], da_sola["riga"])             # la riga è quella nel file, non nel pezzo
+        self.assertEqual(v[0]["ha"], da_sola["ha"])
+
+    def test_gli_oggetti_di_una_scheda_non_si_sommano_a_quelli_dell_altra(self):
+        meta = "**Equipaggiamento** mantello della resistenza +1"                                   # 1.000 l'una
+        self.assertEqual(self._master(meta, meta, meta, meta), ([], []))
+
+    def test_la_dichiarazione_vale_per_la_sua_scheda_soltanto(self):
+        ricca = "**Equipaggiamento** amuleto della salute +2, mantello della resistenza +1"
+        dichiarata = ricca + "\n\n> Equipaggiamento sopra la tabella: scelta del DM (2026-11-14), conta nel GS."
+        v, _ = self._master(dichiarata, ricca)
+        self.assertEqual([x["scheda"] for x in v], ["Scheda 2 [INFERRED]"])
+
+
+class Archi(unittest.TestCase):
+    #: schede dei master d'arco sopra la Tabella 4-23, con una decisione aperta del DM (titolo della scheda)
+    IN_ATTESA: "set[str]" = set()
+
+    def test_gli_archi_non_hanno_altri_scarti(self):
+        trovate, attese = [], set()
+        for cartella in sorted(ROOT.glob("0*")):
+            for p in sorted(cartella.rglob("*.md")):
+                for x in V.ricchezza(p)[0]:
+                    if x.get("scheda") in self.IN_ATTESA:
+                        attese.add(x["scheda"])
+                    else:
+                        trovate.append(f"{x['file']}:{x['riga']} {x.get('scheda', '')} {x['testo']}")
+        self.assertEqual(trovate, [])
+        self.assertEqual(attese, self.IN_ATTESA, "una scheda in attesa è stata corretta: toglierla dall'elenco")
+
+
 class Bestiario(unittest.TestCase):
     #: schede che superano la Tabella 4-23 col prezzo base e le voci lette da questa PR (ADR-0134):
     #: una card per scheda al DM, le schede non si toccano qui

@@ -5,7 +5,9 @@ Uso: python3 estrai_linguaggi.py [<cartella srd-v3.5-md>]            # scrive il
      python3 estrai_linguaggi.py --check [<cartella srd-v3.5-md>]    # 1 se il file non è aggiornato
 
 Dall'SRD 3.5 (olimot/srd-v3.5-md@c7f30a0c, OGL), solo nomi:
-  razze   «Automatic Language(s): …» di ognuna delle sette razze
+  razze   «Automatic Language(s): …» di ognuna delle sette razze, e delle
+          razze senza dadi vita razziali di `mdl.toml` che hanno la riga nel
+          loro capitolo dei mostri («… as Characters»)
   classi  il druido: «A druid also knows Druidic»
 I nomi italiani dei linguaggi sono scritti qui a mano, non vengono dall'SRD.
 """
@@ -22,7 +24,15 @@ RAZZE = {"Humans": "human", "Dwarves": "dwarf", "Elves": "elf", "Gnomes": "gnome
          "Half-Orcs": "half-orc", "Halflings": "halfling"}
 #: come una scheda scrive ogni linguaggio (espressioni regolari)
 NOMI = {"Common": "comune|common", "Dwarven": "nanico|dwarven", "Elven": "elfico|elven", "Gnome": "gnomesco|gnome",
-        "Orc": "orchesco|orc", "Halfling": "halfling", "Druidic": "druidico|druidic"}
+        "Orc": "orchesco|orc", "Halfling": "halfling", "Druidic": "druidico|druidic",
+        "Goblin": "goblin", "Draconic": "draconico|draconic", "Undercommon": "sottocomune|undercommon",
+        "Celestial": "celestiale|celestial", "Infernal": "infernale|infernal"}
+#: le razze senza dadi vita razziali (chiavi di mdl.toml): file dei mostri e titolo che precede la riga
+MOSTRI = {"aasimar": ("monsters-o-r.md", "Aasimar as Characters"), "drow": ("monsters-e-f.md", "Drow"),
+          "duergar": ("monsters-dr-dw.md", "Duergar"), "goblin": ("monsters-g.md", "Goblins as Characters"),
+          "hobgoblin": ("monsters-h-i.md", "Hobgoblin Characters"), "kobold": ("monsters-k-l.md", "Kobold Characters"),
+          "orc": ("monsters-o-r.md", "Orcs as Characters"), "svirfneblin": ("monsters-g.md", "Svirfneblin"),
+          "tiefling": ("monsters-o-r.md", "Tieflings as Characters")}
 
 
 def razze(base: Path) -> "dict[str, list[str]]":
@@ -38,14 +48,29 @@ def razze(base: Path) -> "dict[str, list[str]]":
     return out
 
 
+def mostri(base: Path) -> "dict[str, list[str]]":
+    out = {}
+    for razza, (file, titolo) in MOSTRI.items():
+        ultimo = None
+        for riga in (base / "monsters" / file).read_text(encoding="utf-8").split("\n"):
+            m = re.match(r"#+ (.+)$", riga)
+            if m:
+                ultimo = m.group(1).strip()
+            m = re.match(r"— ?Automatic Languages?: ([^.]+)\.", riga)
+            if m and ultimo == titolo:
+                out[razza] = [x.strip() for x in re.split(r",| and ", m.group(1)) if x.strip()]
+    return out
+
+
 def druido(base: Path) -> str:
     t = (base / "basic-rules-and-legal" / "character-classes-i.md").read_text(encoding="utf-8")
     return re.search(r"A druid also knows (\w+), a secret language", t).group(1)
 
 
 def genera(base: Path) -> str:
-    r, d = razze(base), druido(base)
-    assert set(r) == set(RAZZE.values()) and all(x in NOMI for v in r.values() for x in v) and d in NOMI, (r, d)
+    r, d, mo = razze(base), druido(base), mostri(base)
+    assert set(mo) == set(MOSTRI), sorted(set(MOSTRI) - set(mo))
+    assert set(r) == set(RAZZE.values()) and all(x in NOMI for v in mo.values() for x in v) and all(x in NOMI for v in r.values() for x in v) and d in NOMI, (r, d)
     q = lambda s: '"' + s + '"'  # noqa: E731
     return "\n".join([
         "# sistemi/dnd35/dati/linguaggi.toml — i linguaggi che razza e classe danno da soli (ADR-0126, lotto 7)",
@@ -56,6 +81,8 @@ def genera(base: Path) -> str:
         "[linguaggi.razze]",
         "# SRD, razze: «Automatic Languages»",
         *[f"{q(n)} = [{', '.join(q(x) for x in v)}]" for n, v in sorted(r.items())],
+        "# SRD, mostri: «Automatic Languages» delle razze senza dadi vita razziali (le chiavi di mdl.toml)",
+        *[f"{q(n)} = [{', '.join(q(x) for x in v)}]" for n, v in sorted(mo.items())],
         "",
         "[linguaggi.classi]",
         "# SRD, druido: «A druid also knows Druidic»",

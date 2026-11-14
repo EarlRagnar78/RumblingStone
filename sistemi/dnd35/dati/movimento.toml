@@ -7,7 +7,7 @@
 # SRD, «Armor and Shields»: l'armatura media o pesante riduce la velocità a quella di
 # `[movimento.ridotta]`; `non_rallenta`: le razze che in armatura non rallentano.
 # SRD, «Special Materials»: un'armatura di mithral conta una categoria più leggera.
-non_rallenta = ["dwarf"]
+non_rallenta = ["dwarf", "duergar"]
 rallentano = ["media", "pesante"]
 piedi_per_metro_e_mezzo = 5
 
@@ -19,6 +19,15 @@ piedi_per_metro_e_mezzo = 5
 "half-elf" = 30
 "half-orc" = 30
 "halfling" = 20
+"aasimar" = 30
+"goblin" = 30
+"hobgoblin" = 30
+"kobold" = 30
+"orc" = 30
+"tiefling" = 30
+"drow" = 30
+"duergar" = 20
+"svirfneblin" = 20
 
 [movimento.armature]
 "padded" = { ca = 1, des_max = 8, categoria = "leggera" }

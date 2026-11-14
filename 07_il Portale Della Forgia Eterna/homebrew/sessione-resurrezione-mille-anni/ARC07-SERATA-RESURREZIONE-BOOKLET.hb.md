@@ -7666,7 +7666,7 @@ ___
 
 **DIFESA**
 ___
-**CA 22** (arm. completa +1, scudo pesante +1) · **pf 52** · TS Temp +8, Rifl +2, Vol +4  
+**CA 21** (arm. completa +1, scudo pesante perfetto) · **pf 52** · TS Temp +8, Rifl +2, Vol +4  
 
 **ATTACCO**
 ___
@@ -7678,7 +7678,7 @@ Non vuole lo scontro con i PG e sa di non reggerlo: alla prima ferita grave gett
 
 **STATISTICHE**
 ___
-For 18, Cos 16, Sag 14 · BAB +6; Lotta +10 · **Linguaggi** Comune, Nanico · **Qualità speciali** tratti dei nani (SRD) · **Altro equipaggiamento** armatura completa +1, scudo pesante +1, ascia da guerra nanica +1  
+For 18, Cos 16, Sag 14 · BAB +6; Lotta +10 · **Linguaggi** Comune, Nanico · **Qualità speciali** tratti dei nani (SRD) · **Altro equipaggiamento** armatura completa +1, scudo pesante perfetto, ascia da guerra nanica +1  
 }}
 
 **Onesto e leale fino alla morte** una volta convinto; antenato di Othrek (Hammerfist 1372).

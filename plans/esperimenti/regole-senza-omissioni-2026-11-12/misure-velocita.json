@@ -1,26 +1,35 @@
 {
  "conto": {
   "schede con una riga di velocità": 100,
-  "giudicate": 18,
-  "già fuori regola": 0,
-  "dubbie": 0
+  "giudicate": 34,
+  "già fuori regola": 2,
+  "dubbie": 9
  },
  "esiti": {
   "più 3 m": {
-   "trovate": 15,
-   "scritte": 18
+   "trovate": 27,
+   "scritte": 34
   },
   "meno 3 m": {
-   "trovate": 15,
-   "scritte": 18
+   "trovate": 26,
+   "scritte": 34
   }
  },
  "perse": [
+  "Bestiario/mostri/chierico-gruumsh-cr11.md: più 3 m",
+  "Bestiario/mostri/chierico-gruumsh-cr11.md: meno 3 m",
+  "Bestiario/mostri/goblin-worg-raider-ftr5-cr5.md: meno 3 m",
+  "Bestiario/mostri/hobgoblin-portalame-ftr7-cr7.md: più 3 m",
+  "Bestiario/mostri/hobgoblin-portalame-ftr7-cr7.md: meno 3 m",
+  "Bestiario/mostri/spezzamente-kulkor-zhul-cr12.md: più 3 m",
+  "Bestiario/mostri/spezzamente-kulkor-zhul-cr12.md: meno 3 m",
   "Bestiario/png/Lythiel/Lythiel.md: più 3 m",
   "Bestiario/png/Lythiel/Lythiel.md: meno 3 m",
   "Bestiario/png/Tempestas/Tempestas.md: più 3 m",
   "Bestiario/png/Tempestas/Tempestas.md: meno 3 m",
   "Bestiario/png/lomyn-redtongue-bardo8-cr8.md: più 3 m",
-  "Bestiario/png/lomyn-redtongue-bardo8-cr8.md: meno 3 m"
+  "Bestiario/png/lomyn-redtongue-bardo8-cr8.md: meno 3 m",
+  "Bestiario/villain/ur-vrax-voce-del-drago-cr10.md: più 3 m",
+  "Bestiario/villain/ur-vrax-voce-del-drago-cr10.md: meno 3 m"
  ]
 }

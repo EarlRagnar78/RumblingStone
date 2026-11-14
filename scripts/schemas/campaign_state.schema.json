@@ -364,6 +364,16 @@
               "null"
             ]
           },
+          "dal_giorno": {
+            "description": "Il giorno del March Clock da cui il PNG lo sa; 0 = prima del Day 1. OPZIONALE: una riga senza giorno resta fra i non verificabili di `coerenza_campagna fatti --state`. I giorni li conferma il DM (2026-11-13), non si deducono.",
+            "type": "integer",
+            "minimum": 0
+          },
+          "informato_da": {
+            "description": "Il `png_id` di chi glielo ha detto, solo se l'ha saputo da un altro PNG. R10 verifica che esista; la regola T2 di `coerenza_campagna` verifica che chi informa sappia qualcosa non dopo.",
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
           "png_id": {
             "description": "Riferimento all'anagrafica `png`. R10 verifica che esista: un id che non risolve e' un collegamento rotto che nessuno vedrebbe, perche' il nome per esteso resta leggibile.",
             "type": "string",

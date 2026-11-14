@@ -53,5 +53,5 @@ che è una battaglia di massa. Nessuno dei due numeri regge un incontro, e per
 questo la voce segue il master senza forzare.
 
 🔴 **E non è uno dei quattro PNG giocabili.** Quelli sono di ARC-08, nel
-**1372**: Borin Ferropugno (GS 13), Dara Occhiolesto, Thorin Runaforte e Nala
+**1372**: Borin Giuraferro (GS 13), Dara Occhiolesto, Harbek Runaforte e Nala
 Cantapietre (GS 12). Durin è di mille anni prima e non compare in ARC-08.

@@ -51,11 +51,11 @@ incantesimo che manca a un difensore.
 | Ruolo | Chi, e dove |
 |---|---|
 | comando | **Re Thorek Hammerfist**, sulle mura o al consiglio di guerra |
-| culto | **Dana Forgiapietra**, chierica di Moradin, con i feriti; **Thorin Runaforte**, il sacerdote delle rune, alla porta |
+| culto | **Dagmar Forgiapietra**, chierica di Moradin, con i feriti; **Harbek Runaforte**, il sacerdote delle rune, alla porta |
 | rimedi | i chierici di Dana, nella sala dei feriti dietro la seconda porta |
 | bottega | nessuna: la fucina ripara e basta, e solo fra un'ondata e l'altra |
 | messaggi | **Nala Cantapietre** porta gli ordini a voce |
-| guardia | **Borin Ferropugno** in prima linea; **Khorn** alla porta di mithral |
+| guardia | **Borin Giuraferro** in prima linea; **Khorn** alla porta di mithral |
 
 > **Read-aloud (Salvatore lead, BG3 support) — la fucina sotto assedio.** *La
 > fucina è la stessa. Le tre bocche di pietra, l'incudine consumata a conca, la
@@ -80,7 +80,7 @@ l'hanno comprata: lo dice il log della serata del 372, sul ramo del gruppo.*
 |---|---|---|---|
 | Riparare un'arma o un'armatura | la fucina | **10%** del prezzo dell'oggetto (convenzione del tavolo, kit §2) | un'ora fra un'ondata e l'altra, non una giornata: la fucina lascia indietro le punte di freccia |
 | *Ristorare inferiore*, *rimuovi paralisi*, *neutralizza veleno* | i chierici di Dana | 60 · 60 · 280 mo | uno slot che manca alla sala dei feriti |
-| *Ristorare*, *spezzare incantamento*, *rianimare morti* | Dana o Thorin | 380 · 450 · 5.450 mo | **un tiro sul *Registro delle Perdite*** (`ARC08-03-REGISTRO-PERDITE.md`) per ogni incantesimo di 4° livello o più, come nella fucina di Gunnvor |
+| *Ristorare*, *spezzare incantamento*, *rianimare morti* | Dana o Harbek | 380 · 450 · 5.450 mo | **un tiro sul *Registro delle Perdite*** (`ARC08-03-REGISTRO-PERDITE.md`) per ogni incantesimo di 4° livello o più, come nella fucina di Gunnvor |
 | Pozioni, bacchette, pergamene | nessuno | — | quello che c'è sta già nelle mani dei difensori |
 | Identificare un oggetto | nessuno, adesso | — | Nala sa lanciare *identificare*, ma stanotte porta ordini. Dopo la battaglia, §3 |
 
@@ -156,7 +156,7 @@ divida. È poco, ed è tutto quello che una rocca di novanta superstiti può far
 | Ruolo | Chi, e dove |
 |---|---|
 | comando | **Re Thorek**, nella sala del trono; per i PG chi decide è il re in persona |
-| culto | **Dana Forgiapietra** e **Thorin Runaforte**, nella cappella della forgia |
+| culto | **Dagmar Forgiapietra** e **Harbek Runaforte**, nella cappella della forgia |
 | rimedi | i chierici di Dana, con quello che resta |
 | bottega | il **capo armaiolo** alla fucina; il **forziere del re** per la magia, tramite il tesoriere |
 | messaggi | **Nala Cantapietre**, che sa anche *identificare* |
@@ -167,7 +167,7 @@ dichiarato)*. Con novanta difensori Hammerfist è un **villaggio** (valore base
 500 mo, limite d'acquisto 2.500 mo, incantesimi fino al 3° livello). È
 **devota**, con un livello d'incantesimo in più, ed è **impoverita** dal lutto e
 dall'assedio, che dimezza valore base, limite d'acquisto e oggetti in vendita.
-Dana e Thorin, come PNG con nome, lanciano oltre quel tetto.
+Dana e Harbek, come PNG con nome, lanciano oltre quel tetto.
 
 | Voce | Dopo la Cerimonia |
 |---|---|
@@ -197,9 +197,9 @@ più le componenti), come nel kit §2.
 | Servizio | Chi | Prezzo | Nota |
 |---|---|---:|---|
 | *Ristorare inferiore* · *rimuovi malattia* | i chierici di Dana | 60 · 150 mo | |
-| *Neutralizza veleno* · *ristorare* | Thorin | 280 · 380 mo | *ristorare* con 100 mo di polvere di diamante |
+| *Neutralizza veleno* · *ristorare* | Harbek | 280 · 380 mo | *ristorare* con 100 mo di polvere di diamante |
 | *Rimuovi maledizione* · *spezzare incantamento* | Dana | 150 · 450 mo | serve per gli oggetti maledetti dei banchi di ARC-09 |
-| *Rianimare morti* | Thorin | 5.450 mo | i diamanti della rocca vanno prima ai caduti nani, e *rianimare morti* di Thorin, chierico di 12°, vale fino a 12 giorni dalla morte: per i PG ne resta **uno** |
+| *Rianimare morti* | Harbek | 5.450 mo | i diamanti della rocca vanno prima ai caduti nani, e *rianimare morti* di Harbek, chierico di 12°, vale fino a 12 giorni dalla morte: per i PG ne resta **uno** |
 | *Guarigione* · *dissolvi magie superiore* | Dana | 660 · 660 mo | |
 | *Resurrezione* · *rigenerazione* | Dana | 10.910 · 910 mo | 7° livello. La *resurrezione* vuole un diamante da 10.000 mo, e quelli della rocca vanno ai caduti nani: la paga chi porta il diamante |
 | Identificare un oggetto | Nala | 110 mo | un'ora e una perla da 100 mo per oggetto. Nala ha quattro incantesimi di 1° al giorno e conosce *identificare* (DM 2026-10-18) |

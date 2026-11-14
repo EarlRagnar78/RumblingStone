@@ -98,7 +98,7 @@ P6-INTEGRAZIONE-Completa.md` r.621-753)**:
 ## 3. La regia del passaggio pregen→PG (D6) — momento più delicato dell'arco
 
 Fino a questo istante i giocatori hanno impersonato i **pregen "Eroi di
-Hammerfist"** (Borin, Dara, Thorin Runaforte, Nala). Qui li lasciano e
+Hammerfist"** (Borin, Dara, Harbek Runaforte, Nala). Qui li lasciano e
 riprendono i loro **PG reali** (Rumbling Stones).
 
 ### 3.1 Cosa sanno i PG di ciò che i pregen hanno visto

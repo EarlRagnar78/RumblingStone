@@ -69,10 +69,10 @@
 > - **La Mente Vuota di Thorik non blocca la visione**, perché la visione
 >   viene dalla Corona stessa `[CANONE — DM 2026-11-04, P16, dopo la battaglia]`.
 >   <!-- storico -->Fino al 2026-11-04 era una proposta in attesa del DM; confermata con la card «Dopo la battaglia» di P16 (plans/esperimenti/p16-inferred-2026-11-04/ARC08-DECISIONI.md).<!-- /storico -->
-> - **Chi gioca chi.** Proposta: Borin a chi gioca Thorik, Thorin
+> - **Chi gioca chi.** Proposta: Borin a chi gioca Thorik, Harbek
 >   Runaforte a chi gioca Hella, Dara a chi gioca Tordek, Nala a chi gioca
 >   Artemis. Ognuno resta vicino al ruolo che sa già giocare.
-> - **I nomi che si somigliano** (Thorin, Thorek, Thorik; Dara e Dana) sono
+> - **I nomi che si somigliano** (Thorek e Thorik; Dara e Dana) sono
 >   canone e non si cambiano. Al tavolo e nei box il re è «il Re» o «Thorek
 >   Hammerfist», Dana è «la Madre Superiora», il pregen è «Runaforte».
 > - **La posta, in numeri**, sta in `ARC08-10-ESITI-E-CONTINGENZE.md` §5:
@@ -88,7 +88,7 @@
 > prima della battaglia. I giocatori impersonano questi quattro fino al
 > passaggio di testimone (`ARC08-11-PONTE-ARRIVO.md`), poi riprendono i loro
 > Rumbling Stones. Una scheda per giocatore, una pagina l'una, e con ogni
-> scheda la sua **carta dei poteri** (sotto), una pagina, quella di Thorin
+> scheda la sua **carta dei poteri** (sotto), una pagina, quella di Harbek
 > due: ogni incantesimo e ogni capacità con i numeri già calcolati, così
 > nessuno deve aprire un manuale.
 > I numeri sono quelli corretti del Bestiario (2026-10-16; schede in
@@ -97,7 +97,7 @@
 > l'abilità si usa senza gradi. Il conto, grado per grado, è in
 > `plans/esperimenti/giro-arc08-sessione1-2026-10-21/ABILITA-PREGEN.md`.
 
-### HANDOUT 1 — BORIN FERROPUGNO, *Il Martello di Hammerfist*
+### HANDOUT 1 — BORIN GIURAFERRO, *Colui che non arretra*
 *Nano Guerriero 10° / Campione Nanico 3° — GS 13*
 > *Sei il nipote del precedente Re, un nano nel fiore degli anni che
 > vive per la battaglia. Grida "Seguitemi!" e gettati per primo nella
@@ -113,7 +113,7 @@
 - **Lingue**: Comune, Nanico
 - **Battaglia campale**: Combattere **+21**.
 
-### HANDOUT 2 — DARA OCCHIOLESTO, *L'Occhio delle Montagne*
+### HANDOUT 2 — DARA OCCHIOLESTO, *Morte dai Picchi*
 *Nana Ranger 8° / Esploratrice dei Picchi 4° — GS 12*
 > *Sei la migliore esploratrice di Hammerfist, occhi acuti come lame.
 > Agisci dalle ombre, eliminando i bersagli prioritari da lontano.*
@@ -133,7 +133,7 @@
   le CD per contare l'orda dal crinale salgono di 10.
 - **Battaglia campale**: Combattere **+19**, **+25** contro un reparto d'orchi.
 
-### HANDOUT 3 — THORIN RUNAFORTE, *La Voce di Moradin*
+### HANDOUT 3 — HARBEK RUNAFORTE, *Custode dell'Ultima Runa*
 *Nano Chierico 9° / Sacerdote delle Rune 3° — GS 12*
 > *Sei un anziano saggio, fede in Moradin che brucia come lava.
 > Consigliere spirituale del Re, custode delle rune.*
@@ -152,7 +152,7 @@
 - **Battaglia campale**: Combattere **+14**; i suoi incantesimi migliori sono
   gesti a sé (carta dei poteri).
 
-### HANDOUT 4 — NALA CANTAPIETRE, *La Lama Nascosta*
+### HANDOUT 4 — NALA CANTAPIETRE, *Il Sorriso prima della Lama*
 *Nana Bardo 8° / Spia Maestra 4° — GS 12*
 > *Ufficialmente barda di corte, in realtà occhi e orecchie di
 > Hammerfist. Il tuo sorriso può celare una lama.*
@@ -222,9 +222,9 @@ scelti dalla lista del ranger dell'SRD 3.5, quelli che le servono di più:
 due per l'avvistamento e uno per l'arco, che è la versione più forte di una
 cecchina. `[CANONE — DM 2026-10-21]`
 
-### Carta di Thorin — il chierico di 12° livello
+### Carta di Harbek — il chierico di 12° livello
 
-Thorin prega ogni mattina gli incantesimi sotto. CD del tiro salvezza
+Harbek prega ogni mattina gli incantesimi sotto. CD del tiro salvezza
 **16 + livello** dell'incantesimo. Gli attacchi di contatto in mischia
 (*Ferire*, le cure su un non morto) si tirano a **+11**. Il talento
 Incantesimi Potenziati fa +50% a tutti i dadi, ma occupa uno spazio di due

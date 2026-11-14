@@ -6,11 +6,11 @@
 > **Stato**: canonico (materiale di modulo; canone di trama in
 > `campaign/state.md`, non ancora giocato — vedi piano ARC-08 A0).
 > **Ultima revisione**: 2026-07-02.
-> **⚠️ Disambiguazione nomi (A10, D2)**: **Thorin** Runaforte = pregen
-> chierico (agisce SOLO nel flashback D6, poi come PNG); **Thorik** =
-> PG guerriero (compare SOLO dal finale, D6/E6); **Thorek** = Re di
-> Hammerfist (comandante difensore per tutta la battaglia). Tre
-> persone diverse — mai fonderle.
+> **⚠️ Nomi (A10, D2)**: **Thorik** = PG guerriero (compare SOLO dal
+> finale, D6/E6); **Thorek** = Re di Hammerfist (comandante difensore per
+> tutta la battaglia). Due persone diverse — mai fonderle. Il pregen
+> chierico si chiama **Harbek** Runaforte dal 2026-11-14 (DM): il terzo
+> nome simile non c'è più.
 
 ### **INDICE DELLE APPENDICI**
 
@@ -22,7 +22,7 @@
 
 2.  **Schede dei PNG Alleati**
     *   Re Thorek Hammerfist
-    *   Madre Superiora Dana Forgiapietra
+    *   Madre Superiora Dagmar Forgiapietra
     *   Le Cantitrici della Pietra
     *   Signore Ventolesto (Gufo Celestiale Alpha)
     *   Capitano Lunapiena (Leader Ranger Elfico)
@@ -30,9 +30,9 @@
     *   Maestro Tempestas (Bardo/Cantore delle tempeste)
 
 3.  **Schede dei PNG Giocabili (Eroi di Hammerfist)**
-    *   Borin Ferropugno (Guerriero/Campione Nanico)
+    *   Borin Giuraferro (Guerriero/Campione Nanico)
     *   Dara Occhiolesto (Ranger/Esploratrice dei Picchi)
-    *   Thorin Runaforte (Chierico/Sacerdote delle Rune)
+    *   Harbek Runaforte (Chierico/Sacerdote delle Rune)
     *   Nala Cantapietre (Bardo/Spia Maestra)
 
 4.  **Guida al Combattimento di Massa**
@@ -358,7 +358,7 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 ---
 <div style="page-break-before:always"></div>
 
-### **MADRE SUPERIORA DANA FORGIAPIETRA**
+### **MADRE SUPERIORA DAGMAR FORGIAPIETRA, DETTA DANA**
 *Nana Chierico 12°/Cantante Divina 3°, GS 14*
 **LB Umanoide Medio (Nano)**
 **Iniziativa:** +1; **Sensi:** Scurovisione 18m; Ascoltare +21, Osservare +21
@@ -613,7 +613,7 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 *(Da stampare e consegnare ai giocatori per le Sessioni 1 e 2)*
 
 ---
-### **BORIN FERROPUGNO, Il Martello di Hammerfist**
+### **BORIN GIURAFERRO, Colui che non arretra**
 **Classe:** Nano Guerriero 10°/Campione Nanico 3° (GS 13)
 **Ruolo:** Leader in prima linea, tank, ispiratore.
 > *"Sei il nipote del precedente Re, un nano nel fiore degli anni che vive per la battaglia. Grida 'Seguitemi!' e gettati per primo nella mischia. Il tuo compito è tenere la linea e proteggere il Re."*
@@ -640,7 +640,7 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 ---
 <div style="page-break-before:always"></div>
 
-### **DARA OCCHIOLESTO, L'Occhio delle Montagne**
+### **DARA OCCHIOLESTO, Morte dai Picchi**
 **Classe:** Nana Ranger 8°/Esploratrice dei Picchi 4° (GS 12)
 **Ruolo:** Cecchino, scout, cacciatrice di élite.
 > *"Sei la migliore esploratrice di Hammerfist, una nana dagli occhi acuti come lame. Agisci dalle ombre, eliminando i bersagli prioritari da lontano per cambiare le sorti della battaglia."*
@@ -670,7 +670,7 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 ---
 <div style="page-break-before:always"></div>
 
-### **THORIN RUNAFORTE, La Voce di Moradin**
+### **HARBEK RUNAFORTE, Custode dell'Ultima Runa**
 **Classe:** Nano Chierico 9°/Sacerdote delle Rune 3° (GS 12)
 **Ruolo:** Guaritore, supporto divino, controllo del campo di battaglia.
 > *"Sei un anziano saggio la cui fede in Moradin brucia come lava. Sei il consigliere spirituale del Re e il custode delle antiche rune. La tua magia può salvare vite o distruggere nemici."*
@@ -700,7 +700,7 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 ---
 <div style="page-break-before:always"></div>
 
-### **NALA CANTAPIETRE, La Lama Nascosta**
+### **NALA CANTAPIETRE, Il Sorriso prima della Lama**
 **Classe:** Nana Bardo 8°/Spia Maestra 4° (GS 12)
 **Ruolo:** Infiltratrice, sabotatrice, supporto tattico e morale.
 > *"Ufficialmente sei una barda di corte, ma in realtà sei gli occhi e le orecchie di Hammerfist. Il tuo sorriso può celare una lama, e la tua musica può ispirare eroi o far vacillare nemici."*

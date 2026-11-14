@@ -1538,3 +1538,15 @@ repo scritto con altre parole.
 - **Testo:** il DM ha scelto sulla card del 2026-11-14 di tenere i 16 dadi vita e di portare il grado di sfida a 7. La scheda toglie «2x HD», il file diventa `skeletal-dire-lion-cr7.md`, `IN_ATTESA` del grado di sfida torna vuoto. Violazioni 31 → 30 contro main e88959fd.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** nel tipo non si può scrivere «avanzato» né ripetere «scheletro» accanto a «skeleton»: `gs.modello_noto` vede un avanzamento o un secondo modello e il grado torna non verificabile. Restano al DM il livello d'incontro delle due righe del viaggio verso Cannath Vale che usano questi leoni e l'armatura naturale +4 (lo scheletro Grande dell'SRD ha +2).
+
+### MS-0138 · 2026-11-14 · ARC-07/08: nuovi nomi e appellativi degli Eroi di Hammerfist e della Madre Superiora
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** —
+- **Temi:** arc08 arc07 nomi pregen eroi-di-hammerfist decisione-dm
+- **Origine:** riga del 2026-11-14 «Nomi degli Eroi di Hammerfist scelti dal DM» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha scelto sulle card del 2026-11-14 (21:37 e 22:17-22:18): Borin Ferropugno diventa Borin Giuraferro, «Colui che non arretra» (era «Il Martello di Hammerfist»); Thorin Runaforte diventa Harbek Runaforte, «Custode dell'Ultima Runa» (era «La Voce di Moradin»); Dara Occhiolesto prende «Morte dai Picchi» (era «L'Occhio delle Montagne»); Nala Cantapietre prende «Il Sorriso prima della Lama» (era «La Lama Nascosta»); la Madre Superiora Dana Forgiapietra diventa Dagmar Forgiapietra, detta Dana. Schede rinominate `Borin_Giuraferro.md` e `Harbek_Runaforte.md`; quella della Madre resta `Dana_Forgiapietra.md`, col nome d'uso.
+- **Trovato nel repo:** `Bestiario/png/Borin_Giuraferro.md`, `Bestiario/png/Harbek_Runaforte.md`, `Bestiario/png/Dana_Forgiapietra.md` (vecchi nomi nei blocchi storico)
+- **Solo qui:** con Harbek cade l'avviso dei tre nomi simili (A10, D2); resta quello Thorik/Thorek. Il file della Madre non si rinomina perché il registro dei nomi di `misura_craft.py` prende i nomi dai file del Bestiario: senza «Dana» il voto della corsa A-senza-1/S06 cambiava (box_un_nome) e `voto_scrittura --check` cadeva. Restano coi vecchi nomi, per scelta: esperimenti, scritture, archivi, registri, fixture di test congelate, i caduti «Borin Manodura» e «Dara Passolesto, occhio delle montagne» della Cerimonia delle 100 Asce (altri nani). Nell'ARC-09 (P1B, P1C) «Borin» porta Aegis Fang, quindi è un segnaposto per Thorik e non il pregen: non toccato, da decidere a parte. Non scritti perché le card sono aperte: cosa fare se un giocatore non vuole guidare un eroe, la rosa allargata.
+

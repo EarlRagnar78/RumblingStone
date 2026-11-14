@@ -348,7 +348,7 @@ The party descends through a chain of connected underground locations:
 | Force | Units | Commander(s) |
 |---|---|---|
 | **Red Hand Army** | 900 (7:1 numerical advantage) | Fauci di Palude (Black Dragon CR 15), Generale Grimjaw (Orog Fighter 10/Warlord 3, CR 14), Gorthak il Trifronte (3-Headed Ettin, CR 12) |
-| **Hammerfist Dwarves** | 300 | Re Thorek Hammerfist (Fighter 15/Noble 2, CR 16), Madre Superiora Dana Forgiapietra (Cleric 12/Divine Singer 3, CR 14) |
+| **Hammerfist Dwarves** | 300 | Re Thorek Hammerfist (Fighter 15/Noble 2, CR 16), Madre Superiora Dagmar Forgiapietra (Cleric 12/Divine Singer 3, CR 14) |
 | **External Allies** | ~20 | Signore Ventolesto (Celestial Giant Owl, CR 8), 12 Ranger Elfici su Gufi (CR 8 each), Orion Pelleorsa (Druid 14, CR 14), Maestro Tempestas (Bard 12/Stormsinger 2, CR 14) |
 
 **Red Hand Structure:** 4 assault lines — 1st Wave (450 hobgoblin/orc infantry), 2nd Wave (233 heavy infantry + sergeants), 3rd Line (45 giants/artiglieria + mages), 4th Line (66 command/reserve), Aerial (Fauci di Palude + rider), Flanks (50 Worg Riders)
@@ -356,7 +356,7 @@ The party descends through a chain of connected underground locations:
 **Session Structure (4 Sessions):**
 
 - **Session 1 — L'Ombra sulla Montagna:**
-  - Players control **4 temporary dwarven PNGs**: Borin Ferropugno (Fighter 10/Champion 3, CR 13), Dara Occhiolesto (Ranger 8/Mountain Scout 4, CR 12), Thorin Runaforte (Cleric 9/Runepriest 3, CR 12), Nala Cantapietre (Bard 8/Spymaster 4, CR 12)
+  - Players control **4 temporary dwarven PNGs**: Borin Giuraferro (Fighter 10/Champion 3, CR 13), Dara Occhiolesto (Ranger 8/Mountain Scout 4, CR 12), Harbek Runaforte (Cleric 9/Runepriest 3, CR 12), Nala Cantapietre (Bard 8/Spymaster 4, CR 12)
   - Reconnaissance mission, Council of War, fortify defenses
   - PNG actions determine initial battle bonuses/maluses
 
@@ -392,7 +392,7 @@ The party descends through a chain of connected underground locations:
 
 - Borin → Fighter PC: +2 morale to attacks with dwarven weapons (permanent)
 - Dara → Druid/Ranger: +4 competence to Survival/Spot in mountains (permanent)
-- Thorin → Monk/Paladin: +2 sacred AC when defending ally (permanent)
+- Harbek → Monk/Paladin: +2 sacred AC when defending ally (permanent)
 - Nala → Warlock/Rogue: 1/day *Invisibility* as swift action (permanent)
 
 **Rewards:** 50,000gp each in gems, Thane titles, personal fortress, legendary fame across Faerûn

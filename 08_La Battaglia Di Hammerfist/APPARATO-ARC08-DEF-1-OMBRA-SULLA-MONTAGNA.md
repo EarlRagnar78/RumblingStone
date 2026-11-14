@@ -17,7 +17,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | **Fauci di Palude** | SCENA 4 | stasera, che Hammerfist abbia paura. Domani, il resto | non parla con i nani. Non ne ha bisogno |
 | la pattuglia | SCENA 4 | — | goblin, a fischi più che a parole |
 | gli scout | SCENA 4 | — | goblin, sottovoce, per ordine del sergente |
-| **Madre Superiora Dana Forgiapietra** | SCENA 5 | le Cantitrici sulle Mura, dove il canto arriva a più nani. Il Re le vorrebbe al tempio, al sicuro | sussurra le preghiere e tuona le benedizioni. Al Consiglio parla poco, e per ultima |
+| **Madre Superiora Dagmar Forgiapietra** | SCENA 5 | le Cantitrici sulle Mura, dove il canto arriva a più nani. Il Re le vorrebbe al tempio, al sicuro | sussurra le preghiere e tuona le benedizioni. Al Consiglio parla poco, e per ultima |
 | il mastro armaiolo | SCENA 6 | — | a numeri: «trecento quadrelli, quaranta scudi, due mani in meno» |
 | i guastatori | SCENA 8 | — | non parlano: contano i colpi |
 

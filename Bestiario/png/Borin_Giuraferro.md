@@ -1,4 +1,4 @@
-# Borin Ferropugno [RIMANDO]
+# Borin Giuraferro, Colui che non arretra [RIMANDO]
 **Role**: ally (pregen giocabile "Eroi di Hammerfist" → PNG dopo, Arco 08)
 **Status**: alive (se sopravvive al giocato); **campione di Re Thorek a Hammerfist** (D14)
 **Location**: Hammerfist (flashback pregen → presidio dopo la battaglia)
@@ -8,7 +8,8 @@
 **Esiti possibili (D14, si blocca al gioco)**:
 - Se sopravvive: **campione di Re Thorek** a Hammerfist.
 - Ruolo pregen: leader di prima linea nel flashback (Sessioni 1-3); i giocatori lo impersonano fino al passaggio di testimone (`ARC08-11-PONTE-ARRIVO.md`).
-**Notes**: uno dei 4 pregen (D6). Distinto dai Rumbling Stones (PG reali). NON confondere Thorin (pregen chierico) con Thorik (PG) o Thorek (re), D2.
+**Notes**: uno dei 4 pregen (D6). Distinto dai Rumbling Stones (PG reali). Nome e appellativo scelti dal DM il 2026-11-14.
+<!-- storico -->Fino al 2026-11-14: Borin Ferropugno, «Il Martello di Hammerfist».<!-- /storico -->
 
 Boost log: correzione dei conti — GS 13 → 13 — Campione Nanico letto come il Difensore Nanico dell'SRD (d12, 10d10+3d12+68 = 142 pf), Schivare nella CA (25), martello +21/+16/+11.
 Benchmark: PF T1-1 riga 13: CA 25 vs 28 (3 sotto) / pf 142 vs 180 (sotto) / atk +21 vs +22 (1 sotto) / TS buono +13 vs +16 (sotto). PF1e: Difensore Inamovibile.

@@ -1215,6 +1215,22 @@ def _base_del_blocco(testo: str, sb, un_blocco: bool, sistema: str) -> "tuple[st
     return trovata[0], trovata[1], taglia == trovata[1]["taglia"]
 
 
+#: Le righe con cui il DM dichiara una variante sua (campaign/REGOLE-CUSTOM.md): la riga deve
+#: portare il numero che la scheda scrive, e chi l'ha deciso (DM, una voce RC o un ADR)
+_VARIANTE_NATURALE = re.compile(r"^>?\s*armatura naturale (?:diversa|sopra|oltre|sotto)[^\n]*", re.I | re.M)
+_VARIANTE_GS = re.compile(r"^>?\s*grado di sfida (?:diverso|sopra|oltre|sotto)[^\n]*", re.I | re.M)
+
+
+def _variante_del_dm(schema: "re.Pattern", testo: str, numero: str) -> bool:
+    """Vero se una riga di `schema` dichiara proprio quel `numero` come scelta del DM."""
+    for m in schema.finditer(testo):
+        riga = m.group(0).replace("−", "-")
+        primo = re.search(r":\s*([+-]?\d+(?:/\d+)?)", riga)      # il numero dichiarato è il primo dopo i due punti
+        if re.search(r"\b(?:DM|RC-\d+|ADR-\d+)\b", riga) and primo and primo.group(1) == numero:
+            return True
+    return False
+
+
 def creatura_base(p: Path) -> "tuple[list[dict], list[dict]]":
     """Dadi vita razziali e armatura naturale della creatura base dichiarata (ADR-0126, lotto 5)."""
     import conformita_statblocchi as C
@@ -1261,7 +1277,7 @@ def creatura_base(p: Path) -> "tuple[list[dict], list[dict]]":
                                  f"cambia col modello e non si riscontra"))
         elif nat and stessa:
             ha = int(nat.group(1))
-            if ha != voce["naturale"]:
+            if ha != voce["naturale"] and not _variante_del_dm(_VARIANTE_NATURALE, testo, f"{ha:+d}"):
                 viol.append(dict(base, regola="numero.CA.naturale", atteso=voce["naturale"], ha=ha,
                                  testo=f"armatura naturale {ha:+d}: la creatura base {nome} ha {voce['naturale']:+d} "
                                        f"(un bonus in più va dichiarato con la sua sorgente)"))
@@ -1337,7 +1353,7 @@ def grado_di_sfida(p: Path) -> "tuple[list[dict], list[dict]]":
                       stessa_taglia=trovata[2] if trovata else None)
     if "perche" in esito:
         return [], [dict(base, regola="numero.gs", testo=esito["perche"])]
-    if esito["min"] <= ha <= esito["max"]:
+    if esito["min"] <= ha <= esito["max"] or _variante_del_dm(_VARIANTE_GS, s.testo, GS.scritto(ha)):
         return [], []
     atteso = GS.scritto(esito["min"]) if esito["min"] == esito["max"] else (
         f"da {GS.scritto(esito['min'])} a {GS.scritto(esito['max'])}")

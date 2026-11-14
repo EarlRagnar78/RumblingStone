@@ -85,6 +85,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, le tre risposte del DM sulle card: monaco «Pugno del Destino» a 15 m… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: le quattro decisioni del DM sulle card del 14/11. Il d… | Sedici schede con corredo contro le undici di main; due schede con i tiri salvezza +1. Restano senza: monaco (mantello, dopo la correzione della velocità), bla… |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 sesta parte: il grado di sfida di chi avanza per dadi vita.… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 quinta parte: i draghi veri per colore e categoria d'età.… | In PR |
@@ -96,12 +97,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 6 terza parte: razze dei mostri, taglia e velocità nelle abilit… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 7 quinta parte: i linguaggi delle razze senza dadi vita razzial… | In PR |
 | 2026-11-14 | GENERATORE-CREATURE-E-PNG | Lotto J, i modelli semplici di PF1e (card del DM del 2026-11-13, «Sì, col threa… | In PR |
-| 2026-11-14 | STANDARD-SCHEDE | ADR-0133, la scheda a tutta pagina va su due colonne dentro il riquadro. Terza… | Nei 36 riquadri larghi, contro main 91a34b37: righe oltre 100 caratteri 174 → 11, riga piena mediana 99 → 64 caratteri, più lunga 157 → 126. Pagine dei 21 book… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 128 voci, l'ultima MS-0128 del 2026-11-14 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 129 voci, l'ultima MS-0129 del 2026-11-14 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

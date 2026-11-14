@@ -105,7 +105,7 @@ Basata sulla struttura di ondate di Brindol (Red Hand of Doom), ma potenziata.[w
 
 I PG possono essere spostati dove serve di più: mura, quartiere tempio, porta principale.
 
-**Tyrgarun (D11 v2)**: parallelamente alle ondate, il drago blu Old (CR 18) è un *hazard* di bombardamento aereo separato — passate di soffio sui bastioni con contromosse quantificate (balliste, gufi Tiri Kitor, missione-esca dei PG). Non è un incontro frontale: a CR 18 in volo è imbattibile per design. Meccaniche dettagliate del set-piece: Lotto C1(d).
+**Tyrgarun (D11 v2)**: parallelamente alle ondate, il drago blu molto vecchio (CR 19) è un *hazard* di bombardamento aereo separato — passate di soffio sui bastioni con contromosse quantificate (balliste, gufi Tiri Kitor, missione-esca dei PG). Non è un incontro frontale: a CR 18 in volo è imbattibile per design. Meccaniche dettagliate del set-piece: Lotto C1(d).
 
 ---
 
@@ -299,7 +299,7 @@ esce un numero che corrisponde a una carta già in gioco, promuovilo a carta.)
 
 > Benchmark: **Abithriax sulle mura di Brindol** (RHoD Parte 4). Statblock
 > completo (profilo aereo CR 18 + profilo a terra CR ~16-17):
-> `Bestiario/villain/tyrgarun-blue-old-cr18.md`.
+> `Bestiario/villain/tyrgarun-blue-very-old-cr19.md`.
 
 Tyrgarun **non è un incontro a iniziativa** finché il Mythal non lo inchioda: a
 CR 18 in volo con Flyby è imbattibile per design. Si gioca a **scalini**.

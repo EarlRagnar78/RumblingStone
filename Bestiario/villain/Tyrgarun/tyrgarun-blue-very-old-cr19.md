@@ -1,9 +1,9 @@
-# Tyrgarun — Blue Old Dragon (Sky-Terror of Rethmar) [CANONE — DM 2026-07-02, D11 v2]
-**Faction**: red-hand | **Role**: aerial-hazard / grounded-boss | **Environment**: aerial | **CR**: 18 (aerial hazard) → **16–17** (grounded, Fase 4) | **Source**: MM p.71 Blue Dragon Old (SRD 3.5) | **Status**: accepted
+# Tyrgarun — Blue Very Old Dragon (Sky-Terror of Rethmar) [CANONE — DM 2026-07-02, D11 v2]
+**Faction**: red-hand | **Role**: aerial-hazard / grounded-boss | **Environment**: aerial | **CR**: 19 (aerial hazard) → **16–17** (grounded, Fase 4) | **Source**: MM p.71 Blue Dragon Very Old (SRD 3.5) | **Status**: accepted
 
 
 ```statblocco
-gs: 18
+gs: 19
 taglia: Enorme
 spazio: 4,5 m
 portata: 3 m (4,5 m con il morso)
@@ -29,6 +29,8 @@ fonte: corpo del drago blu molto vecchio dell'SRD 3.5 (30 DV) con Cos 25 e soffi
 
 > [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
+> `[CANONE — DM 2026-11-14]` Categoria d'età e grado di sfida: da «Old», GS 18, a **molto vecchio (Very Old), GS 19**. I 30 DV e il +29 di armatura naturale della scheda sono quelli del blu molto vecchio dell'SRD 3.5, che ha GS 19. Il file si chiamava `tyrgarun-blue-old-cr18.md`: il cancello di `extract_statblocks.py` vuole nel nome il GS del blocco. Il GS «16–17» a terra della Fase 4 non è stato ricalcolato.
+
 > **Nota rinomina (2026-07-02, D11 v2 / A7)**: file precedentemente
 > `tyrgarun-black-adult-cr13.md` (black adult, riserva). Corretto a **blue Old
 > CR 18** per allineamento a **state.md §2.2**, INDICE, ARMATE-SYNC §2.1 e
@@ -41,7 +43,7 @@ fonte: corpo del drago blu molto vecchio dell'SRD 3.5 (30 DV) con Cos 25 e soffi
 
 ## Profilo AEREO (Fasi 1-3) — *hazard, non incontro frontale*
 
-A CR 18 in volo con Flyby è **imbattibile per design** per un party APL 14: si
+A CR 19 in volo con Flyby è **imbattibile per design** per un party APL 14: si
 gioca come **pericolo ambientale con contromosse quantificate** (vedi STRUTTURA
 §9.4), non come statblock da azzerare a iniziativa.
 

@@ -96,6 +96,19 @@ class TestDichiarazione(unittest.TestCase):
         viol, nv = giudica(fonte="MM Rakshasa + PHB Rogue 3", tipo="Medium humanoid, LE", dadi="3d6+6")
         self.assertEqual(regole(viol) & {"numero.dv.razziali", "numero.CA.naturale"}, set())
 
+    def test_il_dm_dichiara_la_variante(self):
+        """Armatura naturale e grado di sfida fuori dalla base: una riga col numero e «DM» o «RC-NNN» (RC-002)."""
+        self.assertIn("numero.CA.naturale", regole(giudica(ca="-1 taglia, +8 naturale")[0]))
+        riga = "> Armatura naturale diversa dalla base: +8 contro +5, scelta del DM (RC-002)."
+        self.assertTrue(V._variante_del_dm(V._VARIANTE_NATURALE, riga, "+8"))
+        # il numero dichiarato deve essere quello della scheda, e deve dirlo il DM
+        self.assertFalse(V._variante_del_dm(V._VARIANTE_NATURALE, riga, "+9"))
+        self.assertFalse(V._variante_del_dm(V._VARIANTE_NATURALE, riga.replace("del DM (RC-002)", "nostra"), "+8"))
+        riga = "> Grado di sfida diverso dalla regola: 15 contro il 13 dell'SRD, scelta del DM (RC-002)."
+        self.assertTrue(V._variante_del_dm(V._VARIANTE_GS, riga, "15"))
+        self.assertFalse(V._variante_del_dm(V._VARIANTE_GS, riga, "13"))
+        self.assertFalse(V._variante_del_dm(V._VARIANTE_GS, riga, "5"))
+
     def test_drago_vero_solo_col_colore_accanto(self):
         self.assertIsNotNone(CB.drago("Huge dragon (fire) — Drago Rosso", "Huge"))
         self.assertIsNotNone(CB.drago("Blue Old Dragon", "Huge"))

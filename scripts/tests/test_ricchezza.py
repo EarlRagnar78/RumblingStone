@@ -183,6 +183,21 @@ class TestOggetti(unittest.TestCase):
                          [("necklace of fireballs type i", 1650), ("pearl of power, 1st-level spell", 1000)])
         self.assertEqual(self.trova("necklace of fireballs type VII"), [("necklace of fireballs type vii", 9150)])
 
+    def test_piu_pezzi_scudo_d_acciaio_e_pozione_di_scudo(self):
+        # segnalati dal thread del volume il 2026-11-14 sulle righe «Possessions» di PCGen
+        self.assertEqual(self.trova("spade corte +1 (2)"), [("2 × spada corta +1 (arma)", 4620)])
+        self.assertEqual(self.trova("due spade corte +1"), [("2 × spada corta +1 (arma)", 4620)])
+        self.assertEqual(self.trova("mezza armatura, scudo pesante di acciaio"),
+                         [("mezza armatura (armatura)", 600), ("scudo pesante d'acciaio (armatura)", 20)])
+        self.assertEqual(self.trova("scudo pesante di legno, heavy steel shield"),
+                         [("heavy steel shield (armatura)", 20), ("scudo pesante (armatura)", 7)])
+        # la pozione di scudo della fede non è uno scudo +2
+        self.assertEqual(self.trova("pozione di scudo della fede +2"), [("potion of shield of faith +2 (potion)", 50)])
+        self.assertEqual(self.trova("pozione di scudo della fede +3, scudo pesante +1"),
+                         [("potion of shield of faith +3 (potion)", 300), ("scudo pesante +1 (armatura)", 1157)])
+        self.assertEqual(self.trova("pozioni di cura ferite leggere (3)"),
+                         [("3 × potion of cure light wounds (potion)", 150)])
+
     def test_oggetti_comuni_e_fattura_perfetta(self):
         self.assertEqual(self.trova("spada lunga perfetta, armatura completa, 2 pozioni"),
                          [("armatura completa (armatura)", 1500), ("spada lunga perfetta (arma)", 315)])

@@ -1434,6 +1434,11 @@ proiettile = 6
 "2" = 7
 "4" = 30
 
+[oggetti.comuni.scudi_acciaio]
+# SRD, «Table: Armor and Shields»: per bonus di CA, lo scudo d'acciaio (mo)
+"1" = 9
+"2" = 20
+
 [oggetti.comuni.merci]
 # SRD, «Table: Goods and Services» (attrezzatura, sostanze, attrezzi, cavalcature): mo intere, 0 sotto 1 mo
 "acid" = 10

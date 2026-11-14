@@ -178,7 +178,7 @@ def comuni(base: Path) -> "dict[str, dict]":
     fuori; un'arma che costa meno di 1 mo, o niente (bastone ferrato, randello), vale 0: così la
     scheda che la nomina ha un oggetto riconosciuto. `ammo` è quanti proiettili compra il prezzo."""
     f = (base / "basic-rules-and-legal" / "equipment.md").read_text(encoding="utf-8")
-    out: dict[str, dict] = {"armi": {}, "armature": {}, "scudi": {}, "ammo": {}}
+    out: dict[str, dict] = {"armi": {}, "armature": {}, "scudi": {}, "scudi_acciaio": {}, "ammo": {}}
     for m in re.finditer(r"<table[^>]*><caption>Table: (Weapons|Armor and Shields)</caption>(.*?)</table>", f, re.S):
         dove = ""
         for r in (_celle(x) for x in re.findall(r"<tr>(.*?)</tr>", m.group(2), re.S)):
@@ -201,6 +201,8 @@ def comuni(base: Path) -> "dict[str, dict]":
                 out["armature"][nome] = mo
             elif dove == "scudi" and (b := re.fullmatch(r"\+(\d)\d?", r[2])):
                 out["scudi"][b.group(1)] = min(out["scudi"].get(b.group(1), mo), mo)
+                if "steel" in nome:
+                    out["scudi_acciaio"][b.group(1)] = mo
     arma = re.search(r"The masterwork quality adds (\d+) gp to the cost of a normal weapon \(or (\d+) gp to the "
                      r"cost of a single unit of ammunition\)", f)
     armatura = re.search(r"A masterwork suit of armor or shield costs an extra (\d+) gp", f)
@@ -282,7 +284,8 @@ def testo(base: Path) -> str:
     for che, nota in (("armi", "«Table: Weapons»: prezzo dell'arma di taglia Media (mo intere; 0 sotto 1 mo)"),
                       ("ammo", "«Table: Weapons»: quanti proiettili compra il prezzo scritto"),
                       ("armature", "«Table: Armor and Shields»: prezzo dell'armatura (mo)"),
-                      ("scudi", "«Table: Armor and Shields»: per bonus di CA, lo scudo che costa meno (mo)")):
+                      ("scudi", "«Table: Armor and Shields»: per bonus di CA, lo scudo che costa meno (mo)"),
+                      ("scudi_acciaio", "«Table: Armor and Shields»: per bonus di CA, lo scudo d'acciaio (mo)")):
         righe += ["", f"[oggetti.comuni.{che}]", f"# SRD, {nota}"]
         righe += [f'"{k}" = {v}' for k, v in sorted(com[che].items())]
     righe += ["", "[oggetti.comuni.merci]",

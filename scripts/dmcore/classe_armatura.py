@@ -36,7 +36,9 @@ _ALIAS = {
     "studded": "studded leather", "large shield": "heavy shield",
     "mithral chain": "chain shirt", "camicia di mithral": "camicia di maglia",
     "piastre complete": "armatura completa", "pelle": "armatura di pelle",
-    "giaco di cuoio borchiato": "cuoio borchiato",
+    "giaco di cuoio borchiato": "cuoio borchiato", "mezza armatura": "half-plate",
+    "heavy steel shield": "heavy shield", "heavy wooden shield": "heavy shield",
+    "light steel shield": "light shield", "light wooden shield": "light shield",
 }
 #: «scudo» e «shield» da soli non dicono se leggero (+1) o pesante (+2).
 _GENERICI = frozenset({"shield", "scudo"})

@@ -86,6 +86,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: il corredo del Fantino Cavaliere del Palio, scelto dal… | Fantino Cavaliere da nessuna riga di corredo a 1.650 mo su 5.600; `verifica_scheda.py` sul file: 0 violazioni |
+| 2026-11-14 | TRAVASO-DRAPPO-CAMPAGNA | A6, il dossier delle piste di ARC-09: tre piste (la torre che cammina, il «dott… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, risposta del DM sulla card dello Skeletal Dire Lion: i 16 dadi vita r… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: due decisioni del DM sulle card del 14/11. Lythiel per… | Corredo di Lythiel da circa 23.800 mo a circa 7.800 su 9.400; monaco 8.325 su 9.400; `verifica_scheda.py --check Bestiario/mostri` senza violazioni nuove |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 ottava parte: la base dichiarata con un modello che non ne ca… | In PR |
@@ -96,12 +97,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 sesta parte: il grado di sfida di chi avanza per dadi vita.… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 quinta parte: i draghi veri per colore e categoria d'età.… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 8 sesta parte: merci, proiettili, pezzi doppi e arco composito… | In PR |
-| 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001 applicata alle prime undici schede del Bestiario. Dodic… | `verifica_scheda.py --check Bestiario/mostri` 0 violazioni; `misura_stampa.py --tutti --check` 21 booklet nei tetti; suite verde |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 135 voci, l'ultima MS-0135 del 2026-11-14 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 136 voci, l'ultima MS-0136 del 2026-11-14 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

@@ -22476,10 +22476,8 @@
     ]
    }
   },
-  "Bestiario/villain/Tyrgarun/tyrgarun-blue-old-cr18.md": {
-   "controlla": [
-    "Bestiario/villain/Tyrgarun/tyrgarun-blue-old-cr18.md: il blocco dice GS 19 e il nome del file dice GS 18 — uno dei due è rimasto indietro"
-   ],
+  "Bestiario/villain/Tyrgarun/tyrgarun-blue-very-old-cr19.md": {
+   "controlla": [],
    "genera": [
     {
      "Car": 18,
@@ -22495,16 +22493,16 @@
    ],
    "genera_senza_fonte": [
     {
-     "Car": 9,
+     "Car": 10,
      "Cos": 24,
      "Des": 10,
      "For": 32,
-     "Int": 8,
-     "Sag": 13
+     "Int": 9,
+     "Sag": 11
     },
     [
      "array elite del Manuale del DM (creatura)",
-     "variazione a seme fisso: Sag +1, Car −1",
+     "variazione a seme fisso: Int +1, Sag −1",
      "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 19) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
      "taglia (SRD, Improving Monsters): For +16, Des -4, Cos +8",
      "Des 10 **derivata dalla CA di contatto** — il vincolo batte l'array",
@@ -22559,7 +22557,7 @@
      ],
      "pf_media": 405
     },
-    "file": "Bestiario/villain/Tyrgarun/tyrgarun-blue-old-cr18.md",
+    "file": "Bestiario/villain/Tyrgarun/tyrgarun-blue-very-old-cr19.md",
     "provenienza": "copiate",
     "scarti": {},
     "template": null,
@@ -22667,7 +22665,7 @@
      240,
      570
     ],
-    "file": "Bestiario/villain/Tyrgarun/tyrgarun-blue-old-cr18.md",
+    "file": "Bestiario/villain/Tyrgarun/tyrgarun-blue-very-old-cr19.md",
     "legale": true,
     "media": 405,
     "motivo": null,
@@ -44552,7 +44550,7 @@
     "scritta": "attributi: For 11 Des 15 Cos 14 Int 14 Sag 13 Car 16"
    },
    {
-    "file": "Bestiario/villain/Tyrgarun/tyrgarun-blue-old-cr18.md",
+    "file": "Bestiario/villain/Tyrgarun/tyrgarun-blue-very-old-cr19.md",
     "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.",
     "note": [
      "letta dalla riga delle caratteristiche della scheda stessa"
@@ -45816,7 +45814,7 @@
       }
      ],
      [
-      "tyrgarun-blue-old-cr18.md",
+      "tyrgarun-blue-very-old-cr19.md",
       {
        "Car": 18,
        "Cos": 25,
@@ -45826,12 +45824,12 @@
        "Sag": 19
       },
       {
-       "Car": 9,
+       "Car": 10,
        "Cos": 24,
        "Des": 10,
        "For": 32,
-       "Int": 8,
-       "Sag": 13
+       "Int": 9,
+       "Sag": 11
       }
      ],
      [
@@ -45879,12 +45877,12 @@
     "mae": 1.55,
     "mae_mod": 0.72,
     "per_caratteristica": {
-     "Car": 3.02,
+     "Car": 3.0,
      "Cos": 0.4,
      "Des": 0.47,
      "For": 0.67,
-     "Int": 3.14,
-     "Sag": 1.58
+     "Int": 3.11,
+     "Sag": 1.62
     }
    }
   }

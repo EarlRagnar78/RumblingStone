@@ -1317,6 +1317,6 @@ Se la taglia non è quella della base il grado atteso è un intervallo: +1 se è
 
 **Come si dichiara una variante.** Una riga «Armatura naturale diversa dalla base: N …» o «Grado di sfida diverso dalla regola: N …» con «DM», una voce RC o un ADR. Il primo numero dopo i due punti deve essere quello della scheda: se la scheda cambia e la riga no, lo scarto torna. È la stessa forma di «Equipaggiamento sopra la tabella» (lotto 8).
 
-**Misura** (contro main 920259b0). `verifica_scheda.py Bestiario 0*/`: violazioni @V@, non verificabili @N@.
+**Misura** (contro main 920259b0). `verifica_scheda.py Bestiario 0*/`: violazioni 34 → 30, non verificabili 378 → 375.
 
-**Conseguenze.** `IN_ATTESA` del cancello del grado di sfida è vuoto. Il nome del file di Tyrgarun resta `tyrgarun-blue-old-cr18.md`. Il GS «16–17» di Tyrgarun a terra (Fase 4) non è stato ricalcolato: resta al DM.
+**Conseguenze.** `IN_ATTESA` del cancello del grado di sfida è vuoto. Il file di Tyrgarun diventa `tyrgarun-blue-very-old-cr19.md`: `extract_statblocks.py --check` vuole nel nome il GS del blocco. Il GS «16–17» di Tyrgarun a terra (Fase 4) non è stato ricalcolato: resta al DM.

@@ -299,7 +299,7 @@ esce un numero che corrisponde a una carta già in gioco, promuovilo a carta.)
 
 > Benchmark: **Abithriax sulle mura di Brindol** (RHoD Parte 4). Statblock
 > completo (profilo aereo CR 18 + profilo a terra CR ~16-17):
-> `Bestiario/villain/tyrgarun-blue-old-cr18.md`.
+> `Bestiario/villain/tyrgarun-blue-very-old-cr19.md`.
 
 Tyrgarun **non è un incontro a iniziativa** finché il Mythal non lo inchioda: a
 CR 18 in volo con Flyby è imbattibile per design. Si gioca a **scalini**.

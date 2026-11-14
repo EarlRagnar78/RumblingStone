@@ -2135,13 +2135,13 @@ monsters:
     role: boss-caster
     environment: any
     source_file: "Bestiario/villain/Ghaurush_Cenerevento/ghaurush-cenerevento-secondo-incontro-cr18.md"
-  - id: tyrgarun-blue-very-old-dragon-sky-terror-of-rethmar-d8e679
+  - id: tyrgarun-blue-very-old-dragon-sky-terror-of-rethmar-9cc016
     name: "Tyrgarun — Blue Very Old Dragon (Sky-Terror of Rethmar)"
     cr: 19.0
     faction: red-hand
     role: aerial-hazard
     environment: aerial
-    source_file: "Bestiario/villain/Tyrgarun/tyrgarun-blue-old-cr18.md"
+    source_file: "Bestiario/villain/Tyrgarun/tyrgarun-blue-very-old-cr19.md"
   - id: rethmar-militia-warrior-1-a05ff1
     name: "Rethmar Militia (Warrior 1)"
     cr: 0.5

@@ -29,7 +29,7 @@ fonte: corpo del drago blu molto vecchio dell'SRD 3.5 (30 DV) con Cos 25 e soffi
 
 > [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
-> `[CANONE — DM 2026-11-14]` Categoria d'età e grado di sfida: da «Old», GS 18, a **molto vecchio (Very Old), GS 19**. I 30 DV e il +29 di armatura naturale della scheda sono quelli del blu molto vecchio dell'SRD 3.5, che ha GS 19. Il nome del file resta `tyrgarun-blue-old-cr18.md`: lo citano gli archi. Il GS «16–17» a terra della Fase 4 non è stato ricalcolato.
+> `[CANONE — DM 2026-11-14]` Categoria d'età e grado di sfida: da «Old», GS 18, a **molto vecchio (Very Old), GS 19**. I 30 DV e il +29 di armatura naturale della scheda sono quelli del blu molto vecchio dell'SRD 3.5, che ha GS 19. Il file si chiamava `tyrgarun-blue-old-cr18.md`: il cancello di `extract_statblocks.py` vuole nel nome il GS del blocco. Il GS «16–17» a terra della Fase 4 non è stato ricalcolato.
 
 > **Nota rinomina (2026-07-02, D11 v2 / A7)**: file precedentemente
 > `tyrgarun-black-adult-cr13.md` (black adult, riserva). Corretto a **blue Old

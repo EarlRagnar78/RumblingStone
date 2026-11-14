@@ -1462,14 +1462,14 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** la regola non si applica a una base trovata per nome. Flind (Manuale dei Mostri II) e ogre Skullcrusher (Races of Faerûn) hanno «gnoll» e «ogre» nel nome ma sono mostri loro: contarli come avanzati avrebbe dato due violazioni false (flind GS 1 invece di 3).
 
-### MS-0128 · 2026-11-14 · Regole: le tre risposte del DM su monaco, Arbitrax e Tyrgarun
+### MS-0129 · 2026-11-14 · Regole: le tre risposte del DM su monaco, Arbitrax e Tyrgarun
 
 - **Data:** 2026-11-14
 - **PR:** —
 - **ADR:** ADR-0126
 - **Temi:** regole schede variante-del-dm regole-custom draghi grado-di-sfida velocita verifica-scheda
 - **Origine:** riga del 2026-11-14 «le tre risposte del DM sulle card» in `plans/CHANGELOG.md`
-- **Testo:** il DM ha risposto alle tre card del 2026-11-14. Monaco «Pugno del Destino»: velocità 15 m, «Hobgoblin» nel titolo. Arbitrax: variante del DM, +24 di armatura naturale e GS 15 restano, voce RC-002 delle regole custom. Tyrgarun: molto vecchio, GS 19. `verifica_scheda` accetta una variante dichiarata nella scheda se porta il numero della scheda e «DM», una voce RC o un ADR. Misura contro main 920259b0: violazioni @V@, non verificabili @N@.
+- **Testo:** il DM ha risposto alle tre card del 2026-11-14. Monaco «Pugno del Destino»: velocità 15 m, «Hobgoblin» nel titolo. Arbitrax: variante del DM, +24 di armatura naturale e GS 15 restano, voce RC-002 delle regole custom. Tyrgarun: molto vecchio, GS 19. `verifica_scheda` accetta una variante dichiarata nella scheda se porta il numero della scheda e «DM», una voce RC o un ADR. Misura contro main 920259b0: violazioni 34 → 30, non verificabili 378 → 375.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
-- **Solo qui:** la prima forma della dichiarazione cercava il numero in tutta la riga, e «15 contro il 13» faceva passare anche una scheda che scrivesse 13: ora conta solo il primo numero dopo i due punti. Il nome del file di Tyrgarun non è cambiato perché lo citano event deck e armate. Il GS «16–17» a terra della Fase 4 e la riga «Boost log» della scheda non sono stati toccati: restano al DM.
+- **Solo qui:** la prima forma della dichiarazione cercava il numero in tutta la riga, e «15 contro il 13» faceva passare anche una scheda che scrivesse 13: ora conta solo il primo numero dopo i due punti. Il file di Tyrgarun è stato rinominato in `tyrgarun-blue-very-old-cr19.md`: `extract_statblocks.py --check` boccia un blocco con GS 19 in un file «cr18»; le citazioni vive seguono, quelle storiche no. Il GS «16–17» a terra della Fase 4 e la riga «Boost log» della scheda non sono stati toccati: restano al DM.
 

@@ -1287,3 +1287,21 @@ modo di trattare i master e non passano da questa funzione.
 
 **Conseguenze.** Arbitrax entra in `IN_ATTESA` del cancello del grado di sfida finché il DM non risponde. Le schede non si toccano senza la sua risposta.
 
+### Lotto 5, sesta parte — il grado di sfida di chi avanza per dadi vita (2026-11-14)
+
+**Contesto.** Una creatura con più dadi vita razziali della sua base usciva sempre «avanzata per dadi vita»: non verificabile. L'SRD ha la regola («Table: Improved Monster CR Increase», `improving-monsters.md`).
+
+**Decisione.** `gs.toml` ha `[gs.avanzamento]`: quanti dadi vita aggiunti danno +1 al grado di sfida, per tipo d'origine (4 per aberrazioni, costrutti, elementali, folletti, giganti, umanoidi, melme, vegetali, non morti, parassiti; 3 per animali, bestie magiche, umanoidi mostruosi; 2 per draghi ed esterni). `gs.atteso` la applica solo se:
+
+- la scheda **dichiara** la base (riga della fonte, o colore ed età di un drago). Una base trovata solo per nome non basta: un flind non è uno gnoll avanzato, l'ogre Skullcrusher non è un ogre con più dadi vita;
+- non ci sono livelli di classe («Do not stack this CR increase with any increase from class levels»);
+- i dadi vita sono di più, non di meno.
+
+Se la taglia non è quella della base il grado atteso è un intervallo: +1 se è cresciuta di taglia.
+
+**Cosa non entra.** Le capacità speciali aggiunte (+1 o +2 a giudizio) non stanno nei dati: una scheda sopra il conto deve dichiarare lo scarto. Il PF1e ha un'altra regola e non è toccato.
+
+**Misura** (contro main 676f296f). `verifica_scheda.py Bestiario 0*/`: violazioni 33 → 34, non verificabili 380 → 378. Ozyrrandion ora è giudicato e torna: adulto verde GS 13, due dadi vita in più, GS 14. Tyrgarun passa da «non verificabile» a violazione: «Old» GS 18 con 30 dadi vita, tre più del vecchio blu, dà GS 19. È la stessa scheda già su card al DM (età e grado di sfida): la violazione non è una scoperta nuova, è il conto che la card chiedeva. Flind e ogre Skullcrusher restano «non verificabili», come devono.
+
+**Conseguenze.** Tyrgarun entra in `IN_ATTESA` del cancello del grado di sfida insieme ad Arbitrax, fino alla risposta del DM.
+

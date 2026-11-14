@@ -1451,3 +1451,14 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** la prima versione dava tre violazioni false su Skullcrusher: ha «Avanzato» nel tipo (+2 di armatura naturale, canone del DM) e ora un modello dichiarato esce «non verificabile». Dadi vita diversi dall'età non sono una violazione perché i draghi crescono dentro l'età. L'adulto rosso dell'SRD ha Sag 19, più del maturo: è così nella fonte e i dati generati non si correggono a mano.
 
+### MS-0127 · 2026-11-14 · Regole, lotto 5 sesta parte: il grado di sfida di chi avanza per dadi vita
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole grado-di-sfida avanzamento dadi-vita draghi verifica-scheda
+- **Origine:** riga del 2026-11-14 «lotto 5 sesta parte: il grado di sfida di chi avanza per dadi vita» in `plans/CHANGELOG.md`
+- **Testo:** `gs.atteso` conta i dadi vita aggiunti a una base dichiarata con la tabella dell'SRD 3.5 (`[gs.avanzamento]`: +1 ogni 4, 3 o 2 dadi vita per tipo, +1 se cresce di taglia). Violazioni 33 → 34, non verificabili 380 → 378. Ozyrrandion è a posto a GS 14; Tyrgarun diventa violazione (18 contro 19) sulla scheda già a card.
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** la regola non si applica a una base trovata per nome. Flind (Manuale dei Mostri II) e ogre Skullcrusher (Races of Faerûn) hanno «gnoll» e «ogre» nel nome ma sono mostri loro: contarli come avanzati avrebbe dato due violazioni false (flind GS 1 invece di 3).
+

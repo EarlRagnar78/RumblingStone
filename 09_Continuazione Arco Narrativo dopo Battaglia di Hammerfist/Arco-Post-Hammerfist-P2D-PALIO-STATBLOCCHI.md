@@ -33,7 +33,7 @@ voci:
 
 **Tattiche** Cariche pulite, tiene la corda interna, nerba solo per difendersi. Onore alto.
 
-**Statistiche** For 14, Des 16, Cos 13 · **Abilità** Cavalcare +16 (foco: corsa) · **Talenti** *Combattere in Sella*, *Carica Devastante*, *Attacco in Sella*
+**Statistiche** For 14, Des 16, Cos 13 · **Abilità** Cavalcare +16 (foco: corsa) · **Talenti** *Combattere in Sella*, *Carica Devastante*, *Attacco in Sella* · **Equipaggiamento** pozione di cura ferite moderate, pozioni di contrastare elementi (2); giaco di maglia +1, nerbo
 
 **Capacità speciali**
 - **Legame col cavallo**: +2 alle prove di Cavalcare del proprio destriero (empatia).

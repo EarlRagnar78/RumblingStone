@@ -3140,7 +3140,7 @@ ___
 
 **STATISTICHE**
 ___
-For 14, Des 16, Cos 13 · **Abilità** Cavalcare +16 (foco: corsa) · **Talenti** *Combattere in Sella*, *Carica Devastante*, *Attacco in Sella*  
+For 14, Des 16, Cos 13 · **Abilità** Cavalcare +16 (foco: corsa) · **Talenti** *Combattere in Sella*, *Carica Devastante*, *Attacco in Sella* · **Equipaggiamento** pozione di cura ferite moderate, pozioni di contrastare elementi (2); giaco di maglia +1, nerbo  
 
 **CAPACITÀ SPECIALI**
 ___

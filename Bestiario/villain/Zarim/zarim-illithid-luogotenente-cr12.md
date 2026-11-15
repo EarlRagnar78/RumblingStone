@@ -55,7 +55,11 @@ Medium aberration, illithid 8 DV / Psion 4, Legale Malvagio.
 
 *Prima del combattimento* — Non entra mai in arena senza preavviso: legge la folla con *individuazione dei pensieri*, manifesta *armatura inerziale* e *schermo di forza*, e si alza di qualche metro con *levitazione*, fuori dalla portata di chi carica. Comanda le ondate dei servi per telepatia, senza farsi vedere.
 
-*Durante il combattimento* — **Round 1**: esplosione mentale sul gruppo più compatto; Thorik, con la sua mente sigillata, non è un bersaglio e lo sa. **Round 2**: *charme sui mostri* sul combattente più pericoloso fra quelli non protetti, e lo manda contro i compagni. **Round 3 e oltre**: scende sugli storditi con i tentacoli, uno alla volta, e prova a estrarre il cervello; se due PG lo stringono, torna in quota e ricomincia con un'altra esplosione. Usa l'Archivio delle Anime appena un nemico cade.
+*Durante il combattimento* — **Round 1**: esplosione mentale sul gruppo più compatto; Thorik, con la sua mente sigillata, non è un bersaglio e lo sa. **Round 2**: *charme sui mostri* sul combattente più pericoloso fra quelli non protetti, Tordek escluso (di solito Hella), e lo manda contro i compagni. **Round 3 e oltre**: scende sugli storditi con i tentacoli, uno alla volta, e prova a estrarre il cervello, ma non a Tordek: Xal'thor lo vuole vivo e convinto, e Zarim non disobbedisce (scelta del DM del 15/11); se due PG lo stringono, torna in quota e ricomincia con un'altra esplosione. Usa l'Archivio delle Anime appena un nemico cade.
+
+*Cosa sa dei PG* — Quello che sa Xal'thor, che glielo passa per telepatia: Thorik ha la mente sigillata, Tordek è il premio da non toccare. Il resto lo legge in arena con *individuazione dei pensieri*. `[INFERRED]`
+
+*Misura* (Monte Carlo, `plans/esperimenti/tattiche-2026-11-15/profili_villain.py`, scontro `zarim-torneo`, 20.000 prove, senza le ondate): Zarim da solo muore nel 54-55% degli scontri e non uccide nessun PG, che tocchi Tordek o no (round-PG persi 2,4 contro 2,3). Risparmiare Tordek non lo indebolisce: il suo peso sta nelle ondate di Xal'thor.
 
 *Morale* — Sotto i 25 pf, o se Xal'thor cade, *porta dimensionale* fino alle ondate e poi *spostamento planare*. Combatte fino alla morte solo se Xal'thor è in pericolo entro 9 m e il nucleo psionico è ancora intatto.
 

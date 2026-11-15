@@ -156,7 +156,67 @@ def duello_xalthor(politica: str, max_round: int = 15):
     return "stallo", max_round, tp
 
 
-def tabella(titolo, f, politiche, prove):
+
+# ================================================================== KARRUK
+# Bestiario/villain/Wyrmlord_Karruk/wyrmlord-karruk-cr13.md: duello sui gradini
+# della breccia (Carta 13). Fuori ira CA 23, 181 pf, randello +23/+18/+13 (2d8+12);
+# in ira (10 round) CA 21, 217 pf, +25/+20/+15 (2d8+15); ira intimidatoria:
+# scosso chi lo vede (STIMA: Volontà CD 19). Attacco Poderoso −5 → +10 danni
+# (a due mani). Morale: sotto 60 pf ripiega (duello «inconcluso»).
+# STIME: campione Thorik (CA 27, 128 pf, ascia +22/+17/+12, 1d10+9, immune alla
+# paura) o Tordek (CA 22 in ira, 106 pf, +25/+20/+15, 1d8+9+2d6, Volontà +12).
+# Karruk ha iniziativa +0: si assume che il campione agisca per primo.
+CAMPIONI = {
+    "Thorik": dict(pf=128, ca=27, vol=11, att=(22, 17, 12), danno=lambda: d(1, 10) + 9, immune=True),
+    "Tordek": dict(pf=106, ca=22, vol=12, att=(25, 20, 15), danno=lambda: d(1, 8) + 9 + d(2, 6), immune=False),
+}
+
+
+def duello_karruk(politica: str, campione: str = "Thorik", max_round: int = 15):
+    """politica:
+    oggi        la scheda: ira solo quando il campione lo ferisce (dal suo turno
+                dopo), Attacco Poderoso −5 solo se la CA del campione è sotto 25.
+    ira_subito  entra in ira al primo turno.
+    poderoso    come oggi, ma Attacco Poderoso −5 sempre.
+    """
+    C = CAMPIONI[campione]
+    cp, kp = C["pf"], 181
+    ira, ferito, scosso, giri_ira = False, False, 0, 0
+    for rnd in range(1, max_round + 1):
+        # --- campione
+        pen = -2 if scosso > 0 else 0
+        for b in C["att"]:
+            if tira(b + pen, 21 if ira else 23):
+                kp -= C["danno"]()
+                ferito = True
+        scosso = max(0, scosso - 1)
+        if kp <= 60:
+            return "Karruk ripiega", rnd, cp
+        # --- Karruk
+        if not ira and giri_ira == 0 and (politica == "ira_subito" or ferito):
+            ira, giri_ira = True, 10
+            kp += 36
+            if not C["immune"] and not ts(C["vol"], 19):
+                scosso = 99
+        pa = 5 if (politica == "poderoso" or C["ca"] < 25) else 0
+        att = (25, 20, 15) if ira else (23, 18, 13)
+        bonus = 15 if ira else 12
+        for b in att:
+            if tira(b - pa, C["ca"]):
+                cp -= d(2, 8) + bonus + 2 * pa
+        if ira:
+            giri_ira -= 1
+            if giri_ira == 0:
+                ira = False
+                kp = max(1, kp - 36)
+        if cp <= -10:
+            return "campione morto", rnd, cp
+        if cp <= 0:
+            return "campione a terra", rnd, cp
+    return "stallo", max_round, cp
+
+
+def tabella(titolo, f, politiche, prove, chi="Tordek"):
     print(f"\n### {titolo} · prove {prove}\n")
     esiti_tutti = set()
     righe = {}
@@ -170,7 +230,7 @@ def tabella(titolo, f, politiche, prove):
             esiti_tutti.add(e)
         righe[p] = (cont, rnd / prove, pf / prove)
     esiti = sorted(esiti_tutti)
-    print("| Politica | " + " | ".join(esiti) + " | round | pf di Tordek alla fine |")
+    print("| Politica | " + " | ".join(esiti) + f" | round | pf di {chi} alla fine |")
     print("|---|" + "---|" * len(esiti) + "---|---|")
     for p, (cont, r, pf) in righe.items():
         print(f"| {p} | " + " | ".join(f"{100 * cont.get(e, 0) / prove:.0f}%" for e in esiti)
@@ -187,6 +247,10 @@ def main():
             ["oggi", "schema", "pieno"], a.prove)
     tabella("Xal'thor contro Tordek (Giorno 3, duello senza le ondate)", duello_xalthor,
             ["oggi", "volonta", "schema"], a.prove)
+    for camp in ("Thorik", "Tordek"):
+        tabella(f"Karruk contro {camp} sui gradini (Carta 13, senza la scorta)",
+                lambda p, camp=camp: duello_karruk(p, camp), ["oggi", "ira_subito", "poderoso"], a.prove,
+                chi=camp)
 
 
 if __name__ == "__main__":

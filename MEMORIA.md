@@ -87,6 +87,8 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 |---|---|---|---|
 | 2026-11-15 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 7 settima parte: la velocità delle creature coi dadi vita razzi… | In PR |
 | 2026-11-15 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 decima parte: le caratteristiche che i modelli dell'SRD cambi… | In PR |
+| 2026-11-15 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: il corredo del Fantino Ladro e della Drow Chierica di… | Fantino Ladro da nessuna riga di corredo a 3.505 mo su 9.400; Drow Chierica di Lolth da nessuna riga a 4.709 mo su 12.000; Il Collezionista da due oggetti senz… |
+| 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | ARC-09, scelta del DM sulla card del 15/11: il «Borin» con Aegis Fang di P1B e… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 nona parte: l'armatura naturale dei modelli dell'SRD. Chiave… | In PR |
 | 2026-11-14 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Nomi degli Eroi di Hammerfist scelti dal DM sulle card del 14/11: Borin Ferropu… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: il corredo del Fantino Cavaliere del Palio, scelto dal… | Fantino Cavaliere da nessuna riga di corredo a 1.650 mo su 5.600; `verifica_scheda.py` sul file: 0 violazioni |
@@ -95,13 +97,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: due decisioni del DM sulle card del 14/11. Lythiel per… | Corredo di Lythiel da circa 23.800 mo a circa 7.800 su 9.400; monaco 8.325 su 9.400; `verifica_scheda.py --check Bestiario/mostri` senza violazioni nuove |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 ottava parte: la base dichiarata con un modello che non ne ca… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 settima parte: il grado di sfida dei modelli dell'SRD.… | In PR |
-| 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: il corredo dell'Hobgoblin Bladebearer. Le due build ha… | Schede di `Bestiario/mostri/` con corredo da 14 a 15; valore 7.160 mo su 7.200 (Build A), 6.640 (Build B). |
-| 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, le tre risposte del DM sulle card: monaco «Pugno del Destino» a 15 m… | In PR |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 140 voci, l'ultima MS-0140 del 2026-11-15 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 142 voci, l'ultima MS-0142 del 2026-11-15 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

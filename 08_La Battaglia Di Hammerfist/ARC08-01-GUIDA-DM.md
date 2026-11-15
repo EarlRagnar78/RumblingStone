@@ -996,7 +996,7 @@ Chi non vuole guidare un eroe guarda, oppure guida un'unità di nani (statistich
 - **Strategia (azione standard, una volta per alleato per combattimento):** a ogni alleato entro 9 m, a scelta, +2 schivare alla CA per 1 round, +2 morale a colpire per 1 round, o un movimento immediato.
 - **Aiutare gli Alleati:** quando usa aiutare un altro, l'alleato prende +4 invece di +2.
 - Carica del Cavaliere e Carica Possente valgono solo in sella: sulle mura non si usano.
-**Talenti:** Attacco Poderoso, Arma Focalizzata (ascia da guerra nanica), Robustezza, Volontà di Ferro, Concentrazione Furiosa, Iniziativa Migliorata; bonus da cavaliere: Riflessi in Combattimento, Scudo Focalizzato; da tattico: Muro di Scudi, Difesa Coordinata.
+**Talenti:** Attacco Poderoso, Arma Focalizzata (ascia da guerra nanica), Robustezza, Volontà di Ferro, Concentrazione Furiosa (Furious Focus), Iniziativa Migliorata; bonus da cavaliere: Riflessi in Combattimento, Scudo Focalizzato; da tattico: Muro di Scudi, Difesa Coordinata (Coordinated Defense).
 **Abilità:** Diplomazia +17, Intimidire +17, Percezione +16, Cavalcare +16 (sulla sua cavalcatura non conta la penalità dell'armatura).
 **Lingue:** Comune, Nanico.
 **Equipaggiamento:** *Armatura Completa +3*, *Scudo Pesante d'Acciaio +2*, *Ascia da Guerra Nanica +3*, *Cintura della Forza del Gigante +4*, *Fascia del Fascino Seducente +2*, *Mantello della Resistenza +3*, *Anello di Protezione +2*, *Amuleto dell'Armatura Naturale +2*, *Stivali dell'Andatura e del Balzo*, 3 *Pozioni di Cura Ferite Gravi*, lo stendardo di Hammerfist sull'asta legata alla schiena.

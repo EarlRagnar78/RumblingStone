@@ -25,7 +25,6 @@ OSSA = [(1, 2), (2, 3), (3, 4), (1, 5), (5, 6), (6, 7), (1, 8), (8, 9), (9, 10),
 @lru_cache(None)
 def _dwpose():
     from custom_controlnet_aux.dwpose import DwposeDetector
-    ck = AUX / "ckpts/yzd-v/DWPose"
     import custom_controlnet_aux.dwpose as m
     return m.DwposeDetector.from_pretrained("yzd-v/DWPose", det_filename="yolox_l.onnx", pose_filename="dw-ll_ucoco_384.onnx", torchscript_device="cpu")
 

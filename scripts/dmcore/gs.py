@@ -84,6 +84,22 @@ def modello_noto(dove: str, tabella: dict) -> "tuple[str, dict, str] | None":
     return trovati[0], dati[trovati[0]], resto
 
 
+def naturale_col_modello(regola: dict, taglia: "str | None", base: "int | None") -> "dict | None":
+    """L'armatura naturale che un modello dà (`naturale` in `[modelli_gs]`): {"esatto": n} se la base
+    è nota o non serve, {"minimo": n} se la base non si conosce, None se manca la taglia che serve."""
+    if "taglia" in regola:                      # scheletro: il numero sostituisce quello della base
+        return {"esatto": regola["taglia"][taglia]} if taglia in regola["taglia"] else None
+    if "piu_taglia" in regola:                  # zombi: sopra la base, per taglia
+        if taglia not in regola["piu_taglia"]:
+            return None
+        piu = regola["piu_taglia"][taglia]
+    else:
+        piu = regola.get("piu", 0)
+    if "almeno" in regola:                      # lich: +5 o la base, se è più alta
+        return {"esatto": max(base, regola["almeno"])} if base is not None else {"minimo": regola["almeno"]}
+    return {"esatto": base + piu} if base is not None else {"minimo": piu}
+
+
 def _col_modello(noto: "tuple[str, dict, str]", livelli: "dict[str, int]", dv_razziali: int, base: "dict | None",
                  tabella: dict, dichiarata: bool, stessa_taglia: "bool | None") -> dict:
     """Il grado di sfida con un modello dell'SRD: per dadi vita (scheletro, zombi) o base più aumento."""

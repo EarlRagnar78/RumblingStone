@@ -117,7 +117,10 @@ class TestNonCreature(unittest.TestCase):
                   "ondata-giganti-fanteria-cr15.md", "Witchwood_e_Tiri_Kitor.md",
                   "Secondo_Anello_Rethmar.md", "duergar-scala-di-ossa-cr11.md",
                   "Zhentarim_Dauth.md", "Zalkatar.md",
-                  "thorgrim-barbadiferro.md"}
+                  "thorgrim-barbadiferro.md",
+                  # 2026-11-14, dossier delle piste di ARC-09: come Thorgrim,
+                  # una persona senza numeri in nessun file (scheda breve).
+                  "Saraah_dei_Faggi_grigi.md"}
         trovate = {f.name for f in (REPO / "Bestiario").rglob("*.md")
                    if E.e_non_creatura(f.read_text(encoding="utf-8"))}
         self.assertEqual(attese, trovate)

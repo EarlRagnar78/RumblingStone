@@ -48,7 +48,7 @@
 | 16-28 | 🕊 **Druido eremita** che cura un bosco malato — chiede aiuto (Sapienza Naturale), dà componenti. | — | Non-combat |
 | 29-40 | 🕊 **Profughi di un casale bruciato** diretti a Dauth (eco `HOOKS-Ghostlord-Refugees`). | — | Non-combat |
 | 41-55 | **Lupi/orsi mannari-corrotti** o animali spaventati dall'orda. `.../centaur-ranger4-corrupted-cr5.md` ×2. | 9 | Combat |
-| 56-70 | **Squadra di piromanti drow** in ricognizione (bruciano nodi druidici). `.../drow-wizard7-cr8.md` + `.../drow-warrior-cr1.md` ×4. | 10 | Combat |
+| 56-70 | **Squadra di piromanti drow** in ricognizione (bruciano nodi druidici). `.../drow-wizard7-cr8.md` + `.../drow-warrior-cr1.md` ×4. Il mago porta la carta del cielo (handout 7). La squadra è anche una **scena fissa** fra il Day 22 e il 26 sulla strada che il gruppo fa davvero; se esce di nuovo al tiro, è un'altra squadra senza carta [DM 2026-11-14]. | 10 | Combat |
 | 71-84 | **Treant infuriato** (scambia i PG per taglialegna) — evitabile con Diplomazia/Natura (→ diventa 🕊). | 8/— | Misto |
 | 85-95 | **Avanguardia gnoll** sbandata. `.../gnoll-ranger4-cr5.md` ×2 + `.../gnoll-warrior2-cr2.md` ×4. | 10 | Combat |
 | 96-00 | → **MB-2** Rovine del Patto (drow + funghi). | 11-12 | Combat (lungo) |

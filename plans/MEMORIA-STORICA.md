@@ -1539,13 +1539,35 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** nel tipo non si può scrivere «avanzato» né ripetere «scheletro» accanto a «skeleton»: `gs.modello_noto` vede un avanzamento o un secondo modello e il grado torna non verificabile. Restano al DM il livello d'incontro delle due righe del viaggio verso Cannath Vale che usano questi leoni e l'armatura naturale +4 (lo scheletro Grande dell'SRD ha +2).
 
-### MS-0135 · 2026-11-14 · Regole: l'armatura naturale dei modelli dell'SRD
+### MS-0135 · 2026-11-14 · A6: il dossier delle piste di ARC-09
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** —
+- **Temi:** indagine piste ARC-09 torre-invisibile zalkatar sonjak collezionista ghaurush zin-thara carta-del-cielo travaso gate
+- **Origine:** riga del 2026-11-14 «A6, il dossier delle piste di ARC-09» in `plans/CHANGELOG.md`
+- **Testo:** `Arco-Post-Hammerfist-DOSSIER-DELLE-PISTE.md` riscrive come piste i tre misteri di ARC-09: la torre che cammina (congegno, A1-A7), il «dottore» che compra i drow (B1-B6, pista morale senza bonus) e le due lettere di Sonjak (C1-C7). Gate «dopo ARC-07» tolto da Jfs il 2026-11-14 nel progetto, superando la sua card D5 del 2026-11-13. Tre scelte nuove a Jfs su card: S1 piromanti in scena fissa, S2 effetto delle lettere uguale a Zin'thara voltata, S3 lettere nella trattativa di Ghaurush al posto del Seme-Mercato.
+- **Trovato nel repo:** `plans/PIANO-TRAVASO-DRAPPO-CAMPAGNA.md` §A6 · `skills/rumblingstone-indagine`
+- **Solo qui:** il nodo più forte della pista della torre (la carta del cielo) stava su una voce di tabella d% al 15% per giornata; le lettere di Ghaurush stanno su un villain il cui esito di default è la fuga; il ramo «Sonjak tradisce la Mano Rossa» non aveva effetto scritto; l'handout 7 rimandava a un §4.3 della sub-quest di Artemis che non esiste (è §4.1); `P2A-Torre-PARTE1` §1 chiama ancora Artemis «alleata/PNG chiave», lasciato com'è. Saraah è marcata `[NON-CREATURA]` come Thorgrim: persona senza numeri in nessun file, e `test_bestiario_h` ne elenca le schede. «CS» delle schede di Ghaurush e Zin'thara non è definito altrove nel repo. Jfs ha deciso le tre card il 2026-11-14, tutte sulla consigliata: S1 scena fissa dei piromanti fra G22 e G26 sulla strada vera; S2 le lettere valgono come Zin'thara voltata (−1 CS Fase 0, non si sommano ai registri); S3 Ghaurush vende le lettere al posto del Seme-Mercato, chi le prende rinuncia alla tregua.
+
+### MS-0136 · 2026-11-14 · ADR-0134: il corredo del Fantino Cavaliere del Palio
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0134
+- **Temi:** schede equipaggiamento regole palio
+- **Origine:** riga del 2026-11-14 «ADR-0134, regola RC-001: il corredo del Fantino Cavaliere del Palio» in `plans/CHANGELOG.md`
+- **Testo:** il Fantino Cavaliere ha giaco di maglia +1, nerbo, una pozione di cura ferite moderate e due di contrastare elementi; 1.650 mo su 5.600.
+- **Trovato nel repo:** `ADR-0134` → `plans/adr/ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md` · `campaign/REGOLE-CUSTOM.md`
+- **Solo qui:** sulla card il DM aveva tre scelte (armatura leggera e pozioni; le stesse più il mantello della resistenza +1 del «Troglodyte Champion», TS +8/+7/+5; nessun corredo) e ha scelto la prima. La scheda dice solo «armatura leggera da corsa»: il giaco di maglia +1 (1.250 mo) è l'armatura leggera meno cara che dà +5; anche il cuoio borchiato +2 (4.175 mo) lo darebbe. Il tetto è contato sul 6° livello della classe; la scheda dichiara GS 8 e «Cavaliere-ish», quindi il livello effettivo non è certo. Sulla card la pozione era chiamata «resistere agli elementi»: il nome del lessico è «contrastare elementi».
+
+### MS-0137 · 2026-11-14 · Regole: l'armatura naturale dei modelli dell'SRD
 
 - **Data:** 2026-11-14
 - **PR:** —
 - **ADR:** ADR-0126
 - **Temi:** regole armatura-naturale modelli scheletro mezzo-immondo mezzo-drago lich vampiro zombi
 - **Origine:** riga del 2026-11-14 «lotto 5 nona parte» in `plans/CHANGELOG.md`
-- **Testo:** le voci di `[gs.modelli_gs]` portano la chiave `naturale` con la riga «Armor Class» dei modelli dell'SRD; il controllo sta dentro `creatura_base`. Violazioni 30 → 31 e non verificabili 368 → 369 contro main 4e40d6c7: la violazione nuova è lo Skeletal Dire Lion (+4 contro +2), portata al DM su card.
+- **Testo:** le voci di `[gs.modelli_gs]` portano la chiave `naturale` con la riga «Armor Class» dei modelli dell'SRD; il controllo sta dentro `creatura_base`. Il controllo ha trovato lo Skeletal Dire Lion (+4 contro il +2 dello scheletro Grande); il DM ha scelto sulla card del 2026-11-15 «+2 come l'SRD, CA 13» e la scheda è corretta nella stessa PR. Misura contro main 4be03db1: violazioni MISV, non verificabili MISN; schede con modello giudicate sull'armatura naturale 0 → 2.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** la base è nota solo per le razze fatte di livelli di classe (0, coboldo +1); altrove si giudica il minimo del modello. Una CA scritta come «contatto 11, alla sprovvista 16» non è un conto e non dà violazione. Azarr Kul finale, Therysol e il Ghostlord non sono giudicati perché il tipo non nomina il modello. `naturale_razze` sta dentro `[gs.modelli_gs]`, non in `[gs]`.

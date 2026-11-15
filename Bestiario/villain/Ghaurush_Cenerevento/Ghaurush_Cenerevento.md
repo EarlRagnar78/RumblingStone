@@ -63,7 +63,7 @@ Per Thorik è avvelenata due volte. È un'offerta **buona** — salva vite nanic
 Nessuna risposta è gratis:
 
 - **Rifiuto secco** — Ghaurush chiude il libro, si scusa e comincia a lavorare. Combattimento, ma i PG hanno perso un round di preparazione mentre lui li ascoltava (e lui no: aveva già *pelle di pietra* addosso da prima).
-- **Trattativa vera** — Diplomazia CD 25 per strappare una tregua di 3 giorni sul fronte delle colline. Costo: Ghaurush chiede in pegno una cosa che i PG hanno e non usano, e sa già quale (il **Seme-Mercato** nello zaino di Tordek, `state.md` §7.E E-07b). Se lo ottiene, lo vende a Varis entro un mese e la valle sente la scossa in ARC-09.
+- **Trattativa vera** — Diplomazia CD 25 per strappare una tregua di 3 giorni sul fronte delle colline. Costo: Ghaurush chiede in pegno una cosa che i PG hanno e non usano, e sa già quale (il **Seme-Mercato** nello zaino di Tordek, `state.md` §7.E E-07b). Se lo ottiene, lo vende a Varis entro un mese e la valle sente la scossa in ARC-09. In alternativa, con la stessa prova, Ghaurush vende le **due lettere su Sonjak** al posto del Seme: chi le prende rinuncia alla tregua [DM 2026-11-14, dossier delle piste di ARC-09 §13 S3].
 - **Accettazione** — la vanguardia si sposta davvero, −1 CS alla Fase 1 di Rethmar. E a Hammerfist qualcuno lo viene a sapere.
 
 ## Rapporti
@@ -90,7 +90,7 @@ Le due cose che il tavolo si ricorderà:
 
 ## Esiti possibili
 
-- **Ucciso** — l'orda perde il suo unico comandante che sa contare. −1 CS alla Fase 1 di Rethmar, e le due lettere su Sonjak restano addosso al cadavere: se i PG perquisiscono, aprono il ramo «Sonjak tradisce la Mano Rossa».
+- **Ucciso** — l'orda perde il suo unico comandante che sa contare. −1 CS alla Fase 1 di Rethmar, e le due lettere su Sonjak restano addosso al cadavere: se i PG perquisiscono, aprono il ramo «Sonjak tradisce la Mano Rossa». Il ramo vale come Zin'thara voltata: −1 CS alla Notte dei Drow (Fase 0) e la tenda della Matrona; lettere e registri di Zin'thara insieme non si sommano [DM 2026-11-14, dossier §13 S2].
 - **Fuggito** (forma gassosa / metamorfosi, sotto il 25% dei pf — **esito di default**) — riappare a Rethmar Fase 1, e stavolta ha visto lavorare i PG: nel secondo incontro apre con *muro di forza* per dividere il gruppo, e tiene *dissolvi magie* per l'anello di Artemis se lei lo scavalca in volo; il muro di fuoco arriva dopo, sul secondo asse (scheda del secondo incontro, §Tattiche).
 - **Accordo rispettato** — nessun agguato nelle gallerie alte. Ghaurush **mantiene la parola**: è quello che rende difficile odiarlo, ed è il punto.
 - **Accordo tradito dai PG** — al secondo incontro non tratta e non parla. Chiama Thorik per nome.

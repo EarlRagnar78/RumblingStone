@@ -2401,7 +2401,7 @@ paura»). I nomi non li chiede: un PG sano di mente non glieli darebbe.
 | **Vuole** | il tesoro di Hammerfist, e uccidere un secondo re **davanti all'orda**, con diecimila bocche che poi lo raccontano |
 | **Teme** | che si veda il guinzaglio: che l'orda capisca che il suo drago torna quando lo chiamano |
 | **Ha in mano** | le ali. Senza di lui l'assalto è una scala appoggiata alla pietra, e Zog'tar lo sa |
-| **Prossimo passo** | all'alba, al corno, cala sul cortile dove sta il re |
+| **Prossimo passo** | all'alba, al corno, cala sul cortile dietro la porta principale: è la porta che gli arieti battono, e il re la difende da dentro. Se la apre, l'orda la vede cedere, e il tesoro è suo `[CANONE — DM 2026-11-15]` |
 
 **Cosa ne fa il tavolo.** Quattro leve, e nessun numero nuovo:
 
@@ -3295,7 +3295,7 @@ successo in più o in meno, si applica allo stesso modo.
 | Scena 11 · EL 17 | **La scheda da tavolo**: che cosa succede, chi c'è, cosa vuole e come si conduce; il testo intero segue |
 |---|---|
 | **Succede** | Skullcrusher cala sul cortile con due wyvern e combatte in passate, gridando i nomi che ha sentito di notte attraverso la Catena |
-| **Chi c'è** | Skullcrusher il **Vecchio** (GS 17): 337 pf, CA 36 (40 con *armatura magica*), contatto 10. Dal round 2 due wyvern, su chi tiene la corda e su chi vola; fuggono quando fugge lui. **EL 17**. Re Thorek è nel cortile, alle spalle dei PG |
+| **Chi c'è** | Skullcrusher il **Vecchio** (GS 17): 337 pf, CA 36 (40 con *armatura magica*), contatto 10. Dal round 2 due wyvern, su chi tiene la corda e su chi vola; fuggono quando fugge lui. **EL 17**. Re Thorek è nel cortile, alle spalle dei PG, a difendere la porta principale |
 | **Chi vuole cosa** | Il drago vuole vincere davanti all'orda: per lui il potere è quello che gli altri hanno visto |
 | **Si comincia** | Dopo il barile il drago guarda in alto: chi lo aspetta in volo non ha la sorpresa. Dalle mura arrivano: −2 alla prima iniziativa se hanno tenuto la breccia; duello fuori dalle mura, senza fucina né campane, se hanno sabotato gli arieti |
 | **Round 1** | Cala dall'alto: Presenza, Volontà **CD 26** (Thorik non tira), poi il soffio aderente sul gruppo più fitto, 16d4, Riflessi **CD 31**. Non atterra. In picchiata, con un round di sorpresa, se Zog'tar è morto in modo spettacolare: Ascoltare CD 20 per agire, e le campane glielo tolgono |
@@ -3574,7 +3574,8 @@ cambia davvero.
   quei round le fa tacere con la coda, in passata (2d6+16 o 2d6+15), e viene
   prima del re. Il soffio lo tiene per i PG.
 - **Il re** `[CANONE — DM 2026-10-18]`. Re Thorek sta nel cortile alle spalle
-  dei PG. Se in un round nessun PG ha chiamato il drago (la Catena detta, l'orda
+  dei PG, davanti alla porta principale che gli arieti battono: è per la porta
+  e per lui che il drago cala lì, e non sulle mura `[CANONE — DM 2026-11-15]`. Se in un round nessun PG ha chiamato il drago (la Catena detta, l'orda
   colpita dall'alto, la corda, le ferite) e nessuno ha tirato con le balestre o
   suonato le campane, Skullcrusher va su di lui: è il secondo re
   che vuole mangiare davanti all'orda. Chi sta sulla linea del soffio o

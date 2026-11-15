@@ -1333,6 +1333,22 @@ monsters:
     environment: mountain
     source_file: "Bestiario/png/Harbek_Runaforte.md"
     notes: "uno dei 4 pregen (D6). Nome e appellativo scelti dal DM il 2026-11-14: con *Harbek* cade la confusione con Thorik (PG) e Thorek (re)."
+  - id: yrsa-portastendardo-lo-stendardo-dei-novanta-cdfd97
+    name: "Yrsa Portastendardo, lo Stendardo dei Novanta"
+    cr: 12.0
+    faction: hammerfist-hero
+    role: ally
+    environment: mountain
+    source_file: "Bestiario/png/Yrsa_Portastendardo.md"
+    notes: "sesto eroe giocabile, scelto dal DM sulle card del 15/11; classe scelta dal DM sulla card del 15/11 (Cavaliera PF1e, Ordine del Drago: l'SRD 3.5 non ha una classe con lo stendardo). Hrolf Spaccascudi,"
+  - id: ragnhild-mantoferro-la-mano-che-scrive-il-fuoco-7b08c5
+    name: "Ragnhild Mantoferro, la Mano che Scrive il Fuoco"
+    cr: 13.0
+    faction: hammerfist-hero
+    role: ally
+    environment: mountain
+    source_file: "Bestiario/png/Ragnhild_Mantoferro.md"
+    notes: "quinto eroe giocabile, scelto dal DM sulle card del 15/11 (Maga 10 / Maestra del Sapere 3, tutta SRD). Il nome «Ragnhild» lo ha proposto il thread audit perché «Sigrun» è la guida delle Cantitrici; la"
   - id: schiavo-psionico-cultista-69d482
     name: "Schiavo Psionico / Cultista"
     cr: 4.0
@@ -2632,22 +2648,6 @@ monsters:
     role: generalist
     environment: any
     source_file: "03_la Cittadella/00_shadow-marsh/shadow-marsh-horror-html.html"
-  - id: yrsa-portastendardo-lo-stendardo-dei-novanta-cdfd97
-    name: "Yrsa Portastendardo, lo Stendardo dei Novanta"
-    cr: 12.0
-    faction: unknown
-    role: ally
-    environment: mountain
-    source_file: "Bestiario/png/Yrsa_Portastendardo.md"
-    notes: "sesto eroe giocabile, scelto dal DM sulle card del 15/11; classe scelta dal DM sulla card del 15/11 (Cavaliera PF1e, Ordine del Drago: l'SRD 3.5 non ha una classe con lo stendardo). Hrolf Spaccascudi,"
-  - id: ragnhild-mantoferro-la-mano-che-scrive-il-fuoco-7b08c5
-    name: "Ragnhild Mantoferro, la Mano che Scrive il Fuoco"
-    cr: 13.0
-    faction: unknown
-    role: ally
-    environment: mountain
-    source_file: "Bestiario/png/Ragnhild_Mantoferro.md"
-    notes: "quinto eroe giocabile, scelto dal DM sulle card del 15/11 (Maga 10 / Maestra del Sapere 3, tutta SRD). Il nome «Ragnhild» lo ha proposto il thread audit perché «Sigrun» è la guida delle Cantitrici; la"
   - id: elder-fire-elemental-p3-fuoco-gs-14-verify-10d0ae
     name: "Elder Fire Elemental (P3, Fuoco) — GS 14 `[verify]`"
     cr: 14.0

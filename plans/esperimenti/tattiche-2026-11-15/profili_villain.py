@@ -169,11 +169,11 @@ PF_PIENI = {n: p.pf for n, p in m.gruppo()[0].items()}
 
 
 
-def tabella_costo(titolo, c, politiche, prove, buff):
+def tabella_costo(titolo, c, politiche, prove, buff, chi="Zog'tar", ultima="Thorik o Tordek giù dal camminamento (round)"):
     """Come m.tabella, più quello che lo scontro costa ai PG prima del drago."""
     print(f"\n### {titolo} · prove {prove} · buff {buff}\n")
-    print("| Politica | Zog'tar ucciso | almeno un PG morto | PG morti (media) | round | "
-          "pf dei PG alla fine (% del totale, vivi) | Thorik o Tordek giù dal camminamento (round) |")
+    print(f"| Politica | {chi} ucciso | almeno un PG morto | PG morti (media) | round | "
+          f"pf dei PG alla fine (% del totale, vivi) | {ultima} |")
     print("|---|---|---|---|---|---|---|")
     for np_, pol in politiche.items():
         es, pfp, fuori = [], 0.0, 0
@@ -208,6 +208,237 @@ def scontro_zogtar(prove: int, buff: int):
             m.tabella(f"Zog'tar sulla breccia · {etichetta} · "
                       f"{'si stringe (−4/−4)' if stretto else 'senza stringersi'}",
                       c, pols, TATTICHE_PG_BRECCIA, prove, buff)
+
+
+# =========================================== ZALKATAR NEL SANCTUM (ARC-09, Torre)
+# 09_.../Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md
+# CA 24, 130 pf, 4 tentacoli +13 (1d4+1, afferrare), RI 25, RD 15/magia (le armi
+# dei PG sono magiche: non conta), resistenza fuoco e elettricità 20.
+# Esplosione mentale: cono 18 m, Volontà CD 24 o 5d6 e stordito 1 round + confuso
+# 1d4 (STIMA: i danni solo su chi fallisce; confuso = perde 3 round su 4).
+# Thorik: mente sigillata dalla Corona, immune (nel motore immune_paura).
+# Ozyrrandion NON è nel modello (EL 16 col drago): la misura è su Zalkatar da solo.
+# STIMA comune alle due politiche: i PG salgono sulla piattaforma al round 3
+# (tentacoli neri sulle rampe); prima lo colpiscono solo a distanza.
+SALITA = 3
+
+
+def zalkatar() -> Creatura:
+    tent = lambda: d(1, 4) + 1  # noqa: E731
+    return Creatura("Zalkatar", pf=130, ca=24, contatto=18, ri=25, temp=12, rifl=12, vol=17,
+                    attacchi=[(13, tent)] * 4, soffio_dadi=(0, 1), soffio_cd=0,
+                    soffio_forma="cono", presenza_cd=0, immune=("fuoco",), soglia_fuga=13)
+
+
+def _esplosione(g, sparsi, esclusi=("Thorik",)):
+    vivi = [p for p in g.values() if not p.giu() and p.fuori == 0 and p.nome not in esclusi]
+    k = R.choice((1, 2) if sparsi else (2, 3, 3))
+    for p in R.sample(vivi, min(k, len(vivi))):
+        if not ts(p.vol + p.pen(), 24):
+            p.subisci(d(5, 6))
+            p.fuori = 1 + (d(1, 4) * 3) // 4
+
+
+def politica_zalkatar(variante: str):
+    """oggi    le tre fasi della scheda: sopra il 50% esplosione mentale dalla
+               piattaforma; sotto il 50% scende in mischia ed estrae il cervello al
+               più debole; sotto il 10% fugge (soglia nel motore).
+    schema     sa che la Corona chiude la mente di Thorik e non lo mette nel cono
+               (anche «oggi» non lo colpisce: è immune; la differenza è che sceglie
+               il cono sui tre che può colpire); non scende mai in mischia: con due
+               combattenti addosso usa *porta dimensionale* (3/giorno) e torna in
+               alto per un round; estrae il cervello solo a chi è già fuori gioco.
+    """
+    def pol(c, st, g, rnd, sparsi, tattica):
+        if rnd == 0:
+            st.posizione = "alto"
+            st.risorse["porta"] = 3
+            st.flag["presa"] = None
+            return
+        presa = st.flag.get("presa")
+        st.flag["presa"] = None
+        if presa and not presa[0].giu():
+            t, indifeso = presa
+            # estrazione automatica (scheda) se la vittima non si è liberata;
+            # STIMA: chi era stordito non si libera, Thorik e Tordek (lotta ~+18
+            # contro +10) si liberano 7 volte su 10, gli altri 4,5 su 10
+            libera = 0 if indifeso else (0.7 if t.nome in ("Thorik", "Tordek") else 0.45)
+            if R.random() >= libera:
+                t.morto = True
+                return
+        if st.posizione == "alto" and rnd >= SALITA and st.flag.get("via_fino", 0) < rnd:
+            st.posizione = "terra"
+        if variante == "oggi":
+            if st.pf >= 0.5 * c.pf:
+                _esplosione(g, sparsi)
+            else:
+                st.posizione = "terra"
+                bers = [p for p in vivi(g)]
+                if bers:
+                    t = min(bers, key=lambda p: p.pf_ora)
+                    colpi = sum(tira(13, t.ca) for _ in range(4))
+                    for _ in range(colpi):
+                        t.subisci(d(1, 4) + 1)
+                    if colpi == 4:
+                        st.flag["presa"] = (t, t.fuori > 0)
+            return
+        # schema
+        addosso = st.posizione == "terra" and len(_davanti(g)) >= 2
+        if addosso and st.risorse["porta"] > 0:
+            st.risorse["porta"] -= 1
+            st.posizione = "alto"
+            st.flag["via_fino"] = rnd + 1
+        fuori = [p for p in g.values() if not p.giu() and p.fuori > 0 and p.nome != "Thorik"]
+        if fuori and st.posizione == "terra" and R.random() < 0.5:
+            t = fuori[0]
+            if sum(tira(13 + 4, t.ca - 4) for _ in range(4)) == 4:   # stordito/indifeso: STIMA +4/−4
+                st.flag["presa"] = (t, True)
+            return
+        _esplosione(g, sparsi)
+    return pol
+
+
+@m.scontro("zalkatar-sanctum")
+def scontro_zalkatar(prove: int, buff: int):
+    c = zalkatar()
+    pols = {v: politica_zalkatar(v) for v in ("oggi", "schema")}
+    tabella_costo("Zalkatar nel sanctum, senza Ozyrrandion", c, pols, prove, buff,
+                  chi="Zalkatar", ultima="round-PG persi (storditi, confusi)")
+
+
+
+# ===================================== XILTHRA NELLA SALA DELLA CORTE (ARC-09, P3)
+# Bestiario/villain/xilthra-vel-ssin-cr13.md (scheda legale del 15/11) contro
+# l'abbozzo di main (STATBLOCCHI §4 e Upscale: «pf ~90-100, CA 24-26», nessuna
+# tattica: il DM gioca gli incantesimi della lista dal trono).
+# STIME comuni: CD 15 + livello in tutte e due (l'abbozzo non la dava); la scorta
+# (due guerrieri drow 9, arcieri sulle terrazze) NON è nel modello, in nessuna
+# delle due; Thorik è immune a comando e blocca persone (Volontà Adamantina
+# della Corona: immune a charme e compulsioni). Gli altri tre sono umanoidi.
+# *Comando superiore* e *blocca persone*: un TS nuovo ogni round, quindi chi
+# fallisce perde 1 round più uno per ogni TS fallito di fila.
+def xilthra(versione: str) -> Creatura:
+    mazza = lambda: d(1, 8) + 2  # noqa: E731
+    if versione == "abbozzo":
+        return Creatura("Xilthra", pf=95, ca=25, contatto=13, ri=22, temp=10, rifl=7, vol=14,
+                        attacchi=[(10, mazza), (5, mazza)], soffio_dadi=(0, 1), soffio_cd=0,
+                        soffio_forma="cono", presenza_cd=0, soglia_fuga=-10_000)
+    return Creatura("Xilthra", pf=69, ca=30, contatto=17, ri=23, temp=9, rifl=6, vol=15,
+                    attacchi=[(11, mazza), (6, mazza)], soffio_dadi=(0, 1), soffio_cd=0,
+                    soffio_forma="cono", presenza_cd=0, soglia_fuga=20)
+
+
+def _compulsione(t, cd):
+    """Comando superiore o blocca persone su t: round persi."""
+    if t.nome == "Thorik" or t.giu() or t.fuori > 0:
+        return
+    k = 0
+    while k < 12 and not ts(t.vol + t.pen(), cd):
+        k += 1
+    if k:
+        t.fuori = max(t.fuori, k)
+
+
+def politica_xilthra(variante: str):
+    """abbozzo  main: dal trono, a terra; round 1 *influenza sacrilega* (5d8,
+                Volontà CD 19 dimezza), poi *blocca persone* (CD 17) su un
+                combattente, *comando superiore* (CD 20) su tutti, *scagliare
+                maledizione* (CD 18: −4, qui come scosso per 12 round); nessuna fuga.
+    schema    la tattica scritta il 15/11: sul balcone; round 1 *barriera di lame*
+              (12d6, Riflessi CD 21 dimezza) che i due nani attraversano al round 2
+              per arrivarle addosso, e *comando* rapido (CD 16) su Tordek; poi
+              *comando superiore* e *blocca persone*; con due combattenti addosso
+              *fuorviare* (invisibilità superiore 12 round) e torna lontana; sotto
+              20 pf fugge col Patto (soglia nel motore).
+    """
+    def pol(c, st, g, rnd, sparsi, tattica):
+        if rnd == 0:
+            st.posizione = "terra" if variante == "abbozzo" else "alto"
+            st.risorse.update(blocca=2, comando_sup=1, maled=2, fuorv=1, influenza=1)
+            if variante == "schema":
+                st.ca_bonus = 0          # scudo della fede già nella CA 30
+            return
+        vivi_ = [p for p in g.values() if not p.giu() and p.fuori == 0]
+        if not vivi_:
+            return
+        combattenti = [p for p in vivi_ if p.nome in ("Thorik", "Tordek")]
+        if variante == "abbozzo":
+            if st.risorse["influenza"]:
+                st.risorse["influenza"] -= 1
+                for p in vivi_:
+                    n = d(5, 8)
+                    p.subisci(n // 2 if ts(p.vol + p.pen(), 19) else n)
+            elif st.risorse["blocca"] and combattenti:
+                st.risorse["blocca"] -= 1
+                _compulsione(R.choice(combattenti), 17)
+            elif st.risorse["comando_sup"]:
+                st.risorse["comando_sup"] -= 1
+                for p in vivi_:
+                    _compulsione(p, 20)
+            elif st.risorse["maled"]:
+                st.risorse["maled"] -= 1
+                t = R.choice(vivi_)
+                if not ts(t.vol + t.pen(), 18):
+                    t.scosso = 12
+            else:
+                t = min(vivi_, key=lambda p: p.pf_ora)
+                for b, dn in c.attacchi:
+                    if tira(b, t.ca):
+                        t.subisci(dn())
+            return
+        # schema
+        if rnd == 1:                     # schema e schema+influenza
+            st.flag["barriera"] = True
+            t = g.get("Tordek")
+            if t in vivi_ and not ts(t.vol + t.pen(), 16):
+                t.fuori = max(t.fuori, 1)        # *comando*: dura 1 round
+            return
+        if rnd == 2 and st.flag.get("barriera"):
+            for p in combattenti:
+                n = d(12, 6)
+                p.subisci(n // 2 if ts(p.rifl + p.pen(), 21) else n)
+            st.posizione = "terra"
+        addosso = st.posizione == "terra" and len([p for p in combattenti if not p.giu() and p.fuori == 0]) >= 2
+        if addosso and st.risorse["fuorv"]:
+            st.risorse["fuorv"] -= 1
+            st.inv_sup = 12
+            st.posizione = "alto"
+            st.flag["torna"] = rnd + 2
+            return
+        if st.posizione == "alto" and st.flag.get("torna", 99) <= rnd:
+            st.posizione = "terra"
+        if variante == "schema+influenza" and st.risorse["influenza"]:
+            st.risorse["influenza"] -= 1
+            for p in vivi_:
+                n = d(5, 8)
+                p.subisci(n // 2 if ts(p.vol + p.pen(), 19) else n)
+        elif st.risorse["comando_sup"]:
+            st.risorse["comando_sup"] -= 1
+            for p in vivi_:
+                _compulsione(p, 20)
+        elif st.risorse["blocca"] and combattenti:
+            st.risorse["blocca"] -= 1
+            _compulsione(R.choice(combattenti), 17)
+        elif st.risorse["maled"]:
+            st.risorse["maled"] -= 1
+            t = R.choice(vivi_)
+            if not ts(t.vol + t.pen(), 18):
+                t.scosso = 12
+        else:
+            t = min(vivi_, key=lambda p: p.pf_ora)
+            for b, dn in c.attacchi:
+                if tira(b, t.ca):
+                    t.subisci(dn())
+    return pol
+
+
+@m.scontro("xilthra-corte")
+def scontro_xilthra(prove: int, buff: int):
+    for v in ("abbozzo", "schema", "schema+influenza"):
+        tabella_costo(f"Xilthra nella Sala della Corte, senza scorta · {v}",
+                      xilthra("abbozzo" if v == "abbozzo" else "legale"),
+                      {v: politica_xilthra(v)}, prove, buff, chi="Xilthra",
+                      ultima="round-PG persi (comandati, bloccati)")
 
 
 def main() -> None:

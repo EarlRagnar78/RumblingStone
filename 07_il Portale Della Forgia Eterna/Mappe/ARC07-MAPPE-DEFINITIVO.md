@@ -882,7 +882,7 @@ BIOLUMINESCENTI (luce piena ovunque, niente *darkness*).
   | 6-8 | **15 Bugbear assassini** | Nascondersi +12, puntano i capi e Re Thorek — **interrotti dall'Apparizione** |
   | 9-10 | **Grimjaw + 10 Orog** (se vivo) | vede il ribaltone: ritirata strategica O sfida personale a Thorik; se già morto → capitano minore, auto-ritirata |
 - **⏱️ Timing dell'Apparizione (due regie valide)**: giocando il **3B completo**
-  (lato ARC-08, coi PNG giocabili Borin/Dara/Thorin/Nala; nella regia breve
+  (lato ARC-08, coi PNG giocabili Borin/Dara/Harbek/Nala; nella regia breve
   sono fra i dieci capi al centro, e non parlano) i PG appaiono al
   **Round 8**, nel mezzo dell'ondata 3; giocando **solo il lato ARC-07**
   (DEF-5 Scena 2, arrivo compresso) appaiono nell'istante in cui le porte cedono.

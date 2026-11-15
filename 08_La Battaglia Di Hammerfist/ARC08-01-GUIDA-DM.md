@@ -33,7 +33,7 @@
         *   👹 Gorthak il Trifronte (Ettin a Tre Teste Corazzato)
     *   **PNG Alleati Principali**
         *   👑 Re Thorek Hammerfist (Nano Guerriero/Nobile)
-        *   ⛪ Madre Superiora Dana Forgiapietra (Nana Chierico/Cantante Divina)
+        *   ⛪ Madre Superiora Dagmar Forgiapietra (Nana Chierico/Cantante Divina)
         *   🎵 Le Cantitrici della Pietra (5 Nane Chierico/Bardo)
         *   🦉 Signore Ventolesto (Gufo Gigante Celestiale Alpha)
         *   🌟 Ranger Elfici sui Gufi
@@ -41,9 +41,9 @@
         *   🎶 Maestro Tempestas (Mezzelfo Bardo/Cantore delle tempeste)
     *   **PNG Giocabili per le Prime Sessioni**
         *   Come Gestire i Personaggi Temporanei
-        *   ⚔️ Borin Ferropugno (Nano Guerriero/Campione Nanico)
+        *   ⚔️ Borin Giuraferro (Nano Guerriero/Campione Nanico)
         *   🏹 Dara Occhiolesto (Nana Ranger/Esploratrice dei Picchi)
-        *   ⚡ Thorin Runaforte (Nano Chierico/Sacerdote delle Rune)
+        *   ⚡ Harbek Runaforte (Nano Chierico/Sacerdote delle Rune)
         *   🎭 Nala Cantapietre (Nana Bardo/Spia Maestra)
     *   **Meccaniche di Transizione: Il Passaggio del Testimone**
 
@@ -98,9 +98,9 @@
     *   Appendice E: Schede Rapide per Giocatori e DM (Boss)
 
 8.  **Template Stampabili: Schede PNG Giocabili**
-    *   Scheda Stampabile: Borin Ferropugno
+    *   Scheda Stampabile: Borin Giuraferro
     *   Scheda Stampabile: Dara Occhiolesto
-    *   Scheda Stampabile: Thorin Runaforte
+    *   Scheda Stampabile: Harbek Runaforte
     *   Scheda Stampabile: Nala Cantapietre
 ---
 
@@ -435,7 +435,7 @@ SIMBOLI TATTICI:
 
 <div style="page-break-before:always"></div>
 
-#### **⛪ MADRE SUPERIORA DANA FORGIAPIETRA (Nana Chierico 12° di Moradin/Cantante Divina 3°, GS 14)**
+#### **⛪ MADRE SUPERIORA DAGMAR FORGIAPIETRA, DETTA DANA (Nana Chierico 12° di Moradin/Cantante Divina 3°, GS 14)**
 **Descrizione da Leggere:**
 > *"Madre Superiora Dana è anziana anche per gli standard nanici, ma la sua fede in Moradin arde come il fuoco della forgia divina. Le sue rughe raccontano storie di saggezza, e la sua voce può tanto sussurrare preghiere quanto tuonare benedizioni di guerra. Attorno al suo martello danzano scintille dorate, segno della benedizione del Forgiatore."*
 
@@ -707,8 +707,8 @@ Gli spiriti degli antenati hanno "chiamato" temporaneamente quattro eroi nanici 
 
 ### **PNG GIOCABILI PER LE PRIME SESSIONI**
 
-#### **⚔️ BORIN FERROPUGNO (Nano Guerriero 10°/Campione Nanico 3°, GS 13)**
-*"Il Martello di Hammerfist"*
+#### **⚔️ BORIN GIURAFERRO (Nano Guerriero 10°/Campione Nanico 3°, GS 13)**
+*"Colui che non arretra"*
 **Personalità e Ruolo:**
 > *"Borin è il nipote del precedente Re di Hammerfist, un nano nel fiore degli anni che ha dedicato la vita all'arte della guerra. È l'ispiratore naturale delle truppe, quello che grida 'Seguitemi!' e si getta per primo nella mischia. Il suo ruolo è quello di tank e leader in prima linea."*
 
@@ -751,7 +751,7 @@ Gli spiriti degli antenati hanno "chiamato" temporaneamente quattro eroi nanici 
 <div style="page-break-before:always"></div>
 
 #### **🏹 DARA OCCHIOLESTO (Nana Ranger 8°/Esploratrice dei Picchi 4°, GS 12)**
-*"L'Occhio delle Montagne"*
+*"Morte dai Picchi"*
 **Personalità e Ruolo:**
 > *"Dara è la migliore esploratrice di Hammerfist, una nana dai capelli corvini e occhi acuti come lame. Preferisce agire dalle ombre, ma quando è necessario sa comandare con autorità glaciale. È il cecchino del gruppo, specializzata nell'eliminare i bersagli prioritari."*
 
@@ -795,10 +795,10 @@ Gli spiriti degli antenati hanno "chiamato" temporaneamente quattro eroi nanici 
 
 <div style="page-break-before:always"></div>
 
-#### **⚡ THORIN RUNAFORTE (Nano Chierico 9°/Sacerdote delle Rune 3°, GS 12)**
-*"La Voce di Moradin"*
+#### **⚡ HARBEK RUNAFORTE (Nano Chierico 9°/Sacerdote delle Rune 3°, GS 12)**
+*"Custode dell'Ultima Runa"*
 **Personalità e Ruolo:**
-> *"Thorin è anziano per gli standard di battaglia (280 anni) ma la sua fede in Moradin brucia come lava fusa. La sua barba bianca è decorata con rune sacre d'oro, e i suoi occhi grigio acciaio vedono il divino in ogni battaglia. È il consigliere spirituale di Re Thorek e il custode delle tradizioni più antiche."*
+> *"Harbek è anziano per gli standard di battaglia (280 anni) ma la sua fede in Moradin brucia come lava fusa. La sua barba bianca è decorata con rune sacre d'oro, e i suoi occhi grigio acciaio vedono il divino in ogni battaglia. È il consigliere spirituale di Re Thorek e il custode delle tradizioni più antiche."*
 
 **Iniziativa:** +1; 
 **Sensi:** Scurovisione 18m; Ascoltare +6, Osservare +6
@@ -849,7 +849,7 @@ Gli spiriti degli antenati hanno "chiamato" temporaneamente quattro eroi nanici 
 <div style="page-break-before:always"></div>
 
 #### **🎭 NALA CANTAPIETRE (Nana Bardo 8°/Spia Maestra 4°, GS 12)**
-*"La Lama Nascosta"*
+*"Il Sorriso prima della Lama"*
 **Personalità e Ruolo:**
 > *"Nala è un enigma anche per gli standard nanici. Ufficialmente è una barda di corte, ma tutti sanno che è molto di più. I suoi capelli neri come carbone nascondono sempre qualche lama segreta, e il suo sorriso dolce può trasformarsi in ghigno mortale in un istante. È l'intelligence di Hammerfist: sa tutto di tutti, e quello che non sa lo scopre."*
 
@@ -903,7 +903,7 @@ Gli spiriti degli antenati hanno "chiamato" temporaneamente quattro eroi nanici 
 Nel momento culminante della Sessione 3, i PNG giocabili si dissolvono, trasferendo un bonus permanente ai veri PG (i Rumbling Stones), che emergono da una sfera di metallo fuso.
 *   **Da Borin → PG Guerriero:** +2 bonus morale permanente ai tiri per colpire con armi naniche.
 *   **Da Dara → PG Druido/Ranger:** +4 bonus di competenza a Sopravvivenza e Osservare in ambienti montani.
-*   **Da Thorin → PG Monaco/Paladino:** +2 bonus sacro alla CA quando difende un alleato.
+*   **Da Harbek → PG Monaco/Paladino:** +2 bonus sacro alla CA quando difende un alleato.
 *   **Da Nala → PG Warlock/Ladro:** 1/giorno, può lanciare *Invisibilità* come azione veloce.
 ---
 
@@ -1354,7 +1354,7 @@ I 90 nani superstiti si barricano nella Caverna Sacra. I PG devono affrontare on
 
 **Prove Mediche/Divine:**
 - **Guarigione CD 25, a ogni round** `[CANONE — DM 2026-10-19, D12]`: pronto soccorso, azione standard (SRD). Si tira a ogni round finché nessuno cura il Re per magia. **Al terzo fallimento, anche non consecutivo, Re Thorek muore**, e la battaglia passa alla vittoria costosa (`ARC08-10-ESITI-E-CONTINGENZE.md` §2). Un round in cui nessuno tenta la prova conta come fallito, e il conto parte dal primo round giocato nel Cuore della Montagna: il round 1 coi pregen, o il round 11 se il flashback non è stato giocato (`ARC08-10` §5.5) `[CANONE — DM 2026-11-04, P16, la ritirata e i tunnel]`
-- **La cura, per l'SRD** `[CANONE — DM 2026-10-19, D12]`: *neutralizzare veleno* (Drd 3, Chr 4, Brd 4, Rgr 3) o *guarigione* fanno finire l'avvelenamento, e da quel momento le prove si fermano; *guarigione* rende anche 10 pf per livello. Le *cure ferite* restituiscono pf ma non fermano le prove. Fra i pregen ce l'ha Thorin Runaforte (*guarigione*, `ARC08-02` §3): se la lancia al round 1, il Re è salvo e la tensione passa alle ondate. Fra i PG, Hella. Dana non può: ha speso quasi tutto sulle mura (sotto, «Madre Superiora Dana»)
+- **La cura, per l'SRD** `[CANONE — DM 2026-10-19, D12]`: *neutralizzare veleno* (Drd 3, Chr 4, Brd 4, Rgr 3) o *guarigione* fanno finire l'avvelenamento, e da quel momento le prove si fermano; *guarigione* rende anche 10 pf per livello. Le *cure ferite* restituiscono pf ma non fermano le prove. Fra i pregen ce l'ha Harbek Runaforte (*guarigione*, `ARC08-02` §3): se la lancia al round 1, il Re è salvo e la tensione passa alle ondate. Fra i PG, Hella. Dana non può: ha speso quasi tutto sulle mura (sotto, «Madre Superiora Dana»)
 
 #### **INCONTRO 3B: L'Assalto Finale**
 **Leggere:**
@@ -2547,7 +2547,7 @@ SCALA: Ogni carattere ~ 5 metri
 ║                       ⚡ COMANDO CENTRALE ⚡                                   ║
 ║     [INGEGNERI PRONTI]                                                        ║
 ║                                                                               ║
-║ ⛪ MADRE DANA + Chierici    🎵 CANTITRICI      [T] THORIN (supporto divino)    ║
+║ ⛪ MADRE DANA + Chierici    🎵 CANTITRICI      [T] HARBEK (supporto divino)    ║
 ║                                                                               ║
 ║ --- Salita ai Bastioni Nord ---                           --- Salita ai Bastioni Nord --- ║
 ║                                                                               ║
@@ -2765,7 +2765,7 @@ incontri `[CANONE — DM 2026-10-19, D19]`.*
 
 #### **PER I GIOCATORI (SESSIONI 1-2)**
 
-**Scheda 1: BORIN FERROPUGNO, Il Martello di Hammerfist (Guerriero/Campione Nanico)**
+**Scheda 1: BORIN GIURAFERRO, Colui che non arretra (Guerriero/Campione Nanico)**
 *   **Ruolo:** Leader in prima linea, tank, ispiratore.
 *   **Statistiche Chiave:** PF 142, CA 25, Attacco Martello +21/+16/+11 (1d8+9/x3)
 *   **Abilità Principali:**
@@ -2774,7 +2774,7 @@ incontri `[CANONE — DM 2026-10-19, D19]`.*
     *   **Presenza Comandante:** Gli alleati entro 9m hanno +2 morale.
 *   **Tattica:** Carica i nemici più grossi, usa la tua presenza per tenere salda la linea, proteggi il Re.
 
-**Scheda 2: DARA OCCHIOLESTO, L'Occhio delle Montagne (Ranger/Esploratrice)**
+**Scheda 2: DARA OCCHIOLESTO, Morte dai Picchi (Ranger/Esploratrice)**
 *   **Ruolo:** Cecchino, scout, cacciatrice di élite.
 *   **Statistiche Chiave:** PF 102, CA 21, Attacco Arco +19/+14/+9 (1d8+6/x3)
 *   **Abilità Principali:**
@@ -2783,7 +2783,7 @@ incontri `[CANONE — DM 2026-10-19, D19]`.*
     *   **Comando Balestrieri:** Con un'azione, dai +4 al tiro per colpire a un'unità di balestrieri.
 *   **Tattica:** Trova una posizione sopraelevata, elimina i comandanti e i maghi nemici, usa la tua conoscenza del terreno per preparare imboscate.
 
-**Scheda 3: THORIN RUNAFORTE, La Voce di Moradin (Chierico/Sacerdote delle Rune)**
+**Scheda 3: HARBEK RUNAFORTE, Custode dell'Ultima Runa (Chierico/Sacerdote delle Rune)**
 *   **Ruolo:** Guaritore, supporto divino, controllo del campo di battaglia.
 *   **Statistiche Chiave:** PF 114, CA 22, Incantesimi (CL 12°)
 *   **Abilità Principali:**
@@ -2792,7 +2792,7 @@ incontri `[CANONE — DM 2026-10-19, D19]`.*
     *   **Rune di Potere (3/giorno):** Benedici le armi dei tuoi compagni prima dello scontro.
 *   **Tattica:** Rimani dietro la linea principale, mantieni i buff attivi, scatena la furia di Moradin sui nemici e sii pronto a salvare chi sta per cadere.
 
-**Scheda 4: NALA CANTAPIETRE, La Lama Nascosta (Bardo/Spia)**
+**Scheda 4: NALA CANTAPIETRE, Il Sorriso prima della Lama (Bardo/Spia)**
 *   **Ruolo:** Infiltratrice, sabotatrice, supporto tattico e morale.
 *   **Statistiche Chiave:** PF 90, CA 20, Attacco Furtivo +3d6
 *   **Abilità Principali:**
@@ -2839,7 +2839,7 @@ incontri `[CANONE — DM 2026-10-19, D19]`.*
 *(Da stampare e consegnare ai giocatori per le Sessioni 1 e 2)*
 
 ---
-### **Scheda 1: BORIN FERROPUGNO, Il Martello di Hammerfist**
+### **Scheda 1: BORIN GIURAFERRO, Colui che non arretra**
 **Classe:** Nano Guerriero 10°/Campione Nanico 3° (GS 13)
 **Ruolo:** Leader in prima linea, tank, ispiratore.
 > *"Sei il nipote del precedente Re, un nano nel fiore degli anni che vive per la battaglia. Grida 'Seguitemi!' e gettati per primo nella mischia. Il tuo compito è tenere la linea e proteggere il Re."*
@@ -2864,7 +2864,7 @@ incontri `[CANONE — DM 2026-10-19, D19]`.*
 
 <div style="page-break-before:always"></div>
 
-### **Scheda 2: DARA OCCHIOLESTO, L'Occhio delle Montagne**
+### **Scheda 2: DARA OCCHIOLESTO, Morte dai Picchi**
 **Classe:** Nana Ranger 8°/Esploratrice dei Picchi 4° (GS 12)
 **Ruolo:** Cecchino, scout, cacciatrice di élite.
 > *"Sei la migliore esploratrice di Hammerfist, una nana dagli occhi acuti come lame. Agisci dalle ombre, eliminando i bersagli prioritari da lontano per cambiare le sorti della battaglia."*
@@ -2892,7 +2892,7 @@ incontri `[CANONE — DM 2026-10-19, D19]`.*
 
 <div style="page-break-before:always"></div>
 
-### **Scheda 3: THORIN RUNAFORTE, La Voce di Moradin**
+### **Scheda 3: HARBEK RUNAFORTE, Custode dell'Ultima Runa**
 **Classe:** Nano Chierico 9°/Sacerdote delle Rune 3° (GS 12)
 **Ruolo:** Guaritore, supporto divino, controllo del campo di battaglia.
 > *"Sei un anziano saggio la cui fede in Moradin brucia come lava. Sei il consigliere spirituale del Re e il custode delle antiche rune. La tua magia può salvare vite o distruggere nemici."*
@@ -2920,7 +2920,7 @@ incontri `[CANONE — DM 2026-10-19, D19]`.*
 
 <div style="page-break-before:always"></div>
 
-### **Scheda 4: NALA CANTAPIETRE, La Lama Nascosta**
+### **Scheda 4: NALA CANTAPIETRE, Il Sorriso prima della Lama**
 **Classe:** Nana Bardo 8°/Spia Maestra 4° (GS 12)
 **Ruolo:** Infiltratrice, sabotatrice, supporto tattico e morale.
 > *"Ufficialmente sei una barda di corte, ma in realtà sei gli occhi e le orecchie di Hammerfist. Il tuo sorriso può celare una lama, e la tua musica può ispirare eroi o far vacillare nemici."*

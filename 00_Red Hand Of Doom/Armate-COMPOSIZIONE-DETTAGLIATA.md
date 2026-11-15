@@ -319,11 +319,11 @@ Per l'uso in Rethmar Fase 1-4 (difensori) o encounter di supporto.
 | Signore Ventolesto (Gufo Celestiale Alpha) | 8 | `08_…/00_Schede_dei_Personaggi…md` §2 | NPC |
 | Orion Pelleorsa (Druido umano) | 9 | `08_…/00_Schede_dei_Personaggi…md` §2 | NPC |
 | Capitano Lunapiena (Ranger elfico) | 10 | `08_…/00_Schede_dei_Personaggi…md` §2 | NPC |
-| Dana Forgiapietra (Madre Superiora) | 12 | `08_…/00_Schede_dei_Personaggi…md` §2 | NPC |
+| Dagmar Forgiapietra (Madre Superiora) | 12 | `08_…/00_Schede_dei_Personaggi…md` §2 | NPC |
 | Re Thorek Hammerfist | 13 | `08_…/00_Schede_dei_Personaggi…md` §2 | NPC |
-| Borin Ferropugno (Ftr/Champion) | 8 | `08_…/00_Schede_dei_Personaggi…md` §3 | NPC giocabile |
+| Borin Giuraferro (Ftr/Champion) | 8 | `08_…/00_Schede_dei_Personaggi…md` §3 | NPC giocabile |
 | Dara Occhiolesto (Ranger) | 8 | `08_…/00_Schede_dei_Personaggi…md` §3 | NPC giocabile |
-| Thorin Runaforte (Cleric) | 8 | `08_…/00_Schede_dei_Personaggi…md` §3 | NPC giocabile |
+| Harbek Runaforte (Cleric) | 8 | `08_…/00_Schede_dei_Personaggi…md` §3 | NPC giocabile |
 | Nala Cantapietre (Bard) | 8 | `08_…/00_Schede_dei_Personaggi…md` §3 | NPC giocabile |
 
 ---

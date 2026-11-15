@@ -423,7 +423,7 @@ lo trovano.*
 
 ### SCENA 2 — L'apparizione
 
-**In scena** — Dove: la caverna — Chi: Re Thorek · Madre Superiora Dana · i novanta nani · gli orchi e il loro capo
+**In scena** — Dove: la caverna — Chi: Re Thorek · Madre Superiora Dagmar Forgiapietra · i novanta nani · gli orchi e il loro capo
 
 I PG compaiono sull'altare nell'istante in cui le porte di mithral cedono, e la
 loro luce mette in fuga gli orchi.
@@ -546,7 +546,7 @@ intorno al re o verso la porta: un'azione standard, alla gittata di
 
 ⚠️ A voce **Thorek** e **Thorik** si confondono: di' sempre **«Re Thorek»**.
 
-**Scheda d'entrata — Madre Superiora Dana Forgiapietra, la voce del tempio** *(statistiche: Appendice A.5, e la Guida DM dell'ARC-08, PNG Alleati)*
+**Scheda d'entrata — Madre Superiora Dagmar Forgiapietra, detta Dana, la voce del tempio** *(statistiche: Appendice A.5, e la Guida DM dell'ARC-08, PNG Alleati)*
 
 | | |
 |---|---|
@@ -598,7 +598,7 @@ intera**.
 
 ### SCENA 3 — La pulizia e il passaggio
 
-**In scena** — Dove: la caverna — Chi: Re Thorek · Madre Superiora Dana · gli orchi · gli hobgoblin sergenti · Aegis Fang
+**In scena** — Dove: la caverna — Chi: Re Thorek · Madre Superiora Dagmar Forgiapietra · gli orchi · gli hobgoblin sergenti · Aegis Fang
 
 Restano due orchi scossi, e alla fine del round 1 entrano venti hobgoblin
 sergenti che vogliono il re: cinque passano lo schieramento, e quando cadono comincia
@@ -763,7 +763,7 @@ l'ordine e il preavviso ne tolgono gli stessi.
 > drago. Fauci di Palude. Devasta ancora le mura. Se non cade, tutto è perduto
 > comunque.»*
 >
-> **MADRE SUPERIORA DANA (in piedi, la voce che torna ferma):** *«Posso aprire un portale diretto ai bastioni della Porta
+> **MADRE SUPERIORA DAGMAR (in piedi, la voce che torna ferma):** *«Posso aprire un portale diretto ai bastioni della Porta
 > Ovest. Là il drago apparirà quando vi sentirà: la vendetta del sangue chiama.»*
 >
 > **AEGIS FANG (canta):** *«Sangue Skullcrusher chiama! Fauci ci SENTE! Verrà. E
@@ -1018,7 +1018,7 @@ Grande, **90 pf**, CA 24, RD 10/adamantio, velocità 9 m, 2 schianti +18
 
 Medio, **102 pf**, CA 21, velocità 12 m, morso +15 (2d6+6) (`DEF-4`).
 
-### A.5 · Madre Superiora Dana Forgiapietra (Scene 2-3)
+### A.5 · Madre Superiora Dagmar Forgiapietra, detta Dana (Scene 2-3)
 
 Chierica 12 di Moradin / Cantante Divina 3, GS 14: CA 29 (contatto 14, colta
 alla sprovvista 28), iniziativa +1, 142 pf massimi, ma
@@ -1189,7 +1189,7 @@ BIOLUMINESCENTI (luce piena ovunque, niente *darkness*).
   | 6-8 | **15 Bugbear assassini** | Nascondersi +12, puntano i capi e Re Thorek — **interrotti dall'Apparizione** |
   | 9-10 | **Grimjaw + 10 Orog** (se vivo) | vede il ribaltone: ritirata strategica O sfida personale a Thorik; se già morto → capitano minore, auto-ritirata |
 - **⏱️ Timing dell'Apparizione (due regie valide)**: giocando il **3B completo**
-  (lato ARC-08, coi PNG giocabili Borin/Dara/Thorin/Nala; nella regia breve
+  (lato ARC-08, coi PNG giocabili Borin/Dara/Harbek/Nala; nella regia breve
   sono fra i dieci capi al centro, e non parlano) i PG appaiono al
   **Round 8**, nel mezzo dell'ondata 3; giocando **solo il lato ARC-07**
   (DEF-5 Scena 2, arrivo compresso) appaiono nell'istante in cui le porte cedono.

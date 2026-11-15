@@ -75,7 +75,7 @@ For full narrative details, see `campaign/lore/campaign-chronicle.md` (this tabl
 | Ally | Type | Status | Condition | Arc |
 |---|---|---|---|---|
 | Re Thorek Hammerfist | Dwarf King (Fighter 15/Noble 2, CR 16) | Active | Survived siege; 90 dwarves remain; named PCs Custodi Eterni | 08–09 |
-| Dana Forgiapietra | Madre Superiora (Cleric 12/Divine Singer 3, CR 14) | Active | Survived siege; leads healing | 08–09 |
+| Dagmar Forgiapietra | Madre Superiora (Cleric 12/Divine Singer 3, CR 14) | Active | Survived siege; leads healing | 08–09 |
 | Cantitrici della Pietra | 5 Cleric 8/Bard 4 (CR 12 each) | Active | Group ability: Coro della Montagna | 08 |
 | Signore Ventolesto | Celestial Giant Owl (CR 8) | Allied | Departed after Hammerfist; may return | 08 |
 | 12 Ranger Elfici su Gufi | Elf Rangers (CR 8) | Allied | Departed; some wounded | 08 |

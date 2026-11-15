@@ -97,7 +97,7 @@
     20,
     5
    ],
-   "label": "Roccia, copertura per Thorin"
+   "label": "Roccia, copertura per Harbek"
   },
   {
    "type": "🕳",
@@ -159,7 +159,7 @@
  "units": [
   {
    "faction": "Nani",
-   "name": "Borin Ferropugno (Ftr), testa di ponte sud",
+   "name": "Borin Giuraferro (Ftr), testa di ponte sud",
    "token": "🔵",
    "at": [
     16,
@@ -177,7 +177,7 @@
   },
   {
    "faction": "Nani",
-   "name": "Thorin Runaforte (Clr)",
+   "name": "Harbek Runaforte (Clr)",
    "token": "🔵",
    "at": [
     20,

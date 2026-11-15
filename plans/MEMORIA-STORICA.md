@@ -1561,13 +1561,24 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0134` → `plans/adr/ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md` · `campaign/REGOLE-CUSTOM.md`
 - **Solo qui:** sulla card il DM aveva tre scelte (armatura leggera e pozioni; le stesse più il mantello della resistenza +1 del «Troglodyte Champion», TS +8/+7/+5; nessun corredo) e ha scelto la prima. La scheda dice solo «armatura leggera da corsa»: il giaco di maglia +1 (1.250 mo) è l'armatura leggera meno cara che dà +5; anche il cuoio borchiato +2 (4.175 mo) lo darebbe. Il tetto è contato sul 6° livello della classe; la scheda dichiara GS 8 e «Cavaliere-ish», quindi il livello effettivo non è certo. Sulla card la pozione era chiamata «resistere agli elementi»: il nome del lessico è «contrastare elementi».
 
-### MS-0137 · 2026-11-14 · Regole: l'armatura naturale dei modelli dell'SRD
+### MS-0137 · 2026-11-14 · ARC-07/08: nuovi nomi e appellativi degli Eroi di Hammerfist e della Madre Superiora
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** —
+- **Temi:** arc08 arc07 nomi pregen eroi-di-hammerfist decisione-dm
+- **Origine:** riga del 2026-11-14 «Nomi degli Eroi di Hammerfist scelti dal DM» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha scelto sulle card del 2026-11-14 (21:37 e 22:17-22:18): Borin Ferropugno diventa Borin Giuraferro, «Colui che non arretra» (era «Il Martello di Hammerfist»); Thorin Runaforte diventa Harbek Runaforte, «Custode dell'Ultima Runa» (era «La Voce di Moradin»); Dara Occhiolesto prende «Morte dai Picchi» (era «L'Occhio delle Montagne»); Nala Cantapietre prende «Il Sorriso prima della Lama» (era «La Lama Nascosta»); la Madre Superiora Dana Forgiapietra diventa Dagmar Forgiapietra, detta Dana. Schede rinominate `Borin_Giuraferro.md` e `Harbek_Runaforte.md`; quella della Madre resta `Dana_Forgiapietra.md`, col nome d'uso.
+- **Trovato nel repo:** `Bestiario/png/Borin_Giuraferro.md`, `Bestiario/png/Harbek_Runaforte.md`, `Bestiario/png/Dana_Forgiapietra.md` (vecchi nomi nei blocchi storico)
+- **Solo qui:** con Harbek cade l'avviso dei tre nomi simili (A10, D2); resta quello Thorik/Thorek. Il file della Madre non si rinomina perché il registro dei nomi di `misura_craft.py` prende i nomi dai file del Bestiario: senza «Dana» il voto della corsa A-senza-1/S06 cambiava (box_un_nome) e `voto_scrittura --check` cadeva. Restano coi vecchi nomi, per scelta: esperimenti, scritture, archivi, registri, fixture di test congelate, i caduti «Borin Manodura» e «Dara Passolesto, occhio delle montagne» della Cerimonia delle 100 Asce (altri nani). Nell'ARC-09 (P1B, P1C) «Borin» porta Aegis Fang, quindi è un segnaposto per Thorik e non il pregen: non toccato, da decidere a parte. Non scritti perché le card sono aperte: cosa fare se un giocatore non vuole guidare un eroe, la rosa allargata.
+
+### MS-0138 · 2026-11-14 · Regole: l'armatura naturale dei modelli dell'SRD
 
 - **Data:** 2026-11-14
 - **PR:** —
 - **ADR:** ADR-0126
 - **Temi:** regole armatura-naturale modelli scheletro mezzo-immondo mezzo-drago lich vampiro zombi
 - **Origine:** riga del 2026-11-14 «lotto 5 nona parte» in `plans/CHANGELOG.md`
-- **Testo:** le voci di `[gs.modelli_gs]` portano la chiave `naturale` con la riga «Armor Class» dei modelli dell'SRD; il controllo sta dentro `creatura_base`. Il controllo ha trovato lo Skeletal Dire Lion (+4 contro il +2 dello scheletro Grande); il DM ha scelto sulla card del 2026-11-15 «+2 come l'SRD, CA 13» e la scheda è corretta nella stessa PR. Misura contro main 4be03db1: violazioni MISV, non verificabili MISN; schede con modello giudicate sull'armatura naturale 0 → 2.
+- **Testo:** le voci di `[gs.modelli_gs]` portano la chiave `naturale` con la riga «Armor Class» dei modelli dell'SRD; il controllo sta dentro `creatura_base`. Il controllo ha trovato lo Skeletal Dire Lion (+4 contro il +2 dello scheletro Grande); il DM ha scelto sulla card del 2026-11-15 «+2 come l'SRD, CA 13» e la scheda è corretta nella stessa PR. Misura contro main fc5c1a8e: violazioni 30 = 30, non verificabili 368 → 369; schede con modello giudicate sull'armatura naturale 0 → 2.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** la base è nota solo per le razze fatte di livelli di classe (0, coboldo +1); altrove si giudica il minimo del modello. Una CA scritta come «contatto 11, alla sprovvista 16» non è un conto e non dà violazione. Azarr Kul finale, Therysol e il Ghostlord non sono giudicati perché il tipo non nomina il modello. `naturale_razze` sta dentro `[gs.modelli_gs]`, non in `[gs]`.

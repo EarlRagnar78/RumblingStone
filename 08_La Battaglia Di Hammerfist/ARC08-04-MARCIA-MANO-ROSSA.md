@@ -3,7 +3,7 @@
 > **Scopo**: scheda logistica canonica della colonna d'assalto (900
 > unità, E8) che Fauci di Palude guida contro Hammerfist Holds — da
 > dove si stacca, che rotta segue, quando arriva, e dove il gruppo di
-> ricognizione del flashback (D6: Borin, Dara, Thorin Runaforte, Nala)
+> ricognizione del flashback (D6: Borin, Dara, Harbek Runaforte, Nala)
 > può interferire.
 > **Stato**: canonico (materiale di modulo). Canone di trama in
 > `campaign/state.md`, non ancora giocato — vedi piano ARC-08 A0.
@@ -58,8 +58,8 @@ periodica sopra la colonna.
 
 ## 3. Opportunità di interferenza — gruppo di ricognizione (D6)
 
-Il flashback dei pregen "Eroi di Hammerfist" (Borin Ferropugno, Dara
-Occhiolesto, Thorin Runaforte, Nala Cantapietre — D6, qualche
+Il flashback dei pregen "Eroi di Hammerfist" (Borin Giuraferro, Dara
+Occhiolesto, Harbek Runaforte, Nala Cantapietre — D6, qualche
 settimana prima dell'assedio) è la finestra di gioco su questa marcia.
 Mappe già pronte in `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` (master
 visivo, piano ARC-08 A8; griglie ultra-clear di 1A-1, 1A-2 e 1A-3 in

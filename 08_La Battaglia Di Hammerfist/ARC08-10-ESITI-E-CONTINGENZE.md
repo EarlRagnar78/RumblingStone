@@ -97,7 +97,7 @@ nessuno lo cura per magia, e **al terzo fallimento muore**
 | Elemento | Variante vittoria costosa |
 |---|---|
 | Superstiti nani | <50 (invece di 90) → Hammerfist può presidiare ma non proiettare forza |
-| Re Thorek | **Morto** → la Cerimonia delle 100 Asce è officiata da **Madre Superiora Dana** (o da Thorin Runaforte pregen se Dana è caduta, D14); il riconoscimento dei Custodi Eterni avviene comunque, per volontà testamentaria del re |
+| Re Thorek | **Morto** → la Cerimonia delle 100 Asce è officiata da **Madre Superiora Dana** (o da Harbek Runaforte pregen se Dana è caduta, D14); il riconoscimento dei Custodi Eterni avviene comunque, per volontà testamentaria del re |
 | 150 lance di Re Thorek | Il flusso politico (D4) si **complica**: senza il re, l'erede/consiglio nanico è più esitante → hook ARC-09 con CD Diplomazia +2 |
 | Cerimonia | Tono più cupo; il Giuramento delle 90 diventa "Giuramento dei <50"; la runa dei Custodi ha peso funebre doppio |
 | Perdite orda | Invariate (−900, D11): l'orda perde comunque l'avanguardia |
@@ -257,7 +257,7 @@ maturati e si applicano al finale.
 | Obiettivo | Pieno | Parziale | Fallito |
 |---|---|---|---|
 | **Posizioni difensive tenute** (ritirata ordinata al Cuore della Montagna) | I 90 arrivano al finale **in formazione** → cuneo di carica ottimale, +2 morale iniziale | Ritirata caotica → formazione ma senza bonus morale | Rotta → i 90 iniziano il finale **shaken** (−2), la carica costa un round in più |
-| **Re Thorek stabilizzato** (Thorin Runaforte lo tiene in vita) | Re Thorek vivo a 8 pf per la riscossa (E6, default) → pronuncia il discorso della carica finale (+4 morale) | Thorek incosciente ma vivo → nessun discorso, +0 | Thorek muore prima della riemersione → **ramo vittoria costosa** (§2) |
+| **Re Thorek stabilizzato** (Harbek Runaforte lo tiene in vita) | Re Thorek vivo a 8 pf per la riscossa (E6, default) → pronuncia il discorso della carica finale (+4 morale) | Thorek incosciente ma vivo → nessun discorso, +0 | Thorek muore prima della riemersione → **ramo vittoria costosa** (§2) |
 | **Evacuazione dei civili/feriti** (Passaggi Antichi) | Tutti evacuati → nessun ostaggio, i PG combattono liberi | Evacuazione parziale → 1 round del finale speso a proteggere feriti | Evacuazione fallita → il finale ha un obiettivo secondario "proteggi i feriti" sotto pressione |
 
 ### 5.4 Regola di somma
@@ -327,7 +327,7 @@ da qui:
 | **Fauci ucciso** (ramo alternativo D10) | −1 drago a Rethmar; nessuna nemesi (ma l'uovo resta) | Day 42 Rethmar | `campaign/state.md` §2.3 |
 | **Runa dei Custodi Eterni** (Cerimonia Atto 3) | Status sociale presso i nani del Vale (§6.2) | Ogni interazione coi nani in ARC-09/10 | `Cerimonia-delle-100-Asce.md` §2; questa §6.2 |
 | **150 lance di Re Thorek** (D4) | Rinforzo condizionale a Rethmar | Day 42, se gli hook politici riescono | `state.md` §2.5; `Bestiario/png/Khorn/Khorn.md`; HOOKS-Thorik |
-| **Eroi di Hammerfist pregen** (D14, se sopravvivono) | Borin campione / Dara staffette / Thorin culto / Nala a Dauth | Sparsi in ARC-09 | schede `PNG/Borin_...`, `PNG/Dara_...`, `Bestiario/png/Thorin_Runaforte.md`, `PNG/Nala_...` |
+| **Eroi di Hammerfist pregen** (D14, se sopravvivono) | Borin campione / Dara staffette / Harbek culto / Nala a Dauth | Sparsi in ARC-09 | schede `Bestiario/png/Borin_Giuraferro.md`, `Bestiario/png/Dara_Occhiolesto.md`, `Bestiario/png/Harbek_Runaforte.md`, `Bestiario/png/Nala_Cantapietre.md` |
 | **Raid drow al tempio di Hammerfist** (Sonjak, `state.md` §3) | Prefigura la Fase 0 (Notte dei Drow) di Rethmar | Day 40, Fase 0 Rethmar | `state.md` §3; ARC-09 FASE0 |
 | **Lunapiena resta di presidio** (D13) | Hammerfist difesa, ma NON rinforza Rethmar | Statico | `Bestiario/png/Capitano_Lunapiena.md`; ARMATE-SYNC §7 |
 

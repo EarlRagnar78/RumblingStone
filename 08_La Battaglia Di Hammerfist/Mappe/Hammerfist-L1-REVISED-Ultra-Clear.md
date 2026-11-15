@@ -73,9 +73,9 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 
 @north N
 @mark 1 ; U37 ; Dara Occhiolesto (poi cima torre) (Rgr)
-@mark 2 ; V37 ; Thorin Runaforte (Clr)
+@mark 2 ; V37 ; Harbek Runaforte (Clr)
 @mark 3 ; W37 ; Nala Cantapietre (Brd)
-@mark 4 ; C37 ; Borin Ferropugno (Ftr)
+@mark 4 ; C37 ; Borin Giuraferro (Ftr)
 @mark 5 ; W26 ; Sergente Hobgoblin (sveglio, comando) (GS 6)
 @mark 6 ; V22 ; Guardia 1 (pattuglia) (GS 2)
 @mark 7 ; X28 ; Guardia 2 (pattuglia) (GS 2)
@@ -130,7 +130,7 @@ CADUTA MORTALE!        TORRE CENTRALE          TERRENO SICURO
            Protegge
            Base Torre
 
-                🔵 🔵 🔵     ← Dara, Thorin, Nala (Riga 37, Col 21-23)
+                🔵 🔵 🔵     ← Dara, Harbek, Nala (Riga 37, Col 21-23)
                 PG PARTONO QUI (SUD)
 ```
 
@@ -203,7 +203,7 @@ TEMPO SCALATA: 6 rounds @ Scalare CD 12
 **4 PG POSIZIONI INIZIALI 🔵:**
 - **Borin:** Colonna 03, Riga 37 (ovest solo, backup difensivo)
 - **Dara:** Colonna 21, Riga 37 (sud, poi scala torre)
-- **Thorin:** Colonna 22, Riga 37 (sud centro, spell support)
+- **Harbek:** Colonna 22, Riga 37 (sud centro, spell support)
 - **Nala:** Colonna 23, Riga 37 (sud est, infiltrazione?)
 
 **DIRUPO OVEST ⛰️:**
@@ -227,7 +227,7 @@ TEMPO SCALATA: 6 rounds @ Scalare CD 12
 
 **FASE 1 - AVVICINAMENTO (Righe 37 → 30):**
 1. Nascondersi e Muoversi Silenziosamente **contrapposti** a Osservare +2 e Ascoltare +3 delle guardie (il sergente +1/+1; chi dorme Ascoltare a −10). Il fuoco toglie 5 a Nascondersi entro 12 m.
-2. Borin e Thorin non salgono: restano al riparo delle rocce o girano largo sul fianco, per scelta del giocatore.
+2. Borin e Harbek non salgono: restano al riparo delle rocce o girano largo sul fianco, per scelta del giocatore.
 3. Nala, entro 9 m dal fuoco, capisce il sergente con Ascoltare CD 15.
 
 **FASE 2 - SCALATA TORRE (Dara):**
@@ -322,7 +322,7 @@ Round 81-100: Col 24, Row 28 (loop restart)
 
 | Stato | Trigger | Cosa cambia | Effetto |
 |---|---|---|---|
-| A — Avvicinamento (righe 37→30) | prove contrapposte | i PG si posizionano; Borin e Thorin restano giù | nessun allarme |
+| A — Avvicinamento (righe 37→30) | prove contrapposte | i PG si posizionano; Borin e Harbek restano giù | nessun allarme |
 | B — Scalata + osservazione | timing pattuglie | Dara sale (6 round), cinque round di Osservare | gradino 20 / 25 / 30 |
 | C — Pulito | nessuno li vede, o i corpi spariscono | ritiro per il canyon | «Eliminazione silenziosa» |
 | C' — Scontro | i PG ingaggiano | il sergente fugge sotto i 25 pf | se suona dopo il conto «visti ma via», prima «allarme, e niente vista» |
@@ -452,9 +452,9 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T
 @mark 1 ; K52 ; Goblin su worg 1 (goblin guerriero 5°, GS 5)
 @mark 2 ; L52 ; Goblin su worg 2 (goblin guerriero 5°, GS 5)
 @mark 3 ; L53 ; Goblin su worg, il capo (goblin guerriero 5°, GS 5)
-@mark 4 ; H99 ; Borin Ferropugno (Ftr/Campione nanico)
+@mark 4 ; H99 ; Borin Giuraferro (Ftr/Campione nanico)
 @mark 5 ; I99 ; Dara Occhiolesto (Rgr)
-@mark 6 ; J99 ; Thorin Runaforte (Clr)
+@mark 6 ; J99 ; Harbek Runaforte (Clr)
 @mark 7 ; K99 ; Nala Cantapietre (Brd)
 @path Pattuglia Worg (loop 5 min) ; K50 K75 K95 loop ; #d62828
 @path Rotta furtiva PG (sud→nord) ; J99 I93 O84 I74 P62 I40 O17 L14 J6 ; #1d6fd8
@@ -482,7 +482,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T
 - **Percorso pattuglia:** K50 → K75 → K95 → K50 (avanti e indietro lungo il sentiero, loop 5 minuti)
 
 **4 PG (partenza sud, riga 99):**
-- **Borin:** H99 (avanguardia) · **Dara:** I99 (scout) · **Thorin:** J99 (supporto divino, *Silenzio* pronto) · **Nala:** K99 (infiltrazione)
+- **Borin:** H99 (avanguardia) · **Dara:** I99 (scout) · **Harbek:** J99 (supporto divino, *Silenzio* pronto) · **Nala:** K99 (infiltrazione)
 
 **COPERTURE (rocce sul sentiero):**
 | Roccia | Coordinate | Copertura |
@@ -705,7 +705,7 @@ LEGENDA · 🏰 la cinta, 12 m · 🟫 il sentiero · 🟩 il pendio, in discesa
 @north N
 @mark 1 ; B5 ; Borin e la Guardia del Cancello
 @mark 2 ; J5 ; Dara e i balestrieri
-@mark 3 ; C8 ; Thorin e i veterani
+@mark 3 ; C8 ; Harbek e i veterani
 @mark 4 ; J8 ; Nala e i veterani
 @mark 5 ; F11 ; il sergente (dal round 3)
 @zone D3-H3 ; Pino abbattuto

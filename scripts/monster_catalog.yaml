@@ -1044,13 +1044,6 @@ monsters:
     role: flier
     environment: underdark
     source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/nano Morlin Coalhewer cr12.pcg"
-  - id: xilthra-vel-ssin-comandante-drow-58b492
-    name: "Xilthra Vel’ssin – Comandante Drow"
-    cr: 12.0
-    faction: drow-sonjak
-    role: generalist
-    environment: underdark
-    source_file: "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Sabotaggio-Campi-Drow-STATBLOCCHI.md"
   - id: zin-thara-vel-ryn-la-voce-di-ragnatela-ombraiola-di-sonjak-013e44
     name: "Zin'thara Vel'Ryn «la Voce di Ragnatela» — Ombraiola di Sonjak"
     cr: 12.0
@@ -1065,13 +1058,20 @@ monsters:
     role: generalist
     environment: underdark
     source_file: "Bestiario/villain/Belkram/Belkram.md"
-  - id: xilthra-vel-ssin-boss-dei-campi-drow-1c27c0
-    name: "Xilthra Vel'ssin — Boss dei Campi Drow"
+  - id: xilthra-vel-ssin-la-matriarca-ombra-cr-13-1c27c0
+    name: "Xilthra Vel'ssin, la Matriarca Ombra (CR 13)"
     cr: 13.0
     faction: drow-sonjak
-    role: boss
-    environment: underdark
+    role: caster-divine-boss
+    environment: underground
     source_file: "Bestiario/villain/xilthra-velssin-cr13.md"
+  - id: xilthra-vel-ssin-comandante-drow-58b492
+    name: "Xilthra Vel’ssin – Comandante Drow"
+    cr: 13.0
+    faction: drow-sonjak
+    role: generalist
+    environment: underdark
+    source_file: "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Sabotaggio-Campi-Drow-STATBLOCCHI.md"
   - id: battaglia-finale-fase-0-54c1f4
     name: "Battaglia Finale – Fase 0"
     cr: 14.0

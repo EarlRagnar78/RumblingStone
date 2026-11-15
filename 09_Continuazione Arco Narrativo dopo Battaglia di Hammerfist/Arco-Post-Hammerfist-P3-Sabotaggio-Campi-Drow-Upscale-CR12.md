@@ -48,17 +48,11 @@ Obiettivo: se i PG pianificano bene il crollo, possono “bypassare” un CR 13 
 
 ## Drow‑3 – Xilthra Vel’ssin (Boss CR 13)
 
-Porto Xilthra al **CR 13 pieno**:
+Xilthra al **CR 13 pieno**: la scheda è `Bestiario/villain/xilthra-velssin-cr13.md` `[CANONE — DM 2026-11-15, card]` (Drow Chierica 12 di Lolth, 69 pf, CA 30 con *scudo della fede*, TS +9/+6/+15, RI 23, incantesimi fino al 6°, tattica scritta).
 
-**Xilthra Vel’ssin – Drow Chierico 10 / Ombra Drow 3 (CR 13)**  
-
-- DV: 13d8+26 (pf medi ~95).  
-- CA: 27–29 con magia attiva (*shield of faith*, *divine power*, *magic vestment*).  
-- TS: Temp +10, Rif +7, Vol +14.  
-- Incantesimi fino al 6° livello:  
-  - Chiave: *greater dispel magic, blade barrier, dictum/dispel good, harm* (se vuoi).  
-- Capacità Ombra Drow:
-  - Brevi teletrasporti nell’oscurità (1–3/giorno), bonus furtività, chance di occultamento.  
+<!-- storico -->
+- era: «Xilthra Vel'ssin – Drow Chierico 10 / Ombra Drow 3 (CR 13)», DV 13d8+26 (~95 pf), CA 27–29, TS +10/+7/+14, *greater dispel magic, blade barrier, dictum/dispel good, harm*, «brevi teletrasporti nell'oscurità (1–3/giorno)» (fino al 2026-11-15: l'Ombra Drow non è una classe, *dictum* è legale e di 7°, e 13 livelli farebbero GS 14)
+<!-- /storico -->
 
 Incontro in sala del trono:
 

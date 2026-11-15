@@ -85,6 +85,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-15 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 2, scelte del DM sulle card del 15/11:… | ✅ Zalkatar da solo: almeno un PG morto nel 40% dei combattimenti (0% con le fasi di prima), Zalkatar ucciso nel 65% (81%); Xilthra senza scorta: fugge col Patt… |
 | 2026-11-15 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 1 (Torneo di Dauth), scelte del DM sull… | ✅ Xal'thor contro Tordek da solo: Tordek muore nel 24% dei duelli (15% con la ricarica); Kragar contro Tordek: 79 pf rimasti a Tordek con lo sbilanciare, 86 co… |
 | 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Tattiche dei draghi, seconde card del DM del 15/11: **Ozyrrandion** il tentator… | ✅ tre righe di tattica nelle schede, nessun numero cambiato |
 | 2026-11-15 | PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA | Tattiche di villain e PNG, primo gruppo (ARC-07): Zog'tar sulla breccia dell'al… | ✅ Zog'tar muore in circa 3 round; un PG muore nel 28% delle prove (11% col canone di prima) |
@@ -96,12 +97,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 nona parte: l'armatura naturale dei modelli dell'SRD. Chiave… | In PR |
 | 2026-11-14 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Nomi degli Eroi di Hammerfist scelti dal DM sulle card del 14/11: Borin Ferropu… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: il corredo del Fantino Cavaliere del Palio, scelto dal… | Fantino Cavaliere da nessuna riga di corredo a 1.650 mo su 5.600; `verifica_scheda.py` sul file: 0 violazioni |
-| 2026-11-14 | TRAVASO-DRAPPO-CAMPAGNA | A6, il dossier delle piste di ARC-09: tre piste (la torre che cammina, il «dott… | In PR |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 146 voci, l'ultima MS-0146 del 2026-11-15 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 147 voci, l'ultima MS-0147 del 2026-11-15 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

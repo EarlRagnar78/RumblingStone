@@ -51,7 +51,7 @@ Arco-Post-Hammerfist-P3-Sabotaggio-Campi-Drow-STATBLOCCHI.md
 
 ## 4. Xilthra Vel’ssin – Comandante Drow (Boss, CR 13)
 
-- **Scheda**: `Bestiario/villain/xilthra-vel-ssin-cr13.md` `[CANONE — DM 2026-11-15, card]`. Drow Chierica 12 di Lolth, GS 13, 69 pf, CA 30 con *scudo della fede*, domini Inganno e Male; la tattica (Sala della Corte, Patto, *barriera di lame*, *fuorviare* per sparire) è lì.
+- **Scheda**: `Bestiario/villain/xilthra-velssin-cr13.md` `[CANONE — DM 2026-11-15, card]`. Drow Chierica 12 di Lolth, GS 13, 69 pf, CA 30 con *scudo della fede*, domini Inganno e Male; la tattica (Sala della Corte, Patto, *barriera di lame*, *fuorviare* per sparire) è lì.
 - Opzioni narrative:
   - Può avere amuleto o reliquia che incarna il “Patto Insanguinato”.
   - Se catturata viva, è un ottimo PNG complesso per giochi politici futuri.

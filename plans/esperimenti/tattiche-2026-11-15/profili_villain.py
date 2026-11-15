@@ -308,7 +308,7 @@ def scontro_zalkatar(prove: int, buff: int):
 
 
 # ===================================== XILTHRA NELLA SALA DELLA CORTE (ARC-09, P3)
-# Bestiario/villain/xilthra-vel-ssin-cr13.md (scheda legale del 15/11) contro
+# Bestiario/villain/xilthra-velssin-cr13.md (scheda legale del 15/11) contro
 # l'abbozzo di main (STATBLOCCHI §4 e Upscale: «pf ~90-100, CA 24-26», nessuna
 # tattica: il DM gioca gli incantesimi della lista dal trono).
 # STIME comuni: CD 15 + livello in tutte e due (l'abbozzo non la dava); la scorta

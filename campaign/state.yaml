@@ -477,11 +477,6 @@ conoscenze:
   come: Briefed by Il Collezionista before deploying to desert road
   dal_giorno: 23
   informato_da: il-collezionista
-- png: Conte Valerius
-  png_id: conte-valerius
-  sa_che: The party visited Hammerfist; does NOT yet know about the Crown
-  come: Public dispatches
-  dal_giorno: 23
 - png: Druid Circle of the Sacred Forest
   png_id: cerchio-sacro
   sa_che: Hella is approaching for the ritual; reserves judgment

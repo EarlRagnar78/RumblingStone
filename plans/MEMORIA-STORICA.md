@@ -1582,3 +1582,14 @@ repo scritto con altre parole.
 - **Testo:** le voci di `[gs.modelli_gs]` portano la chiave `naturale` con la riga «Armor Class» dei modelli dell'SRD; il controllo sta dentro `creatura_base`. Il controllo ha trovato lo Skeletal Dire Lion (+4 contro il +2 dello scheletro Grande); il DM ha scelto sulla card del 2026-11-15 «+2 come l'SRD, CA 13» e la scheda è corretta nella stessa PR. Misura contro main fc5c1a8e: violazioni 30 = 30, non verificabili 368 → 369; schede con modello giudicate sull'armatura naturale 0 → 2.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** la base è nota solo per le razze fatte di livelli di classe (0, coboldo +1); altrove si giudica il minimo del modello. Una CA scritta come «contatto 11, alla sprovvista 16» non è un conto e non dà violazione. Azarr Kul finale, Therysol e il Ghostlord non sono giudicati perché il tipo non nomina il modello. `naturale_razze` sta dentro `[gs.modelli_gs]`, non in `[gs]`.
+
+### MS-0139 · 2026-11-15 · ARC-09: il Borin di P1B e P1C è il pregen Borin Giuraferro, col martello
+
+- **Data:** 2026-11-15
+- **PR:** —
+- **ADR:** —
+- **Temi:** arc09 pregen borin aegis-fang eroi-di-hammerfist decisione-dm
+- **Origine:** riga del 2026-11-15 «ARC-09, scelta del DM sulla card del 15/11» in `plans/CHANGELOG.md`
+- **Testo:** in P1B (Cerchio dei Treant) e P1C (Rituale) un «Borin» impugnava Aegis Fang, l'ascia di Thorik. Il DM ha scelto sulla card del 15/11 che sia il pregen Borin Giuraferro col *Martello da Guerra degli Avi +2*; la consigliata era Thorik. I poteri dell'ascia sono tolti e sostituiti dalle capacità della scheda di Borin (ARC08-01 §PNG giocabili).
+- **Trovato nel repo:** i due file di ARC-09, col vecchio testo riassunto nel blocco storico.
+- **Solo qui:** la scelta tocca il D14, che dà Borin «campione di Re Thorek a Hammerfist» dopo la battaglia: in ARC-09 viaggia col gruppo. Se Borin muore nel flashback le due scene vanno rifatte per il PG che prende il suo posto. Thorik, che porta Aegis Fang, in quelle scene non ha un posto scritto (in P1B c'è un «PG4», in P1C «PG2» e «PG3»). La carica fermata si regge sulla regola SRD del percorso libero della carica, non su un potere.

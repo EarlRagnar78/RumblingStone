@@ -2831,6 +2831,8 @@ Cariche pulite, tiene la corda interna, nerba solo per difendersi. Onore alto.
 Sta dietro, colpisce nelle curve cieche, punta a **disarcionare** più che a vincere.  
 }}
 
+> RC-001: il cuoio borchiato +1 e l'anello di protezione +1 spiegano la CA 19 (10, +4 Des, +4 armatura, +1 deviazione); l'anello, la pozione e gli arnesi da scasso vengono dal PNG dei Codex PF1e «Trapsmith» (Ladro 8), che per il resto porta pugnale, balestra, mantello e occhiali e non entra. Il nerbo con aghi è l'arma della scheda e non ha un prezzo nell'SRD; il veleno non è contato. Valore 3.505 mo contro i 9.400 dell'8° livello (DMG 3.5, Tabella 4-23).
+
 ---
 
 ### 1.3 Il Roster — gli 8 fantini con nome (personalità, prezzo, leve)
@@ -3162,7 +3164,7 @@ ___
 
 **STATISTICHE**
 ___
-Des 18 · **Abilità** Cavalcare +12, Raggirare +14, Furtività +14  
+Des 18 · **Abilità** Cavalcare +12, Raggirare +14, Furtività +14 · **Equipaggiamento** pozione di cura ferite moderate; cuoio borchiato +1, anello di protezione +1, nerbo con aghi, arnesi da scasso  
 
 **CAPACITÀ SPECIALI**
 ___

@@ -1560,3 +1560,14 @@ repo scritto con altre parole.
 - **Testo:** il Fantino Cavaliere ha giaco di maglia +1, nerbo, una pozione di cura ferite moderate e due di contrastare elementi; 1.650 mo su 5.600.
 - **Trovato nel repo:** `ADR-0134` → `plans/adr/ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md` · `campaign/REGOLE-CUSTOM.md`
 - **Solo qui:** sulla card il DM aveva tre scelte (armatura leggera e pozioni; le stesse più il mantello della resistenza +1 del «Troglodyte Champion», TS +8/+7/+5; nessun corredo) e ha scelto la prima. La scheda dice solo «armatura leggera da corsa»: il giaco di maglia +1 (1.250 mo) è l'armatura leggera meno cara che dà +5; anche il cuoio borchiato +2 (4.175 mo) lo darebbe. Il tetto è contato sul 6° livello della classe; la scheda dichiara GS 8 e «Cavaliere-ish», quindi il livello effettivo non è certo. Sulla card la pozione era chiamata «resistere agli elementi»: il nome del lessico è «contrastare elementi».
+
+### MS-0137 · 2026-11-15 · ADR-0134: il corredo del Fantino Ladro del Palio
+
+- **Data:** 2026-11-15
+- **PR:** —
+- **ADR:** ADR-0134
+- **Temi:** schede equipaggiamento regole palio
+- **Origine:** riga del 2026-11-15 «ADR-0134, regola RC-001: il corredo del Fantino Ladro del Palio» in `plans/CHANGELOG.md`
+- **Testo:** il Fantino Ladro ha cuoio borchiato +1, anello di protezione +1, nerbo con aghi, arnesi da scasso e una pozione di cura ferite moderate; 3.505 mo su 9.400.
+- **Trovato nel repo:** `ADR-0134` → `plans/adr/ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md` · `campaign/REGOLE-CUSTOM.md`
+- **Solo qui:** sulla card il DM aveva tre scelte (armatura, anello e pozione; le stesse più il mantello della resistenza +1 del «Trapsmith», TS +5/+11/+4, 4.505 mo; nessun corredo) e ha scelto la prima. La scheda non nomina l'armatura: cuoio borchiato +1 (1.175 mo) più anello di protezione +1 (2.000 mo) è una lettura della CA 19 con Des 18, non l'unica possibile. Il veleno del nerbo (CD 14, 1d2 Des) non ha un nome nella scheda e non è contato nel valore. Come per il Fantino Cavaliere, il corredo sta anche nella riga Statistiche perché il booklet non stampa le `voci:` delle schede con Statistiche scritta a mano.

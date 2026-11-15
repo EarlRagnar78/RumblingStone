@@ -54,6 +54,9 @@ ts: Temp +4, Rifl +10, Vol +3
 attributi: Des 18
 attacchi:
   - Nerbo con aghi +11 (1d4+1 + veleno)
+voci:
+  - Equipaggiamento da combattimento: pozione di cura ferite moderate
+  - Altro equipaggiamento: cuoio borchiato +1, anello di protezione +1, nerbo con aghi, arnesi da scasso
 ```
 **Difesa** **CA 19** · **pf 44** · TS Tempra +4, Riflessi +10, Volontà +3
 
@@ -61,11 +64,13 @@ attacchi:
 
 **Tattiche** Sta dietro, colpisce nelle curve cieche, punta a **disarcionare** più che a vincere.
 
-**Statistiche** Des 18 · **Abilità** Cavalcare +12, Raggirare +14, Furtività +14
+**Statistiche** Des 18 · **Abilità** Cavalcare +12, Raggirare +14, Furtività +14 · **Equipaggiamento** pozione di cura ferite moderate; cuoio borchiato +1, anello di protezione +1, nerbo con aghi, arnesi da scasso
 
 **Capacità speciali**
 - *Attacco Furtivo* +4d6.
 - **Slealtà**: una volta a corsa può fingere una caduta per far inciampare chi lo segue (Riflessi DC 18).
+
+> RC-001 (2026-11-15, ADR-0134) `[CANONE — DM 2026-11-15, RC-001]`: il cuoio borchiato +1 e l'anello di protezione +1 spiegano la CA 19 (10, +4 Des, +4 armatura, +1 deviazione); l'anello, la pozione e gli arnesi da scasso vengono dal PNG dei Codex PF1e «Trapsmith» (Ladro 8), che per il resto porta pugnale, balestra, mantello e occhiali e non entra. Il nerbo con aghi è l'arma della scheda e non ha un prezzo nell'SRD; il veleno non è contato. Valore 3.505 mo contro i 9.400 dell'8° livello (DMG 3.5, Tabella 4-23).
 
 ---
 

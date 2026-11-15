@@ -21,6 +21,8 @@ attacchi:
   - Mischia spada corta +1 +7 (1d6+1/19-20)
 voci:
   - Talenti: Iniziativa Migliorata, Scrivere Pergamene, Incantesimi Silenziosi, Arma Accurata
+  - Equipaggiamento da combattimento: collana delle palle di fuoco (una sfera da 4d6 rimasta), pozione di cura ferite moderate, pergamena di invisibilità
+  - Altro equipaggiamento: anello di protezione +1, spada corta +1
 ```
 
 
@@ -33,3 +35,5 @@ Notes: i mago/ladri duergar dello scontro del ponte; usano Missile Magico/Palla 
 > correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-12, lotto 1-bis): campo `sensi` aggiunto, duergar: scurovisione 36 m (SRD, «Dwarf, Duergar»). La scheda non la scriveva.
 
 > decisione del DM (2026-11-13, card del grado di sfida): GS da 7 a 8. SRD 3.5, «Dwarf, Duergar»: un duergar con livelli di classe da PG ha grado di sfida pari al livello +1 (Rogue 3 / Wizard 4 = 7 livelli). Il file passa da `duergar-mago-ladro8-cr7.md` a `duergar-mago-ladro8-cr8.md`. Nessun altro numero cambia.
+
+> RC-001 (2026-11-15, ADR-0134) `[CANONE — DM 2026-11-15, RC-001]`: il corredo è quello dell'export PCGen senza la fascia dell'intelletto +2, che la scheda non usa (Int 16, l'export ha Int 18). Anello di protezione +1 nella CA 13 e spada corta +1 nell'attacco erano già nei conti; collana con una sfera da 4d6 (la tattica della Palla di Fuoco nelle note), pozione e pergamena si aggiungono. Nessun numero cambia. Valore 4.760 mo senza la collana (2.000 + 2.310 + 300 + 150), al più 6.410 contandola come una collana tipo I intera (1.650), contro i 9.400 dell'8° livello effettivo (7 livelli di classe + 1 di modificatore del duergar; DMG 3.5, Tabella 4-23).

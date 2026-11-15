@@ -17,6 +17,9 @@ velocita: 9 m
 iniziativa: +2
 attacchi:
   - Mischia pugnale nascosto +1 +7/+2 (1d4+1/19-20) più attacco furtivo +2d6
+voci:
+  - Equipaggiamento da combattimento: bacchetta di charme su persone (5 cariche)
+  - Altro equipaggiamento: giaco di cuoio borchiato +1, pugnale +1 (nascosto), anello dello scudo mentale, borsa conservante tipo I, sigillo di autenticità ⚠ **Non SRD**
 ```
 
 <!-- storico -->
@@ -192,3 +195,7 @@ Boost log: correzione dei conti (SRD) — GS 6 → 6 — CA e Volontà salgono, 
 > - era: BAB +5, pugnale +7 → ora BAB +6, pugnale +1 +7 in mischia (+9 lanciato: senza Arma Accurata la Des vale solo a distanza)
 > - era: «+2 razziale» a Raggirare su un umano → ora +2 di Persuasivo
 <!-- /storico -->
+
+> RC-001 (2026-11-15, ADR-0134) `[CANONE — DM 2026-11-15, RC-001]`: il corredo è la tabella §EQUIPAGGIAMENTO com'è, più il giaco di cuoio borchiato +1 e il pugnale +1 che la CA 16 e l'attacco della scheda già usano e la tabella non elencava. La borsa è contata come tipo I, la più piccola; il sigillo di autenticità è un oggetto della campagna senza prezzo SRD. Nessun numero cambia.
+
+> Equipaggiamento sopra la tabella: scelta del DM (card del 2026-11-15). Vale almeno 14.052 mo (1.175 + 2.302 + 8.000 + 2.500 + 75, sigillo escluso) contro i 9.400 della Tabella 4-23 del DMG 3.5 per il livello effettivo 8; il GS resta 6 e nessun numero cambia.

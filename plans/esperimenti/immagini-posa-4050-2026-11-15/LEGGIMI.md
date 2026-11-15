@@ -29,3 +29,8 @@ sull'ASUS è anche la prova che funzionano.
 - `dati/pipeline_scena.py`, `dati/misura_immagini.py`, `dati/rifinitura.py`: le sei fasi e il banco.
 - `dati/scene.json`: le dieci scene (otto pose dei quattro PG, due scene nelle caverne di ARC-07).
 - `dati/img/`: i riferimenti dei quattro PG, gli scheletri di posa e lo sfondo delle caverne di ARC-07, come erano nel pacchetto per Kaggle.
+
+Il repo ignora i `.webp` (`.gitignore`): lo sfondo delle caverne è diventato
+`img/scena_caverne_arc07.png`, ridotto da 3136×1344 a 1568×672 (la pipeline lo porta
+comunque a 1536 di lato, e il riquadro è in frazioni). I quattro `intero_*.webp`, che
+nessuna scena usa, sono rimasti fuori.

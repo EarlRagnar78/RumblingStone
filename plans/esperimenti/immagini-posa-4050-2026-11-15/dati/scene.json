@@ -133,8 +133,8 @@
   "posa_png": "img/posa_thorik.png",
   "seed": 2000,
   "prompt": "Thorik, a broad muscular shield dwarf, short and stocky, grey beard, battle-scarred face, heavy silver and steel plate armor with a blue glowing gem on the chest plate, dark red cape, a glowing golden crown with three large gems (yellow, purple, blue) on his head, holding a heavy double-crescent runic steel waraxe, dark fantasy illustration, painterly, full body, plain background",
-  "stile": "img/scena_caverne_arc07.webp",
-  "scena_sfondo": "img/scena_caverne_arc07.webp",
+  "stile": "img/scena_caverne_arc07.png",
+  "scena_sfondo": "img/scena_caverne_arc07.png",
   "riquadro": [
    0.38,
    0.25,
@@ -150,7 +150,7 @@
     "a golden crown with three colored gems",
     "a double-bladed steel battle axe"
    ],
-   "stile": "img/scena_caverne_arc07.webp"
+   "stile": "img/scena_caverne_arc07.png"
   }
  },
  {
@@ -159,8 +159,8 @@
   "posa_png": "img/posa_artemis.png",
   "seed": 2000,
   "prompt": "Hella, a short stocky female dwarf druid, pointed ears, light wavy blonde hair with green leaves, armor of cracked grey stone plates and green oak leaves, a glowing green acorn crystal pendant on her chest, hands glowing with green druidic magic, dark fantasy illustration, painterly, full body, plain background",
-  "stile": "img/scena_caverne_arc07.webp",
-  "scena_sfondo": "img/scena_caverne_arc07.webp",
+  "stile": "img/scena_caverne_arc07.png",
+  "scena_sfondo": "img/scena_caverne_arc07.png",
   "riquadro": [
    0.55,
    0.3,
@@ -176,7 +176,7 @@
     "pointed ears",
     "a glowing green acorn pendant on the chest"
    ],
-   "stile": "img/scena_caverne_arc07.webp"
+   "stile": "img/scena_caverne_arc07.png"
   }
  }
 ]

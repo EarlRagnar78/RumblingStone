@@ -3305,7 +3305,7 @@ successo in più o in meno, si applica allo stesso modo.
 | **La Catena** | Leggerla: azione di movimento entro 9 m. Colpirla: **CA 44**; un attacco di contatto non la raggiunge. Il primo colpo a segno la spezza, e il drago se ne va |
 | **Il cortile** | La fucina: 4d6, e niente olfatto per 1d4 round. Le campane tolgono la sorpresa, e chi le suona si fa bersagliare. Chiamare i nani: arrivano, e muoiono |
 | **Artefatti** | *Dragondoom* di Aegis Fang funziona, tre volte al giorno. Il Bane contro Fauci qui non vale. La Cintura di Tordek rifiuta di attivarsi |
-| **La soglia** | A un terzo dei pf (circa 112) si ferma in aria, una volta sola. Al suo turno fugge nell'oscurità, a meno che nel round prima abbia preso almeno due colpi: allora resta un round, e lì si può uccidere. Se Balvar è morto combatte a −2 e fugge a metà dei pf |
+| **La soglia** | A un terzo dei pf (circa 112) si ferma in aria, una volta sola, ed esita: in quel round non attacca. Al suo turno fugge nell'oscurità, a meno che nel round prima abbia preso almeno due colpi: allora resta un round, e lì si può uccidere. Se Balvar è morto combatte a −2 e fugge a metà dei pf |
 | **Se va male** | Due PG a terra nello stesso round, o il gruppo si ritira dal cortile: intervengono gli avi, ed è «vinto sporco» |
 | **Sviluppo** | **Conta i colpi a segno** (ferite ancestrali, al massimo 3) e segna se Aegis Fang ha colpito in volo. Esito: ucciso, ferito grave o fuggito. Il colpo finale lo racconta il giocatore. Poi la serata si ferma |
 | **Tesoro** | La scaglia del Primo Nero (circa 1.500 mo), solo se il drago è ucciso |
@@ -3514,10 +3514,12 @@ cambia davvero.
   - ***Fluttuare*** (SRD, *Hover*), **una volta sola**: alla prima paura, a
     ⅓ dei pf (la soglia qui sotto). Con un'azione di movimento si ferma in
     aria, e da fermo si sposta in ogni direzione, anche in verticale, a metà
-    velocità, nonostante la manovrabilità scarsa. Se comincia il turno fermo
-    in aria può fare un'azione di round completo: niente attacchi d'ala, ma
-    morso, artigli e coda come in un attacco completo, oppure il soffio o un
-    incantesimo. Sotto i 6 m dal suolo, sopra le macerie e la cenere del
+    velocità, nonostante la manovrabilità scarsa. La regola gli darebbe,
+    se comincia il turno fermo in aria, un'azione di round completo (morso,
+    artigli e coda); alla prima paura **non la usa**: esita, guarda, e in quel
+    round non attacca, né soffia, né lancia `[CANONE — DM 2026-11-15: la
+    simulazione del duello dava il round più letale proprio qui, 79% di duelli
+    con un PG morto contro 42%]`. Sotto i 6 m dal suolo, sopra le macerie e la cenere del
     cortile, alza una nube di 18 m di raggio: dentro si vede a 3 m, chi è a
     4,5-6 m ha occultamento (20%), chi è a 7,5 m o più occultamento totale
     (50%), e per lanciare un incantesimo nella nube serve Concentrazione
@@ -3591,7 +3593,7 @@ cambia davvero.
   giorno in cui il re è caduto.
 - **Soglia: quando gli resta un terzo dei pf, ~112 col Vecchio e ~100 con l'Adulto — la prima paura.** Per la prima volta nella sua vita,
   Skullcrusher **esita**, e **si ferma in aria** (*Fluttuare*): è l'unica
-  volta nel duello. È il momento dei tre esiti (sotto). Al suo turno
+  volta nel duello, e in quel round **non attacca** `[CANONE — DM 2026-11-15]`. È il momento dei tre esiti (sotto). Al suo turno
   fugge nelle paludi sotto la sua *oscurità*, a meno che nel round prima abbia preso **almeno due
   colpi**: allora resta fermo lì un round ancora, e lì si può uccidere (le soglie,
   più sotto). *«Qualcosa in lui — nel
@@ -3656,7 +3658,7 @@ duello. Le wyvern no: non vedono gli invisibili, li fiutano entro 9 m.
 | **Nel cortile, col re** | il cortile, M7-B | come scritto qui sopra |
 | **Sulle mura**, dopo la Scena 10 | dietro la porta principale, sul cortile: è lì che apre la strada agli arieti, ed è lì che il re la difende | la prima passata la fa lungo il camminamento sud, se i PG ci stanno in fila: è largo un quadretto, e la linea di 30 m del soffio li prende tutti. Poi va alla porta. I PG scelgono: restare in alto, con la gittata e le gru (le corde partono dal camminamento), o scendere nel cortile (4,5 m di scala). Da lì vale M7-B |
 | **Fuori dalle mura** | la spianata davanti alla porta | come «Se il duello comincia fuori dalle mura», più sopra |
-| **In volo, visibili** | dove sono loro, se lo intercettano prima della fortezza; altrimenti la porta | **La quota è sua.** Vola a 45 m, loro a 18 (12 in armatura media o pesante): decide lui quando ingaggiare, e sta sempre più in alto. **Il soffio** in linea sui volanti allineati. ***Dissolvi magie* ad area**, raggio 6 m, gittata 51 m, prova d20+7: contro il *volare* della pozione (CD 16) riesce 6 volte su 10, contro l'invisibilità comprata (CD 14) 7 su 10, contro quella del re (incantatore di 12°, CD 23) 1 su 4. La forma selvatica di Hella è soprannaturale e non si dissolve; per le Ali d'Ombra dell'Anello di Artemis decide il DM, perché la scheda dell'Anello non lo dice. **Chi perde il volo** scende di 18 m a round per 1d6 round e atterra illeso se tocca terra in tempo; altrimenti cade per il resto, 1d6 ogni 3 m (SRD, *volare*). Sopra la piana scende in mezzo all'orda. ***Lentezza*** (Volontà CD 17, gittata 12 m) su chi lo insegue. ***Virare*** per tornare sulla stessa linea. Le **wyvern** su chi vola, come scritto. Non si ferma in aria: *Fluttuare* resta per la prima paura |
+| **In volo, visibili** | dove sono loro, se lo intercettano prima della fortezza; altrimenti la porta | **La quota è sua.** Vola a 45 m, loro a 18 (12 in armatura media o pesante): decide lui quando ingaggiare, e sta sempre più in alto. **Il soffio** in linea sui volanti allineati. ***Dissolvi magie* ad area**, solo su chi in aria lo minaccia: chi lancia incantesimi o deflagra, chi porta un barile. I nani in volo che non lo raggiungono li lascia stare, perché a terra tornerebbero utili `[CANONE — DM 2026-11-15, dalla simulazione del duello]`. Raggio 6 m, gittata 51 m, prova d20+7: contro il *volare* della pozione (CD 16) riesce 6 volte su 10, contro l'invisibilità comprata (CD 14) 7 su 10, contro quella del re (incantatore di 12°, CD 23) 1 su 4. La forma selvatica di Hella è soprannaturale e non si dissolve; per le Ali d'Ombra dell'Anello di Artemis decide il DM, perché la scheda dell'Anello non lo dice. **Chi perde il volo** scende di 18 m a round per 1d6 round e atterra illeso se tocca terra in tempo; altrimenti cade per il resto, 1d6 ogni 3 m (SRD, *volare*). Sopra la piana scende in mezzo all'orda. ***Lentezza*** (Volontà CD 17, gittata 12 m) su chi lo insegue. ***Virare*** per tornare sulla stessa linea. Le **wyvern** su chi vola, come scritto. Non si ferma in aria: *Fluttuare* resta per la prima paura |
 | **In volo, invisibili** | come sopra | con *vedere invisibilità* già addosso li vede come visibili, e vale la riga sopra. Il nome gridato li trova comunque: *colpo accurato* ignora l'occultamento |
 | **Con il corno rubato** | dov'è il corno | come «Se suonano loro il corno rubato» (Scena 6): va prima su chi lo tiene |
 | **Non ci sono**: ancora nel campo, dispersi, colti fuori dall'alba | dietro la porta | fa il suo lavoro. Due colpi mettono a terra il re, stabile (il re non muore). La porta cede: su M7-B vale la riga «0 successi» della Scena 10, sei quadretti di terreno difficile e due nani a terra. Quando i PG arrivano il duello comincia dove sono, e il drago non è sorpreso |

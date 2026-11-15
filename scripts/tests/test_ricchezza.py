@@ -62,6 +62,27 @@ class TestDati(unittest.TestCase):
         self.assertNotIn("per_livello", pf["png"])
 
 
+class TestDadiVitaDichiarati(unittest.TestCase):
+    def test_una_classe_ignota_non_abbassa_il_livello(self):
+        """«Diviner 5» manca dai gruppi dei dadi: il livello è quello dei dadi vita dichiarati («7 HD»).
+
+        Caso vero: Dovil, 5.850 mo al 7° livello (tetto 7.200), giudicato come un 2° (tetto 2.000)."""
+        import tempfile
+        from tests.test_difese import SCHEDA
+        testo = SCHEDA.replace("pf-dado: {dadi}\n", "").replace(
+            "voci:\n", "voci:\n  - Altro equipaggiamento: armatura completa, spadone +1, anello di protezione +1\n")
+
+        def giudicata(coda: str) -> "list[str]":
+            with tempfile.TemporaryDirectory() as t:
+                q = Path(t) / "prova-cr7.md"
+                q.write_text(testo.format(titolo="Prova", tipo="Medium humanoid (dwarf, hill)",
+                                          classe="Diviner 5 / Deep Diviner 1 / Fighter 1", coda=coda), encoding="utf-8")
+                return [x["atteso"] for x in V.ricchezza(q)[0]]
+        self.assertEqual(giudicata("Medium humanoid. **hp 37** (7 HD)."), [])
+        # senza i dadi vita dichiarati resta la lettura dei gruppi: il limite è dichiarato nell'ADR
+        self.assertEqual(giudicata("Medium humanoid."), ["al più 2000 mo"])
+
+
 class TestOggetti(unittest.TestCase):
     def setUp(self):
         self.d = S.dati("dnd35", "creature.costruzione")["oggetti"]

@@ -2519,7 +2519,8 @@ def _ricchezza_di_una_scheda(p: Path, testo: str, riga0: int, dal_nome: str) -> 
         return [], []
     righe = _righe_dell_equipaggiamento(s.testo)
     oggetti = _senza_la_copia(s.testo, [(n, o) for n, r in righe for o in _oggetti_col_prezzo(r, d, sistema)])
-    dadi_vita = sum(g.n for g in s.gruppi)
+    # una classe che la lettura dei dadi non conosce («Diviner 5») manca dai gruppi: valgono i dadi vita dichiarati
+    dadi_vita = max(sum(g.n for g in s.gruppi), L.dv_totali(s.testo) or 0)
     if not oggetti or not dadi_vita:
         return [], []
     totale = sum(o[1] for _, o in oggetti)

@@ -244,7 +244,7 @@ NEMICI arrivano da:
 🔴 Guerr. 5-6: Col T-U, Riga 32 (center push)
 
 PG DIFENSORI:
-🔵 Borin: Col T, Riga 22 (frontline, 3m da Hella)
+🔵 Borin Giuraferro: Col T, Riga 22 (frontline, 3m da Hella)
 🔵 PG2: Col Q, Riga 20 (flank west)
 🔵 PG3: Col X, Riga 20 (flank east)
 🔵 Hella: Col T, Riga 20 (CENTRO, casting, vulnerabile!)
@@ -264,9 +264,12 @@ SE Seedlings piantati:
   - 2 try bypass verso Hella (Athletics per jump over seedlings)
   - 2 ranged crossbow su Hella (attacchi disturbano Concentration!)
 
-**Aegis Fang Bonus (Borin):**
-- **Cleaving Finish:** Se Borin uccide Hell Hound, attacco gratis vs secondo!
-- **Dragon Taint Sense:** Avvisa Round 7: "Bestie fuoco... arrivano! Sud!"
+> **Borin Giuraferro** `[CANONE — DM 2026-11-15]`: è il pregen di Hammerfist sopravvissuto, che accompagna il gruppo; porta il suo *Martello da Guerra degli Avi +2* (ritornante), non Aegis Fang. Statistiche: `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md` §PNG giocabili e `Bestiario/png/Borin_Giuraferro.md` (CA 25, 142 pf, +21/+16/+11, 1d8+9/×3; Colpo Devastante +4d6 3/giorno, Postura Difensiva 3/giorno, Presenza Comandante +2 morale entro 9 m; talenti Incalzare e Riflessi in Combattimento). Se Borin è morto nel flashback, la scena va rifatta per il PG che ne prende il posto.
+> <!-- storico -->Fino al 2026-11-15 questa parte la teneva un «Borin» con Aegis Fang, che è l'ascia di Thorik: il DM ha scelto sulla card del 15/11 che sia il pregen Borin Giuraferro, col suo martello. Tolti i poteri dell'ascia (Purifying Strike, senso della corruzione, Defensive Stand, dragon bane).<!-- /storico -->
+
+**Borin Giuraferro (Martello degli Avi):**
+- **Incalzare (talento):** se Borin abbatte un Hell Hound, ha un attacco extra contro un altro nemico adiacente.
+- **Presenza Comandante:** +2 morale agli alleati entro 9 m finché resta in piedi.
 
 **Corona Adamantio:**
 - Chi indossa può **Command** Hell Hound (DC 18 Will): "Siediti!" o "Attacca alleato!"
@@ -338,7 +341,6 @@ SE Seedlings piantati:
 
 **Counterplay:**
 - **Ring Chaotic Illumination:** *Faerie Fire* at-will svela invisibile!
-- **Aegis Fang:** Borin ha "sense" tingle se assassino entro 15m (Wisdom DC 15 notice)
 - **Treant Seedlings:** Tremorsense 30ft, auto-detect assassino se entro 9m
 
 ---
@@ -504,8 +506,7 @@ SCALA: Ogni quadrato = 1.5m × 1.5m · stessa radura e stesse coordinate della m
 **Counterplay PG:**
 - **Spot DC 28** notice assassino invisible (può tentare ogni round)
 - **Ring Faerie Fire:** Auto-reveals se cast entro 60ft
-- **Aegis Fang Warning (Borin):** Round 26, ascia sussurra: "Pericolo! Dietro druida!"
-  - Borin può ready action intercept assassin
+- **Borin Giuraferro:** nessun avviso dal martello. Se qualcuno vede l'assassino, Borin può preparare un'azione per mettersi fra lui e Hella
 
 ---
 
@@ -643,23 +644,16 @@ SCALA: 1 quadrato = 1.5m × 1.5m
 
 ### INTERAZIONI ARTEFATTI - FASE CRITICA
 
-**Aegis Fang Ultimate (Borin - Round 37):**
+**Borin Giuraferro contro la carica (Round 37):**
 
-> Mentre il Wyrmlord carica, **Aegis Fang URLA** nella mente di Borin. Non parole, ma pura determinazione nanica: "PROTEGGI! DRUIDA! NATURA! FRATELLO FORGIA!"
+Il martello non ha poteri suoi: Borin ferma il Wyrmlord con le regole.
+- **Azione preparata (round prima):** Borin prepara un movimento «se qualcuno carica Hella, mi metto sulla sua linea». La carica vuole un percorso libero: se Borin occupa la linea, il Wyrmlord non arriva a Hella e deve fermarsi o attaccare lui.
+- **Attacco d'opportunità:** il Wyrmlord che entra nell'area minacciata di Borin ne provoca uno: +21, 1d8+9/×3, +4d6 con Colpo Devastante. Riflessi in Combattimento gli dà più attacchi d'opportunità nello stesso round.
+- **Postura Difensiva:** se è già attiva, +4 For e Cos (+2 a colpire e ai danni, +2 pf per DV).
 
-**ABILITY UNLOCK: Defensive Stand (1/day):**
-- **Immediate Action** quando nemico carica alleato entro 15ft
-- Borin può **Intercept Charge** (si mette tra nemico e alleato)
-- Ottiene:
-  - +4 AC (total AC 28+)
-  - Attack of Opportunity con +8 bonus (+25 total hit!)
-  - Se colpisce: Nemico **FERMA charge** (no movement completo)
-- **Visual:** Aegis Fang lascia scia blu energia, Borin = muro invalicabile
-
-**Se Borin usa vs Wyrmlord Round 37:**
-- Wyrmlord fermato Col T, Riga 26 (prima raggiungere Hella!)
-- Borin colpo AoO: +25 hit, 1d10+15 + 2d6 dragon bane (Wyrmlord serve draghi!)
-- Wyrmlord forced melee duello con Borin (Hella safe!)
+**Se Borin si mette sulla linea al Round 37:**
+- Wyrmlord fermato Col T, Riga 26 (prima di raggiungere Hella)
+- Il duello è fra Borin e il Wyrmlord: Hella resta fuori portata
 
 ---
 
@@ -943,7 +937,7 @@ DIMENSIONI TOTALI MAPPA: 40 colonne × 40 righe = 60 m × 60 m, la stessa radura
 
 **ROUND 37 - CRITICAL:**
 - **Wyrmlord:** CHARGE Hella! (60ft, arriva Col T, Riga 26 se non intercettato!)
-  - **Aegis Fang Intercept:** Borin può bloccare (vedi sopra)
+  - **Intercetto di Borin Giuraferro:** può mettersi sulla linea di carica (vedi sopra)
   - Se non bloccato: Full attack vs Hella AC 10! (+20/+15/+10, quasi auto-hit!)
 - **Ogres:** Full Attack vs Treants NW/NE
   - Power Attack -5/+5: +13 (2d8+18) each swing

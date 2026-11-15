@@ -85,6 +85,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | ARC-09, scelta del DM sulla card del 15/11: il «Borin» con Aegis Fang di P1B e… | In PR |
 | 2026-11-14 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Nomi degli Eroi di Hammerfist scelti dal DM sulle card del 14/11: Borin Ferropu… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: il corredo del Fantino Cavaliere del Palio, scelto dal… | Fantino Cavaliere da nessuna riga di corredo a 1.650 mo su 5.600; `verifica_scheda.py` sul file: 0 violazioni |
 | 2026-11-14 | TRAVASO-DRAPPO-CAMPAGNA | A6, il dossier delle piste di ARC-09: tre piste (la torre che cammina, il «dott… | In PR |
@@ -96,12 +97,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, le tre risposte del DM sulle card: monaco «Pugno del Destino» a 15 m… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: le quattro decisioni del DM sulle card del 14/11. Il d… | Sedici schede con corredo contro le undici di main; due schede con i tiri salvezza +1. Restano senza: monaco (mantello, dopo la correzione della velocità), bla… |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 sesta parte: il grado di sfida di chi avanza per dadi vita.… | In PR |
-| 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 quinta parte: i draghi veri per colore e categoria d'età.… | In PR |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 137 voci, l'ultima MS-0137 del 2026-11-14 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 138 voci, l'ultima MS-0138 del 2026-11-15 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

@@ -1571,3 +1571,15 @@ repo scritto con altre parole.
 - **Testo:** il DM ha scelto sulle card del 2026-11-14 (21:37 e 22:17-22:18): Borin Ferropugno diventa Borin Giuraferro, «Colui che non arretra» (era «Il Martello di Hammerfist»); Thorin Runaforte diventa Harbek Runaforte, «Custode dell'Ultima Runa» (era «La Voce di Moradin»); Dara Occhiolesto prende «Morte dai Picchi» (era «L'Occhio delle Montagne»); Nala Cantapietre prende «Il Sorriso prima della Lama» (era «La Lama Nascosta»); la Madre Superiora Dana Forgiapietra diventa Dagmar Forgiapietra, detta Dana. Schede rinominate `Borin_Giuraferro.md` e `Harbek_Runaforte.md`; quella della Madre resta `Dana_Forgiapietra.md`, col nome d'uso.
 - **Trovato nel repo:** `Bestiario/png/Borin_Giuraferro.md`, `Bestiario/png/Harbek_Runaforte.md`, `Bestiario/png/Dana_Forgiapietra.md` (vecchi nomi nei blocchi storico)
 - **Solo qui:** con Harbek cade l'avviso dei tre nomi simili (A10, D2); resta quello Thorik/Thorek. Il file della Madre non si rinomina perché il registro dei nomi di `misura_craft.py` prende i nomi dai file del Bestiario: senza «Dana» il voto della corsa A-senza-1/S06 cambiava (box_un_nome) e `voto_scrittura --check` cadeva. Restano coi vecchi nomi, per scelta: esperimenti, scritture, archivi, registri, fixture di test congelate, i caduti «Borin Manodura» e «Dara Passolesto, occhio delle montagne» della Cerimonia delle 100 Asce (altri nani). Nell'ARC-09 (P1B, P1C) «Borin» porta Aegis Fang, quindi è un segnaposto per Thorik e non il pregen: non toccato, da decidere a parte. Non scritti perché le card sono aperte: cosa fare se un giocatore non vuole guidare un eroe, la rosa allargata.
+
+### MS-0138 · 2026-11-15 · ARC-09: il Borin di P1B e P1C è il pregen Borin Giuraferro, col martello
+
+- **Data:** 2026-11-15
+- **PR:** —
+- **ADR:** —
+- **Temi:** arc09 pregen borin aegis-fang eroi-di-hammerfist decisione-dm
+- **Origine:** riga del 2026-11-15 «ARC-09, scelta del DM sulla card del 15/11» in `plans/CHANGELOG.md`
+- **Testo:** in P1B (Cerchio dei Treant) e P1C (Rituale) un «Borin» impugnava Aegis Fang, l'ascia di Thorik. Il DM ha scelto sulla card del 15/11 che sia il pregen Borin Giuraferro col *Martello da Guerra degli Avi +2*; la consigliata era Thorik. I poteri dell'ascia sono tolti e sostituiti dalle capacità della scheda di Borin (ARC08-01 §PNG giocabili).
+- **Trovato nel repo:** i due file di ARC-09, col vecchio testo riassunto nel blocco storico.
+- **Solo qui:** la scelta tocca il D14, che dà Borin «campione di Re Thorek a Hammerfist» dopo la battaglia: in ARC-09 viaggia col gruppo. Se Borin muore nel flashback le due scene vanno rifatte per il PG che prende il suo posto. Thorik, che porta Aegis Fang, in quelle scene non ha un posto scritto (in P1B c'è un «PG4», in P1C «PG2» e «PG3»). La carica fermata si regge sulla regola SRD del percorso libero della carica, non su un potere.
+

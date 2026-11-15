@@ -630,13 +630,16 @@ magie* ad area ha 6 m di raggio. Se il giavellotto ha mostrato i PG, Balvar lo
 lancia lì al round 4. Se non li ha mostrati, può lanciarlo alla cieca sopra la
 tenda, e prende chi è rimasto sulla verticale una volta su sei. Ogni PG nell'area
 tira la prova del dissolvi contro ogni effetto: d20 + 10 contro **CD 16** per il
-*volare* della pozione (11 + 5) e **CD 14** per l'invisibilità (11 + 3). Chi
-perde il volo non cade di colpo: scende di **18 m a round per 1d6 round**, e
+*volare* della pozione (11 + 5) e **CD 14** per l'invisibilità (11 + 3).
+
+**Chi perde il volo** non cade di colpo: scende di **18 m a round per 1d6 round**, e
 se tocca terra in quel tempo atterra illeso; altrimenti cade per il tratto che
 resta, 1d6 ogni 3 m (SRD, *volare*: dissolto, si comporta come quando scade).
 Da 48 m: con 3 round o più arriva a terra illeso (4 volte su 6); con 2 round
 cade da 12 m, 4d6; con 1 round da 30 m, 10d6 `[CANONE — DM 2026-11-15: la
-caduta secca di 15d6 del 29/10 non era SRD]`. Lo fa solo se è in
+caduta secca di 15d6 del 29/10 non era SRD]`.
+
+Balvar lancia il *dissolvi* solo se è in
 modalità «minacciato, o attaccato» della Scena 7, ed è il caso: il barile è un
 attacco.
 

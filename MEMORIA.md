@@ -85,6 +85,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-15 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 3: duello di **Karruk** sui gradini (Ca… | ✅ Karruk contro Thorik, campione morto nel 79% dei duelli (57% con l'Attacco Poderoso sempre, che contro la CA 27 conviene di meno); contro Tordek nel 77%; Zar… |
 | 2026-11-15 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 2, scelte del DM sulle card del 15/11:… | ✅ Zalkatar da solo: almeno un PG morto nel 40% dei combattimenti (0% con le fasi di prima), Zalkatar ucciso nel 65% (81%); Xilthra senza scorta: fugge col Patt… |
 | 2026-11-15 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 1 (Torneo di Dauth), scelte del DM sull… | ✅ Xal'thor contro Tordek da solo: Tordek muore nel 24% dei duelli (15% con la ricarica); Kragar contro Tordek: 79 pf rimasti a Tordek con lo sbilanciare, 86 co… |
 | 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Tattiche dei draghi, seconde card del DM del 15/11: **Ozyrrandion** il tentator… | ✅ tre righe di tattica nelle schede, nessun numero cambiato |
@@ -96,12 +97,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | ARC-09, scelta del DM sulla card del 15/11: il «Borin» con Aegis Fang di P1B e… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 nona parte: l'armatura naturale dei modelli dell'SRD. Chiave… | In PR |
 | 2026-11-14 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Nomi degli Eroi di Hammerfist scelti dal DM sulle card del 14/11: Borin Ferropu… | In PR |
-| 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: il corredo del Fantino Cavaliere del Palio, scelto dal… | Fantino Cavaliere da nessuna riga di corredo a 1.650 mo su 5.600; `verifica_scheda.py` sul file: 0 violazioni |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 147 voci, l'ultima MS-0147 del 2026-11-15 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 148 voci, l'ultima MS-0148 del 2026-11-15 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

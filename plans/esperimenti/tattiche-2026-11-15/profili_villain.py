@@ -441,6 +441,79 @@ def scontro_xilthra(prove: int, buff: int):
                       ultima="round-PG persi (comandati, bloccati)")
 
 
+
+# ============================================ ZARIM AL TORNEO (ARC-09, Giorno 3)
+# Bestiario/villain/Zarim/zarim-illithid-luogotenente-cr12.md: CA 23, 73 pf, RI 25,
+# 4 tentacoli +10 (1d4+1), esplosione mentale a volontà (cono 18 m, Volontà CD 19
+# o stordito 3d4 round), charme sui mostri CD 17, Archivio delle Anime (1/scontro,
+# cura 3d8+8 quando un nemico cade), morale sotto 25 pf.
+# STIME: in levitazione fino al round 3 (lo colpiscono solo a distanza); il PG
+# ammaliato perde lo scontro (nel modello non attacca i compagni); estrarre il
+# cervello come per Zalkatar: chi è stordito non si libera, Tempra CD 19 il round
+# dopo. Thorik immune all'esplosione e al charme (Corona). Senza le ondate.
+def zarim() -> Creatura:
+    tent = lambda: d(1, 4) + 1  # noqa: E731
+    return Creatura("Zarim", pf=73, ca=23, contatto=12, ri=25, temp=9, rifl=7, vol=15,
+                    attacchi=[(10, tent)] * 4, soffio_dadi=(0, 1), soffio_cd=0,
+                    soffio_forma="cono", presenza_cd=0, soglia_fuga=25)
+
+
+def politica_zarim(variante: str):
+    """oggi         la tattica della scheda: round 1 esplosione, round 2 charme sul
+                    combattente più pericoloso non protetto (Tordek), dal round 3
+                    scende sugli storditi ed estrae il cervello, Tordek compreso.
+    tordek_vivo  la stessa, ma Tordek non si tocca: Xal'thor lo vuole vivo per il
+                 portale (canone del 15/11, Bestiario Xal_thor.md §L'obiettivo
+                 reale); su Tordek stordito niente tentacoli, e il charme va su
+                 Hella."""
+    def pol(c, st, g, rnd, sparsi, tattica):
+        if rnd == 0:
+            st.posizione = "alto"
+            st.flag.update(presa=None, archivio=True, giu_prima=0)
+            return
+        giu = sum(1 for p in g.values() if p.giu())
+        if giu > st.flag["giu_prima"] and st.flag["archivio"]:
+            st.flag["archivio"] = False
+            st.pf = min(c.pf, st.pf + d(3, 8) + 8)
+        st.flag["giu_prima"] = giu
+        presa = st.flag.get("presa")
+        st.flag["presa"] = None
+        if presa and not presa.giu():
+            if not ts(presa.temp, 19):
+                presa.morto = True
+                return
+        protetti = {"Thorik"} | ({"Tordek"} if variante == "tordek_vivo" else set())
+        if rnd == 2:
+            bers = [p for p in vivi(g) if p.nome != "Thorik"]
+            scelto = "Hella" if variante == "tordek_vivo" else "Tordek"
+            t = g.get(scelto)
+            if t in bers and not ts(t.vol + t.pen(), 17):
+                t.charmato = True
+            return
+        if rnd >= 3:
+            st.posizione = "terra"
+            storditi = [p for p in g.values() if not p.giu() and p.fuori > 0 and p.nome not in protetti]
+            if storditi:
+                t = storditi[0]
+                if sum(tira(14, t.ca - 4) for _ in range(4)) == 4:
+                    st.flag["presa"] = t
+                return
+        for p in [q for q in g.values() if not q.giu() and q.fuori == 0 and q.nome != "Thorik"
+                  and not q.charmato]:
+            if R.random() < (0.5 if sparsi else 0.8):          # chi sta nel cono
+                if not ts(p.vol + p.pen(), 19):
+                    p.fuori = d(3, 4)
+    return pol
+
+
+@m.scontro("zarim-torneo")
+def scontro_zarim(prove: int, buff: int):
+    c = zarim()
+    pols = {v: politica_zarim(v) for v in ("oggi", "tordek_vivo")}
+    tabella_costo("Zarim al Torneo, Giorno 3, senza le ondate", c, pols, prove, buff,
+                  chi="Zarim", ultima="round-PG persi (storditi, ammaliati)")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--prove", type=int, default=10000)

@@ -18,6 +18,8 @@ Il tag e il rilascio li crea il workflow Release (ADR-0100).
 ## [Non rilasciato]
 
 ### Aggiunto
+- `importa_gemini.py`: le chat di Gemini esportate a mano (cartella «Google AI Studio» di Drive, Google Takeout «App Gemini») diventano Markdown fuori dal repo, con un indice ordinato per quante volte nominano la campagna. Nessuna chiave, nessuna chiamata a Google.
+- `scripts/prove-4050/`: le prove che vogliono la GPU del portatile del DM in uno script ciascuna (controllo della macchina, lettore della coerenza col 7B, prosa col 12B, immagini in posa su 6 GB) e `riporta.sh`, che ne fa un archivio da caricare nel thread. Guida: `docs/how-to/GUIDA-PROVE-PORTATILE-4050.md`.
 - `verifica_scheda`, verifica `gs`: dieci modelli dell'SRD 3.5 hanno il loro conto del grado di sfida (celestiale, immondo, mezzo-celestiale, mezzo-immondo, mezzo-drago, lich, vampiro, fantasma, scheletro, zombi; `[gs.modelli_gs]` in `gs.toml`, ADR-0126).
 - `verifica_scheda`: una variante del DM si dichiara nella scheda con una riga «Armatura naturale diversa dalla base: N …» o «Grado di sfida diverso dalla regola: N …» e la voce di `campaign/REGOLE-CUSTOM.md`; la verifica la accetta solo se il numero è quello della scheda (ADR-0126). Scritte le tre risposte del DM del 2026-11-14: monaco «Pugno del Destino» a 15 m, Arbitrax variante RC-002, Tyrgarun molto vecchio col grado di sfida a 19 (il file diventa `tyrgarun-blue-very-old-cr19.md`).
 - `verifica_scheda`, verifica `gs`: una creatura che dichiara la sua base e ha più dadi vita si giudica con la tabella dell'SRD 3.5 per chi avanza per dadi vita (`[gs.avanzamento]` in `gs.toml`; ADR-0126, lotto 5, sesta parte).

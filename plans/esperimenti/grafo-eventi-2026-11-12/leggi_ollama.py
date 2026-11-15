@@ -6,8 +6,9 @@ dell'ASUS, la Dell) senza torch né transformers: il recupero resta quello del
 container, cambia solo chi risponde SÌ/NO.
 
   1. nel container:  python estrai_rag.py --radice DIR --out X.json --k 20 \
-                       --modello ollama:qwen2.5:7b --domande-out misure/domande.json
-  2. sulla macchina: python3 leggi_ollama.py misure/domande.json --modello qwen2.5:7b \
+                       --modello ollama:qwen2.5:7b --domande-out misure/domande-ollama.json
+                     (già fatto il 2026-11-15: 636 domande, 556 sul repo e 80 sui mutanti)
+  2. sulla macchina: python3 leggi_ollama.py misure/domande-ollama.json --modello qwen2.5:7b \
                        --out misure/risposte-qwen2.5-7b.json
   3. nel container:  python estrai_rag.py ... --modello ollama:qwen2.5:7b \
                        --cache misure/cache-llm.json --unisci misure/risposte-qwen2.5-7b.json
@@ -18,6 +19,7 @@ risposte si salvano ogni 20, quindi una corsa interrotta riparte da dove era.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
 import time
@@ -47,9 +49,12 @@ def main(argv=None) -> int:
     risposte = json.loads(a.out.read_text(encoding="utf-8")) if a.out.exists() else {}
     t0, nuove = time.time(), 0
     for d in domande:
-        if d["h"] in risposte:
+        # la chiave è quella della cache di estrai_rag.py per «ollama:<modello>»: così lo stesso
+        # file di domande serve per qualunque modello, non solo per quello con cui è stato scritto
+        h = hashlib.sha256(("ollama:" + a.modello + d["utente"]).encode()).hexdigest()
+        if h in risposte:
             continue
-        risposte[d["h"]] = chiedi(a.url, a.modello, d["sistema"], d["utente"], a.timeout)
+        risposte[h] = chiedi(a.url, a.modello, d["sistema"], d["utente"], a.timeout)
         nuove += 1
         if nuove % 20 == 0:
             a.out.write_text(json.dumps(risposte, ensure_ascii=False), encoding="utf-8")

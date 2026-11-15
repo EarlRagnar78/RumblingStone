@@ -5,9 +5,9 @@
 
 > Vista umana del contratto machine-readable [`registry.json`](registry.json). Fonte di verita': `scripts/tools.manifest.json`.
 
-**142 tool** · convenzione exit code `0=ok · 1=errore-dominio · 2=errore-uso`.
+**143 tool** · convenzione exit code `0=ok · 1=errore-dominio · 2=errore-uso`.
 
-**Da un client MCP** ([`mcp-tools.json`](mcp-tools.json), [ADR-0030](../../plans/adr/ADR-0030-server-mcp-sui-tool.md)): `python3 scripts/mcp_server.py` — JSON-RPC su stdio, catalogo preso da questo stesso manifest. È **read-only per difetto**: i tool marcati «Canone» qui sotto sono elencati ma non partono senza `--allow-write`, perché il canone si scrive su un branch di gruppo con l'occhio del DM sopra (ADR-0007). Le voci esposte sono 133: le cartelle di `converters/` non sono programmi e non compaiono.
+**Da un client MCP** ([`mcp-tools.json`](mcp-tools.json), [ADR-0030](../../plans/adr/ADR-0030-server-mcp-sui-tool.md)): `python3 scripts/mcp_server.py` — JSON-RPC su stdio, catalogo preso da questo stesso manifest. È **read-only per difetto**: i tool marcati «Canone» qui sotto sono elencati ma non partono senza `--allow-write`, perché il canone si scrive su un branch di gruppo con l'occhio del DM sopra (ADR-0007). Le voci esposte sono 134: le cartelle di `converters/` non sono programmi e non compaiono.
 
 ## A · Session Prep (incontri · mappe · tesoro)
 
@@ -185,6 +185,7 @@
 | `Image-to-webp` | «Le immagini pesano troppo nel repo: come le converto tenendo gli originali?»<br>Convertitore batch immagini -> WebP con archiviazione degli originali (cwebp). Isolato dal toolkit DM. | — | — | — | — | `0` · `1` |
 | `pdf-to-md-engine` | «Ho un PDF di cui mi serve il testo: come lo estraggo in markdown?»<br>Convertitore di contenuto PDF -> Markdown (toolchain esterna). Isolato dal toolkit DM. | — | — | — | — | `0` · `1` |
 | `import_html_module.py` | «Questo modulo scritto a mano in HTML come entra nelle catene del repo, senza riscriverlo?»<br>Travasa un modulo scritto a mano in HTML (10-stand-alone/*/) nel master markdown che ADR-0003 vuole: le classi del vocabolario diventano blockquote (read-aloud), cornici {{note}} e chiavi d'area, e le tavole SVG in linea escono in file separati e autonomi (i <defs> condivisi vengono copiati dentro ogni tavola, e le maiuscole degli attributi SVG ripristinate — XML e' case-sensitive, html.parser no). E' un'operazione UNA VOLTA SOLA: se i master esistono gia' si ferma, perche' da quel momento il markdown e' il master e rilanciare butterebbe via le correzioni. Davanti a un tag che non conosce lascia passare il contenuto e lo dichiara. | **modulo** · --dry-run · --force · --manifest | ✔ | ✔ | — | `0` · `1` |
+| `importa_gemini.py` | «Ho esportato le chat di Gemini: quali parlano della campagna e cosa c'è dentro, senza aprirle una per una?»<br>Chat di Gemini esportate a mano dal DM (cartella «Google AI Studio» di Drive, JSON con chunkedPrompt; Google Takeout «La mia attività → App Gemini», JSON o HTML) → un Markdown per chat o per giorno, senza i pensieri del modello, e INDICE.md ordinato per quante volte nominano la campagna. Nessuna chiamata a Google, nessuna chiave; rifiuta una cartella di uscita dentro il repo (le chat restano fuori, PR #284). | **fonte** · **sorgente** · **--out** · --parole | ✔ | — | — | `0` · `2` · `3` |
 
 ## Librerie (non-CLI)
 

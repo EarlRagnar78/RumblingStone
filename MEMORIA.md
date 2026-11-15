@@ -85,7 +85,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
-| 2026-11-15 | PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA | ARC-07 DEF-4 Scena 11, la tattica di Skullcrusher: otto card del DM del 15/11.… |  |
+| 2026-11-15 | PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA | ARC-07 DEF-4 Scena 11, la tattica di Skullcrusher | ✅ |
 | 2026-11-15 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Prove sul portatile con la RTX 4050, richiesta del DM del 15/11: per ogni threa… | Prove eseguibili sulla 4050: da 1 su 5 (solo la prosa) a 4 su 5; la trascrizione resta nella PR #424. Nessuno script è girato su una GPU: il container non ne h… |
 | 2026-11-15 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: il corredo del Fantino Ladro e della Drow Chierica di… | Fantino Ladro da nessuna riga di corredo a 3.505 mo su 9.400; Drow Chierica di Lolth da nessuna riga a 4.709 mo su 12.000; Il Collezionista da due oggetti senz… |
 | 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | ARC-09, scelta del DM sulla card del 15/11: il «Borin» con Aegis Fang di P1B e… | In PR |

@@ -5309,7 +5309,7 @@ Sale lo stesso: ai suoi ha detto che chi ha attraversato il fuoco vince (BARILE
 - **Contro chi vola**: i giavellotti, come nella tenda. Non lascia la breccia
   per inseguire nessuno: la breccia è sua.
 - **Quanto dura, misurato** (20.000 prove, PG della carta del 05/11, bonus
-  d'attacco dei nani stimati; `plans/esperimenti/tattiche-2026-11-15/`). Stretto
+  d'attacco dei nani stimati). Stretto
   a CA 20, con Artemis e Hella che lo colpiscono dall'alto, Zog'tar muore
   **quasi sempre, in circa 3 round**. Con «separa e finisce» un PG muore in una
   prova su quattro (28%), e ai PG resta circa il 76% dei pf per il drago; con il

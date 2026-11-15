@@ -98,6 +98,10 @@ def creature(cartella: Path) -> "dict[str, dict]":
                 att = _attacchi(v("full attack") or v("attack"))
                 if att:
                     voce["attacchi"] = att
+                # velocità a terra in piedi: «base speed 40 ft.» se la riga parte da quella in armatura
+                vel = re.search(r"base (?:land )?speed (\d+) ft", v("speed")) or re.match(r"(\d+) ft", v("speed"))
+                if vel:
+                    voce["vel"] = int(vel.group(1))
                 mdl = re.match(r"\+(\d+)", v("level adjustment"))
                 if mdl:
                     voce["mdl"] = int(mdl.group(1))
@@ -227,6 +231,7 @@ def main(argv: "list[str]") -> int:
     print("# dv/dado = dadi vita razziali; naturale = bonus di armatura naturale; attacchi = attacchi")
     print("# naturali col dado della creatura e quanti; mdl = modificatore di livello; gs = grado di sfida.")
     if srd:
+        print("# vel = velocità a terra in piedi, senza armatura (riga «Speed»; manca a chi non cammina).")
         print("# avanza = \"classe\": la riga «Advancement» dice «By character class» (SRD, «Improving Monsters»:")
         print("# solo queste creature hanno l'equipaggiamento di un PNG; le altre hanno un tesoro).")
     print(f"# {len(cr)} creature.\n\n[creature_base]")

@@ -1296,6 +1296,78 @@ def _naturale_col_modello(p: Path, testo: str, sis: str, blocchi: list) -> "tupl
                                  f"e la base non è nei dati: il di più non si riscontra")], True
 
 
+_CARATTERISTICA_SCRITTA = re.compile(r"\b(For|Des|Cos|Int|Sag|Car)\s*[:=]?\s*(\d+|[—–-])(?![\w+])")
+_VARIANTE_CARATTERISTICHE = re.compile(r"^>?\s*caratteristiche diverse dal modello[^\n]*", re.I | re.M)
+
+
+def _caratteristiche_col_modello(p: Path, testo: str, sis: str, blocchi: list) -> "tuple[list[dict], list[dict]]":
+    """Le caratteristiche di chi porta un modello dell'SRD (ADR-0126, lotto 5, decima parte).
+
+    Vale per le schede con un blocco solo e un solo modello riconosciuto. I punteggi che il modello
+    toglie o fissa si giudicano sempre. Gli aumenti si giudicano sopra la creatura base che la fonte
+    dichiara («MM Dire Lion + Skeleton template»), se la taglia è la stessa e non ci sono livelli di
+    classe: il punteggio scritto non può stare sotto base più aumento. Sopra può starci (un punto ogni
+    quattro dadi vita, gli oggetti). Una violazione sola per scheda, con tutti i punteggi."""
+    from dmcore import creature_base as CB
+    from dmcore import gs as GS
+    from dmcore import sistemi as S
+    if len(blocchi) != 1:
+        return [], []
+    sb = blocchi[0]["sb"]
+    tabella = S.dati(sis, "creature.costruzione").get("gs") or {}
+    dove = " ".join((sb.tipo or "", testo.split("\n", 1)[0], p.stem.replace("-", " ")))
+    noto = GS.modello_noto(dove, tabella)
+    if not noto or "caratteristiche" not in noto[1]:
+        return [], []
+    nome, regola = noto[0], noto[1]["caratteristiche"]
+    voce = {"file": VT_rel(p), "riga": blocchi[0]["riga"], "verifica": "creatura_base", "fonte": "srd",
+            "regola": "numero.caratteristiche.modello"}
+    scritte = {c.lower(): (None if not v.isdigit() else int(v))
+               for c, v in _CARATTERISTICA_SCRITTA.findall((sb.attributi or "").replace("−", "-"))}
+    if not scritte:
+        return [], [dict(voce, testo=f"«{nome}»: la scheda non scrive le caratteristiche, quelle del modello non si riscontrano")]
+    if _VARIANTE_CARATTERISTICHE.search(testo) and re.search(r"\b(?:DM|RC-\d+|ADR-\d+)\b", _VARIANTE_CARATTERISTICHE.search(testo).group(0)):
+        return [], []
+    # la base: quella che la fonte dichiara, anche se accanto nomina il modello
+    fonte = _FONTE_SCHEDA.search(testo)
+    trovata = CB.dichiarata(fonte.group(1), sis, col_modello=True) if fonte else None
+    base, perche = None, "la fonte non dichiara una creatura base dell'SRD"
+    if trovata and trovata[1].get("car"):
+        tipo = sb.tipo or ""
+        nomi = sorted(set(_classi_it()) | set(_classi_it().values()), key=len, reverse=True)
+        classi = re.search(rf"\b(?:{'|'.join(map(re.escape, nomi))})\s+\d+\b", tipo, re.I)
+        if classi:
+            perche = f"{trovata[0]} con livelli di classe: i punteggi di partenza non sono quelli dell'SRD"
+        elif _taglia_del_blocco(sb) != trovata[1]["taglia"]:
+            perche = f"taglia diversa da quella di {trovata[0]} ({trovata[1]['taglia']})"
+        else:
+            base = trovata[1]["car"]
+    attese = GS.caratteristiche_col_modello(regola, base)
+    scarti = []
+    for car in ("for", "des", "cos", "int", "sag", "car"):
+        a = attese.get(car)
+        if a is None or car not in scritte:
+            continue
+        ha, sigla = scritte[car], car.capitalize()
+        if "senza" in a and ha is not None:
+            scarti.append((sigla, str(ha), "—"))
+        elif "esatto" in a and ha != a["esatto"]:
+            scarti.append((sigla, "—" if ha is None else str(ha), str(a["esatto"])))
+        elif "minimo" in a and (ha is None or ha < a["minimo"]):
+            scarti.append((sigla, "—" if ha is None else str(ha), f"almeno {a['minimo']}"))
+    viol, nv = [], []
+    if scarti:
+        su = f" sopra {trovata[0]}" if base else ""
+        viol.append(dict(voce, atteso=", ".join(f"{c} {a}" for c, _, a in scarti),
+                         ha=", ".join(f"{c} {h}" for c, h, _ in scarti),
+                         testo=f"caratteristiche {', '.join(f'{c} {h}' for c, h, _ in scarti)}: il modello «{nome}»{su} dà "
+                               f"{', '.join(f'{c} {a}' for c, _, a in scarti)} (una scelta diversa va dichiarata)"))
+    if base is None and regola.get("piu"):
+        nv.append(dict(voce, testo=f"«{nome}»: {perche}, gli aumenti del modello "
+                                   f"({', '.join(f'{c.capitalize()} {n:+d}' for c, n in regola['piu'].items())}) non si riscontrano"))
+    return viol, nv
+
+
 def creatura_base(p: Path) -> "tuple[list[dict], list[dict]]":
     """Dadi vita razziali e armatura naturale della creatura base dichiarata (ADR-0126, lotto 5)."""
     import conformita_statblocchi as C
@@ -1307,6 +1379,9 @@ def creatura_base(p: Path) -> "tuple[list[dict], list[dict]]":
     mv, mn, col_modello = _naturale_col_modello(p, testo, sis, blocchi)
     viol += mv
     nv += mn
+    cv, cn = _caratteristiche_col_modello(p, testo, sis, blocchi)
+    viol += cv
+    nv += cn
     for b in blocchi:
         sb = b["sb"]
         trovata = _base_del_blocco(testo, sb, len(blocchi) == 1, sis)
@@ -1634,6 +1709,24 @@ def velocita(p: Path) -> "tuple[list[dict], list[dict]]":
     return _scheda_per_scheda(p, _velocita_di_una_scheda)
 
 
+def _creatura_per_la_velocita(testo: str, sistema: str) -> "tuple[str, int] | dict | None":
+    """(nome, velocità a terra in piedi) della creatura base che la scheda dichiara nella fonte
+    (ADR-0126, lotto 7, settima parte); un dubbio (dict) se la base c'è ma la taglia è un'altra;
+    None se la scheda non dichiara una base, ha più blocchi o la base non cammina."""
+    import conformita_statblocchi as C
+    with contextlib.redirect_stderr(io.StringIO()):
+        blocchi = list(C._recinti_del_master(testo))
+    if len(blocchi) != 1:
+        return None
+    trovata = _base_del_blocco(testo, blocchi[0]["sb"], True, sistema)
+    if trovata is None or "vel" not in trovata[1]:
+        return None
+    if not trovata[2]:
+        return {"regola": "numero.velocita",
+                "testo": f"taglia diversa da quella di {trovata[0]} ({trovata[1]['taglia']}): la velocità non si riscontra"}
+    return trovata[0], trovata[1]["vel"]
+
+
 def _velocita_di_una_scheda(p: Path, testo: str, riga0: int, dal_nome: str) -> "tuple[list[dict], list[dict]]":
     """Il giudizio di `velocita` su una scheda sola (vedi `_scheda_per_scheda`)."""
     from dmcore import sistemi as S
@@ -1661,14 +1754,23 @@ def _velocita_di_una_scheda(p: Path, testo: str, riga0: int, dal_nome: str) -> "
         en = it.get(nome.lower(), nome.lower())
         livelli[en] = livelli.get(en, 0) + n
     ignote = f.get("classi_ignote") or []
+    velocita_razze = dict(mv["razze"])
     if not livelli or sum(g.n for g in s.gruppi) != sum(livelli.values()) + sum(
             int(v.rpartition(" ")[2]) for v in ignote):
-        return [], []                                   # dadi vita razziali: la velocità è della creatura
-    dove = " ".join((s.tipo or "", s.testo.split("\n", 1)[0], dal_nome))
-    razza = _razza_srd(dove, gradi) or _razza_senza_dv(
-        S.dati(sistema, "creature.costruzione").get("mdl") or {"razze": {}, "nomi": {}}, dove, s.tipo or "")
-    if razza is None or razza not in mv["razze"]:
-        return [], []
+        # dadi vita razziali: la velocità è quella della creatura base che la fonte dichiara
+        razza = _creatura_per_la_velocita(testo, sistema)
+        if razza is None:
+            return [], []
+        if isinstance(razza, dict):
+            return [], [{**base, **razza}]
+        velocita_razze[razza[0]] = razza[1]
+        razza = razza[0]
+    else:
+        dove = " ".join((s.tipo or "", s.testo.split("\n", 1)[0], dal_nome))
+        razza = _razza_srd(dove, gradi) or _razza_senza_dv(
+            S.dati(sistema, "creature.costruzione").get("mdl") or {"razze": {}, "nomi": {}}, dove, s.tipo or "")
+        if razza is None or razza not in mv["razze"]:
+            return [], []
     if ignote:
         return [], [{**base, "regola": "numero.velocita",
                      "testo": "velocità non ricostruibile: " + ", ".join(ignote) + " fuori dalle regole del plugin"}]
@@ -1689,7 +1791,7 @@ def _velocita_di_una_scheda(p: Path, testo: str, riga0: int, dal_nome: str) -> "
         if _MATERIALI[0][1].search(voce):               # mithral: una categoria più leggera
             c = ordine[max(0, ordine.index(c) - 1)]
         categoria, nome_armatura = c, nome
-    atteso, perche = mv["razze"][razza], [f"{razza} {mv['razze'][razza]}"]
+    atteso, perche = velocita_razze[razza], [f"{razza} {velocita_razze[razza]}"]
     barbaro = mv["classi"].get("barbarian") or {}
     if livelli.get("barbarian") and barbaro and categoria not in barbaro.get("non_in", []):
         atteso += barbaro["piu"]
@@ -2417,7 +2519,8 @@ def _ricchezza_di_una_scheda(p: Path, testo: str, riga0: int, dal_nome: str) -> 
         return [], []
     righe = _righe_dell_equipaggiamento(s.testo)
     oggetti = _senza_la_copia(s.testo, [(n, o) for n, r in righe for o in _oggetti_col_prezzo(r, d, sistema)])
-    dadi_vita = sum(g.n for g in s.gruppi)
+    # una classe che la lettura dei dadi non conosce («Diviner 5») manca dai gruppi: valgono i dadi vita dichiarati
+    dadi_vita = max(sum(g.n for g in s.gruppi), L.dv_totali(s.testo) or 0)
     if not oggetti or not dadi_vita:
         return [], []
     totale = sum(o[1] for _, o in oggetti)

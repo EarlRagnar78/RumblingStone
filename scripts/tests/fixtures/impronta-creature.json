@@ -13126,7 +13126,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "copiate",
-    "senza_note": 3184,
+    "senza_note": 3210,
     "sestine_citate": [],
     "taglia": -1,
     "talenti": {},
@@ -15811,9 +15811,9 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 10,
+     "Car": 1,
      "Cos": "—",
-     "Des": 15,
+     "Des": 17,
      "For": 25,
      "Int": "—",
      "Sag": 10
@@ -15826,7 +15826,7 @@
     {
      "Car": 1,
      "Cos": "—",
-     "Des": 14,
+     "Des": 16,
      "For": 26,
      "Int": "—",
      "Sag": 10
@@ -15836,7 +15836,7 @@
      "variazione a seme fisso: Sag +1, Cos −1",
      "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 7) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
      "taglia (SRD, Improving Monsters): For +8, Des -2, Cos +4",
-     "Des 14 **letta da ca-dettaglio** — il vincolo batte l'array",
+     "Des 16 **letta da ca-dettaglio** — il vincolo batte l'array",
      "Sag 11 **ricavata da Vol +10 (base +10)** — il tetto del TS batte l'array",
      "Cos — : non morto, nessun punteggio di Costituzione (SRD, tipo Undead)",
      "Int —, Sag 10, Car 1: modello scheletro/zombi (SRD)"
@@ -15852,8 +15852,8 @@
       0
      ],
      "Rifl": [
-      7,
-      7,
+      8,
+      8,
       0
      ],
      "Temp": [
@@ -15916,9 +15916,9 @@
     "dalla_fonte": null,
     "dalla_scheda": [
      {
-      "Car": 10,
+      "Car": 1,
       "Cos": "—",
-      "Des": 15,
+      "Des": 17,
       "For": 25,
       "Int": "—",
       "Sag": 10
@@ -15931,7 +15931,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "copiate",
-    "senza_note": 894,
+    "senza_note": 893,
     "sestine_citate": [],
     "taglia": -1,
     "talenti": {},
@@ -15944,8 +15944,8 @@
       "ricavata da Temp +5 (base +5)"
      ],
      "Des": [
-      2,
-      "ricavata da Rifl +7 (base +5)"
+      3,
+      "ricavata da Rifl +8 (base +5)"
      ],
      "Sag": [
       0,
@@ -15959,7 +15959,7 @@
      ],
      "des_da_iniziativa": null,
      "des_vincolata": [
-      14,
+      16,
       "letta da ca-dettaglio"
      ],
      "for_da_lotta": null
@@ -15983,9 +15983,9 @@
    },
    "scheda": {
     "attributi": {
-     "Car": 10,
+     "Car": 1,
      "Cos": "—",
-     "Des": 15,
+     "Des": 17,
      "For": 25,
      "Int": "—",
      "Sag": 10
@@ -16011,7 +16011,7 @@
     "tipo": "Large undead HD 16d12 (104 HP; dire lion of 16 HD with skeleton template)",
     "ts": [
      5,
-     7,
+     8,
      10
     ]
    }
@@ -44681,8 +44681,8 @@
     "note": [
      "letta dalla riga delle caratteristiche della scheda stessa"
     ],
-    "riga": "attributi: For 25 Des 15 Cos — Int — Sag 10 Car 10",
-    "scritta": "attributi: For 25 Des 15 Cos — Int — Sag 10 Car 10"
+    "riga": "attributi: For 25 Des 17 Cos — Int — Sag 10 Car 1",
+    "scritta": "attributi: For 25 Des 17 Cos — Int — Sag 10 Car 1"
    },
    {
     "file": "Bestiario/mostri/thayan-heavy-infantry-cr3.md",
@@ -45851,9 +45851,9 @@
      [
       "skeletal-dire-lion-cr7.md",
       {
-       "Car": 10,
+       "Car": 1,
        "Cos": "—",
-       "Des": 15,
+       "Des": 17,
        "For": 25,
        "Int": "—",
        "Sag": 10
@@ -45861,7 +45861,7 @@
       {
        "Car": 1,
        "Cos": "—",
-       "Des": 14,
+       "Des": 16,
        "For": 26,
        "Int": "—",
        "Sag": 10
@@ -46137,10 +46137,10 @@
     "entro_1_mod": 0.83,
     "file": 45,
     "insieme": "schede",
-    "mae": 1.55,
-    "mae_mod": 0.72,
+    "mae": 1.52,
+    "mae_mod": 0.7,
     "per_caratteristica": {
-     "Car": 3.0,
+     "Car": 2.8,
      "Cos": 0.4,
      "Des": 0.47,
      "For": 0.67,

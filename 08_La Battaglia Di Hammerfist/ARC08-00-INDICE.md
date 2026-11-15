@@ -164,6 +164,8 @@ stat puntate alle appendici, campo "esiti possibili"):
 | Dara Occhiolesto | `Bestiario/png/Dara_Occhiolesto.md` | Pregen (D14: staffette) |
 | Harbek Runaforte | `Bestiario/png/Harbek_Runaforte.md` | Pregen (D14: culto caduti) |
 | Nala Cantapietre | `Bestiario/png/Nala_Cantapietre.md` | Pregen (D14: Dauth) |
+| Ragnhild Mantoferro | `Bestiario/png/Ragnhild_Mantoferro.md` | Pregen (DM 2026-11-15: incide la Runa) |
+| Yrsa Portastendardo | `Bestiario/png/Yrsa_Portastendardo.md` | Pregen (DM 2026-11-15: stendardo alla Cerimonia) |
 | Khorn | `Bestiario/png/Khorn/Khorn.md` | Ufficiale nanico (D5, 150 lance) |
 
 Cast già schedato altrove: `Bestiario/png/Lythiel/Lythiel.md` (Sacred Forest, E7),

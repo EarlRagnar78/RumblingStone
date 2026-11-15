@@ -156,15 +156,19 @@ ca: 22
 pf: 63
 ts: —
 attributi: Sag 18
+voci:
+  - Altro equipaggiamento: armatura completa +1, scudo pesante di acciaio, mantello della resistenza +1, perla del potere 1°, pugnale, balestra leggera con 20 quadrelli
 ```
 **Difesa** **CA 22** · **pf 63**
 
 **Tattiche** Comanda l'assalto; usa **Silenzio** per soffocare gli allarmi, **Ragnatela** in stalla. **Cattura viva** = intel Fase 0 Rethmar + −1 clock Sonjak.
 
-**Statistiche** Sag 18
+**Statistiche** Sag 18 · **Equipaggiamento** armatura completa +1, scudo pesante di acciaio, mantello della resistenza +1, perla del potere 1°, pugnale, balestra leggera con 20 quadrelli
 
 **Capacità speciali**
 - **Incantesimi** fino al 5° (Comando Superiore, Ragnatela, Silenzio, Flagello Insetti). *Oscurità*, *Individuazione Magico*.
+
+> RC-001 (2026-11-15, ADR-0134) `[CANONE — DM 2026-11-15, RC-001]`: armatura completa +1 e scudo pesante di acciaio spiegano la CA 22 se la Destrezza è 12 (10, +9 armatura, +2 scudo, +1 Des); la scheda non scrive la Destrezza e questa è una lettura. Mantello, perla, pugnale e balestra vengono dal PNG dei Codex PF1e «Death Priest» (Chierico 9); il suo giaco di maglia +1, l'anello di protezione +1 e la fascia della saggezza non entrano. Il mantello non cambia numeri perché la scheda non scrive i tiri salvezza. Valore 4.709 mo contro i 12.000 del 9° livello (DMG 3.5, Tabella 4-23).
 
 
 ### 3.3 Servitore della Spora (GS 3, ariete vivente)

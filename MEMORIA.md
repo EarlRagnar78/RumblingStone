@@ -85,7 +85,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
-| 2026-11-15 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: il corredo del Fantino Ladro del Palio, scelto dal DM… | Fantino Ladro da nessuna riga di corredo a 3.505 mo su 9.400; `verifica_scheda.py` sul file: 0 violazioni |
+| 2026-11-15 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: il corredo del Fantino Ladro e della Drow Chierica di… | Fantino Ladro da nessuna riga di corredo a 3.505 mo su 9.400; Drow Chierica di Lolth da nessuna riga a 4.709 mo su 12.000; `verifica_scheda.py` sul file: 0 vio… |
 | 2026-11-14 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Nomi degli Eroi di Hammerfist scelti dal DM sulle card del 14/11: Borin Ferropu… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: il corredo del Fantino Cavaliere del Palio, scelto dal… | Fantino Cavaliere da nessuna riga di corredo a 1.650 mo su 5.600; `verifica_scheda.py` sul file: 0 violazioni |
 | 2026-11-14 | TRAVASO-DRAPPO-CAMPAGNA | A6, il dossier delle piste di ARC-09: tre piste (la torre che cammina, il «dott… | In PR |

@@ -1233,6 +1233,69 @@ def _variante_del_dm(schema: "re.Pattern", testo: str, numero: str) -> bool:
     return False
 
 
+_NATURALE_SCRITTA = re.compile(r"([+-]?\d+)\s*(?:naturale|natural|nat\b)", re.I)
+
+
+def _taglia_del_blocco(sb) -> "str | None":
+    """La taglia del blocco col nome dell'SRD («Large»), dalla riga della taglia o dal tipo."""
+    dove = (sb.taglia or "").lower() + " " + (sb.tipo or "").lower()
+    return next((en for it, en in _TAGLIE_IT.items() if re.search(rf"\b{it}\b", dove)), None) or next(
+        (t for t in _TAGLIE_IT.values() if re.search(rf"\b{t.lower()}\b", dove)), None)
+
+
+def _naturale_col_modello(p: Path, testo: str, sis: str, blocchi: list) -> "tuple[list[dict], list[dict], bool]":
+    """L'armatura naturale di chi porta un modello dell'SRD (ADR-0126, lotto 5, nona parte).
+
+    Vale per le schede con un blocco solo e un solo modello riconosciuto nel tipo, nel titolo o nel
+    nome del file. Lo scheletro ha il numero della sua taglia. Gli altri stanno sopra la base: la base
+    si conosce solo per chi è fatto di livelli di classe e ha nel tipo una razza della fonte (0, il
+    coboldo +1); altrimenti si giudica il minimo che il modello dà da solo. Il terzo valore dice se
+    il modello ha preso in carico l'armatura naturale del blocco."""
+    from dmcore import gs as GS
+    from dmcore import sistemi as S
+    if len(blocchi) != 1:
+        return [], [], False
+    sb = blocchi[0]["sb"]
+    tabella = S.dati(sis, "creature.costruzione").get("gs") or {}
+    dove = " ".join((sb.tipo or "", testo.split("\n", 1)[0], p.stem.replace("-", " ")))
+    noto = GS.modello_noto(dove, tabella)
+    if not noto or "naturale" not in noto[1]:
+        return [], [], False
+    nome, regola = noto[0], noto[1]["naturale"]
+    base = {"file": VT_rel(p), "riga": blocchi[0]["riga"], "verifica": "creatura_base", "fonte": "srd",
+            "regola": "numero.CA.naturale"}
+    nat = _NATURALE_SCRITTA.search((sb.ca_dettaglio or "").replace("−", "-"))
+    tipo = sb.tipo or ""
+    della_razza = None
+    if any(re.search(rf"\b(?:{e})\b", tipo, re.I) for e in tabella.get("razze_fonte", [])):
+        della_razza = next((n for e, n in (tabella.get("modelli_gs") or {}).get("naturale_razze", []) if re.search(rf"\b(?:{e})\b", tipo, re.I)), 0)
+    atteso = GS.naturale_col_modello(regola, _taglia_del_blocco(sb), della_razza)
+    if atteso is None:
+        return [], [dict(base, testo=f"«{nome}»: la scheda non scrive la taglia, l'armatura naturale del modello non si riscontra")], True
+    if not nat:
+        quanto = f"{atteso['esatto']:+d}" if "esatto" in atteso else f"almeno {atteso['minimo']:+d}"
+        # «contatto 11, alla sprovvista 16» non è un conto: serve almeno un addendo col segno
+        if re.search(r"[+-]\d+\s+[A-Za-zÀ-ú]", (sb.ca_dettaglio or "").replace("−", "-")) \
+                and atteso.get("esatto", atteso.get("minimo", 0)) > 0:
+            return [dict(base, atteso=quanto, ha="nessuna",
+                         testo=f"«{nome}»: il modello dà armatura naturale {quanto} e la scheda non la scrive nella CA")], [], True
+        return [], [dict(base, testo=f"«{nome}»: la scheda non scrive gli addendi della CA, l'armatura naturale del modello ({quanto}) non si riscontra")], True
+    ha = int(nat.group(1))
+    if _variante_del_dm(_VARIANTE_NATURALE, testo, f"{ha:+d}"):
+        return [], [], True
+    if "esatto" in atteso:
+        if ha != atteso["esatto"]:
+            return [dict(base, atteso=atteso["esatto"], ha=ha,
+                         testo=f"armatura naturale {ha:+d}: col modello «{nome}» la regola dà {atteso['esatto']:+d} "
+                               f"(un bonus in più va dichiarato con la sua sorgente)")], [], True
+        return [], [], True
+    if ha < atteso["minimo"]:
+        return [dict(base, atteso=f"almeno {atteso['minimo']:+d}", ha=ha,
+                     testo=f"armatura naturale {ha:+d}: il modello «{nome}» da solo dà {atteso['minimo']:+d}")], [], True
+    return [], [dict(base, testo=f"«{nome}»: armatura naturale {ha:+d}, il modello dà {atteso['minimo']:+d} sopra la base "
+                                 f"e la base non è nei dati: il di più non si riscontra")], True
+
+
 def creatura_base(p: Path) -> "tuple[list[dict], list[dict]]":
     """Dadi vita razziali e armatura naturale della creatura base dichiarata (ADR-0126, lotto 5)."""
     import conformita_statblocchi as C
@@ -1241,6 +1304,9 @@ def creatura_base(p: Path) -> "tuple[list[dict], list[dict]]":
     viol, nv = [], []
     with contextlib.redirect_stderr(io.StringIO()):
         blocchi = list(C._recinti_del_master(testo))
+    mv, mn, col_modello = _naturale_col_modello(p, testo, sis, blocchi)
+    viol += mv
+    nv += mn
     for b in blocchi:
         sb = b["sb"]
         trovata = _base_del_blocco(testo, sb, len(blocchi) == 1, sis)
@@ -1272,7 +1338,9 @@ def creatura_base(p: Path) -> "tuple[list[dict], list[dict]]":
             nv.append(dict(base, regola="numero.dv.razziali",
                            testo=f"la scheda non scrive i dadi vita: i {voce['dv']}d{voce['dado']} di {nome} non si riscontrano"))
         # armatura naturale: la base, se la taglia è la stessa
-        nat = re.search(r"([+-]?\d+)\s*(?:naturale|natural|nat\b)", (sb.ca_dettaglio or "").replace("−", "-"), re.I)
+        if col_modello:
+            continue               # l'armatura naturale l'ha giudicata il modello
+        nat = _NATURALE_SCRITTA.search((sb.ca_dettaglio or "").replace("−", "-"))
         from dmcore import gs as GS
         from dmcore import sistemi as S
         dichiarato = voce.get("drago") and GS.modello(sb.tipo or "", S.dati(sis, "creature.costruzione").get("gs") or {})

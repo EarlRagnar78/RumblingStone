@@ -85,6 +85,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Tattiche dei draghi, richiesta del DM del 15/11, scelte del DM sulle card del 1… | Fauci: almeno un PG morto dal 48-59% al 5-34% delle prove, drago ucciso da 1-3% a 0%; Tyrgarun in Fase 4: col canone travolge i soli PG (59-80%), ferito e con… |
 | 2026-11-15 | PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA | ARC-07 DEF-4 Scena 11, la tattica di Skullcrusher | ✅ |
 | 2026-11-15 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Prove sul portatile con la RTX 4050, richiesta del DM del 15/11: per ogni threa… | Prove eseguibili sulla 4050: da 1 su 5 (solo la prosa) a 4 su 5; la trascrizione resta nella PR #424. Nessuno script è girato su una GPU: il container non ne h… |
 | 2026-11-15 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: il corredo del Fantino Ladro e della Drow Chierica di… | Fantino Ladro da nessuna riga di corredo a 3.505 mo su 9.400; Drow Chierica di Lolth da nessuna riga a 4.709 mo su 12.000; Il Collezionista da due oggetti senz… |
@@ -96,12 +97,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, risposta del DM sulla card dello Skeletal Dire Lion: i 16 dadi vita r… | In PR |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: due decisioni del DM sulle card del 14/11. Lythiel per… | Corredo di Lythiel da circa 23.800 mo a circa 7.800 su 9.400; monaco 8.325 su 9.400; `verifica_scheda.py --check Bestiario/mostri` senza violazioni nuove |
 | 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 ottava parte: la base dichiarata con un modello che non ne ca… | In PR |
-| 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 settima parte: il grado di sfida dei modelli dell'SRD.… | In PR |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 142 voci, l'ultima MS-0142 del 2026-11-15 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 143 voci, l'ultima MS-0143 del 2026-11-15 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

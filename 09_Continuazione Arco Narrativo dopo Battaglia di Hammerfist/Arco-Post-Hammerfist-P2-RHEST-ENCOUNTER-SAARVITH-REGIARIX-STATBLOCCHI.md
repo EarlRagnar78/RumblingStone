@@ -1,7 +1,7 @@
 Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md
 ========================================================================
 
-# Rhest – Boss Saarvith & Regiarix (CR 13) – Statblocchi 3.5
+# Rhest – Boss Saarvith & Regiarix – Statblocchi 3.5
 
 Bilanciato per PG 11–13, gruppo 4–5 personaggi.[web:80][web:59]
 
@@ -37,32 +37,69 @@ Bilanciato per PG 11–13, gruppo 4–5 personaggi.[web:80][web:59]
 
 ---
 
-## 2. Regiarix – Drago Nero Adulto (CR 13 base)
+## 2. Regiarix – Drago Nero Giovane Adulto (GS 9) `[CANONE — DM 2026-11-15]`
 
-Usa il drago nero adulto del Manuale dei Mostri adattato:[web:80][web:62]
+Drago nero giovane adulto dell'SRD 3.5 (d20srd, «Dragon, True», tabelle del
+nero), l'età che le Armate gli danno (`00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md`
+r.133), scelta del DM sulla card del 15/11. I numeri sono quelli della tabella;
+i talenti sono una scelta di questa revisione, perché la fonte non li dava.
 
-- Taglia/Tipo: Grande Drago.  
-- DV: 22d12+88 (pf medi ~231).  
-- Iniziativa: +0.  
-- Velocità: 12 m, volare 24 m (buona), nuotare 18 m.  
-- CA: 29 (–1 taglia, +20 naturale); contatto 9; colto alla sprovvista 29.  
-- BAB/Grapple: +22 / +36.  
-- Attacco:
-  - Morso +31 (2d6+12).  
-  - 2 artigli +29 (1d8+6).  
-  - 2 ali +29 (1d6+6).  
-  - Colpo di coda +29 (1d8+18).  
-- Attacco completo: tutti gli attacchi sopra.  
-- Soffio: linea di acido 18 m, 12d4 danni, Riflessi CD ~25 per metà.  
-- TS: Temp +19, Rif +13, Vol +17.  
-- Caratteristiche indicative: For 27, Des 10, Cos 19, Int 14, Sag 15, Car 14.
+```statblocco
+gs: 9
+tipo: Large dragon (water), 16 HD, CM
+taglia: Grande
+spazio: 3 m
+portata: 1,5 m (3 m con il morso)
+ca: 24
+ca-dettaglio: (−1 taglia, +15 naturale); contatto 9, colto alla sprovvista 24
+pf: 152
+pf-dado: 16d12+48
+ts: Temp +13, Rifl +10, Vol +11
+attributi: For 19 Des 10 Cos 17 Int 12 Sag 13 Car 12
+velocita: 18 m, volare 45 m (scarsa), nuotare 18 m
+iniziativa: +4
+attacchi:
+  - Mischia morso +19 (2d6+4); 2 artigli +17 (1d8+2); 2 ali +17 (1d6+2); coda +17 (1d8+6)
+voci:
+  - Soffio: linea di acido di 24 m, 10d4, Rifl CD 21 dimezza, 1 ogni 1d4 round
+  - Presenza terrificante 45 m, Vol CD 19
+  - Talenti: Multiattacco, Attacco in Volo, Fluttuare, Iniziativa Migliorata, Attacco Poderoso, Virare
+  - RI 17; RD 5/magia; immune all'acido, al sonno e alla paralisi
+  - Respirare sott'acqua; oscurità 3 al giorno (raggio 15 m)
+  - Incantesimi da stregone di 1° livello, al giorno 5/4
+fonte: drago nero giovane adulto dell'SRD 3.5, tabelle del nero (d20srd); talenti scelti in questa revisione
+```
 
-Capacità speciali:
+- **Sensi**: percezione cieca 18 m, scurovisione 36 m, visione crepuscolare, sensi acuti.
+- **Respirare sott'acqua** (Str): respira, lancia e soffia anche sommerso (SRD).
+- **Oscurità** (Mag): 3 al giorno, raggio 3 m per categoria d'età, cioè 15 m. Nell'SRD l'oscurità magica dà occultamento (20%) anche a chi ha scurovisione.
+- **Incantesimi conosciuti**: la fonte non li elenca; 4 trucchetti e 2 di 1° a scelta del DM.
 
-- Acquatico: combatte bene in acqua/fango.  
-- Palude: spesso nascosto sotto l’acqua, emergendo per colpire.
+**Carattere e tattiche** `[CANONE — DM 2026-11-15]`. Regiarix è la cavalcatura e il socio di
+Saarvith, non il suo servo. È giovane e ha paura di morire per un goblin, e la
+palude è casa sua. **Cosa sa:** quello che gli racconta Saarvith dagli
+esploratori, cioè chi tira, chi cura e chi vola; dopo Hammerfist anche dell'ascia
+che canta, se qualcuno dell'orda è tornato. **Le quattro domande:** perdere
+Rhest davanti ai goblin; la sua tana sommersa; finire allo scoperto sull'asciutto;
+l'acido che non morde chi se ne è protetto.
+- Combatte dall'acqua: emerge, soffia in linea lungo le passerelle, dove i PG
+  stanno per forza in fila, e si rituffa. Sommerso ha copertura totale.
+- Mette l'*oscurità* sulla passerella dove i PG arrivano: la sua percezione
+  cieca gli dice dove sono, ma per loro il 20% di mancare vale anche contro di lui.
+- Esce sull'asciutto solo per finire un PG caduto in acqua o a terra.
+- Se i PG si sono protetti dall'acido, smette di soffiare e passa ai morsi in
+  passata su chi lancia incantesimi.
+- Fugge a un terzo dei pf (50): si tuffa e nuota via nei canali. Se Saarvith
+  cade prima, se ne va subito.
 
-Se il gruppo è meno ottimizzato, puoi ridurre leggermente pf o abbassare di 1–2 la RI/CD.
+> ⚠ Con un giovane adulto (GS 9) e Saarvith l'incontro non è più a EL 13, come
+> diceva il titolo, ma intorno a EL 11-12. È l'età che il DM ha scelto sulla card;
+> se serve EL 13, la via legale è l'età adulta dell'SRD (GS 11, 199 pf, soffio
+> 12d4 CD 23), non numeri senza fonte.
+
+<!-- storico -->
+era (prima della card del 15/11): «Drago Nero Adulto (CR 13 base)», Grande, 22d12+88 (~231 pf), CA 29, morso +31 (2d6+12), soffio 12d4 CD ~25, For 27 Cos 19 Int 14 Sag 15 Car 14; numeri senza fonte, a metà fra l'adulto e il maturo dell'SRD.
+<!-- /storico -->
 
 ---
 
@@ -86,8 +123,7 @@ Setup iniziale:
 - Saarvith:
   - attiva pozioni (se non l’ha già fatto) e apre con Rapid/Manyshot sul caster più pericoloso.  
 - Regiarix:
-  - emerge parzialmente, usa soffio d’acido su linea che colpisce 2–3 PG,  
-  - poi si riallontana verso l’acqua o prende quota bassa.
+  - emerge, soffia in linea lungo la passerella dove i PG sono in fila, e si rituffa (§2, «Carattere e tattiche»).
 
 ### Round 3–4
 
@@ -95,8 +131,8 @@ Setup iniziale:
   - cambia posizione (corde, passerelle) per non essere facilmente raggiunto in mischia,  
   - continua a focus-fire su chi sembra più facile abbattere.  
 - Regiarix:
-  - se alcuni PG sono in acqua/ai margini, tenta manovre per spingerli,  
-  - può tentare un round full attack su bersagli a terra se crede di poterli abbattere in fretta.
+  - *oscurità* sulla passerella; morsi in passata su chi lancia incantesimi;
+  - esce sull'asciutto, per l'attacco completo, solo su un PG caduto in acqua o a terra (§2).
 
 ### Round 5+ (fase disperata)
 

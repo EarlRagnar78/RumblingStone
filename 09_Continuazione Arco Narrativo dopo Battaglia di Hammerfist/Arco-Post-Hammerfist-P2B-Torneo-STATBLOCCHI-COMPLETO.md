@@ -154,35 +154,62 @@ Tutti i valori sono pensati per un party di livello 11–12. Adatta leggermente 
 
 ---
 
-## 7. Drago Rosso Adulto – CR 15 (Leader invasione)
+## 7. Drago Rosso Adulto – GS 15 (la cavalcatura dei Githyanki di Vaereth) `[CANONE — DM 2026-11-15]`
 
-(Usa il drago rosso adulto standard SRD, adattato per il contesto non “full campaign killer”.)
+Drago rosso adulto dell'SRD 3.5 (d20srd, «Dragon, True», tabelle del rosso),
+scelta del DM sulla card del 15/11. È il drago dei Githyanki liberi di Vaereth
+(`...P2B-Torneo-MAPPE-COMPLETO-2.md` r.213, «drago rosso e 8 cavalieri»), non
+uno dei cinque draghi della Mano Rossa. Non ha nome nelle fonti. I numeri sono
+quelli della tabella; i talenti sono una scelta di questa revisione.
 
-- Taglia/Tipo: Enorme Drago (fuoco).
-- DV: 25d12+150 (pf medi 312; puoi ridurli a ~260 per bilanciamento).
-- Iniziativa: +4.
-- Velocità: 12 m, volare 45 m (manovrabilità media).
-- CA: 31; contatto 8; colto alla sprovvista 31.  
-  - 10 base, –2 taglia, +23 naturale.
-- BAB/Grapple: +25 / +41.
-- Attacchi:
-  - Morso +31 (2d8+13).
-  - 2 artigli +26 (2d6+6).
-  - 2 ali +26 (1d8+6).
-  - Colpo di coda +26 (2d6+19).
-- Attacco completo: come sopra.
-- Soffio di fuoco:
-  - Cono 18 m, 12d10 fuoco, Riflessi CD 26 per metà.
-  - Ricarica su 1d4 round.
-- TS: Temp +18, Rif +13, Vol +17.
-- Caratteristiche indicative: For 37, Des 10, Cos 23, Int 16, Sag 17, Car 16.
-- Qualità speciali:
-  - Immunità al fuoco, vulnerabilità al freddo.
-  - Scurovisione, scent, frightful presence (Sc. Will CD 24).
-- Tattica:
-  - Primo round: planata, soffio sulla massima concentrazione di PG/NPC.
-  - Poi colpi in mischia sui bersagli più pericolosi (caster o Tordek).
-  - Se lo scontro va male, può battere in ritirata usando il caos come copertura.[file:47]
+```statblocco
+gs: 15
+tipo: Huge dragon (fire), 22 HD, CM
+taglia: Enorme
+spazio: 4,5 m
+portata: 3 m (4,5 m con il morso)
+ca: 29
+ca-dettaglio: (−2 taglia, +21 naturale); contatto 8, colto alla sprovvista 29
+pf: 253
+pf-dado: 22d12+110
+ts: Temp +18, Rifl +13, Vol +17
+attributi: For 33 Des 10 Cos 21 Int 16 Sag 19 Car 16
+velocita: 12 m, volare 45 m (scarsa)
+iniziativa: +4
+attacchi:
+  - Mischia morso +31 (2d8+11); 2 artigli +29 (2d6+5); 2 ali +29 (1d8+5); coda +29 (2d6+16); schiacciare (2d8+16)
+voci:
+  - Soffio: cono di fuoco di 15 m, 12d10, Rifl CD 26 dimezza, 1 ogni 1d4 round
+  - Presenza terrificante 54 m, Vol CD 24
+  - Talenti: Multiattacco, Attacco in Volo, Fluttuare, Virare, Iniziativa Migliorata, Attacco Poderoso, Ghermire, Incalzare
+  - RI 21; RD 5/magia; immune al fuoco, al sonno e alla paralisi; vulnerabile al freddo
+  - Localizzare oggetti 6 al giorno
+  - Incantesimi da stregone di 7° livello, al giorno 6/7/7/5; anche da chierico e dei domini Caos, Male e Fuoco come arcani
+fonte: drago rosso adulto dell'SRD 3.5, tabelle del rosso (d20srd); talenti scelti in questa revisione
+```
+
+- **Sensi**: percezione cieca 18 m, scurovisione 36 m, visione crepuscolare, sensi acuti.
+- **Incantesimi conosciuti**: la fonte non li elenca; 7 trucchetti, 5 di 1°, 3 di 2°, 2 di 3° a scelta del DM. La tattica qui sotto non ne usa nessuno.
+
+**Carattere e tattiche** `[CANONE — DM 2026-11-15]`. È un alleato dei Githyanki per un
+patto antico, non uno schiavo: li porta, non muore per loro. È il solo drago
+della campagna che **non sa niente dei PG**: arriva da fuori, e combatte su
+quello che vede nell'arena. **Obiettivo:** l'Orbe per i Githyanki, e tornare a casa.
+- **Non atterra al centro.** Passa basso sull'arena e lascia i cavalieri (le
+  mappe li fanno arrivare da nord e da est), poi risale. Atterrare in mezzo a
+  un'arena piena di combattenti è il contrario di quello che fa un drago.
+- Round 1: soffio a cono sul gruppo più fitto di chi difende l'arena; la presenza
+  terrificante scatta col primo attacco.
+- Poi impara: chi lo ferisce di più diventa il bersaglio dei morsi in passata.
+  Chi vola gli è più vicino, e lo vede subito. Ghermisce solo chi è da solo.
+- Se il soffio morde poco (chi è protetto dal fuoco), smette di soffiare su quel
+  gruppo e passa ai morsi in passata.
+- Fugge a un terzo dei pf (84): il patto non vale la pelle. Se Vaereth cade, porta
+  via i cavalieri che riesce a raccogliere.
+
+<!-- storico -->
+era (prima della card del 15/11): «Drago Rosso Adulto – CR 15 (Leader invasione)», 25d12+150 (312 pf), CA 31 (+23 naturale), manovrabilità media, morso +31 (2d8+13), coda (2d6+19), soffio 12d10 a cono di 18 m CD 26, For 37 Sag 17, «scent»; tattica: planata e soffio, poi mischia sui bersagli più pericolosi (caster o Tordek). I DV erano quelli del maturo, For e manovrabilità senza fonte, e il fiuto i draghi non lo hanno.
+<!-- /storico -->
 
 ---
 

@@ -213,7 +213,7 @@ File dedicati in `Bestiario/villain/` e `Bestiario/png/`. Ogni cartella contiene
 - Città rovine sommerse (mappa hex acqua)
 - Razorfiend encounters nella palude
 - Wyrmlord Saarvith (CR 12 fighter/dragon disciple)
-- Boss Finale: **Regiarix** Adult Black Dragon (CR 13!)
+- Boss Finale: **Regiarix** drago nero giovane adulto (GS 9, SRD; con Saarvith EL 11-12) `[CANONE — DM 2026-11-15]`
 - Sabotaggio ponte/supply lines orda
 - Conseguenze: Rallenta orda 3 giorni, intel prezioso
 

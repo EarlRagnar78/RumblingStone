@@ -150,6 +150,8 @@ foglio e si cancella a matita.
 | Nala (veterani) | ______ □□□□□□□□□□ | ______ □□□□□□□□□□ | □□□ | □□□□□□ | □ |
 | capitano (veterani) | ______ □□□□□□□□□□ | ______ □□□□□□□□□□ | □□□ | □□□□□□ | □ |
 
+<!-- storico -->Fino al 2026-11-14 la terza squadra era di «Thorin»: il pregen chierico si chiama Harbek Runaforte per scelta del DM (card del 14/11).<!-- /storico -->
+
 Sotto: round □□□□□□ · sergente in campo □ · sergente fuggito □ · corno □ ·
 morale della rocca ____.
 

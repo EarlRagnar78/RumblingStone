@@ -123,7 +123,7 @@ Xal'thor **non è l'unico Illithid presente al Torneo di Dauth**. Un secondo con
 - **Effetto:** Cono 18 m (60 ft) emanato dai tentacoli
 - **Danno:** Stordito per 3d4 round (TS Volontà CD 17 nega); in Fase 2 la CD sale a 19
 - **Usi:** a volontà, senza ricarica, come l'illithid dell'SRD `[CANONE — DM 2026-11-15, card]`
-- **Tattica:** Apre il combattimento con Mind Blast su tutto il gruppo compatto, poi avanza sui bersagli storditi
+- **Tattica:** Apre il combattimento con Mind Blast su tutto il gruppo compatto, poi avanza sui bersagli storditi. **Tordek no** `[CANONE — DM 2026-11-15, card]`: lo vuole vivo, perché apra il portale (§L'obiettivo reale). Su Tordek stordito non estrae il cervello: usa *Suggestion* (Vol CD 20) ogni round finché è stordito. Misurato in duello (`plans/esperimenti/tattiche-2026-11-15/duelli_arc09.py`): Tordek convinto nel 35% dei duelli, mai morto; se gli estraesse il cervello, morirebbe nel 24%.
 
 #### Poteri Psionici Innati (a volontà, come l'illithid del *Monster Manual*; trattati come incantesimi CL 14)
 - *Charm Monster* (Vol CD 17) — domina un avversario per usarlo come scudo

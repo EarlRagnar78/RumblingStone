@@ -312,7 +312,7 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 > 15d8+120 dava 187, non 195. Multiattacco esce (non serve a chi usa armi):
 > entrano Spezzare Migliorato e Volontà di Ferro.
 
-**Tattiche:** Gorthak è un ariete vivente. Cerca sempre lo scontro fisico, puntando il cancello o i nemici più grandi e corazzati. Usa i suoi tre attacchi per colpire bersagli multipli o per devastare un singolo avversario. Sotto i 101 PF (metà), la testa sinistra prende il sopravvento, facendolo combattere con Furia (+4 For, -2 CA) fino alla morte. *Morale*: prima di quella soglia, se Fauci è fuggito o abbattuto e l'orda è in rotta, la testa centrale può offrire la resa (al finale la scelta è dei PG); dopo, nessuna resa.
+**Tattiche:** Gorthak è un ariete vivente. Cerca sempre lo scontro fisico, puntando il cancello o i nemici più grandi e corazzati. Ogni round fa l'attacco completo con i due randelli, uno per braccio (sei colpi), su un bersaglio solo o divisi fra due. Sotto i 101 PF (metà), per un round la testa sinistra prende il sopravvento e lo fa combattere in Furia (+4 For, −2 CA); alla fine di quel round la testa centrale lo tira indietro e Gorthak lascia il ponte, ferito `[CANONE — DM 2026-11-04, P16, il cancello e Gorthak]` (il duello intero, con il ponte, lo sportello e i troll, è in `ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md`, Scena 2). *Morale*: prima di quella soglia, se Fauci è fuggito o abbattuto e l'orda è in rotta, la testa centrale può offrire la resa (al finale la scelta è dei PG).
 > Morale scritto da un agente sui poteri della scheda.
 
 ---

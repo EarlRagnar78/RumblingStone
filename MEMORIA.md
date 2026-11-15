@@ -85,7 +85,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
-| 2026-11-15 | AVVENTURE-COMMUNITY | «Chi sa cosa», dopo la #419: scelta del DM sulla card del 14/11 (thread dell'au… |  |
+| 2026-11-15 | AVVENTURE-COMMUNITY | «Chi sa cosa», dopo la #419: una riga per il Conte Valerius e tre giorni dalle… | «Chi sa cosa», dopo la #419: scelta del DM sulla card del 14/11 (thread dell'audit) «Una sola, la più completa». In `campaign/state.yaml` le righe del Conte Va… |
 | 2026-11-15 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 2, scelte del DM sulle card del 15/11:… | ✅ Zalkatar da solo: almeno un PG morto nel 40% dei combattimenti (0% con le fasi di prima), Zalkatar ucciso nel 65% (81%); Xilthra senza scorta: fugge col Patt… |
 | 2026-11-15 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 1 (Torneo di Dauth), scelte del DM sull… | ✅ Xal'thor contro Tordek da solo: Tordek muore nel 24% dei duelli (15% con la ricarica); Kragar contro Tordek: 79 pf rimasti a Tordek con lo sbilanciare, 86 co… |
 | 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Tattiche dei draghi, seconde card del DM del 15/11: **Ozyrrandion** il tentator… | ✅ tre righe di tattica nelle schede, nessun numero cambiato |

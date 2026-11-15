@@ -38,7 +38,7 @@
 
 Hammerfist si gioca su **due livelli di personaggi**:
 
-1. **Flashback dei pregen "Eroi di Hammerfist"** (Borin, Dara, Thorin
+1. **Flashback dei pregen "Eroi di Hammerfist"** (Borin, Dara, Harbek
    Runaforte, Nala): quasi tutta la battaglia — ricognizione e giorni
    d'assedio. Producono **BONUS quantificati per il finale, non PX**
    (D9). Vedi la tabella di conversione in `ARC08-10-ESITI-E-
@@ -47,7 +47,7 @@ Hammerfist si gioca su **due livelli di personaggi**:
    della Montagna (Giorno 3) come la riscossa, giocano **solo il
    finale** (D6/E6). Regia del passaggio in `ARC08-11-PONTE-ARRIVO.md`.
 
-**Disambiguazione nomi (D2)**: **Thorin** Runaforte = pregen chierico ·
+**Disambiguazione nomi (D2)**: **Harbek** Runaforte = pregen chierico ·
 **Thorik** = PG guerriero · **Thorek** = Re di Hammerfist. Mai fonderli.
 
 ---
@@ -156,13 +156,13 @@ stat puntate alle appendici, campo "esiti possibili"):
 | Generale Grimjaw | `Bestiario/villain/Generale_Grimjaw.md` | Comandante di campo |
 | Gorthak il Trifronte | `Bestiario/villain/Gorthak_il_Trifronte.md` | Ariete vivente |
 | Re Thorek Hammerfist | `Bestiario/png/Re_Thorek_Hammerfist.md` | Re / comandante difensori |
-| Madre Dana Forgiapietra | `Bestiario/png/Dana_Forgiapietra.md` | Guida spirituale |
+| Madre Dagmar Forgiapietra | `Bestiario/png/Dana_Forgiapietra.md` | Guida spirituale |
 | Capitano Lunapiena | `Bestiario/png/Capitano_Lunapiena.md` | Ranger elfici (D13, indipendente) |
 | Signore Ventolesto | `Bestiario/png/Signore_Ventolesto.md` | Gufo alpha |
 | Orion Pelleorsa | `Bestiario/png/Orion_Pelleorsa.md` | Druido |
-| Borin Ferropugno | `Bestiario/png/Borin_Ferropugno.md` | Pregen (D14: campione) |
+| Borin Giuraferro | `Bestiario/png/Borin_Giuraferro.md` | Pregen (D14: campione) |
 | Dara Occhiolesto | `Bestiario/png/Dara_Occhiolesto.md` | Pregen (D14: staffette) |
-| Thorin Runaforte | `Bestiario/png/Thorin_Runaforte.md` | Pregen (D14: culto caduti) |
+| Harbek Runaforte | `Bestiario/png/Harbek_Runaforte.md` | Pregen (D14: culto caduti) |
 | Nala Cantapietre | `Bestiario/png/Nala_Cantapietre.md` | Pregen (D14: Dauth) |
 | Khorn | `Bestiario/png/Khorn/Khorn.md` | Ufficiale nanico (D5, 150 lance) |
 

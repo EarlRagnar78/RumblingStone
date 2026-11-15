@@ -1,4 +1,4 @@
-# Nala Cantapietre [RIMANDO]
+# Nala Cantapietre, Il Sorriso prima della Lama [RIMANDO]
 **Role**: ally (pregen giocabile "Eroi di Hammerfist" → PNG dopo, Arco 08)
 **Status**: alive (se sopravvive al giocato); **passa a Dauth** dopo la battaglia (D14, aggancio Torneo ARC-09)
 **Location**: Hammerfist (infiltrazione, flashback) → Dauth (dopo)
@@ -8,7 +8,8 @@
 **Esiti possibili (D14, si blocca al gioco)**:
 - Se sopravvive: **passa a Dauth** — aggancio possibile col Torneo (ARC-09 P2B).
 - Ruolo pregen: infiltrazione/sabotaggio; la sua Ispirare Coraggio sostiene i 90 al finale.
-**Notes**: uno dei 4 pregen (D6).
+**Notes**: uno dei 4 pregen (D6). Appellativo scelto dal DM il 2026-11-14.
+<!-- storico -->Fino al 2026-11-14: «La Lama Nascosta».<!-- /storico -->
 
 Boost log: correzione dei conti — GS 12 → 12 — CA 20 con Schivare, stocco affilato 15-20, Arma Accurata al posto di una competenza che il bardo ha già, Cos 18 (90 pf), incantesimi 3/4/4/2.
 Benchmark: PF T1-1 riga 12: CA 20 vs 27 (sotto) / pf 90 vs 165 (sotto) / atk +13 vs +21 (sotto) / TS buono +13 vs +15 (sotto). È una pregen d'infiltrazione. Spia Maestra = Master Spy [Private source — Complete Adventurer].

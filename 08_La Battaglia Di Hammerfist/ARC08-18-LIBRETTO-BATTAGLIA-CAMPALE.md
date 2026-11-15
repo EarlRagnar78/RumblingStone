@@ -41,7 +41,7 @@ Giorno 1, insieme ai modi di gioco (§9):
 | Eroe | Settore | Reparti | Fronte |
 |---|---|---|---|
 | **Borin** | il Cancello | due di Guardia del Cancello | 3 |
-| **Thorin** | le Mura | due di veterani | 3 |
+| **Harbek** | le Mura | due di veterani | 3 |
 | **Dara** | la Torre Ovest | due di balestrieri | 2 |
 | **Nala** | la Torre Est | due di veterani | 2 |
 
@@ -130,7 +130,7 @@ Ogni round il tuo eroe fa **una** di queste cose.
 
 - **Combattere.** Tira d20 + il **miglior bonus d'attacco** della sua scheda
   contro la DU di un reparto nemico del tuo settore, e usa la tabella unica.
-  Borin e Dara valgono da soli due reparti; Thorin e Nala poco più di uno.
+  Borin e Dara valgono da soli due reparti; Harbek e Nala poco più di uno.
   Dara, con l'arco, può tirare anche contro un reparto di un settore vicino.
 - **Comandare.** L'eroe non colpisce: gira fra i suoi, chiama i nomi, tiene
   la linea. **+2** a tutti i dadi, rossi e bianchi, dei suoi reparti per quel
@@ -333,7 +333,7 @@ il DM racconta il conto.
 
 **Gli eroi.** Bonus d'attacco per **Combattere**, dalle schede del Bestiario:
 Borin **+21**, Dara **+19** (+25 contro gli orchi, +23 contro i giganti, +21
-con *grazia del gatto*), Thorin **+14**, Nala **+13**.
+con *grazia del gatto*), Harbek **+14**, Nala **+13**.
 
 ---
 
@@ -361,7 +361,7 @@ arrivi alle mura. Il libretto si spiega subito prima, dopo il drago (§12), e
 questa è la prima volta che si tira.
 
 **La scena.** Ogni eroe guida una **squadra di guastatori**: un solo reparto
-(Borin la Guardia del Cancello, Thorin e Nala veterani, Dara balestrieri),
+(Borin la Guardia del Cancello, Harbek e Nala veterani, Dara balestrieri),
 sul pendio sotto le mura, senza merlature. Scavano fosse, abbattono pini sul
 sentiero, preparano frane. Le trappole sono già a metà: i round sono gli
 ultimi colpi di piccone. Ogni ora che rubano all'orda è un'ora in più per le

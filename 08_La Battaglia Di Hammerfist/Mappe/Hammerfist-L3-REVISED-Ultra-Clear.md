@@ -85,8 +85,8 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @mark 3 ; AP11 ; Anello difensivo — arco EST (guerrieri)
 @mark 4 ; AE16 ; Anello difensivo — arco SUD (verso la Porta Interna) (guerrieri)
 @mark 5 ; AF10 ; Re Thorek XIII (barella) (8 PF, morente)
-@mark 6 ; AG10 ; Thorin Runaforte (Clr)
-@mark 7 ; AE5 ; Borin Ferropugno (Ftr)
+@mark 6 ; AG10 ; Harbek Runaforte (Clr)
+@mark 7 ; AE5 ; Borin Giuraferro (Ftr)
 @mark 8 ; AD5 ; Dara Occhiolesto (Rgr)
 @mark 9 ; AB4 ; Nala Cantapietre (Brd)
 @mark 10 ; AK32 ; Orda salita dalle scale della scarpa (SUD) (GS 1/2)
@@ -126,7 +126,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 **4 PG (pregen):**
 - **Borin 🔵** (AE05): retroguardia al chokepoint del tunnel
 - **Dara 🔵** (AD05): sulla base della statua (elevata), tiro di copertura sulla ritirata
-- **Thorin 🔵** (AG10): fianco del Re, lo tiene in vita (*Cura Ferite Serie*)
+- **Harbek 🔵** (AG10): fianco del Re, lo tiene in vita (*Cura Ferite Serie*)
 - **Nala 🔵** (AB04): instrada i nani nel tunnel, luci e trappole
 
 **200+ ORCHI CHE HANNO SFONDATO 🔴 (tre fronti):**
@@ -143,7 +143,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 - **90 nani ÷ 5/round = 18 round** minimi alla bocca del tunnel
 - **Orchi a contatto ~round 4** (sud: la scala, poi dalla porta all'arco sud 12 m); i fiancheggiatori (est/ovest) premono dai lati dal round 2
 - **Servono ~15 round di ritardo** mentre l'evacuazione prosegue
-- **Ruoli:** Borin tiene il chokepoint del tunnel · Dara cecchina i capi dalle brecce · Thorin *Muro di Pietra* per tappare una breccia + tiene vivo il Re · Nala *Polvere Luccicante* e instrada la colonna
+- **Ruoli:** Borin tiene il chokepoint del tunnel · Dara cecchina i capi dalle brecce · Harbek *Muro di Pietra* per tappare una breccia + tiene vivo il Re · Nala *Polvere Luccicante* e instrada la colonna
 
 ### 🌍 AMBIENTE (companion — regole, non prosa)
 | Elemento | Dove | Effetto meccanico 3.5 |
@@ -220,9 +220,9 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 
 @north N
 @tipo tattica caverna
-@mark 1 ; Q18 ; Borin Ferropugno (Ftr), testa di ponte sud
+@mark 1 ; Q18 ; Borin Giuraferro (Ftr), testa di ponte sud
 @mark 2 ; M5 ; Dara Occhiolesto (Rgr)
-@mark 3 ; U5 ; Thorin Runaforte (Clr)
+@mark 3 ; U5 ; Harbek Runaforte (Clr)
 @mark 4 ; Q4 ; Nala Cantapietre (Brd)
 @mark 5 ; M4 ; Colonna superstiti in marcia (85 nani, un quadretto ogni quattro)
 @mark 6 ; S4 ; Colonna superstiti in marcia
@@ -241,7 +241,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 ### 📍 POSIZIONI PRECISE:
 - **Borin:** Q18 (testa di ponte sud — 1-contro-1 forzato, nessun fiancheggiamento possibile)
 - **Dara:** M05 (sponda nord, dietro roccia 🪨 +4 CA — fuoco d'arco sul ponte)
-- **Thorin:** U05 (sponda nord, dietro roccia — cure a distanza su Borin)
+- **Harbek:** U05 (sponda nord, dietro roccia — cure a distanza su Borin)
 - **Nala:** Q04 (instrada la colonna verso l'uscita nord P-R 01, il tunnel largo 4,5 m che porta all'Incrocio)
 - **Colonna (85 superstiti + Re Thorek P03 su barella):** righe 03-04, in marcia; i quadretti disegnati sono la testa della colonna, il resto è già nel tunnel o sul ponte
 - **Colonne di roccia ⛰** F5-H7 e Z5-AB7 (sponda nord), I20-K22 e W20-Y22 (sponda sud): ci si gira attorno, e chi tiene la sponda sud ha dove ripararsi dai tiri
@@ -263,7 +263,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 ### ⚔️ TATTICHE
 - **Inseguitori:** caricano il ponte in colonna per 2; i più feroci provano la **Spinta** su Borin per buttarlo di sotto (contrapposta; ricordare il +4 di stabilità nanica)
 - **Borin:** Difesa Totale quando è a <50% PF; ogni round guadagnato = più colonna al sicuro
-- **Contromossa nanica:** Bull Rush sugli inseguitori a bordo ponte → Riflessi CD 18 o baratro; Thorin può *Pietra Sagomata* per rompere il bordo sud del ponte quando l'ultimo nano è passato
+- **Contromossa nanica:** Bull Rush sugli inseguitori a bordo ponte → Riflessi CD 18 o baratro; Harbek può *Pietra Sagomata* per rompere il bordo sud del ponte quando l'ultimo nano è passato
 - **Morale:** gli orchi smettono di caricare il ponte dopo ~10 caduti nel baratro e aspettano i bugbear (aggancio a MAPPA 3Z)
 
 ### 🔄 EVOLUZIONE
@@ -272,7 +272,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 | A — Colonna in transito | — | com'è disegnata | 1-vs-1 sul ponte |
 | B — Ondata successiva | ogni 1d4 round | +30 inseguitori da sud | pressione crescente |
 | C — Ritirata di Borin | colonna al sicuro | Borin attraversa; eventuale rottura del bordo del ponte | inseguimento rallentato di 10+ min |
-| D — Borin cade nel baratro | spinta riuscita | perdita del PNG (ARC08-03) | la retroguardia passa a Dara/Thorin |
+| D — Borin cade nel baratro | spinta riuscita | perdita del PNG (ARC08-03) | la retroguardia passa a Dara/Harbek |
 
 ---
 
@@ -338,8 +338,8 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @mark 9 ; Q19 ; Re Thorek XIII sulla barella (8 PF, morente)
 @mark 10 ; P19 ; Portatori della barella
 @mark 11 ; R19 ; Portatori della barella
-@mark 12 ; Q15 ; Borin Ferropugno (Ftr)
-@mark 13 ; O19 ; Thorin Runaforte (Clr), accanto al Re
+@mark 12 ; Q15 ; Borin Giuraferro (Ftr)
+@mark 13 ; O19 ; Harbek Runaforte (Clr), accanto al Re
 @mark 14 ; O15 ; Nala Cantapietre (Brd)
 @mark 15 ; L9 ; Dara Occhiolesto (Rgr), ai piedi della stalagmite S5
 @mark 16 ; AF17 ; Bugbear Assassini, tunnel EST (Rog5/Asn2) (GS 9 cad.)
@@ -361,7 +361,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 - **Pilastro dell'Incrocio ⛰ P16-R18:** colonna di roccia viva di 4,5 m, incisa di rune di direzione; copertura totale, e il giro attorno al Re.
 - **Re Thorek Q19** (barella, 8 PF) fra i due portatori P19 e R19, a sud del pilastro — bersaglio dei 4 bugbear EST
 - **Borin Q15** (a nord del pilastro: la sua **Osservare CD 25 al round 1** è la migliore occasione di scoprire l'imboscata → azione preparata)
-- **Thorin O19** (fianco del Re: *Barriera di Lame* per sigillare un tunnel; poi cure di massa; priorità assoluta = Thorek vivo)
+- **Harbek O19** (fianco del Re: *Barriera di Lame* per sigillare un tunnel; poi cure di massa; priorità assoluta = Thorek vivo)
 - **Nala O15** (*Polvere Luccicante* CD 16 per rivelare i bugbear; Controcanto; Ispirare Coraggio +2)
 - **Dara L9**, ai piedi della stalagmite S5 (L7): ci sale con Scalare CD 10, +2 circostanza a Osservare; Nemico Prescelto goblinoidi +4; Tiro Preciso
 - **Stalagmiti S1-S8 🔺** (copertura, 2-3 m): S1 L8 · S5 L7 (scalabile) · S2 V7 · S3 F13 · S4 AB12 · S6 G22 · S7 AA23 · S8 U28
@@ -473,11 +473,11 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @mark 5 ; AE22 ; I 12 balestrieri del centro, dietro le file: sparano sopra le teste
 @mark 6 ; AH23 ; I 6 capi del centro
 @mark 7 ; AH29 ; Re Thorek XIII (8 PF, avvelenato: Guarigione CD 25 ogni round, al terzo fallimento muore)
-@mark 8 ; AG30 ; Madre Dana Forgiapietra (Clr 14: 20 pf, un solo Muro di Pietra)
+@mark 8 ; AG30 ; Madre Dagmar Forgiapietra (Clr 14: 20 pf, un solo Muro di Pietra)
 @mark 9 ; AK30 ; Cantitrici della Pietra (se sopravvissute) (Clr/Brd 11)
-@mark 10 ; AF29 ; Borin Ferropugno (Ftr)
+@mark 10 ; AF29 ; Borin Giuraferro (Ftr)
 @mark 11 ; BA27 ; Dara Occhiolesto (Rgr)
-@mark 12 ; AI29 ; Thorin Runaforte (Clr)
+@mark 12 ; AI29 ; Harbek Runaforte (Clr)
 @mark 13 ; O27 ; Nala Cantapietre (Brd)
 @mark 14 ; AH2 ; ONDATA 1 (round 3-4): Orchi Berserker (GS 1/2 (furia +4 For))
 @mark 15 ; AH3 ; ONDATA 2 (round 5-6): Hobgoblin + Sergente (GS 1/2-1)
@@ -502,7 +502,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 - **Altare di Moradin:** piattaforma 6 m, +3 m — AF26-AJ30; punto di manifestazione ✨ AH27 (3 m sopra l'altare)
 - **Re Thorek AH29** (8 PF, avvelenato dall'acido di Fauci: una prova di Guarigione CD 25 a ogni round finché nessuno lo cura per magia; al terzo fallimento muore. La cura segue l'SRD: *neutralizzare veleno* o *guarigione* fanno finire l'avvelenamento e fermano le prove `[CANONE — DM 2026-10-19, D12]`)
 - **Madre Dana AG30** (ha speso quasi tutto sulle mura: 20 pf e un solo *Muro di Pietra* per tutto il 3B, scheda nella guida; niente *guarigione* al round 1. La sua scheda completa vale per Dana riposata, cioè il mattino della battaglia `[CANONE — DM 2026-10-18]`, confermato dal D12 `[CANONE — DM 2026-10-19, D12]`) · **Cantitrici AJ30-AL30** (se sopravvissute)
-- **Borin AF29** (difesa altare) · **Thorin AI29** (accanto all'altare: +2 LI sacro) · **Dara BA27** (terrazzo EST +1,5 m) · **Nala O27** (terrazzo OVEST)
+- **Borin AF29** (difesa altare) · **Harbek AI29** (accanto all'altare: +2 LI sacro) · **Dara BA27** (terrazzo EST +1,5 m) · **Nala O27** (terrazzo OVEST)
 - **Lo schieramento** `[CANONE — DM 2026-10-30]`, rivolto all'unico ingresso: al centro, davanti alla porta, 40 guerrieri su quattro file (righe 18-21), 12 balestrieri dietro (riga 22) e 6 capi (riga 23); ai lati due ali piegate verso l'altare (W-Z e AO-AR, righe 22-25), ciascuna con 10 guerrieri, 4 balestrieri e 2 capi. Il sud dell'altare resta scoperto
 - **Porta di Mithral 🚪 AF05-AI05** (6 m a due battenti, ward collassati; l'unico ingresso per un esercito) — tunnel di 6 m di larghezza e 10 m di lunghezza alle spalle
 - **Pilastri della volta 🟪** U12-W14, AQ12-AS14, U42-W44, AQ42-AS44: 4,5 m di lato, copertura totale; gli assassini dell'ondata 3 li usano per aggirare le ali dello schieramento

@@ -9,7 +9,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | Chi | Dove si incontra | Vuole | Come parla |
 |---|---|---|---|
 | **Re Thorek Hammerfist** | SCENA 2 | che la fortezza regga. Subito dopo, sapere chi porta la Corona | a fiato corto, per frasi spezzate: *«Tu… portatore… degno.»* In piedi comanda senza alzare la voce |
-| **Madre Superiora Dana Forgiapietra** | SCENA 2 | tenere vivo il re, e dopo di lui i novanta | sussurra le preghiere e tuona le benedizioni. Legge tutto come profezia: *«Sono tornati»* |
+| **Madre Superiora Dagmar Forgiapietra** | SCENA 2 | tenere vivo il re, e dopo di lui i novanta | sussurra le preghiere e tuona le benedizioni. Legge tutto come profezia: *«Sono tornati»* |
 | i novanta nani | SCENA 2 | — | fino all'apparizione non parlano, contano. Dopo gridano tutti insieme una parola sola, il nome della fortezza |
 | gli orchi | SCENA 2 | — | urlano per farsi coraggio. Quando la luce li colpisce smettono, e chi scappa scappa senza voltarsi |
 | il capo degli orchi | SCENA 2 | — | urla ordini in orchesco finché ha qualcuno a cui darli, poi niente |

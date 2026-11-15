@@ -42227,7 +42227,7 @@
     "DV o livelli di classe"
    ]
   },
-  "Bestiario/png/Borin_Ferropugno.md": {
+  "Bestiario/png/Borin_Giuraferro.md": {
    "blocco": null,
    "conti": [
     "caratteristiche: matrice elite (15, 14, 13, 12, 10, 8) + 2 da DV/4 → For 16, Cos 15, Des 13",
@@ -42252,7 +42252,7 @@
     "elite": true,
     "gs": 13,
     "manca": [],
-    "nome": "Borin_Ferropugno",
+    "nome": "Borin_Giuraferro",
     "scudo": 0,
     "taglia": "medium",
     "tipo": null
@@ -42369,6 +42369,40 @@
    },
    "manca": [],
    "scrivibile": true
+  },
+  "Bestiario/png/Harbek_Runaforte.md": {
+   "blocco": null,
+   "conti": [
+    "caratteristiche: matrice elite (15, 14, 13, 12, 10, 8) + 5 da DV/4 → For 18, Cos 16, Des 13",
+    "pf: 9d8 media 40.5 + Cos +3×21 = 103",
+    "TS: somma dei TS base di ogni classe (SRD: multiclasse si sommano) → Temp +9, Rifl +4, Vol +7"
+   ],
+   "lettura": {
+    "armatura": null,
+    "base_ts": {
+     "rifl": 3,
+     "temp": 6,
+     "vol": 6
+    },
+    "classi": [
+     [
+      "chierico",
+      9
+     ]
+    ],
+    "dado": 8,
+    "dv": 12,
+    "elite": true,
+    "gs": 12,
+    "manca": [],
+    "nome": "Harbek_Runaforte",
+    "scudo": 0,
+    "taglia": "medium",
+    "tipo": null
+   },
+   "manca": [
+    "ca (nessuna armatura nominata e nessuna armatura naturale dalla taglia: il numero sarebbe inventato)"
+   ]
   },
   "Bestiario/png/Khorn/Khorn.md": {
    "blocco": null,
@@ -42619,40 +42653,6 @@
     "scudo": 0,
     "taglia": "medium",
     "tipo": "dragon"
-   },
-   "manca": [
-    "ca (nessuna armatura nominata e nessuna armatura naturale dalla taglia: il numero sarebbe inventato)"
-   ]
-  },
-  "Bestiario/png/Thorin_Runaforte.md": {
-   "blocco": null,
-   "conti": [
-    "caratteristiche: matrice elite (15, 14, 13, 12, 10, 8) + 5 da DV/4 → For 18, Cos 16, Des 13",
-    "pf: 9d8 media 40.5 + Cos +3×21 = 103",
-    "TS: somma dei TS base di ogni classe (SRD: multiclasse si sommano) → Temp +9, Rifl +4, Vol +7"
-   ],
-   "lettura": {
-    "armatura": null,
-    "base_ts": {
-     "rifl": 3,
-     "temp": 6,
-     "vol": 6
-    },
-    "classi": [
-     [
-      "chierico",
-      9
-     ]
-    ],
-    "dado": 8,
-    "dv": 12,
-    "elite": true,
-    "gs": 12,
-    "manca": [],
-    "nome": "Thorin_Runaforte",
-    "scudo": 0,
-    "taglia": "medium",
-    "tipo": null
    },
    "manca": [
     "ca (nessuna armatura nominata e nessuna armatura naturale dalla taglia: il numero sarebbe inventato)"

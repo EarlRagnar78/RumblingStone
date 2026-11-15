@@ -5,7 +5,7 @@
 <!-- apparato -->
 > ⭐ MASTER DEFINITIVO — la prima delle tre serate coi pregen. I giocatori non
 > giocano i loro personaggi: giocano quattro nani di Hammerfist (Borin, Dara,
-> Thorin, Nala) dentro la visione della Corona, fra la Scena 1 e la Scena 2 di
+> Harbek, Nala) dentro la visione della Corona, fra la Scena 1 e la Scena 2 di
 > `07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md`.
 > La serata è l'avvistamento (ricognizione, consiglio, preparativi, il drago,
 > i presagi) e la prima battaglia campale, la scaramuccia dell'avanguardia sul
@@ -38,7 +38,7 @@
 > (Scena 1). Il flashback coi pregen viene prima della Scena 2 di quel master
 > e dura tre serate `[CANONE — DM 2026-10-21]`.
 >
-> **Party**: i quattro pregen, livello 12-13 (Borin 13, Dara, Thorin e Nala
+> **Party**: i quattro pregen, livello 12-13 (Borin 13, Dara, Harbek e Nala
 > 12). Non guadagnano PX e non ne fanno perdere ai Rumbling Stones.
 
 ---
@@ -100,7 +100,7 @@ In mezzo, il drago si mostra (1C) e la notte porta i presagi (1E).
 | Fauci di Palude, Grimjaw, Gorthak | lontani: si vedono, non si toccano | che Hammerfist abbia paura |
 
 **I nomi che si somigliano** (dall'Handout 0): al tavolo e nei box il re è
-«il Re» o «Thorek Hammerfist», Dana è «la Madre Superiora», il pregen Thorin
+«il Re» o «Thorek Hammerfist», Dana è «la Madre Superiora», il pregen Harbek
 è «Runaforte».
 
 ### Cosa preparare
@@ -154,7 +154,7 @@ pezzi.
 
 ### Se lo divinano
 
-Thorin ha *comunione*, e la serata ha poche cose nascoste. Una riga per
+Harbek ha *comunione*, e la serata ha poche cose nascoste. Una riga per
 segreto:
 
 | Segreto | Lo rompe | Chi lancia ottiene | Il modulo va avanti così |
@@ -185,7 +185,7 @@ e dove l'SRD direbbe altro c'è scritto.
 | avvicinarsi agli scout | Nascondersi e Muoversi Silenziosamente contrapposti (+2/+3; il sergente +1/+1) | Scena 4, Fase 2 |
 | capire gli ordini dell'orda (Nala) | Ascoltare **CD 15**, entro 9 m | Scena 4, Fase 2 |
 | contare l'orda (Dara, col cannocchiale) | Osservare a gradini: **20 / 25 / 30**; senza cannocchiale +10 | Scena 4, Fase 3 |
-| i simboli dei chierici (Thorin) | Conoscenze (religione) **CD 23** | Scena 4, Fase 3 |
+| i simboli dei chierici (Harbek) | Conoscenze (religione) **CD 23** | Scena 4, Fase 3 |
 | far parlare un prigioniero | Intimidire **CD 23** (scelta del modulo: nell'SRD è contrapposta) | Scena 4 |
 | convincere il Consiglio | Diplomazia **CD 18** | Scena 5 |
 | rinforzare un settore | Artigianato (pietra) **CD 20**, o *scolpire pietra* | Scena 6 |
@@ -195,7 +195,7 @@ e dove l'SRD direbbe altro c'è scritto.
 | far paura all'orda (Borin) | Intimidire **CD 20** | Scena 6 |
 | la Presenza terrificante del drago | Volontà **CD 25**, o scossi 4d6 round (+2 entro 9 m da Borin) | Scena 7 |
 | il soffio del drago | Riflessi **CD 29** dimezza 14d4 acido | Scena 7 |
-| i presagi | Conoscenze (religione) **CD 15** (Thorin); Sopravvivenza **CD 15** (Dara); Ascoltare **CD 18** (Nala) | Scena 9 |
+| i presagi | Conoscenze (religione) **CD 15** (Harbek); Sopravvivenza **CD 15** (Dara); Ascoltare **CD 18** (Nala) | Scena 9 |
 
 ### I nemici in una riga (numeri completi in Appendice A)
 
@@ -216,7 +216,7 @@ scontri facili: il pericolo vero è l'allarme, non la morte.
 | Reparto | AU | DU | PFU | Note |
 |---|---|---|---|---|
 | Guardia del Cancello (Borin) | 11 | 22 | 12 | |
-| veterani (Thorin, Nala, il capitano) | 10 | 21 | 11 | Muro di scudi: con Tenere +6 al bianco |
+| veterani (Harbek, Nala, il capitano) | 10 | 21 | 11 | Muro di scudi: con Tenere +6 al bianco |
 | balestrieri (Dara) | 9 | 18 | 9 | Fuoco di copertura |
 | lupi e goblin | 9 | 19 | 10 | Sbilanciare: −2 al bianco di chi hanno davanti |
 | hobgoblin | 12 | 22 | 10 | Formazione tattica: con due reparti sul fronte, +1 DU |
@@ -279,7 +279,7 @@ numerazione della prima stesura, per chi legge un file d'archivio.
 
 ## §1 — HIGHLIGHT ASIMMETRICI PER PREGEN
 
-### ⚔️ BORIN FERROPUGNO — il nipote del vecchio re (Casa di Davide lead)
+### ⚔️ BORIN GIURAFERRO — il nipote del vecchio re (Casa di Davide lead)
 - Ha il sangue di chi ha portato la corona prima di Thorek, e il Re lo
   ascolta come non ascolta i capitani. Nel Consiglio è lui che deve togliergli
   dalla testa il Cancello (Scena 5).
@@ -288,7 +288,7 @@ numerazione della prima stesura, per chi legge un file d'archivio.
   (Intimidire +17) e, sul pendio, la Guardia che tiene mentre gli altri
   scavano. Se qualcuno sfida il sergente, tocca a lui.
 
-### 🏹 DARA OCCHIOLESTO — l'occhio delle montagne (LotR lead)
+### 🏹 DARA OCCHIOLESTO — Morte dai Picchi (LotR lead)
 - È la serata di Dara: conosce il crinale, ha il cannocchiale, e quello che
   conta dal torrione decide il Giorno 1 (Scena 4, Fase 3). Se nessuno la
   gioca, la si dà a un altro giocatore: la ricognizione senza di lei non
@@ -297,7 +297,7 @@ numerazione della prima stesura, per chi legge un file d'archivio.
   arco il più lungo: è lei che può vedere il corno sulla cresta, e sapere che
   è fuori tiro.
 
-### ⚡ THORIN RUNAFORTE — la voce di Moradin (Andor lead)
+### ⚡ HARBEK RUNAFORTE — Custode dell'Ultima Runa (Andor lead)
 - Ha *silenzio*, *scolpire pietra*, le *rune di potere*, *comunione*,
   *colpo infuocato*: è il pregen che risolve le scene invece di tirarle. Il
   suo momento è la Preparazione (Scena 6) e il drago (Scena 7): è l'unico che
@@ -333,7 +333,7 @@ i box non lo dicono.
 | **messaggi** | le sentinelle delle torri, e i corridori della Porta Interna | il rapporto della Scena 3 |
 | **guardia** | la Guardia del Cancello, sotto Borin quando lui c'è | |
 
-I componenti che i pregen consumano stanno sulle carte dei poteri: Thorin
+I componenti che i pregen consumano stanno sulle carte dei poteri: Harbek
 porta due dosi di polvere di diamante da 250 mo e un diamante da 5.000 mo;
 Nala una perla da 100 mo. Quello che spendono stasera non torna nella
 Sessione 2, salvo quello che il tempio dà (la Madre Superiora rimpiazza una
@@ -416,7 +416,7 @@ Si comincia con i giocatori, non coi personaggi. Un minuto in chiaro:
    il passaggio fra le due storie.
 3. Le **schede** e le **carte dei poteri** sul tavolo. Le sceglie il
    gruppo, o le dà il DM con la proposta dell'Handout 0: Borin a chi gioca
-   Thorik, Thorin a chi gioca Hella, Dara a chi gioca Tordek, Nala a chi gioca
+   Thorik, Harbek a chi gioca Hella, Dara a chi gioca Tordek, Nala a chi gioca
    Artemis.
 4. **Chi non vuole un pregen lo dice adesso.** Non si obbliga nessuno: ha due
    posti (libretto §9). Il **capitano**: nella ricognizione guida due
@@ -456,7 +456,7 @@ prima cosa che i quattro sentono è un odore.
 minuti.
 
 I quattro sono dentro la fortezza, ognuno al suo posto: Borin con la Guardia
-alla Porta Interna, Dara sulle torri, Thorin al tempio, Nala in una taverna
+alla Porta Interna, Dara sulle torri, Harbek al tempio, Nala in una taverna
 che si svuota. Il box apre la serata sul senso sbagliato, l'olfatto e
 l'udito, e lascia la vista all'alba.
 
@@ -532,7 +532,7 @@ La prima battuta, dopo il rapporto:
 *Si gira verso i quattro, uno alla volta.*
 
 > **RE THOREK:** *«Occhiolesto, il crinale lo conosci meglio di chiunque.
-> Cantapietre, la loro lingua la capisci. Ferropugno, Runaforte: me le
+> Cantapietre, la loro lingua la capisci. Giuraferro, Runaforte: me le
 > riportate indietro tutte e due. Al tramonto voglio un numero.»*
 
 Se un giocatore fa una domanda al Re, il Re risponde con quello che **Sa**, e
@@ -570,7 +570,7 @@ contrapposte le tira il DM, o il giocatore dell'orda se c'è.
   Ascoltare con **+5**. Chi è invisibile non è trovato, ma la pattuglia resta
   lì un altro giro `[scelta del modulo: l'SRD dice solo che il fiuto rivela
   presenza e direzione]`.
-- **Il silenzio.** *Silenzio* (Thorin, Nala) copre chi ci sta dentro: chi
+- **Il silenzio.** *Silenzio* (Harbek, Nala) copre chi ci sta dentro: chi
   è nel raggio non fa rumore, e non sente niente. Nala non origlia da lì
   dentro.
 - **Il volo.** Nessuno dei quattro vola, e nessuno ha un incantesimo per
@@ -609,14 +609,14 @@ scoperto non tira, è visto se la pattuglia guarda da quella parte.
 |---|---|
 | Borin | −5 / −5 |
 | Dara | +24 / +19 |
-| Thorin | −5 / −5 |
+| Harbek | −5 / −5 |
 | Nala | +14 / +14 |
 
-Borin e Thorin non passano tirando. Passano così, e il gruppo lo deve
+Borin e Harbek non passano tirando. Passano così, e il gruppo lo deve
 trovare da sé:
 
 - *Silenzio* sul gruppo: Muoversi Silenziosamente non serve più, resta
-  Nascondersi. Lo lancia Thorin, che ci sta dentro.
+  Nascondersi. Lo lancia Harbek, che ci sta dentro.
 - *Invisibilità*: Nala la lancia a tocco, uno per incantesimo, fino a
   quattro al giorno fra i suoi incantesimi di 2°. Nascondersi non serve più,
   resta il fiuto.
@@ -664,7 +664,7 @@ Il primo a vederli, se li vede:
 
 **La salita.** Scalare **CD 12**, sei round, per arrivare in cima (Dara
 +18 prende 10 e sale). In cima, la merlatura dà copertura quasi totale a chi
-guarda verso la valle. Thorin e Borin non salgono: le loro armature fanno
+guarda verso la valle. Harbek e Borin non salgono: le loro armature fanno
 rumore sulla pietra (Muoversi Silenziosamente −5, e la salita è a 20 m dal
 fuoco).
 
@@ -773,7 +773,7 @@ Con **Osservare 30 o più**:
 > hobgoblin in armatura nera aspetta in piedi accanto a una sella grande
 > quanto un carro.*
 
-**Thorin e i chierici.** Con il gradino 25, Thorin, se guarda dal
+**Harbek e i chierici.** Con il gradino 25, Harbek, se guarda dal
 cannocchiale o se Dara gli descrive le tonache, tira Conoscenze (religione)
 **CD 23**: la mano rossa sul petto è il simbolo dei chierici di Tiamat,
 e sono loro che lanciano il fuoco. È informazione: la leva viene ai presagi
@@ -850,11 +850,11 @@ i giocatori fanno quello che i capitani non osano: dicono al Re che ha torto.
 > Consiglio di Guerra si riunisce nella Sala del Trono Ancestrale. Il Re siede
 > sul trono di pietra intagliata, e intorno al grande tavolo rotondo si
 > raccolgono i capitani, i chierici e voi quattro: il nipote del vecchio re,
-> il custode delle rune, l'occhio delle montagne e la barda che sa tutto di
+> il custode delle rune, la Morte dai Picchi e la barda che sa tutto di
 > tutti. Le torce fumano contro i pilastri neri. La Madre Superiora batte il
 > bastone sulla pietra, una volta, e la sala tace.*
 
-**Scheda d'entrata — Madre Superiora Dana Forgiapietra, la voce di Moradin a Hammerfist** *(statistiche: `ARC08-01`, PNG alleati; `Bestiario/png/Dana_Forgiapietra.md`)*
+**Scheda d'entrata — Madre Superiora Dagmar Forgiapietra, detta Dana, la voce di Moradin a Hammerfist** *(statistiche: `ARC08-01`, PNG alleati; `Bestiario/png/Dana_Forgiapietra.md`)*
 
 | | |
 |---|---|
@@ -951,13 +951,13 @@ incantesimi.
 
 | Opzione | Azione | Prova | La leva |
 |---|---|---|---|
-| **A · Fortificazioni** | rinforzare un tratto di mura | Artigianato (pietra) **CD 20** (Borin +12), o *scolpire pietra* (Thorin): vale come la prova riuscita | **+1 al bianco** in un settore a scelta, il Giorno 2 |
+| **A · Fortificazioni** | rinforzare un tratto di mura | Artigianato (pietra) **CD 20** (Borin +12), o *scolpire pietra* (Harbek): vale come la prova riuscita | **+1 al bianco** in un settore a scelta, il Giorno 2 |
 | **A · Fortificazioni** | progettare le trappole del pendio | Sopravvivenza **CD 18** (Dara +17) o Artigianato (pietra) **CD 18** (Borin +12) | **+1 trappola**, che si somma a quelle della Scena 8 |
-| **B · Difese magiche** | accendere le rune delle mura | Sapienza Magica **CD 22** (Thorin +16), le *rune di potere* (Thorin, un uso), o un incantesimo di 3° o più consumato per la giornata | **+1 al bianco** nel settore di chi lo fa, nel round 1 del Giorno 1 |
+| **B · Difese magiche** | accendere le rune delle mura | Sapienza Magica **CD 22** (Harbek +16), le *rune di potere* (Harbek, un uso), o un incantesimo di 3° o più consumato per la giornata | **+1 al bianco** nel settore di chi lo fa, nel round 1 del Giorno 1 |
 | **C · Morale** | parlare alle truppe | Diplomazia **CD 16** (Nala +23) | morale della rocca **+1** all'alba del Giorno 1 |
 | **C · Morale** | mostrare all'orda cosa la aspetta | Intimidire **CD 20** (Borin +17): le teste dei worg sulle picche, un discorso dalle mura | nel round 1 del Giorno 1, **−1 AU** all'orda in tutti i settori |
 
-**Thorin.** Il suo momento è qui. *Scolpire pietra* fa in un minuto quello
+**Harbek.** Il suo momento è qui. *Scolpire pietra* fa in un minuto quello
 che i muratori fanno in un giorno, ed è un incantesimo di 3°: lanciato sulle
 mura vale come Artigianato riuscito, o come l'incantesimo dell'opzione B, ma
 non come tutte e due. Le *rune di potere* durano un'ora, e servono solo se
@@ -1024,7 +1024,7 @@ coi fatti: le baliste lo colpiscono e non succede niente.
 - **La quota**: 60 m sopra le mura. Il drago non scende sotto i 30 m.
 - **La Presenza terrificante**: chi è sulle mura entro 90 m tira Volontà
   **CD 25**, o è **scosso** per 4d6 round (Borin +8, +10 in Postura
-  Difensiva; Dara +9; Nala +11; Thorin +16). La Presenza Comandante di Borin
+  Difensiva; Dara +9; Nala +11; Harbek +16). La Presenza Comandante di Borin
   dà **+2** a chi gli sta entro 9 m sulle mura. Il raggio di 90 m è un
   potenziamento della scheda di Fauci, non SRD: l'SRD dà 63 m all'adulto
   maturo, la categoria di Fauci (9 m per categoria d'età).
@@ -1032,7 +1032,7 @@ coi fatti: le baliste lo colpiscono e non succede niente.
   li mangia tutti.
 - **Si può colpire.** Dara a 60 m è al secondo incremento (−2), con il nemico
   prescelto contro i draghi (+2): tira a **+19** contro **CA 29**. *Colpo
-  infuocato* di Thorin (66 m) lo raggiunge, e la RI 21 si supera con d20 +12.
+  infuocato* di Harbek (66 m) lo raggiunge, e la RI 21 si supera con d20 +12.
 - **La risposta.** Se qualcuno lo colpisce, Fauci risponde **una volta**:
   scende a 30 m e soffia in linea sulla postazione da cui è partito il colpo,
     **14d4 acido**, Riflessi **CD 29** dimezza. Poi se ne va, in due round.
@@ -1096,7 +1096,7 @@ che il DM legge al tavolo.
 | Eroe | Squadra | AU | DU | PFU |
 |---|---|---|---|---|
 | Borin | la Guardia del Cancello | 11 | 22 | 12 |
-| Thorin | veterani | 10 | 21 | 11 |
+| Harbek | veterani | 10 | 21 | 11 |
 | Nala | veterani | 10 | 21 | 11 |
 | Dara | balestrieri | 9 | 18 | 9 |
 | il capitano, se c'è | veterani, senza eroe: scava e non combatte | 10 | 21 | 11 |
@@ -1279,7 +1279,7 @@ per l'assedio.
 
 | Pregen | Prova | Cosa capisce | La leva |
 |---|---|---|---|
-| **Thorin** | Conoscenze (religione) **CD 15** | il puzzo di zolfo è un sacrificio a Tiamat, e la magia dei chierici dell'orda | il Giorno 1, il TS contro la carta «La palla di fuoco» si tira a **+2** |
+| **Harbek** | Conoscenze (religione) **CD 15** | il puzzo di zolfo è un sacrificio a Tiamat, e la magia dei chierici dell'orda | il Giorno 1, il TS contro la carta «La palla di fuoco» si tira a **+2** |
 | **Dara** | Sopravvivenza **CD 15** | gli animali scendono da est: l'orda sale anche da lì, dove nessuno guarda | nel round 1 del Giorno 1, gli orchi **non hanno la Carica selvaggia** |
 | **Nala** | Ascoltare **CD 18** | un canto di marcia in goblin, col nome del Trifronte dentro, e dove canta | **+2** al primo attacco nel duello Sfidare contro Gorthak |
 
@@ -1335,7 +1335,7 @@ PREPARAZIONE        +1 bianco, Giorno 2, settore ______ □
 DRAGO               attaccato □   magia □   ignorato □ (Comandare a ______)
 AVANGUARDIA         ritirata al round ___   trappole ___
                     squadre travolte o a 0 PFU ___   sergente fuggito o morto □
-PRESAGI             Thorin □   Dara □   Nala □
+PRESAGI             Harbek □   Dara □   Nala □
 MORALE DELLA ROCCA  all'alba del Giorno 1: ___ (parte da +1)
 ARC08-10 §5.1       Ricognizione: pieno □ parziale □ fallito □
                     Difese preparate: pieno □ parziale □ fallito □
@@ -1371,7 +1371,7 @@ da **+1**; le leve di morale si sommano, tetto ±5, sui dadi ±2.
 | 1D · le trappole portate a casa | ognuna annulla una tacca **del Giorno 1 o del Giorno 2**, nel settore scelto | §5.1 Difese preparate: 6 o più «pieno», 3-5 «parziale», meno di 3 «fallito» |
 | 1D · una squadra travolta o a 0 PFU | morale **−1** ciascuna | |
 | 1D · il sergente fuggito, o morto nel duello | nessuna nell'assedio: il racconto lo ricorda | |
-| 1E · Thorin | il TS contro «La palla di fuoco» a +2, il Giorno 1 | |
+| 1E · Harbek | il TS contro «La palla di fuoco» a +2, il Giorno 1 | |
 | 1E · Dara | niente Carica selvaggia nel round 1 del Giorno 1 | |
 | 1E · Nala | +2 al primo attacco contro Gorthak | |
 
@@ -1529,11 +1529,11 @@ giocatori in `ARC08-15`. Il conto delle abilità, grado per grado, è in
 |---|---|---|---|---|---|---|
 | **Borin** | 142 | 25 | +8 (+10 in Postura) | **+21** | Intimidire **+17**, Artigianato (pietra) **+12**, Ascoltare +2, Osservare +2, Percepire Intenzioni +2, Diplomazia +1, Scalare −1, Nascondersi −5, Muoversi Silenziosamente −5 | Comune, Nanico |
 | **Dara** | 102 | 21 | +9 | **+19** (+25 contro gli orchi, +23 contro i giganti, +21 con *grazia del gatto*) | Osservare **+18**, Ascoltare **+18** (+24 contro gli orchi), Nascondersi **+24**, Muoversi Silenziosamente **+19**, Sopravvivenza **+17** (+19 all'aperto, +23 sulle tracce degli orchi), Scalare **+18**, Conoscenze (natura) **+18** · cannocchiale | Comune, Nanico, Gigante |
-| **Thorin** | 114 | 22 | +16 | **+14** | Concentrazione **+20**, Conoscenze (religione) **+16**, Sapienza Magica **+16**, Ascoltare +6, Osservare +6, Percepire Intenzioni +6, Sopravvivenza +6, Guarire +6, Diplomazia +3, Intimidire +3, Artigianato (pietra) +3, Nascondersi −5, Muoversi Silenziosamente −5 | Comune, Nanico, Terran |
+| **Harbek** | 114 | 22 | +16 | **+14** | Concentrazione **+20**, Conoscenze (religione) **+16**, Sapienza Magica **+16**, Ascoltare +6, Osservare +6, Percepire Intenzioni +6, Sopravvivenza +6, Guarire +6, Diplomazia +3, Intimidire +3, Artigianato (pietra) +3, Nascondersi −5, Muoversi Silenziosamente −5 | Comune, Nanico, Terran |
 | **Nala** | 90 | 20 | +11 | **+13** | Diplomazia **+23**, Raggirare **+21**, Intrattenere (canto) **+16**, Ascoltare +15, Osservare +15, Camuffare +14 (+16 per recitare una parte), Nascondersi +14, Muoversi Silenziosamente +14, Raccogliere Informazioni +12, Percepire Intenzioni +10, Sapere bardico +10, Acrobazia +9, Intimidire +8, Conoscenze (locali) +7 | Comune, Nanico, Orchesco, Goblin |
 
 **Gli incantesimi che contano stasera.** Dara: *passare senza tracce*,
-*intralciare*, *grazia del gatto* (la carta di Dara). Thorin: *silenzio*,
+*intralciare*, *grazia del gatto* (la carta di Dara). Harbek: *silenzio*,
 *scolpire pietra*, *preghiera*, *colpo infuocato*, *comunione*, le *rune di
 potere*. Nala: *immagine silenziosa*, *invisibilità* (a tocco, una per
 incantesimo di 2°), *silenzio*, *suggestione*, *velocità*, e la musica
@@ -1585,7 +1585,7 @@ LEGENDA · 🏰 la cinta, 12 m · 🟫 il sentiero · 🟩 il pendio, in discesa
 @north N
 @mark 1 ; B5 ; Borin e la Guardia del Cancello
 @mark 2 ; J5 ; Dara e i balestrieri
-@mark 3 ; C8 ; Thorin e i veterani
+@mark 3 ; C8 ; Harbek e i veterani
 @mark 4 ; J8 ; Nala e i veterani
 @mark 5 ; F11 ; il sergente (dal round 3)
 @zone D3-H3 ; Pino abbattuto

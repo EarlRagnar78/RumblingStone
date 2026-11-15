@@ -4,12 +4,10 @@
 > **Stato**: canonico — **MASTER VISIVO** dell'arco (piano ARC-08 A8,
 > 2026-07-02). Canone di trama in `campaign/state.md`, non ancora
 > giocato (piano ARC-08 A0). **Ultima revisione**: 2026-07-02.
-> **⚠️ Disambiguazione nomi (A10, D2)**: **Thorin** Runaforte = pregen
-> chierico (agisce SOLO nel flashback D6, poi come PNG); **Thorik** =
-> PG guerriero (compare SOLO dal finale, D6/E6, mai prima); **Thorek**
-> = Re di Hammerfist (comandante difensore per tutta la battaglia).
-> Tre persone diverse — mai fonderle (audit occorrenza-per-occorrenza
-> 2026-07-02: refusi corretti, vedi changelog).
+> **⚠️ Nomi (A10, D2)**: **Thorik** = PG guerriero (compare SOLO dal
+> finale, D6/E6, mai prima); **Thorek** = Re di Hammerfist (comandante
+> difensore per tutta la battaglia). Due persone diverse — mai fonderle.
+> Il pregen chierico si chiama **Harbek** Runaforte dal 2026-11-14 (DM).
 > **🖼️ Immagini reali (C3)**: i riferimenti "**Immagine:** [NNN]
 > `hammerfist-*.png`" sotto sono placeholder. Le immagini **reali**
 > (webp in `immagini/`) sono classificate in
@@ -109,7 +107,7 @@ questo file resta il master narrativo (descrizioni, immagini, prompt).
 **Livello Sfida:** CD 5-12 (variabile approccio)
 
 **Descrizione Scenario:**
-Il gruppo di ricognizione nanico (Borin, Dara, Thorin, Nala) deve attraversare un canyon roccioso stretto al crepuscolo. Il sentiero nascosto si snoda tra massi aguzzi offrendo copertura parziale, ma interseca il percorso di una pattuglia orchesca: 3 Orchi in sella a Worg (lupi giganti mostruosi).
+Il gruppo di ricognizione nanico (Borin, Dara, Harbek, Nala) deve attraversare un canyon roccioso stretto al crepuscolo. Il sentiero nascosto si snoda tra massi aguzzi offrendo copertura parziale, ma interseca il percorso di una pattuglia orchesca: 3 Orchi in sella a Worg (lupi giganti mostruosi).
 
 **Elementi Tattici Chiave:**
 - **Terreno:** Rocce impraticabili (zone grigie), sentiero normale (zone chiare)
@@ -158,7 +156,7 @@ Antica torre di guardia in pietra (rovina) si erge sul bordo di un dirupo scosce
 - **Hobgoblin:** Distratti (guardano NORD), Osservare +5, Ascoltare +3
 - **Posizioni PG:**
   - Dara (D): Sommità torrione, cecchino + osservazione
-  - Thorin (T): Base torrione, pronto lanciare *Silenzio*
+  - Harbek (T): Base torrione, pronto lanciare *Silenzio*
   - Nala (N): Rocce nascoste, possibile infiltrazione origliare
   - Borin (B): Fiancheggiamento alternativo, backup combattimento
 
@@ -173,7 +171,7 @@ Antica torre di guardia in pietra (rovina) si erge sul bordo di un dirupo scosce
          D (Dara Top)
          │
     T   │   N
-   (Thorin)(Nala Rocce)
+   (Harbek)(Nala Rocce)
 ═══════════════════════════════
   . . . Terreno Aperto . . .
 ═══════════════════════════════
@@ -187,7 +185,7 @@ Antica torre di guardia in pietra (rovina) si erge sul bordo di un dirupo scosce
 - **Dara Osservare CD 20:** Conta forze nemiche accurate (900 unità)
 - **Dara Sopravvivenza CD 22:** Identifica rotte approccio nemiche
 - **Nala Nascondersi CD 22:** Infiltra camp hobgoblin, origliare ordini
-- **Thorin Conoscenze Religione CD 18:** Riconosce simboli draconici chierici
+- **Harbek Conoscenze Religione CD 18:** Riconosce simboli draconici chierici
 
 **Ricompense Successo:**
 - Intelligence completa: +2 Iniziativa massa nani
@@ -342,7 +340,7 @@ Vista dall'alto completa fortezza nanica Hammerfist. Mostra layout strategico da
 **Posizioni PG Iniziali:**
 - **B (Borin):** Cortile Esterno, comando prima linea
 - **D (Dara):** Torre Ovest sommità, cecchino
-- **T (Thorin):** Cortile Interno, supporto divino mobile
+- **T (Harbek):** Cortile Interno, supporto divino mobile
 - **N (Nala):** Bastione Sud G1, infiltrazione/sabotaggio
 
 **Simbologia Mappa:**
@@ -500,7 +498,7 @@ Mappa schematica mostra DOVE ogni unità nanica posizionata all'inizio Giorno 1.
 
 **CORTILE ESTERNO (50):**
 - 5 Unit Nani d'Elite
-- **Borin Ferropugno** (Comando prima linea)
+- **Borin Giuraferro** (Comando prima linea)
 - Posizione: Davanti Cancello Principale (Ready intercettare brecce)
 
 **RISERVA, CORTILE ESTERNO (30):**
@@ -510,9 +508,9 @@ Mappa schematica mostra DOVE ogni unità nanica posizionata all'inizio Giorno 1.
 **CORTILE INTERNO - COMANDO (20):**
 - **Re Thorek Hammerfist** (Comando Supremo)
 - 2 Unit Guardie Reali (veterani scelti)
-- **Madre Superiora Dana Forgiapietra** (Supporto divino)
+- **Madre Superiora Dagmar Forgiapietra** (Supporto divino)
 - 5 **Cantitrici della Pietra** (Buff massa)
-- **Thorin Runaforte** (Supporto divino mobile)
+- **Harbek Runaforte** (Supporto divino mobile)
 
 **BASTIONE NORD B1 (30, a +120 m):**
 - 2 Unit Veterani + 1 Unit Balestrieri, 1 Balista
@@ -769,8 +767,8 @@ Momento ICONICO campagna: Fauci di Palude dragon dive attack vs Re Thorek. Al co
   - Espressione: Determinazione facing death
 - 10 Guardie Reali: Circondano re (Loyal unto death)
   - Scudi alzati (Won't help vs acid)
-- **Borin Ferropugno:** Lato sinistro (Se PG present)
-- **Thorin Runaforte:** Lato destro (Ready *Cure* desperate)
+- **Borin Giuraferro:** Lato sinistro (Se PG present)
+- **Harbek Runaforte:** Lato destro (Ready *Cure* desperate)
 - **Nala Cantapietre:** Nascosta merlature (Hidden, invisibile drago)
 
 **CORTILE INTERNO (Below, visible):**
@@ -787,12 +785,12 @@ Momento ICONICO campagna: Fauci di Palude dragon dive attack vs Re Thorek. Al co
 - **Area:** Cono 18m (Copre TUTTA walkway bastioni centrali)
 - **Danni:** 14d4 acido (Media 35 danni)
 - **TS:** Riflessi CD 29 dimezza (VERY hard)
-- **Targets:** Re Thorek + 10 Guardie + Borin + Thorin (13 totali)
+- **Targets:** Re Thorek + 10 Guardie + Borin + Harbek (13 totali)
 - **Risultato Probabile:** 
   - Guardie (PF 42 media): 6-8 KO instant (Failed save = death)
   - Re Thorek (PF 196): Survives (Resistenza + items), heavily wounded
   - Borin (PG): Tough call (Depends save)
-  - Thorin (pregen, non ancora PG in questa scena — D6/D2): Likely survive (Chierico AC alto)
+  - Harbek (pregen, non ancora PG in questa scena — D6/D2): Likely survive (Chierico AC alto)
 
 **Controffensive Possibili:**
 - **Dara (Torre Ovest):** Crossbow Heavy +1 attack (Extreme range -6, +19 final = +13)
@@ -845,7 +843,7 @@ Cortile Interno ridotto inferno fumante. Pozze acido verde corrosivo steam ovunq
 - **PG Positions:**
   - Borin: Guida evacuation (Leadership)
   - Dara: Retroguardia (Covering fire)
-  - Thorin: Thorek fianco (*Cure Serious* keeping alive)
+  - Harbek: Thorek fianco (*Cure Serious* keeping alive)
   - Nala: Scouting tunnel (Stealth checking traps)
 
 **SUD - ORCHI INSEGUITORI:**
@@ -874,7 +872,7 @@ Cortile Interno ridotto inferno fumante. Pozze acido verde corrosivo steam ovunq
 - Crossbow sniping capi orchi (Demoralize pursuers)
 - Trappole improvvisate macerie (Engineering check CD 15, 2d6 slashing damage)
 
-**THORIN (Chierico):**
+**HARBEK (Chierico):**
 - *Cure Serious Wounds* Re Thorek (Keep alive critical)
 - *Spiritual Weapon* floating defense (Distract orchi)
 - Prepared *Dimension Door* emergency escape (4 creatures, save leaders)
@@ -915,7 +913,7 @@ MAPPA 5.
 > pronta a respingere l'orda di inseguitori che sta per raggiungerlo."*
 
 **Elementi Mappa:**
-- **Piattaforma Rocciosa (Nord):** Dara (arco) e Thorin (supporto divino) in posizione di copertura
+- **Piattaforma Rocciosa (Nord):** Dara (arco) e Harbek (supporto divino) in posizione di copertura
 - **Ponte di Pietra (Centro, largo 3m):** Borin tiene la strozzatura in mischia
 - **Baratro Profondo (ambo i lati):** una creatura spinta oltre il bordo tenta un TS Riflessi CD 18 per aggrapparsi, altrimenti cade nell'oscurità (20d6 danni da caduta)
 - **Inseguitori (Sud):** Orchi e Hobgoblin in arrivo dai tunnel di MAPPA 3X
@@ -998,7 +996,7 @@ Multi-threat simultaneous:
 - Position: Elevated stalagmite (Scalare CD 10, +2 di circostanza per il terreno rialzato)
 - Precise Shot: Target Bugbear mixed melee
 
-**THORIN:**
+**HARBEK:**
 - Area Denial: *Blade Barrier* across tunnel opening (Block reinforcements)
 - Healing: *Mass Cure Moderate* wounded nani (Keep army functional)
 
@@ -1114,7 +1112,7 @@ Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m alt
 - **Nemici:** TS Volontà CD 20 o spaventati per 10 round (guida, «Effetti dell'Apparizione»)
 - **PG:** Full HP, tutti buff attivi, surprise round vs nemici
 
-**Transizione:** Da PNG giocabili (Borin/Dara/Thorin/Nala) → Veri PG (Thorik/Tordek/Artemis/Hella)
+**Transizione:** Da PNG giocabili (Borin/Dara/Harbek/Nala) → Veri PG (Thorik/Tordek/Artemis/Hella)
 
 ---
 

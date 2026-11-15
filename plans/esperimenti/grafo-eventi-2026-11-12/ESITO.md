@@ -133,9 +133,9 @@ Il lettore su un'altra macchina (per esempio la RTX 4050 con Ollama), senza torc
 ```bash
 # nel container: recupero e domande
 python estrai_rag.py --radice /tmp/mutato --out /tmp/x.json --k 20 \
-  --modello ollama:qwen2.5:7b --domande-out misure/domande.json
+  --modello ollama:qwen2.5:7b --domande-out misure/domande-ollama.json
 # sulla macchina con Ollama (solo stdlib)
-python3 leggi_ollama.py misure/domande.json --modello qwen2.5:7b --out misure/risposte-qwen2.5-7b.json
+python3 leggi_ollama.py misure/domande-ollama.json --modello qwen2.5:7b --out misure/risposte-qwen2.5-7b.json
 # di nuovo nel container: le risposte entrano in cache, la lettura non carica modelli
 python estrai_rag.py --radice /tmp/mutato --out /tmp/mut-rag-7b.json --k 20 \
   --modello ollama:qwen2.5:7b --unisci misure/risposte-qwen2.5-7b.json

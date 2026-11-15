@@ -497,9 +497,10 @@ Dana, che gli si getta sopra `[CANONE — DM 2026-10-15, D92]`. Dana ha 20 pf pi
 2d8 dell'Apparizione, e la abbattono cinque o sei frecce, o due critici
 `[CANONE — DM 2026-10-18]`: allora vale la riga «Madre Dana cade» del §6.
 Caduta Dana, il colpo che ucciderebbe il re lo prende il primo dei dieci capi
-che sale sull'altare, e gli hobgoblin passano a tirare a chi è sull'altare.
+che sale sull'altare, **Hrolf Spaccascudi** `[CANONE — DM 2026-11-15]`, e gli hobgoblin passano a tirare a chi è sull'altare.
 Nel ramo luminoso succede di rado, perché i tiri al re cominciano al round 6
 `[CANONE — DM 2026-10-19, giro 4 DEF-5 n. 6]`.
+<!-- storico: fino al 2026-11-15 i dieci capi erano senza nome; il DM ha scelto sulla card del 15/11 di nominarne due con un gesto (Hrolf Spaccascudi prende il colpo al posto del re, Yrsa Portastendardo tiene lo stendardo). Quattro capi sono gli Eroi di Hammerfist nella regia breve, gli altri quattro restano senza nome. Se Hrolf sopravvive al colpo non è deciso -->
 
 #### Il round di sorpresa, un gesto a testa
 
@@ -530,6 +531,7 @@ intorno al re o verso la porta: un'azione standard, alla gittata di
 |---|---|---|
 | i novanta nani | a trenta metri dall'altare, rivolti alle porte: un blocco spesso di scudi davanti al varco e due ali più sottili piegate verso l'altare; sessanta guerrieri, venti balestrieri, dieci capi. Hanno fatto due giorni di assedio e si vede nelle braccia | fino all'apparizione non parlano, contano. Dopo gridano tutti insieme una parola sola, il nome della fortezza |
 | gli orchi | berserker entrati con le porte, sporchi di fumo e di sangue nanico. Trovano davanti una luce che non capiscono | urlano per farsi coraggio. Quando la luce li colpisce smettono, e chi scappa scappa senza voltarsi |
+| Hrolf Spaccascudi e Yrsa Portastendardo `[CANONE — DM 2026-11-15]` | due dei dieci capi, gli unici con un nome. Hrolf è il primo che sale sull'altare quando cade Dana. Yrsa tiene lo stendardo di Hammerfist in mezzo al blocco di scudi, e quando i novanta gridano lo alza | Hrolf non parla, si mette davanti. Yrsa grida il nome della fortezza per prima, e gli altri le vanno dietro |
 | il capo degli orchi | il più grosso, con un elmo nanico preso sulle mura. Vuole uscire vivo e tenersi l'elmo | urla ordini in orchesco finché ha qualcuno a cui darli, poi niente |
 
 **Scheda d'entrata — Re Thorek Hammerfist, il re che doveva morire oggi** *(statistiche: Appendice A.6, e la Guida DM dell'ARC-08, PNG Alleati)*

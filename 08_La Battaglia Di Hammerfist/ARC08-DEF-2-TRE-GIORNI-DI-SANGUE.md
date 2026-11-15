@@ -991,7 +991,7 @@ testa, e la scorta lo insegue fino al fossato (scelta del modulo).
 
 ### SCENA 4 — Giorno 2, la breccia: Grimjaw e le Cantitrici (2C, 2D)
 
-**In scena** — Dove: le Mura — Chi: Grimjaw · le Cantitrici · Melodia Echopietra
+**In scena** — Dove: le Mura — Chi: Grimjaw · le Cantitrici · Sigrun Cantoprofondo
 
 **Quando**: il Day 17. **Durata**: 25 minuti, 30 in più se qualcuno sfida
 Grimjaw.
@@ -1010,7 +1010,7 @@ finale (`ARC08-19` §4, «Cantitrici protette»: pieno se le Mura non cedono, pa
 se cedono al round 4 o 5, fallito entro il round 3). Il gioco non cambia: è
 una cosa in più da perdere, e il tavolo deve saperla.
 
-**Scheda d'entrata — Melodia Echopietra, la prima delle Cantitrici** *(statistiche: `ARC08-02` §2, Le Cantitrici della Pietra. CA 20, 98 pf)*
+**Scheda d'entrata — Sigrun Cantoprofondo, la prima delle Cantitrici** *(statistiche: `ARC08-02` §2, Le Cantitrici della Pietra. CA 20, 98 pf)*
 
 | | |
 |---|---|
@@ -1144,7 +1144,7 @@ Il canto non è una carta: è la ragione per cui le Mura devono reggere.
 > finisce. Passa dalle voci alla pietra, e la pietra la tiene. Sotto i piedi
 > il camminamento vibra come una corda pizzicata, e lungo tutta la cinta la
 > polvere si alza dalle fessure e ricade. Giù, sulla rampa, un gigante perde
-> l'appoggio. Melodia Echopietra apre gli occhi, e per la prima volta dal
+> l'appoggio. Sigrun Cantoprofondo apre gli occhi, e per la prima volta dal
 > mattino guarda giù.*
 
 Il Coro della Montagna (*terremoto* sulla roccia, CD 22) fa crollare la

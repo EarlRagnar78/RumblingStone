@@ -310,6 +310,12 @@ da qui:
 - **Cantitrici**: metà, un solo uso di cura.
 - **P5 non giocato**: statblock di Fauci invariato, e in Sessione 4 Fauci parte da 337 pf (§4.1) `[CANONE — DM 2026-10-19, D9]`.
 
+### 5.6 Se uno o più giocatori non vogliono guidare un eroe `[CANONE — DM 2026-11-15]`
+
+L'eroe rifiutato lo muove il DM sullo sfondo, con le tre righe di tattica di `ARC08-01-GUIDA-DM.md` («Se un giocatore non vuole guidare un eroe»); il giocatore guarda o guida un'unità di nani.
+
+> **Proposte, non decise dal DM:** (1) le righe di §5.1-§5.3 si contano come sempre, quindi un eroe mosso dal DM non toglie e non aggiunge bonus; (2) se rifiutano tre o quattro giocatori, il flashback non si gioca e vale §5.5.
+
 ---
 
 ## 6. Conseguenze a lungo periodo (C2)
@@ -327,7 +333,7 @@ da qui:
 | **Fauci ucciso** (ramo alternativo D10) | −1 drago a Rethmar; nessuna nemesi (ma l'uovo resta) | Day 42 Rethmar | `campaign/state.md` §2.3 |
 | **Runa dei Custodi Eterni** (Cerimonia Atto 3) | Status sociale presso i nani del Vale (§6.2) | Ogni interazione coi nani in ARC-09/10 | `Cerimonia-delle-100-Asce.md` §2; questa §6.2 |
 | **150 lance di Re Thorek** (D4) | Rinforzo condizionale a Rethmar | Day 42, se gli hook politici riescono | `state.md` §2.5; `Bestiario/png/Khorn/Khorn.md`; HOOKS-Thorik |
-| **Eroi di Hammerfist pregen** (D14, se sopravvivono) | Borin campione / Dara staffette / Harbek culto / Nala a Dauth | Sparsi in ARC-09 | schede `Bestiario/png/Borin_Giuraferro.md`, `Bestiario/png/Dara_Occhiolesto.md`, `Bestiario/png/Harbek_Runaforte.md`, `Bestiario/png/Nala_Cantapietre.md` |
+| **Eroi di Hammerfist pregen** (D14, se sopravvivono) | Borin campione / Dara staffette / Harbek culto / Nala a Dauth / Ragnhild incide la Runa / Yrsa porta lo stendardo alla Cerimonia `[CANONE — DM 2026-11-15]` | Sparsi in ARC-09 (Ragnhild e Yrsa restano a Hammerfist) | schede `Bestiario/png/Borin_Giuraferro.md`, `Bestiario/png/Dara_Occhiolesto.md`, `Bestiario/png/Harbek_Runaforte.md`, `Bestiario/png/Nala_Cantapietre.md`, `Bestiario/png/Ragnhild_Mantoferro.md`, `Bestiario/png/Yrsa_Portastendardo.md` |
 | **Raid drow al tempio di Hammerfist** (Sonjak, `state.md` §3) | Prefigura la Fase 0 (Notte dei Drow) di Rethmar | Day 40, Fase 0 Rethmar | `state.md` §3; ARC-09 FASE0 |
 | **Lunapiena resta di presidio** (D13) | Hammerfist difesa, ma NON rinforza Rethmar | Statico | `Bestiario/png/Capitano_Lunapiena.md`; ARMATE-SYNC §7 |
 

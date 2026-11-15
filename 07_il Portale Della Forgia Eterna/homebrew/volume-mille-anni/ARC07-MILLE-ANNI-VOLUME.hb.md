@@ -1975,7 +1975,8 @@ scene di questo master.
   supplemento: Zog'tar esce dal fuoco e grida al corno, il sacerdote al round
   3 mette la *luce* sul giavellotto, Balvar al round 4 lancia *dissolvi
   magie* ad area sul punto illuminato o alla cieca sulla verticale (B13: chi
-  perde il volo cade da 48 m, 15d6). Grask suona entro 1d4 round dal boato,
+  perde il volo scende di 18 m a round per 1d6 round, e cade solo per
+  il tratto che resta). Grask suona entro 1d4 round dal boato,
   se è vivo; se è morto il corno lo suona qualcun altro (§8, «Chi suona il
   corno»). L'orda corre allo spiazzo con le torce (B25).
 - **Che cosa rischiano.** Chi resta sopra i 45 m, zitto, e si allontana dalla
@@ -2343,7 +2344,7 @@ paura»). I nomi non li chiede: un PG sano di mente non glieli darebbe.
 | **Vuole** | il tesoro di Hammerfist, e uccidere un secondo re **davanti all'orda**, con diecimila bocche che poi lo raccontano |
 | **Teme** | che si veda il guinzaglio: che l'orda capisca che il suo drago torna quando lo chiamano |
 | **Ha in mano** | le ali. Senza di lui l'assalto è una scala appoggiata alla pietra, e Zog'tar lo sa |
-| **Prossimo passo** | all'alba, al corno, cala sul cortile dove sta il re |
+| **Prossimo passo** | all'alba, al corno, cala sul cortile dietro la porta principale: è la porta che gli arieti battono, e il re la difende da dentro. Se la apre, l'orda la vede cedere, e il tesoro è suo |
 
 **Cosa ne fa il tavolo.** Quattro leve, e nessun numero nuovo:
 
@@ -3353,10 +3354,10 @@ cambia davvero.
   - ***Fluttuare*** (SRD, *Hover*), **una volta sola**: alla prima paura, a
     ⅓ dei pf (la soglia qui sotto). Con un'azione di movimento si ferma in
     aria, e da fermo si sposta in ogni direzione, anche in verticale, a metà
-    velocità, nonostante la manovrabilità scarsa. Se comincia il turno fermo
-    in aria può fare un'azione di round completo: niente attacchi d'ala, ma
-    morso, artigli e coda come in un attacco completo, oppure il soffio o un
-    incantesimo. Sotto i 6 m dal suolo, sopra le macerie e la cenere del
+    velocità, nonostante la manovrabilità scarsa. La regola gli darebbe,
+    se comincia il turno fermo in aria, un'azione di round completo (morso,
+    artigli e coda); alla prima paura **non la usa**: esita, guarda, e in quel
+    round non attacca, né soffia, né lancia. Sotto i 6 m dal suolo, sopra le macerie e la cenere del
     cortile, alza una nube di 18 m di raggio: dentro si vede a 3 m, chi è a
     4,5-6 m ha occultamento (20%), chi è a 7,5 m o più occultamento totale
     (50%), e per lanciare un incantesimo nella nube serve Concentrazione
@@ -3398,7 +3399,9 @@ cambia davvero.
   chiede: o l'ha sentito al corno, o mette al suo posto un epiteto preso da
   quello che vede, che vale lo stesso. Fra
   quelli che lo chiamano, nell'ordine: chi ha detto la Catena ad alta voce;
-  chi tiene la corda dell'ala; chi lo ha ferito di più. A parità decide
+  chi colpisce l'orda o gli arieti dall'alto, perché gli toglie il tesoro
+  davanti a tutti; chi tiene la corda dell'ala;
+  chi lo ha ferito di più. A parità decide
   l'arroganza: sceglie quello la cui caduta fa più orrore agli altri, la
   druida appena tornata dalla morte o chi porta la Corona, e lo nomina in modo
   che lo sentano tutti.
@@ -3411,8 +3414,9 @@ cambia davvero.
   quei round le fa tacere con la coda, in passata (2d6+16 o 2d6+15), e viene
   prima del re. Il soffio lo tiene per i PG.
 - **Il re**. Re Thorek sta nel cortile alle spalle
-  dei PG. Se in un round nessun PG ha chiamato il drago (la Catena detta, la
-  corda, le ferite) e nessuno ha tirato con le balestre o
+  dei PG, davanti alla porta principale che gli arieti battono: è per la porta
+  e per lui che il drago cala lì, e non sulle mura. Se in un round nessun PG ha chiamato il drago (la Catena detta, l'orda
+  colpita dall'alto, la corda, le ferite) e nessuno ha tirato con le balestre o
   suonato le campane, Skullcrusher va su di lui: è il secondo re
   che vuole mangiare davanti all'orda. Chi sta sulla linea del soffio o
   accanto al re prende il colpo al posto suo. ⚠ Non SRD: in 3.5 non c'è
@@ -3427,7 +3431,7 @@ cambia davvero.
   giorno in cui il re è caduto.
 - **Soglia: quando gli resta un terzo dei pf, ~112 col Vecchio e ~100 con l'Adulto — la prima paura.** Per la prima volta nella sua vita,
   Skullcrusher **esita**, e **si ferma in aria** (*Fluttuare*): è l'unica
-  volta nel duello. È il momento dei tre esiti (sotto). Al suo turno
+  volta nel duello, e in quel round **non attacca**. È il momento dei tre esiti (sotto). Al suo turno
   fugge nelle paludi sotto la sua *oscurità*, a meno che nel round prima abbia preso **almeno due
   colpi**: allora resta fermo lì un round ancora, e lì si può uccidere (le soglie,
   più sotto). *«Qualcosa in lui — nel
@@ -3456,6 +3460,92 @@ cambia davvero.
   13). Se Skullcrusher ha **visto** Aegis Fang scagliata, il terrore di
   quell'arma entra nel sangue: Fauci, mille anni dopo, la riconoscerà (gancio
   inverso B4).
+
+#### 🧭 Dove sono i PG all'alba — dove cala il drago, e come
+
+> **Perché c'è.** Le tattiche qui sopra danno per scontato che i PG siano nel
+> cortile, accanto al re. Il tavolo può essere altrove: sulle mura dopo la
+> Scena 10, fuori, in volo, invisibile, o nemmeno lì. Il drago non li cerca per
+> nome: il nome è la componente di *colpo accurato*, non un motivo. Cala sul suo
+> obiettivo, e i PG diventano bersaglio quando ci stanno in mezzo o quando lo
+> chiamano («Chi sceglie», qui sopra). Tutto quello che usa è nella sua scheda
+> (Appendice A.1-bis): niente numeri nuovi.
+
+**Perché va sui PG, e non solo sul re.** Tre motivi, e nessuno è il nome:
+
+- **La Corona.** Il drago ha già mangiato un re in questa valle. Un nano con
+  una corona in testa, per lui, è un re: Thorik è un bersaglio come Re Thorek.
+- **Il barile.** Dai gridi della notte, attraverso il corno, sa che i nani
+  volanti hanno bruciato la tenda del generale (B21). Se l'assalto fallisce,
+  il tesoro che il patto gli promette non arriva mai.
+- **La strada.** Chi sta fra lui e il suo obiettivo, lo sta fermando.
+
+**Il round 1.** Il soffio d'apertura va sul gruppo più fitto **attorno al suo
+obiettivo**, cioè al re o alla porta. I PG lontani da lì non li cerca finché
+non lo chiamano.
+
+**Prima di partire, al corno.** Dopo il barile sa che i nani volano: lancia
+*vedere invisibilità* prima di lasciare le colline. Col Vecchio dura 70
+minuti (incantatore di 7°), quindi copre il volo di 70 round e tutto il
+duello. Le wyvern no: non vedono gli invisibili, li fiutano entro 9 m.
+
+<!-- tabella: larga -->
+
+| Dove sono i PG | Dove cala | Come combatte |
+|---|---|---|
+| **Nel cortile, col re** | il cortile, M7-B | come scritto qui sopra |
+| **Sulle mura**, dopo la Scena 10 | dietro la porta principale, sul cortile: è lì che apre la strada agli arieti, ed è lì che il re la difende | la prima passata la fa lungo il camminamento sud, se i PG ci stanno in fila: è largo un quadretto, e la linea di 30 m del soffio li prende tutti. Poi va alla porta. I PG scelgono: restare in alto, con la gittata e le gru (le corde partono dal camminamento), o scendere nel cortile (4,5 m di scala). Da lì vale M7-B |
+| **Fuori dalle mura** | la spianata davanti alla porta | come «Se il duello comincia fuori dalle mura», più sopra |
+| **In volo, visibili** | dove sono loro, se lo intercettano prima della fortezza; altrimenti la porta | **La quota è sua.** Vola a 45 m, loro a 18 (12 in armatura media o pesante): decide lui quando ingaggiare, e sta sempre più in alto. **Il soffio** in linea sui volanti allineati. ***Dissolvi magie* ad area**, solo su chi in aria lo minaccia: chi lancia incantesimi o deflagra, chi porta un barile. I nani in volo che non lo raggiungono li lascia stare, perché a terra tornerebbero utili. Raggio 6 m, gittata 51 m, prova d20+7: contro il *volare* della pozione (CD 16) riesce 6 volte su 10, contro l'invisibilità comprata (CD 14) 7 su 10, contro quella del re (incantatore di 12°, CD 23) 1 su 4. La forma selvatica di Hella è soprannaturale e non si dissolve; per le Ali d'Ombra dell'Anello di Artemis decide il DM, perché la scheda dell'Anello non lo dice. **Chi perde il volo** scende di 18 m a round per 1d6 round e atterra illeso se tocca terra in tempo; altrimenti cade per il resto, 1d6 ogni 3 m (SRD, *volare*). Sopra la piana scende in mezzo all'orda. ***Lentezza*** (Volontà CD 17, gittata 12 m) su chi lo insegue. ***Virare*** per tornare sulla stessa linea. Le **wyvern** su chi vola, come scritto. Non si ferma in aria: *Fluttuare* resta per la prima paura |
+| **In volo, invisibili** | come sopra | con *vedere invisibilità* già addosso li vede come visibili, e vale la riga sopra. Il nome gridato li trova comunque: *colpo accurato* ignora l'occultamento |
+| **Con il corno rubato** | dov'è il corno | come «Se suonano loro il corno rubato» (Scena 6): va prima su chi lo tiene |
+| **Non ci sono**: ancora nel campo, dispersi, colti fuori dall'alba | dietro la porta | fa il suo lavoro. Due colpi mettono a terra il re, stabile (il re non muore). La porta cede: su M7-B vale la riga «0 successi» della Scena 10, sei quadretti di terreno difficile e due nani a terra. Quando i PG arrivano il duello comincia dove sono, e il drago non è sorpreso |
+
+#### 🧠 Quando il tavolo fa una cosa che qui non è scritta — come ragiona il drago
+
+> **Perché c'è.** Il barile sulla tenda non era previsto da nessuna pagina, e il
+> modulo ha dovuto inseguirlo con un supplemento intero. Il prossimo colpo di
+> genio del tavolo arriverà all'alba, contro il drago. Qui non ci sono le
+> risposte: c'è **come pensa**, così il DM risponde in un minuto e sempre allo
+> stesso modo. Vale il §0-ter: assorbi, poi rilancia.
+
+**Le sue quattro domande, nell'ordine.** Davanti a una cosa nuova Skullcrusher
+non si chiede «che cos'è», ma:
+
+1. **Mi fa perdere davanti all'orda?** È la cosa che teme di più dopo il
+   guinzaglio. Quello che lo umilia in pubblico lo fa tornare su chi l'ha
+   fatto, subito, anche contro il suo interesse.
+2. **Mi toglie il tesoro?** Il patto paga solo se la fortezza cade. Quello
+   che ferma l'assalto (gli arieti, la porta, l'orda colpita) è un bersaglio
+   anche se a lui non fa niente.
+3. **Mi tira giù?** Tutto quello che lo porta a terra o lo inchioda (le corde,
+   la perdita di quota) per lui è la morte: sale. È arrogante, non stupido.
+4. **Mi tocca la Catena?** Chi la nomina o la sfiora diventa il suo bersaglio
+   (Scena 7).
+
+**Come legge una sorpresa.** INT 18, SAG 19, Sapienza Magica +29,
+*individuazione del magico* fra i trucchetti. La **prima** volta una trovata
+funziona per intero: è il premio del tavolo, e il DM non la attenua. Al suo
+turno dopo il drago sale fuori portata, guarda e capisce che cos'era. La
+**seconda** volta la stessa trovata non lo prende più alla sprovvista: la
+evita, o la punisce su chi l'ha fatta. È lo stesso principio di «Il nemico
+impara» del supplemento del barile, applicato a lui. Una trovata nuova, invece,
+vale di nuovo per intero.
+
+**Cosa non fa mai.** Non tratta davanti all'orda (Scena 7). Non si ferma in
+aria prima della prima paura. Non insegue nessuno lontano dalla fortezza
+finché l'assalto è aperto: il tesoro è lì.
+
+**Gli esempi, a partire dal barile**
+
+| La trovata | Come la legge | Che cosa fa |
+|---|---|---|
+| **Un barile, o un altro oggetto pesante, lasciato cadere sul drago** | domanda 3: lo vuole tirare giù | Finché vola non lo si prende: da 48 m l'oggetto cade in circa 3 secondi, e in quel tempo lui si sposta di una ventina di metri. Funziona solo quando è fermo: inchiodato dalle corde o fermo in aria alla prima paura. Allora vale l'oggetto in caduta del supplemento (15d6 da 48 m, senza TS), e le fiale della fenice gli bruciano addosso, perché è immune all'acido, non al fuoco. Dopo il primo, sale sopra chi tiene i barili e lo morde dall'alto |
+| **Un barile sull'orda o sugli arieti, all'alba** | domanda 2, e anche la 1: è il colpo che ferma l'assalto, davanti a tutti | chi l'ha sganciato entra in «Chi sceglie», subito dopo chi ha detto la Catena: il drago gli va addosso in quota, con il soffio in linea e il *dissolvi magie* della tabella qui sopra, sopra la piana |
+| **Un'illusione** (un drago finto, un re finto, un esercito sulle mura) | nessuna delle quattro, finché non la tocca | interagendoci tira Volontà (+20) per non crederci; la prima volta ci casca se fallisce, poi la riconosce. Il *suono fantasma* lo conosce anche lui |
+| **Attirarlo lontano dagli occhi dell'orda** (il corno rubato, una trappola fuori vista) | domanda 1 al contrario: lì nessuno lo guarda | ci viene, furioso (Scena 6). Lontano dall'orda è l'unico posto dove ascolterebbe un'offerta sulla Catena (Scena 7): se il tavolo ci arriva, la scena è del DM |
+| **Colpire il re, la porta o gli arieti invece di lui** | domande 2 e 1 | non cambia obiettivo: va dove il suo tesoro è in pericolo, e la scelta del tavolo diventa una corsa |
+| **Una cosa che non è in nessuna riga** | le quattro domande, nell'ordine | la prima risposta «sì» dice che cosa fa. Se sono tutti «no», la ignora e continua la passata |
 
 #### 🏟️ IL CORTILE — cosa c'è, e cosa ci si può fare che qui non è scritto
 
@@ -4001,9 +4091,11 @@ ___
 - **I PG invisibili non gli sfuggono da vicino.** La percezione cieca
   localizza tutto entro 18 m: sa in che quadretto è un PG invisibile, che
   però conserva l'occultamento totale, 50% di mancare (SRD, *percezione
-  cieca*). *Vedere invisibilità* dura 50 minuti: se lo lancia al
-  primo allarme, i PG invisibili sono visibili per tutto il duello. Di notte
-  sulle colline non l'ha lanciato, perché non si aspetta nessuno.
+  cieca*). *Vedere invisibilità* dura 10 minuti per livello: 50 con
+  l'Adulto (incantatore di 5°), 70 col Vecchio (7°). Dopo il barile lo lancia
+  al corno dell'alba, prima di partire, e i PG invisibili sono visibili per
+  tutto il duello. Di notte sulle colline non l'ha
+  lanciato, perché non si aspetta nessuno.
 - **Il soffio fa più male**: 14d4 (in media 35) invece di 12d4, e Riflessi
   CD 30. La runa di Zeth (*resistere all'energia* 20) ne toglie ancora più
   della metà.
@@ -4732,7 +4824,7 @@ Dalla **Scena 11 di cap. I**, il duello, si registrano due dati (nel vecchio P5 
 |---|---|---|
 | **UCCISO** (Skullcrusher a 0 pf) | **Cicatrice ancestrale attiva**: Fauci entra in campo con **−10% PF** (337 → **303 PF**) e **Presenza Terrificante CD 25 → 23** contro i **portatori degli artefatti** (Thorik/Corona, Tordek/Bracieri+Cintura, Hella/Collana, Artemis/Ring). | La stirpe porta la ferita mortale del capostipite: il sangue "ricorda" di poter cadere. |
 | **FERITO GRAVE** (fugge sotto ⅓ pf) | **−1 uso del soffio**: il primo **Soffio a Cono** (1/giorno) è **indisponibile**; il soffio in linea parte comunque ma la **prima** volta a −2 alla CD (27 invece di 29). Nessuna riduzione di PF. | La ferita non è letale ma "storpia" l'arma migliore del sangue. |
-| **FUGGITO** (Skullcrusher si allontana quasi illeso) | Fauci **vi ha visti e riconosciuti**: **+2 iniziativa** e nessuna sorpresa contro di voi (sa chi siete) **MA morale fragile** — **fugge sotto i 75 PF** invece di 50 (soglia di ritirata alzata di 25). | Il drago è forte ma il sangue teme già i "quattro del futuro": più cauto, meno disposto a morire. |
+| **FUGGITO** (Skullcrusher si allontana quasi illeso) | Fauci **vi ha visti e riconosciuti**: **+2 iniziativa** e nessuna sorpresa contro di voi (sa chi siete) **MA morale fragile** — **fugge sotto i 137 PF** invece di 112 (soglia di ritirata alzata di 25). | Il drago è forte ma il sangue teme già i "quattro del futuro": più cauto, meno disposto a morire. |
 
 ---
 

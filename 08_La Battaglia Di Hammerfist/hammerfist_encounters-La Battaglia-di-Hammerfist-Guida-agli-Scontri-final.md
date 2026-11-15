@@ -1053,7 +1053,7 @@ VALLE DELL'AVVISTAMENTO (120m x 80m)
 
 **FAUCI DI PALUDE + CAVALIERE HOBGOBLIN:**
 - **PF di partenza** `[CANONE — DM 2026-10-19, D9]`: 337 meno il carry-over di `ARC08-10` §4.1 (303 se nel P5 Skullcrusher fu ucciso); **337 se il P5 non è stato giocato** (statblock invariato)
-- **Tattiche** (scheda in `ARC08-02` §1): resta in quota col soffio e *nube maleodorante*, sospeso con Fluttuare. Ai round 18-20 la picchiata e la presa di Thorik, una volta (scheda, «La presa di Thorik»); *Ghermire* non lo usa su nessun altro. Atterra solo sotto i 100 pf o per finire Thorik (+4 contro di lui, sempre). Fugge sotto i 50 pf. Non fugge al round 5: la picchiata è ai round 18-20
+- **Tattiche** (scheda in `ARC08-02` §1): resta in quota col soffio e *nube maleodorante*, sospeso con Fluttuare. Ai round 18-20 la picchiata e la presa di Thorik, una volta (scheda, «La presa di Thorik»); *Ghermire* non lo usa su nessun altro. Prima della picchiata *immagine speculare* e, se ha visto qualcuno pronto a prenderlo al volo, *dissolvi magie*; *nube maleodorante* sui compagni prima di atterrare. Atterra solo per finire Thorik (+4 contro di lui, sempre). Fugge sotto i 112 pf `[CANONE — DM 2026-11-15]`. Non fugge al round 5: la picchiata è ai round 18-20
 - **Cavaliere:** Fornisce spell support e comando tattico
 
 **SIGNORE VENTOLESTO + 2 GUFI SUPPORTO:**
@@ -1140,9 +1140,9 @@ SE IL CAVALIERE CADE (dal round 3)
 
 #### **ROUND 5: FAUCI RESTA IN ARIA** `[CANONE — DM 2026-10-19, D9]`
 
-Fauci non fugge: logora in quota fino al round 17, e scende ai round 18-20 (sotto, «ROUND 18-23: LA PICCHIATA E IL DUELLO»). Il box qui sotto si legge solo se, nel duello, Fauci scende sotto i 50 pf e i PG non lo bloccano.
+Fauci non fugge: logora in quota fino al round 17, e scende ai round 18-20 (sotto, «ROUND 18-23: LA PICCHIATA E IL DUELLO»). Il box qui sotto si legge solo se, nel duello, Fauci scende sotto i 112 pf e i PG non lo bloccano.
 
-**ULTIMO SOFFIO DI RABBIA** *(solo se fugge, sotto i 50 pf)*:
+**ULTIMO SOFFIO DI RABBIA** *(solo se fugge, sotto i 112 pf)*:
 > *"Fauci di Palude, realizzando che la battaglia è perduta, si volta verso il campo dove stanno avanzando i nani. Con un ultimo atto di pura malvagità, sprigiona il suo soffio acido non per uccidere, ma per distruggere simbolicamente la vittoria nemica. L'acido si riversa sui vessilli della Mano Rossa caduti, dissolvendoli in fumo corrosivo: 'La Mano Rossa tornerà!' ruggisce mentre si allontana verso le montagne meridionali."*
 
 ### **FASE 2: LA STRAGE DAI CIELI (Round 6-10)**
@@ -1297,7 +1297,7 @@ Fauci resta in aria e logora fino al round 17, e scende quando lo decide lui.
 - **Attacco in Volo** per staccarsi dal più lento: vola a 45 m, un PG in armatura pesante a 12 m.
 - **Il cavaliere** carica in sella e copre il fianco del drago.
 - **Thorik** non subisce la Presenza terrificante: il *Mind Blank* della Corona la blocca (scheda di Fauci).
-- Sotto i 100 pf scende comunque; **sotto i 50 tenta la fuga** (`ARC08-10` §4), e i PG in volo possono inseguirlo.
+- **Sotto i 112 pf tenta la fuga** `[CANONE — DM 2026-11-15]` (`ARC08-10` §4), e i PG in volo possono inseguirlo.
 
 **Il duello (round 21-23):** Fauci atterra accanto a Thorik caduto, per finirlo, e a terra fa l'attacco completo intero, sei attacchi con le ali. Sotto i 50 pf, il default è che rompa il contatto e decolli verso sud; è **ucciso** solo se i PG lo bloccano oltre quel punto. Si decide al tavolo, e i due rami sono in `ARC08-10` §4. In tutti e due l'orda vede il drago fuori gioco, ed è la rotta.
 
@@ -1334,7 +1334,7 @@ CAMPO DOPO LA VITTORIA
 #### **IL CONTEGGIO FINALE:**
 
 **PERDITE NEMICHE:**
-- **Fauci di Palude:** ucciso nel duello dei round 21-23, o fuggito gravemente ferito sotto i 50 pf se i PG non lo hanno bloccato (`ARC08-10` §4; possibile ritorno futuro) `[CANONE — DM 2026-10-19, D9]`
+- **Fauci di Palude:** ucciso nel duello dei round 21-23, o fuggito gravemente ferito sotto i 112 pf `[CANONE — DM 2026-11-15]` se i PG non lo hanno bloccato (`ARC08-10` §4; possibile ritorno futuro) `[CANONE — DM 2026-10-19, D9]`
 - **Generale Grimjaw:** [Variabile - dipende dalle azioni dei PG]
 - **Gorthak Trifronte:** [Variabile - dipende dalle azioni dei PG]  
 - **Truppe:** ~500 morti e ~400 dispersi in rotta, che non si ricongiungono (canone D11, `ARC08-10` §1)

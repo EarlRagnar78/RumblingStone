@@ -2,7 +2,7 @@
 
 > Esito delle card del 15/11: il DM ha scelto «separa e finisce» e Balvar e il
 > sacerdote al campo all'alba. Il testo è nella Scena 10 di ARC07-DEF-4 e nel §8 del
-> BARILE. Il motore `simula_scontri.py` arriva con la PR del thread dei draghi.
+> BARILE. Il motore `simula_scontri.py` è in `../tattiche-draghi-2026-11-15/` (#450).
 
 Scena: ARC07-DEF-4 Scena 10, «Come combatte sulla breccia» (r.3220), con 0-1
 successi sulle mura. Script: `profili_villain.py` (profili sul motore comune

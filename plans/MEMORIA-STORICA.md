@@ -1616,7 +1616,29 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `docs/how-to/GUIDA-PROVE-PORTATILE-4050.md` · `scripts/prove-4050/` · `scripts/importa_gemini.py` · `plans/esperimenti/immagini-posa-4050-2026-11-15/LEGGIMI.md`
 - **Solo qui:** le domande del lettore sono state generate nel container con torch su CPU e `intfloat/multilingual-e5-small` (recupero 3,5 minuti sul repo). Il lettore va lanciato con `LLM_CTX=4096`, perché col contesto di serie di 32k token il 7B non starebbe tutto nei 6 GB: è una stima dal peso del modello, non una misura. Le tre manopole delle immagini (`RS_COMFY_ARGS`, `RS_LIBERA`, `RS_VLM_DEVICE`) non sono mai girate su una GPU. Il formato di Takeout per «App Gemini» non è documentato: il lettore è scritto sui campi noti di «La mia attività» e provato su campioni sintetici. Le schede con decodifica vincolata (tecnica 3 di Document AI) non hanno ancora una prova da lanciare.
 
-### MS-0142 · 2026-11-15 · Zog'tar sulla breccia dell'alba separa e finisce, e sa che i nani volano
+### MS-0142 · 2026-11-15 · ARC-07: la tattica di Skullcrusher diventa dinamica, e la misura del duello
+
+- **Data:** 2026-11-15
+- **PR:** —
+- **ADR:** ADR-0118
+- **Temi:** arc07 skullcrusher tattiche drago simulazione barile decisione-dm
+- **Origine:** riga del 2026-11-15 «ARC-07 DEF-4 Scena 11, la tattica di Skullcrusher» in `plans/CHANGELOG.md`
+- **Testo:** Jfs ha chiesto perché il drago attacchi solo nel cortile, che cosa faccia coi PG in volo o invisibili e perché li attacchi se ne sa solo il nome. Audit: «Chi sceglie» era già dinamico sul chi ma non sul dove; r.2403 («cala dove sta il re») non reggeva, perché dalla piana l'orda non vede il cortile. Otto card, tutte scelte sulla consigliata: porta principale e re; tabella «Dove sono i PG all'alba»; *vedere invisibilità* al corno; B13 secondo l'SRD; chi colpisce l'orda dall'alto subito dopo la Catena; alla prima paura esita; inchiodato attacca chi tiene la corda (com'era); *dissolvi* solo su chi in aria lo minaccia.
+- **Trovato nel repo:** `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` Scena 11 e Appendice A.1 · `07_il Portale Della Forgia Eterna/ARC07-BARILE-SULLA-TENDA.md` B13 · `plans/esperimenti/duello-skullcrusher-2026-11-15/`
+- **Solo qui:** la simulazione (20.000 duelli per tattica) stima i bonus d'attacco di Thorik (+22) e Tordek (+23 in ira), che la carta del 05/11 non porta, e lascia fuori Durik, gli evocati e le pozioni: le morti sono un tetto. Con la CA 40 i due combattenti in mischia contano poco e la Catena (CA 44) si spezza nel 4-6% dei duelli: il DM non ha cambiato questi numeri. Il motivo per cui il drago va sui PG non è il nome, che è solo la componente di *colpo accurato*: è la Corona di Thorik (per lui un re), il barile della notte e il fatto che stanno fra lui e la porta. Il 50 minuti di *vedere invisibilità* in A.1 era il numero dell'Adulto. Sullo stesso metodo il thread «Rivedere le tattiche di tutti i draghi».
+
+### MS-0143 · 2026-11-15 · Le tattiche di Fauci di Palude e di Tyrgarun, simulate e scelte dal DM
+
+- **Data:** 2026-11-15
+- **PR:** #450
+- **ADR:** —
+- **Temi:** draghi tattiche fauci tyrgarun arbitrax regiarix vaereth simulazione decisione-dm arc08 arc09
+- **Origine:** riga del 2026-11-15 «Tattiche dei draghi, richiesta del DM del 15/11» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha chiesto tattiche da creature più intelligenti del gioco per tutti i draghi tranne Skullcrusher: carattere, obiettivi, cosa sanno dei PG, adattamento all'ambiente e allo stato dei PG, simulate. Inventario: Fauci, Arbitrax, Ozyrrandion, Regiarix, il drago rosso dei Githyanki di Vaereth, Tyrgarun, l'Avatar di Tiamat. Sulle card del 15/11 il DM ha scelto per Fauci la tattica nuova con la fuga a 112 pf, per Tyrgarun la tattica da stregone nelle Fasi 1-3 con la condizione scritta per la Fase 4, e per Arbitrax il bruto col difetto d'orgoglio, con la percezione cieca al posto della «vista cieca». Le schede di Regiarix e del drago rosso di Vaereth sono rifatte sull'SRD, come ha scelto il DM.
+- **Trovato nel repo:** `plans/esperimenti/tattiche-draghi-2026-11-15/` (proposta, simulatore, esiti) · `08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` §1 · `Bestiario/villain/Tyrgarun/tyrgarun-blue-very-old-cr19.md`
+- **Solo qui:** la misura ha detto che un drago più astuto uccide meno PG, non di più: la leva dei morti è la soglia di fuga. Il Mythal toglie a Tyrgarun il volo ma non il soffio da 20d8, quindi il «GS 16-17» a terra non reggeva. Con resistere all'energia 30 dei PG il canone di Arbitrax non uccideva nessuno in 20.000 prove. Regiarix giovane adulto (GS 9, l'età delle Armate, che però gli davano GS 10) abbassa Rhest da EL 13 a circa 11-12; il titolo del file diceva CR 13. Il drago di Vaereth non ha nome nelle fonti. Gli incantesimi conosciuti di tutti e due e i talenti sono scelte di questa revisione o del DM, non fonte. Corrompere acqua sulle cisterne di Hammerfist e l'oscurità sulle balliste sono nella proposta, non nella scheda. Non si sa se Artemis abbia un'invocazione per vedere l'invisibile.
+
+### MS-0144 · 2026-11-15 · Zog'tar sulla breccia dell'alba separa e finisce, e sa che i nani volano
 
 - **Data:** 2026-11-15
 - **PR:** —

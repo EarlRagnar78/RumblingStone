@@ -60,6 +60,7 @@ gioca come **pericolo ambientale con contromosse quantificate** (vedi STRUTTURA
 
 **Tattiche**
 - *Prima del combattimento e durante (profilo aereo, Fasi 1-3)*: resta in **volo alto**, alterna passate di soffio sui camminamenti e Snatch sulle balliste/serventi. **Non atterra mai** finché il Mythal non lo inchioda (Fase 4).
+- *Lo stregone, Fasi 1-3* `[CANONE — DM 2026-11-15]`: all'alba lancia *pelle di pietra* (110 minuti, tutta la battaglia: assorbe 110 danni da arma). Con *imitazione dei suoni* dà ordini falsi con la voce dei comandanti («ritirata dal bastione est!»; chi ascolta fa un TS Volontà CD 29 per accorgersene), e con *terreno allucinatorio* (1 al giorno) mostra una breccia che non c'è. Le prime passate di soffio le fa da *invisibilità superiore*, ma la sorpresa vale per intero una volta sola: quando un incantesimo dei PG lo rende di nuovo visibile, cambia settore e torna a combattere visibile. Quando il cerchio del Mythal comincia a chiudersi lancia *immagine speculare*, e colpisce chi tiene il focus con *telecinesi* (spinta violenta) o con un *fulmine* dall'alto. Sa dell'ascia che canta e del nano che non trema da chi è tornato da Hammerfist; del Mythal sa che il Circolo degli Otto prepara qualcosa, non che cosa, finché non lo vede.
 - *A terra (Fase 4)*: costretto alla mischia, usa stritolamento, coda e morso; cerca di sfondare verso il cerchio del Mythal per spegnere l'ancoraggio (se lo raggiunge e uccide un PG-focus, riguadagna il volo).
 - *Morale*: Se le contromosse dei PG (balliste, gufi Tiri Kitor, esca) hanno successo ripetuto, sceglie di ritirarsi 1d4 round per ricaricare — *non* di ingaggiare corpo a corpo.
 - *Morale — trigger di fuga (nemesi ARC-10)*: se ridotto sotto **80 pf** *prima* che il
@@ -80,11 +81,25 @@ gioca come **pericolo ambientale con contromosse quantificate** (vedi STRUTTURA
 
 ---
 
-## Profilo A TERRA (Fase 4) — *incontro uccidibile, CR effettivo ~16-17*
+## Profilo A TERRA (Fase 4) — *uccidibile solo se arriva ferito e con gli alleati*
 
 Il **Mythal del Circolo degli Otto** (STRUTTURA §7, canone P2D-INTEGRAZIONE
 r.201) **gli nega il volo** entro l'area protetta. Senza Flyby/kiting il suo CR
 effettivo scende a **~16-17**: epico ma battibile da party APL 14 + alleati.
+
+> `[CANONE — DM 2026-11-15]` **Il «GS 16-17» non regge.** Il Mythal toglie il volo ma non il
+> soffio da 20d8 (CD 30 con il −2): contro i soli PG, intatto, li travolge in
+> due-tre round (almeno un PG morto nel 59-80% delle prove). La Fase 4 è
+> battibile se valgono tutte e due le condizioni: **Tyrgarun arriva sotto i 250
+> pf** (le contromosse delle Fasi 1-3 lo hanno logorato) **e combattono le
+> statue-golem e gli alleati**. Così il modello lo dà ucciso nel 23-45% degli
+> scontri (stima degli alleati: 40 pf a round, metà dei suoi round su di loro).
+> In Fase 4 combatte come scritto sotto, senza scavare sotto il cerchio: con lo
+> scavo e una *pelle di pietra* piena non muore quasi mai. La *pelle di pietra*
+> dell'alba conta solo per quel che ne resta: ogni colpo da arma delle Fasi 1-3
+> (balliste comprese) ne consuma fino a 10 dei 110, e il DM tiene il conto. Se il
+> Circolo la dissolve prima, la Fase 4 si gioca senza. Simulazione:
+> `plans/esperimenti/tattiche-draghi-2026-11-15/`.
 
 **Differenze dal profilo aereo:**
 - **Speed**: 12 m, scavare 6 m — **niente volo** (Mythal attivo). Se il Mythal cade, torna al profilo aereo.

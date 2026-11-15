@@ -432,7 +432,7 @@ The party descends through a chain of connected underground locations:
 - Lake Rhest exploration — sunken city ruins, boat/underwater mechanics
 - Razorfiend encounters in the swamp
 - **Wyrmlord Saarvith** (CR 12, fighter/dragon disciple) commands the area
-- Boss: **Regiarix** Adult Black Dragon (CR 13)
+- Boss: **Regiarix** drago nero giovane adulto (GS 9, SRD) `[CANONE — DM 2026-11-15]`
 - Consequences: Slows horde 3 days, critical intelligence gathered
 - Source: `Arco-Post-Hammerfist-P2-RHEST-*` (8 files)
 

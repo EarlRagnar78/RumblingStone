@@ -44,7 +44,7 @@ Stessa arena, ma con “trofeo centrale” (fila 20, colonna 20): cristallo che 
 ## 5. Invasione Githyanki (twist finale)
 
 - Arena + area città adiacente (espansione mappa 50 × 50).  
-- Drago rosso: atterra al centro (20,20).  
+- Drago rosso: passa basso sopra il centro (20,20) e risale, non atterra (STATBLOCCHI-COMPLETO §7, `[CANONE — DM 2026-11-15]`).  
 - 4 Githyanki Knight: fila 1–5, sparsi colonne 8–32.  
 - 4 Githyanki Knight: entrano da est (colonne 38–40, file 10–30).  
 - Tordek e PG: posizione finale del combattimento torneo.  
@@ -72,7 +72,7 @@ Terreno aggiuntivo:
 ### ⚔️ TATTICHE (companion T5c — duelli → invasione)
 
 - **Duelli 1v1** (posizioni standard: contendenti a fila 4 e 36): R1 Tordek vs Kira (arena liscia); **Semifinale** vs Thrain (inizia con *bull's strength*, For +4); **Finale** con il trofeo centrale (chi lo controlla ha +1 CL).
-- **Twist — Invasione Githyanki**: **drago rosso** atterra al centro (20,20); **8 Githyanki Knight** in due gruppi (4 da nord fila 1-5, 4 da est col 38-40); civili/spettatori a rischio collisione. Il torneo **diventa battaglia** (Tordek e PG partono dalla posizione finale del duello).
+- **Twist — Invasione Githyanki**: **drago rosso** passa basso sopra il centro (20,20) e risale (§7 degli statblocchi, `[CANONE — DM 2026-11-15]`); **8 Githyanki Knight** in due gruppi (4 da nord fila 1-5, 4 da est col 38-40); civili/spettatori a rischio collisione. Il torneo **diventa battaglia** (Tordek e PG partono dalla posizione finale del duello).
 - Pubblico: nessun effetto meccanico salvo il *spellcasting* (rumore).
 
 ### 🔄 EVOLUZIONE (companion T5c — dal duello alla battaglia)

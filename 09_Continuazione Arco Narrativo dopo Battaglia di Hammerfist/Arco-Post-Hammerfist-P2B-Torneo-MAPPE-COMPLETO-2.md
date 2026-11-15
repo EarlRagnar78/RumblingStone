@@ -121,10 +121,8 @@ Quando inizia l’invasione, la mappa “si allarga” per includere parte della
 ### Elementi aggiuntivi
 
 1. **Drago Rosso Adulto**
-   - Ingresso: vola sopra l’arena e atterra inizialmente:
-     - (fila 20, colonna 20) – posizione del trofeo (che può essere distrutto o spazzato via).
-   - Occupa 3 × 3 quadretti (Enorme):
-     - Centra il corpo sul quadretto (20,20) e occupa area 19–21 x 19–21.
+   - Ingresso: passa basso sopra l’arena, sopra il quadretto (20,20), posizione del trofeo (che il soffio può distruggere o spazzare via), e risale; non atterra (STATBLOCCHI-COMPLETO §7, `[CANONE — DM 2026-11-15]`).
+   - Se scende, occupa 3 × 3 quadretti (Enorme): 19–21 x 19–21 sul (20,20).
 
 2. **Githyanki Knight (8 totali)**
 

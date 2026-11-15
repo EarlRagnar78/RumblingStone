@@ -631,7 +631,12 @@ lancia lì al round 4. Se non li ha mostrati, può lanciarlo alla cieca sopra la
 tenda, e prende chi è rimasto sulla verticale una volta su sei. Ogni PG nell'area
 tira la prova del dissolvi contro ogni effetto: d20 + 10 contro **CD 16** per il
 *volare* della pozione (11 + 5) e **CD 14** per l'invisibilità (11 + 3). Chi
-perde il volo cade: 48 m, **15d6** (SRD, 1d6 ogni 3 m). Lo fa solo se è in
+perde il volo non cade di colpo: scende di **18 m a round per 1d6 round**, e
+se tocca terra in quel tempo atterra illeso; altrimenti cade per il tratto che
+resta, 1d6 ogni 3 m (SRD, *volare*: dissolto, si comporta come quando scade).
+Da 48 m: con 3 round o più arriva a terra illeso (4 volte su 6); con 2 round
+cade da 12 m, 4d6; con 1 round da 30 m, 10d6 `[CANONE — DM 2026-11-15: la
+caduta secca di 15d6 del 29/10 non era SRD]`. Lo fa solo se è in
 modalità «minacciato, o attaccato» della Scena 7, ed è il caso: il barile è un
 attacco.
 
@@ -894,7 +899,7 @@ regole lasciano scegliere.
 | B10 | La Catena del drago sopravvive a Balvar morto? | **decisa dal DM il 2026-10-29:** sì | no: con Balvar morto la Catena si spezza, e il drago è libero e furioso |
 | B11 | La tenda bruciata col generale dentro vale come «Zog'tar umiliato davanti alle guardie» sulle mura? | **decisa dal DM il 2026-10-29:** sì: annulla il successo in meno dell'allarme | no: restano i due successi in meno (allarme e Zog'tar vivo) |
 | B12 | La tenda fa da forno: chi è sotto il telo è nell'area delle palle di fuoco, anche oltre i 6 m? | **decisa dal DM il 2026-10-29:** sì | no: 6 m dall'angolo, come nell'SRD; dal palo centrale restano fuori Balvar e la guardia Q14 con tre angoli su quattro |
-| B13 | Balvar lancia *dissolvi magie* ad area nel cielo (dove il giavellotto con la luce ha mostrato i PG, o alla cieca sopra la tenda, una volta su sei)? | **decisa dal DM il 2026-10-29:** sì: chi perde il volo cade da 48 m, 15d6 | no: Balvar non attacca dei nani che non vede |
+| B13 | Balvar lancia *dissolvi magie* ad area nel cielo (dove il giavellotto con la luce ha mostrato i PG, o alla cieca sopra la tenda, una volta su sei)? | **decisa dal DM il 2026-10-29:** sì; **corretta il 2026-11-15**: chi perde il volo scende di 18 m a round per 1d6 round (SRD, *volare*), non cade da 48 m per 15d6 | no: Balvar non attacca dei nani che non vede |
 | B14 | La procedura delle trovate (§13) entra nello standard dei moduli, con la riga «se ci fanno l'ingegnere» nei master dei prossimi archi? | **decisa dal DM il 2026-10-29:** sì, da ARC-08 | solo questa volta |
 | B15 | I PE per l'ingegno: tre fasce, GS = livello −4, −2, pari al livello; per il barile la fascia di mezzo, o quella alta se il corno non suona | **decisa dal DM il 2026-10-29:** sì | un premio fisso a sessione; o niente oltre ai nemici sconfitti |
 | B16 | I rostri sono lame di spada: chi prende il colpo diretto prende anche 1d4 lame da 1d8, nello stesso colpo? | **decisa dal DM il 2026-10-26: sì** | no: i rostri servono solo a tagliare il telo, come prima |

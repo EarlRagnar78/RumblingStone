@@ -299,7 +299,8 @@ la tabella «L'orda» per il campo. Le quattro cose che possono far male a chi
   chi è entro 6 m dal punto più alto del tiro, a 45 m sopra la tenda;
 - **il *dissolvi magie* di Balvar**, al round 4, dove il giavellotto li ha
   mostrati o alla cieca sulla verticale, una volta su sei. Chi perde il volo
-  cade da 48 m, 15d6 (B13);
+  scende di 18 m a round per 1d6 round: da 48 m arriva illeso 4 volte su 6,
+  altrimenti cade da 12 m (4d6) o da 30 m (10d6) (B13, corretta il 15/11);
 - **il drago**, se il corno ha suonato e sono ancora lì al round 70.
 
 Ricorda ai giocatori i round che restano di *volare* e di *invisibilità*
@@ -1405,7 +1406,11 @@ lancia lì al round 4. Se non li ha mostrati, può lanciarlo alla cieca sopra la
 tenda, e prende chi è rimasto sulla verticale una volta su sei. Ogni PG nell'area
 tira la prova del dissolvi contro ogni effetto: d20 + 10 contro **CD 16** per il
 *volare* della pozione (11 + 5) e **CD 14** per l'invisibilità (11 + 3). Chi
-perde il volo cade: 48 m, **15d6** (SRD, 1d6 ogni 3 m). Lo fa solo se è in
+perde il volo non cade di colpo: scende di **18 m a round per 1d6 round**, e
+se tocca terra in quel tempo atterra illeso; altrimenti cade per il tratto che
+resta, 1d6 ogni 3 m (SRD, *volare*: dissolto, si comporta come quando scade).
+Da 48 m: con 3 round o più arriva a terra illeso (4 volte su 6); con 2 round
+cade da 12 m, 4d6; con 1 round da 30 m, 10d6. Lo fa solo se è in
 modalità «minacciato, o attaccato» della Scena 7, ed è il caso: il barile è un
 attacco.
 
@@ -4171,7 +4176,8 @@ scene di questo master.
   supplemento: Zog'tar esce dal fuoco e grida al corno, il sacerdote al round
   3 mette la *luce* sul giavellotto, Balvar al round 4 lancia *dissolvi
   magie* ad area sul punto illuminato o alla cieca sulla verticale (B13: chi
-  perde il volo cade da 48 m, 15d6). Grask suona entro 1d4 round dal boato,
+  perde il volo scende di 18 m a round per 1d6 round, e cade solo per
+  il tratto che resta). Grask suona entro 1d4 round dal boato,
   se è vivo; se è morto il corno lo suona qualcun altro (§8, «Chi suona il
   corno»). L'orda corre allo spiazzo con le torce (B25).
 - **Che cosa rischiano.** Chi resta sopra i 45 m, zitto, e si allontana dalla
@@ -5626,6 +5632,92 @@ cambia davvero.
   quell'arma entra nel sangue: Fauci, mille anni dopo, la riconoscerà (gancio
   inverso B4).
 
+#### 🧭 Dove sono i PG all'alba — dove cala il drago, e come
+
+> **Perché c'è.** Le tattiche qui sopra danno per scontato che i PG siano nel
+> cortile, accanto al re. Il tavolo può essere altrove: sulle mura dopo la
+> Scena 10, fuori, in volo, invisibile, o nemmeno lì. Il drago non li cerca per
+> nome: il nome è la componente di *colpo accurato*, non un motivo. Cala sul suo
+> obiettivo, e i PG diventano bersaglio quando ci stanno in mezzo o quando lo
+> chiamano («Chi sceglie», qui sopra). Tutto quello che usa è nella sua scheda
+> (Appendice A.1-bis): niente numeri nuovi.
+
+**Perché va sui PG, e non solo sul re.** Tre motivi, e nessuno è il nome:
+
+- **La Corona.** Il drago ha già mangiato un re in questa valle. Un nano con
+  una corona in testa, per lui, è un re: Thorik è un bersaglio come Re Thorek.
+- **Il barile.** Dai gridi della notte, attraverso il corno, sa che i nani
+  volanti hanno bruciato la tenda del generale (B21). Se l'assalto fallisce,
+  il tesoro che il patto gli promette non arriva mai.
+- **La strada.** Chi sta fra lui e il suo obiettivo, lo sta fermando.
+
+**Il round 1.** Il soffio d'apertura va sul gruppo più fitto **attorno al suo
+obiettivo**, cioè al re o alla porta. I PG lontani da lì non li cerca finché
+non lo chiamano.
+
+**Prima di partire, al corno.** Dopo il barile sa che i nani volano: lancia
+*vedere invisibilità* prima di lasciare le colline. Col Vecchio dura 70
+minuti (incantatore di 7°), quindi copre il volo di 70 round e tutto il
+duello. Le wyvern no: non vedono gli invisibili, li fiutano entro 9 m.
+
+<!-- tabella: larga -->
+
+| Dove sono i PG | Dove cala | Come combatte |
+|---|---|---|
+| **Nel cortile, col re** | il cortile, M7-B | come scritto qui sopra |
+| **Sulle mura**, dopo la Scena 10 | dietro la porta principale, sul cortile: è lì che apre la strada agli arieti, ed è lì che il re la difende | la prima passata la fa lungo il camminamento sud, se i PG ci stanno in fila: è largo un quadretto, e la linea di 30 m del soffio li prende tutti. Poi va alla porta. I PG scelgono: restare in alto, con la gittata e le gru (le corde partono dal camminamento), o scendere nel cortile (4,5 m di scala). Da lì vale M7-B |
+| **Fuori dalle mura** | la spianata davanti alla porta | come «Se il duello comincia fuori dalle mura», più sopra |
+| **In volo, visibili** | dove sono loro, se lo intercettano prima della fortezza; altrimenti la porta | **La quota è sua.** Vola a 45 m, loro a 18 (12 in armatura media o pesante): decide lui quando ingaggiare, e sta sempre più in alto. **Il soffio** in linea sui volanti allineati. ***Dissolvi magie* ad area**, raggio 6 m, gittata 51 m, prova d20+7: contro il *volare* della pozione (CD 16) riesce 6 volte su 10, contro l'invisibilità comprata (CD 14) 7 su 10, contro quella del re (incantatore di 12°, CD 23) 1 su 4. La forma selvatica di Hella è soprannaturale e non si dissolve; per le Ali d'Ombra dell'Anello di Artemis decide il DM, perché la scheda dell'Anello non lo dice. **Chi perde il volo** scende di 18 m a round per 1d6 round e atterra illeso se tocca terra in tempo; altrimenti cade per il resto, 1d6 ogni 3 m (SRD, *volare*). Sopra la piana scende in mezzo all'orda. ***Lentezza*** (Volontà CD 17, gittata 12 m) su chi lo insegue. ***Virare*** per tornare sulla stessa linea. Le **wyvern** su chi vola, come scritto. Non si ferma in aria: *Fluttuare* resta per la prima paura |
+| **In volo, invisibili** | come sopra | con *vedere invisibilità* già addosso li vede come visibili, e vale la riga sopra. Il nome gridato li trova comunque: *colpo accurato* ignora l'occultamento |
+| **Con il corno rubato** | dov'è il corno | come «Se suonano loro il corno rubato» (Scena 6): va prima su chi lo tiene |
+| **Non ci sono**: ancora nel campo, dispersi, colti fuori dall'alba | dietro la porta | fa il suo lavoro. Due colpi mettono a terra il re, stabile (il re non muore). La porta cede: su M7-B vale la riga «0 successi» della Scena 10, sei quadretti di terreno difficile e due nani a terra. Quando i PG arrivano il duello comincia dove sono, e il drago non è sorpreso |
+
+#### 🧠 Quando il tavolo fa una cosa che qui non è scritta — come ragiona il drago
+
+> **Perché c'è.** Il barile sulla tenda non era previsto da nessuna pagina, e il
+> modulo ha dovuto inseguirlo con un supplemento intero. Il prossimo colpo di
+> genio del tavolo arriverà all'alba, contro il drago. Qui non ci sono le
+> risposte: c'è **come pensa**, così il DM risponde in un minuto e sempre allo
+> stesso modo. Vale il §0-ter: assorbi, poi rilancia.
+
+**Le sue quattro domande, nell'ordine.** Davanti a una cosa nuova Skullcrusher
+non si chiede «che cos'è», ma:
+
+1. **Mi fa perdere davanti all'orda?** È la cosa che teme di più dopo il
+   guinzaglio. Quello che lo umilia in pubblico lo fa tornare su chi l'ha
+   fatto, subito, anche contro il suo interesse.
+2. **Mi toglie il tesoro?** Il patto paga solo se la fortezza cade. Quello
+   che ferma l'assalto (gli arieti, la porta, l'orda colpita) è un bersaglio
+   anche se a lui non fa niente.
+3. **Mi tira giù?** Tutto quello che lo porta a terra o lo inchioda (le corde,
+   la perdita di quota) per lui è la morte: sale. È arrogante, non stupido.
+4. **Mi tocca la Catena?** Chi la nomina o la sfiora diventa il suo bersaglio
+   (Scena 7).
+
+**Come legge una sorpresa.** INT 18, SAG 19, Sapienza Magica +29,
+*individuazione del magico* fra i trucchetti. La **prima** volta una trovata
+funziona per intero: è il premio del tavolo, e il DM non la attenua. Al suo
+turno dopo il drago sale fuori portata, guarda e capisce che cos'era. La
+**seconda** volta la stessa trovata non lo prende più alla sprovvista: la
+evita, o la punisce su chi l'ha fatta. È lo stesso principio di «Il nemico
+impara» del supplemento del barile, applicato a lui. Una trovata nuova, invece,
+vale di nuovo per intero.
+
+**Cosa non fa mai.** Non tratta davanti all'orda (Scena 7). Non si ferma in
+aria prima della prima paura. Non insegue nessuno lontano dalla fortezza
+finché l'assalto è aperto: il tesoro è lì.
+
+**Gli esempi, a partire dal barile**
+
+| La trovata | Come la legge | Che cosa fa |
+|---|---|---|
+| **Un barile, o un altro oggetto pesante, lasciato cadere sul drago** | domanda 3: lo vuole tirare giù | Finché vola non lo si prende: da 48 m l'oggetto cade in circa 3 secondi, e in quel tempo lui si sposta di una ventina di metri. Funziona solo quando è fermo: inchiodato dalle corde o fermo in aria alla prima paura. Allora vale l'oggetto in caduta del supplemento (15d6 da 48 m, senza TS), e le fiale della fenice gli bruciano addosso, perché è immune all'acido, non al fuoco. Dopo il primo, sale sopra chi tiene i barili e lo morde dall'alto |
+| **Un barile sull'orda o sugli arieti, all'alba** | domanda 2, e anche la 1: è il colpo che ferma l'assalto, davanti a tutti | chi l'ha sganciato entra in «Chi sceglie» (vedi la card del 15/11): il drago gli va addosso in quota, con il soffio in linea e il *dissolvi magie* della tabella qui sopra, sopra la piana |
+| **Un'illusione** (un drago finto, un re finto, un esercito sulle mura) | nessuna delle quattro, finché non la tocca | interagendoci tira Volontà (+20) per non crederci; la prima volta ci casca se fallisce, poi la riconosce. Il *suono fantasma* lo conosce anche lui |
+| **Attirarlo lontano dagli occhi dell'orda** (il corno rubato, una trappola fuori vista) | domanda 1 al contrario: lì nessuno lo guarda | ci viene, furioso (Scena 6). Lontano dall'orda è l'unico posto dove ascolterebbe un'offerta sulla Catena (Scena 7): se il tavolo ci arriva, la scena è del DM |
+| **Colpire il re, la porta o gli arieti invece di lui** | domande 2 e 1 | non cambia obiettivo: va dove il suo tesoro è in pericolo, e la scelta del tavolo diventa una corsa |
+| **Una cosa che non è in nessuna riga** | le quattro domande, nell'ordine | la prima risposta «sì» dice che cosa fa. Se sono tutti «no», la ignora e continua la passata |
+
 #### 🏟️ IL CORTILE — cosa c'è, e cosa ci si può fare che qui non è scritto
 
 > **Perché questa tabella esiste.** Il duello aveva la regia, le tattiche del
@@ -6170,9 +6262,11 @@ ___
 - **I PG invisibili non gli sfuggono da vicino.** La percezione cieca
   localizza tutto entro 18 m: sa in che quadretto è un PG invisibile, che
   però conserva l'occultamento totale, 50% di mancare (SRD, *percezione
-  cieca*). *Vedere invisibilità* dura 50 minuti: se lo lancia al
-  primo allarme, i PG invisibili sono visibili per tutto il duello. Di notte
-  sulle colline non l'ha lanciato, perché non si aspetta nessuno.
+  cieca*). *Vedere invisibilità* dura 10 minuti per livello: 50 con
+  l'Adulto (incantatore di 5°), 70 col Vecchio (7°). Dopo il barile lo lancia
+  al corno dell'alba, prima di partire, e i PG invisibili sono visibili per
+  tutto il duello. Di notte sulle colline non l'ha
+  lanciato, perché non si aspetta nessuno.
 - **Il soffio fa più male**: 14d4 (in media 35) invece di 12d4, e Riflessi
   CD 30. La runa di Zeth (*resistere all'energia* 20) ne toglie ancora più
   della metà.

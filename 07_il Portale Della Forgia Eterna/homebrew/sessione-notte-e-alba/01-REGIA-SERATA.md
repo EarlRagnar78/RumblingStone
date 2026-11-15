@@ -194,7 +194,8 @@ la tabella «L'orda» per il campo. Le quattro cose che possono far male a chi
   chi è entro 6 m dal punto più alto del tiro, a 45 m sopra la tenda;
 - **il *dissolvi magie* di Balvar**, al round 4, dove il giavellotto li ha
   mostrati o alla cieca sulla verticale, una volta su sei. Chi perde il volo
-  cade da 48 m, 15d6 (B13);
+  scende di 18 m a round per 1d6 round: da 48 m arriva illeso 4 volte su 6,
+  altrimenti cade da 12 m (4d6) o da 30 m (10d6) (B13, corretta il 15/11);
 - **il drago**, se il corno ha suonato e sono ancora lì al round 70.
 
 Ricorda ai giocatori i round che restano di *volare* e di *invisibilità*

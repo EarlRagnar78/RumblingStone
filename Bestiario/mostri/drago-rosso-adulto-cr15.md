@@ -1,4 +1,4 @@
-# Drago Rosso Adulto (leader invasione) [POINTER — statblocco nell'arco] [RIMANDO]
+# Drago Rosso Adulto (cavalcatura dei Githyanki di Vaereth) [POINTER — statblocco nell'arco] [RIMANDO]
 **Key stats**: → `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md` (i numeri stanno li'; duplicarli qui creerebbe una seconda copia che diverge alla prima errata — ADR-0021).
 
 **Faction**: dragon | **Role**: flier | **Environment**: aerial | **CR**: 15
@@ -7,7 +7,7 @@
 
 ## Summary
 
-Guida l'invasione su Dauth al Giorno 3.
+La cavalcatura dei Githyanki liberi di Vaereth nell'invasione di Dauth al Giorno 3: rosso adulto dell'SRD, non uno dei cinque draghi della Mano Rossa (scelta del DM, 15/11).
 
 Questa voce esiste perché `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri: senza, un PNG con statistiche scritte non è raggiungibile da nessuno strumento. Ogni modifica va fatta nel file d'arco.
 

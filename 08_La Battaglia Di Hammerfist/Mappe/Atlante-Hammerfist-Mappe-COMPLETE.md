@@ -1280,7 +1280,7 @@ Rappresenta absolute APEX campagna - every element converges single moment glory
 - **Thorik Heroic:** Aegis Fang (+2 Ritornante *Dragondoom*) + castigo *Dragondoom*, 3/giorno, +2d6 contro un drago Enorme (stato del ramo di gruppo, D14; il guerriero non ha *punire il male*)
 
 > **Esito — ramo condizionale, non un fatto compiuto (D10, piano
-> ARC-08 A1)**: quando Fauci scende **sotto i 50 PF** il **default**
+> ARC-08 A1)**: quando Fauci scende **sotto i 112 PF** `[CANONE — DM 2026-11-15]` il **default**
 > è che tenta la fuga (Tattiche già previste nello statblock,
 > `00_Schede_dei_Personaggi...md` §1) — rottura del grapple di Orion,
 > decollo disperato verso le montagne meridionali, gravemente ferito

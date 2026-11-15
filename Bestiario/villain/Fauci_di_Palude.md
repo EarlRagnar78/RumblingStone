@@ -6,7 +6,7 @@
 **CR**: 15 | **Race/Class**: Black Dragon Adult avanzato (Enorme)
 **Key stats**: → statblock completo in `08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` §1 (NON duplicare qui; le due copie, in ARC08-02 e ARC08-01, sono allineate, e la colonna GS 15 di `07_il Portale Della Forgia Eterna/CORREZIONE-Boss-Fauci.md` ha gli stessi numeri). Verifica 3.5: `08_La Battaglia Di Hammerfist/ERRATA-ARC08-35-Verification.md` §2.
 **Esiti possibili (D10)**:
-- *Default* — fugge gravemente ferito sotto i 50 pf; assente da Rethmar salvo ritorno narrativo (hook nemesi, ARC-10).
+- *Default* — fugge gravemente ferito sotto i 112 pf `[CANONE — DM 2026-11-15]`; assente da Rethmar salvo ritorno narrativo (hook nemesi, ARC-10).
 - *Alternativo* — ucciso dai PG → −1 drago nel pool di Rethmar (`campaign/state.md` §2.3).
 - Carry-over dall'antenato Skullcrusher: la tabella ARC-07 B4 (consegnata, DM 2026-07-03) modifica i numeri di partenza secondo l'esito del duello P5 — mappa in `08_.../ARC08-10-ESITI-E-CONTINGENZE.md` §4.1; valori in `07_.../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`.
 **Notes**: adattamento RHoD (drago d'avanguardia upscalato). Il "Soffio a Cono" è house-rule (ERRATA §2). Rami e contabilità in `ARC08-10-ESITI-E-CONTINGENZE.md` §4. Due potenziamenti sopra l'SRD, segnati come tali nella scheda e nella sua copia in `ARC08-01`: Presenza terrificante a 90 m (SRD: 9 m per categoria d'età, 63 m all'adulto maturo) e *corrompere acqua* a volontà (SRD: 1 al giorno). Talenti di volo: Attacco in Volo, Fluttuare (SRD *Hover*), Ghermire (SRD *Snatch*).

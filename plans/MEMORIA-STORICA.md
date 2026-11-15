@@ -1605,7 +1605,83 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0134` → `plans/adr/ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md` · `campaign/REGOLE-CUSTOM.md`
 - **Solo qui:** sulla card il DM aveva tre scelte (armatura, anello e pozione; le stesse più il mantello della resistenza +1 del «Trapsmith», TS +5/+11/+4, 4.505 mo; nessun corredo) e ha scelto la prima. La scheda non nomina l'armatura: cuoio borchiato +1 (1.175 mo) più anello di protezione +1 (2.000 mo) è una lettura della CA 19 con Des 18, non l'unica possibile. Il veleno del nerbo (CD 14, 1d2 Des) non ha un nome nella scheda e non è contato nel valore. Come per il Fantino Cavaliere, il corredo sta anche nella riga Statistiche perché il booklet non stampa le `voci:` delle schede con Statistiche scritta a mano. Per la Drow Chierica le scelte erano quattro (questa; la stessa più il talismano della saggezza +2 con Sag 20, 8.709 mo; il corredo del «Drow Priest», che è un Chierico 5, più un anello di protezione +1, 5.133 mo; nessun corredo) e il DM ha scelto la prima. La scheda dà solo CA 22, pf 63 e Sag 18: la Destrezza 12 che fa tornare la CA è una lettura, non un dato. Il tetto è 12.000 mo al 9° livello di classe, 21.000 se si conta il modificatore di livello +2 dei drow. Per il Collezionista le scelte erano quattro (questa; mantello del Carisma +2 al posto di quello della resistenza, Car 22 e CD +1; solo pozioni e bacchetta, 3.060 mo; niente) e il DM ha scelto la prima. Dal «Lucky Mage» non entrano l'amuleto dell'armatura naturale, perché al collo c'è già l'Amuleto dell'Eclissi Planare, e la fascia del Carisma, che nel 3.5 è un mantello. Le pozioni di volare e di invisibilità e la bacchetta di scudo doppiano incantesimi che conosce già. Il suo livello effettivo è 25 (18 DV più il modificatore +7 del rakshasa): la Tabella 4-23 si ferma al 20°. Il benchmark della scheda lo dava a CA −8 dalla riga del GS 18; ora è −7.
 
-### MS-0141 · 2026-11-15 · Regole: le caratteristiche che i modelli dell'SRD cambiano
+### MS-0141 · 2026-11-15 · Le prove sul portatile con la RTX 4050 hanno uno script ciascuna
+
+- **Data:** 2026-11-15
+- **PR:** —
+- **ADR:** ADR-0089 · ADR-0125
+- **Temi:** prove-4050 gpu ollama llm-locale coerenza immagini gemini
+- **Origine:** riga del 2026-11-15 «Prove sul portatile con la RTX 4050» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha chiesto se i thread che aspettano la prova sul suo ASUS (RTX 4050 da 6 GB, 16 GB di RAM, Bazzite) avessero istruzioni e script pronti. L'inventario del 15/11: pronta solo la prosa col 12B (`scripts/llm-locale/`); trascrizione pronta ma solo nella PR #424 in bozza; lettore della coerenza senza file delle domande; immagini in posa con la pipeline solo nei file del progetto e un profilo GPU da 10 GB; nessuno strumento per importare le chat di Gemini esportate. Ora ogni prova ha uno script in `scripts/prove-4050/`, la guida è `docs/how-to/GUIDA-PROVE-PORTATILE-4050.md` e i risultati tornano come archivio caricato nel thread.
+- **Trovato nel repo:** `docs/how-to/GUIDA-PROVE-PORTATILE-4050.md` · `scripts/prove-4050/` · `scripts/importa_gemini.py` · `plans/esperimenti/immagini-posa-4050-2026-11-15/LEGGIMI.md`
+- **Solo qui:** le domande del lettore sono state generate nel container con torch su CPU e `intfloat/multilingual-e5-small` (recupero 3,5 minuti sul repo). Il lettore va lanciato con `LLM_CTX=4096`, perché col contesto di serie di 32k token il 7B non starebbe tutto nei 6 GB: è una stima dal peso del modello, non una misura. Le tre manopole delle immagini (`RS_COMFY_ARGS`, `RS_LIBERA`, `RS_VLM_DEVICE`) non sono mai girate su una GPU. Il formato di Takeout per «App Gemini» non è documentato: il lettore è scritto sui campi noti di «La mia attività» e provato su campioni sintetici. Le schede con decodifica vincolata (tecnica 3 di Document AI) non hanno ancora una prova da lanciare.
+
+### MS-0142 · 2026-11-15 · ARC-07: la tattica di Skullcrusher diventa dinamica, e la misura del duello
+
+- **Data:** 2026-11-15
+- **PR:** —
+- **ADR:** ADR-0118
+- **Temi:** arc07 skullcrusher tattiche drago simulazione barile decisione-dm
+- **Origine:** riga del 2026-11-15 «ARC-07 DEF-4 Scena 11, la tattica di Skullcrusher» in `plans/CHANGELOG.md`
+- **Testo:** Jfs ha chiesto perché il drago attacchi solo nel cortile, che cosa faccia coi PG in volo o invisibili e perché li attacchi se ne sa solo il nome. Audit: «Chi sceglie» era già dinamico sul chi ma non sul dove; r.2403 («cala dove sta il re») non reggeva, perché dalla piana l'orda non vede il cortile. Otto card, tutte scelte sulla consigliata: porta principale e re; tabella «Dove sono i PG all'alba»; *vedere invisibilità* al corno; B13 secondo l'SRD; chi colpisce l'orda dall'alto subito dopo la Catena; alla prima paura esita; inchiodato attacca chi tiene la corda (com'era); *dissolvi* solo su chi in aria lo minaccia.
+- **Trovato nel repo:** `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` Scena 11 e Appendice A.1 · `07_il Portale Della Forgia Eterna/ARC07-BARILE-SULLA-TENDA.md` B13 · `plans/esperimenti/duello-skullcrusher-2026-11-15/`
+- **Solo qui:** la simulazione (20.000 duelli per tattica) stima i bonus d'attacco di Thorik (+22) e Tordek (+23 in ira), che la carta del 05/11 non porta, e lascia fuori Durik, gli evocati e le pozioni: le morti sono un tetto. Con la CA 40 i due combattenti in mischia contano poco e la Catena (CA 44) si spezza nel 4-6% dei duelli: il DM non ha cambiato questi numeri. Il motivo per cui il drago va sui PG non è il nome, che è solo la componente di *colpo accurato*: è la Corona di Thorik (per lui un re), il barile della notte e il fatto che stanno fra lui e la porta. Il 50 minuti di *vedere invisibilità* in A.1 era il numero dell'Adulto. Sullo stesso metodo il thread «Rivedere le tattiche di tutti i draghi».
+
+### MS-0143 · 2026-11-15 · Le tattiche di Fauci di Palude e di Tyrgarun, simulate e scelte dal DM
+
+- **Data:** 2026-11-15
+- **PR:** #450
+- **ADR:** —
+- **Temi:** draghi tattiche fauci tyrgarun arbitrax regiarix vaereth simulazione decisione-dm arc08 arc09
+- **Origine:** riga del 2026-11-15 «Tattiche dei draghi, richiesta del DM del 15/11» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha chiesto tattiche da creature più intelligenti del gioco per tutti i draghi tranne Skullcrusher: carattere, obiettivi, cosa sanno dei PG, adattamento all'ambiente e allo stato dei PG, simulate. Inventario: Fauci, Arbitrax, Ozyrrandion, Regiarix, il drago rosso dei Githyanki di Vaereth, Tyrgarun, l'Avatar di Tiamat. Sulle card del 15/11 il DM ha scelto per Fauci la tattica nuova con la fuga a 112 pf, per Tyrgarun la tattica da stregone nelle Fasi 1-3 con la condizione scritta per la Fase 4, e per Arbitrax il bruto col difetto d'orgoglio, con la percezione cieca al posto della «vista cieca». Le schede di Regiarix e del drago rosso di Vaereth sono rifatte sull'SRD, come ha scelto il DM.
+- **Trovato nel repo:** `plans/esperimenti/tattiche-draghi-2026-11-15/` (proposta, simulatore, esiti) · `08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` §1 · `Bestiario/villain/Tyrgarun/tyrgarun-blue-very-old-cr19.md`
+- **Solo qui:** la misura ha detto che un drago più astuto uccide meno PG, non di più: la leva dei morti è la soglia di fuga. Il Mythal toglie a Tyrgarun il volo ma non il soffio da 20d8, quindi il «GS 16-17» a terra non reggeva. Con resistere all'energia 30 dei PG il canone di Arbitrax non uccideva nessuno in 20.000 prove. Regiarix giovane adulto (GS 9, l'età delle Armate, che però gli davano GS 10) abbassa Rhest da EL 13 a circa 11-12; il titolo del file diceva CR 13. Il drago di Vaereth non ha nome nelle fonti. Gli incantesimi conosciuti di tutti e due e i talenti sono scelte di questa revisione o del DM, non fonte. Corrompere acqua sulle cisterne di Hammerfist e l'oscurità sulle balliste sono nella proposta, non nella scheda. Non si sa se Artemis abbia un'invocazione per vedere l'invisibile.
+
+### MS-0144 · 2026-11-15 · Zog'tar sulla breccia dell'alba separa e finisce, e sa che i nani volano
+
+- **Data:** 2026-11-15
+- **PR:** —
+- **ADR:** —
+- **Temi:** tattiche villain zogtar arc07 simulazione barile balvar
+- **Origine:** riga del 2026-11-15 «Tattiche di villain e PNG, primo gruppo (ARC-07)» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha chiesto di rivedere le tattiche di villain e PNG con lo schema dei draghi (carattere, cosa sanno dei PG, ambiente, stato dei PG, simulazione). Primo gruppo: Zog'tar sulla breccia (ARC07-DEF-4 Scena 10). Sulle card del 15/11 il DM ha scelto «separa e finisce» (Occhio su Tordek, Colpo Terrificante che butta Thorik nel cortile, attacco completo −5/+10 su chi resta) e Balvar e il sacerdote al campo all'alba, come DEF-4. Corrette nel BARILE §8 le righe che li mettevano sulla collina e sulla breccia, e le cure del sacerdote, che la sua scheda non ha. In ARC08-02 §1 la tattica di Gorthak diceva ancora «tre attacchi» e «Furia fino alla morte»: allineata al canone del 04/11 di ARC08-DEF-2 (due randelli, un round di Furia, poi la fuga). Grimjaw e Gorthak in ARC08-DEF-2 hanno già lo schema (vuole, sa, teme, ambiente) e non sono stati riscritti.
+- **Trovato nel repo:** `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` (Scena 10) · `07_il Portale Della Forgia Eterna/ARC07-BARILE-SULLA-TENDA.md` (§8) · `plans/esperimenti/tattiche-2026-11-15/LEGGIMI-ZOGTAR.md`
+- **Solo qui:** 20.000 prove per riga, seme 1372. Stretto sul camminamento (CA 20) Zog'tar muore il 99-100% delle volte in circa 3 round, con qualunque tattica. Un PG muore nell'11% delle prove col solo Colpo su chi ha davanti, nel 28% con «separa e finisce», nel 32% con l'attacco pieno; fuori dal camminamento 33%, 69% e 73%. I bonus d'attacco di Thorik e Tordek sono stimati (con +4 cambia di 1-6 punti). Fuori dal modello: le guardie, le balestre dell'orda, Re Thorek, i PG che scendono alle spalle, la vulnerabilità alla luce divina (non ha un numero). Il DM ha scelto l'opzione più letale sapendo che pesa sul duello col drago che segue. 264 pf all'alba = 249 (mediana del barile) + 15 di riposo SRD.
+
+### MS-0145 · 2026-11-15 · Ozyrrandion tentatore, l'Avatar di Tiamat sul Mythal, l'oscurità di Fauci su di sé
+
+- **Data:** 2026-11-15
+- **PR:** —
+- **ADR:** —
+- **Temi:** draghi tattiche ozyrrandion tiamat fauci mythal decisione-dm arc08 arc09
+- **Origine:** riga del 2026-11-15 «Tattiche dei draghi, seconde card del DM del 15/11» in `plans/CHANGELOG.md`
+- **Testo:** dopo la #450 restavano tre proposte senza card; il DM ha scelto la consigliata su tutte e tre. Ozyrrandion parte informato (Sethrax al Torneo, Zalkatar e l'Anello di Artemis) e a metà scontro, sotto 150 pf o con Zalkatar in difficoltà, offre ai PG di tradirlo: offerta vera a metà. L'Avatar di Tiamat attacca chi tiene il Mythal, la sua sola debolezza. Fauci non corrompe le cisterne, che toccherebbero la trama dell'assedio. Il DM aveva scelto l'oscurità sulle baliste; alla verifica era sbagliata (l'occultamento va a chi sta nell'area, quindi ai serventi, e le baliste a +10 colpiscono la CA 37 solo col 20 naturale), e su una seconda card il DM ha scelto l'oscurità su un sasso che Fauci tiene durante l'assedio, lasciato cadere prima della picchiata su Thorik.
+- **Trovato nel repo:** `Bestiario/villain/ozyrrandion-drago-verde-cr14.md` (Tattiche) · `Bestiario/villain/Avatar_Tiamat/avatar-tiamat-cr17.md` (Tattiche, round 2) · `08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` §1 (Tattiche)
+- **Solo qui:** nessuna simulazione: per Ozyrrandion senza Zalkatar nel modello il numero direbbe poco, per l'Avatar cambia solo il bersaglio. Thorik non si può ammaliare per la Corona (Volontà Adamantina e vuoto mentale permanente, `campaign/state.md`). L'oscurità dà il 20% di mancare e nell'SRD 3.5 anche contro la scurovisione; in PF1e la scurovisione la attraversa, e vale la 3.5. *Oscurità profonda* non è nella scheda e darebbe lo stesso 20%. La soglia dei 150 pf per l'offerta di Ozyrrandion è una scelta di questa revisione, non del DM. Resta aperto: Artemis ha un'invocazione per vedere l'invisibile?
+
+### MS-0146 · 2026-11-15 · Xal'thor con l'esplosione mentale a volontà, Kragar con una tattica che sbilancia anche il nano
+
+- **Data:** 2026-11-15
+- **PR:** —
+- **ADR:** —
+- **Temi:** tattiche villain xalthor kragar torneo dauth arc09 simulazione decisione-dm
+- **Origine:** riga del 2026-11-15 «Tattiche di villain e PNG, ARC-09 lotto 1 (Torneo di Dauth)» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha chiesto di misurare le tattiche del dossier di ARC-09 e di adottare quelle che migliorano. Sulle card del 15/11 ha scelto l'esplosione mentale di Xal'thor a volontà, come l'illithid dell'SRD (ADR-0118), al posto della «ricarica 1d4 round» della scheda, e di scrivere subito la tattica di Kragar, che non ne aveva. La tattica proposta per Kragar diceva di non sbilanciare Tordek per la stabilità del nano e di disarmarlo, e di fare un passo indietro per tenere la portata: la misura l'ha smentita sulle due cose, e il testo adottato sbilancia anche il nano.
+- **Trovato nel repo:** `Bestiario/villain/Xal_thor/Xal_thor/Xal_thor.md` (Mind Blast) · `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-BATTLE-STATS-e-VILLAIN-ICONICI.md` (§1, Tattiche) · `plans/esperimenti/tattiche-2026-11-15/duelli_arc09.py`
+- **Solo qui:** 20.000 prove per riga, seme 1372, Tordek da solo con i numeri della carta del 05/11 (al Torneo sarà più alto: il confronto fra tattiche è relativo). Kragar si arrende sempre in circa 2 round; Tordek finisce con 79 pf se Kragar lo sbilancia, 81 con soli attacchi completi, 86 se prova a disarmarlo. Il passo indietro non serve: la catena chiodata minaccia anche a 1,5 m e Tordek si avvicina con un passo di 1,5 m. Xal'thor contro Tordek: Tordek muore nel 15% dei duelli con la ricarica, nel 24% a volontà. Se Xal'thor segue il suo obiettivo (Tordek vivo, convinto ad aprire il portale) e usa la suggestione invece di estrarre il cervello, Tordek non muore mai ed è convinto nel 35% dei duelli: il DM l'ha scelto sulla card del 15/11. Danza delle Catene e Pioggia di Ferri non sono SRD: segnalate, non toccate.
+
+### MS-0147 · 2026-11-15 · Zalkatar che non scende mai in mischia, Xilthra con una scheda legale al posto dell'Ombra Drow
+
+- **Data:** 2026-11-15
+- **PR:** —
+- **ADR:** —
+- **Temi:** tattiche villain zalkatar xilthra torre sabotaggio arc09 simulazione decisione-dm scheda-legale
+- **Origine:** riga del 2026-11-15 «Tattiche di villain e PNG, ARC-09 lotto 2» in `plans/CHANGELOG.md`
+- **Testo:** secondo lotto del dossier delle tattiche di ARC-09. Sulle card del 15/11 il DM ha scelto che Zalkatar resti in alto e non scenda mai in mischia, e che Xilthra Vel'ssin abbia prima una scheda legale e poi la tattica (Sag 20 con 69 pf; il dominio dell'Inganno al posto dell'«Ombra Drow»). Le due versioni d'arco di Xilthra avevano tre errori: l'Ombra Drow non è una classe dell'SRD né di PF1e, *dictum* è un incantesimo legale di 7° che una chierica di Lolth non lancia, e 13 livelli di classe su un drow fanno GS 14, non 13.
+- **Trovato nel repo:** `Bestiario/villain/xilthra-velssin-cr13.md` · `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` (Fasi, Tattiche) · `…-P3-Sabotaggio-Campi-Drow-STATBLOCCHI.md` §4 · `…-Upscale-CR12.md` · `plans/esperimenti/tattiche-2026-11-15/profili_villain.py` (scontri `zalkatar-sanctum` e `xilthra-corte`)
+- **Solo qui:** 20.000 prove per riga, seme 1372, PG della carta del 05/11. Zalkatar senza Ozyrrandion: con le fasi di prima muore nell'81% dei casi e nessun PG muore; restando in alto muore nel 65% e almeno un PG muore nel 40% dei combattimenti, che durano 6,8 round invece di 4,4. Xilthra senza scorta e senza arcieri: l'abbozzo (95 pf, CA 25) muore sempre in 1,2 round; la scheda legale con la tattica fugge col Patto nel 47% dei casi, e mettere *influenza sacrilega* prima del *comando superiore* è misurato meglio dell'ordine contrario (PG all'81% dei pf invece dell'88%). Da sola Xilthra non uccide nessun PG: la scorta, che il modello non contiene, è la minaccia vera. Nella scheda la pietra di Ioun resta «non verificabile» perché il lettore della CA non conosce il bonus cognitivo; l'*amuleto di armatura naturale* della proposta è stato tolto perché il collo lo occupa l'*amuleto della saggezza*.
+### MS-0148 · 2026-11-15 · Regole: le caratteristiche che i modelli dell'SRD cambiano
 
 - **Data:** 2026-11-15
 - **PR:** —
@@ -1616,7 +1692,7 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** gli aumenti si giudicano solo sopra la base che la fonte dichiara, con la stessa taglia e senza livelli di classe, e solo come minimo. Il segugio infernale «mezzo-immondo» ha i numeri del modello draconico (For 15, Cos 15, Car 8, sottotipo dragonblood): visto a mano, il controllo non lo dice perché la fonte è un file PCGen e non dichiara la base. Il DM ha scelto sulla card «Rifarlo mezzo-immondo dall'SRD»: si fa in una PR sua.
 
-### MS-0142 · 2026-11-15 · Regole: la velocità delle creature coi dadi vita razziali
+### MS-0149 · 2026-11-15 · Regole: la velocità delle creature coi dadi vita razziali
 
 - **Data:** 2026-11-15
 - **PR:** —

@@ -13126,7 +13126,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "copiate",
-    "senza_note": 3184,
+    "senza_note": 3210,
     "sestine_citate": [],
     "taglia": -1,
     "talenti": {},
@@ -21505,7 +21505,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 5681,
+    "senza_note": 5879,
     "sestine_citate": [],
     "taglia": -2,
     "talenti": {
@@ -22629,7 +22629,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "copiate",
-    "senza_note": 6343,
+    "senza_note": 7293,
     "sestine_citate": [],
     "taglia": -2,
     "talenti": {
@@ -24402,7 +24402,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "copiate",
-    "senza_note": 5061,
+    "senza_note": 6037,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/Arbitrax Drago Rosso.htm",
@@ -26614,7 +26614,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 7701,
+    "senza_note": 8570,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/Ozzyrandion green 8 liv.htm",
@@ -27810,6 +27810,234 @@
      6,
      15,
      3
+    ]
+   }
+  },
+  "Bestiario/villain/xilthra-velssin-cr13.md": {
+   "controlla": [],
+   "genera": [
+    {
+     "Car": 15,
+     "Cos": 12,
+     "Des": 14,
+     "For": 12,
+     "Int": 9,
+     "Sag": 18
+    },
+    [
+     "array elite del Manuale del DM (PNG con classe)",
+     "variazione a seme fisso: Car +1, Int −1",
+     "un avanzamento ogni 4 livelli, contati sul GS 13 — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
+     "modificatori razziali SRD: drow Des +2 Cos -2 Int +2 Car +2",
+     "Des 24 **derivata dalla CA di contatto** — il vincolo batte l'array",
+     "Des 14 **ricavata dall'iniziativa** — il vincolo batte l'array",
+     "Cos 12 **ricavata da pf 69 su 12 DV** — il vincolo batte l'array",
+     "For 12 **ricavata da BAB e lotta** — il vincolo batte l'array"
+    ]
+   ],
+   "genera_senza_fonte": [
+    {
+     "Car": 15,
+     "Cos": 12,
+     "Des": 14,
+     "For": 12,
+     "Int": 9,
+     "Sag": 18
+    },
+    [
+     "array elite del Manuale del DM (PNG con classe)",
+     "variazione a seme fisso: Car +1, Int −1",
+     "un avanzamento ogni 4 livelli, contati sul GS 13 — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
+     "modificatori razziali SRD: drow Des +2 Cos -2 Int +2 Car +2",
+     "Des 24 **derivata dalla CA di contatto** — il vincolo batte l'array",
+     "Des 14 **ricavata dall'iniziativa** — il vincolo batte l'array",
+     "Cos 12 **ricavata da pf 69 su 12 DV** — il vincolo batte l'array",
+     "For 12 **ricavata da BAB e lotta** — il vincolo batte l'array"
+    ]
+   ],
+   "giudica": {
+    "come_la_fonte": [],
+    "decisione": null,
+    "esito": {
+     "BAB": [
+      9,
+      9,
+      0
+     ],
+     "Rifl": [
+      6,
+      6,
+      0
+     ],
+     "Temp": [
+      9,
+      9,
+      0
+     ],
+     "Vol": [
+      15,
+      15,
+      0
+     ],
+     "attacco": [
+      11,
+      11,
+      0
+     ],
+     "iniziativa": [
+      6,
+      6,
+      0
+     ],
+     "lotta": [
+      10,
+      10,
+      0
+     ],
+     "pf": [
+      69,
+      "24-108",
+      0
+     ],
+     "pf_media": 66
+    },
+    "file": "Bestiario/villain/xilthra-velssin-cr13.md",
+    "provenienza": "a mano",
+    "scarti": {},
+    "template": null,
+    "template_dichiarati": [],
+    "verificabile": true
+   },
+   "letture": {
+    "composizione": [
+     [
+      {
+       "bab": 0.75,
+       "buoni": [
+        "temp",
+        "vol"
+       ],
+       "dado": 8,
+       "n": 12,
+       "nome": "Chieric"
+      }
+     ],
+     true
+    ],
+    "dadi_di_pf": [
+     [
+      12,
+      8
+     ]
+    ],
+    "dadi_vita": [
+     [
+      [
+       12,
+       8
+      ]
+     ],
+     12,
+     "pf-dado"
+    ],
+    "dalla_fonte": null,
+    "dalla_scheda": null,
+    "dv_totali": 12,
+    "iniziativa_ambigua": null,
+    "numeri_della_fonte": {},
+    "pf_dado_sospetto": null,
+    "pf_dado_sospetto_col_gs": null,
+    "provenienza": "a mano",
+    "senza_note": 6675,
+    "sestine_citate": [],
+    "taglia": 0,
+    "talenti": {
+     "Vol": 2,
+     "init": 4
+    },
+    "template_dichiarati": [],
+    "tetti_dai_ts": {
+     "Cos": [
+      1,
+      "ricavata da Temp +9 (base +8)"
+     ],
+     "Des": [
+      2,
+      "ricavata da Rifl +6 (base +4)"
+     ],
+     "Sag": [
+      5,
+      "ricavata da Vol +15 (base +10)"
+     ]
+    },
+    "vincoli": {
+     "cos_da_pf": [
+      12,
+      "ricavata da pf 69 su 12 DV"
+     ],
+     "des_da_iniziativa": [
+      14,
+      "ricavata dall'iniziativa"
+     ],
+     "des_vincolata": [
+      24,
+      "derivata dalla CA di contatto"
+     ],
+     "for_da_lotta": [
+      12,
+      "ricavata da BAB e lotta"
+     ]
+    }
+   },
+   "pf_dado_corretto": null,
+   "pf_dado_corretto_forzato": {
+    "bonus": "da Cos 12",
+    "dadi": "dalle classi del `tipo` coi dadi SRD",
+    "fascia": [
+     24,
+     108
+    ],
+    "file": "Bestiario/villain/xilthra-velssin-cr13.md",
+    "legale": true,
+    "media": 66,
+    "motivo": null,
+    "nuovo": "12d8+12",
+    "pf": 69,
+    "vecchio": "12d8+12"
+   },
+   "scheda": {
+    "attributi": {
+     "Car": 10,
+     "Cos": 12,
+     "Des": 15,
+     "For": 12,
+     "Int": 12,
+     "Sag": 20
+    },
+    "bab": 9,
+    "composizione_nota": true,
+    "gruppi": [
+     {
+      "bab": 0.75,
+      "buoni": [
+       "temp",
+       "vol"
+      ],
+      "dado": 8,
+      "n": 12,
+      "nome": "Chieric"
+     }
+    ],
+    "gs": 13.0,
+    "lotta": 10,
+    "mischia": "mazza pesante +1 +11/+6 (1d8+2)",
+    "pf": 69,
+    "provenienza": "a mano",
+    "tipo": "Umanoide Medio (elfo), drow, Chierica 12 di Lolth, CM",
+    "ts": [
+     9,
+     6,
+     15
     ]
    }
   }
@@ -43888,27 +44116,6 @@
     "DV o livelli di classe"
    ]
   },
-  "Bestiario/villain/xilthra-velssin-cr13.md": {
-   "blocco": null,
-   "conti": [],
-   "lettura": {
-    "armatura": null,
-    "base_ts": {},
-    "classi": [],
-    "dado": null,
-    "dv": null,
-    "elite": true,
-    "gs": 13,
-    "manca": [],
-    "nome": "xilthra-velssin-cr13",
-    "scudo": 0,
-    "taglia": "medium",
-    "tipo": null
-   },
-   "manca": [
-    "DV o livelli di classe"
-   ]
-  },
   "Bestiario/villain/zog-tar-deatheye-cr15.md": {
    "blocco": "```statblocco\ngs: 15\nca: 18\npf: 111\nts: Temp +12, Rifl +4, Vol +4\nfonte: derivato-SRD — caratteristiche: matrice standard (13, 12, 11, 10, 9, 8) + 3 da DV/4 → For 15, Cos 13, Des 11 · pf: 14d12 + 1d10 media 96.5 + Cos +1×15 = 111 · TS: somma dei TS base di ogni classe (SRD: multiclasse si sommano) → Temp +12, Rifl +4, Vol +4 · CA: 10 + taglia +0 + Des +0 + armatura +8 = 18 · collaudo GS 15 [PF1e Tab. 1–1]: atteso CA 30, pf 220 → -12 CA, -109 pf ⚠ FUORI BERSAGLIO per GS 15: la tabella attende CA 30 e pf 220 (-12 / -109)\n```",
    "conti": [
@@ -43964,9 +44171,9 @@
    "decisioni_aperte": 0,
    "del_generatore": 0,
    "spiegati_da_template": 0,
-   "statblocchi": 120,
-   "tornano": 116,
-   "verificabili": 119
+   "statblocchi": 121,
+   "tornano": 117,
+   "verificabili": 120
   },
   "genera_attributi_controlla": [],
   "genera_attributi_proponi": [

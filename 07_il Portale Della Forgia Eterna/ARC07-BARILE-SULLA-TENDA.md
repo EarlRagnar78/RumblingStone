@@ -630,8 +630,16 @@ magie* ad area ha 6 m di raggio. Se il giavellotto ha mostrato i PG, Balvar lo
 lancia lì al round 4. Se non li ha mostrati, può lanciarlo alla cieca sopra la
 tenda, e prende chi è rimasto sulla verticale una volta su sei. Ogni PG nell'area
 tira la prova del dissolvi contro ogni effetto: d20 + 10 contro **CD 16** per il
-*volare* della pozione (11 + 5) e **CD 14** per l'invisibilità (11 + 3). Chi
-perde il volo cade: 48 m, **15d6** (SRD, 1d6 ogni 3 m). Lo fa solo se è in
+*volare* della pozione (11 + 5) e **CD 14** per l'invisibilità (11 + 3).
+
+**Chi perde il volo** non cade di colpo: scende di **18 m a round per 1d6 round**, e
+se tocca terra in quel tempo atterra illeso; altrimenti cade per il tratto che
+resta, 1d6 ogni 3 m (SRD, *volare*: dissolto, si comporta come quando scade).
+Da 48 m: con 3 round o più arriva a terra illeso (4 volte su 6); con 2 round
+cade da 12 m, 4d6; con 1 round da 30 m, 10d6 `[CANONE — DM 2026-11-15: la
+caduta secca di 15d6 del 29/10 non era SRD]`.
+
+Balvar lancia il *dissolvi* solo se è in
 modalità «minacciato, o attaccato» della Scena 7, ed è il caso: il barile è un
 attacco.
 
@@ -680,7 +688,7 @@ tenda in piedi che brucia.
 |---|---|---|---|
 | **Zog'tar** (Iniz +9) | Ira Superiore, azione gratuita, e il grido *«A ME, CANI! IL CORNO!»*. Se la tenda è crollata è sotto il telo in fiamme: lo squarcia con l'ascia ed esce in un round (Riflessi CD 15, ha +9). Se è in piedi esce dal lato più corto, tagliando il telo. Prende fuoco quasi sempre: si getta a terra fuori dall'olio (+4) | Fuori, guarda in alto e non vede niente. Capisce: *«Dall'alto. Hanno ali.»* Esce dalla luce del fuoco e non ci rientra: non sta mai fermo dove un secondo barile lo troverebbe. Al round 3 scaglia il giavellotto con la *luce* del sacerdote, se il sacerdote è vivo. Se Grask è morto va al corpo e strappa la custodia: il glifo gli scoppia addosso, 5d8 sonori, Riflessi CD 18, e lui suona lo stesso (B8) | Raduna le guardie nel buio, lontano dalla tenda, e manda le lance a cercare per il campo chi ha portato il fuoco. Se un PG scende sotto i 45 m e si fa vedere, i giavellotti; se scende sotto i 3 m, la carica |
 | **Le quattro guardie** (Iniz +1) | Chi brucia si getta a terra fuori dall'olio (+4). Chi non brucia trascina fuori il sacerdote, se è vivo, oppure spegne Zog'tar con il mantello | Spengono chi brucia con i mantelli (+4, un'azione standard ciascuno), poi si mettono attorno al generale, spadoni in pugno, nel buio | Come Zog'tar. Non tirano verso l'alto finché nessuno indica un bersaglio |
-| **Il sacerdote** (se è vivo) | Si sveglia nel fuoco, indifeso fino al suo turno. Striscia fuori, quasi sempre in fiamme | Round 2 si spegne. Round 3 *vedere invisibilità* e *luce* sul giavellotto di Zog'tar | Cura chi brucia. Se vede un PG, lo indica a Balvar; *comando* arriva solo a 12 m |
+| **Il sacerdote** (se è vivo) | Si sveglia nel fuoco, indifeso fino al suo turno. Striscia fuori, quasi sempre in fiamme | Round 2 si spegne. Round 3 *vedere invisibilità* e *luce* sul giavellotto di Zog'tar | Spegne chi brucia (non ha cure preparate, DEF-4 A.2). Se vede un PG, lo indica a Balvar; *comando* arriva solo a 12 m |
 | **Balvar** (se è vivo) | Esce dal telo est, quello a sinistra, e si spegne. Guarda la botte squarciata e i rostri: lavoro dei fabbri di Hammerfist, lo riconosce al primo sguardo | Va da Zog'tar: *«Nani. Dall'alto.»* E la parola che conta: *«Chiamate il drago.»* Se Grask è morto e la custodia è intera, dà a Zog'tar la parola che la apre senza glifo | Il barile è un attacco: Balvar è «minacciato, o attaccato» (Scena 7). Al round 4 *dissolvi magie* ad area dove il giavellotto ha mostrato i PG, o alla cieca sopra la tenda (B13) |
 | **Grask**, il suonatore del corno | Se è vivo, sveglio o no, il boato lo sveglia: suona il corno entro **1d4 round**, come al primo grido di Zog'tar (Scena 6) | Suona finché qualcuno non gli dice di smettere. Sta dove sta: è lui il bersaglio più facile del campo | |
 | **Le due guardie del turno dopo** | Si svegliano nella loro tenda, a X4–Y5 | Arrivano al round 2, armate, da Zog'tar | Con le altre |
@@ -708,8 +716,8 @@ Il drago arriva 70 round dopo il primo suono, chiunque abbia suonato.
 | Chi | Che cosa fa fino all'alba | All'alba |
 |---|---|---|
 | **Zog'tar** | brucia di rabbia, ma non perde la testa: dorme al buio, fuori dalla luce, e ogni ora in un posto diverso. Fa spegnere i fuochi dello spiazzo e mette due guardie a guardare il cielo. Manda le lance a cercare per il campo, perché pensa a un traditore prima che a dei nani in volo | guida l'assalto (§10), con il segno delle ustioni addosso. Ai suoi dice che il fuoco era un segno: chi l'ha attraversato vince |
-| **Balvar** | è stato attaccato: non tratta più da solo (§10). Incide di nuovo i glifi scattati, rifà la custodia, e ricorda la botte di Hammerfist | sta sulla collina col drago, come nel canone. Ha capito che i nani vengono dall'alto, e lo dice al drago attraverso la Catena |
-| **Il sacerdote** | cura chi brucia fino a finire gli incantesimi. Prepara *vedere invisibilità* e *luce* per la notte dopo | sale sulla breccia con Zog'tar, se ci sono incantesimi da spendere |
+| **Balvar** | è stato attaccato: non tratta più da solo (§10). Incide di nuovo i glifi scattati, rifà la custodia, e ricorda la botte di Hammerfist | resta al campo, nella tenda o in quello che ne resta, come nel canone (DEF-4, «Se l'alba arriva prima della tenda» e Scena 10) `[CANONE — DM 2026-11-15, card]`. Ha capito che i nani vengono dall'alto, e lo dice al drago attraverso la Catena |
+| **Il sacerdote** | spegne e fascia chi brucia: cure non ne ha, perché la sua scheda (DEF-4, Appendice A.2) non ne prepara. Prepara *vedere invisibilità* e *luce* per la notte dopo | resta al campo: sulla breccia Zog'tar sale senza di lui e senza Balvar (DEF-4, Scena 10) `[CANONE — DM 2026-11-15, card]` |
 | **Le guardie** | stanno attorno al generale, con gli spadoni in pugno, al buio. Chi ha visto morire i compagni nel fuoco odia i nani in un modo nuovo | combattono con Zog'tar sulla breccia |
 | **Grask**, se è vivo | non lascia più il corno. Dorme in piedi | suona all'alba, e il drago arriva sull'assalto |
 
@@ -894,7 +902,7 @@ regole lasciano scegliere.
 | B10 | La Catena del drago sopravvive a Balvar morto? | **decisa dal DM il 2026-10-29:** sì | no: con Balvar morto la Catena si spezza, e il drago è libero e furioso |
 | B11 | La tenda bruciata col generale dentro vale come «Zog'tar umiliato davanti alle guardie» sulle mura? | **decisa dal DM il 2026-10-29:** sì: annulla il successo in meno dell'allarme | no: restano i due successi in meno (allarme e Zog'tar vivo) |
 | B12 | La tenda fa da forno: chi è sotto il telo è nell'area delle palle di fuoco, anche oltre i 6 m? | **decisa dal DM il 2026-10-29:** sì | no: 6 m dall'angolo, come nell'SRD; dal palo centrale restano fuori Balvar e la guardia Q14 con tre angoli su quattro |
-| B13 | Balvar lancia *dissolvi magie* ad area nel cielo (dove il giavellotto con la luce ha mostrato i PG, o alla cieca sopra la tenda, una volta su sei)? | **decisa dal DM il 2026-10-29:** sì: chi perde il volo cade da 48 m, 15d6 | no: Balvar non attacca dei nani che non vede |
+| B13 | Balvar lancia *dissolvi magie* ad area nel cielo (dove il giavellotto con la luce ha mostrato i PG, o alla cieca sopra la tenda, una volta su sei)? | **decisa dal DM il 2026-10-29:** sì; **corretta il 2026-11-15**: chi perde il volo scende di 18 m a round per 1d6 round (SRD, *volare*), non cade da 48 m per 15d6 | no: Balvar non attacca dei nani che non vede |
 | B14 | La procedura delle trovate (§13) entra nello standard dei moduli, con la riga «se ci fanno l'ingegnere» nei master dei prossimi archi? | **decisa dal DM il 2026-10-29:** sì, da ARC-08 | solo questa volta |
 | B15 | I PE per l'ingegno: tre fasce, GS = livello −4, −2, pari al livello; per il barile la fascia di mezzo, o quella alta se il corno non suona | **decisa dal DM il 2026-10-29:** sì | un premio fisso a sessione; o niente oltre ai nemici sconfitti |
 | B16 | I rostri sono lame di spada: chi prende il colpo diretto prende anche 1d4 lame da 1d8, nello stesso colpo? | **decisa dal DM il 2026-10-26: sì** | no: i rostri servono solo a tagliare il telo, come prima |

@@ -181,7 +181,7 @@ allora puoi **ridurre** un po’ l’Avatar (meno pf, qualche potere limitato) p
   - Eseguire un **rituale di 7 round** per innalzare un campo di energia simile a un Mythal che:
     - protegge la città da ulteriori evocazioni extraplanari,  
     - indebolisce l’Avatar di Tiamat (es. –2 a tutti i tiri, niente teletrasporti, immunità planar gate), [web:110]
-    - **inchioda Tyrgarun a terra** (D11 v2, canone P2D-INTEGRAZIONE r.201): niente volo = niente flyby/kiting, CR effettivo scende a ~16-17 — solo ora il drago diventa uccidibile da party+alleati, oppure fugge come nemesi per ARC-10.
+    - **inchioda Tyrgarun a terra** (D11 v2, canone P2D-INTEGRAZIONE r.201): niente volo = niente flyby/kiting, ma il soffio da 20d8 resta: è uccidibile da party+alleati solo se arriva sotto i 250 pf e combattono statue e alleati `[CANONE — DM 2026-11-15]`, oppure fugge come nemesi per ARC-10.
 
 ### Obiettivi PG
 

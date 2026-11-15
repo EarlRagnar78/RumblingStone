@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 142,
+  "tool_count": 143,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -13379,6 +13379,109 @@
         "network": false
       },
       "idempotent": false
+    },
+    {
+      "id": "importa_gemini",
+      "path": "scripts/importa_gemini.py",
+      "category": "I-converters",
+      "language": "python",
+      "invocation": "python3 scripts/importa_gemini.py {aistudio|takeout} SORGENTE --out CARTELLA [--parole N1,N2]",
+      "summary": "Chat di Gemini esportate a mano dal DM (cartella «Google AI Studio» di Drive, JSON con chunkedPrompt; Google Takeout «La mia attività → App Gemini», JSON o HTML) → un Markdown per chat o per giorno, senza i pensieri del modello, e INDICE.md ordinato per quante volte nominano la campagna. Nessuna chiamata a Google, nessuna chiave; rifiuta una cartella di uscita dentro il repo (le chat restano fuori, PR #284).",
+      "use_case": "«Ho esportato le chat di Gemini: quali parlano della campagna e cosa c'è dentro, senza aprirle una per una?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "fonte",
+          "type": "choice",
+          "required": true,
+          "default": null,
+          "choices": [
+            "aistudio",
+            "takeout"
+          ],
+          "repeatable": false,
+          "desc": "aistudio o takeout"
+        },
+        {
+          "name": "sorgente",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cartella, zip o file esportato."
+        },
+        {
+          "name": "--out",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cartella di uscita, fuori dal repo."
+        },
+        {
+          "name": "--parole",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Nomi da contare nell'indice, separati da virgole (default: i nomi della campagna)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "<esportazione>.zip",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<out>/*.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "<out>/indice.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "2": "errore d'uso (sorgente assente, uscita dentro il repo)",
+        "3": "nessuna chat riconosciuta"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Stessa esportazione, stessi file."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/importa_gemini.py --help",
+      "tests": [
+        "scripts/tests/test_importa_gemini.py"
+      ],
+      "docs": [
+        "docs/how-to/GUIDA-PROVE-PORTATILE-4050.md"
+      ]
     },
     {
       "id": "binari",

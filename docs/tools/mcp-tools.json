@@ -5225,6 +5225,53 @@
         "1": "cartella assente, nessun HTML, o master gia' esistenti senza --force"
       },
       "deterministic": true
+    },
+    {
+      "name": "importa_gemini",
+      "description": "«Ho esportato le chat di Gemini: quali parlano della campagna e cosa c'è dentro, senza aprirle una per una?»\n\nChat di Gemini esportate a mano dal DM (cartella «Google AI Studio» di Drive, JSON con chunkedPrompt; Google Takeout «La mia attività → App Gemini», JSON o HTML) → un Markdown per chat o per giorno, senza i pensieri del modello, e INDICE.md ordinato per quante volte nominano la campagna. Nessuna chiamata a Google, nessuna chiave; rifiuta una cartella di uscita dentro il repo (le chat restano fuori, PR #284).",
+      "use_case": "«Ho esportato le chat di Gemini: quali parlano della campagna e cosa c'è dentro, senza aprirle una per una?»",
+      "invocation": "python3 scripts/importa_gemini.py {aistudio|takeout} SORGENTE --out CARTELLA [--parole N1,N2]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "fonte": {
+            "type": "string",
+            "description": "aistudio o takeout",
+            "enum": [
+              "aistudio",
+              "takeout"
+            ]
+          },
+          "sorgente": {
+            "type": "string",
+            "description": "Cartella, zip o file esportato."
+          },
+          "out": {
+            "type": "string",
+            "description": "Cartella di uscita, fuori dal repo."
+          },
+          "parole": {
+            "type": "string",
+            "description": "Nomi da contare nell'indice, separati da virgole (default: i nomi della campagna)."
+          }
+        },
+        "required": [
+          "fonte",
+          "sorgente",
+          "out"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<out>/*.md",
+        "<out>/indice.json"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "2": "errore d'uso (sorgente assente, uscita dentro il repo)",
+        "3": "nessuna chat riconosciuta"
+      },
+      "deterministic": true
     }
   ]
 }

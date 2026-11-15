@@ -49,17 +49,16 @@ Arco-Post-Hammerfist-P3-Sabotaggio-Campi-Drow-STATBLOCCHI.md
 
 ---
 
-## 4. Xilthra Vel’ssin – Comandante Drow (Boss, CR 12–13)
+## 4. Xilthra Vel’ssin – Comandante Drow (Boss, CR 13)
 
-- Classe: Chierico 9 / Ombra Drow 2 (o Chierico 10/Rogue 2).
-- PF: ~90–100.
-- CA: 24–26 (protezione magica + coperture).
-- TS alti su Volontà, buoni su Tempra.
-- Incantesimi:
-  - Focalizzati su controllo mentale e terreno: *hold person, bestow curse, unholy blight, greater command, dismissal*.
+- **Scheda**: `Bestiario/villain/xilthra-velssin-cr13.md` `[CANONE — DM 2026-11-15, card]`. Drow Chierica 12 di Lolth, GS 13, 69 pf, CA 30 con *scudo della fede*, domini Inganno e Male; la tattica (Sala della Corte, Patto, *barriera di lame*, *fuorviare* per sparire) è lì.
 - Opzioni narrative:
   - Può avere amuleto o reliquia che incarna il “Patto Insanguinato”.
   - Se catturata viva, è un ottimo PNG complesso per giochi politici futuri.
+
+<!-- storico -->
+- era: «Classe: Chierico 9 / Ombra Drow 2 (o Chierico 10/Rogue 2). PF: ~90–100. CA: 24–26 (protezione magica + coperture). TS alti su Volontà, buoni su Tempra. Incantesimi: *hold person, bestow curse, unholy blight, greater command, dismissal*» (fino al 2026-11-15; l'Ombra Drow non è una classe, vedi la scheda)
+<!-- /storico -->
 
 ---
 

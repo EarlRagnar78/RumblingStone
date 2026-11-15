@@ -498,7 +498,9 @@ SIMBOLI TATTICI:
 **Descrizione da Leggere:**
 > *"Cinque nane si fanno avanti, le loro voci già armonizzate in un canto basso e potente. Sono le Cantitrici della Pietra, sacerdotesse-barde che uniscono la magia divina di Moradin alla tradizione musicale nanica. I loro canti fanno tremare le montagne e possono spezzare il ferro nemico o riforgiare il coraggio alleato."*
 
-*Leader: Melodia Echopietra*
+*Leader: Sigrun Cantoprofondo*
+*Le altre quattro: Bergdis Ecodiferro, Asvor Mezzavoce, Thora Vocediroccia, Ingrid Ultimanota* `[CANONE — DM 2026-11-15]`
+<!-- storico: fino al 2026-11-15 la guida si chiamava «Melodia Echopietra» e le altre quattro non avevano nome; nomi scelti dal DM sulla card del 15/11 -->
 **CA:** 20, 
 **PF:** 98 (8d8+4d6+48), 
 **TS:** Temp +13, Rifl +8, Vol +16
@@ -693,13 +695,26 @@ SIMBOLI TATTICI:
 ### **👤 COME GESTIRE I PERSONAGGI TEMPORANEI**
 
 **STRUTTURA NARRATIVA:**
-- **Sessioni 1-2:** I giocatori controllano 4 PNG nanici, eroi locali di Hammerfist
+- **Sessioni 1-2:** I giocatori controllano gli Eroi di Hammerfist, eroi locali della fortezza: se ne scelgono fino a sei (`[CANONE — DM 2026-11-15]`)
 - **Sessione 3 (metà):** Durante l'apparizione della sfera metallica, i PNG "svaniscono" misteriosamente
 - **Sessione 3 (fine):** I giocatori prendono controllo dei loro veri PG (Rumbling Stones)
 - **Sessione 4:** Continuano con i Rumbling Stones per il gran finale
 
 **SPIEGAZIONE IN-GAME:**
-Gli spiriti degli antenati hanno "chiamato" temporaneamente quattro eroi nanici per preparare la strada ai veri salvatori. Quando i Rumbling Stones appaiono, gli spiriti di questi eroi si uniscono ai loro successori, trasferendo esperienza e benedizioni.
+Gli spiriti degli antenati hanno "chiamato" temporaneamente gli eroi nanici per preparare la strada ai veri salvatori. Quando i Rumbling Stones appaiono, gli spiriti di questi eroi si uniscono ai loro successori, trasferendo esperienza e benedizioni.
+
+**SE UN GIOCATORE NON VUOLE GUIDARE UN EROE** `[CANONE — DM 2026-11-15]`
+
+Chi non vuole guidare un eroe guarda, oppure guida un'unità di nani (statistiche in «Esercito nanico di Hammerfist», per esempio i Guerrieri Nanici Veterani). Il suo eroe lo muove il DM, sullo sfondo: combatte e aiuta, ma non ruba la scena ai giocatori. Tre righe per ciascuno:
+
+- **Borin Giuraferro:** tiene la porta o la breccia che gli assegni e non carica da solo. La Presenza Comandante resta accesa sui nani vicini. Il Colpo Devastante lo usa solo per salvare un PG o il Re, mai per finire un capo nemico.
+- **Dara Occhiolesto:** tira sui nemici che nessun PG sta affrontando (sergenti, stregoni, worg) e lascia i capi ai giocatori. Cambia posizione ogni due round. Una volta per round dice al tavolo una cosa che vede dall'alto.
+- **Harbek Runaforte:** cura per primo il PG più ferito, poi i nani in linea. Non lancia incantesimi d'attacco. Se nessuno è ferito, lancia una protezione (*Preghiera*, *Benedizione*) e resta accanto a chi la riceve.
+- **Nala Cantapietre:** canta *Ispirare Coraggio* dal primo round e non smette. Resta dietro la linea e non fa attacchi furtivi sui capi. Dice quello che sa del nemico solo quando un giocatore glielo chiede.
+- **Ragnhild Mantoferro:** lancia muri (*Muro di Pietra*, *Muro di Forza*, *Muro di Fuoco*) per chiudere i varchi, non palle di fuoco sui gruppi che i PG stanno affrontando. Dissolve gli incantesimi dei chierici nemici. Tiene una *Porta Dimensionale* per portare via un PG che sta per cadere.
+- **Yrsa Portastendardo:** tiene lo stendardo alto in mezzo alla fila e usa Tattico (Muro di Scudi) all'inizio dello scontro. Lancia la sfida solo sul nemico che minaccia il Re. Aiuta il PG che combatte accanto a lei invece di attaccare da sola.
+
+<!-- storico: fino al 2026-11-15 la guida non diceva cosa fare se un giocatore rifiuta il suo eroe; scelta del DM sulla card del 15/11 («Eroe al DM, sullo sfondo»), le tre righe di tattica sono una proposta del thread -->
 
 ---
 
@@ -894,6 +909,124 @@ Gli spiriti degli antenati hanno "chiamato" temporaneamente quattro eroi nanici 
 - Duello di astuzia contro spie hobgoblin
 - Salvare informazioni cruciali sui piani nemici
 ---
+
+<div style="page-break-before:always"></div>
+
+#### **🔥 RAGNHILD MANTOFERRO (Nana Maga Invocatrice 10°/Maestra del Sapere 3°, GS 13)**
+*"La Mano che Scrive il Fuoco"*
+**Personalità e Ruolo:**
+> *"Ragnhild ha passato quarant'anni nella biblioteca sotto il tempio, a ricopiare le rune che i chierici non sanno più leggere. Parla poco e scrive molto, e porta le dita sempre macchiate d'inchiostro e di fuliggine. In battaglia è l'artiglieria del gruppo: dove indica col bastone, la pietra prende fuoco."*
+
+**Iniziativa:** +6;
+**Sensi:** Scurovisione 18m; Ascoltare +1, Osservare +1
+**Caratteristiche:** For 8, Des 14, Cos 18, Int 25, Sag 12, Car 6
+**CA:** 18 (+2 Des, +4 bracciali, +2 deviazione), contatto 14, colto alla sprovvista 16
+**PF:** 84 (13d4+52)
+**TS:** Tempra +11, Riflessi +9, Volontà +14 (+2 contro incantesimi e veleni)
+**Velocità:** 6m
+**Attacco Base:** +6;
+**Lotta:** +5
+**Attacco:** *Bastone del Fuoco* (bastone ferrato) +5 in mischia (1d6−1)
+**Attacco Completo:** *Bastone del Fuoco* +5/+0 in mischia (1d6−1)
+**Abilità Speciali:** tratti dei nani; Sapere (+10, come la conoscenza bardica); Segreti della Maestra del Sapere: Conoscenza Applicabile (talento Incantesimi Rapidi) e Altro Arcano Ritrovato (uno slot di 2° in più).
+**Talenti:** Scrivere Pergamene (bonus da mago), Iniziativa Migliorata, Incantesimi Focalizzati (Invocazione), Abilità Focalizzata (Conoscenze arcane), Incantesimi Massimizzati (bonus da mago), Incantesimi Potenziati, Creare Bacchette (bonus da mago), Incantesimi Focalizzati Superiore (Invocazione), Incantesimi Rapidi (dal segreto).
+**Abilità:** Conoscenze (arcane) +26, Sapienza Magica +25, Conoscenze (storia) +23, Concentrazione +20, Decifrare Scritture +17, Conoscenze (piani) +17, Conoscenze (religioni) +17, Conoscenze (dungeon) +15.
+**Lingue:** Comune, Nanico, Draconico, Gigante, Orchesco, Terran.
+**Equipaggiamento:** *Bastone del Fuoco* (50 cariche), *Fascia dell'Intelletto +4*, *Amuleto della Salute +2*, *Bracciali dell'Armatura +4*, *Anello di Protezione +2*, *Mantello della Resistenza +3*, *Perla del Potere* (3°), 2 *Pergamene di Palla di Fuoco Ritardata*, 3 *Pozioni di Cura Ferite Moderate*, libro degli incantesimi.
+
+**Incantesimi da Mago (LI 13°; 5/7/8/7/6/5/4/3 al giorno, uno per livello dalla scuola di Invocazione; scuole proibite Ammaliamento e Illusione):**
+*   7° (CD 26 Invocazione, 24 altre): *Palla di Fuoco Ritardata*, *Mano Stringente di Bigby*, *Palla di Fuoco* (rapida)
+*   6° (CD 25/23): *Catena di Fulmini*, *Disintegrazione*, *Dissolvi Magie Superiore*, *Globo di Invulnerabilità*
+*   5° (CD 24/22): *Cono di Freddo*, *Muro di Forza*, *Muro di Pietra*, *Teletrasporto*, *Palla di Fuoco* (potenziata)
+*   4° (CD 23/21): *Muro di Fuoco*, *Tempesta di Ghiaccio*, *Pelle di Pietra*, *Porta Dimensionale*, *Scrutare*, *Dardo Incantato* (massimizzato)
+*   3° (CD 22/20): *Palla di Fuoco* ×2, *Fulmine*, *Dissolvi Magie*, *Volare*, *Lentezza*, *Chiaroudienza/Chiaroveggenza*
+*   2° (CD 21/19): *Raggio Rovente* ×2, *Sfera Infuocata*, *Resistere all'Energia*, *Forza del Toro*, *Individuazione dei Pensieri*, *Vedere Invisibilità*, *Frantumare*
+*   1° (CD 20/18): *Dardo Incantato* ×2, *Scudo*, *Armatura Magica*, *Mani Brucianti*, *Identificare*, *Comprensione dei Linguaggi*
+*   0° (CD 19/17): *Individuazione del Magico*, *Lettura del Magico*, *Raggio di Gelo*, *Prestidigitazione*, *Sprazzo Acido*
+
+**Tattiche di Combattimento:**
+- **Prima:** *Pelle di Pietra* e *Resistere all'Energia* prima di uscire sulle mura.
+- **Aprire:** *Palla di Fuoco* rapida più *Palla di Fuoco Ritardata* sullo stesso blocco nemico, oppure *Muro di Fuoco* sulla breccia.
+- **Sostenere:** *Muro di Pietra* o *Muro di Forza* per tappare un varco, *Dissolvi Magie Superiore* sui chierici della Mano Rossa; il *Bastone del Fuoco* quando gli slot calano.
+- *Morale*: resta dietro la linea; sotto i 40 pf usa *Porta Dimensionale* verso le retrovie e continua a lanciare da lì.
+
+> **Verifica 3.5 (versione più forte, tutta SRD)**: 32 punti (For 8, Des 14,
+> Cos 14, Int 18, Sag 12, Car 8), nana (+2 Cos, −2 Car), +3 Int ai livelli 4,
+> 8 e 12, *Fascia +4* e *Amuleto +2*. Pf: 13×2,5 al dado medio (32), +4×13 di
+> Cos = 84. BAB +5 (Mago 10) +1 (Maestra del Sapere 3). TS: base Temp +4,
+> Rifl +4, Vol +10 più caratteristiche e *Mantello +3*. Maestra del Sapere:
+> Conoscenze (arcane) e (storia) a 10 gradi, Abilità Focalizzata, tre talenti
+> di metamagia o creazione (ne ha quattro), sette incantesimi di divinazione
+> (*Individuazione del Magico*, *Lettura del Magico*, *Identificare*,
+> *Comprensione dei Linguaggi*, *Individuazione dei Pensieri*, *Vedere
+> Invisibilità*, *Chiaroudienza/Chiaroveggenza* di 3° e *Scrutare*). I livelli
+> da Maestra del Sapere contano tutti per lanciare: LI 13°. Slot del mago di
+> 13° (4/4/4/4/4/3/2/1) più bonus di Int 25 (2/2/2/1/1/1/1), più uno per livello
+> dalla specializzazione, più il 2° del segreto. CD: 10 + livello + 7, +2
+> in Invocazione. Segreti (tabella SRD, livello + Int): Conoscenza Applicabile
+> (8) al 1° e Altro Arcano Ritrovato (10) al 3°. Gradi di abilità: 102 punti
+> spesi su Int base, nessun grado oltre 16; Sapienza Magica +2 di sinergia da Conoscenze (arcane). Ricchezza: circa 86.000 mo sulle
+> 110.000 di un PG di 13° livello. Il *Bastone del Fuoco* usa LI e CD della
+> maga se più alti (SRD, bastoni): *Palla di Fuoco* 10d6, CD 22. PF1e: stessa
+> struttura (Mago 10/Maestro del Sapere 3), nessun numero più forte che si
+> ricostruisca dalla scheda.
+
+<div style="page-break-before:always"></div>
+
+#### **🚩 YRSA PORTASTENDARDO (Nana Cavaliera 12°, Ordine del Drago, GS 12)** `[PF1e]`
+*"Lo stendardo dei novanta"*
+**Personalità e Ruolo:**
+> *"Yrsa è uno dei dieci capi dei novanta, e da vent'anni porta lo stendardo di Hammerfist in ogni battaglia della fortezza. Ha la voce più forte delle mura e la usa poco: quando grida il nome della fortezza, i nani le vanno dietro. Non è lei che uccide il campione nemico, ma è lei che fa reggere la fila mentre gli altri lo fanno."*
+
+**Iniziativa:** +5;
+**Sensi:** Scurovisione 18m; Percezione +16
+**Caratteristiche:** For 24, Des 12, Cos 16, Int 10, Sag 12, Car 14
+**CA:** 32 (+12 armatura, +5 scudo con Scudo Focalizzato, +1 Des, +2 deviazione, +2 naturale), contatto 13, colta alla sprovvista 31 (−2 quando lancia una sfida, tranne contro il bersaglio)
+**PF:** 114 (12d10+48)
+**TS:** Tempra +14, Riflessi +8, Volontà +10 (+2 contro veleni, incantesimi e capacità magiche)
+**Velocità:** 6m (anche in armatura pesante)
+**Attacco Base:** +12;
+**BMC:** +19; **DMC:** 32 (36 contro spingere e sbilanciare)
+**Attacco:** *Ascia da Guerra Nanica +3* +23 in mischia (1d10+10/×3)
+**Attacco Completo:** *Ascia da Guerra Nanica +3* +23/+18/+13 in mischia (1d10+10/×3); con Attacco Poderoso +23/+14/+9 (1d10+18/×3)
+**Abilità Speciali:**
+- **Stendardo:** finché lo stendardo è visibile, gli alleati entro 18 m hanno +3 morale ai TS contro paura e +2 morale a colpire in carica.
+- **Sfida (4/giorno, azione veloce):** +12 danni in mischia contro il bersaglio (+18 col bonus della razza preferita). I suoi alleati hanno +4 di circostanza a colpire in mischia il bersaglio finché Yrsa lo minaccia (Ordine del Drago), e il bersaglio ha −2 alla CA contro chiunque altro finché resta nella sua area minacciata (Sfida Pressante).
+- **Tattico (3/giorno, azione veloce):** concede Muro di Scudi e Difesa Coordinata agli alleati entro 9 m che la vedono e la sentono, per 9 round.
+- **Strategia (azione standard, una volta per alleato per combattimento):** a ogni alleato entro 9 m, a scelta, +2 schivare alla CA per 1 round, +2 morale a colpire per 1 round, o un movimento immediato.
+- **Aiutare gli Alleati:** quando usa aiutare un altro, l'alleato prende +4 invece di +2.
+- Carica del Cavaliere e Carica Possente valgono solo in sella: sulle mura non si usano.
+**Talenti:** Attacco Poderoso, Arma Focalizzata (ascia da guerra nanica), Robustezza, Volontà di Ferro, Concentrazione Furiosa (Furious Focus), Iniziativa Migliorata; bonus da cavaliere: Riflessi in Combattimento, Scudo Focalizzato; da tattico: Muro di Scudi, Difesa Coordinata (Coordinated Defense).
+**Abilità:** Diplomazia +17, Intimidire +17, Percezione +16, Cavalcare +16 (sulla sua cavalcatura non conta la penalità dell'armatura).
+**Lingue:** Comune, Nanico.
+**Equipaggiamento:** *Armatura Completa +3*, *Scudo Pesante d'Acciaio +2*, *Ascia da Guerra Nanica +3*, *Cintura della Forza del Gigante +4*, *Fascia del Fascino Seducente +2*, *Mantello della Resistenza +3*, *Anello di Protezione +2*, *Amuleto dell'Armatura Naturale +2*, *Stivali dell'Andatura e del Balzo*, 3 *Pozioni di Cura Ferite Gravi*, lo stendardo di Hammerfist sull'asta legata alla schiena.
+**Cavalcatura:** un cavallo da guerra, come compagno animale del druido di 12°; durante l'assedio resta nelle stalle sotto la montagna.
+
+**Tattiche di Combattimento:**
+- **Aprire:** Tattico (Muro di Scudi) sulla fila che tiene la breccia, poi Sfida sul nemico più grosso che arriva al varco.
+- **Sostenere:** resta in mezzo alla fila con lo stendardo alto; usa Strategia quando la fila sta per cedere, e aiuta chi combatte accanto a lei.
+- **Emergenza:** se Hrolf cade sull'altare, è lei che prende il suo posto davanti al re.
+- *Morale*: non abbassa mai lo stendardo; sotto i 30 pf lo pianta nella pietra e combatte lì accanto, finché qualcuno non lo raccoglie.
+
+> **Verifica PF1e (Advanced Player's Guide, Cavaliere e Ordine del Drago; testo su d20pfsrd)**:
+> 25 punti (For 17, Des 12, Cos 14, Int 10, Sag 10, Car 14), nana PF1e (+2 Cos,
+> +2 Sag, −2 Car), +3 For ai livelli 4, 8 e 12, *Cintura +4* e *Fascia +2*.
+> Pf: 12×5,5 al dado medio (66) + 3×12 di Cos + 12 di Robustezza = 114. Bonus della razza
+> preferita (nano): +½ ai danni contro il bersaglio della sfida, 12 volte = +6.
+> BAB +12, TS base Temp +8, Rifl +4, Vol +4. Sfida 4/giorno al 12° (1° più 4°,
+> 7° e 10°). Tattico 3/giorno (1°, 5°, 10°), durata 3 + 6 round. Stendardo
+> +2/+1 al 5°, +1 al 10°. Ordine del Drago: sfida +1 ogni quattro livelli
+> (+4 al 12°), Aiutare gli Alleati +3 al 2° e +1 all'8°. Attacco: 12 + 7 For
+> + 1 Arma Focalizzata + 3 = +23; Attacco Poderoso −4/+8, e Concentrazione
+> Furiosa toglie la penalità al primo attacco. CA: 10 + 12 + 4 + 1 di Scudo
+> Focalizzato + 1 Des (massimo dell'armatura completa) + 2 + 2 = 32. Ricchezza: circa 86.000 mo sulle
+> 108.000 di un PG di 12° livello (PF1e). 3.5: il Cavaliere non esiste;
+> il Maresciallo (Miniatures Handbook) ha aure di morale ma non si verifica
+> qui [Private source — Miniatures Handbook]. È una scheda PF1e in un arco 3.5:
+> abilità, BMC e DMC sono di PF1e (Percezione vale per Ascoltare e Osservare).
+
+> `[CANONE — DM 2026-11-15]` Ragnhild e Yrsa sono il quinto e il sesto eroe, scelti dal DM sulle card del 15/11. Destino se sopravvivono: Ragnhild resta a Hammerfist a ricopiare le rune del tempio, ed è lei a incidere la Runa dei Custodi Eterni che il re consegna alla Cerimonia; Yrsa porta lo stendardo dei novanta alla Cerimonia delle 100 Asce e resta a Hammerfist.
+<!-- storico: fino al 2026-11-15 gli Eroi di Hammerfist giocabili erano quattro -->
 
 <div style="page-break-before:always"></div>
 

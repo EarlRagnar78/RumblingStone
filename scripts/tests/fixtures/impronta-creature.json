@@ -42785,6 +42785,27 @@
    "manca": [],
    "scrivibile": true
   },
+  "Bestiario/png/Ragnhild_Mantoferro.md": {
+   "blocco": null,
+   "conti": [],
+   "lettura": {
+    "armatura": null,
+    "base_ts": {},
+    "classi": [],
+    "dado": null,
+    "dv": null,
+    "elite": true,
+    "gs": 13,
+    "manca": [],
+    "nome": "Ragnhild_Mantoferro",
+    "scudo": 0,
+    "taglia": "medium",
+    "tipo": null
+   },
+   "manca": [
+    "DV o livelli di classe"
+   ]
+  },
   "Bestiario/png/Re_Thorek_Hammerfist.md": {
    "blocco": null,
    "conti": [
@@ -42884,6 +42905,27 @@
    },
    "manca": [
     "ca (nessuna armatura nominata e nessuna armatura naturale dalla taglia: il numero sarebbe inventato)"
+   ]
+  },
+  "Bestiario/png/Yrsa_Portastendardo.md": {
+   "blocco": null,
+   "conti": [],
+   "lettura": {
+    "armatura": null,
+    "base_ts": {},
+    "classi": [],
+    "dado": null,
+    "dv": null,
+    "elite": true,
+    "gs": 12,
+    "manca": [],
+    "nome": "Yrsa_Portastendardo",
+    "scudo": 0,
+    "taglia": "medium",
+    "tipo": "dragon"
+   },
+   "manca": [
+    "DV o livelli di classe"
    ]
   },
   "Bestiario/png/durin-rocciadura-cr6.md": {

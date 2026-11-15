@@ -1594,3 +1594,14 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** gli aumenti si giudicano solo sopra la base che la fonte dichiara, con la stessa taglia e senza livelli di classe, e solo come minimo. Il segugio infernale «mezzo-immondo» ha i numeri del modello draconico (For 15, Cos 15, Car 8, sottotipo dragonblood): visto a mano, il controllo non lo dice perché la fonte è un file PCGen e non dichiara la base. Questione aperta al DM su card.
 
+### MS-0140 · 2026-11-15 · Regole: la velocità delle creature coi dadi vita razziali
+
+- **Data:** 2026-11-15
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole velocita creature-base ogre barbaro armatura dadi-vita-razziali
+- **Origine:** riga del 2026-11-15 «lotto 7 settima parte» in `plans/CHANGELOG.md`
+- **Testo:** `creature_base.toml` del 3.5 porta `vel`, la velocità a terra senza armatura dalla riga «Speed» dell'SRD (378 creature su 409). La verifica `velocita` la usa per chi dichiara la base nella fonte. Ha trovato l'Ogre Frantumapietra: 12 m scritti contro 10,5 m (ogre 40 piedi, barbaro +10, cotta di maglia media che riduce 50 a 35); la nota nella riga ne fa un dubbio, la scelta è del DM su card. Misura: violazioni 31 = 31, non verificabili 371 → 372.
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** un'assegnazione a tupla `razza, tabella[razza[0]] = razza[0], razza[1]` usa la `razza` già riassegnata: va scritta in due righe. Il file `misure-velocita.json` era fermo a prima di due correzioni del DM, quindi il passaggio 34 → 42 del banco non è tutto di questo pezzo. PF1e non rigenerato.
+

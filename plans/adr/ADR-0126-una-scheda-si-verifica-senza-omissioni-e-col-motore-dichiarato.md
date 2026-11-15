@@ -1391,3 +1391,16 @@ Se la taglia non è quella della base il grado atteso è un intervallo: +1 se è
 **Misura** contro main 53d48bfe con `verifica_scheda.py Bestiario 0*/`: violazioni 30 → 31 (lo Skeletal Dire Lion), non verificabili 369 → 371 (segugio infernale e Draxoksus: la fonte non dichiara una base dell'SRD). Schede con modello giudicate sulle caratteristiche 0 → 5.
 
 **Limiti dichiarati.** Le schede con più blocchi restano fuori, come per l'armatura naturale. Sopra il minimo non si giudica: un punteggio troppo alto passa. Con livelli di classe i punteggi di partenza non sono quelli dell'SRD e gli aumenti non si riscontrano. Il licantropo non ha la chiave. PF1e non ha `[gs.modelli_gs]`.
+
+### Lotto 7, settima parte — la velocità delle creature coi dadi vita razziali (2026-11-15)
+
+**Contesto.** La verifica `velocita` giudicava solo chi è fatto di soli livelli di classe. Un ogre barbaro o un bugbear ladro uscivano senza giudizio: «la velocità è della creatura».
+
+**Decisione.** `estrai_creature_base.py` legge dalla riga «Speed» dell'SRD la velocità a terra senza armatura («base speed 40 ft.» dove la riga parte da quella in armatura) e la scrive come `vel` in `creature_base.toml`: 378 creature su 409, le altre non camminano. `verifica_scheda._creatura_per_la_velocita` prende la creatura base che la fonte dichiara, con la stessa regola del lotto 5 (un blocco solo, stesso tipo), e il conto prosegue come per le razze: movimento veloce del barbaro e del monaco, armatura media o pesante che riduce, mithral. Taglia diversa dalla base: dubbio.
+
+**Cosa ha trovato.** `ogre-frantumapietra-barbaro6-cr9.md` scrive 12 m con la nota «12 m anche in armatura: andatura veloce da Barbaro». L'SRD dà 40 piedi all'ogre, +10 al barbaro, e la cotta di maglia media riduce 50 a 35: 10,5 m. La nota nella riga fa dello scarto un dubbio e non una violazione; la scheda non si tocca e la scelta è del DM, su card.
+
+**Misura** sopra il pezzo precedente con `verifica_scheda.py Bestiario 0*/`: violazioni 31 = 31, non verificabili 371 → 372 (l'ogre). Schede coi dadi vita razziali che arrivano al giudizio della velocità 0 → 5 (bugbear assassino, gnoll in sella, gufo gigante celestiale, ogre barbaro, Ghaurush). Banco `muta_velocita.py`: giudicate 34 → 42 su 100, più 3 m trovate 33 su 42, meno 3 m 31 su 41; il file delle misure era fermo a prima di due correzioni del DM, quindi non tutto il guadagno è di questo pezzo.
+
+**Limiti dichiarati.** Solo la velocità a terra: volo, nuoto, scavare e scalare non sono nei dati. Solo il 3.5: `creature_base.toml` del PF1e non è rigenerato. Le schede con più blocchi e quelle che non dichiarano la base dopo «SRD» o «MM» restano fuori. Lo gnoll in sella e Ghaurush scrivono una nota nella riga: uno scarto lì sarebbe un dubbio, e il banco li conta fra i persi.
+

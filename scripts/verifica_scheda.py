@@ -1709,6 +1709,24 @@ def velocita(p: Path) -> "tuple[list[dict], list[dict]]":
     return _scheda_per_scheda(p, _velocita_di_una_scheda)
 
 
+def _creatura_per_la_velocita(testo: str, sistema: str) -> "tuple[str, int] | dict | None":
+    """(nome, velocità a terra in piedi) della creatura base che la scheda dichiara nella fonte
+    (ADR-0126, lotto 7, settima parte); un dubbio (dict) se la base c'è ma la taglia è un'altra;
+    None se la scheda non dichiara una base, ha più blocchi o la base non cammina."""
+    import conformita_statblocchi as C
+    with contextlib.redirect_stderr(io.StringIO()):
+        blocchi = list(C._recinti_del_master(testo))
+    if len(blocchi) != 1:
+        return None
+    trovata = _base_del_blocco(testo, blocchi[0]["sb"], True, sistema)
+    if trovata is None or "vel" not in trovata[1]:
+        return None
+    if not trovata[2]:
+        return {"regola": "numero.velocita",
+                "testo": f"taglia diversa da quella di {trovata[0]} ({trovata[1]['taglia']}): la velocità non si riscontra"}
+    return trovata[0], trovata[1]["vel"]
+
+
 def _velocita_di_una_scheda(p: Path, testo: str, riga0: int, dal_nome: str) -> "tuple[list[dict], list[dict]]":
     """Il giudizio di `velocita` su una scheda sola (vedi `_scheda_per_scheda`)."""
     from dmcore import sistemi as S
@@ -1736,14 +1754,23 @@ def _velocita_di_una_scheda(p: Path, testo: str, riga0: int, dal_nome: str) -> "
         en = it.get(nome.lower(), nome.lower())
         livelli[en] = livelli.get(en, 0) + n
     ignote = f.get("classi_ignote") or []
+    velocita_razze = dict(mv["razze"])
     if not livelli or sum(g.n for g in s.gruppi) != sum(livelli.values()) + sum(
             int(v.rpartition(" ")[2]) for v in ignote):
-        return [], []                                   # dadi vita razziali: la velocità è della creatura
-    dove = " ".join((s.tipo or "", s.testo.split("\n", 1)[0], dal_nome))
-    razza = _razza_srd(dove, gradi) or _razza_senza_dv(
-        S.dati(sistema, "creature.costruzione").get("mdl") or {"razze": {}, "nomi": {}}, dove, s.tipo or "")
-    if razza is None or razza not in mv["razze"]:
-        return [], []
+        # dadi vita razziali: la velocità è quella della creatura base che la fonte dichiara
+        razza = _creatura_per_la_velocita(testo, sistema)
+        if razza is None:
+            return [], []
+        if isinstance(razza, dict):
+            return [], [{**base, **razza}]
+        velocita_razze[razza[0]] = razza[1]
+        razza = razza[0]
+    else:
+        dove = " ".join((s.tipo or "", s.testo.split("\n", 1)[0], dal_nome))
+        razza = _razza_srd(dove, gradi) or _razza_senza_dv(
+            S.dati(sistema, "creature.costruzione").get("mdl") or {"razze": {}, "nomi": {}}, dove, s.tipo or "")
+        if razza is None or razza not in mv["razze"]:
+            return [], []
     if ignote:
         return [], [{**base, "regola": "numero.velocita",
                      "testo": "velocità non ricostruibile: " + ", ".join(ignote) + " fuori dalle regole del plugin"}]
@@ -1764,7 +1791,7 @@ def _velocita_di_una_scheda(p: Path, testo: str, riga0: int, dal_nome: str) -> "
         if _MATERIALI[0][1].search(voce):               # mithral: una categoria più leggera
             c = ordine[max(0, ordine.index(c) - 1)]
         categoria, nome_armatura = c, nome
-    atteso, perche = mv["razze"][razza], [f"{razza} {mv['razze'][razza]}"]
+    atteso, perche = velocita_razze[razza], [f"{razza} {velocita_razze[razza]}"]
     barbaro = mv["classi"].get("barbarian") or {}
     if livelli.get("barbarian") and barbaro and categoria not in barbaro.get("non_in", []):
         atteso += barbaro["piu"]

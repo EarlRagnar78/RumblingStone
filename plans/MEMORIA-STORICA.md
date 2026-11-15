@@ -1682,14 +1682,14 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `Bestiario/villain/xilthra-velssin-cr13.md` · `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` (Fasi, Tattiche) · `…-P3-Sabotaggio-Campi-Drow-STATBLOCCHI.md` §4 · `…-Upscale-CR12.md` · `plans/esperimenti/tattiche-2026-11-15/profili_villain.py` (scontri `zalkatar-sanctum` e `xilthra-corte`)
 - **Solo qui:** 20.000 prove per riga, seme 1372, PG della carta del 05/11. Zalkatar senza Ozyrrandion: con le fasi di prima muore nell'81% dei casi e nessun PG muore; restando in alto muore nel 65% e almeno un PG muore nel 40% dei combattimenti, che durano 6,8 round invece di 4,4. Xilthra senza scorta e senza arcieri: l'abbozzo (95 pf, CA 25) muore sempre in 1,2 round; la scheda legale con la tattica fugge col Patto nel 47% dei casi, e mettere *influenza sacrilega* prima del *comando superiore* è misurato meglio dell'ordine contrario (PG all'81% dei pf invece dell'88%). Da sola Xilthra non uccide nessun PG: la scorta, che il modello non contiene, è la minaccia vera. Nella scheda la pietra di Ioun resta «non verificabile» perché il lettore della CA non conosce il bonus cognitivo; l'*amuleto di armatura naturale* della proposta è stato tolto perché il collo lo occupa l'*amuleto della saggezza*.
 
-### MS-0148 · 2026-11-15 · Una sola riga per il Conte Valerius in «chi sa cosa»
+### MS-0148 · 2026-11-15 · «Chi sa cosa»: una riga per il Conte Valerius e tre giorni nuovi
 
 - **Data:** 2026-11-15
 - **PR:** —
 - **ADR:** ADR-0125
 - **Temi:** stato campagna conoscenze chi-sa-cosa doppione decisione-dm coerenza-storia
 - **Origine:** riga del 2026-11-15 «"Chi sa cosa", dopo la #419» in `plans/CHANGELOG.md`
-- **Testo:** il DM ha scelto di tenere una sola riga per il Conte Valerius: resta quella che dice che non sa né della Corona né di Sal. Righe di «chi sa cosa» 33 → 32, T2 sempre a 0
+- **Testo:** il DM ha scelto di tenere una sola riga per il Conte Valerius: resta quella che dice che non sa né della Corona né di Sal. Sulle cinque righe senza giorno ha dato il 23 a Sonjak su Sal, lo 0 al Ghostlord e il 19 a Xal'thor sui Bracieri; le due su Therysol restano senza giorno. Righe 33 → 32, non verificabili 6 → 3, T2 sempre a 0
 - **Trovato nel repo:** `campaign/state.yaml` (sezione `conoscenze`) · `scripts/tests/test_state_data.py` · `scripts/tests/test_anagrafica_png.py`
 - **Solo qui:** una card del 14/11 chiedeva se la lettera di Brenna fosse già consegnata al tavolo citando la sessione del 3 maggio; quel file è marcato «scritto in anticipo, non giocato», quindi la risposta non è stata applicata e nessun testo è cambiato. Prima di citare un file di `campaign/sessions` come cronaca va letta la testata. Il test dell'anagrafica legge ancora `conoscenze` per posizione (indice 19 → 18): togliere una riga lo sposta
 

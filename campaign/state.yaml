@@ -413,10 +413,12 @@ conoscenze:
   png_id: sonjak
   sa_che: Sal is operating on the desert road toward Rethmar; does NOT know Sal's temporal identity (Vatore)
   come: Standard briefing to field agent
+  dal_giorno: 23
 - png: Ghostlord / Zeth il Murato
   png_id: ghostlord
   sa_che: Party existence unknown; aware of Red Hand using his lair as undead factory
   come: Sensed via lair's magical senses
+  dal_giorno: 0
 - png: Conte Valerius
   png_id: conte-valerius
   sa_che: The party visited Hammerfist; does NOT know about the Crown or Sal
@@ -431,6 +433,7 @@ conoscenze:
   png_id: xal-thor
   sa_che: Tordek carries the Twin Braziers (planar keys to Eternal Forge)
   come: Planar observation; cross-referenced with Forgia Eterna records
+  dal_giorno: 19
 - png: Zalkatar (via Sethrax)
   png_id: zalkatar
   sa_che: The Orbe delle Otto Porte at Dauth Tournament has Githyanki planar origin and emits a "Seme di Porta" extractable at peak resonance

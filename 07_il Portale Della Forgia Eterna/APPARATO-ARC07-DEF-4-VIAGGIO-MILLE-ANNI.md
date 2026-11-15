@@ -138,6 +138,10 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 11 | sul gruppo più fitto (Riflessi | 31 |
 | SCENA 11 | Ognuna tira a parte Volontà | 25 |
 | SCENA 11 | un incantesimo nella nube serve Concentrazione | 21 |
+| SCENA 11 | contro il volare della pozione | 16 |
+| SCENA 11 | volte su 10, contro l'invisibilità comprata | 14 |
+| SCENA 11 | quella del re (incantatore di 12° | 23 |
+| SCENA 11 | Volontà | 17 |
 | SCENA 11 | prova di Forza | 25 |
 | SCENA 11 | Forza | 10 |
 | SCENA 11 | se il gancio prende, Forza | 25 |

@@ -1539,7 +1539,18 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** nel tipo non si può scrivere «avanzato» né ripetere «scheletro» accanto a «skeleton»: `gs.modello_noto` vede un avanzamento o un secondo modello e il grado torna non verificabile. Restano al DM il livello d'incontro delle due righe del viaggio verso Cannath Vale che usano questi leoni e l'armatura naturale +4 (lo scheletro Grande dell'SRD ha +2).
 
-### MS-0138 · 2026-11-14 · ARC-07/08: nuovi nomi e appellativi degli Eroi di Hammerfist e della Madre Superiora
+### MS-0135 · 2026-11-14 · A6: il dossier delle piste di ARC-09
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** —
+- **Temi:** indagine piste ARC-09 torre-invisibile zalkatar sonjak collezionista ghaurush zin-thara carta-del-cielo travaso gate
+- **Origine:** riga del 2026-11-14 «A6, il dossier delle piste di ARC-09» in `plans/CHANGELOG.md`
+- **Testo:** `Arco-Post-Hammerfist-DOSSIER-DELLE-PISTE.md` riscrive come piste i tre misteri di ARC-09: la torre che cammina (congegno, A1-A7), il «dottore» che compra i drow (B1-B6, pista morale senza bonus) e le due lettere di Sonjak (C1-C7). Gate «dopo ARC-07» tolto da Jfs il 2026-11-14 nel progetto, superando la sua card D5 del 2026-11-13. Tre scelte nuove a Jfs su card: S1 piromanti in scena fissa, S2 effetto delle lettere uguale a Zin'thara voltata, S3 lettere nella trattativa di Ghaurush al posto del Seme-Mercato.
+- **Trovato nel repo:** `plans/PIANO-TRAVASO-DRAPPO-CAMPAGNA.md` §A6 · `skills/rumblingstone-indagine`
+- **Solo qui:** il nodo più forte della pista della torre (la carta del cielo) stava su una voce di tabella d% al 15% per giornata; le lettere di Ghaurush stanno su un villain il cui esito di default è la fuga; il ramo «Sonjak tradisce la Mano Rossa» non aveva effetto scritto; l'handout 7 rimandava a un §4.3 della sub-quest di Artemis che non esiste (è §4.1); `P2A-Torre-PARTE1` §1 chiama ancora Artemis «alleata/PNG chiave», lasciato com'è. Saraah è marcata `[NON-CREATURA]` come Thorgrim: persona senza numeri in nessun file, e `test_bestiario_h` ne elenca le schede. «CS» delle schede di Ghaurush e Zin'thara non è definito altrove nel repo. Jfs ha deciso le tre card il 2026-11-14, tutte sulla consigliata: S1 scena fissa dei piromanti fra G22 e G26 sulla strada vera; S2 le lettere valgono come Zin'thara voltata (−1 CS Fase 0, non si sommano ai registri); S3 Ghaurush vende le lettere al posto del Seme-Mercato, chi le prende rinuncia alla tregua.
+
+### MS-0137 · 2026-11-14 · ARC-07/08: nuovi nomi e appellativi degli Eroi di Hammerfist e della Madre Superiora
 
 - **Data:** 2026-11-14
 - **PR:** —
@@ -1549,4 +1560,3 @@ repo scritto con altre parole.
 - **Testo:** il DM ha scelto sulle card del 2026-11-14 (21:37 e 22:17-22:18): Borin Ferropugno diventa Borin Giuraferro, «Colui che non arretra» (era «Il Martello di Hammerfist»); Thorin Runaforte diventa Harbek Runaforte, «Custode dell'Ultima Runa» (era «La Voce di Moradin»); Dara Occhiolesto prende «Morte dai Picchi» (era «L'Occhio delle Montagne»); Nala Cantapietre prende «Il Sorriso prima della Lama» (era «La Lama Nascosta»); la Madre Superiora Dana Forgiapietra diventa Dagmar Forgiapietra, detta Dana. Schede rinominate `Borin_Giuraferro.md` e `Harbek_Runaforte.md`; quella della Madre resta `Dana_Forgiapietra.md`, col nome d'uso.
 - **Trovato nel repo:** `Bestiario/png/Borin_Giuraferro.md`, `Bestiario/png/Harbek_Runaforte.md`, `Bestiario/png/Dana_Forgiapietra.md` (vecchi nomi nei blocchi storico)
 - **Solo qui:** con Harbek cade l'avviso dei tre nomi simili (A10, D2); resta quello Thorik/Thorek. Il file della Madre non si rinomina perché il registro dei nomi di `misura_craft.py` prende i nomi dai file del Bestiario: senza «Dana» il voto della corsa A-senza-1/S06 cambiava (box_un_nome) e `voto_scrittura --check` cadeva. Restano coi vecchi nomi, per scelta: esperimenti, scritture, archivi, registri, fixture di test congelate, i caduti «Borin Manodura» e «Dara Passolesto, occhio delle montagne» della Cerimonia delle 100 Asce (altri nani). Nell'ARC-09 (P1B, P1C) «Borin» porta Aegis Fang, quindi è un segnaposto per Thorik e non il pregen: non toccato, da decidere a parte. Non scritti perché le card sono aperte: cosa fare se un giocatore non vuole guidare un eroe, la rosa allargata.
-

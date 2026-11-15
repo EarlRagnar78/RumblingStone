@@ -317,7 +317,7 @@ se la condizione non si sa scrivere: in quel caso il lotto lo dice.
 | AUDIT-SCRIPTS | shellcheck bloccante | 📅 lotto, milestone v1.5.0 (blocco piattaforma) | la milestone |
 | AUDIT-SCRIPTS | convertitori allo standard pieno | 📅 lotto, milestone v1.5.0 | la milestone |
 | RENDER-FEDELTA | F3 pieno, callout ancorati | ⏳ in attesa di un caso vero | **fuori**: nel piano |
-| TRAVASO | A6, dossier delle piste di ARC-09 | ⏳ dopo ARC-07 al tavolo | **fuori**: nel piano |
+| TRAVASO | A6, dossier delle piste di ARC-09 | ~~⏳ dopo ARC-07 al tavolo~~ ✅ gate tolto da Jfs il 2026-11-14, dossier scritto | — |
 | INTEGRAZIONE | (b) prova in Foundry | ⏳ quando Jfs usa Foundry | **fuori**: nel piano |
 | INTEGRAZIONE | (c) hero map su una mappa chiave | ⏳ resta collaudo del DM: **nessuna card l'ha nominata** | **fuori**: nel piano |
 | MODULO-PUBBLICABILE | B3, carte da tavolo | 🟡 fatto dalla PR #423 (36 carte, PDF/UA-1 e PDF/A-2a); da rivedere dopo la prima serata del Drappo | — |

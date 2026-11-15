@@ -1550,6 +1550,17 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `plans/PIANO-TRAVASO-DRAPPO-CAMPAGNA.md` §A6 · `skills/rumblingstone-indagine`
 - **Solo qui:** il nodo più forte della pista della torre (la carta del cielo) stava su una voce di tabella d% al 15% per giornata; le lettere di Ghaurush stanno su un villain il cui esito di default è la fuga; il ramo «Sonjak tradisce la Mano Rossa» non aveva effetto scritto; l'handout 7 rimandava a un §4.3 della sub-quest di Artemis che non esiste (è §4.1); `P2A-Torre-PARTE1` §1 chiama ancora Artemis «alleata/PNG chiave», lasciato com'è. Saraah è marcata `[NON-CREATURA]` come Thorgrim: persona senza numeri in nessun file, e `test_bestiario_h` ne elenca le schede. «CS» delle schede di Ghaurush e Zin'thara non è definito altrove nel repo. Jfs ha deciso le tre card il 2026-11-14, tutte sulla consigliata: S1 scena fissa dei piromanti fra G22 e G26 sulla strada vera; S2 le lettere valgono come Zin'thara voltata (−1 CS Fase 0, non si sommano ai registri); S3 Ghaurush vende le lettere al posto del Seme-Mercato, chi le prende rinuncia alla tregua.
 
+### MS-0136 · 2026-11-14 · ADR-0134: il corredo del Fantino Cavaliere del Palio
+
+- **Data:** 2026-11-14
+- **PR:** —
+- **ADR:** ADR-0134
+- **Temi:** schede equipaggiamento regole palio
+- **Origine:** riga del 2026-11-14 «ADR-0134, regola RC-001: il corredo del Fantino Cavaliere del Palio» in `plans/CHANGELOG.md`
+- **Testo:** il Fantino Cavaliere ha giaco di maglia +1, nerbo, una pozione di cura ferite moderate e due di contrastare elementi; 1.650 mo su 5.600.
+- **Trovato nel repo:** `ADR-0134` → `plans/adr/ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md` · `campaign/REGOLE-CUSTOM.md`
+- **Solo qui:** sulla card il DM aveva tre scelte (armatura leggera e pozioni; le stesse più il mantello della resistenza +1 del «Troglodyte Champion», TS +8/+7/+5; nessun corredo) e ha scelto la prima. La scheda dice solo «armatura leggera da corsa»: il giaco di maglia +1 (1.250 mo) è l'armatura leggera meno cara che dà +5; anche il cuoio borchiato +2 (4.175 mo) lo darebbe. Il tetto è contato sul 6° livello della classe; la scheda dichiara GS 8 e «Cavaliere-ish», quindi il livello effettivo non è certo. Sulla card la pozione era chiamata «resistere agli elementi»: il nome del lessico è «contrastare elementi».
+
 ### MS-0137 · 2026-11-14 · ARC-07/08: nuovi nomi e appellativi degli Eroi di Hammerfist e della Madre Superiora
 
 - **Data:** 2026-11-14

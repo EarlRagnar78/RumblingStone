@@ -8,7 +8,7 @@ Arco-Post-Hammerfist-P2-RHEST-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md
 > Darkness come da RHoD), trigger di fuga di Saarvith, sinergia con i poteri
 > **attuali** degli artefatti (`campaign/state.md` §6). Le **statistiche** sono in
 > `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`
-> (Saarvith ranger, ~75 pf; Regiarix drago nero adulto, CR 13, ~231 pf, soffio
+> (Saarvith ranger, ~75 pf; Regiarix drago nero giovane adulto SRD, GS 9, 152 pf `[CANONE — DM 2026-11-15]`; l'incontro è intorno a EL 11-12, soffio
 > **acido**). Questo file è la **regia dello scontro**; non duplica gli statblock.
 
 ---
@@ -62,14 +62,13 @@ Riporta lo **stato di allerta** deciso in Fase 3:
 > Statblock: STATBLOCCHI §2. Regia (allineata allo script §4 di quel file):
 
 - **Fase A — Bombardamento acido** (round 1–2): emerge parzialmente, **soffio di
-  acido in linea** (18 m, 12d4, Riflessi CD ~25 per metà) su 2–3 PG allineati,
+  acido in linea** (24 m, 10d4, Riflessi CD 21 per metà) su 2–3 PG allineati,
   poi **si reimmerge** o prende quota bassa. Non resta in mischia.
-- **Fase B — Darkness e isolamento** (round 3–4): usa **Darkness** (facoltà
-  come da RHoD `[da RHoD — Regiarix]`) per spegnere metà arena e **separare** i
+- **Fase B — Darkness e isolamento** (round 3–4): usa **Darkness** (3 al giorno,
+  raggio 15 m, SRD del nero giovane adulto) per spegnere metà arena e **separare** i
   PG; colpisce con voli radenti (artigli/morso) chi è isolato o in acqua, poi
   sparisce di nuovo nell'occultamento.
-- **Fase C — Disperata** (sotto ~30% pf): o **full attack** su un bersaglio che
-  crede di poter abbattere, oppure **tuffo e fuga a nuoto** nei canali (vedi
+- **Fase C — Disperata** (sotto un terzo dei pf, 50): **tuffo e fuga a nuoto** nei canali; esce sull'asciutto per l'attacco completo solo su un PG caduto (STATBLOCCHI §2) (vedi
   CONSEGUENZE: Regiarix fuggito ≠ Regiarix morto per il conteggio di Rethmar).
 
 > **Nota acido, non fuoco**: Regiarix è un drago **nero** → soffio **acido**. La
@@ -132,11 +131,11 @@ Riporta lo **stato di allerta** deciso in Fase 3:
 
 ## 6. Varianti di difficoltà
 
-- **Party molto forte**: +1–2 lucertoloidi guardia del corpo di Saarvith; a
-  Regiarix una facoltà ambientale extra (miasma acido: nube che dà occultamento e
-  1d6 acido/round entro l'area).
-- **Party medio**: riduci i pf del drago (verso ~200), abbassa di 1–2 la CD del
-  soffio, o togli un attacco per round a Saarvith. (Vedi nota nello STATBLOCCHI.)
+- **Party molto forte**: +1–2 lucertoloidi guardia del corpo di Saarvith; per
+  Regiarix la via legale è l'età adulta dell'SRD (GS 11, 199 pf, soffio 12d4 CD 23),
+  non capacità inventate `[CANONE — DM 2026-11-15]`.
+- **Party medio**: Regiarix giovane adulto è già il drago più debole della
+  campagna (152 pf); togli un attacco per round a Saarvith. (Vedi nota nello STATBLOCCHI.)
 
 ---
 

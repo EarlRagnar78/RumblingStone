@@ -154,7 +154,7 @@ d'esito sopra.
 
 | Ramo | Trigger | Effetto |
 |---|---|---|
-| **Default — fugge** | Fauci scende sotto i **50 pf** e nessuno lo blocca attivamente (soglia di ritirata **alzata** se nel P5 Skullcrusher fuggì — valore in §4.1/tabella B4) | Decolla gravemente ferito verso le montagne meridionali; rimosso dall'assedio ma **vivo**; può tornare come nemesi (hook ARC-10; carta S2 proposta all'EVENT-DECK di Rethmar — vedi §6.3). Nessun cambio ai totali orda |
+| **Default — fugge** | Fauci scende sotto i **112 pf** `[CANONE — DM 2026-11-15]` e nessuno lo blocca attivamente (soglia di ritirata **alzata** se nel P5 Skullcrusher fuggì — valore in §4.1/tabella B4) | Decolla gravemente ferito verso le montagne meridionali; rimosso dall'assedio ma **vivo**; può tornare come nemesi (hook ARC-10; carta S2 proposta all'EVENT-DECK di Rethmar — vedi §6.3). Nessun cambio ai totali orda |
 | **Alternativo — ucciso** | I PG lo portano a 0 pf prima che fugga: lo inseguono in volo, o lo tengono a terra. La presa di Orion da sola non basta, perché la lotta è contrapposta e Fauci ha +43 (SRD) | Morto; **−1 drago** nel pool di Rethmar (`state.md` §2.3 Conditional Additives) |
 
 ### 4.1 Carry-over dall'eredità di Skullcrusher (A12, [CROSS-ARC con ARC-07])

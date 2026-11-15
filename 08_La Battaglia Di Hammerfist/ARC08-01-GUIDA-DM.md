@@ -192,7 +192,7 @@ SIMBOLI TATTICI:
         *   1° (CD 14): *Armatura Magica*, *Colpo Accurato*, *Dardo Incantato*, *Protezione dal Bene*, *Scudo*
         *   0° (CD 13): *Frastornare*, *Individuazione del Magico*, *Luce*, *Mano Magica*, *Prestidigitazione*, *Raggio di Gelo*, *Resistenza*
 **Talenti:** Arma Focalizzata (morso), Attacco in Volo, Critico Migliorato (Morso), Iniziativa Migliorata, Multiattacco, Volontà di Ferro, Riflessi Fulminei, Fluttuare, Ghermire (gli ultimi tre confermati dal DM, 2026-10-18). Arma Focalizzata (morso) ha preso il posto di Allerta, la scelta più forte tra le due versioni confrontate: morso +34, Ascoltare e Osservare +27 `[CANONE — DM 2026-11-09, INVENTARIO D4]`.
-**Tattiche:** Inizia con *Armatura Magica* e *Scudo* attivi. Finché non riconosce Aegis Fang combatte da drago d'assedio: Soffio sui difensori ammassati e *Nube Maleodorante* dall'alto; con Fluttuare resta sospeso sopra le mura e soffia senza atterrare. Dal turno dopo il primo canto di Aegis Fang, o il primo colpo dell'ascia, sa chi ha davanti e ha un bersaglio solo: Thorik. Lo prende in bocca, una volta, quando lo decide lui (qui sotto, «La presa di Thorik»; in Sessione 4 è la picchiata dei round 18-20). Atterra solo se gravemente ferito (<100 PF) o per finire Thorik dopo averlo lasciato cadere. Fugge sotto i 50 PF. Thorik, col *Mind Blank* permanente della Corona, non subisce la Presenza terrificante: è un effetto di paura che influenza la mente (SRD *Mind Blank*).
+**Tattiche:** Inizia con *Armatura Magica* e *Scudo* attivi, e prima di farsi vedere lancia *Immagine Speculare* `[CANONE — DM 2026-11-15]`. Finché non riconosce Aegis Fang combatte da drago d'assedio: Soffio sui difensori ammassati e *Nube Maleodorante* dall'alto; con Fluttuare resta sospeso sopra le mura e soffia senza atterrare. Dal turno dopo il primo canto di Aegis Fang, o il primo colpo dell'ascia, sa chi ha davanti e ha un bersaglio solo: Thorik. Prima della picchiata rinnova *Immagine Speculare* se le immagini sono finite, e lancia *Dissolvi Magie* su chi vola vicino a Thorik e potrebbe prenderlo al volo (una pozione di *volare*, Hella con lo Scudo del Custode), ma solo se lo ha già visto farlo: la prima volta il trucco dei PG funziona `[CANONE — DM 2026-11-15]`. Lo prende in bocca, una volta, quando lo decide lui (qui sotto, «La presa di Thorik»; in Sessione 4 è la picchiata dei round 18-20). Il soffio che non serve alla presa va su chi cura: ha visto chi tiene in piedi i nani `[CANONE — DM 2026-11-15]`. Prima di atterrare per finire Thorik lancia *Nube Maleodorante* sui compagni che gli corrono incontro, così scende quando nessuno può rispondere `[CANONE — DM 2026-11-15]`. Atterra solo per finire Thorik dopo averlo lasciato cadere. Fugge sotto un terzo dei pf, **112 PF** `[CANONE — DM 2026-11-15]`: con INT 16 non resta a terra in mezzo a una fortezza nanica, e torna come nemesi. Simulazione: `plans/esperimenti/tattiche-draghi-2026-11-15/`. Thorik, col *Mind Blank* permanente della Corona, non subisce la Presenza terrificante: è un effetto di paura che influenza la mente (SRD *Mind Blank*).
 
 **La presa di Thorik** `[CANONE — DM 2026-10-19]`. È la firma di Fauci: la usa solo su Thorik, per odio, e solo da quando ha riconosciuto l'ascia. Non ghermisce nessun altro. Una volta per incontro `[CANONE — DM 2026-10-20]`. Se Aegis Fang non ha mai cantato né colpito, la presa non c'è.
 
@@ -1998,7 +1998,7 @@ Mentre gli alleati aerei ingaggiano il drago, i PG e i nani combattono i resti d
 
 **FAUCI DI PALUDE (Drago Indebolito):**
 - **PF di partenza** `[CANONE — DM 2026-10-19, D9]`: 337 meno il carry-over di `ARC08-10` §4.1 (303 se nel P5 Skullcrusher fu ucciso); **337 se il P5 non è stato giocato** (statblock invariato)
-- **Tattiche** (scheda in `ARC08-02` §1): resta in quota col soffio e *nube maleodorante*, sospeso con Fluttuare. Ai round 18-20 la picchiata e la presa di Thorik, una volta (scheda, «La presa di Thorik»); *Ghermire* non lo usa su nessun altro. Atterra solo sotto i 100 pf o per finire Thorik, che odia (+4 al colpire e ai danni contro di lui, sempre). Fugge sotto i 50 pf
+- **Tattiche** (scheda in `ARC08-02` §1): resta in quota col soffio e *nube maleodorante*, sospeso con Fluttuare. Ai round 18-20 la picchiata e la presa di Thorik, una volta (scheda, «La presa di Thorik»); *Ghermire* non lo usa su nessun altro. Prima della picchiata *immagine speculare* e, se ha visto qualcuno pronto a prenderlo al volo, *dissolvi magie*; *nube maleodorante* sui compagni prima di atterrare. Atterra solo per finire Thorik, che odia (+4 al colpire e ai danni contro di lui, sempre). Fugge sotto i 112 pf `[CANONE — DM 2026-11-15]`
 - **Cavaliere Hobgoblin:** Fornisce bonus +2 agli attacchi, può lanciare incantesimi
 
 **SIGNORE VENTOLESTO + 2 GUFI:**
@@ -2098,13 +2098,13 @@ Fauci resta in aria e logora fino al round 17, e scende quando lo decide lui.
 - **Attacco in Volo** per staccarsi dal più lento: vola a 45 m, un PG in armatura pesante a 12 m.
 - **Il cavaliere** carica in sella e copre il fianco del drago.
 - **Thorik** non subisce la Presenza terrificante: il *Mind Blank* della Corona la blocca (scheda di Fauci).
-- Sotto i 100 pf scende comunque; **sotto i 50 tenta la fuga** (`ARC08-10` §4), e i PG in volo possono inseguirlo.
+- **Sotto i 112 pf tenta la fuga** `[CANONE — DM 2026-11-15]` (`ARC08-10` §4), e i PG in volo possono inseguirlo.
 
-**Il duello (round 21-23):** Fauci atterra accanto a Thorik caduto, per finirlo, e a terra fa l'attacco completo intero, sei attacchi con le ali. Sotto i 50 pf, il default è che rompa il contatto e decolli verso sud; è **ucciso** solo se i PG lo bloccano oltre quel punto. Si decide al tavolo, e i due rami sono in `ARC08-10` §4. In tutti e due l'orda vede il drago fuori gioco, ed è la rotta.
+**Il duello (round 21-23):** Fauci atterra accanto a Thorik caduto, per finirlo, e a terra fa l'attacco completo intero, sei attacchi con le ali. Sotto i 112 pf, il default è che rompa il contatto e decolli verso sud; è **ucciso** solo se i PG lo bloccano oltre quel punto. Si decide al tavolo, e i due rami sono in `ARC08-10` §4. In tutti e due l'orda vede il drago fuori gioco, ed è la rotta.
 
 **Che cosa sa il cavaliere, e se lo divinano:** `ARC08-10` §4.2.
 
-##### Se Fauci fugge (sotto i 50 pf)
+##### Se Fauci fugge (sotto i 112 pf)
 
 **ULTIMO SOFFIO DI RABBIA:**
 > *"Fauci di Palude, realizzando che la battaglia è perduta, si volta verso il campo dove stanno avanzando i nani. Con un ultimo atto di pura malvagità, sprigiona il suo soffio acido non per uccidere, ma per distruggere simbolicamente la vittoria nemica. L'acido si riversa sui vessilli della Mano Rossa caduti, dissolvendoli in fumo corrosivo: 'La Mano Rossa tornerà!' ruggisce mentre si allontana verso le montagne meridionali."*
@@ -2367,7 +2367,7 @@ CAMPO DOPO LA VITTORIA
 #### **IL CONTEGGIO FINALE**
 **PERDITE NEMICHE:**
 - **~500 morti e ~400 dispersi in rotta**, che non si ricongiungono: l'orda perde comunque i 900 dell'avanguardia (canone D11, `ARC08-10` §1). Se i PG inseguono i fuggiaschi, cambiano i morti, non il totale
-- **Fauci di Palude:** ucciso nel duello dei round 21-23, o fuggito gravemente ferito sotto i 50 pf se i PG non lo hanno bloccato (`ARC08-10` §4) `[CANONE — DM 2026-10-19, D9]`
+- **Fauci di Palude:** ucciso nel duello dei round 21-23, o fuggito gravemente ferito sotto i 112 pf `[CANONE — DM 2026-11-15]` se i PG non lo hanno bloccato (`ARC08-10` §4) `[CANONE — DM 2026-10-19, D9]`
 
 **PERDITE ALLEATE:**
 - **210 Nani Caduti** su 300 difensori originali
@@ -2810,7 +2810,7 @@ incontri `[CANONE — DM 2026-10-19, D19]`.*
 *   **Tattiche Chiave:**
     *   **Inizio:** Vola alto, usa **Soffio** sulle unità ammassate.
     *   **Metà Scontro:** Usa **Presenza Terrificante** (CD 25) e incantesimi come *Nube Maleodorante*.
-    *   **Fine Scontro:** Atterra solo se ferito (<100 PF) o per finire Thorik, dopo averlo preso in bocca e lasciato cadere, una volta (scheda, «La presa di Thorik»). Non combatte fino alla morte, fugge sotto i 50 PF.
+    *   **Fine Scontro:** Atterra solo per finire Thorik, dopo averlo preso in bocca e lasciato cadere, una volta (scheda, «La presa di Thorik»), e prima lancia *nube maleodorante* sui compagni. Non combatte fino alla morte, fugge sotto i 112 PF `[CANONE — DM 2026-11-15]`.
 
 **Scheda Boss 2: GENERALE GRIMJAW (Orog Comandante)**
 *   **GS 14 - PF 178 - CA 26**

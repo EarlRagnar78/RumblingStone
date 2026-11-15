@@ -16,7 +16,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | i troll dell'ariete | SCENA 2 | — | non parlano: annusano |
 | i giganti della strada | SCENA 2 | — | ridono a ogni masso che arriva |
 | **la Madre Superiora Dagmar Forgiapietra** | SCENA 3 | tenere in piedi il Re e le Cantitrici, in quest'ordine | sussurra le preghiere e tuona le benedizioni; ai feriti dice il nome del loro clan |
-| **Melodia Echopietra** | SCENA 4 | finire il canto prima che finisca il giorno | parla solo fra un canto e l'altro, e solo per dire il nome di chi è caduto |
+| **Sigrun Cantoprofondo** | SCENA 4 | finire il canto prima che finisca il giorno | parla solo fra un canto e l'altro, e solo per dire il nome di chi è caduto |
 | **Grimjaw** | SCENA 4 | il Re in ginocchio davanti all'orda, e Hammerfist intera: una fortezza che si arrende vale più di una che brucia | frasi lunghe, da uomo che ha studiato; parla in comune ai nani perché lo capiscano tutti, e in orchesco ai suoi |
 | le Cantitrici | SCENA 4 | — | cantano; fra un canto e l'altro, niente |
 | la guardia nera | SCENA 4 | — | non parlano: parla Grimjaw per loro |

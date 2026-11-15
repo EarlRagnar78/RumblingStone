@@ -1693,3 +1693,14 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `Bestiario/villain/Wyrmlord_Karruk/wyrmlord-karruk-cr13.md` (Tattiche, Misura) · `Bestiario/villain/Zarim/zarim-illithid-luogotenente-cr12.md` (Round 2 e 3, Cosa sa dei PG, Misura) · `plans/esperimenti/tattiche-2026-11-15/duelli_arc09.py` (duello di Karruk) · `plans/esperimenti/tattiche-2026-11-15/profili_villain.py` (scontro `zarim-torneo`)
 - **Solo qui:** 20.000 prove per riga, seme 1372, campioni coi numeri della carta del 05/11, senza la scorta e senza il razorfiend. Contro Thorik il campione muore nel 79% dei duelli con la tattica scritta e con l'ira al primo turno, nel 57% con l'Attacco Poderoso sempre a −5; Karruk ripiega nel 5%. Contro Tordek il campione muore nel 76-77% in tutte e tre. Zarim senza le ondate è ucciso nel 54-55% dei casi e non uccide nessun PG, sia che salti Tordek sia che no: la scelta su Tordek è di coerenza, non di forza.
 
+### MS-0149 · 2026-11-15 · Eroi di Hammerfist: rosa a sei, eroe al DM sullo sfondo, Cantitrici e capi con nome
+
+- **Data:** 2026-11-15
+- **PR:** —
+- **ADR:** —
+- **Temi:** arc08 arc07 pregen eroi-di-hammerfist cantitrici decisione-dm schede pf1e
+- **Origine:** riga del 2026-11-15 «Eroi di Hammerfist, scelte del DM sulle card del 15/11» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha scelto sulle card del 15/11: due eroi nuovi (Ragnhild Mantoferro, Maga 10/Maestra del Sapere 3; Yrsa Portastendardo, Cavaliera 12 PF1e dell'Ordine del Drago), il loro destino (Ragnhild incide la Runa dei Custodi Eterni, Yrsa porta lo stendardo alla Cerimonia), l'eroe rifiutato mosso dal DM sullo sfondo, i nomi delle cinque Cantitrici, due capi dei novanta con nome e gesto (Hrolf e Yrsa), cognomi degli altri eroi invariati.
+- **Trovato nel repo:** ARC08-01 §PNG giocabili, ARC08-02 §3, ARC08-10 §5.6 e §6.1, ARC07-DEF-5 (comparse e colpo al re), schede nel Bestiario.
+- **Solo qui:** sono proposte del thread, non scelte del DM, le tre righe di tattica per ogni eroe, il conto dei bonus con un eroe mosso dal DM e la soglia «tre o quattro rifiuti → §5.5» (marcate come proposta in ARC08-10). La specializzazione in Invocazione di Ragnhild e il nome «Ragnhild» (proposto dal thread audit perché «Sigrun» è la guida delle Cantitrici) non hanno avuto una card a parte. Yrsa è una scheda PF1e in un arco 3.5: BMC, DMC e Percezione restano di PF1e. I pf seguono la convenzione del cancello dei numeri (dado medio arrotondato per difetto, senza massimo al 1° livello): 84 e 114.
+

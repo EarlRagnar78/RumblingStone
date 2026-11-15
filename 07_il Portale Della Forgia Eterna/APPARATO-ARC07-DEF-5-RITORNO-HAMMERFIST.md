@@ -12,6 +12,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | **Madre Superiora Dagmar Forgiapietra** | SCENA 2 | tenere vivo il re, e dopo di lui i novanta | sussurra le preghiere e tuona le benedizioni. Legge tutto come profezia: *«Sono tornati»* |
 | i novanta nani | SCENA 2 | — | fino all'apparizione non parlano, contano. Dopo gridano tutti insieme una parola sola, il nome della fortezza |
 | gli orchi | SCENA 2 | — | urlano per farsi coraggio. Quando la luce li colpisce smettono, e chi scappa scappa senza voltarsi |
+| Hrolf Spaccascudi e Yrsa Portastendardo | SCENA 2 | — | Hrolf non parla, si mette davanti. Yrsa grida il nome della fortezza per prima, e gli altri le vanno dietro |
 | il capo degli orchi | SCENA 2 | — | urla ordini in orchesco finché ha qualcuno a cui darli, poi niente |
 | gli hobgoblin sergenti | SCENA 3 | — | non urlano. Gli ordini li dà un fischietto, e a ogni fischio la fila cambia forma |
 | Aegis Fang | SCENA 3 | — | canta, non parla: frasi brevi e in maiuscolo, che tutti nella caverna sentono (pagina dell'artefatto) |

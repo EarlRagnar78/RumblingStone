@@ -2831,6 +2831,8 @@ Cariche pulite, tiene la corda interna, nerba solo per difendersi. Onore alto.
 Sta dietro, colpisce nelle curve cieche, punta a **disarcionare** più che a vincere.  
 }}
 
+> RC-001: il cuoio borchiato +1 e l'anello di protezione +1 spiegano la CA 19 (10, +4 Des, +4 armatura, +1 deviazione); l'anello, la pozione e gli arnesi da scasso vengono dal PNG dei Codex PF1e «Trapsmith» (Ladro 8), che per il resto porta pugnale, balestra, mantello e occhiali e non entra. Il nerbo con aghi è l'arma della scheda e non ha un prezzo nell'SRD; il veleno non è contato. Valore 3.505 mo contro i 9.400 dell'8° livello (DMG 3.5, Tabella 4-23).
+
 ---
 
 ### 1.3 Il Roster — gli 8 fantini con nome (personalità, prezzo, leve)
@@ -2893,6 +2895,8 @@ Statistiche-corsa astratte (mod. applicato ai tiri di Zona del fantino):
 **TATTICHE**
 Comanda l'assalto; usa **Silenzio** per soffocare gli allarmi, **Ragnatela** in stalla. **Cattura viva** = intel Fase 0 Rethmar + −1 clock Sonjak.  
 }}
+
+> RC-001: armatura completa +1 e scudo pesante di acciaio spiegano la CA 22 se la Destrezza è 12 (10, +9 armatura, +2 scudo, +1 Des); la scheda non scrive la Destrezza e questa è una lettura. Mantello, perla, pugnale e balestra vengono dal PNG dei Codex PF1e «Death Priest» (Chierico 9); il suo giaco di maglia +1, l'anello di protezione +1 e la fascia della saggezza non entrano. Il mantello non cambia numeri perché la scheda non scrive i tiri salvezza. Valore 4.709 mo contro i 12.000 del 9° livello (DMG 3.5, Tabella 4-23).
 
 
 ### 3.3 Servitore della Spora (GS 3, ariete vivente)
@@ -3118,7 +3122,7 @@ ___
 
 **STATISTICHE**
 ___
-Sag 18  
+Sag 18 · **Equipaggiamento** armatura completa +1, scudo pesante di acciaio, mantello della resistenza +1, perla del potere 1°, pugnale, balestra leggera con 20 quadrelli  
 
 **CAPACITÀ SPECIALI**
 ___
@@ -3162,7 +3166,7 @@ ___
 
 **STATISTICHE**
 ___
-Des 18 · **Abilità** Cavalcare +12, Raggirare +14, Furtività +14  
+Des 18 · **Abilità** Cavalcare +12, Raggirare +14, Furtività +14 · **Equipaggiamento** pozione di cura ferite moderate; cuoio borchiato +1, anello di protezione +1, nerbo con aghi, arnesi da scasso  
 
 **CAPACITÀ SPECIALI**
 ___

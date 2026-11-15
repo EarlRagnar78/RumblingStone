@@ -14,7 +14,7 @@ pf: 77
 pf-dado: 4d8+6d12+23
 ts: Temp +11, Rifl +2, Vol +3
 attributi: For 25 Des 8 Cos 15 Int 6 Sag 10 Car 7
-velocita: 12 m (12 m anche in armatura: andatura veloce da Barbaro)
+velocita: 10,5 m (in cotta di maglia; 15 m senza armatura: ogre 12 m + andatura veloce da Barbaro 3 m)
 attacchi:
   - Mischia randello enorme +15/+10 (2d8+10) — in ira +17/+12 (2d8+13); con Attacco Poderoso −5: +12/+7 (2d8+23)
   - Distanza roccia +7 (2d6+7, gittata 36 m)
@@ -25,7 +25,7 @@ attacchi:
 
 > [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
-Large giant, CE. **DV 4d8 + 6d12**. **hp 77** (**97 in ira**). **CA 18** (−1 taglia, +5 naturale, +5 cotta di maglia, −1 Des), contatto 8, colto alla sprovvista 18 — **16 in ira**. Iniziativa −1. Vel 12 m (12 m anche in armatura: andatura veloce da Barbaro).
+Large giant, CE. **DV 4d8 + 6d12**. **hp 77** (**97 in ira**). **CA 18** (−1 taglia, +5 naturale, +5 cotta di maglia, −1 Des), contatto 8, colto alla sprovvista 18 — **16 in ira**. Iniziativa −1. Vel 10,5 m in cotta di maglia (15 m senza armatura).
 **TS** Temp +11, Rifl +2, Vol +3 (**+13/+2/+5 in ira**). **BAB/Lotta** +9/**+20**.
 **Mischia** randello enorme +15/+10 (2d8+10) — **in ira +17/+12 (2d8+13)**; con Attacco Poderoso −5: **+12/+7 (2d8+23)**.
 **Distanza** roccia +7 (2d6+7, gittata 36 m).
@@ -41,3 +41,5 @@ Large giant, CE. **DV 4d8 + 6d12**. **hp 77** (**97 in ira**). **CA 18** (−1 t
 Notes: stirpe di ogre delle gallerie profonde sotto le Colline di Hammerfist, arruolata dalla Mano Rossa e distinta dagli **Skullcrusher** di montagna (`ogre-skullcrusher-cr5.md`). Scorta d'onore di **Ghaurush «Cenerevento»** (`Bestiario/villain/Ghaurush_Cenerevento/`). Due esemplari = EL 11; con Ghaurush CR 16 → **EL ≈ 16,5** (sotto il tetto APL+4 = 17). CA e pf sono **sotto** il benchmark PF CR 9 (CA 22 / pf 110): è un cannone di vetro corazzato — colpisce durissimo, muore in fretta. Voluto: sono comprimari, non muri.
 
 > correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-12): Incalzare Potenziato (senza Incalzare) sostituito con **Spingere Migliorato**, che è anche il prerequisito mancante di Colpo Terrificante. Nessun numero scritto cambia.
+
+> Decisione del DM del 2026-11-15 (card del thread delle regole): velocità 10,5 m come l'SRD. L'ogre ha 12 m, l'andatura veloce del Barbaro aggiunge 3 m, la cotta di maglia (armatura media) porta 15 m a 10,5 m. La nota «12 m anche in armatura» era sbagliata: l'andatura veloce si somma prima della riduzione dell'armatura, non la annulla.

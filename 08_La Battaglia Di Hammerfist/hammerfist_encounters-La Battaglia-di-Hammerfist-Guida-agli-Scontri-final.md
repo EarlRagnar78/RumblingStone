@@ -18,9 +18,9 @@ PERSONAGGI:
 🔴 = Nemici Elite (Boss/Mini-Boss)
 🟠 = Nemici Veterani 
 🟡 = Nemici Standard
-B = Borin Ferropugno (PNG Giocabile)
+B = Borin Giuraferro (PNG Giocabile)
 D = Dara Occhiolesto (PNG Giocabile)
-T = Thorin Runaforte (PNG Giocabile)
+T = Harbek Runaforte (PNG Giocabile)
 N = Nala Cantapietre (PNG Giocabile)
 🔵 = Alleati Nanici
 👑 = Re Thorek
@@ -80,7 +80,7 @@ VALLE DELL'AVVISTAMENTO (120m x 80m)
 **PNG GIOCABILI:**
 - **Dara (D):** Torre di vedetta, 18m di altezza, vista perfetta
 - **Borin (B):** Sentiero laterale, pronto per combattimento se necessario  
-- **Thorin (T):** Posizione centrale, può lanciare buff/debuff
+- **Harbek (T):** Posizione centrale, può lanciare buff/debuff
 - **Nala (N):** Nascoste tra le rocce, pronta per infiltrazione
 
 **NEMICI:**
@@ -90,7 +90,7 @@ VALLE DELL'AVVISTAMENTO (120m x 80m)
 
 ### **OBIETTIVI TATTICI PER PNG:**
 
-**BORIN FERROPUGNO:**
+**BORIN GIURAFERRO:**
 - **Azione Primaria:** Eliminare silenziosamente la pattuglia avanzata
 - **Azione Secondaria:** Proteggere gli altri PNG se scoperti
 - **Test Chiave:** Intimidire CD 18 per ottenere informazioni dai prigionieri
@@ -100,7 +100,7 @@ VALLE DELL'AVVISTAMENTO (120m x 80m)
 - **Azione Secondaria:** Eliminare scouts con tiro di precisione
 - **Test Chiave:** Sopravvivenza CD 22 per identificare rotte di fuga/attacco
 
-**THORIN RUNAFORTE:**
+**HARBEK RUNAFORTE:**
 - **Azione Primaria:** Lanciare Silence per coprire eliminazioni silenziose
 - **Azione Secondaria:** Detect Magic per identificare minacce magiche
 - **Test Chiave:** Conoscenze (Religione) CD 18 per riconoscere simboli draconici
@@ -180,7 +180,7 @@ BASTIONI DI HAMMERFEST (150m x 100m)
 
 ### **ATTIVITÀ DI PREPARAZIONE (4 ore disponibili):**
 
-**BORIN FERROPUGNO - "Organizzare la Difesa"**
+**BORIN GIURAFERRO - "Organizzare la Difesa"**
 - **Locazione:** Cortile Esterno con Re Thorek
 - **Attività 1:** Addestramento Tattico (Diplomazia CD 18)
   - *Successo:* +2 bonus attacchi a 30 nani veterani
@@ -200,7 +200,7 @@ BASTIONI DI HAMMERFEST (150m x 100m)
   - *Fallimento:* 1 trappola si attiva sui difensori
 - **Test di Sfida:** Individuare il punto esatto dove arriverà l'attacco principale
 
-**THORIN RUNAFORTE - "Benedizioni Divine"**
+**HARBEK RUNAFORTE - "Benedizioni Divine"**
 - **Locazione:** Altare di Moradin, cortile interno
 - **Attività 1:** Rune di Protezione (Conoscenze Arcane CD 19)
   - *Successo:* +2 CA a tutte le mura per 24 ore
@@ -227,7 +227,7 @@ I PNG possono scegliere di lavorare insieme per bonus aggiuntivi:
 - Prove combinate Diplomazia + Sopravvivenza (CD 15 ciascuna)
 - *Successo:* Tutti i difensori ottengono +1 att/+1 CA per primo giorno
 
-**THORIN + NALA:** Benedizione e Inganno
+**HARBEK + NALA:** Benedizione e Inganno
 - Prove combinate Sapienza Magica + Raggirare (CD 18 ciascuna)  
 - *Successo:* Le rune divine diventano invisibili ai nemici, sorpresa garantita
 
@@ -304,7 +304,7 @@ MURA ESTERNE - VISTA DALL'ALTO (200m x 150m)
 - **Round 2:** Tiro su Gigante più pericoloso - Freccia Bane Giganti  
 - **Round 3:** Coordinare altri balestrieri (+3 att per 5 round)
 
-**THORIN - Protezione Magica**
+**HARBEK - Protezione Magica**
 - **Posizione:** Cortile interno vicino all'altare
 - **Round 1:** Prayer (tutti gli alleati +1 att/danni/TS)
 - **Round 2:** Cure Mass Light Wounds (4d8+9 guarigione distribuita)
@@ -370,7 +370,7 @@ I Troll stanno scalando i muri laterali:
 - **Round 7-8:** Eliminare Troll #2 prima che raggiunga i balestrieri  
 - **Frecce Speciali:** Può usare frecce incendiarie per bloccare rigenerazione
 
-**THORIN - Miracoli sul Campo**
+**HARBEK - Miracoli sul Campo**
 - **Round 4:** Divine Power su Borin (+6 For per duello)
 - **Round 5:** Flame Strike su concentrazione orchi (8d6, Riflessi CD 19)
 - **Round 6:** Mass Cure Moderate Wounds sui difensori feriti
@@ -422,7 +422,7 @@ RITIRATA ORGANIZZATA (Round 9-12)
 
 **BORIN:** Azione di ritardo, combatte finché tutti non sono al sicuro
 **DARA:** Copertura con tiro di precisione, elimina inseguitori  
-**THORIN:** Healing di emergenza, benedizioni per la prossima fase
+**HARBEK:** Healing di emergenza, benedizioni per la prossima fase
 **NALA:** Coordinates evacuazione, prepara diversivi e trappole improvvisate
 
 ---
@@ -524,7 +524,7 @@ SOFFIO DRACONICO - AREA EFFETTO (Round 3)
 
 **OPZIONI DIFENSIVE DEI PNG:**
 
-**BORIN FERROPUGNO - "Il Sacrificio del Comandante"**
+**BORIN GIURAFERRO - "Il Sacrificio del Comandante"**
 - **Opzione A:** Interporsi tra drago e Re Thorek
   - Subisce il soffio al posto del Re (TS Riflessi CD 29, 14d4 acido)
   - Re Thorek subisce solo danni dimezzati da splash
@@ -549,7 +549,7 @@ SOFFIO DRACONICO - AREA EFFETTO (Round 3)
   - Se Freccia Slaying colpisce: Drago deve TS Tempra CD 20 o morte
   - Se fallisce morte: 6d6+1 danni comunque
 
-**THORIN RUNAFORTE - "Il Miracolo di Moradin"**
+**HARBEK RUNAFORTE - "Il Miracolo di Moradin"**
 - **Posizione:** Fuori dall'area del soffio
 - **Opzioni Magiche:**
   - **Heal** su Re Thorek (precast Round 2, ready trigger)

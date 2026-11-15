@@ -193,12 +193,12 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @deroga oggetti/porta-enorme ; il cancello, la Porta Interna e la porta dell'atrio hanno la luce di 6 m della tabella MISURE: sono portoni da fortezza, non porte
 @mark 1 ; BH34 ; Re Thorek XIII (Ftr/Nobile GS 16)
 @mark 2 ; BK34 ; Guardie Reali (elite)
-@mark 3 ; BI36 ; Madre Dana Forgiapietra (Clr 14)
+@mark 3 ; BI36 ; Madre Dagmar Forgiapietra (Clr 14)
 @mark 4 ; BF32 ; Cantitrici della Pietra (Clr/Brd 11)
-@mark 5 ; BG36 ; Thorin Runaforte (Clr)
+@mark 5 ; BG36 ; Harbek Runaforte (Clr)
 @mark 6 ; AG40 ; Ingegneri da Guerra (GS 3)
 @mark 7 ; BH53 ; Nani d'Élite (cuneo) (GS 4)
-@mark 8 ; BH54 ; Borin Ferropugno (Ftr)
+@mark 8 ; BH54 ; Borin Giuraferro (Ftr)
 @mark 9 ; AD69 ; Dara Occhiolesto (Rgr)
 @mark 10 ; AD71 ; Balestrieri Torre Ovest (GS 3)
 @mark 11 ; CN71 ; Balestrieri Torre Est (GS 3)
@@ -339,8 +339,8 @@ VISTA DAL CAMPO DI BATTAGLIA (Nemici Guardano Alto) ↑
 
 **GIORNO 1-2 (Intatti, Difesa Standard):**
 - **Dara Occhiolesto:** AD69, +20 m (in cima alla Torre Ovest, cecchino)
-- **Borin Ferropugno:** BH54 (Cortile Esterno, comando prima linea)
-- **Thorin Runaforte:** BG36 (Cortile Interno, vicino a Madre Dana, supporto cura)
+- **Borin Giuraferro:** BH54 (Cortile Esterno, comando prima linea)
+- **Harbek Runaforte:** BG36 (Cortile Interno, vicino a Madre Dana, supporto cura)
 - **Nala Cantapietre:** AY66 (Bastione G1, bardica/sabotaggio)
 - **Re Thorek XIII:** BH34 (Cortile Interno centro, protetto)
 - **Madre Dana:** BI36 (Cortile Interno, stazione di cura)
@@ -350,7 +350,7 @@ VISTA DAL CAMPO DI BATTAGLIA (Nemici Guardano Alto) ↑
 - **Re Thorek, al corno del drago:** sale sul cancello, sopra l'androne (BG-BJ 70-72), per tenere i nani ai loro posti; è lì che prende il soffio (MAPPA 2B-CORRETTA). I portatori lo riportano nel cortile interno per la scala ovest della scarpa
 - **Dara:** ancora AD69, +20 m (copre la ritirata)
 - **Borin:** BH54 (tiene la linea durante l'evacuazione)
-- **Thorin:** BH34 (lancia *Cura* per tenere in vita il Re a 8 PF)
+- **Harbek:** BH34 (lancia *Cura* per tenere in vita il Re a 8 PF)
 - **Nala:** BA21, fra la statua e la roccia (apre il tunnel segreto BA20)
 - **Re Thorek:** BH34 (morente a 8 PF, va portato)
 
@@ -419,8 +419,8 @@ VISTA DAL CAMPO DI BATTAGLIA (Nemici Guardano Alto) ↑
 ### ⚔️ TATTICHE (companion T5b, consolidato da POSIZIONI PG + DISTANZE)
 
 - **Disposizione difensiva (Giorno 1-2)**: Dara Occhiolesto in cima alla
-  Torre Ovest (AD69, +20 m, cecchino); Borin Ferropugno al comando della
-  prima linea nel cortile esterno (BH54); Thorin Runaforte nel cortile
+  Torre Ovest (AD69, +20 m, cecchino); Borin Giuraferro al comando della
+  prima linea nel cortile esterno (BH54); Harbek Runaforte nel cortile
   interno vicino a Madre Dana (BG36, supporto cura); Nala Cantapietre sul
   Bastione G1 (AY66, sabotaggio e bardica); Re Thorek XIII al centro del
   cortile interno, protetto (BH34); Madre Dana alla stazione di cura
@@ -446,7 +446,7 @@ VISTA DAL CAMPO DI BATTAGLIA (Nemici Guardano Alto) ↑
 | B — Cancello distrutto | −80 PF al giorno per ariete e bombardamento (200 → 40 a fine Giorno 2, 0 nel primo assalto del Giorno 3) | Cancello (BG-BJ73) a 0 PF | Giorno 3: varco di 6 m, nemici nel cortile esterno |
 | C — Breccia Muro Est | −120 PF da giganti e catapulte (240 → 120, metà Giorno 2) | breccia di 7,5 m nel Muro Est (CM-CP, righe 59-63) | secondo punto d'ingresso; Bastione G2 preso alle spalle |
 | D — Torre Est crollata | −80 PF di bombardamento continuo (160 → 80, metà Giorno 2) | cima della Torre Est collassa | perse 2 baliste e 10 balestrieri; copertura dimezzata |
-| E — Giorno 3, critico | esito combinato di B+C+D | il cortile esterno cade; l'atrio della cittadella (BG-BJ20) cede; Nala apre il tunnel dietro la statua (BA20); Thorin tiene in vita Re Thorek (BH34) | evacuazione verso il Cuore della Montagna (dettagli: `Hammerfist-L3-REVISED-Ultra-Clear.md`, MAPPA H3-1) |
+| E — Giorno 3, critico | esito combinato di B+C+D | il cortile esterno cade; l'atrio della cittadella (BG-BJ20) cede; Nala apre il tunnel dietro la statua (BA20); Harbek tiene in vita Re Thorek (BH34) | evacuazione verso il Cuore della Montagna (dettagli: `Hammerfist-L3-REVISED-Ultra-Clear.md`, MAPPA H3-1) |
 
 > Gli stati sono esiti aperti (D13): il trigger è dei dadi e delle scelte
 > dei PG (quanto riescono a rallentare i danni strutturali), mai del
@@ -665,7 +665,7 @@ Le tre rotte tratteggiate sulla griglia sopra SONO la MAPPA 3 della guida. Fasi 
 | Bastione Sud G2 (15 m sul cortile esterno) | BK-BT, righe 66-73 | 3 un. veterani + 1 un. balestrieri (40) + 2 baliste | — |
 | Cortile Esterno | AZ-BO, righe 52-54 | 5 unità Nani d'Élite (50), cuneo | **Borin** (BH54, comando) |
 | **Riserva**, cortile esterno | BS-CB, righe 56-57 | 2 un. balestrieri + 1 un. veterani (30) | il DM la manda dove si apre la breccia |
-| Cortile Interno — comando | AW-BT, righe 32-39 | 2 un. Guardie Reali (20), veterani scelti | **Re Thorek** (BH34) · **Madre Dana** (BI36) · **Thorin** (BG36) · **5 Cantitrici** (BD-BH32) |
+| Cortile Interno — comando | AW-BT, righe 32-39 | 2 un. Guardie Reali (20), veterani scelti | **Re Thorek** (BH34) · **Madre Dana** (BI36) · **Harbek** (BG36) · **5 Cantitrici** (BD-BH32) |
 | Bastione Nord B1 (+120 m) | W-AD, righe 21-28 | 2 un. veterani + 1 un. balestrieri (30) + 1 balista | — |
 | Bastione Nord B2 (+120 m, la torre nord del 372) | CM-CT, righe 21-28 | 2 un. veterani + 1 un. balestrieri (30) + 1 balista | — |
 | Ingegneri da Guerra | cortile interno, AE-AH righe 39-40 e dove serve | 4 unità (40) — riparano 1d4 PF/round | — |
@@ -747,10 +747,10 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @mark 1 ; T24 ; Fauci di Palude, Enorme 3 × 3, 15 m sopra il camminamento (Drago Nero Adulto Avanzato)
 @mark 2 ; U18 ; Guardie Reali (Elite, PF ~42)
 @mark 3 ; T19 ; Re Thorek XIII (Ftr/Nobile, PF 195): salito sul cancello al corno del drago, per tenere i nani ai posti
-@mark 4 ; S19 ; Borin Ferropugno (Ftr)
-@mark 5 ; AC16 ; Thorin Runaforte (Clr)
+@mark 4 ; S19 ; Borin Giuraferro (Ftr)
+@mark 5 ; AC16 ; Harbek Runaforte (Clr)
 @mark 6 ; D16 ; Nala Cantapietre (Brd)
-@mark 7 ; U9 ; Madre Dana Forgiapietra (Clr 14)
+@mark 7 ; U9 ; Madre Dagmar Forgiapietra (Clr 14)
 @mark 8 ; AA9 ; Cantitrici della Pietra (Clr/Brd)
 @mark 9 ; K26 ; Orchi sulla riva del fossato
 @mark 10 ; AF26 ; Orchi sulla riva del fossato
@@ -772,7 +772,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 ### 📍 OPZIONI DIFENSIVE PNG (dalla guida, con coordinate):
 - **BORIN (S19, nel cono)** — A: al round 5 si mette davanti alla lancia (il soffio non si para col corpo: DM 2026-11-04, DEF-2 Scena 6) · B: spinge via il Re (For CD 25; entrambi +2 TS; 1d6 da caduta) · C: AdO col martello sulla picchiata (−4; se colpisce, Concentrazione o soffio perso)
 - **DARA (Torre Ovest, ~45 m FUORI MAPPA a ovest)** — il Tiro Impossibile: round 2 mira (+1), round 3 tiro in picchiata CD 25; freccia *Slaying Dragons*: Tempra CD 20 o morte, altrimenti 6d6+1
-- **THORIN (AC16, sul Bastione G2, fuori dal cono)** — *Heal* preparato su Thorek · *Spell Immunity: Acido* round 1 · *Mass Cure Critical* round 4 · Invocazione a Moradin (Car CD 22: +4 sacro ai TS di tutti / fallita: −2)
+- **HARBEK (AC16, sul Bastione G2, fuori dal cono)** — *Heal* preparato su Thorek · *Spell Immunity: Acido* round 1 · *Mass Cure Critical* round 4 · Invocazione a Moradin (Car CD 22: +4 sacro ai TS di tutti / fallita: −2)
 - **NALA (D16, ai piedi della scala ovest)** — round 1 *Immagine Silenziosa* (drago illusorio sul fianco: Volontà CD 17 o −2 att) · round 2 *Frantumare* sulla sella del cavaliere · round 3 Ispirare Coraggio +2
 
 ### 🌍 AMBIENTE

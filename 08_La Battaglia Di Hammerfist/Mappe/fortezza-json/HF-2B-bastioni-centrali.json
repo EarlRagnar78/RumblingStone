@@ -244,7 +244,7 @@
   },
   {
    "faction": "Nani",
-   "name": "Borin Ferropugno (Ftr)",
+   "name": "Borin Giuraferro (Ftr)",
    "token": "🔵",
    "at": [
     27.0,
@@ -253,7 +253,7 @@
   },
   {
    "faction": "Nani",
-   "name": "Thorin Runaforte (Clr)",
+   "name": "Harbek Runaforte (Clr)",
    "token": "🔵",
    "at": [
     42.0,
@@ -271,7 +271,7 @@
   },
   {
    "faction": "Nani",
-   "name": "Madre Dana Forgiapietra (Clr 14)",
+   "name": "Madre Dagmar Forgiapietra (Clr 14)",
    "token": "🔵",
    "at": [
     30.0,

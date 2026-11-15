@@ -68,7 +68,7 @@ factions:
   - id: hammerfist-hero
     label: "Eroi di Hammerfist"
     baseline_env: [ mountain, any ]
-    leader: "Borin Ferropugno"
+    leader: "Borin Giuraferro"
   - id: aberration
     label: "Aberrazioni (illithid, grell, beholder, mind flayer)"
     baseline_env: [ underdark, dungeon ]

@@ -86,7 +86,7 @@ FACTION_KEYWORDS = {
     # due fazioni da un membro solo (`rhod-allies`, `rakshasa-hunter`) che
     # descrivevano uno **scopo**, non uno schieramento: quello sta in `Role`.
     "alleati-del-vale": ["jorr natherson", "therysol", "therisol"],
-    "hammerfist-hero": ["borin ferropugno", "dara occhiolesto", "thorin runaforte", "nala cantapietre", "tempestas", "dana forgiapietra", "lunapiena", "ventolesto", "orion pelleorsa"],
+    "hammerfist-hero": ["borin giuraferro", "dara occhiolesto", "harbek runaforte", "nala cantapietre", "tempestas", "dagmar forgiapietra", "lunapiena", "ventolesto", "orion pelleorsa"],
     "red-hand": ["hobgoblin", "red hand", "mano rossa", "wyrmlord", "goblin", "worg", "bugbear", "orc", "ogre", "ettin", "hell hound", "kulkor", "draxoksus", "koth", "azarr kul", "tiamat", "saarvith"],
     # ⚠️ «zalkatar» stava in questo elenco: e' un illithid warlock della
     # Torre Invisibile, non un comandante della Mano Rossa.

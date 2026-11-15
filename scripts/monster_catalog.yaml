@@ -478,14 +478,14 @@ monsters:
     role: generalist
     environment: any
     source_file: "07_il Portale Della Forgia Eterna/PortaleForgia-P3-PianoFuoco-PARTE2.md"
-  - id: nala-cantapietre-aeab1e
-    name: "Nala Cantapietre"
+  - id: nala-cantapietre-il-sorriso-prima-della-lama-aeab1e
+    name: "Nala Cantapietre, Il Sorriso prima della Lama"
     cr: 12.0
     faction: dauth-defender
     role: ally
     environment: mountain
     source_file: "Bestiario/png/Nala_Cantapietre.md"
-    notes: "uno dei 4 pregen (D6)."
+    notes: "uno dei 4 pregen (D6). Appellativo scelto dal DM il 2026-11-14."
   - id: nano-morlin-coalhewer-cr12-dd151c
     name: "Nano Morlin Coalhewer Cr12"
     cr: 12.0
@@ -528,14 +528,14 @@ monsters:
     role: leader-commander
     environment: mountain
     source_file: "Bestiario/png/dauth-commander-mercenari-nani-cr12.md"
-  - id: borin-ferropugno-86a214
-    name: "Borin Ferropugno"
+  - id: borin-giuraferro-colui-che-non-arretra-323a45
+    name: "Borin Giuraferro, Colui che non arretra"
     cr: 13.0
     faction: dauth-defender
     role: ally
     environment: mountain
-    source_file: "Bestiario/png/Borin_Ferropugno.md"
-    notes: "uno dei 4 pregen (D6). Distinto dai Rumbling Stones (PG reali). NON confondere Thorin (pregen chierico) con Thorik (PG) o Thorek (re), D2."
+    source_file: "Bestiario/png/Borin_Giuraferro.md"
+    notes: "uno dei 4 pregen (D6). Distinto dai Rumbling Stones (PG reali). Nome e appellativo scelti dal DM il 2026-11-14."
   - id: il-portale-della-forgia-eterna-cc9716
     name: "IL PORTALE DELLA FORGIA ETERNA"
     cr: 14.0
@@ -543,14 +543,14 @@ monsters:
     role: flier
     environment: aerial
     source_file: "07_il Portale Della Forgia Eterna/La_Piramide_Ricalibrata.md"
-  - id: madre-superiora-dana-forgiapietra-dbb8ca
-    name: "Madre Superiora Dana Forgiapietra"
+  - id: madre-superiora-dagmar-forgiapietra-detta-dana-dbb8ca
+    name: "Madre Superiora Dagmar Forgiapietra, detta Dana"
     cr: 14.0
     faction: dauth-defender
     role: ally
     environment: mountain
     source_file: "Bestiario/png/Dana_Forgiapietra.md"
-    notes: "adattamento originale (clero nanico RumblingStone). Named survivor canonico (`campaign-coherence.md` §1, insieme a Re Thorek)."
+    notes: "nome intero, *Dagmar Forgiapietra*, nelle scene solenni; *Dana* nell'uso, al tavolo e nei box (DM, 2026-11-14). Adattamento originale (clero nanico RumblingStone). Named survivor canonico (`campaign-c"
   - id: parte-2b-quest-tordek-monaco-torneo-epico-dauth-c07ebf
     name: "Parte 2B – Quest Tordek Monaco – Torneo Epico Dauth"
     cr: 15.0
@@ -565,7 +565,7 @@ monsters:
     role: ally
     environment: mountain
     source_file: "Bestiario/png/Re_Thorek_Hammerfist.md"
-    notes: "distinto da **Thorik** (PG guerriero) e **Thorin** Runaforte (pregen chierico), D2. È già in `campaign/state.md` §4 (NPC knowledge) come colui che ha nominato i Custodi Eterni."
+    notes: "distinto da **Thorik** (PG guerriero), D2. È già in `campaign/state.md` §4 (NPC knowledge) come colui che ha nominato i Custodi Eterni."
   - id: signore-ventolesto-755b44
     name: "Signore Ventolesto"
     cr: 8.0
@@ -1317,22 +1317,22 @@ monsters:
     role: leader
     environment: mountain
     source_file: "Bestiario/png/re-thorek-i-cr16.md"
-  - id: dara-occhiolesto-953f41
-    name: "Dara Occhiolesto"
+  - id: dara-occhiolesto-morte-dai-picchi-953f41
+    name: "Dara Occhiolesto, Morte dai Picchi"
     cr: 12.0
     faction: hammerfist-hero
     role: ally
     environment: forest
     source_file: "Bestiario/png/Dara_Occhiolesto.md"
-    notes: "uno dei 4 pregen (D6)."
-  - id: thorin-runaforte-4c63a7
-    name: "Thorin Runaforte"
+    notes: "uno dei 4 pregen (D6). Appellativo scelto dal DM il 2026-11-14."
+  - id: harbek-runaforte-custode-dell-ultima-runa-9f9c11
+    name: "Harbek Runaforte, Custode dell'Ultima Runa"
     cr: 12.0
     faction: hammerfist-hero
     role: ally
     environment: mountain
-    source_file: "Bestiario/png/Thorin_Runaforte.md"
-    notes: "uno dei 4 pregen (D6). ⚠️ **Thorin** = pregen chierico; **Thorik** = PG guerriero; **Thorek** = re. Tre persone diverse (D2, A10)."
+    source_file: "Bestiario/png/Harbek_Runaforte.md"
+    notes: "uno dei 4 pregen (D6). Nome e appellativo scelti dal DM il 2026-11-14: con *Harbek* cade la confusione con Thorik (PG) e Thorek (re)."
   - id: schiavo-psionico-cultista-69d482
     name: "Schiavo Psionico / Cultista"
     cr: 4.0

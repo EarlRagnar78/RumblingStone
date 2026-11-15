@@ -146,9 +146,11 @@ foglio e si cancella a matita.
 |---|---|---|---|---|---|
 | Borin (Guardia) | ______ □□□□□□□□□□ | ______ □□□□□□□□□□ | □□□ | □□□□□□ | □ |
 | Dara (balestrieri) | ______ □□□□□□□□□□ | ______ □□□□□□□□□□ | □□□ | □□□□□□ | □ |
-| Thorin (veterani) | ______ □□□□□□□□□□ | ______ □□□□□□□□□□ | □□□ | □□□□□□ | □ |
+| Harbek (veterani) | ______ □□□□□□□□□□ | ______ □□□□□□□□□□ | □□□ | □□□□□□ | □ |
 | Nala (veterani) | ______ □□□□□□□□□□ | ______ □□□□□□□□□□ | □□□ | □□□□□□ | □ |
 | capitano (veterani) | ______ □□□□□□□□□□ | ______ □□□□□□□□□□ | □□□ | □□□□□□ | □ |
+
+<!-- storico -->Fino al 2026-11-14 la terza squadra era di «Thorin»: il pregen chierico si chiama Harbek Runaforte per scelta del DM (card del 14/11).<!-- /storico -->
 
 Sotto: round □□□□□□ · sergente in campo □ · sergente fuggito □ · corno □ ·
 morale della rocca ____.

@@ -4,7 +4,7 @@
 
 <!-- apparato -->
 > ⭐ MASTER DEFINITIVO — la seconda delle tre serate coi pregen. I giocatori
-> giocano ancora Borin, Dara, Thorin e Nala dentro la visione della Corona.
+> giocano ancora Borin, Dara, Harbek e Nala dentro la visione della Corona.
 > La serata è l'assedio: tre giorni di battaglia campale col libretto, i duelli
 > coi comandanti dell'orda, il soffio del drago sul Re, la ritirata dentro la
 > montagna e l'imboscata nei tunnel, fino alla porta di mithral del Cuore
@@ -106,7 +106,7 @@
 > mentre nel buio dei tunnel gli assassini dell'orda lo aspettano.
 
 > **La cornice.** I giocatori non giocano i loro personaggi: giocano Borin,
-> Dara, Thorin e Nala, quattro nani di Hammerfist di mille anni fa, dentro la
+> Dara, Harbek e Nala, quattro nani di Hammerfist di mille anni fa, dentro la
 > visione che la Corona dei Re mostra ai Rumbling Stones (Handout 0).
 >
 > **Quando si gioca**: la serata dopo `ARC08-DEF-1`, con la scheda della
@@ -114,7 +114,7 @@
 > Scena 2 di `07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md`
 > `[CANONE — DM 2026-10-21]`.
 >
-> **Party**: i quattro pregen, livello 12-13 (Borin 13, Dara, Thorin e Nala
+> **Party**: i quattro pregen, livello 12-13 (Borin 13, Dara, Harbek e Nala
 > 12). Non guadagnano PX e non ne fanno perdere ai Rumbling Stones.
 
 ---
@@ -175,7 +175,7 @@ pendio. La scheda della serata è al DM. Stasera l'orda sale.
 | i bugbear assassini | nei tunnel, da prima della ritirata | il Re, nel buio |
 
 **I nomi che si somigliano**: al tavolo e nei box il re è «il Re» o «Thorek
-Hammerfist», Dana è «la Madre Superiora», il pregen Thorin è «Runaforte»
+Hammerfist», Dana è «la Madre Superiora», il pregen Harbek è «Runaforte»
 (Handout 0).
 
 ### Cosa preparare
@@ -257,7 +257,7 @@ compila comunque alla chiusura, con le righe che si sono giocate.
 
 ### Se lo divinano
 
-Thorin ha *comunione* (dodici domande, sì o no; dieci minuti di preghiera,
+Harbek ha *comunione* (dodici domande, sì o no; dieci minuti di preghiera,
 SRD: si fa di notte o all'alba) e Nala *sapere bardico*.
 
 | Segreto | Lo rompe | Chi lancia ottiene | Il modulo va avanti così |
@@ -324,7 +324,7 @@ libretto fa fuggire i comandanti a metà.
 | Reparto | AU | DU | PFU |
 |---|---|---|---|
 | Guardia del Cancello (Borin) | 11 | 22 | 12 |
-| veterani (Thorin, Nala) | 10 | 21 | 11 |
+| veterani (Harbek, Nala) | 10 | 21 | 11 |
 | balestrieri (Dara) | 9 | 18 | 9 |
 | hobgoblin | 12 | 22 | 10 |
 | guerrieri hobgoblin | 8 | 20 | 11 |
@@ -407,7 +407,7 @@ tutti insieme.
 
 ## §1 — HIGHLIGHT ASIMMETRICI PER PREGEN
 
-### ⚔️ BORIN FERROPUGNO — il nipote del vecchio re (Casa di Davide lead)
+### ⚔️ BORIN GIURAFERRO — il nipote del vecchio re (Casa di Davide lead)
 - Tiene il Cancello, il settore col fronte più largo, e ha davanti Gorthak.
   Il duello sul ponte è suo, se lo vuole (Scena 2), e sul ponte la sua
   Presenza Comandante dà +2 ai TS a chi gli sta vicino.
@@ -415,7 +415,7 @@ tutti insieme.
   spingerlo via (Scena 6). È la scelta della serata, e il giocatore la deve
   sentire arrivare dal Giorno 1: il Re è il fratello di suo nonno.
 
-### 🏹 DARA OCCHIOLESTO — l'occhio delle montagne (LotR lead)
+### 🏹 DARA OCCHIOLESTO — Morte dai Picchi (LotR lead)
 - Dalla Torre Ovest vede tutto il fronte: il suo arco tira anche nel settore
   vicino, e contro gli orchi vale +25. È lei che conta i giganti sulla strada,
   e col suo arco può fermare un macigno prima che parta (Scena 2, «Dara e i
@@ -424,7 +424,7 @@ tutti insieme.
   sola che conti (Scena 6). Nei tunnel sale sulla stalagmite e vede i
   bugbear prima degli altri, se li vede qualcuno (Scena 8).
 
-### ⚡ THORIN RUNAFORTE — la voce di Moradin (Andor lead)
+### ⚡ HARBEK RUNAFORTE — Custode dell'Ultima Runa (Andor lead)
 - Tiene le Mura, e il Giorno 2 ha dietro le Cantitrici: se le Mura cedono,
   cedono sotto il loro canto. Ha la *barriera di lame*, il *colpo
   infuocato*, la *guarigione*, la *pelle di pietra*: è il pregen che sposta un
@@ -579,7 +579,7 @@ nominano loro, il DM conferma.
    | Borin che fa paura all'orda | round 1 del Giorno 1: −1 AU all'orda in tutti i settori |
    | le rune, o un incantesimo di 3° | +1 al bianco nel settore di chi l'ha fatto, round 1 del Giorno 1 |
    | le trappole | ognuna annulla una tacca del Giorno 1 o del Giorno 2, quando il gruppo lo dice |
-   | il presagio di Thorin | il Giorno 1, il TS contro la palla di fuoco a +2 |
+   | il presagio di Harbek | il Giorno 1, il TS contro la palla di fuoco a +2 |
    | il presagio di Dara | round 1 del Giorno 1: gli orchi arrivano senza slancio. Il DM lo applica e non spiega cosa cambia (`ARC08-19` §1) |
 
 2. **Il libretto, l'ultimo pezzo** `[CANONE — DM 2026-10-21]`: il morale
@@ -640,7 +640,7 @@ un settore regge da solo: sono le carte e i duelli a decidere la giornata.
 | **1** | nessuna. Valgono le leve del round 1 (Borin, le rune, il presagio di Dara) | gli orchi alle scale, gli hobgoblin dietro; il primo bianco col +1 delle mura intatte |
 | **2** | **I giganti**: due macigni per settore, ognuno d20 + 9 contro la DU di un reparto del settore, anche lo stesso (col +1 del primo giorno e il morale; le merlature delle Mura non contano) `[CANONE — DM 2026-11-10, ADR-0118: otto giganti su quattro settori; +8 del masso nell'SRD, +1 di morale]`. Non si gioca se la ricognizione è stata «pulita» | il box dei giganti, qui sotto |
 | **3** | **Gorthak al cancello**: il fronte del Cancello sale a 4, e il Cancello può **Sfidare** | il box di Gorthak; il cancello comincia a perdere pf |
-| **4** | **La palla di fuoco** sul settore che ha più reparti in piedi: 1d4+1 PFU a un reparto, il giocatore tira d20 + 5 contro 16 (d20 + 7 se Thorin ha avuto il presagio) per dimezzare. E **il sorvolo** (qui sotto) | gli adepti dalla strada, e il drago |
+| **4** | **La palla di fuoco** sul settore che ha più reparti in piedi: 1d4+1 PFU a un reparto, il giocatore tira d20 + 5 contro 16 (d20 + 7 se Harbek ha avuto il presagio) per dimezzare. E **il sorvolo** (qui sotto) | gli adepti dalla strada, e il drago |
 | **5** | nessuna | l'orda si ritira al tramonto, se nessun settore ha ceduto; se uno ha ceduto, l'orda resta in quella breccia fino a buio e se ne va con la notte |
 
 Al round 2, con la carta dei giganti:
@@ -710,9 +710,9 @@ poi chi non è nel duello gioca i due troll contro chi è uscito, coi numeri
 dell'Appendice A.2, e il DM tiene Gorthak.
 
 **Gli incantesimi nel duello** valgono per l'SRD, non per il libretto. Una
-*barriera di lame* di Thorin sul ponte (muro o anello, 66 m, dura 12 minuti) fa
+*barriera di lame* di Harbek sul ponte (muro o anello, 66 m, dura 12 minuti) fa
 12d6 a chi la attraversa (Riflessi CD 22 dimezza): i troll rigenerano quel
-danno, Gorthak no. Thorin la lancia dalle Mura, se vede il ponte: è il suo
+danno, Gorthak no. Harbek la lancia dalle Mura, se vede il ponte: è il suo
 gesto del round, e le Mura tirano senza di lui.
 
 **Dove.** Sul ponte levatoio, sulla MAPPA 2A (BG-BJ, righe 74-78), davanti
@@ -816,11 +816,11 @@ gesto del round.
   incremento, contro CA **37** (Fauci lancia *armatura magica* all'alba, che
   dura 7 ore, e *scudo* prima di ogni passaggio, che ne dura 7 minuti):
   colpisce con 18 o più. Danni 1d8+8 ×3 al critico.
-- **Thorin**: *colpo infuocato* (12d6, Riflessi CD 21 dimezza) contro RI 21:
+- **Harbek**: *colpo infuocato* (12d6, Riflessi CD 21 dimezza) contro RI 21:
   1d20+12 contro 21. Oppure *dissolvi magie* mirato (d20 + 10 contro CD 18,
   uno per incantesimo): senza *scudo* Fauci ha CA 33, senza i due 29. Il
   drago non li rilancia in questo passaggio.
-- **Nala**: *dissolvi magie* come Thorin, con d20 + 8; o Ispirare Coraggio,
+- **Nala**: *dissolvi magie* come Harbek, con d20 + 8; o Ispirare Coraggio,
   che dà +2 ai TS contro la paura a chi la sente, cioè contro la Presenza; o
   un'*immagine silenziosa* (216 m) di una balista che si alza sull'altra
   torre: il drago ci crede se non la studia, e il soffio va lì invece che
@@ -900,7 +900,7 @@ duelli sono tutta la battaglia dei pregen.
   Poderoso. Grimjaw attacca il nano col martello più grosso, o il pregen del
   pendio, se c'è.
 - *Round 3 e dopo*: attacco completo; Tattico Superiore ogni round sul tiro
-  che serve (danni se la guardia colpisce, TS se Thorin lancia).
+  che serve (danni se la guardia colpisce, TS se Harbek lancia).
 - *Sotto 89*: indietro dietro la guardia, che resta e muore sul posto. Beve
   una pozione solo quando è già fuori.
 - *La guardia del corpo*: chi vuole colpire Grimjaw in mischia deve avere
@@ -939,7 +939,7 @@ A.5).
 > sono diventate di più. Qualcuno ci ha appoggiato un elmo ammaccato, e
 > nessuno lo toglie.*
 
-**Scheda d'entrata — la Madre Superiora Dana Forgiapietra, la voce del tempio** *(statistiche: Appendice A.10; `ARC08-02` §2; `Bestiario/png/Dana_Forgiapietra.md`. CA 29, 142 pf)*
+**Scheda d'entrata — la Madre Superiora Dagmar Forgiapietra, detta Dana, la voce del tempio** *(statistiche: Appendice A.10; `ARC08-02` §2; `Bestiario/png/Dana_Forgiapietra.md`. CA 29, 142 pf)*
 
 | | |
 |---|---|
@@ -967,8 +967,8 @@ Giorno 2. Sul pendio i giganti alzano la rampa di macerie verso il
 Muro Est: Dara, dalla Torre Ovest, la vede crescere (Osservare CD 15 al
 buio, con la scurovisione a 18 m non basta: serve la luna o una luce).
 
-**Se un pregen è morto.** Thorin ha *rianimare morti* e un diamante da 5.000
-mo; Dana ne ha un altro nel tesoro del tempio. Se il morto è Thorin, lo
+**Se un pregen è morto.** Harbek ha *rianimare morti* e un diamante da 5.000
+mo; Dana ne ha un altro nel tesoro del tempio. Se il morto è Harbek, lo
 rianima la Madre Superiora, col suo diamante. Il pregen torna il Giorno 2
 con un livello in meno, se il DM vuole il prezzo dell'SRD; il giocatore lo
 gioca comunque, o fa il capitano.
@@ -1088,7 +1088,7 @@ possono unirsi come per Gorthak, lasciando il loro settore alle tacche.
 
 **Il DM lo dice prima, in chiaro.** Grimjaw con quattro orog è uno scontro
 per tre o quattro eroi (EL circa 15): un pregen da solo cade quasi sempre
-prima che Grimjaw scenda a 89, e Thorin, Nala o Dara cadono al secondo
+prima che Grimjaw scenda a 89, e Harbek, Nala o Dara cadono al secondo
 round. La via per chi non vuole il duello è scritta qui sotto: nessuno lo
 sfida, e il Re scende a cercarlo. Il duello si gioca come quello di Gorthak:
 prima il round di battaglia di tutti, poi la mappa, e chi non è nel duello
@@ -1260,7 +1260,7 @@ Il round 2 di battaglia lo tirano i reparti da soli: al corno i quattro eroi
 corrono al cancello (Dara resta sulla Torre Ovest e tira da lì), e ogni
 settore lasciato da un eroe prende le sue tacche, come per chi scende a un
 duello; la Torre Ovest no, perché Dara tira dalla torre (`[CANONE — DM
-2026-10-22]`, domanda 14; prima qui nessun settore prendeva tacche). Il soffio sulle Mura viene prima del corno: Thorin, se è sulle
+2026-10-22]`, domanda 14; prima qui nessun settore prendeva tacche). Il soffio sulle Mura viene prima del corno: Harbek, se è sulle
 Mura, tira Riflessi CD 29 contro 14d4 come i suoi reparti.
 
 Nei round 3 e 4 ogni eroe sceglie: resta col Re (il suo settore tira senza
@@ -1305,7 +1305,7 @@ gli chiedono di scendere, il Re risponde: *«Se scendo io, scendono tutti.»*
 | **Re Thorek** | T19, sulla piattaforma sopra il cancello | 196 pf (Scena 3), meno i danni dei Giorni 1 e 2 se Dana ha dato le sue *guarigioni* ai pregen |
 | le Guardie Reali | intorno, U18 e sulla piattaforma | dodici nani |
 | **Borin** | S19, accanto al Re, se il giocatore non dice altro | nel cono |
-| **Thorin** | AC16, sul Bastione G2 | fuori dal cono |
+| **Harbek** | AC16, sul Bastione G2 | fuori dal cono |
 | **Nala** | D16, ai piedi della scala ovest | fuori dal cono |
 | **Dara** | in cima alla Torre Ovest, fuori mappa, ~45 m a ovest: dal drago sopra il fossato sono circa 80 m | fuori dal cono |
 | la Madre Superiora, le Cantitrici | U9 e AA9, nel cortile esterno | fuori dal cono, senza linea di vista sul drago dietro i bastioni |
@@ -1320,7 +1320,7 @@ di corsa: arriva al round 2 della sequenza.
 | Round | Fauci e il cavaliere | Cosa possono fare i pregen |
 |---|---|---|
 | **1** | in quota, a 60 m: il soffio è appena passato sulle Mura, e deve tornare (1d4 round, SRD). Il cavaliere tiene alto lo stendardo | prepararsi: incantesimi, spostarsi, azioni preparate |
-| **2** | scende a 45 m e gira sopra il fossato, cercando il Re. **Presenza terrificante**: Volontà CD 25 per tutti entro 90 m | Dara mira; Nala lancia l'illusione; Thorin protegge |
+| **2** | scende a 45 m e gira sopra il fossato, cercando il Re. **Presenza terrificante**: Volontà CD 25 per tutti entro 90 m | Dara mira; Nala lancia l'illusione; Harbek protegge |
 | **3** | prepara il **soffio a cono** con un round completo (house-rule della scheda, 1/giorno) e si mette in posizione, a 30 m sopra il fossato, sud | l'ultimo round per spostare il Re, o per colpire prima |
 | **4** | **il soffio a cono**: con Attacco in Volo scende, soffia e risale nello stesso round. 18 m centrato sul Re, 14d4 acido, Riflessi **CD 29** dimezza | vedi sotto |
 | **5** | **la picchiata**: Fauci carica la piattaforma e passa senza fermarsi; il cavaliere, in sella, colpisce il Re con la lancia (+18 in carica contro CA 30, 3d8+21 con Carica Devastante, e Punire il Bene +2/+4) `[CANONE — DM 2026-11-04, P16, il drago e il cavaliere]`. Un soffio e una carica non stanno nello stesso round: per questo la lancia viene dopo | l'ultimo round per mettersi davanti al Re, o per tirare al cavaliere |
@@ -1354,7 +1354,7 @@ prima stesura ne aveva alcune che le carte non hanno: sono corrette qui.
   la prende lui, contro la sua CA 25. È la scelta che il nipote di un re può
   fare una volta.
 - **B · Spingerlo via.** È una spinta (SRD, *bull rush*): Forza contrapposta,
-  Borin +5 (+7 in Postura Difensiva, +9 con la *forza del toro* di Thorin)
+  Borin +5 (+7 in Postura Difensiva, +9 con la *forza del toro* di Harbek)
   contro il Re +9 (For 20 e +4 di stabilità dei nani), perché il Re non vuole
   scendere. Se Borin vince lo sposta di 1,5 m, più 1,5 m ogni 5 punti di
   scarto: per la terrazza del bastione (riga 16), tre quadretti, deve vincere
@@ -1375,11 +1375,11 @@ prima stesura ne aveva alcune che le carte non hanno: sono corrette qui.
   round 3 tira: arco +21 con Nemico Prescelto, −4 per la distanza (circa
   80 m, terzo incremento), contro CA 37: colpisce solo col 20. Con Tiro Rapido
   quattro frecce: +19/+19/+14/+9 più gli stessi modificatori. Contro CA 29, se
-  Thorin o Nala hanno dissolto *scudo* e *armatura magica*, colpisce con 12.
+  Harbek o Nala hanno dissolto *scudo* e *armatura magica*, colpisce con 12.
 - **Oppure il cavaliere**: CA 23, 95 pf, a cavallo del collo. Con +15 (+19
   senza Nemico Prescelto, −4 di distanza) colpisce con 8: con Tiro Rapido fa
   circa 15 danni a round, e gliene servono sei. Da sola non lo abbatte prima
-  del round 5; con Thorin (*colpo infuocato*) o con le frecce di un'altra
+  del round 5; con Harbek (*colpo infuocato*) o con le frecce di un'altra
   torre, sì. Se il cavaliere è morto o fuori combattimento prima del
   round 5, la picchiata non ha la lancia: Fauci passa sulla piattaforma e
   basta. Legato alla sella, non cade: resta lì finché il drago vola.
@@ -1393,13 +1393,13 @@ prima stesura ne aveva alcune che le carte non hanno: sono corrette qui.
   invece di risalire (MAPPA 2B, «Tattiche»), e la scena va avanti sulla
   griglia coi suoi attacchi in mischia (Appendice A.5). Sotto i ~**230 pf**
   sale in quota e se ne va. Con *scudo* e *armatura magica* su, le sole frecce
-  di Dara non ci arrivano quasi mai: serve Thorin, o un *dissolvi magie*.
+  di Dara non ci arrivano quasi mai: serve Harbek, o un *dissolvi magie*.
 
-**Thorin** — il miracolo.
+**Harbek** — il miracolo.
 - ***Protezione dall'energia*** (acido) sul Re, se l'ha preparata: assorbe 120
   danni d'acido in tutto. Prende il soffio, e poi l'acido che resta nelle
   giunture, finché i 120 non sono finiti: poi l'acido brucia il Re (sotto).
-  Se Thorin sa del drago (lo ha divinato, o se lo aspetta), è la cosa giusta
+  Se Harbek sa del drago (lo ha divinato, o se lo aspetta), è la cosa giusta
   da fare, e compra tempo. Il Re prende lo stesso la lancia del cavaliere.
 - ***Dissolvi magie*** mirato su Fauci, al round 2 o 3, a 66 m: d20 + 10
   contro CD 18, uno per incantesimo. Senza *scudo* il drago ha CA 33, senza
@@ -1409,9 +1409,9 @@ prima stesura ne aveva alcune che le carte non hanno: sono corrette qui.
 - ***Guarigione*** sul Re dopo la lancia, al round 6: 120 pf. Lo tengono vivo
   per tutta la ritirata (sotto, «Il conto del Re»). ***Cura ferite leggere di
   massa*** sulle guardie. La «cura ferite critiche di massa» della
-  prima stesura non è sulla carta di Thorin.
+  prima stesura non è sulla carta di Harbek.
 - L'invocazione a Moradin (Carisma CD 22, +4 sacro ai TS) della prima
-  stesura **non è una regola**: Thorin ha *preghiera* (+1 ai TS entro 12 m),
+  stesura **non è una regola**: Harbek ha *preghiera* (+1 ai TS entro 12 m),
   e la si usa così.
 
 **Nala** — l'inganno.
@@ -1426,7 +1426,7 @@ prima stesura ne aveva alcune che le carte non hanno: sono corrette qui.
   stesura dava 5d6 alla cavalcatura.
 - **Ispirare Coraggio** al round 1: +2 ai TS contro la paura per chi la
   sente, cioè contro la Presenza terrificante.
-- ***Dissolvi magie*** su Fauci come Thorin, con d20 + 8. Mentre canta non
+- ***Dissolvi magie*** su Fauci come Harbek, con d20 + 8. Mentre canta non
   lancia incantesimi: o l'uno o l'altro, nel round.
 
 **Il conto del Re** `[CANONE — DM 2026-10-22: il Re arriva al Cuore a 8 pf
@@ -1558,7 +1558,7 @@ se fallisce, cadono **1d4 nani** e il pregen prende **3d6**. Un incantesimo
 di 3° o più speso sulla via, o un uso di canto di Nala, vale la prova
 riuscita per quella fase. Una via **senza nessuno** costa **1d4 nani a
 round**: sei round, una quindicina di nani. Una via **chiusa** non costa
-niente: la *barriera di lame* di Thorin (un anello di 9 m di raggio o un
+niente: la *barriera di lame* di Harbek (un anello di 9 m di raggio o un
 muro, dura 12 minuti) e il *muro di pietra* di Dana chiudono una via fino
 alla fine della scena. Dana ha il suo ultimo
 *muro di pietra*: lo lancia se un pregen glielo chiede, e poi entra nel tunnel
@@ -1571,7 +1571,7 @@ spezzi. Si scrivono nel Registro (`ARC08-03`) e passano alla 3A
 `[CANONE — DM 2026-11-04, P16, la ritirata e i tunnel]`.
 
 **Il Re, sulla barella**, porta ancora l'armatura: l'acido gli toglie 2d6 a
-round, e chi gli sta accanto (Thorin in AG10, o Dana) lo tiene sopra lo zero
+round, e chi gli sta accanto (Harbek in AG10, o Dana) lo tiene sopra lo zero
 con le cure (Scena 6, «Il conto del Re»). È cosciente: parla poco, dà ordini
 se glieli chiedono, non si alza. Nel tunnel, appena la statua è chiusa, gli
 slacciano l'armatura (1d4+1 minuti, mentre la colonna cammina): l'acido si
@@ -1627,7 +1627,7 @@ R19, a sud del Pilastro. **Dana** cammina accanto alla barella, in Q20. I
 pregen dove li mette il giocatore. La mappa propone Borin Q15, ma Q15 è a
 nord del Pilastro, dalla parte opposta del Re: qui il posto suggerito di
 Borin è **S19**, fra il Re e la bocca est da cui arrivano i suoi quattro
-assassini. Thorin O19, Nala O15, Dara L9, a circa 3 m dalla stalagmite S5 (L7).
+assassini. Harbek O19, Nala O15, Dara L9, a circa 3 m dalla stalagmite S5 (L7).
 
 Le sei bocche (MAPPA 3Z): **nord** P-R 1-3, la via giusta, che scende alla
 porta di mithral (Scena 9); **sud** P-R 30-33, da cui la colonna è arrivata;
@@ -1641,7 +1641,7 @@ scurovisione. Si nascondono dietro gli spigoli delle bocche, nella roccia
 
 **Il prima.** Il round 1 comincia quando gli hobgoblin caricano. Prima, chi
 lo dice può fare **una cosa**: salire su S5 (Dara, Scalare CD 10, +2 a
-Osservare), stare accanto al Re, preparare un'azione. Se Thorin ha divinato
+Osservare), stare accanto al Re, preparare un'azione. Se Harbek ha divinato
 l'imboscata (§0), tutti hanno un'azione preparata.
 
 **La sequenza** (MAPPA 3Z, «Sequenza dell'imboscata»).
@@ -1676,7 +1676,7 @@ pregen o il Re; **1d6** se al round 4 entrano gli orchi dal sud. Il totale va
 nella scheda (§7) e decide l'esito sotto.
 
 **I pregen, con le loro carte** (`ARC08-15`; la prima stesura dava a Nala la
-*polvere luccicante* e a Thorin la *barriera di lame* per un tunnel: la
+*polvere luccicante* e a Harbek la *barriera di lame* per un tunnel: la
 prima non è sulla carta di Nala, la seconda c'è).
 
 - **Borin**: Osservare +2, la peggiore delle quattro. Il suo posto è davanti
@@ -1687,12 +1687,12 @@ prima non è sulla carta di Nala, la seconda c'è).
   goblinoidi, ma la sua carta elenca orchi, giganti e draghi: i bugbear non ci
   sono, e il +4 non vale. Dall'alto tira con Tiro Rapido sui bugbear che
   toccano l'anello.
-- **Thorin**: accanto al Re. *Barriera di lame* su una bocca di tunnel la
+- **Harbek**: accanto al Re. *Barriera di lame* su una bocca di tunnel la
   sigilla (12d6 a chi passa, Riflessi CD 22; i bugbear hanno eludere, e con
   un Riflessi riuscito non prendono niente: la barriera li ferma meglio come
   muro che come danno). *Silenzio* non serve, *Preghiera* sì (+1 ai TS di
   tutti entro 12 m). La sua priorità è che il Re resti a 8. Un pregen
-  paralizzato si libera con *libertà di movimento* (se Thorin l'ha
+  paralizzato si libera con *libertà di movimento* (se Harbek l'ha
   preparato) o aspettando 1d6+2 round; un bugbear accanto a lui può dargli
   il **colpo di grazia** (azione di round completo, Tempra CD 10 + danni o
   muore), ed è la prima cosa che fa se il Re è coperto.
@@ -1842,7 +1842,7 @@ la storia va avanti.
 - **Due brecce il Giorno 1**: il morale scende di 4, e la riserva è già
   spesa. Il Giorno 2 comincia sotto zero, e la notte non lo rialza. L'orda
   normale per il Giorno 2 è una scelta del DM, dichiarata.
-- **Un pregen muore**: torna col *rianimare morti* di Thorin, se c'è il
+- **Un pregen muore**: torna col *rianimare morti* di Harbek, se c'è il
   diamante e la notte (Scena 3), o il giocatore passa al capitano.
 - **Il Re muore sul cancello o all'incrocio**: `ARC08-10` §2, la vittoria
   costosa. La 3A si gioca lo stesso, senza di lui: il discorso della carica lo
@@ -1967,7 +1967,7 @@ in `ARC08-15`.
 |---|---|---|---|---|---|---|---|
 | **Borin** | 142 | 25 | +6 | +13 | +8 | **+21** | Colpo Devastante 3/giorno (+4d6); Postura Difensiva (For 24, +26 pf); Presenza Comandante (+2 ai TS entro 9 m) |
 | **Dara** | 102 | 21 | +14 | +12 | +9 | **+19** (+25 orchi, +23 giganti, +21 draghi) | Tiro Rapido; *grazia del gatto* (+21, Riflessi +16); Comando Balestrieri |
-| **Thorin** | 114 | 22 | +7 | +13 | +16 | **+14** | *guarigione*, *barriera di lame*, *pelle di pietra*, *colpo infuocato*, *protezione dall'energia*, *preghiera*, *rianimare morti* |
+| **Harbek** | 114 | 22 | +7 | +13 | +16 | **+14** | *guarigione*, *barriera di lame*, *pelle di pietra*, *colpo infuocato*, *protezione dall'energia*, *preghiera*, *rianimare morti* |
 | **Nala** | 90 | 20 | +13 | +8 | +11 | **+13** | Ispirare Coraggio; *velocità*; *immagine silenziosa*; *immagine speculare*; furtivo +3d6 |
 
 <!-- /pagina -->

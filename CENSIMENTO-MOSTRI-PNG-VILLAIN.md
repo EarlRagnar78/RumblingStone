@@ -50,9 +50,9 @@
   Therysol, Comandante Dauth (Durgan Tozzefort, canonizzato dal DM il 2026-07-12), Arci-druido,
   Arcimago del Circolo, Druido-orso; dossier di Consiglio Rethmar, Lorana,
   Lythiel, Maewen, Tempestas, Therysol, Varis + i 10 file singoli
-  (Borin Ferropugno, Capitano Lunapiena, Dana Forgiapietra, Dara
+  (Borin Giuraferro, Capitano Lunapiena, Dagmar Forgiapietra, Dara
   Occhiolesto, Khorn, Nala Cantapietre, Orion Pelleorsa, Re Thorek,
-  Signore Ventolesto, Thorin Runaforte).
+  Signore Ventolesto, Harbek Runaforte).
 
 ## §3 — Sorgenti storiche `pregen-pcgen/` (→ lotto L1) — ✅ FATTO
 
@@ -141,7 +141,7 @@
 > orfani hanno il mini-dossier (Avatar Tiamat, Tyrgarun, Karruk, Zarim); i
 > dossier d'arco 🔗 sono cross-linkati e verificati (zero numeri duplicati).
 > Il «Comandante Dauth» è ora **Durgan Tozzefort** (rinominato da Borin per
-> non confliggere con Borin Ferropugno). La tabella resta come mappa storica.
+> non confliggere con Borin Giuraferro). La tabella resta come mappa storica.
 > ✅ **Khorn e Durgan Tozzefort canonizzati dal DM (2026-07-12)**: i flag
 > INFERRED sono stati rimossi da statblock, dossier e riferimenti d'arco.
 
@@ -156,7 +156,7 @@ d'arco → 🔗 L3 cross-link, oppure manca → 🔁 L2):
 | Salvatore | `09_.../P2C-Salvatore-Mercante-TESTO.md` | 🔗 L3 |
 | Fauci di Palude / Grimjaw / Gorthak | `08_.../ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` | 🔗 L3 (Gorthak: anche pregen Ettin §3.1) |
 | Belkram | `04_tomba_di_Belkram/**` (storico) | 🔗 L3 (post-mortem, D13) |
-| Eroi di Hammerfist (Borin F., Dara, Nala, Thorin R.) | `08_.../ARC08-02` (pregen) | 🔗 L3 |
+| Eroi di Hammerfist (Borin F., Dara, Nala, Harbek R.) | `08_.../ARC08-02` (pregen) | 🔗 L3 |
 | Maewen, Lythiel, Tempestas, Varis, Consiglio | schede nei dossier stessi | ✅ (verifica L2) |
 | **Khorn** | **nessuno** (marcatore INFERRED dichiarato nel dossier, sciolto il 2026-07-12) | 🔁 L2 (generare, flag INFERRED, via npc-villain-boosting) |
 | Re Thorek, Capitano Lunapiena, Dana F., Orion P., Signore Ventolesto | key stats sintetiche nel dossier | ✅ (verifica L2) |

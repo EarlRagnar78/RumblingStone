@@ -80,6 +80,18 @@ Gladiatore brutale che usa catene chiodate e acrobazie; perfetto come boss di me
 - **Pioggia di Ferri** (Ex):  
   - 1/giorno, azione standard: colpisce un bersaglio con un attacco a catena che infligge +2d6 danni extra e prova di Riflessi CD 18 o il bersaglio è considerato “entangled” per 1 round (catene che avvolgono).
 
+**Tattiche** `[CANONE — DM 2026-11-15, card]` (schema delle tattiche dei draghi; numeri della scheda, nessuno nuovo)
+
+- *Carattere e obiettivo*: è un gladiatore da pubblico, e vuole vincere bene davanti alla folla più che uccidere. Teme una cosa sola: restare senza spazio per la catena. Entra a sorpresa nella Fase 2 dell'incontro 5 (variante «brutale», MINIMAPPA-TIMELINE, Incontro 5), quando l'Ironclad ha già consumato i PG. Vuole Tordek a terra davanti a tutti.
+- *Cosa sa dei PG*: ha visto Tordek dagli spalti nei Giorni 1 e 2. Sa che carica e chiude la distanza, e che da nano è difficile da sbilanciare (stabilità, +4 nell'SRD). Lo sbilancia lo stesso: misurato, gli conviene più che disarmarlo (vedi sotto).
+- *Ambiente*: colonne fluttuanti e piastre elettriche. Sta a 3 m, al limite della portata della catena, con una colonna fra sé e chi carica. Sbilancia **verso una piastra attiva** chi non è un nano.
+- *Round 1*: entra dal lato opposto all'Ironclad, per prendere i PG in mezzo e avere l'attacco furtivo sul fiancheggiamento. Con Riflessi in Combattimento colpisce chi attraversa la sua portata di 3 m.
+- *Round 2 e dopo*: se ha due PG entro 3 m usa Danza delle Catene. Altrimenti fa un attacco completo e con il primo prova Sbilanciare Migliorato: se riesce, l'attacco gratuito arriva con Tordek prono, e quando Tordek si rialza provoca un altro attacco (Riflessi in Combattimento). Tiene Pioggia di Ferri per chi tenta di uscire dalla sua portata.
+- *Adattamento*: se l'Ironclad cade, smette di recitare per il pubblico e mira al PG più ferito. Il passo indietro per tenere la portata non serve: la catena chiodata minaccia anche a 1,5 m, e Tordek lo raggiunge con un passo di 1,5 m senza perdere l'attacco completo.
+- *Misura* (Tordek da solo, senza l'Ironclad; `plans/esperimenti/tattiche-2026-11-15/duelli_arc09.py`, 20.000 prove): Kragar si arrende sempre, in 2 round. Tordek finisce con 79 pf se Kragar lo sbilancia, 81 con soli attacchi completi, 86 se prova a disarmarlo. Da solo contro Tordek è un ostacolo, non un pericolo: la minaccia vera è la Fase 2 dopo l'Ironclad.
+- *Morale*: sotto i 25 pf si arrende in modo teatrale, perché è un torneo. Nel Giorno 3, con l'invasione, sta sull'anello esterno a proteggere la folla (MINIMAPPA-TIMELINE, Giorno 3).
+- ⚠ Danza delle Catene e Pioggia di Ferri non sono SRD: la prima ricorda Attacco Turbinante, la seconda è una manovra della casa. Sono segnalate al thread delle regole e qui non si toccano.
+
 **Frase presentatore**
 
 > “Catene come serpenti, ferri come fulmini: il pubblico lo ama… i guaritori un po’ meno. Fate rumore per **Kragar, il Re delle Catene!**”

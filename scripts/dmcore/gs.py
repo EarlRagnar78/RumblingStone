@@ -100,6 +100,25 @@ def naturale_col_modello(regola: dict, taglia: "str | None", base: "int | None")
     return {"esatto": base + piu} if base is not None else {"minimo": piu}
 
 
+def caratteristiche_col_modello(regola: dict, base: "dict | None") -> "dict[str, dict]":
+    """Le caratteristiche che un modello dà (`caratteristiche` in `[modelli_gs]`), una voce per punteggio:
+    {"senza": True} se il modello lo toglie, {"esatto": n} se lo fissa, {"minimo": n} se sta sopra la base
+    nota (i dadi vita in più e gli oggetti possono solo alzarlo) o sopra un minimo del modello.
+    Senza la `base` restano solo i punteggi tolti, fissati e i minimi."""
+    esito: "dict[str, dict]" = {}
+    for car in regola.get("senza", []):
+        esito[car] = {"senza": True}
+    for car, n in (regola.get("fisse") or {}).items():
+        esito[car] = {"esatto": n}
+    for car, n in (regola.get("almeno") or {}).items():
+        esito[car] = {"minimo": max(n, (base or {}).get(car, n))}
+    if base:
+        for car, piu in (regola.get("piu") or {}).items():
+            if car not in esito and car in base:
+                esito[car] = {"minimo": base[car] + piu}
+    return esito
+
+
 def _col_modello(noto: "tuple[str, dict, str]", livelli: "dict[str, int]", dv_razziali: int, base: "dict | None",
                  tabella: dict, dichiarata: bool, stessa_taglia: "bool | None") -> dict:
     """Il grado di sfida con un modello dell'SRD: per dadi vita (scheletro, zombi) o base più aumento."""

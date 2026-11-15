@@ -1377,3 +1377,17 @@ Se la taglia non è quella della base il grado atteso è un intervallo: +1 se è
 **Misura** contro main fc5c1a8e con `verifica_scheda.py Bestiario 0*/`: violazioni 30 = 30, non verificabili 368 → 369 (il cane infernale mezzo-immondo); schede con modello giudicate sull'armatura naturale 0 → 2.
 
 **Limiti dichiarati.** Azarr Kul (versione finale) e Therysol sono mezzi-draghi ma il tipo scrive solo «dragon (augmented …)»: il modello non si riconosce e il loro +4 non è giudicato. Il Ghostlord non ha la riga del tipo nel blocco: il +5 da lich non è giudicato. Il fantasma (bonus di deviazione dal Carisma) e il licantropo (+2, forme diverse) non hanno la chiave. Le caratteristiche che i modelli cambiano non sono in questo pezzo. PF1e non ha `[gs.modelli_gs]`: lì il controllo tace.
+
+### Lotto 5, decima parte — le caratteristiche che i modelli dell'SRD cambiano (2026-11-15)
+
+**Contesto.** I modelli cambiano le caratteristiche: i «mezzi» le alzano, i non morti perdono la Costituzione, scheletro e zombi perdono anche l'Intelligenza e hanno Saggezza 10 e Carisma 1. Nessun controllo lo guardava.
+
+**Decisione.** Ogni voce di `[gs.modelli_gs]` prende una chiave `caratteristiche` con la riga «Abilities» del suo «Creating a …» dell'SRD: `piu` (aumenti sopra la base), `senza` (punteggi tolti), `fisse` (punteggi fissati), `almeno` (celestiale e immondo: Intelligenza 3). `gs.caratteristiche_col_modello` fa il conto; `verifica_scheda._caratteristiche_col_modello` lo applica dentro la verifica `creatura_base`, alle schede con un blocco solo e un solo modello riconosciuto, con la regola `numero.caratteristiche.modello`. Una violazione sola per scheda, con tutti i punteggi che non tornano.
+
+**Dove la base si conosce.** I punteggi tolti e fissati si giudicano sempre. Gli aumenti si giudicano solo sopra la creatura base che la fonte dichiara («MM Dire Lion + Skeleton template»): `creature_base.dichiarata` prende `col_modello=True` e rende la base anche quando la fonte nomina il modello. Servono la stessa taglia e nessun livello di classe. Il punteggio scritto non può stare sotto base più aumento; sopra può starci (un punto ogni quattro dadi vita, gli oggetti) e non si giudica. Negli altri casi il controllo dice che gli aumenti non si riscontrano. La variante del DM si dichiara con la riga «Caratteristiche diverse dal modello: …» con DM, RC o ADR.
+
+**Cosa ha trovato.** `skeletal-dire-lion-cr7.md` scrive Des 15 e Car 10, i punteggi del leone crudele vivo: lo scheletro ha Des 17 e Car 1. Con Des 17 la CA passa da 13 a 14 e i Riflessi da +7 a +8. La scheda non si tocca: la scelta è del DM, sulla card del 2026-11-15. Letta a mano, fuori dal controllo: `hell-hound-mezzoimmondo-cr4.md` ha nel titolo «mezzo-immondo» ma i punteggi (For 15, Cos 15, Car 8 contro 13, 13, 6 del segugio dell'SRD) e il sottotipo «dragonblood» sono del modello draconico di un manuale fuori dall'SRD; anche questo è su card.
+
+**Misura** contro main 53d48bfe con `verifica_scheda.py Bestiario 0*/`: violazioni 30 → 31 (lo Skeletal Dire Lion), non verificabili 369 → 371 (segugio infernale e Draxoksus: la fonte non dichiara una base dell'SRD). Schede con modello giudicate sulle caratteristiche 0 → 5.
+
+**Limiti dichiarati.** Le schede con più blocchi restano fuori, come per l'armatura naturale. Sopra il minimo non si giudica: un punteggio troppo alto passa. Con livelli di classe i punteggi di partenza non sono quelli dell'SRD e gli aumenti non si riscontrano. Il licantropo non ha la chiave. PF1e non ha `[gs.modelli_gs]`.

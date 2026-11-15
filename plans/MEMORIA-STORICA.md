@@ -1582,3 +1582,15 @@ repo scritto con altre parole.
 - **Testo:** le voci di `[gs.modelli_gs]` portano la chiave `naturale` con la riga «Armor Class» dei modelli dell'SRD; il controllo sta dentro `creatura_base`. Il controllo ha trovato lo Skeletal Dire Lion (+4 contro il +2 dello scheletro Grande); il DM ha scelto sulla card del 2026-11-15 «+2 come l'SRD, CA 13» e la scheda è corretta nella stessa PR. Misura contro main fc5c1a8e: violazioni 30 = 30, non verificabili 368 → 369; schede con modello giudicate sull'armatura naturale 0 → 2.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** la base è nota solo per le razze fatte di livelli di classe (0, coboldo +1); altrove si giudica il minimo del modello. Una CA scritta come «contatto 11, alla sprovvista 16» non è un conto e non dà violazione. Azarr Kul finale, Therysol e il Ghostlord non sono giudicati perché il tipo non nomina il modello. `naturale_razze` sta dentro `[gs.modelli_gs]`, non in `[gs]`.
+
+### MS-0139 · 2026-11-15 · Regole: le caratteristiche che i modelli dell'SRD cambiano
+
+- **Data:** 2026-11-15
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole caratteristiche modelli scheletro zombi mezzo-immondo mezzo-drago lich vampiro fantasma
+- **Origine:** riga del 2026-11-15 «lotto 5 decima parte» in `plans/CHANGELOG.md`
+- **Testo:** le voci di `[gs.modelli_gs]` portano la chiave `caratteristiche` con la riga «Abilities» dei modelli dell'SRD; il controllo sta dentro `creatura_base` (regola `numero.caratteristiche.modello`). Ha trovato lo Skeletal Dire Lion: Des 15 e Car 10 del leone vivo contro Des 17 e Car 1 dello scheletro; la scelta è del DM, su card. Misura contro main 53d48bfe: violazioni 30 → 31, non verificabili 369 → 371; schede con modello giudicate sulle caratteristiche 0 → 5.
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** gli aumenti si giudicano solo sopra la base che la fonte dichiara, con la stessa taglia e senza livelli di classe, e solo come minimo. Il segugio infernale «mezzo-immondo» ha i numeri del modello draconico (For 15, Cos 15, Car 8, sottotipo dragonblood): visto a mano, il controllo non lo dice perché la fonte è un file PCGen e non dichiara la base. Questione aperta al DM su card.
+

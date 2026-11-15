@@ -1296,6 +1296,78 @@ def _naturale_col_modello(p: Path, testo: str, sis: str, blocchi: list) -> "tupl
                                  f"e la base non è nei dati: il di più non si riscontra")], True
 
 
+_CARATTERISTICA_SCRITTA = re.compile(r"\b(For|Des|Cos|Int|Sag|Car)\s*[:=]?\s*(\d+|[—–-])(?![\w+])")
+_VARIANTE_CARATTERISTICHE = re.compile(r"^>?\s*caratteristiche diverse dal modello[^\n]*", re.I | re.M)
+
+
+def _caratteristiche_col_modello(p: Path, testo: str, sis: str, blocchi: list) -> "tuple[list[dict], list[dict]]":
+    """Le caratteristiche di chi porta un modello dell'SRD (ADR-0126, lotto 5, decima parte).
+
+    Vale per le schede con un blocco solo e un solo modello riconosciuto. I punteggi che il modello
+    toglie o fissa si giudicano sempre. Gli aumenti si giudicano sopra la creatura base che la fonte
+    dichiara («MM Dire Lion + Skeleton template»), se la taglia è la stessa e non ci sono livelli di
+    classe: il punteggio scritto non può stare sotto base più aumento. Sopra può starci (un punto ogni
+    quattro dadi vita, gli oggetti). Una violazione sola per scheda, con tutti i punteggi."""
+    from dmcore import creature_base as CB
+    from dmcore import gs as GS
+    from dmcore import sistemi as S
+    if len(blocchi) != 1:
+        return [], []
+    sb = blocchi[0]["sb"]
+    tabella = S.dati(sis, "creature.costruzione").get("gs") or {}
+    dove = " ".join((sb.tipo or "", testo.split("\n", 1)[0], p.stem.replace("-", " ")))
+    noto = GS.modello_noto(dove, tabella)
+    if not noto or "caratteristiche" not in noto[1]:
+        return [], []
+    nome, regola = noto[0], noto[1]["caratteristiche"]
+    voce = {"file": VT_rel(p), "riga": blocchi[0]["riga"], "verifica": "creatura_base", "fonte": "srd",
+            "regola": "numero.caratteristiche.modello"}
+    scritte = {c.lower(): (None if not v.isdigit() else int(v))
+               for c, v in _CARATTERISTICA_SCRITTA.findall((sb.attributi or "").replace("−", "-"))}
+    if not scritte:
+        return [], [dict(voce, testo=f"«{nome}»: la scheda non scrive le caratteristiche, quelle del modello non si riscontrano")]
+    if _VARIANTE_CARATTERISTICHE.search(testo) and re.search(r"\b(?:DM|RC-\d+|ADR-\d+)\b", _VARIANTE_CARATTERISTICHE.search(testo).group(0)):
+        return [], []
+    # la base: quella che la fonte dichiara, anche se accanto nomina il modello
+    fonte = _FONTE_SCHEDA.search(testo)
+    trovata = CB.dichiarata(fonte.group(1), sis, col_modello=True) if fonte else None
+    base, perche = None, "la fonte non dichiara una creatura base dell'SRD"
+    if trovata and trovata[1].get("car"):
+        tipo = sb.tipo or ""
+        nomi = sorted(set(_classi_it()) | set(_classi_it().values()), key=len, reverse=True)
+        classi = re.search(rf"\b(?:{'|'.join(map(re.escape, nomi))})\s+\d+\b", tipo, re.I)
+        if classi:
+            perche = f"{trovata[0]} con livelli di classe: i punteggi di partenza non sono quelli dell'SRD"
+        elif _taglia_del_blocco(sb) != trovata[1]["taglia"]:
+            perche = f"taglia diversa da quella di {trovata[0]} ({trovata[1]['taglia']})"
+        else:
+            base = trovata[1]["car"]
+    attese = GS.caratteristiche_col_modello(regola, base)
+    scarti = []
+    for car in ("for", "des", "cos", "int", "sag", "car"):
+        a = attese.get(car)
+        if a is None or car not in scritte:
+            continue
+        ha, sigla = scritte[car], car.capitalize()
+        if "senza" in a and ha is not None:
+            scarti.append((sigla, str(ha), "—"))
+        elif "esatto" in a and ha != a["esatto"]:
+            scarti.append((sigla, "—" if ha is None else str(ha), str(a["esatto"])))
+        elif "minimo" in a and (ha is None or ha < a["minimo"]):
+            scarti.append((sigla, "—" if ha is None else str(ha), f"almeno {a['minimo']}"))
+    viol, nv = [], []
+    if scarti:
+        su = f" sopra {trovata[0]}" if base else ""
+        viol.append(dict(voce, atteso=", ".join(f"{c} {a}" for c, _, a in scarti),
+                         ha=", ".join(f"{c} {h}" for c, h, _ in scarti),
+                         testo=f"caratteristiche {', '.join(f'{c} {h}' for c, h, _ in scarti)}: il modello «{nome}»{su} dà "
+                               f"{', '.join(f'{c} {a}' for c, _, a in scarti)} (una scelta diversa va dichiarata)"))
+    if base is None and regola.get("piu"):
+        nv.append(dict(voce, testo=f"«{nome}»: {perche}, gli aumenti del modello "
+                                   f"({', '.join(f'{c.capitalize()} {n:+d}' for c, n in regola['piu'].items())}) non si riscontrano"))
+    return viol, nv
+
+
 def creatura_base(p: Path) -> "tuple[list[dict], list[dict]]":
     """Dadi vita razziali e armatura naturale della creatura base dichiarata (ADR-0126, lotto 5)."""
     import conformita_statblocchi as C
@@ -1307,6 +1379,9 @@ def creatura_base(p: Path) -> "tuple[list[dict], list[dict]]":
     mv, mn, col_modello = _naturale_col_modello(p, testo, sis, blocchi)
     viol += mv
     nv += mn
+    cv, cn = _caratteristiche_col_modello(p, testo, sis, blocchi)
+    viol += cv
+    nv += cn
     for b in blocchi:
         sb = b["sb"]
         trovata = _base_del_blocco(testo, sb, len(blocchi) == 1, sis)

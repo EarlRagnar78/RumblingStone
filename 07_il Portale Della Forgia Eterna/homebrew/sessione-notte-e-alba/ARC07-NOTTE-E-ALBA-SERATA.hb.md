@@ -1499,7 +1499,7 @@ tenda in piedi che brucia.
 |---|---|---|---|
 | **Zog'tar** (Iniz +9) | Ira Superiore, azione gratuita, e il grido *«A ME, CANI! IL CORNO!»*. Se la tenda è crollata è sotto il telo in fiamme: lo squarcia con l'ascia ed esce in un round (Riflessi CD 15, ha +9). Se è in piedi esce dal lato più corto, tagliando il telo. Prende fuoco quasi sempre: si getta a terra fuori dall'olio (+4) | Fuori, guarda in alto e non vede niente. Capisce: *«Dall'alto. Hanno ali.»* Esce dalla luce del fuoco e non ci rientra: non sta mai fermo dove un secondo barile lo troverebbe. Al round 3 scaglia il giavellotto con la *luce* del sacerdote, se il sacerdote è vivo. Se Grask è morto va al corpo e strappa la custodia: il glifo gli scoppia addosso, 5d8 sonori, Riflessi CD 18, e lui suona lo stesso (B8) | Raduna le guardie nel buio, lontano dalla tenda, e manda le lance a cercare per il campo chi ha portato il fuoco. Se un PG scende sotto i 45 m e si fa vedere, i giavellotti; se scende sotto i 3 m, la carica |
 | **Le quattro guardie** (Iniz +1) | Chi brucia si getta a terra fuori dall'olio (+4). Chi non brucia trascina fuori il sacerdote, se è vivo, oppure spegne Zog'tar con il mantello | Spengono chi brucia con i mantelli (+4, un'azione standard ciascuno), poi si mettono attorno al generale, spadoni in pugno, nel buio | Come Zog'tar. Non tirano verso l'alto finché nessuno indica un bersaglio |
-| **Il sacerdote** (se è vivo) | Si sveglia nel fuoco, indifeso fino al suo turno. Striscia fuori, quasi sempre in fiamme | Round 2 si spegne. Round 3 *vedere invisibilità* e *luce* sul giavellotto di Zog'tar | Cura chi brucia. Se vede un PG, lo indica a Balvar; *comando* arriva solo a 12 m |
+| **Il sacerdote** (se è vivo) | Si sveglia nel fuoco, indifeso fino al suo turno. Striscia fuori, quasi sempre in fiamme | Round 2 si spegne. Round 3 *vedere invisibilità* e *luce* sul giavellotto di Zog'tar | Spegne chi brucia (non ha cure preparate, cap. V A.2). Se vede un PG, lo indica a Balvar; *comando* arriva solo a 12 m |
 | **Balvar** (se è vivo) | Esce dal telo est, quello a sinistra, e si spegne. Guarda la botte squarciata e i rostri: lavoro dei fabbri di Hammerfist, lo riconosce al primo sguardo | Va da Zog'tar: *«Nani. Dall'alto.»* E la parola che conta: *«Chiamate il drago.»* Se Grask è morto e la custodia è intera, dà a Zog'tar la parola che la apre senza glifo | Il barile è un attacco: Balvar è «minacciato, o attaccato» (Scena 7). Al round 4 *dissolvi magie* ad area dove il giavellotto ha mostrato i PG, o alla cieca sopra la tenda (B13) |
 | **Grask**, il suonatore del corno | Se è vivo, sveglio o no, il boato lo sveglia: suona il corno entro **1d4 round**, come al primo grido di Zog'tar (Scena 6) | Suona finché qualcuno non gli dice di smettere. Sta dove sta: è lui il bersaglio più facile del campo | |
 | **Le due guardie del turno dopo** | Si svegliano nella loro tenda, a X4–Y5 | Arrivano al round 2, armate, da Zog'tar | Con le altre |
@@ -1527,8 +1527,8 @@ Il drago arriva 70 round dopo il primo suono, chiunque abbia suonato.
 | Chi | Che cosa fa fino all'alba | All'alba |
 |---|---|---|
 | **Zog'tar** | brucia di rabbia, ma non perde la testa: dorme al buio, fuori dalla luce, e ogni ora in un posto diverso. Fa spegnere i fuochi dello spiazzo e mette due guardie a guardare il cielo. Manda le lance a cercare per il campo, perché pensa a un traditore prima che a dei nani in volo | guida l'assalto (§10), con il segno delle ustioni addosso. Ai suoi dice che il fuoco era un segno: chi l'ha attraversato vince |
-| **Balvar** | è stato attaccato: non tratta più da solo (§10). Incide di nuovo i glifi scattati, rifà la custodia, e ricorda la botte di Hammerfist | sta sulla collina col drago, come nel canone. Ha capito che i nani vengono dall'alto, e lo dice al drago attraverso la Catena |
-| **Il sacerdote** | cura chi brucia fino a finire gli incantesimi. Prepara *vedere invisibilità* e *luce* per la notte dopo | sale sulla breccia con Zog'tar, se ci sono incantesimi da spendere |
+| **Balvar** | è stato attaccato: non tratta più da solo (§10). Incide di nuovo i glifi scattati, rifà la custodia, e ricorda la botte di Hammerfist | resta al campo, nella tenda o in quello che ne resta, come nel canone (cap. V, «Se l'alba arriva prima della tenda» e Scena 10). Ha capito che i nani vengono dall'alto, e lo dice al drago attraverso la Catena |
+| **Il sacerdote** | spegne e fascia chi brucia: cure non ne ha, perché la sua scheda («Il Viaggio a 1.000 Anni fa», Appendice A.2) non ne prepara. Prepara *vedere invisibilità* e *luce* per la notte dopo | resta al campo: sulla breccia Zog'tar sale senza di lui e senza Balvar (cap. VI, Scena 10) |
 | **Le guardie** | stanno attorno al generale, con gli spadoni in pugno, al buio. Chi ha visto morire i compagni nel fuoco odia i nani in un modo nuovo | combattono con Zog'tar sulla breccia |
 | **Grask**, se è vivo | non lascia più il corno. Dorme in piedi | suona all'alba, e il drago arriva sull'assalto |
 
@@ -3613,7 +3613,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 | **Sabotare gli arieti** | Disattivare o Artigianato **CD 20**: due arieti fuori uso. Costo: il duello comincia fuori dalle mura, con i PG separati di 18 m |
 | **Dalla notte** | Si applica dopo i tiri. **Un successo in meno**: campo pre-allertato; Zog'tar vivo all'alba; il boato del barile. **Un successo in più**: Zog'tar catturato e portato alle mura; i due Treant sul fianco dell'orda. Zog'tar umiliato annulla il successo in meno dell'allarme. Cure comprate alla cappella: il dado dei caduti, 1d4 difensori con un nome per ogni tipo di cura |
 | **Successi su 4** | **4**: le mura reggono, il re è in piedi dietro i PG. **2-3**: reggono a stento, duello normale. **1**: il camminamento est è perso, il re è a 8 pf. **0**: la breccia cede; il re a 8 pf, e su M7-B sei quadretti di terreno difficile e due nani a terra |
-| **Zog'tar sulla breccia** | Sul camminamento Zog'tar si stringe: −4 al colpire e −4 alla CA. Round 1: Ira, e l'Occhio su chi porta la Corona; poi il Colpo Terrificante. Se il drago cala, scende dalla scala. I PE sono quelli della Scena 8 e non si sommano |
+| **Zog'tar sulla breccia** | Sul camminamento Zog'tar si stringe: −4 al colpire e −4 alla CA. **Separa e finisce**: round 1 Ira, l'Occhio su Tordek e un colpo; dal round 2 il Colpo Terrificante butta Thorik nel cortile, poi l'attacco completo −5/+10 su chi resta davanti. Dopo il barile parte da 264 pf e sa che i nani volano. Muore in circa 3 round; un PG muore una volta su quattro. Se il drago cala, scende dalla scala. I PE sono quelli della Scena 8 e non si sommano |
 | **Sviluppo** | Il fallimento è un costo, mai uno stop: comunque vada, il drago cala (Scena 11). I nomi dei caduti vanno nel registro |
 | **Come finisce** | Mura tenute saldamente, tenute a stento o breccia ceduta; poi il drago cala sul cortile |
 | **Dove guardare** | «Dove sale l'assalto»; la tabella «Dalla notte»; «Come combatte sulla breccia»; la riga di scala per tre o cinque PG |
@@ -3704,12 +3704,31 @@ camminamento è largo quanto un tavolo da pranzo: ci si sta in uno, al massimo
 in due. Zog'tar è Grande e arriva a 3 m, quindi colpisce oltre il primo nano. Lassù
 **si stringe** (SRD): −4 al colpire e −4 alla CA finché resta sul camminamento,
 ed è per questo che vuole buttare giù chi ha davanti.
-- **Round 1**: Ira, e l'Occhio di Ossidiana su chi porta la Corona. Le quattro
-  guardie tengono la testa delle scale alle sue spalle: chi vuole arrivargli
-  dietro deve passare da loro.
-- **Round 2 e dopo**: il **Colpo Terrificante** (Appendice A.2) su chi gli sta
-  davanti, perché non deve entrare nel suo spazio; **Spingere Migliorato** solo
-  se il bersaglio è già al bordo. Thorik e Tordek hanno la stabilità dei nani,
+
+**Che cosa sa all'alba.** Il generale che sale sulla breccia non è quello della
+tenda: porta addosso la notte. Ha INT 16, ed è arrogante, non stupido.
+
+| Che cosa è successo di notte | Da dove lo sa | Che cosa cambia lassù |
+|---|---|---|
+| Il barile | il boato e la botte di Hammerfist nel fuoco (BARILE §8) | sa che i nani volano e vengono dall'alto («Dall'alto. Hanno ali.», B21). Le guardie in fondo alla scala guardano in alto e tengono i giavellotti per chi vola |
+| È ustionato | il fuoco della tenda | parte da **264 pf** invece di 283: 249 dopo il fuoco (mediana, BARILE §7) più 15 di riposo (SRD). Il sacerdote non ha cure preparate (A.2) e non lo cura |
+| Le guardie sono bruciate | il fuoco della tenda | 20-23 pf l'una, più 8 di riposo: chi scende alle spalle le trova a metà |
+| Thorik non si piega | lo vede al round 1: la Presenza Minacciosa gli scivola addosso (Mente Vuota della Corona) | sa chi deve togliere dalla linea per primo |
+
+Sale lo stesso: ai suoi ha detto che chi ha attraversato il fuoco vince (BARILE
+§8), e davanti all'orda non può tirarsi indietro. Lassù gioca per separare.
+
+- **Round 1**: Ira, e l'Occhio di Ossidiana su **Tordek**, che la sua Presenza
+  può piegare e che in ira ha la CA più bassa dei due nani; con l'azione che
+  resta, un colpo d'ascia. Le quattro guardie tengono la testa delle scale alle
+  sue spalle: chi vuole arrivargli dietro deve passare da loro.
+- **Round 2 e dopo: separa e finisce**. Se i
+  due nani gli stanno davanti, il **Colpo Terrificante** (Appendice A.2) butta
+  **Thorik** giù dal camminamento: è quello che non si piega, e senza di lui
+  Tordek resta solo. Con Thorik nel cortile (due round per rialzarsi e
+  risalire la scala), l'**attacco completo** con Attacco Poderoso −5/+10 su chi
+  resta davanti, Tordek se è in piedi. Quando Thorik torna in linea, lo butta
+  giù di nuovo. **Spingere Migliorato** solo se il bersaglio è già al bordo. Thorik e Tordek hanno la stabilità dei nani,
   +4 contro la spinta (SRD). Sul camminamento non c'è dove arretrare, e un PG
   scagliato oltre il bordo cade nel cortile o fuori, fra l'orda: le mura sono
   alte **4,5 m** (mappa M7-B), cioè 1d6 di caduta (SRD). Fa poco male; il
@@ -3719,6 +3738,14 @@ ed è per questo che vuole buttare giù chi ha davanti.
   in basso: 8d6.
 - **Contro chi vola**: i giavellotti, come nella tenda. Non lascia la breccia
   per inseguire nessuno: la breccia è sua.
+- **Quanto dura, misurato** (20.000 prove, PG della carta del 05/11, bonus
+  d'attacco dei nani stimati; `plans/esperimenti/tattiche-2026-11-15/`). Stretto
+  a CA 20, con Artemis e Hella che lo colpiscono dall'alto, Zog'tar muore
+  **quasi sempre, in circa 3 round**. Con «separa e finisce» un PG muore in una
+  prova su quattro (28%), e ai PG resta circa il 76% dei pf per il drago; con il
+  solo Colpo su chi ha davanti era l'11% e l'81%. **Se combatte fuori dal
+  camminamento**, dove non si stringe, le morti salgono al 69%: sulla breccia
+  il generale è forte quanto lo spazio che ha.
 - **Sotto il 30% dei pf** fa come nella tenda: cerca di portarsi via qualcuno.
 - **Se il drago cala mentre lui è vivo**, Zog'tar scende dalla scala e resta
   sotto le mura a guardare: vuole vedere il drago finirli. Il duello della

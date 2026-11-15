@@ -3078,12 +3078,31 @@ camminamento è largo quanto un tavolo da pranzo: ci si sta in uno, al massimo
 in due. Zog'tar è Grande e arriva a 3 m, quindi colpisce oltre il primo nano. Lassù
 **si stringe** (SRD): −4 al colpire e −4 alla CA finché resta sul camminamento,
 ed è per questo che vuole buttare giù chi ha davanti.
-- **Round 1**: Ira, e l'Occhio di Ossidiana su chi porta la Corona. Le quattro
-  guardie tengono la testa delle scale alle sue spalle: chi vuole arrivargli
-  dietro deve passare da loro.
-- **Round 2 e dopo**: il **Colpo Terrificante** (Appendice A.2) su chi gli sta
-  davanti, perché non deve entrare nel suo spazio; **Spingere Migliorato** solo
-  se il bersaglio è già al bordo. Thorik e Tordek hanno la stabilità dei nani,
+
+**Che cosa sa all'alba.** Il generale che sale sulla breccia non è quello della
+tenda: porta addosso la notte. Ha INT 16, ed è arrogante, non stupido.
+
+| Che cosa è successo di notte | Da dove lo sa | Che cosa cambia lassù |
+|---|---|---|
+| Il barile | il boato e la botte di Hammerfist nel fuoco (BARILE §8) | sa che i nani volano e vengono dall'alto («Dall'alto. Hanno ali.», B21). Le guardie in fondo alla scala guardano in alto e tengono i giavellotti per chi vola |
+| È ustionato | il fuoco della tenda | parte da **264 pf** invece di 283: 249 dopo il fuoco (mediana, BARILE §7) più 15 di riposo (SRD). Il sacerdote non ha cure preparate (A.2) e non lo cura |
+| Le guardie sono bruciate | il fuoco della tenda | 20-23 pf l'una, più 8 di riposo: chi scende alle spalle le trova a metà |
+| Thorik non si piega | lo vede al round 1: la Presenza Minacciosa gli scivola addosso (Mente Vuota della Corona) | sa chi deve togliere dalla linea per primo |
+
+Sale lo stesso: ai suoi ha detto che chi ha attraversato il fuoco vince (BARILE
+§8), e davanti all'orda non può tirarsi indietro. Lassù gioca per separare.
+
+- **Round 1**: Ira, e l'Occhio di Ossidiana su **Tordek**, che la sua Presenza
+  può piegare e che in ira ha la CA più bassa dei due nani; con l'azione che
+  resta, un colpo d'ascia. Le quattro guardie tengono la testa delle scale alle
+  sue spalle: chi vuole arrivargli dietro deve passare da loro.
+- **Round 2 e dopo: separa e finisce**. Se i
+  due nani gli stanno davanti, il **Colpo Terrificante** (Appendice A.2) butta
+  **Thorik** giù dal camminamento: è quello che non si piega, e senza di lui
+  Tordek resta solo. Con Thorik nel cortile (due round per rialzarsi e
+  risalire la scala), l'**attacco completo** con Attacco Poderoso −5/+10 su chi
+  resta davanti, Tordek se è in piedi. Quando Thorik torna in linea, lo butta
+  giù di nuovo. **Spingere Migliorato** solo se il bersaglio è già al bordo. Thorik e Tordek hanno la stabilità dei nani,
   +4 contro la spinta (SRD). Sul camminamento non c'è dove arretrare, e un PG
   scagliato oltre il bordo cade nel cortile o fuori, fra l'orda: le mura sono
   alte **4,5 m** (mappa M7-B), cioè 1d6 di caduta (SRD). Fa poco male; il
@@ -3093,6 +3112,14 @@ ed è per questo che vuole buttare giù chi ha davanti.
   in basso: 8d6.
 - **Contro chi vola**: i giavellotti, come nella tenda. Non lascia la breccia
   per inseguire nessuno: la breccia è sua.
+- **Quanto dura, misurato** (20.000 prove, PG della carta del 05/11, bonus
+  d'attacco dei nani stimati; `plans/esperimenti/tattiche-2026-11-15/`). Stretto
+  a CA 20, con Artemis e Hella che lo colpiscono dall'alto, Zog'tar muore
+  **quasi sempre, in circa 3 round**. Con «separa e finisce» un PG muore in una
+  prova su quattro (28%), e ai PG resta circa il 76% dei pf per il drago; con il
+  solo Colpo su chi ha davanti era l'11% e l'81%. **Se combatte fuori dal
+  camminamento**, dove non si stringe, le morti salgono al 69%: sulla breccia
+  il generale è forte quanto lo spazio che ha.
 - **Sotto il 30% dei pf** fa come nella tenda: cerca di portarsi via qualcuno.
 - **Se il drago cala mentre lui è vivo**, Zog'tar scende dalla scala e resta
   sotto le mura a guardare: vuole vedere il drago finirli. Il duello della

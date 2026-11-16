@@ -111,7 +111,8 @@ def prepara(lavoro: Path) -> Path:
 
 
 def avvia(comfy: Path, porta: int, cpu: bool) -> subprocess.Popen:
-    argomenti = os.environ.get("RS_COMFY_ARGS", "--lowvram").split()
+    # --lowvram e --cpu si escludono in ComfyUI: sulla CPU non c'è VRAM da risparmiare
+    argomenti = [] if cpu else os.environ.get("RS_COMFY_ARGS", "--lowvram").split()
     log = open(comfy.parent / "comfy-flux.log", "w")
     p = subprocess.Popen([sys.executable, "main.py", "--listen", "127.0.0.1", "--port", str(porta)]
                          + (["--cpu"] if cpu else []) + argomenti,

@@ -1,6 +1,6 @@
 # AI Enhancement Dependencies
 # Core AI/ML libraries
-transformers>=5.22.1
+transformers>=5.22.2
 torch>=2.0.0
 torchvision>=0.15.0
 

@@ -10,8 +10,8 @@
         "pr/99",
         "origin/claude/stone-audit-best-practices-yver7k"
       ],
-      "stato": "in-volo",
-      "dove": "PR #99 chiusa il 2026-10-24 (ADR-0088, scelta A del DM): 4a-4f su main, 4g-1 con la #278, inventory_inferred, regola delle echi §1-bis e nota Golarion ripresi il 2026-10-24; il ramo resta per 4g-2; 4h respinto (ADR-0007, ADR-0090); audit di agosto, validate_links e frontmatter.py superati"
+      "stato": "superato",
+      "dove": "PR #99 chiusa il 2026-10-24 senza merge (ADR-0088, scelta A del DM): 4a-4f su main, 4g-1 con la #278, 4g-2 fatta con la #313 (STATO P05, 2026-11-05), inventory_inferred, regola delle echi §1-bis e nota Golarion ripresi il 2026-10-24; 4h respinto (ADR-0007, ADR-0090); audit di agosto, validate_links e frontmatter.py superati. Da «in-volo» a «superato» il 2026-11-16 (PIANO-RECUPERO L6): la PR è chiusa e nessun lotto aspetta più il ramo"
     },
     {
       "ref": [
@@ -151,8 +151,16 @@
         "pr/216",
         "origin/ccr-011c17b8-5cnb6a"
       ],
+      "stato": "portato",
+      "dove": "PR #216 fusa il 2026-10-10 dentro la PR del riallineamento di PIANO-RECUPERO (revisione della prosa, MEMORIA.md con ADR-0087, D13, D17, D38, la Torre). Registrata il 2026-10-07 come «in-volo»; corretta il 2026-11-16 (PIANO-RECUPERO L6)"
+    },
+    {
+      "ref": [
+        "pr/424",
+        "origin/claude/project-thread-kcq3f8"
+      ],
       "stato": "in-volo",
-      "dove": "PR #216 aperta in bozza dal 2026-10-03 (revisione della prosa misurata; il lotto ARC-08 in plans/scrittura/lotto-ARC08-2026-10-03/): STATO-E-ORDINE §3, «Le PR ancora aperte, oggi». Registrata il 2026-10-07"
+      "dove": "PR #424 aperta in bozza dal 2026-11-14 (ADR-0135, la trascrizione della serata come bozza locale): RICERCA-TOOL-ESTERNI-DM-2026-08 §3, prova whisper.cpp su una serata registrata (PIANO-RECUPERO L4). Registrata il 2026-11-16 (PIANO-RECUPERO L6)"
     }
   ],
   "file": [

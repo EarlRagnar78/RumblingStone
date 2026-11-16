@@ -79,6 +79,34 @@ class TestMaiArrivati(unittest.TestCase):
         with mock.patch.object(C, "REGISTRO", reg), mock.patch("sys.stdout"):
             self.assertEqual(C.main(["--check"]), 0)
 
+    def test_la_voce_di_una_pr_chiusa_sopravvive_a_un_giro_senza_fetch(self):
+        """R-2 di PIANO-RECUPERO: il 2026-10-07 dieci voci della #72 (PR chiusa)
+        sono state potate come «scadute» perche' il clone non aveva il ramo.
+        Senza --fetch una voce senza ramo si conta e basta; il registro resta
+        com'era e --check non diventa rosso per lei."""
+        import contextlib
+        import io
+        reg = self.radice / "registro.json"
+        dati = {"rami": [], "file": [
+            {"percorso": "perso.md", "stato": "da-decidere", "dove": "D99"},
+            {"percorso": "della-pr-chiusa.md", "stato": "rifiutato", "dove": "PR #72"}]}
+        reg.write_text(json.dumps(dati), encoding="utf-8")
+        prima = reg.read_text(encoding="utf-8")
+        with mock.patch.object(C, "REGISTRO", reg):
+            buf = io.StringIO()
+            with contextlib.redirect_stdout(buf):
+                self.assertEqual(C.main(["--check"]), 0)
+            self.assertIn("1 voci senza il loro ramo", buf.getvalue())
+            self.assertNotIn("della-pr-chiusa.md", buf.getvalue(),
+                             "senza --fetch la voce non si nomina come scaduta")
+            # Con --fetch (qui senza rete) la stessa voce si nomina: e' il solo
+            # giro in cui si puo' giudicare, e anche allora non si pota da sola.
+            buf = io.StringIO()
+            with mock.patch.object(C, "fetch"), contextlib.redirect_stdout(buf):
+                self.assertEqual(C.main(["--fetch", "--check"]), 0)
+            self.assertIn("della-pr-chiusa.md", buf.getvalue())
+        self.assertEqual(reg.read_text(encoding="utf-8"), prima, "il registro non si tocca")
+
 
 class TestCloneSenzaBase(unittest.TestCase):
     def test_senza_origin_main_non_e_un_errore(self):

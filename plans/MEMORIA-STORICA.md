@@ -1724,3 +1724,15 @@ repo scritto con altre parole.
 - **Testo:** `creature_base.toml` del 3.5 porta `vel`, la velocità a terra senza armatura dalla riga «Speed» dell'SRD (378 creature su 409). La verifica `velocita` la usa per chi dichiara la base nella fonte. Ha trovato l'Ogre Frantumapietra: 12 m scritti contro 10,5 m (ogre 40 piedi, barbaro +10, cotta di maglia media che riduce 50 a 35); il DM ha scelto sulla card del 2026-11-15 «10,5 m come l'SRD» e la scheda è corretta nella stessa PR. Nella stessa PR la verifica `ricchezza` prende come livello il massimo fra classi lette e dadi vita dichiarati: una classe ignota («Diviner 5» di Dovil) non abbassa più il livello. Misura: violazioni invariate.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** un'assegnazione a tupla `razza, tabella[razza[0]] = razza[0], razza[1]` usa la `razza` già riassegnata: va scritta in due righe. Il file `misure-velocita.json` era fermo a prima di due correzioni del DM, quindi il passaggio 34 → 42 del banco non è tutto di questo pezzo. PF1e non rigenerato.
+
+### MS-0152 · 2026-11-15 · «Chi sa cosa»: una riga per il Conte Valerius e tre giorni nuovi
+
+- **Data:** 2026-11-15
+- **PR:** —
+- **ADR:** ADR-0125
+- **Temi:** stato campagna conoscenze chi-sa-cosa doppione decisione-dm coerenza-storia
+- **Origine:** riga del 2026-11-15 «"Chi sa cosa", dopo la #419» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha scelto di tenere una sola riga per il Conte Valerius: resta quella che dice che non sa né della Corona né di Sal. Sulle cinque righe senza giorno ha dato il 23 a Sonjak su Sal, lo 0 al Ghostlord e il 19 a Xal'thor sui Bracieri; le due su Therysol restano senza giorno. Righe 33 → 32, non verificabili 6 → 3, T2 sempre a 0
+- **Trovato nel repo:** `campaign/state.yaml` (sezione `conoscenze`) · `scripts/tests/test_state_data.py` · `scripts/tests/test_anagrafica_png.py`
+- **Solo qui:** una card del 14/11 chiedeva se la lettera di Brenna fosse già consegnata al tavolo citando la sessione del 3 maggio; quel file è marcato «scritto in anticipo, non giocato», quindi la risposta non è stata applicata e nessun testo è cambiato. Prima di citare un file di `campaign/sessions` come cronaca va letta la testata. Il test dell'anagrafica legge ancora `conoscenze` per posizione (indice 19 → 18): togliere una riga lo sposta
+

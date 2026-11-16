@@ -1,6 +1,8 @@
 # Piano: recupero delle decisioni perse e chiusura delle revisioni incompiute
 
-> **Stato**: 🟡 **in corso** (2026-10-10). Portato nella #230 su richiesta del DM
+> **Stato**: ✅ **completo** (2026-11-16, L5 e L6; L2 chiuso con loro). Resta aperta solo
+> `RIPRESA-PR#D2`, che non è di questo piano dal 2026-10-23 (§5 L6).
+> Era: 🟡 **in corso** (2026-10-10). Portato nella #230 su richiesta del DM
 > (*«questa PR la più recente e completa con tutto quello che è rimasto da fare»*):
 > L3 fatto, L1 in corso col merge della #230, D1 e D2 chiuse. Il resto in §5.
 > **Riallineato il 2026-10-10, dopo il merge di #229, #230 e #232** (richiesta del
@@ -271,7 +273,7 @@ Classe **G**, perché decide un ordine di merge. Aspetta D1 e D2. Si esegue nel
 thread della PR che arriva prima; qui si spunta. Se la #216 cambia ancora prima
 del merge, si rimisura §2.1.
 
-### L2 · Il registro dei rami, completo e che non dimentica `[🟡 2026-10-10: R-2 nello script e le dieci voci della #72 ripristinate; restano R-3 e il test]`
+### L2 · Il registro dei rami, completo e che non dimentica `[✅ 2026-11-16: R-3 misurato e il test della regola R-2; prima, 2026-10-10, R-2 nello script e le dieci voci della #72]`
 
 Fatto: `contenuti_nei_rami.py` stampa le voci «scadute» solo con `--fetch`;
 senza, dice quante voci non trovano il loro ramo e che non si potano. Le dieci
@@ -284,6 +286,25 @@ rami `claude/*` di §2.4 non hanno file senza posto: non serve una voce. Non
 fatti: R-3 (i commit dopo il merge sui rami delle PR fuse) e il test che prova
 la regola nuova, perché `main()` vuole un repo git e il test va scritto con il
 repo finto di `_repo_righe`.
+**Fatto il 2026-11-16** (con L6):
+- **R-3**, misurato su `main` a `91a4f1be` con `--fetch`: dei dieci rami di
+  `origin` con commit che `main` non raggiunge, quattro sono di PR fuse
+  (`scripts-audit-documentation` della #66, `paizo-editorial-components` della
+  #120, `campaign-session-tools` della #92, `map-generation-pipeline` della #51).
+  In tutti e quattro **ogni commit è precedente all'ultimo merge** del ramo
+  (squash: il contenuto è arrivato, i commit no), salvo `e5cf5177` del
+  2026-07-20 su `map-generation-pipeline`, che è della #52, chiusa senza merge e
+  già giudicata obsoleta in §2.4. Nessun commit con contenuto dopo un merge:
+  nessuna riga nuova per questo piano. Il comando:
+  `for b in $(git for-each-ref --format='%(refname:short)' refs/remotes/origin/); do git rev-list --count origin/main..$b; done`,
+  poi la data di ogni commit contro `merged_at` della PR del ramo.
+- **Il test** della regola R-2:
+  `test_la_voce_di_una_pr_chiusa_sopravvive_a_un_giro_senza_fetch` in
+  `scripts/tests/test_contenuti_nei_rami.py`, sul repo finto di `_repo`: senza
+  `--fetch` la voce senza ramo si conta e non si nomina, con `--fetch` si
+  nomina, e in tutti e due i giri `--check` resta verde e il registro non cambia.
+  Non serviva il repo di `_repo_righe`: basta quello dei file.
+
 `[engine: Sonnet 5 · effort: medio · qualità: contenuti_nei_rami --fetch --check esce 0; un test prova che una voce di PR chiusa sopravvive a un giro senza --fetch]`
 
 Classe **C**. Fa R-2 nello script; rimette le voci della #72 come erano prima
@@ -335,11 +356,26 @@ nessuno script le sa misurare, e un tipo «manuale» nel registro non
 scatterebbe mai (R-6). Le legge la routine del lunedì nei piani.
 `adozioni_in_attesa.py --check` è verde con tre voci, nessuna attiva.
 
-### L5 · Le due decisioni parcheggiate di RIPRESA-PR `[⬜]`
+### L5 · Le due decisioni parcheggiate di RIPRESA-PR `[✅ 2026-11-16, chiuso con la prova]`
 `[engine: Opus 5 · effort: basso · qualità: §4 non mostra più D11; la #106 chiusa con il commento che rimanda al registro, solo dopo il sì del DM]`
 
 Classe **G**. Aspetta D3 e D4. La chiusura della #106 è un'azione su una PR:
 si fa solo con la tua conferma esplicita.
+
+**Chiuso il 2026-11-16 perché i due criteri di qualità sono già veri**, non
+per tempo trascorso (regola del 2026-11-04):
+- §4 non mostra più D11: D3 e D4 sono passate a `RIPRESA-PR#D2` e `#D11` il
+  2026-10-23 (P15), e `RIPRESA-PR#D11` è **decisa** il 2026-11-08 (il perimetro
+  di ADR-0049 col Bestiario dentro, da pulire; ADR proposta fino all'avvocato IP).
+- la #106 è **chiusa senza merge** dal 2026-10-24 (`closed_at`
+  2026-10-24T10:12:23Z), col codice già su `main` in forma nuova (§2.4).
+
+Resta aperta `RIPRESA-PR#D2`, l'arte del Drappo: il DM ha scelto l'8/11 il
+metodo (2-3 tavole con FLUX.2 klein accanto a quelle di Gemini, A o B
+guardando), ma il confronto non è stato fatto e in `scripts/prove-4050/` non
+c'è uno script per il Drappo. Non è di questo piano: sta in RIPRESA-PR, ed è
+su card a Jfs (thread «Chiusura piano RECUPERO», 2026-11-16) con la
+consigliata, uno script per il portatile 4050 in un thread a parte.
 
 ### L7 · Le pratiche prese dai repo di riferimento `[✅ 2026-10-10]`
 
@@ -355,11 +391,30 @@ Classe **G**. Aspetta D7. Aggiunge `.github/pull_request_template.md`, le due
 sezioni al modello `ADR-0000-template.md`, e la prenotazione del numero ADR
 (§7). Non tocca gli ADR già scritti.
 
-### L6 · Chiusura `[⬜]`
+### L6 · Chiusura `[✅ 2026-11-16]`
 `[engine: inline · effort: basso · qualità: le tre misure di §2 rifatte, con i numeri prima e dopo in questa sezione]`
 
 Rimisura `contenuti_nei_rami --fetch --check`, `decisioni_dm --check` e le
 righe di §2.5, e chiude il piano.
+
+**Fatto il 2026-11-16**, su `main` a `91a4f1be`, clone con la storia intera:
+
+| Misura | 2026-10-10 (apertura) | 2026-11-16, prima di L6 | dopo L6 |
+|---|---|---|---|
+| `contenuti_nei_rami --fetch --check` | 8 file senza posto (la #72 potata); dopo L2 0 su 61 | **9 senza posto, esce 1**: tutti della #424 (la trascrizione whisper, bozza aperta dal 2026-11-14), non registrata. I tre file del ramo `vyifoi` che la memoria dava rossi non ci sono più | **0 senza posto, esce 0**: 476 riferimenti, 41 file mai arrivati, tutti con un posto (in volo 9, partita 5, portato 6, rifiutato 6, superato 15) |
+| voci «in volo» del registro che non lo sono | — | 2: la #99 (chiusa il 2026-10-24, la 4g-2 che aspettava fatta con la #313) e la #216 (fusa il 2026-10-10), ancora «aperta in bozza» | 0: la #99 «superato», la #216 «portato», la #424 «in volo» con il suo piano |
+| voci scadute anche con `--fetch` | 2 (`validate_skill_paths`, il Giorno 3 di maggio) | 2, le stesse | 2: restano come memoria del perché (R-2) |
+| `decisioni_dm --check` | non misurato all'apertura; 16 aperte il 2026-10-23, 14 dopo P15 | 1 aperta, aggregato allineato | 1 aperta (`RIPRESA-PR#D2`), 324 decisioni in 25 piani |
+| righe di §2.5 | 9 ferme | 0: rimisurate le legature (0 file con `ﬀ`/`ﬁ`/`ﬂ`), le `[INFERRED]` di DEF-4 e DEF-5 (0 e 0), INDEX di RICERCA-RUOLI, RICONCILIAZIONE, REVISIONE-ARC08 (✅ o 🔵); le righe di STATO di §2.5 stanno ora in §0-bis, che è diario | 0 |
+| righe ferme di STATO §0 trovate dalla stessa misura | — | 2: **P07** elencava sette decisioni aperte, ne resta una; **P21** dava ⬜ L2 e L4 | 0: P07 riscritta con la sola D2, P21 ✅ |
+
+Il criterio di §6 regge in due parti su tre: `--fetch --check` esce 0 con tutte
+le PR scaricate, e §4 di questo piano non ha domande aperte. La terza, «la
+routine del lunedì non trova una riga di §2.5», si verifica solo al prossimo
+giro (2026-11-23). **Limite dichiarato**: il registro dei rami è a posto oggi;
+la prossima PR in bozza con file nuovi lo rifà rosso finché qualcuno non la
+registra, perché `contenuti_nei_rami` non è un cancello di CI e non deve
+diventarlo (lo dice lo script stesso).
 
 ## 6 · Validazione
 

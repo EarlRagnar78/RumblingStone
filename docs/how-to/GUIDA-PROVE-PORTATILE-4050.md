@@ -19,6 +19,7 @@ thread del progetto. Non serve fare `git push` dal portatile.
 | [Lettore della coerenza](#1-il-lettore-della-coerenza-della-storia) | «Verificare la coerenza della storia» | `scripts/prove-4050/lettore-coerenza.sh` | 10-20 min | pronto, mai girato sulla 4050 |
 | [Prosa col 12B](#2-la-prosa-col-12b) | «LLM locale per la prosa» | `scripts/prove-4050/prosa.sh` | 1-1,5 h, più la lettura alla cieca | pronto; il 4B è già girato lì l'11/10 |
 | [Immagini in posa](#3-le-immagini-dei-personaggi-in-posa) | «Immagini dei personaggi in posa con l'AI» | `scripts/prove-4050/immagini.sh` | 2-3 h la prima volta, poi 20-40 min a scena | pronto, mai girato su 6 GB |
+| [Tavole del Drappo con FLUX](#3-bis-le-tavole-del-drappo-con-flux2-klein) | D2 di RIPRESA-PR (arte del Drappo), la tua scelta tra A e B | `scripts/prove-4050/drappo-flux.sh` | 30-60 min la prima volta (8,3 GB di pesi), poi 1-3 min a tavola | pronto; grafo provato su CPU nel container, mai girato sulla 4050 |
 | [Trascrizione della serata](#4-la-trascrizione-della-serata) | «Provare la trascrizione locale della serata» | lo script della trascrizione, nella PR #424 | una serata registrata | nella PR #424, non ancora su main |
 | [Chat di Gemini](#5-le-chat-di-gemini-nel-repo) | inventario Gemini, D6 | `scripts/importa_gemini.py` | 10 min, più l'attesa di Takeout | pronto; formato Takeout non visto dal vivo |
 
@@ -164,6 +165,68 @@ e `5_finale.png`, poi `console.log`, `comfy.log` e `gpu.txt`. Il ritratto
 finale lo giudichi tu a occhio: il banco dice posa, identità e glitch, non se
 è bello.
 
+## 3-bis · Le tavole del Drappo con FLUX.2 klein
+
+**Cosa misura.** È il collaudo della D2 di
+[PIANO-RIPRESA-PR-ABBANDONATE](../../plans/PIANO-RIPRESA-PR-ABBANDONATE.md):
+le diciotto immagini del Drappo sono di Gemini, che non espone il seed, e la
+domanda è se tenerle (A) o rigenerare tutto in locale con un seed fisso (B).
+L'8/11 hai scelto di decidere guardando due o tre tavole fatte con
+**FLUX.2 [klein] 4B** accanto a quelle di Gemini. Lo script ne fa tre, una per
+tipo (il ritratto di Vanna, la Ruota, il Drappo come oggetto), con due semi
+ciascuna, dagli stessi prompt del modulo
+(`ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md`). Le immagini del modulo non
+le tocca.
+
+**Licenza.** Il 4B è Apache 2.0, come il suo codificatore di testo (Qwen3-4B) e
+il VAE. Il [klein] 9B e il FLUX.2 [dev] no: girano sotto la FLUX Non-Commercial
+License, e `comfyui_batch.py` li rifiuta per nome come già faceva con
+FLUX.1 [dev] ([ADR-0019](../../plans/adr/ADR-0019-licenza-dei-pesi-non-del-software.md)).
+
+**Ci sta in 6 GB?** Non nella versione di serie: Black Forest Labs dichiara
+circa 13 GB di VRAM in bf16 (transformer 7,75 GB più Qwen3-4B 8 GB). Lo script
+usa i pesi ridotti: il transformer in fp8 (4,07 GB, pubblicato da BFL) e il
+Qwen3-4B in fp4 (3,85 GB, pubblicato da Comfy-Org), più il VAE (0,34 GB).
+ComfyUI con `--lowvram` ne tiene in GPU uno alla volta: prima il
+codificatore, poi il transformer. Sulla carta il transformer in fp8 più le
+attivazioni a 832×1216 sta tra 5 e 6 GB, cioè al limite: se non ci sta,
+ComfyUI ne lascia una parte in RAM e la tavola rallenta, senza errore. La RTX
+4050 (Ada) calcola in fp8 ma non in fp4: il codificatore viene decompresso
+mentre lavora, ed è più lento ma una volta sola per tavola. Il vincolo vero è
+la **RAM**: i pesi in RAM sono circa 8,3 GB, e con il desktop che ne occupa 11
+dei 16 serve chiudere Steam e Firefox. Lo script misura per ogni tavola i
+secondi, il picco di VRAM e il picco di RAM di ComfyUI: sono quei numeri a
+dire se ci sta, non questa stima.
+
+**Requisiti.** Il box `comfyui`, come per le immagini in posa (se non c'è,
+`scripts/comfyui-local/setup-distrobox.sh`). La cartella di lavoro è la stessa
+di `immagini.sh` (`~/rumblingstone-prove-4050/immagini-lavoro/`): stesso
+ComfyUI al commit `0df1646`, stesso venv. In più circa 8,3 GB di pesi, che lo
+script scarica da Hugging Face e controlla contro lo sha256 pubblicato.
+
+**Passi.**
+
+```bash
+scripts/prove-4050/drappo-flux.sh                          # 3 tavole × 2 semi
+scripts/prove-4050/drappo-flux.sh --solo tavola-la-cena --semi 4   # altre tavole, altri semi
+```
+
+Gli id sono quelli di `python3 scripts/comfyui_batch.py --lista`. ComfyUI
+parte sulla porta 8189, così non urta un ComfyUI già acceso sulla 8188. Se va
+in errore di memoria, `RS_COMFY_ARGS="--novram" scripts/prove-4050/drappo-flux.sh`,
+e lo dici nel riepilogo.
+
+**Cosa guardare.** Apri `~/rumblingstone-prove-4050/<giorno>/drappo-flux/confronto.html`:
+per ogni tavola, Gemini a sinistra e i semi di FLUX a destra. Accanto ci sono
+`confronto-<id>.jpg` (gli stessi affiancati, per il thread), `riepilogo.json`
+(secondi, picchi di VRAM e di RAM per tavola) e `flux/seme-N/PROVENIENZA.txt`
+con pesi, licenza e seed. Il confronto non è alla pari: le Gemini le hai scelte
+tu tra più tentativi, qui ci sono due semi senza scarto. Il gate di rifiuto
+del [README delle immagini](../../10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/immagini/README.md)
+§6 si applica il giorno dopo. Due cose che FLUX klein non fa qui: a cfg 1 il
+negativo («no text» e il resto) non entra nel calcolo, e i prompt sono quelli
+scritti per SDXL, non riscritti per FLUX.
+
 ## 4 · La trascrizione della serata
 
 La guida passo passo è nella PR #424 (la guida della trascrizione della
@@ -228,7 +291,8 @@ nell'ADR della prova:
 
 - lettore: `estrai_rag.py --unisci` e `muta_grafo.py valuta`, poi ESITO.md;
 - prosa: `plans/scrittura/RISULTATI.md` e ADR-0089;
-- immagini: il confronto con le prove su CPU, nel thread delle immagini.
+- immagini: il confronto con le prove su CPU, nel thread delle immagini;
+- Drappo: i `confronto-<id>.jpg` e `riepilogo.json` vanno nel thread «Scrivere lo script FLUX per il 4050», e la D2 si chiude con la tua scelta tra A e B.
 
 ## Se qualcosa va storto
 
@@ -238,4 +302,5 @@ nell'ADR della prova:
 | `Ollama non risponde su 11434` | Il terminale A con `start.sh` non è acceso o si è chiuso. |
 | Il 7B è lento come una CPU | Guarda `gpu.txt`: se la memoria usata è sotto 1 GB la GPU non è passata nel box. Riavvia il box: `podman restart llm-locale`. |
 | `CUDA out of memory` nelle immagini | Prima `RS_VLM_DEVICE=cpu`, poi `RS_COMFY_ARGS="--novram"`. Lo dici nel riepilogo. |
+| FLUX: una tavola impiega molti minuti | Guarda `riepilogo.json`: se `ram_comfyui_picco_mib` supera la RAM libera, il sistema sta usando lo swap. Chiudi Steam e Firefox e rilancia. |
 | Disco pieno | `PROVE_DIR=/srv/prove scripts/prove-4050/...` e, per i pesi delle immagini, `IMMAGINI_LAVORO=/srv/immagini`. |

@@ -161,6 +161,14 @@
       ],
       "stato": "in-volo",
       "dove": "PR #424 aperta in bozza dal 2026-11-14 (ADR-0135, la trascrizione della serata come bozza locale): RICERCA-TOOL-ESTERNI-DM-2026-08 §3, prova whisper.cpp su una serata registrata (PIANO-RECUPERO L4). Registrata il 2026-11-16 (PIANO-RECUPERO L6)"
+    },
+    {
+      "ref": [
+        "pr/461",
+        "origin/claude/project-thread-4eo6nn"
+      ],
+      "stato": "in-volo",
+      "dove": "PR #461 aperta in bozza il 2026-11-16: RIPRESA-PR D2 (arte del Drappo), script FLUX.2 klein 4B per il portatile 4050 in scripts/prove-4050/ (drappo-flux.sh, drappo_flux.py). La D2 resta aperta fino alla scelta del DM tra A e B"
     }
   ],
   "file": [

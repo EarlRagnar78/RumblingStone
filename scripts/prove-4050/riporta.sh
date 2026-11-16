@@ -10,7 +10,8 @@ SRC="$PROVE_DIR/$G"
 ARCHIVIO="$PROVE_DIR/prove-4050-$G.tar.gz"
 cd "$PROVE_DIR"
 find "$G" -type f \( -name '*.txt' -o -name '*.json' -o -name '*.md' -o -name '*.log' \
-  -o -name '5_finale.png' -o -name '1_genera_*.png' \) -size -8M | sort > "$PROVE_DIR/.elenco"
+  -o -name '5_finale.png' -o -name '1_genera_*.png' -o -name 'confronto-*.jpg' -o -name 'confronto.html' \
+  -o -path '*/drappo-flux/flux/*.png' \) -size -8M | sort > "$PROVE_DIR/.elenco"
 tar -czf "$ARCHIVIO" -T "$PROVE_DIR/.elenco"
 rm -f "$PROVE_DIR/.elenco"
 echo "Archivio: $ARCHIVIO ($(du -h "$ARCHIVIO" | cut -f1))"

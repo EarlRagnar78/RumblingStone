@@ -166,6 +166,41 @@ class TestVelocita(unittest.TestCase):
     #: schede con una decisione aperta del DM
     IN_ATTESA: "set[str]" = set()
 
+    def test_la_creatura_base_dichiarata(self):
+        """Coi dadi vita razziali la velocità è quella della creatura base della fonte (settima parte)."""
+        scheda = """# Ogre di prova (Barbaro 2) [INFERRED]
+**Faction**: none | **CR**: 5 | **Source**: {fonte} | **Status**: prova
+
+```statblocco
+gs: 5
+tipo: {taglia} giant, CE
+ca: 16
+ca-dettaglio: ({ca})
+pf: 50
+pf-dado: 4d8+2d12+18
+ts: Temp +9, Rifl +1, Vol +1
+attributi: For 21 Des 10 Cos 15 Int 6 Sag 10 Car 7
+velocita: {velocita}
+attacchi:
+  - Mischia randello +9 (2d8+7)
+```
+"""
+        def ogre(velocita, ca="-1 taglia, +5 naturale", fonte="SRD *Ogre* + Barbaro 2", taglia="Large"):
+            with tempfile.TemporaryDirectory() as d:
+                q = Path(d) / "ogre-prova-cr5.md"
+                q.write_text(scheda.format(velocita=velocita, ca=ca, fonte=fonte, taglia=taglia), encoding="utf-8")
+                v, n = V.velocita(q)
+            return [(x["atteso"], x["ha"]) for x in v], len(n)
+        # SRD: l'ogre ha «base speed 40 ft.», il barbaro +10; la cotta di maglia è media e riduce 50 a 35
+        self.assertEqual(S.dati("dnd35", "creature.base")["creature_base"]["ogre"]["vel"], 40)
+        self.assertEqual(ogre("15 m"), ([], 0))
+        self.assertEqual(ogre("12 m"), ([(50, 40)], 0))
+        self.assertEqual(ogre("10,5 m", ca="-1 taglia, +5 naturale, +5 cotta di maglia"), ([], 0))
+        self.assertEqual(ogre("12 m", ca="-1 taglia, +5 naturale, +5 cotta di maglia"), ([(35, 40)], 0))
+        # un'altra taglia è un dubbio; senza base dichiarata la scheda non si giudica
+        self.assertEqual(ogre("12 m", taglia="Huge"), ([], 1))
+        self.assertEqual(ogre("6 m", fonte="prova"), ([], 0))
+
     def test_il_bestiario_non_ha_violazioni(self):
         fuori, attese = [], set()
         for p in sorted((ROOT / "Bestiario").rglob("*.md")):

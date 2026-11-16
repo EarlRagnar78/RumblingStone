@@ -404,7 +404,9 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 ### **LE CANTITRICI DELLA PIETRA**
 *Unità d'Élite: 5 Nane Chierico 8°/Bardo 4°, GS 12 ciascuna*
 **LB Umanoide Medio (Nano)**
-**Leader:** Melodia Echopietra
+**Leader:** Sigrun Cantoprofondo
+**Le altre quattro:** Bergdis Ecodiferro, Asvor Mezzavoce, Thora Vocediroccia, Ingrid Ultimanota `[CANONE — DM 2026-11-15]`
+<!-- storico: fino al 2026-11-15 la guida si chiamava «Melodia Echopietra» e le altre quattro non avevano nome; nomi scelti dal DM sulla card del 15/11 -->
 **Iniziativa:** +0; **Sensi:** Scurovisione 18m; Ascoltare +15, Osservare +10
 
 **CA:** 20 | **PF:** 98 (8d8+4d6+48) | **TS:** Temp +13, Rifl +8, Vol +16
@@ -729,6 +731,64 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
     *   **Immagine Speculare (2° liv):** Ottima difesa personale.
     *   **Silenzio (2° liv):** Per neutralizzare incantatori nemici.
 *   **Canto di Guerra Nanico:** Quando usi Ispirare Coraggio, i nani alleati ottengono un **bonus morale extra di +1** ai tiri per colpire.
+
+---
+<div style="page-break-before:always"></div>
+
+### **RAGNHILD MANTOFERRO, la Mano che Scrive il Fuoco** `[CANONE — DM 2026-11-15]`
+**Classe:** Nana Maga Invocatrice 10°/Maestra del Sapere 3° (GS 13)
+**Ruolo:** Artiglieria arcana, controllo del campo, sapere antico.
+> *"Hai passato quarant'anni a ricopiare le rune che i chierici non sanno più leggere. Parli poco e scrivi molto. In battaglia sei l'artiglieria di Hammerfist: dove indichi col bastone, la pietra prende fuoco."*
+
+| STATISTICA | VALORE | DETTAGLI |
+| :--- | :--- | :--- |
+| **PF** | **84** | |
+| **CA** | **18** | (Bracciali dell'Armatura +4, Anello di Protezione +2, Des +2) |
+| **Velocità** | 6m | |
+| **TS** | Temp **+11**, Rifl **+9**, Vol **+14** | +2 contro incantesimi e veleni |
+| **Attacco Base** | +6 | |
+| **Attacco Melee** | **+5/+0** | *Bastone del Fuoco* (1d6−1) |
+| **For** 8, **Des** 14, **Cos** 18, **Int** 25, **Sag** 12, **Car** 6 | | |
+
+**Abilità:** Conoscenze (arcane) **+26**, Sapienza Magica **+25**, Conoscenze (storia) **+23**, Concentrazione **+20**, Decifrare Scritture +17, Conoscenze (piani) +17, Conoscenze (religioni) +17, Conoscenze (dungeon) +15.
+**Lingue:** Comune, Nanico, Draconico, Gigante, Orchesco, Terran.
+
+**ABILITÀ PRINCIPALI:**
+*   **Incantesimi da Mago (LI 13°):** 5/7/8/7/6/5/4/3 al giorno; CD 10 + livello + 7, +2 in Invocazione. Scuole proibite: Ammaliamento e Illusione. La lista preparata è nella Guida del DM.
+*   **Palla di Fuoco Ritardata (7°):** 13d6 di fuoco, CD 26. La tua carta più forte.
+*   **Palla di Fuoco rapida (7°):** con Incantesimi Rapidi la lanci come azione gratuita (una per round), e nello stesso round lanci anche un altro incantesimo.
+*   **Muri:** *Muro di Fuoco*, *Muro di Pietra*, *Muro di Forza* chiudono una breccia per tutto lo scontro.
+*   **Bastone del Fuoco (50 cariche):** *Mani Brucianti*, *Palla di Fuoco* (10d6, CD 22), *Muro di Fuoco* quando gli slot finiscono.
+*   **Sapere (+10):** come la conoscenza bardica, su leggende, persone e luoghi.
+
+---
+<div style="page-break-before:always"></div>
+
+### **YRSA PORTASTENDARDO, lo Stendardo dei Novanta** `[CANONE — DM 2026-11-15]` `[PF1e]`
+**Classe:** Nana Cavaliera 12°, Ordine del Drago (GS 12; classe di Pathfinder 1e)
+**Ruolo:** Portastendardo, comandante di fila, supporto in mischia.
+> *"Sei uno dei dieci capi dei novanta, e da vent'anni porti lo stendardo di Hammerfist. Quando gridi il nome della fortezza, i nani ti vanno dietro. Non sei tu che uccidi il campione nemico: sei tu che fai reggere la fila mentre gli altri lo fanno."*
+
+| STATISTICA | VALORE | DETTAGLI |
+| :--- | :--- | :--- |
+| **PF** | **114** | |
+| **CA** | **32** | (Arm. Completa +3, Scudo Pesante +2 e Scudo Focalizzato, Des +1, Deviazione +2, Naturale +2) |
+| **Velocità** | 6m | |
+| **TS** | Temp **+14**, Rifl **+8**, Vol **+10** | +2 contro veleni, incantesimi e capacità magiche |
+| **Attacco Base** | +12 | |
+| **Attacco Melee** | **+23/+18/+13** | *Ascia da Guerra Nanica +3* (1d10+10, critico x3) |
+| **For** 24, **Des** 12, **Cos** 16, **Int** 10, **Sag** 12, **Car** 14 | | |
+
+**Abilità:** Diplomazia **+17**, Intimidire **+17**, Percezione **+16** (vale per Ascoltare e Osservare), Cavalcare +16.
+**Lingue:** Comune, Nanico.
+
+**ABILITÀ PRINCIPALI:**
+*   **Stendardo:** finché lo stendardo si vede, gli alleati entro 18 m hanno **+3 ai TS contro la paura** e **+2 a colpire in carica**.
+*   **Sfida (4/giorno, azione veloce):** scegli un nemico. Contro di lui fai **+18 danni** in mischia, i tuoi alleati hanno **+4 a colpirlo** finché lo minacci, e lui ha **−2 alla CA** contro gli altri. Tu hai −2 alla CA contro tutti gli altri.
+*   **Tattico (3/giorno, azione veloce):** per 9 round gli alleati entro 9 m hanno **Muro di Scudi** e **Difesa Coordinata**.
+*   **Strategia (azione standard):** a ogni alleato entro 9 m dai +2 alla CA per 1 round, o +2 a colpire per 1 round, o un movimento immediato. Una volta per alleato per combattimento.
+*   **Aiutare gli Alleati:** quando usi aiutare un altro, l'alleato prende **+4** invece di +2.
+*   **Attacco Poderoso con Concentrazione Furiosa:** −4 a colpire e +8 ai danni, ma il primo attacco del round non prende la penalità.
 
 ---
 <div style="page-break-before:always"></div>

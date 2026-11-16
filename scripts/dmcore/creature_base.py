@@ -74,13 +74,14 @@ def creatura(nome: str, sistema: str = "dnd35") -> "dict | None":
     return tabella(sistema).get((nome or "").strip().lower())
 
 
-def dichiarata(fonte: str, sistema: str = "dnd35") -> "tuple[str, dict] | None":
+def dichiarata(fonte: str, sistema: str = "dnd35", col_modello: bool = False) -> "tuple[str, dict] | None":
     """La creatura base che la riga `fonte` dichiara, o None.
 
     None anche quando la fonte nomina un archetipo: la base c'è, ma i suoi
-    numeri non valgono più così come sono."""
+    numeri non valgono più così come sono. `col_modello` la rende lo stesso:
+    serve a chi sa applicare il modello sopra quei numeri."""
     testo = _SENZA_NUMERI.sub(" ", (fonte or "").lower())
-    if not testo.strip() or _ARCHETIPO.search(testo):
+    if not testo.strip() or (_ARCHETIPO.search(testo) and not col_modello):
         return None
     for scritto, chiave in _nomi(sistema):
         if re.search(_PRIMA + re.escape(scritto) + r"s?\b", testo):

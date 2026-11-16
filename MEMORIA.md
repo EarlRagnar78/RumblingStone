@@ -86,22 +86,22 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
 | 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Tattiche dei draghi contro il *See the Unseen* di Artemis, indicazione del DM d… | ✅ tre righe di tattica, nessun numero cambiato |
+| 2026-11-15 | AVVENTURE-COMMUNITY | «Chi sa cosa», dopo la #419: una riga per il Conte Valerius e tre giorni dalle… | «Chi sa cosa», dopo la #419: scelta del DM sulla card del 14/11 (thread dell'audit) «Una sola, la più completa». In `campaign/state.yaml` le righe del Conte Va… |
+| 2026-11-15 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 7 settima parte: la velocità delle creature coi dadi vita razzi… | In PR |
+| 2026-11-15 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 decima parte: le caratteristiche che i modelli dell'SRD cambi… | In PR |
+| 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Eroi di Hammerfist, scelte del DM sulle card del 15/11: rosa a sei con **Ragnhi… | In PR |
+| 2026-11-15 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 3: duello di **Karruk** sui gradini (Ca… | ✅ Karruk contro Thorik, campione morto nel 79% dei duelli (57% con l'Attacco Poderoso sempre, che contro la CA 27 conviene di meno); contro Tordek nel 77%; Zar… |
 | 2026-11-15 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 2, scelte del DM sulle card del 15/11:… | ✅ Zalkatar da solo: almeno un PG morto nel 40% dei combattimenti (0% con le fasi di prima), Zalkatar ucciso nel 65% (81%); Xilthra senza scorta: fugge col Patt… |
 | 2026-11-15 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 1 (Torneo di Dauth), scelte del DM sull… | ✅ Xal'thor contro Tordek da solo: Tordek muore nel 24% dei duelli (15% con la ricarica); Kragar contro Tordek: 79 pf rimasti a Tordek con lo sbilanciare, 86 co… |
 | 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Tattiche dei draghi, seconde card del DM del 15/11: **Ozyrrandion** il tentator… | ✅ tre righe di tattica nelle schede, nessun numero cambiato |
 | 2026-11-15 | PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA | Tattiche di villain e PNG, primo gruppo (ARC-07): Zog'tar sulla breccia dell'al… | ✅ Zog'tar muore in circa 3 round; un PG muore nel 28% delle prove (11% col canone di prima) |
 | 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Tattiche dei draghi, richiesta del DM del 15/11, scelte del DM sulle card del 1… | Fauci: almeno un PG morto dal 48-59% al 5-34% delle prove, drago ucciso da 1-3% a 0%; Tyrgarun in Fase 4: col canone travolge i soli PG (59-80%), ferito e con… |
 | 2026-11-15 | PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA | ARC-07 DEF-4 Scena 11, la tattica di Skullcrusher | ✅ |
-| 2026-11-15 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Prove sul portatile con la RTX 4050, richiesta del DM del 15/11: per ogni threa… | Prove eseguibili sulla 4050: da 1 su 5 (solo la prosa) a 4 su 5; la trascrizione resta nella PR #424. Nessuno script è girato su una GPU: il container non ne h… |
-| 2026-11-15 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: il corredo del Fantino Ladro e della Drow Chierica di… | Fantino Ladro da nessuna riga di corredo a 3.505 mo su 9.400; Drow Chierica di Lolth da nessuna riga a 4.709 mo su 12.000; Il Collezionista da due oggetti senz… |
-| 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | ARC-09, scelta del DM sulla card del 15/11: il «Borin» con Aegis Fang di P1B e… | In PR |
-| 2026-11-14 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 nona parte: l'armatura naturale dei modelli dell'SRD. Chiave… | In PR |
-| 2026-11-14 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Nomi degli Eroi di Hammerfist scelti dal DM sulle card del 14/11: Borin Ferropu… | In PR |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 148 voci, l'ultima MS-0148 del 2026-11-15 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 153 voci, l'ultima MS-0153 del 2026-11-15 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

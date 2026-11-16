@@ -188,6 +188,51 @@ class TestGiudizi(unittest.TestCase):
         # fantasma, celestiale e immondo non hanno una regola loro
         self.assertEqual(nat(tipo="Medium undead, human ghost, Guerriero 6, LM", ca="+4 naturale"), ([], []))
 
+    def test_caratteristiche_col_modello(self):
+        """SRD, riga «Abilities» dei modelli: punteggi tolti e fissati sempre, aumenti sopra la base dichiarata."""
+        def car(attributi, tipo, fonte="prova", dopo=""):
+            with tempfile.TemporaryDirectory() as d:
+                p = Path(d) / "prova.md"
+                p.write_text(SCHEDA.replace("For 21 Des 10 Cos 15 Int 6 Sag 10 Car 7", attributi).format(
+                    titolo="Prova", fonte=fonte, tipo=tipo, ca="-1 taglia, +2 naturale", dadi="8d12",
+                    attacco="Mischia artiglio +5 (1d6+4)") + dopo, encoding="utf-8")
+                viol, nv = V.creatura_base(p)
+            return ([v for v in viol if v["regola"] == "numero.caratteristiche.modello"],
+                    [v for v in nv if v["regola"] == "numero.caratteristiche.modello"])
+        leone = "MM Dire Lion + Skeleton template"
+        # il leone crudele dell'SRD ha Des 15 e Car 10: lo scheletro ha Des 17, niente Cos e Int, Sag 10, Car 1
+        self.assertEqual(car("For 25 Des 17 Cos — Int — Sag 10 Car 1", "Large undead, skeleton, NM", leone), ([], []))
+        v, _ = car("For 25 Des 15 Cos — Int — Sag 10 Car 10", "Large undead, skeleton, NM", leone)
+        self.assertEqual((v[0]["ha"], v[0]["atteso"]), ("Des 15, Car 10", "Des almeno 17, Car 1"))
+        # sopra il minimo si può stare: un punto ogni quattro dadi vita, gli oggetti
+        self.assertEqual(car("For 27 Des 18 Cos — Int — Sag 10 Car 1", "Large undead, skeleton, NM", leone), ([], []))
+        # senza la base restano i punteggi tolti e fissati; gli aumenti non si riscontrano e lo si dice
+        v, n = car("For 25 Des 15 Cos 14 Int 2 Sag 12 Car 1", "Large undead, zombie, NM")
+        self.assertEqual((v[0]["ha"], v[0]["atteso"], len(n)), ("Cos 14, Int 2, Sag 12", "Cos —, Int —, Sag 10", 1))
+        v, n = car("For 20 Des 14 Cos — Int 16 Sag 14 Car 18", "Medium undead, human vampire, Guerriero 6, LM")
+        self.assertEqual((v, len(n)), ([], 1))
+        v, _ = car("For 20 Des 14 Cos 12 Int 16 Sag 14 Car 18", "Medium undead, umano lich, Mago 11, NM")
+        self.assertEqual(v[0]["atteso"], "Cos —")
+        # celestiale e immondo: Intelligenza almeno 3, niente altro
+        v, n = car("For 18 Des 17 Cos 12 Int 2 Sag 14 Car 10", "Large magical beast, celestial, NB")
+        self.assertEqual((v[0]["atteso"], n), ("Int almeno 3", []))
+        # i mezzi sopra la base dichiarata: l'ogre dell'SRD ha For 21, Des 8, Cos 15, Int 6, Sag 10, Car 7
+        v, _ = car("For 25 Des 12 Cos 17 Int 10 Sag 10 Car 9", "Large outsider, half-fiend, CM", "SRD *Ogre* + half-fiend")
+        self.assertEqual(v, [])
+        v, _ = car("For 21 Des 12 Cos 17 Int 10 Sag 10 Car 9", "Large outsider, half-fiend, CM", "SRD *Ogre* + half-fiend")
+        self.assertEqual((v[0]["ha"], v[0]["atteso"]), ("For 21", "For almeno 25"))
+        # coi livelli di classe o con un'altra taglia i punteggi di partenza non sono quelli dell'SRD
+        v, n = car("For 21 Des 12 Cos 17 Int 10 Sag 10 Car 9", "Large outsider, half-fiend, Barbaro 2, CM", "SRD *Ogre* + half-fiend")
+        self.assertEqual((v, len(n)), ([], 1))
+        v, n = car("For 21 Des 12 Cos 17 Int 10 Sag 10 Car 9", "Huge outsider, half-fiend, CM", "SRD *Ogre* + half-fiend")
+        self.assertEqual((v, len(n)), ([], 1))
+        # la variante del DM
+        riga = "\n> Caratteristiche diverse dal modello: Car 10 contro 1, scelta del DM (RC-099).\n"
+        self.assertEqual(car("For 25 Des 17 Cos — Int — Sag 10 Car 10", "Large undead, skeleton, NM", leone, riga), ([], []))
+        # la base senza modello resta quella di prima: la fonte con un archetipo non la dichiara
+        self.assertIsNone(CB.dichiarata(leone))
+        self.assertEqual(CB.dichiarata(leone, col_modello=True)[0], "dire lion")
+
     def test_armatura_naturale_diversa(self):
         viol, _ = giudica(ca="-1 taglia, +7 naturale, +3 pelle")
         v = next(x for x in viol if x["regola"] == "numero.CA.naturale")

@@ -95,13 +95,39 @@ MODELLI = {
         "sampler": "euler",
         "scheduler": "simple",
     },
+    # FLUX.2 [klein] 4B distillato: un grafo suo (UNET + codificatore Qwen3 + VAE
+    # separati), 4 passi a cfg 1, come nel template di ComfyUI. Pesi scelti per i
+    # 6 GB della 4050 (D2 di PIANO-RIPRESA-PR-ABBANDONATE, collaudo del 16/11):
+    # il transformer in fp8 (4,07 GB) e il Qwen3-4B in fp4 (3,85 GB). BFL dichiara
+    # ~13 GB di VRAM in bf16: su 6 GB gira solo con --lowvram e un modello alla
+    # volta. Le impronte sono quelle che Hugging Face pubblica (LFS oid), lette il
+    # 2026-11-16; scripts/prove-4050/drappo_flux.py le verifica al download.
+    "flux2-klein-4b": {
+        "grafo": "flux2",
+        "checkpoint": "flux-2-klein-4b-fp8.safetensors",
+        "clip": "qwen_3_4b_fp4_flux2.safetensors",
+        "vae": "flux2-vae.safetensors",
+        "etichetta": "FLUX.2 [klein] 4B fp8 + Qwen3-4B fp4",
+        "sha256": "97ed34fe0567e436200f2faee3939b88f2b5d99f8af2a4dc16532c4245c0ccb6",
+        "licenza": "Apache-2.0 (transformer, VAE e Qwen3-4B)",
+        "ammesso": True,
+        "steps": 4,
+        "cfg": 1.0,
+        "sampler": "euler",
+        "scheduler": "flux2",
+    },
 }
 
 # Se il nome del checkpoint contiene una di queste, i pesi sono non commerciali.
 # La licenza di FLUX.1 [dev] esclude anche l'uso «indirettamente connesso ad
 # attivita' commerciali»: un modulo che un giorno potrebbe essere pubblicato non
 # puo' contenerne. Vedi ADR-0019 §1.
-PESI_VIETATI = ("flux1-dev", "flux.1-dev", "flux-dev", "fluxdev")
+PESI_VIETATI = (
+    "flux1-dev", "flux.1-dev", "flux-dev", "fluxdev",
+    # FLUX.2: [dev] e [klein] 9B girano sotto la FLUX Non-Commercial License;
+    # solo il [klein] 4B e' Apache 2.0 (scheda del modello, 2026-11-16).
+    "flux2-dev", "flux.2-dev", "flux-2-dev", "klein-9b", "klein_9b",
+)
 
 AVVIA_COMFYUI = """\
 ComfyUI non risponde su {server}.
@@ -217,11 +243,15 @@ def componi(img: Immagine, blocchi: dict[str, str]) -> tuple[str, str]:
 def workflow(img: Immagine, positivo: str, negativo: str, seed: int, mod: dict) -> dict:
     """Il grafo txt2img in formato API di ComfyUI: nodo -> class_type + inputs.
 
+    FLUX.2 ha un grafo suo (`workflow_flux2`); per gli altri modelli vale questo.
+
     Un grafo solo per tutti i modelli, con i parametri di campionamento presi dal
     registro: SDXL vuole 30 passi a cfg 7, FLUX schnell 4 passi a cfg 1. Il
     `batch_size` resta 1 di proposito — su 6 GB di VRAM un batch e' il modo piu'
     rapido di far uscire ComfyUI per memoria esaurita.
     """
+    if mod.get("grafo") == "flux2":
+        return workflow_flux2(img, positivo, negativo, seed, mod)
     return {
         "3": {
             "class_type": "KSampler",
@@ -257,6 +287,43 @@ def workflow(img: Immagine, positivo: str, negativo: str, seed: int, mod: dict) 
             "class_type": "SaveImage",
             "inputs": {"filename_prefix": f"rumblingstone/{img.ident}", "images": ["8", 0]},
         },
+    }
+
+
+def workflow_flux2(img: Immagine, positivo: str, negativo: str, seed: int, mod: dict) -> dict:
+    """Il grafo di FLUX.2 [klein], ricavato dal template «Flux.2 Klein 4B» di ComfyUI.
+
+    Tre caricatori separati (UNET, codificatore Qwen3, VAE) e il campionatore
+    personalizzato con lo scheduler di FLUX.2, che dipende dalle dimensioni.
+    Gli id dei nodi tengono «9» per il salvataggio, come il grafo SDXL, perche'
+    `Comfy.aspetta` legge le immagini da li'. Il klein distillato va a cfg 1, e a
+    cfg 1 ComfyUI non calcola il ramo negativo: i negativi del markdown entrano
+    nel grafo ma non cambiano l'immagine. Lo si dice qui perche' nessuno pensi
+    che «no text» stia lavorando.
+    """
+    return {
+        "1": {"class_type": "UNETLoader",
+              "inputs": {"unet_name": mod["checkpoint"], "weight_dtype": "default"}},
+        "2": {"class_type": "CLIPLoader",
+              "inputs": {"clip_name": mod["clip"], "type": "flux2", "device": "default"}},
+        "3": {"class_type": "VAELoader", "inputs": {"vae_name": mod["vae"]}},
+        "4": {"class_type": "CLIPTextEncode", "inputs": {"text": positivo, "clip": ["2", 0]}},
+        "5": {"class_type": "CLIPTextEncode", "inputs": {"text": negativo, "clip": ["2", 0]}},
+        "6": {"class_type": "CFGGuider",
+              "inputs": {"model": ["1", 0], "positive": ["4", 0], "negative": ["5", 0],
+                         "cfg": mod["cfg"]}},
+        "7": {"class_type": "EmptyFlux2LatentImage",
+              "inputs": {"width": img.larghezza, "height": img.altezza, "batch_size": 1}},
+        "8": {"class_type": "VAEDecode", "inputs": {"samples": ["12", 0], "vae": ["3", 0]}},
+        "9": {"class_type": "SaveImage",
+              "inputs": {"filename_prefix": f"rumblingstone/{img.ident}", "images": ["8", 0]}},
+        "10": {"class_type": "Flux2Scheduler",
+               "inputs": {"steps": mod["steps"], "width": img.larghezza, "height": img.altezza}},
+        "11": {"class_type": "RandomNoise", "inputs": {"noise_seed": seed}},
+        "12": {"class_type": "SamplerCustomAdvanced",
+               "inputs": {"noise": ["11", 0], "guider": ["6", 0], "sampler": ["13", 0],
+                          "sigmas": ["10", 0], "latent_image": ["7", 0]}},
+        "13": {"class_type": "KSamplerSelect", "inputs": {"sampler_name": mod["sampler"]}},
     }
 
 

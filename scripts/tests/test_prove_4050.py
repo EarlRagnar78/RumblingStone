@@ -51,6 +51,60 @@ class TestScript(unittest.TestCase):
                     self.assertTrue((IMMAGINI / s[chiave]).exists(), f"{s['nome']}: manca {s[chiave]}")
 
 
+class TestDrappoFlux(unittest.TestCase):
+    """Il collaudo della D2: i pesi che drappo_flux.py scarica sono quelli che il grafo carica."""
+
+    def setUp(self):
+        sys.path.insert(0, str(PROVE))
+        sys.path.insert(0, str(REPO / "scripts"))
+        import comfyui_batch
+        import drappo_flux
+        self.cb, self.df = comfyui_batch, drappo_flux
+
+    def test_pesi_del_grafo_e_del_download_coincidono(self):
+        mod = self.cb.MODELLI[self.df.MODELLO]
+        nomi = {n for _, n, *_ in self.df.PESI}
+        self.assertEqual(nomi, {mod["checkpoint"], mod["clip"], mod["vae"]})
+        sha = {n: s for _, n, _, _, s, _ in self.df.PESI}
+        self.assertEqual(sha[mod["checkpoint"]], mod["sha256"])
+        for _, n, _, _, s, byte in self.df.PESI:
+            self.assertRegex(s, r"^[0-9a-f]{64}$", n)
+            self.assertGreater(byte, 10**8, n)
+
+    def test_nessun_peso_vietato(self):
+        for _, nome, repo, f, *_ in self.df.PESI:
+            for vietato in self.cb.PESI_VIETATI:
+                self.assertNotIn(vietato, f"{nome} {repo} {f}".lower())
+
+    def test_tavole_di_serie_esistono_e_hanno_la_gemini(self):
+        noti = {i.ident for i in self.cb.leggi_immagini(self.cb.PROMPTS_DEFAULT.read_text(encoding="utf-8"))}
+        for ident in self.df.SOLO_DEFAULT.split(","):
+            self.assertIn(ident, noti)
+            self.assertTrue((self.df.GEMINI / f"{ident}.png").exists(), ident)
+        self.assertIn(self.df.SOLO_DEFAULT, (PROVE / "drappo-flux.sh").read_text(encoding="utf-8"))
+
+    def test_impronta_ricordata_solo_se_giusta(self):
+        with tempfile.TemporaryDirectory() as d:
+            f = Path(d) / "peso.safetensors"
+            f.write_bytes(b"abc")
+            giusto = hashlib.sha256(b"abc").hexdigest()
+            self.assertFalse(self.df.peso_verificato(f, "0" * 64))
+            self.assertFalse(f.with_name(f.name + ".sha256").exists())
+            self.assertTrue(self.df.peso_verificato(f, giusto))
+            self.assertTrue(self.df.peso_verificato(f, giusto))  # dalla nota
+            self.assertFalse(self.df.peso_verificato(Path(d) / "manca", giusto))
+
+    def test_pagina_di_confronto(self):
+        with tempfile.TemporaryDirectory() as d:
+            righe = [{"id": "il-drappo", "seme": 0, "secondi": 9.5, "file": "flux/seme-0/il-drappo.png"},
+                     {"id": "il-drappo", "seme": 1, "secondi": 0, "file": None}]
+            self.df.pagina(righe, Path(d), ["il-drappo"], 2)
+            testo = (Path(d) / "confronto.html").read_text(encoding="utf-8")
+            self.assertIn("A · Gemini", testo)
+            self.assertIn("flux/seme-0/il-drappo.png", testo)
+            self.assertIn("seme 1: fallita", testo)
+
+
 class TestDomandeLettore(unittest.TestCase):
     def test_chiavi_come_la_cache_di_estrai_rag(self):
         domande = json.loads(DOMANDE.read_text(encoding="utf-8"))

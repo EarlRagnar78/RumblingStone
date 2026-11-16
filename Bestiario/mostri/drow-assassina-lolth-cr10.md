@@ -17,6 +17,9 @@ attributi: For 12 Des 20 Cos 10 Int 18 Sag 12 Car 14
 velocita: 9 m
 attacchi:
   - Mischia spada corta +1 +12/+7 (1d6+2/19-20)
+voci:
+  - Equipaggiamento da combattimento: veleno drow, sangue nero di Lolth (3 dosi)
+  - Altro equipaggiamento: giaco di maglia in mithral +1, anello di protezione +1, mantello della resistenza +2, spada corta +1, balestra a mano
 ```
 
 > Correzione 3.5 da `scripts/conformita_statblocchi.py`: Riflessi +12 → **+13**: Ladro 4 (+4) + Assassino 5 (+4) + Des 20 (+5). La Des 20 è confermata dall'attacco con Arma Accurata (+12). La Forza l'ha decisa il DM (D3, qui sotto).
@@ -45,6 +48,8 @@ Medium humanoid (elf), NE. **DV 9d6**. **hp 40**. **CA 21** (+5 Des, +5 giaco di
 **Bersaglio prioritario contro *Il Rumbling Stone***: **Hella** (TS Tempra buono ma non blindato, e la sua morte ha già un precedente che il party non ha superato) oppure un **PNG alleato** — Brenna Sorvane, Lythiel, Norro Wiston. Uccidere un alleato costa al party molto più di 40 pf.
 
 > ⚠️ **Nota di equità**: l'Attacco Mortale è un salva-o-muori. Usarlo **su un PG** solo se il DM è disposto ad accettare l'esito, e solo dopo che il party ha avuto **almeno un indizio** dell'infiltrazione (una guardia trovata morta, una prova di Percezione, una traccia di *fuoco fatuo*). Contro PNG è invece lo strumento perfetto per far sentire il pericolo senza tirare i dadi sulla vita dei giocatori.
+
+> RC-001 (2026-11-15, ADR-0134) `[CANONE — DM 2026-11-15, RC-001]`: il corredo è solo quello che i numeri della scheda già usano: giaco di maglia in mithral +1 e anello di protezione +1 nella CA 21, mantello della resistenza +2 nei tiri salvezza, spada corta +1 e balestra a mano negli attacchi, veleno drow e *sangue nero di Lolth* fra i veleni. Nessun numero cambia. Valore 10.510 mo senza i veleni (2.100 + 2.000 + 4.000 + 2.310 + 100) contro i 12.000 del 9° livello (DMG 3.5, Tabella 4-23); col modificatore di livello +2 dei drow sarebbero 21.000.
 
 Notes: agente della compagnia di **Sonjak**, impiegata nella **Notte dei Drow** (Rethmar Fase 0) e nelle infiltrazioni fra i profughi (§2.5 di `campaign/state.md`). Si accompagna a `drow-trickster-arcano-cr11.md` (lui prende, lei toglie di mezzo i testimoni) e agisce sotto la direzione di **Zin'thara Vel'Ryn** (`Bestiario/villain/Zin_thara_Vel_Ryn/`). Da sola EL 10; in coppia con il Trickster EL ≈ 12,5.
 

@@ -17,6 +17,8 @@ velocita: 9 m
 iniziativa: +7
 attacchi:
   - Mischia spada corta +1 +12/+7 (1d6+2/19-20)
+voci:
+  - Altro equipaggiamento: giaco di maglia +2, anello di protezione +1, spada corta +1, lira della tempesta +2 ⚠ **Non SRD**, mantello d'ombra ⚠ **Non SRD**
 ```
 
 **Razza/Tipo:** Mezzelfo (Umanoide Medio)
@@ -339,3 +341,5 @@ Boost log: correzione dei conti e cambio di classe di prestigio (Arcimago 2 → 
 > - era nell'arco 08: CA 18, pf 84, TS +7/+12/+13, iniziativa +3, CN, musica 12/giorno con Ispirare Coraggio +3, spada lunga tonante +1 «+1d8 sonoro» a ogni colpo (l'arma tonante lo aggiunge solo sul critico), Maestria degli Elementi, incantesimi conosciuti oltre il numero del bardo e *onda di tuono*, che non esiste nell'SRD
 Età: era «247 anni mezzelfo» in Note per il DM, impossibile per un mezzelfo 3.5 (massimo 185); il DM ha scelto 70 il 2026-10-17.
 <!-- /storico -->
+
+> RC-001 (2026-11-15, ADR-0134) `[CANONE — DM 2026-11-15, RC-001]`: gli oggetti della prosa (§Aspetto), con la lira della tempesta e il mantello d'ombra marcati fuori SRD e senza prezzo; in più l'anello di protezione +1, che la CA 20 già conta («+1 deviazione») e la prosa non nominava. Nessun numero cambia. Valore degli oggetti SRD 8.560 mo (4.250 + 2.000 + 2.310) contro i 45.000 della Tabella 4-23 del DMG 3.5 per il 14° livello.

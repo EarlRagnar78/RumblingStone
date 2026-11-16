@@ -18,6 +18,8 @@ iniziativa: +7
 attacchi:
   - Mischia colpo senz'armi +10/+5 (1d10+3) o raffica +10/+10/+5 (1d10+3)
   - Mischia bastone da viaggio +9/+4 (1d6+3)
+voci:
+  - Altro equipaggiamento: anello di protezione +2, mantello della resistenza agli incantesimi, amuleto dei pugni potenti +1, bastone da viaggio in cedro, borsa con i cinque sigilli del Torneo
 ```
 
 **Razza/Tipo:** Mezza-elfa (Umanoide Medio)
@@ -257,3 +259,7 @@ Boost log: correzione dei conti (SRD) — GS 10 → 11 — GS uguale al livello 
 > - era: cinque talenti scelti (con Abilità Focalizzata in Diplomazia) e Schivare contato in CA → ora quattro: Abilità Focalizzata è uscita, perché l'11° livello ne dà quattro
 > - era: «Endurance» fra gli incantesimi da chierico (è un talento) e «High Jump» fra i privilegi del monaco, che nel 3.5 non c'è → tolti; aggiunti Eludere Migliorato e Purezza del Corpo
 <!-- /storico -->
+
+> RC-001 (2026-11-15, ADR-0134) `[CANONE — DM 2026-11-15, RC-001]`: nel blocco vanno solo i tre oggetti SRD già decisi dal DM il 2026-10-18 (anello di protezione +2 nella CA 19, mantello della resistenza agli incantesimi per la RI 21, amuleto dei pugni potenti +1 nell'attacco) più il bastone e la borsa dei sigilli della prosa. Nessun numero cambia.
+
+> Equipaggiamento sopra la tabella: scelta del DM (card del 2026-11-15, e del 2026-10-18 per il mantello). Vale almeno 104.000 mo (8.000 + 90.000 + 6.000) contro i 21.000 della Tabella 4-23 del DMG 3.5 per il livello effettivo 11; il GS resta 11 e nessun numero cambia.

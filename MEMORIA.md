@@ -86,6 +86,8 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
 | 2026-11-15 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: il corredo di sette schede, scelto dal DM sulle card d… | sette schede da nessuna riga di corredo a una riga di corredo con valore e fonte (Dovil 5.865/7.200, Drow 10.510/12.000, Duergar ≤6.410/9.400, Tempestas 8.560/… |
+| 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Tattiche dei draghi contro il *See the Unseen* di Artemis, indicazione del DM d… | ✅ tre righe di tattica, nessun numero cambiato |
+| 2026-11-15 | AVVENTURE-COMMUNITY | «Chi sa cosa», dopo la #419: una riga per il Conte Valerius e tre giorni dalle… | «Chi sa cosa», dopo la #419: scelta del DM sulla card del 14/11 (thread dell'audit) «Una sola, la più completa». In `campaign/state.yaml` le righe del Conte Va… |
 | 2026-11-15 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 7 settima parte: la velocità delle creature coi dadi vita razzi… | In PR |
 | 2026-11-15 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 decima parte: le caratteristiche che i modelli dell'SRD cambi… | In PR |
 | 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Eroi di Hammerfist, scelte del DM sulle card del 15/11: rosa a sei con **Ragnhi… | In PR |
@@ -95,13 +97,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Tattiche dei draghi, seconde card del DM del 15/11: **Ozyrrandion** il tentator… | ✅ tre righe di tattica nelle schede, nessun numero cambiato |
 | 2026-11-15 | PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA | Tattiche di villain e PNG, primo gruppo (ARC-07): Zog'tar sulla breccia dell'al… | ✅ Zog'tar muore in circa 3 round; un PG muore nel 28% delle prove (11% col canone di prima) |
 | 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Tattiche dei draghi, richiesta del DM del 15/11, scelte del DM sulle card del 1… | Fauci: almeno un PG morto dal 48-59% al 5-34% delle prove, drago ucciso da 1-3% a 0%; Tyrgarun in Fase 4: col canone travolge i soli PG (59-80%), ferito e con… |
-| 2026-11-15 | PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA | ARC-07 DEF-4 Scena 11, la tattica di Skullcrusher | ✅ |
-| 2026-11-15 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Prove sul portatile con la RTX 4050, richiesta del DM del 15/11: per ogni threa… | Prove eseguibili sulla 4050: da 1 su 5 (solo la prosa) a 4 su 5; la trascrizione resta nella PR #424. Nessuno script è girato su una GPU: il container non ne h… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 152 voci, l'ultima MS-0152 del 2026-11-15 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 154 voci, l'ultima MS-0154 del 2026-11-15 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

@@ -465,7 +465,7 @@ class TestStoria(unittest.TestCase):
         an = cc.ancore_state()
         r = cc.verifica_storia([], an, [])
         self.assertEqual([v for v in r["violazioni"] if v["regola"].startswith("T2")], [])
-        self.assertEqual(an["conoscenze_senza_tempo"], 6, "le righe di «chi sa cosa» senza giorno sono 6: i Tiri Kitor e le 5 che il DM non ha confermato")
+        self.assertEqual(an["conoscenze_senza_tempo"], 3, "le righe di «chi sa cosa» senza giorno sono 3: i Tiri Kitor e le due su Therysol, senza una data scritta")
 
     def test_s1_senza_giorno_arrivo_dichiarato(self):
         an = dict(self.an, giorno_arrivo=None)

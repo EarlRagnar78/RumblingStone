@@ -1724,7 +1724,29 @@ repo scritto con altre parole.
 - **Testo:** `creature_base.toml` del 3.5 porta `vel`, la velocità a terra senza armatura dalla riga «Speed» dell'SRD (378 creature su 409). La verifica `velocita` la usa per chi dichiara la base nella fonte. Ha trovato l'Ogre Frantumapietra: 12 m scritti contro 10,5 m (ogre 40 piedi, barbaro +10, cotta di maglia media che riduce 50 a 35); il DM ha scelto sulla card del 2026-11-15 «10,5 m come l'SRD» e la scheda è corretta nella stessa PR. Nella stessa PR la verifica `ricchezza` prende come livello il massimo fra classi lette e dadi vita dichiarati: una classe ignota («Diviner 5» di Dovil) non abbassa più il livello. Misura: violazioni invariate.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** un'assegnazione a tupla `razza, tabella[razza[0]] = razza[0], razza[1]` usa la `razza` già riassegnata: va scritta in due righe. Il file `misure-velocita.json` era fermo a prima di due correzioni del DM, quindi il passaggio 34 → 42 del banco non è tutto di questo pezzo. PF1e non rigenerato.
-### MS-0152 · 2026-11-15 · ADR-0134: il corredo di sette schede (Dovil, Drow Assassina, Duergar mago/ladro, Maewen, Varis, Tempestas, Therysol)
+
+### MS-0152 · 2026-11-15 · «Chi sa cosa»: una riga per il Conte Valerius e tre giorni nuovi
+
+- **Data:** 2026-11-15
+- **PR:** —
+- **ADR:** ADR-0125
+- **Temi:** stato campagna conoscenze chi-sa-cosa doppione decisione-dm coerenza-storia
+- **Origine:** riga del 2026-11-15 «"Chi sa cosa", dopo la #419» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha scelto di tenere una sola riga per il Conte Valerius: resta quella che dice che non sa né della Corona né di Sal. Sulle cinque righe senza giorno ha dato il 23 a Sonjak su Sal, lo 0 al Ghostlord e il 19 a Xal'thor sui Bracieri; le due su Therysol restano senza giorno. Righe 33 → 32, non verificabili 6 → 3, T2 sempre a 0
+- **Trovato nel repo:** `campaign/state.yaml` (sezione `conoscenze`) · `scripts/tests/test_state_data.py` · `scripts/tests/test_anagrafica_png.py`
+- **Solo qui:** una card del 14/11 chiedeva se la lettera di Brenna fosse già consegnata al tavolo citando la sessione del 3 maggio; quel file è marcato «scritto in anticipo, non giocato», quindi la risposta non è stata applicata e nessun testo è cambiato. Prima di citare un file di `campaign/sessions` come cronaca va letta la testata. Il test dell'anagrafica legge ancora `conoscenze` per posizione (indice 19 → 18): togliere una riga lo sposta
+
+### MS-0153 · 2026-11-15 · I draghi e il See the Unseen di Artemis: chi lo sa e chi lo scopre
+
+- **Data:** 2026-11-15
+- **PR:** —
+- **ADR:** —
+- **Temi:** draghi tattiche artemis invisibilita tyrgarun ozyrrandion fauci conoscenza decisione-dm arc08 arc09
+- **Origine:** riga del 2026-11-15 «Tattiche dei draghi contro il See the Unseen di Artemis» in `plans/CHANGELOG.md`
+- **Testo:** alla domanda aperta delle MS-0143 e 0145 il DM ha risposto che Artemis vede l'invisibile, ma che non tutti i draghi lo sanno, e ha chiesto di adeguare le tattiche. L'invocazione è *See the Unseen* (`07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md` r.249, con *Voidsense*). Fra i draghi usano l'invisibilità solo Tyrgarun e Ozyrrandion. Tyrgarun non lo sa e lo scopre in battaglia; lo sa dall'inizio solo se Ozyrrandion è fuggito dalla Torre e combatte con lui. Ozyrrandion lo sa da Zalkatar solo se Sethrax è fuggito dal Torneo col seme, come dice il blocco di Zalkatar (`P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` r.67); altrimenti lo scopre al primo colpo. Fauci non usa l'invisibilità, e l'invocazione non attraversa la sua oscurità.
+- **Trovato nel repo:** `Bestiario/villain/Tyrgarun/tyrgarun-blue-very-old-cr19.md` (Tattiche, Fasi 1-3) · `Bestiario/villain/ozyrrandion-drago-verde-cr14.md` (Il tentatore) · `08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` §1
+- **Solo qui:** chi sa che cosa è dedotto da questa revisione, non scritto dal DM caso per caso: per Tyrgarun che i suoi informatori di Hammerfist non abbiano visto Artemis contro un invisibile; per Ozyrrandion che Zalkatar, quando sa del gruppo, gli passi anche questo. La condizione su Sethrax l'ha segnalata il thread dei villain. La frase canone del 15/11 («Zalkatar ha studiato l'Anello di Artemis») andrebbe letta con la stessa condizione: non l'ho toccata, è una scelta del DM. Arbitrax, Regiarix, il drago di Vaereth e l'Avatar non usano l'invisibilità, quindi per loro non cambia nulla. Skullcrusher ha il suo thread. Il testo di *See the Unseen* (Complete Arcane) non è SRD: vale la descrizione del repo (scurovisione, invisibili, eterei).
+### MS-0154 · 2026-11-15 · ADR-0134: il corredo di sette schede (Dovil, Drow Assassina, Duergar mago/ladro, Maewen, Varis, Tempestas, Therysol)
 
 - **Data:** 2026-11-15
 - **PR:** —

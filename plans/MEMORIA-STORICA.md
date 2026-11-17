@@ -1811,8 +1811,29 @@ repo scritto con altre parole.
 - **Testo:** ultimo lotto del dossier delle tattiche di ARC-09. Per i villain che non si misurano col simulatore si è controllato il cancello delle tattiche e si sono riempiti i punti dello schema che mancavano. Il Collezionista aveva gli esiti `[DA SCRIVERE]`: il DM ha scelto sulla card del 17/11 di scriverli dai quattro patti di §Con i PG. Il Ghostlord e i sicari di Sonjak al Palio hanno ora cosa sanno dei PG. Valerius l'aveva già.
 - **Trovato nel repo:** `Bestiario/villain/Il_Collezionista_Rakshasa/Il_Collezionista_Rakshasa.md` §Esiti possibili · `Bestiario/villain/Ghostlord/Ghostlord.md` §Cosa sa dei PG · `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md` §3.1, §3.2
 - **Solo qui:** i patti del Collezionista sono scritti per l'anno −1000, mentre il dossier lo mette nel master DEF-04/05 del Torneo. Gli esiti valgono per la scena dei patti; il loro peso al Torneo va deciso quando si fonde quel master. Il ratchet degli `[INFERRED]` era rosso su main da prima (10 contro 7) per le marche nude dei lotti 3-4: qui tutte le marche delle tattiche hanno domanda e base, e la baseline sale a 16 di proposito (14 nei sorgenti, 2 copie nel booklet del Palio generato, dove stanno in un commento e non si stampano).
+### MS-0160 · 2026-11-17 · Regole: il segugio infernale rifatto mezzo-immondo dall'SRD
 
-### MS-0160 · 2026-11-17 · Le marche ristampate nei booklet generati non sono debito nuovo
+- **Data:** 2026-11-17
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole modelli mezzo-immondo hell-hound armatura-naturale creature-base decisioni-dm
+- **Origine:** riga del 2026-11-17 «lotto 5 undicesima parte» in `plans/CHANGELOG.md`
+- **Testo:** `hell-hound-mezzoimmondo-cr4.md` portava i numeri del modello draconico di Races of the Dragon sotto il nome «mezzo-immondo». Il DM ha scelto sulla card del 2026-11-15 di rifarlo dall'SRD: segugio infernale più mezzo-immondo, For 17 Des 17 Cos 15 Int 10 Sag 10 Car 8, CA 19, artigli 1d4+3 e morso 1d8+1 secondario, soffio CD 14, volo 12 m, punire il bene, *oscurità* e *dissacrare*, GS 4. I 14 punti abilità in più vanno in Acrobazia 3, Intimidire 3 e Scalare 1 (card del 2026-11-17). La verifica `creatura_base` giudica ora l'armatura naturale dei modelli sopra la base che la fonte dichiara, se ha la stessa taglia. Misura: violazioni 34 = 34, non verificabili 388 → 387.
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** la card diceva Acrobazia +6, ma Saltare con 5 gradi dà +2 di sinergia: nella scheda è +8, e la nota lo dice. Il .pcg mezzo-immondo spendeva solo 42 punti e aveva Enlarge Breath (fuori SRD) al posto di Correre. I dadi degli attacchi naturali coi modelli restano non verificabili.
+
+### MS-0161 · 2026-11-17 · Tecnica 3 di Document AI: la prova della decodifica vincolata per il 4050
+
+- **Data:** 2026-11-17
+- **PR:** #466
+- **ADR:** —
+- **Temi:** document-ai decodifica-vincolata ollama schema-json tattiche genera-creatura s8 prove-4050 decisioni-dm
+- **Origine:** riga del 2026-11-17 «Tecnica 3, decodifica vincolata delle «Tattiche»: la prova per il portatile 4050» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha scelto sulla card del 17/11 «Sì, quando accendi l'ASUS»: la tecnica 3 si prova sulla RTX 4050 ed entra solo se migliora. Ragionamento: `genera_creatura.py` fa già i numeri da tabelle, quindi il vincolo serve solo sul testo che rimanda alla scheda, cioè le «Tattiche» che nominano incantesimi o talenti assenti (S8, ADR-0125). La prova confronta, sullo stesso modello (`qwen2.5:7b` di serie), il testo libero con il JSON vincolato dal campo `format` di Ollama, in cui l'azione è un enum delle voci della scheda. Regola del verdetto in `PIANO.md`: meno S8 per scheda, tutte le risposte valide, copertura almeno l'80% del libero.
+- **Trovato nel repo:** `scripts/prove-4050/schede-vincolate.sh` · `plans/esperimenti/decodifica-vincolata-2026-11-17/PIANO.md` · `plans/esperimenti/decodifica-vincolata-2026-11-17/schede_vincolate.py` · `scripts/tests/test_prove_4050.py` (`TestSchedeVincolate`) · `docs/how-to/GUIDA-PROVE-PORTATILE-4050.md` §3-ter
+- **Solo qui:** S8 vede un incantesimo solo in corsivo, quindi sul braccio libero può contare meno errori di quelli che ci sono: per questo c'è il conto `fuori_lista`. Trovato preparando il campione e non corretto qui: `genera_creatura.py` scrive il talento *Incantesimi focalizzati* con «(bene, caos, legge o male)» invece di una scuola. Le altre tecniche del thread: 1 glifi #398, 2 PDF/A-2a #416, 4 provenienza IPTC #418, 5 andata e ritorno del testo misurata il 13/11 senza margine.
+
+### MS-0162 · 2026-11-17 · Le marche ristampate nei booklet generati non sono debito nuovo
 
 - **Data:** 2026-11-17
 - **PR:** —

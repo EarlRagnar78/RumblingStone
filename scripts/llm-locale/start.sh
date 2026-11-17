@@ -8,7 +8,7 @@ set -euo pipefail
 mkdir -p "$DEST"
 echo "==> Ollama su $URL · contesto $CTX token · modelli in $DEST (Ctrl-C per fermare)"
 box_pronto
-distrobox enter "$BOX" -- env \
+nel_box "$BOX" env \
   OLLAMA_HOST="127.0.0.1:$PORTA" \
   OLLAMA_MODELS="$DEST" \
   OLLAMA_CONTEXT_LENGTH="$CTX" \

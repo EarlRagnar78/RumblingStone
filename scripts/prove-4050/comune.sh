@@ -10,6 +10,10 @@ PROVE_DIR="${PROVE_DIR:-$HOME/rumblingstone-prove-4050}"
 GIORNO="$(date +%F)"
 RIS="$PROVE_DIR/$GIORNO"
 LLM_PORTA="${LLM_PORTA:-11434}"
+# shellcheck source=ospite.sh
+. "$HERE/ospite.sh"
+# Su WSL2 nvidia-smi viene dal driver di Windows e sta fuori dal PATH di serie
+[ -x /usr/lib/wsl/lib/nvidia-smi ] && PATH="$PATH:/usr/lib/wsl/lib"
 
 # esito PROVA CHIAVE VALORE — una riga «chiave: valore» nel file esito della prova
 esito() {
@@ -22,7 +26,7 @@ gpu_foto() {
   mkdir -p "$RIS/$1"
   { echo "## $2 · $(date +%T)"
     nvidia-smi --query-gpu=name,memory.used,memory.total,utilization.gpu,temperature.gpu --format=csv 2>&1
-  } >> "$RIS/$1/gpu.txt"
+  } >> "$RIS/$1/gpu.txt" || true   # senza nvidia-smi la foto dice perché, e la prova va avanti
 }
 
 # server_ollama — vero se il server di scripts/llm-locale/start.sh risponde

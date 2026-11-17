@@ -4,9 +4,11 @@
 
 Alcune prove del progetto non girano nel container dove lavora l'agente, perché
 vogliono una GPU. Questa guida le raccoglie tutte per l'ASUS TUF F16 del DM
-(RTX 4050 da 6 GB, 16 GB di RAM, Bazzite/KDE): cosa serve, i comandi esatti,
-quanto ci vuole e come rimandare i risultati. La stessa guida spiega come
-portare nel repo le chat di Gemini esportate a mano.
+(RTX 4050 da 6 GB, 16 GB di RAM): cosa serve, i comandi esatti, quanto ci vuole
+e come rimandare i risultati. Il kit gira su **Bazzite**, **Debian 13**,
+**CachyOS** e **Windows** (attraverso WSL2), con gli stessi script e le stesse
+verifiche ([ADR-0136](../../plans/adr/ADR-0136-il-kit-delle-prove-4050-e-uno-solo-per-quattro-sistemi.md)).
+La stessa guida spiega come portare nel repo le chat di Gemini esportate a mano.
 
 Ogni prova scrive in `~/rumblingstone-prove-4050/<giorno>/` (fuori dal repo;
 si cambia con `PROVE_DIR`), e `riporta.sh` ne fa un archivio da caricare nel
@@ -21,12 +23,98 @@ thread del progetto. Non serve fare `git push` dal portatile.
 | [Immagini in posa](#3-le-immagini-dei-personaggi-in-posa) | «Immagini dei personaggi in posa con l'AI» | `scripts/prove-4050/immagini.sh` | 2-3 h la prima volta, poi 20-40 min a scena | pronto, mai girato su 6 GB |
 | [Tavole del Drappo con FLUX](#3-bis-le-tavole-del-drappo-con-flux2-klein) | D2 di RIPRESA-PR (arte del Drappo), la tua scelta tra A e B | `scripts/prove-4050/drappo-flux.sh` | 30-60 min la prima volta (8,3 GB di pesi), poi 1-3 min a tavola | pronto; grafo provato su CPU nel container, mai girato sulla 4050 |
 | [Tattiche con la decodifica vincolata](#3-ter-le-tattiche-con-la-decodifica-vincolata) | «Applicare Document AI e Explainable AI», tecnica 3 | `scripts/prove-4050/schede-vincolate.sh` | 15-30 min col 7B già scaricato | pronto; provato con un Ollama finto, mai girato sulla 4050 |
-| [Trascrizione della serata](#4-la-trascrizione-della-serata) | «Provare la trascrizione locale della serata» | lo script della trascrizione, nella PR #424 | una serata registrata | nella PR #424, non ancora su main |
+| [Trascrizione sulla GPU](#4-la-trascrizione-sulla-gpu-e-quella-della-serata) | «Provare la trascrizione locale della serata» | `scripts/prove-4050/trascrizione-gpu.sh` | 20-30 min la prima volta (compilazione, 0,9 GB di modello, 290 MB di audio) | pronto; collaudato sulla CPU del container, mai girato sulla 4050 |
+| [Trascrizione della serata](#4-la-trascrizione-sulla-gpu-e-quella-della-serata) | lo stesso | lo script della trascrizione, nella PR #424 | una serata registrata | nella PR #424, non ancora su main |
 | [Chat di Gemini](#5-le-chat-di-gemini-nel-repo) | inventario Gemini, D6 | `scripts/importa_gemini.py` | 10 min, più l'attesa di Takeout | pronto; formato Takeout non visto dal vivo |
 
 I tempi sono stime fatte dai pesi dei modelli e dalle prove su altre macchine,
 non misure sulla 4050. La prima misura vera è proprio quella che
 riporterai.
+
+## Il kit in un comando
+
+Tre comandi fanno tutto: preparare la macchina, lanciare le prove in fila,
+verificarle e impacchettarle.
+
+```bash
+cd ~/Scrivania/00_repo_github/RumblingStone   # o dove hai il repo
+git switch main && git pull
+scripts/prove-4050/kit.sh installa            # una volta sola: pacchetti, box, controllo
+scripts/prove-4050/kit.sh piano               # le prove, il thread che le aspetta, lo stato di oggi
+scripts/prove-4050/kit.sh tutte               # tutte, nell'ordine di prove.json
+scripts/prove-4050/kit.sh riporta             # verifica e archivio da caricare nel thread
+```
+
+`kit.sh tutte` lancia le prove di `scripts/prove-4050/prove.json` una dopo
+l'altra: controllo della macchina, lettore della coerenza, decodifica
+vincolata, trascrizione sulla GPU, tavole del Drappo, immagini in posa (una
+scena) e per ultima la prosa, l'unica che ti chiede qualcosa a metà. Il server
+Ollama lo accende e lo spegne il kit, col contesto che vuole ogni prova (4096
+token per il lettore, 8192 per le schede, 32768 per la prosa): non serve il
+secondo terminale. Una prova che fallisce non ferma le altre. Per saltarne
+qualcuna: `kit.sh tutte --salta prosa,immagini`; per farne solo alcune:
+`kit.sh esegui lettore-coerenza drappo-flux`. Il tempo stimato di tutto è
+circa sei ore e mezza, la prima volta, più i download.
+
+`scripts/prove-4050/verifica.py` (lo chiama `kit.sh` alla fine, e
+`riporta.sh` prima dell'archivio) scrive `verifica.md` con lo stato di ogni
+prova: **ok** (girata come doveva), **ko** (partita, ma qualcosa non torna, con
+la nota), **da completare** (manca il foglio alla cieca della prosa) o
+**non fatta**. «ok» non vuol dire che la tecnica migliora: quel verdetto lo dà
+il thread della prova con la sua regola.
+
+### Cosa fa `installa` su ogni sistema
+
+`scripts/prove-4050/installa.sh` riconosce il sistema da `/etc/os-release`.
+Con `--mostra` stampa i comandi senza eseguirli; con `--driver` installa anche il
+driver NVIDIA dove si può farlo da lì.
+
+| Sistema | Sull'host | Dove girano le prove | Driver NVIDIA |
+|---|---|---|---|
+| Bazzite | niente (distrobox e podman ci sono già) | tre box Distrobox: `llm-locale`, `comfyui`, `whisper` | dall'immagine `bazzite-nvidia` |
+| Debian 13 | `apt`: distrobox, podman, uidmap, python3, git, curl | gli stessi tre box | `--driver`: `nvidia-driver` dal ramo non-free (da abilitare nelle sorgenti se manca: lo script non le tocca), poi riavvio |
+| CachyOS | `pacman`: distrobox, podman, python, git, curl; gli intervalli di uid per podman se mancano | gli stessi tre box | `--driver`: `chwd -a`, il rilevamento hardware di CachyOS, poi riavvio |
+| Windows | WSL2 con Ubuntu 24.04, da `installa-windows.ps1` | dentro WSL2, senza box: Ollama, Python, CUDA e ffmpeg installati in Ubuntu | quello di Windows: in WSL2 non si installa nessun driver |
+
+I box hanno un'immagine fissa (Ubuntu 24.04 per `llm-locale` e `comfyui`,
+Fedora toolbox 43 per `whisper`, come nella guida della PR #424) e vedono la
+GPU con `--nvidia`. Così sull'host non si installa niente oltre a distrobox e
+podman, e le versioni degli strumenti sono le stesse su Bazzite, Debian e
+CachyOS. Senza box si può lavorare anche su Debian:
+`scripts/prove-4050/installa.sh --senza-box`, poi `RS_SENZA_BOX=1` davanti a
+ogni comando del kit.
+
+**Windows.** Da PowerShell come amministratore, nella copia del repo su Windows:
+
+```powershell
+Set-ExecutionPolicy -Scope Process Bypass
+.\scripts\prove-4050\installa-windows.ps1 -Memoria 12
+```
+
+Lo script `scripts/prove-4050/installa-windows.ps1` controlla il driver
+(`nvidia-smi.exe`), installa WSL2 con Ubuntu 24.04 (la prima volta chiede di
+riavviare e di creare l'utente di Ubuntu, poi lo si rilancia), clona il repo
+nella home di Linux (non in `/mnt/c`, molto più lento) e lancia `installa.sh`
+dentro WSL2. `-Memoria 12` scrive `%UserProfile%\.wslconfig` con 12 GB e 16 GB
+di swap: di serie WSL2 prende metà della RAM, cioè 8 GB, pochi per FLUX e per
+il 12B. Se il file c'è già non lo tocca. Poi le prove:
+
+```powershell
+wsl -d Ubuntu-24.04 -- bash -lc "cd ~/RumblingStone && scripts/prove-4050/kit.sh tutte"
+```
+
+L'archivio da caricare nel thread si trova da Esplora file in
+`\\wsl$\Ubuntu-24.04\home\<utente>\rumblingstone-prove-4050\`.
+
+**Cosa non è provato.** Nessuno di questi percorsi è girato su una macchina
+vera: il container dell'agente non ha GPU, né Distrobox, né Windows. Nel
+container sono provati il riconoscimento dei quattro sistemi e i comandi che
+`installa.sh --mostra` stampa per ognuno, `kit.sh piano`, `verifica.py` su
+risultati finti e la trascrizione su FLEURS sulla CPU (§4). Non sono provati:
+il driver da `--driver` su Debian 13 e CachyOS, la GPU dentro WSL2,
+`installa-windows.ps1` (nessun PowerShell nel container), e Ollama, ComfyUI e
+whisper.cpp sulla 4050. Il primo giro su ogni sistema è anche il collaudo del
+kit: se un passo si ferma, `verifica.md` e i log nell'archivio dicono dove.
 
 ## 0 · Una volta sola: controllare la macchina
 
@@ -266,9 +354,38 @@ il controllo può sbagliare in tutti e due i sensi.
 modello), le schede con le tattiche in `libero/` e `vincolato/`, `gpu.txt` ed
 `esito.txt`. Poi `riporta.sh`, come per le altre prove.
 
-## 4 · La trascrizione della serata
+## 4 · La trascrizione sulla GPU e quella della serata
 
-La guida passo passo è nella PR #424 (la guida della trascrizione della
+**Cosa misura.** La PR #424 (ADR-0135, in bozza) ha misurato whisper.cpp solo sulla CPU del container, e ha lasciato
+aperta una domanda: la RTX 4050 si vede dal box, e quanto va veloce? La prova
+`scripts/prove-4050/trascrizione-gpu.sh` risponde a quella, senza registrare
+nessuno. Usa i parametri del thread della trascrizione: modello
+`large-v3-turbo-q8_0`, `-l it -mc 0` e il VAD `silero-v6.2.0`; come audio le
+prime 40 righe di FLEURS `it_it/dev` (Google, CC BY 4.0), su cui la CPU del
+container ha dato 5,8% di parole sbagliate in 582 s.
+
+**Requisiti.** Il box `whisper` (lo crea `kit.sh installa`, con la ricetta del
+§2 della guida della #424) e circa 2 GB di disco in
+`~/rumblingstone-prove-4050/whisper-lavoro/`: whisper.cpp al commit misurato
+nel container (`5922450`), il modello (0,9 GB), il VAD e l'archivio di FLEURS
+(290 MB). Su WSL2 compila con CUDA invece di Vulkan
+(`RS_WHISPER_BACKEND=cuda`, di serie lì); `RS_WHISPER_BACKEND=cpu` fa il
+confronto onesto con la CPU del portatile.
+
+**Passi.**
+
+```bash
+scripts/prove-4050/trascrizione-gpu.sh
+```
+
+**Cosa guardare.** In `trascrizione-gpu/`: `dispositivo.txt` (le righe di
+avvio di whisper-cli: deve comparire la RTX 4050, non solo la CPU), `esito.txt`
+(secondi, secondi di audio, quante volte il tempo reale), `grezza.txt` e
+`riferimento.txt`. Le parole sbagliate le conta
+`transcribe_session.py misura` della #424: se la #424 è già su main la prova
+la fa da sé e scrive `misura.txt`, altrimenti la faccio io dall'archivio.
+
+**La serata vera.** La guida passo passo è nella PR #424 (la guida della trascrizione della
 serata sul ramo `claude/project-thread-kcq3f8`, §2 per compilare whisper.cpp
 con Vulkan in una distrobox `--nvidia`). Non la ripeto qui, perché finché la PR è
 in bozza la fonte è quella. Oltre al portatile serve una serata registrata:
@@ -321,17 +438,19 @@ scripts/prove-4050/riporta.sh                    # i risultati di oggi
 scripts/prove-4050/riporta.sh 2026-11-16         # o di un altro giorno
 ```
 
-Ne esce `~/rumblingstone-prove-4050/prove-4050-<giorno>.tar.gz`, con
-`macchina.txt`, esiti, tempi, risposte, corse, misure e solo le immagini finali
-e le generazioni sotto gli 8 MB. Pesi, venv, ComfyUI e immagini intermedie
-restano fuori. Caricalo nel thread «Preparare le prove sul portatile RTX
-4050», o in quello della prova. L'agente lo unisce al repo e lo registra
+Prima dell'archivio `riporta.sh` lancia `verifica.py`, che scrive
+`verifica.md`; poi ne esce `~/rumblingstone-prove-4050/prove-4050-<giorno>.tar.gz`, con
+`macchina.txt`, `verifica.md`, esiti, tempi, risposte, corse, misure e solo le
+immagini finali e le generazioni sotto gli 8 MB. Pesi, venv, ComfyUI, l'audio
+di FLEURS e le immagini intermedie restano fuori. Caricalo nel thread
+«Preparare il kit unico di prove per la 4050», o in quello della prova. L'agente lo unisce al repo e lo registra
 nell'ADR della prova:
 
 - lettore: `estrai_rag.py --unisci` e `muta_grafo.py valuta`, poi ESITO.md;
 - prosa: `plans/scrittura/RISULTATI.md` e ADR-0089;
 - immagini: il confronto con le prove su CPU, nel thread delle immagini;
 - tattiche vincolate: `misure.json` e `risposte.json` nel thread «Applicare Document AI e Explainable AI», con il verdetto secondo il piano;
+- trascrizione sulla GPU: `esito.txt`, `dispositivo.txt` e la misura delle parole nel thread «Provare la trascrizione locale della serata»;
 - Drappo: i `confronto-<id>.jpg` e `riepilogo.json` vanno nel thread «Scrivere lo script FLUX per il 4050», e la D2 si chiude con la tua scelta tra A e B.
 
 ## Se qualcosa va storto
@@ -343,4 +462,9 @@ nell'ADR della prova:
 | Il 7B è lento come una CPU | Guarda `gpu.txt`: se la memoria usata è sotto 1 GB la GPU non è passata nel box. Riavvia il box: `podman restart llm-locale`. |
 | `CUDA out of memory` nelle immagini | Prima `RS_VLM_DEVICE=cpu`, poi `RS_COMFY_ARGS="--novram"`. Lo dici nel riepilogo. |
 | FLUX: una tavola impiega molti minuti | Guarda `riepilogo.json`: se `ram_comfyui_picco_mib` supera la RAM libera, il sistema sta usando lo swap. Chiudi Steam e Firefox e rilancia. |
+| Debian 13: `nvidia-driver` non è tra i pacchetti | In `/etc/apt/sources.list.d/debian.sources` aggiungi `contrib non-free non-free-firmware` a `Components`, poi `sudo apt update` e `kit.sh installa --driver`. |
+| CachyOS: podman dice «no subuid ranges found» | `installa.sh` li aggiunge; se l'hai saltato: `sudo usermod --add-subuids 100000-165535 --add-subgids 100000-165535 $USER && podman system migrate`. |
+| WSL2: `nvidia-smi` non trovato dentro Ubuntu | Aggiorna il driver NVIDIA di Windows e lancia `wsl --update` da PowerShell; `nvidia-smi` sta in `/usr/lib/wsl/lib`. |
+| WSL2: whisper non compila con CUDA | `RS_WHISPER_BACKEND=cpu scripts/prove-4050/trascrizione-gpu.sh` e lo dici nel riepilogo: la GPU su WSL2 resta da capire. |
+| `kit.sh`: «Ollama non risponde» | Guarda `ollama-ctx<N>.log` nella cartella del giorno: di solito è il box che non parte (prima riga di questa tabella). |
 | Disco pieno | `PROVE_DIR=/srv/prove scripts/prove-4050/...` e, per i pesi delle immagini, `IMMAGINI_LAVORO=/srv/immagini`. |

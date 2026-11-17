@@ -6,6 +6,8 @@
 BOX="${COMFYUI_BOX:-comfyui}"
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DEST="${COMFYUI_DIR:-$HERE/ComfyUI}"
+# shellcheck source=../prove-4050/ospite.sh
+. "$HERE/../prove-4050/ospite.sh"
 
 # spazio_libero <dir> <GB>: warns if fewer than <GB> are free where <dir> will be
 spazio_libero() {

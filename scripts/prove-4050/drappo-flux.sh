@@ -20,7 +20,7 @@ LAVORO="${IMMAGINI_LAVORO:-$PROVE_DIR/immagini-lavoro}"
 DEST="$RIS/drappo-flux"
 BOX="${COMFYUI_BOX:-comfyui}"
 COMFY_ARGS="${RS_COMFY_ARGS:---lowvram}"
-podman container exists "$BOX" 2>/dev/null || {
+box_c_e "$BOX" || {
   echo "ERRORE: il box '$BOX' non c'è. Una tantum: scripts/comfyui-local/setup-distrobox.sh" >&2; exit 3; }
 mkdir -p "$LAVORO" "$DEST"
 esito drappo-flux tavole "$SOLO"
@@ -29,7 +29,7 @@ esito drappo-flux comfyui "$COMFY_ARGS"
 esito drappo-flux testa "$(git -C "$RADICE" rev-parse --short HEAD)"
 gpu_foto drappo-flux "prima"
 t0=$(date +%s)
-distrobox enter "$BOX" -- bash -lc "
+nel_box "$BOX" bash -lc "
   set -e
   cd '$LAVORO'
   [ -d venv ] || python3 -m venv venv

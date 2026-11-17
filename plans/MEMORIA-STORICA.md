@@ -1801,7 +1801,17 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE3-Giorno3-Finale-e-Invasione.md` r.124 · `Bestiario/villain/Sethrax_il_Velato/Sethrax.md` (Round 1) · `Bestiario/villain/Azarr_Kul/azarr-kul-final-cr17.md` (Tattiche, Misura) · `Bestiario/villain/Ushgar_Occhio_Reso/ushgar-occhio-reso-cr13.md` (Tattiche, Misura) · `plans/esperimenti/tattiche-2026-11-15/profili_villain.py` (scontri `azarr-kul-rethmar`, `ushgar-carica`)
 - **Solo qui:** la scelta non è stata misurata col simulatore: nel primo round Sethrax non attacca il party, quindi il rischio per i PG non cambia. Il teletrasporto lo espone sul piedistallo a un attacco preparato, che è l'occasione di cattura su cui conta MS-0157 per Ozyrrandion. Numeri, 20.000 prove, seme 1372, PG della carta del 05/11. Azarr Kul (pre-buff, senza Avatar, erinni e luogotenenti, contingenza della parola del ritorno): con la tattica scritta Azarr Kul è ucciso nel 30% dei casi e almeno un PG muore nel 76%; aprendo con *ferire* su Thorik è ucciso nel 52% e un PG muore nel 75%; con *ferire* su Hella al round 2 un PG muore nell'80%, ma i PG finiscono con il 58% dei pf invece del 48%. Ushgar da solo muore sempre, in 1,8 round: un PG muore nel 5% degli scontri se punta Hella, nel 2% se punta Artemis in volo, nell'1% con l'Attacco Poderoso solo contro CA 22 o meno.
 
-### MS-0159 · 2026-11-17 · Regole: il segugio infernale rifatto mezzo-immondo dall'SRD
+### MS-0159 · 2026-11-17 · I villain senza duello di ARC-09 completano lo schema
+
+- **Data:** 2026-11-17
+- **PR:** —
+- **ADR:** —
+- **Temi:** tattiche villain collezionista ghostlord valerius palio sonjak arc09 schema decisioni-dm
+- **Origine:** riga del 2026-11-17 «Tattiche di villain e PNG, ARC-09 lotto 5, villain senza duello» in `plans/CHANGELOG.md`
+- **Testo:** ultimo lotto del dossier delle tattiche di ARC-09. Per i villain che non si misurano col simulatore si è controllato il cancello delle tattiche e si sono riempiti i punti dello schema che mancavano. Il Collezionista aveva gli esiti `[DA SCRIVERE]`: il DM ha scelto sulla card del 17/11 di scriverli dai quattro patti di §Con i PG. Il Ghostlord e i sicari di Sonjak al Palio hanno ora cosa sanno dei PG. Valerius l'aveva già.
+- **Trovato nel repo:** `Bestiario/villain/Il_Collezionista_Rakshasa/Il_Collezionista_Rakshasa.md` §Esiti possibili · `Bestiario/villain/Ghostlord/Ghostlord.md` §Cosa sa dei PG · `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md` §3.1, §3.2
+- **Solo qui:** i patti del Collezionista sono scritti per l'anno −1000, mentre il dossier lo mette nel master DEF-04/05 del Torneo. Gli esiti valgono per la scena dei patti; il loro peso al Torneo va deciso quando si fonde quel master. Il ratchet degli `[INFERRED]` era rosso su main da prima (10 contro 7) per le marche nude dei lotti 3-4: qui tutte le marche delle tattiche hanno domanda e base, e la baseline sale a 16 di proposito (14 nei sorgenti, 2 copie nel booklet del Palio generato, dove stanno in un commento e non si stampano).
+### MS-0160 · 2026-11-17 · Regole: il segugio infernale rifatto mezzo-immondo dall'SRD
 
 - **Data:** 2026-11-17
 - **PR:** —

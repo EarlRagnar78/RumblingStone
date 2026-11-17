@@ -137,14 +137,14 @@ attacchi:
 
 **Tattiche** **Obiettivo**: **il cavallo**, non i PG: colpire e sparire. Se scoperti, coprono la fuga.
 
-*Cosa sanno dei PG e in che stato li trovano*: Sonjak gli ha detto quale stalla e quale cavallo, non chi la guarda. Arrivano la notte del Giorno 2, quando i PG hanno speso la giornata delle prove e dormono o fanno la guardia a turno: uno sveglio, gli altri senza incantesimi preparati per l'indomani. Se trovano un PG di guardia, il primo colpo va su di lui, non sul cavallo. `[INFERRED]`
-
 **Statistiche** Des 20
 
 **Capacità speciali**
 - **Morte Improvvisa** (CD 18), *Nascondersi nelle Ombre*.
 - **Innata**: *Oscurità*, *Fuoco delle Fate*.
 
+
+*Cosa sanno dei PG e in che stato li trovano*: Sonjak gli ha detto quale stalla e quale cavallo, non chi la guarda. Arrivano la notte del Giorno 2, quando i PG hanno speso la giornata delle prove e dormono o fanno la guardia a turno: uno sveglio, gli altri senza incantesimi preparati per l'indomani. Se trovano un PG di guardia, il primo colpo va su di lui, non sul cavallo. <!-- [INFERRED — Sonjak sa chi fa la guardia alla stalla?; base: §3.1 e la scheda di Sonjak dicono il mandante, non che cosa sa dei PG] (marca tolta dal booklet stampato) -->
 
 ### 3.2 Drow Chierica di Lolth (GS 10)
 ```statblocco
@@ -165,12 +165,12 @@ voci:
 
 **Tattiche** Comanda l'assalto; usa **Silenzio** per soffocare gli allarmi, **Ragnatela** in stalla. **Cattura viva** = intel Fase 0 Rethmar + −1 clock Sonjak.
 
-*Cosa sa dei PG*: quello che sanno gli assassini, e in più che uno dei PG cura (Hella): *Silenzio* va su di lei per prima, se è sveglia. `[INFERRED]`
-
 **Statistiche** Sag 18 · **Equipaggiamento** armatura completa +1, scudo pesante di acciaio, mantello della resistenza +1, perla del potere 1°, pugnale, balestra leggera con 20 quadrelli
 
 **Capacità speciali**
 - **Incantesimi** fino al 5° (Comando Superiore, Ragnatela, Silenzio, Flagello Insetti). *Oscurità*, *Individuazione Magico*.
+
+*Cosa sa dei PG*: quello che sanno gli assassini, e in più che uno dei PG cura (Hella): *Silenzio* va su di lei per prima, se è sveglia. <!-- [INFERRED — La chierica sa che Hella è la guaritrice?; base: lo sa se ha visto le prove del Giorno 1 o 2, nessuna scena lo dice] (marca tolta dal booklet stampato) -->
 
 > RC-001 (2026-11-15, ADR-0134) `[CANONE — DM 2026-11-15, RC-001]`: armatura completa +1 e scudo pesante di acciaio spiegano la CA 22 se la Destrezza è 12 (10, +9 armatura, +2 scudo, +1 Des); la scheda non scrive la Destrezza e questa è una lettura. Mantello, perla, pugnale e balestra vengono dal PNG dei Codex PF1e «Death Priest» (Chierico 9); il suo giaco di maglia +1, l'anello di protezione +1 e la fascia della saggezza non entrano. Il mantello non cambia numeri perché la scheda non scrive i tiri salvezza. Valore 4.709 mo contro i 12.000 del 9° livello (DMG 3.5, Tabella 4-23).
 

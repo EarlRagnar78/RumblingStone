@@ -144,8 +144,8 @@ Zeth sente tutto ciò che accade nel Leone di Pietra attraverso i suoi sensi mag
 - Non attacca per primo a meno di minaccia diretta alla filatteria.
 
 #### Cosa sa dei PG
-- Con i Sensi del Lair sente chi entra nel Leone di Pietra prima di vederlo: quanti sono, se qualcuno porta la filatteria e chi parla con la natura. Riconosce Hella come una del Cerchio prima che apra bocca, ed è con lei che parla per prima. `[INFERRED]`
-- Della Mano Rossa sa quello che gli fa fare il patto che lo tiene sotto controllo; dei PG sa solo quello che il lair gli dice in quel momento. Non sa niente della Corona di Adamantio né di Aegis Fang finché non li vede. `[INFERRED]`
+- Con i Sensi del Lair sente chi entra nel Leone di Pietra prima di vederlo: quanti sono, se qualcuno porta la filatteria e chi parla con la natura. Riconosce Hella come una del Cerchio prima che apra bocca, ed è con lei che parla per prima.
+- Della Mano Rossa sa quello che gli fa fare il patto che lo tiene sotto controllo; dei PG sa solo quello che il lair gli dice in quel momento. Non sa niente della Corona di Adamantio né di Aegis Fang finché non li vede. `[INFERRED — Il Ghostlord sa dei PG più di quello che il lair gli mostra?; base: §Sensi del Lair e §Se Negozia della scheda, nessuna fonte gli dà altre notizie]`
 
 ## Esiti possibili
 

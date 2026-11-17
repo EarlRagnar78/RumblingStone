@@ -137,9 +137,9 @@ Il Collezionista indossa l'**Amuleto dell'Eclissi Planare** (Artefatto Minore):
 
 ## Esiti possibili
 
-Un ramo per patto (§Con i PG) e uno per l'attacco (§In combattimento). La colonna «Che cosa gli resta» è `[INFERRED]`: la scheda dice il patto e il suo prezzo, non che cosa il Collezionista se ne fa dopo. Da rivedere quando si fonde il master DEF-04/05.
+Un ramo per patto (§Con i PG) e uno per l'attacco (§In combattimento). La colonna «Che cosa gli resta» è `[INFERRED — Che cosa fa il Collezionista con quello che ottiene da ogni patto?; base: la scheda dà il patto e il suo prezzo (r.102-128), non il dopo; da rivedere quando si fonde il master DEF-04/05]`.
 
-| Scelta dei PG | Conseguenza scritta nella scheda | Che cosa gli resta `[INFERRED]` |
+| Scelta dei PG | Conseguenza scritta nella scheda | Che cosa gli resta |
 |:---|:---|:---|
 | **Artemis accetta** lo scambio (il mantello per il registro degli Ironforge) | Artemis ricco ma compromesso moralmente (r.102) | Ha il registro e una prova del furto: una leva su Artemis da usare più avanti |
 | **Thorik usa i Fuochi di Baator** | Un'ala dell'orda distrutta, fumi letali nei tunnel di evacuazione (r.108) | Ha venduto un'arma e ha i morti civili da raccontare: una leva sul Senso del Dovere di Thorik |

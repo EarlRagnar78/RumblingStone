@@ -160,6 +160,20 @@ class TestScansione(unittest.TestCase):
                 "`[INFERRED — Chi guida?; base: nessuna]`\n", encoding="utf-8")
             self.assertEqual([v["classe"] for v in inv.scansiona(Path(d))], ["aperti"])
 
+    def test_la_marca_citata_solo_nei_piani_non_fa_da_sorgente(self):
+        """Revisione di Codex sulla #467: se il sorgente vivo ha perso la marca e
+        resta solo il racconto in `plans/`, la marca del booklet è ancora debito."""
+        marca = "`[INFERRED — Chi guida?; base: nessuna]`"
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "plans").mkdir()
+            (Path(d) / "plans" / "PIANO.md").write_text(f"Era {marca}\n", encoding="utf-8")
+            (Path(d) / "BOOKLET.hb.md").write_text(
+                f"<!-- GENERATO da scripts/build_booklet_html.py -->\n{marca}\n",
+                encoding="utf-8")
+            with mock.patch.object(inv, "ROOT", Path(d)):
+                classi = {v["file"]: v["classe"] for v in inv.scansiona(Path(d))}
+            self.assertEqual(classi["BOOKLET.hb.md"], "aperti")
+
     def test_generato_solo_se_lo_dice_in_testa(self):
         """Un documento vivo che cita «GENERATO da scripts/» più sotto resta un sorgente."""
         self.assertTrue(inv.e_generato("<!-- GENERATO da scripts/x.py -->\n# T\n"))

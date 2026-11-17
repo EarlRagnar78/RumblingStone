@@ -227,7 +227,10 @@ def scansiona(base: Path) -> list[dict]:
     # Una marca ristampata in un file generato è una copia se la stessa marca sta
     # in un sorgente: il debito è già contato lì, e contarlo due volte alzerebbe
     # la baseline a ogni rigenerazione di un booklet.
-    nei_sorgenti = {t["marca"] for t in trovati if not t["generato"]}
+    # Solo un sorgente vivo vale: la stessa marca citata in `plans/**` o in un
+    # changelog racconta un debito, non lo tiene aperto (revisione di Codex, #467).
+    nei_sorgenti = {t["marca"] for t in trovati
+                    if not t["generato"] and t["classe"] == "aperti"}
     for t in trovati:
         if t["generato"] and t["classe"] == "aperti" and t["marca"] in nei_sorgenti:
             t["classe"] = "copie"

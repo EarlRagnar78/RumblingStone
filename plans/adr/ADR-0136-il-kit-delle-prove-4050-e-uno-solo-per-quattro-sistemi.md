@@ -40,7 +40,8 @@ registrata: whisper.cpp vede la 4050 dal box, e quanto va veloce?
    doveva, non che la tecnica migliora: il verdetto resta del thread della prova.
 6. **Trascrizione sulla GPU senza registrare nessuno**: `trascrizione-gpu.sh`
    con i parametri chiesti dal thread della trascrizione (large-v3-turbo-q8_0,
-   `-l it -mc 0`, VAD silero-v6.2.0, prime 40 righe di FLEURS it_it/dev, CC BY 4.0).
+   `-l it -mc 0`, senza VAD, prime 40 righe di FLEURS it_it/dev, CC BY 4.0). Soglia: 2,3% di parole
+   sbagliate, il valore della CPU del container; `verifica.py` tollera un punto.
 
 Nessuna libreria nuova: bash, Python della libreria standard, PowerShell di
 Windows. I pacchetti dell'host sono quelli delle distribuzioni.

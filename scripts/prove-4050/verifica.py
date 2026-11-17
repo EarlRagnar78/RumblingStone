@@ -27,6 +27,10 @@ from pathlib import Path
 
 QUI = Path(__file__).resolve().parent
 VRAM_MIB = 6144  # la RTX 4050 del portatile
+# FLEURS it_it/dev, 40 righe, large-v3-turbo-q8_0, -mc 0, senza VAD: 2,3% sulla CPU del container
+# (MISURE.md della #424). Sulla GPU il testo dovrebbe essere lo stesso: un punto di tolleranza.
+WER_SOGLIA = 0.023
+WER_TOLLERANZA = 0.01
 
 
 def leggi_esito(cartella: Path) -> dict:
@@ -110,7 +114,15 @@ def c_trascrizione(c: Path, esito: dict) -> tuple[str, list[str], dict]:
               "dispositivo": disp.splitlines()[0] if disp.strip() else ""}
     misura = c / "misura.txt"
     if misura.exists():
-        numeri["misura"] = misura.read_text(encoding="utf-8", errors="replace").strip()[:300]
+        testo = misura.read_text(encoding="utf-8", errors="replace")
+        m = re.search(r'"wer":\s*([0-9.]+)', testo)
+        if m:
+            numeri["wer"] = float(m.group(1))
+            if numeri["wer"] > WER_SOGLIA + WER_TOLLERANZA:
+                note.append(f"parole sbagliate {numeri['wer']:.1%}: sopra il {WER_SOGLIA:.1%} della CPU del "
+                            "container (più un punto): la GPU non dà lo stesso testo")
+        else:
+            numeri["misura"] = testo.strip()[:300]
     if not grezza:
         note.append("trascrizione vuota: vedi whisper.log")
     sulla_gpu = bool(re.search(r"nvidia|geforce|rtx", disp, re.I))

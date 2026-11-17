@@ -4,9 +4,10 @@
 # quante volte il tempo reale va? La prova sulla serata vera resta quella della #424: qui non si
 # registra nessuno.
 #
-# Parametri chiesti dal thread della trascrizione: large-v3-turbo-q8_0, `-l it -mc 0`, VAD
-# silero-v6.2.0; audio = le prime 40 righe di FLEURS it_it/dev (Google, CC BY 4.0), che sulla
-# CPU del container hanno dato 5,8% di parole sbagliate in 582 s.
+# Parametri chiesti dal thread della trascrizione: large-v3-turbo-q8_0, `-l it -mc 0`, senza VAD
+# (sullo stesso audio il VAD porta q8_0 da 2,3% a 8,6% di parole sbagliate: ne perde 62 nei buchi);
+# audio = le prime 40 righe di FLEURS it_it/dev (Google, CC BY 4.0). Riferimento sulla CPU del
+# container: 2,3% di parole sbagliate (MISURE.md della #424). La GPU deve dare lo stesso testo.
 #
 #   RS_WHISPER_BACKEND  vulkan (di serie nel box) | cuda (di serie su WSL2) | cpu
 #   RS_WHISPER_COMMIT   il commit di whisper.cpp (di serie quello misurato nel container)
@@ -18,7 +19,6 @@ LAVORO="${WHISPER_LAVORO:-$PROVE_DIR/whisper-lavoro}"
 COMMIT="${RS_WHISPER_COMMIT:-5922450}"
 RIGHE="${RS_FLEURS_RIGHE:-40}"
 MODELLO=large-v3-turbo-q8_0
-VAD=silero-v6.2.0
 if [ -n "${RS_WHISPER_BACKEND:-}" ]; then BACKEND="$RS_WHISPER_BACKEND"
 elif [ "$(rs_modo)" = box ]; then BACKEND=vulkan
 else BACKEND=cuda; fi
@@ -68,17 +68,16 @@ nel_box "$BOX" bash -lc "
   cmake -B 'build-$BACKEND' $FLAG -DCMAKE_BUILD_TYPE=Release >/dev/null
   cmake --build 'build-$BACKEND' -j --config Release --target whisper-cli >/dev/null
   [ -f models/ggml-$MODELLO.bin ] || sh models/download-ggml-model.sh $MODELLO
-  [ -f models/ggml-$VAD.bin ] || sh models/download-vad-model.sh $VAD
   cd '$LAVORO'
   ffmpeg -v error -y -f concat -safe 0 -i concat.txt -ar 16000 -ac 1 -c:a pcm_s16le fleurs.wav
 " 2>&1 | tee "$DEST/compila.log"
 
-echo "==> 3/4 trascrizione (-l it -mc 0 --vad)"
+echo "==> 3/4 trascrizione (-l it -mc 0)"
 t0=$(date +%s.%N)
 nel_box "$BOX" bash -lc "
   cd '$LAVORO'
   whisper.cpp/build-$BACKEND/bin/whisper-cli -m whisper.cpp/models/ggml-$MODELLO.bin \
-    -l it -mc 0 --vad -vm whisper.cpp/models/ggml-$VAD.bin -f fleurs.wav -otxt -of '$DEST/grezza'
+    -l it -mc 0 -f fleurs.wav -otxt -of '$DEST/grezza'
 " > "$DEST/whisper.log" 2>&1 || { echo "ERRORE: whisper-cli è uscito con errore, vedi $DEST/whisper.log" >&2; }
 t1=$(date +%s.%N)
 gpu_foto trascrizione-gpu "dopo"

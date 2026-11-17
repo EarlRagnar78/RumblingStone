@@ -353,6 +353,12 @@ class TestVerifica(unittest.TestCase):
             self.scrivi(base + f, "le autorità locali")
         self.scrivi(base + "dispositivo.txt", "ggml_vulkan: 0 = NVIDIA GeForce RTX 4050 Laptop GPU\n")
         self.assertEqual(self.v.verifica(self.r, self.m)["trascrizione-gpu"]["stato"], "ok")
+        self.scrivi(base + "misura.txt", '{"errori": 23, "wer": 0.025}')
+        self.assertEqual(self.v.verifica(self.r, self.m)["trascrizione-gpu"]["numeri"]["wer"], 0.025)
+        self.assertEqual(self.v.verifica(self.r, self.m)["trascrizione-gpu"]["stato"], "ok")
+        self.scrivi(base + "misura.txt", '{"errori": 87, "wer": 0.086}')
+        self.assertEqual(self.v.verifica(self.r, self.m)["trascrizione-gpu"]["stato"], "ko")
+        self.scrivi(base + "misura.txt", '{"wer": 0.02}')
         self.scrivi(base + "dispositivo.txt", "no GPU found\n")
         e = self.v.verifica(self.r, self.m)["trascrizione-gpu"]
         self.assertEqual(e["stato"], "ko")

@@ -360,14 +360,17 @@ modello), le schede con le tattiche in `libero/` e `vincolato/`, `gpu.txt` ed
 aperta una domanda: la RTX 4050 si vede dal box, e quanto va veloce? La prova
 `scripts/prove-4050/trascrizione-gpu.sh` risponde a quella, senza registrare
 nessuno. Usa i parametri del thread della trascrizione: modello
-`large-v3-turbo-q8_0`, `-l it -mc 0` e il VAD `silero-v6.2.0`; come audio le
-prime 40 righe di FLEURS `it_it/dev` (Google, CC BY 4.0), su cui la CPU del
-container ha dato 5,8% di parole sbagliate in 582 s.
+`large-v3-turbo-q8_0` e `-l it -mc 0`, **senza VAD**; come audio le prime 40
+righe di FLEURS `it_it/dev` (Google, CC BY 4.0), su cui la CPU del container ha
+dato 2,3% di parole sbagliate. Il VAD sullo stesso audio porta l'errore a 8,6%,
+perché perde parole nei tagli: per questo qui è spento. Sulla GPU il testo
+deve tornare uguale; `verifica.py` segna «ko» sopra il 3,3% (2,3% più un punto
+di tolleranza).
 
 **Requisiti.** Il box `whisper` (lo crea `kit.sh installa`, con la ricetta del
 §2 della guida della #424) e circa 2 GB di disco in
 `~/rumblingstone-prove-4050/whisper-lavoro/`: whisper.cpp al commit misurato
-nel container (`5922450`), il modello (0,9 GB), il VAD e l'archivio di FLEURS
+nel container (`5922450`), il modello (0,9 GB) e l'archivio di FLEURS
 (290 MB). Su WSL2 compila con CUDA invece di Vulkan
 (`RS_WHISPER_BACKEND=cuda`, di serie lì); `RS_WHISPER_BACKEND=cpu` fa il
 confronto onesto con la CPU del portatile.

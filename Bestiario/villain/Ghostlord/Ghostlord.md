@@ -143,6 +143,10 @@ Zeth sente tutto ciò che accade nel Leone di Pietra attraverso i suoi sensi mag
 - Dimostra il suo potere **senza attaccare**: fa emergere un leone spettrale dal muro accanto al PG più arrogante del gruppo, lo fissa per 3 secondi, poi lo fa scomparire. Messaggio: potrebbe farlo fuori, ma non lo farà.
 - Non attacca per primo a meno di minaccia diretta alla filatteria.
 
+#### Cosa sa dei PG
+- Con i Sensi del Lair sente chi entra nel Leone di Pietra prima di vederlo: quanti sono, se qualcuno porta la filatteria e chi parla con la natura. Riconosce Hella come una del Cerchio prima che apra bocca, ed è con lei che parla per prima. `[INFERRED]`
+- Della Mano Rossa sa quello che gli fa fare il patto che lo tiene sotto controllo; dei PG sa solo quello che il lair gli dice in quel momento. Non sa niente della Corona di Adamantio né di Aegis Fang finché non li vede. `[INFERRED]`
+
 ## Esiti possibili
 
 | Scelta PG | Conseguenza a Rethmar | Conseguenza per Zeth |

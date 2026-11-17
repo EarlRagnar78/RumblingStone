@@ -137,6 +137,8 @@ attacchi:
 
 **Tattiche** **Obiettivo**: **il cavallo**, non i PG: colpire e sparire. Se scoperti, coprono la fuga.
 
+*Cosa sanno dei PG e in che stato li trovano*: Sonjak gli ha detto quale stalla e quale cavallo, non chi la guarda. Arrivano la notte del Giorno 2, quando i PG hanno speso la giornata delle prove e dormono o fanno la guardia a turno: uno sveglio, gli altri senza incantesimi preparati per l'indomani. Se trovano un PG di guardia, il primo colpo va su di lui, non sul cavallo. `[INFERRED]`
+
 **Statistiche** Des 20
 
 **Capacità speciali**
@@ -162,6 +164,8 @@ voci:
 **Difesa** **CA 22** · **pf 63**
 
 **Tattiche** Comanda l'assalto; usa **Silenzio** per soffocare gli allarmi, **Ragnatela** in stalla. **Cattura viva** = intel Fase 0 Rethmar + −1 clock Sonjak.
+
+*Cosa sa dei PG*: quello che sanno gli assassini, e in più che uno dei PG cura (Hella): *Silenzio* va su di lei per prima, se è sveglia. `[INFERRED]`
 
 **Statistiche** Sag 18 · **Equipaggiamento** armatura completa +1, scudo pesante di acciaio, mantello della resistenza +1, perla del potere 1°, pugnale, balestra leggera con 20 quadrelli
 

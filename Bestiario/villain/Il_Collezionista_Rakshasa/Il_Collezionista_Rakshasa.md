@@ -137,7 +137,16 @@ Il Collezionista indossa l'**Amuleto dell'Eclissi Planare** (Artefatto Minore):
 
 ## Esiti possibili
 
-[DA SCRIVERE — la scheda non ha rami scritti per il Collezionista. Ci sono il patto per ogni PG (§Con i PG) e la sua uscita di scena se attaccato (§In combattimento).]
+Un ramo per patto (§Con i PG) e uno per l'attacco (§In combattimento). La colonna «Che cosa gli resta» è `[INFERRED]`: la scheda dice il patto e il suo prezzo, non che cosa il Collezionista se ne fa dopo. Da rivedere quando si fonde il master DEF-04/05.
+
+| Scelta dei PG | Conseguenza scritta nella scheda | Che cosa gli resta `[INFERRED]` |
+|:---|:---|:---|
+| **Artemis accetta** lo scambio (il mantello per il registro degli Ironforge) | Artemis ricco ma compromesso moralmente (r.102) | Ha il registro e una prova del furto: una leva su Artemis da usare più avanti |
+| **Thorik usa i Fuochi di Baator** | Un'ala dell'orda distrutta, fumi letali nei tunnel di evacuazione (r.108) | Ha venduto un'arma e ha i morti civili da raccontare: una leva sul Senso del Dovere di Thorik |
+| **Tordek ruba i Cristalli di Risonanza** | Gli esplosivi tornano ai nani (r.114) | Perde merce e lo sa: Tordek entra nella lista di chi gli deve qualcosa |
+| **Hella lo minaccia** e difende i rifugiati | Rancore eterno del Rakshasa verso Hella (r.120) | Hella diventa il suo bersaglio personale nelle scene successive |
+| **I PG lo attaccano** | Contingenza con *porta dimensionale*: sparisce senza combattere (r.128) | Nessuna perdita per lui; il mercato con i PG si chiude e restano solo le leve già prese |
+| **Nessun patto** | — | Continua a depredare i clan mentre Hammerfist e l'orda si consumano (§Gli obiettivi) |
 
 ## Fonti e canone
 

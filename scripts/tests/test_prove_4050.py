@@ -209,6 +209,16 @@ class TestSchedeVincolate(unittest.TestCase):
         self.assertIn("fuori dallo schema", self.S.in_markdown(
             json.dumps({"prima": [passo], "durante": [passo], "morale": [passo]}), v)[1])
 
+    def test_copertura_zero_non_migliora(self):
+        # il libero non nomina nessuna voce e sbaglia; il vincolato non sbaglia ma
+        # scrive solo azioni comuni: non è un miglioramento
+        base = {"valida": True, "secondi": 1, "token": 1, "ns": 1, "fuori_lista": [], "menzioni": 0}
+        righe = [dict(base, braccio="libero", s8=1, copertura=0),
+                 dict(base, braccio="vincolato", s8=0, copertura=0)]
+        self.assertFalse(self.S.riassumi(righe)["migliora"])
+        righe[1]["copertura"] = 1
+        self.assertTrue(self.S.riassumi(righe)["migliora"])
+
     def test_misura_completa_e_ripresa(self):
         server = http.server.HTTPServer(("127.0.0.1", 0), _FintoTattiche)
         threading.Thread(target=server.serve_forever, daemon=True).start()

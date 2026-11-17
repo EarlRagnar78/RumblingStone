@@ -32,8 +32,9 @@ ogni passo è un enum delle voci della scheda.
 La tecnica **migliora** se, sulle stesse schede: (1) il vincolato ha meno
 violazioni S8 per scheda del libero, (2) tutte le sue risposte sono valide,
 (3) la sua copertura delle voci della scheda è almeno l'80% di quella del
-libero. La condizione (3) c'è perché un vincolo che fa scrivere solo
-«avanzare» non viola niente ma non serve.
+libero e almeno una voce per risposta in media. La condizione (3) c'è perché
+un vincolo che fa scrivere solo «avanzare» non viola niente ma non serve; il
+minimo di una voce vale anche quando il libero non ne nomina nessuna.
 
 Se migliora, la PR della tecnica porta il braccio vincolato in un comando del
 repo (le «Tattiche» di `genera_creatura.py` scritte dal modello locale, con lo
@@ -49,7 +50,9 @@ qui e nel thread, e non entra niente.
   incantesimo: S8 li legge, quindi la misura lo conta.
 - S8 riconosce un incantesimo solo in corsivo. Se il libero non usa il corsivo,
   S8 gli conta meno errori di quelli che fa; per questo c'è il secondo conto
-  (`fuori_lista`), che cerca i nomi senza guardare la formattazione.
+  (`fuori_lista`), che cerca i nomi senza guardare la formattazione. Anche
+  questo ha un buco dichiarato: gli incantesimi di una parola sotto le 9
+  lettere («luce», «sonno») non li conta, perché sono anche parole comuni.
 - Il campione ha un difetto del generatore che la prova non corregge: il
   talento *Incantesimi focalizzati* esce con «(bene, caos, legge o male)» al
   posto di una scuola.

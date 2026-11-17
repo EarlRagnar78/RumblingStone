@@ -146,6 +146,10 @@ attacchi:
 
 *Cosa sanno dei PG e in che stato li trovano*: Sonjak gli ha detto quale stalla e quale cavallo, non chi la guarda. Arrivano la notte del Giorno 2, quando i PG hanno speso la giornata delle prove e dormono o fanno la guardia a turno: uno sveglio, gli altri senza incantesimi preparati per l'indomani. Se trovano un PG di guardia, il primo colpo va su di lui, non sul cavallo. <!-- [INFERRED — Sonjak sa chi fa la guardia alla stalla?; base: §3.1 e la scheda di Sonjak dicono il mandante, non che cosa sa dei PG] (marca tolta dal booklet stampato) -->
 
+<!-- storico -->
+Prima del 2026-11-17 (tattiche di ARC-09, lotto 5) i sicari e la chierica avevano solo l'obiettivo: il cavallo, non i PG. Che cosa sanno dei PG e in che stato li trovano è stato aggiunto qui e in §3.2, marcato INFERRED perché nessuna scena lo dice.
+<!-- /storico -->
+
 ### 3.2 Drow Chierica di Lolth (GS 10)
 ```statblocco
 nome: Drow Chierica di Lolth

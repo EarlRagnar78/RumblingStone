@@ -1269,6 +1269,14 @@ def _naturale_col_modello(p: Path, testo: str, sis: str, blocchi: list) -> "tupl
     della_razza = None
     if any(re.search(rf"\b(?:{e})\b", tipo, re.I) for e in tabella.get("razze_fonte", [])):
         della_razza = next((n for e, n in (tabella.get("modelli_gs") or {}).get("naturale_razze", []) if re.search(rf"\b(?:{e})\b", tipo, re.I)), 0)
+    if della_razza is None:
+        # la base che la fonte dichiara («SRD Hell Hound + Half-Fiend»), se ha la stessa taglia:
+        # l'armatura naturale cambia con la taglia, non coi dadi vita né coi livelli di classe
+        from dmcore import creature_base as CB
+        fonte = _FONTE_SCHEDA.search(testo)
+        trovata = CB.dichiarata(fonte.group(1), sis, col_modello=True) if fonte else None
+        if trovata and "naturale" in trovata[1] and trovata[1].get("taglia") == _taglia_del_blocco(sb):
+            della_razza = trovata[1]["naturale"]
     atteso = GS.naturale_col_modello(regola, _taglia_del_blocco(sb), della_razza)
     if atteso is None:
         return [], [dict(base, testo=f"«{nome}»: la scheda non scrive la taglia, l'armatura naturale del modello non si riscontra")], True

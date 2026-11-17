@@ -1673,8 +1673,8 @@ monsters:
     role: generalist
     environment: any
     source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Hell Hound 4cr .htm"
-  - id: hell-hound-mezzo-immondo-dragonblood-f8e56c
-    name: "Hell Hound mezzo-immondo (dragonblood)"
+  - id: hell-hound-mezzo-immondo-f8e56c
+    name: "Hell Hound mezzo-immondo"
     cr: 4.0
     faction: red-hand
     role: melee-heavy

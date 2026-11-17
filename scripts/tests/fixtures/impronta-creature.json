@@ -8385,23 +8385,26 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 8,
-     "Cos": 15,
-     "Des": 13,
-     "For": 15,
-     "Int": 6,
+     "Car": 10,
+     "Cos": 14,
+     "Des": 16,
+     "For": 16,
+     "Int": 10,
      "Sag": 10
     },
     [
-     "trascritta dalla fonte `Hell Hound 4cr .htm`"
+     "trascritta dalla fonte `00_Hell Hound-mezzoimmondi-cr4.pcg`",
+     "⚠ Des 16 letta da ca-dettaglio: la fonte dice 11, lo statblocco è stato adattato e vince lo statblocco",
+     "⚠ Cos 14 ricavata da pf 26 su 4 DV: la fonte dice 11, lo statblocco è stato adattato e vince lo statblocco",
+     "⚠ For 16 ricavata da BAB e lotta: la fonte dice 11, lo statblocco è stato adattato e vince lo statblocco"
     ]
    ],
    "genera_senza_fonte": [
     {
      "Car": 9,
      "Cos": 14,
-     "Des": 12,
-     "For": 14,
+     "Des": 16,
+     "For": 16,
      "Int": 8,
      "Sag": 11
     },
@@ -8409,10 +8412,10 @@
      "array elite del Manuale del DM (creatura)",
      "variazione a seme fisso: Sag +1, Car −1",
      "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 4) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
-     "Des 12 **derivata dalla CA di contatto** — il vincolo batte l'array",
-     "Des 12 **ricavata dall'iniziativa** — il vincolo batte l'array",
+     "Des 16 **letta da ca-dettaglio** — il vincolo batte l'array",
+     "Des 16 **ricavata dall'iniziativa** — il vincolo batte l'array",
      "Cos 14 **ricavata da pf 26 su 4 DV** — il vincolo batte l'array",
-     "For 14 **ricavata da BAB e lotta** — il vincolo batte l'array",
+     "For 16 **ricavata da BAB e lotta** — il vincolo batte l'array",
      "Sag 11 **ricavata da Vol +4 (base +4)** — il tetto del TS batte l'array"
     ]
    ],
@@ -8426,8 +8429,8 @@
       0
      ],
      "Rifl": [
-      5,
-      5,
+      7,
+      7,
       0
      ],
      "Temp": [
@@ -8441,18 +8444,18 @@
       0
      ],
      "attacco": [
-      6,
-      6,
+      7,
+      7,
       0
      ],
      "iniziativa": [
-      5,
-      5,
+      7,
+      7,
       0
      ],
      "lotta": [
-      6,
-      6,
+      7,
+      7,
       0
      ],
      "pf": [
@@ -8463,7 +8466,7 @@
      "pf_media": 26
     },
     "file": "Bestiario/mostri/hell-hound-mezzoimmondo-cr4.md",
-    "provenienza": "trascritte",
+    "provenienza": "a mano",
     "scarti": {},
     "template": null,
     "template_dichiarati": [
@@ -8502,45 +8505,37 @@
       ]
      ],
      8,
-     "pf-dado"
+     "formula scritta"
     ],
     "dalla_fonte": [
      {
-      "Car": 8,
-      "Cos": 15,
-      "Des": 13,
-      "For": 15,
-      "Int": 6,
+      "Car": 10,
+      "Cos": 11,
+      "Des": 11,
+      "For": 11,
+      "Int": 10,
       "Sag": 10
      },
-     "trascritta dalla fonte `Hell Hound 4cr .htm`"
+     "trascritta dalla fonte `00_Hell Hound-mezzoimmondi-cr4.pcg`"
     ],
     "dalla_scheda": null,
     "dv_totali": 4,
     "iniziativa_ambigua": null,
-    "numeri_della_fonte": {
-     "BAB": 4,
-     "Rifl": 5,
-     "Temp": 6,
-     "Vol": 4,
-     "iniziativa": 5,
-     "lotta": 6,
-     "pf": 26
-    },
+    "numeri_della_fonte": {},
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
-    "provenienza": "trascritte",
-    "senza_note": 1573,
+    "provenienza": "a mano",
+    "senza_note": 2886,
     "sestine_citate": [
      [
-      "pregen-pcgen/png_La_mano_rossa_del_destino/Hell Hound 4cr .htm",
+      "pregen-pcgen/png_La_mano_rossa_del_destino/00_Hell Hound-mezzoimmondi-cr4.pcg",
       [
-       15,
-       13,
-       15,
-       6,
+       11,
+       11,
+       11,
        10,
-       8
+       10,
+       10
       ],
       true,
       []
@@ -8559,8 +8554,8 @@
       "ricavata da Temp +6 (base +4)"
      ],
      "Des": [
-      1,
-      "ricavata da Rifl +5 (base +4)"
+      3,
+      "ricavata da Rifl +7 (base +4)"
      ],
      "Sag": [
       0,
@@ -8573,23 +8568,23 @@
       "ricavata da pf 26 su 4 DV"
      ],
      "des_da_iniziativa": [
-      12,
+      16,
       "ricavata dall'iniziativa"
      ],
      "des_vincolata": [
-      12,
-      "derivata dalla CA di contatto"
+      16,
+      "letta da ca-dettaglio"
      ],
      "for_da_lotta": [
-      14,
+      16,
       "ricavata da BAB e lotta"
      ]
     }
    },
    "pf_dado_corretto": null,
    "pf_dado_corretto_forzato": {
-    "bonus": "da Cos 15",
-    "dadi": "dalle classi del `tipo` coi dadi SRD e dai DV razziali dichiarati",
+    "bonus": "è quello scritto nella formula",
+    "dadi": "dalla formula che la scheda scrive",
     "fascia": [
      12,
      40
@@ -8606,9 +8601,9 @@
     "attributi": {
      "Car": 8,
      "Cos": 15,
-     "Des": 13,
-     "For": 15,
-     "Int": 6,
+     "Des": 17,
+     "For": 17,
+     "Int": 10,
      "Sag": 10
     },
     "bab": 4,
@@ -8627,14 +8622,14 @@
      }
     ],
     "gs": 4.0,
-    "lotta": 6,
-    "mischia": "morso +6 (1d8+3 + Morso Infuocato)",
+    "lotta": 7,
+    "mischia": "artiglio +7 (1d4+3)",
     "pf": 26,
-    "provenienza": "trascritte",
-    "tipo": "Medium outsider (evil, extraplanar, fire, lawful, dragonblood), 4 HD, LE",
+    "provenienza": "a mano",
+    "tipo": "Medium outsider (evil, extraplanar, fire, lawful), segugio infernale mezzo-immondo, 4 HD, LE",
     "ts": [
      6,
-     5,
+     7,
      4
     ]
    }
@@ -44460,15 +44455,6 @@
     "scritta": "attributi: For 11 Des 18 Cos 14 Int 12 Sag 10 Car 6"
    },
    {
-    "file": "Bestiario/mostri/hell-hound-mezzoimmondo-cr4.md",
-    "marca": "> [GENERATO] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`.",
-    "note": [
-     "trascritta dalla fonte `Hell Hound 4cr .htm`"
-    ],
-    "riga": "attributi: For 15 Des 13 Cos 15 Int 6 Sag 10 Car 8",
-    "scritta": "attributi: For 15 Des 13 Cos 15 Int 6 Sag 10 Car 8"
-   },
-   {
     "file": "Bestiario/mostri/hobgoblin-bladebearer-ftr6-cr6.md",
     "marca": "> [GENERATO] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`.",
     "note": [
@@ -44920,25 +44906,6 @@
       }
      ],
      [
-      "hell-hound-mezzoimmondo-cr4.md",
-      {
-       "Car": 8,
-       "Cos": 15,
-       "Des": 13,
-       "For": 15,
-       "Int": 6,
-       "Sag": 10
-      },
-      {
-       "Car": 9,
-       "Cos": 14,
-       "Des": 12,
-       "For": 14,
-       "Int": 8,
-       "Sag": 11
-      }
-     ],
-     [
       "hobgoblin-bladebearer-ftr6-cr6.md",
       {
        "Car": 8,
@@ -45263,17 +45230,17 @@
      ]
     ],
     "entro_1_mod": 0.87,
-    "file": 22,
+    "file": 21,
     "insieme": "fonti",
-    "mae": 1.23,
-    "mae_mod": 0.55,
+    "mae": 1.24,
+    "mae_mod": 0.56,
     "per_caratteristica": {
-     "Car": 1.5,
-     "Cos": 0.82,
-     "Des": 0.36,
-     "For": 1.36,
+     "Car": 1.52,
+     "Cos": 0.81,
+     "Des": 0.33,
+     "For": 1.38,
      "Int": 2.0,
-     "Sag": 1.36
+     "Sag": 1.38
     }
    },
    "schede": {

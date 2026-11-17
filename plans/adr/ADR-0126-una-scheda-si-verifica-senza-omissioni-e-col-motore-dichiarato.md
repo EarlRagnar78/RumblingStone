@@ -1406,3 +1406,15 @@ Se la taglia non è quella della base il grado atteso è un intervallo: +1 se è
 
 **Limiti dichiarati.** Solo la velocità a terra: volo, nuoto, scavare e scalare non sono nei dati. Solo il 3.5: `creature_base.toml` del PF1e non è rigenerato. Le schede con più blocchi e quelle che non dichiarano la base dopo «SRD» o «MM» restano fuori. Lo gnoll in sella e Ghaurush scrivono una nota nella riga: uno scarto lì sarebbe un dubbio, e il banco li conta fra i persi.
 
+
+### Lotto 5, undicesima parte — il segugio infernale rifatto mezzo-immondo e l'armatura naturale sopra la base dichiarata (2026-11-17)
+
+**Contesto.** Il DM ha scelto sulla card del 2026-11-15 «Rifarlo mezzo-immondo dall'SRD» per `hell-hound-mezzoimmondo-cr4.md`: la scheda portava i numeri del modello draconico di Races of the Dragon (For 15, Cos 15, Car 8, sottotipo dragonblood, Clinging Breath) sotto il nome «mezzo-immondo». Il controllo dell'armatura naturale dei modelli (nona parte) conosceva la base solo per chi è fatto di livelli di classe con una razza della fonte nel tipo: per tutti gli altri giudicava il minimo del modello.
+
+**Decisione.** La scheda si rifà dal segugio infernale dell'SRD più il mezzo-immondo dell'SRD, con la fonte scritta come «SRD 3.5 Hell Hound + modello Half-Fiend (SRD)», così la base è dichiarata. La versione di prima resta nel blocco storico della scheda. La verifica `creatura_base` usa per l'armatura naturale anche la base che la fonte dichiara, se ha la stessa taglia del blocco: l'armatura naturale cambia con la taglia, non coi dadi vita né coi livelli di classe. Il conto diventa esatto (base più modello) e un bonus in più si dichiara con la riga di variante del DM, come per gli altri modelli.
+
+**Conti della scheda.** For 17, Des 17, Cos 15, Int 10, Sag 10, Car 8 (13/13/13/6/10/6 più 4/4/2/4/0/2). CA 19 (+3 Des, +6 naturale: +5 del segugio, +1 del modello). Iniziativa +7. Tiri salvezza +6/+7/+4. Lotta +7. Artigli 1d4+3 primari, morso 1d8+1 secondario (−5, metà Forza; l'1d8 del segugio batte l'1d6 della tabella del modello) più 1d6 di fuoco. Soffio CD 14. Punire il bene +4, *oscurità* 3/giorno e *dissacrare* 1/giorno (Int 10). RD 5/magia, RI 14, immunità al veleno, resistenze 10. Grado di sfida 3 + 1 = 4. Abilità: (8 + Int 0) × (4 + 3) = 56 punti; le sei del segugio al massimo ne prendono 42, gli altri 14 vanno fuori classe come ha scelto il DM sulla card del 2026-11-17 (Acrobazia 3, Intimidire 3, Scalare 1; Acrobazia +8 con la sinergia di Saltare). Talenti dell'SRD (Iniziativa Migliorata, Correre, Seguire Tracce B): Enlarge Breath del .pcg viene da un manuale fuori dall'SRD.
+
+**Misura** contro main ec5fca70 con `verifica_scheda.py Bestiario 0*/`: violazioni 34 = 34, non verificabili 388 → 387. Il segugio si giudica ora su CA, armatura naturale e caratteristiche, e passa; restano non verificabili i dadi dei suoi attacchi naturali, perché la verifica del danno non applica ancora la tabella dei modelli.
+
+**Limiti dichiarati.** La base dichiarata vale solo con la stessa taglia. Il dado degli attacchi naturali coi modelli non si giudica ancora. Draxoksus resta non verificabile sulle caratteristiche: ha livelli di classe.

@@ -185,6 +185,17 @@ class TestGiudizi(unittest.TestCase):
                                        ca="-1 taglia, +4 naturale", dadi="6d12", attacco="Mischia artiglio +5 (1d6+4)")
                          + "\n" + riga + "\n", encoding="utf-8")
             self.assertNotIn("numero.CA.naturale", regole(V.creatura_base(p)[0]))
+        # la base che la fonte dichiara, con la stessa taglia: l'ogre dell'SRD ha +5, il mezzo-immondo +1
+        def nat_fonte(ca, tipo="Large outsider, half-fiend, CM", fonte="SRD *Ogre* + half-fiend"):
+            viol, nv = giudica(fonte=fonte, dadi="6d8", tipo=tipo, ca=ca)
+            return ([v for v in viol if v["regola"] == "numero.CA.naturale"],
+                    [v for v in nv if v["regola"] == "numero.CA.naturale"])
+        self.assertEqual(nat_fonte("-1 taglia, +6 naturale"), ([], []))
+        v, _ = nat_fonte("-1 taglia, +8 naturale")
+        self.assertEqual((v[0]["atteso"], v[0]["ha"]), (6, 8))
+        # con un'altra taglia la base non vale: resta il minimo del modello
+        v, n = nat_fonte("-2 taglia, +8 naturale", tipo="Huge outsider, half-fiend, CM")
+        self.assertEqual((v, len(n)), ([], 1))
         # fantasma, celestiale e immondo non hanno una regola loro
         self.assertEqual(nat(tipo="Medium undead, human ghost, Guerriero 6, LM", ca="+4 naturale"), ([], []))
 

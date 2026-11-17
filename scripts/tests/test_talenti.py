@@ -159,6 +159,18 @@ class Focalizzati(unittest.TestCase):
     def test_incantesimo_dell_apg_ha_la_scuola_del_prd(self):
         self.assertEqual(G.scuola_prevalente([(1, "stumble gap")])[0], "evocazione")
 
+    def test_senza_scuola_nelle_tabelle_prende_un_altro_talento(self):
+        # revisione di Codex sulla #468: gli estratti dell'alchimista PF1e (Spezzalinee…)
+        # non sono nelle tabelle delle scuole, e il talento usciva senza scuola
+        from dmcore import sistemi as S
+        from dmcore import creature_pf1e as CP
+        dati = S.dati("pf1e", "creature.costruzione")
+        for liv, ruolo, seme in ((1, "controllore", 0), (1, "blaster", 0), (3, "controllore", 1)):
+            sb, _ = G.genera_png_pf1e(liv, ruolo=ruolo, classi=CP.leggi_classi(f"alchemist:{liv}", dati),
+                                      rng=random.Random(seme))
+            for t in self._focalizzati(sb):
+                self.assertRegex(t, r"\((\w+)\)$", (liv, ruolo, seme, _talenti(sb)))
+
 
 if __name__ == "__main__":
     unittest.main()

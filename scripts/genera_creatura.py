@@ -1275,8 +1275,10 @@ def applica_talenti(sb: Statblocco, conto: Conto, sistema: str, ruolo: str, rng:
     s = TL.Stato(car=attr, bab=st["bab"], livelli=st["livelli"], lic=st["lic"], dv=st.get("dv", 0))
     incantesimi = incantesimi_del_blocco(sb.voci)
     # Senza incantesimi sul blocco Incantesimi focalizzati non fa niente: si prende il
-    # talento seguente del ruolo (DM, card del 2026-11-17)
-    esclusi = () if incantesimi else _FOCALIZZATI
+    # talento seguente del ruolo (DM, card del 2026-11-17). Lo stesso se nessuno degli
+    # incantesimi ha una scuola nelle tabelle: il talento si scriverebbe senza scuola.
+    scuola, perche = scuola_prevalente(incantesimi) if incantesimi else (None, "")
+    esclusi = () if scuola else _FOCALIZZATI
 
     def vietato(en: str) -> bool:
         return en in esclusi or bool(TL.manca(sistema, en, s))
@@ -1295,12 +1297,12 @@ def applica_talenti(sb: Statblocco, conto: Conto, sistema: str, ruolo: str, rng:
                        obbligati=st.get("obbligati"), esclusi=esclusi)
     en = [n for n, _ in scelta.talenti]
     if esclusi:
-        conto("talenti: niente Incantesimi focalizzati, il blocco non ha incantesimi (card del DM del 2026-11-17)")
-    scuola = None
+        conto("talenti: niente Incantesimi focalizzati, "
+              + (f"nessuna scuola si ricava dagli incantesimi del blocco ({perche})" if incantesimi
+                 else "il blocco non ha incantesimi") + " (card del DM del 2026-11-17)")
     if any(n in _FOCALIZZATI for n in en):
-        scuola, perche = scuola_prevalente(incantesimi)
         conto(f"talenti: Incantesimi focalizzati sulla scuola con più incantesimi sul blocco, "
-              f"{scuola or 'da scegliere a mano'} ({perche})")
+              f"{scuola} ({perche})")
     m = re.match(r"^(?:Mischia|Distanza)\s+(.+?)\s+[+-]\d+", sb.attacchi[0]) if sb.attacchi else None
     arma = m.group(1) if m else ""
     nomi = []

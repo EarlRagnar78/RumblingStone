@@ -1427,6 +1427,7 @@ Se la taglia non è quella della base il grado atteso è un intervallo: +1 se è
 - `estrai_liste.py` legge dall'SRD 3.5 anche la scuola di ogni incantesimo (la riga sotto il titolo) e la scrive in `[scuole]` di `liste_incantesimi.toml`: 600 incantesimi, fuori «Universal» e «Any». Per i 45 incantesimi dell'APG che il generatore usa, la scuola viene dal PRD (`[scuole]` di `sistemi/pf1e/dati/incantesimi.toml`).
 - `genera_creatura.py` dà a Incantesimi focalizzati e a Incantesimi focalizzati superiore la scuola con più incantesimi sul blocco; a parità vince la scuola dell'incantesimo di livello più alto, poi l'ordine alfabetico. Il conto lo scrive.
 - Un blocco senza incantesimi non prende Incantesimi focalizzati: prende il talento seguente del suo ruolo, anche quando il carattere tirato era «Incantesimi Focalizzati». Lo ha scelto il DM sulla card del 2026-11-17 (la consigliata).
+- Lo stesso vale per un blocco i cui incantesimi non hanno nessuno una scuola nelle tabelle (gli estratti dell'alchimista PF1e, come *spezzalinee*): il talento si scriverebbe senza scuola. L'ha notato la revisione di Codex; sui PNG PF1e a classi (945 generati, 21 classi) erano 44 talenti senza scuola su 665.
 
 **Misura** sull'impronta delle creature (720 blocchi generati), contro main: nome sbagliato 234 → 0; Incantesimi focalizzati senza scuola 312 → 0, con la scuola 0 → 102; su blocchi senza incantesimi 210 → 0.
 

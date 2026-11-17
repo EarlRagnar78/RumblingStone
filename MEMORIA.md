@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-17 | DOCUMENT-AI (thread «Applicare Document… | Tecnica 3, decodifica vincolata delle «Tattiche»: la prova per il portatile 405… | 🟡 script pronto, mai girato sulla 4050: 12 schede di `genera_creatura.py` × libero e vincolato (schema JSON in `format` di Ollama, azione in enum delle voci de… |
 | 2026-11-17 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 undicesima parte: il segugio infernale rifatto mezzo-immondo… | In PR |
 | 2026-11-17 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 5, villain senza duello. Il **Collezion… | ✅ punti dello schema mancanti per questi quattro: da 5 a 0 (esiti del Collezionista, punto 3 del Ghostlord, punti 3 e 5 degli assassini, punto 3 della chierica… |
 | 2026-11-17 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 4 (Sethrax, Azarr Kul, Ushgar): il prim… | ✅ file che descrivono il primo round in modo diverso: 1 su 3 → 0 su 3. Nessuna simulazione: Sethrax non attacca il party nel primo round, quindi la scelta non… |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-15 | AVVENTURE-COMMUNITY | «Chi sa cosa», dopo la #419: una riga per il Conte Valerius e tre giorni dalle… | «Chi sa cosa», dopo la #419: scelta del DM sulla card del 14/11 (thread dell'audit) «Una sola, la più completa». In `campaign/state.yaml` le righe del Conte Va… |
 | 2026-11-15 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 7 settima parte: la velocità delle creature coi dadi vita razzi… | In PR |
 | 2026-11-15 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 decima parte: le caratteristiche che i modelli dell'SRD cambi… | In PR |
-| 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Eroi di Hammerfist, scelte del DM sulle card del 15/11: rosa a sei con **Ragnhi… | In PR |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 160 voci, l'ultima MS-0160 del 2026-11-17 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 161 voci, l'ultima MS-0161 del 2026-11-17 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

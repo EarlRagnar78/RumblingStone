@@ -169,6 +169,14 @@
       ],
       "stato": "in-volo",
       "dove": "PR #461 aperta in bozza il 2026-11-16: RIPRESA-PR D2 (arte del Drappo), script FLUX.2 klein 4B per il portatile 4050 in scripts/prove-4050/ (drappo-flux.sh, drappo_flux.py). La D2 resta aperta fino alla scelta del DM tra A e B"
+    },
+    {
+      "ref": [
+        "pr/466",
+        "origin/claude/project-thread-vyifoi"
+      ],
+      "stato": "in-volo",
+      "dove": "PR #466 aperta in bozza il 2026-11-17: tecnica 3 di Document AI (decodifica vincolata delle Tattiche), prova per il portatile 4050 in scripts/prove-4050/schede-vincolate.sh e plans/esperimenti/decodifica-vincolata-2026-11-17/. Resta in volo fino alla misura sulla 4050"
     }
   ],
   "file": [

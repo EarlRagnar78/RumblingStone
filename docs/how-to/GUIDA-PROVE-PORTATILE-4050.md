@@ -20,6 +20,7 @@ thread del progetto. Non serve fare `git push` dal portatile.
 | [Prosa col 12B](#2-la-prosa-col-12b) | «LLM locale per la prosa» | `scripts/prove-4050/prosa.sh` | 1-1,5 h, più la lettura alla cieca | pronto; il 4B è già girato lì l'11/10 |
 | [Immagini in posa](#3-le-immagini-dei-personaggi-in-posa) | «Immagini dei personaggi in posa con l'AI» | `scripts/prove-4050/immagini.sh` | 2-3 h la prima volta, poi 20-40 min a scena | pronto, mai girato su 6 GB |
 | [Tavole del Drappo con FLUX](#3-bis-le-tavole-del-drappo-con-flux2-klein) | D2 di RIPRESA-PR (arte del Drappo), la tua scelta tra A e B | `scripts/prove-4050/drappo-flux.sh` | 30-60 min la prima volta (8,3 GB di pesi), poi 1-3 min a tavola | pronto; grafo provato su CPU nel container, mai girato sulla 4050 |
+| [Tattiche con la decodifica vincolata](#3-ter-le-tattiche-con-la-decodifica-vincolata) | «Applicare Document AI e Explainable AI», tecnica 3 | `scripts/prove-4050/schede-vincolate.sh` | 15-30 min col 7B già scaricato | pronto; provato con un Ollama finto, mai girato sulla 4050 |
 | [Trascrizione della serata](#4-la-trascrizione-della-serata) | «Provare la trascrizione locale della serata» | lo script della trascrizione, nella PR #424 | una serata registrata | nella PR #424, non ancora su main |
 | [Chat di Gemini](#5-le-chat-di-gemini-nel-repo) | inventario Gemini, D6 | `scripts/importa_gemini.py` | 10 min, più l'attesa di Takeout | pronto; formato Takeout non visto dal vivo |
 
@@ -227,6 +228,44 @@ del [README delle immagini](../../10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/
 negativo («no text» e il resto) non entra nel calcolo, e i prompt sono quelli
 scritti per SDXL, non riscritti per FLUX.
 
+## 3-ter · Le tattiche con la decodifica vincolata
+
+**Cosa misura.** È la tecnica 3 del thread «Applicare Document AI e
+Explainable AI», che il 17/11 hai scelto di provare qui. Le schede di
+`genera_creatura.py` hanno già i numeri giusti; la domanda è se un modello
+locale, quando scrive le «Tattiche», nomina meno incantesimi e talenti che la
+scheda non ha quando è vincolato a uno schema JSON (il campo `format` di
+Ollama) invece di scrivere libero. Dodici schede, due bracci, tre ripetizioni:
+72 risposte, giudicate dal controllo S8 del repo. Il piano e la regola del
+verdetto, scritta prima della misura, sono in
+[PIANO.md](../../plans/esperimenti/decodifica-vincolata-2026-11-17/PIANO.md).
+Non scrive niente nel Bestiario.
+
+**Requisiti.** Gli stessi del lettore: il server di
+`scripts/llm-locale/start.sh` acceso in un altro terminale, e `qwen2.5:7b`
+(lo scarica lo script se non c'è). Il contesto di serie basta: le schede sono
+corte.
+
+**Passi.**
+
+```bash
+# terminale A
+scripts/llm-locale/start.sh
+# terminale B
+scripts/prove-4050/schede-vincolate.sh                  # qwen2.5:7b, 3 ripetizioni
+RS_RIPETIZIONI=1 scripts/prove-4050/schede-vincolate.sh # una sola, per provare
+```
+
+Si salva a ogni risposta: se la interrompi, rilanciala e riparte. Alla fine
+stampa la sintesi; `"migliora": true` vuol dire che la regola del piano è
+soddisfatta, ma il verdetto lo scrivo io dopo aver letto le risposte, perché
+il controllo può sbagliare in tutti e due i sensi.
+
+**Cosa torna.** In `~/rumblingstone-prove-4050/<giorno>/schede-vincolate/`:
+`misure.json` (sintesi e una riga per risposta), `risposte.json` (i testi del
+modello), le schede con le tattiche in `libero/` e `vincolato/`, `gpu.txt` ed
+`esito.txt`. Poi `riporta.sh`, come per le altre prove.
+
 ## 4 · La trascrizione della serata
 
 La guida passo passo è nella PR #424 (la guida della trascrizione della
@@ -292,6 +331,7 @@ nell'ADR della prova:
 - lettore: `estrai_rag.py --unisci` e `muta_grafo.py valuta`, poi ESITO.md;
 - prosa: `plans/scrittura/RISULTATI.md` e ADR-0089;
 - immagini: il confronto con le prove su CPU, nel thread delle immagini;
+- tattiche vincolate: `misure.json` e `risposte.json` nel thread «Applicare Document AI e Explainable AI», con il verdetto secondo il piano;
 - Drappo: i `confronto-<id>.jpg` e `riepilogo.json` vanno nel thread «Scrivere lo script FLUX per il 4050», e la D2 si chiude con la tua scelta tra A e B.
 
 ## Se qualcosa va storto

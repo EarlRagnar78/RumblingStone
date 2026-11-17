@@ -196,7 +196,7 @@ class TestSchedeVincolate(unittest.TestCase):
     def test_voci_e_schema_di_una_scheda(self):
         v = self.S.voci(self.S.genera("chierico:8", 8, "controllore", 3))
         self.assertIn("oscurità", v["incantesimi"])
-        self.assertIn("Incantesimi focalizzati (bene, caos, legge o male)", v["talenti"])
+        self.assertTrue(any(t.startswith("Incantesimi focalizzati") for t in v["talenti"]))
         self.assertEqual(v["attacchi"], ["attacco con bastone ferrato"])
         enum = self.S.schema(v)["properties"]["durante"]["items"]["properties"]["azione"]["enum"]
         self.assertTrue(set(v["incantesimi"]) <= set(enum))

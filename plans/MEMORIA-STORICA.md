@@ -1821,6 +1821,7 @@ repo scritto con altre parole.
 - **Testo:** `hell-hound-mezzoimmondo-cr4.md` portava i numeri del modello draconico di Races of the Dragon sotto il nome «mezzo-immondo». Il DM ha scelto sulla card del 2026-11-15 di rifarlo dall'SRD: segugio infernale più mezzo-immondo, For 17 Des 17 Cos 15 Int 10 Sag 10 Car 8, CA 19, artigli 1d4+3 e morso 1d8+1 secondario, soffio CD 14, volo 12 m, punire il bene, *oscurità* e *dissacrare*, GS 4. I 14 punti abilità in più vanno in Acrobazia 3, Intimidire 3 e Scalare 1 (card del 2026-11-17). La verifica `creatura_base` giudica ora l'armatura naturale dei modelli sopra la base che la fonte dichiara, se ha la stessa taglia. Misura: violazioni 34 = 34, non verificabili 388 → 387.
 - **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
 - **Solo qui:** la card diceva Acrobazia +6, ma Saltare con 5 gradi dà +2 di sinergia: nella scheda è +8, e la nota lo dice. Il .pcg mezzo-immondo spendeva solo 42 punti e aveva Enlarge Breath (fuori SRD) al posto di Correre. I dadi degli attacchi naturali coi modelli restano non verificabili.
+
 ### MS-0161 · 2026-11-17 · Tecnica 3 di Document AI: la prova della decodifica vincolata per il 4050
 
 - **Data:** 2026-11-17

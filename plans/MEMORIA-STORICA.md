@@ -1801,7 +1801,28 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE3-Giorno3-Finale-e-Invasione.md` r.124 · `Bestiario/villain/Sethrax_il_Velato/Sethrax.md` (Round 1) · `Bestiario/villain/Azarr_Kul/azarr-kul-final-cr17.md` (Tattiche, Misura) · `Bestiario/villain/Ushgar_Occhio_Reso/ushgar-occhio-reso-cr13.md` (Tattiche, Misura) · `plans/esperimenti/tattiche-2026-11-15/profili_villain.py` (scontri `azarr-kul-rethmar`, `ushgar-carica`)
 - **Solo qui:** la scelta non è stata misurata col simulatore: nel primo round Sethrax non attacca il party, quindi il rischio per i PG non cambia. Il teletrasporto lo espone sul piedistallo a un attacco preparato, che è l'occasione di cattura su cui conta MS-0157 per Ozyrrandion. Numeri, 20.000 prove, seme 1372, PG della carta del 05/11. Azarr Kul (pre-buff, senza Avatar, erinni e luogotenenti, contingenza della parola del ritorno): con la tattica scritta Azarr Kul è ucciso nel 30% dei casi e almeno un PG muore nel 76%; aprendo con *ferire* su Thorik è ucciso nel 52% e un PG muore nel 75%; con *ferire* su Hella al round 2 un PG muore nell'80%, ma i PG finiscono con il 58% dei pf invece del 48%. Ushgar da solo muore sempre, in 1,8 round: un PG muore nel 5% degli scontri se punta Hella, nel 2% se punta Artemis in volo, nell'1% con l'Attacco Poderoso solo contro CA 22 o meno.
 
-### MS-0159 · 2026-11-17 · Tecnica 3 di Document AI: la prova della decodifica vincolata per il 4050
+### MS-0159 · 2026-11-17 · I villain senza duello di ARC-09 completano lo schema
+
+- **Data:** 2026-11-17
+- **PR:** —
+- **ADR:** —
+- **Temi:** tattiche villain collezionista ghostlord valerius palio sonjak arc09 schema decisioni-dm
+- **Origine:** riga del 2026-11-17 «Tattiche di villain e PNG, ARC-09 lotto 5, villain senza duello» in `plans/CHANGELOG.md`
+- **Testo:** ultimo lotto del dossier delle tattiche di ARC-09. Per i villain che non si misurano col simulatore si è controllato il cancello delle tattiche e si sono riempiti i punti dello schema che mancavano. Il Collezionista aveva gli esiti `[DA SCRIVERE]`: il DM ha scelto sulla card del 17/11 di scriverli dai quattro patti di §Con i PG. Il Ghostlord e i sicari di Sonjak al Palio hanno ora cosa sanno dei PG. Valerius l'aveva già.
+- **Trovato nel repo:** `Bestiario/villain/Il_Collezionista_Rakshasa/Il_Collezionista_Rakshasa.md` §Esiti possibili · `Bestiario/villain/Ghostlord/Ghostlord.md` §Cosa sa dei PG · `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md` §3.1, §3.2
+- **Solo qui:** i patti del Collezionista sono scritti per l'anno −1000, mentre il dossier lo mette nel master DEF-04/05 del Torneo. Gli esiti valgono per la scena dei patti; il loro peso al Torneo va deciso quando si fonde quel master. Il ratchet degli `[INFERRED]` era rosso su main da prima (10 contro 7) per le marche nude dei lotti 3-4: qui tutte le marche delle tattiche hanno domanda e base, e la baseline sale a 16 di proposito (14 nei sorgenti, 2 copie nel booklet del Palio generato, dove stanno in un commento e non si stampano).
+### MS-0160 · 2026-11-17 · Regole: il segugio infernale rifatto mezzo-immondo dall'SRD
+
+- **Data:** 2026-11-17
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** regole modelli mezzo-immondo hell-hound armatura-naturale creature-base decisioni-dm
+- **Origine:** riga del 2026-11-17 «lotto 5 undicesima parte» in `plans/CHANGELOG.md`
+- **Testo:** `hell-hound-mezzoimmondo-cr4.md` portava i numeri del modello draconico di Races of the Dragon sotto il nome «mezzo-immondo». Il DM ha scelto sulla card del 2026-11-15 di rifarlo dall'SRD: segugio infernale più mezzo-immondo, For 17 Des 17 Cos 15 Int 10 Sag 10 Car 8, CA 19, artigli 1d4+3 e morso 1d8+1 secondario, soffio CD 14, volo 12 m, punire il bene, *oscurità* e *dissacrare*, GS 4. I 14 punti abilità in più vanno in Acrobazia 3, Intimidire 3 e Scalare 1 (card del 2026-11-17). La verifica `creatura_base` giudica ora l'armatura naturale dei modelli sopra la base che la fonte dichiara, se ha la stessa taglia. Misura: violazioni 34 = 34, non verificabili 388 → 387.
+- **Trovato nel repo:** `ADR-0126` → `plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md`
+- **Solo qui:** la card diceva Acrobazia +6, ma Saltare con 5 gradi dà +2 di sinergia: nella scheda è +8, e la nota lo dice. Il .pcg mezzo-immondo spendeva solo 42 punti e aveva Enlarge Breath (fuori SRD) al posto di Correre. I dadi degli attacchi naturali coi modelli restano non verificabili.
+
+### MS-0161 · 2026-11-17 · Tecnica 3 di Document AI: la prova della decodifica vincolata per il 4050
 
 - **Data:** 2026-11-17
 - **PR:** #466
@@ -1812,7 +1833,7 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `scripts/prove-4050/schede-vincolate.sh` · `plans/esperimenti/decodifica-vincolata-2026-11-17/PIANO.md` · `plans/esperimenti/decodifica-vincolata-2026-11-17/schede_vincolate.py` · `scripts/tests/test_prove_4050.py` (`TestSchedeVincolate`) · `docs/how-to/GUIDA-PROVE-PORTATILE-4050.md` §3-ter
 - **Solo qui:** S8 vede un incantesimo solo in corsivo, quindi sul braccio libero può contare meno errori di quelli che ci sono: per questo c'è il conto `fuori_lista`. Trovato preparando il campione e non corretto qui: `genera_creatura.py` scrive il talento *Incantesimi focalizzati* con «(bene, caos, legge o male)» invece di una scuola. Le altre tecniche del thread: 1 glifi #398, 2 PDF/A-2a #416, 4 provenienza IPTC #418, 5 andata e ritorno del testo misurata il 13/11 senza margine.
 
-### MS-0160 · 2026-11-17 · Il kit unico delle prove 4050 per quattro sistemi
+### MS-0162 · 2026-11-17 · Il kit unico delle prove 4050 per quattro sistemi
 
 - **Data:** 2026-11-17
 - **PR:** —

@@ -1811,3 +1811,14 @@ repo scritto con altre parole.
 - **Testo:** ultimo lotto del dossier delle tattiche di ARC-09. Per i villain che non si misurano col simulatore si è controllato il cancello delle tattiche e si sono riempiti i punti dello schema che mancavano. Il Collezionista aveva gli esiti `[DA SCRIVERE]`: il DM ha scelto sulla card del 17/11 di scriverli dai quattro patti di §Con i PG. Il Ghostlord e i sicari di Sonjak al Palio hanno ora cosa sanno dei PG. Valerius l'aveva già.
 - **Trovato nel repo:** `Bestiario/villain/Il_Collezionista_Rakshasa/Il_Collezionista_Rakshasa.md` §Esiti possibili · `Bestiario/villain/Ghostlord/Ghostlord.md` §Cosa sa dei PG · `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md` §3.1, §3.2
 - **Solo qui:** i patti del Collezionista sono scritti per l'anno −1000, mentre il dossier lo mette nel master DEF-04/05 del Torneo. Gli esiti valgono per la scena dei patti; il loro peso al Torneo va deciso quando si fonde quel master. Il ratchet degli `[INFERRED]` era rosso su main da prima (10 contro 7) per le marche nude dei lotti 3-4: qui tutte le marche delle tattiche hanno domanda e base, e la baseline sale a 16 di proposito (14 nei sorgenti, 2 copie nel booklet del Palio generato, dove stanno in un commento e non si stampano).
+
+### MS-0160 · 2026-11-17 · Le marche ristampate nei booklet generati non sono debito nuovo
+
+- **Data:** 2026-11-17
+- **PR:** —
+- **ADR:** —
+- **Temi:** inferred marcature ratchet inventory_inferred booklet generati copie baseline
+- **Origine:** riga del 2026-11-17 «`inventory_inferred` non conta due volte la marca ristampata in un file generato» in `plans/CHANGELOG.md`
+- **Testo:** con la #465 il booklet del Palio ristampava le due marche `[INFERRED]` dei sicari e della chierica, e il ratchet le contava due volte: la baseline saliva a 16 invece che a 14. Ora un file che dichiara in testa `<!-- GENERATO da scripts/` mette le marche già presenti in un sorgente nella classe «copie», che il ratchet non sorveglia.
+- **Trovato nel repo:** `scripts/inventory_inferred.py` (`e_generato`, classe «copie») · `scripts/tests/test_inventory_inferred.py`
+- **Solo qui:** la copia si riconosce dal testo della marca, spazi normalizzati. Se il sorgente cambia la marca e il booklet non è rigenerato, la vecchia marca nel booklet torna fra gli aperti finché non lo si rigenera: è voluto, perché il booklet non allineato è già un errore di `validate_booklets`.

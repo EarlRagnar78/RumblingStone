@@ -1778,3 +1778,14 @@ repo scritto con altre parole.
 - **Testo:** il DM ha scelto sulla card del 16/11 di scrivere prima lo script e poi decidere la D2 guardando. Pesi scelti per la RTX 4050 da 6 GB: `black-forest-labs/FLUX.2-klein-4b-fp8` (4,07 GB, sha256 97ed34fe…), `Comfy-Org/Flux-2-Klein-4B` per Qwen3-4B fp4 (3,85 GB, 3eab03a7…) e VAE (0,34 GB, 868fe7b3…), tutti Apache 2.0 al 16/11. BFL dichiara ~13 GB di VRAM in bf16; la RTX 4050 (Ada) calcola fp8 ma non fp4 (ComfyUI disattiva nvfp4 sotto la capacità 10 e decomprime). ComfyUI al commit `0df1646`, lo stesso di immagini-posa-4050, ha già i nodi di FLUX.2. FLUX.2 [dev] e [klein] 9B sono sotto FLUX Non-Commercial License: aggiunti a `PESI_VIETATI`.
 - **Trovato nel repo:** `scripts/prove-4050/drappo-flux.sh` · `scripts/prove-4050/drappo_flux.py` · `scripts/comfyui_batch.py` (`flux2-klein-4b`, `workflow_flux2`) · `docs/how-to/GUIDA-PROVE-PORTATILE-4050.md` §3-bis · `plans/PIANO-RIPRESA-PR-ABBANDONATE.md` D2
 - **Solo qui:** prova completa su CPU nel container il 16/11 (4 core, 15 GB): ritratto-vanna in 553 s, PNG da 1,7 MB, RAM di ComfyUI al picco 13.387 MiB (su CPU in fp32, quindi più che sulla GPU); ComfyUI ha caricato 4.254 MB di transformer, 3.670 MB di codificatore e 321 MB di VAE. Corretto lì un errore: ComfyUI rifiuta `--lowvram` insieme a `--cpu`. Che entri nei 6 GB della 4050 è una stima sulla carta (5-6 GB al picco), non una misura; il vincolo più probabile è la RAM (≈8,3 GB di pesi, desktop a 11 GB su 16). Il confronto non è alla pari: le Gemini sono scelte tra più tentativi, il collaudo usa due semi senza scarto, prompt scritti per SDXL, e a cfg 1 il negativo non entra nel calcolo.
+
+### MS-0157 · 2026-11-17 · Ozyrrandion informato sui PG solo se Sethrax è fuggito
+
+- **Data:** 2026-11-17
+- **PR:** —
+- **ADR:** —
+- **Temi:** tattiche draghi ozyrrandion zalkatar sethrax canone decisioni-dm coerenza
+- **Origine:** riga del 2026-11-17 «Ozyrrandion parte informato sui PG solo se Sethrax è fuggito dal Torneo col seme» in `plans/CHANGELOG.md`
+- **Testo:** la #451 (MS-0145) aveva scritto che Ozyrrandion «è il solo drago che parte informato», da Sethrax al Torneo e da Zalkatar. Il blocco di Zalkatar (r.67) dice invece che Zalkatar sa del gruppo solo se Sethrax è fuggito col seme; la #457 (MS-0153) aveva già messo la condizione sul *See the Unseen*, non sulla frase d'apertura. Il DM ha scelto sulla card del 17/11 la consigliata: la condizione vale per tutto quello che il drago sa dei PG. Se Sethrax è stato catturato, Ozyrrandion legge il gruppo nel primo round, come Zalkatar.
+- **Trovato nel repo:** `Bestiario/villain/ozyrrandion-drago-verde-cr14.md` r.50 · `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` r.67
+- **Solo qui:** che quello che Zalkatar ha studiato dell'Anello di Artemis arrivi al drago solo con Sethrax fuggito è una mia lettura della card, che parlava dei PG in generale.

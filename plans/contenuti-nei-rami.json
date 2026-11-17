@@ -172,10 +172,11 @@
     },
     {
       "ref": [
+        "pr/466",
         "origin/claude/project-thread-vyifoi"
       ],
       "stato": "in-volo",
-      "dove": "PR in bozza del 2026-11-17: tecnica 3 di Document AI (decodifica vincolata delle Tattiche), prova per il portatile 4050 in scripts/prove-4050/schede-vincolate.sh e plans/esperimenti/decodifica-vincolata-2026-11-17/. Resta in volo fino alla misura sulla 4050"
+      "dove": "PR #466 aperta in bozza il 2026-11-17: tecnica 3 di Document AI (decodifica vincolata delle Tattiche), prova per il portatile 4050 in scripts/prove-4050/schede-vincolate.sh e plans/esperimenti/decodifica-vincolata-2026-11-17/. Resta in volo fino alla misura sulla 4050"
     }
   ],
   "file": [

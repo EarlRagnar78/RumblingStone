@@ -1804,7 +1804,7 @@ repo scritto con altre parole.
 ### MS-0159 · 2026-11-17 · Tecnica 3 di Document AI: la prova della decodifica vincolata per il 4050
 
 - **Data:** 2026-11-17
-- **PR:** —
+- **PR:** #466
 - **ADR:** —
 - **Temi:** document-ai decodifica-vincolata ollama schema-json tattiche genera-creatura s8 prove-4050 decisioni-dm
 - **Origine:** riga del 2026-11-17 «Tecnica 3, decodifica vincolata delle «Tattiche»: la prova per il portatile 4050» in `plans/CHANGELOG.md`

@@ -84,7 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
-| 2026-11-17 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 4: il primo round di **Sethrax** smasch… | ✅ file che descrivono il primo round in modo diverso: 1 su 3 → 0 su 3. Nessuna simulazione: Sethrax non attacca il party nel primo round, quindi la scelta non… |
+| 2026-11-17 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 4 (Sethrax, Azarr Kul, Ushgar): il prim… | ✅ file che descrivono il primo round in modo diverso: 1 su 3 → 0 su 3. Nessuna simulazione: Sethrax non attacca il party nel primo round, quindi la scelta non… |
 | 2026-11-17 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Ozyrrandion parte informato sui PG solo se Sethrax è fuggito dal Torneo col sem… | ✅ una riga di tattica, nessun numero cambiato |
 | 2026-11-16 | RIPRESA-PR-ABBANDONATE | D2, collaudo dell'arte del Drappo: lo script per il portatile 4050 | 🟡 script pronto, mai girato sulla 4050: tre tavole (ritratto-vanna, tavola-la-ruota, il-drappo) × due semi con FLUX.2… |
 | 2026-11-16 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | L2, L5 e L6: il piano si chiude | ✅ Piano completo. L5 chiuso con la prova, non per tempo: RIPRESA-PR D11 decisa l'8/11 e la #106 chiusa il 24/10. L2: R-3 misurato (quattro rami di PR fuse con… |

@@ -514,6 +514,197 @@ def scontro_zarim(prove: int, buff: int):
                   chi="Zarim", ultima="round-PG persi (storditi, ammaliati)")
 
 
+# ============================================== AZARR KUL A RETHMAR (ARC-09, Fase 3)
+# Bestiario/villain/Azarr_Kul/azarr-kul-final-cr17.md: pre-buff completo (taglia
+# Grande) CA 36, pf 186, spadone +28/+23/+18/+13 (3d6+19, +2d6 sacrilego contro i
+# buoni), RD 6/bene, Temp +20 Rifl +8 Vol +17; soffio in linea 6d8 CD 23 con
+# ricarica 1d4 (canone del DM); ferire LI 14 (140 pf, Volontà CD 22 dimezza, mai
+# sotto 1 pf); blocca persone CD 18 (Thorik immune: mente vuota della Corona);
+# contingenza: guarigione sotto 40 pf (una volta), parola del ritorno sotto 15.
+# Senza l'Avatar, le erinni e i luogotenenti (STIMA dichiarata).
+# STIMA: CA di contatto dei PG 11 (Thorik, Tordek), 18 (Artemis), 12 (Hella);
+# i PG sono buoni (+2d6 dello spadone); Aegis Fang non supera la RD 6/bene.
+CONTATTO = {"Thorik": 11, "Tordek": 11, "Artemis": 18, "Hella": 12}
+
+
+def azarr_kul() -> Creatura:
+    sp = lambda: d(3, 6) + 19 + d(2, 6)  # noqa: E731
+    return Creatura("Azarr Kul", pf=186, ca=36, contatto=14, ri=0, temp=20, rifl=8, vol=17,
+                    attacchi=[(28, sp), (23, sp), (18, sp), (13, sp)],
+                    soffio_dadi=(6, 8), soffio_cd=23, soffio_forma="linea", presenza_cd=0,
+                    immune=("elettricita",), soglia_fuga=15, rd=6)
+
+
+def _spadone(t, poderoso):
+    k, extra = (4, 8) if poderoso else (0, 0)
+    for b in (28, 23, 18, 13):
+        if t.giu():
+            return
+        if tira(b - k, t.ca):
+            t.subisci(d(3, 6) + 19 + d(2, 6) + extra)
+
+
+def _ferire(t):
+    if not tira(25, CONTATTO[t.nome]):
+        return
+    n = 140 if not ts(t.vol + t.pen(), 22) else 70
+    t.pf_ora = max(min(t.pf_ora, d(1, 4)), t.pf_ora - n) if t.pf_ora > 0 else t.pf_ora
+
+
+def politica_azarr(variante: str):
+    """oggi    la tattica della scheda: round 1 soffio sul gruppo; round 2 carica il
+               guaritore (Hella) e attacco completo, Attacco Poderoso a −4 se la CA
+               è bassa (sotto 30); dal round 3 *ferire* sul più corazzato (Thorik),
+               *blocca persone* su chi non è immune (Tordek), poi attacco completo
+               sul più debole; soffio ogni volta che è carico.
+    schema     sa che Thorik regge la linea e ha la mente chiusa, e che Hella cura:
+               round 1 *ferire* su Thorik (lo lascia a 1d4 pf), round 2 attacco
+               completo su Thorik per finirlo; poi *blocca persone* su Tordek e
+               attacco completo su chi è tenuto o più debole; soffio quando è carico
+               e ci sono almeno due PG in piedi. Incantare in Combattimento (scheda)
+               gli lascia lanciare in mischia.
+    guaritore  come oggi, ma il round 2 è *ferire* su Hella e il round 3 l'attacco
+               completo su di lei: toglie la cura prima di tutto il resto.
+    """
+    def pol(c, st, g, rnd, sparsi, tattica):
+        if rnd == 0:
+            st.posizione = "terra"
+            st.flag.update(guarigione=True)
+            return
+        if st.pf < 40 and st.flag["guarigione"]:
+            st.flag["guarigione"] = False
+            st.pf = min(c.pf, st.pf + 140)
+        bersagli = vivi(g)
+        if not bersagli:
+            return
+        tenuti = [p for p in g.values() if not p.giu() and getattr(p, "tenuto", False)]
+        for p in tenuti:
+            if ts(p.vol, 18):
+                p.tenuto = False
+                p.fuori = 0
+        pronto = rnd >= st.soffio_pronto
+        if variante in ("oggi", "guaritore"):
+            if rnd == 1:
+                m.soffio(c, st, g, rnd, sparsi)
+                return
+            if rnd == 2 and variante == "guaritore" and not g["Hella"].giu():
+                _ferire(g["Hella"])
+                return
+            if rnd == 2 or (rnd == 3 and variante == "guaritore"):
+                t = g["Hella"] if not g["Hella"].giu() else min(bersagli, key=lambda p: p.ca)
+                _spadone(t, t.ca < 30)
+                return
+            if pronto:
+                m.soffio(c, st, g, rnd, sparsi)
+                return
+            if rnd == 3 and not g["Thorik"].giu():
+                _ferire(g["Thorik"])
+                return
+            tordek = g["Tordek"]
+            if rnd == 4 and not tordek.giu() and not getattr(tordek, "tenuto", False):
+                if not ts(tordek.vol + tordek.pen(), 18):
+                    tordek.tenuto, tordek.fuori = True, 14
+                return
+        else:
+            thorik = g["Thorik"]
+            if rnd == 1 and not thorik.giu():
+                _ferire(thorik)
+                return
+            if rnd == 2 and not thorik.giu():
+                _spadone(thorik, False)
+                return
+            if pronto and len(bersagli) >= 2 and rnd >= 3:
+                m.soffio(c, st, g, rnd, sparsi)
+                return
+            tordek = g["Tordek"]
+            if not tordek.giu() and not getattr(tordek, "tenuto", False) and not st.flag.get("blocca"):
+                st.flag["blocca"] = True
+                if not ts(tordek.vol + tordek.pen(), 18):
+                    tordek.tenuto, tordek.fuori = True, 14
+                return
+        tenuti = [p for p in g.values() if not p.giu() and getattr(p, "tenuto", False)]
+        if tenuti:                    # colpo di grazia sul paralizzato (SRD)
+            t = tenuti[0]
+            n = 2 * (d(3, 6) + 19) + d(2, 6)
+            t.subisci(n)
+            if not t.giu() and not ts(t.temp, 10 + n):
+                t.morto = True
+            return
+        bersagli = vivi(g)
+        if bersagli:
+            t = min(bersagli, key=lambda p: p.pf_ora)
+            _spadone(t, t.ca < 30)
+    return pol
+
+
+@m.scontro("azarr-kul-rethmar")
+def scontro_azarr(prove: int, buff: int):
+    c = azarr_kul()
+    pols = {v: politica_azarr(v) for v in ("oggi", "guaritore", "schema")}
+    tabella_costo("Azarr Kul a Rethmar, Fase 3, pre-buff completo, senza Avatar né erinni",
+                  c, pols, prove, buff, chi="Azarr Kul",
+                  ultima="round-PG persi (tenuti, fuori)")
+
+
+# ============================================ USHGAR «OCCHIO RESO» (ARC-09, innesti)
+# Bestiario/villain/Ushgar_Occhio_Reso/ushgar-occhio-reso-cr13.md, in ira:
+# pf 179, CA 19, ascia +23/+18/+13 (1d12+14, ×3), Attacco Poderoso a −5 (+10 a due
+# mani), RD 3/—, Temp +17 Rifl +8 Vol +11; carica di 30 m al round 1; due pozioni di
+# *cura ferite critiche* sotto ~40 pf; non fugge. Da solo, senza chierico né bruto.
+# STIMA: Artemis in volo non si raggiunge in mischia la metà dei round; i critici
+# (×3) non sono nel modello.
+def ushgar() -> Creatura:
+    return Creatura("Ushgar", pf=179, ca=19, contatto=12, ri=0, temp=17, rifl=8, vol=11,
+                    attacchi=[(23, lambda: d(1, 12) + 14)], soffio_dadi=(0, 1), soffio_cd=0,
+                    soffio_forma="linea", presenza_cd=0, soglia_fuga=-10_000, rd=3)
+
+
+def politica_ushgar(variante: str):
+    """oggi       la scheda: punta l'incantatore e non cambia bersaglio, Attacco
+                  Poderoso a −5 sempre; l'incantatore è Hella (Artemis vola).
+    artemis    come oggi, ma l'incantatore che punta è Artemis: in volo la metà dei
+                  round non la raggiunge e perde il round.
+    misurato   punta Hella, ma usa l'Attacco Poderoso solo contro CA 22 o meno; caduto
+                  il bersaglio passa al PG a terra con meno pf.
+    """
+    def pol(c, st, g, rnd, sparsi, tattica):
+        if rnd == 0:
+            st.posizione = "terra"
+            st.risorse["pozioni"] = 2
+            st.flag["bersaglio"] = "Artemis" if variante == "artemis" else "Hella"
+            return
+        if st.pf < 40 and st.risorse["pozioni"] > 0:
+            st.risorse["pozioni"] -= 1
+            st.pf = min(c.pf, st.pf + d(4, 8) + 13)
+            return
+        t = g.get(st.flag["bersaglio"])
+        if t is None or t.giu():
+            a_terra = [p for p in vivi(g) if p.nome != "Artemis"] or vivi(g)
+            if not a_terra:
+                return
+            t = min(a_terra, key=lambda p: p.pf_ora)
+            st.flag["bersaglio"] = t.nome
+        if t.nome == "Artemis" and R.random() < 0.5:
+            return
+        poderoso = variante != "misurato" or t.ca <= 22
+        k, extra = (5, 10) if poderoso else (0, 0)
+        serie = (23,) if rnd == 1 else (23, 18, 13)      # round 1: carica, un colpo (+2)
+        for b in serie:
+            if t.giu():
+                break
+            if tira(b - k + (2 if rnd == 1 else 0), t.ca):
+                t.subisci(d(1, 12) + 14 + extra)
+    return pol
+
+
+@m.scontro("ushgar-carica")
+def scontro_ushgar(prove: int, buff: int):
+    c = ushgar()
+    pols = {v: politica_ushgar(v) for v in ("oggi", "artemis", "misurato")}
+    tabella_costo("Ushgar da solo, in ira, carica al round 1", c, pols, prove, buff,
+                  chi="Ushgar", ultima="round-PG persi")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--prove", type=int, default=10000)

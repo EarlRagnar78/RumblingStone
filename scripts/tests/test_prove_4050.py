@@ -154,5 +154,94 @@ class TestLeggiOllama(unittest.TestCase):
             server.shutdown()
 
 
+VINCOLATA = REPO / "plans" / "esperimenti" / "decodifica-vincolata-2026-11-17"
+
+
+class _FintoTattiche(http.server.BaseHTTPRequestHandler):
+    """Un Ollama finto: il libero nomina sempre *palla di fuoco*, che nessuna scheda
+    del campione ha; il vincolato sceglie la prima azione dell'enum."""
+    chiamate: list = []
+
+    def do_POST(self):  # noqa: N802
+        corpo = json.loads(self.rfile.read(int(self.headers["Content-Length"])))
+        type(self).chiamate.append(corpo)
+        fmt = corpo.get("format")
+        if fmt:
+            enum = fmt["properties"]["prima"]["items"]["properties"]["azione"]["enum"]
+            passo = {"azione": enum[0], "bersaglio": "il mago", "perche": "lo tiene lontano"}
+            testo = json.dumps({"prima": [passo], "durante": [passo], "morale": [passo]})
+        else:
+            testo = ("- *Prima del combattimento*: lancia *palla di fuoco* sul gruppo.\n"
+                     "- *Durante il combattimento*: attacca.\n- *Morale*: fugge.")
+        risposta = json.dumps({"message": {"content": testo}, "eval_count": 50,
+                               "eval_duration": 10 ** 9}).encode()
+        self.send_response(200)
+        self.send_header("Content-Type", "application/json")
+        self.send_header("Content-Length", str(len(risposta)))
+        self.end_headers()
+        self.wfile.write(risposta)
+
+    def log_message(self, *a):
+        pass
+
+
+class TestSchedeVincolate(unittest.TestCase):
+    """La tecnica 3 (decodifica vincolata): la misura senza GPU, con un Ollama finto."""
+
+    def setUp(self):
+        sys.path.insert(0, str(VINCOLATA))
+        import schede_vincolate
+        self.S = schede_vincolate
+
+    def test_voci_e_schema_di_una_scheda(self):
+        v = self.S.voci(self.S.genera("chierico:8", 8, "controllore", 3))
+        self.assertIn("oscurità", v["incantesimi"])
+        self.assertTrue(any(t.startswith("Incantesimi focalizzati") for t in v["talenti"]))
+        self.assertEqual(v["attacchi"], ["attacco con bastone ferrato"])
+        enum = self.S.schema(v)["properties"]["durante"]["items"]["properties"]["azione"]["enum"]
+        self.assertTrue(set(v["incantesimi"]) <= set(enum))
+        self.assertIn("fuggire", enum)
+
+    def test_json_fuori_schema_non_vale(self):
+        v = {"incantesimi": ["comando"], "talenti": [], "attacchi": []}
+        self.assertIsNone(self.S.in_markdown("{non json", v)[0])
+        passo = {"azione": "palla di fuoco", "bersaglio": "x", "perche": "y"}
+        self.assertIn("fuori dallo schema", self.S.in_markdown(
+            json.dumps({"prima": [passo], "durante": [passo], "morale": [passo]}), v)[1])
+
+    def test_copertura_zero_non_migliora(self):
+        # il libero non nomina nessuna voce e sbaglia; il vincolato non sbaglia ma
+        # scrive solo azioni comuni: non è un miglioramento
+        base = {"valida": True, "secondi": 1, "token": 1, "ns": 1, "fuori_lista": [], "menzioni": 0}
+        righe = [dict(base, braccio="libero", s8=1, copertura=0),
+                 dict(base, braccio="vincolato", s8=0, copertura=0)]
+        self.assertFalse(self.S.riassumi(righe)["migliora"])
+        righe[1]["copertura"] = 1
+        self.assertTrue(self.S.riassumi(righe)["migliora"])
+
+    def test_misura_completa_e_ripresa(self):
+        server = http.server.HTTPServer(("127.0.0.1", 0), _FintoTattiche)
+        threading.Thread(target=server.serve_forever, daemon=True).start()
+        try:
+            with tempfile.TemporaryDirectory() as t:
+                out = Path(t) / "ris"
+                cmd = [sys.executable, str(VINCOLATA / "schede_vincolate.py"), "--modello", "finto",
+                       "--out", str(out), "--quante", "2", "--ripetizioni", "1",
+                       "--url", f"http://127.0.0.1:{server.server_port}"]
+                subprocess.run(cmd, check=True, capture_output=True)
+                self.assertEqual(len(_FintoTattiche.chiamate), 4)
+                self.assertTrue(all("format" in c for c in _FintoTattiche.chiamate[1::2]))
+                s = json.loads((out / "misure.json").read_text())["sintesi"]
+                self.assertEqual(s["libero"]["violazioni_s8"], 2)
+                self.assertEqual(s["vincolato"]["violazioni_s8"], 0)
+                self.assertEqual(s["vincolato"]["valide"], 2)
+                self.assertGreater(s["libero"]["fuori_lista"], 0)
+                self.assertTrue(s["migliora"])
+                subprocess.run(cmd, check=True, capture_output=True)
+                self.assertEqual(len(_FintoTattiche.chiamate), 4)   # tutto dalla cache
+        finally:
+            server.shutdown()
+
+
 if __name__ == "__main__":
     unittest.main()

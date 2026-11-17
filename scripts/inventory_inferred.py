@@ -16,7 +16,7 @@ La distinzione che rende il gate utile
   smaltisce un debito, si scrive nel changelog che l'hai smaltito, e il totale
   resta uguale. Un ratchet così si disattiva da solo entro una settimana.
 
-  Quindi qui i marcatori sono divisi in tre classi, e **solo la prima conta**:
+  Quindi qui i marcatori sono divisi in quattro classi, e **solo la prima conta**:
 
   - **aperti** — documenti vivi: canone, moduli d'arco, bestiario, schede PG.
     È il debito vero, ed è l'unico numero che il ratchet sorveglia.
@@ -25,6 +25,11 @@ La distinzione che rende il gate utile
     («oggetti marcati `[INFERRED]`»): citano il marcatore, non lo aprono.
     Dal 2026-11-07 (ADR-0109, scheda 6) anche skill, modelli (`templates/`),
     README, fixture dei test e GUIDA-MARCATURE: spiegano come si marca.
+
+  - **copie** — la stessa marca ristampata in un file generato (`<!-- GENERATO
+    da scripts/…` in testa, per esempio un booklet `.hb.md`): il debito è già
+    contato nel sorgente da cui il file viene. Una marca che sta solo nel file
+    generato, senza la stessa marca in un sorgente, resta fra gli aperti.
 
   Ogni marcatore ha anche una **forma**: `nuova` se porta domanda e base come
   vuole GUIDA-MARCATURE, `vecchia` se ha una nota d'altro tipo («needs DM
@@ -131,6 +136,20 @@ def classe(rel: str) -> str:
     return "aperti"
 
 
+#: La testa dei file che uno script del repo scrive (ADR-0013): booklet `.hb.md` e simili.
+GENERATO = re.compile(r"<!--\s*GENERATO da scripts/")
+
+
+def e_generato(testo: str) -> bool:
+    """Vero se il file dichiara in testa di essere scritto da uno script del repo."""
+    return bool(GENERATO.search(testo[:400]))
+
+
+def _marca(testo: str) -> str:
+    """La marca con gli spazi normalizzati, per riconoscere la stessa marca in due file."""
+    return " ".join(testo.split())
+
+
 def area(rel: str) -> str:
     """Raggruppamento leggibile: il DM smaltisce per area, non per file."""
     testa = rel.split("/", 1)[0]
@@ -176,6 +195,7 @@ def scansiona(base: Path) -> list[dict]:
         except OSError:
             continue
         rel = _rel(p, base)
+        generato = e_generato(testo)
         righe = testo.splitlines()
         # Sul testo intero, non riga per riga: un marcatore lungo va a capo
         # dentro le parentesi, e per riga non si vedeva (P16, 2026-11-04).
@@ -201,7 +221,19 @@ def scansiona(base: Path) -> list[dict]:
                 "forma": forma(testo_nota),
                 "nota": testo_nota,
                 "contesto": riga.strip()[:180],
+                "marca": _marca(m.group(0)),
+                "generato": generato,
             })
+    # Una marca ristampata in un file generato è una copia se la stessa marca sta
+    # in un sorgente: il debito è già contato lì, e contarlo due volte alzerebbe
+    # la baseline a ogni rigenerazione di un booklet.
+    # Solo un sorgente vivo vale: la stessa marca citata in `plans/**` o in un
+    # changelog racconta un debito, non lo tiene aperto (revisione di Codex, #467).
+    nei_sorgenti = {t["marca"] for t in trovati
+                    if not t["generato"] and t["classe"] == "aperti"}
+    for t in trovati:
+        if t["generato"] and t["classe"] == "aperti" and t["marca"] in nei_sorgenti:
+            t["classe"] = "copie"
     return trovati
 
 
@@ -247,6 +279,8 @@ def scrivi_inventario(trovati: list[dict], tipizzati: list[dict]) -> str:
     w(f"| meta | {per_classe['meta']} | `docs/audit/**`, skill, modelli, README, fixture, "
       "la guida delle marche e le righe che nominano la convenzione "
       "(«marcati `[INFERRED]`»): citano il marcatore, **non lo aprono** |")
+    w(f"| copie | {per_classe['copie']} | La stessa marca ristampata in un file generato "
+      "(booklet `.hb.md` e simili): il debito è già contato nel sorgente |")
     w("")
     forme = defaultdict(int)
     for t in aperti:

@@ -1832,3 +1832,14 @@ repo scritto con altre parole.
 - **Testo:** il DM ha scelto sulla card del 17/11 «Sì, quando accendi l'ASUS»: la tecnica 3 si prova sulla RTX 4050 ed entra solo se migliora. Ragionamento: `genera_creatura.py` fa già i numeri da tabelle, quindi il vincolo serve solo sul testo che rimanda alla scheda, cioè le «Tattiche» che nominano incantesimi o talenti assenti (S8, ADR-0125). La prova confronta, sullo stesso modello (`qwen2.5:7b` di serie), il testo libero con il JSON vincolato dal campo `format` di Ollama, in cui l'azione è un enum delle voci della scheda. Regola del verdetto in `PIANO.md`: meno S8 per scheda, tutte le risposte valide, copertura almeno l'80% del libero.
 - **Trovato nel repo:** `scripts/prove-4050/schede-vincolate.sh` · `plans/esperimenti/decodifica-vincolata-2026-11-17/PIANO.md` · `plans/esperimenti/decodifica-vincolata-2026-11-17/schede_vincolate.py` · `scripts/tests/test_prove_4050.py` (`TestSchedeVincolate`) · `docs/how-to/GUIDA-PROVE-PORTATILE-4050.md` §3-ter
 - **Solo qui:** S8 vede un incantesimo solo in corsivo, quindi sul braccio libero può contare meno errori di quelli che ci sono: per questo c'è il conto `fuori_lista`. Trovato preparando il campione e non corretto qui: `genera_creatura.py` scrive il talento *Incantesimi focalizzati* con «(bene, caos, legge o male)» invece di una scuola. Le altre tecniche del thread: 1 glifi #398, 2 PDF/A-2a #416, 4 provenienza IPTC #418, 5 andata e ritorno del testo misurata il 13/11 senza margine.
+
+### MS-0162 · 2026-11-17 · Le marche ristampate nei booklet generati non sono debito nuovo
+
+- **Data:** 2026-11-17
+- **PR:** —
+- **ADR:** —
+- **Temi:** inferred marcature ratchet inventory_inferred booklet generati copie baseline
+- **Origine:** riga del 2026-11-17 «`inventory_inferred` non conta due volte la marca ristampata in un file generato» in `plans/CHANGELOG.md`
+- **Testo:** con la #465 il booklet del Palio ristampava le due marche `[INFERRED]` dei sicari e della chierica, e il ratchet le contava due volte: la baseline saliva a 16 invece che a 14. Ora un file che dichiara in testa `<!-- GENERATO da scripts/` mette le marche già presenti in un sorgente nella classe «copie», che il ratchet non sorveglia.
+- **Trovato nel repo:** `scripts/inventory_inferred.py` (`e_generato`, classe «copie») · `scripts/tests/test_inventory_inferred.py`
+- **Solo qui:** la copia si riconosce dal testo della marca, spazi normalizzati. Se il sorgente cambia la marca e il booklet non è rigenerato, la vecchia marca nel booklet torna fra gli aperti finché non lo si rigenera: è voluto, perché il booklet non allineato è già un errore di `validate_booklets`.

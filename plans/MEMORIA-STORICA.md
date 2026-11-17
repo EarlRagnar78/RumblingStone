@@ -1789,3 +1789,14 @@ repo scritto con altre parole.
 - **Testo:** la #451 (MS-0145) aveva scritto che Ozyrrandion «è il solo drago che parte informato», da Sethrax al Torneo e da Zalkatar. Il blocco di Zalkatar (r.67) dice invece che Zalkatar sa del gruppo solo se Sethrax è fuggito col seme; la #457 (MS-0153) aveva già messo la condizione sul *See the Unseen*, non sulla frase d'apertura. Il DM ha scelto sulla card del 17/11 la consigliata: la condizione vale per tutto quello che il drago sa dei PG. Se Sethrax è stato catturato, Ozyrrandion legge il gruppo nel primo round, come Zalkatar.
 - **Trovato nel repo:** `Bestiario/villain/ozyrrandion-drago-verde-cr14.md` r.50 · `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` r.67
 - **Solo qui:** che quello che Zalkatar ha studiato dell'Anello di Artemis arrivi al drago solo con Sethrax fuggito è una mia lettura della card, che parlava dei PG in generale.
+
+### MS-0158 · 2026-11-17 · Sethrax al Torneo ha un primo round solo
+
+- **Data:** 2026-11-17
+- **PR:** —
+- **ADR:** —
+- **Temi:** tattiche villain sethrax torneo arc09 coerenza decisioni-dm
+- **Origine:** riga del 2026-11-17 «Tattiche di villain e PNG, ARC-09 lotto 4» in `plans/CHANGELOG.md`
+- **Testo:** il primo round di Sethrax dopo lo smascheramento era scritto in due modi: il Bestiario e lo statblocco completo lo fanno teletrasportare al piedistallo dell'Orbe con *Psionic Dimension Door* dopo *Mental Barrier*; PARTE3 lo faceva correre a piedi. PARTE3 stessa rimanda allo statblocco. Il DM ha scelto sulla card del 15/11 la consigliata: vale il Bestiario, e PARTE3 è allineata con una riga di storico.
+- **Trovato nel repo:** `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE3-Giorno3-Finale-e-Invasione.md` r.124 · `Bestiario/villain/Sethrax_il_Velato/Sethrax.md` (Round 1)
+- **Solo qui:** la scelta non è stata misurata col simulatore: nel primo round Sethrax non attacca il party, quindi il rischio per i PG non cambia. Il teletrasporto lo espone sul piedistallo a un attacco preparato, che è l'occasione di cattura su cui conta MS-0157 per Ozyrrandion.

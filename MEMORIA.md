@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-17 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 4: il primo round di **Sethrax** smasch… | ✅ file che descrivono il primo round in modo diverso: 1 su 3 → 0 su 3. Nessuna simulazione: Sethrax non attacca il party nel primo round, quindi la scelta non… |
 | 2026-11-17 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Ozyrrandion parte informato sui PG solo se Sethrax è fuggito dal Torneo col sem… | ✅ una riga di tattica, nessun numero cambiato |
 | 2026-11-16 | RIPRESA-PR-ABBANDONATE | D2, collaudo dell'arte del Drappo: lo script per il portatile 4050 | 🟡 script pronto, mai girato sulla 4050: tre tavole (ritratto-vanna, tavola-la-ruota, il-drappo) × due semi con FLUX.2… |
 | 2026-11-16 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | L2, L5 e L6: il piano si chiude | ✅ Piano completo. L5 chiuso con la prova, non per tempo: RIPRESA-PR D11 decisa l'8/11 e la #106 chiusa il 24/10. L2: R-3 misurato (quattro rami di PR fuse con… |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Eroi di Hammerfist, scelte del DM sulle card del 15/11: rosa a sei con **Ragnhi… | In PR |
 | 2026-11-15 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 3: duello di **Karruk** sui gradini (Ca… | ✅ Karruk contro Thorik, campione morto nel 79% dei duelli (57% con l'Attacco Poderoso sempre, che contro la CA 27 conviene di meno); contro Tordek nel 77%; Zar… |
 | 2026-11-15 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 2, scelte del DM sulle card del 15/11:… | ✅ Zalkatar da solo: almeno un PG morto nel 40% dei combattimenti (0% con le fasi di prima), Zalkatar ucciso nel 65% (81%); Xilthra senza scorta: fugge col Patt… |
-| 2026-11-15 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 1 (Torneo di Dauth), scelte del DM sull… | ✅ Xal'thor contro Tordek da solo: Tordek muore nel 24% dei duelli (15% con la ricarica); Kragar contro Tordek: 79 pf rimasti a Tordek con lo sbilanciare, 86 co… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 157 voci, l'ultima MS-0157 del 2026-11-17 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 158 voci, l'ultima MS-0158 del 2026-11-17 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

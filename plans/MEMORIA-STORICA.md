@@ -2072,7 +2072,29 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `scripts/prove-4050/drappo_flux.py` (`affianca`, `prepara`, `torch_vecchio`) · `scripts/prove-4050/drappo-flux.sh` · `scripts/tests/test_prove_4050.py` (`TestDrappoFlux`) · `docs/how-to/GUIDA-PROVE-PORTATILE-4050.md` §3-bis
 - **Solo qui:** `immagini.sh` e `scripts/comfyui-local/setup-distrobox.sh` installavano anch'essi PyTorch da `cu124`: segnalato al coordinatore, corretti da un'altra PR prima di questa (`RS_TORCH_INDEX`, che ora legge anche `drappo-flux.sh`). Nella prova su CPU FLUX klein ha mancato il soggetto di il-drappo (uno stendardo bianco appeso sopra una corsa, non il drappo dipinto come oggetto): è un solo seme su CPU, con prompt scritti per SDXL, e non decide la D2. Corrette anche due affermazioni fatte al DM nel thread: FLUX.2 [dev] (64 GB) non entra intero in una L40S da 48 GB, e Qwen-Image non entra nelle GPU da 16 GB di Kaggle.
 
-### MS-0183 · 2026-11-18 · Kit 4050: sandbox Flatpak al primo giro, installazione interrotta al secondo
+### MS-0183 · 2026-11-18 · La scuola di tutti gli incantesimi delle liste PF1e
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** generatore talenti incantesimi scuole spell-focus pf1e prd ricontrollo
+- **Origine:** riga del 2026-11-18 «ADR-0126, ricontrollo di Incantesimi focalizzati» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha chiesto il 18/11 di ricontrollare #468 e #470. Cancelli e impronta erano verdi; il difetto rimasto era quello dichiarato nella #468: 912 voci su 8548 delle liste PF1e senza scuola. Su 945 PNG a classi, 693 incantesimi su 5553 restavano fuori dal conto, 168 blocchi sceglievano la scuola su una parte sola e 59 perdevano il talento. Ora `[scuole]` sta anche in `liste_incantesimi.toml` del PF1e, 1536 incantesimi dal PRD: 0 senza scuola e 0 blocchi parziali. Incantesimi focalizzati passa da 621 a 665, tutti con la scuola: tornano i 44 che l'alchimista perdeva.
+- **Trovato nel repo:** `plans/esperimenti/sistemi-plugin-2026-11-07/estrai_prd_pf1e.py` (`liste_incantesimi`) · `scripts/genera_creatura.py` (`_scuole_per_nome`) · `scripts/tests/test_talenti.py` (`Focalizzati`)
+- **Solo qui:** fra SRD 3.5 e PRD i 598 nomi comuni hanno la stessa scuola, per questo la tabella di ricerca è una sola per i due sistemi. I 5 incantesimi «universal» non danno scuola. L'impronta delle 720 creature non cambia: i PNG PF1e a classi non ci sono dentro.
+
+### MS-0184 · 2026-11-18 · RICERCA-TOOL-LGM-2026 §3.1: la carta del cielo passa dal 30 Mirtul al 30 Flamerule
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** ADR-0005 ADR-0019
+- **Temi:** arc09 handout immagini calendario canone
+- **Origine:** riga del 2026-11-18 «§3.1, ricontrollo della carta del cielo chiesto dal DM» in `plans/CHANGELOG.md`
+- **Testo:** Jfs, 2026-11-18: «ricontrolla se ci sono errori e fixali». Il ricontrollo ha trovato che i file di ARC-09 dicono «fine Mirtul» per il Giorno 30, mentre la decisione del DM del 2026-07-12 fissa Giorno di Marcia 1 = 1 Flamerule. Sulla card Jfs ha scelto «30 Flamerule: rifaccio la carta». Carta rifatta: 2000-07-31 00:05:45 UT a longitudine 0, stella-chiave HIP 102098 allo zenit a latitudine 45,281.
+- **Trovato nel repo:** `09_…/Immagini-Handout/carta-del-cielo/PROVENIENZA.txt` · handout 7 in `Arco-Post-Hammerfist-HANDOUTS.md` · A4 in `Arco-Post-Hammerfist-DOSSIER-DELLE-PISTE.md`
+- **Solo qui:** la voce è nata MS-0166 ed è diventata MS-0184 al riallineo su main 4588bc5f. Vicino all'ascensione retta giusta non c'è una stella alla declinazione di prima (38,9°): per questo cambiano anche la latitudine e il parallelo, che ora passa per l'angolo ovest del Sigillo e non più per l'Anello. I «circa nove gradi» del 22 del mese restano giusti: otto notti più il grado e mezzo che manca a mezzanotte esatta. Il primo lancio di Stellarium dopo aver copiato una cultura del cielo nuova differisce dai successivi di un livello di grigio in circa 1800 pixel, quasi tutti fuori dall'orizzonte; i quattro lanci dopo sono identici. Gli altri «Mirtul» di ARC-09 (HOOKS, INTEGRATION-MASTER, Cerimonia, Tempestas) non sono toccati qui: li prende il thread della coerenza della storia.
+
+### MS-0185 · 2026-11-18 · Kit 4050: sandbox Flatpak al primo giro, installazione interrotta al secondo
 
 - **Data:** 2026-11-18
 - **PR:** —

@@ -7,20 +7,21 @@ repo perché il portatile del DM non vede i file del progetto. Si lancia con
 [GUIDA-PROVE-PORTATILE-4050](../../../docs/how-to/GUIDA-PROVE-PORTATILE-4050.md) §3.
 
 È una prova, non un'adozione: niente generazione in CI, nessuna immagine prodotta entra
-nel repo, e le decisioni D1-D4 di ADR-0115 (proposta) restano al DM.
+nel repo, e le decisioni D1-D4 di quel thread restano al DM.
 
 ## Cosa cambia rispetto al 29/10
 
-Tre manopole per i 6 GB della 4050, tutte da variabili d'ambiente e spente di serie,
+Quattro manopole per i 6 GB della 4050, tutte da variabili d'ambiente e spente di serie,
 così su Kaggle o su una GPU da 10 GB la pipeline fa quello che faceva:
 
 | Variabile | File | Effetto |
 |---|---|---|
-| `RS_COMFY_ARGS` | `esegui_gpu.py` | argomenti in più per ComfyUI; `immagini.sh` passa `--lowvram` |
+| `RS_COMFY_ARGS` | `esegui_gpu.py` | argomenti in più per ComfyUI; `immagini.sh` passa `--lowvram` sul profilo `gpu` e niente sul profilo leggero. Con `--cpu` le opzioni di VRAM si tolgono: ComfyUI le rifiuta insieme |
+| `RS_COMFY_DEVICE=gpu` | `esegui_gpu.py` | il profilo leggero `cpu` (SD1.5 + LCM) gira sulla GPU invece che con `--cpu`; `immagini.sh` lo imposta sempre |
 | `RS_LIBERA=1` | `pipeline_scena.py` | svuota ComfyUI prima di ogni misura anche sul profilo `gpu` (prima solo su `cpu`) |
 | `RS_VLM_DEVICE`, `RS_VLM_GPU` | `misura_immagini.py` | dove va il giudice Qwen3-VL-4B: `auto` con `max_memory` (4 GiB in GPU, il resto in RAM) o `cpu` |
 
-Nessuna delle tre è stata provata su una GPU: il container non ne ha. La prima corsa
+Nessuna delle quattro è stata provata su una GPU: il container non ne ha. La prima corsa
 sull'ASUS è anche la prova che funzionano.
 
 ## Dentro

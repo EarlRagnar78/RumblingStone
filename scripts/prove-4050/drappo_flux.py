@@ -1,7 +1,7 @@
 """drappo_flux.py — il collaudo della D2 (arte del Drappo): FLUX.2 [klein] 4B accanto a Gemini.
 
 Gira dentro il box «comfyui» (lo lancia drappo-flux.sh). Prepara ComfyUI al commit già provato
-dalla pipeline delle immagini, scarica tre pesi Apache 2.0 verificandone lo sha256, avvia ComfyUI
+dalla pipeline delle immagini (in una cartella sua, «ComfyUI-flux»), scarica tre pesi Apache 2.0 verificandone lo sha256, avvia ComfyUI
 con --lowvram, genera le tavole scelte con scripts/comfyui_batch.py (prompt dal markdown del modulo,
 seed fisso derivato dall'id) e misura per ogni immagine secondi, picco di VRAM e picco di RAM.
 Alla fine mette ogni tavola accanto a quella di Gemini in una pagina HTML e, se c'è Pillow, in un
@@ -76,7 +76,9 @@ def peso_verificato(percorso: Path, atteso: str) -> bool:
 
 
 def prepara(lavoro: Path) -> Path:
-    comfy = lavoro / "ComfyUI"
+    # Un clone suo, non «ComfyUI»: quello è di esegui_gpu.py (immagini.sh), che vi mette i suoi nodi
+    # solo quando lo crea. Se questa prova lo creasse per prima, senza nodi, immagini.sh si romperebbe.
+    comfy = lavoro / "ComfyUI-flux"
     if not comfy.exists():
         sh("git", "clone", "-q", "https://github.com/comfyanonymous/ComfyUI.git", str(comfy))
         sh("git", "-C", str(comfy), "checkout", "-q", COMFY_COMMIT)
@@ -179,9 +181,11 @@ def genera(ident: str, seme: int, cartella: Path, porta: int, pid: int, attesa: 
 def affianca(gemini: Path, flux: list[Path], dest: Path) -> bool:
     """Gemini a sinistra, FLUX a destra, stessa altezza, JPEG. Senza Pillow si salta: c'è la pagina HTML."""
     try:
-        from PIL import Image, ImageDraw
+        from PIL import Image, ImageDraw, PngImagePlugin
     except ImportError:
         return False
+    # Le PNG di Gemini portano il manifesto C2PA in un blocco di testo più grande del limite di Pillow
+    PngImagePlugin.MAX_TEXT_CHUNK = 64 * 1024 * 1024
     alt = 1024
     tavole = []
     for p in [gemini, *flux]:
@@ -221,6 +225,23 @@ def pagina(righe: list[dict], uscita: Path, solo: list[str], semi: int) -> None:
         "immagini, §6, il giorno dopo.</p>" + "".join(corpo), encoding="utf-8")
 
 
+def versione_torch() -> str:
+    try:
+        import torch
+        return torch.__version__
+    except ImportError:
+        return "assente"
+
+
+def torch_vecchio(versione: str) -> bool:
+    """Sotto la 2.8 ComfyUI rinuncia alla gestione dinamica della VRAM, che su 6 GB conta."""
+    try:
+        maggiore, minore = (int(x) for x in versione.split("+")[0].split(".")[:2])
+    except ValueError:
+        return False
+    return (maggiore, minore) < (2, 8)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--lavoro", required=True, type=Path)
@@ -240,6 +261,11 @@ def main() -> int:
     uscita = a.uscita.resolve()
     uscita.mkdir(parents=True, exist_ok=True)
     t0 = time.time()
+    torch_v = versione_torch()
+    if torch_vecchio(torch_v) and not a.cpu:
+        print(f"AVVISO: PyTorch {torch_v} nel venv. Sotto la 2.8 ComfyUI gestisce la VRAM alla vecchia maniera "
+              "e su 6 GB può non bastare. Per aggiornarlo, dentro il venv: pip install -U torch torchvision "
+              "--index-url https://download.pytorch.org/whl/cu126", flush=True)
     comfy = prepara(a.lavoro.resolve())
     proc = avvia(comfy, a.porta, a.cpu)
     righe = []
@@ -255,16 +281,20 @@ def main() -> int:
         proc.terminate()
         proc.wait(30)
     shutil.copy(comfy.parent / "comfy-flux.log", uscita / "comfy-flux.log")
-    for ident in solo:
-        flux = [uscita / r["file"] for r in righe if r["id"] == ident and r["file"]]
-        if flux and (GEMINI / f"{ident}.png").exists():
-            affianca(GEMINI / f"{ident}.png", flux, uscita / f"confronto-{ident}.jpg")
-    pagina(righe, uscita, solo, a.semi)
-    riepilogo = {"modello": cb.MODELLI[MODELLO]["etichetta"], "comfyui": COMFY_COMMIT,
+    # Prima le misure, poi i confronti: un'immagine che Pillow non apre non deve costare il riepilogo
+    riepilogo = {"modello": cb.MODELLI[MODELLO]["etichetta"], "comfyui": COMFY_COMMIT, "torch": torch_v,
                  "argomenti_comfyui": os.environ.get("RS_COMFY_ARGS", "--lowvram"), "cpu": a.cpu,
                  "pesi": [{"file": n, "repo": r, "sha256": s} for _, n, r, _, s, _ in PESI],
                  "minuti_totali": round((time.time() - t0) / 60, 1), "immagini": righe}
     (uscita / "riepilogo.json").write_text(json.dumps(riepilogo, indent=2, ensure_ascii=False), encoding="utf-8")
+    pagina(righe, uscita, solo, a.semi)
+    for ident in solo:
+        flux = [uscita / r["file"] for r in righe if r["id"] == ident and r["file"]]
+        if flux and (GEMINI / f"{ident}.png").exists():
+            try:
+                affianca(GEMINI / f"{ident}.png", flux, uscita / f"confronto-{ident}.jpg")
+            except Exception as e:  # noqa: BLE001 — il JPEG affiancato è un comodo, la pagina HTML c'è già
+                print(f"AVVISO: confronto-{ident}.jpg non fatto ({e.__class__.__name__}: {e})", flush=True)
     fallite = sum(r["esito"] != "ok" for r in righe)
     print(f"{len(righe) - fallite} fatte, {fallite} fallite. Apri {uscita / 'confronto.html'}")
     return 1 if fallite else 0

@@ -220,7 +220,7 @@ FATTO      Un foglio rotondo di pelle sottile, inchiostro bruno, nessuna firma:
            il cielo di mezzanotte visto dall'alto, il meridiano, una stella del
            Sigillo cerchiata tre volte al centro, un secondo cerchio tirato col
            compasso. (HANDOUTS, handout 7)
-LETTURA    La notte: il Sigillo arriva sul meridiano a mezzanotte il 30 Mirtul
+LETTURA    La notte: il Sigillo arriva sul meridiano a mezzanotte il 30 Flamerule
            (Conoscenze geografia o Sopravvivenza CD 15). Il luogo: la carta è
            disegnata dal luogo del passo, un grado a sud del pianoro, circa
            110 km (astrolabio, quadrante o Conoscenze geografia CD 20).
@@ -238,9 +238,9 @@ INNOCENZA  «Un mago drow con una carta delle stelle: sarà per orientarsi in
 
 **Chi la porta** (deciso dal DM il 2026-11-14, handout 7): il mago della
 **squadra di piromanti drow** (`INCONTRI-VIAGGIO-CANNATH-VALE` §1.1, voce 56-70;
-statblocco `Bestiario/mostri/drow-wizard7-cr8.md`), prima di fine Mirtul. Se i PG
+statblocco `Bestiario/mostri/drow-wizard7-cr8.md`), prima di fine Flamerule. Se i PG
 non lo incontrano o non lo perquisiscono, **Sethrax** ne dà una copia quando si
-smaschera al Torneo (A6): arriva dopo il 30 Mirtul e dice dove la Torre **è già
+smaschera al Torneo (A6): arriva dopo il 30 Flamerule e dice dove la Torre **è già
 andata**.
 
 > **Scena fissa [DM 2026-11-14]**: la squadra di piromanti era una voce di

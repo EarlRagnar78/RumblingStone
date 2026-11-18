@@ -15,6 +15,7 @@
 set -uo pipefail
 . "$(dirname "${BASH_SOURCE[0]}")/comune.sh"
 MANIFESTO="$HERE/prove.json"
+export PROVE_GIORNO="$GIORNO"   # tutte le prove di questo giro scrivono nella cartella di partenza
 SERVER_PID=""; SERVER_CTX=""
 
 ids_del_manifesto() {

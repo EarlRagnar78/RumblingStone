@@ -115,12 +115,14 @@ else
   if [ "$MOSTRA" = 1 ] || ! box_c_e comfyui; then
     esegui distrobox create --name comfyui --image ubuntu:24.04 --nvidia --yes
   fi
+  [ "$MOSTRA" = 1 ] || box_avvia comfyui   # il primo ingresso senza restare appesi (vedi ospite.sh)
   esegui distrobox enter comfyui -- bash -lc \
     "sudo apt-get update -qq && sudo apt-get install -y -qq git python3-venv python3-pip libgl1 libglib2.0-0 ffmpeg"
   # whisper: la ricetta della guida della trascrizione (#424 §2), Vulkan col driver dell'host
   if [ "$MOSTRA" = 1 ] || ! box_c_e whisper; then
     esegui distrobox create --nvidia --name whisper --image registry.fedoraproject.org/fedora-toolbox:43 --yes
   fi
+  [ "$MOSTRA" = 1 ] || box_avvia whisper
   esegui distrobox enter whisper -- bash -lc \
     "sudo dnf install -y -q git cmake gcc-c++ ffmpeg-free vulkan-headers vulkan-loader-devel glslc vulkan-tools"
 fi

@@ -19,9 +19,16 @@ esito prosa modello "$MODELLO"
 esito prosa minuti "$(minuti "$t0")"
 CORSA="$RADICE/plans/scrittura/corse/L-$ETICHETTA-$N"
 FOGLIO="$RADICE/plans/scrittura/prove-locali/foglio-$ETICHETTA-$N.md"
-[ -d "$CORSA" ] && cp -r "$CORSA" "$DEST/"
-[ -f "$FOGLIO" ] && cp "$FOGLIO" "$DEST/"
 cp -r "$RADICE/plans/scrittura/prove-locali/L-$ETICHETTA-tempi-$N" "$DEST/" 2>/dev/null || true
+if [ ! -d "$CORSA" ]; then
+  esito prosa corsa "fermata dopo il caso dei tempi"
+  echo
+  echo "Ti sei fermato dopo il caso dei tempi: i dieci casi non sono girati e il foglio non c'è."
+  echo "I tempi sono in $DEST. Per la corsa intera rilancia: scripts/prove-4050/prosa.sh $MODELLO"
+  exit 0
+fi
+cp -r "$CORSA" "$DEST/"
+if [ -f "$FOGLIO" ]; then cp "$FOGLIO" "$DEST/"; fi
 echo
 echo "Il foglio da leggere ad alta voce è $FOGLIO (copia in $DEST)."
 echo "Quando l'hai compilato: cp \"$FOGLIO\" \"$DEST/\" && scripts/prove-4050/riporta.sh"

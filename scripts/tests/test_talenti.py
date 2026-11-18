@@ -167,9 +167,23 @@ class Focalizzati(unittest.TestCase):
     def test_incantesimo_dell_apg_ha_la_scuola_del_prd(self):
         self.assertEqual(G.scuola_prevalente([(1, "stumble gap")])[0], "evocazione")
 
+    def test_incantesimi_delle_liste_pf1e_hanno_la_scuola_del_prd(self):
+        # ricontrollo del 2026-11-18: 912 voci delle liste PF1e non avevano scuola
+        self.assertEqual(G.scuola_prevalente([(1, "Spezzalinee")])[0], "trasmutazione")
+        self.assertEqual(G.scuola_prevalente([(1, "Linebreaker")])[0], "trasmutazione")
+        self.assertEqual(G.scuola_prevalente([(1, "Blurred Movement")])[0], "illusione")
+        # «universal» non si focalizza, e un nome ignoto non ha scuola
+        self.assertIsNone(G.scuola_prevalente([(9, "Wish")])[0])
+        self.assertIsNone(G.scuola_prevalente([(1, "nome inventato")])[0])
+        from dmcore import sistemi as S
+        pf = S.dati("pf1e", "creature.liste_incantesimi")
+        usati = {n for liv in pf["liste"].values() for voci in liv.values() for n in voci}
+        self.assertEqual(usati - set(pf["scuole"]), set())
+
     def test_senza_scuola_nelle_tabelle_prende_un_altro_talento(self):
-        # revisione di Codex sulla #468: gli estratti dell'alchimista PF1e (Spezzalinee…)
-        # non sono nelle tabelle delle scuole, e il talento usciva senza scuola
+        # revisione di Codex sulla #468: il talento usciva senza scuola sull'alchimista PF1e.
+        # Dal 2026-11-18 i suoi estratti hanno la scuola del PRD: qui si guarda solo che il
+        # talento, se c'è, porti la scuola
         from dmcore import sistemi as S
         from dmcore import creature_pf1e as CP
         dati = S.dati("pf1e", "creature.costruzione")

@@ -1888,7 +1888,18 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `scripts/memoria_storica.py` (`pr_dai_merge`, `confronta_memoria`) · `plans/adr/ADR-0137-la-memoria-storica-si-scrive-a-ogni-blocco-di-lavoro-non-solo-al-merge.md`
 - **Solo qui:** fatti decisi su card trovati solo nella memoria delle sessioni al 18/11: rilascio 1.1.0 dopo le promozioni del 22-24/11 con card prima del tag; Lychee per le ancore solo su richiesta del DM. 21 righe della memoria rimandano solo a `/mnt/project-files/`. Il confronto dà falsi positivi su nomi di codice fra apici inversi (per esempio `goto`) e non controlla le 311 righe in prosa. Lo SHA 48871bd citato nella nota degli strumenti binari non è un oggetto di git.
 
-### MS-0167 · 2026-11-18 · Decodifica vincolata: tre errori dello script corretti prima della misura
+### MS-0167 · 2026-11-18 · Kit 4050: quattro errori trovati rileggendo, prima del primo giro
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** ADR-0136
+- **Temi:** prove-4050 kit distrobox box-appeso vulkan scheda-integrata powershell bom verifica
+- **Origine:** riga del 2026-11-18 «Kit delle prove 4050, rilettura a caccia di errori chiesta dal DM il 18/11» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha chiesto il 18/11 di controllare che non ci fossero errori nel kit unito con la #469. CI verde, Codex senza rilievi, Sourcery senza budget: i tre errori sono venuti dalla rilettura. Il box spento che resta appeso su `distrobox enter` era già noto dal 2026-10-10 per `llm-locale` (`box_pronto`), ma il kit non lo applicava ai box `comfyui` e `whisper`. La verifica della trascrizione guardava solo se il log nominava la NVIDIA. Lo script di Windows era senza BOM e non guardava l'uscita di `installa.sh`. Un quarto errore l'ha visto il thread «Preparare le prove sul portatile RTX 4050»: il giorno ricalcolato a ogni script divideva in due cartelle un giro che passa la mezzanotte (`PROVE_GIORNO`).
+- **Trovato nel repo:** `scripts/prove-4050/ospite.sh` (`box_avvia`, `nel_box`) · `scripts/prove-4050/verifica.py` (`VRAM_WHISPER_MIB`) · `scripts/prove-4050/trascrizione-gpu.sh` (`vram-durante.txt`) · `scripts/tests/test_prove_4050.py` (`test_box_spento_si_accende_senza_restare_appesi`, `test_trascrizione_sulla_scheda_integrata_e_ko`, `test_script_windows_con_bom`)
+- **Solo qui:** la soglia di 400 MiB è una stima mia (il modello q8_0 pesa circa 870 MB), non una misura sulla 4050: se al primo giro la memoria sale meno con la GPU giusta, va abbassata. Divisione dei file col thread «Preparare le prove sul portatile RTX 4050», che ha avuto la stessa richiesta: a lui `lettore-coerenza.sh`, `prosa.sh`, `immagini.sh`, `leggi_ollama.py`, `importa_gemini.py`; `drappo-flux.sh` e `schede-vincolate.sh` non toccati. Controllati e trovati a posto: `kit.sh`, `comune.sh`, `controlla.sh`, `riporta.sh`, `prove.json`.
+
+### MS-0168 · 2026-11-18 · Decodifica vincolata: tre errori dello script corretti prima della misura
 
 - **Data:** 2026-11-18
 - **PR:** #473

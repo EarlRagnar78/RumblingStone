@@ -737,6 +737,21 @@ def liste_incantesimi(base: Path) -> str:
     out += [f"{_toml_testo(n)} = {_toml_testo(it[n.lower()])}" for n in usati if n.lower() in it]
     senza = [n for n in usati if n.lower() not in it]
     out += ["", f"# senza nome italiano nel lessico: {len(senza)} su {len(usati)}"]
+    # la scuola di ogni incantesimo (spell_details.school del suo libro): serve a
+    # Incantesimi focalizzati nel generatore (ADR-0126, 2026-11-18)
+    scuola_di: "dict[str, str]" = {}
+    for libro in LIBRI_INCANTESIMI:
+        c = sqlite3.connect(base / f"book-{libro}.db")
+        q = ("select s.name, d.school from spell_details d join sections s on s.section_id = d.section_id "
+             "where s.subtype is null or s.subtype != 'mythic_spell' order by d.spell_detail_id")
+        for nome, scuola in c.execute(q).fetchall():
+            if libro_di.get(nome) == libro:
+                assert scuola_di.setdefault(nome, scuola.lower()) == scuola.lower(), f"{nome}: due scuole"
+    assert set(scuola_di) == set(usati), sorted(set(usati) - set(scuola_di))[:5]
+    out += ["", "# la scuola di ogni incantesimo, dal PRD (spell_details.school); «universal» non è una scuola",
+            "# che si possa focalizzare, e resta scritta com'è", "[scuole]"]
+    out += [f"{_toml_testo(n)} = \"{scuola_di[n]}\"" for n in usati]
+    assert scuola_di["Fireball"] == "evocation" and scuola_di["Linebreaker"] == "transmutation"
     assert liste["sorcerer"] == liste["wizard"] and len(liste) >= 20
     assert "Magic Missile" in liste["wizard"][1] and "Cure Light Wounds" in liste["cleric"][1]
     assert "Fireball" in liste["wizard"][3] and "Bless" in liste["paladin"][1]

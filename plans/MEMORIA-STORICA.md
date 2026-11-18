@@ -33,7 +33,7 @@ sola lettura). I filtri si sommano; maiuscole e accenti non contano.
 
 ## Come si scrive una voce
 
-Due regole (ADR-0127):
+Tre regole (ADR-0127, ADR-0137, ADR-0138):
 
 - **Addendum del changelog, obbligatorio in CI**: una PR che aggiunge righe a
   [`CHANGELOG.md`](CHANGELOG.md) aggiunge anche almeno una voce qui, con le
@@ -42,6 +42,14 @@ Due regole (ADR-0127):
 - **Prima di togliere una riga dalla memoria del progetto** (fuori dal repo,
   la CI non la vede) si controlla che i suoi fatti siano qui; se mancano, si
   copia la riga com'era in una voce nuova, nello stesso giro di lavoro.
+
+- **A fine di ogni blocco di lavoro che non finisce in una PR** (scelta su
+  card, dato verificato, file solo nella cartella condivisa, thread che si
+  risolve) il thread scrive la voce, con la testa `### MS-???? · data · titolo`,
+  nel suo file della coda `/mnt/project-files/memoria-storica-coda/`.
+  `python3 scripts/memoria_coda.py DIR --thread "Titolo"` esce 1 se manca;
+  `--piega` la porta qui col numero e col campo `Coda`. Una voce piegata non
+  ha una riga del changelog: la sua origine è la card o il thread.
 
 Si aggiunge in coda col numero dopo l'ultimo e si fa girare
 `python3 scripts/memoria_storica.py --check` (la CI fa lo stesso).
@@ -59,6 +67,7 @@ Si aggiunge in coda col numero dopo l'ultimo e si fa girare
 - **Fuori dal repo:** percorsi della cartella condivisa         (facoltativo)
 - **Note di memoria:** `nome-nota`                              (facoltativo)
 - **Solo qui:** i fatti che non si ritrovano altrove             (facoltativo)
+- **Coda:** `nome-del-file-di-coda`      (lo scrive `memoria_coda.py --piega`)
 ```
 
 Niente dati personali (nomi dei giocatori, macchine del DM, nomi utente):
@@ -1877,7 +1886,204 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `scripts/genera_creatura.py` (`applica_talenti`) · `scripts/tests/test_talenti.py` (`Focalizzati`)
 - **Solo qui:** sull'impronta delle 720 creature 484 note tolte e 156 restano, e null'altro cambia; `impronte.py --confronta` torna ai 3 rossi di prima (suggest_encounter, conformita_statblocchi, derive_statblocks).
 
-### MS-0166 · 2026-11-18 · RICERCA-TOOL-LGM-2026 §3.1: la carta del cielo passa dal 30 Mirtul al 30 Flamerule
+### MS-0166 · 2026-11-18 · La memoria storica si ritrova per PR e si confronta con la memoria delle sessioni
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** ADR-0137 ADR-0127
+- **Temi:** memoria-storica memoria processo audit thread card
+- **Origine:** riga del 2026-11-18 «ADR-0137, la memoria storica a ogni blocco di lavoro» in `plans/CHANGELOG.md`
+- **Testo:** audit dell'obbligo di ADR-0127 a sei giorni dalla nascita. Imposto da un cancello: voce MS per ogni PR col changelog (88 PR su 90 unite dal 12/11; #387 e #389 toccano solo `docs/`) e forma del file (165 voci). Solo regola scritta: archiviare prima di togliere una riga dalla memoria delle sessioni; nessuna voce su 98 è nata così, né da una scelta su card o da un thread senza PR. Il campo PR resta «—» in 82 voci su 98 perché la voce precede il numero: ora `--pr` lo ricava dal merge, solo per le voci nate da una riga del changelog (le 67 righe portate in blocco dalla #381 non diventano «della» #381); PR ritrovate 37 → 90 su 90, di cui #387 e #389 solo citate in MS-0082. Righe della memoria delle sessioni con PR, ADR, SHA o percorsi che il repo non ha: 84 su 408 controllabili. Il confronto con le regole del progetto di dottorato del DM (lettura a inizio conversazione, cercare prima di chiedere, controllo delle decisioni superate, diario a fine di ogni blocco, decisioni una volta sola, discordanze segnalate) dice che qui mancano l'ordine di ricerca prima di chiedere e la voce a fine blocco fuori dalle PR.
+- **Trovato nel repo:** `scripts/memoria_storica.py` (`pr_dai_merge`, `confronta_memoria`) · `plans/adr/ADR-0137-la-memoria-storica-si-scrive-a-ogni-blocco-di-lavoro-non-solo-al-merge.md`
+- **Solo qui:** fatti decisi su card trovati solo nella memoria delle sessioni al 18/11: rilascio 1.1.0 dopo le promozioni del 22-24/11 con card prima del tag; Lychee per le ancore solo su richiesta del DM. 21 righe della memoria rimandano solo a `/mnt/project-files/`. Il confronto dà falsi positivi su nomi di codice fra apici inversi (per esempio `goto`) e non controlla le 311 righe in prosa. Lo SHA 48871bd citato nella nota degli strumenti binari non è un oggetto di git.
+
+### MS-0167 · 2026-11-18 · Kit 4050: quattro errori trovati rileggendo, prima del primo giro
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** ADR-0136
+- **Temi:** prove-4050 kit distrobox box-appeso vulkan scheda-integrata powershell bom verifica
+- **Origine:** riga del 2026-11-18 «Kit delle prove 4050, rilettura a caccia di errori chiesta dal DM il 18/11» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha chiesto il 18/11 di controllare che non ci fossero errori nel kit unito con la #469. CI verde, Codex senza rilievi, Sourcery senza budget: i tre errori sono venuti dalla rilettura. Il box spento che resta appeso su `distrobox enter` era già noto dal 2026-10-10 per `llm-locale` (`box_pronto`), ma il kit non lo applicava ai box `comfyui` e `whisper`. La verifica della trascrizione guardava solo se il log nominava la NVIDIA. Lo script di Windows era senza BOM e non guardava l'uscita di `installa.sh`. Un quarto errore l'ha visto il thread «Preparare le prove sul portatile RTX 4050»: il giorno ricalcolato a ogni script divideva in due cartelle un giro che passa la mezzanotte (`PROVE_GIORNO`).
+- **Trovato nel repo:** `scripts/prove-4050/ospite.sh` (`box_avvia`, `nel_box`) · `scripts/prove-4050/verifica.py` (`VRAM_WHISPER_MIB`) · `scripts/prove-4050/trascrizione-gpu.sh` (`vram-durante.txt`) · `scripts/tests/test_prove_4050.py` (`test_box_spento_si_accende_senza_restare_appesi`, `test_trascrizione_sulla_scheda_integrata_e_ko`, `test_script_windows_con_bom`)
+- **Solo qui:** la soglia di 400 MiB è una stima mia (il modello q8_0 pesa circa 870 MB), non una misura sulla 4050: se al primo giro la memoria sale meno con la GPU giusta, va abbassata. Divisione dei file col thread «Preparare le prove sul portatile RTX 4050», che ha avuto la stessa richiesta: a lui `lettore-coerenza.sh`, `prosa.sh`, `immagini.sh`, `leggi_ollama.py`, `importa_gemini.py`; `drappo-flux.sh` e `schede-vincolate.sh` non toccati. Controllati e trovati a posto: `kit.sh`, `comune.sh`, `controlla.sh`, `riporta.sh`, `prove.json`.
+
+### MS-0168 · 2026-11-18 · Decodifica vincolata: tre errori dello script corretti prima della misura
+
+- **Data:** 2026-11-18
+- **PR:** #473
+- **ADR:** —
+- **Temi:** document-ai decodifica-vincolata tattiche prova-4050 ollama S8
+- **Origine:** riga del 2026-11-18 «Tecnica 3, decodifica vincolata: tre errori dello script della prova corretti prima della misura» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha chiesto il 18/11 di ricontrollare la prova della #466 (MS-0161) prima di lanciarla. Il braccio libero perdeva violazioni S8 per l'impaginazione (grassetto, elenco numerato, titoli): 1 su 4 trovate, ora 4 su 4. Il tetto di 700 token troncava il JSON pieno del vincolato: ora 1500 e le troncate si contano. Un campo non testuale faceva cadere lo script. La regola del verdetto è rimasta quella scritta prima.
+- **Trovato nel repo:** `plans/esperimenti/decodifica-vincolata-2026-11-17/schede_vincolate.py` (`valido_libero`, `in_markdown`, `GETTONI`) · `plans/esperimenti/decodifica-vincolata-2026-11-17/PIANO.md` · `scripts/tests/test_prove_4050.py` (`TestSchedeVincolate`)
+- **Solo qui:** `verifica_scheda` tratta una riga che comincia col grassetto come l'inizio di una sezione: chi scrive tattiche da un modello deve togliere il grassetto prima di S8. Non è provato che l'Ollama del portatile rispetti `maxLength` dello schema.
+
+### MS-0169 · 2026-11-12 · Regola di merge: una PR entra senza un nuovo sì se verde, dichiarata e misurata
+
+- **Data:** 2026-11-12
+- **PR:** —
+- **ADR:** —
+- **Temi:** merge regole processo coordinatore thread
+- **Origine:** regola del DM nella chat di progetto (2026-11-12), tenuta solo nella memoria delle sessioni; archiviata dal thread «Rendere obbligatoria la memoria storica»
+- **Testo:** una PR di un thread entra su main senza un nuovo sì del DM se valgono tutte e tre: CI verde e mergeable clean; tutti i problemi e le misure dichiarati senza omissioni; un miglioramento misurato contro main. Se manca una condizione non entra e si dice quale. I merge sono in coda unica: il coordinatore li ordina uno alla volta e avvisa i thread che toccano gli stessi file; il thread manda testa e misura prima, SHA e file condivisi dopo, e unisce la sua PR al via del coordinatore. Il thread padre dell'audit tiene la lista delle PR e non unisce più. Restano del DM: canone, tagli di testo, merge verso il repo a monte.
+- **Solo qui:** imparato il 2026-11-16: il «via» del coordinatore non è il sì del DM; il merge lo copre questa regola, e lo stato mergeable si legge solo dopo aver tolto la bozza. Prima di unire: grep dei segni di conflitto e `impronte.py --confronta` (non è in CI).
+- **Coda:** `rendere-obbligatoria-la-memoria-storica`
+
+### MS-0170 · 2026-11-13 · Le decisioni del DM vanno sempre su card, con scheda, file e riga
+
+- **Data:** 2026-11-13
+- **PR:** —
+- **ADR:** —
+- **Temi:** card decisioni processo coordinatore
+- **Origine:** richiesta del DM del 2026-11-13 nel thread delle regole e addendum alle istruzioni di progetto del 2026-11-15
+- **Testo:** il 13/11 il DM non trovava nel testo dei messaggi le decisioni che gli venivano chieste: da allora ogni scelta va su una card con la soluzione consigliata e con il nome della scheda, il file e la riga. Dal 15/11 ogni thread che apre una card la segnala subito al coordinatore con una riga; il coordinatore le raccoglie e le porta al DM nel canale, così si gestiscono in un punto solo, e il thread va avanti con ciò che non dipende dalla scelta. Una card si chiude solo con una prova.
+- **Coda:** `rendere-obbligatoria-la-memoria-storica`
+
+### MS-0171 · 2026-11-13 · Il rilascio 1.1.0 aspetta le promozioni a stable
+
+- **Data:** 2026-11-13
+- **PR:** —
+- **ADR:** ADR-0099
+- **Temi:** rilascio v110 canali card
+- **Origine:** scelta del DM su una card del thread dell'audit settimanale (2026-11-13)
+- **Testo:** il rilascio 1.1.0 si fa dopo le promozioni dei canali a stable previste per il 22-24/11 (xdist in testing fino al 22/11, «d» eufonica fino al 24/11). La PR di rilascio parte allora, con una card al DM prima del tag. Rilasciare vuol dire una PR con `## [1.1.0]` in `CHANGELOG.md` e `__version__`.
+- **Solo qui:** il controllo delle ancore con Lychee non si adotta di iniziativa: solo se il DM lo chiede (stessa data, stessa riga della memoria).
+- **Coda:** `rendere-obbligatoria-la-memoria-storica`
+
+### MS-0172 · 2026-11-13 · Document AI: una tecnica per PR, con misura contro main
+
+- **Data:** 2026-11-13
+- **PR:** #398 #416 #418
+- **ADR:** ADR-0132
+- **Temi:** document-ai xai metodo misura
+- **Origine:** indicazione del DM del 2026-11-13 nel thread «Applicare Document AI e Explainable AI», tenuta solo nella memoria delle sessioni
+- **Testo:** le tecniche di Document AI si provano una per PR, ognuna con una misura contro main, ed entrano solo se la misura migliora. Per l'Explainable AI il margine stimato è poco. Entrate così: font a colori del repo, PDF/A-2a, provenienza IPTC nelle copie web. Prossima in lista al 13/11: andata e ritorno del testo dei booklet.
+- **Coda:** `rendere-obbligatoria-la-memoria-storica`
+
+### MS-0173 · 2026-11-18 · La voce di memoria storica è obbligatoria anche senza PR, con un cancello
+
+- **Data:** 2026-11-18
+- **PR:** #471
+- **ADR:** ADR-0137 ADR-0138
+- **Temi:** memoria-storica coda card thread cancello
+- **Origine:** due scelte del DM del 2026-11-18: card nel thread «Rendere obbligatoria la memoria storica» e messaggio nella chat di progetto
+- **Testo:** sulla card il DM ha scelto la consigliata: ogni thread scrive la voce in un file suo nella coda `/mnt/project-files/memoria-storica-coda/` e la routine del lunedì la porta nel repo. Nella chat ha poi detto di aggiungere le righe alle istruzioni di progetto (lo ha fatto il coordinatore) e ha chiesto «il cancello di verifica per il punto 3 per superare dall'inizio il limite trovato»: da qui `scripts/memoria_coda.py` (forma delle voci, thread risolti senza voce, piega numerata). Termine di confronto: le regole di memoria del suo progetto di dottorato; di quelle sono entrate qui cercare prima di chiedere, controllare che un documento non sia superato, la voce a fine di ogni blocco e la segnalazione delle discordanze.
+- **Solo qui:** il repo del dottorato contiene solo documenti, nessuna configurazione di memoria: il confronto è stato fatto sul testo delle regole incollato dal DM.
+- **Coda:** `rendere-obbligatoria-la-memoria-storica`
+
+### MS-0174 · 2026-11-18 · Il cancello della coda della memoria storica
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** ADR-0138 ADR-0137
+- **Temi:** memoria-storica coda cancello thread routine
+- **Origine:** riga del 2026-11-18 «ADR-0138, il cancello della coda della memoria storica» in `plans/CHANGELOG.md`
+- **Testo:** richiesta del DM del 18/11 dopo la scelta della coda per thread: un cancello per il punto 3 di ADR-0137, che era solo regola. `scripts/memoria_coda.py` controlla la forma delle voci in coda (`--check`), dice se un thread ha la sua voce (`--thread`, `--threads` con l'elenco dei thread risolti) e porta le voci nel file storico numerandole (`--piega`), solo se il risultato passa `memoria_storica.py --check`; quest'ultimo ora boccia in CI una testa `### MS-` che non si legge. Prima piega: MS-0169…MS-0173, cinque scelte del DM che stavano solo nella memoria delle sessioni.
+- **Trovato nel repo:** `scripts/memoria_coda.py` · `scripts/tests/test_memoria_coda.py` · `plans/adr/ADR-0138-la-coda-della-memoria-storica-ha-un-cancello.md`
+- **Solo qui:** misura del 18/11: 13 thread risolti dal 12/11 al 17/11, nessuno con una voce sua; il controllo parte dal 18/11 e non li conta. Il cancello non parte da solo (la CI non vede la cartella condivisa né i thread), non vede una card chiusa in un thread aperto e non giudica il contenuto oltre i 40 caratteri del Testo. Comandi per il coordinatore: `python3 scripts/memoria_coda.py /mnt/project-files/memoria-storica-coda/ --thread "Titolo"` prima di risolvere; per la routine `--check`, `--threads elenco.json`, `--piega` e poi `memoria_storica.py --confronta-memoria`.
+
+### MS-0175 · 2026-10-11 · LLM locale: il DM ha scelto la prova del 12B, mai eseguita
+
+- **Data:** 2026-10-11
+- **PR:** #234
+- **ADR:** ADR-0089
+- **Temi:** llm-locale prosa card prove-4050
+- **Origine:** card dell'11/10 nel thread «LLM locale per la prosa» e chiusura del thread del 15/11
+- **Testo:** dopo la bocciatura del modello da 4B (voto 40/42%, cieco 0 su 10) il DM ha scelto sulla card «Prova il 12B» (la consigliata) al posto di fermare la linea. La prova non è mai stata eseguita: il thread si è chiuso il 15/11 con la prova in sospeso, e da allora appartiene alle prove sul portatile con la GPU da 6 GB (`scripts/prove-4050/`, riga P04 di `plans/STATO-E-ORDINE-DEI-PIANI.md`). Questione aperta: finché l'archivio dei risultati non viene caricato, ADR-0089 resta senza il confronto fra 4B e 12B, e la bocciatura vale solo per il 4B.
+- **Trovato nel repo:** `plans/adr/ADR-0089-un-llm-locale-per-la-prosa-si-misura-prima.md` · `scripts/llm-locale/`
+- **Coda:** `llm-locale-per-la-prosa`
+
+### MS-0176 · 2026-10-29 · Immagini in posa: licenze ammesse e niente servizi a pagamento
+
+- **Data:** 2026-10-29
+- **PR:** —
+- **ADR:** ADR-0015 ADR-0019
+- **Temi:** immagini licenze comfyui kaggle
+- **Origine:** thread «Immagini dei personaggi in posa con l'AI», risposte del DM del 2026-10-29 e card dello stesso giorno
+- **Testo:** due scelte del DM che valgono per ogni lavoro sulle immagini. (1) Le licenze con soglia di fatturato (uso commerciale sotto 5 milioni di dollari, come FLUX 3 Klein) sono usabili, con quattro vincoli: revisione umana, dichiarazione che l'immagine è fatta con l'AI, nessun addestramento sulle uscite, la licenza può essere revocata. (2) Non si paga: solo GPU locale da almeno 10 GB o Kaggle gratuito (scelto su card), mai servizi a pagamento lanciati in automatico; come ultima via automatica il profilo «sola CPU» (SD1.5 con LCM-LoRA, 12-15 minuti a scena, 16 GB di RAM), buono per bozze di posa e non per il tavolo. Licenze verificate quel giorno: non commerciali OpenPose CMU, InsightFace (InstantID, PuLID, IP-Adapter FaceID), Qwen-Image-2.1, FLUX.2 klein 9B; Apache 2.0 DWPose, Qwen-Image-Edit-2511, FLUX.2 klein 4B, Z-Image-Turbo, MOSS-Image. La regola del DM: chi non ha una GPU adeguata usa la migliore via gratuita in rete, mai una a pagamento; il profilo «sola CPU» l'ha chiesto il DM. Ordine di priorità (le pagine con un'illustrazione erano il 17% contro il 40% dei moduli Paizo presi a confronto): prima i ritratti scontornati dei PNG con scheda intera, poi PNG ricorrenti e cattivi, per ultime le scene coi PG.
+- **Fuori dal repo:** `/mnt/project-files/immagini-personaggi/pipeline-2026-10-29/` (sei fasi, banco di misura, backend GPU locale → Kaggle → CPU) e `prove-2026-10-29/`
+- **Solo qui:** i pesi ripubblicati da terzi perdono l'etichetta di licenza, quindi il registro dei pesi punta sempre all'origine. Misure del banco su CPU: riconosce un altro PG e le scritte, non riconosce una mano rovinata (0,78); le due scene di prova bocciate per identità (0,33 e 0,50) con la posa a 0,996.
+- **Coda:** `immagini-dei-personaggi-in-posa-con-l-ai`
+
+### MS-0177 · 2026-10-31 · Immagini in posa: la prova con Gemini si fa a mano, e non è mai stata misurata
+
+- **Data:** 2026-10-31
+- **PR:** —
+- **ADR:** —
+- **Temi:** immagini gemini card
+- **Origine:** card del 2026-10-31 nel thread «Immagini dei personaggi in posa con l'AI»
+- **Testo:** sulla card il DM ha scelto la prova a mano dall'app, gratis (la consigliata), contro la via automatica da circa 4 dollari. Il piano del DM non include crediti per l'API, quindi la via automatica sarebbe a pagamento e richiede un sì esplicito. Come seconda fonte a mano il DM ha indicato ChatGPT gratuito. Pronti e mai usati: lo script automatico con tetto di spesa e 14 casi (8 PG in posa, 3 ritratti di PNG, 3 seconde pose) e i prompt per la prova a mano con busti e scheletri. Questione aperta: le immagini fatte a mano non sono mai state caricate, quindi il confronto con SD1.5 e con gli originali non esiste. La licenza commerciale delle uscite di Gemini non è stata verificata.
+- **Fuori dal repo:** `/mnt/project-files/immagini-personaggi/pipeline-2026-10-29/gemini/` (`gemini_ritratti.py`, `casi_gemini.json`, `PROMPT-A-MANO.md`)
+- **Coda:** `immagini-dei-personaggi-in-posa-con-l-ai`
+
+### MS-0178 · 2026-11-08 · Immagini in posa: revisione con gli standard di fatto, ADR-0115 mai prenotato
+
+- **Data:** 2026-11-08
+- **PR:** —
+- **ADR:** ADR-0115 ADR-0114
+- **Temi:** immagini adr standard-di-fatto
+- **Origine:** thread «Immagini dei personaggi in posa con l'AI», revisione dell'8/11 dopo l'allineamento del coordinatore
+- **Testo:** la proposta (prima ADR-0104, numero mai prenotato e poi usato da altri) prende il numero ADR-0115 e cambia in tre punti per la regola dello standard di fatto: la posa si misura con l'OKS di COCO al posto del coseno degli arti; lo scontorno passa a rembg al posto di BiRefNet a mano; il giudice dei glitch scritto da noi resta solo se batte VQAScore. In più i nodi ComfyUI vanno fissati a un commit e il prompt dell'immagine sta nella scheda di ADR-0015. Stato delle decisioni: D2 chiusa, D3 chiusa in parte, D1 (prima PR leggera, senza generazione in CI) e D4 aperte al DM. Questione aperta: ADR-0115 non è in `plans/adr-prenotati.json` e il file dell'ADR non esiste, ma il repo lo cita come proposta in `plans/esperimenti/immagini-posa-4050-2026-11-15/LEGGIMI.md` riga 10 e in `scripts/prove-4050/immagini.sh` riga 3; chi riprende il lavoro deve prenotare un numero libero e correggere i due rimandi.
+- **Solo qui:** nessuna delle tre sostituzioni (OKS, rembg, VQAScore) è stata misurata: sono scelte di metodo, non risultati.
+- **Coda:** `immagini-dei-personaggi-in-posa-con-l-ai`
+
+### MS-0179 · 2026-11-12 · La revisione dei bot non è una condizione di merge
+
+- **Data:** 2026-11-12
+- **PR:** #379 #381
+- **ADR:** ADR-0127
+- **Temi:** merge revisione sourcery codex regola
+- **Origine:** messaggi del coordinatore nel thread «Salvare la memoria storica nel repo», 2026-11-12
+- **Testo:** sulla #379 la revisione di Sourcery è arrivata otto minuti dopo il merge con 2 rilievi veri su 10. Il coordinatore ha prima chiesto di aspettare la revisione sulla #381, poi ha ritirato la condizione: la revisione dei bot non fa parte della regola di merge del DM del 12/11, e col budget dei bot esaurito per due giorni avrebbe fermato tutta la coda. Da allora ogni PR dichiara nel corpo se Sourcery e Codex hanno revisionato, e i rilievi veri di una revisione arrivata dopo il merge vanno in una PR di seguito. È una regola del coordinatore, non una scelta del DM su card.
+- **Solo qui:** dal 12/11 i due bot di fatto non revisionano; nessuna misura dice quanti rilievi veri si sono persi così.
+- **Coda:** `salvare-la-memoria-storica-nel-repo`
+
+### MS-0180 · 2026-11-15 · Il bug dei tag PDF/UA di typst 0.15.1 dipende dall'impaginazione
+
+- **Data:** 2026-11-15
+- **PR:** #448
+- **ADR:** ADR-0129
+- **Temi:** typst pdfua stampa booklet diagnosi
+- **Origine:** thread «Rendere dinamica la tattica di Skullcrusher», intoppo in CI sulla #448
+- **Testo:** la stampa del booklet della serata falliva in CI per un errore interno di typst 0.15.1 sui tag di accessibilità («tags weren't properly closed»), che compare solo quando un'interruzione di pagina cade in un certo punto. Il motore lo riportava con un messaggio fuorviante, come se il binario typst non fosse nel PATH. A spostare la pagina era il capoverso di B13, diventato più lungo; è stato diviso in tre senza cambiare parole. Il bug può tornare con qualunque modifica che sposti le pagine di un booklet. Come si trova: applicare i pezzi del diff uno alla volta al `.typ` di main finché la compilazione cade.
+- **Solo qui:** il messaggio sbagliato del motore non è stato corretto; chi vede «typst non nel PATH» in CI con typst installato deve pensare prima a questo bug.
+- **Coda:** `rendere-dinamica-la-tattica-di-skullcrusher`
+
+### MS-0181 · 2026-11-18 · Il ricontrollo delle prove 4050: sette errori negli script di lettore, immagini e Gemini
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** —
+- **Temi:** prove-4050 comfyui lowvram immagini lettore ollama gemini takeout ricontrollo errori
+- **Origine:** riga del 2026-11-18 «Prove sulla RTX 4050, ricontrollo chiesto dal DM il 18/11» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha chiesto il 18/11 di ricontrollare gli errori e correggerli, a questo thread (#447) e a quello del kit (#469). I due thread si sono divisi i file: qui lettore, prosa, immagini, la pipeline delle immagini, `leggi_ollama.py` e `importa_gemini.py`; al thread del kit il resto. L'errore più grave: `immagini.sh --profilo cpu`, che la guida dà come confronto col 29/10 «sulla GPU», passava a ComfyUI `--cpu` e `--lowvram` insieme. Stanno nello stesso gruppo esclusivo e ComfyUI esce subito; lo script aspettava sei minuti e diceva «non parte». Lo stesso errore era già stato trovato in `drappo_flux.py` (commit 03ca93f7) e non riportato qui. Ora il profilo leggero gira sulla GPU (`RS_COMFY_DEVICE=gpu`) e senza `--lowvram`.
+- **Trovato nel repo:** `scripts/prove-4050/immagini.sh` · `plans/esperimenti/immagini-posa-4050-2026-11-15/dati/esegui_gpu.py` (`argomenti_comfy`, `avvia`) · `plans/esperimenti/grafo-eventi-2026-11-12/leggi_ollama.py` · `scripts/importa_gemini.py` (`ora_iso`, `_di_gemini`) · `scripts/tests/test_prove_4050_correzioni.py`
+- **Solo qui:** niente di tutto questo è girato su una GPU: le correzioni sono provate con server finti e leggendo gli argomenti. Controllato e trovato a posto: le 636 domande del lettore sono lunghe al massimo 981 caratteri, quindi il contesto 4096 del kit non le taglia. Tolto anche un rimando a «ADR-0115 (proposta)» in `immagini.sh` e nel LEGGIMI delle immagini: il numero non è prenotato e il file non esiste, l'aveva scritto questo thread nella #447 senza controllarlo (trovato dal thread della memoria storica). Segnalato dal thread FLUX e verificato sulla fonte: `immagini.sh` e `scripts/comfyui-local/setup-distrobox.sh` installavano PyTorch dall'indice cu124, che si ferma alla 2.6.0 (`pip install --dry-run` del 18/11: torch 2.6.0+cu124, torchvision 0.21.0); il README del ComfyUI fissato (0df1646) dà la 2.7 come minimo e `main.py` avvisa sotto la 2.8. Ora cu126 (lo stesso dry-run: torch 2.14.1+cu126, torchvision 0.29.1), e un venv con la 2.6 viene aggiornato. Tolto torchaudio, aggiunto per errore in questa stessa PR: su cu126 è fermo alla 2.11 e avrebbe riportato indietro torch. Segnalato al thread del kit e non toccato: `comune.sh` calcola il giorno a ogni script, e un `kit.sh tutte` che passa la mezzanotte (il giro stimato supera le sei ore) divide i risultati su due cartelle (corretto dal thread del kit nella #474, MS-0167).
+
+### MS-0182 · 2026-11-18 · D2 del Drappo: quattro difetti dello script FLUX trovati al ricontrollo
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** —
+- **Temi:** drappo immagini flux comfyui prove-4050 pillow c2pa pytorch regressione
+- **Origine:** riga del 2026-11-18 «D2, collaudo dell'arte del Drappo: quattro difetti dello script trovati al ricontrollo» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha chiesto il 18/11 di ricontrollare tutto il thread. La prova su CPU del 16/11 (MS-0156) aveva usato solo ritratto-vanna, l'unica delle tre Gemini di serie che Pillow apre senza ritocchi: tavola-la-ruota e il-drappo hanno il manifesto C2PA in un blocco di testo oltre `PngImagePlugin.MAX_TEXT_CHUNK` e davano `ValueError`, dopo le generazioni e prima di `riepilogo.json`. Trovato rifacendo la prova su CPU con il-drappo (593 s, RAM di ComfyUI al picco 12.962 MiB). Gli altri tre: clone di ComfyUI condiviso con `esegui_gpu.py`, che clona i nodi ControlNet e IP-Adapter solo se la cartella non esiste (ora `ComfyUI-flux`); indice PyTorch `cu124` fermo al 2.6.0, mentre ComfyUI `0df1646` sotto la 2.8 ripiega sul vecchio ModelPatcher e avverte che le stime di VRAM non sono affidabili (ora `cu126`, 2.14.1 al 18/11); `set -o pipefail` che chiudeva `drappo-flux.sh` prima dell'esito.
+- **Trovato nel repo:** `scripts/prove-4050/drappo_flux.py` (`affianca`, `prepara`, `torch_vecchio`) · `scripts/prove-4050/drappo-flux.sh` · `scripts/tests/test_prove_4050.py` (`TestDrappoFlux`) · `docs/how-to/GUIDA-PROVE-PORTATILE-4050.md` §3-bis
+- **Solo qui:** `immagini.sh` e `scripts/comfyui-local/setup-distrobox.sh` installavano anch'essi PyTorch da `cu124`: segnalato al coordinatore, corretti da un'altra PR prima di questa (`RS_TORCH_INDEX`, che ora legge anche `drappo-flux.sh`). Nella prova su CPU FLUX klein ha mancato il soggetto di il-drappo (uno stendardo bianco appeso sopra una corsa, non il drappo dipinto come oggetto): è un solo seme su CPU, con prompt scritti per SDXL, e non decide la D2. Corrette anche due affermazioni fatte al DM nel thread: FLUX.2 [dev] (64 GB) non entra intero in una L40S da 48 GB, e Qwen-Image non entra nelle GPU da 16 GB di Kaggle.
+
+### MS-0183 · 2026-11-18 · La scuola di tutti gli incantesimi delle liste PF1e
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** generatore talenti incantesimi scuole spell-focus pf1e prd ricontrollo
+- **Origine:** riga del 2026-11-18 «ADR-0126, ricontrollo di Incantesimi focalizzati» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha chiesto il 18/11 di ricontrollare #468 e #470. Cancelli e impronta erano verdi; il difetto rimasto era quello dichiarato nella #468: 912 voci su 8548 delle liste PF1e senza scuola. Su 945 PNG a classi, 693 incantesimi su 5553 restavano fuori dal conto, 168 blocchi sceglievano la scuola su una parte sola e 59 perdevano il talento. Ora `[scuole]` sta anche in `liste_incantesimi.toml` del PF1e, 1536 incantesimi dal PRD: 0 senza scuola e 0 blocchi parziali. Incantesimi focalizzati passa da 621 a 665, tutti con la scuola: tornano i 44 che l'alchimista perdeva.
+- **Trovato nel repo:** `plans/esperimenti/sistemi-plugin-2026-11-07/estrai_prd_pf1e.py` (`liste_incantesimi`) · `scripts/genera_creatura.py` (`_scuole_per_nome`) · `scripts/tests/test_talenti.py` (`Focalizzati`)
+- **Solo qui:** fra SRD 3.5 e PRD i 598 nomi comuni hanno la stessa scuola, per questo la tabella di ricerca è una sola per i due sistemi. I 5 incantesimi «universal» non danno scuola. L'impronta delle 720 creature non cambia: i PNG PF1e a classi non ci sono dentro.
+
+### MS-0184 · 2026-11-18 · RICERCA-TOOL-LGM-2026 §3.1: la carta del cielo passa dal 30 Mirtul al 30 Flamerule
 
 - **Data:** 2026-11-18
 - **PR:** —
@@ -1886,5 +2092,5 @@ repo scritto con altre parole.
 - **Origine:** riga del 2026-11-18 «§3.1, ricontrollo della carta del cielo chiesto dal DM» in `plans/CHANGELOG.md`
 - **Testo:** Jfs, 2026-11-18: «ricontrolla se ci sono errori e fixali». Il ricontrollo ha trovato che i file di ARC-09 dicono «fine Mirtul» per il Giorno 30, mentre la decisione del DM del 2026-07-12 fissa Giorno di Marcia 1 = 1 Flamerule. Sulla card Jfs ha scelto «30 Flamerule: rifaccio la carta». Carta rifatta: 2000-07-31 00:05:45 UT a longitudine 0, stella-chiave HIP 102098 allo zenit a latitudine 45,281.
 - **Trovato nel repo:** `09_…/Immagini-Handout/carta-del-cielo/PROVENIENZA.txt` · handout 7 in `Arco-Post-Hammerfist-HANDOUTS.md` · A4 in `Arco-Post-Hammerfist-DOSSIER-DELLE-PISTE.md`
-- **Solo qui:** vicino all'ascensione retta giusta non c'è una stella alla declinazione di prima (38,9°): per questo cambiano anche la latitudine e il parallelo, che ora passa per l'angolo ovest del Sigillo e non più per l'Anello. I «circa nove gradi» del 22 del mese restano giusti: otto notti più il grado e mezzo che manca a mezzanotte esatta. Il primo lancio di Stellarium dopo aver copiato una cultura del cielo nuova differisce dai successivi di un livello di grigio in circa 1800 pixel, quasi tutti fuori dall'orizzonte; i quattro lanci dopo sono identici. Gli altri «Mirtul» di ARC-09 (HOOKS, INTEGRATION-MASTER, Cerimonia, Tempestas) non sono toccati qui: li prende il thread della coerenza della storia.
+- **Solo qui:** la voce è nata MS-0166 ed è diventata MS-0184 al riallineo su main 4588bc5f. Vicino all'ascensione retta giusta non c'è una stella alla declinazione di prima (38,9°): per questo cambiano anche la latitudine e il parallelo, che ora passa per l'angolo ovest del Sigillo e non più per l'Anello. I «circa nove gradi» del 22 del mese restano giusti: otto notti più il grado e mezzo che manca a mezzanotte esatta. Il primo lancio di Stellarium dopo aver copiato una cultura del cielo nuova differisce dai successivi di un livello di grigio in circa 1800 pixel, quasi tutti fuori dall'orizzonte; i quattro lanci dopo sono identici. Gli altri «Mirtul» di ARC-09 (HOOKS, INTEGRATION-MASTER, Cerimonia, Tempestas) non sono toccati qui: li prende il thread della coerenza della storia.
 

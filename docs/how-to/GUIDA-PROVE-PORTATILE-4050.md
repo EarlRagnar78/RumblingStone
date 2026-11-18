@@ -290,8 +290,14 @@ dire se ci sta, non questa stima.
 **Requisiti.** Il box `comfyui`, come per le immagini in posa (se non c'è,
 `scripts/comfyui-local/setup-distrobox.sh`). La cartella di lavoro è la stessa
 di `immagini.sh` (`~/rumblingstone-prove-4050/immagini-lavoro/`): stesso
-ComfyUI al commit `0df1646`, stesso venv. In più circa 8,3 GB di pesi, che lo
-script scarica da Hugging Face e controlla contro lo sha256 pubblicato.
+venv, ma un clone suo di ComfyUI (`ComfyUI-flux`, allo stesso commit
+`0df1646`), così le due prove si possono lanciare in qualunque ordine. In più
+circa 8,3 GB di pesi, che lo script scarica da Hugging Face e controlla contro
+lo sha256 pubblicato. Se il venv non c'è ancora, lo script installa PyTorch
+dall'indice `cu126`; se trova un PyTorch più vecchio della 2.8 (quello
+dell'indice `cu124` è il 2.6) lo dice e scrive come aggiornarlo, perché sotto
+la 2.8 ComfyUI gestisce la VRAM alla vecchia maniera. La versione usata
+finisce in `riepilogo.json`.
 
 **Passi.**
 
@@ -460,7 +466,9 @@ nell'ADR della prova:
 
 | Sintomo | Cosa fare |
 |---|---|
-| `distrobox enter` resta appeso su «host's nvidia integration» | È noto sull'ASUS: `box_pronto` aspetta tre minuti e prova lo stesso. Se non parte, `podman logs llm-locale \| tail` (o `comfyui`). |
+| `distrobox enter` resta appeso su «host's nvidia integration» | È noto sull'ASUS: il kit accende il box con `podman start` e legge il log a intervalli (`box_avvia`, cinque minuti al massimo: `RS_BOX_ATTESA`), poi entra lo stesso. Se non parte, `podman logs llm-locale \| tail` (o `comfyui`). |
+| `verifica.md`: «ha lavorato un'altra scheda» sulla trascrizione | Vulkan ha scelto la scheda integrata: la memoria della NVIDIA non è salita mentre whisper girava. Guarda `trascrizione-gpu/dispositivo.txt` e `vram-durante.txt` e carica l'archivio lo stesso: è un risultato. |
+| Su Windows lo script mostra lettere storpiate | Hai una copia vecchia di `installa-windows.ps1`: `git pull` (il file ora ha il BOM che Windows PowerShell 5.1 vuole). |
 | `Ollama non risponde su 11434` | Il terminale A con `start.sh` non è acceso o si è chiuso. |
 | Il 7B è lento come una CPU | Guarda `gpu.txt`: se la memoria usata è sotto 1 GB la GPU non è passata nel box. Riavvia il box: `podman restart llm-locale`. |
 | `CUDA out of memory` nelle immagini | Prima `RS_VLM_DEVICE=cpu`, poi `RS_COMFY_ARGS="--novram"`. Lo dici nel riepilogo. |

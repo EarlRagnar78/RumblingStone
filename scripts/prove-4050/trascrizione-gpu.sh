@@ -73,6 +73,13 @@ nel_box "$BOX" bash -lc "
 " 2>&1 | tee "$DEST/compila.log"
 
 echo "==> 3/4 trascrizione (-l it -mc 0)"
+# Il portatile ha due schede: Vulkan può scegliere quella integrata e il log le elenca tutte e due.
+# La prova che ha lavorato la NVIDIA è la sua memoria che sale mentre whisper gira.
+vram_ora() { { nvidia-smi --query-gpu=memory.used --format=csv,noheader,nounits 2>/dev/null || true; } | head -1 | tr -cd "0-9"; }
+vram_prima=$(vram_ora); : > "$DEST/vram-durante.txt"
+( while :; do vram_ora >> "$DEST/vram-durante.txt"; echo >> "$DEST/vram-durante.txt"; sleep 2; done ) &
+CAMPIONA=$!
+trap 'kill "$CAMPIONA" 2>/dev/null || true' EXIT
 t0=$(date +%s.%N)
 nel_box "$BOX" bash -lc "
   cd '$LAVORO'
@@ -80,7 +87,9 @@ nel_box "$BOX" bash -lc "
     -l it -mc 0 -f fleurs.wav -otxt -of '$DEST/grezza'
 " > "$DEST/whisper.log" 2>&1 || { echo "ERRORE: whisper-cli è uscito con errore, vedi $DEST/whisper.log" >&2; }
 t1=$(date +%s.%N)
+kill "$CAMPIONA" 2>/dev/null || true
 gpu_foto trascrizione-gpu "dopo"
+vram_picco=$(grep -E '^[0-9]+$' "$DEST/vram-durante.txt" | sort -n | tail -1 || true)
 
 echo "==> 4/4 esito"
 secondi=$(python3 -c "print(round($t1 - $t0, 1))")
@@ -91,6 +100,8 @@ grep -iE 'ggml_vulkan: [0-9]|ggml_cuda_init|Device [0-9]|using .* backend|NVIDIA
 esito trascrizione-gpu secondi "$secondi"
 esito trascrizione-gpu secondi_audio "$audio"
 esito trascrizione-gpu volte_tempo_reale "$(python3 -c "s=$secondi; a=float('${audio:-0}' or 0); print(round(a/s, 1) if s else 0)")"
+esito trascrizione-gpu vram_prima_mib "${vram_prima:-}"
+esito trascrizione-gpu vram_picco_mib "${vram_picco:-}"
 esito trascrizione-gpu dispositivo "$(head -1 "$DEST/dispositivo.txt" 2>/dev/null || echo '?')"
 # La misura delle parole è quella della #424: se lo script c'è (PR unita), la faccio qui
 if python3 "$RADICE/scripts/transcribe_session.py" misura --help >/dev/null 2>&1; then

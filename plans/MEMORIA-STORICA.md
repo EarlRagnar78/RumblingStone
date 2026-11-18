@@ -1876,3 +1876,15 @@ repo scritto con altre parole.
 - **Testo:** dopo la #468 (MS-0163) il conto di ogni blocco senza incantesimi diceva «niente Incantesimi focalizzati», anche quando il ruolo non l'avrebbe mai preso. Il coordinatore ha visto due rossi nuovi in `impronte.py --confronta` (genera_creatura_gs7 e gs14): la sola differenza con ea63a192 era quella riga. Ora `applica_talenti` rifà la scelta senza esclusioni, su copie dello stato e del generatore casuale, e scrive la nota solo se la scelta senza esclusioni avrebbe preso il talento.
 - **Trovato nel repo:** `scripts/genera_creatura.py` (`applica_talenti`) · `scripts/tests/test_talenti.py` (`Focalizzati`)
 - **Solo qui:** sull'impronta delle 720 creature 484 note tolte e 156 restano, e null'altro cambia; `impronte.py --confronta` torna ai 3 rossi di prima (suggest_encounter, conformita_statblocchi, derive_statblocks).
+
+### MS-0166 · 2026-11-18 · RICERCA-TOOL-LGM-2026 §3.1: la carta del cielo passa dal 30 Mirtul al 30 Flamerule
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** ADR-0005 ADR-0019
+- **Temi:** arc09 handout immagini calendario canone
+- **Origine:** riga del 2026-11-18 «§3.1, ricontrollo della carta del cielo chiesto dal DM» in `plans/CHANGELOG.md`
+- **Testo:** Jfs, 2026-11-18: «ricontrolla se ci sono errori e fixali». Il ricontrollo ha trovato che i file di ARC-09 dicono «fine Mirtul» per il Giorno 30, mentre la decisione del DM del 2026-07-12 fissa Giorno di Marcia 1 = 1 Flamerule. Sulla card Jfs ha scelto «30 Flamerule: rifaccio la carta». Carta rifatta: 2000-07-31 00:05:45 UT a longitudine 0, stella-chiave HIP 102098 allo zenit a latitudine 45,281.
+- **Trovato nel repo:** `09_…/Immagini-Handout/carta-del-cielo/PROVENIENZA.txt` · handout 7 in `Arco-Post-Hammerfist-HANDOUTS.md` · A4 in `Arco-Post-Hammerfist-DOSSIER-DELLE-PISTE.md`
+- **Solo qui:** vicino all'ascensione retta giusta non c'è una stella alla declinazione di prima (38,9°): per questo cambiano anche la latitudine e il parallelo, che ora passa per l'angolo ovest del Sigillo e non più per l'Anello. I «circa nove gradi» del 22 del mese restano giusti: otto notti più il grado e mezzo che manca a mezzanotte esatta. Il primo lancio di Stellarium dopo aver copiato una cultura del cielo nuova differisce dai successivi di un livello di grigio in circa 1800 pixel, quasi tutti fuori dall'orizzonte; i quattro lanci dopo sono identici. Gli altri «Mirtul» di ARC-09 (HOOKS, INTEGRATION-MASTER, Cerimonia, Tempestas) non sono toccati qui: li prende il thread della coerenza della storia.
+

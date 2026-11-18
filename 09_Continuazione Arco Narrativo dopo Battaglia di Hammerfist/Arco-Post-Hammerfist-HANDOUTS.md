@@ -202,17 +202,17 @@
 
 > **Quando darlo** (deciso dal DM il 2026-11-14, sulla card: «tutte e due»). La
 > carta sta addosso al mago della **squadra di piromanti drow** (tabella del
-> Cannath Vale, 56-70, `INCONTRI-VIAGGIO-CANNATH-VALE`), prima di fine Mirtul.
+> Cannath Vale, 56-70, `INCONTRI-VIAGGIO-CANNATH-VALE`), prima di fine Flamerule.
 > La squadra è una scena fissa fra il Day 22 e il 26 sulla strada che il gruppo
 > fa davvero: Witchwood se va alla Foresta Sacra, Vale centrale se Artemis va
 > solo verso nord [DM 2026-11-14, dossier delle piste §13 S1].
 > Se i PG non lo incontrano o non lo perquisiscono, **Sethrax** ne dà una copia
 > quando si smaschera al Torneo, come indizio gratuito sull'arco della Torre
-> (`P2B-Torneo-DAUTH-SUBQUEST-Artemis` §4.1): arriva dopo il 30 Mirtul, quindi
+> (`P2B-Torneo-DAUTH-SUBQUEST-Artemis` §4.1): arriva dopo il 30 Flamerule, quindi
 > la carta dice dove la Torre **è già andata**.
 > Un foglio rotondo di pelle sottile, inchiostro bruno, nessuna firma.
 
-![Carta del cielo di Zalkatar: cielo di mezzanotte visto dall'alto, con il meridiano nord-sud, dieci costellazioni con i loro nomi, una stella cerchiata al centro esatto, nel Sigillo, e un cerchio più grande che passa per quella stella e per la stella più luminosa dell'Anello](Immagini-Handout/carta-del-cielo/carta-del-cielo-zalkatar-stampa.png)
+![Carta del cielo di Zalkatar: cielo di mezzanotte visto dall'alto, con il meridiano nord-sud, nove costellazioni con i loro nomi, una stella cerchiata al centro esatto, in cima al Sigillo, e un cerchio più grande che passa per quella stella e per l'angolo ovest del Sigillo](Immagini-Handout/carta-del-cielo/carta-del-cielo-zalkatar-stampa.png)
 
 > *Le stelle sono puntini d'inchiostro, i nomi in Comune in una grafia piccola e
 > diritta. Una riga taglia il cerchio da nord a sud. Al centro, dove la riga
@@ -226,9 +226,11 @@
 >   cerchiata è la più alta del **Sigillo** ed è esattamente lì.
 > - **Lettura 1, la notte** (nessun tiro: basta guardare il cielo vero a
 >   mezzanotte). Il cielo gira di un grado per notte: ogni notte il Sigillo
->   arriva al meridiano quattro minuti prima. Il 22 Mirtul a mezzanotte è ancora
+>   arriva al meridiano quattro minuti prima. Il 22 Flamerule a mezzanotte è ancora
 >   a est della riga, di circa nove gradi; sulla riga ci arriva a mezzanotte il
->   **30 Mirtul**. È la notte in cui «la torre cammina». Una prova di
+>   **30 Flamerule**, il Giorno di Marcia 30 (mese deciso dal DM il 2026-11-18,
+>   sull'ancora del calendario del 2026-07-12). È la notte in cui «la torre
+>   cammina». Una prova di
 >   Conoscenze (geografia) o Sopravvivenza CD 15 conta le notti a colpo d'occhio.
 > - **Lettura 2, il luogo**. Una stella passa esattamente sopra la testa solo
 >   alla latitudine uguale alla sua altezza in cielo: la carta è disegnata **dal
@@ -241,9 +243,9 @@
 >   La carta non dipende da questa scelta: se cambia, cambia solo questa riga.
 > - **Il cerchio grande** è il parallelo del Sigillo: le stelle che ci stanno sopra
 >   passano tutte sopra la testa di chi è nel luogo del passo, una dopo l'altra.
->   Ci sta sopra anche la stella più luminosa dell'**Anello**, che si vede bene
->   anche in una notte velata: per un PG che misura, è la conferma che il cerchio
->   non è un ornamento (Conoscenze (geografia) CD 15 lo capisce a colpo d'occhio).
+>   Ci sta sopra anche la stella all'angolo ovest del **Sigillo**, la seconda che
+>   passa allo zenit quella notte: per un PG che misura, è la conferma che il
+>   cerchio non è un ornamento (Conoscenze (geografia) CD 15 lo capisce a colpo d'occhio).
 > - **Nome**: «il Sigillo si chiude sulla Torre». È il calcolo del rito di
 >   spostamento di Zalkatar, la stessa vibrazione che sente l'Anello di Artemis.
 > - **Perché non si falsifica**: il cielo è lo stesso per tutti. Una copia con
@@ -253,7 +255,8 @@
 > **Nota DM: stampa e provenienza**. Due versioni: inchiostro su carta
 > (`carta-del-cielo-zalkatar-stampa.png`, da stampare) e cielo notturno
 > (`carta-del-cielo-zalkatar.png`, da mostrare a schermo). Le costellazioni hanno
-> nomi del repo, non di Faerûn (ADR-0005); come si rifà l'immagine sta in
+> nomi del repo, non di Faerûn (ADR-0005). Sulla carta le figure sono nove: a
+> quell'ora il Ragno è già tramontato. Come si rifà l'immagine sta in
 > `Immagini-Handout/carta-del-cielo/PROVENIENZA.txt`.
 
 ---

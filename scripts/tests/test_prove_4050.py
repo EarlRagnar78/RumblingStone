@@ -30,13 +30,13 @@ class TestScript(unittest.TestCase):
         for s in script:
             r = subprocess.run(["bash", "-n", str(s)], capture_output=True, text=True)
             self.assertEqual(r.returncode, 0, f"{s.name}: {r.stderr}")
-            if s.name != "comune.sh":
+            if s.name not in ("comune.sh", "ospite.sh"):
                 self.assertTrue(s.stat().st_mode & 0o111, f"{s.name} non è eseguibile")
 
     def test_la_guida_nomina_ogni_script(self):
         testo = GUIDA.read_text(encoding="utf-8")
         for s in PROVE.glob("*.sh"):
-            if s.name != "comune.sh":
+            if s.name not in ("comune.sh", "ospite.sh"):  # librerie, non prove
                 self.assertIn(f"scripts/prove-4050/{s.name}", testo)
 
     def test_pipeline_immagini_compila(self):
@@ -241,6 +241,172 @@ class TestSchedeVincolate(unittest.TestCase):
                 self.assertEqual(len(_FintoTattiche.chiamate), 4)   # tutto dalla cache
         finally:
             server.shutdown()
+
+
+OS_RELEASE = {
+    "bazzite": 'NAME="Bazzite"\nID=bazzite\nID_LIKE="fedora"\nVERSION_ID="43"\n',
+    "debian": 'PRETTY_NAME="Debian GNU/Linux 13 (trixie)"\nID=debian\nVERSION_ID="13"\n',
+    "cachyos": 'NAME="CachyOS Linux"\nID=cachyos\nID_LIKE=arch\nBUILD_ID=rolling\n',
+    "arch": 'NAME="EndeavourOS"\nID=endeavouros\nID_LIKE="arch"\n',
+    "ubuntu": 'NAME="Ubuntu"\nID=ubuntu\nID_LIKE=debian\nVERSION_ID="24.04"\n',
+}
+
+
+def _bash(script: str, os_release: str, wsl: bool = False, extra: dict | None = None):
+    import os
+    with tempfile.TemporaryDirectory() as t:
+        f = Path(t) / "os-release"
+        f.write_text(os_release)
+        v = Path(t) / "version"
+        v.write_text("Linux version 6.6 (microsoft-standard-WSL2)" if wsl else "Linux version 6.17")
+        env = {k: x for k, x in os.environ.items() if k != "RS_SENZA_BOX"}
+        env.update(RS_OS_RELEASE=str(f), RS_PROC_VERSION=str(v), PROVE_DIR=t, **(extra or {}))
+        return subprocess.run(["bash", "-c", script], capture_output=True, text=True, env=env)
+
+
+class TestKitMultiSistema(unittest.TestCase):
+    """ADR-0136: lo stesso kit su Bazzite, Debian 13, CachyOS e WSL2 (Windows)."""
+
+    def test_sistema_e_modo(self):
+        attesi = {"bazzite": "bazzite box", "debian": "debian box", "cachyos": "cachyos box",
+                  "arch": "arch box", "ubuntu": "ubuntu box"}
+        for nome, testo in OS_RELEASE.items():
+            r = _bash(f'. "{PROVE}/ospite.sh"; echo "$(rs_sistema) $(rs_modo)"', testo)
+            self.assertEqual(r.stdout.strip(), attesi[nome], nome)
+        r = _bash(f'. "{PROVE}/ospite.sh"; echo "$(rs_sistema) $(rs_modo)"', OS_RELEASE["ubuntu"], wsl=True)
+        self.assertEqual(r.stdout.strip(), "wsl diretto")
+        r = _bash(f'. "{PROVE}/ospite.sh"; echo "$(rs_modo)"; nel_box qualunque echo dentro',
+                  OS_RELEASE["debian"], extra={"RS_SENZA_BOX": "1"})
+        self.assertEqual(r.stdout.split(), ["diretto", "dentro"])
+
+    def test_installa_per_sistema(self):
+        attesi = {"bazzite": ["niente da installare", "distrobox create --name comfyui"],
+                  "debian": ["apt-get install -y distrobox podman", "fedora-toolbox:43"],
+                  "cachyos": ["pacman -S --needed --noconfirm distrobox podman", "chwd -a"],
+                  "arch": ["pacman -S", "nvidia-open"]}
+        for nome, frasi in attesi.items():
+            r = _bash(f'"{PROVE}/installa.sh" --mostra --driver', OS_RELEASE[nome])
+            self.assertEqual(r.returncode, 0, f"{nome}: {r.stderr}")
+            for frase in frasi:
+                self.assertIn(frase, r.stdout, nome)
+        r = _bash(f'"{PROVE}/installa.sh" --mostra', OS_RELEASE["ubuntu"], wsl=True)
+        self.assertEqual(r.returncode, 0, r.stderr)
+        self.assertIn("ollama.com/install.sh", r.stdout)
+        self.assertIn("nvidia-cuda-toolkit", r.stdout)
+        self.assertIn("modo diretto: nessun box", r.stdout)
+        self.assertNotIn("distrobox create", r.stdout)
+        r = _bash(f'"{PROVE}/installa.sh" --mostra', 'ID=gentoo\n')
+        self.assertEqual(r.returncode, 3)
+
+    def test_manifesto_script_e_guida(self):
+        m = json.loads((PROVE / "prove.json").read_text(encoding="utf-8"))
+        ids = [p["id"] for p in m["prove"]]
+        self.assertEqual(len(ids), len(set(ids)))
+        guida = GUIDA.read_text(encoding="utf-8")
+        sys.path.insert(0, str(PROVE))
+        import verifica
+        for p in m["prove"]:
+            s = PROVE / p["script"]
+            self.assertTrue(s.exists(), p["script"])
+            self.assertIn(p["id"], verifica.CONTROLLI)
+            self.assertIn(f"scripts/prove-4050/{p['script']}", guida)
+        for f in ("kit.sh", "installa.sh", "installa-windows.ps1", "verifica.py"):
+            self.assertIn(f"scripts/prove-4050/{f}", guida)
+
+    def test_piano_senza_risultati(self):
+        r = _bash(f'"{PROVE}/kit.sh" piano', OS_RELEASE["debian"])
+        self.assertEqual(r.returncode, 0, r.stderr)
+        for p in json.loads((PROVE / "prove.json").read_text(encoding="utf-8"))["prove"]:
+            self.assertRegex(r.stdout, rf"{p['id']}\s+\d+\s+non fatta")
+
+
+class TestVerifica(unittest.TestCase):
+    """verifica.py su risultati finti: cosa conta come ok, ko, da completare, non fatta."""
+
+    def setUp(self):
+        sys.path.insert(0, str(PROVE))
+        import verifica
+        self.v = verifica
+        self.m = json.loads((PROVE / "prove.json").read_text(encoding="utf-8"))
+        self.t = tempfile.TemporaryDirectory()
+        self.r = Path(self.t.name)
+
+    def tearDown(self):
+        self.t.cleanup()
+
+    def scrivi(self, rel: str, testo) -> None:
+        f = self.r / rel
+        f.parent.mkdir(parents=True, exist_ok=True)
+        f.write_text(testo if isinstance(testo, str) else json.dumps(testo), encoding="utf-8")
+
+    GPU = "## prima\nname, memory.used [MiB], memory.total [MiB]\nNVIDIA GeForce RTX 4050 Laptop GPU, 5200 MiB, 6141 MiB, 90 %, 70\n"
+
+    def test_tutto_non_fatto(self):
+        e = self.v.verifica(self.r, self.m)
+        self.assertTrue(all(x["stato"] == "non fatta" for x in e.values()))
+
+    def test_lettore_completo_e_interrotto(self):
+        self.scrivi("lettore-coerenza/esito.txt", "modello: qwen2.5:7b\ndomande: 3\nminuti: 4\n")
+        self.scrivi("lettore-coerenza/gpu.txt", self.GPU)
+        self.scrivi("lettore-coerenza/ollama-ps.json", {"models": [{"size": 100, "size_vram": 100}]})
+        self.scrivi("lettore-coerenza/risposte-qwen2.5-7b.json", {"a": "SÌ", "b": "NO", "c": "NO"})
+        e = self.v.verifica(self.r, self.m)["lettore-coerenza"]
+        self.assertEqual(e["stato"], "ok", e)
+        self.assertEqual(e["numeri"]["in_vram"], 1.0)
+        self.scrivi("lettore-coerenza/risposte-qwen2.5-7b.json", {"a": "SÌ"})
+        self.assertEqual(self.v.verifica(self.r, self.m)["lettore-coerenza"]["stato"], "ko")
+
+    def test_trascrizione_sulla_cpu_e_ko(self):
+        base = "trascrizione-gpu/"
+        self.scrivi(base + "esito.txt", "backend: vulkan\nsecondi: 60\nvolte_tempo_reale: 10.8\n")
+        for f in ("grezza.txt", "riferimento.txt", "whisper.log"):
+            self.scrivi(base + f, "le autorità locali")
+        self.scrivi(base + "dispositivo.txt", "ggml_vulkan: 0 = NVIDIA GeForce RTX 4050 Laptop GPU\n")
+        self.assertEqual(self.v.verifica(self.r, self.m)["trascrizione-gpu"]["stato"], "ok")
+        self.scrivi(base + "misura.txt", '{"errori": 23, "wer": 0.025}')
+        self.assertEqual(self.v.verifica(self.r, self.m)["trascrizione-gpu"]["numeri"]["wer"], 0.025)
+        self.assertEqual(self.v.verifica(self.r, self.m)["trascrizione-gpu"]["stato"], "ok")
+        self.scrivi(base + "misura.txt", '{"errori": 87, "wer": 0.086}')
+        self.assertEqual(self.v.verifica(self.r, self.m)["trascrizione-gpu"]["stato"], "ko")
+        self.scrivi(base + "misura.txt", '{"wer": 0.02}')
+        self.scrivi(base + "dispositivo.txt", "no GPU found\n")
+        e = self.v.verifica(self.r, self.m)["trascrizione-gpu"]
+        self.assertEqual(e["stato"], "ko")
+        self.assertIn("CPU", e["note"][0])
+
+    def test_drappo_e_codice_del_kit(self):
+        self.scrivi("drappo-flux/esito.txt", "tavole: il-drappo\nsemi: 2\n")
+        self.scrivi("drappo-flux/confronto.html", "<html>")
+        self.scrivi("drappo-flux/flux/seme-0/il-drappo.png", "png")
+        self.scrivi("drappo-flux/flux/seme-1/il-drappo.png", "png")
+        righe = [{"id": "il-drappo", "seme": s, "esito": "ok", "vram_picco_mib": 5800,
+                  "ram_comfyui_picco_mib": 9000, "file": f"flux/seme-{s}/il-drappo.png"} for s in (0, 1)]
+        self.scrivi("drappo-flux/riepilogo.json", {"immagini": righe, "cpu": False, "minuti_totali": 9})
+        e = self.v.verifica(self.r, self.m)["drappo-flux"]
+        self.assertEqual(e["stato"], "ok", e)
+        self.assertEqual(e["numeri"]["vram_picco_mib"], 5800)
+        self.scrivi("kit.tsv", "drappo-flux\t1\t9\t22:00:00\n")
+        self.assertEqual(self.v.verifica(self.r, self.m)["drappo-flux"]["stato"], "ko")
+
+    def test_prosa_da_completare(self):
+        self.scrivi("prosa/esito.txt", "modello: gemma4:12b-it-qat\nminuti: 80\n")
+        self.scrivi("prosa/gpu.txt", self.GPU)
+        self.scrivi("prosa/L-gemma412bitqat-1/S02.md", "testo")
+        self.scrivi("prosa/foglio-gemma412bitqat-1.md", "Preferito: 1\nPreferito:\n")
+        self.assertEqual(self.v.verifica(self.r, self.m)["prosa"]["stato"], "da completare")
+        self.scrivi("prosa/foglio-gemma412bitqat-1.md", "Preferito: 1\nPreferito: =\n")
+        self.assertEqual(self.v.verifica(self.r, self.m)["prosa"]["stato"], "ok")
+
+    def test_schede_e_main(self):
+        s = {"schede": 2, "ripetizioni": 1, "migliora": False,
+             "libero": {"risposte": 2, "valide": 2}, "vincolato": {"risposte": 1, "valide": 1}}
+        self.scrivi("schede-vincolate/esito.txt", "modello: qwen2.5:7b\n")
+        self.scrivi("schede-vincolate/gpu.txt", self.GPU)
+        self.scrivi("schede-vincolate/risposte.json", {})
+        self.scrivi("schede-vincolate/misure.json", {"sintesi": s, "righe": []})
+        self.assertEqual(self.v.verifica(self.r, self.m)["schede-vincolate"]["stato"], "ko")
+        self.assertEqual(self.v.main([str(self.r), "--quiet"]), 1)
+        self.assertTrue((self.r / "verifica.md").exists())
 
 
 if __name__ == "__main__":

@@ -177,6 +177,13 @@
       ],
       "stato": "in-volo",
       "dove": "PR #466 aperta in bozza il 2026-11-17: tecnica 3 di Document AI (decodifica vincolata delle Tattiche), prova per il portatile 4050 in scripts/prove-4050/schede-vincolate.sh e plans/esperimenti/decodifica-vincolata-2026-11-17/. Resta in volo fino alla misura sulla 4050"
+    },
+    {
+      "ref": [
+        "origin/claude/project-thread-dk6u1i"
+      ],
+      "stato": "in-volo",
+      "dove": "PR del kit unico delle prove 4050, aperta in bozza il 2026-11-17 (ADR-0136): scripts/prove-4050/ (kit.sh, installa.sh, installa-windows.ps1, ospite.sh, prove.json, verifica.py, trascrizione-gpu.sh). Sopra la #466; entra dopo #465, #464, #466"
     }
   ],
   "file": [

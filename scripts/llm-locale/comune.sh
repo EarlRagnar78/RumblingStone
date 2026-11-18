@@ -13,6 +13,9 @@ DEST="${LLM_DIR:-$HERE/dati}"
 PORTA="${LLM_PORTA:-11434}"
 CTX="${LLM_CTX:-32768}"
 URL="http://127.0.0.1:$PORTA/v1"
+# Su WSL2 (o con RS_SENZA_BOX=1) Ollama sta sul sistema stesso, senza box (ADR-0136).
+# shellcheck source=../prove-4050/ospite.sh
+. "$HERE/../prove-4050/ospite.sh"
 
 spazio_libero() {
   local dir="$1" serve="$2" su
@@ -51,6 +54,7 @@ consiglia() {
 # acceso, enter non aspetta più niente.
 box_pronto() {
   local stato t0 i
+  [ "$(rs_modo)" = diretto ] && return 0
   stato=$(podman inspect -f '{{.State.Running}}' "$BOX" 2>/dev/null || echo assente)
   [ "$stato" = true ] && return 0
   [ "$stato" = assente ] && { echo "ERRORE: il box '$BOX' non c'è. Lancia setup-distrobox.sh" >&2; return 1; }

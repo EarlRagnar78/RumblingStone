@@ -1,0 +1,82 @@
+{
+  "_cos_e": "Il kit delle prove sulla RTX 4050 (ADR-0136): l'ordine in cui kit.sh le lancia, cosa aspetta ognuna e cosa verifica.py controlla nei risultati. Una prova nuova si aggiunge qui, con lo script in scripts/prove-4050/ e la sua sezione nella guida docs/how-to/GUIDA-PROVE-PORTATILE-4050.md.",
+  "prove": [
+    {
+      "id": "controlla",
+      "script": "controlla.sh",
+      "uscita": ".",
+      "thread": "tutti",
+      "server_ctx": null,
+      "box": null,
+      "minuti_stimati": 1,
+      "interattiva": false,
+      "file_attesi": ["macchina.txt"]
+    },
+    {
+      "id": "lettore-coerenza",
+      "script": "lettore-coerenza.sh",
+      "uscita": "lettore-coerenza",
+      "thread": "Verificare la coerenza della storia",
+      "server_ctx": 4096,
+      "box": "llm-locale",
+      "minuti_stimati": 20,
+      "interattiva": false,
+      "file_attesi": ["esito.txt", "gpu.txt", "ollama-ps.json"]
+    },
+    {
+      "id": "schede-vincolate",
+      "script": "schede-vincolate.sh",
+      "uscita": "schede-vincolate",
+      "thread": "Applicare Document AI e Explainable AI",
+      "server_ctx": 8192,
+      "box": "llm-locale",
+      "minuti_stimati": 30,
+      "interattiva": false,
+      "file_attesi": ["esito.txt", "gpu.txt", "misure.json", "risposte.json"]
+    },
+    {
+      "id": "trascrizione-gpu",
+      "script": "trascrizione-gpu.sh",
+      "uscita": "trascrizione-gpu",
+      "thread": "Provare la trascrizione locale della serata",
+      "server_ctx": null,
+      "box": "whisper",
+      "minuti_stimati": 25,
+      "interattiva": false,
+      "file_attesi": ["esito.txt", "grezza.txt", "riferimento.txt", "whisper.log", "dispositivo.txt"]
+    },
+    {
+      "id": "drappo-flux",
+      "script": "drappo-flux.sh",
+      "uscita": "drappo-flux",
+      "thread": "Scrivere lo script FLUX per il 4050",
+      "server_ctx": null,
+      "box": "comfyui",
+      "minuti_stimati": 60,
+      "interattiva": false,
+      "file_attesi": ["esito.txt", "riepilogo.json", "confronto.html"]
+    },
+    {
+      "id": "immagini",
+      "script": "immagini.sh",
+      "uscita": "immagini-gpu",
+      "thread": "Immagini dei personaggi in posa con l'AI",
+      "server_ctx": null,
+      "box": "comfyui",
+      "minuti_stimati": 150,
+      "interattiva": false,
+      "file_attesi": ["esito.txt", "riepilogo.json"]
+    },
+    {
+      "id": "prosa",
+      "script": "prosa.sh",
+      "uscita": "prosa",
+      "thread": "LLM locale per la prosa",
+      "server_ctx": 32768,
+      "box": "llm-locale",
+      "minuti_stimati": 90,
+      "interattiva": true,
+      "file_attesi": ["esito.txt", "gpu.txt"]
+    }
+  ]
+}

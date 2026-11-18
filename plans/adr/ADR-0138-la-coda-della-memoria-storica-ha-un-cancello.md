@@ -51,9 +51,17 @@ mani di chi risolve un thread e della routine del lunedì.
 - Thread risolti dal 2026-11-12 senza voce: 13 su 13, ora misurabili con un
   comando. La regola vale dal 2026-11-18: per quelli di prima il controllo
   non scatta (non si chiede a thread chiusi di riscrivere la loro storia).
-- Voci nate fuori da una PR: da 0 a 5 con la prima piega (MS-0167…MS-0171:
+- Voci nate fuori da una PR: da 0 a 5 con la prima piega (MS-0168…MS-0172:
   regola di merge del 12/11, decisioni su card, rilascio 1.1.0, metodo di
-  Document AI, questa scelta).
+  Document AI, questa scelta). Poi a 11 con la seconda piega (MS-0174…MS-0179),
+  chiesta dal DM lo stesso giorno: i 13 thread riletti per intero, messaggi,
+  card e scelte. Quattro avevano qualcosa che repo e file storico non
+  dicevano (immagini in posa, LLM locale, revisione dei bot, bug dei tag di
+  typst); negli altri nove ogni scelta su card era già in un ADR, nel
+  changelog dei piani o in una voce.
+- Alla prima prova vera la piega si è fermata su un file della coda scritto
+  da un altro thread senza la testa «### MS-????»: il cancello fa il suo
+  lavoro, e finché quel file non è corretto la piega del lunedì non passa.
 - **Cosa il cancello non vede.** Non parte da solo: se nessuno lo lancia
   non boccia niente. Non sa di una card chiusa dentro un thread ancora
   aperto. Non giudica se la voce dice tutto: controlla la forma e una

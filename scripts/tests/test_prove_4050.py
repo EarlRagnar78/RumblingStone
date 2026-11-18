@@ -410,6 +410,70 @@ class TestKitMultiSistema(unittest.TestCase):
             self.assertIn("non c'è", r.stderr)
             self.assertNotIn("ENTRATO", r.stdout)
 
+    def test_box_rimasto_a_meta_si_riconosce(self):
+        """2026-11-18: macchina spenta durante il primo avvio del box comfyui. installa lo rifà."""
+        casi = {  # log del box, StartedAt, a metà?
+            "finito": ("container_setup_done", "2026-11-18 23:40:00", False),
+            "interrotto": ("Setting up host's nvidia integration...", "2026-11-18 23:40:00", True),
+            "mai acceso": ("", "0001-01-01 00:00:00", True),
+            "log spento": ("", "2026-11-18 23:40:00", False),
+        }
+        for nome, (log, avviato, atteso) in casi.items():
+            podman = ('case "$1" in\n'
+                      '  container) exit 0 ;;\n'
+                      f'  logs) echo -n "{log}" ;;\n'
+                      f'  inspect) echo "{avviato}" ;;\n'
+                      'esac')
+            with tempfile.TemporaryDirectory() as t:
+                extra = self._podman_finto(Path(t), podman)
+                r = _bash(f'. "{PROVE}/ospite.sh"; box_a_meta comfyui && echo META || echo INTERO',
+                          OS_RELEASE["bazzite"], extra=extra)
+                self.assertEqual(r.stdout.strip(), "META" if atteso else "INTERO", nome)
+        with tempfile.TemporaryDirectory() as t:   # il box non c'è: niente da rifare
+            extra = self._podman_finto(Path(t), "exit 1")
+            r = _bash(f'. "{PROVE}/ospite.sh"; box_a_meta comfyui && echo META || echo INTERO',
+                      OS_RELEASE["bazzite"], extra=extra)
+            self.assertEqual(r.stdout.strip(), "INTERO")
+        testo = (PROVE / "installa.sh").read_text(encoding="utf-8")
+        self.assertLess(testo.index('box_a_meta "$b"'), testo.index("setup-distrobox.sh\"\n"))
+
+    def test_pulisci_chiede_conferma_e_lascia_i_dati(self):
+        """kit.sh pulisci toglie solo i box, e solo dopo un sì (o con --si)."""
+        podman = ('case "$1" in\n'
+                  '  container) [ "$3" = whisper ] && exit 1; exit 0 ;;\n'
+                  '  rm) echo "PODMAN-RM $*" ;;\n'
+                  'esac')
+        with tempfile.TemporaryDirectory() as t:
+            extra = self._podman_finto(Path(t), podman)
+            dati = Path(t) / "dati"
+            dati.mkdir()
+            (dati / "modello.gguf").write_text("x")
+            extra["LLM_DIR"] = str(dati)
+            kit = f'"{PROVE}/kit.sh"'
+            # senza terminale e senza --si non toglie niente
+            r = _bash(f"{kit} pulisci < /dev/null", OS_RELEASE["bazzite"], extra=extra)
+            self.assertEqual(r.returncode, 2, r.stderr)
+            self.assertNotIn("ENTRATO rm", r.stdout)
+            # con --si toglie i box che ci sono (whisper non c'è) e dice cosa resta
+            r = _bash(f"{kit} pulisci --si", OS_RELEASE["bazzite"], extra=extra)
+            self.assertEqual(r.returncode, 0, r.stderr)
+            self.assertIn("tolto: llm-locale", r.stdout)
+            self.assertIn("tolto: comfyui", r.stdout)
+            self.assertNotIn("tolto: whisper", r.stdout)
+            self.assertIn(str(dati), r.stdout)
+            self.assertTrue((dati / "modello.gguf").exists())
+            # un solo box, a scelta
+            r = _bash(f"{kit} pulisci --si comfyui", OS_RELEASE["bazzite"], extra=extra)
+            self.assertIn("tolto: comfyui", r.stdout)
+            self.assertNotIn("tolto: llm-locale", r.stdout)
+            # un nome che non è un box del kit non si tocca
+            r = _bash(f"{kit} pulisci --si fedora-mio", OS_RELEASE["bazzite"], extra=extra)
+            self.assertEqual(r.returncode, 2)
+        # su WSL2 non ci sono box
+        r = _bash(f'"{PROVE}/kit.sh" pulisci --si', OS_RELEASE["ubuntu"], wsl=True)
+        self.assertEqual(r.returncode, 0)
+        self.assertIn("non ci sono box", r.stdout)
+
     def test_script_windows_con_bom(self):
         """Windows PowerShell 5.1 legge un .ps1 senza BOM come ANSI e storpia le lettere accentate."""
         dati = (PROVE / "installa-windows.ps1").read_bytes()

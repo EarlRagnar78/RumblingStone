@@ -84,7 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
-| 2026-11-18 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Kit delle prove 4050, primo giro del DM sull'ASUS (ADR-0136): il kit è partito… | 🟡 messaggi che spiegano il fallimento di quel giro: 0 → 1; prove fallite prima di partire viste dalla verifica: 0 su 1 → 1 su 1; test nuovi 2. Che il terminale… |
+| 2026-11-18 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Kit delle prove 4050, primo giro del DM sull'ASUS (ADR-0136): il kit è partito… | 🟡 messaggi che spiegano il fallimento di quel giro: 0 → 1; prove fallite prima di partire viste dalla verifica: 0 su 1 → 1 su 1; comandi per ripartire pulito:… |
 | 2026-11-18 | RIPRESA-PR-ABBANDONATE | D2, collaudo dell'arte del Drappo: quattro difetti dello script trovati al rico… | ✅ corretti prima che la prova giri sulla 4050: (1) due delle tre Gemini di serie (tavola-la-ruota, il-drappo) non si aprivano con Pillow per il blocco C2PA olt… |
 | 2026-11-18 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Prove sulla RTX 4050, ricontrollo chiesto dal DM il 18/11: corretti gli errori… | 🟡 sette errori corretti, nessuno visto girare su una GPU: (1) `immagini.sh --profilo cpu`, il comando della guida per il profilo leggero, non poteva partire: C… |
 | 2026-11-18 | STATO-E-ORDINE | ADR-0138, il cancello della coda della memoria storica (richiesta del DM del 18… | ✅ voci nate fuori da una PR: 0 → 11; thread risolti senza voce ora misurabili (13 su 13 fra il 12 e il 17/11, prima della regola; dopo la rilettura 4 hanno una… |

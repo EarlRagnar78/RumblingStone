@@ -8,6 +8,7 @@
 #   kit.sh esegui ID [ID...]                lancia solo quelle
 #   kit.sh verifica [GIORNO]                controlla i risultati (verifica.py) → verifica.md
 #   kit.sh riporta [GIORNO]                 verifica, poi l'archivio da caricare nel thread
+#   kit.sh pulisci [--si] [BOX...]          toglie i box (chiede conferma); modelli e risultati restano
 #
 # Il server Ollama lo accende e lo spegne il kit, col contesto che vuole ogni prova
 # (server_ctx in prove.json). Se l'hai già acceso tu, il kit usa il tuo e lo lascia acceso.
@@ -105,6 +106,47 @@ print(f"\nTotale stimato: {sum(p['minuti_stimati'] for p in prove)} minuti (stim
 P
 }
 
+# pulisci [--si] [BOX...] — toglie i box del kit (tutti, o quelli nominati) dopo una conferma.
+# Non tocca niente fuori dai box: i modelli di Ollama (scripts/llm-locale/dati o LLM_DIR), i pesi
+# e i risultati in $PROVE_DIR restano dove sono, e un nuovo «installa» li ritrova.
+pulisci() {
+  local si=0 box risposta tutti="llm-locale comfyui whisper" scelti="" presenti=""
+  while [ $# -gt 0 ]; do
+    case "$1" in
+      --si) si=1 ;;
+      llm-locale|comfyui|whisper) scelti="$scelti $1" ;;
+      *) echo "uso: $0 pulisci [--si] [llm-locale] [comfyui] [whisper]" >&2; return 2 ;;
+    esac
+    shift
+  done
+  if [ "$(rs_modo)" = diretto ]; then
+    echo "Modo diretto (WSL2 o --senza-box): non ci sono box da togliere."
+    return 0
+  fi
+  for box in ${scelti:-$tutti}; do
+    podman container exists "$box" 2>/dev/null && presenti="$presenti $box"
+  done
+  if [ -z "$presenti" ]; then
+    echo "Nessun box da togliere (cercati: ${scelti:-$tutti}). Ora: $0 installa"
+    return 0
+  fi
+  echo "Tolgo questi box:$presenti"
+  echo "Restano dove sono: i modelli di Ollama (${LLM_DIR:-$RADICE/scripts/llm-locale/dati}),"
+  echo "i pesi e i risultati delle prove ($PROVE_DIR)."
+  if [ "$si" = 0 ]; then
+    [ -t 0 ] || { echo "ERRORE: serve una conferma. Da uno script: $0 pulisci --si" >&2; return 2; }
+    printf 'Confermi? Scrivi «si» e premi Invio: '
+    read -r risposta
+    case "$risposta" in si|sì|SI|Sì|s|S) ;; *) echo "Non ho tolto niente."; return 1 ;; esac
+  fi
+  ferma_server
+  for box in $presenti; do
+    if box_togli "$box"; then echo "    tolto: $box"
+    else echo "ERRORE: non riesco a togliere '$box'. Prova: podman rm -f $box" >&2; return 1; fi
+  done
+  echo "Fatto. Ora: $0 installa"
+}
+
 cmd="${1:-piano}"; shift || true
 case "$cmd" in
   installa) exec "$HERE/installa.sh" "$@" ;;
@@ -125,6 +167,7 @@ case "$cmd" in
     python3 "$HERE/verifica.py" "$RIS" ;;
   verifica) python3 "$HERE/verifica.py" "$PROVE_DIR/${1:-$GIORNO}" ;;
   riporta)  "$HERE/riporta.sh" "${1:-$GIORNO}" ;;
-  -h|--help|aiuto) sed -n '2,15p' "$0" | sed 's/^# \{0,1\}//' ;;
-  *) echo "comando sconosciuto: $cmd (installa, piano, tutte, esegui, verifica, riporta)" >&2; exit 2 ;;
+  pulisci)  pulisci "$@" ;;
+  -h|--help|aiuto) sed -n '2,16p' "$0" | sed 's/^# \{0,1\}//' ;;
+  *) echo "comando sconosciuto: $cmd (installa, piano, tutte, esegui, verifica, riporta, pulisci)" >&2; exit 2 ;;
 esac

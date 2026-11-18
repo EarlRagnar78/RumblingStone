@@ -8,6 +8,8 @@
 #   nel_box BOX COMANDO...    esegue COMANDO nel box, o direttamente in modo diretto
 #   box_c_e BOX               vero se il box esiste (sempre vero in modo diretto)
 #   box_avvia BOX             accende il box se è spento e aspetta la sua inizializzazione
+#   box_a_meta BOX            vero se il box c'è ma la sua inizializzazione non è mai finita
+#   box_togli BOX             toglie il box (i dati delle prove stanno fuori dai box)
 #
 # RS_OS_RELEASE e RS_PROC_VERSION servono solo ai test (simulano un altro sistema).
 
@@ -102,4 +104,24 @@ box_avvia() {
 box_c_e() {
   [ "$(rs_modo)" = diretto ] && return 0
   podman container exists "$1" 2>/dev/null
+}
+
+# box_a_meta BOX — vero se il box è stato creato ma la sua inizializzazione non è mai arrivata in
+# fondo (macchina spenta durante il primo avvio, 2026-11-18). Il segno è il log di distrobox, che
+# a ogni avvio riuscito scrive «container_setup_done». Un box mai acceso conta come a metà: rifarlo
+# costa niente. Un box acceso col log vuoto (driver dei log spento) non si giudica: resta com'è.
+box_a_meta() {
+  local box="$1" avviato log
+  [ "$(rs_modo)" = diretto ] && return 1
+  podman container exists "$box" 2>/dev/null || return 1
+  log=$(podman logs "$box" 2>&1 || true)
+  case "$log" in *container_setup_done*) return 1 ;; esac
+  avviato=$(podman inspect -f '{{.State.StartedAt}}' "$box" 2>/dev/null || echo "")
+  case "$avviato" in ""|0001-*) return 0 ;; esac
+  [ -n "$log" ]
+}
+
+# box_togli BOX — distrobox rm, e podman se distrobox non ci riesce (box rimasto a metà)
+box_togli() {
+  distrobox rm --force "$1" >/dev/null 2>&1 || podman rm -f "$1" >/dev/null 2>&1
 }

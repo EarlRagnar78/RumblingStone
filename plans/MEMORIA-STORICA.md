@@ -33,7 +33,7 @@ sola lettura). I filtri si sommano; maiuscole e accenti non contano.
 
 ## Come si scrive una voce
 
-Due regole (ADR-0127):
+Tre regole (ADR-0127, ADR-0137, ADR-0138):
 
 - **Addendum del changelog, obbligatorio in CI**: una PR che aggiunge righe a
   [`CHANGELOG.md`](CHANGELOG.md) aggiunge anche almeno una voce qui, con le
@@ -42,6 +42,14 @@ Due regole (ADR-0127):
 - **Prima di togliere una riga dalla memoria del progetto** (fuori dal repo,
   la CI non la vede) si controlla che i suoi fatti siano qui; se mancano, si
   copia la riga com'era in una voce nuova, nello stesso giro di lavoro.
+
+- **A fine di ogni blocco di lavoro che non finisce in una PR** (scelta su
+  card, dato verificato, file solo nella cartella condivisa, thread che si
+  risolve) il thread scrive la voce, con la testa `### MS-???? · data · titolo`,
+  nel suo file della coda `/mnt/project-files/memoria-storica-coda/`.
+  `python3 scripts/memoria_coda.py DIR --thread "Titolo"` esce 1 se manca;
+  `--piega` la porta qui col numero e col campo `Coda`. Una voce piegata non
+  ha una riga del changelog: la sua origine è la card o il thread.
 
 Si aggiunge in coda col numero dopo l'ultimo e si fa girare
 `python3 scripts/memoria_storica.py --check` (la CI fa lo stesso).
@@ -59,6 +67,7 @@ Si aggiunge in coda col numero dopo l'ultimo e si fa girare
 - **Fuori dal repo:** percorsi della cartella condivisa         (facoltativo)
 - **Note di memoria:** `nome-nota`                              (facoltativo)
 - **Solo qui:** i fatti che non si ritrovano altrove             (facoltativo)
+- **Coda:** `nome-del-file-di-coda`      (lo scrive `memoria_coda.py --piega`)
 ```
 
 Niente dati personali (nomi dei giocatori, macchine del DM, nomi utente):
@@ -1887,3 +1896,67 @@ repo scritto con altre parole.
 - **Testo:** audit dell'obbligo di ADR-0127 a sei giorni dalla nascita. Imposto da un cancello: voce MS per ogni PR col changelog (88 PR su 90 unite dal 12/11; #387 e #389 toccano solo `docs/`) e forma del file (165 voci). Solo regola scritta: archiviare prima di togliere una riga dalla memoria delle sessioni; nessuna voce su 98 è nata così, né da una scelta su card o da un thread senza PR. Il campo PR resta «—» in 82 voci su 98 perché la voce precede il numero: ora `--pr` lo ricava dal merge, solo per le voci nate da una riga del changelog (le 67 righe portate in blocco dalla #381 non diventano «della» #381); PR ritrovate 37 → 90 su 90, di cui #387 e #389 solo citate in MS-0082. Righe della memoria delle sessioni con PR, ADR, SHA o percorsi che il repo non ha: 84 su 408 controllabili. Il confronto con le regole del progetto di dottorato del DM (lettura a inizio conversazione, cercare prima di chiedere, controllo delle decisioni superate, diario a fine di ogni blocco, decisioni una volta sola, discordanze segnalate) dice che qui mancano l'ordine di ricerca prima di chiedere e la voce a fine blocco fuori dalle PR.
 - **Trovato nel repo:** `scripts/memoria_storica.py` (`pr_dai_merge`, `confronta_memoria`) · `plans/adr/ADR-0137-la-memoria-storica-si-scrive-a-ogni-blocco-di-lavoro-non-solo-al-merge.md`
 - **Solo qui:** fatti decisi su card trovati solo nella memoria delle sessioni al 18/11: rilascio 1.1.0 dopo le promozioni del 22-24/11 con card prima del tag; Lychee per le ancore solo su richiesta del DM. 21 righe della memoria rimandano solo a `/mnt/project-files/`. Il confronto dà falsi positivi su nomi di codice fra apici inversi (per esempio `goto`) e non controlla le 311 righe in prosa. Lo SHA 48871bd citato nella nota degli strumenti binari non è un oggetto di git.
+
+### MS-0167 · 2026-11-12 · Regola di merge: una PR entra senza un nuovo sì se verde, dichiarata e misurata
+
+- **Data:** 2026-11-12
+- **PR:** —
+- **ADR:** —
+- **Temi:** merge regole processo coordinatore thread
+- **Origine:** regola del DM nella chat di progetto (2026-11-12), tenuta solo nella memoria delle sessioni; archiviata dal thread «Rendere obbligatoria la memoria storica»
+- **Testo:** una PR di un thread entra su main senza un nuovo sì del DM se valgono tutte e tre: CI verde e mergeable clean; tutti i problemi e le misure dichiarati senza omissioni; un miglioramento misurato contro main. Se manca una condizione non entra e si dice quale. I merge sono in coda unica: il coordinatore li ordina uno alla volta e avvisa i thread che toccano gli stessi file; il thread manda testa e misura prima, SHA e file condivisi dopo, e unisce la sua PR al via del coordinatore. Il thread padre dell'audit tiene la lista delle PR e non unisce più. Restano del DM: canone, tagli di testo, merge verso il repo a monte.
+- **Solo qui:** imparato il 2026-11-16: il «via» del coordinatore non è il sì del DM; il merge lo copre questa regola, e lo stato mergeable si legge solo dopo aver tolto la bozza. Prima di unire: grep dei segni di conflitto e `impronte.py --confronta` (non è in CI).
+- **Coda:** `rendere-obbligatoria-la-memoria-storica`
+
+### MS-0168 · 2026-11-13 · Le decisioni del DM vanno sempre su card, con scheda, file e riga
+
+- **Data:** 2026-11-13
+- **PR:** —
+- **ADR:** —
+- **Temi:** card decisioni processo coordinatore
+- **Origine:** richiesta del DM del 2026-11-13 nel thread delle regole e addendum alle istruzioni di progetto del 2026-11-15
+- **Testo:** il 13/11 il DM non trovava nel testo dei messaggi le decisioni che gli venivano chieste: da allora ogni scelta va su una card con la soluzione consigliata e con il nome della scheda, il file e la riga. Dal 15/11 ogni thread che apre una card la segnala subito al coordinatore con una riga; il coordinatore le raccoglie e le porta al DM nel canale, così si gestiscono in un punto solo, e il thread va avanti con ciò che non dipende dalla scelta. Una card si chiude solo con una prova.
+- **Coda:** `rendere-obbligatoria-la-memoria-storica`
+
+### MS-0169 · 2026-11-13 · Il rilascio 1.1.0 aspetta le promozioni a stable
+
+- **Data:** 2026-11-13
+- **PR:** —
+- **ADR:** ADR-0099
+- **Temi:** rilascio v110 canali card
+- **Origine:** scelta del DM su una card del thread dell'audit settimanale (2026-11-13)
+- **Testo:** il rilascio 1.1.0 si fa dopo le promozioni dei canali a stable previste per il 22-24/11 (xdist in testing fino al 22/11, «d» eufonica fino al 24/11). La PR di rilascio parte allora, con una card al DM prima del tag. Rilasciare vuol dire una PR con `## [1.1.0]` in `CHANGELOG.md` e `__version__`.
+- **Solo qui:** il controllo delle ancore con Lychee non si adotta di iniziativa: solo se il DM lo chiede (stessa data, stessa riga della memoria).
+- **Coda:** `rendere-obbligatoria-la-memoria-storica`
+
+### MS-0170 · 2026-11-13 · Document AI: una tecnica per PR, con misura contro main
+
+- **Data:** 2026-11-13
+- **PR:** #398 #416 #418
+- **ADR:** ADR-0132
+- **Temi:** document-ai xai metodo misura
+- **Origine:** indicazione del DM del 2026-11-13 nel thread «Applicare Document AI e Explainable AI», tenuta solo nella memoria delle sessioni
+- **Testo:** le tecniche di Document AI si provano una per PR, ognuna con una misura contro main, ed entrano solo se la misura migliora. Per l'Explainable AI il margine stimato è poco. Entrate così: font a colori del repo, PDF/A-2a, provenienza IPTC nelle copie web. Prossima in lista al 13/11: andata e ritorno del testo dei booklet.
+- **Coda:** `rendere-obbligatoria-la-memoria-storica`
+
+### MS-0171 · 2026-11-18 · La voce di memoria storica è obbligatoria anche senza PR, con un cancello
+
+- **Data:** 2026-11-18
+- **PR:** #471
+- **ADR:** ADR-0137 ADR-0138
+- **Temi:** memoria-storica coda card thread cancello
+- **Origine:** due scelte del DM del 2026-11-18: card nel thread «Rendere obbligatoria la memoria storica» e messaggio nella chat di progetto
+- **Testo:** sulla card il DM ha scelto la consigliata: ogni thread scrive la voce in un file suo nella coda `/mnt/project-files/memoria-storica-coda/` e la routine del lunedì la porta nel repo. Nella chat ha poi detto di aggiungere le righe alle istruzioni di progetto (lo ha fatto il coordinatore) e ha chiesto «il cancello di verifica per il punto 3 per superare dall'inizio il limite trovato»: da qui `scripts/memoria_coda.py` (forma delle voci, thread risolti senza voce, piega numerata). Termine di confronto: le regole di memoria del suo progetto di dottorato; di quelle sono entrate qui cercare prima di chiedere, controllare che un documento non sia superato, la voce a fine di ogni blocco e la segnalazione delle discordanze.
+- **Solo qui:** il repo del dottorato contiene solo documenti, nessuna configurazione di memoria: il confronto è stato fatto sul testo delle regole incollato dal DM.
+- **Coda:** `rendere-obbligatoria-la-memoria-storica`
+
+### MS-0172 · 2026-11-18 · Il cancello della coda della memoria storica
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** ADR-0138 ADR-0137
+- **Temi:** memoria-storica coda cancello thread routine
+- **Origine:** riga del 2026-11-18 «ADR-0138, il cancello della coda della memoria storica» in `plans/CHANGELOG.md`
+- **Testo:** richiesta del DM del 18/11 dopo la scelta della coda per thread: un cancello per il punto 3 di ADR-0137, che era solo regola. `scripts/memoria_coda.py` controlla la forma delle voci in coda (`--check`), dice se un thread ha la sua voce (`--thread`, `--threads` con l'elenco dei thread risolti) e porta le voci nel file storico numerandole (`--piega`), solo se il risultato passa `memoria_storica.py --check`; quest'ultimo ora boccia in CI una testa `### MS-` che non si legge. Prima piega: MS-0167…MS-0171, cinque scelte del DM che stavano solo nella memoria delle sessioni.
+- **Trovato nel repo:** `scripts/memoria_coda.py` · `scripts/tests/test_memoria_coda.py` · `plans/adr/ADR-0138-la-coda-della-memoria-storica-ha-un-cancello.md`
+- **Solo qui:** misura del 18/11: 13 thread risolti dal 12/11 al 17/11, nessuno con una voce sua; il controllo parte dal 18/11 e non li conta. Il cancello non parte da solo (la CI non vede la cartella condivisa né i thread), non vede una card chiusa in un thread aperto e non giudica il contenuto oltre i 40 caratteri del Testo. Comandi per il coordinatore: `python3 scripts/memoria_coda.py /mnt/project-files/memoria-storica-coda/ --thread "Titolo"` prima di risolvere; per la routine `--check`, `--threads elenco.json`, `--piega` e poi `memoria_storica.py --confronta-memoria`.

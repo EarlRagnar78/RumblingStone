@@ -1,6 +1,6 @@
 # ADR-0137 — La memoria storica si scrive a ogni blocco di lavoro, non solo al merge
 
-**Stato**: proposta (2026-11-18). Parte 1 (lettura per PR da git e confronto con la memoria delle sessioni) in questa PR; parti 2 e 3 (coda dei thread, righe nelle istruzioni del progetto) aspettano il sì del DM
+**Stato**: accettata (2026-11-18): punti 1-2 in questa PR; punto 3 scelto dal DM sulla card del 2026-11-18 (coda per thread + routine del lunedì, la consigliata); punto 4 lo scrive il coordinatore nelle istruzioni del progetto
 **Data**: 2026-11-18
 **Decisione-fonte**: il DM (Jfs), 2026-11-18, thread «Rendere obbligatoria la memoria storica»: «controlla se la memoria storica obbligatoria su tutte le chat è attiva, quale è lo stato attuale implementato e cosa fare per migliorarla ed utilizzarla per tutti i threads aperti e quelli nuovi così non si perdono dati». Termine di confronto: le regole «MEMORIA STORICA DEL PROGETTO (obbligatoria)» del suo progetto di dottorato, incollate nel thread.
 **Rapporti**: estende [ADR-0127](ADR-0127-la-memoria-corta-archivia-nel-repo-prima-di-togliere.md) (file storico, addendum in CI). Non cambia il formato delle voci né il cancello di [ADR-0009](ADR-0009-gate-tracciatura-changelog-adr.md).
@@ -52,7 +52,7 @@ in sei giorni, non ha prodotto nessuna voce.
    memoria con PR, ADR, SHA o percorsi che il repo non ha, e le note che il
    file storico non cita. È un rapporto, non un cancello: la memoria sta
    fuori dal repo e la CI non la vede.
-3. **Voce a fine blocco anche senza PR** (proposta, serve il sì del DM):
+3. **Voce a fine blocco anche senza PR** (scelta del DM sulla card del 2026-11-18):
    ogni thread, a fine di un blocco di lavoro che non finisce in una PR
    (scelta su card, dato verificato, file solo nella cartella condivisa,
    thread che si risolve), scrive la voce in un file suo nella coda
@@ -60,8 +60,8 @@ in sei giorni, non ha prodotto nessuna voce.
    sovrascrittura). La routine del lunedì la porta nel repo con una PR che
    tocca solo il file storico (non strutturale: il cancello non chiede la
    riga del changelog), numerando le voci in quel momento.
-4. **Righe nelle istruzioni del progetto** (proposta, le scrive il
-   coordinatore dopo il sì del DM): ordine di ricerca prima di chiedere,
+4. **Righe nelle istruzioni del progetto** (le scrive il coordinatore,
+   dopo il sì del DM al punto 3): ordine di ricerca prima di chiedere,
    controllo delle decisioni superate, voce a fine blocco, discordanze da
    segnalare.
 

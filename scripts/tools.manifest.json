@@ -2324,8 +2324,8 @@
       "path": "scripts/memoria_storica.py",
       "category": "G-orchestration-governance",
       "language": "python",
-      "invocation": "python3 scripts/memoria_storica.py [PAROLE ...] [--pr N] [--adr N] [--tema T] [--da DATA] [--a DATA] [--id MS-NNNN] [--elenco] [--json] [--check]",
-      "summary": "ADR-0127: la storia del lavoro che esce dalla memoria corta delle sessioni. Legge plans/MEMORIA-STORICA.md (una voce MS-NNNN per riga tolta dalla memoria del progetto, con data, PR, ADR, temi, testo intero, dove il fatto si ritrova nel repo e cosa c'è solo lì) e restituisce le voci che passano tutti i filtri: PR, ADR, tema, intervallo di date, id, parole (senza badare a maiuscole e accenti). --json è l'uscita per un agente. --check è il cancello della CI: numeri consecutivi, date valide, campi obbligatori, collegamento da plans/CHANGELOG.md. Sola lettura.",
+      "invocation": "python3 scripts/memoria_storica.py [PAROLE ...] [--pr N] [--adr N] [--tema T] [--da DATA] [--a DATA] [--id MS-NNNN] [--elenco] [--json] [--check] [--confronta-memoria DIR]",
+      "summary": "ADR-0127: la storia del lavoro che esce dalla memoria corta delle sessioni. Legge plans/MEMORIA-STORICA.md (una voce MS-NNNN per riga tolta dalla memoria del progetto, con data, PR, ADR, temi, testo intero, dove il fatto si ritrova nel repo e cosa c'è solo lì) e restituisce le voci che passano tutti i filtri: PR, ADR, tema, intervallo di date, id, parole (senza badare a maiuscole e accenti). --json è l'uscita per un agente. --check è il cancello della CI: numeri consecutivi, date valide, campi obbligatori, collegamento da plans/CHANGELOG.md. --pr trova anche le voci col campo PR «—», dal merge che le ha portate su main (git). --confronta-memoria DIR dice quali righe della memoria delle sessioni hanno numeri o percorsi che il repo non ha (ADR-0137). Sola lettura.",
       "use_case": "«Sto rivedendo una soluzione già adottata o cercando la causa di una regressione: che cosa si sapeva allora di questa PR, di questo ADR, di questo tema?»",
       "stability": "beta",
       "stdlib_only": true,
@@ -2423,6 +2423,15 @@
           "choices": null,
           "repeatable": false,
           "desc": "Il cancello: exit 1 se il file è scritto male o il CHANGELOG dei piani non lo collega."
+        },
+        {
+          "name": "--confronta-memoria",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cartella della memoria delle sessioni (MEMORY.md e note): elenca le righe con PR, ADR, SHA o percorsi che il repo non ha, e le note che la memoria storica non cita. Rapporto, non cancello: exit 0 (ADR-0137)."
         }
       ],
       "inputs": [

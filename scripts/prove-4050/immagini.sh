@@ -29,6 +29,9 @@ BOX="${COMFYUI_BOX:-comfyui}"
 # SDXL nei 6 GB vuole --lowvram; SD1.5 del profilo leggero ci sta largo e va senza
 if [ "$PROFILO" = gpu ]; then COMFY_ARGS="${RS_COMFY_ARGS---lowvram}"; else COMFY_ARGS="${RS_COMFY_ARGS-}"; fi
 LIBERA="${RS_LIBERA:-1}"
+# L'indice cu124 si ferma a PyTorch 2.6; il ComfyUI fissato (0df1646) dà la 2.7 come minimo e chiede
+# la 2.8 per la gestione dinamica della VRAM. cu126 ha le versioni correnti (2.14 il 2026-11-18).
+TORCH_INDEX="${RS_TORCH_INDEX:-https://download.pytorch.org/whl/cu126}"
 VLM="${RS_VLM_DEVICE:-auto}"
 box_c_e "$BOX" || {
   echo "ERRORE: il box '$BOX' non c'è. Una tantum: scripts/comfyui-local/setup-distrobox.sh" >&2; exit 3; }
@@ -46,8 +49,10 @@ nel_box "$BOX" bash -lc "
   cd '$LAVORO'
   [ -f venv/bin/activate ] || { rm -rf venv; python3 -m venv venv; }   # un venv rimasto a metà si rifà
   . venv/bin/activate
-  python -c 'import torch, torchvision, torchaudio' 2>/dev/null || pip install -q torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
-  python -c 'import torch; print(\"    GPU vista da torch:\", torch.cuda.is_available())'
+  # manca, o è la 2.6 di un venv fatto prima del 18/11: si (ri)installa dall'indice giusto
+  python -c 'import torch, torchvision; v = tuple(int(x) for x in torch.__version__.split(\".\")[:2]); raise SystemExit(v < (2, 8))' 2>/dev/null \\
+    || pip install -q --upgrade torch torchvision --index-url '$TORCH_INDEX'
+  python -c 'import torch; print(\"    torch\", torch.__version__, \"· GPU vista da torch:\", torch.cuda.is_available())'
   export HF_HUB_DISABLE_XET=1 RS_LIBERA='$LIBERA' RS_COMFY_DEVICE=gpu
   export RS_COMFY_ARGS='$COMFY_ARGS' RS_VLM_DEVICE='$VLM'
   python '$DATI/esegui_gpu.py' --dati '$DATI' --lavoro '$LAVORO' --uscita '$DEST' \

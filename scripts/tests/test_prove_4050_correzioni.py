@@ -57,6 +57,21 @@ class TestArgomentiComfy(unittest.TestCase):
             self.assertEqual(r.returncode, 2, f"{extra}: {r.stderr}")
 
 
+class TestIndicePyTorch(unittest.TestCase):
+    def test_niente_cu124(self):
+        # cu124 si ferma a torch 2.6.0; il ComfyUI fissato dà la 2.7 come minimo e vuole la 2.8
+        for f in (PROVE / "immagini.sh", REPO / "scripts" / "comfyui-local" / "setup-distrobox.sh"):
+            testo = f.read_text(encoding="utf-8")
+            self.assertNotIn("whl/cu124", testo, f.name)
+            self.assertIn("whl/cu126", testo, f.name)
+
+    def test_un_venv_con_torch_vecchio_si_aggiorna(self):
+        testo = (PROVE / "immagini.sh").read_text(encoding="utf-8")
+        self.assertIn("v < (2, 8)", testo)
+        self.assertIn("pip install -q --upgrade torch torchvision --index-url '$TORCH_INDEX'", testo)
+        self.assertNotIn("torchaudio", testo)  # su cu126 è ferma alla 2.11 e riporterebbe indietro torch
+
+
 class _CadeAllaQuarta(http.server.BaseHTTPRequestHandler):
     viste = 0
 

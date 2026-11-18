@@ -466,6 +466,7 @@ nell'ADR della prova:
 
 | Sintomo | Cosa fare |
 |---|---|
+| «questo terminale gira dentro una sandbox Flatpak», oppure «sistema: altro 25.08» | Stai usando il terminale di un'applicazione installata da Flathub (un editor, per esempio): da lì GPU, distrobox e podman non si vedono. Apri il terminale del sistema (Ptyxis o Konsole) e rilancia; oppure `flatpak-spawn --host bash` se l'applicazione lo permette. |
 | `distrobox enter` resta appeso su «host's nvidia integration» | È noto sull'ASUS: il kit accende il box con `podman start` e legge il log a intervalli (`box_avvia`, cinque minuti al massimo: `RS_BOX_ATTESA`), poi entra lo stesso. Se non parte, `podman logs llm-locale \| tail` (o `comfyui`). |
 | `verifica.md`: «ha lavorato un'altra scheda» sulla trascrizione | Vulkan ha scelto la scheda integrata: la memoria della NVIDIA non è salita mentre whisper girava. Guarda `trascrizione-gpu/dispositivo.txt` e `vram-durante.txt` e carica l'archivio lo stesso: è un risultato. |
 | Su Windows lo script mostra lettere storpiate | Hai una copia vecchia di `installa-windows.ps1`: `git pull` (il file ora ha il BOM che Windows PowerShell 5.1 vuole). |

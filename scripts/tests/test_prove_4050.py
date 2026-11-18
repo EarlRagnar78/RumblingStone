@@ -424,6 +424,25 @@ class TestKitMultiSistema(unittest.TestCase):
         self.assertEqual(r.stdout.strip(), "2026-11-17")
         self.assertIn('export PROVE_GIORNO="$GIORNO"', (PROVE / "kit.sh").read_text(encoding="utf-8"))
 
+    FLATPAK = 'NAME="Freedesktop SDK"\nVERSION_ID="25.08"\nID=org.freedesktop.platform\n'
+
+    def test_sandbox_flatpak_ferma_subito(self):
+        """Primo giro del DM (2026-11-18): dal terminale di un'app Flatpak il kit vedeva «altro 25.08»."""
+        r = _bash(f'. "{PROVE}/ospite.sh"; rs_sistema', self.FLATPAK)
+        self.assertEqual(r.stdout.strip(), "flatpak")
+        for comando in ("kit.sh piano", "kit.sh esegui controlla", "installa.sh --mostra", "controlla.sh"):
+            r = _bash(f'"{PROVE}/"{comando}', self.FLATPAK)
+            self.assertEqual(r.returncode, 5, (comando, r.stdout, r.stderr))
+            self.assertIn("sandbox Flatpak", r.stderr)
+            self.assertIn("flatpak-spawn --host", r.stderr)
+            self.assertNotIn("################", r.stdout)
+        # il file della sandbox basta, anche con un os-release normale
+        with tempfile.NamedTemporaryFile() as f:
+            r = _bash(f'"{PROVE}/kit.sh" piano', OS_RELEASE["bazzite"], extra={"RS_FLATPAK_INFO": f.name})
+            self.assertEqual(r.returncode, 5)
+        r = _bash(f'"{PROVE}/kit.sh" piano', OS_RELEASE["bazzite"])
+        self.assertEqual(r.returncode, 0, r.stderr)
+
     def test_piano_senza_risultati(self):
         r = _bash(f'"{PROVE}/kit.sh" piano', OS_RELEASE["debian"])
         self.assertEqual(r.returncode, 0, r.stderr)
@@ -455,6 +474,14 @@ class TestVerifica(unittest.TestCase):
     def test_tutto_non_fatto(self):
         e = self.v.verifica(self.r, self.m)
         self.assertTrue(all(x["stato"] == "non fatta" for x in e.values()))
+
+    def test_prova_lanciata_e_mai_partita_e_ko(self):
+        """Il kit ha registrato un'uscita con errore e non c'è nessun risultato: ko, non «non fatta»."""
+        self.scrivi("kit.tsv", "lettore-coerenza\t3\t0\t22:00:00\n")
+        e = self.v.verifica(self.r, self.m)
+        self.assertEqual(e["lettore-coerenza"]["stato"], "ko")
+        self.assertIn("non è partita", e["lettore-coerenza"]["note"][0])
+        self.assertEqual(e["prosa"]["stato"], "non fatta")
 
     def test_lettore_completo_e_interrotto(self):
         self.scrivi("lettore-coerenza/esito.txt", "modello: qwen2.5:7b\ndomande: 3\nminuti: 4\n")

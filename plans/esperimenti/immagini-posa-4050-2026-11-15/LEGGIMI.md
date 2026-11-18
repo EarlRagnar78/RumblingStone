@@ -7,7 +7,7 @@ repo perché il portatile del DM non vede i file del progetto. Si lancia con
 [GUIDA-PROVE-PORTATILE-4050](../../../docs/how-to/GUIDA-PROVE-PORTATILE-4050.md) §3.
 
 È una prova, non un'adozione: niente generazione in CI, nessuna immagine prodotta entra
-nel repo, e le decisioni D1-D4 di ADR-0115 (proposta) restano al DM.
+nel repo, e le decisioni D1-D4 di quel thread restano al DM.
 
 ## Cosa cambia rispetto al 29/10
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # immagini.sh [--solo SCENA[,SCENA]] [--semi N] [--profilo gpu|cpu] — la pipeline dei personaggi
-# in posa (thread «Immagini dei personaggi in posa», ADR-0115 proposta) sulla GPU del portatile.
+# in posa (thread «Immagini dei personaggi in posa») sulla GPU del portatile.
 # La pipeline è quella del 29/10, copiata in plans/esperimenti/immagini-posa-4050-2026-11-15/dati/
 # con tre manopole per i 6 GB: RS_COMFY_ARGS (default --lowvram sul profilo gpu, niente sul
 # profilo leggero), RS_LIBERA (default 1: un modello alla volta), RS_VLM_DEVICE (default auto:

@@ -2,6 +2,8 @@
 from __future__ import annotations
 
 import io
+import os
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -95,6 +97,75 @@ class TestRiga(unittest.TestCase):
                 self.assertEqual(ms.main(["--file", str(f), "--json", "--pr", "257"]), 0)
             self.assertIn('"id": "MS-0001"', out.getvalue())
             self.assertEqual(ms.main(["--file", str(f), "--da", "19/10"]), 2)
+
+
+def _git(d: Path, *a: str) -> str:
+    return subprocess.run(["git", "-C", str(d), *a], check=True, capture_output=True, text=True,
+                          env={"GIT_AUTHOR_NAME": "t", "GIT_AUTHOR_EMAIL": "t@t", "GIT_COMMITTER_NAME": "t",
+                               "GIT_COMMITTER_EMAIL": "t@t", "PATH": os.environ.get("PATH", "/usr/bin:/bin"),
+                               "HOME": str(d), "GIT_CONFIG_NOSYSTEM": "1"}).stdout
+
+
+class TestPrDalMerge(unittest.TestCase):
+    """ADR-0137: una voce scritta con «PR: —» si trova col numero del merge che l'ha portata."""
+
+    def setUp(self):
+        self.t = tempfile.TemporaryDirectory()
+        self.d = Path(self.t.name)
+        _git(self.d, "init", "-q", "-b", "main")
+        f = self.d / "plans" / "MEMORIA-STORICA.md"
+        f.parent.mkdir()
+        f.write_text(TESTO, encoding="utf-8")
+        _git(self.d, "add", ".")
+        _git(self.d, "commit", "-qm", "inizio")
+        _git(self.d, "checkout", "-qb", "ramo")
+        f.write_text(TESTO + "\n### MS-0003 · 2026-11-18 · Voce senza numero\n\n- **Data:** 2026-11-18\n"
+                     "- **PR:** —\n- **ADR:** —\n- **Temi:** prova\n- **Origine:** riga in `plans/CHANGELOG.md`\n- **Testo:** x\n",
+                     encoding="utf-8")
+        _git(self.d, "commit", "-qam", "voce")
+        _git(self.d, "checkout", "-q", "main")
+        _git(self.d, "merge", "-q", "--no-ff", "ramo", "-m", "Merge pull request #501 from x/ramo")
+        self.f = f
+
+    def tearDown(self):
+        self.t.cleanup()
+
+    def test_la_mappa_viene_dal_merge(self):
+        m = ms.pr_dai_merge(self.d, self.f)
+        self.assertEqual(m, {"MS-0003": {501}})
+
+    def test_la_riga_di_comando_trova_la_voce_senza_numero(self):
+        out = io.StringIO()
+        with redirect_stdout(out):
+            self.assertEqual(ms.main(["--file", str(self.f), "--pr", "501", "--elenco"]), 0)
+        self.assertEqual(out.getvalue().split()[0], "MS-0003")
+        out = io.StringIO()
+        with redirect_stdout(out):
+            ms.main(["--file", str(self.f), "--pr", "501", "--elenco", "--senza-git"])
+        self.assertEqual(out.getvalue(), "")
+
+    def test_senza_git_la_mappa_e_vuota(self):
+        self.assertEqual(ms.pr_dai_merge(self.d / "non-esiste", self.f), {})
+
+
+class TestConfrontaMemoria(unittest.TestCase):
+    def test_trova_cio_che_il_repo_non_ha(self):
+        with tempfile.TemporaryDirectory() as t:
+            d = Path(t)
+            _git(d, "init", "-q", "-b", "main")
+            (d / "a.md").write_text("PR #123 e ADR-0042 stanno qui, e la #9990", encoding="utf-8")
+            _git(d, "add", ".")
+            _git(d, "commit", "-qm", "x")
+            mem = d / "mem"
+            mem.mkdir()
+            (mem / "MEMORY.md").write_text("- #123 e ADR-0042 noti\n- #999 solo in memoria\n- una regola in prosa\n",
+                                           encoding="utf-8")
+            (mem / "nota-x.md").write_text("---\nname: nota-x\n---\nniente gettoni\n", encoding="utf-8")
+            r = ms.confronta_memoria(mem, d, storica="cita nota-x")
+            self.assertEqual(r["righe"], 4)
+            self.assertEqual(r["righe_con_gettoni"], 2)
+            self.assertEqual([s["mancano"] for s in r["righe_scoperte"]], [["#999"]])
+            self.assertEqual(r["note_citate"], 1)
 
 
 if __name__ == "__main__":

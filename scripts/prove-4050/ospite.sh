@@ -7,6 +7,7 @@
 #                diretto (WSL2 o RS_SENZA_BOX=1: gli strumenti stanno sul sistema stesso)
 #   nel_box BOX COMANDO...    esegue COMANDO nel box, o direttamente in modo diretto
 #   box_c_e BOX               vero se il box esiste (sempre vero in modo diretto)
+#   box_avvia BOX             accende il box se è spento e aspetta la sua inizializzazione
 #
 # RS_OS_RELEASE e RS_PROC_VERSION servono solo ai test (simulano un altro sistema).
 
@@ -48,7 +49,33 @@ rs_modo() {
 
 nel_box() {
   local box="$1"; shift
-  if [ "$(rs_modo)" = diretto ]; then "$@"; else distrobox enter "$box" -- "$@"; fi
+  if [ "$(rs_modo)" = diretto ]; then "$@"; return; fi
+  box_avvia "$box" || return 1
+  distrobox enter "$box" -- "$@"
+}
+
+# box_avvia BOX — a box spento `distrobox enter` lo avvia e segue il log fino a
+# «container_setup_done»: sull'ASUS del DM quel log si ferma su «host's nvidia integration» e
+# enter resta appeso (2026-10-10, vedi box_pronto in scripts/llm-locale/comune.sh). Qui il box si
+# accende con podman e il log si legge a intervalli; a box acceso enter non aspetta più niente.
+#   RS_BOX_ATTESA  secondi di attesa al massimo (di serie 300; poi si prova lo stesso)
+box_avvia() {
+  local box="$1" stato t0 attesa="${RS_BOX_ATTESA:-300}"
+  [ "$(rs_modo)" = diretto ] && return 0
+  stato=$(podman inspect -f '{{.State.Running}}' "$box" 2>/dev/null || echo assente)
+  [ "$stato" = true ] && return 0
+  [ "$stato" = assente ] && { echo "ERRORE: il box '$box' non c'è. Una tantum: scripts/prove-4050/installa.sh" >&2; return 1; }
+  t0=$(date +%s)
+  echo "==> avvio il box '$box' e aspetto la sua inizializzazione (la prima volta: minuti)" >&2
+  podman start "$box" >/dev/null || return 1
+  while [ $(( $(date +%s) - t0 )) -lt "$attesa" ]; do
+    podman logs --since "$t0" "$box" 2>&1 | grep -q container_setup_done && return 0
+    # se il box si ferma da solo l'inizializzazione è fallita: inutile aspettare
+    [ "$(podman inspect -f '{{.State.Running}}' "$box" 2>/dev/null)" = true ] || {
+      echo "ERRORE: il box '$box' si è fermato durante l'avvio. Vedi: podman logs $box | tail" >&2; return 1; }
+    sleep 5
+  done
+  echo "AVVISO: dopo $attesa s il log del box '$box' non dice «finito». Provo lo stesso." >&2
 }
 
 box_c_e() {

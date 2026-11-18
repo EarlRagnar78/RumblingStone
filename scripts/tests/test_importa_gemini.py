@@ -93,6 +93,36 @@ class TestTakeout(unittest.TestCase):
         self.assertEqual(voci[0]["prompt"], "Chi guida la Mano Rossa?")
         self.assertIn("Azarr Kul, è un mezzodrago.", voci[0]["risposta"])
 
+    def test_html_data_iso_e_giorno(self):
+        # prima la data restava «3 mag 2026, ...»: tutto finiva in gemini-senza-data, in ordine alfabetico
+        self.assertEqual(ig.ora_iso("3 mag 2026, 20:11:00 CEST"), "2026-05-03T20:11:00")
+        self.assertEqual(ig.ora_iso("May 3, 2026, 8:11:00\u202fPM CEST"), "2026-05-03T20:11:00")
+        self.assertEqual(ig.ora_iso("Dec 1, 2026, 12:05:09 AM UTC"), "2026-12-01T00:05:09")
+        self.assertEqual(ig.ora_iso("3 xyz 2026, 20:11:00"), "3 xyz 2026, 20:11:00")
+        with tempfile.TemporaryDirectory() as t:
+            cart = Path(t) / "Takeout" / "Le mie attività" / "App Gemini"
+            cart.mkdir(parents=True)
+            (cart / "LeMieAttività.html").write_text(TAKEOUT_HTML, encoding="utf-8")
+            chat = ig.chat_takeout(Path(t) / "Takeout")
+            self.assertEqual([c["data"] for c in chat], ["2026-05-03"])
+
+    def test_takeout_intero_solo_gemini(self):
+        # un Takeout intero ha «La mia attività» di ogni prodotto: Ricerca e YouTube non sono chat di Gemini
+        with tempfile.TemporaryDirectory() as t:
+            base = Path(t) / "Takeout" / "My Activity"
+            (base / "Search").mkdir(parents=True)
+            (base / "Gemini Apps").mkdir()
+            (base / "Search" / "MyActivity.json").write_text(json.dumps(
+                [{"header": "Search", "title": "Searched for Thorik", "time": "2026-05-01T10:00:00.000Z"}]))
+            (base / "Gemini Apps" / "MyActivity.json").write_text(json.dumps(TAKEOUT_JSON + [
+                {"header": "YouTube", "title": "Watched Tordek", "time": "2026-05-09T10:00:00.000Z"}]))
+            chat = ig.chat_takeout(Path(t) / "Takeout")
+            self.assertEqual([c["data"] for c in chat], ["2026-05-03", "2026-05-04"])
+            # un file dato da solo si legge anche se il nome non dice Gemini
+            solo = Path(t) / "attivita.json"
+            solo.write_text(json.dumps(TAKEOUT_JSON))
+            self.assertEqual(len(ig.chat_takeout(solo)), 2)
+
     def test_niente_riconosciuto_esce_3(self):
         with tempfile.TemporaryDirectory() as t:
             t = Path(t)

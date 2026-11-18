@@ -14,7 +14,8 @@ container, cambia solo chi risponde SÌ/NO.
                        --cache misure/cache-llm.json --unisci misure/risposte-qwen2.5-7b.json
 
 Greedy (temperature 0, seed 0), al massimo 3 token, come con transformers. Le
-risposte si salvano ogni 20, quindi una corsa interrotta riparte da dove era.
+risposte si salvano ogni 20 e all'uscita, anche su errore: una corsa interrotta
+riparte da dove era.
 """
 from __future__ import annotations
 
@@ -48,19 +49,22 @@ def main(argv=None) -> int:
     domande = json.loads(a.domande.read_text(encoding="utf-8"))
     risposte = json.loads(a.out.read_text(encoding="utf-8")) if a.out.exists() else {}
     t0, nuove = time.time(), 0
-    for d in domande:
-        # la chiave è quella della cache di estrai_rag.py per «ollama:<modello>»: così lo stesso
-        # file di domande serve per qualunque modello, non solo per quello con cui è stato scritto
-        h = hashlib.sha256(("ollama:" + a.modello + d["utente"]).encode()).hexdigest()
-        if h in risposte:
-            continue
-        risposte[h] = chiedi(a.url, a.modello, d["sistema"], d["utente"], a.timeout)
-        nuove += 1
-        if nuove % 20 == 0:
+    try:
+        for d in domande:
+            # la chiave è quella della cache di estrai_rag.py per «ollama:<modello>»: così lo stesso
+            # file di domande serve per qualunque modello, non solo per quello con cui è stato scritto
+            h = hashlib.sha256(("ollama:" + a.modello + d["utente"]).encode()).hexdigest()
+            if h in risposte:
+                continue
+            risposte[h] = chiedi(a.url, a.modello, d["sistema"], d["utente"], a.timeout)
+            nuove += 1
+            if nuove % 20 == 0:
+                a.out.write_text(json.dumps(risposte, ensure_ascii=False), encoding="utf-8")
+                sec = time.time() - t0
+                print(f"  {len(risposte)}/{len(domande)}  {sec / nuove:.2f} s a domanda", file=sys.stderr, flush=True)
+    finally:  # anche su errore del server o Ctrl-C: le risposte già avute non si perdono
+        if nuove:
             a.out.write_text(json.dumps(risposte, ensure_ascii=False), encoding="utf-8")
-            sec = time.time() - t0
-            print(f"  {len(risposte)}/{len(domande)}  {sec / nuove:.2f} s a domanda", file=sys.stderr, flush=True)
-    a.out.write_text(json.dumps(risposte, ensure_ascii=False), encoding="utf-8")
     sec = time.time() - t0
     print(f"✓ {len(risposte)}/{len(domande)} risposte, {nuove} nuove in {sec:.0f} s"
           + (f" ({sec / nuove:.2f} s a domanda)" if nuove else ""))

@@ -94,6 +94,32 @@ class TestDrappoFlux(unittest.TestCase):
             self.assertTrue(self.df.peso_verificato(f, giusto))  # dalla nota
             self.assertFalse(self.df.peso_verificato(Path(d) / "manca", giusto))
 
+    def test_torch_sotto_la_2_8_viene_segnalato(self):
+        self.assertTrue(self.df.torch_vecchio("2.6.0+cu124"))
+        self.assertFalse(self.df.torch_vecchio("2.8.0"))
+        self.assertFalse(self.df.torch_vecchio("2.14.1+cu126"))
+        self.assertFalse(self.df.torch_vecchio("assente"))
+
+    def test_clone_di_comfyui_separato_da_quello_delle_immagini(self):
+        """esegui_gpu.py mette i suoi nodi in «ComfyUI» solo quando lo crea: questa prova non deve crearlo."""
+        sorgente = (PROVE / "drappo_flux.py").read_text(encoding="utf-8")
+        self.assertIn('lavoro / "ComfyUI-flux"', sorgente)
+        self.assertNotIn('lavoro / "ComfyUI"', sorgente)
+        self.assertIn('lavoro / "ComfyUI"', (IMMAGINI / "esegui_gpu.py").read_text(encoding="utf-8"))
+
+    def test_affianca_apre_ogni_gemini_di_serie(self):
+        """il-drappo.png ha un blocco C2PA oltre il limite di serie di Pillow: il 18/11 la prova si fermava lì."""
+        try:
+            import PIL  # noqa: F401
+        except ImportError:
+            self.skipTest("Pillow non installato")
+        with tempfile.TemporaryDirectory() as d:
+            for ident in self.df.SOLO_DEFAULT.split(","):
+                gem = self.df.GEMINI / f"{ident}.png"
+                dest = Path(d) / f"confronto-{ident}.jpg"
+                self.assertTrue(self.df.affianca(gem, [gem], dest), ident)
+                self.assertGreater(dest.stat().st_size, 10_000)
+
     def test_pagina_di_confronto(self):
         with tempfile.TemporaryDirectory() as d:
             righe = [{"id": "il-drappo", "seme": 0, "secondi": 9.5, "file": "flux/seme-0/il-drappo.png"},

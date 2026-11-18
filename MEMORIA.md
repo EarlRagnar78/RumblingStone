@@ -84,7 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
-| 2026-11-18 | AVVENTURE-COMMUNITY | Calendario di ARC-09: il quickstart e la tabella delle armate allineati a… | il ricontrollo del 18/11 ha trovato due calendari diversi: `state.yaml` e `HOOKS-INTEGRATION-MASTER` mettono il Torneo di Dauth ai Day 30-32, il quickstart e l… |
+| 2026-11-18 | AVVENTURE-COMMUNITY | Calendario di ARC-09: il quickstart e la tabella delle armate allineati a… | il ricontrollo del 18/11 ha trovato due calendari diversi: `P2B-Torneo-DAUTH-DM-MASTER-REFERENCE` §1.1 (autoritativa) e `campaign/state.md` r.381 mettono i tre… |
 | 2026-11-18 | STATO-E-ORDINE | ADR-0137, la memoria storica a ogni blocco di lavoro (richiesta del DM del 18/1… | 🟡 PR unite dal 12/11 ritrovate con `--pr`: 37 → 90 su 90 (88 con la voce propria; #387 e #389 toccano solo `docs/` e sono solo citate in MS-0082). Memoria dell… |
 | 2026-11-18 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, il generatore: la nota «niente Incantesimi focalizzati» nel conto esc… | ✅ |
 | 2026-11-17 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Kit unico delle prove sulla RTX 4050, richiesta del DM del 17/11 (ADR-0136):… | 🟡 prove lanciabili con un comando: da 0 a 7 su 7; sistemi con un percorso di installazione: da 1 (Bazzite) a 4. Mai girato su una GPU né su Debian, CachyOS o W… |

@@ -1899,7 +1899,18 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `scripts/prove-4050/ospite.sh` (`box_avvia`, `nel_box`) · `scripts/prove-4050/verifica.py` (`VRAM_WHISPER_MIB`) · `scripts/prove-4050/trascrizione-gpu.sh` (`vram-durante.txt`) · `scripts/tests/test_prove_4050.py` (`test_box_spento_si_accende_senza_restare_appesi`, `test_trascrizione_sulla_scheda_integrata_e_ko`, `test_script_windows_con_bom`)
 - **Solo qui:** la soglia di 400 MiB è una stima mia (il modello q8_0 pesa circa 870 MB), non una misura sulla 4050: se al primo giro la memoria sale meno con la GPU giusta, va abbassata. Divisione dei file col thread «Preparare le prove sul portatile RTX 4050», che ha avuto la stessa richiesta: a lui `lettore-coerenza.sh`, `prosa.sh`, `immagini.sh`, `leggi_ollama.py`, `importa_gemini.py`; `drappo-flux.sh` e `schede-vincolate.sh` non toccati. Controllati e trovati a posto: `kit.sh`, `comune.sh`, `controlla.sh`, `riporta.sh`, `prove.json`.
 
-### MS-0168 · 2026-11-18 · Il ricontrollo delle prove 4050: sette errori negli script di lettore, immagini e Gemini
+### MS-0168 · 2026-11-18 · Decodifica vincolata: tre errori dello script corretti prima della misura
+
+- **Data:** 2026-11-18
+- **PR:** #473
+- **ADR:** —
+- **Temi:** document-ai decodifica-vincolata tattiche prova-4050 ollama S8
+- **Origine:** riga del 2026-11-18 «Tecnica 3, decodifica vincolata: tre errori dello script della prova corretti prima della misura» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha chiesto il 18/11 di ricontrollare la prova della #466 (MS-0161) prima di lanciarla. Il braccio libero perdeva violazioni S8 per l'impaginazione (grassetto, elenco numerato, titoli): 1 su 4 trovate, ora 4 su 4. Il tetto di 700 token troncava il JSON pieno del vincolato: ora 1500 e le troncate si contano. Un campo non testuale faceva cadere lo script. La regola del verdetto è rimasta quella scritta prima.
+- **Trovato nel repo:** `plans/esperimenti/decodifica-vincolata-2026-11-17/schede_vincolate.py` (`valido_libero`, `in_markdown`, `GETTONI`) · `plans/esperimenti/decodifica-vincolata-2026-11-17/PIANO.md` · `scripts/tests/test_prove_4050.py` (`TestSchedeVincolate`)
+- **Solo qui:** `verifica_scheda` tratta una riga che comincia col grassetto come l'inizio di una sezione: chi scrive tattiche da un modello deve togliere il grassetto prima di S8. Non è provato che l'Ollama del portatile rispetti `maxLength` dello schema.
+
+### MS-0169 · 2026-11-18 · Il ricontrollo delle prove 4050: sette errori negli script di lettore, immagini e Gemini
 
 - **Data:** 2026-11-18
 - **PR:** —

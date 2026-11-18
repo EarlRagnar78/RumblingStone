@@ -227,6 +227,7 @@ Il tag e il rilascio li crea il workflow Release (ADR-0100).
 - `voto_scrittura` resta, perché il banco del modello locale (ADR-0089) lo usa per votare le sue corse: il rilevatore del «sembra» ora vive in `validate_prosa` e il banco lo riusa (PR #264).
 
 ### Corretto
+- Kit delle prove 4050: un box Distrobox spento non lascia più appese l'installazione e le prove (`box_avvia`); la verifica della trascrizione si accorge se ha lavorato la scheda integrata invece della NVIDIA; `installa-windows.ps1` ha il BOM per Windows PowerShell 5.1 e si ferma se l'installazione dentro WSL2 fallisce.
 - `conformita_statblocchi`: in una scheda senza `attacchi:` una voce di equipaggiamento con un «+1» non è più letta come l'attacco della scheda.
 - Stampa: `misura_stampa.parole_ripetute` toglie le testatine riga per riga. Nei capitoli di poche pagine la testatina contava come copia; i valori del registro scendono di poco (serata 12,3% → 11,8% a parità di testo).
 - I titoli ricomposti dal tema Typst perdevano l'apostrofo («LALBA» per «L'ALBA»): `to-string` ora rende gli apostrofi.

@@ -115,7 +115,7 @@ Giorno 31  Day 2 Torneo.
 Giorno 32  Day 3 Torneo + assedio Vanguard a Dauth.
 Giorno 33-35  Hella completa rituale Sacred Forest;
               Artemis affronta Zalkatar nella Torre Invisibile
-              (se entro Mirtul = ~Day 30, altrimenti Torre cammina).
+              (se entro Flamerule = ~Day 30, altrimenti Torre cammina).
 Giorno 36  Convoglio dei superstiti del Torneo parte per Rethmar.
 Giorno 37  Convergenza dei PG verso Rethmar.
 Giorno 40  Notte dei Drow (Phase 0).
@@ -211,7 +211,7 @@ Il party **resta unito**. Va a Sacred Forest per primo (Giorno 23-26 — rito + 
 
 **Costo:**
 - **Tempo:** Hella + Sacred Forest + viaggio = il party arriva a Dauth solo Giorno 30-31. **Probabilmente perde Day 1 o Day 2 del Torneo.** Tordek deve fare le preliminari da solo o saltare.
-- **Artemis ha finestra Mirtul stretta** (Day 30 = fine Mirtul). Se parte solo Giorno 26 dal Sacred Forest, arriva Torre Giorno 28-29. Stretto ma fattibile.
+- **Artemis ha finestra Flamerule stretta** (Day 30 = fine Flamerule). Se parte solo Giorno 26 dal Sacred Forest, arriva Torre Giorno 28-29. Stretto ma fattibile.
 - **Niente sub-quest Beriah/Mask cult al Torneo** se Artemis va alla Torre invece di a Dauth.
 
 ### 4.3 PATH-C — *Hybrid* (2+2 o 3+1)
@@ -229,7 +229,7 @@ Compromesso: il party si divide in **2 gruppi**.
 | Path | Hella ritual | Tordek invito | Artemis Torre | Thorik politica | Drama RP |
 |---|---|---|---|---|---|
 | A (split) | Solo, CD ↑ | NO sigillo (–150 lance) | OK ma alla cieca | Solo |  Diviso |
-| B (together) | Pieno, CD ↓ | Sigillo via Maewen | Stretto Mirtul | Pieno |  Unito |
+| B (together) | Pieno, CD ↓ | Sigillo via Maewen | Stretto Flamerule | Pieno |  Unito |
 | C (hybrid) | Variabile | Variabile | Variabile | Variabile | Misto |
 
 > **DM nota:** non spingere il party verso una path. Lascialo emergere dalla discussione di tavolo. Qualunque scelta sia gestibile narrativamente.

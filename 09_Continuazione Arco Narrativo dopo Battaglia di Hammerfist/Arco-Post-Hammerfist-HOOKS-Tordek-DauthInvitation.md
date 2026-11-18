@@ -88,7 +88,7 @@ Tordek accetta. Maewen lo accompagna sulla strada per Dauth (3 giorni di compagn
 
 ### 3.2 GRAY-B — Accetta ma il party gli viene dietro
 
-Tordek accetta. Il party **non si separa** — vanno tutti insieme a Dauth. Hella interrompe il rito (o lo completa parziale). Artemis rimanda la Torre (rischio Mirtul, Torre cammina). Thorik manda Khorn solo a Hammerfist per le lance, raggiunge il party a Dauth.
+Tordek accetta. Il party **non si separa** — vanno tutti insieme a Dauth. Hella interrompe il rito (o lo completa parziale). Artemis rimanda la Torre (rischio Flamerule, Torre cammina). Thorik manda Khorn solo a Hammerfist per le lance, raggiunge il party a Dauth.
 
 **Eco:** vedi `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §4 PATH-B (architettura together-sequenziale). **Beneficio:** party unito al Torneo (4 PG presenti, possibile partecipazione di non-monaci alle preliminari). **Costo:** Hella perde il rito completo (–1 alla CD ritrovo druidico più avanti); Artemis arriva alla Torre tardi (Torre potrebbe essere mossa).
 

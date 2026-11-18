@@ -1888,7 +1888,18 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `scripts/memoria_storica.py` (`pr_dai_merge`, `confronta_memoria`) · `plans/adr/ADR-0137-la-memoria-storica-si-scrive-a-ogni-blocco-di-lavoro-non-solo-al-merge.md`
 - **Solo qui:** fatti decisi su card trovati solo nella memoria delle sessioni al 18/11: rilascio 1.1.0 dopo le promozioni del 22-24/11 con card prima del tag; Lychee per le ancore solo su richiesta del DM. 21 righe della memoria rimandano solo a `/mnt/project-files/`. Il confronto dà falsi positivi su nomi di codice fra apici inversi (per esempio `goto`) e non controlla le 311 righe in prosa. Lo SHA 48871bd citato nella nota degli strumenti binari non è un oggetto di git.
 
-### MS-0167 · 2026-11-18 · Calendario di ARC-09: quickstart e armate allineati a state.yaml
+### MS-0167 · 2026-11-18 · Kit 4050: quattro errori trovati rileggendo, prima del primo giro
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** ADR-0136
+- **Temi:** prove-4050 kit distrobox box-appeso vulkan scheda-integrata powershell bom verifica
+- **Origine:** riga del 2026-11-18 «Kit delle prove 4050, rilettura a caccia di errori chiesta dal DM il 18/11» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha chiesto il 18/11 di controllare che non ci fossero errori nel kit unito con la #469. CI verde, Codex senza rilievi, Sourcery senza budget: i tre errori sono venuti dalla rilettura. Il box spento che resta appeso su `distrobox enter` era già noto dal 2026-10-10 per `llm-locale` (`box_pronto`), ma il kit non lo applicava ai box `comfyui` e `whisper`. La verifica della trascrizione guardava solo se il log nominava la NVIDIA. Lo script di Windows era senza BOM e non guardava l'uscita di `installa.sh`. Un quarto errore l'ha visto il thread «Preparare le prove sul portatile RTX 4050»: il giorno ricalcolato a ogni script divideva in due cartelle un giro che passa la mezzanotte (`PROVE_GIORNO`).
+- **Trovato nel repo:** `scripts/prove-4050/ospite.sh` (`box_avvia`, `nel_box`) · `scripts/prove-4050/verifica.py` (`VRAM_WHISPER_MIB`) · `scripts/prove-4050/trascrizione-gpu.sh` (`vram-durante.txt`) · `scripts/tests/test_prove_4050.py` (`test_box_spento_si_accende_senza_restare_appesi`, `test_trascrizione_sulla_scheda_integrata_e_ko`, `test_script_windows_con_bom`)
+- **Solo qui:** la soglia di 400 MiB è una stima mia (il modello q8_0 pesa circa 870 MB), non una misura sulla 4050: se al primo giro la memoria sale meno con la GPU giusta, va abbassata. Divisione dei file col thread «Preparare le prove sul portatile RTX 4050», che ha avuto la stessa richiesta: a lui `lettore-coerenza.sh`, `prosa.sh`, `immagini.sh`, `leggi_ollama.py`, `importa_gemini.py`; `drappo-flux.sh` e `schede-vincolate.sh` non toccati. Controllati e trovati a posto: `kit.sh`, `comune.sh`, `controlla.sh`, `riporta.sh`, `prove.json`.
+
+### MS-0168 · 2026-11-18 · Calendario di ARC-09: quickstart e armate allineati a state.yaml
 
 - **Data:** 2026-11-18
 - **PR:** —
@@ -1898,3 +1909,14 @@ repo scritto con altre parole.
 - **Testo:** due calendari di ARC-09 non coincidevano. `P2B-Torneo-DAUTH-DM-MASTER-REFERENCE` §1.1 (autoritativa) e `campaign/state.md` r.381 mettono i tre giorni del Torneo di Dauth ai Day 30-32, e `state.yaml` dà solo le finestre delle fasi (Torneo Day 25-34); il quickstart e la tabella delle armate (§4b) dicevano Day 26-30, con finestre più strette per P1, Rhest, Torre e Mercante. Il DM ha scelto che vale `state.yaml`: P1 Day 20-30, Rhest 25-32, Torre 28-35, Torneo 25-34 con i tre giorni ai Day 30-32, Mercante 28-36
 - **Trovato nel repo:** `campaign/DM-QUICKSTART-ARC09.md` · `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` · `campaign/state.yaml` · `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md`
 - **Solo qui:** l'ha trovata una delle tre «contraddizioni candidate» sui giorni del verificatore; le altre due, e ciò che resta della prima, sono falsi allarmi perché il confronto mette insieme fasi diverse della stessa entità e il giorno del torneo col Giorno di Marcia. Nella tabella dello scheduling una riga con due finestre fa nascere un falso allarme nuovo: una finestra per riga. La card citava `state.yaml` come fonte dei Day 30-32: il thread dell'audit ha fatto notare che lì c'è solo la finestra, e la fonte giusta è la tabella §1.1 del master del Torneo. I «Mirtul» rimasti in ARC-09 dopo la scelta «Giorno 1 = 1° Flamerule» sono fuori da questa voce e aspettano una card a parte
+
+### MS-0169 · 2026-11-18 · I «Mirtul» rimasti in ARC-09 diventano «Flamerule», con un cancello
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** ADR-0125
+- **Temi:** calendario arc-09 mirtul flamerule torre-invisibile lettera-brenna tempestas decisione-dm cancello
+- **Origine:** riga del 2026-11-18 «Calendario di ARC-09: i «Mirtul» rimasti» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha confermato sulla card della carta del cielo che vale l'ancora del 12/07: Giorno di Marcia 1 = 1° Flamerule, e la Torre cammina la notte del 30 Flamerule. Restavano 31 «Mirtul» in 9 file: la scadenza «fine Mirtul, poi la torre cammina» nei file degli agganci, nel dossier delle piste, nella Cerimonia delle 100 Asce, nella scheda di Tempestas e in `state.yaml`, più la data della lettera di Brenna. Il DM ha scelto di correggerli tutti, lettera compresa: ora è datata «il diciannovesimo di Flamerule»
+- **Trovato nel repo:** `scripts/tests/test_calendario_flamerule.py` · `campaign/state.yaml` (riga di Tempestas in `conoscenze`) · `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md` · `scripts/session_recap.py` (`MARCH_DAY1_HARPTOS`)
+- **Solo qui:** il coordinatore aveva chiesto di distinguere i «Mirtul» compatibili da quelli in contrasto: letti uno per uno, nessuno era compatibile, perché tutti legano il mese al Giorno 30 o al dopo-Hammerfist. La regola pensata all'inizio (mese scritto contro Giorno di Marcia, riga per riga) non è stata scritta: il cancello cerca solo la parola «Mirtul» nei testi di gioco, e non vede una data sbagliata scritta con un altro mese. Restano fuori `campaign/state-changelog.md`, che è storia, e i riferimenti di lore in `skills/`

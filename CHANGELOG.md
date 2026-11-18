@@ -227,6 +227,8 @@ Il tag e il rilascio li crea il workflow Release (ADR-0100).
 - `voto_scrittura` resta, perché il banco del modello locale (ADR-0089) lo usa per votare le sue corse: il rilevatore del «sembra» ora vive in `validate_prosa` e il banco lo riusa (PR #264).
 
 ### Corretto
+- Prove sulla RTX 4050: `immagini.sh --profilo cpu` non poteva partire (ComfyUI rifiuta `--cpu` con `--lowvram`) e ora il profilo leggero gira sulla GPU; un ComfyUI rimasto acceso non viene più usato né lasciato acceso; il lettore della coerenza non perde le risposte se Ollama cade e rispetta `LLM_PORTA`.
+- `importa_gemini.py takeout`: le date dell'HTML diventano ISO (un file per giorno, in ordine), e da un Takeout intero entrano solo le attività di Gemini.
 - `conformita_statblocchi`: in una scheda senza `attacchi:` una voce di equipaggiamento con un «+1» non è più letta come l'attacco della scheda.
 - Stampa: `misura_stampa.parole_ripetute` toglie le testatine riga per riga. Nei capitoli di poche pagine la testatina contava come copia; i valori del registro scendono di poco (serata 12,3% → 11,8% a parità di testo).
 - I titoli ricomposti dal tema Typst perdevano l'apostrofo («LALBA» per «L'ALBA»): `to-string` ora rende gli apostrofi.

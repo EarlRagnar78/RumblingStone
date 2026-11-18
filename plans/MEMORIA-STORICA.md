@@ -1876,3 +1876,14 @@ repo scritto con altre parole.
 - **Testo:** dopo la #468 (MS-0163) il conto di ogni blocco senza incantesimi diceva «niente Incantesimi focalizzati», anche quando il ruolo non l'avrebbe mai preso. Il coordinatore ha visto due rossi nuovi in `impronte.py --confronta` (genera_creatura_gs7 e gs14): la sola differenza con ea63a192 era quella riga. Ora `applica_talenti` rifà la scelta senza esclusioni, su copie dello stato e del generatore casuale, e scrive la nota solo se la scelta senza esclusioni avrebbe preso il talento.
 - **Trovato nel repo:** `scripts/genera_creatura.py` (`applica_talenti`) · `scripts/tests/test_talenti.py` (`Focalizzati`)
 - **Solo qui:** sull'impronta delle 720 creature 484 note tolte e 156 restano, e null'altro cambia; `impronte.py --confronta` torna ai 3 rossi di prima (suggest_encounter, conformita_statblocchi, derive_statblocks).
+
+### MS-0166 · 2026-11-18 · Il ricontrollo delle prove 4050: sette errori negli script di lettore, immagini e Gemini
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** —
+- **Temi:** prove-4050 comfyui lowvram immagini lettore ollama gemini takeout ricontrollo errori
+- **Origine:** riga del 2026-11-18 «Prove sulla RTX 4050, ricontrollo chiesto dal DM il 18/11» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha chiesto il 18/11 di ricontrollare gli errori e correggerli, a questo thread (#447) e a quello del kit (#469). I due thread si sono divisi i file: qui lettore, prosa, immagini, la pipeline delle immagini, `leggi_ollama.py` e `importa_gemini.py`; al thread del kit il resto. L'errore più grave: `immagini.sh --profilo cpu`, che la guida dà come confronto col 29/10 «sulla GPU», passava a ComfyUI `--cpu` e `--lowvram` insieme. Stanno nello stesso gruppo esclusivo e ComfyUI esce subito; lo script aspettava sei minuti e diceva «non parte». Lo stesso errore era già stato trovato in `drappo_flux.py` (commit 03ca93f7) e non riportato qui. Ora il profilo leggero gira sulla GPU (`RS_COMFY_DEVICE=gpu`) e senza `--lowvram`.
+- **Trovato nel repo:** `scripts/prove-4050/immagini.sh` · `plans/esperimenti/immagini-posa-4050-2026-11-15/dati/esegui_gpu.py` (`argomenti_comfy`, `avvia`) · `plans/esperimenti/grafo-eventi-2026-11-12/leggi_ollama.py` · `scripts/importa_gemini.py` (`ora_iso`, `_di_gemini`) · `scripts/tests/test_prove_4050_correzioni.py`
+- **Solo qui:** niente di tutto questo è girato su una GPU: le correzioni sono provate con server finti e leggendo gli argomenti. Controllato e trovato a posto: le 636 domande del lettore sono lunghe al massimo 981 caratteri, quindi il contesto 4096 del kit non le taglia. Segnalato al thread del kit e non toccato: `comune.sh` calcola il giorno a ogni script, e un `kit.sh tutte` che passa la mezzanotte (il giro stimato supera le sei ore) divide i risultati su due cartelle.

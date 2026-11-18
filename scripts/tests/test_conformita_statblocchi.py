@@ -121,6 +121,20 @@ class TestITalentiMordono(unittest.TestCase):
         # «Iniziativa/Scacciare Migliorato» sono due talenti in una parola
         self.assertEqual(LC.talenti("Talenti: Iniziativa/Scacciare Migliorato")["init"], 4)
 
+    def test_il_talento_di_una_variante_non_e_della_scheda(self):
+        # hobgoblin regolare (audit del 2026-11-18): la Volontà di Ferro sta
+        # solo nella riga della variante «Combattente GS2»; contarla dava Vol +1≠3
+        testo = ("Talenti: Allerta, Arma Focalizzata (spada lunga); mantello della resistenza +1\n"
+                 "**Variante «Combattente GS2»**: Volontà di Ferro al posto di Arma Focalizzata.")
+        self.assertEqual(LC.talenti(testo).get("Vol"), 1)
+        corpo = ("gs: 2\ntipo: Medium humanoid (goblinoid), Warrior 3\nca: 19\npf: 23\n"
+                 "ts: Temp +6, Rifl +3, Vol +1\nattributi: For 13 Des 13 Cos 14 Int 10 Sag 9 Car 8\n"
+                 "voci:\n  - Talenti: Allerta, Arma Focalizzata (spada lunga)\n"
+                 "  - Altro equipaggiamento: mantello della resistenza +1")
+        s = scheda(corpo, "**hp 23** (3 HD)\n**Variante «Combattente GS2»**: Volontà di Ferro al posto di "
+                   "Arma Focalizzata.", titolo="# Hobgoblin (Warrior 3)")
+        self.assertNotIn("Vol", C.scarti(C.verifica(s)))
+
     def test_iniziativa_e_un_identita(self):
         s = scheda("gs: 3\nca: 14\npf: 15\niniziativa: -1\nts: Temp +6, Rifl +0, Vol +0\n"
                    "attributi: For 14 Des 10 Cos 16 Int 2 Sag 11 Car 9\nvoci:\n  - Talenti: Allerta")

@@ -167,8 +167,8 @@
         "pr/461",
         "origin/claude/project-thread-4eo6nn"
       ],
-      "stato": "in-volo",
-      "dove": "PR #461 aperta in bozza il 2026-11-16: RIPRESA-PR D2 (arte del Drappo), script FLUX.2 klein 4B per il portatile 4050 in scripts/prove-4050/ (drappo-flux.sh, drappo_flux.py). La D2 resta aperta fino alla scelta del DM tra A e B"
+      "stato": "portato",
+      "dove": "PR #461 unita il 2026-11-16 (8cf54678): RIPRESA-PR D2 (arte del Drappo), script FLUX.2 klein 4B per il portatile 4050 in scripts/prove-4050/ (drappo-flux.sh, drappo_flux.py). La D2 resta aperta in PIANO-RIPRESA-PR-ABBANDONATE fino alla scelta del DM tra A e B"
     },
     {
       "ref": [

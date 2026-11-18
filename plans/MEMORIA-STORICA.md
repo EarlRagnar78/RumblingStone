@@ -1891,7 +1891,7 @@ repo scritto con altre parole.
 ### MS-0167 · 2026-11-18 · Decodifica vincolata: tre errori dello script corretti prima della misura
 
 - **Data:** 2026-11-18
-- **PR:** —
+- **PR:** #473
 - **ADR:** —
 - **Temi:** document-ai decodifica-vincolata tattiche prova-4050 ollama S8
 - **Origine:** riga del 2026-11-18 «Tecnica 3, decodifica vincolata: tre errori dello script della prova corretti prima della misura» in `plans/CHANGELOG.md`

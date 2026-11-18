@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-18 | STATO-E-ORDINE | ADR-0137, la memoria storica a ogni blocco di lavoro (richiesta del DM del 18/1… | 🟡 PR unite dal 12/11 ritrovate con `--pr`: 37 → 88 su 90 (le 2 senza voce toccano solo `docs/`). Memoria delle sessioni al 18/11: 78 righe su 407 controllabili… |
 | 2026-11-18 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, il generatore: la nota «niente Incantesimi focalizzati» nel conto esc… | ✅ |
 | 2026-11-17 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Kit unico delle prove sulla RTX 4050, richiesta del DM del 17/11 (ADR-0136):… | 🟡 prove lanciabili con un comando: da 0 a 7 su 7; sistemi con un percorso di installazione: da 1 (Bazzite) a 4. Mai girato su una GPU né su Debian, CachyOS o W… |
 | 2026-11-17 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, il generatore: Incantesimi focalizzati con la scuola. Il nome italian… | In PR: sull'impronta (720 blocchi) nome sbagliato 234 → 0, senza scuola 312 → 0, su blocchi senza incantesimi 210 → 0 |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-17 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Ozyrrandion parte informato sui PG solo se Sethrax è fuggito dal Torneo col sem… | ✅ una riga di tattica, nessun numero cambiato |
 | 2026-11-16 | RIPRESA-PR-ABBANDONATE | D2, collaudo dell'arte del Drappo: lo script per il portatile 4050 | 🟡 script pronto, mai girato sulla 4050: tre tavole (ritratto-vanna, tavola-la-ruota, il-drappo) × due semi con FLUX.2… |
 | 2026-11-16 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | L2, L5 e L6: il piano si chiude | ✅ Piano completo. L5 chiuso con la prova, non per tempo: RIPRESA-PR D11 decisa l'8/11 e la #106 chiusa il 24/10. L2: R-3 misurato (quattro rami di PR fuse con… |
-| 2026-11-15 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: il corredo di sette schede, scelto dal DM sulle card d… | sette schede da nessuna riga di corredo a una riga di corredo con valore e fonte (Dovil 5.865/7.200, Drow 10.510/12.000, Duergar ≤6.410/9.400, Tempestas 8.560/… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 165 voci, l'ultima MS-0165 del 2026-11-18 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 166 voci, l'ultima MS-0166 del 2026-11-18 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

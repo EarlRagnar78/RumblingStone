@@ -21,6 +21,12 @@ e non si riassume: si aggiunge in coda. Questo script lo **legge**:
     python3 scripts/memoria_storica.py --elenco          # id, data e titolo
     python3 scripts/memoria_storica.py --json ...        # per un agente
     python3 scripts/memoria_storica.py --check           # il cancello della CI
+    python3 scripts/memoria_storica.py --confronta-memoria DIR   # cosa della memoria
+                                                         # delle sessioni non è nel repo
+
+`--pr N` trova anche le voci che la PR ha aggiunto senza scriversi il numero
+(campo PR «—», perché il numero nasce dopo il commit): lo ricava da git, dal
+merge «Merge pull request #N» che ha portato la voce su main (ADR-0137).
 
 I filtri si sommano (tutti devono valere). `--check` controlla la forma
 (numeri consecutivi, date valide, campi obbligatori) e che il CHANGELOG dei
@@ -33,6 +39,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import subprocess
 import sys
 import unicodedata
 from dataclasses import asdict, dataclass, field
@@ -58,10 +65,11 @@ class Voce:
     riga: int
     campi: "dict[str, str]" = field(default_factory=dict)
     testo_md: str = ""
+    pr_merge: "set[int]" = field(default_factory=set)
 
     @property
     def pr(self) -> "set[int]":
-        return {int(x) for x in re.findall(r"#(\d+)", self.campi.get("PR", ""))}
+        return {int(x) for x in re.findall(r"#(\d+)", self.campi.get("PR", ""))} | self.pr_merge
 
     @property
     def adr(self) -> "set[int]":
@@ -99,6 +107,104 @@ def leggi(testo: str) -> "list[Voce]":
     if corrente:
         corrente.testo_md = "\n".join(righe).rstrip()
     return voci
+
+
+_MERGE = re.compile(r"^Merge pull request #(\d+)|\(#(\d+)\)\s*$")
+
+
+def pr_dai_merge(radice: Path = RADICE, file: Path = FILE) -> "dict[str, set[int]]":
+    """MS-NNNN → le PR il cui merge (primo genitore) ha aggiunto la testa della voce.
+
+    Una voce si scrive prima che la PR abbia un numero: 82 voci su 98 dal
+    2026-11-12 hanno «PR: —». Il numero sta nel messaggio del merge, e git lo
+    sa. Senza git o in un clone shallow il dizionario è solo più corto.
+    """
+    try:
+        rel = file.resolve().relative_to(radice.resolve())
+        out = subprocess.run(
+            ["git", "-C", str(radice), "log", "--first-parent", "-m", "--unified=0",
+             "--format=@@@%s", "-p", "--", str(rel)],
+            capture_output=True, text=True, check=True, timeout=120).stdout
+    except (ValueError, OSError, subprocess.SubprocessError):
+        return {}
+    mappa: "dict[str, set[int]]" = {}
+    corrente = None
+    for r in out.splitlines():
+        if r.startswith("@@@"):
+            m = _MERGE.search(r[3:])
+            corrente = int(m.group(1) or m.group(2)) if m else None
+        elif corrente and r.startswith("+### MS-"):
+            t = TESTA.match(r[1:])
+            if t:
+                mappa.setdefault(t.group(1), set()).add(corrente)
+    return mappa
+
+
+# Cosa di una riga di memoria si può cercare nel repo senza capirla: numeri di
+# PR, ADR e voci, SHA, percorsi e nomi fra apici inversi.
+_TOKEN = re.compile(r"#\d{3,4}\b|\bADR-\d{4}\b|\bMS-\d{4}\b|\b(?=[0-9a-f]*\d)(?=[0-9a-f]*[a-f])[0-9a-f]{7,8}\b"
+                    r"|`([^`\s][^`]{2,80})`|\b[\w.-]+/[\w./-]+\.(?:md|py|json|toml|yaml|txt|pdf|png|sh)\b")
+
+
+def _gettoni(riga: str) -> "list[str]":
+    fuori = []
+    for m in _TOKEN.finditer(riga):
+        t = m.group(1) or m.group(0)
+        if t not in fuori:
+            fuori.append(t)
+    return fuori
+
+
+def _corpo_del_repo(radice: Path) -> str:
+    """Il testo dei file tracciati più i messaggi dei commit (lì stanno SHA e numeri di PR)."""
+    parti = []
+    try:
+        files = subprocess.run(["git", "-C", str(radice), "ls-files", "-z"], capture_output=True,
+                               text=True, check=True, timeout=60).stdout.split("\0")
+        parti.append(subprocess.run(["git", "-C", str(radice), "log", "--format=%h %H %s %b"],
+                                    capture_output=True, text=True, check=True, timeout=120).stdout)
+    except (OSError, subprocess.SubprocessError):
+        files = []
+    for f in files:
+        if f.endswith((".md", ".json", ".toml", ".yaml", ".yml", ".txt", ".py", ".sh", ".tsv")):
+            try:
+                parti.append(f)
+                parti.append((radice / f).read_text(encoding="utf-8", errors="replace"))
+            except OSError:
+                pass
+    return "\n".join(parti)
+
+
+def confronta_memoria(cartella: Path, radice: Path = RADICE, storica: str = "") -> dict:
+    """Per ogni riga della memoria delle sessioni, i gettoni che il repo non ha.
+
+    Non decide se una riga è archiviata: dice dove guardare. Una riga senza
+    gettoni (una regola in prosa) non si può controllare così e lo si dichiara.
+    """
+    corpo = _corpo_del_repo(radice)
+    note, righe_tot, con_gettoni, scoperte = [], 0, 0, []
+    visti: "dict[str, bool]" = {}
+    for f in sorted(cartella.glob("*.md")):
+        nome = f.stem
+        testo = f.read_text(encoding="utf-8", errors="replace")
+        if nome != "MEMORY":
+            note.append({"nota": nome, "citata_nella_storica": nome in storica})
+        for n, r in enumerate(testo.splitlines(), 1):
+            if not r.strip() or r.startswith("---") or r.startswith(("name:", "description:", "metadata:", "  type:", "  modified:")):
+                continue
+            righe_tot += 1
+            g = _gettoni(r)
+            if not g:
+                continue
+            con_gettoni += 1
+            for t in g:
+                if t not in visti:
+                    visti[t] = t in corpo
+            mancano = [t for t in g if not visti[t]]
+            if mancano:
+                scoperte.append({"file": f.name, "riga": n, "mancano": mancano, "testo": r.strip()[:160]})
+    return {"righe": righe_tot, "righe_con_gettoni": con_gettoni, "righe_scoperte": scoperte,
+            "note": note, "note_citate": sum(x["citata_nella_storica"] for x in note)}
 
 
 def _piano(s: str) -> str:
@@ -175,6 +281,10 @@ def main(argv=None) -> int:
     ap.add_argument("--json", action="store_true", help="Uscita per un agente: le voci coi loro campi.")
     ap.add_argument("--check", action="store_true", help="Il cancello: esce 1 se il file è "
                     "scritto male o il CHANGELOG dei piani non lo collega.")
+    ap.add_argument("--confronta-memoria", type=Path, metavar="DIR",
+                    help="Cartella della memoria delle sessioni (MEMORY.md e note): elenca le righe "
+                         "con PR, ADR, SHA o percorsi che il repo non ha. Non è un cancello: esce 0.")
+    ap.add_argument("--senza-git", action="store_true", help=argparse.SUPPRESS)
     ap.add_argument("--file", type=Path, default=FILE, help=argparse.SUPPRESS)
     a = ap.parse_args(argv)
 
@@ -200,9 +310,31 @@ def main(argv=None) -> int:
         print(f"✓ memoria storica: {len(leggi(testo))} voci in forma, collegata al changelog")
         return 0
 
-    trovate = filtra(leggi(testo), a.parole, a.pr, a.adr, a.tema, a.da, a.a, a.ident)
+    if a.confronta_memoria:
+        if not a.confronta_memoria.is_dir():
+            print(f"manca la cartella {a.confronta_memoria}", file=sys.stderr)
+            return 2
+        r = confronta_memoria(a.confronta_memoria, storica=testo)
+        if a.json:
+            print(json.dumps(r, ensure_ascii=False, indent=1))
+            return 0
+        for s in r["righe_scoperte"]:
+            print(f"✗ {s['file']}:{s['riga']}  mancano {', '.join(s['mancano'])}\n    {s['testo']}")
+        print(f"\n— righe {r['righe']}, con gettoni cercabili {r['righe_con_gettoni']}, "
+              f"con gettoni che il repo non ha {len(r['righe_scoperte'])}; note "
+              f"{len(r['note'])}, citate nella memoria storica {r['note_citate']}. "
+              "Le righe senza gettoni (regole in prosa) non si controllano così.")
+        return 0
+
+    voci = leggi(testo)
+    if a.pr is not None and not a.senza_git:
+        mappa = pr_dai_merge(file=a.file)
+        for v in voci:
+            v.pr_merge = mappa.get(v.id, set())
+    trovate = filtra(voci, a.parole, a.pr, a.adr, a.tema, a.da, a.a, a.ident)
     if a.json:
-        print(json.dumps([{k: v for k, v in asdict(x).items() if k != "numero"} for x in trovate],
+        print(json.dumps([{k: (sorted(v) if isinstance(v, set) else v)
+                           for k, v in asdict(x).items() if k != "numero"} for x in trovate],
                          ensure_ascii=False, indent=1))
     elif a.elenco:
         for v in trovate:

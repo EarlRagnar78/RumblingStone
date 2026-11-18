@@ -1876,3 +1876,14 @@ repo scritto con altre parole.
 - **Testo:** dopo la #468 (MS-0163) il conto di ogni blocco senza incantesimi diceva «niente Incantesimi focalizzati», anche quando il ruolo non l'avrebbe mai preso. Il coordinatore ha visto due rossi nuovi in `impronte.py --confronta` (genera_creatura_gs7 e gs14): la sola differenza con ea63a192 era quella riga. Ora `applica_talenti` rifà la scelta senza esclusioni, su copie dello stato e del generatore casuale, e scrive la nota solo se la scelta senza esclusioni avrebbe preso il talento.
 - **Trovato nel repo:** `scripts/genera_creatura.py` (`applica_talenti`) · `scripts/tests/test_talenti.py` (`Focalizzati`)
 - **Solo qui:** sull'impronta delle 720 creature 484 note tolte e 156 restano, e null'altro cambia; `impronte.py --confronta` torna ai 3 rossi di prima (suggest_encounter, conformita_statblocchi, derive_statblocks).
+
+### MS-0166 · 2026-11-18 · La memoria storica si ritrova per PR e si confronta con la memoria delle sessioni
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** ADR-0137 ADR-0127
+- **Temi:** memoria-storica memoria processo audit thread card
+- **Origine:** riga del 2026-11-18 «ADR-0137, la memoria storica a ogni blocco di lavoro» in `plans/CHANGELOG.md`
+- **Testo:** audit dell'obbligo di ADR-0127 a sei giorni dalla nascita. Imposto da un cancello: voce MS per ogni PR col changelog (88 PR su 90 unite dal 12/11; #387 e #389 toccano solo `docs/`) e forma del file (165 voci). Solo regola scritta: archiviare prima di togliere una riga dalla memoria delle sessioni; nessuna voce su 98 è nata così, né da una scelta su card o da un thread senza PR. Il campo PR resta «—» in 82 voci su 98 perché la voce precede il numero: ora `--pr` lo ricava dal merge. Il confronto con le regole del progetto di dottorato del DM (lettura a inizio conversazione, cercare prima di chiedere, controllo delle decisioni superate, diario a fine di ogni blocco, decisioni una volta sola, discordanze segnalate) dice che qui mancano l'ordine di ricerca prima di chiedere e la voce a fine blocco fuori dalle PR.
+- **Trovato nel repo:** `scripts/memoria_storica.py` (`pr_dai_merge`, `confronta_memoria`) · `plans/adr/ADR-0137-la-memoria-storica-si-scrive-a-ogni-blocco-di-lavoro-non-solo-al-merge.md`
+- **Solo qui:** fatti decisi su card trovati solo nella memoria delle sessioni al 18/11: rilascio 1.1.0 dopo le promozioni del 22-24/11 con card prima del tag; Lychee per le ancore solo su richiesta del DM. 21 righe della memoria rimandano solo a `/mnt/project-files/`. Il confronto dà falsi positivi su nomi di codice fra apici inversi (per esempio `goto`) e non controlla le 311 righe in prosa. Lo SHA 48871bd citato nella nota degli strumenti binari non è un oggetto di git.

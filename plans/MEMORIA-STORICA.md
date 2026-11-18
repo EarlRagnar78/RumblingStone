@@ -1843,3 +1843,14 @@ repo scritto con altre parole.
 - **Testo:** con la #465 il booklet del Palio ristampava le due marche `[INFERRED]` dei sicari e della chierica, e il ratchet le contava due volte: la baseline saliva a 16 invece che a 14. Ora un file che dichiara in testa `<!-- GENERATO da scripts/` mette le marche già presenti in un sorgente nella classe «copie», che il ratchet non sorveglia.
 - **Trovato nel repo:** `scripts/inventory_inferred.py` (`e_generato`, classe «copie») · `scripts/tests/test_inventory_inferred.py`
 - **Solo qui:** la copia si riconosce dal testo della marca, spazi normalizzati. Se il sorgente cambia la marca e il booklet non è rigenerato, la vecchia marca nel booklet torna fra gli aperti finché non lo si rigenera: è voluto, perché il booklet non allineato è già un errore di `validate_booklets`.
+
+### MS-0163 · 2026-11-17 · Il generatore scrive la scuola di Incantesimi focalizzati
+
+- **Data:** 2026-11-17
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** generatore talenti incantesimi lessico scuole spell-focus decisioni-dm
+- **Origine:** riga del 2026-11-17 «ADR-0126, il generatore: Incantesimi focalizzati con la scuola» in `plans/CHANGELOG.md`
+- **Testo:** il lessico dava a Spell Focus il nome «Incantesimi focalizzati (bene, caos, legge o male)», che è il talento degli allineamenti del Libro delle Imprese Eroiche; nel 2026-11-11 (D3 dell'esito del verificatore Prolog) `talenti._per_chiave` aveva tolto la parentesi per la ricerca, ma il generatore la stampava. Ora il nome è «Incantesimi focalizzati» e la scuola è quella con più incantesimi sul blocco (tabella `[scuole]` dall'SRD 3.5, dal PRD per l'APG). Un mostro senza incantesimi prende il talento seguente del ruolo (card del DM del 17/11). Sull'impronta: nome sbagliato 234 → 0, senza scuola 312 → 0.
+- **Trovato nel repo:** `scripts/genera_creatura.py` (`scuola_prevalente`, `incantesimi_del_blocco`) · `sistemi/dnd35/dati/liste_incantesimi.toml` `[scuole]`
+- **Solo qui:** la regola di parità (vince la scuola dell'incantesimo di livello più alto) è mia, non del DM.

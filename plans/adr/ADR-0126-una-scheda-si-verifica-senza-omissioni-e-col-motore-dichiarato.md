@@ -1418,3 +1418,17 @@ Se la taglia non è quella della base il grado atteso è un intervallo: +1 se è
 **Misura** contro main ec5fca70 con `verifica_scheda.py Bestiario 0*/`: violazioni 34 = 34, non verificabili 388 → 387. Il segugio si giudica ora su CA, armatura naturale e caratteristiche, e passa; restano non verificabili i dadi dei suoi attacchi naturali, perché la verifica del danno non applica ancora la tabella dei modelli.
 
 **Limiti dichiarati.** La base dichiarata vale solo con la stessa taglia. Il dado degli attacchi naturali coi modelli non si giudica ancora. Draxoksus resta non verificabile sulle caratteristiche: ha livelli di classe.
+### Il generatore: Incantesimi focalizzati con la scuola (2026-11-17)
+
+**Contesto.** Il generatore scriveva «Incantesimi focalizzati (bene, caos, legge o male)»: il lessico aveva preso per Spell Focus il nome del talento del *Libro delle Imprese Eroiche* che lo estende agli allineamenti (che il lessico ha già a parte, «Incantesimi Focalizzati (Bene)»). La scuola mancava sempre, e il talento finiva anche su mostri senza incantesimi, dove non fa niente. Il difetto l'ha trovato il thread Document AI.
+
+**Decisione.**
+- Il nome italiano di Spell Focus è «Incantesimi focalizzati» (`scripts/lessico_it_35.tsv`, `talenti.toml` rigenerato).
+- `estrai_liste.py` legge dall'SRD 3.5 anche la scuola di ogni incantesimo (la riga sotto il titolo) e la scrive in `[scuole]` di `liste_incantesimi.toml`: 600 incantesimi, fuori «Universal» e «Any». Per i 45 incantesimi dell'APG che il generatore usa, la scuola viene dal PRD (`[scuole]` di `sistemi/pf1e/dati/incantesimi.toml`).
+- `genera_creatura.py` dà a Incantesimi focalizzati e a Incantesimi focalizzati superiore la scuola con più incantesimi sul blocco; a parità vince la scuola dell'incantesimo di livello più alto, poi l'ordine alfabetico. Il conto lo scrive.
+- Un blocco senza incantesimi non prende Incantesimi focalizzati: prende il talento seguente del suo ruolo, anche quando il carattere tirato era «Incantesimi Focalizzati». Lo ha scelto il DM sulla card del 2026-11-17 (la consigliata).
+- Lo stesso vale per un blocco i cui incantesimi non hanno nessuno una scuola nelle tabelle (gli estratti dell'alchimista PF1e, come *spezzalinee*): il talento si scriverebbe senza scuola. L'ha notato la revisione di Codex; sui PNG PF1e a classi (945 generati, 21 classi) erano 44 talenti senza scuola su 665.
+
+**Misura** sull'impronta delle creature (720 blocchi generati), contro main: nome sbagliato 234 → 0; Incantesimi focalizzati senza scuola 312 → 0, con la scuola 0 → 102; su blocchi senza incantesimi 210 → 0.
+
+**Limiti dichiarati.** La scuola è quella degli incantesimi scelti, non una scelta di personaggio: il DM la cambia se vuole un mago specialista. La CD scritta nel blocco non aggiunge il +1 (o +2) sulla scuola. Gli altri talenti da incantatore (Incantare in combattimento, metamagia, Incantesimo Rapido) restano possibili su un mostro senza incantesimi: la card chiedeva solo di Incantesimi focalizzati. Nel PRD «thunderous drums» si chiama «Thundering Drums»: la scuola è presa da lì, il nome nei dati non è corretto in questa PR.

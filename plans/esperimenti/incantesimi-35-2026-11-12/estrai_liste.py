@@ -4,6 +4,8 @@
 Ogni incantesimo dell'SRD 3.5 (`spells/spells-*.md`) ha la riga «Level: Clr 2,
 Sor/Wiz 2, Luck 2»: da lì escono le liste per classe e per dominio, nella
 stessa forma di `sistemi/pf1e/dati/liste_incantesimi.toml`. Solo nomi e livelli.
+La riga sotto il titolo («Conjuration (Creation) [Acid]») dà la scuola: la tabella
+`[scuole]` serve al generatore per la scuola di Incantesimi focalizzati.
 
 Uso:
   python3 estrai_liste.py            # scrive sistemi/dnd35/dati/liste_incantesimi.toml
@@ -22,14 +24,27 @@ SIGLE = {"Brd": ["bard"], "Clr": ["cleric"], "Drd": ["druid"], "Pal": ["paladin"
          "Sor/Wiz": ["sorcerer", "wizard"], "Wiz": ["wizard"], "Sor": ["sorcerer"]}
 
 
-def leggi(cartella: Path) -> "tuple[dict, dict]":
+#: le scuole a cui si applica Incantesimi focalizzati («Any» e «Universal» no)
+SCUOLE = ("Abjuration", "Conjuration", "Divination", "Enchantment", "Evocation", "Illusion", "Necromancy",
+          "Transmutation")
+
+
+def leggi(cartella: Path) -> "tuple[dict, dict, dict]":
     liste: dict = {}
     domini: dict = {}
+    scuole: dict = {}
     for f in sorted(cartella.glob("spells-*.md")):
         nome = None
+        attesa = None   # il titolo di cui si aspetta la riga della scuola
         for riga in f.read_text(encoding="utf-8").splitlines():
             if riga.startswith("## "):
-                nome = riga[3:].strip()
+                nome = attesa = riga[3:].strip()
+                continue
+            if attesa and riga.strip():
+                prima = riga.split()[0]
+                if prima in SCUOLE:
+                    scuole[attesa] = prima.lower()
+                attesa = None
             m = re.match(r"\*\*Level:\*\*\s*(.+)", riga)
             if not (m and nome):
                 continue
@@ -44,10 +59,10 @@ def leggi(cartella: Path) -> "tuple[dict, dict]":
                 else:
                     domini.setdefault(sigla.lower(), {}).setdefault(liv, []).append(nome)
             nome = None
-    return liste, domini
+    return liste, domini, scuole
 
 
-def scrivi(liste: dict, domini: dict) -> str:
+def scrivi(liste: dict, domini: dict, scuole: dict) -> str:
     n = len({x for c in liste.values() for v in c.values() for x in v})
     righe = ["# sistemi/dnd35/dati/liste_incantesimi.toml — le liste di classe e di dominio 3.5 (ADR-0124 §10)",
              "# Generato da plans/esperimenti/incantesimi-35-2026-11-12/estrai_liste.py dalla riga «Level:»",
@@ -59,6 +74,9 @@ def scrivi(liste: dict, domini: dict) -> str:
             righe += ["", f'[{titolo}."{classe}"]']
             for liv in sorted(gruppo[classe]):
                 righe.append(f'"{liv}" = ' + json.dumps(sorted(gruppo[classe][liv]), ensure_ascii=False))
+    righe += ["", "# la scuola di ogni incantesimo, dalla riga sotto il titolo (solo le otto scuole di",
+              "# Incantesimi focalizzati: «Universal» e «Any» restano fuori)", "[scuole]"]
+    righe += [f"{json.dumps(n, ensure_ascii=False)} = {json.dumps(scuole[n])}" for n in sorted(scuole)]
     return "\n".join(righe) + "\n"
 
 

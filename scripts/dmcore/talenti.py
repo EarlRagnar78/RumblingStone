@@ -79,8 +79,8 @@ def _per_chiave(sistema: str) -> "dict[str, str]":
     d = dati(sistema)["talenti"]
     out = {_k(n): n for n in d}
     out.update({_k(v["it"]): n for n, v in d.items() if v.get("it")})
-    # «Incantesimi focalizzati (bene, caos, legge o male)»: il lessico mette fra
-    # parentesi le varianti, la scheda scrive solo il nome (ADR-0124)
+    # «Incantesimi focalizzati (invocazione)», «Competenza nelle armature (leggere)»:
+    # la scheda scrive la scelta fra parentesi, il nome si cerca senza (ADR-0124)
     for n, v in d.items():
         if v.get("it"):
             out.setdefault(_k(re.sub(r"\s*\(.*\)$", "", v["it"])), n)
@@ -271,7 +271,7 @@ class Scelta:
 
 def scegli(sistema: str, ruolo: str, s: Stato, *, dv_razziali: int = 0, firma: "str | None" = None,
            stile: "str | None" = None, rng: "random.Random | None" = None,
-           obbligati: "list[str] | None" = None) -> Scelta:
+           obbligati: "list[str] | None" = None, esclusi: "tuple[str, ...]" = ()) -> Scelta:
     rng = rng or random.Random(0)
     presi: "list[tuple[str, str]]" = []
     note: "list[str]" = []
@@ -284,12 +284,15 @@ def scegli(sistema: str, ruolo: str, s: Stato, *, dv_razziali: int = 0, firma: "
     for cl, en in concessi(sistema, s.livelli):
         prendi(en, f"concesso da {cl}")
     ordine = _ordine(sistema, ruolo, rng)
+    ordine = [n for n in ordine if n not in esclusi]   # talenti che sul blocco non farebbero niente
     if obbligati:   # requisiti di una classe di prestigio: prima di tutto il resto, nell'ordine dato
         ordine = list(obbligati) + [n for n in ordine if n not in obbligati]
     if firma:
         en = nome_inglese(sistema, firma)
         if en is None:
             note.append(f"«{firma}» non è un talento: resta nel carattere, non tra i talenti")
+        elif en in esclusi:
+            note.append(f"«{italiano(sistema, en)}» non preso: sul blocco non farebbe niente")
         else:
             m = manca(sistema, en, Stato(s.car, s.bab, s.livelli, s.lic, s.talenti))
             if m:
@@ -301,7 +304,7 @@ def scegli(sistema: str, ruolo: str, s: Stato, *, dv_razziali: int = 0, firma: "
             note.append(f"talento bonus di {cl} al {lv}°: la lista non è nei dati, preso tra i generali")
             ammessi, senza = set(dati(sistema)["talenti"]), False
         for en in ordine + sorted(ammessi):
-            if en in ammessi and en not in s.talenti and (senza or not manca(sistema, en, s)):
+            if en in ammessi and en not in esclusi and en not in s.talenti and (senza or not manca(sistema, en, s)):
                 prendi(en, f"bonus {cl} {lv}°")
                 break
         else:

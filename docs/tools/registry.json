@@ -6779,6 +6779,7 @@
         "capacita": [
           "creature.costruzione",
           "creature.incantesimi",
+          "creature.liste_incantesimi",
           "creature.statistiche_per_gs",
           "creature.talenti",
           "formule.regole",

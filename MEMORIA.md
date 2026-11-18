@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-17 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, il generatore: Incantesimi focalizzati con la scuola. Il nome italian… | In PR: sull'impronta (720 blocchi) nome sbagliato 234 → 0, senza scuola 312 → 0, su blocchi senza incantesimi 210 → 0 |
 | 2026-11-17 | RICERCA-MARCATURE-INFERRED | `inventory_inferred` non conta due volte la marca ristampata in un file generat… | ✅ aperti su main 6951f2b2: 16 → 14 (le 2 copie del `PALIO-BOOKLET.hb.md`), baseline 16 → 14; storici 855 e meta 59 invariati; 3 test nuovi, la mutazione che to… |
 | 2026-11-17 | DOCUMENT-AI (thread «Applicare Document… | Tecnica 3, decodifica vincolata delle «Tattiche»: la prova per il portatile 405… | 🟡 script pronto, mai girato sulla 4050: 12 schede di `genera_creatura.py` × libero e vincolato (schema JSON in `format` di Ollama, azione in enum delle voci de… |
 | 2026-11-17 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 undicesima parte: il segugio infernale rifatto mezzo-immondo… | In PR |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-15 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: il corredo di sette schede, scelto dal DM sulle card d… | sette schede da nessuna riga di corredo a una riga di corredo con valore e fonte (Dovil 5.865/7.200, Drow 10.510/12.000, Duergar ≤6.410/9.400, Tempestas 8.560/… |
 | 2026-11-15 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Tattiche dei draghi contro il *See the Unseen* di Artemis, indicazione del DM d… | ✅ tre righe di tattica, nessun numero cambiato |
 | 2026-11-15 | AVVENTURE-COMMUNITY | «Chi sa cosa», dopo la #419: una riga per il Conte Valerius e tre giorni dalle… | «Chi sa cosa», dopo la #419: scelta del DM sulla card del 14/11 (thread dell'audit) «Una sola, la più completa». In `campaign/state.yaml` le righe del Conte Va… |
-| 2026-11-15 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 7 settima parte: la velocità delle creature coi dadi vita razzi… | In PR |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 162 voci, l'ultima MS-0162 del 2026-11-17 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 163 voci, l'ultima MS-0163 del 2026-11-17 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

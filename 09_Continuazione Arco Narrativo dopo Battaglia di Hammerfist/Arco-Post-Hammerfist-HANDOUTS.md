@@ -237,13 +237,13 @@
 >   circa 110 km in quella direzione. Misurare un grado a occhio non si può:
 >   serve un astrolabio, un quadrante o Conoscenze (geografia) CD 20.
 >   Deciso dal DM il 2026-11-14: il passo va **un grado più a sud** del pianoro
->   della Torre, cioè circa 110 km (tre giorni di marcia a 9 m, quattro a 6 m).
+>   della Torre, cioè circa 110 km (tre giorni di marcia a 9 m, fra quattro e cinque a 6 m).
 >   La carta non dipende da questa scelta: se cambia, cambia solo questa riga.
-- **Il cerchio grande** è il parallelo del Sigillo: le stelle che ci stanno sopra
-  passano tutte sopra la testa di chi è nel luogo del passo, una dopo l'altra.
-  Ci sta sopra anche la stella più luminosa dell'**Anello**, che si vede bene
-  anche in una notte velata: per un PG che misura, è la conferma che il cerchio
-  non è un ornamento (Conoscenze (geografia) CD 15 lo capisce a colpo d'occhio).
+> - **Il cerchio grande** è il parallelo del Sigillo: le stelle che ci stanno sopra
+>   passano tutte sopra la testa di chi è nel luogo del passo, una dopo l'altra.
+>   Ci sta sopra anche la stella più luminosa dell'**Anello**, che si vede bene
+>   anche in una notte velata: per un PG che misura, è la conferma che il cerchio
+>   non è un ornamento (Conoscenze (geografia) CD 15 lo capisce a colpo d'occhio).
 > - **Nome**: «il Sigillo si chiude sulla Torre». È il calcolo del rito di
 >   spostamento di Zalkatar, la stessa vibrazione che sente l'Anello di Artemis.
 > - **Perché non si falsifica**: il cielo è lo stesso per tutti. Una copia con

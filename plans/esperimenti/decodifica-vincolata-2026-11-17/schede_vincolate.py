@@ -30,6 +30,7 @@ import re
 import subprocess
 import sys
 import time
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -55,6 +56,10 @@ FASI = [("prima", "Prima del combattimento"), ("durante", "Durante il combattime
         ("morale", "Morale")]
 SISTEMA = ("Sei un Dungeon Master esperto di D&D 3.5. Scrivi le tattiche di una creatura "
            "in italiano, usando SOLO gli incantesimi, i talenti e gli attacchi della sua scheda.")
+# Tetto dei token della risposta. Il vincolato al massimo sono 12 passi da ~90 token
+# (azione, bersaglio fino a 60 caratteri, perché fino a 140): con 700 un JSON pieno
+# si troncava e la risposta contava come non valida per colpa del tetto, non del modello.
+GETTONI = 1500
 VERDETTO = ("migliora se, sulle stesse schede: (1) il vincolato ha meno violazioni S8 per scheda "
             "del libero, (2) tutte le sue risposte sono valide, (3) la sua copertura delle voci "
             "della scheda è almeno l'80% di quella del libero e almeno 1 voce per risposta")
@@ -126,16 +131,25 @@ def prompt(blocco: str, vincolato: bool) -> str:
 def chiedi(url: str, modello: str, utente: str, seme: int, fmt: dict | None, timeout: float) -> dict:
     corpo = {"model": modello, "stream": False,
              "messages": [{"role": "system", "content": SISTEMA}, {"role": "user", "content": utente}],
-             "options": {"temperature": 0.7, "seed": seme, "num_predict": 700}}
+             "options": {"temperature": 0.7, "seed": seme, "num_predict": GETTONI}}
     if fmt is not None:
         corpo["format"] = fmt
     req = urllib.request.Request(f"{url}/api/chat", data=json.dumps(corpo).encode(),
                                  headers={"Content-Type": "application/json"})
     t0 = time.time()
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        d = json.load(r)
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            d = json.load(r)
+    except urllib.error.HTTPError as e:
+        # Un Ollama più vecchio della 0.5 rifiuta lo schema nel campo `format`
+        raise SystemExit(f"ERRORE: Ollama risponde {e.code} a /api/chat: "
+                         f"{e.read().decode('utf-8', 'replace')[:300]}") from e
+    except (urllib.error.URLError, TimeoutError) as e:
+        raise SystemExit(f"ERRORE: Ollama non ha risposto entro {timeout:.0f} s ({e}). "
+                         "Le risposte già avute sono salvate: rilancia la prova.") from e
     return {"testo": d["message"]["content"], "secondi": round(time.time() - t0, 2),
-            "token": d.get("eval_count"), "ns": d.get("eval_duration")}
+            "token": d.get("eval_count"), "ns": d.get("eval_duration"),
+            "fine": d.get("done_reason")}
 
 
 def in_markdown(testo: str, v: dict) -> tuple[str | None, str]:
@@ -153,19 +167,36 @@ def in_markdown(testo: str, v: dict) -> tuple[str | None, str]:
         frasi = []
         for p in passi:
             a = p.get("azione") if isinstance(p, dict) else None
-            if a not in permesse:
+            if not isinstance(a, str) or a not in permesse:
                 return None, f"azione fuori dallo schema: {a!r}"
+            ber, per = p.get("bersaglio", ""), p.get("perche", "")
+            if not isinstance(ber, str) or not isinstance(per, str):
+                return None, "bersaglio o perché non sono testo"
+            # Su una riga sola: un a capo nel testo libero spezzerebbe la voce dell'elenco
+            ber, per = " ".join(ber.split()), " ".join(per.split())
             nome = f"*{a}*" if a in v["incantesimi"] else a
-            frasi.append(f"{nome} su {p.get('bersaglio', '').strip()}: {p.get('perche', '').strip()}"
-                         if p.get("bersaglio") else f"{nome}: {p.get('perche', '').strip()}")
+            frasi.append(f"{nome} su {ber}: {per}" if ber else f"{nome}: {per}")
         righe.append(f"- *{titolo}*: " + "; ".join(frasi) + ".")
     return "\n".join(righe), ""
 
 
 def valido_libero(testo: str) -> tuple[str | None, str]:
-    righe = [r for r in testo.strip().splitlines() if r.lstrip().startswith(("-", "*"))]
+    """Tutto quello che il modello ha scritto, una voce d'elenco per riga. Si
+    tolgono solo i segni che nasconderebbero il testo a S8: titoli, numeri
+    d'elenco, recinti di codice e il grassetto (che `verifica_scheda` legge come
+    l'inizio di un'altra sezione, e le tattiche finirebbero lì). Il corsivo resta
+    com'è. Così il libero non perde violazioni per come ha impaginato."""
+    righe = []
+    for r in testo.splitlines():
+        r = r.strip()
+        if not r or r.startswith("```"):
+            continue
+        r = re.sub(r"^(?:#+\s*|\d+[.)]\s+|[-•]\s+|\*\s+)+", "", r)
+        r = re.sub(r"\*\*|__", "*", r).strip()
+        if r.strip("*: "):
+            righe.append(f"- {r}")
     if not righe:
-        return None, "nessuna riga di tattica"
+        return None, "risposta vuota"
     return "\n".join(righe), ""
 
 
@@ -214,6 +245,7 @@ def riassumi(righe: list[dict]) -> dict:
                   "violazioni_s8": sum(r["s8"] for r in ok),
                   "s8_per_scheda": round(sum(r["s8"] for r in ok) / (len(ok) or 1), 3),
                   "schede_con_s8": sum(1 for r in ok if r["s8"]),
+                  "troncate": sum(1 for r in rr if r.get("troncata")),
                   "fuori_lista": sum(len(r["fuori_lista"]) for r in ok),
                   "menzioni_s8": sum(r["menzioni"] for r in ok),
                   "copertura_media": round(sum(r["copertura"] for r in ok) / (len(ok) or 1), 2),
@@ -258,6 +290,7 @@ def main(argv=None) -> int:
                 tatt, motivo = in_markdown(r["testo"], v) if b == "vincolato" else valido_libero(r["testo"])
                 riga = {"scheda": sid, "braccio": b, "ripetizione": rip, "valida": tatt is not None,
                         "motivo": motivo, "secondi": r["secondi"], "token": r["token"], "ns": r["ns"],
+                        "troncata": r.get("fine") == "length",
                         "s8": 0, "menzioni": 0, "violazioni": [], "fuori_lista": [], "copertura": 0}
                 if tatt is not None:
                     f = a.out / b / f"{sid}-r{rip}.md"

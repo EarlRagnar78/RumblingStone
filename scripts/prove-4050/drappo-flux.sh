@@ -21,6 +21,7 @@ LAVORO="${IMMAGINI_LAVORO:-$PROVE_DIR/immagini-lavoro}"
 DEST="$RIS/drappo-flux"
 BOX="${COMFYUI_BOX:-comfyui}"
 COMFY_ARGS="${RS_COMFY_ARGS:---lowvram}"
+TORCH_INDEX="${RS_TORCH_INDEX:-https://download.pytorch.org/whl/cu126}"   # come immagini.sh
 box_c_e "$BOX" || {
   echo "ERRORE: il box '$BOX' non c'è. Una tantum: scripts/comfyui-local/setup-distrobox.sh" >&2; exit 3; }
 mkdir -p "$LAVORO" "$DEST"
@@ -37,7 +38,7 @@ nel_box "$BOX" bash -lc "
   cd '$LAVORO'
   [ -d venv ] || python3 -m venv venv
   . venv/bin/activate
-  python -c 'import torch' 2>/dev/null || pip install -q torch torchvision --index-url https://download.pytorch.org/whl/cu126
+  python -c 'import torch' 2>/dev/null || pip install -q torch torchvision --index-url '$TORCH_INDEX'
   python -c 'import torch; print(\"    GPU vista da torch:\", torch.cuda.is_available())'
   export HF_HUB_DISABLE_XET=1 RS_COMFY_ARGS='$COMFY_ARGS'
   python '$RADICE/scripts/prove-4050/drappo_flux.py' --lavoro '$LAVORO' --uscita '$DEST' \

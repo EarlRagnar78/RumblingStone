@@ -245,6 +245,45 @@ class TestSchedeVincolate(unittest.TestCase):
         righe[1]["copertura"] = 1
         self.assertTrue(self.S.riassumi(righe)["migliora"])
 
+    def test_libero_impaginato_male_si_legge_lo_stesso(self):
+        """Grassetto, elenco numerato, titoli: S8 deve vedere comunque la *palla di fuoco*."""
+        import coerenza_campagna as C
+        blocco = self.S.genera("mago:7", 7, "controllore", 11)
+        forme = {
+            "grassetto": "**Prima del combattimento**: lancia *palla di fuoco*.\n**Morale**: fugge.",
+            "numeri": "1. *Prima del combattimento*: lancia *palla di fuoco*.\n2. *Morale*: fugge.",
+            "titoli": "### Prima del combattimento\nLancia *palla di fuoco*.\n### Morale\nFugge.",
+            "elenco": "- *Prima del combattimento*: lancia *palla di fuoco*.\n- *Morale*: fugge.",
+        }
+        with tempfile.TemporaryDirectory() as t:
+            for nome, testo in forme.items():
+                tatt, motivo = self.S.valido_libero(testo)
+                self.assertIsNotNone(tatt, f"{nome}: {motivo}")
+                f = Path(t) / f"{nome}.md"
+                f.write_text(f"# x\n\n{blocco}\n\n**Tattiche**\n{tatt}\n", encoding="utf-8")
+                self.assertEqual(len(C.verifica_tattiche([f])["violazioni"]), 1, nome)
+        self.assertEqual(self.S.valido_libero(" \n```\n")[0], None)
+
+    def test_campi_non_testuali_non_fanno_cadere_la_misura(self):
+        v = self.S.voci(self.S.genera("mago:7", 7, "controllore", 11))
+        p = {"azione": "ragnatela", "bersaglio": 5, "perche": None}
+        tatt, motivo = self.S.in_markdown(json.dumps({"prima": [p], "durante": [p], "morale": [p]}), v)
+        self.assertIsNone(tatt)
+        self.assertIn("non sono testo", motivo)
+        p = {"azione": "ragnatela", "bersaglio": "il\ngruppo", "perche": "li ferma\n- e basta"}
+        tatt, _ = self.S.in_markdown(json.dumps({"prima": [p], "durante": [p], "morale": [p]}), v)
+        self.assertEqual(len(tatt.splitlines()), 3)
+
+    def test_tetto_dei_token_e_troncate(self):
+        """12 passi pieni devono stare nel tetto; una risposta troncata si conta."""
+        self.assertGreaterEqual(self.S.GETTONI, 12 * 90)
+        riga = {"braccio": "vincolato", "valida": False, "s8": 0, "fuori_lista": [], "menzioni": 0,
+                "copertura": 0, "secondi": 1, "token": 1, "ns": 1, "troncata": True}
+        s = self.S.riassumi([riga, dict(riga, braccio="libero", valida=True, s8=1, troncata=False)])
+        self.assertEqual(s["vincolato"]["troncate"], 1)
+        self.assertEqual(s["libero"]["troncate"], 0)
+        self.assertFalse(s["migliora"])
+
     def test_misura_completa_e_ripresa(self):
         server = http.server.HTTPServer(("127.0.0.1", 0), _FintoTattiche)
         threading.Thread(target=server.serve_forever, daemon=True).start()
@@ -339,6 +378,52 @@ class TestKitMultiSistema(unittest.TestCase):
         for f in ("kit.sh", "installa.sh", "installa-windows.ps1", "verifica.py"):
             self.assertIn(f"scripts/prove-4050/{f}", guida)
 
+    def _podman_finto(self, t: Path, corpo: str) -> dict:
+        (t / "bin").mkdir()
+        for nome, testo in (("podman", corpo), ("distrobox", 'echo "ENTRATO $*"')):
+            f = t / "bin" / nome
+            f.write_text("#!/usr/bin/env bash\n" + testo + "\n")
+            f.chmod(0o755)
+        import os
+        return {"PATH": f"{t / 'bin'}:{os.environ['PATH']}", "RS_BOX_ATTESA": "1", "STATO": str(t / "stato")}
+
+    def test_box_spento_si_accende_senza_restare_appesi(self):
+        """nel_box accende il box con podman e legge il log, invece di lasciarlo fare a distrobox enter."""
+        podman = ('case "$1" in\n'
+                  '  inspect) [ -f "$STATO" ] && echo true || echo false ;;\n'
+                  '  start) touch "$STATO" ;;\n'
+                  '  logs) echo container_setup_done ;;\n'
+                  'esac')
+        with tempfile.TemporaryDirectory() as t:
+            extra = self._podman_finto(Path(t), podman)
+            r = _bash(f'. "{PROVE}/ospite.sh"; nel_box whisper echo ciao', OS_RELEASE["bazzite"], extra=extra)
+            self.assertEqual(r.returncode, 0, r.stderr)
+            self.assertIn("avvio il box 'whisper'", r.stderr)
+            self.assertIn("ENTRATO enter whisper -- echo ciao", r.stdout)
+            # a box acceso non si aspetta niente
+            r = _bash(f'. "{PROVE}/ospite.sh"; nel_box whisper echo ciao', OS_RELEASE["bazzite"], extra=extra)
+            self.assertNotIn("avvio il box", r.stderr)
+        with tempfile.TemporaryDirectory() as t:
+            extra = self._podman_finto(Path(t), "exit 125")   # il box non esiste
+            r = _bash(f'. "{PROVE}/ospite.sh"; nel_box whisper echo ciao', OS_RELEASE["bazzite"], extra=extra)
+            self.assertNotEqual(r.returncode, 0)
+            self.assertIn("non c'è", r.stderr)
+            self.assertNotIn("ENTRATO", r.stdout)
+
+    def test_script_windows_con_bom(self):
+        """Windows PowerShell 5.1 legge un .ps1 senza BOM come ANSI e storpia le lettere accentate."""
+        dati = (PROVE / "installa-windows.ps1").read_bytes()
+        self.assertTrue(dati.startswith(b"\xef\xbb\xbf"))
+        dati.decode("utf-8")
+        self.assertIn(b"$LASTEXITCODE -ne 0", dati)
+
+    def test_giro_oltre_la_mezzanotte_in_una_cartella(self):
+        """kit.sh fissa il giorno alla partenza: le prove lanciate dopo mezzanotte scrivono lì."""
+        r = _bash(f'. "{PROVE}/comune.sh"; echo "$GIORNO"', OS_RELEASE["debian"],
+                  extra={"PROVE_GIORNO": "2026-11-17"})
+        self.assertEqual(r.stdout.strip(), "2026-11-17")
+        self.assertIn('export PROVE_GIORNO="$GIORNO"', (PROVE / "kit.sh").read_text(encoding="utf-8"))
+
     def test_piano_senza_risultati(self):
         r = _bash(f'"{PROVE}/kit.sh" piano', OS_RELEASE["debian"])
         self.assertEqual(r.returncode, 0, r.stderr)
@@ -399,6 +484,24 @@ class TestVerifica(unittest.TestCase):
         e = self.v.verifica(self.r, self.m)["trascrizione-gpu"]
         self.assertEqual(e["stato"], "ko")
         self.assertIn("CPU", e["note"][0])
+
+    def test_trascrizione_sulla_scheda_integrata_e_ko(self):
+        """Il log elenca la NVIDIA ma la sua memoria non sale: ha lavorato un'altra scheda."""
+        base = "trascrizione-gpu/"
+        for f in ("grezza.txt", "riferimento.txt", "whisper.log"):
+            self.scrivi(base + f, "le autorità locali")
+        self.scrivi(base + "dispositivo.txt",
+                    "ggml_vulkan: 0 = Intel(R) Graphics\nggml_vulkan: 1 = NVIDIA GeForce RTX 4050 Laptop GPU\n")
+        self.scrivi(base + "esito.txt", "backend: vulkan\nvram_prima_mib: 300\nvram_picco_mib: 1400\n")
+        e = self.v.verifica(self.r, self.m)["trascrizione-gpu"]
+        self.assertEqual((e["stato"], e["numeri"]["vram_salita_mib"]), ("ok", 1100), e)
+        self.scrivi(base + "esito.txt", "backend: vulkan\nvram_prima_mib: 300\nvram_picco_mib: 310\n")
+        e = self.v.verifica(self.r, self.m)["trascrizione-gpu"]
+        self.assertEqual(e["stato"], "ko")
+        self.assertIn("un'altra scheda", e["note"][0])
+        # senza nvidia-smi i due campi sono vuoti: il controllo non scatta
+        self.scrivi(base + "esito.txt", "backend: vulkan\nvram_prima_mib: \nvram_picco_mib: \n")
+        self.assertEqual(self.v.verifica(self.r, self.m)["trascrizione-gpu"]["stato"], "ok")
 
     def test_drappo_e_codice_del_kit(self):
         self.scrivi("drappo-flux/esito.txt", "tavole: il-drappo\nsemi: 2\n")

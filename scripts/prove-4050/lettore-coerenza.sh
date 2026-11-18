@@ -20,9 +20,16 @@ echo "==> 1/3 scarico $MODELLO (se non c'è già)"
 echo "==> 2/3 $n domande a $MODELLO (si salva ogni 20: se la interrompi, rilanciala e riparte)"
 gpu_foto lettore-coerenza "prima"
 t0=$(date +%s)
-python3 "$QUI/leggi_ollama.py" "$DOMANDE" --modello "$MODELLO" --out "$DEST/risposte-$NOME.json"
+codice=0
+python3 "$QUI/leggi_ollama.py" "$DOMANDE" --modello "$MODELLO" --out "$DEST/risposte-$NOME.json" \
+  --url "http://127.0.0.1:$LLM_PORTA" || codice=$?
 gpu_foto lettore-coerenza "dopo"
-curl -fsS "http://127.0.0.1:$LLM_PORTA/api/ps" > "$DEST/ollama-ps.json" 2>/dev/null || true
+# in un file a parte e poi spostato: se Ollama non risponde più non resta un ollama-ps.json vuoto
+if curl -fsS "http://127.0.0.1:$LLM_PORTA/api/ps" > "$DEST/ollama-ps.tmp" 2>/dev/null; then
+  mv "$DEST/ollama-ps.tmp" "$DEST/ollama-ps.json"
+else
+  rm -f "$DEST/ollama-ps.tmp"
+fi
 echo "==> 3/3 esito"
 esito lettore-coerenza modello "$MODELLO"
 esito lettore-coerenza domande "$n"
@@ -30,9 +37,14 @@ esito lettore-coerenza minuti "$(minuti "$t0")"
 esito lettore-coerenza testa "$(git -C "$RADICE" rev-parse --short HEAD)"
 python3 - "$DEST/risposte-$NOME.json" <<'P' | tee -a "$DEST/esito.txt"
 import json, sys
-r = json.load(open(sys.argv[1]))
+from pathlib import Path
+r = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8")) if Path(sys.argv[1]).exists() else {}
 si = sum(1 for v in r.values() if v.upper().startswith("S"))
 no = sum(1 for v in r.values() if v.upper().startswith("N"))
 print(f"risposte: {len(r)} (SÌ {si}, NO {no}, altro {len(r) - si - no})")
 P
+if [ "$codice" -ne 0 ]; then
+  echo "ERRORE: il lettore si è fermato (codice $codice). Le risposte avute sono salvate: rilancia lo stesso comando e riparte da lì." >&2
+  exit "$codice"
+fi
 echo "Fatto. Ora: scripts/prove-4050/riporta.sh"

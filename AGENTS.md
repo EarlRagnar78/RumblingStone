@@ -58,6 +58,10 @@ regenerate via `dm.py recap --hype` / `dm.py handout`, never edit by hand.
 > voce lì (decisioni, misure, questioni aperte: la CI la esige), e chi
 > toglie una riga dalla memoria delle sessioni la archivia lì prima
 > ([ADR-0127](plans/adr/ADR-0127-la-memoria-corta-archivia-nel-repo-prima-di-togliere.md)).
+> Il lavoro che non finisce in una PR (scelta su card, dato verificato, thread
+> che si risolve) lascia la sua voce nella coda del thread, e
+> `python3 scripts/memoria_coda.py DIR --thread "Titolo"` dice se manca
+> ([ADR-0138](plans/adr/ADR-0138-la-coda-della-memoria-storica-ha-un-cancello.md)).
 
 > **DMs: start with `campaign/DM-CAMPAIGN-PLAYBOOK.md`**: session workflow,
 > worked examples, the `§0` dashboard and the new-group reset

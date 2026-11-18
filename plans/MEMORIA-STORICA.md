@@ -1876,3 +1876,14 @@ repo scritto con altre parole.
 - **Testo:** dopo la #468 (MS-0163) il conto di ogni blocco senza incantesimi diceva «niente Incantesimi focalizzati», anche quando il ruolo non l'avrebbe mai preso. Il coordinatore ha visto due rossi nuovi in `impronte.py --confronta` (genera_creatura_gs7 e gs14): la sola differenza con ea63a192 era quella riga. Ora `applica_talenti` rifà la scelta senza esclusioni, su copie dello stato e del generatore casuale, e scrive la nota solo se la scelta senza esclusioni avrebbe preso il talento.
 - **Trovato nel repo:** `scripts/genera_creatura.py` (`applica_talenti`) · `scripts/tests/test_talenti.py` (`Focalizzati`)
 - **Solo qui:** sull'impronta delle 720 creature 484 note tolte e 156 restano, e null'altro cambia; `impronte.py --confronta` torna ai 3 rossi di prima (suggest_encounter, conformita_statblocchi, derive_statblocks).
+
+### MS-0166 · 2026-11-18 · La scuola di tutti gli incantesimi delle liste PF1e
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** generatore talenti incantesimi scuole spell-focus pf1e prd ricontrollo
+- **Origine:** riga del 2026-11-18 «ADR-0126, ricontrollo di Incantesimi focalizzati» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha chiesto il 18/11 di ricontrollare #468 e #470. Cancelli e impronta erano verdi; il difetto rimasto era quello dichiarato nella #468: 912 voci su 8548 delle liste PF1e senza scuola. Su 945 PNG a classi, 693 incantesimi su 5553 restavano fuori dal conto, 168 blocchi sceglievano la scuola su una parte sola e 59 perdevano il talento. Ora `[scuole]` sta anche in `liste_incantesimi.toml` del PF1e, 1536 incantesimi dal PRD: 0 senza scuola e 0 blocchi parziali. Incantesimi focalizzati passa da 621 a 665, tutti con la scuola: tornano i 44 che l'alchimista perdeva.
+- **Trovato nel repo:** `plans/esperimenti/sistemi-plugin-2026-11-07/estrai_prd_pf1e.py` (`liste_incantesimi`) · `scripts/genera_creatura.py` (`_scuole_per_nome`) · `scripts/tests/test_talenti.py` (`Focalizzati`)
+- **Solo qui:** fra SRD 3.5 e PRD i 598 nomi comuni hanno la stessa scuola, per questo la tabella di ricerca è una sola per i due sistemi. I 5 incantesimi «universal» non danno scuola. L'impronta delle 720 creature non cambia: i PNG PF1e a classi non ci sono dentro.

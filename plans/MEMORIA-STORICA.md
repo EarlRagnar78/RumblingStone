@@ -1908,7 +1908,18 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `scripts/prove-4050/ospite.sh` (`box_avvia`, `nel_box`) · `scripts/prove-4050/verifica.py` (`VRAM_WHISPER_MIB`) · `scripts/prove-4050/trascrizione-gpu.sh` (`vram-durante.txt`) · `scripts/tests/test_prove_4050.py` (`test_box_spento_si_accende_senza_restare_appesi`, `test_trascrizione_sulla_scheda_integrata_e_ko`, `test_script_windows_con_bom`)
 - **Solo qui:** la soglia di 400 MiB è una stima mia (il modello q8_0 pesa circa 870 MB), non una misura sulla 4050: se al primo giro la memoria sale meno con la GPU giusta, va abbassata. Divisione dei file col thread «Preparare le prove sul portatile RTX 4050», che ha avuto la stessa richiesta: a lui `lettore-coerenza.sh`, `prosa.sh`, `immagini.sh`, `leggi_ollama.py`, `importa_gemini.py`; `drappo-flux.sh` e `schede-vincolate.sh` non toccati. Controllati e trovati a posto: `kit.sh`, `comune.sh`, `controlla.sh`, `riporta.sh`, `prove.json`.
 
-### MS-0168 · 2026-11-12 · Regola di merge: una PR entra senza un nuovo sì se verde, dichiarata e misurata
+### MS-0168 · 2026-11-18 · Decodifica vincolata: tre errori dello script corretti prima della misura
+
+- **Data:** 2026-11-18
+- **PR:** #473
+- **ADR:** —
+- **Temi:** document-ai decodifica-vincolata tattiche prova-4050 ollama S8
+- **Origine:** riga del 2026-11-18 «Tecnica 3, decodifica vincolata: tre errori dello script della prova corretti prima della misura» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha chiesto il 18/11 di ricontrollare la prova della #466 (MS-0161) prima di lanciarla. Il braccio libero perdeva violazioni S8 per l'impaginazione (grassetto, elenco numerato, titoli): 1 su 4 trovate, ora 4 su 4. Il tetto di 700 token troncava il JSON pieno del vincolato: ora 1500 e le troncate si contano. Un campo non testuale faceva cadere lo script. La regola del verdetto è rimasta quella scritta prima.
+- **Trovato nel repo:** `plans/esperimenti/decodifica-vincolata-2026-11-17/schede_vincolate.py` (`valido_libero`, `in_markdown`, `GETTONI`) · `plans/esperimenti/decodifica-vincolata-2026-11-17/PIANO.md` · `scripts/tests/test_prove_4050.py` (`TestSchedeVincolate`)
+- **Solo qui:** `verifica_scheda` tratta una riga che comincia col grassetto come l'inizio di una sezione: chi scrive tattiche da un modello deve togliere il grassetto prima di S8. Non è provato che l'Ollama del portatile rispetti `maxLength` dello schema.
+
+### MS-0169 · 2026-11-12 · Regola di merge: una PR entra senza un nuovo sì se verde, dichiarata e misurata
 
 - **Data:** 2026-11-12
 - **PR:** —
@@ -1919,7 +1930,7 @@ repo scritto con altre parole.
 - **Solo qui:** imparato il 2026-11-16: il «via» del coordinatore non è il sì del DM; il merge lo copre questa regola, e lo stato mergeable si legge solo dopo aver tolto la bozza. Prima di unire: grep dei segni di conflitto e `impronte.py --confronta` (non è in CI).
 - **Coda:** `rendere-obbligatoria-la-memoria-storica`
 
-### MS-0169 · 2026-11-13 · Le decisioni del DM vanno sempre su card, con scheda, file e riga
+### MS-0170 · 2026-11-13 · Le decisioni del DM vanno sempre su card, con scheda, file e riga
 
 - **Data:** 2026-11-13
 - **PR:** —
@@ -1929,7 +1940,7 @@ repo scritto con altre parole.
 - **Testo:** il 13/11 il DM non trovava nel testo dei messaggi le decisioni che gli venivano chieste: da allora ogni scelta va su una card con la soluzione consigliata e con il nome della scheda, il file e la riga. Dal 15/11 ogni thread che apre una card la segnala subito al coordinatore con una riga; il coordinatore le raccoglie e le porta al DM nel canale, così si gestiscono in un punto solo, e il thread va avanti con ciò che non dipende dalla scelta. Una card si chiude solo con una prova.
 - **Coda:** `rendere-obbligatoria-la-memoria-storica`
 
-### MS-0170 · 2026-11-13 · Il rilascio 1.1.0 aspetta le promozioni a stable
+### MS-0171 · 2026-11-13 · Il rilascio 1.1.0 aspetta le promozioni a stable
 
 - **Data:** 2026-11-13
 - **PR:** —
@@ -1940,7 +1951,7 @@ repo scritto con altre parole.
 - **Solo qui:** il controllo delle ancore con Lychee non si adotta di iniziativa: solo se il DM lo chiede (stessa data, stessa riga della memoria).
 - **Coda:** `rendere-obbligatoria-la-memoria-storica`
 
-### MS-0171 · 2026-11-13 · Document AI: una tecnica per PR, con misura contro main
+### MS-0172 · 2026-11-13 · Document AI: una tecnica per PR, con misura contro main
 
 - **Data:** 2026-11-13
 - **PR:** #398 #416 #418
@@ -1950,7 +1961,7 @@ repo scritto con altre parole.
 - **Testo:** le tecniche di Document AI si provano una per PR, ognuna con una misura contro main, ed entrano solo se la misura migliora. Per l'Explainable AI il margine stimato è poco. Entrate così: font a colori del repo, PDF/A-2a, provenienza IPTC nelle copie web. Prossima in lista al 13/11: andata e ritorno del testo dei booklet.
 - **Coda:** `rendere-obbligatoria-la-memoria-storica`
 
-### MS-0172 · 2026-11-18 · La voce di memoria storica è obbligatoria anche senza PR, con un cancello
+### MS-0173 · 2026-11-18 · La voce di memoria storica è obbligatoria anche senza PR, con un cancello
 
 - **Data:** 2026-11-18
 - **PR:** #471
@@ -1961,18 +1972,18 @@ repo scritto con altre parole.
 - **Solo qui:** il repo del dottorato contiene solo documenti, nessuna configurazione di memoria: il confronto è stato fatto sul testo delle regole incollato dal DM.
 - **Coda:** `rendere-obbligatoria-la-memoria-storica`
 
-### MS-0173 · 2026-11-18 · Il cancello della coda della memoria storica
+### MS-0174 · 2026-11-18 · Il cancello della coda della memoria storica
 
 - **Data:** 2026-11-18
 - **PR:** —
 - **ADR:** ADR-0138 ADR-0137
 - **Temi:** memoria-storica coda cancello thread routine
 - **Origine:** riga del 2026-11-18 «ADR-0138, il cancello della coda della memoria storica» in `plans/CHANGELOG.md`
-- **Testo:** richiesta del DM del 18/11 dopo la scelta della coda per thread: un cancello per il punto 3 di ADR-0137, che era solo regola. `scripts/memoria_coda.py` controlla la forma delle voci in coda (`--check`), dice se un thread ha la sua voce (`--thread`, `--threads` con l'elenco dei thread risolti) e porta le voci nel file storico numerandole (`--piega`), solo se il risultato passa `memoria_storica.py --check`; quest'ultimo ora boccia in CI una testa `### MS-` che non si legge. Prima piega: MS-0168…MS-0172, cinque scelte del DM che stavano solo nella memoria delle sessioni.
+- **Testo:** richiesta del DM del 18/11 dopo la scelta della coda per thread: un cancello per il punto 3 di ADR-0137, che era solo regola. `scripts/memoria_coda.py` controlla la forma delle voci in coda (`--check`), dice se un thread ha la sua voce (`--thread`, `--threads` con l'elenco dei thread risolti) e porta le voci nel file storico numerandole (`--piega`), solo se il risultato passa `memoria_storica.py --check`; quest'ultimo ora boccia in CI una testa `### MS-` che non si legge. Prima piega: MS-0169…MS-0173, cinque scelte del DM che stavano solo nella memoria delle sessioni.
 - **Trovato nel repo:** `scripts/memoria_coda.py` · `scripts/tests/test_memoria_coda.py` · `plans/adr/ADR-0138-la-coda-della-memoria-storica-ha-un-cancello.md`
 - **Solo qui:** misura del 18/11: 13 thread risolti dal 12/11 al 17/11, nessuno con una voce sua; il controllo parte dal 18/11 e non li conta. Il cancello non parte da solo (la CI non vede la cartella condivisa né i thread), non vede una card chiusa in un thread aperto e non giudica il contenuto oltre i 40 caratteri del Testo. Comandi per il coordinatore: `python3 scripts/memoria_coda.py /mnt/project-files/memoria-storica-coda/ --thread "Titolo"` prima di risolvere; per la routine `--check`, `--threads elenco.json`, `--piega` e poi `memoria_storica.py --confronta-memoria`.
 
-### MS-0174 · 2026-10-11 · LLM locale: il DM ha scelto la prova del 12B, mai eseguita
+### MS-0175 · 2026-10-11 · LLM locale: il DM ha scelto la prova del 12B, mai eseguita
 
 - **Data:** 2026-10-11
 - **PR:** #234
@@ -1983,7 +1994,7 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `plans/adr/ADR-0089-un-llm-locale-per-la-prosa-si-misura-prima.md` · `scripts/llm-locale/`
 - **Coda:** `llm-locale-per-la-prosa`
 
-### MS-0175 · 2026-10-29 · Immagini in posa: licenze ammesse e niente servizi a pagamento
+### MS-0176 · 2026-10-29 · Immagini in posa: licenze ammesse e niente servizi a pagamento
 
 - **Data:** 2026-10-29
 - **PR:** —
@@ -1995,7 +2006,7 @@ repo scritto con altre parole.
 - **Solo qui:** i pesi ripubblicati da terzi perdono l'etichetta di licenza, quindi il registro dei pesi punta sempre all'origine. Misure del banco su CPU: riconosce un altro PG e le scritte, non riconosce una mano rovinata (0,78); le due scene di prova bocciate per identità (0,33 e 0,50) con la posa a 0,996.
 - **Coda:** `immagini-dei-personaggi-in-posa-con-l-ai`
 
-### MS-0176 · 2026-10-31 · Immagini in posa: la prova con Gemini si fa a mano, e non è mai stata misurata
+### MS-0177 · 2026-10-31 · Immagini in posa: la prova con Gemini si fa a mano, e non è mai stata misurata
 
 - **Data:** 2026-10-31
 - **PR:** —
@@ -2006,7 +2017,7 @@ repo scritto con altre parole.
 - **Fuori dal repo:** `/mnt/project-files/immagini-personaggi/pipeline-2026-10-29/gemini/` (`gemini_ritratti.py`, `casi_gemini.json`, `PROMPT-A-MANO.md`)
 - **Coda:** `immagini-dei-personaggi-in-posa-con-l-ai`
 
-### MS-0177 · 2026-11-08 · Immagini in posa: revisione con gli standard di fatto, ADR-0115 mai prenotato
+### MS-0178 · 2026-11-08 · Immagini in posa: revisione con gli standard di fatto, ADR-0115 mai prenotato
 
 - **Data:** 2026-11-08
 - **PR:** —
@@ -2017,7 +2028,7 @@ repo scritto con altre parole.
 - **Solo qui:** nessuna delle tre sostituzioni (OKS, rembg, VQAScore) è stata misurata: sono scelte di metodo, non risultati.
 - **Coda:** `immagini-dei-personaggi-in-posa-con-l-ai`
 
-### MS-0178 · 2026-11-12 · La revisione dei bot non è una condizione di merge
+### MS-0179 · 2026-11-12 · La revisione dei bot non è una condizione di merge
 
 - **Data:** 2026-11-12
 - **PR:** #379 #381
@@ -2028,7 +2039,7 @@ repo scritto con altre parole.
 - **Solo qui:** dal 12/11 i due bot di fatto non revisionano; nessuna misura dice quanti rilievi veri si sono persi così.
 - **Coda:** `salvare-la-memoria-storica-nel-repo`
 
-### MS-0179 · 2026-11-15 · Il bug dei tag PDF/UA di typst 0.15.1 dipende dall'impaginazione
+### MS-0180 · 2026-11-15 · Il bug dei tag PDF/UA di typst 0.15.1 dipende dall'impaginazione
 
 - **Data:** 2026-11-15
 - **PR:** #448

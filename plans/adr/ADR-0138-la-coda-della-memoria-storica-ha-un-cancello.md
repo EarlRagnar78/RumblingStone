@@ -51,9 +51,9 @@ mani di chi risolve un thread e della routine del lunedì.
 - Thread risolti dal 2026-11-12 senza voce: 13 su 13, ora misurabili con un
   comando. La regola vale dal 2026-11-18: per quelli di prima il controllo
   non scatta (non si chiede a thread chiusi di riscrivere la loro storia).
-- Voci nate fuori da una PR: da 0 a 5 con la prima piega (MS-0168…MS-0172:
+- Voci nate fuori da una PR: da 0 a 5 con la prima piega (MS-0169…MS-0173:
   regola di merge del 12/11, decisioni su card, rilascio 1.1.0, metodo di
-  Document AI, questa scelta). Poi a 11 con la seconda piega (MS-0174…MS-0179),
+  Document AI, questa scelta). Poi a 11 con la seconda piega (MS-0175…MS-0180),
   chiesta dal DM lo stesso giorno: i 13 thread riletti per intero, messaggi,
   card e scelte. Quattro avevano qualcosa che repo e file storico non
   dicevano (immagini in posa, LLM locale, revisione dei bot, bug dei tag di

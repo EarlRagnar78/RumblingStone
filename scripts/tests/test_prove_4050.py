@@ -352,6 +352,13 @@ class TestKitMultiSistema(unittest.TestCase):
         dati.decode("utf-8")
         self.assertIn(b"$LASTEXITCODE -ne 0", dati)
 
+    def test_giro_oltre_la_mezzanotte_in_una_cartella(self):
+        """kit.sh fissa il giorno alla partenza: le prove lanciate dopo mezzanotte scrivono lì."""
+        r = _bash(f'. "{PROVE}/comune.sh"; echo "$GIORNO"', OS_RELEASE["debian"],
+                  extra={"PROVE_GIORNO": "2026-11-17"})
+        self.assertEqual(r.stdout.strip(), "2026-11-17")
+        self.assertIn('export PROVE_GIORNO="$GIORNO"', (PROVE / "kit.sh").read_text(encoding="utf-8"))
+
     def test_piano_senza_risultati(self):
         r = _bash(f'"{PROVE}/kit.sh" piano', OS_RELEASE["debian"])
         self.assertEqual(r.returncode, 0, r.stderr)

@@ -84,7 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
-| 2026-11-18 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Kit delle prove 4050, rilettura a caccia di errori chiesta dal DM il 18/11 (ADR… | 🟡 errori noti nel kit: 3 → 0; test `test_prove_4050` 24 → 27 (box finto con podman e distrobox di prova; verifica su esiti finti; BOM). `trascrizione-gpu.sh` r… |
+| 2026-11-18 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Kit delle prove 4050, rilettura a caccia di errori chiesta dal DM il 18/11 (ADR… | 🟡 errori noti nel kit: 4 → 0; test `test_prove_4050` 24 → 28 (box finto con podman e distrobox di prova; verifica su esiti finti; BOM). `trascrizione-gpu.sh` r… |
 | 2026-11-18 | STATO-E-ORDINE | ADR-0137, la memoria storica a ogni blocco di lavoro (richiesta del DM del 18/1… | 🟡 PR unite dal 12/11 ritrovate con `--pr`: 37 → 90 su 90 (88 con la voce propria; #387 e #389 toccano solo `docs/` e sono solo citate in MS-0082). Memoria dell… |
 | 2026-11-18 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, il generatore: la nota «niente Incantesimi focalizzati» nel conto esc… | ✅ |
 | 2026-11-17 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Kit unico delle prove sulla RTX 4050, richiesta del DM del 17/11 (ADR-0136):… | 🟡 prove lanciabili con un comando: da 0 a 7 su 7; sistemi con un percorso di installazione: da 1 (Bazzite) a 4. Mai girato su una GPU né su Debian, CachyOS o W… |

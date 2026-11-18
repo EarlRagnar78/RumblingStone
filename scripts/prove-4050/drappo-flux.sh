@@ -4,7 +4,8 @@
 # fisso) accanto a quelle di Gemini, per scegliere A (tenere Gemini) o B (rigenerare) guardando.
 # Pesi per i 6 GB: transformer fp8 (4,07 GB) + Qwen3-4B fp4 (3,85 GB) + VAE, ComfyUI con --lowvram.
 # BFL dichiara ~13 GB di VRAM in bf16: qui si misura se e quanto regge su 6 (picchi in riepilogo.json).
-# Usa il box «comfyui» e la cartella di lavoro di immagini.sh (stesso ComfyUI, stesso venv).
+# Usa il box «comfyui» e la cartella di lavoro di immagini.sh: stesso venv, ma un clone suo di ComfyUI
+# (ComfyUI-flux, stesso commit), così nessuna delle due prove dipende da quale gira per prima.
 # Le immagini del modulo non vengono toccate: tutto finisce in $PROVE_DIR/<giorno>/drappo-flux/.
 set -euo pipefail
 . "$(dirname "${BASH_SOURCE[0]}")/comune.sh"
@@ -29,17 +30,25 @@ esito drappo-flux comfyui "$COMFY_ARGS"
 esito drappo-flux testa "$(git -C "$RADICE" rev-parse --short HEAD)"
 gpu_foto drappo-flux "prima"
 t0=$(date +%s)
+# Niente «set -e» sulla prova: se una tavola fallisce, foto della GPU, minuti ed esito si scrivono lo stesso.
+stato=0
 nel_box "$BOX" bash -lc "
   set -e
   cd '$LAVORO'
   [ -d venv ] || python3 -m venv venv
   . venv/bin/activate
-  python -c 'import torch' 2>/dev/null || pip install -q torch torchvision --index-url https://download.pytorch.org/whl/cu124
+  python -c 'import torch' 2>/dev/null || pip install -q torch torchvision --index-url https://download.pytorch.org/whl/cu126
   python -c 'import torch; print(\"    GPU vista da torch:\", torch.cuda.is_available())'
   export HF_HUB_DISABLE_XET=1 RS_COMFY_ARGS='$COMFY_ARGS'
   python '$RADICE/scripts/prove-4050/drappo_flux.py' --lavoro '$LAVORO' --uscita '$DEST' \
     --solo '$SOLO' --semi '$SEMI'
-" 2>&1 | tee "$DEST/console.log"
+" 2>&1 | tee "$DEST/console.log" || stato=$?
 gpu_foto drappo-flux "dopo"
 esito drappo-flux minuti "$(minuti "$t0")"
-echo "Fatto: apri $DEST/confronto.html (Gemini a sinistra, FLUX a destra). Poi: scripts/prove-4050/riporta.sh"
+esito drappo-flux uscita "$stato"
+if [ "$stato" -eq 0 ]; then
+  echo "Fatto: apri $DEST/confronto.html (Gemini a sinistra, FLUX a destra). Poi: scripts/prove-4050/riporta.sh"
+else
+  echo "La prova è uscita con $stato: vedi $DEST/console.log e comfy-flux.log. Poi comunque: scripts/prove-4050/riporta.sh" >&2
+fi
+exit "$stato"

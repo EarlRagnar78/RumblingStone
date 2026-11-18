@@ -290,8 +290,14 @@ dire se ci sta, non questa stima.
 **Requisiti.** Il box `comfyui`, come per le immagini in posa (se non c'è,
 `scripts/comfyui-local/setup-distrobox.sh`). La cartella di lavoro è la stessa
 di `immagini.sh` (`~/rumblingstone-prove-4050/immagini-lavoro/`): stesso
-ComfyUI al commit `0df1646`, stesso venv. In più circa 8,3 GB di pesi, che lo
-script scarica da Hugging Face e controlla contro lo sha256 pubblicato.
+venv, ma un clone suo di ComfyUI (`ComfyUI-flux`, allo stesso commit
+`0df1646`), così le due prove si possono lanciare in qualunque ordine. In più
+circa 8,3 GB di pesi, che lo script scarica da Hugging Face e controlla contro
+lo sha256 pubblicato. Se il venv non c'è ancora, lo script installa PyTorch
+dall'indice `cu126`; se trova un PyTorch più vecchio della 2.8 (quello
+dell'indice `cu124` è il 2.6) lo dice e scrive come aggiornarlo, perché sotto
+la 2.8 ComfyUI gestisce la VRAM alla vecchia maniera. La versione usata
+finisce in `riepilogo.json`.
 
 **Passi.**
 

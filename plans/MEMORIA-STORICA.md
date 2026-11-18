@@ -1876,3 +1876,14 @@ repo scritto con altre parole.
 - **Testo:** dopo la #468 (MS-0163) il conto di ogni blocco senza incantesimi diceva «niente Incantesimi focalizzati», anche quando il ruolo non l'avrebbe mai preso. Il coordinatore ha visto due rossi nuovi in `impronte.py --confronta` (genera_creatura_gs7 e gs14): la sola differenza con ea63a192 era quella riga. Ora `applica_talenti` rifà la scelta senza esclusioni, su copie dello stato e del generatore casuale, e scrive la nota solo se la scelta senza esclusioni avrebbe preso il talento.
 - **Trovato nel repo:** `scripts/genera_creatura.py` (`applica_talenti`) · `scripts/tests/test_talenti.py` (`Focalizzati`)
 - **Solo qui:** sull'impronta delle 720 creature 484 note tolte e 156 restano, e null'altro cambia; `impronte.py --confronta` torna ai 3 rossi di prima (suggest_encounter, conformita_statblocchi, derive_statblocks).
+
+### MS-0166 · 2026-11-18 · D2 del Drappo: quattro difetti dello script FLUX trovati al ricontrollo
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** —
+- **Temi:** drappo immagini flux comfyui prove-4050 pillow c2pa pytorch regressione
+- **Origine:** riga del 2026-11-18 «D2, collaudo dell'arte del Drappo: quattro difetti dello script trovati al ricontrollo» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha chiesto il 18/11 di ricontrollare tutto il thread. La prova su CPU del 16/11 (MS-0156) aveva usato solo ritratto-vanna, l'unica delle tre Gemini di serie che Pillow apre senza ritocchi: tavola-la-ruota e il-drappo hanno il manifesto C2PA in un blocco di testo oltre `PngImagePlugin.MAX_TEXT_CHUNK` e davano `ValueError`, dopo le generazioni e prima di `riepilogo.json`. Trovato rifacendo la prova su CPU con il-drappo (593 s, RAM di ComfyUI al picco 12.962 MiB). Gli altri tre: clone di ComfyUI condiviso con `esegui_gpu.py`, che clona i nodi ControlNet e IP-Adapter solo se la cartella non esiste (ora `ComfyUI-flux`); indice PyTorch `cu124` fermo al 2.6.0, mentre ComfyUI `0df1646` sotto la 2.8 ripiega sul vecchio ModelPatcher e avverte che le stime di VRAM non sono affidabili (ora `cu126`, 2.14.1 al 18/11); `set -o pipefail` che chiudeva `drappo-flux.sh` prima dell'esito.
+- **Trovato nel repo:** `scripts/prove-4050/drappo_flux.py` (`affianca`, `prepara`, `torch_vecchio`) · `scripts/prove-4050/drappo-flux.sh` · `scripts/tests/test_prove_4050.py` (`TestDrappoFlux`) · `docs/how-to/GUIDA-PROVE-PORTATILE-4050.md` §3-bis
+- **Solo qui:** `immagini.sh` e `scripts/comfyui-local/setup-distrobox.sh` installano ancora PyTorch da `cu124`: sono di altri thread, segnalato al coordinatore. Nella prova su CPU FLUX klein ha mancato il soggetto di il-drappo (uno stendardo bianco appeso sopra una corsa, non il drappo dipinto come oggetto): è un solo seme su CPU, con prompt scritti per SDXL, e non decide la D2. Corrette anche due affermazioni fatte al DM nel thread: FLUX.2 [dev] (64 GB) non entra intero in una L40S da 48 GB, e Qwen-Image non entra nelle GPU da 16 GB di Kaggle.

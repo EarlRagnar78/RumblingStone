@@ -145,6 +145,14 @@ class Focalizzati(unittest.TestCase):
             sb, _ = G.genera(9, ruolo="controllore", rng=random.Random(seme), talenti="dnd35")
             self.assertEqual(self._focalizzati(sb), [], _talenti(sb))
 
+    def test_la_nota_nel_conto_solo_se_l_esclusione_cambia_la_scelta(self):
+        # impronte.py, 2026-11-18: la nota usciva su ogni blocco senza incantesimi
+        nota = "niente Incantesimi focalizzati"
+        for ruolo, attesa in (("bruto", False), ("tiratore", False), ("controllore", True)):
+            for seme in range(3):
+                _, c = G.genera(9, ruolo=ruolo, rng=random.Random(seme), talenti="dnd35")
+                self.assertEqual(any(nota in r for r in c.righe), attesa, (ruolo, seme))
+
     def test_nome_con_la_virgola_dentro(self):
         voci = ["Preparati — 8°: labirinto, parola del potere, stordire · 3°: palla di fuoco"]
         self.assertEqual(G.incantesimi_del_blocco(voci),

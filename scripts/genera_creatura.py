@@ -64,6 +64,7 @@ Solo stdlib.
 from __future__ import annotations
 
 import argparse
+import copy
 import functools
 import json
 import math
@@ -1293,10 +1294,18 @@ def applica_talenti(sb: Statblocco, conto: Conto, sistema: str, ruolo: str, rng:
             firma, sb.tattica, debolezza = rng.choice(leciti)
             sb.voci = [f"Debolezza: {debolezza}" if v.startswith("Debolezza:") else v for v in sb.voci]
             conto(f"carattere: «{vecchio}» non è lecito per questo PNG, il carattere diventa «{firma}»")
+    # la nota va nel conto solo se l'esclusione ha cambiato la scelta: si rifà la scelta
+    # senza esclusi su copie dello stato e del generatore casuale (impronte, 2026-11-18)
+    controprova = None
+    if esclusi:
+        rng_copia = random.Random()
+        rng_copia.setstate(rng.getstate())
+        controprova = TL.scegli(sistema, ruolo, copy.deepcopy(s), dv_razziali=st["dv_razziali"], firma=firma,
+                                stile=stile, rng=rng_copia, obbligati=st.get("obbligati"))
     scelta = TL.scegli(sistema, ruolo, s, dv_razziali=st["dv_razziali"], firma=firma, stile=stile, rng=rng,
                        obbligati=st.get("obbligati"), esclusi=esclusi)
     en = [n for n, _ in scelta.talenti]
-    if esclusi:
+    if controprova and any(n in _FOCALIZZATI for n, _ in controprova.talenti):
         conto("talenti: niente Incantesimi focalizzati, "
               + (f"nessuna scuola si ricava dagli incantesimi del blocco ({perche})" if incantesimi
                  else "il blocco non ha incantesimi") + " (card del DM del 2026-11-17)")

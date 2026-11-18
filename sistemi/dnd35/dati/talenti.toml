@@ -2040,7 +2040,7 @@ libro = "srd-psionici"
 car = { "Sag" = 13 }
 
 [talenti."Spell Focus"]
-it = "Incantesimi focalizzati (bene, caos, legge o male)"
+it = "Incantesimi focalizzati"
 tipi = ["General"]
 libro = "srd"
 

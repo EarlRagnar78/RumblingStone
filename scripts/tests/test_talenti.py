@@ -113,6 +113,65 @@ class Generatore(unittest.TestCase):
         self.assertEqual(TL.effetti("dnd35", ["Toughness"], dv=7)["pf"], 3)
 
 
+class Focalizzati(unittest.TestCase):
+    """Incantesimi focalizzati nel generatore (2026-11-17): il nome scriveva «(bene, caos,
+    legge o male)» invece della scuola, e il talento finiva anche su mostri che non
+    lanciano nulla (card del DM: si prende il talento seguente del ruolo)."""
+
+    SCUOLE = {"abiurazione", "evocazione", "divinazione", "ammaliamento", "invocazione",
+              "illusione", "necromanzia", "trasmutazione"}
+
+    def _focalizzati(self, sb):
+        return [t for t in _talenti(sb) if t.lower().startswith("incantesimi focalizzati")]
+
+    def test_nome_italiano_senza_le_varianti_d_allineamento(self):
+        self.assertEqual(TL.italiano("dnd35", "Spell Focus"), "Incantesimi focalizzati")
+
+    def test_mago_controllore_ha_una_scuola_e_la_stessa_nel_superiore(self):
+        sb, _ = G.genera(9, ruolo="controllore", classe=G._classe("mago:9"), rng=random.Random(3),
+                         talenti="dnd35")
+        foc = self._focalizzati(sb)
+        self.assertEqual(len(foc), 2, foc)
+        scuole = {re.search(r"\((\w+)\)$", t).group(1) for t in foc}
+        self.assertEqual(len(scuole), 1, foc)
+        self.assertLessEqual(scuole, self.SCUOLE)
+
+    def test_mago_blaster_focalizza_l_invocazione(self):
+        sb, _ = G.genera(9, ruolo="blaster", classe=G._classe("mago:9"), rng=random.Random(3), talenti="dnd35")
+        self.assertIn("Incantesimi focalizzati (invocazione)", _talenti(sb))
+
+    def test_mostro_senza_incantesimi_prende_un_altro_talento(self):
+        for seme in range(5):
+            sb, _ = G.genera(9, ruolo="controllore", rng=random.Random(seme), talenti="dnd35")
+            self.assertEqual(self._focalizzati(sb), [], _talenti(sb))
+
+    def test_nome_con_la_virgola_dentro(self):
+        voci = ["Preparati — 8°: labirinto, parola del potere, stordire · 3°: palla di fuoco"]
+        self.assertEqual(G.incantesimi_del_blocco(voci),
+                         [(8, "labirinto"), (8, "parola del potere, stordire"), (3, "palla di fuoco")])
+
+    def test_parita_vince_la_scuola_del_livello_piu_alto(self):
+        # sonno (ammaliamento, 1°) contro palla di fuoco (invocazione, 3°)
+        self.assertEqual(G.scuola_prevalente([(1, "sonno"), (3, "palla di fuoco")])[0], "invocazione")
+        self.assertEqual(G.scuola_prevalente([(1, "sonno"), (2, "risata incontenibile di Tasha"),
+                                               (3, "palla di fuoco")])[0], "ammaliamento")
+
+    def test_incantesimo_dell_apg_ha_la_scuola_del_prd(self):
+        self.assertEqual(G.scuola_prevalente([(1, "stumble gap")])[0], "evocazione")
+
+    def test_senza_scuola_nelle_tabelle_prende_un_altro_talento(self):
+        # revisione di Codex sulla #468: gli estratti dell'alchimista PF1e (Spezzalinee…)
+        # non sono nelle tabelle delle scuole, e il talento usciva senza scuola
+        from dmcore import sistemi as S
+        from dmcore import creature_pf1e as CP
+        dati = S.dati("pf1e", "creature.costruzione")
+        for liv, ruolo, seme in ((1, "controllore", 0), (1, "blaster", 0), (3, "controllore", 1)):
+            sb, _ = G.genera_png_pf1e(liv, ruolo=ruolo, classi=CP.leggi_classi(f"alchemist:{liv}", dati),
+                                      rng=random.Random(seme))
+            for t in self._focalizzati(sb):
+                self.assertRegex(t, r"\((\w+)\)$", (liv, ruolo, seme, _talenti(sb)))
+
+
 if __name__ == "__main__":
     unittest.main()
 

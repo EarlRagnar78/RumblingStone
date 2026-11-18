@@ -64,6 +64,7 @@ Solo stdlib.
 from __future__ import annotations
 
 import argparse
+import functools
 import json
 import math
 import random
@@ -1178,6 +1179,81 @@ _CLASSE_35_IT = {"barbarian": "barbaro", "bard": "bardo", "cleric": "chierico", 
                  "rogue": "ladro", "sorcerer": "stregone", "wizard": "mago"}
 
 
+#: i talenti che valgono solo su una scuola di incantesimi
+_FOCALIZZATI = ("Spell Focus", "Greater Spell Focus")
+#: i nomi italiani delle scuole 3.5 (Conjuration è «evocazione», Evocation è «invocazione»)
+_SCUOLE_IT = {"abjuration": "abiurazione", "conjuration": "evocazione", "divination": "divinazione",
+              "enchantment": "ammaliamento", "evocation": "invocazione", "illusion": "illusione",
+              "necromancy": "necromanzia", "transmutation": "trasmutazione"}
+
+
+@functools.cache
+def _scuole_per_nome() -> "dict[str, str]":
+    """Nome normalizzato (inglese o italiano) → scuola, dalla tabella [scuole] dell'SRD 3.5."""
+    import lessico_regole as LR
+    scuole = S.dati("dnd35", "creature.liste_incantesimi").get("scuole", {})
+    out = {LR.norma(k): v for k, v in scuole.items()}
+    # gli incantesimi dell'APG che il generatore scrive «nome (PF1e: nome PRD)»
+    out.update({LR.norma(k): v for k, v in S.dati("pf1e", "creature.incantesimi").get("scuole", {}).items()})
+    for v in LR.tabella_35():
+        sc = v["tipo"] == "incantesimo" and out.get(LR.norma(v["srd35"]))
+        if sc:
+            for it in [v["it"], *filter(None, v.get("varianti", "").split("|"))]:
+                out.setdefault(LR.norma(it), sc)
+    return out
+
+
+def incantesimi_del_blocco(voci: "list[str]") -> "list[tuple[int, str]]":
+    """Gli incantesimi scelti dal generatore (righe «Preparati —» e «Conosciuti —»), col livello.
+
+    I nomi sono separati da «, » ma alcuni la portano dentro (*parola del potere,
+    stordire*): si prende il nome più lungo che la tabella delle scuole conosce."""
+    import lessico_regole as LR
+    noti = _scuole_per_nome()
+    out = []
+    for v in voci:
+        m = re.match(r"(?:Preparati|Conosciuti) — (.*)", v)
+        for pezzo in (m.group(1).split(" · ") if m else []):
+            k = re.match(r"(\d)°:\s*(.*)", pezzo)
+            if not k:
+                continue
+            parti, i = k.group(2).split(", "), 0
+            while i < len(parti):
+                for j in range(len(parti), i, -1):
+                    nome = ", ".join(parti[i:j])
+                    prd = re.search(r"\(PF1e: (.*)\)$", nome)
+                    nome = prd.group(1) if prd else nome
+                    if j == i + 1 or LR.norma(nome) in noti:
+                        out.append((int(k.group(1)), nome))
+                        i = j
+                        break
+    return out
+
+
+def scuola_prevalente(incantesimi: "list[tuple[int, str]]") -> "tuple[str | None, str]":
+    """La scuola di Incantesimi focalizzati: quella che ha più incantesimi sul blocco.
+
+    A parità vince la scuola dell'incantesimo di livello più alto, poi l'ordine
+    alfabetico. Torna (scuola in italiano o None, il conto da scrivere)."""
+    import lessico_regole as LR
+    noti = _scuole_per_nome()
+    conti: "dict[str, list[int]]" = {}
+    ignoti = []
+    for liv, nome in incantesimi:
+        sc = noti.get(LR.norma(nome))
+        if sc:
+            conti.setdefault(sc, []).append(liv)
+        else:
+            ignoti.append(nome)
+    if not conti:
+        return None, f"nessuno dei {len(incantesimi)} incantesimi ha una scuola nella tabella dell'SRD"
+    sc = max(sorted(conti), key=lambda x: (len(conti[x]), max(conti[x])))
+    conto = ", ".join(f"{_SCUOLE_IT[x]} {len(conti[x])}" for x in sorted(conti, key=lambda x: -len(conti[x])))
+    if ignoti:
+        conto += f"; senza scuola nella tabella: {', '.join(ignoti)}"
+    return _SCUOLE_IT[sc], conto
+
+
 def applica_talenti(sb: Statblocco, conto: Conto, sistema: str, ruolo: str, rng: random.Random) -> None:
     """Sostituisce il «talento firma» con i talenti della regola, e ne applica gli effetti.
 
@@ -1197,19 +1273,36 @@ def applica_talenti(sb: Statblocco, conto: Conto, sistema: str, ruolo: str, rng:
     if "sorcerer" in st["livelli"]:
         stile = "Arcane"
     s = TL.Stato(car=attr, bab=st["bab"], livelli=st["livelli"], lic=st["lic"], dv=st.get("dv", 0))
-    if firma and TL.nome_inglese(sistema, firma) and TL.manca(sistema, TL.nome_inglese(sistema, firma), s):
+    incantesimi = incantesimi_del_blocco(sb.voci)
+    # Senza incantesimi sul blocco Incantesimi focalizzati non fa niente: si prende il
+    # talento seguente del ruolo (DM, card del 2026-11-17). Lo stesso se nessuno degli
+    # incantesimi ha una scuola nelle tabelle: il talento si scriverebbe senza scuola.
+    scuola, perche = scuola_prevalente(incantesimi) if incantesimi else (None, "")
+    esclusi = () if scuola else _FOCALIZZATI
+
+    def vietato(en: str) -> bool:
+        return en in esclusi or bool(TL.manca(sistema, en, s))
+
+    if firma and TL.nome_inglese(sistema, firma) and vietato(TL.nome_inglese(sistema, firma)):
         # il carattere tira un talento che il PNG non può avere: si prende un altro
         # carattere dello stesso ruolo il cui talento è lecito (o non è un talento)
         leciti = [c for c in CARATTERE.get(ruolo, [])
-                  if not TL.nome_inglese(sistema, c[0]) or not TL.manca(sistema, TL.nome_inglese(sistema, c[0]), s)]
+                  if not TL.nome_inglese(sistema, c[0]) or not vietato(TL.nome_inglese(sistema, c[0]))]
         if leciti:
             vecchio = firma
             firma, sb.tattica, debolezza = rng.choice(leciti)
             sb.voci = [f"Debolezza: {debolezza}" if v.startswith("Debolezza:") else v for v in sb.voci]
             conto(f"carattere: «{vecchio}» non è lecito per questo PNG, il carattere diventa «{firma}»")
     scelta = TL.scegli(sistema, ruolo, s, dv_razziali=st["dv_razziali"], firma=firma, stile=stile, rng=rng,
-                       obbligati=st.get("obbligati"))
+                       obbligati=st.get("obbligati"), esclusi=esclusi)
     en = [n for n, _ in scelta.talenti]
+    if esclusi:
+        conto("talenti: niente Incantesimi focalizzati, "
+              + (f"nessuna scuola si ricava dagli incantesimi del blocco ({perche})" if incantesimi
+                 else "il blocco non ha incantesimi") + " (card del DM del 2026-11-17)")
+    if any(n in _FOCALIZZATI for n in en):
+        conto(f"talenti: Incantesimi focalizzati sulla scuola con più incantesimi sul blocco, "
+              f"{scuola} ({perche})")
     m = re.match(r"^(?:Mischia|Distanza)\s+(.+?)\s+[+-]\d+", sb.attacchi[0]) if sb.attacchi else None
     arma = m.group(1) if m else ""
     nomi = []
@@ -1217,6 +1310,8 @@ def applica_talenti(sb: Statblocco, conto: Conto, sistema: str, ruolo: str, rng:
         it = TL.italiano(sistema, n)
         if n in ("Weapon Focus", "Weapon Specialization", "Improved Critical", "Greater Weapon Focus") and arma:
             it += f" ({arma})"
+        if n in _FOCALIZZATI and scuola:
+            it += f" ({scuola})"
         nomi.append(it)
     sb.voci = [v for v in sb.voci if not v.startswith("Talenti:")]
     i = next((k for k, v in enumerate(sb.voci) if v.startswith("Debolezza:")), len(sb.voci))

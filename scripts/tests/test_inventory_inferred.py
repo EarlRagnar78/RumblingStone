@@ -137,6 +137,50 @@ class TestScansione(unittest.TestCase):
             self.assertEqual(inv.scansiona(Path(d)), [])
 
 
+    def test_la_copia_in_un_booklet_generato_non_si_conta_due_volte(self):
+        """La #465: il booklet del Palio ristampava le due marche del sorgente, e la
+        baseline doveva salire di 2 a ogni marca nuova in un capitolo di booklet."""
+        marca = "`[INFERRED — Sonjak sa chi fa la guardia?; base: §3.1]`"
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "sorgente.md").write_text(f"I sicari arrivano. {marca}\n",
+                                                 encoding="utf-8")
+            (Path(d) / "BOOKLET.hb.md").write_text(
+                "<!-- GENERATO da scripts/build_booklet_html.py --format hb (ADR-0013).\n"
+                f"     Manifest: x -->\n\nI sicari arrivano. {marca}\n", encoding="utf-8")
+            classi = {v["file"]: v["classe"] for v in inv.scansiona(Path(d))}
+            self.assertEqual(classi, {"sorgente.md": "aperti", "BOOKLET.hb.md": "copie"})
+
+    def test_la_marca_che_sta_solo_nel_file_generato_resta_aperta(self):
+        """Se il sorgente l'ha persa, il file generato è l'unico posto dove si vede:
+        non si nasconde il debito."""
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "sorgente.md").write_text("niente marche qui\n", encoding="utf-8")
+            (Path(d) / "BOOKLET.hb.md").write_text(
+                "<!-- GENERATO da scripts/build_booklet_html.py -->\n"
+                "`[INFERRED — Chi guida?; base: nessuna]`\n", encoding="utf-8")
+            self.assertEqual([v["classe"] for v in inv.scansiona(Path(d))], ["aperti"])
+
+    def test_la_marca_citata_solo_nei_piani_non_fa_da_sorgente(self):
+        """Revisione di Codex sulla #467: se il sorgente vivo ha perso la marca e
+        resta solo il racconto in `plans/`, la marca del booklet è ancora debito."""
+        marca = "`[INFERRED — Chi guida?; base: nessuna]`"
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "plans").mkdir()
+            (Path(d) / "plans" / "PIANO.md").write_text(f"Era {marca}\n", encoding="utf-8")
+            (Path(d) / "BOOKLET.hb.md").write_text(
+                f"<!-- GENERATO da scripts/build_booklet_html.py -->\n{marca}\n",
+                encoding="utf-8")
+            with mock.patch.object(inv, "ROOT", Path(d)):
+                classi = {v["file"]: v["classe"] for v in inv.scansiona(Path(d))}
+            self.assertEqual(classi["BOOKLET.hb.md"], "aperti")
+
+    def test_generato_solo_se_lo_dice_in_testa(self):
+        """Un documento vivo che cita «GENERATO da scripts/» più sotto resta un sorgente."""
+        self.assertTrue(inv.e_generato("<!-- GENERATO da scripts/x.py -->\n# T\n"))
+        self.assertFalse(inv.e_generato("# T\n" + "riga\n" * 200
+                                        + "<!-- GENERATO da scripts/x.py -->\n"))
+
+
 class TestRatchet(unittest.TestCase):
     """Nessun test scrive nel repo: la baseline è un file temporaneo."""
 

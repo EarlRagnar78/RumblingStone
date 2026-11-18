@@ -57,7 +57,7 @@ SISTEMA = ("Sei un Dungeon Master esperto di D&D 3.5. Scrivi le tattiche di una 
            "in italiano, usando SOLO gli incantesimi, i talenti e gli attacchi della sua scheda.")
 VERDETTO = ("migliora se, sulle stesse schede: (1) il vincolato ha meno violazioni S8 per scheda "
             "del libero, (2) tutte le sue risposte sono valide, (3) la sua copertura delle voci "
-            "della scheda è almeno l'80% di quella del libero")
+            "della scheda è almeno l'80% di quella del libero e almeno 1 voce per risposta")
 
 
 def _dividi(testo: str) -> list[str]:
@@ -177,7 +177,9 @@ def _pt(t: str) -> str:
 def fuori_lista(tattiche: str, v: dict) -> list[str]:
     """Il conto che non dipende dal corsivo: nomi del plugin dnd35 (incantesimi in
     italiano di due parole o 9 lettere, talenti di più parole) che le tattiche
-    nominano e la scheda no."""
+    nominano e la scheda no. Gli incantesimi di una parola sotto le 9 lettere
+    («luce», «sonno», «comando») restano fuori apposta: sono anche parole comuni
+    e darebbero falsi allarmi. Questo conto quindi non li vede, se non in corsivo."""
     import lessico_regole as LR
     import verifica_scheda as VS
     import verifica_talenti as VT
@@ -221,7 +223,7 @@ def riassumi(righe: list[dict]) -> dict:
     lib, vin = out["libero"], out["vincolato"]
     out["migliora"] = bool(vin["s8_per_scheda"] < lib["s8_per_scheda"]
                            and vin["valide"] == vin["risposte"]
-                           and vin["copertura_media"] >= 0.8 * lib["copertura_media"])
+                           and vin["copertura_media"] >= max(0.8 * lib["copertura_media"], 1.0))
     out["regola"] = VERDETTO
     return out
 

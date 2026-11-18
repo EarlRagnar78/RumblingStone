@@ -219,6 +219,45 @@ class TestSchedeVincolate(unittest.TestCase):
         righe[1]["copertura"] = 1
         self.assertTrue(self.S.riassumi(righe)["migliora"])
 
+    def test_libero_impaginato_male_si_legge_lo_stesso(self):
+        """Grassetto, elenco numerato, titoli: S8 deve vedere comunque la *palla di fuoco*."""
+        import coerenza_campagna as C
+        blocco = self.S.genera("mago:7", 7, "controllore", 11)
+        forme = {
+            "grassetto": "**Prima del combattimento**: lancia *palla di fuoco*.\n**Morale**: fugge.",
+            "numeri": "1. *Prima del combattimento*: lancia *palla di fuoco*.\n2. *Morale*: fugge.",
+            "titoli": "### Prima del combattimento\nLancia *palla di fuoco*.\n### Morale\nFugge.",
+            "elenco": "- *Prima del combattimento*: lancia *palla di fuoco*.\n- *Morale*: fugge.",
+        }
+        with tempfile.TemporaryDirectory() as t:
+            for nome, testo in forme.items():
+                tatt, motivo = self.S.valido_libero(testo)
+                self.assertIsNotNone(tatt, f"{nome}: {motivo}")
+                f = Path(t) / f"{nome}.md"
+                f.write_text(f"# x\n\n{blocco}\n\n**Tattiche**\n{tatt}\n", encoding="utf-8")
+                self.assertEqual(len(C.verifica_tattiche([f])["violazioni"]), 1, nome)
+        self.assertEqual(self.S.valido_libero(" \n```\n")[0], None)
+
+    def test_campi_non_testuali_non_fanno_cadere_la_misura(self):
+        v = self.S.voci(self.S.genera("mago:7", 7, "controllore", 11))
+        p = {"azione": "ragnatela", "bersaglio": 5, "perche": None}
+        tatt, motivo = self.S.in_markdown(json.dumps({"prima": [p], "durante": [p], "morale": [p]}), v)
+        self.assertIsNone(tatt)
+        self.assertIn("non sono testo", motivo)
+        p = {"azione": "ragnatela", "bersaglio": "il\ngruppo", "perche": "li ferma\n- e basta"}
+        tatt, _ = self.S.in_markdown(json.dumps({"prima": [p], "durante": [p], "morale": [p]}), v)
+        self.assertEqual(len(tatt.splitlines()), 3)
+
+    def test_tetto_dei_token_e_troncate(self):
+        """12 passi pieni devono stare nel tetto; una risposta troncata si conta."""
+        self.assertGreaterEqual(self.S.GETTONI, 12 * 90)
+        riga = {"braccio": "vincolato", "valida": False, "s8": 0, "fuori_lista": [], "menzioni": 0,
+                "copertura": 0, "secondi": 1, "token": 1, "ns": 1, "troncata": True}
+        s = self.S.riassumi([riga, dict(riga, braccio="libero", valida=True, s8=1, troncata=False)])
+        self.assertEqual(s["vincolato"]["troncate"], 1)
+        self.assertEqual(s["libero"]["troncate"], 0)
+        self.assertFalse(s["migliora"])
+
     def test_misura_completa_e_ripresa(self):
         server = http.server.HTTPServer(("127.0.0.1", 0), _FintoTattiche)
         threading.Thread(target=server.serve_forever, daemon=True).start()

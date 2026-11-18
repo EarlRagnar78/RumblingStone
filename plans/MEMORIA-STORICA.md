@@ -33,7 +33,7 @@ sola lettura). I filtri si sommano; maiuscole e accenti non contano.
 
 ## Come si scrive una voce
 
-Due regole (ADR-0127):
+Tre regole (ADR-0127, ADR-0137, ADR-0138):
 
 - **Addendum del changelog, obbligatorio in CI**: una PR che aggiunge righe a
   [`CHANGELOG.md`](CHANGELOG.md) aggiunge anche almeno una voce qui, con le
@@ -42,6 +42,14 @@ Due regole (ADR-0127):
 - **Prima di togliere una riga dalla memoria del progetto** (fuori dal repo,
   la CI non la vede) si controlla che i suoi fatti siano qui; se mancano, si
   copia la riga com'era in una voce nuova, nello stesso giro di lavoro.
+
+- **A fine di ogni blocco di lavoro che non finisce in una PR** (scelta su
+  card, dato verificato, file solo nella cartella condivisa, thread che si
+  risolve) il thread scrive la voce, con la testa `### MS-???? · data · titolo`,
+  nel suo file della coda `/mnt/project-files/memoria-storica-coda/`.
+  `python3 scripts/memoria_coda.py DIR --thread "Titolo"` esce 1 se manca;
+  `--piega` la porta qui col numero e col campo `Coda`. Una voce piegata non
+  ha una riga del changelog: la sua origine è la card o il thread.
 
 Si aggiunge in coda col numero dopo l'ultimo e si fa girare
 `python3 scripts/memoria_storica.py --check` (la CI fa lo stesso).
@@ -59,6 +67,7 @@ Si aggiunge in coda col numero dopo l'ultimo e si fa girare
 - **Fuori dal repo:** percorsi della cartella condivisa         (facoltativo)
 - **Note di memoria:** `nome-nota`                              (facoltativo)
 - **Solo qui:** i fatti che non si ritrovano altrove             (facoltativo)
+- **Coda:** `nome-del-file-di-coda`      (lo scrive `memoria_coda.py --piega`)
 ```
 
 Niente dati personali (nomi dei giocatori, macchine del DM, nomi utente):
@@ -1909,3 +1918,134 @@ repo scritto con altre parole.
 - **Testo:** il DM ha chiesto il 18/11 di ricontrollare la prova della #466 (MS-0161) prima di lanciarla. Il braccio libero perdeva violazioni S8 per l'impaginazione (grassetto, elenco numerato, titoli): 1 su 4 trovate, ora 4 su 4. Il tetto di 700 token troncava il JSON pieno del vincolato: ora 1500 e le troncate si contano. Un campo non testuale faceva cadere lo script. La regola del verdetto è rimasta quella scritta prima.
 - **Trovato nel repo:** `plans/esperimenti/decodifica-vincolata-2026-11-17/schede_vincolate.py` (`valido_libero`, `in_markdown`, `GETTONI`) · `plans/esperimenti/decodifica-vincolata-2026-11-17/PIANO.md` · `scripts/tests/test_prove_4050.py` (`TestSchedeVincolate`)
 - **Solo qui:** `verifica_scheda` tratta una riga che comincia col grassetto come l'inizio di una sezione: chi scrive tattiche da un modello deve togliere il grassetto prima di S8. Non è provato che l'Ollama del portatile rispetti `maxLength` dello schema.
+
+### MS-0169 · 2026-11-12 · Regola di merge: una PR entra senza un nuovo sì se verde, dichiarata e misurata
+
+- **Data:** 2026-11-12
+- **PR:** —
+- **ADR:** —
+- **Temi:** merge regole processo coordinatore thread
+- **Origine:** regola del DM nella chat di progetto (2026-11-12), tenuta solo nella memoria delle sessioni; archiviata dal thread «Rendere obbligatoria la memoria storica»
+- **Testo:** una PR di un thread entra su main senza un nuovo sì del DM se valgono tutte e tre: CI verde e mergeable clean; tutti i problemi e le misure dichiarati senza omissioni; un miglioramento misurato contro main. Se manca una condizione non entra e si dice quale. I merge sono in coda unica: il coordinatore li ordina uno alla volta e avvisa i thread che toccano gli stessi file; il thread manda testa e misura prima, SHA e file condivisi dopo, e unisce la sua PR al via del coordinatore. Il thread padre dell'audit tiene la lista delle PR e non unisce più. Restano del DM: canone, tagli di testo, merge verso il repo a monte.
+- **Solo qui:** imparato il 2026-11-16: il «via» del coordinatore non è il sì del DM; il merge lo copre questa regola, e lo stato mergeable si legge solo dopo aver tolto la bozza. Prima di unire: grep dei segni di conflitto e `impronte.py --confronta` (non è in CI).
+- **Coda:** `rendere-obbligatoria-la-memoria-storica`
+
+### MS-0170 · 2026-11-13 · Le decisioni del DM vanno sempre su card, con scheda, file e riga
+
+- **Data:** 2026-11-13
+- **PR:** —
+- **ADR:** —
+- **Temi:** card decisioni processo coordinatore
+- **Origine:** richiesta del DM del 2026-11-13 nel thread delle regole e addendum alle istruzioni di progetto del 2026-11-15
+- **Testo:** il 13/11 il DM non trovava nel testo dei messaggi le decisioni che gli venivano chieste: da allora ogni scelta va su una card con la soluzione consigliata e con il nome della scheda, il file e la riga. Dal 15/11 ogni thread che apre una card la segnala subito al coordinatore con una riga; il coordinatore le raccoglie e le porta al DM nel canale, così si gestiscono in un punto solo, e il thread va avanti con ciò che non dipende dalla scelta. Una card si chiude solo con una prova.
+- **Coda:** `rendere-obbligatoria-la-memoria-storica`
+
+### MS-0171 · 2026-11-13 · Il rilascio 1.1.0 aspetta le promozioni a stable
+
+- **Data:** 2026-11-13
+- **PR:** —
+- **ADR:** ADR-0099
+- **Temi:** rilascio v110 canali card
+- **Origine:** scelta del DM su una card del thread dell'audit settimanale (2026-11-13)
+- **Testo:** il rilascio 1.1.0 si fa dopo le promozioni dei canali a stable previste per il 22-24/11 (xdist in testing fino al 22/11, «d» eufonica fino al 24/11). La PR di rilascio parte allora, con una card al DM prima del tag. Rilasciare vuol dire una PR con `## [1.1.0]` in `CHANGELOG.md` e `__version__`.
+- **Solo qui:** il controllo delle ancore con Lychee non si adotta di iniziativa: solo se il DM lo chiede (stessa data, stessa riga della memoria).
+- **Coda:** `rendere-obbligatoria-la-memoria-storica`
+
+### MS-0172 · 2026-11-13 · Document AI: una tecnica per PR, con misura contro main
+
+- **Data:** 2026-11-13
+- **PR:** #398 #416 #418
+- **ADR:** ADR-0132
+- **Temi:** document-ai xai metodo misura
+- **Origine:** indicazione del DM del 2026-11-13 nel thread «Applicare Document AI e Explainable AI», tenuta solo nella memoria delle sessioni
+- **Testo:** le tecniche di Document AI si provano una per PR, ognuna con una misura contro main, ed entrano solo se la misura migliora. Per l'Explainable AI il margine stimato è poco. Entrate così: font a colori del repo, PDF/A-2a, provenienza IPTC nelle copie web. Prossima in lista al 13/11: andata e ritorno del testo dei booklet.
+- **Coda:** `rendere-obbligatoria-la-memoria-storica`
+
+### MS-0173 · 2026-11-18 · La voce di memoria storica è obbligatoria anche senza PR, con un cancello
+
+- **Data:** 2026-11-18
+- **PR:** #471
+- **ADR:** ADR-0137 ADR-0138
+- **Temi:** memoria-storica coda card thread cancello
+- **Origine:** due scelte del DM del 2026-11-18: card nel thread «Rendere obbligatoria la memoria storica» e messaggio nella chat di progetto
+- **Testo:** sulla card il DM ha scelto la consigliata: ogni thread scrive la voce in un file suo nella coda `/mnt/project-files/memoria-storica-coda/` e la routine del lunedì la porta nel repo. Nella chat ha poi detto di aggiungere le righe alle istruzioni di progetto (lo ha fatto il coordinatore) e ha chiesto «il cancello di verifica per il punto 3 per superare dall'inizio il limite trovato»: da qui `scripts/memoria_coda.py` (forma delle voci, thread risolti senza voce, piega numerata). Termine di confronto: le regole di memoria del suo progetto di dottorato; di quelle sono entrate qui cercare prima di chiedere, controllare che un documento non sia superato, la voce a fine di ogni blocco e la segnalazione delle discordanze.
+- **Solo qui:** il repo del dottorato contiene solo documenti, nessuna configurazione di memoria: il confronto è stato fatto sul testo delle regole incollato dal DM.
+- **Coda:** `rendere-obbligatoria-la-memoria-storica`
+
+### MS-0174 · 2026-11-18 · Il cancello della coda della memoria storica
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** ADR-0138 ADR-0137
+- **Temi:** memoria-storica coda cancello thread routine
+- **Origine:** riga del 2026-11-18 «ADR-0138, il cancello della coda della memoria storica» in `plans/CHANGELOG.md`
+- **Testo:** richiesta del DM del 18/11 dopo la scelta della coda per thread: un cancello per il punto 3 di ADR-0137, che era solo regola. `scripts/memoria_coda.py` controlla la forma delle voci in coda (`--check`), dice se un thread ha la sua voce (`--thread`, `--threads` con l'elenco dei thread risolti) e porta le voci nel file storico numerandole (`--piega`), solo se il risultato passa `memoria_storica.py --check`; quest'ultimo ora boccia in CI una testa `### MS-` che non si legge. Prima piega: MS-0169…MS-0173, cinque scelte del DM che stavano solo nella memoria delle sessioni.
+- **Trovato nel repo:** `scripts/memoria_coda.py` · `scripts/tests/test_memoria_coda.py` · `plans/adr/ADR-0138-la-coda-della-memoria-storica-ha-un-cancello.md`
+- **Solo qui:** misura del 18/11: 13 thread risolti dal 12/11 al 17/11, nessuno con una voce sua; il controllo parte dal 18/11 e non li conta. Il cancello non parte da solo (la CI non vede la cartella condivisa né i thread), non vede una card chiusa in un thread aperto e non giudica il contenuto oltre i 40 caratteri del Testo. Comandi per il coordinatore: `python3 scripts/memoria_coda.py /mnt/project-files/memoria-storica-coda/ --thread "Titolo"` prima di risolvere; per la routine `--check`, `--threads elenco.json`, `--piega` e poi `memoria_storica.py --confronta-memoria`.
+
+### MS-0175 · 2026-10-11 · LLM locale: il DM ha scelto la prova del 12B, mai eseguita
+
+- **Data:** 2026-10-11
+- **PR:** #234
+- **ADR:** ADR-0089
+- **Temi:** llm-locale prosa card prove-4050
+- **Origine:** card dell'11/10 nel thread «LLM locale per la prosa» e chiusura del thread del 15/11
+- **Testo:** dopo la bocciatura del modello da 4B (voto 40/42%, cieco 0 su 10) il DM ha scelto sulla card «Prova il 12B» (la consigliata) al posto di fermare la linea. La prova non è mai stata eseguita: il thread si è chiuso il 15/11 con la prova in sospeso, e da allora appartiene alle prove sul portatile con la GPU da 6 GB (`scripts/prove-4050/`, riga P04 di `plans/STATO-E-ORDINE-DEI-PIANI.md`). Questione aperta: finché l'archivio dei risultati non viene caricato, ADR-0089 resta senza il confronto fra 4B e 12B, e la bocciatura vale solo per il 4B.
+- **Trovato nel repo:** `plans/adr/ADR-0089-un-llm-locale-per-la-prosa-si-misura-prima.md` · `scripts/llm-locale/`
+- **Coda:** `llm-locale-per-la-prosa`
+
+### MS-0176 · 2026-10-29 · Immagini in posa: licenze ammesse e niente servizi a pagamento
+
+- **Data:** 2026-10-29
+- **PR:** —
+- **ADR:** ADR-0015 ADR-0019
+- **Temi:** immagini licenze comfyui kaggle
+- **Origine:** thread «Immagini dei personaggi in posa con l'AI», risposte del DM del 2026-10-29 e card dello stesso giorno
+- **Testo:** due scelte del DM che valgono per ogni lavoro sulle immagini. (1) Le licenze con soglia di fatturato (uso commerciale sotto 5 milioni di dollari, come FLUX 3 Klein) sono usabili, con quattro vincoli: revisione umana, dichiarazione che l'immagine è fatta con l'AI, nessun addestramento sulle uscite, la licenza può essere revocata. (2) Non si paga: solo GPU locale da almeno 10 GB o Kaggle gratuito (scelto su card), mai servizi a pagamento lanciati in automatico; come ultima via automatica il profilo «sola CPU» (SD1.5 con LCM-LoRA, 12-15 minuti a scena, 16 GB di RAM), buono per bozze di posa e non per il tavolo. Licenze verificate quel giorno: non commerciali OpenPose CMU, InsightFace (InstantID, PuLID, IP-Adapter FaceID), Qwen-Image-2.1, FLUX.2 klein 9B; Apache 2.0 DWPose, Qwen-Image-Edit-2511, FLUX.2 klein 4B, Z-Image-Turbo, MOSS-Image. La regola del DM: chi non ha una GPU adeguata usa la migliore via gratuita in rete, mai una a pagamento; il profilo «sola CPU» l'ha chiesto il DM. Ordine di priorità (le pagine con un'illustrazione erano il 17% contro il 40% dei moduli Paizo presi a confronto): prima i ritratti scontornati dei PNG con scheda intera, poi PNG ricorrenti e cattivi, per ultime le scene coi PG.
+- **Fuori dal repo:** `/mnt/project-files/immagini-personaggi/pipeline-2026-10-29/` (sei fasi, banco di misura, backend GPU locale → Kaggle → CPU) e `prove-2026-10-29/`
+- **Solo qui:** i pesi ripubblicati da terzi perdono l'etichetta di licenza, quindi il registro dei pesi punta sempre all'origine. Misure del banco su CPU: riconosce un altro PG e le scritte, non riconosce una mano rovinata (0,78); le due scene di prova bocciate per identità (0,33 e 0,50) con la posa a 0,996.
+- **Coda:** `immagini-dei-personaggi-in-posa-con-l-ai`
+
+### MS-0177 · 2026-10-31 · Immagini in posa: la prova con Gemini si fa a mano, e non è mai stata misurata
+
+- **Data:** 2026-10-31
+- **PR:** —
+- **ADR:** —
+- **Temi:** immagini gemini card
+- **Origine:** card del 2026-10-31 nel thread «Immagini dei personaggi in posa con l'AI»
+- **Testo:** sulla card il DM ha scelto la prova a mano dall'app, gratis (la consigliata), contro la via automatica da circa 4 dollari. Il piano del DM non include crediti per l'API, quindi la via automatica sarebbe a pagamento e richiede un sì esplicito. Come seconda fonte a mano il DM ha indicato ChatGPT gratuito. Pronti e mai usati: lo script automatico con tetto di spesa e 14 casi (8 PG in posa, 3 ritratti di PNG, 3 seconde pose) e i prompt per la prova a mano con busti e scheletri. Questione aperta: le immagini fatte a mano non sono mai state caricate, quindi il confronto con SD1.5 e con gli originali non esiste. La licenza commerciale delle uscite di Gemini non è stata verificata.
+- **Fuori dal repo:** `/mnt/project-files/immagini-personaggi/pipeline-2026-10-29/gemini/` (`gemini_ritratti.py`, `casi_gemini.json`, `PROMPT-A-MANO.md`)
+- **Coda:** `immagini-dei-personaggi-in-posa-con-l-ai`
+
+### MS-0178 · 2026-11-08 · Immagini in posa: revisione con gli standard di fatto, ADR-0115 mai prenotato
+
+- **Data:** 2026-11-08
+- **PR:** —
+- **ADR:** ADR-0115 ADR-0114
+- **Temi:** immagini adr standard-di-fatto
+- **Origine:** thread «Immagini dei personaggi in posa con l'AI», revisione dell'8/11 dopo l'allineamento del coordinatore
+- **Testo:** la proposta (prima ADR-0104, numero mai prenotato e poi usato da altri) prende il numero ADR-0115 e cambia in tre punti per la regola dello standard di fatto: la posa si misura con l'OKS di COCO al posto del coseno degli arti; lo scontorno passa a rembg al posto di BiRefNet a mano; il giudice dei glitch scritto da noi resta solo se batte VQAScore. In più i nodi ComfyUI vanno fissati a un commit e il prompt dell'immagine sta nella scheda di ADR-0015. Stato delle decisioni: D2 chiusa, D3 chiusa in parte, D1 (prima PR leggera, senza generazione in CI) e D4 aperte al DM. Questione aperta: ADR-0115 non è in `plans/adr-prenotati.json` e il file dell'ADR non esiste, ma il repo lo cita come proposta in `plans/esperimenti/immagini-posa-4050-2026-11-15/LEGGIMI.md` riga 10 e in `scripts/prove-4050/immagini.sh` riga 3; chi riprende il lavoro deve prenotare un numero libero e correggere i due rimandi.
+- **Solo qui:** nessuna delle tre sostituzioni (OKS, rembg, VQAScore) è stata misurata: sono scelte di metodo, non risultati.
+- **Coda:** `immagini-dei-personaggi-in-posa-con-l-ai`
+
+### MS-0179 · 2026-11-12 · La revisione dei bot non è una condizione di merge
+
+- **Data:** 2026-11-12
+- **PR:** #379 #381
+- **ADR:** ADR-0127
+- **Temi:** merge revisione sourcery codex regola
+- **Origine:** messaggi del coordinatore nel thread «Salvare la memoria storica nel repo», 2026-11-12
+- **Testo:** sulla #379 la revisione di Sourcery è arrivata otto minuti dopo il merge con 2 rilievi veri su 10. Il coordinatore ha prima chiesto di aspettare la revisione sulla #381, poi ha ritirato la condizione: la revisione dei bot non fa parte della regola di merge del DM del 12/11, e col budget dei bot esaurito per due giorni avrebbe fermato tutta la coda. Da allora ogni PR dichiara nel corpo se Sourcery e Codex hanno revisionato, e i rilievi veri di una revisione arrivata dopo il merge vanno in una PR di seguito. È una regola del coordinatore, non una scelta del DM su card.
+- **Solo qui:** dal 12/11 i due bot di fatto non revisionano; nessuna misura dice quanti rilievi veri si sono persi così.
+- **Coda:** `salvare-la-memoria-storica-nel-repo`
+
+### MS-0180 · 2026-11-15 · Il bug dei tag PDF/UA di typst 0.15.1 dipende dall'impaginazione
+
+- **Data:** 2026-11-15
+- **PR:** #448
+- **ADR:** ADR-0129
+- **Temi:** typst pdfua stampa booklet diagnosi
+- **Origine:** thread «Rendere dinamica la tattica di Skullcrusher», intoppo in CI sulla #448
+- **Testo:** la stampa del booklet della serata falliva in CI per un errore interno di typst 0.15.1 sui tag di accessibilità («tags weren't properly closed»), che compare solo quando un'interruzione di pagina cade in un certo punto. Il motore lo riportava con un messaggio fuorviante, come se il binario typst non fosse nel PATH. A spostare la pagina era il capoverso di B13, diventato più lungo; è stato diviso in tre senza cambiare parole. Il bug può tornare con qualunque modifica che sposti le pagine di un booklet. Come si trova: applicare i pezzi del diff uno alla volta al `.typ` di main finché la compilazione cade.
+- **Solo qui:** il messaggio sbagliato del motore non è stato corretto; chi vede «typst non nel PATH» in CI con typst installato deve pensare prima a questo bug.
+- **Coda:** `rendere-dinamica-la-tattica-di-skullcrusher`

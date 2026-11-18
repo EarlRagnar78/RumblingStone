@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-18 | STATO-E-ORDINE | ADR-0138, il cancello della coda della memoria storica (richiesta del DM del 18… | ✅ voci nate fuori da una PR: 0 → 11; thread risolti senza voce ora misurabili (13 su 13 fra il 12 e il 17/11, prima della regola; dopo la rilettura 4 hanno una… |
 | 2026-11-18 | DOCUMENT-AI (thread «Applicare Document… | Tecnica 3, decodifica vincolata: tre errori dello script della prova corretti p… | 🐛 Rilettura chiesta dal DM il 18/11, a prova non ancora girata sulla 4050. (1) `valido_libero` teneva solo le righe che cominciano con «-» o «*»: un elenco num… |
 | 2026-11-18 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Kit delle prove 4050, rilettura a caccia di errori chiesta dal DM il 18/11 (ADR… | 🟡 errori noti nel kit: 4 → 0; test `test_prove_4050` 24 → 28 (box finto con podman e distrobox di prova; verifica su esiti finti; BOM). `trascrizione-gpu.sh` r… |
 | 2026-11-18 | STATO-E-ORDINE | ADR-0137, la memoria storica a ogni blocco di lavoro (richiesta del DM del 18/1… | 🟡 PR unite dal 12/11 ritrovate con `--pr`: 37 → 90 su 90 (88 con la voce propria; #387 e #389 toccano solo `docs/` e sono solo citate in MS-0082). Memoria dell… |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-17 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 undicesima parte: il segugio infernale rifatto mezzo-immondo… | In PR |
 | 2026-11-17 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 5, villain senza duello. Il **Collezion… | ✅ punti dello schema mancanti per questi quattro: da 5 a 0 (esiti del Collezionista, punto 3 del Ghostlord, punti 3 e 5 degli assassini, punto 3 della chierica… |
 | 2026-11-17 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 4 (Sethrax, Azarr Kul, Ushgar): il prim… | ✅ file che descrivono il primo round in modo diverso: 1 su 3 → 0 su 3. Nessuna simulazione: Sethrax non attacca il party nel primo round, quindi la scelta non… |
-| 2026-11-17 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Ozyrrandion parte informato sui PG solo se Sethrax è fuggito dal Torneo col sem… | ✅ una riga di tattica, nessun numero cambiato |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 168 voci, l'ultima MS-0168 del 2026-11-18 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 180 voci, l'ultima MS-0180 del 2026-11-15 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

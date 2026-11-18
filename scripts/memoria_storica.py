@@ -268,6 +268,14 @@ def controlla(testo: str, changelog: "str | None") -> "list[str]":
             errori.append(f"{dove}: PR senza numeri #NNN (o «—»)")
         if v.campi.get("ADR", "—") != "—" and not v.adr:
             errori.append(f"{dove}: ADR senza numeri ADR-NNNN (o «—»)")
+    # Una testa che non si legge (per esempio «### MS-????» arrivata dalla coda senza
+    # numero, ADR-0138) sparirebbe dentro la voce prima: i filtri non la troverebbero.
+    dentro = False
+    for n, r in enumerate(testo.splitlines(), 1):
+        if r.strip() == "## Voci":
+            dentro = True
+        elif dentro and r.startswith("### MS-") and not TESTA.match(r):
+            errori.append(f"riga {n}: testa «{r.strip()[:50]}» non è «### MS-NNNN · AAAA-MM-GG · titolo»")
     if changelog is not None and LINK not in changelog:
         errori.append(f"plans/CHANGELOG.md non porta a {LINK}: la storia va collegata al changelog")
     return errori

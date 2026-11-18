@@ -112,7 +112,7 @@ def leggi(testo: str) -> "list[Voce]":
 _MERGE = re.compile(r"^Merge pull request #(\d+)|\(#(\d+)\)\s*$")
 
 
-def pr_dai_merge(radice: Path = RADICE, file: Path = FILE) -> "dict[str, set[int]]":
+def pr_dai_merge(radice: "Path | None" = None, file: Path = FILE) -> "dict[str, set[int]]":
     """MS-NNNN → le PR il cui merge (primo genitore) ha aggiunto la testa della voce.
 
     Una voce si scrive prima che la PR abbia un numero: 82 voci su 98 dal
@@ -120,6 +120,10 @@ def pr_dai_merge(radice: Path = RADICE, file: Path = FILE) -> "dict[str, set[int
     sa. Senza git o in un clone shallow il dizionario è solo più corto.
     """
     try:
+        if radice is None:     # il repo del file, non per forza questo (--file)
+            radice = Path(subprocess.run(
+                ["git", "-C", str(file.resolve().parent), "rev-parse", "--show-toplevel"],
+                capture_output=True, text=True, check=True, timeout=30).stdout.strip())
         rel = file.resolve().relative_to(radice.resolve())
         out = subprocess.run(
             ["git", "-C", str(radice), "log", "--first-parent", "-m", "--unified=0",
@@ -199,7 +203,9 @@ def confronta_memoria(cartella: Path, radice: Path = RADICE, storica: str = "") 
             con_gettoni += 1
             for t in g:
                 if t not in visti:
-                    visti[t] = t in corpo
+                    # «#123» non deve passare per «#1234», né «ADR-0042» per un prefisso
+                    visti[t] = (re.search(re.escape(t) + r"(?!\d)", corpo) is not None
+                                if t[-1].isdigit() else t in corpo)
             mancano = [t for t in g if not visti[t]]
             if mancano:
                 scoperte.append({"file": f.name, "riga": n, "mancano": mancano, "testo": r.strip()[:160]})
@@ -330,7 +336,10 @@ def main(argv=None) -> int:
     if a.pr is not None and not a.senza_git:
         mappa = pr_dai_merge(file=a.file)
         for v in voci:
-            v.pr_merge = mappa.get(v.id, set())
+            # Solo le voci dell'addendum (nate da una riga del changelog) senza numero
+            # scritto: le 67 righe portate in blocco dalla #381 non sono «della» #381.
+            if not re.search(r"#\d", v.campi.get("PR", "")) and "CHANGELOG" in v.campi.get("Origine", ""):
+                v.pr_merge = mappa.get(v.id, set())
     trovate = filtra(voci, a.parole, a.pr, a.adr, a.tema, a.da, a.a, a.ident)
     if a.json:
         print(json.dumps([{k: (sorted(v) if isinstance(v, set) else v)

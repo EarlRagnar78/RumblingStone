@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import io
+import os
 import subprocess
 import sys
 import tempfile
@@ -101,7 +102,8 @@ class TestRiga(unittest.TestCase):
 def _git(d: Path, *a: str) -> str:
     return subprocess.run(["git", "-C", str(d), *a], check=True, capture_output=True, text=True,
                           env={"GIT_AUTHOR_NAME": "t", "GIT_AUTHOR_EMAIL": "t@t", "GIT_COMMITTER_NAME": "t",
-                               "GIT_COMMITTER_EMAIL": "t@t", "PATH": "/usr/bin:/bin"}).stdout
+                               "GIT_COMMITTER_EMAIL": "t@t", "PATH": os.environ.get("PATH", "/usr/bin:/bin"),
+                               "HOME": str(d), "GIT_CONFIG_NOSYSTEM": "1"}).stdout
 
 
 class TestPrDalMerge(unittest.TestCase):
@@ -118,7 +120,7 @@ class TestPrDalMerge(unittest.TestCase):
         _git(self.d, "commit", "-qm", "inizio")
         _git(self.d, "checkout", "-qb", "ramo")
         f.write_text(TESTO + "\n### MS-0003 · 2026-11-18 · Voce senza numero\n\n- **Data:** 2026-11-18\n"
-                     "- **PR:** —\n- **ADR:** —\n- **Temi:** prova\n- **Origine:** test\n- **Testo:** x\n",
+                     "- **PR:** —\n- **ADR:** —\n- **Temi:** prova\n- **Origine:** riga in `plans/CHANGELOG.md`\n- **Testo:** x\n",
                      encoding="utf-8")
         _git(self.d, "commit", "-qam", "voce")
         _git(self.d, "checkout", "-q", "main")
@@ -132,6 +134,16 @@ class TestPrDalMerge(unittest.TestCase):
         m = ms.pr_dai_merge(self.d, self.f)
         self.assertEqual(m, {"MS-0003": {501}})
 
+    def test_la_riga_di_comando_trova_la_voce_senza_numero(self):
+        out = io.StringIO()
+        with redirect_stdout(out):
+            self.assertEqual(ms.main(["--file", str(self.f), "--pr", "501", "--elenco"]), 0)
+        self.assertEqual(out.getvalue().split()[0], "MS-0003")
+        out = io.StringIO()
+        with redirect_stdout(out):
+            ms.main(["--file", str(self.f), "--pr", "501", "--elenco", "--senza-git"])
+        self.assertEqual(out.getvalue(), "")
+
     def test_senza_git_la_mappa_e_vuota(self):
         self.assertEqual(ms.pr_dai_merge(self.d / "non-esiste", self.f), {})
 
@@ -141,7 +153,7 @@ class TestConfrontaMemoria(unittest.TestCase):
         with tempfile.TemporaryDirectory() as t:
             d = Path(t)
             _git(d, "init", "-q", "-b", "main")
-            (d / "a.md").write_text("PR #123 e ADR-0042 stanno qui", encoding="utf-8")
+            (d / "a.md").write_text("PR #123 e ADR-0042 stanno qui, e la #9990", encoding="utf-8")
             _git(d, "add", ".")
             _git(d, "commit", "-qm", "x")
             mem = d / "mem"

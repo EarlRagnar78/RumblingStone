@@ -14,10 +14,10 @@ Misure sul main c9159831 (2026-11-18), dal 2026-11-12 (nascita di ADR-0127):
 | PR unite con riga nel changelog dei piani e voce MS | 88 su 90 (le 2 senza, #387 e #389, toccano solo `docs/`, che non è strutturale) | CI, `check_plans_discipline.py` |
 | Voci MS con numeri consecutivi e campi completi | 165 su 165 | CI, `memoria_storica.py --check` |
 | Voci dal 2026-11-12 col campo PR «—» | 82 su 98: la voce si scrive prima che la PR abbia un numero | nessuno |
-| PR unite che `--pr N` ritrovava | **37 su 90** | nessuno |
+| PR unite che `--pr N` ritrovava | **37 su 90** (contando anche le voci che le citano soltanto nel testo) | nessuno |
 | Voci dal 2026-11-12 nate da altro che una riga del changelog (riga tolta dalla memoria, scelta su card, esito di un thread senza PR) | **0 su 98** | solo una regola scritta |
 | Note della memoria delle sessioni citate nel file storico | 41 su 77 | nessuno |
-| Righe della memoria delle sessioni con PR, ADR, SHA o percorsi che il repo non ha | 78 su 407 controllabili (311 righe sono prosa e non si controllano così); 21 di queste rimandano solo a `/mnt/project-files/` | nessuno |
+| Righe della memoria delle sessioni con PR, ADR, SHA o percorsi che il repo non ha | 84 su 408 controllabili (311 righe sono prosa e non si controllano così); 21 di queste rimandano solo a `/mnt/project-files/` | nessuno |
 
 Esempi di fatti decisi su card e oggi solo nella memoria delle sessioni:
 il rilascio 1.1.0 dopo le promozioni del 22-24/11 con card prima del tag,
@@ -77,9 +77,12 @@ in sei giorni, non ha prodotto nessuna voce.
 
 ## Conseguenze
 
-- `--pr N` ritrova 88 PR su 90 (prima 37); le 2 restanti non hanno voce
-  perché non toccano file strutturali.
-- Il confronto rende misurabile ciò che prima era solo regola: oggi 78 righe
+- `--pr N` ritrova 90 PR su 90 (prima 37): 88 con la voce propria, #387 e
+  #389 solo perché MS-0082 le cita (toccano solo `docs/` e non hanno voce).
+  Il numero dal merge vale solo per le voci nate da una riga del changelog e
+  senza numero scritto: le 67 righe portate in blocco dalla #381 non
+  diventano «della» #381.
+- Il confronto rende misurabile ciò che prima era solo regola: oggi 84 righe
   e 36 note. Dà falsi positivi su nomi di codice fra apici inversi e non vede
   le righe in prosa: dice dove guardare, non decide.
 - La parte 3 resta una regola: un thread che non scrive la voce non è

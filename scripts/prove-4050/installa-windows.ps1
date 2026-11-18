@@ -1,4 +1,4 @@
-# installa-windows.ps1 — il kit delle prove sulla RTX 4050 su Windows, via WSL2 (ADR-0136,
+﻿# installa-windows.ps1 — il kit delle prove sulla RTX 4050 su Windows, via WSL2 (ADR-0136,
 # scelta del DM sulla card del 17/11: WSL2 con Ubuntu 24.04).
 #
 # Su Windows le prove non girano native: girano in WSL2, con gli stessi script e le stesse verifiche
@@ -20,6 +20,8 @@ param(
     [string]$Repo = "https://github.com/gsamuele78/RumblingStone.git"
 )
 $ErrorActionPreference = "Stop"
+# wsl.exe di serie scrive in UTF-16: con questa variabile (WSL recente) scrive in UTF-8
+$env:WSL_UTF8 = "1"
 
 function Esegui([string]$Descrizione, [scriptblock]$Blocco) {
     Write-Host "    $Descrizione"
@@ -72,8 +74,12 @@ Write-Host "==> 5/5 il kit dentro WSL2 (apt, Ollama, CUDA; chiede la password di
 $installa = "cd ~/RumblingStone && scripts/prove-4050/installa.sh"
 if ($Mostra) { $installa = "$installa --mostra" }
 wsl.exe -d $Distro -- bash -lc $installa
+if ($LASTEXITCODE -ne 0) {
+    Write-Warning "installa.sh dentro WSL2 e' uscito con $LASTEXITCODE: leggi l'errore qui sopra, correggi e rilancia."
+    exit $LASTEXITCODE
+}
 
 Write-Host ""
 Write-Host "Fatto. Le prove:"
 Write-Host "  wsl -d $Distro -- bash -lc `"cd ~/RumblingStone && scripts/prove-4050/kit.sh tutte`""
-Write-Host "L'archivio da caricare nel thread finisce in \\wsl$\$Distro\home\<utente>\rumblingstone-prove-4050\"
+Write-Host "L'archivio da caricare nel thread finisce in \\wsl`$\$Distro\home\<utente>\rumblingstone-prove-4050\"

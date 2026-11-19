@@ -35,6 +35,13 @@ print("" if v is None else str(v).lower() if isinstance(v, bool) else v)
 P
 }
 
+# terminale_a_posto — «distrobox enter» mette il terminale in modalità grezza e, se il server
+# viene spento con kill, non lo rimette com'era: le righe dopo escono a scaletta (primo giro
+# sull'ASUS, 2026-11-19). Solo se l'uscita è un terminale.
+terminale_a_posto() {
+  if [ -t 1 ]; then stty sane <&1 2>/dev/null || true; fi
+}
+
 ferma_server() {
   [ -n "$SERVER_PID" ] || return 0
   echo "==> spengo il server Ollama (contesto $SERVER_CTX)"
@@ -42,6 +49,7 @@ ferma_server() {
   nel_box llm-locale pkill -f "ollama serve" 2>/dev/null || true
   for _ in $(seq 1 20); do server_ollama || break; sleep 1; done
   SERVER_PID=""; SERVER_CTX=""
+  terminale_a_posto
 }
 trap ferma_server EXIT
 
@@ -158,12 +166,12 @@ case "$cmd" in
       case "$SALTA" in *",$id,"*) echo "(salto $id)"; continue ;; esac
       esegui_una "$id"
     done
-    ferma_server
+    ferma_server; terminale_a_posto
     python3 "$HERE/verifica.py" "$RIS" ;;
   esegui)
     [ $# -gt 0 ] || { echo "uso: $0 esegui ID [ID...]   (gli id: $(ids_del_manifesto))" >&2; exit 2; }
     for id in "$@"; do esegui_una "$id"; done
-    ferma_server
+    ferma_server; terminale_a_posto
     python3 "$HERE/verifica.py" "$RIS" ;;
   verifica) python3 "$HERE/verifica.py" "$PROVE_DIR/${1:-$GIORNO}" ;;
   riporta)  "$HERE/riporta.sh" "${1:-$GIORNO}" ;;

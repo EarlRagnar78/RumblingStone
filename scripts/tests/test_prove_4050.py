@@ -474,6 +474,23 @@ class TestKitMultiSistema(unittest.TestCase):
         self.assertEqual(r.returncode, 0)
         self.assertIn("non ci sono box", r.stdout)
 
+    def test_terminale_rimesso_a_posto_dopo_il_server(self):
+        """Primo giro sull'ASUS: spento Ollama il terminale restava grezzo e verifica.md usciva a scaletta."""
+        testo = (PROVE / "kit.sh").read_text(encoding="utf-8")
+        self.assertIn("stty sane", testo)
+        self.assertIn("[ -t 1 ]", testo)   # mai quando l'uscita va in un file o in una pipe
+        corpo = testo[testo.index("ferma_server() {"):testo.index("trap ferma_server EXIT")]
+        self.assertIn("terminale_a_posto", corpo)
+        self.assertEqual(testo.count('ferma_server; terminale_a_posto\n    python3 "$HERE/verifica.py"'), 2)
+        # senza terminale non chiama stty e non fallisce
+        with tempfile.TemporaryDirectory() as t:
+            extra = self._podman_finto(Path(t), "exit 0")
+            f = Path(t) / "bin" / "stty"
+            f.write_text("#!/usr/bin/env bash\necho STTY-CHIAMATO\n")
+            f.chmod(0o755)
+            r = _bash(f'"{PROVE}/kit.sh" verifica', OS_RELEASE["bazzite"], extra=extra)
+            self.assertNotIn("STTY-CHIAMATO", r.stdout)
+
     def test_script_windows_con_bom(self):
         """Windows PowerShell 5.1 legge un .ps1 senza BOM come ANSI e storpia le lettere accentate."""
         dati = (PROVE / "installa-windows.ps1").read_bytes()

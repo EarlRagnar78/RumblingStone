@@ -270,7 +270,11 @@ I Githyanki non attaccano per caso. Il loro comandante, **Xal'thor** (Illithid C
 
 **L'obiettivo militare di Xal'thor**: Non *rubare* i Bracieri — **convincere** Tordek che il Piano della Terra è in pericolo, e che deve aprire un portale verso di esso. Questo porterebbe all'Hammerfist temporale dove i Githyanki hanno già posizionato forze. Vogliono colpire gli Hammerfist al -1000 DR.
 
-**La rivelazione**: C'è un'ambiguità. Xal'thor *potrebbe* avere ragione riguardo al pericolo nel Piano della Terra. O potrebbe mentire. Il Psionic usa Detect Thoughts e Suggestion — se Tordek non supera un Will save DC 20, crede che il pericolo sia reale per 1 ora.
+**La rivelazione**: C'è un'ambiguità. Xal'thor *potrebbe* avere ragione riguardo al pericolo nel Piano della Terra. O potrebbe mentire. Il Psionic usa Detect Thoughts e Suggestion — se Tordek non supera un Will save DC 16 (la *Suggestion* della scheda di Xal'thor, scelta del DM del 19/11), crede che il pericolo sia reale per 1 ora.
+
+<!-- storico -->
+- era: «Will save DC 20» (fino al 2026-11-19; la scheda di Xal'thor dà CD 16, card del DM)
+<!-- /storico -->
 
 **Triangolo**:
 

@@ -224,7 +224,13 @@ def verifica(ris: Path, manifesto: dict) -> dict:
         voce = {"thread": p["thread"], "kit": kit.get(p["id"])}
         if not c.exists() or (p["id"] != "controlla" and not (c / "esito.txt").exists()) \
                 or (p["id"] == "controlla" and not (c / "macchina.txt").exists()):
-            voce.update(stato="non fatta", note=[], numeri={})
+            # kit.sh l'ha lanciata ma non ha lasciato risultati (server spento, box assente...):
+            # non è «non fatta», è fallita prima di cominciare
+            if voce["kit"] and voce["kit"]["codice"] != 0:
+                voce.update(stato="ko", numeri={},
+                            note=[f"non è partita: lo script è uscito con {voce['kit']['codice']} senza risultati"])
+            else:
+                voce.update(stato="non fatta", note=[], numeri={})
         elif mancano and p["id"] != "prosa":
             voce.update(stato="ko", note=[f"mancano: {', '.join(mancano)}"], numeri={})
         else:

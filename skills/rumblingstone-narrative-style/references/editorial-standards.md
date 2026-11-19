@@ -7,6 +7,7 @@
 - 2. Read-aloud / boxed text (la resa che i giocatori sentono)
 - 3. Gerarchia e struttura della pagina
 - 4. Igiene editoriale
+- 4-bis. Le scelte proprie del repo
 - 5. Chi fa cosa (per non sprecare token)
 <!-- /indice -->
 
@@ -100,6 +101,24 @@ token): l'agente non la ri-verifica a mano.
   forma si marca sulla sua riga con `<!-- sic -->`.
 - File name: `PortaleForgia-*`/`ARC*-DEF-*`: niente spazi anomali, casing
   coerente; i file superati prendono il banner e poi `_ARCHIVIO/`.
+
+## 4-bis. Le scelte proprie del repo
+
+Lo standard segue *Dungeon*, Paizo e WotC in quasi tutte le regole di
+mestiere. Qui stanno le sole tecniche in cui il repo fa diverso dalle case
+**e** ha una prova che il diverso è meglio per questo tavolo: il voto cieco
+del DM (ADR-0093). Una tecnica entra qui solo se è peculiare e ha vinto al
+cieco con un margine netto; le altre restano usi della casa, nei rispettivi
+file. Le ha scelte il DM sulle card del 2026-11-19
+([RICERCA-PROSA-PECULIARE](../../../plans/RICERCA-PROSA-PECULIARE-2026-11.md)).
+
+| Scelta | Dove sta la regola | Le case dicono | La prova |
+|---|---|---|---|
+| **I sensi battono il tetto di lunghezza.** Quando il tetto delle frasi o dei caratteri e i dettagli sensoriali si scontrano, restano luce, colore, suono, caldo, freddo e il corpo che sente | `read-aloud-adulti.md` §2-ter, regola 1 | *Dungeon*: poche frasi; Merwin: niente dettagli superflui | 5 voti su 5 (giro 2, 2026-10-18) |
+| **La chiusa enfatica resta.** La frase finale che dà nome alla meraviglia o all'eroe non si taglia; si tolgono solo le parole goffe, tradotte o ricercate | `read-aloud-adulti.md` §2-ter, regola 3 | LAMP: la frase «che spiega» si taglia | 4 voti su 4 (riscrittura, 2026-10-22) |
+
+Nessuna delle due aggiunge parole o rende obbligatorio qualcosa: vietano un
+taglio. Restano i limiti del registro alto (`read-aloud-adulti.md` §4-5).
 
 ## 5. Chi fa cosa (per non sprecare token)
 

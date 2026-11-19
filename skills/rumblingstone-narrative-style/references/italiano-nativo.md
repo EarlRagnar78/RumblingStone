@@ -229,7 +229,8 @@ ricorda (P1, D14). Il trattino lungo dopo «lui» è caduto con loro.
 - [ ] C'è almeno **una dislocazione a sinistra** o un **c'è** presentativo?
 - [ ] I tempi verbali sono **coerenti** dentro ogni box?
 - [ ] C'è **un periodo lungo** seguito da **una frase corta** che chiude?
-- [ ] Ho tolto la **frase che spiega** l'ultima immagine?
+- [ ] Ho tolto le parole goffe **senza togliere la chiusa** enfatica?
+      (`read-aloud-adulti.md` §2-ter, regola 3: il taglio ha perso 4 volte su 4)
 - [ ] I titoli sono in **minuscolo italiano**, non in Title Case?
 - [ ] Se ritraduco in inglese parola per parola, **perdo qualcosa**? (se no,
       riscrivi)
@@ -269,7 +270,7 @@ Come uscirne, quando il concetto serve ancora:
 | Tic | Come suona | Antidoto |
 |---|---|---|
 | **Tricolon ovunque** | «fango, fumo, corni di guerra» · tre aggettivi, tre clausole, sempre | rompi il ritmo: **due**, oppure **quattro**, oppure uno solo |
-| **Chiusura a effetto obbligatoria** | ogni paragrafo finisce su una frase-sentenza | lascia che un paragrafo **finisca e basta**, su un dettaglio qualunque |
+| **Chiusura a effetto obbligatoria** | ogni paragrafo finisce su una frase-sentenza | lascia che un paragrafo **finisca e basta**, su un dettaglio qualunque. Il tic è la sentenza in fondo a *ogni* paragrafo: la chiusa enfatica di un box read-aloud che c'è resta (`read-aloud-adulti.md` §2-ter, regola 3) |
 | **Trattino lungo come respiro** | «la roccia — e sai già cosa — si muove» | punto e virgola, due punti, o niente |
 | **Maiuscole di portento** | PESO, TUMP, VERA | **una per documento**. Se sono due, non funzionano più |
 | **Tutto è significativo** | ogni dettaglio descritto è un indizio o un simbolo | metti **una cosa che non c'entra niente**: una macchia, un rumore che era il vento |

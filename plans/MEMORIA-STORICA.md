@@ -2380,7 +2380,7 @@ repo scritto con altre parole.
 ### MS-0211 · 2026-11-19 · I segnalibri del PDF seguono l'albero dei titoli, e il volume è messo accanto alle case
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #502
 - **ADR:** ADR-0145
 - **Temi:** stampa segnalibri annidati pdf typst heading offset paizo wizards red hand of doom burnt offerings community confronto standard editoriale
 - **Origine:** riga del 2026-11-19 «ADR-0145, segnalibri annidati» in `plans/CHANGELOG.md`

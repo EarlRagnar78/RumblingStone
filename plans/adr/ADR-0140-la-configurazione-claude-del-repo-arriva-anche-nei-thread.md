@@ -83,10 +83,14 @@ token, e circa 113.000 caratteri venivano da plugin e connettori dell'account
 che il progetto non usa: spegnerli, a mano del DM, vale molto di più di questi
 4.900.
 
-**Quello che non si sa ancora.** La misura viene da `claude -p`, non da un
-thread. Se il runtime dei thread esclude le impostazioni di progetto, lo
-script non serve; lo dice solo un thread aperto dopo la modifica dello script
-d'avvio. Lo stato passa ad «accettata» solo con quella misura.
+**Prova in un thread vero.** Il 2026-11-19 lo script è stato lanciato a mano
+in `/home/user` dentro il thread che ha scritto questo ADR. Appena il
+`settings.json` generato ha ricevuto le regole `deny`, il thread ha perso i
+tool di Gmail, Google Drive, Channel3, Clipkit, Mobbin, Microsoft Learn, MDN,
+Shutterstock, bioRxiv e pg-aiguide: il runtime dei thread legge le
+impostazioni di `/home/user/.claude/`. Restano da vedere in un thread nuovo,
+dopo il merge, l'hook SessionStart e `rumblingstone-tools`, che partono solo
+all'avvio. Lo stato passa ad «accettata» con quella misura.
 
 **Test**: `scripts/tests/test_claude_progetto.py` (file scritti, percorsi che
 esistono, JSON validi, file altrui non toccati, rilancio idempotente, repo come

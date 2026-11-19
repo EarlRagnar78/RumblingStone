@@ -2181,7 +2181,17 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `plans/esperimenti/grafo-eventi-2026-11-12/ESITO.md` · `plans/esperimenti/grafo-eventi-2026-11-12/misure/risposte-qwen2.5-7b.json` · `plans/esperimenti/grafo-eventi-2026-11-12/leggi_ollama.py`
 - **Solo qui:** le letture complete (`main-rag-7b.json`, `mut-rag-7b.json`) e l'archivio del kit stanno in `/mnt/project-files/prove-4050-risultati/2026-11-19/`, fuori dal repo. Le 302 righe segnalate su main non sono state lette una per una: sei prese a caso erano false. Il 3B sbagliava per troppi NO, il 7B per troppi SÌ; riprovare ha senso solo cambiando la domanda al lettore, e il 12B non sta nei 6 GB della 4050
 
-### MS-0193 · 2026-11-19 · La configurazione Claude del repo non arrivava nei thread del progetto
+### MS-0193 · 2026-11-19 · La memoria corta passa il limite: il tetto di 12 KB diventa un controllo
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** ADR-0139
+- **Temi:** memoria memoria-storica cancello tetto processo
+- **Origine:** riga del 2026-11-19 «ADR-0139: la memoria corta ha un tetto» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha trovato l'indice della memoria delle sessioni a 16.878 byte, oltre il limite di 16.384, e ha chiesto perché la memoria storica non l'avesse evitato. Causa: ADR-0127 e ADR-0137 obbligano ad archiviare prima di togliere ma non a togliere, e nessun controllo misurava i byte; i thread chiudevano aggiungendo una riga «unita il …» invece di togliere la loro riga di stato (8 KB il 12/11, +8,8 KB in sette giorni). Indice riscritto a 11.255 byte dopo aver verificato che le 18 PR citate hanno tutte una voce; `memoria_storica.py --tetto-memoria DIR` esce 1 sopra i 12 KB e mostra le righe più lunghe, lanciato dalla routine del lunedì e dal coordinatore dopo ogni modifica dell'indice (scelta del DM sulla card del 19/11)
+- **Trovato nel repo:** `scripts/memoria_storica.py` · `scripts/tests/test_memoria_storica.py` · `plans/adr/ADR-0139-la-memoria-corta-ha-un-tetto-misurato.md`
+- **Solo qui:** le righe tolte senza un posto nel repo sono nella coda del thread («riportare-la-memoria-sotto-il-limite.md»): numerazione MS del 13/11 ormai superata, coda dei merge del 13/11, card sulle copie del booklet della serata forse superata da MS-0097 ma di chiusura non vista. Il controllo non parte da solo e non misura le note
+### MS-0194 · 2026-11-19 · La configurazione Claude del repo non arrivava nei thread del progetto
 
 - **Data:** 2026-11-19
 - **PR:** —
@@ -2190,4 +2200,4 @@ repo scritto con altre parole.
 - **Origine:** riga del 2026-11-19 «ADR-0140 (proposta), la configurazione Claude del repo arriva anche nei thread» in `plans/CHANGELOG.md`
 - **Testo:** audit delle best practice di Claude Code chiesto dal DM. Nei thread Claude parte in `/home/user`, la cartella che contiene il clone: AGENTS.md fuori dal contesto, hook SessionStart mai girato, `dnd-35-rules` legacy non spenta, `rumblingstone-tools` assente. Il thread del 19/11 è partito con 131.128 token di contesto; circa 113.000 caratteri venivano da plugin e connettori dell'account estranei al progetto. Già coperte e non rifatte: piani e ADR, MEMORIA.md e memoria storica (vanno oltre il «Document & Clear» dell'articolo), 3.289 test e circa 60 cancelli, un thread per compito
 - **Trovato nel repo:** `plans/adr/ADR-0140-la-configurazione-claude-del-repo-arriva-anche-nei-thread.md` · `scripts/claude-progetto.sh` · `scripts/tests/test_claude_progetto.py`
-- **Solo qui:** l'audit con la tabella pratica per pratica sta in `/mnt/project-files/best-practice-claude-code-2026-11-19/AUDIT.md`. Le cifre dell'articolo (33%, 150-200 istruzioni, 60% del contesto) sono di terzi e non sono state usate come obiettivi. AGENTS.md dice 77 tool per `rumblingstone-tools`, il server ne espone 135 e il manifest ne elenca 144: non corretto in questa PR. Delle ultime 100 corse CI sulle PR (15-19/11) 14 sono fallite, cause non classificate; il passo pytest dura circa 17 minuti
+- **Solo qui:** l'audit con la tabella pratica per pratica sta in `/mnt/project-files/best-practice-claude-code-2026-11-19/AUDIT.md`. Le cifre dell'articolo (33%, 150-200 istruzioni, 60% del contesto) sono di terzi e non sono state usate come obiettivi. AGENTS.md dice 77 tool per `rumblingstone-tools`, il server ne espone 135 e il manifest ne elenca 144: non corretto in questa PR. Delle ultime 100 corse CI sulle PR (15-19/11) 14 sono fallite, cause non classificate; il passo pytest dura circa 17 minuti. Scelte del DM sulle card del 19/11: config del repo nei thread; regole `deny` per dieci connettori inutilizzati (tolti dal thread appena scritto il settings generato); i plugin da spegnere erano ancora in attesa

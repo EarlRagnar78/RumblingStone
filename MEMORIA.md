@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-19 | AVVENTURE-COMMUNITY | Lettore del RAG per «chi sa cosa»: esito della prova da 7B sulla RTX 4050 del DM | `qwen2.5:7b` via Ollama sulla 4050, 636 risposte su 636 in circa 2 minuti (87% del modello in VRAM). Il criterio di ESITO.md non è raggiunto e il 7B non entra… |
 | 2026-11-18 | AVVENTURE-COMMUNITY | Calendario di ARC-09: i «Mirtul» rimasti diventano «Flamerule» (scelta del DM d… | dopo la scelta del DM che il Giorno di Marcia 1 è il 1° Flamerule (la Torre cammina il 30 Flamerule), 31 «Mirtul» restavano in 9 file fuori dalla PR della cart… |
 | 2026-11-18 | AVVENTURE-COMMUNITY | Calendario di ARC-09: il quickstart e la tabella delle armate allineati a… | il ricontrollo del 18/11 ha trovato due calendari diversi: `P2B-Torneo-DAUTH-DM-MASTER-REFERENCE` §1.1 (autoritativa) e `campaign/state.md` r.381 mettono i tre… |
 | 2026-11-18 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Kit delle prove 4050, rilettura a caccia di errori chiesta dal DM il 18/11 (ADR… | 🟡 errori noti nel kit: 4 → 0; test `test_prove_4050` 24 → 28 (box finto con podman e distrobox di prova; verifica su esiti finti; BOM). `trascrizione-gpu.sh` r… |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-17 | DOCUMENT-AI (thread «Applicare Document… | Tecnica 3, decodifica vincolata delle «Tattiche»: la prova per il portatile 405… | 🟡 script pronto, mai girato sulla 4050: 12 schede di `genera_creatura.py` × libero e vincolato (schema JSON in `format` di Ollama, azione in enum delle voci de… |
 | 2026-11-17 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 undicesima parte: il segugio infernale rifatto mezzo-immondo… | In PR |
 | 2026-11-17 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 5, villain senza duello. Il **Collezion… | ✅ punti dello schema mancanti per questi quattro: da 5 a 0 (esiti del Collezionista, punto 3 del Ghostlord, punti 3 e 5 degli assassini, punto 3 della chierica… |
-| 2026-11-17 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 4 (Sethrax, Azarr Kul, Ushgar): il prim… | ✅ file che descrivono il primo round in modo diverso: 1 su 3 → 0 su 3. Nessuna simulazione: Sethrax non attacca il party nel primo round, quindi la scelta non… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 169 voci, l'ultima MS-0169 del 2026-11-18 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 170 voci, l'ultima MS-0170 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

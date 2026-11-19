@@ -1920,3 +1920,14 @@ repo scritto con altre parole.
 - **Testo:** il DM ha confermato sulla card della carta del cielo che vale l'ancora del 12/07: Giorno di Marcia 1 = 1° Flamerule, e la Torre cammina la notte del 30 Flamerule. Restavano 31 «Mirtul» in 9 file: la scadenza «fine Mirtul, poi la torre cammina» nei file degli agganci, nel dossier delle piste, nella Cerimonia delle 100 Asce, nella scheda di Tempestas e in `state.yaml`, più la data della lettera di Brenna. Il DM ha scelto di correggerli tutti, lettera compresa: ora è datata «il diciannovesimo di Flamerule»
 - **Trovato nel repo:** `scripts/tests/test_calendario_flamerule.py` · `campaign/state.yaml` (riga di Tempestas in `conoscenze`) · `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md` · `scripts/session_recap.py` (`MARCH_DAY1_HARPTOS`)
 - **Solo qui:** il coordinatore aveva chiesto di distinguere i «Mirtul» compatibili da quelli in contrasto: letti uno per uno, nessuno era compatibile, perché tutti legano il mese al Giorno 30 o al dopo-Hammerfist. La regola pensata all'inizio (mese scritto contro Giorno di Marcia, riga per riga) non è stata scritta: il cancello cerca solo la parola «Mirtul» nei testi di gioco, e non vede una data sbagliata scritta con un altro mese. Restano fuori `campaign/state-changelog.md`, che è storia, e i riferimenti di lore in `skills/`
+
+### MS-0170 · 2026-11-19 · Il lettore da 7B sulla RTX 4050 non entra nel verificatore della storia
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** ADR-0125
+- **Temi:** coerenza-storia rag lettore qwen2.5 7b rtx-4050 ollama prova-4050 esito-negativo
+- **Origine:** riga del 2026-11-19 «Lettore del RAG per «chi sa cosa»» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha lanciato il kit sull'ASUS: `qwen2.5:7b` a 4 bit via Ollama, 636 risposte su 636 in circa 2 minuti. Il criterio fissato il 12/11 (90% di SÌ sulle domande giuste, al massimo 5% col PNG sbagliato, 70% di precisione su main) non è raggiunto. Il 7B dice SÌ a 499 candidati su 560 su main e a 78 domande su 79 sulle righe dei mutanti: li trova (21 su 25) perché dice SÌ quasi a tutto. Il RAG resta fuori dal verificatore
+- **Trovato nel repo:** `plans/esperimenti/grafo-eventi-2026-11-12/ESITO.md` · `plans/esperimenti/grafo-eventi-2026-11-12/misure/risposte-qwen2.5-7b.json` · `plans/esperimenti/grafo-eventi-2026-11-12/leggi_ollama.py`
+- **Solo qui:** le letture complete (`main-rag-7b.json`, `mut-rag-7b.json`) e l'archivio del kit stanno in `/mnt/project-files/prove-4050-risultati/2026-11-19/`, fuori dal repo. Le 302 righe segnalate su main non sono state lette una per una: sei prese a caso erano false. Il 3B sbagliava per troppi NO, il 7B per troppi SÌ; riprovare ha senso solo cambiando la domanda al lettore, e il 12B non sta nei 6 GB della 4050

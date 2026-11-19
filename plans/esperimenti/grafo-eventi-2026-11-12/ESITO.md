@@ -98,21 +98,48 @@ Nella prima corsa avevo messo l'origine del titolo di Custodi Eterni al Day 19, 
 
 La correzione ha invece fatto emergere un fatto nuovo su state.yaml: la lettera di Brenna usa il titolo e la sua consegna è datata al Day 21 (e al Giorno 22 nello stesso file). È la domanda D1 di [PROPOSTA-GIORNI-CHI-SA-COSA.md](PROPOSTA-GIORNI-CHI-SA-COSA.md).
 
+## Aggiornamento del 19 novembre: il lettore da 7B sulla RTX 4050
+
+Il DM ha lanciato il kit sull'ASUS con la RTX 4050: `leggi_ollama.py` con `qwen2.5:7b` via Ollama, 636 risposte su 636 in circa 2 minuti (0,24 s a domanda). Il kit avverte che solo l'87% del modello stava in VRAM, quindi il tempo vale con quella riserva. Le risposte sono in `misure/risposte-qwen2.5-7b.json`; le due letture complete (`main-rag-7b.json`, `mut-rag-7b.json`) restano fuori dal repo, in `/mnt/project-files/prove-4050-risultati/2026-11-19/`.
+
+| misura | lettore 3B (CPU, 12/11) | lettore 7B (4050, 19/11) |
+|---|---:|---:|
+| SÌ sui 560 candidati di main | 35 (6%) | 499 (89%) |
+| righe segnalate su main dal RAG | 23 | 302 (673 rilievi) |
+| di cui vere | 0 su 23 | non giudicate una per una; 6 prese a caso, 6 false |
+| mutanti trovati (RAG da solo) | — | 21 su 25, parafrasi 8 su 11 |
+| rilievi fuori dai mutanti | 42 (integrato) | 566 |
+| SÌ sulle righe dei mutanti recuperati | 34 su 81 | 78 su 79 |
+
+**Il 7B non entra come lettore.** Trova quasi tutti i mutanti solo perché dice SÌ quasi a tutto:
+- sulle 79 domande fatte sulle righe dei 21 mutanti recuperati risponde SÌ 78 volte. Al massimo 21 di quelle domande sono sul PNG giusto, quindi col PNG sbagliato dice SÌ almeno 57 volte su 58 (98%). Il criterio chiedeva al massimo il 5%;
+- fuori dai mutanti dice SÌ a 432 domande su 481;
+- su main dice SÌ a 499 candidati su 560. La prima riga dell'elenco è la voce d'indice «Sonjak / Matrona Sajak … Matrona Drow, comanda forze sotterranee», letta come «Sonjak sa delle gemme».
+
+Il 3B sbagliava dicendo troppi NO, il 7B sbaglia dicendo troppi SÌ: in tutti e due i casi il lettore non distingue «la frase parla del fatto» da «questo PNG lo sa».
+
+Limiti di questa misura:
+- le 302 righe su main non sono state lette una per una: la precisione «0 su 6» è un campione, non un conteggio. Con l'89% di SÌ su candidati presi per somiglianza non può però arrivare al 70% del criterio;
+- la divisione fra PNG giusto e PNG sbagliato sui mutanti è un limite calcolato (almeno 98%), non un conteggio riga per riga;
+- i testi letti sono quelli del commit 35248a20, non la testa di oggi;
+- un solo modello da 7B, a 4 bit, con la domanda scritta per il 3B. Una domanda diversa o un 12B potrebbero cambiare la lettura, ma il 12B non sta nei 6 GB della 4050.
+
 ## Onestà sul banco
 
 - **I giorni dedotti sono miei.** Le regole temporali sono esatte quanto i giorni che ricevono. Ne ho dedotti 16; sono in `eventi.yaml` con la loro fonte.
 - **I mutanti li ho scritti io, sapendo come cercano le regole.** Il 13/14 piano è un tetto. Le parafrasi sono la stima onesta, e lì le regole fanno 0/11.
 - **Le descrizioni dei fatti per il RAG le ho scritte io** (`FATTI_IT`), dopo aver scritto i mutanti. Le ho tenute neutre, ma il rischio di averle accordate ai mutanti c'è.
-- **Un solo lettore, da 3B, su CPU.** Un modello più grande cambierebbe la lettura. La strada già aperta da ADR-0089 è un 12B sull'ASUS con la RTX 4050. Il banco è pronto: si cambia `--modello` e si rilancia.
+- **Due lettori, 3B su CPU e 7B sulla RTX 4050** (aggiornamento del 19/11, sopra). Nessuno dei due raggiunge il criterio. Il 12B di ADR-0089 non sta nei 6 GB della 4050.
 - **La misura su main è piccola** (6 e 23 righe). Dice la direzione, non una percentuale stabile.
 
 ## Che cosa ne segue
 
 - **Il motore logico non entra.** Con i punti chiave le regole diventano davvero temporali e ricorsive, ma Python le fa uguali, con zero dipendenze. È la stessa conclusione di ADR-0124, ora misurata anche con il tempo.
 - **Il grafo con i giorni vale**, ma come dato e non come motore. Se il DM dà un giorno alle righe di §4 e una fonte che punta a un altro PNG, T1 e T2 diventano regole corte da portare in `coerenza_campagna --state`, come S1-S7.
-- **Il RAG non entra con un lettore da 3B**: 0 rilievi veri su 23 su main.
+- **Il RAG non entra, né con il lettore da 3B né con quello da 7B**: 0 rilievi veri su 23 su main col 3B; col 7B 302 righe segnalate, 6 su 6 false nel campione.
   - Il recupero funziona (8 parafrasi su 11 fra i primi 20 candidati), quindi il pezzo da rimisurare è solo il lettore.
   - Criterio per riprovare: sul banco dei mutanti almeno 90% di SÌ sulle domande giuste, al massimo 5% di SÌ col PNG sbagliato, e su main almeno 70% di precisione.
+  - Il 19/11 il 7B sulla 4050 non l'ha raggiunto (almeno 98% di SÌ col PNG sbagliato). Riprovare ha senso solo cambiando la domanda al lettore o la macchina, non rilanciando lo stesso banco.
 
 ## Come si rifà
 

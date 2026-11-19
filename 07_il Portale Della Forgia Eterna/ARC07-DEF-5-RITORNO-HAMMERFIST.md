@@ -500,7 +500,9 @@ Caduta Dana, il colpo che ucciderebbe il re lo prende il primo dei dieci capi
 che sale sull'altare, **Hrolf Spaccascudi** `[CANONE — DM 2026-11-15]`, e gli hobgoblin passano a tirare a chi è sull'altare.
 Nel ramo luminoso succede di rado, perché i tiri al re cominciano al round 6
 `[CANONE — DM 2026-10-19, giro 4 DEF-5 n. 6]`.
-<!-- storico: fino al 2026-11-15 i dieci capi erano senza nome; il DM ha scelto sulla card del 15/11 di nominarne due con un gesto (Hrolf Spaccascudi prende il colpo al posto del re, Yrsa Portastendardo tiene lo stendardo). Quattro capi sono gli Eroi di Hammerfist nella regia breve, gli altri quattro restano senza nome. Se Hrolf sopravvive al colpo non è deciso -->
+<!-- storico -->
+<!-- fino al 2026-11-15 i dieci capi erano senza nome; il DM ha scelto sulla card del 15/11 di nominarne due con un gesto (Hrolf Spaccascudi prende il colpo al posto del re, Yrsa Portastendardo tiene lo stendardo). Quattro capi sono gli Eroi di Hammerfist nella regia breve, gli altri quattro restano senza nome. Se Hrolf sopravvive al colpo non è deciso -->
+<!-- /storico -->
 
 #### Il round di sorpresa, un gesto a testa
 
@@ -936,7 +938,7 @@ racconta l'arrivo nel Cuore della Montagna, cioè la Scena 2, con uno stato del
 gruppo superato. Finché il raccordo non è scritto, il DM apre la Sessione 4
 della Guida (l'Incontro 4A, la battaglia aerea contro Fauci) dall'uscita del portale, subito, e con
 lo stato del §0-bis `[CANONE — DM 2026-10-19, giro 4 DEF-5 n. 5]`. Il raccordo va scritto. Il ponte d'arrivo
-dell'ARC-08 è allineato allo stato in uscita dal 2026-10-31: −4 DES / +2 COS /
+dell'ARC-08 è allineato allo stato in uscita<!-- storico --> dal 2026-10-31<!-- /storico -->: −4 DES / +2 COS /
 +4 CAR, i tre Doni, Durik sempre presente, il Cuore di Moradin che non aggancia
 gli spiriti (D32), e il §3.4 che riprende dall'Incontro 4A.
 
@@ -1074,8 +1076,8 @@ ginocchio sul re, sull'altare.
 > Caverna-cattedrale **100 m × 80 m × 40 m** di altezza.
 > ⚠️ **Scala 3 m/quadretto**: è la deviazione A4 dalla convenzione 1,5 m. La
 > griglia originale è disegnata così, e non è stata ridisegnata per non
-> alterare posizioni e portate già usate nel testo. Dal 2026-10-22 è
-> dichiarata vista d'insieme (`@tipo strategica`): le miniature si muovono
+> alterare posizioni e portate già usate nel testo. Ora è
+> dichiarata vista d'insieme<!-- storico --> (dal 2026-10-22)<!-- /storico --> (`@tipo strategica`): le miniature si muovono
 > sulla carta **CM-2**, qui sotto, a 1,5 m. Non mischiare quadretti di mappe a
 > scale diverse.
 

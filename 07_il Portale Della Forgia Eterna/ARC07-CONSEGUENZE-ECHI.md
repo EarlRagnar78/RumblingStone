@@ -5,11 +5,11 @@
 > ARC-09 (**evento → eco → quando riemerge → file che lo gestisce**), con
 > **varianti per esito del duello** con Skullcrusher (P5). Cross-link alla
 > **tabella echi ARC-08 (C2)** perché **uovo** e **Rubino** attraversano
-> entrambi gli archi. Collocazione dell'uovo (§3) **approvata dal DM
-> 2026-07-03**; le varianti di tono del Rubino (§2) sono colore RP a
+> entrambi gli archi. Collocazione dell'uovo (§3) **approvata dal DM**<!-- storico -->
+> (2026-07-03)<!-- /storico -->; le varianti di tono del Rubino (§2) sono colore RP a
 > discrezione del DM.
 >
-> 🔗 **Rapporto con l'Echo Ledger (post-consolidamento 2026-07-23).** L'**Echo
+> 🔗 **Rapporto con l'Echo Ledger<!-- storico --> (post-consolidamento 2026-07-23)<!-- /storico -->.** L'**Echo
 > Ledger** in `ARC07-DEF-5-RITORNO-HAMMERFIST.md §7` è la **checklist operativa
 > di chiusura d'arco** (una riga per filo armato: carry-over B4, Debito della
 > Radice, Ghostlord, Vatore/Sal, Varis, Doni mancati, Cronaca Vivente — «stato
@@ -36,11 +36,13 @@
 
 ## 2-bis. IL BIVIO DELLA SENZIENZA — il ramo che attraversa tre archi
 
+<!-- storico -->
 > ⚠️ **Perché sta qui e non solo in `DEF-4`.** Questo file è il riferimento
 > dettagliato che l'Echo Ledger riassume, e fino al 2026-09-20 **non sapeva che
 > il bivio esistesse**: misurato, «Senzienza», «deflessione», «Rituale 4» e
 > «Corona +3» comparivano **zero volte**. Un eco che vive in un solo documento
 > non è un eco: è una nota in un master.
+<!-- /storico -->
 
 La scelta si fa a `DEF-3` §5, al rito di resurrezione, e **si incassa a
 `DEF-4` Scena 12**, un beat dopo. Fra le due cose il giocatore non deve
@@ -89,7 +91,7 @@ della Corona** — eco narrativa, distinta dal carry-over **meccanico** B4:
 
 ---
 
-## 3. L'UOVO — CUSTODE DESIGNATO ✅ approvato DM (2026-07-03)
+## 3. L'UOVO — CUSTODE DESIGNATO<!-- storico --> ✅ approvato DM (2026-07-03)<!-- /storico -->
 
 Collocazione dell'uovo (hook P6), **approvata dal DM**:
 

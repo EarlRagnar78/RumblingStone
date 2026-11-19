@@ -85,6 +85,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
 | 2026-11-19 | SISTEMI-DI-GIOCO-PLUGIN | `conformita_statblocchi`: il talento di una riga di variante non entra nei TS a… | ✅ test nuovo rosso su main, verde qui |
+| 2026-11-18 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 5: sei frasi corrette dopo la rilettura… | ✅ frasi del lotto 5 in contraddizione con la loro fonte: da 6 a 0 su 6 testi riletti (tre nel Palio, due nel Ghostlord, una nel Collezionista); misure di Azarr… |
 | 2026-11-18 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: ricontrollo del corredo di dieci schede chiesto dal DM… | errori nelle note di corredo da 4 a 0 e balestre senza munizioni da 2 a 0 su dieci schede ricontrollate; `verifica_scheda.py` 0 violazioni prima e dopo |
 | 2026-11-18 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Kit delle prove 4050, primo giro del DM sull'ASUS (ADR-0136): il kit è partito… | 🟡 messaggi che spiegano il fallimento di quel giro: 0 → 1; prove fallite prima di partire viste dalla verifica: 0 su 1 → 1 su 1; comandi per ripartire pulito:… |
 | 2026-11-18 | SISTEMI-DI-GIOCO-PLUGIN | Correzioni dall'audit del 18/11. Impronte del banco d'invarianza rigenerate dop… | ✅ `impronte.py --confronta` 12 su 12 |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-18 | STATO-E-ORDINE | ADR-0138, il cancello della coda della memoria storica (richiesta del DM del 18… | ✅ voci nate fuori da una PR: 0 → 11; thread risolti senza voce ora misurabili (13 su 13 fra il 12 e il 17/11, prima della regola; dopo la rilettura 4 hanno una… |
 | 2026-11-18 | DOCUMENT-AI (thread «Applicare Document… | Tecnica 3, decodifica vincolata: tre errori dello script della prova corretti p… | 🐛 Rilettura chiesta dal DM il 18/11, a prova non ancora girata sulla 4050. (1) `valido_libero` teneva solo le righe che cominciano con «-» o «*»: un elenco num… |
 | 2026-11-18 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Kit delle prove 4050, rilettura a caccia di errori chiesta dal DM il 18/11 (ADR… | 🟡 errori noti nel kit: 4 → 0; test `test_prove_4050` 24 → 28 (box finto con podman e distrobox di prova; verifica su esiti finti; BOM). `trascrizione-gpu.sh` r… |
-| 2026-11-18 | STATO-E-ORDINE | ADR-0137, la memoria storica a ogni blocco di lavoro (richiesta del DM del 18/1… | 🟡 PR unite dal 12/11 ritrovate con `--pr`: 37 → 90 su 90 (88 con la voce propria; #387 e #389 toccano solo `docs/` e sono solo citate in MS-0082). Memoria dell… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 188 voci, l'ultima MS-0188 del 2026-11-18 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 189 voci, l'ultima MS-0189 del 2026-11-18 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

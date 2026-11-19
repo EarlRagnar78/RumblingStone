@@ -143,10 +143,14 @@ Un ramo per patto (§Con i PG) e uno per l'attacco (§In combattimento). La colo
 |:---|:---|:---|
 | **Artemis accetta** lo scambio (il mantello per il registro degli Ironforge) | Artemis ricco ma compromesso moralmente (r.102) | Ha il registro e una prova del furto: una leva su Artemis da usare più avanti |
 | **Thorik usa i Fuochi di Baator** | Un'ala dell'orda distrutta, fumi letali nei tunnel di evacuazione (r.108) | Ha venduto un'arma e ha i morti civili da raccontare: una leva sul Senso del Dovere di Thorik |
-| **Tordek ruba i Cristalli di Risonanza** | Gli esplosivi tornano ai nani (r.114) | Perde merce e lo sa: Tordek entra nella lista di chi gli deve qualcosa |
+| **Tordek ruba i Cristalli di Risonanza** | Tordek apre i forzieri dimensionali e si prende gli esplosivi, mentre Artemis distrae Varis (r.114) | Perde merce e lo sa: Tordek entra nella lista di chi gli deve qualcosa |
 | **Hella lo minaccia** e difende i rifugiati | Rancore eterno del Rakshasa verso Hella (r.120) | Hella diventa il suo bersaglio personale nelle scene successive |
 | **I PG lo attaccano** | Contingenza con *porta dimensionale*: sparisce senza combattere (r.128) | Nessuna perdita per lui; il mercato con i PG si chiude e restano solo le leve già prese |
 | **Nessun patto** | — | Continua a depredare i clan mentre Hammerfist e l'orda si consumano (§Gli obiettivi) |
+
+<!-- storico -->
+- era (17/11, corretto il 18/11): riga di Tordek, conseguenza «Gli esplosivi tornano ai nani». La scheda dice solo che Tordek li ruba (r.114); a chi vanno dopo non è scritto.
+<!-- /storico -->
 
 ## Fonti e canone
 

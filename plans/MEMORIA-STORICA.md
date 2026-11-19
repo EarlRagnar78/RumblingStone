@@ -2257,3 +2257,14 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `scripts/gate_locale.py` · `.pre-commit-config.yaml` · `scripts/install-git-hooks.sh` · `plans/adr/ADR-0143-i-gate-veloci-girano-prima-del-push.md`
 - **Solo qui:** gli id delle 11 corse rosse (44426033056, 44425938003, 44183963956, 44181729147, 43919525637, 43770067168, 43769907951, 43769733440, 43769518617, 43729307832, 43727650247); la stima del giro di CI in più (circa 22 minuti per rosso) non è misurata; le skill del repo «doppie» costano circa 0,7k token, non 5k
 
+### MS-0200 · 2026-11-19 · Due test che fallivano solo nei container dei thread
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** —
+- **Temi:** test ermetici tdd thread build shallow conformita fase1
+- **Origine:** riga del 2026-11-19 «Due test che dipendevano dalla macchina, corretti con il test scritto prima» in `plans/CHANGELOG.md`
+- **Testo:** trovati lanciando l'intera suite in un thread durante la verifica di ADR-0142 e ADR-0143: in CI erano verdi, nei container rossi. (1) `conformita_statblocchi` scorreva `ROOT.rglob("*.md")`, compresa la `build/` che `session-start.sh` costruisce: 112 copie di SKILL.md segnalate come file con numeri non letti. Ora enumera come `validate_docs.sorgenti` (tracciati più nuovi non ignorati), con ritorno a `rglob` fuori da un clone git. (2) `TestRamiAccanto` chiamava `contenuti_nei_rami.shallow()` vero: nel clone shallow dei thread `fase1` stampa «rami non misurati» e il test non trovava i file attesi; ora `shallow` è finto come gli altri accessi al repo. Test scritti prima e visti rossi (`test_le_cartelle_di_gitignore_restano_fuori`); impronta delle creature identica dopo la modifica
+- **Trovato nel repo:** `scripts/conformita_statblocchi.py` · `scripts/tests/test_conformita_statblocchi.py` · `scripts/tests/test_fase1.py`
+- **Solo qui:** il clone dei thread di questo container risultava shallow (`git rev-parse --is-shallow-repository` = true) nonostante lo script d'avvio faccia l'unshallow
+

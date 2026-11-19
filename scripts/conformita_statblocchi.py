@@ -1705,10 +1705,25 @@ def numeri_delle_unita(p: Path, testo: str) -> "list[dict]":
     return fuori
 
 
+def md_del_repo(radice: Path = ROOT) -> "list[Path]":
+    """I .md tracciati più i nuovi non ignorati, come `validate_docs.sorgenti`:
+    le cartelle di `.gitignore` (build/, gli specchi delle skill) restano fuori.
+    Fuori da un clone git, tutti i .md."""
+    import subprocess
+    try:
+        uscite = [subprocess.run(["git", "ls-files", "-z", *extra, "*.md"], cwd=radice,
+                                 capture_output=True, text=True, check=True).stdout
+                  for extra in ((), ("--others", "--exclude-standard"))]
+    except (OSError, subprocess.CalledProcessError):
+        return sorted(radice.rglob("*.md"))
+    nomi = {n for u in uscite for n in u.split("\0") if n}
+    return sorted(radice / n for n in nomi if (radice / n).is_file())
+
+
 def numeri_dei_file() -> "tuple[list[dict], list[str]]":
     """Gli scarti di master, moduli e unità, e i file con numeri che nessuno legge."""
     scarti_, scoperti = [], []
-    for p in sorted(ROOT.rglob("*.md")):
+    for p in md_del_repo():
         r = _rel(p)
         if r.startswith(FUORI_DAI_NUMERI) or any(x in r for x in FUORI_DAI_NUMERI) \
                 or r.startswith("Bestiario/"):

@@ -693,9 +693,7 @@
       // riquadro, e dentro un secondo controllo che rimisura. Il primo non
       // convergeva: l'Abbazia della Rotta Sicura stampava nell'indice un
       // numero di pagina diverso a ogni giro (30, 31, 32). Resta solo il
-      // secondo, che fa la stessa scelta dove il riquadro cade davvero; si
-      // paga una scheda in più spezzata sulle due facciate aperte del volume
-      // d'arco (lo Skullcrusher Vecchio, pp. 204-205), che ADR-0144 ammette.
+      // secondo, che fa la stessa scelta dove il riquadro cade davvero.
       // La colonna dopo può essere accorciata da un float a tutta pagina (la
       // scheda d'entrata, una tabella larga), e un blocco che non si spezza
       // finirebbe sopra il piede: intero solo se entra davvero dove cade.
@@ -717,6 +715,12 @@
           context {
             let qui2 = fondo-col - here().position().y - 4pt
             if alto >= qui2 and here().position().x > page.width / 2 { colbreak() }
+            // In cima alla colonna di sinistra accorciata da un float a tutta
+            // pagina, anche quella di destra è accorciata allo stesso modo: se
+            // il riquadro non sta nelle due, si spezzerebbe a pagina girata
+            // e va alla pagina dopo (lo Skullcrusher Vecchio nel volume
+            // d'arco, pp. 204-205, finiva su tre colonne).
+            else if alto > 2 * qui2 - 12pt and qui2 < colonna * 0.8 { colbreak(); colbreak() }
             intero(tattiche, spezzabile: true)
           }
         } else {

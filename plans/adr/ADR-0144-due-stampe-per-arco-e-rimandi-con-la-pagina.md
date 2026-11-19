@@ -88,11 +88,12 @@ Quello che si paga:
 - il volume d'arco porta in stampa, per la prima volta, `ARC07-DEF-5` e
   `ARC07-CONSEGUENZE-ECHI.md`: sette righe di storia del repo (date di
   approvazione, «dal 2026-10-22») sono avvolte in `<!-- storico -->` come
-  vuole §4.6 di `rumblingstone-editoria`, e restano nel sorgente. Tre note
-  aperte dei master arrivano in stampa (due «TODO» dei Bracieri in DEF-1 §8,
-  un «(da verificare)» in DEF-4 sulle pergamene di Hella): il cricchetto di
-  `test_misura_standard_tavolo` le conta con tetto 3, perché chiuderle è una
-  scelta di contenuto del DM;
+  vuole §4.6 di `rumblingstone-editoria`, e restano nel sorgente. Due note
+  aperte dei master arrivano in stampa (i «TODO» dei Bracieri in DEF-1 §8): il
+  cricchetto di `test_misura_standard_tavolo` le conta con tetto 2, perché
+  chiuderle è una scelta di contenuto del DM. Il «(da verificare)» di DEF-4
+  sulle pergamene di Hella l'ha chiuso la card del 19/11 (sono nella lista del
+  druido, SRD 3.5);
 - i rimandi a un file che non sta nel volume restano come nome di file, come
   negli altri booklet del repo (uno nel booklet lungo da 162 pagine).
 

@@ -1518,8 +1518,14 @@ confermato 2026-10-19, giro 4 n. 10]`.
 della lista del chierico e del paladino, non del druido: la legge Artemis con
 Usare Oggetti Magici, CD 27 (20 più il 7° livello dell'incantatore, come il
 *silenzio* a CD 23 qui sopra). Le *cure* e *neutralizza veleno* le legge Hella
-se sono sulla lista del druido, che il mirror SRD del repo non riporta intera
-(da verificare); altrimenti Artemis, a CD 25 le *gravi* e a CD 27 le altre.
+senza prove di Usare Oggetti Magici: sono nella lista del druido (SRD 3.5:
+*cura ferite gravi* 4°, *cura ferite critiche* 5°, *neutralizza veleno* 3°)
+`[CANONE — DM 2026-11-19, card]`. Le serve solo una prova di livello
+dell'incantatore (CD pari al livello della pergamena più 1) se la pergamena è di
+livello più alto del suo (SRD 3.5, «Scrolls»).
+<!-- storico -->
+<!-- prima: «le legge Hella se sono sulla lista del druido, che il mirror SRD del repo non riporta intera (da verificare); altrimenti Artemis, a CD 25 le gravi e a CD 27 le altre» -->
+<!-- /storico -->
 
 L'ascia e lo scudo **non sono stati fatti stanotte**: erano già nella forgia,
 pezzi rari che il capo fabbro teneva da parte. Tornano nel 1372 con i PG, che li

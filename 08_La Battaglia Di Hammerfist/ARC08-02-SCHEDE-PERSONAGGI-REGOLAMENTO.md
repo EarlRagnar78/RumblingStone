@@ -378,10 +378,11 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 **Qualità Speciali:**
 *   **Scacciare Non Morti (Sop):** 11/giorno (+6 al tiro).
 *   **Canto di Battaglia (Sop):** 1/giorno, azione standard. Tutti gli alleati entro 18m ottengono +2 morale ad attacchi, danni e TS per 10 round.
-*   **Incantesimi:** Lancia come un Chierico di 15° livello. **Domini:** Guerra, Terra.
-    *   **Incantesimi Preparati (LI 15°):** *Aura Sacra*, *Parola del Potere Stordire* (D), *Terremoto* (D), *Guarigione* (x2), *Lama di Barriera* (D), *Colpo Infuocato* (D), *Potere Divino* (D), *Muro di Pietra*, *Preghiera*, ecc. (elenco completo nella Guida DM).
+*   **Incantesimi:** Lancia come un Chierico di 15° livello. **Domini:** Protezione, Terra.
+    *   **Incantesimi Preparati (LI 15°):** *Aura Sacra*, *Vuoto Mentale* (D), *Terremoto* (D), *Guarigione* (x2), *Pelle di Pietra* (D), *Colpo Infuocato*, *Immunità agli Incantesimi* (D), *Potere Divino*, *Muro di Pietra*, *Preghiera*, ecc. (elenco completo nella Guida DM).
 
-**Talenti:** Scacciare Extra, Arma Focalizzata (martello da guerra) dal dominio della Guerra (gli altri talenti non sono scritti). `[CANONE — regola, ADR-0118]: il dominio della Guerra dà Arma Focalizzata nell'arma preferita di Moradin (SRD), e il martello torna a +18 (BAB +11, For +4, +2 arma, +1)`
+**Talenti:** Scacciare Extra, Arma Focalizzata (martello da guerra) (gli altri talenti non sono scritti). `[CANONE — DM 2026-11-19]: Arma Focalizzata è un suo talento, e il martello resta a +18 (BAB +11, For +4, +2 arma, +1)`
+<!-- storico: fino al 2026-11-19 Domini Guerra e Terra, con Arma Focalizzata dal dominio della Guerra, che Moradin non dà (scelta del DM sulla card del 2026-11-19) -->
 **Equipaggiamento:** *Armatura Completa +3*, *Scudo Pesante +2*, *Anello di Protezione +3*, *Martello da Guerra Sacro +2*, *Guanti del Potere Orchesco +2* e *Mantello del Carisma +2*.
 
 **Tattiche:** *Prima del combattimento*: al mattino prepara *Banchetto degli Eroi* per gli ufficiali e consacra le armi (Benedizione della Forgia); prima di un assalto lancia *Aura Sacra* su sé e sulle Cantitrici vicine, e *Libertà di Movimento* su Re Thorek. *Durante il combattimento*: round 1 Canto di Battaglia (+2 a tutti gli alleati entro 18 m per 10 round); poi tiene in piedi i comandanti, con *Guarigione* sul re e *Cura Ferite Leggere di Massa* dopo ogni soffio; *Muro di Pietra* chiude una breccia, *Terremoto* lontano dalle mura spezza una carica. Scaccia i non morti se ne compaiono. Combatte col martello solo se un nemico le arriva addosso, e allora prima *Potere della Giustizia* e *Potere Divino*. *Morale*: non abbandona il re né il tempio; sotto i 40 pf si ritira dietro le Cantitrici, si cura e torna.
@@ -394,8 +395,8 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 > senza perdere progressione; lo *Skald* (Advanced Class Guide) si avvicina
 > nel canto ma stravolge il chierico, e resta da preferire la classe 3.5.
 > Conti ricontati: *Armatura Completa +3* vale +11 e *Scudo Pesante +2* +4
-> (erano +8 e +2), quindi CA 29; il dominio della Guerra dà Arma Focalizzata
-> nel martello da guerra, l'arma di Moradin; +18 e 1d8+6 chiedono For 18,
+> (erano +8 e +2), quindi CA 29; Arma Focalizzata nel martello da guerra è
+> un suo talento, e i domini sono Protezione e Terra (Moradin non dà Guerra); +18 e 1d8+6 chiedono For 18,
 > dai guanti. Scacciare: 3 + Car +4 + 4 di Scacciare Extra = 11
 > al giorno, prova +6. Incantesimi: con Sag 22 gli slot sono quelli scritti,
 > e ogni livello ha uno slot di dominio (D).
@@ -687,7 +688,7 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 | **Velocità** | 6m | |
 | **TS** | Temp **+13**, Rifl **+7**, Vol **+16** | |
 | **Attacco Base** | +8 | |
-| **Attacco Melee** | **+14** | *Martello da Guerra Sacro +2* (1d8+5) |
+| **Attacco Melee** | **+13** | *Martello da Guerra Sacro +2* (1d8+5) |
 | **For** 16, **Cos** 20, **Int** 13, **Sag** 22, **Car** 15 | | |
 
 **Abilità:** Concentrazione **+20**, Conoscenze (religione) **+8**, Sapienza Magica **+16**, Ascoltare +6, Osservare +6, Percepire Intenzioni +6, Sopravvivenza +6, Guarire +6, Diplomazia +2, Intimidire +2, Artigianato (pietra) +11, Nascondersi −5, Muoversi Silenziosamente −5.
@@ -700,7 +701,8 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
     *   **Guarigione:** *Guarigione*, *Cura Ferite Critiche* (x2), *Cura Ferite Gravi* (x2), *Cura Ferite Moderate* (x3).
     *   **Supporto:** *Potere Divino* (+bonus attacco, PF temp), *Preghiera* (+1 a tutti i tiri alleati, -1 nemici), *Forza del Toro* (x2).
     *   **Attacco:** *Colpo Infuocato*, *Ferire*.
-    *   **Domini:** Guerra (competenza e focus nelle armi), Terra (*Scolpire Pietra*).
+    *   **Domini:** Protezione (1/giorno, +9 al prossimo TS di chi tocca), Terra (*Scolpire Pietra*).
+    <!-- storico: fino al 2026-11-19 Guerra (competenza e focus nelle armi), che Moradin non dà; attacco +14 (scelta del DM sulla card del 2026-11-19) -->
 
 ---
 <div style="page-break-before:always"></div>

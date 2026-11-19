@@ -85,7 +85,7 @@ valori in `07_.../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`).
 
 > ⚠️ **Superata nei numeri.** Le quattro schede sono state ricontate:
 > Borin CA 25 e +21/+16/+11; Dara CA 21, 102 pf e +19/+14/+9; Harbek 114 pf,
-> martello +14, Scacciare 9/giorno (10 fino al 2026-11-19, Car 15 per Int 13) e slot da chierico di 12°; Nala CA 20, 90
+> martello +13 (+14 fino al 2026-11-19, domini Protezione e Terra), Scacciare 9/giorno (10 fino al 2026-11-19, Car 15 per Int 13) e slot da chierico di 12°; Nala CA 20, 90
 > pf e stocco 15-20. Le note di verifica degli statblock completi stanno in
 > ARC08-01, sotto ciascuna scheda.
 

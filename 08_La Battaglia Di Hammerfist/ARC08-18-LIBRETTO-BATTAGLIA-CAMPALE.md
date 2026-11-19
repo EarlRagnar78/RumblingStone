@@ -333,7 +333,7 @@ il DM racconta il conto.
 
 **Gli eroi.** Bonus d'attacco per **Combattere**, dalle schede del Bestiario:
 Borin **+21**, Dara **+19** (+25 contro gli orchi, +23 contro i giganti, +21
-con *grazia del gatto*), Harbek **+14**, Nala **+13**.
+con *grazia del gatto*), Harbek **+13**, Nala **+13**.
 
 ---
 

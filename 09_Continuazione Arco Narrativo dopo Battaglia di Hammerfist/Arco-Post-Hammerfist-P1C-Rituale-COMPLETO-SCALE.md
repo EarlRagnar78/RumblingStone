@@ -303,7 +303,8 @@ SE Seedlings piantati:
 
 **Forze:**
 - 1 Drow Assassin (Rogue 9) - Invisibility pre-cast
-- 2 Drow Clerics (Cleric 8, dominio Guerra + Fuoco)
+- 2 Drow Clerics (Cleric 8, domini Distruzione + Inganno)
+<!-- storico: fino al 2026-11-19 «dominio Guerra + Fuoco» qui e «War + Trickery» nella scheda: Lolth non dà né Guerra né Fuoco (scelta del DM sulla card del 2026-11-19) -->
 - 4 Drow Veterans (Fighter 8)
 
 #### Battle Stats - Drow Assassin
@@ -347,7 +348,7 @@ SE Seedlings piantati:
 
 #### Battle Stats - Drow Clerics (2)
 
-**Drow Cleric of Lolth** (Cleric 8, domini: War + Trickery)
+**Drow Cleric of Lolth** (Cleric 8, domini: Destruction + Trickery)
 - **CR:** 9
 - **Init:** +1
 - **AC:** 22 (+7 armor [mithral chainmail +2], +1 Dex, +2 shield, +2 deflection)
@@ -360,16 +361,18 @@ SE Seedlings piantati:
 - **Spells:** CL 8th (DC 14 + spell level)
 
 **Prepared Spells:**
-- **4th (3):** *Poison* (DC 18, 1d10 Con, 1d10 Con a minute later), *Divine Power*, *Freedom of Movement*
+- **4th (3+1):** *Poison* (DC 18, 1d10 Con, 1d10 Con a minute later), *Divine Power*, *Freedom of Movement*, *Confusion* (D, DC 18)
 <!-- storico: fino al 2026-11-19 al 4° c'era Flame Strike, che è di 5° e un chierico 8 non lancia (scelta del DM sulla card del 2026-11-19) -->
-- **3rd (4):** *Dispel Magic*, *Searing Light* (+7 ranged touch, 8d8 vs undead), *Prayer*, *Invisibility Purge*
-- **2nd (5):** *Hold Person* (DC 16), *Spiritual Weapon*, *Bull's Strength* ×2, *Silence*
-- **1st (6):** *Bane*, *Bless*, *Divine Favor* ×2, *Shield of Faith* ×2
+- **3rd (4+1):** *Dispel Magic*, *Searing Light* (+7 ranged touch, 8d8 vs undead), *Prayer*, *Invisibility Purge*, *Contagion* (D, DC 17)
+- **2nd (4+1):** *Hold Person* (DC 16), *Spiritual Weapon*, *Bull's Strength*, *Silence*, *Invisibility* (D)
+- **1st (5+1):** *Bane*, *Bless*, *Divine Favor* ×2, *Shield of Faith*, *Disguise Self* (D)
+<!-- storico: fino al 2026-11-19 nessuno slot di dominio segnato, 3° e 4° senza lo slot (D), Bull's Strength ×2 e Shield of Faith ×2; slot dalla tabella SRD del chierico 8 con Sag 18 (scelta del DM sulla card del 2026-11-19) -->
 - **0 (6):** *Cure Minor Wounds* ×3, *Detect Magic* ×2, *Read Magic*
 
 **Domain Abilities:**
-- **War:** +8 BAB (already calculated), weapon focus free
-- **Trickery:** Bluff/Hide +2, *Disguise Self* 1/day
+- **Destruction:** smite 1/day, +4 to attack and +8 damage (SRD); BAB is +6 (cleric 8)
+- **Trickery:** Bluff, Disguise and Hide are class skills (SRD)
+<!-- storico: fino al 2026-11-19 «War: +8 BAB (already calculated), weapon focus free» e «Trickery: Bluff/Hide +2, Disguise Self 1/day»; il chierico 8 ha BAB +6, e il +10/+5 col morning star torna senza Weapon Focus (+6 BAB, +3 For con Bull's Strength, +1 arma) -->
 
 **Tactics:**
 - **Pre-Combat:** Cast *Shield of Faith*, *Divine Favor*, *Bull's Strength* (buffed già)

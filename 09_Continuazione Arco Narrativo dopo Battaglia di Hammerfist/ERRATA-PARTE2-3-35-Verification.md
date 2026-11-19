@@ -96,7 +96,8 @@ lista di buff pre-cast con **durate esplicite** e **2 effetti a innesco**. CR sa
   → sotto *divine power*: +25/+20/+15/+10 e For effettiva superiore
 - Soffio mezzodrago blu: linea elettricità 6 m, 6d8, Rif CD 20 metà, ogni 1d4 round
 
-**Incantesimi (Chierico 12, CL 14 con oggetti; domini Guerra + Tirannia/Tiamat):**
+**Incantesimi (Chierico 12, CL 14 con oggetti; domini Male + Tirannia/Tiamat):**
+<!-- storico: fino al 2026-11-19 domini Guerra + Tirannia; Tiamat non dà Guerra (scelta del DM sulla card del 2026-11-19) -->
 - 6°: *blade barrier* (CD 22), *harm* (CD 22)
 - 5°: *flame strike* cromatico (CD 21), *righteous might*, *slay living*
 - 4°: *divine power*, *freedom of movement*, *unholy blight* (CD 20), *air walk*

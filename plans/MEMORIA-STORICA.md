@@ -2257,3 +2257,13 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `scripts/gate_locale.py` · `.pre-commit-config.yaml` · `scripts/install-git-hooks.sh` · `plans/adr/ADR-0143-i-gate-veloci-girano-prima-del-push.md`
 - **Solo qui:** gli id delle 11 corse rosse (44426033056, 44425938003, 44183963956, 44181729147, 43919525637, 43770067168, 43769907951, 43769733440, 43769518617, 43729307832, 43727650247); la stima del giro di CI in più (circa 22 minuti per rosso) non è misurata; le skill del repo «doppie» costano circa 0,7k token, non 5k
 
+### MS-0200 · 2026-11-19 · I sicari di Sonjak al Palio possono rapire il fantino
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** —
+- **Temi:** tattiche villain palio sonjak sicari drow fantino arc09 decisione-dm card coerenza
+- **Origine:** riga del 2026-11-19 «Tattiche di villain e PNG, Palio: i sicari di Sonjak possono puntare il cavallo o il fantino» in `plans/CHANGELOG.md`
+- **Testo:** la rilettura del 18/11 (MS-0189) aveva lasciato aperta una differenza fra due file precedenti al lavoro sulle tattiche: gli statblocchi del Palio davano ai sicari drow solo il cavallo, l'integrazione e il Giorno 2 anche il fantino da rapire. Il DM ha scelto sulla card del 19/11 la consigliata, «cavallo o fantino, sceglie il DM»: gli statblocchi si allineano agli altri due file. Come lo prendono (veleno del sonno della balestra, la scorta del fantino trattata come la guardia della stalla) è dedotto dalla scheda dei sicari, non scritto altrove.
+- **Trovato nel repo:** `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md` §3.1, col blocco `<!-- storico -->`
+- **Solo qui:** il booklet HTML del Palio su main non era stato rigenerato dopo la #465 e la #478; rigenerarlo porta dentro anche quelle righe. La rilettura completa dei lotti 1-4 fatta nello stesso thread ha trovato tre punti da decidere (CD della *suggestione* di Xal'thor, slot di Xilthra, Zalkatar con Ozyrrandion), messi su card e non toccati qui.

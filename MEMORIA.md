@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-19 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, Palio: i sicari di Sonjak possono puntare il cavallo… | ✅ file del Palio che danno ai sicari un obiettivo diverso dagli altri: da 1 (STATBLOCCHI contro INTEGRAZIONE r.149 e GIORNO2 r.136-137) a 0; nessun numero di s… |
 | 2026-11-19 | STATO-E-ORDINE | ADR-0143: i gate bloccanti e veloci della CI girano prima del push.… | ✅ |
 | 2026-11-19 | STATO-E-ORDINE | ADR-0142: `.claudeignore` diventa regole `Read` di `permissions.deny` (Claude C… | ✅ righe trovate nelle ricerche, prima e dopo: Skullcrusher 1.912 → 1.168 (−39%), Thorik −18%, Aegis Fang −16%, Collezionista −16%, Hammerfist −10%, Sonjak −9%,… |
 | 2026-11-19 | STATO-E-ORDINE | ADR-0141: le regole di AGENTS.md arrivano a Claude con i file a cui servono (ca… | ✅ `--misura`: script e piani −45% di caratteri rispetto ad AGENTS.md intero, master d'arco −16%, skill −22%, configurazione −12%; compito vero con `claude -p`… |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-19 | SISTEMI-DI-GIOCO-PLUGIN | `conformita_statblocchi`: il talento di una riga di variante non entra nei TS a… | ✅ test nuovo rosso su main, verde qui |
 | 2026-11-18 | AVVENTURE-COMMUNITY | Calendario di ARC-09: i «Mirtul» rimasti diventano «Flamerule» (scelta del DM d… | dopo la scelta del DM che il Giorno di Marcia 1 è il 1° Flamerule (la Torre cammina il 30 Flamerule), 31 «Mirtul» restavano in 9 file fuori dalla PR della cart… |
 | 2026-11-18 | AVVENTURE-COMMUNITY | Calendario di ARC-09: il quickstart e la tabella delle armate allineati a… | il ricontrollo del 18/11 ha trovato due calendari diversi: `P2B-Torneo-DAUTH-DM-MASTER-REFERENCE` §1.1 (autoritativa) e `campaign/state.md` r.381 mettono i tre… |
-| 2026-11-18 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 5: sei frasi corrette dopo la rilettura… | ✅ frasi del lotto 5 in contraddizione con la loro fonte: da 6 a 0 su 6 testi riletti (tre nel Palio, due nel Ghostlord, una nel Collezionista); misure di Azarr… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 199 voci, l'ultima MS-0199 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 200 voci, l'ultima MS-0200 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

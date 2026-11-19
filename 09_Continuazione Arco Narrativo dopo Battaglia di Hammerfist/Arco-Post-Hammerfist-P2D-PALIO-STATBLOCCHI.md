@@ -135,7 +135,7 @@ attacchi:
 
 **Attacco** Balestra a mano + veleno drow (sonno, CD 17) · **Attacco Furtivo** +6d6
 
-**Tattiche** **Obiettivo**: **il cavallo**, non i PG: colpire e sparire. Se scoperti, coprono la fuga.
+**Tattiche** **Obiettivo**: **il cavallo** o **il fantino**, non i PG; quale dei due lo sceglie il DM. Colpire e sparire. Se scoperti, coprono la fuga.
 
 **Statistiche** Des 20
 
@@ -144,10 +144,11 @@ attacchi:
 - **Innata**: *Oscurità*, *Fuoco delle Fate*.
 
 
-*Cosa sanno dei PG e in che stato li trovano*: Sonjak gli ha detto quale stalla e quale cavallo, non chi la guarda. Arrivano la notte del Giorno 2, dopo la Cena della Prova Generale e gli intrighi dei Partiti, quando i PG dormono o fanno la guardia a turno: uno sveglio, gli altri con quello che resta degli incantesimi del giorno. L'obiettivo resta il cavallo: chi è di guardia lo evitano, e lo colpiscono solo se sta fra loro e il cavallo o se li scopre, per coprire la fuga. <!-- [INFERRED — Sonjak sa chi fa la guardia alla stalla?; base: §3.1 e la scheda di Sonjak dicono il mandante, non che cosa sa dei PG] (marca tolta dal booklet stampato) -->
+*Cosa sanno dei PG e in che stato li trovano*: Sonjak gli ha detto quale stalla e quale cavallo, non chi la guarda. Arrivano la notte del Giorno 2, dopo la Cena della Prova Generale e gli intrighi dei Partiti, quando i PG dormono o fanno la guardia a turno: uno sveglio, gli altri con quello che resta degli incantesimi del giorno. L'obiettivo resta il cavallo o il fantino, mai i PG: chi è di guardia lo evitano, e lo colpiscono solo se sta fra loro e il bersaglio o se li scopre, per coprire la fuga. Se il DM sceglie il fantino, lo addormentano con la balestra (veleno del sonno) e lo portano via nel buio; la sua scorta la trattano come la guardia della stalla. <!-- [INFERRED — Sonjak sa chi fa la guardia alla stalla?; base: §3.1 e la scheda di Sonjak dicono il mandante, non che cosa sa dei PG] (marca tolta dal booklet stampato) -->
 
 <!-- storico -->
 Prima del 2026-11-17 (tattiche di ARC-09, lotto 5) i sicari e la chierica avevano solo l'obiettivo: il cavallo, non i PG. Che cosa sanno dei PG e in che stato li trovano è stato aggiunto qui e in §3.2, marcato INFERRED perché nessuna scena lo dice.
+Fino al 2026-11-19 l'obiettivo era solo il cavallo; il DM ha scelto (card del 19/11) di allinearlo a INTEGRAZIONE §3.2 e GIORNO2 §3.3, che danno ai sicari anche il fantino da rapire.
 Era (17/11, corretto il 18/11): «Se trovano un PG di guardia, il primo colpo va su di lui, non sul cavallo», che contraddiceva l'obiettivo scritto sopra (il cavallo, non i PG); «la giornata delle prove» (il Giorno 2 è la Cena e i Partiti) e «senza incantesimi preparati per l'indomani» (gli incantesimi si preparano al mattino: di notte resta quello che non si è speso).
 <!-- /storico -->
 

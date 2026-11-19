@@ -4072,7 +4072,7 @@ Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +30 (2d8+10), 
 
 **TATTICHE**
 ___
-Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf. Qui sotto, «Cosa cambia al tavolo», i numeri che contano nel duello.  
+Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf. In A.1-ter, «Cosa cambia al tavolo», i numeri che contano nel duello.  
 
 **STATISTICHE**
 ___
@@ -4089,43 +4089,6 @@ ___
 - Boost log: due talenti cambiati, scelti fra le versioni più forti (regola del DM: prima il 3.5 completo, poi PF1e, poi SRD) — GS 14 → 14 (vale 15), EL invariato — il DM vuole la versione più terrificante. *Virare* → **Capacità Focalizzata (soffio)** (SRD, *Ability Focus*: +2 alla CD, soffio CD 28 → 30). *Attacco Poderoso* → **Soffio Impregnante** (*Clinging Breath*) `[Private source — Draconomicon (WotC 2003), p. 67]`: talento di metasoffio, **fuori dall'SRD**; si sceglie a ogni soffio, e quando lo usa la ricarica sale di 1 round. Diverge dall'SRD solo qui: il resto del blocco è il drago nero adulto maturo dell'SRD con il template Avanzato. Restano *Ghermire*, *Fluttuare* e *Attacco in Volo*, che la Scena 11 usa, e *Riflessi Fulminei* e *Volontà di Ferro*, che reggono i TS. Il telaio è stato riverificato sulla tabella SRD (*Black Dragon*, adulto maturo: 22 DV, FOR 27, COS 21, CA 29, soffio 14d4 CD 26, Presenza CD 23, RI 21, LI 5) e il template rifatto: i numeri del blocco tornano tutti. Il grado d'età sopra (Vecchio, GS 16) resta al gruppo di 14° per D60. 🔎 Il testo del talento viene da una trascrizione secondaria del Draconomicon.
 - Boost log: un talento cambiato: *Ghermire* → **Virare** (SRD, *Wingover*) — GS 14 → 14 (vale 15), EL invariato — la presa in bocca è la firma di Fauci di Palude contro Thorik, e il duello del 372 non deve ripetere quello del 1372. Skullcrusher combatte in passata e dice il nome prima di colpire, con *colpo accurato*, che aveva già. Il drago è meno letale sul singolo PG: niente picco della presa, il soffio in bocca e la caduta. Vale anche per il Vecchio, che ha i talenti di questo blocco.
 
-
-**Cosa cambia al tavolo, rispetto ai numeri di prima**
-
-- **I PG invisibili non gli sfuggono da vicino.** La percezione cieca
-  localizza tutto entro 18 m: sa in che quadretto è un PG invisibile, che
-  però conserva l'occultamento totale, 50% di mancare (SRD, *percezione
-  cieca*). *Vedere invisibilità* dura 10 minuti per livello: 50 con
-  l'Adulto (incantatore di 5°), 70 col Vecchio (7°). Dopo il barile lo lancia
-  al corno dell'alba, prima di partire, e i PG invisibili sono visibili per
-  tutto il duello. Di notte sulle colline non l'ha
-  lanciato, perché non si aspetta nessuno.
-- **Il soffio fa più male**: 14d4 (in media 35) invece di 12d4, e Riflessi
-  CD 30. La runa di Zeth (*resistere all'energia* 20) ne toglie ancora più
-  della metà.
-- **L'acido resta addosso** (*Soffio Impregnante*). Quando lo sceglie,
-  chi ha preso danno dal soffio ne riprende metà all'inizio del round dopo:
-  17 in media a chi ha fallito il TS, 8-9 a chi l'ha superato. La runa di Zeth
-  toglie 20 anche a questo, che è un danno a sé, e di solito lo spegne tutto.
-  Il prezzo per il drago: la ricarica è 1d4+1 round. Lo usa al primo soffio,
-  quando il gruppo è fitto, e non quando ha fretta di soffiare di nuovo.
-  Chi ce l'ha addosso può toglierlo con un'azione di round completo e un
-  Riflessi alla CD del soffio (+2 rotolando a terra, e resta prono); l'acqua
-  non lo spegne, *dissolvi magie* sì, alla stessa CD (*Draconomicon* p. 67,
-  verificato su dnd.arkalseif.info il 2026-11-19).
-- **La RI 21**: un incantatore di 12°-13° livello la supera con 8 o 9 sul d20
-  (d20 + livello contro 21), quindi un incantesimo su tre circa si spegne. Le
-  invocazioni di Artemis la subiscono come gli incantesimi.
-- **RD 10/magia**: le armi dei PG sono magiche; le balestre delle mura, no.
-- ***Corrompere l'acqua*** può rovinare le pozioni in tasca a un PG (TS
-  dell'oggetto sulla Volontà del portatore). Lo usa al primo turno libero dal
-  soffio, se vede qualcuno bere (Scena 11, round 2-3).
-- **Il nome** (*colpo accurato*): +20 al prossimo attacco entro il round
-  dopo, e l'occultamento non conta. Il morso sul PG nominato è a +50, e
-  l'invisibilità di Artemis non lo salva. Lo lancia a metà della passata, con
-  Attacco in Volo, e il morso arriva alla passata dopo (Scena 11). Il nome
-  non lo chiede: è quello sentito di notte attraverso il corno, o un epiteto
-  (Scena 7).
 
 ### A.1-bis · Skullcrusher Vecchio, il drago di stasera
 
@@ -4144,7 +4107,7 @@ gruppo di 14° è APL+3. L'Adulto di A.1 resta per i gruppi più deboli (Scena
 *Drago Enorme (acqua), caotico malvagio · drago nero Vecchio dell'SRD, Avanzato* · GS 17 (Vecchio GS 16, +1 Avanzato)
 ___
 **Taglia** Enorme · **Spazio** 4,5 m (3×3 quadretti) · **Portata** 3 m (2 quadretti); 4,5 m (3 quadretti) con il morso
-**Iniziativa** +6 · **Sensi** percezione cieca 18 m, scurovisione 36 m, visione crepuscolare ×4; Ascoltare e Osservare come l'Adulto (A.1)
+**Iniziativa** +6 · **Sensi** percezione cieca 18 m, scurovisione 36 m, visione crepuscolare ×4; Ascoltare +31, Osservare +31 (Allerta, +2: SRD)
 
 **DIFESA**
 ___
@@ -4152,20 +4115,21 @@ ___
 
 **ATTACCO**
 ___
-Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16) · **Schiacciare** 2d8+16, Riflessi CD 29 (solo creature Piccole o minori) · **Soffio acido** linea di 30 m, 16d4, Riflessi CD 31 dimezza (aderente come A.1) · **Capacità magiche** come A.1, ma *oscurità* con raggio 24 m e *corrompere l'acqua* a CD 26 (la CD della sua Presenza Terrificante, come nell'SRD), più *crescita vegetale* 1/giorno · **Incantesimi da stregone** incantatore di 7°: 6/7/7/5 al giorno (*lentezza* CD 17)  
+Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16) · **Schiacciare** 2d8+16, Riflessi CD 29 (solo creature Piccole o minori) · **Soffio acido** (Sop) linea di 30 m, 16d4, Riflessi CD 31 dimezza, di nuovo dopo 1d4 round (1d4+1 se impregnante, sotto) · **Capacità magiche** 3/giorno *oscurità* (raggio 24 m); 1/giorno *corrompere l'acqua* (CD 26, la CD della sua Presenza Terrificante, come nell'SRD: rovina anche le pozioni che un PG ha addosso, se falliscono il TS); 1/giorno *crescita vegetale* · **Incantesimi da stregone** (incantatore di 7°, CD 14 + livello): 0 (6/giorno) *individuazione del magico, lettura del magico, mano magica, resistenza, suono fantasma, frastornare*; 1° (7/giorno) *armatura magica, scudo, colpo accurato, dardo incantato*; 2° (7/giorno) *vedere invisibilità, immagine speculare*; 3° (5/giorno) *dissolvi magie, lentezza* (CD 17) (i conosciuti dell'Adulto più i due di 3°, come D64: scelta di Jfs del 19/11)  
 
 **TATTICHE**
 ___
-Come A.1: fugge a ⅓ dei pf, circa **112 pf**.  
+Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf, circa **112 pf**. In A.1-ter, «Cosa cambia al tavolo», i numeri che contano nel duello.  
 
 **STATISTICHE**
 ___
-For 33, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +25; Lotta +44 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Impregnante, Virare (non Ghermire), Volontà di Ferro, più Allerta · **Abilità** e il resto: come A.1  
+For 33, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +25; Lotta +44 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Impregnante, Virare (non Ghermire), Volontà di Ferro, più Allerta · **Abilità** Ascoltare +31, Cercare +29, Concentrazione +32, Intimidire +29, Muoversi Silenziosamente +27, Nascondersi +19, Osservare +31, Sapienza Magica +29, Nuotare +18: come l'Adulto più Allerta (il blocco non spende i gradi dei tre DV in più)  
 
 **CAPACITÀ SPECIALI**
 ___
 - **Presenza Terrificante**: raggio 72 m, Volontà CD 26 (meno di 25 DV).  
-- **Soffio impregnante**, come A.1, ma toglierselo è Riflessi CD 31, la CD del suo soffio.  
+- **Soffio impregnante**, quando lo sceglie: chi ne prende danno ne riprende metà al round dopo; toglierselo è un'azione di round completo con Riflessi CD 31 (+2 rotolando a terra, e si resta proni); la ricarica sale di 1 round.  
+- **Respirare sott'acqua** (Str).  
 }}
 <!-- /blocco -->
 
@@ -4183,6 +4147,44 @@ si sommano a parte (§8 A).
 
 - Boost log: drago nero **Vecchio** dell'SRD invece dell'adulto maturo, con il template Avanzato PF1e completo — GS 16 → 17 — solo per il party straripante di 14°, dove EL 17 = APL+3; il DM vuole che la riga renda il duello più duro, non più facile.
 - Boost log: usato anche con il gruppo di 13°, con le 2 wyvern, e *Ghermire* → **Virare** come in A.1 — GS 17 → 17; EL 17 = APL+4, il tetto esatto — la simulazione del duello lo dà come l'unica versione che regge contro tutti e tre i modi di giocarlo senza una morte probabile, purché senza la presa in bocca.
+
+### A.1-ter · Cosa cambia al tavolo, con l'Adulto o con il Vecchio
+
+
+- **I PG invisibili non gli sfuggono da vicino.** La percezione cieca
+  localizza tutto entro 18 m: sa in che quadretto è un PG invisibile, che
+  però conserva l'occultamento totale, 50% di mancare (SRD, *percezione
+  cieca*). *Vedere invisibilità* dura 10 minuti per livello: 50 con
+  l'Adulto (incantatore di 5°), 70 col Vecchio (7°). Dopo il barile lo lancia
+  al corno dell'alba, prima di partire, e i PG invisibili sono visibili per
+  tutto il duello. Di notte sulle colline non l'ha
+  lanciato, perché non si aspetta nessuno.
+- **Il soffio fa più male**: 14d4 (in media 35) invece di 12d4, e Riflessi
+  CD 30; col Vecchio 16d4 (in media 40), CD 31. La runa di Zeth (*resistere all'energia* 20) ne toglie ancora più
+  della metà.
+- **L'acido resta addosso** (*Soffio Impregnante*). Quando lo sceglie,
+  chi ha preso danno dal soffio ne riprende metà all'inizio del round dopo:
+  17 in media a chi ha fallito il TS, 8-9 a chi l'ha superato. La runa di Zeth
+  toglie 20 anche a questo, che è un danno a sé, e di solito lo spegne tutto.
+  Il prezzo per il drago: la ricarica è 1d4+1 round. Lo usa al primo soffio,
+  quando il gruppo è fitto, e non quando ha fretta di soffiare di nuovo.
+  Chi ce l'ha addosso può toglierlo con un'azione di round completo e un
+  Riflessi alla CD del soffio (+2 rotolando a terra, e resta prono); l'acqua
+  non lo spegne, *dissolvi magie* sì, alla stessa CD (*Draconomicon* p. 67,
+  verificato su dnd.arkalseif.info il 2026-11-19).
+- **La RI 21** (22 col Vecchio): un incantatore di 12°-13° livello la supera con 8 o 9 sul d20
+  (d20 + livello contro 21), quindi un incantesimo su tre circa si spegne. Le
+  invocazioni di Artemis la subiscono come gli incantesimi.
+- **RD 10/magia**: le armi dei PG sono magiche; le balestre delle mura, no.
+- ***Corrompere l'acqua*** può rovinare le pozioni in tasca a un PG (TS
+  dell'oggetto sulla Volontà del portatore). Lo usa al primo turno libero dal
+  soffio, se vede qualcuno bere (Scena 11, round 2-3).
+- **Il nome** (*colpo accurato*): +20 al prossimo attacco entro il round
+  dopo, e l'occultamento non conta. Il morso sul PG nominato è a +50 (+54 col Vecchio), e
+  l'invisibilità di Artemis non lo salva. Lo lancia a metà della passata, con
+  Attacco in Volo, e il morso arriva alla passata dopo (Scena 11). Il nome
+  non lo chiede: è quello sentito di notte attraverso il corno, o un epiteto
+  (Scena 7).
 
 ### A.2 · Zog'tar Deatheye e le sue quattro guardie (Scena 8)
 

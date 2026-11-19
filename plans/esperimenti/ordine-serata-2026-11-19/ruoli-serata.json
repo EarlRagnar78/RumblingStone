@@ -33,8 +33,9 @@
   },
   {
    "titolo": "^XV · Durik",
-   "ruolo": "preparazione",
-   "capitolo": true
+   "ruolo": "riferimento",
+   "capitolo": true,
+   "_perché": "scelta di Jfs del 19/11 (card): in fondo come galleria dei PNG degli AP; si usa a ogni round, come una scheda"
   },
   {
    "titolo": "^Dove siamo",
@@ -191,7 +192,7 @@
   {
    "titolo": "^A\\.6 · Le creature del campo",
    "ruolo": "riferimento",
-   "doppione_di": "Appendice: le creature (Orco della ronda, Worg)"
+   "_perché": "non è un doppione puro: porta la tabella delle complicazioni dello skill challenge, e le sue schede sono in appendice come tutte le altre per «schede: entrambe» (scelta di Jfs del 13/11). Rivisto il 19/11 dopo la risposta di Jfs sulla card"
   },
   {
    "titolo": "^[IVX]+ · Appendice",

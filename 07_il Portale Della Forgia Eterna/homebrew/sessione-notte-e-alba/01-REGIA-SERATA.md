@@ -48,7 +48,7 @@ costruito, e da lì vengono le mura e il duello.
   mostrare solo se uno dei due si fa vedere nella luce dell'incendio;
 - Skullcrusher nel cortile, Scena 11: la tavola è nel capitolo II, solo
   quando il drago scende;
-- la **M7-B** per il cortile, `09-M7B-CORTILE.md`, la stessa del master (`DEF-4` Appendice D);
+- la **M7-B** per il cortile<!-- apparato -->, `09-M7B-CORTILE.md`<!-- /apparato -->, la stessa del master (`DEF-4` Appendice D);
 - *La canzone delle pietre* non si usa stasera: è del Rubino, la serata dopo.
 
 ---

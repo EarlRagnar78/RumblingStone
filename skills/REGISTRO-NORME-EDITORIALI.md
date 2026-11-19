@@ -45,6 +45,7 @@
 | `read-aloud-adulti.md` §2 | **le lunghezze dei box variano**: brevi e lunghi alternati come negli autori umani (il DM ha chiesto di adottare le misure del corpus, 2026-10-18) | **minore** | 🟡 `misura_craft --stile`, colonna `30-70`: la quota dei box fra 30 e 70 parole contro il 46-52% del corpus, con «!» oltre il 70%. Indicatore e non tetto (ADR-0036): dice che i box sono troppo uguali, non quale allungare |
 | `read-aloud-adulti.md` §2-ter | una riscrittura **non toglie dettagli sensoriali** a un box che c'è (il voto cieco del DM, 2026-10-18) | **minore** | 🟡 `cieco_versioni.py coppie` (`verdetto_misurato`) fra due versioni dello stesso box, e `misura_craft --stile`, colonna `sens.`. Sulle sedici coppie del primo voto decide 13 e sbaglia 1; il lessico è scritto dopo i voti, e le quattro coppie di controllo di ogni giro dicono se regge |
 | `read-aloud-adulti.md` §2-ter | un **monologo resta un blocco**: non si spezza in battute con incisi fra l'una e l'altra | **minore** | 🟡 `cieco_versioni.py coppie` (`verdetto_misurato`): una versione nuova di tre pezzi o più contro un monologo intero perde. Due casi su due nel primo voto |
+| `read-aloud-adulti.md` §2-ter | la **chiusa enfatica resta**: una riscrittura non toglie la frase finale che dà nome all'immagine (il voto cieco del DM, 2026-10-22; scelta propria del repo, `editorial-standards.md` §4-bis) | **minore** | 🔴 non misurato — nessun rilevatore sa quale frase finale «spiega»: lo dice il cieco fra due versioni. Quattro casi su quattro nel voto del 22/10 |
 | `editorial-standards.md` | `**Read-aloud (pilastro lead).**` etichettato | **maggiore** | 🟢 congegno `regia etichettata **Read-aloud (X)**` |
 | `editorial-standards.md` | `**NOME (registro/tono):** *«battuta»*` | **maggiore** | 🟢 congegno `dialogo nella forma dichiarata` |
 | `editorial-standards.md` | **la quarta colonna**: un blocco sensoriale chiude con «Cosa NON dire» (ADR-0057) | **minore** | 🟡 congegno `quarta colonna sensoriale` — conta **chi ce l'ha**, non accusa chi non ce l'ha: non esiste modo automatico di sapere se un blocco *avrebbe dovuto* averla |
@@ -151,7 +152,7 @@
 |---|---:|
 | 🟢 misurate | 42 |
 | 🟡 misurate in parte, con il limite scritto | 42 |
-| 🔴 **non misurate, con la ragione scritta** | 13 |
+| 🔴 **non misurate, con la ragione scritta** | 14 |
 | ⚪ non applicabili | 0 |
 
 Il 2026-10-22 (lotto 7e di PIANO-AVVENTURE-COMMUNITY) il conto è passato da 112

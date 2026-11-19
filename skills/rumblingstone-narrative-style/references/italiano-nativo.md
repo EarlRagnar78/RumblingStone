@@ -229,7 +229,8 @@ ricorda (P1, D14). Il trattino lungo dopo «lui» è caduto con loro.
 - [ ] C'è almeno **una dislocazione a sinistra** o un **c'è** presentativo?
 - [ ] I tempi verbali sono **coerenti** dentro ogni box?
 - [ ] C'è **un periodo lungo** seguito da **una frase corta** che chiude?
-- [ ] Ho tolto la **frase che spiega** l'ultima immagine?
+- [ ] Ho tolto le parole goffe **senza togliere la chiusa** enfatica?
+      (`read-aloud-adulti.md` §2-ter, regola 3: il taglio ha perso 4 volte su 4)
 - [ ] I titoli sono in **minuscolo italiano**, non in Title Case?
 - [ ] Se ritraduco in inglese parola per parola, **perdo qualcosa**? (se no,
       riscrivi)

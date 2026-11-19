@@ -23,6 +23,7 @@ e non si riassume: si aggiunge in coda. Questo script lo **legge**:
     python3 scripts/memoria_storica.py --check           # il cancello della CI
     python3 scripts/memoria_storica.py --confronta-memoria DIR   # cosa della memoria
                                                          # delle sessioni non è nel repo
+    python3 scripts/memoria_storica.py --tetto-memoria DIR       # MEMORY.md sotto il tetto?
 
 `--pr N` trova anche le voci che la PR ha aggiunto senza scriversi il numero
 (campo PR «—», perché il numero nasce dopo il commit): lo ricava da git, dal
@@ -281,6 +282,29 @@ def controlla(testo: str, changelog: "str | None") -> "list[str]":
     return errori
 
 
+TETTO_MEMORIA = 12 * 1024
+"""Tetto di MEMORY.md (ADR-0139): 12 KB lasciano 4 KB di margine al limite duro."""
+LIMITE_MEMORIA = 16 * 1024
+"""Il limite oltre il quale la piattaforma taglia l'indice della memoria delle sessioni."""
+
+
+def misura_memoria(cartella: Path, tetto: int = TETTO_MEMORIA) -> dict:
+    """Byte di MEMORY.md e le righe più lunghe: le prime da accorciare o archiviare."""
+    f = cartella / "MEMORY.md"
+    dati = f.read_bytes()
+    righe = dati.decode("utf-8").splitlines()
+    lunghe = sorted(((len(r.encode("utf-8")) + 1, i, r) for i, r in enumerate(righe, 1)),
+                    reverse=True)[:5]
+    return {
+        "byte": len(dati),
+        "tetto": tetto,
+        "limite": LIMITE_MEMORIA,
+        "sopra_tetto": len(dati) > tetto,
+        "sopra_limite": len(dati) > LIMITE_MEMORIA,
+        "righe_lunghe": [{"riga": i, "byte": b, "testo": r[:100]} for b, i, r in lunghe],
+    }
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("parole", nargs="*", help="Parole che devono comparire tutte nella voce "
@@ -298,6 +322,11 @@ def main(argv=None) -> int:
     ap.add_argument("--confronta-memoria", type=Path, metavar="DIR",
                     help="Cartella della memoria delle sessioni (MEMORY.md e note): elenca le righe "
                          "con PR, ADR, SHA o percorsi che il repo non ha. Non è un cancello: esce 0.")
+    ap.add_argument("--tetto-memoria", type=Path, metavar="DIR",
+                    help="Cartella della memoria delle sessioni: esce 1 se MEMORY.md supera il "
+                         "tetto (ADR-0139) e mostra le righe più lunghe.")
+    ap.add_argument("--tetto", type=int, default=TETTO_MEMORIA,
+                    help=f"Tetto in byte per --tetto-memoria (predefinito {TETTO_MEMORIA}).")
     ap.add_argument("--senza-git", action="store_true", help=argparse.SUPPRESS)
     ap.add_argument("--file", type=Path, default=FILE, help=argparse.SUPPRESS)
     a = ap.parse_args(argv)
@@ -309,6 +338,24 @@ def main(argv=None) -> int:
             except ValueError:
                 print(f"data non valida: {d} (serve AAAA-MM-GG)", file=sys.stderr)
                 return 2
+    if a.tetto_memoria:
+        if not (a.tetto_memoria / "MEMORY.md").is_file():
+            print(f"manca {a.tetto_memoria / 'MEMORY.md'}", file=sys.stderr)
+            return 2
+        r = misura_memoria(a.tetto_memoria, a.tetto)
+        if a.json:
+            print(json.dumps(r, ensure_ascii=False, indent=1))
+        else:
+            segno = "✗" if r["sopra_tetto"] else "✓"
+            print(f"{segno} MEMORY.md: {r['byte']} byte, tetto {r['tetto']}, limite {r['limite']}"
+                  + (" — OLTRE IL LIMITE: l'indice viene tagliato" if r["sopra_limite"] else ""))
+            if r["sopra_tetto"]:
+                print("  Togliere le righe di cronologia (PR unite, lavori chiusi) dopo averle "
+                      "archiviate (ADR-0127). Le più lunghe:")
+                for x in r["righe_lunghe"]:
+                    print(f"    r.{x['riga']} ({x['byte']} byte): {x['testo']}")
+        return 1 if r["sopra_tetto"] else 0
+
     if not a.file.is_file():
         print(f"manca {a.file}", file=sys.stderr)
         return 2

@@ -153,10 +153,10 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 > **Cos'è.** La scaletta della serata, in ordine di gioco. Non riscrive il
 > master: dice **quale paragrafo aprire, quando, per quanto**, cosa consegnare
 > e cosa annotare. Per l'ordine della serata e per cosa leggere prima vale
-> questa regia, anche contro la lista «La vostra serata» del §0 di cap. V.
+> questa regia, anche contro la lista «La vostra serata» del §0 di «Il Viaggio a 1.000 Anni fa».
 > Per le regole vince il master, e prima ancora vince lo stato della campagna.
 >
-> **Stasera, 2 novembre**. Le scelte nella fortezza
+> **Stasera**. Le scelte nella fortezza
 > e il giro delle pozioni di Kettra sono giocati. Il gruppo è in volo sopra il
 > campo, invisibile, con la botte e i due barilotti, e **si rigioca lo
 > sgancio** sulla tenda di Zog'tar. La serata comincia lì: Atto I, il barile.
@@ -185,7 +185,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 **Totale**: circa **2 ore e 50** nella colonna «tre ore», **3 ore e 45** in
 quella intera. Per stare nelle tre ore si taglia, in quest'ordine: il ritorno
-in un tiro solo (cap. V Appendice C.2), poi il duello in tre scambi (cap. V
+in un tiro solo (cap. V Appendice C.2), poi il duello in tre scambi (cap. VIII
 Appendice C.3). **Il barile non si taglia**: è la scena che il tavolo ha
 costruito, e da lì vengono le mura e il duello.
 
@@ -198,7 +198,7 @@ costruito, e da lì vengono le mura e il duello.
   mostrare solo se uno dei due si fa vedere nella luce dell'incendio;
 - Skullcrusher nel cortile, Scena 11: la tavola è nel capitolo II, solo
   quando il drago scende;
-- la **M7-B** per il cortile, «Il Viaggio a 1.000 Anni fa» Appendice D;
+- la **M7-B** per il cortile, cap. VII, la stessa del master («Il Viaggio a 1.000 Anni fa» Appendice D);
 - *La canzone delle pietre* non si usa stasera: è del Rubino, la serata dopo.
 
 ---
@@ -206,7 +206,7 @@ costruito, e da lì vengono le mura e il duello.
 ## §1 · Atto 0 — Prima di cominciare
 
 **Cosa leggere prima, in un'ora.** Questa lista sostituisce quella del §0 di
-cap. V.
+«Il Viaggio a 1.000 Anni fa».
 
 | Minuti | Cosa |
 |---:|---|
@@ -228,8 +228,8 @@ le ha il tavolo, compresa quella del volo; le mappe M7-H e M7-C scoperte,
 perché dall'alto il campo si vede; un d8 e i dadi della quota per la
 deviazione; la scheda di Durik vicino alla giocatrice di Hella. Durik non
 vola: è alla postierla o nel terzo seme della Collana (cap. V Scena 6). La scheda di Durik nel volume dei giocatori non c'è: lei usa la
-sua copia della sessione del 25, e se non l'ha più le passi il
-capitolo VIII del tuo volume.
+sua copia della sessione del 25, e se non l'ha più le passi la
+scheda del tuo volume, cap. XII.
 
 **Le schede che contano stasera**, da tenere a portata. Quelle dei cattivi
 sono tutte nel capitolo II, nell'ordine in cui arrivano, con chi è, cosa
@@ -267,7 +267,7 @@ serate passate, perché il testo non le decide:
   sul Seme. Il testo copiato nel
   capitolo IV dice ancora «non commentano» e «in base a come Artemis ha
   gestito»: valgono queste due righe;
-- **il dono a metà di Hella** (cap. VI §1): dipende dai successi dello Step 5
+- **il dono a metà di Hella** (cap. X §1): dipende dai successi dello Step 5
   del rito, e il log del 25 dice solo che i tre Doni sono stati dati tutti.
   Fissa adesso se sono stati tre su tre o due su tre;
 - **lo Smeraldo della Corona**, 1 a settimana: il passaggio nel tempo ricarica
@@ -1659,7 +1659,7 @@ Un consiglio da dire al tavolo solo se lo chiedono: i barilotti valgono di più
   cielo. Un secondo barile non trova più
   niente di così facile.
 - **I PE per la trovata**: §13.
-- **Echo Ledger** (§7 di cap. V): «la notte del barile», con chi è morto e se il
+- **Echo Ledger** (§7 di cap. X): «la notte del barile», con chi è morto e se il
   corno ha suonato.
 
 ## 13. Le trovate dei giocatori: come gestirle le prossime volte
@@ -1756,8 +1756,8 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 > nuda firma, l'anticipo arriva subito, e filo, voce e riscossione si
 > accendono al ritorno nel 1372.
 >
-> **I rimandi del testo copiato.** «Echo Ledger (§11)» è, in questo booklet,
-> il cap. VI §7; «il #4» è il cap. VI, e Vatore è alla sua Scena 9.
+> **I rimandi del testo copiato.** «Echo Ledger (§11)» è il §7 di cap. X;
+> «il #4» è cap. V, e Vatore è alla sua Scena 9 (cap. V Scena 9).
 >
 > **Dove eravamo**. Il Seme nessuno l'ha toccato a
 > mani nude: è nello zaino di Tordek dal 31 luglio. Le dieci pozioni le
@@ -4392,7 +4392,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 ## 1. INPUT DAL P5 (cosa registra il fast-play)
 
-Dalla **Scena 11 di cap. V**, il duello, si registrano due dati (nel vecchio P5 era la Scena 5; stasera la Scena 5 è la notte nella fortezza):
+Dalla **Scena 11 di cap. VIII**, il duello, si registrano due dati (nel vecchio P5 era la Scena 5; stasera la Scena 5 è la notte nella fortezza):
 
 1. **Esito del duello**: `UCCISO` / `FERITO GRAVE` / `FUGGITO`.
 2. **Ferite ancestrali segnate** (`N`): numero di colpi andati a segno su
@@ -5196,72 +5196,6 @@ non torna, e il PNG resta senza etichetta.
 
 ---
 
-## §3 · Indice dei read-aloud — 260 blocchi
-
-> **Perché esiste.** Un read-aloud si prova **prima, ad alta voce**: è l'unico
-> modo perché suoni come una scena invece che come un paragrafo. Con 260 blocchi
-> sparsi su cinque file, senza un indice non si prova niente e si legge tutto a
-> freddo.
-
-**Come si usa**: la sera prima, apri le tre righe più dense della sessione che
-giocherai e leggile a voce. Tre. Non trenta.
-
-### Il Piano della Terra & Terros — **130 blocchi**
-
-| N. | Dove |
-|---|---|
-| 15 | Meccanica sintetica (3.5) — dentro §6-bis |
-| 10 | §6-bis Seme-Mercato di Varis |
-| 10 | §7b Anticamera della Magnetite — la Sentinella |
-| 8 | L'apertura dell'Affresco A5 |
-| 7 | testata dell'arco · 7 in §8b Il Distacco |
-| 6 | §8a L'arrivo — i primi sei secondi |
-| 5 | §9 fase 2, la regia dei tre round |
-| 4 | §6 Cristalli Viventi · 4 in §8c-2b · 4 in §9 fase 1 · 4 in Round 1 |
-| 3 | §7a il salto co-op · Skill Challenge · Round 2 · fase 3 |
-| ≤2 | §1 highlight · §2 ingresso · §3 gravità · §4 viaggio · le 4 zone · eventi · §5 Xorn · §10 · §11-bis · §12 |
-
-### Il Ritorno e gli Affreschi — **39 blocchi**
-
-| N. | Dove |
-|---|---|
-| 6 | ⚒️ Tordek — le mani fredde, e poi lo zaino |
-| 4 | testata |
-| 3 | 🔮 Artemis — la porta · 🌙 Hella — dall'altra parte |
-| 2 | Artemis davanti alla porta del Tempo · 🛡️ Thorik · «prima la regola» |
-| 1 | gli otto affreschi (A1-A8), zone A e B, §3 Cronaca, §5 Visione Condivisa, §6 Stanza della Corona, mappa S-2 |
-
-### La Resurrezione di Hella — **30 blocchi**
-
-| N. | Dove |
-|---|---|
-| 7 | §6 Il debito della radice |
-| 5 | testata |
-| 4 | §4 Il rito corale · §7 Il risveglio |
-| 3 | §3 Il Cuore di Moradin |
-| ≤2 | §2 l'altare · §5 i tre doni · §8 il racconto delle prove · tesoro |
-
-### Il Viaggio a Mille Anni fa — **43 blocchi**
-
-| N. | Dove |
-|---|---|
-| 7 | Scena 9 Vatore · 7 il Sigillo di Ossidiana (Appendice B) |
-| 6 | Scena 7, Balvar |
-| 4 | testata · Scena 11 Skullcrusher |
-| ≤2 | §0 quickstart · le 3 zone · le altre scene · supporto PF1e |
-
-### Il Ritorno a Hammerfist — **18 blocchi**
-
-| N. | Dove |
-|---|---|
-| 5 | testata |
-| 3 | §5 La pulizia → passaggio all'ARC-08 |
-| 2 | §3 L'accensione del Rubino · §4 La manifestazione · mappa CM-1 |
-| 1 | stato di consegna all'ARC-08 · zone 1-2 · budget PX |
-
-
----
-
 ## §4 · I suoni dell'arco
 
 **Descrizioni, mai titoli di brani**: ognuno usa quello che ha, e il file non
@@ -5324,6 +5258,7 @@ serata è in ritardo, **si taglia altro** — non questo.
 - **Ritmo**: il master «Il Piano della Terra & Terros l'Antico» è lungo il doppio degli altri. Se la sessione è di
   tre ore, **arriva fino alla Sentinella e fermati lì**: è una soglia naturale.
 
+---
 
 
 \page

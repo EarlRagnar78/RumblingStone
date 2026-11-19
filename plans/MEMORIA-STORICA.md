@@ -2268,3 +2268,14 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `scripts/conformita_statblocchi.py` · `scripts/tests/test_conformita_statblocchi.py` · `scripts/tests/test_fase1.py`
 - **Solo qui:** il clone dei thread di questo container risultava shallow (`git rev-parse --is-shallow-repository` = true) nonostante lo script d'avvio faccia l'unshallow
 
+
+### MS-0203 · 2026-11-19 · Due stampe per arco, e i rimandi con il numero di pagina
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** ADR-0144
+- **Temi:** stampa booklet volume arco rimandi pagina typst serata arc07
+- **Origine:** riga del 2026-11-19 «ADR-0144: due stampe per arco e rimandi con il numero di pagina» in `plans/CHANGELOG.md`
+- **Testo:** richiesta di Jfs del 19/11 per venerdì: la stampa della serata (dal barile in avanti) e quella dell'AP di ARC-07, misurate. Misura di base su main: serata 130 pp, 107 rimandi interni, nessuno con la pagina, 8 a un titolo che nel capitolo indicato non c'è (il traduttore mandava al primo capitolo i rimandi spezzati da un a capo e la forma «§7 di `DEF-4`»). Dopo: 100 su 108 con la pagina, tutti giusti, 1 titolo non trovato (apertura in grassetto). Volume d'arco: con le schede solo alla prima apparizione 289 pp e Balvar a 24 pagine dalla scheda, Zog'tar a 17; con `entrambe` 293 pp e distanze mediane 2-8. Bug preesistenti trovati: `indice_analitico` mancava da `CHIAVI_NOTE` (avviso «chiave sconosciuta»), `marca_indice` metteva la voce dentro i titoli (sparivano dal titolo, e la testatina stampava `#voce-indice[...]` letterale) e dentro le stringhe. Card a Jfs nella serata: l'Echo Ledger resta (il foglio vi rimanda e contiene le conseguenze della notte); tolto l'indice dei read-aloud della cassetta in attesa della sua scelta. Rifiuti già noti rispettati: niente pagina fitta, schede intere in ogni scena
+- **Trovato nel repo:** `plans/adr/ADR-0144-due-stampe-per-arco-e-rimandi-con-la-pagina.md` · `07_il Portale Della Forgia Eterna/homebrew/volume-arco/ARC07-VOLUME-ARCO.manifest.json` · `plans/esperimenti/booklet-arc07-2026-11-19/misura_rimandi.py`
+- **Solo qui:** «LORDO» segnalato da `titoli_rovinati` alle pp. 47 e 102 del volume è una parola in maiuscolo nelle tabelle del tesoro, falso positivo della misura; PDF consegnati in /mnt/project-files/booklet-arc07-2026-11-19/

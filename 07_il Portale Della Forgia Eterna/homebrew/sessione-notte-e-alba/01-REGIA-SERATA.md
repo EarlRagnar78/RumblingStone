@@ -6,7 +6,7 @@
 > questa regia, anche contro la lista «La vostra serata» del §0 di `DEF-4`.
 > Per le regole vince il master, e prima ancora vince lo stato della campagna.
 >
-> **Stasera, 2 novembre** `[CANONE — DM 2026-11-02]`. Le scelte nella fortezza
+> **Stasera** `[CANONE — DM 2026-11-02]`. Le scelte nella fortezza
 > e il giro delle pozioni di Kettra sono giocati. Il gruppo è in volo sopra il
 > campo, invisibile, con la botte e i due barilotti, e **si rigioca lo
 > sgancio** sulla tenda di Zog'tar. La serata comincia lì: Atto I, il barile.
@@ -48,7 +48,7 @@ costruito, e da lì vengono le mura e il duello.
   mostrare solo se uno dei due si fa vedere nella luce dell'incendio;
 - Skullcrusher nel cortile, Scena 11: la tavola è nel capitolo II, solo
   quando il drago scende;
-- la **M7-B** per il cortile, `DEF-4` Appendice D;
+- la **M7-B** per il cortile, `09-M7B-CORTILE.md`, la stessa del master (`DEF-4` Appendice D);
 - *La canzone delle pietre* non si usa stasera: è del Rubino, la serata dopo.
 
 ---
@@ -78,8 +78,8 @@ le ha il tavolo, compresa quella del volo; le mappe M7-H e M7-C scoperte,
 perché dall'alto il campo si vede; un d8 e i dadi della quota per la
 deviazione; la scheda di Durik vicino alla giocatrice di Hella. Durik non
 vola: è alla postierla o nel terzo seme della Collana (`DEF-4` Scena 6). La scheda di Durik nel volume dei giocatori non c'è: lei usa la
-sua copia della sessione del 25 `[CANONE — DM 2026-10-19, giro 4 n. 26]`, e se non l'ha più le passi il
-capitolo VIII del tuo volume.
+sua copia della sessione del 25 `[CANONE — DM 2026-10-19, giro 4 n. 26]`, e se non l'ha più le passi la
+scheda del tuo volume, `08-SCHEDA-DURIK.md`.
 
 **Le schede che contano stasera**, da tenere a portata. Quelle dei cattivi
 sono tutte nel capitolo II, nell'ordine in cui arrivano, con chi è, cosa
@@ -117,7 +117,7 @@ serate passate, perché il testo non le decide:
   sul Seme `[CANONE — DM 2026-10-19, giro 4 n. 19]`. Il testo copiato nel
   capitolo IV dice ancora «non commentano» e «in base a come Artemis ha
   gestito»: valgono queste due righe;
-- **il dono a metà di Hella** (cap. VI §1): dipende dai successi dello Step 5
+- **il dono a metà di Hella** (`DEF-4` §1): dipende dai successi dello Step 5
   del rito, e il log del 25 dice solo che i tre Doni sono stati dati tutti.
   Fissa adesso se sono stati tre su tre o due su tre;
 - **lo Smeraldo della Corona**, 1 a settimana: il passaggio nel tempo ricarica

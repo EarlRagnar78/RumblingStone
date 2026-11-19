@@ -282,6 +282,102 @@ def _inline(s: str) -> str:
     return "".join(fuori)
 
 
+# I rimandi a un capitolo del volume con il numero di pagina (ADR-0144): il
+# manifest lo chiede con `"pagine_nei_rimandi": true`. Il numero lo calcola
+# Typst (`rif-pagina` nel tema), qui si marca solo dove va.
+_ROM = r"(?P<rom>[IVXLC]+)\b"
+_CHIAVE = (r"(?P<key>§\d+(?:\.\d+)?(?:-(?:bis|ter))?|Scen[ae]\s+\d+(?:\s*(?:e|-|–)\s*\d+)?"
+           r"|[Aa]ppendice\s+[A-Z](?:\.\d+)?|«[^»\n]{3,60}»)")
+_RIF_CAPITOLO = re.compile(
+    r"(?<![\w])(?:capp?\.|capitol[oi])\s+" + _ROM + r"(?:,?\s+" + _CHIAVE + r"(?![\w-]))?")
+_RIF_CAPITOLO_DOPO = re.compile(
+    r"(?<![\w§])" + _CHIAVE.replace("key", "key2") + r"\s+(?:del|di)\s+(?:capp?\.|capitolo)\s+" + _ROM)
+
+
+_RIF_SCHEDA_IN_CAPITOLO = re.compile(
+    r"Scheda d'entrata — (?P<nome>[^,\]\n]+?), in breve\][^\n]{0,60}?nel capitolo " + _ROM + r"(?!#rif)")
+_RIF_MAPPA_IN_CAPITOLO = re.compile(r"[Mm]appa [A-Z0-9-]+ è nel capitolo " + _ROM + r"(?!#rif)")
+_RIF_ROMANO_NUDO = re.compile(
+    r"(?:(?<=\()|(?<=; ))" + _ROM + r"(?:,\s+" + _CHIAVE + r")?(?=[;),])")
+_SIGLA_A = re.compile(r"(?<![\w.§-])(?P<sigla>A\.\d+(?:-bis)?)(?![\w-]|\.\d|#rif)")
+
+
+def _parola_del_nome(nome: str) -> str:
+    """La parola che cerca la scheda: «Re Thorek I» → «Re Thorek», «Balvar Fuocospento» → «Balvar».
+
+    >>> _parola_del_nome("Re Thorek I"), _parola_del_nome("Zog'tar Deatheye")
+    ('Re Thorek', "Zog'tar")
+    """
+    parole = nome.split()
+    k = 1
+    while k < len(parole) and len(" ".join(parole[:k])) < 4:
+        k += 1
+    return " ".join(parole[:k])
+
+
+def _chiave_del_titolo(k: str) -> str:
+    """«Scene 7 e 8» → «SCENA 7», «Appendice C.2» → «C.2», ««La scheda»» → «La scheda».
+
+    >>> [_chiave_del_titolo(k) for k in ("Scene 7 e 8", "Appendice C.2", "«La scheda da tavolo»", "§2-bis")]
+    ['SCENA 7', 'C.2', 'La scheda da tavolo', '§2-bis']
+    """
+    k = re.sub(r"\s+", " ", k.strip())
+    if m := re.match(r"[Ss]cen[ae] (\d+)", k):
+        return f"SCENA {m.group(1)}"
+    if m := re.match(r"[Aa]ppendice ([A-Z](?:\.\d+)?)", k):
+        return m.group(1)
+    return k.strip("«»")
+
+
+def numera_rimandi(typ: str, romani: bool = False) -> str:
+    """Dietro ogni «cap. V Scena 6» il segno che Typst riempie con «, p. 50».
+
+    Fuori dai blocchi di codice e dalle stringhe (una virgoletta aperta sulla
+    riga vuol dire che il rimando sta in un argomento, non nel testo).
+
+    >>> numera_rimandi('vedi cap. V Scena 6, poi il §13 del capitolo III.')
+    'vedi cap. V Scena 6#rif-pagina("V", "SCENA 6");, poi il §13 del capitolo III#rif-pagina("III", "§13");.'
+    >>> numera_rimandi('#f(nota: "cap. V")')
+    '#f(nota: "cap. V")'
+    >>> numera_rimandi('statistiche in A.6, e')
+    'statistiche in A.6#rif-pagina("", "A.6");, e'
+    >>> numera_rimandi('(V, Scene 7 e 8): solo se (I, Atto I; III).', romani=True)
+    '(V, Scene 7 e 8#rif-pagina("V", "SCENA 7");): solo se (I#rif-pagina("I", "");, Atto I; III#rif-pagina("III", "");).'
+    """
+    def dentro_stringa(riga_prima: str) -> bool:
+        return (riga_prima.count('"') - riga_prima.count('\\"')) % 2 == 1
+
+    def segna(m: "re.Match", rom: str, key: str) -> str:
+        riga = m.string[m.string.rfind("\n", 0, m.start()) + 1:m.start()]
+        if dentro_stringa(riga) or re.search(r"[#@]\w*$", riga):
+            return m.group(0)
+        chiave = _chiave_del_titolo(key) if key else ""
+        return f"{m.group(0)}#rif-pagina({json.dumps(rom)}, {json.dumps(chiave, ensure_ascii=False)});"
+
+    pezzi = re.split(r"(```.*?```)", typ, flags=re.S)
+    for i in range(0, len(pezzi), 2):
+        # le righe che scrive chi_si_incontra: la scheda di una persona e la
+        # mappa stanno in un punto preciso del capitolo, non alla sua apertura
+        t = _RIF_SCHEDA_IN_CAPITOLO.sub(
+            lambda m: segna(m, m.group("rom"), "?" + _parola_del_nome(m.group("nome"))), pezzi[i])
+        t = _RIF_MAPPA_IN_CAPITOLO.sub(lambda m: segna(m, m.group("rom"), "?mappe"), t)
+        t = _RIF_CAPITOLO_DOPO.sub(lambda m: segna(m, m.group("rom"), m.group("key2")), t)
+        # quel che è già segnato non si risegna: il primo giro lascia «#rif-pagina»
+        t = re.sub(r"(" + _RIF_CAPITOLO.pattern + r")(?!#rif-pagina)",
+                   lambda m: segna(m, m.group("rom"), m.group("key") or ""), t)
+        if romani:
+            t = _RIF_ROMANO_NUDO.sub(lambda m: segna(m, m.group("rom"), m.group("key") or ""), t)
+        # «appendice delle mappe, in fondo» (sigle_d_appendice): la pagina dell'appendice
+        t = re.sub(r"appendice delle (mappe|creature),? in fondo(?!#rif)",
+                   lambda m: segna(m, "", f"Appendice: le {m.group(1)}"), t)
+        # «statistiche in A.6»: la sigla d'appendice senza capitolo (non nei titoli)
+        t = "\n".join(r if r.lstrip().startswith("=") else
+                      _SIGLA_A.sub(lambda m: segna(m, "", m.group("sigla")), r)
+                      for r in t.split("\n"))
+        pezzi[i] = t
+    return "".join(pezzi)
+
+
 # basename del master → etichetta Typst del suo capitolo. Lo riempie
 # `sorgente()` prima di convertire: serve a trasformare un rimando fra due
 # capitoli DELLO STESSO volume in un salto cliccabile. In un PDF di sessanta
@@ -982,7 +1078,7 @@ CHIAVI_NOTE = {
     "title", "subtitle", "brand", "banner", "meta", "footer", "header",
     "player_footer", "front_matter", "cover_image", "cover_tag", "intro_md",
     "out", "chapters", "carta", "capolettera", "fregio", "colophon", "formato",
-    "schede", "chi_si_incontra",
+    "schede", "chi_si_incontra", "pagine_nei_rimandi", "indice_analitico",
 }
 CHIAVI_SOLO_HTML = {"player_footer", "header", "cover_tag", "out"}
 
@@ -1115,7 +1211,8 @@ def marca_indice(typ: str) -> str:
     """Marca la PRIMA occorrenza di ogni voce del glossario, per capitolo.
 
     ⚠️ Solo su righe di prosa: una riga che comincia per `#` e' un comando Typst
-    e infilarci dentro una funzione romperebbe l'impaginazione. Solo la prima
+    e infilarci dentro una funzione romperebbe l'impaginazione; una che comincia
+    per `=` e' un titolo, e la voce ci sparirebbe. Solo la prima
     occorrenza: un indice che rimanda a dodici pagine per lo stesso termine non
     aiuta nessuno a trovarlo.
     """
@@ -1126,14 +1223,18 @@ def marca_indice(typ: str) -> str:
     fuori = []
     for riga in typ.split("\n"):
         s = riga.lstrip()
-        if s.startswith("#") or s.startswith("//") or "voce-indice" in riga:
+        # «=» apre un titolo: dentro un titolo la voce spariva dalla pagina e
+        # dai segnalibri («A.5 · Re Thorek I e (Scena 4)», volume d'arco, 2026-11-19)
+        if s.startswith(("#", "//", "=")) or "voce-indice" in riga:
             fuori.append(riga)
             continue
         for v in voci:
             if v in gia:
                 continue
             m = re.search(r"(?<![\w#\[])" + re.escape(v) + r"(?![\w\]])", riga)
-            if m:
+            # dentro una stringa («capitolo: "Il Portale della Forgia Eterna"»)
+            # la marca si stampava com'è, in testatina su ogni pagina (2026-11-19)
+            if m and (riga[:m.start()].count('"') - riga[:m.start()].count('\\"')) % 2 == 0:
                 riga = (riga[:m.start()] + "#voce-indice[" + v + "]" + riga[m.end():])
                 gia.add(v)
         fuori.append(riga)
@@ -1213,6 +1314,8 @@ def sorgente(man: dict, base: Path, tutti: bool, carta: str = "avorio",
         corpo = md_to_typ(md, f.parent,
                           capolettera=bool(cap.get("capolettera", predefinito)))
         corpo = re.sub(r"\A\s*=\s[^\n]*\n", "", corpo)   # il titolo lo dà il manifest
+        if man.get("pagine_nei_rimandi"):
+            corpo = numera_rimandi(corpo, romani=bool(cap.get("rimandi_romani")))
         parti.append(corpo)
         parti.append("")
     if appendice:

@@ -141,6 +141,10 @@
       "type": "boolean",
       "description": "ADR-0107: prima di stampare, ogni capitolo riceve le persone che vi si incontrano (scheda d'entrata con la riga Chi è, ritratto, riquadro con la tattica) e le mappe che nomina, prese dal master che le ha (dmcore.chi_si_incontra). Va con schede: entrambe, così l'appendice resta."
     },
+    "pagine_nei_rimandi": {
+      "type": "boolean",
+      "description": "ADR-0144: ogni rimando a un capitolo del volume («cap. V Scena 6», «il §13 del capitolo III») prende il numero di pagina del titolo citato, come negli AP («see page 50»). Il numero lo calcola Typst; se il titolo non si trova non si stampa niente. Catene: stampa."
+    },
     "chapters": {
       "type": "array",
       "minItems": 1,
@@ -205,6 +209,10 @@
           "capolettera": {
             "type": "boolean",
             "description": "Sovrascrive il valore del volume per questo capitolo."
+          },
+          "rimandi_romani": {
+            "type": "boolean",
+            "description": "ADR-0144: in questo capitolo anche il numero romano nudo fra parentesi («(V, Scena 6)», «(III)») è un rimando a un capitolo, e prende la pagina. Per le pagine che dicono solo dove guardare, come il foglio della serata. Catene: stampa."
           },
           "sezioni": {
             "type": "array",

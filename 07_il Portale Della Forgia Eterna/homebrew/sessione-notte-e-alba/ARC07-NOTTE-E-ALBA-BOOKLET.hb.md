@@ -111,7 +111,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 > questa regia, anche contro la lista «La vostra serata» del §0 di cap. VI.
 > Per le regole vince il master, e prima ancora vince lo stato della campagna.
 >
-> **Stasera, 2 novembre**. Le scelte nella fortezza
+> **Stasera**. Le scelte nella fortezza
 > e il giro delle pozioni di Kettra sono giocati. Il gruppo è in volo sopra il
 > campo, invisibile, con la botte e i due barilotti, e **si rigioca lo
 > sgancio** sulla tenda di Zog'tar. La serata comincia lì: Atto I, il barile.
@@ -153,7 +153,7 @@ costruito, e da lì vengono le mura e il duello.
   mostrare solo se uno dei due si fa vedere nella luce dell'incendio;
 - Skullcrusher nel cortile, Scena 11: la tavola è nel capitolo II, solo
   quando il drago scende;
-- la **M7-B** per il cortile, cap. VI Appendice D;
+- la **M7-B** per il cortile, `09-M7B-CORTILE.md`, la stessa del master (cap. VI Appendice D);
 - *La canzone delle pietre* non si usa stasera: è del Rubino, la serata dopo.
 
 ---
@@ -183,8 +183,8 @@ le ha il tavolo, compresa quella del volo; le mappe M7-H e M7-C scoperte,
 perché dall'alto il campo si vede; un d8 e i dadi della quota per la
 deviazione; la scheda di Durik vicino alla giocatrice di Hella. Durik non
 vola: è alla postierla o nel terzo seme della Collana (cap. VI Scena 6). La scheda di Durik nel volume dei giocatori non c'è: lei usa la
-sua copia della sessione del 25, e se non l'ha più le passi il
-capitolo VIII del tuo volume.
+sua copia della sessione del 25, e se non l'ha più le passi la
+scheda del tuo volume, cap. VIII.
 
 **Le schede che contano stasera**, da tenere a portata. Quelle dei cattivi
 sono tutte nel capitolo II, nell'ordine in cui arrivano, con chi è, cosa
@@ -1767,8 +1767,8 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 > nuda firma, l'anticipo arriva subito, e filo, voce e riscossione si
 > accendono al ritorno nel 1372.
 >
-> **I rimandi del testo copiato.** «Echo Ledger (§11)» è, in questo booklet,
-> il cap. VI §7; «il #4» è il cap. VI, e Vatore è alla sua Scena 9.
+> **I rimandi del testo copiato.** «Echo Ledger (§11)» è il §7 di cap. VI;
+> «il #4» è cap. VI, e Vatore è alla sua Scena 9 (cap. VI Scena 9).
 >
 > **Dove eravamo**. Il Seme nessuno l'ha toccato a
 > mani nude: è nello zaino di Tordek dal 31 luglio. Le dieci pozioni le

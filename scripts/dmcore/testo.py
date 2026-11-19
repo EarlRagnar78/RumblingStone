@@ -407,14 +407,21 @@ def capitoli_del_volume(base: "Path", dato: dict) -> "dict[Path, str]":
     return fuori
 
 
-_PARTE = re.compile(r"[ \t]*,?[ \t]*(?:(?P<scena>[Ss]cen[ae])[ \t]+(?P<num>\d+(?:[ \t]*(?:e|-|–|,)[ \t]*\d+)*)"
-                    r"|(?P<sez>§[\w.]+(?:-[\w]+)*)|[Aa]ppendice[ \t]+(?P<app>[A-Z](?:\.\d+)?(?:-bis)?))")
+# Il master va a capo dove vuole: «(`DEF-4`\nAppendice C.3)» è lo stesso rimando
+# di «(`DEF-4` Appendice C.3)» (la regia della serata stampava «cap. V
+# Appendice C.3» invece di «cap. VIII», 2026-11-19).
+_PARTE = re.compile(r"\s*,?\s*(?:(?P<scena>[Ss]cen[ae])\s+(?P<num>\d+(?:[ \t]*(?:e|-|–|,)[ \t]*\d+)*)"
+                    r"|(?P<sez>§[\w.]+(?:-[\w]+)*)|[Aa]ppendice\s+(?P<app>[A-Z](?:\.\d+)?(?:-bis)?))")
+# La parte detta PRIMA del master: «il §7 di `DEF-4`», «nelle Scene 7 e 8 di `DEF-4`».
+_PARTE_PRIMA = re.compile(r"(?:(?P<scena>[Ss]cen[ae])\s+(?P<num>\d+(?:[ \t]*(?:e|-|–|,)[ \t]*\d+)*)"
+                          r"|(?P<sez>§[\w.]+(?:-[\w]+)*))\s+(?:di|del|nel)\s+\(?$")
 
 #: Il master diviso è citato per una parte che questo volume non stampa.
 FUORI_DAL_VOLUME = "fuori"
 
 
-def capitolo_della_parte(capitoli: "dict[Path, str]", f: "Path", sez: str, dopo: str) -> "str | None":
+def capitolo_della_parte(capitoli: "dict[Path, str]", f: "Path", sez: str, dopo: str,
+                         prima: str = "") -> "str | None":
     """Il capitolo di un master diviso che contiene la parte citata.
 
     `sez` è il «§N» già letto dal rimando, `dopo` il testo che lo segue
@@ -431,6 +438,8 @@ def capitolo_della_parte(capitoli: "dict[Path, str]", f: "Path", sez: str, dopo:
     ('cap. V', 'fuori')
     >>> capitolo_della_parte(v, f, "", " Scene 6 e 11"), capitolo_della_parte(v, f, "", " Scene 6-7")
     ('capp. V e IX', 'cap. V')
+    >>> capitolo_della_parte(v, f, "", "\\nAppendice C.3)"), capitolo_della_parte(v, f, "", ")", prima="il §6 di ")
+    ('cap. IX', 'cap. IX')
     """
     parti = getattr(capitoli, "parti", {}).get(f)
     if not parti:
@@ -438,7 +447,7 @@ def capitolo_della_parte(capitoli: "dict[Path, str]", f: "Path", sez: str, dopo:
     if sez.strip():
         toks = [sez.strip()]
     else:
-        m = _PARTE.match(dopo)
+        m = _PARTE.match(dopo) or _PARTE_PRIMA.search(prima)
         if not m:
             return None
         if m.group("scena"):
@@ -791,7 +800,8 @@ def traduci_rimandi(md: str, sorgente: Path, capitoli: "dict[Path, str]") -> str
             return m.group(0)
         if dove == io:
             return f" ({sez})" if sez else ""
-        parte = capitolo_della_parte(capitoli, dove, sez, m.string[m.end():m.end() + 40])
+        parte = capitolo_della_parte(capitoli, dove, sez, m.string[m.end():m.end() + 40],
+                                     m.string[max(0, m.start() - 40):m.start()])
         if parte == FUORI_DAL_VOLUME:
             parte = titolo(dove)
         etichetta = parte or capitoli.get(dove) or titolo(dove)
@@ -807,7 +817,8 @@ def traduci_rimandi(md: str, sorgente: Path, capitoli: "dict[Path, str]") -> str
             return sez or "questo capitolo"
         # «nel master #1» con un titolo diventerebbe «nel «Il Piano della
         # Terra»»: dentro una frase, fuori dal volume, lo riscrive chi scrive.
-        parte = capitolo_della_parte(capitoli, dove, sez, m.string[m.end():m.end() + 40])
+        parte = capitolo_della_parte(capitoli, dove, sez, m.string[m.end():m.end() + 40],
+                                     m.string[max(0, m.start() - 40):m.start()])
         if parte == FUORI_DAL_VOLUME:
             parte = titolo(dove)
         etichetta = parte or capitoli.get(dove) or (None if m.group("n1") else titolo(dove))

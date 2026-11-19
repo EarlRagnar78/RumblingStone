@@ -78,6 +78,55 @@
   else { "" }
 }
 
+// Il numero di pagina dietro un rimando a un capitolo del volume («cap. V
+// Scena 6» → «cap. V Scena 6, p. 50»), come fanno gli AP («see page 50»):
+// un rimando senza pagina obbliga il DM a sfogliare. `rom` è il numero romano
+// del capitolo, `chiave` l'inizio del titolo cercato dentro quel capitolo
+// («SCENA 6», «§8» o «8.», «C.2»); vuota, vale la pagina d'apertura. Se il
+// titolo non c'è non stampa niente: meglio nessun numero che uno sbagliato.
+// Lo inserisce l'esportatore quando il manifest ha `"pagine_nei_rimandi"`.
+#let _rif-inizia(t, k) = {
+  let t = upper(t.trim().replace("\u{2019}", "'"))
+  let k = upper(k.replace("\u{2019}", "'"))
+  if not t.starts-with(k) { return false }
+  if t.len() == k.len() { return true }
+  t.slice(k.len()).match(regex("^[\p{L}\p{N}-]")) == none
+}
+#let rif-pagina(rom, chiave) = context {
+  // senza capitolo («statistiche in A.6»): il primo titolo con quella sigla
+  // DOPO il rimando, cioè l'appendice del master che lo cita
+  if rom == "" {
+    let dopo = query(selector(heading).after(here())).filter(h => _rif-inizia(to-string(h.body), chiave))
+    if dopo.len() == 0 or dopo.first().location().page() == here().page() { return }
+    let l = dopo.first().location()
+    return [, #link(l)[p.~#counter(page).at(l).first()]]
+  }
+  let aperture = query(heading.where(level: 1))
+  let caps = aperture.filter(h => to-string(h.body).starts-with(rom + " ·"))
+  if caps.len() == 0 { return }
+  let inizio = caps.first().location()
+  let dopo = aperture.filter(h => h.location().page() > inizio.page() or (
+    h.location().page() == inizio.page() and h.location().position().y > inizio.position().y))
+  let sel = selector(heading).after(inizio, inclusive: false)
+  if dopo.len() > 0 { sel = sel.before(dopo.first().location(), inclusive: false) }
+  let bersaglio = if chiave == "" { inizio } else if chiave.starts-with("?") {
+    // «?Balvar»: il primo titolo del capitolo che contiene la parola (la
+    // scheda di una persona, la pagina delle mappe); se non c'è, l'apertura
+    let k = upper(chiave.slice(1).replace("\u{2019}", "'"))
+    let trovati = query(sel).filter(h => upper(to-string(h.body).replace("\u{2019}", "'")).contains(k))
+    if trovati.len() == 0 { inizio } else { trovati.first().location() }
+  } else {
+    let chiavi = if chiave.starts-with("§") { (chiave, chiave.slice("§".len()) + ".") } else { (chiave,) }
+    let trovati = query(sel).filter(h => chiavi.any(k => _rif-inizia(to-string(h.body), k)))
+    if trovati.len() == 0 { none } else { trovati.first().location() }
+  }
+  if bersaglio == none { return }
+  let n = counter(page).at(bersaglio).first()
+  // il rimando punta a una pagina che il DM ha già sotto gli occhi: niente numero
+  if bersaglio.page() == here().page() { return }
+  [, #link(bersaglio)[p.~#n]]
+}
+
 // Una figura: se è più larga che alta scavalca le due colonne (le tavole
 // d'ambiente), se è verticale sta in colonna (i ritratti). La didascalia è
 // l'alt del markdown.

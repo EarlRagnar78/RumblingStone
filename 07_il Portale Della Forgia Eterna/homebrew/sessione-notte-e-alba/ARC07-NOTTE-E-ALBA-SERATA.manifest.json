@@ -4,17 +4,17 @@
   "subtitle": "Hammerfist mille anni fa · il campo dell'orda · le mura · il duello con Skullcrusher",
   "banner": "BOOKLET DELLA SERATA",
   "meta": "Sessione D&D 3.5 di circa tre ore per 4 personaggi di 13° livello · Faerûn, ≈372 DR · Campagna privata RumblingStone · regia della serata, cast e voci, il barile sulla tenda di Zog'tar, il viaggio a mille anni fa dal campo al duello, la tabella delle ferite. Le pagine ✉ sono nel volume dei giocatori",
-  "header": "La serata del 2 novembre: dallo sgancio del barile sulla tenda di Zog'tar all'esito del duello, con stop prima del rito all'incudine. Le pagine ✉ sono nel volume dei giocatori, e la regia dice quando consegnarle.",
+  "header": "La serata: dallo sgancio del barile sulla tenda di Zog'tar all'esito del duello, con stop prima del rito all'incudine. Le pagine ✉ sono nel volume dei giocatori, e la regia dice quando consegnarle.",
   "footer": "La Notte e l'Alba",
   "player_footer": "Le Voci della Notte",
   "colophon": {
     "edizione": "Booklet della serata",
-    "versione": "v2",
-    "data": "2026-11-11",
+    "versione": "v3",
+    "data": "2026-11-19",
     "autori": "Il DM di RumblingStone, con l'agente di scrittura del repo",
     "basato_su": "D&D 3.5 SRD (OGL 1.0a); adattamento privato di Red Hand of Doom (Wizards of the Coast, 2006)",
     "licenza": "materiale del DM, uso privato del tavolo, non diffondere",
-    "nota": "Versione centrata sulla serata: solo le scene che si giocano, nell'ordine di gioco, con le mappe accanto. Il volume intero resta il booklet di sessione con lo stesso titolo"
+    "nota": "Versione centrata sulla serata: solo le scene che si giocano, nell'ordine di gioco, con le mappe accanto. v3: ogni rimando a un capitolo porta il suo numero di pagina. Il volume intero è il volume d'arco"
   },
   "cover_image": "../../Immagini/web/tavola-skullcrusher-nel-cortile.jpg",
   "intro_md": "00-INTRO-DOVE-SIAMO.md",
@@ -23,7 +23,8 @@
     {
       "title": "Il foglio della serata",
       "file": "00-FOGLIO-DELLA-SERATA.md",
-      "tag": "dm"
+      "tag": "dm",
+      "rimandi_romani": true
     },
     {
       "title": "I · Regia della serata",
@@ -127,7 +128,15 @@
     {
       "title": "XI · La cassetta del DM: cast, pronuncia, read-aloud, suoni",
       "file": "../../ARC07-CASSETTA-DEL-DM.md",
-      "tag": "dm"
+      "tag": "dm",
+      "sezioni": [
+        "testa:ARC-07 — La cassetta",
+        "§1 ·",
+        "§2 ·",
+        "§4 ·",
+        "§5 ·",
+        "§6 ·"
+      ]
     },
     {
       "title": "XII · Durik, il compagno di Hella",
@@ -137,5 +146,6 @@
   ],
   "fregio": "../../../docs/assets/fregi/fregio-arco-07-forgia.svg",
   "schede": "prima-volta",
-  "chi_si_incontra": true
+  "chi_si_incontra": true,
+  "pagine_nei_rimandi": true
 }

@@ -254,6 +254,32 @@
         "parole_ripetute": 0
       }
     },
+    "07_il Portale Della Forgia Eterna/homebrew/volume-arco/ARC07-VOLUME-ARCO.manifest.json": {
+      "tetti": {
+        "testi_sotto_minimo": 0,
+        "fuori_margine": 0,
+        "immagini_sotto_300dpi": 83,
+        "schede_spezzate": 3,
+        "font_non_incorporati": 0,
+        "rimandi_sbagliati": 0
+      },
+      "misura": {
+        "pagine": 293,
+        "corpo_mediano_pt": 10.0,
+        "corpo_minimo_pt": 7.0,
+        "schede": 41,
+        "pagine_con_immagine": 0.024,
+        "pagine_con_immagine_decimo": 0.065,
+        "parole": 168342,
+        "quota_parole_ripetute": 0.112
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 2,
+        "parole_ripetute": 18781
+      }
+    },
     "07_il Portale Della Forgia Eterna/homebrew/volume-mille-anni/ARC07-MILLE-ANNI-VOLUME.manifest.json": {
       "tetti": {
         "testi_sotto_minimo": 0,

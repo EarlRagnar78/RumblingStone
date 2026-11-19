@@ -34,7 +34,8 @@ Basato su Azarr Kul di Red Hand of Doom, potenziato per lo scontro finale.[web:5
 - Caratteristiche: For 20, Des 12, Cos 20, Int 12, Sag 22, Car 16 (Cos e Sag con due pietre di ioun).
 - **Buff pre-cast + 2 effetti a innesco:** vedi `ERRATA-PARTE2-3-35-Verification.md` §1 (con durate a CL 14; con Incantesimi Estesi *forza del giusto* e *potere divino* durano 28 round).
 
-### Incantesimi (Chierico 12, domini Guerra + Tirannia)
+### Incantesimi (Chierico 12, domini Male + Tirannia)
+<!-- storico: fino al 2026-11-19 domini Guerra + Tirannia; Tiamat non dà Guerra (scelta del DM sulla card del 2026-11-19) -->
 
 - Livello incantatore 14: +1 da una *pietra di ioun prisma arancione* (SRD) e +1 dal favore di Tiamat (non SRD); DM 2026-10-18. Al giorno 6/7+1/6+1/5+1/4+1/4+1/3+1, CD 16 + livello.
 - Esempio preparazione:

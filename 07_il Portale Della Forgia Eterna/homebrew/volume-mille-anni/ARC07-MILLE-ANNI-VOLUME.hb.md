@@ -4109,6 +4109,10 @@ ___
   toglie 20 anche a questo, che è un danno a sé, e di solito lo spegne tutto.
   Il prezzo per il drago: la ricarica è 1d4+1 round. Lo usa al primo soffio,
   quando il gruppo è fitto, e non quando ha fretta di soffiare di nuovo.
+  Chi ce l'ha addosso può toglierlo con un'azione di round completo e un
+  Riflessi alla CD del soffio (+2 rotolando a terra, e resta prono); l'acqua
+  non lo spegne, *dissolvi magie* sì, alla stessa CD (*Draconomicon* p. 67,
+  verificato su dnd.arkalseif.info il 2026-11-19).
 - **La RI 21**: un incantatore di 12°-13° livello la supera con 8 o 9 sul d20
   (d20 + livello contro 21), quindi un incantesimo su tre circa si spegne. Le
   invocazioni di Artemis la subiscono come gli incantesimi.

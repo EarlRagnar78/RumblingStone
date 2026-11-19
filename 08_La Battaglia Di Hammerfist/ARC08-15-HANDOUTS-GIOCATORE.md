@@ -141,11 +141,11 @@
 - **PF** 114 · **CA** 22 (Armatura a Bande +2, Scudo Pesante +1, Des +1) · **Velocità** 6m
 - **TS**: Tempra +13, Riflessi +7, Volontà +16
 - **Attacco** +14 in mischia — *Martello da Guerra Sacro +2* (1d8+5)
-- **For** 16, **Des** 12, **Cos** 20, **Int** 12, **Sag** 22, **Car** 16
-- **Abilità**: Concentrazione **+20**, Conoscenze (religione) **+16**,
+- **For** 16, **Des** 12, **Cos** 20, **Int** 13, **Sag** 22, **Car** 15
+- **Abilità**: Concentrazione **+20**, Conoscenze (religione) **+8**,
   Sapienza Magica **+16**, Ascoltare +6, Osservare +6, Percepire Intenzioni
-  +6, Sopravvivenza +6, Guarire +6, Diplomazia +3, Intimidire +3,
-  Artigianato (pietra) +3, Nascondersi −5, Muoversi Silenziosamente −5
+  +6, Sopravvivenza +6, Guarire +6, Diplomazia +2, Intimidire +2,
+  Artigianato (pietra) +11, Nascondersi −5, Muoversi Silenziosamente −5
 - **Lingue**: Comune, Nanico, Terran
 - **Componenti**: due dosi di polvere di diamante da 250 mo (*pelle di
   pietra*), un diamante da 5.000 mo (*rianimare morti*)
@@ -158,15 +158,15 @@
 > Hammerfist. Il tuo sorriso può celare una lama.*
 
 - **PF** 90 · **CA** 20 (Armatura di Cuoio +2, Des +4, Naturale +1, Schivare +1) · **Velocità** 9m
-- **TS**: Tempra +8, Riflessi +13, Volontà +11
+- **TS**: Tempra +7, Riflessi +14, Volontà +9
 - **Attacco** +13 in mischia — *Stocco Affilato +1* (1d6+3, 15-20/×2)
-- **Attacco Furtivo** +3d6 (bersagli colti alla sprovvista o fiancheggiati)
+- **Attacco Furtivo** +1d6 (bersagli colti alla sprovvista o fiancheggiati)
 - **For** 14, **Des** 18, **Cos** 18, **Int** 14, **Sag** 10, **Car** 18
-- **Abilità**: Diplomazia **+23**, Raggirare **+21**, Intrattenere (canto)
+- **Abilità**: Diplomazia **+23**, Raggirare **+22**, Intrattenere (canto)
   **+16**, Ascoltare **+15**, Osservare **+15**, Camuffare **+14** (+16 per
   recitare una parte), Nascondersi **+14**, Muoversi Silenziosamente **+14**,
   Raccogliere Informazioni +12, Percepire Intenzioni +10, Acrobazia +9,
-  Intimidire +8, Conoscenze (locali) +7, Sapere bardico +10, Sopravvivenza +0
+  Intimidire +6, Falsificare +6, Conoscenze (locali) +7, Sapere bardico +10, Sopravvivenza +0
 - **Lingue**: Comune, Nanico, **Orchesco**, **Goblin**. Capisci gli ordini
   dell'orda entro 9 m (Ascoltare CD 15; se vuoi restare nascosta, anche
   Nascondersi contrapposto all'Osservare di chi parla).
@@ -262,7 +262,7 @@ livelli più alto: si può fare solo con incantesimi fino al 4°.
 | ***Favore Divino*** (1°) | su di te, dura 1 minuto | **+3** a colpire e ai danni | no |
 | ***Arma Magica*** (1°, dominio) | tocco, dura 12 minuti | un'arma diventa +1 | no |
 | Trucchetti | a volontà fra i 6 preparati | *Guida* (+1 a un tiro), *Resistenza* (+1 ai TS), *Virtù* (1 pf temporaneo), *Luce*, *Riparare*, *Individuazione del Magico* | no |
-| **Scacciare Non Morti** | 10 volte al giorno | prova 1d20+5 (Carisma +3, +2 da Conoscenze religione); danni di scacciare 2d6+15 | no |
+| **Scacciare Non Morti** | 9 volte al giorno | prova 1d20+4 (Carisma +2, +2 da Conoscenze religione); danni di scacciare 2d6+14 | no |
 | **Rune di Potere** | 3 volte al giorno, round completo | un'arma ottiene +1 per un'ora | no |
 
 ### Carta di Nala — il canto e la lama

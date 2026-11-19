@@ -22,7 +22,7 @@ attacchi:
 voci:
   - Chierico 12 di Tiamat, Sag 18; incantesimi al giorno 6/6+1/5+1/5+1/4+1/3+1/2+1
   - CD degli incantesimi 14 + livello (6° livello: CD 20)
-  - Domini Distruzione e Male; intimorire non morti 5/giorno
+  - Domini Distruzione e Male (Distruzione e Male sono domini di Tiamat nel Deities and Demigods, verificato su dnd.arkalseif.info il 2026-11-19; tenuti dal DM sulla card del 2026-11-19); intimorire non morti 5/giorno
   - Marchio di Tiamat: +2 contro i non morti
 fonte: hobgoblin (SRD 3.5) + Chierico 12 (SRD 3.5), rifatto a mano: vedi Boost log
 ```

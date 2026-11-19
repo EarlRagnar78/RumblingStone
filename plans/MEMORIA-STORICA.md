@@ -127,7 +127,7 @@ repo scritto con altre parole.
 ### MS-0004 · 2026-10-12 · Routine settimanale del lunedì
 
 - **Data:** 2026-10-12
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** routine audit
 - **Origine:** memoria del progetto, riga 4 di 67 (versione prima della riduzione del 2026-11-12)
@@ -137,7 +137,7 @@ repo scritto con altre parole.
 ### MS-0005 · 2026-10-11 · Push dal computer del DM
 
 - **Data:** 2026-10-11
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** ambiente git
 - **Origine:** memoria del progetto, riga 5 di 67 (versione prima della riduzione del 2026-11-12)
@@ -199,7 +199,7 @@ repo scritto con altre parole.
 ### MS-0011 · 2026-10-18 · Versione più potente e terrificante
 
 - **Data:** 2026-10-18
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** regole preferenze
 - **Origine:** memoria del progetto, riga 11 di 67 (versione prima della riduzione del 2026-11-12)
@@ -393,7 +393,7 @@ repo scritto con altre parole.
 ### MS-0029 · 2026-10-23 · Rete del container: Hugging Face
 
 - **Data:** 2026-10-23
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** ambiente rete
 - **Origine:** memoria del progetto, riga 29 di 67 (versione prima della riduzione del 2026-11-12)
@@ -413,7 +413,7 @@ repo scritto con altre parole.
 ### MS-0031 · 2026-10-22 · Watabou dal container
 
 - **Data:** 2026-10-22
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** mappe citta
 - **Origine:** memoria del progetto, riga 31 di 67 (versione prima della riduzione del 2026-11-12)
@@ -456,7 +456,7 @@ repo scritto con altre parole.
 ### MS-0035 · 2026-10-23 · Merge passato al thread padre
 
 - **Data:** 2026-10-23
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** regole pr
 - **Origine:** memoria del progetto, riga 35 di 67 (versione prima della riduzione del 2026-11-12)
@@ -510,7 +510,7 @@ repo scritto con altre parole.
 ### MS-0040 · 2026-10-29 · Personaggi in posa con l'AI (ADR-0104)
 
 - **Data:** 2026-10-29
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0015 ADR-0104
 - **Temi:** immagini adr
 - **Origine:** memoria del progetto, riga 40 di 67 (versione prima della riduzione del 2026-11-12)
@@ -533,7 +533,7 @@ repo scritto con altre parole.
 ### MS-0042 · 2026-10-30 · Cuore della Montagna: schieramento dei nani
 
 - **Data:** 2026-10-30
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** mappe arc08 canone
 - **Origine:** memoria del progetto, riga 42 di 67 (versione prima della riduzione del 2026-11-12)
@@ -543,7 +543,7 @@ repo scritto con altre parole.
 ### MS-0043 · 2026-10-31 · Regola: vince la decisione senza regressione
 
 - **Data:** 2026-10-31
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** regole decisioni
 - **Origine:** memoria del progetto, riga 43 di 67 (versione prima della riduzione del 2026-11-12)
@@ -599,7 +599,7 @@ repo scritto con altre parole.
 ### MS-0048 · 2026-11-02 · Booklet pronto solo dopo lettura da DM
 
 - **Data:** 2026-11-02
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** regole booklet
 - **Origine:** memoria del progetto, riga 48 di 67 (versione prima della riduzione del 2026-11-12)
@@ -652,7 +652,7 @@ repo scritto con altre parole.
 ### MS-0053 · 2026-11-04 · Card chiuse solo se risolte
 
 - **Data:** 2026-11-04
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** regole card
 - **Origine:** memoria del progetto, riga 53 di 67 (versione prima della riduzione del 2026-11-12)
@@ -708,7 +708,7 @@ repo scritto con altre parole.
 ### MS-0058 · 2026-11-08 · Regola: si parte dallo standard di fatto
 
 - **Data:** 2026-11-08
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** regole dipendenze
 - **Origine:** memoria del progetto, riga 58 di 67 (versione prima della riduzione del 2026-11-12)
@@ -765,7 +765,7 @@ repo scritto con altre parole.
 ### MS-0063 · 2026-11-08 · Roadmap unica del motore
 
 - **Data:** 2026-11-08
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** roadmap
 - **Origine:** memoria del progetto, riga 63 di 67 (versione prima della riduzione del 2026-11-12)
@@ -788,7 +788,7 @@ repo scritto con altre parole.
 ### MS-0065 · 2026-11-10 · Milestone v1.1.0-v1.5.0
 
 - **Data:** 2026-11-10
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** roadmap milestone
 - **Origine:** memoria del progetto, riga 65 di 67 (versione prima della riduzione del 2026-11-12)
@@ -820,7 +820,7 @@ repo scritto con altre parole.
 ### MS-0068 · 2026-11-12 · La memoria storica nel repo e l'addendum del changelog
 
 - **Data:** 2026-11-12
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0127
 - **Temi:** memoria regole ci
 - **Origine:** addendum della riga del 2026-11-12 «la memoria storica nel repo (ADR-0127)» in `plans/CHANGELOG.md`
@@ -885,7 +885,7 @@ repo scritto con altre parole.
 ### MS-0074 · 2026-11-12 · ADR-0126 lotto 2: armi e danno
 
 - **Data:** 2026-11-12
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole motore schede
 - **Origine:** addendum della riga del 2026-11-12 «ADR-0126, lotto 2» in `plans/CHANGELOG.md`
@@ -907,7 +907,7 @@ repo scritto con altre parole.
 ### MS-0076 · 2026-11-12 · ADR-0126 lotto 3: incantatori
 
 - **Data:** 2026-11-12
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole motore schede
 - **Origine:** addendum della riga del 2026-11-12 «ADR-0126, lotto 3» in `plans/CHANGELOG.md`
@@ -929,7 +929,7 @@ repo scritto con altre parole.
 ### MS-0078 · 2026-11-12 · ADR-0126 lotto 3-bis: classi di prestigio
 
 - **Data:** 2026-11-12
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole motore schede
 - **Origine:** addendum della riga del 2026-11-12 «ADR-0126, lotto 3-bis» in `plans/CHANGELOG.md`
@@ -940,7 +940,7 @@ repo scritto con altre parole.
 ### MS-0079 · 2026-11-12 · ADR-0126 lotto 4: numero dei talenti
 
 - **Data:** 2026-11-12
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole motore schede
 - **Origine:** addendum della riga del 2026-11-12 «ADR-0126, lotto 4» in `plans/CHANGELOG.md`
@@ -951,7 +951,7 @@ repo scritto con altre parole.
 ### MS-0080 · 2026-11-12 · ADR-0126 lotto 4: effetti dei talenti sulle abilità
 
 - **Data:** 2026-11-12
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole motore schede
 - **Origine:** addendum della riga del 2026-11-12 «ADR-0126, lotto 4, seconda parte» in `plans/CHANGELOG.md`
@@ -962,7 +962,7 @@ repo scritto con altre parole.
 ### MS-0081 · 2026-11-12 · ADR-0126 lotto 3-ter: avanzamento d'incantatore delle classi di prestigio
 
 - **Data:** 2026-11-12
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole motore schede
 - **Origine:** addendum della riga del 2026-11-12 «ADR-0126, lotto 3-ter» in `plans/CHANGELOG.md`
@@ -973,7 +973,7 @@ repo scritto con altre parole.
 ### MS-0082 · 2026-11-12 · Cancello del riferimento dei plugin
 
 - **Data:** 2026-11-12
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0111, ADR-0123
 - **Temi:** documentazione plugin cancelli
 - **Origine:** addendum della riga del 2026-11-12 «Cancello del riferimento dei plugin» in `plans/CHANGELOG.md`
@@ -984,7 +984,7 @@ repo scritto con altre parole.
 ### MS-0083 · 2026-11-13 · ADR-0129: il volume da stampa è PDF/UA-1
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0129, ADR-0032
 - **Temi:** stampa booklet accessibilita document-ai
 - **Origine:** addendum della riga del 2026-11-13 «ADR-0129: il volume da stampa è PDF/UA-1» in `plans/CHANGELOG.md`
@@ -1005,7 +1005,7 @@ repo scritto con altre parole.
 ### MS-0085 · 2026-11-12 · ADR-0126 coda del lotto 3: i fatti di una scheda in JSON
 
 - **Data:** 2026-11-12
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole motore schede coerenza
 - **Origine:** addendum della riga del 2026-11-12 «ADR-0126, coda del lotto 3» in `plans/CHANGELOG.md`
@@ -1026,7 +1026,7 @@ repo scritto con altre parole.
 ### MS-0087 · 2026-11-13 · S8: le tattiche di una scheda contro la scheda
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0125
 - **Temi:** coerenza storia schede regole
 - **Origine:** voce scritta con la PR, per la riga del 2026-11-13 «ADR-0125, aggiunta S8» in `plans/CHANGELOG.md`
@@ -1037,7 +1037,7 @@ repo scritto con altre parole.
 ### MS-0088 · 2026-11-13 · ADR-0126 lotto 5: la creatura base
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole motore schede
 - **Origine:** addendum della riga del 2026-11-13 «ADR-0126, lotto 5, prima parte» in `plans/CHANGELOG.md`
@@ -1047,7 +1047,7 @@ repo scritto con altre parole.
 ### MS-0089 · 2026-11-13 · ADR-0130: le emoji del volume vengono dal repo
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0130 ADR-0129 ADR-0020
 - **Temi:** stampa booklet font accessibilita document-ai
 - **Origine:** addendum della riga del 2026-11-13 «ADR-0130: le emoji del volume da stampa vengono dal repo» in `plans/CHANGELOG.md`
@@ -1070,7 +1070,7 @@ repo scritto con altre parole.
 ### MS-0091 · 2026-11-13 · Decisioni del DM sulle schede: tagli, prestigio, talenti, Zog'tar
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole schede canone
 - **Origine:** addendum della riga del 2026-11-13 «ADR-0126, decisioni del DM sulle card del 13/11» in `plans/CHANGELOG.md`
@@ -1081,7 +1081,7 @@ repo scritto con altre parole.
 ### MS-0092 · 2026-11-13 · ADR-0126 lotto 5: il grado di sfida
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole schede plugin
 - **Origine:** addendum della riga del 2026-11-13 «ADR-0126, lotto 5 seconda parte: il grado di sfida» in `plans/CHANGELOG.md`
@@ -1104,7 +1104,7 @@ repo scritto con altre parole.
 ### MS-0094 · 2026-11-13 · ADR-0126 lotto 5: i fatti scheda per scheda
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole schede coerenza
 - **Origine:** addendum della riga del 2026-11-13 «ADR-0126, lotto 5 terza parte: i fatti scheda per scheda» in `plans/CHANGELOG.md`
@@ -1115,7 +1115,7 @@ repo scritto con altre parole.
 ### MS-0095 · 2026-11-13 · ADR-0126 lotto 6: le abilità di classe
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole schede abilità
 - **Origine:** addendum della riga del 2026-11-13 «ADR-0126, lotto 6 prima parte: le abilità di classe e il margine dei gradi» in `plans/CHANGELOG.md`
@@ -1126,7 +1126,7 @@ repo scritto con altre parole.
 ### MS-0096 · 2026-11-13 · ADR-0126 lotto 6: la penalità di armatura alla prova
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole schede abilità
 - **Origine:** addendum della riga del 2026-11-13 «ADR-0126, lotto 6 seconda parte: la penalità di armatura alla prova» in `plans/CHANGELOG.md`
@@ -1148,7 +1148,7 @@ repo scritto con altre parole.
 ### MS-0098 · 2026-11-13 · ADR-0126 lotto 7: la velocità a terra
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole schede
 - **Origine:** addendum della riga del 2026-11-13 «ADR-0126, lotto 7 prima parte: la velocità a terra» in `plans/CHANGELOG.md`
@@ -1159,7 +1159,7 @@ repo scritto con altre parole.
 ### MS-0099 · 2026-11-13 · ADR-0126 lotto 7: resistenza agli incantesimi e riduzione del danno
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole schede
 - **Origine:** addendum della riga del 2026-11-13 «ADR-0126, lotto 7 seconda parte: resistenza agli incantesimi e riduzione del danno» in `plans/CHANGELOG.md`
@@ -1170,7 +1170,7 @@ repo scritto con altre parole.
 ### MS-0100 · 2026-11-13 · ADR-0126 lotto 7: le immunità del tipo
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole schede
 - **Origine:** addendum della riga del 2026-11-13 «ADR-0126, lotto 7 terza parte: le immunità del tipo» in `plans/CHANGELOG.md`
@@ -1181,7 +1181,7 @@ repo scritto con altre parole.
 ### MS-0101 · 2026-11-13 · ADR-0126 lotto 7: i linguaggi automatici
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole schede
 - **Origine:** addendum della riga del 2026-11-13 «ADR-0126, lotto 7 quarta parte: i linguaggi automatici» in `plans/CHANGELOG.md`
@@ -1192,7 +1192,7 @@ repo scritto con altre parole.
 ### MS-0102 · 2026-11-13 · ADR-0126 lotto 8: il valore dell'equipaggiamento
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole schede
 - **Origine:** addendum della riga del 2026-11-13 «ADR-0126, lotto 8 prima parte: il valore dell'equipaggiamento» in `plans/CHANGELOG.md`
@@ -1203,7 +1203,7 @@ repo scritto con altre parole.
 ### MS-0103 · 2026-11-13 · ADR-0126 lotto 5: il modificatore di livello delle razze senza dadi vita
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole schede
 - **Origine:** addendum della riga del 2026-11-13 «ADR-0126, lotto 5 quarta parte: il modificatore di livello delle razze senza dadi vita razziali» in `plans/CHANGELOG.md`
@@ -1214,7 +1214,7 @@ repo scritto con altre parole.
 ### MS-0104 · 2026-11-13 · ADR-0126 lotto 8: capacità speciali, pozioni, pergamene, bacchette
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole schede
 - **Origine:** addendum della riga del 2026-11-13 «ADR-0126, lotto 8 seconda parte: capacità speciali, pozioni, pergamene, bacchette» in `plans/CHANGELOG.md`
@@ -1224,7 +1224,7 @@ repo scritto con altre parole.
 ### MS-0105 · 2026-11-13 · ADR-0126: RI del Collezionista 38 e tratti dei non morti a tre schede
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole schede
 - **Origine:** addendum della riga del 2026-11-13 «ADR-0126, due decisioni del DM sulle card delle difese» in `plans/CHANGELOG.md`
@@ -1234,7 +1234,7 @@ repo scritto con altre parole.
 ### MS-0106 · 2026-11-13 · ADR-0131: il volume da stampa è anche PDF/A-2a
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0131 ADR-0129 ADR-0130
 - **Temi:** stampa booklet archiviazione document-ai
 - **Origine:** addendum della riga del 2026-11-13 «ADR-0131: il volume da stampa è anche PDF/A-2a» in `plans/CHANGELOG.md`
@@ -1245,7 +1245,7 @@ repo scritto con altre parole.
 ### MS-0107 · 2026-11-13 · ADR-0091: le schede nell'ordine di Burnt Offerings
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0091
 - **Temi:** schede stampa booklet
 - **Origine:** riga del 2026-11-13 «ADR-0091, aggiornamento: le schede nell'ordine delle AP PF1e» in `plans/CHANGELOG.md`
@@ -1256,7 +1256,7 @@ repo scritto con altre parole.
 ### MS-0108 · 2026-11-13 · ADR-0126 lotto 8: adamantio, mithral, bastoni con le cariche
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole schede
 - **Origine:** addendum della riga del 2026-11-13 «ADR-0126, lotto 8 terza parte: adamantio, mithral, bastoni con le cariche» in `plans/CHANGELOG.md`
@@ -1266,7 +1266,7 @@ repo scritto con altre parole.
 ### MS-0109 · 2026-11-13 · Piano di recupero: D5 chiusa e lotto L4, il registro delle adozioni prende i lotti interni
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0076
 - **Temi:** piani decisioni adozioni registro
 - **Origine:** riga del 2026-11-13 «L4 · I piani fermi, una casella alla volta (e D5 chiusa)» in `plans/CHANGELOG.md`
@@ -1277,7 +1277,7 @@ repo scritto con altre parole.
 ### MS-0110 · 2026-11-14 · RICERCA-TOOL-LGM-2026 §3.1: la carta del cielo di Zalkatar
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0005 ADR-0019
 - **Temi:** arc09 handout immagini indagine
 - **Origine:** riga del 2026-11-14 «§3.1, la carta del cielo come handout» in `plans/CHANGELOG.md`
@@ -1288,7 +1288,7 @@ repo scritto con altre parole.
 ### MS-0111 · 2026-11-13 · B3: le carte da tavolo del Drappo prima della serata
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0020 ADR-0129 ADR-0131
 - **Temi:** stampa drappo standalone tavolo
 - **Origine:** riga del 2026-11-13 «Voce B3 della ricerca sul modulo pubblicabile: le carte da tavolo del Drappo» in `plans/CHANGELOG.md`
@@ -1299,7 +1299,7 @@ repo scritto con altre parole.
 ### MS-0112 · 2026-11-13 · ADR-0132: le copie delle immagini tengono la provenienza
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0132 ADR-0019
 - **Temi:** immagini provenienza booklet ai-generativa
 - **Origine:** addendum della riga del 2026-11-13 «ADR-0132: le copie delle immagini tengono la dichiarazione di provenienza» in `plans/CHANGELOG.md`
@@ -1310,7 +1310,7 @@ repo scritto con altre parole.
 ### MS-0113 · 2026-11-14 · ADR-0091: le voci che mancavano in sei schede di ARC07-DEF-4
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0091
 - **Temi:** schede stampa booklet regole
 - **Origine:** riga del 2026-11-14 «ADR-0091, le voci che mancavano nelle schede di ARC07-DEF-4» in `plans/CHANGELOG.md`
@@ -1321,7 +1321,7 @@ repo scritto con altre parole.
 ### MS-0114 · 2026-11-14 · ADR-0134: l'equipaggiamento standard dai Codex PF1e entro il valore del 3.5
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0134, ADR-0126
 - **Temi:** regole schede equipaggiamento
 - **Origine:** riga del 2026-11-14 «ADR-0134 e ADR-0126, lotto 8 quarta parte: l'equipaggiamento standard» in `plans/CHANGELOG.md`
@@ -1332,7 +1332,7 @@ repo scritto con altre parole.
 ### MS-0115 · 2026-11-14 · RICERCA-TOOL-LGM-2026 §3.1: la carta del cielo con Stellarium 26.2
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0005 ADR-0019
 - **Temi:** arc09 handout immagini indagine
 - **Origine:** riga del 2026-11-14 «§3.1, la carta del cielo passa a Stellarium 26.2» in `plans/CHANGELOG.md`
@@ -1343,7 +1343,7 @@ repo scritto con altre parole.
 ### MS-0116 · 2026-11-14 · ADR-0133: la scheda a tutta pagina va su due colonne
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0133
 - **Temi:** schede stampa booklet typst
 - **Origine:** riga del 2026-11-14 «ADR-0133, la scheda a tutta pagina va su due colonne dentro il riquadro» in `plans/CHANGELOG.md`
@@ -1354,7 +1354,7 @@ repo scritto con altre parole.
 ### MS-0117 · 2026-11-13 · I giorni di «chi sa cosa» in state.yaml e la regola T2
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0125
 - **Temi:** coerenza storia canone state
 - **Origine:** voce scritta con la PR, per la riga del 2026-11-13 «Canone di «chi sa cosa»» in `plans/CHANGELOG.md`
@@ -1365,7 +1365,7 @@ repo scritto con altre parole.
 ### MS-0118 · 2026-11-14 · Generatore, lotto J: i sette modelli semplici di PF1e
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0034
 - **Temi:** generatore creature modelli pf1e
 - **Origine:** riga del 2026-11-14 «Lotto J, i modelli semplici di PF1e» in `plans/CHANGELOG.md`
@@ -1376,7 +1376,7 @@ repo scritto con altre parole.
 ### MS-0119 · 2026-11-14 · Regole, lotto 7 quinta parte: linguaggi di hobgoblin, orco, drow, duergar
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole linguaggi razze verifica-scheda
 - **Origine:** riga del 2026-11-14 «lotto 7 quinta parte» in `plans/CHANGELOG.md`
@@ -1387,7 +1387,7 @@ repo scritto con altre parole.
 ### MS-0120 · 2026-11-14 · Regole, lotto 6 terza parte: razze dei mostri, taglia e velocità nelle abilità
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole abilità razze saltare verifica-scheda
 - **Origine:** riga del 2026-11-14 «lotto 6 terza parte» in `plans/CHANGELOG.md`
@@ -1398,7 +1398,7 @@ repo scritto con altre parole.
 ### MS-0121 · 2026-11-14 · Regole, lotto 7 sesta parte: velocità di hobgoblin, orco, drow, duergar
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole velocità razze armature verifica-scheda
 - **Origine:** riga del 2026-11-14 «lotto 7 sesta parte» in `plans/CHANGELOG.md`
@@ -1409,7 +1409,7 @@ repo scritto con altre parole.
 ### MS-0122 · 2026-11-14 · Regole, lotto 8 quinta parte: la ricchezza di un file con più schede
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole ricchezza equipaggiamento master verifica-scheda
 - **Origine:** riga del 2026-11-14 «lotto 8 quinta parte» in `plans/CHANGELOG.md`
@@ -1420,7 +1420,7 @@ repo scritto con altre parole.
 ### MS-0123 · 2026-11-14 · Regole, lotti 6 e 7: velocità, linguaggi e abilità di un file con più schede
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole velocita linguaggi abilita master verifica-scheda
 - **Origine:** riga del 2026-11-14 «lotti 6 e 7: velocità, linguaggi e abilità di un file con più schede» in `plans/CHANGELOG.md`
@@ -1430,7 +1430,7 @@ repo scritto con altre parole.
 ### MS-0124 · 2026-11-14 · ADR-0134: il corredo delle schede PCGen e i Codex come complemento
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0134
 - **Temi:** schede equipaggiamento regole bestiario
 - **Origine:** riga del 2026-11-14 «ADR-0134, regola RC-001 applicata alle prime undici schede del Bestiario» in `plans/CHANGELOG.md`
@@ -1441,7 +1441,7 @@ repo scritto con altre parole.
 ### MS-0125 · 2026-11-14 · Regole, lotto 8 sesta parte: merci, proiettili, pezzi doppi e arco composito
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole ricchezza prezzi oggetti merci proiettili arco-composito verifica-scheda
 - **Origine:** riga del 2026-11-14 «lotto 8 sesta parte: merci, proiettili, pezzi doppi e arco composito nei prezzi 3.5» in `plans/CHANGELOG.md`
@@ -1452,7 +1452,7 @@ repo scritto con altre parole.
 ### MS-0126 · 2026-11-14 · Regole, lotto 5 quinta parte: i draghi veri per colore e categoria d'età
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole draghi creatura-base grado-di-sfida armatura-naturale verifica-scheda
 - **Origine:** riga del 2026-11-14 «lotto 5 quinta parte: i draghi veri per colore e categoria d'età» in `plans/CHANGELOG.md`
@@ -1463,7 +1463,7 @@ repo scritto con altre parole.
 ### MS-0127 · 2026-11-14 · Regole, lotto 5 sesta parte: il grado di sfida di chi avanza per dadi vita
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole grado-di-sfida avanzamento dadi-vita draghi verifica-scheda
 - **Origine:** riga del 2026-11-14 «lotto 5 sesta parte: il grado di sfida di chi avanza per dadi vita» in `plans/CHANGELOG.md`
@@ -1474,7 +1474,7 @@ repo scritto con altre parole.
 ### MS-0128 · 2026-11-14 · ADR-0134: le quattro decisioni del DM sul corredo
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0134
 - **Temi:** schede equipaggiamento regole bestiario
 - **Origine:** riga del 2026-11-14 «ADR-0134, regola RC-001: le quattro decisioni del DM sulle card del 14/11» in `plans/CHANGELOG.md`
@@ -1485,7 +1485,7 @@ repo scritto con altre parole.
 ### MS-0129 · 2026-11-14 · Regole: le tre risposte del DM su monaco, Arbitrax e Tyrgarun
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole schede variante-del-dm regole-custom draghi grado-di-sfida velocita verifica-scheda
 - **Origine:** riga del 2026-11-14 «le tre risposte del DM sulle card» in `plans/CHANGELOG.md`
@@ -1496,7 +1496,7 @@ repo scritto con altre parole.
 ### MS-0130 · 2026-11-14 · ADR-0134: il corredo dell'Hobgoblin Bladebearer
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0134
 - **Temi:** schede equipaggiamento regole bestiario
 - **Origine:** riga del 2026-11-14 «ADR-0134, regola RC-001: il corredo dell'Hobgoblin Bladebearer» in `plans/CHANGELOG.md`
@@ -1507,7 +1507,7 @@ repo scritto con altre parole.
 ### MS-0131 · 2026-11-14 · Regole, lotto 5 settima parte: il grado di sfida dei modelli dell'SRD
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole grado-di-sfida modelli scheletro zombi mezzo-immondo celestiale verifica-scheda conformita
 - **Origine:** riga del 2026-11-14 «lotto 5 settima parte: il grado di sfida dei modelli dell'SRD» in `plans/CHANGELOG.md`
@@ -1518,7 +1518,7 @@ repo scritto con altre parole.
 ### MS-0132 · 2026-11-14 · Regole, lotto 5 ottava parte: la base dichiarata con un modello che non ne cambia i numeri
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole creatura-base modelli celestiale immondo avanzamento dadi-vita gufo-gigante verifica-scheda
 - **Origine:** riga del 2026-11-14 «lotto 5 ottava parte: la base dichiarata con un modello che non ne cambia i numeri» in `plans/CHANGELOG.md`
@@ -1529,7 +1529,7 @@ repo scritto con altre parole.
 ### MS-0133 · 2026-11-14 · ADR-0134: Lythiel senza l'amuleto e i tiri salvezza del monaco
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0134
 - **Temi:** schede equipaggiamento regole bestiario png
 - **Origine:** riga del 2026-11-14 «ADR-0134, regola RC-001: due decisioni del DM sulle card del 14/11» in `plans/CHANGELOG.md`
@@ -1540,7 +1540,7 @@ repo scritto con altre parole.
 ### MS-0134 · 2026-11-14 · Regole: lo Skeletal Dire Lion ha 16 dadi vita e grado di sfida 7
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole grado-di-sfida scheletro skeletal-dire-lion ghostlord decisione-dm
 - **Origine:** riga del 2026-11-14 «risposta del DM sulla card dello Skeletal Dire Lion» in `plans/CHANGELOG.md`
@@ -1551,7 +1551,7 @@ repo scritto con altre parole.
 ### MS-0135 · 2026-11-14 · A6: il dossier delle piste di ARC-09
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** indagine piste ARC-09 torre-invisibile zalkatar sonjak collezionista ghaurush zin-thara carta-del-cielo travaso gate
 - **Origine:** riga del 2026-11-14 «A6, il dossier delle piste di ARC-09» in `plans/CHANGELOG.md`
@@ -1562,7 +1562,7 @@ repo scritto con altre parole.
 ### MS-0136 · 2026-11-14 · ADR-0134: il corredo del Fantino Cavaliere del Palio
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0134
 - **Temi:** schede equipaggiamento regole palio
 - **Origine:** riga del 2026-11-14 «ADR-0134, regola RC-001: il corredo del Fantino Cavaliere del Palio» in `plans/CHANGELOG.md`
@@ -1573,7 +1573,7 @@ repo scritto con altre parole.
 ### MS-0137 · 2026-11-14 · ARC-07/08: nuovi nomi e appellativi degli Eroi di Hammerfist e della Madre Superiora
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** arc08 arc07 nomi pregen eroi-di-hammerfist decisione-dm
 - **Origine:** riga del 2026-11-14 «Nomi degli Eroi di Hammerfist scelti dal DM» in `plans/CHANGELOG.md`
@@ -1584,7 +1584,7 @@ repo scritto con altre parole.
 ### MS-0138 · 2026-11-14 · Regole: l'armatura naturale dei modelli dell'SRD
 
 - **Data:** 2026-11-14
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole armatura-naturale modelli scheletro mezzo-immondo mezzo-drago lich vampiro zombi
 - **Origine:** riga del 2026-11-14 «lotto 5 nona parte» in `plans/CHANGELOG.md`
@@ -1595,7 +1595,7 @@ repo scritto con altre parole.
 ### MS-0139 · 2026-11-15 · ARC-09: il Borin di P1B e P1C è il pregen Borin Giuraferro, col martello
 
 - **Data:** 2026-11-15
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** arc09 pregen borin aegis-fang eroi-di-hammerfist decisione-dm
 - **Origine:** riga del 2026-11-15 «ARC-09, scelta del DM sulla card del 15/11» in `plans/CHANGELOG.md`
@@ -1606,7 +1606,7 @@ repo scritto con altre parole.
 ### MS-0140 · 2026-11-15 · ADR-0134: il corredo del Fantino Ladro e della Drow Chierica di Lolth del Palio e del Collezionista
 
 - **Data:** 2026-11-15
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0134
 - **Temi:** schede equipaggiamento regole palio
 - **Origine:** riga del 2026-11-15 «ADR-0134, regola RC-001: il corredo del Fantino Ladro e della Drow Chierica di Lolth del Palio e del Collezionista» in `plans/CHANGELOG.md`
@@ -1617,7 +1617,7 @@ repo scritto con altre parole.
 ### MS-0141 · 2026-11-15 · Le prove sul portatile con la RTX 4050 hanno uno script ciascuna
 
 - **Data:** 2026-11-15
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0089 · ADR-0125
 - **Temi:** prove-4050 gpu ollama llm-locale coerenza immagini gemini
 - **Origine:** riga del 2026-11-15 «Prove sul portatile con la RTX 4050» in `plans/CHANGELOG.md`
@@ -1628,7 +1628,7 @@ repo scritto con altre parole.
 ### MS-0142 · 2026-11-15 · ARC-07: la tattica di Skullcrusher diventa dinamica, e la misura del duello
 
 - **Data:** 2026-11-15
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0118
 - **Temi:** arc07 skullcrusher tattiche drago simulazione barile decisione-dm
 - **Origine:** riga del 2026-11-15 «ARC-07 DEF-4 Scena 11, la tattica di Skullcrusher» in `plans/CHANGELOG.md`
@@ -1650,7 +1650,7 @@ repo scritto con altre parole.
 ### MS-0144 · 2026-11-15 · Zog'tar sulla breccia dell'alba separa e finisce, e sa che i nani volano
 
 - **Data:** 2026-11-15
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** tattiche villain zogtar arc07 simulazione barile balvar
 - **Origine:** riga del 2026-11-15 «Tattiche di villain e PNG, primo gruppo (ARC-07)» in `plans/CHANGELOG.md`
@@ -1661,7 +1661,7 @@ repo scritto con altre parole.
 ### MS-0145 · 2026-11-15 · Ozyrrandion tentatore, l'Avatar di Tiamat sul Mythal, l'oscurità di Fauci su di sé
 
 - **Data:** 2026-11-15
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** draghi tattiche ozyrrandion tiamat fauci mythal decisione-dm arc08 arc09
 - **Origine:** riga del 2026-11-15 «Tattiche dei draghi, seconde card del DM del 15/11» in `plans/CHANGELOG.md`
@@ -1672,7 +1672,7 @@ repo scritto con altre parole.
 ### MS-0146 · 2026-11-15 · Xal'thor con l'esplosione mentale a volontà, Kragar con una tattica che sbilancia anche il nano
 
 - **Data:** 2026-11-15
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** tattiche villain xalthor kragar torneo dauth arc09 simulazione decisione-dm
 - **Origine:** riga del 2026-11-15 «Tattiche di villain e PNG, ARC-09 lotto 1 (Torneo di Dauth)» in `plans/CHANGELOG.md`
@@ -1683,7 +1683,7 @@ repo scritto con altre parole.
 ### MS-0147 · 2026-11-15 · Zalkatar che non scende mai in mischia, Xilthra con una scheda legale al posto dell'Ombra Drow
 
 - **Data:** 2026-11-15
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** tattiche villain zalkatar xilthra torre sabotaggio arc09 simulazione decisione-dm scheda-legale
 - **Origine:** riga del 2026-11-15 «Tattiche di villain e PNG, ARC-09 lotto 2» in `plans/CHANGELOG.md`
@@ -1694,7 +1694,7 @@ repo scritto con altre parole.
 ### MS-0148 · 2026-11-15 · Il duello di Karruk sui gradini uccide quasi sempre il campione
 
 - **Data:** 2026-11-15
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** tattiche villain karruk zarim rethmar torneo arc09 simulazione duello
 - **Origine:** riga del 2026-11-15 «Tattiche di villain e PNG, ARC-09 lotto 3» in `plans/CHANGELOG.md`
@@ -1704,7 +1704,7 @@ repo scritto con altre parole.
 ### MS-0149 · 2026-11-15 · Eroi di Hammerfist: rosa a sei, eroe al DM sullo sfondo, Cantitrici e capi con nome
 
 - **Data:** 2026-11-15
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** arc08 arc07 pregen eroi-di-hammerfist cantitrici decisione-dm schede pf1e
 - **Origine:** riga del 2026-11-15 «Eroi di Hammerfist, scelte del DM sulle card del 15/11» in `plans/CHANGELOG.md`
@@ -1715,7 +1715,7 @@ repo scritto con altre parole.
 ### MS-0150 · 2026-11-15 · Regole: le caratteristiche che i modelli dell'SRD cambiano
 
 - **Data:** 2026-11-15
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole caratteristiche modelli scheletro zombi mezzo-immondo mezzo-drago lich vampiro fantasma
 - **Origine:** riga del 2026-11-15 «lotto 5 decima parte» in `plans/CHANGELOG.md`
@@ -1726,7 +1726,7 @@ repo scritto con altre parole.
 ### MS-0151 · 2026-11-15 · Regole: la velocità delle creature coi dadi vita razziali
 
 - **Data:** 2026-11-15
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole velocita creature-base ogre barbaro armatura dadi-vita-razziali
 - **Origine:** riga del 2026-11-15 «lotto 7 settima parte» in `plans/CHANGELOG.md`
@@ -1737,7 +1737,7 @@ repo scritto con altre parole.
 ### MS-0152 · 2026-11-15 · «Chi sa cosa»: una riga per il Conte Valerius e tre giorni nuovi
 
 - **Data:** 2026-11-15
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0125
 - **Temi:** stato campagna conoscenze chi-sa-cosa doppione decisione-dm coerenza-storia
 - **Origine:** riga del 2026-11-15 «"Chi sa cosa", dopo la #419» in `plans/CHANGELOG.md`
@@ -1748,7 +1748,7 @@ repo scritto con altre parole.
 ### MS-0153 · 2026-11-15 · I draghi e il See the Unseen di Artemis: chi lo sa e chi lo scopre
 
 - **Data:** 2026-11-15
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** draghi tattiche artemis invisibilita tyrgarun ozyrrandion fauci conoscenza decisione-dm arc08 arc09
 - **Origine:** riga del 2026-11-15 «Tattiche dei draghi contro il See the Unseen di Artemis» in `plans/CHANGELOG.md`
@@ -1758,7 +1758,7 @@ repo scritto con altre parole.
 ### MS-0154 · 2026-11-15 · ADR-0134: il corredo di sette schede (Dovil, Drow Assassina, Duergar mago/ladro, Maewen, Varis, Tempestas, Therysol)
 
 - **Data:** 2026-11-15
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0134
 - **Temi:** schede equipaggiamento regole drow duergar png
 - **Origine:** riga del 2026-11-15 «ADR-0134, regola RC-001: il corredo di sette schede» in `plans/CHANGELOG.md`
@@ -1769,7 +1769,7 @@ repo scritto con altre parole.
 ### MS-0155 · 2026-11-16 · PIANO-RECUPERO chiuso: L2, L5 e L6, il registro dei rami di nuovo a zero
 
 - **Data:** 2026-11-16
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** piani recupero registro-rami contenuti-nei-rami decisioni-dm chiusura-piano drappo
 - **Origine:** riga del 2026-11-16 «L2, L5 e L6: il piano si chiude» in `plans/CHANGELOG.md`
@@ -1791,7 +1791,7 @@ repo scritto con altre parole.
 ### MS-0157 · 2026-11-17 · Ozyrrandion informato sui PG solo se Sethrax è fuggito
 
 - **Data:** 2026-11-17
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** tattiche draghi ozyrrandion zalkatar sethrax canone decisioni-dm coerenza
 - **Origine:** riga del 2026-11-17 «Ozyrrandion parte informato sui PG solo se Sethrax è fuggito dal Torneo col seme» in `plans/CHANGELOG.md`
@@ -1802,7 +1802,7 @@ repo scritto con altre parole.
 ### MS-0158 · 2026-11-17 · Sethrax ha un primo round solo; Azarr Kul e Ushgar già al meglio
 
 - **Data:** 2026-11-17
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** tattiche villain sethrax torneo azarr-kul ushgar ghaurush rethmar arc09 coerenza decisioni-dm simulazione
 - **Origine:** riga del 2026-11-17 «Tattiche di villain e PNG, ARC-09 lotto 4 (Sethrax, Azarr Kul, Ushgar)» in `plans/CHANGELOG.md`
@@ -1813,7 +1813,7 @@ repo scritto con altre parole.
 ### MS-0159 · 2026-11-17 · I villain senza duello di ARC-09 completano lo schema
 
 - **Data:** 2026-11-17
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** tattiche villain collezionista ghostlord valerius palio sonjak arc09 schema decisioni-dm
 - **Origine:** riga del 2026-11-17 «Tattiche di villain e PNG, ARC-09 lotto 5, villain senza duello» in `plans/CHANGELOG.md`
@@ -1823,7 +1823,7 @@ repo scritto con altre parole.
 ### MS-0160 · 2026-11-17 · Regole: il segugio infernale rifatto mezzo-immondo dall'SRD
 
 - **Data:** 2026-11-17
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** regole modelli mezzo-immondo hell-hound armatura-naturale creature-base decisioni-dm
 - **Origine:** riga del 2026-11-17 «lotto 5 undicesima parte» in `plans/CHANGELOG.md`
@@ -1845,7 +1845,7 @@ repo scritto con altre parole.
 ### MS-0162 · 2026-11-17 · Le marche ristampate nei booklet generati non sono debito nuovo
 
 - **Data:** 2026-11-17
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** inferred marcature ratchet inventory_inferred booklet generati copie baseline
 - **Origine:** riga del 2026-11-17 «`inventory_inferred` non conta due volte la marca ristampata in un file generato» in `plans/CHANGELOG.md`
@@ -1856,7 +1856,7 @@ repo scritto con altre parole.
 ### MS-0163 · 2026-11-17 · Il generatore scrive la scuola di Incantesimi focalizzati
 
 - **Data:** 2026-11-17
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** generatore talenti incantesimi lessico scuole spell-focus decisioni-dm
 - **Origine:** riga del 2026-11-17 «ADR-0126, il generatore: Incantesimi focalizzati con la scuola» in `plans/CHANGELOG.md`
@@ -1878,7 +1878,7 @@ repo scritto con altre parole.
 ### MS-0165 · 2026-11-18 · La nota di Incantesimi focalizzati solo quando cambia la scelta
 
 - **Data:** 2026-11-18
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** generatore talenti spell-focus impronte conto rumore
 - **Origine:** riga del 2026-11-18 «ADR-0126, il generatore: la nota «niente Incantesimi focalizzati» nel conto» in `plans/CHANGELOG.md`
@@ -1889,7 +1889,7 @@ repo scritto con altre parole.
 ### MS-0166 · 2026-11-18 · La memoria storica si ritrova per PR e si confronta con la memoria delle sessioni
 
 - **Data:** 2026-11-18
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0137 ADR-0127
 - **Temi:** memoria-storica memoria processo audit thread card
 - **Origine:** riga del 2026-11-18 «ADR-0137, la memoria storica a ogni blocco di lavoro» in `plans/CHANGELOG.md`
@@ -1900,7 +1900,7 @@ repo scritto con altre parole.
 ### MS-0167 · 2026-11-18 · Kit 4050: quattro errori trovati rileggendo, prima del primo giro
 
 - **Data:** 2026-11-18
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0136
 - **Temi:** prove-4050 kit distrobox box-appeso vulkan scheda-integrata powershell bom verifica
 - **Origine:** riga del 2026-11-18 «Kit delle prove 4050, rilettura a caccia di errori chiesta dal DM il 18/11» in `plans/CHANGELOG.md`
@@ -1922,7 +1922,7 @@ repo scritto con altre parole.
 ### MS-0169 · 2026-11-12 · Regola di merge: una PR entra senza un nuovo sì se verde, dichiarata e misurata
 
 - **Data:** 2026-11-12
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** merge regole processo coordinatore thread
 - **Origine:** regola del DM nella chat di progetto (2026-11-12), tenuta solo nella memoria delle sessioni; archiviata dal thread «Rendere obbligatoria la memoria storica»
@@ -1933,7 +1933,7 @@ repo scritto con altre parole.
 ### MS-0170 · 2026-11-13 · Le decisioni del DM vanno sempre su card, con scheda, file e riga
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** card decisioni processo coordinatore
 - **Origine:** richiesta del DM del 2026-11-13 nel thread delle regole e addendum alle istruzioni di progetto del 2026-11-15
@@ -1943,7 +1943,7 @@ repo scritto con altre parole.
 ### MS-0171 · 2026-11-13 · Il rilascio 1.1.0 aspetta le promozioni a stable
 
 - **Data:** 2026-11-13
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0099
 - **Temi:** rilascio v110 canali card
 - **Origine:** scelta del DM su una card del thread dell'audit settimanale (2026-11-13)
@@ -1975,7 +1975,7 @@ repo scritto con altre parole.
 ### MS-0174 · 2026-11-18 · Il cancello della coda della memoria storica
 
 - **Data:** 2026-11-18
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0138 ADR-0137
 - **Temi:** memoria-storica coda cancello thread routine
 - **Origine:** riga del 2026-11-18 «ADR-0138, il cancello della coda della memoria storica» in `plans/CHANGELOG.md`
@@ -1997,7 +1997,7 @@ repo scritto con altre parole.
 ### MS-0176 · 2026-10-29 · Immagini in posa: licenze ammesse e niente servizi a pagamento
 
 - **Data:** 2026-10-29
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0015 ADR-0019
 - **Temi:** immagini licenze comfyui kaggle
 - **Origine:** thread «Immagini dei personaggi in posa con l'AI», risposte del DM del 2026-10-29 e card dello stesso giorno
@@ -2009,7 +2009,7 @@ repo scritto con altre parole.
 ### MS-0177 · 2026-10-31 · Immagini in posa: la prova con Gemini si fa a mano, e non è mai stata misurata
 
 - **Data:** 2026-10-31
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** immagini gemini card
 - **Origine:** card del 2026-10-31 nel thread «Immagini dei personaggi in posa con l'AI»
@@ -2020,7 +2020,7 @@ repo scritto con altre parole.
 ### MS-0178 · 2026-11-08 · Immagini in posa: revisione con gli standard di fatto, ADR-0115 mai prenotato
 
 - **Data:** 2026-11-08
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0115 ADR-0114
 - **Temi:** immagini adr standard-di-fatto
 - **Origine:** thread «Immagini dei personaggi in posa con l'AI», revisione dell'8/11 dopo l'allineamento del coordinatore
@@ -2053,7 +2053,7 @@ repo scritto con altre parole.
 ### MS-0181 · 2026-11-18 · Il ricontrollo delle prove 4050: sette errori negli script di lettore, immagini e Gemini
 
 - **Data:** 2026-11-18
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** prove-4050 comfyui lowvram immagini lettore ollama gemini takeout ricontrollo errori
 - **Origine:** riga del 2026-11-18 «Prove sulla RTX 4050, ricontrollo chiesto dal DM il 18/11» in `plans/CHANGELOG.md`
@@ -2064,7 +2064,7 @@ repo scritto con altre parole.
 ### MS-0182 · 2026-11-18 · D2 del Drappo: quattro difetti dello script FLUX trovati al ricontrollo
 
 - **Data:** 2026-11-18
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** drappo immagini flux comfyui prove-4050 pillow c2pa pytorch regressione
 - **Origine:** riga del 2026-11-18 «D2, collaudo dell'arte del Drappo: quattro difetti dello script trovati al ricontrollo» in `plans/CHANGELOG.md`
@@ -2075,7 +2075,7 @@ repo scritto con altre parole.
 ### MS-0183 · 2026-11-18 · La scuola di tutti gli incantesimi delle liste PF1e
 
 - **Data:** 2026-11-18
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** generatore talenti incantesimi scuole spell-focus pf1e prd ricontrollo
 - **Origine:** riga del 2026-11-18 «ADR-0126, ricontrollo di Incantesimi focalizzati» in `plans/CHANGELOG.md`
@@ -2086,7 +2086,7 @@ repo scritto con altre parole.
 ### MS-0184 · 2026-11-18 · RICERCA-TOOL-LGM-2026 §3.1: la carta del cielo passa dal 30 Mirtul al 30 Flamerule
 
 - **Data:** 2026-11-18
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0005 ADR-0019
 - **Temi:** arc09 handout immagini calendario canone
 - **Origine:** riga del 2026-11-18 «§3.1, ricontrollo della carta del cielo chiesto dal DM» in `plans/CHANGELOG.md`
@@ -2097,7 +2097,7 @@ repo scritto con altre parole.
 ### MS-0185 · 2026-11-18 · Le impronte rosse dal 14/11 erano dati, provato incrociando codice e dati
 
 - **Data:** 2026-11-18
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0111
 - **Temi:** impronte banco-invarianza regressione prova-incrociata audit indice piani
 - **Origine:** riga del 2026-11-18 «Correzioni dall'audit del 18/11» in `plans/CHANGELOG.md`
@@ -2108,7 +2108,7 @@ repo scritto con altre parole.
 ### MS-0186 · 2026-11-18 · Kit 4050: sandbox Flatpak al primo giro, installazione interrotta al secondo
 
 - **Data:** 2026-11-18
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0136
 - **Temi:** prove-4050 kit flatpak sandbox ospite verifica primo-giro asus pulisci box-a-meta installazione-interrotta stty terminale-grezzo scaletta
 - **Origine:** riga del 2026-11-18 «Kit delle prove 4050, primo giro del DM sull'ASUS» in `plans/CHANGELOG.md`
@@ -2119,7 +2119,7 @@ repo scritto con altre parole.
 ### MS-0187 · 2026-11-19 · Il talento di una variante non è della scheda: falso positivo di conformita_statblocchi
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** conformita statblocchi talenti variante hobgoblin falso-positivo impronte audit
 - **Origine:** riga del 2026-11-19 «`conformita_statblocchi`: il talento di una riga di variante» in `plans/CHANGELOG.md`
@@ -2129,7 +2129,7 @@ repo scritto con altre parole.
 ### MS-0188 · 2026-11-18 · ADR-0134: ricontrollo del corredo di dieci schede, quattro note corrette
 
 - **Data:** 2026-11-18
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0134
 - **Temi:** schede equipaggiamento regole drow ricontrollo
 - **Origine:** riga del 2026-11-18 «ADR-0134, regola RC-001: ricontrollo del corredo di dieci schede» in `plans/CHANGELOG.md`
@@ -2140,7 +2140,7 @@ repo scritto con altre parole.
 ### MS-0189 · 2026-11-18 · Sei frasi del lotto 5 delle tattiche corrette contro la loro fonte
 
 - **Data:** 2026-11-18
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** tattiche villain palio ghostlord collezionista arc09 errori rilettura inferred
 - **Origine:** riga del 2026-11-18 «Tattiche di villain e PNG, ARC-09 lotto 5: sei frasi corrette dopo la rilettura chiesta dal DM» in `plans/CHANGELOG.md`
@@ -2151,7 +2151,7 @@ repo scritto con altre parole.
 ### MS-0190 · 2026-11-18 · Calendario di ARC-09: quickstart e armate allineati a state.yaml
 
 - **Data:** 2026-11-18
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0125
 - **Temi:** calendario arc-09 torneo dauth finestre quickstart armate decisione-dm coerenza-storia
 - **Origine:** riga del 2026-11-18 «Calendario di ARC-09» in `plans/CHANGELOG.md`
@@ -2162,7 +2162,7 @@ repo scritto con altre parole.
 ### MS-0191 · 2026-11-18 · I «Mirtul» rimasti in ARC-09 diventano «Flamerule», con un cancello
 
 - **Data:** 2026-11-18
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0125
 - **Temi:** calendario arc-09 mirtul flamerule torre-invisibile lettera-brenna tempestas decisione-dm cancello
 - **Origine:** riga del 2026-11-18 «Calendario di ARC-09: i «Mirtul» rimasti» in `plans/CHANGELOG.md`
@@ -2173,7 +2173,7 @@ repo scritto con altre parole.
 ### MS-0192 · 2026-11-19 · Il lettore da 7B sulla RTX 4050 non entra nel verificatore della storia
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0125
 - **Temi:** coerenza-storia rag lettore qwen2.5 7b rtx-4050 ollama prova-4050 esito-negativo
 - **Origine:** riga del 2026-11-19 «Lettore del RAG per «chi sa cosa»» in `plans/CHANGELOG.md`
@@ -2184,7 +2184,7 @@ repo scritto con altre parole.
 ### MS-0193 · 2026-11-19 · La memoria corta passa il limite: il tetto di 12 KB diventa un controllo
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0139
 - **Temi:** memoria memoria-storica cancello tetto processo
 - **Origine:** riga del 2026-11-19 «ADR-0139: la memoria corta ha un tetto» in `plans/CHANGELOG.md`
@@ -2194,7 +2194,7 @@ repo scritto con altre parole.
 ### MS-0194 · 2026-11-19 · La configurazione Claude del repo non arrivava nei thread del progetto
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0140
 - **Temi:** claude-code best-practice thread hook claude-md agents-md mcp rumblingstone-tools contesto token skilloverrides
 - **Origine:** riga del 2026-11-19 «ADR-0140 (proposta), la configurazione Claude del repo arriva anche nei thread» in `plans/CHANGELOG.md`
@@ -2205,7 +2205,7 @@ repo scritto con altre parole.
 ### MS-0195 · 2026-11-19 · Spenti per RumblingStone i plugin dell'account mai usati nel repo
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0140
 - **Temi:** claude-code plugin enabledplugins contesto token mcp best-practice decisione-dm thread
 - **Origine:** riga del 2026-11-19 «ADR-0140 accettata: i plugin dell'account che il repo non ha mai usato» in `plans/CHANGELOG.md`
@@ -2216,7 +2216,7 @@ repo scritto con altre parole.
 ### MS-0196 · 2026-11-19 · Riaccesi i plugin di metodo di sviluppo
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0140
 - **Temi:** claude-code plugin enabledplugins contesto token sviluppo decisione-dm thread
 - **Origine:** riga del 2026-11-19 «ADR-0140, correzione: riaccesi per RumblingStone i nove plugin di metodo di sviluppo» in `plans/CHANGELOG.md`
@@ -2227,7 +2227,7 @@ repo scritto con altre parole.
 ### MS-0197 · 2026-11-19 · Le regole di AGENTS.md arrivano con i file
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0141
 - **Temi:** claude-code contesto token rules agents-md progressive-disclosure decisione-dm thread
 - **Origine:** riga del 2026-11-19 «ADR-0141: le regole di AGENTS.md arrivano a Claude con i file a cui servono» in `plans/CHANGELOG.md`
@@ -2238,7 +2238,7 @@ repo scritto con altre parole.
 ### MS-0198 · 2026-11-19 · `.claudeignore` diventa regole deny, e la guida al ritorno indietro
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0142
 - **Temi:** claude-code claudeignore permissions deny contesto grep guida regressione decisione-dm thread
 - **Origine:** riga del 2026-11-19 «ADR-0142: `.claudeignore` diventa regole `Read` di `permissions.deny`» in `plans/CHANGELOG.md`
@@ -2249,7 +2249,7 @@ repo scritto con altre parole.
 ### MS-0199 · 2026-11-19 · I gate veloci della CI prima del push (pre-commit, hook locale)
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0143
 - **Temi:** ci pre-commit hook gate-locale pre-push tdd thread misura decisione-dm
 - **Origine:** riga del 2026-11-19 «ADR-0143: i gate bloccanti e veloci della CI girano prima del push» in `plans/CHANGELOG.md`
@@ -2260,7 +2260,7 @@ repo scritto con altre parole.
 ### MS-0200 · 2026-11-19 · Due test che fallivano solo nei container dei thread
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** test ermetici tdd thread build shallow conformita fase1
 - **Origine:** riga del 2026-11-19 «Due test che dipendevano dalla macchina, corretti con il test scritto prima» in `plans/CHANGELOG.md`
@@ -2271,7 +2271,7 @@ repo scritto con altre parole.
 ### MS-0201 · 2026-11-19 · Il kit delle prove sulla 4050 salva in un log tutto quello che scrive
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0136
 - **Temi:** prove-4050 kit log tee transcript windows tdd misura
 - **Origine:** riga del 2026-11-19 «Log di ogni giro del kit» in `plans/CHANGELOG.md`
@@ -2281,7 +2281,7 @@ repo scritto con altre parole.
 ### MS-0202 · 2026-11-19 · ADR-0134: danno entro 9 m della Drow Assassina e tabella di Varis
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0134
 - **Temi:** corredo rc-001 schede bestiario decisione-dm card tiro-ravvicinato
 - **Origine:** riga del 2026-11-19 «ADR-0134, regola RC-001: due scelte del DM sulle card del 19/11» in `plans/CHANGELOG.md`
@@ -2292,7 +2292,7 @@ repo scritto con altre parole.
 ### MS-0203 · 2026-11-19 · I sicari di Sonjak al Palio possono rapire il fantino
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** tattiche villain palio sonjak sicari drow fantino arc09 decisione-dm card coerenza
 - **Origine:** riga del 2026-11-19 «Tattiche di villain e PNG, Palio: i sicari di Sonjak possono puntare il cavallo o il fantino» in `plans/CHANGELOG.md`
@@ -2303,7 +2303,7 @@ repo scritto con altre parole.
 ### MS-0204 · 2026-11-19 · Rilettura completa dei lotti 1-4 delle tattiche: due contraddizioni con la scheda
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #501
 - **ADR:** —
 - **Temi:** tattiche villain xalthor xilthra zalkatar kragar arc09 rilettura decisione-dm card slot suggestione
 - **Origine:** riga del 2026-11-19 «Tattiche di villain e PNG, rilettura completa dei lotti 1-4 contro le schede» in `plans/CHANGELOG.md`
@@ -2336,7 +2336,7 @@ repo scritto con altre parole.
 ### MS-0207 · 2026-11-19 · Revisione delle scelte storiche con dnd.arkalseif.info: venti card del DM
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0126
 - **Temi:** revisione storica arkalseif schede domini chierici talenti spymaster sublime-chord stormsinger card verifica-scheda
 - **Origine:** riga del 2026-11-19 «revisione storica delle schede su dnd.arkalseif.info» in `plans/CHANGELOG.md`
@@ -2358,7 +2358,7 @@ repo scritto con altre parole.
 ### MS-0209 · 2026-11-19 · Typst converge sul volume d'arco, e il controllo di convergenza vede di nuovo
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #501
 - **ADR:** ADR-0144
 - **Temi:** stampa typst convergenza rimandi pagina volume arco abbazia misura_stampa avvisi tema scheda colonna
 - **Origine:** riga del 2026-11-19 «Convergenza di typst» in `plans/CHANGELOG.md`

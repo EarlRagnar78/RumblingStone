@@ -1,9 +1,9 @@
-# ADR-0145 — L'ordine dei capitoli del booklet della serata si misura
+# ADR-0145 — L'ordine dei capitoli del booklet della serata e del volume d'arco si misura
 
-**Stato**: proposta (2026-11-19), in attesa della card di Jfs sull'ordine e sui doppioni
+**Stato**: proposta (2026-11-19), in attesa delle card di Jfs sui doppioni e su Durik
 **Data**: 2026-11-19
-**Decisione-fonte**: il DM (Jfs), 2026-11-19: «mi controlli se l'ordine logico del booklet con cui compaiono le varie sezioni ha senso e segue gli standard editoriali validi […] cercarle e vedere quanto sono applicate misurando e testando il risultato», e «creare se non ci sono strumenti per correggere questi difetti editoriali […] sempre con test tdd».
-**Rapporti**: segue [ADR-0013](ADR-0013-standard-generazione-booklet-sessioni.md) (struttura del booklet di sessione), [ADR-0122](ADR-0122-il-volume-segue-lo-schema-degli-adventure-path.md) e [ADR-0144](ADR-0144-due-stampe-per-arco-e-rimandi-con-la-pagina.md); usa `plans/RICERCA-USABILITA-AL-TAVOLO-2026-11.md`. Misura: `scripts/misura_ordine.py`, regole per la serata di ARC-07 in `plans/esperimenti/ordine-serata-2026-11-19/ruoli-serata.json`.
+**Decisione-fonte**: il DM (Jfs), 2026-11-19: «mi controlli se l'ordine logico del booklet con cui compaiono le varie sezioni ha senso e segue gli standard editoriali validi […] cercarle e vedere quanto sono applicate misurando e testando il risultato», e «creare se non ci sono strumenti per correggere questi difetti editoriali […] sempre con test tdd», e alle 13:10 UTC: «aggiungi lo stesso lavoro anche per l'avventura completa».
+**Rapporti**: segue [ADR-0013](ADR-0013-standard-generazione-booklet-sessioni.md) (struttura del booklet di sessione), [ADR-0122](ADR-0122-il-volume-segue-lo-schema-degli-adventure-path.md) e [ADR-0144](ADR-0144-due-stampe-per-arco-e-rimandi-con-la-pagina.md); usa `plans/RICERCA-USABILITA-AL-TAVOLO-2026-11.md`. Misura: `scripts/misura_ordine.py`, regole per la serata di ARC-07 in `plans/esperimenti/ordine-serata-2026-11-19/ruoli-serata.json` e per il volume d'arco in `plans/esperimenti/ordine-volume-2026-11-19/ruoli-volume.json`.
 
 ## Contesto
 
@@ -106,4 +106,52 @@ Quello che si paga:
 - i segnalibri del PDF sono piatti: titolo del capitolo e sue sezioni allo
   stesso livello. È un difetto di navigazione che questa misura aggira e
   non corregge;
-- l'ordine del volume d'arco non è misurato: Jfs lo vuole discutere a parte.
+
+## Il volume d'arco
+
+Un AP non è una serata: è un volume con più parti, ognuna una serata o più.
+Le regole della serata si contano parte per parte (una regola con
+`"parte": true` apre la parte), e a livello del volume se ne aggiungono tre:
+
+| Regola | Che cosa chiede | Fonte |
+|---|---|---|
+| V1 | il quadro del volume (l'arco in breve, come si usa) prima della Parte I | Paizo, «Adventure Background» e «Adventure Summary» |
+| V2 | l'indice in una o due pagine; i segnalibri del PDF restano completi | l'indice di un AP Paizo è una pagina |
+| V3 | nessuna parte senza gioco fra due parti giocate | Paizo, «Concluding the Adventure» dopo l'ultima parte |
+
+Che cosa una parte deve avere in testa (`§0` Quickstart, `§0-bis`
+Quick-Reference) i master DEF lo hanno già: lì le parti erano a posto.
+
+Volume v1.2 (294 pp), con le regole lette sui suoi titoli: 12 difetti.
+Non c'era il quadro dell'arco (V1), l'indice era di otto pagine (V2), il
+ponte verso ARC-08 «La Forgia ricorda le ferite» stava fra il duello e il
+ritorno (V3), e quattro riassunti venivano dopo il loro dettaglio: «7. in
+numeri» del barile, e l'Appendice C delle versioni veloci con C.2 e C.3,
+fino a cinquanta pagine dopo le scene. Anche C.1 stava lì, ma riassume
+scene di un'altra parte, e la misura parte per parte non la conta: è un
+limite della regola.
+
+Volume v1.3 (288 pp): 0 difetti. Una pagina nuova, «Il quadro dell'arco»
+(`volume-arco/00-INTRO-VOLUME.md`): l'arco in cinque righe e la guida ai
+capitoli generata dal manifest. Chiave nuova `indice_profondita: 1`:
+l'indice in una pagina. Le versioni veloci in testa alla loro parte di
+`DEF-4`, il «7. in numeri» del barile dopo il §1, il ponte dopo il ritorno
+a Hammerfist. Rimandi: 242 con pagina su 255, tutti giusti; prima uno puntava a un
+§7-bis di `DEF-3` che non esiste, ed è corretto nel sorgente (`DEF-2`,
+riga 1118: la ghianda è nel §11 C); l'altro è l'apertura in grassetto di
+`DEF-4`.
+
+Lo spostamento ha fatto uscire un bug di `estrai_sezioni`: una sezione
+chiesta per nome usciva anche se nel master è avvolta in `storico` (il §12
+«Domande al DM» del barile, 21 righe fuori margine). Ora la sezione resta
+dentro il suo blocco, con un doctest; gli altri booklet con `sezioni` non
+cambiano.
+
+Quello che si paga nel volume:
+
+- l'indice stampato dice solo i capitoli: per arrivare a Terros si apre il
+  capitolo e il suo «Indice del modulo», o i segnalibri del PDF;
+- l'Appendice C non esiste più come blocco: le tre versioni veloci stanno
+  ognuna in testa alla sua parte;
+- il quadro dell'arco è testo nuovo, scritto dai riquadri «La serata in tre
+  frasi» dei master: va letto da Jfs.

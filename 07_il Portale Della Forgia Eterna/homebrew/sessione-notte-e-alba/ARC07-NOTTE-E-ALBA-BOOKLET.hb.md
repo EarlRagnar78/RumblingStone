@@ -2397,9 +2397,9 @@ la scena riesce, altrimenti riesce lo stesso ma con una **complicazione**. Ogni
 scena registra un **esito** (► Esito), e gli esiti alimentano il carry-over B4
 verso Fauci di Palude (§7).
 
-> 🎚️ **Se hai poco tempo**, ogni scena lunga ha la sua **versione veloce in
-> Appendice C**: è la stessa scena a montaggio, in 10-15 minuti. Si possono
-> mescolare, scena per scena.
+> 🎚️ **Se hai poco tempo**, ogni scena lunga ha la sua **versione veloce**,
+> C.1 per l'Atto I, C.2 per la tenda, C.3 per il duello: è la stessa scena a
+> montaggio, in 10-15 minuti. Si possono mescolare, scena per scena.
 
 **Chi c'è, nell'ordine in cui entra.** Durin Rocciadura (Scena 2) · Re Thorek I
 e Thorgrim Barbadiferro (Scena 4) · Mastro Costruttore Zeth (Scena 5) · Balvar

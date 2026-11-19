@@ -218,7 +218,14 @@ def difetti_volume(m: dict) -> int:
 
 
 def main(argv):
-    pdf, ruoli = Path(argv[0]), Path(argv[1])
+    import argparse
+    ap = argparse.ArgumentParser(description=__doc__.split("\n")[0],
+                                 epilog="ADR-0145. Regole e fonti nella docstring del modulo.")
+    ap.add_argument("pdf", type=Path, help="il PDF composto del booklet")
+    ap.add_argument("ruoli", type=Path, help="il file JSON dei ruoli delle sezioni")
+    ap.add_argument("--json", action="store_true", help="misure e sezioni in JSON")
+    a = ap.parse_args(argv)
+    pdf, ruoli = a.pdf, a.ruoli
     sez = etichetta(sezioni(pdf), json.loads(ruoli.read_text(encoding="utf-8"))["regole"])
     if any(x.get("parte") for x in sez):
         import pymupdf

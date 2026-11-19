@@ -22,17 +22,20 @@
     {
       "title": "I · Il Piano della Terra e Terros",
       "file": "../../ARC07-DEF-1-PIANO-TERRA-TERROS.md",
-      "tag": "dm"
+      "tag": "dm",
+      "quando": "prima di scendere nel Piano della Terra: la serata di Terros"
     },
     {
       "title": "II · Il ritorno e gli affreschi",
       "file": "../../ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
-      "tag": "dm"
+      "tag": "dm",
+      "quando": "al ritorno nella Sala, senza combattere: gli affreschi e il sonno"
     },
     {
       "title": "III · La resurrezione di Hella",
       "file": "../../ARC07-DEF-3-RESURREZIONE-HELLA.md",
-      "tag": "dm"
+      "tag": "dm",
+      "quando": "la serata del rito: Hella torna, Durik si lega a lei"
     },
     {
       "title": "IV · Il viaggio a mille anni fa: il tramonto e la notte",
@@ -46,17 +49,43 @@
         "§0-ter",
         "§1 —",
         "§2 —",
-        "§3 —",
+        "testa:§3",
+        "C.1",
+        "SCENA 1 —",
+        "SCENA 2",
+        "SCENA 3",
+        "SCENA 4",
         "testa:§4",
         "⏳",
+        "C.2",
         "SCENA 5",
         "SCENA 6"
-      ]
+      ],
+      "quando": "il tramonto e la notte del −1000: il consiglio, le scelte, il campo"
     },
     {
       "title": "V · Il barile sulla tenda di Zog'tar",
       "file": "../../ARC07-BARILE-SULLA-TENDA.md",
-      "tag": "dm"
+      "tag": "dm",
+      "sezioni": [
+        "testa:ARC-07 · Il barile",
+        "La scheda da tavolo",
+        "1.",
+        "7.",
+        "2.",
+        "2-bis.",
+        "3.",
+        "4.",
+        "5.",
+        "6.",
+        "8.",
+        "9.",
+        "10.",
+        "11.",
+        "13.",
+        "Fonti"
+      ],
+      "quando": "la notte, quando il gruppo vola sul campo con la botte"
     },
     {
       "title": "VI · La tenda, Vatore, le mura e il duello",
@@ -66,46 +95,56 @@
         "SCENA 7",
         "SCENA 8",
         "SCENA 9",
-        "§5 —",
+        "testa:§5",
+        "SCENA 10",
+        "C.3",
+        "SCENA 11",
         "§6 —",
         "§7 —",
         "§8 —",
         "§9 —",
         "APPENDICE A",
         "APPENDICE B",
-        "APPENDICE C",
         "APPENDICE D"
-      ]
+      ],
+      "quando": "dopo il barile e all'alba: la tenda, Vatore, le mura, il duello"
     },
     {
-      "title": "VII · La Forgia ricorda le ferite",
-      "file": "../../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md",
-      "tag": "dm"
-    },
-    {
-      "title": "VIII · Il ritorno a Hammerfist",
+      "title": "VII · Il ritorno a Hammerfist",
       "file": "../../ARC07-DEF-5-RITORNO-HAMMERFIST.md",
-      "tag": "dm"
+      "tag": "dm",
+      "quando": "la serata dopo il duello: il Rubino, il Cuore della Montagna"
+    },
+    {
+      "title": "VIII · La Forgia ricorda le ferite",
+      "file": "../../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md",
+      "tag": "dm",
+      "quando": "dopo il duello, per preparare Fauci di Palude (ARC-08)"
     },
     {
       "title": "IX · Conseguenze ed echi dell'arco",
       "file": "../../ARC07-CONSEGUENZE-ECHI.md",
-      "tag": "dm"
+      "tag": "dm",
+      "quando": "a fine arco, prima di aprire gli archi 8 e 9"
     },
     {
       "title": "X · Durik, il compagno di Hella",
       "file": "../sessione-resurrezione-mille-anni/08-SCHEDA-DURIK.md",
-      "tag": "dm"
+      "tag": "dm",
+      "quando": "ogni serata dopo la resurrezione: è sempre al tavolo"
     },
     {
       "title": "XI · La cassetta del DM: cast, pronuncia, read-aloud, suoni",
       "file": "../../ARC07-CASSETTA-DEL-DM.md",
-      "tag": "dm"
+      "tag": "dm",
+      "quando": "prima di ogni serata: chi c'è, come si pronuncia, che suoni"
     }
   ],
   "fregio": "../../../docs/assets/fregi/fregio-arco-07-forgia.svg",
   "schede": "entrambe",
   "chi_si_incontra": true,
   "indice_analitico": true,
-  "pagine_nei_rimandi": true
+  "pagine_nei_rimandi": true,
+  "intro_md": "00-INTRO-VOLUME.md",
+  "indice_profondita": 1
 }

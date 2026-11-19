@@ -588,6 +588,22 @@ def _normale(t: str) -> str:
     return re.sub(r"\s+", " ", unicodedata.normalize("NFKC", t)).strip().casefold()
 
 
+def _blocchi_aperti(md: str) -> "list[str]":
+    """I blocchi `storico`/`apparato`/`consegna` aperti alla fine di `md`.
+
+    >>> _blocchi_aperti("<!-- storico -->\\nx\\n<!-- /storico -->\\n<!-- apparato -->\\n")
+    ['apparato']
+    """
+    aperti: "list[str]" = []
+    for m in re.finditer(r"^[ \t]*<!--\s*(/?)(" + "|".join(_MARCHE_DI_BLOCCO) + r")\s*-->[ \t]*$", md, re.M):
+        if m.group(1):
+            if m.group(2) in aperti:
+                aperti.remove(m.group(2))
+        else:
+            aperti.append(m.group(2))
+    return aperti
+
+
 def _bilancia_marche(md: str) -> str:
     """Toglie le marche `<!-- x -->` / `<!-- /x -->` rimaste spaiate da un taglio.
 
@@ -677,6 +693,17 @@ def estrai_sezioni(md: str, voci: "list[str]") -> str:
     Traceback (most recent call last):
     ...
     ValueError: sezione non trovata: '§9'
+
+    Una sezione dentro un blocco `storico` o `apparato` resta dentro il suo
+    blocco (2026-11-19: il §12 «Domande al DM» del barile, avvolto in
+    `storico`, usciva nel volume d'arco quando lo si chiedeva per nome):
+
+    >>> md2 = "## 11. A\\nuno\\n<!-- storico -->\\n## 12. B\\ndue\\n<!-- /storico -->\\n## 13. C\\n"
+    >>> print(estrai_sezioni(md2, ["12."]), end="")
+    <!-- storico -->
+    ## 12. B
+    due
+    <!-- /storico -->
     """
     righe = md.splitlines(keepends=True)
     titoli: "list[tuple[int, int, str]]" = []   # (riga, livello, testo)
@@ -702,6 +729,9 @@ def estrai_sezioni(md: str, voci: "list[str]") -> str:
         fine = next((t[0] for t in titoli[k + 1:]
                      if solo_testa or t[1] <= livello), len(righe))
         pezzo = _con_la_pagina(righe, inizio, fine)
+        aperti = _blocchi_aperti("".join(righe[:inizio]))
+        if aperti:
+            pezzo = "".join(f"<!-- {n} -->\n" for n in aperti) + pezzo
         pezzi.append(_bilancia_marche(pezzo))
     return "\n".join(pezzi)
 

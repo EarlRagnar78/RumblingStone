@@ -167,8 +167,8 @@
         "pr/461",
         "origin/claude/project-thread-4eo6nn"
       ],
-      "stato": "in-volo",
-      "dove": "PR #461 aperta in bozza il 2026-11-16: RIPRESA-PR D2 (arte del Drappo), script FLUX.2 klein 4B per il portatile 4050 in scripts/prove-4050/ (drappo-flux.sh, drappo_flux.py). La D2 resta aperta fino alla scelta del DM tra A e B"
+      "stato": "portato",
+      "dove": "PR #461 unita il 2026-11-16 (8cf54678): RIPRESA-PR D2 (arte del Drappo), script FLUX.2 klein 4B per il portatile 4050 in scripts/prove-4050/ (drappo-flux.sh, drappo_flux.py). La D2 resta aperta in PIANO-RIPRESA-PR-ABBANDONATE fino alla scelta del DM tra A e B"
     },
     {
       "ref": [
@@ -182,8 +182,8 @@
       "ref": [
         "origin/claude/project-thread-dk6u1i"
       ],
-      "stato": "in-volo",
-      "dove": "PR del kit unico delle prove 4050, aperta in bozza il 2026-11-17 (ADR-0136): scripts/prove-4050/ (kit.sh, installa.sh, installa-windows.ps1, ospite.sh, prove.json, verifica.py, trascrizione-gpu.sh). Sopra la #466; entra dopo #465, #464, #466"
+      "stato": "portato",
+      "dove": "PR #469 unita il 2026-11-18 (merge 2959bb6c, ADR-0136, MS-0164): scripts/prove-4050/ (kit.sh, installa.sh, installa-windows.ps1, ospite.sh, prove.json, verifica.py, trascrizione-gpu.sh). Il ramo ora porta solo le correzioni del 18/11 (MS-0167)"
     }
   ],
   "file": [

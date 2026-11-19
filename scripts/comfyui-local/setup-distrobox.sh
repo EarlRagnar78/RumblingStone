@@ -64,7 +64,8 @@ distrobox enter "$BOX" -- bash -lc "
   [ -d venv ] || python3 -m venv venv
   . venv/bin/activate
   pip install --upgrade pip
-  pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+  # cu126 e non cu124: cu124 si ferma a PyTorch 2.6, ComfyUI chiede almeno la 2.7 (2.8 per la VRAM dinamica)
+  pip install --upgrade torch torchvision --index-url https://download.pytorch.org/whl/cu126
   pip install -r requirements.txt
   python -c 'import torch; print(\"    GPU vista da torch:\", torch.cuda.is_available(), torch.cuda.get_device_name(0) if torch.cuda.is_available() else \"\")'
 "

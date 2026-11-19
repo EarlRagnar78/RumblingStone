@@ -1190,7 +1190,7 @@ _SCUOLE_IT = {"abjuration": "abiurazione", "conjuration": "evocazione", "divinat
 
 @functools.cache
 def _scuole_per_nome() -> "dict[str, str]":
-    """Nome normalizzato (inglese o italiano) → scuola, dalla tabella [scuole] dell'SRD 3.5."""
+    """Nome normalizzato (inglese o italiano) → scuola, dalle tabelle [scuole] dell'SRD 3.5 e del PRD."""
     import lessico_regole as LR
     scuole = S.dati("dnd35", "creature.liste_incantesimi").get("scuole", {})
     out = {LR.norma(k): v for k, v in scuole.items()}
@@ -1201,6 +1201,15 @@ def _scuole_per_nome() -> "dict[str, str]":
         if sc:
             for it in [v["it"], *filter(None, v.get("varianti", "").split("|"))]:
                 out.setdefault(LR.norma(it), sc)
+    # le liste di classe PF1e (PRD, 1536 incantesimi): col nome del PRD e col nome
+    # italiano che il generatore dei PNG a classi scrive sul blocco. Dove il nome è
+    # anche dell'SRD 3.5 la scuola è la stessa (598 nomi, 0 differenze, 2026-11-18)
+    pf = S.dati("pf1e", "creature.liste_incantesimi")
+    for en, sc in pf.get("scuole", {}).items():
+        if sc in _SCUOLE_IT:   # «universal» non si focalizza
+            out.setdefault(LR.norma(en), sc)
+            if en in pf.get("nomi_it", {}):
+                out.setdefault(LR.norma(pf["nomi_it"][en]), sc)
     return out
 
 
@@ -1247,7 +1256,7 @@ def scuola_prevalente(incantesimi: "list[tuple[int, str]]") -> "tuple[str | None
         else:
             ignoti.append(nome)
     if not conti:
-        return None, f"nessuno dei {len(incantesimi)} incantesimi ha una scuola nella tabella dell'SRD"
+        return None, f"nessuno dei {len(incantesimi)} incantesimi ha una scuola nelle tabelle dell'SRD e del PRD"
     sc = max(sorted(conti), key=lambda x: (len(conti[x]), max(conti[x])))
     conto = ", ".join(f"{_SCUOLE_IT[x]} {len(conti[x])}" for x in sorted(conti, key=lambda x: -len(conti[x])))
     if ignoti:

@@ -4178,6 +4178,61 @@
       "deterministic": true
     },
     {
+      "name": "memoria_coda",
+      "description": "«Sto per risolvere un thread, o è lunedì: le scelte prese su card e il lavoro senza PR hanno la loro voce di memoria storica, scritta bene?»\n\nADR-0138: il cancello della coda della memoria storica. Ogni thread scrive in un file suo (cartella condivisa, fuori dal repo) la voce del lavoro che non finisce in una PR: scelte su card, dati verificati, thread risolti (ADR-0137). --check controlla la forma di ogni voce in coda; --thread esce 1 se un thread non ha una voce, né in coda né già nel repo; --threads fa lo stesso per i thread risolti di un elenco JSON; --piega porta le voci nuove in plans/MEMORIA-STORICA.md numerandole, solo se il file risultante passa memoria_storica.py --check. La CI del repo non vede la coda: lo lancia chi risolve un thread e la routine del lunedì.",
+      "use_case": "«Sto per risolvere un thread, o è lunedì: le scelte prese su card e il lavoro senza PR hanno la loro voce di memoria storica, scritta bene?»",
+      "invocation": "python3 scripts/memoria_coda.py DIR [--check] [--thread TITOLO ...] [--threads JSON] [--dal DATA] [--piega] [--nome TITOLO] [--json]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "cartella": {
+            "type": "string",
+            "description": "La cartella della coda, un file .md per thread."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "La forma di tutte le voci in coda: exit 1 se una è scritta male."
+          },
+          "thread": {
+            "type": "string",
+            "description": "Titolo di un thread che deve avere una voce (in coda o già piegata)."
+          },
+          "threads": {
+            "type": "string",
+            "description": "Elenco JSON dei thread (forma di list_threads): exit 1 se un thread risolto da --dal non ha voce."
+          },
+          "dal": {
+            "type": "string",
+            "description": "Con --threads: solo i thread risolti da questo giorno (AAAA-MM-GG)."
+          },
+          "piega": {
+            "type": "boolean",
+            "description": "Porta in plans/MEMORIA-STORICA.md le voci della coda non ancora presenti, numerate."
+          },
+          "nome": {
+            "type": "string",
+            "description": "Stampa il nome del file di coda per un titolo ed esce."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Uscita machine-readable: file, voci, errori, thread senza voce, voci piegate."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<stdout>",
+        "plans/MEMORIA-STORICA.md"
+      ],
+      "exit_codes": {
+        "0": "coda in forma e nessun thread senza voce",
+        "1": "una voce scritta male, un thread senza voce, o piega che romperebbe il file storico",
+        "2": "errore d'uso: cartella, file o elenco mancante, data non valida"
+      },
+      "deterministic": true
+    },
+    {
       "name": "memoria_storica",
       "description": "«Sto rivedendo una soluzione già adottata o cercando la causa di una regressione: che cosa si sapeva allora di questa PR, di questo ADR, di questo tema?»\n\nADR-0127: la storia del lavoro che esce dalla memoria corta delle sessioni. Legge plans/MEMORIA-STORICA.md (una voce MS-NNNN per riga tolta dalla memoria del progetto, con data, PR, ADR, temi, testo intero, dove il fatto si ritrova nel repo e cosa c'è solo lì) e restituisce le voci che passano tutti i filtri: PR, ADR, tema, intervallo di date, id, parole (senza badare a maiuscole e accenti). --json è l'uscita per un agente. --check è il cancello della CI: numeri consecutivi, date valide, campi obbligatori, collegamento da plans/CHANGELOG.md. --pr trova anche le voci col campo PR «—», dal merge che le ha portate su main (git). --confronta-memoria DIR dice quali righe della memoria delle sessioni hanno numeri o percorsi che il repo non ha (ADR-0137). Sola lettura.",
       "use_case": "«Sto rivedendo una soluzione già adottata o cercando la causa di una regressione: che cosa si sapeva allora di questa PR, di questo ADR, di questo tema?»",

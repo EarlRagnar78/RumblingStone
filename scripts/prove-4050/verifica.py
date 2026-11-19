@@ -31,6 +31,9 @@ VRAM_MIB = 6144  # la RTX 4050 del portatile
 # (MISURE.md della #424). Sulla GPU il testo dovrebbe essere lo stesso: un punto di tolleranza.
 WER_SOGLIA = 0.023
 WER_TOLLERANZA = 0.01
+# Il modello q8_0 pesa ~870 MB: se la memoria della NVIDIA sale meno di così mentre whisper gira,
+# ha lavorato un'altra scheda (quella integrata, con Vulkan) o la CPU.
+VRAM_WHISPER_MIB = 400
 
 
 def leggi_esito(cartella: Path) -> dict:
@@ -129,6 +132,12 @@ def c_trascrizione(c: Path, esito: dict) -> tuple[str, list[str], dict]:
     numeri["sulla_gpu"] = sulla_gpu
     if backend != "cpu" and not sulla_gpu:
         note.append("whisper-cli non mostra la scheda NVIDIA: è andato sulla CPU")
+    prima, picco = esito.get("vram_prima_mib", ""), esito.get("vram_picco_mib", "")
+    if prima.isdigit() and picco.isdigit():
+        numeri["vram_salita_mib"] = int(picco) - int(prima)
+        if backend != "cpu" and numeri["vram_salita_mib"] < VRAM_WHISPER_MIB:
+            note.append(f"la memoria della NVIDIA è salita di {numeri['vram_salita_mib']} MiB mentre whisper "
+                        "girava: ha lavorato un'altra scheda (quella integrata?) o la CPU")
     return ("ko" if note else "ok"), note, numeri
 
 
@@ -215,7 +224,13 @@ def verifica(ris: Path, manifesto: dict) -> dict:
         voce = {"thread": p["thread"], "kit": kit.get(p["id"])}
         if not c.exists() or (p["id"] != "controlla" and not (c / "esito.txt").exists()) \
                 or (p["id"] == "controlla" and not (c / "macchina.txt").exists()):
-            voce.update(stato="non fatta", note=[], numeri={})
+            # kit.sh l'ha lanciata ma non ha lasciato risultati (server spento, box assente...):
+            # non è «non fatta», è fallita prima di cominciare
+            if voce["kit"] and voce["kit"]["codice"] != 0:
+                voce.update(stato="ko", numeri={},
+                            note=[f"non è partita: lo script è uscito con {voce['kit']['codice']} senza risultati"])
+            else:
+                voce.update(stato="non fatta", note=[], numeri={})
         elif mancano and p["id"] != "prosa":
             voce.update(stato="ko", note=[f"mancano: {', '.join(mancano)}"], numeri={})
         else:

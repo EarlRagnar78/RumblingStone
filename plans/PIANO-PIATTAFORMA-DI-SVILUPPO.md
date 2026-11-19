@@ -1,6 +1,6 @@
 # PIANO — La piattaforma di sviluppo: una versione stabile, componenti misurati
 
-> **Stato**: 🟡 in corso (2026-10-23), P0, P3 e P9 fatti, D1-D6 decise il giorno stesso; il 2026-11-08 ruff, uv e `converters/` salgono a stable, xdist resta in testing fino al 2026-11-22 ([misura](esperimenti/promozioni-2026-11-08/MISURE.md)) · **Classe**: G per la regola, C per i lotti
+> **Stato**: 🟡 in corso (2026-10-23), P0, P3, P9, P10 e P11 fatti, P4 e P5 a metà, P8 avviata (job 3.14 non bloccante dal 2026-11-09); D1-D7 decise; il 2026-11-08 ruff, uv e `converters/` salgono a stable, xdist resta in testing fino al 2026-11-22 ([misura](esperimenti/promozioni-2026-11-08/MISURE.md)) · **Classe**: G per la regola, C per i lotti
 > **Nasce da**: tre messaggi del DM del 2026-10-23 (citati in
 > [ADR-0099](adr/ADR-0099-la-piattaforma-ha-tre-canali-come-debian.md)): una
 > versione sola di Python, stabile e supportata, scelta come Debian sceglie il
@@ -301,12 +301,12 @@ A2 → P7 → P8 quando Debian 14 si congela.
 - [x] P0 · audit, misure, ADR-0099, ruff in testing
 - [ ] P1 · il canale nel registro, la tabella generata
 - [ ] P2 · `misura_piattaforma.py`
-- [ ] P3 · ruff stable (D5 ✅; in testing dal 2026-10-23, non prima del 2026-11-06)
+- [x] P3 · ruff stable (D5 ✅; in testing dal 2026-10-23, stable dal 2026-11-08)
 - [~] P4 · test una volta sola (D2 ✅, 2026-10-23: il passo unittest è uscito dalla CI); xdist (D3) in testing nel job `testing` dal 2026-10-23, stable non prima del 2026-11-06
 - [~] P5 · uv (D4): installazione in testing nel job `testing` dal 2026-10-23, con il confronto dei pacchetti contro pip; il lock aspetta A3
 - [ ] P6 · una Python sola, controllata (con A2 di AMBIENTE)
 - [ ] P7 · skill e guide
-- [ ] P8 · prova generale della migrazione a 3.14
+- [~] P8 · prova generale della migrazione a 3.14 (job non bloccante acceso il 2026-11-09)
 - [x] P9 · `converters/` nella piattaforma, in testing (D6)
 - [x] P10 · il rilascio è una PR (ADR-0100), workflow in testing; primo rilascio 1.0.0 (D7 ✅)
 - [x] P11 · il riscontro SRD (ADR-0103) in testing, job `riscontro-srd`; stable non prima del 2026-11-06

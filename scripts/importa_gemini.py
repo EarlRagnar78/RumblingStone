@@ -128,13 +128,19 @@ def _prompt(titolo: str) -> str:
     return titolo.strip()
 
 
+def _di_gemini(v: dict) -> bool:
+    """Una voce di «La mia attività» è di Gemini? Senza `header` né `products` non si può dire: si tiene."""
+    marca = " ".join([str(v.get("header", ""))] + [str(x) for x in v.get("products", [])]).lower()
+    return not marca.strip() or "gemini" in marca or "bard" in marca
+
+
 def voci_takeout_json(dati: bytes) -> list[dict]:
     d = _json(dati)
     if not isinstance(d, list):
         return []
     voci = []
     for v in d:
-        if not isinstance(v, dict) or "title" not in v or "time" not in v:
+        if not isinstance(v, dict) or "title" not in v or "time" not in v or not _di_gemini(v):
             continue
         risposta = "\n\n".join(testo_html(h.get("html", "")) for h in v.get("safeHtmlItem", []))
         voci.append({"ora": v["time"], "prompt": _prompt(v["title"]), "risposta": risposta.strip()})
@@ -180,6 +186,26 @@ _ORA = re.compile(r"(\d{1,2} \w{3,4} \d{4},? \d{1,2}:\d{2}(?::\d{2})?(?: [A-Z]{2
                   r"\w{3} \d{1,2}, \d{4},? \d{1,2}:\d{2}:\d{2}\s?[AP]M(?: [A-Z]{2,5})?)")
 
 
+_MESI = {m: i + 1 for i, m in enumerate(("gen", "feb", "mar", "apr", "mag", "giu", "lug", "ago", "set", "ott", "nov", "dic"))}
+_MESI.update({m: i + 1 for i, m in enumerate(("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"))})
+_ORA_IT = re.compile(r"(\d{1,2}) (\w{3,4}) (\d{4}),? (\d{1,2}):(\d{2})(?::(\d{2}))?")
+_ORA_EN = re.compile(r"(\w{3}) (\d{1,2}), (\d{4}),? (\d{1,2}):(\d{2}):(\d{2})\s?([AP]M)")
+
+
+def ora_iso(testo: str) -> str:
+    """«3 mag 2026, 20:11:00 CEST» o «May 3, 2026, 8:11:00 PM CEST» → «2026-05-03T20:11:00» (ora locale
+    dell'esportazione, senza fuso). Se il mese non si riconosce torna la stringa com'è."""
+    m = _ORA_IT.search(testo)
+    if m and m.group(2).lower()[:3] in _MESI:
+        g, mese, anno, h, mi, sec = int(m.group(1)), _MESI[m.group(2).lower()[:3]], int(m.group(3)), int(m.group(4)), int(m.group(5)), int(m.group(6) or 0)
+        return f"{anno:04d}-{mese:02d}-{g:02d}T{h:02d}:{mi:02d}:{sec:02d}"
+    m = _ORA_EN.search(testo)
+    if m and m.group(1).lower() in _MESI:
+        h = int(m.group(4)) % 12 + (12 if m.group(7) == "PM" else 0)
+        return f"{int(m.group(3)):04d}-{_MESI[m.group(1).lower()]:02d}-{int(m.group(2)):02d}T{h:02d}:{m.group(5)}:{m.group(6)}"
+    return testo
+
+
 def voci_takeout_html(dati: bytes) -> list[dict]:
     p = _Celle()
     p.feed(dati.decode("utf-8", errors="replace"))
@@ -189,15 +215,19 @@ def voci_takeout_html(dati: bytes) -> list[dict]:
         if not m:
             continue
         prima, dopo = cella[:m.start()].strip(), cella[m.end():].strip()
-        voci.append({"ora": m.group(0), "prompt": _prompt(html.unescape(prima)), "risposta": dopo})
+        voci.append({"ora": ora_iso(m.group(0)), "prompt": _prompt(html.unescape(prima)), "risposta": dopo})
     return voci
 
 
 def chat_takeout(sorgente: Path) -> list[dict]:
     voci = []
+    # In un Takeout intero ci sono le attività di tutti i prodotti (Ricerca, YouTube, Maps...): si leggono
+    # solo i file sotto una cartella o con un nome di Gemini (o Bard, il nome di prima). Un file dato da
+    # solo si legge comunque: l'ha scelto il DM. Il JSON si filtra anche voce per voce (`_di_gemini`).
+    uno_solo = sorgente.is_file() and not zipfile.is_zipfile(sorgente)
     for nome, dati in file_da(sorgente):
         basso = nome.lower()
-        if "gemini" not in basso and "myactivity" not in basso.replace(" ", ""):
+        if not uno_solo and "gemini" not in basso and "bard" not in basso:
             continue
         if basso.endswith(".json"):
             voci += voci_takeout_json(dati)
@@ -209,7 +239,10 @@ def chat_takeout(sorgente: Path) -> list[dict]:
         per_giorno[giorno].append(v)
     chat = []
     for giorno, vv in sorted(per_giorno.items()):
-        vv.sort(key=lambda v: v["ora"])
+        if giorno == "senza-data":
+            vv.reverse()  # date non riconosciute: Takeout elenca dalla più recente, si legge dalla più vecchia
+        else:
+            vv.sort(key=lambda v: v["ora"])
         turni = []
         for v in vv:
             turni.append(("DM", f"*{v['ora']}*\n\n{v['prompt']}"))

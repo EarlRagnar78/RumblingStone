@@ -4,6 +4,7 @@
 # Serve il server di scripts/llm-locale/start.sh acceso in un altro terminale.
 set -euo pipefail
 . "$(dirname "${BASH_SOURCE[0]}")/comune.sh"
+rs_registra prosa "$@"; trap 'rs_fine_registro $?' EXIT   # log in $RIS/log (comune.sh)
 MODELLO="${1:-gemma4:12b-it-qat}"
 ETICHETTA="$(echo "$MODELLO" | tr -cd 'a-z0-9')"
 N="${LLM_RIPETIZIONE:-1}"

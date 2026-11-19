@@ -10,6 +10,7 @@
 # pesi li prepara esegui_gpu.py in $PROVE_DIR/immagini-lavoro (~25 GB la prima volta).
 set -euo pipefail
 . "$(dirname "${BASH_SOURCE[0]}")/comune.sh"
+rs_registra immagini "$@"; trap 'rs_fine_registro $?' EXIT   # log in $RIS/log (comune.sh)
 SOLO="thorik_posa_artemis"; SEMI=2; PROFILO=gpu
 while [ $# -gt 0 ]; do
   case "$1" in

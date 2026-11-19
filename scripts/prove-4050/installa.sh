@@ -23,6 +23,7 @@
 # kit.sh pulisci, poi di nuovo kit.sh installa.
 set -euo pipefail
 . "$(dirname "${BASH_SOURCE[0]}")/comune.sh"
+rs_registra installa "$@"; trap 'rs_fine_registro $?' EXIT   # log in $RIS/log (comune.sh)
 MOSTRA=0; DRIVER=0
 while [ $# -gt 0 ]; do
   case "$1" in

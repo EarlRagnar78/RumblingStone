@@ -292,7 +292,8 @@ concreto sporco, e poi una riga che si alza. L'effetto è tutto nello scarto.
 - [ ] Nessun *«sembra»* o *«pare»*?
 - [ ] C'è **una cosa concreta e competente** (materiale, mestiere, tempo)?
 - [ ] C'è **un dettaglio che non serve a niente**?
-- [ ] Ho tolto **la frase che spiega** l'ultima immagine?
+- [ ] Ho tolto le parole goffe, tradotte o ricercate **senza togliere la chiusa**
+      che dà nome all'immagine (§2-ter, regola 3)?
 - [ ] Il registro alto compare **una volta sola**, e non su una porta?
 - [ ] L'**ultima riga** è quella che voglio gli resti?
 - [ ] Se è un box di combattimento, finisce su **«Che fate?»**?

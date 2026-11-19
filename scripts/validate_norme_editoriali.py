@@ -318,6 +318,17 @@ NORME_SCOPERTE = (
         "sblocca": None,
     },
     {
+        "chiave": "chiusa_enfatica_resta",
+        "norma": "read-aloud-adulti.md §2-ter regola 3 — una riscrittura non toglie la "
+                 "chiusa enfatica (scelta propria del repo, editorial-standards.md §4-bis)",
+        "prerequisito": None,
+        "forma": None,
+        "dove": "manca lo **strumento**: quale frase finale «spiega» lo dice solo il "
+                "cieco fra due versioni dello stesso box (4 su 4 nel voto del 2026-10-22)",
+        "rilevatore_pronto": "cieco_versioni.py esito",
+        "sblocca": None,
+    },
+    {
         "chiave": "due_livelli_di_subordinate",
         "norma": "read-aloud-adulti.md — max due livelli di subordinate",
         "prerequisito": None,

@@ -2355,7 +2355,18 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` · `plans/esperimenti/ordine-serata-2026-11-19/ruoli-serata.json`
 - **Solo qui:** incantesimi del Vecchio decisi da Jfs alle 14:06 UTC: i conosciuti dell'Adulto più *dissolvi magie* e *lentezza* (D64); l'INFERRED è tolto. Allerta: +31 a Ascoltare e Osservare, perché i talenti del Vecchio elencano Allerta e l'SRD dà +2 (consiglio del coordinatore; Jfs può riportarlo a +29). Nessun INFERRED nuovo resta
 
-### MS-0209 · 2026-11-19 · Typst converge sul volume d'arco, e il controllo di convergenza vede di nuovo
+
+### MS-0209 · 2026-11-19 · Le tecniche di prosa proprie del repo, messe accanto alle case
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** ADR-0093
+- **Temi:** prosa standard editoriale cieco corpus paizo wotc caratteristiche decisione-dm card
+- **Origine:** riga del 2026-11-19 «RICERCA-PROSA-PECULIARE» in `plans/CHANGELOG.md`
+- **Testo:** domanda di Jfs del 19/11: lo standard della prosa si allinea a Paizo, Wizards e alla community, e quanto se ne discosta da diventare caratteristica del repo? Criterio di Jfs: entrano solo le differenze peculiari e ovviamente migliorative. Misura su main e5339cee contro il corpus (2.335 box italiani, 118 Paizo): frasi del repo a 11-15 parole contro 16-18, -mente da 0 a 2,7‰ contro 5,9-8,3‰ (ARC-08 era a 5,8‰ il 23/10), «Che fate?» o domanda in chiusura nel 16-18% dei box contro il 2-5%; i box sono il 5,6% delle parole dei master di ARC-07. Scelte del DM sulle card: tecniche 1 (sensi) e 2 (chiusa) entrano come caratteristiche, tecnica 4 (voce per l'orecchio) prima al cieco, etichette dei pilastri tolte da tutte le stampe; tecnica 3 e ordine dei cieco A, B, C aperti.
+- **Trovato nel repo:** `plans/RICERCA-PROSA-PECULIARE-2026-11.md` · `skills/rumblingstone-narrative-style/references/editorial-standards.md` §4-bis
+- **Solo qui:** la checklist chiedeva ancora di togliere «la frase che spiega» dal 22/10, contro il voto; la regola 3 del §2-ter non era nel registro. Le etichette dei pilastri nel booklet della serata v4.1 erano 18 intestazioni e 24 richiami; il filtro nel renderer spetta al thread dei booklet. Gli esempi con e senza mostrati a Jfs vengono da giro2 coppie 2 e 3 e dalla riscrittura del 22/10, B14 e B16.
+### MS-0210 · 2026-11-19 · Typst converge sul volume d'arco, e il controllo di convergenza vede di nuovo
 
 - **Data:** 2026-11-19
 - **PR:** #501

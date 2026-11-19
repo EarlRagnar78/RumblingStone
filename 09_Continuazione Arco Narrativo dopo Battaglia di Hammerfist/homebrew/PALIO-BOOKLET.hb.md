@@ -2901,7 +2901,7 @@ Comanda l'assalto; usa **Silenzio** per soffocare gli allarmi, **Ragnatela** in 
 
 *Cosa sa dei PG*: quello che sanno gli assassini, e in più che uno dei PG cura (Hella): *Silenzio* va su di lei per prima, se è sveglia. <!-- [INFERRED — La chierica sa che Hella è la guaritrice?; base: lo sa se ha visto le prove del Giorno 1 o 2, nessuna scena lo dice] (marca tolta dal booklet stampato) -->
 
-> RC-001: armatura completa +1 e scudo pesante di acciaio spiegano la CA 22 se la Destrezza è 12 (10, +9 armatura, +2 scudo, +1 Des); la scheda non scrive la Destrezza e questa è una lettura. Mantello, perla, pugnale e balestra vengono dal PNG dei Codex PF1e «Death Priest» (Chierico 9); il suo giaco di maglia +1, l'anello di protezione +1 e la fascia della saggezza non entrano. Il mantello non cambia numeri perché la scheda non scrive i tiri salvezza. Valore 4.709 mo contro i 12.000 del 9° livello (DMG 3.5, Tabella 4-23).
+> RC-001: armatura completa +1 e scudo pesante di acciaio spiegano la CA 22 se la Destrezza è 12 (10, +9 armatura, +2 scudo, +1 Des); la scheda non scrive la Destrezza e questa è una lettura. Mantello, perla, pugnale e balestra vengono dal PNG dei Codex PF1e «Death Priest» (Chierico 9); il suo giaco di maglia +1, l'anello di protezione +1 e la fascia della saggezza non entrano. Il mantello non cambia numeri perché la scheda non scrive i tiri salvezza. Valore 4.709 mo contro i 21.000 dell'11° livello effettivo (9 livelli di classe + 2 di modificatore di livello dei drow; DMG 3.5, Tabella 4-23); anche senza il modificatore resta sotto i 12.000 del 9°.
 
 
 ### 3.3 Servitore della Spora (GS 3, ariete vivente)

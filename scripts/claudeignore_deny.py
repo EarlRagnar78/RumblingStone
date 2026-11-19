@@ -7,7 +7,9 @@ regole `Read(...)`, che valgono anche per Grep e Glob. `.claudeignore` resta
 la fonte, scritta con la sintassi di `.gitignore`; questo script ne ricava le
 regole in `.claude/settings.json` e `--check` le tiene allineate.
 
-Restano leggibili apposta le voci di ESCLUSE, ognuna con il perché.
+Restano leggibili apposta le voci che in `.claudeignore` stanno sotto un
+commento «# leggibile: motivo»: la marca vale fino alla prima riga vuota o al
+primo altro commento, e il motivo è obbligatorio.
 
 Uso:
   python3 scripts/claudeignore_deny.py           # aggiorna .claude/settings.json
@@ -24,15 +26,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SORGENTE = ROOT / ".claudeignore"
 SETTINGS = ROOT / ".claude" / "settings.json"
 
-# Voci di .claudeignore che NON diventano un divieto, con il motivo.
-_IMMAGINI = "le immagini si aprono apposta per la direzione artistica e le mappe; Grep salta i binari da solo"
-_DOCUMENTI = "i PDF e gli ODS si aprono apposta (booklet, registro PX); Grep salta i binari da solo"
-ESCLUSE: dict[str, str] = {
-    ".claude/.skills-sync-status": "AGENTS.md chiede di leggerlo prima di generare contenuto di campagna",
-    ".claude/skills/": "gli specchi delle skill per Claude: i references/ si leggono da lì; .gitignore li toglie già da Grep",
-    **{p: _IMMAGINI for p in ("*.png", "*.gif", "*.bmp", "*.tif", "*.tiff", "*.psd", "*.ico")},
-    **{p: _DOCUMENTI for p in ("*.pdf", "*.PDF", "*.ods", "*.odt", "*.xlsx", "*.xls", "*.docx")},
-}
+MARCA = "# leggibile:"
 
 
 def voci(testo: str) -> list[str]:
@@ -68,15 +62,34 @@ def regola(voce: str) -> str:
     return f"Read({percorso})"
 
 
+def leggibili(testo: str) -> dict[str, str]:
+    """Le voci sotto una marca «# leggibile: motivo», con il loro motivo."""
+    out: dict[str, str] = {}
+    motivo = None
+    for riga in testo.splitlines():
+        riga = riga.strip()
+        if riga.startswith(MARCA):
+            motivo = riga[len(MARCA):].strip()
+            if not motivo:
+                raise SystemExit("claudeignore_deny: «# leggibile:» senza motivo")
+        elif not riga or riga.startswith("#"):
+            motivo = None
+        elif motivo is not None:
+            out[riga] = motivo
+    return out
+
+
 def regole(testo: str) -> list[str]:
-    return [regola(v) for v in voci(testo) if v not in ESCLUSE]
+    salta = leggibili(testo)
+    return [regola(v) for v in voci(testo) if v not in salta]
 
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--check", action="store_true", help="esce 1 se settings.json non è allineato")
     a = ap.parse_args()
-    nuove = regole(SORGENTE.read_text(encoding="utf-8"))
+    testo = SORGENTE.read_text(encoding="utf-8")
+    nuove = regole(testo)
     cfg = json.loads(SETTINGS.read_text(encoding="utf-8"))
     deny = cfg.setdefault("permissions", {}).setdefault("deny", [])
     altre = [r for r in deny if not r.startswith("Read(")]
@@ -87,7 +100,7 @@ def main() -> int:
                   "  rigenera con: python3 scripts/claudeignore_deny.py", file=sys.stderr)
             return 1
         print(f"✓ claudeignore_deny: {len(nuove)} regole Read allineate a .claudeignore "
-              f"({len(ESCLUSE)} voci lasciate leggibili apposta)")
+              f"({len(leggibili(testo))} voci lasciate leggibili apposta)")
         return 0
     cfg["permissions"]["deny"] = attese
     SETTINGS.write_text(json.dumps(cfg, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

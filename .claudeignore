@@ -23,14 +23,18 @@ rami-cancellati.log
 
 # --- Specchi delle skill, generati da scripts/build-skills.sh ---------------
 # La fonte è skills/; gli specchi sono sei copie in formati diversi.
+# leggibile: le skill del repo si caricano da qui con i loro references/; .gitignore lo toglie già da Grep
 .claude/skills/
+
 .agents/skills/
 .cursor/skills/
 .windsurf/skills/
 .chatgpt/skills/
 .gemini/skills/
 .github/copilot/skills/
+# leggibile: AGENTS.md chiede di leggerlo prima di generare contenuto di campagna
 .claude/.skills-sync-status
+
 build/
 
 # --- Uscite generate (si rigenerano, non si leggono né si toccano) ---------
@@ -77,6 +81,7 @@ htmlcov/
 
 # --- Binari che non si leggono come testo ----------------------------------
 # PNG master da 5-7 MB: le derivate leggere stanno in */web/*.jpg.
+# leggibile: le immagini si aprono apposta per la direzione artistica e le mappe; Grep salta i binari da solo
 *.png
 *.gif
 *.bmp
@@ -85,14 +90,17 @@ htmlcov/
 *.psd
 *.ico
 # Scansioni e impaginati (anche coperti da copyright, vedi .gitignore).
+# leggibile: i PDF si aprono apposta (booklet); Grep salta i binari da solo
 *.pdf
 *.PDF
 # Fogli di calcolo e documenti office.
+# leggibile: gli ODS si aprono apposta (registro PX); Grep salta i binari da solo
 *.ods
 *.odt
 *.xlsx
 *.xls
 *.docx
+
 # Font, audio, video, archivi.
 *.ttf
 *.otf

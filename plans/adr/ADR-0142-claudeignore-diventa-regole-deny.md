@@ -33,7 +33,9 @@ HTML e Typst di homebrew, pacchetti vendorizzati). Grep rispetta già
    progetto (`Read(/x)`), una senza vale a ogni livello (`Read(**/x)`), una
    cartella diventa `x/**`. Le negazioni (`!x`) fermano lo script, perché
    `deny` non ne ha.
-2. **Restano leggibili sedici voci** (tabella `ESCLUSE`, ognuna col perché):
+2. **Restano leggibili sedici voci**, marcate in `.claudeignore` con un
+   commento `# leggibile: motivo` sopra di loro (la marca vale fino alla
+   prima riga vuota o al primo altro commento, e il motivo è obbligatorio):
    le immagini e i PDF, che l'agente apre apposta e che Grep salta da solo;
    gli specchi `.claude/skills/`, da cui si leggono i `references/`;
    `.claude/.skills-sync-status`, che AGENTS.md chiede di leggere.
@@ -60,6 +62,12 @@ tool Grep ha dato 1.168 righe su «Skullcrusher», come `rg` con le regole.
 | Belkram | 487 | 468 | −4% |
 
 **Quello che si paga.** Un file generato non si apre più con Read: per
-guardarlo serve togliere la voce o aggiungerla a `ESCLUSE`. Bash non è
+guardarlo serve togliere la voce o metterla sotto una marca `# leggibile:`. Bash non è
 coperto: `cat` e `rg` da terminale leggono tutto, come prima. Il contesto
 iniziale non cambia in modo misurabile: il guadagno è nelle ricerche.
+
+**Correzione prima del merge.** La prima versione teneva le eccezioni in una
+tabella dello script, che nominava lo specchio delle skill: il test
+`test_tabelle.py::IlMirrorNonEUnaFonte` l'ha bocciata nella CI (nessuno
+script cita lo specchio). Le eccezioni sono passate nella fonte, `.claudeignore`;
+le regole generate sono le stesse 70.

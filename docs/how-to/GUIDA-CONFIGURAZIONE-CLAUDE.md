@@ -52,7 +52,7 @@ container già partiti e si fa la verifica della colonna a destra.
 | 2 | togliere le righe `mcp__…` da `permissions.deny` in `.claude/settings.json` | togliere la riga di un solo connettore, oppure riaccenderlo per la sessione con `/mcp` | il connettore torna nell'elenco dei tool |
 | 3, 4 | `git revert` del merge di #487 o di #488 | in `enabledPlugins` mettere `true` (o `false`) sulla riga del plugin | `claude -p --output-format stream-json --verbose "ok"` dalla cartella dei thread: campo `plugins` dell'evento `init` |
 | 5 | `git revert` del merge di #489: tornano il CLAUDE.md che fa leggere AGENTS.md intero e nessuna regola `rs-*` | togliere una regola dalla tabella `SEZIONI` di `scripts/regole_claude.py` mettendo le sue sezioni nel nucleo, poi `python3 scripts/regole_claude.py` | `python3 scripts/regole_claude.py --misura`; in una sessione, leggere un file e chiedere quali `.claude/rules` sono nel contesto |
-| 6 | togliere tutte le righe `Read(...)` da `permissions.deny` (o `git revert` della PR) | lasciare leggibile una voce: aggiungerla a `ESCLUSE` in `scripts/claudeignore_deny.py` con il motivo, poi `python3 scripts/claudeignore_deny.py` | aprire con Read un file di quella voce |
+| 6 | togliere tutte le righe `Read(...)` da `permissions.deny` (o `git revert` della PR) | lasciare leggibile una voce: in `.claudeignore` metterla sotto un commento `# leggibile: motivo`, poi `python3 scripts/claudeignore_deny.py` | aprire con Read un file di quella voce |
 
 Due regole valgono per ogni ritorno:
 

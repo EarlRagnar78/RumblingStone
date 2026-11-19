@@ -1,7 +1,7 @@
 {
  "conformita_statblocchi": {
-  "byte": 503,
-  "sha256": "6b2f94e50da0850fe5230d01456037338d37d5169bc2f3325e9b5459b810822b",
+  "byte": 409,
+  "sha256": "2aeef7559ebf62a322d9fdb7baa408d87012322a58cdd2ef595f25f5ffc48446",
   "uscita": 0
  },
  "derive_statblocks": {

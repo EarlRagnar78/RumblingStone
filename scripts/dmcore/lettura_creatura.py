@@ -411,15 +411,24 @@ TALENTI = (
 RESISTENZA = re.compile(r"(?:cloak of resistance|mantello (?:della|di) resistenza)\s*\+(\d)", re.I)
 
 
+#: L'inizio della riga che descrive una variante della scheda, non la scheda.
+VARIANTE = ("**Variante", "**Varianti")
+
+
 def talenti(testo: str) -> dict:
     """{campo: bonus} dei talenti e degli oggetti che la scheda dichiara.
 
     Dal lotto 1 (ADR-0126) il conto lo fa `dmcore.bonus`: le sorgenti stanno in
     `sistemi/d20/dati/bonus.toml` e due bonus dello stesso tipo non si sommano.
     L'iniziativa resta qui, perché il suo schema serve anche ad altri lettori.
+
+    🐛 La riga di una variante («**Variante «Combattente GS2»**: … Volontà di
+    Ferro al posto di Arma Focalizzata») non è la scheda: il suo talento finiva
+    nei TS attesi dell'hobgoblin regolare (Vol +1≠3, audit del 2026-11-18).
     """
     from dmcore import bonus
-    pulito = senza_note(testo)
+    pulito = "\n".join(r for r in senza_note(testo).splitlines()
+                        if not r.lstrip().startswith(VARIANTE))
     fuori = bonus.totali(pulito)
     if INIZIATIVA_MIGLIORATA.search(pulito):
         fuori["init"] = fuori.get("init", 0) + 4

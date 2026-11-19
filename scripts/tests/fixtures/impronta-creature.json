@@ -9515,8 +9515,7 @@
      "Sag": 9
     },
     [
-     "trascritta dalla fonte `hobgoblin regular 3 liv.htm`",
-     "⚠ Sag al più 5 ricavata da Vol +1 (base +4), ma 9 viene da un dato più forte: si tiene, da verificare."
+     "trascritta dalla fonte `hobgoblin regular 3 liv.htm`"
     ]
    ],
    "genera_senza_fonte": [
@@ -9526,7 +9525,7 @@
      "Des": 12,
      "For": 12,
      "Int": 8,
-     "Sag": 5
+     "Sag": 9
     },
     [
      "array standard del Manuale del DM (PNG con classe)",
@@ -9536,13 +9535,11 @@
      "Des 12 **ricavata dall'iniziativa** — il vincolo batte l'array",
      "Cos 14 **ricavata da pf 23 su 3 DV** — il vincolo batte l'array",
      "For 12 **ricavata da BAB e lotta** — il vincolo batte l'array",
-     "Sag 5 **ricavata da Vol +1 (base +4)** — il tetto del TS batte l'array"
+     "Sag 9 **ricavata da Vol +1 (base +2)** — il tetto del TS batte l'array"
     ]
    ],
    "giudica": {
-    "come_la_fonte": [
-     "Vol"
-    ],
+    "come_la_fonte": [],
     "decisione": null,
     "esito": {
      "BAB": [
@@ -9562,8 +9559,8 @@
      ],
      "Vol": [
       1,
-      3,
-      -2
+      1,
+      0
      ],
      "attacco": [
       6,
@@ -9589,13 +9586,7 @@
     },
     "file": "Bestiario/mostri/hobgoblin-regular-warrior3-cr2.md",
     "provenienza": "trascritte",
-    "scarti": {
-     "Vol": [
-      1,
-      3,
-      -2
-     ]
-    },
+    "scarti": {},
     "template": null,
     "template_dichiarati": [],
     "verificabile": true
@@ -9677,7 +9668,7 @@
     "talenti": {
      "Rifl": 1,
      "Temp": 1,
-     "Vol": 3
+     "Vol": 1
     },
     "template_dichiarati": [],
     "tetti_dai_ts": {
@@ -9690,8 +9681,8 @@
       "ricavata da Rifl +3 (base +2)"
      ],
      "Sag": [
-      -3,
-      "ricavata da Vol +1 (base +4)"
+      -1,
+      "ricavata da Vol +1 (base +2)"
      ]
     },
     "vincoli": {
@@ -44492,13 +44483,13 @@
   "conformita_controlla_pf_dado": [],
   "conformita_proponi_pf_dado": [],
   "conformita_riepilogo": {
-   "come_la_fonte": 3,
+   "come_la_fonte": 2,
    "da_correggere": 0,
    "decisioni_aperte": 0,
    "del_generatore": 0,
    "spiegati_da_template": 0,
    "statblocchi": 121,
-   "tornano": 117,
+   "tornano": 118,
    "verificabili": 120
   },
   "genera_attributi_controlla": [],
@@ -44772,10 +44763,9 @@
    },
    {
     "file": "Bestiario/mostri/hobgoblin-regular-warrior3-cr2.md",
-    "marca": "> [GENERATO] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. ⚠ Sag al più 5 ricavata da Vol +1 (base +4), ma 9 viene da un dato più forte: si tiene, da verificare.",
+    "marca": "> [GENERATO] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`.",
     "note": [
-     "trascritta dalla fonte `hobgoblin regular 3 liv.htm`",
-     "⚠ Sag al più 5 ricavata da Vol +1 (base +4), ma 9 viene da un dato più forte: si tiene, da verificare."
+     "trascritta dalla fonte `hobgoblin regular 3 liv.htm`"
     ],
     "riga": "attributi: For 13 Des 13 Cos 14 Int 10 Sag 9 Car 8",
     "scritta": "attributi: For 13 Des 13 Cos 14 Int 10 Sag 9 Car 8"
@@ -45267,7 +45257,7 @@
        "Des": 12,
        "For": 12,
        "Int": 8,
-       "Sag": 5
+       "Sag": 9
       }
      ],
      [
@@ -45521,15 +45511,15 @@
     "entro_1_mod": 0.87,
     "file": 21,
     "insieme": "fonti",
-    "mae": 1.24,
-    "mae_mod": 0.56,
+    "mae": 1.21,
+    "mae_mod": 0.55,
     "per_caratteristica": {
      "Car": 1.52,
      "Cos": 0.81,
      "Des": 0.33,
      "For": 1.38,
      "Int": 2.0,
-     "Sag": 1.38
+     "Sag": 1.19
     }
    },
    "schede": {

@@ -1375,23 +1375,85 @@ def titoli_senza_salti(src: str) -> tuple[str, int]:
     cambia. Un titolo che era sotto la profondità dell'indice (3) resta
     fuori dall'indice. Restituisce il sorgente e quanti titoli ha spostato.
     """
-    righe, prima, spostati = src.split("\n"), 0, 0
+    righe = src.split("\n")
+    etichettato = re.compile(r"<[\w-]+>\s*$")
+    # Dentro un capitolo annidato (ADR-0145) il primo livello dei titoli del
+    # master diventa la profondità 1, qualunque fosse (`=` o `==`): così due
+    # sezioni sorelle restano sorelle nei segnalibri. `cala[i]` è quanto
+    # scende ogni titolo del capitolo che comincia alla riga i.
+    cala: dict[int, int] = {}
+    annidato, inizio, minimo = False, None, None
+    for i, r in enumerate(righe + [ANNIDA]):
+        aperta = r.strip() == ANNIDA or bool(_APRE_LIVELLO_1.match(r))
+        if aperta or i == len(righe):
+            if annidato and inizio is not None and minimo:
+                cala[inizio] = minimo - 1
+            if r.strip() == ANNIDA:
+                annidato = True
+            inizio, minimo = i, None
+            continue
+        m = _TITOLO_TYP.match(r)
+        if m:
+            minimo = min(minimo or 99, len(m.group(1)))
+    # `prima`: la profondità dell'ultimo titolo; None prima del primo
+    prima, spostati, annidato, giu = None, 0, False, 0
     for i, r in enumerate(righe):
+        if r.strip() == ANNIDA:
+            # da qui `=` è il livello 2: sotto il capitolo si riparte da 0
+            annidato, prima, giu = True, 0, cala.get(i, 0)
+            continue
         if _APRE_LIVELLO_1.match(r):
-            prima = 1
+            prima, giu = (0 if annidato else 1), cala.get(i, 0)
             continue
         m = _TITOLO_TYP.match(r)
         if not m:
             continue
         lvl, corpo = len(m.group(1)), m.group(2)
-        if prima and lvl > prima + 1 and not re.search(r"<[\w-]+>\s*$", corpo):
+        if etichettato.search(corpo):
+            prima = lvl
+            continue
+        nuovo = max(1, lvl - giu)
+        if prima is not None and nuovo > prima + 1:
             nuovo = prima + 1
-            indice = "" if lvl <= 3 else ", outlined: false"
-            righe[i] = f"#heading(level: {nuovo}{indice})[{corpo}] <come-{lvl}>"
+        if nuovo != lvl:
+            # sotto la profondità dell'indice nel master: resta fuori
+            # dall'indice stampato, ma il segnalibro lo tiene
+            indice = "" if lvl <= 3 else ", outlined: false, bookmarked: true"
+            # dentro `[...]` un «1. » o un «- » a inizio riga è un elenco, e il
+            # numero sparirebbe dal titolo («7. Che cosa succede, in numeri»)
+            corpo = re.sub(r"^(\d+)\.(\s)", r"\1\\.\2", corpo)
+            corpo = re.sub(r"^([-+/])(\s)", r"\\\1\2", corpo)
+            righe[i] = f"#heading(depth: {nuovo}{indice})[{corpo}] <come-{lvl}>"
             spostati += 1
-            lvl = nuovo
-        prima = lvl
+        prima = nuovo
     return "\n".join(righe), spostati
+
+
+#: la regola che fa scendere i titoli del corpo sotto il capitolo che li contiene
+ANNIDA = "#set heading(offset: 1)"
+
+
+def titoli_annidati(src: str) -> str:
+    """I segnalibri seguono la gerarchia: capitolo, sezione, sottosezione.
+
+    Il capitolo apre con un titolo di livello 1 (`capitolo-aperto`); i titoli
+    dei master partono anche loro da `=`, e senza questa regola stavano allo
+    stesso livello del capitolo: segnalibri piatti, il difetto dichiarato in
+    ADR-0145. I PDF di Paizo (*Burnt Offerings*, 2007) e di Wizards (*Red
+    Hand of Doom*, 2006) annidano parte → sezione → sottosezione; PDF/UA-1
+    (ISO 14289-1, 7.4.2) chiede che i titoli dicano la struttura vera. Dopo il
+    primo capitolo, `offset: 1` fa di ogni `=` un livello 2 nell'albero dei
+    tag e nei segnalibri; il tema disegna per `depth`, e la pagina non cambia.
+    Il titolo del capitolo ha `level: 1` esplicito e non si sposta.
+    """
+    if ANNIDA in src:
+        return src
+    righe = src.split("\n")
+    for i, r in enumerate(righe):
+        if r.lstrip().startswith("#capitolo-aperto("):
+            righe.insert(i + 1, ANNIDA)
+            return "\n".join(righe)
+    return src
 
 
 def compila(motore: str, typ: Path, pdf: Path,
@@ -1497,7 +1559,7 @@ def main() -> int:
     except (SchedaError, carte_tavolo.CarteError) as e:
         print(f"✗ export_booklet_typst: {e}", file=sys.stderr)
         return 1
-    src, spostati = titoli_senza_salti(src)
+    src, spostati = titoli_senza_salti(titoli_annidati(src))
     if spostati:
         print(f"  · {spostati} titoli saltavano un livello: nell'albero dei tag salgono "
               "di livello, sulla pagina restano uguali (PDF/UA-1)", file=sys.stderr)

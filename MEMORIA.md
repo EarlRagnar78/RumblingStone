@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-19 | STANDARD-STAMPA | ADR-0145, segnalibri annidati (richiesta di Jfs del 19/11, 14:07: chiudere i li… | ✅ segnalibri da piatti a quattro livelli: serata 143 voci con 20 al primo livello, volume 439 con 13; PDF/UA-1 e PDF/A-2a restano; rimandi 113 su 113 e 242 su… |
 | 2026-11-19 | STANDARD-STAMPA | Convergenza di typst (richiesta del coordinatore prima dei segnalibri: il volum… | ✅ rimandi giusti del volume 227 → 242 su 242; numeri instabili 2 → 0 booklet su 22 |
 | 2026-11-19 | RICERCA-PROSA-PECULIARE | Le tecniche di prosa proprie del repo contro le case (domanda di Jfs del 19/11)… | ✅ ricerca e standard; nessun cancello nuovo |
 | 2026-11-19 | STANDARD-STAMPA | Card di Jfs sulla serata di ARC-07: Durik resta in fondo come galleria dei PNG… | ✅ serata da 3 difetti di struttura a 0 (134 → 132 pp); rimandi 113 su 122 con la pagina, tutti giusti; debito INFERRED 14 → 14 (le due domande chiuse lo stesso… |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-19 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: due scelte del DM sulle card del 19/11 chiudono il ric… | ✅ differenze fra blocco e prosa nelle dieci schede del corredo: 2 → 0 (danno a distanza della Drow Assassina, tabella di Varis); `verifica_scheda` 0 violazioni… |
 | 2026-11-19 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Log di ogni giro del kit (richiesta del DM del 19/11): `rs_registra` in… | ✅ prova finta (20 righe su stdout, 10 su stderr, un avviso, un traceback, uscita 3): righe salvate in un file da 0/32 su main a 32/32; codice d'uscita scritto… |
 | 2026-11-19 | STATO-E-ORDINE | Due test che dipendevano dalla macchina, corretti con il test scritto prima.… | ✅ |
-| 2026-11-19 | STATO-E-ORDINE | ADR-0143: i gate bloccanti e veloci della CI girano prima del push.… | ✅ |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 210 voci, l'ultima MS-0210 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 211 voci, l'ultima MS-0211 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

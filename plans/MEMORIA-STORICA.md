@@ -2377,3 +2377,14 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `scripts/typst/tema-rumblingstone.typ` · `scripts/typst_motore.py` · `scripts/misura_stampa.py` · `scripts/tests/test_typst_motore.py`
 - **Solo qui:** il documento che oscilla nel test (`OSCILLA`) mette un salto pagina se il segno cade su una pagina pari: è il più piccolo che typst non fa convergere. Una riproduzione minima della scheda su una colonna non oscilla da sola (serve il resto del volume), perciò il cancello è la misura sui booklet veri, non un test unitario
 
+### MS-0211 · 2026-11-19 · I segnalibri del PDF seguono l'albero dei titoli, e il volume è messo accanto alle case
+
+- **Data:** 2026-11-19
+- **PR:** #502
+- **ADR:** ADR-0145
+- **Temi:** stampa segnalibri annidati pdf typst heading offset paizo wizards red hand of doom burnt offerings community confronto standard editoriale
+- **Origine:** riga del 2026-11-19 «ADR-0145, segnalibri annidati» in `plans/CHANGELOG.md`
+- **Testo:** Jfs (14:07 UTC) vuole chiusi i limiti dichiarati della #497 in modo deterministico e con uno standard editoriale professionale; alle 14:10 chiede il confronto con Paizo, Wizards e community, e alle 14:11 che le differenze entrino solo se proprie del repo e migliorative. Il coordinatore ha messo in coda: convergenza (#501), poi segnalibri e ruoli, poi etichette dei pilastri. Typst annida un segnalibro sotto l'ultimo titolo segnalato: se il titolo di primo livello ha `bookmarked: false`, i figli salgono al primo livello. Per questo il titolo nascosto del capitolo non è un segnalibro, e lo è quello visibile (`titolo-visibile(..., segnalibro: true)`). PDF/UA-1 rifiutava il salto dal primo al terzo livello: ogni capitolo si porta al minimo dei suoi titoli (`cala`); la sentinella `prima` è None, non 0, perché `if prima and` trattava lo 0 come falso. «1. Che cosa…» dentro `[...]` diventava un elenco e perdeva il numero, quindi si protegge con «1\.». Le misure sono nella riga del changelog. Il ruolo delle sezioni nel manifest (CMOS 1.4, EPUB 3 `epub:type`) e la misura d'ordine come cancello restano per la PR dopo
+- **Trovato nel repo:** `scripts/export_booklet_typst.py` · `scripts/typst/tema-rumblingstone.typ` · `scripts/tests/test_pdfua.py` · `plans/adr/ADR-0145-l-ordine-del-booklet-della-serata-si-misura.md`
+- **Solo qui:** i PDF di riferimento sono quelli caricati da Jfs nel thread (/mnt/project-files/uploads/hearth/, Burnt Offerings e l'estratto di RHoD), mai nel repo. Per la community si sono guardati Ben Milton e Mike Shea: è una lettura, non una misura
+

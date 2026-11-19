@@ -109,7 +109,10 @@ class TestRamiAccanto(unittest.TestCase):
         import contenuti_nei_rami as cnr
         import fase1
         buf = io.StringIO()
-        with mock.patch.object(cnr, "riferimenti", lambda base: ["pr/1"]), \
+        # Il test non dipende dal clone vero: nei thread il clone può essere
+        # shallow, e allora fase1 non misura i rami (rosso solo lì, 2026-11-19).
+        with mock.patch.object(cnr, "shallow", lambda *a, **k: False), \
+                mock.patch.object(cnr, "riferimenti", lambda base: ["pr/1"]), \
                 mock.patch.object(cnr, "mai_arrivati", lambda base, refs: trovati), \
                 mock.patch.object(cnr, "leggi_registro", lambda: registro), redirect_stdout(buf):
             fase1.rami_accanto([ROOT / bersaglio])

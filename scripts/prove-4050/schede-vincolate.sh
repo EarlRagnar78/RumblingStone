@@ -7,6 +7,7 @@
 # Serve il server di scripts/llm-locale/start.sh acceso in un altro terminale.
 set -euo pipefail
 . "$(dirname "${BASH_SOURCE[0]}")/comune.sh"
+rs_registra schede-vincolate "$@"; trap 'rs_fine_registro $?' EXIT   # log in $RIS/log (comune.sh)
 MODELLO="${1:-qwen2.5:7b}"
 RIP="${RS_RIPETIZIONI:-3}"
 QUI="$RADICE/plans/esperimenti/decodifica-vincolata-2026-11-17"

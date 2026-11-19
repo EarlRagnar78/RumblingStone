@@ -13,6 +13,11 @@
 # Il server Ollama lo accende e lo spegne il kit, col contesto che vuole ogni prova
 # (server_ctx in prove.json). Se l'hai già acceso tu, il kit usa il tuo e lo lascia acceso.
 # Una prova che fallisce non ferma le altre: il codice d'uscita finisce in <giorno>/kit.tsv.
+#
+# Log: tutto quello che il kit e le prove scrivono, uscita ed errori, va anche in <giorno>/log/:
+# kit-<comando>-<ora>.log è il giro intero, <prova>.log è la parte di una prova (con il codice
+# d'uscita in coda), avvisi.txt raccoglie errori, avvisi e traceback con file e riga. «riporta» li
+# mette nell'archivio. piano e aiuto leggono soltanto e non scrivono log.
 set -uo pipefail
 . "$(dirname "${BASH_SOURCE[0]}")/comune.sh"
 MANIFESTO="$HERE/prove.json"
@@ -38,8 +43,10 @@ P
 # terminale_a_posto — «distrobox enter» mette il terminale in modalità grezza e, se il server
 # viene spento con kill, non lo rimette com'era: le righe dopo escono a scaletta (primo giro
 # sull'ASUS, 2026-11-19). Solo se l'uscita è un terminale.
+# Col log aperto stdout è la pipe verso tee: il terminale vero è in RS_FD_TERMINALE (comune.sh).
 terminale_a_posto() {
-  if [ -t 1 ]; then stty sane <&1 2>/dev/null || true; fi
+  local fd="${RS_FD_TERMINALE:-1}"
+  if [ -t "$fd" ]; then stty sane <&"$fd" 2>/dev/null || true; fi
 }
 
 ferma_server() {
@@ -51,7 +58,7 @@ ferma_server() {
   SERVER_PID=""; SERVER_CTX=""
   terminale_a_posto
 }
-trap ferma_server EXIT
+trap 'codice_kit=$?; ferma_server; rs_fine_registro "$codice_kit"' EXIT
 
 # server_con_ctx CTX — un server Ollama col contesto CTX, acceso dal kit se serve
 server_con_ctx() {
@@ -85,7 +92,10 @@ esegui_una() {
   if [ -n "$ctx" ]; then server_con_ctx "$ctx" || { registra "$id" 3 0; return 3; }
   else ferma_server; fi
   t0=$(date +%s)
-  "$HERE/$script"; codice=$?
+  mkdir -p "$RIS/log"
+  printf '# %s · %s\n' "$id" "$(date '+%F %T')" >> "$RIS/log/$id.log"
+  rs_con_log "$RIS/log/$id.log" "$HERE/$script"; codice=$?
+  printf '# uscita %s · %s\n' "$codice" "$(date '+%F %T')" >> "$RIS/log/$id.log"
   registra "$id" "$codice" "$(minuti "$t0")"
   [ "$codice" -eq 0 ] || echo "!! $id è uscita con $codice: vado avanti con le altre" >&2
   return 0
@@ -157,6 +167,9 @@ pulisci() {
 
 cmd="${1:-piano}"; shift || true
 case "$cmd" in
+  tutte|esegui|verifica|riporta|pulisci) rs_registra "kit-$cmd" "$@" ;;
+esac
+case "$cmd" in
   installa) exec "$HERE/installa.sh" "$@" ;;
   piano) piano ;;
   tutte)
@@ -176,6 +189,6 @@ case "$cmd" in
   verifica) python3 "$HERE/verifica.py" "$PROVE_DIR/${1:-$GIORNO}" ;;
   riporta)  "$HERE/riporta.sh" "${1:-$GIORNO}" ;;
   pulisci)  pulisci "$@" ;;
-  -h|--help|aiuto) sed -n '2,16p' "$0" | sed 's/^# \{0,1\}//' ;;
+  -h|--help|aiuto) sed -n '2,21p' "$0" | sed 's/^# \{0,1\}//' ;;
   *) echo "comando sconosciuto: $cmd (installa, piano, tutte, esegui, verifica, riporta, pulisci)" >&2; exit 2 ;;
 esac

@@ -2257,3 +2257,13 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `scripts/gate_locale.py` · `.pre-commit-config.yaml` · `scripts/install-git-hooks.sh` · `plans/adr/ADR-0143-i-gate-veloci-girano-prima-del-push.md`
 - **Solo qui:** gli id delle 11 corse rosse (44426033056, 44425938003, 44183963956, 44181729147, 43919525637, 43770067168, 43769907951, 43769733440, 43769518617, 43729307832, 43727650247); la stima del giro di CI in più (circa 22 minuti per rosso) non è misurata; le skill del repo «doppie» costano circa 0,7k token, non 5k
 
+### MS-0200 · 2026-11-19 · Il kit delle prove sulla 4050 salva in un log tutto quello che scrive
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** ADR-0136
+- **Temi:** prove-4050 kit log tee transcript windows tdd misura
+- **Origine:** riga del 2026-11-19 «Log di ogni giro del kit» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha chiesto (19/11) che uscita, errori e avvisi di tutti gli strumenti del kit restino recuperabili dopo un giro. Su main restavano solo `kit.tsv` (id, codice, minuti), il log di Ollama e i log che immagini, Drappo e trascrizione scrivevano da sé; l'uscita di `kit.sh`, di `installa.sh` e delle altre prove si perdeva. Scelto lo standard di fatto: `exec` con `tee` in Bash, `Start-Transcript` in PowerShell, niente librerie. Misura con una prova finta: righe salvate da 0/32 a 32/32. `stty sane` ora guarda il terminale salvato su un descrittore a parte (fd 9), perché dietro `tee` `[ -t 1 ]` è falso. Il kit dietro `tee` non dà più un terminale alle prove: `distrobox enter` parte senza tty e le barre di avanzamento escono come righe semplici.
+- **Trovato nel repo:** `scripts/prove-4050/comune.sh` · `scripts/tests/test_prove_4050_log.py` · `docs/how-to/GUIDA-PROVE-PORTATILE-4050.md`
+- **Solo qui:** il transcript di Windows PowerShell 5.1 non prende lo stderr di `wsl.exe` (si evita `2>&1` per via di `ErrorActionPreference=Stop`); non provato, nessun PowerShell nel container. I log oltre 64 MB restano fuori dall'archivio.

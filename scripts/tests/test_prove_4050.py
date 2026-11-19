@@ -478,8 +478,10 @@ class TestKitMultiSistema(unittest.TestCase):
         """Primo giro sull'ASUS: spento Ollama il terminale restava grezzo e verifica.md usciva a scaletta."""
         testo = (PROVE / "kit.sh").read_text(encoding="utf-8")
         self.assertIn("stty sane", testo)
-        self.assertIn("[ -t 1 ]", testo)   # mai quando l'uscita va in un file o in una pipe
-        corpo = testo[testo.index("ferma_server() {"):testo.index("trap ferma_server EXIT")]
+        # mai quando l'uscita va in un file o in una pipe; col log aperto il terminale è RS_FD_TERMINALE
+        self.assertIn('local fd="${RS_FD_TERMINALE:-1}"', testo)
+        self.assertIn('[ -t "$fd" ]', testo)
+        corpo = testo[testo.index("ferma_server() {"):testo.index("\ntrap 'codice_kit")]
         self.assertIn("terminale_a_posto", corpo)
         self.assertEqual(testo.count('ferma_server; terminale_a_posto\n    python3 "$HERE/verifica.py"'), 2)
         # senza terminale non chiama stty e non fallisce

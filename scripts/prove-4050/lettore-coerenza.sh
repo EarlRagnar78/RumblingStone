@@ -6,6 +6,7 @@
 # Serve il server di scripts/llm-locale/start.sh acceso in un altro terminale.
 set -euo pipefail
 . "$(dirname "${BASH_SOURCE[0]}")/comune.sh"
+rs_registra lettore-coerenza "$@"; trap 'rs_fine_registro $?' EXIT   # log in $RIS/log (comune.sh)
 MODELLO="${1:-qwen2.5:7b}"
 QUI="$RADICE/plans/esperimenti/grafo-eventi-2026-11-12"
 DOMANDE="$QUI/misure/domande-ollama.json"

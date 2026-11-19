@@ -1,0 +1,85 @@
+# Configurazione di Claude Code nel repo: scelte e ritorno indietro
+
+Questa guida raccoglie le scelte fatte il 2026-11-19 sulla configurazione di
+Claude Code per RumblingStone. Per ognuna dice che cosa cambia, con quale
+misura è entrata e come si torna indietro, tutta o in parte. Le decisioni
+complete stanno negli ADR citati; la storia, nelle voci della memoria storica
+(`python3 scripts/memoria_storica.py --adr 140`, `--adr 141`, `--adr 142`).
+
+## 1. La catena: come la configurazione arriva a una sessione
+
+Nei thread del progetto Claude parte nella cartella che contiene il clone
+(`/home/user`), non nel repo. La configurazione del repo ci arriva così:
+
+1. lo script d'avvio dell'ambiente cloud `RumblingStone-corpus` lancia
+   `RumblingStone/scripts/claude-progetto.sh "$PWD"`;
+2. lo script scrive in `/home/user` un `CLAUDE.md` corto, una copia di
+   `.claude/settings.json` (hook a percorso assoluto, regole `Read` ancorate
+   con il nome del repo davanti) e `.mcp.json`;
+3. le regole di `RumblingStone/.claude/rules/` non vanno copiate: Claude Code
+   le carica da sole quando legge un file del repo.
+
+Chi lavora in locale dalla radice del repo usa direttamente i file del repo;
+`claude-progetto.sh` lì non scrive nulla.
+
+**Un container già partito** tiene la copia che c'era al suo avvio. Dopo un
+merge che tocca `.claude/settings.json`, `.mcp.json` o lo script, si rilancia:
+
+```bash
+RumblingStone/scripts/claude-progetto.sh
+```
+
+## 2. Le scelte, una per una
+
+| # | Scelta | ADR, PR, merge | Misura con cui è entrata |
+|---|---|---|---|
+| 1 | La configurazione del repo arriva nei thread (script, hook che trova il repo dal suo percorso) | ADR-0140, #486, `43be2dce` | hook e `rumblingstone-tools` presenti; contesto iniziale +4.852 token |
+| 2 | Dieci connettori dell'account negati con `permissions.deny` (Gmail, Google Drive, Channel3, Clipkit, Mobbin, Microsoft Learn, MDN, Shutterstock, bioRxiv, pg-aiguide) | ADR-0140 punto 4, #486 | da 84 a 58 tool su un server di prova |
+| 3 | Plugin dell'account mai usati nel repo spenti con `enabledPlugins: false` | ADR-0140 punto 5, #487, `983791d0` | contesto iniziale da 59.670 a 53.965 token (−9,6%) |
+| 4 | Riaccesi i nove plugin di metodo di sviluppo (`sdd`, `sadd`, `engineering`, `reflexion`, `docs`, `fpf`, `ddd`, `recursive-decomposition`, `mcp`) | ADR-0140 punto 5, #488, `a4fbfafd` | costo dichiarato: +2.347 token (+4,3%), scelta del DM |
+| 5 | AGENTS.md diviso in regole `.claude/rules/rs-*.md` che arrivano con i file | ADR-0141, #489, `e1198477` | su uno script −45% di caratteri rispetto ad AGENTS.md intero |
+| 6 | `.claudeignore` tradotto in regole `Read(...)` di `permissions.deny` | ADR-0142 | righe trovate nelle ricerche fino a −39% |
+
+## 3. Tornare indietro
+
+Per ogni scelta c'è un ritorno completo (revert della PR) e, dove ha senso, un
+ritorno parziale. Dopo ogni ritorno: si rilancia `claude-progetto.sh` nei
+container già partiti e si fa la verifica della colonna a destra.
+
+| # | Ritorno completo | Ritorno parziale | Verifica |
+|---|---|---|---|
+| 1 | togliere la riga di `claude-progetto.sh` dallo script d'avvio dell'ambiente (la cambia solo il DM), poi `git revert` del merge di #486 | nessuno | in un thread nuovo `/home/user/CLAUDE.md` non esiste |
+| 2 | togliere le righe `mcp__…` da `permissions.deny` in `.claude/settings.json` | togliere la riga di un solo connettore, oppure riaccenderlo per la sessione con `/mcp` | il connettore torna nell'elenco dei tool |
+| 3, 4 | `git revert` del merge di #487 o di #488 | in `enabledPlugins` mettere `true` (o `false`) sulla riga del plugin | `claude -p --output-format stream-json --verbose "ok"` dalla cartella dei thread: campo `plugins` dell'evento `init` |
+| 5 | `git revert` del merge di #489: tornano il CLAUDE.md che fa leggere AGENTS.md intero e nessuna regola `rs-*` | togliere una regola dalla tabella `SEZIONI` di `scripts/regole_claude.py` mettendo le sue sezioni nel nucleo, poi `python3 scripts/regole_claude.py` | `python3 scripts/regole_claude.py --misura`; in una sessione, leggere un file e chiedere quali `.claude/rules` sono nel contesto |
+| 6 | togliere tutte le righe `Read(...)` da `permissions.deny` (o `git revert` della PR) | lasciare leggibile una voce: in `.claudeignore` metterla sotto un commento `# leggibile: motivo`, poi `python3 scripts/claudeignore_deny.py` | aprire con Read un file di quella voce |
+
+Due regole valgono per ogni ritorno:
+
+- **AGENTS.md e `.claudeignore` sono le fonti.** Le regole generate si
+  rigenerano, non si correggono a mano: `regole_claude.py --check` e
+  `claudeignore_deny.py --check` girano nei test e bocciano la deriva.
+- **Un ritorno è una PR come le altre**, con la sua riga in
+  `plans/CHANGELOG.md`, la voce nella memoria storica e la misura prima e dopo.
+
+## 4. Come si misura
+
+| Che cosa | Comando |
+|---|---|
+| contesto iniziale, plugin, server, skill | `cd /home/user && claude -p --max-turns 1 --output-format stream-json --verbose "Rispondi solo: ok"`: evento `init` e `usage` del `result` |
+| ripartizione del contesto | `cd /home/user && claude -p "/context"` |
+| regole caricate per compito | `python3 scripts/regole_claude.py --misura` |
+| righe trovate nelle ricerche | `rg -c PAROLA . ` contro la stessa ricerca con le voci di `.claudeignore` come `--ignore-file` |
+
+`claude -p` non vede i connettori di claude.ai: il loro peso si misura solo in
+un thread vero.
+
+## 5. Cose provate che non funzionano
+
+- **`.claudeignore`**: Claude Code non lo legge. Un file elencato lì si apre
+  comunque (prova del 2026-11-19). Per questo esiste la scelta 6.
+- **Un RAG o un grafo sulle istruzioni**: scartati, perché una regola
+  obbligatoria potrebbe non arrivare. Le regole a percorso sono deterministiche.
+- **Il CLAUDE.md senza la riga di `fase1.py`**: le regole arrivano dopo il primo
+  file letto, e in prova l'agente aveva risposto senza lanciare `fase1.py`. La
+  riga resta nel CLAUDE.md dei thread.

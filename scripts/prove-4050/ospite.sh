@@ -2,12 +2,14 @@
 # ospite.sh — su quale sistema girano le prove, e come si entra nel «box» (ADR-0136).
 # Lo includono comune.sh di qui, di scripts/llm-locale/ e di scripts/comfyui-local/.
 #
-#   rs_sistema   bazzite | debian | cachyos | arch | fedora | ubuntu | wsl | altro
+#   rs_sistema   bazzite | debian | cachyos | arch | fedora | ubuntu | wsl | flatpak | altro
 #   rs_modo      box     (Linux: gli strumenti stanno in un Distrobox con la GPU dell'host)
 #                diretto (WSL2 o RS_SENZA_BOX=1: gli strumenti stanno sul sistema stesso)
 #   nel_box BOX COMANDO...    esegue COMANDO nel box, o direttamente in modo diretto
 #   box_c_e BOX               vero se il box esiste (sempre vero in modo diretto)
 #   box_avvia BOX             accende il box se è spento e aspetta la sua inizializzazione
+#   box_a_meta BOX            vero se il box c'è ma la sua inizializzazione non è mai finita
+#   box_togli BOX             toglie il box (i dati delle prove stanno fuori dai box)
 #
 # RS_OS_RELEASE e RS_PROC_VERSION servono solo ai test (simulano un altro sistema).
 
@@ -15,7 +17,28 @@ rs_wsl() {
   grep -qiE 'microsoft|wsl' "${RS_PROC_VERSION:-/proc/version}" 2>/dev/null
 }
 
+# rs_sandbox — vero dentro una sandbox Flatpak (il terminale di un editor installato da Flathub):
+# lì /etc/os-release è quello del runtime (ID=org.freedesktop.platform) e l'host non si vede.
+rs_sandbox() {
+  [ -e "${RS_FLATPAK_INFO:-/.flatpak-info}" ] && return 0
+  grep -q '^ID=org\.freedesktop\.platform' "${RS_OS_RELEASE:-/etc/os-release}" 2>/dev/null
+}
+
+# rs_ferma_se_sandbox — le prove vogliono l'host: nvidia-smi, distrobox e podman dalla sandbox non
+# si vedono (primo giro del DM sull'ASUS, 2026-11-18: «sistema: altro 25.08»). Esce con 5.
+rs_ferma_se_sandbox() {
+  rs_sandbox || return 0
+  {
+    echo "ERRORE: questo terminale gira dentro una sandbox Flatpak (quello di un editor installato da"
+    echo "        Flathub, per esempio): da qui il sistema vero, la GPU, distrobox e podman non si vedono."
+    echo "        Apri il terminale del sistema (Ptyxis o Konsole dal menu) e rilancia lo stesso comando."
+    echo "        Oppure, da qui, se l'applicazione lo permette:  flatpak-spawn --host bash"
+  } >&2
+  exit 5
+}
+
 rs_sistema() {
+  if rs_sandbox; then echo flatpak; return; fi
   if rs_wsl; then echo wsl; return; fi
   local f="${RS_OS_RELEASE:-/etc/os-release}" id="" like=""
   if [ -r "$f" ]; then
@@ -81,4 +104,24 @@ box_avvia() {
 box_c_e() {
   [ "$(rs_modo)" = diretto ] && return 0
   podman container exists "$1" 2>/dev/null
+}
+
+# box_a_meta BOX — vero se il box è stato creato ma la sua inizializzazione non è mai arrivata in
+# fondo (macchina spenta durante il primo avvio, 2026-11-18). Il segno è il log di distrobox, che
+# a ogni avvio riuscito scrive «container_setup_done». Un box mai acceso conta come a metà: rifarlo
+# costa niente. Un box acceso col log vuoto (driver dei log spento) non si giudica: resta com'è.
+box_a_meta() {
+  local box="$1" avviato log
+  [ "$(rs_modo)" = diretto ] && return 1
+  podman container exists "$box" 2>/dev/null || return 1
+  log=$(podman logs "$box" 2>&1 || true)
+  case "$log" in *container_setup_done*) return 1 ;; esac
+  avviato=$(podman inspect -f '{{.State.StartedAt}}' "$box" 2>/dev/null || echo "")
+  case "$avviato" in ""|0001-*) return 0 ;; esac
+  [ -n "$log" ]
+}
+
+# box_togli BOX — distrobox rm, e podman se distrobox non ci riesce (box rimasto a metà)
+box_togli() {
+  distrobox rm --force "$1" >/dev/null 2>&1 || podman rm -f "$1" >/dev/null 2>&1
 }

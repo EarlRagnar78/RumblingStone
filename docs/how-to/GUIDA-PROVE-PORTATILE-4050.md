@@ -43,6 +43,7 @@ scripts/prove-4050/kit.sh installa            # una volta sola: pacchetti, box, 
 scripts/prove-4050/kit.sh piano               # le prove, il thread che le aspetta, lo stato di oggi
 scripts/prove-4050/kit.sh tutte               # tutte, nell'ordine di prove.json
 scripts/prove-4050/kit.sh riporta             # verifica e archivio da caricare nel thread
+scripts/prove-4050/kit.sh pulisci             # toglie i box (chiede conferma); modelli e risultati restano
 ```
 
 `kit.sh tutte` lancia le prove di `scripts/prove-4050/prove.json` una dopo
@@ -466,6 +467,9 @@ nell'ADR della prova:
 
 | Sintomo | Cosa fare |
 |---|---|
+| «questo terminale gira dentro una sandbox Flatpak», oppure «sistema: altro 25.08» | Stai usando il terminale di un'applicazione installata da Flathub (un editor, per esempio): da lì GPU, distrobox e podman non si vedono. Apri il terminale del sistema (Ptyxis o Konsole) e rilancia; oppure `flatpak-spawn --host bash` se l'applicazione lo permette. |
+| L'installazione si è interrotta (macchina spenta, rete caduta) | Rilancia `kit.sh installa`: i passi fatti non si rifanno, e un box rimasto a metà viene tolto e ricreato da solo. Per ripartire da zero: `kit.sh pulisci` (chiede conferma, toglie i box `llm-locale`, `comfyui` e `whisper`), poi `kit.sh installa`. I modelli scaricati, i pesi e i risultati stanno fuori dai box e non si perdono. Un solo box: `kit.sh pulisci comfyui`. |
+| Dopo una prova il testo esce «a scaletta» (ogni riga parte dove finisce la precedente) | Il terminale è rimasto in modalità grezza dopo lo spegnimento del server nel box. Il kit ora lo rimette a posto da solo; se capita ancora, scrivi `stty sane` e premi Invio (anche se non vedi quello che scrivi) oppure `reset`. |
 | `distrobox enter` resta appeso su «host's nvidia integration» | È noto sull'ASUS: il kit accende il box con `podman start` e legge il log a intervalli (`box_avvia`, cinque minuti al massimo: `RS_BOX_ATTESA`), poi entra lo stesso. Se non parte, `podman logs llm-locale \| tail` (o `comfyui`). |
 | `verifica.md`: «ha lavorato un'altra scheda» sulla trascrizione | Vulkan ha scelto la scheda integrata: la memoria della NVIDIA non è salita mentre whisper girava. Guarda `trascrizione-gpu/dispositivo.txt` e `vram-durante.txt` e carica l'archivio lo stesso: è un risultato. |
 | Su Windows lo script mostra lettere storpiate | Hai una copia vecchia di `installa-windows.ps1`: `git pull` (il file ora ha il BOM che Windows PowerShell 5.1 vuole). |

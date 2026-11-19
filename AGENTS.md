@@ -315,7 +315,7 @@ il compito lo chiede, e le skill `rumblingstone-*` hanno sempre la precedenza.
 
 | Server MCP | Quando si usa |
 |---|---|
-| `rumblingstone-tools` | i 77 tool di `scripts/tools.manifest.json` ([ADR-0030](plans/adr/ADR-0030-server-mcp-sui-tool.md)). Gira in sola lettura: i tool che scrivono canone restano bloccati (ADR-0007) |
+| `rumblingstone-tools` | i tool di `scripts/tools.manifest.json` (quanti sono lo dice `python3 scripts/tools_manifest.py --check`) ([ADR-0030](plans/adr/ADR-0030-server-mcp-sui-tool.md)). Gira in sola lettura: i tool che scrivono canone restano bloccati (ADR-0007) |
 | Canva, Fonts | immagini e tipografia (`rumblingstone-art-direction`, `rumblingstone-editoria`) |
 | Context7 | documentazione di librerie e di Typst |
 | Firecrawl | ricerche di lore e regole sul web |
@@ -335,6 +335,12 @@ repo non ha mai usato sono spenti con `enabledPlugins: false`: restano accesi
 `engineering`, `reflexion`, `docs`, `fpf`, `ddd`, `recursive-decomposition`,
 `mcp`) riaccesi su scelta del DM (ADR-0140, punto 5). Lo stesso vale per i plugin spenti a livello globale: un agente non
 può accenderli da solo.
+
+**File generati e vendorizzati**: `.claudeignore` elenca ciò che l'agente non
+deve leggere, ma Claude Code non lo legge da solo: `scripts/claudeignore_deny.py`
+lo traduce in regole `Read(...)` di `permissions.deny` (ADR-0142), che valgono
+anche per Grep e Glob. Le scelte e come tornare indietro sono in
+`docs/how-to/GUIDA-CONFIGURAZIONE-CLAUDE.md`.
 
 ---
 

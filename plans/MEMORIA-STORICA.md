@@ -2234,3 +2234,14 @@ repo scritto con altre parole.
 - **Testo:** il DM ha scelto sulla card le regole a percorso. Provato che `.claude/rules/` del repo si carica anche quando Claude parte nella cartella che contiene il clone, e che una regola con `paths:` entra solo con i suoi file. AGENTS.md resta la fonte; `regole_claude.py` ne ricava cinque regole e `--check` le tiene allineate. Nella prima prova senza la riga di `fase1.py` nel CLAUDE.md l'agente non lanciava `fase1.py`, perché le regole arrivano dopo il primo file letto: la riga è rimasta nel CLAUDE.md. Il DM aveva chiesto anche di un grafo a eventi o di un RAG per le istruzioni: scartati perché non deterministici (MS-0192 per la prova del RAG sui contenuti)
 - **Trovato nel repo:** `scripts/regole_claude.py` · `.claude/rules/rs-*.md` · `plans/adr/ADR-0141-le-regole-di-agents-arrivano-con-i-file.md`
 - **Solo qui:** il nucleo resta il 55% di AGENTS.md; ridurlo vuol dire riscrivere AGENTS.md. Le misure con `claude -p` sono una corsa per lato
+
+### MS-0198 · 2026-11-19 · `.claudeignore` diventa regole deny, e la guida al ritorno indietro
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** ADR-0142
+- **Temi:** claude-code claudeignore permissions deny contesto grep guida regressione decisione-dm thread
+- **Origine:** riga del 2026-11-19 «ADR-0142: `.claudeignore` diventa regole `Read` di `permissions.deny`» in `plans/CHANGELOG.md`
+- **Testo:** provato che Claude Code non legge `.claudeignore` (un file elencato si apre) e che `permissions.deny` con `Read(...)` blocca Read, Grep e Glob. `claudeignore_deny.py` traduce le voci; immagini, PDF, `.claude/skills/` e `.claude/.skills-sync-status` restano leggibili apposta. Nei thread le regole ancorate prendono il nome del repo davanti. Il DM ha chiesto di fare le pratiche in ordine (A, B, C, D) una PR ciascuna, di documentare tutte le scelte per poter tornare indietro e di verificare che nessuna abbia problemi: la guida `docs/how-to/GUIDA-CONFIGURAZIONE-CLAUDE.md` raccoglie le sei scelte del 19/11
+- **Trovato nel repo:** `scripts/claudeignore_deny.py` · `.claudeignore` · `docs/how-to/GUIDA-CONFIGURAZIONE-CLAUDE.md` · `plans/adr/ADR-0142-claudeignore-diventa-regole-deny.md`
+- **Solo qui:** nella verifica delle scelte è emerso che le istruzioni dei server dei connettori negati entrano comunque nel contesto (la regola deny toglie i tool, non le istruzioni) e che le 18 skill del repo compaiono due volte, come skill utente e come `RumblingStone:*` appena si legge un file del repo

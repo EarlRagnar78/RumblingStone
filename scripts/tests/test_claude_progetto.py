@@ -55,6 +55,10 @@ class TestClaudeProgetto(unittest.TestCase):
                                    text=True, check=True).stdout)
         self.assertTrue(hook.is_file(), f"l'hook punta a un file che c'è: {comando}")
 
+        ancorate = [r for r in impostazioni["permissions"]["deny"] if r.startswith("Read(/")]
+        self.assertTrue(ancorate and all(r.startswith("Read(/Repo Con Spazio/") for r in ancorate),
+                        "le regole Read ancorate puntano dentro il repo (ADR-0142)")
+
         mcp = json.loads((self.tmp / ".mcp.json").read_text(encoding="utf-8"))
         argomento = mcp["mcpServers"]["rumblingstone-tools"]["args"][0]
         self.assertTrue(Path(argomento).is_absolute() and Path(argomento).is_file())

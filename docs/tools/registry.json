@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 146,
+  "tool_count": 147,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -8796,6 +8796,63 @@
       "exit_codes": {
         "0": "ok",
         "1": "errore"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": null,
+      "tests": [
+        "scripts/tests/test_claude_progetto.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0140-la-configurazione-claude-del-repo-arriva-anche-nei-thread.md"
+      ]
+    },
+    {
+      "id": "claudeignore-deny",
+      "path": "scripts/claudeignore_deny.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/claudeignore_deny.py [--check]",
+      "summary": "Traduce .claudeignore (che Claude Code non legge) in regole Read di permissions.deny in .claude/settings.json (ADR-0142).",
+      "use_case": "«Ho aggiunto una voce a .claudeignore: Claude Code la rispetta davvero?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se permissions.deny non è allineato a .claudeignore."
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "path": ".claude/settings.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "regole non allineate (--check)"
       },
       "determinism": {
         "deterministic": true,

@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-19 | STATO-E-ORDINE | ADR-0142: `.claudeignore` diventa regole `Read` di `permissions.deny` (Claude C… | ✅ righe trovate nelle ricerche, prima e dopo: Skullcrusher 1.912 → 1.168 (−39%), Thorik −18%, Aegis Fang −16%, Collezionista −16%, Hammerfist −10%, Sonjak −9%,… |
 | 2026-11-19 | STATO-E-ORDINE | ADR-0141: le regole di AGENTS.md arrivano a Claude con i file a cui servono (ca… | ✅ `--misura`: script e piani −45% di caratteri rispetto ad AGENTS.md intero, master d'arco −16%, skill −22%, configurazione −12%; compito vero con `claude -p`… |
 | 2026-11-19 | STATO-E-ORDINE | ADR-0140, correzione: riaccesi per RumblingStone i nove plugin di metodo di svi… | ✅ `claude -p` dalla cartella del clone, main 983791d0 contro ramo: plugin da 7 a 16, skill da 73 a 115, server MCP da 2 a 12 (i 10 nuovi sono di `engineering`:… |
 | 2026-11-19 | STATO-E-ORDINE | ADR-0140 accettata: i plugin dell'account che il repo non ha mai usato sono spe… | ✅ `claude -p` dalla cartella del clone con lo script, main contro ramo: plugin da 36 a 7, server MCP da 102 a 2 (falliti all'avvio da 95 a 0), skill da 257 a 7… |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-18 | AVVENTURE-COMMUNITY | Calendario di ARC-09: il quickstart e la tabella delle armate allineati a… | il ricontrollo del 18/11 ha trovato due calendari diversi: `P2B-Torneo-DAUTH-DM-MASTER-REFERENCE` §1.1 (autoritativa) e `campaign/state.md` r.381 mettono i tre… |
 | 2026-11-18 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 5: sei frasi corrette dopo la rilettura… | ✅ frasi del lotto 5 in contraddizione con la loro fonte: da 6 a 0 su 6 testi riletti (tre nel Palio, due nel Ghostlord, una nel Collezionista); misure di Azarr… |
 | 2026-11-18 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: ricontrollo del corredo di dieci schede chiesto dal DM… | errori nelle note di corredo da 4 a 0 e balestre senza munizioni da 2 a 0 su dieci schede ricontrollate; `verifica_scheda.py` 0 violazioni prima e dopo |
-| 2026-11-18 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Kit delle prove 4050, primo giro del DM sull'ASUS (ADR-0136): il kit è partito… | 🟡 messaggi che spiegano il fallimento di quel giro: 0 → 1; prove fallite prima di partire viste dalla verifica: 0 su 1 → 1 su 1; comandi per ripartire pulito:… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 197 voci, l'ultima MS-0197 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 198 voci, l'ultima MS-0198 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

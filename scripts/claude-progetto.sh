@@ -57,7 +57,7 @@ fi
 
 if scrivibile "${DEST}/.claude/settings.json"; then
   python3 - "${REPO}" "${DEST}/.claude/settings.json" << 'EOF'
-import json, shlex, sys
+import json, os, shlex, sys
 from pathlib import Path
 repo, out = Path(sys.argv[1]), Path(sys.argv[2])
 cfg = json.loads((repo / ".claude" / "settings.json").read_text(encoding="utf-8"))
@@ -66,6 +66,13 @@ for gruppi in cfg.get("hooks", {}).values():
         for h in gruppo.get("hooks", []):
             if h.get("type") == "command":
                 h["command"] = h["command"].replace("$CLAUDE_PROJECT_DIR", shlex.quote(str(repo)))
+# Le regole Read ancorate («/x») valgono dalla cartella del progetto: qui il
+# progetto è la cartella che contiene il repo, quindi si aggiunge il suo nome
+# (ADR-0142). Quelle «**/x» valgono a ogni livello e restano come sono.
+rel = os.path.relpath(repo, out.parent.parent)
+perm = cfg.get("permissions", {})
+perm["deny"] = [r.replace("Read(/", f"Read(/{rel}/", 1) if r.startswith("Read(/") else r
+                for r in perm.get("deny", [])]
 out.write_text(json.dumps(cfg, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 EOF
   scritti+=("settings.json")

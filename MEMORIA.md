@@ -84,7 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
-| 2026-11-19 | STANDARD-STAMPA | Convergenza di typst (richiesta del coordinatore prima dei segnalibri: il volum… |  |
+| 2026-11-19 | STANDARD-STAMPA | Convergenza di typst (richiesta del coordinatore prima dei segnalibri: il volum… | ✅ rimandi giusti del volume 227 → 242 su 242; numeri instabili 2 → 0 booklet su 22 |
 | 2026-11-19 | STANDARD-STAMPA | Card di Jfs sulla serata di ARC-07: Durik resta in fondo come galleria dei PNG… | ✅ serata da 3 difetti di struttura a 0 (134 → 132 pp); rimandi 113 su 122 con la pagina, tutti giusti; debito INFERRED 14 → 14 (le due domande chiuse lo stesso… |
 | 2026-11-19 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, revisione storica delle schede su dnd.arkalseif.info (richiesta del D… | verifica_scheda contro main 517a3e79: violazioni 34 → 2 (le due rimaste sono nell'archivio `06_…/_ARCHIVIO/CoronaDiAdamantio/villans.md`, che non si tocca), no… |
 | 2026-11-19 | STANDARD-STAMPA | ADR-0145 (proposta): l'ordine dei capitoli del booklet della serata si misura (… | 🟡 serata da 15 difetti di struttura a 3 (131 → 134 pp; un blocco fuori posto conta uno); rimandi con pagina da 101 a 115 su 124, tutti giusti, titolo assente d… |

@@ -59,7 +59,7 @@ Misure del 2026-11-19, PDF composti con la catena di stampa:
 | Stampa | Pagine | Rimandi | Titolo non trovato | Con pagina | Pagina giusta |
 |---|---|---|---|---|---|
 | Serata, main | 130 | 107 | 8 | 0 | 0 |
-| Serata, questa PR | 130 | 108 | 1 | 100 | 100 |
+| Serata, questa PR | 131 | 108 | 1 | 100 | 100 |
 | Volume d'arco ARC-07 | 294 | 242 | 2 | 236 | 236 |
 
 Il titolo non trovato rimasto nella serata è un'apertura in grassetto, non un
@@ -73,8 +73,8 @@ Quello che si paga:
   spezzarsi a pagina girata (tema, ramo «in fondo a una colonna»). Nel volume
   d'arco toglie due schede spezzate su tre (Zog'tar e Skullcrusher) al prezzo
   di una pagina. Resta spezzata Terros, alta due colonne intere: con la scheda
-  d'entrata in float sopra non sta in una pagina. La serata ha 1 scheda
-  spezzata (Balvar), come su main. Una prima prova che decideva dalla
+  d'entrata in float sopra non sta in una pagina. Nella serata e nel
+  booklet lungo toglie la scheda spezzata di Balvar, con una pagina in più. Una prima prova che decideva dalla
   posizione prima del salto di colonna non convergeva (la posizione letta era
   quella del giro di composizione precedente) ed è stata scartata;
 - le distanze fra dove la persona agisce e la sua scheda, nel volume d'arco,

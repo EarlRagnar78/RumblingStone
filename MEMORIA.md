@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-19 | STANDARD-STAMPA | Convergenza di typst (richiesta del coordinatore prima dei segnalibri: il volum… |  |
 | 2026-11-19 | STANDARD-STAMPA | Card di Jfs sulla serata di ARC-07: Durik resta in fondo come galleria dei PNG… | ✅ serata da 3 difetti di struttura a 0 (134 → 132 pp); rimandi 113 su 122 con la pagina, tutti giusti; debito INFERRED 14 → 14 (le due domande chiuse lo stesso… |
 | 2026-11-19 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, revisione storica delle schede su dnd.arkalseif.info (richiesta del D… | verifica_scheda contro main 517a3e79: violazioni 34 → 2 (le due rimaste sono nell'archivio `06_…/_ARCHIVIO/CoronaDiAdamantio/villans.md`, che non si tocca), no… |
 | 2026-11-19 | STANDARD-STAMPA | ADR-0145 (proposta): l'ordine dei capitoli del booklet della serata si misura (… | 🟡 serata da 15 difetti di struttura a 3 (131 → 134 pp; un blocco fuori posto conta uno); rimandi con pagina da 101 a 115 su 124, tutti giusti, titolo assente d… |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-19 | STATO-E-ORDINE | Due test che dipendevano dalla macchina, corretti con il test scritto prima.… | ✅ |
 | 2026-11-19 | STATO-E-ORDINE | ADR-0143: i gate bloccanti e veloci della CI girano prima del push.… | ✅ |
 | 2026-11-19 | STATO-E-ORDINE | ADR-0142: `.claudeignore` diventa regole `Read` di `permissions.deny` (Claude C… | ✅ righe trovate nelle ricerche, prima e dopo: Skullcrusher 1.912 → 1.168 (−39%), Thorik −18%, Aegis Fang −16%, Collezionista −16%, Hammerfist −10%, Sonjak −9%,… |
-| 2026-11-19 | STATO-E-ORDINE | ADR-0141: le regole di AGENTS.md arrivano a Claude con i file a cui servono (ca… | ✅ `--misura`: script e piani −45% di caratteri rispetto ad AGENTS.md intero, master d'arco −16%, skill −22%, configurazione −12%; compito vero con `claude -p`… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 208 voci, l'ultima MS-0208 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 209 voci, l'ultima MS-0209 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

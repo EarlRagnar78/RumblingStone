@@ -59,6 +59,22 @@ class Esito(NamedTuple):
     pdfa: str = ""
     #: perché il PDF/A non c'è (il messaggio di typst), vuoto se c'è
     motivo_pdfa: str = ""
+    #: gli avvisi di typst, uno per riga (messaggio e suggerimenti). Prima
+    #: del 2026-11-19 il ramo PyPI li buttava via, e il controllo di
+    #: misura_stampa su «did not converge» non vedeva niente.
+    avvisi: tuple[str, ...] = ()
+
+
+#: L'avviso che dice che un numero di pagina STAMPATO è cambiato fra l'ultimo
+#: giro di impaginazione e il precedente: il rimando «p. N» può essere
+#: sbagliato. Gli altri avvisi di convergenza (una misura, una posizione)
+#: dicono che Typst ha esitato, non che sulla pagina c'è un numero sbagliato.
+NUMERO_INSTABILE = "value of the page counter did not converge"
+
+
+def numeri_instabili(e: Esito) -> list[str]:
+    """Gli avvisi di `e` per cui un numero di pagina stampato può essere sbagliato."""
+    return [a for a in e.avvisi if a.startswith(NUMERO_INSTABILE)]
 
 
 def motore() -> str | None:
@@ -183,8 +199,9 @@ def _compila(typ: Path, pdf: Path, *, root: Path, font: Path, pacchetti: Path,
             opz["pdf_standards"] = standard
         for tag in (True, False) if not standard else (True,):
             try:
-                _typst.compile(str(typ), output=str(pdf), pdf_tags=tag, **opz)
-                return Esito(True, "", not tag)
+                _, avvisi = _typst.compile_with_warnings(str(typ), output=str(pdf), pdf_tags=tag, **opz)
+                return Esito(True, "", not tag, avvisi=tuple(
+                    " · ".join([a.message, *(a.hints or [])]).replace("\n", " ") for a in avvisi))
             except _typst.TypstError as e:
                 if not (tag and _e_bug_dei_tag(str(e))):
                     return Esito(False, str(e), not tag)
@@ -195,8 +212,14 @@ def _compila(typ: Path, pdf: Path, *, root: Path, font: Path, pacchetti: Path,
     r = subprocess.run(cmd + [str(typ), str(pdf)], capture_output=True, text=True)
     if r.returncode != 0 and _e_bug_dei_tag(r.stderr) and not standard:
         r = subprocess.run(cmd + ["--no-pdf-tags", str(typ), str(pdf)], capture_output=True, text=True)
-        return Esito(r.returncode == 0, r.stderr, True)
-    return Esito(r.returncode == 0, r.stderr, False)
+        return Esito(r.returncode == 0, r.stderr, True, avvisi=_avvisi_cli(r.stderr))
+    return Esito(r.returncode == 0, r.stderr, False, avvisi=_avvisi_cli(r.stderr))
+
+
+def _avvisi_cli(stderr: str) -> tuple[str, ...]:
+    """Le righe «warning: …» della CLI, come quelle del ramo PyPI."""
+    return tuple(r.split("warning:", 1)[1].strip() for r in stderr.splitlines()
+                 if r.lstrip().startswith("warning:"))
 
 
 def valuta(typ: Path, espressione: str, *, root: Path, font: Path, pacchetti: Path,

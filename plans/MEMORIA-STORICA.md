@@ -2355,3 +2355,14 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` · `plans/esperimenti/ordine-serata-2026-11-19/ruoli-serata.json`
 - **Solo qui:** incantesimi del Vecchio decisi da Jfs alle 14:06 UTC: i conosciuti dell'Adulto più *dissolvi magie* e *lentezza* (D64); l'INFERRED è tolto. Allerta: +31 a Ascoltare e Osservare, perché i talenti del Vecchio elencano Allerta e l'SRD dà +2 (consiglio del coordinatore; Jfs può riportarlo a +29). Nessun INFERRED nuovo resta
 
+### MS-0209 · 2026-11-19 · Typst converge sul volume d'arco, e il controllo di convergenza vede di nuovo
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** ADR-0144
+- **Temi:** stampa typst convergenza rimandi pagina volume arco abbazia misura_stampa avvisi tema scheda colonna
+- **Origine:** riga del 2026-11-19 «Convergenza di typst» in `plans/CHANGELOG.md`
+- **Testo:** il coordinatore mette la convergenza prima dei segnalibri: il volume d'arco di ARC-07 su main stampava 15 rimandi su 242 sbagliati di una pagina (`plans/esperimenti/booklet-arc07-2026-11-19/misura_rimandi.py`). Bisezione per varianti del tema (ognuna compilata con `typst.compile_with_warnings`): togliere il rimando muto sulla stessa pagina, la figura che va a capo, la tabella che scavalca non cambia niente (44 avvisi); la logica della scheda «entrambe» li porta a 3. Due colpevoli: la scheda su una pagina a una colonna (l'appendice A4 di DEF-4, A.1-bis, entrata con la #499) e il primo `colbreak()` deciso su `here()` prima del riquadro (l'Abbazia, indice a 30, 31, 32 a ogni giro). Restano avvisi «a measured element did not stabilize» (tabelle e schede misurate con dentro un `context`): non cambiano numeri stampati, e il gate non li conta. Il gate di `misura_stampa` cercava «did not converge» nello stderr, che col typst di PyPI è sempre vuoto: era cieco da ADR-0116. Ora `Esito.avvisi` e `typst_motore.numeri_instabili()`; prova su main: 11 numeri instabili nel volume, 0 nella serata. Prezzo: lo Skullcrusher Vecchio si spezza sulle facciate 204-205 del volume
+- **Trovato nel repo:** `scripts/typst/tema-rumblingstone.typ` · `scripts/typst_motore.py` · `scripts/misura_stampa.py` · `scripts/tests/test_typst_motore.py`
+- **Solo qui:** il documento che oscilla nel test (`OSCILLA`) mette un salto pagina se il segno cade su una pagina pari: è il più piccolo che typst non fa convergere. Una riproduzione minima della scheda su una colonna non oscilla da sola (serve il resto del volume), perciò il cancello è la misura sui booklet veri, non un test unitario
+

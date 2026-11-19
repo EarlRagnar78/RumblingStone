@@ -3487,9 +3487,10 @@ accorcia, il primo passo indietro che il drago fa senza volerlo.
 > **Che fate?**
 
 ⚠️ **Dal round 3 si smette.** La regia serve a far **atterrare** l'inizio; se la
-tieni per otto round diventa una lettura e il combattimento si ferma. Dal terzo
-round si torna alle tattiche del drago, più sopra, e si descrive solo quello che
-cambia davvero.
+tieni per otto round diventa una lettura e il combattimento si ferma.
+
+Dal terzo round si torna alle tattiche del drago, più sopra, e si descrive solo
+quello che cambia davvero.
 
 #### Tattiche di Skullcrusher — regia round per round (stile RHoD, aggancio M7-B)
 > Scritte dal punto di vista del drago. Skullcrusher è **giovane nella sua

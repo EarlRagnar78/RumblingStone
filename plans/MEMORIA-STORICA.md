@@ -2391,10 +2391,21 @@ repo scritto con altre parole.
 ### MS-0212 · 2026-11-19 · I ruoli delle sezioni passano nel manifest, e l'ordine del booklet diventa un cancello
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #503
 - **ADR:** ADR-0145
 - **Temi:** stampa ordine ruoli manifest cancello misura_ordine misura_stampa cmos front matter back matter epub type difetti_ordine
 - **Origine:** riga del 2026-11-19 «ADR-0145, i ruoli nel manifest e l'ordine come cancello» in `plans/CHANGELOG.md`
 - **Testo:** Jfs (14:07 UTC) vuole chiusi in modo deterministico i limiti dichiarati; due erano «la misura d'ordine non è un cancello» e «i ruoli sono scritti a mano in file a parte». Lo standard degli editori tiene il ruolo accanto al contenuto (CMOS 1.4, EPUB 3 `epub:type`), e così si è fatto: chiave `ruolo` nei capitoli, `ruoli_sezioni` per le eccezioni. La migrazione è stata provata etichettando i PDF della #502 con i file vecchi e con i manifest: zero differenze su 128 e 398 sezioni. Il thread del volume ha accettato il nome `ruolo` e darà alla sua appendice `"ruolo": "riferimento"`. Tre regole non combaciano più con nessuna sezione (A.1 dell'Adulto, la cassetta nella serata, l'Appendice C) e restano come guardie. Il cancello statico sta in `test_misura_ordine.py`, quello sul PDF in `misura_stampa.py`
 - **Trovato nel repo:** `scripts/misura_ordine.py` · `scripts/misura_stampa.py` · `scripts/schemas/booklet_manifest.schema.json` · `plans/adr/ADR-0145-l-ordine-del-booklet-della-serata-si-misura.md`
 - **Solo qui:** la prova del manifest rotto apposta è in scratchpad, non nel repo: tre difetti (R0 e due pagine di R6)
+
+### MS-0213 · 2026-11-19 · Le etichette dei pilastri escono dalle stampe, e il bug dei tag di typst torna con le liste
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** ADR-0070
+- **Temi:** stampa etichette pilastri prosa filtro typst pdfua pdfa bug tag liste impaginazione
+- **Origine:** riga del 2026-11-19 «Le etichette dei pilastri non si stampano» in `plans/CHANGELOG.md`
+- **Testo:** Jfs ha scelto sulla card del thread della prosa di togliere le etichette dei pilastri («Read-aloud (Andor lead)», «(pilastro GoT)») da tutte le stampe, tenendole nel sorgente: servono a chi scrive e a `misura_craft`. Il filtro sta in `leggi_per_la_stampa`, quindi vale per Typst e per Homebrewery, e non tocca i master. Togliere «(Mercer lead)» da un riquadro ha accorciato di una riga la colonna e ha spostato una voce d'elenco a cavallo della pagina 102, che è una tabella a pagina piena: typst 0.15.2 rifiuta allora PDF/UA-1 con «invalid list (L) structure», e il motore ripiega sul PDF senza standard. Come si trova: applicare al `.typ` di main le righe cambiate una alla volta (qui una sola), poi provare a tenere insieme ogni lista dopo quella riga. Tenere insieme ogni voce nel tema chiude il bug ma manda 27 righe fuori margine nella serata e aggiunge da 2 a 3 pagine a volume: scartato. Si è diviso in due il capoverso «Dal round 3 si smette» di DEF-4, senza cambiare parole. Il bug può tornare con qualunque modifica che sposti le pagine
+- **Trovato nel repo:** `scripts/dmcore/testo.py` · `scripts/tests/test_etichette_pilastri.py` · `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md`
+- **Solo qui:** l'export avvisa con «non è PDF/A» ma esce verde: in CI il ripiego non ferma niente, e lo si vede solo leggendo l'avviso o ricompilando con gli standard

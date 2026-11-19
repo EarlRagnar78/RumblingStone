@@ -2030,7 +2030,7 @@ anni prima di lui, e per un mercante non c'è niente di più interessante.
    sopra, con la correzione del paragrafo «A ≈372 DR il creditore non c'è
    ancora» per chi firma a ≈372 DR.
 
-> **Read-aloud (Andor lead) — per Artemis, alla fine dell'ora.** *La pergamena
+> **Read-aloud — per Artemis, alla fine dell'ora.** *La pergamena
 > si accartoccia in cenere tiepida. Sotto il guanto la gemma pesa e scalda
 > come prima, ma dentro la pietra c'è una scrittura fitta e ordinata, da libro
 > mastro. In fondo alla
@@ -2546,7 +2546,7 @@ descrivi tu in una riga e vai avanti: è un regalo, non un compito.
 
 ## §1 — HIGHLIGHT ASIMMETRICI PER PG (i QUATTRO, Hella è tornata)
 
-### 🛡️ THORIK — la profezia fatta carne (Casa di Davide lead)
+### 🛡️ THORIK — la profezia fatta carne
 - È la SUA leggenda: la Corona che porta è la stessa che il nonno di Thorgrim
   perse contro Skullcrusher. Aegis Fang, nelle sue mani e in quelle di Thorgrim,
   **canta la stessa nota** attraverso mille anni. Thorik non compie la profezia:
@@ -2554,7 +2554,7 @@ descrivi tu in una riga e vai avanti: è un regalo, non un compito.
 - Al duello, **Aegis Fang scaglia la Cicatrice Ancestrale** (Scena 11): è il gesto che
   segna Skullcrusher e, mille anni dopo, Fauci (carry-over B4).
 
-### 🌙 HELLA — la seconda vita alla prova (BG3 lead — il ritorno che conta)
+### 🌙 HELLA — la seconda vita alla prova (il ritorno che conta)
 - È il suo **primo scontro da risorta**: Ibrido Treant, Collana, Durik al
   fianco. Il DM lo faccia pesare — la morte l'ha cambiata, e ora combatte in un
   passato dove non è mai esistita.
@@ -2576,7 +2576,7 @@ descrivi tu in una riga e vai avanti: è un regalo, non un compito.
   tentativo**. Risponde al secondo. Dillo in una riga, nel momento peggiore, e
   non spiegarlo.
 
-### ⚒️ TORDEK — il pugno che deve trattenersi (Andor support)
+### ⚒️ TORDEK — il pugno che deve trattenersi
 - La **Cintura della Devastazione rifiuta di attivarsi** contro Skullcrusher,
   nella Scena 11 (*«il vero scontro appartiene al futuro»*); contro Zog'tar, nella
   Scena 8, funziona: è coerenza, non nerf — Tordek deve vincere **senza**
@@ -2584,7 +2584,7 @@ descrivi tu in una riga e vai avanti: è un regalo, non un compito.
 - I **Bracieri** (coscienza) riconoscono la fucina antica di Hammerfist: *«Qui
   è dove tutto è cominciato, ragazzo. Batti bene.»*
 
-### 🔮 ARTEMIS — il predone davanti al ladro (Andor lead)
+### 🔮 ARTEMIS — il predone davanti al ladro
 - **Vatore** (Scena 9) è il suo specchio oscuro: un ladro che ruba attraverso il
   tempo. L'Anello lo **percepisce** (aura temporale) prima di chiunque. È il PG
   giusto per fiutare che quel ladro «non è di qui» — e per decidere cosa farne
@@ -2696,7 +2696,7 @@ ciglio, 24,5 m sopra la spianata, e le scale non ci arrivano.
 
 ![Il portale del Tempo](../../Immagini/tavola-portale-del-tempo.jpg)
 
-> **Read-aloud (LotR lead) — il passaggio.** *Per un istante lunghissimo i
+> **Read-aloud — il passaggio.** *Per un istante lunghissimo i
 > colori si rovesciano, e vi passano davanti vite intere di nani: nascono,
 > battono il ferro, invecchiano, in un tempo più corto di un respiro. Poi torna
 > il peso, e con il peso il freddo. Le ferite non ci sono più.*
@@ -2736,7 +2736,7 @@ Quando la testa torna a posto, guardano dove sono.
 
 ![La fortezza giovane, da lontano](../../Immagini/tavola-hammerfist-giovane.jpg)
 
-> **Read-aloud (LotR lead) — la fortezza, da lontano.** *A ovest, fra i
+> **Read-aloud — la fortezza, da lontano.** *A ovest, fra i
 > tronchi, si vedono le torri di una fortezza che conoscete, più basse di come
 > le ricordate. Più in là, verso sud, i fuochi dell'orda cominciano ad
 > accendersi uno alla volta, e non finiscono. Sopra le mura gira un'ombra con le
@@ -2765,7 +2765,7 @@ rumore arriva fin qui.
 
 **In scena** — Dove: il bosco — Chi: Durin · i sei veterani
 
-> **Read-aloud (Andor lead) — il bosco.** *Fra gli abeti sale una nebbia bassa,
+> **Read-aloud — il bosco.** *Fra gli abeti sale una nebbia bassa,
 > e il sentiero scende verso le mura. Dal sottobosco si alzano sette elmi:
 > sette nani in armatura completa, gli scudi accostati, le asce basse. Quello davanti è più
 > vecchio degli altri e stringe l'ascia così forte che ha le nocche bianche, e
@@ -2840,7 +2840,7 @@ toccano nessuno. Prima di entrare c'è la targa.
 
 ![La porta e la targa di bronzo](../../Immagini/tavola-hammerfist-giovane-porta.jpg)
 
-> **Read-aloud (LotR lead) — la porta, deep time al contrario.** *Conoscete Hammerfist:
+> **Read-aloud — la porta, deep time al contrario.** *Conoscete Hammerfist:
 > le sale annerite dai secoli, le statue consumate, i nomi dei re incisi e
 > reincisi. Questa Hammerfist non ha ancora storia. Le mura sono bianche di
 > pietra appena tagliata, gli spigoli ancora vivi, e nel cortile c'è la statua
@@ -2851,7 +2851,7 @@ toccano nessuno. Prima di entrare c'è la targa.
 
 **Il testo intero della targa**, per chi la legge da vicino:
 
-> **Read-aloud (Casa di Davide lead) — la targa.** *«Quando il nero verrà dal
+> **Read-aloud — la targa.** *«Quando il nero verrà dal
 > cielo e il ferro dal piano, quattro eroi dal fuoco e dalla pietra staranno
 > sulle mura. Uno porta la pietra in fronte, uno il fuoco nei pugni. Uno tiene
 > in mano la luce e l'ombra, e una ha passato la morte. Moradin li ha visti.»*
@@ -2904,7 +2904,7 @@ all'assedio: i bambini e i vecchi scendono verso le miniere con un fagotto
 ciascuno, le forge delle stanze laterali non si fermano, e dove passano i PG
 la gente smette di parlare.
 
-> **Read-aloud (Casa di Davide lead) — la sala del consiglio, il re.** *Lungo il corridoio
+> **Read-aloud — la sala del consiglio, il re.** *Lungo il corridoio
 > i bambini e i vecchi scendono verso le miniere con un fagotto ciascuno, e al
 > vostro passaggio la gente smette di parlare. La sala è lunga quanto una
 > strada, e i pilastri sono ancora bianchi. In fondo, su un seggio di pietra
@@ -2960,7 +2960,7 @@ e i futuri.»*
 **Thorgrim.** Mentre il re recita, il vecchio sulla panca guarda l'ascia di
 Thorik, e quando il re tace parla lui.
 
-> **Read-aloud (Mercer lead, Casa di Davide support) — il vecchio sulla panca.** *Il vecchio sulla panca
+> **Read-aloud — il vecchio sulla panca.** *Il vecchio sulla panca
 > non si è mosso. Tiene le mani aperte verso la luce, i palmi in su, e sono mani
 > che hanno tenuto la stessa ascia di Thorik: si vede dal callo, nello stesso
 > punto. Guarda la corona sulla fronte di Thorik per il tempo di tre respiri. Poi gli occhi gli si riempiono, e lui non se ne accorge,
@@ -2969,7 +2969,7 @@ Thorik, e quando il re tace parla lui.
 
 **Se Thorik gliela porge**, e solo allora:
 
-> **Read-aloud (Mercer lead) — le due prese.** *L'ascia passa da una mano
+> **Read-aloud — le due prese.** *L'ascia passa da una mano
 > all'altra, e per un istante le due prese si toccano sul legno. E il legno
 > suona.*
 
@@ -3165,7 +3165,7 @@ loro: ogni cosa costa tacche. Nei quartieri ci sono il banchetto (+1 morale ai T
 mangiano: il +2 morale della benedizione dei chierici di Hammerfist non vale sui TS, quindi i due non si
 sommano sullo stesso tiro), fabbri che affilano le armi, chierici che benedicono.
 
-> **Read-aloud (LotR lead) — i quartieri ospiti.** *Una sala bassa e fredda,
+> **Read-aloud — i quartieri ospiti.** *Una sala bassa e fredda,
 > scavata nella roccia: il soffitto porta ancora i colpi dello scalpello, dritti e
 > fitti come le righe di un registro. Sei brande di legno nuovo lungo il muro,
 > e su ognuna una coperta piegata in quattro da qualcuno che aveva fretta.
@@ -3182,7 +3182,7 @@ piombo, del primo crollo, e nessuno ci dorme sotto.
 corridoio. È qui che si comprano pozioni, bacchette e incantesimi (il banco
 della fucina, più sotto, ha i prezzi).
 
-> **Read-aloud (Casa di Davide lead) — la cappella.** *Al posto dell'altare
+> **Read-aloud — la cappella.** *Al posto dell'altare
 > c'è un'incudine vecchia, portata giù dalla prima forgia, e intorno ai piedi
 > la pietra è consumata a conca da generazioni di ginocchia. Venti chierici
 > dormono seduti, con la schiena al muro freddo, per essere già in piedi quando
@@ -3205,7 +3205,7 @@ della fucina, più sotto, ha i prezzi).
 **La bottega dell'alchimista.** In fondo al corridoio della fucina, dove
 l'odore di zolfo copre quello del carbone.
 
-> **Read-aloud (Andor lead) — la bottega.** *Una porta bassa, foderata di
+> **Read-aloud — la bottega.** *Una porta bassa, foderata di
 > piombo. Dentro l'aria sa di zolfo e punge gli occhi. Sul banco, in fila come
 > soldati, fiasche di terracotta tappate con la cera, e sotto il banco una cassa di
 > sabbia per quando qualcosa va storto. Una nana senza sopracciglia riempie
@@ -3272,7 +3272,7 @@ tutti e tre, come dice la scheda della Collana in «La Resurrezione di Hella» �
 Un Treant solo, chiamato alla tenda, non
 toglie quindi niente ai due dell'alba.
 
-> **Read-aloud (Andor lead) — le gallerie.** *Sotto la fucina il caldo finisce
+> **Read-aloud — le gallerie.** *Sotto la fucina il caldo finisce
 > di colpo. Le gallerie sono strette, puntellate con travi nuove che sanno
 > ancora di resina, e ogni dieci passi una lampada a olio fa il suo cerchio di
 > luce e poi niente. Sulle pareti ci sono segni a gesso, e metà sono stati
@@ -3367,7 +3367,7 @@ Si arriva qui se i PG vogliono comprare, vendere o barattare. La fortezza
 non ha un mercato: ha una fucina che lavora per l'alba, e una maestra armaiola
 che decide cosa ne esce.
 
-> **Read-aloud (Salvatore lead, Andor support) — la fucina e il banco.** *La
+> **Read-aloud — la fucina e il banco.** *La
 > fucina è l'unico posto della fortezza dove nessuno parla sottovoce, e l'aria
 > sa di carbone e di scoria. Davanti a
 > tre forge accese aspettano file di ragazzi con quello che hanno trovato: un piccone,
@@ -3816,7 +3816,7 @@ qui. Quello che hanno **venduto** resta qui, e ritorna come **reliquia** (§7).
 - **Chi vuole cosa**: l'orda dorme e non aspetta nessuno; Grask non lascia il corno, il corridore porta le notizie alla tenda.
 - **Come finisce**: davanti alla tenda senza farsi vedere, con una pattuglia alle calcagna o con il campo pre-allertato; dopo la tenda, il ritorno, che cambia se il corno ha suonato.
 
-> **Read-aloud (Andor lead) — la postierla.** *A notte fonda si apre una
+> **Read-aloud — la postierla.** *A notte fonda si apre una
 > feritoia bassa nella roccia viva, di quelle che gli esploratori usano da
 > sempre e che nessun cronista mette per iscritto. Il fiato esce bianco nel
 > freddo. Durin vi accompagna fino all'imboccatura, vi mette una mano guantata
@@ -3854,7 +3854,7 @@ La terza riga è un **errore fecondo**: un tavolo che va a «salvare il nano
 prigioniero» trova Balvar lo stesso, e la trattativa della Scena 7 comincia con
 un equivoco che gli conviene.
 
-> **Read-aloud (Salvatore lead) — il campo.** *Fuori dalle mura il buio è vivo.
+> **Read-aloud — il campo.** *Fuori dalle mura il buio è vivo.
 > Diecimila fra orchetti, hobgoblin e cose peggiori dormono attorno a mille
 > fuochi, e il campo si stende fino all'orizzonte: un mare in cui ogni onda è
 > una gola che russa. L'aria sa di grasso bruciato, di ferro e di bestia, e da
@@ -4041,7 +4041,7 @@ qualche pozione d'*invisibilità* della cappella e una pietra che porta il
 in mezzo. È un buon piano, e il modulo lo premia: **niente prova di gruppo**.
 Il rischio non sparisce, si sposta alla tenda e sull'orologio del drago.
 
-> **Read-aloud (Salvatore lead) — il volo.** *Da quassù il campo è una
+> **Read-aloud — il volo.** *Da quassù il campo è una
 > brace sparsa sulla piana. I fuochi mandano tutti lo stesso odore di
 > grasso, e nessuno, laggiù, guarda in alto. Un russare sale fin qui, forte
 > come se venisse dalla tenda accanto. Poi la pietra fa il suo lavoro, e il mondo si
@@ -4265,11 +4265,11 @@ solo i gridi.
 - **Chi vuole cosa**: Zog'tar vuole Hammerfist e racconta come impalerà il re; Balvar vuole che la fortezza cada in fretta, perché ha già visto la fame di un assedio lungo.
 - **Come finisce**: con Balvar che parla o tace, e con Zog'tar che si alza dal seggio: è la Scena 8.
 
-> **Read-aloud (Andor lead) — la tenda.** *Al centro del campo, una tenda più
+> **Read-aloud — la tenda.** *Al centro del campo, una tenda più
 > alta delle altre, di pelle nera, con ossa ai tiranti che battono nel vento.
 > Le pattuglie qui non passano. Dentro si ride.*
 
-> **Read-aloud (Salvatore lead) — dentro.** *Fa caldo, e c'è puzza di sangue
+> **Read-aloud — dentro.** *Fa caldo, e c'è puzza di sangue
 > secco e di carne mezza cruda. Sulla tavola, una mappa di Hammerfist piena di
 > croci rosse. In fondo, su un seggio di vertebre e di teschi inchiodati, c'è un
 > mezzo-ogre grande quanto una porta di stalla. Ha una pietra nera al posto
@@ -4398,7 +4398,7 @@ mano ferma.
 Non comanda l'orda. **Consiglia**, e per questo è più pericoloso del generale:
 Zog'tar sa uccidere diecimila uomini, Balvar sa **dove** vanno colpite le mura.
 
-#### ⚖️ Il grigio — perché **crede di aver ragione** *(pilastro GoT)*
+#### ⚖️ Il grigio — perché **crede di aver ragione**
 
 
 | | |
@@ -4433,17 +4433,17 @@ Hald è il figlio di sua sorella), oppure se
 un PG nano gli chiede chi ha lasciato a Hammerfist — **Diplomazia CD 18**, e
 funziona solo se non l'hanno ancora minacciato.
 
-> **Read-aloud (Andor lead) — il primo incontro, 1 di 3, poi FERMATI.** *In fondo alla tenda, dove
+> **Read-aloud — il primo incontro, 1 di 3, poi FERMATI.** *In fondo alla tenda, dove
 > la luce dei bracieri non arriva, un vecchio è seduto su uno sgabello da
 > bottega. Grembiule di cuoio. Sulle ginocchia una lastra di ardesia che sta
 > incidendo con una punta di ferro, piano, come se fuori non ci fossero
 > diecimila tende e un drago.*
 
-> **Read-aloud (Andor lead) — 2 di 3, dopo che qualcuno ha reagito.** *Alza la
+> **Read-aloud — 2 di 3, dopo che qualcuno ha reagito.** *Alza la
 > testa e vi guarda lentamente, uno per uno. Sulla gemma del vostro capo si
 > ferma un istante di troppo. Poi torna a incidere. Non chiama la guardia.*
 
-> **Read-aloud (Andor lead) — 3 di 3, solo quando il silenzio diventa scomodo.** *Il vecchio parla piano, da artigiano, senza fretta: «Quella
+> **Read-aloud — 3 di 3, solo quando il silenzio diventa scomodo.** *Il vecchio parla piano, da artigiano, senza fretta: «Quella
 > corona la finirono con tre gemme. Tu ne hai due.» Un colpo di punta
 > sull'ardesia. «Quindi non è oggi.»*
 
@@ -4682,7 +4682,7 @@ Balvar è morto da mille anni comunque vada. Ma:
 
 *La scheda d'entrata di Zog'tar è nella Scena 7, dove i PG lo vedono per la prima volta.*
 
-> **Read-aloud (Salvatore lead) — la tenda, il seggio.** *Il mezzo-ogre si alza
+> **Read-aloud — la tenda, il seggio.** *Il mezzo-ogre si alza
 > dal seggio, e i teschi inchiodati sbattono fra loro come nacchere. Non grida
 > subito. Prima gira la testa, e la pietra nera dove dovrebbe esserci l'occhio
 > si ferma sul più vicino di voi. Poi l'ascia scende dalla spalla.*
@@ -5073,7 +5073,7 @@ con un **terrore reverenziale mal mascherato**.
 > renderlo **Sal**. Nella scena non è un innocente ingenuo: è un uomo che ha
 > già scelto l'ombra, e che ora vede in VOI un potere che vorrebbe rubare.
 
-> **Read-aloud (Andor lead) — fra le tende, l'incontro che non capiscono.** *Tra due tende c'è un uomo che non è dell'orda.
+> **Read-aloud — fra le tende, l'incontro che non capiscono.** *Tra due tende c'è un uomo che non è dell'orda.
 > Veste ombre cucite bene, e stringe al petto qualcosa avvolto in un panno.
 > Non attacca. E non scappa, non subito. Vi fissa come si fissa una cosa che
 > non dovrebbe esistere, e sussurra, più a sé stesso che a voi: «…quattro.
@@ -5083,7 +5083,7 @@ con un **terrore reverenziale mal mascherato**.
 
 **A parte, al giocatore di Artemis**, subito dopo:
 
-> **Read-aloud (Andor lead) — l'anello.** *Artemis, l'anello che porti al dito
+> **Read-aloud — l'anello.** *Artemis, l'anello che porti al dito
 > è diventato gelido.*
 
 **Le risposte del party (grigie — non sanno cosa diventerà):**
@@ -5206,7 +5206,7 @@ Si arriva qui **dove le tacche hanno lasciato i PG** (tabella di uscita
 dell'orologio, §4). Se Hella ha vegliato i semi, i **due Treant di Adamantio**
 caricano il fianco dell'orda mentre il primo ariete arriva (Scena 5).
 
-> **Read-aloud (Salvatore lead, LotR support) — le mura.** *Il primo ariete
+> **Read-aloud — le mura.** *Il primo ariete
 > arriva alle mura che il sole non è ancora sopra il crinale, e il legno prende
 > la pietra con un rimbombo che arriva allo sterno prima che alle orecchie. Il
 > camminamento vi si muove sotto i piedi di un dito. Un nano accanto a voi si sputa
@@ -5232,7 +5232,7 @@ Poi, quando le prime scale arrivano in cima, arriva il capitano delle mura.
 | **Hald, il nipote di Balvar** | nano di diciannove anni, di guardia sul camminamento est col gruppo di Hrodgar; la barba ancora corta, l'ascia troppo nuova. Non sa che lo zio esiliato è vivo, né che è nel campo di Zog'tar | poco e a bassa voce, da recluta; si drizza quando passa il capitano |
 | **Zog'tar Deatheye, se è vivo all'alba** | il generale mezzo-ogre, l'ascia in mano e la pietra nera al posto dell'occhio destro, che guida l'orda sotto le mura; con 0-1 successi sale sulla breccia (la tattica sul camminamento è sotto la tabella «Dalla notte», la scheda d'entrata nella Scena 7) | conta, sempre: *«due file», «tre ore», «cento»*. In ira: *«A ME, CANI! ABBATTETE LE OMBRE!»* |
 
-> **Read-aloud (Salvatore lead) — il camminamento.** *Il camminamento è largo
+> **Read-aloud — il camminamento.** *Il camminamento è largo
 > quanto un tavolo da pranzo e lungo quanto la fortezza. Sotto, l'orda non
 > urla più: ha smesso quando ha cominciato a salire, e il silenzio che ha
 > lasciato è peggio. Un uncino morde la pietra a tre passi da voi, poi un
@@ -5445,7 +5445,7 @@ le balestre tirano da lì. La fucina, la cisterna e le campane
 della tabella del cortile qui sotto non ci sono; le corde sì, quelle degli arieti
 rovesciati, con la stessa prova.
 
-> **Read-aloud (Salvatore lead) — il cortile.** *Prima arriva il freddo: passa
+> **Read-aloud — il cortile.** *Prima arriva il freddo: passa
 > un'ombra, e l'aria del cortile perde dieci gradi in un respiro, e la pelle
 > lo sa prima di voi. Poi il rumore, un risucchio come quello del mare che si
 > tira indietro, e le braci della forgia si piegano tutte nella stessa
@@ -5463,7 +5463,7 @@ a lui soltanto.
 **AEGIS FANG (non canta: urla, dentro il cranio):** *«SANGUE ANTICO. ARTEFICE
 DI LACRIME.»*
 
-> **Read-aloud (Mercer lead) — la visione, solo per Thorik.** *Per un istante
+> **Read-aloud — la visione, solo per Thorik.** *Per un istante
 > la Corona ti mostra due immagini sovrapposte: questo drago adesso, e un altro
 > drago sopra mura che bruciano, mura che non hai mai visto.*
 
@@ -5500,9 +5500,10 @@ accorcia, il primo passo indietro che il drago fa senza volerlo.
 > **Che fate?**
 
 ⚠️ **Dal round 3 si smette.** La regia serve a far **atterrare** l'inizio; se la
-tieni per otto round diventa una lettura e il combattimento si ferma. Dal terzo
-round si torna alle tattiche del drago, più sopra, e si descrive solo quello che
-cambia davvero.
+tieni per otto round diventa una lettura e il combattimento si ferma.
+
+Dal terzo round si torna alle tattiche del drago, più sopra, e si descrive solo
+quello che cambia davvero.
 
 #### Tattiche di Skullcrusher — regia round per round (stile RHoD, aggancio M7-B)
 > Scritte dal punto di vista del drago. Skullcrusher è **giovane nella sua
@@ -5594,7 +5595,7 @@ cambia davvero.
 **Quando qualcuno la legge**, la prima volta:
 
 
-> **Read-aloud (Salvatore lead) — la runa sotto la scaglia.** *Sotto la scaglia
+> **Read-aloud — la runa sotto la scaglia.** *Sotto la scaglia
 > calda del petto, più pallida delle altre, corrono righe di rune naniche
 > incise a punta, fitte come i conti di un mercante. L'ultima riga è più piccola e
 > più fonda delle altre, ed è quella che il drago non ha mai letto.*
@@ -5893,7 +5894,7 @@ che l'incontro ha appena scelto.
 > Thorek guardano come tutti gli altri. Se il tavolo chiede «chi l'ha messo lì?»,
 > la risposta vera è «nessuno», e il silenzio del cortile la conferma.*
 
-> **Read-aloud (LotR lead) — l'incudine, e l'incasso che si chiude.** *L'altare
+> **Read-aloud — l'incudine, e l'incasso che si chiude.** *L'altare
 > è un'incudine, e si vede: il piano è segnato da mille anni di martelli.
 > Intorno, il cortile è pieno di feriti. Nessuno l'ha toccata, eppure sul ferro,
 > dove un attimo fa non c'era niente, adesso c'è una pietra rossa grande come
@@ -5921,7 +5922,7 @@ finito di bruciare.
 **Momento 3 — Aegis Fang si sveglia**. È una scena, non una riga di scheda: l'ascia resta com'è finché l'Assedio non
 è vinto, e poi si risveglia del tutto. L'Assedio è questo, ed è appena stato vinto.
 
-> **Read-aloud (Mercer lead) — l'ascia prende la parola.** *L'ascia si scalda
+> **Read-aloud — l'ascia prende la parola.** *L'ascia si scalda
 > nella mano di Thorik, e non è il calore della forgia. Per la prima volta in tre
 > anni si fa sentire senza che nessuno l'abbia interrogata. Nel cortile nessuno
 > guarda le armi.*
@@ -5967,7 +5968,7 @@ resta alla Corona come potere **1/settimana**. È la cosa che la Corona sa fare
 da quando ha preso la terza pietra, e non una ricarica. L'Aura viene dal rito,
 non dal ritorno, e non aspetta che la Corona sia completa.
 
-> **Read-aloud (LotR lead) — l'aura.** *Il vecchio accanto all'incudine alza la
+> **Read-aloud — l'aura.** *Il vecchio accanto all'incudine alza la
 > testa e guarda la luce dietro Thorik. In tutto il cortile i feriti smettono di essere feriti:
 > un fabbro con una gamba sola si tira su contro il muro, il muro gli si apre
 > sotto la mano come argilla, e lui ci infila la gamba e resta in piedi.
@@ -5997,7 +5998,7 @@ porta al collo, e un re nanico se lo toglie solo con le sue mani, davanti a
 tutti. Quella sera i PG erano forestieri con la corona di suo nonno; adesso il
 re ha visto la pietra entrare. È l'ultima cosa prima della Scena 13.
 
-> **Read-aloud (Casa di Davide lead) — il torque.** *Il re si fa avanti, e per
+> **Read-aloud — il torque.** *Il re si fa avanti, e per
 > la prima volta da ieri sera non ha l'ascia in pugno. Porta le mani al collo e
 > apre il fermaglio: oro vecchio, ritorto come una corda, consumato liscio dove
 > la barba lo sfrega da cent'anni. Non chiama il sergente. Lo chiude lui attorno
@@ -6026,7 +6027,7 @@ che si toglie l'elmo nella prima battuta è l'eco di questo gesto.*
 
 L'accensione si legge in tre battute, di fila, senza fermarsi per i tiri.
 
-> **Read-aloud (Casa di Davide lead) — l'incudine, 1 di 3: la profezia compiuta.** *L'orda,
+> **Read-aloud — l'incudine, 1 di 3: la profezia compiuta.** *L'orda,
 > senza generale e senza drago a spronarla, si sfalda come sabbia, e
 > Hammerfist regge. All'incudine il Rubino ha preso la luce; adesso, sulla
 > fronte di Thorik, la dà: calda come sangue, e non si abbassa. Un nano
@@ -6040,7 +6041,7 @@ L'accensione si legge in tre battute, di fila, senza fermarsi per i tiri.
 > momento in cui ognuno di voi ha scelto. La pietra li tiene tutti, uno per
 > uno, come si tiene una cosa che servirà.*
 
-> **Read-aloud (LotR lead) — l'incudine, 3 di 3: la voce.** *Poi una voce, come
+> **Read-aloud — l'incudine, 3 di 3: la voce.** *Poi una voce, come
 > una campana che batte una volta sola: «Ben fatto, figli miei. Avete salvato
 > la fortezza come doveva accadere. Avete chiuso il cerchio.» Nessuno ha visto muoversi una bocca:
 > la voce è nei denti, e ci resta. La luce comincia a tirare e vi porta via, verso

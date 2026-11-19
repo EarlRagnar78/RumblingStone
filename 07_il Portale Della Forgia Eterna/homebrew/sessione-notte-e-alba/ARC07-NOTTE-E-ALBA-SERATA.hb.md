@@ -624,7 +624,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 ## §1 — HIGHLIGHT ASIMMETRICI PER PG (i QUATTRO, Hella è tornata)
 
-### 🛡️ THORIK — la profezia fatta carne (Casa di Davide lead)
+### 🛡️ THORIK — la profezia fatta carne
 - È la SUA leggenda: la Corona che porta è la stessa che il nonno di Thorgrim
   perse contro Skullcrusher. Aegis Fang, nelle sue mani e in quelle di Thorgrim,
   **canta la stessa nota** attraverso mille anni. Thorik non compie la profezia:
@@ -632,7 +632,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 - Al duello, **Aegis Fang scaglia la Cicatrice Ancestrale** (Scena 11): è il gesto che
   segna Skullcrusher e, mille anni dopo, Fauci (carry-over B4).
 
-### 🌙 HELLA — la seconda vita alla prova (BG3 lead — il ritorno che conta)
+### 🌙 HELLA — la seconda vita alla prova (il ritorno che conta)
 - È il suo **primo scontro da risorta**: Ibrido Treant, Collana, Durik al
   fianco. Il DM lo faccia pesare — la morte l'ha cambiata, e ora combatte in un
   passato dove non è mai esistita.
@@ -654,7 +654,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
   tentativo**. Risponde al secondo. Dillo in una riga, nel momento peggiore, e
   non spiegarlo.
 
-### ⚒️ TORDEK — il pugno che deve trattenersi (Andor support)
+### ⚒️ TORDEK — il pugno che deve trattenersi
 - La **Cintura della Devastazione rifiuta di attivarsi** contro Skullcrusher,
   nella Scena 11 (*«il vero scontro appartiene al futuro»*); contro Zog'tar, nella
   Scena 8, funziona: è coerenza, non nerf — Tordek deve vincere **senza**
@@ -662,7 +662,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 - I **Bracieri** (coscienza) riconoscono la fucina antica di Hammerfist: *«Qui
   è dove tutto è cominciato, ragazzo. Batti bene.»*
 
-### 🔮 ARTEMIS — il predone davanti al ladro (Andor lead)
+### 🔮 ARTEMIS — il predone davanti al ladro
 - **Vatore** (Scena 9) è il suo specchio oscuro: un ladro che ruba attraverso il
   tempo. L'Anello lo **percepisce** (aura temporale) prima di chiunque. È il PG
   giusto per fiutare che quel ladro «non è di qui» — e per decidere cosa farne
@@ -2348,7 +2348,7 @@ anni prima di lui, e per un mercante non c'è niente di più interessante.
    sopra, con la correzione del paragrafo «A ≈372 DR il creditore non c'è
    ancora» per chi firma a ≈372 DR.
 
-> **Read-aloud (Andor lead) — per Artemis, alla fine dell'ora.** *La pergamena
+> **Read-aloud — per Artemis, alla fine dell'ora.** *La pergamena
 > si accartoccia in cenere tiepida. Sotto il guanto la gemma pesa e scalda
 > come prima, ma dentro la pietra c'è una scrittura fitta e ordinata, da libro
 > mastro. In fondo alla
@@ -2492,7 +2492,7 @@ il bivio, ed è **vero** — non una finta scelta con una risposta giusta.
 
 <!-- /scheda-da-tavolo -->
 
-> **Read-aloud (Andor lead) — la postierla.** *A notte fonda si apre una
+> **Read-aloud — la postierla.** *A notte fonda si apre una
 > feritoia bassa nella roccia viva, di quelle che gli esploratori usano da
 > sempre e che nessun cronista mette per iscritto. Il fiato esce bianco nel
 > freddo. Durin vi accompagna fino all'imboccatura, vi mette una mano guantata
@@ -2530,7 +2530,7 @@ La terza riga è un **errore fecondo**: un tavolo che va a «salvare il nano
 prigioniero» trova Balvar lo stesso, e la trattativa della Scena 7 comincia con
 un equivoco che gli conviene.
 
-> **Read-aloud (Salvatore lead) — il campo.** *Fuori dalle mura il buio è vivo.
+> **Read-aloud — il campo.** *Fuori dalle mura il buio è vivo.
 > Diecimila fra orchetti, hobgoblin e cose peggiori dormono attorno a mille
 > fuochi, e il campo si stende fino all'orizzonte: un mare in cui ogni onda è
 > una gola che russa. L'aria sa di grasso bruciato, di ferro e di bestia, e da
@@ -2717,7 +2717,7 @@ qualche pozione d'*invisibilità* della cappella e una pietra che porta il
 in mezzo. È un buon piano, e il modulo lo premia: **niente prova di gruppo**.
 Il rischio non sparisce, si sposta alla tenda e sull'orologio del drago.
 
-> **Read-aloud (Salvatore lead) — il volo.** *Da quassù il campo è una
+> **Read-aloud — il volo.** *Da quassù il campo è una
 > brace sparsa sulla piana. I fuochi mandano tutti lo stesso odore di
 > grasso, e nessuno, laggiù, guarda in alto. Un russare sale fin qui, forte
 > come se venisse dalla tenda accanto. Poi la pietra fa il suo lavoro, e il mondo si
@@ -2957,11 +2957,11 @@ solo i gridi.
 
 <!-- /scheda-da-tavolo -->
 
-> **Read-aloud (Andor lead) — la tenda.** *Al centro del campo, una tenda più
+> **Read-aloud — la tenda.** *Al centro del campo, una tenda più
 > alta delle altre, di pelle nera, con ossa ai tiranti che battono nel vento.
 > Le pattuglie qui non passano. Dentro si ride.*
 
-> **Read-aloud (Salvatore lead) — dentro.** *Fa caldo, e c'è puzza di sangue
+> **Read-aloud — dentro.** *Fa caldo, e c'è puzza di sangue
 > secco e di carne mezza cruda. Sulla tavola, una mappa di Hammerfist piena di
 > croci rosse. In fondo, su un seggio di vertebre e di teschi inchiodati, c'è un
 > mezzo-ogre grande quanto una porta di stalla. Ha una pietra nera al posto
@@ -3090,7 +3090,7 @@ mano ferma.
 Non comanda l'orda. **Consiglia**, e per questo è più pericoloso del generale:
 Zog'tar sa uccidere diecimila uomini, Balvar sa **dove** vanno colpite le mura.
 
-#### ⚖️ Il grigio — perché **crede di aver ragione** *(pilastro GoT)*
+#### ⚖️ Il grigio — perché **crede di aver ragione**
 
 
 | | |
@@ -3125,17 +3125,17 @@ Hald è il figlio di sua sorella), oppure se
 un PG nano gli chiede chi ha lasciato a Hammerfist — **Diplomazia CD 18**, e
 funziona solo se non l'hanno ancora minacciato.
 
-> **Read-aloud (Andor lead) — il primo incontro, 1 di 3, poi FERMATI.** *In fondo alla tenda, dove
+> **Read-aloud — il primo incontro, 1 di 3, poi FERMATI.** *In fondo alla tenda, dove
 > la luce dei bracieri non arriva, un vecchio è seduto su uno sgabello da
 > bottega. Grembiule di cuoio. Sulle ginocchia una lastra di ardesia che sta
 > incidendo con una punta di ferro, piano, come se fuori non ci fossero
 > diecimila tende e un drago.*
 
-> **Read-aloud (Andor lead) — 2 di 3, dopo che qualcuno ha reagito.** *Alza la
+> **Read-aloud — 2 di 3, dopo che qualcuno ha reagito.** *Alza la
 > testa e vi guarda lentamente, uno per uno. Sulla gemma del vostro capo si
 > ferma un istante di troppo. Poi torna a incidere. Non chiama la guardia.*
 
-> **Read-aloud (Andor lead) — 3 di 3, solo quando il silenzio diventa scomodo.** *Il vecchio parla piano, da artigiano, senza fretta: «Quella
+> **Read-aloud — 3 di 3, solo quando il silenzio diventa scomodo.** *Il vecchio parla piano, da artigiano, senza fretta: «Quella
 > corona la finirono con tre gemme. Tu ne hai due.» Un colpo di punta
 > sull'ardesia. «Quindi non è oggi.»*
 
@@ -3394,7 +3394,7 @@ Balvar è morto da mille anni comunque vada. Ma:
 
 *La scheda d'entrata di Zog'tar è nella Scena 7, dove i PG lo vedono per la prima volta.*
 
-> **Read-aloud (Salvatore lead) — la tenda, il seggio.** *Il mezzo-ogre si alza
+> **Read-aloud — la tenda, il seggio.** *Il mezzo-ogre si alza
 > dal seggio, e i teschi inchiodati sbattono fra loro come nacchere. Non grida
 > subito. Prima gira la testa, e la pietra nera dove dovrebbe esserci l'occhio
 > si ferma sul più vicino di voi. Poi l'ascia scende dalla spalla.*
@@ -3803,7 +3803,7 @@ con un **terrore reverenziale mal mascherato**.
 > renderlo **Sal**. Nella scena non è un innocente ingenuo: è un uomo che ha
 > già scelto l'ombra, e che ora vede in VOI un potere che vorrebbe rubare.
 
-> **Read-aloud (Andor lead) — fra le tende, l'incontro che non capiscono.** *Tra due tende c'è un uomo che non è dell'orda.
+> **Read-aloud — fra le tende, l'incontro che non capiscono.** *Tra due tende c'è un uomo che non è dell'orda.
 > Veste ombre cucite bene, e stringe al petto qualcosa avvolto in un panno.
 > Non attacca. E non scappa, non subito. Vi fissa come si fissa una cosa che
 > non dovrebbe esistere, e sussurra, più a sé stesso che a voi: «…quattro.
@@ -3813,7 +3813,7 @@ con un **terrore reverenziale mal mascherato**.
 
 **A parte, al giocatore di Artemis**, subito dopo:
 
-> **Read-aloud (Andor lead) — l'anello.** *Artemis, l'anello che porti al dito
+> **Read-aloud — l'anello.** *Artemis, l'anello che porti al dito
 > è diventato gelido.*
 
 **Le risposte del party (grigie — non sanno cosa diventerà):**
@@ -3962,7 +3962,7 @@ Si arriva qui **dove le tacche hanno lasciato i PG** (tabella di uscita
 dell'orologio, §4). Se Hella ha vegliato i semi, i **due Treant di Adamantio**
 caricano il fianco dell'orda mentre il primo ariete arriva (Scena 5).
 
-> **Read-aloud (Salvatore lead, LotR support) — le mura.** *Il primo ariete
+> **Read-aloud — le mura.** *Il primo ariete
 > arriva alle mura che il sole non è ancora sopra il crinale, e il legno prende
 > la pietra con un rimbombo che arriva allo sterno prima che alle orecchie. Il
 > camminamento vi si muove sotto i piedi di un dito. Un nano accanto a voi si sputa
@@ -3988,7 +3988,7 @@ Poi, quando le prime scale arrivano in cima, arriva il capitano delle mura.
 | **Hald, il nipote di Balvar** | nano di diciannove anni, di guardia sul camminamento est col gruppo di Hrodgar; la barba ancora corta, l'ascia troppo nuova. Non sa che lo zio esiliato è vivo, né che è nel campo di Zog'tar | poco e a bassa voce, da recluta; si drizza quando passa il capitano |
 | **Zog'tar Deatheye, se è vivo all'alba** | il generale mezzo-ogre, l'ascia in mano e la pietra nera al posto dell'occhio destro, che guida l'orda sotto le mura; con 0-1 successi sale sulla breccia (la tattica sul camminamento è sotto la tabella «Dalla notte», la scheda d'entrata nella Scena 7) | conta, sempre: *«due file», «tre ore», «cento»*. In ira: *«A ME, CANI! ABBATTETE LE OMBRE!»* |
 
-> **Read-aloud (Salvatore lead) — il camminamento.** *Il camminamento è largo
+> **Read-aloud — il camminamento.** *Il camminamento è largo
 > quanto un tavolo da pranzo e lungo quanto la fortezza. Sotto, l'orda non
 > urla più: ha smesso quando ha cominciato a salire, e il silenzio che ha
 > lasciato è peggio. Un uncino morde la pietra a tre passi da voi, poi un
@@ -4266,7 +4266,7 @@ le balestre tirano da lì. La fucina, la cisterna e le campane
 della tabella del cortile qui sotto non ci sono; le corde sì, quelle degli arieti
 rovesciati, con la stessa prova.
 
-> **Read-aloud (Salvatore lead) — il cortile.** *Prima arriva il freddo: passa
+> **Read-aloud — il cortile.** *Prima arriva il freddo: passa
 > un'ombra, e l'aria del cortile perde dieci gradi in un respiro, e la pelle
 > lo sa prima di voi. Poi il rumore, un risucchio come quello del mare che si
 > tira indietro, e le braci della forgia si piegano tutte nella stessa
@@ -4284,7 +4284,7 @@ a lui soltanto.
 **AEGIS FANG (non canta: urla, dentro il cranio):** *«SANGUE ANTICO. ARTEFICE
 DI LACRIME.»*
 
-> **Read-aloud (Mercer lead) — la visione, solo per Thorik.** *Per un istante
+> **Read-aloud — la visione, solo per Thorik.** *Per un istante
 > la Corona ti mostra due immagini sovrapposte: questo drago adesso, e un altro
 > drago sopra mura che bruciano, mura che non hai mai visto.*
 
@@ -4321,9 +4321,10 @@ accorcia, il primo passo indietro che il drago fa senza volerlo.
 > **Che fate?**
 
 ⚠️ **Dal round 3 si smette.** La regia serve a far **atterrare** l'inizio; se la
-tieni per otto round diventa una lettura e il combattimento si ferma. Dal terzo
-round si torna alle tattiche del drago, più sopra, e si descrive solo quello che
-cambia davvero.
+tieni per otto round diventa una lettura e il combattimento si ferma.
+
+Dal terzo round si torna alle tattiche del drago, più sopra, e si descrive solo
+quello che cambia davvero.
 
 #### Tattiche di Skullcrusher — regia round per round (stile RHoD, aggancio M7-B)
 > Scritte dal punto di vista del drago. Skullcrusher è **giovane nella sua
@@ -4415,7 +4416,7 @@ cambia davvero.
 **Quando qualcuno la legge**, la prima volta:
 
 
-> **Read-aloud (Salvatore lead) — la runa sotto la scaglia.** *Sotto la scaglia
+> **Read-aloud — la runa sotto la scaglia.** *Sotto la scaglia
 > calda del petto, più pallida delle altre, corrono righe di rune naniche
 > incise a punta, fitte come i conti di un mercante. L'ultima riga è più piccola e
 > più fonda delle altre, ed è quella che il drago non ha mai letto.*

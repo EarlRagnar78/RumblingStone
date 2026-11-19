@@ -752,7 +752,50 @@ def leggi_per_la_stampa(f: "Path", capitoli: "dict[Path, str]",
             lambda m: m.group(1) if not md[:m.start()].strip() else "<!-- nuova-pagina -->\n\n" + m.group(1), md)
     else:
         md = togli_schede_da_tavolo(_SEGNO_SENZA_SCHEDA.sub("", md))
-    return traduci_rimandi(guida_capitoli(md, capitoli), f, capitoli)
+    return togli_etichette_pilastri(traduci_rimandi(guida_capitoli(md, capitoli), f, capitoli))
+
+
+# Le etichette dei pilastri di stile («Read-aloud (Andor lead)», «(pilastro
+# GoT)») servono a chi scrive e a `misura_craft`: al tavolo sono rumore. Scelta
+# di Jfs del 2026-11-19 (card del thread della prosa): restano nel sorgente e
+# non si stampano, né nella serata né nel volume d'arco.
+_PILASTRO = (r"(?:Salvatore|LotR|Tolkien|Casa di Davide|Andor|GoT|Game of Thrones|Mercer"
+             r"|BG3|BG ?1 ?[-–/] ?2|BG1|BG2)")
+_VOCE_PILASTRO = re.compile(rf"^(?:{_PILASTRO}\s+(?:lead|support)(?:\s+qui)?|pilastro\s+{_PILASTRO})$", re.I)
+_PARENTESI = re.compile(r"[ \t]?(?P<e>)\((?P<d>[^()\n]*)\)")
+#: la stessa parentesi in corsivo o in grassetto: si toglie con i suoi asterischi
+_PARENTESI_ENFASI = re.compile(r"[ \t]?(?P<e>[*_]{1,2})\((?P<d>[^()\n]*)\)(?P=e)")
+
+
+def togli_etichette_pilastri(md: str) -> str:
+    """Toglie dal testo da stampare le etichette dei pilastri, e solo quelle.
+
+    >>> togli_etichette_pilastri("**Read-aloud (Andor lead)** — la tenda.")
+    '**Read-aloud** — la tenda.'
+    >>> togli_etichette_pilastri("Read-aloud (Salvatore lead, solo per Artemis) — il corridoio")
+    'Read-aloud (solo per Artemis) — il corridoio'
+    >>> togli_etichette_pilastri("### ⚖️ Il grigio — perché crede di aver ragione (pilastro GoT)")
+    '### ⚖️ Il grigio — perché crede di aver ragione'
+    >>> togli_etichette_pilastri("### Il grigio — perché **crede di aver ragione** *(pilastro GoT)*")
+    '### Il grigio — perché **crede di aver ragione**'
+    >>> togli_etichette_pilastri("HELLA — la seconda vita (BG3 lead — il ritorno che conta)")
+    'HELLA — la seconda vita (il ritorno che conta)'
+    >>> togli_etichette_pilastri("(LotR lead + liturgia) e (support/buff), il pilastro di mithral")
+    '(liturgia) e (support/buff), il pilastro di mithral'
+    """
+    def pulisci(m: "re.Match") -> str:
+        enfasi = m.group("e") or ""
+        dentro = m.group("d")
+        if not re.search(_PILASTRO, dentro, re.I):
+            return m.group(0)
+        voci = [v.strip() for v in re.split(r"\s*(?:,|—|\+)\s*", dentro)]
+        resto = [v for v in voci if v and not _VOCE_PILASTRO.match(v)]
+        if len(resto) == len([v for v in voci if v]):
+            return m.group(0)
+        spazio = m.group(0)[0] if m.group(0)[0] in " \t" else ""
+        return f"{spazio}{enfasi}({', '.join(resto)}){enfasi}" if resto else ""
+    md = _PARENTESI_ENFASI.sub(pulisci, md)
+    return _PARENTESI.sub(pulisci, md)
 
 
 # La scheda da tavolo che apre una scena (prova del 2026-11-12, ADR-0122): una

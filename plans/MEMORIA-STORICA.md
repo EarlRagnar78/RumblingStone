@@ -2212,3 +2212,14 @@ repo scritto con altre parole.
 - **Testo:** il DM ha scelto prima i 14 plugin di business, poi ha allargato: «chiudi anche altro ma lascia i plugin che sono stati usati nel repo davvero nello storico». L'unica prova d'uso nello storico è la PR #205 (2/10), che accese `pdf-viewer`, `review` e `tdd`; per gli altri 29 nessuna traccia in commit, changelog, memoria storica o file del progetto. `engineering`, `docs` e `reflexion` erano solo skill «solo nome» nella stessa PR. Misura con `claude -p`: contesto da 59.670 a 53.965 token (−9,6%), server MCP da 102 a 2. Nel thread, dopo un riavvio, l'hook SessionStart ha scritto `ok 916ed032` e `rumblingstone-tools` si è connesso: ADR-0140 passa ad accettata
 - **Trovato nel repo:** `.claude/settings.json` (`enabledPlugins`) · `plans/adr/ADR-0140-la-configurazione-claude-del-repo-arriva-anche-nei-thread.md` punto 5
 - **Solo qui:** `bio-research` serve a Jfs per il lavoro nel gruppo BIOME ma non a questo progetto: resta acceso negli altri progetti, perché `enabledPlugins` del repo vale solo dove arriva il suo settings. I connettori di claude.ai non si spengono così: per quelli valgono le regole `deny` del punto 4
+
+### MS-0196 · 2026-11-19 · Riaccesi i plugin di metodo di sviluppo
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** ADR-0140
+- **Temi:** claude-code plugin enabledplugins contesto token sviluppo decisione-dm thread
+- **Origine:** riga del 2026-11-19 «ADR-0140, correzione: riaccesi per RumblingStone i nove plugin di metodo di sviluppo» in `plans/CHANGELOG.md`
+- **Testo:** subito dopo la #487 il DM ha chiesto se non avesse senso tenere i plugin delle tecniche di sviluppo. Nessuna prova d'uso nello storico (commit, file del progetto), consigliato lasciarli spenti; il DM ha scelto sulla card di riaccendere tutti e nove: `sdd`, `sadd`, `engineering`, `reflexion`, `docs`, `fpf`, `ddd`, `recursive-decomposition`, `mcp`. Costo misurato con `claude -p`: contesto da 54.372 a 56.719 token (+4,3%), 42 skill in più, 10 server MCP di `engineering` che nel container falliscono o chiedono l'accesso
+- **Trovato nel repo:** `.claude/settings.json` (`enabledPlugins`) · `plans/adr/ADR-0140-la-configurazione-claude-del-repo-arriva-anche-nei-thread.md` punto 5
+- **Solo qui:** misurando si è visto che un container partito prima di un merge tiene la copia vecchia di `/home/user/.claude/settings.json` finché non si rilancia `scripts/claude-progetto.sh`; i thread nuovi la rigenerano all'avvio

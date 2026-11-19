@@ -71,6 +71,13 @@ obiettivo.
    `docs` e `reflexion` compaiono solo come skill «solo nome» nella stessa
    PR, che è configurazione e non uso.
 
+   **Correzione dello stesso giorno** (scelta del DM sulla card del
+   2026-11-19, dopo la domanda «quelli delle tecniche dello sviluppo
+   software non avrebbe senso tenerli?»): tornano accesi anche i nove
+   plugin di metodo di sviluppo, `sdd`, `sadd`, `engineering`, `reflexion`,
+   `docs`, `fpf`, `ddd`, `recursive-decomposition` e `mcp`, pur senza una
+   prova d'uso nello storico. Restano spenti gli altri 20.
+
 ## Le conseguenze
 
 **Misura contro main** (Claude Code 2.1.328 in modalità `-p`, stessa
@@ -107,6 +114,14 @@ all'avvio da 95 a 0), skill da 257 a 73, contesto iniziale da 59.670 a 53.965
 token (−5.705, −9,6%). Rispetto alla cartella senza nessuna configurazione
 (56.602 token) il saldo è −2.637 token, con i tool e le skill del repo
 presenti.
+
+**I nove plugin di sviluppo riaccesi** (stessa misura, main 983791d0 contro
+ramo): plugin da 7 a 16, skill da 73 a 115, server MCP da 2 a 12, contesto
+iniziale da 54.372 a 56.719 token (+2.347, +4,3%). Con `/context` la stima è
+da 35,4k a 36,4k. I dieci server in più sono tutti di `engineering` (Slack,
+Linear, Asana, Atlassian, Notion, GitHub, PagerDuty, Datadog, Google Calendar,
+Gmail): nove falliscono all'avvio per la rete del container e Datadog chiede
+l'accesso, quindi nessuno porta tool, solo avvisi.
 
 **Test**: `scripts/tests/test_claude_progetto.py` (file scritti, percorsi che
 esistono, JSON validi, file altrui non toccati, rilancio idempotente, repo come

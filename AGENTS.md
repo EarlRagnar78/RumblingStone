@@ -331,7 +331,9 @@ Shutterstock, bioRxiv e pg-aiguide sono negati da `permissions.deny` di
 2026-11-19, ADR-0140). Se un compito ne richiede uno, l'agente lo dice al DM,
 che lo riaccende con `/mcp` o togliendo la regola. I plugin dell'account che il
 repo non ha mai usato sono spenti con `enabledPlugins: false`: restano accesi
-solo `pdf-viewer`, `review` e `tdd` (ADR-0140, punto 5). Lo stesso vale per i plugin spenti a livello globale: un agente non
+`pdf-viewer`, `review` e `tdd`, più i nove di metodo di sviluppo (`sdd`, `sadd`,
+`engineering`, `reflexion`, `docs`, `fpf`, `ddd`, `recursive-decomposition`,
+`mcp`) riaccesi su scelta del DM (ADR-0140, punto 5). Lo stesso vale per i plugin spenti a livello globale: un agente non
 può accenderli da solo.
 
 ---

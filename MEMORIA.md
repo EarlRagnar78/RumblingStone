@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-19 | STATO-E-ORDINE | ADR-0140, correzione: riaccesi per RumblingStone i nove plugin di metodo di svi… | ✅ `claude -p` dalla cartella del clone, main 983791d0 contro ramo: plugin da 7 a 16, skill da 73 a 115, server MCP da 2 a 12 (i 10 nuovi sono di `engineering`:… |
 | 2026-11-19 | STATO-E-ORDINE | ADR-0140 accettata: i plugin dell'account che il repo non ha mai usato sono spe… | ✅ `claude -p` dalla cartella del clone con lo script, main contro ramo: plugin da 36 a 7, server MCP da 102 a 2 (falliti all'avvio da 95 a 0), skill da 257 a 7… |
 | 2026-11-19 | STATO-E-ORDINE | ADR-0140 (proposta), la configurazione Claude del repo arriva anche nei thread… | 🟡 misura con `claude -p` 2.1.328 dalla cartella del clone, main contro ramo: `rumblingstone-tools` da assente a connesso (135 tool), hook da fermo a girato, sk… |
 | 2026-11-19 | STATO-E-ORDINE | ADR-0139: la memoria corta ha un tetto di 12 KB misurato da… | indice riscritto a 11.255 byte senza perdere fatti (18 PR citate, tutte con voce; righe senza posto in coda); 4 test nuovi, 18 su 18 verdi; il controllo non pa… |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-18 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: ricontrollo del corredo di dieci schede chiesto dal DM… | errori nelle note di corredo da 4 a 0 e balestre senza munizioni da 2 a 0 su dieci schede ricontrollate; `verifica_scheda.py` 0 violazioni prima e dopo |
 | 2026-11-18 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Kit delle prove 4050, primo giro del DM sull'ASUS (ADR-0136): il kit è partito… | 🟡 messaggi che spiegano il fallimento di quel giro: 0 → 1; prove fallite prima di partire viste dalla verifica: 0 su 1 → 1 su 1; comandi per ripartire pulito:… |
 | 2026-11-18 | SISTEMI-DI-GIOCO-PLUGIN | Correzioni dall'audit del 18/11. Impronte del banco d'invarianza rigenerate dop… | ✅ `impronte.py --confronta` 12 su 12 |
-| 2026-11-18 | RICERCA-TOOL-LGM-2026 | §3.1, ricontrollo della carta del cielo chiesto dal DM. La carta mostrava la me… | Stella-chiave a 0,3 pixel dal centro del segno; quattro lanci di fila identici pixel per pixel, variante da stampa identica byte per byte. A mezzanotte del 30… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 195 voci, l'ultima MS-0195 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 196 voci, l'ultima MS-0196 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

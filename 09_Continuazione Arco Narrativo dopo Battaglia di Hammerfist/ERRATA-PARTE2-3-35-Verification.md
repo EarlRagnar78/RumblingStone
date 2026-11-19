@@ -89,14 +89,15 @@ lista di buff pre-cast con **durate esplicite** e **2 effetti a innesco**. CR sa
        → durante *righteous might*: taglia Grande, CA 27 (−1 taglia, +2 nat), contatto 13
 - BAB / Lotta: +13 / +18 (Str 20 ; +19 sotto righteous might, taglia Grande)
 - TS: Temp +15, Rif +7, Vol +15  [+2 dai livelli di chierico in più]
-- Caratteristiche: For 20, Des 12, Cos 18, Int 12, Sag 20, Car 16
+- Caratteristiche: For 20, Des 12, Cos 18, Int 12, Sag 22 (pietra ioun sfera blu, +2), Car 16  [fino al 2026-11-19 Sag 20: le CD sotto erano già quelle di Sag 22, come la scheda viva `Bestiario/villain/Azarr_Kul/azarr-kul-final-cr17.md`; scelta del DM sulla card del 2026-11-19]
 
 **Attacco:**
 - Spadone sacrificale +2 +21/+16/+11 (2d6+9, 19-20/×2; +2d6 vs buoni)
   → sotto *divine power*: +25/+20/+15/+10 e For effettiva superiore
 - Soffio mezzodrago blu: linea elettricità 6 m, 6d8, Rif CD 20 metà, ogni 1d4 round
 
-**Incantesimi (Chierico 12, CL 14 con oggetti; domini Guerra + Tirannia/Tiamat):**
+**Incantesimi (Chierico 12, CL 14 con oggetti; domini Male + Tirannia/Tiamat):**
+<!-- storico: fino al 2026-11-19 domini Guerra + Tirannia; Tiamat non dà Guerra (scelta del DM sulla card del 2026-11-19) -->
 - 6°: *blade barrier* (CD 22), *harm* (CD 22)
 - 5°: *flame strike* cromatico (CD 21), *righteous might*, *slay living*
 - 4°: *divine power*, *freedom of movement*, *unholy blight* (CD 20), *air walk*

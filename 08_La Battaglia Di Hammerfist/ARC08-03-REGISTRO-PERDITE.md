@@ -268,5 +268,5 @@ Queste schede sono progettate per velocizzare il combattimento di massa.
 | **Signore Ventolesto** | _______ / 95 | Punire il Male `[ ]` |
 | **Capitano Lunapiena** | _______ / 88 | Corno del Valhalla `[ ]` Frecce Morte Drago `[ ] [ ] [ ]` |
 | **Orion Pelleorsa** | _______ / 98 | Forma Selvatica `[ ][ ][ ][ ][ ]` |
-| **Maestro Tempestas** | _______ / 91 | Musica Bardica `[ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]` |
+| **Maestro Tempestas** | _______ / 97 | Musica Bardica `[ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]` |
 | **Ranger Elfici (11)** | *Tracciati come unità o narrativamente* | |

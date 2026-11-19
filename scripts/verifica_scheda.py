@@ -758,6 +758,31 @@ _SPECIALISTA = re.compile(r"specialist|scuol[ae] proibit|prohibited school|\b(?:
 _CAR = {"Sag": r"(?:Sag|Wis)", "Int": r"Int", "Car": r"(?:Car|Cha)"}
 
 
+#: I segreti del Maestro del Sapere (SRD 3.5, «Loremaster»): Newfound Arcana dà un
+#: incantesimo bonus di 1°, More Newfound Arcana uno di 2°.
+_SEGRETI = ((re.compile(r"(?<!Altro )(?<!More )\b(?:Arcano Ritrovato|Newfound Arcana)\b", re.I), 1),
+            (re.compile(r"\b(?:Altro Arcano Ritrovato|More Newfound Arcana)\b", re.I), 2))
+
+
+def _con_i_segreti(attesi: "list[tuple[int, int]] | None", intorno: str) -> "list[tuple[int, int]] | None":
+    """Gli slot attesi più quelli dei segreti del Maestro del Sapere scritti vicino alla lista."""
+    if not attesi:
+        return attesi
+    attesi = list(attesi)
+    for rx, liv in _SEGRETI:
+        if rx.search(intorno) and liv < len(attesi) and attesi[liv][0] >= 0:
+            attesi[liv] = (attesi[liv][0], attesi[liv][1] + 1)
+    return attesi
+
+
+def _sezione(righe: "list[str]", i: int) -> str:
+    """Il testo fra il titolo sopra la riga i e il titolo successivo: la scheda di
+    quella creatura, non quelle accanto nello stesso file."""
+    su = next((j for j in range(i, -1, -1) if righe[j].lstrip().startswith("#")), 0)
+    giu = next((j for j in range(i + 1, len(righe)) if righe[j].lstrip().startswith("#")), len(righe))
+    return "\n".join(righe[su:giu])
+
+
 def _testa_della_lista(righe: "list[str]", i: int) -> "int | None":
     """L'intestazione degli incantesimi sopra la riga i (come `_classe_che_lancia`)."""
     altro = 0
@@ -856,7 +881,10 @@ def incantatori(p: Path) -> "tuple[list[dict], list[dict]]":
             t = righe[testa]
             pezzo = t[TESTA_INCANTESIMI.search(t).start():]
             li = _LI.search(pezzo)
-            livello = _livello_scritto(pezzo, classe) or (int(li.group(1)) if li else None)
+            # il LI del ranger e del paladino è metà del livello di classe (3.5) o il livello − 3
+            # (PF1e): la tabella vuole il livello di classe, che si cerca sopra la lista
+            livello = _livello_scritto(pezzo, classe) or (
+                int(li.group(1)) if li and classe not in ("paladin", "ranger") else None)
             # una classe di prestigio alza il livello con cui la lista si lancia (ADR-0126, lotto 3-ter)
             pr = _prestigio_nel_tipo(righe, testa, classe, sis)
             if pr and not (livello and _livello_scritto(pezzo, classe) is None and classe in ("paladin", "ranger")):
@@ -891,7 +919,9 @@ def incantatori(p: Path) -> "tuple[list[dict], list[dict]]":
             spec = classe == "wizard" and bool(_SPECIALISTA.search(intorno))
             var = dati.get("variante_del_dm")
             liste[testa] = {"classe": classe, "livello": livello, "punti": punti, "foc": foc, "testa": testa,
-                            "prove": [(M.al_giorno(classe, livello, punti, x, spec), M.conosciuti(classe, livello, x), [])
+                            "prove": [(_con_i_segreti(M.al_giorno(classe, livello, punti, x, spec),
+                                                      _sezione(righe, testa)),
+                                       M.conosciuti(classe, livello, x), [])
                                       for x in ([sis, var] if var else [sis])],
                             "variante": var, "car": dati["caratteristica"]}
             scritti = M.leggi_al_giorno(pezzo)

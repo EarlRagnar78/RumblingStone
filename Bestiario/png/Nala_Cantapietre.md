@@ -12,7 +12,7 @@
 <!-- storico -->Fino al 2026-11-14: «La Lama Nascosta».<!-- /storico -->
 
 Boost log: correzione dei conti — GS 12 → 12 — CA 20 con Schivare, stocco affilato 15-20, Arma Accurata al posto di una competenza che il bardo ha già, Cos 18 (90 pf), incantesimi 3/4/4/2.
-Benchmark: PF T1-1 riga 12: CA 20 vs 27 (sotto) / pf 90 vs 165 (sotto) / atk +13 vs +21 (sotto) / TS buono +13 vs +15 (sotto). È una pregen d'infiltrazione. Spia Maestra = Master Spy [Private source — Complete Adventurer].
+Benchmark: PF T1-1 riga 12: CA 20 vs 27 (sotto) / pf 90 vs 165 (sotto) / atk +13 vs +21 (sotto) / TS buono +14 vs +15 (sotto). È una pregen d'infiltrazione. Spia Maestra = Spymaster [Private source — Complete Adventurer, p. 76] (scelta del DM sulla card del 2026-11-19).
 <!-- storico -->
 Prima della correzione (2026-10-16): CA 18, PF 84 (12d6+36), Tempra +7, stocco 18-20, incantesimi 3/4/3/1 e *Sonno* fra i conosciuti, Competenza nelle Armi Esotiche (Stocco).
 <!-- /storico -->

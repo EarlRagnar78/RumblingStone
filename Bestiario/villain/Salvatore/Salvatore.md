@@ -142,7 +142,7 @@ Questo crea una **traccia investigativa** che collega i due NPC e porta al Colle
 - **Volontà:** +11 (+8 Base Bardo, +1 Sag, +2 Talento)
   *(Eccezione: TS Volontà CD 14 per evitare lo stato Scosso se subisce anche solo 1 PF di danno — vedi **Odio per il Sangue**)*
 
-> ⚠ Classi non SRD. L'Accordo Sublime chiede, fra l'altro, 13 gradi in Esibirsi: un personaggio li ha solo dal 10° livello, quindi va preso dopo i cinque livelli da Spia, non subito dopo il Bardo 8. I TS base di Spia non si verificano senza la sua tabella: restano quelli della scheda. PF1e: per la Spia, il ladro con l'archetipo Spia (*Advanced Player's Guide*) — si avvicina: menzogna, travestimento e veleno, senza magia; per l'Accordo Sublime nessun archetipo del bardo PF1e dà incantesimi oltre il 6° — stravolge, e la scheda tiene la classe 3.5.
+> ⚠ Classi non SRD. L'Accordo Sublime chiede Conoscenze (arcane) 13 gradi, Ascoltare 13, Esibirsi 10, Professione (astrologo) 6, Sapienza Magica 6, incantesimi arcani di 3° e la musica bardica (*Complete Arcane* p. 60, verificato su dnd.arkalseif.info il 2026-11-19): i 13 gradi un personaggio li ha solo dal 10° livello, quindi va preso dopo i cinque livelli da Spia, non subito dopo il Bardo 8. I TS base di Spia non si verificano senza la sua tabella: restano quelli della scheda. PF1e: per la Spia, il ladro con l'archetipo Spia (*Advanced Player's Guide*) — si avvicina: menzogna, travestimento e veleno, senza magia; per l'Accordo Sublime nessun archetipo del bardo PF1e dà incantesimi oltre il 6° — stravolge, e la scheda tiene la classe 3.5.
 
 ### Abilità principali
 
@@ -159,6 +159,8 @@ Questo crea una **traccia investigativa** che collega i due NPC e porta al Colle
 | Conoscenze (Arcane) | **+16** | +3 Int, 13 gradi |
 | Conoscenze (Piani) | **+16** | +3 Int, 13 gradi |
 | Conoscenze (Storia) | **+18** | +3 Int, 13 gradi, +2 bonus temporale |
+| Ascoltare | **+14** | +1 Sag, 13 gradi (prerequisito dell'Accordo Sublime) |
+| Professione (astrologo) | **+7** | +1 Sag, 6 gradi (prerequisito dell'Accordo Sublime) |
 
 ### Capacità speciali
 
@@ -213,17 +215,23 @@ Ogni volta che Sal subisce danni (anche 1 solo PF), deve superare un **TS Volont
 
 Sal preferisce non combattere con la magia in modo evidente. Usa incantesimi come strumento sociale e di fuga.
 
-> ⚠ Un Bardo 8 da solo conosce 6/4/4/3 incantesimi, ne lancia 3/5/5/2 con Car 22 e arriva al 3° livello. Gli incantesimi e gli slot in più della lista (il 4° livello, *Suggestione di Massa*, *Dominio di Mostri*) li danno l'Accordo Sublime e la Spia, che non sono SRD: tenuti come li scrive la scheda. Alcuni stanno a un livello diverso da quello del bardo SRD (*Grazia del Gatto* è del 2°, *Aura Magica di Nystul* del 1°, *Confusione* del 3°, *Porta Dimensionale* del 4°): le CD sono quelle della scheda.
+> ⚠ Un Bardo 8 da solo conosce 6/4/4/3 incantesimi, ne lancia 3/5/5/2 con Car 22 e arriva al 3° livello. Il 4° e il 5° livello vengono dall'Accordo Sublime 1, che ha slot suoi (2 di 4° e 1 di 5°, più i bonus di Car), sceglie dalle liste del mago e del bardo e, se un incantesimo sta in tutte e due, prende il livello del bardo; il suo livello si somma a quello del bardo per il livello d'incantatore (*Complete Arcane* p. 60). La Spia non dà incantesimi. Alcuni stanno a un livello diverso da quello del bardo SRD (*Aura Magica di Nystul* è del 1°): le CD sono quelle della scheda.
 
 **Livello 0 (3/giorno):** *Prestidigitazione, Individuazione del Magico, Ammaliare Animali, Luci, Nota Dissonante*
 
-**Livello 1 (5/giorno):** *Charme su Persone (CD 17), Sonno (CD 17), Grazia del Gatto, Cura Ferite Leggere, Individuazione della Segretezza*
+**Livello 1 (5/giorno):** *Charme su Persone (CD 17), Sonno (CD 17), Cura Ferite Leggere, Individuazione della Segretezza*
 
-**Livello 2 (5/giorno):** *Aura Magica di Nystul, Invisibilità, Silenzio, Luogo Silenzioso, Cura Ferite Moderate*
+**Livello 2 (5/giorno):** *Aura Magica di Nystul, Invisibilità, Silenzio, Luogo Silenzioso, Cura Ferite Moderate, Grazia del Gatto*
 
-**Livello 3 (4/giorno):** *Suggestione di Massa (CD 19), Velocità, Leggere il Futuro, Portale Dimensionale*
+**Livello 3 (2/giorno):** *Velocità, Leggere il Futuro, Confusione (CD 19)*
 
-**Livello 4 (2/giorno):** *Confusione (CD 20), Porta Dimensionale, Dominio di Mostri (CD 20)*
+<!-- storico: fino al 2026-11-19 Grazia del Gatto stava al 1° e Suggestione di Massa (CD 19) al 3°. Grazia del Gatto è del 2° per il bardo; Suggestione di Massa è del 5°, fuori portata per Bardo 8 e Accordo Sublime 1, e resta la Suggestione della musica (scelta del DM sulla card del 2026-11-19) -->
+
+**Accordo Sublime, 4° livello (3/giorno, 2 più 1 di Car):** *Porta Dimensionale, Dominare Persone (CD 20), Invisibilità Superiore*
+
+**Accordo Sublime, 5° livello (2/giorno, 1 più 1 di Car):** *Suggestione di Massa (CD 21)*
+
+<!-- storico: fino al 2026-11-19 il 3° era 4/giorno con Portale Dimensionale, e il 4° 2/giorno con Confusione (CD 20), Porta Dimensionale e Dominio di Mostri (CD 20). Il bardo 8 con Car 22 lancia 2 incantesimi di 3°; Confusione è del 3° per il bardo, e l'Accordo prende la versione del bardo; Dominio di Mostri è del 9° per il mago e il bardo non l'ha. L'Accordo Sublime 1 dà 2 di 4° e 1 di 5°, conosciuti 3 e 1, dalle liste del mago e del bardo (Complete Arcane p. 60, verificato su dnd.arkalseif.info; scelta del DM sulla card del 2026-11-19, la seconda della giornata) -->
 
 ### Equipaggiamento
 

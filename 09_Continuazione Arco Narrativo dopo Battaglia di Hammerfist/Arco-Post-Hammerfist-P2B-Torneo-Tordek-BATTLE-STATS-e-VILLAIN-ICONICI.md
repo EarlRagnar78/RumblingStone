@@ -63,15 +63,16 @@ Gladiatore brutale che usa catene chiodate e acrobazie; perfetto come boss di me
 
 **Kragar “Re delle Catene”** – Fighter 8 / Rogue 4, Umano malvagio
 
-- PF 88 (8d10 + 4d6, Cos 16)  
+- PF 98 (8d10 + 4d6 + 36, Cos 16)  
 - CA 23 (armatura a bande + Des + schivare)  
 - Iniziativa +3; Velocità 9 m  
-- For 18, Des 16, Cos 16, Int 12, Sag 10, Car 12  
+- For 18, Des 16, Cos 16, Int 13, Sag 10, Car 12  
 - Attacchi:
   - Catena chiodata +16/+11 (2d4+6, portata 3 m, Tripping)  
-  - Attacco furtivo +3d6 (quando flanka o il bersaglio è sbilanciato)  
+  - Attacco furtivo +2d6 (quando fiancheggia o il bersaglio è sbilanciato)  
 - TS: Temp +9, Rif +7, Vol +4  
-- Talenti: Combat Reflexes, Improved Trip, Weapon Focus (catena chiodata), Improved Disarm, Power Attack.
+- Talenti: Exotic Weapon Proficiency (catena chiodata), Combat Expertise, Combat Reflexes, Improved Trip, Weapon Focus (catena chiodata), Improved Disarm, Power Attack.
+<!-- storico: fino al 2026-11-19 pf 88, furtivo +3d6, Int 12 e senza Competenza nelle armi esotiche né Maestria in combattimento. Ladro 4 dà +2d6; 8d10+4d6 col primo dado pieno e Cos +3 danno 98; Sbilanciare e Disarmare Migliorato vogliono Maestria in combattimento, che vuole Int 13 (scelta del DM sulla card del 2026-11-19) -->
 
 **Mosse speciali**
 

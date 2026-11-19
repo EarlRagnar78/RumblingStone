@@ -243,6 +243,31 @@ Solo se un PNG è morto / cambiato allineamento / cambiato posizione:
 sed -i 's/Status: alive/Status: dead (killed session 14)/' Bestiario/villain/Regiarix/Regiarix.md
 ```
 
+#### 4.3-bis Una scheda cambia fuori dalla serata
+
+Quando cambia la scheda di un PNG già scritto nello stato (classe, livello,
+GS), `dm.py` non ha un comando che riscriva la sua riga: la riga sta in
+`campaign/state.yaml` e le tabelle di `state.md` si rigenerano da lì
+(ADR-0007, ADR-0050). Esempio reale, Tempestas da GS 14 a GS 15 (#498):
+
+```bash
+# 1. la riga del PNG si corregge nel master, non in state.md
+grep -n "Maestro Tempestas" campaign/state.yaml
+#    poi si modifica quella riga (Stormsinger 3, GS 15)
+# 2. si rigenerano le regioni gen:state di state.md e si verifica
+python3 scripts/render_state.py
+python3 scripts/render_state.py --check
+python3 scripts/validate_state.py
+# 3. la prosa fuori dai marcatori gen:state si corregge a mano
+grep -n "Tempestas" campaign/state.md
+# 4. si rigenera il dossier del DM
+python3 scripts/dm.py dossier
+```
+
+`state-changelog.md` non si tocca: le righe vecchie sono storia. Il lavoro si
+fa sul ramo del gruppo; su `main` solo con il sì esplicito del DM, come per
+#498.
+
 ### 4.4 Aggiorna encounter files (opzionale)
 
 Se un encounter è stato "consumato" e potrebbe riemergere (es. imboscata replicabile), aggiungi nota in `campaign/encounters/...`.

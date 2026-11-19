@@ -1434,3 +1434,13 @@ Se la taglia non è quella della base il grado atteso è un intervallo: +1 se è
 **Misura** sull'impronta delle creature (720 blocchi generati), contro main: nome sbagliato 234 → 0; Incantesimi focalizzati senza scuola 312 → 0, con la scuola 0 → 102; su blocchi senza incantesimi 210 → 0.
 
 **Limiti dichiarati.** La scuola è quella degli incantesimi scelti, non una scelta di personaggio: il DM la cambia se vuole un mago specialista. La CD scritta nel blocco non aggiunge il +1 (o +2) sulla scuola. Gli altri talenti da incantatore (Incantare in combattimento, metamagia, Incantesimo Rapido) restano possibili su un mostro senza incantesimi: la card chiedeva solo di Incantesimi focalizzati. Nel PRD «thunderous drums» si chiama «Thundering Drums»: la scuola è presa da lì, il nome nei dati non è corretto in questa PR.
+
+### Addendum 2026-11-19: le scelte storiche ricontrollate con una seconda fonte
+
+**Contesto.** Il DM ha aperto all'ambiente dnd.arkalseif.info (D&D Tools: classi, talenti, incantesimi, domini e divinità dei manuali 3.5) e ha chiesto di ricontrollare con essa le scelte già fatte sulle schede, comprese quelle decise su card nelle settimane prima. È una fonte non OGL: nel repo entrano solo nomi, numeri e pagine, e nessun test di CI la legge.
+
+**Decisione.** Una correzione che il sito decide da solo (una pagina citata sbagliata, una nota «non verificato» che ora ha risposta) si applica con la fonte accanto. Una correzione che lascia una scelta va su card, una alla volta, con la consigliata e le fonti per verificarla. Un dominio di chierico è legale se è nella lista del dio del Deities and Demigods o del FRCS; l'allineamento sta a un passo da quello del dio (SRD).
+
+**Conseguenze.** Venti card risolte il 19/11 (elenco nella voce MS e nel registro della revisione). Due errori di conto trovati rifacendo gli slot sulla tabella SRD sono corretti con le card che li contenevano. `magia.py` conta lo slot di scuola dello specialista anche allo 0 nel 3.5 (SRD «per spell level»; nel PRD dal 1°), e `verifica_scheda.py` conta gli incantesimi bonus del Maestro del Sapere e legge il livello di classe, non il LI, per ranger e paladino. Misura contro main 517a3e79: violazioni 34 → 2.
+
+**Limiti dichiarati.** Il sito copre poco il Monster Manual e il Magic Item Compendium, e per gli dei del Deities and Demigods non dà la lista dei Reami: quello che non copre resta non verificato, con il nome nella voce MS.

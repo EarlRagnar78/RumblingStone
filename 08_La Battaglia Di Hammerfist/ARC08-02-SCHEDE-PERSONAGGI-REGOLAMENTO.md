@@ -94,7 +94,7 @@
 *   **Odio della stirpe (Str):** +4 ai tiri per colpire e ai danni contro Thorik, il portatore della Corona e di Aegis Fang, sempre: odia la stirpe che porta le armi dei nani, comunque sia andata all'alba del −1000 (non SRD, canone del DM 2026-10-18). Vale sul morso che apre la presa e sui danni dei morsi in presa; e anche sulle prove di lotta di Fauci contro Thorik, che l'SRD tratta «come un tiro per colpire in mischia» `[CANONE — DM 2026-10-20]`.
 *   **Corrompere Acqua (Mag):** A volontà (potenziamento: l'SRD dice 1/giorno).
 *   **Capacità Magiche:** 3/giorno: *oscurità* (raggio 21 m).
-*   **Incantesimi:** Come Stregone di 7° liv. (LI 7°; 6/8/8/6 al giorno).
+*   **Incantesimi:** Come Stregone di 7° liv. (LI 7°; 6/7/7/5 al giorno: 6/6/4 dalla tabella SRD più 1 bonus per livello con Car 16; fino al 2026-11-19 la scheda diceva 6/8/8/6, scelta del DM sulla card del 2026-11-19).
     *   *3° (CD 16):* *Dissolvi Magie*, *Nube Maleodorante*
     *   *2° (CD 15):* *Freccia Acida*, *Immagine Speculare*, *Invisibilità*
     *   *1° (CD 14):* *Armatura Magica*, *Colpo Accurato*, *Dardo Incantato*, *Protezione dal Bene*, *Scudo*
@@ -257,7 +257,9 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 > **Fonti e verifica 3.5**: l'**orog** non è nell'SRD
 > [Private source — Monsters of Faerûn]; il **Signore della Guerra** non è
 > una classe SRD [Private source — non identificata: la Furia Comandante
-> ricorda il *Warchief* di Complete Warrior]. I suoi privilegi sono
+> non è il *Warchief* del Miniatures Handbook, p. 24, che dà agli alleati
+> della stessa tribù +2 For al 1° e +4 al 3°, verificato su dnd.arkalseif.info
+> il 2026-11-19]. I suoi privilegi sono
 > quelli della scheda, confermati dal DM il 2026-10-18. PF1e: il **Cavaliere** (APG,
 > ordine del Drago) si avvicina, perché dà bonus agli alleati vicini e tiene
 > il guerriero in prima linea; il *Battle Herald* farebbe di più il
@@ -376,10 +378,11 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 **Qualità Speciali:**
 *   **Scacciare Non Morti (Sop):** 11/giorno (+6 al tiro).
 *   **Canto di Battaglia (Sop):** 1/giorno, azione standard. Tutti gli alleati entro 18m ottengono +2 morale ad attacchi, danni e TS per 10 round.
-*   **Incantesimi:** Lancia come un Chierico di 15° livello. **Domini:** Guerra, Terra.
-    *   **Incantesimi Preparati (LI 15°):** *Aura Sacra*, *Parola del Potere Stordire* (D), *Terremoto* (D), *Guarigione* (x2), *Lama di Barriera* (D), *Colpo Infuocato* (D), *Potere Divino* (D), *Muro di Pietra*, *Preghiera*, ecc. (elenco completo nella Guida DM).
+*   **Incantesimi:** Lancia come un Chierico di 15° livello. **Domini:** Protezione, Terra.
+    *   **Incantesimi Preparati (LI 15°):** *Aura Sacra*, *Vuoto Mentale* (D), *Terremoto* (D), *Guarigione* (x2), *Pelle di Pietra* (D), *Colpo Infuocato*, *Immunità agli Incantesimi* (D), *Potere Divino*, *Muro di Pietra*, *Preghiera*, ecc. (elenco completo nella Guida DM).
 
-**Talenti:** Scacciare Extra, Arma Focalizzata (martello da guerra) dal dominio della Guerra (gli altri talenti non sono scritti). `[CANONE — regola, ADR-0118]: il dominio della Guerra dà Arma Focalizzata nell'arma preferita di Moradin (SRD), e il martello torna a +18 (BAB +11, For +4, +2 arma, +1)`
+**Talenti:** Scacciare Extra, Arma Focalizzata (martello da guerra) (gli altri talenti non sono scritti). `[CANONE — DM 2026-11-19]: Arma Focalizzata è un suo talento, e il martello resta a +18 (BAB +11, For +4, +2 arma, +1)`
+<!-- storico: fino al 2026-11-19 Domini Guerra e Terra, con Arma Focalizzata dal dominio della Guerra, che Moradin non dà (scelta del DM sulla card del 2026-11-19) -->
 **Equipaggiamento:** *Armatura Completa +3*, *Scudo Pesante +2*, *Anello di Protezione +3*, *Martello da Guerra Sacro +2*, *Guanti del Potere Orchesco +2* e *Mantello del Carisma +2*.
 
 **Tattiche:** *Prima del combattimento*: al mattino prepara *Banchetto degli Eroi* per gli ufficiali e consacra le armi (Benedizione della Forgia); prima di un assalto lancia *Aura Sacra* su sé e sulle Cantitrici vicine, e *Libertà di Movimento* su Re Thorek. *Durante il combattimento*: round 1 Canto di Battaglia (+2 a tutti gli alleati entro 18 m per 10 round); poi tiene in piedi i comandanti, con *Guarigione* sul re e *Cura Ferite Leggere di Massa* dopo ogni soffio; *Muro di Pietra* chiude una breccia, *Terremoto* lontano dalle mura spezza una carica. Scaccia i non morti se ne compaiono. Combatte col martello solo se un nemico le arriva addosso, e allora prima *Potere della Giustizia* e *Potere Divino*. *Morale*: non abbandona il re né il tempio; sotto i 40 pf si ritira dietro le Cantitrici, si cura e torna.
@@ -392,8 +395,8 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 > senza perdere progressione; lo *Skald* (Advanced Class Guide) si avvicina
 > nel canto ma stravolge il chierico, e resta da preferire la classe 3.5.
 > Conti ricontati: *Armatura Completa +3* vale +11 e *Scudo Pesante +2* +4
-> (erano +8 e +2), quindi CA 29; il dominio della Guerra dà Arma Focalizzata
-> nel martello da guerra, l'arma di Moradin; +18 e 1d8+6 chiedono For 18,
+> (erano +8 e +2), quindi CA 29; Arma Focalizzata nel martello da guerra è
+> un suo talento, e i domini sono Protezione e Terra (Moradin non dà Guerra); +18 e 1d8+6 chiedono For 18,
 > dai guanti. Scacciare: 3 + Car +4 + 4 di Scacciare Extra = 11
 > al giorno, prova +6. Incantesimi: con Sag 22 gli slot sono quelli scritti,
 > e ogni livello ha uno slot di dominio (D).
@@ -436,8 +439,9 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 > chierico, Car 18 dalle CD da bardo; TS con un *Mantello della
 > Resistenza +2*. Un bardo di 4° ha 4 usi di musica e Ispirare
 > Coraggio +1: gli 8 usi e il +2 della scheda restano con due talenti non SRD,
-> Musica Extra [Private source — Complete Adventurer] e *Song of the Heart*
-> [Private source — talento non SRD, non verificato].
+> Musica Extra [Private source — Complete Adventurer, p. 109] (+4 usi) e
+> *Song of the Heart* [Private source — Eberron Campaign Setting, p. 60]
+> (+1 ai bonus di ispirare), verificati su dnd.arkalseif.info il 2026-11-19.
 > *Lancia Sonora* non è SRD ed esce; *Benedizione* e *Scudo della Fede* non
 > sono incantesimi da bardo (restano tra quelli da chierico). Il dominio
 > Nanico è del Forgotten Realms [Private source — FRCS]. Il Coro della
@@ -583,30 +587,31 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 <div style="page-break-before:always"></div>
 
 ### **MAESTRO TEMPESTAS**
-*Mezzelfo Bardo 12°/Cantore delle tempeste 2°, GS 14*
+*Mezzelfo Bardo 12°/Cantore delle tempeste 3°, GS 15*
+<!-- storico: fino al 2026-11-19 Bardo 12 / Cantore delle tempeste 2, GS 14, 91 pf (14d6+42), Tempra +7, musica 14/giorno, incantatore di 14° (4/5/5/4/4/2), *fulmine* fra gli incantesimi di 3° (non è da bardo: PHB p. 248, stregone e mago), cinque talenti, Esibirsi +21, Concentrazione +11; scelta del DM del 2026-11-19: colpo di tuono -->
 **NB Umanoide Medio (Elfo)**
 **Iniziativa:** +7; **Sensi:** Visione Crepuscolare; Ascoltare +18, Osservare +15
 
 **CA:** 20 (+6 giaco di maglia +2, +3 Des, +1 deflessione), contatto 14, colto alla sprovvista 17
-**PF:** 91 (14d6+42)
-**TS:** Tempra +7, Riflessi +13, Volontà +13
+**PF:** 97 (15d6+45)
+**TS:** Tempra +8, Riflessi +16, Volontà +13
 
 **Velocità:** 9m
 **Attacco Base:** +10; **Lotta:** +11
 **Attacco:** *Spada corta +1* +12/+7 in mischia (1d6+2/19-20)
 
 **Qualità Speciali:**
-*   **Musica Bardica (12/giorno):** *Ispirare Coraggio* (+2 a colpire e danni), *Suggestione* (CD 22), *Canto di Libertà*.
+*   **Musica Bardica (15/giorno):** *Ispirare Coraggio* (+2 a colpire e danni), *Suggestione* (CD 22), *Canto di Libertà*.
 *   **Cantata della Tempesta Tonante (1/incontro):** alleati entro 18 m +2 morale ad attacchi, danni e TS per 10 round; ostili entro 18 m 2d6 elettrici a inizio turno per 3 round (Riflessi CD 23 dimezza; +1d6 a chi porta armatura di metallo).
-*   **Arcane Supreme:** Maestria del Controincantesimo, Potere Magico +1.
-*   **Incantesimi da Bardo Conosciuti (incantatore di 14° livello):**
+*   **Canto della tempesta** (Cantore delle tempeste): *folata di vento* con un uso di musica, LI 18 (20 al freddo o nella tempesta, Stormpower); **colpo di tuono** con un uso di musica, contatto a distanza +13 entro 18 m, danni da elettricità pari a una prova di Esibirsi +29 (in media 39), Riflessi CD 19 dimezza, chi fallisce resta anche assordato se fallisce Tempra; Stormpower dà +2 a Esibirsi (canto) per i canti della tempesta.
+*   **Incantesimi da Bardo Conosciuti (incantatore di 15° livello):**
     *   *5° (CD 21):* *Passo nelle Ombre*, *Cura Ferite Leggere di Massa*, *Suggestione di Massa*.
     *   *4° (CD 20):* *Urlo*, *Dominare Persone*, *Porta Dimensionale*, *Invisibilità Superiore*.
-    *   *3° (CD 19):* *Fulmine*, *Velocità*, *Dissolvi Magie*, *Confusione*.
+    *   *3° (CD 19):* *Lentezza*, *Velocità*, *Dissolvi Magie*, *Confusione*.
     *   *2° (CD 18):* *Esplosione Sonora*, *Polvere Luccicante*, *Eroismo*, *Invisibilità*.
     *   *1° (CD 17):* *Cura Ferite Leggere*, *Charme su Persone*, *Risata Incontenibile*, *Sonno*.
 
-**Tattiche:** Maestro Tempestas è un cannone di vetro magico. Rimane in aria, usando la sua musica per potenziare gli alleati e scatenando incantesimi devastanti sui nemici. Il suo incantesimo *Velocità* lanciato sui ranger elfici o sui PG è un punto di svolta. Contro Fauci di Palude apre con la Cantata della Tempesta Tonante e poi usa *fulmine* ed *esplosione sonora*: il drago nero è immune all'acido, non all'elettricità né al suono.
+**Tattiche:** Maestro Tempestas è un cannone di vetro magico. Rimane in aria, usando la sua musica per potenziare gli alleati e scatenando incantesimi devastanti sui nemici. Il suo incantesimo *Velocità* lanciato sui ranger elfici o sui PG è un punto di svolta. Contro Fauci di Palude apre con la Cantata della Tempesta Tonante e poi usa il *colpo di tuono* ed *esplosione sonora*: il drago nero è immune all'acido, non all'elettricità né al suono.
 
 ---
 <div style="page-break-before:always"></div>
@@ -684,20 +689,21 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 | **Velocità** | 6m | |
 | **TS** | Temp **+13**, Rifl **+7**, Vol **+16** | |
 | **Attacco Base** | +8 | |
-| **Attacco Melee** | **+14** | *Martello da Guerra Sacro +2* (1d8+5) |
-| **For** 16, **Cos** 20, **Sag** 22, **Car** 16 | | |
+| **Attacco Melee** | **+13** | *Martello da Guerra Sacro +2* (1d8+5) |
+| **For** 16, **Cos** 20, **Int** 13, **Sag** 22, **Car** 15 | | |
 
-**Abilità:** Concentrazione **+20**, Conoscenze (religione) **+16**, Sapienza Magica **+16**, Ascoltare +6, Osservare +6, Percepire Intenzioni +6, Sopravvivenza +6, Guarire +6, Diplomazia +3, Intimidire +3, Artigianato (pietra) +3, Nascondersi −5, Muoversi Silenziosamente −5.
+**Abilità:** Concentrazione **+20**, Conoscenze (religione) **+8**, Sapienza Magica **+16**, Ascoltare +6, Osservare +6, Percepire Intenzioni +6, Sopravvivenza +6, Guarire +6, Diplomazia +2, Intimidire +2, Artigianato (pietra) +11, Nascondersi −5, Muoversi Silenziosamente −5.
 **Lingue:** Comune, Nanico, Terran.
 
 **ABILITÀ PRINCIPALI:**
-*   **Scacciare Non Morti (10/giorno):** Bonus di +5 al tiro.
+*   **Scacciare Non Morti (9/giorno):** Bonus di +4 al tiro.
 *   **Rune di Potere (3/giorno):** Come azione di round completo, puoi incidere una runa su un'arma. L'arma ottiene un **bonus di potenziamento di +1** per 1 ora (non cumulabile con bonus esistenti).
 *   **Incantesimi Chiave:**
     *   **Guarigione:** *Guarigione*, *Cura Ferite Critiche* (x2), *Cura Ferite Gravi* (x2), *Cura Ferite Moderate* (x3).
     *   **Supporto:** *Potere Divino* (+bonus attacco, PF temp), *Preghiera* (+1 a tutti i tiri alleati, -1 nemici), *Forza del Toro* (x2).
     *   **Attacco:** *Colpo Infuocato*, *Ferire*.
-    *   **Domini:** Guerra (competenza e focus nelle armi), Terra (*Scolpire Pietra*).
+    *   **Domini:** Protezione (1/giorno, +9 al prossimo TS di chi tocca), Terra (*Scolpire Pietra*).
+    <!-- storico: fino al 2026-11-19 Guerra (competenza e focus nelle armi), che Moradin non dà; attacco +14 (scelta del DM sulla card del 2026-11-19) -->
 
 ---
 <div style="page-break-before:always"></div>
@@ -712,13 +718,13 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 | **PF** | **90** | |
 | **CA** | **20** | (Armatura di Cuoio +2, Des +4, Naturale +1, Schivare +1) |
 | **Velocità** | 9m | |
-| **TS** | Temp **+8**, Rifl **+13**, Vol **+11** | |
+| **TS** | Temp **+7**, Rifl **+14**, Vol **+9** | |
 | **Attacco Base** | +8 | |
 | **Attacco Melee** | **+13** | *Stocco Affilato +1* (1d6+3, critico 15-20/x2) |
-| **Attacco Furtivo** | **+3d6** | Danno extra contro bersagli colti alla sprovvista o fiancheggiati. |
+| **Attacco Furtivo** | **+1d6** | Danno extra contro bersagli colti alla sprovvista o fiancheggiati. |
 | **Des** 18, **Cos** 18, **Car** 18 | | |
 
-**Abilità:** Diplomazia **+23**, Raggirare **+21**, Intrattenere (canto) **+16**, Ascoltare +15, Osservare +15, Camuffare +14 (+16 per recitare una parte), Nascondersi +14, Muoversi Silenziosamente +14, Raccogliere Informazioni +12, Percepire Intenzioni +10, Sapere bardico +10, Acrobazia +9, Intimidire +8, Conoscenze (locali) +7.
+**Abilità:** Diplomazia **+23**, Raggirare **+22**, Intrattenere (canto) **+16**, Ascoltare +15, Osservare +15, Camuffare +14 (+16 per recitare una parte), Nascondersi +14, Muoversi Silenziosamente +14, Raccogliere Informazioni +12, Percepire Intenzioni +10, Sapere bardico +10, Acrobazia +9, Intimidire +6, Falsificare +6, Conoscenze (locali) +7.
 **Lingue:** Comune, Nanico, Orchesco, Goblin (capisce gli ordini dell'orda entro 9 m, Ascoltare CD 15).
 
 **ABILITÀ PRINCIPALI:**

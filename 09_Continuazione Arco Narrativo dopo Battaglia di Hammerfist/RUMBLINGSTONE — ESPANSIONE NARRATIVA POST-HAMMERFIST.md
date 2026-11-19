@@ -501,7 +501,7 @@ La terza opzione richiede 6 ore di Tordek (che ha altre priorità) e produce un 
 **Allineamento**: LG
 
 **Stats D&D 3.5**:
-
+- Car 17: lo chiede Inspirational Leadership (*Heroes of Battle* p. 98, verificato su dnd.arkalseif.info il 2026-11-19; scelta del DM sulla card del 2026-11-19). Le altre caratteristiche la scheda non le dice.
 - HP: 65 | AC: 18 (full plate, shield)
 - BAB: +7/+2 | Fort +9, Ref +3, Will +3
 - Atk: Longsword +10/+5 (1d8+4) o Shortbow +8/+3 (1d6+2)

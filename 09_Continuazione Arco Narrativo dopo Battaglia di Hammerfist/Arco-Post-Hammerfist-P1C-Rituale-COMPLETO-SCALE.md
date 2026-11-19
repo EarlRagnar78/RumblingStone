@@ -303,7 +303,8 @@ SE Seedlings piantati:
 
 **Forze:**
 - 1 Drow Assassin (Rogue 9) - Invisibility pre-cast
-- 2 Drow Clerics (Cleric 8, dominio Guerra + Fuoco)
+- 2 Drow Clerics (Cleric 8, domini Distruzione + Inganno)
+<!-- storico: fino al 2026-11-19 «dominio Guerra + Fuoco» qui e «War + Trickery» nella scheda: Lolth non dà né Guerra né Fuoco (scelta del DM sulla card del 2026-11-19) -->
 - 4 Drow Veterans (Fighter 8)
 
 #### Battle Stats - Drow Assassin
@@ -347,7 +348,7 @@ SE Seedlings piantati:
 
 #### Battle Stats - Drow Clerics (2)
 
-**Drow Cleric of Lolth** (Cleric 8, domini: War + Trickery)
+**Drow Cleric of Lolth** (Cleric 8, domini: Destruction + Trickery)
 - **CR:** 9
 - **Init:** +1
 - **AC:** 22 (+7 armor [mithral chainmail +2], +1 Dex, +2 shield, +2 deflection)
@@ -360,27 +361,30 @@ SE Seedlings piantati:
 - **Spells:** CL 8th (DC 14 + spell level)
 
 **Prepared Spells:**
-- **4th (3):** *Flame Strike* (DC 18, 8d6 half fire/half divine), *Divine Power*, *Freedom of Movement*
-- **3rd (4):** *Dispel Magic*, *Searing Light* (+7 ranged touch, 8d8 vs undead), *Prayer*, *Invisibility Purge*
-- **2nd (5):** *Hold Person* (DC 16), *Spiritual Weapon*, *Bull's Strength* ×2, *Silence*
-- **1st (6):** *Bane*, *Bless*, *Divine Favor* ×2, *Shield of Faith* ×2
+- **4th (3+1):** *Poison* (DC 18, 1d10 Con, 1d10 Con a minute later), *Divine Power*, *Freedom of Movement*, *Confusion* (D, DC 18)
+<!-- storico: fino al 2026-11-19 al 4° c'era Flame Strike, che è di 5° e un chierico 8 non lancia (scelta del DM sulla card del 2026-11-19) -->
+- **3rd (4+1):** *Dispel Magic*, *Searing Light* (+7 ranged touch, 8d8 vs undead), *Prayer*, *Invisibility Purge*, *Contagion* (D, DC 17)
+- **2nd (4+1):** *Hold Person* (DC 16), *Spiritual Weapon*, *Bull's Strength*, *Silence*, *Invisibility* (D)
+- **1st (5+1):** *Bane*, *Bless*, *Divine Favor* ×2, *Shield of Faith*, *Disguise Self* (D)
+<!-- storico: fino al 2026-11-19 nessuno slot di dominio segnato, 3° e 4° senza lo slot (D), Bull's Strength ×2 e Shield of Faith ×2; slot dalla tabella SRD del chierico 8 con Sag 18 (scelta del DM sulla card del 2026-11-19) -->
 - **0 (6):** *Cure Minor Wounds* ×3, *Detect Magic* ×2, *Read Magic*
 
 **Domain Abilities:**
-- **War:** +8 BAB (already calculated), weapon focus free
-- **Trickery:** Bluff/Hide +2, *Disguise Self* 1/day
+- **Destruction:** smite 1/day, +4 to attack and +8 damage (SRD); BAB is +6 (cleric 8)
+- **Trickery:** Bluff, Disguise and Hide are class skills (SRD)
+<!-- storico: fino al 2026-11-19 «War: +8 BAB (already calculated), weapon focus free» e «Trickery: Bluff/Hide +2, Disguise Self 1/day»; il chierico 8 ha BAB +6, e il +10/+5 col morning star torna senza Weapon Focus (+6 BAB, +3 For con Bull's Strength, +1 arma) -->
 
 **Tactics:**
 - **Pre-Combat:** Cast *Shield of Faith*, *Divine Favor*, *Bull's Strength* (buffed già)
 - **Round 1:** *Prayer* (30ft radius: allies +1 luck, enemies -1)
-- **Round 2:** *Flame Strike* centered on Hella (8d6, Ref DC 18 half)
-  - Hella must Concentration DC 24 (10 + 8d6 half average = 14) or rituale interrupted!
+- **Round 2:** *Hold Person* on Hella (Will DC 16 negates; a new save each round) <!-- storico: fino al 2026-11-19 qui la chierica lanciava *Flame Strike* su Hella (8d6, Rifl CD 18, Concentrazione CD 24), che un chierico 8 non ha; *Hold Person* è la scelta del DM sulla card del 2026-11-19 -->
+  - If Hella fails she is paralyzed: the ritual stops while she is held, and the assassin goes for the coup de grace.
 - **Round 3+:** *Spiritual Weapon* (floating morningstar) harass Hella
 - **Healing:** *Cure Serious Wounds* 3d8+8 su alleati injured
 
 **Positioning:**
 - Start: Col P, Riga 25 (Cleric 1) + Col Z, Riga 25 (Cleric 2)
-- Range: 120ft *Flame Strike* easily reach Hella centro
+- Range: *Hold Person* is medium range (180 ft at CL 8), easily reaches Hella at the centre
 
 ---
 
@@ -462,7 +466,7 @@ LEGENDA · 🌿 zona verde protetta (raggio 15 m, +2 PF/round) · 🟧 cenere ca
 
 DISTANZE:
 - Hella (T20) → Hell Hounds (T35): 22.5m (15 quadrati) - 2 rounds arrival
-- Clerics (P-X, 27) → Hella: 10.5m (7 quadrati) - FLAME STRIKE RANGE!
+- Clerics (P-X, 27) → Hella: 10.5m (7 quadrati) - in range for HOLD PERSON
 - Assassin (T35) → Hella: 22.5m (15 quadrati) - 3 rounds sneak if undetected
 
 SCALA: Ogni quadrato = 1.5m × 1.5m · stessa radura e stesse coordinate della mappa del Cerchio Sacro (P1B)
@@ -479,8 +483,8 @@ SCALA: Ogni quadrato = 1.5m × 1.5m · stessa radura e stesse coordinate della m
 - **Assassin:** Move 40ft + Stealth +28 → Riga 31 (invisibile)
 
 **Round 23:**
-- **Cleric 1:** *Flame Strike* on Hella! (8d6, Ref DC 18)
-  - Hella MUST Concentration DC 24 or ritual phase FAILS!
+- **Cleric 1:** *Hold Person* on Hella! (Will DC 16) <!-- storico: fino al 2026-11-19 qui la chierica lanciava *Flame Strike* su Hella (8d6, Rifl CD 18, Concentrazione CD 24), che un chierico 8 non ha; *Hold Person* è la scelta del DM sulla card del 2026-11-19 -->
+  - If Hella fails, she is paralyzed and the ritual phase stops while she is held; the assassin closes in.
 - **Cleric 2:** *Spiritual Weapon* (floating morningstar harass Hella ogni round +10, 1d8+2)
 - **Veterans:** Engage PG defenders (full attack)
 - **Hell Hounds:** Breath weapon 30ft cone (include Hella + Seedlings!)

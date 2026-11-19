@@ -61,10 +61,11 @@ CE Medium Aberration (Chaotic, Evil, Extraplanar, Shapechanger)
 **Spell-Like Abilities** (CL 17th): At will—*detect thoughts* (DC 19), *dominate person* (DC 18), *darkness, desecrate, greater teleport* (self only), *spider climb, stone shape, web* (DC 19)
 **Psionics (Sp)** (CL 8th): At will—*suggestion* (DC 19), *detect thoughts* (DC 18), *levitate*, *astral projection*, *plane shift*.
 **Sorcerer Spells Known** (CL 6th):
-3rd (4/day)—*rage*
-2nd (6/day)—*summon swarm, touch of idiocy*
-1st (7/day)—*shield, shocking grasp, silent image* (DC 16), *sleep* (DC 16)
-0 (6/day)—*arcane mark, dancing lights, daze* (DC 15), *detect poison, flare* (DC 15), *message, read magic*
+3rd (5/day)—*rage*
+2nd (7/day)—*summon swarm, touch of idiocy*
+1st (8/day)—*shield, shocking grasp, silent image* (DC 18), *sleep* (DC 18)
+0 (6/day)—*arcane mark, dancing lights, daze* (DC 17), *detect poison, flare* (DC 17), *message, read magic*
+<!-- storico: fino al 2026-11-19 slot 7/6/4 e CD 16/15; stregone 6 con Car 24 (+7) dà 8/7/5 e CD 10 + livello + 7 (scelta del DM sulla card del 2026-11-19) -->
 
 **Abilities** Str 19, Dex 22, Con 20, Int 22, Wis 19, Cha 24
 **SQ** change shape, mind blank

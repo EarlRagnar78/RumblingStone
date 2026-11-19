@@ -44,7 +44,8 @@ attacchi:
 **Capacità speciali**
 **Special**: Rage 2/day (+4 Str/Con, +2 Will, -2 AC, 10 rounds; fatigued afterwards), rock throwing (36 m, 2d6+7), afferrare rocce, schivare prodigioso migliorato, percepire trappole +1, Red Hand command aura (+1 morale to hobgoblin 30 ft; non SRD, canone del DM 2026-10-18).
 - **Squartare (Str)**: se colpisce con tutti e due gli schianti, 2d6+10. Un gigante delle colline non ha artigli: la scheda lo dava «con gli artigli»; si tiene sugli schianti come capacità speciale aggiunta (SRD, *Improving Monsters*: attacco speciale minore, +1 GS). PF1e: *rend* è una regola universale dei mostri che vuole due attacchi naturali, e gli schianti lo sono — si avvicina, non stravolge.
-- **Ira intimidatoria** `[Private source — Complete Warrior]`: entrando in ira, un nemico che lo vede è scosso finché l'ira dura (Volontà nega). PF1e: il potere d'ira *intimidating glare* fa la stessa cosa con Intimidire — si avvicina.
+- **Ira intimidatoria** `[Private source — Complete Warrior, p. 102]`: in ira, una volta per scontro, sceglie un nemico entro 9 m e prova a demoralizzarlo con Intimidire come azione gratuita; se riesce, il nemico resta scosso finché dura l'ira (verificato su dnd.arkalseif.info il 2026-11-19). PF1e: il potere d'ira *intimidating glare* fa la stessa cosa con Intimidire — si avvicina.
+<!-- storico: fino al 2026-11-19 «entrando in ira, un nemico che lo vede è scosso finché l'ira dura (Volontà nega)»: il talento usa una prova di Intimidire, non un tiro salvezza -->
 > ⚠ Prerequisito: sette talenti chiedono 18 DV; la scheda ne contava 17. Il gigante passa da 12 a 13 DV razziali (dentro l'avanzamento SRD del gigante delle colline, 13-18 DV Grande; +1 DV non cambia il GS) e tiene così anche Comandare.
 
 **I tre stati dell'ira** (D9, decisione del DM 2026-09-23). Lo statblocco sopra è Karruk **fuori ira**; la scheda precedente mescolava i tre stati.

@@ -69,14 +69,14 @@ gioca come **pericolo ambientale con contromosse quantificate** (vedi STRUTTURA
   quando scende sotto 80 pf, **non può fuggire** e va abbattuto.
 
 **Statistiche** **Abilities**: For 33, Des 10, Cos 25, Int 18, Sag 19, Car 18 · **BAB/Grapple**: +30/+49
-**Feats**: Flyby Attack, Hover, Wingover, Multiattack, Power Attack, Cleave, Improved Initiative, Snatch, Wingstorm `[Private source — Draconomicon]`, Riflessi Fulminei, Volontà di Ferro — undici, quanti ne dànno 30 DV; gli ultimi due spiegano il Ref +19 della scheda e portano Will a +23
+**Feats**: Flyby Attack, Hover, Wingover, Multiattack, Power Attack, Cleave, Improved Initiative, Snatch, Wingstorm `[Private source — Savage Species, p. 40]`, Riflessi Fulminei, Volontà di Ferro — undici, quanti ne dànno 30 DV; gli ultimi due spiegano il Ref +19 della scheda e portano Will a +23
 **Skills**: Spot +37, Listen +37, Nascondersi -4 (Huge), Raggirare +25, Concentrazione +30
 **Incantesimi** da stregone di 11° livello (Car +4), al giorno 6/7/7/7/6/3, CD 14 + livello, la scheda non li elencava; conosciuti — 0: *individuazione del magico*, *mano magica*, *prestidigitazione*, *lettura del magico*, *suono fantasma*, *messaggio*, *resistenza*, *luce*, *frastornare*; 1°: *scudo*, *dardo incantato*, *colpo accurato*, *allarme*, *ritirata rapida*; 2°: *vedere invisibilità*, *immagine speculare*, *raffica di vento*, *resistere all'energia*, *invisibilità*; 3°: *dissolvi magie*, *velocità*, *fulmine*, *protezione dall'energia*; 4°: *invisibilità superiore*, *pelle di pietra*, *porta dimensionale*; 5°: *muro di forza*, *telecinesi*
 
 **Capacità speciali**
 - **Presenza Terrificante**: CD 29 (10 + ½ DV + Car), 72 m (creature con < 30 DV, Will o scosse/panico)
 - **Special**: creare/distruggere acqua (a volontà (non SRD: l'SRD dà 3/giorno)), imitazione suoni (a volontà), ventriloquio 3/giorno, terreno allucinatorio 1/giorno, velo 1/giorno (non SRD: l'SRD lo dà dal drago antico)
-- **Tempesta d'ali** (Wingstorm) `[Private source — Draconomicon]`: in volo stazionario, raffica che spegne fiamme e abbatte le creature piccole.
+- **Tempesta d'ali** (Wingstorm) `[Private source — Savage Species, p. 40]`: in volo stazionario, raffica che spegne fiamme e abbatte le creature piccole.
 > ⚠ Prerequisito: Wingstorm chiede Hover e Flyby Attack, che ha; il *velo* chiede l'età antica (SRD), qui tenuto perché la Fase 4 lo nomina. PF1e: nel Bestiary il blu prende *veil* solo da antico, come in 3.5; anticiparlo di un'età si avvicina, non stravolge.
 
 ---

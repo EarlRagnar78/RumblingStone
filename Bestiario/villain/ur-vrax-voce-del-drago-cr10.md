@@ -3,7 +3,7 @@
 
 ```statblocco
 gs: 10
-tipo: Medium humanoid (orc), orco avanzato, Chierico 9 di Tiamat, CE
+tipo: Medium humanoid (orc), orco avanzato, Chierico 9 di Tiamat, NE
 taglia: Media
 spazio: 1,5 m
 portata: 1,5 m
@@ -36,7 +36,7 @@ fonte: ricostruzione del repo su SRD 3.5 e archetipo Avanzato PF1e, 2026-11-09
 - 1° (6+1): *protezione dal bene* (D), *anatema*, *comando* (CD 17) ×2, *favore divino*, *scudo della fede* ×2
 - 0 (6): *guida*, *resistenza*, *individuazione del magico*, *infliggi ferite minori* ×3
 
-D = incantesimo di dominio. Domini **Distruzione** e **Male**.
+D = incantesimo di dominio. Domini **Distruzione** e **Male** (Distruzione e Male sono domini di Tiamat nel Deities and Demigods, verificato su dnd.arkalseif.info il 2026-11-19; tenuti dal DM sulla card del 2026-11-19).
 
 **Tattiche**
 - *Prima del combattimento*: dietro la terza linea con gli Sciamani Draconici `[INFERRED — In quale scena di ARC-08 entra Ur-Vrax?; base: chat Gemini, terza linea con i sacerdoti della Mano del Destino e rituale sulla breccia nel Giorno 2, da decidere nel lotto S1 di PIANO-MASTER-DEF]`. Lancia *libertà di movimento* e *scudo della fede* su di sé e *preghiera* quando la fanteria d'élite avanza.
@@ -49,6 +49,9 @@ D = incantesimo di dominio. Domini **Distruzione** e **Male**.
 - **Punire (Sop)**: dominio Distruzione, 1/giorno, un attacco in mischia a +4 al tiro per colpire e +9 ai danni (il livello da chierico) `[SRD: Destruction Domain]`.
 - **Incantesimi malvagi potenziati (Str)**: dominio Male, lancia gli incantesimi col descrittore male a livello dell'incantatore +1 `[SRD: Evil Domain]`.
 - **Intimorire non morti (Sop)**: 5/giorno (3 + mod. di Car), come un chierico malvagio `[SRD: Cleric]`.
+
+> Allineamento: Neutrale Malvagio, a un passo da Tiamat (Legale Malvagia: dnd.arkalseif.info, deities/tiamat; FRCS idem), come vuole l'SRD per il chierico (scelta del DM sulla card del 2026-11-19).
+> <!-- storico: fino al 2026-11-19 Caotico Malvagio, a due passi dalla dea -->
 
 Benchmark: PF T1-1 riga 10 (CA 24, pf 130, attacco +18, CD 18): CA 23 pari / pf 83 sotto / attacco +12 sotto / CD 23 del *colpo infuocato* e 21 del *simbolo di dolore* sopra. Vale il suo GS come pacchetto di incantesimi, come il Chierico di Gruumsh (`Bestiario/mostri/chierico-gruumsh-cr11.md`): va schierato con corpi davanti, mai da solo.
 Combinazioni ed EL: da solo EL 10; con 4 Sciamani Draconici [DA SCRIVERE — scheda degli Sciamani Draconici della chat Gemini; il Bestiario ha Draxoksus, `Bestiario/villain/draxoksus-shamano-draconico-cr8.md`] EL 12 circa.

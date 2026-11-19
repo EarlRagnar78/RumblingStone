@@ -78,6 +78,55 @@
   else { "" }
 }
 
+// Il numero di pagina dietro un rimando a un capitolo del volume («cap. V
+// Scena 6» → «cap. V Scena 6, p. 50»), come fanno gli AP («see page 50»):
+// un rimando senza pagina obbliga il DM a sfogliare. `rom` è il numero romano
+// del capitolo, `chiave` l'inizio del titolo cercato dentro quel capitolo
+// («SCENA 6», «§8» o «8.», «C.2»); vuota, vale la pagina d'apertura. Se il
+// titolo non c'è non stampa niente: meglio nessun numero che uno sbagliato.
+// Lo inserisce l'esportatore quando il manifest ha `"pagine_nei_rimandi"`.
+#let _rif-inizia(t, k) = {
+  let t = upper(t.trim().replace("\u{2019}", "'"))
+  let k = upper(k.replace("\u{2019}", "'"))
+  if not t.starts-with(k) { return false }
+  if t.len() == k.len() { return true }
+  t.slice(k.len()).match(regex("^[\p{L}\p{N}-]")) == none
+}
+#let rif-pagina(rom, chiave) = context {
+  // senza capitolo («statistiche in A.6»): il primo titolo con quella sigla
+  // DOPO il rimando, cioè l'appendice del master che lo cita
+  if rom == "" {
+    let dopo = query(selector(heading).after(here())).filter(h => _rif-inizia(to-string(h.body), chiave))
+    if dopo.len() == 0 or dopo.first().location().page() == here().page() { return }
+    let l = dopo.first().location()
+    return [, #link(l)[p.~#counter(page).at(l).first()]]
+  }
+  let aperture = query(heading.where(level: 1))
+  let caps = aperture.filter(h => to-string(h.body).starts-with(rom + " ·"))
+  if caps.len() == 0 { return }
+  let inizio = caps.first().location()
+  let dopo = aperture.filter(h => h.location().page() > inizio.page() or (
+    h.location().page() == inizio.page() and h.location().position().y > inizio.position().y))
+  let sel = selector(heading).after(inizio, inclusive: false)
+  if dopo.len() > 0 { sel = sel.before(dopo.first().location(), inclusive: false) }
+  let bersaglio = if chiave == "" { inizio } else if chiave.starts-with("?") {
+    // «?Balvar»: il primo titolo del capitolo che contiene la parola (la
+    // scheda di una persona, la pagina delle mappe); se non c'è, l'apertura
+    let k = upper(chiave.slice(1).replace("\u{2019}", "'"))
+    let trovati = query(sel).filter(h => upper(to-string(h.body).replace("\u{2019}", "'")).contains(k))
+    if trovati.len() == 0 { inizio } else { trovati.first().location() }
+  } else {
+    let chiavi = if chiave.starts-with("§") { (chiave, chiave.slice("§".len()) + ".") } else { (chiave,) }
+    let trovati = query(sel).filter(h => chiavi.any(k => _rif-inizia(to-string(h.body), k)))
+    if trovati.len() == 0 { none } else { trovati.first().location() }
+  }
+  if bersaglio == none { return }
+  let n = counter(page).at(bersaglio).first()
+  // il rimando punta a una pagina che il DM ha già sotto gli occhi: niente numero
+  if bersaglio.page() == here().page() { return }
+  [, #link(bersaglio)[p.~#n]]
+}
+
 // Una figura: se è più larga che alta scavalca le due colonne (le tavole
 // d'ambiente), se è verticale sta in colonna (i ritratti). La didascalia è
 // l'alt del markdown.
@@ -245,7 +294,30 @@
     numbering: none,
   )
   if larga { place(top, float: true, scope: "parent", clearance: 12pt, block(width: 100%, corpo)) }
-  else { block(width: 100%, above: 0.8em, below: 0.8em, corpo) }
+  else {
+    // Se non entra nello spazio che resta nella colonna, va a capo colonna
+    // da sé, come la scheda delle creature: sotto un float a tutta pagina
+    // Typst 0.15 sbaglia lo spazio che resta, e la figura, che non si
+    // spezza, usciva dal foglio (il ritratto di Vatore nella serata di
+    // ARC-07, 2026-11-19; misura `immagini_tagliate` di misura_stampa.py).
+    // `layout` dà la larghezza vera della colonna; il blocco esterno porta la
+    // spaziatura di sempre, che `layout` da solo cambierebbe di qualche punto
+    // (una scheda spezzata in più nel fascicolo dei giocatori di ARC-07).
+    // Solo `context`, senza `layout`, non basta: il ritratto esce lo stesso.
+    block(width: 100%, above: 0.8em, below: 0.8em, layout(spazio => context {
+      let a5 = page.width < 16cm
+      let larghezza = spazio.width
+      let colonna = page.height - if a5 { 2.9cm } else { 4.1cm }
+      let fondo-col = page.height - if a5 { 1.4cm } else { 2.0cm }
+      let alto = measure(block(width: larghezza, corpo)).height + 0.8em.to-absolute()
+      let resta = fondo-col - here().position().y
+      // Un float di colonna sarebbe meglio (il testo dopo riempirebbe lo
+      // spazio), ma Typst 0.15 lo colloca lo stesso sotto i float a tutta
+      // pagina e l'immagine esce ancora dal foglio: provato e scartato.
+      if alto > resta and alto < colonna { colbreak() }
+      corpo
+    }))
+  }
 }
 
 // Una griglia a spaziatura fissa (mappa ASCII, schema, statblocco
@@ -622,14 +694,31 @@
         }
         // in fondo a una colonna resterebbe il solo titolo: si va a capo, e
         // lì si spezza solo se la colonna è accorciata da un float
-        else if alto < colonna * 0.92 and qui < colonna * 0.5 {
+        else if alto < colonna * 0.97 and qui < colonna * 0.66 {
           colbreak()
-          intero(tattiche, spezzabile: true)
+          // ADR-0144: in cima alla colonna nuova si misura di nuovo. Se un
+          // float l'accorcia e la colonna è quella di destra, il riquadro si
+          // spezzerebbe a pagina girata: va alla pagina dopo, che comincia a
+          // sinistra e lascia la colonna accanto per continuare.
+          context {
+            let qui2 = fondo-col - here().position().y - 4pt
+            if alto >= qui2 and here().position().x > page.width / 2 { colbreak() }
+            intero(tattiche, spezzabile: true)
+          }
         } else {
           // un riquadro più alto di una colonna si spezza. Nella colonna di
           // sinistra continua accanto, sulla stessa pagina; in fondo a quella
           // di destra lascerebbe il titolo da solo a pagina girata, e va a capo
-          if qui < colonna * 0.33 and here().position().x > page.width / 2 { colbreak() }
+          // ADR-0144: un riquadro che sta in due colonne non si spezza a
+          // pagina girata. Se comincia a destra va alla pagina dopo, dove
+          // scorre da sinistra a destra; se comincia a sinistra e non entra
+          // in quel che resta più la colonna accanto, va anche lui alla
+          // pagina dopo. Si paga lo spazio bianco che lascia.
+          let destra = here().position().x > page.width / 2
+          let due = page.columns > 1 and alto < colonna * 1.9
+          if due and destra { colbreak() }
+          else if due and alto > qui + colonna - 12pt { colbreak(); colbreak() }
+          else if qui < colonna * 0.33 and destra { colbreak() }
           intero(tattiche, spezzabile: true)
         }
       }
@@ -770,7 +859,7 @@
 // «da stampare stasera» non sono lo stesso file.
 #let libro(titolo: "", sottotitolo: "", brand: "", banner: "", meta: "", capitolo: "",
            apparato: true, carta: "avorio", formato: "a4", copertina: none, intro: none,
-           crediti: none,
+           crediti: none, indice-profondita: 3,
            corpo) = {
   // A5 è il formato «libretto»: **una colonna sola**, perché in A5 due colonne
   // sarebbero da 5 cm e nessuno impagina un manuale così.
@@ -908,7 +997,7 @@
   // Indice cliccabile (e segnalibri PDF dagli heading)
   align(center)[#text(font: TITOLI, size: 13pt, fill: rosso)[Indice]]
   v(0.4cm)
-  outline(title: none, depth: 3, indent: 1em)
+  outline(title: none, depth: indice-profondita, indent: 1em)
   pagebreak()
 
   set page(columns: if a5 { 1 } else { 2 })

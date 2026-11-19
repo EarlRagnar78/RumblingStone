@@ -60,7 +60,7 @@ import typst_motore  # noqa: E402  (ADR-0116)
 # c'è la lettura operativa: se una chiave non compare in nessuna delle due, è
 # una chiave morta e va tolta dal manifest.
 SOLO_HTML = {"header", "player_footer", "cover_tag", "out"}
-SOLO_STAMPA = {"front_matter", "carta", "capolettera", "fregio", "chi_si_incontra"}
+SOLO_STAMPA = {"front_matter", "carta", "capolettera", "fregio", "chi_si_incontra", "pagine_nei_rimandi"}
 
 IMMAGINE = re.compile(r"!\[([^\]]*)\]\(([^)]+)\)")
 

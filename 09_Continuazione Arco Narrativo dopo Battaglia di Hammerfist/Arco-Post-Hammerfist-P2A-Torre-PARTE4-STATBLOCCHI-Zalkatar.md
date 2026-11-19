@@ -57,7 +57,7 @@ For 10, Des 16, Cos 20, Int 20, Sag 16, Car 24 (20 + 4 intrinseco da un *tomo de
 
 ### Tattiche: prima del combattimento e morale
 
-- *Con Ozyrrandion*: il drago verde aspetta invisibile sotto la volta (DM 2026-10-18, EL 16). Zalkatar parla per primo e lascia al drago la *suggestione* su chi tratta; quando i PG salgono una rampa, il drago li stacca dal gruppo e Zalkatar usa *Extract Brain* sul PG rimasto solo.
+- *Con Ozyrrandion*: il drago verde aspetta invisibile sotto la volta (DM 2026-10-18, EL 16). Zalkatar parla per primo e lascia al drago la *suggestione* su chi tratta; quando i PG salgono una rampa, il drago li stacca dal gruppo e Zalkatar usa *Extract Brain* sul PG rimasto solo, se è stordito o confuso (come in «Tattiche» qui sotto; scelta del DM del 19/11).
 - *Prima del combattimento*: la Torre lo avverte quando i PG superano il Livello 4. Aspetta sulla piattaforma, con *black tentacles* già sulle rampe e le tre *dimension door* tenute per tornare in alto (vedi sotto).  
 - *Morale*: sotto il 10% dei pf, se ha *greater teleport*, fugge (vedi «Fuga Zalkatar» qui sotto). Se il *teletrasporto* è speso o bloccato, tratta: offre le informazioni sulla Red Hand in cambio della vita, come nell'opzione di negoziazione del finale.
 
@@ -78,6 +78,7 @@ Boost log: correzione dei conti 3.5 — GS 13 → 14 — 14d4 non sono i dadi di
 <!-- storico -->
 - era: «DV: 14d4+70 (126 pf)», GS 13
 - era: Fase 2 «Scende in mischia, priorita *Extract Brain* su target con basso pf o senza alleati vicini»; *dimension door* «tenuta per il primo PG che sale»; «Tattiche scritte da un agente sui poteri della scheda» (fino al 2026-11-15)
+- era: con Ozyrrandion «Zalkatar usa *Extract Brain* sul PG rimasto solo», anche se non stordito né confuso (fino al 2026-11-19, card del DM)
 - era: iniziativa +6; tentacoli +10; TS Temp +10, Rif +11, Vol +17
 - era: *black tentacles* CD 22 (l'incantesimo non ha TS: 22 è la sua lotta al LI 14); *slow* CD 22 (con Car 20 la CD sarebbe 18: tenuta a 22 col tomo e Abilità Focalizzata)
 - era: Car 20; esplosione mentale, vampiro psichico e collasso planare CD 22; *dominate monster* CD 24

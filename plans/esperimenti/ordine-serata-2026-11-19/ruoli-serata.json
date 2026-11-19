@@ -1,0 +1,226 @@
+{
+ "_cos_e": "Il ruolo di ogni sezione del booklet della serata di ARC-07, per scripts/misura_ordine.py. È il giudizio di chi legge (2026-11-19), dichiarato: si rivede qui, non nello script. La prima regola che combacia col titolo vince; una sezione senza regola prende il ruolo del suo capitolo.",
+ "regole": [
+  {
+   "titolo": "^Il riferimento rapido",
+   "ruolo": "avvio",
+   "capitolo": true
+  },
+  {
+   "titolo": "^II · Prima di giocare",
+   "ruolo": "preparazione",
+   "capitolo": true
+  },
+  {
+   "titolo": "^III · Il cast",
+   "ruolo": "preparazione",
+   "capitolo": true
+  },
+  {
+   "titolo": "^XI · Dopo la serata",
+   "ruolo": "fuori-serata",
+   "capitolo": true
+  },
+  {
+   "titolo": "^XIII · Dopo la serata",
+   "ruolo": "fuori-serata",
+   "capitolo": true
+  },
+  {
+   "titolo": "^XIV · Appendice",
+   "ruolo": "riferimento",
+   "capitolo": true
+  },
+  {
+   "titolo": "^XV · Durik",
+   "ruolo": "preparazione",
+   "capitolo": true
+  },
+  {
+   "titolo": "^Dove siamo",
+   "ruolo": "avvio",
+   "capitolo": true
+  },
+  {
+   "titolo": "^Il foglio della serata",
+   "ruolo": "avvio",
+   "capitolo": true
+  },
+  {
+   "titolo": "Regia della serata",
+   "ruolo": "avvio",
+   "capitolo": true
+  },
+  {
+   "titolo": "^§0 · La serata in una tabella",
+   "ruolo": "sintesi",
+   "riassume": "^(III|V|VI|VIII) · "
+  },
+  {
+   "titolo": "Chi c'è stanotte",
+   "ruolo": "preparazione",
+   "capitolo": true
+  },
+  {
+   "titolo": "^[IVX]+ · Atto I · ",
+   "ruolo": "gioco",
+   "scena": 1,
+   "capitolo": true
+  },
+  {
+   "titolo": "^1\\. Che cosa hanno fatto",
+   "ruolo": "avvio"
+  },
+  {
+   "titolo": "^7\\. Che cosa succede, in numeri",
+   "ruolo": "sintesi",
+   "riassume": "^[2-6](-bis)?\\. "
+  },
+  {
+   "titolo": "^10\\. Che cosa cambia per la storia",
+   "ruolo": "fuori-serata"
+  },
+  {
+   "titolo": "^13\\. Le trovate dei giocatori",
+   "ruolo": "fuori-serata"
+  },
+  {
+   "titolo": "^[IVX]+ · Il Seme-Mercato",
+   "ruolo": "gioco",
+   "capitolo": true
+  },
+  {
+   "titolo": "^[IVX]+ · Atto II · ",
+   "ruolo": "gioco",
+   "capitolo": true
+  },
+  {
+   "titolo": "^SCENA 6",
+   "ruolo": "gioco",
+   "scena": 6
+  },
+  {
+   "titolo": "^SCENA 7",
+   "ruolo": "gioco",
+   "scena": 7
+  },
+  {
+   "titolo": "^SCENA 8",
+   "ruolo": "gioco",
+   "scena": 8
+  },
+  {
+   "titolo": "^SCENA 9",
+   "ruolo": "gioco",
+   "scena": 9
+  },
+  {
+   "titolo": "^C\\.2 ·",
+   "ruolo": "sintesi",
+   "riassume": "^SCENA [678] "
+  },
+  {
+   "titolo": "^[IVX]+ · Atto III · ",
+   "ruolo": "gioco",
+   "capitolo": true
+  },
+  {
+   "titolo": "^SCENA 10",
+   "ruolo": "gioco",
+   "scena": 10
+  },
+  {
+   "titolo": "^[IVX]+ · La mappa del duello",
+   "ruolo": "gioco",
+   "capitolo": true
+  },
+  {
+   "titolo": "^SCENA 11",
+   "ruolo": "gioco",
+   "scena": 11
+  },
+  {
+   "titolo": "^C\\.3 ·",
+   "ruolo": "sintesi",
+   "riassume": "^SCENA 11 "
+  },
+  {
+   "titolo": "^[IVX]+ · Il duello",
+   "ruolo": "gioco",
+   "capitolo": true
+  },
+  {
+   "titolo": "^[IVX]+ · La Forgia ricorda",
+   "ruolo": "fuori-serata",
+   "capitolo": true
+  },
+  {
+   "titolo": "^§7 — ECHO LEDGER",
+   "ruolo": "fuori-serata"
+  },
+  {
+   "titolo": "QUICK-REFERENCE",
+   "ruolo": "avvio",
+   "capitolo": true
+  },
+  {
+   "titolo": "^§0-ter",
+   "ruolo": "preparazione"
+  },
+  {
+   "titolo": "^§1 — HIGHLIGHT",
+   "ruolo": "preparazione"
+  },
+  {
+   "titolo": "^ZONA [23]",
+   "ruolo": "preparazione"
+  },
+  {
+   "titolo": "^A\\. Budget",
+   "ruolo": "fuori-serata"
+  },
+  {
+   "titolo": "^B\\. Tesoro",
+   "ruolo": "riferimento"
+  },
+  {
+   "titolo": "^A\\.1 · Skullcrusher",
+   "ruolo": "riferimento",
+   "doppione_di": "Appendice: le creature (Skullcrusher, in un'altra versione: adulto maturo GS 14 contro il Vecchio GS 17 della Scena 11)"
+  },
+  {
+   "titolo": "^A\\.6 · Le creature del campo",
+   "ruolo": "riferimento",
+   "doppione_di": "Appendice: le creature (Orco della ronda, Worg)"
+  },
+  {
+   "titolo": "^[IVX]+ · Appendice",
+   "ruolo": "riferimento",
+   "capitolo": true
+  },
+  {
+   "titolo": "^APPENDICE B",
+   "ruolo": "riferimento"
+  },
+  {
+   "titolo": "^[IVX]+ · La cassetta del DM",
+   "ruolo": "preparazione",
+   "capitolo": true
+  },
+  {
+   "titolo": "^[IVX]+ · Durik",
+   "ruolo": "preparazione",
+   "capitolo": true
+  },
+  {
+   "titolo": "^Appendice: le creature",
+   "ruolo": "riferimento",
+   "capitolo": true
+  },
+  {
+   "titolo": "^Appendice: le mappe",
+   "ruolo": "riferimento",
+   "capitolo": true
+  }
+ ]
+}

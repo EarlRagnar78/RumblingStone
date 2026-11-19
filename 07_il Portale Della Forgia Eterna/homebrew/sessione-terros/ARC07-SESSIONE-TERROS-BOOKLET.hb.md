@@ -2761,10 +2761,12 @@ arriva a risorse piene. Mostra l'affresco, non minacciare l'orologio.
 > **Conseguenze già maturate:**
 > - **Loot dell'arco disponibile**: Geode Titanico (5.000 mo) + **Cuore di
 >   Terros** (20.000 mo) + residuo golem + geodi.
-> - Sbloccata la condizione del **TODO «Diventare una Collina»** sui Bracieri
->   Gemelli:
->   Tordek ha dimostrato il proprio valore contro il guardiano. **Il potere va
->   ora scritto sulla scheda** — finché il TODO è aperto non esiste al tavolo.
+> - Sbloccato **«Diventare una Collina»** sui Bracieri Gemelli: Tordek ha
+>   dimostrato il proprio valore contro il guardiano. Il potere è scritto sulla
+>   scheda dei Bracieri, §7:
+>   come *ingrandire persona*, taglia Grande per 1 minuto, 1 volta al
+>   giorno; la prima volta si attiva da sé, quando un nemico Enorme o più grande
+>   lo porta sotto metà dei pf.
 > - L'ultimo suono di Terros è stato di **assenso**, non d'odio (il party aveva
 >   curato i Cristalli, §6).
 

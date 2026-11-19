@@ -63,8 +63,6 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 5 | firma si estirpa con Sapienza Magica | 20 |
 | SCENA 5 | legge Artemis con Usare Oggetti Magici | 27 |
 | SCENA 5 | livello dell'incantatore, come il silenzio a | 23 |
-| SCENA 5 | altrimenti Artemis, a | 25 |
-| SCENA 5 | le gravi e a | 27 |
 | SCENA 6 | Muoversi Silenziosamente | 20 |
 | SCENA 6 | Nascondersi | 22 |
 | SCENA 6 | chi non è invisibile tira Nascondersi | 18 |

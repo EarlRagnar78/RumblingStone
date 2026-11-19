@@ -1115,7 +1115,7 @@ risposte. Nessun vicolo cieco blocca il gioco.
 | Dove | Oggetto / dono (pregenerato) | Valore |
 |---|---|---|
 | Altare (§7) | **3 Benedizioni** per PG, rinnovabili, più Forza della Montagna nel solo Piano della Terra: equivalenti a Resist Energy (1.000), Endure Elements (500), pozioni di cura (3 cariche per PG) | ricchezza speciale (non-WBL) |
-| A8 (manifestazione) | **Ghianda di Speranza** (CANONE DM 2026-07-23): è la **stessa ghianda annerita** che Hella stringe nel pugno dalla morte (`DEF-3` §7-bis); l'affresco A8 la «mostra» come segno. Al rito del #3 diventa un piccolo àncora druidico (+1 sacro 1/g al Radicamento, la capacità di Hella risorta in `DEF-3` Appendice A.1) **o** va nel 1° seme della Collana. Curiosità sacra, 0 mo. | — |
+| A8 (manifestazione) | **Ghianda di Speranza** (CANONE DM 2026-07-23): è la **stessa ghianda annerita** che Hella stringe nel pugno dalla morte (`DEF-3` §11 C); l'affresco A8 la «mostra» come segno. Al rito del #3 diventa un piccolo àncora druidico (+1 sacro 1/g al Radicamento, la capacità di Hella risorta in `DEF-3` Appendice A.1) **o** va nel 1° seme della Collana. Curiosità sacra, 0 mo. | — |
 | Stanza della Corona | Sotto il dais del trono (Cercare CD 22): **reliquia dei Custodi caduti** — un anello sigillo nanico annerito, appartenuto a un portatore della Corona di ere fa (200 mo per un collezionista; +2 di circostanza a Diplomazia coi nani devoti se indossato) | 200 mo |
 
 Ricchezza speciale (Corona 2/3, Bracieri completi) già contata nel Piano della Terra.

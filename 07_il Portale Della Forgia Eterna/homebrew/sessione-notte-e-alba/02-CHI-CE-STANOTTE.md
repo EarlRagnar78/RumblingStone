@@ -50,7 +50,7 @@ attacchi:
 
 **Tattiche** La tenda della Scena 8: le quattro guardie gli tengono la CA, il sacerdote sta nella tenda.
 
-**Statistiche** For 30 (36 in Ira), Des 20, Cos 24 (30 in Ira), Int 16, Sag 16, Car 18 · BAB +15; Lotta +29 (+32 in Ira) · **Talenti** (7) Attacco Poderoso, Spingere Migliorato, Colpo Terrificante (talento da mostro, SRD), Ira Extra, Iniziativa Migliorata, Volontà di Ferro, Arma Focalizzata (ascia) · **Abilità** Ascoltare +11, Osservare +3, Intimidire +14 (8 gradi in Ascoltare, 10 in Intimidire, nessuno in Osservare) · **Altro equipaggiamento** armatura completa di mithral +2, ascia a due mani +1, 3 giavellotti (tutto di taglia Grande); Occhio di Ossidiana (sotto)
+**Statistiche** For 30 (36 in Ira), Des 20, Cos 24 (30 in Ira), Int 16, Sag 16, Car 18 · BAB +15; Lotta +29 (+32 in Ira) · **Talenti** (7) Attacco Poderoso, Spingere Migliorato, Colpo Terrificante (talento da mostro, SRD), Ira Extra, Iniziativa Migliorata, Volontà di Ferro, Arma Focalizzata (ascia) · **Abilità** Ascoltare +11, Osservare +3, Intimidire +14 (8 gradi in Ascoltare, 10 in Intimidire, nessuno in Osservare) · **Altro equipaggiamento** armatura completa di mithral +2, ascia a due mani +1, 3 giavellotti (tutto di taglia Grande), 2 pozioni di *cura ferite gravi* (LI 5, 3d8+5, 750 mo l'una) `[CANONE — DM 2026-11-19, card]`; Occhio di Ossidiana (sotto)
 
 **Capacità speciali**
 - **Ira Barbarica Superiore** (6/giorno, con Ira Extra): +6 FOR, +6 COS, +3 Volontà, −2 CA, 13 round. Dopo l'Ira è affaticato (l'Ira Instancabile arriva al 17°).
@@ -95,7 +95,7 @@ Hobgoblin secco, dagli occhi gialli, la mano sinistra nera di fuliggine fino
 al polso, un bastone ferrato con appese ossa di dita. Canta invece di
 parlare, sempre la stessa cantilena, e la interrompe solo per dare ordini.
 Dorme sulla sua stuoia a N14. Dopo il barile è lui che mette la *luce* sul
-giavellotto, al round 3 (capitolo III, §8). Ritratto: nessuno.
+giavellotto, al round 3 (`ARC07-BARILE-SULLA-TENDA.md` §8). Ritratto: nessuno.
 
 <!-- include: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#sacerdote-scheda -->
 ```statblocco
@@ -138,7 +138,7 @@ Ritratto: nessuno.
 
 **Numeri** (combattente 1 dell'SRD): **CA 15** · **pf 6** · Riflessi +1 ·
 Ascoltare e Osservare +2, −10 ad Ascoltare finché dorme. Dopo il barile suona
-entro **1d4 round** dal boato, se è vivo (capitolo III, §8).
+entro **1d4 round** dal boato, se è vivo (`ARC07-BARILE-SULLA-TENDA.md` §8).
 
 ## Balvar Fuocospento, il runaio esiliato
 

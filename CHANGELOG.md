@@ -18,6 +18,7 @@ Il tag e il rilascio li crea il workflow Release (ADR-0100).
 ## [Non rilasciato]
 
 ### Aggiunto
+- Manifest dei booklet: `pagine_nei_rimandi` (volume) fa stampare «, p. N» con il link dietro ogni rimando «cap. N …», e `rimandi_romani` (capitolo) fa lo stesso per i numeri romani nudi di un foglio riassuntivo (ADR-0144). Primo volume d'arco: `07_il Portale Della Forgia Eterna/homebrew/volume-arco/ARC07-VOLUME-ARCO.manifest.json`.
 - `importa_gemini.py`: le chat di Gemini esportate a mano (cartella «Google AI Studio» di Drive, Google Takeout «App Gemini») diventano Markdown fuori dal repo, con un indice ordinato per quante volte nominano la campagna. Nessuna chiave, nessuna chiamata a Google.
 - `scripts/prove-4050/kit.sh`: il kit unico delle prove sulla RTX 4050 (ADR-0136). `kit.sh installa` prepara Bazzite, Debian 13 o CachyOS (box Distrobox) e Windows via WSL2 (`installa-windows.ps1`); `kit.sh tutte` lancia le sette prove di `prove.json` in fila accendendo Ollama col contesto giusto; `verifica.py` dice per ogni prova ok, ko, da completare o non fatta; `trascrizione-gpu.sh` misura whisper.cpp sulla GPU con l'audio pubblico di FLEURS.
 - `scripts/prove-4050/`: le prove che vogliono la GPU del portatile del DM in uno script ciascuna (controllo della macchina, lettore della coerenza col 7B, prosa col 12B, immagini in posa su 6 GB) e `riporta.sh`, che ne fa un archivio da caricare nel thread. Guida: `docs/how-to/GUIDA-PROVE-PORTATILE-4050.md`.

@@ -2066,6 +2066,41 @@
       "deterministic": true
     },
     {
+      "name": "misura_ordine",
+      "description": "«L'ordine del booklet regge al tavolo, o il DM dovrà cercare e andare a braccio?»\n\nMisura l'ordine dei capitoli di un booklet dal suo PDF (ADR-0145): legge l'indice, dà un ruolo a ogni sezione con le regole di un file di ruoli (avvio, preparazione, gioco, sintesi, fuori serata, riferimento) e conta i difetti R2-R8 (preparazione dopo il gioco, scene fuori ordine, riassunto dopo il dettaglio, dopo-serata fra le scene, doppioni, guida ai capitoli sbagliata). Con una regola \"parte\": true misura un volume d'arco: in più V1 (quadro del volume prima della Parte I), V2 (indice oltre due pagine), V3 (parti senza gioco fra parti giocate), e le regole R parte per parte. Serve PyMuPDF.",
+      "use_case": "«L'ordine del booklet regge al tavolo, o il DM dovrà cercare e andare a braccio?»",
+      "invocation": "python3 scripts/misura_ordine.py PDF RUOLI.json",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "pdf": {
+            "type": "string",
+            "description": "Il PDF composto del booklet."
+          },
+          "ruoli": {
+            "type": "string",
+            "description": "Il file JSON dei ruoli delle sezioni (regole sul titolo)."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Misure e sezioni in JSON."
+          }
+        },
+        "required": [
+          "pdf",
+          "ruoli"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "un booklet sopra un suo tetto o non registrato (--check)",
+        "2": "manca PyMuPDF"
+      },
+      "deterministic": true
+    },
+    {
       "name": "misura_ripetizioni_frasi",
       "description": "«Quali immagini ho già usato in un altro box, anche con parole diverse?»\n\nLe immagini ripetute fra i box read-aloud, frase per frase, con embedding multilingue (MiniLM, Apache 2.0). Il 2026-11-03 le 2 vere nei master corrette (21 → 19 coppie), le altre lette e scritte in plans/scrittura/ripetizioni-accettate.json; --check è il cancello locale. Canale unstable (ADR-0099).",
       "use_case": "«Quali immagini ho già usato in un altro box, anche con parole diverse?»",

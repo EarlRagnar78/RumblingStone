@@ -294,7 +294,30 @@
     numbering: none,
   )
   if larga { place(top, float: true, scope: "parent", clearance: 12pt, block(width: 100%, corpo)) }
-  else { block(width: 100%, above: 0.8em, below: 0.8em, corpo) }
+  else {
+    // Se non entra nello spazio che resta nella colonna, va a capo colonna
+    // da sé, come la scheda delle creature: sotto un float a tutta pagina
+    // Typst 0.15 sbaglia lo spazio che resta, e la figura, che non si
+    // spezza, usciva dal foglio (il ritratto di Vatore nella serata di
+    // ARC-07, 2026-11-19; misura `immagini_tagliate` di misura_stampa.py).
+    // `layout` dà la larghezza vera della colonna; il blocco esterno porta la
+    // spaziatura di sempre, che `layout` da solo cambierebbe di qualche punto
+    // (una scheda spezzata in più nel fascicolo dei giocatori di ARC-07).
+    // Solo `context`, senza `layout`, non basta: il ritratto esce lo stesso.
+    block(width: 100%, above: 0.8em, below: 0.8em, layout(spazio => context {
+      let a5 = page.width < 16cm
+      let larghezza = spazio.width
+      let colonna = page.height - if a5 { 2.9cm } else { 4.1cm }
+      let fondo-col = page.height - if a5 { 1.4cm } else { 2.0cm }
+      let alto = measure(block(width: larghezza, corpo)).height + 0.8em.to-absolute()
+      let resta = fondo-col - here().position().y
+      // Un float di colonna sarebbe meglio (il testo dopo riempirebbe lo
+      // spazio), ma Typst 0.15 lo colloca lo stesso sotto i float a tutta
+      // pagina e l'immagine esce ancora dal foglio: provato e scartato.
+      if alto > resta and alto < colonna { colbreak() }
+      corpo
+    }))
+  }
 }
 
 // Una griglia a spaziatura fissa (mappa ASCII, schema, statblocco

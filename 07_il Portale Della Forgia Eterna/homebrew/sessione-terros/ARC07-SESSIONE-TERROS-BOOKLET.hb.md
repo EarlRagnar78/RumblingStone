@@ -2763,8 +2763,8 @@ arriva a risorse piene. Mostra l'affresco, non minacciare l'orologio.
 >   Terros** (20.000 mo) + residuo golem + geodi.
 > - Sbloccato **«Diventare una Collina»** sui Bracieri Gemelli: Tordek ha
 >   dimostrato il proprio valore contro il guardiano. Il potere è scritto sulla
->   scheda (`PG/Artefatti/Artefatti-Pg/Tordek/05_Bracieri_Gemelli_Scheda_PG_Completa.md`,
->   §7): come *ingrandire persona*, taglia Grande per 1 minuto, 1 volta al
+>   scheda dei Bracieri, §7:
+>   come *ingrandire persona*, taglia Grande per 1 minuto, 1 volta al
 >   giorno; la prima volta si attiva da sé, quando un nemico Enorme o più grande
 >   lo porta sotto metà dei pf.
 > - L'ultimo suono di Terros è stato di **assenso**, non d'odio (il party aveva

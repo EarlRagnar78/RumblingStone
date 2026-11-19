@@ -27,7 +27,8 @@
         "immagini_sotto_300dpi": 66,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
         "pagine": 163,
@@ -36,14 +37,14 @@
         "schede": 32,
         "pagine_con_immagine": 0.043,
         "pagine_con_immagine_decimo": 0.117,
-        "parole": 90874,
-        "quota_parole_ripetute": 0.125
+        "parole": 91037,
+        "quota_parole_ripetute": 0.126
       },
       "in_prova": {
         "sigle_morte": 0,
         "righe_brevi_incomplete": 0,
         "titoli_rovinati": 0,
-        "parole_ripetute": 11387
+        "parole_ripetute": 11433
       }
     },
     "07_il Portale Della Forgia Eterna/homebrew/sessione-notte-e-alba/ARC07-NOTTE-E-ALBA-GIOCATORI.manifest.json": {
@@ -53,7 +54,8 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
         "pagine": 7,
@@ -79,7 +81,8 @@
         "immagini_sotto_300dpi": 25,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
         "pagine": 131,
@@ -88,14 +91,14 @@
         "schede": 24,
         "pagine_con_immagine": 0.023,
         "pagine_con_immagine_decimo": 0.076,
-        "parole": 72468,
+        "parole": 72597,
         "quota_parole_ripetute": 0.119
       },
       "in_prova": {
         "sigle_morte": 0,
         "righe_brevi_incomplete": 0,
         "titoli_rovinati": 0,
-        "parole_ripetute": 8617
+        "parole_ripetute": 8621
       }
     },
     "07_il Portale Della Forgia Eterna/homebrew/sessione-resurrezione-mille-anni/ARC07-SERATA-GIOCATORI.manifest.json": {
@@ -105,7 +108,8 @@
         "immagini_sotto_300dpi": 5,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
         "pagine": 19,
@@ -131,23 +135,24 @@
         "immagini_sotto_300dpi": 53,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
-        "pagine": 172,
+        "pagine": 175,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 7.0,
         "schede": 30,
-        "pagine_con_immagine": 0.035,
-        "pagine_con_immagine_decimo": 0.081,
-        "parole": 100481,
-        "quota_parole_ripetute": 0.095
+        "pagine_con_immagine": 0.034,
+        "pagine_con_immagine_decimo": 0.08,
+        "parole": 102608,
+        "quota_parole_ripetute": 0.094
       },
       "in_prova": {
         "sigle_morte": 0,
         "righe_brevi_incomplete": 0,
         "titoli_rovinati": 0,
-        "parole_ripetute": 9539
+        "parole_ripetute": 9598
       }
     },
     "07_il Portale Della Forgia Eterna/homebrew/sessione-ritorno-forgia/ARC07-RITORNO-FORGIA-BOOKLET.manifest.json": {
@@ -157,7 +162,8 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
         "pagine": 29,
@@ -183,7 +189,8 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
         "pagine": 4,
@@ -209,7 +216,8 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
         "pagine": 66,
@@ -218,14 +226,14 @@
         "schede": 4,
         "pagine_con_immagine": 0.0,
         "pagine_con_immagine_decimo": 0.0,
-        "parole": 39486,
+        "parole": 39493,
         "quota_parole_ripetute": 0.048
       },
       "in_prova": {
         "sigle_morte": 2,
         "righe_brevi_incomplete": 1,
         "titoli_rovinati": 0,
-        "parole_ripetute": 1913
+        "parole_ripetute": 1907
       }
     },
     "07_il Portale Della Forgia Eterna/homebrew/sessione-terros/ARC07-TEASER-GIOCATORI.manifest.json": {
@@ -235,7 +243,8 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
         "pagine": 3,
@@ -261,7 +270,8 @@
         "immagini_sotto_300dpi": 83,
         "schede_spezzate": 1,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
         "pagine": 294,
@@ -270,14 +280,14 @@
         "schede": 41,
         "pagine_con_immagine": 0.024,
         "pagine_con_immagine_decimo": 0.065,
-        "parole": 168343,
+        "parole": 168407,
         "quota_parole_ripetute": 0.112
       },
       "in_prova": {
         "sigle_morte": 0,
         "righe_brevi_incomplete": 0,
         "titoli_rovinati": 2,
-        "parole_ripetute": 18780
+        "parole_ripetute": 18795
       }
     },
     "07_il Portale Della Forgia Eterna/homebrew/volume-mille-anni/ARC07-MILLE-ANNI-VOLUME.manifest.json": {
@@ -287,23 +297,24 @@
         "immagini_sotto_300dpi": 51,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
-        "pagine": 105,
+        "pagine": 108,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 7.0,
         "schede": 26,
-        "pagine_con_immagine": 0.048,
-        "pagine_con_immagine_decimo": 0.105,
-        "parole": 60310,
-        "quota_parole_ripetute": 0.108
+        "pagine_con_immagine": 0.046,
+        "pagine_con_immagine_decimo": 0.102,
+        "parole": 62437,
+        "quota_parole_ripetute": 0.105
       },
       "in_prova": {
         "sigle_morte": 0,
         "righe_brevi_incomplete": 0,
         "titoli_rovinati": 0,
-        "parole_ripetute": 6516
+        "parole_ripetute": 6575
       }
     },
     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/homebrew/PALIO-BOOKLET.manifest.json": {
@@ -313,7 +324,8 @@
         "immagini_sotto_300dpi": 2,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
         "pagine": 65,
@@ -322,14 +334,14 @@
         "schede": 5,
         "pagine_con_immagine": 0.031,
         "pagine_con_immagine_decimo": 0.031,
-        "parole": 29147,
-        "quota_parole_ripetute": 0.05
+        "parole": 29699,
+        "quota_parole_ripetute": 0.051
       },
       "in_prova": {
         "sigle_morte": 0,
         "righe_brevi_incomplete": 5,
         "titoli_rovinati": 0,
-        "parole_ripetute": 1470
+        "parole_ripetute": 1506
       }
     },
     "10-stand-alone/Il Giardino di Sale e Calce PF1e/homebrew/giardino-sale-calce-pf1e.manifest.json": {
@@ -339,16 +351,17 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
-        "pagine": 25,
+        "pagine": 26,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 7.0,
         "schede": 7,
         "pagine_con_immagine": 0.0,
         "pagine_con_immagine_decimo": 0.0,
-        "parole": 11007,
+        "parole": 11000,
         "quota_parole_ripetute": 0.082
       },
       "in_prova": {
@@ -365,16 +378,17 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
-        "pagine": 40,
+        "pagine": 41,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 7.0,
         "schede": 7,
         "pagine_con_immagine": 0.0,
         "pagine_con_immagine_decimo": 0.0,
-        "parole": 17712,
+        "parole": 17729,
         "quota_parole_ripetute": 0.081
       },
       "in_prova": {
@@ -391,7 +405,8 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
         "pagine": 2,
@@ -417,7 +432,8 @@
         "immagini_sotto_300dpi": 19,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
         "pagine": 88,
@@ -443,16 +459,17 @@
         "immagini_sotto_300dpi": 6,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
-        "pagine": 8,
+        "pagine": 9,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 7.0,
         "schede": 0,
         "pagine_con_immagine": 0.0,
-        "pagine_con_immagine_decimo": 0.625,
-        "parole": 2511,
+        "pagine_con_immagine_decimo": 0.444,
+        "parole": 2509,
         "quota_parole_ripetute": 0.007
       },
       "in_prova": {
@@ -469,7 +486,8 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
         "pagine": 4,
@@ -495,16 +513,17 @@
         "immagini_sotto_300dpi": 7,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
-        "pagine": 11,
+        "pagine": 12,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 7.0,
         "schede": 0,
-        "pagine_con_immagine": 0.091,
-        "pagine_con_immagine_decimo": 0.455,
-        "parole": 4476,
+        "pagine_con_immagine": 0.083,
+        "pagine_con_immagine_decimo": 0.333,
+        "parole": 4474,
         "quota_parole_ripetute": 0.047
       },
       "in_prova": {
@@ -521,7 +540,8 @@
         "immagini_sotto_300dpi": 1,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
         "pagine": 6,
@@ -547,7 +567,8 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
         "pagine": 6,
@@ -573,7 +594,8 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0
       },
       "misura": {
         "pagine": 45,

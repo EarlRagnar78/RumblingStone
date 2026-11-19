@@ -109,6 +109,23 @@ class TestPdf(unittest.TestCase):
         doc.save(pdf2)
         self.assertEqual(ms.rimandi_sbagliati(pymupdf.open(pdf2)), [])
 
+    def test_immagine_che_esce_dal_foglio(self):
+        """Il ritratto di Vatore nella serata di ARC-07 (2026-11-19): messo sotto
+        un float, scendeva 80 pt oltre il bordo del foglio e la stampa lo
+        tagliava. Un'immagine al vivo che sborda di 3 mm resta lecita."""
+        doc = pymupdf.open()
+        for _ in range(2):
+            doc.new_page(width=595.28, height=841.89)
+        png = pymupdf.Pixmap(pymupdf.csRGB, pymupdf.IRect(0, 0, 400, 600), False)
+        png.clear_with(200)
+        doc[0].insert_image(pymupdf.Rect(315, 564, 553, 922), pixmap=png)       # tagliata
+        doc[1].insert_image(pymupdf.Rect(-8, -8, 603.28, 849.89), pixmap=png)   # al vivo
+        pdf = self.cartella / "tagliata.pdf"
+        doc.save(pdf)
+        v = ms.misura_pdf(pdf, [])
+        self.assertEqual(v["immagini_tagliate"], 1)
+        self.assertEqual(v["dettaglio"]["immagini_tagliate"][0][0], 1)
+
     def test_la_pagina_pari_ha_l_interno_a_destra(self):
         area = pymupdf.Rect(0, 0, 595.28, 841.89)
         dispari, pari = ms.area_di_stampa(area, 1, "a4"), ms.area_di_stampa(area, 2, "a4")

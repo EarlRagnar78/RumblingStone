@@ -20,6 +20,7 @@ quello che un controllo di prestampa misura, più le schede delle creature:
 | `corpo_mediano_pt` | il corpo più frequente del testo | 9,5-11 pt (C8 di RIFERIMENTI-AP) |
 | `fuori_margine` | righe che escono dall'area di stampa | 0 |
 | `immagini_sotto_300dpi` | immagini sotto 300 dpi alla dimensione stampata | 0 |
+| `immagini_tagliate` | immagini che escono dal foglio oltre la smarginatura di 3 mm, quindi tagliate in stampa | 0 |
 | `schede_spezzate` | riquadri di creatura che cominciano su una pagina e finiscono su un'altra | 0 |
 | `rimandi_sbagliati` | «scheda a pagina N» senza la creatura a pagina N, «continua a pagina N» senza «(segue)» a pagina N, «continua nella colonna accanto» senza «(segue)» sulla stessa pagina | 0 |
 | `pagine_con_immagine` | quota di pagine con un'immagine raster di almeno un quarto di pagina | da registrare |
@@ -77,7 +78,8 @@ CARTELLA = ROOT / "build" / "misura-stampa"
 REGISTRO = ROOT / "docs" / "audit" / "stampa-booklet.json"
 #: Le misure con un tetto: si scende soltanto. Le altre si registrano e basta.
 CON_TETTO = ("testi_sotto_minimo", "fuori_margine", "immagini_sotto_300dpi",
-             "schede_spezzate", "font_non_incorporati", "rimandi_sbagliati")
+             "schede_spezzate", "font_non_incorporati", "rimandi_sbagliati",
+             "immagini_tagliate")
 REGISTRATE = ("pagine", "corpo_mediano_pt", "corpo_minimo_pt", "schede", "pagine_con_immagine",
               "pagine_con_immagine_decimo", "parole", "quota_parole_ripetute")
 #: Le misure in prova (canale testing, ADR-0099): nate dal giro di lettura del
@@ -93,6 +95,9 @@ PAGINE_DI_TESTATINA = 8
 RIGHE_DI_BORDO = 3
 MINIMO_PT = 7.0
 DPI_MINIMI = 300
+#: Quanto un'immagine al vivo può uscire dal foglio: la smarginatura di 3 mm
+#: che la tipografia rifila. Oltre, la stampa taglia l'immagine.
+SMARGINATURA_PT = 3 * 72 / 25.4 + 1
 # Typst appende punteggiatura e trattini nel margine (text.overhang, la
 # «sporgenza ottica» dei tipografi): fino a 4 pt fuori è composizione voluta.
 TOLLERANZA_PT = 4.0
@@ -194,6 +199,7 @@ def misura_pdf(pdf: Path, schede: list[dict], formato: str = "a4") -> dict:
     doc = pymupdf.open(pdf)
     corpi: Counter = Counter()
     sotto, fuori, immagini_basse, pagine_illustrate, pagine_illustrate_decimo = [], [], [], 0, 0
+    tagliate = []
     minimo = 99.0
     font_mancanti: set[str] = set()
     for n, pagina in enumerate(doc, 1):
@@ -233,6 +239,11 @@ def misura_pdf(pdf: Path, schede: list[dict], formato: str = "a4") -> dict:
         for r, im in immagini:
             if min(r.width, r.height) < ILLUSTRAZIONE_MINIMA_PT:
                 continue        # icone ed emoji delle mappe: non sono illustrazioni
+            # Il foglio allargato della smarginatura: un'immagine che ne esce
+            # perde in stampa la parte di fuori (il ritratto di Vatore, ARC-07).
+            foglio = area + (-SMARGINATURA_PT, -SMARGINATURA_PT, SMARGINATURA_PT, SMARGINATURA_PT)
+            if not foglio.contains(r):
+                tagliate.append((n, round(max(area.y0 - r.y0, r.y1 - area.y1, area.x0 - r.x0, r.x1 - area.x1))))
             dpi = min(im["width"] / (r.width / 72), im["height"] / (r.height / 72))
             # Typst rasterizza i filtri degli SVG (ombre, sfocature della
             # pergamena) in uno strato a bassa risoluzione sopra l'immagine
@@ -261,6 +272,7 @@ def misura_pdf(pdf: Path, schede: list[dict], formato: str = "a4") -> dict:
         "testi_sotto_minimo": len(sotto),
         "fuori_margine": len(fuori),
         "immagini_sotto_300dpi": len(immagini_basse),
+        "immagini_tagliate": len(tagliate),
         "schede": len(schede),
         "schede_spezzate": len(spezzate),
         "rimandi_sbagliati": len(rimandi),
@@ -274,7 +286,7 @@ def misura_pdf(pdf: Path, schede: list[dict], formato: str = "a4") -> dict:
         "pagine_con_immagine_decimo": round(pagine_illustrate_decimo / len(doc), 3) if len(doc) else 0,
         "dettaglio": {
             "sotto_minimo": sotto[:30], "fuori_margine": fuori[:30],
-            "immagini_basse": immagini_basse[:30],
+            "immagini_basse": immagini_basse[:30], "immagini_tagliate": tagliate[:30],
             "schede_spezzate": spezzate, "rimandi_sbagliati": rimandi[:30],
             "sigle_morte": sigle[:30], "righe_brevi_incomplete": brevi[:30],
             "titoli_rovinati": titoli[:30],

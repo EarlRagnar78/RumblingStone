@@ -10,7 +10,7 @@
 > discrezione del DM.
 >
 > 🔗 **Rapporto con l'Echo Ledger<!-- storico --> (post-consolidamento 2026-07-23)<!-- /storico -->.** L'**Echo
-> Ledger** in `ARC07-DEF-5-RITORNO-HAMMERFIST.md §7` è la **checklist operativa
+> Ledger**<!-- apparato --> in `ARC07-DEF-5-RITORNO-HAMMERFIST.md §7`<!-- /apparato --> è la **checklist operativa
 > di chiusura d'arco** (una riga per filo armato: carry-over B4, Debito della
 > Radice, Ghostlord, Vatore/Sal, Varis, Doni mancati, Cronaca Vivente — «stato
 > in uscita → dove paga»). **Questo file è il riferimento DETTAGLIATO** che il
@@ -25,9 +25,9 @@
 | Evento (ARC-07) | Eco | Quando riemerge | File che lo gestisce |
 |---|---|---|---|
 | **Uovo di Fauci di Palude** (P6 r.994, sezione deprecata ma hook vivo) | Un uovo di drago nero nascosto sopravvive alla morte di Fauci → **nemesi futura** | **ARC-10** (qualunque sia l'esito ARC-08) | Questo file + **ARC-08 C2** (eco gemella); custode ↓ |
-| **Eco "nessuna pietà" del Rubino** (P5-DEF-P2) | Il **tono della Corona** cambia in base a **come finisce il duello** con Skullcrusher (severità vs misericordia) | Ogni uso della Corona **dopo** il P5, e all'ingresso ARC-08 | Questo file (§2 varianti) + `campaign-artifacts.md` |
+| **Eco "nessuna pietà" del Rubino** (P5-DEF-P2) | Il **tono della Corona** cambia in base a **come finisce il duello** con Skullcrusher (severità vs misericordia) | Ogni uso della Corona **dopo** il P5, e all'ingresso ARC-08 | Questo file (§2 varianti)<!-- apparato --> + `campaign-artifacts.md`<!-- /apparato --> |
 | **Cronache dei Quattro Eroi** | La profezia compiuta diventa **fama crescente presso i nani** | **ARC-08 E5** (Custodi Eterni) e Cerimonia delle 100 Asce | ARC-08 E5 / handout C2 |
-| **Thorgrim Barbadiferro** | L'antico portatore di Aegis Fang **riecheggia** nel presente | **Cerimonia delle 100 Asce** (ARC-08) | `08_.../Cerimonia-delle-100-Asce.md` |
+| **Thorgrim Barbadiferro** | L'antico portatore di Aegis Fang **riecheggia** nel presente | **Cerimonia delle 100 Asce** (ARC-08) | Cerimonia delle 100 Asce, ARC-08<!-- apparato --> (`08_.../Cerimonia-delle-100-Asce.md`)<!-- /apparato --> |
 | ⭐ **Il dono della deflessione** (`DEF-3` §5, rito di Hella) | Se Thorik dona il **+2 di deflessione**: la Corona resta a **+1**, Hella ha lo **Scudo del Custode**, e ogni volta che lei lo usa **lui scatta verso chi è stato protetto** | Ogni scena in cui Hella prende un colpo per qualcuno, **da subito** | `ARC07-DEF-3` §5 + scheda Corona §«Il dono al rito di Hella» |
 | ⭐ **Il bivio della Senzienza** (`DEF-4` Scena 12) | La Corona si sveglia **calda** o **fredda** secondo quel dono, e il tono **non è cosmetico**: decide come parla per tutto ARC-09 | **Rituale 4**, alla vittoria a −1.000; poi ogni uso della Corona | §2-bis qui sotto |
 | ⭐ **Aegis Fang Stage 1** | L'Assedio vinto sveglia l'ascia, che smette di dubitare **o** comincia a giudicare | **Rituale 4**, subito dopo la Senzienza | `ARC07-DEF-4` Scena 12, Momento 3 |
@@ -64,11 +64,11 @@ L'ascia non lo abbandona: lo **guarda**, e il giudizio finisce nello stesso
 momento in cui si scalda la Corona. I due artefatti si sciolgono insieme,
 perché guardano la stessa cosa.
 
-⚠️ **Da segnare appena il rito di `DEF-3` è giocato**, qui e in `state.md` §7:
+⚠️ **Da segnare appena il rito di `DEF-3` è giocato**, qui<!-- apparato --> e in `state.md` §7<!-- /apparato -->:
 finché la casella è vuota, `DEF-4` Scena 12 ha due rami e il DM non sa quale
 leggere.
 
-| | Scelta di Thorik | Data | Segnato in `state.md` |
+| | Scelta di Thorik | Data | Segnato<!-- apparato --> in `state.md`<!-- /apparato --> |
 |---|---|---|---|
 | ⬜ | donato / rifiutato | … | ⬜ |
 
@@ -111,6 +111,9 @@ archi); coordinare lì la collocazione definitiva per non duplicare.
 ## 4. HANDOFF
 
 Nessun eco di questo file **contraddice** ARC-08/09: il Rubino resta
-**single-use speso** dopo l'arco (A4/`campaign-artifacts.md`); l'uovo e le
-Cronache sono ganci **coordinati** con ARC-08 C2/E5. Aggiornare `state.md §7`
-(threads narrativi) se il DM promuove uno di questi echi a canone attivo.
+**single-use speso** dopo l'arco<!-- apparato --> (A4/`campaign-artifacts.md`)<!-- /apparato -->; l'uovo e le
+Cronache sono ganci **coordinati** con ARC-08 C2/E5.
+<!-- apparato -->
+Aggiornare `state.md §7` (threads narrativi) se il DM promuove uno di questi
+echi a canone attivo.
+<!-- /apparato -->

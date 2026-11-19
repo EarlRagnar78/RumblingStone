@@ -77,6 +77,21 @@ Quello che si paga:
   booklet lungo toglie la scheda spezzata di Balvar, con una pagina in più. Una prima prova che decideva dalla
   posizione prima del salto di colonna non convergeva (la posizione letta era
   quella del giro di composizione precedente) ed è stata scartata;
+- una figura in colonna che non entra nello spazio rimasto va a capo
+  colonna da sé, con la stessa misura della scheda. Il ritratto di Vatore,
+  sotto la tabella larga della Scena 9, usciva di 80 pt dal fondo del foglio
+  (serata p. 71, volume d'arco p. 194; lo stesso taglio c'era su main, a
+  p. 69). Nessuna misura lo vedeva: `misura_stampa.py` ha ora
+  `immagini_tagliate`, con tetto 0, e su tutti i 22 booklet la misura passa da
+  2 a 0. Nel Drappo e nel Giardino la stessa regola sposta quattro ritratti
+  che finivano nel margine basso, accanto al numero di pagina, senza uscire
+  dal foglio: una pagina in più in quattro booklet (fascicolo dei giocatori
+  del Drappo 8 → 9, schede del Drappo 11 → 12, Giardino 40 → 41, Giardino
+  PF1e 25 → 26). Si paga con lo spazio: a p. 71 della serata la
+  colonna di destra resta bianca sotto le tabelle (circa 220 pt), perché il
+  testo che segue la figura la segue anche in pagina. Un float di colonna,
+  che lascerebbe al testo quello spazio, è stato provato e scartato: Typst
+  0.15 lo colloca sotto le tabelle e l'immagine esce lo stesso dal foglio;
 - le distanze fra dove la persona agisce e la sua scheda, nel volume d'arco,
   sono in mediana 2-8 pagine (Balvar 7, Durin 2, Skullcrusher 3,5, Terros 6,5,
   Zog'tar 8); con le schede solo alla prima apparizione erano 24 per Balvar e

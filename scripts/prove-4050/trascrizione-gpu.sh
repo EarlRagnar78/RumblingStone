@@ -14,6 +14,7 @@
 #   RS_FLEURS_RIGHE     quante righe di FLEURS (di serie 40)
 set -euo pipefail
 . "$(dirname "${BASH_SOURCE[0]}")/comune.sh"
+rs_registra trascrizione-gpu "$@"; trap 'rs_fine_registro $?' EXIT   # log in $RIS/log (comune.sh)
 BOX="${WHISPER_BOX:-whisper}"
 LAVORO="${WHISPER_LAVORO:-$PROVE_DIR/whisper-lavoro}"
 COMMIT="${RS_WHISPER_COMMIT:-5922450}"
@@ -79,7 +80,7 @@ vram_ora() { { nvidia-smi --query-gpu=memory.used --format=csv,noheader,nounits 
 vram_prima=$(vram_ora); : > "$DEST/vram-durante.txt"
 ( while :; do vram_ora >> "$DEST/vram-durante.txt"; echo >> "$DEST/vram-durante.txt"; sleep 2; done ) &
 CAMPIONA=$!
-trap 'kill "$CAMPIONA" 2>/dev/null || true' EXIT
+trap 'c=$?; kill "$CAMPIONA" 2>/dev/null || true; rs_fine_registro "$c"' EXIT
 t0=$(date +%s.%N)
 nel_box "$BOX" bash -lc "
   cd '$LAVORO'

@@ -64,6 +64,28 @@ la nota), **da completare** (manca il foglio alla cieca della prosa) o
 **non fatta**. «ok» non vuol dire che la tecnica migliora: quel verdetto lo dà
 il thread della prova con la sua regola.
 
+### I log di ogni giro
+
+Tutto quello che il kit e le prove scrivono sul terminale, uscita ed errori,
+finisce anche nella cartella `log/` del giorno
+(`~/rumblingstone-prove-4050/<giorno>/log/`). Sul terminale vedi le stesse
+righe di prima: il kit le copia con `tee`, e gli errori restano sullo stderr.
+
+- `kit-<comando>-<ora>.log`: il giro intero di `kit.sh tutte`, `esegui`,
+  `verifica`, `riporta` o `pulisci`, con il comando, la data, il sistema e la
+  versione del repo in testa e il codice d'uscita in coda.
+- `<prova>.log`: la parte di una prova, con il suo codice d'uscita in coda.
+- `installa-<ora>.log`: `kit.sh installa` (anche con `--mostra`).
+- `<script>-<ora>.log`: uno script lanciato da solo, per esempio
+  `controlla.sh`. Lanciato dal kit non apre un secondo log.
+- `avvisi.txt`: le righe con errori, avvisi, traceback e uscite diverse da
+  zero, con il file e la riga da cui vengono. È la prima cosa da guardare
+  quando qualcosa non è andato.
+
+`kit.sh piano` e l'aiuto leggono soltanto e non scrivono log. Il server
+Ollama scrive ancora il suo in `ollama-ctx<contesto>.log`. `riporta.sh` mette
+i log nell'archivio fino a 64 MB l'uno.
+
 ### Cosa fa `installa` su ogni sistema
 
 `scripts/prove-4050/installa.sh` riconosce il sistema da `/etc/os-release`.
@@ -106,6 +128,11 @@ wsl -d Ubuntu-24.04 -- bash -lc "cd ~/RumblingStone && scripts/prove-4050/kit.sh
 
 L'archivio da caricare nel thread si trova da Esplora file in
 `\\wsl$\Ubuntu-24.04\home\<utente>\rumblingstone-prove-4050\`.
+
+`installa-windows.ps1` tiene il suo log con `Start-Transcript` in
+`%USERPROFILE%\rumblingstone-prove-4050\log\installa-windows-<data-ora>.log`.
+In Windows PowerShell 5.1 il transcript prende l'uscita di `wsl.exe` ma non i
+suoi errori: quelli del kit dentro WSL2 stanno nel log di `installa.sh`.
 
 **Cosa non è provato.** Nessuno di questi percorsi è girato su una macchina
 vera: il container dell'agente non ha GPU, né Distrobox, né Windows. Nel
@@ -450,7 +477,7 @@ scripts/prove-4050/riporta.sh 2026-11-16         # o di un altro giorno
 
 Prima dell'archivio `riporta.sh` lancia `verifica.py`, che scrive
 `verifica.md`; poi ne esce `~/rumblingstone-prove-4050/prove-4050-<giorno>.tar.gz`, con
-`macchina.txt`, `verifica.md`, esiti, tempi, risposte, corse, misure e solo le
+`macchina.txt`, `verifica.md`, i log di `log/` con `avvisi.txt`, esiti, tempi, risposte, corse, misure e solo le
 immagini finali e le generazioni sotto gli 8 MB. Pesi, venv, ComfyUI, l'audio
 di FLEURS e le immagini intermedie restano fuori. Caricalo nel thread
 «Preparare il kit unico di prove per la 4050», o in quello della prova. L'agente lo unisce al repo e lo registra
@@ -472,6 +499,7 @@ nell'ADR della prova:
 | Dopo una prova il testo esce «a scaletta» (ogni riga parte dove finisce la precedente) | Il terminale è rimasto in modalità grezza dopo lo spegnimento del server nel box. Il kit ora lo rimette a posto da solo; se capita ancora, scrivi `stty sane` e premi Invio (anche se non vedi quello che scrivi) oppure `reset`. |
 | `distrobox enter` resta appeso su «host's nvidia integration» | È noto sull'ASUS: il kit accende il box con `podman start` e legge il log a intervalli (`box_avvia`, cinque minuti al massimo: `RS_BOX_ATTESA`), poi entra lo stesso. Se non parte, `podman logs llm-locale \| tail` (o `comfyui`). |
 | `verifica.md`: «ha lavorato un'altra scheda» sulla trascrizione | Vulkan ha scelto la scheda integrata: la memoria della NVIDIA non è salita mentre whisper girava. Guarda `trascrizione-gpu/dispositivo.txt` e `vram-durante.txt` e carica l'archivio lo stesso: è un risultato. |
+| Una prova è uscita con un errore e il terminale è già scorso via | Apri `log/avvisi.txt` del giorno: dice file e riga; il resto è in `log/<prova>.log`. L'archivio di `riporta.sh` li contiene. |
 | Su Windows lo script mostra lettere storpiate | Hai una copia vecchia di `installa-windows.ps1`: `git pull` (il file ora ha il BOM che Windows PowerShell 5.1 vuole). |
 | `Ollama non risponde su 11434` | Il terminale A con `start.sh` non è acceso o si è chiuso. |
 | Il 7B è lento come una CPU | Guarda `gpu.txt`: se la memoria usata è sotto 1 GB la GPU non è passata nel box. Riavvia il box: `podman restart llm-locale`. |

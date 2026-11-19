@@ -86,6 +86,9 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 |---|---|---|---|
 | 2026-11-19 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, rilettura completa dei lotti 1-4 contro le schede: d… | ✅ contraddizioni fra la tattica e la sua scheda nei lotti 1-4: da 2 a 0; Tordek convinto da Xal'thor dal 35% al 27% dei duelli (20.000 prove, seme 1372), mai m… |
 | 2026-11-19 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, Palio: i sicari di Sonjak possono puntare il cavallo… | ✅ file del Palio che danno ai sicari un obiettivo diverso dagli altri: da 1 (STATBLOCCHI contro INTEGRAZIONE r.149 e GIORNO2 r.136-137) a 0; nessun numero di s… |
+| 2026-11-19 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: due scelte del DM sulle card del 19/11 chiudono il ric… | ✅ differenze fra blocco e prosa nelle dieci schede del corredo: 2 → 0 (danno a distanza della Drow Assassina, tabella di Varis); `verifica_scheda` 0 violazioni… |
+| 2026-11-19 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Log di ogni giro del kit (richiesta del DM del 19/11): `rs_registra` in… | ✅ prova finta (20 righe su stdout, 10 su stderr, un avviso, un traceback, uscita 3): righe salvate in un file da 0/32 su main a 32/32; codice d'uscita scritto… |
+| 2026-11-19 | STATO-E-ORDINE | Due test che dipendevano dalla macchina, corretti con il test scritto prima.… | ✅ |
 | 2026-11-19 | STATO-E-ORDINE | ADR-0143: i gate bloccanti e veloci della CI girano prima del push.… | ✅ |
 | 2026-11-19 | STATO-E-ORDINE | ADR-0142: `.claudeignore` diventa regole `Read` di `permissions.deny` (Claude C… | ✅ righe trovate nelle ricerche, prima e dopo: Skullcrusher 1.912 → 1.168 (−39%), Thorik −18%, Aegis Fang −16%, Collezionista −16%, Hammerfist −10%, Sonjak −9%,… |
 | 2026-11-19 | STATO-E-ORDINE | ADR-0141: le regole di AGENTS.md arrivano a Claude con i file a cui servono (ca… | ✅ `--misura`: script e piani −45% di caratteri rispetto ad AGENTS.md intero, master d'arco −16%, skill −22%, configurazione −12%; compito vero con `claude -p`… |
@@ -93,14 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-19 | STATO-E-ORDINE | ADR-0140 accettata: i plugin dell'account che il repo non ha mai usato sono spe… | ✅ `claude -p` dalla cartella del clone con lo script, main contro ramo: plugin da 36 a 7, server MCP da 102 a 2 (falliti all'avvio da 95 a 0), skill da 257 a 7… |
 | 2026-11-19 | STATO-E-ORDINE | ADR-0140 (proposta), la configurazione Claude del repo arriva anche nei thread… | 🟡 misura con `claude -p` 2.1.328 dalla cartella del clone, main contro ramo: `rumblingstone-tools` da assente a connesso (135 tool), hook da fermo a girato, sk… |
 | 2026-11-19 | STATO-E-ORDINE | ADR-0139: la memoria corta ha un tetto di 12 KB misurato da… | indice riscritto a 11.255 byte senza perdere fatti (18 PR citate, tutte con voce; righe senza posto in coda); 4 test nuovi, 18 su 18 verdi; il controllo non pa… |
-| 2026-11-19 | AVVENTURE-COMMUNITY | Lettore del RAG per «chi sa cosa»: esito della prova da 7B sulla RTX 4050 del DM | `qwen2.5:7b` via Ollama sulla 4050, 636 risposte su 636 in circa 2 minuti (87% del modello in VRAM). Il criterio di ESITO.md non è raggiunto e il 7B non entra… |
-| 2026-11-19 | SISTEMI-DI-GIOCO-PLUGIN | `conformita_statblocchi`: il talento di una riga di variante non entra nei TS a… | ✅ test nuovo rosso su main, verde qui |
-| 2026-11-18 | AVVENTURE-COMMUNITY | Calendario di ARC-09: i «Mirtul» rimasti diventano «Flamerule» (scelta del DM d… | dopo la scelta del DM che il Giorno di Marcia 1 è il 1° Flamerule (la Torre cammina il 30 Flamerule), 31 «Mirtul» restavano in 9 file fuori dalla PR della cart… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 201 voci, l'ultima MS-0201 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 204 voci, l'ultima MS-0204 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

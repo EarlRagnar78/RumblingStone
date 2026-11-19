@@ -565,6 +565,21 @@ class TestCancelloDeiNumeri(unittest.TestCase):
 
 
 class TestIFileGeneratiRestanoFuori(unittest.TestCase):
+    def test_le_cartelle_di_gitignore_restano_fuori(self):
+        # Nei thread l'avvio costruisce le skill in build/ (ignorata da git):
+        # 112 copie di SKILL.md facevano rosso il cancello sul repo, 2026-11-19.
+        import subprocess
+        radice = Path(tempfile.mkdtemp())
+        subprocess.run(["git", "init", "-q", str(radice)], check=True)
+        (radice / ".gitignore").write_text("build/\n", encoding="utf-8")
+        (radice / "build").mkdir()
+        (radice / "build" / "copia.md").write_text("x", encoding="utf-8")
+        (radice / "nuovo.md").write_text("x", encoding="utf-8")
+        (radice / "tracciato.md").write_text("x", encoding="utf-8")
+        subprocess.run(["git", "-C", str(radice), "add", "tracciato.md"], check=True)
+        trovati = [q.relative_to(radice).as_posix() for q in C.md_del_repo(radice)]
+        self.assertEqual(trovati, ["nuovo.md", "tracciato.md"])
+
     def test_memoria_non_e_un_file_di_schede(self):
         # MEMORIA.md ripete le ultime righe di plans/CHANGELOG.md: una riga che nomina
         # il BAB lo faceva entrare tra i «file con numeri che nessun conto legge»

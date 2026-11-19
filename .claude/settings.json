@@ -53,5 +53,19 @@
   },
   "enabledMcpjsonServers": [
     "rumblingstone-tools"
-  ]
+  ],
+  "permissions": {
+    "deny": [
+      "mcp__Gmail",
+      "mcp__Google_Drive",
+      "mcp__Channel3_MCP",
+      "mcp__Clipkit",
+      "mcp__Mobbin",
+      "mcp__Microsoft_Learn",
+      "mcp__Mozilla_MDN",
+      "mcp__Shutterstock",
+      "mcp__bioRxiv",
+      "mcp__pg-aiguide"
+    ]
+  }
 }

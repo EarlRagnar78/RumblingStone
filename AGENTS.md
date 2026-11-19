@@ -325,8 +325,11 @@ il compito lo chiede, e le skill `rumblingstone-*` hanno sempre la precedenza.
 | Serena | navigazione del codice |
 
 **Spenti in questo progetto**: Gmail, Google Drive, Tavily, arxiv, bioRxiv,
-r-btw. Se un compito ne richiede uno, l'agente lo dice al DM, che lo riaccende
-con `/mcp`. Lo stesso vale per i plugin spenti a livello globale: un agente non
+r-btw. Gmail, Google Drive, Channel3, Clipkit, Mobbin, Microsoft Learn, MDN,
+Shutterstock, bioRxiv e pg-aiguide sono negati da `permissions.deny` di
+`.claude/settings.json`, che toglie i loro tool dal contesto (scelta del DM del
+2026-11-19, ADR-0140). Se un compito ne richiede uno, l'agente lo dice al DM,
+che lo riaccende con `/mcp` o togliendo la regola. Lo stesso vale per i plugin spenti a livello globale: un agente non
 può accenderli da solo.
 
 ---
@@ -371,6 +374,12 @@ Build commands:
   `./scripts/build-skills.sh && ./scripts/sync-skills.sh --no-build`, then
   continue the conversation normally. If the user declines, proceed reading
   the canonical `skills/` tree directly (always current in git).
+- **Claude Code started OUTSIDE the repo** (the project threads on claude.ai
+  start in the folder that contains the clone): `scripts/claude-progetto.sh`,
+  run by the cloud environment's setup script, writes there a short
+  `CLAUDE.md`, the repo's `.claude/settings.json` with absolute paths and the
+  `.mcp.json`, so the hook, the skills and `rumblingstone-tools` apply
+  ([ADR-0140](plans/adr/ADR-0140-la-configurazione-claude-del-repo-arriva-anche-nei-thread.md)).
 - **Other agents / plain git users**: run `./scripts/install-git-hooks.sh`
   once; it installs a `post-merge` git hook that resyncs the mirrors after
   every `git pull` that touches `skills/`.

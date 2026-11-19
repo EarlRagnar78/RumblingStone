@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-19 | STATO-E-ORDINE | ADR-0139: la memoria corta ha un tetto di 12 KB misurato da… | indice riscritto a 11.255 byte senza perdere fatti (18 PR citate, tutte con voce; righe senza posto in coda); 4 test nuovi, 18 su 18 verdi; il controllo non pa… |
 | 2026-11-19 | AVVENTURE-COMMUNITY | Lettore del RAG per «chi sa cosa»: esito della prova da 7B sulla RTX 4050 del DM | `qwen2.5:7b` via Ollama sulla 4050, 636 risposte su 636 in circa 2 minuti (87% del modello in VRAM). Il criterio di ESITO.md non è raggiunto e il 7B non entra… |
 | 2026-11-19 | SISTEMI-DI-GIOCO-PLUGIN | `conformita_statblocchi`: il talento di una riga di variante non entra nei TS a… | ✅ test nuovo rosso su main, verde qui |
 | 2026-11-18 | AVVENTURE-COMMUNITY | Calendario di ARC-09: i «Mirtul» rimasti diventano «Flamerule» (scelta del DM d… | dopo la scelta del DM che il Giorno di Marcia 1 è il 1° Flamerule (la Torre cammina il 30 Flamerule), 31 «Mirtul» restavano in 9 file fuori dalla PR della cart… |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-18 | RICERCA-TOOL-LGM-2026 | §3.1, ricontrollo della carta del cielo chiesto dal DM. La carta mostrava la me… | Stella-chiave a 0,3 pixel dal centro del segno; quattro lanci di fila identici pixel per pixel, variante da stampa identica byte per byte. A mezzanotte del 30… |
 | 2026-11-18 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, ricontrollo di Incantesimi focalizzati (richiesta del DM del 18/11):… | ✅ |
 | 2026-11-18 | RIPRESA-PR-ABBANDONATE | D2, collaudo dell'arte del Drappo: quattro difetti dello script trovati al rico… | ✅ corretti prima che la prova giri sulla 4050: (1) due delle tre Gemini di serie (tavola-la-ruota, il-drappo) non si aprivano con Pillow per il blocco C2PA olt… |
-| 2026-11-18 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Prove sulla RTX 4050, ricontrollo chiesto dal DM il 18/11: corretti gli errori… | 🟡 sette errori corretti, nessuno visto girare su una GPU: (1) `immagini.sh --profilo cpu`, il comando della guida per il profilo leggero, non poteva partire: C… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 192 voci, l'ultima MS-0192 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 193 voci, l'ultima MS-0193 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

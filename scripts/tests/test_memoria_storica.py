@@ -168,5 +168,43 @@ class TestConfrontaMemoria(unittest.TestCase):
             self.assertEqual(r["note_citate"], 1)
 
 
+class TestTettoMemoria(unittest.TestCase):
+    """ADR-0139: la memoria del 2026-11-19 era a 16.878 byte; il tetto esce 1 prima del limite."""
+
+    def _mem(self, d: Path, testo: str) -> Path:
+        (d / "MEMORY.md").write_text(testo, encoding="utf-8")
+        return d
+
+    def test_sotto_e_sopra_il_tetto(self):
+        with tempfile.TemporaryDirectory() as t:
+            d = self._mem(Path(t), "- una regola\n")
+            self.assertEqual(ms.main(["--tetto-memoria", str(d)]), 0)
+            self._mem(d, "- riga lunga " + "x" * 200 + "\n" + "- corta\n" * 10)
+            buf = io.StringIO()
+            with redirect_stdout(buf):
+                self.assertEqual(ms.main(["--tetto-memoria", str(d), "--tetto", "100"]), 1)
+            self.assertIn("r.1 (", buf.getvalue())
+
+    def test_conta_byte_non_caratteri(self):
+        with tempfile.TemporaryDirectory() as t:
+            d = self._mem(Path(t), "è" * 60)  # 60 caratteri, 120 byte
+            r = ms.misura_memoria(d, tetto=100)
+            self.assertEqual(r["byte"], 120)
+            self.assertTrue(r["sopra_tetto"])
+            self.assertFalse(r["sopra_limite"])
+
+    def test_la_memoria_oltre_il_limite_lo_dice(self):
+        with tempfile.TemporaryDirectory() as t:
+            d = self._mem(Path(t), "x" * (ms.LIMITE_MEMORIA + 1))
+            buf = io.StringIO()
+            with redirect_stdout(buf):
+                self.assertEqual(ms.main(["--tetto-memoria", str(d)]), 1)
+            self.assertIn("OLTRE IL LIMITE", buf.getvalue())
+
+    def test_manca_memory_md(self):
+        with tempfile.TemporaryDirectory() as t:
+            self.assertEqual(ms.main(["--tetto-memoria", t]), 2)
+
+
 if __name__ == "__main__":
     unittest.main()

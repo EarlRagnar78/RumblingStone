@@ -2180,3 +2180,14 @@ repo scritto con altre parole.
 - **Testo:** il DM ha lanciato il kit sull'ASUS: `qwen2.5:7b` a 4 bit via Ollama, 636 risposte su 636 in circa 2 minuti. Il criterio fissato il 12/11 (90% di SÌ sulle domande giuste, al massimo 5% col PNG sbagliato, 70% di precisione su main) non è raggiunto. Il 7B dice SÌ a 499 candidati su 560 su main e a 78 domande su 79 sulle righe dei mutanti: li trova (21 su 25) perché dice SÌ quasi a tutto. Il RAG resta fuori dal verificatore
 - **Trovato nel repo:** `plans/esperimenti/grafo-eventi-2026-11-12/ESITO.md` · `plans/esperimenti/grafo-eventi-2026-11-12/misure/risposte-qwen2.5-7b.json` · `plans/esperimenti/grafo-eventi-2026-11-12/leggi_ollama.py`
 - **Solo qui:** le letture complete (`main-rag-7b.json`, `mut-rag-7b.json`) e l'archivio del kit stanno in `/mnt/project-files/prove-4050-risultati/2026-11-19/`, fuori dal repo. Le 302 righe segnalate su main non sono state lette una per una: sei prese a caso erano false. Il 3B sbagliava per troppi NO, il 7B per troppi SÌ; riprovare ha senso solo cambiando la domanda al lettore, e il 12B non sta nei 6 GB della 4050
+
+### MS-0193 · 2026-11-19 · La memoria corta passa il limite: il tetto di 12 KB diventa un controllo
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** ADR-0139
+- **Temi:** memoria memoria-storica cancello tetto processo
+- **Origine:** riga del 2026-11-19 «ADR-0139: la memoria corta ha un tetto» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha trovato l'indice della memoria delle sessioni a 16.878 byte, oltre il limite di 16.384, e ha chiesto perché la memoria storica non l'avesse evitato. Causa: ADR-0127 e ADR-0137 obbligano ad archiviare prima di togliere ma non a togliere, e nessun controllo misurava i byte; i thread chiudevano aggiungendo una riga «unita il …» invece di togliere la loro riga di stato (8 KB il 12/11, +8,8 KB in sette giorni). Indice riscritto a 11.255 byte dopo aver verificato che le 18 PR citate hanno tutte una voce; `memoria_storica.py --tetto-memoria DIR` esce 1 sopra i 12 KB e mostra le righe più lunghe, lanciato dalla routine del lunedì e dal coordinatore dopo ogni modifica dell'indice (scelta del DM sulla card del 19/11)
+- **Trovato nel repo:** `scripts/memoria_storica.py` · `scripts/tests/test_memoria_storica.py` · `plans/adr/ADR-0139-la-memoria-corta-ha-un-tetto-misurato.md`
+- **Solo qui:** le righe tolte senza un posto nel repo sono nella coda del thread («riportare-la-memoria-sotto-il-limite.md»): numerazione MS del 13/11 ormai superata, coda dei merge del 13/11, card sulle copie del booklet della serata forse superata da MS-0097 ma di chiusura non vista. Il controllo non parte da solo e non misura le note

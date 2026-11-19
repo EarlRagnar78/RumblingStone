@@ -2094,7 +2094,18 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `09_…/Immagini-Handout/carta-del-cielo/PROVENIENZA.txt` · handout 7 in `Arco-Post-Hammerfist-HANDOUTS.md` · A4 in `Arco-Post-Hammerfist-DOSSIER-DELLE-PISTE.md`
 - **Solo qui:** la voce è nata MS-0166 ed è diventata MS-0184 al riallineo su main 4588bc5f. Vicino all'ascensione retta giusta non c'è una stella alla declinazione di prima (38,9°): per questo cambiano anche la latitudine e il parallelo, che ora passa per l'angolo ovest del Sigillo e non più per l'Anello. I «circa nove gradi» del 22 del mese restano giusti: otto notti più il grado e mezzo che manca a mezzanotte esatta. Il primo lancio di Stellarium dopo aver copiato una cultura del cielo nuova differisce dai successivi di un livello di grigio in circa 1800 pixel, quasi tutti fuori dall'orizzonte; i quattro lanci dopo sono identici. Gli altri «Mirtul» di ARC-09 (HOOKS, INTEGRATION-MASTER, Cerimonia, Tempestas) non sono toccati qui: li prende il thread della coerenza della storia.
 
-### MS-0185 · 2026-11-18 · Kit 4050: sandbox Flatpak al primo giro, installazione interrotta al secondo
+### MS-0185 · 2026-11-18 · Le impronte rosse dal 14/11 erano dati, provato incrociando codice e dati
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** ADR-0111
+- **Temi:** impronte banco-invarianza regressione prova-incrociata audit indice piani
+- **Origine:** riga del 2026-11-18 «Correzioni dall'audit del 18/11» in `plans/CHANGELOG.md`
+- **Testo:** l'audit del 18/11 trovava `impronte.py --confronta` rosso su suggest_encounter, conformita_statblocchi e derive_statblocks dal 16/11, con le impronte ferme a 2f48498b (14/11). Prima di rigenerarle si è provato che il comportamento degli strumenti non è cambiato: due worktree incrociati, uno coi dati del 14/11 e i `*.py` di `scripts/` e `sistemi/` di main, l'altro coi dati di main e il codice del 14/11. Il primo ridà le impronte del 14/11, il secondo quelle di main, per 11 strumenti su 12. Il dodicesimo, validate_bestiario, è rosso in tutti e due perché `build_monster_catalog.py` tiene nel codice l'elenco dei nomi degli Eroi di Hammerfist, cambiati dal DM: il catalogo generato non torna se si mescolano codice e dati di date diverse. Su main non cambia. Le differenze dei tre rossi: catalogo da 390 a 392 voci (Ragnhild, Yrsa, Saraah, lo scheletro di leone crudele GS 7, Tyrgarun molto vecchio), una scheda in più verificabile, il corredo RC-001 dell'hobgoblin regolare.
+- **Trovato nel repo:** `plans/esperimenti/sistemi-plugin-2026-11-07/impronte.py` · `plans/esperimenti/sistemi-plugin-2026-11-07/IMPRONTE.json`
+- **Solo qui:** il metodo della prova (dati vecchi e codice nuovo, poi il contrario, con i file YAML e TSV di `scripts/` dalla parte dei dati) serve a ogni futura rigenerazione del banco. Residuo, non corretto qui perché è codice fuori dal perimetro: la scheda dell'hobgoblin regolare torna (Warrior 3 base Vol +1, Sag 9 −1, mantello della resistenza +1 = Vol +1), ma `conformita_statblocchi` (`talenti()`) legge anche la «Volontà di Ferro» della riga della variante «Combattente GS2» e si aspetta +3; lo conta fra gli «uguali alla fonte» con Vol +1≠3 (prima del corredo RC-001, +1≠2).
+
+### MS-0186 · 2026-11-18 · Kit 4050: sandbox Flatpak al primo giro, installazione interrotta al secondo
 
 - **Data:** 2026-11-18
 - **PR:** —

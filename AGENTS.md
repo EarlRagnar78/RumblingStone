@@ -329,7 +329,9 @@ r-btw. Gmail, Google Drive, Channel3, Clipkit, Mobbin, Microsoft Learn, MDN,
 Shutterstock, bioRxiv e pg-aiguide sono negati da `permissions.deny` di
 `.claude/settings.json`, che toglie i loro tool dal contesto (scelta del DM del
 2026-11-19, ADR-0140). Se un compito ne richiede uno, l'agente lo dice al DM,
-che lo riaccende con `/mcp` o togliendo la regola. Lo stesso vale per i plugin spenti a livello globale: un agente non
+che lo riaccende con `/mcp` o togliendo la regola. I plugin dell'account che il
+repo non ha mai usato sono spenti con `enabledPlugins: false`: restano accesi
+solo `pdf-viewer`, `review` e `tdd` (ADR-0140, punto 5). Lo stesso vale per i plugin spenti a livello globale: un agente non
 può accenderli da solo.
 
 ---

@@ -1,6 +1,6 @@
 # ADR-0140 — La configurazione Claude del repo arriva anche nei thread
 
-**Stato**: proposta (2026-11-19), in attesa della scelta del DM sulla card del thread «Applicare le best practice di Claude Code»
+**Stato**: accettata (2026-11-19), dopo la prova in un thread vero (sotto)
 **Data**: 2026-11-19
 **Decisione-fonte**: il DM (Jfs), 2026-11-19, chat di progetto: verificare quali best practice di Claude Code il repo usa, adottare quelle utili e misurare il miglioramento contro main.
 **Rapporti**: rende effettivi nei thread l'hook di [ADR-0030](ADR-0030-server-mcp-sui-tool.md) (server `rumblingstone-tools`), gli `skillOverrides` di `.claude/settings.json` e l'instradamento delle skill di [ADR-0041](ADR-0041-instradamento-delle-skill-con-un-gate.md). L'audit completo sta fuori dal repo, in `/mnt/project-files/best-practice-claude-code-2026-11-19/AUDIT.md`.
@@ -61,6 +61,16 @@ obiettivo.
    tool, 528 token in meno). Sui connettori di claude.ai la prova si può fare
    solo in un thread.
 
+5. **I plugin dell'account che il repo non ha mai usato** sono spenti solo
+   per questo progetto con `enabledPlugins: false` (scelta del DM del
+   2026-11-19: «lascia i plugin che sono stati usati nel repo davvero nello
+   storico»). Restano accesi `pdf-viewer`, `review` e `tdd`, gli unici con una
+   prova nello storico: li ha accesi apposta la PR #205 (riga del 2026-10-02
+   di `plans/CHANGELOG.md`). Per gli altri 29 né commit, né changelog, né
+   memoria storica, né i file del progetto mostrano un uso; `engineering`,
+   `docs` e `reflexion` compaiono solo come skill «solo nome» nella stessa
+   PR, che è configurazione e non uso.
+
 ## Le conseguenze
 
 **Misura contro main** (Claude Code 2.1.328 in modalità `-p`, stessa
@@ -86,11 +96,17 @@ che il progetto non usa: spegnerli, a mano del DM, vale molto di più di questi
 **Prova in un thread vero.** Il 2026-11-19 lo script è stato lanciato a mano
 in `/home/user` dentro il thread che ha scritto questo ADR. Appena il
 `settings.json` generato ha ricevuto le regole `deny`, il thread ha perso i
-tool di Gmail, Google Drive, Channel3, Clipkit, Mobbin, Microsoft Learn, MDN,
-Shutterstock, bioRxiv e pg-aiguide: il runtime dei thread legge le
-impostazioni di `/home/user/.claude/`. Restano da vedere in un thread nuovo,
-dopo il merge, l'hook SessionStart e `rumblingstone-tools`, che partono solo
-all'avvio. Lo stato passa ad «accettata» con quella misura.
+tool dei dieci connettori; al riavvio successivo della sessione l'hook
+SessionStart è girato (stato `ok 916ed032 2026-11-19T06:47:01Z`) e
+`rumblingstone-tools` si è connesso. Il runtime dei thread legge quindi
+`/home/user/.claude/` e `/home/user/.mcp.json`.
+
+**Plugin spenti** (`claude -p` dalla cartella del clone dopo lo script, main
+contro ramo): plugin da 36 a 7, server MCP da 102 a 2 (quelli che falliscono
+all'avvio da 95 a 0), skill da 257 a 73, contesto iniziale da 59.670 a 53.965
+token (−5.705, −9,6%). Rispetto alla cartella senza nessuna configurazione
+(56.602 token) il saldo è −2.637 token, con i tool e le skill del repo
+presenti.
 
 **Test**: `scripts/tests/test_claude_progetto.py` (file scritti, percorsi che
 esistono, JSON validi, file altrui non toccati, rilancio idempotente, repo come

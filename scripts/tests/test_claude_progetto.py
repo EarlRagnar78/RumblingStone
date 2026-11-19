@@ -41,7 +41,8 @@ class TestClaudeProgetto(unittest.TestCase):
     def test_scrive_i_tre_file_con_percorsi_che_esistono(self) -> None:
         self.lancia()
         claude_md = (self.tmp / "CLAUDE.md").read_text(encoding="utf-8")
-        self.assertIn("Repo Con Spazio/AGENTS.md", claude_md)
+        self.assertIn("Repo Con Spazio/.claude/rules/", claude_md)
+        self.assertIn("fase1.py", claude_md)
         self.assertLessEqual(len(claude_md.splitlines()), 10, "il CLAUDE.md resta corto (ADR-0140)")
         self.assertNotIn("@", claude_md, "rimanda, non incorpora")
 

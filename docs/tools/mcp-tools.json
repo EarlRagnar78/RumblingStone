@@ -4653,6 +4653,35 @@
       "deterministic": true
     },
     {
+      "name": "regole_claude",
+      "description": "«Ho modificato AGENTS.md: le regole di Claude Code sono ancora allineate?»\n\nRicava da AGENTS.md le regole .claude/rules/rs-*.md di Claude Code, ognuna caricata solo con i file a cui serve (ADR-0141).",
+      "use_case": "«Ho modificato AGENTS.md: le regole di Claude Code sono ancora allineate?»",
+      "invocation": "python3 scripts/regole_claude.py [--check | --misura]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 se .claude/rules/ non è allineata ad AGENTS.md."
+          },
+          "misura": {
+            "type": "boolean",
+            "description": "Caratteri caricati per compito tipo, contro AGENTS.md intero."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        ".claude/rules/rs-*.md"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "regole non allineate (--check)"
+      },
+      "deterministic": true
+    },
+    {
       "name": "release_notes",
       "description": "«Ho corretto una riga del CHANGELOG di una versione già rilasciata: come arriva al rilascio?»\n\nLe note di rilascio vengono dalla sezione del CHANGELOG.md di progetto (ADR-0100): `notes` la stampa, `sync` riscrive con gh le note pubblicate che non corrispondono più, lasciando il blocco delle impronte.",
       "use_case": "«Ho corretto una riga del CHANGELOG di una versione già rilasciata: come arriva al rilascio?»",

@@ -1700,7 +1700,7 @@ prima non è sulla carta di Nala, la seconda c'è).
   come l'ordine del round). Mentre canta può muoversi e attaccare, ma non
   lanciare: *Immagine speculare* su di sé costa il canto di quel round, e
   si lancia prima del round 2 se il suo giocatore lo chiede nel «prima».
-  Il suo furtivo +3d6 sui bugbear **non vale fiancheggiandoli**: hanno
+  Il suo furtivo +1d6 sui bugbear **non vale fiancheggiandoli**: hanno
   schivare prodigioso migliorato (Ladro e Assassino insieme, SRD), e si
   fiancheggiano solo da un ladro di quattro livelli più alto. Vale se il
   bugbear è colto alla sprovvista o non la vede.
@@ -1968,7 +1968,7 @@ in `ARC08-15`.
 | **Borin** | 142 | 25 | +6 | +13 | +8 | **+21** | Colpo Devastante 3/giorno (+4d6); Postura Difensiva (For 24, +26 pf); Presenza Comandante (+2 ai TS entro 9 m) |
 | **Dara** | 102 | 21 | +14 | +12 | +9 | **+19** (+25 orchi, +23 giganti, +21 draghi) | Tiro Rapido; *grazia del gatto* (+21, Riflessi +16); Comando Balestrieri |
 | **Harbek** | 114 | 22 | +7 | +13 | +16 | **+14** | *guarigione*, *barriera di lame*, *pelle di pietra*, *colpo infuocato*, *protezione dall'energia*, *preghiera*, *rianimare morti* |
-| **Nala** | 90 | 20 | +13 | +8 | +11 | **+13** | Ispirare Coraggio; *velocità*; *immagine silenziosa*; *immagine speculare*; furtivo +3d6 |
+| **Nala** | 90 | 20 | +14 | +7 | +9 | **+13** | Ispirare Coraggio; *velocità*; *immagine silenziosa*; *immagine speculare*; furtivo +1d6 |
 
 <!-- /pagina -->
 

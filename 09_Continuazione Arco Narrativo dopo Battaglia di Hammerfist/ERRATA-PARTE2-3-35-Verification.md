@@ -89,7 +89,7 @@ lista di buff pre-cast con **durate esplicite** e **2 effetti a innesco**. CR sa
        → durante *righteous might*: taglia Grande, CA 27 (−1 taglia, +2 nat), contatto 13
 - BAB / Lotta: +13 / +18 (Str 20 ; +19 sotto righteous might, taglia Grande)
 - TS: Temp +15, Rif +7, Vol +15  [+2 dai livelli di chierico in più]
-- Caratteristiche: For 20, Des 12, Cos 18, Int 12, Sag 20, Car 16
+- Caratteristiche: For 20, Des 12, Cos 18, Int 12, Sag 22 (pietra ioun sfera blu, +2), Car 16  [fino al 2026-11-19 Sag 20: le CD sotto erano già quelle di Sag 22, come la scheda viva `Bestiario/villain/Azarr_Kul/azarr-kul-final-cr17.md`; scelta del DM sulla card del 2026-11-19]
 
 **Attacco:**
 - Spadone sacrificale +2 +21/+16/+11 (2d6+9, 19-20/×2; +2d6 vs buoni)

@@ -386,8 +386,10 @@ Il vortice minaccia di implodere (6 m di diametro).
 - **Attacchi speciali**: scacciare non morti 6/giorno (+3, 2d6+15, 12° livello)
 - **Incantesimi da chierico** (LI 12°):
   - 6° (2+1): *ferire critico* (CD 21), *guarigione*, *dissolvi magie superiore*
-  - 5° (3+1): *ferire grave* (CD 20), *marchio della giustizia*, *spezzare
-    incantamento*, *comando superiore*
+  - 5° (4+1): *ferire grave* (CD 20), *marchio della giustizia*, *spezzare
+    incantamento*, *comando superiore*, *colpo infuocato* (CD 20) ⚠️ il PDF
+    dice 3+1; chierico 12 con Sag 20 ha 3 slot dalla tabella SRD più 1 bonus
+    (scelta del DM sulla card del 2026-11-19)
   - 4° (4+1): *veleno* (CD 19), *libertà di movimento*, *protezione
     dall'energia*, *ferire moderato* ×2
   - 3° (5+1): *dissolvi magie*, *luce dell'alba*, *cecità/sordità* ×2,

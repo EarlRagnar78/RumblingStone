@@ -360,7 +360,8 @@ SE Seedlings piantati:
 - **Spells:** CL 8th (DC 14 + spell level)
 
 **Prepared Spells:**
-- **4th (3):** *Flame Strike* (DC 18, 8d6 half fire/half divine), *Divine Power*, *Freedom of Movement*
+- **4th (3):** *Poison* (DC 18, 1d10 Con, 1d10 Con a minute later), *Divine Power*, *Freedom of Movement*
+<!-- storico: fino al 2026-11-19 al 4° c'era Flame Strike, che è di 5° e un chierico 8 non lancia (scelta del DM sulla card del 2026-11-19) -->
 - **3rd (4):** *Dispel Magic*, *Searing Light* (+7 ranged touch, 8d8 vs undead), *Prayer*, *Invisibility Purge*
 - **2nd (5):** *Hold Person* (DC 16), *Spiritual Weapon*, *Bull's Strength* ×2, *Silence*
 - **1st (6):** *Bane*, *Bless*, *Divine Favor* ×2, *Shield of Faith* ×2

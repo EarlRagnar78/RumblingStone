@@ -85,7 +85,7 @@ valori in `07_.../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`).
 
 > ⚠️ **Superata nei numeri.** Le quattro schede sono state ricontate:
 > Borin CA 25 e +21/+16/+11; Dara CA 21, 102 pf e +19/+14/+9; Harbek 114 pf,
-> martello +14, Scacciare 10/giorno e slot da chierico di 12°; Nala CA 20, 90
+> martello +14, Scacciare 9/giorno (10 fino al 2026-11-19, Car 15 per Int 13) e slot da chierico di 12°; Nala CA 20, 90
 > pf e stocco 15-20. Le note di verifica degli statblock completi stanno in
 > ARC08-01, sotto ciascuna scheda.
 
@@ -98,7 +98,7 @@ tavolo (D6: i giocatori le usano direttamente):
 | **Borin Giuraferro** | Guerriero 10/Campione Nanico 3 | 13 | BAB +13, attacco +20/+15/+10 col Martello +2 coerente (Str 20). Colpo Devastante e Postura Difensiva = rese semplificate di talenti/abilità Dwarven Defender-like, ok per quick-ref |
 | **Dara Occhiolesto** | Ranger 8/Esploratrice dei Picchi 4 | 12 | Nemico Prescelto Orchi +6/Giganti +4/Draghi +2 coerente con progressione Ranger; Tiro Rapido/Multiplo ok |
 | **Harbek Runaforte** | Chierico 9/Sacerdote delle Rune 3 | 12 | Domini Guerra/Terra, Scacciare 7/giorno, incantesimi di guarigione coerenti col livello effettivo di incantatore |
-| **Nala Cantapietre** | Bardo 8/Spia Maestra 4 | 12 | Ispirare Coraggio +2, Attacco Furtivo +3d6, *Velocità* al 3° liv coerenti |
+| **Nala Cantapietre** | Bardo 8/Spia Maestra 4 | 12 | Ispirare Coraggio +2, Attacco Furtivo +1d6 (Spymaster 4, corretto il 2026-11-19), *Velocità* al 3° liv coerenti |
 
 **Nessun 5e-ismo** nelle schede (verifica `grep`: 0 occorrenze di azione
 bonus/vantaggio/reazione/CMB). Le rese "abilità principali" sono

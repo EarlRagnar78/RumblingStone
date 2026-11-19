@@ -6,7 +6,7 @@ SRD 3.5, tabelle delle classi e «Table: Ability Modifiers and Bonus Spells»:
 * gli **incantesimi al giorno** di un livello sono la cella della tabella della
   classe al livello d'incantatore, più gli incantesimi bonus della
   caratteristica (dal 1° livello in su), più lo slot di dominio del chierico
-  (dal 1° in su) e lo slot di scuola del mago specialista;
+  (dal 1° in su) e lo slot di scuola del mago specialista (nel 3.5 anche al 0);
 * una cella «—» vuol dire che la classe a quel livello non lancia; uno 0 che
   lancia solo gli incantesimi bonus;
 * per lanciare un incantesimo di livello L serve la caratteristica a 10 + L;
@@ -87,7 +87,10 @@ def al_giorno(nome: str, livello_classe: int, punteggio: int, sistema: str = "dn
         if base < 0 or punteggio < serve(liv):
             fuori.append((0, 0))
             continue
-        extra = 1 if liv >= 1 and (c.get("slot_di_dominio") or specialista) else 0
+        # lo slot di scuola: nell'SRD 3.5 «per spell level», anche lo 0 (card del DM del
+        # 2026-11-19); nel PRD «from 1st on up». Lo slot di dominio parte dal 1°.
+        extra = 1 if ((liv >= 1 and c.get("slot_di_dominio"))
+                      or (specialista and (liv >= 1 or sistema == "dnd35"))) else 0
         fuori.append((base + bonus(m, liv), extra))
     while fuori and sum(fuori[-1]) <= 0:
         fuori.pop()

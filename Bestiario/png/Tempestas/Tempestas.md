@@ -11,7 +11,7 @@ ca: 20
 ca-dettaglio: contatto 14, colto alla sprovvista 17 (+6 giaco di maglia +2, +3 Des, +1 deviazione)
 pf: 91
 pf-dado: 14d6+42
-ts: Temp +7, Rifl +13, Vol +13
+ts: Temp +7, Rifl +16, Vol +13
 attributi: For 12 Des 16 Cos 16 Int 18 Sag 14 Car 22
 velocita: 9 m
 iniziativa: +7
@@ -217,8 +217,9 @@ Tempestas, prima di partire (mattina del Giorno 22), lascia ai PG una piccola fi
 **Classe Armatura:** 20 (10 base, +3 Des, +6 giaco di maglia +2, +1 deviazione [anello])
 *Contatto 14 / Colto alla sprovvista 17*
 
-**Tiri Salvezza:** Tempra +7, Riflessi +13, Volontà +13 (+2 contro ammaliamento, immune al *sonno* magico, per il sangue elfico)
-*Base: bardo 12 Temp +4, Rifl +8, Vol +8; Cantore delle tempeste 2 Vol +3 `[Private source — Frostburn, non verificato]`; Riflessi Fulminei +2.*
+**Tiri Salvezza:** Tempra +7, Riflessi +16, Volontà +13 (+2 contro ammaliamento, immune al *sonno* magico, per il sangue elfico)
+*Base: bardo 12 Temp +4, Rifl +8, Vol +8; Cantore delle tempeste 2 Temp +0, Rifl +3, Vol +3 `[Private source — Frostburn, p. 70, verificato su dnd.arkalseif.info il 2026-11-19]`; Riflessi Fulminei +2.*
+<!-- storico: fino al 2026-11-19 Riflessi +13, senza il +3 del Cantore delle tempeste, che ha Riflessi e Volontà buoni -->
 
 **RI:** —
 
@@ -228,22 +229,28 @@ Tempestas, prima di partire (mattina del Giorno 22), lascia ai PG una piccola fi
 - Spada corta +1 +12/+7 (1d6+2, 19–20/×2)
 - Lira della Tempesta come bastone (raro): +11/+6 (1d6+1)
 
-> ⚠ Prerequisito: l'**Arcimago** chiede incantesimi arcani di 7° livello, Sapienza Magica e Conoscenze (arcane) 15 gradi, Abilità Focalizzata (Sapienza Magica) e Incantesimi Focalizzati in due scuole. Un bardo non lancia oltre il 6°: la classe non si può prendere mai. Al suo posto c'è il **Cantore delle tempeste** di *Frostburn*, la classe di prestigio dei bardi che portano la tempesta nella musica. I suoi privilegi non sono nel repo: dove la scheda non li dice, i numeri sono quelli che aveva l'Arcimago (DV, BAB, TS, avanzamento degli incantesimi) `[Private source — Frostburn, non verificato]`. Le due Arcane Supreme che aveva restano (sotto), per non togliergli potere.
+> ⚠ Prerequisito: l'**Arcimago** chiede incantesimi arcani di 7° livello, Sapienza Magica e Conoscenze (arcane) 15 gradi, Abilità Focalizzata (Sapienza Magica) e Incantesimi Focalizzati in due scuole. Un bardo non lancia oltre il 6°: la classe non si può prendere mai. Al suo posto c'è il **Cantore delle tempeste** di *Frostburn*, la classe di prestigio dei bardi che portano la tempesta nella musica. Requisiti e privilegi verificati su dnd.arkalseif.info il 2026-11-19 `[Private source — Frostburn, p. 70]`: d6, BAB +1, Temp +0, Rifl +3, Vol +3 al 2°, un livello d'incantatore da bardo a ogni livello, canto della tempesta e Stormpower (sotto); chiede Concentrazione 8, Conoscenze (arcane) 8, (geografia) 4, (natura) 4, Esibirsi 8, Sapienza Magica 4, Vocazione Magica, Magia della Tempesta e la musica bardica.
 > PF1e: archetipo *Thundercaller* del bardo (Advanced Player's Guide) — si avvicina a metà: fa della musica un tuono che ferisce e assorda, che è il lato «suono» della classe, ma non ha vento né fulmine e si paga con poteri del bardo base invece che con due livelli di prestigio. Non stravolge l'intento, non lo copre tutto.
 
 ### CAPACITÀ SPECIALI
 
 #### Musica bardica (14/giorno)
-Un uso per livello da bardo e da Cantore. **Ispirare Coraggio** (Sop): +3 morale ai TS contro charme e paura e +3 morale ai tiri per colpire e ai danni con le armi, per tutti gli alleati che lo sentono, finché suona e per 5 round dopo. Ha anche controcanto, affascinare, ispirare competenza, suggestione (CD 22), ispirare grandezza e canzone della libertà. ⚠ **Non verificato sull'SRD** (DM 2026-10-18, vince la versione più forte): i livelli da Cantore delle tempeste si sommano a quelli da bardo per la musica `[Private source — Frostburn]`, come scriveva l'arco 08, e danno 14 usi e Ispirare Coraggio +3, che nell'SRD arriva al 14° da bardo. Col solo conto SRD sarebbero 12 usi e +2.
+Un uso per livello da bardo e da Cantore. **Ispirare Coraggio** (Sop): +2 morale ai TS contro charme e paura e +2 morale ai tiri per colpire e ai danni con le armi, per tutti gli alleati che lo sentono, finché suona e per 5 round dopo. Ha anche controcanto, affascinare, ispirare competenza, suggestione (CD 22), ispirare grandezza e canzone della libertà. I livelli da Cantore delle tempeste si sommano a quelli da bardo solo per il numero di usi della musica (*Frostburn* p. 70, verificato su dnd.arkalseif.info il 2026-11-19): 14 usi, e Ispirare Coraggio +2 come un bardo di 12°.
+<!-- storico: fino al 2026-11-19 Ispirare Coraggio +3 (canone del DM del 2026-10-18, quando la regola del Cantore non era nota); scelta del DM sulla card del 2026-11-19 -->
 
 #### Cantata della Tempesta Tonante (Sop) — *firma personale*
 1/incontro, azione di round completo. Tempestas suona un canto fra le note: tutti gli alleati entro 18 m ottengono **+2 morale ad attacchi/danni/TS** per 10 round. Inoltre, tutte le creature ostili entro 18 m subiscono **2d6 danni elettrici** all'inizio del proprio turno per i primi 3 round (Riflessi CD 23 per metà: 10 + metà dei DV + Car; **bersagli con armatura metallica subiscono 1d6 extra**). È la firma personale di Tempestas, non un privilegio della classe: un altro Cantore delle tempeste non la ha (DM 2026-10-18).
 
-#### Suggestione di Massa (Mag)
-1/giorno, come *suggestione di massa* (incantatore di 14° livello). CD 21 Volontà.
+#### Canto della tempesta (Cantore delle tempeste 2)
+- **Folata di vento** (Mag): con un uso di musica bardica, come *folata di vento*; LI pari ai gradi in Esibirsi (canto), 15. Chiede almeno 9 gradi.
+- **Stormpower** (Str): +2 a Esibirsi (canto) per i canti della tempesta, e +2 al LI dei canti della tempesta al freddo (4 °C o meno) o dentro una tempesta: LI 17.
+- Avverte una tempesta naturale 24 ore prima che arrivi.
+
+`[Private source — Frostburn, p. 70]`, verificato su dnd.arkalseif.info il 2026-11-19. Il *colpo di tuono* arriva al 3° livello da Cantore: Tempestas non l'ha.
+<!-- storico: fino al 2026-11-19 qui stava «Suggestione di Massa (Mag) 1/giorno, CD 21», ereditata dall'Arcimago; resta fra gli incantesimi conosciuti di 5° (scelta del DM sulla card del 2026-11-19) -->
 
 #### Incantesimi Conosciuti (bardo, incantatore di 14° livello, CD = 16+liv)
-Il Cantore delle tempeste avanza gli incantesimi del bardo a ogni livello `[Private source — Frostburn, non verificato]`, quindi conosce e lancia come un bardo di 14°: **al giorno 4/5/5/4/4/2** (Carisma 22 compreso), **conosciuti 6/4/4/4/4/3**.
+Il Cantore delle tempeste avanza gli incantesimi del bardo a ogni livello `[Private source — Frostburn, p. 70, verificato su dnd.arkalseif.info il 2026-11-19]`, quindi conosce e lancia come un bardo di 14°: **al giorno 4/5/5/4/4/2** (Carisma 22 compreso), **conosciuti 6/4/4/4/4/3**.
 - Liv 0: *Individuazione del magico, Lettura del magico, Luce, Mano magica, Prestidigitazione, Aprire/Chiudere*
 - Liv 1: *Cura ferite leggere, Charme su persone, Risata incontenibile, Sonno*
 - Liv 2: *Polvere luccicante, Eroismo, Invisibilità, Esplosione sonora*
@@ -252,19 +259,18 @@ Il Cantore delle tempeste avanza gli incantesimi del bardo a ogni livello `[Priv
 - Liv 5: *Passo nelle ombre, Cura ferite leggere di massa, Suggestione di massa*
 - Fuori dal numero dei conosciuti, portati come oggetti perché la scheda li aveva fra i suoi incantesimi: *bacchetta di suggestione* (CD 13), *pergamene di identificare* e *di lingua ammaliatrice* I conosciuti in tutto restano 25, come prima.
 
-#### Arcane Supreme conservate (dall'Arcimago 2)
-- **Maestria del Controincantesimo** — può preparare un controincantesimo come azione veloce 1/giorno.
-- **Potere Magico +1** — +1 al livello dell'incantatore per le variabili che ne dipendono (danni, durata, gittata) e per le prove di livello dell'incantatore. Non alza le CD.
-
-Non sono privilegi del Cantore delle tempeste: restano perché la scheda le aveva e si sommano ai privilegi veri della classe, che sono più deboli (canone del DM 2026-10-18).
+<!-- storico: fino al 2026-11-19 la scheda teneva due Arcane Supreme dell'Arcimago 2 (Maestria del Controincantesimo 1/giorno, Potere Magico +1 al LI), canone del DM del 2026-10-18 quando i privilegi del Cantore non erano noti. Tolte con la scelta del DM sulla card del 2026-11-19: i privilegi veri sono nel paragrafo «Canto della tempesta» -->
 
 #### Talenti
-Iniziativa Migliorata, Incantare in Combattimento, Negoziatore (+2 Diplomazia/Percepire Intenzioni), Riflessi Fulminei, Abilità Focalizzata (Conoscenze locali). Cinque, quanti ne dà un personaggio di 14° livello.
+Iniziativa Migliorata, Incantare in Combattimento, Riflessi Fulminei, Vocazione Magica (*Magical Aptitude*), Magia della Tempesta (*Storm Magic*) `[Private source — Frostburn]`. Cinque, quanti ne dà un personaggio di 14° livello. Gli ultimi due sono i talenti che il Cantore delle tempeste richiede (Frostburn p. 70, riscontrato su dnd.arkalseif.info il 2026-11-19).
+<!-- storico: fino al 2026-11-19 Negoziatore (+2 Diplomazia/Percepire Intenzioni) e Abilità Focalizzata (Conoscenze locali) al posto dei due talenti richiesti (scelta del DM sulla card del 2026-11-19) -->
 
 #### Abilità chiave
-Diplomazia +24, Conoscenze (Locali, Storia, Geografia, Nobiltà, Religione) +14 ciascuna, Sapienza Magica +18, Percepire Intenzioni +12, Esibirsi (lira/canto) +21, Bluff +18, Camuffare +14, Raccogliere Informazioni +20.
+Diplomazia +22, Conoscenze (Storia, Geografia) +14 ciascuna, Conoscenze (Arcane) +12, Conoscenze (Natura) +8, Conoscenze (Locali) +11, Concentrazione +11, Sapienza Magica +22, Percepire Intenzioni +10, Esibirsi (lira/canto) +21, Bluff +18, Camuffare +14, Raccogliere Informazioni +20.
+<!-- storico: fino al 2026-11-19 Diplomazia +24, Percepire Intenzioni +12, Conoscenze (Locali) +14 e Sapienza Magica +18: via Negoziatore (+2, +2) e Abilità Focalizzata (+3), dentro Vocazione Magica (+2 a Sapienza Magica) -->
+<!-- storico: fino al 2026-11-19 Conoscenze (Nobiltà) e (Religione) +14 con 10 gradi ciascuna; i 20 gradi passano a Concentrazione 8, Conoscenze (Arcane) 8 e (Natura) 4, prerequisiti del Cantore delle tempeste (Frostburn p. 70); le Arcane danno +2 di sinergia a Sapienza Magica (scelta del DM sulla card del 2026-11-19) -->
 
-Benchmark: PF T1-1 riga 14: CA 20 vs 29 (9 sotto) / pf 91 vs 200 (molto sotto) / atk +12 vs +23 (molto sotto) / CD 21 di 5° vs 22 (1 sotto) / TS buoni +13 vs +17. È un incantatore di supporto: il GS 14 viene dai livelli di classe, e la scheda lo vuole fragile (§Vulnerabilità).
+Benchmark: PF T1-1 riga 14: CA 20 vs 29 (9 sotto) / pf 91 vs 200 (molto sotto) / atk +12 vs +23 (molto sotto) / CD 21 di 5° vs 22 (1 sotto) / TS buoni +16 vs +17. È un incantatore di supporto: il GS 14 viene dai livelli di classe, e la scheda lo vuole fragile (§Vulnerabilità).
 
 ## Esiti possibili
 
@@ -316,7 +322,7 @@ Benchmark: PF T1-1 riga 14: CA 20 vs 29 (9 sotto) / pf 91 vs 200 (molto sotto) /
 
 ### Classi e regole fuori dall'SRD
 
-- **Cantore delle tempeste** (*Stormsinger*) `[Private source — Frostburn]`: scelto al posto dell'Arcimago, che un bardo non può prendere (§In combattimento, il riquadro del prerequisito). I suoi privilegi non sono nel repo e la scheda li tiene come li dava l'Arcimago `[Private source — Frostburn, non verificato]`.
+- **Cantore delle tempeste** (*Stormsinger*) `[Private source — Frostburn]`: scelto al posto dell'Arcimago, che un bardo non può prendere (§In combattimento, il riquadro del prerequisito). Privilegi veri dal 2026-11-19 (card del DM): canto della tempesta e Stormpower, verificati su dnd.arkalseif.info.
 - **Il Signore delle Tempeste di *Faiths and Pantheons*** (*Stormlord*) `[Private source — Faiths and Pantheons]` è stato considerato per primo, perché è la classe di prestigio forgottiana delle tempeste. Non regge: chiede di essere incantatore **divino** e servo di **Talos**, il dio caotico malvagio delle tempeste. Tempestas è un bardo, quindi arcano, neutrale buono, e lavora per il Consiglio di Rethmar; per prenderla dovrebbe cambiare classe, dio e allineamento.
 - **PF1e**: l'archetipo *Thundercaller* del bardo (Advanced Player's Guide) si avvicina a metà (§In combattimento). Segnalato, non applicato.
 - **Allineamento**: la scheda dell'arco 08 lo dava caotico neutrale; qui resta neutrale buono, come lo registrano la scheda e lo stato della campagna, e l'arco ora dice lo stesso.

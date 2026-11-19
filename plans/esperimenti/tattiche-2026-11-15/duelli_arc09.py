@@ -111,7 +111,7 @@ def duello_xalthor(politica: str, max_round: int = 15):
     volonta    esplosione a volontà (scelta del DM del 15/11), stessa condotta.
     schema     a volontà; ma il suo obiettivo è convincere Tordek ad aprire il
                portale (Bestiario, §L'obiettivo reale): su Tordek stordito non
-               estrae il cervello, usa *suggestione* (Vol CD 20) ogni round.
+               estrae il cervello, usa *suggestione* (Vol CD 16, scelta del DM del 19/11) ogni round.
     """
     T = tordek()
     tp, xp = T["pf"], 96
@@ -123,7 +123,7 @@ def duello_xalthor(politica: str, max_round: int = 15):
         # --- Xal'thor
         if stordito > 0:
             if politica == "schema":
-                if not ts(T["vol"], 20):
+                if not ts(T["vol"], 16):
                     return "Tordek convinto", rnd, tp
             elif afferrato:
                 if not ts(T["temp"], 20):

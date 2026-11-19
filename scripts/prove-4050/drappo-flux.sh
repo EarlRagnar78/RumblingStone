@@ -9,6 +9,7 @@
 # Le immagini del modulo non vengono toccate: tutto finisce in $PROVE_DIR/<giorno>/drappo-flux/.
 set -euo pipefail
 . "$(dirname "${BASH_SOURCE[0]}")/comune.sh"
+rs_registra drappo-flux "$@"; trap 'rs_fine_registro $?' EXIT   # log in $RIS/log (comune.sh)
 SOLO="ritratto-vanna,tavola-la-ruota,il-drappo"; SEMI=2
 while [ $# -gt 0 ]; do
   case "$1" in

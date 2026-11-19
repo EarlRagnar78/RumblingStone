@@ -3,6 +3,7 @@
 # Scrive $PROVE_DIR/<giorno>/macchina.txt e esce 1 se manca qualcosa di bloccante.
 set -uo pipefail
 . "$(dirname "${BASH_SOURCE[0]}")/comune.sh"
+rs_registra controlla "$@"; trap 'rs_fine_registro $?' EXIT   # log in $RIS/log (comune.sh)
 mkdir -p "$RIS"
 OUT="$RIS/macchina.txt"; : > "$OUT"
 bloccanti=0

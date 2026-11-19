@@ -2223,3 +2223,14 @@ repo scritto con altre parole.
 - **Testo:** subito dopo la #487 il DM ha chiesto se non avesse senso tenere i plugin delle tecniche di sviluppo. Nessuna prova d'uso nello storico (commit, file del progetto), consigliato lasciarli spenti; il DM ha scelto sulla card di riaccendere tutti e nove: `sdd`, `sadd`, `engineering`, `reflexion`, `docs`, `fpf`, `ddd`, `recursive-decomposition`, `mcp`. Costo misurato con `claude -p`: contesto da 54.372 a 56.719 token (+4,3%), 42 skill in più, 10 server MCP di `engineering` che nel container falliscono o chiedono l'accesso
 - **Trovato nel repo:** `.claude/settings.json` (`enabledPlugins`) · `plans/adr/ADR-0140-la-configurazione-claude-del-repo-arriva-anche-nei-thread.md` punto 5
 - **Solo qui:** misurando si è visto che un container partito prima di un merge tiene la copia vecchia di `/home/user/.claude/settings.json` finché non si rilancia `scripts/claude-progetto.sh`; i thread nuovi la rigenerano all'avvio
+
+### MS-0197 · 2026-11-19 · Le regole di AGENTS.md arrivano con i file
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** ADR-0141
+- **Temi:** claude-code contesto token rules agents-md progressive-disclosure decisione-dm thread
+- **Origine:** riga del 2026-11-19 «ADR-0141: le regole di AGENTS.md arrivano a Claude con i file a cui servono» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha scelto sulla card le regole a percorso. Provato che `.claude/rules/` del repo si carica anche quando Claude parte nella cartella che contiene il clone, e che una regola con `paths:` entra solo con i suoi file. AGENTS.md resta la fonte; `regole_claude.py` ne ricava cinque regole e `--check` le tiene allineate. Nella prima prova senza la riga di `fase1.py` nel CLAUDE.md l'agente non lanciava `fase1.py`, perché le regole arrivano dopo il primo file letto: la riga è rimasta nel CLAUDE.md. Il DM aveva chiesto anche di un grafo a eventi o di un RAG per le istruzioni: scartati perché non deterministici (MS-0192 per la prova del RAG sui contenuti)
+- **Trovato nel repo:** `scripts/regole_claude.py` · `.claude/rules/rs-*.md` · `plans/adr/ADR-0141-le-regole-di-agents-arrivano-con-i-file.md`
+- **Solo qui:** il nucleo resta il 55% di AGENTS.md; ridurlo vuol dire riscrivere AGENTS.md. Le misure con `claude -p` sono una corsa per lato

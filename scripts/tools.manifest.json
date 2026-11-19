@@ -4426,6 +4426,72 @@
       ]
     },
     {
+      "id": "regole-claude",
+      "path": "scripts/regole_claude.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/regole_claude.py [--check | --misura]",
+      "summary": "Ricava da AGENTS.md le regole .claude/rules/rs-*.md di Claude Code, ognuna caricata solo con i file a cui serve (ADR-0141).",
+      "use_case": "«Ho modificato AGENTS.md: le regole di Claude Code sono ancora allineate?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se .claude/rules/ non è allineata ad AGENTS.md."
+        },
+        {
+          "name": "--misura",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Caratteri caricati per compito tipo, contro AGENTS.md intero."
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "path": ".claude/rules/rs-*.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "regole non allineate (--check)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": null,
+      "tests": [
+        "scripts/tests/test_claude_progetto.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0140-la-configurazione-claude-del-repo-arriva-anche-nei-thread.md"
+      ]
+    },
+    {
       "id": "avvia_languagetool",
       "path": "scripts/avvia_languagetool.sh",
       "category": "G-orchestration-governance",

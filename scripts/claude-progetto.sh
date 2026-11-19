@@ -44,7 +44,8 @@ if scrivibile "${DEST}/CLAUDE.md"; then
 # Cartella di lavoro: il repository è in \`${REL}/\`
 
 - Lavora dentro \`${REL}/\`: i comandi del repo partono da lì.
-- Prima di toccare campagna, skill, script o booklet leggi \`${REL}/AGENTS.md\`: instradamento delle skill e regole d'oro.
+- Le regole di \`${REL}/AGENTS.md\` (instradamento delle skill, regole d'oro) arrivano da sole da \`${REL}/.claude/rules/\` quando apri un file del repo, ognuna sui file a cui serve (ADR-0141): non serve leggere AGENTS.md intero.
+- Prima di modificare qualunque file del repo: \`python3 scripts/fase1.py <bersagli>\` (regola G6), anche se le regole non sono ancora arrivate.
 - Per riprendere un lavoro: \`${REL}/MEMORIA.md\`. Per la storia di una scelta: \`python3 scripts/memoria_storica.py --tema T\` (dal repo).
 - I tool del DM sono nel server MCP \`rumblingstone-tools\` (sola lettura, ADR-0030).
 - Le skill del repo si ricostruiscono all'avvio; lo stato è in \`${REL}/.claude/.skills-sync-status\`.

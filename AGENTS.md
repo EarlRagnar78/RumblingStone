@@ -349,7 +349,10 @@ game-system skills (ADR-0111, L6): a skill listed by a plugin in
 are always built. Per-agent mirrors are **generated artifacts**, not committed
 to git (see `.gitignore`); each developer/CI builds them locally:
 
-- **Claude Code** → `.claude/skills/<skill>/` (compact.md format)
+- **Claude Code** → `.claude/skills/<skill>/` (compact.md format). Claude Code also gets THIS file
+  split into `.claude/rules/rs-*.md` by `python3 scripts/regole_claude.py`
+  (ADR-0141): each section loads only with the files it is for. Edit AGENTS.md,
+  then regenerate; `--check` fails when the two drift apart.
 - **OpenAI Codex** → `.agents/skills/<skill>/` (machine.json)
 - **GitHub Copilot** → `.github/copilot/skills/<skill>/` (compact.md)
 - **Cursor** → `.cursor/skills/<skill>/` (machine.json)

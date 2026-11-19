@@ -28,6 +28,12 @@
 # 9.1.1 dal 2026-10-11, con gli aggiornamenti di Dependabot della #228.
 pytest>=9.1.1
 
+# ADR-0143: il hook pre-push (gate_locale --pre-push) passa da pre-commit, lo
+# standard di fatto. Solo hook locali (.pre-commit-config.yaml, repo: local),
+# quindi niente download: il motivo per cui ADR-0099 l'aveva scartato. Licenza
+# MIT. Senza, install-git-hooks.sh scrive un hook nativo che fa lo stesso.
+pre-commit>=4.7.0
+
 # PRATICHE PI-3 (D2 del 2026-09-24): le vulnerabilita' note nelle dipendenze
 # dei due file. Gira in CI, non bloccante per il primo mese. Licenza
 # Apache-2.0. In locale: `pip-audit -r requirements-dev.txt`.

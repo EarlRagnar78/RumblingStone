@@ -2245,3 +2245,15 @@ repo scritto con altre parole.
 - **Testo:** provato che Claude Code non legge `.claudeignore` (un file elencato si apre) e che `permissions.deny` con `Read(...)` blocca Read, Grep e Glob. `claudeignore_deny.py` traduce le voci; immagini, PDF, `.claude/skills/` e `.claude/.skills-sync-status` restano leggibili apposta. Nei thread le regole ancorate prendono il nome del repo davanti. Il DM ha chiesto di fare le pratiche in ordine (A, B, C, D) una PR ciascuna, di documentare tutte le scelte per poter tornare indietro e di verificare che nessuna abbia problemi: la guida `docs/how-to/GUIDA-CONFIGURAZIONE-CLAUDE.md` raccoglie le sei scelte del 19/11
 - **Trovato nel repo:** `scripts/claudeignore_deny.py` · `.claudeignore` · `docs/how-to/GUIDA-CONFIGURAZIONE-CLAUDE.md` · `plans/adr/ADR-0142-claudeignore-diventa-regole-deny.md`
 - **Solo qui:** nella verifica delle scelte è emerso che le istruzioni dei server dei connettori negati entrano comunque nel contesto (la regola deny toglie i tool, non le istruzioni) e che le 18 skill del repo compaiono due volte, come skill utente e come `RumblingStone:*` appena si legge un file del repo
+
+### MS-0199 · 2026-11-19 · I gate veloci della CI prima del push (pre-commit, hook locale)
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** ADR-0143
+- **Temi:** ci pre-commit hook gate-locale pre-push tdd thread misura decisione-dm
+- **Origine:** riga del 2026-11-19 «ADR-0143: i gate bloccanti e veloci della CI girano prima del push» in `plans/CHANGELOG.md`
+- **Testo:** pratica C dell'ordine scelto dal DM (A, B, C, D). Classificate dal log le 11 corse CI rosse fra le 100 più recenti di PR (15-19/11) più la prima testa della #490: 4 regola d'oro o CHANGELOG a 4 colonne, 2 `componenti.py`, 1 adozione attiva, 1 booklet in stampa, 3 impronta delle creature, 1 `test_tabelle`. `gate_locale --rapido` costa 3 min 11 s e su 100 push non si ripaga; `--pre-push` (bloccanti, senza pytest né resa delle mappe, edizione da stampa, corredo) costa 45 s e prende 7 rossi su 12. pre-commit, scartato da ADR-0099 perché scaricava dalla rete, rifatto con `repo: local` e `language: system`: provato con il proxy su una porta morta, gira. Test scritti prima e visti rossi (`test_gate_locale.TestPrePush`, `test_install_git_hooks`). Nella stessa giornata B (hook sui file generati: nessuna modifica a mano nello storico) e D (riordino della radice: tre rimandi voluti e due censimenti citati da 15 file) sono stati misurati e lasciati senza PR
+- **Trovato nel repo:** `scripts/gate_locale.py` · `.pre-commit-config.yaml` · `scripts/install-git-hooks.sh` · `plans/adr/ADR-0143-i-gate-veloci-girano-prima-del-push.md`
+- **Solo qui:** gli id delle 11 corse rosse (44426033056, 44425938003, 44183963956, 44181729147, 43919525637, 43770067168, 43769907951, 43769733440, 43769518617, 43729307832, 43727650247); la stima del giro di CI in più (circa 22 minuti per rosso) non è misurata; le skill del repo «doppie» costano circa 0,7k token, non 5k
+

@@ -63,7 +63,11 @@ Build commands:
   ([ADR-0140](plans/adr/ADR-0140-la-configurazione-claude-del-repo-arriva-anche-nei-thread.md)).
 - **Other agents / plain git users**: run `./scripts/install-git-hooks.sh`
   once; it installs a `post-merge` git hook that resyncs the mirrors after
-  every `git pull` that touches `skills/`.
+  every `git pull` that touches `skills/`, and a `pre-push` hook that runs the
+  blocking, fast CI gates (`python3 scripts/gate_locale.py --pre-push`, about
+  45 s, via pre-commit when installed;
+  [ADR-0143](plans/adr/ADR-0143-i-gate-veloci-girano-prima-del-push.md)). In
+  Claude Code cloud sessions the SessionStart hook installs both.
 
 Treat `skills/` as the only thing humans edit; mirrors regenerate
 deterministically from it.

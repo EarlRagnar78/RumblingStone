@@ -23,6 +23,7 @@ anche un passo che fallisce nominando uno strumento che in CI porta un passo
 
     python3 scripts/gate_locale.py              # tutto il job validate
     python3 scripts/gate_locale.py --rapido     # senza il corridore dei test
+    python3 scripts/gate_locale.py --pre-push   # quello che lancia il hook pre-push
     python3 scripts/gate_locale.py --elenco     # cosa farebbe, senza eseguire
     python3 scripts/gate_locale.py --solo misura_resa --solo validate_maps
 
@@ -47,6 +48,15 @@ JOB = "validate"
 INSTALLA = re.compile(r"\b(pip install|apt-get|apt install|curl |wget |npm (ci|install))")
 ESPRESSIONE = re.compile(r"\$\{\{\s*([^}]*?)\s*\}\}")
 TEST = re.compile(r"\b(unittest discover|pytest)\b")
+
+# I gate bloccanti che --pre-push lascia alla CI perché lenti: nome del passo in
+# ci.yml → (secondi misurati sulla macchina dei thread il 2026-11-19, che cosa fa).
+# Sotto i 15 secondi un gate resta nel hook (ADR-0143).
+LENTI: dict[str, tuple[int, str]] = {
+    "Resa delle mappe — nessuna misura peggiora (misura_resa)": (56, "rende tutte le mappe"),
+    "Edizione da stampa — i volumi compilano DAVVERO (ADR-0020)": (32, "compila i volumi con typst"),
+    "Il corredo della serata (pezzi, doppioni, box, e i suoi PDF misurati)": (17, "compila e misura i PDF della serata"),
+}
 
 
 def passi(ci: Path = CI, base: str = "main") -> list[dict]:
@@ -86,6 +96,26 @@ def mancanti(elenco: list[dict]) -> set[str]:
     return out
 
 
+def filtra(elenco: list[dict], rapido: bool = False, solo: list[str] | None = None,
+           pre_push: bool = False, lenti: dict[str, tuple[int, str]] | None = None) -> None:
+    """Segna in ogni passo se e perché si salta. --pre-push vale --rapido più
+    niente passi non bloccanti (non fanno rossa la CI) né lenti (LENTI)."""
+    lenti = LENTI if lenti is None else lenti
+    rapido = rapido or pre_push
+    for v in elenco:
+        if v["salta"]:
+            continue
+        if rapido and TEST.search(v["run"]):
+            v["salta"] = "--rapido"
+        elif pre_push and v["avviso"]:
+            v["salta"] = "--pre-push: non bloccante"
+        elif pre_push and v["nome"] in lenti:
+            sec, cosa = lenti[v["nome"]]
+            v["salta"] = f"--pre-push: lento ({sec} s, {cosa})"
+        elif solo and not any(s in v["nome"] or s in v["run"] for s in solo):
+            v["salta"] = "--solo"
+
+
 def esegui(voce: dict, env: dict) -> tuple[int, str, float]:
     t = time.monotonic()
     r = subprocess.run(["bash", "-eo", "pipefail", "-c", voce["run"]], cwd=REPO, env=env,
@@ -96,6 +126,8 @@ def esegui(voce: dict, env: dict) -> tuple[int, str, float]:
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[1])
     ap.add_argument("--rapido", action="store_true", help="salta il corridore dei test (pytest)")
+    ap.add_argument("--pre-push", action="store_true",
+                    help="come --rapido, senza i passi non bloccanti né quelli lenti di LENTI: è il hook pre-push")
     ap.add_argument("--elenco", action="store_true", help="elenca i passi e cosa ne farebbe, senza eseguire")
     ap.add_argument("--solo", action="append", default=[], metavar="TESTO",
                     help="esegue solo i passi il cui nome o comando contiene TESTO (ripetibile)")
@@ -106,11 +138,7 @@ def main(argv=None) -> int:
     except (OSError, KeyError, ImportError) as e:
         print(f"✗ gate_locale: ci.yml illeggibile ({e})", file=sys.stderr)
         return 2
-    for v in elenco:
-        if args.rapido and not v["salta"] and TEST.search(v["run"]):
-            v["salta"] = "--rapido"
-        if args.solo and not v["salta"] and not any(s in v["nome"] or s in v["run"] for s in args.solo):
-            v["salta"] = "--solo"
+    filtra(elenco, rapido=args.rapido, solo=args.solo, pre_push=args.pre_push)
     if args.elenco:
         for v in elenco:
             stato = f"salta ({v['salta']})" if v["salta"] else ("avviso" if v["avviso"] else "gate")

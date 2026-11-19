@@ -3879,7 +3879,7 @@
     },
     {
       "name": "gate_locale",
-      "description": "«Prima di spingere: la CI tornerà verde?»\n\nI gate del job validate della CI eseguiti sulla macchina, letti da .github/workflows/ci.yml e non da una lista copiata: un gate nuovo in CI entra da solo. Salta, dicendolo, i passi che installano e quelli con espressioni di GitHub che qui non hanno valore; continue-on-error vale come avviso; --rapido salta i corridori dei test.",
+      "description": "«Prima di spingere: la CI tornerà verde?»\n\nI gate del job validate della CI eseguiti sulla macchina, letti da .github/workflows/ci.yml e non da una lista copiata: un gate nuovo in CI entra da solo. Salta, dicendolo, i passi che installano e quelli con espressioni di GitHub che qui non hanno valore; continue-on-error vale come avviso; --rapido salta i corridori dei test. --pre-push tiene solo i gate bloccanti e veloci: è il hook pre-push (ADR-0143).",
       "use_case": "«Prima di spingere: la CI tornerà verde?»",
       "invocation": "python3 scripts/gate_locale.py --rapido",
       "inputSchema": {
@@ -3888,6 +3888,10 @@
           "rapido": {
             "type": "boolean",
             "description": "Salta i corridori dei test (unittest, pytest)."
+          },
+          "pre-push": {
+            "type": "boolean",
+            "description": "Come --rapido, senza i passi non bloccanti né quelli lenti di LENTI: è il hook pre-push (ADR-0143)."
           },
           "elenco": {
             "type": "boolean",

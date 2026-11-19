@@ -9800,7 +9800,7 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/gate_locale.py --rapido",
-      "summary": "I gate del job validate della CI eseguiti sulla macchina, letti da .github/workflows/ci.yml e non da una lista copiata: un gate nuovo in CI entra da solo. Salta, dicendolo, i passi che installano e quelli con espressioni di GitHub che qui non hanno valore; continue-on-error vale come avviso; --rapido salta i corridori dei test.",
+      "summary": "I gate del job validate della CI eseguiti sulla macchina, letti da .github/workflows/ci.yml e non da una lista copiata: un gate nuovo in CI entra da solo. Salta, dicendolo, i passi che installano e quelli con espressioni di GitHub che qui non hanno valore; continue-on-error vale come avviso; --rapido salta i corridori dei test. --pre-push tiene solo i gate bloccanti e veloci: è il hook pre-push (ADR-0143).",
       "use_case": "«Prima di spingere: la CI tornerà verde?»",
       "stability": "beta",
       "stdlib_only": false,
@@ -9820,6 +9820,15 @@
           "choices": null,
           "repeatable": false,
           "desc": "Salta i corridori dei test (unittest, pytest)."
+        },
+        {
+          "name": "--pre-push",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Come --rapido, senza i passi non bloccanti né quelli lenti di LENTI: è il hook pre-push (ADR-0143)."
         },
         {
           "name": "--elenco",
@@ -9889,7 +9898,8 @@
         "scripts/tests/test_gate_locale.py"
       ],
       "docs": [
-        "plans/PIANO-AMBIENTE-RIPRODUCIBILE.md"
+        "plans/PIANO-AMBIENTE-RIPRODUCIBILE.md",
+        "plans/adr/ADR-0143-i-gate-veloci-girano-prima-del-push.md"
       ]
     },
     {

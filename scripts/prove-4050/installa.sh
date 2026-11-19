@@ -17,6 +17,10 @@
 # --driver     installa anche il driver NVIDIA dove si può fare da qui (Debian, CachyOS). Poi va
 #              riavviata la macchina. Su Bazzite il driver viene dall'immagine «-nvidia».
 # --senza-box  come su WSL2: tutto sul sistema, niente Distrobox (solo Debian/Ubuntu)
+#
+# Si può rilanciare quante volte si vuole: i passi già fatti non si rifanno, e un box rimasto a
+# metà (macchina spenta durante l'installazione) viene tolto e ricreato. Per ripartire da zero:
+# kit.sh pulisci, poi di nuovo kit.sh installa.
 set -euo pipefail
 . "$(dirname "${BASH_SOURCE[0]}")/comune.sh"
 MOSTRA=0; DRIVER=0
@@ -109,6 +113,15 @@ echo "==> 3/4 box"
 if [ "$MODO" = diretto ]; then
   echo "    modo diretto: nessun box"
 else
+  # un box rimasto a metà (macchina spenta durante il primo avvio) si toglie e si rifà da capo
+  if [ "$MOSTRA" = 0 ]; then
+    for b in llm-locale comfyui whisper; do
+      if box_a_meta "$b"; then
+        echo "    il box '$b' c'è ma non ha mai finito di inizializzarsi: lo tolgo e lo rifaccio"
+        box_togli "$b" || { echo "ERRORE: non riesco a togliere il box '$b'. Prova: podman rm -f $b" >&2; exit 6; }
+      fi
+    done
+  fi
   # llm-locale: lo script che c'è già (Ollama dentro, ADR-0089)
   esegui "$RADICE/scripts/llm-locale/setup-distrobox.sh"
   # comfyui: basta Python col venv; ComfyUI e i pesi li preparano le prove nella loro cartella
@@ -117,7 +130,7 @@ else
   fi
   [ "$MOSTRA" = 1 ] || box_avvia comfyui   # il primo ingresso senza restare appesi (vedi ospite.sh)
   esegui distrobox enter comfyui -- bash -lc \
-    "sudo apt-get update -qq && sudo apt-get install -y -qq git python3-venv python3-pip libgl1 libglib2.0-0 ffmpeg"
+    "sudo dpkg --configure -a && sudo apt-get update -qq && sudo apt-get install -y -qq git python3-venv python3-pip libgl1 libglib2.0-0 ffmpeg"
   # whisper: la ricetta della guida della trascrizione (#424 §2), Vulkan col driver dell'host
   if [ "$MOSTRA" = 1 ] || ! box_c_e whisper; then
     esegui distrobox create --nvidia --name whisper --image registry.fedoraproject.org/fedora-toolbox:43 --yes

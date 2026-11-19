@@ -18,14 +18,8 @@ CARTELLE = re.compile(r"^(\d\d_.*|Bestiario|campaign)$")
 # Storia che non si riscrive: il registro dei cambi di stato cita il nome vecchio.
 ESENTI = {"campaign/state-changelog.md"}
 
-# Righe che la PR #472 (carta del cielo e handout 7) porta a Flamerule.
-# Quando la #472 è su main questo dizionario va svuotato.
-IN_ATTESA = {
-    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/"
-    "Arco-Post-Hammerfist-DOSSIER-DELLE-PISTE.md": 3,
-    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/"
-    "Arco-Post-Hammerfist-HANDOUTS.md": 4,
-}
+# La PR #472 (carta del cielo e handout 7) è su main dal 18/11: nessuna riga in attesa.
+IN_ATTESA: dict[str, int] = {}
 
 
 def _file_del_canone():

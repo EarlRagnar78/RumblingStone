@@ -6,7 +6,7 @@
 > fatta (lotto F2.10 di PIANO-MISURA-EDITORIALE-STANDARD); qui sta come si
 > scrive, con quali template, e dove si applica.
 >
-> **Stato**: 🟡 B0 fatto, D1 decisa il 2026-10-18, il resto aspetta D2-D6 · **Decisore**: DM ·
+> **Stato**: 🟡 B0 e B1 fatti (B1 il 2026-11-09), D1-D6 decise (D1 il 2026-10-18, D2-D6 il 2026-11-08); restano i lotti B2-B6 · **Decisore**: DM ·
 > **Si lavora**: in una chat a parte, svincolata da PIANO-AGENT-SKILLS-ESTERNE
 > **Gate**: `misura_craft --box`, `componenti.py --check`, `validate_norme_editoriali.py`
 
@@ -174,7 +174,7 @@ Opus, ciclo del master) · B6 **R** (ricognizione sui master nuovi)]
 
 <!-- eco: BOX-LUOGO 2026-11-08 -->
 - **Decise**: D2, le misure non vanno nella prima frase del box, resta ADR-0014. D3, ogni box dichiara il tipo, nei master nuovi e nei DEF già giocati. D4, i box giocati oltre misura non si toccano ed entrano in un elenco di eccezioni col motivo. D5, l'Abbazia ha un box di luogo breve per stanza. D6, il template d'area in `campaign/templates/`, in 3.5 e in PF1e.
-- **Aperte**: nessuna decisione; restano i lotti B1-B6.
+- **Aperte**: nessuna decisione; restano i lotti B2-B6 (B1 fatto il 2026-11-09).
 - **Cambiate**: D3 va oltre la proposta, che lasciava fuori i DEF giocati: lì entra solo l'etichetta, senza toccare una parola. D4 aggiunge l'elenco delle eccezioni, che la proposta non aveva.
 - **Dedotto da me**: l'elenco delle eccezioni di D4 lo legge `componenti.py`, come gli altri elenchi del repo; non è scritto nella card.
 

@@ -16,7 +16,7 @@ ___
 {{banner ⚠️ SOLO DM}}
 
 {{footnote
-  Generato il 2026-11-18 · Flamerule, 1372 DR (piena estate — Valle di Channath; Giorno di Marcia 19 = 19 Flamerule) · 19 Flamerule (Giorno 19 della Marcia) · fonte: campaign/state.md · Red Hand of Doom, Faerûn 1372 DR
+  Generato il 2026-11-19 · Flamerule, 1372 DR (piena estate — Valle di Channath; Giorno di Marcia 19 = 19 Flamerule) · 19 Flamerule (Giorno 19 della Marcia) · fonte: campaign/state.md · Red Hand of Doom, Faerûn 1372 DR
 }}
 
 \page

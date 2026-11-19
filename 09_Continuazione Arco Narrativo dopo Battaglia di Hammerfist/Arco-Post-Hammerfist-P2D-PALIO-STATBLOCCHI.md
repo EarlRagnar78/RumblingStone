@@ -144,10 +144,11 @@ attacchi:
 - **Innata**: *Oscurità*, *Fuoco delle Fate*.
 
 
-*Cosa sanno dei PG e in che stato li trovano*: Sonjak gli ha detto quale stalla e quale cavallo, non chi la guarda. Arrivano la notte del Giorno 2, quando i PG hanno speso la giornata delle prove e dormono o fanno la guardia a turno: uno sveglio, gli altri senza incantesimi preparati per l'indomani. Se trovano un PG di guardia, il primo colpo va su di lui, non sul cavallo. <!-- [INFERRED — Sonjak sa chi fa la guardia alla stalla?; base: §3.1 e la scheda di Sonjak dicono il mandante, non che cosa sa dei PG] (marca tolta dal booklet stampato) -->
+*Cosa sanno dei PG e in che stato li trovano*: Sonjak gli ha detto quale stalla e quale cavallo, non chi la guarda. Arrivano la notte del Giorno 2, dopo la Cena della Prova Generale e gli intrighi dei Partiti, quando i PG dormono o fanno la guardia a turno: uno sveglio, gli altri con quello che resta degli incantesimi del giorno. L'obiettivo resta il cavallo: chi è di guardia lo evitano, e lo colpiscono solo se sta fra loro e il cavallo o se li scopre, per coprire la fuga. <!-- [INFERRED — Sonjak sa chi fa la guardia alla stalla?; base: §3.1 e la scheda di Sonjak dicono il mandante, non che cosa sa dei PG] (marca tolta dal booklet stampato) -->
 
 <!-- storico -->
 Prima del 2026-11-17 (tattiche di ARC-09, lotto 5) i sicari e la chierica avevano solo l'obiettivo: il cavallo, non i PG. Che cosa sanno dei PG e in che stato li trovano è stato aggiunto qui e in §3.2, marcato INFERRED perché nessuna scena lo dice.
+Era (17/11, corretto il 18/11): «Se trovano un PG di guardia, il primo colpo va su di lui, non sul cavallo», che contraddiceva l'obiettivo scritto sopra (il cavallo, non i PG); «la giornata delle prove» (il Giorno 2 è la Cena e i Partiti) e «senza incantesimi preparati per l'indomani» (gli incantesimi si preparano al mattino: di notte resta quello che non si è speso).
 <!-- /storico -->
 
 ### 3.2 Drow Chierica di Lolth (GS 10)
@@ -174,9 +175,9 @@ voci:
 **Capacità speciali**
 - **Incantesimi** fino al 5° (Comando Superiore, Ragnatela, Silenzio, Flagello Insetti). *Oscurità*, *Individuazione Magico*.
 
-*Cosa sa dei PG*: quello che sanno gli assassini, e in più che uno dei PG cura (Hella): *Silenzio* va su di lei per prima, se è sveglia. <!-- [INFERRED — La chierica sa che Hella è la guaritrice?; base: lo sa se ha visto le prove del Giorno 1 o 2, nessuna scena lo dice] (marca tolta dal booklet stampato) -->
+*Cosa sa dei PG*: quello che sanno gli assassini, e in più che uno dei PG cura (Hella): *Silenzio* va su un punto accanto a lei, se è sveglia: soffoca l'allarme e i suoi incantesimi insieme. <!-- [INFERRED — La chierica sa che Hella è la guaritrice?; base: lo sa se qualcuno ha visto Hella curare alla Tratta o alla Cena, nessuna scena lo dice] (marca tolta dal booklet stampato) -->
 
-> RC-001 (2026-11-15, ADR-0134) `[CANONE — DM 2026-11-15, RC-001]`: armatura completa +1 e scudo pesante di acciaio spiegano la CA 22 se la Destrezza è 12 (10, +9 armatura, +2 scudo, +1 Des); la scheda non scrive la Destrezza e questa è una lettura. Mantello, perla, pugnale e balestra vengono dal PNG dei Codex PF1e «Death Priest» (Chierico 9); il suo giaco di maglia +1, l'anello di protezione +1 e la fascia della saggezza non entrano. Il mantello non cambia numeri perché la scheda non scrive i tiri salvezza. Valore 4.709 mo contro i 12.000 del 9° livello (DMG 3.5, Tabella 4-23).
+> RC-001 (2026-11-15, ADR-0134) `[CANONE — DM 2026-11-15, RC-001]`: armatura completa +1 e scudo pesante di acciaio spiegano la CA 22 se la Destrezza è 12 (10, +9 armatura, +2 scudo, +1 Des); la scheda non scrive la Destrezza e questa è una lettura. Mantello, perla, pugnale e balestra vengono dal PNG dei Codex PF1e «Death Priest» (Chierico 9); il suo giaco di maglia +1, l'anello di protezione +1 e la fascia della saggezza non entrano. Il mantello non cambia numeri perché la scheda non scrive i tiri salvezza. Valore 4.709 mo contro i 21.000 dell'11° livello effettivo (9 livelli di classe + 2 di modificatore di livello dei drow; DMG 3.5, Tabella 4-23); anche senza il modificatore resta sotto i 12.000 del 9°.
 
 
 ### 3.3 Servitore della Spora (GS 3, ariete vivente)

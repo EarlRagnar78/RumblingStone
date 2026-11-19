@@ -85,22 +85,22 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
 | 2026-11-19 | AVVENTURE-COMMUNITY | Lettore del RAG per «chi sa cosa»: esito della prova da 7B sulla RTX 4050 del DM | `qwen2.5:7b` via Ollama sulla 4050, 636 risposte su 636 in circa 2 minuti (87% del modello in VRAM). Il criterio di ESITO.md non è raggiunto e il 7B non entra… |
+| 2026-11-19 | SISTEMI-DI-GIOCO-PLUGIN | `conformita_statblocchi`: il talento di una riga di variante non entra nei TS a… | ✅ test nuovo rosso su main, verde qui |
 | 2026-11-18 | AVVENTURE-COMMUNITY | Calendario di ARC-09: i «Mirtul» rimasti diventano «Flamerule» (scelta del DM d… | dopo la scelta del DM che il Giorno di Marcia 1 è il 1° Flamerule (la Torre cammina il 30 Flamerule), 31 «Mirtul» restavano in 9 file fuori dalla PR della cart… |
 | 2026-11-18 | AVVENTURE-COMMUNITY | Calendario di ARC-09: il quickstart e la tabella delle armate allineati a… | il ricontrollo del 18/11 ha trovato due calendari diversi: `P2B-Torneo-DAUTH-DM-MASTER-REFERENCE` §1.1 (autoritativa) e `campaign/state.md` r.381 mettono i tre… |
-| 2026-11-18 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Kit delle prove 4050, rilettura a caccia di errori chiesta dal DM il 18/11 (ADR… | 🟡 errori noti nel kit: 4 → 0; test `test_prove_4050` 24 → 28 (box finto con podman e distrobox di prova; verifica su esiti finti; BOM). `trascrizione-gpu.sh` r… |
-| 2026-11-18 | STATO-E-ORDINE | ADR-0137, la memoria storica a ogni blocco di lavoro (richiesta del DM del 18/1… | 🟡 PR unite dal 12/11 ritrovate con `--pr`: 37 → 90 su 90 (88 con la voce propria; #387 e #389 toccano solo `docs/` e sono solo citate in MS-0082). Memoria dell… |
-| 2026-11-18 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, il generatore: la nota «niente Incantesimi focalizzati» nel conto esc… | ✅ |
-| 2026-11-17 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Kit unico delle prove sulla RTX 4050, richiesta del DM del 17/11 (ADR-0136):… | 🟡 prove lanciabili con un comando: da 0 a 7 su 7; sistemi con un percorso di installazione: da 1 (Bazzite) a 4. Mai girato su una GPU né su Debian, CachyOS o W… |
-| 2026-11-17 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, il generatore: Incantesimi focalizzati con la scuola. Il nome italian… | In PR: sull'impronta (720 blocchi) nome sbagliato 234 → 0, senza scuola 312 → 0, su blocchi senza incantesimi 210 → 0 |
-| 2026-11-17 | RICERCA-MARCATURE-INFERRED | `inventory_inferred` non conta due volte la marca ristampata in un file generat… | ✅ aperti su main 6951f2b2: 16 → 14 (le 2 copie del `PALIO-BOOKLET.hb.md`), baseline 16 → 14; storici 855 e meta 59 invariati; 3 test nuovi, la mutazione che to… |
-| 2026-11-17 | DOCUMENT-AI (thread «Applicare Document… | Tecnica 3, decodifica vincolata delle «Tattiche»: la prova per il portatile 405… | 🟡 script pronto, mai girato sulla 4050: 12 schede di `genera_creatura.py` × libero e vincolato (schema JSON in `format` di Ollama, azione in enum delle voci de… |
-| 2026-11-17 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, lotto 5 undicesima parte: il segugio infernale rifatto mezzo-immondo… | In PR |
-| 2026-11-17 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 5, villain senza duello. Il **Collezion… | ✅ punti dello schema mancanti per questi quattro: da 5 a 0 (esiti del Collezionista, punto 3 del Ghostlord, punti 3 e 5 degli assassini, punto 3 della chierica… |
+| 2026-11-18 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 5: sei frasi corrette dopo la rilettura… | ✅ frasi del lotto 5 in contraddizione con la loro fonte: da 6 a 0 su 6 testi riletti (tre nel Palio, due nel Ghostlord, una nel Collezionista); misure di Azarr… |
+| 2026-11-18 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: ricontrollo del corredo di dieci schede chiesto dal DM… | errori nelle note di corredo da 4 a 0 e balestre senza munizioni da 2 a 0 su dieci schede ricontrollate; `verifica_scheda.py` 0 violazioni prima e dopo |
+| 2026-11-18 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Kit delle prove 4050, primo giro del DM sull'ASUS (ADR-0136): il kit è partito… | 🟡 messaggi che spiegano il fallimento di quel giro: 0 → 1; prove fallite prima di partire viste dalla verifica: 0 su 1 → 1 su 1; comandi per ripartire pulito:… |
+| 2026-11-18 | SISTEMI-DI-GIOCO-PLUGIN | Correzioni dall'audit del 18/11. Impronte del banco d'invarianza rigenerate dop… | ✅ `impronte.py --confronta` 12 su 12 |
+| 2026-11-18 | RICERCA-TOOL-LGM-2026 | §3.1, ricontrollo della carta del cielo chiesto dal DM. La carta mostrava la me… | Stella-chiave a 0,3 pixel dal centro del segno; quattro lanci di fila identici pixel per pixel, variante da stampa identica byte per byte. A mezzanotte del 30… |
+| 2026-11-18 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, ricontrollo di Incantesimi focalizzati (richiesta del DM del 18/11):… | ✅ |
+| 2026-11-18 | RIPRESA-PR-ABBANDONATE | D2, collaudo dell'arte del Drappo: quattro difetti dello script trovati al rico… | ✅ corretti prima che la prova giri sulla 4050: (1) due delle tre Gemini di serie (tavola-la-ruota, il-drappo) non si aprivano con Pillow per il blocco C2PA olt… |
+| 2026-11-18 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Prove sulla RTX 4050, ricontrollo chiesto dal DM il 18/11: corretti gli errori… | 🟡 sette errori corretti, nessuno visto girare su una GPU: (1) `immagini.sh --profilo cpu`, il comando della guida per il profilo leggero, non poteva partire: C… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 170 voci, l'ultima MS-0170 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 192 voci, l'ultima MS-0192 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 143,
+  "tool_count": 144,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -10556,6 +10556,145 @@
         "network": false
       },
       "idempotent": true
+    },
+    {
+      "id": "memoria_coda",
+      "path": "scripts/memoria_coda.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/memoria_coda.py DIR [--check] [--thread TITOLO ...] [--threads JSON] [--dal DATA] [--piega] [--nome TITOLO] [--json]",
+      "summary": "ADR-0138: il cancello della coda della memoria storica. Ogni thread scrive in un file suo (cartella condivisa, fuori dal repo) la voce del lavoro che non finisce in una PR: scelte su card, dati verificati, thread risolti (ADR-0137). --check controlla la forma di ogni voce in coda; --thread esce 1 se un thread non ha una voce, né in coda né già nel repo; --threads fa lo stesso per i thread risolti di un elenco JSON; --piega porta le voci nuove in plans/MEMORIA-STORICA.md numerandole, solo se il file risultante passa memoria_storica.py --check. La CI del repo non vede la coda: lo lancia chi risolve un thread e la routine del lunedì.",
+      "use_case": "«Sto per risolvere un thread, o è lunedì: le scelte prese su card e il lavoro senza PR hanno la loro voce di memoria storica, scritta bene?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "python3"
+      ],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "cartella",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La cartella della coda, un file .md per thread."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La forma di tutte le voci in coda: exit 1 se una è scritta male."
+        },
+        {
+          "name": "--thread",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Titolo di un thread che deve avere una voce (in coda o già piegata)."
+        },
+        {
+          "name": "--threads",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Elenco JSON dei thread (forma di list_threads): exit 1 se un thread risolto da --dal non ha voce."
+        },
+        {
+          "name": "--dal",
+          "type": "str",
+          "required": false,
+          "default": "2026-11-18",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --threads: solo i thread risolti da questo giorno (AAAA-MM-GG)."
+        },
+        {
+          "name": "--piega",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Porta in plans/MEMORIA-STORICA.md le voci della coda non ancora presenti, numerate."
+        },
+        {
+          "name": "--nome",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Stampa il nome del file di coda per un titolo ed esce."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Uscita machine-readable: file, voci, errori, thread senza voce, voci piegate."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/MEMORIA-STORICA.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<stdout>",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "plans/MEMORIA-STORICA.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "coda in forma e nessun thread senza voce",
+        "1": "una voce scritta male, un thread senza voce, o piega che romperebbe il file storico",
+        "2": "errore d'uso: cartella, file o elenco mancante, data non valida"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Regex e ordine per data, file e riga; nessun modello, nessuna data di sistema."
+      },
+      "side_effects": {
+        "writes_canon": true,
+        "git_commit": false,
+        "network": false,
+        "notes": "Scrive plans/MEMORIA-STORICA.md solo con --piega; il resto è sola lettura."
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/memoria_coda.py --nome prova",
+      "tests": [
+        "scripts/tests/test_memoria_coda.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0138-la-coda-della-memoria-storica-ha-un-cancello.md"
+      ]
     },
     {
       "id": "memoria_storica",

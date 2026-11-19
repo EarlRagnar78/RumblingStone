@@ -94,6 +94,32 @@ class TestDrappoFlux(unittest.TestCase):
             self.assertTrue(self.df.peso_verificato(f, giusto))  # dalla nota
             self.assertFalse(self.df.peso_verificato(Path(d) / "manca", giusto))
 
+    def test_torch_sotto_la_2_8_viene_segnalato(self):
+        self.assertTrue(self.df.torch_vecchio("2.6.0+cu124"))
+        self.assertFalse(self.df.torch_vecchio("2.8.0"))
+        self.assertFalse(self.df.torch_vecchio("2.14.1+cu126"))
+        self.assertFalse(self.df.torch_vecchio("assente"))
+
+    def test_clone_di_comfyui_separato_da_quello_delle_immagini(self):
+        """esegui_gpu.py mette i suoi nodi in «ComfyUI» solo quando lo crea: questa prova non deve crearlo."""
+        sorgente = (PROVE / "drappo_flux.py").read_text(encoding="utf-8")
+        self.assertIn('lavoro / "ComfyUI-flux"', sorgente)
+        self.assertNotIn('lavoro / "ComfyUI"', sorgente)
+        self.assertIn('lavoro / "ComfyUI"', (IMMAGINI / "esegui_gpu.py").read_text(encoding="utf-8"))
+
+    def test_affianca_apre_ogni_gemini_di_serie(self):
+        """il-drappo.png ha un blocco C2PA oltre il limite di serie di Pillow: il 18/11 la prova si fermava lì."""
+        try:
+            import PIL  # noqa: F401
+        except ImportError:
+            self.skipTest("Pillow non installato")
+        with tempfile.TemporaryDirectory() as d:
+            for ident in self.df.SOLO_DEFAULT.split(","):
+                gem = self.df.GEMINI / f"{ident}.png"
+                dest = Path(d) / f"confronto-{ident}.jpg"
+                self.assertTrue(self.df.affianca(gem, [gem], dest), ident)
+                self.assertGreater(dest.stat().st_size, 10_000)
+
     def test_pagina_di_confronto(self):
         with tempfile.TemporaryDirectory() as d:
             righe = [{"id": "il-drappo", "seme": 0, "secondi": 9.5, "file": "flux/seme-0/il-drappo.png"},
@@ -218,6 +244,45 @@ class TestSchedeVincolate(unittest.TestCase):
         self.assertFalse(self.S.riassumi(righe)["migliora"])
         righe[1]["copertura"] = 1
         self.assertTrue(self.S.riassumi(righe)["migliora"])
+
+    def test_libero_impaginato_male_si_legge_lo_stesso(self):
+        """Grassetto, elenco numerato, titoli: S8 deve vedere comunque la *palla di fuoco*."""
+        import coerenza_campagna as C
+        blocco = self.S.genera("mago:7", 7, "controllore", 11)
+        forme = {
+            "grassetto": "**Prima del combattimento**: lancia *palla di fuoco*.\n**Morale**: fugge.",
+            "numeri": "1. *Prima del combattimento*: lancia *palla di fuoco*.\n2. *Morale*: fugge.",
+            "titoli": "### Prima del combattimento\nLancia *palla di fuoco*.\n### Morale\nFugge.",
+            "elenco": "- *Prima del combattimento*: lancia *palla di fuoco*.\n- *Morale*: fugge.",
+        }
+        with tempfile.TemporaryDirectory() as t:
+            for nome, testo in forme.items():
+                tatt, motivo = self.S.valido_libero(testo)
+                self.assertIsNotNone(tatt, f"{nome}: {motivo}")
+                f = Path(t) / f"{nome}.md"
+                f.write_text(f"# x\n\n{blocco}\n\n**Tattiche**\n{tatt}\n", encoding="utf-8")
+                self.assertEqual(len(C.verifica_tattiche([f])["violazioni"]), 1, nome)
+        self.assertEqual(self.S.valido_libero(" \n```\n")[0], None)
+
+    def test_campi_non_testuali_non_fanno_cadere_la_misura(self):
+        v = self.S.voci(self.S.genera("mago:7", 7, "controllore", 11))
+        p = {"azione": "ragnatela", "bersaglio": 5, "perche": None}
+        tatt, motivo = self.S.in_markdown(json.dumps({"prima": [p], "durante": [p], "morale": [p]}), v)
+        self.assertIsNone(tatt)
+        self.assertIn("non sono testo", motivo)
+        p = {"azione": "ragnatela", "bersaglio": "il\ngruppo", "perche": "li ferma\n- e basta"}
+        tatt, _ = self.S.in_markdown(json.dumps({"prima": [p], "durante": [p], "morale": [p]}), v)
+        self.assertEqual(len(tatt.splitlines()), 3)
+
+    def test_tetto_dei_token_e_troncate(self):
+        """12 passi pieni devono stare nel tetto; una risposta troncata si conta."""
+        self.assertGreaterEqual(self.S.GETTONI, 12 * 90)
+        riga = {"braccio": "vincolato", "valida": False, "s8": 0, "fuori_lista": [], "menzioni": 0,
+                "copertura": 0, "secondi": 1, "token": 1, "ns": 1, "troncata": True}
+        s = self.S.riassumi([riga, dict(riga, braccio="libero", valida=True, s8=1, troncata=False)])
+        self.assertEqual(s["vincolato"]["troncate"], 1)
+        self.assertEqual(s["libero"]["troncate"], 0)
+        self.assertFalse(s["migliora"])
 
     def test_misura_completa_e_ripresa(self):
         server = http.server.HTTPServer(("127.0.0.1", 0), _FintoTattiche)
@@ -345,6 +410,87 @@ class TestKitMultiSistema(unittest.TestCase):
             self.assertIn("non c'è", r.stderr)
             self.assertNotIn("ENTRATO", r.stdout)
 
+    def test_box_rimasto_a_meta_si_riconosce(self):
+        """2026-11-18: macchina spenta durante il primo avvio del box comfyui. installa lo rifà."""
+        casi = {  # log del box, StartedAt, a metà?
+            "finito": ("container_setup_done", "2026-11-18 23:40:00", False),
+            "interrotto": ("Setting up host's nvidia integration...", "2026-11-18 23:40:00", True),
+            "mai acceso": ("", "0001-01-01 00:00:00", True),
+            "log spento": ("", "2026-11-18 23:40:00", False),
+        }
+        for nome, (log, avviato, atteso) in casi.items():
+            podman = ('case "$1" in\n'
+                      '  container) exit 0 ;;\n'
+                      f'  logs) echo -n "{log}" ;;\n'
+                      f'  inspect) echo "{avviato}" ;;\n'
+                      'esac')
+            with tempfile.TemporaryDirectory() as t:
+                extra = self._podman_finto(Path(t), podman)
+                r = _bash(f'. "{PROVE}/ospite.sh"; box_a_meta comfyui && echo META || echo INTERO',
+                          OS_RELEASE["bazzite"], extra=extra)
+                self.assertEqual(r.stdout.strip(), "META" if atteso else "INTERO", nome)
+        with tempfile.TemporaryDirectory() as t:   # il box non c'è: niente da rifare
+            extra = self._podman_finto(Path(t), "exit 1")
+            r = _bash(f'. "{PROVE}/ospite.sh"; box_a_meta comfyui && echo META || echo INTERO',
+                      OS_RELEASE["bazzite"], extra=extra)
+            self.assertEqual(r.stdout.strip(), "INTERO")
+        testo = (PROVE / "installa.sh").read_text(encoding="utf-8")
+        self.assertLess(testo.index('box_a_meta "$b"'), testo.index("setup-distrobox.sh\"\n"))
+
+    def test_pulisci_chiede_conferma_e_lascia_i_dati(self):
+        """kit.sh pulisci toglie solo i box, e solo dopo un sì (o con --si)."""
+        podman = ('case "$1" in\n'
+                  '  container) [ "$3" = whisper ] && exit 1; exit 0 ;;\n'
+                  '  rm) echo "PODMAN-RM $*" ;;\n'
+                  'esac')
+        with tempfile.TemporaryDirectory() as t:
+            extra = self._podman_finto(Path(t), podman)
+            dati = Path(t) / "dati"
+            dati.mkdir()
+            (dati / "modello.gguf").write_text("x")
+            extra["LLM_DIR"] = str(dati)
+            kit = f'"{PROVE}/kit.sh"'
+            # senza terminale e senza --si non toglie niente
+            r = _bash(f"{kit} pulisci < /dev/null", OS_RELEASE["bazzite"], extra=extra)
+            self.assertEqual(r.returncode, 2, r.stderr)
+            self.assertNotIn("ENTRATO rm", r.stdout)
+            # con --si toglie i box che ci sono (whisper non c'è) e dice cosa resta
+            r = _bash(f"{kit} pulisci --si", OS_RELEASE["bazzite"], extra=extra)
+            self.assertEqual(r.returncode, 0, r.stderr)
+            self.assertIn("tolto: llm-locale", r.stdout)
+            self.assertIn("tolto: comfyui", r.stdout)
+            self.assertNotIn("tolto: whisper", r.stdout)
+            self.assertIn(str(dati), r.stdout)
+            self.assertTrue((dati / "modello.gguf").exists())
+            # un solo box, a scelta
+            r = _bash(f"{kit} pulisci --si comfyui", OS_RELEASE["bazzite"], extra=extra)
+            self.assertIn("tolto: comfyui", r.stdout)
+            self.assertNotIn("tolto: llm-locale", r.stdout)
+            # un nome che non è un box del kit non si tocca
+            r = _bash(f"{kit} pulisci --si fedora-mio", OS_RELEASE["bazzite"], extra=extra)
+            self.assertEqual(r.returncode, 2)
+        # su WSL2 non ci sono box
+        r = _bash(f'"{PROVE}/kit.sh" pulisci --si', OS_RELEASE["ubuntu"], wsl=True)
+        self.assertEqual(r.returncode, 0)
+        self.assertIn("non ci sono box", r.stdout)
+
+    def test_terminale_rimesso_a_posto_dopo_il_server(self):
+        """Primo giro sull'ASUS: spento Ollama il terminale restava grezzo e verifica.md usciva a scaletta."""
+        testo = (PROVE / "kit.sh").read_text(encoding="utf-8")
+        self.assertIn("stty sane", testo)
+        self.assertIn("[ -t 1 ]", testo)   # mai quando l'uscita va in un file o in una pipe
+        corpo = testo[testo.index("ferma_server() {"):testo.index("trap ferma_server EXIT")]
+        self.assertIn("terminale_a_posto", corpo)
+        self.assertEqual(testo.count('ferma_server; terminale_a_posto\n    python3 "$HERE/verifica.py"'), 2)
+        # senza terminale non chiama stty e non fallisce
+        with tempfile.TemporaryDirectory() as t:
+            extra = self._podman_finto(Path(t), "exit 0")
+            f = Path(t) / "bin" / "stty"
+            f.write_text("#!/usr/bin/env bash\necho STTY-CHIAMATO\n")
+            f.chmod(0o755)
+            r = _bash(f'"{PROVE}/kit.sh" verifica', OS_RELEASE["bazzite"], extra=extra)
+            self.assertNotIn("STTY-CHIAMATO", r.stdout)
+
     def test_script_windows_con_bom(self):
         """Windows PowerShell 5.1 legge un .ps1 senza BOM come ANSI e storpia le lettere accentate."""
         dati = (PROVE / "installa-windows.ps1").read_bytes()
@@ -358,6 +504,25 @@ class TestKitMultiSistema(unittest.TestCase):
                   extra={"PROVE_GIORNO": "2026-11-17"})
         self.assertEqual(r.stdout.strip(), "2026-11-17")
         self.assertIn('export PROVE_GIORNO="$GIORNO"', (PROVE / "kit.sh").read_text(encoding="utf-8"))
+
+    FLATPAK = 'NAME="Freedesktop SDK"\nVERSION_ID="25.08"\nID=org.freedesktop.platform\n'
+
+    def test_sandbox_flatpak_ferma_subito(self):
+        """Primo giro del DM (2026-11-18): dal terminale di un'app Flatpak il kit vedeva «altro 25.08»."""
+        r = _bash(f'. "{PROVE}/ospite.sh"; rs_sistema', self.FLATPAK)
+        self.assertEqual(r.stdout.strip(), "flatpak")
+        for comando in ("kit.sh piano", "kit.sh esegui controlla", "installa.sh --mostra", "controlla.sh"):
+            r = _bash(f'"{PROVE}/"{comando}', self.FLATPAK)
+            self.assertEqual(r.returncode, 5, (comando, r.stdout, r.stderr))
+            self.assertIn("sandbox Flatpak", r.stderr)
+            self.assertIn("flatpak-spawn --host", r.stderr)
+            self.assertNotIn("################", r.stdout)
+        # il file della sandbox basta, anche con un os-release normale
+        with tempfile.NamedTemporaryFile() as f:
+            r = _bash(f'"{PROVE}/kit.sh" piano', OS_RELEASE["bazzite"], extra={"RS_FLATPAK_INFO": f.name})
+            self.assertEqual(r.returncode, 5)
+        r = _bash(f'"{PROVE}/kit.sh" piano', OS_RELEASE["bazzite"])
+        self.assertEqual(r.returncode, 0, r.stderr)
 
     def test_piano_senza_risultati(self):
         r = _bash(f'"{PROVE}/kit.sh" piano', OS_RELEASE["debian"])
@@ -390,6 +555,14 @@ class TestVerifica(unittest.TestCase):
     def test_tutto_non_fatto(self):
         e = self.v.verifica(self.r, self.m)
         self.assertTrue(all(x["stato"] == "non fatta" for x in e.values()))
+
+    def test_prova_lanciata_e_mai_partita_e_ko(self):
+        """Il kit ha registrato un'uscita con errore e non c'è nessun risultato: ko, non «non fatta»."""
+        self.scrivi("kit.tsv", "lettore-coerenza\t3\t0\t22:00:00\n")
+        e = self.v.verifica(self.r, self.m)
+        self.assertEqual(e["lettore-coerenza"]["stato"], "ko")
+        self.assertIn("non è partita", e["lettore-coerenza"]["note"][0])
+        self.assertEqual(e["prosa"]["stato"], "non fatta")
 
     def test_lettore_completo_e_interrotto(self):
         self.scrivi("lettore-coerenza/esito.txt", "modello: qwen2.5:7b\ndomande: 3\nminuti: 4\n")

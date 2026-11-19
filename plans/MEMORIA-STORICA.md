@@ -2333,3 +2333,14 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `plans/adr/ADR-0145-l-ordine-del-booklet-della-serata-si-misura.md` · `scripts/misura_ordine.py` · `plans/esperimenti/ordine-serata-2026-11-19/ruoli-serata.json`
 - **Solo qui:** card a Jfs su ordine v4, doppioni e posizione di Durik; l'ordine del volume d'arco resta da discutere a parte; i segnalibri piatti del PDF sono un difetto di navigazione non corretto
 
+### MS-0207 · 2026-11-19 · Lo Skullcrusher Vecchio ha la scheda intera, e la serata non stampa l'Adulto
+
+- **Data:** 2026-11-19
+- **PR:** #499
+- **ADR:** ADR-0145
+- **Temi:** stampa booklet serata doppioni skullcrusher vecchio adulto scheda durik arc07
+- **Origine:** riga del 2026-11-19 «Card di Jfs sulla serata di ARC-07: Durik resta in fondo come galleria dei PNG» in `plans/CHANGELOG.md`
+- **Testo:** card del 19/11 dopo il merge della #497. Durik: Jfs sceglie «in fondo, come galleria PNG» (ruolo riferimento, non preparazione). Doppioni: Jfs (14:02 UTC) chiede di verificare che la scheda del Vecchio abbia tutti i dati e non rimandi all'adulto maturo, poi di togliere il doppione. Verifica: A.1-bis rimandava ad A.1 in sei punti (Ascoltare e Osservare, abilità, capacità magiche, incantesimi conosciuti, tattica, soffio impregnante, respirare sott'acqua mancante). Ricopiati i valori dove il blocco diceva «come A.1», senza numeri nuovi; due INFERRED con domanda, uno chiuso lo stesso giorno: Allerta (+2 a Ascoltare e Osservare) e i conosciuti dello stregone di 7° secondo la tabella SRD (7/5/3/2 contro i 6/4/2 di A.1, D64 aggiunge solo i due di 3°). «Cosa cambia al tavolo», che stava dentro A.1, è ora A.1-ter con i numeri del Vecchio accanto (16d4 CD 31, RI 22, morso col nome +54). A.6 non è un doppione puro (tabella delle complicazioni dello skill challenge; le schede sono in appendice come tutte per `entrambe`). Serata: 3 → 0 difetti di struttura, 132 pp
+- **Trovato nel repo:** `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` · `plans/esperimenti/ordine-serata-2026-11-19/ruoli-serata.json`
+- **Solo qui:** incantesimi del Vecchio decisi da Jfs alle 14:06 UTC: i conosciuti dell'Adulto più *dissolvi magie* e *lentezza* (D64); l'INFERRED è tolto. Allerta: +31 a Ascoltare e Osservare, perché i talenti del Vecchio elencano Allerta e l'SRD dà +2 (consiglio del coordinatore; Jfs può riportarlo a +29). Nessun INFERRED nuovo resta
+

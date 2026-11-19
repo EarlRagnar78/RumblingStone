@@ -326,7 +326,7 @@ vuole, l'aspetto e il ritratto accanto ai numeri:
 
 | Scheda | Perché |
 |---|---|
-| Skullcrusher Vecchio, cap. IV (il resto della scheda dell'Adulto in cap. XIV Appendice A.1) | il duello. Il soffio contro Durik è nella Scena 11, riga 4-bis |
+| Skullcrusher Vecchio, cap. IV | il duello. Il soffio contro Durik è nella Scena 11, riga 4-bis |
 | Le due wyvern, cap. IV | questo gruppo conta come straripante: ci sono, dal round 2 del duello |
 | Durik, cap. XV | +50% di danni dall'acido: il soffio lo prende in pieno. Con la runa prima il +50%, poi −20 (cap. II §1, Hella). Senza runa il soffio gli fa in media più di 50: Tempra CD 15 o torna polvere, e la carica rimasta dopo i Treant dell'alba lo riporta per un'ora (Scena 11, riga 4-bis) |
 | cap. V, la scheda da tavolo e il §8 | lo sgancio e i round nel fuoco: è lo scontro con cui si apre |
@@ -1156,9 +1156,8 @@ ___
 
 ![Skullcrusher nel cortile](../../Immagini/web/tavola-skullcrusher-nel-cortile.jpg)
 
-Stasera il drago è il **Vecchio**. La scheda qui sotto rimanda alla scheda
-dell'Adulto (cap. XIV Appendice A.1) per
-sensi, velocità, capacità magiche, talenti e abilità.
+Stasera il drago è il **Vecchio**, e la scheda qui sotto è intera. L'Adulto
+di «Il Viaggio a 1.000 Anni fa» Appendice A.1, per un gruppo più debole, resta nel volume d'arco.
 
 <!-- nuova-pagina -->
 
@@ -1168,7 +1167,7 @@ sensi, velocità, capacità magiche, talenti e abilità.
 *Drago Enorme (acqua), caotico malvagio · drago nero Vecchio dell'SRD, Avanzato* · GS 17 (Vecchio GS 16, +1 Avanzato)
 ___
 **Taglia** Enorme · **Spazio** 4,5 m (3×3 quadretti) · **Portata** 3 m (2 quadretti); 4,5 m (3 quadretti) con il morso
-**Iniziativa** +6 · **Sensi** percezione cieca 18 m, scurovisione 36 m, visione crepuscolare ×4; Ascoltare e Osservare come l'Adulto (A.1)
+**Iniziativa** +6 · **Sensi** percezione cieca 18 m, scurovisione 36 m, visione crepuscolare ×4; Ascoltare +31, Osservare +31 (Allerta, +2: SRD)
 
 **DIFESA**
 ___
@@ -1176,20 +1175,21 @@ ___
 
 **ATTACCO**
 ___
-Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16) · **Schiacciare** 2d8+16, Riflessi CD 29 (solo creature Piccole o minori) · **Soffio acido** linea di 30 m, 16d4, Riflessi CD 31 dimezza (aderente come A.1) · **Capacità magiche** come A.1, ma *oscurità* con raggio 24 m e *corrompere l'acqua* a CD 26 (la CD della sua Presenza Terrificante, come nell'SRD), più *crescita vegetale* 1/giorno · **Incantesimi da stregone** incantatore di 7°: 6/7/7/5 al giorno (*lentezza* CD 17)  
+Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16) · **Schiacciare** 2d8+16, Riflessi CD 29 (solo creature Piccole o minori) · **Soffio acido** (Sop) linea di 30 m, 16d4, Riflessi CD 31 dimezza, di nuovo dopo 1d4 round (1d4+1 se impregnante, sotto) · **Capacità magiche** 3/giorno *oscurità* (raggio 24 m); 1/giorno *corrompere l'acqua* (CD 26, la CD della sua Presenza Terrificante, come nell'SRD: rovina anche le pozioni che un PG ha addosso, se falliscono il TS); 1/giorno *crescita vegetale* · **Incantesimi da stregone** (incantatore di 7°, CD 14 + livello): 0 (6/giorno) *individuazione del magico, lettura del magico, mano magica, resistenza, suono fantasma, frastornare*; 1° (7/giorno) *armatura magica, scudo, colpo accurato, dardo incantato*; 2° (7/giorno) *vedere invisibilità, immagine speculare*; 3° (5/giorno) *dissolvi magie, lentezza* (CD 17) (i conosciuti dell'Adulto più i due di 3°, come D64: scelta di Jfs del 19/11)  
 
 **TATTICHE**
 ___
-Come A.1: fugge a ⅓ dei pf, circa **112 pf**.  
+Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf, circa **112 pf**. In A.1-ter, «Cosa cambia al tavolo», i numeri che contano nel duello.  
 
 **STATISTICHE**
 ___
-For 33, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +25; Lotta +44 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Impregnante, Virare (non Ghermire), Volontà di Ferro, più Allerta · **Abilità** e il resto: come A.1  
+For 33, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +25; Lotta +44 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Impregnante, Virare (non Ghermire), Volontà di Ferro, più Allerta · **Abilità** Ascoltare +31, Cercare +29, Concentrazione +32, Intimidire +29, Muoversi Silenziosamente +27, Nascondersi +19, Osservare +31, Sapienza Magica +29, Nuotare +18: come l'Adulto più Allerta (il blocco non spende i gradi dei tre DV in più)  
 
 **CAPACITÀ SPECIALI**
 ___
 - **Presenza Terrificante**: raggio 72 m, Volontà CD 26 (meno di 25 DV).  
-- **Soffio impregnante**, come A.1, ma toglierselo è Riflessi CD 31, la CD del suo soffio.  
+- **Soffio impregnante**, quando lo sceglie: chi ne prende danno ne riprende metà al round dopo; toglierselo è un'azione di round completo con Riflessi CD 31 (+2 rotolando a terra, e si resta proni); la ricarica sale di 1 round.  
+- **Respirare sott'acqua** (Str).  
 }}
 <!-- /include -->
 
@@ -5023,51 +5023,8 @@ gliela portano la riprende in cambio della sua parola, non di monete.
 ---
 
 <!-- pagina: una-colonna -->
-### A.1 · Skullcrusher il Nero (Scena 11)
+### A.1-ter · Cosa cambia al tavolo, con l'Adulto o con il Vecchio
 
-Skullcrusher è un **drago nero adulto maturo** dell'SRD, con la
-resistenza agli incantesimi e la lista degli incantesimi. I numeri sono quelli
-della tabella del drago nero (d20srd.org, *Dragon, True*); talenti, abilità e
-incantesimi conosciuti sono quelli dell'SRD. Sopra c'è il template **Avanzato**
-di PF1e, nella versione completa (+4 a tutte le caratteristiche, +2 di armatura
-naturale), **senza alzare il GS**: vale come un GS 15 e si conta come 14.
-
-{{monster,frame
-## Skullcrusher il Nero, il Primo Nero
-*Drago Enorme (acqua), caotico malvagio · drago nero adulto maturo, Avanzato · capostipite di Fauci di Palude* · GS 14
-___
-**Taglia** Enorme · **Spazio** 4,5 m (3×3 quadretti) · **Portata** 3 m (2 quadretti); 4,5 m (3 quadretti) con il morso
-**Iniziativa** +6 · **Sensi** percezione cieca 18 m, scurovisione 36 m, visione crepuscolare ×4; Ascoltare +29, Osservare +29
-
-**DIFESA**
-___
-**CA 33** (−2 taglia, +2 DES, +23 naturale), contatto 10, impreparato 31; **37 con *armatura magica***, che si lancia prima del duello e dura 5 ore: al duello della Scena 11 è **già addosso**, quindi CA 37 · **pf 297** (22d12+154) · TS Temp +20, Rifl +17, Vol +19 · RD 10/magia · RI 21 · immune acido, sonno, paralisi  
-
-**ATTACCO**
-___
-Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +30 (2d8+10), 2 artigli +25 (2d6+5), 2 ali +25 (1d8+5), colpo di coda +25 (2d6+15) · Spazio 4,5 m, portata 3 m (morso 4,5 m) · **Schiacciare** (in volo o saltando, azione standard) 2d8+15, Riflessi CD 28 o immobilizzati; solo contro creature Piccole o minori: i nani e i PG Medi non li schiaccia · **Soffio acido** (Sop) linea di 30 m, 14d4, Riflessi CD 30 dimezza (28 + Capacità Focalizzata), di nuovo dopo 1d4 round · **Capacità magiche** 3/giorno *oscurità* (raggio 21 m); 1/giorno *corrompere l'acqua* (CD 25: rovina anche le pozioni che un PG ha addosso, se falliscono il TS) · **Incantesimi da stregone** (incantatore di 5°, CD 14 + livello): 0 (6/giorno) *individuazione del magico, lettura del magico, mano magica, resistenza, suono fantasma, frastornare*; 1° (7/giorno) *armatura magica, scudo, colpo accurato, dardo incantato*; 2° (5/giorno) *vedere invisibilità, immagine speculare*  
-
-**TATTICHE**
-___
-Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf. Qui sotto, «Cosa cambia al tavolo», i numeri che contano nel duello.  
-
-**STATISTICHE**
-___
-For 31, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +22; Lotta +40 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Impregnante, Virare, Volontà di Ferro · **Abilità** Ascoltare +29, Cercare +29, Concentrazione +32, Intimidire +29, Muoversi Silenziosamente +27, Nascondersi +19, Osservare +29, Sapienza Magica +29, Nuotare +18  
-
-**CAPACITÀ SPECIALI**
-___
-- **Soffio impregnante**, quando lo sceglie: chi ne prende danno ne riprende metà al round dopo; toglierselo è un'azione di round completo con Riflessi CD 30 (+2 rotolando a terra, e si resta proni); la ricarica sale di 1 round.  
-- **Presenza Terrificante** (Str): raggio 63 m, Volontà CD 25; chi ha meno di 22 DV è scosso per 4d6 round (4 DV o meno: in preda al panico); chi supera il TS è immune per 24 ore.  
-- **Respirare sott'acqua** (Str).  
-}}
-
-**Perché GS 14** (scelta del DM): la nota D8 lo voleva GS 12, un Adulto «potenziato» senza numeri. Adesso è un drago dell'SRD intero, Avanzato senza alzare il GS. EL 14 sulla carta, 15 al tavolo: sotto il tetto di APL+4. Il vero climax resta Fauci nel 1372: qui si semina.
-- Boost log: due talenti cambiati, scelti fra le versioni più forti (regola del DM: prima il 3.5 completo, poi PF1e, poi SRD) — GS 14 → 14 (vale 15), EL invariato — il DM vuole la versione più terrificante. *Virare* → **Capacità Focalizzata (soffio)** (SRD, *Ability Focus*: +2 alla CD, soffio CD 28 → 30). *Attacco Poderoso* → **Soffio Impregnante** (*Clinging Breath*) `[Private source — Draconomicon (WotC 2003), p. 67]`: talento di metasoffio, **fuori dall'SRD**; si sceglie a ogni soffio, e quando lo usa la ricarica sale di 1 round. Diverge dall'SRD solo qui: il resto del blocco è il drago nero adulto maturo dell'SRD con il template Avanzato. Restano *Ghermire*, *Fluttuare* e *Attacco in Volo*, che la Scena 11 usa, e *Riflessi Fulminei* e *Volontà di Ferro*, che reggono i TS. Il telaio è stato riverificato sulla tabella SRD (*Black Dragon*, adulto maturo: 22 DV, FOR 27, COS 21, CA 29, soffio 14d4 CD 26, Presenza CD 23, RI 21, LI 5) e il template rifatto: i numeri del blocco tornano tutti. Il grado d'età sopra (Vecchio, GS 16) resta al gruppo di 14° per D60. 🔎 Il testo del talento viene da una trascrizione secondaria del Draconomicon.
-- Boost log: un talento cambiato: *Ghermire* → **Virare** (SRD, *Wingover*) — GS 14 → 14 (vale 15), EL invariato — la presa in bocca è la firma di Fauci di Palude contro Thorik, e il duello del 372 non deve ripetere quello del 1372. Skullcrusher combatte in passata e dice il nome prima di colpire, con *colpo accurato*, che aveva già. Il drago è meno letale sul singolo PG: niente picco della presa, il soffio in bocca e la caduta. Vale anche per il Vecchio, che ha i talenti di questo blocco.
-
-
-**Cosa cambia al tavolo, rispetto ai numeri di prima**
 
 - **I PG invisibili non gli sfuggono da vicino.** La percezione cieca
   localizza tutto entro 18 m: sa in che quadretto è un PG invisibile, che
@@ -5078,7 +5035,7 @@ ___
   tutto il duello. Di notte sulle colline non l'ha
   lanciato, perché non si aspetta nessuno.
 - **Il soffio fa più male**: 14d4 (in media 35) invece di 12d4, e Riflessi
-  CD 30. La runa di Zeth (*resistere all'energia* 20) ne toglie ancora più
+  CD 30; col Vecchio 16d4 (in media 40), CD 31. La runa di Zeth (*resistere all'energia* 20) ne toglie ancora più
   della metà.
 - **L'acido resta addosso** (*Soffio Impregnante*). Quando lo sceglie,
   chi ha preso danno dal soffio ne riprende metà all'inizio del round dopo:
@@ -5086,7 +5043,7 @@ ___
   toglie 20 anche a questo, che è un danno a sé, e di solito lo spegne tutto.
   Il prezzo per il drago: la ricarica è 1d4+1 round. Lo usa al primo soffio,
   quando il gruppo è fitto, e non quando ha fretta di soffiare di nuovo.
-- **La RI 21**: un incantatore di 12°-13° livello la supera con 8 o 9 sul d20
+- **La RI 21** (22 col Vecchio): un incantatore di 12°-13° livello la supera con 8 o 9 sul d20
   (d20 + livello contro 21), quindi un incantesimo su tre circa si spegne. Le
   invocazioni di Artemis la subiscono come gli incantesimi.
 - **RD 10/magia**: le armi dei PG sono magiche; le balestre delle mura, no.
@@ -5094,7 +5051,7 @@ ___
   dell'oggetto sulla Volontà del portatore). Lo usa al primo turno libero dal
   soffio, se vede qualcuno bere (Scena 11, round 2-3).
 - **Il nome** (*colpo accurato*): +20 al prossimo attacco entro il round
-  dopo, e l'occultamento non conta. Il morso sul PG nominato è a +50, e
+  dopo, e l'occultamento non conta. Il morso sul PG nominato è a +50 (+54 col Vecchio), e
   l'invisibilità di Artemis non lo salva. Lo lancia a metà della passata, con
   Attacco in Volo, e il morso arriva alla passata dopo (Scena 11). Il nome
   non lo chiede: è quello sentito di notte attraverso il corno, o un epiteto

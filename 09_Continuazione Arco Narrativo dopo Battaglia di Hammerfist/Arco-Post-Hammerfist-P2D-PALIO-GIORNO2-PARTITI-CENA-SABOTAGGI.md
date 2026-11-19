@@ -138,7 +138,7 @@ invia **sicari drow** a Channathgate per **avvelenare** il cavallo dell'Istrice/
 
 - **L'incontro** (GS 11–12, mappa stalla in MAPPE): **2 Drow Assassini** (GS 9) + **1 Drow
   Chierica di Lolth** (GS 10) + un **innesto fungino** (Servitore della Spora, GS 3) come
-  ariete vivente. Tattica: buio magico, veleno CD 16, colpire il cavallo (non i PG).
+  ariete vivente. Tattica: buio magico, veleno CD 16, colpire il cavallo o rapire il fantino, a scelta del DM; gli altri PG non sono il bersaglio (STATBLOCCHI §3.1).
 - **Poste**:
   - Cavallo avvelenato → **−4 Cavalcare** in corsa (o morte del cavallo → si corre scossi
     o con una brenna di riserva).
@@ -154,6 +154,10 @@ invia **sicari drow** a Channathgate per **avvelenare** il cavallo dell'Istrice/
 > frappone tra il veleno e la bestia è un momento eroico da incorniciare.
 
 ---
+
+<!-- storico -->
+- era: «colpire il cavallo (non i PG)» nella tattica dell'incontro della stalla (fino al 2026-11-19; card del DM: cavallo o fantino)
+<!-- /storico -->
 
 ## 4. Sottotrame notturne opzionali (allungano a 4–5 sessioni)
 - **La Maledizione della Nonna**: la contrada che non vince da più tempo (a scelta del DM,

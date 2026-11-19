@@ -2288,3 +2288,25 @@ repo scritto con altre parole.
 - **Testo:** dopo la #478 restavano due differenze, messe su card dal thread del volume. Il DM ha scelto: la riga a distanza della Drow Assassina scrive anche il danno entro 9 m (1d4+1 + veleno, Tiro Ravvicinato SRD dà +1 all'attacco e ai danni); la tabella in prosa di Varis elenca il giaco di cuoio borchiato +1 e il pugnale +1 già nel blocco. Tiene gli oggetti aggiunti senza card nella #458 e nella #478: giaco e pugnale di Varis, anello +1 di Tempestas, 10 quadrelli della Drow Assassina e di Therysol
 - **Trovato nel repo:** `Bestiario/mostri/drow-assassina-lolth-cr10.md` · `Bestiario/png/Varis_Seta_Argento/Varis_Seta_Argento.md`
 - **Solo qui:** le note della tabella di Varis dicono solo ciò che la scheda già scriveva (CA 16, attacco +7/+2, 1d4+1); «sotto le sete» era una frase inventata e non è entrata
+
+### MS-0203 · 2026-11-19 · I sicari di Sonjak al Palio possono rapire il fantino
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** —
+- **Temi:** tattiche villain palio sonjak sicari drow fantino arc09 decisione-dm card coerenza
+- **Origine:** riga del 2026-11-19 «Tattiche di villain e PNG, Palio: i sicari di Sonjak possono puntare il cavallo o il fantino» in `plans/CHANGELOG.md`
+- **Testo:** la rilettura del 18/11 (MS-0189) aveva lasciato aperta una differenza fra due file precedenti al lavoro sulle tattiche: gli statblocchi del Palio davano ai sicari drow solo il cavallo, l'integrazione e il Giorno 2 anche il fantino da rapire. Il DM ha scelto sulla card del 19/11 la consigliata, «cavallo o fantino, sceglie il DM»: gli statblocchi si allineano agli altri due file. Come lo prendono (veleno del sonno della balestra, la scorta del fantino trattata come la guardia della stalla) è dedotto dalla scheda dei sicari, non scritto altrove.
+- **Trovato nel repo:** `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md` §3.1, col blocco `<!-- storico -->`
+- **Solo qui:** il booklet HTML del Palio su main non era stato rigenerato dopo la #465 e la #478; rigenerarlo porta dentro anche quelle righe. La rilettura completa dei lotti 1-4 fatta nello stesso thread ha trovato tre punti da decidere (CD della *suggestione* di Xal'thor, slot di Xilthra, Zalkatar con Ozyrrandion), messi su card; la voce che segue dice come sono finiti.
+
+### MS-0204 · 2026-11-19 · Rilettura completa dei lotti 1-4 delle tattiche: due contraddizioni con la scheda
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** —
+- **Temi:** tattiche villain xalthor xilthra zalkatar kragar arc09 rilettura decisione-dm card slot suggestione
+- **Origine:** riga del 2026-11-19 «Tattiche di villain e PNG, rilettura completa dei lotti 1-4 contro le schede» in `plans/CHANGELOG.md`
+- **Testo:** MS-0189 aveva riletto i lotti 1-4 solo nelle righe aggiunte. La rilettura completa, riga per riga contro la scheda di ognuno, ha trovato due contraddizioni, decise dal DM sulle card del 19/11 con la consigliata, e ha aperto una terza card sbagliata. Xal'thor: la *suggestione* su Tordek era CD 20 nella scena (dal maggio 2026) e nella tattica, CD 16 nei poteri; vale 16, che si ricostruisce dalla scheda. Xilthra: la card diceva che mancava uno slot al 2°, 3° e 4°, e il DM ha scelto di aggiungerli; ma il conto era sbagliato (chierico 12: 4/4/3 slot base a quei livelli, non 5/5/4) e `verifica_scheda`, che conta gli slot, dà 6 violazioni con la modifica e 0 senza. La scheda resta com'è e la scelta della card non si applica. Zalkatar: con Ozyrrandion lo mandava in lotta su un PG sano, contro «mai in mischia» della card del 15/11.
+- **Trovato nel repo:** i file della riga del changelog, ognuno col blocco `<!-- storico -->`
+- **Solo qui:** riletti senza correzioni Zog'tar e Balvar (ARC07-DEF-4 Scena 10, BARILE §8: il Colpo Terrificante è un'azione standard e la tattica lo mette in round diversi dall'attacco completo, l'Occhio è un'azione di movimento), Gorthak, Karruk, Zarim, Sethrax, Azarr Kul, Ushgar. Kragar (P2B BATTLE-STATS r.64-74) ha conti sbagliati più vecchi delle tattiche: Ladro 4 con attacco furtivo +3d6 (SRD +2d6), 88 pf invece di circa 98, nessuna Competenza nelle armi esotiche per la catena; segnalati al coordinatore per il thread delle regole. Lezione: prima di aprire una card su un numero di scheda, lanciare `verifica_scheda` su quella scheda.

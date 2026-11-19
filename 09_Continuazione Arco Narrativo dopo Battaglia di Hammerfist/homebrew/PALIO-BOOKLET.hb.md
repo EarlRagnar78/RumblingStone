@@ -1743,7 +1743,7 @@ invia **sicari drow** a Channathgate per **avvelenare** il cavallo dell'Istrice/
 
 - **L'incontro** (GS 11–12, mappa stalla in MAPPE): **2 Drow Assassini** (GS 9) + **1 Drow
   Chierica di Lolth** (GS 10) + un **innesto fungino** (Servitore della Spora, GS 3) come
-  ariete vivente. Tattica: buio magico, veleno CD 16, colpire il cavallo (non i PG).
+  ariete vivente. Tattica: buio magico, veleno CD 16, colpire il cavallo o rapire il fantino, a scelta del DM; gli altri PG non sono il bersaglio (STATBLOCCHI §3.1).
 - **Poste**:
   - Cavallo avvelenato → **−4 Cavalcare** in corsa (o morte del cavallo → si corre scossi
     o con una brenna di riserva).
@@ -1759,6 +1759,7 @@ invia **sicari drow** a Channathgate per **avvelenare** il cavallo dell'Istrice/
 > frappone tra il veleno e la bestia è un momento eroico da incorniciare.
 
 ---
+
 
 ## 4. Sottotrame notturne opzionali (allungano a 4–5 sessioni)
 - **La Maledizione della Nonna**: la contrada che non vince da più tempo (a scelta del DM,
@@ -2883,11 +2884,11 @@ Statistiche-corsa astratte (mod. applicato ai tiri di Zona del fantino):
 **CA** 21 · **pf** 58 · *scheda in appendice*
 
 **TATTICHE**
-**Obiettivo**: **il cavallo**, non i PG: colpire e sparire. Se scoperti, coprono la fuga.  
+**Obiettivo**: **il cavallo** o **il fantino**, quale dei due lo sceglie il DM; gli altri PG non sono il bersaglio. Colpire e sparire. Se scoperti, coprono la fuga.  
 }}
 
 
-*Cosa sanno dei PG e in che stato li trovano*: Sonjak gli ha detto quale stalla e quale cavallo, non chi la guarda. Arrivano la notte del Giorno 2, dopo la Cena della Prova Generale e gli intrighi dei Partiti, quando i PG dormono o fanno la guardia a turno: uno sveglio, gli altri con quello che resta degli incantesimi del giorno. L'obiettivo resta il cavallo: chi è di guardia lo evitano, e lo colpiscono solo se sta fra loro e il cavallo o se li scopre, per coprire la fuga. <!-- [INFERRED — Sonjak sa chi fa la guardia alla stalla?; base: §3.1 e la scheda di Sonjak dicono il mandante, non che cosa sa dei PG] (marca tolta dal booklet stampato) -->
+*Cosa sanno dei PG e in che stato li trovano*: Sonjak gli ha detto quale stalla e quale cavallo, non chi la guarda. Arrivano la notte del Giorno 2, dopo la Cena della Prova Generale e gli intrighi dei Partiti, quando i PG dormono o fanno la guardia a turno: uno sveglio, gli altri con quello che resta degli incantesimi del giorno. L'obiettivo resta il cavallo o il fantino, anche quando il fantino è un PG (AVVENTURA §4): chi è di guardia lo evitano, e lo colpiscono solo se sta fra loro e il bersaglio o se li scopre, per coprire la fuga. Se il DM sceglie il fantino, lo addormentano con la balestra (veleno del sonno) e lo portano via nel buio; la sua scorta la trattano come la guardia della stalla. <!-- [INFERRED — Sonjak sa chi fa la guardia alla stalla?; base: §3.1 e la scheda di Sonjak dicono il mandante, non che cosa sa dei PG] (marca tolta dal booklet stampato) -->
 
 
 ### 3.2 Drow Chierica di Lolth (GS 10)

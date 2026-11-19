@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-19 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, revisione storica delle schede su dnd.arkalseif.info (richiesta del D… | verifica_scheda contro main 517a3e79: violazioni 34 → 2 (le due di *fulmine* di Tempestas, card aperta), non verificabili 386 → 387 |
 | 2026-11-19 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Log di ogni giro del kit (richiesta del DM del 19/11): `rs_registra` in… | ✅ prova finta (20 righe su stdout, 10 su stderr, un avviso, un traceback, uscita 3): righe salvate in un file da 0/32 su main a 32/32; codice d'uscita scritto… |
 | 2026-11-19 | STATO-E-ORDINE | Due test che dipendevano dalla macchina, corretti con il test scritto prima.… | ✅ |
 | 2026-11-19 | STATO-E-ORDINE | ADR-0143: i gate bloccanti e veloci della CI girano prima del push.… | ✅ |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-19 | STATO-E-ORDINE | ADR-0139: la memoria corta ha un tetto di 12 KB misurato da… | indice riscritto a 11.255 byte senza perdere fatti (18 PR citate, tutte con voce; righe senza posto in coda); 4 test nuovi, 18 su 18 verdi; il controllo non pa… |
 | 2026-11-19 | AVVENTURE-COMMUNITY | Lettore del RAG per «chi sa cosa»: esito della prova da 7B sulla RTX 4050 del DM | `qwen2.5:7b` via Ollama sulla 4050, 636 risposte su 636 in circa 2 minuti (87% del modello in VRAM). Il criterio di ESITO.md non è raggiunto e il 7B non entra… |
 | 2026-11-19 | SISTEMI-DI-GIOCO-PLUGIN | `conformita_statblocchi`: il talento di una riga di variante non entra nei TS a… | ✅ test nuovo rosso su main, verde qui |
-| 2026-11-18 | AVVENTURE-COMMUNITY | Calendario di ARC-09: i «Mirtul» rimasti diventano «Flamerule» (scelta del DM d… | dopo la scelta del DM che il Giorno di Marcia 1 è il 1° Flamerule (la Torre cammina il 30 Flamerule), 31 «Mirtul» restavano in 9 file fuori dalla PR della cart… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 201 voci, l'ultima MS-0201 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 202 voci, l'ultima MS-0202 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

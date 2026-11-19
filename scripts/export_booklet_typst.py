@@ -1080,6 +1080,10 @@ CHIAVI_NOTE = {
     "out", "chapters", "carta", "capolettera", "fregio", "colophon", "formato",
     "schede", "chi_si_incontra", "pagine_nei_rimandi", "indice_analitico",
     "guida_righe_finali", "indice_profondita",
+    # Non le compone nessuna delle due catene: le legge misura_ordine.py
+    # (ADR-0145), e il manifest è il loro posto perché stanno accanto ai
+    # capitoli che giudicano.
+    "ruoli_sezioni",
 }
 CHIAVI_SOLO_HTML = {"player_footer", "header", "cover_tag", "out"}
 

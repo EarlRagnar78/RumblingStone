@@ -6,13 +6,18 @@ booklet della serata segue gli standard editoriali, o al tavolo si perde
 l'informazione e si va a braccio?
 
 Il PDF dà le sezioni e le loro pagine (i segnalibri). Il **ruolo** di ogni
-sezione (avvio, preparazione, gioco, sintesi, fuori serata, riferimento) è
-un'etichetta scritta a mano in `ruoli-<nome>.json`: è il giudizio di chi
-legge, dichiarato e rivedibile, non una misura. Da lì le regole sono
+sezione (avvio, preparazione, gioco, sintesi, fuori serata, riferimento) sta
+nel manifest del booklet: la chiave `ruolo` di ogni capitolo, e per le
+eccezioni dentro un capitolo la lista `ruoli_sezioni` (stesse chiavi di una
+regola: `titolo` come regex, `ruolo`, `riassume`, `scena`, `doppione_di`).
+È il giudizio di chi legge, dichiarato e rivedibile, non una misura: dal
+2026-11-19 sta accanto ai capitoli che giudica, non in un file a parte che
+si dimentica quando un capitolo cambia nome. Da lì le regole sono
 deterministiche:
 
 | regola | fonte | misura |
 |---|---|---|
+| R0 ogni capitolo ha un ruolo | CMOS 1.4 (ogni parte del libro è front, body o back matter); EPUB 3 `epub:type` | capitoli senza `ruolo` nel manifest |
 | R1 avvio in testa | Paizo «Adventure Summary» prima delle Part; EN World, «the scheme up front» | pagine d'avvio prima del primo gioco / pagine d'avvio |
 | R2 preparazione prima del gioco | Shea, *Lazy DM* (passo 1 «Review the Characters», passo 6 PNG); ADR-0013 (regia prima dei master) | pagine di preparazione prima del primo gioco / pagine di preparazione |
 | R3 ordine di gioco = ordine di pagina | ADR-0013 («ordine di gioco»); Alexander, *The Art of the Key* («nell'ordine in cui serve») | coppie di scene consecutive con la pagina che scende |
@@ -29,7 +34,11 @@ Per il volume d'arco (una regola con `"parte": true` apre ogni parte) valgono
 in più V1 (il quadro del volume prima della Parte I), V2 (l'indice in due
 pagine) e V3 (nessuna parte senza gioco fra due parti giocate), e le regole sopra si contano parte per parte: vedi `misura_volume`.
 
-Uso: python3 scripts/misura_ordine.py PDF RUOLI.json [--json]
+Il cancello è in `misura_stampa.py`: un booklet il cui manifest dichiara i
+ruoli registra `difetti_ordine`, con il tetto che scende soltanto.
+
+Uso: python3 scripts/misura_ordine.py PDF MANIFEST.json [--json]
+     (o un file `{"regole": [...]}` per un PDF di prima dei ruoli nel manifest)
 """
 from __future__ import annotations
 
@@ -84,6 +93,40 @@ def etichetta(sez: list[dict], regole: list[dict]) -> list[dict]:
             if scelto and k in scelto and scelto is ruolo:
                 s[k] = scelto[k]
     return sez
+
+
+#: Le chiavi di una regola che passano dal manifest alla misura.
+CHIAVI_REGOLA = ("parte", "scena", "riassume", "doppione_di")
+
+
+def regole_dal_manifest(man: dict, titoli: list[str]) -> list[dict]:
+    """Le regole di `etichetta` dal manifest del booklet (ADR-0145, dal
+    2026-11-19): il ruolo di un capitolo è la chiave `ruolo` del capitolo,
+    le eccezioni dentro i capitoli sono in `ruoli_sezioni`. `titoli` sono i
+    segnalibri di primo livello, nell'ordine del PDF.
+
+    Un segnalibro di primo livello che non è un capitolo del manifest lo ha
+    aggiunto l'esportatore: l'introduzione (`intro_md`), prima dei capitoli,
+    è materia d'apertura e vale «avvio»; le appendici generate (le creature,
+    le mappe), dopo, sono materia di chiusura e valgono «riferimento». È la
+    divisione di CMOS 1.4 (front, body, back matter). Un capitolo senza
+    `ruolo` resta «?» e la misura lo conta come difetto (R0)."""
+    capitoli = {c.get("title"): c for c in man.get("chapters", [])}
+    regole, visto = [], False
+    for t in titoli:
+        c = capitoli.get(t)
+        visto = visto or c is not None
+        ruolo = (c.get("ruolo", "?") if c is not None
+                 else "riferimento" if visto else "avvio")
+        r = {"titolo": "^" + re.escape(t) + "$", "ruolo": ruolo, "capitolo": True}
+        r.update({k: c[k] for k in CHIAVI_REGOLA if c is not None and k in c})
+        regole.append(r)
+    return regole + [dict(r) for r in man.get("ruoli_sezioni", [])]
+
+
+def ha_ruoli(man: dict) -> bool:
+    """Il manifest dichiara i ruoli: almeno un capitolo ha la chiave `ruolo`."""
+    return any("ruolo" in c for c in man.get("chapters", []))
 
 
 def pagine(sez, ruolo):
@@ -215,10 +258,57 @@ def misura_volume(sez: list[dict], pagine_indice: int) -> dict:
             "parti": parti}
 
 
+def violazioni(m: dict) -> list[tuple[str, object]]:
+    """Le regole violate, con il loro valore: il dettaglio di `difetti` e
+    `difetti_volume`, parte per parte nel volume."""
+    out = [(k, m[k]) for k in ("R0_capitoli_senza_ruolo", "R2_dopo", "R3_scene_fuori_ordine",
+                               "R4_dettaglio", "R6_pagine", "R7_doppioni",
+                               "R7_riferimento_prima_della_fine_del_gioco", "R8_guida_sbagliata",
+                               "V2_pagine_di_indice_oltre_due", "V3_parti_senza_gioco_fra_le_parti")
+           if m.get(k)]
+    if "parti" in m and m["V1_quadro_del_volume"] == 0:
+        out.append(("V1_quadro_del_volume", 0))
+    for t, p in m.get("parti", {}).items():
+        out += [(f"{t} · {k}", x) for k, x in violazioni(p)]
+    return out
+
+
 def difetti_volume(m: dict) -> int:
     return ((m["V1_quadro_del_volume"] == 0) + m["V2_pagine_di_indice_oltre_due"]
             + len(m.get("V3_parti_senza_gioco_fra_le_parti", []))
             + sum(difetti(p) for p in m["parti"].values()))
+
+
+def misura_completa(pdf: Path, regole: list[dict]) -> tuple[dict, list[dict], int]:
+    """Etichetta il PDF, lo misura come serata o come volume (una regola con
+    `"parte": true` lo fa volume) e conta i difetti. R0, i capitoli senza
+    ruolo, vale per entrambi: un capitolo che il manifest non sa dire dove va
+    è un difetto, non un'assenza di misura."""
+    sez = etichetta(sezioni(pdf), regole)
+    senza = [x["titolo"] for x in sez if x["livello"] == 1 and x["ruolo"] == "?"]
+    if any(x.get("parte") for x in sez):
+        import pymupdf
+        doc = pymupdf.open(pdf)
+        primo = min(x["da"] for x in sez if x.get("parte"))
+        m = misura_volume(sez, pagine_di_indice([doc[n].get_text() for n in range(primo - 1)]))
+        n = difetti_volume(m)
+    else:
+        m = misura(sez)
+        m["R8_guida_sbagliata"] = guida_sbagliata(*guida_del_pdf(pdf))
+        n = difetti(m)
+    m["R0_capitoli_senza_ruolo"] = senza
+    return m, sez, n + len(senza)
+
+
+def regole_per(pdf: Path, ruoli: Path) -> list[dict]:
+    """Le regole da un manifest di booklet (i ruoli nei capitoli) o da un
+    file di regole a parte (`{"regole": [...]}`), per i PDF di prima."""
+    dato = json.loads(ruoli.read_text(encoding="utf-8"))
+    if "chapters" in dato:
+        import pymupdf
+        titoli = [t.strip() for l, t, _ in pymupdf.open(pdf).get_toc() if l == 1]
+        return regole_dal_manifest(dato, titoli)
+    return dato["regole"]
 
 
 def main(argv):
@@ -226,43 +316,31 @@ def main(argv):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0],
                                  epilog="ADR-0145. Regole e fonti nella docstring del modulo.")
     ap.add_argument("pdf", type=Path, help="il PDF composto del booklet")
-    ap.add_argument("ruoli", type=Path, help="il file JSON dei ruoli delle sezioni")
+    ap.add_argument("ruoli", type=Path,
+                    help="il manifest del booklet (ruoli nei capitoli) o un file di regole")
     ap.add_argument("--json", action="store_true", help="misure e sezioni in JSON")
     a = ap.parse_args(argv)
-    pdf, ruoli = a.pdf, a.ruoli
-    sez = etichetta(sezioni(pdf), json.loads(ruoli.read_text(encoding="utf-8"))["regole"])
-    if any(x.get("parte") for x in sez):
-        import pymupdf
-        doc = pymupdf.open(pdf)
-        primo = min(x["da"] for x in sez if x.get("parte"))
-        m = misura_volume(sez, pagine_di_indice([doc[n].get_text() for n in range(primo - 1)]))
-        if "--json" in argv:
-            print(json.dumps({"misura": m, "sezioni": sez}, ensure_ascii=False, indent=1))
-            return 0
-        for x in sez:
-            print(f"{'  ' * (x['livello'] - 1)}{x['ruolo']:>13}  {x['da']:>3}-{x['a']:<3} {x['titolo'][:70]}")
-        print()
-        print(f"V1_quadro_del_volume: {m['V1_quadro_del_volume']}")
-        print(f"V2_pagine_di_indice_oltre_due: {m['V2_pagine_di_indice_oltre_due']}")
-        print(f"V3_parti_senza_gioco_fra_le_parti: {m['V3_parti_senza_gioco_fra_le_parti']}")
+    m, sez, n = misura_completa(a.pdf, regole_per(a.pdf, a.ruoli))
+    if a.json:
+        print(json.dumps({"misura": m, "sezioni": sez, "difetti": n}, ensure_ascii=False, indent=1))
+        return 0
+    for x in sez:
+        print(f"{'  ' * (x['livello'] - 1)}{x['ruolo']:>13}  {x['da']:>3}-{x['a']:<3} {x['titolo'][:70]}")
+    print()
+    if "parti" in m:
+        for k in ("V1_quadro_del_volume", "V2_pagine_di_indice_oltre_due",
+                  "V3_parti_senza_gioco_fra_le_parti", "R0_capitoli_senza_ruolo"):
+            print(f"{k}: {m[k]}")
         for t, mp in m["parti"].items():
             print(f"\n{t} — difetti {difetti(mp)}")
             for k, v in mp.items():
                 if v not in ([], 0) and not str(v).startswith("0/"):
                     print(f"  {k}: {v}")
-        print(f"\ndifetti di struttura: {difetti_volume(m)}")
-        return 0
-    m = misura(sez)
-    m["R8_guida_sbagliata"] = guida_sbagliata(*guida_del_pdf(pdf))
-    if "--json" in argv:
-        print(json.dumps({"misura": m, "sezioni": sez}, ensure_ascii=False, indent=1))
-    else:
-        for s in sez:
-            print(f"{'  ' * (s['livello'] - 1)}{s['ruolo']:>13}  {s['da']:>3}-{s['a']:<3} {s['titolo'][:70]}")
         print()
+    else:
         for k, v in m.items():
             print(f"{k}: {v}")
-        print(f"difetti di struttura: {difetti(m)}")
+    print(f"difetti di struttura: {n}")
     return 0
 
 

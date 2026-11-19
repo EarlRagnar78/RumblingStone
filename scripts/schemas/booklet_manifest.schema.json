@@ -156,6 +156,23 @@
       "items": {"type": "array", "items": {"type": "string"}, "minItems": 3, "maxItems": 3},
       "description": "Righe in coda alla guida ai capitoli generata (capitolo, per chi, quando), per ciò che non è un capitolo del volume, come il volume dei giocatori. Vale solo se qualche capitolo ha `quando`. Catene: tutte e due."
     },
+    "ruoli_sezioni": {
+      "type": "array",
+      "description": "ADR-0145: le eccezioni al ruolo del capitolo, sezione per sezione. Ogni voce ha `titolo` (regex sul segnalibro), `ruolo` e, se servono, `riassume`, `scena`, `doppione_di`, `nota`. La prima voce che combacia vince; una sezione senza voce prende il ruolo della sezione o del capitolo che la contiene. Catene: nessuna, è una misura.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["titolo", "ruolo"],
+        "properties": {
+          "titolo": {"type": "string"},
+          "ruolo": {"type": "string", "enum": ["avvio", "preparazione", "gioco", "sintesi", "fuori-serata", "riferimento", "regole"]},
+          "riassume": {"type": "string"},
+          "scena": {"type": "integer"},
+          "doppione_di": {"type": "string"},
+          "nota": {"type": "string"}
+        }
+      }
+    },
     "chapters": {
       "type": "array",
       "minItems": 1,
@@ -239,6 +256,31 @@
               "type": "string"
             },
             "description": "Solo queste sezioni del master, nell'ordine dato: ogni voce è l'inizio del testo di un titolo markdown; «testa:X» prende solo il testo fino al primo sottotitolo. Lo stesso master può dare più capitoli. Per il booklet della serata (ADR-0122). Catene: stampa e Homebrewery."
+          },
+          "ruolo": {
+            "type": "string",
+            "enum": ["avvio", "preparazione", "gioco", "sintesi", "fuori-serata", "riferimento", "regole"],
+            "description": "ADR-0145: a che cosa serve il capitolo al tavolo. avvio e preparazione sono la materia d'apertura di CMOS 1.4 (front matter), gioco e sintesi il corpo, fuori-serata e riferimento la chiusura (back matter); regole è il riquadro delle regole opzionali. L'introduzione e le appendici generate non lo dichiarano: valgono avvio e riferimento. Se un capitolo del manifest lo ha, tutti devono averlo. Lo legge misura_ordine.py; misura_stampa.py ne fa un cancello (difetti_ordine). Catene: nessuna, è una misura."
+          },
+          "ruolo_nota": {
+            "type": "string",
+            "description": "Perché il capitolo ha quel ruolo, quando non è ovvio: una scelta del DM, una card. Catene: nessuna."
+          },
+          "parte": {
+            "type": "boolean",
+            "description": "Volume d'arco: il capitolo apre una parte (Parte I, II…), e misura_ordine.py lo misura come una serata (ADR-0122, ADR-0145). Catene: nessuna, è una misura."
+          },
+          "scena": {
+            "type": "integer",
+            "description": "Il numero della scena con cui il capitolo comincia, nell'ordine di gioco: misura_ordine.py controlla che l'ordine delle pagine lo segua (R3). Catene: nessuna, è una misura."
+          },
+          "riassume": {
+            "type": "string",
+            "description": "Regex dei titoli che questo capitolo riassume: la sintesi va stampata prima del dettaglio (R4). Catene: nessuna, è una misura."
+          },
+          "doppione_di": {
+            "type": "string",
+            "description": "Il capitolo ristampa una sezione che è già altrove: misura_ordine.py lo conta come doppione (R7). Catene: nessuna, è una misura."
           }
         }
       }

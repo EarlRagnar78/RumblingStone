@@ -169,5 +169,67 @@ class TestVolume(unittest.TestCase):
         self.assertEqual(mo.pagine_di_indice(testi), 2)
 
 
+class TestRuoliNelManifest(unittest.TestCase):
+    """ADR-0145, 2026-11-19: i ruoli stanno nel manifest, accanto ai capitoli.
+    L'introduzione e le appendici generate non sono capitoli del manifest:
+    valgono avvio (prima) e riferimento (dopo), come in CMOS 1.4."""
+
+    MAN = {"chapters": [
+        {"title": "I · Regia", "ruolo": "avvio"},
+        {"title": "II · Atto I", "ruolo": "gioco", "scena": 1, "parte": True},
+        {"title": "III · Dopo", "ruolo": "fuori-serata"},
+    ], "ruoli_sezioni": [{"titolo": "^Tesoro", "ruolo": "riferimento"}]}
+    TITOLI = ["Dove siamo", "I · Regia", "II · Atto I", "III · Dopo", "Appendice: le creature"]
+
+    def test_regole_dai_capitoli_e_dalle_sezioni(self):
+        r = mo.regole_dal_manifest(self.MAN, self.TITOLI)
+        self.assertEqual([x["ruolo"] for x in r],
+                         ["avvio", "avvio", "gioco", "fuori-serata", "riferimento", "riferimento"])
+        self.assertEqual((r[2]["scena"], r[2]["parte"]), (1, True))
+        self.assertTrue(all(x["capitolo"] for x in r[:5]))
+        self.assertNotIn("capitolo", r[5])
+
+    def test_il_titolo_combacia_intero(self):
+        # «I · Regia» non deve prendere «I · Regia bis»: il titolo è esatto.
+        r = mo.regole_dal_manifest(self.MAN, self.TITOLI)
+        self.assertIsNone(__import__("re").search(r[1]["titolo"], "I · Regia bis"))
+
+    def test_capitolo_senza_ruolo_e_un_difetto(self):
+        man = {"chapters": [{"title": "I · Regia", "ruolo": "avvio"}, {"title": "II · Atto I"}]}
+        r = mo.regole_dal_manifest(man, ["I · Regia", "II · Atto I"])
+        sez = mo.etichetta([s("I · Regia", 1, 1, None), s("II · Atto I", 2, 3, None),
+                            s("Scena 1", 2, 2, None, livello=2)], r)
+        self.assertEqual([x["ruolo"] for x in sez], ["avvio", "?", "?"])
+
+    def test_violazioni_dicono_la_regola(self):
+        v = dict(mo.violazioni(mo.misura(DIFETTOSO)))
+        self.assertIn("R3_scene_fuori_ordine", v)
+        self.assertIn("R7_doppioni", v)
+        self.assertEqual(mo.violazioni(mo.misura(GIUSTO)), [])
+
+
+class TestManifestDelRepo(unittest.TestCase):
+    """Il cancello statico, senza PDF: un manifest che dichiara i ruoli li
+    dichiara per ogni capitolo, con un valore ammesso. Quello con il PDF è
+    `difetti_ordine` di misura_stampa.py."""
+
+    def test_ruoli_completi(self):
+        import json
+        radice = Path(__file__).resolve().parents[2]
+        visti = 0
+        for mp in radice.rglob("*.manifest.json"):
+            if ".git" in mp.parts or "build" in mp.parts:
+                continue
+            man = json.loads(mp.read_text(encoding="utf-8"))
+            if not mo.ha_ruoli(man):
+                continue
+            visti += 1
+            for c in man["chapters"]:
+                self.assertIn(c.get("ruolo"), mo.RUOLI, f"{mp.name}: {c.get('title')}")
+            for r in man.get("ruoli_sezioni", []):
+                self.assertIn(r["ruolo"], mo.RUOLI, f"{mp.name}: {r['titolo']}")
+        self.assertGreaterEqual(visti, 2, "la serata e il volume d'arco di ARC-07 dichiarano i ruoli")
+
+
 if __name__ == "__main__":
     unittest.main()

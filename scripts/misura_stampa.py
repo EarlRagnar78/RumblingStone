@@ -79,7 +79,7 @@ REGISTRO = ROOT / "docs" / "audit" / "stampa-booklet.json"
 #: Le misure con un tetto: si scende soltanto. Le altre si registrano e basta.
 CON_TETTO = ("testi_sotto_minimo", "fuori_margine", "immagini_sotto_300dpi",
              "schede_spezzate", "font_non_incorporati", "rimandi_sbagliati",
-             "immagini_tagliate")
+             "immagini_tagliate", "difetti_ordine")
 REGISTRATE = ("pagine", "corpo_mediano_pt", "corpo_minimo_pt", "schede", "pagine_con_immagine",
               "pagine_con_immagine_decimo", "parole", "quota_parole_ripetute")
 #: Le misure in prova (canale testing, ADR-0099): nate dal giro di lettura del
@@ -483,7 +483,9 @@ def main(argv: list[str] | None = None) -> int:
     for mp in a.manifest:
         mp = mp.resolve()
         pdf, schede, formato = compila_misurabile(mp)
-        risultati[mp.relative_to(ROOT).as_posix()] = misura_pdf(pdf, schede, formato)
+        v = misura_pdf(pdf, schede, formato)
+        v["difetti_ordine"], v["dettaglio"]["ordine"] = difetti_ordine(mp, pdf)
+        risultati[mp.relative_to(ROOT).as_posix()] = v
     if a.json:
         print(json.dumps(risultati, ensure_ascii=False, indent=2))
         return 0
@@ -516,6 +518,18 @@ def main(argv: list[str] | None = None) -> int:
             return 1
         print(f"✓ {len(risultati)} booklet, nessuno sopra i suoi tetti di stampa")
     return 0
+
+
+def difetti_ordine(mp: Path, pdf: Path) -> tuple[int, list]:
+    """ADR-0145: i difetti d'ordine del booklet (`misura_ordine.py`), se il
+    suo manifest dichiara i ruoli dei capitoli; 0 se non li dichiara, perché
+    senza ruoli l'ordine non si misura. Il dettaglio sono le regole violate."""
+    import misura_ordine as mo
+    man = json.loads(mp.read_text(encoding="utf-8"))
+    if not mo.ha_ruoli(man):
+        return 0, []
+    m, _, n = mo.misura_completa(pdf, mo.regole_per(pdf, mp))
+    return n, mo.violazioni(m)
 
 
 def valore(v: dict, misura: str) -> int:

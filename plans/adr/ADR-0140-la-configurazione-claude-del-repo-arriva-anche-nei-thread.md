@@ -52,7 +52,14 @@ obiettivo.
    che faceva prima.
 3. **Lo script d'avvio dell'ambiente `RumblingStone-corpus`** riceve una riga:
    `if [ -x RumblingStone/scripts/claude-progetto.sh ]; then RumblingStone/scripts/claude-progetto.sh "$PWD" || true; fi`.
-   La modifica la approva il DM; senza, lo script resta inerte.
+   Approvata dal DM il 2026-11-19; resta inerte finché lo script non è su main.
+4. **I connettori che il progetto non usa** (Gmail, Google Drive, Channel3,
+   Clipkit, Mobbin, Microsoft Learn, MDN, Shutterstock, bioRxiv, pg-aiguide)
+   sono negati in `permissions.deny` del `settings.json` del repo (scelta del
+   DM sulla card del 2026-11-19). Prova su un server di plugin con `claude -p`:
+   una regola `deny` sul server toglie i suoi tool dall'elenco (da 84 a 58
+   tool, 528 token in meno). Sui connettori di claude.ai la prova si può fare
+   solo in un thread.
 
 ## Le conseguenze
 

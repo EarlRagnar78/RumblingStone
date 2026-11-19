@@ -677,7 +677,7 @@ SIMBOLI TATTICI:
 
 <div style="page-break-before:always"></div>
 
-#### **🎶 MAESTRO TEMPESTAS (Mezzelfo Bardo 12°/Cantore delle tempeste 2°, GS 14)**
+#### **🎶 MAESTRO TEMPESTAS (Mezzelfo Bardo 12°/Cantore delle tempeste 3°, GS 15)**
 **Descrizione da Leggere:**
 > *"Maestro Tempestas è un mezzelfo dalle origini misteriose, i cui occhi cambiano colore con le condizioni atmosferiche: grigi durante la calma, blu elettrico durante le tempeste. La sua lira magica è intagliata dal corno di un drago blu antico, e ogni nota che suona richiama i venti e i fulmini a danzare secondo la sua volontà."*
 
@@ -685,17 +685,18 @@ SIMBOLI TATTICI:
 **Iniziativa:** +7; 
 **Sensi:** Visione Crepuscolare; Ascoltare +18, Osservare +15
 **CA:** 20 (+6 giaco di maglia +2, +3 Des, +1 deflessione), contatto 14, colto alla sprovvista 17
-**PF:** 91 (14d6+42)
-**TS:** Tempra +7, Riflessi +16, Volontà +13
+**PF:** 97 (15d6+45)
+**TS:** Tempra +8, Riflessi +16, Volontà +13
 **Velocità:** 9m
 **Attacco Base:** +10; 
 **Lotta:** +11
 **Attacco:** *Spada corta +1* +12/+7 in mischia (1d6+2/19-20)
-**Capacità Speciali:** Musica Bardica (Ispirare Coraggio +2, 14/giorno), Conoscenze Bardiche, Cantata della Tempesta Tonante (1/incontro, Riflessi CD 23), canto della tempesta (*folata di vento* con un uso di musica, LI 15, 17 al freddo o nella tempesta), Stormpower.
-**Incantesimi da Bardo Conosciuti (incantatore di 14° livello; 4/5/5/4/4/2 al giorno):**
+**Capacità Speciali:** Musica Bardica (Ispirare Coraggio +2, 15/giorno), Conoscenze Bardiche, Cantata della Tempesta Tonante (1/incontro, Riflessi CD 23), canto della tempesta (*folata di vento* con un uso di musica, LI 18, 20 al freddo o nella tempesta; **colpo di tuono** con un uso di musica, contatto a distanza +13 entro 18 m, danni da elettricità pari a una prova di Esibirsi +29, Riflessi CD 19 dimezza), Stormpower.
+<!-- storico: fino al 2026-11-19 Bardo 12 / Cantore delle tempeste 2, GS 14, 91 pf (14d6+42), Tempra +7, musica 14/giorno, incantatore di 14° (4/5/5/4/4/2), *fulmine* fra gli incantesimi di 3° (non è da bardo: PHB p. 248, stregone e mago), cinque talenti, Esibirsi +21, Concentrazione +11; scelta del DM del 2026-11-19: colpo di tuono -->
+**Incantesimi da Bardo Conosciuti (incantatore di 15° livello; 4/6/5/4/4/3 al giorno):**
 *   5° (CD 21): *Passo nelle Ombre*, *Cura Ferite Leggere di Massa*, *Suggestione di Massa*
 *   4° (CD 20): *Urlo*, *Dominare Persone*, *Porta Dimensionale*, *Invisibilità Superiore*
-*   3° (CD 19): *Fulmine*, *Velocità*, *Dissolvi Magie*, *Confusione*
+*   3° (CD 19): *Lentezza*, *Velocità*, *Dissolvi Magie*, *Confusione*
 *   2° (CD 18): *Esplosione Sonora*, *Polvere Luccicante*, *Eroismo*, *Invisibilità*
 *   1° (CD 17): *Cura Ferite Leggere*, *Charme su Persone*, *Risata Incontenibile*, *Sonno*
 *   0°: *Individuazione del Magico*, *Lettura del Magico*, *Luce*, *Mano Magica*, *Prestidigitazione*, *Aprire/Chiudere*
@@ -1108,7 +1109,7 @@ L'esercito è organizzato in quattro linee d'assalto principali, con supporto ae
 *   **Fanteria Pesante:** Guerrieri Nanici Veterani (GS 5, **Tattica:** formano muri di scudi impenetrabili sulle mura).
 *   **Fanteria a Distanza:** Balestrieri Nanici (GS 3, **Tattica:** si concentrano sui comandanti e sulle unità speciali nemiche).
 *   **Supporto Tecnico:** Ingegneri da Guerra (GS 3, **Tattica:** operano le baliste e riparano le fortificazioni danneggiate).
-*   **Alleati Esterni:** Signore Ventolesto (GS 8), Ranger Elfici (GS 8), Orion Pelleorsa (GS 14), Maestro Tempestas (GS 14). **Tattica:** Dominio aereo, eliminazione del drago e devastazione delle retrovie nemiche.
+*   **Alleati Esterni:** Signore Ventolesto (GS 8), Ranger Elfici (GS 8), Orion Pelleorsa (GS 14), Maestro Tempestas (GS 15). **Tattica:** Dominio aereo, eliminazione del drago e devastazione delle retrovie nemiche.
 ---
 
 <div style="page-break-before:always"></div>
@@ -2202,7 +2203,7 @@ Mentre gli alleati aerei ingaggiano il drago, i PG e i nani combattono i resti d
 - **Cantata della Tempesta Tonante** (Tempestas, 1 per incontro, `ARC08-02` §2): ostili entro 18 m, 2d6 elettrici a inizio turno per 3 round, Riflessi CD 23 dimezza, +1d6 a chi porta armatura di metallo; alleati entro 18 m +2 di morale ad attacchi, danni e TS per 10 round. Fauci non è immune all'elettricità
 - **Chiamare fulmini** (Orion, SRD): 3d10 a fulmine nella tempesta, un fulmine per round con un'azione standard, al massimo 10; Riflessi CD 20 dimezza, RI sì. Il round in cui Orion è in lotta sul dorso del drago non chiama fulmini
 - **Il vento**: lo dirige Orion con *controllare tempo*, per direzione e forza (SRD); contro il drago resta il vento violento, senza malus alle manovre oltre a quelli dell'SRD
-- Dopo la Cantata, Tempestas lancia *fulmine* ed *esplosione sonora* (scheda); *velocità* sui ranger o sui PG è la sua mossa migliore
+- Dopo la Cantata, Tempestas scaglia il *colpo di tuono* e lancia *esplosione sonora* (scheda); *velocità* sui ranger o sui PG è la sua mossa migliore
 
 
 **AZIONI RUMBLING STONES DA TERRA:**
@@ -2637,7 +2638,7 @@ CERIMONIA DELLE ASCE - TRAMONTO
 *   **Fanteria Pesante:** Guerrieri Nanici Veterani (GS 5)
 *   **Fanteria a Distanza:** Balestrieri Nanici (GS 3)
 *   **Supporto Tecnico:** Ingegneri da Guerra (GS 3)
-*   **Alleati Esterni:** Signore Ventolesto (GS 8), Ranger Elfici (GS 8), Orion Pelleorsa (GS 14), Maestro Tempestas (GS 14)
+*   **Alleati Esterni:** Signore Ventolesto (GS 8), Ranger Elfici (GS 8), Orion Pelleorsa (GS 14), Maestro Tempestas (GS 15)
 
 ---
 

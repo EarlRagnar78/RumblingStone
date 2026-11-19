@@ -2,16 +2,16 @@
 ## *Il Messaggero d'Ombra, il Bardo del Tuono, l'Uomo che cammina tra le città*
 
 ```statblocco
-gs: 14
-tipo: Medium humanoid (elf), Bardo 12 / Cantore delle tempeste 2, NB
+gs: 15
+tipo: Medium humanoid (elf), Bardo 12 / Cantore delle tempeste 3, NB
 taglia: Media
 spazio: 1,5 m
 portata: 1,5 m
 ca: 20
 ca-dettaglio: contatto 14, colto alla sprovvista 17 (+6 giaco di maglia +2, +3 Des, +1 deviazione)
-pf: 91
-pf-dado: 14d6+42
-ts: Temp +7, Rifl +16, Vol +13
+pf: 97
+pf-dado: 15d6+45
+ts: Temp +8, Rifl +16, Vol +13
 attributi: For 12 Des 16 Cos 16 Int 18 Sag 14 Car 22
 velocita: 9 m
 iniziativa: +7
@@ -22,7 +22,9 @@ voci:
 ```
 
 **Razza/Tipo:** Mezzelfo (Umanoide Medio)
-**Classe:** Bardo 12 / Cantore delle tempeste (*Stormsinger*) 2 `[Private source — Frostburn]` — GS 14. Fino a questa revisione la scheda diceva Arcimago 2, che un bardo non può prendere (§Fonti e canone).
+**Classe:** Bardo 12 / Cantore delle tempeste (*Stormsinger*) 3 `[Private source — Frostburn]` — GS 15 (il terzo livello da Cantore porta il *colpo di tuono*, scelta del DM del 2026-11-19: colpo di tuono).
+<!-- storico: fino al 2026-11-19 Bardo 12 / Cantore delle tempeste 2, GS 14, 91 pf (14d6+42), Tempra +7, musica 14/giorno, incantatore di 14° (4/5/5/4/4/2), *fulmine* fra gli incantesimi di 3° (non è da bardo: PHB p. 248, stregone e mago), cinque talenti, Esibirsi +21, Concentrazione +11; scelta del DM del 2026-11-19: colpo di tuono -->
+ Fino a questa revisione la scheda diceva Arcimago 2, che un bardo non può prendere (§Fonti e canone).
 **Allineamento:** Neutrale Buono
 **Ruolo:** PNG ricorrente. **Messaggero ufficiale del Consiglio di Rethmar** (Brenna Sorvane è la sua patrona). Si muove tra le città dell'Elsir Vale e del Cannath Vale via *Shadow Walk* per portare informazioni che le carovane impiegherebbero settimane a recapitare. Veterano alleato dei PG.
 **Primo incontro (canone retroattivo):** **Arco 00 — Red Hand of Doom opening** — la città-guarnigione di Capitana Lorana sotto attacco. Tempestas era in viaggio diplomatico, si è ritrovato dentro l'assedio, ha aiutato i PG e Lorana a evacuare i sopravvissuti. Da allora è in debito personale con il party.
@@ -188,13 +190,13 @@ Tempestas, prima di partire (mattina del Giorno 22), lascia ai PG una piccola fi
 
 **Tattiche (quando è lui il bersaglio)**
 - *Prima del combattimento*: non entra mai in uno scontro che può evitare. Se sa che lo cercano, viaggia con *invisibilità superiore* pronta e tiene un *passo nelle ombre* libero per andarsene. Se ha un round di preavviso lancia *velocità* su sé stesso e sugli alleati toccati, e comincia a suonare.
-- *Durante il combattimento*: round 1, la **Cantata della Tempesta Tonante**, perché colpisce tutti gli ostili entro 18 m e dà agli alleati +2 a colpire, danni e TS; se i nemici sono uno o due, *dominare persone* sul più forte (CD 20) o *urlo* (CD 20) se sono in fila. Round 2, *confusione* (CD 19) sul gruppo o *polvere luccicante* (CD 18) se c'è un invisibile; contro un incantatore tiene pronto il **controincantesimo**. Round 3 e oltre, *fulmine* ed *esplosione sonora* finché la Cantata dura, e *porta dimensionale* appena qualcuno gli arriva in mischia: con CA 20 e 91 pf non regge un guerriero. La spada corta la sguaina solo se non ha più incantesimi.
+- *Durante il combattimento*: round 1, la **Cantata della Tempesta Tonante**, perché colpisce tutti gli ostili entro 18 m e dà agli alleati +2 a colpire, danni e TS; se i nemici sono uno o due, *dominare persone* sul più forte (CD 20) o *urlo* (CD 20) se sono in fila. Round 2, *confusione* (CD 19) sul gruppo o *polvere luccicante* (CD 18) se c'è un invisibile; contro un incantatore tiene pronto il **controincantesimo**. Round 3 e oltre, *colpo di tuono* (un uso di musica) ed *esplosione sonora* finché la Cantata dura, e *porta dimensionale* appena qualcuno gli arriva in mischia: con CA 20 e 91 pf non regge un guerriero. La spada corta la sguaina solo se non ha più incantesimi.
 - *Morale*: sotto 45 pf, o quando l'*invisibilità superiore* viene dissolta, se ne va con *passo nelle ombre* o *porta dimensionale*, portando con sé chi tocca. Non combatte fino alla morte per nessuno; per i PG resta un round in più, ma solo per il debito della città di Lorana.
 
 
 ### VULNERABILITÀ (DM-tracked)
 
-- Tempestas è **GS 14**, ma è un caster. **Una freccia di adamantio in pieno petto lo abbatte.** I PG devono ricordarsi che è un alleato fragile.
+- Tempestas è **GS 15**, ma è un caster. **Una freccia di adamantio in pieno petto lo abbatte.** I PG devono ricordarsi che è un alleato fragile.
 - **Drow assassins lo cercano**: in 2 sessioni casuali della campagna, il DM può tirare 1d20. Su 1, un agente drow attacca Tempestas mentre è coi PG. Encounter EL 9.
 - **La sua erosione mentale**: dopo 6 sessioni di gioco con Tempestas presente, il DM può scegliere una scena emotiva in cui Tempestas perde la cognizione di **chi sia uno dei PG**. Lo guarda e dice: *"Io ti conosco. Ho ricordo del tuo viso. Ma è recente o vecchio? Aiutatemi."* Scena RP.
 
@@ -209,7 +211,7 @@ Tempestas, prima di partire (mattina del Giorno 22), lascia ai PG una piccola fi
 | **Saggezza** | 14 | +2 |
 | **Carisma** | 22 | +6 |
 
-**Punti Ferita:** 91 (14 DV: 12d6 da bardo + 2d6 da Cantore delle tempeste + 42 Cos; Cos 16 con l'*amuleto della salute +2*)
+**Punti Ferita:** 97 (15 DV: 12d6 da bardo + 3d6 da Cantore delle tempeste + 45 Cos; Cos 16 con l'*amuleto della salute +2*)
 **Iniziativa:** +7 (+3 Des, +4 Iniziativa Migliorata)
 **Velocità:** 9 m
 **Sensi:** visione crepuscolare
@@ -217,8 +219,8 @@ Tempestas, prima di partire (mattina del Giorno 22), lascia ai PG una piccola fi
 **Classe Armatura:** 20 (10 base, +3 Des, +6 giaco di maglia +2, +1 deviazione [anello])
 *Contatto 14 / Colto alla sprovvista 17*
 
-**Tiri Salvezza:** Tempra +7, Riflessi +16, Volontà +13 (+2 contro ammaliamento, immune al *sonno* magico, per il sangue elfico)
-*Base: bardo 12 Temp +4, Rifl +8, Vol +8; Cantore delle tempeste 2 Temp +0, Rifl +3, Vol +3 `[Private source — Frostburn, p. 70, verificato su dnd.arkalseif.info il 2026-11-19]`; Riflessi Fulminei +2.*
+**Tiri Salvezza:** Tempra +8, Riflessi +16, Volontà +13 (+2 contro ammaliamento, immune al *sonno* magico, per il sangue elfico)
+*Base: bardo 12 Temp +4, Rifl +8, Vol +8; Cantore delle tempeste 3 Temp +1, Rifl +3, Vol +3 `[Private source — Frostburn, p. 70, verificato su dnd.arkalseif.info il 2026-11-19]`; Riflessi Fulminei +2.*
 <!-- storico: fino al 2026-11-19 Riflessi +13, senza il +3 del Cantore delle tempeste, che ha Riflessi e Volontà buoni -->
 
 **RI:** —
@@ -234,27 +236,28 @@ Tempestas, prima di partire (mattina del Giorno 22), lascia ai PG una piccola fi
 
 ### CAPACITÀ SPECIALI
 
-#### Musica bardica (14/giorno)
-Un uso per livello da bardo e da Cantore. **Ispirare Coraggio** (Sop): +2 morale ai TS contro charme e paura e +2 morale ai tiri per colpire e ai danni con le armi, per tutti gli alleati che lo sentono, finché suona e per 5 round dopo. Ha anche controcanto, affascinare, ispirare competenza, suggestione (CD 22), ispirare grandezza e canzone della libertà. I livelli da Cantore delle tempeste si sommano a quelli da bardo solo per il numero di usi della musica (*Frostburn* p. 70, verificato su dnd.arkalseif.info il 2026-11-19): 14 usi, e Ispirare Coraggio +2 come un bardo di 12°.
+#### Musica bardica (15/giorno)
+Un uso per livello da bardo e da Cantore. **Ispirare Coraggio** (Sop): +2 morale ai TS contro charme e paura e +2 morale ai tiri per colpire e ai danni con le armi, per tutti gli alleati che lo sentono, finché suona e per 5 round dopo. Ha anche controcanto, affascinare, ispirare competenza, suggestione (CD 22), ispirare grandezza e canzone della libertà. I livelli da Cantore delle tempeste si sommano a quelli da bardo solo per il numero di usi della musica (*Frostburn* p. 70, verificato su dnd.arkalseif.info il 2026-11-19): 15 usi, e Ispirare Coraggio +2 come un bardo di 12°.
 <!-- storico: fino al 2026-11-19 Ispirare Coraggio +3 (canone del DM del 2026-10-18, quando la regola del Cantore non era nota); scelta del DM sulla card del 2026-11-19 -->
 
 #### Cantata della Tempesta Tonante (Sop) — *firma personale*
 1/incontro, azione di round completo. Tempestas suona un canto fra le note: tutti gli alleati entro 18 m ottengono **+2 morale ad attacchi/danni/TS** per 10 round. Inoltre, tutte le creature ostili entro 18 m subiscono **2d6 danni elettrici** all'inizio del proprio turno per i primi 3 round (Riflessi CD 23 per metà: 10 + metà dei DV + Car; **bersagli con armatura metallica subiscono 1d6 extra**). È la firma personale di Tempestas, non un privilegio della classe: un altro Cantore delle tempeste non la ha (DM 2026-10-18).
 
-#### Canto della tempesta (Cantore delle tempeste 2)
-- **Folata di vento** (Mag): con un uso di musica bardica, come *folata di vento*; LI pari ai gradi in Esibirsi (canto), 15. Chiede almeno 9 gradi.
-- **Stormpower** (Str): +2 a Esibirsi (canto) per i canti della tempesta, e +2 al LI dei canti della tempesta al freddo (4 °C o meno) o dentro una tempesta: LI 17.
+#### Canto della tempesta (Cantore delle tempeste 3)
+- **Folata di vento** (Mag): con un uso di musica bardica, come *folata di vento*; LI pari ai gradi in Esibirsi (canto), 18. Chiede almeno 9 gradi.
+- **Colpo di tuono** (Sop, dal 3° livello, almeno 11 gradi in Esibirsi): con un uso di musica bardica, un fulmine su una creatura entro 18 m. Attacco di contatto a distanza +13; se colpisce, i danni da elettricità sono il risultato di una prova di Esibirsi (canto), +29 con Stormpower (in media 39). Riflessi CD 19 (10 + livello da Cantore + Car) dimezza; chi fallisce fa anche un TS su Tempra con la stessa CD o resta assordato per tanti round quanti i danni subiti.
+- **Stormpower** (Str): +2 a Esibirsi (canto) per i canti della tempesta, e +2 al LI dei canti della tempesta al freddo (4 °C o meno) o dentro una tempesta: LI 20.
 - Avverte una tempesta naturale 24 ore prima che arrivi.
 
-`[Private source — Frostburn, p. 70]`, verificato su dnd.arkalseif.info il 2026-11-19. Il *colpo di tuono* arriva al 3° livello da Cantore: Tempestas non l'ha.
+`[Private source — Frostburn, p. 70]`, verificato su dnd.arkalseif.info il 2026-11-19. Il *colpo di tuono* è il fulmine del «Bardo del Tuono»: prende il posto di *fulmine*, che un bardo non lancia (scelta del DM del 2026-11-19: colpo di tuono).
 <!-- storico: fino al 2026-11-19 qui stava «Suggestione di Massa (Mag) 1/giorno, CD 21», ereditata dall'Arcimago; resta fra gli incantesimi conosciuti di 5° (scelta del DM sulla card del 2026-11-19) -->
 
-#### Incantesimi Conosciuti (bardo, incantatore di 14° livello, CD = 16+liv)
-Il Cantore delle tempeste avanza gli incantesimi del bardo a ogni livello `[Private source — Frostburn, p. 70, verificato su dnd.arkalseif.info il 2026-11-19]`, quindi conosce e lancia come un bardo di 14°: **al giorno 4/5/5/4/4/2** (Carisma 22 compreso), **conosciuti 6/4/4/4/4/3**.
+#### Incantesimi Conosciuti (bardo, incantatore di 15° livello, CD = 16+liv)
+Il Cantore delle tempeste avanza gli incantesimi del bardo a ogni livello `[Private source — Frostburn, p. 70, verificato su dnd.arkalseif.info il 2026-11-19]`, quindi conosce e lancia come un bardo di 15°: **al giorno 4/6/5/4/4/3** (Carisma 22 compreso), **conosciuti 6/4/4/4/4/3**.
 - Liv 0: *Individuazione del magico, Lettura del magico, Luce, Mano magica, Prestidigitazione, Aprire/Chiudere*
 - Liv 1: *Cura ferite leggere, Charme su persone, Risata incontenibile, Sonno*
 - Liv 2: *Polvere luccicante, Eroismo, Invisibilità, Esplosione sonora*
-- Liv 3: *Confusione, Dissolvi magie, Velocità, Fulmine* (non è della lista del bardo SRD: la scheda lo dà come incantesimo della tempesta del Cantore `[Private source — Frostburn, non verificato]`)
+- Liv 3: *Confusione, Dissolvi magie, Velocità, Lentezza*
 - Liv 4: *Porta dimensionale, Invisibilità superiore, Urlo, Dominare persone*
 - Liv 5: *Passo nelle ombre, Cura ferite leggere di massa, Suggestione di massa*
 - Fuori dal numero dei conosciuti, portati come oggetti perché la scheda li aveva fra i suoi incantesimi: *bacchetta di suggestione* (CD 13), *pergamene di identificare* e *di lingua ammaliatrice* I conosciuti in tutto restano 25, come prima.
@@ -262,15 +265,15 @@ Il Cantore delle tempeste avanza gli incantesimi del bardo a ogni livello `[Priv
 <!-- storico: fino al 2026-11-19 la scheda teneva due Arcane Supreme dell'Arcimago 2 (Maestria del Controincantesimo 1/giorno, Potere Magico +1 al LI), canone del DM del 2026-10-18 quando i privilegi del Cantore non erano noti. Tolte con la scelta del DM sulla card del 2026-11-19: i privilegi veri sono nel paragrafo «Canto della tempesta» -->
 
 #### Talenti
-Iniziativa Migliorata, Incantare in Combattimento, Riflessi Fulminei, Vocazione Magica (*Magical Aptitude*), Magia della Tempesta (*Storm Magic*) `[Private source — Frostburn]`. Cinque, quanti ne dà un personaggio di 14° livello. Gli ultimi due sono i talenti che il Cantore delle tempeste richiede (Frostburn p. 70, riscontrato su dnd.arkalseif.info il 2026-11-19).
+Iniziativa Migliorata, Incantare in Combattimento, Riflessi Fulminei, Vocazione Magica (*Magical Aptitude*), Magia della Tempesta (*Storm Magic*) `[Private source — Frostburn]`, Abilità Focalizzata (Esibirsi). Sei, quanti ne dà un personaggio di 15° livello; il sesto alza il *colpo di tuono*. Gli ultimi due sono i talenti che il Cantore delle tempeste richiede (Frostburn p. 70, riscontrato su dnd.arkalseif.info il 2026-11-19).
 <!-- storico: fino al 2026-11-19 Negoziatore (+2 Diplomazia/Percepire Intenzioni) e Abilità Focalizzata (Conoscenze locali) al posto dei due talenti richiesti (scelta del DM sulla card del 2026-11-19) -->
 
 #### Abilità chiave
-Diplomazia +22, Conoscenze (Storia, Geografia) +14 ciascuna, Conoscenze (Arcane) +12, Conoscenze (Natura) +8, Conoscenze (Locali) +11, Concentrazione +11, Sapienza Magica +22, Percepire Intenzioni +10, Esibirsi (lira/canto) +21, Bluff +18, Camuffare +14, Raccogliere Informazioni +20.
+Diplomazia +22, Conoscenze (Storia, Geografia) +14 ciascuna, Conoscenze (Arcane) +12, Conoscenze (Natura) +8, Conoscenze (Locali) +11, Concentrazione +16, Sapienza Magica +22, Percepire Intenzioni +10, Esibirsi (lira/canto) +27 (18 gradi, Car +6, Abilità Focalizzata +3), Bluff +18, Camuffare +14, Raccogliere Informazioni +20.
 <!-- storico: fino al 2026-11-19 Diplomazia +24, Percepire Intenzioni +12, Conoscenze (Locali) +14 e Sapienza Magica +18: via Negoziatore (+2, +2) e Abilità Focalizzata (+3), dentro Vocazione Magica (+2 a Sapienza Magica) -->
 <!-- storico: fino al 2026-11-19 Conoscenze (Nobiltà) e (Religione) +14 con 10 gradi ciascuna; i 20 gradi passano a Concentrazione 8, Conoscenze (Arcane) 8 e (Natura) 4, prerequisiti del Cantore delle tempeste (Frostburn p. 70); le Arcane danno +2 di sinergia a Sapienza Magica (scelta del DM sulla card del 2026-11-19) -->
 
-Benchmark: PF T1-1 riga 14: CA 20 vs 29 (9 sotto) / pf 91 vs 200 (molto sotto) / atk +12 vs +23 (molto sotto) / CD 21 di 5° vs 22 (1 sotto) / TS buoni +16 vs +17. È un incantatore di supporto: il GS 14 viene dai livelli di classe, e la scheda lo vuole fragile (§Vulnerabilità).
+Benchmark: PF T1-1 riga 14, misurato prima del terzo livello da Cantore (GS 15: da rifare sulla riga 15): CA 20 vs 29 (9 sotto) / pf 97 vs 200 (molto sotto) / atk +12 vs +23 (molto sotto) / CD 21 di 5° vs 22 (1 sotto) / TS buoni +16 vs +17. È un incantatore di supporto: il GS 15 viene dai livelli di classe, e la scheda lo vuole fragile (§Vulnerabilità).
 
 ## Esiti possibili
 

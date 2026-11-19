@@ -587,30 +587,31 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 <div style="page-break-before:always"></div>
 
 ### **MAESTRO TEMPESTAS**
-*Mezzelfo Bardo 12°/Cantore delle tempeste 2°, GS 14*
+*Mezzelfo Bardo 12°/Cantore delle tempeste 3°, GS 15*
+<!-- storico: fino al 2026-11-19 Bardo 12 / Cantore delle tempeste 2, GS 14, 91 pf (14d6+42), Tempra +7, musica 14/giorno, incantatore di 14° (4/5/5/4/4/2), *fulmine* fra gli incantesimi di 3° (non è da bardo: PHB p. 248, stregone e mago), cinque talenti, Esibirsi +21, Concentrazione +11; scelta del DM del 2026-11-19: colpo di tuono -->
 **NB Umanoide Medio (Elfo)**
 **Iniziativa:** +7; **Sensi:** Visione Crepuscolare; Ascoltare +18, Osservare +15
 
 **CA:** 20 (+6 giaco di maglia +2, +3 Des, +1 deflessione), contatto 14, colto alla sprovvista 17
-**PF:** 91 (14d6+42)
-**TS:** Tempra +7, Riflessi +16, Volontà +13
+**PF:** 97 (15d6+45)
+**TS:** Tempra +8, Riflessi +16, Volontà +13
 
 **Velocità:** 9m
 **Attacco Base:** +10; **Lotta:** +11
 **Attacco:** *Spada corta +1* +12/+7 in mischia (1d6+2/19-20)
 
 **Qualità Speciali:**
-*   **Musica Bardica (14/giorno):** *Ispirare Coraggio* (+2 a colpire e danni), *Suggestione* (CD 22), *Canto di Libertà*.
+*   **Musica Bardica (15/giorno):** *Ispirare Coraggio* (+2 a colpire e danni), *Suggestione* (CD 22), *Canto di Libertà*.
 *   **Cantata della Tempesta Tonante (1/incontro):** alleati entro 18 m +2 morale ad attacchi, danni e TS per 10 round; ostili entro 18 m 2d6 elettrici a inizio turno per 3 round (Riflessi CD 23 dimezza; +1d6 a chi porta armatura di metallo).
-*   **Canto della tempesta** (Cantore delle tempeste): *folata di vento* con un uso di musica, LI 15 (17 al freddo o nella tempesta, Stormpower); Stormpower dà anche +2 a Esibirsi (canto) per i canti della tempesta.
-*   **Incantesimi da Bardo Conosciuti (incantatore di 14° livello):**
+*   **Canto della tempesta** (Cantore delle tempeste): *folata di vento* con un uso di musica, LI 18 (20 al freddo o nella tempesta, Stormpower); **colpo di tuono** con un uso di musica, contatto a distanza +13 entro 18 m, danni da elettricità pari a una prova di Esibirsi +29 (in media 39), Riflessi CD 19 dimezza, chi fallisce resta anche assordato se fallisce Tempra; Stormpower dà +2 a Esibirsi (canto) per i canti della tempesta.
+*   **Incantesimi da Bardo Conosciuti (incantatore di 15° livello):**
     *   *5° (CD 21):* *Passo nelle Ombre*, *Cura Ferite Leggere di Massa*, *Suggestione di Massa*.
     *   *4° (CD 20):* *Urlo*, *Dominare Persone*, *Porta Dimensionale*, *Invisibilità Superiore*.
-    *   *3° (CD 19):* *Fulmine*, *Velocità*, *Dissolvi Magie*, *Confusione*.
+    *   *3° (CD 19):* *Lentezza*, *Velocità*, *Dissolvi Magie*, *Confusione*.
     *   *2° (CD 18):* *Esplosione Sonora*, *Polvere Luccicante*, *Eroismo*, *Invisibilità*.
     *   *1° (CD 17):* *Cura Ferite Leggere*, *Charme su Persone*, *Risata Incontenibile*, *Sonno*.
 
-**Tattiche:** Maestro Tempestas è un cannone di vetro magico. Rimane in aria, usando la sua musica per potenziare gli alleati e scatenando incantesimi devastanti sui nemici. Il suo incantesimo *Velocità* lanciato sui ranger elfici o sui PG è un punto di svolta. Contro Fauci di Palude apre con la Cantata della Tempesta Tonante e poi usa *fulmine* ed *esplosione sonora*: il drago nero è immune all'acido, non all'elettricità né al suono.
+**Tattiche:** Maestro Tempestas è un cannone di vetro magico. Rimane in aria, usando la sua musica per potenziare gli alleati e scatenando incantesimi devastanti sui nemici. Il suo incantesimo *Velocità* lanciato sui ranger elfici o sui PG è un punto di svolta. Contro Fauci di Palude apre con la Cantata della Tempesta Tonante e poi usa il *colpo di tuono* ed *esplosione sonora*: il drago nero è immune all'acido, non all'elettricità né al suono.
 
 ---
 <div style="page-break-before:always"></div>

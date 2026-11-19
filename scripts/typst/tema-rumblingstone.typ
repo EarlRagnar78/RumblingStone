@@ -859,7 +859,7 @@
 // «da stampare stasera» non sono lo stesso file.
 #let libro(titolo: "", sottotitolo: "", brand: "", banner: "", meta: "", capitolo: "",
            apparato: true, carta: "avorio", formato: "a4", copertina: none, intro: none,
-           crediti: none,
+           crediti: none, indice-profondita: 3,
            corpo) = {
   // A5 è il formato «libretto»: **una colonna sola**, perché in A5 due colonne
   // sarebbero da 5 cm e nessuno impagina un manuale così.
@@ -997,7 +997,7 @@
   // Indice cliccabile (e segnalibri PDF dagli heading)
   align(center)[#text(font: TITOLI, size: 13pt, fill: rosso)[Indice]]
   v(0.4cm)
-  outline(title: none, depth: 3, indent: 1em)
+  outline(title: none, depth: indice-profondita, indent: 1em)
   pagebreak()
 
   set page(columns: if a5 { 1 } else { 2 })

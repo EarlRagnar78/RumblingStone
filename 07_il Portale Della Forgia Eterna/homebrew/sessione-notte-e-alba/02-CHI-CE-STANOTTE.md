@@ -95,7 +95,7 @@ Hobgoblin secco, dagli occhi gialli, la mano sinistra nera di fuliggine fino
 al polso, un bastone ferrato con appese ossa di dita. Canta invece di
 parlare, sempre la stessa cantilena, e la interrompe solo per dare ordini.
 Dorme sulla sua stuoia a N14. Dopo il barile è lui che mette la *luce* sul
-giavellotto, al round 3 (capitolo III, §8). Ritratto: nessuno.
+giavellotto, al round 3 (`ARC07-BARILE-SULLA-TENDA.md` §8). Ritratto: nessuno.
 
 <!-- include: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#sacerdote-scheda -->
 ```statblocco
@@ -138,7 +138,7 @@ Ritratto: nessuno.
 
 **Numeri** (combattente 1 dell'SRD): **CA 15** · **pf 6** · Riflessi +1 ·
 Ascoltare e Osservare +2, −10 ad Ascoltare finché dorme. Dopo il barile suona
-entro **1d4 round** dal boato, se è vivo (capitolo III, §8).
+entro **1d4 round** dal boato, se è vivo (`ARC07-BARILE-SULLA-TENDA.md` §8).
 
 ## Balvar Fuocospento, il runaio esiliato
 

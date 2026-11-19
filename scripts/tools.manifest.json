@@ -11554,6 +11554,88 @@
       ]
     },
     {
+      "id": "misura_ordine",
+      "path": "scripts/misura_ordine.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/misura_ordine.py PDF RUOLI.json",
+      "summary": "Misura l'ordine dei capitoli di un booklet dal suo PDF (ADR-0145): legge l'indice, dà un ruolo a ogni sezione con le regole di un file di ruoli (avvio, preparazione, gioco, sintesi, fuori serata, riferimento) e conta i difetti R2-R8 (preparazione dopo il gioco, scene fuori ordine, riassunto dopo il dettaglio, dopo-serata fra le scene, doppioni, guida ai capitoli sbagliata). Con una regola \"parte\": true misura un volume d'arco: in più V1 (quadro del volume prima della Parte I), V2 (indice oltre due pagine), V3 (parti senza gioco fra parti giocate), e le regole R parte per parte. Serve PyMuPDF.",
+      "use_case": "«L'ordine del booklet regge al tavolo, o il DM dovrà cercare e andare a braccio?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_deps": [],
+      "external_bins": [],
+      "args": [
+        {
+          "name": "pdf",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il PDF composto del booklet."
+        },
+        {
+          "name": "ruoli",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il file JSON dei ruoli delle sezioni (regole sul titolo)."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Misure e sezioni in JSON."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "**/*.pdf",
+          "kind": "pdf",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/esperimenti/ordine-*/ruoli-*.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "un booklet sopra un suo tetto o non registrato (--check)",
+        "2": "manca PyMuPDF"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "typst e font fissati: stesso sorgente, stesso PDF, stesse misure"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/misura_stampa.py --help",
+      "tests": [
+        "scripts/tests/test_misura_stampa.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0105-ogni-creatura-esce-nello-stesso-riquadro.md"
+      ]
+    },
+    {
       "id": "misura_stampa",
       "path": "scripts/misura_stampa.py",
       "category": "D-materials",

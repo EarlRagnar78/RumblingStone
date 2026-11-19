@@ -383,6 +383,9 @@ class Volume(dict):
     def __init__(self) -> None:
         super().__init__()
         self.parti: "dict[Path, list[tuple[str, list[str]]]]" = {}
+        #: righe della guida ai capitoli (titolo, per chi, quando), dai
+        #: capitoli del manifest con la chiave `quando`
+        self.guida: "list[tuple[str, str, str]]" = []
 
 
 def capitoli_del_volume(base: "Path", dato: dict) -> "dict[Path, str]":
@@ -391,9 +394,17 @@ def capitoli_del_volume(base: "Path", dato: dict) -> "dict[Path, str]":
     `base` è la cartella del manifest, a cui i capitoli sono relativi. Un
     master che dà più capitoli si cita col primo, salvo che il rimando dica
     la scena o la sezione: allora con il capitolo che la contiene
-    (`capitolo_della_parte`).
+    (`capitolo_della_parte`). Un capitolo con `"principale": true` prende i
+    rimandi al master che non dicono la parte, anche se non è il primo.
+
+    >>> d = {"chapters": [{"title": "Il riferimento rapido", "file": "m.md", "sezioni": ["§0-bis"]},
+    ...                   {"title": "VII · Atto II", "file": "m.md", "sezioni": ["SCENA 6"], "principale": True}]}
+    >>> list(capitoli_del_volume(Path("/x"), d).values())
+    ['cap. VII']
     """
     fuori = Volume()
+    principali = {(base / c["file"]).resolve() for c in dato.get("chapters", [])
+                  if isinstance(c, dict) and "file" in c and c.get("principale")}
     for c in dato.get("chapters", []):
         if not isinstance(c, dict) or "file" not in c:
             continue
@@ -401,10 +412,40 @@ def capitoli_del_volume(base: "Path", dato: dict) -> "dict[Path, str]":
         m = _NUMERO_ROMANO.match(titolo)
         etichetta = f"cap. {m.group(1)}" if m else f"«{titolo.strip()}»"
         f = (base / c["file"]).resolve()
-        fuori.setdefault(f, etichetta)
+        if f not in principali:
+            fuori.setdefault(f, etichetta)
+        elif c.get("principale"):
+            fuori[f] = etichetta        # chi cita il master senza la parte arriva qui
         if c.get("sezioni"):
             fuori.parti.setdefault(f, []).append((etichetta, list(c["sezioni"])))
+        if c.get("quando"):
+            chi = "✉" if c.get("tag") == "player" else "⚠ DM"
+            fuori.guida.append((titolo.strip(), chi, c["quando"]))
+    if fuori.guida:
+        fuori.guida += [tuple(r) for r in dato.get("guida_righe_finali", [])]
     return fuori
+
+
+# La guida ai capitoli («Come usare questo booklet»): fra questi due segni la
+# tabella la scrive il manifest, se i capitoli hanno la chiave `quando`. Scritta
+# a mano si guastava al primo riordino (la serata di ARC-07 stampava la guida
+# del booklet lungo, 2026-11-19).
+_GUIDA = re.compile(r"<!--\s*guida-capitoli\s*-->\n(.*?)<!--\s*/guida-capitoli\s*-->\n?", re.S)
+
+
+def guida_capitoli(md: str, capitoli) -> str:
+    """La tabella fra i segni `guida-capitoli`, rifatta dal manifest.
+
+    >>> v = Volume(); v.guida = [("I · Regia", "⚠ DM", "prima")]
+    >>> guida_capitoli("<!-- guida-capitoli -->\\n| x |\\n<!-- /guida-capitoli -->\\n", v)
+    '| Capitolo | Per chi | Quando |\\n|---|---|---|\\n| I · Regia | ⚠ DM | prima |\\n'
+    """
+    righe = getattr(capitoli, "guida", None)
+    if not righe:
+        return _GUIDA.sub(lambda m: m.group(1), md)
+    tabella = "| Capitolo | Per chi | Quando |\n|---|---|---|\n" + "".join(
+        f"| {t} | {chi} | {quando} |\n" for t, chi, quando in righe)
+    return _GUIDA.sub(lambda m: tabella, md)
 
 
 # Il master va a capo dove vuole: «(`DEF-4`\nAppendice C.3)» è lo stesso rimando
@@ -440,6 +481,12 @@ def capitolo_della_parte(capitoli: "dict[Path, str]", f: "Path", sez: str, dopo:
     ('capp. V e IX', 'cap. V')
     >>> capitolo_della_parte(v, f, "", "\\nAppendice C.3)"), capitolo_della_parte(v, f, "", ")", prima="il §6 di ")
     ('cap. IX', 'cap. IX')
+    >>> g = Path("/x/barile.md"); v[g] = "cap. V"; v.parti[g] = [("cap. V", ["8."]), ("cap. XIII", ["10."])]
+    >>> capitolo_della_parte(v, g, "§10", ""), capitolo_della_parte(v, g, "§8", "")
+    ('cap. XIII', 'cap. V')
+    >>> v.parti[f].append(("cap. XIV", ["B. Tesoro", "A.1 ·"]))
+    >>> capitolo_della_parte(v, f, "", " B. Tesoro)"), capitolo_della_parte(v, f, "", " B. qualcosa)")
+    ('cap. XIV', None)
     """
     parti = getattr(capitoli, "parti", {}).get(f)
     if not parti:
@@ -449,6 +496,15 @@ def capitolo_della_parte(capitoli: "dict[Path, str]", f: "Path", sez: str, dopo:
     else:
         m = _PARTE.match(dopo) or _PARTE_PRIMA.search(prima)
         if not m:
+            # Una parte citata col suo titolo («`DEF-4` B. Tesoro»): vale se
+            # il testo che segue comincia con una voce di `sezioni` di almeno
+            # sei caratteri, perché due lettere qualunque non bastano.
+            testo_dopo = _normale(dopo.lstrip(" ,"))
+            for etichetta, voci in parti:
+                for v in voci:
+                    v = _normale(v[len("testa:"):] if v.startswith("testa:") else v)
+                    if len(v) >= 6 and testo_dopo.startswith(v):
+                        return etichetta
             return None
         if m.group("scena"):
             toks = ["scena " + n for n in re.findall(r"\d+", m.group("num"))]
@@ -457,10 +513,15 @@ def capitolo_della_parte(capitoli: "dict[Path, str]", f: "Path", sez: str, dopo:
 
     def dove(tok: str) -> "str | None":
         t = _normale(tok)
+        # «§10» di un master a paragrafi numerati («## 10. Che cosa cambia»)
+        # è la voce «10.» del manifest
+        numerato = t[1:] + "." if re.fullmatch(r"§\d+(-bis)?", t) else None
         for etichetta, voci in parti:
             for v in voci:
                 v = _normale(v[len("testa:"):] if v.startswith("testa:") else v)
                 if v.startswith(t) and (len(v) == len(t) or not (v[len(t)].isalnum() or v[len(t)] in "-.")):
+                    return etichetta
+                if numerato and v == numerato:
                     return etichetta
         return None
 
@@ -490,6 +551,13 @@ def _traduci_nomi_di_file(md: str, io: "Path", capitoli: "dict[Path, str]") -> s
     'Allegato di cap. I §3, e `Z.md`.'
     >>> _traduci_nomi_di_file("Vedi `B-ALLEGATO.md`.", b, {a: "cap. I", b: "cap. II"})
     'Vedi questo capitolo.'
+
+    Un master diviso in più capitoli (`sezioni`) manda il §N al capitolo che
+    stampa quella parte (2026-11-19: il §10 del barile andava al cap. V):
+
+    >>> v = Volume(); v[a] = "cap. V"; v.parti[a] = [("cap. V", ["8."]), ("cap. XIII", ["10."])]
+    >>> _traduci_nomi_di_file("(`A-MASTER.md` §10) e (`A-MASTER.md` §8)", b, v)
+    '(cap. XIII §10) e (cap. V §8)'
     """
     def sostituisci(m: "re.Match") -> str:
         coda = m.group("tok").replace("\\", "/").rsplit("/", 1)[-1].lstrip(".…")
@@ -499,7 +567,11 @@ def _traduci_nomi_di_file(md: str, io: "Path", capitoli: "dict[Path, str]") -> s
         sez = (m.group("sez") or "").strip()
         if trovati[0] == io:
             return sez or "questo capitolo"
-        return capitoli[trovati[0]] + (" " + sez if sez else "")
+        parte = capitolo_della_parte(capitoli, trovati[0], sez, m.string[m.end():m.end() + 40],
+                                     m.string[max(0, m.start() - 40):m.start()])
+        if parte == FUORI_DAL_VOLUME:
+            parte = None
+        return (parte or capitoli[trovati[0]]) + (" " + sez if sez else "")
 
     pezzi = re.split(r"(^[ \t]*```.*?^[ \t]*```[^\n]*$)", md, flags=re.S | re.M)
     for k in range(0, len(pezzi), 2):
@@ -650,7 +722,7 @@ def leggi_per_la_stampa(f: "Path", capitoli: "dict[Path, str]",
             lambda m: m.group(1) if not md[:m.start()].strip() else "<!-- nuova-pagina -->\n\n" + m.group(1), md)
     else:
         md = togli_schede_da_tavolo(_SEGNO_SENZA_SCHEDA.sub("", md))
-    return traduci_rimandi(md, f, capitoli)
+    return traduci_rimandi(guida_capitoli(md, capitoli), f, capitoli)
 
 
 # La scheda da tavolo che apre una scena (prova del 2026-11-12, ADR-0122): una

@@ -11,7 +11,7 @@ Le scelte nella fortezza e il giro delle pozioni di Kettra sono giocati. Il
 gruppo è in volo, invisibile, con la botte d'olio e i due barilotti, e si
 rigioca lo sgancio. Poi:
 
-1. **Il barile**, capitolo III e `DEF-4` Scena 6, «Variante — il barile sulla
+1. **Il barile**, `ARC07-BARILE-SULLA-TENDA.md` e `DEF-4` Scena 6, «Variante — il barile sulla
    tenda»: lo sgancio, i round nel fuoco, il corno.
 2. **Dopo il barile**, `DEF-4` Scene 6 e 9: il ritorno, Vatore fra le tende,
    e le Scene 7-8 solo se qualcuno scende a finire il lavoro.
@@ -51,6 +51,7 @@ tu. Qui ci sono solo le cose che servono prima del primo tiro:
 
 **Come usare questo booklet e il volume dei giocatori.**
 
+<!-- guida-capitoli -->
 | Capitolo | Per chi | Quando |
 |---|---|---|
 | I · Regia della serata | ⚠ DM | da leggere prima, da tenere aperto durante |
@@ -62,11 +63,12 @@ tu. Qui ci sono solo le cose che servono prima del primo tiro:
 | VII · La Forgia ricorda le ferite | ⚠ DM | la tabella delle ferite del duello, da tenere aperta durante la Scena 11 |
 | VIII · Durik | ⚠ DM | la scheda del compagno di Hella, accanto alla giocatrice |
 | **Il volume dei giocatori** | ✉ | gli echi della serata, il contratto del Seme e le dieci boccette |
+<!-- /guida-capitoli -->
 
 | Pagina ✉ del volume dei giocatori | A chi | Quando |
 |---|---|---|
 | Echi della notte | uno a testa | se non li hanno già avuti in fortezza: prima dello sgancio. Si legge ad alta voce solo il riquadro; la riga «Solo per te» resta del giocatore |
-| Il contratto del Seme | ad Artemis, e il tavolo lo rilegge | solo se il Seme si gioca al ritorno, dopo il box che chiude l'ora della pergamena e il contratto letto a voce (cap. IV). Se si rinvia, la pagina resta nel volume |
+| Il contratto del Seme | ad Artemis, e il tavolo lo rilegge | solo se il Seme si gioca al ritorno, dopo il box che chiude l'ora della pergamena e il contratto letto a voce (`02-IL-SEME.md`). Se si rinvia, la pagina resta nel volume |
 | Le dieci boccette | a tutti | già consegnate: è la copia di riserva |
 
 <!-- apparato -->

@@ -9,12 +9,12 @@
   "player_footer": "Le Voci della Notte",
   "colophon": {
     "edizione": "Booklet della serata",
-    "versione": "v3",
+    "versione": "v4",
     "data": "2026-11-19",
     "autori": "Il DM di RumblingStone, con l'agente di scrittura del repo",
     "basato_su": "D&D 3.5 SRD (OGL 1.0a); adattamento privato di Red Hand of Doom (Wizards of the Coast, 2006)",
     "licenza": "materiale del DM, uso privato del tavolo, non diffondere",
-    "nota": "Versione centrata sulla serata: solo le scene che si giocano, nell'ordine di gioco, con le mappe accanto. v3: ogni rimando a un capitolo porta il suo numero di pagina. Il volume intero è il volume d'arco"
+    "nota": "Versione centrata sulla serata: solo le scene che si giocano, nell'ordine di gioco, con le mappe accanto. v3: ogni rimando a un capitolo porta il suo numero di pagina. v4: prima la preparazione, poi il gioco nell'ordine della serata con la versione veloce in testa a ogni atto, poi il dopo serata e le appendici. Il volume intero è il volume d'arco"
   },
   "cover_image": "../../Immagini/web/tavola-skullcrusher-nel-cortile.jpg",
   "intro_md": "00-INTRO-DOVE-SIAMO.md",
@@ -24,109 +24,39 @@
       "title": "Il foglio della serata",
       "file": "00-FOGLIO-DELLA-SERATA.md",
       "tag": "dm",
-      "rimandi_romani": true
+      "rimandi_romani": true,
+      "quando": "una pagina sola, aperta accanto allo schermo per tutta la sera: dove guardare"
+    },
+    {
+      "title": "Il riferimento rapido",
+      "file": "../../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "tag": "dm",
+      "sezioni": [
+        "§0-bis"
+      ],
+      "quando": "una pagina: prove di gruppo, Benedizioni, il giro del drago"
     },
     {
       "title": "I · Regia della serata",
       "file": "01-REGIA-SERATA.md",
-      "tag": "dm"
-    },
-    {
-      "title": "II · Chi c'è stanotte: i cattivi, le schede, le mappe",
-      "file": "02-CHI-CE-STANOTTE.md",
-      "tag": "dm"
-    },
-    {
-      "title": "III · Atto I · Il barile sulla tenda di Zog'tar",
-      "file": "../../ARC07-BARILE-SULLA-TENDA.md",
       "tag": "dm",
-      "sezioni": [
-        "testa:ARC-07 · Il barile",
-        "La scheda da tavolo",
-        "1.",
-        "2.",
-        "2-bis.",
-        "3.",
-        "4.",
-        "5.",
-        "6.",
-        "7.",
-        "8.",
-        "9.",
-        "10.",
-        "13."
-      ]
+      "quando": "da leggere prima, da tenere aperta durante"
     },
     {
-      "title": "IV · Il Seme-Mercato, se si gioca al ritorno",
-      "file": "02-IL-SEME.md",
-      "tag": "dm",
-      "capolettera": false
-    },
-    {
-      "title": "V · Atto II · Dopo il barile: il ritorno, la tenda, Vatore",
+      "title": "II · Prima di giocare: i quattro, le zone, le idee fuori copione",
       "file": "../../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
       "tag": "dm",
       "sezioni": [
-        "testa:§4",
-        "⏳",
-        "SCENA 6",
-        "SCENA 7",
-        "SCENA 8",
-        "SCENA 9",
-        "C.2"
-      ]
-    },
-    {
-      "title": "VI · Atto III · L'alba: le mura",
-      "file": "../../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
-      "tag": "dm",
-      "sezioni": [
-        "testa:§5",
-        "SCENA 10"
-      ]
-    },
-    {
-      "title": "VII · La mappa del duello: M7-B",
-      "file": "09-M7B-CORTILE.md",
-      "tag": "dm"
-    },
-    {
-      "title": "VIII · Il duello con Skullcrusher",
-      "file": "../../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
-      "tag": "dm",
-      "sezioni": [
-        "SCENA 11",
-        "§6 —",
-        "C.3"
-      ]
-    },
-    {
-      "title": "IX · La Forgia ricorda le ferite",
-      "file": "../../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md",
-      "tag": "dm"
-    },
-    {
-      "title": "X · Appendice della serata: conseguenze, regole rapide, PG, zone, statistiche",
-      "file": "../../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
-      "tag": "dm",
-      "sezioni": [
-        "§7 —",
-        "§0-bis",
-        "§0-ter",
         "§1 —",
         "🎚",
         "ZONA 2",
         "ZONA 3",
-        "A. Budget",
-        "B. Tesoro",
-        "A.1 ·",
-        "A.6",
-        "APPENDICE B"
-      ]
+        "§0-ter"
+      ],
+      "quando": "prima di giocare: il momento di ogni PG, i sensi delle due zone, come accogliere un'idea non scritta"
     },
     {
-      "title": "XI · La cassetta del DM: cast, pronuncia, read-aloud, suoni",
+      "title": "III · Il cast: chi c'è, come si pronuncia, che suoni",
       "file": "../../ARC07-CASSETTA-DEL-DM.md",
       "tag": "dm",
       "sezioni": [
@@ -136,16 +66,139 @@
         "§4 ·",
         "§5 ·",
         "§6 ·"
-      ]
+      ],
+      "quando": "prima di giocare: voci, pronunce, suoni"
     },
     {
-      "title": "XII · Durik, il compagno di Hella",
+      "title": "IV · Chi c'è stanotte: i cattivi, le schede, le mappe",
+      "file": "02-CHI-CE-STANOTTE.md",
+      "tag": "dm",
+      "quando": "prima di giocare: i cattivi uno per uno, con scheda intera, ritratto e mappe M7-C e M7-H"
+    },
+    {
+      "title": "V · Atto I · Il barile sulla tenda di Zog'tar",
+      "file": "../../ARC07-BARILE-SULLA-TENDA.md",
+      "tag": "dm",
+      "sezioni": [
+        "testa:ARC-07 · Il barile",
+        "La scheda da tavolo",
+        "1.",
+        "7.",
+        "2.",
+        "2-bis.",
+        "3.",
+        "4.",
+        "5.",
+        "6.",
+        "8.",
+        "9."
+      ],
+      "quando": "**la serata comincia qui**: la scheda da tavolo, i numeri in sintesi, poi le quote e le tattiche round per round"
+    },
+    {
+      "title": "VI · Il Seme-Mercato, se si gioca al ritorno",
+      "file": "02-IL-SEME.md",
+      "tag": "dm",
+      "capolettera": false,
+      "quando": "al ritorno, se non è ancora stato giocato"
+    },
+    {
+      "title": "VII · Atto II · Dopo il barile: il ritorno, la tenda, Vatore",
+      "file": "../../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "tag": "dm",
+      "sezioni": [
+        "testa:§4",
+        "⏳",
+        "C.2",
+        "SCENA 6",
+        "SCENA 7",
+        "SCENA 8",
+        "SCENA 9"
+      ],
+      "quando": "il ritorno fra le tende, la tenda se scendono, Vatore; la versione in dieci minuti è in testa",
+      "principale": true
+    },
+    {
+      "title": "VIII · Atto III · L'alba: le mura",
+      "file": "../../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "tag": "dm",
+      "sezioni": [
+        "testa:§5",
+        "SCENA 10"
+      ],
+      "quando": "le mura all'alba, una via su tre"
+    },
+    {
+      "title": "IX · La mappa del duello: M7-B",
+      "file": "09-M7B-CORTILE.md",
+      "tag": "dm",
+      "quando": "il cortile del duello, prima di calare il drago"
+    },
+    {
+      "title": "X · Il duello con Skullcrusher",
+      "file": "../../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "tag": "dm",
+      "sezioni": [
+        "C.3",
+        "SCENA 11",
+        "§6 —"
+      ],
+      "quando": "il duello; la versione in tre scambi è in testa. Con l'esito ci si ferma"
+    },
+    {
+      "title": "XI · Dopo la serata: le conseguenze e i PX",
+      "file": "../../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "tag": "dm",
+      "sezioni": [
+        "§7 —",
+        "A. Budget"
+      ],
+      "quando": "a fine serata: che cosa resta, e i PX"
+    },
+    {
+      "title": "XII · La Forgia ricorda le ferite",
+      "file": "../../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md",
+      "tag": "dm",
+      "quando": "a fine duello: l'esito diventa la ferita di Fauci di Palude"
+    },
+    {
+      "title": "XIII · Dopo la serata: che cosa cambia, e le trovate dei giocatori",
+      "file": "../../ARC07-BARILE-SULLA-TENDA.md",
+      "tag": "dm",
+      "sezioni": [
+        "10.",
+        "13."
+      ],
+      "quando": "a mente fredda, dopo il tavolo"
+    },
+    {
+      "title": "XIV · Appendice della serata: tesoro, statistiche, il Sigillo",
+      "file": "../../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "tag": "dm",
+      "sezioni": [
+        "B. Tesoro",
+        "A.1 ·",
+        "A.6",
+        "APPENDICE B"
+      ],
+      "quando": "quando serve un numero o un oggetto"
+    },
+    {
+      "title": "XV · Durik, il compagno di Hella",
       "file": "../sessione-resurrezione-mille-anni/08-SCHEDA-DURIK.md",
-      "tag": "dm"
+      "tag": "dm",
+      "quando": "accanto alla giocatrice di Hella"
     }
   ],
   "fregio": "../../../docs/assets/fregi/fregio-arco-07-forgia.svg",
   "schede": "prima-volta",
   "chi_si_incontra": true,
-  "pagine_nei_rimandi": true
+  "pagine_nei_rimandi": true,
+  "guida_righe_finali": [
+    [
+      "**Il volume dei giocatori**",
+      "✉",
+      "gli echi della serata, il contratto del Seme e le dieci boccette"
+    ]
+  ]
 }

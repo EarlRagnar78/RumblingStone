@@ -145,6 +145,17 @@
       "type": "boolean",
       "description": "ADR-0144: ogni rimando a un capitolo del volume («cap. V Scena 6», «il §13 del capitolo III») prende il numero di pagina del titolo citato, come negli AP («see page 50»). Il numero lo calcola Typst; se il titolo non si trova non si stampa niente. Catene: stampa."
     },
+    "indice_profondita": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3,
+      "description": "Quanti livelli di titoli stampa l'indice in testa al volume (predefinito 3). ADR-0145: il volume d'arco di ARC-07 aveva un indice di otto pagine; un AP lo stampa in una, e i segnalibri del PDF restano completi. Catene: stampa."
+    },
+    "guida_righe_finali": {
+      "type": "array",
+      "items": {"type": "array", "items": {"type": "string"}, "minItems": 3, "maxItems": 3},
+      "description": "Righe in coda alla guida ai capitoli generata (capitolo, per chi, quando), per ciò che non è un capitolo del volume, come il volume dei giocatori. Vale solo se qualche capitolo ha `quando`. Catene: tutte e due."
+    },
     "chapters": {
       "type": "array",
       "minItems": 1,
@@ -209,6 +220,14 @@
           "capolettera": {
             "type": "boolean",
             "description": "Sovrascrive il valore del volume per questo capitolo."
+          },
+          "principale": {
+            "type": "boolean",
+            "description": "Per un master diviso in più capitoli (`sezioni`): questo capitolo prende i rimandi al master che non dicono la parte. Senza, li prende il primo capitolo del master. Catene: tutte e due."
+          },
+          "quando": {
+            "type": "string",
+            "description": "Quando si usa questo capitolo al tavolo. Se un capitolo ce l'ha, la tabella fra `<!-- guida-capitoli -->` e `<!-- /guida-capitoli -->` dell'introduzione la scrive il manifest, nell'ordine dei capitoli (2026-11-19: scritta a mano, la serata di ARC-07 stampava la guida del booklet lungo). Catene: tutte e due."
           },
           "rimandi_romani": {
             "type": "boolean",

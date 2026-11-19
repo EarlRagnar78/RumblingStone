@@ -1079,6 +1079,7 @@ CHIAVI_NOTE = {
     "player_footer", "front_matter", "cover_image", "cover_tag", "intro_md",
     "out", "chapters", "carta", "capolettera", "fregio", "colophon", "formato",
     "schede", "chi_si_incontra", "pagine_nei_rimandi", "indice_analitico",
+    "guida_righe_finali", "indice_profondita",
 }
 CHIAVI_SOLO_HTML = {"player_footer", "header", "cover_tag", "out"}
 
@@ -1164,6 +1165,8 @@ def intestazione(man: dict, apparato: bool | None = None, base: Path | None = No
         extra.append(f'  carta: {json.dumps(carta, ensure_ascii=False)},')
     if formato != "a4":
         extra.append(f'  formato: {json.dumps(formato, ensure_ascii=False)},')
+    if man.get("indice_profondita"):
+        extra.append(f'  indice-profondita: {int(man["indice_profondita"])},')
     return [
         f'#import "{typ_path(TEMA)}": *',
         f'#import "{typ_path(SCHEDA_PG)}": scheda',

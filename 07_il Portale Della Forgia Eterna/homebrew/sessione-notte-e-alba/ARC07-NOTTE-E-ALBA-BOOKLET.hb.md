@@ -34,7 +34,7 @@ Le scelte nella fortezza e il giro delle pozioni di Kettra sono giocati. Il
 gruppo è in volo, invisibile, con la botte d'olio e i due barilotti, e si
 rigioca lo sgancio. Poi:
 
-1. **Il barile**, capitolo III e cap. VI Scena 6, «Variante — il barile sulla
+1. **Il barile**, cap. III e cap. VI Scena 6, «Variante — il barile sulla
    tenda»: lo sgancio, i round nel fuoco, il corno.
 2. **Dopo il barile**, cap. VI Scene 6 e 9: il ritorno, Vatore fra le tende,
    e le Scene 7-8 solo se qualcuno scende a finire il lavoro.
@@ -132,7 +132,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 | Atto | Cosa | Master | Tre ore | Intera | Si consegna |
 |---|---|---|---:|---:|---|
 | **0** | Prima di cominciare: dove sono, cosa tengono in mano, le tacche | questa pagina | 5 | 10 | ✉ gli echi, se non li hanno già |
-| **I** | Il barile: lo sgancio e i round nel fuoco | capitolo II per chi c'è e le mappe; capitolo III, la scheda da tavolo, §2-bis e §8; cap. VI Scena 6, «Variante — il barile sulla tenda» | 45 | 60 | — |
+| **I** | Il barile: lo sgancio e i round nel fuoco | cap. II per chi c'è e le mappe; cap. III, la scheda da tavolo, §2-bis e §8; cap. VI Scena 6, «Variante — il barile sulla tenda» | 45 | 60 | — |
 | **II** | Dopo il barile: il ritorno, Vatore, la notte che resta | cap. VI Scene 6 («Il ritorno», «Se il corno suona di notte») e 9; Scene 7-8 solo se scendono | 30 | 45 | ✉ il contratto del Seme, solo se il Seme si gioca al ritorno |
 | — | Pausa | | 10 | 15 | |
 | **III** | L'alba | cap. VI Scene 10 e 11 | 75 | 90 | — |
@@ -147,11 +147,11 @@ costruito, e da lì vengono le mura e il duello.
 **Le immagini e la musica**, nell'ordine in cui servono:
 
 - la mappa **M7-H**, il campo attorno allo spiazzo, e la **M7-C**, lo spiazzo
-  e la tenda, in fondo al capitolo II: dall'alto i PG vedono tutte e due, con
+  e la tenda, in fondo al cap. II: dall'alto i PG vedono tutte e due, con
   i fuochi accesi;
-- Balvar e Zog'tar: i ritratti nel capitolo II, accanto alle loro schede, da
+- Balvar e Zog'tar: i ritratti nel cap. II, accanto alle loro schede, da
   mostrare solo se uno dei due si fa vedere nella luce dell'incendio;
-- Skullcrusher nel cortile, Scena 11: la tavola è nel capitolo II, solo
+- Skullcrusher nel cortile, Scena 11: la tavola è nel cap. II, solo
   quando il drago scende;
 - la **M7-B** per il cortile, la stessa del master (cap. VI Appendice D);
 - *La canzone delle pietre* non si usa stasera: è del Rubino, la serata dopo.
@@ -166,16 +166,16 @@ cap. VI.
 | Minuti | Cosa |
 |---:|---|
 | 10 | questa regia, per intero |
-| 5 | capitolo III, «La scheda da tavolo»: i dieci passi dello sgancio |
-| 5 | capitolo III, §2-bis: la tabella delle quote e chi vede il colmo |
-| 12 | capitolo III, §8: chi li può trovare, l'iniziativa, le rune, le tattiche round per round, chi suona il corno, l'orda |
-| 3 | capitolo III, §9 (i barilotti) e §10 (che cosa cambia) |
+| 5 | cap. III, «La scheda da tavolo»: i dieci passi dello sgancio |
+| 5 | cap. III §2-bis: la tabella delle quote e chi vede il colmo |
+| 12 | cap. III §8: chi li può trovare, l'iniziativa, le rune, le tattiche round per round, chi suona il corno, l'orda |
+| 3 | cap. III §9 (i barilotti) e §10 (che cosa cambia) |
 | 5 | cap. VI Scena 6: «Variante — il barile sulla tenda», «Il ritorno», «Come torna il drago», «Se il corno suona di notte» |
 | 3 | cap. VI Scena 9: «Dopo il barile» e «Se tornano in volo» |
 | 5 | cap. VI Scena 10: la tabella «Dalla notte», con le righe del barile, le tre vie, la tabella dei successi |
 | 9 | cap. VI Scena 11: «Dopo il barile», la scheda d'entrata, il giro round per round, «Chi sceglie», «Chi non vola», la sidebar di scala, l'Appendice A.1-bis e le wyvern in A.6 |
 
-Il Seme (capitolo IV), se non è ancora stato giocato, si fa al ritorno: §3. La
+Il Seme (cap. IV), se non è ancora stato giocato, si fa al ritorno: §3. La
 Forgia ricorda (cap. VII) si apre durante il duello.
 
 **Sul tavolo**: il foglio dell'orologio della notte con le tacche segnate come
@@ -187,17 +187,17 @@ sua copia della sessione del 25, e se non l'ha più le passi la
 scheda del tuo volume, cap. VIII.
 
 **Le schede che contano stasera**, da tenere a portata. Quelle dei cattivi
-sono tutte nel capitolo II, nell'ordine in cui arrivano, con chi è, cosa
+sono tutte nel cap. II, nell'ordine in cui arrivano, con chi è, cosa
 vuole, l'aspetto e il ritratto accanto ai numeri:
 
 | Scheda | Perché |
 |---|---|
-| Skullcrusher Vecchio, capitolo II (il resto della scheda dell'Adulto in cap. VI Appendice A.1) | il duello. Il soffio contro Durik è nella Scena 11, riga 4-bis |
-| Le due wyvern, capitolo II | questo gruppo conta come straripante: ci sono, dal round 2 del duello |
+| Skullcrusher Vecchio, cap. II (il resto della scheda dell'Adulto in cap. VI Appendice A.1) | il duello. Il soffio contro Durik è nella Scena 11, riga 4-bis |
+| Le due wyvern, cap. II | questo gruppo conta come straripante: ci sono, dal round 2 del duello |
 | Durik, cap. VIII | +50% di danni dall'acido: il soffio lo prende in pieno. Con la runa prima il +50%, poi −20 (cap. VI §1, Hella). Senza runa il soffio gli fa in media più di 50: Tempra CD 15 o torna polvere, e la carica rimasta dopo i Treant dell'alba lo riporta per un'ora (Scena 11, riga 4-bis) |
-| Il capitolo III, la scheda da tavolo e il §8 | lo sgancio e i round nel fuoco: è lo scontro con cui si apre |
-| Zog'tar, le quattro guardie, il sacerdote e Grask, capitolo II | i round nel fuoco, o le mura se Zog'tar è vivo all'alba |
-| Balvar, capitolo II | il *dissolvi* al round 4. Dopo il barile non tratta più da solo, ma chi gli parla per primo del nipote Hald lo trova ancora aperto (capitolo III, §10) |
+| cap. III, la scheda da tavolo e il §8 | lo sgancio e i round nel fuoco: è lo scontro con cui si apre |
+| Zog'tar, le quattro guardie, il sacerdote e Grask, cap. II | i round nel fuoco, o le mura se Zog'tar è vivo all'alba |
+| Balvar, cap. II | il *dissolvi* al round 4. Dopo il barile non tratta più da solo, ma chi gli parla per primo del nipote Hald lo trova ancora aperto (cap. III §10) |
 | La Forgia ricorda le ferite, cap. VII | si segnano le ferite durante il duello, non dopo |
 
 **Gli echi.** Se il tavolo li ha già avuti in fortezza, salta questo
@@ -217,10 +217,10 @@ della sessione 4 non lo dice.
 Tre cose da fissare prima di cominciare, se non le hai già fissate nelle
 serate passate, perché il testo non le decide:
 
-- **il Seme, capitolo IV**, se si gioca al ritorno: il tono dell'Anello (A o B) lo scegli adesso;
+- **il Seme, cap. IV**, se si gioca al ritorno: il tono dell'Anello (A o B) lo scegli adesso;
   i Bracieri, se Tordek li interroga, rispondono con una frase sola e mai
   sul Seme. Il testo copiato nel
-  capitolo IV dice ancora «non commentano» e «in base a come Artemis ha
+  cap. IV dice ancora «non commentano» e «in base a come Artemis ha
   gestito»: valgono queste due righe;
 - **il dono a metà di Hella** (cap. VI §1): dipende dai successi dello Step 5
   del rito, e il log del 25 dice solo che i tre Doni sono stati dati tutti.
@@ -269,7 +269,7 @@ postierla. Il volo ha già la sua tacca.
   *invisibilità* restano (il volo dura 50 round, le invisibilità comprate 30);
 - **la quota** da cui sganciano. La sceglie il tavolo, e prima di sceglierla
   il tavolo può sapere solo quello che vede: dì quali fuochi illuminano la
-  tenda e chi di loro vede il colmo a quella quota (capitolo III, §2-bis). Da
+  tenda e chi di loro vede il colmo a quella quota (cap. III §2-bis). Da
   48 m la botte fa 15d6 e devia poco; più in basso devia meno, fa meno male, e
   dal round dopo i PG sono a portata del campo;
 - **le tacche**: lo stato di Grask si fissa adesso. Sveglio se l'ultima tacca
@@ -278,17 +278,17 @@ postierla. Il volo ha già la sua tacca.
 **1 · Lo sgancio.** L'iniziativa si tira quando decidono di sganciare. Il round
 di sorpresa è solo loro, e lasciar cadere è un'azione gratuita: botte e
 barilotti possono andare giù nello stesso round, e nessuno diventa visibile.
-Poi la scheda da tavolo del capitolo III, passo per passo: dove cade (d8 e il
+Poi la scheda da tavolo di cap. III, passo per passo: dove cade (d8 e il
 dado della quota), che cosa prende, le fiale, l'olio, chi brucia. Tira i
 danni ad alta voce e descrivi la tenda che si accende: la luce dell'incendio
 è intensa entro 12 m e fioca fino a 24 m (B24).
 
-**Se chiedono dove far cadere i barilotti**, la risposta è nel §9 del capitolo
-III: su Grask, prima che suoni. È l'unico modo di tenere lontano il drago
+**Se chiedono dove far cadere i barilotti**, la risposta è in
+cap. III §9: su Grask, prima che suoni. È l'unico modo di tenere lontano il drago
 senza scendere. Dillo solo se lo chiedono.
 
 **2 · I round nel fuoco.** Segui la tabella «Le tattiche, round per round»
-(capitolo III, §8) per Zog'tar, le guardie, il sacerdote, Balvar e Grask, e
+(cap. III §8) per Zog'tar, le guardie, il sacerdote, Balvar e Grask, e
 la tabella «L'orda» per il campo. Le quattro cose che possono far male a chi
 è in alto, e che hanno un nome:
 
@@ -314,7 +314,7 @@ o si muore, e le palle di fuoco nate insieme contano come un attacco solo
 quello che vedono da lassù: chi è uscito dal fuoco, chi no, se il corno ha
 suonato. Poi segna nel registro (§6) chi è morto, il corno e la quota.
 
-**I PE per la trovata** sono nel §13 del capitolo III (B15): la fascia di
+**I PE per la trovata** sono nel §13 di cap. III (B15): la fascia di
 mezzo, o quella alta se il corno non suona. Si danno a fine serata, insieme a
 quelli dei nemici caduti davvero.
 
@@ -335,16 +335,16 @@ notte»: chi riparte in volo subito è dentro le mura prima del drago.
 
 **Se scendono a finire il lavoro** (cap. VI Scene 7 e 8, mappa M7-C,
 Appendice A.2). La Scena 8 si gioca com'è, ma con la tenda in fiamme o
-crollata, il campo sveglio e i rinforzi della tabella «L'orda» del capitolo
-III già in strada. Balvar, se è vivo, non tratta più da solo: è stato
-attaccato (capitolo III, §10). Resta la lastra d'ardesia col nome di Hald: chi
+crollata, il campo sveglio e i rinforzi della tabella «L'orda»
+(cap. III §8) già in strada. Balvar, se è vivo, non tratta più da solo: è stato
+attaccato (cap. III §10). Resta la lastra d'ardesia col nome di Hald: chi
 gli parla del ragazzo per primo lo trova ancora aperto. La Cintura di Tordek qui funziona. Il danno massiccio è
 attivo.
 
 **Il Seme**, se non è stato giocato: si fa al ritorno, con le tacche che
 restano prima dell'8 (riga «≤ 6» della tabella d'uscita), oppure si rinvia al
 1372. Costa **1 tacca**. Il contratto ✉ si consegna solo dopo il box dell'ora
-della pergamena (capitolo IV).
+della pergamena (cap. IV).
 
 **Scena 9, Vatore** (cap. VI Scena 9). Dieci minuti, al ritorno. L'Anello di
 Artemis lo sente prima di chiunque: dagli lo spotlight. Se tornano in volo e
@@ -453,7 +453,7 @@ gruppo**.
 | ☐ | Chi è morto nel fuoco: Zog'tar · Balvar · il sacerdote · Grask · le guardie (quante) | |
 | ☐ | Zog'tar tirato fuori dal fuoco davanti ai suoi? Vivo all'alba? | |
 | ☐ | Il giavellotto con la luce e il *dissolvi* di Balvar: chi è stato visto, chi è caduto | |
-| ☐ | I PE per la trovata (capitolo III, §13): fascia | |
+| ☐ | I PE per la trovata (cap. III §13): fascia | |
 | ☐ | Il Seme, se giocato al ritorno: identificato · estirpato · tenuto · dato · firmato (e da chi) | |
 | ☐ | Balvar, se è sceso qualcuno: ucciso · ignorato · «dite che c'ero»? Hald l'ha visto? | |
 | ☐ | Il corno: suonato (da chi, a che round) · rubato · rimasto nella custodia | |
@@ -583,7 +583,7 @@ Hobgoblin secco, dagli occhi gialli, la mano sinistra nera di fuliggine fino
 al polso, un bastone ferrato con appese ossa di dita. Canta invece di
 parlare, sempre la stessa cantilena, e la interrompe solo per dare ordini.
 Dorme sulla sua stuoia a N14. Dopo il barile è lui che mette la *luce* sul
-giavellotto, al round 3 (capitolo III, §8). Ritratto: nessuno.
+giavellotto, al round 3 (cap. III §8). Ritratto: nessuno.
 
 <!-- include: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#sacerdote-scheda -->
 {{monster,frame
@@ -621,7 +621,7 @@ Ritratto: nessuno.
 
 **Numeri** (combattente 1 dell'SRD): **CA 15** · **pf 6** · Riflessi +1 ·
 Ascoltare e Osservare +2, −10 ad Ascoltare finché dorme. Dopo il barile suona
-entro **1d4 round** dal boato, se è vivo (capitolo III, §8).
+entro **1d4 round** dal boato, se è vivo (cap. III §8).
 
 ## Balvar Fuocospento, il runaio esiliato
 

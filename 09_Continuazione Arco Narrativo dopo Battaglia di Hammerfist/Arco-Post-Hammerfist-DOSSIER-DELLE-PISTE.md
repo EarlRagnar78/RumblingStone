@@ -99,7 +99,7 @@ IL SEGRETO       Zalkatar, il «dottore» della Torre, compra da Sonjak schiavi
                  uno di quei pagamenti. Sonjak intanto vende anime pietrificate
                  al Collezionista alle spalle della Mano Rossa, e due persone ne
                  tengono le prove per venderle: Ghaurush e Zin'thara. Zalkatar
-                 vuole leggere l'Anello di Artemis, e la notte del 30 Mirtul la
+                 vuole leggere l'Anello di Artemis, e la notte del 30 Flamerule la
                  Torre cammina.
 LA CHIAVE        «il dottore della torre invisibile» e «il Padrone delle Menti»
                  della Tomba di Belkram sono la stessa persona. Ricodifica ARC-04,
@@ -110,8 +110,8 @@ CHI CI GUADAGNA  Zalkatar (che i PG arrivino tardi o arrivino soli), Sonjak (che
                  Sonjak cada, ma per mano d'altri), Ghaurush e Zin'thara (che le
                  prove valgano di più, più tardi).
 L'INNESCO        l'Anello che si scalda mentre Re Thorek porge la runa (G21).
-                 Se nessuno lo raccoglie, scatta: il 30 Mirtul la Torre si muove.
-IL COSTO         ogni giorno speso altrove è un giorno di Mirtul in meno; ogni
+                 Se nessuno lo raccoglie, scatta: il 30 Flamerule la Torre si muove.
+IL COSTO         ogni giorno speso altrove è un giorno di Flamerule in meno; ogni
                  mattina Artemis parte con −1 al primo TS Volontà.
 LA PORTA CHIUSA  perché un ex chierico di Mask si è trapanato il cranio per
                  studiare la luce. Lathander e Mask lo dicono (HOOKS-Artemis §3.4)
@@ -130,7 +130,7 @@ consegna un bonus: consegna una domanda da portare alla Torre.
 
 **Domanda che il tavolo si fa**: *dov'è la Torre, e quanto tempo abbiamo?*
 **Se la battono fino in fondo**: arrivano al pianoro della Torre prima della
-notte del 30 Mirtul, con la ricerca accorciata di due round se hanno la mappa di
+notte del 30 Flamerule, con la ricerca accorciata di due round se hanno la mappa di
 Tempestas (`HOOKS-Artemis` §6), e la Torre si gioca come scritta in
 `P2A-Torre-PARTE1…PARTE4`.
 **Fonte del congegno**: `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md`
@@ -193,11 +193,11 @@ INNOCENZA  Un warlock con un artefatto ambiguo fa sogni strani da anni.
 FATTO      Tre settimane fa, emerso di lato da *camminare nelle ombre* vicino al
            fiume con tre rapide (Cannath Vale settentrionale), Tempestas ha
            sentito due drow: «il dottore della torre invisibile vuole il
-           portatore dell'anello caotico» — «aspetterà fino a fine Mirtul,
+           portatore dell'anello caotico» — «aspetterà fino a fine Flamerule,
            poi la torre cammina». Disegna una mappa di pelle: la Torre sta
            fra 8 e 15 km da quel punto. (HOOKS-Artemis §3.2; state.yaml,
            conoscenze di Tempestas, dal giorno 21)
-LETTURA    «Fine Mirtul» è il Giorno 30: restano otto giorni dal G22.
+LETTURA    «Fine Flamerule» è il Giorno 30: restano otto giorni dal G22.
 NOME       «Anello caotico» = l'Anello di Artemis. Il bersaglio è lui, non
            il gruppo (HOOKS §3.2, «conferma identitaria»).
 INNOCENZA  Tempestas stesso la prese per un nome in codice mercantile.
@@ -759,7 +759,7 @@ Le tre mosse quando non trovano niente, in ordine, e nessuna è «il DM spiega»
 
 | Pista | Se falliscono | Fonte |
 |---|---|---|
-| **A** — Artemis arriva dopo il 30 Mirtul, o la Torre lo batte | la Torre diventa mobile; l'Anello **non** evolve; a Rethmar vale la Variante B della scena del Mythal; Zalkatar sopravvive come nemesi di ARC-10 e può mandare Sethrax. È **costo, non blocco**: la Torre si può inseguire in una finestra successiva fino al G35, con la carta del cielo che dice dove è andata | `P2A-Torre-PARTE4-FINALE` §4; `HOOKS-Artemis` §4.3 |
+| **A** — Artemis arriva dopo il 30 Flamerule, o la Torre lo batte | la Torre diventa mobile; l'Anello **non** evolve; a Rethmar vale la Variante B della scena del Mythal; Zalkatar sopravvive come nemesi di ARC-10 e può mandare Sethrax. È **costo, non blocco**: la Torre si può inseguire in una finestra successiva fino al G35, con la carta del cielo che dice dove è andata | `P2A-Torre-PARTE4-FINALE` §4; `HOOKS-Artemis` §4.3 |
 | **A** — via DARK (Artemis ignora l'Anello) | niente sogni; dopo 10 giorni emicranie, −1 a tutti i TS Volontà finché non affronta l'Anello; la Torre resta mobile per sei mesi | `HOOKS-Artemis` §4.4 |
 | **B** — il tavolo non collega il dottore a Urialle | nessun costo meccanico. La porta resta chiusa, e Hella non saprà mai per chi è morta finché qualcuno non guarda le celle di ARC-04 con le parole giuste | `Zalkatar.md` §Nella campagna |
 | **C** — Ghaurush fugge e non tratta | le lettere restano a lui fino a Rethmar Fase 1. Se prende le gallerie alte senza trattare: **+1 CS alla Fase 1** e le lettere restano inutilizzate | `state.yaml`, trigger di Ghaurush |
@@ -908,7 +908,7 @@ Una per pista, da tenere dietro lo schermo. Rimandano ai § di sopra.
 ```
 PISTA A — LA TORRE CHE CAMMINA                         (congegno)
 Domanda   dov'è la Torre, e quanto tempo abbiamo?
-Scadenza  notte del 30 Mirtul (G30). Clock Zalkatar 6/8 → 7/8 (G23) → 8/8 (G27)
+Scadenza  notte del 30 Flamerule (G30). Clock Zalkatar 6/8 → 7/8 (G23) → 8/8 (G27)
 Nodi      A1 Anello che vibra ........ G21  Artemis (COS, DES, CAR re)
           A2 Sogni ................... n22-25 Artemis (COS, SAG, INT)
           A3 Tempestas e la mappa .... G21-22 Tempestas (CAR, COS, INT)

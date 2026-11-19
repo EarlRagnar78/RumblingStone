@@ -118,7 +118,7 @@ Il party decide di **scoprire perché i non-morti escono in massa**. Lascia la c
 
 **Costi:**
 - 4-5 giorni totali (2 in andata, 2 in ritorno, 1 di esplorazione).
-- Il party perde tutti i Day 28-32 → **Tordek manca al Torneo** (squalifica), **Artemis arriva tardi alla Torre** (rischio Mirtul).
+- Il party perde tutti i Day 28-32 → **Tordek manca al Torneo** (squalifica), **Artemis arriva tardi alla Torre** (rischio Flamerule).
 - Encounter del Thornwaste = EL 12-13 vari (non-morti, zone di pantano corrotto, lich-touched plants).
 
 **Eco:**

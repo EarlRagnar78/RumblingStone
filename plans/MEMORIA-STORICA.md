@@ -2147,3 +2147,36 @@ repo scritto con altre parole.
 - **Testo:** il DM ha chiesto di ricontrollare. I cancelli erano verdi e le misure di Azarr Kul, Ushgar e Zarim si ripetono uguali, ma la rilettura dei testi della #465 contro le schede ha trovato sei frasi sbagliate: nel Palio i sicari «colpivano per primo la guardia», contro l'obiettivo scritto una riga sopra, e due dettagli della notte del Giorno 2 erano inventati; nel Ghostlord c'erano un «Cerchio» e un «patto» che la scheda non ha; nel Collezionista la conseguenza del furto di Tordek diceva più della scheda.
 - **Trovato nel repo:** i tre file della riga del changelog, ognuno con il blocco `<!-- storico -->` che riporta la frase di prima
 - **Solo qui:** erano frasi marcate INFERRED, e la marca copriva la deduzione ma non la contraddizione con la fonte. Un testo INFERRED va comunque riletto contro la scheda da cui parte. I lotti 1-4 (#449, #452, #453, #454, #463) sono stati riletti solo nelle righe aggiunte, senza trovare contraddizioni; non è una rilettura completa da DM.
+
+### MS-0190 · 2026-11-18 · Calendario di ARC-09: quickstart e armate allineati a state.yaml
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** ADR-0125
+- **Temi:** calendario arc-09 torneo dauth finestre quickstart armate decisione-dm coerenza-storia
+- **Origine:** riga del 2026-11-18 «Calendario di ARC-09» in `plans/CHANGELOG.md`
+- **Testo:** due calendari di ARC-09 non coincidevano. `P2B-Torneo-DAUTH-DM-MASTER-REFERENCE` §1.1 (autoritativa) e `campaign/state.md` r.381 mettono i tre giorni del Torneo di Dauth ai Day 30-32, e `state.yaml` dà solo le finestre delle fasi (Torneo Day 25-34); il quickstart e la tabella delle armate (§4b) dicevano Day 26-30, con finestre più strette per P1, Rhest, Torre e Mercante. Il DM ha scelto che vale `state.yaml`: P1 Day 20-30, Rhest 25-32, Torre 28-35, Torneo 25-34 con i tre giorni ai Day 30-32, Mercante 28-36
+- **Trovato nel repo:** `campaign/DM-QUICKSTART-ARC09.md` · `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` · `campaign/state.yaml` · `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md`
+- **Solo qui:** l'ha trovata una delle tre «contraddizioni candidate» sui giorni del verificatore; le altre due, e ciò che resta della prima, sono falsi allarmi perché il confronto mette insieme fasi diverse della stessa entità e il giorno del torneo col Giorno di Marcia. Nella tabella dello scheduling una riga con due finestre fa nascere un falso allarme nuovo: una finestra per riga. La card citava `state.yaml` come fonte dei Day 30-32: il thread dell'audit ha fatto notare che lì c'è solo la finestra, e la fonte giusta è la tabella §1.1 del master del Torneo. I «Mirtul» rimasti in ARC-09 dopo la scelta «Giorno 1 = 1° Flamerule» sono fuori da questa voce e aspettano una card a parte
+
+### MS-0191 · 2026-11-18 · I «Mirtul» rimasti in ARC-09 diventano «Flamerule», con un cancello
+
+- **Data:** 2026-11-18
+- **PR:** —
+- **ADR:** ADR-0125
+- **Temi:** calendario arc-09 mirtul flamerule torre-invisibile lettera-brenna tempestas decisione-dm cancello
+- **Origine:** riga del 2026-11-18 «Calendario di ARC-09: i «Mirtul» rimasti» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha confermato sulla card della carta del cielo che vale l'ancora del 12/07: Giorno di Marcia 1 = 1° Flamerule, e la Torre cammina la notte del 30 Flamerule. Restavano 31 «Mirtul» in 9 file: la scadenza «fine Mirtul, poi la torre cammina» nei file degli agganci, nel dossier delle piste, nella Cerimonia delle 100 Asce, nella scheda di Tempestas e in `state.yaml`, più la data della lettera di Brenna. Il DM ha scelto di correggerli tutti, lettera compresa: ora è datata «il diciannovesimo di Flamerule»
+- **Trovato nel repo:** `scripts/tests/test_calendario_flamerule.py` · `campaign/state.yaml` (riga di Tempestas in `conoscenze`) · `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md` · `scripts/session_recap.py` (`MARCH_DAY1_HARPTOS`)
+- **Solo qui:** il coordinatore aveva chiesto di distinguere i «Mirtul» compatibili da quelli in contrasto: letti uno per uno, nessuno era compatibile, perché tutti legano il mese al Giorno 30 o al dopo-Hammerfist. La regola pensata all'inizio (mese scritto contro Giorno di Marcia, riga per riga) non è stata scritta: il cancello cerca solo la parola «Mirtul» nei testi di gioco, e non vede una data sbagliata scritta con un altro mese. Restano fuori `campaign/state-changelog.md`, che è storia, e i riferimenti di lore in `skills/`
+
+### MS-0192 · 2026-11-19 · Il lettore da 7B sulla RTX 4050 non entra nel verificatore della storia
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** ADR-0125
+- **Temi:** coerenza-storia rag lettore qwen2.5 7b rtx-4050 ollama prova-4050 esito-negativo
+- **Origine:** riga del 2026-11-19 «Lettore del RAG per «chi sa cosa»» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha lanciato il kit sull'ASUS: `qwen2.5:7b` a 4 bit via Ollama, 636 risposte su 636 in circa 2 minuti. Il criterio fissato il 12/11 (90% di SÌ sulle domande giuste, al massimo 5% col PNG sbagliato, 70% di precisione su main) non è raggiunto. Il 7B dice SÌ a 499 candidati su 560 su main e a 78 domande su 79 sulle righe dei mutanti: li trova (21 su 25) perché dice SÌ quasi a tutto. Il RAG resta fuori dal verificatore
+- **Trovato nel repo:** `plans/esperimenti/grafo-eventi-2026-11-12/ESITO.md` · `plans/esperimenti/grafo-eventi-2026-11-12/misure/risposte-qwen2.5-7b.json` · `plans/esperimenti/grafo-eventi-2026-11-12/leggi_ollama.py`
+- **Solo qui:** le letture complete (`main-rag-7b.json`, `mut-rag-7b.json`) e l'archivio del kit stanno in `/mnt/project-files/prove-4050-risultati/2026-11-19/`, fuori dal repo. Le 302 righe segnalate su main non sono state lette una per una: sei prese a caso erano false. Il 3B sbagliava per troppi NO, il 7B per troppi SÌ; riprovare ha senso solo cambiando la domanda al lettore, e il 12B non sta nei 6 GB della 4050

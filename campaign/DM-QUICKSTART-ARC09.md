@@ -123,11 +123,11 @@ di tutte le fasi).
 
 | Fase | File master | Arco temporale |
 |---|---|---|
-| P1 Hella | `P1A-Timeline-Quest-Hellas-*` + `P1B-Cerchio-Treant-*` + `P1C-Rituale-*` | Day 20-27 (finestra PG) |
-| P2 Rhest | `P2-RHEST-OVERVIEW.md` + `FASE1-4` + `ENCOUNTER-*` | Day 22-26 |
-| P2A Torre | `P2A-Torre-PARTE1-4` + `STATBLOCCHI` per livello | Day 24-28 |
-| P2B Torneo Dauth | `P2B-Torneo-PARTE1-3` + `OTTO-PORTE` + `BATTLE-STATS` | Day 26-30 (fixed) |
-| P2C Mercante | `P2C-Salvatore-Mercante-TESTO.md` | Day 25-35 (subplot) |
+| P1 Hella | `P1A-Timeline-Quest-Hellas-*` + `P1B-Cerchio-Treant-*` + `P1C-Rituale-*` | Day 20-30 (finestra PG; P1B Day 22-28, P1C Day 25-30) |
+| P2 Rhest | `P2-RHEST-OVERVIEW.md` + `FASE1-4` + `ENCOUNTER-*` | Day 25-32 |
+| P2A Torre | `P2A-Torre-PARTE1-4` + `STATBLOCCHI` per livello | Day 28-35 |
+| P2B Torneo Dauth | `P2B-Torneo-PARTE1-3` + `OTTO-PORTE` + `BATTLE-STATS` | Day 25-34 (finestra); Torneo Day 30-32 (fixed) |
+| P2C Mercante | `P2C-Salvatore-Mercante-TESTO.md` | Day 28-36 (subplot) |
 | P2D Palio di Channathgate | `P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md` (HUB) + `P2D-PALIO-DM-MASTER-REFERENCE.md` + `P2D-PALIO-GIORNO1..3-4` | Day 27-36 (**parallela**, opzionale; deadline rinforzi Day 37-38 → Rethmar Day 42). Vince il **Drappellone = Matrice del Mythal** (Fase 4) e muove il voto del Consiglio |
 | P3 Ghostlord | `P3-Ghostlord-LICH-ALLEANZA-TESTO.md` + `STATBLOCCHI` + `MAPPE` | Day 28-35 |
 | P3 Starsong | `P3-Starsong-Hill-ALLEANZA-ELFI-*` | Day 30-38 |
@@ -148,9 +148,10 @@ di tutte le fasi).
 |---|---|
 | 19 | Hammerfist end — Fauci di Palude: ramo condizionale (D10), non ancora deciso — default fugge ferito, alternativa ucciso |
 | 20-22 | Karruk CR 10 pubblico |
-| 22-26 | Saarvith/Zalkatar finestre PG (Rhest, Torre) |
-| 26-30 | **Dauth fixed**: Zarim CR 12 Day 2, Xal'thor CR 14 Day 3 |
+| 25-32 | Saarvith finestra PG (Rhest) |
 | 28-32 | Emissario Red Hand → Ghostlord parley |
+| 28-35 | Zalkatar finestra PG (Torre) |
+| 30-32 | **Dauth fixed**: Zarim CR 12 Day 2 del torneo (Day 31), Xal'thor CR 14 Day 3 (Day 32) |
 | 30-35 | Il Collezionista CR 18 muove shadow |
 | 35-38 | Warpriest élite CR 11 sacrificio → Ritual +1 |
 | 38-39 | Hobgoblin Captains CR 8 visibili |

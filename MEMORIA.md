@@ -84,7 +84,10 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-19 | AVVENTURE-COMMUNITY | Lettore del RAG per «chi sa cosa»: esito della prova da 7B sulla RTX 4050 del DM | `qwen2.5:7b` via Ollama sulla 4050, 636 risposte su 636 in circa 2 minuti (87% del modello in VRAM). Il criterio di ESITO.md non è raggiunto e il 7B non entra… |
 | 2026-11-19 | SISTEMI-DI-GIOCO-PLUGIN | `conformita_statblocchi`: il talento di una riga di variante non entra nei TS a… | ✅ test nuovo rosso su main, verde qui |
+| 2026-11-18 | AVVENTURE-COMMUNITY | Calendario di ARC-09: i «Mirtul» rimasti diventano «Flamerule» (scelta del DM d… | dopo la scelta del DM che il Giorno di Marcia 1 è il 1° Flamerule (la Torre cammina il 30 Flamerule), 31 «Mirtul» restavano in 9 file fuori dalla PR della cart… |
+| 2026-11-18 | AVVENTURE-COMMUNITY | Calendario di ARC-09: il quickstart e la tabella delle armate allineati a… | il ricontrollo del 18/11 ha trovato due calendari diversi: `P2B-Torneo-DAUTH-DM-MASTER-REFERENCE` §1.1 (autoritativa) e `campaign/state.md` r.381 mettono i tre… |
 | 2026-11-18 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, ARC-09 lotto 5: sei frasi corrette dopo la rilettura… | ✅ frasi del lotto 5 in contraddizione con la loro fonte: da 6 a 0 su 6 testi riletti (tre nel Palio, due nel Ghostlord, una nel Collezionista); misure di Azarr… |
 | 2026-11-18 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: ricontrollo del corredo di dieci schede chiesto dal DM… | errori nelle note di corredo da 4 a 0 e balestre senza munizioni da 2 a 0 su dieci schede ricontrollate; `verifica_scheda.py` 0 violazioni prima e dopo |
 | 2026-11-18 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Kit delle prove 4050, primo giro del DM sull'ASUS (ADR-0136): il kit è partito… | 🟡 messaggi che spiegano il fallimento di quel giro: 0 → 1; prove fallite prima di partire viste dalla verifica: 0 su 1 → 1 su 1; comandi per ripartire pulito:… |
@@ -93,14 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-18 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, ricontrollo di Incantesimi focalizzati (richiesta del DM del 18/11):… | ✅ |
 | 2026-11-18 | RIPRESA-PR-ABBANDONATE | D2, collaudo dell'arte del Drappo: quattro difetti dello script trovati al rico… | ✅ corretti prima che la prova giri sulla 4050: (1) due delle tre Gemini di serie (tavola-la-ruota, il-drappo) non si aprivano con Pillow per il blocco C2PA olt… |
 | 2026-11-18 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Prove sulla RTX 4050, ricontrollo chiesto dal DM il 18/11: corretti gli errori… | 🟡 sette errori corretti, nessuno visto girare su una GPU: (1) `immagini.sh --profilo cpu`, il comando della guida per il profilo leggero, non poteva partire: C… |
-| 2026-11-18 | STATO-E-ORDINE | ADR-0138, il cancello della coda della memoria storica (richiesta del DM del 18… | ✅ voci nate fuori da una PR: 0 → 11; thread risolti senza voce ora misurabili (13 su 13 fra il 12 e il 17/11, prima della regola; dopo la rilettura 4 hanno una… |
-| 2026-11-18 | DOCUMENT-AI (thread «Applicare Document… | Tecnica 3, decodifica vincolata: tre errori dello script della prova corretti p… | 🐛 Rilettura chiesta dal DM il 18/11, a prova non ancora girata sulla 4050. (1) `valido_libero` teneva solo le righe che cominciano con «-» o «*»: un elenco num… |
-| 2026-11-18 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Kit delle prove 4050, rilettura a caccia di errori chiesta dal DM il 18/11 (ADR… | 🟡 errori noti nel kit: 4 → 0; test `test_prove_4050` 24 → 28 (box finto con podman e distrobox di prova; verifica su esiti finti; BOM). `trascrizione-gpu.sh` r… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 189 voci, l'ultima MS-0189 del 2026-11-18 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 192 voci, l'ultima MS-0192 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

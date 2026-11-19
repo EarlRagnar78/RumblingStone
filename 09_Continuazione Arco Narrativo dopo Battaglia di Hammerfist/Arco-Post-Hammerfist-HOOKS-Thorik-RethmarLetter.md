@@ -112,7 +112,7 @@ Brenna ha sentito di Hammerfist (gli uccelli messaggeri sono arrivati il Giorno 
                      Brenna Sorvane,
                      Consigliere di Rethmar,
                      Comandante della Guardia Esterna,
-                     il diciannovesimo di Mirtul, anno 1372 DR
+                     il diciannovesimo di Flamerule, anno 1372 DR
 ```
 
 ### 2.3 Cosa Thorik impara

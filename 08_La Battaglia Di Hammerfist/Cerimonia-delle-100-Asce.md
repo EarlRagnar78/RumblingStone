@@ -126,7 +126,7 @@ Durante l'Atto 3 (mentre Re Thorek consegna le rune di pietra), **l'Anello di Ch
 
 **Trigger secondari (dopo la Cerimonia):**
 - **Notte 22 o 23**: **sogno della Doppia Maschera** — Lathander e Mask appaiono in sogno e rivelano l'identità di Zalkatar (ex-chierico di Mask) + movente (lettura sperimentale dell'Anello, non uccisione). Vedi `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md` §3.4.
-- **Cena di Hammerfist (Giorno 21 sera)**: se Tempestas nota l'Anello brillare di Artemis (Sapienza Magica CD 14), si avvicina e rivela la **conversazione drow intercettata 3 settimane fa** (*"il dottore della torre invisibile vuole il portatore dell'anello caotico" + "fine Mirtul, poi la torre cammina"*) + offre **mappa approssimativa** del Cannath Vale settentrionale. Vedi `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md` §3.2.
+- **Cena di Hammerfist (Giorno 21 sera)**: se Tempestas nota l'Anello brillare di Artemis (Sapienza Magica CD 14), si avvicina e rivela la **conversazione drow intercettata 3 settimane fa** (*"il dottore della torre invisibile vuole il portatore dell'anello caotico" + "fine Flamerule, poi la torre cammina"*) + offre **mappa approssimativa** del Cannath Vale settentrionale. Vedi `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md` §3.2.
 
 ### 5.4 Per Thorik — *La Lettera*
 

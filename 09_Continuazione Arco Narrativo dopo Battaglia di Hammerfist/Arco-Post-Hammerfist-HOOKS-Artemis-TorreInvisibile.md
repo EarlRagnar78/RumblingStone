@@ -9,7 +9,7 @@ Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md
 > - **Day 21-22 (opz.)** Tempestas conferma con conversazione drow intercettata 3 settimane fa nel Cannath Vale Nord (fiume con tre rapide) + mappa approssimativa.
 > - **Day 25 (opz.)** Saraah conferma direzione Torre via rito druidico al Sacred Forest.
 > - **Bonus meccanici sogno**: +2 TS Vol vs Zalkatar psionics; +1d6 al primo attacco/round Fase 3 (+2d6 se incontrata anche la donna cieca al mercato di Dauth — beat "Atto 2" della sub-quest Beriah/Maschera, vedi `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Artemis.md` §2.2).
-> - **Mirtul deadline**: Torre cammina ~Day 30. 4 vie (Torre presto solo / Sacred Forest poi Torre / Dauth poi Torre / DARK ignora).
+> - **Flamerule deadline**: Torre cammina ~Day 30. 4 vie (Torre presto solo / Sacred Forest poi Torre / Dauth poi Torre / DARK ignora).
 ## *Tono: House of David (la chiamata dall'oggetto sacro stesso) + Tolkien (il sogno che cresce notte dopo notte).*
 
 > **Status:** canone di campagna RumblingStone (2026-05-04, **rivisto 2026-05-04 v2**). Master reference: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §3.
@@ -28,7 +28,7 @@ Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md
 
 L'**Anello di Chaotic Illumination (Reforged)** ha avuto **due padroni precedenti** prima di Artemis: un **monaco di Lathander** e — molto prima — il Mind Flayer Warlock Drow **Zalkatar**, che lo ha studiato per decenni. L'Anello porta **memoria latente** di entrambi.
 
-Zalkatar, alla **Torre Invisibile**, sta entrando nella fase **mensile di spostamento** della Torre (Clock 6/8 → 7/8 → 8/8 a fine Mirtul). Sta **calibrando** un rito di teletrasporto della Torre. Il rito **vibra** in piani astrali laterali. L'Anello — bonded ad Artemis ma **mentalmente connesso al suo precedente padrone** — sente la vibrazione.
+Zalkatar, alla **Torre Invisibile**, sta entrando nella fase **mensile di spostamento** della Torre (Clock 6/8 → 7/8 → 8/8 a fine Flamerule). Sta **calibrando** un rito di teletrasporto della Torre. Il rito **vibra** in piani astrali laterali. L'Anello — bonded ad Artemis ma **mentalmente connesso al suo precedente padrone** — sente la vibrazione.
 
 Durante la **Cerimonia delle 100 Asce** (Giorno 21, vedi `08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md`), in un momento di grande emozione collettiva (Atto 3, quando Re Thorek consegna le rune di Custode Eterno), l'Anello **si surriscalda**.
 
@@ -98,14 +98,14 @@ Per ogni notte di viaggio, Artemis ha un sogno **leggermente più nitido**:
 
 #### Cosa Tempestas ricorda
 
-> *"Ero in emersione laterale dallo Shadow Walk, vicino al fiume con tre rapide nel Cannath Vale settentrionale. Stavo per riprendere cammino quando sentii due drow parlare a bassa voce dietro un cespuglio. Non li ho visti — solo sentiti. Una voce maschile, una femminile. La femminile diceva: '**il dottore della torre invisibile vuole il portatore dell'anello caotico**'. Il maschile rispondeva: '**aspetterà fino a fine Mirtul, poi la torre cammina**'. Ho memorizzato le parole perché 'torre invisibile' era strana. Pensavo fosse un nome in codice mercantile. Ora capisco che non lo era."*
+> *"Ero in emersione laterale dallo Shadow Walk, vicino al fiume con tre rapide nel Cannath Vale settentrionale. Stavo per riprendere cammino quando sentii due drow parlare a bassa voce dietro un cespuglio. Non li ho visti — solo sentiti. Una voce maschile, una femminile. La femminile diceva: '**il dottore della torre invisibile vuole il portatore dell'anello caotico**'. Il maschile rispondeva: '**aspetterà fino a fine Flamerule, poi la torre cammina**'. Ho memorizzato le parole perché 'torre invisibile' era strana. Pensavo fosse un nome in codice mercantile. Ora capisco che non lo era."*
 
 > *"Posso disegnarvi una mappa approssimativa di dove ho emergato. **Cannath Vale settentrionale, vicino al fiume con tre rapide.** Non più preciso di così. La Torre dovrebbe essere a 8-15 km in qualche direzione da quel punto."*
 
 #### Cosa Artemis ottiene
 
 - **Mappa approssimativa di pelle conciata** (handout DM): un foglio quadrato di 30 cm con una zona cerchiata e un fiume disegnato. Una runa élfica per "fiume con tre rapide".
-- **Conferma temporale:** "fine Mirtul" = ~Day 30 nel calendario canonico. Artemis ha **8 giorni** di finestra (Day 22 → Day 30) per arrivare prima che la Torre si muova.
+- **Conferma temporale:** "fine Flamerule" = ~Day 30 nel calendario canonico. Artemis ha **8 giorni** di finestra (Day 22 → Day 30) per arrivare prima che la Torre si muova.
 - **Conferma identitaria:** "il dottore" + "anello caotico" = il bersaglio è certamente Artemis. Non è paranoia.
 
 > **Tono per il DM:** Tempestas non drammatizza. Lo dice come un agente di intelligence che riconosce **adesso** un dato che aveva sottostimato. Niente mea culpa esagerati.
@@ -199,17 +199,17 @@ In quella variante, Artemis **riconosce immediatamente** la donna in sogno come 
 
 Artemis prende la sua intuizione e parte il Giorno 22 mattina (subito dopo la Cerimonia). Viaggia veloce con Wings of Shadow. Arriva nella zona del Cannath Vale settentrionale il Giorno 24-25. Cerca per 1-2 giorni. Trova la Torre il Giorno 26-27.
 
-**Beneficio:** anticipa Zalkatar. Arriva PRIMA che la Torre si muova (fine Mirtul = Day 30 circa).
+**Beneficio:** anticipa Zalkatar. Arriva PRIMA che la Torre si muova (fine Flamerule = Day 30 circa).
 
 **Costo:** Artemis NON è a Hammerfist, NON è al Sacred Forest, NON è a Dauth. Salta tutti gli archi paralleli. Solo solo nella Torre.
 
 ### 4.2 GRAY-B — *Resta col party, va a Sacred Forest, poi separa*
 
-Artemis resta col party. Va al Sacred Forest (Giorno 23-25). Poi parte da solo per la Torre (Giorno 26). Arriva entro la finestra Mirtul.
+Artemis resta col party. Va al Sacred Forest (Giorno 23-25). Poi parte da solo per la Torre (Giorno 26). Arriva entro la finestra Flamerule.
 
 **Beneficio:** ha la conferma di Saraah; ha possibile aiuto del party con sub-quest Mother of Fungi.
 
-**Costo:** maggiore tempo. Rischio Mirtul stretto.
+**Costo:** maggiore tempo. Rischio Flamerule stretto.
 
 ### 4.3 GRAY-C — *Ignora i sogni e va a Dauth col party (sub-quest Tournament)*
 
@@ -217,7 +217,7 @@ Artemis sceglie di seguire Tordek a Dauth (PATH-B together). Sogni si intensific
 
 **Beneficio:** completa l'arco del Torneo (incluso Beriah/Mask cult sub-quest). Ottiene mappa interna del Livello 3 della Torre (–4 alle CD puzzle).
 
-**Costo:** **rischia Mirtul.** Se Artemis arriva alla Torre il Giorno 38+ (dopo Mirtul), la Torre **si è mossa**. Zalkatar è scomparso. Possibile reset dell'intero arco P2A — o ricompare a Rethmar Phase 2 come wildcard.
+**Costo:** **rischia Flamerule.** Se Artemis arriva alla Torre il Giorno 38+ (dopo Flamerule), la Torre **si è mossa**. Zalkatar è scomparso. Possibile reset dell'intero arco P2A — o ricompare a Rethmar Phase 2 come wildcard.
 
 ### 4.4 DARK — *Ignora completamente l'Anello*
 
@@ -260,9 +260,9 @@ Discussione di gruppo. Possibile decisione collettiva di andare alla Torre INSIE
 
 | Decisione di Artemis | Eco alla Torre | Eco al Torneo / Rethmar |
 |---|---|---|
-| Via A (Torre presto, da solo) | Arriva prima del Mirtul; CR Zalkatar normale; senza mappa interna L3 | Salta sub-quest Beriah; non in arena Day 3 |
-| Via B (Sacred Forest poi Torre) | Conferma di Saraah; arriva entro Mirtul; rischio Mother of Fungi se distratto | Salta Torneo |
-| Via C (Dauth poi Torre) | Mappa interna L3 disponibile; rischio "Torre cammina" Mirtul | Sub-quest Beriah piena |
+| Via A (Torre presto, da solo) | Arriva prima del Flamerule; CR Zalkatar normale; senza mappa interna L3 | Salta sub-quest Beriah; non in arena Day 3 |
+| Via B (Sacred Forest poi Torre) | Conferma di Saraah; arriva entro Flamerule; rischio Mother of Fungi se distratto | Salta Torneo |
+| Via C (Dauth poi Torre) | Mappa interna L3 disponibile; rischio "Torre cammina" Flamerule | Sub-quest Beriah piena |
 | Tempestas consultato (mappa esterna + voce drow ricordata) | –2 round di ricerca della Torre; conferma identitaria | — |
 | Saraah consultata (rito druidico) | Conferma direzione; +1 al primo TS Volontà nella Torre | — |
 | **Sogno Lathander+Mask vissuto** | +2 TS Volontà vs poteri illithid Zalkatar; +1d6 al primo attacco/round Fase 3 | Eco post-Torre: opzione "cortesia non richiesta" a Lathander/Mask |

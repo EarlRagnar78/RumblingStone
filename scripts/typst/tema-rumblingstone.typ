@@ -30,9 +30,14 @@
 // heading must be of level 1». Questo è fuori dall'indice e dai segnalibri,
 // che restano di quello nascosto, e si disegna com'era: `corpo` porta già la
 // sua forma, e le spaziature del `show heading` del tema qui non valgono.
-#let titolo-visibile(livello, corpo) = {
+//
+// Con `segnalibro: true` (l'apertura di capitolo) è lui a fare il segnalibro:
+// typst annida un segnalibro sotto l'ultimo titolo che lo precede, e se il
+// titolo di livello 1 più vicino non ha segnalibro le sezioni salgono al
+// primo livello. Era la causa dei segnalibri piatti (ADR-0145).
+#let titolo-visibile(livello, corpo, segnalibro: false) = {
   show heading: set block(above: 0pt, below: 0pt, sticky: false)
-  heading(level: livello, outlined: false, bookmarked: false, corpo)
+  heading(level: livello, outlined: false, bookmarked: segnalibro, corpo)
 }
 
 #let SERIF = "EB Garamond"
@@ -50,7 +55,8 @@
   // L'heading (voce d'indice + segnalibro PDF) va emesso PRIMA del float:
   // altrimenti la testatina della pagina d'apertura mostra ancora il capitolo
   // precedente, perché la query si risolve prima che il float atterri.
-  hide(heading(level: 1, titolo))
+  // Il segnalibro lo fa il titolo visibile (sotto): vedi `titolo-visibile`.
+  hide(heading(level: 1, bookmarked: false, titolo))
   place(top, float: true, scope: "parent", clearance: 14pt)[
     #block(width: 100%, above: 0pt)[
       #line(length: 100%, stroke: 0.6pt + seppia)
@@ -58,7 +64,7 @@
       #grid(columns: (1.5cm, 1fr), column-gutter: 10pt, align: horizon,
         // il fregio è decorazione: un artefatto, senza testo alternativo (PDF/UA-1)
         if fregio != none { pdf.artifact(image(fregio, width: 1.5cm)) } else { [] },
-        titolo-visibile(1, text(font: TITOLI, size: 17pt, weight: 600, fill: rosso)[#titolo]))
+        titolo-visibile(1, text(font: TITOLI, size: 17pt, weight: 600, fill: rosso)[#titolo], segnalibro: true))
       #v(5pt)
       #line(length: 100%, stroke: 0.6pt + seppia)
     ]
@@ -877,7 +883,7 @@
 // «da stampare stasera» non sono lo stesso file.
 #let libro(titolo: "", sottotitolo: "", brand: "", banner: "", meta: "", capitolo: "",
            apparato: true, carta: "avorio", formato: "a4", copertina: none, intro: none,
-           crediti: none, indice-profondita: 3,
+           crediti: none, indice-profondita: 4,
            corpo) = {
   // A5 è il formato «libretto»: **una colonna sola**, perché in A5 due colonne
   // sarebbero da 5 cm e nessuno impagina un manuale così.
@@ -939,8 +945,13 @@
   show heading: it => {
     let etichetta = it.at("label", default: none)
     // `<come-N>`: un titolo che nei master saltava un livello sale nell'albero
-    // dei tag (export_booklet_typst.titoli_senza_salti) ma si disegna come prima
-    let livello = if etichetta == <come-3> { 3 } else if etichetta == <come-4> { 4 } else { it.level }
+    // dei tag (export_booklet_typst.titoli_senza_salti) ma si disegna come prima.
+    // Si disegna per `depth`, non per `level`: dentro un capitolo i titoli dei
+    // master scendono di un livello nei segnalibri (`offset: 1`,
+    // export_booklet_typst.titoli_annidati, ADR-0145) e la pagina resta uguale.
+    // I titoli con `level` esplicito (capitolo, carta, scheda) portano già la
+    // loro forma nel corpo.
+    let livello = if etichetta == <come-2> { 2 } else if etichetta == <come-3> { 3 } else if etichetta == <come-4> { 4 } else { it.depth }
     set text(font: TITOLI, fill: if livello == 1 { rosso } else { seppia })
     if livello == 1 { text(size: 15pt, weight: 600)[#it.body] }
     else {

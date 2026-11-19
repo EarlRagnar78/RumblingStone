@@ -44,13 +44,13 @@ class TestTitoliSenzaSalti(unittest.TestCase):
     def test_un_salto_sale_di_livello_e_ricorda_il_disegno(self):
         src, n = ex.titoli_senza_salti('#capitolo-aperto("I", none)\n=== Chi si incontra\n== Dopo\n')
         self.assertEqual(n, 1)
-        self.assertIn("#heading(level: 2)[Chi si incontra] <come-3>", src)
+        self.assertIn("#heading(depth: 2)[Chi si incontra] <come-3>", src)
         self.assertIn("\n== Dopo", src)
 
     def test_sotto_la_profondita_dell_indice_resta_fuori(self):
         src, n = ex.titoli_senza_salti("= A\n== B\n==== C\n")
         self.assertEqual(n, 1)
-        self.assertIn("#heading(level: 3, outlined: false)[C] <come-4>", src)
+        self.assertIn("#heading(depth: 3, outlined: false, bookmarked: true)[C] <come-4>", src)
 
     def test_una_scheda_apre_al_livello_1(self):
         src, n = ex.titoli_senza_salti("== A\n#scheda(\n  nome: [X],\n)\n=== B\n")
@@ -65,11 +65,74 @@ class TestTitoliSenzaSalti(unittest.TestCase):
         self.assertEqual(ex.titoli_senza_salti(testo), (testo, 0))
 
 
+class TestTitoliAnnidati(unittest.TestCase):
+    """ADR-0145: i segnalibri seguono la gerarchia, capitolo → sezioni →
+    sottosezioni, come nei PDF di Paizo e di Wizards; prima erano piatti."""
+
+    def test_dopo_il_primo_capitolo_i_titoli_scendono_di_un_livello(self):
+        src = ex.titoli_annidati('#capitolo-aperto("I", none)\n= A\n#capitolo-aperto("II", none)\n= B\n')
+        self.assertEqual(src.count("#set heading(offset: 1)"), 1)
+        self.assertLess(src.index('#capitolo-aperto("I"'), src.index("#set heading(offset: 1)"))
+        self.assertLess(src.index("#set heading(offset: 1)"), src.index("= A"))
+
+    def test_senza_capitoli_non_cambia_nulla(self):
+        testo = "= A\n== B\n"
+        self.assertEqual(ex.titoli_annidati(testo), testo)
+
+    def test_dentro_il_capitolo_annidato_il_primo_titolo_e_di_profondita_1(self):
+        """Con `offset: 1` il capitolo è il livello 1 e un `==` subito sotto
+        sarebbe il 3: PDF/UA-1 lo rifiuta. Sale a profondità 1 e si disegna
+        come prima."""
+        src, n = ex.titoli_senza_salti(ex.titoli_annidati('#capitolo-aperto("I", none)\n== A\n=== B\n'))
+        self.assertEqual(n, 2)
+        self.assertIn("#heading(depth: 1)[A] <come-2>", src)
+        self.assertIn("#heading(depth: 2)[B] <come-3>", src)
+
+    def test_le_sezioni_sorelle_restano_sorelle(self):
+        src, n = ex.titoli_senza_salti(ex.titoli_annidati(
+            '#capitolo-aperto("I", none)\n== A\n=== a\n== B\n#capitolo-aperto("II", none)\n= C\n'))
+        self.assertIn("#heading(depth: 1)[A] <come-2>", src)
+        self.assertIn("#heading(depth: 2)[a] <come-3>", src)
+        self.assertIn("#heading(depth: 1)[B] <come-2>", src)
+        self.assertIn("\n= C", src)
+        self.assertEqual(n, 3)
+
+    def test_il_numero_del_titolo_resta(self):
+        src, _ = ex.titoli_senza_salti(ex.titoli_annidati(
+            '#capitolo-aperto("I", none)\n== 7. In numeri\n== - trattino\n'))
+        self.assertIn("#heading(depth: 1)[7\\. In numeri] <come-2>", src)
+        self.assertIn("#heading(depth: 1)[\\- trattino] <come-2>", src)
+
+    def test_due_volte_e_come_una(self):
+        una = ex.titoli_annidati('#capitolo-aperto("I", none)\n= A\n')
+        self.assertEqual(ex.titoli_annidati(una), una)
+
+
 @unittest.skipUnless(tm.disponibile(), "typst assente")
 class TestIlTemaProducePdfUa(unittest.TestCase):
+    def test_segnalibri_annidati(self):
+        import pymupdf
+        corpo = ex.titoli_annidati('#capitolo-aperto("I · Apertura", none)\n= Sezione\nTesto.\n'
+                                   '== Sotto\nAltro.\n#capitolo-aperto("II · Poi", none)\n= Altra\nFine.\n')
+        e, pdf = _compila(corpo)
+        self.assertTrue(e.ok, e.errore)
+        self.assertTrue(e.pdfua, e.motivo_pdfua)
+        toc = [(l, t) for l, t, _ in pymupdf.open(stream=pdf, filetype="pdf").get_toc()]
+        self.assertEqual(toc, [(1, "I · Apertura"), (2, "Sezione"), (3, "Sotto"),
+                               (1, "II · Poi"), (2, "Altra")])
+
+    def test_il_numero_nel_segnalibro_resta(self):
+        import pymupdf
+        corpo, _ = ex.titoli_senza_salti(ex.titoli_annidati(
+            '#capitolo-aperto("I", none)\n== 7. In numeri\nTesto.\n'))
+        e, pdf = _compila(corpo)
+        self.assertTrue(e.ok and e.pdfua, e.errore or e.motivo_pdfua)
+        toc = [(l, t) for l, t, _ in pymupdf.open(stream=pdf, filetype="pdf").get_toc()]
+        self.assertEqual(toc, [(1, "I"), (2, "7. In numeri")])
+
     def test_capitolo_con_titolo_muto_e_salto_riparato(self):
         corpo = ('#capitolo-aperto("I · Apertura", none)\n'
-                 '#heading(level: 2)[Chi si incontra] <come-3>\n'
+                 '#heading(depth: 2)[Chi si incontra] <come-3>\n'
                  'Testo.\n== Sezione\nAltro testo.\n')
         e, _ = _compila(corpo)
         self.assertTrue(e.ok, e.errore)

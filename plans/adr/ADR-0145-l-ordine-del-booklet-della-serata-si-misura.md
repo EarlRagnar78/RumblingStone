@@ -109,9 +109,8 @@ Quello che si paga:
 - il rimando a «Se l'alba arriva prima della tenda» va al capitolo giusto
   ma senza pagina, perché nel master è un'apertura in grassetto e non un
   titolo;
-- i segnalibri del PDF sono piatti: titolo del capitolo e sue sezioni allo
-  stesso livello. È un difetto di navigazione che questa misura aggira e
-  non corregge;
+- i segnalibri del PDF erano piatti: titolo del capitolo e sue sezioni allo
+  stesso livello. Corretto il 2026-11-19, sotto in «I segnalibri annidati».
 
 ## Il volume d'arco
 
@@ -161,3 +160,66 @@ Quello che si paga nel volume:
   ognuna in testa alla sua parte;
 - il quadro dell'arco è testo nuovo, scritto dai riquadri «La serata in tre
   frasi» dei master: va letto da Jfs.
+
+## I segnalibri annidati e il confronto con le case
+
+Jfs (19/11, 14:07 e 14:10 UTC) chiede di chiudere i limiti in modo
+deterministico, seguendo uno standard editoriale professionale, e di dire
+dove questo standard è allineato a Paizo, a Wizards e alla community e dove
+se ne discosta. Le differenze entrano solo se sono proprie del repo e
+migliorano davvero il volume (14:11).
+
+I segnalibri ora seguono l'albero dei titoli: il capitolo al primo livello,
+le sue sezioni sotto. Il convertitore inserisce `#set heading(offset: 1)`
+dopo il primo capitolo e porta ogni capitolo a cominciare dal secondo
+livello, così le sezioni sorelle restano sorelle. In PDF/UA-1 nessun titolo
+salta un livello. Il titolo nascosto del capitolo non è un segnalibro, lo è
+quello visibile, perché Typst appende i segnalibri all'ultimo titolo
+segnalato. Un numero in testa al titolo («7. In numeri») si protegge, se no
+diventa un elenco e sparisce dal segnalibro.
+
+| | prima (main 6547ff60) | dopo |
+|---|---|---|
+| Serata, 132 pp | 143 segnalibri piatti | 143 su 4 livelli, 20 al primo |
+| Volume d'arco, 289 pp | 439 segnalibri piatti | 439 su 4 livelli, 13 al primo |
+| PDF/UA-1 e PDF/A-2a | sì | sì |
+| Rimandi con la pagina giusta | 113 su 113 e 242 su 242 | uguali |
+| Difetti d'ordine (`misura_ordine.py`) | 0 e 0 | 0 e 0 |
+
+Le due fonti, lette sui PDF caricati da Jfs: *Burnt Offerings* (Paizo,
+2007) e l'estratto di *Red Hand of Doom* (WotC, 2006). Tutti e due hanno
+segnalibri gerarchici. Per la community si sono guardati Ben Milton
+(Questing Beast) e Mike Shea (*Return of the Lazy Dungeon Master*).
+
+| Scelta del repo | Paizo (*Burnt Offerings*) | Wizards (*Red Hand of Doom*) | Esito |
+|---|---|---|---|
+| Segnalibri a più livelli | sì: Part One…Four sotto l'avventura | sì: Preparation, Background sotto Introduction | allineato da questa decisione |
+| Preparazione prima del gioco (R2) | Adventure Background prima della Part One | Introduction: Character Hooks, Running the Adventure | allineato |
+| Il riassunto in testa alla parte (R4) | l'intro di ogni Part | il sommario di ogni Part | allineato |
+| Il dopo-serata dopo le scene, prima delle appendici (R6) | Concluding the Adventure | Concluding the Adventure | allineato |
+| PNG e creature in fondo (Durik, la galleria) | Characters, Bestiary | appendice delle creature | allineato |
+| Indice di una pagina (V2) | una pagina | due | allineato |
+| Il foglio della serata e il riferimento rapido in testa | no | no | della community (Milton, Shea): resta, perché al tavolo è la prima pagina aperta |
+| Due stampe per arco, volume e serata (ADR-0144) | no: un volume | no: un volume | del repo, già deciso da Jfs: resta |
+| La scheda stampata sia nella scena sia in appendice («entrambe») | in appendice, rimando nella scena | nella scena | del repo: l'unica differenza non misurata, su card a Jfs |
+
+Le divergenze che restano sono tre. Il foglio in testa viene dalla
+community, non dalle case, e si tiene perché al tavolo è la pagina aperta
+per prima. Le due stampe per arco le ha decise Jfs con ADR-0144. La scheda
+stampata due volte non ha ancora una misura che dica che migliora il
+volume: finché Jfs non risponde sulla card, resta com'è.
+
+Il ruolo di ogni sezione, scritto a mano nei file dei ruoli, e la misura
+d'ordine come cancello vanno in una PR successiva. Lì il ruolo passa nel
+manifest, con i termini di CMOS 1.4 (front, body, back matter) e di EPUB 3
+(`epub:type`).
+
+Si paga così:
+
+- `misura_distanza_pagine.py --volume` conta S1 sui segnalibri di primo
+  livello. Con l'albero il denominatore cambia: per la serata da 6 su 69 a
+  1 su 17, per il volume da 44 su 129 a 7 su 12. Il thread del volume lo sa
+  e rifà la soglia;
+- nell'Abbazia della Rotta Sicura le pagine passano da 45 a 46, per i titoli
+  che cambiano livello.
+

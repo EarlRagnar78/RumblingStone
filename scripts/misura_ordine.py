@@ -41,7 +41,10 @@ from pathlib import Path
 RUOLI = ("avvio", "preparazione", "gioco", "sintesi", "fuori-serata", "riferimento", "regole")
 
 
-def sezioni(pdf: Path, livello: int = 2) -> list[dict]:
+def sezioni(pdf: Path, livello: int = 3) -> list[dict]:
+    """Le voci dei segnalibri fino a `livello`. Dal 2026-11-19 i segnalibri
+    sono annidati (capitolo 1, sezione 2, sottosezione 3: ADR-0145); prima
+    erano piatti e bastava il 2."""
     import pymupdf
     doc = pymupdf.open(pdf)
     toc = [(l, t.strip(), p) for l, t, p in doc.get_toc() if l <= livello]
@@ -55,8 +58,9 @@ def sezioni(pdf: Path, livello: int = 2) -> list[dict]:
 def etichetta(sez: list[dict], regole: list[dict]) -> list[dict]:
     """La prima regola il cui `titolo` (regex) combacia dà il ruolo; il resto
     eredita il ruolo del capitolo che lo contiene. Un capitolo è una regola
-    con `"capitolo": true`: i segnalibri dei nostri PDF sono piatti, e il
-    livello non basta a dire dove comincia un capitolo."""
+    con `"capitolo": true`: nei PDF di prima del 2026-11-19 i segnalibri
+    erano piatti e il livello non bastava a dire dove comincia un capitolo;
+    la regola resta, così si misurano anche quelli."""
     padre = None
     sopra: dict[int, str] = {}   # livello → ruolo dell'ultima sezione con una regola
     for s in sez:

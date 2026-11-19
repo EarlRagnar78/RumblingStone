@@ -23,19 +23,25 @@
       "title": "I · Il Piano della Terra e Terros",
       "file": "../../ARC07-DEF-1-PIANO-TERRA-TERROS.md",
       "tag": "dm",
-      "quando": "prima di scendere nel Piano della Terra: la serata di Terros"
+      "quando": "prima di scendere nel Piano della Terra: la serata di Terros",
+      "ruolo": "gioco",
+      "parte": true
     },
     {
       "title": "II · Il ritorno e gli affreschi",
       "file": "../../ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
       "tag": "dm",
-      "quando": "al ritorno nella Sala, senza combattere: gli affreschi e il sonno"
+      "quando": "al ritorno nella Sala, senza combattere: gli affreschi e il sonno",
+      "ruolo": "gioco",
+      "parte": true
     },
     {
       "title": "III · La resurrezione di Hella",
       "file": "../../ARC07-DEF-3-RESURREZIONE-HELLA.md",
       "tag": "dm",
-      "quando": "la serata del rito: Hella torna, Durik si lega a lei"
+      "quando": "la serata del rito: Hella torna, Durik si lega a lei",
+      "ruolo": "gioco",
+      "parte": true
     },
     {
       "title": "IV · Il viaggio a mille anni fa: il tramonto e la notte",
@@ -61,7 +67,9 @@
         "SCENA 5",
         "SCENA 6"
       ],
-      "quando": "il tramonto e la notte del −1000: il consiglio, le scelte, il campo"
+      "quando": "il tramonto e la notte del −1000: il consiglio, le scelte, il campo",
+      "ruolo": "gioco",
+      "parte": true
     },
     {
       "title": "V · Il barile sulla tenda di Zog'tar",
@@ -85,7 +93,9 @@
         "13.",
         "Fonti"
       ],
-      "quando": "la notte, quando il gruppo vola sul campo con la botte"
+      "quando": "la notte, quando il gruppo vola sul campo con la botte",
+      "ruolo": "gioco",
+      "parte": true
     },
     {
       "title": "VI · La tenda, Vatore, le mura e il duello",
@@ -107,37 +117,47 @@
         "APPENDICE B",
         "APPENDICE D"
       ],
-      "quando": "dopo il barile e all'alba: la tenda, Vatore, le mura, il duello"
+      "quando": "dopo il barile e all'alba: la tenda, Vatore, le mura, il duello",
+      "ruolo": "gioco",
+      "parte": true
     },
     {
       "title": "VII · Il ritorno a Hammerfist",
       "file": "../../ARC07-DEF-5-RITORNO-HAMMERFIST.md",
       "tag": "dm",
-      "quando": "la serata dopo il duello: il Rubino, il Cuore della Montagna"
+      "quando": "la serata dopo il duello: il Rubino, il Cuore della Montagna",
+      "ruolo": "gioco",
+      "parte": true
     },
     {
       "title": "VIII · La Forgia ricorda le ferite",
       "file": "../../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md",
       "tag": "dm",
-      "quando": "dopo il duello, per preparare Fauci di Palude (ARC-08)"
+      "quando": "dopo il duello, per preparare Fauci di Palude (ARC-08)",
+      "ruolo": "fuori-serata",
+      "parte": true
     },
     {
       "title": "IX · Conseguenze ed echi dell'arco",
       "file": "../../ARC07-CONSEGUENZE-ECHI.md",
       "tag": "dm",
-      "quando": "a fine arco, prima di aprire gli archi 8 e 9"
+      "quando": "a fine arco, prima di aprire gli archi 8 e 9",
+      "ruolo": "fuori-serata",
+      "parte": true
     },
     {
       "title": "X · Durik, il compagno di Hella",
       "file": "../sessione-resurrezione-mille-anni/08-SCHEDA-DURIK.md",
       "tag": "dm",
-      "quando": "ogni serata dopo la resurrezione: è sempre al tavolo"
+      "quando": "ogni serata dopo la resurrezione: è sempre al tavolo",
+      "ruolo": "riferimento"
     },
     {
       "title": "XI · La cassetta del DM: cast, pronuncia, read-aloud, suoni",
       "file": "../../ARC07-CASSETTA-DEL-DM.md",
       "tag": "dm",
-      "quando": "prima di ogni serata: chi c'è, come si pronuncia, che suoni"
+      "quando": "prima di ogni serata: chi c'è, come si pronuncia, che suoni",
+      "ruolo": "riferimento"
     }
   ],
   "fregio": "../../../docs/assets/fregi/fregio-arco-07-forgia.svg",
@@ -146,5 +166,93 @@
   "indice_analitico": true,
   "pagine_nei_rimandi": true,
   "intro_md": "00-INTRO-VOLUME.md",
-  "indice_profondita": 1
+  "indice_profondita": 1,
+  "ruoli_sezioni": [
+    {
+      "titolo": "^Il quadro dell'arco|^L'arco in breve|^Come si usa questo volume",
+      "ruolo": "avvio"
+    },
+    {
+      "titolo": "^Il Portale della Forgia Eterna —",
+      "ruolo": "avvio"
+    },
+    {
+      "titolo": "^INDICE DEL MODULO",
+      "ruolo": "avvio"
+    },
+    {
+      "titolo": "^§0(-bis)? — Q",
+      "ruolo": "avvio"
+    },
+    {
+      "titolo": "^§0-ter",
+      "ruolo": "preparazione"
+    },
+    {
+      "titolo": "^§1 — HIGHLIGHT",
+      "ruolo": "preparazione"
+    },
+    {
+      "titolo": "ZONE",
+      "ruolo": "preparazione"
+    },
+    {
+      "titolo": "^Chi si incontra",
+      "ruolo": "preparazione"
+    },
+    {
+      "titolo": "HANDOUT",
+      "ruolo": "riferimento",
+      "nota": "gli AP Paizo stampano gli handout in fondo al volume o alla parte: in coda non è un difetto"
+    },
+    {
+      "titolo": "CONTINGENZE",
+      "ruolo": "gioco"
+    },
+    {
+      "titolo": "ECHO LEDGER|^§11 — ECHI|CONSEGUENZE NEGLI AFFRESCHI",
+      "ruolo": "fuori-serata"
+    },
+    {
+      "titolo": "AVANZAMENTO",
+      "ruolo": "fuori-serata"
+    },
+    {
+      "titolo": "^§12 — RITORNO|^§11 — PONTE|^§12 — PONTE|^§9 — PONTE",
+      "ruolo": "fuori-serata"
+    },
+    {
+      "titolo": "^10\\. Che cosa cambia|^12\\. Domande al DM|^13\\. Le trovate|^Fonti$",
+      "ruolo": "fuori-serata"
+    },
+    {
+      "titolo": "^7\\. Che cosa succede, in numeri",
+      "ruolo": "sintesi",
+      "riassume": "^[2-6](-bis)?\\. "
+    },
+    {
+      "titolo": "^C\\.1 ·",
+      "ruolo": "sintesi",
+      "riassume": "^SCENA [234] "
+    },
+    {
+      "titolo": "^C\\.2 ·",
+      "ruolo": "sintesi",
+      "riassume": "^SCENA [678] "
+    },
+    {
+      "titolo": "^C\\.3 ·",
+      "ruolo": "sintesi",
+      "riassume": "^SCENA 11 "
+    },
+    {
+      "titolo": "^APPENDICE C — LE VERSIONI VELOCI",
+      "ruolo": "sintesi",
+      "riassume": "^SCENA (7|8|11) "
+    },
+    {
+      "titolo": "^APPENDICE|^MAPPE|^11\\. Le mappe",
+      "ruolo": "riferimento"
+    }
+  ]
 }

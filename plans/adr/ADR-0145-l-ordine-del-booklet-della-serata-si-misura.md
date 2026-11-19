@@ -3,7 +3,7 @@
 **Stato**: proposta (2026-11-19); le card di Jfs sui doppioni e su Durik hanno risposto lo stesso giorno (v4.1)
 **Data**: 2026-11-19
 **Decisione-fonte**: il DM (Jfs), 2026-11-19: «mi controlli se l'ordine logico del booklet con cui compaiono le varie sezioni ha senso e segue gli standard editoriali validi […] cercarle e vedere quanto sono applicate misurando e testando il risultato», e «creare se non ci sono strumenti per correggere questi difetti editoriali […] sempre con test tdd», e alle 13:10 UTC: «aggiungi lo stesso lavoro anche per l'avventura completa».
-**Rapporti**: segue [ADR-0013](ADR-0013-standard-generazione-booklet-sessioni.md) (struttura del booklet di sessione), [ADR-0122](ADR-0122-il-volume-segue-lo-schema-degli-adventure-path.md) e [ADR-0144](ADR-0144-due-stampe-per-arco-e-rimandi-con-la-pagina.md); usa `plans/RICERCA-USABILITA-AL-TAVOLO-2026-11.md`. Misura: `scripts/misura_ordine.py`, regole per la serata di ARC-07 in `plans/esperimenti/ordine-serata-2026-11-19/ruoli-serata.json` e per il volume d'arco in `plans/esperimenti/ordine-volume-2026-11-19/ruoli-volume.json`.
+**Rapporti**: segue [ADR-0013](ADR-0013-standard-generazione-booklet-sessioni.md) (struttura del booklet di sessione), [ADR-0122](ADR-0122-il-volume-segue-lo-schema-degli-adventure-path.md) e [ADR-0144](ADR-0144-due-stampe-per-arco-e-rimandi-con-la-pagina.md); usa `plans/RICERCA-USABILITA-AL-TAVOLO-2026-11.md`. Misura: `scripts/misura_ordine.py`; i ruoli della serata e del volume d'arco di ARC-07 stanno nei loro manifest (chiave `ruolo` dei capitoli e lista `ruoli_sezioni`), il cancello è `difetti_ordine` in `scripts/misura_stampa.py`. Fino al 2026-11-19 stavano in due file a parte sotto `plans/esperimenti/ordine-*-2026-11-19/`, tolti quando i ruoli sono passati nel manifest.
 
 ## Contesto
 
@@ -210,9 +210,8 @@ stampata due volte non ha ancora una misura che dica che migliora il
 volume: finché Jfs non risponde sulla card, resta com'è.
 
 Il ruolo di ogni sezione, scritto a mano nei file dei ruoli, e la misura
-d'ordine come cancello vanno in una PR successiva. Lì il ruolo passa nel
-manifest, con i termini di CMOS 1.4 (front, body, back matter) e di EPUB 3
-(`epub:type`).
+d'ordine come cancello sono passati nella PR successiva: sotto, in «I ruoli
+nel manifest».
 
 Si paga così:
 
@@ -222,4 +221,79 @@ Si paga così:
   e rifà la soglia;
 - nell'Abbazia della Rotta Sicura le pagine passano da 45 a 46, per i titoli
   che cambiano livello.
+
+## I ruoli nel manifest, e l'ordine diventa un cancello
+
+Fino a qui il ruolo di ogni sezione stava in due file di regole sotto
+`plans/esperimenti/`, uno per la serata e uno per il volume, e la misura
+d'ordine si lanciava a mano. Erano due limiti dichiarati: un capitolo
+rinominato perdeva il ruolo senza che nessuno se ne accorgesse, e un
+riordino sbagliato arrivava su main.
+
+Lo standard è quello degli editori. CMOS 1.4 divide ogni libro in materia
+d'apertura, corpo e chiusura (front, body, back matter), ed EPUB 3 scrive la
+stessa divisione dentro il file, sezione per sezione, con `epub:type`
+(`frontmatter`, `bodymatter`, `backmatter`, e i ruoli fini come `preface`,
+`appendix`, `glossary`). Il ruolo sta accanto al contenuto che giudica, non in
+un registro a parte. I nostri sette ruoli sono una suddivisione di quei tre:
+
+| Ruolo | CMOS 1.4 | `epub:type` più vicino |
+|---|---|---|
+| avvio | front matter | `frontmatter`, `preface` |
+| preparazione | front matter | `frontmatter`, `introduction` |
+| gioco | body matter | `bodymatter`, `chapter`, `part` |
+| sintesi | body matter | `bodymatter` |
+| regole | body matter | `bodymatter`, `sidebar` |
+| fuori-serata | back matter | `backmatter`, `afterword` |
+| riferimento | back matter | `backmatter`, `appendix` |
+
+La suddivisione è del repo e resta perché il tavolo la usa: «preparazione»
+e «avvio» sono entrambe front matter, ma al tavolo una si legge il giorno
+prima e l'altra si tiene aperta. È la differenza che R2 misura.
+
+Decisione:
+
+- **Ogni capitolo del manifest dichiara `ruolo`**; `parte`, `scena`,
+  `riassume` e `doppione_di` passano dal file di regole al capitolo. Le
+  eccezioni dentro un capitolo (una sintesi, una scena, una sezione di
+  riferimento in un master di gioco) stanno nella lista `ruoli_sezioni` del
+  manifest, con la grammatica di prima. Lo schema
+  `scripts/schemas/booklet_manifest.schema.json` ammette solo i sette valori.
+- **L'introduzione e le appendici generate non dichiarano niente.** Non sono
+  capitoli del manifest: le aggiunge l'esportatore. Prima dei capitoli
+  valgono «avvio», dopo valgono «riferimento», come la materia d'apertura e
+  di chiusura di CMOS.
+- **Il titolo di un capitolo combacia intero**, non con una regex: un
+  capitolo rinominato porta con sé il ruolo.
+- **R0: un capitolo senza ruolo è un difetto**, se il manifest ne dichiara
+  almeno uno.
+- **`misura_stampa.py` registra `difetti_ordine`** per ogni booklet il cui
+  manifest dichiara i ruoli, con un tetto che scende soltanto; la CI lo
+  controlla con `--check` nel lavoro delle misure di stampa. Gli altri
+  booklet registrano 0, perché senza ruoli l'ordine non si misura.
+- **`test_misura_ordine.py` tiene un cancello senza PDF**: un manifest del
+  repo che dichiara i ruoli li dichiara per ogni capitolo, con un valore
+  ammesso.
+
+Misure del 2026-11-19, sui PDF della #502:
+
+| | serata | volume d'arco |
+|---|---|---|
+| Sezioni etichettate dal manifest, uguali a quelle del file di regole | 128 su 128 | 398 su 398 |
+| Difetti d'ordine | 0 | 0 |
+| Regole nel manifest: capitoli, eccezioni | 17, 24 | 11, 20 |
+| Un manifest rotto apposta (un capitolo senza ruolo, un atto marcato fuori serata) | 3 difetti contro un tetto di 0 | |
+
+Si paga così:
+
+- le regole delle eccezioni restano espressioni sul titolo, come prima: una
+  sezione rinominata dentro un master perde la sua eccezione e prende il
+  ruolo del capitolo. Il capitolo, invece, no;
+- due regole del file della serata e una del volume non combaciano più con
+  nessuna sezione (A.1, l'Adulto, uscito dalla serata; la cassetta, che nella
+  serata non c'è; l'Appendice C delle versioni veloci). Restano come
+  guardie: se la sezione torna, torna con il suo ruolo;
+- i booklet senza ruoli (tutti tranne questi due) non hanno ancora un
+  cancello d'ordine. Si estende un manifest alla volta, quando il suo
+  booklet passa per un giro di lettura.
 

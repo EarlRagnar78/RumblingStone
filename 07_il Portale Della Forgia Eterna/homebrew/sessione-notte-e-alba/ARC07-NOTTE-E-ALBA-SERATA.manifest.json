@@ -25,7 +25,8 @@
       "file": "00-FOGLIO-DELLA-SERATA.md",
       "tag": "dm",
       "rimandi_romani": true,
-      "quando": "una pagina sola, aperta accanto allo schermo per tutta la sera: dove guardare"
+      "quando": "una pagina sola, aperta accanto allo schermo per tutta la sera: dove guardare",
+      "ruolo": "avvio"
     },
     {
       "title": "Il riferimento rapido",
@@ -34,13 +35,15 @@
       "sezioni": [
         "§0-bis"
       ],
-      "quando": "una pagina: prove di gruppo, Benedizioni, il giro del drago"
+      "quando": "una pagina: prove di gruppo, Benedizioni, il giro del drago",
+      "ruolo": "avvio"
     },
     {
       "title": "I · Regia della serata",
       "file": "01-REGIA-SERATA.md",
       "tag": "dm",
-      "quando": "da leggere prima, da tenere aperta durante"
+      "quando": "da leggere prima, da tenere aperta durante",
+      "ruolo": "avvio"
     },
     {
       "title": "II · Prima di giocare: i quattro, le zone, le idee fuori copione",
@@ -53,7 +56,8 @@
         "ZONA 3",
         "§0-ter"
       ],
-      "quando": "prima di giocare: il momento di ogni PG, i sensi delle due zone, come accogliere un'idea non scritta"
+      "quando": "prima di giocare: il momento di ogni PG, i sensi delle due zone, come accogliere un'idea non scritta",
+      "ruolo": "preparazione"
     },
     {
       "title": "III · Il cast: chi c'è, come si pronuncia, che suoni",
@@ -67,13 +71,15 @@
         "§5 ·",
         "§6 ·"
       ],
-      "quando": "prima di giocare: voci, pronunce, suoni"
+      "quando": "prima di giocare: voci, pronunce, suoni",
+      "ruolo": "preparazione"
     },
     {
       "title": "IV · Chi c'è stanotte: i cattivi, le schede, le mappe",
       "file": "02-CHI-CE-STANOTTE.md",
       "tag": "dm",
-      "quando": "prima di giocare: i cattivi uno per uno, con scheda intera, ritratto e mappe M7-C e M7-H"
+      "quando": "prima di giocare: i cattivi uno per uno, con scheda intera, ritratto e mappe M7-C e M7-H",
+      "ruolo": "preparazione"
     },
     {
       "title": "V · Atto I · Il barile sulla tenda di Zog'tar",
@@ -93,14 +99,17 @@
         "8.",
         "9."
       ],
-      "quando": "**la serata comincia qui**: la scheda da tavolo, i numeri in sintesi, poi le quote e le tattiche round per round"
+      "quando": "**la serata comincia qui**: la scheda da tavolo, i numeri in sintesi, poi le quote e le tattiche round per round",
+      "ruolo": "gioco",
+      "scena": 1
     },
     {
       "title": "VI · Il Seme-Mercato, se si gioca al ritorno",
       "file": "02-IL-SEME.md",
       "tag": "dm",
       "capolettera": false,
-      "quando": "al ritorno, se non è ancora stato giocato"
+      "quando": "al ritorno, se non è ancora stato giocato",
+      "ruolo": "gioco"
     },
     {
       "title": "VII · Atto II · Dopo il barile: il ritorno, la tenda, Vatore",
@@ -116,7 +125,8 @@
         "SCENA 9"
       ],
       "quando": "il ritorno fra le tende, la tenda se scendono, Vatore; la versione in dieci minuti è in testa",
-      "principale": true
+      "principale": true,
+      "ruolo": "gioco"
     },
     {
       "title": "VIII · Atto III · L'alba: le mura",
@@ -126,13 +136,15 @@
         "testa:§5",
         "SCENA 10"
       ],
-      "quando": "le mura all'alba, una via su tre"
+      "quando": "le mura all'alba, una via su tre",
+      "ruolo": "gioco"
     },
     {
       "title": "IX · La mappa del duello: M7-B",
       "file": "09-M7B-CORTILE.md",
       "tag": "dm",
-      "quando": "il cortile del duello, prima di calare il drago"
+      "quando": "il cortile del duello, prima di calare il drago",
+      "ruolo": "gioco"
     },
     {
       "title": "X · Il duello con Skullcrusher",
@@ -143,7 +155,8 @@
         "SCENA 11",
         "§6 —"
       ],
-      "quando": "il duello; la versione in tre scambi è in testa. Con l'esito ci si ferma"
+      "quando": "il duello; la versione in tre scambi è in testa. Con l'esito ci si ferma",
+      "ruolo": "gioco"
     },
     {
       "title": "XI · Dopo la serata: le conseguenze e i PX",
@@ -153,13 +166,15 @@
         "§7 —",
         "A. Budget"
       ],
-      "quando": "a fine serata: che cosa resta, e i PX"
+      "quando": "a fine serata: che cosa resta, e i PX",
+      "ruolo": "fuori-serata"
     },
     {
       "title": "XII · La Forgia ricorda le ferite",
       "file": "../../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md",
       "tag": "dm",
-      "quando": "a fine duello: l'esito diventa la ferita di Fauci di Palude"
+      "quando": "a fine duello: l'esito diventa la ferita di Fauci di Palude",
+      "ruolo": "fuori-serata"
     },
     {
       "title": "XIII · Dopo la serata: che cosa cambia, e le trovate dei giocatori",
@@ -169,7 +184,8 @@
         "10.",
         "13."
       ],
-      "quando": "a mente fredda, dopo il tavolo"
+      "quando": "a mente fredda, dopo il tavolo",
+      "ruolo": "fuori-serata"
     },
     {
       "title": "XIV · Appendice della serata: tesoro, statistiche, il Sigillo",
@@ -181,13 +197,16 @@
         "A.6",
         "APPENDICE B"
       ],
-      "quando": "quando serve un numero o un oggetto"
+      "quando": "quando serve un numero o un oggetto",
+      "ruolo": "riferimento"
     },
     {
       "title": "XV · Durik, il compagno di Hella",
       "file": "../sessione-resurrezione-mille-anni/08-SCHEDA-DURIK.md",
       "tag": "dm",
-      "quando": "accanto alla giocatrice di Hella"
+      "quando": "accanto alla giocatrice di Hella",
+      "ruolo": "riferimento",
+      "ruolo_nota": "scelta di Jfs del 19/11 (card): in fondo come galleria dei PNG degli AP; si usa a ogni round, come una scheda"
     }
   ],
   "fregio": "../../../docs/assets/fregi/fregio-arco-07-forgia.svg",
@@ -200,5 +219,115 @@
       "✉",
       "gli echi della serata, il contratto del Seme e le dieci boccette"
     ]
+  ],
+  "ruoli_sezioni": [
+    {
+      "titolo": "^§0 · La serata in una tabella",
+      "ruolo": "sintesi",
+      "riassume": "^(III|V|VI|VIII) · "
+    },
+    {
+      "titolo": "^1\\. Che cosa hanno fatto",
+      "ruolo": "avvio"
+    },
+    {
+      "titolo": "^7\\. Che cosa succede, in numeri",
+      "ruolo": "sintesi",
+      "riassume": "^[2-6](-bis)?\\. "
+    },
+    {
+      "titolo": "^10\\. Che cosa cambia per la storia",
+      "ruolo": "fuori-serata"
+    },
+    {
+      "titolo": "^13\\. Le trovate dei giocatori",
+      "ruolo": "fuori-serata"
+    },
+    {
+      "titolo": "^SCENA 6",
+      "ruolo": "gioco",
+      "scena": 6
+    },
+    {
+      "titolo": "^SCENA 7",
+      "ruolo": "gioco",
+      "scena": 7
+    },
+    {
+      "titolo": "^SCENA 8",
+      "ruolo": "gioco",
+      "scena": 8
+    },
+    {
+      "titolo": "^SCENA 9",
+      "ruolo": "gioco",
+      "scena": 9
+    },
+    {
+      "titolo": "^C\\.2 ·",
+      "ruolo": "sintesi",
+      "riassume": "^SCENA [678] "
+    },
+    {
+      "titolo": "^SCENA 10",
+      "ruolo": "gioco",
+      "scena": 10
+    },
+    {
+      "titolo": "^SCENA 11",
+      "ruolo": "gioco",
+      "scena": 11
+    },
+    {
+      "titolo": "^C\\.3 ·",
+      "ruolo": "sintesi",
+      "riassume": "^SCENA 11 "
+    },
+    {
+      "titolo": "^§7 — ECHO LEDGER",
+      "ruolo": "fuori-serata"
+    },
+    {
+      "titolo": "QUICK-REFERENCE",
+      "ruolo": "avvio"
+    },
+    {
+      "titolo": "^§0-ter",
+      "ruolo": "preparazione"
+    },
+    {
+      "titolo": "^§1 — HIGHLIGHT",
+      "ruolo": "preparazione"
+    },
+    {
+      "titolo": "^ZONA [23]",
+      "ruolo": "preparazione"
+    },
+    {
+      "titolo": "^A\\. Budget",
+      "ruolo": "fuori-serata"
+    },
+    {
+      "titolo": "^B\\. Tesoro",
+      "ruolo": "riferimento"
+    },
+    {
+      "titolo": "^A\\.1 · Skullcrusher",
+      "ruolo": "riferimento",
+      "doppione_di": "Appendice: le creature (Skullcrusher, in un'altra versione: adulto maturo GS 14 contro il Vecchio GS 17 della Scena 11)"
+    },
+    {
+      "titolo": "^A\\.6 · Le creature del campo",
+      "ruolo": "riferimento",
+      "nota": "non è un doppione puro: porta la tabella delle complicazioni dello skill challenge, e le sue schede sono in appendice come tutte le altre per «schede: entrambe» (scelta di Jfs del 13/11). Rivisto il 19/11 dopo la risposta di Jfs sulla card"
+    },
+    {
+      "titolo": "^APPENDICE B",
+      "ruolo": "riferimento"
+    },
+    {
+      "titolo": "^[IVX]+ · La cassetta del DM",
+      "ruolo": "preparazione"
+    }
   ]
 }

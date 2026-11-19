@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-19 | STANDARD-STAMPA | ADR-0145, i ruoli nel manifest e l'ordine come cancello (richiesta di Jfs del 1… | ✅ etichette dal manifest uguali a quelle dei file di regole: 128 sezioni su 128 nella serata, 398 su 398 nel volume; difetti d'ordine 0 e 0; un manifest rotto… |
 | 2026-11-19 | STANDARD-STAMPA | ADR-0145, segnalibri annidati (richiesta di Jfs del 19/11, 14:07: chiudere i li… | ✅ segnalibri da piatti a quattro livelli: serata 143 voci con 20 al primo livello, volume 439 con 13; PDF/UA-1 e PDF/A-2a restano; rimandi 113 su 113 e 242 su… |
 | 2026-11-19 | STANDARD-STAMPA | Convergenza di typst (richiesta del coordinatore prima dei segnalibri: il volum… | ✅ rimandi giusti del volume 227 → 242 su 242; numeri instabili 2 → 0 booklet su 22 |
 | 2026-11-19 | RICERCA-PROSA-PECULIARE | Le tecniche di prosa proprie del repo contro le case (domanda di Jfs del 19/11)… | ✅ ricerca e standard; nessun cancello nuovo |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-19 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, Palio: i sicari di Sonjak possono puntare il cavallo… | ✅ file del Palio che danno ai sicari un obiettivo diverso dagli altri: da 1 (STATBLOCCHI contro INTEGRAZIONE r.149 e GIORNO2 r.136-137) a 0; nessun numero di s… |
 | 2026-11-19 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: due scelte del DM sulle card del 19/11 chiudono il ric… | ✅ differenze fra blocco e prosa nelle dieci schede del corredo: 2 → 0 (danno a distanza della Drow Assassina, tabella di Varis); `verifica_scheda` 0 violazioni… |
 | 2026-11-19 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Log di ogni giro del kit (richiesta del DM del 19/11): `rs_registra` in… | ✅ prova finta (20 righe su stdout, 10 su stderr, un avviso, un traceback, uscita 3): righe salvate in un file da 0/32 su main a 32/32; codice d'uscita scritto… |
-| 2026-11-19 | STATO-E-ORDINE | Due test che dipendevano dalla macchina, corretti con il test scritto prima.… | ✅ |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 211 voci, l'ultima MS-0211 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 212 voci, l'ultima MS-0212 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

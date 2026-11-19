@@ -101,3 +101,49 @@ class TestRequisito(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+# Un rimando che si sposta da solo: il numero della pagina del segno decide se
+# prima del segno c'è una pagina in più, e la pagina in più cambia il numero.
+OSCILLA = ('#set page(width: 10cm, height: 6cm)\n'
+           '#context if calc.even(counter(page).at(<segno>).first()) { pagebreak() }\n'
+           'Rimando a p. #context counter(page).at(<segno>).first()\n'
+           '#pagebreak()\n'
+           'Segno <segno>\n')
+
+
+class TestNumeriInstabili(unittest.TestCase):
+    """Un numero di pagina che non converge si vede negli avvisi (2026-11-19).
+
+    Prima il ramo PyPI buttava via gli avvisi, e misura_stampa non vedeva il
+    volume d'arco di ARC-07 con 15 rimandi su 242 sbagliati di una pagina.
+    """
+
+    def _compila(self, motore: str, sorgente: str) -> tm.Esito:
+        with tempfile.TemporaryDirectory() as t:
+            d = Path(t)
+            (d / "p.typ").write_text(sorgente, encoding="utf-8")
+            with mock.patch.dict(os.environ, {tm.VARIABILE: motore}):
+                if tm.motore() != motore:
+                    self.skipTest(f"motore {motore} assente")
+                return tm.compila(d / "p.typ", d / "p.pdf", root=d, font=FONT, pacchetti=PACCHETTI)
+
+    def test_pypi_vede_il_numero_instabile(self):
+        e = self._compila("pypi", OSCILLA)
+        self.assertTrue(e.ok, e.errore)
+        self.assertTrue(tm.numeri_instabili(e), e.avvisi)
+
+    def test_cli_vede_il_numero_instabile(self):
+        e = self._compila("cli", OSCILLA)
+        self.assertTrue(e.ok, e.errore)
+        self.assertTrue(tm.numeri_instabili(e), e.avvisi)
+
+    def test_un_documento_stabile_non_ha_numeri_instabili(self):
+        e = self._compila("pypi", DOC.replace('Pietra', 'Pietra, p. #context counter(page).at(<segno>).first()'))
+        self.assertTrue(e.ok, e.errore)
+        self.assertEqual(tm.numeri_instabili(e), [])
+
+    def test_gli_altri_avvisi_non_contano(self):
+        e = tm.Esito(True, "", False, avvisi=("a measured element did not stabilize · x",
+                                              "document did not converge within five attempts"))
+        self.assertEqual(tm.numeri_instabili(e), [])

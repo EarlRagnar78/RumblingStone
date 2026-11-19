@@ -4418,7 +4418,8 @@ si sommano a parte (§8 A).
   non lo spegne, *dissolvi magie* sì, alla stessa CD (*Draconomicon* p. 67,
   verificato su dnd.arkalseif.info il 2026-11-19).
 - **La RI 21** (22 col Vecchio): un incantatore di 12°-13° livello la supera con 8 o 9 sul d20
-  (d20 + livello contro 21), quindi un incantesimo su tre circa si spegne. Le
+  (d20 + livello contro 21), quindi un incantesimo su tre circa si spegne. Col
+  Vecchio servono 9 o 10, e se ne spengono quattro o cinque su dieci. Le
   invocazioni di Artemis la subiscono come gli incantesimi.
 - **RD 10/magia**: le armi dei PG sono magiche; le balestre delle mura, no.
 - ***Corrompere l'acqua*** può rovinare le pozioni in tasca a un PG (TS

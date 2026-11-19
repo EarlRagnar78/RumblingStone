@@ -117,10 +117,15 @@ def compila_misurabile(mp: Path) -> tuple[Path, list[dict], str]:
         if esito.returncode != 0:
             raise RuntimeError(f"{mp.name}: typst non compila\n{esito.stderr[-2000:]}")
         # Un'impaginazione che non converge stampa rimandi sbagliati: «scheda a
-        # pagina N», «continua a pagina N» presi da un giro precedente.
-        if "did not converge" in esito.stderr:
+        # pagina N», «continua a pagina N» presi da un giro precedente. Si
+        # guarda l'avviso del numero di pagina, che è quello stampato: fino al
+        # 2026-11-19 il controllo leggeva lo stderr, che col typst di PyPI è
+        # vuoto, e il volume d'arco di ARC-07 passava con 15 rimandi su 242
+        # sbagliati di una pagina.
+        instabili = esito.stderr.split("\n") if esito.stderr else []
+        if instabili:
             raise RuntimeError(f"{mp.name}: l'impaginazione non converge, i rimandi di pagina "
-                               f"possono essere sbagliati\n{esito.stderr[-2000:]}")
+                               f"possono essere sbagliati\n" + "\n".join(instabili[:6]))
         schede = interroga_schede(typ)
     finally:
         typ.unlink(missing_ok=True)
@@ -140,9 +145,12 @@ SOLO_FONT_DEL_REPO = ["--ignore-system-fonts", "--font-path", str(ex.FONTS)]
 
 
 def compila_senza_font_di_sistema(typ: Path, pdf: Path) -> subprocess.CompletedProcess:
+    """Il PDF senza font di sistema. Se compila, lo stderr porta solo gli
+    avvisi dei numeri di pagina instabili (`typst_motore.numeri_instabili`)."""
     e = typst_motore.compila(typ, pdf, root=ROOT, font=ex.FONTS, pacchetti=ex.PACCHETTI,
                              solo_font_del_repo=True)
-    return subprocess.CompletedProcess(["typst", "compile", str(typ)], 0 if e.ok else 1, "", e.errore)
+    stderr = e.errore if not e.ok else "\n".join(typst_motore.numeri_instabili(e))
+    return subprocess.CompletedProcess(["typst", "compile", str(typ)], 0 if e.ok else 1, "", stderr)
 
 
 def interroga_schede(typ: Path) -> list[dict]:

@@ -678,13 +678,25 @@
       let colonna = page.height - if a5 { 2.9cm } else { 4.1cm }
       let fondo-col = page.height - if a5 { 1.4cm } else { 2.0cm }
       let alto = measure(intero(tattiche, spezzabile: false), width: larghezza).height
-      let resta = fondo-col - here().position().y - 12pt
-      // Se non entra nello spazio che resta ma entra in una colonna, va a
-      // capo colonna. Lì si misura di nuovo: la colonna dopo può essere
-      // accorciata da un float a tutta pagina (la scheda d'entrata, una
-      // tabella larga), e un blocco che non si spezza finirebbe sopra il
-      // piede. Intero solo se entra davvero dove cade; se no si spezza.
-      if alto >= resta and alto < colonna * 0.92 and resta < colonna * 0.8 { colbreak() }
+      // Su una pagina a una colonna (l'appendice A4 delle statistiche) non
+      // c'è una colonna accanto né una pagina girata da evitare: il riquadro
+      // che sta in una pagina non si spezza, e Typst lo porta da sé alla
+      // pagina dopo. La scelta presa su `here()` qui non convergeva: la
+      // scheda del Vecchio (DEF-4, A.1-bis) andava a capo, tornava su e
+      // spostava di una pagina tutto quello che segue, e il volume d'arco
+      // stampava 15 rimandi sbagliati su 242 (misura_rimandi.py, 2026-11-19).
+      if page.columns < 2 {
+        intero(tattiche, spezzabile: alto >= colonna * 0.92)
+        return
+      }
+      // Qui c'era un primo «a capo colonna» preso sulla posizione prima del
+      // riquadro, e dentro un secondo controllo che rimisura. Il primo non
+      // convergeva: l'Abbazia della Rotta Sicura stampava nell'indice un
+      // numero di pagina diverso a ogni giro (30, 31, 32). Resta solo il
+      // secondo, che fa la stessa scelta dove il riquadro cade davvero.
+      // La colonna dopo può essere accorciata da un float a tutta pagina (la
+      // scheda d'entrata, una tabella larga), e un blocco che non si spezza
+      // finirebbe sopra il piede: intero solo se entra davvero dove cade.
       context {
         let qui = fondo-col - here().position().y - 4pt
         // in cima a una colonna quasi intera si fa come prima della prova
@@ -703,6 +715,12 @@
           context {
             let qui2 = fondo-col - here().position().y - 4pt
             if alto >= qui2 and here().position().x > page.width / 2 { colbreak() }
+            // In cima alla colonna di sinistra accorciata da un float a tutta
+            // pagina, anche quella di destra è accorciata allo stesso modo: se
+            // il riquadro non sta nelle due, si spezzerebbe a pagina girata
+            // e va alla pagina dopo (lo Skullcrusher Vecchio nel volume
+            // d'arco, pp. 204-205, finiva su tre colonne).
+            else if alto > 2 * qui2 - 12pt and qui2 < colonna * 0.8 { colbreak(); colbreak() }
             intero(tattiche, spezzabile: true)
           }
         } else {

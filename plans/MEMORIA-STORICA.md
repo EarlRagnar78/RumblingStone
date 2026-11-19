@@ -2278,3 +2278,13 @@ repo scritto con altre parole.
 - **Testo:** il DM ha chiesto (19/11) che uscita, errori e avvisi di tutti gli strumenti del kit restino recuperabili dopo un giro. Su main restavano solo `kit.tsv` (id, codice, minuti), il log di Ollama e i log che immagini, Drappo e trascrizione scrivevano da sé; l'uscita di `kit.sh`, di `installa.sh` e delle altre prove si perdeva. Scelto lo standard di fatto: `exec` con `tee` in Bash, `Start-Transcript` in PowerShell, niente librerie. Misura con una prova finta: righe salvate da 0/32 a 32/32. `stty sane` ora guarda il terminale salvato su un descrittore a parte (fd 9), perché dietro `tee` `[ -t 1 ]` è falso. Il kit dietro `tee` non dà più un terminale alle prove: `distrobox enter` parte senza tty e le barre di avanzamento escono come righe semplici.
 - **Trovato nel repo:** `scripts/prove-4050/comune.sh` · `scripts/tests/test_prove_4050_log.py` · `docs/how-to/GUIDA-PROVE-PORTATILE-4050.md`
 - **Solo qui:** il transcript di Windows PowerShell 5.1 non prende lo stderr di `wsl.exe` (si evita `2>&1` per via di `ErrorActionPreference=Stop`); non provato, nessun PowerShell nel container. I log oltre 64 MB restano fuori dall'archivio.
+### MS-0202 · 2026-11-19 · ADR-0134: danno entro 9 m della Drow Assassina e tabella di Varis
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** ADR-0134
+- **Temi:** corredo rc-001 schede bestiario decisione-dm card tiro-ravvicinato
+- **Origine:** riga del 2026-11-19 «ADR-0134, regola RC-001: due scelte del DM sulle card del 19/11» in `plans/CHANGELOG.md`
+- **Testo:** dopo la #478 restavano due differenze, messe su card dal thread del volume. Il DM ha scelto: la riga a distanza della Drow Assassina scrive anche il danno entro 9 m (1d4+1 + veleno, Tiro Ravvicinato SRD dà +1 all'attacco e ai danni); la tabella in prosa di Varis elenca il giaco di cuoio borchiato +1 e il pugnale +1 già nel blocco. Tiene gli oggetti aggiunti senza card nella #458 e nella #478: giaco e pugnale di Varis, anello +1 di Tempestas, 10 quadrelli della Drow Assassina e di Therysol
+- **Trovato nel repo:** `Bestiario/mostri/drow-assassina-lolth-cr10.md` · `Bestiario/png/Varis_Seta_Argento/Varis_Seta_Argento.md`
+- **Solo qui:** le note della tabella di Varis dicono solo ciò che la scheda già scriveva (CA 16, attacco +7/+2, 1d4+1); «sotto le sete» era una frase inventata e non è entrata

@@ -1,8 +1,8 @@
 # ADR-0139 — La memoria corta ha un tetto misurato
 
-**Stato**: proposta (2026-11-19)
+**Stato**: accettata (2026-11-19)
 **Data**: 2026-11-19
-**Decisione-fonte**: il DM (Jfs), 2026-11-19, thread «Riportare la memoria sotto il limite»: «controlla perché la memoria del progetto è oltre il limite, non avevamo implementato la memoria storica per risolvere questi problemi? […] fixare questi problemi». Opzione consigliata su card; resta proposta finché il DM non la sceglie.
+**Decisione-fonte**: il DM (Jfs), 2026-11-19, thread «Riportare la memoria sotto il limite»: «controlla perché la memoria del progetto è oltre il limite, non avevamo implementato la memoria storica per risolvere questi problemi? […] fixare questi problemi». Sulla card dello stesso giorno il DM ha scelto «Script + routine + coordinatore».
 **Rapporti**: completa [ADR-0127](ADR-0127-la-memoria-corta-archivia-nel-repo-prima-di-togliere.md), [ADR-0137](ADR-0137-la-memoria-storica-si-scrive-a-ogni-blocco-di-lavoro-non-solo-al-merge.md) e [ADR-0138](ADR-0138-la-coda-della-memoria-storica-ha-un-cancello.md), che dicono dove va la storia ma non quando la memoria corta deve scendere.
 
 ## Contesto

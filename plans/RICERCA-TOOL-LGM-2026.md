@@ -198,6 +198,10 @@ Lo stesso giorno la carta passa a Stellarium 26.2 (AppImage ufficiale): cultura 
 `index.json`, segno fisso sulla stella-chiave (due lanci identici, prima 619 pixel
 diversi) e parallelo del Sigillo col plugin ArchaeoLines, scelto da Jfs sulla card.
 SkyCultureMaker c'è ma è solo a finestre: non migliora nulla che si misuri.
+Il 2026-11-18, al ricontrollo chiesto da Jfs, la carta è rifatta per la mezzanotte del
+30 Flamerule (prima 30 Mirtul): il Giorno di Marcia 30 cade in Flamerule per l'ancora
+del calendario del 2026-07-12, e Jfs l'ha confermato sulla card. Nuova stella-chiave,
+Sigillo ridisegnato; i passi sono in PROVENIENZA.
 
 ### §3.2 · Krita e GIMP: banco del DM, mai passo di catena
 

@@ -7,11 +7,13 @@ HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # shellcheck disable=SC2034  # RADICE la usano gli script che includono questo file
 RADICE="$(cd "$HERE/../.." && pwd)"
 PROVE_DIR="${PROVE_DIR:-$HOME/rumblingstone-prove-4050}"
-GIORNO="$(date +%F)"
+# PROVE_GIORNO lo esporta kit.sh: un giro che passa la mezzanotte resta in una cartella sola
+GIORNO="${PROVE_GIORNO:-$(date +%F)}"
 RIS="$PROVE_DIR/$GIORNO"
 LLM_PORTA="${LLM_PORTA:-11434}"
 # shellcheck source=ospite.sh
 . "$HERE/ospite.sh"
+rs_ferma_se_sandbox   # dentro una sandbox Flatpak nessuna prova può girare: si dice subito
 # Su WSL2 nvidia-smi viene dal driver di Windows e sta fuori dal PATH di serie
 [ -x /usr/lib/wsl/lib/nvidia-smi ] && PATH="$PATH:/usr/lib/wsl/lib"
 

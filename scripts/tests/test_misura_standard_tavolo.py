@@ -132,10 +132,6 @@ class TestNoteDiLavoro(unittest.TestCase):
     TETTI = {
         "ARC07-NOTTE-E-ALBA-BOOKLET.manifest.json": 18,  # 19 prima della #305
         "ARC07-NOTTE-E-ALBA-SERATA.manifest.json": 1,    # la stessa del volume, Scena 11 (ADR-0122)
-        # ADR-0144: il volume d'arco porta in stampa due note aperte dei master,
-        # i «TODO» dei Bracieri in DEF-1 §8: chiuderli è una scelta di contenuto
-        # del DM (il «(da verificare)» di DEF-4 l'ha chiuso la card del 19/11)
-        "ARC07-VOLUME-ARCO.manifest.json": 2,
         "ARC07-SERATA-RESURREZIONE-BOOKLET.manifest.json": 19,
         "ARC07-MILLE-ANNI-VOLUME.manifest.json": 18,
         "ARC07-SESSIONE-TERROS-BOOKLET.manifest.json": 3,

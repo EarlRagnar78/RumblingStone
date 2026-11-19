@@ -2257,3 +2257,13 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `scripts/gate_locale.py` · `.pre-commit-config.yaml` · `scripts/install-git-hooks.sh` · `plans/adr/ADR-0143-i-gate-veloci-girano-prima-del-push.md`
 - **Solo qui:** gli id delle 11 corse rosse (44426033056, 44425938003, 44183963956, 44181729147, 43919525637, 43770067168, 43769907951, 43769733440, 43769518617, 43729307832, 43727650247); la stima del giro di CI in più (circa 22 minuti per rosso) non è misurata; le skill del repo «doppie» costano circa 0,7k token, non 5k
 
+### MS-0200 · 2026-11-19 · ADR-0134: danno entro 9 m della Drow Assassina e tabella di Varis
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** ADR-0134
+- **Temi:** corredo rc-001 schede bestiario decisione-dm card tiro-ravvicinato
+- **Origine:** riga del 2026-11-19 «ADR-0134, regola RC-001: due scelte del DM sulle card del 19/11» in `plans/CHANGELOG.md`
+- **Testo:** dopo la #478 restavano due differenze, messe su card dal thread del volume. Il DM ha scelto: la riga a distanza della Drow Assassina scrive anche il danno entro 9 m (1d4+1 + veleno, Tiro Ravvicinato SRD dà +1 all'attacco e ai danni); la tabella in prosa di Varis elenca il giaco di cuoio borchiato +1 e il pugnale +1 già nel blocco. Tiene gli oggetti aggiunti senza card nella #458 e nella #478: giaco e pugnale di Varis, anello +1 di Tempestas, 10 quadrelli della Drow Assassina e di Therysol
+- **Trovato nel repo:** `Bestiario/mostri/drow-assassina-lolth-cr10.md` · `Bestiario/png/Varis_Seta_Argento/Varis_Seta_Argento.md`
+- **Solo qui:** le note della tabella di Varis dicono solo ciò che la scheda già scriveva (CA 16, attacco +7/+2, 1d4+1); «sotto le sete» era una frase inventata e non è entrata

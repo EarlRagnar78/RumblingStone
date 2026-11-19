@@ -1,0 +1,14 @@
+# Hook di git con pre-commit (ADR-0143). Un solo hook, locale: niente download
+# di repository di hook, che era il motivo per cui ADR-0099 lo scartava.
+# Installazione: ./scripts/install-git-hooks.sh (nei thread la fa l'avvio).
+# Saltarlo consapevolmente: git push --no-verify
+repos:
+  - repo: local
+    hooks:
+      - id: gate-locale
+        name: gate bloccanti e veloci della CI (gate_locale --pre-push)
+        entry: python3 scripts/gate_locale.py --pre-push
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [pre-push]

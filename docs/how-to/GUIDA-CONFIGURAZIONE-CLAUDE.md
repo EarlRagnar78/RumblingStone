@@ -4,7 +4,8 @@ Questa guida raccoglie le scelte fatte il 2026-11-19 sulla configurazione di
 Claude Code per RumblingStone. Per ognuna dice che cosa cambia, con quale
 misura è entrata e come si torna indietro, tutta o in parte. Le decisioni
 complete stanno negli ADR citati; la storia, nelle voci della memoria storica
-(`python3 scripts/memoria_storica.py --adr 140`, `--adr 141`, `--adr 142`).
+(`python3 scripts/memoria_storica.py --adr 140`, `--adr 141`, `--adr 142`,
+`--adr 143`).
 
 ## 1. La catena: come la configurazione arriva a una sessione
 
@@ -38,7 +39,8 @@ RumblingStone/scripts/claude-progetto.sh
 | 3 | Plugin dell'account mai usati nel repo spenti con `enabledPlugins: false` | ADR-0140 punto 5, #487, `983791d0` | contesto iniziale da 59.670 a 53.965 token (−9,6%) |
 | 4 | Riaccesi i nove plugin di metodo di sviluppo (`sdd`, `sadd`, `engineering`, `reflexion`, `docs`, `fpf`, `ddd`, `recursive-decomposition`, `mcp`) | ADR-0140 punto 5, #488, `a4fbfafd` | costo dichiarato: +2.347 token (+4,3%), scelta del DM |
 | 5 | AGENTS.md diviso in regole `.claude/rules/rs-*.md` che arrivano con i file | ADR-0141, #489, `e1198477` | su uno script −45% di caratteri rispetto ad AGENTS.md intero |
-| 6 | `.claudeignore` tradotto in regole `Read(...)` di `permissions.deny` | ADR-0142 | righe trovate nelle ricerche fino a −39% |
+| 6 | `.claudeignore` tradotto in regole `Read(...)` di `permissions.deny` | ADR-0142, #490, `f36785eb` | righe trovate nelle ricerche fino a −39% |
+| 7 | I gate bloccanti e veloci della CI girano prima del push (`gate_locale --pre-push` con pre-commit, hook locale); nei thread lo installa l'avvio | ADR-0143 | 7 dei 12 rossi recenti presi in locale, 45 s a push |
 
 ## 3. Tornare indietro
 
@@ -53,6 +55,7 @@ container già partiti e si fa la verifica della colonna a destra.
 | 3, 4 | `git revert` del merge di #487 o di #488 | in `enabledPlugins` mettere `true` (o `false`) sulla riga del plugin | `claude -p --output-format stream-json --verbose "ok"` dalla cartella dei thread: campo `plugins` dell'evento `init` |
 | 5 | `git revert` del merge di #489: tornano il CLAUDE.md che fa leggere AGENTS.md intero e nessuna regola `rs-*` | togliere una regola dalla tabella `SEZIONI` di `scripts/regole_claude.py` mettendo le sue sezioni nel nucleo, poi `python3 scripts/regole_claude.py` | `python3 scripts/regole_claude.py --misura`; in una sessione, leggere un file e chiedere quali `.claude/rules` sono nel contesto |
 | 6 | togliere tutte le righe `Read(...)` da `permissions.deny` (o `git revert` della PR) | lasciare leggibile una voce: in `.claudeignore` metterla sotto un commento `# leggibile: motivo`, poi `python3 scripts/claudeignore_deny.py` | aprire con Read un file di quella voce |
+| 7 | `git revert` della PR; su una sola macchina `rm .git/hooks/pre-push` | togliere un gate dal hook aggiungendolo a `LENTI` in `scripts/gate_locale.py` con i secondi misurati | `python3 scripts/gate_locale.py --pre-push --elenco` |
 
 Due regole valgono per ogni ritorno:
 
@@ -83,3 +86,8 @@ un thread vero.
 - **Il CLAUDE.md senza la riga di `fase1.py`**: le regole arrivano dopo il primo
   file letto, e in prova l'agente aveva risposto senza lanciare `fase1.py`. La
   riga resta nel CLAUDE.md dei thread.
+- **Tutti i gate della CI prima del push** (`gate_locale --rapido`, 3 min 11 s):
+  su 100 push costa più tempo dei rossi che evita. Il hook tiene solo i gate
+  bloccanti sotto i 15 secondi (ADR-0143).
+- **Le skill del repo «doppie»**: misurate con `/context`, costano circa 0,7k
+  token, non i 5k stimati all'inizio. Niente da correggere.

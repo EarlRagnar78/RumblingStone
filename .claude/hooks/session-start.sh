@@ -45,6 +45,15 @@ if [ "${CLAUDE_CODE_REMOTE:-}" = "true" ]; then
   python3 -c "import pytest" 2>/dev/null || pip install --quiet pytest || true
 fi
 
+# ── Git hooks in cloud sessions (ADR-0143) ─────────────────────────────
+# The pre-push hook runs the blocking, fast CI gates before every push. Only
+# in remote containers: on a personal machine it is a one-time choice
+# (./scripts/install-git-hooks.sh), never installed behind the user's back.
+if [ "${CLAUDE_CODE_REMOTE:-}" = "true" ]; then
+  ./scripts/install-git-hooks.sh >/dev/null 2>&1 \
+    || echo "RumblingStone hook: git hooks not installed — run ./scripts/install-git-hooks.sh"
+fi
+
 # ── Rebuild + deploy skills ──────────────────────────────────────────────
 if ./scripts/build-skills.sh >/tmp/rumblingstone-skill-build.log 2>&1 \
    && ./scripts/sync-skills.sh --no-build >>/tmp/rumblingstone-skill-build.log 2>&1; then

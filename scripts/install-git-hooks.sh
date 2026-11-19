@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
-# install-git-hooks.sh — one-time setup for non-Claude agents (Cursor,
-# Windsurf, Codex, Copilot, …): installs a git post-merge hook that
-# rebuilds and syncs the skill mirrors after every `git pull`, so every
-# agent always reads the current version of skills/*.
+# install-git-hooks.sh — one-time setup of two git hooks:
+#   post-merge  rebuilds and syncs the skill mirrors after every `git pull`
+#               that touches skills/ (for non-Claude agents; Claude Code
+#               already syncs at session start);
+#   pre-push    runs the blocking, fast CI gates (gate_locale --pre-push,
+#               ADR-0143), via pre-commit when it is installed.
 #
-# Claude Code does NOT need this: .claude/hooks/session-start.sh runs the
-# same sync automatically at session start.
+# In Claude Code cloud sessions .claude/hooks/session-start.sh runs this
+# script; on your own machine run it once. Idempotent.
 #
 # Usage:  ./scripts/install-git-hooks.sh
 set -euo pipefail
@@ -30,23 +32,29 @@ exit 0
 EOF
 chmod +x "${HOOKS_DIR}/post-merge"
 
-cat > "${HOOKS_DIR}/pre-push" << 'EOF'
+# pre-push: i gate bloccanti e veloci della CI (ADR-0143), fra cui la regola
+# d'oro dei piani (ADR-0009). Con pre-commit installato (requirements-dev.txt)
+# il hook è quello del framework, che legge .pre-commit-config.yaml; senza, o
+# con RS_HOOK_NATIVO=1, un hook nativo lancia lo stesso comando.
+if [ -z "${RS_HOOK_NATIVO:-}" ] && python3 -c "import pre_commit" 2>/dev/null \
+   && [ -f "${REPO_ROOT}/.pre-commit-config.yaml" ]; then
+  (cd "${REPO_ROOT}" && python3 -m pre_commit install --hook-type pre-push --overwrite >/dev/null)
+else
+  cat > "${HOOKS_DIR}/pre-push" << 'EOF'
 #!/usr/bin/env bash
-# Auto-installed by scripts/install-git-hooks.sh — gate della regola d'oro
-# dei piani (ADR-0009): modifiche strutturali senza riga in
-# plans/CHANGELOG.md bloccano il push. Bypass consapevole: git push --no-verify
+# Auto-installed by scripts/install-git-hooks.sh (ADR-0143): i gate bloccanti
+# e veloci della CI prima del push. Bypass consapevole: git push --no-verify
 REPO_ROOT="$(git rev-parse --show-toplevel)"
-git rev-parse --verify -q origin/main >/dev/null 2>&1 || exit 0
-if ! python3 "${REPO_ROOT}/scripts/check_plans_discipline.py" --base origin/main --repo-root "${REPO_ROOT}"; then
-  echo "[pre-push] Push bloccato dalla regola d'oro dei piani (ADR-0009)."
-  echo "[pre-push] Aggiungi la riga a plans/CHANGELOG.md, oppure bypass consapevole: git push --no-verify"
+if ! python3 "${REPO_ROOT}"/scripts/gate_locale.py --pre-push; then
+  echo "[pre-push] Push bloccato: un gate della CI è rosso (scripts/gate_locale.py --pre-push)."
+  echo "[pre-push] Correggi, oppure bypass consapevole: git push --no-verify"
   exit 1
 fi
-exit 0
 EOF
-chmod +x "${HOOKS_DIR}/pre-push"
+  chmod +x "${HOOKS_DIR}/pre-push"
+fi
 
 echo "Installed: ${HOOKS_DIR}/post-merge"
 echo "Skill mirrors will now auto-sync after every git pull that touches skills/."
 echo "Installed: ${HOOKS_DIR}/pre-push"
-echo "Structural pushes now require a plans/CHANGELOG.md row (ADR-0009)."
+echo "Every push now runs the blocking, fast CI gates first (gate_locale --pre-push, ADR-0143)."

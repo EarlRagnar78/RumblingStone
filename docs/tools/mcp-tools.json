@@ -3447,6 +3447,33 @@
       "deterministic": true
     },
     {
+      "name": "claude_progetto",
+      "description": "«Perché nei thread del progetto non girano l'hook, le skill del repo e rumblingstone-tools?»\n\nScrive nella cartella che contiene il clone un CLAUDE.md corto, il settings.json e il .mcp.json del repo a percorsi assoluti (ADR-0140).",
+      "use_case": "«Perché nei thread del progetto non girano l'hook, le skill del repo e rumblingstone-tools?»",
+      "invocation": "./scripts/claude-progetto.sh [cartella]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "cartella": {
+            "type": "string",
+            "description": "Dove scrivere; di default la cartella che contiene il repo."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<cartella>/CLAUDE.md",
+        "<cartella>/.claude/settings.json",
+        "<cartella>/.mcp.json"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "errore"
+      },
+      "deterministic": true
+    },
+    {
       "name": "coerenza_campagna",
       "description": "«Lo stesso PNG ha due GS in due file dell'arco? Gli orologi di questo arco hanno 4, 6 o 8 segmenti e un presagio scritto? Questo master contraddice state.yaml sul giorno d'arrivo dell'orda o su chi porta l'ascia?»\n\nLotto 7c, coerenza. `fronti`: un file di fronti e orologi contro scripts/schemas/fronti_orologi.schema.json e le regole del mestiere (2-3 pericoli, presagi 1-3 o 3-5 scritti in un master, 1-3 domande, segmenti 4/6/8, riempiti <= totale, quando si riempie), e conta i campi che il master scrive contro quelli dedotti; con --state misura gli orologi dei villain di state.yaml. `fatti`: il rilevatore prudente di contraddizioni fra scene e archi (GS, pf, CA, TS, CD, classi, titolo, eta', anni DR, vivo/morto, portatore d'artefatto, giorno del March Clock), con file:riga di ogni valore. Con `fatti --state` (ADR-0125, canale testing) aggiunge le regole con l'atteso in campaign/state.yaml: S1 giorno d'arrivo dell'orda a Rethmar, S5 chi porta quale artefatto, S6 modifiche permanenti di un PG, S7 echi armati senza un file che li cita; ogni violazione dice regola, atteso, ha e file:riga, e \"chi sa cosa\" senza tempo esce fra i non verificabili. Misura, non cancello.",
       "use_case": "«Lo stesso PNG ha due GS in due file dell'arco? Gli orologi di questo arco hanno 4, 6 o 8 segmenti e un presagio scritto? Questo master contraddice state.yaml sul giorno d'arrivo dell'orda o su chi porta l'ascia?»",

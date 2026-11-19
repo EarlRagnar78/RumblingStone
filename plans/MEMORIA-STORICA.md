@@ -2180,3 +2180,14 @@ repo scritto con altre parole.
 - **Testo:** il DM ha lanciato il kit sull'ASUS: `qwen2.5:7b` a 4 bit via Ollama, 636 risposte su 636 in circa 2 minuti. Il criterio fissato il 12/11 (90% di SÌ sulle domande giuste, al massimo 5% col PNG sbagliato, 70% di precisione su main) non è raggiunto. Il 7B dice SÌ a 499 candidati su 560 su main e a 78 domande su 79 sulle righe dei mutanti: li trova (21 su 25) perché dice SÌ quasi a tutto. Il RAG resta fuori dal verificatore
 - **Trovato nel repo:** `plans/esperimenti/grafo-eventi-2026-11-12/ESITO.md` · `plans/esperimenti/grafo-eventi-2026-11-12/misure/risposte-qwen2.5-7b.json` · `plans/esperimenti/grafo-eventi-2026-11-12/leggi_ollama.py`
 - **Solo qui:** le letture complete (`main-rag-7b.json`, `mut-rag-7b.json`) e l'archivio del kit stanno in `/mnt/project-files/prove-4050-risultati/2026-11-19/`, fuori dal repo. Le 302 righe segnalate su main non sono state lette una per una: sei prese a caso erano false. Il 3B sbagliava per troppi NO, il 7B per troppi SÌ; riprovare ha senso solo cambiando la domanda al lettore, e il 12B non sta nei 6 GB della 4050
+
+### MS-0193 · 2026-11-19 · La configurazione Claude del repo non arrivava nei thread del progetto
+
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** ADR-0140
+- **Temi:** claude-code best-practice thread hook claude-md agents-md mcp rumblingstone-tools contesto token skilloverrides
+- **Origine:** riga del 2026-11-19 «ADR-0140 (proposta), la configurazione Claude del repo arriva anche nei thread» in `plans/CHANGELOG.md`
+- **Testo:** audit delle best practice di Claude Code chiesto dal DM. Nei thread Claude parte in `/home/user`, la cartella che contiene il clone: AGENTS.md fuori dal contesto, hook SessionStart mai girato, `dnd-35-rules` legacy non spenta, `rumblingstone-tools` assente. Il thread del 19/11 è partito con 131.128 token di contesto; circa 113.000 caratteri venivano da plugin e connettori dell'account estranei al progetto. Già coperte e non rifatte: piani e ADR, MEMORIA.md e memoria storica (vanno oltre il «Document & Clear» dell'articolo), 3.289 test e circa 60 cancelli, un thread per compito
+- **Trovato nel repo:** `plans/adr/ADR-0140-la-configurazione-claude-del-repo-arriva-anche-nei-thread.md` · `scripts/claude-progetto.sh` · `scripts/tests/test_claude_progetto.py`
+- **Solo qui:** l'audit con la tabella pratica per pratica sta in `/mnt/project-files/best-practice-claude-code-2026-11-19/AUDIT.md`. Le cifre dell'articolo (33%, 150-200 istruzioni, 60% del contesto) sono di terzi e non sono state usate come obiettivi. AGENTS.md dice 77 tool per `rumblingstone-tools`, il server ne espone 135 e il manifest ne elenca 144: non corretto in questa PR. Delle ultime 100 corse CI sulle PR (15-19/11) 14 sono fallite, cause non classificate; il passo pytest dura circa 17 minuti

@@ -371,6 +371,12 @@ Build commands:
   `./scripts/build-skills.sh && ./scripts/sync-skills.sh --no-build`, then
   continue the conversation normally. If the user declines, proceed reading
   the canonical `skills/` tree directly (always current in git).
+- **Claude Code started OUTSIDE the repo** (the project threads on claude.ai
+  start in the folder that contains the clone): `scripts/claude-progetto.sh`,
+  run by the cloud environment's setup script, writes there a short
+  `CLAUDE.md`, the repo's `.claude/settings.json` with absolute paths and the
+  `.mcp.json`, so the hook, the skills and `rumblingstone-tools` apply
+  ([ADR-0140](plans/adr/ADR-0140-la-configurazione-claude-del-repo-arriva-anche-nei-thread.md)).
 - **Other agents / plain git users**: run `./scripts/install-git-hooks.sh`
   once; it installs a `post-merge` git hook that resyncs the mirrors after
   every `git pull` that touches `skills/`.

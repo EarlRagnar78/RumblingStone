@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 144,
+  "tool_count": 145,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -8742,6 +8742,80 @@
       "docs": [
         "plans/adr/ADR-0093-la-prosa-migliora-se-la-sceglie-il-dm-alla-cieca.md",
         "plans/esperimenti/prosa-cieco/FOTOGRAFIA-ARC07-2026-10-18.md"
+      ]
+    },
+    {
+      "id": "claude-progetto",
+      "path": "scripts/claude-progetto.sh",
+      "category": "G-orchestration-governance",
+      "language": "bash",
+      "invocation": "./scripts/claude-progetto.sh [cartella]",
+      "summary": "Scrive nella cartella che contiene il clone un CLAUDE.md corto, il settings.json e il .mcp.json del repo a percorsi assoluti (ADR-0140).",
+      "use_case": "«Perché nei thread del progetto non girano l'hook, le skill del repo e rumblingstone-tools?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_bins": [
+        "bash",
+        "python3"
+      ],
+      "args": [
+        {
+          "name": "cartella",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Dove scrivere; di default la cartella che contiene il repo."
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "path": "<cartella>/CLAUDE.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        },
+        {
+          "path": "<cartella>/.claude/settings.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "<cartella>/.mcp.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "errore"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": null,
+      "tests": [
+        "scripts/tests/test_claude_progetto.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0140-la-configurazione-claude-del-repo-arriva-anche-nei-thread.md"
       ]
     },
     {

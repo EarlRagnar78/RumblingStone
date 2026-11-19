@@ -21,7 +21,10 @@ set -uo pipefail
 
 echo '{"async": true, "asyncTimeout": 300000}'
 
-cd "${CLAUDE_PROJECT_DIR:-$(git rev-parse --show-toplevel)}"
+# The repo root comes from the hook's own path, not from CLAUDE_PROJECT_DIR:
+# in project threads Claude starts in the folder that CONTAINS the clone and
+# reaches this hook through scripts/claude-progetto.sh (ADR-0140).
+cd "$(dirname "${BASH_SOURCE[0]}")/../.."
 STATUS_FILE=".claude/.skills-sync-status"
 mkdir -p .claude
 echo "syncing $(date -u +%FT%TZ)" > "${STATUS_FILE}"

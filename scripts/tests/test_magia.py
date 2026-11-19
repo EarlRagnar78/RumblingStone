@@ -37,7 +37,10 @@ class TestTabelle(unittest.TestCase):
         self.assertEqual(totali(M.al_giorno("bard", 4, 18)), [3, 3, 1])
 
     def test_mago_specialista(self):
-        self.assertEqual(M.al_giorno("wizard", 5, 16, specialista=True), [(4, 0), (4, 1), (3, 1), (2, 1)])
+        # SRD 3.5: «one additional spell of her specialty school per spell level», 0 compreso
+        # (card del DM del 2026-11-19, Ragnhild Mantoferro); PF1e: lo slot di scuola parte dal 1°
+        self.assertEqual(M.al_giorno("wizard", 5, 16, specialista=True), [(4, 1), (4, 1), (3, 1), (2, 1)])
+        self.assertEqual(M.al_giorno("wizard", 5, 16, "pf1e", specialista=True)[0][1], 0)
 
     def test_pf1e(self):
         # bardo e stregone: i trucchetti sono a volontà (-1, non si giudicano); il paladino lancia col Carisma
@@ -161,6 +164,37 @@ class TestScheda(unittest.TestCase):
         self.assertEqual((v, n), ([], ["numero.incantesimi.variante"]))
         v, n = self.giudica(classe="bardo", testa="LI 4°; 3/5/2 al giorno", righe="- 1°: *charme su persone*")
         self.assertEqual([x[0] for x in v], ["numero.incantesimi.al_giorno"] * 2)
+
+    def test_il_ranger_lancia_col_livello_di_classe_non_col_li(self):
+        # ranger 8 con Sag 14: 1+1 di 1° e 0+1 di 2°; la testa dice «CL 4°», metà del livello
+        # di classe: prima il verificatore lo prendeva per ranger 4 (ARC08-01, 2026-11-19)
+        import verifica_scheda as V
+        k = dict(classe="Ranger", testa="CL 4°; 2/1 per giorno", sag=14, car=10,
+                 righe="- 2° (CD 14): *pelle coriacea*\n- 1° (CD 13): *passo veloce*, *resistere all'energia*")
+        v, n = self.giudica(**k)
+        self.assertEqual((v, n), ([], ["numero.incantesimi"]), "senza il livello di classe non si giudica")
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / "prova.md"
+            p.write_text(SCHEDA.format(**k).replace("# Prova\n", "# Prova\n\n*Elfo Ranger 8°*\n"), encoding="utf-8")
+            v, n = V.incantatori(p)
+        self.assertEqual((v, n), ([], []))
+
+    def test_i_segreti_della_maestra_del_sapere_danno_slot(self):
+        # mago 13 evocatore con Int 25 e Altro Arcano Ritrovato: 4+1 / 7+1 / 6+1+1 …
+        k = dict(classe="Mago", testa="LI 13°; 5/8/8/8 al giorno; scuole proibite Ammaliamento e Illusione",
+                 righe="- 2° (CD 21): *raggio rovente* ×2, *sfera infuocata*, *resistere all'energia*, "
+                       "*forza del toro*, *frantumare*, *vedere invisibilità*, *individuazione dei pensieri*")
+        senza = SCHEDA.format(sag=10, car=10, **k).replace("Int 10", "Int 25")
+        con = senza + "\nSegreti: Altro Arcano Ritrovato (uno slot di 2° in più).\n"
+        import verifica_scheda as V
+        esiti = []
+        for testo in (senza, con):
+            with tempfile.TemporaryDirectory() as d:
+                p = Path(d) / "prova.md"
+                p.write_text(testo, encoding="utf-8")
+                esiti.append([(x["ha"], x["atteso"]) for x in V.incantatori(p)[0]
+                              if "al giorno di 2°" in x["testo"]])
+        self.assertEqual(esiti, [[("8", "6+1")], []])
 
     def test_classe_senza_tabella_non_e_verificabile(self):
         v, n = self.giudica(classe="anima prescelta", testa="LI 7°", righe="- 1°: *benedizione*")

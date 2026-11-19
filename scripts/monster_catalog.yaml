@@ -2216,7 +2216,7 @@ monsters:
     source_file: "Bestiario/villain/Conte_Valerius/conte-valerius-cr14-political.md"
   - id: maestro-tempestas-il-tonante-di-rethmar-452711
     name: "MAESTRO TEMPESTAS — IL TONANTE DI RETHMAR"
-    cr: 14.0
+    cr: 15.0
     faction: rethmar-defender
     role: generalist
     environment: urban

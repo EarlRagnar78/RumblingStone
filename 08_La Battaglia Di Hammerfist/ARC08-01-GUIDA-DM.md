@@ -186,7 +186,7 @@ SIMBOLI TATTICI:
 *   **Corrompere Acqua (Mag):** A volontà (potenziamento: l'SRD dice 1/giorno); gittata pari al raggio della Presenza terrificante (SRD), ristagna acqua.
 *   **Capacità Magiche:** 3/giorno: *oscurità* (raggio 21 m).
 *   **Incantesimi:** Lancia come uno Stregone di 7° livello.
-    *   **Incantesimi Conosciuti (6/8/8/6 al giorno, LI 7°):**
+    *   **Incantesimi Conosciuti (6/7/7/5 al giorno, LI 7°; fino al 2026-11-19 6/8/8/6, scelta del DM sulla card del 2026-11-19):**
         *   3° (CD 16): *Dissolvi Magie*, *Nube Maleodorante*
         *   2° (CD 15): *Freccia Acida*, *Immagine Speculare*, *Invisibilità*
         *   1° (CD 14): *Armatura Magica*, *Colpo Accurato*, *Dardo Incantato*, *Protezione dal Bene*, *Scudo*
@@ -339,7 +339,9 @@ SIMBOLI TATTICI:
 > **Fonti e verifica 3.5**: l'**orog** non è nell'SRD
 > [Private source — Monsters of Faerûn]; il **Signore della Guerra** non è
 > una classe SRD [Private source — non identificata: la Furia Comandante
-> ricorda il *Warchief* di Complete Warrior]. I suoi privilegi sono
+> non è il *Warchief* del Miniatures Handbook, p. 24, che dà agli alleati
+> della stessa tribù +2 For al 1° e +4 al 3°, verificato su dnd.arkalseif.info
+> il 2026-11-19]. I suoi privilegi sono
 > quelli della scheda, confermati dal DM il 2026-10-18. PF1e: il **Cavaliere** (APG,
 > ordine del Drago) si avvicina, perché dà bonus agli alleati vicini e tiene
 > il guerriero in prima linea; il *Battle Herald* farebbe di più il
@@ -453,19 +455,22 @@ SIMBOLI TATTICI:
 **Attacchi Speciali:**
 *   **Scacciare Non Morti (Sop):** 11/giorno (bonus +6 al tiro).
 *   **Canto di Battaglia (Sop):** 1/giorno, come azione standard. Tutti gli alleati entro 18m ottengono +2 morale ad attacchi, danni e TS per 10 round.
-*   **Incantesimi:** Lancia come un Chierico di 15° livello. **Domini:** Guerra, Terra.
+*   **Incantesimi:** Lancia come un Chierico di 15° livello. **Domini:** Protezione, Terra.
+    <!-- storico: fino al 2026-11-19 Domini Guerra e Terra; Guerra non è un dominio di Moradin (scelta del DM sulla card del 2026-11-19) -->
     *   **Incantesimi Preparati (LI 15°; 6/7+1/7+1/6+1/5+1/5+1/4+1/2+1/1+1; D = slot di dominio):**
-        *   8° (CD 24): *Aura Sacra*, *Parola del Potere Stordire* (D)
+        *   8° (CD 24): *Aura Sacra*, *Vuoto Mentale* (D)
         *   7° (CD 23): *Parola Sacra*, *Rigenerazione*, *Terremoto* (D)
-        *   6° (CD 22): *Guarigione* (x2), *Ferire*, *Banchetto degli Eroi*, *Lama di Barriera* (D)
-        *   5° (CD 21): *Colpo Infuocato* (x2, uno D), *Cura Ferite Leggere di Massa* (x2), *Potere della Giustizia*, *Muro di Pietra*
-        *   4° (CD 20): *Cura Ferite Critiche* (x2), *Potere Divino* (D), *Libertà di Movimento*, *Immunità agli Incantesimi*, *Interdizione alla Morte*
-        *   3° (CD 19): *Cura Ferite Gravi* (x3), *Dissolvi Magie* (x2), *Preghiera*, *Veste Magica* (D)
-        *   2° (CD 18): *Cura Ferite Moderate* (x4), *Forza del Toro* (x2), *Resistere all'Energia*, *Arma Spirituale* (D)
-        *   1° (CD 17): *Cura Ferite Leggere* (x4), *Benedizione* (x2), *Favore Divino*, *Arma Magica* (D)
+        *   6° (CD 22): *Guarigione* (x2), *Ferire*, *Banchetto degli Eroi*, *Pelle di Pietra* (D)
+        *   5° (CD 21): *Colpo Infuocato* (x2), *Cura Ferite Leggere di Massa* (x2), *Potere della Giustizia*, *Muro di Pietra* (D)
+        *   4° (CD 20): *Cura Ferite Critiche* (x2), *Potere Divino*, *Libertà di Movimento*, *Immunità agli Incantesimi* (D), *Interdizione alla Morte*
+        *   3° (CD 19): *Cura Ferite Gravi* (x3), *Dissolvi Magie* (x2), *Preghiera*, *Protezione dall'Energia* (D)
+        *   2° (CD 18): *Cura Ferite Moderate* (x3), *Forza del Toro* (x2), *Resistere all'Energia*, *Arma Spirituale*, *Scudo Su Altri* (D)
+            <!-- storico: fino al 2026-11-19 2°/3°/4° a 7+1/6+1/5+1, una cura in più per livello; incantatore di 12° con Sag 22 ha 6+1/5+1/4+1 dalla tabella SRD (scelta del DM sulla card del 2026-11-19) -->
+*   1° (CD 17): *Cura Ferite Leggere* (x4), *Benedizione* (x2), *Favore Divino*, *Santuario* (D)
         *   0°: *Cura Ferite Minori* (x3), *Luce*, *Purificare Cibo e Bevande*, *Resistenza*
 
-**Talenti:** Scacciare Extra, Arma Focalizzata (martello da guerra) dal dominio della Guerra (gli altri talenti non sono scritti). `[CANONE — regola, ADR-0118]: il dominio della Guerra dà Arma Focalizzata nell'arma preferita di Moradin (SRD), e il martello torna a +18 (BAB +11, For +4, +2 arma, +1)`
+**Talenti:** Scacciare Extra, Arma Focalizzata (martello da guerra) (gli altri talenti non sono scritti). `[CANONE — DM 2026-11-19]: Arma Focalizzata è un suo talento, e il martello resta a +18 (BAB +11, For +4, +2 arma, +1)`
+<!-- storico: fino al 2026-11-19 Arma Focalizzata veniva dal dominio della Guerra, che Moradin non dà -->
 **Equipaggiamento:** *Armatura Completa +3*, *Scudo Pesante +2*, *Anello di Protezione +3*, *Martello da Guerra Sacro +2*, *Guanti del Potere Orchesco +2* e *Mantello del Carisma +2*.
 
 **Capacità Speciali:**
@@ -485,11 +490,15 @@ SIMBOLI TATTICI:
 > senza perdere progressione; lo *Skald* (Advanced Class Guide) si avvicina
 > nel canto ma stravolge il chierico, e resta da preferire la classe 3.5.
 > Conti ricontati: *Armatura Completa +3* vale +11 e *Scudo Pesante +2* +4
-> (erano +8 e +2), quindi CA 29; il dominio della Guerra dà Arma Focalizzata
-> nel martello da guerra, l'arma di Moradin; +18 e 1d8+6 chiedono For 18,
+> (erano +8 e +2), quindi CA 29; Arma Focalizzata nel martello da guerra è
+> un suo talento; +18 e 1d8+6 chiedono For 18,
 > dai guanti. Scacciare: 3 + Car +4 + 4 di Scacciare Extra = 11
 > al giorno, prova +6. Incantesimi: con Sag 22 gli slot sono quelli scritti,
-> e ogni livello ha uno slot di dominio (D).
+> e ogni livello ha uno slot di dominio (D). Domini Protezione e Terra:
+> Moradin dà Creazione, Terra, Bene, Legge e Protezione (Deities and
+> Demigods, verificato su dnd.arkalseif.info il 2026-11-19), non Guerra; il
+> dominio della Protezione dà 1/giorno una protezione al tocco, +12 di
+> resistenza al prossimo TS (SRD) (scelta del DM sulla card del 2026-11-19).
 
 
 <div style="page-break-before:always"></div>
@@ -512,11 +521,13 @@ SIMBOLI TATTICI:
 *   2° (CD 16): *Frantumare*, *Suggestione*
 *   1° (CD 15): *Charme su Persone*, *Cura Ferite Leggere*, *Rimuovi Paura*
 *   0°: *Individuazione del Magico*, *Luce*, *Mano Magica*, *Suono Fantasma*, *Messaggio*, *Resistenza*
-**Incantesimi da Chierico (LI 8°; 6/5+1/5+1/4+1/3+1 al giorno; D = dominio; Domini: Guarigione, Nani):**
-*   4° (CD 18): *Potere Divino*, *Cura Ferite Critiche* (D), *Libertà di Movimento*, *Interdizione alla Morte*
-*   3° (CD 17): *Preghiera*, *Dissolvi Magie*, *Veste Magica*, *Cerchio Magico Contro il Male*, *Cura Ferite Gravi* (D)
-*   2° (CD 16): *Aiuto*, *Silenzio*, *Ristorare Inferiore*, *Forza del Toro*, *Consacrare*, *Cura Ferite Moderate* (D)
-*   1° (CD 15): *Benedizione*, *Comando*, *Favore Divino*, *Scudo Entropico*, *Protezione dal Male*, *Cura Ferite Leggere* (D)
+**Incantesimi da Chierico (LI 8°; 6/5+1/4+1/4+1/3+1 al giorno; D = dominio; Domini: Protezione, Nani):**
+<!-- storico: fino al 2026-11-19 Domini Guarigione e Nani, con le cure negli slot di dominio; Guarigione non è un dominio di Moradin (scelta del DM sulla card del 2026-11-19) -->
+*   4° (CD 18): *Potere Divino*, *Immunità agli Incantesimi* (D), *Libertà di Movimento*, *Interdizione alla Morte*
+*   3° (CD 17): *Preghiera*, *Dissolvi Magie*, *Veste Magica*, *Cerchio Magico Contro il Male*, *Protezione dall'Energia* (D)
+*   2° (CD 16): *Aiuto*, *Silenzio*, *Ristorare Inferiore*, *Forza del Toro*, *Scudo Su Altri* (D)
+    <!-- storico: fino al 2026-11-19 2° a 5+1 con Consacrare; chierico 8 con Sag 18 ha 3 slot dalla tabella SRD più 1 bonus (scelta del DM sulla card del 2026-11-19) -->
+*   1° (CD 15): *Benedizione*, *Comando*, *Favore Divino*, *Scudo Entropico*, *Protezione dal Male*, *Santuario* (D)
 *   0°: *Guida*, *Individuazione del Magico*, *Luce*, *Riparare*, *Resistenza*, *Virtù*
 **Capacità di Gruppo "Coro della Montagna" (1/giorno ciascuno):**
 *   *Terremoto* (come l'incantesimo, solo su pietra/roccia, CD 22)
@@ -532,11 +543,15 @@ SIMBOLI TATTICI:
 > chierico, Car 18 dalle CD da bardo; TS con un *Mantello della
 > Resistenza +2*. Un bardo di 4° ha 4 usi di musica e Ispirare
 > Coraggio +1: gli 8 usi e il +2 della scheda restano con due talenti non SRD,
-> Musica Extra [Private source — Complete Adventurer] e *Song of the Heart*
-> [Private source — talento non SRD, non verificato].
+> Musica Extra [Private source — Complete Adventurer, p. 109] (+4 usi) e
+> *Song of the Heart* [Private source — Eberron Campaign Setting, p. 60]
+> (+1 ai bonus di ispirare), verificati su dnd.arkalseif.info il 2026-11-19.
 > *Lancia Sonora* non è SRD ed esce; *Benedizione* e *Scudo della Fede* non
 > sono incantesimi da bardo (restano tra quelli da chierico). Il dominio
-> Nanico è del Forgotten Realms [Private source — FRCS]. Il Coro della
+> Nanico è del Forgotten Realms [Private source — FRCS]; con Protezione al
+> posto di Guarigione (che Moradin non dà) le cure restano spontanee e gli
+> slot di dominio vanno alla Protezione (scelta del DM sulla card del
+> 2026-11-19). Il Coro della
 > Montagna è una capacità di gruppo della campagna, non SRD.
 
 <div style="page-break-before:always"></div>
@@ -610,11 +625,12 @@ SIMBOLI TATTICI:
 **Incantesimi da Ranger (CL 4°; 2/1 per giorno):**
 *   2° (CD 14): *Pelle Coriacea*
 *   1° (CD 13): *Passo Veloce*, *Resistere all'Energia*
-**Talenti:** Tiro Ravvicinato, Tiro Preciso, Resistenza Fisica, Tiro in Movimento, Tiro Rapido, Tiro Multiplo, Schivare, Mobilità (la CA conta il bonus di schivare).
+**Talenti:** Tiro Ravvicinato, Tiro Preciso, Resistenza Fisica, Tiro Rapido, Tiro Multiplo, Schivare (la CA conta il bonus di schivare).
 **Tattiche:** in volo sui gufi, sei alti a distrarre e sei bassi a intercettare; contro il drago tirano con le frecce anatema (+2d6) e Nemico Prescelto. *Morale*: un ranger sotto i 20 pf porta il gufo fuori portata; la compagnia ripiega solo all'ordine di Lunapiena.
 
 > **Verifica 3.5**: Des 18 vale +4 (la CA contava +3); i 68 pf (8d8+32) chiedono Cos 18, non 16; l'arco passa a +2 perché il +14 valga oltre i 9 m.
-> ⚠ **Non SRD** (DM 2026-10-18, vince la versione più forte): un ranger di 8° ha tre talenti a scelta (Resistenza Fisica, Tiro Rapido e Tiro Multiplo vengono dalla classe), qui ne ha cinque. Tiro in Corsa resta, e Mobilità è aggiunta perché è il suo prerequisito SRD: i ranger tirano e si spostano nello stesso round, e contro gli attacchi di opportunità hanno CA +4. PF1e: il ranger dell'8° ha sei talenti (quattro di livello e due di stile di combattimento), quindi la lista ne supera il conto di uno solo.
+> Talenti: un ranger di 8° ne sceglie tre (1°, 3°, 6°; Resistenza Fisica, Tiro Rapido e Tiro Multiplo vengono dalla classe, SRD): Tiro Ravvicinato, Tiro Preciso e Schivare. Tiro in Movimento e Mobilità escono (scelta del DM sulla card del 2026-11-19).
+> <!-- storico: fino al 2026-11-19 cinque talenti a scelta, con Tiro in Movimento e Mobilità (canone del DM del 2026-10-18, «vince la versione più forte») -->
 
 <div style="page-break-before:always"></div>
 
@@ -636,7 +652,8 @@ SIMBOLI TATTICI:
 **Incantesimi da Druido (CL 14°; 6/7/7/6/5/4/4/3 per giorno, con Sag 24):**
 *   7° (CD 24): *Controllare Tempo*, *Guarigione*, *Tempesta di Fuoco*
 *   6° (CD 23): *Pelle di Pietra*, *Muro di Pietra*, *Dissolvi Magie Superiore*
-*   5° (CD 22): *Chiamare Tempesta di Fulmini*, *Muro di Spine*, *Comunione con la Natura*, *Crescita Animale*, *Muro di Fuoco*
+*   5° (CD 22): *Chiamare Tempesta di Fulmini*, *Muro di Spine*, *Crescita Animale*, *Muro di Fuoco*
+    <!-- storico: fino al 2026-11-19 c'era anche Comunione con la Natura, cinque preparati su quattro slot (scelta del DM sulla card del 2026-11-19) -->
 *   4° (CD 21): *Dissolvi Magie*, *Respingere Parassiti*, *Libertà di Movimento*, *Tempesta di Ghiaccio*
 *   3° (CD 20): *Chiamare Fulmini*, *Neutralizzare Veleno*, *Protezione dall'Energia*, *Fondersi nella Pietra*, *Zanna Magica Superiore*
 *   2° (CD 19): *Pelle Coriacea*, *Forza del Toro*, *Resistenza dell'Orso*, *Ristorare Inferiore*, *Sfera Infuocata*, *Ammorbidire Terra e Pietra*
@@ -660,7 +677,7 @@ SIMBOLI TATTICI:
 
 <div style="page-break-before:always"></div>
 
-#### **🎶 MAESTRO TEMPESTAS (Mezzelfo Bardo 12°/Cantore delle tempeste 2°, GS 14)**
+#### **🎶 MAESTRO TEMPESTAS (Mezzelfo Bardo 12°/Cantore delle tempeste 3°, GS 15)**
 **Descrizione da Leggere:**
 > *"Maestro Tempestas è un mezzelfo dalle origini misteriose, i cui occhi cambiano colore con le condizioni atmosferiche: grigi durante la calma, blu elettrico durante le tempeste. La sua lira magica è intagliata dal corno di un drago blu antico, e ogni nota che suona richiama i venti e i fulmini a danzare secondo la sua volontà."*
 
@@ -668,17 +685,18 @@ SIMBOLI TATTICI:
 **Iniziativa:** +7; 
 **Sensi:** Visione Crepuscolare; Ascoltare +18, Osservare +15
 **CA:** 20 (+6 giaco di maglia +2, +3 Des, +1 deflessione), contatto 14, colto alla sprovvista 17
-**PF:** 91 (14d6+42)
-**TS:** Tempra +7, Riflessi +13, Volontà +13
+**PF:** 97 (15d6+45)
+**TS:** Tempra +8, Riflessi +16, Volontà +13
 **Velocità:** 9m
 **Attacco Base:** +10; 
 **Lotta:** +11
 **Attacco:** *Spada corta +1* +12/+7 in mischia (1d6+2/19-20)
-**Capacità Speciali:** Musica Bardica (Ispirare Coraggio +2, 12/giorno), Conoscenze Bardiche, Cantata della Tempesta Tonante (1/incontro, Riflessi CD 23), *Suggestione di massa* 1/giorno (CD 21), Arcane Supreme (Maestria del Controincantesimo, Potere Magico +1).
-**Incantesimi da Bardo Conosciuti (incantatore di 14° livello; 4/5/5/4/4/2 al giorno):**
+**Capacità Speciali:** Musica Bardica (Ispirare Coraggio +2, 15/giorno), Conoscenze Bardiche, Cantata della Tempesta Tonante (1/incontro, Riflessi CD 23), canto della tempesta (*folata di vento* con un uso di musica, LI 18, 20 al freddo o nella tempesta; **colpo di tuono** con un uso di musica, contatto a distanza +13 entro 18 m, danni da elettricità pari a una prova di Esibirsi +29, Riflessi CD 19 dimezza), Stormpower.
+<!-- storico: fino al 2026-11-19 Bardo 12 / Cantore delle tempeste 2, GS 14, 91 pf (14d6+42), Tempra +7, musica 14/giorno, incantatore di 14° (4/5/5/4/4/2), *fulmine* fra gli incantesimi di 3° (non è da bardo: PHB p. 248, stregone e mago), cinque talenti, Esibirsi +21, Concentrazione +11; scelta del DM del 2026-11-19: colpo di tuono -->
+**Incantesimi da Bardo Conosciuti (incantatore di 15° livello; 4/6/5/4/4/3 al giorno):**
 *   5° (CD 21): *Passo nelle Ombre*, *Cura Ferite Leggere di Massa*, *Suggestione di Massa*
 *   4° (CD 20): *Urlo*, *Dominare Persone*, *Porta Dimensionale*, *Invisibilità Superiore*
-*   3° (CD 19): *Fulmine*, *Velocità*, *Dissolvi Magie*, *Confusione*
+*   3° (CD 19): *Lentezza*, *Velocità*, *Dissolvi Magie*, *Confusione*
 *   2° (CD 18): *Esplosione Sonora*, *Polvere Luccicante*, *Eroismo*, *Invisibilità*
 *   1° (CD 17): *Cura Ferite Leggere*, *Charme su Persone*, *Risata Incontenibile*, *Sonno*
 *   0°: *Individuazione del Magico*, *Lettura del Magico*, *Luce*, *Mano Magica*, *Prestidigitazione*, *Aprire/Chiudere*
@@ -782,7 +800,7 @@ Chi non vuole guidare un eroe guarda, oppure guida un'unità di nani (statistich
 **Attacco Completo:** *Arco Lungo Composito +3* +19/+14/+9 a distanza (1d8+6/x3), o *Asce Gemelle +2* +16/+11 (1d6+5) con una, +14/+9 (1d6+5) e +14 (1d6+3) con due
 **Abilità Speciali:** Nemico Prescelto (Orchi +6, Giganti +4, Draghi +2), Stile di Combattimento Migliorato (Tiro Rapido, Tiro Multiplo), Andatura Montana (ignora terreno difficile in montagna), Comando Balestrieri (+4 attacco a unità di tiratori entro 18m).
 **Caratteristiche:** For 16, Des 18, Cos 18, Int 12, Sag 14, Car 10 (Cos 18 per i pf)
-**Talenti:** Tiro Ravvicinato, Tiro Preciso, Resistenza Fisica, Tiro in Movimento, Combattere con Due Armi, Arma Focalizzata (Arco Lungo Composito), Schivare, Mobilità (la CA conta il bonus di schivare).
+**Talenti:** Tiro Ravvicinato, Tiro Preciso, Resistenza Fisica, Combattere con Due Armi, Arma Focalizzata (Arco Lungo Composito), Schivare (la CA conta il bonus di schivare).
 **Abilità:** Osservare +18, Ascoltare +18 (+24 contro gli orchi), Nascondersi +24 (con il *mantello elfico*), Muoversi Silenziosamente +19, Sopravvivenza +17 (+19 all'aperto, +23 sulle tracce degli orchi), Scalare +18, Conoscenze (natura) +18 (conto grado per grado: `plans/esperimenti/giro-arc08-sessione1-2026-10-21/ABILITA-PREGEN.md`). Il punto in più di Osservare e Ascoltare (+18 contro il +17 del conto) si legge come un bonus dell'Esploratrice dei Picchi `[CANONE — DM 2026-11-04, P16, le forze e i pregen]`.
 **Lingue:** Comune, Nanico, Gigante.
 **Equipaggiamento:** *Armatura di Cuoio Borchiato +2*, *Arco Lungo Composito Elfico +3*, 20 *Frecce +2*, 10 *Frecce Anatema degli Orchi*, 5 *Frecce Ricercanti*, *Asce Naniche Gemelle +2*, *Mantello Elfico*, cannocchiale (senza, le CD per contare l'orda dal crinale salgono di 10).
@@ -796,8 +814,8 @@ Chi non vuole guidare un eroe guarda, oppure guida un'unità di nani (statistich
 > **Verifica 3.5 (versione più forte)**: l'armatura di cuoio borchiato +2 vale
 > +5 (CA 21). 12d8+36 non arriva a 98: Cos 18 dà 102. Bonus d'attacco con
 > l'arco +11 BAB, +4 Des, +3 arco, +1 Arma Focalizzata = +19.
-> ⚠ **Non SRD** (DM 2026-10-18, vince la versione più forte): Tiro in Corsa resta,
-> con Mobilità aggiunta come suo prerequisito SRD, e i talenti sono due in più di quelli di un 12° livello 3.5.
+> Talenti: cinque a scelta, quanti ne ha un 12° livello (1°, 3°, 6°, 9°, 12°, SRD); Tiro in Movimento e Mobilità escono (scelta del DM sulla card del 2026-11-19).
+> <!-- storico: fino al 2026-11-19 «Non SRD (DM 2026-10-18, vince la versione più forte): Tiro in Corsa resta, con Mobilità aggiunta come suo prerequisito SRD», due talenti oltre il conto -->
 > PF1e: il ranger del 12° ha nove talenti (sei di livello e tre di stile), e i suoi sette ci stanno: in PF1e la scheda è legale. Il terzo nemico prescelto e i
 > bonus +6/+4/+2 vengono dall'Esploratrice dei Picchi, classe non dell'SRD
 > [Private source — classe della campagna]. Restano come la scheda li dà.
@@ -820,22 +838,23 @@ Chi non vuole guidare un eroe guarda, oppure guida un'unità di nani (statistich
 **CA:** 22 (+1 Des, +8 armatura, +3 scudo), contatto 11, colto alla sprovvista 21
 **PF:** 114 (12d8+60)
 **TS:** Tempra +13, Riflessi +7, Volontà +16
-**Caratteristiche:** For 16, Des 12, Cos 20, Int 12, Sag 22, Car 16 (For e Cos, Cos con *Amuleto della Salute +2*)
+**Caratteristiche:** For 16, Des 12, Cos 20, Int 13, Sag 22, Car 15 (For e Cos, Cos con *Amuleto della Salute +2*)
 **Velocità:** 6m
 **Attacco Base:** +8; 
 **Lotta:** +11
-**Attacco:** *Martello da Guerra Sacro +2* +14 in mischia (1d8+5)
-**Abilità Speciali:** Scacciare Non Morti 10/giorno (+5 bonus), Rune di Potere 3/giorno (+1 bonus potenziamento per 1 ora), Benedizione di Massa (+1 morale alleati entro 18m per 10 min), Controllo Pietra.
-**Incantesimi da Chierico (CL 12°; 6/7+1/7+1/6+1/5+1/4+1/3+1 per giorno, con Sag 22; Domini Guerra e Terra):**
+**Attacco:** *Martello da Guerra Sacro +2* +13 in mischia (1d8+5)
+**Abilità Speciali:** Scacciare Non Morti 9/giorno (+4 bonus), Rune di Potere 3/giorno (+1 bonus potenziamento per 1 ora), Benedizione di Massa (+1 morale alleati entro 18m per 10 min), Controllo Pietra.
+**Incantesimi da Chierico (CL 12°; 6/7+1/6+1/5+1/4+1/4+1/3+1 per giorno, con Sag 22; Domini Protezione e Terra):**
+<!-- storico: fino al 2026-11-19 Domini Guerra e Terra, Arma Focalizzata dal dominio e martello +14, Colpo Infuocato nello slot di dominio di 5° e Comunione fra gli altri; Scrivere Pergamene fra i talenti (scelta del DM sulla card del 2026-11-19) -->
 *   6° (CD 22): *Guarigione*, *Ferire*, *Barriera di Lame*, *Pelle di Pietra* (D)
-*   5° (CD 21): *Cura Ferite Leggere di Massa*, *Potere della Giustizia*, *Rianimare Morti*, *Comunione*, *Colpo Infuocato* (D)
-*   4° (CD 20): *Cura Ferite Critiche* (x2), *Immunità agli Incantesimi*, *Libertà di Movimento*, *Neutralizzare Veleno*, *Potere Divino* (D)
-*   3° (CD 19): *Cura Ferite Gravi* (x2), *Preghiera*, *Dissolvi Magie*, *Rimuovere Maledizione*, *Protezione dall'Energia*, *Scolpire Pietra* (D)
-*   2° (CD 18): *Cura Ferite Moderate* (x3), *Forza del Toro* (x2), *Resistenza dell'Orso*, *Silenzio*, *Arma Spirituale* (D)
-*   1° (CD 17): *Cura Ferite Leggere* (x4), *Benedizione* (x2), *Favore Divino*, *Arma Magica* (D)
+*   5° (CD 21): *Cura Ferite Leggere di Massa*, *Potere della Giustizia*, *Rianimare Morti*, *Colpo Infuocato*, *Muro di Pietra* (D)
+*   4° (CD 20): *Cura Ferite Critiche*, *Potere Divino*, *Libertà di Movimento*, *Neutralizzare Veleno*, *Immunità agli Incantesimi* (D)
+*   3° (CD 19): *Cura Ferite Gravi*, *Preghiera*, *Dissolvi Magie*, *Rimuovere Maledizione*, *Protezione dall'Energia*, *Scolpire Pietra* (D)
+*   2° (CD 18): *Cura Ferite Moderate*, *Forza del Toro* (x2), *Resistenza dell'Orso*, *Silenzio*, *Arma Spirituale*, *Scudo Su Altri* (D)
+*   1° (CD 17): *Cura Ferite Leggere* (x4), *Benedizione* (x2), *Favore Divino*, *Santuario* (D)
 *   0°: *Guida*, *Individuazione del Magico*, *Luce*, *Riparare*, *Resistenza*, *Virtù*
-**Talenti:** Incantesimi Potenziati, Creare Oggetti Meravigliosi, Volontà di Ferro, Scrivere Pergamene, Scacciare Extra, Incidere Rune [Private source — Forgotten Realms Campaign Setting]; Arma Focalizzata (martello da guerra) dal dominio della Guerra.
-**Abilità:** Concentrazione +20, Conoscenze (religione) +16, Sapienza Magica +16, Ascoltare +6, Osservare +6, Percepire Intenzioni +6, Sopravvivenza +6, Guarire +6, Diplomazia +3, Intimidire +3, Artigianato (pietra) +3, Nascondersi −5, Muoversi Silenziosamente −5 (conto grado per grado: `plans/esperimenti/giro-arc08-sessione1-2026-10-21/ABILITA-PREGEN.md`). Ascoltare e Osservare erano +5: con Sag 22 sono +6.
+**Talenti:** Incantesimi Potenziati, Creare Oggetti Meravigliosi, Volontà di Ferro, Scacciare Extra, Incidere Rune [Private source — Forgotten Realms Campaign Setting].
+**Abilità:** Concentrazione +20, Conoscenze (religione) +8, Sapienza Magica +16, Ascoltare +6, Osservare +6, Percepire Intenzioni +6, Sopravvivenza +6, Guarire +6, Diplomazia +2, Intimidire +2, Artigianato (pietra) +11, Nascondersi −5, Muoversi Silenziosamente −5 (conto grado per grado: `plans/esperimenti/giro-arc08-sessione1-2026-10-21/ABILITA-PREGEN.md`). Ascoltare e Osservare erano +5: con Sag 22 sono +6.
 **Lingue:** Comune, Nanico, Terran.
 **Equipaggiamento:** *Armatura a Bande +2*, *Scudo Pesante Runico +1* (RI 15), *Martello da Guerra Sacro +2*, *Simbolo Sacro di Mithral*.
 
@@ -847,13 +866,20 @@ Chi non vuole guidare un eroe guarda, oppure guida un'unità di nani (statistich
 
 > **Verifica 3.5 (versione più forte)**: incantesimi al giorno da chierico di
 > 12° con Sag 22, più uno di dominio per livello; CD 16 + livello. Gli
-> incantesimi di dominio sono quelli di Guerra e Terra dell'SRD. 12d8+48 non
-> arriva a 108: Cos 20 dà 114. Il martello: BAB +8, For +3, +2 arma, +1 Arma
-> Focalizzata = +14. Scacciare 10/giorno con Scacciare Extra.
+> incantesimi di dominio sono quelli di Protezione e Terra dell'SRD (Moradin
+> non dà Guerra, Deities and Demigods, verificato su dnd.arkalseif.info il
+> 2026-11-19; scelta del DM sulla card del 2026-11-19). 12d8+48 non
+> arriva a 108: Cos 20 dà 114. Il martello: BAB +8, For +3, +2 arma = +13. Scacciare 9/giorno con Scacciare Extra.
 > ⚠ Prerequisito: il Sacerdote delle Rune si legge come il Runecaster
 > [Private source — Forgotten Realms Campaign Setting], che chiede il talento
-> Incidere Rune: è aggiunto ai talenti, uno in più di quelli di un 12°
-> livello (⚠ **Non SRD**, DM 2026-10-18, vince la versione più forte). PF1e: nessuna classe di prestigio
+> Incidere Rune: è fra i talenti, e per stare nei cinque di un 12° livello
+> esce Scrivere Pergamene (scelta del DM sulla card del 2026-11-19).
+> Incidere Rune chiede Int 13 e il Runecaster 8 gradi in Artigianato
+> (FRCS p. 36 e p. 51, verificato su dnd.arkalseif.info il 2026-11-19):
+> l'aumento del 12° va su Int (Car 16 → 15, Scacciare 10 → 9) e 8 gradi
+> passano da Conoscenze (religione) ad Artigianato (pietra), scelta del DM
+> sulla card del 2026-11-19.
+> <!-- storico: fino al 2026-11-19 Int 12, Car 16, Scacciare 10/giorno, Conoscenze (religione) +16, Artigianato (pietra) +3, Diplomazia e Intimidire +3 --> PF1e: nessuna classe di prestigio
 > equivalente; sarebbe un chierico con il talento *Inscribe Magical Tattoo*.
 
 **Momenti Eroici Consigliati:**
@@ -872,20 +898,20 @@ Chi non vuole guidare un eroe guarda, oppure guida un'unità di nani (statistich
 **Sensi:** Scurovisione 18m; Ascoltare +15, Osservare +15
 **CA:** 20 (+4 armatura, +4 Des, +1 naturale, +1 schivare), contatto 15, colto alla sprovvista 15
 **PF:** 90 (12d6+48)
-**TS:** Tempra +8, Riflessi +13, Volontà +11
+**TS:** Tempra +7, Riflessi +14, Volontà +9
 **Velocità:** 9m
 **Attacco Base:** +8; 
 **Lotta:** +10
 **Attacco:** *Stocco Affilato +1* +13 in mischia (1d6+3/15-20)
-**Abilità Speciali:** Musica Bardica 8/giorno (Ispirare Coraggio +2, Suggestione, etc.), Canto di Guerra Nanico (+1 morale ai nani oltre Ispirare Coraggio: +3 agli attacchi), Attacco Furtivo +3d6, Abilità da Spia (Camuffare, Raggirare, Nascondere Oggetti).
+**Abilità Speciali:** Musica Bardica 8/giorno (Ispirare Coraggio +2, Suggestione, etc.), Canto di Guerra Nanico (+1 morale ai nani oltre Ispirare Coraggio: +3 agli attacchi), Attacco Furtivo +1d6, Abilità da Spia (Camuffare, Raggirare, Nascondere Oggetti).
 **Incantesimi da Bardo Conosciuti (CL 8°; 3/4/4/2 per giorno, con Car 18):**
 *   3° (CD 17): *Velocità*, *Suggestione*, *Dissolvi Magie*
 *   2° (CD 16): *Invisibilità*, *Immagine Speculare*, *Silenzio*, *Frantumare*
 *   1° (CD 15): *Charme su Persone*, *Identificare*, *Immagine Silenziosa*, *Cura Ferite Leggere*
 *   0°: *Suono Fantasma*, *Prestidigitazione*, *Individuazione del Magico*, *Lettura del Magico*, *Mano Magica*, *Messaggio*
 **Caratteristiche:** For 14, Des 18, Cos 18, Int 14, Sag 10, Car 18 (Cos 18 per i pf)
-**Talenti:** Schivare, Mobilità, Arma Accurata, Volontà di Ferro, Persuasivo (Arma Accurata al posto della Competenza nello Stocco, che un bardo ha già).
-**Abilità:** Diplomazia +23, Raggirare +21, Intrattenere (canto) +16, Ascoltare +15, Osservare +15, Camuffare +14 (+16 per recitare una parte), Nascondersi +14, Muoversi Silenziosamente +14, Raccogliere Informazioni +12, Percepire Intenzioni +10, Sapere bardico +10, Acrobazia +9, Intimidire +8, Conoscenze (locali) +7 (conto grado per grado: `plans/esperimenti/giro-arc08-sessione1-2026-10-21/ABILITA-PREGEN.md`). I punti abilità della Spia Maestra (8 + Int a livello) e Osservare come sua abilità di classe sono `[CANONE — DM 2026-11-04, P16, le forze e i pregen]`.
+**Talenti:** Schivare, Mobilità, Arma Accurata, Volontà di Ferro, Abilità Focalizzata (Raggirare) (Arma Accurata al posto della Competenza nello Stocco, che un bardo ha già).
+**Abilità:** Diplomazia +23, Raggirare +22, Intrattenere (canto) +16, Ascoltare +15, Osservare +15, Camuffare +14 (+16 per recitare una parte), Nascondersi +14, Muoversi Silenziosamente +14, Raccogliere Informazioni +12, Percepire Intenzioni +10, Sapere bardico +10, Acrobazia +9, Intimidire +6, Falsificare +6, Conoscenze (locali) +7 (conto grado per grado: `plans/esperimenti/giro-arc08-sessione1-2026-10-21/ABILITA-PREGEN.md`). I punti abilità della Spia Maestra (8 + Int a livello) e Osservare come sua abilità di classe sono `[CANONE — DM 2026-11-04, P16, le forze e i pregen]`.
 **Lingue:** Comune, Nanico, Orchesco, Goblin: capisce gli ordini dell'orda entro 9 m con Ascoltare CD 15.
 **Equipaggiamento:** *Armatura di Cuoio +2* (Senza Tracce), *Stocco Elfico Affilato +1*, 8 *Pugnali da Lancio +1*, *Kit da Scasso Perfetto*.
 
@@ -900,8 +926,13 @@ Chi non vuole guidare un eroe guarda, oppure guida un'unità di nani (statistich
 > spiega il +13 (BAB +8, Des +4, +1 arma). Bardo 8° con Car 18: 3/4/4/2 al
 > giorno, e quattro incantesimi di 1° conosciuti (*Sonno* esce). 12d6+36
 > non arriva a 84: Cos 18 dà 90. CA 20 con Schivare.
-> La Spia Maestra è il Master Spy [Private source — Complete Adventurer];
-> l'Attacco Furtivo +3d6 resta come la scheda lo dà. PF1e: Agente di
+> La Spia Maestra è lo Spymaster [Private source — Complete Adventurer, p. 76]
+> (verificato su dnd.arkalseif.info il 2026-11-19): chiede Abilità Focalizzata
+> (Raggirare), Raggirare e Camuffare 8 gradi, Falsificare, Diplomazia,
+> Raccogliere Informazioni e Percepire Intenzioni 4; dà furtivo +1d6 al 3°, TS
+> Tempra +1, Riflessi +4, Volontà +1 al 4°. Scelta del DM sulla card del
+> 2026-11-19: Persuasivo diventa Abilità Focalizzata (Raggirare), TS +7/+14/+9.
+> <!-- storico: fino al 2026-11-19 «Master Spy», furtivo +3d6, Persuasivo, TS +8/+13/+11, Raggirare +21, Intimidire +8 --> PF1e: Agente di
 > Corte (*court bard*) o il ladro *spy*, non si applica.
 
 **Momenti Eroici Consigliati:**
@@ -1078,7 +1109,7 @@ L'esercito è organizzato in quattro linee d'assalto principali, con supporto ae
 *   **Fanteria Pesante:** Guerrieri Nanici Veterani (GS 5, **Tattica:** formano muri di scudi impenetrabili sulle mura).
 *   **Fanteria a Distanza:** Balestrieri Nanici (GS 3, **Tattica:** si concentrano sui comandanti e sulle unità speciali nemiche).
 *   **Supporto Tecnico:** Ingegneri da Guerra (GS 3, **Tattica:** operano le baliste e riparano le fortificazioni danneggiate).
-*   **Alleati Esterni:** Signore Ventolesto (GS 8), Ranger Elfici (GS 8), Orion Pelleorsa (GS 14), Maestro Tempestas (GS 14). **Tattica:** Dominio aereo, eliminazione del drago e devastazione delle retrovie nemiche.
+*   **Alleati Esterni:** Signore Ventolesto (GS 8), Ranger Elfici (GS 8), Orion Pelleorsa (GS 14), Maestro Tempestas (GS 15). **Tattica:** Dominio aereo, eliminazione del drago e devastazione delle retrovie nemiche.
 ---
 
 <div style="page-break-before:always"></div>
@@ -2172,7 +2203,7 @@ Mentre gli alleati aerei ingaggiano il drago, i PG e i nani combattono i resti d
 - **Cantata della Tempesta Tonante** (Tempestas, 1 per incontro, `ARC08-02` §2): ostili entro 18 m, 2d6 elettrici a inizio turno per 3 round, Riflessi CD 23 dimezza, +1d6 a chi porta armatura di metallo; alleati entro 18 m +2 di morale ad attacchi, danni e TS per 10 round. Fauci non è immune all'elettricità
 - **Chiamare fulmini** (Orion, SRD): 3d10 a fulmine nella tempesta, un fulmine per round con un'azione standard, al massimo 10; Riflessi CD 20 dimezza, RI sì. Il round in cui Orion è in lotta sul dorso del drago non chiama fulmini
 - **Il vento**: lo dirige Orion con *controllare tempo*, per direzione e forza (SRD); contro il drago resta il vento violento, senza malus alle manovre oltre a quelli dell'SRD
-- Dopo la Cantata, Tempestas lancia *fulmine* ed *esplosione sonora* (scheda); *velocità* sui ranger o sui PG è la sua mossa migliore
+- Dopo la Cantata, Tempestas scaglia il *colpo di tuono* e lancia *esplosione sonora* (scheda); *velocità* sui ranger o sui PG è la sua mossa migliore
 
 
 **AZIONI RUMBLING STONES DA TERRA:**
@@ -2607,7 +2638,7 @@ CERIMONIA DELLE ASCE - TRAMONTO
 *   **Fanteria Pesante:** Guerrieri Nanici Veterani (GS 5)
 *   **Fanteria a Distanza:** Balestrieri Nanici (GS 3)
 *   **Supporto Tecnico:** Ingegneri da Guerra (GS 3)
-*   **Alleati Esterni:** Signore Ventolesto (GS 8), Ranger Elfici (GS 8), Orion Pelleorsa (GS 14), Maestro Tempestas (GS 14)
+*   **Alleati Esterni:** Signore Ventolesto (GS 8), Ranger Elfici (GS 8), Orion Pelleorsa (GS 14), Maestro Tempestas (GS 15)
 
 ---
 
@@ -2927,7 +2958,7 @@ incontri `[CANONE — DM 2026-10-19, D19]`.*
 
 **Scheda 4: NALA CANTAPIETRE, Il Sorriso prima della Lama (Bardo/Spia)**
 *   **Ruolo:** Infiltratrice, sabotatrice, supporto tattico e morale.
-*   **Statistiche Chiave:** PF 90, CA 20, Attacco Furtivo +3d6
+*   **Statistiche Chiave:** PF 90, CA 20, Attacco Furtivo +1d6
 *   **Abilità Principali:**
     *   **Musica Bardica (8/giorno):** *Ispirare Coraggio* (+2) è fondamentale. Tienilo sempre attivo.
     *   **Incantesimi:** *Velocità* è l'incantesimo più potente del tuo arsenale. *Invisibilità* e *Silenzio* per le operazioni segrete.
@@ -3037,17 +3068,18 @@ incontri `[CANONE — DM 2026-10-19, D19]`.*
 | **Velocità** | 6m | |
 | **TS** | Temp **+13**, Rifl **+7**, Vol **+16** | |
 | **Attacco Base** | +8 | |
-| **Attacco Melee** | **+14** | *Martello da Guerra Sacro +2* (1d8+5) |
-| **For** 16, **Cos** 20, **Sag** 22, **Car** 16 | | |
+| **Attacco Melee** | **+13** | *Martello da Guerra Sacro +2* (1d8+5) |
+| **For** 16, **Cos** 20, **Int** 13, **Sag** 22, **Car** 15 | | |
 
 **ABILITÀ PRINCIPALI:**
-*   **Scacciare Non Morti (10/giorno):** Bonus di +5 al tiro.
+*   **Scacciare Non Morti (9/giorno):** Bonus di +4 al tiro.
 *   **Rune di Potere (3/giorno):** Come azione di round completo, puoi incidere una runa su un'arma. L'arma ottiene un **bonus di potenziamento di +1** per 1 ora (non cumulabile con bonus esistenti).
 *   **Incantesimi Chiave:**
     *   **Guarigione:** *Guarigione*, *Cura Ferite Critiche* (x2), *Cura Ferite Gravi* (x2), *Cura Ferite Moderate* (x3).
     *   **Supporto:** *Potere Divino* (+bonus attacco, PF temp), *Preghiera* (+1 a tutti i tiri alleati, -1 nemici), *Forza del Toro* (x2).
     *   **Attacco:** *Colpo Infuocato*, *Ferire*.
-    *   **Domini:** Guerra (competenza e focus nelle armi), Terra (*Scolpire Pietra*).
+    *   **Domini:** Protezione (1/giorno, +9 al prossimo TS di chi tocca), Terra (*Scolpire Pietra*).
+    <!-- storico: fino al 2026-11-19 Guerra (competenza e focus nelle armi), che Moradin non dà; attacco +14 (scelta del DM sulla card del 2026-11-19) -->
 
 ---
 
@@ -3063,10 +3095,10 @@ incontri `[CANONE — DM 2026-10-19, D19]`.*
 | **PF** | **90** | |
 | **CA** | **20** | (Armatura di Cuoio +2, Des +4, Naturale +1, Schivare +1) |
 | **Velocità** | 9m | |
-| **TS** | Temp **+8**, Rifl **+13**, Vol **+11** | |
+| **TS** | Temp **+7**, Rifl **+14**, Vol **+9** | |
 | **Attacco Base** | +8 | |
 | **Attacco Melee** | **+13** | *Stocco Affilato +1* (1d6+3, critico 15-20/x2) |
-| **Attacco Furtivo** | **+3d6** | Danno extra contro bersagli colti alla sprovvista o fiancheggiati. |
+| **Attacco Furtivo** | **+1d6** | Danno extra contro bersagli colti alla sprovvista o fiancheggiati. |
 | **Des** 18, **Cos** 18, **Car** 18 | | |
 
 **ABILITÀ PRINCIPALI:**

@@ -2333,8 +2333,30 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `plans/adr/ADR-0145-l-ordine-del-booklet-della-serata-si-misura.md` · `scripts/misura_ordine.py` · `plans/esperimenti/ordine-serata-2026-11-19/ruoli-serata.json`
 - **Solo qui:** card a Jfs su ordine v4, doppioni e posizione di Durik; l'ordine del volume d'arco resta da discutere a parte; i segnalibri piatti del PDF sono un difetto di navigazione non corretto
 
+### MS-0207 · 2026-11-19 · Revisione delle scelte storiche con dnd.arkalseif.info: venti card del DM
 
-### MS-0207 · 2026-11-19 · Le tecniche di prosa proprie del repo, messe accanto alle case
+- **Data:** 2026-11-19
+- **PR:** —
+- **ADR:** ADR-0126
+- **Temi:** revisione storica arkalseif schede domini chierici talenti spymaster sublime-chord stormsinger card verifica-scheda
+- **Origine:** riga del 2026-11-19 «revisione storica delle schede su dnd.arkalseif.info» in `plans/CHANGELOG.md`
+- **Testo:** il DM ha aggiunto dnd.arkalseif.info ai domini dell'ambiente e chiesto di ricontrollare le scelte già fatte sulle schede. Fonte non OGL: nel repo solo nomi, numeri e pagine, nessun test di CI ne dipende. Dove il sito dava una risposta sola si è corretto (pagine citate, note «non verificato»); dove restava una scelta, una card alla volta con la consigliata. Venti card risolte, tutte sulla consigliata tranne Ur-Vrax (il DM ha prima scelto Legale Malvagio per errore e ha chiesto di ripresentarla, poi Neutrale Malvagio). Rifacendo gli slot sulla tabella SRD sono usciti due errori non chiesti dalle card: Salvatore aveva 4 incantesimi di 3° al giorno (l'SRD ne dà 2) e i chierici drow di Lolth del P1C non avevano lo slot di dominio al 3° e al 4°. Misura contro main 517a3e79: violazioni di `verifica_scheda` 34 → 2, e le due rimaste sono nell'archivio di ARC-06, che non si tocca.
+- **Trovato nel repo:** `/mnt/project-files/revisione-arkalseif-2026-11-19/REVISIONE-SCELTE-STORICHE.md` (fuori dal repo) · `Bestiario/png/Harbek_Runaforte.md` · `Bestiario/villain/Sonjak/Sonjak.md` · `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md`
+- **Solo qui:** il sito non copre il Monster Manual oltre 60 voci, il Magic Item Compendium oltre 200, né le liste di domini del FRCS per gli dei che hanno anche una pagina del Deities and Demigods: restano non verificati rakshasa Ak'chazar, death tyrant, mezzo-illithid, yochlol, Curst e Corrupted Frenzy, Hammer Specialist, Deceive Item, la Cantante Divina di Dana e il dominio Selvaggio di Yeenoghu. Le due ERRATA (ARC08 e PARTE2-3) sono archivi per `fase1.py --check` ma hanno blocchi che `verifica_scheda` misura e che le PR precedenti hanno già corretto: toccate con il blocco storico. L'archivio `_ARCHIVIO/CoronaDiAdamantio/villans.md` è stato riportato com'era. Chiuse dopo l'apertura della PR: la chierica di Lolth del P1C apre con *blocca persone* su Hella invece del *colpo infuocato* che non ha; Tempestas sale a Cantore delle tempeste 3 (GS 15) per avere il *colpo di tuono* (Frostburn p. 70), il fulmine del «Bardo del Tuono», al posto di *fulmine*, che un bardo non lancia: il DM l'ha preferito alla *lentezza* consigliata e a una bacchetta con Usare Oggetti Magici. Con il sì esplicito del DM anche su `main`: la riga di Tempestas cambia in `campaign/state.yaml` (Stormsinger 3, GS 15), `render_state.py` rigenera `state.md`, la prosa fuori dai marcatori si corregge a mano e `dm.py dossier` rigenera il DM-DOSSIER; `dm.py` non ha un comando che riscriva la riga di un PNG, e il flusso ora sta nel playbook al §4.3-bis. `state-changelog.md` resta com'era (dice ancora GS 14, ed è storia).
+
+### MS-0208 · 2026-11-19 · Lo Skullcrusher Vecchio ha la scheda intera, e la serata non stampa l'Adulto
+
+- **Data:** 2026-11-19
+- **PR:** #499
+- **ADR:** ADR-0145
+- **Temi:** stampa booklet serata doppioni skullcrusher vecchio adulto scheda durik arc07
+- **Origine:** riga del 2026-11-19 «Card di Jfs sulla serata di ARC-07: Durik resta in fondo come galleria dei PNG» in `plans/CHANGELOG.md`
+- **Testo:** card del 19/11 dopo il merge della #497. Durik: Jfs sceglie «in fondo, come galleria PNG» (ruolo riferimento, non preparazione). Doppioni: Jfs (14:02 UTC) chiede di verificare che la scheda del Vecchio abbia tutti i dati e non rimandi all'adulto maturo, poi di togliere il doppione. Verifica: A.1-bis rimandava ad A.1 in sei punti (Ascoltare e Osservare, abilità, capacità magiche, incantesimi conosciuti, tattica, soffio impregnante, respirare sott'acqua mancante). Ricopiati i valori dove il blocco diceva «come A.1», senza numeri nuovi; due INFERRED con domanda, uno chiuso lo stesso giorno: Allerta (+2 a Ascoltare e Osservare) e i conosciuti dello stregone di 7° secondo la tabella SRD (7/5/3/2 contro i 6/4/2 di A.1, D64 aggiunge solo i due di 3°). «Cosa cambia al tavolo», che stava dentro A.1, è ora A.1-ter con i numeri del Vecchio accanto (16d4 CD 31, RI 22, morso col nome +54). A.6 non è un doppione puro (tabella delle complicazioni dello skill challenge; le schede sono in appendice come tutte per `entrambe`). Serata: 3 → 0 difetti di struttura, 132 pp
+- **Trovato nel repo:** `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` · `plans/esperimenti/ordine-serata-2026-11-19/ruoli-serata.json`
+- **Solo qui:** incantesimi del Vecchio decisi da Jfs alle 14:06 UTC: i conosciuti dell'Adulto più *dissolvi magie* e *lentezza* (D64); l'INFERRED è tolto. Allerta: +31 a Ascoltare e Osservare, perché i talenti del Vecchio elencano Allerta e l'SRD dà +2 (consiglio del coordinatore; Jfs può riportarlo a +29). Nessun INFERRED nuovo resta
+
+
+### MS-0209 · 2026-11-19 · Le tecniche di prosa proprie del repo, messe accanto alle case
 
 - **Data:** 2026-11-19
 - **PR:** —

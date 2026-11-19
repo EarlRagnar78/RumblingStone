@@ -21,7 +21,7 @@ attacchi:
 voci:
   - Incantatore di livello 17 (druido, SAG +7); al giorno 6/7/7/7/6/5/5/4/2/1
   - CD degli incantesimi: 17 + livello (massimo: 9° livello, CD 26)
-  - Forma selvatica 5/giorno, animali fino a Enorme; elementale 2/giorno, fino a Grande
+  - Forma selvatica 7/giorno, animali fino a Enorme; elementale 2/giorno, fino a Grande
   - Evoca alleato naturale fino al IX; bastone mutante (il bastone diventa un treant)
   - Concentrazione +25 (rituale del Mythal, CD 25)
 fonte: arco 09, Battaglia finale, «Stat blocchi epici» §5 (Druido 17), conti rifatti sull'SRD 3.5; lista d'incantesimi dalla scheda generata, completata ai livelli 8 e 9
@@ -48,7 +48,8 @@ Medium humanoid, **Druido 17**. La razza la scheda non la dice.
 **Statistiche** For 10, Des 12, Cos 14, Int 12, Sag 24, Car 16 · BAB +12; Lotta +12 · **Talenti** Incantesimi Naturali, Incantare in Combattimento, Forma Selvatica Extra `[Private source — Complete Divine]`, Incantesimi Estesi, Incantesimo Rapido, Abilità Focalizzata (Concentrazione) — sei, la scheda non li elencava · **Abilità** Concentrazione +25, Conoscenze (natura) +23, Sopravvivenza +27, Guarire +27 · **Linguaggi** Comune, Druidico, Silvano · **Equipaggiamento** periapto della saggezza +4, armatura di pelle +3, anello di protezione +2 (tengono la Sag «22+» e la CA del modulo)
 
 **Capacità speciali**
-- **Forma selvatica**: 5 volte al giorno, animali da Minuscolo a Enorme e piante; elementale 2 volte al giorno, da Piccolo a Grande. Il secondo uso da elementale viene da Forma Selvatica Extra `[Private source — Complete Divine]`.
+- **Forma selvatica**: 7 volte al giorno, animali da Minuscolo a Enorme e piante; elementale 2 volte al giorno, da Piccolo a Grande. Forma Selvatica Extra `[Private source — Complete Divine, p. 81]` dà due usi in più e un uso da elementale in più: 5 + 2 e 1 + 1 (verificato su dnd.arkalseif.info il 2026-11-19).
+<!-- storico: fino al 2026-11-19 la forma selvatica era 5/giorno: il talento aggiungeva solo l'uso da elementale -->
 > ⚠ Prerequisito: la scheda generata scriveva «elementale Enorme 2/giorno». Per l'SRD l'elementale Enorme arriva al 20° livello; al 17° c'è un uso al giorno, fino a Grande. Il secondo uso è tenuto col talento qui sopra; la taglia Enorme no, perché vorrebbe tre livelli di druido che il modulo non le dà. PF1e: il druido del PRD non ha un archetipo che anticipi l'elementale Enorme — non si avvicina.
 - **Alleato naturale evocato** fino al IX; **bastone mutante** (il bastone diventa un treant per ore).
 - **Mille volti**, **immune ai veleni**, **corpo senza tempo**, **resistere al richiamo della natura** (SRD, druido 9-15).

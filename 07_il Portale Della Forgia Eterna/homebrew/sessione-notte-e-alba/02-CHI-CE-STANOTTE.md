@@ -209,9 +209,8 @@ voci:
 
 ![Skullcrusher nel cortile](../../Immagini/web/tavola-skullcrusher-nel-cortile.jpg)
 
-Stasera il drago è il **Vecchio**. La scheda qui sotto rimanda alla scheda
-dell'Adulto (`DEF-4` Appendice A.1) per
-sensi, velocità, capacità magiche, talenti e abilità.
+Stasera il drago è il **Vecchio**, e la scheda qui sotto è intera. L'Adulto
+di `DEF-4` Appendice A.1, per un gruppo più debole, resta nel volume d'arco.
 
 <!-- nuova-pagina -->
 
@@ -235,19 +234,20 @@ sensi: percezione cieca 18 m, scurovisione 36 m, visione crepuscolare ×4
 attacchi:
   - Mischia morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16)
 ```
-**Iniziativa** +6 · **Sensi** percezione cieca 18 m, scurovisione 36 m, visione crepuscolare ×4; Ascoltare e Osservare come l'Adulto (A.1)
+**Iniziativa** +6 · **Sensi** percezione cieca 18 m, scurovisione 36 m, visione crepuscolare ×4; Ascoltare +31, Osservare +31 (Allerta, +2: SRD)
 
 **Difesa** **CA 36** (−2 taglia, +2 DES, +26 nat), contatto 10, impreparato 34; **40 con *armatura magica*** · **pf 337** (25d12+175) · TS Temp +21, Rifl +18, Vol +20 · RD 10/magia · RI 22 · immune acido, sonno, paralisi
 
-**Attacco** Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16) · **Schiacciare** 2d8+16, Riflessi CD 29 (solo creature Piccole o minori) · **Soffio acido** linea di 30 m, 16d4, Riflessi CD 31 dimezza (aderente come A.1) · **Capacità magiche** come A.1, ma *oscurità* con raggio 24 m e *corrompere l'acqua* a CD 26 (la CD della sua Presenza Terrificante, come nell'SRD), più *crescita vegetale* 1/giorno · **Incantesimi da stregone** incantatore di 7°: 6/7/7/5 al giorno (*lentezza* CD 17)
+**Attacco** Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16) · **Schiacciare** 2d8+16, Riflessi CD 29 (solo creature Piccole o minori) · **Soffio acido** (Sop) linea di 30 m, 16d4, Riflessi CD 31 dimezza, di nuovo dopo 1d4 round (1d4+1 se impregnante, sotto) · **Capacità magiche** 3/giorno *oscurità* (raggio 24 m); 1/giorno *corrompere l'acqua* (CD 26, la CD della sua Presenza Terrificante, come nell'SRD: rovina anche le pozioni che un PG ha addosso, se falliscono il TS); 1/giorno *crescita vegetale* · **Incantesimi da stregone** (incantatore di 7°, CD 14 + livello): 0 (6/giorno) *individuazione del magico, lettura del magico, mano magica, resistenza, suono fantasma, frastornare*; 1° (7/giorno) *armatura magica, scudo, colpo accurato, dardo incantato*; 2° (7/giorno) *vedere invisibilità, immagine speculare*; 3° (5/giorno) *dissolvi magie, lentezza* (CD 17) (i conosciuti dell'Adulto più i due di 3°, come D64: scelta di Jfs del 19/11)
 
-**Tattiche** Come A.1: fugge a ⅓ dei pf, circa **112 pf**.
+**Tattiche** Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf, circa **112 pf**. In A.1-ter, «Cosa cambia al tavolo», i numeri che contano nel duello.
 
-**Statistiche** For 33, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +25; Lotta +44 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Impregnante, Virare (non Ghermire), Volontà di Ferro, più Allerta · **Abilità** e il resto: come A.1
+**Statistiche** For 33, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +25; Lotta +44 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Impregnante, Virare (non Ghermire), Volontà di Ferro, più Allerta · **Abilità** Ascoltare +31, Cercare +29, Concentrazione +32, Intimidire +29, Muoversi Silenziosamente +27, Nascondersi +19, Osservare +31, Sapienza Magica +29, Nuotare +18: come l'Adulto più Allerta (il blocco non spende i gradi dei tre DV in più)
 
 **Capacità speciali**
 - **Presenza Terrificante**: raggio 72 m, Volontà CD 26 (meno di 25 DV).
-- **Soffio impregnante**, come A.1, ma toglierselo è Riflessi CD 31, la CD del suo soffio.
+- **Soffio impregnante**, quando lo sceglie: chi ne prende danno ne riprende metà al round dopo; toglierselo è un'azione di round completo con Riflessi CD 31 (+2 rotolando a terra, e si resta proni); la ricarica sale di 1 round.
+- **Respirare sott'acqua** (Str).
 <!-- /include -->
 
 <!-- include: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#wyvern-scheda -->

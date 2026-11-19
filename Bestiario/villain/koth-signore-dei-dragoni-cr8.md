@@ -30,7 +30,7 @@ voci:
 
 > **GS 8**: un bugbear (GS 2) con 8 livelli da stregone è un GS 8: lo stregone non è associato al bugbear, quindi vale ½ per livello fino a 3 livelli (pari ai DV del bugbear) e 1 per livello dopo (2 + 1,5 + 5 = 8,5). Il GS 6 di prima era quello del Koth stampato in RHoD, che è stregone 6.
 
-> ⚠ Talenti: a 11 DV ne spettano quattro, l'export ne dava cinque (più la competenza negli scudi, che è del bugbear). Dal 2026-11-13 sono quattro: tolto il talento sociale (nota in fondo). *Sudden Enlarge* `[Private source — Complete Arcane]`.
+> ⚠ Talenti: a 11 DV ne spettano quattro, l'export ne dava cinque (più la competenza negli scudi, che è del bugbear). Dal 2026-11-13 sono quattro: tolto il talento sociale (nota in fondo). *Sudden Enlarge* `[Private source — Miniatures Handbook, p. 28]`.
 
 Medium humanoid (goblinoid), Bugbear (Humanoid 3) / Sorcerer 8, LE. Tutto SRD tranne il talento *Sudden Enlarge*.
 

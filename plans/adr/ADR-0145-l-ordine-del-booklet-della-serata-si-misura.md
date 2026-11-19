@@ -1,6 +1,6 @@
 # ADR-0145 — L'ordine dei capitoli del booklet della serata e del volume d'arco si misura
 
-**Stato**: proposta (2026-11-19), in attesa delle card di Jfs sui doppioni e su Durik
+**Stato**: proposta (2026-11-19); le card di Jfs sui doppioni e su Durik hanno risposto lo stesso giorno (v4.1)
 **Data**: 2026-11-19
 **Decisione-fonte**: il DM (Jfs), 2026-11-19: «mi controlli se l'ordine logico del booklet con cui compaiono le varie sezioni ha senso e segue gli standard editoriali validi […] cercarle e vedere quanto sono applicate misurando e testando il risultato», e «creare se non ci sono strumenti per correggere questi difetti editoriali […] sempre con test tdd», e alle 13:10 UTC: «aggiungi lo stesso lavoro anche per l'avventura completa».
 **Rapporti**: segue [ADR-0013](ADR-0013-standard-generazione-booklet-sessioni.md) (struttura del booklet di sessione), [ADR-0122](ADR-0122-il-volume-segue-lo-schema-degli-adventure-path.md) e [ADR-0144](ADR-0144-due-stampe-per-arco-e-rimandi-con-la-pagina.md); usa `plans/RICERCA-USABILITA-AL-TAVOLO-2026-11.md`. Misura: `scripts/misura_ordine.py`, regole per la serata di ARC-07 in `plans/esperimenti/ordine-serata-2026-11-19/ruoli-serata.json` e per il volume d'arco in `plans/esperimenti/ordine-volume-2026-11-19/ruoli-volume.json`.
@@ -84,22 +84,28 @@ R5 (una mappa nella stessa pagina dell'incontro) è già di
 
 Misure del 2026-11-19 sulla serata di ARC-07:
 
-| | v3 (131 pp) | v4 (134 pp) |
-|---|---|---|
-| Difetti di struttura | 15 | 3 |
-| Blocchi di preparazione dopo il gioco (R2) | 2 (§0-ter con i momenti dei PG e le zone; la cassetta con Durik) | 1 (Durik) |
-| Riassunto dopo il dettaglio (R4) | 3 su 4 | 0 su 4 |
-| Pagine di dopo-serata fra le scene (R6) | 3 | 0 |
-| Righe sbagliate nella guida (R8) | 5 | 0 |
-| Doppioni (R7) | 2 | 2 |
-| Rimandi con pagina, tutti giusti | 101 su 124 (15 a un titolo assente) | 115 su 124 (1 a un titolo assente) |
+| | v3 (131 pp) | v4 (134 pp) | v4.1 (132 pp) |
+|---|---|---|---|
+| Difetti di struttura | 15 | 3 | 0 |
+| Blocchi di preparazione dopo il gioco (R2) | 2 (§0-ter con i momenti dei PG e le zone; la cassetta con Durik) | 1 (Durik) | 0 (Durik è riferimento) |
+| Riassunto dopo il dettaglio (R4) | 3 su 4 | 0 su 4 | 0 su 4 |
+| Pagine di dopo-serata fra le scene (R6) | 3 | 0 | 0 |
+| Righe sbagliate nella guida (R8) | 5 | 0 | 0 |
+| Doppioni (R7) | 2 | 2 | 0 |
+| Rimandi con pagina, tutti giusti | 101 su 124 (15 a un titolo assente) | 115 su 124 (1 a un titolo assente) | 113 su 122 (1 a un'apertura in grassetto) |
+
+v4.1 segue le due card del 19/11. Durik resta in coda, «come galleria
+PNG» (Jfs): il file dei ruoli lo dichiara riferimento. Dei due doppioni,
+A.1 (l'Adulto) esce dalla serata e la sua parte «Cosa cambia al tavolo»
+diventa A.1-ter con i numeri di entrambi i draghi; la scheda del Vecchio
+(A.1-bis) è stata resa intera, perché rimandava ad A.1 in sei punti. A.6
+resta: porta la tabella delle complicazioni, non solo schede.
 
 Quello che si paga:
 
 - tre pagine in più (131 → 134), per i capitoli che ora aprono su pagina
   nuova;
-- i 3 difetti rimasti sono scelte di Jfs: Durik in coda e i due
-  doppioni A.1 e A.6, che si tolgono solo con il suo sì;
+- i 3 difetti rimasti in v4 erano scelte di Jfs, chiuse in v4.1 (sopra);
 - il rimando a «Se l'alba arriva prima della tenda» va al capitolo giusto
   ma senza pagina, perché nel master è un'apertura in grassetto e non un
   titolo;

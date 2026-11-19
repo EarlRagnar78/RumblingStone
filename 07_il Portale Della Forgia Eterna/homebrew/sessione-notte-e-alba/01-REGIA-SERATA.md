@@ -87,7 +87,7 @@ vuole, l'aspetto e il ritratto accanto ai numeri:
 
 | Scheda | Perché |
 |---|---|
-| Skullcrusher Vecchio, `02-CHI-CE-STANOTTE.md` (il resto della scheda dell'Adulto in `DEF-4` Appendice A.1) | il duello. Il soffio contro Durik è nella Scena 11, riga 4-bis |
+| Skullcrusher Vecchio, `02-CHI-CE-STANOTTE.md` | il duello. Il soffio contro Durik è nella Scena 11, riga 4-bis |
 | Le due wyvern, `02-CHI-CE-STANOTTE.md` | questo gruppo conta come straripante: ci sono, dal round 2 del duello |
 | Durik, `08-SCHEDA-DURIK.md` | +50% di danni dall'acido: il soffio lo prende in pieno. Con la runa prima il +50%, poi −20 (`DEF-4` §1, Hella). Senza runa il soffio gli fa in media più di 50: Tempra CD 15 o torna polvere, e la carica rimasta dopo i Treant dell'alba lo riporta per un'ora (Scena 11, riga 4-bis) |
 | `ARC07-BARILE-SULLA-TENDA.md`, la scheda da tavolo e il §8 | lo sgancio e i round nel fuoco: è lo scontro con cui si apre |

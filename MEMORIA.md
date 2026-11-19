@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-19 | SISTEMI-DI-GIOCO-PLUGIN | `conformita_statblocchi`: il talento di una riga di variante non entra nei TS a… | ✅ test nuovo rosso su main, verde qui |
 | 2026-11-18 | SISTEMI-DI-GIOCO-PLUGIN | Correzioni dall'audit del 18/11. Impronte del banco d'invarianza rigenerate dop… | ✅ `impronte.py --confronta` 12 su 12 |
 | 2026-11-18 | RICERCA-TOOL-LGM-2026 | §3.1, ricontrollo della carta del cielo chiesto dal DM. La carta mostrava la me… | Stella-chiave a 0,3 pixel dal centro del segno; quattro lanci di fila identici pixel per pixel, variante da stampa identica byte per byte. A mezzanotte del 30… |
 | 2026-11-18 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, ricontrollo di Incantesimi focalizzati (richiesta del DM del 18/11):… | ✅ |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-18 | STATO-E-ORDINE | ADR-0137, la memoria storica a ogni blocco di lavoro (richiesta del DM del 18/1… | 🟡 PR unite dal 12/11 ritrovate con `--pr`: 37 → 90 su 90 (88 con la voce propria; #387 e #389 toccano solo `docs/` e sono solo citate in MS-0082). Memoria dell… |
 | 2026-11-18 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, il generatore: la nota «niente Incantesimi focalizzati» nel conto esc… | ✅ |
 | 2026-11-17 | RECUPERO-DECISIONI-E-REVISIONI-INCOMPIU… | Kit unico delle prove sulla RTX 4050, richiesta del DM del 17/11 (ADR-0136):… | 🟡 prove lanciabili con un comando: da 0 a 7 su 7; sistemi con un percorso di installazione: da 1 (Bazzite) a 4. Mai girato su una GPU né su Debian, CachyOS o W… |
-| 2026-11-17 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, il generatore: Incantesimi focalizzati con la scuola. Il nome italian… | In PR: sull'impronta (720 blocchi) nome sbagliato 234 → 0, senza scuola 312 → 0, su blocchi senza incantesimi 210 → 0 |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 185 voci, l'ultima MS-0185 del 2026-11-18 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 186 voci, l'ultima MS-0186 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

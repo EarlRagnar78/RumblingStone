@@ -671,14 +671,31 @@
         }
         // in fondo a una colonna resterebbe il solo titolo: si va a capo, e
         // lì si spezza solo se la colonna è accorciata da un float
-        else if alto < colonna * 0.92 and qui < colonna * 0.5 {
+        else if alto < colonna * 0.97 and qui < colonna * 0.66 {
           colbreak()
-          intero(tattiche, spezzabile: true)
+          // ADR-0144: in cima alla colonna nuova si misura di nuovo. Se un
+          // float l'accorcia e la colonna è quella di destra, il riquadro si
+          // spezzerebbe a pagina girata: va alla pagina dopo, che comincia a
+          // sinistra e lascia la colonna accanto per continuare.
+          context {
+            let qui2 = fondo-col - here().position().y - 4pt
+            if alto >= qui2 and here().position().x > page.width / 2 { colbreak() }
+            intero(tattiche, spezzabile: true)
+          }
         } else {
           // un riquadro più alto di una colonna si spezza. Nella colonna di
           // sinistra continua accanto, sulla stessa pagina; in fondo a quella
           // di destra lascerebbe il titolo da solo a pagina girata, e va a capo
-          if qui < colonna * 0.33 and here().position().x > page.width / 2 { colbreak() }
+          // ADR-0144: un riquadro che sta in due colonne non si spezza a
+          // pagina girata. Se comincia a destra va alla pagina dopo, dove
+          // scorre da sinistra a destra; se comincia a sinistra e non entra
+          // in quel che resta più la colonna accanto, va anche lui alla
+          // pagina dopo. Si paga lo spazio bianco che lascia.
+          let destra = here().position().x > page.width / 2
+          let due = page.columns > 1 and alto < colonna * 1.9
+          if due and destra { colbreak() }
+          else if due and alto > qui + colonna - 12pt { colbreak(); colbreak() }
+          else if qui < colonna * 0.33 and destra { colbreak() }
           intero(tattiche, spezzabile: true)
         }
       }

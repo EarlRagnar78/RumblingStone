@@ -60,7 +60,7 @@ Misure del 2026-11-19, PDF composti con la catena di stampa:
 |---|---|---|---|---|---|
 | Serata, main | 130 | 107 | 8 | 0 | 0 |
 | Serata, questa PR | 130 | 108 | 1 | 100 | 100 |
-| Volume d'arco ARC-07 | 293 | 242 | 2 | 236 | 236 |
+| Volume d'arco ARC-07 | 294 | 242 | 2 | 236 | 236 |
 
 Il titolo non trovato rimasto nella serata è un'apertura in grassetto, non un
 titolo: il rimando resta senza pagina. Nel volume d'arco i due sono quello e
@@ -68,13 +68,19 @@ titolo: il rimando resta senza pagina. Nel volume d'arco i due sono quello e
 
 Quello che si paga:
 
-- il volume d'arco ha 3 schede spezzate fra due pagine (Terros, Zog'tar,
-  Skullcrusher): sono più alte di una colonna. La serata ne ha 1 (Balvar),
-  come su main;
+- una scheda alta meno di una colonna che, dopo il salto di colonna, trova
+  la colonna di destra accorciata da un float va alla pagina dopo invece di
+  spezzarsi a pagina girata (tema, ramo «in fondo a una colonna»). Nel volume
+  d'arco toglie due schede spezzate su tre (Zog'tar e Skullcrusher) al prezzo
+  di una pagina. Resta spezzata Terros, alta due colonne intere: con la scheda
+  d'entrata in float sopra non sta in una pagina. La serata ha 1 scheda
+  spezzata (Balvar), come su main. Una prima prova che decideva dalla
+  posizione prima del salto di colonna non convergeva (la posizione letta era
+  quella del giro di composizione precedente) ed è stata scartata;
 - le distanze fra dove la persona agisce e la sua scheda, nel volume d'arco,
-  sono in mediana 2-8 pagine (Balvar 6, Durin 2, Skullcrusher 5, Terros 6,5,
+  sono in mediana 2-8 pagine (Balvar 7, Durin 2, Skullcrusher 3,5, Terros 6,5,
   Zog'tar 8); con le schede solo alla prima apparizione erano 24 per Balvar e
-  17 per Zog'tar, e 4 pagine in meno (289);
+  17 per Zog'tar, in 289 pagine;
 - la misura `titoli_rovinati` segnala «LORDO» alle pp. 47 e 102 del volume: è
   una parola in maiuscolo nelle tabelle del tesoro dei master, non un titolo;
 - la composizione di un volume con molti `#rif-pagina` richiede più iterazioni

@@ -25,25 +25,25 @@
         "testi_sotto_minimo": 0,
         "fuori_margine": 0,
         "immagini_sotto_300dpi": 66,
-        "schede_spezzate": 1,
+        "schede_spezzate": 0,
         "font_non_incorporati": 0,
         "rimandi_sbagliati": 0
       },
       "misura": {
-        "pagine": 159,
+        "pagine": 163,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 7.0,
         "schede": 32,
-        "pagine_con_immagine": 0.044,
-        "pagine_con_immagine_decimo": 0.119,
-        "parole": 88724,
-        "quota_parole_ripetute": 0.128
+        "pagine_con_immagine": 0.043,
+        "pagine_con_immagine_decimo": 0.117,
+        "parole": 90874,
+        "quota_parole_ripetute": 0.125
       },
       "in_prova": {
         "sigle_morte": 0,
         "righe_brevi_incomplete": 0,
         "titoli_rovinati": 0,
-        "parole_ripetute": 11340
+        "parole_ripetute": 11387
       }
     },
     "07_il Portale Della Forgia Eterna/homebrew/sessione-notte-e-alba/ARC07-NOTTE-E-ALBA-GIOCATORI.manifest.json": {
@@ -77,25 +77,25 @@
         "testi_sotto_minimo": 0,
         "fuori_margine": 0,
         "immagini_sotto_300dpi": 25,
-        "schede_spezzate": 1,
+        "schede_spezzate": 0,
         "font_non_incorporati": 0,
         "rimandi_sbagliati": 0
       },
       "misura": {
-        "pagine": 126,
+        "pagine": 131,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 7.0,
         "schede": 24,
-        "pagine_con_immagine": 0.024,
-        "pagine_con_immagine_decimo": 0.079,
-        "parole": 70314,
+        "pagine_con_immagine": 0.023,
+        "pagine_con_immagine_decimo": 0.076,
+        "parole": 72468,
         "quota_parole_ripetute": 0.119
       },
       "in_prova": {
         "sigle_morte": 0,
         "righe_brevi_incomplete": 0,
         "titoli_rovinati": 0,
-        "parole_ripetute": 8401
+        "parole_ripetute": 8617
       }
     },
     "07_il Portale Della Forgia Eterna/homebrew/sessione-resurrezione-mille-anni/ARC07-SERATA-GIOCATORI.manifest.json": {
@@ -259,25 +259,25 @@
         "testi_sotto_minimo": 0,
         "fuori_margine": 0,
         "immagini_sotto_300dpi": 83,
-        "schede_spezzate": 3,
+        "schede_spezzate": 1,
         "font_non_incorporati": 0,
         "rimandi_sbagliati": 0
       },
       "misura": {
-        "pagine": 293,
+        "pagine": 294,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 7.0,
         "schede": 41,
         "pagine_con_immagine": 0.024,
         "pagine_con_immagine_decimo": 0.065,
-        "parole": 168342,
+        "parole": 168343,
         "quota_parole_ripetute": 0.112
       },
       "in_prova": {
         "sigle_morte": 0,
         "righe_brevi_incomplete": 0,
         "titoli_rovinati": 2,
-        "parole_ripetute": 18781
+        "parole_ripetute": 18780
       }
     },
     "07_il Portale Della Forgia Eterna/homebrew/volume-mille-anni/ARC07-MILLE-ANNI-VOLUME.manifest.json": {

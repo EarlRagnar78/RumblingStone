@@ -6246,7 +6246,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "copiate",
-    "senza_note": 1104,
+    "senza_note": 1483,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -17795,7 +17795,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "copiate",
-    "senza_note": 1389,
+    "senza_note": 1546,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {},
@@ -18746,7 +18746,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 6034,
+    "senza_note": 6232,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {},
@@ -19213,7 +19213,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 6738,
+    "senza_note": 7063,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/druido Avarthel cr9.htm",
@@ -19467,7 +19467,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 4575,
+    "senza_note": 4577,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/00-underdark-grr6-Bothor-Malvur.pcg",
@@ -21005,7 +21005,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 7691,
+    "senza_note": 7694,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/nano Morlin Coalhewer cr12.htm",
@@ -21278,7 +21278,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 5727,
+    "senza_note": 6172,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/Rurik Gorunn martello di moradin 10 liv.htm",
@@ -21721,7 +21721,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 9078,
+    "senza_note": 9269,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -22615,7 +22615,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "copiate",
-    "senza_note": 8002,
+    "senza_note": 8020,
     "sestine_citate": [],
     "taglia": -2,
     "talenti": {
@@ -23084,7 +23084,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 5970,
+    "senza_note": 6301,
     "sestine_citate": [],
     "taglia": -1,
     "talenti": {},
@@ -25337,7 +25337,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 5520,
+    "senza_note": 5557,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/Draxoksus hobgoblin shamano draconico mezzo-immondo cr7.htm",
@@ -25581,7 +25581,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 6154,
+    "senza_note": 6311,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {},
@@ -27458,7 +27458,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 8312,
+    "senza_note": 8470,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -27544,7 +27544,7 @@
     "mischia": "mazzafrusto pesante +1 +12/+7 (1d10+8/19-20)",
     "pf": 83,
     "provenienza": "a mano",
-    "tipo": "Medium humanoid (orc), orco avanzato, Chierico 9 di Tiamat, CE",
+    "tipo": "Medium humanoid (orc), orco avanzato, Chierico 9 di Tiamat, NE",
     "ts": [
      12,
      7,

@@ -34,7 +34,7 @@ Le scelte nella fortezza e il giro delle pozioni di Kettra sono giocati. Il
 gruppo è in volo, invisibile, con la botte d'olio e i due barilotti, e si
 rigioca lo sgancio. Poi:
 
-1. **Il barile**, capitolo III e cap. VI Scena 6, «Variante — il barile sulla
+1. **Il barile**, cap. III e cap. VI Scena 6, «Variante — il barile sulla
    tenda»: lo sgancio, i round nel fuoco, il corno.
 2. **Dopo il barile**, cap. VI Scene 6 e 9: il ritorno, Vatore fra le tende,
    e le Scene 7-8 solo se qualcuno scende a finire il lavoro.
@@ -111,7 +111,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 > questa regia, anche contro la lista «La vostra serata» del §0 di cap. VI.
 > Per le regole vince il master, e prima ancora vince lo stato della campagna.
 >
-> **Stasera, 2 novembre**. Le scelte nella fortezza
+> **Stasera**. Le scelte nella fortezza
 > e il giro delle pozioni di Kettra sono giocati. Il gruppo è in volo sopra il
 > campo, invisibile, con la botte e i due barilotti, e **si rigioca lo
 > sgancio** sulla tenda di Zog'tar. La serata comincia lì: Atto I, il barile.
@@ -132,7 +132,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 | Atto | Cosa | Master | Tre ore | Intera | Si consegna |
 |---|---|---|---:|---:|---|
 | **0** | Prima di cominciare: dove sono, cosa tengono in mano, le tacche | questa pagina | 5 | 10 | ✉ gli echi, se non li hanno già |
-| **I** | Il barile: lo sgancio e i round nel fuoco | capitolo II per chi c'è e le mappe; capitolo III, la scheda da tavolo, §2-bis e §8; cap. VI Scena 6, «Variante — il barile sulla tenda» | 45 | 60 | — |
+| **I** | Il barile: lo sgancio e i round nel fuoco | cap. II per chi c'è e le mappe; cap. III, la scheda da tavolo, §2-bis e §8; cap. VI Scena 6, «Variante — il barile sulla tenda» | 45 | 60 | — |
 | **II** | Dopo il barile: il ritorno, Vatore, la notte che resta | cap. VI Scene 6 («Il ritorno», «Se il corno suona di notte») e 9; Scene 7-8 solo se scendono | 30 | 45 | ✉ il contratto del Seme, solo se il Seme si gioca al ritorno |
 | — | Pausa | | 10 | 15 | |
 | **III** | L'alba | cap. VI Scene 10 e 11 | 75 | 90 | — |
@@ -147,13 +147,13 @@ costruito, e da lì vengono le mura e il duello.
 **Le immagini e la musica**, nell'ordine in cui servono:
 
 - la mappa **M7-H**, il campo attorno allo spiazzo, e la **M7-C**, lo spiazzo
-  e la tenda, in fondo al capitolo II: dall'alto i PG vedono tutte e due, con
+  e la tenda, in fondo al cap. II: dall'alto i PG vedono tutte e due, con
   i fuochi accesi;
-- Balvar e Zog'tar: i ritratti nel capitolo II, accanto alle loro schede, da
+- Balvar e Zog'tar: i ritratti nel cap. II, accanto alle loro schede, da
   mostrare solo se uno dei due si fa vedere nella luce dell'incendio;
-- Skullcrusher nel cortile, Scena 11: la tavola è nel capitolo II, solo
+- Skullcrusher nel cortile, Scena 11: la tavola è nel cap. II, solo
   quando il drago scende;
-- la **M7-B** per il cortile, cap. VI Appendice D;
+- la **M7-B** per il cortile, la stessa del master (cap. VI Appendice D);
 - *La canzone delle pietre* non si usa stasera: è del Rubino, la serata dopo.
 
 ---
@@ -166,16 +166,16 @@ cap. VI.
 | Minuti | Cosa |
 |---:|---|
 | 10 | questa regia, per intero |
-| 5 | capitolo III, «La scheda da tavolo»: i dieci passi dello sgancio |
-| 5 | capitolo III, §2-bis: la tabella delle quote e chi vede il colmo |
-| 12 | capitolo III, §8: chi li può trovare, l'iniziativa, le rune, le tattiche round per round, chi suona il corno, l'orda |
-| 3 | capitolo III, §9 (i barilotti) e §10 (che cosa cambia) |
+| 5 | cap. III, «La scheda da tavolo»: i dieci passi dello sgancio |
+| 5 | cap. III §2-bis: la tabella delle quote e chi vede il colmo |
+| 12 | cap. III §8: chi li può trovare, l'iniziativa, le rune, le tattiche round per round, chi suona il corno, l'orda |
+| 3 | cap. III §9 (i barilotti) e §10 (che cosa cambia) |
 | 5 | cap. VI Scena 6: «Variante — il barile sulla tenda», «Il ritorno», «Come torna il drago», «Se il corno suona di notte» |
 | 3 | cap. VI Scena 9: «Dopo il barile» e «Se tornano in volo» |
 | 5 | cap. VI Scena 10: la tabella «Dalla notte», con le righe del barile, le tre vie, la tabella dei successi |
 | 9 | cap. VI Scena 11: «Dopo il barile», la scheda d'entrata, il giro round per round, «Chi sceglie», «Chi non vola», la sidebar di scala, l'Appendice A.1-bis e le wyvern in A.6 |
 
-Il Seme (capitolo IV), se non è ancora stato giocato, si fa al ritorno: §3. La
+Il Seme (cap. IV), se non è ancora stato giocato, si fa al ritorno: §3. La
 Forgia ricorda (cap. VII) si apre durante il duello.
 
 **Sul tavolo**: il foglio dell'orologio della notte con le tacche segnate come
@@ -183,21 +183,21 @@ le ha il tavolo, compresa quella del volo; le mappe M7-H e M7-C scoperte,
 perché dall'alto il campo si vede; un d8 e i dadi della quota per la
 deviazione; la scheda di Durik vicino alla giocatrice di Hella. Durik non
 vola: è alla postierla o nel terzo seme della Collana (cap. VI Scena 6). La scheda di Durik nel volume dei giocatori non c'è: lei usa la
-sua copia della sessione del 25, e se non l'ha più le passi il
-capitolo VIII del tuo volume.
+sua copia della sessione del 25, e se non l'ha più le passi la
+scheda del tuo volume, cap. VIII.
 
 **Le schede che contano stasera**, da tenere a portata. Quelle dei cattivi
-sono tutte nel capitolo II, nell'ordine in cui arrivano, con chi è, cosa
+sono tutte nel cap. II, nell'ordine in cui arrivano, con chi è, cosa
 vuole, l'aspetto e il ritratto accanto ai numeri:
 
 | Scheda | Perché |
 |---|---|
-| Skullcrusher Vecchio, capitolo II (il resto della scheda dell'Adulto in cap. VI Appendice A.1) | il duello. Il soffio contro Durik è nella Scena 11, riga 4-bis |
-| Le due wyvern, capitolo II | questo gruppo conta come straripante: ci sono, dal round 2 del duello |
+| Skullcrusher Vecchio, cap. II (il resto della scheda dell'Adulto in cap. VI Appendice A.1) | il duello. Il soffio contro Durik è nella Scena 11, riga 4-bis |
+| Le due wyvern, cap. II | questo gruppo conta come straripante: ci sono, dal round 2 del duello |
 | Durik, cap. VIII | +50% di danni dall'acido: il soffio lo prende in pieno. Con la runa prima il +50%, poi −20 (cap. VI §1, Hella). Senza runa il soffio gli fa in media più di 50: Tempra CD 15 o torna polvere, e la carica rimasta dopo i Treant dell'alba lo riporta per un'ora (Scena 11, riga 4-bis) |
-| Il capitolo III, la scheda da tavolo e il §8 | lo sgancio e i round nel fuoco: è lo scontro con cui si apre |
-| Zog'tar, le quattro guardie, il sacerdote e Grask, capitolo II | i round nel fuoco, o le mura se Zog'tar è vivo all'alba |
-| Balvar, capitolo II | il *dissolvi* al round 4. Dopo il barile non tratta più da solo, ma chi gli parla per primo del nipote Hald lo trova ancora aperto (capitolo III, §10) |
+| cap. III, la scheda da tavolo e il §8 | lo sgancio e i round nel fuoco: è lo scontro con cui si apre |
+| Zog'tar, le quattro guardie, il sacerdote e Grask, cap. II | i round nel fuoco, o le mura se Zog'tar è vivo all'alba |
+| Balvar, cap. II | il *dissolvi* al round 4. Dopo il barile non tratta più da solo, ma chi gli parla per primo del nipote Hald lo trova ancora aperto (cap. III §10) |
 | La Forgia ricorda le ferite, cap. VII | si segnano le ferite durante il duello, non dopo |
 
 **Gli echi.** Se il tavolo li ha già avuti in fortezza, salta questo
@@ -217,10 +217,10 @@ della sessione 4 non lo dice.
 Tre cose da fissare prima di cominciare, se non le hai già fissate nelle
 serate passate, perché il testo non le decide:
 
-- **il Seme, capitolo IV**, se si gioca al ritorno: il tono dell'Anello (A o B) lo scegli adesso;
+- **il Seme, cap. IV**, se si gioca al ritorno: il tono dell'Anello (A o B) lo scegli adesso;
   i Bracieri, se Tordek li interroga, rispondono con una frase sola e mai
   sul Seme. Il testo copiato nel
-  capitolo IV dice ancora «non commentano» e «in base a come Artemis ha
+  cap. IV dice ancora «non commentano» e «in base a come Artemis ha
   gestito»: valgono queste due righe;
 - **il dono a metà di Hella** (cap. VI §1): dipende dai successi dello Step 5
   del rito, e il log del 25 dice solo che i tre Doni sono stati dati tutti.
@@ -269,7 +269,7 @@ postierla. Il volo ha già la sua tacca.
   *invisibilità* restano (il volo dura 50 round, le invisibilità comprate 30);
 - **la quota** da cui sganciano. La sceglie il tavolo, e prima di sceglierla
   il tavolo può sapere solo quello che vede: dì quali fuochi illuminano la
-  tenda e chi di loro vede il colmo a quella quota (capitolo III, §2-bis). Da
+  tenda e chi di loro vede il colmo a quella quota (cap. III §2-bis). Da
   48 m la botte fa 15d6 e devia poco; più in basso devia meno, fa meno male, e
   dal round dopo i PG sono a portata del campo;
 - **le tacche**: lo stato di Grask si fissa adesso. Sveglio se l'ultima tacca
@@ -278,17 +278,17 @@ postierla. Il volo ha già la sua tacca.
 **1 · Lo sgancio.** L'iniziativa si tira quando decidono di sganciare. Il round
 di sorpresa è solo loro, e lasciar cadere è un'azione gratuita: botte e
 barilotti possono andare giù nello stesso round, e nessuno diventa visibile.
-Poi la scheda da tavolo del capitolo III, passo per passo: dove cade (d8 e il
+Poi la scheda da tavolo di cap. III, passo per passo: dove cade (d8 e il
 dado della quota), che cosa prende, le fiale, l'olio, chi brucia. Tira i
 danni ad alta voce e descrivi la tenda che si accende: la luce dell'incendio
 è intensa entro 12 m e fioca fino a 24 m (B24).
 
-**Se chiedono dove far cadere i barilotti**, la risposta è nel §9 del capitolo
-III: su Grask, prima che suoni. È l'unico modo di tenere lontano il drago
+**Se chiedono dove far cadere i barilotti**, la risposta è in
+cap. III §9: su Grask, prima che suoni. È l'unico modo di tenere lontano il drago
 senza scendere. Dillo solo se lo chiedono.
 
 **2 · I round nel fuoco.** Segui la tabella «Le tattiche, round per round»
-(capitolo III, §8) per Zog'tar, le guardie, il sacerdote, Balvar e Grask, e
+(cap. III §8) per Zog'tar, le guardie, il sacerdote, Balvar e Grask, e
 la tabella «L'orda» per il campo. Le quattro cose che possono far male a chi
 è in alto, e che hanno un nome:
 
@@ -314,7 +314,7 @@ o si muore, e le palle di fuoco nate insieme contano come un attacco solo
 quello che vedono da lassù: chi è uscito dal fuoco, chi no, se il corno ha
 suonato. Poi segna nel registro (§6) chi è morto, il corno e la quota.
 
-**I PE per la trovata** sono nel §13 del capitolo III (B15): la fascia di
+**I PE per la trovata** sono nel §13 di cap. III (B15): la fascia di
 mezzo, o quella alta se il corno non suona. Si danno a fine serata, insieme a
 quelli dei nemici caduti davvero.
 
@@ -335,16 +335,16 @@ notte»: chi riparte in volo subito è dentro le mura prima del drago.
 
 **Se scendono a finire il lavoro** (cap. VI Scene 7 e 8, mappa M7-C,
 Appendice A.2). La Scena 8 si gioca com'è, ma con la tenda in fiamme o
-crollata, il campo sveglio e i rinforzi della tabella «L'orda» del capitolo
-III già in strada. Balvar, se è vivo, non tratta più da solo: è stato
-attaccato (capitolo III, §10). Resta la lastra d'ardesia col nome di Hald: chi
+crollata, il campo sveglio e i rinforzi della tabella «L'orda»
+(cap. III §8) già in strada. Balvar, se è vivo, non tratta più da solo: è stato
+attaccato (cap. III §10). Resta la lastra d'ardesia col nome di Hald: chi
 gli parla del ragazzo per primo lo trova ancora aperto. La Cintura di Tordek qui funziona. Il danno massiccio è
 attivo.
 
 **Il Seme**, se non è stato giocato: si fa al ritorno, con le tacche che
 restano prima dell'8 (riga «≤ 6» della tabella d'uscita), oppure si rinvia al
 1372. Costa **1 tacca**. Il contratto ✉ si consegna solo dopo il box dell'ora
-della pergamena (capitolo IV).
+della pergamena (cap. IV).
 
 **Scena 9, Vatore** (cap. VI Scena 9). Dieci minuti, al ritorno. L'Anello di
 Artemis lo sente prima di chiunque: dagli lo spotlight. Se tornano in volo e
@@ -453,7 +453,7 @@ gruppo**.
 | ☐ | Chi è morto nel fuoco: Zog'tar · Balvar · il sacerdote · Grask · le guardie (quante) | |
 | ☐ | Zog'tar tirato fuori dal fuoco davanti ai suoi? Vivo all'alba? | |
 | ☐ | Il giavellotto con la luce e il *dissolvi* di Balvar: chi è stato visto, chi è caduto | |
-| ☐ | I PE per la trovata (capitolo III, §13): fascia | |
+| ☐ | I PE per la trovata (cap. III §13): fascia | |
 | ☐ | Il Seme, se giocato al ritorno: identificato · estirpato · tenuto · dato · firmato (e da chi) | |
 | ☐ | Balvar, se è sceso qualcuno: ucciso · ignorato · «dite che c'ero»? Hald l'ha visto? | |
 | ☐ | Il corno: suonato (da chi, a che round) · rubato · rimasto nella custodia | |
@@ -533,7 +533,7 @@ La tenda della Scena 8: le quattro guardie gli tengono la CA, il sacerdote sta n
 
 **STATISTICHE**
 ___
-For 30 (36 in Ira), Des 20, Cos 24 (30 in Ira), Int 16, Sag 16, Car 18 · BAB +15; Lotta +29 (+32 in Ira) · **Talenti** (7) Attacco Poderoso, Spingere Migliorato, Colpo Terrificante (talento da mostro, SRD), Ira Extra, Iniziativa Migliorata, Volontà di Ferro, Arma Focalizzata (ascia) · **Abilità** Ascoltare +11, Osservare +3, Intimidire +14 (8 gradi in Ascoltare, 10 in Intimidire, nessuno in Osservare) · **Altro equipaggiamento** armatura completa di mithral +2, ascia a due mani +1, 3 giavellotti (tutto di taglia Grande); Occhio di Ossidiana (sotto)  
+For 30 (36 in Ira), Des 20, Cos 24 (30 in Ira), Int 16, Sag 16, Car 18 · BAB +15; Lotta +29 (+32 in Ira) · **Talenti** (7) Attacco Poderoso, Spingere Migliorato, Colpo Terrificante (talento da mostro, SRD), Ira Extra, Iniziativa Migliorata, Volontà di Ferro, Arma Focalizzata (ascia) · **Abilità** Ascoltare +11, Osservare +3, Intimidire +14 (8 gradi in Ascoltare, 10 in Intimidire, nessuno in Osservare) · **Altro equipaggiamento** armatura completa di mithral +2, ascia a due mani +1, 3 giavellotti (tutto di taglia Grande), 2 pozioni di *cura ferite gravi* (LI 5, 3d8+5, 750 mo l'una); Occhio di Ossidiana (sotto)  
 
 **CAPACITÀ SPECIALI**
 ___
@@ -583,7 +583,7 @@ Hobgoblin secco, dagli occhi gialli, la mano sinistra nera di fuliggine fino
 al polso, un bastone ferrato con appese ossa di dita. Canta invece di
 parlare, sempre la stessa cantilena, e la interrompe solo per dare ordini.
 Dorme sulla sua stuoia a N14. Dopo il barile è lui che mette la *luce* sul
-giavellotto, al round 3 (capitolo III, §8). Ritratto: nessuno.
+giavellotto, al round 3 (cap. III §8). Ritratto: nessuno.
 
 <!-- include: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#sacerdote-scheda -->
 {{monster,frame
@@ -621,7 +621,7 @@ Ritratto: nessuno.
 
 **Numeri** (combattente 1 dell'SRD): **CA 15** · **pf 6** · Riflessi +1 ·
 Ascoltare e Osservare +2, −10 ad Ascoltare finché dorme. Dopo il barile suona
-entro **1d4 round** dal boato, se è vivo (capitolo III, §8).
+entro **1d4 round** dal boato, se è vivo (cap. III §8).
 
 ## Balvar Fuocospento, il runaio esiliato
 
@@ -1489,7 +1489,7 @@ Il drago arriva 70 round dopo il primo suono, chiunque abbia suonato.
 
 | Chi | Che cosa fa fino all'alba | All'alba |
 |---|---|---|
-| **Zog'tar** | brucia di rabbia, ma non perde la testa: dorme al buio, fuori dalla luce, e ogni ora in un posto diverso. Fa spegnere i fuochi dello spiazzo e mette due guardie a guardare il cielo. Manda le lance a cercare per il campo, perché pensa a un traditore prima che a dei nani in volo | guida l'assalto (§10), con il segno delle ustioni addosso. Ai suoi dice che il fuoco era un segno: chi l'ha attraversato vince |
+| **Zog'tar** | brucia di rabbia, ma non perde la testa: dorme al buio, fuori dalla luce, e ogni ora in un posto diverso. Fa spegnere i fuochi dello spiazzo e mette due guardie a guardare il cielo. Manda le lance a cercare per il campo, perché pensa a un traditore prima che a dei nani in volo. Prima di dormire beve le sue due pozioni di *cura ferite gravi* (cap. VI, A.2) | guida l'assalto (§10) con i pf pieni, 283, e il segno delle ustioni addosso. Ai suoi dice che il fuoco era un segno: chi l'ha attraversato vince |
 | **Balvar** | è stato attaccato: non tratta più da solo (§10). Incide di nuovo i glifi scattati, rifà la custodia, e ricorda la botte di Hammerfist | resta al campo, nella tenda o in quello che ne resta, come nel canone (cap. VI, «Se l'alba arriva prima della tenda» e Scena 10). Ha capito che i nani vengono dall'alto, e lo dice al drago attraverso la Catena |
 | **Il sacerdote** | spegne e fascia chi brucia: cure non ne ha, perché la sua scheda (cap. VI, Appendice A.2) non ne prepara. Prepara *vedere invisibilità* e *luce* per la notte dopo | resta al campo: sulla breccia Zog'tar sale senza di lui e senza Balvar (cap. VI, Scena 10) |
 | **Le guardie** | stanno attorno al generale, con gli spadoni in pugno, al buio. Chi ha visto morire i compagni nel fuoco odia i nani in un modo nuovo | combattono con Zog'tar sulla breccia |
@@ -1767,8 +1767,8 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 > nuda firma, l'anticipo arriva subito, e filo, voce e riscossione si
 > accendono al ritorno nel 1372.
 >
-> **I rimandi del testo copiato.** «Echo Ledger (§11)» è, in questo booklet,
-> il cap. VI §7; «il #4» è il cap. VI, e Vatore è alla sua Scena 9.
+> **I rimandi del testo copiato.** «Echo Ledger (§11)» è il §7 di cap. VI;
+> «il #4» è cap. VI, e Vatore è alla sua Scena 9 (cap. VI Scena 9).
 >
 > **Dove eravamo**. Il Seme nessuno l'ha toccato a
 > mani nude: è nello zaino di Tordek dal 31 luglio. Le dieci pozioni le
@@ -2397,9 +2397,9 @@ la scena riesce, altrimenti riesce lo stesso ma con una **complicazione**. Ogni
 scena registra un **esito** (► Esito), e gli esiti alimentano il carry-over B4
 verso Fauci di Palude (§7).
 
-> 🎚️ **Se hai poco tempo**, ogni scena lunga ha la sua **versione veloce in
-> Appendice C**: è la stessa scena a montaggio, in 10-15 minuti. Si possono
-> mescolare, scena per scena.
+> 🎚️ **Se hai poco tempo**, ogni scena lunga ha la sua **versione veloce**,
+> C.1 per l'Atto I, C.2 per la tenda, C.3 per il duello: è la stessa scena a
+> montaggio, in 10-15 minuti. Si possono mescolare, scena per scena.
 
 **Chi c'è, nell'ordine in cui entra.** Durin Rocciadura (Scena 2) · Re Thorek I
 e Thorgrim Barbadiferro (Scena 4) · Mastro Costruttore Zeth (Scena 5) · Balvar
@@ -3735,8 +3735,11 @@ per questo conto il pesatore non ha trattenuto niente.
 della lista del chierico e del paladino, non del druido: la legge Artemis con
 Usare Oggetti Magici, CD 27 (20 più il 7° livello dell'incantatore, come il
 *silenzio* a CD 23 qui sopra). Le *cure* e *neutralizza veleno* le legge Hella
-se sono sulla lista del druido, che il mirror SRD del repo non riporta intera
-(da verificare); altrimenti Artemis, a CD 25 le *gravi* e a CD 27 le altre.
+senza prove di Usare Oggetti Magici: sono nella lista del druido (SRD 3.5:
+*cura ferite gravi* 4°, *cura ferite critiche* 5°, *neutralizza veleno* 3°)
+. Le serve solo una prova di livello
+dell'incantatore (CD pari al livello della pergamena più 1) se la pergamena è di
+livello più alto del suo (SRD 3.5, «Scrolls»).
 
 L'ascia e lo scudo **non sono stati fatti stanotte**: erano già nella forgia,
 pezzi rari che il capo fabbro teneva da parte. Tornano nel 1372 con i PG, che li
@@ -5290,7 +5293,7 @@ tenda: porta addosso la notte. Ha INT 16, ed è arrogante, non stupido.
 | Che cosa è successo di notte | Da dove lo sa | Che cosa cambia lassù |
 |---|---|---|
 | Il barile | il boato e la botte di Hammerfist nel fuoco (BARILE §8) | sa che i nani volano e vengono dall'alto («Dall'alto. Hanno ali.», B21). Le guardie in fondo alla scala guardano in alto e tengono i giavellotti per chi vola |
-| È ustionato | il fuoco della tenda | parte da **264 pf** invece di 283: 249 dopo il fuoco (mediana, BARILE §7) più 15 di riposo (SRD). Il sacerdote non ha cure preparate (A.2) e non lo cura |
+| È ustionato | il fuoco della tenda | parte da **283 pf**, pieni: 249 dopo il fuoco (mediana, BARILE §7), più 15 di riposo (SRD), più le due pozioni di *cura ferite gravi* che beve di notte (in media 37, A.2). Il sacerdote non ha cure preparate (A.2) e non lo cura. Gli restano i segni delle ustioni |
 | Le guardie sono bruciate | il fuoco della tenda | 20-23 pf l'una, più 8 di riposo: chi scende alle spalle le trova a metà |
 | Thorik non si piega | lo vede al round 1: la Presenza Minacciosa gli scivola addosso (Mente Vuota della Corona) | sa chi deve togliere dalla linea per primo |
 
@@ -5320,8 +5323,9 @@ Sale lo stesso: ai suoi ha detto che chi ha attraversato il fuoco vince (BARILE
 - **Quanto dura, misurato** (20.000 prove, PG della carta del 05/11, bonus
   d'attacco dei nani stimati). Stretto
   a CA 20, con Artemis e Hella che lo colpiscono dall'alto, Zog'tar muore
-  **quasi sempre, in circa 3 round**. Con «separa e finisce» un PG muore in una
-  prova su quattro (28%), e ai PG resta circa il 76% dei pf per il drago; con il
+  **quasi sempre, in circa 3 round**. Con «separa e finisce» e i 283 pf delle
+  due pozioni un PG muore in una prova su tre (35%); con 264 pf ai PG
+  restava circa il 76% dei pf per il drago; con il
   solo Colpo su chi ha davanti era l'11% e l'81%. **Se combatte fuori dal
   camminamento**, dove non si stringe, le morti salgono al 69%: sulla breccia
   il generale è forte quanto lo spazio che ha.
@@ -6155,7 +6159,7 @@ premi di storia, come sempre.
 | Scena 12, Momento 5 (dono del re, di persona) | **Torque di Thorek I**, sempre, anche senza fiducia piena: è il dono del re a chi porta la Corona — monile nanico antico (+1 sacro ai TS vs paura; e nel 1372 è una **reliquia storica**: i nani si scoprono il capo davanti a chi lo porta) | ~2.000 mo + valore storico |
 | Scena 9 (se derubano Vatore) | **Sigillo di Ossidiana** — artefatto minore di Shar (Manto di Notte + Furto della Notte, divora anime; contrasta l'Anello di Artemis — Appendice B) | speciale (gancio ARC-09) |
 | Scena 10 (bottino dell'orda antica, se sabotano gli arieti) | armi orchesche primitive (poco valore). Il **corno da guerra di ferro nero** che chiama il drago è incatenato al polso di Grask, alla tenda: si prende solo lì (Scena 6, variante dall'alto; 300 mo, e nel 1372 una reliquia) | ~300 mo |
-| Scena 8 (la tenda, con Zog'tar e i suoi a terra) | **Zog'tar**: armatura completa di mithral +2 Grande (16.000: 1.500 × 2 per la taglia, 9.000 di mithral, 4.000 di +2; si vende, non si indossa) · ascia a due mani +1 Grande (2.340). **Balvar**, se è morto: armatura completa di mithral +2 Media, che a un nano va bene (14.500) · anello di protezione +2 (8.000) · martello da guerra runico +1 (2.312) · la polvere di diamante dei glifi di una sera (400). **Le quattro guardie**: armatura completa, spadone e giavellotti (≈ 1.550 l'una). L'Occhio di Ossidiana resta nell'orbita: è maledetto e non si vende | ≈ 49.750 mo di listino, ≈ 24.500 senza Balvar; alla vendita la metà (SRD). Quanto se ne porta via dipende dal campo: qui sotto |
+| Scena 8 (la tenda, con Zog'tar e i suoi a terra) | **Zog'tar**: armatura completa di mithral +2 Grande (16.000: 1.500 × 2 per la taglia, 9.000 di mithral, 4.000 di +2; si vende, non si indossa) · ascia a due mani +1 Grande (2.340) · 2 pozioni di *cura ferite gravi* (750 l'una), che nella tenda non ha ancora bevuto: le beve solo la notte dopo il barile, e chi lo spoglia all'alba non le trova. **Balvar**, se è morto: armatura completa di mithral +2 Media, che a un nano va bene (14.500) · anello di protezione +2 (8.000) · martello da guerra runico +1 (2.312) · la polvere di diamante dei glifi di una sera (400). **Le quattro guardie**: armatura completa, spadone e giavellotti (≈ 1.550 l'una). L'Occhio di Ossidiana resta nell'orbita: è maledetto e non si vende | ≈ 49.750 mo di listino, ≈ 24.500 senza Balvar; alla vendita la metà (SRD). Quanto se ne porta via dipende dal campo: qui sotto |
 | Scena 11 (resti di Skullcrusher, se UCCISO) | **scaglia del Primo Nero** — trofeo: materiale per **1 oggetto ad acido** (arma/armatura +1d6 acido, o focus per incantesimi acidi; a discrezione del fabbro), e prova che la profezia è compiuta | ~1.500 mo |
 
 **Il bottino della tenda e il tempo**. Il
@@ -6404,7 +6408,7 @@ La tenda della Scena 8: le quattro guardie gli tengono la CA, il sacerdote sta n
 
 **STATISTICHE**
 ___
-For 30 (36 in Ira), Des 20, Cos 24 (30 in Ira), Int 16, Sag 16, Car 18 · BAB +15; Lotta +29 (+32 in Ira) · **Talenti** (7) Attacco Poderoso, Spingere Migliorato, Colpo Terrificante (talento da mostro, SRD), Ira Extra, Iniziativa Migliorata, Volontà di Ferro, Arma Focalizzata (ascia) · **Abilità** Ascoltare +11, Osservare +3, Intimidire +14 (8 gradi in Ascoltare, 10 in Intimidire, nessuno in Osservare) · **Altro equipaggiamento** armatura completa di mithral +2, ascia a due mani +1, 3 giavellotti (tutto di taglia Grande); Occhio di Ossidiana (sotto)  
+For 30 (36 in Ira), Des 20, Cos 24 (30 in Ira), Int 16, Sag 16, Car 18 · BAB +15; Lotta +29 (+32 in Ira) · **Talenti** (7) Attacco Poderoso, Spingere Migliorato, Colpo Terrificante (talento da mostro, SRD), Ira Extra, Iniziativa Migliorata, Volontà di Ferro, Arma Focalizzata (ascia) · **Abilità** Ascoltare +11, Osservare +3, Intimidire +14 (8 gradi in Ascoltare, 10 in Intimidire, nessuno in Osservare) · **Altro equipaggiamento** armatura completa di mithral +2, ascia a due mani +1, 3 giavellotti (tutto di taglia Grande), 2 pozioni di *cura ferite gravi* (LI 5, 3d8+5, 750 mo l'una); Occhio di Ossidiana (sotto)  
 
 **CAPACITÀ SPECIALI**
 ___

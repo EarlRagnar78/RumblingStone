@@ -500,7 +500,9 @@ Caduta Dana, il colpo che ucciderebbe il re lo prende il primo dei dieci capi
 che sale sull'altare, **Hrolf Spaccascudi** `[CANONE — DM 2026-11-15]`, e gli hobgoblin passano a tirare a chi è sull'altare.
 Nel ramo luminoso succede di rado, perché i tiri al re cominciano al round 6
 `[CANONE — DM 2026-10-19, giro 4 DEF-5 n. 6]`.
-<!-- storico: fino al 2026-11-15 i dieci capi erano senza nome; il DM ha scelto sulla card del 15/11 di nominarne due con un gesto (Hrolf Spaccascudi prende il colpo al posto del re, Yrsa Portastendardo tiene lo stendardo). Quattro capi sono gli Eroi di Hammerfist nella regia breve, gli altri quattro restano senza nome. Se Hrolf sopravvive al colpo non è deciso -->
+<!-- storico -->
+<!-- fino al 2026-11-15 i dieci capi erano senza nome; il DM ha scelto sulla card del 15/11 di nominarne due con un gesto (Hrolf Spaccascudi prende il colpo al posto del re, Yrsa Portastendardo tiene lo stendardo). Quattro capi sono gli Eroi di Hammerfist nella regia breve, gli altri quattro restano senza nome. Se Hrolf sopravvive al colpo non è deciso -->
+<!-- /storico -->
 
 #### Il round di sorpresa, un gesto a testa
 
@@ -518,7 +520,7 @@ si ricorda (§7). Le statistiche di Treant e Durik sono in Appendice A.
 | **Hella** · radici intorno al re | le radici che le crescono intorno sono sue: chiuse sul re, copertura totale per un round `[CANONE — DM 2026-10-12, D77]` | |
 | **Hella** · radici verso la porta | fanno come *intralciare*, ma su un'area di 6 m di raggio (Riflessi CD 15), per un round soltanto `[CANONE — DM 2026-10-12, D77]`. Nel round di sorpresa prendono gli orchi in fuga, non gli hobgoblin, che entrano dopo | chi resta intralciato non può fuggire: si rannicchia come ogni creatura in panico messa all'angolo (SRD) e si arrende |
 | **Hella** · lo *Scudo del Custode* | solo se al rito Thorik ha donato la deflessione: 1/giorno, immediata, prende dimezzato il danno di un alleato entro 9 m, e Thorik è accelerato 3 round verso chi lei ha protetto | |
-| **Hella** · i Treant di Adamantio | si chiamano con la Collana, uno per seme ancora carico (i semi tornano all'alba): un'azione standard, e arrivano alla fine del round. Durano 1 ora (`DEF-3` Appendice A.2; qui Appendice A.3) | chiamarli **tutti e due insieme** spegne per un mese l'Evocazione dei Guardiani, il potere della Collana che li chiama (niente Treant, e Durik torna solo all'alba): va detto alla giocatrice prima che scelga. Se al −1000 li ha già chiamati insieme di notte, è spenta; chiamarli insieme all'alba non la spegne (`DEF-4`). L'alba del 1372 non è ancora arrivata: i semi spesi al −1000 sono ancora spesi. I Treant chiamati all'alba del 372, se la loro ora non è finita, restano al −1000 e svaniscono a fine durata; il seme resta speso fino all'alba del 1372 (D91). Quelli chiamati qui compaiono ai piedi dell'altare, dentro lo schieramento `[CANONE — DM 2026-10-19, giro 4 DEF-5 n. 4]` |
+| **Hella** · i Treant di Adamantio | si chiamano con la Collana, uno per seme ancora carico (i semi tornano all'alba): un'azione standard, e arrivano alla fine del round. Durano 1 ora (`DEF-3` Appendice A.2; qui Appendice A.3) | chiamarli **tutti e due insieme** spegne per un mese l'Evocazione dei Guardiani, il potere della Collana che li chiama (niente Treant, e Durik torna solo all'alba): va detto alla giocatrice prima che scelga. Se al −1000 li ha già chiamati insieme di notte, è spenta; chiamarli insieme all'alba non la spegne (`DEF-4`). L'alba del 1372 non è ancora arrivata: i semi spesi al −1000 sono ancora spesi. I Treant chiamati all'alba del 372, se la loro ora non è finita, restano al −1000 e svaniscono a fine durata; il seme resta speso fino all'alba del 1372<!-- apparato --> (D91)<!-- /apparato -->. Quelli chiamati qui compaiono ai piedi dell'altare, dentro lo schieramento `[CANONE — DM 2026-10-19, giro 4 DEF-5 n. 4]` |
 | **Hella** · Durik | arriva con lei, perché è legato alla Collana (`DEF-4`): sta accanto a Hella e va dove lei lo manda (Appendice A.4) | se il drago l'ha distrutto nel duello, Hella lo richiama col seme III, se è carico e l'Evocazione non è spenta: torna subito, per un'ora (`DEF-3` §7). Altrimenti torna all'alba |
 
 **Le radici di Hella si usano una volta per scena** `[CANONE — DM 2026-10-18, G2-33]`,
@@ -936,9 +938,9 @@ racconta l'arrivo nel Cuore della Montagna, cioè la Scena 2, con uno stato del
 gruppo superato. Finché il raccordo non è scritto, il DM apre la Sessione 4
 della Guida (l'Incontro 4A, la battaglia aerea contro Fauci) dall'uscita del portale, subito, e con
 lo stato del §0-bis `[CANONE — DM 2026-10-19, giro 4 DEF-5 n. 5]`. Il raccordo va scritto. Il ponte d'arrivo
-dell'ARC-08 è allineato allo stato in uscita dal 2026-10-31: −4 DES / +2 COS /
+dell'ARC-08 è allineato allo stato in uscita<!-- storico --> dal 2026-10-31<!-- /storico -->: −4 DES / +2 COS /
 +4 CAR, i tre Doni, Durik sempre presente, il Cuore di Moradin che non aggancia
-gli spiriti (D32), e il §3.4 che riprende dall'Incontro 4A.
+gli spiriti<!-- apparato --> (D32)<!-- /apparato -->, e il §3.4 che riprende dall'Incontro 4A.
 
 ### Handout giocatore
 1. **«Lo Stato dei Custodi»**, da consegnare a chiusura d'arco, uno per
@@ -1074,8 +1076,8 @@ ginocchio sul re, sull'altare.
 > Caverna-cattedrale **100 m × 80 m × 40 m** di altezza.
 > ⚠️ **Scala 3 m/quadretto**: è la deviazione A4 dalla convenzione 1,5 m. La
 > griglia originale è disegnata così, e non è stata ridisegnata per non
-> alterare posizioni e portate già usate nel testo. Dal 2026-10-22 è
-> dichiarata vista d'insieme (`@tipo strategica`): le miniature si muovono
+> alterare posizioni e portate già usate nel testo. Ora è
+> dichiarata vista d'insieme<!-- storico --> (dal 2026-10-22)<!-- /storico --> (`@tipo strategica`): le miniature si muovono
 > sulla carta **CM-2**, qui sotto, a 1,5 m. Non mischiare quadretti di mappe a
 > scale diverse.
 

@@ -84,6 +84,8 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-19 | STANDARD-STAMPA | ADR-0145 (proposta): l'ordine dei capitoli del booklet della serata si misura (… | 🟡 serata da 15 difetti di struttura a 3 (131 → 134 pp; un blocco fuori posto conta uno); rimandi con pagina da 101 a 115 su 124, tutti giusti, titolo assente d… |
+| 2026-11-19 | STANDARD-STAMPA | ADR-0144: due stampe per arco e rimandi con il numero di pagina. Nuovo volume d… | ✅ `misura_rimandi.py`: serata da 0/107 a 100/108 rimandi con pagina, tutti giusti, titoli non trovati da 8 a 1; volume d'arco 236/242 con la pagina giusta. Ser… |
 | 2026-11-19 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, rilettura completa dei lotti 1-4 contro le schede: d… | ✅ contraddizioni fra la tattica e la sua scheda nei lotti 1-4: da 2 a 0; Tordek convinto da Xal'thor dal 35% al 27% dei duelli (20.000 prove, seme 1372), mai m… |
 | 2026-11-19 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, Palio: i sicari di Sonjak possono puntare il cavallo… | ✅ file del Palio che danno ai sicari un obiettivo diverso dagli altri: da 1 (STATBLOCCHI contro INTEGRAZIONE r.149 e GIORNO2 r.136-137) a 0; nessun numero di s… |
 | 2026-11-19 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: due scelte del DM sulle card del 19/11 chiudono il ric… | ✅ differenze fra blocco e prosa nelle dieci schede del corredo: 2 → 0 (danno a distanza della Drow Assassina, tabella di Varis); `verifica_scheda` 0 violazioni… |
@@ -94,13 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-19 | STATO-E-ORDINE | ADR-0141: le regole di AGENTS.md arrivano a Claude con i file a cui servono (ca… | ✅ `--misura`: script e piani −45% di caratteri rispetto ad AGENTS.md intero, master d'arco −16%, skill −22%, configurazione −12%; compito vero con `claude -p`… |
 | 2026-11-19 | STATO-E-ORDINE | ADR-0140, correzione: riaccesi per RumblingStone i nove plugin di metodo di svi… | ✅ `claude -p` dalla cartella del clone, main 983791d0 contro ramo: plugin da 7 a 16, skill da 73 a 115, server MCP da 2 a 12 (i 10 nuovi sono di `engineering`:… |
 | 2026-11-19 | STATO-E-ORDINE | ADR-0140 accettata: i plugin dell'account che il repo non ha mai usato sono spe… | ✅ `claude -p` dalla cartella del clone con lo script, main contro ramo: plugin da 36 a 7, server MCP da 102 a 2 (falliti all'avvio da 95 a 0), skill da 257 a 7… |
-| 2026-11-19 | STATO-E-ORDINE | ADR-0140 (proposta), la configurazione Claude del repo arriva anche nei thread… | 🟡 misura con `claude -p` 2.1.328 dalla cartella del clone, main contro ramo: `rumblingstone-tools` da assente a connesso (135 tool), hook da fermo a girato, sk… |
-| 2026-11-19 | STATO-E-ORDINE | ADR-0139: la memoria corta ha un tetto di 12 KB misurato da… | indice riscritto a 11.255 byte senza perdere fatti (18 PR citate, tutte con voce; righe senza posto in coda); 4 test nuovi, 18 su 18 verdi; il controllo non pa… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 204 voci, l'ultima MS-0204 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 206 voci, l'ultima MS-0206 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

@@ -193,9 +193,9 @@ la scena riesce, altrimenti riesce lo stesso ma con una **complicazione**. Ogni
 scena registra un **esito** (► Esito), e gli esiti alimentano il carry-over B4
 verso Fauci di Palude (§7).
 
-> 🎚️ **Se hai poco tempo**, ogni scena lunga ha la sua **versione veloce in
-> Appendice C**: è la stessa scena a montaggio, in 10-15 minuti. Si possono
-> mescolare, scena per scena.
+> 🎚️ **Se hai poco tempo**, ogni scena lunga ha la sua **versione veloce**,
+> C.1 per l'Atto I, C.2 per la tenda, C.3 per il duello: è la stessa scena a
+> montaggio, in 10-15 minuti. Si possono mescolare, scena per scena.
 
 **Chi c'è, nell'ordine in cui entra.** Durin Rocciadura (Scena 2) · Re Thorek I
 e Thorgrim Barbadiferro (Scena 4) · Mastro Costruttore Zeth (Scena 5) · Balvar
@@ -1531,8 +1531,11 @@ per questo conto il pesatore non ha trattenuto niente.
 della lista del chierico e del paladino, non del druido: la legge Artemis con
 Usare Oggetti Magici, CD 27 (20 più il 7° livello dell'incantatore, come il
 *silenzio* a CD 23 qui sopra). Le *cure* e *neutralizza veleno* le legge Hella
-se sono sulla lista del druido, che il mirror SRD del repo non riporta intera
-(da verificare); altrimenti Artemis, a CD 25 le *gravi* e a CD 27 le altre.
+senza prove di Usare Oggetti Magici: sono nella lista del druido (SRD 3.5:
+*cura ferite gravi* 4°, *cura ferite critiche* 5°, *neutralizza veleno* 3°)
+. Le serve solo una prova di livello
+dell'incantatore (CD pari al livello della pergamena più 1) se la pergamena è di
+livello più alto del suo (SRD 3.5, «Scrolls»).
 
 L'ascia e lo scudo **non sono stati fatti stanotte**: erano già nella forgia,
 pezzi rari che il capo fabbro teneva da parte. Tornano nel 1372 con i PG, che li
@@ -3086,7 +3089,7 @@ tenda: porta addosso la notte. Ha INT 16, ed è arrogante, non stupido.
 | Che cosa è successo di notte | Da dove lo sa | Che cosa cambia lassù |
 |---|---|---|
 | Il barile | il boato e la botte di Hammerfist nel fuoco (BARILE §8) | sa che i nani volano e vengono dall'alto («Dall'alto. Hanno ali.», B21). Le guardie in fondo alla scala guardano in alto e tengono i giavellotti per chi vola |
-| È ustionato | il fuoco della tenda | parte da **264 pf** invece di 283: 249 dopo il fuoco (mediana, BARILE §7) più 15 di riposo (SRD). Il sacerdote non ha cure preparate (A.2) e non lo cura |
+| È ustionato | il fuoco della tenda | parte da **283 pf**, pieni: 249 dopo il fuoco (mediana, BARILE §7), più 15 di riposo (SRD), più le due pozioni di *cura ferite gravi* che beve di notte (in media 37, A.2). Il sacerdote non ha cure preparate (A.2) e non lo cura. Gli restano i segni delle ustioni |
 | Le guardie sono bruciate | il fuoco della tenda | 20-23 pf l'una, più 8 di riposo: chi scende alle spalle le trova a metà |
 | Thorik non si piega | lo vede al round 1: la Presenza Minacciosa gli scivola addosso (Mente Vuota della Corona) | sa chi deve togliere dalla linea per primo |
 
@@ -3116,8 +3119,9 @@ Sale lo stesso: ai suoi ha detto che chi ha attraversato il fuoco vince (BARILE
 - **Quanto dura, misurato** (20.000 prove, PG della carta del 05/11, bonus
   d'attacco dei nani stimati). Stretto
   a CA 20, con Artemis e Hella che lo colpiscono dall'alto, Zog'tar muore
-  **quasi sempre, in circa 3 round**. Con «separa e finisce» un PG muore in una
-  prova su quattro (28%), e ai PG resta circa il 76% dei pf per il drago; con il
+  **quasi sempre, in circa 3 round**. Con «separa e finisce» e i 283 pf delle
+  due pozioni un PG muore in una prova su tre (35%); con 264 pf ai PG
+  restava circa il 76% dei pf per il drago; con il
   solo Colpo su chi ha davanti era l'11% e l'81%. **Se combatte fuori dal
   camminamento**, dove non si stringe, le morti salgono al 69%: sulla breccia
   il generale è forte quanto lo spazio che ha.
@@ -3951,7 +3955,7 @@ premi di storia, come sempre.
 | Scena 12, Momento 5 (dono del re, di persona) | **Torque di Thorek I**, sempre, anche senza fiducia piena: è il dono del re a chi porta la Corona — monile nanico antico (+1 sacro ai TS vs paura; e nel 1372 è una **reliquia storica**: i nani si scoprono il capo davanti a chi lo porta) | ~2.000 mo + valore storico |
 | Scena 9 (se derubano Vatore) | **Sigillo di Ossidiana** — artefatto minore di Shar (Manto di Notte + Furto della Notte, divora anime; contrasta l'Anello di Artemis — Appendice B) | speciale (gancio ARC-09) |
 | Scena 10 (bottino dell'orda antica, se sabotano gli arieti) | armi orchesche primitive (poco valore). Il **corno da guerra di ferro nero** che chiama il drago è incatenato al polso di Grask, alla tenda: si prende solo lì (Scena 6, variante dall'alto; 300 mo, e nel 1372 una reliquia) | ~300 mo |
-| Scena 8 (la tenda, con Zog'tar e i suoi a terra) | **Zog'tar**: armatura completa di mithral +2 Grande (16.000: 1.500 × 2 per la taglia, 9.000 di mithral, 4.000 di +2; si vende, non si indossa) · ascia a due mani +1 Grande (2.340). **Balvar**, se è morto: armatura completa di mithral +2 Media, che a un nano va bene (14.500) · anello di protezione +2 (8.000) · martello da guerra runico +1 (2.312) · la polvere di diamante dei glifi di una sera (400). **Le quattro guardie**: armatura completa, spadone e giavellotti (≈ 1.550 l'una). L'Occhio di Ossidiana resta nell'orbita: è maledetto e non si vende | ≈ 49.750 mo di listino, ≈ 24.500 senza Balvar; alla vendita la metà (SRD). Quanto se ne porta via dipende dal campo: qui sotto |
+| Scena 8 (la tenda, con Zog'tar e i suoi a terra) | **Zog'tar**: armatura completa di mithral +2 Grande (16.000: 1.500 × 2 per la taglia, 9.000 di mithral, 4.000 di +2; si vende, non si indossa) · ascia a due mani +1 Grande (2.340) · 2 pozioni di *cura ferite gravi* (750 l'una), che nella tenda non ha ancora bevuto: le beve solo la notte dopo il barile, e chi lo spoglia all'alba non le trova. **Balvar**, se è morto: armatura completa di mithral +2 Media, che a un nano va bene (14.500) · anello di protezione +2 (8.000) · martello da guerra runico +1 (2.312) · la polvere di diamante dei glifi di una sera (400). **Le quattro guardie**: armatura completa, spadone e giavellotti (≈ 1.550 l'una). L'Occhio di Ossidiana resta nell'orbita: è maledetto e non si vende | ≈ 49.750 mo di listino, ≈ 24.500 senza Balvar; alla vendita la metà (SRD). Quanto se ne porta via dipende dal campo: qui sotto |
 | Scena 11 (resti di Skullcrusher, se UCCISO) | **scaglia del Primo Nero** — trofeo: materiale per **1 oggetto ad acido** (arma/armatura +1d6 acido, o focus per incantesimi acidi; a discrezione del fabbro), e prova che la profezia è compiuta | ~1.500 mo |
 
 **Il bottino della tenda e il tempo**. Il
@@ -4200,7 +4204,7 @@ La tenda della Scena 8: le quattro guardie gli tengono la CA, il sacerdote sta n
 
 **STATISTICHE**
 ___
-For 30 (36 in Ira), Des 20, Cos 24 (30 in Ira), Int 16, Sag 16, Car 18 · BAB +15; Lotta +29 (+32 in Ira) · **Talenti** (7) Attacco Poderoso, Spingere Migliorato, Colpo Terrificante (talento da mostro, SRD), Ira Extra, Iniziativa Migliorata, Volontà di Ferro, Arma Focalizzata (ascia) · **Abilità** Ascoltare +11, Osservare +3, Intimidire +14 (8 gradi in Ascoltare, 10 in Intimidire, nessuno in Osservare) · **Altro equipaggiamento** armatura completa di mithral +2, ascia a due mani +1, 3 giavellotti (tutto di taglia Grande); Occhio di Ossidiana (sotto)  
+For 30 (36 in Ira), Des 20, Cos 24 (30 in Ira), Int 16, Sag 16, Car 18 · BAB +15; Lotta +29 (+32 in Ira) · **Talenti** (7) Attacco Poderoso, Spingere Migliorato, Colpo Terrificante (talento da mostro, SRD), Ira Extra, Iniziativa Migliorata, Volontà di Ferro, Arma Focalizzata (ascia) · **Abilità** Ascoltare +11, Osservare +3, Intimidire +14 (8 gradi in Ascoltare, 10 in Intimidire, nessuno in Osservare) · **Altro equipaggiamento** armatura completa di mithral +2, ascia a due mani +1, 3 giavellotti (tutto di taglia Grande), 2 pozioni di *cura ferite gravi* (LI 5, 3d8+5, 750 mo l'una); Occhio di Ossidiana (sotto)  
 
 **CAPACITÀ SPECIALI**
 ___

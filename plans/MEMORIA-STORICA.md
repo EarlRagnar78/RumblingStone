@@ -2272,7 +2272,7 @@ repo scritto con altre parole.
 ### MS-0203 · 2026-11-19 · Due stampe per arco, e i rimandi con il numero di pagina
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #497
 - **ADR:** ADR-0144
 - **Temi:** stampa booklet volume arco rimandi pagina typst serata arc07
 - **Origine:** riga del 2026-11-19 «ADR-0144: due stampe per arco e rimandi con il numero di pagina» in `plans/CHANGELOG.md`

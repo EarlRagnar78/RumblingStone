@@ -13942,12 +13942,12 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 10,
+     "Car": 8,
      "Cos": 14,
      "Des": 13,
-     "For": 14,
-     "Int": 12,
-     "Sag": 11
+     "For": 18,
+     "Int": 10,
+     "Sag": 9
     },
     [
      "letta dalla riga delle caratteristiche della scheda stessa"
@@ -13988,8 +13988,8 @@
       0
      ],
      "Vol": [
-      1,
-      1,
+      0,
+      0,
       0
      ],
      "pf": [
@@ -14000,7 +14000,7 @@
      "pf_media": 26
     },
     "file": "Bestiario/mostri/orco-regular-warrior4-cr3.md",
-    "provenienza": "copiate",
+    "provenienza": "a mano",
     "scarti": {},
     "template": null,
     "template_dichiarati": [],
@@ -14036,12 +14036,12 @@
     ],
     "dalla_scheda": [
      {
-      "Car": 10,
+      "Car": 8,
       "Cos": 14,
       "Des": 13,
-      "For": 14,
-      "Int": 12,
-      "Sag": 11
+      "For": 18,
+      "Int": 10,
+      "Sag": 9
      },
      "letta dalla riga delle caratteristiche della scheda stessa"
     ],
@@ -14050,8 +14050,8 @@
     "numeri_della_fonte": {},
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
-    "provenienza": "copiate",
-    "senza_note": 1156,
+    "provenienza": "a mano",
+    "senza_note": 1375,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/orc_regular.pcg",
@@ -14080,8 +14080,8 @@
       "ricavata da Rifl +2 (base +1)"
      ],
      "Sag": [
-      0,
-      "ricavata da Vol +1 (base +1)"
+      -1,
+      "ricavata da Vol +0 (base +1)"
      ]
     },
     "vincoli": {
@@ -14095,12 +14095,12 @@
    "pf_dado_corretto_forzato": null,
    "scheda": {
     "attributi": {
-     "Car": 10,
+     "Car": 8,
      "Cos": 14,
      "Des": 13,
-     "For": 14,
-     "Int": 12,
-     "Sag": 11
+     "For": 18,
+     "Int": 10,
+     "Sag": 9
     },
     "bab": 4,
     "composizione_nota": true,
@@ -14119,12 +14119,12 @@
     "lotta": null,
     "mischia": "",
     "pf": 30,
-    "provenienza": "copiate",
+    "provenienza": "a mano",
     "tipo": "Medium humanoid (orc), Warrior 4, LE",
     "ts": [
      6,
      2,
-     1
+     0
     ]
    }
   },
@@ -44909,15 +44909,6 @@
     "scritta": "attributi: For 25 Des 11 Cos 17 Int 10 Sag 10 Car 9"
    },
    {
-    "file": "Bestiario/mostri/orco-regular-warrior4-cr3.md",
-    "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.",
-    "note": [
-     "letta dalla riga delle caratteristiche della scheda stessa"
-    ],
-    "riga": "attributi: For 14 Des 13 Cos 14 Int 12 Sag 11 Car 10",
-    "scritta": "attributi: For 14 Des 13 Cos 14 Int 12 Sag 11 Car 10"
-   },
-   {
     "file": "Bestiario/mostri/razorfiend-blackspawn-alfa-cr13.md",
     "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.",
     "note": [
@@ -46005,25 +45996,6 @@
       }
      ],
      [
-      "orco-regular-warrior4-cr3.md",
-      {
-       "Car": 10,
-       "Cos": 14,
-       "Des": 13,
-       "For": 14,
-       "Int": 12,
-       "Sag": 11
-      },
-      {
-       "Car": 7,
-       "Cos": 12,
-       "Des": 11,
-       "For": 17,
-       "Int": 5,
-       "Sag": 9
-      }
-     ],
-     [
       "razorfiend-blackspawn-alfa-cr13.md",
       {
        "Car": 12,
@@ -46329,17 +46301,17 @@
      ]
     ],
     "entro_1_mod": 0.83,
-    "file": 44,
+    "file": 43,
     "insieme": "schede",
-    "mae": 1.53,
-    "mae_mod": 0.7,
+    "mae": 1.49,
+    "mae_mod": 0.68,
     "per_caratteristica": {
-     "Car": 2.82,
-     "Cos": 0.39,
-     "Des": 0.48,
-     "For": 0.66,
-     "Int": 3.16,
-     "Sag": 1.64
+     "Car": 2.81,
+     "Cos": 0.35,
+     "Des": 0.44,
+     "For": 0.6,
+     "Int": 3.07,
+     "Sag": 1.63
     }
    }
   }

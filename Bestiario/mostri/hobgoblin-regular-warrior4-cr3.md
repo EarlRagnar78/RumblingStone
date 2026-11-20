@@ -19,7 +19,7 @@ voci:
 fonte: valori approssimati nella prosa d'origine (scritti con «~»)
 ```
 
-> [GENERATO] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`.
+> `attributi` del DM (card del 2026-11-20, RC-001): quelli del .pcg citato in testa più i modificatori razziali dell'hobgoblin (+2 Des, +2 Cos). La scheda è uscita dalla marca di `scripts/genera_attributi.py`, come Karruk.
 
 Medium humanoid (goblinoid), Warrior 4, LE. Caratteristiche attestate dal .pcg: For 14, Des 10-11, Cos 12, Int 10, Sag 9-10, Car 8. **Valori derivati** (build senza export, confermati dal DM 2026-10-18; Tempra +8 con Tempra Possente e il mantello): hp 26 (4d8+8); AC 19 come il regular 3 (stesso equip, Des +1); TS Temp +9, Rifl +3, Vol +1 (mantello della resistenza +1 incluso); BAB +4; spada lunga +7 (1d8+2/19-20), arco +5.
 Notes: versione veterana-junior del regular 3; il DM confermi i derivati prima dell'uso.

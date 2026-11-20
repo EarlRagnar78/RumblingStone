@@ -5410,7 +5410,9 @@ Hammerfist come la trova chi arriva stanotte, in una tabella sola.
 | **Che cos'è** | una fortezza nanica giovane: ha circa ottant'anni |
 | **Chi la governa** | Re Thorek I, Guerriero 16, 182 anni, con l'ascia Frostcleaver, e il suo consiglio di guerra |
 | **Da dove nasce** | da una miniera: le stanze dove dormono i PG erano gli alloggi dei minatori, prima che la miniera diventasse fortezza |
-| **Chi la difende** | ottocento nani in armi, dice il re; mille difensori, dice il conto del banco; e duecento vecchi e ragazzi che Gunnvor deve ancora armare. Una cinquantina di chierici di Moradin, e un diamante solo in tutta la fortezza |
+| **Chi la difende** | mille difensori: gli ottocento nani in armi del re e i duecento vecchi e ragazzi che Gunnvor deve ancora armare. Una cinquantina di chierici di Moradin, e un diamante solo in tutta la fortezza |
+| **Chi ci vive** | nani dello scudo, quasi tutti |
+| **Allineamento** | legale buono |
 | **Lingue** | nanico (la targa è in nanico); nel campo dell'orda comune e goblin |
 | **Chi la assedia** | circa diecimila tra orchi e goblinoidi agli ordini del generale Zog'tar Deatheye, in una quindicina di clan, con il drago nero Skullcrusher legato all'orda da un contratto |
 | **Quanto regge** | due ore di assalto, dice il re. Se all'alba Zog'tar guida ancora l'orda, la fortezza cade |
@@ -5447,7 +5449,7 @@ Dalla torre nord, il punto più alto della fortezza, si vede tutta la notte che 
 
 - **La torre nord**, a +120 m sulla piana: il punto più alto della fortezza.
 - **La porta e il cortile**, a +100 m. Si sale dalla piana per una strada a tornanti, oppure dal fianco est della montagna, che è la via dei PG nella notte.
-- **Il pendio sotto le mura**, dalla spianata (+80 m) alla porta (+100 m).
+- **Il pendio sotto le mura**, dalla spianata (+80 m) alla porta (+100 m): circa 300 m in pianta per 80 m di dislivello dalla piana, una pendenza del 27%, con la strada a tornanti larga 6 m al 15%, come nel 1372.
 - **Le mura**, sul ciglio del gradone. Sul fronte sud stanno 24,5 m sopra la spianata, e le scale non ci arrivano. Sul tratto est il fianco della montagna arriva al piede delle mura, ed è lì che salgono le scale d'assedio.
 - **La spianata degli arieti**, a +80 m. Gli arieti si montano lì e salgono alla porta per una rampa addossata al gradone.
 - **La piana**, a 520 m sul mare: il mare di tende, fra 500 m e 1 km dalle mura.

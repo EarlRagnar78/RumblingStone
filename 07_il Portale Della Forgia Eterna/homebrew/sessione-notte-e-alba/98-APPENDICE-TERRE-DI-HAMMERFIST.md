@@ -9,14 +9,9 @@ Stanotte la strada dei tornanti non la sale nessuno. Sotto il gradone la piana �
 <!-- apparato -->
 > I fatti di questa appendice vengono dal master `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md`, dalle piante M7-A, M7-B, M7-C e M7-H e dalle schede del Bestiario. Dove il canone tace, l'appendice tace.
 >
-> **Proposte INFERRED per il DM** (in stampa non escono; approvate, entrano nella tabella «in breve» o nella geografia):
+> **Le proposte del 2026-11-20, decise dal DM sulla card** (Jfs, 14:43): entrano in stampa i difensori (800 + 200), i nani dello scudo, l'allineamento legale buono e il pendio come nel 1372; restano fuori gli abitanti (circa duemila) e i valichi a nord con l'orda da sud.
 >
-> - `[INFERRED — I mille difensori del banco sono gli ottocento del re più i duecento di Gunnvor?; base: Scena 4 «ottocento contro diecimila», Scena 5 «mille difensori» e «i duecento vecchi e ragazzi»]`
-> - Abitanti: circa duemila, i mille difensori e le loro famiglie, scese nelle miniere `[INFERRED — Quanti abitanti ha la fortezza, famiglie comprese?; base: Scena 5, «una cittadina» delle regole PF1e degli insediamenti (da 201 a 2.000 abitanti), con «mille difensori e le famiglie nelle miniere»]`
-> - Chi ci vive: nani dello scudo, quasi tutti `[INFERRED — Ci sono altri popoli oltre ai nani, a parte Zeth e i suoi scavatori?; base: Balvar è un nano dello scudo; Zeth, mezz'elfo, è l'unico non nano del master]`
-> - Allineamento: legale buono `[INFERRED — Che allineamento ha la fortezza, come insediamento PF1e?; base: devota a Moradin, retta da un re e dal suo consiglio]`
-> - Il pendio sotto le mura: circa 300 m in pianta per 80 m di dislivello (27%), strada a tornanti larga 6 m al 15%, come nel 1372 (ARC-08, mappe 2B e 2C) `[INFERRED — Il pendio del 372 è lo stesso del 1372?; base: la piana a 520 m e le quote +80, +100 e +120 coincidono nei due tempi]`
-> - Valichi verso nord, come i passaggi montani dell'Hammerfist del 1372, e l'orda salita da sud, come la colonna di Fauci che nel 1372 sale dallo Shaar `[INFERRED — Da dove arriva l'orda, e la valle ha valichi a nord?; base: la geografia del 1372]`
+> **Proposta in attesa del DM: le percentuali per razza**, come nei blocchi delle località del *Forgotten Realms Campaign Setting* (Jfs, 14:43: «magari percentuali»). Stima: nani dello scudo 99%, altri 1% (fra cui il mezz'elfo Zeth) `[INFERRED — Quali percentuali per razza? È una stima, non un conto; base: Zeth è l'unico non nano del master, e i mille difensori sono tutti nani]`
 >
 > **Domande aperte per il DM** (il dato non c'è e manca una base per proporlo, quindi l'appendice non lo scrive): come si chiama la valle? Che cosa si estrae dalla miniera da cui è nata la fortezza? In che stagione cade la notte dell'assedio, e che tempo fa? Con quali fortezze o città commercia Hammerfist, e per quali strade? Da quali fortezze veniva Balvar?
 <!-- /apparato -->
@@ -30,7 +25,9 @@ Hammerfist come la trova chi arriva stanotte, in una tabella sola.
 | **Che cos'è** | una fortezza nanica giovane: ha circa ottant'anni `[CANONE — DM 2026-10-07, Q44]` |
 | **Chi la governa** | Re Thorek I, Guerriero 16, 182 anni, con l'ascia Frostcleaver, e il suo consiglio di guerra |
 | **Da dove nasce** | da una miniera: le stanze dove dormono i PG erano gli alloggi dei minatori, prima che la miniera diventasse fortezza `[CANONE — DM 2026-10-07, Q2]` |
-| **Chi la difende** | ottocento nani in armi, dice il re; mille difensori, dice il conto del banco; e duecento vecchi e ragazzi che Gunnvor deve ancora armare. Una cinquantina di chierici di Moradin, e un diamante solo in tutta la fortezza |
+| **Chi la difende** | mille difensori: gli ottocento nani in armi del re e i duecento vecchi e ragazzi che Gunnvor deve ancora armare `[CANONE — DM 2026-11-20, card]`. Una cinquantina di chierici di Moradin, e un diamante solo in tutta la fortezza |
+| **Chi ci vive** | nani dello scudo, quasi tutti `[CANONE — DM 2026-11-20, card]` |
+| **Allineamento** | legale buono `[CANONE — DM 2026-11-20, card]` |
 | **Lingue** | nanico (la targa è in nanico); nel campo dell'orda comune e goblin |
 | **Chi la assedia** | circa diecimila tra orchi e goblinoidi agli ordini del generale Zog'tar Deatheye, in una quindicina di clan, con il drago nero Skullcrusher legato all'orda da un contratto |
 | **Quanto regge** | due ore di assalto, dice il re. Se all'alba Zog'tar guida ancora l'orda, la fortezza cade |
@@ -67,7 +64,7 @@ Dalla torre nord, il punto più alto della fortezza, si vede tutta la notte che 
 
 - **La torre nord**, a +120 m sulla piana: il punto più alto della fortezza.
 - **La porta e il cortile**, a +100 m. Si sale dalla piana per una strada a tornanti, oppure dal fianco est della montagna, che è la via dei PG nella notte.
-- **Il pendio sotto le mura**, dalla spianata (+80 m) alla porta (+100 m).
+- **Il pendio sotto le mura**, dalla spianata (+80 m) alla porta (+100 m): circa 300 m in pianta per 80 m di dislivello dalla piana, una pendenza del 27%, con la strada a tornanti larga 6 m al 15%, come nel 1372 `[CANONE — DM 2026-11-20, card]`.
 - **Le mura**, sul ciglio del gradone. Sul fronte sud stanno 24,5 m sopra la spianata, e le scale non ci arrivano. Sul tratto est il fianco della montagna arriva al piede delle mura, ed è lì che salgono le scale d'assedio `[CANONE — DM 2026-11-04, P16]`.
 - **La spianata degli arieti**, a +80 m. Gli arieti si montano lì e salgono alla porta per una rampa addossata al gradone.
 - **La piana**, a 520 m sul mare: il mare di tende, fra 500 m e 1 km dalle mura.

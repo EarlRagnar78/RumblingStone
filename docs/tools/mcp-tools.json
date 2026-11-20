@@ -4066,6 +4066,42 @@
       "deterministic": true
     },
     {
+      "name": "instradamento_agenti",
+      "description": "«Il thread chiama l'agente giusto per questo lavoro?»\n\nGli hook UserPromptSubmit e Stop di Claude Code nei thread: riconosce il tipo di lavoro del messaggio che arriva (riusando i trigger delle skill) e mette nel contesto l'agente e la catena da usare; a fine turno registra se il thread li ha chiamati. Suggerisce, non blocca (ADR-0146).",
+      "use_case": "«Il thread chiama l'agente giusto per questo lavoro?»",
+      "invocation": "python3 scripts/instradamento_agenti.py --riepilogo",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "prompt": {
+            "type": "boolean",
+            "description": "Evento UserPromptSubmit su stdin; scrive il contesto da aggiungere."
+          },
+          "stop": {
+            "type": "boolean",
+            "description": "Evento Stop su stdin; registra se gli agenti suggeriti sono stati chiamati."
+          },
+          "prova": {
+            "type": "string",
+            "description": "Mostra l'instradamento di un testo."
+          },
+          "riepilogo": {
+            "type": "boolean",
+            "description": "Suggerimenti dati e quanti seguiti."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        ".claude/.uso-agenti.jsonl"
+      ],
+      "exit_codes": {
+        "0": "sempre: suggerisce, non blocca"
+      },
+      "deterministic": true
+    },
+    {
       "name": "instradamento_skill",
       "description": "«Se il DM dice questa frase, un agente che instrada sulle descrizioni carica le skill che deve?»\n\nL8 (D6 del 2026-10-01): per ogni frase vera del DM in plans/instradamento/casi.json, quali skill obbligatorie (ORCHESTRAZIONE §4) raggiungono i trigger fra virgolette delle descrizioni. Conta omissioni, skill in più e conflitti fra le due L1. Il gate è a cricchetto sul tetto del file. Dal 2026-10-01 (D10): casi esclusi e quasi-casi, collisioni fra descrizioni, il suggerimento per una frase (--frase) e la prova con agenti veri (--comportamentale), come chiedono agentskills.io e skill-creator.",
       "use_case": "«Se il DM dice questa frase, un agente che instrada sulle descrizioni carica le skill che deve?»",

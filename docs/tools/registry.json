@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 150,
+  "tool_count": 151,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -10271,6 +10271,96 @@
       "tests": [],
       "docs": [
         "scripts/README-automation.md"
+      ]
+    },
+    {
+      "id": "instradamento_agenti",
+      "path": "scripts/instradamento_agenti.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/instradamento_agenti.py --riepilogo",
+      "summary": "Gli hook UserPromptSubmit e Stop di Claude Code nei thread: riconosce il tipo di lavoro del messaggio che arriva (riusando i trigger delle skill) e mette nel contesto l'agente e la catena da usare; a fine turno registra se il thread li ha chiamati. Suggerisce, non blocca (ADR-0146).",
+      "use_case": "«Il thread chiama l'agente giusto per questo lavoro?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--prompt",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Evento UserPromptSubmit su stdin; scrive il contesto da aggiungere."
+        },
+        {
+          "name": "--stop",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Evento Stop su stdin; registra se gli agenti suggeriti sono stati chiamati."
+        },
+        {
+          "name": "--prova",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Mostra l'instradamento di un testo."
+        },
+        {
+          "name": "--riepilogo",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Suggerimenti dati e quanti seguiti."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "skills/*/SKILL.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": ".claude/.uso-agenti.jsonl",
+          "kind": "json",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "sempre: suggerisce, non blocca"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": false,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/instradamento_agenti.py --prova \"riscrivi il box della forgia\"",
+      "tests": [
+        "scripts/tests/test_instradamento_agenti.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md"
       ]
     },
     {

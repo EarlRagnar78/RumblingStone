@@ -21,6 +21,28 @@
           }
         ]
       }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 $CLAUDE_PROJECT_DIR/scripts/instradamento_agenti.py --prompt",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 $CLAUDE_PROJECT_DIR/scripts/instradamento_agenti.py --stop",
+            "timeout": 10
+          }
+        ]
+      }
     ]
   },
   "enabledPlugins": {

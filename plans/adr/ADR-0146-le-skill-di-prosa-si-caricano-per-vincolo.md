@@ -113,6 +113,15 @@ disturbato 2.944 volte; uno su prosa e box disturba circa 200 volte.
    `punteggio_mqm` misura ha più difetti che nel punto in cui il ramo si stacca
    da main. Nessuna soglia nuova: norme e rilevatori sono quelli del registro.
    Entra anche nell'hook pre-push, perché `gate_locale` legge `ci.yml`.
+7. **Instradamento `scripts/instradamento_agenti.py`**, due hook nei thread.
+   Jfs ha chiesto di vincolare il coordinatore a chiamare gli agenti in base
+   al lavoro; il coordinatore gira fuori dal repo e i suoi hook non li decide
+   il repo, quindi il vincolo sta dove il lavoro arriva. UserPromptSubmit
+   legge il messaggio che entra nel thread, riconosce il tipo di lavoro con i
+   trigger delle descrizioni delle skill (`instradamento_skill.raggiunte`,
+   più poche parole proprie per piattaforma, CI e regole) e mette nel
+   contesto l'agente e la catena. Stop registra in `.claude/.uso-agenti.jsonl`
+   se il thread li ha chiamati. Nessuno dei due blocca.
 
 ## Le conseguenze
 
@@ -142,13 +151,20 @@ disturbato 2.944 volte; uno su prosa e box disturba circa 200 volte.
 - Il contesto: ogni agente costa circa 60 token di descrizione nella sessione
   principale; le skill precaricate pesano solo nel contesto del sottoagente
   (`autore-master` porta circa 53 KB di SKILL.md).
+- **L'instradamento è per parole e sbaglia.** Sulle 33 frasi vere del DM con
+  una skill attesa (`plans/instradamento/casi.json`) il primo agente
+  suggerito è giusto in 23, manca in 4 e sbaglia in 6, quasi tutte frasi di
+  coerenza che portano alla prosa invece che a `custode-canone`. Per questo
+  suggerisce e non blocca, e chiede di scrivere nel resoconto quando lo si
+  ignora.
 - La norma «il box che promette» (§2-quater di `read-aloud-adulti.md`, misura
   `misura_craft --apertura`) arriva con la #508. Il cricchetto la vedrà
   quando entra fra le norme di `punteggio_mqm`, non prima.
 
 ## Come si torna indietro
 
-Togliere il gruppo `PreToolUse` da `.claude/settings.json` spegne l'hook;
+Togliere il gruppo `PreToolUse` da `.claude/settings.json` spegne l'hook, e
+i gruppi `UserPromptSubmit` e `Stop` spengono l'instradamento;
 togliere il passo «Prosa — il testo cambiato non peggiora» da `ci.yml` spegne
 il cricchetto. Gli agenti si tolgono cancellando `.claude/agents/`. Dettagli in
 [`docs/how-to/GUIDA-CONFIGURAZIONE-CLAUDE.md`](../../docs/how-to/GUIDA-CONFIGURAZIONE-CLAUDE.md).
@@ -159,4 +175,7 @@ il cricchetto. Gli agenti si tolgono cancellando `.claude/agents/`. Dettagli in
   promemoria). Da ripetere dopo una settimana di thread, contro lo zero del
   campione del 20/11.
 - Classe di un file: `python3 scripts/vincolo_skill.py --classe FILE`.
+- Agenti: `python3 scripts/instradamento_agenti.py --riepilogo` (suggerimenti
+  dati, turni chiusi, quanti hanno chiamato il primo agente suggerito);
+  `--prova "testo"` mostra che cosa suggerirebbe.
 - Cricchetto: `python3 scripts/cricchetto_prosa.py --rispetto-a origin/main`.

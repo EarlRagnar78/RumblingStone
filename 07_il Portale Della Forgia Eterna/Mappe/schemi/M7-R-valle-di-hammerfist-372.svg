@@ -82,7 +82,6 @@
 <text x="248.0" y="366.0" font-size="7.4" text-anchor="middle" fill="#2e2316" font-weight="bold" font-style="normal">il campo del capo</text>
 <path d="M14 500 Q70 476 130 498 T250 496 T370 494 T482.0 498 L482.0 540 L14 540 z" fill="#cdbf9c" stroke="#7a6a50" stroke-width="1"/>
 <text x="248.0" y="522.0" font-size="8" text-anchor="middle" fill="#2e2316" font-weight="normal" font-style="normal" font-family="Cinzel">LE COLLINE · dove dorme il drago</text>
-<path d="M54 538 C84 480 104 420 98.0 368" fill="none" stroke="#7a1f1f" stroke-width="1.4" stroke-dasharray="5 3" marker-end="url(#sc-freccia-r)"/>
 <path d="M286 170 C350 214 372 250 360 290 S288.0 330 258.0 342" fill="none" stroke="#7a1f1f" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#sc-freccia-r)"/>
 <circle cx="40.0" cy="92.0" r="6" fill="#7a1f1f" stroke="#fbf1dc" stroke-width="1"/>
 <text x="40.0" y="94.6" font-size="7.4" text-anchor="middle" fill="#fbf1dc" font-weight="bold" font-style="normal">1</text>
@@ -102,8 +101,6 @@
 <text x="270.0" y="334.6" font-size="7.4" text-anchor="middle" fill="#fbf1dc" font-weight="bold" font-style="normal">8</text>
 <circle cx="60.0" cy="512.0" r="6" fill="#7a1f1f" stroke="#fbf1dc" stroke-width="1"/>
 <text x="60.0" y="514.6" font-size="7.4" text-anchor="middle" fill="#fbf1dc" font-weight="bold" font-style="normal">9</text>
-<circle cx="58.0" cy="470.0" r="6" fill="#7a1f1f" stroke="#fbf1dc" stroke-width="1"/>
-<text x="58.0" y="472.6" font-size="7.4" text-anchor="middle" fill="#fbf1dc" font-weight="bold" font-style="normal">10</text>
 <circle cx="362.0" cy="300.0" r="6" fill="#7a1f1f" stroke="#fbf1dc" stroke-width="1"/>
-<text x="362.0" y="302.6" font-size="7.4" text-anchor="middle" fill="#fbf1dc" font-weight="bold" font-style="normal">11</text>
+<text x="362.0" y="302.6" font-size="7.4" text-anchor="middle" fill="#fbf1dc" font-weight="bold" font-style="normal">10</text>
 </svg>

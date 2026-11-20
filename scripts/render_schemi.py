@@ -407,8 +407,8 @@ def m7r() -> str:
     """La valle di Hammerfist ≈372 DR, la mappa della regione dell'appendice
     (ADR-0122, S4). Più larga di M7-A: la montagna, la fortezza, il pendio, la
     piana col campo, il bosco a est, le colline a sud. Non in scala: le distanze
-    del canone sono scritte, e quello che il canone non dà è nella legenda come
-    INFERRED."""
+    del canone sono scritte; quello che il canone non dà (valichi, la strada
+    dell'orda) non c'è, e la proposta INFERRED sta nell'apparato dell'appendice."""
     f = Foglio(560)
     f.titolo("M7-R · La valle di Hammerfist ≈372 DR",
              "la regione della notte dell'assedio · nord in alto, non in scala · il riquadro è M7-A")
@@ -460,16 +460,13 @@ def m7r() -> str:
     f.el(f'<path d="M{x0} 500 Q70 476 130 498 T250 496 T370 494 T{x1} 498 L{x1} 540 L{x0} 540 z" '
          f'fill="#cdbf9c" stroke="{C["sbiadito"]}" stroke-width="1"/>')
     f.t(W / 2, 522, "LE COLLINE · dove dorme il drago", 8, "middle", fam="Cinzel")
-    # da dove viene l'orda
-    f.el(f'<path d="M{x0 + 40} 538 C{x0 + 70} 480 {x0 + 90} 420 {W / 2 - 150} {py + 140}" fill="none" '
-         f'stroke="{C["marker"]}" stroke-width="1.4" stroke-dasharray="5 3" marker-end="url(#sc-freccia-r)"/>')
     # la via dei PG
     f.el(f'<path d="M{fx + fw - 6} {fy + fh + 2} C350 214 372 250 360 290 S{W / 2 + 40} 330 {W / 2 + 10} '
          f'{py + 114}" fill="none" stroke="{C["marker"]}" stroke-width="1.6" stroke-dasharray="5 3" '
          f'marker-end="url(#sc-freccia-r)"/>')
     for n, x, y in ((1, 40, 92), (2, fx + fw + 10, fy + 6), (3, fx - 54, fy + fh + 28), (4, fx + fw / 2 + 40,
                     fy + fh + 40), (5, 470, 196), (6, x0 + 24, py + 30), (7, W / 2 - 160, py + 90),
-                    (8, W / 2 + 22, py + 104), (9, 60, 512), (10, x0 + 44, 470), (11, 362, 300)):
+                    (8, W / 2 + 22, py + 104), (9, 60, 512), (10, 362, 300)):
         f.num(n, x, y)
     return f.svg()
 
@@ -477,22 +474,19 @@ def m7r() -> str:
 def m7r_legenda() -> str:
     f = Foglio(400)
     f.titolo("M7-R · Indicazioni",
-             "i numeri della mappa della regione · le voci con INFERRED aspettano il DM")
+             "i numeri della mappa della regione")
     yl = f.legenda(56, [
         (1, "Le montagne. Sotto, le miniere da cui è nata la fortezza e dove scendono bambini e vecchi; "
-            "le gallerie di Zeth sotto la fucina. Valichi verso nord: INFERRED, come i passaggi montani "
-            "dell'Hammerfist del 1372"),
+            "le gallerie di Zeth sotto la fucina"),
         (2, "Hammerfist, ottant'anni: porta e cortile a +100, torre nord a +120 (M7-A)"),
-        (3, "Il pendio sotto le mura: circa 300 m in pianta per 80 m di dislivello, come nel 1372"),
+        (3, "Il pendio sotto le mura, dalla spianata (+80) alla porta (+100)"),
         (4, "La spianata degli arieti, +80, e la strada a tornanti: circa 500 m fino alla piana"),
         (5, "Il bosco a est delle mura, a circa 500 m: il portale e la pattuglia di Durin"),
         (6, "La piana, 520 m sul mare"),
         (7, "Il mare di tende: una quindicina di clan, diecimila, da 500 m a 1 km dalle mura"),
         (8, "Il campo del capo e la tenda nera di Zog'tar (M7-H, M7-C)"),
         (9, "Le colline a sud, dove di notte dorme Skullcrusher"),
-        (10, "Da dove è salita l'orda: da sud. INFERRED, sulla base della colonna di Fauci che nel 1372 "
-             "sale dallo Shaar verso nord, attraverso le montagne"),
-        (11, "La via dei PG nella notte: giù dal fianco est, lungo il lato est del campo"),
+        (10, "La via dei PG nella notte: giù dal fianco est, lungo il lato est del campo"),
     ], colonne=1)
     f.h = round(yl + 6)
     return f.svg()

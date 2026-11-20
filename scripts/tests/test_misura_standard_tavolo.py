@@ -143,6 +143,15 @@ class TestNoteDiLavoro(unittest.TestCase):
         trovate = [m.group(0) for m in mst.NOTA_DI_LAVORO.finditer(testo)]
         self.assertEqual(len(trovate), 2)
 
+    def test_l_apparato_non_si_conta(self):
+        """Le proposte INFERRED dell'appendice stanno nel blocco apparato, che
+        l'esportatore non stampa (ADR-0069): la misura non le conta."""
+        app = ROOT / "07_il Portale Della Forgia Eterna/homebrew/sessione-notte-e-alba/98-APPENDICE-TERRE-DI-HAMMERFIST.md"
+        self.assertIn("[INFERRED", app.read_text(encoding="utf-8"))
+        mp = next(m for m in mst.manifesti_dm() if m.name == "ARC07-NOTTE-E-ALBA-SERATA.manifest.json")
+        note = mst.misura_booklet(mp, mst.persone_con_nome())["note_di_lavoro"]
+        self.assertEqual([n for n in note if n["capitolo"].startswith("Appendice")], [])
+
     def test_il_cricchetto_dei_volumi(self):
         nomi = mst.persone_con_nome()
         for mp in mst.manifesti_dm():

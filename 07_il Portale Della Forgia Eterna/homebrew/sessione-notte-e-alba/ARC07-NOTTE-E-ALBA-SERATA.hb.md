@@ -5394,7 +5394,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # Le terre di Hammerfist, ≈372 DR
 
-Questa appendice raccoglie la regione come la trovano i PG mille anni prima della loro epoca, per averla tutta sotto mano senza aprire il modulo. Segue lo schema delle appendici di regione degli AP: la regione in breve, la storia, i luoghi, chi la abita, chi conta, le voci, e quello che ne resterà nel 1372. I fatti vengono dal master cap. VII, dalle piante M7-A, M7-B, M7-C e M7-H e dalle schede del Bestiario. Dove il canone tace e un'appendice d'AP darebbe comunque un dato, il dato c'è ma porta la marca INFERRED, con la sua base e la domanda per il DM.
+Questa appendice raccoglie la regione come la trovano i PG mille anni prima della loro epoca, per averla tutta sotto mano senza aprire il modulo. Segue lo schema delle appendici di regione degli AP: la regione in breve, la storia, i luoghi, chi la abita, chi conta, le voci, e quello che ne resterà nel 1372. I fatti vengono dal master cap. VII, dalle piante M7-A, M7-B, M7-C e M7-H e dalle schede del Bestiario. Dove il canone tace, l'appendice tace. Le proposte per i dati che un'appendice d'AP darebbe, con la loro base, stanno nel sorgente e aspettano il DM: in stampa non escono note di lavoro.
 
 
 ## Hammerfist in breve, la notte dell'assedio
@@ -5406,10 +5406,7 @@ La fortezza, chi la tiene e chi la vuole. Ogni riga rimanda a una scena del mast
 | **Che cos'è** | una fortezza nanica giovane: ha circa ottant'anni |
 | **Chi la governa** | Re Thorek I, Guerriero 16, 182 anni, con l'ascia Frostcleaver, e il suo consiglio di guerra |
 | **Da dove nasce** | da una miniera: le stanze dove dormono i PG erano gli alloggi dei minatori, prima che la miniera diventasse fortezza |
-| **Chi la difende** | ottocento nani in armi, dice il re, e mille difensori, dice il conto del banco: la differenza sono i duecento vecchi e ragazzi che Gunnvor deve ancora armare `[INFERRED — I mille difensori del banco sono gli ottocento del re più i duecento di Gunnvor?; base: Scena 4 «ottocento contro diecimila», Scena 5 «mille difensori» e «i duecento vecchi e ragazzi»]`. Una cinquantina di chierici di Moradin, e un diamante solo in tutta la fortezza |
-| **Abitanti** | circa duemila: i mille difensori e le loro famiglie, scese nelle miniere `[INFERRED — Quanti abitanti ha la fortezza, famiglie comprese?; base: Scena 5, «una cittadina» delle regole PF1e degli insediamenti (da 201 a 2.000 abitanti), con «mille difensori e le famiglie nelle miniere»]` |
-| **Chi ci vive** | nani dello scudo, quasi tutti `[INFERRED — Ci sono altri popoli oltre ai nani, a parte Zeth e i suoi scavatori?; base: Balvar è un nano dello scudo; Zeth, mezz'elfo, è l'unico non nano del master]` |
-| **Allineamento** | legale buono `[INFERRED — Che allineamento ha la fortezza, come insediamento PF1e?; base: devota a Moradin, retta da un re e dal suo consiglio]` |
+| **Chi la difende** | ottocento nani in armi, dice il re; mille difensori, dice il conto del banco; e duecento vecchi e ragazzi che Gunnvor deve ancora armare. Una cinquantina di chierici di Moradin, e un diamante solo in tutta la fortezza |
 | **Lingue** | nanico (la targa è in nanico); nel campo dell'orda comune e goblin |
 | **Chi la assedia** | circa diecimila tra orchi e goblinoidi agli ordini del generale Zog'tar Deatheye, in una quindicina di clan, con il drago nero Skullcrusher legato all'orda da un contratto |
 | **Quanto regge** | due ore di assalto, dice il re. Se all'alba Zog'tar guida ancora l'orda, la fortezza cade |
@@ -5442,7 +5439,7 @@ La mappa della regione è M7-R: la valle intera, con la fortezza, il campo e le 
 
 - **La torre nord**, a +120 m sulla piana: il punto più alto della fortezza.
 - **La porta e il cortile**, a +100 m. Si sale dalla piana per una strada a tornanti, oppure dal fianco est della montagna, che è la via dei PG nella notte.
-- **Il pendio sotto le mura**: circa 300 m in pianta per 80 m di dislivello, cioè una pendenza del 27%, e la strada a tornanti larga 6 m al 15%. Sono le misure della fortezza del 1372 (ARC-08, mappe 2B e 2C) `[INFERRED — Il pendio del 372 è lo stesso del 1372?; base: la piana a 520 m e le quote +80, +100 e +120 coincidono nei due tempi]`.
+- **Il pendio sotto le mura**, dalla spianata (+80 m) alla porta (+100 m).
 - **Le mura**, sul ciglio del gradone. Sul fronte sud stanno 24,5 m sopra la spianata, e le scale non ci arrivano. Sul tratto est il fianco della montagna arriva al piede delle mura, ed è lì che salgono le scale d'assedio.
 - **La spianata degli arieti**, a +80 m. Gli arieti si montano lì e salgono alla porta per una rampa addossata al gradone.
 - **La piana**, a 520 m sul mare: il mare di tende, fra 500 m e 1 km dalle mura.

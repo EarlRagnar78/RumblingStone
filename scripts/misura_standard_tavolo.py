@@ -363,7 +363,9 @@ def misura_booklet(mp: Path, nomi: set[str], soglia: int = 3, prova: bool = Fals
             md, _ = chi_si_incontra.arricchisci(md, f, indice, chiavi_dei_pg(), volume=volume)
             md = traduci_rimandi(md, f, nel_volume)
         note += [{"capitolo": cap.get("title", f.stem), "testo": m.group(0)}
-                 for m in NOTA_DI_LAVORO.finditer(re.sub(r"<!--.*?-->", "", md, flags=re.S))]
+                 # l'apparato e lo storico non vanno in stampa (ADR-0069): li toglie
+                 # l'esportatore, e li toglie la misura
+                 for m in NOTA_DI_LAVORO.finditer(re.sub(r"<!--.*?-->", "", togli_storico(md), flags=re.S))]
         capitoli.append((cap.get("title", f.stem), pulisci(md)))
 
     # chi ha un nome: una scheda (riquadro o scheda d'entrata) in questo

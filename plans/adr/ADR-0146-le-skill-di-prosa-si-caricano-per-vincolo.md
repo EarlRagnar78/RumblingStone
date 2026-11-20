@@ -85,7 +85,13 @@ disturbato 2.944 volte; uno su prosa e box disturba circa 200 volte.
    `integratore-dm` tiene il motore del DM (`dm.py`, `dmcore`, i plugin di
    sistema, il server MCP, il manifest degli strumenti) e lavora in TDD a
    piccoli incrementi; `sviluppatore` tiene il resto di `scripts/`, la CI e
-   gli hook. Lo ha chiesto Jfs il 20/11. Un sottoagente di Claude Code non
+   gli hook. Lo ha chiesto Jfs il 20/11, con due precisazioni che valgono
+   per entrambi. Le librerie già usate nel repo sono standard del repo e si
+   usano liberamente. Per un problema nuovo si adotta la libreria che è lo
+   standard di fatto della comunità invece di riscriverla, e la libreria
+   entra come finora per i canali di ADR-0099: unstable, testing per almeno
+   14 giorni e 10 run su main, poi stable. ADR-0037 dice come la si dichiara
+   per il portatile del DM, non la vieta. Un sottoagente di Claude Code non
    avvia altri agenti: la catena (per esempio `integratore-dm`, poi
    `regolista` sui numeri) la guida il thread principale, e ogni agente
    scrive nel resoconto chi va chiamato dopo.

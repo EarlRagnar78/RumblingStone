@@ -33,8 +33,20 @@ e `docs/reference/RIFERIMENTO-PLUGIN-DI-SISTEMA.md` se tocchi i sistemi. Poi
   come parametri, così le prove non toccano disco e git. Niente classi né
   gerarchie che il codice esistente non usa: lo standard di fatto del repo
   viene prima di un modello da manuale (ADR-0114).
-- **Solo la stdlib** (ADR-0037). Una libreria in più entra solo con una misura
-  e un ADR, dentro il pacchetto vendorizzato.
+- **Lo standard di fatto prima, la ruota non si reinventa** (AGENTS.md,
+  «Quando un agente risponde», punto 6). Le librerie che il repo usa già
+  (`requirements*.txt`, `dmcore/_vendor`) sono standard del repo: usale
+  senza chiedere. Se per un problema la comunità Python ha una libreria che
+  è lo standard di fatto, si adotta quella invece di scriverne una nostra,
+  seguendo i canali di ADR-0099: prima unstable (si prova in un ramo o in
+  `plans/esperimenti/`), poi testing (versione fissata in
+  `requirements-dev.txt`, passo CI non bloccante, licenza libera, misura
+  prima e dopo, guadagno nominato, ok del DM sulla PR), poi stable dopo
+  almeno 14 giorni e 10 run su main senza falsi allarmi né misure
+  peggiorate. Chi la usa sul portatile del DM la dichiara in
+  `requirements.txt` con cosa succede senza (ADR-0037). Un codice nostro al
+  posto della libreria entra solo se la misura la boccia, con il motivo
+  scritto.
 - **Il canone si scrive solo da `dm.py`, su un ramo di gruppo** (vincolo triplo,
   ADR-0007). Il server MCP non scrive: uno strumento che scrive è marcato e non
   parte.

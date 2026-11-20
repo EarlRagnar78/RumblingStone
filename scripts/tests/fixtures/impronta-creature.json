@@ -2549,23 +2549,23 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 14,
-     "Cos": 10,
-     "Des": 20,
+     "Car": 10,
+     "Cos": 11,
+     "Des": 19,
      "For": 12,
-     "Int": 18,
-     "Sag": 12
+     "Int": 16,
+     "Sag": 10
     },
     [
      "letta dalla riga delle caratteristiche della scheda stessa",
-     "⚠ Cos 12 ricavata da pf 40 su 9 DV, ma la scheda scrive 10: si tiene la scheda, da verificare."
+     "⚠ Cos 12 ricavata da pf 40 su 9 DV, ma la scheda scrive 11: si tiene la scheda, da verificare."
     ]
    ],
    "genera_senza_fonte": [
     {
      "Car": 20,
      "Cos": 12,
-     "Des": 20,
+     "Des": 18,
      "For": 12,
      "Int": 13,
      "Sag": 10
@@ -2574,7 +2574,7 @@
      "array elite del Manuale del DM (creatura)",
      "variazione a seme fisso: Int +1, Cos −1",
      "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 10) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
-     "Des 20 **letta da ca-dettaglio** — il vincolo batte l'array",
+     "Des 18 **letta da ca-dettaglio** — il vincolo batte l'array",
      "Cos 12 **ricavata da pf 40 su 9 DV** — il vincolo batte l'array",
      "For 12 **ricavata da BAB e lotta** — il vincolo batte l'array",
      "⚠ Cos al più 11 ricavata da Temp +4 (base +4), ma 12 viene da un dato più forte: si tiene, da verificare."
@@ -2590,8 +2590,8 @@
       0
      ],
      "Rifl": [
-      15,
-      15,
+      14,
+      14,
       0
      ],
      "Temp": [
@@ -2600,13 +2600,13 @@
       0
      ],
      "Vol": [
-      5,
-      5,
+      4,
+      4,
       0
      ],
      "attacco": [
-      12,
-      12,
+      11,
+      11,
       0
      ],
      "lotta": [
@@ -2622,7 +2622,7 @@
      "pf_media": 31
     },
     "file": "Bestiario/mostri/drow-assassina-lolth-cr10.md",
-    "provenienza": "copiate",
+    "provenienza": "a mano",
     "scarti": {},
     "template": null,
     "template_dichiarati": [],
@@ -2671,12 +2671,12 @@
     "dalla_fonte": null,
     "dalla_scheda": [
      {
-      "Car": 14,
-      "Cos": 10,
-      "Des": 20,
+      "Car": 10,
+      "Cos": 11,
+      "Des": 19,
       "For": 12,
-      "Int": 18,
-      "Sag": 12
+      "Int": 16,
+      "Sag": 10
      },
      "letta dalla riga delle caratteristiche della scheda stessa"
     ],
@@ -2685,8 +2685,8 @@
     "numeri_della_fonte": {},
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
-    "provenienza": "copiate",
-    "senza_note": 3307,
+    "provenienza": "a mano",
+    "senza_note": 3988,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -2702,12 +2702,12 @@
       "ricavata da Temp +4 (base +4)"
      ],
      "Des": [
-      5,
-      "ricavata da Rifl +15 (base +10)"
+      4,
+      "ricavata da Rifl +14 (base +10)"
      ],
      "Sag": [
-      1,
-      "ricavata da Vol +5 (base +4)"
+      0,
+      "ricavata da Vol +4 (base +4)"
      ]
     },
     "vincoli": {
@@ -2717,7 +2717,7 @@
      ],
      "des_da_iniziativa": null,
      "des_vincolata": [
-      20,
+      18,
       "letta da ca-dettaglio"
      ],
      "for_da_lotta": [
@@ -2728,7 +2728,7 @@
    },
    "pf_dado_corretto": null,
    "pf_dado_corretto_forzato": {
-    "bonus": "da Cos 10",
+    "bonus": "da Cos 11",
     "dadi": "dalla formula che la scheda scrive",
     "fascia": [
      9,
@@ -2744,12 +2744,12 @@
    },
    "scheda": {
     "attributi": {
-     "Car": 14,
-     "Cos": 10,
-     "Des": 20,
+     "Car": 10,
+     "Cos": 11,
+     "Des": 19,
      "For": 12,
-     "Int": 18,
-     "Sag": 12
+     "Int": 16,
+     "Sag": 10
     },
     "bab": 6,
     "composizione_nota": true,
@@ -2775,14 +2775,14 @@
     ],
     "gs": 10.0,
     "lotta": 7,
-    "mischia": "spada corta +1 +12/+7 (1d6+2/19-20)",
+    "mischia": "spada corta +1 +11/+6 (1d6+2/19-20)",
     "pf": 40,
-    "provenienza": "copiate",
+    "provenienza": "a mano",
     "tipo": "Medium humanoid (elf), NE",
     "ts": [
      4,
-     15,
-     5
+     14,
+     4
     ]
    }
   },
@@ -3016,12 +3016,12 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 14,
-     "Cos": 14,
+     "Car": 10,
+     "Cos": 12,
      "Des": 18,
-     "For": 14,
-     "Int": 13,
-     "Sag": 12
+     "For": 13,
+     "Int": 14,
+     "Sag": 10
     },
     [
      "letta dalla riga delle caratteristiche della scheda stessa"
@@ -3030,11 +3030,11 @@
    "genera_senza_fonte": [
     {
      "Car": 9,
-     "Cos": 14,
+     "Cos": 12,
      "Des": 18,
-     "For": 14,
+     "For": 12,
      "Int": 10,
-     "Sag": 12
+     "Sag": 10
     },
     [
      "array elite del Manuale del DM (creatura)",
@@ -3042,8 +3042,9 @@
      "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 5) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
      "Des 18 **letta da ca-dettaglio** — il vincolo batte l'array",
      "Des 18 **ricavata dall'iniziativa** — il vincolo batte l'array",
-     "Cos 14 **ricavata da pf 28 su 4 DV** — il vincolo batte l'array",
-     "For 14 **ricavata da BAB e lotta** — il vincolo batte l'array"
+     "Cos 12 **ricavata da pf 24 su 4 DV** — il vincolo batte l'array",
+     "For 12 **ricavata da BAB e lotta** — il vincolo batte l'array",
+     "Sag 10 **ricavata da Vol +2 (base +2)** — il tetto del TS batte l'array"
     ]
    ],
    "giudica": {
@@ -3061,13 +3062,13 @@
       0
      ],
      "Temp": [
-      7,
-      7,
+      6,
+      6,
       0
      ],
      "Vol": [
-      3,
-      3,
+      2,
+      2,
       0
      ],
      "iniziativa": [
@@ -3076,19 +3077,19 @@
       0
      ],
      "lotta": [
-      5,
-      5,
+      4,
+      4,
       0
      ],
      "pf": [
-      28,
-      "12-40",
+      24,
+      "8-36",
       0
      ],
-     "pf_media": 26
+     "pf_media": 22
     },
     "file": "Bestiario/mostri/drow-noble-guard-cr5.md",
-    "provenienza": "copiate",
+    "provenienza": "a mano",
     "scarti": {},
     "template": null,
     "template_dichiarati": [],
@@ -3139,18 +3140,18 @@
        6
       ]
      ],
-     8,
+     4,
      "formula scritta"
     ],
     "dalla_fonte": null,
     "dalla_scheda": [
      {
-      "Car": 14,
-      "Cos": 14,
+      "Car": 10,
+      "Cos": 12,
       "Des": 18,
-      "For": 14,
-      "Int": 13,
-      "Sag": 12
+      "For": 13,
+      "Int": 14,
+      "Sag": 10
      },
      "letta dalla riga delle caratteristiche della scheda stessa"
     ],
@@ -3159,8 +3160,8 @@
     "numeri_della_fonte": {},
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
-    "provenienza": "copiate",
-    "senza_note": 1226,
+    "provenienza": "a mano",
+    "senza_note": 1610,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -3171,22 +3172,22 @@
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
-      2,
-      "ricavata da Temp +7 (base +5)"
+      1,
+      "ricavata da Temp +6 (base +5)"
      ],
      "Des": [
       4,
       "ricavata da Rifl +9 (base +5)"
      ],
      "Sag": [
-      1,
-      "ricavata da Vol +3 (base +2)"
+      0,
+      "ricavata da Vol +2 (base +2)"
      ]
     },
     "vincoli": {
      "cos_da_pf": [
-      14,
-      "ricavata da pf 28 su 4 DV"
+      12,
+      "ricavata da pf 24 su 4 DV"
      ],
      "des_da_iniziativa": [
       18,
@@ -3197,7 +3198,7 @@
       "letta da ca-dettaglio"
      ],
      "for_da_lotta": [
-      14,
+      12,
       "ricavata da BAB e lotta"
      ]
     }
@@ -3207,25 +3208,25 @@
     "bonus": "è quello scritto nella formula",
     "dadi": "dalla formula che la scheda scrive",
     "fascia": [
-     12,
-     40
+     8,
+     36
     ],
     "file": "Bestiario/mostri/drow-noble-guard-cr5.md",
     "legale": true,
-    "media": 26,
+    "media": 22,
     "motivo": null,
-    "nuovo": "2d10+2d6+8",
-    "pf": 28,
-    "vecchio": "2d10+2d6+8"
+    "nuovo": "2d10+2d6+4",
+    "pf": 24,
+    "vecchio": "2d10+2d6+4"
    },
    "scheda": {
     "attributi": {
-     "Car": 14,
-     "Cos": 14,
+     "Car": 10,
+     "Cos": 12,
      "Des": 18,
-     "For": 14,
-     "Int": 13,
-     "Sag": 12
+     "For": 13,
+     "Int": 14,
+     "Sag": 10
     },
     "bab": 3,
     "composizione_nota": true,
@@ -3250,15 +3251,15 @@
      }
     ],
     "gs": 5.0,
-    "lotta": 5,
+    "lotta": 4,
     "mischia": "",
-    "pf": 28,
-    "provenienza": "copiate",
+    "pf": 24,
+    "provenienza": "a mano",
     "tipo": "Medium humanoid (elf)",
     "ts": [
-     7,
+     6,
      9,
-     3
+     2
     ]
    }
   },
@@ -3266,12 +3267,12 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 16,
-     "Cos": 12,
+     "Car": 14,
+     "Cos": 11,
      "Des": 16,
-     "For": 12,
-     "Int": 14,
-     "Sag": 19
+     "For": 10,
+     "Int": 10,
+     "Sag": 17
     },
     [
      "letta dalla riga delle caratteristiche della scheda stessa"
@@ -3280,9 +3281,9 @@
    "genera_senza_fonte": [
     {
      "Car": 11,
-     "Cos": 12,
+     "Cos": 10,
      "Des": 16,
-     "For": 12,
+     "For": 10,
      "Int": 8,
      "Sag": 20
     },
@@ -3292,8 +3293,8 @@
      "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 11) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
      "Des 16 **letta da ca-dettaglio** — il vincolo batte l'array",
      "Des 16 **ricavata dall'iniziativa** — il vincolo batte l'array",
-     "Cos 12 **ricavata da pf 49 su 9 DV** — il vincolo batte l'array",
-     "For 12 **ricavata da BAB e lotta** — il vincolo batte l'array"
+     "Cos 10 **ricavata da pf 40 su 9 DV** — il vincolo batte l'array",
+     "For 10 **ricavata da BAB e lotta** — il vincolo batte l'array"
     ]
    ],
    "giudica": {
@@ -3311,13 +3312,13 @@
       0
      ],
      "Temp": [
-      7,
-      "5..8",
+      6,
+      "4..7",
       0
      ],
      "Vol": [
-      11,
-      "8..11",
+      10,
+      "7..10",
       0
      ],
      "iniziativa": [
@@ -3326,19 +3327,19 @@
       0
      ],
      "lotta": [
-      7,
-      7,
+      6,
+      6,
       0
      ],
      "pf": [
-      49,
-      "18-81",
+      40,
+      "9-72",
       0
      ],
-     "pf_media": 49
+     "pf_media": 40
     },
     "file": "Bestiario/mostri/drow-priestess9-cr11.md",
-    "provenienza": "copiate",
+    "provenienza": "a mano",
     "scarti": {},
     "template": null,
     "template_dichiarati": [],
@@ -3372,18 +3373,18 @@
        8
       ]
      ],
-     9,
+     null,
      "formula scritta"
     ],
     "dalla_fonte": null,
     "dalla_scheda": [
      {
-      "Car": 16,
-      "Cos": 12,
+      "Car": 14,
+      "Cos": 11,
       "Des": 16,
-      "For": 12,
-      "Int": 14,
-      "Sag": 19
+      "For": 10,
+      "Int": 10,
+      "Sag": 17
      },
      "letta dalla riga delle caratteristiche della scheda stessa"
     ],
@@ -3392,8 +3393,8 @@
     "numeri_della_fonte": {},
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
-    "provenienza": "copiate",
-    "senza_note": 1731,
+    "provenienza": "a mano",
+    "senza_note": 2282,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -3404,22 +3405,22 @@
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
-      3,
-      "ricavata da Temp +7 (base +4)"
+      2,
+      "ricavata da Temp +6 (base +4)"
      ],
      "Des": [
       3,
       "ricavata da Rifl +7 (base +4)"
      ],
      "Sag": [
-      7,
-      "ricavata da Vol +11 (base +4)"
+      6,
+      "ricavata da Vol +10 (base +4)"
      ]
     },
     "vincoli": {
      "cos_da_pf": [
-      12,
-      "ricavata da pf 49 su 9 DV"
+      10,
+      "ricavata da pf 40 su 9 DV"
      ],
      "des_da_iniziativa": [
       16,
@@ -3430,35 +3431,35 @@
       "letta da ca-dettaglio"
      ],
      "for_da_lotta": [
-      12,
+      10,
       "ricavata da BAB e lotta"
      ]
     }
    },
    "pf_dado_corretto": null,
    "pf_dado_corretto_forzato": {
-    "bonus": "è quello scritto nella formula",
+    "bonus": "da Cos 11",
     "dadi": "dalla formula che la scheda scrive",
     "fascia": [
-     18,
-     81
+     9,
+     72
     ],
     "file": "Bestiario/mostri/drow-priestess9-cr11.md",
     "legale": true,
-    "media": 49,
+    "media": 40,
     "motivo": null,
-    "nuovo": "9d8+9",
-    "pf": 49,
-    "vecchio": "9d8+9"
+    "nuovo": "9d8",
+    "pf": 40,
+    "vecchio": "9d8"
    },
    "scheda": {
     "attributi": {
-     "Car": 16,
-     "Cos": 12,
+     "Car": 14,
+     "Cos": 11,
      "Des": 16,
-     "For": 12,
-     "Int": 14,
-     "Sag": 19
+     "For": 10,
+     "Int": 10,
+     "Sag": 17
     },
     "bab": 6,
     "composizione_nota": true,
@@ -3474,15 +3475,15 @@
      }
     ],
     "gs": 11.0,
-    "lotta": 7,
+    "lotta": 6,
     "mischia": "",
-    "pf": 49,
-    "provenienza": "copiate",
+    "pf": 40,
+    "provenienza": "a mano",
     "tipo": "Medium humanoid (elf)",
     "ts": [
+     6,
      7,
-     7,
-     11
+     10
     ]
    }
   },
@@ -3490,11 +3491,11 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 14,
-     "Cos": 12,
-     "Des": 18,
+     "Car": 12,
+     "Cos": 11,
+     "Des": 16,
      "For": 8,
-     "Int": 20,
+     "Int": 19,
      "Sag": 12
     },
     [
@@ -3504,8 +3505,8 @@
    "genera_senza_fonte": [
     {
      "Car": 20,
-     "Cos": 12,
-     "Des": 18,
+     "Cos": 10,
+     "Des": 16,
      "For": 8,
      "Int": 12,
      "Sag": 9
@@ -3514,8 +3515,8 @@
      "array elite del Manuale del DM (creatura)",
      "variazione a seme fisso: For +1, Sag −1",
      "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 11) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
-     "Des 18 **letta da ca-dettaglio** — il vincolo batte l'array",
-     "Cos 12 **ricavata da pf 38 su 10 DV** — il vincolo batte l'array",
+     "Des 16 **letta da ca-dettaglio** — il vincolo batte l'array",
+     "Cos 10 **ricavata da pf 28 su 10 DV** — il vincolo batte l'array",
      "For 8 **ricavata da BAB e lotta** — il vincolo batte l'array"
     ]
    ],
@@ -3529,13 +3530,13 @@
       0
      ],
      "Rifl": [
-      11,
-      "8..11",
+      10,
+      "7..10",
       0
      ],
      "Temp": [
-      5,
-      "3..6",
+      4,
+      "2..5",
       0
      ],
      "Vol": [
@@ -3554,14 +3555,14 @@
       0
      ],
      "pf": [
-      38,
-      "20-64",
+      28,
+      "10-54",
       0
      ],
-     "pf_media": 42
+     "pf_media": 32
     },
     "file": "Bestiario/mostri/drow-trickster-arcano-cr11.md",
-    "provenienza": "copiate",
+    "provenienza": "a mano",
     "scarti": {},
     "template": null,
     "template_dichiarati": [],
@@ -3627,11 +3628,11 @@
     "dalla_fonte": null,
     "dalla_scheda": [
      {
-      "Car": 14,
-      "Cos": 12,
-      "Des": 18,
+      "Car": 12,
+      "Cos": 11,
+      "Des": 16,
       "For": 8,
-      "Int": 20,
+      "Int": 19,
       "Sag": 12
      },
      "letta dalla riga delle caratteristiche della scheda stessa"
@@ -3641,8 +3642,8 @@
     "numeri_della_fonte": {},
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
-    "provenienza": "copiate",
-    "senza_note": 3489,
+    "provenienza": "a mano",
+    "senza_note": 4109,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -3651,12 +3652,12 @@
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
-      3,
-      "ricavata da Temp +5 (base +2)"
+      2,
+      "ricavata da Temp +4 (base +2)"
      ],
      "Des": [
-      7,
-      "ricavata da Rifl +11 (base +4)"
+      6,
+      "ricavata da Rifl +10 (base +4)"
      ],
      "Sag": [
       3,
@@ -3665,12 +3666,12 @@
     },
     "vincoli": {
      "cos_da_pf": [
-      12,
-      "ricavata da pf 38 su 10 DV"
+      10,
+      "ricavata da pf 28 su 10 DV"
      ],
      "des_da_iniziativa": null,
      "des_vincolata": [
-      18,
+      16,
       "letta da ca-dettaglio"
      ],
      "for_da_lotta": [
@@ -3681,27 +3682,27 @@
    },
    "pf_dado_corretto": null,
    "pf_dado_corretto_forzato": {
-    "bonus": "da Cos 12",
+    "bonus": "da Cos 11",
     "dadi": "dalla formula che la scheda scrive",
     "fascia": [
-     20,
-     56
+     10,
+     46
     ],
     "file": "Bestiario/mostri/drow-trickster-arcano-cr11.md",
     "legale": true,
-    "media": 38,
+    "media": 28,
     "motivo": null,
-    "nuovo": "3d6+7d4+10",
-    "pf": 38,
-    "vecchio": "3d6+7d4+10"
+    "nuovo": "3d6+7d4",
+    "pf": 28,
+    "vecchio": "3d6+7d4"
    },
    "scheda": {
     "attributi": {
-     "Car": 14,
-     "Cos": 12,
-     "Des": 18,
+     "Car": 12,
+     "Cos": 11,
+     "Des": 16,
      "For": 8,
-     "Int": 20,
+     "Int": 19,
      "Sag": 12
     },
     "bab": 5,
@@ -3738,12 +3739,12 @@
     "gs": 11.0,
     "lotta": 4,
     "mischia": "stocco perfetto +5 (1d6−1/18-20)",
-    "pf": 38,
-    "provenienza": "copiate",
+    "pf": 28,
+    "provenienza": "a mano",
     "tipo": "Medium humanoid (elf), NE",
     "ts": [
-     5,
-     11,
+     4,
+     10,
      8
     ]
    }
@@ -8385,18 +8386,15 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 10,
-     "Cos": 14,
-     "Des": 16,
-     "For": 16,
+     "Car": 8,
+     "Cos": 15,
+     "Des": 17,
+     "For": 17,
      "Int": 10,
      "Sag": 10
     },
     [
-     "trascritta dalla fonte `00_Hell Hound-mezzoimmondi-cr4.pcg`",
-     "⚠ Des 16 letta da ca-dettaglio: la fonte dice 11, lo statblocco è stato adattato e vince lo statblocco",
-     "⚠ Cos 14 ricavata da pf 26 su 4 DV: la fonte dice 11, lo statblocco è stato adattato e vince lo statblocco",
-     "⚠ For 16 ricavata da BAB e lotta: la fonte dice 11, lo statblocco è stato adattato e vince lo statblocco"
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ]
    ],
    "genera_senza_fonte": [
@@ -8518,7 +8516,17 @@
      },
      "trascritta dalla fonte `00_Hell Hound-mezzoimmondi-cr4.pcg`"
     ],
-    "dalla_scheda": null,
+    "dalla_scheda": [
+     {
+      "Car": 8,
+      "Cos": 15,
+      "Des": 17,
+      "For": 17,
+      "Int": 10,
+      "Sag": 10
+     },
+     "letta dalla riga delle caratteristiche della scheda stessa"
+    ],
     "dv_totali": 4,
     "iniziativa_ambigua": null,
     "numeri_della_fonte": {},
@@ -14135,12 +14143,12 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 8,
-     "Cos": 20,
-     "Des": 10,
-     "For": 20,
-     "Int": 12,
-     "Sag": 11
+     "Car": 10,
+     "Cos": 14,
+     "Des": 11,
+     "For": 22,
+     "Int": 10,
+     "Sag": 10
     },
     [
      "letta dalla riga delle caratteristiche della scheda stessa"
@@ -14149,9 +14157,9 @@
    "genera_senza_fonte": [
     {
      "Car": 7,
-     "Cos": 20,
+     "Cos": 14,
      "Des": 10,
-     "For": 20,
+     "For": 22,
      "Int": 7,
      "Sag": 7
     },
@@ -14162,8 +14170,8 @@
      "modificatori razziali SRD: orc For +4 Int -2 Sag -2 Car -2",
      "Des 10 **derivata dalla CA di contatto** — il vincolo batte l'array",
      "Des 10 **ricavata dall'iniziativa** — il vincolo batte l'array",
-     "Cos 20 **ricavata da pf 63 su 6 DV** — il vincolo batte l'array",
-     "For 20 **ricavata da BAB e lotta** — il vincolo batte l'array"
+     "Cos 14 **ricavata da pf 45 su 6 DV** — il vincolo batte l'array",
+     "For 22 **ricavata da BAB e lotta** — il vincolo batte l'array"
     ]
    ],
    "giudica": {
@@ -14181,8 +14189,8 @@
       0
      ],
      "Temp": [
-      10,
-      10,
+      7,
+      7,
       0
      ],
      "Vol": [
@@ -14191,8 +14199,8 @@
       0
      ],
      "attacco": [
-      13,
-      13,
+      14,
+      14,
       0
      ],
      "iniziativa": [
@@ -14201,16 +14209,16 @@
       0
      ],
      "lotta": [
-      11,
-      11,
+      12,
+      12,
       0
      ],
      "pf": [
-      63,
-      "36-90",
+      45,
+      "18-72",
       0
      ],
-     "pf_media": 63
+     "pf_media": 45
     },
     "file": "Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md",
     "provenienza": "a mano",
@@ -14247,18 +14255,18 @@
        10
       ]
      ],
-     30,
+     12,
      "pf-dado"
     ],
     "dalla_fonte": null,
     "dalla_scheda": [
      {
-      "Car": 8,
-      "Cos": 20,
-      "Des": 10,
-      "For": 20,
-      "Int": 12,
-      "Sag": 11
+      "Car": 10,
+      "Cos": 14,
+      "Des": 11,
+      "For": 22,
+      "Int": 10,
+      "Sag": 10
      },
      "letta dalla riga delle caratteristiche della scheda stessa"
     ],
@@ -14268,7 +14276,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 4324,
+    "senza_note": 5402,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -14278,8 +14286,8 @@
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
-      5,
-      "ricavata da Temp +10 (base +5)"
+      2,
+      "ricavata da Temp +7 (base +5)"
      ],
      "Des": [
       0,
@@ -14292,8 +14300,8 @@
     },
     "vincoli": {
      "cos_da_pf": [
-      20,
-      "ricavata da pf 63 su 6 DV"
+      14,
+      "ricavata da pf 45 su 6 DV"
      ],
      "des_da_iniziativa": [
       10,
@@ -14304,35 +14312,35 @@
       "derivata dalla CA di contatto"
      ],
      "for_da_lotta": [
-      20,
+      22,
       "ricavata da BAB e lotta"
      ]
     }
    },
    "pf_dado_corretto": null,
    "pf_dado_corretto_forzato": {
-    "bonus": "da Cos 20",
+    "bonus": "da Cos 14",
     "dadi": "dalle classi del `tipo` coi dadi SRD",
     "fascia": [
-     36,
-     90
+     18,
+     72
     ],
     "file": "Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md",
     "legale": true,
-    "media": 63,
+    "media": 45,
     "motivo": null,
-    "nuovo": "6d10+30",
-    "pf": 63,
-    "vecchio": "6d10+30"
+    "nuovo": "6d10+12",
+    "pf": 45,
+    "vecchio": "6d10+12"
    },
    "scheda": {
     "attributi": {
-     "Car": 8,
-     "Cos": 20,
-     "Des": 10,
-     "For": 20,
-     "Int": 12,
-     "Sag": 11
+     "Car": 10,
+     "Cos": 14,
+     "Des": 11,
+     "For": 22,
+     "Int": 10,
+     "Sag": 10
     },
     "bab": 6,
     "composizione_nota": true,
@@ -14348,13 +14356,13 @@
      }
     ],
     "gs": 7.0,
-    "lotta": 11,
-    "mischia": "ascia bipenne +1 +13/+8 (1d12+10/x3)",
-    "pf": 63,
+    "lotta": 12,
+    "mischia": "ascia bipenne +1 +14/+9 (1d12+12/x3)",
+    "pf": 45,
     "provenienza": "a mano",
     "tipo": "Medium humanoid (orc), Guerriero 6, LM",
     "ts": [
-     10,
+     7,
      2,
      4
     ]
@@ -18150,18 +18158,11 @@
      "Cos": 16,
      "Des": 12,
      "For": 16,
-     "Int": 9,
-     "Sag": 11
+     "Int": 10,
+     "Sag": 14
     },
     [
-     "array elite del Manuale del DM (PNG con classe)",
-     "variazione a seme fisso: Int +1, Sag −1",
-     "un avanzamento ogni 4 livelli, contati sul GS 8 — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
-     "modificatori razziali SRD: dwarf Cos +2 Car -2",
-     "Des 12 **letta da ca-dettaglio** — il vincolo batte l'array",
-     "Des 12 **ricavata dall'iniziativa** — il vincolo batte l'array",
-     "Cos 16 **ricavata da pf 76 su 8 DV** — il vincolo batte l'array",
-     "For 16 **ricavata da BAB e lotta** — il vincolo batte l'array"
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ]
    ],
    "genera_senza_fonte": [
@@ -18269,7 +18270,17 @@
      "pf-dado"
     ],
     "dalla_fonte": null,
-    "dalla_scheda": null,
+    "dalla_scheda": [
+     {
+      "Car": 15,
+      "Cos": 16,
+      "Des": 12,
+      "For": 16,
+      "Int": 10,
+      "Sag": 14
+     },
+     "letta dalla riga delle caratteristiche della scheda stessa"
+    ],
     "dv_totali": 8,
     "iniziativa_ambigua": null,
     "numeri_della_fonte": {},
@@ -18625,21 +18636,15 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 13,
+     "Car": 16,
      "Cos": 14,
      "Des": 12,
      "For": 10,
-     "Int": 8,
-     "Sag": 19
+     "Int": 12,
+     "Sag": 24
     },
     [
-     "array elite del Manuale del DM (PNG con classe)",
-     "variazione a seme fisso: Car +1, Des −1",
-     "un avanzamento ogni 4 livelli, contati sul GS 17 — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
-     "Des 12 **letta da ca-dettaglio** — il vincolo batte l'array",
-     "Des 12 **ricavata dall'iniziativa** — il vincolo batte l'array",
-     "Cos 14 **ricavata da pf 110 su 17 DV** — il vincolo batte l'array",
-     "For 10 **ricavata da BAB e lotta** — il vincolo batte l'array"
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ]
    ],
    "genera_senza_fonte": [
@@ -18747,7 +18752,17 @@
      "pf-dado"
     ],
     "dalla_fonte": null,
-    "dalla_scheda": null,
+    "dalla_scheda": [
+     {
+      "Car": 16,
+      "Cos": 14,
+      "Des": 12,
+      "For": 10,
+      "Int": 12,
+      "Sag": 24
+     },
+     "letta dalla riga delle caratteristiche della scheda stessa"
+    ],
     "dv_totali": 17,
     "iniziativa_ambigua": null,
     "numeri_della_fonte": {},
@@ -18848,21 +18863,15 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 12,
+     "Car": 10,
      "Cos": 14,
      "Des": 16,
      "For": 8,
-     "Int": 19,
-     "Sag": 11
+     "Int": 24,
+     "Sag": 14
     },
     [
-     "array elite del Manuale del DM (PNG con classe)",
-     "variazione a seme fisso: Sag +1, Cos −1",
-     "un avanzamento ogni 4 livelli, contati sul GS 17 — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
-     "Des 16 **letta da ca-dettaglio** — il vincolo batte l'array",
-     "Des 16 **ricavata dall'iniziativa** — il vincolo batte l'array",
-     "Cos 14 **ricavata da pf 76 su 17 DV** — il vincolo batte l'array",
-     "For 8 **ricavata da BAB e lotta** — il vincolo batte l'array"
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ]
    ],
    "genera_senza_fonte": [
@@ -18969,7 +18978,17 @@
      "pf-dado"
     ],
     "dalla_fonte": null,
-    "dalla_scheda": null,
+    "dalla_scheda": [
+     {
+      "Car": 10,
+      "Cos": 14,
+      "Des": 16,
+      "For": 8,
+      "Int": 24,
+      "Sag": 14
+     },
+     "letta dalla riga delle caratteristiche della scheda stessa"
+    ],
     "dv_totali": 17,
     "iniziativa_ambigua": null,
     "numeri_della_fonte": {},
@@ -19335,7 +19354,7 @@
      "Car": 6,
      "Cos": 16,
      "Des": 13,
-     "For": 20,
+     "For": 18,
      "Int": 10,
      "Sag": 12
     },
@@ -19348,7 +19367,7 @@
      "Car": 7,
      "Cos": 16,
      "Des": 12,
-     "For": 20,
+     "For": 18,
      "Int": 8,
      "Sag": 11
     },
@@ -19360,7 +19379,7 @@
      "Des 12 **letta da ca-dettaglio** — il vincolo batte l'array",
      "Des 12 **ricavata dall'iniziativa** — il vincolo batte l'array",
      "Cos 16 **ricavata da pf 54 su 6 DV** — il vincolo batte l'array",
-     "For 20 **ricavata da BAB e lotta** — il vincolo batte l'array"
+     "For 18 **ricavata da BAB e lotta** — il vincolo batte l'array"
     ]
    ],
    "giudica": {
@@ -19388,8 +19407,8 @@
       0
      ],
      "attacco": [
-      13,
-      13,
+      12,
+      12,
       0
      ],
      "iniziativa": [
@@ -19398,8 +19417,8 @@
       0
      ],
      "lotta": [
-      11,
-      11,
+      10,
+      10,
       0
      ],
      "pf": [
@@ -19463,7 +19482,7 @@
       "Car": 6,
       "Cos": 16,
       "Des": 13,
-      "For": 20,
+      "For": 18,
       "Int": 10,
       "Sag": 12
      },
@@ -19475,7 +19494,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 4577,
+    "senza_note": 4914,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/00-underdark-grr6-Bothor-Malvur.pcg",
@@ -19527,7 +19546,7 @@
       "letta da ca-dettaglio"
      ],
      "for_da_lotta": [
-      20,
+      18,
       "ricavata da BAB e lotta"
      ]
     }
@@ -19553,7 +19572,7 @@
      "Car": 6,
      "Cos": 16,
      "Des": 13,
-     "For": 20,
+     "For": 18,
      "Int": 10,
      "Sag": 12
     },
@@ -19571,8 +19590,8 @@
      }
     ],
     "gs": 6.0,
-    "lotta": 11,
-    "mischia": "ascia da guerra nanica +1 +13/+8 (1d10+8/x3)",
+    "lotta": 10,
+    "mischia": "ascia da guerra nanica +1 +12/+7 (1d10+7/x3)",
     "pf": 54,
     "provenienza": "a mano",
     "tipo": "Medium humanoid (dwarf), Fighter 6, allineamento non salvato (NONE)",
@@ -19847,22 +19866,15 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 16,
+     "Car": 17,
      "Cos": 20,
      "Des": 12,
      "For": 22,
-     "Int": 8,
+     "Int": 10,
      "Sag": 12
     },
     [
-     "array elite del Manuale del DM (PNG con classe)",
-     "variazione a seme fisso: Des +1, Cos −1",
-     "un avanzamento ogni 4 livelli, contati sul GS 12 — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
-     "modificatori razziali SRD: dwarf Cos +2 Car -2",
-     "Des 12 **letta da ca-dettaglio** — il vincolo batte l'array",
-     "Des 12 **ricavata dall'iniziativa** — il vincolo batte l'array",
-     "Cos 20 **ricavata da pf 126 su 12 DV** — il vincolo batte l'array",
-     "For 22 **ricavata da BAB e lotta** — il vincolo batte l'array"
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ]
    ],
    "genera_senza_fonte": [
@@ -19970,7 +19982,17 @@
      "pf-dado"
     ],
     "dalla_fonte": null,
-    "dalla_scheda": null,
+    "dalla_scheda": [
+     {
+      "Car": 17,
+      "Cos": 20,
+      "Des": 12,
+      "For": 22,
+      "Int": 10,
+      "Sag": 12
+     },
+     "letta dalla riga delle caratteristiche della scheda stessa"
+    ],
     "dv_totali": 12,
     "iniziativa_ambigua": null,
     "numeri_della_fonte": {},
@@ -21391,22 +21413,15 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 10,
+     "Car": 24,
      "Cos": 22,
      "Des": 18,
      "For": 30,
-     "Int": 8,
-     "Sag": 11
+     "Int": 18,
+     "Sag": 20
     },
     [
-     "array elite del Manuale del DM (creatura)",
-     "variazione a seme fisso: Des +1, Sag −1",
-     "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 17) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
-     "taglia (SRD, Improving Monsters): For +16, Des -4, Cos +8",
-     "Des 18 **letta da ca-dettaglio** — il vincolo batte l'array",
-     "Des 18 **ricavata dall'iniziativa** — il vincolo batte l'array",
-     "Cos 22 **ricavata da pf 230 su 20 DV** — il vincolo batte l'array",
-     "For 30 **ricavata da BAB e lotta** — il vincolo batte l'array"
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ]
    ],
    "genera_senza_fonte": [
@@ -21492,7 +21507,17 @@
      "formula scritta"
     ],
     "dalla_fonte": null,
-    "dalla_scheda": null,
+    "dalla_scheda": [
+     {
+      "Car": 24,
+      "Cos": 22,
+      "Des": 18,
+      "For": 30,
+      "Int": 18,
+      "Sag": 20
+     },
+     "letta dalla riga delle caratteristiche della scheda stessa"
+    ],
     "dv_totali": 20,
     "iniziativa_ambigua": null,
     "numeri_della_fonte": {},
@@ -21581,22 +21606,15 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 10,
+     "Car": 16,
      "Cos": 20,
      "Des": 12,
      "For": 20,
-     "Int": 9,
-     "Sag": 19
+     "Int": 12,
+     "Sag": 22
     },
     [
-     "array elite del Manuale del DM (PNG con classe)",
-     "variazione a seme fisso: Int +1, Cos −1",
-     "un avanzamento ogni 4 livelli, contati sul GS 17 — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
-     "modificatori razziali SRD: goblin For -2 Des +2 Car -2",
-     "Des 12 **letta da ca-dettaglio** — il vincolo batte l'array",
-     "Des 12 **ricavata dall'iniziativa** — il vincolo batte l'array",
-     "Cos 20 **ricavata da pf 156 su 16 DV** — il vincolo batte l'array",
-     "For 20 **ricavata da BAB e lotta** — il vincolo batte l'array"
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ]
    ],
    "genera_senza_fonte": [
@@ -21722,7 +21740,17 @@
      "formula scritta"
     ],
     "dalla_fonte": null,
-    "dalla_scheda": null,
+    "dalla_scheda": [
+     {
+      "Car": 16,
+      "Cos": 20,
+      "Des": 12,
+      "For": 20,
+      "Int": 12,
+      "Sag": 22
+     },
+     "letta dalla riga delle caratteristiche della scheda stessa"
+    ],
     "dv_totali": 16,
     "iniziativa_ambigua": null,
     "numeri_della_fonte": {},
@@ -23190,21 +23218,15 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 11,
+     "Car": 16,
      "Cos": 14,
      "Des": 14,
      "For": 12,
      "Int": 18,
-     "Sag": 11
+     "Sag": 16
     },
     [
-     "array elite del Manuale del DM (PNG con classe)",
-     "variazione a seme fisso: Car +1, Sag −1",
-     "un avanzamento ogni 4 livelli, contati sul GS 12 — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
-     "Des 14 **letta da ca-dettaglio** — il vincolo batte l'array",
-     "Des 14 **ricavata dall'iniziativa** — il vincolo batte l'array",
-     "Cos 14 **ricavata da pf 73 su 12 DV** — il vincolo batte l'array",
-     "For 12 **ricavata da BAB e lotta** — il vincolo batte l'array"
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ]
    ],
    "genera_senza_fonte": [
@@ -23328,7 +23350,17 @@
      "formula scritta"
     ],
     "dalla_fonte": null,
-    "dalla_scheda": null,
+    "dalla_scheda": [
+     {
+      "Car": 16,
+      "Cos": 14,
+      "Des": 14,
+      "For": 12,
+      "Int": 18,
+      "Sag": 16
+     },
+     "letta dalla riga delle caratteristiche della scheda stessa"
+    ],
     "dv_totali": 12,
     "iniziativa_ambigua": null,
     "numeri_della_fonte": {},
@@ -23946,17 +23978,15 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 12,
+     "Car": 14,
      "Cos": 16,
      "Des": 10,
      "For": 16,
-     "Int": 8,
+     "Int": 12,
      "Sag": 18
     },
     [
-     "trascritta dalla fonte `abbathor_clerics11.htm`",
-     "⚠ Cos 16 ricavata da pf 86 su 11 DV: la fonte dice 14, lo statblocco è stato adattato e vince lo statblocco",
-     "⚠ For 16 ricavata da BAB e lotta: la fonte dice 14, lo statblocco è stato adattato e vince lo statblocco"
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ]
    ],
    "genera_senza_fonte": [
@@ -24075,7 +24105,17 @@
      },
      "trascritta dalla fonte `abbathor_clerics11.htm`"
     ],
-    "dalla_scheda": null,
+    "dalla_scheda": [
+     {
+      "Car": 14,
+      "Cos": 16,
+      "Des": 10,
+      "For": 16,
+      "Int": 12,
+      "Sag": 18
+     },
+     "letta dalla riga delle caratteristiche della scheda stessa"
+    ],
     "dv_totali": 11,
     "iniziativa_ambigua": null,
     "numeri_della_fonte": {
@@ -25017,22 +25057,15 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 22,
+     "Car": 17,
      "Cos": "—",
      "Des": 10,
      "For": 18,
-     "Int": 12,
-     "Sag": 11
+     "Int": "—",
+     "Sag": 15
     },
     [
-     "array elite del Manuale del DM (creatura)",
-     "variazione a seme fisso: Sag +1, For −1",
-     "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 14) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
-     "taglia (SRD, Improving Monsters): For +8, Des -2, Cos +4",
-     "Des 10 **derivata dalla CA di contatto** — il vincolo batte l'array",
-     "Des 10 **ricavata dall'iniziativa** — il vincolo batte l'array",
-     "For 18 **ricavata da BAB e lotta** — il vincolo batte l'array",
-     "Cos — : non morto, nessun punteggio di Costituzione (SRD, tipo Undead)"
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ]
    ],
    "genera_senza_fonte": [
@@ -25118,7 +25151,17 @@
      "pf-dado"
     ],
     "dalla_fonte": null,
-    "dalla_scheda": null,
+    "dalla_scheda": [
+     {
+      "Car": 17,
+      "Cos": "—",
+      "Des": 10,
+      "For": 18,
+      "Int": "—",
+      "Sag": 15
+     },
+     "letta dalla riga delle caratteristiche della scheda stessa"
+    ],
     "dv_totali": 16,
     "iniziativa_ambigua": null,
     "numeri_della_fonte": {},
@@ -26461,17 +26504,15 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 14,
-     "Cos": 22,
+     "Car": 16,
+     "Cos": 23,
      "Des": 10,
-     "For": 26,
-     "Int": 14,
-     "Sag": 15
+     "For": 27,
+     "Int": 16,
+     "Sag": 17
     },
     [
-     "trascritta dalla fonte `Ozzyrandion green 8 liv.htm`",
-     "⚠ Cos 22 ricavata da pf 275 su 22 DV: la fonte dice 19, lo statblocco è stato adattato e vince lo statblocco",
-     "⚠ For 26 ricavata da BAB e lotta: la fonte dice 19, lo statblocco è stato adattato e vince lo statblocco"
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ]
    ],
    "genera_senza_fonte": [
@@ -26591,7 +26632,17 @@
      },
      "trascritta dalla fonte `Ozzyrandion green 8 liv.htm`"
     ],
-    "dalla_scheda": null,
+    "dalla_scheda": [
+     {
+      "Car": 16,
+      "Cos": 23,
+      "Des": 10,
+      "For": 27,
+      "Int": 16,
+      "Sag": 17
+     },
+     "letta dalla riga delle caratteristiche della scheda stessa"
+    ],
     "dv_totali": 22,
     "iniziativa_ambigua": null,
     "numeri_della_fonte": {
@@ -44565,16 +44616,6 @@
     "scritta": "attributi: For 12 Des 16 Cos — Int 15 Sag 14 Car 16"
    },
    {
-    "file": "Bestiario/mostri/drow-assassina-lolth-cr10.md",
-    "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ Cos 12 ricavata da pf 40 su 9 DV, ma la scheda scrive 10: si tiene la scheda, da verificare.",
-    "note": [
-     "letta dalla riga delle caratteristiche della scheda stessa",
-     "⚠ Cos 12 ricavata da pf 40 su 9 DV, ma la scheda scrive 10: si tiene la scheda, da verificare."
-    ],
-    "riga": "attributi: For 12 Des 20 Cos 10 Int 18 Sag 12 Car 14",
-    "scritta": "attributi: For 12 Des 20 Cos 10 Int 18 Sag 12 Car 14"
-   },
-   {
     "file": "Bestiario/mostri/drow-fighter3-cr4.md",
     "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ Cos 14 ricavata da pf 22 su 3 DV, ma la scheda scrive 12: si tiene la scheda, da verificare.",
     "note": [
@@ -44583,33 +44624,6 @@
     ],
     "riga": "attributi: For 14 Des 16 Cos 12 Int 12 Sag 13 Car 12",
     "scritta": "attributi: For 14 Des 16 Cos 12 Int 12 Sag 13 Car 12"
-   },
-   {
-    "file": "Bestiario/mostri/drow-noble-guard-cr5.md",
-    "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.",
-    "note": [
-     "letta dalla riga delle caratteristiche della scheda stessa"
-    ],
-    "riga": "attributi: For 14 Des 18 Cos 14 Int 13 Sag 12 Car 14",
-    "scritta": "attributi: For 14 Des 18 Cos 14 Int 13 Sag 12 Car 14"
-   },
-   {
-    "file": "Bestiario/mostri/drow-priestess9-cr11.md",
-    "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.",
-    "note": [
-     "letta dalla riga delle caratteristiche della scheda stessa"
-    ],
-    "riga": "attributi: For 12 Des 16 Cos 12 Int 14 Sag 19 Car 16",
-    "scritta": "attributi: For 12 Des 16 Cos 12 Int 14 Sag 19 Car 16"
-   },
-   {
-    "file": "Bestiario/mostri/drow-trickster-arcano-cr11.md",
-    "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.",
-    "note": [
-     "letta dalla riga delle caratteristiche della scheda stessa"
-    ],
-    "riga": "attributi: For 8 Des 18 Cos 12 Int 20 Sag 12 Car 14",
-    "scritta": "attributi: For 8 Des 18 Cos 12 Int 20 Sag 12 Car 14"
    },
    {
     "file": "Bestiario/mostri/drow-warrior-cr1.md",
@@ -45597,25 +45611,6 @@
       }
      ],
      [
-      "drow-assassina-lolth-cr10.md",
-      {
-       "Car": 14,
-       "Cos": 10,
-       "Des": 20,
-       "For": 12,
-       "Int": 18,
-       "Sag": 12
-      },
-      {
-       "Car": 20,
-       "Cos": 12,
-       "Des": 20,
-       "For": 12,
-       "Int": 13,
-       "Sag": 10
-      }
-     ],
-     [
       "drow-fighter3-cr4.md",
       {
        "Car": 12,
@@ -45632,63 +45627,6 @@
        "For": 14,
        "Int": 11,
        "Sag": 12
-      }
-     ],
-     [
-      "drow-noble-guard-cr5.md",
-      {
-       "Car": 14,
-       "Cos": 14,
-       "Des": 18,
-       "For": 14,
-       "Int": 13,
-       "Sag": 12
-      },
-      {
-       "Car": 9,
-       "Cos": 14,
-       "Des": 18,
-       "For": 14,
-       "Int": 10,
-       "Sag": 12
-      }
-     ],
-     [
-      "drow-priestess9-cr11.md",
-      {
-       "Car": 16,
-       "Cos": 12,
-       "Des": 16,
-       "For": 12,
-       "Int": 14,
-       "Sag": 19
-      },
-      {
-       "Car": 11,
-       "Cos": 12,
-       "Des": 16,
-       "For": 12,
-       "Int": 8,
-       "Sag": 20
-      }
-     ],
-     [
-      "drow-trickster-arcano-cr11.md",
-      {
-       "Car": 14,
-       "Cos": 12,
-       "Des": 18,
-       "For": 8,
-       "Int": 20,
-       "Sag": 12
-      },
-      {
-       "Car": 20,
-       "Cos": 12,
-       "Des": 18,
-       "For": 8,
-       "Int": 12,
-       "Sag": 9
       }
      ],
      [
@@ -46262,18 +46200,18 @@
       }
      ]
     ],
-    "entro_1_mod": 0.84,
-    "file": 43,
+    "entro_1_mod": 0.86,
+    "file": 39,
     "insieme": "schede",
-    "mae": 1.45,
-    "mae_mod": 0.66,
+    "mae": 1.38,
+    "mae_mod": 0.61,
     "per_caratteristica": {
-     "Car": 2.81,
-     "Cos": 0.35,
-     "Des": 0.21,
-     "For": 0.6,
-     "Int": 3.07,
-     "Sag": 1.63
+     "Car": 2.54,
+     "Cos": 0.33,
+     "Des": 0.23,
+     "For": 0.67,
+     "Int": 2.82,
+     "Sag": 1.64
     }
    }
   }

@@ -1026,10 +1026,10 @@ Scheda intera: `Bestiario/mostri/hobgoblin-sergente-cr5.md` `[CANONE — DM 2026
 ### **OROG GUARDIE NERE**
 *Guardia del Corpo del Generale, 4ª Linea (1 Unità d'Élite di 4 Orog)*
 
-> Uno contro uno: `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md` (Guerriero 6, GS 7, CA 19, pf 63, ascia bipenne +1 +13/+8, 1d12+10). ⚠ **Non SRD**: l'orog è `[Private source — Monsters of Faerûn / Races of Faerûn]` `[CANONE — DM 2026-10-19, D10]`.
+> Uno contro uno: `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md` (Guerriero 6, GS 7, CA 21, pf 45, ascia bipenne +1 +14/+9, 1d12+12; caratteristiche rifatte con la serie d'élite più la razza, card del DM del 2026-11-20). ⚠ **Non SRD**: l'orog è `[Private source — Monsters of Faerûn / Races of Faerûn]` `[CANONE — DM 2026-10-19, D10]`.
 
-**PFU:** 13/13 | **DU:** 19 | **Morale Iniziale:** +3
-**AU (Ascia Bipenne+1):** +13 | **Danno:** 1d12+7 `[CANONE — DM 2026-11-09: l'AU è l'attacco della creatura singola (§4), senza il +2 della variante 2d6: +13 è l'ascia della scheda uno contro uno. Era +12, poi +15 per errore]`
+**PFU:** 13/13 | **DU:** 21 | **Morale Iniziale:** +3
+**AU (Ascia Bipenne+1):** +14 | **Danno:** 1d12+7 `[CANONE — DM 2026-11-09: l'AU è l'attacco della creatura singola (§4), senza il +2 della variante 2d6: è l'ascia della scheda uno contro uno. Era +12, poi +15 per errore, poi +13; +14 e DU 21 dal 2026-11-20, quando la scheda è stata rifatta con la serie d'élite (card del DM)]`
 **Movimento:** 6m
 
 **Capacità Speciali:**

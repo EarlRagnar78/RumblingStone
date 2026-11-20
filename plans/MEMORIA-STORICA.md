@@ -2409,3 +2409,14 @@ repo scritto con altre parole.
 - **Testo:** Jfs ha scelto sulla card del thread della prosa di togliere le etichette dei pilastri («Read-aloud (Andor lead)», «(pilastro GoT)») da tutte le stampe, tenendole nel sorgente: servono a chi scrive e a `misura_craft`. Il filtro sta in `leggi_per_la_stampa`, quindi vale per Typst e per Homebrewery, e non tocca i master. Togliere «(Mercer lead)» da un riquadro ha accorciato di una riga la colonna e ha spostato una voce d'elenco a cavallo della pagina 102, che è una tabella a pagina piena: typst 0.15.2 rifiuta allora PDF/UA-1 con «invalid list (L) structure», e il motore ripiega sul PDF senza standard. Come si trova: applicare al `.typ` di main le righe cambiate una alla volta (qui una sola), poi provare a tenere insieme ogni lista dopo quella riga. Tenere insieme ogni voce nel tema chiude il bug ma manda 27 righe fuori margine nella serata e aggiunge da 2 a 3 pagine a volume: scartato. Si è diviso in due il capoverso «Dal round 3 si smette» di DEF-4, senza cambiare parole. Il bug può tornare con qualunque modifica che sposti le pagine
 - **Trovato nel repo:** `scripts/dmcore/testo.py` · `scripts/tests/test_etichette_pilastri.py` · `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md`
 - **Solo qui:** l'export avvisa con «non è PDF/A» ma esce verde: in CI il ripiego non ferma niente, e lo si vede solo leggendo l'avviso o ricompilando con gli standard
+
+### MS-0214 · 2026-11-20 · Karkilan e l'orco berserk avevano l'ira dentro i numeri base
+
+- **Data:** 2026-11-20
+- **PR:** —
+- **ADR:** ADR-0118
+- **Temi:** pcgen pcg razza ira barbaro karkilan orco berserk card verifica-scheda
+- **Origine:** riga del 2026-11-20 «Caratteristiche dal .pcg: l'ira dentro i numeri» in `plans/CHANGELOG.md`
+- **Testo:** il thread del volume ha trovato che il .pcg di PCGen salva le caratteristiche prima dei modificatori di razza. Su 13 schede del Bestiario che citano un .pcg, il difetto della razza tocca l'hobgoblin regular 4 (corretto nella #505) e l'orco regular 4. Il confronto ha trovato un secondo difetto: gli export di Karkilan e dell'orco berserk 2 erano salvati in ira, e l'orco aggiungeva l'ira una seconda volta nella sua riga. Il DM ha scelto i numeri base fuori ira con l'ira nella sua riga.
+- **Trovato nel repo:** `Bestiario/villain/minotauro-karkilan-cr5.md` · `Bestiario/mostri/orco-berserk-barbaro2-cr2.md` · `08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md`
+- **Solo qui:** `verifica_scheda.py` non lo vede: non conosce la razza né sa se un export è in ira; il controllo è `/mnt/project-files/revisione-arkalseif-2026-11-19/pcgcheck.py`, fuori dal repo. Il controllo della lotta legge come lotta base anche una «Lotta» scritta dentro la riga Ira: per questo la lotta in ira sta solo nella riga delle Statistiche. Resta aperta la card dell'orco regular 4 (For 18, falchion +9).

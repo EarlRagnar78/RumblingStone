@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-20 | SISTEMI-DI-GIOCO-PLUGIN | Caratteristiche dal .pcg: l'ira dentro i numeri di Karkilan e dell'orco berserk… | Segnalazione del thread del volume: il .pcg salva le caratteristiche prima della razza. Misurate le 13 schede del Bestiario che citano un .pcg contro main 2af9… |
 | 2026-11-19 | STANDARD-STAMPA | Le etichette dei pilastri non si stampano (card di Jfs del 19/11 nel thread del… | ✅ etichette nelle stampe di ARC-07 da 245 a 0 nei booklet (serata 22, notte e alba 41, resurrezione 86, ritorno alla Forgia 25, Terros 31, mille anni 40) e da… |
 | 2026-11-19 | STANDARD-STAMPA | ADR-0145, i ruoli nel manifest e l'ordine come cancello (richiesta di Jfs del 1… | ✅ etichette dal manifest uguali a quelle dei file di regole: 128 sezioni su 128 nella serata, 398 su 398 nel volume; difetti d'ordine 0 e 0; un manifest rotto… |
 | 2026-11-19 | STANDARD-STAMPA | ADR-0145, segnalibri annidati (richiesta di Jfs del 19/11, 14:07: chiudere i li… | ✅ segnalibri da piatti a quattro livelli: serata 143 voci con 20 al primo livello, volume 439 con 13; PDF/UA-1 e PDF/A-2a restano; rimandi 113 su 113 e 242 su… |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-19 | STANDARD-STAMPA | ADR-0144: due stampe per arco e rimandi con il numero di pagina. Nuovo volume d… | ✅ `misura_rimandi.py`: serata da 0/107 a 100/108 rimandi con pagina, tutti giusti, titoli non trovati da 8 a 1; volume d'arco 236/242 con la pagina giusta. Ser… |
 | 2026-11-19 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, rilettura completa dei lotti 1-4 contro le schede: d… | ✅ contraddizioni fra la tattica e la sua scheda nei lotti 1-4: da 2 a 0; Tordek convinto da Xal'thor dal 35% al 27% dei duelli (20.000 prove, seme 1372), mai m… |
 | 2026-11-19 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, Palio: i sicari di Sonjak possono puntare il cavallo… | ✅ file del Palio che danno ai sicari un obiettivo diverso dagli altri: da 1 (STATBLOCCHI contro INTEGRAZIONE r.149 e GIORNO2 r.136-137) a 0; nessun numero di s… |
-| 2026-11-19 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: due scelte del DM sulle card del 19/11 chiudono il ric… | ✅ differenze fra blocco e prosa nelle dieci schede del corredo: 2 → 0 (danno a distanza della Drow Assassina, tabella di Varis); `verifica_scheda` 0 violazioni… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 213 voci, l'ultima MS-0213 del 2026-11-19 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 214 voci, l'ultima MS-0214 del 2026-11-20 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

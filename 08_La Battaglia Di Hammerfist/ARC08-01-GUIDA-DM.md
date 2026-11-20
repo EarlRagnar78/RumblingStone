@@ -1280,14 +1280,14 @@ For 23, Des 8, Cos 19, Int 6, Sag 10, Car 11.
 STATISTICHE CREATURA SINGOLA (Orog Guerriero di 6° liv., GS 7):
 LM Umanoide Mostruoso Medio; 
 Iniz +4; 
-CA 19 (armatura completa +1); 
-PF 63 (6d10+30); 
+CA 21 (armatura completa +1, naturale +2); 
+PF 45 (6d10+12); 
 Attacco Base +6; 
-Att Ascia bipenne +1 +13/+8 (1d12+10/x3); 
+Att Ascia bipenne +1 +14/+9 (1d12+12/x3); 
 Attacco Poderoso, Incalzare, Incalzare Potenziato, Arma Focalizzata e Arma Specializzata (ascia bipenne), Iniziativa Migliorata, Volontà di Ferro. 
-For 20, Des 10, Cos 20, Int 12, Sag 11, Car 8.
+For 22, Des 11, Cos 14, Int 10, Sag 10, Car 10.
 ```
-Scheda intera: `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md` `[CANONE — DM 2026-10-23: si allinea al Bestiario]`. L'unità di massa resta quella di `ARC08-02` §5.
+Scheda intera: `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md` (caratteristiche rifatte con la serie d'élite più la razza orog, card del DM del 2026-11-20) `[CANONE — DM 2026-10-23: si allinea al Bestiario]`. L'unità di massa resta quella di `ARC08-02` §5.
 
 #### **HOBGOBLIN WAR ADEPTS (20 Stregoni 6°)**
 *Artiglieria Magica, 3ª Linea*

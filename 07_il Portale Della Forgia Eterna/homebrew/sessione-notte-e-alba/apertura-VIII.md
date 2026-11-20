@@ -1,5 +1,13 @@
-Il percorso dell'atto va dal primo ariete al drago che cala sul cortile. Questo capitolo ne è la prima metà: le mura all'alba, una via su tre, una prova collettiva dopo la tabella «Dalla notte». L'orda vuole la breccia prima che il sole superi il crinale; Re Thorek I e Hrodgar, il capitano delle mura, vogliono tenere il camminamento est. Gli arieti salgono alla porta dalla spianata, a +80; le scale salgono sul tratto est, dove il fianco della montagna arriva al piede delle mura.
+L'alba arriva dal crinale, grigia, e con lei arriva l'orda. Gli arieti salgono dalla spianata verso la porta. Sul tratto est, dove il fianco della montagna tocca il piede delle mura, si appoggiano le scale. Sul camminamento Re Thorek e il capitano Hrodgar tengono la linea con quello che hanno: ottocento nani, e fra loro ragazzi con la barba ancora corta e l'ascia troppo nuova. L'orda vuole la breccia prima che il sole superi il crinale.
 
-Si arriva qui dove le tacche della notte hanno lasciato i PG (§4), e quello che hanno fatto nel campo si paga adesso. Zog'tar vivo all'alba, il campo in allarme e il boato del barile tolgono un successo; Zog'tar catturato e i due Treant sul fianco dell'orda ne aggiungono uno. Le cure comprate alla cappella tornano qui, con il dado dei caduti.
+> **Read-aloud (Salvatore lead, LotR support) — da leggere ai giocatori.** *Sulle mura nessuno parla. Si sente il cuoio delle cinghie che tira, e
+> qualcuno che prega Moradin sottovoce, sempre la stessa riga.
+> La pietra è fredda di rugiada sotto i palmi. Laggiù la piana è ancora buia,
+> ma il buio si muove, come acqua che sale.
+> Poi i tamburi. Uno, poi dieci, poi tutti, finché il petto batte con loro.
+> Accanto, un nano con la barba ancora corta stringe l'ascia così forte che
+> le nocche sono bianche. Guarda la piana. Poi guarda gli stranieri.
+> Il sole tocca il crinale.
+> Di colpo, tutti insieme, i tamburi tacciono.*
 
-Il fallimento è un costo, mai uno stop. Il capitolo finisce in tre modi: mura tenute saldamente, a stento, o breccia ceduta; comunque vada, poi il drago cala sul cortile (capitolo X). Prima di cominciare servono a portata il registro dei caduti e la mappa M7-B.
+**Il livello degli eroi.** Gli eroi dovrebbero essere al 13° livello all'inizio del capitolo. Le mura avvicinano tutti alla soglia del 14°.

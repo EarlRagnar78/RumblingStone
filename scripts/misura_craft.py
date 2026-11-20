@@ -605,6 +605,49 @@ def stile_dei_box(testo: str) -> "dict[str, float]":
 
 
 # ─────────────────────────────────────────────────────────────────────────
+# L'apertura di capitolo — il box «trailer» (read-aloud-adulti §2-quater)
+# ─────────────────────────────────────────────────────────────────────────
+
+#: Le parole della contabilità: regia, regole, strumenti del DM. In un box o nella
+#: prosa d'apertura di un capitolo spengono l'attesa (il DM, 2026-11-20: «non è un
+#: libro di ragioneria»). Lo stesso elenco ha misurato le aperture degli AP di
+#: riferimento: 0 per 100 parole nell'arrivo a Sandpoint e a Drellin's Ferry.
+_CONTABILITA = re.compile(
+    r"\b(?:scen[ae]|capitol[oi]|master|tacc[ah]e?|PG|CD|mapp[ae]|DM|tabell[ae]"
+    r"|round|sched[ae]|sezion[ei]|PE|PX|registro|dad[oi]|regol[ae])\b"
+    r"|§\w*|\bM7-\w+")
+
+#: La nota del livello dei PG chiude l'apertura, come l'«Advancement Track» degli
+#: AP Paizo: è un dato per il DM e non conta come prosa.
+_NOTA_LIVELLO = re.compile(r"^\*\*Il livello (?:dei PG|degli eroi)\.\*\*.*$", re.M)
+
+
+def misura_apertura(testo: str) -> "dict[str, object]":
+    """Gli indicatori di un'apertura di capitolo (nessuno è un cancello, ADR-0093).
+
+    >>> d = misura_apertura("Il fuoco cade.\\n\\n> **Read-aloud (Salvatore lead).** *Il fumo sale."
+    ...                     "\\n> Un lupo annusa il vento.*\\n\\n**Il livello degli eroi.** Si comincia al 13°.")
+    >>> d["box"], d["righe"], d["sens."], d["contabilità /100"], d["ultima riga"]
+    (1, 2, 1, 0.0, 'Un lupo annusa il vento.')
+    """
+    box = box_read_aloud(testo)
+    corpi = [corpo_del_box(b) for b in box]
+    prosa = "\n".join(r for r in _NOTA_LIVELLO.sub("", testo).splitlines()
+                       if not r.startswith(">"))
+    tutto = " ".join(corpi) + " " + prosa
+    parole = max(1, _parole(tutto))
+    ultima = ""
+    if box:
+        ultima = _ETICHETTA.sub("", box[-1][-1]).lstrip("> ").strip().strip("*_ ")
+    return {"box": len(box), "righe": max((len(b) for b in box), default=0),
+            "sens.": sum(dettagli_sensoriali(c) for c in corpi),
+            "contabilità /100": round(100 * len(_CONTABILITA.findall(tutto)) / parole, 1),
+            "cifre nel box": sum(len(re.findall(r"\d+", c)) for c in corpi),
+            "nota del livello": bool(_NOTA_LIVELLO.search(testo)),
+            "ultima riga": ultima}
+
+
+# ─────────────────────────────────────────────────────────────────────────
 # P1 — il read-aloud che presuppone un'azione o un senso del giocatore
 #
 # La norma viene dalle linee guida di *Dungeon* (Paizo) e dice due cose:
@@ -890,10 +933,29 @@ def main() -> int:
     ap.add_argument("--costrutto-italiano", action="store_true",
                     help="i box senza «c'e'» presentativo ne' dislocazione a "
                          "sinistra (italiano-nativo.md §8) — INDIZIO, sovrastima")
+    ap.add_argument("--apertura", nargs="+", metavar="FILE",
+                    help="le aperture di capitolo: box trailer, sensi, contabilità, "
+                         "nota del livello (read-aloud-adulti §2-quater)")
     ap.add_argument("--stile", action="store_true",
                     help="gerundio in coda, avverbi in -mente, battute lunghe "
                          "dei PNG (ADR-0093)")
     args = ap.parse_args()
+
+    if args.apertura:
+        print("\n\nAPERTURE DI CAPITOLO — il box trailer (read-aloud-adulti §2-quater)\n")
+        print(f"{'file':28} {'box':>4} {'righe':>6} {'sens.':>6} {'cont./100':>10} "
+              f"{'cifre':>6} {'livello':>8}  ultima riga del box")
+        for f in args.apertura:
+            d = misura_apertura(Path(f).read_text(encoding="utf-8"))
+            print(f"{Path(f).name:28} {d['box']:>4} {d['righe']:>6} {d['sens.']:>6} "
+                  f"{d['contabilità /100']:>10} {d['cifre nel box']:>6} "
+                  f"{'sì' if d['nota del livello'] else 'no':>8}  {d['ultima riga'][:60]}")
+        print("\n   Indicatori, non cancelli (ADR-0093). Attese: un box, 8-12 righe, almeno")
+        print("   due sensi, contabilità 0 (gli AP di riferimento: 0 nelle aperture di luogo),")
+        print("   nessuna cifra nel box, la nota del livello in fondo. L'ultima riga si giudica")
+        print("   a occhio: un'immagine o un suono che resta aperto, mai una scelta dei PG.")
+        return 0
+
 
     if args.p1:
         files = file_di_gioco_p1()

@@ -44,6 +44,7 @@
 | `read-aloud-adulti.md` §2-bis | il box di luogo **non descrive le creature** (*Dungeon*): entrano con la scheda d'entrata o con un box loro | **minore** | 🔴 non misurato — i box non dichiarano il loro tipo (di luogo, d'ingresso, di round), e senza quel dato il registro dei 322 nomi pesca **315 box su 501**, quasi tutti dei, PG e artefatti nominati a ragione. È una convenzione che manca, non un codice (`validate_norme_editoriali.py --superficie`, ex `superficie_norme`) |
 | `read-aloud-adulti.md` §2 | **le lunghezze dei box variano**: brevi e lunghi alternati come negli autori umani (il DM ha chiesto di adottare le misure del corpus, 2026-10-18) | **minore** | 🟡 `misura_craft --stile`, colonna `30-70`: la quota dei box fra 30 e 70 parole contro il 46-52% del corpus, con «!» oltre il 70%. Indicatore e non tetto (ADR-0036): dice che i box sono troppo uguali, non quale allungare |
 | `read-aloud-adulti.md` §2-ter | una riscrittura **non toglie dettagli sensoriali** a un box che c'è (il voto cieco del DM, 2026-10-18) | **minore** | 🟡 `cieco_versioni.py coppie` (`verdetto_misurato`) fra due versioni dello stesso box, e `misura_craft --stile`, colonna `sens.`. Sulle sedici coppie del primo voto decide 13 e sbaglia 1; il lessico è scritto dopo i voti, e le quattro coppie di controllo di ogni giro dicono se regge |
+| `read-aloud-adulti.md` §2-quater | ogni capitolo di gioco si apre con un **box che promette e non svela**: 8-12 righe, almeno due sensi, ultima riga aperta, **zero contabilità** (mappe, tacche, PX, regia) nel box e nella prosa d'apertura, una nota del livello in fondo e una dei PX a fine capitolo, generiche come negli AP Paizo e con «gli eroi» al posto dei nomi dei PG (il DM, 2026-11-20) | **minore** | 🟡 `misura_craft --apertura`: box, righe, `sens.`, contabilità per 100 parole, cifre nel box, nota del livello. Indicatori senza peso (ADR-0093); l'ultima riga e l'emozione le giudica il cieco del DM |
 | `read-aloud-adulti.md` §2-ter | un **monologo resta un blocco**: non si spezza in battute con incisi fra l'una e l'altra | **minore** | 🟡 `cieco_versioni.py coppie` (`verdetto_misurato`): una versione nuova di tre pezzi o più contro un monologo intero perde. Due casi su due nel primo voto |
 | `read-aloud-adulti.md` §2-ter | la **chiusa enfatica resta**: una riscrittura non toglie la frase finale che dà nome all'immagine (il voto cieco del DM, 2026-10-22; scelta propria del repo, `editorial-standards.md` §4-bis) | **minore** | 🔴 non misurato — nessun rilevatore sa quale frase finale «spiega»: lo dice il cieco fra due versioni. Quattro casi su quattro nel voto del 22/10 |
 | `editorial-standards.md` | `**Read-aloud (pilastro lead).**` etichettato | **maggiore** | 🟢 congegno `regia etichettata **Read-aloud (X)**` |
@@ -152,7 +153,7 @@
 | | Norme registrate |
 |---|---:|
 | 🟢 misurate | 44 |
-| 🟡 misurate in parte, con il limite scritto | 41 |
+| 🟡 misurate in parte, con il limite scritto | 42 |
 | 🔴 **non misurate, con la ragione scritta** | 14 |
 | ⚪ non applicabili | 0 |
 

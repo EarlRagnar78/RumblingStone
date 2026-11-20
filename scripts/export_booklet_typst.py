@@ -55,7 +55,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from dmcore import chi_si_incontra  # noqa: E402
 from dmcore.testo import (  # noqa: E402
-    capitoli_del_volume, con_apertura, fondi_contratto_e_scheda, leggi_per_la_stampa, piega_ascii, sigle_d_appendice, slug, togli_storico, traduci_rimandi,
+    capitoli_del_volume, con_apertura, con_chiusura, fondi_contratto_e_scheda, leggi_per_la_stampa, piega_ascii, sigle_d_appendice, slug, togli_storico, traduci_rimandi,
 )
 from dmcore.schede import Scheda, SchedaError, leggi_schede  # noqa: E402
 from dmcore import carte_tavolo  # noqa: E402
@@ -1319,6 +1319,9 @@ def sorgente(man: dict, base: Path, tutti: bool, carta: str = "avorio",
         # riquadro «Chi si incontra», così gli sta davanti
         if cap.get("apertura"):
             md = con_apertura(md, (base / cap["apertura"]).read_text(encoding="utf-8"))
+        # `"chiusura"`: i PX del capitolo e chi sale, in fondo (§2-quater, punto 5)
+        if cap.get("chiusura"):
+            md = con_chiusura(md, (base / cap["chiusura"]).read_text(encoding="utf-8"))
         if cap.get("sezioni"):
             md = fondi_contratto_e_scheda(md)
         if volume is not None:

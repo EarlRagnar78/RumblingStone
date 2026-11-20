@@ -57,7 +57,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from dmcore.testo import capitoli_del_volume, con_apertura, fondi_contratto_e_scheda, leggi_per_la_stampa, riscala_link, togli_storico  # noqa: E402
+from dmcore.testo import capitoli_del_volume, con_apertura, con_chiusura, fondi_contratto_e_scheda, leggi_per_la_stampa, riscala_link, togli_storico  # noqa: E402
 from dmcore.statblock import (  # noqa: E402
     FASCE, StatblockError, accosta_parte_leggibile, caratteristiche, etichetta_gs, ingombro, leggi as leggi_statblocco,
     sezioni_leggibili, senza_caratteristiche,
@@ -826,6 +826,8 @@ def build(manifest_path: Path, out_override: Path | None = None) -> Path:
         md = _letto(p, capitoli, ch.get("sezioni"))
         if ch.get("apertura"):   # ADR-0122, S1: l'introduzione del capitolo
             md = con_apertura(md, (base / ch["apertura"]).read_text(encoding="utf-8"))
+        if ch.get("chiusura"):   # i PX del capitolo, in fondo
+            md = con_chiusura(md, (base / ch["chiusura"]).read_text(encoding="utf-8"))
         body = md_to_html(spoglia_homebrewery(md), p.parent)
         tag = TAGS.get(ch.get("tag", ""), "")
         foot = player_footer if ch.get("tag") == "player" else footer
@@ -971,6 +973,8 @@ def testo_hb(manifest_path: Path, out_override: Path | None = None) -> tuple[Pat
         corpo = _incorpora(base / ch["file"], ch.get("sezioni"))
         if ch.get("apertura"):   # ADR-0122, S1: l'introduzione del capitolo
             corpo = con_apertura(corpo, (base / ch["apertura"]).read_text(encoding="utf-8"))
+        if ch.get("chiusura"):
+            corpo = con_chiusura(corpo, (base / ch["chiusura"]).read_text(encoding="utf-8"))
         parts.append(corpo)
     if APPENDICE_HB:
         parts += ["\n\\page\n", "# Appendice: le creature\n"]

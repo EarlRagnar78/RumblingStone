@@ -1,5 +1,13 @@
-Skullcrusher il Nero cala sul cortile interno con due wyvern e combatte in passate, gridando i nomi che ha sentito di notte attraverso il corno. Vuole vincere davanti all'orda, perché per lui il potere è quello che gli altri hanno visto, e uccidere un secondo re in questa valle. Re Thorek I è nel cortile, a difendere da dentro la porta che gli arieti battono.
+Cinquant'anni fa Skullcrusher il Nero uccise un re di Hammerfist, e da allora non ha mai perso. Stamattina vuole il secondo, e lo vuole davanti all'orda, perché per un drago il potere è quello che gli altri hanno visto. Con lui volano due viverne, veloci e velenose come vipere con le ali. Quello che succede nel cortile, la Forgia lo ricorderà.
 
-Il drago non cerca i PG per nome. Cala sul suo obiettivo, il re o la porta, e i PG diventano bersaglio quando gli stanno in mezzo, quando portano una corona, o quando dicono la Catena ad alta voce. Se gli arieti sono stati sabotati, il duello comincia fuori dalle mura, sulla spianata; se i PG sono altrove, la tabella «Dove sono i PG all'alba» dice dove cala e come combatte.
+> **Read-aloud (Salvatore lead, LotR support) — da leggere ai giocatori.** *Per un respiro, sulle mura, sembra che il peggio sia passato.
+> Poi gli orchi sotto le mura smettono di urlare. Non indietreggiano: aspettano.
+> Uno dopo l'altro alzano la faccia al cielo, e ridono.
+> Un vecchio nano di guardia lascia cadere la balestra. Non la raccoglie.
+> Ha cinquant'anni di più del ragazzo accanto a lui, e si ricorda.
+> Da lontano arriva un suono che non è vento, lento, pesante, regolare:
+> ali, così grandi che l'aria rimbomba come dentro una campana.
+> L'odore arriva prima di lui: palude, ferro, e qualcosa che corrode.
+> Nel cortile interno, Re Thorek stringe Frostcleaver con due mani, e alza gli occhi.*
 
-Il capitolo dà il duello in tre scambi, la scena intera e le contingenze: se due PG cadono nello stesso round, o il gruppo si ritira, intervengono gli avi, e il duello è vinto sporco. Finisce con il drago ucciso, ferito grave, fuggito, o vinto sporco, e ogni ferita va nella tabella B4. Con l'esito la serata si ferma, prima della Scena 12: il Rubino e il torque del re sono della serata dopo.
+**Il livello degli eroi.** Gli eroi dovrebbero essere al 13° livello all'inizio del capitolo. Il duello è lo scontro che vale di più della notte: alla fine gli eroi dovrebbero avere i PX del 14°, e lo prendono al primo riposo.

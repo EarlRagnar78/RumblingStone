@@ -1,5 +1,13 @@
-Questa è la scena che il tavolo ha costruito. Invisibili e in volo a 48 m sopra lo spiazzo del capo, i PG lasciano cadere sulla tenda di Zog'tar una botte d'olio con i sassi sul fondo, i rostri dei fabbri nanici sotto e le fiale della fenice legate con le corde; in mano tengono due barilotti da 10 litri. Dentro, Zog'tar racconta alle guardie come impalerà il re, Balvar incide e il sacerdote dorme. Fuori Grask tiene il corno, e il campo intorno dorme finché non brucia.
+Per mille anni gli affreschi di Hammerfist diranno che la fortezza resse. Nessuno dirà della notte prima, né degli stranieri appesi al buio sopra diecimila nemici, con una botte d'olio e di ferro fra le mani e la paura di lasciarla andare troppo presto. Il generale Zog'tar dorme sotto la sua tenda nera, e crede che il cielo sia vuoto.
 
-Si entra dalla variante «il barile sulla tenda» della Scena 6 (capitolo VII), con le tacche che la notte ha lasciato. Le mappe sono M7-C, lo spiazzo con la tenda, e M7-H, il campo attorno. La scheda da tavolo dà i dieci passi nell'ordine in cui si tirano, ognuno con la sua regola dell'SRD o con la variazione scelta dal DM; il resto del capitolo li spiega. Una cosa va detta al tavolo prima di tirare: il barile non uccide Zog'tar. Gli toglie un quinto dei punti ferita, la tenda, la mappa dell'assalto e, una volta su tre, il sacerdote.
+> **Read-aloud (Salvatore lead) — da leggere ai giocatori.** *Il campo dell'orda dorme sotto un cielo senza luna. Mille fuochi, e intorno
+> diecimila corpi stretti come bestie nel recinto. Il fumo sale dritto fin
+> quassù, e sa di grasso bruciato e di cuoio bagnato.
+> Al centro, una tenda più nera della notte. Dentro, una voce grossa racconta
+> qualcosa, e altre voci ridono. Fuori, una sentinella tiene un corno di ferro
+> incatenato al polso, e guarda per terra.
+> Laggiù nessuno ha mai pensato di guardare in alto.
+> Le corde scricchiolano. Il legno della botte è freddo, e trasuda olio fra le doghe.
+> Si alza un filo di vento. Vicino al fuoco più grande, un lupo alza il muso, e annusa.*
 
-Il capitolo finisce quando i PG lasciano il cielo sopra la tenda: la tenda in fiamme o crollata, il corno suonato o no, chi è uscito dal fuoco e chi no. Poi il ritorno (capitolo VII) e che cosa cambia per le mura all'alba (capitolo XIII). Servono a portata il foglio delle tacche e le due mappe.
+**Il livello degli eroi.** Gli eroi dovrebbero essere al 13° livello all'inizio del capitolo. Il 14° matura nel corso della notte e si prende al primo riposo dopo la battaglia; questo capitolo, da solo, non porta nessuno al livello successivo.

@@ -1,5 +1,14 @@
-Il Seme-Mercato è la gemma che si è staccata da sola dalla parete e si è conficcata nel pavimento come una punta di trapano. Artemis l'ha raccolta senza toccarla a pelle nuda e l'ha fatta mettere nello zaino di Tordek, dove sta dal 31 luglio. Dentro c'è un contratto: firma il primo che la tocca a pelle nuda, e l'altro capo del filo è di un creditore, il mercante Varis. A ≈372 DR il creditore non c'è ancora, e la voce tace.
+Nello zaino di uno degli eroi c'è una gemma che pesa più di quanto dovrebbe, ed è tiepida come una cosa viva. Si è staccata da sola dalla parete ed è entrata nel pavimento come una punta di trapano; da allora nessuno l'ha più toccata a pelle nuda. Dentro, scritto fitto come in un libro mastro, c'è un contratto. E un contratto ha sempre due capi.
 
-Si gioca al ritorno, se la notte lo concede: costa una tacca, si fa solo se ne restano prima dell'ottava, e se no si rinvia al 1372. Prima di cominciare il DM sceglie il tono dell'Anello di Artemis, A o B; i Bracieri, se Tordek li interroga, rispondono con una frase sola e mai sul Seme. Serve la pergamena di *identificare* del forziere del re. Brynja non vuole la gemma sull'incudine della cappella; Kettra la lascia fare nella bottega.
+Stanotte, se avanza un'ora, la pergamena del re può farla parlare. Ma qui, mille anni prima, all'altro capo del filo non c'è ancora nessuno, e la voce tace. Quello che il gruppo deciderà, tenerla, estirparla, darla via o firmarla, se lo porterà a casa.
 
-Finisce con il contratto letto a voce in due tempi, con la pausa dopo la clausola 4, e con il foglio ✉ consegnato ad Artemis. Poi il gruppo decide: estirparlo, tenerlo com'è, darlo a qualcuno o firmarlo. La scelta va nel registro di fine serata.
+> **Read-aloud (Mercer lead) — da leggere ai giocatori.** *Le parole della pergamena del re si spengono una a una, mentre qualcuno le legge.
+> L'aria della bottega sa di zolfo. Sul tavolo la gemma non si muove. È poco più grande di un'unghia,
+> e pesa come un pugno di piombo. Chi avvicina la mano sente il tepore prima
+> di toccarla, come da una cosa che respira.
+> Poi, dentro la pietra, le righe. Fitte, minute, ordinate, d'inchiostro che
+> non c'è, una sotto l'altra come in un libro mastro.
+> In fondo, sotto l'ultima riga, uno spazio vuoto.
+> Lo spazio dove va un nome.*
+
+**Il livello degli eroi.** Gli eroi dovrebbero essere al 13° livello all'inizio del capitolo. Il capitolo non dà PX.

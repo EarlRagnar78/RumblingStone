@@ -1249,11 +1249,19 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # ARC-07 · Il barile sulla tenda di Zog'tar
 
-Questa è la scena che il tavolo ha costruito. Invisibili e in volo a 48 m sopra lo spiazzo del capo, i PG lasciano cadere sulla tenda di Zog'tar una botte d'olio con i sassi sul fondo, i rostri dei fabbri nanici sotto e le fiale della fenice legate con le corde; in mano tengono due barilotti da 10 litri. Dentro, Zog'tar racconta alle guardie come impalerà il re, Balvar incide e il sacerdote dorme. Fuori Grask tiene il corno, e il campo intorno dorme finché non brucia.
+Per mille anni gli affreschi di Hammerfist diranno che la fortezza resse. Nessuno dirà della notte prima, né degli stranieri appesi al buio sopra diecimila nemici, con una botte d'olio e di ferro fra le mani e la paura di lasciarla andare troppo presto. Il generale Zog'tar dorme sotto la sua tenda nera, e crede che il cielo sia vuoto.
 
-Si entra dalla variante «il barile sulla tenda» della Scena 6 (capitolo VII), con le tacche che la notte ha lasciato. Le mappe sono M7-C, lo spiazzo con la tenda, e M7-H, il campo attorno. La scheda da tavolo dà i dieci passi nell'ordine in cui si tirano, ognuno con la sua regola dell'SRD o con la variazione scelta dal DM; il resto del capitolo li spiega. Una cosa va detta al tavolo prima di tirare: il barile non uccide Zog'tar. Gli toglie un quinto dei punti ferita, la tenda, la mappa dell'assalto e, una volta su tre, il sacerdote.
+> **Read-aloud — da leggere ai giocatori.** *Il campo dell'orda dorme sotto un cielo senza luna. Mille fuochi, e intorno
+> diecimila corpi stretti come bestie nel recinto. Il fumo sale dritto fin
+> quassù, e sa di grasso bruciato e di cuoio bagnato.
+> Al centro, una tenda più nera della notte. Dentro, una voce grossa racconta
+> qualcosa, e altre voci ridono. Fuori, una sentinella tiene un corno di ferro
+> incatenato al polso, e guarda per terra.
+> Laggiù nessuno ha mai pensato di guardare in alto.
+> Le corde scricchiolano. Il legno della botte è freddo, e trasuda olio fra le doghe.
+> Si alza un filo di vento. Vicino al fuoco più grande, un lupo alza il muso, e annusa.*
 
-Il capitolo finisce quando i PG lasciano il cielo sopra la tenda: la tenda in fiamme o crollata, il corno suonato o no, chi è uscito dal fuoco e chi no. Poi il ritorno (capitolo VII) e che cosa cambia per le mura all'alba (capitolo XIII). Servono a portata il foglio delle tacche e le due mappe.
+**Il livello degli eroi.** Gli eroi dovrebbero essere al 13° livello all'inizio del capitolo. Il 14° matura nel corso della notte e si prende al primo riposo dopo la battaglia; questo capitolo, da solo, non porta nessuno al livello successivo.
 
 > **Che cos'è.** Il supplemento alle Scene 7 e 8 di cap. VII
 > per quello che il tavolo ha fatto davvero: invece di entrare nella tenda del
@@ -2054,6 +2062,13 @@ Dove fanno più male, in ordine:
 Un consiglio da dire al tavolo solo se lo chiedono: i barilotti valgono di più
 **contro il corno** che contro Zog'tar.
 
+## I PX del capitolo
+
+A testa, per un gruppo di quattro eroi di 13° livello, con la tabella dei PX della DMG. Il segno «≈» vuol dire stimato: alcuni nemici hanno un GS molto sotto il livello del gruppo.
+
+- **Con tutte le quest, fino a 975 PX.** Il premio della trovata del barile (capitolo XIII): 487 se brucia la tenda del comando, 975 se in più Grask muore e il corno tace.
+- **Senza le quest facoltative, 0 PX.** Il barile è un'idea degli eroi, non una scena del modulo. I nemici che il fuoco uccide valgono quanto valgono nella tenda, e si contano una volta sola, in fondo al capitolo VII.
+
 
 \page
 
@@ -2066,11 +2081,20 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # Il Seme-Mercato — l'ora della pergamena
 
-Il Seme-Mercato è la gemma che si è staccata da sola dalla parete e si è conficcata nel pavimento come una punta di trapano. Artemis l'ha raccolta senza toccarla a pelle nuda e l'ha fatta mettere nello zaino di Tordek, dove sta dal 31 luglio. Dentro c'è un contratto: firma il primo che la tocca a pelle nuda, e l'altro capo del filo è di un creditore, il mercante Varis. A ≈372 DR il creditore non c'è ancora, e la voce tace.
+Nello zaino di uno degli eroi c'è una gemma che pesa più di quanto dovrebbe, ed è tiepida come una cosa viva. Si è staccata da sola dalla parete ed è entrata nel pavimento come una punta di trapano; da allora nessuno l'ha più toccata a pelle nuda. Dentro, scritto fitto come in un libro mastro, c'è un contratto. E un contratto ha sempre due capi.
 
-Si gioca al ritorno, se la notte lo concede: costa una tacca, si fa solo se ne restano prima dell'ottava, e se no si rinvia al 1372. Prima di cominciare il DM sceglie il tono dell'Anello di Artemis, A o B; i Bracieri, se Tordek li interroga, rispondono con una frase sola e mai sul Seme. Serve la pergamena di *identificare* del forziere del re. Brynja non vuole la gemma sull'incudine della cappella; Kettra la lascia fare nella bottega.
+Stanotte, se avanza un'ora, la pergamena del re può farla parlare. Ma qui, mille anni prima, all'altro capo del filo non c'è ancora nessuno, e la voce tace. Quello che il gruppo deciderà, tenerla, estirparla, darla via o firmarla, se lo porterà a casa.
 
-Finisce con il contratto letto a voce in due tempi, con la pausa dopo la clausola 4, e con il foglio ✉ consegnato ad Artemis. Poi il gruppo decide: estirparlo, tenerlo com'è, darlo a qualcuno o firmarlo. La scelta va nel registro di fine serata.
+> **Read-aloud — da leggere ai giocatori.** *Le parole della pergamena del re si spengono una a una, mentre qualcuno le legge.
+> L'aria della bottega sa di zolfo. Sul tavolo la gemma non si muove. È poco più grande di un'unghia,
+> e pesa come un pugno di piombo. Chi avvicina la mano sente il tepore prima
+> di toccarla, come da una cosa che respira.
+> Poi, dentro la pietra, le righe. Fitte, minute, ordinate, d'inchiostro che
+> non c'è, una sotto l'altra come in un libro mastro.
+> In fondo, sotto l'ultima riga, uno spazio vuoto.
+> Lo spazio dove va un nome.*
+
+**Il livello degli eroi.** Gli eroi dovrebbero essere al 13° livello all'inizio del capitolo. Il capitolo non dà PX.
 
 > **Cos'è.** La scena del Seme come la scrive «Il Piano della Terra & Terros l'Antico» §6-bis, copiata
 > qui perché stasera è la prima cosa che il tavolo chiede. La fonte resta il
@@ -2378,11 +2402,18 @@ anni prima di lui, e per un mercante non c'è niente di più interessante.
 Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 }}
 
-Il barile è caduto, e la notte non è finita. Il master scrive la notte intera, dalla postierla alla tenda del comando e ritorno; stasera se ne gioca la coda. Si torna in volo finché bastano pozioni e pergamene, poi a piedi o portati da Artemis. Fra le tende, fermo a guardare il fuoco con un fagotto stretto al petto, c'è Vatore, il ladro che diventerà Sal: ha paura di quattro persone che non dovrebbero esistere, e l'Anello di Artemis lo sente prima di chiunque. Zog'tar, se è vivo, ha appena imparato che i nani volano.
+Il fuoco è caduto, e la notte non è finita. Fra gli eroi e le mura c'è un chilometro di nemici svegli, e ogni passo verso casa costa. Tornare non è la parte facile dell'impresa: è quella che le canzoni dimenticano, e che decide chi c'è all'alba.
 
-Si entra da dove il capitolo V ha lasciato i PG, con il foglio delle tacche in vista: ogni cosa ne costa, e il ritorno ne costa una. Se il corno ha suonato vale «Se il corno suona di notte». Le Scene 7 e 8, la tenda e Zog'tar, si giocano solo se scendono a finire il lavoro, con la tenda in fiamme o crollata e il campo sveglio; Balvar, se è vivo, non tratta più da solo. Se tornano in volo senza scendere, Vatore lo trovano sulle mura all'alba.
+> **Read-aloud — da leggere ai giocatori.** *Alle spalle, la tenda nera è una torcia alta quanto una torre. Il calore
+> arriva fin qui, sulla nuca, e porta odore di pelle che brucia.
+> Il campo si sveglia a pezzi. Un grido, poi un altro più lontano; un tamburo
+> che comincia e si ferma, come se nessuno sapesse ancora chi deve suonarlo.
+> Ombre corrono verso il fuoco. Altre, più lente, ne vengono via.
+> Le mura di Hammerfist sono un filo bianco lontano, sotto le stelle.
+> Il cielo, che fino a un momento fa reggeva, comincia a pesare.
+> Fra due tende qualcuno si è fermato. Non guarda l'incendio.*
 
-Il capitolo finisce quando escono dal campo: si contano le tacche e si legge la tabella d'uscita, sei o meno in tempo, sette di corsa, otto o più e l'alba li coglie fuori. Servono a portata il foglio delle tacche, la mappa M7-C e la scheda di Vatore.
+**Il livello degli eroi.** Gli eroi dovrebbero essere al 13° livello all'inizio del capitolo. È il capitolo che dà più PX prima dell'alba: chi arriva vicino alla soglia può già avere quelli del 14°, che si prende comunque al primo riposo dopo la battaglia.
 
 ## §4 — ATTO II · LA NOTTE
 
@@ -3923,6 +3954,14 @@ L'artefatto che stringe al petto è in **Appendice B**.
 
 ---
 
+## I PX del capitolo
+
+A testa, per un gruppo di quattro eroi di 13° livello, con la tabella dei PX della DMG. Il segno «≈» vuol dire stimato: alcuni nemici hanno un GS molto sotto il livello del gruppo.
+
+- **Con tutte le quest, ≈ 4.750 PX.** La tenda del comando con Zog'tar, Balvar, le quattro guardie e il sacerdote (≈ 3.650, compresi quelli già caduti nel fuoco), Vatore, fra le tende (500), la pattuglia (≈ 350) e la squadra dei lupi (≈ 250).
+- **Senza le quest facoltative, ≈ 4.150 PX.** La tenda e Vatore; pattuglia e lupi sono scontri che gli eroi possono evitare.
+- Se Balvar è recuperato invece che sconfitto, la tenda vale ≈ 3.000.
+
 
 \page
 
@@ -3933,11 +3972,19 @@ L'artefatto che stringe al petto è in **Appendice B**.
 Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 }}
 
-Il percorso dell'atto va dal primo ariete al drago che cala sul cortile. Questo capitolo ne è la prima metà: le mura all'alba, una via su tre, una prova collettiva dopo la tabella «Dalla notte». L'orda vuole la breccia prima che il sole superi il crinale; Re Thorek I e Hrodgar, il capitano delle mura, vogliono tenere il camminamento est. Gli arieti salgono alla porta dalla spianata, a +80; le scale salgono sul tratto est, dove il fianco della montagna arriva al piede delle mura.
+L'alba arriva dal crinale, grigia, e con lei arriva l'orda. Gli arieti salgono dalla spianata verso la porta. Sul tratto est, dove il fianco della montagna tocca il piede delle mura, si appoggiano le scale. Sul camminamento Re Thorek e il capitano Hrodgar tengono la linea con quello che hanno: ottocento nani, e fra loro ragazzi con la barba ancora corta e l'ascia troppo nuova. L'orda vuole la breccia prima che il sole superi il crinale.
 
-Si arriva qui dove le tacche della notte hanno lasciato i PG (§4), e quello che hanno fatto nel campo si paga adesso. Zog'tar vivo all'alba, il campo in allarme e il boato del barile tolgono un successo; Zog'tar catturato e i due Treant sul fianco dell'orda ne aggiungono uno. Le cure comprate alla cappella tornano qui, con il dado dei caduti.
+> **Read-aloud — da leggere ai giocatori.** *Sulle mura nessuno parla. Si sente il cuoio delle cinghie che tira, e
+> qualcuno che prega Moradin sottovoce, sempre la stessa riga.
+> La pietra è fredda di rugiada sotto i palmi. Laggiù la piana è ancora buia,
+> ma il buio si muove, come acqua che sale.
+> Poi i tamburi. Uno, poi dieci, poi tutti, finché il petto batte con loro.
+> Accanto, un nano con la barba ancora corta stringe l'ascia così forte che
+> le nocche sono bianche. Guarda la piana. Poi guarda gli stranieri.
+> Il sole tocca il crinale.
+> Di colpo, tutti insieme, i tamburi tacciono.*
 
-Il fallimento è un costo, mai uno stop. Il capitolo finisce in tre modi: mura tenute saldamente, a stento, o breccia ceduta; comunque vada, poi il drago cala sul cortile (capitolo X). Prima di cominciare servono a portata il registro dei caduti e la mappa M7-B.
+**Il livello degli eroi.** Gli eroi dovrebbero essere al 13° livello all'inizio del capitolo. Le mura avvicinano tutti alla soglia del 14°.
 
 ## §5 — ATTO III · L'ALBA
 
@@ -4149,6 +4196,10 @@ successo in più o in meno, si applica allo stesso modo.
   sei, tutte alla testa delle scale alle sue spalle.
   È la versione più forte, a EL 16, sotto il tetto.
 
+## I PX del capitolo
+
+- **Con tutte le quest, e senza le facoltative, 600 PX.** Le mura valgono lo stesso premio in qualunque modo reggano o cedano.
+
 
 \page
 
@@ -4179,11 +4230,19 @@ La pianta del cortile dove Skullcrusher cala all'alba (Scena 11), con la legenda
 Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 }}
 
-Skullcrusher il Nero cala sul cortile interno con due wyvern e combatte in passate, gridando i nomi che ha sentito di notte attraverso il corno. Vuole vincere davanti all'orda, perché per lui il potere è quello che gli altri hanno visto, e uccidere un secondo re in questa valle. Re Thorek I è nel cortile, a difendere da dentro la porta che gli arieti battono.
+Cinquant'anni fa Skullcrusher il Nero uccise un re di Hammerfist, e da allora non ha mai perso. Stamattina vuole il secondo, e lo vuole davanti all'orda, perché per un drago il potere è quello che gli altri hanno visto. Con lui volano due viverne, veloci e velenose come vipere con le ali. Quello che succede nel cortile, la Forgia lo ricorderà.
 
-Il drago non cerca i PG per nome. Cala sul suo obiettivo, il re o la porta, e i PG diventano bersaglio quando gli stanno in mezzo, quando portano una corona, o quando dicono la Catena ad alta voce. Se gli arieti sono stati sabotati, il duello comincia fuori dalle mura, sulla spianata; se i PG sono altrove, la tabella «Dove sono i PG all'alba» dice dove cala e come combatte.
+> **Read-aloud — da leggere ai giocatori.** *Per un respiro, sulle mura, sembra che il peggio sia passato.
+> Poi gli orchi sotto le mura smettono di urlare. Non indietreggiano: aspettano.
+> Uno dopo l'altro alzano la faccia al cielo, e ridono.
+> Un vecchio nano di guardia lascia cadere la balestra. Non la raccoglie.
+> Ha cinquant'anni di più del ragazzo accanto a lui, e si ricorda.
+> Da lontano arriva un suono che non è vento, lento, pesante, regolare:
+> ali, così grandi che l'aria rimbomba come dentro una campana.
+> L'odore arriva prima di lui: palude, ferro, e qualcosa che corrode.
+> Nel cortile interno, Re Thorek stringe Frostcleaver con due mani, e alza gli occhi.*
 
-Il capitolo dà il duello in tre scambi, la scena intera e le contingenze: se due PG cadono nello stesso round, o il gruppo si ritira, intervengono gli avi, e il duello è vinto sporco. Finisce con il drago ucciso, ferito grave, fuggito, o vinto sporco, e ogni ferita va nella tabella B4. Con l'esito la serata si ferma, prima della Scena 12: il Rubino e il torque del re sono della serata dopo.
+**Il livello degli eroi.** Gli eroi dovrebbero essere al 13° livello all'inizio del capitolo. Il duello è lo scontro che vale di più della notte: alla fine gli eroi dovrebbero avere i PX del 14°, e lo prendono al primo riposo.
 
 <!-- pagina: una-colonna -->
 ### C.3 · Il duello in tre scambi (Scena 11)
@@ -4724,6 +4783,15 @@ morto e il drago fugge a **metà** pf, l'esito è **FERITO GRAVE**.
 
 ---
 
+## I PX del capitolo
+
+A testa, per un gruppo di quattro eroi di 13° livello, con la tabella dei PX della DMG. Il segno «≈» vuol dire stimato: alcuni nemici hanno un GS molto sotto il livello del gruppo.
+
+- **Con tutte le quest, e senza le facoltative, ≈ 4.060 PX.** Skullcrusher Vecchio e Avanzato (GS 17, 3.900) e le due viverne (GS 6, ≈ 160): un incontro di EL 17.
+- Per un gruppo più debole, con Skullcrusher Adulto (GS 14) e le viverne, il duello vale 1.625.
+
+Alla fine del duello gli eroi dovrebbero avere i PX del 14° livello.
+
 
 \page
 
@@ -4734,9 +4802,19 @@ morto e il drago fugge a **metà** pf, l'esito è **FERITO GRAVE**.
 Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 }}
 
-Il capitolo si apre a serata finita, con il registro in mano. Il §7 è l'Echo Ledger: ogni riga è una cosa fatta stanotte, l'eco che lascia e l'arco in cui riemerge. Quasi tutte tornano in ARC-08, a Hammerfist e contro Fauci di Palude; Vatore, il Seme del Ghostlord e il Sigillo di Ossidiana tornano in ARC-09.
+La battaglia è finita, e Hammerfist conta. Conta i morti sulle mura e i vivi nelle miniere, le asce che non torneranno alla rastrelliera, il sangue del drago sul selciato del cortile o la sua ombra che se ne va. Niente di questo resta nel 372. Le ferite che gli eroi hanno dato attraversano mille anni e tornano ad aspettarli; i nomi che hanno salvato tornano scolpiti; e chi hanno lasciato andare, o umiliato, o risparmiato, se li ricorda.
 
-Il budget dei PX dice quanto vale ogni scena del beat, al conto della tabella della DMG, e quanti ne contano davvero per i quattro. Thorik, Tordek e Artemis hanno già i PX del 14° livello e restano fermi a 104.999; Hella il 14° lo prende in questa notte. Per tutti e quattro il livello si prende al primo riposo dopo la battaglia.
+> **Read-aloud — da leggere ai giocatori, a fine serata.** *Il fumo della battaglia sale piano sopra le mura, e il sole lo attraversa.
+> Nel cortile qualcuno chiama un nome, e nessuno risponde. Poi un altro nome,
+> e qualcuno, da lontano, risponde.
+> I vecchi risalgono dalle miniere con i bambini per mano, e si fermano
+> sulla soglia, a contare con gli occhi.
+> Nella cappella l'incudine è ancora calda.
+> Sopra la porta la targa di bronzo prende il sole, e le parole della
+> profezia brillano come appena tagliate.
+> Mille anni sono tanti. La pietra, però, ha buona memoria.*
+
+**Il livello degli eroi.** Dopo il primo riposo gli eroi dovrebbero essere al 14° livello. Si sale un livello alla volta, come vuole la regola 3.5.
 
 <!-- pagina: una-colonna -->
 ## §7 — ECHO LEDGER (le conseguenze che attraversano gli archi)
@@ -4810,6 +4888,16 @@ duello e la tenda sono al conto della tabella; i GS
 molto sotto l'APL, come le guardie e il sacerdote, sono stimati, quindi i
 numeri portano «≈». Le scene senza scontro restano
 premi di storia, come sempre.
+
+## I PX della notte, in tutto
+
+A testa, per un gruppo di quattro eroi di 13° livello, con la tabella dei PX della DMG. Il segno «≈» vuol dire stimato: alcuni nemici hanno un GS molto sotto il livello del gruppo.
+
+- **Con tutte le quest, fino a ≈ 11.785 PX.**
+- **Senza le quest facoltative, ≈ 10.210 PX:** l'arrivo e il consiglio (600), la tenda (≈ 3.650), Vatore (500), le mura (600), il duello (≈ 4.060), il Rituale e il Rubino quando si giocano (800).
+- Le facoltative sono la pattuglia (≈ 350), la squadra dei lupi (≈ 250) e la trovata del barile (fino a 975).
+
+Fra il 13° e il 14° livello ci sono 13.000 PX, e la notte da sola ne dà circa diecimila: il resto viene dai capitoli precedenti dell'arco, che portano gli eroi alla notte già vicini alla soglia. Si sale un livello alla volta: chi supera anche la soglia del 15° si ferma a un PX sotto.
 
 
 \page
@@ -4901,9 +4989,18 @@ Indipendente dall'esito (si somma), riflette P5-DEF-P2 r.294:
 Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 }}
 
-Due pezzi del supplemento del barile, da leggere dopo la serata. Il §10 dice che cosa cambia per la storia: Balvar, vivo e attaccato o morto nel fuoco, con la lastra che porta il nome di Hald; il corno e il drago; le mura dell'alba; le sentinelle che vedono la tenda bruciare; un nemico che impara, perché da questa notte Zog'tar sa che i nani volano.
+Una tenda è bruciata in mezzo a diecimila nemici, e il mondo se n'è accorto. Le sentinelle l'hanno vista prendere fuoco a un chilometro dalle mura, e Re Thorek lo sa prima che gli eroi rientrino. Zog'tar Deatheye, se è vivo, ha imparato che i nani volano: da stanotte dorme al buio, ogni notte in un posto diverso, e due dei suoi sciamani guardano il cielo. E nessun generale perdona chi lo ha fatto uscire dal fuoco davanti ai suoi.
 
-Il §13 propone una procedura in cinque passi per la prossima trovata dei giocatori, perché il DM non debba improvvisare, e i PE per l'ingegno. Le voci del §10 si scrivono nell'Echo Ledger del capitolo XI, alla riga «la notte del barile».
+> **Read-aloud — da leggere ai giocatori quando rientrano sulle mura.** *Dalle mura il campo dell'orda sembra un cielo rovesciato, pieno di stelle rosse.
+> In mezzo, dove c'era la tenda nera, brucia ancora una brace grande come una casa.
+> Il vento porta fin quassù l'odore della pelle bruciata.
+> Le sentinelle non dicono niente. Uno batte il pugno sulla corazza, una volta.
+> Poi un altro, e un altro ancora, finché il ferro risuona lungo tutto il camminamento.
+> Laggiù, attorno alla brace, i fuochi cominciano a spegnersi.
+> Uno alla volta, in cerchio, senza fretta.
+> Come occhi che si chiudono per vedere meglio al buio.*
+
+**Il livello degli eroi.** Gli eroi dovrebbero essere al 14° livello dopo il primo riposo. Il capitolo non dà PX nuovi: il premio della trovata del barile sta in fondo al capitolo V.
 
 ## 10. Che cosa cambia per la storia
 

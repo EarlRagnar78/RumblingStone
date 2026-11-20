@@ -1,5 +1,12 @@
-Il barile è caduto, e la notte non è finita. Il master scrive la notte intera, dalla postierla alla tenda del comando e ritorno; stasera se ne gioca la coda. Si torna in volo finché bastano pozioni e pergamene, poi a piedi o portati da Artemis. Fra le tende, fermo a guardare il fuoco con un fagotto stretto al petto, c'è Vatore, il ladro che diventerà Sal: ha paura di quattro persone che non dovrebbero esistere, e l'Anello di Artemis lo sente prima di chiunque. Zog'tar, se è vivo, ha appena imparato che i nani volano.
+Il fuoco è caduto, e la notte non è finita. Fra gli eroi e le mura c'è un chilometro di nemici svegli, e ogni passo verso casa costa. Tornare non è la parte facile dell'impresa: è quella che le canzoni dimenticano, e che decide chi c'è all'alba.
 
-Si entra da dove il capitolo V ha lasciato i PG, con il foglio delle tacche in vista: ogni cosa ne costa, e il ritorno ne costa una. Se il corno ha suonato vale «Se il corno suona di notte». Le Scene 7 e 8, la tenda e Zog'tar, si giocano solo se scendono a finire il lavoro, con la tenda in fiamme o crollata e il campo sveglio; Balvar, se è vivo, non tratta più da solo. Se tornano in volo senza scendere, Vatore lo trovano sulle mura all'alba.
+> **Read-aloud (Salvatore lead, Andor support) — da leggere ai giocatori.** *Alle spalle, la tenda nera è una torcia alta quanto una torre. Il calore
+> arriva fin qui, sulla nuca, e porta odore di pelle che brucia.
+> Il campo si sveglia a pezzi. Un grido, poi un altro più lontano; un tamburo
+> che comincia e si ferma, come se nessuno sapesse ancora chi deve suonarlo.
+> Ombre corrono verso il fuoco. Altre, più lente, ne vengono via.
+> Le mura di Hammerfist sono un filo bianco lontano, sotto le stelle.
+> Il cielo, che fino a un momento fa reggeva, comincia a pesare.
+> Fra due tende qualcuno si è fermato. Non guarda l'incendio.*
 
-Il capitolo finisce quando escono dal campo: si contano le tacche e si legge la tabella d'uscita, sei o meno in tempo, sette di corsa, otto o più e l'alba li coglie fuori. Servono a portata il foglio delle tacche, la mappa M7-C e la scheda di Vatore.
+**Il livello degli eroi.** Gli eroi dovrebbero essere al 13° livello all'inizio del capitolo. È il capitolo che dà più PX prima dell'alba: chi arriva vicino alla soglia può già avere quelli del 14°, che si prende comunque al primo riposo dopo la battaglia.

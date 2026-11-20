@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: gate-prima-del-push
+expected_outcome: |
+  python3 scripts/gate_locale.py --pre-push.

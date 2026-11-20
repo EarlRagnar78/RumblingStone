@@ -78,6 +78,32 @@ jobs:
       - name: Prove delle skill in forma (ADR-0114)
         run: python scripts/prove_skill.py controlla
 
+      # ADR-0148: le prove fisse degli agenti. Forma e giudici si controllano
+      # senza modelli: ogni caso ha almeno un giudice deterministico, e i
+      # giudici promuovono l'esempio buono e bocciano il cattivo.
+      - name: Prove degli agenti in forma, giudici che discriminano (ADR-0148)
+        run: |
+          python scripts/prove_skill.py controlla --agenti
+          python scripts/prove_skill.py esempi
+
+      # ADR-0148, canale testing: un agente toccato dalla PR (il suo file, una
+      # skill che precarica, i suoi casi) ha un esito registrato con l'impronta
+      # nuova, non peggiore del precedente. Avvisa e non blocca fino alla
+      # promozione a stable.
+      - name: Agenti toccati senza esito registrato (cricchetto, testing)
+        if: github.event_name == 'pull_request'
+        run: python scripts/prove_skill.py cricchetto --base "origin/${{ github.base_ref }}"
+
+      # ADR-0148: il registro dei PX torna con le somme, le soglie SRD, un
+      # livello alla volta e i livelli di classe di state.yaml.
+      - name: Registro dei PX (verifica_px.py, ADR-0148)
+        run: python scripts/verifica_px.py
+
+      # ADR-0148: i rimandi «FILE §N» e «vedi §N» puntano a sezioni vere.
+      # Le violazioni portate al DM su card stanno in IN_ATTESA.
+      - name: Rimandi per sezione (verifica_rimandi.py --check, ADR-0148)
+        run: python scripts/verifica_rimandi.py --check
+
       # Lo scanner di sicurezza delle skill, copiato da awesome-llm-apps
       # (Apache 2.0, ADR-0076): esce 1 su un CRITICO, come `curl ... | sh`.
       - name: Skill security scan (scripts/terzi/skill_scanner.py)

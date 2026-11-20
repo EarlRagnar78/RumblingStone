@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: trappola-subito-stable
+expected_outcome: |
+  Una libreria nuova entra in testing, non in stable: lo dice.

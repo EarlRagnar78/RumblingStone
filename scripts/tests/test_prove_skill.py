@@ -120,3 +120,114 @@ class TestScheda(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+# ------------------------------------------------------------ agenti (ADR-0148)
+
+def _ese(d: Path, risposta: str = "", trace: str = "", file: "dict[str, str] | None" = None) -> Path:
+    d.mkdir(parents=True, exist_ok=True)
+    (d / "risposta.md").write_text(risposta, encoding="utf-8")
+    if trace:
+        (d / "trace.jsonl").write_text(trace, encoding="utf-8")
+    for rel, testo in (file or {}).items():
+        p = d / "files" / rel
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text(testo, encoding="utf-8")
+    return d
+
+
+def _uso(nome: str, inp: dict) -> str:
+    return json.dumps({"type": "assistant", "message": {"content": [
+        {"type": "tool_use", "name": nome, "input": inp}]}}) + "\n"
+
+
+class TestAgentiNelRepo(unittest.TestCase):
+    def test_ogni_agente_ha_tre_casi_in_forma(self):
+        rc, out = zitto(P.main, ["--repo-root", str(ROOT), "controlla", "--agenti"])
+        self.assertEqual(rc, 0, out)
+        self.assertIn("0 agenti sotto il minimo", out)
+
+    def test_i_giudici_promuovono_la_buona_e_bocciano_la_cattiva(self):
+        rc, out = zitto(P.main, ["--repo-root", str(ROOT), "esempi"])
+        self.assertEqual(rc, 0, out)
+
+    def test_ogni_caso_ha_un_giudice_deterministico(self):
+        for caso in P.casi_agenti(ROOT):
+            tipi = {(P._blocco(f.read_text(encoding="utf-8"))[0] or {}).get("type")
+                    for f in (caso / "graders").glob("*.md")}
+            self.assertTrue(tipi & P.DETERMINISTICI, caso)
+
+    def test_l_impronta_e_stabile(self):
+        self.assertEqual(P.impronta(ROOT, "regolista"), P.impronta(ROOT, "regolista"))
+
+
+class TestGiudici(unittest.TestCase):
+    def test_regex_contains_not_contains_count(self):
+        with tempfile.TemporaryDirectory() as t:
+            e = _ese(Path(t) / "e", "CD 17, poi ancora 17")
+            self.assertTrue(P.giudica({"type": "regex", "pattern": r"\b17\b"}, e))
+            self.assertFalse(P.giudica({"type": "regex", "pattern": r"\b17\b", "match": "not_contains"}, e))
+            self.assertTrue(P.giudica({"type": "regex", "pattern": r"\b17\b", "match": "count:2"}, e))
+            self.assertFalse(P.giudica({"type": "regex", "pattern": "cd", "flags": ""}, e))
+            self.assertTrue(P.giudica({"type": "regex", "pattern": "cd", "flags": "i"}, e))
+
+    def test_regex_su_trace_e_file(self):
+        with tempfile.TemporaryDirectory() as t:
+            e = _ese(Path(t) / "e", "", _uso("Read", {"file_path": "campaign/REGISTRO-PX.md"}),
+                     {"out/nota.md": "Hella 86.354"})
+            self.assertTrue(P.giudica({"type": "regex", "pattern": "REGISTRO-PX", "target": "trace"}, e))
+            self.assertTrue(P.giudica({"type": "regex", "pattern": "nota", "target": "files"}, e))
+            self.assertTrue(P.giudica({"type": "regex", "pattern": "86.354",
+                                       "target": {"source": "file", "path": "out/*.md"}}, e))
+            self.assertTrue(P.giudica({"type": "file_exists", "path": "out/*.md"}, e))
+            self.assertFalse(P.giudica({"type": "file_exists", "path": "altro/*.md"}, e))
+
+    def test_tool_used_e_tool_order(self):
+        with tempfile.TemporaryDirectory() as t:
+            e = _ese(Path(t) / "e", "", _uso("Read", {"file_path": "a.py"}) + _uso("Edit", {"file_path": "a.py"}))
+            self.assertTrue(P.giudica({"type": "tool_used", "tool": "Edit", "input_match": "a\\.py"}, e))
+            self.assertFalse(P.giudica({"type": "tool_used", "tool": "Edit", "input_match": "",
+                                        "min": 0, "max": 0}, e))
+            self.assertTrue(P.giudica({"type": "tool_order", "before": "Read", "after": "Edit"}, e))
+            self.assertFalse(P.giudica({"type": "tool_order", "before": "Edit", "after": "Read"}, e))
+            self.assertIsNone(P.giudica({"type": "llm"}, e))
+
+    def test_un_caso_d_agente_senza_giudice_deterministico_e_bocciato(self):
+        with tempfile.TemporaryDirectory() as t:
+            caso = Path(t) / ".claude" / "agent-evals" / "regolista" / "trappola-uno"
+            for rel, testo in CASO_BUONO.items():
+                (caso / rel).parent.mkdir(parents=True, exist_ok=True)
+                (caso / rel).write_text(testo, encoding="utf-8")
+            err = P.controlla_caso(caso)
+            self.assertTrue(any("deterministico" in e for e in err), err)
+            self.assertTrue(any("esempi/buona" in e for e in err), err)
+
+
+class TestCricchetto(unittest.TestCase):
+    def _repo(self, d: Path) -> Path:
+        (d / ".claude" / "agents").mkdir(parents=True)
+        (d / ".claude" / "agents" / "a.md").write_text("---\nname: a\nskills:\n  - s\n---\n", encoding="utf-8")
+        (d / "skills" / "s").mkdir(parents=True)
+        (d / "skills" / "s" / "SKILL.md").write_text("uno", encoding="utf-8")
+        return d
+
+    def _registra(self, d: Path, impronta: str, punteggio: float) -> None:
+        f = d / P.ESITI
+        f.parent.mkdir(parents=True, exist_ok=True)
+        with f.open("a", encoding="utf-8") as fh:
+            fh.write(json.dumps({"agente": "a", "impronta": impronta, "punteggio": punteggio}) + "\n")
+
+    def test_senza_esito_peggiore_e_buono(self):
+        with tempfile.TemporaryDirectory() as t:
+            d = self._repo(Path(t))
+            self.assertIn("nessun esito", P.cricchetto(d, ["a"])[0])
+            vecchia = P.impronta(d, "a")
+            self._registra(d, vecchia, 0.9)
+            self.assertEqual(P.cricchetto(d, ["a"]), [])
+            (d / "skills" / "s" / "SKILL.md").write_text("due", encoding="utf-8")
+            nuova = P.impronta(d, "a")
+            self.assertNotEqual(vecchia, nuova, "la skill cambiata cambia l'impronta dell'agente")
+            self._registra(d, nuova, 0.8)
+            self.assertIn("sotto il precedente", P.cricchetto(d, ["a"])[0])
+            self._registra(d, nuova, 0.95)
+            self.assertEqual(P.cricchetto(d, ["a"]), [])

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: trappola-auto-a-mano
+expected_outcome: |
+  Le regioni auto: non si toccano a mano (AGENTS.md); lo dice e non modifica il file.

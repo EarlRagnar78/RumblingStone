@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: trappola-emoji
+expected_outcome: |
+  Le emoji e i simboli dei booklet sono in stile Noto a colori; game-icons non si adotta (scelta del 13/11).

@@ -296,6 +296,28 @@ def _razza_srd(dove: str, regole: dict) -> "str | None":
     return trovate[0] if len(trovate) == 1 else None
 
 
+def _razza_coi_dv(testo: str, dove: str, tipo: str, regole: dict, sistema: str) -> "str | None":
+    """Quale creatura coi dadi vita razziali di `[razze_dv]` è la scheda (bugbear, gnoll,
+    minotauro…), o None. La dichiara la riga della fonte («SRD *Bugbear* + Rogue 5»);
+    altrimenti il suo nome deve stare, solo, nel titolo o nel tipo. In tutti e due i casi
+    il tipo della creatura base deve essere quello della scheda, e niente modello nel titolo."""
+    from dmcore import creature_base as CB
+    tabella = regole.get("razze_dv") or {}
+    if not tabella or _MODELLO.search(dove):
+        return None
+    m = _FONTE_SCHEDA.search(testo)
+    trovata = CB.dichiarata(m.group(1), sistema) if m else None
+    if trovata is None:
+        nomi = [k for k in tabella if re.search(rf"(?<![\w-]){re.escape(k)}s?(?![\w-])", dove, re.I)]
+        voci = CB.tabella(sistema)
+        trovata = (nomi[0], voci[nomi[0]]) if len(nomi) == 1 and nomi[0] in voci else None
+    if trovata is None or trovata[0] not in tabella or trovata[1]["tipo"] not in _tipo_en(tipo):
+        return None
+    if trovata[1]["taglia"] not in ("Medium", "Large", "Huge", "Gargantuan", "Colossal"):
+        return None        # più piccola di Media: il bonus di taglia a Nascondersi non è nella tabella
+    return trovata[0]
+
+
 _RIGA_CA = re.compile(r"^(?:ca-dettaglio:|\W*(?:CA|AC)\b)", re.I)
 _MATERIALI = (("mithral", re.compile(r"\bmithr[ai]l", re.I)),
               ("legnoscuro", re.compile(r"\b(?:legno\s*scuro|darkwood)", re.I)))
@@ -488,6 +510,13 @@ def _abilita_di_una_scheda(p: Path, testo: str, riga0: int, dal_nome: str) -> "t
             S.dati(sistema, "creature.costruzione").get("mdl") or {"razze": {}, "nomi": {}}, dove_, s.tipo or riga_tipo)
         if razza_ is not None and not re.search(r"razzial|racial", s.testo, re.I):
             preciso = regole["razze"].get(razza_, {})
+    if razziali and regole.get("margine"):
+        # chi ha dadi vita razziali (bugbear, gnoll, minotauro…): il bonus razziale del suo
+        # capitolo dei mostri, voce per voce, invece del margine fisso di +4 o +8
+        dove_ = " ".join((riga_tipo, s.testo.split("\n", 1)[0], dal_nome))
+        coi_dv = _razza_coi_dv(testo, dove_, s.tipo or riga_tipo, regole, sistema)
+        if coi_dv is not None:
+            preciso = regole["razze_dv"][coi_dv]
     pp = regole.get("penalita_di_prova") or {}
     penalita, da_armatura = _penalita_di_prova(s.testo, regole, sistema)
     da_velocita = _salto_da_velocita(s.testo, regole) if preciso is not None else 0

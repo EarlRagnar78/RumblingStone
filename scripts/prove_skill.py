@@ -53,6 +53,7 @@ import argparse
 import json
 import math
 import random
+import os
 import re
 import sys
 from pathlib import Path
@@ -148,6 +149,10 @@ def controlla_caso(caso: Path) -> "list[str]":
             err.append(f"{rel}/graders/{f.name}: blocco senza type valido")
         elif not corpo.strip():
             err.append(f"{rel}/graders/{f.name}: affermazione vuota")
+        elif testa.get("type") == "regex" and not re.fullmatch(
+                r"contains|not_contains|count:\d+", str(testa.get("match", "contains"))):
+            err.append(f"{rel}/graders/{f.name}: match «{testa.get('match')}» non è contains, "
+                       "not_contains o count:N")
         elif testa.get("type") == "regex":
             try:
                 re.compile(str(testa.get("pattern", "")))
@@ -407,21 +412,30 @@ def _precaricate(agente_md: Path) -> "list[str]":
     return [sk] if isinstance(sk, str) else list(sk)
 
 
-def impronta(root: Path, agente: str) -> str:
-    """sha256 dell'agente, delle sue skill precaricate (tutti i file) e dei suoi casi."""
+def impronta(root: Path, agente: str, casi: "Path | None" = None) -> str:
+    """sha256 dell'agente, delle sue skill precaricate (tutti i file) e dei suoi casi.
+
+    `root` è l'albero da cui l'agente gira (agente e skill); `casi` quello da cui
+    si leggono i casi, se diverso. Non entrano `.claude/rules/`, `CLAUDE.md` e
+    `skills/REGOLE-DORO.md`, che pure cambiano il comportamento (ADR-0148).
+    I fine riga si normalizzano, perché un checkout CRLF non cambi l'impronta.
+    """
     import hashlib
     md = root / DIR_AGENTI / f"{agente}.md"
-    file = [md]
+    file = [(root, md)]
     for s in _precaricate(md):
         d = root / "skills" / s
-        file += [p for p in sorted(d.rglob("*")) if p.is_file() and "evals" not in p.relative_to(d).parts]
-    d = root / DIR_PROVE_AGENTI / agente
-    file += [p for p in sorted(d.rglob("*")) if p.is_file()] if d.is_dir() else []
+        file += [(root, p) for p in sorted(d.rglob("*")) if p.is_file()
+                 and "evals" not in p.relative_to(d).parts and "__pycache__" not in p.parts
+                 and p.name != ".DS_Store"]
+    base = casi or root
+    d = base / DIR_PROVE_AGENTI / agente
+    file += [(base, p) for p in sorted(d.rglob("*")) if p.is_file()] if d.is_dir() else []
     h = hashlib.sha256()
-    for f in file:
-        h.update(str(f.relative_to(root)).encode())
+    for radice, f in file:
+        h.update(str(f.relative_to(radice)).encode())
         h.update(b"\0")
-        h.update(f.read_bytes())
+        h.update(f.read_bytes().replace(b"\r\n", b"\n"))
     return h.hexdigest()[:16]
 
 
@@ -443,55 +457,123 @@ def cmd_esegui(args: argparse.Namespace) -> int:  # pragma: no cover - chiama un
     import shutil
     import subprocess
     root = Path(args.repo_root)
-    lavoro = Path(args.cartella_lavoro) if args.cartella_lavoro else root
+    lavoro = Path(args.cartella_lavoro).resolve()
+    if lavoro == root.resolve():
+        print("--cartella-lavoro non può essere il repo: serve un git worktree usa e getta "
+              "(git worktree add --detach DIR HEAD), perché fra un caso e l'altro si ripulisce",
+              file=sys.stderr)
+        return 2
     out = Path(args.uscita)
+    falliti = 0
+    partenza = subprocess.run(["git", "rev-parse", "HEAD"], cwd=lavoro, capture_output=True,
+                              text=True).stdout.strip()
+    if not partenza or subprocess.run(["git", "status", "--porcelain"], cwd=lavoro,
+                                      capture_output=True, text=True).stdout.strip():
+        print(f"{lavoro}: serve un worktree git pulito", file=sys.stderr)
+        return 2
+    # l'agente gira con l'agente e le skill del worktree: l'impronta si prende da lì
+    firma = impronta(lavoro, args.agente, casi=root)
+    # niente push dal worktree, che condivide i remote del repo vero
+    env = dict(os.environ, GIT_CONFIG_COUNT="1", GIT_CONFIG_KEY_0="remote.origin.pushurl",
+               GIT_CONFIG_VALUE_0="/dev/null/nessun-push")
     for caso in casi_agenti(root, args.agente):
         if args.caso and caso.name not in args.caso:
             continue
         testa, consegna = _blocco((caso / "prompt.md").read_text(encoding="utf-8"))
+        testa = testa or {}
         ese = out / caso.name
-        ese.mkdir(parents=True, exist_ok=True)
+        if ese.exists():
+            shutil.rmtree(ese)
+        ese.mkdir(parents=True)
         cmd = ["claude", "-p", "--agent", args.agente, "--output-format", "stream-json", "--verbose",
-               "--max-turns", str((testa or {}).get("max_turns", 20))]
+               "--max-turns", str(testa.get("max_turns", 20)),
+               "--disallowedTools", "Bash(git push:*)", "Bash(git commit:*)", "Bash(git reset:*)",
+               "Bash(git checkout:*)"]
+        if testa.get("allowed_tools"):
+            cmd += ["--allowedTools", ",".join(testa["allowed_tools"])]
         if args.modello:
             cmd += ["--model", args.modello]
-        prima = subprocess.run(["git", "status", "--porcelain"], cwd=lavoro, capture_output=True, text=True).stdout
-        r = subprocess.run(cmd + [consegna.strip()], cwd=lavoro, capture_output=True, text=True,
-                           timeout=int((testa or {}).get("timeout_seconds", 900)))
-        (ese / "trace.jsonl").write_text(r.stdout, encoding="utf-8")
-        finale = ""
-        for riga in r.stdout.splitlines():
-            try:
-                ev = json.loads(riga)
-            except json.JSONDecodeError:
-                continue
-            if ev.get("type") == "result":
-                finale = str(ev.get("result", ""))
-        (ese / "risposta.md").write_text(finale, encoding="utf-8")
-        dopo = subprocess.run(["git", "status", "--porcelain"], cwd=lavoro, capture_output=True, text=True).stdout
-        for riga in sorted(set(dopo.splitlines()) - set(prima.splitlines())):
-            rel = riga[3:].strip()
-            if (lavoro / rel).is_file():
+        (ese / "impronta.txt").write_text(firma + "\n", encoding="utf-8")
+        (ese / "cli.txt").write_text(_versione_cli(), encoding="utf-8")
+        stdout, rc = "", None
+        try:
+            r = subprocess.run(cmd + ["--", consegna.strip()], cwd=lavoro, capture_output=True,
+                               text=True, env=env, timeout=int(testa.get("timeout_seconds", 900)))
+            stdout, rc = r.stdout, r.returncode
+            if rc != 0:
+                (ese / "ERRORE.txt").write_text(r.stderr[-4000:] or f"rc {rc}", encoding="utf-8")
+        except subprocess.TimeoutExpired as e:
+            stdout = (e.stdout or b"").decode("utf-8", "replace") if isinstance(e.stdout, bytes) else (e.stdout or "")
+            (ese / "ERRORE.txt").write_text(f"oltre {e.timeout} s", encoding="utf-8")
+        try:
+            if rc != 0:
+                falliti += 1
+            (ese / "trace.jsonl").write_text(stdout, encoding="utf-8")
+            finale = ""
+            for riga in stdout.splitlines():
+                try:
+                    ev = json.loads(riga)
+                except json.JSONDecodeError:
+                    continue
+                if ev.get("type") == "result":
+                    finale = str(ev.get("result", ""))
+            (ese / "risposta.md").write_text(finale, encoding="utf-8")
+            for rel in _file_toccati(lavoro, partenza):
                 (ese / "files" / rel).parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(lavoro / rel, ese / "files" / rel)
-        if args.cartella_lavoro:  # la copia di lavoro torna com'era: un caso non sporca il successivo
-            subprocess.run(["git", "checkout", "--", "."], cwd=lavoro, capture_output=True)
+        finally:
+            # la copia di lavoro torna al commit di partenza: un caso non sporca il successivo
+            subprocess.run(["git", "reset", "--hard", "-q", partenza], cwd=lavoro, capture_output=True)
             subprocess.run(["git", "clean", "-fdq"], cwd=lavoro, capture_output=True)
-        print(f"{caso.name}: {len(finale)} caratteri, rc {r.returncode}")
-    return 0
+        print(f"{caso.name}: {len(finale)} caratteri, rc {rc}")
+    return 1 if falliti else 0
+
+
+def _file_toccati(lavoro: Path, partenza: str) -> "list[str]":
+    """File cambiati o nuovi rispetto al commit di partenza, anche dentro cartelle nuove
+    e con spazi o accenti nel nome (`-z`: niente virgolette né escape ottali)."""
+    import subprocess
+    cambiati = subprocess.run(["git", "diff", "--name-only", "-z", partenza], cwd=lavoro,
+                              capture_output=True).stdout
+    nuovi = subprocess.run(["git", "ls-files", "-o", "-z", "--exclude-standard"], cwd=lavoro,
+                           capture_output=True).stdout
+    nomi = {n.decode("utf-8", "replace") for n in (cambiati + b"\0" + nuovi).split(b"\0") if n}
+    return sorted(n for n in nomi if (lavoro / n).is_file())
+
+
+def _versione_cli() -> str:
+    import subprocess
+    try:
+        return subprocess.run(["claude", "--version"], capture_output=True, text=True,
+                              timeout=30).stdout.strip()
+    except (OSError, subprocess.SubprocessError):
+        return ""
 
 
 def cmd_registra(args: argparse.Namespace) -> int:
     root = Path(args.repo_root)
     d = Path(args.esecuzioni)
-    risultati = [valuta(c, d / c.name) for c in casi_agenti(root, args.agente) if (d / c.name).is_dir()]
+    eseguiti = [c for c in casi_agenti(root, args.agente) if (d / c.name).is_dir()]
+    saltati = [c.name for c in eseguiti if (d / c.name / "ERRORE.txt").exists()]
+    # un caso fallito (rc, timeout, max-turns) vale 0: non esce dalla media
+    risultati = [valuta(c, d / c.name) if c.name not in saltati else
+                 {"caso": c.name, "giudici": [], "punteggio": 0.0} for c in eseguiti]
+    firme = {(d / c.name / "impronta.txt").read_text(encoding="utf-8").strip()
+             for c in eseguiti if (d / c.name / "impronta.txt").exists()}
+    if len(firme) > 1:
+        print(f"le esecuzioni hanno impronte diverse {sorted(firme)}: rilanciale insieme", file=sys.stderr)
+        return 1
+    cli = sorted({(d / c.name / "cli.txt").read_text(encoding="utf-8").strip()
+                  for c in eseguiti if (d / c.name / "cli.txt").exists()})
     if not risultati:
         print("nessuna esecuzione trovata", file=sys.stderr)
         return 1
-    voce = {"agente": args.agente, "impronta": impronta(root, args.agente),
+    voce = {"agente": args.agente, "impronta": firme.pop() if firme else impronta(root, args.agente),
             "data": args.data, "modello": args.modello, "casi": len(risultati),
             "punteggio": round(sum(r["punteggio"] for r in risultati) / len(risultati), 3),
-            "per_caso": {r["caso"]: r["punteggio"] for r in risultati}, "nota": args.nota}
+            "per_caso": {r["caso"]: r["punteggio"] for r in risultati}, "nota": args.nota,
+            "cli": ", ".join(cli), "saltati": saltati,
+            "mancanti": sorted({c.name for c in casi_agenti(root, args.agente)} - {c.name for c in eseguiti})}
     f = root / ESITI
     f.parent.mkdir(parents=True, exist_ok=True)
     with f.open("a", encoding="utf-8") as fh:
@@ -504,13 +586,18 @@ def agenti_cambiati(root: Path, base: str) -> "list[str]":
     import subprocess
     r = subprocess.run(["git", "diff", "--name-only", f"{base}...HEAD"], cwd=root,
                        capture_output=True, text=True)
-    cambiati = set(r.stdout.split())
+    if r.returncode != 0:
+        print(f"git diff {base}...HEAD non riesce: {r.stderr.strip()}", file=sys.stderr)
+        raise SystemExit(2)
+    cambiati = set(r.stdout.splitlines())
     esito = []
     for a in _agenti(root):
         md = root / DIR_AGENTI / f"{a}.md"
         prefissi = [str(DIR_AGENTI / f"{a}.md"), f"{DIR_PROVE_AGENTI}/{a}/"]
         prefissi += [f"skills/{s}/" for s in _precaricate(md)]
-        if any(c == p or c.startswith(p) for c in cambiati for p in prefissi):
+        # le prove delle skill (skills/<s>/evals/) non entrano nell'impronta dell'agente
+        if any((c == p or c.startswith(p)) and "/evals/" not in c[len(p) - 1:]
+               for c in cambiati for p in prefissi):
             esito.append(a)
     return esito
 
@@ -529,6 +616,9 @@ def cricchetto(root: Path, agenti: "list[str]") -> "list[str]":
         prima = [e for e in suoi if e.get("impronta") != ora]
         if prima and attuali[-1]["punteggio"] < prima[-1]["punteggio"]:
             problemi.append(f"{a}: punteggio {attuali[-1]['punteggio']} sotto il precedente {prima[-1]['punteggio']}")
+        elif prima and attuali[-1].get("cli") != prima[-1].get("cli"):
+            print(f"AVVISO  {a}: confronto fra due versioni della CLI ({prima[-1].get('cli')} → "
+                  f"{attuali[-1].get('cli')}): il punteggio può cambiare anche per questo")
     return problemi
 
 
@@ -569,7 +659,8 @@ def main(argv: "list[str] | None" = None) -> int:
     g.add_argument("--uscita", required=True)
     g.add_argument("--modello")
     g.add_argument("--caso", action="append", help="solo questi casi (ripetibile)")
-    g.add_argument("--cartella-lavoro", help="un git worktree usa e getta dove l'agente lavora (consigliato)")
+    g.add_argument("--cartella-lavoro", required=True,
+                   help="un git worktree usa e getta dove l'agente lavora: fra un caso e l'altro si ripulisce")
     r = sub.add_parser("registra", help="scrive l'esito in ESITI.jsonl")
     r.add_argument("--agente", required=True)
     r.add_argument("--esecuzioni", required=True)

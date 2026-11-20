@@ -86,24 +86,6 @@ jobs:
           python scripts/prove_skill.py controlla --agenti
           python scripts/prove_skill.py esempi
 
-      # ADR-0148, canale testing: un agente toccato dalla PR (il suo file, una
-      # skill che precarica, i suoi casi) ha un esito registrato con l'impronta
-      # nuova, non peggiore del precedente. Avvisa e non blocca fino alla
-      # promozione a stable.
-      - name: Agenti toccati senza esito registrato (cricchetto, testing)
-        if: github.event_name == 'pull_request'
-        run: python scripts/prove_skill.py cricchetto --base "origin/${{ github.base_ref }}"
-
-      # ADR-0148: il registro dei PX torna con le somme, le soglie SRD, un
-      # livello alla volta e i livelli di classe di state.yaml.
-      - name: Registro dei PX (verifica_px.py, ADR-0148)
-        run: python scripts/verifica_px.py
-
-      # ADR-0148: i rimandi «FILE §N» e «vedi §N» puntano a sezioni vere.
-      # Le violazioni portate al DM su card stanno in IN_ATTESA.
-      - name: Rimandi per sezione (verifica_rimandi.py --check, ADR-0148)
-        run: python scripts/verifica_rimandi.py --check
-
       # Lo scanner di sicurezza delle skill, copiato da awesome-llm-apps
       # (Apache 2.0, ADR-0076): esce 1 su un CRITICO, come `curl ... | sh`.
       - name: Skill security scan (scripts/terzi/skill_scanner.py)
@@ -143,6 +125,15 @@ jobs:
       - name: Link e percorsi locali — su tutti i sorgenti scritti a mano
         run: python scripts/validate_docs.py --sorgenti
 
+      # ADR-0148, canale testing fino al 2026-12-04 (14 giorni e 10 run su main):
+      # i rimandi «FILE §N» e «vedi §N» puntano a un titolo che esiste. La regola
+      # sul «§N» senza nome è tarata sul repo del 20/11; sullo storico (tre
+      # istantanee) 2 rotture vere e 0 falsi allarmi; 41% dei rimandi non
+      # giudicabile. Le violazioni portate al DM stanno in IN_ATTESA.
+      - name: Rimandi per sezione — non bloccante fino al 2026-12-04 (ADR-0148, testing)
+        continue-on-error: true
+        run: python scripts/verifica_rimandi.py --check
+
       - name: Decisioni aperte al DM — l'aggregato combacia coi piani
         run: python scripts/decisioni_dm.py --check
 
@@ -175,6 +166,14 @@ jobs:
         run: |
           python scripts/validate_pg.py
           python scripts/render_pg.py --check
+
+      # 🔴 BLOCCANTE, ADR-0148, per la regola di Jfs «ciò che un controllo trova
+      # si corregge e il controllo diventa cancello»: il registro dei PX torna
+      # con le somme (R1), la tabella dei PX (R2), un livello alla volta (R3) e
+      # il livello effettivo di state.yaml (R4). Aritmetica su un file: 366
+      # mutanti su 366, 0 violazioni sulle tre versioni del registro nella storia.
+      - name: Registro dei PX — somme, soglie e livelli (verifica_px.py, ADR-0148)
+        run: python scripts/verifica_px.py
 
       # Il debito [INFERRED] dei documenti vivi non sale (ripreso dalla #99,
       # lotto G4; ADR-0088). Canale testing (ADR-0099): non blocca finché il DM
@@ -524,6 +523,16 @@ jobs:
       - name: Prosa — il testo cambiato non peggiora (cricchetto, ADR-0146)
         if: github.event_name == 'pull_request'
         run: python scripts/cricchetto_prosa.py --rispetto-a "origin/${{ github.base_ref }}"
+
+      # ADR-0148, canale testing: un agente toccato dalla PR (il suo file, una
+      # skill che precarica, i suoi casi) ha un esito registrato con l'impronta
+      # nuova, non sotto il precedente. Non blocca finché non si misura quanto
+      # oscilla l'esito fra due esecuzioni; alla promozione si toglie
+      # continue-on-error.
+      - name: Agenti toccati senza esito registrato — non bloccante (ADR-0148, testing)
+        if: github.event_name == 'pull_request'
+        continue-on-error: true
+        run: python scripts/prove_skill.py cricchetto --rigoroso --base "origin/${{ github.base_ref }}"
 
       - name: Punteggio di qualita' editoriale (MQM, ADR-0059)
         run: |

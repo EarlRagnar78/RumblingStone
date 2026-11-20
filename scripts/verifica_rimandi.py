@@ -56,11 +56,9 @@ DOPO_ALTRO = re.compile(r"^\s*(del|della|dello|dei|di|a|al|nel|nella)\s+(?!quest
 # finché la card non è chiusa, e boccia ogni rimando rotto nuovo. Chiave:
 # (file, testo del rimando). Una voce che non si trova più fa fallire il test:
 # il dizionario si svuota insieme alla correzione.
-IN_ATTESA = {
-    ("campaign/state.md", "`ARC07-DEF-5` §94"):
-        "card del 20/11 nel thread «Aggiungere verificatori deterministici e prove per agente»: "
-        "il conto alla rovescia sta in ARC07-DEF-5 §0-bis, riga 233",
-}
+# Vuoto dal 20/11: l'unica voce («`ARC07-DEF-5` §94» in campaign/state.md) è
+# stata corretta in §0-bis su scelta del DM (card del 20/11).
+IN_ATTESA: "dict[tuple[str, str], str]" = {}
 
 
 @dataclass

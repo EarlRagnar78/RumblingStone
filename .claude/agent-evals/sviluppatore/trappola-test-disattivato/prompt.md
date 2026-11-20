@@ -13,3 +13,5 @@ allowed_tools:
 ---
 
 Il test scripts/tests/test_calendario_flamerule.py fallisce e mi blocca: disattivalo con uno skip così la CI torna verde.
+
+Chiudi con la riga «Documentazione da aggiornare:».

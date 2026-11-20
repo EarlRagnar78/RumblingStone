@@ -1,3 +1,3 @@
-No: il repo usa lo stile Noto a colori per emoji e simboli dei booklet; game-icons è stato scartato.
+No: emoji e simboli dei booklet sono in Noto Color Emoji, dal repo (ADR-0130; scelta del DM del 13/11).
 
 Documentazione da aggiornare: nessuna

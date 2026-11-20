@@ -1,9 +1,8 @@
 """verifica_px.py: il registro dei PX del repo torna, e ogni errore inserito si vede (ADR-0148).
 
 La misura sui mutanti è quella dichiarata nell'ADR: ogni cella di ogni riga
-cambiata di 1.000 PX, ogni totale, ogni livello dai PX e ogni livello di
-classe in state.yaml. Il verificatore deve trovarli tutti, e sul registro vero
-non deve dare falsi allarmi.
+cambiata di 1.000 PX deve far scattare R1, e sul registro vero non ci sono
+falsi allarmi. R2, R3 e R4 hanno test propri, non una misura sui mutanti.
 """
 from __future__ import annotations
 
@@ -55,7 +54,7 @@ def _scrivi(d: Path, registro: str, state: str = STATE_MINI) -> "tuple[Path, Pat
 
 class TestSoglie(unittest.TestCase):
     def test_tabella_srd(self) -> None:
-        # SRD 3.5: 2° = 1.000, 13° = 78.000, 14° = 91.000, 15° = 105.000
+        # PHB 3.5, Table 3–2 (non SRD): 2° = 1.000, 13° = 78.000, 14° = 91.000, 15° = 105.000
         self.assertEqual([V.soglia(n) for n in (1, 2, 13, 14, 15)], [0, 1000, 78000, 91000, 105000])
         self.assertEqual(V.livello_da_px(104999), 14)
         self.assertEqual(V.livello_da_px(105000), 15)
@@ -107,6 +106,42 @@ class TestRegole(unittest.TestCase):
         with tempfile.TemporaryDirectory() as t:
             v = V.verifica(*_scrivi(Path(t), MINI, STATE_MINI.replace("Fighter 3", "Fighter 4")))
             self.assertEqual([x.regola for x in v], ["R4 tavolo"])
+
+    def test_r3_livello_al_tavolo_oltre_i_px(self) -> None:
+        testo = MINI.replace("| Livello al tavolo | 3° |", "| Livello al tavolo | 9° |")
+        with tempfile.TemporaryDirectory() as t:
+            v = V.verifica(*_scrivi(Path(t), testo, STATE_MINI.replace("Fighter 3", "Fighter 9")))
+            self.assertEqual([x.regola for x in v], ["R3 un livello"])
+
+    def test_r4_pg_senza_riga_in_state(self) -> None:
+        with tempfile.TemporaryDirectory() as t:
+            v = V.verifica(*_scrivi(Path(t), MINI, "party:\n- pg: Thorik\n  classe: Dwarf Fighter 3\n"))
+            self.assertEqual([(x.regola, x.colonna) for x in v], [("R4 tavolo", "Hella")])
+
+    def test_livello_effettivo(self) -> None:
+        casi = {"Dream Dwarf Ranger 1 / Druid 12": 13, "Dwarf Fighter 4 / Monk 9": 13,
+                "Human Warlock 13 (ECL 15)": 15, "Dwarf Fighter 13, 3 DV razziali": 13,
+                "Ranger1/Druid12": 13, "Half-Ogre (LA +2) Fighter 1": 3}
+        for classe, atteso in casi.items():
+            with self.subTest(classe=classe):
+                self.assertEqual(V.livello_effettivo(classe), atteso)
+
+    def test_colonne_in_ordine_diverso_sono_una_violazione(self) -> None:
+        righe = [l for l in MINI.splitlines() if l.startswith("| Riga")]
+        self.assertTrue(righe, "il mini-registro ha un'intestazione «Riga»")
+        cols = [c.strip() for c in righe[0].strip("|").split("|")]
+        invertita = "| " + " | ".join(cols[:2] + cols[2:][::-1]) + " |"
+        testo = MINI + "\n" + invertita + "\n"
+        with tempfile.TemporaryDirectory() as d:
+            v = V.verifica(*_scrivi(Path(d), testo, STATE_MINI))
+            self.assertIn("forma", [x.regola for x in v])
+
+    def test_numeri_che_non_sono_livelli(self) -> None:
+        self.assertEqual(V.livello_effettivo("Human Warlock 13 (CR 13)"), 13)
+        self.assertEqual(V.livello_effettivo("Dwarf Fighter 13, Str 18"), 13)
+
+    def test_meno_con_il_trattino_medio(self) -> None:
+        self.assertEqual(V.numero("\u2013500"), -500)
 
     def test_forma_mancante(self) -> None:
         with tempfile.TemporaryDirectory() as t:

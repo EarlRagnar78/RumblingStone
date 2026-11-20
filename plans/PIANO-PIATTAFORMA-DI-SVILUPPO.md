@@ -62,6 +62,9 @@ colonna lo dice e il lotto che la fissa è A1 o A3 di AMBIENTE.
 | pyright | — | — | non misurato | unstable |
 | pre-commit (framework) | — | — | non misurato; A4 ha già deciso hook senza dipendenze | **non si adotta** |
 | riscontro SRD (`riscontro_srd.py` con l'SRD 3.5 e il PRD PF1e in cache, OGL 1.0a) | commit fissati, sha256 per file | sì | 53 regole di ARC-08 in 0,25 s, 3 discordanze vere (RISCONTRO-ARC08) | **testing** da questa PR (P11, ADR-0103) |
+| verifica del registro dei PX (`verifica_px.py`, ADR-0148) | stdlib | — | 16 test, 366 mutanti su 366, 0 falsi allarmi su 3 versioni storiche del registro | **stable** dal 2026-11-20, bloccante da subito per scelta del DM (ciò che un controllo trova diventa cancello) |
+| verifica dei rimandi per sezione (`verifica_rimandi.py`, ADR-0148) | stdlib | — | 1.744 rimandi, 1.026 giudicati giusti, 717 non giudicabili; sullo storico 2 rotture vere e 0 falsi allarmi; 435 mutanti su 435 | **testing** dal 2026-11-20 (`continue-on-error`); stable non prima del 2026-12-04 |
+| cricchetto degli agenti (`prove_skill.py cricchetto --rigoroso`, ADR-0148) | stdlib | — | solo sulle PR che toccano un agente, le skill che precarica o i suoi casi; quanto oscilla l'esito fra due esecuzioni non è misurato | **testing** dal 2026-11-20 (`continue-on-error`); stable solo dopo la misura dell'oscillazione e i 14 giorni |
 
 ### Librerie Python
 
@@ -92,6 +95,7 @@ colonna lo dice e il lotto che la fissa è A1 o A3 di AMBIENTE.
 | Blender | di sistema | no | render 3D, tessere degli oggetti | **unstable** fuori CI; il piano di scena è stdlib e stable |
 | ComfyUI, distrobox | — | no | immagini | **unstable** fuori CI |
 | LLM locale per la prosa | gemma4 bocciato | — | ADR-0089, PR #234 | **unstable** |
+| CLI `claude` (Claude Code) | quella della macchina, scritta in ogni riga di `ESITI.jsonl` | no | `prove_skill.py esegui`, le prove degli agenti (ADR-0148) | **unstable** fuori CI: chiede una chiave e costa token; `binari.py` la elenca fra gli opzionali |
 
 ### Le pipeline
 

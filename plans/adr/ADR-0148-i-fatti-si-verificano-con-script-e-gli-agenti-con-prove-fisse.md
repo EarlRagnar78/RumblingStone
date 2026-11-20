@@ -19,16 +19,23 @@ tutti `type: llm`: ogni esito dipende da un modello che giudica.
 
 ## Decisione
 
-1. **Un fatto che si può contare si conta.** Due verificatori nuovi, entrambi
-   cancelli in CI e con l'uscita di ADR-0124:
-   - `scripts/verifica_px.py`: la somma delle righe del registro è il totale
-     (R1), il livello dai PX segue la tabella SRD (R2), si sale di un livello
-     alla volta (R3), il livello al tavolo è la somma dei livelli di classe di
-     `state.yaml` (R4).
-   - `scripts/verifica_rimandi.py`: un «FILE §N» o un «vedi §N» punta a un
-     titolo che esiste. Un rimando che lo script non sa risolvere va fra i
-     non verificabili, mai fra le violazioni. Le violazioni già portate al DM
-     stanno in `IN_ATTESA` e il cancello boccia solo quelle nuove.
+1. **Un fatto che si può contare si conta.** Due verificatori nuovi, con
+   l'uscita di ADR-0124:
+   - `scripts/verifica_px.py`, cancello bloccante in CI da subito (regola del
+     DM: ciò che un controllo trova si corregge e il controllo diventa
+     cancello): la somma delle righe del registro è il totale (R1); il livello
+     dai PX segue la tabella dei PX, che non è nell'SRD [Private source: PHB
+     3.5, Table 3–2] (R2); si sale di un livello alla volta [Private source:
+     DMG 3.5, cap. 2] e i PX non stanno sotto la soglia del livello al tavolo
+     (R3); il livello al tavolo è il livello effettivo di `state.yaml`, l'ECL
+     se scritto, altrimenti i livelli di classe più l'LA (SRD, Monsters as
+     Races), e ogni PG dei totali ha la sua riga (R4).
+   - `scripts/verifica_rimandi.py`, in CI in testing fino al 2026-12-04 (non
+     blocca; poi stable se non dà falsi allarmi): un «FILE §N» o un «vedi §N»
+     punta a un titolo che esiste. Un rimando che lo script non sa risolvere
+     va fra i non verificabili, mai fra le violazioni. Le violazioni già
+     portate al DM stanno in `IN_ATTESA` e il cancello boccia solo quelle
+     nuove.
 2. **Ogni agente ha almeno tre casi di prova** in `.claude/agent-evals/<agente>/<caso>/`,
    nella forma delle skill (`prompt.md`, `case.yaml`, `graders/`), letti da
    `prove_skill.py` esteso e non da uno script nuovo. La cartella sta fuori da
@@ -44,13 +51,23 @@ tutti `type: llm`: ogni esito dipende da un modello che giudica.
    suoi casi. `esegui` lancia `claude -p --agent <nome>` sui casi in un worktree
    usa e getta e salva risposta, trace e file prodotti; `registra` valuta
    l'esecuzione con i soli giudici deterministici e scrive una riga in
-   `.claude/agent-evals/ESITI.jsonl`.
+   `.claude/agent-evals/ESITI.jsonl`, con la versione della CLI `claude`, i
+   casi falliti (che valgono 0) e quelli non eseguiti. L'impronta registrata
+   è quella dell'agente e delle skill del worktree da cui l'agente ha girato.
+   `esegui` passa `allowed_tools` del caso, vieta `git push`, `commit`,
+   `reset` e `checkout` e toglie al worktree l'indirizzo di push; dopo ogni
+   caso riporta il worktree al commit di partenza. Rifiuta la radice del repo
+   come cartella di lavoro; `esegui` e `registra` non partono dal server MCP
+   (`mcp_vietati` nel manifest), nemmeno con `--allow-write`.
 5. **Cricchetto, prima in testing.** Su una PR che tocca un agente, una skill
    che precarica o i suoi casi, `prove_skill.py cricchetto` chiede un esito con
    l'impronta nuova e un punteggio non sotto il precedente. Per ADR-0099 entra
-   in testing: avvisa e non blocca. Con `--rigoroso` blocca; il passo in CI
-   lo prende alla promozione a stable (14 giorni, 10 run su main, zero falsi
-   allarmi non spiegati).
+   in testing: il passo in CI gira già con `--rigoroso`, ma con
+   `continue-on-error`, così i rossi si contano senza bloccare; alla
+   promozione a stable (14 giorni, 10 run su main, zero falsi allarmi non
+   spiegati) si toglie `continue-on-error`. Il confronto è con l'ultimo esito
+   di impronta diversa, non con il migliore: un esito peggiore registrato in
+   testing abbassa la soglia, e va guardato a mano.
 
 ## Alternative considerate
 
@@ -68,10 +85,18 @@ tutti `type: llm`: ogni esito dipende da un modello che giudica.
   `verifica_px` trova 366 errori inseriti su 366, `verifica_rimandi` 435 su 435,
   e sullo storico dei rimandi 2 rotture vere e 0 falsi allarmi.
 - Una regressione di un agente sulle sue trappole (un numero inventato, un
-  test disattivato, una data superata, una regione `auto:` scritta a mano) ha
+  test disattivato, una data superata, una tabella generata scritta a mano) ha
   un numero prima e dopo.
-- Esiti «prima» registrati il 20/11 con la versione degli agenti della #510:
-  vedi `.claude/agent-evals/ESITI.jsonl` e il corpo della PR.
+- Esiti «prima» registrati il 20/11 con gli agenti della #510 e la CLI
+  2.1.329: una riga per agente in `.claude/agent-evals/ESITI.jsonl`, media
+  0,975, 33 casi su 36 pieni. I tre sotto sono errori veri (un trattino lungo
+  in un ADR, un'etichetta fra parentesi in un box, un piano TDD che non apre
+  con il test). Alla prima passata due giudici erano falsi negativi di forma
+  e sono stati allargati prima di registrare.
+- Le revisioni di `regolista`, `custode-canone` e `piattaforma` sul lavoro di
+  questo ADR hanno trovato errori veri nei casi stessi (una battaglia non
+  giocata data per giocata, un calendario sbagliato, fonti SRD che erano del
+  PHB): i casi passano anche loro dai verificatori.
 
 **Quello che si paga.**
 
@@ -82,7 +107,7 @@ tutti `type: llm`: ogni esito dipende da un modello che giudica.
 - **I casi sono pochi e si invecchiano.** 36 casi per 12 agenti: un fatto del
   canone che cambia (una data, una classe) rompe il caso, e il caso va
   aggiornato con il canone. `custode-canone` li ha controllati il 20/11.
-- **Eseguire costa.** Una passata dei 36 casi dura circa un'ora e consuma
+- **Eseguire costa.** Una passata dei 36 casi dura circa quaranta minuti e consuma
   chiamate a un modello; l'esito oscilla fra due esecuzioni, quindi il
   cricchetto confronta medie su un'esecuzione per caso e può segnalare un calo
   che è rumore. Per questo resta in testing finché non si misura quanto oscilla.
@@ -92,4 +117,11 @@ tutti `type: llm`: ogni esito dipende da un modello che giudica.
   oggi; le istantanee della storia sono la sola prova fuori campione.
 - **`verifica_px` controlla il registro, non la prosa.** I PX e i livelli
   scritti nei master (19 e 13 righe) restano fuori: è il buco 2 dell'inventario.
+- **L'impronta non copre tutto ciò che guida un agente.** `.claude/rules/`,
+  `CLAUDE.md` e `skills/REGOLE-DORO.md` cambiano il comportamento ma non
+  entrano nell'impronta: una loro modifica non chiede un esito nuovo.
+- **Il contenimento di `esegui` è una rete, non una gabbia.** I divieti
+  coprono push, commit, reset e checkout; un agente con Bash può ancora
+  scrivere fuori dal worktree con un percorso assoluto. I casi di oggi
+  permettono Read, Glob, Grep e Bash.
 - La qualità della prosa resta al voto alla cieca di Jfs (ADR-0093).

@@ -25,16 +25,16 @@ sul ramo `claude/project-thread-o55i68` (sopra la #510), con il comando accanto.
 
 | Buco | Prima | Ora | Misura |
 |---|---|---|---|
-| Somme, soglie e livelli del registro dei PX | nessuno: lo rileggeva chi passava | `verifica_px.py`, cancello | 0 violazioni sulle tre versioni del registro nella storia (87afeb19, 322633bd, 1deeb125); 366 mutanti su 366 trovati (ogni cella cambiata di 1.000 PX); R2, R3, R4 con un test ciascuno |
-| Rimandi per sezione | nessuno | `verifica_rimandi.py --check`, cancello | 1.744 rimandi: 1.026 tornano, 1 rotto, 717 non giudicabili. Sullo storico (15/09, 15/10, 05/11) trova 2 rotture vere distinte e 0 falsi allarmi; 435 mutanti su 435 trovati |
+| Somme, soglie e livelli del registro dei PX | nessuno: lo rileggeva chi passava | `verifica_px.py`, cancello bloccante | 0 violazioni sulle tre versioni del registro nella storia (87afeb19, 322633bd, 1deeb125); 366 mutanti su 366 trovati (ogni cella cambiata di 1.000 PX); R2, R3 (anche il limite inferiore), R4 (ECL, LA, PG senza riga) con test propri; 16 test. Le soglie sono del PHB, Table 3–2, non dell'SRD |
+| Rimandi per sezione | nessuno | `verifica_rimandi.py --check`, testing fino al 2026-12-04 (non blocca) | 1.744 rimandi: 1.026 tornano, 1 rotto (corretto su scelta del DM), 717 non giudicabili. Sullo storico (15/09, 15/10, 05/11) trova 2 rotture vere distinte e 0 falsi allarmi; 435 mutanti su 435 trovati |
 | Prove fisse degli agenti | nessuna | 36 casi in `.claude/agent-evals/`, `prove_skill.py esempi` in CI | ogni caso ha un giudice deterministico; i giudici promuovono l'esempio buono e bocciano il cattivo in 36 casi su 36 |
 
 ### Le due rotture vere trovate da `verifica_rimandi`
 
 - `campaign/state.md:170` cita «`ARC07-DEF-5` §94», ma DEF-5 ha i §0-§9. Rotto
   almeno dal 15/09. Il testo che il rimando cerca (Giorno 3, sync con l'ARC-08)
-  sta nel §0-bis, riga 233. È su card a Jfs; il cancello lo tollera in
-  `IN_ATTESA` finché la card non si chiude.
+  sta nel §0-bis, riga 233. Jfs ha scelto su card (20/11) di correggerlo in
+  «§0-bis»; `IN_ATTESA` è tornato vuoto.
 - Al 15/09 `Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md:102` mandava al
   §7 del master del Torneo, che aveva i §1-§6. Corretto dopo, nella storia.
 

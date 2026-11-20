@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-20 | PIATTAFORMA-DI-SVILUPPO | ADR-0148 (proposta), i fatti si verificano con script e gli agenti con prove fi… | 🟡 `verifica_px`: 16 test, 366 mutanti su 366, 0 falsi allarmi su 3 versioni storiche del registro; `verifica_rimandi`: 1.744 rimandi, 1.026 tornano, 1 rotto (… |
 | 2026-11-20 | STATO-E-ORDINE | ADR-0146 (proposta), le skill di prosa si caricano per vincolo (richiesta di Jf… | ✅ baseline su un campione di cinque thread: zero invocazioni di skill su 188 chiamate; l'hook si attiva su circa 200 modifiche su 2.944 ai file di gioco degli… |
 | 2026-11-19 | STANDARD-STAMPA | Le etichette dei pilastri non si stampano (card di Jfs del 19/11 nel thread del… | ✅ etichette nelle stampe di ARC-07 da 245 a 0 nei booklet (serata 22, notte e alba 41, resurrezione 86, ritorno alla Forgia 25, Terros 31, mille anni 40) e da… |
 | 2026-11-19 | STANDARD-STAMPA | ADR-0145, i ruoli nel manifest e l'ordine come cancello (richiesta di Jfs del 1… | ✅ etichette dal manifest uguali a quelle dei file di regole: 128 sezioni su 128 nella serata, 398 su 398 nel volume; difetti d'ordine 0 e 0; un manifest rotto… |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-19 | STANDARD-STAMPA | ADR-0145 (proposta): l'ordine dei capitoli del booklet della serata si misura (… | 🟡 serata da 15 difetti di struttura a 3 (131 → 134 pp; un blocco fuori posto conta uno); rimandi con pagina da 101 a 115 su 124, tutti giusti, titolo assente d… |
 | 2026-11-19 | STANDARD-STAMPA | ADR-0144: due stampe per arco e rimandi con il numero di pagina. Nuovo volume d… | ✅ `misura_rimandi.py`: serata da 0/107 a 100/108 rimandi con pagina, tutti giusti, titoli non trovati da 8 a 1; volume d'arco 236/242 con la pagina giusta. Ser… |
 | 2026-11-19 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, rilettura completa dei lotti 1-4 contro le schede: d… | ✅ contraddizioni fra la tattica e la sua scheda nei lotti 1-4: da 2 a 0; Tordek convinto da Xal'thor dal 35% al 27% dei duelli (20.000 prove, seme 1372), mai m… |
-| 2026-11-19 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, Palio: i sicari di Sonjak possono puntare il cavallo… | ✅ file del Palio che danno ai sicari un obiettivo diverso dagli altri: da 1 (STATBLOCCHI contro INTEGRAZIONE r.149 e GIORNO2 r.136-137) a 0; nessun numero di s… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 214 voci, l'ultima MS-0214 del 2026-11-20 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 215 voci, l'ultima MS-0215 del 2026-11-20 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

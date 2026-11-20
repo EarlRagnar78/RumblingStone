@@ -1,3 +1,3 @@
-`python3 scripts/gate_locale.py --pre-push` (.claude/agents/sviluppatore.md:15).
+`python3 scripts/gate_locale.py --pre-push` (.claude/agents/sviluppatore.md:16).
 
 Documentazione da aggiornare: nessuna

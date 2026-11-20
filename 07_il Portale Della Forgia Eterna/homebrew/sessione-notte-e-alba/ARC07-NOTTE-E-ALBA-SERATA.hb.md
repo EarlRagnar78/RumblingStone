@@ -5394,12 +5394,16 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # Le terre di Hammerfist, ≈372 DR
 
-Questa appendice raccoglie la regione come la trovano i PG mille anni prima della loro epoca, per averla tutta sotto mano senza aprire il modulo. Segue lo schema delle appendici di regione degli AP: la regione in breve, la storia, i luoghi, chi la abita, chi conta, le voci, e quello che ne resterà nel 1372. I fatti vengono dal master cap. VII, dalle piante M7-A, M7-B, M7-C e M7-H e dalle schede del Bestiario. Dove il canone tace, l'appendice tace. Le proposte per i dati che un'appendice d'AP darebbe, con la loro base, stanno nel sorgente e aspettano il DM: in stampa non escono note di lavoro.
+Hammerfist si sente prima di vederla. Chi sale dalla piana avverte le forge sotto i piedi, un battito sordo che passa nella roccia giorno e notte, come il cuore di qualcuno che non dorme mai. Poi compaiono le mura: bianche, sul ciglio di un gradone cento metri sopra la piana, così pulite da sembrare tagliate ieri. Le rifecero dopo la prima venuta del drago, cinquant'anni fa, e basta guardarle per capire che una fortezza che ha visto morire il suo re non lascia più niente al caso.
+
+Ha ottant'anni, che per un nano sono poco più di un'infanzia. Era una miniera, ed è diventata una casa; sopra la sua porta, da stamattina, pende una targa di bronzo che parla di quattro eroi.
+
+Stanotte la strada dei tornanti non la sale nessuno. Sotto il gradone la piana è un mare di tende fino a un chilometro dalle mura, e i fuochi dell'orda si contano come stelle. Dentro, le forge battono più forte, e i bambini e i vecchi scendono nelle miniere con un fagotto ciascuno. È la fortezza che gli eroi trovano mille anni prima della loro epoca: giovane, testarda, e sul punto di cadere.
 
 
 ## Hammerfist in breve, la notte dell'assedio
 
-La fortezza, chi la tiene e chi la vuole. Ogni riga rimanda a una scena del master.
+Hammerfist come la trova chi arriva stanotte, in una tabella sola.
 
 | | |
 |---|---|
@@ -5412,25 +5416,29 @@ La fortezza, chi la tiene e chi la vuole. Ogni riga rimanda a una scena del mast
 | **Quanto regge** | due ore di assalto, dice il re. Se all'alba Zog'tar guida ancora l'orda, la fortezza cade |
 | **Dove sta** | su un gradone 100 m sopra la piana dell'orda, che sta a 520 m sul mare |
 | **Chi pregano** | Moradin, nella cappella di Sorella Brynja. Il runaio esiliato Balvar incide con la mano tenuta ferma da Abbathor |
-| **Cosa la rende diversa** | alla porta è appesa una targa di bronzo incisa stamattina. Profetizza quattro eroi, e quei quattro sono i PG |
+| **Cosa la rende diversa** | alla porta è appesa una targa di bronzo incisa stamattina. Profetizza quattro eroi, e quegli eroi sono i PG |
 
 ## La storia, dalla fondazione a stanotte
 
-Le date sono contate all'indietro dal 372 e portano il segno ≈, perché il canone le dà in anni e non in DR.
+La storia di Hammerfist è breve, come quella di ogni cosa giovane, ed è già scritta due volte col sangue. Le date sono contate all'indietro dal 372, e portano il segno ≈.
 
-Hammerfist si fonda **intorno al 292 DR**. Fra quelli che la costruiscono c'è un nano che viene da altre fortezze ed è già un mastro runaio, Balvar Fuocospento. Ci arriva per la sua abilità, ne diventa il runaio e incide le protezioni sulle porte. Le sue rune proteggono la fortezza per trent'anni. Poi il re lo esilia, senza processo, almeno a sentire lui. Che cosa abbia fatto, il canone non lo dice, e Balvar non lo racconta.
+**Le gallerie (prima del ≈292 DR).** In principio non c'era un re, e non c'era una fortezza. C'era una vena nella montagna e c'erano i minatori che la seguivano, e le stanze dove stanotte dormono gli eroi erano le loro: celle scavate per chi tornava dal turno troppo stanco per salire.
 
-**Intorno al 322 DR** Skullcrusher il Nero scende sulla valle e uccide il re di Hammerfist. Era il nonno di due cugini, Re Thorek I e Thorgrim Barbadiferro. La Corona va perduta; l'ascia, Aegis Fang, resta nella famiglia e passa a Thorgrim. Dopo quella prima venuta del drago la cinta si rifà in pietra bianca, ed è per questo che stanotte le mura sembrano nuove. Il drago, da allora, non ha mai perso, e per lui i nani sono diventati una cosa da mangiare quando ha fame. Per il re la Corona è un lutto di famiglia che porta da cinquant'anni.
+**La fortezza (≈292 DR).** La miniera si fece fortezza quando i nani decisero di restare. Fra quelli che la costruirono c'era uno venuto da lontano, già mastro runaio, Balvar Fuocospento. Incise le protezioni sulle porte, e per trent'anni le sue rune tennero fuori tutto quello che la montagna mandava. Poi il re lo esiliò. Senza processo, dice lui; e che cosa avesse fatto, Balvar non lo racconta a nessuno.
 
-**Le dieci notti prima dell'assedio** l'orda di Zog'tar Deatheye sale dalla piana. Balvar è con lei. Ha trovato in Abbathor un dio che non gli chiede di perdonare, e a Zog'tar ha dato quello che nessun altro poteva: un drago. Sotto una scaglia di Skullcrusher ha inciso una runa-contratto, «quando la fortezza cade, il tesoro del re è tuo», e gli ha taciuto una riga. Quella riga è un guinzaglio: quando il corno dell'araldo Grask suona, il drago torna, che lo voglia o no. In quelle stesse notti le rune di Balvar fermano due incursioni di esploratori nanici, e da allora gli esploratori guardano soltanto dalle mura.
+**Il Primo Nero (≈322 DR).** Il drago scese dal cielo un giorno solo, e bastò. Skullcrusher il Nero uccise il re di Hammerfist, il nonno di due cugini, Thorek e Thorgrim Barbadiferro, e la Corona andò perduta con lui. L'ascia del re, Aegis Fang, restò nella famiglia e passò a Thorgrim. Da allora il drago non ha più perso, e per lui i nani sono diventati una cosa da mangiare quando ha fame.
 
-**La notte prima** Re Thorek I sogna una profezia, e all'alba la incide di sua mano sulla targa di bronzo della porta. **Al tramonto del 372** l'orda è sulla piana. I bambini e i vecchi scendono verso le miniere con un fagotto ciascuno, e le forge non si fermano. Nel bosco a est delle mura il portale posa quattro stranieri.
+**Cinquant'anni di pietra bianca (≈322-372 DR).** Al posto della vecchia cinta si alzarono le mura bianche, e la fortezza giovane ebbe la sua prima cicatrice. Re Thorek I ha centottantadue anni, combatte con Frostcleaver e porta la perdita della Corona come un lutto di famiglia, da cinquant'anni.
 
-**All'alba** l'assalto sale alle mura e il drago cala sul cortile interno. Comunque vada, la fortezza regge, perché la profezia è già incisa. Si sa chi la salva; non si sa quanto costa.
+**Le dieci notti (372 DR).** Dalla piana salì l'orda di Zog'tar Deatheye, quindici clan e diecimila lance, e con lei saliva un nano. Balvar aveva trovato in Abbathor un dio che non gli chiedeva di perdonare, e a Zog'tar diede quello che nessun altro poteva dargli: un drago. Sotto una scaglia di Skullcrusher incise una runa-contratto, «quando la fortezza cade, il tesoro del re è tuo», e gli tacque una riga. Quella riga è un guinzaglio: quando il corno dell'araldo Grask suona, il drago torna, che lo voglia o no. In quelle notti le rune di Balvar respinsero due volte gli esploratori di Hammerfist, e da allora i nani guardano il nemico soltanto dall'alto delle mura.
+
+**Ieri, e stanotte.** Re Thorek ha sognato una profezia, e all'alba l'ha incisa di sua mano sul bronzo della porta. Al tramonto l'orda era sotto le mura. Nel bosco a est, nello stesso momento, il portale posava gli eroi.
+
+Domani all'alba gli arieti saliranno alla porta, e il drago calerà sul cortile. La profezia è incisa: si sa chi salverà la fortezza. Nessuno sa quanto costerà.
 
 ## La geografia, dall'alto in basso
 
-La mappa della regione è M7-R: la valle intera, con la fortezza, il campo e le colline. Il riquadro tratteggiato è M7-A, la vista strategica del capitolo delle mappe. Le distanze sono quelle del canone, e valgono anche nel 1372: in mille anni le montagne non si spostano.
+Dalla torre nord, il punto più alto della fortezza, si vede tutta la notte che aspetta gli eroi: la porta e i tornanti sotto, la spianata degli arieti, poi la piana piena di fuochi, il bosco a est e, lontane, le colline dove dorme il drago. In mille anni le montagne non si spostano, e queste quote valgono anche nel 1372. La mappa M7-R mostra la valle intera; il riquadro tratteggiato è M7-A, la vista strategica.
 
 ![M7-R — La valle di Hammerfist ≈372 DR](../../Mappe/schemi/M7-R-valle-di-hammerfist-372.svg)
 
@@ -5449,15 +5457,15 @@ La mappa della regione è M7-R: la valle intera, con la fortezza, il campo e le 
 
 ## I luoghi della fortezza
 
-Dentro le mura la fortezza è zona sicura: ci si muove senza tirare. Che cosa succede in ogni luogo lo dice la sua scena; qui c'è com'è stanotte, e chi ci si trova.
+Dentro le mura, stanotte, non dorme davvero nessuno. Chi le percorre dalla porta in su trova questi posti, e queste persone; ci si muove senza tirare, e ogni luogo rimanda alla sua scena.
 
-**La porta e la targa (Scena 3).** Due guardie giovani, con gli elmi troppo lucidi, e sopra di loro la targa di bronzo con la profezia. Sotto la targa, per terra, ci sono ancora i trucioli del cesello: il re l'ha incisa stamattina. È il primo nodo d'indizio della serata, e la targa nel 1372 non la ricorda nessuno.
+**La porta e la targa (Scena 3).** Due guardie giovani, con gli elmi troppo lucidi, e sopra di loro la targa di bronzo con la profezia. Sotto la targa, per terra, ci sono ancora i trucioli del cesello: il re l'ha incisa stamattina. Nel 1372 nessuno la ricorda più.
 
 **Il cortile (Scena 3) e il cortile interno (Scena 11).** Pietra chiara, spigoli vivi, la statua di un re: una sola, dove mille anni dopo ce ne saranno venti. Dietro la porta principale c'è il cortile interno, quello delle mappe M7-B: all'alba il drago cala lì, perché è la porta che gli arieti battono e il re la difende da dentro.
 
-**La sala del consiglio (Scena 4).** Lunga quanto una strada, con i pilastri ancora bianchi e un seggio di pietra fredda senza cuscino. Quindici guardie, il re in piedi con l'ascia in pugno, e sulla panca un vecchio che non si alza. Qui il consiglio decide quanto fidarsi di quattro stranieri.
+**La sala del consiglio (Scena 4).** Lunga quanto una strada, con i pilastri ancora bianchi e un seggio di pietra fredda senza cuscino. Quindici guardie, il re in piedi con l'ascia in pugno, e sulla panca un vecchio che non si alza. Qui il consiglio decide quanto fidarsi degli stranieri.
 
-**La fucina originale (Scena 5).** Le forge battono giorno e notte. È la stessa fucina che Tordek conosce nel 1372, e i suoi Bracieri la riconoscono. Ci lavora Gunnvor, e da lei passa il banco della fortezza: quello che i PG vendono qui resta murato nella pietra per mille anni.
+**La fucina originale (Scena 5).** Le forge battono giorno e notte. È la stessa fucina che i nani di Hammerfist usano ancora nel 1372, e un eroe che porta i Bracieri sente che la riconoscono. Ci lavora Gunnvor, e da lei passa il banco della fortezza: quello che i PG vendono qui resta murato nella pietra per mille anni.
 
 **La cappella di Moradin (Scena 5).** Al posto dell'altare c'è un'incudine vecchia, portata giù dalla prima forgia, e venti chierici dormono seduti con la schiena al muro. Sorella Brynja conta ad alta voce gli incantesimi che restano ai cinquanta chierici, e in tutta la fortezza c'è un diamante solo.
 
@@ -5497,7 +5505,7 @@ Ogni fazione vuole qualcosa che non riguarda i PG, e per averlo paga un prezzo.
 
 **Il re e chi gli crede.** Vogliono reggere le mura fino all'alba: ottocento contro diecimila, e il drago. Il re crede alla Corona e alla profezia, perché l'ha sognata lui. Il prezzo è nella cappella e nella fucina: ogni incantesimo che Brynja vende stanotte ai PG manca sulle mura, e ogni arma che Gunnvor dà a un forestiero è un braccio in meno sul camminamento.
 
-**Thorgrim e i capitani.** Non credono alla Corona come ci crede il re, e discutono se affidare la notte a quattro stranieri. Thorgrim non è offeso: ha paura di dare a loro le pozioni e la mappa che sono tutto quello che la fortezza ha per la notte. La prova di fiducia del consiglio decide quanto il re dà ai PG.
+**Thorgrim e i capitani.** Non credono alla Corona come ci crede il re, e discutono se affidare la notte agli stranieri. Thorgrim non è offeso: ha paura di dare a loro le pozioni e la mappa che sono tutto quello che la fortezza ha per la notte. La prova di fiducia del consiglio decide quanto il re dà ai PG.
 
 **Balvar Fuocospento.** È una fazione da solo, e recuperabile. Vuole che Hammerfist cada in fretta, perché un assedio lungo è fame dentro le mura e lui l'ha già vista; a Zog'tar ha chiesto anche che chi si arrende non venga toccato, ma non gliel'ha mai detto in quei termini. E vuole un'altra cosa, più piccola: che qualcuno dica che c'era.
 
@@ -5509,13 +5517,13 @@ Ogni fazione vuole qualcosa che non riguarda i PG, e per averlo paga un prezzo.
 
 ## Chi conta, nell'ordine in cui entra
 
-Ogni PNG ha la sua scheda d'entrata nella scena in cui compare, e le statistiche nell'Appendice A del master. Qui c'è la sua storia, quello che vuole senza i PG, e la porta che lascia aperta. Gli agganci in corsivo partono tutti da un fatto già scritto nel master.
+Chi si incontra a Hammerfist stanotte, nell'ordine in cui lo si incontra: da dove viene, che cosa vuole quando gli eroi non ci sono, e la porta che lascia aperta. Le schede d'entrata stanno nelle scene, le statistiche nell'Appendice A del master.
 
 **Durin Rocciadura** (nano, guerriero 6; Scena 2). Il veterano della pattuglia del bosco a est delle mura. Sta davanti ai suoi sei e ha paura: si vede da come tiene l'ascia troppo stretta. Vuole riportarli a casa tutti, e intanto fa il suo lavoro. Quando è teso gli scappa la voce in alto, e ride un attimo prima di dire una cosa seria. Conosce il bosco e ha visto il campo da lontano; dei PG non sa niente finché non vede la Corona o sente il tuono. Di notte è lui alla postierla, e un esiliato lo riconosce. *Aggancio: Durin è l'antenato di Othrek. Se il consiglio dà ai PG la fiducia piena, è lui a dire a Gunnvor chi sono; se i PG portano Balvar alla postierla, lo lascia entrare solo se uno di loro garantisce per lui (Diplomazia CD 20).*
 
-**Re Thorek I** (nano, guerriero 16; Scena 4). Ha 182 anni e li porta come un muro porta la pioggia. Armatura di mithral, l'ascia Frostcleaver in pugno anche al tavolo di guerra, una corona semplice senza gemme: quella vera l'ha persa suo nonno contro Skullcrusher, cinquant'anni fa. Parla di sé al plurale, «la fortezza pensa», e passa al passato remoto quando cita la profezia, che ha sognato e inciso lui. Vuole reggere le mura fino all'alba, e sa che sono ottocento contro diecimila. Quando vede la Corona sulla fronte di Thorik, si inginocchia. *Aggancio: se la fortezza regge, alla Scena 12 il re si toglie il torque con le sue mani e lo chiude al collo di Thorik. Nel 1372 i nani si scoprono il capo davanti a chi lo porta.*
+**Re Thorek I** (nano, guerriero 16; Scena 4). Ha 182 anni e li porta come un muro porta la pioggia. Armatura di mithral, l'ascia Frostcleaver in pugno anche al tavolo di guerra, una corona semplice senza gemme: quella vera l'ha persa suo nonno contro Skullcrusher, cinquant'anni fa. Parla di sé al plurale, «la fortezza pensa», e passa al passato remoto quando cita la profezia, che ha sognato e inciso lui. Vuole reggere le mura fino all'alba, e sa che sono ottocento contro diecimila. Quando vede la Corona sulla fronte di un eroe, si inginocchia. *Aggancio: se la fortezza regge, alla Scena 12 il re si toglie il torque con le sue mani e lo chiude al collo di chi porta la Corona. Nel 1372 i nani si scoprono il capo davanti a chi lo porta.*
 
-**Thorgrim Barbadiferro** (nano, cugino del re; Scena 4). Un vecchio seduto sulla panca che non si alza, con Aegis Fang appoggiata accanto. Ha il callo nello stesso punto di Thorik, perché hanno tenuto la stessa ascia. Nomina il sangue e mai la persona, «il sangue riconosce il sangue». Vuole che l'ascia torni in una mano che sa perché la tiene. Al consiglio sta con i capitani che non si fidano: non è offeso, ha paura. Non combatte e non ha statistiche. *Aggancio: chiede di tenere l'ascia di Thorik, e quando le due prese si toccano il legno suona. Se il duello va male chiama gli antenati, e sono loro a ricacciare il drago. Nel 1372 lo ricordano l'affresco A3, «Portala bene, fratello. Ora è tua», e la Cerimonia delle 100 Asce.*
+**Thorgrim Barbadiferro** (nano, cugino del re; Scena 4). Un vecchio seduto sulla panca che non si alza, con Aegis Fang appoggiata accanto. Se uno degli eroi porta Aegis Fang, Thorgrim ha il callo nello stesso punto, perché hanno tenuto la stessa ascia. Nomina il sangue e mai la persona, «il sangue riconosce il sangue». Vuole che l'ascia torni in una mano che sa perché la tiene. Al consiglio sta con i capitani che non si fidano: non è offeso, ha paura. Non combatte e non ha statistiche. *Aggancio: chiede di tenere l'ascia dell'eroe, e quando le due prese si toccano il legno suona. Se il duello va male chiama gli antenati, e sono loro a ricacciare il drago. Nel 1372 lo ricordano l'affresco A3, «Portala bene, fratello. Ora è tua», e la Cerimonia delle 100 Asce.*
 
 **Sorella Brynja** (nana, chierica di Moradin 9; Scena 5). Giovane per guidare una cappella, i capelli rasati ai lati come chi porta l'elmo, le mani screpolate dall'acqua santa fredda. Conta ad alta voce, sempre, e fa ogni domanda due volte, la seconda più piano. Vuole che all'alba ci siano incantesimi per chi sale sulle scale, non per chi paga, e teme di dover scegliere chi curare, e di sbagliare davanti a tutti. È lei che vende ai PG pozioni, bacchette e incantesimi. *Aggancio: ogni incantesimo di 4° o 5° che vende stanotte manca sulle mura, e se glielo chiedono lo dice. I caduti di quelle cure comprate tornano nel 1372 come nomi, nel pannello in più della Sala degli affreschi.*
 
@@ -5523,7 +5531,7 @@ Ogni PNG ha la sua scheda d'entrata nella scena in cui compare, e le statistiche
 
 **Gunnvor** (nana, maestra armaiola; Scena 5). Braccia bruciate fino al gomito, un grembiule con più toppe che cuoio, il martello infilato nella cintura come un'arma. Conta tutto in braccia, cioè in quanti difensori arma una cosa: una pozione vale un braccio, le monete non armano nessuno. Vuole che i duecento vecchi e ragazzi vadano sulle mura con un'arma vera, e lo voleva prima dei PG. Teme di aver sbagliato mucchio: una lama incrinata data a un ragazzo è un ragazzo morto, e le è già successo una volta. Sa che le mura reggono due ore. *Aggancio: quello che i PG le lasciano stanotte resta nella fortezza, e fra mille anni qualcuno lo trova.*
 
-**Mastro Costruttore Zeth** (mezz'elfo, druido 9; Scena 5). Occhi febbrili, polvere di roccia fino ai gomiti. Parla mentre lavora e finisce le frasi degli altri. Vuole che le gallerie non cedano, ed è disposto a legarci l'anima: con una Consacrazione, dice, i suoi leoni di pietra le proteggeranno per sempre. Un chierico incappucciato gli ha appena portato «i componenti perfetti». Non sa che servono a una lichificazione, né che dietro c'è il Collezionista. Vende rune scritte in fretta, che valgono una volta sola. *Aggancio: Zeth è il futuro Ghostlord, Zeth il Murato, e i PG assistono alla sua origine senza saperlo; il dilemma di Hella su di lui è in ARC-09. Chi cerca l'incappucciato in fortezza trova solo un odore di cera nera. I suoi scavatori hanno un piccone d'adamantio e non lo vendono: lo scambiano con qualcosa che faccia reggere le gallerie.*
+**Mastro Costruttore Zeth** (mezz'elfo, druido 9; Scena 5). Occhi febbrili, polvere di roccia fino ai gomiti. Parla mentre lavora e finisce le frasi degli altri. Vuole che le gallerie non cedano, ed è disposto a legarci l'anima: con una Consacrazione, dice, i suoi leoni di pietra le proteggeranno per sempre. Un chierico incappucciato gli ha appena portato «i componenti perfetti». Non sa che servono a una lichificazione, né che dietro c'è il Collezionista. Vende rune scritte in fretta, che valgono una volta sola. *Aggancio: Zeth è il futuro Ghostlord, Zeth il Murato, e i PG assistono alla sua origine senza saperlo; il dilemma che pone agli eroi è in ARC-09. Chi cerca l'incappucciato in fortezza trova solo un odore di cera nera. I suoi scavatori hanno un piccone d'adamantio e non lo vendono: lo scambiano con qualcosa che faccia reggere le gallerie.*
 
 **Hrodgar** (nano, il capitano delle mura; Scena 10). La barba bruciata da un lato, di un'altra battaglia, e un elmo senza cresta, perché la cresta si vede da lontano. Dà gli ordini con una parola sola. Vuole tenere il tratto est finché il re non gli dice di lasciarlo, e sa dove la pietra è più giovane. *Aggancio: è lo stesso punto che Balvar ha segnato sulla mappa di Zog'tar.*
 
@@ -5543,9 +5551,9 @@ Ogni PNG ha la sua scheda d'entrata nella scena in cui compare, e le statistiche
 
 Il lore della notte sta quasi tutto in cose che i PG conoscono già nella forma del 1372. Qui hanno mille anni di meno, e qualcuno le tiene ancora in mano.
 
-**La Corona.** Il nonno del re l'ha persa cinquant'anni fa contro Skullcrusher, e per il re è un lutto di famiglia. Stanotte la porta Thorik: il Topazio e lo Smeraldo accesi, un incasso vuoto. Il Rubino, la Possanza Nanica, si accende solo alla vittoria, ed è la sua luce a riportare i PG a casa.
+**La Corona.** Il nonno del re l'ha persa cinquant'anni fa contro Skullcrusher, e per il re è un lutto di famiglia. Stanotte la porta uno degli eroi: il Topazio e lo Smeraldo accesi, un incasso vuoto. Il Rubino, la Possanza Nanica, si accende solo alla vittoria, ed è la sua luce a riportare i PG a casa.
 
-**Aegis Fang e Frostcleaver.** Le due asce della famiglia reale. Frostcleaver è del re, con un disegno di brina sulla lama che non si scioglie, e nel 1372 nessuno la nomina. Aegis Fang è appoggiata alla panca di Thorgrim, mille anni più giovane dell'ascia di Thorik, ed è la stessa. *Aggancio: la prima frase che il giocatore di Thorik fa dire all'ascia alla Scena 12 diventa canone. Ottocento nani l'hanno sentita, e a Hammerfist, in ARC-08, qualcuno la ripeterà storta.*
+**Aegis Fang e Frostcleaver.** Le due asce della famiglia reale. Frostcleaver è del re, con un disegno di brina sulla lama che non si scioglie, e nel 1372 nessuno la nomina. Aegis Fang è appoggiata alla panca di Thorgrim, mille anni più giovane di quella che porta l'eroe, ed è la stessa. *Aggancio: la prima frase che il giocatore fa dire all'ascia alla Scena 12 diventa canone. Ottocento nani l'hanno sentita, e a Hammerfist, in ARC-08, qualcuno la ripeterà storta.*
 
 **Il Torque di Thorek I.** Oro vecchio, ritorto come una corda, consumato liscio dove la barba lo sfrega da cent'anni. Un re nanico se lo toglie solo con le sue mani, davanti a tutti. Nel 1372 i nani si scoprono il capo davanti a chi lo porta.
 
@@ -5583,11 +5591,11 @@ I PG conoscono la Hammerfist del 1372, e notano prima di tutto le differenze. Qu
 | la targa di bronzo con la profezia | nessuno la ricorda: le Cronache raccontano i Quattro Eroi, ma non che qualcuno li avesse annunciati |
 | le mura bianche, gli spigoli vivi | le sale annerite dai secoli, le statue consumate, i nomi dei re incisi e reincisi |
 | la statua di un re, una sola | ce ne sono venti |
-| la fucina originale | la stessa fucina, e lo stesso cesello che userà Tordek |
+| la fucina originale | la stessa fucina, e lo stesso cesello che userà un eroe mille anni dopo |
 | le monete e le cose vendute dai PG | monete di re non ancora nati murate nella fortezza; le cose vendute tornano come reliquie |
 | le ferite inferte a Skullcrusher | la Forgia le ricorda contro Fauci di Palude (tabella B4 del master) |
 | l'orda di Zog'tar | la Mano Rossa |
-| Durin e Thorgrim | Othrek, e l'ascia Aegis Fang nelle mani di Thorik |
+| Durin e Thorgrim | Othrek, e l'ascia Aegis Fang nelle mani dell'eroe |
 
 ## In sei secondi, senza tirare
 

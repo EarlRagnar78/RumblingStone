@@ -122,6 +122,18 @@ disturbato 2.944 volte; uno su prosa e box disturba circa 200 volte.
    più poche parole proprie per piattaforma, CI e regole) e mette nel
    contesto l'agente e la catena. Stop registra in `.claude/.uso-agenti.jsonl`
    se il thread li ha chiamati. Nessuno dei due blocca.
+8. **Il blocco vero sta sul push.** Jfs l'ha chiesto il 20/11: il
+   coordinatore scrive nelle istruzioni di ogni thread una riga
+   «Catena: a → b → c», l'hook UserPromptSubmit la legge e la registra. Un
+   hook PreToolUse su `git push`, `gh pr create`, `gh pr ready` e sulla
+   creazione di una PR via MCP esce 2 se nella sessione manca la chiamata
+   Agent di uno di quegli agenti o di `autore-documenti`. La via d'uscita è
+   esplicita: `instradamento_agenti.py --deroga "motivo"`, con almeno 15
+   caratteri, resta nella trascrizione e nel registro. Senza una catena
+   scritta non si blocca niente: il riconoscimento per parole sbaglia, e un
+   blocco su un suo errore fermerebbe lavoro legittimo. Lo Stop non blocca:
+   un turno che finisce senza push è spesso solo una risposta, e un blocco lì
+   costringerebbe a girare a vuoto.
 
 ## Le conseguenze
 
@@ -157,6 +169,15 @@ disturbato 2.944 volte; uno su prosa e box disturba circa 200 volte.
   coerenza che portano alla prosa invece che a `custode-canone`. Per questo
   suggerisce e non blocca, e chiede di scrivere nel resoconto quando lo si
   ignora.
+- **Il cancello del push controlla le chiamate, non il loro esito.** Un
+  agente chiamato e ignorato conta come chiamato; un `custode-canone` che
+  trova un 🔴 non ferma il push. Una deroga vale per tutta la sessione. Il
+  cancello non vede un push fatto da un sottoagente né uno fuori da Claude
+  Code. Sui 144 comandi Bash di questo thread il riconoscimento del push ha
+  preso gli 8 push veri e 1 heredoc che citava un push dentro una prova.
+  Non c'è uno storico su cui tararlo: le catene scritte nascono adesso. La
+  misura è `--riepilogo` dopo una settimana: push passati, bloccati, in
+  deroga.
 - La norma «il box che promette» (§2-quater di `read-aloud-adulti.md`, misura
   `misura_craft --apertura`) arriva con la #508. Il cricchetto la vedrà
   quando entra fra le norme di `punteggio_mqm`, non prima.
@@ -164,7 +185,9 @@ disturbato 2.944 volte; uno su prosa e box disturba circa 200 volte.
 ## Come si torna indietro
 
 Togliere il gruppo `PreToolUse` da `.claude/settings.json` spegne l'hook, e
-i gruppi `UserPromptSubmit` e `Stop` spengono l'instradamento;
+i gruppi `UserPromptSubmit` e `Stop` spengono l'instradamento, il secondo
+gruppo `PreToolUse` (matcher `Bash|mcp__github__create_pull_request`) spegne il
+cancello del push;
 togliere il passo «Prosa — il testo cambiato non peggiora» da `ci.yml` spegne
 il cricchetto. Gli agenti si tolgono cancellando `.claude/agents/`. Dettagli in
 [`docs/how-to/GUIDA-CONFIGURAZIONE-CLAUDE.md`](../../docs/how-to/GUIDA-CONFIGURAZIONE-CLAUDE.md).

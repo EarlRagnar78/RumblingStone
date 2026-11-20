@@ -9,6 +9,15 @@ repo (ADR-0140):
   nel contesto l'agente da usare e la catena che segue. Non blocca mai.
 - ``--stop`` (Stop): a fine turno scrive nel registro se il thread ha chiamato
   gli agenti suggeriti. Non blocca mai: serve a misurare.
+- ``--cancello`` (PreToolUse su ``git push``, ``gh pr create|ready`` e sulla
+  creazione di una PR via MCP): **blocca** se le istruzioni del thread hanno
+  scritto una catena (una riga «Catena: a → b → c») e nella sessione manca la
+  chiamata Agent di uno di quegli agenti, o di ``autore-documenti``. Via
+  d'uscita esplicita e registrata: ``--deroga "motivo"`` lanciato dal thread,
+  che resta nella trascrizione.
+
+Il blocco vale solo per una catena **scritta**: un riconoscimento per parole
+che sbaglia non ferma mai il lavoro.
 
 Il riconoscimento non ha un vocabolario suo: riusa i trigger delle descrizioni
 delle skill (``instradamento_skill.raggiunte``, *una norma, un rilevatore*) e
@@ -21,6 +30,7 @@ e non obbliga; il blocco vero resta quello di ``vincolo_skill.py`` sulla prosa.
 
     python3 scripts/instradamento_agenti.py --prova "riscrivi il box della forgia"
     python3 scripts/instradamento_agenti.py --riepilogo
+    python3 scripts/instradamento_agenti.py --deroga "nessun file cambiato, solo una risposta"
 """
 from __future__ import annotations
 
@@ -173,6 +183,119 @@ def _ultimo_suggerito(sessione: "str | None") -> "list[str]":
     return []
 
 
+_CATENA = re.compile(r"^[\s>*_-]*catena\b[^:\n]*:(.+)$", re.I | re.M)
+# Solo un comando che *inizia* con git push o gh pr create|ready (dopo ; && || | o a
+# capo, con un eventuale timeout davanti): un heredoc che cita «git push» non conta.
+_PUSH = re.compile(r"(?:^|[;&|\n])\s*(?:timeout\s+\S+\s+)?"
+                   r"(?:git\s+push\b|gh\s+pr\s+(?:create|ready)\b)")
+_DEROGA = re.compile(r"instradamento_agenti\.py\s+--deroga\s+[\"']([^\"']{15,})[\"']")
+PR_MCP = ("mcp__github__create_pull_request",)
+
+
+def nomi_agenti() -> "list[str]":
+    return sorted((p.stem for p in (ROOT / ".claude" / "agents").glob("*.md")),
+                  key=len, reverse=True)
+
+
+def catena_scritta(testo: str) -> "list[str]":
+    """Gli agenti delle righe «Catena: …» del testo, nell'ordine in cui compaiono."""
+    out: "list[str]" = []
+    for riga in _CATENA.findall(testo):
+        trovati = []
+        for nome in nomi_agenti():
+            m = re.search(rf"(?<![\w-]){re.escape(nome)}(?![\w-])", riga)
+            if m:
+                trovati.append((m.start(), nome))
+        out += [n for _, n in sorted(trovati) if n not in out]
+    return out
+
+
+def _ultima_catena(sessione: "str | None") -> "list[str]":
+    try:
+        righe = REGISTRO.read_text(encoding="utf-8").splitlines()
+    except OSError:
+        return []
+    for r in reversed(righe):
+        try:
+            d = json.loads(r)
+        except ValueError:
+            continue
+        if d.get("sessione") == sessione and d.get("evento") == "catena":
+            return d.get("agenti") or []
+    return []
+
+
+def storia_sessione(trascrizione: "str | None") -> "tuple[set[str], list[str]]":
+    """Tutti gli agenti chiamati nella sessione e le deroghe scritte, con il motivo."""
+    agenti: "set[str]" = set()
+    deroghe: "list[str]" = []
+    if not trascrizione:
+        return agenti, deroghe
+    try:
+        righe = Path(trascrizione).read_text(encoding="utf-8", errors="replace").splitlines()
+    except OSError:
+        return agenti, deroghe
+    for r in righe:
+        if '"subagent_type"' not in r and "--deroga" not in r:
+            continue
+        try:
+            d = json.loads(r)
+        except ValueError:
+            continue
+        for b in (d.get("message") or {}).get("content") or []:
+            if not (isinstance(b, dict) and b.get("type") == "tool_use"):
+                continue
+            inp = b.get("input") or {}
+            if inp.get("subagent_type"):
+                agenti.add(str(inp["subagent_type"]))
+            if b.get("name") == "Bash":
+                deroghe += _DEROGA.findall(str(inp.get("command", "")))
+    return agenti, deroghe
+
+
+def decidi_cancello(ev: dict) -> dict:
+    """Passa, o blocca con il motivo, un push o una PR (ADR-0146, punto 7)."""
+    strumento = ev.get("tool_name", "")
+    comando = str((ev.get("tool_input") or {}).get("command", ""))
+    if ev.get("agent_id") or not (strumento in PR_MCP or
+                                  (strumento == "Bash" and _PUSH.search(comando))):
+        return {"esito": "fuori"}
+    catena = _ultima_catena(ev.get("session_id"))
+    if not catena:
+        return {"esito": "passa", "motivo": "nessuna catena scritta nelle istruzioni"}
+    richiesti = catena + ([] if "autore-documenti" in catena else ["autore-documenti"])
+    chiamati, deroghe = storia_sessione(ev.get("transcript_path"))
+    mancanti = [a for a in richiesti if a not in chiamati]
+    if not mancanti:
+        return {"esito": "passa", "catena": catena}
+    if deroghe:
+        return {"esito": "deroga", "catena": catena, "mancanti": mancanti, "motivo": deroghe[-1]}
+    return {"esito": "blocca", "catena": catena, "mancanti": mancanti, "motivo": (
+        "Push e PR fermati (ADR-0146): le istruzioni del thread scrivono la catena "
+        f"{' → '.join(catena)}, e in questa sessione manca la chiamata Agent di "
+        f"{', '.join(mancanti)}. Chiamali con lo strumento Agent (`subagent_type`) e passa "
+        "ad `autore-documenti` il diff e le righe «Documentazione da aggiornare:». Se la "
+        "catena qui non serve davvero, lancia `python3 scripts/instradamento_agenti.py "
+        "--deroga \"motivo di almeno 15 caratteri\"`: resta nella trascrizione e nel "
+        "registro, e va scritta nel resoconto.")}
+
+
+def hook_cancello(dati: str) -> int:
+    try:
+        ev = json.loads(dati)
+        d = decidi_cancello(ev)
+    except Exception:  # un hook rotto non ferma mai il lavoro
+        return 0
+    if d["esito"] == "fuori":
+        return 0
+    _registra({"evento": f"push {d['esito']}", "sessione": ev.get("session_id"),
+               **{k: d[k] for k in ("catena", "mancanti", "motivo") if k in d}})
+    if d["esito"] == "blocca":
+        print(d["motivo"], file=sys.stderr)
+        return 2
+    return 0
+
+
 def agenti_chiamati(trascrizione: "str | None") -> "list[str]":
     """Gli agenti lanciati dopo l'ultimo messaggio dell'utente."""
     if not trascrizione:
@@ -204,8 +327,21 @@ def agenti_chiamati(trascrizione: "str | None") -> "list[str]":
 def hook_prompt(dati: str) -> int:
     try:
         ev = json.loads(dati)
-        agenti = scegli(str(ev.get("prompt", "")))
-        if not agenti or ev.get("agent_id"):
+        if ev.get("agent_id"):
+            return 0
+        testo = str(ev.get("prompt", ""))
+        catena = catena_scritta(testo)
+        if catena:
+            _registra({"evento": "catena", "sessione": ev.get("session_id"), "agenti": catena})
+            print(json.dumps({"hookSpecificOutput": {"hookEventName": "UserPromptSubmit",
+                "additionalContext": (
+                    f"Catena scritta nelle istruzioni (ADR-0146): {' → '.join(catena)}, poi "
+                    "`autore-documenti`. Chiamali con lo strumento Agent, nell'ordine. Un push "
+                    "o una PR senza queste chiamate si ferma; la via d'uscita è "
+                    "`instradamento_agenti.py --deroga \"motivo\"`.")}}, ensure_ascii=False))
+            return 0
+        agenti = scegli(testo)
+        if not agenti:
             return 0
         if agenti == _ultimo_suggerito(ev.get("session_id")):
             return 0  # già detto in questa sessione: non ripeterlo a ogni messaggio
@@ -233,7 +369,8 @@ def hook_stop(dati: str) -> int:
 
 
 def riepilogo(registro: Path = REGISTRO) -> dict:
-    out = {"suggeriti": 0, "turni": 0, "seguiti": 0}
+    out = {"suggeriti": 0, "turni": 0, "seguiti": 0, "catene": 0,
+           "push passati": 0, "push bloccati": 0, "push in deroga": 0}
     try:
         righe = registro.read_text(encoding="utf-8").splitlines()
     except OSError:
@@ -245,6 +382,12 @@ def riepilogo(registro: Path = REGISTRO) -> dict:
             continue
         if d.get("evento") == "suggerito":
             out["suggeriti"] += 1
+        elif d.get("evento") == "catena":
+            out["catene"] += 1
+        elif d.get("evento") in ("push passa", "push blocca", "push deroga"):
+            chiave = {"push passa": "push passati", "push blocca": "push bloccati",
+                      "push deroga": "push in deroga"}[d["evento"]]
+            out[chiave] += 1
         elif d.get("evento") == "fine turno":
             out["turni"] += 1
             out["seguiti"] += bool(d.get("seguito"))
@@ -257,12 +400,25 @@ def main(argv: "list[str] | None" = None) -> int:
     g.add_argument("--prompt", action="store_true", help="hook UserPromptSubmit (stdin)")
     g.add_argument("--stop", action="store_true", help="hook Stop (stdin)")
     g.add_argument("--prova", metavar="TESTO", help="mostra l'instradamento di un testo")
+    g.add_argument("--cancello", action="store_true",
+                   help="hook PreToolUse su push e PR (stdin); esce 2 per bloccare")
+    g.add_argument("--deroga", metavar="MOTIVO",
+                   help="via d'uscita dal cancello, con il motivo (resta nella trascrizione)")
     g.add_argument("--riepilogo", action="store_true", help="suggerimenti e quanti seguiti")
     a = ap.parse_args(argv)
     if a.prompt:
         return hook_prompt(sys.stdin.read())
     if a.stop:
         return hook_stop(sys.stdin.read())
+    if a.cancello:
+        return hook_cancello(sys.stdin.read())
+    if a.deroga is not None:
+        if len(a.deroga.strip()) < 15:
+            print("una deroga vuole un motivo di almeno 15 caratteri", file=sys.stderr)
+            return 1
+        _registra({"evento": "deroga", "motivo": a.deroga.strip()})
+        print(f"deroga registrata: {a.deroga.strip()}. Scrivila nel resoconto.")
+        return 0
     if a.riepilogo:
         print(json.dumps(riepilogo(), ensure_ascii=False))
         return 0

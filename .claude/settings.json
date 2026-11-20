@@ -20,6 +20,16 @@
             "timeout": 10
           }
         ]
+      },
+      {
+        "matcher": "Bash|mcp__github__create_pull_request",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 $CLAUDE_PROJECT_DIR/scripts/instradamento_agenti.py --cancello",
+            "timeout": 10
+          }
+        ]
       }
     ],
     "UserPromptSubmit": [

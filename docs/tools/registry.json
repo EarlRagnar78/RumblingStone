@@ -10279,7 +10279,7 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/instradamento_agenti.py --riepilogo",
-      "summary": "Gli hook UserPromptSubmit e Stop di Claude Code nei thread: riconosce il tipo di lavoro del messaggio che arriva (riusando i trigger delle skill) e mette nel contesto l'agente e la catena da usare; a fine turno registra se il thread li ha chiamati. Suggerisce, non blocca (ADR-0146).",
+      "summary": "Gli hook UserPromptSubmit, PreToolUse e Stop di Claude Code nei thread: riconosce il tipo di lavoro del messaggio che arriva (riusando i trigger delle skill) e suggerisce agente e catena; se le istruzioni scrivono una riga «Catena: …», ferma push e PR finché la sessione non ha chiamato quegli agenti e autore-documenti, salvo una deroga con motivo; a fine turno registra se gli agenti sono stati chiamati (ADR-0146).",
       "use_case": "«Il thread chiama l'agente giusto per questo lavoro?»",
       "stability": "beta",
       "stdlib_only": true,
@@ -10302,6 +10302,24 @@
           "choices": null,
           "repeatable": false,
           "desc": "Evento Stop su stdin; registra se gli agenti suggeriti sono stati chiamati."
+        },
+        {
+          "name": "--cancello",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Evento PreToolUse su push e PR su stdin; esce 2 per bloccare."
+        },
+        {
+          "name": "--deroga",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Via d'uscita dal cancello, con un motivo di almeno 15 caratteri."
         },
         {
           "name": "--prova",
@@ -10340,7 +10358,9 @@
         }
       ],
       "exit_codes": {
-        "0": "sempre: suggerisce, non blocca"
+        "0": "passa (con o senza suggerimento)",
+        "1": "deroga senza motivo",
+        "2": "push o PR bloccati (--cancello)"
       },
       "determinism": {
         "deterministic": true,

@@ -4067,7 +4067,7 @@
     },
     {
       "name": "instradamento_agenti",
-      "description": "«Il thread chiama l'agente giusto per questo lavoro?»\n\nGli hook UserPromptSubmit e Stop di Claude Code nei thread: riconosce il tipo di lavoro del messaggio che arriva (riusando i trigger delle skill) e mette nel contesto l'agente e la catena da usare; a fine turno registra se il thread li ha chiamati. Suggerisce, non blocca (ADR-0146).",
+      "description": "«Il thread chiama l'agente giusto per questo lavoro?»\n\nGli hook UserPromptSubmit, PreToolUse e Stop di Claude Code nei thread: riconosce il tipo di lavoro del messaggio che arriva (riusando i trigger delle skill) e suggerisce agente e catena; se le istruzioni scrivono una riga «Catena: …», ferma push e PR finché la sessione non ha chiamato quegli agenti e autore-documenti, salvo una deroga con motivo; a fine turno registra se gli agenti sono stati chiamati (ADR-0146).",
       "use_case": "«Il thread chiama l'agente giusto per questo lavoro?»",
       "invocation": "python3 scripts/instradamento_agenti.py --riepilogo",
       "inputSchema": {
@@ -4080,6 +4080,14 @@
           "stop": {
             "type": "boolean",
             "description": "Evento Stop su stdin; registra se gli agenti suggeriti sono stati chiamati."
+          },
+          "cancello": {
+            "type": "boolean",
+            "description": "Evento PreToolUse su push e PR su stdin; esce 2 per bloccare."
+          },
+          "deroga": {
+            "type": "string",
+            "description": "Via d'uscita dal cancello, con un motivo di almeno 15 caratteri."
           },
           "prova": {
             "type": "string",
@@ -4097,7 +4105,9 @@
         ".claude/.uso-agenti.jsonl"
       ],
       "exit_codes": {
-        "0": "sempre: suggerisce, non blocca"
+        "0": "passa (con o senza suggerimento)",
+        "1": "deroga senza motivo",
+        "2": "push o PR bloccati (--cancello)"
       },
       "deterministic": true
     },

@@ -191,6 +191,13 @@
       ],
       "stato": "in-volo",
       "dove": "PR #497 in bozza del 2026-11-19 (ADR-0144, MS-0205): volume d'arco di ARC-07 (07_il Portale Della Forgia Eterna/homebrew/volume-arco/), misura dei rimandi in plans/esperimenti/booklet-arc07-2026-11-19/. Resta in volo fino al merge"
+    },
+    {
+      "ref": [
+        "origin/claude/project-thread-o55i68"
+      ],
+      "stato": "in-volo",
+      "dove": "PR #512 in bozza del 2026-11-20 sopra il ramo della #510 (ADR-0148, MS-0215): scripts/verifica_px.py, scripts/verifica_rimandi.py e i loro test, .claude/agent-evals/ (36 casi ed ESITI.jsonl), plans/esperimenti/verificatori-2026-11-20/. Resta in volo fino al merge"
     }
   ],
   "file": [

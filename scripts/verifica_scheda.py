@@ -1503,6 +1503,128 @@ def creatura_base(p: Path) -> "tuple[list[dict], list[dict]]":
     return viol, nv
 
 
+#: dove stanno i salvataggi PCGen che le schede citano (ADR-0126, lotto delle razze)
+_PREGEN = Path(__file__).resolve().parents[1] / "Bestiario" / "pregen-pcgen"
+_STAT_PCG = (("STR", "For"), ("DEX", "Des"), ("CON", "Cos"), ("INT", "Int"), ("WIS", "Sag"), ("CHA", "Car"))
+#: i modelli che cambiano le caratteristiche in un .pcg; il resto di TEMPLATESAPPLIED
+#: (sottorazza «Hill Dwarf», capacità come «RighteousMightDR» o «Bite») non le tocca
+_MODELLO_PCG = re.compile(r"half-?(?:fiend|celestial|dragon)|draconic|fiendish|celestial|vampire|lich|"
+                          r"skeleton|zombie|lycanthrop|ghost|juvenile|adult|young|wyrm|hatchling|SIZE_|"
+                          r"LEVEL_ADJUSTMENT", re.I)
+#: gli oggetti dell'SRD che danno un bonus di potenziamento a una caratteristica: la scheda
+#: può scriverla con l'oggetto o senza, ed è legale in tutti e due i casi
+_OGGETTI_CARATTERISTICA = ((re.compile(r"Gauntlets of Ogre Power", re.I), "For", 2),
+                           (re.compile(r"Belt of Giant Strength \+(\d)", re.I), "For", None),
+                           (re.compile(r"Gloves of Dexterity \+(\d)", re.I), "Des", None),
+                           (re.compile(r"Amulet of Health \+(\d)", re.I), "Cos", None),
+                           (re.compile(r"Headband of Intellect \+(\d)", re.I), "Int", None),
+                           (re.compile(r"Periapt of Wisdom \+(\d)", re.I), "Sag", None),
+                           (re.compile(r"Cloak of Charisma \+(\d)", re.I), "Car", None))
+#: un export (HTML, PDF, testo) scrive i punteggi finali: quando la scheda lo cita, la fonte è lui
+_EXPORT = re.compile(r"\.(?:html?|pdf|txt)\b", re.I)
+#: le razze senza modificatori alle caratteristiche (SRD, «Races»)
+_SENZA_MODIFICATORI = {"human", "half-elf"}
+
+
+@lru_cache(maxsize=1)
+def _salvataggi_pcg() -> "dict[str, Path]":
+    return {q.name: q for q in _PREGEN.rglob("*.pcg")} if _PREGEN.is_dir() else {}
+
+
+def _modificatori_della_razza(razza: str, sistema: str) -> "dict[str, int] | None":
+    """I modificatori razziali alle caratteristiche di una razza come PCGen la scrive
+    («Orc», «Minotaur»): dalla tabella `[[razze]]` del plugin, altrimenti dalla creatura
+    base dell'SRD (punteggio − 10, o − 11 se dispari: la base dei mostri è 10/11). None
+    se la razza non si conosce."""
+    from dmcore import creature_base as CB
+    from dmcore import sistemi as S
+    nome = razza.strip().lower()
+    if nome in _SENZA_MODIFICATORI:
+        return {}
+    for r in S.dati(sistema, "creature.costruzione").get("razze") or []:
+        if r["nome"] == nome:
+            return dict(r["modificatori"])
+    voce = CB.tabella(sistema).get(nome)
+    if voce is None or len(voce.get("car") or {}) != 6:
+        return None
+    return {it: v - (10 if v % 2 == 0 else 11) for (_, it), v in
+            zip(_STAT_PCG, (voce["car"][k] for k in ("for", "des", "cos", "int", "sag", "car")))
+            if v - (10 if v % 2 == 0 else 11)}
+
+
+def caratteristiche_dalla_fonte(p: Path) -> "tuple[list[dict], list[dict]]":
+    """Le caratteristiche di una scheda che cita un salvataggio PCGen (ADR-0126, lotto
+    delle razze; scelta del DM sulla card del 2026-11-20). Il .pcg scrive il punteggio
+    prima della razza (`STAT:STR|SCORE:14`): la scheda deve dare quello più i
+    modificatori razziali SRD, con o senza il bonus degli oggetti che il .pcg porta
+    (guanti della potenza dell'orco…). La riga `attributi` è quella fuori dall'ira e da
+    ogni effetto temporaneo: l'acquisto a punti sta già nel .pcg. Non si giudicano: una
+    scheda trascritta da un export (ha già i punteggi finali), un modello applicato nel
+    .pcg, una razza che non si conosce, una scheda con più dadi vita del salvataggio
+    (avanzata) o un file con più blocchi. Se la scheda cita più .pcg, basta che uno combaci."""
+    import conformita_statblocchi as C
+    testo = p.read_text(encoding="utf-8")
+    citati = [q for n, q in _salvataggi_pcg().items() if n in testo]
+    if not citati:
+        return [], []
+    fonte = _FONTE_SCHEDA.search(testo)
+    if fonte and _EXPORT.search(fonte.group(1)):
+        return [], []          # la scheda è trascritta da un export, che ha già la razza dentro
+    with contextlib.redirect_stderr(io.StringIO()):
+        blocchi = list(C._recinti_del_master(testo))
+    base = {"file": VT_rel(p), "verifica": "caratteristiche", "regola": "numero.caratteristiche.fonte",
+            "fonte": "srd"}
+    if not blocchi:
+        return [], []          # un elenco che nomina il .pcg, senza una scheda
+    if len(blocchi) != 1:
+        return [], [dict(base, testo=f"{len(blocchi)} blocchi nel file: non si sa a quale va il .pcg")]
+    sb, riga = blocchi[0]["sb"], blocchi[0]["riga"]
+    base["riga"] = riga
+    scritte = {c: int(v) for c, v in re.findall(r"\b(For|Des|Cos|Int|Sag|Car)\s+(\d+)", sb.attributi or "")}
+    if len(scritte) != 6:
+        return [], [dict(base, testo="la scheda non scrive le sei caratteristiche")]
+    sistema = VT.sistema_di(p, testo)
+    dadi = sum(int(n) for n, _ in re.findall(r"(\d+)d(\d+)", sb.pf_dado or "")) or sum(
+        int(n) for n in re.findall(r"\b[A-Za-zÀ-ÿ]+\s+(\d{1,2})\b", sb.tipo or ""))
+    scarti, nv = [], []
+    for q in citati:
+        pcg = q.read_text(encoding="utf-8", errors="replace")
+        stat = dict(re.findall(r"^STAT:(\w+)\|SCORE:(\d+)", pcg, re.M))
+        razza = (re.search(r"^RACE:([^|\n]*)", pcg, re.M) or [None, ""])[1]
+        modelli = [x.strip() for x in re.findall(r"TEMPLATESAPPLIED:\[NAME:([^]|~]*)", pcg)
+                   if _MODELLO_PCG.search(x)]
+        mod = _modificatori_della_razza(razza, sistema)
+        if modelli or mod is None or len(stat) < 6:
+            nv.append(dict(base, testo=f"{q.name}: " + (f"modello {', '.join(modelli)} nel .pcg" if modelli else
+                                                        f"razza «{razza}» senza modificatori noti" if mod is None else
+                                                        "caratteristiche non leggibili")))
+            continue
+        livelli = sum(int(n) for n in re.findall(r"^CLASS:[^\n]*?\|LEVEL:(\d+)", pcg, re.M))
+        if dadi and livelli and dadi != livelli:
+            nv.append(dict(base, testo=f"{q.name}: {livelli} livelli nel .pcg, {dadi} dadi vita nella scheda "
+                                       f"(avanzata oltre il salvataggio): gli aumenti di livello non si riscontrano"))
+            continue
+        attese = {it: int(stat[en]) + mod.get(it, 0) for en, it in _STAT_PCG}
+        oggetti = {}
+        for nome_o in re.findall(r"^EQUIPNAME:([^|\n]+)", pcg, re.M):
+            for rx, car, fisso in _OGGETTI_CARATTERISTICA:
+                if (m := rx.search(nome_o)):
+                    oggetti[car] = max(oggetti.get(car, 0), fisso or int(m.group(1)))
+        # legale con l'oggetto e senza; l'ira e gli altri effetti temporanei non stanno nella riga
+        diverse = [(it, scritte[it], attese[it]) for _, it in _STAT_PCG
+                   if scritte[it] not in (attese[it], attese[it] + oggetti.get(it, 0))]
+        if not diverse:
+            return [], []
+        scarti.append((q.name, razza, [(it, h, a, a + oggetti.get(it, 0)) for it, h, a in diverse]))
+    if not scarti:
+        return [], nv
+    nome, razza, diverse = scarti[0]
+    return [dict(base, atteso={it: a for it, _, a, _ in diverse}, ha={it: h for it, h, _, _ in diverse},
+                 testo=f"caratteristiche {', '.join(f'{it} {h}' for it, h, _, _ in diverse)}: {nome} ({razza}) "
+                       f"più i modificatori razziali dà "
+                       + ", ".join(f"{it} {a}" + (f" ({o} con l'oggetto)" if o != a else "") for it, _, a, o in diverse))], nv
+
+
 def grado_di_sfida(p: Path) -> "tuple[list[dict], list[dict]]":
     """Il grado di sfida scritto contro quello che danno livelli, razza e creatura base (ADR-0126, lotto 5)."""
     import conformita_statblocchi as C
@@ -2669,6 +2791,8 @@ def main(argv: "list[str] | None" = None) -> int:
         pv, pn = prestigio(p)
         qv, qn = numero_talenti(p)
         bv, bn = creatura_base(p)
+        xv, xn = caratteristiche_dalla_fonte(p)
+        bv, bn = bv + xv, bn + xn
         gv, gn = grado_di_sfida(p)
         ev, en_ = velocita(p)
         fv, fn = difese(p)

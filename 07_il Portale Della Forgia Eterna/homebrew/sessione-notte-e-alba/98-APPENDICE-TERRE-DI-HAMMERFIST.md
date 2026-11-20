@@ -1,6 +1,10 @@
 # Le terre di Hammerfist, ≈372 DR
 
-Questa appendice raccoglie la regione come la trovano i PG mille anni prima della loro epoca, per averla tutta sotto mano senza aprire il modulo. Segue lo schema delle appendici di regione degli AP: la regione in breve, la storia, i luoghi, chi la abita, chi conta, le voci, e quello che ne resterà nel 1372. Ogni riga viene dal master `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md`, dalle piante M7-A, M7-B, M7-C e M7-H e dalle schede del Bestiario. Non ci sono fatti nuovi: dove il canone tace, l'appendice non lo copre.
+Questa appendice raccoglie la regione come la trovano i PG mille anni prima della loro epoca, per averla tutta sotto mano senza aprire il modulo. Segue lo schema delle appendici di regione degli AP: la regione in breve, la storia, i luoghi, chi la abita, chi conta, le voci, e quello che ne resterà nel 1372. I fatti vengono dal master `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md`, dalle piante M7-A, M7-B, M7-C e M7-H e dalle schede del Bestiario. Dove il canone tace e un'appendice d'AP darebbe comunque un dato, il dato c'è ma porta la marca INFERRED, con la sua base e la domanda per il DM.
+
+<!-- apparato -->
+> **Domande aperte per il DM** (il dato non c'è e manca una base per proporlo, quindi l'appendice non lo scrive): come si chiama la valle? Che cosa si estrae dalla miniera da cui è nata la fortezza? In che stagione cade la notte dell'assedio, e che tempo fa? Con quali fortezze o città commercia Hammerfist, e per quali strade? Da quali fortezze veniva Balvar?
+<!-- /apparato -->
 
 ## Hammerfist in breve, la notte dell'assedio
 
@@ -9,8 +13,13 @@ La fortezza, chi la tiene e chi la vuole. Ogni riga rimanda a una scena del mast
 | | |
 |---|---|
 | **Che cos'è** | una fortezza nanica giovane: ha circa ottant'anni `[CANONE — DM 2026-10-07, Q44]` |
-| **Chi la governa** | Re Thorek I, Guerriero 16, 182 anni, con l'ascia Frostcleaver |
-| **Chi la difende** | ottocento nani, dice il re; la maestra armaiola Gunnvor deve ancora armare duecento vecchi e ragazzi. Una cinquantina di chierici di Moradin, e un diamante solo in tutta la fortezza |
+| **Chi la governa** | Re Thorek I, Guerriero 16, 182 anni, con l'ascia Frostcleaver, e il suo consiglio di guerra |
+| **Da dove nasce** | da una miniera: le stanze dove dormono i PG erano gli alloggi dei minatori, prima che la miniera diventasse fortezza `[CANONE — DM 2026-10-07, Q2]` |
+| **Chi la difende** | ottocento nani in armi, dice il re, e mille difensori, dice il conto del banco: la differenza sono i duecento vecchi e ragazzi che Gunnvor deve ancora armare `[INFERRED — I mille difensori del banco sono gli ottocento del re più i duecento di Gunnvor?; base: Scena 4 «ottocento contro diecimila», Scena 5 «mille difensori» e «i duecento vecchi e ragazzi»]`. Una cinquantina di chierici di Moradin, e un diamante solo in tutta la fortezza |
+| **Abitanti** | circa duemila: i mille difensori e le loro famiglie, scese nelle miniere `[INFERRED — Quanti abitanti ha la fortezza, famiglie comprese?; base: Scena 5, «una cittadina» delle regole PF1e degli insediamenti (da 201 a 2.000 abitanti), con «mille difensori e le famiglie nelle miniere»]` |
+| **Chi ci vive** | nani dello scudo, quasi tutti `[INFERRED — Ci sono altri popoli oltre ai nani, a parte Zeth e i suoi scavatori?; base: Balvar è un nano dello scudo; Zeth, mezz'elfo, è l'unico non nano del master]` |
+| **Allineamento** | legale buono `[INFERRED — Che allineamento ha la fortezza, come insediamento PF1e?; base: devota a Moradin, retta da un re e dal suo consiglio]` |
+| **Lingue** | nanico (la targa è in nanico); nel campo dell'orda comune e goblin |
 | **Chi la assedia** | circa diecimila tra orchi e goblinoidi agli ordini del generale Zog'tar Deatheye, in una quindicina di clan, con il drago nero Skullcrusher legato all'orda da un contratto |
 | **Quanto regge** | due ore di assalto, dice il re. Se all'alba Zog'tar guida ancora l'orda, la fortezza cade |
 | **Dove sta** | su un gradone 100 m sopra la piana dell'orda, che sta a 520 m sul mare `[CANONE — DM 2026-10-22; 2026-11-04]` |
@@ -59,6 +68,19 @@ Dentro le mura la fortezza è zona sicura: ci si muove senza tirare. Che cosa su
 | Le gallerie sotto la fucina | Zeth, che traccia rune col gesso e ne cancella metà col pollice | Scena 5 (costa una tacca) |
 | I camminamenti | a 4,5 m da terra; brecce dove mordono gli arieti, scale da rovesciare | Scena 10 |
 
+## L'economia e il mercato, stanotte
+
+Con le regole PF1e degli insediamenti, Hammerfist è una **cittadina** (valore base 1.000 mo, limite d'acquisto 5.000 mo, incantesimi fino al 4° livello). È **devota**: i suoi cinquanta chierici di Moradin portano gli incantesimi a pagamento fino al 5° livello. E l'assedio la rende **impoverita**, cioè dimezza valore base, limite d'acquisto e oggetti in vendita (Scena 5). Il banco intero, con prezzi e quantità, sta nella Scena 5.
+
+| Voce | Stanotte |
+|---|---|
+| **Valore base** | 500 mo: un oggetto che costa fino a questa cifra c'è con il 75% di probabilità |
+| **Limite d'acquisto** | 2.500 mo: il massimo che il mercato paga per un oggetto solo |
+| **Incantesimi a pagamento** | fino al 5° livello, dai chierici di Moradin; *rianimare morti* una volta, perché il diamante è uno |
+| **Il forziere del re** | fino a 10.000 mo in tutto, solo con la fiducia piena del consiglio e solo per cose che servono all'alba `[CANONE — DM 2026-10-07, Q7]` |
+| **Le monete del 1372** | valgono a peso: il pesatore della fucina le mette sulla bilancia `[CANONE — DM 2026-09-25]` |
+| **Che cosa manca** | frecce, quadrelli, fuoco dell'alchimista, olio: tutto sulle mura. Gunnvor semmai li compra |
+
 ## Il campo dell'orda
 
 L'orda dorme in due modi. Fuori stanno i clan degli orchi, una quindicina di bande in ripari di pelle bassi e storti, ognuna attorno al suo fuoco, con un tratto vuoto fra un clan e l'altro. Al centro c'è il campo del capo, senza recinto: la tenda nera del generale da sola in mezzo a uno spiazzo di terra battuta, con il fuoco del consiglio e i pali dei trofei davanti alla soglia. A venti o trenta metri, attorno, stanno le lance della Guardia della Mano, quattro tende da otto attorno a ogni fuoco. Gli squadroni marciano al passo, ma dormono come un'orda.
@@ -66,7 +88,7 @@ L'orda dorme in due modi. Fuori stanno i clan degli orchi, una quindicina di ban
 - **La tenda del comando** è un padiglione a tre pali di 13,5 × 7,5 m (M7-C). Dentro ci sono Zog'tar e le sue quattro guardie, Balvar sul suo sgabello, il sacerdote dell'orda su una stuoia dietro il seggio, e l'araldo Grask con il corno.
 - **Quattro posti di guardia** agli angoli, GP1-GP4 (M7-A). La tenda del generale si riconosce perché è l'unico posto dove le pattuglie non passano (Osservare CD 18).
 - **Di notte** ogni fuoco fa luce fioca per 3 m, e muoversi senza farsi vedere chiede CD 20.
-- **Fuori dal campo**, sulla strada fra le mura e le tende, si incontrano pattuglie, lupi e sciamani; all'alba le wyvern (statistiche in Appendice A.6 del master).
+- **Chi c'è nell'orda** (Appendice A.6 del master): orchi in bande e in ronde, squadroni di hobgoblin che mandano un corridore, vedette goblin, cavalieri goblin sui worg, una quindicina di sciamani orchi, e all'alba due wyvern di scorta al drago.
 
 ⚠️ **Nel 372 l'orda non è la Mano Rossa** `[CANONE — DM 2026-10-07, Q26]`. Ne è l'antenata: mille anni dopo la Mano Rossa discende anche da questa orda, e se Zog'tar sopravvive umiliato i suoi canti hanno un generale in più. Un oggetto della Mano Rossa del 1372, qui, non lo riconosce nessuno.
 

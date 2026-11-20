@@ -41,7 +41,7 @@ RumblingStone/scripts/claude-progetto.sh
 | 5 | AGENTS.md diviso in regole `.claude/rules/rs-*.md` che arrivano con i file | ADR-0141, #489, `e1198477` | su uno script −45% di caratteri rispetto ad AGENTS.md intero |
 | 6 | `.claudeignore` tradotto in regole `Read(...)` di `permissions.deny` | ADR-0142, #490, `f36785eb` | righe trovate nelle ricerche fino a −39% |
 | 7 | I gate bloccanti e veloci della CI girano prima del push (`gate_locale --pre-push` con pre-commit, hook locale); nei thread lo installa l'avvio | ADR-0143 | 7 dei 12 rossi recenti presi in locale, 45 s a push |
-| 8 | Hook PreToolUse `vincolo_skill.py`: la prosa di gioco senza `rumblingstone-narrative-style` caricata si ferma; dieci agenti in `.claude/agents/` in tre classi con le skill precaricate; cricchetto della prosa in CI | ADR-0146 | prima: zero caricamenti di skill su 188 chiamate in cinque thread; l'hook si attiva su circa 200 modifiche su 2.944 ai file di gioco; il cricchetto ne avrebbe fermata 1 su 157 |
+| 8 | Hook PreToolUse `vincolo_skill.py`: la prosa di gioco senza `rumblingstone-narrative-style` caricata si ferma; undici agenti in `.claude/agents/` in tre classi con le skill precaricate; cricchetto della prosa in CI | ADR-0146 | prima: zero caricamenti di skill su 188 chiamate in cinque thread; l'hook si attiva su circa 200 modifiche su 2.944 ai file di gioco; il cricchetto ne avrebbe fermata 1 su 157 |
 
 ## 3. Tornare indietro
 

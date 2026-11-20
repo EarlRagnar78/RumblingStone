@@ -21,8 +21,8 @@ def _frontmatter(f: Path) -> "dict[str, str]":
 
 
 class TestAgenti(unittest.TestCase):
-    def test_sono_dieci(self) -> None:
-        self.assertEqual(len(AGENTI), 10, [f.name for f in AGENTI])
+    def test_sono_undici(self) -> None:
+        self.assertEqual(len(AGENTI), 11, [f.name for f in AGENTI])
 
     def test_nome_descrizione_classe_e_skill(self) -> None:
         for f in AGENTI:

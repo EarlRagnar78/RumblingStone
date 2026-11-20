@@ -58,7 +58,7 @@ disturbato 2.944 volte; uno su prosa e box disturba circa 200 volte.
 3. **Registro d'uso** in `.claude/.uso-skill.jsonl` (ignorato da git): una
    riga per decisione su un file vincolato. `vincolo_skill.py --riepilogo`
    dà la misura che oggi costa una lettura di trascrizioni.
-4. **Dieci agenti in `.claude/agents/`, in tre classi**, ognuno con le skill
+4. **Undici agenti in `.claude/agents/`, in tre classi**, ognuno con le skill
    precaricate e un corpo corto che rimanda ai `references/`:
 
    | Classe | Agente | Skill precaricate |
@@ -67,6 +67,7 @@ disturbato 2.944 volte; uno su prosa e box disturba circa 200 volte.
    | Autori | `autore-master` | module-standard, narrative-style, campaign |
    | Autori | `autore-documenti` | prosa-documenti, plans |
    | Tecnici | `sviluppatore` | debugging, automation |
+   | Tecnici | `integratore-dm` | automation, debugging |
    | Tecnici | `cartografo` | mapmaking |
    | Tecnici | `impaginatore` | editoria, edizione |
    | Tecnici | `art-director` | art-direction |
@@ -80,6 +81,14 @@ disturbato 2.944 volte; uno su prosa e box disturba circa 200 volte.
    agente carica le due prose insieme (ADR-0035); `rumblingstone-indagine`
    si carica su richiesta dall'autore della prosa. `test_agenti.py` lo
    controlla.
+
+   `integratore-dm` tiene il motore del DM (`dm.py`, `dmcore`, i plugin di
+   sistema, il server MCP, il manifest degli strumenti) e lavora in TDD a
+   piccoli incrementi; `sviluppatore` tiene il resto di `scripts/`, la CI e
+   gli hook. Lo ha chiesto Jfs il 20/11. Un sottoagente di Claude Code non
+   avvia altri agenti: la catena (per esempio `integratore-dm`, poi
+   `regolista` sui numeri) la guida il thread principale, e ogni agente
+   scrive nel resoconto chi va chiamato dopo.
 5. **Nei thread** `claude-progetto.sh` collega `<cartella>/.claude/agents` alla
    cartella del repo e scrive nel CLAUDE.md una riga con l'albero di decisione
    (chi legge, quale skill, quale agente).

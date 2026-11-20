@@ -2402,10 +2402,21 @@ repo scritto con altre parole.
 ### MS-0213 · 2026-11-19 · Le etichette dei pilastri escono dalle stampe, e il bug dei tag di typst torna con le liste
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #504
 - **ADR:** ADR-0070
 - **Temi:** stampa etichette pilastri prosa filtro typst pdfua pdfa bug tag liste impaginazione
 - **Origine:** riga del 2026-11-19 «Le etichette dei pilastri non si stampano» in `plans/CHANGELOG.md`
 - **Testo:** Jfs ha scelto sulla card del thread della prosa di togliere le etichette dei pilastri («Read-aloud (Andor lead)», «(pilastro GoT)») da tutte le stampe, tenendole nel sorgente: servono a chi scrive e a `misura_craft`. Il filtro sta in `leggi_per_la_stampa`, quindi vale per Typst e per Homebrewery, e non tocca i master. Togliere «(Mercer lead)» da un riquadro ha accorciato di una riga la colonna e ha spostato una voce d'elenco a cavallo della pagina 102, che è una tabella a pagina piena: typst 0.15.2 rifiuta allora PDF/UA-1 con «invalid list (L) structure», e il motore ripiega sul PDF senza standard. Come si trova: applicare al `.typ` di main le righe cambiate una alla volta (qui una sola), poi provare a tenere insieme ogni lista dopo quella riga. Tenere insieme ogni voce nel tema chiude il bug ma manda 27 righe fuori margine nella serata e aggiunge da 2 a 3 pagine a volume: scartato. Si è diviso in due il capoverso «Dal round 3 si smette» di DEF-4, senza cambiare parole. Il bug può tornare con qualunque modifica che sposti le pagine
 - **Trovato nel repo:** `scripts/dmcore/testo.py` · `scripts/tests/test_etichette_pilastri.py` · `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md`
 - **Solo qui:** l'export avvisa con «non è PDF/A» ma esce verde: in CI il ripiego non ferma niente, e lo si vede solo leggendo l'avviso o ricompilando con gli standard
+
+### MS-0214 · 2026-11-20 · I rimandi tecnici escono dai booklet di ARC-07
+
+- **Data:** 2026-11-20
+- **PR:** #511
+- **ADR:** —
+- **Temi:** stampa booklet serata rimandi tecnici marcatori di lavoro adr pdf tavolo
+- **Origine:** riga del 2026-11-20 «Via i rimandi tecnici dai booklet di ARC-07» in `plans/CHANGELOG.md`
+- **Testo:** Jfs ha chiesto il booklet della serata del 20/11 pronto da usare, poi (14:37 UTC) di togliere i rimandi tecnici. Il PDF è stato composto da main più le bozze #505-#509 e messo in /mnt/project-files/serata-2026-11-20/; questa PR porta nei sorgenti le stesse correzioni. Una copia generata da `componenti.py --includi` va corretta nella sua fonte (qui la scheda di Balvar), altrimenti il riallineamento rimette il testo vecchio. «#4» resta, perché il booklet stesso dice che è il capitolo VII
+- **Trovato nel repo:** `Bestiario/villain/balvar-fuocospento-cr13.md` · `07_il Portale Della Forgia Eterna/PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`
+- **Solo qui:** la ricerca dei marcatori era una regex in scratchpad, non un cancello del repo

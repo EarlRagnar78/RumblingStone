@@ -9,6 +9,18 @@
           }
         ]
       }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 $CLAUDE_PROJECT_DIR/scripts/vincolo_skill.py --hook",
+            "timeout": 10
+          }
+        ]
+      }
     ]
   },
   "enabledPlugins": {

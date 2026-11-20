@@ -12,6 +12,7 @@
 #   CLAUDE.md               corto, rimanda al repo (progressive disclosure)
 #   .claude/settings.json   quello del repo, con l'hook a percorso assoluto
 #   .mcp.json               rumblingstone-tools a percorso assoluto
+#   .claude/agents          collegamento agli agenti del repo (ADR-0146)
 # Non sovrascrive file che non ha scritto lui (marcatore in
 # .claude/.generato-da-rumblingstone). Non tocca mai il repo stesso.
 #
@@ -48,6 +49,7 @@ if scrivibile "${DEST}/CLAUDE.md"; then
 - Prima di modificare qualunque file del repo: \`python3 scripts/fase1.py <bersagli>\` (regola G6), anche se le regole non sono ancora arrivate.
 - Per riprendere un lavoro: \`${REL}/MEMORIA.md\`. Per la storia di una scelta: \`python3 scripts/memoria_storica.py --tema T\` (dal repo).
 - I tool del DM sono nel server MCP \`rumblingstone-tools\` (sola lettura, ADR-0030).
+- Prima di scrivere testo, chi lo legge? Un giocatore: skill \`rumblingstone-narrative-style\` e i suoi quattro references obbligatori, o l'agente \`autore-prosa-gioco\`; il repo: \`rumblingstone-prosa-documenti\`; codice: nessuna skill di prosa. Poi si sommano quelle del compito (albero: \`${REL}/skills/ORCHESTRAZIONE.md\`, agenti: \`${REL}/.claude/agents/\`). Un hook ferma la prosa di gioco scritta senza la sua skill (ADR-0146).
 - Le skill del repo si ricostruiscono all'avvio; lo stato è in \`${REL}/.claude/.skills-sync-status\`.
 EOF
   scritti+=("CLAUDE.md")
@@ -93,6 +95,18 @@ EOF
   scritti+=(".mcp.json")
 else
   echo "claude-progetto: ${DEST}/.mcp.json esiste e non è nostro, lo lascio"
+fi
+
+# Gli agenti del repo (ADR-0146): Claude Code li cerca in <progetto>/.claude/agents,
+# quindi qui si mette un collegamento alla cartella del repo, che resta viva.
+AGENTI="${DEST}/.claude/agents"
+if [ -d "${REPO}/.claude/agents" ]; then
+  if [ -L "${AGENTI}" ] || [ ! -e "${AGENTI}" ]; then
+    ln -sfn "${REPO}/.claude/agents" "${AGENTI}"
+    scritti+=("agents")
+  else
+    echo "claude-progetto: ${AGENTI} esiste e non è un collegamento nostro, lo lascio"
+  fi
 fi
 
 if [ "${#scritti[@]}" -gt 0 ]; then

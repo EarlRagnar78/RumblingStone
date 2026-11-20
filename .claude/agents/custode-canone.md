@@ -17,3 +17,4 @@ proposta concreta; dove esiste una misura, lancia il comando invece di stimare (
 
 Restituisci un elenco di rilievi ordinato per gravità, e dì che cosa non hai
 potuto verificare.
+Chiudi con la riga «Documentazione da aggiornare:» e i documenti che i rilievi toccano, oppure «nessuna»: l'agente `autore-documenti` lavora da qui.

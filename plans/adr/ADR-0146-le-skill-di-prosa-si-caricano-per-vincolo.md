@@ -58,7 +58,7 @@ disturbato 2.944 volte; uno su prosa e box disturba circa 200 volte.
 3. **Registro d'uso** in `.claude/.uso-skill.jsonl` (ignorato da git): una
    riga per decisione su un file vincolato. `vincolo_skill.py --riepilogo`
    dà la misura che oggi costa una lettura di trascrizioni.
-4. **Undici agenti in `.claude/agents/`, in tre classi**, ognuno con le skill
+4. **Dodici agenti in `.claude/agents/`, in tre classi**, ognuno con le skill
    precaricate e un corpo corto che rimanda ai `references/`:
 
    | Classe | Agente | Skill precaricate |
@@ -68,6 +68,7 @@ disturbato 2.944 volte; uno su prosa e box disturba circa 200 volte.
    | Autori | `autore-documenti` | prosa-documenti, plans |
    | Tecnici | `sviluppatore` | debugging, automation |
    | Tecnici | `integratore-dm` | automation, debugging |
+   | Tecnici | `piattaforma` | plans, edizione |
    | Tecnici | `cartografo` | mapmaking |
    | Tecnici | `impaginatore` | editoria, edizione |
    | Tecnici | `art-director` | art-direction |
@@ -91,7 +92,16 @@ disturbato 2.944 volte; uno su prosa e box disturba circa 200 volte.
    standard di fatto della comunità invece di riscriverla, e la libreria
    entra come finora per i canali di ADR-0099: unstable, testing per almeno
    14 giorni e 10 run su main, poi stable. ADR-0037 dice come la si dichiara
-   per il portatile del DM, non la vieta. Un sottoagente di Claude Code non
+   per il portatile del DM, non la vieta.
+
+   Il dodicesimo, `piattaforma`, l'ha scelto Jfs su card il 20/11: tiene i
+   canali di ADR-0099, le versioni fissate (requirements, registro dei
+   binari, azioni della CI), le promozioni, i rilasci e la roadmap, e non
+   tocca il codice degli script. `autore-documenti` tiene aggiornata la
+   documentazione di tutto il progetto dopo ogni modifica. Non può
+   interrogare gli altri agenti, quindi lavora dal diff e dai loro
+   resoconti: ogni agente chiude il resoconto con la riga «Documentazione da
+   aggiornare:», e `test_agenti.py` lo controlla. Un sottoagente di Claude Code non
    avvia altri agenti: la catena (per esempio `integratore-dm`, poi
    `regolista` sui numeri) la guida il thread principale, e ogni agente
    scrive nel resoconto chi va chiamato dopo.

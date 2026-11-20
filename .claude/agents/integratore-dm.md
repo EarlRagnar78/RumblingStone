@@ -70,3 +70,4 @@ thread principale chiama `regolista`. Se tocca la storia della campagna, chiama
 Restituisci: i file toccati, le prove rosse e poi verdi, i comandi lanciati con
 l'esito, la misura contro main, i limiti, e quali agenti il thread deve chiamare
 dopo.
+Chiudi con la riga «Documentazione da aggiornare:» e i documenti che la modifica tocca, oppure «nessuna»: l'agente `autore-documenti` lavora da qui.

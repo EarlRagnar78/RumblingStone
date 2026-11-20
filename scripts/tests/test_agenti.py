@@ -21,8 +21,8 @@ def _frontmatter(f: Path) -> "dict[str, str]":
 
 
 class TestAgenti(unittest.TestCase):
-    def test_sono_undici(self) -> None:
-        self.assertEqual(len(AGENTI), 11, [f.name for f in AGENTI])
+    def test_sono_dodici(self) -> None:
+        self.assertEqual(len(AGENTI), 12, [f.name for f in AGENTI])
 
     def test_nome_descrizione_classe_e_skill(self) -> None:
         for f in AGENTI:
@@ -47,6 +47,14 @@ class TestAgenti(unittest.TestCase):
                 strumenti = _frontmatter(f).get("tools", "")
                 self.assertTrue(strumenti, "un verificatore elenca i suoi strumenti")
                 self.assertNotRegex(strumenti, r"\b(Edit|Write|MultiEdit|NotebookEdit)\b")
+
+    def test_ogni_agente_dice_che_documentazione_aggiornare(self) -> None:
+        """L'agente della documentazione non interroga gli altri: legge i loro resoconti."""
+        for f in AGENTI:
+            if f.stem == "autore-documenti":
+                continue
+            with self.subTest(agente=f.stem):
+                self.assertIn("Documentazione da aggiornare:", f.read_text(encoding="utf-8"))
 
     def test_l_agente_nominato_dall_hook_precarica_la_skill_di_prosa(self) -> None:
         self.assertIn(vs.SKILL_PROSA, vs.precaricate("autore-prosa-gioco"))

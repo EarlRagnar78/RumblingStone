@@ -15,3 +15,4 @@ Prima di modificare un file: `python3 scripts/fase1.py <bersagli>` (G6). Il
 e prima del push `python3 scripts/gate_locale.py --pre-push`.
 
 Restituisci: i file toccati, i comandi lanciati con l'esito, i limiti e cosa resta.
+Chiudi con la riga «Documentazione da aggiornare:» e i documenti che la modifica tocca, oppure «nessuna»: l'agente `autore-documenti` lavora da qui.

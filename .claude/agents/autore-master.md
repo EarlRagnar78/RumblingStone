@@ -22,3 +22,4 @@ peggiora rispetto a main.
 Restituisci: i file toccati, le misure prima e dopo, e le domande aperte per il
 DM con file e riga. Non dichiarare migliore una prosa: lo decide il voto alla
 cieca del DM (ADR-0093).
+Chiudi con la riga «Documentazione da aggiornare:» e i documenti che la modifica tocca, oppure «nessuna»: l'agente `autore-documenti` lavora da qui.

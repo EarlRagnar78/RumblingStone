@@ -823,7 +823,10 @@ def build(manifest_path: Path, out_override: Path | None = None) -> Path:
     tabs = ['<button role="tab" aria-selected="true" data-pane="c0">Copertina</button>']
     for k, ch in enumerate(mf["chapters"], 1):
         p = base / ch["file"]
-        body = md_to_html(spoglia_homebrewery(_letto(p, capitoli, ch.get("sezioni"))), p.parent)
+        md = _letto(p, capitoli, ch.get("sezioni"))
+        if ch.get("apertura"):   # ADR-0122, S1: l'introduzione del capitolo
+            md = (base / ch["apertura"]).read_text(encoding="utf-8").strip() + "\n\n" + md
+        body = md_to_html(spoglia_homebrewery(md), p.parent)
         tag = TAGS.get(ch.get("tag", ""), "")
         foot = player_footer if ch.get("tag") == "player" else footer
         tabs.append(f'<button role="tab" aria-selected="false" data-pane="c{k}">'
@@ -965,6 +968,8 @@ def testo_hb(manifest_path: Path, out_override: Path | None = None) -> tuple[Pat
         tag = HB_TAGS.get(ch.get("tag", ""))
         if tag:
             parts.append(tag + "\n")
+        if ch.get("apertura"):   # ADR-0122, S1: l'introduzione del capitolo
+            parts.append((base / ch["apertura"]).read_text(encoding="utf-8").strip() + "\n\n")
         parts.append(_incorpora(base / ch["file"], ch.get("sezioni")))
     if APPENDICE_HB:
         parts += ["\n\\page\n", "# Appendice: le creature\n"]

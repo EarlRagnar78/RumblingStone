@@ -1304,6 +1304,10 @@ def sorgente(man: dict, base: Path, tutti: bool, carta: str = "avorio",
             etichettati.add(f.name)
             parti.append(f"#metadata(\"capitolo\") <{RIMANDI[f.name]}>")
         md = leggi_per_la_stampa(f, nel_volume, cap.get("sezioni"))
+        # `"apertura"` (ADR-0122, S1): l'introduzione del capitolo, scritta a
+        # parte perché il master letto per `sezioni` non ne ha una
+        if cap.get("apertura"):
+            md = (base / cap["apertura"]).read_text(encoding="utf-8").strip() + "\n\n" + md
         # la regia e la cassetta nominano tutti, ma lì non si incontra nessuno
         if indice is not None and not chi_si_incontra.CONSULTAZIONE.search(titolo):
             if volume is not None:

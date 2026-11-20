@@ -3915,6 +3915,13 @@ L'artefatto che stringe al petto è in **Appendice B**.
 Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 }}
 
+Il percorso dell'atto va dal primo ariete al drago che cala sul cortile. Questo capitolo ne è la prima metà: le mura all'alba, una via su tre, una prova collettiva dopo la tabella «Dalla notte». L'orda vuole la breccia prima che il sole superi il crinale; Re Thorek I e Hrodgar, il capitano delle mura, vogliono tenere il camminamento est. Gli arieti salgono alla porta dalla spianata, a +80; le scale salgono sul tratto est, dove il fianco della montagna arriva al piede delle mura.
+
+Si arriva qui dove le tacche della notte hanno lasciato i PG (§4), e quello che hanno fatto nel campo si paga adesso. Zog'tar vivo all'alba, il campo in allarme e il boato del barile tolgono un successo; Zog'tar catturato e i due Treant sul fianco dell'orda ne aggiungono uno. Le cure comprate alla cappella tornano qui, con il dado dei caduti.
+
+Il fallimento è un costo, mai uno stop. Il capitolo finisce in tre modi: mura tenute saldamente, a stento, o breccia ceduta; comunque vada, poi il drago cala sul cortile (capitolo X). Prima di cominciare servono a portata il registro dei caduti e la mappa M7-B.
+
+
 ## §5 — ATTO III · L'ALBA
 
 > **Il percorso dell'atto.** Dal primo ariete al ritorno. Le mura, il drago che
@@ -4154,6 +4161,13 @@ La pianta del cortile dove Skullcrusher cala all'alba (Scena 11), con la legenda
 ##### ⚠ SOLO DM
 Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 }}
+
+Skullcrusher il Nero cala sul cortile interno con due wyvern e combatte in passate, gridando i nomi che ha sentito di notte attraverso il corno. Vuole vincere davanti all'orda, perché per lui il potere è quello che gli altri hanno visto, e uccidere un secondo re in questa valle. Re Thorek I è nel cortile, a difendere da dentro la porta che gli arieti battono.
+
+Il drago non cerca i PG per nome. Cala sul suo obiettivo, il re o la porta, e i PG diventano bersaglio quando gli stanno in mezzo, quando portano una corona, o quando dicono la Catena ad alta voce. Se gli arieti sono stati sabotati, il duello comincia fuori dalle mura, sulla spianata; se i PG sono altrove, la tabella «Dove sono i PG all'alba» dice dove cala e come combatte.
+
+Il capitolo dà il duello in tre scambi, la scena intera e le contingenze: se due PG cadono nello stesso round, o il gruppo si ritira, intervengono gli avi, e il duello è vinto sporco. Finisce con il drago ucciso, ferito grave, fuggito, o vinto sporco, e ogni ferita va nella tabella B4. Con l'esito la serata si ferma, prima della Scena 12: il Rubino e il torque del re sono della serata dopo.
+
 
 <!-- pagina: una-colonna -->
 ### C.3 · Il duello in tre scambi (Scena 11)

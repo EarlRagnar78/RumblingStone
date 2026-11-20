@@ -137,6 +137,7 @@
         "SCENA 10"
       ],
       "quando": "le mura all'alba, una via su tre",
+      "apertura": "apertura-VIII.md",
       "ruolo": "gioco"
     },
     {
@@ -156,6 +157,7 @@
         "§6 —"
       ],
       "quando": "il duello; la versione in tre scambi è in testa. Con l'esito ci si ferma",
+      "apertura": "apertura-X.md",
       "ruolo": "gioco"
     },
     {

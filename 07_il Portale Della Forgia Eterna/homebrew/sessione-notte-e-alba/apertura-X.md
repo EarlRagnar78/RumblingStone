@@ -1,0 +1,5 @@
+Skullcrusher il Nero cala sul cortile interno con due wyvern e combatte in passate, gridando i nomi che ha sentito di notte attraverso il corno. Vuole vincere davanti all'orda, perché per lui il potere è quello che gli altri hanno visto, e uccidere un secondo re in questa valle. Re Thorek I è nel cortile, a difendere da dentro la porta che gli arieti battono.
+
+Il drago non cerca i PG per nome. Cala sul suo obiettivo, il re o la porta, e i PG diventano bersaglio quando gli stanno in mezzo, quando portano una corona, o quando dicono la Catena ad alta voce. Se gli arieti sono stati sabotati, il duello comincia fuori dalle mura, sulla spianata; se i PG sono altrove, la tabella «Dove sono i PG all'alba» dice dove cala e come combatte.
+
+Il capitolo dà il duello in tre scambi, la scena intera e le contingenze: se due PG cadono nello stesso round, o il gruppo si ritira, intervengono gli avi, e il duello è vinto sporco. Finisce con il drago ucciso, ferito grave, fuggito, o vinto sporco, e ogni ferita va nella tabella B4. Con l'esito la serata si ferma, prima della Scena 12: il Rubino e il torque del re sono della serata dopo.

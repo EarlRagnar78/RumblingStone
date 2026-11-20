@@ -1,0 +1,5 @@
+Il percorso dell'atto va dal primo ariete al drago che cala sul cortile. Questo capitolo ne è la prima metà: le mura all'alba, una via su tre, una prova collettiva dopo la tabella «Dalla notte». L'orda vuole la breccia prima che il sole superi il crinale; Re Thorek I e Hrodgar, il capitano delle mura, vogliono tenere il camminamento est. Gli arieti salgono alla porta dalla spianata, a +80; le scale salgono sul tratto est, dove il fianco della montagna arriva al piede delle mura.
+
+Si arriva qui dove le tacche della notte hanno lasciato i PG (§4), e quello che hanno fatto nel campo si paga adesso. Zog'tar vivo all'alba, il campo in allarme e il boato del barile tolgono un successo; Zog'tar catturato e i due Treant sul fianco dell'orda ne aggiungono uno. Le cure comprate alla cappella tornano qui, con il dado dei caduti.
+
+Il fallimento è un costo, mai uno stop. Il capitolo finisce in tre modi: mura tenute saldamente, a stento, o breccia ceduta; comunque vada, poi il drago cala sul cortile (capitolo X). Prima di cominciare servono a portata il registro dei caduti e la mappa M7-B.

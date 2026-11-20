@@ -97,6 +97,47 @@ class TestVolume(unittest.TestCase):
         self.assertFalse(any(r.startswith("S4") for r in righe))
 
 
+@unittest.skipUnless(PYMUPDF, "serve PyMuPDF")
+class TestIntroduzioneS1(unittest.TestCase):
+    """S1 conta il testo che si legge fra il titolo e il primo sottotitolo:
+    non la tabella che il tema porta in testa alla pagina, né la sua
+    didascalia, né il titolo che torna nella pagina (ADR-0122)."""
+
+    def _pdf(self, intro: bool) -> Path:
+        import tempfile
+        import pymupdf
+        doc = pymupdf.open()
+        pg = doc.new_page(width=595, height=842)
+        pg.insert_text((60, 90), "VIII · Le mura", fontsize=17)
+        pg.insert_text((60, 150), "§5 — LE MURA", fontsize=7.5)   # la didascalia della tabella
+        for k in range(8):                                         # la tabella larga, in testa
+            y = 170 + 15 * k
+            for x in (63, 150, 240, 330, 420):
+                pg.insert_text((x, y), f"cella {k}", fontsize=10)
+        y = 320
+        if intro:
+            for _ in range(12):
+                pg.insert_text((60, y), "Il percorso dell'atto va dal primo ariete al drago.", fontsize=10)
+                y += 13
+        pg.insert_text((60, y + 10), "§5 — LE MURA", fontsize=7.6)  # il sottotitolo vero
+        pg.insert_text((60, y + 40), "Testo della sezione.", fontsize=10)
+        doc.set_toc([[1, "VIII · Le mura", 1, {"kind": 1, "page": 0, "to": pymupdf.Point(60, 75)}],
+                     [2, "§5 — LE MURA", 1, {"kind": 1, "page": 0, "to": pymupdf.Point(60, y)}]])
+        out = Path(tempfile.mkdtemp()) / "s1.pdf"
+        doc.save(out)
+        return out
+
+    def test_la_tabella_in_testa_non_e_introduzione(self):
+        import pymupdf
+        caps = M.s1_introduzione(pymupdf.open(self._pdf(intro=False)))["capitoli"]
+        self.assertEqual(caps[0]["intro"], 0)
+
+    def test_l_introduzione_dopo_la_tabella_si_conta(self):
+        import pymupdf
+        caps = M.s1_introduzione(pymupdf.open(self._pdf(intro=True)))["capitoli"]
+        self.assertGreater(caps[0]["intro"], 500)
+
+
 class TestSoglie(unittest.TestCase):
     def test_le_soglie_vengono_dai_riferimenti(self):
         import json

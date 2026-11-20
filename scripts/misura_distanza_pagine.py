@@ -164,39 +164,100 @@ def _righe(pagina) -> list[tuple[float, str]]:
     return sorted(out)
 
 
-def _y_del_titolo(pagina, titolo: str) -> float:
-    """Dove sta il titolo sulla pagina: l'indice dei PDF di carta dà solo la pagina."""
+def _y_del_titolo(pagina, titolo: str, dopo: float = 0.0) -> float:
+    """Dove sta il titolo sulla pagina: il primo punto in cui compare dopo `dopo`.
+    `dopo` è la destinazione del segnalibro, quando il PDF la dà: lo stesso
+    titolo può stare due volte nella pagina (nella serata di ARC-07 «§5 — ATTO
+    III · L'ALBA» è sia nel titolo corrente sia nel corpo)."""
     for chiave_ in (titolo[:40], titolo.split(":")[0][:30], titolo.split()[0] if titolo.split() else ""):
-        if chiave_ and (r := pagina.search_for(chiave_)):
-            return r[0].y0
-        if chiave_ and (r := pagina.search_for(chiave_.upper())):
-            return r[0].y0
-    return 0.0
+        for c in (chiave_, chiave_.upper()):
+            if c and (r := [x for x in pagina.search_for(c) if x.y0 >= dopo - 2]):
+                return r[0].y0
+    return dopo
 
 
-def _caratteri_fra(doc, a: tuple[int, float], b: tuple[int, float]) -> int:
-    """I caratteri di testo fra la riga dopo il titolo in `a` e il titolo in `b` (pagine da 0)."""
+#: Sopra una tabella mobile il tema stampa una didascalia: il titolo della sezione.
+DIDASCALIA = 28.0
+#: Un titolo di capitolo, o un capolettera: non è testo dell'introduzione.
+CORPO_TITOLO = 14.0
+
+
+def _righe_in_ordine(pagina) -> list[tuple[float, float, float, str]]:
+    """Le righe nell'ordine del flusso del PDF, (y, x, corpo, testo): un PDF
+    taggato le scrive nell'ordine di lettura, colonna dopo colonna."""
+    h = pagina.rect.height
+    out = []
+    for b in pagina.get_text("dict")["blocks"]:
+        for ln in b.get("lines", []):
+            t = "".join(s["text"] for s in ln["spans"]).strip()
+            y = ln["bbox"][1]
+            if t and MARGINE * h < y < (1 - MARGINE) * h:
+                out.append((y, ln["bbox"][0], max(s["size"] for s in ln["spans"]), t))
+    return out
+
+
+def _fasce_tabelle(pagina, righe) -> list[tuple[float, float]]:
+    """Le fasce verticali delle tabelle, con la loro didascalia. Il tema porta
+    le tabelle larghe in testa alla pagina, e non sono l'introduzione. Quelle
+    che `find_tables` non vede si riconoscono dalle righe con almeno tre celle,
+    a cavallo del centro pagina: il testo a due colonne ne ha due."""
+    try:
+        fasce = [(t.bbox[1] - DIDASCALIA, t.bbox[3]) for t in pagina.find_tables().tables]
+    except Exception:  # noqa: BLE001 — una pagina che non si analizza non ha tabelle per la misura
+        fasce = []
+    centro = pagina.rect.width / 2
+    celle: dict[int, list[float]] = {}
+    for y, x, _c, _t in righe:
+        celle.setdefault(round(y), []).append(x)
+    file = sorted(y for y, xs in celle.items()
+                  if len({round(x) for x in xs}) >= 3 and min(xs) < centro < max(xs))
+    gruppo: list[int] = []
+    for y in [*file, None]:
+        if gruppo and (y is None or y - gruppo[-1] > 60):
+            fasce.append((gruppo[0] - DIDASCALIA, gruppo[-1] + 14))
+            gruppo = []
+        if y is not None:
+            gruppo.append(y)
+    return fasce
+
+
+def _caratteri_intro(doc, a: tuple[int, float], b: tuple[int, float]) -> int:
+    """I caratteri dell'introduzione: il testo che nel flusso di lettura viene
+    dopo il titolo del capitolo in `a` e prima del primo sottotitolo in `b`
+    (pagine da 0), senza titoli, capolettera, tabelle mobili e didascalie."""
     n = 0
     for i in range(a[0], min(b[0], len(doc) - 1) + 1):
-        for y, t in _righe(doc[i]):
-            if (i == a[0] and y <= a[1] + 2) or (i == b[0] and y >= b[1] - 2):
+        righe = _righe_in_ordine(doc[i])
+        fasce = _fasce_tabelle(doc[i], righe)
+        for y, _x, corpo, t in righe:
+            if i == b[0] and abs(y - b[1]) <= 4:
+                return n
+            if (i == a[0] and y <= a[1] + 2) or corpo >= CORPO_TITOLO \
+                    or any(y0 <= y <= y1 for y0, y1 in fasce):
                 continue
             n += len(t)
     return n
 
 
+def _y_destinazione(voce) -> float:
+    """La y (dall'alto) a cui punta un segnalibro di `get_toc(False)`; 0 se non la dà."""
+    to = voce[3].get("to") if len(voce) > 3 and isinstance(voce[3], dict) else None
+    return float(to.y) if to is not None else 0.0
+
+
 def capitoli(doc, livello: int = 1, filtro: "str | None" = None) -> list[dict]:
     """I capitoli dall'indice del PDF, con il primo sottotitolo di ciascuno."""
-    toc = [(lv, t.strip(), p - 1) for lv, t, p in doc.get_toc() if p >= 1]
+    # la destinazione del segnalibro dice dove comincia il titolo sulla pagina
+    toc = [(e[0], e[1].strip(), e[2] - 1, _y_destinazione(e)) for e in doc.get_toc(False) if e[2] >= 1]
     out = []
-    for k, (lv, t, p) in enumerate(toc):
+    for k, (lv, t, p, y) in enumerate(toc):
         if (lv != livello or NON_CAPITOLO.search(t) or INTRO_VOLUME.search(t)
                 or (filtro and not re.search(filtro, t, re.I))):
             continue
-        figlio = next(((lv2, t2, p2) for lv2, t2, p2 in toc[k + 1:] if lv2 <= livello or lv2 == livello + 1), None)
+        figlio = next((v for v in toc[k + 1:] if v[0] <= livello or v[0] == livello + 1), None)
         primo = figlio if figlio and figlio[0] == livello + 1 else None
-        out.append({"titolo": t, "pagina": p, "primo": primo[1] if primo else None,
-                    "pagina_primo": primo[2] if primo else None})
+        out.append({"titolo": t, "pagina": p, "y": y, "primo": primo[1] if primo else None,
+                    "pagina_primo": primo[2] if primo else None, "y_primo": primo[3] if primo else 0.0})
     return out
 
 
@@ -206,9 +267,9 @@ def s1_introduzione(doc, livello: int = 1, filtro: "str | None" = None) -> dict:
         if c["primo"] is None:
             c["intro"] = None
             continue
-        a = (c["pagina"], _y_del_titolo(doc[c["pagina"]], c["titolo"]))
-        b = (c["pagina_primo"], _y_del_titolo(doc[c["pagina_primo"]], c["primo"]))
-        c["intro"] = _caratteri_fra(doc, a, b)
+        a = (c["pagina"], _y_del_titolo(doc[c["pagina"]], c["titolo"], c["y"]))
+        b = (c["pagina_primo"], _y_del_titolo(doc[c["pagina_primo"]], c["primo"], c["y_primo"]))
+        c["intro"] = _caratteri_intro(doc, a, b)
     primo_cap = min((c["pagina"] for c in caps), default=len(doc))
     voci = [t for _lv, t, p in doc.get_toc() if p - 1 <= primo_cap]
     return {"capitoli": caps, "intro_volume": any(INTRO_VOLUME.search(t) for t in voci)}

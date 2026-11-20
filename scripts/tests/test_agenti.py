@@ -3,9 +3,8 @@ from __future__ import annotations
 
 import re
 import sys
+import unittest
 from pathlib import Path
-
-import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import vincolo_skill as vs  # noqa: E402
@@ -18,56 +17,50 @@ SKILL = {p.parent.name for p in (ROOT / "skills").glob("*/SKILL.md")}
 
 def _frontmatter(f: Path) -> "dict[str, str]":
     m = re.match(r"---\n(.*?)\n---", f.read_text(encoding="utf-8"), re.S)
-    assert m, f"{f.name}: manca il frontmatter"
-    return dict(re.findall(r"^(\w+): ?(.*)$", m.group(1), re.M))
+    return dict(re.findall(r"^(\w+): ?(.*)$", m.group(1), re.M)) if m else {}
 
 
-def test_sono_dieci():
-    assert len(AGENTI) == 10, [f.name for f in AGENTI]
+class TestAgenti(unittest.TestCase):
+    def test_sono_dieci(self) -> None:
+        self.assertEqual(len(AGENTI), 10, [f.name for f in AGENTI])
+
+    def test_nome_descrizione_classe_e_skill(self) -> None:
+        for f in AGENTI:
+            with self.subTest(agente=f.stem):
+                fm = _frontmatter(f)
+                self.assertEqual(fm.get("name"), f.stem)
+                self.assertGreater(len(fm.get("description", "")), 40)
+                classe = re.search(r"<!-- Classe: (\w+)", f.read_text(encoding="utf-8"))
+                self.assertTrue(classe and classe.group(1) in CLASSI)
+                precaricate = vs.precaricate(f.stem)
+                self.assertTrue(precaricate, "nessuna skill precaricata")
+                self.assertLessEqual(precaricate, SKILL, precaricate - SKILL)
+                self.assertFalse({"rumblingstone-narrative-style",
+                                  "rumblingstone-prosa-documenti"} <= precaricate,
+                                 "le due prose non si mescolano (ADR-0035)")
+
+    def test_i_verificatori_non_scrivono(self) -> None:
+        for f in AGENTI:
+            if "Classe: Verificatori" not in f.read_text(encoding="utf-8"):
+                continue
+            with self.subTest(agente=f.stem):
+                strumenti = _frontmatter(f).get("tools", "")
+                self.assertTrue(strumenti, "un verificatore elenca i suoi strumenti")
+                self.assertNotRegex(strumenti, r"\b(Edit|Write|MultiEdit|NotebookEdit)\b")
+
+    def test_l_agente_nominato_dall_hook_precarica_la_skill_di_prosa(self) -> None:
+        self.assertIn(vs.SKILL_PROSA, vs.precaricate("autore-prosa-gioco"))
+
+    def test_ogni_skill_obbligatoria_ha_un_agente(self) -> None:
+        """L0, L1 e L2 di ORCHESTRAZIONE; l'indagine la carica su richiesta l'autore della prosa."""
+        obbligatorie = {"rumblingstone-campaign", "rumblingstone-narrative-style",
+                        "rumblingstone-prosa-documenti", "rumblingstone-indagine",
+                        "rumblingstone-module-standard", "npc-villain-boosting"}
+        coperte = set().union(*(vs.precaricate(f.stem) for f in AGENTI))
+        self.assertEqual(obbligatorie - coperte, {"rumblingstone-indagine"})
+        self.assertIn("rumblingstone-indagine",
+                      (ROOT / ".claude/agents/autore-prosa-gioco.md").read_text(encoding="utf-8"))
 
 
-@pytest.mark.parametrize("f", AGENTI, ids=lambda f: f.stem)
-def test_nome_descrizione_classe(f):
-    fm = _frontmatter(f)
-    assert fm["name"] == f.stem
-    assert len(fm["description"]) > 40
-    classe = re.search(r"<!-- Classe: (\w+)", f.read_text(encoding="utf-8"))
-    assert classe and classe.group(1) in CLASSI
-
-
-@pytest.mark.parametrize("f", AGENTI, ids=lambda f: f.stem)
-def test_le_skill_precaricate_esistono(f):
-    precaricate = vs.precaricate(f.stem)
-    assert precaricate, f"{f.name}: nessuna skill precaricata"
-    assert precaricate <= SKILL, precaricate - SKILL
-
-
-def test_i_verificatori_non_scrivono():
-    for f in AGENTI:
-        if "Classe: Verificatori" in f.read_text(encoding="utf-8"):
-            strumenti = _frontmatter(f).get("tools", "")
-            assert strumenti, f"{f.name}: un verificatore elenca i suoi strumenti"
-            assert not re.search(r"\b(Edit|Write|MultiEdit|NotebookEdit)\b", strumenti), f.name
-
-
-def test_le_due_prose_non_si_mescolano():
-    """narrative-style e prosa-documenti sono mutuamente esclusive (ADR-0035)."""
-    for f in AGENTI:
-        s = vs.precaricate(f.stem)
-        assert not {"rumblingstone-narrative-style", "rumblingstone-prosa-documenti"} <= s, f.name
-
-
-def test_l_agente_nominato_dall_hook_precarica_la_skill_di_prosa():
-    assert vs.SKILL_PROSA in vs.precaricate("autore-prosa-gioco")
-
-
-def test_ogni_skill_obbligatoria_ha_un_agente():
-    """L0, L1 e L2 di ORCHESTRAZIONE: nessuna resta senza un agente che la carica."""
-    obbligatorie = {"rumblingstone-campaign", "rumblingstone-narrative-style",
-                    "rumblingstone-prosa-documenti", "rumblingstone-indagine",
-                    "rumblingstone-module-standard", "npc-villain-boosting"}
-    coperte = set().union(*(vs.precaricate(f.stem) for f in AGENTI))
-    # l'indagine si carica su richiesta dall'autore della prosa: lo dice il suo corpo
-    assert "rumblingstone-indagine" in (ROOT / ".claude/agents/autore-prosa-gioco.md").read_text(
-        encoding="utf-8")
-    assert obbligatorie - coperte == {"rumblingstone-indagine"}
+if __name__ == "__main__":
+    unittest.main()

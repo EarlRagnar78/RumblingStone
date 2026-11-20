@@ -84,7 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
-| 2026-11-20 | STANDARD-STAMPA | ADR-0122, S4: l'appendice della regione nel booklet della serata di ARC-07 (ric… | S4 pagine di regione 0 → 5 (pagine PNG 3 → 4); pagine 132 → 137; `misura_stampa --check` nei tetti (parole ripetute 8.621 → 8.854, in prova) |
+| 2026-11-20 | STANDARD-STAMPA | ADR-0122, S4: l'appendice della regione nel booklet della serata di ARC-07 (ric… | S4 pagine di regione/PNG 0/3 → 8/3; pagine 132 → 140; `misura_stampa --check` nei tetti (parole ripetute 8.621 → 8.871, in prova) |
 | 2026-11-19 | STANDARD-STAMPA | Le etichette dei pilastri non si stampano (card di Jfs del 19/11 nel thread del… | ✅ etichette nelle stampe di ARC-07 da 245 a 0 nei booklet (serata 22, notte e alba 41, resurrezione 86, ritorno alla Forgia 25, Terros 31, mille anni 40) e da… |
 | 2026-11-19 | STANDARD-STAMPA | ADR-0145, i ruoli nel manifest e l'ordine come cancello (richiesta di Jfs del 1… | ✅ etichette dal manifest uguali a quelle dei file di regole: 128 sezioni su 128 nella serata, 398 su 398 nel volume; difetti d'ordine 0 e 0; un manifest rotto… |
 | 2026-11-19 | STANDARD-STAMPA | ADR-0145, segnalibri annidati (richiesta di Jfs del 19/11, 14:07: chiudere i li… | ✅ segnalibri da piatti a quattro livelli: serata 143 voci con 20 al primo livello, volume 439 con 13; PDF/UA-1 e PDF/A-2a restano; rimandi 113 su 113 e 242 su… |

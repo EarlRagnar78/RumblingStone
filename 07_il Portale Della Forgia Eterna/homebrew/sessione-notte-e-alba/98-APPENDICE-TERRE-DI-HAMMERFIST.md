@@ -43,8 +43,16 @@ Le date sono contate all'indietro dal 372 e hanno il segno ≈ perché il canone
 
 ## La geografia, dall'alto in basso
 
+La mappa della regione è M7-R: la valle intera, con la fortezza, il campo e le colline. Il riquadro tratteggiato è M7-A, la vista strategica del capitolo delle mappe. Le distanze sono quelle del canone, e valgono anche nel 1372: in mille anni le montagne non si spostano.
+
+![M7-R — La valle di Hammerfist ≈372 DR](../../Mappe/schemi/M7-R-valle-di-hammerfist-372.svg)
+
+![M7-R — Indicazioni](../../Mappe/schemi/M7-R-valle-di-hammerfist-372_legenda.svg)
+
+
 - **La torre nord**, a +120 m sulla piana: il punto più alto della fortezza.
 - **La porta e il cortile**, a +100 m. Si sale dalla piana per una strada a tornanti, oppure dal fianco est della montagna, che è la via dei PG nella notte.
+- **Il pendio sotto le mura**: circa 300 m in pianta per 80 m di dislivello, cioè una pendenza del 27%, e la strada a tornanti larga 6 m al 15%. Sono le misure della fortezza del 1372 (ARC-08, mappe 2B e 2C) `[INFERRED — Il pendio del 372 è lo stesso del 1372?; base: la piana a 520 m e le quote +80, +100 e +120 coincidono nei due tempi]`.
 - **Le mura**, sul ciglio del gradone. Sul fronte sud stanno 24,5 m sopra la spianata, e le scale non ci arrivano. Sul tratto est il fianco della montagna arriva al piede delle mura, ed è lì che salgono le scale d'assedio `[CANONE — DM 2026-11-04, P16]`.
 - **La spianata degli arieti**, a +80 m. Gli arieti si montano lì e salgono alla porta per una rampa addossata al gradone.
 - **La piana**, a 520 m sul mare: il mare di tende, fra 500 m e 1 km dalle mura.
@@ -122,6 +130,38 @@ Ogni PNG ha una scheda d'entrata nella scena in cui compare, e le statistiche ne
 | Zog'tar Deatheye | mezzo-ogre, armatura nanica di mithral annerita, l'Occhio di Ossidiana | Scena 8 | un nome nelle cronache dell'assedio antico |
 | Vatore | il ladro che diventerà Sal | Scena 9 | Sal, mercante e spia in ARC-09 |
 | Skullcrusher il Nero | drago nero vecchio, il capostipite | Scena 11 | Fauci di Palude, la sua stirpe |
+
+## Le stirpi, le reliquie e i poteri
+
+Il lore della notte sta quasi tutto in oggetti che i PG conoscono già nella forma del 1372. Qui hanno mille anni di meno.
+
+| Che cosa | Nel 372 | Che cosa sanno i PG |
+|---|---|---|
+| **La Corona** | persa cinquant'anni fa dal nonno del re contro Skullcrusher. È il lutto del re | la portano loro: Topazio e Smeraldo accesi, un incasso vuoto. Il Rubino, la Possanza Nanica, si accende solo alla vittoria |
+| **Aegis Fang** | appoggiata alla panca di Thorgrim, mille anni più giovane | è l'ascia di Thorik. Quando si toccano, il legno suona |
+| **Frostcleaver** | l'ascia del re, con un disegno di brina sulla lama che non si scioglie | niente: nel 1372 non la nominano |
+| **Il Torque di Thorek I** | il re lo dà con le sue mani dopo la vittoria (Scena 12) | nel 1372 i nani si scoprono il capo davanti a chi lo porta |
+| **La Catena** | la runa-contratto incisa da Balvar sotto una scaglia di Skullcrusher. Gemella di quella sul corno di Grask | che il drago combatte per l'orda solo se la scoprono (Scena 7) |
+| **Il corno di Grask** | quando suona, la Catena tira e il drago torna. Il drago ci sente attraverso le voci | rubato e suonato dai PG, chiama il drago su chi lo tiene `[CANONE — DM 2026-10-18]` |
+| **L'Occhio di Ossidiana** | la pietra nera al posto dell'occhio destro di Zog'tar: un occhio vero `[CANONE — DM 2026-09-24]` | niente, finché non lo vedono |
+| **Il Sigillo di Ossidiana** | stretto al petto da Vatore: un artefatto di Shar che divora anime (Appendice B del master) | niente. È il mezzo con cui Vatore diventerà Sal; se lo rubano, il filo del Sigillo prosegue in ARC-09 |
+| **La stirpe di Skullcrusher** | ha già figli: se muore, la stirpe nasce lo stesso | Fauci di Palude, nel 1372, ne discende |
+
+## Agganci per il DM
+
+Ogni aggancio parte da un fatto del master e porta a una scena o a un arco. Non servono tutti: sono le porte che la regione lascia aperte.
+
+| Aggancio | Da dove parte | Dove porta |
+|---|---|---|
+| **Il nipote sulle mura** | Hald, diciannove anni, monta la guardia su un camminamento. Il suo nome è sulla lastra di Balvar (Osservare CD 20) | Balvar recuperato non combatte e dice dov'è la runa della Catena (Scena 7) |
+| **La riga che il drago non ha letto** | il contratto della Catena ha una riga in più | spezzata la Catena, il drago se ne va e l'assalto perde le ali (Scena 11) |
+| **Il corno rubato** | il corno di Grask, nella tenda del comando | chiama il drago, ma su chi lo tiene (Scene 6 e 11) |
+| **L'incappucciato con la cera nera** | qualcuno ha portato a Zeth «i componenti perfetti» (Scena 5) | Vatore fra le tende (Scena 9), e Zeth il Murato in ARC-09 |
+| **Un generale in più** | Zog'tar catturato o umiliato, ma vivo (Scena 8) | un nome nelle cronache dell'assedio antico, e un generale in più nei canti della Mano Rossa (ARC-08) |
+| **Le monete di re non ancora nati** | quello che i PG spendono e vendono alla fucina | monete e reliquie murate nella fortezza, ritrovate nel 1372 (ARC-08) |
+| **I nomi dei caduti** | il dado dei caduti per le cure comprate alla cappella (Scena 10) | i nomi, nel pannello in più della Sala degli affreschi (ARC-08) |
+| **La frase dell'ascia** | la prima frase di Aegis Fang, detta dal giocatore (Scena 12) | a Hammerfist qualcuno la ripeterà storta (ARC-08) |
+| **Il piccone d'adamantio** | gli scavatori di Zeth ne hanno uno, e non lo vendono | lo scambiano solo con qualcosa che serva alle gallerie (Scena 5) |
 
 ## Che cosa dice la gente della fortezza
 

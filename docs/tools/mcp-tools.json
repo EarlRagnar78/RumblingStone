@@ -3743,6 +3743,31 @@
       "deterministic": true
     },
     {
+      "name": "cricchetto_prosa",
+      "description": "«Questa PR ha peggiorato la prosa che tocca?»\n\nSui file di gioco cambiati da una revisione (prosa pura sempre, file misti solo se ricevono un box) nessuna norma MQM ha più difetti di prima; esce 1 altrimenti (ADR-0146).",
+      "use_case": "«Questa PR ha peggiorato la prosa che tocca?»",
+      "invocation": "python3 scripts/cricchetto_prosa.py --rispetto-a origin/main",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "rispetto-a": {
+            "type": "string",
+            "description": "La revisione di confronto."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "nessuna norma peggiorata",
+        "1": "almeno una norma peggiorata"
+      },
+      "deterministic": true
+    },
+    {
       "name": "decisioni_dm",
       "description": "«Che cosa sta aspettando da me, oggi? E come faccio a fidarmi che quell'elenco sia aggiornato?»\n\nLe decisioni aperte al DM: la fonte sono le tabelle marcate dentro i piani, l'aggregato di STATO-E-ORDINE §4 e' generato, e il drift fra le due cose e' rosso in CI.",
       "use_case": "«Che cosa sta aspettando da me, oggi? E come faccio a fidarmi che quell'elenco sia aggiornato?»",
@@ -5291,6 +5316,43 @@
         "0": "misura eseguita (o nessuna violazione con --check)",
         "1": "violazioni, solo con --check",
         "2": "errore d'uso, percorso inesistente"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "vincolo_skill",
+      "description": "«Gli agenti caricano davvero la skill di stile prima di scrivere?»\n\nL'hook PreToolUse di Claude Code che ferma la scrittura di prosa di gioco (handout, recap, introduzioni dei volumi, box read-aloud nei file misti) se la sessione non ha caricato rumblingstone-narrative-style, e ricorda prosa-documenti sui documenti. Registra ogni decisione in .claude/.uso-skill.jsonl (ADR-0146).",
+      "use_case": "«Gli agenti caricano davvero la skill di stile prima di scrivere?»",
+      "invocation": "python3 scripts/vincolo_skill.py --riepilogo",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "hook": {
+            "type": "boolean",
+            "description": "Evento PreToolUse su stdin; esce 2 per bloccare."
+          },
+          "riepilogo": {
+            "type": "boolean",
+            "description": "Quanti blocchi, passaggi e promemoria nel registro."
+          },
+          "classe": {
+            "type": "string",
+            "description": "La classe di ogni file (prosa, misto, documento)."
+          },
+          "cambiati": {
+            "type": "string",
+            "description": "I file di prosa o misti cambiati da una revisione."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        ".claude/.uso-skill.jsonl"
+      ],
+      "exit_codes": {
+        "0": "passa (con o senza promemoria)",
+        "2": "scrittura bloccata (--hook)"
       },
       "deterministic": true
     },

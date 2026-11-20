@@ -4684,7 +4684,7 @@ voci:
   - Altro equipaggiamento: cuoio borchiato, falchion, giavellotto
 tattica: Il sergente, guerriero 3 nel testo, ha i numeri dell'orco guerriero 4 del Bestiario, GS 3: 30 pf, CA 16, falchion +9 (2d4+6) `[CANONE — DM 2026-10-19, giro 4 n. 9]`.
 ```
-<!-- storico: fino al 2026-11-20 falchion +7 (2d4+3), For 14 del .pcg senza la razza dell'orco -->
+<!-- storico -->fino al 2026-11-20 falchion +7 (2d4+3), For 14 del .pcg senza la razza dell'orco<!-- /storico -->
 
 ```statblocco
 nome: Hobgoblin della pattuglia (8)

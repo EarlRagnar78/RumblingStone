@@ -6624,7 +6624,7 @@ Linguaggi: Comune, Orchesco
 Qualità speciali: sensibilità alla luce (abbagliato in piena luce solare o in *luce diurna*)  
 Altro equipaggiamento: cuoio borchiato, falchion, giavellotto  
 }}
-<!-- storico: fino al 2026-11-20 falchion +7 (2d4+3), For 14 del .pcg senza la razza dell'orco -->
+
 
 {{monster,frame
 ## Hobgoblin della pattuglia (8)

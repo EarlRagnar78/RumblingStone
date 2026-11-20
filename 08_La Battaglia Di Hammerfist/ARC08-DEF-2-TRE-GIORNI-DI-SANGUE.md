@@ -1954,7 +1954,7 @@ si tira stasera, in forma compatta. Se cambiano, cambiano lì.
 
 **A.8 · Hobgoblin della diversione** (×7: il sergente e sei) · `Bestiario/mostri/hobgoblin-sergente-cr5.md` (il sergente: CA 21, 37 pf, *spada lunga perfetta* +9, 1d8+4, +1 morale agli hobgoblin entro 3 m) e `Bestiario/mostri/hobgoblin-veterans-warrior6-cr5.md` (i sei: GS 5, CA 19, pf **43**, *spada lunga perfetta* +10/+5, 1d8+2) · combattono fino alla morte.
 
-**A.9 · Gli orchi inseguitori** (30, se arrivano) · `Bestiario/mostri/orco-berserk-barbaro2-cr2.md` · GS 2 · CA 15 · pf **23** · grande ascia +7 (1d12+6, ×3) · Ira 1/giorno: CA 13, pf 27, +9 (1d12+9). <!-- storico: fino al 2026-11-20 CA 13, pf 27, grande ascia +9 (1d12+9): i numeri in ira dell'export PCGen -->
+**A.9 · Gli orchi inseguitori** (30, se arrivano) · `Bestiario/mostri/orco-berserk-barbaro2-cr2.md` · GS 2 · CA 15 · pf **23** · grande ascia +7 (1d12+6, ×3) · Ira 1/giorno: CA 13, pf 27, +9 (1d12+9). <!-- storico -->fino al 2026-11-20 CA 13, pf 27, grande ascia +9 (1d12+9): i numeri in ira dell'export PCGen<!-- /storico -->
 
 **A.10 · Gli alleati, in una riga.** **Re Thorek**: CA 30, 196 pf, Riflessi **+8**, Tempra +17, martello +26/+21/+16/+11 (1d8+12, 19-20/×3); Presenza Regale (+3 a colpire e danni ai nani entro 18 m); Chiamata alle Armi 3/giorno (+5 a colpire e ai TS contro la paura entro 60 m, 5 round); *comando* 3/giorno dalla Corona. **La Madre Superiora**: CA 29, 142 pf; *guarigione* ×2, *muro di pietra*, *barriera di lame*, *terremoto*; Canto di Battaglia (+2 entro 18 m per 10 round). **Le Cantitrici** (×5): CA 20, 98 pf; Ispirare Coraggio +2; il Coro della Montagna con tre voci.
 

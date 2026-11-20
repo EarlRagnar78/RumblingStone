@@ -736,6 +736,24 @@ def estrai_sezioni(md: str, voci: "list[str]") -> str:
     return "\n".join(pezzi)
 
 
+def con_apertura(md: str, apertura: str) -> str:
+    """Il capitolo con la sua introduzione (chiave `apertura`, ADR-0122, S1).
+
+    Va in testa, prima del riquadro «Chi si incontra», come negli AP;
+    se il master comincia con il suo titolo `# `, va subito dopo il titolo.
+
+    >>> con_apertura("## §5\\ntesto", "Intro.")
+    'Intro.\\n\\n## §5\\ntesto'
+    >>> con_apertura("\\n# Il barile\\n\\n### Chi si incontra", "Intro.")
+    '\\n# Il barile\\n\\nIntro.\\n\\n### Chi si incontra'
+    """
+    apertura = apertura.strip()
+    m = re.match(r"\s*# [^\n]*\n", md)
+    if m:
+        return md[:m.end()] + "\n" + apertura + "\n\n" + md[m.end():].lstrip("\n")
+    return apertura + "\n\n" + md
+
+
 def leggi_per_la_stampa(f: "Path", capitoli: "dict[Path, str]",
                         sezioni: "list[str] | None" = None) -> str:
     """Il sorgente di un capitolo con i rimandi già tradotti per questo volume.

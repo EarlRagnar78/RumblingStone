@@ -55,7 +55,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from dmcore import chi_si_incontra  # noqa: E402
 from dmcore.testo import (  # noqa: E402
-    capitoli_del_volume, fondi_contratto_e_scheda, leggi_per_la_stampa, piega_ascii, sigle_d_appendice, slug, togli_storico, traduci_rimandi,
+    capitoli_del_volume, con_apertura, fondi_contratto_e_scheda, leggi_per_la_stampa, piega_ascii, sigle_d_appendice, slug, togli_storico, traduci_rimandi,
 )
 from dmcore.schede import Scheda, SchedaError, leggi_schede  # noqa: E402
 from dmcore import carte_tavolo  # noqa: E402
@@ -1304,10 +1304,6 @@ def sorgente(man: dict, base: Path, tutti: bool, carta: str = "avorio",
             etichettati.add(f.name)
             parti.append(f"#metadata(\"capitolo\") <{RIMANDI[f.name]}>")
         md = leggi_per_la_stampa(f, nel_volume, cap.get("sezioni"))
-        # `"apertura"` (ADR-0122, S1): l'introduzione del capitolo, scritta a
-        # parte perché il master letto per `sezioni` non ne ha una
-        if cap.get("apertura"):
-            md = (base / cap["apertura"]).read_text(encoding="utf-8").strip() + "\n\n" + md
         # la regia e la cassetta nominano tutti, ma lì non si incontra nessuno
         if indice is not None and not chi_si_incontra.CONSULTAZIONE.search(titolo):
             if volume is not None:
@@ -1318,6 +1314,11 @@ def sorgente(man: dict, base: Path, tutti: bool, carta: str = "avorio",
             md = traduci_rimandi(md, f, nel_volume)
             for riga in fatto:
                 print(f"  · {titolo[:40]}: {riga}", file=sys.stderr)
+        # `"apertura"` (ADR-0122, S1): l'introduzione del capitolo, scritta a
+        # parte perché il master letto per `sezioni` non ne ha una. Dopo il
+        # riquadro «Chi si incontra», così gli sta davanti
+        if cap.get("apertura"):
+            md = con_apertura(md, (base / cap["apertura"]).read_text(encoding="utf-8"))
         if cap.get("sezioni"):
             md = fondi_contratto_e_scheda(md)
         if volume is not None:

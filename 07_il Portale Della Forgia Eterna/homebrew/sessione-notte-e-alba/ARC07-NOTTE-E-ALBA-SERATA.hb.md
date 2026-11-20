@@ -1249,6 +1249,12 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # ARC-07 · Il barile sulla tenda di Zog'tar
 
+Questa è la scena che il tavolo ha costruito. Invisibili e in volo a 48 m sopra lo spiazzo del capo, i PG lasciano cadere sulla tenda di Zog'tar una botte d'olio con i sassi sul fondo, i rostri dei fabbri nanici sotto e le fiale della fenice legate con le corde; in mano tengono due barilotti da 10 litri. Dentro, Zog'tar racconta alle guardie come impalerà il re, Balvar incide e il sacerdote dorme. Fuori Grask tiene il corno, e il campo intorno dorme finché non brucia.
+
+Si entra dalla variante «il barile sulla tenda» della Scena 6 (capitolo VII), con le tacche che la notte ha lasciato. Le mappe sono M7-C, lo spiazzo con la tenda, e M7-H, il campo attorno. La scheda da tavolo dà i dieci passi nell'ordine in cui si tirano, ognuno con la sua regola dell'SRD o con la variazione scelta dal DM; il resto del capitolo li spiega. Una cosa va detta al tavolo prima di tirare: il barile non uccide Zog'tar. Gli toglie un quinto dei punti ferita, la tenda, la mappa dell'assalto e, una volta su tre, il sacerdote.
+
+Il capitolo finisce quando i PG lasciano il cielo sopra la tenda: la tenda in fiamme o crollata, il corno suonato o no, chi è uscito dal fuoco e chi no. Poi il ritorno (capitolo VII) e che cosa cambia per le mura all'alba (capitolo XIII). Servono a portata il foglio delle tacche e le due mappe.
+
 > **Che cos'è.** Il supplemento alle Scene 7 e 8 di cap. VII
 > per quello che il tavolo ha fatto davvero: invece di entrare nella tenda del
 > comando, i PG ci hanno lasciato cadere sopra, da 48 m e invisibili, una botte
@@ -2060,6 +2066,12 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # Il Seme-Mercato — l'ora della pergamena
 
+Il Seme-Mercato è la gemma che si è staccata da sola dalla parete e si è conficcata nel pavimento come una punta di trapano. Artemis l'ha raccolta senza toccarla a pelle nuda e l'ha fatta mettere nello zaino di Tordek, dove sta dal 31 luglio. Dentro c'è un contratto: firma il primo che la tocca a pelle nuda, e l'altro capo del filo è di un creditore, il mercante Varis. A ≈372 DR il creditore non c'è ancora, e la voce tace.
+
+Si gioca al ritorno, se la notte lo concede: costa una tacca, si fa solo se ne restano prima dell'ottava, e se no si rinvia al 1372. Prima di cominciare il DM sceglie il tono dell'Anello di Artemis, A o B; i Bracieri, se Tordek li interroga, rispondono con una frase sola e mai sul Seme. Serve la pergamena di *identificare* del forziere del re. Brynja non vuole la gemma sull'incudine della cappella; Kettra la lascia fare nella bottega.
+
+Finisce con il contratto letto a voce in due tempi, con la pausa dopo la clausola 4, e con il foglio ✉ consegnato ad Artemis. Poi il gruppo decide: estirparlo, tenerlo com'è, darlo a qualcuno o firmarlo. La scelta va nel registro di fine serata.
+
 > **Cos'è.** La scena del Seme come la scrive «Il Piano della Terra & Terros l'Antico» §6-bis, copiata
 > qui perché stasera è la prima cosa che il tavolo chiede. La fonte resta il
 > master.
@@ -2365,6 +2377,12 @@ anni prima di lui, e per un mercante non c'è niente di più interessante.
 ##### ⚠ SOLO DM
 Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 }}
+
+Il barile è caduto, e la notte non è finita. Il master scrive la notte intera, dalla postierla alla tenda del comando e ritorno; stasera se ne gioca la coda. Si torna in volo finché bastano pozioni e pergamene, poi a piedi o portati da Artemis. Fra le tende, fermo a guardare il fuoco con un fagotto stretto al petto, c'è Vatore, il ladro che diventerà Sal: ha paura di quattro persone che non dovrebbero esistere, e l'Anello di Artemis lo sente prima di chiunque. Zog'tar, se è vivo, ha appena imparato che i nani volano.
+
+Si entra da dove il capitolo V ha lasciato i PG, con il foglio delle tacche in vista: ogni cosa ne costa, e il ritorno ne costa una. Se il corno ha suonato vale «Se il corno suona di notte». Le Scene 7 e 8, la tenda e Zog'tar, si giocano solo se scendono a finire il lavoro, con la tenda in fiamme o crollata e il campo sveglio; Balvar, se è vivo, non tratta più da solo. Se tornano in volo senza scendere, Vatore lo trovano sulle mura all'alba.
+
+Il capitolo finisce quando escono dal campo: si contano le tacche e si legge la tabella d'uscita, sei o meno in tempo, sette di corsa, otto o più e l'alba li coglie fuori. Servono a portata il foglio delle tacche, la mappa M7-C e la scheda di Vatore.
 
 ## §4 — ATTO II · LA NOTTE
 
@@ -3921,7 +3939,6 @@ Si arriva qui dove le tacche della notte hanno lasciato i PG (§4), e quello che
 
 Il fallimento è un costo, mai uno stop. Il capitolo finisce in tre modi: mura tenute saldamente, a stento, o breccia ceduta; comunque vada, poi il drago cala sul cortile (capitolo X). Prima di cominciare servono a portata il registro dei caduti e la mappa M7-B.
 
-
 ## §5 — ATTO III · L'ALBA
 
 > **Il percorso dell'atto.** Dal primo ariete al ritorno. Le mura, il drago che
@@ -4167,7 +4184,6 @@ Skullcrusher il Nero cala sul cortile interno con due wyvern e combatte in passa
 Il drago non cerca i PG per nome. Cala sul suo obiettivo, il re o la porta, e i PG diventano bersaglio quando gli stanno in mezzo, quando portano una corona, o quando dicono la Catena ad alta voce. Se gli arieti sono stati sabotati, il duello comincia fuori dalle mura, sulla spianata; se i PG sono altrove, la tabella «Dove sono i PG all'alba» dice dove cala e come combatte.
 
 Il capitolo dà il duello in tre scambi, la scena intera e le contingenze: se due PG cadono nello stesso round, o il gruppo si ritira, intervengono gli avi, e il duello è vinto sporco. Finisce con il drago ucciso, ferito grave, fuggito, o vinto sporco, e ogni ferita va nella tabella B4. Con l'esito la serata si ferma, prima della Scena 12: il Rubino e il torque del re sono della serata dopo.
-
 
 <!-- pagina: una-colonna -->
 ### C.3 · Il duello in tre scambi (Scena 11)
@@ -4718,6 +4734,10 @@ morto e il drago fugge a **metà** pf, l'esito è **FERITO GRAVE**.
 Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 }}
 
+Il capitolo si apre a serata finita, con il registro in mano. Il §7 è l'Echo Ledger: ogni riga è una cosa fatta stanotte, l'eco che lascia e l'arco in cui riemerge. Quasi tutte tornano in ARC-08, a Hammerfist e contro Fauci di Palude; Vatore, il Seme del Ghostlord e il Sigillo di Ossidiana tornano in ARC-09.
+
+Il budget dei PX dice quanto vale ogni scena del beat, al conto della tabella della DMG, e quanti ne contano davvero per i quattro. Thorik, Tordek e Artemis hanno già i PX del 14° livello e restano fermi a 104.999; Hella il 14° lo prende in questa notte. Per tutti e quattro il livello si prende al primo riposo dopo la battaglia.
+
 <!-- pagina: una-colonna -->
 ## §7 — ECHO LEDGER (le conseguenze che attraversano gli archi)
 
@@ -4880,6 +4900,10 @@ Indipendente dall'esito (si somma), riflette P5-DEF-P2 r.294:
 ##### ⚠ SOLO DM
 Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 }}
+
+Due pezzi del supplemento del barile, da leggere dopo la serata. Il §10 dice che cosa cambia per la storia: Balvar, vivo e attaccato o morto nel fuoco, con la lastra che porta il nome di Hald; il corno e il drago; le mura dell'alba; le sentinelle che vedono la tenda bruciare; un nemico che impara, perché da questa notte Zog'tar sa che i nani volano.
+
+Il §13 propone una procedura in cinque passi per la prossima trovata dei giocatori, perché il DM non debba improvvisare, e i PE per l'ingegno. Le voci del §10 si scrivono nell'Echo Ledger del capitolo XI, alla riga «la notte del barile».
 
 ## 10. Che cosa cambia per la storia
 

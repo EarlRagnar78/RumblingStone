@@ -1,0 +1,3 @@
+Il capitolo si apre a serata finita, con il registro in mano. Il §7 è l'Echo Ledger: ogni riga è una cosa fatta stanotte, l'eco che lascia e l'arco in cui riemerge. Quasi tutte tornano in ARC-08, a Hammerfist e contro Fauci di Palude; Vatore, il Seme del Ghostlord e il Sigillo di Ossidiana tornano in ARC-09.
+
+Il budget dei PX dice quanto vale ogni scena del beat, al conto della tabella della DMG, e quanti ne contano davvero per i quattro. Thorik, Tordek e Artemis hanno già i PX del 14° livello e restano fermi a 104.999; Hella il 14° lo prende in questa notte. Per tutti e quattro il livello si prende al primo riposo dopo la battaglia.

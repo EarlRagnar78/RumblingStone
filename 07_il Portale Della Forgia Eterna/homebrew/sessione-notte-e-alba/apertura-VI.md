@@ -1,0 +1,5 @@
+Il Seme-Mercato è la gemma che si è staccata da sola dalla parete e si è conficcata nel pavimento come una punta di trapano. Artemis l'ha raccolta senza toccarla a pelle nuda e l'ha fatta mettere nello zaino di Tordek, dove sta dal 31 luglio. Dentro c'è un contratto: firma il primo che la tocca a pelle nuda, e l'altro capo del filo è di un creditore, il mercante Varis. A ≈372 DR il creditore non c'è ancora, e la voce tace.
+
+Si gioca al ritorno, se la notte lo concede: costa una tacca, si fa solo se ne restano prima dell'ottava, e se no si rinvia al 1372. Prima di cominciare il DM sceglie il tono dell'Anello di Artemis, A o B; i Bracieri, se Tordek li interroga, rispondono con una frase sola e mai sul Seme. Serve la pergamena di *identificare* del forziere del re. Brynja non vuole la gemma sull'incudine della cappella; Kettra la lascia fare nella bottega.
+
+Finisce con il contratto letto a voce in due tempi, con la pausa dopo la clausola 4, e con il foglio ✉ consegnato ad Artemis. Poi il gruppo decide: estirparlo, tenerlo com'è, darlo a qualcuno o firmarlo. La scelta va nel registro di fine serata.

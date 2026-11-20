@@ -144,13 +144,19 @@ class TestNoteDiLavoro(unittest.TestCase):
         self.assertEqual(len(trovate), 2)
 
     def test_l_apparato_non_si_conta(self):
-        """Le proposte INFERRED dell'appendice stanno nel blocco apparato, che
-        l'esportatore non stampa (ADR-0069): la misura non le conta."""
-        app = ROOT / "07_il Portale Della Forgia Eterna/homebrew/sessione-notte-e-alba/98-APPENDICE-TERRE-DI-HAMMERFIST.md"
-        self.assertIn("[INFERRED", app.read_text(encoding="utf-8"))
-        mp = next(m for m in mst.manifesti_dm() if m.name == "ARC07-NOTTE-E-ALBA-SERATA.manifest.json")
-        note = mst.misura_booklet(mp, mst.persone_con_nome())["note_di_lavoro"]
-        self.assertEqual([n for n in note if n["capitolo"].startswith("Appendice")], [])
+        """Le proposte INFERRED stanno nel blocco apparato, che l'esportatore
+        non stampa (ADR-0069): la misura non le conta. Il blocco è finto
+        perché l'appendice vera, risolte le proposte, non ne ha più."""
+        md = ("Testo stampato.\n\n<!-- apparato -->\n"
+              "> Stima: nani 99% `[INFERRED — Quali percentuali? base: il master]`\n"
+              "<!-- /apparato -->\n\nAncora testo.\n")
+        self.assertTrue(mst.NOTA_DI_LAVORO.search(md))
+        with TemporaryDirectory() as d:
+            (Path(d) / "app.md").write_text("# Appendice\n\n" + md, encoding="utf-8")
+            mp = Path(d) / "prova.manifest.json"
+            mp.write_text(json.dumps({"chapters": [{"file": "app.md", "title": "Appendice", "tag": "dm"}]}),
+                          encoding="utf-8")
+            self.assertEqual(mst.misura_booklet(mp, set())["note_di_lavoro"], [])
 
     def test_il_cricchetto_dei_volumi(self):
         nomi = mst.persone_con_nome()

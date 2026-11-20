@@ -11,7 +11,7 @@ Stanotte la strada dei tornanti non la sale nessuno. Sotto il gradone la piana �
 >
 > **Le proposte del 2026-11-20, decise dal DM sulla card** (Jfs, 14:43): entrano in stampa i difensori (800 + 200), i nani dello scudo, l'allineamento legale buono e il pendio come nel 1372; restano fuori gli abitanti (circa duemila) e i valichi a nord con l'orda da sud.
 >
-> **Proposta in attesa del DM: le percentuali per razza**, come nei blocchi delle località del *Forgotten Realms Campaign Setting* (Jfs, 14:43: «magari percentuali»). Stima: nani dello scudo 99%, altri 1% (fra cui il mezz'elfo Zeth) `[INFERRED — Quali percentuali per razza? È una stima, non un conto; base: Zeth è l'unico non nano del master, e i mille difensori sono tutti nani]`
+> Le percentuali per razza, sul modello del *Forgotten Realms Campaign Setting*, sono una stima che il DM ha approvato sulla card del 20/11.
 >
 > **Domande aperte per il DM** (il dato non c'è e manca una base per proporlo, quindi l'appendice non lo scrive): come si chiama la valle? Che cosa si estrae dalla miniera da cui è nata la fortezza? In che stagione cade la notte dell'assedio, e che tempo fa? Con quali fortezze o città commercia Hammerfist, e per quali strade? Da quali fortezze veniva Balvar?
 <!-- /apparato -->
@@ -26,7 +26,7 @@ Hammerfist come la trova chi arriva stanotte, in una tabella sola.
 | **Chi la governa** | Re Thorek I, Guerriero 16, 182 anni, con l'ascia Frostcleaver, e il suo consiglio di guerra |
 | **Da dove nasce** | da una miniera: le stanze dove dormono i PG erano gli alloggi dei minatori, prima che la miniera diventasse fortezza `[CANONE — DM 2026-10-07, Q2]` |
 | **Chi la difende** | mille difensori: gli ottocento nani in armi del re e i duecento vecchi e ragazzi che Gunnvor deve ancora armare `[CANONE — DM 2026-11-20, card]`. Una cinquantina di chierici di Moradin, e un diamante solo in tutta la fortezza |
-| **Chi ci vive** | nani dello scudo, quasi tutti `[CANONE — DM 2026-11-20, card]` |
+| **Chi ci vive** | nani dello scudo 99%, altri 1% (fra cui il mezz'elfo Zeth) `[CANONE — DM 2026-11-20, card]` |
 | **Allineamento** | legale buono `[CANONE — DM 2026-11-20, card]` |
 | **Lingue** | nanico (la targa è in nanico); nel campo dell'orda comune e goblin |
 | **Chi la assedia** | circa diecimila tra orchi e goblinoidi agli ordini del generale Zog'tar Deatheye, in una quindicina di clan, con il drago nero Skullcrusher legato all'orda da un contratto |

@@ -5411,7 +5411,7 @@ Hammerfist come la trova chi arriva stanotte, in una tabella sola.
 | **Chi la governa** | Re Thorek I, Guerriero 16, 182 anni, con l'ascia Frostcleaver, e il suo consiglio di guerra |
 | **Da dove nasce** | da una miniera: le stanze dove dormono i PG erano gli alloggi dei minatori, prima che la miniera diventasse fortezza |
 | **Chi la difende** | mille difensori: gli ottocento nani in armi del re e i duecento vecchi e ragazzi che Gunnvor deve ancora armare. Una cinquantina di chierici di Moradin, e un diamante solo in tutta la fortezza |
-| **Chi ci vive** | nani dello scudo, quasi tutti |
+| **Chi ci vive** | nani dello scudo 99%, altri 1% (fra cui il mezz'elfo Zeth) |
 | **Allineamento** | legale buono |
 | **Lingue** | nanico (la targa è in nanico); nel campo dell'orda comune e goblin |
 | **Chi la assedia** | circa diecimila tra orchi e goblinoidi agli ordini del generale Zog'tar Deatheye, in una quindicina di clan, con il drago nero Skullcrusher legato all'orda da un contratto |

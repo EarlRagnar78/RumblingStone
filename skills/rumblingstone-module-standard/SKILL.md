@@ -308,7 +308,7 @@ incontri e prove, misteri).
 11. **Conseguenze**: pannelli/echi nel mondo ("La Forgia Ricorda" o
     equivalente) + **Echo Ledger** del beat (evento → eco → quando riemerge
     → file che lo gestisce).
-12. **Avanzamento** (ADR-0146): in testa al capitolo la nota generica del
+12. **Avanzamento** (ADR-0147): in testa al capitolo la nota generica del
     livello degli **eroi**, in fondo i PX con tutte le quest e senza le
     facoltative, come l'«Advancement Track» Paizo; mai i nomi dei PG del
     tavolo. La storia di una regione va a epoche datate, come il FRCS. Poi il

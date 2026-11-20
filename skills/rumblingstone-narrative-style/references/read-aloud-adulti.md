@@ -220,7 +220,7 @@ dell'apertura a freddo. Le emozioni si fanno nascere, non si nominano (§3).
    di fila non usano la stessa emozione. 8-12 righe, un solo nome nuovo (§2).
 
 Diverge dagli editori: Paizo non ha box nelle parti, *Red Hand of Doom* uno
-solo. Lo standard è l'ADR-0146, scelto dal DM alla cieca (ADR-0093).
+solo. Lo standard è l'ADR-0147, scelto dal DM alla cieca (ADR-0093).
 Misura, a indicatori: `python3 scripts/misura_craft.py --apertura FILE…`.
 
 ## 3. Cosa premia questo pubblico

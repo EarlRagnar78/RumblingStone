@@ -1,4 +1,4 @@
-# ADR-0146 — L'introduzione del capitolo promette e non conta
+# ADR-0147 — L'introduzione del capitolo promette e non conta
 
 **Stato**: proposta (2026-11-20), scelta dal DM alla cieca
 **Data**: 2026-11-20

@@ -161,6 +161,7 @@ scelta del DM sulla card del 15/11. È il drago dei Githyanki liberi di Vaereth
 (`...P2B-Torneo-MAPPE-COMPLETO-2.md` r.213, «drago rosso e 8 cavalieri»), non
 uno dei cinque draghi della Mano Rossa. Non ha nome nelle fonti. I numeri sono
 quelli della tabella; i talenti sono una scelta di questa revisione.
+Incantesimi conosciuti e oggetti sono la scelta del DM sulla card del 21/11.
 
 ```statblocco
 gs: 15
@@ -168,11 +169,11 @@ tipo: Huge dragon (fire), 22 HD, CM
 taglia: Enorme
 spazio: 4,5 m
 portata: 3 m (4,5 m con il morso)
-ca: 29
-ca-dettaglio: (−2 taglia, +21 naturale); contatto 8, colto alla sprovvista 29
+ca: 31
+ca-dettaglio: (−2 taglia, +21 naturale, +2 deviazione); contatto 10, colto alla sprovvista 31
 pf: 253
 pf-dado: 22d12+110
-ts: Temp +18, Rifl +13, Vol +17
+ts: Temp +20, Rifl +15, Vol +19
 attributi: For 33 Des 10 Cos 21 Int 16 Sag 19 Car 16
 velocita: 12 m, volare 45 m (scarsa)
 iniziativa: +4
@@ -184,30 +185,65 @@ voci:
   - Talenti: Multiattacco, Attacco in Volo, Fluttuare, Virare, Iniziativa Migliorata, Attacco Poderoso, Ghermire, Incalzare
   - RI 21; RD 5/magia; immune al fuoco, al sonno e alla paralisi; vulnerabile al freddo
   - Localizzare oggetti 6 al giorno
-  - Incantesimi da stregone di 7° livello, al giorno 6/7/7/5; anche da chierico e dei domini Caos, Male e Fuoco come arcani
-fonte: drago rosso adulto dell'SRD 3.5, tabelle del rosso (d20srd); talenti scelti in questa revisione
+  - Incantesimi da stregone di 7° livello, al giorno 6/7/7/5, CD 13 + livello dell'incantesimo; anche da chierico e dei domini Caos, Male e Fuoco come arcani
+  - Incantesimi conosciuti: 3° velocità, dissolvi magie; 2° resistere all'energia, immagine speculare, vedere invisibilità; 1° armatura magica, dardo incantato, favore divino, raggio di indebolimento, scudo; 0 guida, individuazione del magico, lettura del magico, mano magica, messaggio, prestidigitazione, suono fantasma
+  - Oggetti: anello di protezione +2, mantello della resistenza +2, pozione di cura ferite gravi
+fonte: drago rosso adulto dell'SRD 3.5, tabelle del rosso (d20srd); talenti scelti in questa revisione; incantesimi conosciuti e oggetti dal suo tesoro scelti dal DM (card del 21/11)
 ```
 
 - **Sensi**: percezione cieca 18 m, scurovisione 36 m, visione crepuscolare, sensi acuti.
-- **Incantesimi conosciuti**: la fonte non li elenca; 7 trucchetti, 5 di 1°, 3 di 2°, 2 di 3° a scelta del DM. La tattica qui sotto non ne usa nessuno.
+- **Incantesimi conosciuti** `[CANONE — DM 2026-11-21, card]`. Livello dell'incantatore 7°, CD 13 + livello dell'incantesimo (Car 16): 13 per i trucchetti, 14 al 1°, 15 al 2°, 16 al 3°. Lancia da stregone e, come arcani, anche gli incantesimi da chierico e dei domini Caos, Male e Fuoco (SRD). Lo stregone di 7° conosce 7 trucchetti, 5 incantesimi di 1°, 3 di 2° e 2 di 3°; i bonus di Carisma aggiungono incantesimi al giorno, non conosciuti.
+  - 3°: *velocità* (fino a 7 creature, entro 12 m e a non più di 9 m l'una dall'altra; 7 round; +1 a colpire, +1 di schivare alla CA e ai Riflessi, +9 m a ogni velocità, un attacco in più nell'attacco completo), *dissolvi magie* (prova di dissolvere 1d20+7).
+  - 2°: *resistere all'energia* (resistenza 20 al 7° livello; 70 minuti), *immagine speculare* (1d4+2 immagini; 7 minuti), *vedere invisibilità* (70 minuti).
+  - 1°: *armatura magica* (+4 di armatura; 7 ore), *dardo incantato* (4 dardi, 4d4+4, nessun TS), *favore divino* (incantesimo da chierico lanciato come arcano: +2 di fortuna a colpire e ai danni delle armi, naturali comprese; 1 minuto), *raggio di indebolimento* (raggio, tocco a distanza +20, 12 m; −1d6+3 alla Forza per 7 minuti, nessun TS, la RI vale; SRD, *Ray of Enfeeblement*) `[CANONE — DM 2026-11-21, card]`, *scudo* (+4 di scudo, para i dardi incantati; 7 minuti).
+  - 0: *guida* (incantesimo da chierico lanciato come arcano), *individuazione del magico*, *lettura del magico*, *mano magica*, *messaggio*, *prestidigitazione*, *suono fantasma*. Sono i trucchetti di chi conta un tesoro e comanda dei cavalieri da lontano; l'incantesimo resistenza manca apposta, perché il suo bonus non si somma con quello del mantello.
+- **Freddo, resistenza e vulnerabilità.** L'SRD dice che la vulnerabilità aggiunge metà dei danni (+50%), anche se il TS riesce, e che la resistenza toglie i primi punti di ogni attacco, ma non dice in che ordine si applicano. Qui si applica prima la vulnerabilità e poi si tolgono i 20 punti: 30 danni da freddo diventano 45, e ne passano 25. La resistenza non annulla la vulnerabilità: la attenua. `[CANONE — DM 2026-11-21, card]`
+- **Difese con gli incantesimi**: con *armatura magica* e *scudo* la CA è 39 (−2 taglia, +21 naturale, +2 deviazione, +4 armatura, +4 scudo), contatto 10, colto alla sprovvista 39; con *velocità* 40, contatto 11, e Riflessi +16.
+- **Equipaggiamento** `[CANONE — DM 2026-11-21, card]`: anello di protezione +2 (8.000 mo), mantello della resistenza +2 (4.000 mo), pozione di *cura ferite gravi* (750 mo). In tutto 12.750 mo, il 19% del suo tesoro: il rosso adulto ha tesoro triplo (SRD, «Treasure: Triple standard»), e a GS 15 il tesoro standard vale 22.000 mo (Guida del DM 3.5, «Treasure Values per Encounter»), quindi 66.000 mo. Il resto del tesoro è lontano, oltre i piani, e nell'arena non si trova.
 
 **Carattere e tattiche** `[CANONE — DM 2026-11-15]`. È un alleato dei Githyanki per un
 patto antico, non uno schiavo: li porta, non muore per loro. È il solo drago
 della campagna che **non sa niente dei PG**: arriva da fuori, e combatte su
 quello che vede nell'arena. **Obiettivo:** l'Orbe per i Githyanki, e tornare a casa.
+- **Prima dell'arena** `[CANONE — DM 2026-11-21, card]`. Ore prima lancia
+  *armatura magica*. Nell'ultima ora, fuori vista, *resistere all'energia* sul
+  freddo e *vedere invisibilità*: sono le precauzioni di un drago che va in
+  battaglia, non sa chi troverà. Negli ultimi round prima di entrare lancia
+  *scudo* e *immagine speculare*, che durano tutto lo scontro, e per ultima
+  *velocità* su di sé e su sei cavalieri, finché gli stanno ancora in groppa.
+  Entra con CA 40, 1d4+2 immagini e volare 54 m. *Velocità* dura 7 round:
+  lanciata nel round prima di entrare, vale per quel round e per i round 1-6.
+  Fino alla fine del round 6 ha CA 40, contatto 11, Riflessi +16, volare 54 m
+  e l'attacco in più; dal round 7 CA 39, contatto 10, Riflessi +15 e volare
+  45 m. *Scudo* e *immagine speculare* durano 7 minuti e restano.
 - **Non atterra al centro.** Passa basso sull'arena e lascia i cavalieri (le
   mappe li fanno arrivare da nord e da est), poi risale. Atterrare in mezzo a
   un'arena piena di combattenti è il contrario di quello che fa un drago.
+  I cavalieri scendono già accelerati: è l'ultima cosa che fa per loro
+  `[CANONE — DM 2026-11-21, card]`.
 - Round 1: soffio a cono sul gruppo più fitto di chi difende l'arena; la presenza
   terrificante scatta col primo attacco.
 - Poi impara: chi lo ferisce di più diventa il bersaglio dei morsi in passata.
   Chi vola gli è più vicino, e lo vede subito. Ghermisce solo chi è da solo.
+  `[CANONE — DM 2026-11-21, card]` Prima della prima passata con i morsi lancia
+  *favore divino*. A chi vola dissolve il volo con *dissolvi magie* mirato.
+  Se gli tolgono *scudo* o le immagini, li rilancia quando scende. Contro
+  l'incantatore che resta fuori portata dei morsi usa *dardo incantato*.
 - Se il soffio morde poco (chi è protetto dal fuoco), smette di soffiare su quel
   gruppo e passa ai morsi in passata.
 - Fugge a un terzo dei pf (84): il patto non vale la pelle. Se Vaereth cade, porta
-  via i cavalieri che riesce a raccogliere.
+  via i cavalieri che riesce a raccogliere. `[CANONE — DM 2026-11-21, card]` In
+  fuga, fuori portata, beve la pozione di *cura ferite gravi* (3d8+5, LI 5): serve a
+  tornare a casa, non a restare.
+- *Raggio di indebolimento* `[CANONE — DM 2026-11-21, card]`: prima di ghermire
+  chi è da solo, o contro chi lo colpisce più forte in mischia, glielo lancia
+  in passata (tocco a distanza +20, 12 m, −1d6+3 alla Forza per 7 minuti,
+  nessun TS). Prende al posto di *ritirata rapida*, che non tocca il volo.
+
+Boost log: 2026-11-21, incantesimi e oggetti dall'SRD, GS 15 → 15. Gli incantesimi conosciuti che l'SRD dà al rosso adulto (stregone di 7°) prima non erano scelti; ora lo sono, e gli oggetti (12.750 mo) vengono dal suo tesoro triplo di 66.000 mo. Nessun DV, template o livello in più: il GS resta 15 (scelta del DM, card del 21/11).
 
 <!-- storico -->
+era (prima della card del 21/11): CA 29, contatto 8, colto alla sprovvista 29; TS Temp +18, Rifl +13, Vol +17; nessun oggetto; incantesimi conosciuti non scelti («7 trucchetti, 5 di 1°, 3 di 2°, 2 di 3° a scelta del DM. La tattica qui sotto non ne usa nessuno»).
 era (prima della card del 15/11): «Drago Rosso Adulto – CR 15 (Leader invasione)», 25d12+150 (312 pf), CA 31 (+23 naturale), manovrabilità media, morso +31 (2d8+13), coda (2d6+19), soffio 12d10 a cono di 18 m CD 26, For 37 Sag 17, «scent»; tattica: planata e soffio, poi mischia sui bersagli più pericolosi (caster o Tordek). I DV erano quelli del maturo, For e manovrabilità senza fonte, e il fiuto i draghi non lo hanno.
 <!-- /storico -->
 

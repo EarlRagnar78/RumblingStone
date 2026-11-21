@@ -117,7 +117,7 @@ Defensive casting: DC 15 + spell level
 - **Slow**: negate haste; −1 attack; −1 AC dodge; −1 Ref; half speed; 1 round/level
 
 ### 4th Level
-- **Confusion**: 1 creature/level; confused condition; Will negates
+- **Confusion**: all creatures in a 15-ft.-radius burst; confused condition; Will negates; 1 round/level
 - **Dimension Door**: teleport self (+carried) up to long range; no error
 - **Enervation**: 1d4 negative levels; ranged touch; no save; SR Yes
 - **Greater Invisibility**: invisible even while attacking; 1 round/level
@@ -125,7 +125,7 @@ Defensive casting: DC 15 + spell level
 
 ### 5th Level
 - **Cone of Cold**: 60-ft cone; 1d6/level cold (max 15d6); Ref half
-- **Dominate Person**: humanoid fully controlled; Will negates; permanent until dispelled
+- **Dominate Person**: humanoid fully controlled; Will negates; 1 day/level; casting time 1 round; new save when forced against its nature
 - **Hold Monster**: as Hold Person but any creature
 - **Teleport**: teleport up to 100 miles/level; possible error table
 - **Wall of Force**: invisible wall; impervious to most attacks; cannot be dispelled

@@ -66,12 +66,20 @@ assume all'ingresso (`09_.../TESORO-WBL-AUDIT.md` §1.2).
 | **Bottino dell'avanguardia** | Campo della Mano Rossa dopo la rotta | Equipaggiamento recuperabile dai caduti (armi/armature di massa, poco liquidabile ma vendibile in blocco) | **~20.000** |
 | **Equipaggiamento dei comandanti** | Corpi/resa di Grimjaw, Gorthak, Cavaliere Hobgoblin (se uccisi) | Oggetti magici dai comandanti nemici: *Anello di Protezione +1*, lancia/spada +1, armatura completa +1 (dal Cavaliere Hobgoblin, `ARC08-02` §1) — condizionale a chi cade | **~15.000** `[condizionale ai rami]` |
 | **Plot item — runa dei Custodi Eterni** | Cerimonia (Atto 3) | Simbolo fisico, **non** oggetto commerciabile → **0 mo** (valore narrativo; quantificazione meccanica in C2, non ancora scritta) | **0 (plot)** |
-| **Tesoro di Fauci di Palude** | Solo se il drago è **ucciso** (ramo D10) e il covo raggiunto | Hoard draconico parziale, solo nel ramo «ucciso»: la maggior parte del hoard è futura (l'uovo/nemesi ARC-10 se fugge) | **~30.000** solo nel ramo "ucciso" |
+| **Tesoro di Fauci di Palude** | Solo se il drago è **ucciso** (ramo D10): addosso subito, il covo solo se lo raggiungono | Tesoro triplo a GS 15, 66.000 mo: 22.000 di tesoro standard (Guida del DM 3.5, «Treasure Values per Encounter»), per tre come dice l'SRD `[CANONE — DM 2026-11-21, card]`. Addosso 31.200 (`ARC08-02` §1, «Equipaggiamento»): *anello di protezione +2*, *amuleto dell'armatura naturale +2* e *mantello della resistenza +3*, 25.000 in tutto; due pergamene di *nebbia acida*, due di *invisibilità superiore* e due pozioni di *cura ferite gravi*, 6.200, che contano solo se non le ha usate. Nel covo il resto, 34.800. Se fugge, non lascia niente (l'uovo/nemesi ARC-10) | **25.000-31.200** addosso, **+34.800** col covo: solo nel ramo «ucciso» |
 
 **Totale base (rami default, Fauci fugge)**: ~195.000 mo eq. per il
 party → ~49k/PG. Sommato all'ingresso ipotizzato (~60-80k/PG) →
 **~110-130k/PG**, dentro il corridoio del 13° WBL (±20%). Se il party
 entrava già alto, il DM taglia la parte in monete (§2).
+
+**Ramo «Fauci ucciso»** (conto del 2026-11-21): 195.000 + 25.000-31.200
+addosso = 220.000-226.200 mo, ~55-57k/PG; col covo 254.800-261.000 mo,
+~64-65k/PG. Sommato all'ingresso ipotizzato fa ~115-137k/PG senza covo e
+~124-145k/PG col covo: il tetto del corridoio (132k) si passa se il party
+entrava sopra i 75k/PG circa senza covo, o sopra i 67k/PG circa col covo, e
+allora il DM taglia la parte in monete (§2). Prima il ramo
+contava ~30.000 in tutto.
 
 ---
 

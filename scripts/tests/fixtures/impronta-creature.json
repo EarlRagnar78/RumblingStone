@@ -1035,7 +1035,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 5425,
+    "senza_note": 5598,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -5337,7 +5337,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 1559,
+    "senza_note": 1720,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/Duergar_figther_ponte/Duergar_mago_3liv_4cr.html",
@@ -5675,7 +5675,7 @@
      "Car": 8,
      "Cos": 18,
      "Des": 15,
-     "For": 21,
+     "For": 19,
      "Int": 10,
      "Sag": 12
     },
@@ -5688,7 +5688,7 @@
      "Car": 10,
      "Cos": 18,
      "Des": 14,
-     "For": 20,
+     "For": 18,
      "Int": 8,
      "Sag": 10
     },
@@ -5700,7 +5700,7 @@
      "Des 14 **letta da ca-dettaglio** — il vincolo batte l'array",
      "Des 14 **ricavata dall'iniziativa** — il vincolo batte l'array",
      "Cos 18 **ricavata da pf 105 su 10 DV** — il vincolo batte l'array",
-     "For 20 **ricavata da BAB e lotta** — il vincolo batte l'array"
+     "For 18 **ricavata da BAB e lotta** — il vincolo batte l'array"
     ]
    ],
    "giudica": {
@@ -5728,8 +5728,8 @@
       0
      ],
      "attacco": [
-      17,
-      17,
+      16,
+      16,
       0
      ],
      "iniziativa": [
@@ -5738,8 +5738,8 @@
       0
      ],
      "lotta": [
-      15,
-      15,
+      14,
+      14,
       0
      ],
      "pf": [
@@ -5793,7 +5793,7 @@
       "Car": 8,
       "Cos": 18,
       "Des": 15,
-      "For": 21,
+      "For": 19,
       "Int": 10,
       "Sag": 12
      },
@@ -5805,7 +5805,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 4018,
+    "senza_note": 4267,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -5843,7 +5843,7 @@
       "letta da ca-dettaglio"
      ],
      "for_da_lotta": [
-      20,
+      18,
       "ricavata da BAB e lotta"
      ]
     }
@@ -5869,7 +5869,7 @@
      "Car": 8,
      "Cos": 18,
      "Des": 15,
-     "For": 21,
+     "For": 19,
      "Int": 10,
      "Sag": 12
     },
@@ -5887,8 +5887,8 @@
      }
     ],
     "gs": 10.0,
-    "lotta": 15,
-    "mischia": "ascia bipenne +1 +17/+12 (1d12+8/x3)",
+    "lotta": 14,
+    "mischia": "ascia bipenne +1 +16/+11 (1d12+7/x3)",
     "pf": 105,
     "provenienza": "a mano",
     "tipo": "Medium humanoid (goblinoid), hobgoblin barbaro 10, CE",
@@ -9761,20 +9761,21 @@
     {
      "Car": 8,
      "Cos": 12,
-     "Des": 11,
+     "Des": 12,
      "For": 14,
      "Int": 10,
      "Sag": 9
     },
     [
-     "trascritta dalla fonte `hobgoblin regular 4 liv.pcg`"
+     "trascritta dalla fonte `hobgoblin regular 4 liv.pcg`",
+     "⚠ Des 12 letta da ca-dettaglio: la fonte dice 11, lo statblocco è stato adattato e vince lo statblocco"
     ]
    ],
    "genera_senza_fonte": [
     {
      "Car": 9,
-     "Cos": 12,
-     "Des": 11,
+     "Cos": 14,
+     "Des": 12,
      "For": 13,
      "Int": 9,
      "Sag": 9
@@ -9783,8 +9784,7 @@
      "array standard del Manuale del DM (PNG con classe)",
      "variazione a seme fisso: Int +1, Sag −1",
      "modificatori razziali SRD: hobgoblin Des +2 Cos +2",
-     "Cos 12 **ricavata da Temp +8 (base +7)** — il tetto del TS batte l'array",
-     "Des 11 **ricavata da Rifl +2 (base +2)** — il tetto del TS batte l'array"
+     "Des 12 **letta da ca-dettaglio** — il vincolo batte l'array"
     ]
    ],
    "giudica": {
@@ -9797,13 +9797,13 @@
       0
      ],
      "Rifl": [
-      2,
-      2,
+      3,
+      3,
       0
      ],
      "Temp": [
-      8,
-      8,
+      9,
+      9,
       0
      ],
      "Vol": [
@@ -9813,13 +9813,13 @@
      ],
      "pf": [
       26,
-      "8-36",
+      "12-40",
       0
      ],
-     "pf_media": 22
+     "pf_media": 26
     },
     "file": "Bestiario/mostri/hobgoblin-regular-warrior4-cr3.md",
-    "provenienza": "trascritte",
+    "provenienza": "a mano",
     "scarti": {},
     "template": null,
     "template_dichiarati": [],
@@ -9859,8 +9859,8 @@
     "numeri_della_fonte": {},
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
-    "provenienza": "trascritte",
-    "senza_note": 1029,
+    "provenienza": "a mano",
+    "senza_note": 1375,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/hobgoblin regular 4 liv.pcg",
@@ -9885,12 +9885,12 @@
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
-      1,
-      "ricavata da Temp +8 (base +7)"
+      2,
+      "ricavata da Temp +9 (base +7)"
      ],
      "Des": [
-      0,
-      "ricavata da Rifl +2 (base +2)"
+      1,
+      "ricavata da Rifl +3 (base +2)"
      ],
      "Sag": [
       -1,
@@ -9900,7 +9900,10 @@
     "vincoli": {
      "cos_da_pf": null,
      "des_da_iniziativa": null,
-     "des_vincolata": null,
+     "des_vincolata": [
+      12,
+      "letta da ca-dettaglio"
+     ],
      "for_da_lotta": null
     }
    },
@@ -9909,8 +9912,8 @@
    "scheda": {
     "attributi": {
      "Car": 8,
-     "Cos": 12,
-     "Des": 11,
+     "Cos": 14,
+     "Des": 13,
      "For": 14,
      "Int": 10,
      "Sag": 9
@@ -9932,11 +9935,11 @@
     "lotta": null,
     "mischia": "",
     "pf": 26,
-    "provenienza": "trascritte",
+    "provenienza": "a mano",
     "tipo": "Medium humanoid (goblinoid), Warrior 4, LE",
     "ts": [
-     8,
-     2,
+     9,
+     3,
      1
     ]
    }
@@ -13694,23 +13697,24 @@
    "genera": [
     {
      "Car": 6,
-     "Cos": 18,
+     "Cos": 14,
      "Des": 13,
-     "For": 23,
+     "For": 18,
      "Int": 8,
      "Sag": 10
     },
     [
      "trascritta dalla fonte `orco berserk 2liv .htm`",
-     "⚠ la CA di contatto suggerisce Des 8, la fonte dice 13: si tiene la fonte, la differenza può essere deviazione o schivata, da verificare."
+     "⚠ Cos 14 ricavata da pf 23 su 2 DV: la fonte dice 18, lo statblocco è stato adattato e vince lo statblocco",
+     "⚠ For 18 ricavata da BAB e lotta: la fonte dice 23, lo statblocco è stato adattato e vince lo statblocco"
     ]
    ],
    "genera_senza_fonte": [
     {
      "Car": 7,
-     "Cos": 18,
+     "Cos": 14,
      "Des": 12,
-     "For": 17,
+     "For": 18,
      "Int": 7,
      "Sag": 8
     },
@@ -13718,9 +13722,10 @@
      "array standard del Manuale del DM (PNG con classe)",
      "variazione a seme fisso: Int +1, Des −1",
      "modificatori razziali SRD: orc For +4 Int -2 Sag -2 Car -2",
-     "Des 8 **derivata dalla CA di contatto** — il vincolo batte l'array",
+     "Des 12 **letta da ca-dettaglio** — il vincolo batte l'array",
      "Des 12 **ricavata dall'iniziativa** — il vincolo batte l'array",
-     "Cos 18 **ricavata da pf 27 su 2 DV** — il vincolo batte l'array"
+     "Cos 14 **ricavata da pf 23 su 2 DV** — il vincolo batte l'array",
+     "For 18 **ricavata da BAB e lotta** — il vincolo batte l'array"
     ]
    ],
    "giudica": {
@@ -13738,18 +13743,18 @@
       0
      ],
      "Temp": [
-      7,
-      7,
+      5,
+      5,
       0
      ],
      "Vol": [
-      2,
+      0,
       0,
       0
      ],
      "attacco": [
-      9,
-      9,
+      7,
+      7,
       0
      ],
      "iniziativa": [
@@ -13758,19 +13763,19 @@
       0
      ],
      "lotta": [
-      8,
-      8,
+      6,
+      6,
       0
      ],
      "pf": [
-      27,
-      "10-32",
+      23,
+      "6-28",
       0
      ],
-     "pf_media": 21
+     "pf_media": 17
     },
     "file": "Bestiario/mostri/orco-berserk-barbaro2-cr2.md",
-    "provenienza": "trascritte",
+    "provenienza": "a mano",
     "scarti": {},
     "template": null,
     "template_dichiarati": [],
@@ -13804,7 +13809,7 @@
        12
       ]
      ],
-     8,
+     4,
      "pf-dado"
     ],
     "dalla_fonte": [
@@ -13832,8 +13837,8 @@
     },
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
-    "provenienza": "trascritte",
-    "senza_note": 1615,
+    "provenienza": "a mano",
+    "senza_note": 2240,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/orco berserk 2liv .htm",
@@ -13854,56 +13859,59 @@
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
-      4,
-      "ricavata da Temp +7 (base +3)"
+      2,
+      "ricavata da Temp +5 (base +3)"
      ],
      "Des": [
       1,
       "ricavata da Rifl +1 (base +0)"
      ],
      "Sag": [
-      2,
-      "ricavata da Vol +2 (base +0)"
+      0,
+      "ricavata da Vol +0 (base +0)"
      ]
     },
     "vincoli": {
      "cos_da_pf": [
-      18,
-      "ricavata da pf 27 su 2 DV"
+      14,
+      "ricavata da pf 23 su 2 DV"
      ],
      "des_da_iniziativa": [
       12,
       "ricavata dall'iniziativa"
      ],
      "des_vincolata": [
-      8,
-      "derivata dalla CA di contatto"
+      12,
+      "letta da ca-dettaglio"
      ],
-     "for_da_lotta": null
+     "for_da_lotta": [
+      18,
+      "ricavata da BAB e lotta"
+     ]
     }
    },
    "pf_dado_corretto": null,
    "pf_dado_corretto_forzato": {
-    "bonus": "da Cos 18",
+    "bonus": "da Cos 14",
     "dadi": "dalle classi del `tipo` coi dadi SRD",
     "fascia": [
-     10,
-     32
+     6,
+     28
     ],
     "file": "Bestiario/mostri/orco-berserk-barbaro2-cr2.md",
     "legale": true,
-    "media": 21,
+    "media": 17,
     "motivo": null,
-    "nuovo": "2d12+8",
-    "pf": 27,
-    "vecchio": "2d12+8"
+    "nuovo": "2d12+4",
+    "pf": 23,
+    "vecchio": "2d12+4"
    },
    "scheda": {
     "attributi": {
      "Car": 6,
-     "Cos": 18,
+     "Cos": 14,
      "Des": 13,
-     "For": 23,
+     "For": 19,
      "Int": 8,
      "Sag": 10
     },
@@ -13921,15 +13929,15 @@
      }
     ],
     "gs": 2.0,
-    "lotta": 8,
-    "mischia": "grande ascia perfetta a due mani +9 (1d12+9/x3); ascia da lancio +8 (1d6+6)",
-    "pf": 27,
-    "provenienza": "trascritte",
+    "lotta": 6,
+    "mischia": "grande ascia perfetta a due mani +7 (1d12+6/x3); ascia da lancio +6 (1d6+4)",
+    "pf": 23,
+    "provenienza": "a mano",
     "tipo": "Medium humanoid (orc), Barbarian 2 (orco di montagna), 2 HD",
     "ts": [
-     7,
+     5,
      1,
-     2
+     0
     ]
    }
   },
@@ -13937,12 +13945,12 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 10,
+     "Car": 8,
      "Cos": 14,
      "Des": 13,
-     "For": 14,
-     "Int": 12,
-     "Sag": 11
+     "For": 18,
+     "Int": 10,
+     "Sag": 9
     },
     [
      "letta dalla riga delle caratteristiche della scheda stessa"
@@ -13983,8 +13991,8 @@
       0
      ],
      "Vol": [
-      1,
-      1,
+      0,
+      0,
       0
      ],
      "pf": [
@@ -13995,7 +14003,7 @@
      "pf_media": 26
     },
     "file": "Bestiario/mostri/orco-regular-warrior4-cr3.md",
-    "provenienza": "copiate",
+    "provenienza": "a mano",
     "scarti": {},
     "template": null,
     "template_dichiarati": [],
@@ -14031,12 +14039,12 @@
     ],
     "dalla_scheda": [
      {
-      "Car": 10,
+      "Car": 8,
       "Cos": 14,
       "Des": 13,
-      "For": 14,
-      "Int": 12,
-      "Sag": 11
+      "For": 18,
+      "Int": 10,
+      "Sag": 9
      },
      "letta dalla riga delle caratteristiche della scheda stessa"
     ],
@@ -14045,8 +14053,8 @@
     "numeri_della_fonte": {},
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
-    "provenienza": "copiate",
-    "senza_note": 1156,
+    "provenienza": "a mano",
+    "senza_note": 1375,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/orc_regular.pcg",
@@ -14075,8 +14083,8 @@
       "ricavata da Rifl +2 (base +1)"
      ],
      "Sag": [
-      0,
-      "ricavata da Vol +1 (base +1)"
+      -1,
+      "ricavata da Vol +0 (base +1)"
      ]
     },
     "vincoli": {
@@ -14090,12 +14098,12 @@
    "pf_dado_corretto_forzato": null,
    "scheda": {
     "attributi": {
-     "Car": 10,
+     "Car": 8,
      "Cos": 14,
      "Des": 13,
-     "For": 14,
-     "Int": 12,
-     "Sag": 11
+     "For": 18,
+     "Int": 10,
+     "Sag": 9
     },
     "bab": 4,
     "composizione_nota": true,
@@ -14114,12 +14122,12 @@
     "lotta": null,
     "mischia": "",
     "pf": 30,
-    "provenienza": "copiate",
+    "provenienza": "a mano",
     "tipo": "Medium humanoid (orc), Warrior 4, LE",
     "ts": [
      6,
      2,
-     1
+     0
     ]
    }
   },
@@ -14260,7 +14268,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 4189,
+    "senza_note": 4324,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -16010,7 +16018,7 @@
      "Cos": 16,
      "Des": 15,
      "For": 8,
-     "Int": 22,
+     "Int": 18,
      "Sag": 12
     },
     [
@@ -16128,7 +16136,7 @@
       "Cos": 16,
       "Des": 15,
       "For": 8,
-      "Int": 22,
+      "Int": 18,
       "Sag": 12
      },
      "letta dalla riga delle caratteristiche della scheda stessa"
@@ -16139,7 +16147,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 5009,
+    "senza_note": 5213,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -16204,7 +16212,7 @@
      "Cos": 16,
      "Des": 15,
      "For": 8,
-     "Int": 22,
+     "Int": 18,
      "Sag": 12
     },
     "bab": 6,
@@ -21836,15 +21844,14 @@
      "Sag": 14
     },
     [
-     "letta dalla riga delle caratteristiche della scheda stessa",
-     "⚠ Des 14 derivata dalla CA di contatto, ma la scheda scrive 10: si tiene la scheda, da verificare."
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ]
    ],
    "genera_senza_fonte": [
     {
      "Car": 23,
      "Cos": 20,
-     "Des": 14,
+     "Des": 10,
      "For": 20,
      "Int": 12,
      "Sag": 9
@@ -21854,7 +21861,7 @@
      "variazione a seme fisso: Cos +1, Sag −1",
      "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 16) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
      "taglia (SRD, Improving Monsters): For +8, Des -2, Cos +4",
-     "Des 14 **derivata dalla CA di contatto** — il vincolo batte l'array",
+     "Des 10 **derivata dalla CA di contatto** — il vincolo batte l'array",
      "Cos 20 **ricavata da pf 107 su 13 DV** — il vincolo batte l'array",
      "For 20 **ricavata da BAB e lotta** — il vincolo batte l'array"
     ]
@@ -21984,7 +21991,7 @@
      ],
      "des_da_iniziativa": null,
      "des_vincolata": [
-      14,
+      10,
       "derivata dalla CA di contatto"
      ],
      "for_da_lotta": [
@@ -22061,15 +22068,14 @@
      "Sag": 14
     },
     [
-     "letta dalla riga delle caratteristiche della scheda stessa",
-     "⚠ Des 16 derivata dalla CA di contatto, ma la scheda scrive 10: si tiene la scheda, da verificare."
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ]
    ],
    "genera_senza_fonte": [
     {
      "Car": 24,
      "Cos": 22,
-     "Des": 16,
+     "Des": 10,
      "For": 20,
      "Int": 13,
      "Sag": 10
@@ -22079,7 +22085,7 @@
      "variazione a seme fisso: Int +1, Cos −1",
      "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 18) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
      "taglia (SRD, Improving Monsters): For +8, Des -2, Cos +4",
-     "Des 16 **derivata dalla CA di contatto** — il vincolo batte l'array",
+     "Des 10 **derivata dalla CA di contatto** — il vincolo batte l'array",
      "Cos 22 **ricavata da pf 137 su 15 DV** — il vincolo batte l'array",
      "For 20 **ricavata da BAB e lotta** — il vincolo batte l'array"
     ]
@@ -22194,7 +22200,7 @@
      ],
      "des_da_iniziativa": null,
      "des_vincolata": [
-      16,
+      10,
       "derivata dalla CA di contatto"
      ],
      "for_da_lotta": [
@@ -22521,18 +22527,18 @@
       0
      ],
      "Rifl": [
-      19,
-      19,
+      22,
+      22,
       0
      ],
      "Temp": [
-      24,
-      24,
+      27,
+      27,
       0
      ],
      "Vol": [
-      23,
-      23,
+      26,
+      26,
       0
      ],
      "attacco": [
@@ -22615,27 +22621,28 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "copiate",
-    "senza_note": 8020,
+    "senza_note": 13117,
     "sestine_citate": [],
     "taglia": -2,
     "talenti": {
-     "Rifl": 2,
-     "Vol": 2,
+     "Rifl": 5,
+     "Temp": 3,
+     "Vol": 5,
      "init": 4
     },
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
       7,
-      "ricavata da Temp +24 (base +17)"
+      "ricavata da Temp +27 (base +20)"
      ],
      "Des": [
       0,
-      "ricavata da Rifl +19 (base +19)"
+      "ricavata da Rifl +22 (base +22)"
      ],
      "Sag": [
       4,
-      "ricavata da Vol +23 (base +19)"
+      "ricavata da Vol +26 (base +22)"
      ]
     },
     "vincoli": {
@@ -22704,9 +22711,9 @@
     "provenienza": "copiate",
     "tipo": "Huge dragon (earth)",
     "ts": [
-     24,
-     19,
-     23
+     27,
+     22,
+     26
     ]
    }
   },
@@ -24640,7 +24647,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 5362,
+    "senza_note": 5331,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -25971,8 +25978,7 @@
      "Sag": 12
     },
     [
-     "letta dalla riga delle caratteristiche della scheda stessa",
-     "⚠ Des 14 derivata dalla CA di contatto, ma la scheda scrive 11: si tiene la scheda, da verificare."
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ]
    ],
    "genera_senza_fonte": [
@@ -25989,7 +25995,7 @@
      "variazione a seme fisso: Sag +1, Int −1",
      "un avanzamento ogni 4 livelli, contati sul GS 14 — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
      "modificatori razziali SRD: mezzorc For +2 Int -2 Car -2",
-     "Des 14 **derivata dalla CA di contatto** — il vincolo batte l'array",
+     "Des 10 **derivata dalla CA di contatto** — il vincolo batte l'array",
      "Des 10 **ricavata dall'iniziativa** — il vincolo batte l'array",
      "Cos 22 **ricavata da pf 166 su 13 DV** — il vincolo batte l'array",
      "For 30 **ricavata da BAB e lotta** — il vincolo batte l'array"
@@ -26157,7 +26163,7 @@
       "ricavata dall'iniziativa"
      ],
      "des_vincolata": [
-      14,
+      10,
       "derivata dalla CA di contatto"
      ],
      "for_da_lotta": [
@@ -26240,9 +26246,9 @@
    "genera": [
     {
      "Car": 8,
-     "Cos": 19,
+     "Cos": 15,
      "Des": 10,
-     "For": 23,
+     "For": 19,
      "Int": 7,
      "Sag": 10
     },
@@ -26253,9 +26259,9 @@
    "genera_senza_fonte": [
     {
      "Car": 10,
-     "Cos": 18,
+     "Cos": 14,
      "Des": 10,
-     "For": 22,
+     "For": 18,
      "Int": 8,
      "Sag": 9
     },
@@ -26266,8 +26272,8 @@
      "taglia (SRD, Improving Monsters): For +8, Des -2, Cos +4",
      "Des 10 **derivata dalla CA di contatto** — il vincolo batte l'array",
      "Des 10 **ricavata dall'iniziativa** — il vincolo batte l'array",
-     "Cos 18 **ricavata da pf 67 su 7 DV** — il vincolo batte l'array",
-     "For 22 **ricavata da BAB e lotta** — il vincolo batte l'array"
+     "Cos 14 **ricavata da pf 53 su 7 DV** — il vincolo batte l'array",
+     "For 18 **ricavata da BAB e lotta** — il vincolo batte l'array"
     ]
    ],
    "giudica": {
@@ -26275,8 +26281,8 @@
     "decisione": null,
     "esito": {
      "attacco": [
-      13,
-      12,
+      11,
+      10,
       0
      ],
      "iniziativa": [
@@ -26285,13 +26291,13 @@
       0
      ],
      "lotta": [
-      17,
-      17,
+      15,
+      15,
       0
      ]
     },
     "file": "Bestiario/villain/minotauro-karkilan-cr5.md",
-    "provenienza": "copiate",
+    "provenienza": "a mano",
     "scarti": {},
     "template": null,
     "template_dichiarati": [],
@@ -26333,7 +26339,7 @@
        12
       ]
      ],
-     28,
+     14,
      "pf-dado"
     ],
     "dalla_fonte": [
@@ -26350,9 +26356,9 @@
     "dalla_scheda": [
      {
       "Car": 8,
-      "Cos": 19,
+      "Cos": 15,
       "Des": 10,
-      "For": 23,
+      "For": 19,
       "Int": 7,
       "Sag": 10
      },
@@ -26371,8 +26377,8 @@
     },
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
-    "provenienza": "copiate",
-    "senza_note": 4275,
+    "provenienza": "a mano",
+    "senza_note": 5083,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/Minotaur karkilan cr5.htm",
@@ -26397,8 +26403,8 @@
     "tetti_dai_ts": {},
     "vincoli": {
      "cos_da_pf": [
-      18,
-      "ricavata da pf 67 su 7 DV"
+      14,
+      "ricavata da pf 53 su 7 DV"
      ],
      "des_da_iniziativa": [
       10,
@@ -26409,7 +26415,7 @@
       "derivata dalla CA di contatto"
      ],
      "for_da_lotta": [
-      22,
+      18,
       "ricavata da BAB e lotta"
      ]
     }
@@ -26419,9 +26425,9 @@
    "scheda": {
     "attributi": {
      "Car": 8,
-     "Cos": 19,
+     "Cos": 15,
      "Des": 10,
-     "For": 23,
+     "For": 19,
      "Int": 7,
      "Sag": 10
     },
@@ -26439,13 +26445,13 @@
      }
     ],
     "gs": 5.0,
-    "lotta": 17,
-    "mischia": "grande ascia +1 a due mani +13/+8 (3d6+10/x3) e incornata +7 (1d8+3)",
-    "pf": 67,
-    "provenienza": "copiate",
+    "lotta": 15,
+    "mischia": "grande ascia +1 a due mani +11/+6 (3d6+7/x3) e incornata +5 (1d8+2)",
+    "pf": 53,
+    "provenienza": "a mano",
     "tipo": "Large monstrous humanoid, 7 HD (Minotauro 6 / Barbarian 1), CE",
     "ts": [
-     10,
+     8,
      5,
      7
     ]
@@ -26498,18 +26504,18 @@
       0
      ],
      "Rifl": [
-      13,
-      13,
+      16,
+      16,
       0
      ],
      "Temp": [
-      19,
-      19,
+      22,
+      22,
       0
      ],
      "Vol": [
-      16,
-      16,
+      19,
+      19,
       0
      ],
      "attacco": [
@@ -26600,7 +26606,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 9379,
+    "senza_note": 13103,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/Ozzyrandion green 8 liv.htm",
@@ -26618,21 +26624,24 @@
     ],
     "taglia": -2,
     "talenti": {
+     "Rifl": 3,
+     "Temp": 3,
+     "Vol": 3,
      "init": 4
     },
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
       6,
-      "ricavata da Temp +19 (base +13)"
+      "ricavata da Temp +22 (base +16)"
      ],
      "Des": [
       0,
-      "ricavata da Rifl +13 (base +13)"
+      "ricavata da Rifl +16 (base +16)"
      ],
      "Sag": [
       3,
-      "ricavata da Vol +16 (base +13)"
+      "ricavata da Vol +19 (base +16)"
      ]
     },
     "vincoli": {
@@ -26701,9 +26710,9 @@
     "provenienza": "a mano",
     "tipo": "Huge dragon (air), 22 HD, LE",
     "ts": [
-     19,
-     13,
-     16
+     22,
+     16,
+     19
     ]
    }
   },
@@ -43761,27 +43770,14 @@
    ]
   },
   "Bestiario/villain/Fauci_di_Palude.md": {
-   "blocco": "```statblocco\ngs: 15\nca: 16\npf: 237\nts: Temp +17, Rifl +15, Vol +15\nfonte: derivato-SRD — caratteristiche: matrice elite (15, 14, 13, 12, 10, 8) + 6 da DV/4 → For 18, Cos 17, Des 13 · pf: 25d12 media 162.5 + Cos +3×25 = 237 · TS: tipo «dragon», TS buoni ('temp', 'rifl', 'vol') → Temp +17, Rifl +15, Vol +15 · CA: 10 + taglia -2 + Des +1 + naturale +5 (enorme) + scudo +2 = 16 · collaudo GS 15 [PF1e Tab. 1–1]: atteso CA 30, pf 220 → -14 CA, +17 pf ⚠ FUORI BERSAGLIO per GS 15: la tabella attende CA 30 e pf 220 (-14 / +17)\n```",
-   "conti": [
-    "caratteristiche: matrice elite (15, 14, 13, 12, 10, 8) + 6 da DV/4 → For 18, Cos 17, Des 13",
-    "pf: 25d12 media 162.5 + Cos +3×25 = 237",
-    "TS: tipo «dragon», TS buoni ('temp', 'rifl', 'vol') → Temp +17, Rifl +15, Vol +15",
-    "CA: 10 + taglia -2 + Des +1 + naturale +5 (enorme) + scudo +2 = 16",
-    "collaudo GS 15 [PF1e Tab. 1–1]: atteso CA 30, pf 220 → -14 CA, +17 pf ⚠ FUORI BERSAGLIO per GS 15: la tabella attende CA 30 e pf 220 (-14 / +17)"
-   ],
-   "derivati": [
-    "ts"
-   ],
+   "blocco": null,
+   "conti": [],
    "lettura": {
     "armatura": null,
-    "base_ts": {
-     "rifl": 14,
-     "temp": 14,
-     "vol": 14
-    },
+    "base_ts": {},
     "classi": [],
-    "dado": 12,
-    "dv": 25,
+    "dado": null,
+    "dv": null,
     "elite": true,
     "gs": 15,
     "manca": [],
@@ -43790,8 +43786,9 @@
     "taglia": "enorme",
     "tipo": "dragon"
    },
-   "manca": [],
-   "scrivibile": true
+   "manca": [
+    "DV o livelli di classe"
+   ]
   },
   "Bestiario/villain/Generale_Grimjaw.md": {
    "blocco": null,
@@ -44771,15 +44768,6 @@
     "scritta": "attributi: For 13 Des 13 Cos 14 Int 10 Sag 9 Car 8"
    },
    {
-    "file": "Bestiario/mostri/hobgoblin-regular-warrior4-cr3.md",
-    "marca": "> [GENERATO] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`.",
-    "note": [
-     "trascritta dalla fonte `hobgoblin regular 4 liv.pcg`"
-    ],
-    "riga": "attributi: For 14 Des 11 Cos 12 Int 10 Sag 9 Car 8",
-    "scritta": "attributi: For 14 Des 11 Cos 12 Int 10 Sag 9 Car 8"
-   },
-   {
     "file": "Bestiario/mostri/hobgoblin-sergente-cr5.md",
     "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.",
     "note": [
@@ -44904,25 +44892,6 @@
     "scritta": "attributi: For 25 Des 11 Cos 17 Int 10 Sag 10 Car 9"
    },
    {
-    "file": "Bestiario/mostri/orco-berserk-barbaro2-cr2.md",
-    "marca": "> [GENERATO] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. ⚠ la CA di contatto suggerisce Des 8, la fonte dice 13: si tiene la fonte, la differenza può essere deviazione o schivata, da verificare.",
-    "note": [
-     "trascritta dalla fonte `orco berserk 2liv .htm`",
-     "⚠ la CA di contatto suggerisce Des 8, la fonte dice 13: si tiene la fonte, la differenza può essere deviazione o schivata, da verificare."
-    ],
-    "riga": "attributi: For 23 Des 13 Cos 18 Int 8 Sag 10 Car 6",
-    "scritta": "attributi: For 23 Des 13 Cos 18 Int 8 Sag 10 Car 6"
-   },
-   {
-    "file": "Bestiario/mostri/orco-regular-warrior4-cr3.md",
-    "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.",
-    "note": [
-     "letta dalla riga delle caratteristiche della scheda stessa"
-    ],
-    "riga": "attributi: For 14 Des 13 Cos 14 Int 12 Sag 11 Car 10",
-    "scritta": "attributi: For 14 Des 13 Cos 14 Int 12 Sag 11 Car 10"
-   },
-   {
     "file": "Bestiario/mostri/razorfiend-blackspawn-alfa-cr13.md",
     "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.",
     "note": [
@@ -45031,15 +45000,6 @@
     "scritta": "attributi: For 16 Des 15 Cos 16 Int 8 Sag 10 Car 17"
    },
    {
-    "file": "Bestiario/villain/minotauro-karkilan-cr5.md",
-    "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.",
-    "note": [
-     "letta dalla riga delle caratteristiche della scheda stessa"
-    ],
-    "riga": "attributi: For 23 Des 10 Cos 19 Int 7 Sag 10 Car 8",
-    "scritta": "attributi: For 23 Des 10 Cos 19 Int 7 Sag 10 Car 8"
-   },
-   {
     "file": "Bestiario/villain/phantom-fungus-cr3.md",
     "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.",
     "note": [
@@ -45050,20 +45010,18 @@
    },
    {
     "file": "Bestiario/villain/Ghaurush_Cenerevento/ghaurush-cenerevento-cr16.md",
-    "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ Des 14 derivata dalla CA di contatto, ma la scheda scrive 10: si tiene la scheda, da verificare.",
+    "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.",
     "note": [
-     "letta dalla riga delle caratteristiche della scheda stessa",
-     "⚠ Des 14 derivata dalla CA di contatto, ma la scheda scrive 10: si tiene la scheda, da verificare."
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ],
     "riga": "attributi: For 21 Des 10 Cos 21 Int 14 Sag 14 Car 22",
     "scritta": "attributi: For 21 Des 10 Cos 21 Int 14 Sag 14 Car 22"
    },
    {
     "file": "Bestiario/villain/Ghaurush_Cenerevento/ghaurush-cenerevento-secondo-incontro-cr18.md",
-    "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ Des 16 derivata dalla CA di contatto, ma la scheda scrive 10: si tiene la scheda, da verificare.",
+    "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.",
     "note": [
-     "letta dalla riga delle caratteristiche della scheda stessa",
-     "⚠ Des 16 derivata dalla CA di contatto, ma la scheda scrive 10: si tiene la scheda, da verificare."
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ],
     "riga": "attributi: For 21 Des 10 Cos 23 Int 14 Sag 14 Car 24",
     "scritta": "attributi: For 21 Des 10 Cos 23 Int 14 Sag 14 Car 24"
@@ -45261,25 +45219,6 @@
       }
      ],
      [
-      "hobgoblin-regular-warrior4-cr3.md",
-      {
-       "Car": 8,
-       "Cos": 12,
-       "Des": 11,
-       "For": 14,
-       "Int": 10,
-       "Sag": 9
-      },
-      {
-       "Car": 9,
-       "Cos": 12,
-       "Des": 11,
-       "For": 13,
-       "Int": 9,
-       "Sag": 9
-      }
-     ],
-     [
       "hobgoblin-veterans-warrior6-cr5.md",
       {
        "Car": 8,
@@ -45432,25 +45371,6 @@
       }
      ],
      [
-      "orco-berserk-barbaro2-cr2.md",
-      {
-       "Car": 6,
-       "Cos": 18,
-       "Des": 13,
-       "For": 23,
-       "Int": 8,
-       "Sag": 10
-      },
-      {
-       "Car": 7,
-       "Cos": 18,
-       "Des": 12,
-       "For": 17,
-       "Int": 7,
-       "Sag": 8
-      }
-     ],
-     [
       "underdark-cleric-ainin-cr5.md",
       {
        "Car": 10,
@@ -45509,17 +45429,17 @@
      ]
     ],
     "entro_1_mod": 0.87,
-    "file": 21,
+    "file": 19,
     "insieme": "fonti",
     "mae": 1.21,
-    "mae_mod": 0.55,
+    "mae_mod": 0.54,
     "per_caratteristica": {
-     "Car": 1.52,
-     "Cos": 0.81,
-     "Des": 0.33,
-     "For": 1.38,
-     "Int": 2.0,
-     "Sag": 1.19
+     "Car": 1.58,
+     "Cos": 0.89,
+     "Des": 0.32,
+     "For": 1.16,
+     "Int": 2.11,
+     "Sag": 1.21
     }
    },
    "schede": {
@@ -46038,25 +45958,6 @@
       }
      ],
      [
-      "orco-regular-warrior4-cr3.md",
-      {
-       "Car": 10,
-       "Cos": 14,
-       "Des": 13,
-       "For": 14,
-       "Int": 12,
-       "Sag": 11
-      },
-      {
-       "Car": 7,
-       "Cos": 12,
-       "Des": 11,
-       "For": 17,
-       "Int": 5,
-       "Sag": 9
-      }
-     ],
-     [
       "razorfiend-blackspawn-alfa-cr13.md",
       {
        "Car": 12,
@@ -46228,25 +46129,6 @@
       }
      ],
      [
-      "minotauro-karkilan-cr5.md",
-      {
-       "Car": 8,
-       "Cos": 19,
-       "Des": 10,
-       "For": 23,
-       "Int": 7,
-       "Sag": 10
-      },
-      {
-       "Car": 10,
-       "Cos": 18,
-       "Des": 10,
-       "For": 22,
-       "Int": 8,
-       "Sag": 9
-      }
-     ],
-     [
       "phantom-fungus-cr3.md",
       {
        "Car": 9,
@@ -46278,7 +46160,7 @@
       {
        "Car": 23,
        "Cos": 20,
-       "Des": 14,
+       "Des": 10,
        "For": 20,
        "Int": 12,
        "Sag": 9
@@ -46297,7 +46179,7 @@
       {
        "Car": 24,
        "Cos": 22,
-       "Des": 16,
+       "Des": 10,
        "For": 20,
        "Int": 13,
        "Sag": 10
@@ -46380,18 +46262,18 @@
       }
      ]
     ],
-    "entro_1_mod": 0.83,
-    "file": 45,
+    "entro_1_mod": 0.84,
+    "file": 43,
     "insieme": "schede",
-    "mae": 1.52,
-    "mae_mod": 0.7,
+    "mae": 1.45,
+    "mae_mod": 0.66,
     "per_caratteristica": {
-     "Car": 2.8,
-     "Cos": 0.4,
-     "Des": 0.47,
-     "For": 0.67,
-     "Int": 3.11,
-     "Sag": 1.62
+     "Car": 2.81,
+     "Cos": 0.35,
+     "Des": 0.21,
+     "For": 0.6,
+     "Int": 3.07,
+     "Sag": 1.63
     }
    }
   }

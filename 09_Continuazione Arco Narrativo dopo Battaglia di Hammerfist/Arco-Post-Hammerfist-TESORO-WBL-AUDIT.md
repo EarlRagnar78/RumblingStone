@@ -49,8 +49,8 @@ inoltre **personali/non vendibili** → non liquidabili per comprare altro. Quin
 
 ## 2. Distribuzione del tesoro per quest (Paizo-style)
 
-> **Pesatura (dal benchmark)**: **Rhest** (hoard del drago — il veicolo naturale del
-> grosso), **Torre** (oggetti arcani di Zalkatar), **Torneo** (premi/scommesse),
+> **Pesatura (dal benchmark)**: **Rhest** (il tesoro di Rhest sommersa, attorno alla
+> tana del drago: il veicolo naturale del grosso), **Torre** (oggetti arcani di Zalkatar), **Torneo** (premi/scommesse),
 > **Rethmar** (ricompense civiche/bottino di battaglia). Le side-quest completano.
 > Valori in **mo equivalenti** (coin + gemme + arte + oggetti liquidabili).
 
@@ -58,27 +58,48 @@ inoltre **personali/non vendibili** → non liquidabili per comprare altro. Quin
 |---|---|---|---|
 | **Sacred Forest (Hella, P1)** | Cerchio della Quercia; nido drow | Doni druidici, componenti rari, oggetti minori dei piromanti drow | **~25.000** |
 | **Rhest — Saarvith** (P2-RHEST) | Campo di guerra sul lago | Arco lungo composito +3, pozioni, cifra di comando, gemme del riscatto | **~30.000** |
-| **Rhest — Hoard di Regiarix** (P2-RHEST FASE4) | Tana sommersa del drago | **Il grande hoard**: monete, gemme, arte, 2-3 oggetti magici (vedi §3.1) | **~90.000** |
+| **Rhest — Tesoro di Regiarix** (P2-RHEST STATBLOCCHI §2) | Addosso al drago e nella tana | Tesoro triplo di un drago di grado di sfida 9: 4.500 × 3 = 13.500 mo (Guida del DM 3.5, «Treasure Values per Encounter»; il triplo è dell'SRD). Addosso 4.800 (anello di protezione +1, mantello della resistenza +1, 2 pozioni, 2 pergamene): li trovano solo se muore, meno i consumabili usati; se fugge li porta via. Il resto, 8.700, nella tana `[INFERRED — Il resto del tesoro di Regiarix sta nella tana sommersa?; base: STATBLOCCHI §2 r.78 dice solo che il corredo esce dal suo tesoro triplo]` | **~13.500** |
+| **Rhest — Tesoro di Rhest sommersa** (P2-RHEST FASE4) | Rovine sommerse attorno alla tana del drago | **Il grande tesoro**: monete, gemme, arte, 2-3 oggetti magici (vedi §3.1) | **~90.000** |
 | **Torre Invisibile (Artemis, P2A)** | Laboratori/biblioteca di Zalkatar | Oggetti arcani, pergamene, bacchette, il "seme di Porta" (se recuperato) | **~70.000** |
 | **Torneo di Dauth (Tordek, P2B)** | Borse, scommesse, premio del campione | Premio in mo, contratto mercenari, oggetto-trofeo dell'Orbe (scenico) | **~45.000** |
 | **Sabotaggio Campi Drow + Missioni Brevi (P3)** | Campi drow, incontri di viaggio | Bottino misto, veleni, oggetti drow, taglie | **~35.000** |
 | **Starsong Hill (elfi)** | Doni dei Tiri Kitor | Frecce speciali, mantello elfico, oggetto naturale | **~15.000** |
 | **Ghostlord (Thornwaste)** | Tana "leone di pietra" | Oggetti druidici del lich, componenti, tesoro sepolto | **~25.000** |
 | **Rethmar — bottino + ricompense civiche** (P3 finale) | Campo di battaglia + Consiglio | Salvage draconico, ricompense del Consiglio, **titoli/dominio** (C6) | **~45.000** |
-| — | | **TOTALE distribuito** | **~380.000** |
+| — | | **TOTALE distribuito** (righe fisse) | **~393.500** |
 
-> **Bilancio**: 380k ± 20% = **304k – 456k**, dentro il corridoio WBL della §1.2
-> (fascia bassa). Se il gruppo salta quest (echi negativi), riceve **meno** loot —
+**Il corredo dei draghi, solo se muoiono** (card del DM del 2026-11-21). Esce dal
+tesoro triplo di ogni drago e i PG lo prendono sul corpo, meno i consumabili che il
+drago ha usato; se fugge lo porta via. Il corredo di Regiarix è già nella sua riga.
+
+| Drago | Dove | Corredo | Valore (mo) |
+|---|---|---|---|
+| **Ozyrrandion** (`Bestiario/villain/ozyrrandion-drago-verde-cr14.md`) | Torre Invisibile, P2A, o Rethmar | anello di protezione +3, mantello della resistenza +3, amuleto della salute +2, bracciali dell'armatura +3; pozione e cinque pergamene (5.100) | **40.000-45.100** |
+| **Tyrgarun** (`Bestiario/villain/Tyrgarun/tyrgarun-blue-very-old-cr19.md`) | Rethmar, P3 | anello di protezione +3, mantello della resistenza +3; tre pergamene e tre pozioni (7.200) | **27.000-34.200** |
+| **Il drago rosso di Vaereth** (`Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md` §7) | Torneo di Dauth, P2B | anello di protezione +2, mantello della resistenza +2; una pozione (750) | **12.000-12.750** |
+| — | | **TOTALE se muoiono tutti e tre** | **79.000-92.050** |
+
+> **Bilancio** (rifatto il 2026-11-21). Le righe fisse fanno 393.500 mo: i 380.000
+> di prima più il tesoro di Regiarix, 13.500, che prima non c'era: i ~90k erano
+> chiamati suoi, ma sono di Rhest sommersa. Se Regiarix fugge, i 4.800 del corredo
+> se ne vanno con lui e la riga scende a 8.700. Il conto: 380.000 + 13.500 = 393.500; ± 20% fa
+> **314.800-472.200**. Con i tre corredi, se i draghi muoiono tutti: 393.500 +
+> 79.000 = 472.500, e 393.500 + 92.050 = 485.550. Il massimo, **485.550**, sta
+> ancora nel delta di 400.000-600.000 della §1.2, più vicino alla fascia bassa
+> (400.000) che all'alta. Se il gruppo salta quest (echi negativi), riceve **meno** loot —
 > coerente col principio "ogni quest è un moltiplicatore" (§5 del piano).
 
 ---
 
 ## 3. Dettaglio dei due contenitori-chiave
 
-### 3.1 Hoard di Regiarix (il pezzo grosso, ~90k)
+### 3.1 Tesoro di Rhest sommersa (il pezzo grosso, ~90k)
 
-Da benchmark, l'hoard di un drago nero è il veicolo naturale del grosso del loot.
-Ripartizione tipo (DMG "hoard triplo" per CR 13, arrotondato):
+Non è il tesoro di Regiarix. Un drago nero giovane adulto di GS 9 ha tesoro triplo
+di 13.500 mo (§2), e i ~90k vengono dalle rovine elfiche sommerse attorno alla sua
+tana `[INFERRED — Il grosso del tesoro di Rhest sta nelle rovine sommerse e non è del
+drago?; base: la tabella chiama già «reliquie elfiche di Rhest sommersa» gli oggetti
+d'arte, e il tesoro triplo di un GS 9 è 13.500 mo]`. Ripartizione tipo, arrotondata:
 
 | Voce | Valore |
 |---|---|
@@ -130,7 +151,7 @@ a questo file. Il conteggio **oggetti magici** sale di conseguenza (l'hoard di R
 ## 6. Checklist di sessione (DM)
 
 - [ ] Il gruppo è nel corridoio WBL a ogni salto di livello (14/15/16)?
-- [ ] L'hoard di Regiarix è stato erogato per intero (è il pezzo grosso)?
+- [ ] Il tesoro di Rhest sommersa è stato erogato per intero (è il pezzo grosso)?
 - [ ] Gli oggetti sono **SRD/DMG** o marcati `[INFERRED]` con valore?
 - [ ] Le quest saltate hanno **ridotto** il loot di conseguenza?
 - [ ] Rendite/titoli di dominio (C6) contati **a parte** dal WBL liquido?

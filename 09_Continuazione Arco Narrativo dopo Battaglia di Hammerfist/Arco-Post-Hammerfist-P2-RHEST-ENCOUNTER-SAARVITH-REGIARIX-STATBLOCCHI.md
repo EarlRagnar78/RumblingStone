@@ -50,11 +50,11 @@ tipo: Large dragon (water), 16 HD, CM
 taglia: Grande
 spazio: 3 m
 portata: 1,5 m (3 m con il morso)
-ca: 24
-ca-dettaglio: (−1 taglia, +15 naturale); contatto 9, colto alla sprovvista 24
+ca: 25
+ca-dettaglio: (−1 taglia, +15 naturale, +1 deviazione); contatto 10, colto alla sprovvista 25; con armatura magica e scudo 33 (+4 armatura, +4 scudo), contatto 10, colto alla sprovvista 33
 pf: 152
 pf-dado: 16d12+48
-ts: Temp +13, Rifl +10, Vol +11
+ts: Temp +14, Rifl +11, Vol +12 (+1 dal mantello della resistenza)
 attributi: For 19 Des 10 Cos 17 Int 12 Sag 13 Car 12
 velocita: 18 m, volare 45 m (scarsa), nuotare 18 m
 iniziativa: +4
@@ -66,14 +66,17 @@ voci:
   - Talenti: Multiattacco, Attacco in Volo, Fluttuare, Iniziativa Migliorata, Attacco Poderoso, Virare
   - RI 17; RD 5/magia; immune all'acido, al sonno e alla paralisi
   - Respirare sott'acqua; oscurità 3 al giorno (raggio 15 m)
-  - Incantesimi da stregone di 1° livello, al giorno 5/4
-fonte: drago nero giovane adulto dell'SRD 3.5, tabelle del nero (d20srd); talenti scelti in questa revisione
+  - Incantesimi da stregone di 1° livello (LI 1), al giorno 5/4: 1° armatura magica, scudo; 0 frastornare (CD 11), individuazione del magico, lettura del magico, mano magica
+  - Equipaggiamento: anello di protezione +1, mantello della resistenza +1, 2 pozioni di cura ferite gravi, 2 pergamene di invisibilità (LI 3)
+fonte: drago nero giovane adulto dell'SRD 3.5, tabelle del nero (d20srd); talenti scelti in questa revisione; incantesimi e oggetti scelti dal DM sulla card del 21/11
 ```
 
 - **Sensi**: percezione cieca 18 m, scurovisione 36 m, visione crepuscolare, sensi acuti.
 - **Respirare sott'acqua** (Str): respira, lancia e soffia anche sommerso (SRD).
 - **Oscurità** (Mag): 3 al giorno, raggio 3 m per categoria d'età, cioè 15 m. Nell'SRD l'oscurità magica dà occultamento (20%) anche a chi ha scurovisione.
-- **Incantesimi conosciuti**: la fonte non li elenca; 4 trucchetti e 2 di 1° a scelta del DM.
+- **Incantesimi conosciuti** `[CANONE — DM 2026-11-21, card]`: stregone di 1° (LI 1), 5 trucchetti e 4 incantesimi di 1° al giorno (3 della classe più 1 per Car 12), CD 11 + livello dell'incantesimo. Trucchetti: *frastornare* (Vol CD 11, solo umanoidi di 4 DV o meno: contro i PG non serve), *individuazione del magico*, *lettura del magico*, *mano magica*. Di 1°: *armatura magica* (+4 armatura, 1 ora) e *scudo* (+4 scudo, 1 minuto, annulla i *dardi incantati*); i due bonus si sommano, quindi CA 33. Scelta del DM (card del 21/11): *lettura del magico* al posto di *resistenza*, perché il +1 ai TS di *resistenza* è un bonus di resistenza come quello del mantello e non si somma, e senza *lettura del magico* le pergamene andrebbero decifrate con Sapienza Magica CD 22, abilità che lo statblocco non gli dà `[CANONE — DM 2026-11-21, card]`.
+- **Equipaggiamento** `[CANONE — DM 2026-11-21, card]`: anello di protezione +1 (2.000 mo), mantello della resistenza +1 (1.000 mo), 2 pozioni di *cura ferite gravi* (LI 5, 3d8+5, 750 mo l'una), 2 pergamene di *invisibilità* (LI 3, 3 minuti, 150 mo l'una). Totale 4.800 mo, il 36% del tesoro che gli spetta: tesoro triplo a GS 9, cioè 4.500 × 3 = 13.500 mo (DMG, tabella del tesoro per incontro, non SRD). Gli oggetti presi dal proprio tesoro non cambiano il GS. Se fugge li porta via; se muore i PG li trovano sul corpo.
+- **Pergamene di invisibilità**: *invisibilità* è nella lista dello stregone, ma è di 2° e lui lancia solo di 1°. Serve Car 12 (10 + livello dell'incantesimo), e l'ha. Il LI della pergamena (3) supera il suo (1), quindi fa una prova di livello dell'incantatore con CD 4: d20 + 1, riesce col 3 o più, il 90%. Se fallisce, prova di Saggezza CD 5 per evitare un incidente (SRD, «Scrolls»). Le decifra prima dello scontro con *lettura del magico*, e una pergamena decifrata non va decifrata di nuovo. Leggerla è un'azione standard che provoca attacchi di opportunità, ma sommerso non ne subisce.
 
 **Carattere e tattiche** `[CANONE — DM 2026-11-15]`. Regiarix è la cavalcatura e il socio di
 Saarvith, non il suo servo. È giovane e ha paura di morire per un goblin, e la
@@ -92,8 +95,47 @@ l'acido che non morde chi se ne è protetto.
 - Fugge a un terzo dei pf (50): si tuffa e nuota via nei canali. Se Saarvith
   cade prima, se ne va subito.
 
+**Incantesimi e corredo in battaglia** `[CANONE — DM 2026-11-21, card]`. Le
+righe qui sopra restano; queste dicono quando usa ciò che ha.
+- Quando gli esploratori avvisano che i PG arrivano, lancia *armatura magica*.
+  Dura 1 ora: se l'avvicinamento dura di più la rilancia, perché ha 4
+  incantesimi di 1° al giorno.
+- Al segnale di Saarvith, sommerso e prima di emergere, lancia *scudo* (10
+  round) e legge una pergamena di *invisibilità* (30 round). Sono due azioni
+  standard, quindi due round sott'acqua: *scudo* nel primo, la pergamena nel
+  secondo. Quando emerge, al round 1 dello scontro, lo *scudo* ha ancora 8
+  round, fino al round 8 compreso.
+- Emerge e si mette in linea con la passerella. Emergere non lo rende
+  visibile, ma non lo nasconde del tutto: finché ha il corpo in acqua
+  l'invisibile sposta l'acqua e rivela dove si trova, pur restando difficile
+  da vedere (SRD, «Invisibility»). Chi guarda la superficie sa in che
+  quadretto è e non deve indovinarlo; Regiarix ha ancora occultamento, il 20%
+  di mancarlo, che è la lettura del testo SRD («concealment», non «total
+  concealment»). Il soffio è un attacco e rompe l'invisibilità, come ogni
+  attacco (SRD, *invisibilità*). La pergamena gli dà la posizione del primo
+  soffio, non l'impunità.
+- Artemis vede l'invisibile (*See the Unseen*, canone del DM). Regiarix lo sa
+  solo se glielo ha detto l'orda: un esploratore di Saarvith che lo ha visto
+  colpire un invisibile nelle fasi precedenti, o un reduce di Hammerfist che là
+  lo ha visto colpire Fauci di Palude invisibile `[CANONE — DM 2026-11-21,
+  card]`. Altrimenti lo scopre la prima volta che Artemis lo prende di mira
+  mentre è invisibile, e da quel momento non conta più sull'invisibilità contro
+  di lui.
+- La seconda pergamena la tiene per un secondo ingresso non visto o per la fuga.
+- Sotto metà dei pf (76) si immerge e, con la copertura totale, beve le pozioni
+  di *cura ferite gravi*, una per round (3d8+5, in media 18,5 pf l'una); bere è
+  un'azione standard che sott'acqua non gli costa attacchi di opportunità. Poi
+  torna a soffiare. Se un colpo lo porta sotto 50 prima che abbia bevuto, non
+  beve e fugge: la soglia di fuga resta 50.
+
+Boost log: 2026-11-21, card del DM («A · Incantesimi + corredo leggero»): gli
+incantesimi conosciuti che l'SRD gli dà da stregone di 1° e 4.800 mo di oggetti
+presi dal suo tesoro triplo; GS 9 → 9. Nessun numero sopra l'SRD: CA 24 → 25
+(33 con *armatura magica* e *scudo*), contatto 9 → 10, TS +1 dal mantello.
+
 > ⚠ Con un giovane adulto (GS 9) e Saarvith l'incontro non è più a EL 13, come
-> diceva il titolo, ma intorno a EL 11-12. È l'età che il DM ha scelto sulla card;
+> diceva il titolo, ma intorno a EL 11-12, e il corredo del 21/11 non lo sposta:
+> viene dal suo tesoro. È l'età che il DM ha scelto sulla card;
 > se serve EL 13, la via legale è l'età adulta dell'SRD (GS 11, 199 pf, soffio
 > 12d4 CD 23), non numeri senza fonte.
 
@@ -123,7 +165,8 @@ Setup iniziale:
 - Saarvith:
   - attiva pozioni (se non l’ha già fatto) e apre con Rapid/Manyshot sul caster più pericoloso.  
 - Regiarix:
-  - emerge, soffia in linea lungo la passerella dove i PG sono in fila, e si rituffa (§2, «Carattere e tattiche»).
+  - nei due round prima del round 1, al segnale, sommerso: *scudo* nel primo, la pergamena di *invisibilità* nel secondo; al round 1 lo *scudo* ha ancora 8 round (§2, «Incantesimi e corredo in battaglia»);
+  - emerge non visto, soffia in linea lungo la passerella dove i PG sono in fila, e si rituffa (§2, «Carattere e tattiche»).
 
 ### Round 3–4
 
@@ -136,9 +179,10 @@ Setup iniziale:
 
 ### Round 5+ (fase disperata)
 
+- Regiarix sotto metà dei pf (76), in qualunque round: si immerge e beve le pozioni, una per round, poi torna a soffiare (§2).
 - Se uno dei due è sotto il 30% pf:
   - può tentare fuga:
-    - Regiarix: tuffo e nuoto via nei canali.  
+    - Regiarix: a un terzo (50) tuffo e nuoto via nei canali, con la seconda pergamena di *invisibilità* se gli resta (§2).  
     - Saarvith: salto nell’acqua e fuga, o invisibilità + scivolare in palude.
 
 - Se vuoi chiuderla:

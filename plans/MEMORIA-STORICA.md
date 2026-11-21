@@ -2402,7 +2402,7 @@ repo scritto con altre parole.
 ### MS-0213 · 2026-11-19 · Le etichette dei pilastri escono dalle stampe, e il bug dei tag di typst torna con le liste
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #504
 - **ADR:** ADR-0070
 - **Temi:** stampa etichette pilastri prosa filtro typst pdfua pdfa bug tag liste impaginazione
 - **Origine:** riga del 2026-11-19 «Le etichette dei pilastri non si stampano» in `plans/CHANGELOG.md`
@@ -2410,10 +2410,74 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `scripts/dmcore/testo.py` · `scripts/tests/test_etichette_pilastri.py` · `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md`
 - **Solo qui:** l'export avvisa con «non è PDF/A» ma esce verde: in CI il ripiego non ferma niente, e lo si vede solo leggendo l'avviso o ricompilando con gli standard
 
-### MS-0214 · 2026-11-20 · Le skill di prosa si caricano per vincolo: hook, dodici agenti e cricchetto
+### MS-0214 · 2026-11-20 · Il corredo nella prosa senza grassetto non si leggeva, e sei schede passano nel recinto
 
 - **Data:** 2026-11-20
 - **PR:** —
+- **ADR:** ADR-0134
+- **Temi:** corredo equipaggiamento rc-001 ricchezza tabella 4-23 verifica_scheda pcg modificatori razziali bestiario
+- **Origine:** riga del 2026-11-20 «le sei schede di `Bestiario/mostri/` che avevano il corredo solo nella prosa» in `plans/CHANGELOG.md`
+- **Testo:** Il primo conteggio delle schede senza corredo diceva 29, ma veniva da un grep grezzo: con il lettore di `verifica_scheda.py` sono 6. Su quattro di queste la riga «Equipaggiamento» stava nella prosa delle Statistiche senza grassetto, e `_righe_dell_equipaggiamento` non la legge: il loro valore non era mai stato controllato contro la Tabella 4-23. Messe nel recinto, quattro risultano sopra il tetto. Il DM ha scelto sulle card una per una: orog e duergar tengono il corredo e lo dichiarano; lo Spezzamente perde la fascia +4 e tutte le CD di ammaliamento scendono di 2; per la Furia è stato il DM a proporre i guanti dell'orco +2 al posto della cintura +4, che costano 12.000 mo in meno e un punto di attacco e danni. L'hobgoblin regular 4 ha mostrato un difetto diverso: il .pcg salva le caratteristiche prima dei modificatori razziali, e `genera_attributi.py` le copia così. La scheda esce dalla marca del generatore, come Karruk nel 2026-09.
+- **Trovato nel repo:** `Bestiario/mostri/furia-della-mano-cr10.md` · `Bestiario/mostri/spezzamente-kulkor-zhul-cr12.md` · `Bestiario/mostri/hobgoblin-regular-warrior4-cr3.md` · `scripts/genera_attributi.py`
+- **Solo qui:** il difetto del .pcg può toccare altre schede «solo .pcg» (orco regular 4, Karkilan, koth, doom-hand); non è verificato ed è del thread delle regole
+### MS-0215 · 2026-11-20 · L'orco regular senza la razza, Karkilan e l'orco berserk con l'ira dentro i numeri base
+
+- **Data:** 2026-11-20
+- **PR:** —
+- **ADR:** ADR-0118
+- **Temi:** pcgen pcg razza ira barbaro karkilan orco berserk card verifica-scheda
+- **Origine:** riga del 2026-11-20 «Caratteristiche dal .pcg: l'ira dentro i numeri» in `plans/CHANGELOG.md`
+- **Testo:** il thread del volume ha trovato che il .pcg di PCGen salva le caratteristiche prima dei modificatori di razza. Su 13 schede del Bestiario che citano un .pcg, il difetto della razza tocca l'hobgoblin regular 4 (corretto nella #505) e l'orco regular 4. Il confronto ha trovato un secondo difetto: gli export di Karkilan e dell'orco berserk 2 erano salvati in ira, e l'orco aggiungeva l'ira una seconda volta nella sua riga. Il DM ha scelto i numeri base fuori ira con l'ira nella sua riga, e la razza per l'orco regular (For 18, falchion +9).
+- **Trovato nel repo:** `Bestiario/villain/minotauro-karkilan-cr5.md` · `Bestiario/mostri/orco-berserk-barbaro2-cr2.md` · `08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md` · `Bestiario/mostri/orco-regular-warrior4-cr3.md`
+- **Solo qui:** `verifica_scheda.py` non lo vede: non conosce la razza né sa se un export è in ira; il controllo è `/mnt/project-files/revisione-arkalseif-2026-11-19/pcgcheck.py`, fuori dal repo. Il controllo della lotta legge come lotta base anche una «Lotta» scritta dentro la riga Ira: per questo la lotta in ira sta solo nella riga delle Statistiche.
+
+### MS-0216 · 2026-11-21 · Tordek è Monaco anche sulla carta, e dominare persone non è permanente
+
+- **Data:** 2026-11-21
+- **PR:** —
+- **ADR:** —
+- **Temi:** regole pg tordek monaco barbaro trascrizione srd incantesimi dominare persone confusione durata mantello resistenza inferred skill
+- **Origine:** riga del 2026-11-21 «Due incoerenze trovate dal thread dei draghi» in `plans/CHANGELOG.md`
+- **Testo:** La trascrizione della foto della scheda di carta del 2026-11-05 dava a Tordek Guerriero 4 / Barbaro 9, mentre `campaign/state.yaml` dice Fighter 4 / Monk 9; il DM ha confermato il Monaco. I numeri della carta lo dicono da soli: con il Monaco i tiri salvezza fanno Temp 13, Rifl 10, Vol 11, e la carta ne ha uno in più su tutti e tre, il *mantello della resistenza +1* della scheda PCGen al 12° livello; con il Barbaro Riflessi e Volontà sarebbero 7 e 8. L'«armatura +1» della carta è marcata INFERRED: forse è l'amuleto dell'armatura naturale +1 della scheda PCGen, perché il contatto 21 torna solo se Tordek non porta armatura. Nella skill dnd-35-srd *dominare persone* diceva «permanent until dispelled», ma l'SRD dà 1 giorno per livello: chi usava la skill per un villain che domina un PNG avrebbe tenuto il controllo per sempre. Nella stessa sezione *confusione* colpiva 1 creatura per livello, senza durata; l'SRD dice un'esplosione di 4,5 m di raggio per 1 round per livello. Il regolista ha controllato le due righe sul testo SRD, perché d20srd.org risponde 403 dal proxy
+- **Trovato nel repo:** `plans/esperimenti/p16-inferred-2026-11-04/SCHEDE-PG-CARTA.md` · `skills/dnd-35-srd/references/spells.md`
+- **Solo qui:** il mantello non è scritto sulla carta: sta solo nella scheda PCGen in PDF. Il custode del canone ha trovato altre tracce del Tordek barbaro o di un altro livello, fuori da questo lavoro e ancora aperte: il Torneo dell'arco 09 lo dà Monk 13 (`Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md` r.12-30, `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-Round1.md` r.10 e 23); `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` r.3247 lo manda in ira; il 77% di `wyrmlord-karruk-cr13.md` r.38 viene da `duelli_arc09.py` r.167, che simula Tordek in ira, come gli altri simulatori di `plans/esperimenti/` che gli danno l'ira; MS-0142 scrive «+23 in ira»; i due file `OTTO-PORTE` dell'arco 09 legano le porte 3 e 4 dell'Orbe a Monaco 10 e 12
+
+### MS-0217 · 2026-11-20 · I rimandi tecnici escono dai booklet di ARC-07
+
+- **Data:** 2026-11-20
+- **PR:** #511
+- **ADR:** —
+- **Temi:** stampa booklet serata rimandi tecnici marcatori di lavoro adr pdf tavolo
+- **Origine:** riga del 2026-11-20 «Via i rimandi tecnici dai booklet di ARC-07» in `plans/CHANGELOG.md`
+- **Testo:** Jfs ha chiesto il booklet della serata del 20/11 pronto da usare, poi (14:37 UTC) di togliere i rimandi tecnici. Il PDF è stato composto da main più le bozze #505-#509 e messo in /mnt/project-files/serata-2026-11-20/; questa PR porta nei sorgenti le stesse correzioni. Una copia generata da `componenti.py --includi` va corretta nella sua fonte (qui la scheda di Balvar), altrimenti il riallineamento rimette il testo vecchio. «#4» resta, perché il booklet stesso dice che è il capitolo VII
+- **Trovato nel repo:** `Bestiario/villain/balvar-fuocospento-cr13.md` · `07_il Portale Della Forgia Eterna/PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`
+- **Solo qui:** la ricerca dei marcatori era una regex in scratchpad, non un cancello del repo
+
+### MS-0218 · 2026-11-21 · Il corredo dei cinque draghi esce dal tesoro triplo, e i gesti contano più dei bonus
+
+- **Data:** 2026-11-21
+- **PR:** #513
+- **ADR:** —
+- **Temi:** draghi corredo tesoro fauci tyrgarun ozyrrandion regiarix vaereth pergamene tattiche simulatore inferred card
+- **Origine:** riga del 2026-11-21 «Corredo dei draghi» in `plans/CHANGELOG.md`
+- **Testo:** Jfs ha scelto sulle card del 21/11 il corredo dei cinque draghi della campagna: Fauci «A · Signore dell'assedio», Tyrgarun «A · Tempesta e ferro», Ozyrrandion «B · Il tentatore armato» (la consigliata era la A, 28.975 mo), Regiarix «A» con *lettura del magico* al posto di *resistenza*, il drago rosso di Vaereth «A». Il corredo esce dal tesoro triplo dell'SRD (tesoro standard della Guida del DM 3.5 per GS, per tre), quindi il GS non cambia. L'inventario ha mostrato che Regiarix e il drago di Vaereth non avevano gli incantesimi conosciuti: erano schede incomplete prima che sotto-equipaggiate. La misura che ha orientato le proposte: un corredo solo difensivo su Fauci (CA +2/+4, TS +2/+3) sposta gli esiti del simulatore di 1-3 punti, e Fauci fugge nel 66-94% degli scontri in ogni versione; il corredo scelto è quindi fatto di pergamene da usare in scena, scritte round per round nella tattica. Su Tyrgarun anello +3 e mantello +3 in Fase 4 danno ucciso nel 21-40% (prima 23-45%) e almeno un PG morto +0-1 punti. Catena: regolista (cinque passate, una per drago), custode del canone (1 rosso e 13 gialli, corretti tranne l'ERRATA di ARC-08, che è archivio), autore del master, lettore a freddo (3 rossi e 8 gialli), autore del master (tattiche round per round, marca dei pregen in A.5), autore dei documenti. Card aperte, scritte come INFERRED con la consigliata: (a) Fauci conosce *lettura del magico*; (b) il corredo di Fauci vale anche coi pregen; (c) *dominare persone* di Ozyrrandion su Artemis (32%) o Tordek (4%); (d) il drago di Vaereth cambia *ritirata rapida* con *raggio di indebolimento*; (e) per il freddo prima la vulnerabilità, poi la resistenza; (f) i reduci di Hammerfist raccontano che Artemis vede l'invisibile; (g) i round delle pergamene di Fauci in Sessione 4 (1-3 e 15-17). Il 21/11 fra le 06:04 e le 06:20 UTC Jfs ha chiuso tutte e sette le card sulla consigliata: le marche sono diventate CANONE, e il drago di Vaereth ha *raggio di indebolimento* al posto di *ritirata rapida*
+- **Trovato nel repo:** `Bestiario/villain/Fauci_di_Palude.md` · `Bestiario/villain/Tyrgarun/tyrgarun-blue-very-old-cr19.md` · `Bestiario/villain/ozyrrandion-drago-verde-cr14.md` · `08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` · `plans/esperimenti/tattiche-draghi-2026-11-15/LEGGIMI.md`
+- **Fuori dal repo:** `/mnt/project-files/draghi-corredo-2026-11-21/INVENTARIO-E-PROPOSTE.md` · `/mnt/project-files/draghi-corredo-2026-11-21/misura_fauci.py` · `/mnt/project-files/draghi-corredo-2026-11-21/misura_tyr.py`
+- **Solo qui:** questioni aperte fuori da questa PR: `campaign/state.md` r.220 dice ancora «flees under 50 hp» per Fauci (canone 112, si corregge sul ramo di gruppo, ADR-0007); `ERRATA-ARC08-35-Verification.md` r.61 dà CA 29 (archivio, non si tocca); GS 18 o 19 di Tyrgarun (il blocco dice 19 dal 2026-11-14, il Boost log e il benchmark lo tengono a 18); «draghi rossi» al plurale nei file del Torneo; Tordek Monaco 9 (`state.md` r.94) o Barbaro 9 (carta INFERRED); il simulatore non ha i numeri nuovi (i profili sono del 15/11 e non modellano pergamene né pozioni); il corredo di Skullcrusher arriva con la PR del thread del booklet di ARC-07. Il numero MS-0214 è anche quello delle bozze #505-#509: chi entra dopo rinumera
+### MS-0219 · 2026-11-21 · Skullcrusher arriva al duello con i suoi oggetti, e la runa del martello di Balvar
+
+- **Data:** 2026-11-21
+- **PR:** —
+- **ADR:** —
+- **Temi:** skullcrusher drago nero vecchio incantesimi conosciuti stregone oggetti tesoro anello mantello bacchetta paura pergamene dominare suggestione immagine speculare gittate eldritch spear runa zeth balvar martello boost
+- **Origine:** riga del 2026-11-21 «Skullcrusher Vecchio come al duello del 20/11» in `plans/CHANGELOG.md`
+- **Testo:** Durante la serata del 20/11 Jfs ha chiesto perché il drago non usasse incantesimi di paura e di dominio. La scheda dava al Vecchio i conosciuti 6/4/2/2 contro i 7/5/3/2 dello stregone di 7° dell'SRD; le card del 21/11 hanno riempito i posti con *messaggio*, *causare paura* e *spaventare*, e hanno dato al drago anello +3, mantello +3, bacchetta di *paura* e tre pergamene (circa 51.900 mo del tesoro triplo da 108.000), *immagine speculare* al corno e passate oltre i 18 m. Con l'anello il contatto sale a 13 e Tordek (+21) lo colpisce solo col 20 naturale; Jfs ha scelto di tenerlo. Il PDF della serata diceva 18 m per la deflagrazione di Artemis: con *Eldritch Spear* sono 75 m, e il colpo a 72 m giocato al tavolo era legale. Al tavolo Zeth ha ricambiato il martello di Balvar con una runa +2 al colpire contro i draghi, regola della casa
+- **Trovato nel repo:** `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` · `07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md`
+- **Solo qui:** il duello simulato con questi numeri dura circa 10 round e il drago muore nel 3-11% delle prove, contro i 3 round stimati da Jfs: la simulazione sottostima la mischia e non conta Durik né le evocazioni. Le varianti stanno solo nello scratchpad del thread. Il 21/11 Jfs ha sciolto le due domande: la runa del martello vale per un colpo solo, come il potere contro i draghi dei Bracieri; delle due rune di acido comprate nella sessione 4 se n'è attivata una, su Durik, alla vista del drago, e Hella si è lanciata *protezione dall'energia* (acido). L'INFERRED sulla durata stampava nel volume d'arco e teneva rosso il cricchetto delle note di lavoro (tetto 0): diventato canone, il cricchetto torna verde senza toccare il tetto
+### MS-0220 · 2026-11-20 · Le skill di prosa si caricano per vincolo: hook, dodici agenti e cricchetto
+
+- **Data:** 2026-11-20
+- **PR:** #510
 - **ADR:** ADR-0146
 - **Temi:** skill prosa narrative-style hook pretooluse agenti sottoagenti cricchetto ci mqm claude-code thread decisione-dm misura
 - **Origine:** riga del 2026-11-20 «ADR-0146 (proposta), le skill di prosa si caricano per vincolo» in `plans/CHANGELOG.md`

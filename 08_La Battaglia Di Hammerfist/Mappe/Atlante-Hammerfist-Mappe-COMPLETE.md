@@ -1250,7 +1250,7 @@ Rappresenta absolute APEX campagna - every element converges single moment glory
   - **Orion Pelleorsa (Druido):** SALTA SCHIENA DRAGO!
     - **Wild Shape: Dire Bear** forma (For 31), presa il round prima: salto, forma e presa non stanno in un round solo (SRD)
     - Lotta **contrapposta** (SRD): +24 dell'orso crudele contro +43 di Fauci, che se ne libera quasi sempre
-    - Il peso da solo non forza la discesa: Fauci scende **per scelta**, come dice la sua scheda (atterra sotto i 100 pf o per finire Thorik dopo averlo lasciato cadere) `[CANONE — DM 2026-10-19, D9]`
+    - Il peso da solo non forza la discesa: Fauci scende **per scelta**, come dice la sua scheda (atterra solo per finire Thorik dopo averlo lasciato cadere) `[CANONE — DM 2026-10-19, D9]`; sotto i 112 pf fugge `[CANONE — DM 2026-11-15]`
 
 **ARTEMIS BLACKROCK (Solo Aereo PG):**
 - **Altitude:** 30m (Below melee swarm)
@@ -1261,7 +1261,7 @@ Rappresenta absolute APEX campagna - every element converges single moment glory
 **CONVERGENZA CLIMAX:**
 
 **Round 18-20: LA PICCHIATA SU THORIK** `[CANONE — DM 2026-10-19, D9]`
-- Fauci scende per scelta: sotto i 100 pf, o per Thorik (scheda, `ARC08-02` §1; Odio della stirpe +4). Picchiata in volo con Attacco in Volo e **presa di Thorik** `[CANONE — DM 2026-10-19]`: morso e presa al round 18, salita con lui in bocca al 19, soffio sui compagni e caduta al 20 (scheda, «La presa di Thorik», una volta)
+- Fauci scende per scelta, solo per Thorik (scheda, `ARC08-02` §1; Odio della stirpe +4); sotto i 112 pf fugge `[CANONE — DM 2026-11-15]`. Picchiata in volo con Attacco in Volo e **presa di Thorik** `[CANONE — DM 2026-10-19]`: morso e presa al round 18, salita con lui in bocca al 19, soffio sui compagni e caduta al 20 (scheda, «La presa di Thorik», una volta)
 - Orion sulla schiena, solo nei round in cui vince la lotta contrapposta; un fulmine di *chiamare fulmini* (3d10) su un'ala
 - Artemis Deflagrazione occulta (6d6) ala sinistra
 - **Result:** Thorik cade nella zona ⚡ (AB30-AG32 della MAPPA 4 REVISED), alle spalle della punta, a circa 30 m dalla linea; Fauci ci atterra al round 21 per finirlo; i PG convergono in 2 round

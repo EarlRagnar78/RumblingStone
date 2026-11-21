@@ -117,9 +117,8 @@ righe qui sopra restano; queste dicono quando usa ciò che ha.
 - Artemis vede l'invisibile (*See the Unseen*, canone del DM). Regiarix lo sa
   solo se glielo ha detto l'orda: un esploratore di Saarvith che lo ha visto
   colpire un invisibile nelle fasi precedenti, o un reduce di Hammerfist che là
-  lo ha visto colpire Fauci di Palude invisibile `[INFERRED — I reduci di
-  Hammerfist raccontano che Artemis vede l'invisibile, se Fauci è stato colpito
-  mentre era invisibile?; base: card (f) del 21/11, consigliata sì]`. Altrimenti lo scopre la prima volta che Artemis lo prende di mira
+  lo ha visto colpire Fauci di Palude invisibile `[CANONE — DM 2026-11-21,
+  card]`. Altrimenti lo scopre la prima volta che Artemis lo prende di mira
   mentre è invisibile, e da quel momento non conta più sull'invisibilità contro
   di lui.
 - La seconda pergamena la tiene per un secondo ingresso non visto o per la fuga.

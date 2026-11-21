@@ -2410,13 +2410,24 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `scripts/dmcore/testo.py` · `scripts/tests/test_etichette_pilastri.py` · `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md`
 - **Solo qui:** l'export avvisa con «non è PDF/A» ma esce verde: in CI il ripiego non ferma niente, e lo si vede solo leggendo l'avviso o ricompilando con gli standard
 
-### MS-0214 · 2026-11-20 · Le piante stampano le chiavi d'area del testo, e un «;» nella descrizione non è una chiave
+### MS-0214 · 2026-11-20 · Il corredo nella prosa senza grassetto non si leggeva, e sei schede passano nel recinto
 
 - **Data:** 2026-11-20
 - **PR:** —
+- **ADR:** ADR-0134
+- **Temi:** corredo equipaggiamento rc-001 ricchezza tabella 4-23 verifica_scheda pcg modificatori razziali bestiario
+- **Origine:** riga del 2026-11-20 «le sei schede di `Bestiario/mostri/` che avevano il corredo solo nella prosa» in `plans/CHANGELOG.md`
+- **Testo:** Il primo conteggio delle schede senza corredo diceva 29, ma veniva da un grep grezzo: con il lettore di `verifica_scheda.py` sono 6. Su quattro di queste la riga «Equipaggiamento» stava nella prosa delle Statistiche senza grassetto, e `_righe_dell_equipaggiamento` non la legge: il loro valore non era mai stato controllato contro la Tabella 4-23. Messe nel recinto, quattro risultano sopra il tetto. Il DM ha scelto sulle card una per una: orog e duergar tengono il corredo e lo dichiarano; lo Spezzamente perde la fascia +4 e tutte le CD di ammaliamento scendono di 2; per la Furia è stato il DM a proporre i guanti dell'orco +2 al posto della cintura +4, che costano 12.000 mo in meno e un punto di attacco e danni. L'hobgoblin regular 4 ha mostrato un difetto diverso: il .pcg salva le caratteristiche prima dei modificatori razziali, e `genera_attributi.py` le copia così. La scheda esce dalla marca del generatore, come Karruk nel 2026-09.
+- **Trovato nel repo:** `Bestiario/mostri/furia-della-mano-cr10.md` · `Bestiario/mostri/spezzamente-kulkor-zhul-cr12.md` · `Bestiario/mostri/hobgoblin-regular-warrior4-cr3.md` · `scripts/genera_attributi.py`
+- **Solo qui:** il difetto del .pcg può toccare altre schede «solo .pcg» (orco regular 4, Karkilan, koth, doom-hand); non è verificato ed è del thread delle regole
+
+### MS-0215 · 2026-11-20 · Le piante stampano le chiavi d'area del testo, e un «;» nella descrizione non è una chiave
+
+- **Data:** 2026-11-20
+- **PR:** #506
 - **ADR:** ADR-0122
 - **Temi:** stampa mappe chiavi area zone pianta booklet volume standard s2
 - **Origine:** riga del 2026-11-20 «ADR-0122, S2: le chiavi d'area» in `plans/CHANGELOG.md`
 - **Testo:** S2 dello standard del volume chiede che i codici d'area dei titoli del testo stiano anche sulla mappa. Nel booklet della serata non ce n'era nessuno (0/0): le zone delle piante avevano lettere minuscole («a», «b»), che nessun titolo usa. La chiave entra come ultima parte di `@zone`. Nell'anteprima del 19/11 la chiave era «la terza parte», e così sedici SVG di Hammerfist, del Giardino e del Drappo cambiavano lettera: le loro descrizioni contengono già un «;» (per esempio «+4 CA; riparo per Nascondersi»). Lo ha trovato `validate_maps.py`, che confronta ogni SVG col suo master. Ora la chiave vale solo se ha la forma `[A-Z]{1,2}\d{1,2}`. Per far misurare le chiavi serve un `<!-- nuova-pagina -->` prima di ogni pianta, altrimenti i titoli finiscono sulla pagina della mappa, che S2 esclude. La pianta del duello, M7-B, non ha zone e non ha preso chiavi.
 - **Trovato nel repo:** `scripts/render_map_svg.py` · `scripts/tests/test_chiavi_area.py` · `07_il Portale Della Forgia Eterna/homebrew/sessione-notte-e-alba/02-CHI-CE-STANOTTE.md`
-- **Solo qui:** il testo delle voci C1-C6 e H1 è un montaggio nuovo di frasi già nel repo e aspetta la lettura del DM sulla PR; il numero MS va rinumerato da chi entra dopo la PR del corredo; i codici stanno nel JSON delle due piante (chiave `codice` degli oggetti, letta da `compile_map_json.py`), perché i master M7-C e M7-H sono generati: la prima spinta li aveva scritti a mano nel master e `test_master_generati` l'ha bocciata
+- **Solo qui:** il testo delle voci C1-C6 e H1 è un montaggio nuovo di frasi già nel repo e aspetta la lettura del DM sulla PR; i codici stanno nel JSON delle due piante (chiave `codice` degli oggetti, letta da `compile_map_json.py`), perché i master M7-C e M7-H sono generati: la prima spinta li aveva scritti a mano nel master e `test_master_generati` l'ha bocciata

@@ -18,15 +18,26 @@ Cinque regole, ogni rilievo con codice, livello, ramo e il comando che lo risolv
 - **S3** patch del giocato ferme nelle cartelle `--scansiona` (fino a
   profondità 3): solo quelle che toccano il canone vivo, cioè i file di partita
   di `dmcore/partita.py` (una lista, un posto). Ognuna si prova contro l'albero
-  del ramo con un indice temporaneo: `applicata`, `da applicare` (🔴 se più
-  vecchia di `--ore-patch`, 48; 🟡 se più giovane), `in conflitto` (🟡), oppure
-  `applicata in altra forma` quando l'oggetto del commit è già nella storia del
-  ramo (portata a mano, ritoccata o con un file rinominato).
-- **S4** campi aperti al DM sul ramo (`______`, «da compilare», `[INFERRED`)
-  in `campaign/sessions/` e `campaign/state.yaml`: domande per il DM, sempre 🟡,
-  mai 🔴. Nessuno li riempie al posto suo.
+  del ramo con un indice temporaneo, nell'ordine: si applica al contrario, o il
+  suo `git patch-id --stable` è quello di un commit del ramo → `applicata`;
+  l'oggetto del commit è nella storia del ramo e ogni riga aggiunta ai file di
+  canone c'è ancora (o il file è cambiato dopo quel commit) → `applicata in
+  altra forma`; con righe che mancano → `da verificare` (🟡, con il numero di
+  righe, domanda al DM); si applica in avanti → `da applicare` (🔴 se più
+  vecchia di `--ore-patch`, 48; 🟡 se più giovane); altrimenti `in conflitto` (🟡).
+- **S4** campi aperti al DM sul ramo, in `campaign/sessions/` e
+  `campaign/state.yaml`: `[INFERRED` (con i criteri di `inventory_inferred.py`),
+  `______`, «da compilare», «da confermare», «da decidere», «da tirare», «non
+  ancora tirati». Conta le occorrenze, non le righe, e salta le intestazioni.
+  Sono domande per il DM: sempre 🟡, mai 🔴. Nessuno li riempie al posto suo.
 - **S5** ultima sessione registrata sul ramo contro le serate delle patch non
   ancora applicate: una serata più recente dell'ultima registrata → 🔴.
+- **S6** campi chiusi senza decisione del DM: una patch (o, con `--ref`, il
+  diff fra il ramo remoto e REF) che fa scendere i campi aperti, dove una riga
+  che chiude un campo non cita una decisione del DM con la data, per esempio
+  «(DM, 2026-11-21)». Una patch → 🟡, domanda al DM; un REF da spingere → 🔴.
+- **S7** (`--dopo-merge`) righe di main perse nel merge: ogni riga che main ha
+  aggiunto ai file di partita dalla base comune deve esserci nel risultato.
 
 Esito: 1 se c'è almeno un 🔴; altrimenti 2 se qualcosa non è misurabile;
 altrimenti 0. `--avviso` (per l'hook) stampa poche righe solo se c'è del
@@ -36,6 +47,8 @@ rosso o del giallo ed esce sempre 0.
     python3 scripts/sincronia_giocato.py --aggiorna --check --scansiona /mnt/project-files
     python3 scripts/sincronia_giocato.py --json
     python3 scripts/sincronia_giocato.py --avviso
+    python3 scripts/sincronia_giocato.py --ref HEAD --check     # prima del push
+    python3 scripts/sincronia_giocato.py --dopo-merge           # dopo git merge origin/main
 """
 from __future__ import annotations
 
@@ -45,6 +58,7 @@ import os
 import re
 import subprocess
 import sys
+import difflib
 import tempfile
 import time
 from datetime import datetime, timezone
@@ -52,6 +66,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from dmcore.partita import PARTITA  # noqa: E402
+import inventory_inferred as inv  # noqa: E402  (i criteri dei [INFERRED]: una norma, un rilevatore)
 
 ROOT = Path(__file__).resolve().parent.parent
 REGISTRO = ROOT / "plans" / "rami-di-gruppo.json"
@@ -61,9 +76,14 @@ GIORNI_ROSSO = 14
 ORE_PATCH = 48
 PROFONDITA = 3
 RIGHE_AVVISO = 4
-TEMPO_SCANSIONE = 3.0  # secondi: una cartella di rete lenta non ferma l'hook
+TEMPO_SCANSIONE = 2.0  # secondi: una cartella di rete lenta non ferma l'hook
 ESTENSIONI_PATCH = (".patch", ".mbox", ".diff")
-CAMPI_APERTI = r"_{6,}|[Dd]a compilare|\[INFERRED"
+_ALTRI_CAMPI = re.compile(r"_{6,}|\bda\s+(?:compilare|confermare|decidere|tirare)\b|"
+                         r"\bnon\s+ancora\s+tirat\w*", re.I)
+_INTESTAZIONE = re.compile(r"^\s*#{1,6}\s")
+_DECISIONE_DM = re.compile(r"\b(?:DM|Jfs)\b[^\n]{0,60}?\d{4}-\d{2}-\d{2}|"
+                           r"\d{4}-\d{2}-\d{2}[^\n]{0,20}?\b(?:DM|Jfs)\b")
+FILE_S4 = ("campaign/sessions", "campaign/state.yaml")
 _SESSIONE = re.compile(r"campaign/sessions/(\d{4}-\d{2}-\d{2})_session-\d+\.md$")
 _DIFF = re.compile(r"^diff --git a/(.+?) b/(.+)$", re.M)
 _OGGETTO = re.compile(r"^Subject: (?:\[PATCH[^\]]*\] ?)?(.*(?:\n[ \t].*)*)", re.M)
@@ -83,6 +103,102 @@ CANONE = _prefissi_canone()
 
 def e_canone(rel: str) -> bool:
     return any(rel == p or (p.endswith("/") and rel.startswith(p)) for p in CANONE)
+
+
+def campi_riga(riga: str) -> int:
+    """I campi aperti al DM in una riga; un'intestazione non ne ha."""
+    if _INTESTAZIONE.match(riga):
+        return 0
+    n = 0
+    for m in inv.MARCATORE.finditer(riga):
+        nota = inv.NOTA.match(" ".join(m.group("coda").split()))
+        if inv.cita_la_convenzione(riga[:m.start()]) or (
+                nota and inv.SCHEMA.match(nota.group("testo").strip())):
+            continue
+        n += 1
+    resto = inv.MARCATORE.sub(" ", riga)
+    n += resto.count("[INFERRED")  # una marca che va a capo
+    return n + len(_ALTRI_CAMPI.findall(resto))
+
+
+def conta_campi(testo: str) -> int:
+    return sum(campi_riga(r) for r in testo.splitlines())
+
+
+_HUNK = re.compile(r"^@@ -\d+(?:,(\d+))? \+\d+(?:,(\d+))? @@")
+
+
+def _blocchi_diff(testo: str):
+    """(file, righe vecchie, righe nuove) per ogni hunk di un diff o di un mbox di format-patch.
+
+    Le righe si contano con l'intestazione dell'hunk, così la firma «-- » e la patch
+    successiva dell'mbox non entrano mai fra le righe tolte.
+    """
+    file_ = None
+    righe = testo.splitlines()
+    i = 0
+    while i < len(righe):
+        m = _DIFF.match(righe[i])
+        if m:
+            file_ = m.group(2)
+        h = _HUNK.match(righe[i])
+        if not (h and file_):
+            i += 1
+            continue
+        resto_v = int(h.group(1) or 1)
+        resto_n = int(h.group(2) or 1)
+        vecchie, nuove = [], []
+        i += 1
+        while i < len(righe) and (resto_v > 0 or resto_n > 0):
+            r = righe[i]
+            if r.startswith("\\"):
+                i += 1
+                continue
+            segno, corpo = (r[:1], r[1:]) if r else (" ", "")
+            if segno == "-":
+                vecchie.append(corpo)
+                resto_v -= 1
+            elif segno == "+":
+                nuove.append(corpo)
+                resto_n -= 1
+            else:
+                vecchie.append(corpo)
+                nuove.append(corpo)
+                resto_v -= 1
+                resto_n -= 1
+            i += 1
+        yield file_, vecchie, nuove
+
+
+def chiusure(testo: str) -> dict:
+    """Quanti campi aperti chiude un diff e quante chiusure non citano una decisione datata del DM."""
+    chiusi = senza = tolti = messi = 0
+    per_file: "dict[str, int]" = {}
+    for file_, vecchie, nuove in _blocchi_diff(testo):
+        if not (file_.startswith(FILE_S4[0] + "/") or file_ == FILE_S4[1]):
+            continue
+        tolti += sum(campi_riga(r) for r in vecchie)
+        messi += sum(campi_riga(r) for r in nuove)
+        sm = difflib.SequenceMatcher(None, vecchie, nuove, autojunk=False)
+        for tag, i1, i2, j1, j2 in sm.get_opcodes():
+            if tag not in ("replace", "delete"):
+                continue
+            prima = sum(campi_riga(r) for r in vecchie[i1:i2])
+            dopo = sum(campi_riga(r) for r in nuove[j1:j2])
+            if prima <= dopo:
+                continue
+            chiusi += prima - dopo
+            nuove_righe = [r for r in nuove[j1:j2] if r.strip() and not campi_riga(r)]
+            mancano = (min(prima - dopo, sum(1 for r in nuove_righe if not _DECISIONE_DM.search(r)))
+                       if nuove_righe else prima - dopo)
+            senza += mancano
+            if mancano:
+                per_file[file_] = per_file.get(file_, 0) + mancano
+    # Un file spostato o rinumerato (la sessione 5 diventata 7) toglie i campi da una parte e
+    # li rimette dall'altra: conta solo ciò che la patch fa scendere davvero, nel complesso.
+    netto = max(0, tolti - messi)
+    return {"chiusi": min(chiusi, netto), "senza_decisione": min(senza, netto),
+            "per_file": per_file if netto else {}}
 
 
 # ---------------------------------------------------------------- git
@@ -120,6 +236,14 @@ def rami_di_gruppo(repo: Path, remoto: str) -> "list[str]":
 def carica_registro(path: Path) -> dict:
     d = json.loads(Path(path).read_text(encoding="utf-8"))
     return {"vivi": d.get("vivi", []), "morti": d.get("morti", [])}
+
+
+def rami_morti(registro: Path = REGISTRO) -> "set[str]":
+    """I rami di gruppo che non si toccano (ADR-0090); vuoto se il registro manca."""
+    try:
+        return {r["ramo"] for r in carica_registro(registro)["morti"]}
+    except (OSError, ValueError, KeyError):
+        return set()
 
 
 def _rilievo(codice: str, livello: str, ramo: str, messaggio: str, comando: str,
@@ -201,30 +325,96 @@ def oggetti(testo: str) -> "list[str]":
     return [" ".join(o.split()) for o in _OGGETTO.findall(testo)]
 
 
-def oggetti_del_ramo(repo: Path, ref: str) -> "set[str]":
-    return {" ".join(r.split()) for r in _out(repo, "log", "--format=%s", ref).splitlines()}
+def _patch_id(repo: Path, testo: str) -> "set[str]":
+    r = subprocess.run(["git", "-C", str(repo), "patch-id", "--stable"], input=testo,
+                       capture_output=True, text=True, timeout=30)
+    return {riga.split()[0] for riga in r.stdout.splitlines() if riga.strip()}
 
 
-def classifica(repo: Path, ref: str, patch: Path) -> "tuple[str, str]":
-    """applicata | da applicare | in conflitto, contro l'albero di `ref` e senza checkout."""
+class Ramo:
+    """Ciò che serve sapere della storia di un ramo, calcolato una volta sola."""
+
+    def __init__(self, repo: Path, ref: str) -> None:
+        self.repo, self.ref = repo, ref
+        self._oggetti: "dict[str, str] | None" = None
+        self._ids: "set[str] | None" = None
+
+    @property
+    def oggetti(self) -> "dict[str, str]":
+        if self._oggetti is None:
+            self._oggetti = {}
+            for riga in reversed(_out(self.repo, "log", "--format=%H%x00%s", self.ref).splitlines()):
+                sha, _, ogg = riga.partition("\0")
+                self._oggetti[" ".join(ogg.split())] = sha  # vince il più recente
+        return self._oggetti
+
+    @property
+    def patch_id(self) -> "set[str]":
+        if self._ids is None:
+            shas = _out(self.repo, "log", "--no-merges", "--format=%H", self.ref, "--",
+                        *CANONE).split()
+            testo = _out(self.repo, "show", "--format=commit %H", *shas) if shas else ""
+            self._ids = _patch_id(self.repo, testo) if testo else set()
+        return self._ids
+
+    def contenuto(self, rel: str) -> "str | None":
+        r = _git(self.repo, "show", f"{self.ref}:{rel}", check=False)
+        return r.stdout if r.returncode == 0 else None
+
+    def cambiato_dopo(self, sha: str, rel: str) -> bool:
+        return bool(_out(self.repo, "log", "--format=%H", f"{sha}..{self.ref}", "--", rel))
+
+
+def righe_aggiunte(testo: str) -> "dict[str, list[str]]":
+    out: "dict[str, list[str]]" = {}
+    for file_, vecchie, nuove in _blocchi_diff(testo):
+        sm = difflib.SequenceMatcher(None, vecchie, nuove, autojunk=False)
+        for tag, _i1, _i2, j1, j2 in sm.get_opcodes():
+            if tag in ("replace", "insert"):
+                out.setdefault(file_, []).extend(r for r in nuove[j1:j2] if r.strip())
+    return out
+
+
+def classifica(ramo: Ramo, patch: Path, testo: str) -> "tuple[str, str, int]":
+    """(stato, motivo, righe di canone che mancano) contro l'albero del ramo, senza checkout."""
+    repo, ref = ramo.repo, ramo.ref
     with tempfile.TemporaryDirectory() as t:
         env = dict(os.environ, GIT_INDEX_FILE=str(Path(t) / "indice"))
         _git(repo, "read-tree", ref, env=env)
         if _git(repo, "apply", "--cached", "--check", "-R", str(patch), env=env,
                 check=False).returncode == 0:
-            return "applicata", ""
+            return "applicata", "", 0
         avanti = _git(repo, "apply", "--cached", "--check", str(patch), env=env, check=False)
-        if avanti.returncode == 0:
-            return "da applicare", ""
-        motivo = next((r for r in avanti.stderr.splitlines() if r.startswith("error:")),
-                      avanti.stderr.strip()[:200])
-        return "in conflitto", motivo
+    ids = _patch_id(repo, testo)
+    if ids and ids <= ramo.patch_id:
+        return "applicata", "", 0
+    ogg = oggetti(testo)
+    if ogg and all(o in ramo.oggetti for o in ogg):
+        # portata a mano, ritoccata o con un file rinominato: si guarda riga per riga
+        sha = ramo.oggetti[ogg[-1]]
+        mancano = 0
+        for rel, righe in righe_aggiunte(testo).items():
+            if not e_canone(rel):
+                continue
+            attuale = ramo.contenuto(rel)
+            presenti = {r.strip() for r in (attuale or "").splitlines()}
+            perse = [r for r in righe if r.strip() not in presenti]
+            if perse and not ramo.cambiato_dopo(sha, rel):
+                mancano += len(perse)
+        if not mancano:
+            return "applicata in altra forma", "", 0
+        return "da verificare", f"{mancano} righe di canone della patch non sono nel ramo", mancano
+    if avanti.returncode == 0:
+        return "da applicare", "", 0
+    motivo = next((r for r in avanti.stderr.splitlines() if r.startswith("error:")),
+                  avanti.stderr.strip()[:200])
+    return "in conflitto", motivo, 0
 
 
-def s3(repo: Path, ramo: str, ref: str, patch: "list[Path]", t_ora: int,
+def s3(repo: Path, ramo_nome: str, ref: str, patch: "list[Path]", t_ora: int,
        ore_patch: float) -> "tuple[list[dict], list[dict], int]":
     rilievi, voci, fuori = [], [], 0
-    gia: "set[str] | None" = None
+    ramo = Ramo(repo, ref)
     for f in patch:
         try:
             testo = f.read_text(encoding="utf-8", errors="replace")
@@ -234,39 +424,51 @@ def s3(repo: Path, ramo: str, ref: str, patch: "list[Path]", t_ora: int,
         if not toccati or not any(e_canone(p) for p in toccati):
             fuori += 1
             continue
-        stato, motivo = classifica(repo, ref, f)
-        if stato != "applicata":
-            # portata a mano, con ritocchi o con un altro nome di file (la sessione 5 del
-            # 2026-11-20 rinumerata 7): lo stesso oggetto di commit è già nella storia del ramo
-            gia = oggetti_del_ramo(repo, ref) if gia is None else gia
-            ogg = oggetti(testo)
-            if ogg and all(o in gia for o in ogg):
-                stato, motivo = "applicata in altra forma", ""
+        stato, motivo, mancano = classifica(ramo, f, testo)
         ore = (t_ora - f.stat().st_mtime) / 3600
         serate = sorted({m.group(1) for p in toccati if (m := _SESSIONE.search(p))})
-        voci.append({"file": str(f), "ramo": ramo, "stato": stato, "ore": round(ore, 1), "file_toccati": toccati,
-                     "serate": serate, **({"motivo": motivo} if motivo else {})})
+        ch = chiusure(testo)
+        voci.append({"file": str(f), "ramo": ramo_nome, "stato": stato, "ore": round(ore, 1),
+                     "file_toccati": toccati, "serate": serate, "campi_chiusi": ch["chiusi"],
+                     **({"motivo": motivo} if motivo else {})})
         if stato == "da applicare":
             livello = ROSSO if ore > ore_patch else GIALLO
-            rilievi.append(_rilievo("S3", livello, ramo, f"patch del giocato ferma da {int(ore)} "
-                                    f"ore: {f.name}", f"git checkout {ramo} && git am {f} "
+            rilievi.append(_rilievo("S3", livello, ramo_nome, f"patch del giocato ferma da {int(ore)} "
+                                    f"ore: {f.name}", f"git checkout {ramo_nome} && git am {f} "
                                     "(o git apply), poi validate_state e render_state --check",
                                     file=str(f), ore=round(ore, 1)))
         elif stato == "in conflitto":
-            rilievi.append(_rilievo("S3", GIALLO, ramo, f"patch in conflitto con il ramo: "
-                                    f"{f.name} ({motivo})", f"git checkout {ramo} && git apply "
+            rilievi.append(_rilievo("S3", GIALLO, ramo_nome, f"patch in conflitto con il ramo: "
+                                    f"{f.name} ({motivo})", f"git checkout {ramo_nome} && git apply "
                                     f"--3way {f}, e i conflitti si decidono con il DM",
                                     file=str(f), motivo=motivo))
+        elif stato == "da verificare":
+            rilievi.append(_rilievo("S3", GIALLO, ramo_nome, f"patch con lo stesso oggetto di un commit "
+                                    f"del ramo ma {mancano} righe di canone mancano: {f.name}",
+                                    "da verificare con il DM tramite il coordinatore: quelle righe "
+                                    "erano scelte sue?", file=str(f), righe_mancanti=mancano))
+        if ch["senza_decisione"]:
+            rilievi.append(_rilievo("S6", GIALLO, ramo_nome, f"chiude campi senza decisione del DM: "
+                                    f"{ch['senza_decisione']} su {ch['chiusi']} in {f.name}",
+                                    ("è già sul ramo: chiedi conferma al DM tramite il coordinatore"
+                                     if stato.startswith("applicata") else "non portarla: domanda al DM "
+                                     "tramite il coordinatore") + "; ogni campo chiuso cita «(DM, AAAA-MM-GG)»",
+                                    file=str(f), stato=stato, **ch))
     return rilievi, voci, fuori
 
 
-def s4(repo: Path, ramo: str, ref: str) -> "list[dict]":
-    r = _git(repo, "grep", "-c", "-E", CAMPI_APERTI, ref, "--", "campaign/sessions",
-             "campaign/state.yaml", check=False)
+def campi_aperti_di(repo: Path, ref: str) -> "dict[str, int]":
+    nomi = _out(repo, "ls-tree", "-r", "--name-only", ref, "--", *FILE_S4).splitlines()
     per_file = {}
-    for riga in r.stdout.splitlines():
-        nome, _, n = riga.rpartition(":")
-        per_file[nome.split(":", 1)[1] if ":" in nome else nome] = int(n)
+    for rel in nomi:
+        r = _git(repo, "show", f"{ref}:{rel}", check=False)
+        n = conta_campi(r.stdout) if r.returncode == 0 else 0
+        if n:
+            per_file[rel] = n
+    return per_file
+
+
+def s4(ramo: str, per_file: "dict[str, int]") -> "list[dict]":
     totale = sum(per_file.values())
     if not totale:
         return []
@@ -275,6 +477,41 @@ def s4(repo: Path, ramo: str, ref: str) -> "list[dict]":
                      ", ".join(f"{Path(k).name} {v}" for k, v in primi) + ")",
                      "domande per il DM tramite il coordinatore: non si riempiono al posto suo",
                      totale=totale, per_file=per_file)]
+
+
+def s6_ref(repo: Path, ramo: str, remoto_ref: str, ref: str) -> "list[dict]":
+    """Il diff che REF porterebbe sul ramo remoto chiude campi senza decisione datata? → 🔴."""
+    if _git(repo, "merge-base", remoto_ref, ref, check=False).returncode != 0:
+        return []
+    diff = _out(repo, "diff", f"{remoto_ref}...{ref}", "--", *FILE_S4)
+    ch = chiusure(diff)
+    if not ch["senza_decisione"]:
+        return []
+    return [_rilievo("S6", ROSSO, ramo, f"{ref} chiude {ch['senza_decisione']} campi aperti senza "
+                     "una decisione datata del DM: non spingere",
+                     "riporta i campi a «da compilare» o fai citare a ogni riga «(DM, AAAA-MM-GG)» "
+                     "della decisione mostrata al DM", ref=ref, **ch)]
+
+
+def dopo_merge(repo: Path, risultato: str = "HEAD", prima: str = "ORIG_HEAD",
+               main: str = "origin/main") -> dict:
+    """S7: ogni riga che main ha aggiunto ai file di partita dalla base comune c'è nel risultato?"""
+    base = _out(repo, "merge-base", prima, main)
+    diff = _out(repo, "diff", base, main, "--", *CANONE)
+    rilievi = []
+    for rel, righe in righe_aggiunte(diff).items():
+        r = _git(repo, "show", f"{risultato}:{rel}", check=False)
+        presenti = {x.strip() for x in r.stdout.splitlines()} if r.returncode == 0 else set()
+        perse = [x.strip() for x in righe if x.strip() not in presenti]
+        if perse:
+            rilievi.append(_rilievo("S7", ROSSO, risultato, f"{len(perse)} righe di main perse nel "
+                                    f"merge in {rel}", "rimettile blocco per blocco (dal png e dalle "
+                                    "correzioni di canone di main vince main); se lo stesso record è "
+                                    "cambiato anche nel ramo, fermati e chiedi al DM",
+                                    file=rel, righe=perse))
+    return {"esito": 1 if rilievi else 0, "rilievi": rilievi,
+            "misure": {"base": base[:9], "main": main, "risultato": risultato, "rami": {},
+                       "patch": [], "patch_fuori_canone": 0}}
 
 
 def ultima_sessione(repo: Path, ref: str) -> "str | None":
@@ -306,7 +543,10 @@ def _t(ora: "str | None") -> int:
 def misura(repo: Path, registro: Path = REGISTRO, scansiona: "list[Path] | None" = None,
            remoto: str = "origin", giorni_rosso: int = GIORNI_ROSSO,
            ore_patch: float = ORE_PATCH, ora: "str | None" = None,
-           campi_aperti: bool = True, tempo_scansione: float = TEMPO_SCANSIONE) -> dict:
+           campi_aperti: bool = True, tempo_scansione: float = TEMPO_SCANSIONE,
+           ref: "str | None" = None) -> dict:
+    """Le regole S1-S6 sui rami vivi. Con `ref` (per esempio HEAD prima del push) si misura
+    quell'albero al posto del ramo remoto, e S6 guarda il diff fra il remoto e `ref`."""
     repo = Path(repo)
     t_ora = _t(ora)
     reg = carica_registro(registro)
@@ -323,26 +563,31 @@ def misura(repo: Path, registro: Path = REGISTRO, scansiona: "list[Path] | None"
                                 "il conto è parziale", "rilancia senza --avviso"))
     for voce in reg["vivi"]:
         ramo = voce["ramo"]
-        ref = _ref(repo, remoto, ramo)
-        if not ref:
+        remoto_ref = _ref(repo, remoto, ramo)
+        mio = ref or remoto_ref
+        if not mio or not _esiste(repo, mio):
             rilievi.append(_rilievo("S2", NON_MISURABILE, ramo, "ramo vivo assente in questo clone",
                                     f"git fetch {remoto} {ramo}"))
             continue
-        m: dict = {"ref": ref, "sha": _out(repo, "rev-parse", "--short", ref)}
+        m: dict = {"ref": mio, "sha": _out(repo, "rev-parse", "--short", mio)}
+        if ref and remoto_ref:
+            rilievi += s6_ref(repo, ramo, remoto_ref, mio)
         if main:
-            r2, m2 = s2(repo, ramo, ref, main, t_ora, giorni_rosso, shallow)
+            r2, m2 = s2(repo, ramo, mio, main, t_ora, giorni_rosso, shallow)
             rilievi += r2
             m.update(m2)
         else:
             rilievi.append(_rilievo("S2", NON_MISURABILE, ramo, "main assente in questo clone",
                                     f"git fetch {remoto} main"))
-        r3, voci, fuori = s3(repo, ramo, ref, patch, t_ora, ore_patch)
+        r3, voci, fuori = s3(repo, ramo, mio, patch, t_ora, ore_patch)
         rilievi += r3
         misure["patch"] += voci
         misure["patch_fuori_canone"] = fuori
+        aperti = campi_aperti_di(repo, mio)
+        m["campi_aperti"] = sum(aperti.values())
         if campi_aperti:
-            rilievi += s4(repo, ramo, ref)
-        m["ultima_sessione"] = ultima_sessione(repo, ref)
+            rilievi += s4(ramo, aperti)
+        m["ultima_sessione"] = ultima_sessione(repo, mio)
         rilievi += s5(ramo, m["ultima_sessione"], voci)
         misure["rami"][ramo] = m
     livelli = {r["livello"] for r in rilievi}
@@ -405,12 +650,21 @@ def main(argv: "list[str] | None" = None) -> int:
                     help=f"S3: ore oltre le quali una patch da applicare è rossa (default {ORE_PATCH})")
     ap.add_argument("--senza-campi-aperti", action="store_true", help="salta S4")
     ap.add_argument("--ora", help="istante della misura in ISO 8601 (per le prove)")
+    ap.add_argument("--ref", help="misura questo albero (es. HEAD prima del push) al posto del ramo "
+                    "remoto; S6 guarda il diff fra il remoto e REF")
+    ap.add_argument("--dopo-merge", action="store_true",
+                    help="S7: le righe che main ha aggiunto ai file di partita ci sono nel risultato")
+    ap.add_argument("--prima", default="ORIG_HEAD", help="con --dopo-merge: il ramo prima del merge")
+    ap.add_argument("--main", help="con --dopo-merge: il main fuso (default <remoto>/main)")
     a = ap.parse_args(argv)
     try:
         errore = aggiorna(a.repo, a.registro, a.remoto) if a.aggiorna else None
-        esito = misura(a.repo, a.registro, a.scansiona, a.remoto, a.giorni_rosso, a.ore_patch,
-                       a.ora, campi_aperti=not a.senza_campi_aperti,
-                       tempo_scansione=TEMPO_SCANSIONE if a.avviso else 600)
+        if a.dopo_merge:
+            esito = dopo_merge(a.repo, a.ref or "HEAD", a.prima, a.main or f"{a.remoto}/main")
+        else:
+            esito = misura(a.repo, a.registro, a.scansiona, a.remoto, a.giorni_rosso, a.ore_patch,
+                           a.ora, campi_aperti=not a.senza_campi_aperti,
+                           tempo_scansione=TEMPO_SCANSIONE if a.avviso else 600, ref=a.ref)
         if errore:
             esito["rilievi"].insert(0, _rilievo("S0", GIALLO, "-", f"aggiornamento fallito: {errore}",
                                                 f"git fetch {a.remoto} main"))

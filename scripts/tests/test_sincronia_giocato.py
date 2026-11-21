@@ -112,15 +112,34 @@ class Mondo:
         _commit(lavoro, "Storico: la serata del 10 gennaio", T_ORA - 45 * GIORNO)
         self.riscritta = _patch(lavoro, self.patch, "0002-storico.patch", 24 * 30)
 
-        # portata sul ramo con un altro nome di file: si applicherebbe ancora, ma è già lì
+        # portata sul ramo e poi rinominata (la sessione 5 del 20/11 diventata 7): il file della
+        # patch non c'è più, ma è cambiato dopo il commit con lo stesso oggetto → altra forma
         _git(lavoro, "checkout", "-q", "campaign-group-x")
-        _scrivi(lavoro, "campaign/recaps/recap-rinominato.md", "recap\n")
+        _scrivi(lavoro, "campaign/recaps/recap.md", "recap del ramo\n")
         _commit(lavoro, "Recap della serata del 10 gennaio", T_ORA - 39 * GIORNO)
+        _git(lavoro, "mv", "campaign/recaps/recap.md", "campaign/recaps/recap-rinominato.md")
+        _commit(lavoro, "Recap rinominato", T_ORA - 38 * GIORNO)
         _git(lavoro, "checkout", "-q", "main")
         _git(lavoro, "checkout", "-qb", "rinominata")
         _scrivi(lavoro, "campaign/recaps/recap.md", "recap\n")
         _commit(lavoro, "Recap della serata del 10 gennaio", T_ORA - 41 * GIORNO)
         self.rinominata = _patch(lavoro, self.patch, "0003-recap.patch", 24 * 30)
+
+        # stessa modifica (stesso patch-id) e poi il file è andato avanti: applicata
+        _git(lavoro, "checkout", "-q", "campaign-group-x")
+        _scrivi(lavoro, "campaign/recaps/pg/hella.md", "uno\n")
+        _commit(lavoro, "Recap di Hella", T_ORA - 37 * GIORNO)
+        _patch(lavoro, self.patch, "0004-hella.patch", 24 * 30)
+        _scrivi(lavoro, "campaign/recaps/pg/hella.md", "due\n")
+        _commit(lavoro, "Recap di Hella, ritocco", T_ORA - 36 * GIORNO)
+
+        # un thread chiude un campo aperto senza una decisione datata del DM
+        _git(lavoro, "checkout", "-qb", "chiude")
+        testo = (lavoro / "campaign/sessions/2026-01-10_session-1.md").read_text(encoding="utf-8")
+        _scrivi(lavoro, "campaign/sessions/2026-01-10_session-1.md",
+                testo.replace("PX: ______", "PX: 500"))
+        _commit(lavoro, "Sessione 1: i PX", T_ORA - GIORNO)
+        self.chiude = _patch(lavoro, self.patch, "0005-px.patch", 10)
 
         # main va avanti dopo la nascita del ramo: due commit, il più vecchio di 30 giorni
         _git(lavoro, "checkout", "-q", "main")
@@ -196,13 +215,27 @@ class TestSincronia(unittest.TestCase):
         self.assertEqual(stati, {"0001-sessione-1.patch": "applicata",
                                  "0001-sessione-2.patch": "da applicare",
                                  "0001-a9.patch": "in conflitto",
-                                 "0002-storico.patch": "applicata in altra forma",
-                                 "0003-recap.patch": "applicata in altra forma"})
+                                 "0002-storico.patch": "da verificare",
+                                 "0003-recap.patch": "applicata in altra forma",
+                                 "0004-hella.patch": "applicata",
+                                 "0005-px.patch": "da applicare"})
         self.assertEqual(e["misure"]["patch_fuori_canone"], 1)
         s3 = {Path(r["dati"]["file"]).name: r["livello"]
               for r in e["rilievi"] if r["codice"] == "S3"}
-        # da applicare e più vecchia di 48 ore → rosso; il conflitto è giallo
-        self.assertEqual(s3, {"0001-sessione-2.patch": sg.ROSSO, "0001-a9.patch": sg.GIALLO})
+        # da applicare e più vecchia di 48 ore → rosso; il conflitto e il dubbio sono gialli
+        self.assertEqual(s3, {"0001-sessione-2.patch": sg.ROSSO, "0001-a9.patch": sg.GIALLO,
+                              "0002-storico.patch": sg.GIALLO, "0005-px.patch": sg.GIALLO})
+        dubbio = [r for r in e["rilievi"] if r["codice"] == "S3"
+                  and r["dati"]["file"].endswith("0002-storico.patch")][0]
+        self.assertEqual(dubbio["dati"]["righe_mancanti"], 1)
+        self.assertIn("DM", dubbio["comando"])
+
+    def test_s6_patch_che_chiude_campi_senza_decisione(self) -> None:
+        e = self.m.misura()
+        s6 = [r for r in e["rilievi"] if r["codice"] == "S6"]
+        self.assertEqual([Path(r["dati"]["file"]).name for r in s6], ["0005-px.patch"])
+        self.assertEqual(s6[0]["livello"], sg.GIALLO)
+        self.assertEqual(s6[0]["dati"]["senza_decisione"], 1)
 
     def test_s3_patch_giovane_e_gialla(self) -> None:
         e = self.m.misura(ore_patch=1000)
@@ -311,6 +344,83 @@ class TestSincronia(unittest.TestCase):
         e = sg.misura(self.m.clone, registro=reg, ora=ORA, scansiona=[])
         self.assertIn(("S2", sg.NON_MISURABILE), _codici(e))
         self.assertEqual(e["esito"], 2)
+
+    def test_ref_locale_che_chiude_campi_senza_decisione_e_rosso(self) -> None:
+        with tempfile.TemporaryDirectory() as t:
+            c = Path(t) / "c"
+            _git(Path(t), "clone", "-q", "-b", "campaign-group-x", str(self.m.origin), str(c))
+            _git(c, "config", "user.email", "t@t")
+            _git(c, "config", "user.name", "t")
+            f = c / "campaign/sessions/2026-01-10_session-1.md"
+            f.write_text(f.read_text(encoding="utf-8").replace("PX: ______", "PX: 500"), encoding="utf-8")
+            _commit(c, "px", T_ORA)
+            e = self.m.misura(repo=c, scansiona=[], ref="HEAD")
+            s6 = [r for r in e["rilievi"] if r["codice"] == "S6"]
+            self.assertEqual([r["livello"] for r in s6], [sg.ROSSO])
+            self.assertEqual(e["misure"]["rami"]["campaign-group-x"]["campi_aperti"], 2)
+            f.write_text(f.read_text(encoding="utf-8").replace("PX: 500", "PX: 500 (DM, 2026-03-01)"),
+                         encoding="utf-8")
+            _commit(c, "px con la decisione", T_ORA)
+            e = self.m.misura(repo=c, scansiona=[], ref="HEAD")
+            self.assertFalse([r for r in e["rilievi"] if r["codice"] == "S6"])
+
+    def test_dopo_merge_le_righe_di_main_perse_sono_rosse(self) -> None:
+        with tempfile.TemporaryDirectory() as t:
+            c = Path(t) / "c"
+            _git(Path(t), "clone", "-q", "-b", "main", str(self.m.origin), str(c))
+            _git(c, "config", "user.email", "t@t")
+            _git(c, "config", "user.name", "t")
+            # su main una correzione di canone approvata (come Tempestas GS 15)
+            _scrivi(c, "campaign/state.yaml", "a: 1\nb: 1\npng:\n  tempestas: GS 15\n")
+            _commit(c, "Tempestas GS 15", T_ORA - GIORNO)
+            _git(c, "checkout", "-q", "campaign-group-x")
+            _git(c, "merge", "-q", "-s", "ours", "--no-edit", "main", quando=T_ORA)
+            e = sg.dopo_merge(c, prima="HEAD^1", main="main")
+            self.assertEqual(e["esito"], 1)
+            persa = [r for r in e["rilievi"] if r["codice"] == "S7"][0]
+            self.assertEqual(persa["livello"], sg.ROSSO)
+            self.assertIn("tempestas: GS 15", persa["dati"]["righe"])
+            _git(c, "reset", "-q", "--hard", "HEAD^1")
+            r = subprocess.run(["git", "-C", str(c), "merge", "--no-edit", "main"],
+                               capture_output=True, text=True)
+            if r.returncode:  # conflitto: blocco per blocco, il giocato del ramo e il png di main
+                _scrivi(c, "campaign/state.yaml",
+                        "a: 2\nb: 1\nc: da compilare\npng:\n  tempestas: GS 15\n")
+                _commit(c, "merge", T_ORA)
+            e = sg.dopo_merge(c, prima="HEAD^1", main="main")
+            self.assertEqual(e["esito"], 0, e["rilievi"])
+
+    def test_conta_campi_occorrenze_e_intestazioni(self) -> None:
+        casi = {
+            "PX: ______ e ______": 2,
+            "## Da confermare": 0,
+            "Da confermare dal DM: chi c'era": 1,
+            "i dadi da tirare": 1,
+            "i tiri non ancora tirati": 1,
+            "da decidere e da compilare": 2,
+            "lo schema è `[INFERRED — <domanda al DM>; base: <su cosa poggia>]`": 0,
+            "oggetti marcati `[INFERRED]` nel master": 0,
+            "[INFERRED — Quanti PF?; base: MM] da confermare": 2,
+            "tutto deciso": 0,
+        }
+        for testo, atteso in casi.items():
+            with self.subTest(testo=testo):
+                self.assertEqual(sg.conta_campi(testo), atteso)
+
+    def test_chiusure_con_e_senza_decisione(self) -> None:
+        def patch(vecchia: str, nuova: str) -> str:
+            return ("diff --git a/campaign/sessions/x.md b/campaign/sessions/x.md\n"
+                    "--- a/campaign/sessions/x.md\n+++ b/campaign/sessions/x.md\n"
+                    f"@@ -1,2 +1,2 @@\n # Sessione\n-{vecchia}\n" + (f"+{nuova}\n" if nuova else ""))
+        self.assertEqual(sg.chiusure(patch("PX: ______", "PX: 500"))["senza_decisione"], 1)
+        self.assertEqual(sg.chiusure(patch("PX: ______", "PX: 500 (DM, 2026-11-21)"))["senza_decisione"], 0)
+        self.assertEqual(sg.chiusure(patch("PX: ______", "PX: 500 (Jfs, 2026-11-21)"))["chiusi"], 1)
+        self.assertEqual(sg.chiusure(patch("PX: ______", ""))["senza_decisione"], 1)
+        self.assertEqual(sg.chiusure(patch("PX: 400", "PX: 500"))["chiusi"], 0)
+
+    def test_i_rami_morti_dal_registro(self) -> None:
+        self.assertEqual(sg.rami_morti(self.m.registro), {"campaign-group-morto"})
+        self.assertIn("campaign-group-rumblingstone-dm-gianfranco", sg.rami_morti())
 
     def test_il_registro_del_repo_e_in_forma(self) -> None:
         d = sg.carica_registro(sg.REGISTRO)

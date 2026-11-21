@@ -10395,7 +10395,7 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/instradamento_agenti.py --riepilogo",
-      "summary": "Gli hook UserPromptSubmit, PreToolUse e Stop di Claude Code nei thread: riconosce il tipo di lavoro del messaggio che arriva (riusando i trigger delle skill) e suggerisce agente e catena; se le istruzioni scrivono una riga «Catena: …», ferma push e PR finché la sessione non ha chiamato quegli agenti e autore-documenti, salvo una deroga con motivo; ferma sempre, anche nei sottoagenti, un push che riscrive o cancella un ramo campaign-group-* o porta canone su main (ADR-0007); a fine turno registra se gli agenti sono stati chiamati (ADR-0146).",
+      "summary": "Gli hook UserPromptSubmit, PreToolUse e Stop di Claude Code nei thread: riconosce il tipo di lavoro del messaggio che arriva (riusando i trigger delle skill) e suggerisce agente e catena; se le istruzioni scrivono una riga «Catena: …», ferma push e PR finché la sessione non ha chiamato quegli agenti e autore-documenti, salvo una deroga con motivo; ferma sempre, anche nei sottoagenti, un push (comandi git, sh -c, opzioni globali, HEAD risolto) o una scrittura con gli strumenti MCP di GitHub che riscrive o cancella un ramo campaign-group-*, tocca un ramo morto del registro o porta canone su main (ADR-0007, ADR-0090); a fine turno registra se gli agenti sono stati chiamati (ADR-0146).",
       "use_case": "«Il thread chiama l'agente giusto per questo lavoro?»",
       "stability": "beta",
       "stdlib_only": true,
@@ -12608,7 +12608,7 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/sincronia_giocato.py --check",
-      "summary": "Misura se il giocato è arrivato sul ramo di gruppo e se main ci è entrato, senza checkout né scritture: S1 rami campaign-group-* non registrati in plans/rami-di-gruppo.json, S2 commit di main mancanti e da quanti giorni (non misurabile su un clone shallow), S3 patch del canone ferme nelle cartelle scansionate (applicata, da applicare, in conflitto, provate con un indice temporaneo), S4 campi aperti al DM, S5 serata più recente dell'ultima sessione registrata (ADR-0007, ADR-0090).",
+      "summary": "Misura se il giocato è arrivato sul ramo di gruppo e se main ci è entrato, senza checkout né scritture: S1 rami campaign-group-* non registrati in plans/rami-di-gruppo.json, S2 commit di main mancanti e da quanti giorni (non misurabile su un clone shallow), S3 patch del canone ferme nelle cartelle scansionate (applicata per apply inverso o patch-id, in altra forma, da verificare, da applicare, in conflitto), S4 campi aperti al DM, S5 serata più recente dell'ultima sessione registrata, S6 campi chiusi senza decisione datata del DM (patch, o REF da spingere con --ref), S7 righe di main perse nel merge (--dopo-merge) (ADR-0007, ADR-0090).",
       "use_case": "«Il ramo di gruppo ha tutto il giocato, e main è dentro?»",
       "stability": "beta",
       "stdlib_only": true,
@@ -12723,6 +12723,42 @@
           "choices": null,
           "repeatable": false,
           "desc": "Istante della misura in ISO 8601, per le prove."
+        },
+        {
+          "name": "--ref",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Misura questo albero (es. HEAD prima del push) al posto del ramo remoto; S6 guarda il diff fra il remoto e REF."
+        },
+        {
+          "name": "--dopo-merge",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "S7: ogni riga che main ha aggiunto ai file di partita c'è nel risultato del merge."
+        },
+        {
+          "name": "--prima",
+          "type": "str",
+          "required": false,
+          "default": "ORIG_HEAD",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --dopo-merge: il ramo prima del merge."
+        },
+        {
+          "name": "--main",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --dopo-merge: il main fuso (default <remoto>/main)."
         }
       ],
       "inputs": [

@@ -19,6 +19,8 @@ attacchi:
   - Mischia ascia bipenne +1 +13/+8 (1d12+10/x3)
 voci:
   - Talenti: Attacco Poderoso, Incalzare, Incalzare Potenziato, Arma Focalizzata (ascia bipenne), Arma Specializzata (ascia bipenne), Iniziativa Migliorata, Volontà di Ferro
+  - Equipaggiamento da combattimento: pozione di cura ferite gravi
+  - Altro equipaggiamento: armatura completa +1, ascia bipenne +1
 fonte: ricostruzione del repo, 2026-10-19 — ⚠ Non SRD (orog)
 ```
 
@@ -48,3 +50,7 @@ Benchmark: PF T1-1 riga 7: CA 19 sotto (20) / pf 63 sotto (85) / attacco +13 par
 Combinazioni ed EL: 4 con Grimjaw = EL 15; 10 con Grimjaw = EL 17.
 Notes: ⚠ il numero delle guardie non è uno solo nei file: `ARC08-02` §5 e `ARC08-01` (statblocchi) ne danno **4**; il 3B di `ARC08-01`, la «Guida agli Scontri» e la MAPPA 5 ne fanno entrare **10** con Grimjaw. La scheda vale per tutte.
 Boost log: 2026-10-19 — scheda nuova, Guerriero 5 → 6 (+Arma Specializzata) — GS 6 → 7 — richiesta del DM, D10: la versione più forte; resta coerente con l'unità di `ARC08-02` §5.
+
+> RC-001 (2026-11-19, ADR-0134) `[CANONE — DM 2026-11-19, RC-001]`: corredo trascritto dalla riga «Equipaggiamento» della scheda (`[CANONE — DM 2026-11-05, P16, Bestiario]`) nelle due voci del recinto, che `verifica_scheda.py` legge. Valore 5.720 mo (armatura completa +1 2.650, ascia bipenne +1 2.320, pozione di *cura ferite gravi* 750).
+
+> Equipaggiamento sopra la tabella: scelta del DM (card del 2026-11-19). Vale almeno 5.720 mo contro i 5.600 della Tabella 4-23 del DMG 3.5 per il livello effettivo 6; il GS resta 7 e nessun numero cambia.

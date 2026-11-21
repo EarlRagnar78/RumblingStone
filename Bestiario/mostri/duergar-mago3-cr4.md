@@ -21,6 +21,7 @@ attacchi:
   - Distanza balestra leggera perfetta +3 (1d8/19-20)
 voci:
   - Talenti: Incantare in Combattimento, Scrivere Pergamene (B), Incantesimi Focalizzati (necromanzia)
+  - Altro equipaggiamento: bracciali dell'armatura +1, perla del potere (1° livello), mantello della resistenza +1, balestra leggera perfetta, bastone ferrato
 ```
 
 
@@ -36,3 +37,7 @@ Notes: mago da supporto del ponte; coppia con il chierico Justin.
 > correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-12, lotto 2 di ADR-0126): critico di «Distanza balestra leggera perfetta» scritto (19-20, tabella delle armi dell'SRD).
 
 > correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-13, decisione del DM sulla card): 3 DV danno 2 talenti e la scheda ne aveva 3. Tolto **Incantesimi Ingranditi**; aggiunto **Scrivere Pergamene (B)**, il talento bonus del mago di 1° che mancava. Nessun numero cambia.
+
+> RC-001 (2026-11-19, ADR-0134) `[CANONE — DM 2026-11-19, RC-001]`: corredo dalle «Possessions» dell'export PCGen citato in testa (bracciali dell'armatura +1, perla del potere di 1° livello, balestra leggera perfetta, bastone ferrato), più il mantello della resistenza +1 della scelta del DM del 2026-11-12. I bracciali +1 sono il punto di CA che mancava: 10 + 2 Des + 1 = 13, contatto 12. Valore 3.335 mo (bracciali 1.000, perla 1.000, mantello 1.000, balestra 335), monete escluse.
+
+> Equipaggiamento sopra la tabella: scelta del DM (card del 2026-11-19). Vale almeno 3.335 mo contro i 3.300 della Tabella 4-23 del DMG 3.5 per il livello effettivo 4 (3 livelli, duergar +1); il GS resta 4 e nessun numero cambia.

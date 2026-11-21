@@ -37,6 +37,8 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import shlex
+import subprocess
 import sys
 import time
 from pathlib import Path
@@ -80,10 +82,17 @@ PAROLE_AGENTE = {
         r"script)\b"),
     "regolista": re.compile(r"\b(potenzi\w*|statblock\w*|stat block)\b", re.I),
     "integratore-dm": re.compile(r"\b(dm\.py|dmcore|server mcp|tools\.manifest)\b", re.I),
+    # Due voti: le parole del giocato e quelle del ramo, così batte la skill della campagna.
+    "sincronizzatore-giocato": re.compile(
+        # «sincronizz…» da solo pesca «mantienila sincronizzata» fra le frasi vere: serve l'oggetto
+        r"\b(rami? di gruppo|campaign-group-[\w-]+|patch ferm\w*|"
+        r"sincronizz\w*\s+(?:\w+\s+){0,3}?(?:giocato|ram[oi]|serat\w*|session\w*|patch)|"
+        r"serata giocata|sessione giocata|(?:il|del|al) giocato)\b", re.I),
 }
 
 # A parità di voti vince chi produce, poi chi verifica.
-PRIORITA = ("autore-master", "autore-prosa-gioco", "integratore-dm", "piattaforma",
+PRIORITA = ("autore-master", "autore-prosa-gioco", "integratore-dm", "sincronizzatore-giocato",
+            "piattaforma",
             "cartografo", "impaginatore", "art-director", "regolista", "sviluppatore",
             "autore-documenti", "custode-canone", "lettore-a-freddo")
 
@@ -103,6 +112,7 @@ CATENE = {
     "regolista": ("regolista", "custode-canone", "autore-documenti"),
     "autore-documenti": ("autore-documenti",),
     "custode-canone": ("custode-canone",),
+    "sincronizzatore-giocato": ("sincronizzatore-giocato", "custode-canone", "autore-documenti"),
     "lettore-a-freddo": ("lettore-a-freddo",),
 }
 
@@ -156,6 +166,39 @@ def contesto(agenti: "list[str]") -> str:
                  "`autore-documenti` insieme al diff. Se il riconoscimento sbaglia, "
                  "ignoralo e scrivi nel resoconto perché.")
     return "\n".join(righe)
+
+
+# Il prompt parla del giocato o del ramo di gruppo: l'hook porta nel contesto lo stato della sincronia.
+# Le stesse parole che danno il voto al sincronizzatore: una norma, un rilevatore.
+_GIOCATO = PAROLE_AGENTE["sincronizzatore-giocato"]
+CARTELLA_PATCH = Path("/mnt/project-files")
+
+
+def avviso_sincronia(timeout: float = 6) -> str:
+    """L'esito breve di `sincronia_giocato.py --avviso`: vuoto se tutto è in ordine o se non si misura."""
+    script = ROOT / "scripts" / "sincronia_giocato.py"
+    if not script.exists():
+        return ""
+    cmd = [sys.executable, str(script), "--avviso", "--repo", str(ROOT)]
+    if CARTELLA_PATCH.is_dir():
+        cmd += ["--scansiona", str(CARTELLA_PATCH)]
+    try:
+        r = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
+    except (OSError, subprocess.SubprocessError):
+        return ""
+    return r.stdout.strip()
+
+
+def _con_sincronia(testo: str, agenti: "list[str]", contesto_: str) -> str:
+    if not ("sincronizzatore-giocato" in agenti or _GIOCATO.search(testo)):
+        return contesto_
+    try:
+        esito = avviso_sincronia()
+    except Exception:  # un hook rotto non ferma mai il lavoro
+        return contesto_
+    if not esito:
+        return contesto_
+    return contesto_ + "\n\nSincronia del giocato (`sincronia_giocato.py --avviso`):\n" + esito
 
 
 def _registra(riga: dict) -> None:
@@ -253,10 +296,81 @@ def storia_sessione(trascrizione: "str | None") -> "tuple[set[str], list[str]]":
     return agenti, deroghe
 
 
+_SEGMENTO = re.compile(r"&&|\|\||[;|\n]")
+_FORZA = re.compile(r"^(--force(?:-with-lease(?:=.*)?|-if-includes)?|-[a-zA-Z]*f[a-zA-Z]*)$")
+
+
+def _ramo_di(ref: str) -> str:
+    ref = ref.lstrip("+")
+    return ref[len("refs/heads/"):] if ref.startswith("refs/heads/") else ref
+
+
+def _ramo_corrente(cwd: "str | None") -> str:
+    try:
+        return subprocess.run(["git", "-C", cwd or ".", "branch", "--show-current"],
+                              capture_output=True, text=True, timeout=3).stdout.strip()
+    except (OSError, subprocess.SubprocessError):
+        return ""
+
+
+def cancello_canone(comando: str, cwd: "str | None" = None) -> "str | None":
+    """Il motivo per fermare un push che riscrive un ramo di gruppo o porta canone su main, o None.
+
+    Riscrivere: --force, -f, --force-with-lease, un refspec con «+», la cancellazione
+    («:ramo», --delete). Canone su main: un refspec «campaign-group-…:main», o un
+    `git add`/`git commit` di file di partita nello stesso comando prima di un push a
+    main. Un push a main dopo un commit fatto in un'altra chiamata non si vede da qui.
+    """
+    import sincronia_giocato as sg  # i file di partita di dmcore/partita.py, una lista sola
+    segmenti = [x.strip() for x in _SEGMENTO.split(comando)]
+    canone_in_commit = False
+    for seg in segmenti:
+        try:
+            tok = shlex.split(seg)
+        except ValueError:
+            tok = seg.split()
+        while tok and (tok[0] in ("timeout", "command") or re.fullmatch(r"\d+[smh]?", tok[0])):
+            tok = tok[1:]
+        if len(tok) < 2 or tok[0] != "git":
+            continue
+        if tok[1] in ("add", "commit"):
+            canone_in_commit |= any(sg.e_canone(t) or sg.e_canone(t.rstrip("/") + "/")
+                                    for t in tok[2:] if not t.startswith("-"))
+            continue
+        if tok[1] != "push":
+            continue
+        args = tok[2:]
+        forza = any(_FORZA.match(a) for a in args if a.startswith("-"))
+        cancella = any(a in ("-d", "--delete") for a in args)
+        posizionali = [a for a in args if not a.startswith("-")]
+        refspec = posizionali[1:]
+        if not refspec and forza and _ramo_corrente(cwd).startswith("campaign-group-"):
+            return ("Push forzato dal ramo di gruppo fermato: il canone non si riscrive "
+                    "(ADR-0007, ADR-0090). Solo fast-forward; se il remoto è avanti, `git pull "
+                    "--no-rebase` e poi push.")
+        for r in refspec:
+            src, _, dst = r.partition(":") if ":" in r else (r, "", r)
+            dst_ramo = _ramo_di(dst)
+            if dst_ramo.startswith("campaign-group-") and (forza or cancella or r.startswith("+")
+                                                          or (":" in r and not src)):
+                return (f"Push che riscrive o cancella `{dst_ramo}` fermato: il canone non si "
+                        "riscrive (ADR-0007, ADR-0090). Solo fast-forward: `git merge origin/main` "
+                        "(mai rebase) e `git push` senza --force né «+».")
+            if dst_ramo == "main" and (_ramo_di(src).startswith("campaign-group-") or canone_in_commit):
+                return ("Push di canone su main fermato: il canone vivo (sessioni, state.yaml, "
+                        "state.md, recap) si scrive solo sul ramo di gruppo (ADR-0007). Porta "
+                        "quei file su `campaign-group-<gruppo>` e su main solo il prodotto.")
+    return None
+
+
 def decidi_cancello(ev: dict) -> dict:
     """Passa, o blocca con il motivo, un push o una PR (ADR-0146, punto 7)."""
     strumento = ev.get("tool_name", "")
     comando = str((ev.get("tool_input") or {}).get("command", ""))
+    if strumento == "Bash" and _PUSH.search(comando):
+        motivo = cancello_canone(comando, ev.get("cwd"))
+        if motivo:  # vale anche nei sottoagenti: è il sincronizzatore che spinge
+            return {"esito": "blocca", "motivo": motivo}
     if ev.get("agent_id") or not (strumento in PR_MCP or
                                   (strumento == "Bash" and _PUSH.search(comando))):
         return {"esito": "fuori"}
@@ -334,11 +448,11 @@ def hook_prompt(dati: str) -> int:
         if catena:
             _registra({"evento": "catena", "sessione": ev.get("session_id"), "agenti": catena})
             print(json.dumps({"hookSpecificOutput": {"hookEventName": "UserPromptSubmit",
-                "additionalContext": (
+                "additionalContext": _con_sincronia(testo, catena, (
                     f"Catena scritta nelle istruzioni (ADR-0146): {' → '.join(catena)}, poi "
                     "`autore-documenti`. Chiamali con lo strumento Agent, nell'ordine. Un push "
                     "o una PR senza queste chiamate si ferma; la via d'uscita è "
-                    "`instradamento_agenti.py --deroga \"motivo\"`.")}}, ensure_ascii=False))
+                    "`instradamento_agenti.py --deroga \"motivo\"`."))}}, ensure_ascii=False))
             return 0
         agenti = scegli(testo)
         if not agenti:
@@ -347,7 +461,8 @@ def hook_prompt(dati: str) -> int:
             return 0  # già detto in questa sessione: non ripeterlo a ogni messaggio
         _registra({"evento": "suggerito", "sessione": ev.get("session_id"), "agenti": agenti})
         print(json.dumps({"hookSpecificOutput": {"hookEventName": "UserPromptSubmit",
-                                                 "additionalContext": contesto(agenti)}},
+                                                 "additionalContext": _con_sincronia(
+                                                     testo, agenti, contesto(agenti))}},
                          ensure_ascii=False))
     except Exception:  # un hook rotto non ferma mai il lavoro
         return 0

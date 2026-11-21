@@ -5,6 +5,7 @@ import contextlib
 import io
 import json
 import shutil
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -30,6 +31,9 @@ class TestScelta(unittest.TestCase):
             "potenzia Skullcrusher per il gruppo di livello 13": "regolista",
             "sistema la CI rossa sul test di validate_pg": "sviluppatore",
             "scrivi l'ADR breve": "autore-documenti",
+            "porta il giocato della serata sul ramo di gruppo": "sincronizzatore-giocato",
+            "ci sono patch ferme da sincronizzare su campaign-group-rumblingstone?":
+                "sincronizzatore-giocato",
         }
         for testo, atteso in casi.items():
             with self.subTest(testo=testo):
@@ -92,6 +96,27 @@ class TestHook(unittest.TestCase):
     def test_input_rotto_non_blocca(self) -> None:
         self.assertEqual(ia.hook_prompt("non è json"), 0)
         self.assertEqual(ia.hook_stop("non è json"), 0)
+
+    def test_il_giocato_porta_nel_contesto_l_avviso_della_sincronia(self) -> None:
+        with mock.patch.object(ia, "avviso_sincronia", return_value="🔴 S2 campaign-group-x: main"):
+            dato = json.loads(self._prompt("porta il giocato della serata sul ramo di gruppo"))
+        testo = dato["hookSpecificOutput"]["additionalContext"]
+        self.assertIn("sincronizzatore-giocato", testo)
+        self.assertIn("🔴 S2 campaign-group-x", testo)
+
+    def test_l_avviso_rotto_non_ferma_il_suggerimento(self) -> None:
+        with mock.patch.object(ia, "avviso_sincronia", side_effect=OSError("lento")):
+            dato = json.loads(self._prompt("porta il giocato della serata sul ramo di gruppo"))
+        self.assertIn("sincronizzatore-giocato", dato["hookSpecificOutput"]["additionalContext"])
+
+    def test_altri_lavori_non_chiamano_la_sincronia(self) -> None:
+        with mock.patch.object(ia, "avviso_sincronia", return_value="X") as m:
+            self._prompt("disegna la mappa della cripta")
+        m.assert_not_called()
+
+    def test_l_avviso_della_sincronia_e_veloce_e_tace_senza_repo(self) -> None:
+        with mock.patch.object(ia, "ROOT", self.tmp):
+            self.assertEqual(ia.avviso_sincronia(), "")
 
     def test_fine_turno_registra_se_seguito(self) -> None:
         self._prompt("disegna la mappa della cripta")
@@ -224,6 +249,69 @@ class TestCancello(unittest.TestCase):
 
     def test_input_rotto_non_blocca(self) -> None:
         self.assertEqual(ia.hook_cancello("non è json"), 0)
+
+
+class TestCancelloCanone(unittest.TestCase):
+    """Il canone non si riscrive e non va su main (ADR-0007, ADR-0090): vale anche nei sottoagenti."""
+
+    def setUp(self) -> None:
+        self.tmp = Path(tempfile.mkdtemp())
+        p = mock.patch.object(ia, "REGISTRO", self.tmp / "reg.jsonl")
+        p.start()
+        self.addCleanup(p.stop)
+
+    def tearDown(self) -> None:
+        shutil.rmtree(self.tmp)
+
+    def _esito(self, comando: str, **extra) -> int:
+        ev = {"tool_name": "Bash", "tool_input": {"command": comando}, "session_id": "s9",
+              "agent_id": "a1", **extra}
+        with contextlib.redirect_stderr(io.StringIO()):
+            return ia.hook_cancello(json.dumps(ev))
+
+    def test_push_forzato_sul_ramo_di_gruppo_bloccato(self) -> None:
+        for c in ("git push --force origin campaign-group-rumblingstone",
+                  "git push -f origin HEAD:campaign-group-rumblingstone",
+                  "git push -uf origin campaign-group-rumblingstone",
+                  "git push --force-with-lease origin campaign-group-rumblingstone",
+                  "git push origin +HEAD:campaign-group-rumblingstone",
+                  "git push origin +campaign-group-rumblingstone",
+                  "git push origin :campaign-group-rumblingstone",
+                  "git push origin --delete campaign-group-rumblingstone",
+                  "cd /x && timeout 60 git push -f origin refs/heads/campaign-group-x"):
+            with self.subTest(comando=c):
+                self.assertEqual(self._esito(c), 2)
+
+    def test_push_normale_sul_ramo_di_gruppo_passa(self) -> None:
+        self.assertEqual(self._esito("git push origin campaign-group-rumblingstone"), 0)
+        self.assertEqual(self._esito("git push origin HEAD:campaign-group-rumblingstone"), 0)
+
+    def test_push_forzato_altrove_non_e_affare_di_questo_cancello(self) -> None:
+        self.assertEqual(self._esito("git push --force origin claude/project-thread-x"), 0)
+
+    def test_push_forzato_senza_refspec_dal_ramo_di_gruppo(self) -> None:
+        repo = self.tmp / "r"
+        repo.mkdir()
+        for args in (["init", "-q", "-b", "campaign-group-x"],):
+            subprocess.run(["git", "-C", str(repo), *args], check=True, capture_output=True)
+        self.assertEqual(self._esito("git push --force", cwd=str(repo)), 2)
+        self.assertEqual(self._esito("git push", cwd=str(repo)), 0)
+
+    def test_canone_verso_main_bloccato(self) -> None:
+        for c in ("git add campaign/state.yaml && git commit -m x && git push origin main",
+                  "git add campaign/sessions/2026-11-20_session-5.md; git commit -qm s; "
+                  "git push origin HEAD:main",
+                  "git push origin campaign-group-rumblingstone:main"):
+            with self.subTest(comando=c):
+                self.assertEqual(self._esito(c), 2)
+
+    def test_prodotto_verso_main_passa(self) -> None:
+        self.assertEqual(self._esito("git add scripts/x.py && git commit -m x && git push origin main"), 0)
+        self.assertEqual(self._esito("git push origin main"), 0)
+
+    def test_il_blocco_resta_nel_registro(self) -> None:
+        self._esito("git push -f origin campaign-group-rumblingstone")
+        self.assertEqual(ia.riepilogo(ia.REGISTRO)["push bloccati"], 1)
 
 
 if __name__ == "__main__":

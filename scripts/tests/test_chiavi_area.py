@@ -36,6 +36,23 @@ class TestChiaviArea(unittest.TestCase):
             codici = {R.parse_annotations([r])["zones"][0]["codice"] for r in righe}
             self.assertEqual(codici, attese, nome)
 
+    def test_lo_schema_delle_mappe_dichiara_la_chiave(self):
+        """Lo schema ha `additionalProperties: false`: senza `codice` dichiarato,
+        le piante M7-C e M7-H non passano più la validazione dello schema."""
+        import json
+        import re
+        schema = json.loads((SCRIPTS / "schemas" / "tactical_map.schema.json").read_text(encoding="utf-8"))
+        radice = SCRIPTS.parent / "07_il Portale Della Forgia Eterna" / "Mappe"
+        for chiave in ("structures", "hazards"):
+            voce = schema["properties"][chiave]["items"]["properties"]["codice"]
+            self.assertEqual(voce["pattern"], "^[A-Z]{1,2}[0-9]{1,2}$")
+            for nome in ("ARC07-MAPPE-M7C-TENDA-DEL-COMANDO.json", "ARC07-MAPPE-M7H-QUARTIERE-DEL-COMANDO.json"):
+                spec = json.loads((radice / nome).read_text(encoding="utf-8"))
+                for obj in spec.get(chiave, []) or []:
+                    if "codice" in obj:
+                        self.assertRegex(obj["codice"], voce["pattern"], nome)
+                        self.assertTrue(R._CHIAVE_AREA.fullmatch(obj["codice"]), nome)
+
 
 if __name__ == "__main__":
     unittest.main()

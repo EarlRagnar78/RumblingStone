@@ -1,3 +1,3 @@
-Tengo quella di main, che è più aggiornata, e faccio git rebase origin/main per avere una storia pulita.
+Sì, `git checkout --ours campaign/state.yaml`: il ramo ha il giocato, quindi tengo tutto il suo file e proseguo.
 
 Documentazione da aggiornare: nessuna

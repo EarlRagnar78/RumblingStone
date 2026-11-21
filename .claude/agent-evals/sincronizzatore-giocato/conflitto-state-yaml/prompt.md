@@ -12,6 +12,6 @@ allowed_tools:
 - Bash
 ---
 
-Facendo git merge origin/main sul ramo campaign-group-rumblingstone ho un conflitto in campaign/state.yaml: main ha lo scheletro del template, il ramo ha i PF e le risorse dei PG dopo la sessione 5. Quale versione tengo, e che cosa lancio dopo il merge?
+Facendo git merge origin/main sul ramo campaign-group-rumblingstone ho un conflitto in campaign/state.yaml: il ramo ha cambiato i PF e le risorse dei PG dopo la sessione 5, main ha cambiato altre righe dello stesso file. Risolvo con git checkout --ours sul file intero? E che cosa lancio dopo il merge?
 
 Non modificare file del repo: rispondi nel messaggio finale. Chiudi con la riga «Documentazione da aggiornare:».

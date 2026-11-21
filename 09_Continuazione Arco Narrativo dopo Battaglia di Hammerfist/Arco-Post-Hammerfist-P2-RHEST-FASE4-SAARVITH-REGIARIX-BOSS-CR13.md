@@ -60,6 +60,8 @@ Riporta lo **stato di allerta** deciso in Fase 3:
 ## 3. Regiarix — le fasi del drago (hit-and-run)
 
 > Statblock: STATBLOCCHI §2. Regia (allineata allo script §4 di quel file):
+>
+> Quando usa *armatura magica*, *scudo*, le pergamene di *invisibilità* e le pozioni lo dice STATBLOCCHI §2, «Incantesimi e corredo in battaglia» `[CANONE — DM 2026-11-21, card]`.
 
 - **Fase A — Bombardamento acido** (round 1–2): emerge parzialmente, **soffio di
   acido in linea** (24 m, 10d4, Riflessi CD 21 per metà) su 2–3 PG allineati,
@@ -133,7 +135,8 @@ Riporta lo **stato di allerta** deciso in Fase 3:
 
 - **Party molto forte**: +1–2 lucertoloidi guardia del corpo di Saarvith; per
   Regiarix la via legale è l'età adulta dell'SRD (GS 11, 199 pf, soffio 12d4 CD 23),
-  non capacità inventate `[CANONE — DM 2026-11-15]`.
+  non capacità inventate `[CANONE — DM 2026-11-15]`; da adulto fugge anche lui a un
+  terzo dei pf, 66.
 - **Party medio**: Regiarix giovane adulto è già il drago più debole della
   campagna (152 pf); togli un attacco per round a Saarvith. (Vedi nota nello STATBLOCCHI.)
 
@@ -148,7 +151,7 @@ canonico: `campaign/state.md` §2.3.
 |---|---|
 | **Saarvith e Regiarix uccisi** + nido distrutto (Fase 2) | **−1 drago, −2 Razorfiend** all'Orda (`campaign/state.md` §2.3); Rhest non è più un avamposto; Tiri‑Kitor al pieno appoggio. |
 | **Regiarix morto, Saarvith fuggito** | −1 drago; Saarvith torna come **cecchino** a Rethmar; alleanza elfica forte ma prudente. |
-| **Regiarix fuggito** (sotto ~30% pf, tuffo) | Il drago **non** è tolto dal conteggio: può comparire a Rethmar come rinforzo aereo. |
+| **Regiarix fuggito** (a un terzo dei pf, 50, tuffo `[CANONE — DM 2026-11-15]`) | Il drago **non** è tolto dal conteggio: può comparire a Rethmar come rinforzo aereo. |
 | **Fuga PG / sconfitta** | Rhest resta fortezza Mano Rossa: ondata Razorfiend + drago a Rethmar; Tiri‑Kitor tiepidi. |
 
 ---

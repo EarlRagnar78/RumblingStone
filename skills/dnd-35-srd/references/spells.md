@@ -117,7 +117,7 @@ Defensive casting: DC 15 + spell level
 - **Slow**: negate haste; −1 attack; −1 AC dodge; −1 Ref; half speed; 1 round/level
 
 ### 4th Level
-- **Confusion**: 1 creature/level; confused condition; Will negates
+- **Confusion**: all creatures in a 15-ft.-radius burst; confused condition; Will negates; 1 round/level
 - **Dimension Door**: teleport self (+carried) up to long range; no error
 - **Enervation**: 1d4 negative levels; ranged touch; no save; SR Yes
 - **Greater Invisibility**: invisible even while attacking; 1 round/level

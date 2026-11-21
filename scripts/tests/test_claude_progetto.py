@@ -73,6 +73,30 @@ class TestClaudeProgetto(unittest.TestCase):
         marca = (self.tmp / ".claude" / ".generato-da-rumblingstone").read_text(encoding="utf-8").split()
         self.assertEqual(sorted(marca), [".mcp.json", "settings.json"])
 
+    def test_agenti_del_repo_collegati_e_hook_di_vincolo_risolto(self) -> None:
+        (self.repo / ".claude" / "agents").mkdir()
+        (self.repo / ".claude" / "agents" / "x.md").write_text("---\nname: x\n---\n", encoding="utf-8")
+        self.lancia()
+        agenti = self.tmp / ".claude" / "agents"
+        self.assertTrue(agenti.is_symlink(), "collegamento, così gli agenti restano quelli del repo")
+        self.assertTrue((agenti / "x.md").is_file())
+        self.lancia()  # il rilancio non rompe il collegamento
+        self.assertTrue((agenti / "x.md").is_file())
+        impostazioni = json.loads((self.tmp / ".claude" / "settings.json").read_text(encoding="utf-8"))
+        comando = impostazioni["hooks"]["PreToolUse"][0]["hooks"][0]["command"]
+        self.assertNotIn("$CLAUDE_PROJECT_DIR", comando)
+        self.assertIn("vincolo_skill.py --hook", comando)
+        claude_md = (self.tmp / "CLAUDE.md").read_text(encoding="utf-8")
+        self.assertIn("rumblingstone-narrative-style", claude_md)
+        self.assertIn("ADR-0146", claude_md)
+
+    def test_agenti_altrui_non_si_toccano(self) -> None:
+        (self.repo / ".claude" / "agents").mkdir()
+        (self.tmp / ".claude" / "agents").mkdir(parents=True)
+        uscita = self.lancia()
+        self.assertIn("non è un collegamento nostro", uscita)
+        self.assertFalse((self.tmp / ".claude" / "agents").is_symlink())
+
     def test_il_repo_come_destinazione_non_scrive_niente(self) -> None:
         uscita = self.lancia(str(self.repo))
         self.assertIn("repo stesso", uscita)

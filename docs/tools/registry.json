@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 148,
+  "tool_count": 151,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -9481,6 +9481,75 @@
       ]
     },
     {
+      "id": "cricchetto_prosa",
+      "path": "scripts/cricchetto_prosa.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/cricchetto_prosa.py --rispetto-a origin/main",
+      "summary": "Sui file di gioco cambiati da una revisione (prosa pura sempre, file misti solo se ricevono un box) nessuna norma MQM ha più difetti di prima; esce 1 altrimenti (ADR-0146).",
+      "use_case": "«Questa PR ha peggiorato la prosa che tocca?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_deps": [
+        "pyyaml"
+      ],
+      "external_bins": [
+        "git"
+      ],
+      "args": [
+        {
+          "name": "--rispetto-a",
+          "type": "str",
+          "required": false,
+          "default": "origin/main",
+          "choices": null,
+          "repeatable": false,
+          "desc": "La revisione di confronto."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "scripts/specifiche-qualita.yaml",
+          "kind": "yaml",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "stdout",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "nessuna norma peggiorata",
+        "1": "almeno una norma peggiorata"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": null,
+      "tests": [
+        "scripts/tests/test_cricchetto_prosa.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md"
+      ]
+    },
+    {
       "id": "decisioni_dm",
       "path": "scripts/decisioni_dm.py",
       "category": "G-orchestration-governance",
@@ -10202,6 +10271,116 @@
       "tests": [],
       "docs": [
         "scripts/README-automation.md"
+      ]
+    },
+    {
+      "id": "instradamento_agenti",
+      "path": "scripts/instradamento_agenti.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/instradamento_agenti.py --riepilogo",
+      "summary": "Gli hook UserPromptSubmit, PreToolUse e Stop di Claude Code nei thread: riconosce il tipo di lavoro del messaggio che arriva (riusando i trigger delle skill) e suggerisce agente e catena; se le istruzioni scrivono una riga «Catena: …», ferma push e PR finché la sessione non ha chiamato quegli agenti e autore-documenti, salvo una deroga con motivo; a fine turno registra se gli agenti sono stati chiamati (ADR-0146).",
+      "use_case": "«Il thread chiama l'agente giusto per questo lavoro?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--prompt",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Evento UserPromptSubmit su stdin; scrive il contesto da aggiungere."
+        },
+        {
+          "name": "--stop",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Evento Stop su stdin; registra se gli agenti suggeriti sono stati chiamati."
+        },
+        {
+          "name": "--cancello",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Evento PreToolUse su push e PR su stdin; esce 2 per bloccare."
+        },
+        {
+          "name": "--deroga",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Via d'uscita dal cancello, con un motivo di almeno 15 caratteri."
+        },
+        {
+          "name": "--prova",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Mostra l'instradamento di un testo."
+        },
+        {
+          "name": "--riepilogo",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Suggerimenti dati e quanti seguiti."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "skills/*/SKILL.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": ".claude/.uso-agenti.jsonl",
+          "kind": "json",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "passa (con o senza suggerimento)",
+        "1": "deroga senza motivo",
+        "2": "push o PR bloccati (--cancello)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": false,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/instradamento_agenti.py --prova \"riscrivi il box della forgia\"",
+      "tests": [
+        "scripts/tests/test_instradamento_agenti.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md"
       ]
     },
     {
@@ -13395,6 +13574,100 @@
       ],
       "docs": [
         "plans/adr/ADR-0124-le-regole-si-verificano-in-python-e-l-llm-riceve-regola-e-controesempio.md"
+      ]
+    },
+    {
+      "id": "vincolo_skill",
+      "path": "scripts/vincolo_skill.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/vincolo_skill.py --riepilogo",
+      "summary": "L'hook PreToolUse di Claude Code che ferma la scrittura di prosa di gioco (handout, recap, introduzioni dei volumi, box read-aloud nei file misti) se la sessione non ha caricato rumblingstone-narrative-style, e ricorda prosa-documenti sui documenti. Registra ogni decisione in .claude/.uso-skill.jsonl (ADR-0146).",
+      "use_case": "«Gli agenti caricano davvero la skill di stile prima di scrivere?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "git"
+      ],
+      "args": [
+        {
+          "name": "--hook",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Evento PreToolUse su stdin; esce 2 per bloccare."
+        },
+        {
+          "name": "--riepilogo",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Quanti blocchi, passaggi e promemoria nel registro."
+        },
+        {
+          "name": "--classe",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "La classe di ogni file (prosa, misto, documento)."
+        },
+        {
+          "name": "--cambiati",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "I file di prosa o misti cambiati da una revisione."
+        }
+      ],
+      "inputs": [
+        {
+          "path": ".claude/agents/*.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": ".claude/.uso-skill.jsonl",
+          "kind": "json",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "passa (con o senza promemoria)",
+        "2": "scrittura bloccata (--hook)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": false,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/vincolo_skill.py --classe campaign/recaps/x.md",
+      "tests": [
+        "scripts/tests/test_vincolo_skill.py",
+        "scripts/tests/test_agenti.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md"
       ]
     },
     {

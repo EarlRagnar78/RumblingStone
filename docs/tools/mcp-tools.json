@@ -3743,6 +3743,31 @@
       "deterministic": true
     },
     {
+      "name": "cricchetto_prosa",
+      "description": "«Questa PR ha peggiorato la prosa che tocca?»\n\nSui file di gioco cambiati da una revisione (prosa pura sempre, file misti solo se ricevono un box) nessuna norma MQM ha più difetti di prima; esce 1 altrimenti (ADR-0146).",
+      "use_case": "«Questa PR ha peggiorato la prosa che tocca?»",
+      "invocation": "python3 scripts/cricchetto_prosa.py --rispetto-a origin/main",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "rispetto-a": {
+            "type": "string",
+            "description": "La revisione di confronto."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "nessuna norma peggiorata",
+        "1": "almeno una norma peggiorata"
+      },
+      "deterministic": true
+    },
+    {
       "name": "decisioni_dm",
       "description": "«Che cosa sta aspettando da me, oggi? E come faccio a fidarmi che quell'elenco sia aggiornato?»\n\nLe decisioni aperte al DM: la fonte sono le tabelle marcate dentro i piani, l'aggregato di STATO-E-ORDINE §4 e' generato, e il drift fra le due cose e' rosso in CI.",
       "use_case": "«Che cosa sta aspettando da me, oggi? E come faccio a fidarmi che quell'elenco sia aggiornato?»",
@@ -4037,6 +4062,52 @@
       "exit_codes": {
         "0": "ok",
         "1": "errore"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "instradamento_agenti",
+      "description": "«Il thread chiama l'agente giusto per questo lavoro?»\n\nGli hook UserPromptSubmit, PreToolUse e Stop di Claude Code nei thread: riconosce il tipo di lavoro del messaggio che arriva (riusando i trigger delle skill) e suggerisce agente e catena; se le istruzioni scrivono una riga «Catena: …», ferma push e PR finché la sessione non ha chiamato quegli agenti e autore-documenti, salvo una deroga con motivo; a fine turno registra se gli agenti sono stati chiamati (ADR-0146).",
+      "use_case": "«Il thread chiama l'agente giusto per questo lavoro?»",
+      "invocation": "python3 scripts/instradamento_agenti.py --riepilogo",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "prompt": {
+            "type": "boolean",
+            "description": "Evento UserPromptSubmit su stdin; scrive il contesto da aggiungere."
+          },
+          "stop": {
+            "type": "boolean",
+            "description": "Evento Stop su stdin; registra se gli agenti suggeriti sono stati chiamati."
+          },
+          "cancello": {
+            "type": "boolean",
+            "description": "Evento PreToolUse su push e PR su stdin; esce 2 per bloccare."
+          },
+          "deroga": {
+            "type": "string",
+            "description": "Via d'uscita dal cancello, con un motivo di almeno 15 caratteri."
+          },
+          "prova": {
+            "type": "string",
+            "description": "Mostra l'instradamento di un testo."
+          },
+          "riepilogo": {
+            "type": "boolean",
+            "description": "Suggerimenti dati e quanti seguiti."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        ".claude/.uso-agenti.jsonl"
+      ],
+      "exit_codes": {
+        "0": "passa (con o senza suggerimento)",
+        "1": "deroga senza motivo",
+        "2": "push o PR bloccati (--cancello)"
       },
       "deterministic": true
     },
@@ -5291,6 +5362,43 @@
         "0": "misura eseguita (o nessuna violazione con --check)",
         "1": "violazioni, solo con --check",
         "2": "errore d'uso, percorso inesistente"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "vincolo_skill",
+      "description": "«Gli agenti caricano davvero la skill di stile prima di scrivere?»\n\nL'hook PreToolUse di Claude Code che ferma la scrittura di prosa di gioco (handout, recap, introduzioni dei volumi, box read-aloud nei file misti) se la sessione non ha caricato rumblingstone-narrative-style, e ricorda prosa-documenti sui documenti. Registra ogni decisione in .claude/.uso-skill.jsonl (ADR-0146).",
+      "use_case": "«Gli agenti caricano davvero la skill di stile prima di scrivere?»",
+      "invocation": "python3 scripts/vincolo_skill.py --riepilogo",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "hook": {
+            "type": "boolean",
+            "description": "Evento PreToolUse su stdin; esce 2 per bloccare."
+          },
+          "riepilogo": {
+            "type": "boolean",
+            "description": "Quanti blocchi, passaggi e promemoria nel registro."
+          },
+          "classe": {
+            "type": "string",
+            "description": "La classe di ogni file (prosa, misto, documento)."
+          },
+          "cambiati": {
+            "type": "string",
+            "description": "I file di prosa o misti cambiati da una revisione."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        ".claude/.uso-skill.jsonl"
+      ],
+      "exit_codes": {
+        "0": "passa (con o senza promemoria)",
+        "2": "scrittura bloccata (--hook)"
       },
       "deterministic": true
     },

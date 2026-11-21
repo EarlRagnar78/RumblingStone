@@ -179,7 +179,13 @@ Due avvertenze che la tabella non può contenere:
 
 1. Applica il principio: **chi legge, in che forma esce**. Poi guarda la
    tabella per compito.
-2. Carica il `SKILL.md` della skill scelta **per primo**; segui la sua tabella
+2. Carica il `SKILL.md` della skill scelta **per primo**, con lo strumento
+   Skill e non a memoria: in Claude Code un hook ferma la scrittura di prosa di
+   gioco (handout, recap, introduzioni dei volumi, box read-aloud) se
+   `rumblingstone-narrative-style` non è stata caricata, e ricorda
+   `rumblingstone-prosa-documenti` sui documenti
+   ([ADR-0146](plans/adr/ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md)).
+   Gli agenti di `.claude/agents/` le precaricano. Segui la sua tabella
    di routing interna.
 3. Per domande di campagna, carica anche `campaign/state.md` e
    `skills/rumblingstone-campaign/references/campaign-coherence.md`.

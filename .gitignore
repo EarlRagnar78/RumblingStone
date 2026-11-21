@@ -306,6 +306,9 @@ build/
 
 # Skill-sync status written by .claude/hooks/session-start.sh (async hook)
 .claude/.skills-sync-status
+# Registro delle decisioni dell'hook vincolo_skill (ADR-0146)
+.claude/.uso-skill.jsonl
+.claude/.uso-agenti.jsonl
 
 # OS artifacts
 .DS_Store

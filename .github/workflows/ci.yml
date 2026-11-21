@@ -488,6 +488,17 @@ jobs:
       # ADR-0059: il punteggio pesato. Nasce verde per costruzione (la soglia
       # viene dalla distribuzione misurata del repo), quindi un rosso qui e' un
       # documento che e' peggiorato, non una soglia importata da un manuale.
+      # 🔴 BLOCCANTE, ADR-0146 (scelta del DM del 2026-11-20, che supera «niente
+      # cancelli di prosa nuovi»): sui file di gioco che la PR cambia, nessuna
+      # norma MQM ha piu' difetti che su main. Si controllano la prosa pura e i
+      # file misti a cui la PR aggiunge un box: un ritocco a uno statblock passa.
+      # Sugli ultimi 300 commit: 157 file di gioco cambiati, 8 controllati, 1
+      # fermato (una parentesi in piu' in un box). Vede la forma, non la qualita':
+      # quella resta al voto alla cieca (ADR-0093).
+      - name: Prosa — il testo cambiato non peggiora (cricchetto, ADR-0146)
+        if: github.event_name == 'pull_request'
+        run: python scripts/cricchetto_prosa.py --rispetto-a "origin/${{ github.base_ref }}"
+
       - name: Punteggio di qualita' editoriale (MQM, ADR-0059)
         run: |
           python scripts/punteggio_mqm.py --soglia

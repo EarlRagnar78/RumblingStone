@@ -700,26 +700,27 @@ ___
 
 **DIFESA**
 ___
-**CA 36** (−2 taglia, +2 DES, +26 nat), contatto 10, impreparato 34; **40 con *armatura magica*** · **pf 337** (25d12+175) · TS Temp +21, Rifl +18, Vol +20 · RD 10/magia · RI 22 · immune acido, sonno, paralisi  
+**CA 39** (−2 taglia, +2 DES, +26 nat, +3 deflessione), contatto 13, impreparato 37; **43 con *armatura magica***, come al duello · **pf 337** (25d12+175) · TS Temp +24, Rifl +21, Vol +23 (con il mantello; senza oggetti CA 36, contatto 10, TS +21/+18/+20) · RD 10/magia · RI 22 · immune acido, sonno, paralisi  
 
 **ATTACCO**
 ___
-Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16) · **Schiacciare** 2d8+16, Riflessi CD 29 (solo creature Piccole o minori) · **Soffio acido** (Sop) linea di 30 m, 16d4, Riflessi CD 31 dimezza, di nuovo dopo 1d4 round (1d4+1 se impregnante, sotto) · **Capacità magiche** 3/giorno *oscurità* (raggio 24 m); 1/giorno *corrompere l'acqua* (CD 26, la CD della sua Presenza Terrificante, come nell'SRD: rovina anche le pozioni che un PG ha addosso, se falliscono il TS); 1/giorno *crescita vegetale* · **Incantesimi da stregone** (incantatore di 7°, CD 14 + livello): 0 (6/giorno) *individuazione del magico, lettura del magico, mano magica, resistenza, suono fantasma, frastornare*; 1° (7/giorno) *armatura magica, scudo, colpo accurato, dardo incantato*; 2° (7/giorno) *vedere invisibilità, immagine speculare*; 3° (5/giorno) *dissolvi magie, lentezza* (CD 17) (i conosciuti dell'Adulto più i due di 3°, come D64: scelta di Jfs del 19/11)  
-
-**TATTICHE**
-___
-Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf, circa **112 pf**. In A.1-ter, «Cosa cambia al tavolo», i numeri che contano nel duello.  
+Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16) · **Schiacciare** 2d8+16, Riflessi CD 29 (solo creature Piccole o minori) · **Soffio acido** (Sop) linea di 30 m, 16d4, Riflessi CD 31 dimezza, di nuovo dopo 1d4 round (1d4+1 se impregnante, sotto) · **Capacità magiche** (incantatore di 7°) 3/giorno *oscurità* (raggio 24 m); 1/giorno *corrompere l'acqua* (gittata 72 m, quella della Presenza; CD 26, la CD della sua Presenza Terrificante, come nell'SRD: rovina anche le pozioni che un PG ha addosso, se falliscono il TS); 1/giorno *crescita vegetale* (gittata 204 m) · **Incantesimi da stregone** (incantatore di 7°, CD 14 + livello; gittata vicina 12 m, media 51 m, lunga 204 m): 0 (6/giorno) *individuazione del magico, lettura del magico, mano magica, messaggio, resistenza, suono fantasma, frastornare*; 1° (7/giorno) *armatura magica, causare paura* (CD 15), *colpo accurato, dardo incantato, scudo*; 2° (7/giorno) *immagine speculare, spaventare* (CD 16), *vedere invisibilità*; 3° (5/giorno) *dissolvi magie, lentezza* (CD 17). Conosciuti 7/5/3/2, come lo stregone di 7° dell'SRD: ai conosciuti dell'Adulto più i due di 3° (D64, scelta di Jfs del 19/11) mancavano tre posti, e il DM li ha riempiti con *messaggio*, *causare paura* e *spaventare*  
 
 **STATISTICHE**
 ___
-For 33, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +25; Lotta +44 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Impregnante, Virare (non Ghermire), Volontà di Ferro, più Allerta · **Abilità** Ascoltare +31, Cercare +29, Concentrazione +32, Intimidire +29, Muoversi Silenziosamente +27, Nascondersi +19, Osservare +31, Sapienza Magica +29, Nuotare +18: come l'Adulto più Allerta (il blocco non spende i gradi dei tre DV in più)  
-
-**CAPACITÀ SPECIALI**
-___
-- **Presenza Terrificante**: raggio 72 m, Volontà CD 26 (meno di 25 DV).  
-- **Soffio impregnante**, quando lo sceglie: chi ne prende danno ne riprende metà al round dopo; toglierselo è un'azione di round completo con Riflessi CD 31 (+2 rotolando a terra, e si resta proni); la ricarica sale di 1 round.  
-- **Respirare sott'acqua** (Str).  
+For 33 Des 14 Cos 25 Int 18 Sag 19 Car 18  
 }}
+
+**Oggetti al duello** Dal suo tesoro triplo (SRD: 36.000 mo al GS 17, × 3 = 108.000), circa 51.900 mo a prezzo SRD: **anello di protezione +3** (18.000), **mantello della resistenza +3** (9.000), **bacchetta di *paura*** (incantatore di 7°, 21.000: cono di 9 m, Volontà CD 16, panico per 7 round, scosso per 1 round chi riesce), **2 pergamene di *dominare persone*** (incantatore di 9°, 1.125 l'una: 13,5 m, Volontà CD 17) e **1 pergamena di *suggestione di massa*** (incantatore di 11°, 1.650: gittata media, 63 m, fino a 11 creature entro 9 m l'una dall'altra, Volontà CD 19). Bacchetta e pergamene sono tutte sulla lista dello stregone: la bacchetta non chiede prove, le pergamene una prova d'incantatore, d20+7 contro CD 10 e 12 (SRD, *Pergamene*). Bacchetta e *suggestione di massa* costano un'azione standard, presa con l'artiglio: quel round non morde e non soffia. *Dominare persone* ha tempo di lancio 1 round (SRD), quindi in passata non si legge: solo da fermo o fluttuando, e l'effetto arriva all'inizio del suo turno dopo. *Dominare persone* prende solo gli umanoidi: Thorik è immune per la Mente Vuota, Hella in forma animale non è una persona
+
+**Tattiche** Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf, circa **112 pf**. Al corno, prima di partire, lancia *vedere invisibilità* e *immagine speculare* (1d4+2 immagini, 7 minuti). In passata chiude ogni turno a più di 18 m da tutti i PG, fuori dalle cariche: in mischia lo si prende solo con un'azione preparata quando passa. Mentre il soffio ricarica usa la bacchetta sul gruppo più fitto; la prima pergamena di *dominare* (un round fermo o fluttuando, quindi dopo la prima paura) va sul PG che fa più danno e non è Thorik, la *suggestione di massa* sui nani delle corde («lasciate le corde e salvatevi»). In A.1-ter, «Cosa cambia al tavolo», i numeri che contano nel duello.
+
+**Statistiche** For 33, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +25; Lotta +44 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Impregnante, Virare (non Ghermire), Volontà di Ferro, più Allerta · **Abilità** Ascoltare +31, Cercare +29, Concentrazione +32, Intimidire +29, Muoversi Silenziosamente +27, Nascondersi +19, Osservare +31, Sapienza Magica +29, Nuotare +18: come l'Adulto più Allerta (il blocco non spende i gradi dei tre DV in più)
+
+**Capacità speciali**
+- **Presenza Terrificante**: raggio 72 m, Volontà CD 26 (meno di 25 DV).
+- **Soffio impregnante**, quando lo sceglie: chi ne prende danno ne riprende metà al round dopo; toglierselo è un'azione di round completo con Riflessi CD 31 (+2 rotolando a terra, e si resta proni); la ricarica sale di 1 round.
+- **Respirare sott'acqua** (Str).
 <!-- /include -->
 
 <!-- include: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#wyvern-scheda -->
@@ -3333,6 +3334,19 @@ gallerie sotto la fucina; cercarlo costa una tacca)*
   **Durik** vale di più: la sua scheda gli dà +50% di danni dall'acido. La
   attiva chi la porta, toccando il bersaglio, perché *resistere all'energia*
   è a contatto (SRD): su Durik la mette Hella.
+  Al tavolo nessuna era attiva prima dell'alba: alla vista del drago ne hanno
+  attivata **una, su Durik**, e l'altra resta da usare; Hella si è lanciata
+  addosso *protezione dall'energia* (acido).
+- **Il martello di Balvar a Zeth.** Se dopo la tenda i PG regalano a Zeth il
+  martello da guerra runico di Balvar (Scena 8, tesoro), Zeth ricambia con una
+  runa sua, incisa su un'arma che i PG scelgono: **+2 ai tiri per colpire
+  contro i draghi**. Delle rune che incide quella notte se ne attiva una sola,
+  questa. Al tavolo l'ha incisa su una balestra nascosta nel torrione ovest
+. È una regola della casa: l'SRD non ha una runa così, e il bonus più
+  vicino è il +2 al colpire di un'arma *anatema* contro il suo nemico, senza i
+  dadi in più. Vale **per un colpo solo**, come il potere contro i draghi dei
+  Bracieri: chi la attiva dichiara il tiro, e la runa si spegne dopo quello,
+  a segno o a vuoto.
 - **Fermarsi o dormire — scelta.** In 3.5 ci sono solo le otto ore di sonno
   e il tempo che passa. **Tre ore di sosta** (2
   tacche) non ridanno incantesimi, perché l'SRD li restituisce solo dopo otto
@@ -6315,26 +6329,27 @@ ___
 
 **DIFESA**
 ___
-**CA 36** (−2 taglia, +2 DES, +26 nat), contatto 10, impreparato 34; **40 con *armatura magica*** · **pf 337** (25d12+175) · TS Temp +21, Rifl +18, Vol +20 · RD 10/magia · RI 22 · immune acido, sonno, paralisi  
+**CA 39** (−2 taglia, +2 DES, +26 nat, +3 deflessione), contatto 13, impreparato 37; **43 con *armatura magica***, come al duello · **pf 337** (25d12+175) · TS Temp +24, Rifl +21, Vol +23 (con il mantello; senza oggetti CA 36, contatto 10, TS +21/+18/+20) · RD 10/magia · RI 22 · immune acido, sonno, paralisi  
 
 **ATTACCO**
 ___
-Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16) · **Schiacciare** 2d8+16, Riflessi CD 29 (solo creature Piccole o minori) · **Soffio acido** (Sop) linea di 30 m, 16d4, Riflessi CD 31 dimezza, di nuovo dopo 1d4 round (1d4+1 se impregnante, sotto) · **Capacità magiche** 3/giorno *oscurità* (raggio 24 m); 1/giorno *corrompere l'acqua* (CD 26, la CD della sua Presenza Terrificante, come nell'SRD: rovina anche le pozioni che un PG ha addosso, se falliscono il TS); 1/giorno *crescita vegetale* · **Incantesimi da stregone** (incantatore di 7°, CD 14 + livello): 0 (6/giorno) *individuazione del magico, lettura del magico, mano magica, resistenza, suono fantasma, frastornare*; 1° (7/giorno) *armatura magica, scudo, colpo accurato, dardo incantato*; 2° (7/giorno) *vedere invisibilità, immagine speculare*; 3° (5/giorno) *dissolvi magie, lentezza* (CD 17) (i conosciuti dell'Adulto più i due di 3°, come D64: scelta di Jfs del 19/11)  
-
-**TATTICHE**
-___
-Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf, circa **112 pf**. In A.1-ter, «Cosa cambia al tavolo», i numeri che contano nel duello.  
+Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16) · **Schiacciare** 2d8+16, Riflessi CD 29 (solo creature Piccole o minori) · **Soffio acido** (Sop) linea di 30 m, 16d4, Riflessi CD 31 dimezza, di nuovo dopo 1d4 round (1d4+1 se impregnante, sotto) · **Capacità magiche** (incantatore di 7°) 3/giorno *oscurità* (raggio 24 m); 1/giorno *corrompere l'acqua* (gittata 72 m, quella della Presenza; CD 26, la CD della sua Presenza Terrificante, come nell'SRD: rovina anche le pozioni che un PG ha addosso, se falliscono il TS); 1/giorno *crescita vegetale* (gittata 204 m) · **Incantesimi da stregone** (incantatore di 7°, CD 14 + livello; gittata vicina 12 m, media 51 m, lunga 204 m): 0 (6/giorno) *individuazione del magico, lettura del magico, mano magica, messaggio, resistenza, suono fantasma, frastornare*; 1° (7/giorno) *armatura magica, causare paura* (CD 15), *colpo accurato, dardo incantato, scudo*; 2° (7/giorno) *immagine speculare, spaventare* (CD 16), *vedere invisibilità*; 3° (5/giorno) *dissolvi magie, lentezza* (CD 17). Conosciuti 7/5/3/2, come lo stregone di 7° dell'SRD: ai conosciuti dell'Adulto più i due di 3° (D64, scelta di Jfs del 19/11) mancavano tre posti, e il DM li ha riempiti con *messaggio*, *causare paura* e *spaventare*  
 
 **STATISTICHE**
 ___
-For 33, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +25; Lotta +44 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Impregnante, Virare (non Ghermire), Volontà di Ferro, più Allerta · **Abilità** Ascoltare +31, Cercare +29, Concentrazione +32, Intimidire +29, Muoversi Silenziosamente +27, Nascondersi +19, Osservare +31, Sapienza Magica +29, Nuotare +18: come l'Adulto più Allerta (il blocco non spende i gradi dei tre DV in più)  
-
-**CAPACITÀ SPECIALI**
-___
-- **Presenza Terrificante**: raggio 72 m, Volontà CD 26 (meno di 25 DV).  
-- **Soffio impregnante**, quando lo sceglie: chi ne prende danno ne riprende metà al round dopo; toglierselo è un'azione di round completo con Riflessi CD 31 (+2 rotolando a terra, e si resta proni); la ricarica sale di 1 round.  
-- **Respirare sott'acqua** (Str).  
+For 33 Des 14 Cos 25 Int 18 Sag 19 Car 18  
 }}
+
+**Oggetti al duello** Dal suo tesoro triplo (SRD: 36.000 mo al GS 17, × 3 = 108.000), circa 51.900 mo a prezzo SRD: **anello di protezione +3** (18.000), **mantello della resistenza +3** (9.000), **bacchetta di *paura*** (incantatore di 7°, 21.000: cono di 9 m, Volontà CD 16, panico per 7 round, scosso per 1 round chi riesce), **2 pergamene di *dominare persone*** (incantatore di 9°, 1.125 l'una: 13,5 m, Volontà CD 17) e **1 pergamena di *suggestione di massa*** (incantatore di 11°, 1.650: gittata media, 63 m, fino a 11 creature entro 9 m l'una dall'altra, Volontà CD 19). Bacchetta e pergamene sono tutte sulla lista dello stregone: la bacchetta non chiede prove, le pergamene una prova d'incantatore, d20+7 contro CD 10 e 12 (SRD, *Pergamene*). Bacchetta e *suggestione di massa* costano un'azione standard, presa con l'artiglio: quel round non morde e non soffia. *Dominare persone* ha tempo di lancio 1 round (SRD), quindi in passata non si legge: solo da fermo o fluttuando, e l'effetto arriva all'inizio del suo turno dopo. *Dominare persone* prende solo gli umanoidi: Thorik è immune per la Mente Vuota, Hella in forma animale non è una persona
+
+**Tattiche** Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf, circa **112 pf**. Al corno, prima di partire, lancia *vedere invisibilità* e *immagine speculare* (1d4+2 immagini, 7 minuti). In passata chiude ogni turno a più di 18 m da tutti i PG, fuori dalle cariche: in mischia lo si prende solo con un'azione preparata quando passa. Mentre il soffio ricarica usa la bacchetta sul gruppo più fitto; la prima pergamena di *dominare* (un round fermo o fluttuando, quindi dopo la prima paura) va sul PG che fa più danno e non è Thorik, la *suggestione di massa* sui nani delle corde («lasciate le corde e salvatevi»). In A.1-ter, «Cosa cambia al tavolo», i numeri che contano nel duello.
+
+**Statistiche** For 33, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +25; Lotta +44 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Impregnante, Virare (non Ghermire), Volontà di Ferro, più Allerta · **Abilità** Ascoltare +31, Cercare +29, Concentrazione +32, Intimidire +29, Muoversi Silenziosamente +27, Nascondersi +19, Osservare +31, Sapienza Magica +29, Nuotare +18: come l'Adulto più Allerta (il blocco non spende i gradi dei tre DV in più)
+
+**Capacità speciali**
+- **Presenza Terrificante**: raggio 72 m, Volontà CD 26 (meno di 25 DV).
+- **Soffio impregnante**, quando lo sceglie: chi ne prende danno ne riprende metà al round dopo; toglierselo è un'azione di round completo con Riflessi CD 31 (+2 rotolando a terra, e si resta proni); la ricarica sale di 1 round.
+- **Respirare sott'acqua** (Str).
 <!-- /blocco -->
 
 I tiri salvezza, i bonus d'attacco e le CD sono quelli dell'SRD rifatti con il
@@ -6351,6 +6366,7 @@ si sommano a parte (§8 A).
 
 - Boost log: drago nero **Vecchio** dell'SRD invece dell'adulto maturo, con il template Avanzato PF1e completo — GS 16 → 17 — solo per il party straripante di 14°, dove EL 17 = APL+3; il DM vuole che la riga renda il duello più duro, non più facile.
 - Boost log: usato anche con il gruppo di 13°, con le 2 wyvern, e *Ghermire* → **Virare** come in A.1 — GS 17 → 17; EL 17 = APL+4, il tetto esatto — la simulazione del duello lo dà come l'unica versione che regge contro tutti e tre i modi di giocarlo senza una morte probabile, purché senza la presa in bocca.
+- Boost log: oggetti dal suo tesoro (anello di protezione +3, mantello della resistenza +3, bacchetta di *paura*, 2 pergamene di *dominare persone*, 1 di *suggestione di massa*: circa 51.900 mo di 108.000), i tre incantesimi che mancavano ai conosciuti (*messaggio*, *causare paura*, *spaventare*), *immagine speculare* al corno e passate lunghe — GS 17 → 17: gli oggetti vengono dal suo tesoro e la DMG non alza il GS per l'equipaggiamento che il mostro possiede; i conosciuti sono quelli che lo stregone di 7° dell'SRD già doveva avere. EL 17 = APL+4 resta il tetto. Il prezzo al tavolo: CA di contatto 13 invece di 10, e con l'anello Tordek (+21) lo colpisce solo col 20 naturale.
 
 ### A.1-ter · Cosa cambia al tavolo, con l'Adulto o con il Vecchio
 
@@ -6361,7 +6377,10 @@ si sommano a parte (§8 A).
   cieca*). *Vedere invisibilità* dura 10 minuti per livello: 50 con
   l'Adulto (incantatore di 5°), 70 col Vecchio (7°). Dopo il barile lo lancia
   al corno dell'alba, prima di partire, e i PG invisibili sono visibili per
-  tutto il duello. Di notte sulle colline non l'ha
+  tutto il duello. Col Vecchio al corno lancia anche
+  *immagine speculare*: ogni attacco a bersaglio singolo, deflagrazione
+  compresa, sceglie a caso fra lui e le immagini; le aree lo prendono comunque
+. Di notte sulle colline non l'ha
   lanciato, perché non si aspetta nessuno.
 - **Il soffio fa più male**: 14d4 (in media 35) invece di 12d4, e Riflessi
   CD 30; col Vecchio 16d4 (in media 40), CD 31. La runa di Zeth (*resistere all'energia* 20) ne toglie ancora più
@@ -6381,6 +6400,12 @@ si sommano a parte (§8 A).
   Vecchio servono 9 o 10, e se ne spengono quattro o cinque su dieci. Le
   invocazioni di Artemis la subiscono come gli incantesimi.
 - **RD 10/magia**: le armi dei PG sono magiche; le balestre delle mura, no.
+- **Le gittate col Vecchio, che resta lontano.** Chiude ogni passata a più di
+  18 m dai PG. Lo raggiungono le armi a distanza e gli incantesimi a gittata
+  media o lunga; la deflagrazione di Artemis con *Eldritch Spear* arriva a
+  75 m (*Complete Arcane*, fuori SRD). Lui risponde da 51 m con *dissolvi
+  magie* e *dardo incantato*, da 72 m con *corrompere l'acqua*, da 12 m con
+  *lentezza* e *causare paura*, e col cono di 9 m della bacchetta.
 - ***Corrompere l'acqua*** può rovinare le pozioni in tasca a un PG (TS
   dell'oggetto sulla Volontà del portatore). Lo usa al primo turno libero dal
   soffio, se vede qualcuno bere (Scena 11, round 2-3).

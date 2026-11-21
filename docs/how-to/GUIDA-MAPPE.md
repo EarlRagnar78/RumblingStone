@@ -191,7 +191,7 @@ quadretti — evita il drift dimensionale (una tenda «6×4 m» resta 6×4 m).
 | `@north` | bussola (disegnata sempre) |
 | `@path` | rotta di movimento tratteggiata |
 | `@mark` | roster numerato sui token |
-| `@zone` | zone etichettate + legenda «INDICAZIONI» |
+| `@zone` | zone etichettate + legenda «INDICAZIONI»; una quarta parte facoltativa, `@zone A1-B2 ; Telo est ; C1`, è la chiave d'area che il testo usa nei titoli e che la stampa scrive al posto della lettera (ADR-0122, S2) |
 
 ### 3.1 Migrare una vecchia mappa «ultra-clear»
 

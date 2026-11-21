@@ -205,7 +205,9 @@ e dove l'SRD direbbe altro c'è scritto.
 | worg | 3 | 14 | 51 | +7 / +7, **fiuto** | col cavaliere a terra, scappa |
 | hobgoblin regolare | 9 (6 con tre pregen) | 19 | 23 | +2 / +3 | quando cade il sergente, chi può corre al campo |
 | il sergente | 1 | 21 | 50 | +1 / +1 | sotto i **25 pf** fugge, e suona il corno se può |
-| Fauci di Palude | 1 | 29 | 337 | — | non scende: risponde una volta, poi se ne va |
+| Fauci di Palude | 1 | 33 | 337 | — | non scende: risponde una volta, poi se ne va |
+
+La CA 33 di Fauci conta l'anello e l'amuleto del suo corredo; senza, 29 (A.5).
 
 **EL**: la pattuglia **8** (i tre worg non la alzano di un punto intero),
 gli scout col sergente **9** circa, tutti e due insieme **10** circa. Per quattro pregen di 12° e 13° livello sono
@@ -1031,7 +1033,8 @@ coi fatti: le baliste lo colpiscono e non succede niente.
 - **Le baliste** non servono: i dardi non sono magici, e la RD 10/magia se
   li mangia tutti.
 - **Si può colpire.** Dara a 60 m è al secondo incremento (−2), con il nemico
-  prescelto contro i draghi (+2): tira a **+19** contro **CA 29**. *Colpo
+  prescelto contro i draghi (+2): tira a **+19** contro **CA 33**, e colpisce
+  con 14 (col corredo, qui sotto «Il corredo»). *Colpo
   infuocato* di Harbek (66 m) lo raggiunge, e la RI 21 si supera con d20 +12.
 - **La risposta.** Se qualcuno lo colpisce, Fauci risponde **una volta**:
   scende a 30 m e soffia in linea sulla postazione da cui è partito il colpo,
@@ -1039,6 +1042,10 @@ coi fatti: le baliste lo colpiscono e non succede niente.
 - **Il fumo.** Sulla postazione colpita l'acido scioglie la pietra e alza un
   fumo che morde la gola: chi resta entro 3 m tira Tempra **CD 15**, o è
   nauseato per 1 round `[CANONE — DM 2026-11-04, P16, il drago e il cavaliere]`.
+- **Il corredo.** La CA 33 conta l'anello e l'amuleto della scheda. Le pergamene
+  e le pozioni le porta, ma qui non le usa: è una dimostrazione di forza, risponde
+  una volta e se ne va, e le schede in `ARC08-02` §1 mettono *invisibilità
+  superiore* e *nebbia acida* contro le mura e contro Thorik (con o senza corredo: A.5).
 - **Per chi non vola.** Nessuno dei quattro vola, e non serve: il drago non
   si combatte. Chi resta a terra ha le armi a distanza e gli incantesimi
   qui sopra, oppure tiene i nani al riparo (l'opzione «Ignorarlo»).
@@ -1517,7 +1524,16 @@ La pattuglia intera: **EL 8** (tre GS 5; i worg non la alzano di un punto intero
 
 Gli scout col sergente: **EL** circa 9. Pattuglia e scout insieme: **EL** circa 10.
 
-**A.5 · Fauci di Palude, per la Scena 7** · non si ricopia: statblocco completo in `ARC08-01`, PNG nemici. Per la scena servono: CA **29**, pf **337**, RD 10/magia, RI **21**, volare 45 m (scarsa), soffio in linea di 30 m **14d4** acido (Riflessi **CD 29** dimezza), Presenza terrificante **90 m**, Volontà **CD 25** (⚠️ potenziamento non SRD: 63 m nell'SRD per l'adulto maturo).
+**A.5 · Fauci di Palude, per la Scena 7** · non si ricopia: statblocco completo in `ARC08-01`, PNG nemici. Per la scena servono: CA **33** (con l'*anello di protezione +2* e l'*amuleto dell'armatura naturale +2* della scheda `[CANONE — DM 2026-11-21, card]`), pf **337**, RD 10/magia, RI **21**, volare 45 m (scarsa), soffio in linea di 30 m **14d4** acido (Riflessi **CD 29** dimezza), Presenza terrificante **90 m**, Volontà **CD 25** (⚠️ potenziamento non SRD: 63 m nell'SRD per l'adulto maturo).
+
+| Fauci nella Scena 7 | con il corredo | senza |
+|---|---|---|
+| CA | 33 | 29 |
+| contatto | 10 | 8 |
+| Tempra · Riflessi · Volontà | +24 · +19 · +22 | +21 · +16 · +19 |
+| Dara (arco +19 a 60 m) | 14 | 10 |
+| baliste | non servono: la RD 10/magia si mangia i dardi | non servono |
+| pergamene e pozioni | le porta, qui non le usa | nessuna |
 
 ### A.6 · I pregen: quello che si tira stasera
 

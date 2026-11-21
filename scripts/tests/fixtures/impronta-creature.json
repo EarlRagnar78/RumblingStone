@@ -21844,15 +21844,14 @@
      "Sag": 14
     },
     [
-     "letta dalla riga delle caratteristiche della scheda stessa",
-     "⚠ Des 14 derivata dalla CA di contatto, ma la scheda scrive 10: si tiene la scheda, da verificare."
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ]
    ],
    "genera_senza_fonte": [
     {
      "Car": 23,
      "Cos": 20,
-     "Des": 14,
+     "Des": 10,
      "For": 20,
      "Int": 12,
      "Sag": 9
@@ -21862,7 +21861,7 @@
      "variazione a seme fisso: Cos +1, Sag −1",
      "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 16) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
      "taglia (SRD, Improving Monsters): For +8, Des -2, Cos +4",
-     "Des 14 **derivata dalla CA di contatto** — il vincolo batte l'array",
+     "Des 10 **derivata dalla CA di contatto** — il vincolo batte l'array",
      "Cos 20 **ricavata da pf 107 su 13 DV** — il vincolo batte l'array",
      "For 20 **ricavata da BAB e lotta** — il vincolo batte l'array"
     ]
@@ -21992,7 +21991,7 @@
      ],
      "des_da_iniziativa": null,
      "des_vincolata": [
-      14,
+      10,
       "derivata dalla CA di contatto"
      ],
      "for_da_lotta": [
@@ -22069,15 +22068,14 @@
      "Sag": 14
     },
     [
-     "letta dalla riga delle caratteristiche della scheda stessa",
-     "⚠ Des 16 derivata dalla CA di contatto, ma la scheda scrive 10: si tiene la scheda, da verificare."
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ]
    ],
    "genera_senza_fonte": [
     {
      "Car": 24,
      "Cos": 22,
-     "Des": 16,
+     "Des": 10,
      "For": 20,
      "Int": 13,
      "Sag": 10
@@ -22087,7 +22085,7 @@
      "variazione a seme fisso: Int +1, Cos −1",
      "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 18) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
      "taglia (SRD, Improving Monsters): For +8, Des -2, Cos +4",
-     "Des 16 **derivata dalla CA di contatto** — il vincolo batte l'array",
+     "Des 10 **derivata dalla CA di contatto** — il vincolo batte l'array",
      "Cos 22 **ricavata da pf 137 su 15 DV** — il vincolo batte l'array",
      "For 20 **ricavata da BAB e lotta** — il vincolo batte l'array"
     ]
@@ -22202,7 +22200,7 @@
      ],
      "des_da_iniziativa": null,
      "des_vincolata": [
-      16,
+      10,
       "derivata dalla CA di contatto"
      ],
      "for_da_lotta": [
@@ -22529,18 +22527,18 @@
       0
      ],
      "Rifl": [
-      19,
-      19,
+      22,
+      22,
       0
      ],
      "Temp": [
-      24,
-      24,
+      27,
+      27,
       0
      ],
      "Vol": [
-      23,
-      23,
+      26,
+      26,
       0
      ],
      "attacco": [
@@ -22623,27 +22621,28 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "copiate",
-    "senza_note": 8020,
+    "senza_note": 13117,
     "sestine_citate": [],
     "taglia": -2,
     "talenti": {
-     "Rifl": 2,
-     "Vol": 2,
+     "Rifl": 5,
+     "Temp": 3,
+     "Vol": 5,
      "init": 4
     },
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
       7,
-      "ricavata da Temp +24 (base +17)"
+      "ricavata da Temp +27 (base +20)"
      ],
      "Des": [
       0,
-      "ricavata da Rifl +19 (base +19)"
+      "ricavata da Rifl +22 (base +22)"
      ],
      "Sag": [
       4,
-      "ricavata da Vol +23 (base +19)"
+      "ricavata da Vol +26 (base +22)"
      ]
     },
     "vincoli": {
@@ -22712,9 +22711,9 @@
     "provenienza": "copiate",
     "tipo": "Huge dragon (earth)",
     "ts": [
-     24,
-     19,
-     23
+     27,
+     22,
+     26
     ]
    }
   },
@@ -25979,8 +25978,7 @@
      "Sag": 12
     },
     [
-     "letta dalla riga delle caratteristiche della scheda stessa",
-     "⚠ Des 14 derivata dalla CA di contatto, ma la scheda scrive 11: si tiene la scheda, da verificare."
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ]
    ],
    "genera_senza_fonte": [
@@ -25997,7 +25995,7 @@
      "variazione a seme fisso: Sag +1, Int −1",
      "un avanzamento ogni 4 livelli, contati sul GS 14 — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
      "modificatori razziali SRD: mezzorc For +2 Int -2 Car -2",
-     "Des 14 **derivata dalla CA di contatto** — il vincolo batte l'array",
+     "Des 10 **derivata dalla CA di contatto** — il vincolo batte l'array",
      "Des 10 **ricavata dall'iniziativa** — il vincolo batte l'array",
      "Cos 22 **ricavata da pf 166 su 13 DV** — il vincolo batte l'array",
      "For 30 **ricavata da BAB e lotta** — il vincolo batte l'array"
@@ -26165,7 +26163,7 @@
       "ricavata dall'iniziativa"
      ],
      "des_vincolata": [
-      14,
+      10,
       "derivata dalla CA di contatto"
      ],
      "for_da_lotta": [
@@ -26506,18 +26504,18 @@
       0
      ],
      "Rifl": [
-      13,
-      13,
+      16,
+      16,
       0
      ],
      "Temp": [
-      19,
-      19,
+      22,
+      22,
       0
      ],
      "Vol": [
-      16,
-      16,
+      19,
+      19,
       0
      ],
      "attacco": [
@@ -26608,7 +26606,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 9379,
+    "senza_note": 13103,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/Ozzyrandion green 8 liv.htm",
@@ -26626,21 +26624,24 @@
     ],
     "taglia": -2,
     "talenti": {
+     "Rifl": 3,
+     "Temp": 3,
+     "Vol": 3,
      "init": 4
     },
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
       6,
-      "ricavata da Temp +19 (base +13)"
+      "ricavata da Temp +22 (base +16)"
      ],
      "Des": [
       0,
-      "ricavata da Rifl +13 (base +13)"
+      "ricavata da Rifl +16 (base +16)"
      ],
      "Sag": [
       3,
-      "ricavata da Vol +16 (base +13)"
+      "ricavata da Vol +19 (base +16)"
      ]
     },
     "vincoli": {
@@ -26709,9 +26710,9 @@
     "provenienza": "a mano",
     "tipo": "Huge dragon (air), 22 HD, LE",
     "ts": [
-     19,
-     13,
-     16
+     22,
+     16,
+     19
     ]
    }
   },
@@ -43769,27 +43770,14 @@
    ]
   },
   "Bestiario/villain/Fauci_di_Palude.md": {
-   "blocco": "```statblocco\ngs: 15\nca: 16\npf: 237\nts: Temp +17, Rifl +15, Vol +15\nfonte: derivato-SRD — caratteristiche: matrice elite (15, 14, 13, 12, 10, 8) + 6 da DV/4 → For 18, Cos 17, Des 13 · pf: 25d12 media 162.5 + Cos +3×25 = 237 · TS: tipo «dragon», TS buoni ('temp', 'rifl', 'vol') → Temp +17, Rifl +15, Vol +15 · CA: 10 + taglia -2 + Des +1 + naturale +5 (enorme) + scudo +2 = 16 · collaudo GS 15 [PF1e Tab. 1–1]: atteso CA 30, pf 220 → -14 CA, +17 pf ⚠ FUORI BERSAGLIO per GS 15: la tabella attende CA 30 e pf 220 (-14 / +17)\n```",
-   "conti": [
-    "caratteristiche: matrice elite (15, 14, 13, 12, 10, 8) + 6 da DV/4 → For 18, Cos 17, Des 13",
-    "pf: 25d12 media 162.5 + Cos +3×25 = 237",
-    "TS: tipo «dragon», TS buoni ('temp', 'rifl', 'vol') → Temp +17, Rifl +15, Vol +15",
-    "CA: 10 + taglia -2 + Des +1 + naturale +5 (enorme) + scudo +2 = 16",
-    "collaudo GS 15 [PF1e Tab. 1–1]: atteso CA 30, pf 220 → -14 CA, +17 pf ⚠ FUORI BERSAGLIO per GS 15: la tabella attende CA 30 e pf 220 (-14 / +17)"
-   ],
-   "derivati": [
-    "ts"
-   ],
+   "blocco": null,
+   "conti": [],
    "lettura": {
     "armatura": null,
-    "base_ts": {
-     "rifl": 14,
-     "temp": 14,
-     "vol": 14
-    },
+    "base_ts": {},
     "classi": [],
-    "dado": 12,
-    "dv": 25,
+    "dado": null,
+    "dv": null,
     "elite": true,
     "gs": 15,
     "manca": [],
@@ -43798,8 +43786,9 @@
     "taglia": "enorme",
     "tipo": "dragon"
    },
-   "manca": [],
-   "scrivibile": true
+   "manca": [
+    "DV o livelli di classe"
+   ]
   },
   "Bestiario/villain/Generale_Grimjaw.md": {
    "blocco": null,
@@ -45021,20 +45010,18 @@
    },
    {
     "file": "Bestiario/villain/Ghaurush_Cenerevento/ghaurush-cenerevento-cr16.md",
-    "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ Des 14 derivata dalla CA di contatto, ma la scheda scrive 10: si tiene la scheda, da verificare.",
+    "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.",
     "note": [
-     "letta dalla riga delle caratteristiche della scheda stessa",
-     "⚠ Des 14 derivata dalla CA di contatto, ma la scheda scrive 10: si tiene la scheda, da verificare."
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ],
     "riga": "attributi: For 21 Des 10 Cos 21 Int 14 Sag 14 Car 22",
     "scritta": "attributi: For 21 Des 10 Cos 21 Int 14 Sag 14 Car 22"
    },
    {
     "file": "Bestiario/villain/Ghaurush_Cenerevento/ghaurush-cenerevento-secondo-incontro-cr18.md",
-    "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ Des 16 derivata dalla CA di contatto, ma la scheda scrive 10: si tiene la scheda, da verificare.",
+    "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.",
     "note": [
-     "letta dalla riga delle caratteristiche della scheda stessa",
-     "⚠ Des 16 derivata dalla CA di contatto, ma la scheda scrive 10: si tiene la scheda, da verificare."
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ],
     "riga": "attributi: For 21 Des 10 Cos 23 Int 14 Sag 14 Car 24",
     "scritta": "attributi: For 21 Des 10 Cos 23 Int 14 Sag 14 Car 24"
@@ -46173,7 +46160,7 @@
       {
        "Car": 23,
        "Cos": 20,
-       "Des": 14,
+       "Des": 10,
        "For": 20,
        "Int": 12,
        "Sag": 9
@@ -46192,7 +46179,7 @@
       {
        "Car": 24,
        "Cos": 22,
-       "Des": 16,
+       "Des": 10,
        "For": 20,
        "Int": 13,
        "Sag": 10
@@ -46275,15 +46262,15 @@
       }
      ]
     ],
-    "entro_1_mod": 0.83,
+    "entro_1_mod": 0.84,
     "file": 43,
     "insieme": "schede",
-    "mae": 1.49,
-    "mae_mod": 0.68,
+    "mae": 1.45,
+    "mae_mod": 0.66,
     "per_caratteristica": {
      "Car": 2.81,
      "Cos": 0.35,
-     "Des": 0.44,
+     "Des": 0.21,
      "For": 0.6,
      "Int": 3.07,
      "Sag": 1.63

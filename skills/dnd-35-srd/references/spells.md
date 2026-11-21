@@ -125,7 +125,7 @@ Defensive casting: DC 15 + spell level
 
 ### 5th Level
 - **Cone of Cold**: 60-ft cone; 1d6/level cold (max 15d6); Ref half
-- **Dominate Person**: humanoid fully controlled; Will negates; 1 day/level
+- **Dominate Person**: humanoid fully controlled; Will negates; 1 day/level; casting time 1 round; new save when forced against its nature
 - **Hold Monster**: as Hold Person but any creature
 - **Teleport**: teleport up to 100 miles/level; possible error table
 - **Wall of Force**: invisible wall; impervious to most attacks; cannot be dispelled

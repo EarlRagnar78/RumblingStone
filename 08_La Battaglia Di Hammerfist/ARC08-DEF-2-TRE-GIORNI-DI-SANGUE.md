@@ -308,11 +308,13 @@ sono quelle del manuale o delle schede.
 | troll dell'ariete (10 DV) | 2 | 16 | 105 | 2 artigli +13 (1d6+7), morso +8 (1d6+3), sbranare 2d6+10; rigenerazione 5 | quando Gorthak fugge, lo seguono |
 | **Grimjaw** | 1 | 26 | 178 | *spada bastarda* +22/+17/+12 (1d10+9, 17-20) | sotto **89** fugge (libretto); la scheda: pozione sotto 60 |
 | orog della guardia nera | 4 | 19 | 63 | ascia bipenne +13/+8 (1d12+10) | mai, finché Grimjaw è vivo |
-| **Fauci di Palude** | 1 | 29 (37 con *armatura magica* e *scudo*) | 337 | soffio 14d4, Riflessi CD 29; a terra morso +34 (2d8+10), artigli, ali e coda +31 | il Giorno 1 dopo un passaggio; il Giorno 3 sotto ~**230** sale in quota |
+| **Fauci di Palude** | 1 | 33 (41 con *armatura magica* e *scudo*) ¹ | 337 | soffio 14d4, Riflessi CD 29; a terra morso +34 (2d8+10), artigli, ali e coda +31 | il Giorno 1 dopo un passaggio; il Giorno 3 sotto ~**230** sale in quota |
 | il cavaliere | 1 | 23 | 95 | *lancia da cavaliere* +16 (1d8+7, triplo in carica) | resta in sella finché Fauci vola |
 | bugbear assassino | 8 | 20 | 58 | morning star +11 (1d8+3), furtivo +4d6, attacco mortale | quando ne cadono più di 4, o se scoperti prima del colpo |
 | hobgoblin della diversione | 7 | 19 | 43 | spada lunga +10/+5 (1d8+2) | mai |
 | giganti delle colline (sulla strada, non sul campo) | 8 | 20 | 102 | macigno (la carta) | non si combattono: Dara può fermare un macigno (Scena 2) |
+
+¹ Col corredo della scheda (anello e amuleto); senza, 29 (37 con *armatura magica* e *scudo*). Con o senza: A.5.
 
 **EL**: Gorthak coi due troll circa **13**; Grimjaw con quattro guardie circa
 **15**; l'imboscata dei bugbear circa **15**. Sono scontri duri per quattro
@@ -787,7 +789,7 @@ Al round 4, dopo la palla di fuoco `[CANONE — DM 2026-11-04, P16, il drago e i
 > stretto al collo e lo stendardo rosso che schiocca. Non scende sui cortili.
 > Gira sopra la Torre Ovest, una volta, piano. Poi apre la bocca. Che fate?*
 
-**Scheda d'entrata — Fauci di Palude, il drago della Mano Rossa** *(statistiche: Appendice A.5; `ARC08-02` §1; `Bestiario/villain/Fauci_di_Palude.md`. CA 29, 337 pf)*
+**Scheda d'entrata — Fauci di Palude, il drago della Mano Rossa** *(statistiche: Appendice A.5; `ARC08-02` §1; `Bestiario/villain/Fauci_di_Palude.md`. CA 33, 337 pf)* · I numeri di questa scena contano il corredo; senza, sono nella tabella di A.5.
 
 | | |
 |---|---|
@@ -813,12 +815,12 @@ Al round 4, dopo la palla di fuoco `[CANONE — DM 2026-11-04, P16, il drago e i
 gesto del round.
 
 - **Dara**: arco +21 con Nemico Prescelto (draghi), −2 per il secondo
-  incremento, contro CA **37** (Fauci lancia *armatura magica* all'alba, che
+  incremento, contro CA **41** (Fauci lancia *armatura magica* all'alba, che
   dura 7 ore, e *scudo* prima di ogni passaggio, che ne dura 7 minuti):
-  colpisce con 18 o più. Danni 1d8+8 ×3 al critico.
+  colpisce solo col 20 naturale. Danni 1d8+8 ×3 al critico.
 - **Harbek**: *colpo infuocato* (12d6, Riflessi CD 21 dimezza) contro RI 21:
   1d20+12 contro 21. Oppure *dissolvi magie* mirato (d20 + 10 contro CD 18,
-  uno per incantesimo): senza *scudo* Fauci ha CA 33, senza i due 29. Il
+  uno per incantesimo): senza *scudo* Fauci ha CA 37, senza i due 33. Il
   drago non li rilancia in questo passaggio.
 - **Nala**: *dissolvi magie* come Harbek, con d20 + 8; o Ispirare Coraggio,
   che dà +2 ai TS contro la paura a chi la sente, cioè contro la Presenza; o
@@ -838,8 +840,9 @@ i danni del Giorno 3, per le due soglie della Scena 6.
 baliste tirano (*Guida del DM* 3.5, fuori SRD: balista, incremento 36 m,
 quindi −2 a 45 m; la balista pesante di PF1e, 54 m senza penalità, non si usa).
 Le due baliste della torre che il drago sorvola tirano una volta a testa: +16
-(il +18 della MAPPA 3, −2) contro CA 37, 3d8+10, cioè solo col 20 naturale;
-contro 33 o 29, dopo un *dissolvi magie*, con 17 o 13. Ricaricano in due round:
+(il +18 della MAPPA 3, −2) contro CA 41, 3d8+10, cioè solo col 20 naturale;
+dopo un *dissolvi magie* contro 37 ancora solo col 20, e contro 33, dopo due,
+con 17. Ricaricano in due round:
 al passaggio dopo non sono pronte. Il d20 + 10 del libretto è la balista
 contro i reparti, e qui non vale. La nota delle mappe («sorvoli a 45 m, fuori
 gittata baliste») è superata.
@@ -1373,9 +1376,9 @@ prima stesura ne aveva alcune che le carte non hanno: sono corrette qui.
 - Al round 2 prende la mira, ma la mira non dà bonus: in 3.5 nessuna regola
   lo prevede `[CANONE — DM 2026-11-04, P16: la guida dava +1, tolto]`. Dal
   round 3 tira: arco +21 con Nemico Prescelto, −4 per la distanza (circa
-  80 m, terzo incremento), contro CA 37: colpisce solo col 20. Con Tiro Rapido
-  quattro frecce: +19/+19/+14/+9 più gli stessi modificatori. Contro CA 29, se
-  Harbek o Nala hanno dissolto *scudo* e *armatura magica*, colpisce con 12.
+  80 m, terzo incremento), contro CA 41: colpisce solo col 20. I numeri di Fauci in tutta la scena contano il corredo (A.5). Con Tiro Rapido
+  quattro frecce: +19/+19/+14/+9 più gli stessi modificatori. Contro CA 33, se
+  Harbek o Nala hanno dissolto *scudo* e *armatura magica*, colpisce con 16.
 - **Oppure il cavaliere**: CA 23, 95 pf, a cavallo del collo. Con +15 (+19
   senza Nemico Prescelto, −4 di distanza) colpisce con 8: con Tiro Rapido fa
   circa 15 danni a round, e gliene servono sei. Da sola non lo abbatte prima
@@ -1385,7 +1388,7 @@ prima stesura ne aveva alcune che le carte non hanno: sono corrette qui.
   basta. Legato alla sella, non cade: resta lì finché il drago vola.
 - Le **due frecce ammazzadraghi** dell'armeria `[CANONE — DM 2026-11-04, P16: già in gioco con la CD del 2026-10-23]`: SRD,
   *freccia assassina* (draghi): chi è colpito tira Tempra **CD 20** o muore
-  `[CANONE — DM 2026-10-23]`. Fauci ha Tempra +21: muore solo con un 1
+  `[CANONE — DM 2026-10-23]`. Fauci ha Tempra +24: muore solo con un 1
   naturale. È la regola dell'SRD 3.5; i 50 danni al posto della morte sono di
   PF1e, e la guida diceva «6d6+1 comunque».
 - Se gli eroi fanno a Fauci **più di 50 danni in tutto** nella scena (frecce,
@@ -1402,8 +1405,8 @@ prima stesura ne aveva alcune che le carte non hanno: sono corrette qui.
   Se Harbek sa del drago (lo ha divinato, o se lo aspetta), è la cosa giusta
   da fare, e compra tempo. Il Re prende lo stesso la lancia del cavaliere.
 - ***Dissolvi magie*** mirato su Fauci, al round 2 o 3, a 66 m: d20 + 10
-  contro CD 18, uno per incantesimo. Senza *scudo* il drago ha CA 33, senza
-  i due 29: Fauci non li rilancia prima del soffio.
+  contro CD 18, uno per incantesimo. Senza *scudo* il drago ha CA 37, senza
+  i due 33: Fauci non li rilancia prima del soffio.
 - *Immunità agli incantesimi* **non serve**: il soffio è una capacità
   soprannaturale, non un incantesimo (SRD). La prima stesura la dava.
 - ***Guarigione*** sul Re dopo la lancia, al round 6: 120 pf. Lo tengono vivo
@@ -1417,7 +1420,7 @@ prima stesura ne aveva alcune che le carte non hanno: sono corrette qui.
 **Nala** — l'inganno.
 - ***Immagine silenziosa*** al round 2: un secondo drago sul fianco, o una
   fila di baliste che si alza. Chi la guarda soltanto non tira il TS: ci
-  crede (SRD). Fauci tira Volontà +19 contro **CD 15** solo se la studia o ci
+  crede (SRD). Fauci tira Volontà +22 contro **CD 15** solo se la studia o ci
   soffia sopra, e allora la riconosce salvo un 1; per un round il drago gira
   invece di scendere. La sequenza slitta di un round
   `[CANONE — DM 2026-11-04, P16, il drago e il cavaliere]`.
@@ -1946,7 +1949,20 @@ si tira stasera, in forma compatta. Se cambiano, cambiano lì.
 
 **A.4 · Orog della guardia nera** (×4) · `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md`, ⚠️ non SRD (orog) · GS 7 · Guerriero 6, Medio, LM · Iniz +4 · scurovisione 18 m · CA **19**, contatto 10, colto alla sprovvista 19 · pf **63** · Temp +10, Rifl +2, Vol +4 · velocità 6 m · *ascia bipenne +1* +13/+8 (1d12+10, ×3); con Attacco Poderoso a −3: +10/+5, 1d12+16 · Incalzare, Incalzare Potenziato · **guardia del corpo**: chi attacca Grimjaw in mischia deve prima superarne uno; immune alla paura finché Grimjaw è vivo. Grimjaw con quattro guardie: **EL** circa 15.
 
-**A.5 · Fauci di Palude** · `ARC08-02` §1; `Bestiario/villain/Fauci_di_Palude.md` · drago nero adulto maturo a 25 DV (potenziamento dichiarato) · GS 15 · Enorme · CA **29** (**37** con *armatura magica*, che lancia all'alba e dura tutto il giorno, e *scudo*, che dura 7 minuti e rilancia a ogni passaggio) · pf **337** · Temp +21, Rifl +16, Vol +19 · RD 10/magia, RI **21**, immune all'acido · volare 45 m (scarsa), Fluttuare, Attacco in Volo · **soffio** in linea di 30 m, 14d4 acido, Riflessi **CD 29**, ogni 1d4 round · a terra: **morso** +34 (2d8+10, 19-20), **2 artigli** +31 (2d6+5), **2 ali** +31 (1d8+5), **colpo di coda** +31 (2d6+15); Spazio 4,5 m, Portata 3 m · **soffio a cono** di 18 m, 1/giorno, con un round completo per prepararlo (⚠️ house-rule della scheda: l'SRD dà ai draghi neri solo la linea) · **Presenza terrificante** 90 m, Volontà **CD 25** (⚠️ potenziamento: 63 m nell'SRD per l'adulto maturo) · *dissolvi magie*, *nube maleodorante*, *immagine speculare* da stregone di 7° · il Giorno 3 sale in quota sotto ~**230** pf; atterra su un bastione se ha preso più di 50 danni nella scena.
+**A.5 · Fauci di Palude** · `ARC08-02` §1; `Bestiario/villain/Fauci_di_Palude.md` · drago nero adulto maturo a 25 DV (potenziamento dichiarato) · GS 15 · Enorme · CA **33**, contatto 10 `[CANONE — DM 2026-11-21, card]` (**41** con *armatura magica*, che lancia all'alba e dura tutto il giorno, e *scudo*, che dura 7 minuti e rilancia a ogni passaggio; il 33 conta l'*anello di protezione +2* e l'*amuleto dell'armatura naturale +2*) · pf **337** · Temp +24, Rifl +19, Vol +22 (*mantello della resistenza +3*) · RD 10/magia, RI **21**, immune all'acido · volare 45 m (scarsa), Fluttuare, Attacco in Volo · **soffio** in linea di 30 m, 14d4 acido, Riflessi **CD 29**, ogni 1d4 round · a terra: **morso** +34 (2d8+10, 19-20), **2 artigli** +31 (2d6+5), **2 ali** +31 (1d8+5), **colpo di coda** +31 (2d6+15); Spazio 4,5 m, Portata 3 m · **soffio a cono** di 18 m, 1/giorno, con un round completo per prepararlo (⚠️ house-rule della scheda: l'SRD dà ai draghi neri solo la linea) · **Presenza terrificante** 90 m, Volontà **CD 25** (⚠️ potenziamento: 63 m nell'SRD per l'adulto maturo) · *dissolvi magie*, *nube maleodorante*, *immagine speculare* da stregone di 7° · il Giorno 3 sale in quota sotto ~**230** pf; atterra su un bastione se ha preso più di 50 danni nella scena. Porta anche 2 pergamene di *invisibilità superiore*, 2 di *nebbia acida* e 2 pozioni di *cura ferite gravi* (il corredo della card del 21/11, marca qui sopra), ma in questa sessione non le usa: il Giorno 1 vuole che le mura lo vedano, il Giorno 3 la sequenza è il cono e la lancia sul Re, e nella nebbia il Re avrebbe occultamento contro la lancia; la pozione la beve sotto i 150 pf, e qui se ne va prima, sotto ~230 `[INFERRED — Il DM conferma che nella Sessione 2 Fauci non usa pergamene né pozioni?; base: le scene 2 e 6 sono costruite sul drago che si fa vedere e sul colpo al Re, e le schede in ARC08-02 §1 mettono invisibilità e nebbia contro le mura e contro Thorik]`.
+
+Fauci con e senza il corredo, per le scene 2 e 6. La CA si legge così: con *armatura magica* e *scudo* / senza *scudo* / senza i due. «20» vuol dire solo il 20 naturale.
+
+| | con il corredo | senza |
+|---|---|---|
+| CA | 41 / 37 / 33 | 37 / 33 / 29 |
+| contatto | 10 | 8 |
+| Tempra · Riflessi · Volontà | +24 · +19 · +22 | +21 · +16 · +19 |
+| Dara nella Scena 2 (arco +19 a 45 m) | 20 / 18 / 14 | 18 / 14 / 10 |
+| Dara nella Scena 6 (arco +17 a 80 m) | 20 / 20 / 16 | 20 / 16 / 12 |
+| baliste (+16) | 20 / 20 / 17 | 20 / 17 / 13 |
+| *freccia assassina* (Tempra CD 20) e *immagine silenziosa* (Volontà CD 15) | fallisce solo con l'1 | fallisce solo con l'1 |
+| pergamene e pozioni | 2 di *invisibilità superiore*, 2 di *nebbia acida*, 2 di *cura ferite gravi* | nessuna |
 
 **A.6 · Il cavaliere di Fauci** · `ARC08-02` §1 · hobgoblin Guerriero 6 / Guardia Nera 4 · GS 10 · CA **23**, pf **95** · Temp +15, Rifl +6, Vol +6 · *lancia da cavaliere +1* +16/+11 (1d8+7, ×3; in carica in sella danni tripli con Carica Devastante) · **Aura di disperazione**: −2 ai TS dei nemici entro 3 m · Punire il Bene 1/giorno (+2 a colpire, +4 danni) · Comando Tattico: +2 morale agli hobgoblin entro 9 m · resta in sella finché Fauci vola.
 

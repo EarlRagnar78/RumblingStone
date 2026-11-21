@@ -60,8 +60,10 @@ Gli script scrivono canone (i tre file sopra, `campaign/sessions/*`)
 SOLO se valgono **tutte insieme**:
 
 1. **Branch**: mai su `main`/`master` — il canone vivo di un gruppo sta su
-   `campaign-group-<nome>` (guardia `campaign_branch.py`; il branch non si
-   mergia mai in `main`).
+   `campaign-group-<nome>` (guardia `campaign_branch.py guard`, che rifiuta
+   anche i rami morti di `plans/rami-di-gruppo.json`; il branch non si
+   mergia mai in `main`, è `main` che entra nel branch, e
+   `sincronia_giocato.py` misura se è indietro: ADR-0149).
 2. **Conferma**: il DM vede e conferma il **diff esatto, blocco per
    blocco** (`--yes` esiste solo per test/CI).
 3. **Regioni marcate**: in `state.md` **non resta nessuna regione `auto:`**

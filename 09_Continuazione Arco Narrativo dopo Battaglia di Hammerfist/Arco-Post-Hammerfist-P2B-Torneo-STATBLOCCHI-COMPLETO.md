@@ -186,7 +186,7 @@ voci:
   - RI 21; RD 5/magia; immune al fuoco, al sonno e alla paralisi; vulnerabile al freddo
   - Localizzare oggetti 6 al giorno
   - Incantesimi da stregone di 7° livello, al giorno 6/7/7/5, CD 13 + livello dell'incantesimo; anche da chierico e dei domini Caos, Male e Fuoco come arcani
-  - Incantesimi conosciuti: 3° velocità, dissolvi magie; 2° resistere all'energia, immagine speculare, vedere invisibilità; 1° armatura magica, dardo incantato, favore divino, ritirata rapida, scudo; 0 guida, individuazione del magico, lettura del magico, mano magica, messaggio, prestidigitazione, suono fantasma
+  - Incantesimi conosciuti: 3° velocità, dissolvi magie; 2° resistere all'energia, immagine speculare, vedere invisibilità; 1° armatura magica, dardo incantato, favore divino, raggio di indebolimento, scudo; 0 guida, individuazione del magico, lettura del magico, mano magica, messaggio, prestidigitazione, suono fantasma
   - Oggetti: anello di protezione +2, mantello della resistenza +2, pozione di cura ferite gravi
 fonte: drago rosso adulto dell'SRD 3.5, tabelle del rosso (d20srd); talenti scelti in questa revisione; incantesimi conosciuti e oggetti dal suo tesoro scelti dal DM (card del 21/11)
 ```
@@ -195,9 +195,9 @@ fonte: drago rosso adulto dell'SRD 3.5, tabelle del rosso (d20srd); talenti scel
 - **Incantesimi conosciuti** `[CANONE — DM 2026-11-21, card]`. Livello dell'incantatore 7°, CD 13 + livello dell'incantesimo (Car 16): 13 per i trucchetti, 14 al 1°, 15 al 2°, 16 al 3°. Lancia da stregone e, come arcani, anche gli incantesimi da chierico e dei domini Caos, Male e Fuoco (SRD). Lo stregone di 7° conosce 7 trucchetti, 5 incantesimi di 1°, 3 di 2° e 2 di 3°; i bonus di Carisma aggiungono incantesimi al giorno, non conosciuti.
   - 3°: *velocità* (fino a 7 creature, entro 12 m e a non più di 9 m l'una dall'altra; 7 round; +1 a colpire, +1 di schivare alla CA e ai Riflessi, +9 m a ogni velocità, un attacco in più nell'attacco completo), *dissolvi magie* (prova di dissolvere 1d20+7).
   - 2°: *resistere all'energia* (resistenza 20 al 7° livello; 70 minuti), *immagine speculare* (1d4+2 immagini; 7 minuti), *vedere invisibilità* (70 minuti).
-  - 1°: *armatura magica* (+4 di armatura; 7 ore), *dardo incantato* (4 dardi, 4d4+4, nessun TS), *favore divino* (incantesimo da chierico lanciato come arcano: +2 di fortuna a colpire e ai danni delle armi, naturali comprese; 1 minuto), *ritirata rapida* (+9 m alla velocità base sul terreno, non al volo; 7 minuti), *scudo* (+4 di scudo, para i dardi incantati; 7 minuti).
+  - 1°: *armatura magica* (+4 di armatura; 7 ore), *dardo incantato* (4 dardi, 4d4+4, nessun TS), *favore divino* (incantesimo da chierico lanciato come arcano: +2 di fortuna a colpire e ai danni delle armi, naturali comprese; 1 minuto), *raggio di indebolimento* (raggio, tocco a distanza +20, 12 m; −1d6+3 alla Forza per 7 minuti, nessun TS, la RI vale; SRD, *Ray of Enfeeblement*) `[CANONE — DM 2026-11-21, card]`, *scudo* (+4 di scudo, para i dardi incantati; 7 minuti).
   - 0: *guida* (incantesimo da chierico lanciato come arcano), *individuazione del magico*, *lettura del magico*, *mano magica*, *messaggio*, *prestidigitazione*, *suono fantasma*. Sono i trucchetti di chi conta un tesoro e comanda dei cavalieri da lontano; l'incantesimo resistenza manca apposta, perché il suo bonus non si somma con quello del mantello.
-- **Freddo, resistenza e vulnerabilità.** L'SRD dice che la vulnerabilità aggiunge metà dei danni (+50%), anche se il TS riesce, e che la resistenza toglie i primi punti di ogni attacco, ma non dice in che ordine si applicano. Qui si applica prima la vulnerabilità e poi si tolgono i 20 punti: 30 danni da freddo diventano 45, e ne passano 25. La resistenza non annulla la vulnerabilità: la attenua. `[INFERRED — Il DM conferma l'ordine vulnerabilità, poi resistenza?; base: l'SRD tace, ed è la lettura comune dei forum 3.5 (resistenza applicata per ultima)]`
+- **Freddo, resistenza e vulnerabilità.** L'SRD dice che la vulnerabilità aggiunge metà dei danni (+50%), anche se il TS riesce, e che la resistenza toglie i primi punti di ogni attacco, ma non dice in che ordine si applicano. Qui si applica prima la vulnerabilità e poi si tolgono i 20 punti: 30 danni da freddo diventano 45, e ne passano 25. La resistenza non annulla la vulnerabilità: la attenua. `[CANONE — DM 2026-11-21, card]`
 - **Difese con gli incantesimi**: con *armatura magica* e *scudo* la CA è 39 (−2 taglia, +21 naturale, +2 deviazione, +4 armatura, +4 scudo), contatto 10, colto alla sprovvista 39; con *velocità* 40, contatto 11, e Riflessi +16.
 - **Equipaggiamento** `[CANONE — DM 2026-11-21, card]`: anello di protezione +2 (8.000 mo), mantello della resistenza +2 (4.000 mo), pozione di *cura ferite gravi* (750 mo). In tutto 12.750 mo, il 19% del suo tesoro: il rosso adulto ha tesoro triplo (SRD, «Treasure: Triple standard»), e a GS 15 il tesoro standard vale 22.000 mo (Guida del DM 3.5, «Treasure Values per Encounter»), quindi 66.000 mo. Il resto del tesoro è lontano, oltre i piani, e nell'arena non si trova.
 
@@ -234,10 +234,11 @@ quello che vede nell'arena. **Obiettivo:** l'Orbe per i Githyanki, e tornare a c
 - Fugge a un terzo dei pf (84): il patto non vale la pelle. Se Vaereth cade, porta
   via i cavalieri che riesce a raccogliere. `[CANONE — DM 2026-11-21, card]` In
   fuga, fuori portata, beve la pozione di *cura ferite gravi* (3d8+5, LI 5): serve a
-  tornare a casa, non a restare. *Ritirata rapida* gli serve solo a terra, se non
-  può volare `[INFERRED — Il drago tiene ritirata rapida o la cambia con raggio di
-  indebolimento?; base: card (d) del 21/11 ancora aperta; i due sono incantesimi di 1°
-  della lista dello stregone, e la riga resta com'è finché il DM non sceglie]`.
+  tornare a casa, non a restare.
+- *Raggio di indebolimento* `[CANONE — DM 2026-11-21, card]`: prima di ghermire
+  chi è da solo, o contro chi lo colpisce più forte in mischia, glielo lancia
+  in passata (tocco a distanza +20, 12 m, −1d6+3 alla Forza per 7 minuti,
+  nessun TS). Prende al posto di *ritirata rapida*, che non tocca il volo.
 
 Boost log: 2026-11-21, incantesimi e oggetti dall'SRD, GS 15 → 15. Gli incantesimi conosciuti che l'SRD dà al rosso adulto (stregone di 7°) prima non erano scelti; ora lo sono, e gli oggetti (12.750 mo) vengono dal suo tesoro triplo di 66.000 mo. Nessun DV, template o livello in più: il GS resta 15 (scelta del DM, card del 21/11).
 

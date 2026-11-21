@@ -1524,7 +1524,7 @@ La pattuglia intera: **EL 8** (tre GS 5; i worg non la alzano di un punto intero
 
 Gli scout col sergente: **EL** circa 9. Pattuglia e scout insieme: **EL** circa 10.
 
-**A.5 · Fauci di Palude, per la Scena 7** · non si ricopia: statblocco completo in `ARC08-01`, PNG nemici. Per la scena servono: CA **33** (con l'*anello di protezione +2* e l'*amuleto dell'armatura naturale +2* della scheda `[INFERRED — Nelle serate coi pregen Fauci porta il corredo della card del 21/11?; base: card (b) del 21/11, consigliata sì; i numeri senza corredo sono nella tabella qui sotto]`), pf **337**, RD 10/magia, RI **21**, volare 45 m (scarsa), soffio in linea di 30 m **14d4** acido (Riflessi **CD 29** dimezza), Presenza terrificante **90 m**, Volontà **CD 25** (⚠️ potenziamento non SRD: 63 m nell'SRD per l'adulto maturo).
+**A.5 · Fauci di Palude, per la Scena 7** · non si ricopia: statblocco completo in `ARC08-01`, PNG nemici. Per la scena servono: CA **33** (con l'*anello di protezione +2* e l'*amuleto dell'armatura naturale +2* della scheda `[CANONE — DM 2026-11-21, card]`), pf **337**, RD 10/magia, RI **21**, volare 45 m (scarsa), soffio in linea di 30 m **14d4** acido (Riflessi **CD 29** dimezza), Presenza terrificante **90 m**, Volontà **CD 25** (⚠️ potenziamento non SRD: 63 m nell'SRD per l'adulto maturo).
 
 | Fauci nella Scena 7 | con il corredo | senza |
 |---|---|---|

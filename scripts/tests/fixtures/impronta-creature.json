@@ -1035,7 +1035,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 5425,
+    "senza_note": 5598,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -5337,7 +5337,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 1559,
+    "senza_note": 1720,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/Duergar_figther_ponte/Duergar_mago_3liv_4cr.html",
@@ -5675,7 +5675,7 @@
      "Car": 8,
      "Cos": 18,
      "Des": 15,
-     "For": 21,
+     "For": 19,
      "Int": 10,
      "Sag": 12
     },
@@ -5688,7 +5688,7 @@
      "Car": 10,
      "Cos": 18,
      "Des": 14,
-     "For": 20,
+     "For": 18,
      "Int": 8,
      "Sag": 10
     },
@@ -5700,7 +5700,7 @@
      "Des 14 **letta da ca-dettaglio** — il vincolo batte l'array",
      "Des 14 **ricavata dall'iniziativa** — il vincolo batte l'array",
      "Cos 18 **ricavata da pf 105 su 10 DV** — il vincolo batte l'array",
-     "For 20 **ricavata da BAB e lotta** — il vincolo batte l'array"
+     "For 18 **ricavata da BAB e lotta** — il vincolo batte l'array"
     ]
    ],
    "giudica": {
@@ -5728,8 +5728,8 @@
       0
      ],
      "attacco": [
-      17,
-      17,
+      16,
+      16,
       0
      ],
      "iniziativa": [
@@ -5738,8 +5738,8 @@
       0
      ],
      "lotta": [
-      15,
-      15,
+      14,
+      14,
       0
      ],
      "pf": [
@@ -5793,7 +5793,7 @@
       "Car": 8,
       "Cos": 18,
       "Des": 15,
-      "For": 21,
+      "For": 19,
       "Int": 10,
       "Sag": 12
      },
@@ -5805,7 +5805,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 4018,
+    "senza_note": 4267,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -5843,7 +5843,7 @@
       "letta da ca-dettaglio"
      ],
      "for_da_lotta": [
-      20,
+      18,
       "ricavata da BAB e lotta"
      ]
     }
@@ -5869,7 +5869,7 @@
      "Car": 8,
      "Cos": 18,
      "Des": 15,
-     "For": 21,
+     "For": 19,
      "Int": 10,
      "Sag": 12
     },
@@ -5887,8 +5887,8 @@
      }
     ],
     "gs": 10.0,
-    "lotta": 15,
-    "mischia": "ascia bipenne +1 +17/+12 (1d12+8/x3)",
+    "lotta": 14,
+    "mischia": "ascia bipenne +1 +16/+11 (1d12+7/x3)",
     "pf": 105,
     "provenienza": "a mano",
     "tipo": "Medium humanoid (goblinoid), hobgoblin barbaro 10, CE",
@@ -9761,20 +9761,21 @@
     {
      "Car": 8,
      "Cos": 12,
-     "Des": 11,
+     "Des": 12,
      "For": 14,
      "Int": 10,
      "Sag": 9
     },
     [
-     "trascritta dalla fonte `hobgoblin regular 4 liv.pcg`"
+     "trascritta dalla fonte `hobgoblin regular 4 liv.pcg`",
+     "⚠ Des 12 letta da ca-dettaglio: la fonte dice 11, lo statblocco è stato adattato e vince lo statblocco"
     ]
    ],
    "genera_senza_fonte": [
     {
      "Car": 9,
-     "Cos": 12,
-     "Des": 11,
+     "Cos": 14,
+     "Des": 12,
      "For": 13,
      "Int": 9,
      "Sag": 9
@@ -9783,8 +9784,7 @@
      "array standard del Manuale del DM (PNG con classe)",
      "variazione a seme fisso: Int +1, Sag −1",
      "modificatori razziali SRD: hobgoblin Des +2 Cos +2",
-     "Cos 12 **ricavata da Temp +8 (base +7)** — il tetto del TS batte l'array",
-     "Des 11 **ricavata da Rifl +2 (base +2)** — il tetto del TS batte l'array"
+     "Des 12 **letta da ca-dettaglio** — il vincolo batte l'array"
     ]
    ],
    "giudica": {
@@ -9797,13 +9797,13 @@
       0
      ],
      "Rifl": [
-      2,
-      2,
+      3,
+      3,
       0
      ],
      "Temp": [
-      8,
-      8,
+      9,
+      9,
       0
      ],
      "Vol": [
@@ -9813,13 +9813,13 @@
      ],
      "pf": [
       26,
-      "8-36",
+      "12-40",
       0
      ],
-     "pf_media": 22
+     "pf_media": 26
     },
     "file": "Bestiario/mostri/hobgoblin-regular-warrior4-cr3.md",
-    "provenienza": "trascritte",
+    "provenienza": "a mano",
     "scarti": {},
     "template": null,
     "template_dichiarati": [],
@@ -9859,8 +9859,8 @@
     "numeri_della_fonte": {},
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
-    "provenienza": "trascritte",
-    "senza_note": 1029,
+    "provenienza": "a mano",
+    "senza_note": 1375,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/hobgoblin regular 4 liv.pcg",
@@ -9885,12 +9885,12 @@
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
-      1,
-      "ricavata da Temp +8 (base +7)"
+      2,
+      "ricavata da Temp +9 (base +7)"
      ],
      "Des": [
-      0,
-      "ricavata da Rifl +2 (base +2)"
+      1,
+      "ricavata da Rifl +3 (base +2)"
      ],
      "Sag": [
       -1,
@@ -9900,7 +9900,10 @@
     "vincoli": {
      "cos_da_pf": null,
      "des_da_iniziativa": null,
-     "des_vincolata": null,
+     "des_vincolata": [
+      12,
+      "letta da ca-dettaglio"
+     ],
      "for_da_lotta": null
     }
    },
@@ -9909,8 +9912,8 @@
    "scheda": {
     "attributi": {
      "Car": 8,
-     "Cos": 12,
-     "Des": 11,
+     "Cos": 14,
+     "Des": 13,
      "For": 14,
      "Int": 10,
      "Sag": 9
@@ -9932,11 +9935,11 @@
     "lotta": null,
     "mischia": "",
     "pf": 26,
-    "provenienza": "trascritte",
+    "provenienza": "a mano",
     "tipo": "Medium humanoid (goblinoid), Warrior 4, LE",
     "ts": [
-     8,
-     2,
+     9,
+     3,
      1
     ]
    }
@@ -14260,7 +14263,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 4189,
+    "senza_note": 4324,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -16010,7 +16013,7 @@
      "Cos": 16,
      "Des": 15,
      "For": 8,
-     "Int": 22,
+     "Int": 18,
      "Sag": 12
     },
     [
@@ -16128,7 +16131,7 @@
       "Cos": 16,
       "Des": 15,
       "For": 8,
-      "Int": 22,
+      "Int": 18,
       "Sag": 12
      },
      "letta dalla riga delle caratteristiche della scheda stessa"
@@ -16139,7 +16142,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 5009,
+    "senza_note": 5213,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -16204,7 +16207,7 @@
      "Cos": 16,
      "Des": 15,
      "For": 8,
-     "Int": 22,
+     "Int": 18,
      "Sag": 12
     },
     "bab": 6,
@@ -44771,15 +44774,6 @@
     "scritta": "attributi: For 13 Des 13 Cos 14 Int 10 Sag 9 Car 8"
    },
    {
-    "file": "Bestiario/mostri/hobgoblin-regular-warrior4-cr3.md",
-    "marca": "> [GENERATO] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`.",
-    "note": [
-     "trascritta dalla fonte `hobgoblin regular 4 liv.pcg`"
-    ],
-    "riga": "attributi: For 14 Des 11 Cos 12 Int 10 Sag 9 Car 8",
-    "scritta": "attributi: For 14 Des 11 Cos 12 Int 10 Sag 9 Car 8"
-   },
-   {
     "file": "Bestiario/mostri/hobgoblin-sergente-cr5.md",
     "marca": "> [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.",
     "note": [
@@ -45261,25 +45255,6 @@
       }
      ],
      [
-      "hobgoblin-regular-warrior4-cr3.md",
-      {
-       "Car": 8,
-       "Cos": 12,
-       "Des": 11,
-       "For": 14,
-       "Int": 10,
-       "Sag": 9
-      },
-      {
-       "Car": 9,
-       "Cos": 12,
-       "Des": 11,
-       "For": 13,
-       "Int": 9,
-       "Sag": 9
-      }
-     ],
-     [
       "hobgoblin-veterans-warrior6-cr5.md",
       {
        "Car": 8,
@@ -45509,17 +45484,17 @@
      ]
     ],
     "entro_1_mod": 0.87,
-    "file": 21,
+    "file": 20,
     "insieme": "fonti",
-    "mae": 1.21,
-    "mae_mod": 0.55,
+    "mae": 1.24,
+    "mae_mod": 0.56,
     "per_caratteristica": {
-     "Car": 1.52,
-     "Cos": 0.81,
-     "Des": 0.33,
-     "For": 1.38,
-     "Int": 2.0,
-     "Sag": 1.19
+     "Car": 1.55,
+     "Cos": 0.85,
+     "Des": 0.35,
+     "For": 1.4,
+     "Int": 2.05,
+     "Sag": 1.25
     }
    },
    "schede": {

@@ -680,8 +680,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 ### 🎚️ Scheda sensoriale delle tre zone — e cosa NON dire
 
 > **Come si usa.** Le prime tre colonne sono quello che i PG colgono **in sei
-> secondi** senza tirare. La quarta è **vincolante quanto le altre**
-> ([ADR-0057](../../../plans/adr/ADR-0057-la-quarta-colonna-e-di-tutto-il-repo.md)):
+> secondi** senza tirare. La quarta è **vincolante quanto le altre**:
 > sono le cose che il tavolo deve **scoprire**, e che l'atmosfera, se ti scaldi,
 > racconta al posto loro.
 
@@ -888,7 +887,7 @@ non torna, e il PNG resta senza etichetta.
 ## §4 · I suoni dell'arco
 
 **Descrizioni, mai titoli di brani**: ognuno usa quello che ha, e il file non
-invecchia con le piattaforme (ADR-0018 «regola dei suoni»).
+invecchia con le piattaforme.
 
 > **La regola di quest'arco**, e non è quella dell'ARC-08. Là il fragore era lo
 > stato di riposo e i suoni si spegnevano per fare spazio. **Qui il silenzio è lo
@@ -1127,7 +1126,7 @@ Vel 6 m · **Mischia** martello da guerra runico +1 +11/+6 (1d8+2/x3) · Domini 
 
 **TATTICHE**
 ___
-Dipendono da come è andata con lui prima dello scontro: il viaggio a mille anni fa, Scena 7, «Cosa fa quando comincia lo scontro» (canone, decisione Q21 del DM) (recuperato non combatte e indica la runa della Catena; trattativa aperta guarda un round e poi sta con chi vince; minacciato combatte con Zog'tar, come dice «Come si combatte, se si arriva a combatterlo» nella stessa scena). **Morale**: sotto 30 pf non fugge e non implora, finisce di incidere la lastra con un'azione di round completo, l'ultima, e in quel turno non attacca e non lancia (decisioni D52 e D71 del DM, nella stessa scena).  
+Dipendono da come è andata con lui prima dello scontro: il viaggio a mille anni fa, Scena 7, «Cosa fa quando comincia lo scontro» (recuperato non combatte e indica la runa della Catena; trattativa aperta guarda un round e poi sta con chi vince; minacciato combatte con Zog'tar, come dice «Come si combatte, se si arriva a combatterlo» nella stessa scena). **Morale**: sotto 30 pf non fugge e non implora, finisce di incidere la lastra con un'azione di round completo, l'ultima, e in quel turno non attacca e non lancia (decisioni D52 e D71 del DM, nella stessa scena).  
 
 **STATISTICHE**
 ___
@@ -1171,26 +1170,27 @@ ___
 
 **DIFESA**
 ___
-**CA 36** (−2 taglia, +2 DES, +26 nat), contatto 10, impreparato 34; **40 con *armatura magica*** · **pf 337** (25d12+175) · TS Temp +21, Rifl +18, Vol +20 · RD 10/magia · RI 22 · immune acido, sonno, paralisi  
+**CA 39** (−2 taglia, +2 DES, +26 nat, +3 deflessione), contatto 13, impreparato 37; **43 con *armatura magica***, come al duello · **pf 337** (25d12+175) · TS Temp +24, Rifl +21, Vol +23 (con il mantello; senza oggetti CA 36, contatto 10, TS +21/+18/+20) · RD 10/magia · RI 22 · immune acido, sonno, paralisi  
 
 **ATTACCO**
 ___
-Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16) · **Schiacciare** 2d8+16, Riflessi CD 29 (solo creature Piccole o minori) · **Soffio acido** (Sop) linea di 30 m, 16d4, Riflessi CD 31 dimezza, di nuovo dopo 1d4 round (1d4+1 se impregnante, sotto) · **Capacità magiche** 3/giorno *oscurità* (raggio 24 m); 1/giorno *corrompere l'acqua* (CD 26, la CD della sua Presenza Terrificante, come nell'SRD: rovina anche le pozioni che un PG ha addosso, se falliscono il TS); 1/giorno *crescita vegetale* · **Incantesimi da stregone** (incantatore di 7°, CD 14 + livello): 0 (6/giorno) *individuazione del magico, lettura del magico, mano magica, resistenza, suono fantasma, frastornare*; 1° (7/giorno) *armatura magica, scudo, colpo accurato, dardo incantato*; 2° (7/giorno) *vedere invisibilità, immagine speculare*; 3° (5/giorno) *dissolvi magie, lentezza* (CD 17) (i conosciuti dell'Adulto più i due di 3°, come D64: scelta di Jfs del 19/11)  
-
-**TATTICHE**
-___
-Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf, circa **112 pf**. In A.1-ter, «Cosa cambia al tavolo», i numeri che contano nel duello.  
+Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16) · **Schiacciare** 2d8+16, Riflessi CD 29 (solo creature Piccole o minori) · **Soffio acido** (Sop) linea di 30 m, 16d4, Riflessi CD 31 dimezza, di nuovo dopo 1d4 round (1d4+1 se impregnante, sotto) · **Capacità magiche** (incantatore di 7°) 3/giorno *oscurità* (raggio 24 m); 1/giorno *corrompere l'acqua* (gittata 72 m, quella della Presenza; CD 26, la CD della sua Presenza Terrificante, come nell'SRD: rovina anche le pozioni che un PG ha addosso, se falliscono il TS); 1/giorno *crescita vegetale* (gittata 204 m) · **Incantesimi da stregone** (incantatore di 7°, CD 14 + livello; gittata vicina 12 m, media 51 m, lunga 204 m): 0 (6/giorno) *individuazione del magico, lettura del magico, mano magica, messaggio, resistenza, suono fantasma, frastornare*; 1° (7/giorno) *armatura magica, causare paura* (CD 15), *colpo accurato, dardo incantato, scudo*; 2° (7/giorno) *immagine speculare, spaventare* (CD 16), *vedere invisibilità*; 3° (5/giorno) *dissolvi magie, lentezza* (CD 17). Conosciuti 7/5/3/2, come lo stregone di 7° dell'SRD: ai conosciuti dell'Adulto più i due di 3° (D64, scelta di Jfs del 19/11) mancavano tre posti, e il DM li ha riempiti con *messaggio*, *causare paura* e *spaventare*  
 
 **STATISTICHE**
 ___
-For 33, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +25; Lotta +44 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Impregnante, Virare (non Ghermire), Volontà di Ferro, più Allerta · **Abilità** Ascoltare +31, Cercare +29, Concentrazione +32, Intimidire +29, Muoversi Silenziosamente +27, Nascondersi +19, Osservare +31, Sapienza Magica +29, Nuotare +18: come l'Adulto più Allerta (il blocco non spende i gradi dei tre DV in più)  
-
-**CAPACITÀ SPECIALI**
-___
-- **Presenza Terrificante**: raggio 72 m, Volontà CD 26 (meno di 25 DV).  
-- **Soffio impregnante**, quando lo sceglie: chi ne prende danno ne riprende metà al round dopo; toglierselo è un'azione di round completo con Riflessi CD 31 (+2 rotolando a terra, e si resta proni); la ricarica sale di 1 round.  
-- **Respirare sott'acqua** (Str).  
+For 33 Des 14 Cos 25 Int 18 Sag 19 Car 18  
 }}
+
+**Oggetti al duello** Dal suo tesoro triplo (SRD: 36.000 mo al GS 17, × 3 = 108.000), circa 51.900 mo a prezzo SRD: **anello di protezione +3** (18.000), **mantello della resistenza +3** (9.000), **bacchetta di *paura*** (incantatore di 7°, 21.000: cono di 9 m, Volontà CD 16, panico per 7 round, scosso per 1 round chi riesce), **2 pergamene di *dominare persone*** (incantatore di 9°, 1.125 l'una: 13,5 m, Volontà CD 17) e **1 pergamena di *suggestione di massa*** (incantatore di 11°, 1.650: gittata media, 63 m, fino a 11 creature entro 9 m l'una dall'altra, Volontà CD 19). Bacchetta e pergamene sono tutte sulla lista dello stregone: la bacchetta non chiede prove, le pergamene una prova d'incantatore, d20+7 contro CD 10 e 12 (SRD, *Pergamene*). Bacchetta e *suggestione di massa* costano un'azione standard, presa con l'artiglio: quel round non morde e non soffia. *Dominare persone* ha tempo di lancio 1 round (SRD), quindi in passata non si legge: solo da fermo o fluttuando, e l'effetto arriva all'inizio del suo turno dopo. *Dominare persone* prende solo gli umanoidi: Thorik è immune per la Mente Vuota, Hella in forma animale non è una persona
+
+**Tattiche** Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf, circa **112 pf**. Al corno, prima di partire, lancia *vedere invisibilità* e *immagine speculare* (1d4+2 immagini, 7 minuti). In passata chiude ogni turno a più di 18 m da tutti i PG, fuori dalle cariche: in mischia lo si prende solo con un'azione preparata quando passa. Mentre il soffio ricarica usa la bacchetta sul gruppo più fitto; la prima pergamena di *dominare* (un round fermo o fluttuando, quindi dopo la prima paura) va sul PG che fa più danno e non è Thorik, la *suggestione di massa* sui nani delle corde («lasciate le corde e salvatevi»). In A.1-ter, «Cosa cambia al tavolo», i numeri che contano nel duello.
+
+**Statistiche** For 33, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +25; Lotta +44 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Impregnante, Virare (non Ghermire), Volontà di Ferro, più Allerta · **Abilità** Ascoltare +31, Cercare +29, Concentrazione +32, Intimidire +29, Muoversi Silenziosamente +27, Nascondersi +19, Osservare +31, Sapienza Magica +29, Nuotare +18: come l'Adulto più Allerta (il blocco non spende i gradi dei tre DV in più)
+
+**Capacità speciali**
+- **Presenza Terrificante**: raggio 72 m, Volontà CD 26 (meno di 25 DV).
+- **Soffio impregnante**, quando lo sceglie: chi ne prende danno ne riprende metà al round dopo; toglierselo è un'azione di round completo con Riflessi CD 31 (+2 rotolando a terra, e si resta proni); la ricarica sale di 1 round.
+- **Respirare sott'acqua** (Str).
 <!-- /include -->
 
 <!-- include: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#wyvern-scheda -->
@@ -2473,7 +2473,7 @@ incontrato, non si perde: il filo [VATORE/SAL] passa ad ARC-09.
 
 ⚠️ **L'orologio corre sulle SCELTE, non sul tempo reale.** Un tavolo che discute
 mezz'ora su cosa fare non spende una tacca; un tavolo che decide di andare a
-cercare Zeth sì. È la regola dell'Abbazia (`ADR-10` interno: *l'oppressione
+cercare Zeth sì. È la regola dell'Abbazia (*l'oppressione
 avanza sulle scoperte*), e serve a non punire proprio il comportamento che
 questo master vuole ottenere — **guardarsi intorno**.
 
@@ -3327,7 +3327,7 @@ incantesimi: se qualcuno prova a teletrasportarsi fuori, la lancia.
 **Tattica**: *righteous might* al round 1 e *slay living* (Tempra CD 20) sul
 più fragile al round 2, **prima** del silenzio, perché tutti e due hanno la
 componente verbale. Chi fallisce il TS contro *slay living* muore davvero,
-come nell'SRD: la cattura del Q29 vale per chi cade a 0 pf, non per chi muore.
+come nell'SRD: la cattura («Se va male nella tenda») vale per chi cade a 0 pf, non per chi muore.
 Si torna con *rianimare morti* alla cappella, che ha l'unico diamante della
 fortezza (5.450 mo, Scena 5), o con *reincarnazione*, se Hella l'ha preparata.
 Dal round 3 attiva la runa del *silenzio* su di sé e usa
@@ -3548,7 +3548,7 @@ motivo per cui la Scena 7 viene prima.
   vivo il bersaglio. Se Artemis lo martella, si gira su di lui.
 - **Danno massiccio** (regola SRD, attiva nelle regole della casa). Con
   l'Attacco Poderoso pieno o un critico l'ascia supera spesso i 50 danni: il
-  bersaglio tira Tempra CD 15 o muore. La cattura del Q29 vale per chi cade a
+  bersaglio tira Tempra CD 15 o muore. La cattura («Se va male nella tenda») vale per chi cade a
   0 pf, non per chi fallisce questo TS.
 - **Soglia 30% pf**: combatte disperato, cerca di **portare un PG con sé** nella
   morte (un ultimo Attacco Poderoso pieno, −15/+30, Appendice A.2).
@@ -4744,8 +4744,8 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 | Evento (qui) | Eco | Quando riemerge | Dove si gestisce |
 |---|---|---|---|
 | **Esito del duello con Skullcrusher** (Scena 11) | UCCISO/FERITO/FUGGITO → effetto quantificato su Fauci di Palude | ARC-08 (boss di Hammerfist) | **«La Forgia ricorda le ferite»** + statblock Fauci ARC-08 |
-| **Ferite ancestrali segnate** (N≤3) | +N TxC **o** +Nd6 ai portatori vs Fauci; Aegis Fang in volo → cicatrice d'ala (−2 Volare Fauci) | ARC-08 | B4 §3 |
-| **Aegis Fang «sente» Fauci** (gancio inverso) | +2 circostanza a Thorik vs Fauci + preavviso del soffio | ARC-08 | B4 §4 |
+| **Ferite ancestrali segnate** (N≤3) | +N TxC **o** +Nd6 ai portatori vs Fauci; Aegis Fang in volo → cicatrice d'ala (−2 Volare Fauci) | ARC-08 | «La Forgia ricorda le ferite» §3 |
+| **Aegis Fang «sente» Fauci** (gancio inverso) | +2 circostanza a Thorik vs Fauci + preavviso del soffio | ARC-08 | «La Forgia ricorda le ferite» §4 |
 | **Vatore segnato/derubato/ferito** (Scena 9) | sincronizzazione su Sal nel 1372 (sanguina / manca un asso / vi teme) | ARC-09 (Sal mercante-spia) | registro di fine serata + scheda di Sal |
 | **Seme del Ghostlord** (Scena 5, incontro con Zeth) | i PG assistono all'inizio della Lichificazione di Zeth (i componenti li porta Vatore, per il Collezionista: Q4-bis) | ARC-09 (dilemma etico di Hella su Zeth il Murato) | registro di fine serata + scheda del Ghostlord |
 | **Zog'tar catturato, o umiliato e vivo** (Scena 8) | un generale mezzo-ogre che sopravvive alla notte del 372: giustiziato dal re se catturato, ramingo se umiliato. Nel 1372 è un nome nelle cronache dell'assedio antico | ARC-08 | registro di fine serata |
@@ -4829,9 +4829,9 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 > **effetto quantificato** sullo statblock di **Fauci di Palude** nell'ARC-08
 > (GS 15, 337 PF).
 >
-> **Fonte narrativa**: Moradin, P5-DEFINITIVO-PARTE2 r.290 — *«Ogni ferita che
+> **Fonte narrativa**: Moradin, *«Ogni ferita che
 > infliggi ora all'antenato, la mia Forgia la ricorderà quando affronterai il
-> discendente.»* + Aegis Fang, P6 r.746 (*"sangue Skullcrusher chiama"*).
+> discendente.»*, e Aegis Fang (*"sangue Skullcrusher chiama"*).
 >
 > ✅ **Canone di carry-over.** Sistema
 > **D&D 3.5** — solo bonus tipizzati (competenza/circostanza/morale), **niente
@@ -4865,7 +4865,7 @@ Dalla **Scena 11 di cap. X**, il duello, si registrano due dati (nel vecchio P5 
 
 ## 3. BONUS PER "FERITE ANCESTRALI SEGNATE" (N)
 
-Indipendente dall'esito (si somma), riflette P5-DEF-P2 r.294:
+Indipendente dall'esito (si somma):
 
 - **Ogni ferita ancestrale segnata** dà ai **portatori d'artefatto**, **solo
   contro Fauci nel 1372**, a **scelta unica del gruppo** all'inizio della
@@ -4883,7 +4883,7 @@ Indipendente dall'esito (si somma), riflette P5-DEF-P2 r.294:
 ## 4. IL GANCIO INVERSO — AEGIS FANG "SENTE" FAUCI
 
 - Quando Fauci di Palude entra in scena nel 1372, **Aegis Fang canta**
-  (*"sangue Skullcrusher chiama"*, P6 r.746). Meccanicamente: **Thorik ottiene
+  (*"sangue Skullcrusher chiama"*). Meccanicamente: **Thorik ottiene
   +2 di circostanza ai tiri per colpire contro Fauci** (bonus di circostanza
   3.5, definito e non 5e) e **avverte in anticipo** il primo soffio di Fauci
   (può dichiarare *pronto a ripararsi* → TS Riflessi del soffio **+2**).
@@ -5067,7 +5067,10 @@ gliela portano la riprende in cambio della sua parola, non di monete.
   cieca*). *Vedere invisibilità* dura 10 minuti per livello: 50 con
   l'Adulto (incantatore di 5°), 70 col Vecchio (7°). Dopo il barile lo lancia
   al corno dell'alba, prima di partire, e i PG invisibili sono visibili per
-  tutto il duello. Di notte sulle colline non l'ha
+  tutto il duello. Col Vecchio al corno lancia anche
+  *immagine speculare*: ogni attacco a bersaglio singolo, deflagrazione
+  compresa, sceglie a caso fra lui e le immagini; le aree lo prendono comunque
+. Di notte sulle colline non l'ha
   lanciato, perché non si aspetta nessuno.
 - **Il soffio fa più male**: 14d4 (in media 35) invece di 12d4, e Riflessi
   CD 30; col Vecchio 16d4 (in media 40), CD 31. La runa di Zeth (*resistere all'energia* 20) ne toglie ancora più
@@ -5087,6 +5090,12 @@ gliela portano la riprende in cambio della sua parola, non di monete.
   Vecchio servono 9 o 10, e se ne spengono quattro o cinque su dieci. Le
   invocazioni di Artemis la subiscono come gli incantesimi.
 - **RD 10/magia**: le armi dei PG sono magiche; le balestre delle mura, no.
+- **Le gittate col Vecchio, che resta lontano.** Chiude ogni passata a più di
+  18 m dai PG. Lo raggiungono le armi a distanza e gli incantesimi a gittata
+  media o lunga; la deflagrazione di Artemis con *Eldritch Spear* arriva a
+  75 m (*Complete Arcane*, fuori SRD). Lui risponde da 51 m con *dissolvi
+  magie* e *dardo incantato*, da 72 m con *corrompere l'acqua*, da 12 m con
+  *lentezza* e *causare paura*, e col cono di 9 m della bacchetta.
 - ***Corrompere l'acqua*** può rovinare le pozioni in tasca a un PG (TS
   dell'oggetto sulla Volontà del portatore). Lo usa al primo turno libero dal
   soffio, se vede qualcuno bere (Scena 11, round 2-3).
@@ -5159,7 +5168,7 @@ ___
 
 **TATTICHE**
 ___
-Il sergente, guerriero 3 nel testo, ha i numeri dell'orco guerriero 4 del Bestiario, GS 3: 30 pf, CA 16, falchion +7 (2d4+3).  
+Il sergente, guerriero 3 nel testo, ha i numeri dell'orco guerriero 4 del Bestiario, GS 3: 30 pf, CA 16, falchion +9 (2d4+6).  
 
 **STATISTICHE**
 ___
@@ -5167,6 +5176,7 @@ Linguaggi: Comune, Orchesco
 Qualità speciali: sensibilità alla luce (abbagliato in piena luce solare o in *luce diurna*)  
 Altro equipaggiamento: cuoio borchiato, falchion, giavellotto  
 }}
+
 
 {{monster,frame
 ## Hobgoblin della pattuglia (8)

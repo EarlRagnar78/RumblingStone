@@ -91,7 +91,7 @@ guaritrice, la fuga che lascia una nemesi viva. Se Jfs vuole più morti, la leva
 
 ## 2. Tyrgarun (blu molto vecchio, GS 19), ARC-09 Rethmar
 
-Scheda: `Bestiario/villain/Tyrgarun/tyrgarun-blue-very-old-cr19.md`, tattiche righe 61-68.
+Scheda: `Bestiario/villain/Tyrgarun/tyrgarun-blue-very-old-cr19.md`, tattiche righe 62-82 (dal 21/11; erano 61-68).
 
 **Carattere.** Aristocratico, freddo, sprezzante. È un alleato della Mano
 Rossa, non un servo: il cielo di Rethmar è suo. Il blu ama le illusioni e le
@@ -186,7 +186,7 @@ ai morsi su Artemis. Da sola, la reazione alla resistenza vale più di tutto il 
 
 ## 4. Ozyrrandion (verde adulto, GS 14), ARC-09 Torre Invisibile
 
-Scheda: `Bestiario/villain/ozyrrandion-drago-verde-cr14.md`, tattiche righe 43-50.
+Scheda: `Bestiario/villain/ozyrrandion-drago-verde-cr14.md`, tattiche righe 46-62 (dal 21/11; erano 43-50).
 È già la tattica migliore del gruppo: invisibile sotto la volta, *suggestione*
 mentre Zalkatar tratta, soffio dall'invisibilità. Propongo solo il carattere, il
 **tentatore**. Ha un patto con Zalkatar, non un debito: a metà scontro, se va
@@ -208,10 +208,10 @@ come Tyrgarun, ma con l'aura e non scavando.
 ## 6. Regiarix (nero, Rhest) e il drago rosso dell'invasione di Dauth
 
 Schede rifatte sull'SRD dopo la card del 15/11 (prima dicevano quanto segue).
-- **Regiarix** (`09_.../Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`, §2, righe 40-64):
+- **Regiarix** (`09_.../Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`, §2, righe 40-148 dal 21/11; erano 40-64):
   è «Grande, 22 DV», ma nell'SRD il nero adulto è Grande con 19 DV e il maturo
   è Enorme con 22. Le Armate lo danno «giovane adulto» con GS 10. Nessuna fonte.
-- **Il drago rosso del Giorno 3** (`09_.../Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md`, §7, righe 157-181):
+- **Il drago rosso del Giorno 3** (`09_.../Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md`, §7, righe 157-250 dal 21/11; erano 157-181):
   è la cavalcatura dei Githyanki di Vaereth (MAPPE-COMPLETO-2 r.213), non uno
   dei cinque draghi della Mano Rossa. La scheda non torna: 25 DV sono quelli del
   rosso adulto maturo, non dell'adulto; For 37; manovrabilità «media» invece di

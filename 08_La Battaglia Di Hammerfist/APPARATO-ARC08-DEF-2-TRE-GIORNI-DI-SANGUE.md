@@ -46,7 +46,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 6 | chi è colpito tira Tempra | 20 |
 | SCENA 6 | d20 + 10 contro | 18 |
 | SCENA 6 | L'invocazione a Moradin (Carisma | 22 |
-| SCENA 6 | Fauci tira Volontà +19 contro | 15 |
+| SCENA 6 | Fauci tira Volontà +22 contro | 15 |
 | SCENA 6 | contro | 29 |
 | SCENA 6 | una cura qualunque o con Guarire | 15 |
 | SCENA 7 | La statua si sposta con Forza | 20 |

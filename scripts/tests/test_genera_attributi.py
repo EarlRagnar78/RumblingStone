@@ -52,6 +52,17 @@ class TestIlVincoloBatteLArray(unittest.TestCase):
         # 13 = 10 + Des + 1 (piccola)  →  Des +2  →  14
         self.assertEqual(CAR.des_vincolata(t, 3)[0], 14)
 
+    def test_il_contatto_non_conta_deviazione_e_schivata(self):
+        # Tyrgarun col corredo del 21/11: contatto 11 = 10 − 2 (Enorme) + 3 (anello).
+        # La deviazione scritta non e' Destrezza: Des 10, non 16.
+        t = blocco(tipo="Huge dragon", ca="ca: 40",
+                   det="ca-dettaglio: (−2 taglia, +29 naturale, +3 deviazione); contatto 11, colto 40",
+                   gs="gs: 19")
+        self.assertEqual(CAR.des_vincolata(t, 19)[0], 10)
+        t = blocco(tipo="Medium humanoid",
+                   det="ca-dettaglio: +1 dodge, +2 deflection; touch 15, flat-footed 11")
+        self.assertEqual(CAR.des_vincolata(t, 3)[0], 14)
+
     def test_la_costituzione_si_ricava_dal_bonus_scritto(self):
         self.assertEqual(CAR.cos_da_pf(blocco(dado="pf-dado: 4d8+8"), 3)[0], 14)
 

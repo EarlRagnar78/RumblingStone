@@ -46,6 +46,9 @@ __all__ = [
 ELITE = T.RUOLI_ELITE
 DES_SCRITTA = re.compile(r"([+-]\s*\d+)\s*(?:Des|Dex|destrezza)\b", re.I)
 CONTATTO = re.compile(r"(?:touch|contatto)\s*(\d+)", re.I)
+# bonus che entrano nella CA di contatto senza essere Destrezza (SRD, *Touch Attacks*)
+NON_DES_CONTATTO = re.compile(
+    r"([+-]\s*\d+)\s*(?:deviazione|deflessione|deflection|schivata|dodge)\b", re.I)
 NON_MORTO = re.compile(r"\b(?:undead|non[ -]?mort[oi])\b", re.I)
 MODELLO_SENZA_MENTE = re.compile(r"skelet|schelet|zombi", re.I)
 mod = T.mod
@@ -71,6 +74,8 @@ def des_vincolata(testo: str, gs: float = 30.0) -> "tuple[int, str] | None":
     if c and ca:
         # contatto = 10 + mod Des + taglia  →  mod Des = contatto − 10 − taglia
         m_des = int(c.group(1)) - 10 - taglia_di(testo)
+        # deviazione e schivata scritte nel dettaglio non sono Destrezza
+        m_des -= sum(int(x.replace(" ", "")) for x in NON_DES_CONTATTO.findall(d.group(1)))
         # la CA di contatto somma anche deviazione e schivata: se il numero
         # che ne esce non e' credibile per il GS, la differenza non e' Destrezza
         if -5 <= m_des and plausibile(m_des, gs):

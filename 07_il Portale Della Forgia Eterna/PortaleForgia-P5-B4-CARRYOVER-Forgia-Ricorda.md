@@ -7,9 +7,9 @@
 > (GS 15, 337 PF)<!-- apparato -->, `08_.../00_Schede_dei_Personaggi_Unità_e_Regolamento_di_Battaglia.md`.
 > Chiude il task **ARC-08 A12**<!-- /apparato -->.
 >
-> **Fonte narrativa**: Moradin, P5-DEFINITIVO-PARTE2 r.290 — *«Ogni ferita che
+> **Fonte narrativa**: Moradin, *«Ogni ferita che
 > infliggi ora all'antenato, la mia Forgia la ricorderà quando affronterai il
-> discendente.»* + Aegis Fang, P6 r.746 (*"sangue Skullcrusher chiama"*).
+> discendente.»*, e Aegis Fang (*"sangue Skullcrusher chiama"*).
 >
 > ✅ <!-- storico -->**Valori APPROVATI dal DM (2026-07-03)** — <!-- /storico -->**Canone di carry-over.** Sistema
 > **D&D 3.5** — solo bonus tipizzati (competenza/circostanza/morale), **niente
@@ -43,7 +43,7 @@ Dalla **Scena 11 di `ARC07-DEF-4`**, il duello, si registrano due dati (nel vecc
 
 ## 3. BONUS PER "FERITE ANCESTRALI SEGNATE" (N)
 
-Indipendente dall'esito (si somma), riflette P5-DEF-P2 r.294:
+Indipendente dall'esito (si somma):
 
 - **Ogni ferita ancestrale segnata** dà ai **portatori d'artefatto**, **solo
   contro Fauci nel 1372**, a **scelta unica del gruppo** all'inizio della
@@ -61,7 +61,7 @@ Indipendente dall'esito (si somma), riflette P5-DEF-P2 r.294:
 ## 4. IL GANCIO INVERSO — AEGIS FANG "SENTE" FAUCI
 
 - Quando Fauci di Palude entra in scena nel 1372, **Aegis Fang canta**
-  (*"sangue Skullcrusher chiama"*, P6 r.746). Meccanicamente: **Thorik ottiene
+  (*"sangue Skullcrusher chiama"*). Meccanicamente: **Thorik ottiene
   +2 di circostanza ai tiri per colpire contro Fauci** (bonus di circostanza
   3.5, definito e non 5e) e **avverte in anticipo** il primo soffio di Fauci
   (può dichiarare *pronto a ripararsi* → TS Riflessi del soffio **+2**).

@@ -18,7 +18,7 @@ Arco-Post-Hammerfist-P2-RHEST-CONSEGUENZE-ESITI.md
 | Esito a Rhest | Effetto sull'Orda a Rethmar (`campaign/state.md` §2.3) |
 |---|---|
 | **Regiarix ucciso** (+ nido distrutto in Fase 2) | **−1 drago, −2 Razorfiend** |
-| **Regiarix fuggito** (tuffo sotto ~30% pf) | Nessuna riduzione del drago (può ricomparire) |
+| **Regiarix fuggito** (tuffo a un terzo dei pf, 50 `[CANONE — DM 2026-11-15]`) | Nessuna riduzione del drago (può ricomparire) |
 | **Nido distrutto ma drago fuggito** | −2 Razorfiend soltanto |
 | **Rhest fallita** | Nessuna riduzione; +ondata Razorfiend possibile |
 

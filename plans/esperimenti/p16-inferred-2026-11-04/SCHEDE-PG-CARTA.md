@@ -11,21 +11,22 @@ non nel repo; qui c'è la trascrizione.
 | PG | Classe | FOR | DES | COS | INT | SAG | CAR | Temp | Rifl | Vol | CA (sprovv., contatto) | PF |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Thorik Skulldark | Guerriero 13 | 20 | 12 | 16 | 13 | 12 | 9 | 13 | 6 | 11 | 28 (27, 17) | 115 |
-| Tordek Durinheart | Guerriero 4 / Barbaro 9 | 20 | 16 | 16 | 14 | 18 | 8 | 14 | 11 | 12 | 24 (21, 21) | 106 |
+| Tordek Durinheart | Guerriero 4 / Monaco 9 | 20 | 16 | 16 | 14 | 18 | 8 | 14 | 11 | 12 | 24 (21, 21) | 106 |
 | Artemis Blackrock | Warlock 13 | 10 | 18 | 14 | 10 | 10 | 18 | 7 | 8 | 8 | 25 (21, 16) | 74 |
 | Hella Stonehead | Ranger 1 / Druida 12 | 16 | 13 | 12 | 12 | 18 | 10 | 10 | 7 | 12 | 22 (21, 12) | 80 |
 
 Oggetti scritti sulle righe dell'armatura e delle armi:
 
 - **Thorik.** Armatura completa di mithral +1, scudo pesante +1, armatura naturale +1, anello di protezione +1. Armi: Aegis Fang e scudo. Nessun oggetto dà caratteristiche. Modificatori ai tiri salvezza: +1 contro trappole, +2 contro veleno, +2 contro incantesimi, +1 contro paura.
-- **Tordek.** Armatura +1, bracciali, anello +3, arco composito +4. Le caratteristiche coincidono con la scheda PCGen già nel repo.
+- **Tordek.** Armatura +1 `[INFERRED — L'«armatura +1» della carta è l'amuleto dell'armatura naturale +1?; base: la scheda PCGen al 12° livello ha l'amuleto, e il contatto 21 della carta torna solo se Tordek non porta armatura, perché un monaco in armatura perde il bonus di Saggezza alla CA]`, bracciali, anello +3, arco composito +4. Non scritto sulla carta: *mantello della resistenza +1* (+1 a tutti i tiri salvezza), dalla scheda PCGen al 12° livello `[CANONE — DM 2026-11-21, card «Sì, mantello della resistenza +1»]`. Le caratteristiche coincidono con la scheda PCGen già nel repo.
 - **Artemis.** Giaco di maglia di mithral +2, buckler. Nessun oggetto dà caratteristiche.
 - **Hella.** Cuoio borchiato, scudo, anello di deviazione +1, amuleto.
 
 I numeri più incerti nella foto sono i bonus di alcune righe e le abilità. Le caratteristiche sono state lette sulla foto ingrandita.
 
-## Decisioni del DM (2026-11-05)
+## Decisioni del DM (2026-11-05; Tordek 2026-11-21)
 
+- **Tordek.** È Guerriero 4 / Monaco 9, come in `campaign/state.yaml`: la trascrizione diceva Barbaro 9, e il DM ha confermato il Monaco il 2026-11-21. I tiri salvezza della carta tornano con il Monaco (Temp 13, Rifl 10, Vol 11, più il +1 del *mantello della resistenza +1* indossato nella scheda PCGen al 12° livello, `PG/Artefatti/Artefatti-Pg/Tordek/Tordek Durinheart 12 lvl modificato.pdf`), non con il Barbaro (Rifl 7, Vol 8).
 - **Thorik.** Il colpo di Zog'tar dell'ultima serata è entrato contro la CA 28 della carta, quindi al tavolo la carta non aveva ancora i prezzi dei riti. Il DM dice che la DES 12 della carta ha già il −2 della Corona, e manca il rito dello Smeraldo (−2 DES, +2 COS, +4 CAR). Il risultato è FOR 20, DES 10, COS 18, INT 13, SAG 12, CAR 13. Si porta dietro Riflessi 5, CA 27 (sprovvista 27, contatto 16) e PF 128. Il colpo di Zog'tar resta buono: con una CA più bassa entrava lo stesso.
 - **Artemis.** I valori della carta, nessun modificatore permanente.
 - **Hella.** La carta non è stata aggiornata dopo il rito. Sulla riga dei tiri salvezza c'è «amuleto SAG +2» e «guanti della forza dell'orco +2», e il DM conferma che l'amuleto è di Saggezza. Il risultato:

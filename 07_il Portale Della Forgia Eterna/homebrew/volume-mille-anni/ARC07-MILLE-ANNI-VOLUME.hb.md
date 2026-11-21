@@ -403,8 +403,7 @@ descrivi tu in una riga e vai avanti: è un regalo, non un compito.
 ### 🎚️ Scheda sensoriale delle tre zone — e cosa NON dire
 
 > **Come si usa.** Le prime tre colonne sono quello che i PG colgono **in sei
-> secondi** senza tirare. La quarta è **vincolante quanto le altre**
-> ([ADR-0057](../../../plans/adr/ADR-0057-la-quarta-colonna-e-di-tutto-il-repo.md)):
+> secondi** senza tirare. La quarta è **vincolante quanto le altre**:
 > sono le cose che il tavolo deve **scoprire**, e che l'atmosfera, se ti scaldi,
 > racconta al posto loro.
 
@@ -926,7 +925,7 @@ incontrato, non si perde: il filo [VATORE/SAL] passa ad ARC-09.
 
 ⚠️ **L'orologio corre sulle SCELTE, non sul tempo reale.** Un tavolo che discute
 mezz'ora su cosa fare non spende una tacca; un tavolo che decide di andare a
-cercare Zeth sì. È la regola dell'Abbazia (`ADR-10` interno: *l'oppressione
+cercare Zeth sì. È la regola dell'Abbazia (*l'oppressione
 avanza sulle scoperte*), e serve a non punire proprio il comportamento che
 questo master vuole ottenere — **guardarsi intorno**.
 
@@ -2397,7 +2396,7 @@ incantesimi: se qualcuno prova a teletrasportarsi fuori, la lancia.
 **Tattica**: *righteous might* al round 1 e *slay living* (Tempra CD 20) sul
 più fragile al round 2, **prima** del silenzio, perché tutti e due hanno la
 componente verbale. Chi fallisce il TS contro *slay living* muore davvero,
-come nell'SRD: la cattura del Q29 vale per chi cade a 0 pf, non per chi muore.
+come nell'SRD: la cattura («Se va male nella tenda») vale per chi cade a 0 pf, non per chi muore.
 Si torna con *rianimare morti* alla cappella, che ha l'unico diamante della
 fortezza (5.450 mo, Scena 5), o con *reincarnazione*, se Hella l'ha preparata.
 Dal round 3 attiva la runa del *silenzio* su di sé e usa
@@ -2598,7 +2597,7 @@ motivo per cui la Scena 7 viene prima.
   vivo il bersaglio. Se Artemis lo martella, si gira su di lui.
 - **Danno massiccio** (regola SRD, attiva nelle regole della casa). Con
   l'Attacco Poderoso pieno o un critico l'ascia supera spesso i 50 danni: il
-  bersaglio tira Tempra CD 15 o muore. La cattura del Q29 vale per chi cade a
+  bersaglio tira Tempra CD 15 o muore. La cattura («Se va male nella tenda») vale per chi cade a
   0 pf, non per chi fallisce questo TS.
 - **Soglia 30% pf**: combatte disperato, cerca di **portare un PG con sé** nella
   morte (un ultimo Attacco Poderoso pieno, −15/+30, Appendice A.2).
@@ -3879,8 +3878,8 @@ si inginocchia. Il resto non si tocca.*
 | Evento (qui) | Eco | Quando riemerge | Dove si gestisce |
 |---|---|---|---|
 | **Esito del duello con Skullcrusher** (Scena 11) | UCCISO/FERITO/FUGGITO → effetto quantificato su Fauci di Palude | ARC-08 (boss di Hammerfist) | **«La Forgia ricorda le ferite»** + statblock Fauci ARC-08 |
-| **Ferite ancestrali segnate** (N≤3) | +N TxC **o** +Nd6 ai portatori vs Fauci; Aegis Fang in volo → cicatrice d'ala (−2 Volare Fauci) | ARC-08 | B4 §3 |
-| **Aegis Fang «sente» Fauci** (gancio inverso) | +2 circostanza a Thorik vs Fauci + preavviso del soffio | ARC-08 | B4 §4 |
+| **Ferite ancestrali segnate** (N≤3) | +N TxC **o** +Nd6 ai portatori vs Fauci; Aegis Fang in volo → cicatrice d'ala (−2 Volare Fauci) | ARC-08 | «La Forgia ricorda le ferite» §3 |
+| **Aegis Fang «sente» Fauci** (gancio inverso) | +2 circostanza a Thorik vs Fauci + preavviso del soffio | ARC-08 | «La Forgia ricorda le ferite» §4 |
 | **Vatore segnato/derubato/ferito** (Scena 9) | sincronizzazione su Sal nel 1372 (sanguina / manca un asso / vi teme) | ARC-09 (Sal mercante-spia) | registro di fine serata + scheda di Sal |
 | **Seme del Ghostlord** (Scena 5, incontro con Zeth) | i PG assistono all'inizio della Lichificazione di Zeth (i componenti li porta Vatore, per il Collezionista: Q4-bis) | ARC-09 (dilemma etico di Hella su Zeth il Murato) | registro di fine serata + scheda del Ghostlord |
 | **Zog'tar catturato, o umiliato e vivo** (Scena 8) | un generale mezzo-ogre che sopravvive alla notte del 372: giustiziato dal re se catturato, ramingo se umiliato. Nel 1372 è un nome nelle cronache dell'assedio antico | ARC-08 | registro di fine serata |
@@ -4326,7 +4325,7 @@ Vel 6 m · **Mischia** martello da guerra runico +1 +11/+6 (1d8+2/x3) · Domini 
 
 **TATTICHE**
 ___
-Dipendono da come è andata con lui prima dello scontro: il viaggio a mille anni fa, Scena 7, «Cosa fa quando comincia lo scontro» (canone, decisione Q21 del DM) (recuperato non combatte e indica la runa della Catena; trattativa aperta guarda un round e poi sta con chi vince; minacciato combatte con Zog'tar, come dice «Come si combatte, se si arriva a combatterlo» nella stessa scena). **Morale**: sotto 30 pf non fugge e non implora, finisce di incidere la lastra con un'azione di round completo, l'ultima, e in quel turno non attacca e non lancia (decisioni D52 e D71 del DM, nella stessa scena).  
+Dipendono da come è andata con lui prima dello scontro: il viaggio a mille anni fa, Scena 7, «Cosa fa quando comincia lo scontro» (recuperato non combatte e indica la runa della Catena; trattativa aperta guarda un round e poi sta con chi vince; minacciato combatte con Zog'tar, come dice «Come si combatte, se si arriva a combatterlo» nella stessa scena). **Morale**: sotto 30 pf non fugge e non implora, finisce di incidere la lastra con un'azione di round completo, l'ultima, e in quel turno non attacca e non lancia (decisioni D52 e D71 del DM, nella stessa scena).  
 
 **STATISTICHE**
 ___
@@ -4412,7 +4411,7 @@ ___
 
 **TATTICHE**
 ___
-Il sergente, guerriero 3 nel testo, ha i numeri dell'orco guerriero 4 del Bestiario, GS 3: 30 pf, CA 16, falchion +7 (2d4+3).  
+Il sergente, guerriero 3 nel testo, ha i numeri dell'orco guerriero 4 del Bestiario, GS 3: 30 pf, CA 16, falchion +9 (2d4+6).  
 
 **STATISTICHE**
 ___
@@ -4420,6 +4419,7 @@ Linguaggi: Comune, Orchesco
 Qualità speciali: sensibilità alla luce (abbagliato in piena luce solare o in *luce diurna*)  
 Altro equipaggiamento: cuoio borchiato, falchion, giavellotto  
 }}
+
 
 {{monster,frame
 ## Hobgoblin della pattuglia (8)
@@ -4753,7 +4753,7 @@ Vel 6 m · **Mischia** martello da guerra runico +1 +11/+6 (1d8+2/x3) · Domini 
 
 **TATTICHE**
 ___
-Dipendono da come è andata con lui prima dello scontro: il viaggio a mille anni fa, Scena 7, «Cosa fa quando comincia lo scontro» (canone, decisione Q21 del DM) (recuperato non combatte e indica la runa della Catena; trattativa aperta guarda un round e poi sta con chi vince; minacciato combatte con Zog'tar, come dice «Come si combatte, se si arriva a combatterlo» nella stessa scena). **Morale**: sotto 30 pf non fugge e non implora, finisce di incidere la lastra con un'azione di round completo, l'ultima, e in quel turno non attacca e non lancia (decisioni D52 e D71 del DM, nella stessa scena).  
+Dipendono da come è andata con lui prima dello scontro: il viaggio a mille anni fa, Scena 7, «Cosa fa quando comincia lo scontro» (recuperato non combatte e indica la runa della Catena; trattativa aperta guarda un round e poi sta con chi vince; minacciato combatte con Zog'tar, come dice «Come si combatte, se si arriva a combatterlo» nella stessa scena). **Morale**: sotto 30 pf non fugge e non implora, finisce di incidere la lastra con un'azione di round completo, l'ultima, e in quel turno non attacca e non lancia (decisioni D52 e D71 del DM, nella stessa scena).  
 
 **STATISTICHE**
 ___
@@ -4806,9 +4806,9 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 > **effetto quantificato** sullo statblock di **Fauci di Palude** nell'ARC-08
 > (GS 15, 337 PF).
 >
-> **Fonte narrativa**: Moradin, P5-DEFINITIVO-PARTE2 r.290 — *«Ogni ferita che
+> **Fonte narrativa**: Moradin, *«Ogni ferita che
 > infliggi ora all'antenato, la mia Forgia la ricorderà quando affronterai il
-> discendente.»* + Aegis Fang, P6 r.746 (*"sangue Skullcrusher chiama"*).
+> discendente.»*, e Aegis Fang (*"sangue Skullcrusher chiama"*).
 >
 > ✅ **Canone di carry-over.** Sistema
 > **D&D 3.5** — solo bonus tipizzati (competenza/circostanza/morale), **niente
@@ -4842,7 +4842,7 @@ Dalla **Scena 11 di cap. I**, il duello, si registrano due dati (nel vecchio P5 
 
 ## 3. BONUS PER "FERITE ANCESTRALI SEGNATE" (N)
 
-Indipendente dall'esito (si somma), riflette P5-DEF-P2 r.294:
+Indipendente dall'esito (si somma):
 
 - **Ogni ferita ancestrale segnata** dà ai **portatori d'artefatto**, **solo
   contro Fauci nel 1372**, a **scelta unica del gruppo** all'inizio della
@@ -4860,7 +4860,7 @@ Indipendente dall'esito (si somma), riflette P5-DEF-P2 r.294:
 ## 4. IL GANCIO INVERSO — AEGIS FANG "SENTE" FAUCI
 
 - Quando Fauci di Palude entra in scena nel 1372, **Aegis Fang canta**
-  (*"sangue Skullcrusher chiama"*, P6 r.746). Meccanicamente: **Thorik ottiene
+  (*"sangue Skullcrusher chiama"*). Meccanicamente: **Thorik ottiene
   +2 di circostanza ai tiri per colpire contro Fauci** (bonus di circostanza
   3.5, definito e non 5e) e **avverte in anticipo** il primo soffio di Fauci
   (può dichiarare *pronto a ripararsi* → TS Riflessi del soffio **+2**).

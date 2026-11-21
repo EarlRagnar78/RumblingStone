@@ -536,6 +536,19 @@ class TestCampaignBranch(BaseDecisione):
         with mock.patch.object(mod.cfg, "load_group", return_value=None):
             self.assertIn(mod.cmd_guard(mod.REPO), (0, 1))
 
+    def test_un_ramo_morto_del_registro_rifiuta(self):
+        """ADR-0090: il ramo morto non riceve canone, anche se è un campaign-group-*."""
+        from unittest import mock
+        mod = self._modulo()
+        morto = "campaign-group-rumblingstone-dm-gianfranco"
+        with mock.patch.object(mod.cfg, "load_group", return_value=None), \
+                mock.patch.object(mod.gitio, "guard_canon_branch", return_value=morto):
+            self.assertEqual(mod.cmd_guard(mod.REPO), 1)
+        with mock.patch.object(mod.cfg, "load_group", return_value=None), \
+                mock.patch.object(mod.gitio, "guard_canon_branch",
+                                  return_value="campaign-group-rumblingstone"):
+            self.assertEqual(mod.cmd_guard(mod.REPO), 0)
+
     def test_ensure_senza_gruppo_da_2(self):
         mod = self._modulo()
         from unittest import mock

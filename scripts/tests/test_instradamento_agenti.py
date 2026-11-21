@@ -217,6 +217,10 @@ class TestCancello(unittest.TestCase):
         self.assertEqual(self._push([], strumento="mcp__github__create_pull_request")[0], 2)
         self.assertEqual(self._push([], comando="gh pr ready 510")[0], 2)
 
+    def test_il_push_con_opzioni_globali_si_riconosce(self) -> None:
+        self._istruzioni()
+        self.assertEqual(self._push([], comando="git -C /x push -q")[0], 2)
+
     def test_altri_comandi_non_si_toccano(self) -> None:
         self._istruzioni()
         self.assertEqual(self._push([], comando="git status && git log")[0], 0)
@@ -308,6 +312,78 @@ class TestCancelloCanone(unittest.TestCase):
     def test_prodotto_verso_main_passa(self) -> None:
         self.assertEqual(self._esito("git add scripts/x.py && git commit -m x && git push origin main"), 0)
         self.assertEqual(self._esito("git push origin main"), 0)
+
+    def _repo_su(self, ramo: str) -> Path:
+        repo = self.tmp / ramo
+        repo.mkdir()
+        subprocess.run(["git", "-C", str(repo), "init", "-q", "-b", ramo], check=True,
+                       capture_output=True)
+        return repo
+
+    def test_i_giri_attorno_al_cancello(self) -> None:
+        """I sette modi di aggirarlo trovati dal custode-canone il 2026-11-21."""
+        repo = self._repo_su("campaign-group-x")
+        altrove = self._repo_su("claude-thread")
+        casi = ("git push --force origin HEAD",
+                "git push origin +HEAD",
+                "git push -f",
+                f"git -C {repo} push -f origin campaign-group-rumblingstone",
+                f"git -C {repo} push -f origin HEAD",
+                "git -c push.default=current push --force origin campaign-group-x",
+                "git --no-pager push -f origin campaign-group-x",
+                "git push --mirror origin",
+                "git push --all -f origin",
+                "git push --tags --force origin",
+                "sh -c 'git push -f origin campaign-group-x'",
+                "bash -c \"git push origin +HEAD:campaign-group-x\"",
+                "git push origin HEAD:main",
+                "git push origin campaign-group-x:refs/heads/main",
+                f"cd {repo} && git push --force origin HEAD")
+        for c in casi:
+            with self.subTest(comando=c):
+                self.assertEqual(self._esito(c, cwd=str(repo if "cd " not in c else altrove)), 2)
+
+    def test_dal_ramo_di_thread_head_non_e_il_ramo_di_gruppo(self) -> None:
+        altrove = self._repo_su("claude-thread")
+        self.assertEqual(self._esito("git push --force origin HEAD", cwd=str(altrove)), 0)
+        self.assertEqual(self._esito("git push origin HEAD:main", cwd=str(altrove)), 0)
+        self.assertEqual(self._esito("git push --all origin", cwd=str(altrove)), 0)
+
+    def test_ramo_morto_mai(self) -> None:
+        morto = "campaign-group-rumblingstone-dm-gianfranco"
+        self.assertEqual(self._esito(f"git push origin {morto}"), 2)
+        self.assertEqual(self._esito(f"git push origin HEAD:{morto}"), 2)
+        repo = self._repo_su(morto)
+        self.assertEqual(self._esito("git push", cwd=str(repo)), 2)
+
+    def _mcp(self, strumento: str, **inp) -> int:
+        ev = {"tool_name": f"mcp__github__{strumento}", "tool_input": inp, "session_id": "s9"}
+        with contextlib.redirect_stderr(io.StringIO()):
+            return ia.hook_cancello(json.dumps(ev))
+
+    def test_gli_strumenti_github_che_scrivono(self) -> None:
+        morto = "campaign-group-rumblingstone-dm-gianfranco"
+        for strumento in ("push_files", "create_or_update_file", "delete_file", "create_branch"):
+            with self.subTest(strumento=strumento):
+                self.assertEqual(self._mcp(strumento, branch=morto, path="x.md"), 2)
+        self.assertEqual(self._mcp("push_files", branch="main",
+                                   files=[{"path": "campaign/state.yaml", "content": "x"}]), 2)
+        self.assertEqual(self._mcp("create_or_update_file", branch="main",
+                                   path="campaign/sessions/2026-11-20_session-7.md"), 2)
+        # un commit sopra il ramo vivo è un fast-forward per costruzione
+        self.assertEqual(self._mcp("push_files", branch="campaign-group-rumblingstone",
+                                   files=[{"path": "campaign/state.yaml", "content": "x"}]), 0)
+        self.assertEqual(self._mcp("push_files", branch="main",
+                                   files=[{"path": "scripts/x.py", "content": "x"}]), 0)
+
+    def test_il_matcher_dell_hook_copre_gli_strumenti_controllati(self) -> None:
+        import re as _re
+        impostazioni = json.loads((ia.ROOT / ".claude" / "settings.json").read_text(encoding="utf-8"))
+        matcher = [h["matcher"] for h in impostazioni["hooks"]["PreToolUse"]
+                   if any("--cancello" in c["command"] for c in h["hooks"])][0]
+        for strumento in ("Bash", *ia.PR_MCP, *ia.GITHUB_SCRIVE):
+            with self.subTest(strumento=strumento):
+                self.assertTrue(_re.fullmatch(f"(?:{matcher})", strumento), matcher)
 
     def test_il_blocco_resta_nel_registro(self) -> None:
         self._esito("git push -f origin campaign-group-rumblingstone")

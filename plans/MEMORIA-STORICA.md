@@ -2474,7 +2474,18 @@ repo scritto con altre parole.
 - **Testo:** Durante la serata del 20/11 Jfs ha chiesto perché il drago non usasse incantesimi di paura e di dominio. La scheda dava al Vecchio i conosciuti 6/4/2/2 contro i 7/5/3/2 dello stregone di 7° dell'SRD; le card del 21/11 hanno riempito i posti con *messaggio*, *causare paura* e *spaventare*, e hanno dato al drago anello +3, mantello +3, bacchetta di *paura* e tre pergamene (circa 51.900 mo del tesoro triplo da 108.000), *immagine speculare* al corno e passate oltre i 18 m. Con l'anello il contatto sale a 13 e Tordek (+21) lo colpisce solo col 20 naturale; Jfs ha scelto di tenerlo. Il PDF della serata diceva 18 m per la deflagrazione di Artemis: con *Eldritch Spear* sono 75 m, e il colpo a 72 m giocato al tavolo era legale. Al tavolo Zeth ha ricambiato il martello di Balvar con una runa +2 al colpire contro i draghi, regola della casa
 - **Trovato nel repo:** `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` · `07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md`
 - **Solo qui:** il duello simulato con questi numeri dura circa 10 round e il drago muore nel 3-11% delle prove, contro i 3 round stimati da Jfs: la simulazione sottostima la mischia e non conta Durik né le evocazioni. Le varianti stanno solo nello scratchpad del thread. Il 21/11 Jfs ha sciolto le due domande: la runa del martello vale per un colpo solo, come il potere contro i draghi dei Bracieri; delle due rune di acido comprate nella sessione 4 se n'è attivata una, su Durik, alla vista del drago, e Hella si è lanciata *protezione dall'energia* (acido). L'INFERRED sulla durata stampava nel volume d'arco e teneva rosso il cricchetto delle note di lavoro (tetto 0): diventato canone, il cricchetto torna verde senza toccare il tetto
-### MS-0220 · 2026-11-20 · Le skill di prosa si caricano per vincolo: hook, dodici agenti e cricchetto
+
+### MS-0220 · 2026-11-20 · Le piante stampano le chiavi d'area del testo, e un «;» nella descrizione non è una chiave
+
+- **Data:** 2026-11-20
+- **PR:** #506
+- **ADR:** ADR-0122
+- **Temi:** stampa mappe chiavi area zone pianta booklet volume standard s2
+- **Origine:** riga del 2026-11-20 «ADR-0122, S2: le chiavi d'area» in `plans/CHANGELOG.md`
+- **Testo:** S2 dello standard del volume chiede che i codici d'area dei titoli del testo stiano anche sulla mappa. Nel booklet della serata non ce n'era nessuno (0/0): le zone delle piante avevano lettere minuscole («a», «b»), che nessun titolo usa. La chiave entra come ultima parte di `@zone`. Nell'anteprima del 19/11 la chiave era «la terza parte», e così sedici SVG di Hammerfist, del Giardino e del Drappo cambiavano lettera: le loro descrizioni contengono già un «;» (per esempio «+4 CA; riparo per Nascondersi»). Lo ha trovato `validate_maps.py`, che confronta ogni SVG col suo master. Ora la chiave vale solo se ha la forma `[A-Z]{1,2}\d{1,2}`. Per far misurare le chiavi serve un `<!-- nuova-pagina -->` prima di ogni pianta, altrimenti i titoli finiscono sulla pagina della mappa, che S2 esclude. La pianta del duello, M7-B, non ha zone e non ha preso chiavi.
+- **Trovato nel repo:** `scripts/render_map_svg.py` · `scripts/tests/test_chiavi_area.py` · `07_il Portale Della Forgia Eterna/homebrew/sessione-notte-e-alba/02-CHI-CE-STANOTTE.md`
+- **Solo qui:** il testo delle voci C1-C6 e H1 è un montaggio nuovo di frasi già nel repo e aspetta la lettura del DM sulla PR; i codici stanno nel JSON delle due piante (chiave `codice` degli oggetti, letta da `compile_map_json.py`), perché i master M7-C e M7-H sono generati: la prima spinta li aveva scritti a mano nel master e `test_master_generati` l'ha bocciata
+### MS-0221 · 2026-11-20 · Le skill di prosa si caricano per vincolo: hook, dodici agenti e cricchetto
 
 - **Data:** 2026-11-20
 - **PR:** #510

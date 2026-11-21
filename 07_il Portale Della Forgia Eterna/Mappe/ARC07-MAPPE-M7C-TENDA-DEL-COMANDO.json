@@ -158,7 +158,8 @@
         1,
         5
       ],
-      "label": "Telo est: «il telo a sinistra» di Balvar"
+      "label": "Telo est: «il telo a sinistra» di Balvar",
+      "codice": "C1"
     },
     {
       "type": "🎪",
@@ -168,7 +169,8 @@
         3,
         1
       ],
-      "label": "Telo del glifo"
+      "label": "Telo del glifo",
+      "codice": "C2"
     },
     {
       "type": "🚪",
@@ -202,7 +204,8 @@
         1,
         1
       ],
-      "label": "Palo centrale, di legno"
+      "label": "Palo centrale, di legno",
+      "codice": "C3"
     },
     {
       "type": "🟪",
@@ -277,7 +280,8 @@
         2,
         2
       ],
-      "label": "Tende dei servi e del bottino del capo: dentro non ci sono soldati"
+      "label": "Tende dei servi e del bottino del capo: dentro non ci sono soldati",
+      "codice": "C4"
     },
     {
       "type": "🎪",
@@ -368,7 +372,8 @@
         2,
         2
       ],
-      "label": "Tenda del turno dopo"
+      "label": "Tenda del turno dopo",
+      "codice": "C5"
     },
     {
       "type": "🗿",
@@ -477,7 +482,8 @@
         2
       ],
       "label": "Fondo buio",
-      "effect": "dove i bracieri non arrivano: Q13–R14, più la striscia R10–R12 lungo il telo est. Non dà occultamento contro le guardie hobgoblin né contro Balvar: tutti vedono al buio fino a 18 m, e per l'SRD l'oscurità non nasconde da chi ha scurovisione (Scena 7). Ci si nasconde solo dietro una copertura: i tre pali a K12, N12 e Q12, la tavola a J10, lo schienale del seggio. Lì si tira Nascondersi contro il loro Osservare (+1, Appendice A.2): una prova entrando, un'altra se qualcuno si muove."
+      "effect": "dove i bracieri non arrivano: Q13–R14, più la striscia R10–R12 lungo il telo est. Non dà occultamento contro le guardie hobgoblin né contro Balvar: tutti vedono al buio fino a 18 m, e per l'SRD l'oscurità non nasconde da chi ha scurovisione (Scena 7). Ci si nasconde solo dietro una copertura: i tre pali a K12, N12 e Q12, la tavola a J10, lo schienale del seggio. Lì si tira Nascondersi contro il loro Osservare (+1, Appendice A.2): una prova entrando, un'altra se qualcuno si muove.",
+      "codice": "C6"
     }
   ],
   "units": [

@@ -75,12 +75,12 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @path Le lance della Guardia dalla via nord (2d4+2 round) ; V1 V9 ; #9d0208
 @path Le sentinelle della via est ; AL20 AI20 ; #d62828
 @path Le due guardie del turno dopo ; AF14 AC25 W24 ; #7b2cbf
-@zone AA18-AA22 ; Telo est: «il telo a sinistra» di Balvar
-@zone V23-X23 ; Telo del glifo
-@zone V20-V20 ; Palo centrale, di legno
-@zone J10-K11 ; Tende dei servi e del bottino del capo: dentro non ci sono soldati
-@zone AF12-AG13 ; Tenda del turno dopo
-@zone J4-K5 ; Tende della Guardia della Mano, otto hobgoblin per tenda, a gruppi attorno al fuoco
+@zone AA18-AA22 ; Telo est: «il telo a sinistra» di Balvar ; C1
+@zone V23-X23 ; Telo del glifo ; C2
+@zone V20-V20 ; Palo centrale, di legno ; C3
+@zone J10-K11 ; Tende dei servi e del bottino del capo: dentro non ci sono soldati ; C4
+@zone AF12-AG13 ; Tenda del turno dopo ; C5
+@zone J4-K5 ; Tende della Guardia della Mano, otto hobgoblin per tenda, a gruppi attorno al fuoco ; H1
 ```
 
 ### 🌍 AMBIENTE (cosa impone il terreno — regole, non prosa)

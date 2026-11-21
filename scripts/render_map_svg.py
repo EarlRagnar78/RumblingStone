@@ -980,6 +980,9 @@ def coord_to_cell(token: str):
     return col_index(m.group(1)), int(m.group(2))
 
 
+_CHIAVE_AREA = re.compile(r"[A-Z]{1,2}\d{1,2}")
+
+
 def parse_annotations(raw_lines: list[str]) -> dict:
     ann = {"north": 0, "paths": [], "marks": [], "zones": []}
     for line in raw_lines:
@@ -1015,7 +1018,12 @@ def parse_annotations(raw_lines: list[str]) -> dict:
             if len(ends) == 2:
                 a, b = coord_to_cell(ends[0]), coord_to_cell(ends[1])
                 if a and b:
-                    ann["zones"].append({"a": a, "b": b, "text": parts[1]})
+                    # ultima parte facoltativa: la chiave d'area del testo, «C1»
+                    # (ADR-0122, S2). Solo se ha la forma di una chiave: molte
+                    # descrizioni hanno già un «;» nel testo.
+                    codice = parts[-1].upper() if len(parts) >= 3 and _CHIAVE_AREA.fullmatch(parts[-1].upper()) else ""
+                    ann["zones"].append({"a": a, "b": b, "text": parts[1],
+                                         "codice": codice or None})
     return ann
 
 
@@ -1385,9 +1393,12 @@ def _etichetta(emoji: str, local_legend: dict) -> str:
         or "(simbolo locale — vedi legenda del file sorgente)"
 
 
-def _lettera_zona(i: int) -> str:
+def _lettera_zona(i: int, zona: "dict | None" = None) -> str:
     """La lettera della zona `i` nel tema stampa: minuscola, per non
-    confonderla con le colonne (A, B, … AA)."""
+    confonderla con le colonne (A, B, … AA). Se `@zone` ha la terza parte,
+    la zona porta la chiave d'area del testo, «C1» (ADR-0122, S2)."""
+    if zona and zona.get("codice"):
+        return zona["codice"]
     return chr(ord("a") + i) if i < 26 else f"z{i + 1}"
 
 
@@ -1835,7 +1846,7 @@ def render_svg(grid: dict, source_name: str, tema: str = "pergamena", parte: str
                            f'height="{_n(cz * 1.05)}" rx="2" fill="{PAPER}" opacity="0.88"/>')
                 out.append(f'<text x="{_n(x0 + 2 + cz * 0.45)}" y="{_n(y0 + 2 + cz * 0.8)}" '
                            f'font-size="{_n(cz)}" font-style="italic" text-anchor="middle" '
-                           f'fill="#2c2313">{_lettera_zona(iz)}</text>')
+                           f'fill="#2c2313">{_lettera_zona(iz, z)}</text>')
             else:
                 out.append(
                     f'<text x="{_n(x0 + 4)}" y="{_n(y0 + 13)}" font-size="10.5" '
@@ -1942,7 +1953,7 @@ def render_svg(grid: dict, source_name: str, tema: str = "pergamena", parte: str
                        f'stroke-dasharray="4 3"/>')
             if stampa:
                 out.append(f'<text x="{ox + 7.5}" y="{ey - 1.6}" font-size="9.5" font-style="italic" '
-                           f'text-anchor="middle" fill="#2c2313">{_lettera_zona(iz)}</text>')
+                           f'text-anchor="middle" fill="#2c2313">{_lettera_zona(iz, z)}</text>')
             ey += _righe(testi_ind[n_voce], ox + 22, ey)
             n_voce += 1
 

@@ -759,9 +759,43 @@ Talenti: Allerta, Attacco in Volo, Capacità Focalizzata (veleno), Multiattacco
 
 ## Le mappe: lo spiazzo, la tenda, il campo
 
+Le aree hanno le chiavi stampate sulle due piante, che seguono: C1-C6 stanno su M7-C, C1-C5 anche su M7-H, H1 solo su M7-H. I numeri delle piante restano le pedine.
+
+### C1 · Il telo est, «il telo a sinistra» di Balvar
+
+S10–S14 su M7-C. È il telo che Balvar consiglia: da qui si entra e si resta invisibili, senza runa né glifo. Chi taglia la tenda altrove resta invisibile, ma il taglio fa rumore: le guardie tirano Ascoltare contro il suo Muoversi Silenziosamente.
+
+### C2 · Il telo del glifo
+
+N15–P15 su M7-C, il telo sopra il seggio. Porta un *glifo di interdizione* legato ai nani: scoppio sonoro 5d8, Riflessi CD 18 dimezza, e il boato è l'allarme. Nella bolla di *silenzio* non fa danni e non esce (Scena 6).
+
+### C3 · Il palo centrale
+
+N12 su M7-C. Di legno, alto 6 m come gli altri due: è il palo maestro, e le due metà del colmo si incastrano su di lui. Regge la runa della barriera di lame: Balvar la attiva e il muro corre lungo la riga 12, da J12 a R12, 13d6, Riflessi CD 21 per evitarla (Scena 7). Zog'tar lo abbatte con Forza CD 20, azione standard: il telo crolla su J10–R14 e chi vola sotto finisce a terra, intralciato, finché non supera Riflessi CD 15 (Scena 8).
+
+### C4 · Le tende dei servi e del bottino
+
+B2–C3 su M7-C. Stanno sul bordo dello spiazzo, staccate l'una dall'altra, e dentro non ci sono soldati.
+
+### C5 · La tenda del turno dopo
+
+X4–Y5 su M7-C, a 9 m dal telo. Ci dormono le due guardie del turno dopo; se Balvar sta con i PG entrano dal telo del seggio al round 2.
+
+### C6 · Il fondo buio
+
+Q13–R14 su M7-C, più la striscia R10–R12 lungo il telo est: dove i bracieri non arrivano. Non dà occultamento contro le guardie hobgoblin né contro Balvar, che vedono al buio fino a 18 m. Ci si nasconde solo dietro una copertura (i tre pali, la tavola, lo schienale del seggio), con Nascondersi contro il loro Osservare.
+
+<!-- nuova-pagina -->
+
 ![M7-C — La tenda del comando](../../Mappe/rendered-stampa-pianta/ARC07-MAPPE-M7C-TENDA-DEL-COMANDO_map01_m7-c-la-tenda-del-comando-di-zog-tar-notte-372-d.svg)
 
 ![M7-C — Indicazioni e legenda](../../Mappe/rendered-stampa-pianta/ARC07-MAPPE-M7C-TENDA-DEL-COMANDO_map01_m7-c-la-tenda-del-comando-di-zog-tar-notte-372-d_legenda.svg)
+
+### H1 · Le tende della Guardia della Mano
+
+J4–K5 su M7-H, a 20-30 m dalla tenda del capo. Quattro tende da otto hobgoblin attorno al fuoco della lancia, a gruppi staccati: chi entra nella cella del fuoco prende 1d6 da fuoco.
+
+<!-- nuova-pagina -->
 
 ![M7-H — Il campo del capo: lo spiazzo, la Guardia della Mano e i clan](../../Mappe/rendered-stampa-pianta/ARC07-MAPPE-M7H-QUARTIERE-DEL-COMANDO_map01_m7-h-il-campo-del-capo-lo-spiazzo-la-guardia-del.svg)
 

@@ -261,6 +261,11 @@
             "type": "string",
             "description": "Etichetta per il companion DM (non disegnata sulla griglia)."
           },
+          "codice": {
+            "type": "string",
+            "pattern": "^[A-Z]{1,2}[0-9]{1,2}$",
+            "description": "Chiave d'area del testo (ADR-0122, S2), es. «C1»: con rect e label il compilatore la scrive come quarta parte di @zone e la stampa la mette al posto della lettera della zona."
+          },
           "collega": {
             "type": "string",
             "minLength": 3,
@@ -300,6 +305,11 @@
           },
           "label": {
             "type": "string"
+          },
+          "codice": {
+            "type": "string",
+            "pattern": "^[A-Z]{1,2}[0-9]{1,2}$",
+            "description": "Chiave d'area del testo (ADR-0122, S2), es. «C1»: con rect e label il compilatore la scrive come quarta parte di @zone e la stampa la mette al posto della lettera della zona."
           },
           "effect": {
             "type": "string",

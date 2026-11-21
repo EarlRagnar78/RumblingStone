@@ -41,6 +41,7 @@ RumblingStone/scripts/claude-progetto.sh
 | 5 | AGENTS.md diviso in regole `.claude/rules/rs-*.md` che arrivano con i file | ADR-0141, #489, `e1198477` | su uno script −45% di caratteri rispetto ad AGENTS.md intero |
 | 6 | `.claudeignore` tradotto in regole `Read(...)` di `permissions.deny` | ADR-0142, #490, `f36785eb` | righe trovate nelle ricerche fino a −39% |
 | 7 | I gate bloccanti e veloci della CI girano prima del push (`gate_locale --pre-push` con pre-commit, hook locale); nei thread lo installa l'avvio | ADR-0143 | 7 dei 12 rossi recenti presi in locale, 45 s a push |
+| 8 | Hook PreToolUse `vincolo_skill.py`: la prosa di gioco senza `rumblingstone-narrative-style` caricata si ferma; dodici agenti in `.claude/agents/` in tre classi con le skill precaricate; hook UserPromptSubmit e Stop `instradamento_agenti.py` che suggeriscono agente e catena per il lavoro in arrivo, e un PreToolUse che ferma push e PR se la catena scritta nelle istruzioni non è stata chiamata; cricchetto della prosa in CI | ADR-0146 | prima: zero caricamenti di skill su 188 chiamate in cinque thread; l'hook si attiva su circa 200 modifiche su 2.944 ai file di gioco; il cricchetto ne avrebbe fermata 1 su 157; l'instradamento indovina il primo agente in 23 frasi vere su 33 |
 
 ## 3. Tornare indietro
 
@@ -56,6 +57,7 @@ container già partiti e si fa la verifica della colonna a destra.
 | 5 | `git revert` del merge di #489: tornano il CLAUDE.md che fa leggere AGENTS.md intero e nessuna regola `rs-*` | togliere una regola dalla tabella `SEZIONI` di `scripts/regole_claude.py` mettendo le sue sezioni nel nucleo, poi `python3 scripts/regole_claude.py` | `python3 scripts/regole_claude.py --misura`; in una sessione, leggere un file e chiedere quali `.claude/rules` sono nel contesto |
 | 6 | togliere tutte le righe `Read(...)` da `permissions.deny` (o `git revert` della PR) | lasciare leggibile una voce: in `.claudeignore` metterla sotto un commento `# leggibile: motivo`, poi `python3 scripts/claudeignore_deny.py` | aprire con Read un file di quella voce |
 | 7 | `git revert` della PR; su una sola macchina `rm .git/hooks/pre-push` | togliere un gate dal hook aggiungendolo a `LENTI` in `scripts/gate_locale.py` con i secondi misurati | `python3 scripts/gate_locale.py --pre-push --elenco` |
+| 8 | `git revert` della PR, poi `claude-progetto.sh` nei container già partiti | togliere il gruppo `PreToolUse` da `.claude/settings.json` (spegne l'hook), i gruppi `UserPromptSubmit` e `Stop` (spengono l'instradamento), il gruppo `PreToolUse` con matcher `Bash|mcp__github__create_pull_request` (spegne il cancello del push), il passo «Prosa — il testo cambiato non peggiora» da `ci.yml` (spegne il cricchetto), o un solo file da `.claude/agents/`; un tipo di file di prosa nuovo si aggiunge a `PROSA_PURA` in `scripts/vincolo_skill.py` | `python3 scripts/vincolo_skill.py --classe FILE`; in una sessione, `/agents` elenca gli agenti |
 
 Due regole valgono per ogni ritorno:
 
@@ -73,6 +75,8 @@ Due regole valgono per ogni ritorno:
 | ripartizione del contesto | `cd /home/user && claude -p "/context"` |
 | regole caricate per compito | `python3 scripts/regole_claude.py --misura` |
 | righe trovate nelle ricerche | `rg -c PAROLA . ` contro la stessa ricerca con le voci di `.claudeignore` come `--ignore-file` |
+| uso delle skill di prosa (blocchi, passaggi, promemoria dell'hook) | `python3 scripts/vincolo_skill.py --riepilogo` |
+| agenti suggeriti, quanti thread li hanno chiamati, push passati, bloccati e in deroga | `python3 scripts/instradamento_agenti.py --riepilogo` |
 
 `claude -p` non vede i connettori di claude.ai: il loro peso si misura solo in
 un thread vero.

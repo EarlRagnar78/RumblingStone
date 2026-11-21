@@ -452,7 +452,7 @@ def s3(repo: Path, ramo_nome: str, ref: str, patch: "list[Path]", t_ora: int,
                                     f"{ch['senza_decisione']} su {ch['chiusi']} in {f.name}",
                                     ("è già sul ramo: chiedi conferma al DM tramite il coordinatore"
                                      if stato.startswith("applicata") else "non portarla: domanda al DM "
-                                     "tramite il coordinatore") + "; ogni campo chiuso cita «(DM, AAAA-MM-GG)»",
+                                     "tramite il coordinatore") + "; ogni campo chiuso cita «[CANONE — DM AAAA-MM-GG, codice]»",
                                     file=str(f), stato=stato, **ch))
     return rilievi, voci, fuori
 
@@ -489,7 +489,7 @@ def s6_ref(repo: Path, ramo: str, remoto_ref: str, ref: str) -> "list[dict]":
         return []
     return [_rilievo("S6", ROSSO, ramo, f"{ref} chiude {ch['senza_decisione']} campi aperti senza "
                      "una decisione datata del DM: non spingere",
-                     "riporta i campi a «da compilare» o fai citare a ogni riga «(DM, AAAA-MM-GG)» "
+                     "riporta i campi a «da compilare» o fai citare a ogni riga «[CANONE — DM AAAA-MM-GG, codice]» "
                      "della decisione mostrata al DM", ref=ref, **ch)]
 
 

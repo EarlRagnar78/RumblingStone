@@ -24,7 +24,7 @@ non decidi niente della partita. I rami vivi e quelli morti sono in
    Porti sul ramo solo ciò che il DM ha deciso. Una patch che fa scendere i
    campi aperti (la regola S4 della misura, e la S6 che la segnala) non si porta,
    salvo che ogni riga che chiude un campo citi la decisione del DM con la data,
-   nella forma «(DM, 2026-11-21)». Se non la cita, la patch resta ferma e diventa
+   con la marca `[CANONE — DM 2026-11-21, <codice>]` di GUIDA-MARCATURE (ADR-0109). Se non la cita, la patch resta ferma e diventa
    una domanda nel resoconto per il coordinatore. Un campo non deciso (PX,
    bottino, esito di una prova, chi era presente, prezzo di un patto) resta com'è,
    con «da compilare» o con la marca di `docs/reference/GUIDA-MARCATURE.md`:

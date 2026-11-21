@@ -111,7 +111,7 @@ invece di occorrenze, intestazioni contate) e la forma della marca INFERRED.
 6. **Il canone resta di Jfs.** Una patch preparata da un thread non è una
    decisione del DM. Una riga che chiude un campo aperto (PX, bottino, esito di
    una prova, chi era presente, prezzo di un patto) deve citare la decisione
-   con la data, come «(DM, AAAA-MM-GG)» nell'agente o la marca
+   con la data, con la marca
    `[CANONE — DM AAAA-MM-GG, <codice>]` di `docs/reference/GUIDA-MARCATURE.md`:
    S6 accetta «DM» o «Jfs» entro sessanta caratteri da una data ISO, prima o
    dopo. Senza, la patch resta ferma e diventa una
@@ -167,10 +167,8 @@ invece di occorrenze, intestazioni contate) e la forma della marca INFERRED.
   «Jfs» accanto a una data `AAAA-MM-GG`. Una decisione vera scritta in un'altra
   forma («deciso da Jfs il 21/11») risulta mancante; una forma giusta scritta
   senza che il DM abbia deciso passa. Lo script vede la forma, non la verità.
-  L'agente e il registro delle norme scrivono «(DM, AAAA-MM-GG)», che la regola
-  1 della guida delle marcature conta fra le forme vecchie: la forma da
-  scrivere nelle righe nuove è la marca CANONE, che S6 riconosce allo stesso
-  modo.
+  L'agente e il registro delle norme prescrivono la marca CANONE della guida
+  delle marcature; S6 riconosce anche la forma vecchia «(DM, AAAA-MM-GG)».
 - **L'età di una patch viene dal `mtime` del file.** Una copia o un
   salvataggio sul mount di rete la ringiovanisce, e S3 può dare giallo dove il
   rosso era dovuto.

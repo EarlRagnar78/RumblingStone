@@ -1,6 +1,6 @@
 ---
 type: regex
-pattern: \(DM, ?\d{4}|decisione[^.\n]{0,40}(DM|data)|S6
+pattern: CANONE — DM \d{4}|\(DM, ?\d{4}|decisione[^.\n]{0,40}(DM|data)|S6
 match: contains
 flags: i
 weight: 1

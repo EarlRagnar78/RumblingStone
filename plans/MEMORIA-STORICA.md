@@ -2410,7 +2410,39 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `scripts/dmcore/testo.py` · `scripts/tests/test_etichette_pilastri.py` · `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md`
 - **Solo qui:** l'export avvisa con «non è PDF/A» ma esce verde: in CI il ripiego non ferma niente, e lo si vede solo leggendo l'avviso o ricompilando con gli standard
 
-### MS-0214 · 2026-11-20 · I rimandi tecnici escono dai booklet di ARC-07
+### MS-0214 · 2026-11-20 · Il corredo nella prosa senza grassetto non si leggeva, e sei schede passano nel recinto
+
+- **Data:** 2026-11-20
+- **PR:** —
+- **ADR:** ADR-0134
+- **Temi:** corredo equipaggiamento rc-001 ricchezza tabella 4-23 verifica_scheda pcg modificatori razziali bestiario
+- **Origine:** riga del 2026-11-20 «le sei schede di `Bestiario/mostri/` che avevano il corredo solo nella prosa» in `plans/CHANGELOG.md`
+- **Testo:** Il primo conteggio delle schede senza corredo diceva 29, ma veniva da un grep grezzo: con il lettore di `verifica_scheda.py` sono 6. Su quattro di queste la riga «Equipaggiamento» stava nella prosa delle Statistiche senza grassetto, e `_righe_dell_equipaggiamento` non la legge: il loro valore non era mai stato controllato contro la Tabella 4-23. Messe nel recinto, quattro risultano sopra il tetto. Il DM ha scelto sulle card una per una: orog e duergar tengono il corredo e lo dichiarano; lo Spezzamente perde la fascia +4 e tutte le CD di ammaliamento scendono di 2; per la Furia è stato il DM a proporre i guanti dell'orco +2 al posto della cintura +4, che costano 12.000 mo in meno e un punto di attacco e danni. L'hobgoblin regular 4 ha mostrato un difetto diverso: il .pcg salva le caratteristiche prima dei modificatori razziali, e `genera_attributi.py` le copia così. La scheda esce dalla marca del generatore, come Karruk nel 2026-09.
+- **Trovato nel repo:** `Bestiario/mostri/furia-della-mano-cr10.md` · `Bestiario/mostri/spezzamente-kulkor-zhul-cr12.md` · `Bestiario/mostri/hobgoblin-regular-warrior4-cr3.md` · `scripts/genera_attributi.py`
+- **Solo qui:** il difetto del .pcg può toccare altre schede «solo .pcg» (orco regular 4, Karkilan, koth, doom-hand); non è verificato ed è del thread delle regole
+### MS-0215 · 2026-11-20 · L'orco regular senza la razza, Karkilan e l'orco berserk con l'ira dentro i numeri base
+
+- **Data:** 2026-11-20
+- **PR:** —
+- **ADR:** ADR-0118
+- **Temi:** pcgen pcg razza ira barbaro karkilan orco berserk card verifica-scheda
+- **Origine:** riga del 2026-11-20 «Caratteristiche dal .pcg: l'ira dentro i numeri» in `plans/CHANGELOG.md`
+- **Testo:** il thread del volume ha trovato che il .pcg di PCGen salva le caratteristiche prima dei modificatori di razza. Su 13 schede del Bestiario che citano un .pcg, il difetto della razza tocca l'hobgoblin regular 4 (corretto nella #505) e l'orco regular 4. Il confronto ha trovato un secondo difetto: gli export di Karkilan e dell'orco berserk 2 erano salvati in ira, e l'orco aggiungeva l'ira una seconda volta nella sua riga. Il DM ha scelto i numeri base fuori ira con l'ira nella sua riga, e la razza per l'orco regular (For 18, falchion +9).
+- **Trovato nel repo:** `Bestiario/villain/minotauro-karkilan-cr5.md` · `Bestiario/mostri/orco-berserk-barbaro2-cr2.md` · `08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md` · `Bestiario/mostri/orco-regular-warrior4-cr3.md`
+- **Solo qui:** `verifica_scheda.py` non lo vede: non conosce la razza né sa se un export è in ira; il controllo è `/mnt/project-files/revisione-arkalseif-2026-11-19/pcgcheck.py`, fuori dal repo. Il controllo della lotta legge come lotta base anche una «Lotta» scritta dentro la riga Ira: per questo la lotta in ira sta solo nella riga delle Statistiche.
+
+### MS-0216 · 2026-11-21 · Tordek è Monaco anche sulla carta, e dominare persone non è permanente
+
+- **Data:** 2026-11-21
+- **PR:** —
+- **ADR:** —
+- **Temi:** regole pg tordek monaco barbaro trascrizione srd incantesimi dominare persone confusione durata mantello resistenza inferred skill
+- **Origine:** riga del 2026-11-21 «Due incoerenze trovate dal thread dei draghi» in `plans/CHANGELOG.md`
+- **Testo:** La trascrizione della foto della scheda di carta del 2026-11-05 dava a Tordek Guerriero 4 / Barbaro 9, mentre `campaign/state.yaml` dice Fighter 4 / Monk 9; il DM ha confermato il Monaco. I numeri della carta lo dicono da soli: con il Monaco i tiri salvezza fanno Temp 13, Rifl 10, Vol 11, e la carta ne ha uno in più su tutti e tre, il *mantello della resistenza +1* della scheda PCGen al 12° livello; con il Barbaro Riflessi e Volontà sarebbero 7 e 8. L'«armatura +1» della carta è marcata INFERRED: forse è l'amuleto dell'armatura naturale +1 della scheda PCGen, perché il contatto 21 torna solo se Tordek non porta armatura. Nella skill dnd-35-srd *dominare persone* diceva «permanent until dispelled», ma l'SRD dà 1 giorno per livello: chi usava la skill per un villain che domina un PNG avrebbe tenuto il controllo per sempre. Nella stessa sezione *confusione* colpiva 1 creatura per livello, senza durata; l'SRD dice un'esplosione di 4,5 m di raggio per 1 round per livello. Il regolista ha controllato le due righe sul testo SRD, perché d20srd.org risponde 403 dal proxy
+- **Trovato nel repo:** `plans/esperimenti/p16-inferred-2026-11-04/SCHEDE-PG-CARTA.md` · `skills/dnd-35-srd/references/spells.md`
+- **Solo qui:** il mantello non è scritto sulla carta: sta solo nella scheda PCGen in PDF. Il custode del canone ha trovato altre tracce del Tordek barbaro o di un altro livello, fuori da questo lavoro e ancora aperte: il Torneo dell'arco 09 lo dà Monk 13 (`Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md` r.12-30, `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-Round1.md` r.10 e 23); `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` r.3247 lo manda in ira; il 77% di `wyrmlord-karruk-cr13.md` r.38 viene da `duelli_arc09.py` r.167, che simula Tordek in ira, come gli altri simulatori di `plans/esperimenti/` che gli danno l'ira; MS-0142 scrive «+23 in ira»; i due file `OTTO-PORTE` dell'arco 09 legano le porte 3 e 4 dell'Orbe a Monaco 10 e 12
+
+### MS-0217 · 2026-11-20 · I rimandi tecnici escono dai booklet di ARC-07
 
 - **Data:** 2026-11-20
 - **PR:** #511

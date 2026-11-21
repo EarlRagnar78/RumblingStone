@@ -20,6 +20,8 @@ attacchi:
   - Distanza giavellotto +9 (1d6+3)
 voci:
   - Talenti: Allerta, Arma Focalizzata (morning star), Iniziativa Migliorata, Furtivo
+  - Equipaggiamento da combattimento: 2 dosi di lama mortale
+  - Altro equipaggiamento: cuoio borchiato +1, morning star perfetta, 3 giavellotti, fascia dell'intelletto +2
 fonte: ricostruzione del repo su SRD 3.5, 2026-10-19
 ```
 
@@ -52,3 +54,5 @@ Benchmark: PF T1-1 riga 9: CA 20 sotto (23) / pf 58 sotto (115) / attacco +11 so
 Combinazioni ed EL: 4 = EL 13; 8 = EL 15 (l'imboscata dei tunnel). Nel 3B l'ondata è una massa contro i pregenerati, non un incontro a EL.
 Notes: imboscata nei tunnel (8, quattro a Est su Re Thorek e quattro a Ovest sui comandanti) e terza ondata del Cuore della Montagna, round 7-8 (`08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md`, `hammerfist_encounters-…-final.md`, `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md`).
 Boost log: 2026-10-19 — scheda nuova su SRD 3.5 (bugbear + Ladro 5 + Assassino 2) — GS 2 della razza → 9 — richiesta del DM, D10: la versione più forte fra quelle che i file descrivono; Int 18 con la fascia +2 tiene la CD 16 dell'attacco mortale che i file già usano.
+
+> RC-001 (2026-11-19, ADR-0134): corredo trascritto dalla riga «Equipaggiamento» della scheda (`[CANONE — DM 2026-11-05, P16, Bestiario]`) nelle due voci del recinto, che `verifica_scheda.py` legge: la riga della prosa, senza grassetto, non la riconosceva. Valore 9.086 mo (cuoio borchiato +1 1.175, morning star perfetta 308, 3 giavellotti 3, fascia dell'intelletto +2 4.000, 2 dosi di lama mortale 3.600) contro i 21.000 del livello effettivo 11 (3 DV, bugbear +1, 7 livelli di classe; DMG 3.5, Tabella 4-23). Nessun numero cambia.

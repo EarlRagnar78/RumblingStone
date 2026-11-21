@@ -5124,7 +5124,7 @@ ___
 
 **TATTICHE**
 ___
-Il sergente, guerriero 3 nel testo, ha i numeri dell'orco guerriero 4 del Bestiario, GS 3: 30 pf, CA 16, falchion +7 (2d4+3).  
+Il sergente, guerriero 3 nel testo, ha i numeri dell'orco guerriero 4 del Bestiario, GS 3: 30 pf, CA 16, falchion +9 (2d4+6).  
 
 **STATISTICHE**
 ___
@@ -5132,6 +5132,7 @@ Linguaggi: Comune, Orchesco
 Qualità speciali: sensibilità alla luce (abbagliato in piena luce solare o in *luce diurna*)  
 Altro equipaggiamento: cuoio borchiato, falchion, giavellotto  
 }}
+
 
 {{monster,frame
 ## Hobgoblin della pattuglia (8)

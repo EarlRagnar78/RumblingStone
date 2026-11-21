@@ -2402,7 +2402,7 @@ repo scritto con altre parole.
 ### MS-0213 · 2026-11-19 · Le etichette dei pilastri escono dalle stampe, e il bug dei tag di typst torna con le liste
 
 - **Data:** 2026-11-19
-- **PR:** —
+- **PR:** #504
 - **ADR:** ADR-0070
 - **Temi:** stampa etichette pilastri prosa filtro typst pdfua pdfa bug tag liste impaginazione
 - **Origine:** riga del 2026-11-19 «Le etichette dei pilastri non si stampano» in `plans/CHANGELOG.md`
@@ -2441,3 +2441,14 @@ repo scritto con altre parole.
 - **Testo:** La trascrizione della foto della scheda di carta del 2026-11-05 dava a Tordek Guerriero 4 / Barbaro 9, mentre `campaign/state.yaml` dice Fighter 4 / Monk 9; il DM ha confermato il Monaco. I numeri della carta lo dicono da soli: con il Monaco i tiri salvezza fanno Temp 13, Rifl 10, Vol 11, e la carta ne ha uno in più su tutti e tre, il *mantello della resistenza +1* della scheda PCGen al 12° livello; con il Barbaro Riflessi e Volontà sarebbero 7 e 8. L'«armatura +1» della carta è marcata INFERRED: forse è l'amuleto dell'armatura naturale +1 della scheda PCGen, perché il contatto 21 torna solo se Tordek non porta armatura. Nella skill dnd-35-srd *dominare persone* diceva «permanent until dispelled», ma l'SRD dà 1 giorno per livello: chi usava la skill per un villain che domina un PNG avrebbe tenuto il controllo per sempre. Nella stessa sezione *confusione* colpiva 1 creatura per livello, senza durata; l'SRD dice un'esplosione di 4,5 m di raggio per 1 round per livello. Il regolista ha controllato le due righe sul testo SRD, perché d20srd.org risponde 403 dal proxy
 - **Trovato nel repo:** `plans/esperimenti/p16-inferred-2026-11-04/SCHEDE-PG-CARTA.md` · `skills/dnd-35-srd/references/spells.md`
 - **Solo qui:** il mantello non è scritto sulla carta: sta solo nella scheda PCGen in PDF. Il custode del canone ha trovato altre tracce del Tordek barbaro o di un altro livello, fuori da questo lavoro e ancora aperte: il Torneo dell'arco 09 lo dà Monk 13 (`Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md` r.12-30, `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-Round1.md` r.10 e 23); `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` r.3247 lo manda in ira; il 77% di `wyrmlord-karruk-cr13.md` r.38 viene da `duelli_arc09.py` r.167, che simula Tordek in ira, come gli altri simulatori di `plans/esperimenti/` che gli danno l'ira; MS-0142 scrive «+23 in ira»; i due file `OTTO-PORTE` dell'arco 09 legano le porte 3 e 4 dell'Orbe a Monaco 10 e 12
+
+### MS-0217 · 2026-11-20 · I rimandi tecnici escono dai booklet di ARC-07
+
+- **Data:** 2026-11-20
+- **PR:** #511
+- **ADR:** —
+- **Temi:** stampa booklet serata rimandi tecnici marcatori di lavoro adr pdf tavolo
+- **Origine:** riga del 2026-11-20 «Via i rimandi tecnici dai booklet di ARC-07» in `plans/CHANGELOG.md`
+- **Testo:** Jfs ha chiesto il booklet della serata del 20/11 pronto da usare, poi (14:37 UTC) di togliere i rimandi tecnici. Il PDF è stato composto da main più le bozze #505-#509 e messo in /mnt/project-files/serata-2026-11-20/; questa PR porta nei sorgenti le stesse correzioni. Una copia generata da `componenti.py --includi` va corretta nella sua fonte (qui la scheda di Balvar), altrimenti il riallineamento rimette il testo vecchio. «#4» resta, perché il booklet stesso dice che è il capitolo VII
+- **Trovato nel repo:** `Bestiario/villain/balvar-fuocospento-cr13.md` · `07_il Portale Della Forgia Eterna/PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`
+- **Solo qui:** la ricerca dei marcatori era una regex in scratchpad, non un cancello del repo

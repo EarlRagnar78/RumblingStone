@@ -18,7 +18,7 @@ non nel repo; qui c'è la trascrizione.
 Oggetti scritti sulle righe dell'armatura e delle armi:
 
 - **Thorik.** Armatura completa di mithral +1, scudo pesante +1, armatura naturale +1, anello di protezione +1. Armi: Aegis Fang e scudo. Nessun oggetto dà caratteristiche. Modificatori ai tiri salvezza: +1 contro trappole, +2 contro veleno, +2 contro incantesimi, +1 contro paura.
-- **Tordek.** Armatura +1 `[INFERRED — L'«armatura +1» della carta è l'amuleto dell'armatura naturale +1?; base: la scheda PCGen al 12° livello ha l'amuleto, e il contatto 21 della carta torna solo se Tordek non porta armatura, perché un monaco in armatura perde il bonus di Saggezza alla CA]`, bracciali, anello +3, arco composito +4. Le caratteristiche coincidono con la scheda PCGen già nel repo.
+- **Tordek.** Armatura +1 `[INFERRED — L'«armatura +1» della carta è l'amuleto dell'armatura naturale +1?; base: la scheda PCGen al 12° livello ha l'amuleto, e il contatto 21 della carta torna solo se Tordek non porta armatura, perché un monaco in armatura perde il bonus di Saggezza alla CA]`, bracciali, anello +3, arco composito +4. Non scritto sulla carta: *mantello della resistenza +1* (+1 a tutti i tiri salvezza), dalla scheda PCGen al 12° livello `[CANONE — DM 2026-11-21, card «Sì, mantello della resistenza +1»]`. Le caratteristiche coincidono con la scheda PCGen già nel repo.
 - **Artemis.** Giaco di maglia di mithral +2, buckler. Nessun oggetto dà caratteristiche.
 - **Hella.** Cuoio borchiato, scudo, anello di deviazione +1, amuleto.
 

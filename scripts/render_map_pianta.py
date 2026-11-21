@@ -235,7 +235,7 @@ def render_pianta(grid: dict, source_name: str, stampa: bool = False, parte: str
             car_v = (larga_c - 24 - (10 if col_v > 1 else 0)) / 5.5
             voci_st = [("mark", str(m["n"]), _a_capo(
                 f"{R.col_label(m['coord'][0])}{m['coord'][1]} — {m['text']}", car_v)) for m in ann["marks"]]
-            voci_st += [("zona", R._lettera_zona(iz), _a_capo(R._testi_indicazioni(
+            voci_st += [("zona", R._lettera_zona(iz, z), _a_capo(R._testi_indicazioni(
                 {"marks": [], "paths": [], "zones": [z]})[0], car_v)) for iz, z in enumerate(ann["zones"])]
             voci_st += [("path", pa["color"], _a_capo(R._testi_indicazioni(
                 {"marks": [], "paths": [pa], "zones": []})[0], car_v)) for pa in ann["paths"]]
@@ -573,9 +573,10 @@ def render_pianta(grid: dict, source_name: str, stampa: bool = False, parte: str
           f'height="{_n((abs(by - ay) + 1) * CELL)}" fill="none" stroke="{C["marker"]}" stroke-width="1.4" '
           f'stroke-dasharray="6 4" opacity="0.85"/>')
         if stampa:
-            w(f'<rect x="{_n(x0 + 2)}" y="{_n(y0 + 2)}" width="{_n(cz * 0.9)}" height="{_n(cz * 1.05)}" '
+            largo = 1.5 if z.get("codice") else 0.9  # «C1» è più largo di «a»
+            w(f'<rect x="{_n(x0 + 2)}" y="{_n(y0 + 2)}" width="{_n(cz * largo)}" height="{_n(cz * 1.05)}" '
               f'rx="2" fill="{C["carta"]}" opacity="0.9"/>')
-            w(_testo(x0 + 2 + cz * 0.45, y0 + 2 + cz * 0.8, R._lettera_zona(iz), cz, "middle",
+            w(_testo(x0 + 2 + cz * largo / 2, y0 + 2 + cz * 0.8, R._lettera_zona(iz, z), cz, "middle",
                      C["marker"], style="italic"))
         else:
             w(_testo(x0 + 4, y0 + 13, z["text"], 10.5, fill=C["marker"], weight="bold", alone=True))

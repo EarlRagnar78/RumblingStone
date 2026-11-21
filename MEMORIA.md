@@ -87,6 +87,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-21 | P16 · REGOLE | Skullcrusher Vecchio come al duello del 20/11 (scelte di Jfs del 21/11 su card)… | ✅ tre conosciuti mancanti (7/5/3/2 dell'SRD), oggetti dal tesoro (CA 43, contatto 13, TS +24/+21/+23), *immagine speculare* al corno, passate lunghe, gittate;… |
 | 2026-11-21 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALIT… | Corredo dei draghi, scelte del DM sulle card del 21/11. **Fauci di Palude** «A… | In PR. Quota del tesoro triplo addosso: Fauci 0% → 47%, Tyrgarun 0% → 24%, Ozyrrandion 27% → 88%, Regiarix 0% → 36%, drago di Vaereth 0% → 19%. CA: Fauci 29 →… |
 | 2026-11-21 | P16 · REGOLE | Due incoerenze trovate dal thread dei draghi (richiesta del coordinatore del 21… | ✅ due file, nessun numero di scheda cambiato |
+| 2026-11-20 | STANDARD-STAMPA | ADR-0122, S2: le chiavi d'area (richiesta di Jfs del 19/11 di vedere subito chi… | Booklet della serata: S2 codici del testo che sono anche sulla mappa 0/0 → 7/7, codici solo sulla mappa 0; pagine 132 → 134; `misura_stampa --check` nei tetti… |
 | 2026-11-20 | STANDARD-STAMPA | Via i rimandi tecnici dai booklet di ARC-07 (richiesta di Jfs del 20/11 per la… | escono ADR-0057, ADR-0018, «ADR-10 interno», «decisione Q21 del DM», «Q29» (due volte), «B4 §3/§4» e i numeri di riga dei vecchi file P5/P6; la regex sul testo… |
 | 2026-11-20 | SISTEMI-DI-GIOCO-PLUGIN | Caratteristiche dal .pcg: la razza dell'orco regular 4 e l'ira dentro i numeri… | Segnalazione del thread del volume: il .pcg salva le caratteristiche prima della razza. Misurate le 13 schede del Bestiario che citano un .pcg contro main 2af9… |
 | 2026-11-20 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: le sei schede di `Bestiario/mostri/` che avevano il co… | `verifica_scheda.py` senza violazioni sulle sei schede; schede senza corredo leggibile 6 → 0; `genera_attributi.py --check` verde (65 blocchi). Resta al thread… |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-19 | STANDARD-STAMPA | ADR-0145, segnalibri annidati (richiesta di Jfs del 19/11, 14:07: chiudere i li… | ✅ segnalibri da piatti a quattro livelli: serata 143 voci con 20 al primo livello, volume 439 con 13; PDF/UA-1 e PDF/A-2a restano; rimandi 113 su 113 e 242 su… |
 | 2026-11-19 | STANDARD-STAMPA | Convergenza di typst (richiesta del coordinatore prima dei segnalibri: il volum… | ✅ rimandi giusti del volume 227 → 242 su 242; numeri instabili 2 → 0 booklet su 22 |
 | 2026-11-19 | RICERCA-PROSA-PECULIARE | Le tecniche di prosa proprie del repo contro le case (domanda di Jfs del 19/11)… | ✅ ricerca e standard; nessun cancello nuovo |
-| 2026-11-19 | STANDARD-STAMPA | Card di Jfs sulla serata di ARC-07: Durik resta in fondo come galleria dei PNG… | ✅ serata da 3 difetti di struttura a 0 (134 → 132 pp); rimandi 113 su 122 con la pagina, tutti giusti; debito INFERRED 14 → 14 (le due domande chiuse lo stesso… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 219 voci, l'ultima MS-0219 del 2026-11-21 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 220 voci, l'ultima MS-0220 del 2026-11-20 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

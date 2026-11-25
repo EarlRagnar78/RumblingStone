@@ -1451,6 +1451,6 @@ Se la taglia non è quella della base il grado atteso è un intervallo: +1 se è
 
 **Decisione del DM (2026-11-20).** Una scheda passa se le sue caratteristiche, tolti razza, un aumento ogni 4 livelli o dadi vita, età, oggetti e ira, sono una di queste: il .pcg che la scheda cita, un acquisto a punti fino a 32, la serie normale, la serie d'élite. Chi non rientra va su card, scheda per scheda. Una scheda può restare fuori solo con una riga che lo dichiara come scelta del DM.
 
-**Conseguenze.** Le bocciate scendono da 21 a 1 (Grimjaw, che entra dopo la #517). Il bonus razziale alle abilità delle creature coi dadi vita razziali entra nel conto voce per voce (`[razze_dv]` in `gradi.toml`). La scheda che cita un .pcg si confronta col .pcg più la razza.
+**Conseguenze.** Le bocciate scendono da 21 a 3, e nessuna delle tre è un difetto della scheda: lo script legge l'Orog Guardia Nera come orco e Zin'thara come elfa invece che drow, e Tempestas dichiara il suo acquisto a 60 punti. Grimjaw non è nella misura, perché la sua scheda sta in ARC08-02 e non nel Bestiario: entra dopo la #517. Il bonus razziale alle abilità delle creature coi dadi vita razziali entra nel conto voce per voce (`[razze_dv]` in `gradi.toml`). La scheda che cita un .pcg si confronta col .pcg più la razza.
 
 **Limiti dichiarati.** La regola non è un cancello: la misura sta in `/mnt/project-files/regole-razze-dv-2026-11-20/misura_regola_jfs.py`, fuori dal repo. Il verificatore non conosce l'orog e lo tratta come orco. Gli oggetti di caratteristica si leggono dal testo della scheda.

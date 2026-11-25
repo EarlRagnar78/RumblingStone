@@ -296,6 +296,10 @@ def _razza_srd(dove: str, regole: dict) -> "str | None":
     return trovate[0] if len(trovate) == 1 else None
 
 
+#: SRD 3.5, Hide: «Size» (le taglie sotto la Media non arrivano qui, vedi _razza_coi_dv)
+_NASCONDERSI_DI_TAGLIA = {"Large": -4, "Huge": -8, "Gargantuan": -12, "Colossal": -16}
+
+
 def _razza_coi_dv(testo: str, dove: str, tipo: str, regole: dict, sistema: str) -> "str | None":
     """Quale creatura coi dadi vita razziali di `[razze_dv]` è la scheda (bugbear, gnoll,
     minotauro…), o None. La dichiara la riga della fonte («SRD *Bugbear* + Rogue 5»);
@@ -516,7 +520,14 @@ def _abilita_di_una_scheda(p: Path, testo: str, riga0: int, dal_nome: str) -> "t
         dove_ = " ".join((riga_tipo, s.testo.split("\n", 1)[0], dal_nome))
         coi_dv = _razza_coi_dv(testo, dove_, s.tipo or riga_tipo, regole, sistema)
         if coi_dv is not None:
-            preciso = regole["razze_dv"][coi_dv]
+            from dmcore import creature_base as CB
+            preciso = dict(regole["razze_dv"][coi_dv])
+            # il modificatore di taglia a Nascondersi (SRD, Hide: Grande −4, Enorme −8, Mastodontica
+            # −12, Colossale −16) sta nel bonus scritto: senza, i gradi dedotti di un gigante
+            # sarebbero 4 in meno e un'abilità oltre il massimo passerebbe
+            di_taglia = _NASCONDERSI_DI_TAGLIA.get(CB.tabella(sistema)[coi_dv]["taglia"], 0)
+            if di_taglia:
+                preciso["hide"] = preciso.get("hide", 0) + di_taglia
     pp = regole.get("penalita_di_prova") or {}
     penalita, da_armatura = _penalita_di_prova(s.testo, regole, sistema)
     da_velocita = _salto_da_velocita(s.testo, regole) if preciso is not None else 0
@@ -1606,7 +1617,14 @@ def caratteristiche_dalla_fonte(p: Path) -> "tuple[list[dict], list[dict]]":
             continue
         attese = {it: int(stat[en]) + mod.get(it, 0) for en, it in _STAT_PCG}
         oggetti = {}
+        # un oggetto che l'insieme d'equipaggiamento del .pcg tiene solo nello zaino («Carried»,
+        # «Not Carried») non dà il suo bonus: conta chi è indossato, o chi non sta in nessun insieme
+        posti = {}
+        for posto, valore in re.findall(r"^EQUIPSET:([^|\n]+)\|ID:[\d.]+\|VALUE:([^|\n]+)", pcg, re.M):
+            posti.setdefault(valore.strip(), set()).add(posto.strip())
         for nome_o in re.findall(r"^EQUIPNAME:([^|\n]+)", pcg, re.M):
+            if posti.get(nome_o.strip()) and posti[nome_o.strip()] <= {"Carried", "Not Carried"}:
+                continue
             for rx, car, fisso in _OGGETTI_CARATTERISTICA:
                 if (m := rx.search(nome_o)):
                     oggetti[car] = max(oggetti.get(car, 0), fisso or int(m.group(1)))

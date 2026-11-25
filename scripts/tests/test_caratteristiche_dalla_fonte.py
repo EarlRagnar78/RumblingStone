@@ -70,6 +70,25 @@ class TestDallaFonte(unittest.TestCase):
                 viol, _ = V.caratteristiche_dalla_fonte(p)
             self.assertEqual(viol == [], ok, (forza, viol))
 
+    def test_oggetto_nello_zaino_non_conta(self):
+        # gli stessi guanti, ma l'insieme d'equipaggiamento del .pcg li tiene «Carried»: For 18 non torna più
+        from unittest import mock
+        nome = "00-underdark-grr6-Bothor-Malvur.pcg"
+        vero = V._salvataggi_pcg()[nome].read_text(encoding="utf-8", errors="replace")
+        self.assertIn("EQUIPSET:Hands|ID:0.1.04|VALUE:Gauntlets of Ogre Power", vero)
+        nano = "Des 13 Cos 16 Int 10 Sag 12 Car 6"
+        testo = ORCO.replace("Warrior 4", "Fighter 6").replace("4d8+8", "6d10+18").replace("(orc)", "(dwarf)")
+        with tempfile.TemporaryDirectory() as d:
+            q = Path(d) / nome
+            q.write_text(vero.replace("EQUIPSET:Hands|ID:0.1.04|VALUE:Gauntlets", "EQUIPSET:Carried|ID:0.1.04|VALUE:Gauntlets"),
+                         encoding="utf-8")
+            with mock.patch.object(V, "_salvataggi_pcg", return_value={nome: q}):
+                for forza, ok in ((16, True), (18, False)):
+                    p = Path(d) / "nano-prova-cr6.md"
+                    p.write_text(testo.format(attributi=f"For {forza} {nano}", coda="", pcg=nome), encoding="utf-8")
+                    viol, _ = V.caratteristiche_dalla_fonte(p)
+                    self.assertEqual(viol == [], ok, (forza, viol))
+
     def test_un_export_citato_non_si_giudica(self):
         self.assertEqual(_prova("For 14 Des 13 Cos 14 Int 12 Sag 11 Car 10",
                                 pcg="orc_regular.pcg` (export `orco.htm`)"), ([], []))

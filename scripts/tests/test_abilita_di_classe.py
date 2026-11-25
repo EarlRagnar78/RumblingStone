@@ -209,6 +209,19 @@ class TestRazzeCoiDadiVita(unittest.TestCase):
         su = self.testo.replace("Muoversi Silenziosamente +21", "Muoversi Silenziosamente +25")
         self.assertEqual([v["ha"] for v in _prova(BUGBEAR.name, su)[0]], [14])
 
+    def test_la_taglia_conta_a_nascondersi(self):
+        """SRD, Hide: una creatura Grande ha −4. Nascondersi +17 del bugbear vero sono 10 gradi
+        (17 − 3 − 2 di oggetto − 2 di Furtivo); se la creatura base fosse Grande sarebbero 14,
+        oltre il massimo di 13."""
+        from unittest import mock
+        from dmcore import creature_base as CB
+        vera = CB.tabella("dnd35")
+        grande = {**vera, "bugbear": {**vera["bugbear"], "taglia": "Large"}}
+        self.assertEqual(_prova(BUGBEAR.name, self.testo)[0], [])
+        with mock.patch.object(CB, "tabella", return_value=grande):
+            viol, _ = _prova(BUGBEAR.name, self.testo)
+        self.assertEqual([(v["abilita"], v["ha"], v["atteso"]) for v in viol], [("hide", 14, 13)])
+
 
 # Guerriero 4 umano, For 16: Scalare e Nuotare sono di classe, massimo 7 gradi, margine 2 (oggetto).
 # Senza armatura Scalare regge fino a +12 (7 + 3 + 2).

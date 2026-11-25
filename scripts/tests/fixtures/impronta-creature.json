@@ -18287,7 +18287,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 5591,
+    "senza_note": 6035,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -19866,12 +19866,12 @@
    "controlla": [],
    "genera": [
     {
-     "Car": 17,
-     "Cos": 20,
+     "Car": 11,
+     "Cos": 16,
      "Des": 12,
      "For": 22,
-     "Int": 10,
-     "Sag": 12
+     "Int": 8,
+     "Sag": 10
     },
     [
      "letta dalla riga delle caratteristiche della scheda stessa"
@@ -19880,11 +19880,11 @@
    "genera_senza_fonte": [
     {
      "Car": 16,
-     "Cos": 20,
+     "Cos": 16,
      "Des": 12,
      "For": 22,
      "Int": 8,
-     "Sag": 12
+     "Sag": 10
     },
     [
      "array elite del Manuale del DM (PNG con classe)",
@@ -19893,8 +19893,9 @@
      "modificatori razziali SRD: dwarf Cos +2 Car -2",
      "Des 12 **letta da ca-dettaglio** — il vincolo batte l'array",
      "Des 12 **ricavata dall'iniziativa** — il vincolo batte l'array",
-     "Cos 20 **ricavata da pf 126 su 12 DV** — il vincolo batte l'array",
-     "For 22 **ricavata da BAB e lotta** — il vincolo batte l'array"
+     "Cos 16 **ricavata da pf 102 su 12 DV** — il vincolo batte l'array",
+     "For 22 **ricavata da BAB e lotta** — il vincolo batte l'array",
+     "Sag 10 **ricavata da Vol +6 (base +6)** — il tetto del TS batte l'array"
     ]
    ],
    "giudica": {
@@ -19912,13 +19913,13 @@
       0
      ],
      "Temp": [
-      13,
-      13,
+      11,
+      11,
       0
      ],
      "Vol": [
-      7,
-      7,
+      6,
+      6,
       0
      ],
      "attacco": [
@@ -19937,11 +19938,11 @@
       0
      ],
      "pf": [
-      126,
-      "72-180",
+      102,
+      "48-156",
       0
      ],
-     "pf_media": 126
+     "pf_media": 102
     },
     "file": "Bestiario/png/dauth-commander-mercenari-nani-cr12.md",
     "provenienza": "a mano",
@@ -19978,18 +19979,18 @@
        10
       ]
      ],
-     60,
+     36,
      "pf-dado"
     ],
     "dalla_fonte": null,
     "dalla_scheda": [
      {
-      "Car": 17,
-      "Cos": 20,
+      "Car": 11,
+      "Cos": 16,
       "Des": 12,
       "For": 22,
-      "Int": 10,
-      "Sag": 12
+      "Int": 8,
+      "Sag": 10
      },
      "letta dalla riga delle caratteristiche della scheda stessa"
     ],
@@ -19999,7 +20000,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 5017,
+    "senza_note": 5014,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -20009,22 +20010,22 @@
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
-      5,
-      "ricavata da Temp +13 (base +8)"
+      3,
+      "ricavata da Temp +11 (base +8)"
      ],
      "Des": [
       1,
       "ricavata da Rifl +5 (base +4)"
      ],
      "Sag": [
-      1,
-      "ricavata da Vol +7 (base +6)"
+      0,
+      "ricavata da Vol +6 (base +6)"
      ]
     },
     "vincoli": {
      "cos_da_pf": [
-      20,
-      "ricavata da pf 126 su 12 DV"
+      16,
+      "ricavata da pf 102 su 12 DV"
      ],
      "des_da_iniziativa": [
       12,
@@ -20042,28 +20043,28 @@
    },
    "pf_dado_corretto": null,
    "pf_dado_corretto_forzato": {
-    "bonus": "da Cos 20",
+    "bonus": "da Cos 16",
     "dadi": "dalle classi del `tipo` coi dadi SRD",
     "fascia": [
-     72,
-     180
+     48,
+     156
     ],
     "file": "Bestiario/png/dauth-commander-mercenari-nani-cr12.md",
     "legale": true,
-    "media": 126,
+    "media": 102,
     "motivo": null,
-    "nuovo": "12d10+60",
-    "pf": 126,
-    "vecchio": "12d10+60"
+    "nuovo": "12d10+36",
+    "pf": 102,
+    "vecchio": "12d10+36"
    },
    "scheda": {
     "attributi": {
-     "Car": 17,
-     "Cos": 20,
+     "Car": 11,
+     "Cos": 16,
      "Des": 12,
      "For": 22,
-     "Int": 10,
-     "Sag": 12
+     "Int": 8,
+     "Sag": 10
     },
     "bab": 12,
     "composizione_nota": true,
@@ -20081,13 +20082,13 @@
     "gs": 12.0,
     "lotta": 18,
     "mischia": "ascia da guerra nanica +3 +23/+18/+13 (1d10+13, ×3)",
-    "pf": 126,
+    "pf": 102,
     "provenienza": "a mano",
-    "tipo": "Medium humanoid (dwarf), Guerriero 12, 12d10+60",
+    "tipo": "Medium humanoid (dwarf), Guerriero 12, 12d10+36",
     "ts": [
-     13,
+     11,
      5,
-     7
+     6
     ]
    }
   },
@@ -23593,7 +23594,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "copiate",
-    "senza_note": 6918,
+    "senza_note": 7382,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -24687,7 +24688,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 5331,
+    "senza_note": 6218,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {

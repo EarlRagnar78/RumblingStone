@@ -1444,3 +1444,13 @@ Se la taglia non è quella della base il grado atteso è un intervallo: +1 se è
 **Conseguenze.** Venti card risolte il 19/11 (elenco nella voce MS e nel registro della revisione). Due errori di conto trovati rifacendo gli slot sulla tabella SRD sono corretti con le card che li contenevano. `magia.py` conta lo slot di scuola dello specialista anche allo 0 nel 3.5 (SRD «per spell level»; nel PRD dal 1°), e `verifica_scheda.py` conta gli incantesimi bonus del Maestro del Sapere e legge il livello di classe, non il LI, per ranger e paladino. Misura contro main 517a3e79: violazioni 34 → 2.
 
 **Limiti dichiarati.** Il sito copre poco il Monster Manual e il Magic Item Compendium, e per gli dei del Deities and Demigods non dà la lista dei Reami: quello che non copre resta non verificato, con il nome nella voce MS.
+
+### Addendum 2026-11-25: le caratteristiche dentro una regola misurabile
+
+**Contesto.** Il lotto «razze coi dadi vita razziali» ha misurato le caratteristiche di 64 schede contro le serie della DMG 3.5 (p. 110): 49 non combaciano. Le serie sono una scelta e non una regola, quindi lo scarto da solo non è una violazione.
+
+**Decisione del DM (2026-11-20).** Una scheda passa se le sue caratteristiche, tolti razza, un aumento ogni 4 livelli o dadi vita, età, oggetti e ira, sono una di queste: il .pcg che la scheda cita, un acquisto a punti fino a 32, la serie normale, la serie d'élite. Chi non rientra va su card, scheda per scheda. Una scheda può restare fuori solo con una riga che lo dichiara come scelta del DM.
+
+**Conseguenze.** Le bocciate scendono da 21 a 1 (Grimjaw, che entra dopo la #517). Il bonus razziale alle abilità delle creature coi dadi vita razziali entra nel conto voce per voce (`[razze_dv]` in `gradi.toml`). La scheda che cita un .pcg si confronta col .pcg più la razza.
+
+**Limiti dichiarati.** La regola non è un cancello: la misura sta in `/mnt/project-files/regole-razze-dv-2026-11-20/misura_regola_jfs.py`, fuori dal repo. Il verificatore non conosce l'orog e lo tratta come orco. Gli oggetti di caratteristica si leggono dal testo della scheda.

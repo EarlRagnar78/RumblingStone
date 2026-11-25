@@ -362,9 +362,9 @@ def check_regole_doro(root: Path) -> list[str]:
 
 # ADR-0114: la scheda della skill. Le sezioni nell'ordine di
 # docs/reference/GUIDA-SCHEDE-PROMPT.md; «Vincoli sui fatti» solo nelle skill di
-# contenuto (la presidia test_vincoli_delle_skill.py). Canale testing: qui
-# sono AVVISI, non errori, finché l'audit settimanale non propone di renderli
-# bloccanti (come i cancelli di ADR-0109).
+# contenuto (la presidia test_vincoli_delle_skill.py). Sono ERRORI dal
+# 2026-11-25: stable dopo il canale testing di ADR-0099 (168 run su main a
+# zero avvisi), come i cancelli di ADR-0109.
 SEZIONI_SCHEDA = (
     "Quando no", "Fonti", "Procedura", "Formato d'uscita",
     "Prima di consegnare", "Cancelli deterministici",
@@ -373,8 +373,8 @@ DATA_RE = re.compile(r"\b20\d\d-\d\d-\d\d\b")
 
 
 def check_schede(root: Path) -> list[str]:
-    """Avvisi della scheda skill (ADR-0114): sezioni, date nel corpo, prove."""
-    avvisi: list[str] = []
+    """Errori della scheda skill (ADR-0114): sezioni, date nel corpo, prove."""
+    errori: list[str] = []
     for f in sorted((root / "skills").glob("*/SKILL.md")):
         nome = f.parent.name
         testo = f.read_text(encoding="utf-8")
@@ -384,20 +384,20 @@ def check_schede(root: Path) -> list[str]:
         mancano = [s for s in SEZIONI_SCHEDA
                    if not any(t.startswith(s) for t in titoli)]
         if mancano:
-            avvisi.append(f"skills/{nome}: scheda senza {', '.join(mancano)} (ADR-0114)")
+            errori.append(f"skills/{nome}: scheda senza {', '.join(mancano)} (ADR-0114)")
         presenti = [s for s in SEZIONI_SCHEDA
                     if any(t.startswith(s) for t in titoli)]
         ordine = [next(i for i, t in enumerate(titoli) if t.startswith(s)) for s in presenti]
         if ordine != sorted(ordine):
-            avvisi.append(f"skills/{nome}: sezioni della scheda fuori ordine (ADR-0114)")
+            errori.append(f"skills/{nome}: sezioni della scheda fuori ordine (ADR-0114)")
         date = len(DATA_RE.findall(corpo))
         if date:
-            avvisi.append(f"skills/{nome}: {date} date nel corpo; la storia va nell'ADR (ADR-0114)")
+            errori.append(f"skills/{nome}: {date} date nel corpo; la storia va nell'ADR (ADR-0114)")
         ev = f.parent / "evals"
         n = len([d for d in ev.iterdir() if d.is_dir()]) if ev.is_dir() else 0
         if n < 3:
-            avvisi.append(f"skills/{nome}: {n} casi di prova in evals/, ne servono 3 (ADR-0114)")
-    return avvisi
+            errori.append(f"skills/{nome}: {n} casi di prova in evals/, ne servono 3 (ADR-0114)")
+    return errori
 
 
 def main() -> int:
@@ -413,13 +413,13 @@ def main() -> int:
     root = args.repo_root.resolve()
 
     skill_errors, warnings = check_skills(root)
-    warnings = warnings + check_schede(root)
+    schede_errors = check_schede(root)
     link_errors = check_links(root)
     yaml_errors = check_yaml_data(root)
     routing_errors = check_agents_routing(root)
     orch_errors = check_orchestrazione(root)
     regole_errors = check_regole_doro(root)
-    errors = (skill_errors + link_errors + yaml_errors + routing_errors
+    errors = (skill_errors + schede_errors + link_errors + yaml_errors + routing_errors
               + orch_errors + regole_errors)
     n_skills = len(list((root / "skills").glob("*/SKILL.md")))
 

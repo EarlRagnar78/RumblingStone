@@ -83,6 +83,10 @@ ricerca — non fingere.
    se possibile, script one-off altrimenti).
 2. **UNA fix**, alla causa radice — niente «già che ci sono», niente
    refactoring in bundle.
+   Se la fix porta una libreria o uno strumento nuovo, prima di proporla
+   dichiara il canale e la misura: unstable, testing con versione fissata e
+   misura prima e dopo, stable dopo 14 giorni e 10 run su `main` con l'ok del
+   DM ([ADR-0099](../../plans/adr/ADR-0099-la-piattaforma-ha-tre-canali-come-debian.md)).
 3. **Verifica completa** (`## Prima di consegnare`).
 4. **Se la fix non funziona**: STOP. Conta i tentativi. <3 → torna alla
    Fase 1 coi dati nuovi. **≥3 → il problema è ARCHITETTURALE**: fermati e

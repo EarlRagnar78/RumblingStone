@@ -2,6 +2,7 @@
 
 **Stato**: proposta (2026-11-09)
 **Data**: 2026-11-09
+**Canale (ADR-0099)**: stable dal 2026-11-25, scelta del DM sulla card del 2026-11-25 (*«Tutti e sei, con il codice»*, D8 di [PIANO-PIATTAFORMA-DI-SVILUPPO](../PIANO-PIATTAFORMA-DI-SVILUPPO.md)). 141 run su `main` e 369 run di PR senza rossi; la forma fuori norma è un errore di `validate_lingua.py`, e l'opzione `--d-eufonica` e il suo passo separato escono ([misura](../esperimenti/promozioni-2026-11-25/MISURE.md)).
 **Decisione-fonte**: il DM (Jfs), 2026-11-08, card D3 di PIANO-CODA-DEL-SECONDO-LETTORE: *ad* solo davanti alla stessa vocale, scritta in `editorial-standards.md` e misurata. Il 2026-11-09, Blocco 1 della roadmap: «fai tutte e 3 in ordine di importanza».
 **Rapporti**: applica la regola del DM «si parte dallo standard di fatto, decide la misura». Segue [ADR-0079](ADR-0079-un-secondo-rilevatore-per-la-prosa.md) (LanguageTool come secondo lettore, l'apostrofo come regex del repo) e [ADR-0056](ADR-0056-una-norma-senza-misura-non-esiste.md) (una norma senza misura non esiste). Resta dentro [ADR-0037](ADR-0037-stdlib-only-e-le-sue-eccezioni.md): nessuna dipendenza nuova.
 
@@ -38,6 +39,8 @@ legge come errore ma **non blocca** (`continue-on-error`). Promozione a stable
 proposta dal **2026-11-24**, alle condizioni di ADR-0099: 14 giorni e 10 corse
 della CI su `main`, nessun falso allarme non spiegato. Quel giorno si toglie
 `continue-on-error` e `--d-eufonica` diventa il comportamento di sempre.
+
+Fatto il 2026-11-25, con la scelta del DM D8 di PIANO-PIATTAFORMA-DI-SVILUPPO: l'opzione è uscita insieme al passo.
 
 Il corpus a zero e la misura qui sotto non bastano a saltare il canale: dicono
 che la regex non sbaglia sui testi di oggi, non su quelli che si scriveranno.
@@ -144,7 +147,7 @@ codice fino in fondo, la regola stdlib no.
   congiunzione a fine riga restano coperti dai test, non dal banco.
 - Il marchio `sic` è a mano: una citazione non marcata viene segnalata. Oggi nel
   corpus non ce n'è nessuna.
-- Il canale non cambia: testing fino al 2026-11-24.
+- Il canale non cambia: testing fino al 2026-11-24. Salito a stable il 2026-11-25 (intestazione).
 
 **Da rivedere se**: il banco scende sotto il 100% dopo una modifica; markdown-it-py
 cambia la lettura dei blocchi rientrati in una versione nuova (si vede dal banco).

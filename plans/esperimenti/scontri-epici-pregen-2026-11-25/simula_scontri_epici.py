@@ -80,7 +80,31 @@ danni, +2 pf per DV; la CA e' quella ricostruita con la regola intera.
 Ogni riga ha il suo seme (--seme, il titolo dello scenario, gli eroi): una
 correzione a uno scenario non sposta le cifre degli altri.
 
+Il punto eroe (--punto-eroe, card del DM del 2026-11-25, «gesto da leggenda»):
+regola opzionale di PF1e (Advanced Player's Guide, «Hero Points»,
+https://www.d20pfsrd.com/gamemastering/other-rules/hero-points/). Ogni eroe
+ne ha UNO per i tre giorni d'assedio. L'opzione stampa un confronto sulle
+righe principali, con ogni eroe che spende il suo punto in quello scontro:
+e' il massimo che quella politica puo' dare su quello scontro, non la media
+dei tre giorni, perche' chi lo spende contro il sergente non lo ha piu'
+contro Gorthak. Tre politiche, una alla volta:
+- «bonus» (Bonus): +8 di fortuna, dichiarato prima, al primo tiro per colpire
+  dell'eroe contro il comandante; vale per quel d20 soltanto, e non per il
+  tiro di conferma del critico, che e' un altro d20;
+- «azione» (Extra Action, azione standard): nel primo turno in cui l'eroe
+  attacca, un attacco in piu' al bonus piu' alto, sullo stesso bersaglio;
+  Dara una freccia in piu' a +17; Ragnhild, nel suo primo turno, una palla di
+  fuoco in piu' (10d6, CD 22) se nessun nano e' in mischia, se no tre raggi
+  roventi in piu';
+- «movimento» (Extra Action, azione di movimento): nel turno in cui l'eroe
+  si muove per arrivare al nemico fa tutti i suoi attacchi invece di uno
+  solo (il movimento e' l'azione in piu', e gli resta il round intero); Dara
+  e Ragnhild, che non si muovono, non lo spendono.
+Senza --punto-eroe l'uscita e' quella di sempre, byte per byte: il punto non
+tira dadi e non cambia la sequenza dei tiri.
+
 Uso: python3 simula_scontri_epici.py [--n 4000] [--seme 7] [--eroi-primi]
+     python3 simula_scontri_epici.py --punto-eroe [--n 4000] [--seme 7] [--eroi-primi]
 """
 import argparse
 import math
@@ -89,17 +113,19 @@ import statistics
 
 R = random.Random(7)
 EROI_PRIMI = False  # --eroi-primi: il limite dei primi quattro giri, per confronto
+PUNTO = None  # --punto-eroe: None, "bonus", "azione" o "movimento"
 
 
 def d(n, f):
     return sum(R.randint(1, f) for _ in range(n))
 
 
-def colpo(bonus, ca, dadi, fisso, minaccia=20, molt=2, extra=None):
+def colpo(bonus, ca, dadi, fisso, minaccia=20, molt=2, extra=None, fortuna=0):
     """Un attacco. Ritorna i danni (0 se manca). extra: dadi in piu' che non
-    si moltiplicano (furtivo, Colpo Devastante)."""
+    si moltiplicano (furtivo, Colpo Devastante). fortuna: il +8 del punto
+    eroe, sul tiro per colpire e non sulla conferma del critico."""
     t = R.randint(1, 20)
-    if t == 1 or (t != 20 and t + bonus < ca):
+    if t == 1 or (t != 20 and t + bonus + fortuna < ca):
         return 0
     n, f = dadi
     crit = t >= minaccia and (R.randint(1, 20) + bonus >= ca)
@@ -210,8 +236,20 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
         if e["pfcur"] <= 0:
             caduti.add(e["nome"])
 
+    def spende(e, politica):
+        """True una volta sola, se la politica e' quella in prova."""
+        if PUNTO != politica or e.get("_punto"):
+            return False
+        e["_punto"] = True
+        return True
+
+    def fortuna(e):
+        return 8 if spende(e, "bonus") else 0
+
     def attacca_eroe(e, b, colpi):
         su_boss = b is boss
+        if spende(e, "azione"):
+            colpi = list(colpi) + [e["melee"][0]]
         altro = e["nome"] != "Yrsa"
         bonus_sfida = 4 if (sfida() and altro and su_boss) else 0
         ca_b = b.ca - (2 if (sfida() and altro and su_boss) else 0)
@@ -223,7 +261,8 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
                 e["_dev"] = e.get("_dev", 0) + 1
                 extra = (4, 6)
             f = fisso + (e["sfida"] if (e.get("sfida") and su_boss) else 0)
-            b.danno(colpo(bon + bonus_sfida - e["_pres"], ca_b, dadi, f, mn, ml, extra))
+            b.danno(colpo(bon + bonus_sfida - e["_pres"], ca_b, dadi, f, mn, ml, extra,
+                          fortuna=fortuna(e) if su_boss else 0))
 
     def turno_eroe(e, rnd):
         vivi = [n for n in nemici if not n.giu and n.entra <= rnd]
@@ -232,6 +271,13 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
         guardie = scorte_vive(rnd) if getattr(boss, "guardato", False) else []
         cop = 4 if guardie else 0  # la guardia da' copertura a chi sta dietro
         if e.get("maga"):
+            if spende(e, "azione"):
+                if not in_mischia():
+                    for n in vivi:
+                        n.danno(riflessi(d(10, 6), n.rifl, 22, getattr(n, "eludere", False)), fuoco=True)
+                else:
+                    for _ in range(3):
+                        boss.danno(colpo(8, getattr(boss, "contatto", 11) + cop, (4, 6), 0), fuoco=True)
             if ragn_apre and not e.get("_aperto") and not in_mischia():
                 e["_aperto"] = True
                 for n in vivi:
@@ -243,7 +289,8 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
             elif e.get("_raggi", 0) < 2:
                 e["_raggi"] = e.get("_raggi", 0) + 1
                 for _ in range(3):  # raggio rovente: tre raggi, 4d6, contatto a distanza +8
-                    boss.danno(colpo(8, getattr(boss, "contatto", 11) + cop, (4, 6), 0), fuoco=True)
+                    boss.danno(colpo(8, getattr(boss, "contatto", 11) + cop, (4, 6), 0,
+                                     fortuna=fortuna(e)), fuoco=True)
             elif e.get("_dardi", 0) < 3:
                 e["_dardi"] = e.get("_dardi", 0) + 1
                 boss.danno(25 if e["_dardi"] == 1 else d(5, 4) + 5)  # il primo massimizzato, LI 13
@@ -251,8 +298,9 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
         if e.get("arco"):
             gb = 4 if giganti else 0
             gc = 0 if dara_srd else gb  # SRD 3.5: il nemico prescelto solo ai danni
-            for bon in (17, 17, 12, 7):
-                boss.danno(colpo(bon + gc - dist, boss.ca + cop, (1, 8), 6 + gb, 20, 3))
+            frecce = (17, 17, 12, 7) + ((17,) if spende(e, "azione") else ())
+            for bon in frecce:
+                boss.danno(colpo(bon + gc - dist, boss.ca + cop, (1, 8), 6 + gb, 20, 3, fortuna=fortuna(e)))
             return
         colpi = e["melee"]
         if sportello:
@@ -267,7 +315,8 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
                     ferisci(e, colpo(bon2, e["ca"], dadi2, f2, mn2, ml2))
                     if e["pfcur"] <= 0:
                         return
-                colpi = colpi[:1]
+                if not spende(e, "movimento"):
+                    colpi = colpi[:1]
             attacca_eroe(e, boss, colpi)
             return
         tutte = [n for n in nemici if n.ruolo == "scorta"]
@@ -276,7 +325,8 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
             # la rampa chiusa: prima si abbatte una guardia
             if not e.get("_mischia"):
                 e["_mischia"] = True
-                colpi = colpi[:1]
+                if not spende(e, "movimento"):
+                    colpi = colpi[:1]
             attacca_eroe(e, guardie[0], colpi)
             return
         if not e.get("_sul_boss"):
@@ -286,9 +336,11 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
                     ferisci(e, colpo(bon2, e["ca"], dadi2, f2, mn2, ml2))
                     if e["pfcur"] <= 0:
                         return
-                colpi = colpi[:1]
+                if not spende(e, "movimento"):
+                    colpi = colpi[:1]
             elif not (muro and e.get("_mischia")):
-                colpi = colpi[:1]  # si avvicina: un attacco solo
+                if not spende(e, "movimento"):
+                    colpi = colpi[:1]  # si avvicina: un attacco solo
             e["_mischia"] = e["_sul_boss"] = True
         attacca_eroe(e, boss, colpi)
 
@@ -580,15 +632,85 @@ LIMITI = """## Limiti delle prove
   cifra si muove di un punto o due da un seme all'altro."""
 
 
+# --- il punto eroe (PF1e, APG): le righe principali, oggi e col punto ---
+RIGHE_PUNTO = [
+    ("Sergente, oggi (A.4; la scorta non entra)", [["Harbek"], ["Nala"], ["Borin"], ["Yrsa"]]),
+    ("Sergente, versione piu' dura: Avanzato + 2 veterani di guardia, si aggirano, dal round 1",
+     [["Harbek"], ["Nala"], ["Borin"], ["Yrsa"]]),
+    ("Gorthak, oggi, con lo sportello", [["Borin", "Yrsa"], ["Yrsa", "Borin"]]),
+    ("Grimjaw e quattro orog, oggi: la guardia si aggira", [["Borin", "Yrsa"]]),
+    ("Grimjaw e quattro orog, variante: la rampa chiusa, se ne abbatte uno", [["Borin", "Yrsa"]]),
+]
+POLITICHE = [(None, "oggi, senza punto"), ("bonus", "+8 al primo tiro per colpire sul comandante"),
+             ("azione", "un'azione standard in piu'"), ("movimento", "un'azione di movimento in piu'")]
+
+LIMITI_PUNTO = """## Come leggere queste cifre
+
+- Ogni eroe ha UN punto per i tre giorni d'assedio, non uno per scontro. Qui
+  ogni eroe della riga lo spende in quello scontro: la differenza e' il
+  massimo che quella politica puo' dare su quello scontro, e sui tre giorni
+  l'effetto e' piu' piccolo. Chi lo spende contro il sergente non lo ha piu'
+  contro Gorthak o Grimjaw.
+- Le tre politiche si provano una alla volta: un punto, un uso.
+- La riga «oggi, senza punto» ha lo stesso seme di `esito_simulazione.md` (o
+  di `esito_eroi_primi.md` con --eroi-primi) e da' le stesse cifre. Le righe
+  col punto partono dallo stesso seme, ma i tiri divergono dal primo colpo:
+  una differenza di uno o due punti e' rumore.
+- Il +8 vale su un d20 solo: il tiro per colpire, non la conferma del
+  critico. Speso dopo il tiro varrebbe +4, e non e' provato.
+- Non provati: Agire fuori turno, Ripetere il tiro, Richiamare un
+  incantesimo o un uso giornaliero, l'uso Speciale. Ingannare la morte costa
+  due punti e nessun eroe li ha.
+- Valgono tutti i limiti di `esito_simulazione.md`."""
+
+
+def confronto_punto_eroe(n, seme, eroi_primi):
+    global PUNTO
+    scenari = {t: (fn, g) for t, fn, _c, g in SCENARI}
+    print(f"# Il punto eroe: {n} duelli per riga, seme {seme}"
+          + (", gli eroi agiscono per primi" if eroi_primi else "") + "\n")
+    print("Regola opzionale di PF1e (Advanced Player's Guide, «Hero Points»): "
+          "https://www.d20pfsrd.com/gamemastering/other-rules/hero-points/\n")
+    for titolo, combo in RIGHE_PUNTO:
+        fn, giganti = scenari[titolo]
+        print(f"## {titolo}\n")
+        print("| eroi | politica | il comandante fugge | diff. | al primo round | diff. | un eroe a terra | diff. |")
+        print("|---|---|---|---|---|---|---|---|")
+        for c in combo:
+            base = None
+            for politica, nome in POLITICHE:
+                PUNTO = politica
+                R.seed(f"{seme}|{titolo}|{'+'.join(c)}")
+                res = [duello(fn, c, giganti=bool(giganti)) for _ in range(n)]
+                fuga = [r for r in res if r["fuga"]]
+                v = (len(fuga) / n, sum(1 for r in fuga if r["round"] == 1) / n,
+                     sum(1 for r in res if r["caduti"] > 0) / n)
+                if base is None:
+                    base = v
+                    print(f"| {' + '.join(c)} | {nome} | {v[0]:.0%} | | {v[1]:.0%} | | {v[2]:.0%} | |")
+                else:
+                    dd = [f"{round(x * 100) - round(b * 100):+d}" for x, b in zip(v, base)]
+                    print(f"| {' + '.join(c)} | {nome} | {v[0]:.0%} | {dd[0]} | {v[1]:.0%} | {dd[1]} | {v[2]:.0%} | {dd[2]} |")
+        print()
+    PUNTO = None
+    print(LIMITI_PUNTO)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=4000)
     ap.add_argument("--seme", type=int, default=7)
     ap.add_argument("--eroi-primi", action="store_true",
                     help="gli eroi agiscono sempre prima dei nemici (confronto col quarto giro)")
+    ap.add_argument("--punto-eroe", action="store_true",
+                    help="confronto sulle righe principali: ogni eroe spende in quello scontro "
+                         "il suo punto eroe PF1e (tre politiche, una alla volta)")
     a = ap.parse_args()
     global EROI_PRIMI
     EROI_PRIMI = a.eroi_primi
+    if a.punto_eroe:
+        confronto_punto_eroe(a.n, a.seme, a.eroi_primi)
+        return
     print(f"# {a.n} duelli per riga, seme {a.seme}" + (", gli eroi agiscono per primi" if a.eroi_primi else "") + "\n")
     print("## EL (DMG 3.5)\n")
     print("| scontro | EL prima | EL dopo |")

@@ -1253,6 +1253,81 @@ Poderoso, che la domanda sulla Concentrazione Furiosa non tocca
 *palla di fuoco* è 22). La *palla di fuoco* rapida non è un secondo gesto:
 il round di battaglia ne ha uno.
 
+**Il gesto da leggenda: un punto eroe a testa** `[CANONE — DM 2026-11-25,
+card «gesto da leggenda»]`. Vale in `ARC08-DEF-1` e in `ARC08-DEF-2`, ed è
+scritto solo qui. Ognuno dei sei eroi ha **un punto eroe**, uno solo per
+tutto l'assedio. È la regola opzionale dei punti eroe di Pathfinder 1e
+(*Advanced Player's Guide*, «Hero Points», OGL:
+<https://www.d20pfsrd.com/gamemastering/other-rules/hero-points/>), adottata
+per i pregen: ⚠️ non SRD 3.5, che i punti eroe non li ha (ADR-0118). Dalla
+fonte vengono il punto di partenza e gli usi. I punti in più che la fonte dà
+a ogni livello e per premio qui non ci sono: nessun eroe ne ha un secondo.
+Il punto speso non torna, né con la notte né col riposo, come nella fonte.
+Spenderlo non costa un'azione, e in un round se ne spende al più uno.
+
+| Uso | Cosa dà, coi numeri della fonte |
+|---|---|
+| **Bonus** | **+8** di fortuna a un tiro di d20, dichiarato **prima** di tirare; **+4** se dichiarato dopo. Dato a un compagno che è nello stesso posto e che l'eroe può aiutare davvero: **+4** prima, **+2** dopo |
+| **Azione in più** (*Extra Action*) | nel proprio turno, un'azione standard oppure un'azione di movimento in più |
+| **Agire fuori turno** (*Act Out of Turn*) | l'eroe fa subito il suo turno, come un'azione preparata: la sua iniziativa passa appena prima di chi sta agendo, e in quel turno ha solo un'azione standard o una di movimento |
+| **Ripetere** (*Reroll*) | ritira un d20 appena tirato, e tiene il secondo tiro anche se è peggiore |
+| **Richiamare** (*Recall*) | riprende un incantesimo già lanciato, o un uso in più di una capacità che si ricarica ogni giorno |
+| **Ispirazione** (*Inspiration*) | chiede al DM un indizio su cosa fare; se il DM non ha niente da dare, il punto non è speso |
+| **Speciale** (*Special*) | chiede al DM di tentare una cosa quasi impossibile. La fonte dà per esempio un incantesimo di un livello più alto del massimo, un colpo che acceca, un colpo che ignora la riduzione del danno. Decide il DM, sempre con una prova difficile o una penalità al tiro, e su quel tentativo nessuno spende altri punti |
+| **Ingannare la morte** (*Cheat Death*) | costa **due** punti: con un punto a testa nessun eroe può usarlo |
+
+Il +8 è un bonus di fortuna: non si somma al +1 di fortuna della *preghiera*
+di Harbek (SRD, Prayer), vale il più alto. Vale per un d20 solo: messo sul
+tiro per colpire non passa al tiro che conferma il critico.
+
+**Sulla griglia** valgono tutti gli usi della tabella. **Nel round di
+battaglia del libretto** il punto vale sul d20 del gesto Combattere: +8
+dichiarato prima, +4 dopo, oppure quel d20 si ritira. Richiamare ridà
+l'incantesimo speso per il gesto Incantesimo. Gli altri usi lì non valgono:
+il round di battaglia non ha turni, e ha un gesto solo (domanda 5).
+
+**Cosa il punto non fa.** Non vale sui dadi rossi e bianchi dei reparti, e
+quindi non annulla una tacca né una breccia (libretto §7): quello lo fanno
+le trappole. Non toglie il Re dagli 8 pf con cui arriva al Cuore, che sono
+un punto fisso `[CANONE — DM 2026-10-22]` (`ARC08-DEF-2`, Scena 6, «Il conto
+del Re»; `ARC07-DEF-5`, Scena 2): nemmeno l'uso Speciale li sposta. Il Re e
+gli altri PNG non hanno punti, perché la fonte li dà solo ai personaggi dei
+giocatori. Un eroe morto porta via il suo punto.
+
+**Quanto pesa.** Le prove
+(`plans/esperimenti/scontri-epici-pregen-2026-11-25/esito_punto_eroe.md`,
+4.000 duelli per riga, seme 7) fanno spendere il punto a ogni eroe della
+riga in quello scontro. Il punto però è uno per tutto l'assedio: ogni cifra
+è il massimo che quell'uso può dare su quello scontro, e chi lo spende
+contro il sergente non lo ha più contro Gorthak. In ogni casella, quante
+volte su cento il comandante fugge e quante un eroe va a terra.
+
+| Scontro | Eroi | Oggi | +8 al primo tiro per colpire sul comandante | Un'azione standard in più | Un'azione di movimento in più |
+|---|---|---|---|---|---|
+| il sergente di oggi | Harbek | 100 · 0 | 100 · 0 | 100 · 0 | 100 · 0 |
+| | Nala | 92 · 7 | 94 · 6 | 95 · 5 | 93 · 7 |
+| | Borin | 100 · 0 | 100 · 0 | 100 · 0 | 100 · 0 |
+| | Yrsa | 100 · 0 | 100 · 0 | 100 · 0 | 100 · 0 |
+| il sergente più duro | Harbek | 64 · 37 | 70 · 31 | 73 · 28 | 68 · 33 |
+| | Nala | 19 · 82 | 24 · 78 | 32 · 69 | 26 · 76 |
+| | Borin | 100 · 0 | 100 · 0 | 100 · 0 | 100 · 0 |
+| | Yrsa | 100 · 0 | 100 · 0 | 100 · 0 | 100 · 0 |
+| Gorthak | Borin, poi Yrsa | 99 · 71 | 100 · 67 | 100 · 58 | 100 · 55 |
+| | Yrsa, poi Borin | 99 · 19 | 99 · 17 | 100 · 11 | 100 · 11 |
+| Grimjaw, la rampa aperta | Borin e Yrsa | 93 · 39 | 96 · 32 | 98 · 18 | 98 · 19 |
+| Grimjaw, la rampa chiusa | Borin e Yrsa | 75 · 85 | 79 · 82 | 84 · 69 | 85 · 66 |
+
+Il +8 sposta poco, da 0 a 7 punti, perché Borin e Yrsa colpiscono già quasi
+sempre. L'azione in più pesa di più: contro Grimjaw toglie fino a 21 punti
+agli eroi a terra, contro Gorthak fino a 16. A Borin e a Yrsa contro il
+sergente il punto non cambia l'esito ma il tempo: con un'azione standard in
+più Borin lo mette in fuga al primo round 84 volte su cento invece di 50, e
+30 invece di 6 contro il più duro; Yrsa 83 invece di 39. Nala da sola contro
+il sergente più duro va a terra 69 volte su cento anche col suo uso
+migliore. L'azione di movimento in più è l'eroe che arriva sul nemico e fa
+nello stesso turno tutti i suoi attacchi. Una differenza di uno o due punti
+è rumore dei dadi. Il punto non cambia l'EL di nessuno scontro.
+
 Un eroe morto nella ricognizione lascia la sua squadra al giocatore, senza
 gesto (Handout 0).
 
@@ -1520,6 +1595,17 @@ si chiudono sull'ultimo nano. Poi la notte (Scena 9).
    i veterani restano in F10 e G10, come nelle prove; MAPPA 1D, la griglia:
    con un veterano in E10 chi passa da D9 lascia un quadretto minacciato, ma
    restano il giro da sud, per D12 ed E12, e quello da est]`
+5. `[INFERRED — Nel round di battaglia del libretto il punto eroe vale solo
+   sul d20 del gesto Combattere (+8 prima, +4 dopo, o si ritira), più
+   Richiamare?; base: è il default finché il DM non decide: sì; libretto §5,
+   un gesto a round; fonte PF1e, il bonus va «a un tiro di d20»]`
+6. `[INFERRED — Il punto eroe è uno solo per le due serate coi pregen, dalla
+   ricognizione alla porta di mithral?; base: è il default finché il DM non
+   decide: sì, e chi lo spende stasera non lo ha nell'assedio; card del
+   2026-11-25, «un punto a testa per i tre giorni d'assedio»]`
+7. `[INFERRED — I due eroi mossi dal DM spendono il loro punto eroe?; base:
+   è il default finché il DM non decide: no, il punto lo spende solo un
+   giocatore; ARC08-01, «combatte e aiuta, ma non ruba la scena»]`
 
 ### SCENA 9 — 1E · I presagi funesti
 

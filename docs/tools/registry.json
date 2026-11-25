@@ -9333,7 +9333,7 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/controlla_marche.py --base origin/main",
-      "summary": "I due cancelli delle marche sulle righe cambiate (ADR-0109, scheda 4): una marca INFERRED aggiunta senza domanda e base, e un INFERRED tolto senza CANONE, GENERATO o blocco storico nello stesso file. Guarda solo il diff contro la base; salta plans/, changelog, righe di regola e volumi di stampa. Canale testing: in CI avvisa e non blocca.",
+      "summary": "I due cancelli delle marche sulle righe cambiate (ADR-0109, scheda 4): una marca INFERRED aggiunta senza domanda e base, e un INFERRED tolto senza CANONE, GENERATO o blocco storico nello stesso file. Guarda solo il diff contro la base; salta plans/, changelog, righe di regola e volumi di stampa. Bloccante in CI sulle PR dal 2026-11-25, dopo il canale testing di ADR-0099.",
       "stability": "beta",
       "stdlib_only": true,
       "external_bins": [

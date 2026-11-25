@@ -13,9 +13,9 @@ Fuori dai controlli, come per `inventory_inferred.py`: `plans/` e i changelog
 (storia), le righe di regola e i modelli (meta), i volumi di stampa generati
 (`.hb.md`, `.html`), dove le marche si tolgono apposta.
 
-Canale testing (ADR-0099): in CI gira con `continue-on-error`; dopo due
-settimane l'audit settimanale propone di renderlo bloccante, contando i falsi
-positivi (ADR-0109, scheda 4).
+Bloccante in CI sulle PR dal 2026-11-25 (ADR-0109, scheda 4): è salito dal
+canale testing di ADR-0099 dopo 510 run di PR con 3 rossi, tutti difetti veri
+(D8 di PIANO-PIATTAFORMA-DI-SVILUPPO).
 
 Uso
   python3 scripts/controlla_marche.py --base origin/main

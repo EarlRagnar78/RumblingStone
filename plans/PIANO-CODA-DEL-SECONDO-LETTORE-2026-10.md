@@ -72,7 +72,7 @@ cercare chi compila quel file (`extract_scene_prompts`?) prima di correggere a
 mano, altrimenti la prossima generazione lo rifà. Non urgente per il tavolo: sono
 prompt per le immagini.
 
-**4. La *d* eufonica ✅ (decisa il 2026-11-08, D3; chiusa il 2026-11-09, [ADR-0120](adr/ADR-0120-la-d-eufonica-si-misura-con-una-regex-tarata-su-languagetool.md)).** Norma in `editorial-standards.md` §4, riga nel REGISTRO, conto a zero in `validate_lingua.py --d-eufonica` (canale testing, non bloccante fino al 2026-11-24) tarato su LanguageTool ST_03_001 (`plans/esperimenti/d-eufonica-2026-11-09/RISULTATO.md`); 58 righe corrette in 42 file. Era: *legato a Aegis Fang*, *a area*: il repo non
+**4. La *d* eufonica ✅ (decisa il 2026-11-08, D3; chiusa il 2026-11-09, [ADR-0120](adr/ADR-0120-la-d-eufonica-si-misura-con-una-regex-tarata-su-languagetool.md)).** Norma in `editorial-standards.md` §4, riga nel REGISTRO, conto a zero in `validate_lingua.py --d-eufonica` (canale testing, non bloccante fino al 2026-11-24; bloccante dal 2026-11-25 nel passo della lingua, e l'opzione è uscita) tarato su LanguageTool ST_03_001 (`plans/esperimenti/d-eufonica-2026-11-09/RISULTATO.md`); 58 righe corrette in 42 file. Era: *legato a Aegis Fang*, *a area*: il repo non
 ha una norma. Se il DM la vuole (*ad* solo davanti alla stessa vocale), va
 scritta in `editorial-standards.md`, registrata in
 `skills/REGISTRO-NORME-EDITORIALI.md` e misurata; altrimenti resta com'è. Una

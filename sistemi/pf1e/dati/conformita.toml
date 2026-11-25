@@ -18,13 +18,16 @@ mezzi_dopo_il_primo = "su"
 
 [conti]
 # Bloccanti nel cancello dei moduli. Uguali in PF1e: CA come somma,
-# Iniziativa Migliorata +4, CD 10 + ½ DV + mod.
-fatti = ["pf", "CA", "prosa", "iniziativa", "attacco", "CD", "ereditate"]
-# ADR-0119: i conti nuovi entrano qui, il cancello li stampa come avviso
-# (⚠) e non blocca; passano in `fatti` con la promozione (testing → stable).
-in_prova = ["BMC", "DMC", "BAB", "TS", "contatto_sprovvista", "iniziativa_recinto",
-            "schivare", "scurovisione", "visione_crepuscolare", "corrompere_acqua", "incanalare",
-            "pf_bonus", "pf_misti", "cd_incantesimi"]
+# Iniziativa Migliorata +4, CD 10 + ½ DV + mod. Gli ultimi 14 (ADR-0119) sono
+# passati da `in_prova` il 2026-11-25 (testing → stable, ADR-0099): 145 run su
+# main e 420 di PR senza un avviso (plans/esperimenti/promozioni-2026-11-25/).
+fatti = ["pf", "CA", "prosa", "iniziativa", "attacco", "CD", "ereditate",
+         "BMC", "DMC", "BAB", "TS", "contatto_sprovvista", "iniziativa_recinto",
+         "schivare", "scurovisione", "visione_crepuscolare", "corrompere_acqua", "incanalare",
+         "pf_bonus", "pf_misti", "cd_incantesimi"]
+# ADR-0119: un conto nuovo entra qui, il cancello lo stampa come avviso (⚠) e
+# non blocca (con --severo blocca); passa in `fatti` con la promozione.
+in_prova = []
 
 [conti.mancanti]
 # Nessuno: la card F4 3 del 2026-11-08 («lo dice e salta il conto») è chiusa

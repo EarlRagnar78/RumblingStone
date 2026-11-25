@@ -112,5 +112,40 @@ class TestOgniProvaGiraDavvero(unittest.TestCase):
                          "(emendamento 2026-09-21 ad ADR-0037)")
 
 
+def giri_pytest_del_job(ci: Path, job: str = "validate") -> "list[str]":
+    """Le righe `python -m pytest scripts/tests …` dei passi del `job` in `ci.yml`."""
+    import yaml
+    dati = yaml.safe_load(ci.read_text(encoding="utf-8"))
+    righe = []
+    for passo in dati["jobs"][job].get("steps", []):
+        for riga in str(passo.get("run", "")).splitlines():
+            if "-m pytest scripts/tests" in riga:
+                righe.append(riga.strip())
+    return righe
+
+
+class TestLaCiGiraLaSuiteIntera(unittest.TestCase):
+    """pytest-xdist e' stable dal 2026-11-25 (ADR-0099): il job principale gira
+    la suite in due giri, in parallelo e poi in serie i moduli che scrivono nel
+    repo (conftest.py). Insieme devono fare la suite intera: un giro che manca, o
+    un filtro che non e' il complemento dell'altro, lascerebbe prove fuori."""
+
+    def test_i_due_giri_del_job_principale_sono_complementari(self):
+        import shlex
+        giri = giri_pytest_del_job(ROOT / ".github" / "workflows" / "ci.yml")
+        filtri = {}
+        for g in giri:
+            a = shlex.split(g)
+            m = a[a.index("-m", a.index("pytest")) + 1] if a.count("-m") > 1 else ""
+            filtri[m] = "-n" in a
+        self.assertEqual(set(filtri), {"not scrive_nel_repo", "scrive_nel_repo"}, giri)
+        self.assertTrue(filtri["not scrive_nel_repo"], "il primo giro e' quello parallelo (-n auto)")
+        self.assertFalse(filtri["scrive_nel_repo"], "i moduli che scrivono nel repo girano in serie")
+
+    def test_il_marcatore_e_quello_di_conftest(self):
+        conftest = (TESTS / "conftest.py").read_text(encoding="utf-8")
+        self.assertIn("pytest.mark.scrive_nel_repo", conftest)
+
+
 if __name__ == "__main__":  # pragma: no cover
     unittest.main()

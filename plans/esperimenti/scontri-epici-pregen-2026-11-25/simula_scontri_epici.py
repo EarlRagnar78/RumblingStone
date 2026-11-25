@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Simula i duelli dei pregen di ARC-08 (DEF-1 Scena 8, DEF-2 Scene 2 e 4),
-con le schede di oggi e con l'archetipo Avanzato. Quinto giro, 2026-11-25.
+con le schede di oggi e con l'archetipo Avanzato. Sesto giro, 2026-11-25.
 
 Modello semplice, 3.5 (Yrsa PF1e):
 - iniziativa tirata, d20 + il bonus della scheda, un turno per creatura;
@@ -18,13 +18,23 @@ Modello semplice, 3.5 (Yrsa PF1e):
   prende il suo attacco d'opportunita' e in quel turno fa un attacco solo;
   Nala lo evita con Acrobazia +9 contro CD 15. Nella variante «rampa chiusa»
   una guardia va abbattuta prima;
+- il comandante (il sergente, Grimjaw) fa l'attacco completo solo a chi gli
+  e' adiacente, non a chi sta colpendo una guardia: con la rampa chiusa
+  Grimjaw e' dietro gli orog, e finche' nessuno lo raggiunge tira solo su
+  chi lancia dalla cinta. Le guardie colpiscono chiunque sia in mischia;
+- i veterani del sergente, nella versione piu' dura, al round 1 restano in
+  F10-G10 (ARC08-DEF-1, «Sfidare il sergente, round per round»): in quel
+  round hanno solo l'attacco d'opportunita', e dal round 2 attaccano in
+  pieno;
 - il ponte di Gorthak (MAPPA 2A): un eroe esce a round dallo sportello,
   prende l'attacco d'opportunita' di Gorthak (Nala lo evita con Acrobazia) e
   fa un attacco solo; il primo va in BG75, dove arrivano tutti e due i
   troll, il secondo in BG74, dove ne arriva uno; i troll entrano al round 2;
 - Gorthak (ettin, SRD: Superior Two-Weapon Fighting): Forza piena su tutti e
-  due i randelli, 2d6+10 e 2d6+10; la scheda di ARC08-01 da' 2d6+5 al
-  secondo, e c'e' uno scenario con quella lettura. La testa sinistra da' +2
+  due le armi, 2d6+10 e 2d6+10 (le stelle del mattino Grandi dell'ettin
+  SRD; la scheda di ARC08-01 le chiama randelli); la scheda da' 2d6+5 alla
+  seconda, e c'e' uno scenario con quella lettura, e uno coi randelli
+  Grandi dell'SRD, 1d8+10. La testa sinistra da' +2
   ai danni del primo colpo a segno del round (scheda). Divide i colpi: il
   primo randello su Borin se c'e', l'altro sul piu' ferito degli altri;
 - Grimjaw: al round 1 non attacca; dal suo turno del round 2 e' in Furia
@@ -39,10 +49,11 @@ Modello semplice, 3.5 (Yrsa PF1e):
   gli altri: Sfida Pressante) vale da quando Yrsa e' accanto al bersaglio;
 - Dara: Tiro Rapido +17/+17/+12/+7; il nemico prescelto (+4 contro i
   giganti) e' contato a colpire e ai danni come sulla scheda di campagna;
-  l'SRD 3.5 lo da' solo ai danni;
+  l'SRD 3.5 lo da' solo ai danni, e c'e' uno scenario con quella lettura;
 - Ragnhild lancia dalla cinta. Se apre, i nani ritardano finche' non ha
   lanciato le due palle di fuoco (ritardata 13d6 CD 26, rapida 10d6 CD 22).
-  Poi, coi nani in mischia, due raggi roventi e i dardi incantati; senza
+  Poi, coi nani in mischia, due raggi roventi e i dardi incantati (il primo
+  massimizzato: cinque dardi al LI 13, 25 danni); senza
   nani in mischia, una palla di fuoco a round (10d6, CD 22);
 - chi tira o lancia dalla cinta non e' raggiunto in mischia. Gorthak, se non
   ha un nano accanto, lancia un giavellotto a round su Ragnhild (+10 al
@@ -54,11 +65,20 @@ vive colpiscono l'eroe piu' ferito fra quelli in mischia (il caso peggiore);
 la CA di Gorthak in Furia non conta (fugge alla fine di quel round); gli
 incantesimi di Harbek e Nala non ci sono; le leve della Sessione 1 (+2 e +4
 a colpire contro Gorthak) non ci sono; i giganti e gli archi dei veterani
-non tirano su chi sta sulla cinta.
+non tirano su chi sta sulla cinta; Grimjaw dietro gli orog non tira con
+l'arco sui nani in mischia.
+Quello che manca agli eroi: la Presenza Comandante di Borin, l'Ispirare
+Coraggio di Nala, la Postura di Borin. Sono assenze che pendono contro gli
+eroi: al tavolo i nani fanno un po' meglio di queste cifre. Manca anche il
++2 della testa sinistra di Gorthak sull'attacco d'opportunita', che pende
+dall'altra parte, di poco.
 
 Numeri: ARC08-01, ARC08-02 §3, Appendici A di ARC08-DEF-1 e ARC08-DEF-2,
 Bestiario. L'archetipo semplice Avanzato di PF1e: +2 a tutti i tiri e ai
 danni, +2 pf per DV; la CA e' quella ricostruita con la regola intera.
+
+Ogni riga ha il suo seme (--seme, il titolo dello scenario, gli eroi): una
+correzione a uno scenario non sposta le cifre degli altri.
 
 Uso: python3 simula_scontri_epici.py [--n 4000] [--seme 7] [--eroi-primi]
 """
@@ -137,7 +157,7 @@ def eroe(nome):
     return e
 
 
-def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True):
+def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dara_srd=False):
     nemici = nemici_fn()
     boss = [n for n in nemici if n.ruolo == "boss"][0]
     eroi = [eroe(n) for n in eroi_nomi]
@@ -226,12 +246,13 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True):
                     boss.danno(colpo(8, getattr(boss, "contatto", 11) + cop, (4, 6), 0), fuoco=True)
             elif e.get("_dardi", 0) < 3:
                 e["_dardi"] = e.get("_dardi", 0) + 1
-                boss.danno(30 if e["_dardi"] == 1 else d(5, 4) + 5)
+                boss.danno(25 if e["_dardi"] == 1 else d(5, 4) + 5)  # il primo massimizzato, LI 13
             return
         if e.get("arco"):
             gb = 4 if giganti else 0
+            gc = 0 if dara_srd else gb  # SRD 3.5: il nemico prescelto solo ai danni
             for bon in (17, 17, 12, 7):
-                boss.danno(colpo(bon + gb - dist, boss.ca + cop, (1, 8), 6 + gb, 20, 3))
+                boss.danno(colpo(bon + gc - dist, boss.ca + cop, (1, 8), 6 + gb, 20, 3))
             return
         colpi = e["melee"]
         if sportello:
@@ -301,6 +322,8 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True):
         bers = in_mischia()
         vivi_lontani = [e for e in lontani if e["pfcur"] > 0]
         if n is boss:
+            # il comandante colpisce solo chi gli e' adiacente
+            bers = [e for e in bers if e.get("_sul_boss")]
             furia = False
             if n.pf < n.fuga:
                 if not getattr(n, "furia", None):
@@ -347,6 +370,8 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True):
                 ferisci(t, d(*n.sbranare[0]) + n.sbranare[1])
             return
         # la scorta
+        if getattr(n, "avanza", False) and getattr(boss, "guardato", False) and rnd == 1:
+            return  # i veterani di guardia restano in F10-G10: solo l'attacco d'opportunita'
         if not bers:
             vivi_m = [e for e in mischia if e["pfcur"] > 0]
             if getattr(n, "avanza", False) and vivi_m:
@@ -395,10 +420,11 @@ A = lambda b, dadi, f, mn=20, ml=2, tag="": (b, dadi, f, mn, ml, tag)
 def sergente(avanzato=False, veterani=0, entra=2, guardia=False):
     def fn():
         k = 2 if avanzato else 0
-        # A.4: CA 21, Riflessi +7; A.4-bis: CA 23 (contatto 12, sprovvista 22), Riflessi +9
+        # A.4: CA 21, Riflessi +7; A.4-bis: CA 23 (contatto 12, sprovvista 22), Riflessi +9;
+        # la mano secondaria con la regola intera (1/2 For): 1d8+3 oggi, 1d8+4 Avanzato
         s = Nemico("sergente", 62 if avanzato else 50, 23 if avanzato else 21,
                    [A(9 + k, (1, 8), 6 + k, 19), A(4 + k, (1, 8), 6 + k, 19),
-                    A(9 + k, (1, 8), 3 + k, 19), A(4 + k, (1, 8), 3 + k, 19)],
+                    A(9 + k, (1, 8), 3 + k // 2, 19), A(4 + k, (1, 8), 3 + k // 2, 19)],
                    rifl=7 + k, iniz=4 + k, fuga=(62 if avanzato else 50) / 2, ruolo="boss")
         s.guardato = guardia
         s.contatto = 12
@@ -412,20 +438,23 @@ def sergente(avanzato=False, veterani=0, entra=2, guardia=False):
     return fn
 
 
-def gorthak(avanzato=False, troll_avanzati=False, sportello=True, scheda=False):
+def gorthak(avanzato=False, troll_avanzati=False, sportello=True, scheda=False, randelli=False):
     def fn():
         k = 2 if avanzato else 0
         pf = 232 if avanzato else 202
         # SRD, ettin: Forza piena sui due randelli; scheda di ARC08-01: meta' sul secondo
         f2, ff2 = (5, 6) if scheda else (10, 12)
+        # scheda: «Randello Enorme» 2d6, il dado della stella del mattino Grande
+        # dell'ettin SRD; un randello Grande fa 1d8
+        da = (1, 8) if randelli else (2, 6)
         g = Nemico("Gorthak", pf, 28 if avanzato else 25,
-                   [A(21 + k, (2, 6), 10 + k), A(16 + k, (2, 6), 10 + k), A(11 + k, (2, 6), 10 + k),
-                    A(21 + k, (2, 6), f2 + k), A(16 + k, (2, 6), f2 + k), A(11 + k, (2, 6), f2 + k)],
+                   [A(21 + k, da, 10 + k), A(16 + k, da, 10 + k), A(11 + k, da, 10 + k),
+                    A(21 + k, da, f2 + k), A(16 + k, da, f2 + k), A(11 + k, da, f2 + k)],
                    rifl=7 + k, iniz=6 + k, fuga=pf / 2, ruolo="boss")
         g.contatto = 12 if avanzato else 11
         # Furia (+4 For): +2 a colpire, +2 ai danni
-        g.furia = [A(23 + k, (2, 6), 12 + k), A(18 + k, (2, 6), 12 + k), A(13 + k, (2, 6), 12 + k),
-                   A(23 + k, (2, 6), ff2 + k), A(18 + k, (2, 6), ff2 + k), A(13 + k, (2, 6), ff2 + k)]
+        g.furia = [A(23 + k, da, 12 + k), A(18 + k, da, 12 + k), A(13 + k, da, 12 + k),
+                   A(23 + k, da, ff2 + k), A(18 + k, da, ff2 + k), A(13 + k, da, ff2 + k)]
         g.sinistra = True
         g.sportello = sportello
         g.distanza_arco = 2  # Dara dalla Torre Ovest, secondo incremento
@@ -488,6 +517,12 @@ SCENARI = [
     ("Gorthak, oggi, con lo sportello, il secondo randello come sulla scheda (2d6+5)", gorthak(scheda=True),
      [["Borin"], ["Borin", "Yrsa"], ["Yrsa", "Borin"], ["Borin", "Dara"], ["Borin", "Yrsa", "Dara"],
       ["Borin", "Yrsa", "Ragnhild"], ["Yrsa", "Borin", "Ragnhild"]], True),
+    ("Gorthak, oggi, con lo sportello, randelli Grandi dell'SRD (1d8+10 e 1d8+10)", gorthak(randelli=True),
+     [["Borin"], ["Borin", "Yrsa"], ["Yrsa", "Borin"], ["Borin", "Dara"], ["Borin", "Yrsa", "Dara"],
+      ["Borin", "Yrsa", "Ragnhild"], ["Yrsa", "Borin", "Ragnhild"]], True),
+    ("Gorthak, oggi, con lo sportello, il nemico prescelto di Dara solo ai danni (SRD 3.5)", gorthak(),
+     [["Borin", "Dara"], ["Borin", "Yrsa", "Dara"], ["Yrsa", "Borin", "Dara"], ["Harbek", "Nala", "Dara"],
+      ["Ragnhild", "Dara"], ["Dara"]], "dara-srd"),
     ("Gorthak Avanzato (scartato), con lo sportello", gorthak(True),
      [["Borin"], ["Borin", "Yrsa"], ["Yrsa", "Borin"], ["Borin", "Dara"], ["Borin", "Yrsa", "Dara"],
       ["Borin", "Yrsa", "Ragnhild"], ["Yrsa", "Borin", "Ragnhild"]], True),
@@ -526,6 +561,25 @@ TABELLA_EL = [
 ]
 
 
+LIMITI = """## Limiti delle prove
+
+- Quello che manca agli eroi: la Presenza Comandante di Borin, l'Ispirare
+  Coraggio di Nala, la Postura di Borin, gli incantesimi di Harbek e Nala, le
+  leve della Sessione 1 contro Gorthak. Sono assenze che pendono contro gli
+  eroi: al tavolo i nani fanno un po' meglio di queste cifre.
+- Quello che manca ai nemici: il +2 della testa sinistra di Gorthak
+  sull'attacco d'opportunita'; l'arco di Grimjaw sui nani in mischia, quando
+  sta dietro gli orog; i giganti e gli archi dei veterani su chi sta sulla
+  cinta.
+- Le guardie vive colpiscono tutte l'eroe piu' ferito fra quelli in mischia:
+  e' il caso peggiore.
+- Yrsa tira +19/+14/+9, senza la Concentrazione Furiosa; Dara conta il nemico
+  prescelto anche a colpire, come sulla scheda di campagna; uno scenario lo
+  conta solo ai danni, come l'SRD 3.5.
+- Ogni riga ha il suo seme, derivato da --seme, dal titolo e dagli eroi: una
+  cifra si muove di un punto o due da un seme all'altro."""
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=4000)
@@ -535,7 +589,6 @@ def main():
     a = ap.parse_args()
     global EROI_PRIMI
     EROI_PRIMI = a.eroi_primi
-    R.seed(a.seme)
     print(f"# {a.n} duelli per riga, seme {a.seme}" + (", gli eroi agiscono per primi" if a.eroi_primi else "") + "\n")
     print("## EL (DMG 3.5)\n")
     print("| scontro | EL prima | EL dopo |")
@@ -548,7 +601,10 @@ def main():
         print("| eroi | il comandante fugge | al primo round | round medi alla fuga | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |")
         print("|---|---|---|---|---|---|")
         for c in combo:
-            res = [duello(fn, c, giganti=bool(giganti), ragn_apre=(giganti != "noapre")) for _ in range(a.n)]
+            # un seme per riga: correggere uno scenario non sposta le cifre degli altri
+            R.seed(f"{a.seme}|{titolo}|{'+'.join(c)}")
+            res = [duello(fn, c, giganti=bool(giganti), ragn_apre=(giganti != "noapre"),
+                          dara_srd=(giganti == "dara-srd")) for _ in range(a.n)]
             fuga = [r for r in res if r["fuga"]]
             pf = len(fuga) / a.n
             p1 = sum(1 for r in fuga if r["round"] == 1) / a.n
@@ -557,6 +613,7 @@ def main():
             mf = statistics.mean(r["min_frac"] for r in res)
             print(f"| {' + '.join(c)} | {pf:.0%} | {p1:.0%} | {rmed:.1f} | {terra:.0%} | {mf:.0%} |")
         print()
+    print(LIMITI)
 
 
 if __name__ == "__main__":

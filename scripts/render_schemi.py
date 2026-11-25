@@ -479,14 +479,16 @@ def m7r_legenda() -> str:
         (1, "Le montagne. Sotto, le miniere da cui è nata la fortezza e dove scendono bambini e vecchi; "
             "le gallerie di Zeth sotto la fucina"),
         (2, "Hammerfist, ottant'anni: porta e cortile a +100, torre nord a +120 (M7-A)"),
-        (3, "Il pendio sotto le mura, dalla spianata (+80) alla porta (+100)"),
-        (4, "La spianata degli arieti, +80, e la strada a tornanti: circa 500 m fino alla piana"),
+        (3, "Il pendio, dalla piana alla spianata (+80): circa 300 m in pianta per 80 m di dislivello, il 27%; "
+            "la strada a tornanti, circa 530 m, larga 6 m (due carri affiancati), al 15%. Dalla spianata alla porta (+100), "
+            "una rampa che sale di 20 m"),
+        (4, "La spianata degli arieti, +80, sotto la rampa della porta"),
         (5, "Il bosco a est delle mura, a circa 500 m: il portale e la pattuglia di Durin"),
         (6, "La piana, 520 m sul mare"),
         (7, "Il mare di tende: una quindicina di clan, diecimila, da 500 m a 1 km dalle mura"),
         (8, "Il campo del capo e la tenda nera di Zog'tar (M7-H, M7-C)"),
         (9, "Le colline a sud, dove di notte dorme Skullcrusher"),
-        (10, "La via dei PG nella notte: giù dal fianco est, lungo il lato est del campo"),
+        (10, "La via degli eroi nella notte: giù dal fianco est, lungo il lato est del campo"),
     ], colonne=1)
     f.h = round(yl + 6)
     return f.svg()

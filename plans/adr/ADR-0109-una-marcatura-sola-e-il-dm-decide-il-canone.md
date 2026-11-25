@@ -2,6 +2,7 @@
 
 **Stato**: accettata (2026-11-07, Jfs sulle 8 schede; il punto 3 è adottato solo se la prova A/B non peggiora)
 **Data**: 2026-11-07
+**Canale (ADR-0099)**: stable dal 2026-11-25, scelta del DM sulla card del 2026-11-25 (*«Tutti e sei, con il codice»*, D8 di [PIANO-PIATTAFORMA-DI-SVILUPPO](../PIANO-PIATTAFORMA-DI-SVILUPPO.md)). Le marche sulle righe cambiate girano solo sulle PR: 3 rossi su 510 run dal 2026-11-07, tutti marche senza domanda e base, corrette; i run di PR valgono come i 10 run su `main`. Il passo perde `continue-on-error` ([misura](../esperimenti/promozioni-2026-11-25/MISURE.md)).
 **Decisione-fonte**: il DM (Jfs), 2026-11-07: *«le parti inferred vengano marcate in modo tale che il dm possa decidere se farle diventare canone; per le regole di skill, agents ecc. vale la regola più stringente»*. Schede 1-8 nel thread «Standardizzare marcatura INFERRED e skill vincolate».
 **Rapporti**: rende unica la marca di AGENTS.md §5; aggiorna il modello di [ADR-0091](ADR-0091-la-scheda-del-png-ha-una-forma.md) (`[ACCEPTED — DM-canon]` → `[CANONE — DM …]`); usa lo storico di [ADR-0069](ADR-0069-la-storia-delle-scelte-resta-nel-sorgente.md) e i cancelli di [ADR-0108](ADR-0108-i-cancelli-deterministici-stanno-in-ogni-skill.md); i canali sono quelli di [ADR-0099](ADR-0099-la-piattaforma-ha-tre-canali-come-debian.md). Ricerca in [RICERCA-MARCATURE-INFERRED-2026-11](../RICERCA-MARCATURE-INFERRED-2026-11.md).
 

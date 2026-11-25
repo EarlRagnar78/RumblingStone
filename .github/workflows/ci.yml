@@ -158,11 +158,11 @@ jobs:
         run: python scripts/inventory_inferred.py --check
 
       # ADR-0109, scheda 4: sulle righe cambiate, marca senza domanda e base, e
-      # INFERRED tolto senza CANONE, GENERATO o storico. Canale testing: avvisa e
-      # non blocca; dopo due settimane l'audit settimanale propone se renderlo bloccante.
-      - name: Marche sulle righe cambiate — non bloccante (ADR-0109, testing)
+      # INFERRED tolto senza CANONE, GENERATO o storico. Stable dal 2026-11-25
+      # (ADR-0099): 510 run di PR dal 2026-11-07, 3 rossi, tutti difetti veri.
+      # Gira solo sulle PR, quindi i «10 run su main» sono stati run di PR.
+      - name: Marche sulle righe cambiate (ADR-0109)
         if: github.event_name == 'pull_request'
-        continue-on-error: true
         run: python scripts/controlla_marche.py --base "origin/${{ github.base_ref }}" --rigido
 
       - name: Validate generated maps (well-formed, in-sync SVGs)
@@ -205,9 +205,9 @@ jobs:
       # ADR-0118, scelta del DM del 2026-11-09: un numero entra solo se la regola
       # lo calcola. Cricchetto su docs/audit/numeri-baseline.json: uno scarto nuovo
       # o un file nuovo con numeri che nessun conto legge fa fallire; il risolto
-      # si toglie con --aggiorna-numeri. Canale testing fino al 2026-11-23.
-      - name: Cancello dei numeri — non bloccante fino al 2026-11-23 (ADR-0118, testing)
-        continue-on-error: true
+      # si toglie con --aggiorna-numeri. Stable dal 2026-11-25 (ADR-0099): 146
+      # run su main senza un rosso, 3 rossi su 384 run di PR, spiegati.
+      - name: Cancello dei numeri (ADR-0118)
         run: python scripts/conformita_statblocchi.py --cancello-numeri
 
       # Ogni creatura dei booklet esce nello stesso riquadro (ADR-0105): una
@@ -273,19 +273,12 @@ jobs:
       # nella #167, 13 falsi positivi tolti dalla regola). Gli AVVISI (virgolette
       # dritte, «E'») restano ~2.450 e non bloccano: --strict li alzerebbe a
       # errori, e si mette il giorno in cui anche quelli sono a zero. Dal
-      # 2026-10-22 se ne stampa solo il conto (l'elenco con --avvisi).
+      # 2026-10-22 se ne stampa solo il conto (l'elenco con --avvisi). La d
+      # eufonica (ADR-0120) e' un errore dal 2026-11-25: 141 run su main nel
+      # canale testing di ADR-0099 senza un falso allarme, e il suo passo
+      # separato, che rieseguiva tutto il validatore (8 s), e' uscito.
       - name: Lingua italiana — refusi meccanici
         run: python scripts/validate_lingua.py
-
-      # ADR-0120: la d eufonica (ad/ed solo davanti alla stessa vocale) si misura
-      # con una regex tarata su LanguageTool. Controllo nuovo, quindi canale
-      # testing di ADR-0099: qui è un errore ma il passo non blocca; nel passo
-      # sopra è un avviso. Promozione dal 2026-11-24 (14 giorni, 10 corse su
-      # main, nessun falso allarme non spiegato): si toglie continue-on-error
-      # e --d-eufonica diventa il comportamento di sempre.
-      - name: D eufonica — non bloccante fino al 2026-11-24 (ADR-0120, testing)
-        continue-on-error: true
-        run: python scripts/validate_lingua.py --d-eufonica
 
       # Il passo non bloccante `validate_prosa.py` (calchi, tic a densita') e'
       # uscito il 2026-10-22, lotto 7e di AVVENTURE-COMMUNITY: le stesse regole le
@@ -513,8 +506,16 @@ jobs:
       # presidiato da `test_i_test_girano_in_ci.py`, che conta le prove dei due
       # corridori senza eseguirle e boccia se non combaciano: un test che
       # unittest non vedrebbe fa ancora rossa la CI.
-      - name: Unit tests — pytest (ADR-0037 em. 2026-09-21 e 2026-10-23)
-        run: python -m pytest scripts/tests -q
+      # pytest-xdist e' stable dal 2026-11-25 (ADR-0099, D3 di PIANO-PIATTAFORMA):
+      # 168 run su main dal 2026-11-08 con le stesse prove passate e saltate del
+      # passo in serie, e la mediana degli ultimi 10 da 1.127 a 477 s. Due giri:
+      # in parallelo tutto tranne i test che scrivono per un momento nel repo
+      # vero, poi quelli in serie (scripts/tests/conftest.py). Insieme sono la
+      # suite intera.
+      - name: Unit tests — pytest (ADR-0037 em. 2026-09-21 e 2026-10-23; xdist, ADR-0099)
+        run: |
+          python -m pytest scripts/tests -q -n auto -m "not scrive_nel_repo"
+          python -m pytest scripts/tests -q -m scrive_nel_repo
 
       - name: dm.py unified CLI smoke test (K-C3)
         run: |
@@ -545,41 +546,6 @@ jobs:
           assert "error" in r[2], "state_apply è partito in sola lettura"
           print(f"server MCP OK — {n} tool, annotazioni presenti, S-5 attiva")
           EOF
-
-  # ADR-0099, canale TESTING (D3 di PIANO-PIATTAFORMA, DM 2026-10-23): la
-  # stessa suite eseguita in parallelo con pytest-xdist. Non blocca la PR.
-  # uv qui e' gia' stable (2026-11-08); xdist no. Fino alla #342 (2026-11-08)
-  # questo job non aveva typst e saltava 9 prove che il job principale
-  # esegue: la suite e' la stessa solo da allora, e i 14 giorni contano da li'
-  # (non prima del 2026-11-22). Sale a stable, e sostituisce il passo pytest
-  # del job principale, dopo 14 giorni e 10 run su main con le stesse prove
-  # passate e nessun test instabile in parallelo. I tempi da confrontare sono
-  # «pytest -n auto» contro «Unit tests» del job principale.
-  testing:
-    name: pytest-xdist in prova — non bloccante
-    runs-on: ubuntu-24.04
-    continue-on-error: true
-    steps:
-      - uses: actions/checkout@v7
-        with:
-          fetch-depth: 0   # come nel job principale: test_fase1 legge i rami
-
-      - uses: actions/setup-python@v7
-        with:
-          python-version: "3.13"
-
-      - name: Installa con uv (stable, come nel job principale)
-        run: |
-          pip install "uv==0.11.32"
-          uv pip install --system -r requirements-dev.txt
-
-      # Due giri: in parallelo tutto tranne i test che scrivono per un momento
-      # nel repo vero, poi quelli in serie (scripts/tests/conftest.py). Insieme
-      # sono la stessa suite del job principale.
-      - name: pytest -n auto
-        run: |
-          python -m pytest scripts/tests -q -n auto -m "not scrive_nel_repo"
-          python -m pytest scripts/tests -q -m scrive_nel_repo
 
   # P8 di PIANO-PIATTAFORMA, anticipata dal DM il 2026-11-09 («Accendilo
   # ora»): la stessa suite del job principale su Python 3.14, non bloccante.

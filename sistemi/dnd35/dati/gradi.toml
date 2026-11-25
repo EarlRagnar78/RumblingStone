@@ -321,6 +321,9 @@ umano_per_livello = 1
 [razze_dv."dryad"]
 
 [razze_dv."ettin"]
+"listen" = 2
+"search" = 2
+"spot" = 2
 
 [razze_dv."fire giant"]
 
@@ -376,6 +379,7 @@ umano_per_livello = 1
 "swim" = 8
 
 [razze_dv."troglodyte"]
+"hide" = 8
 
 [razze_dv."troll"]
 

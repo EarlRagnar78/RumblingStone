@@ -218,7 +218,8 @@ def _bonus_del_blocco(blocco: str, chiave: "dict[str, str]") -> "tuple[dict[str,
     razziali: "dict[str, int]" = {}
     taglia: "dict[str, int]" = {}
     for n, tipo, resto, coda in re.findall(
-            r"\+(\d+) (racial |size )?bonus on (?:any )?([^.+]+?) checks?(, which improves to \+\d)?", blocco):
+            r"\+(\d+) (racial |size )?bonus on (?:any )?([^.+]+?) checks?"
+            r"(, which improves to \+\d|\. \\?\*?In [^.]*?, this bonus improves to \+\d)?", blocco):
         if not tipo and "hide" not in resto.lower():
             continue  # «+4 bonus on ability checks» dei nani: non è un'abilità
         n = max(int(n), int(coda[-1]) if coda else 0)
@@ -309,7 +310,7 @@ def razze_coi_dv(base: Path, chiave: "dict[str, str]") -> "dict[str, dict[str, i
                         if (voce["fonte"], n) in sezioni), None)
         if trovata is None:
             continue
-        m = next((m for t in trovata if (m := re.search(r"\*\*Skills:\*\*([^\n]+)", t))), None)
+        m = next((m for t in trovata if (m := re.search(r"(?:\*\*Skills:\*\*|^Skills:)([^\n]+)", t, flags=re.M))), None)
         raz, _ = _bonus_del_blocco(m.group(1) if m else "", chiave)
         out[nome] = dict(sorted(raz.items()))
     return dict(sorted(out.items()))

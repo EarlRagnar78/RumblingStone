@@ -187,6 +187,9 @@ class TestRazzeCoiDadiVita(unittest.TestCase):
         self.assertEqual(self.r["razze_dv"]["bugbear"], {"move silently": 4})
         self.assertEqual(self.r["razze_dv"]["minotaur"], {"listen": 4, "search": 4, "spot": 4})
         self.assertEqual(self.r["razze_dv"]["gnoll"], {})                 # nessun bonus è un fatto
+        # il paragrafo «Skills:» senza grassetto (ettin) e «this bonus improves to +8» (troglodita)
+        self.assertEqual(self.r["razze_dv"]["ettin"], {"listen": 2, "search": 2, "spot": 2})
+        self.assertEqual(self.r["razze_dv"]["troglodyte"], {"hide": 8})
         self.assertEqual(self.r["razze_dv"]["hill giant"], {})            # non il +8 del gigante delle pietre
         self.assertNotIn("werewolf, human form", self.r["razze_dv"])     # un modello, non una razza
 

@@ -34,7 +34,6 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 4 | Entro 9 m dal fuoco, Ascoltare | 15 |
 | SCENA 4 | Intimidire | 23 |
 | SCENA 4 | descrive le tonache, tira Conoscenze (religione) | 23 |
-| SCENA 4 | cioè per gli scout Ascoltare a | 20 |
 | SCENA 5 | Diplomazia | 18 |
 | SCENA 5 | con Diplomazia | 18 |
 | SCENA 6 | prova | 10 |

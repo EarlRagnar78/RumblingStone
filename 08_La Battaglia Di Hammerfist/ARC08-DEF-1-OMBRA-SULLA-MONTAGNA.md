@@ -222,9 +222,9 @@ punto intero)», e «tutti e due insieme **10** circa». Il conto coi worg dà
 9,0, e pattuglia e scout insieme 11,2.*
 <!-- /storico -->
 
-> **La versione più dura, e cosa cambia.** Sulla card del 2026-11-25 il DM
-> ha scelto di alzare gli scontri sulla griglia; questi numeri sono la
-> proposta che ne segue, e aspettano il suo sì (domanda al DM, sotto). Si
+> **La versione più dura, e cosa cambia** `[CANONE — DM 2026-11-25, card
+> «sergente Avanzato»]`. Il DM ha scelto di alzare gli scontri sulla
+> griglia, e ha adottato il sergente Avanzato con la CA ricostruita. Si
 > decide **prima della serata**, una volta per tutte: se fra i quattro eroi
 > scelti c'è **Borin o Yrsa**, il sergente è quello di A.4-bis, nella Scena 4
 > e nella Scena 8. Se non c'è nessuno dei due, resta quello di A.4. Se poi a
@@ -241,17 +241,15 @@ punto intero)», e «tutti e due insieme **10** circa». Il conto coi worg dà
 >   «più dura» della tabella round per round, e il colpo che lo uccide deve
 >   portarlo sotto zero da sopra i 31 pf, non da sopra i 25.
 > - Appendice B, MAPPA 1D: la scorta sono i due veterani.
-> - A.4-bis porta il Benchmark e la riga `Boost log:`, che va anche in
+> - A.4-bis porta il Benchmark e la riga `Boost log:`, che sta anche in
 >   `Bestiario/mostri/hobgoblin-bladebearer-ftr6-cr6.md`.
 >
-> Domanda al DM `[INFERRED — Adotti il sergente Avanzato di A.4-bis per
-> tutta la serata, se fra i quattro eroi c'è Borin o Yrsa?; base: scelta
-> della card del 2026-11-25 «scontri più duri»; archetipo semplice Avanzato
-> di PF1e sul sergente di A.4, ⚠️ non SRD 3.5, con la CA ricostruita a 23,
-> contatto 12, sprovvista 22 (ADR-0118); l'alternativa sono le regole
-> rapide, «+4 alla CA», che danno 25, 16 e 24; i veterani da
-> Bestiario/mostri/hobgoblin-veterans-warrior6-cr5.md; prove simulate in
-> plans/esperimenti/scontri-epici-pregen-2026-11-25/]`
+> La base: archetipo semplice Avanzato di PF1e sul sergente di A.4, ⚠️ non
+> SRD 3.5, con la CA ricostruita a 23, contatto 12, sprovvista 22
+> (ADR-0118); i veterani da
+> `Bestiario/mostri/hobgoblin-veterans-warrior6-cr5.md`; prove simulate in
+> `plans/esperimenti/scontri-epici-pregen-2026-11-25/`. Scartato: le regole
+> rapide, «+4 alla CA», che davano 25, 16 e 24.
 
 ### I numeri dell'avanguardia (Scena 8)
 
@@ -714,10 +712,11 @@ round (la ragione è al §0-bis).
   e gli scout sono sotto il torrione, oltre la curva del canyon. Si tira
   Ascoltare degli scout, una volta per tutti, contro **CD −10, +1 ogni 3 m**
   di distanza `[SRD: Listen]`, cioè i suoni di una battaglia. Le mappe non
-  danno la distanza: il default è **90 m**, e lì l'Ascoltare degli scout va
-  contro CD 20; con +3 (A.3) sentono con 17 o più, una volta su cinque
-  (domanda 1, in fondo alla scena). Il tiro unico è una scelta del
-  modulo, ⚠️ non SRD: nell'SRD ognuno tira il suo Ascoltare. Coi tiri uno per uno
+  danno la distanza: fra la pattuglia e gli scout ci sono **90 m**
+  `[CANONE — DM 2026-11-25, card «pattuglia e scout»]`, e lì l'Ascoltare
+  degli scout va contro CD 20; con +3 (A.3) sentono con 17 o più, una volta
+  su cinque. Il tiro unico è una scelta del modulo, che il DM ha tenuto
+  sulla stessa card, ⚠️ non SRD: nell'SRD ognuno tira il suo Ascoltare. Coi tiri uno per uno
   ascoltano in tre, le due guardie di ronda (+3) e il sergente al fuoco
   (+1), perché chi dorme tira a −10 e non arriva a 20: almeno uno sente
   quattro volte su dieci (42 su cento).
@@ -804,7 +803,7 @@ dorme mai». È la leva contro Gorthak (§7).
 | **Suona** | parla goblin e un comune duro; dà gli ordini in due parole |
 | **Sa** | da dove sale l'avanguardia e quando; che il Trifronte vuole il Cancello |
 | **Teme** | tornare dal generale senza aver visto niente |
-| **Combatte** | GS 6, CA 21, 50 pf. Sotto i 25 pf fugge e suona il corno. Se il DM ha adottato la versione più dura (§0-bis): GS 7, CA 23, 62 pf, fugge sotto i 31 (A.4-bis). È lo stesso sergente dell'avanguardia (Scena 8) |
+| **Combatte** | GS 6, CA 21, 50 pf. Sotto i 25 pf fugge e suona il corno. Nella versione più dura (§0-bis): GS 7, CA 23, 62 pf, fugge sotto i 31 (A.4-bis). È lo stesso sergente dell'avanguardia (Scena 8) |
 
 **Comparse**
 
@@ -921,13 +920,6 @@ si scappa: il canyon è stretto, e chi corre per primo arriva alle mura.
 **Sviluppi.** Al tramonto il Re vuole un numero. Si torna per il canyon:
 la pattuglia, se è viva e non li ha visti, è ancora lì, e il gruppo tira di
 nuovo, con la finestra se Dara la legge. Poi il Consiglio (Scena 5).
-
-**Domande al DM (Scena 4).**
-
-1. `[INFERRED — Tieni 90 m fra la pattuglia sul sentiero e gli scout sotto
-   il torrione, cioè per gli scout Ascoltare a CD 20?; base: SRD, Listen,
-   «a battle» CD −10 e +1 ogni 3 m; le mappe 1A-1 e 1A-2 non danno la
-   distanza]`
 
 ---
 
@@ -1227,10 +1219,12 @@ reparti e i suoi numeri; quella di Dara mai.
 | **Nala** | i veterani; la Torre Est | quella delle due che resta. Se mancano Harbek e Nala, Ragnhild va alle Mura e Yrsa alla Torre Est |
 
 I giocatori possono scambiarsi le squadre prima del primo round; la tabella
-vale se non decidono. Ragnhild al Cancello può Sfidare senza uscire dallo
-sportello: lancia dalla cinta sopra il ponte, il Cancello tira senza di lei
-e non prende tacche, come per ogni Sfidare, e sul ponte esce chi vuole
-unirsi, o nessuno (`ARC08-DEF-2`, Scena 2; domanda 2, in fondo alla scena).
+vale se non decidono `[CANONE — DM 2026-11-25, card «tabella Manca»]`.
+Ragnhild al Cancello può Sfidare senza uscire dallo sportello: lancia dalla
+cinta sopra il ponte, il Cancello tira senza di lei e non prende tacche,
+come per ogni Sfidare, e sul ponte esce chi vuole unirsi, o nessuno
+(`ARC08-DEF-2`, Scena 2) `[CANONE — DM 2026-11-25, card «Ragnhild sfida
+dalla cinta»]`.
 
 **I due eroi non scelti** li muove il DM (`ARC08-01`, «Se un giocatore non
 vuole guidare un eroe»; `ARC08-10` §5.6). Nella battaglia campale del
@@ -1239,24 +1233,27 @@ capitano (libretto §9). Sulla griglia combattono e aiutano con le righe di
 tattica di `ARC08-01`, senza rubare la scena `[CANONE — DM 2026-11-15]`.
 Stasera non vanno in ricognizione: restano alla rocca, e la Scena 4 la
 giocano i quattro eroi scelti. Sul pendio stanno in linea, nessuna squadra
-guadagna dadi per loro, e non scendono al duello col sergente `[INFERRED —
-I due eroi non scelti restano alla rocca durante la ricognizione, e sul
-pendio stanno in linea senza scendere al duello?; base: è il default
-finché il DM non decide; la Scena 4 ha due scontri a griglia e prove di
-furtività contati su quattro eroi; libretto §9, il pregen del capitano]`.
+guadagna dadi per loro, e non scendono al duello col sergente `[CANONE —
+DM 2026-11-25, card «i due eroi non scelti»]`: la Scena 4 ha due scontri a
+griglia e prove di furtività contati su quattro eroi (libretto §9, il
+pregen del capitano).
 I loro posti nell'assedio sono in `ARC08-DEF-2`, §0-bis.
 
 Nella battaglia campale Yrsa combatte a **+23**, il suo bonus senza Attacco
-Poderoso, che la domanda sulla Concentrazione Furiosa non tocca
-(`ARC08-DEF-2`, Scena 2, domanda 5); Ragnhild a **+5**, e il suo gesto vero
+Poderoso (con Attacco Poderoso e lo scudo tira +19/+14/+9: `ARC08-01`);
+Ragnhild a **+5**, e il suo gesto vero
 è l'incantesimo (libretto §5: 1d4+1 PFU, TS d20 + 4 contro la CD, che per la
 *palla di fuoco* è 22). La *palla di fuoco* rapida non è un secondo gesto:
-il round di battaglia ne ha uno.
+il round di battaglia ne ha uno `[CANONE — DM 2026-11-25, card «palla di
+fuoco rapida»]`.
 
 **Il gesto da leggenda: un punto eroe a testa** `[CANONE — DM 2026-11-25,
-card «gesto da leggenda»]`. Vale in `ARC08-DEF-1` e in `ARC08-DEF-2`, ed è
-scritto solo qui. Ognuno dei sei eroi ha **un punto eroe**, uno solo per
-tutto l'assedio. È la regola opzionale dei punti eroe di Pathfinder 1e
+card «gesto da leggenda»]`. È scritto solo qui, e vale in `ARC08-DEF-2`:
+ognuno dei sei eroi ha **un punto eroe**, uno solo per tutto l'assedio, e
+il punto nasce **all'alba del Giorno 1** `[CANONE — DM 2026-11-25, card «da
+quando vale il punto eroe»]`. Nella serata della ricognizione e contro il
+sergente non c'è. Scartato: un punto solo per le due serate, già dalla
+ricognizione. È la regola opzionale dei punti eroe di Pathfinder 1e
 (*Advanced Player's Guide*, «Hero Points», OGL:
 <https://www.d20pfsrd.com/gamemastering/other-rules/hero-points/>), adottata
 per i pregen: ⚠️ non SRD 3.5, che i punti eroe non li ha (ADR-0118). Dalla
@@ -1284,7 +1281,8 @@ tiro per colpire non passa al tiro che conferma il critico.
 battaglia del libretto** il punto vale sul d20 del gesto Combattere: +8
 dichiarato prima, +4 dopo, oppure quel d20 si ritira. Richiamare ridà
 l'incantesimo speso per il gesto Incantesimo. Gli altri usi lì non valgono:
-il round di battaglia non ha turni, e ha un gesto solo (domanda 5).
+il round di battaglia non ha turni, e ha un gesto solo (domanda 1, in fondo
+alla scena).
 
 **Cosa il punto non fa.** Non vale sui dadi rossi e bianchi dei reparti, e
 quindi non annulla una tacca né una breccia (libretto §7): quello lo fanno
@@ -1299,32 +1297,22 @@ giocatori. Un eroe morto porta via il suo punto.
 4.000 duelli per riga, seme 7) fanno spendere il punto a ogni eroe della
 riga in quello scontro. Il punto però è uno per tutto l'assedio: ogni cifra
 è il massimo che quell'uso può dare su quello scontro, e chi lo spende
-contro il sergente non lo ha più contro Gorthak. In ogni casella, quante
+contro Gorthak non lo ha più contro Grimjaw. Contro il sergente il punto
+non c'è, perché nasce all'alba del Giorno 1: le righe del sergente restano
+nel file delle prove, e al tavolo non valgono. In ogni casella, quante
 volte su cento il comandante fugge e quante un eroe va a terra.
 
 | Scontro | Eroi | Oggi | +8 al primo tiro per colpire sul comandante | Un'azione standard in più | Un'azione di movimento in più |
 |---|---|---|---|---|---|
-| il sergente di oggi | Harbek | 100 · 0 | 100 · 0 | 100 · 0 | 100 · 0 |
-| | Nala | 92 · 7 | 94 · 6 | 95 · 5 | 93 · 7 |
-| | Borin | 100 · 0 | 100 · 0 | 100 · 0 | 100 · 0 |
-| | Yrsa | 100 · 0 | 100 · 0 | 100 · 0 | 100 · 0 |
-| il sergente più duro | Harbek | 64 · 37 | 70 · 31 | 73 · 28 | 68 · 33 |
-| | Nala | 19 · 82 | 24 · 78 | 32 · 69 | 26 · 76 |
-| | Borin | 100 · 0 | 100 · 0 | 100 · 0 | 100 · 0 |
-| | Yrsa | 100 · 0 | 100 · 0 | 100 · 0 | 100 · 0 |
 | Gorthak | Borin, poi Yrsa | 99 · 71 | 100 · 67 | 100 · 58 | 100 · 55 |
 | | Yrsa, poi Borin | 99 · 19 | 99 · 17 | 100 · 11 | 100 · 11 |
-| Grimjaw, la rampa aperta | Borin e Yrsa | 93 · 39 | 96 · 32 | 98 · 18 | 98 · 19 |
 | Grimjaw, la rampa chiusa | Borin e Yrsa | 75 · 85 | 79 · 82 | 84 · 69 | 85 · 66 |
+| Grimjaw, la rampa aperta (scartata dal DM) | Borin e Yrsa | 93 · 39 | 96 · 32 | 98 · 18 | 98 · 19 |
 
-Il +8 sposta poco, da 0 a 7 punti, perché Borin e Yrsa colpiscono già quasi
-sempre. L'azione in più pesa di più: contro Grimjaw toglie fino a 21 punti
-agli eroi a terra, contro Gorthak fino a 16. A Borin e a Yrsa contro il
-sergente il punto non cambia l'esito ma il tempo: con un'azione standard in
-più Borin lo mette in fuga al primo round 84 volte su cento invece di 50, e
-30 invece di 6 contro il più duro; Yrsa 83 invece di 39. Nala da sola contro
-il sergente più duro va a terra 69 volte su cento anche col suo uso
-migliore. L'azione di movimento in più è l'eroe che arriva sul nemico e fa
+Il +8 sposta poco, da 0 a 4 punti, perché Borin e Yrsa
+colpiscono già quasi sempre. L'azione in più pesa di più: contro Grimjaw a
+rampa chiusa toglie fino a 19 punti agli eroi a terra, contro Gorthak fino
+a 16. L'azione di movimento in più è l'eroe che arriva sul nemico e fa
 nello stesso turno tutti i suoi attacchi. Una differenza di uno o due punti
 è rumore dei dadi. Il punto non cambia l'EL di nessuno scontro.
 
@@ -1415,18 +1403,17 @@ dell'arco di Dara (330 m). Guarda, e ricorda chi ha visto.
 - **Sfidare il sergente**, dal round 3. L'eroe lascia la squadra per un round
   e lo affronta sulla MAPPA 1D, con le regole normali, quanti round servono.
   In quel round la sua squadra tira senza di lui e **non prende tacche**.
-  Sotto i **25 pf** il sergente fugge (31 nella versione più dura, se il DM
-  l'ha adottata: §0-bis), e il suo +1 se ne va con lui. Dopo la fuga il
+  Sotto i **25 pf** il sergente fugge (31 nella versione più dura: §0-bis),
+  e il suo +1 se ne va con lui. Dopo la fuga il
   duello è chiuso: l'eroe torna alla squadra, e nessuno insegue il sergente
   giù per il sentiero, dove sale l'avanguardia. La sua fuga non dà il +2 al
   morale, che vale per i comandanti dell'assedio. Se nella ricognizione è
   morto o è stato preso, non c'è: il round 3 arriva senza il suo +1, e non
   c'è nessuno da sfidare.
-- **Unirsi al duello** `[INFERRED — Un secondo eroe può unirsi al duello col
-  sergente lasciando la squadra alle tacche, come sul ponte di Gorthak?;
-  base: ARC08-DEF-2, Scena 2, «Chi lo sfida»: gli altri eroi possono
-  unirsi, e il settore di chi lascia prende le tacche; il libretto §13
-  manda un eroe solo]`. Chi si unisce lascia la squadra, che in quel round
+- **Unirsi al duello** `[CANONE — DM 2026-11-25, card «secondo eroe nel
+  duello col sergente»]`. Un secondo eroe può unirsi, come sul ponte di
+  Gorthak (`ARC08-DEF-2`, Scena 2, «Chi lo sfida»); il libretto §13 mandava
+  un eroe solo. Chi si unisce lascia la squadra, che in quel round
   tira senza di lui e **prende le tacche**: il «non prende tacche» vale
   solo per l'eroe che sfida. Dara tira dalla riga 03 senza lasciare i
   balestrieri, e rinuncia al suo gesto del round. Round per round, nelle
@@ -1474,12 +1461,14 @@ ovest per D9, D10, E11, da est per I11, H12, G12. Niente attacco
 d'opportunità `[SRD: Attacks of Opportunity]`; chi ha mosso fa comunque un
 attacco solo, e a chi parte da lontano il giro costa il round. Le prove qui
 sotto non la contano: lì ogni eroe che va sul sergente prende il colpo di un
-veterano. Se il DM la vuole chiudere: domanda 4, in fondo alla scena.
+veterano. La strada resta aperta: i veterani stanno in F10 e G10, come
+nelle prove `[CANONE — DM 2026-11-25, card «strada larga verso il
+sergente»]`. Scartato: un veterano spostato da F10 a E10 per chiuderla.
 
 **Cosa dicono le prove.** Prove simulate del 2026-11-25, sesto giro (4.000
 duelli per riga, iniziativa tirata; script ed esito in
 `plans/esperimenti/scontri-epici-pregen-2026-11-25/`). La versione più dura
-vale solo se il DM l'ha adottata (§0-bis).
+vale se fra gli eroi c'è Borin o Yrsa (§0-bis).
 
 | Chi lo sfida | Oggi (A.4): fugge in | un eroe a terra | Più dura (A.4-bis): fugge in | un eroe a terra |
 |---|---|---|---|---|
@@ -1498,8 +1487,8 @@ la Presenza Comandante e la Postura di Borin, e sono assenze che pendono
 contro gli eroi; la boscaglia del round 3, il passo di 1,5 m intorno ai
 veterani e la strada larga non ci sono; al round 1 i veterani hanno solo l'attacco
 d'opportunità, e il sergente colpisce solo chi gli è accanto; Yrsa tira
-+19/+14/+9, senza la Concentrazione Furiosa (`ARC08-DEF-2`, Scena 2,
-domanda 5).
++19/+14/+9, come sulla sua scheda: con lo scudo non ha la Concentrazione
+Furiosa (`ARC08-01`).
 
 **Contro i sei eroi.**
 
@@ -1507,7 +1496,7 @@ domanda 5).
   il duello, e lui lo accetta. Nella versione più dura i veterani vanno su di
   lei dai fianchi, perché la Sfida le toglie 2 alla CA contro chiunque altro.
 - **Ragnhild.** Se scende lei, il sergente la carica al primo round, e
-  nella versione più dura (se il DM l'ha adottata) anche i veterani: in
+  nella versione più dura anche i veterani: in
   mischia una *palla di fuoco* la prende con loro, salvo che lei metta il
   centro lontano, oltre di loro. La carica è un colpo solo, +13 (+15 nella
   versione più dura) con la *spada lunga +1* contro CA 18; le due spade arrivano dal round dopo.
@@ -1526,8 +1515,7 @@ domanda 5).
   sul sentiero, F7-G12, mentre il sergente ci sale: 4d6, e per dimezzare un
   Riflessi contro la frana, CD 15 (MAPPA 1D). Prende anche i veterani, ma non
   li toglie di mezzo: hanno 43 pf.
-- **Dara** tira dalla riga 03, oltre il tronco. Nella versione più dura (se
-  il DM l'ha adottata) i veterani hanno l'arco (Bestiario), e al
+- **Dara** tira dalla riga 03, oltre il tronco. Nella versione più dura i veterani hanno l'arco (Bestiario), e al
   round 2 uno dei due tira su di lei invece che sull'eroe in mischia.
 
 **Quanto restare.** Lo si può dire ai giocatori, se lo chiedono: nelle prove,
@@ -1579,31 +1567,11 @@ si chiudono sull'ultimo nano. Poi la notte (Scena 9).
 
 **Domande al DM (Scena 8).**
 
-1. `[INFERRED — Il DM cambia qualche riga della tabella «Manca», che dà a
-   Ragnhild e a Yrsa la squadra dell'eroe non scelto fra Borin, Harbek e
-   Nala, e mai quella di Dara?; base: se non ne cambia, vale la tabella;
-   libretto §1, «Chi tiene cosa», e §9; ARC08-01, «Se un giocatore non
-   vuole guidare un eroe»; ARC08-10 §5.6]`
-2. `[INFERRED — Ragnhild al Cancello può Sfidare lanciando dalla cinta,
-   senza uscire dallo sportello?; base: ARC08-DEF-2, Scena 2, «Chi lo
-   sfida»: il gesto Sfidare è del Cancello; libretto §5, Sfidare]`
-3. `[INFERRED — Nel libretto la palla di fuoco rapida di Ragnhild vale un
-   gesto in più?; base: libretto §5, «Ogni round il tuo eroe fa una di
-   queste cose»]`
-4. `[INFERRED — Il DM chiude la strada larga da ovest spostando un
-   veterano da F10 a E10?; base: è il default finché il DM non decide: no,
-   i veterani restano in F10 e G10, come nelle prove; MAPPA 1D, la griglia:
-   con un veterano in E10 chi passa da D9 lascia un quadretto minacciato, ma
-   restano il giro da sud, per D12 ed E12, e quello da est]`
-5. `[INFERRED — Nel round di battaglia del libretto il punto eroe vale solo
+1. `[INFERRED — Nel round di battaglia del libretto il punto eroe vale solo
    sul d20 del gesto Combattere (+8 prima, +4 dopo, o si ritira), più
    Richiamare?; base: è il default finché il DM non decide: sì; libretto §5,
    un gesto a round; fonte PF1e, il bonus va «a un tiro di d20»]`
-6. `[INFERRED — Il punto eroe è uno solo per le due serate coi pregen, dalla
-   ricognizione alla porta di mithral?; base: è il default finché il DM non
-   decide: sì, e chi lo spende stasera non lo ha nell'assedio; card del
-   2026-11-25, «un punto a testa per i tre giorni d'assedio»]`
-7. `[INFERRED — I due eroi mossi dal DM spendono il loro punto eroe?; base:
+2. `[INFERRED — I due eroi mossi dal DM spendono il loro punto eroe?; base:
    è il default finché il DM non decide: no, il punto lo spende solo un
    giocatore; ARC08-01, «combatte e aiuta, ma non ruba la scena»]`
 
@@ -1630,10 +1598,10 @@ per l'assedio.
 | **Dara** | Sopravvivenza **CD 15** | gli animali scendono da est: l'orda sale anche da lì, dove nessuno guarda | nel round 1 del Giorno 1, gli orchi **non hanno la Carica selvaggia** |
 | **Nala** | Ascoltare **CD 18** | un canto di marcia in goblin, col nome del Trifronte dentro, e dove canta | **+2** al primo attacco nel duello Sfidare contro Gorthak |
 
-Ragnhild e Yrsa non hanno un presagio con la leva `[INFERRED — Il DM vuole
-un presagio con la leva anche per Ragnhild e Yrsa?; base: i tre presagi
-sono sui pregen del 2026-10-21, e le due eroine sono entrate il
-2026-11-15]`. Se il giocatore lo chiede, il DM dà senza prova e senza leva
+Ragnhild e Yrsa non hanno un presagio con la leva `[CANONE — DM 2026-11-25,
+card «presagio con leva per Ragnhild e Yrsa»]`: i tre presagi sono sui
+pregen del 2026-10-21, e le due eroine sono entrate il 2026-11-15. Se il
+giocatore lo chiede, il DM dà senza prova e senza leva
 quello che dà a Borin: il ruggito fra le vette.
 
 Borin non ha un presagio: ha già la sua leva, se il prigioniero ha parlato.
@@ -1870,9 +1838,9 @@ La pattuglia intera: **EL 9** (tre GS 5 fanno 8,2; i tre worg GS 2 la portano a 
 
 **A.4 · Il sergente** (la ricognizione e l'avanguardia: è lo stesso) · `Bestiario/mostri/hobgoblin-bladebearer-ftr6-cr6.md`, *hobgoblin bladebearer*, ⚠️ non SRD, con l'armatura completa al posto della corazza di piastre +1 · GS 6 · hobgoblin guerriero 6°, Medio, LM · Iniz +4 · scurovisione 18 m · Ascoltare +1, Osservare +1 · CA **21** (armatura completa +8, Des +1 fino al tetto, anello di protezione +1, Difesa con Due Armi +1), contatto 12, colto alla sprovvista 20 · pf **50** · Temp +8, Rifl +7, Vol +6 (RC-001, Build B: col *mantello della resistenza +1*) · velocità 6 m · *spada lunga +1* +11/+6 (1d8+6, 19-20); con due spade +9/+4 (1d8+6) e *spada lunga perfetta* +9/+4 (1d8+3) · Combattere con Due Armi e Migliorato, Difesa con Due Armi, Arma Focalizzata e Specializzata (spada lunga), Volontà di Ferro, *Oversized Two-Weapon Fighting* (⚠️ non SRD) · *mantello della resistenza +1*, tre pozioni di *cura ferite moderate* (RC-001, Build B), il corno · Comune, Goblin. **Fugge sotto i 25 pf.** Nell'avanguardia: +1 ad AU e DU di tutti i reparti dal round 3.
 
-**A.4-bis · Il sergente Avanzato, la versione più dura** (proposta: domanda al DM nel §0-bis) · base: archetipo semplice Avanzato di PF1e, regole rapide: +2 a tutti i tiri e ai danni, +4 alla CA, +2 pf per DV; ⚠️ non SRD 3.5; per tutta la serata, se fra gli eroi c'è Borin o Yrsa (§0-bis) · lo stesso sergente di A.4, con l'archetipo · GS **7** · Iniz +6 · CA **23**, contatto 12, colto alla sprovvista 22, ricostruita con la regola intera (+4 a tutte le caratteristiche, +2 armatura naturale) sull'armatura completa, che tiene la Des a +1 (ADR-0118); le regole rapide, «+4 alla CA», darebbero 25 / 16 / 24, e la scelta è nella domanda al DM del §0-bis · pf **62** (50 + 2 × 6 DV) · Temp +10, Rifl +9, Vol +8 · *spada lunga +1* +13/+8 (1d8+8, 19-20); con due spade +11/+6 (1d8+8) e *spada lunga perfetta* +11/+6 (1d8+4: con la regola intera la mano secondaria somma metà Forza, +2, e la Specializzazione, +2) · **fugge sotto i 31 pf** (metà, libretto §13). La scorta: **due hobgoblin veterani** (`Bestiario/mostri/hobgoblin-veterans-warrior6-cr5.md`, ⚠️ non SRD) · GS 5 · CA 19, contatto 11, colto alla sprovvista 18 · pf 43 · Temp +8, Rifl +4, Vol +2 · *spada lunga perfetta* +10/+5 (1d8+2, 19-20); arco lungo composito (+1) +7/+2 (1d8+1, ×3) · combattono fino in fondo, e coprono la fuga del sergente. Duello: **EL 9** (9,0; oggi è 6, il sergente da solo, perché la scorta non entra). Gli scout col sergente Avanzato fanno 9,7; pattuglia e scout insieme 11,4.
+**A.4-bis · Il sergente Avanzato, la versione più dura** `[CANONE — DM 2026-11-25, card «sergente Avanzato»]` · base: archetipo semplice Avanzato di PF1e, regole rapide: +2 a tutti i tiri e ai danni, +4 alla CA, +2 pf per DV; ⚠️ non SRD 3.5; per tutta la serata, se fra gli eroi c'è Borin o Yrsa (§0-bis) · lo stesso sergente di A.4, con l'archetipo · GS **7** · Iniz +6 · CA **23**, contatto 12, colto alla sprovvista 22, ricostruita con la regola intera (+4 a tutte le caratteristiche, +2 armatura naturale) sull'armatura completa, che tiene la Des a +1 (ADR-0118); scartato: le regole rapide, «+4 alla CA», che darebbero 25 / 16 / 24 · pf **62** (50 + 2 × 6 DV) · Temp +10, Rifl +9, Vol +8 · *spada lunga +1* +13/+8 (1d8+8, 19-20); con due spade +11/+6 (1d8+8) e *spada lunga perfetta* +11/+6 (1d8+4: con la regola intera la mano secondaria somma metà Forza, +2, e la Specializzazione, +2) · **fugge sotto i 31 pf** (metà, libretto §13). La scorta: **due hobgoblin veterani** (`Bestiario/mostri/hobgoblin-veterans-warrior6-cr5.md`, ⚠️ non SRD) · GS 5 · CA 19, contatto 11, colto alla sprovvista 18 · pf 43 · Temp +8, Rifl +4, Vol +2 · *spada lunga perfetta* +10/+5 (1d8+2, 19-20); arco lungo composito (+1) +7/+2 (1d8+1, ×3) · combattono fino in fondo, e coprono la fuga del sergente. Duello: **EL 9** (9,0; oggi è 6, il sergente da solo, perché la scorta non entra). Gli scout col sergente Avanzato fanno 9,7; pattuglia e scout insieme 11,4.
 Benchmark: PF T1-1 riga 7: CA 23 contro 20 (sopra) / pf 62 contro 85 (sotto) / attacco +13 contro +13 (pari): GS 7 regge.
-Boost log: 2026-11-25 — archetipo semplice Avanzato di PF1e sul sergente, e due veterani (GS 5, Bestiario) al posto dei due regolari della scorta — GS 6 → 7, EL del duello 6 → 9 — proposto dopo la card del 2026-11-25 («scontri più duri»), in attesa del sì del DM, per la serata in cui fra gli eroi c'è Borin o Yrsa: contro di loro il duello di oggi dura 1,5 round con Borin e 1,1 con Yrsa, e con i veterani 2,1 e 1,6 (prove del sesto giro in `plans/esperimenti/scontri-epici-pregen-2026-11-25/`).
+Boost log: 2026-11-25 — archetipo semplice Avanzato di PF1e sul sergente, e due veterani (GS 5, Bestiario) al posto dei due regolari della scorta — GS 6 → 7, EL del duello 6 → 9 — adottato dal DM sulla card del 2026-11-25 («sergente Avanzato»), per la serata in cui fra gli eroi c'è Borin o Yrsa: contro di loro il duello di oggi dura 1,5 round con Borin e 1,1 con Yrsa, e con i veterani 2,1 e 1,6 (prove del sesto giro in `plans/esperimenti/scontri-epici-pregen-2026-11-25/`).
 
 Gli scout col sergente: **EL** circa 9 (9,4). Pattuglia e scout insieme: **EL** circa 11 (11,2).
 
@@ -1900,7 +1868,7 @@ giocatori in `ARC08-15`. Il conto delle abilità, grado per grado, è in
 | **Harbek** | 114 | 22 | +16 | **+13** | Concentrazione **+20**, Conoscenze (religione) **+8**, Sapienza Magica **+16**, Ascoltare +6, Osservare +6, Percepire Intenzioni +6, Sopravvivenza +6, Guarire +6, Diplomazia +2, Intimidire +2, Artigianato (pietra) +11, Nascondersi −5, Muoversi Silenziosamente −5 | Comune, Nanico, Terran |
 | **Nala** | 90 | 20 | +9 | **+13** | Diplomazia **+23**, Raggirare **+22**, Intrattenere (canto) **+16**, Ascoltare +15, Osservare +15, Camuffare +14 (+16 per recitare una parte), Nascondersi +14, Muoversi Silenziosamente +14, Raccogliere Informazioni +12, Percepire Intenzioni +10, Sapere bardico +10, Acrobazia +9, Intimidire +6, Falsificare +6, Conoscenze (locali) +7 | Comune, Nanico, Orchesco, Goblin |
 | **Ragnhild** | 84 | 18 | +14 (+2 contro incantesimi) | **+5** (il gesto vero è l'incantesimo) | Conoscenze (arcane) **+26**, Sapienza Magica **+25**, Conoscenze (storia) **+23**, Concentrazione **+20**, Decifrare Scritture +17, Conoscenze (piani) +17, Conoscenze (religioni) +17, Conoscenze (dungeon) +15, Ascoltare +1, Osservare +1, Nascondersi +2, Muoversi Silenziosamente +2 · Sapere +10 | Comune, Nanico, Draconico, Gigante, Orchesco, Terran |
-| **Yrsa** (PF1e, ⚠️ non SRD 3.5) | 114 | 32 | +10 (+2 contro incantesimi) | **+23**; con Attacco Poderoso +23/+14/+9 sulla scheda, +19/+14/+9 se la domanda 5 di `ARC08-DEF-2`, Scena 2, toglie la Concentrazione Furiosa | Diplomazia **+17**, Intimidire **+17**, Ascoltare **+16** e Osservare **+16** (nella scheda PF1e sono un'abilità sola), Cavalcare +16, Furtività −5 | Comune, Nanico |
+| **Yrsa** (PF1e, ⚠️ non SRD 3.5) | 114 | 32 | +10 (+2 contro incantesimi) | **+23**; con Attacco Poderoso +19/+14/+9 (con lo scudo niente Concentrazione Furiosa: `ARC08-01`) | Diplomazia **+17**, Intimidire **+17**, Ascoltare **+16** e Osservare **+16** (nella scheda PF1e sono un'abilità sola), Cavalcare +16, Furtività −5 | Comune, Nanico |
 
 Le righe di Ragnhild e Yrsa hanno una fonte sola, `ARC08-02` §3;
 Nascondersi, Muoversi Silenziosamente e Furtività sono il conto della Scena
@@ -1997,7 +1965,7 @@ LEGENDA · 🏰 la cinta, 12 m · 🟫 il sentiero · 🟩 il pendio, in discesa
 - **Il duello col sergente**: il sergente sale dal sentiero (F11) con due
   hobgoblin di scorta (F12, H12), che non entrano nel duello finché l'eroe
   non li attacca. Nella versione più dura (A.4-bis, se fra gli eroi c'è
-  Borin o Yrsa e il DM l'ha adottata) sono due veterani, in F10 e G10,
+  Borin o Yrsa) sono due veterani, in F10 e G10,
   davanti a lui dal primo round: chi va dritto sul sergente prende un
   attacco d'opportunità, chi gira largo da ovest (D9, D10, E11) o da est
   (I11, H12, G12) no (Scena 8, «La strada larga»). La retroguardia si gioca sulla stessa mappa: l'eroe che

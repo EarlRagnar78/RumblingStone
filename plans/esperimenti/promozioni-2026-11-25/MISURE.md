@@ -57,6 +57,13 @@ Promuovere toglie dal job principale circa 650 s (mediana degli ultimi 10:
 1.127 → 477). Il criterio «non peggiora oltre il 5%» è quindi rispettato con
 margine, da riscontrare sul run della PR.
 
+**Riscontro sul run della #516** (testa c1ef61d9, job 139067587639): passo
+pytest 761 s (giro parallelo 731 s, 3.161 passate e 16 saltate; giro in serie
+29 s, 297 passate), job «Validate» 1.108 s. Rispetto alla mediana degli ultimi
+10 run di `main`: −366 s sul passo (−32%), −334 s sul job (−23%). La stima di
+477 s era ottimista: il job xdist misurato girava da solo, senza il resto del
+job accanto. Comando: `gh api repos/gsamuele78/RumblingStone/actions/jobs/139067587639`.
+
 **Un peggioramento che non viene da xdist.** In 13 giorni il passo pytest del
 job principale è passato da 258 a 1.127 s di mediana (×4,4) mentre le prove
 crescevano da 2.494 a 3.447 (+38%). I tempi degli ultimi run sono bimodali,

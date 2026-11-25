@@ -192,8 +192,10 @@ test); gli altri tre lasciati, con la ragione, in due righe di `ruff.toml`.
   mette in serie `test_ciclo_prosa`, `test_booklets` e `test_componenti`: con
   `-n auto`, `componenti --check` vedeva sparire a metà lettura un file
   temporaneo in radice. Suite locale dopo il cambio: 3.456 passate, 18
-  saltate, 0 fallite. Conseguenze: la mediana del passo pytest scende, a
-  stima, da 1.127 s a 477 s, da riscontrare sul run della PR; un modulo che
+  saltate, 0 fallite. Conseguenze: sul run della #516 (testa c1ef61d9) il passo pytest
+  dura 761 s contro la mediana di 1.127 s su `main` (−32%), il job «Validate»
+  1.108 s contro 1.442 s (−23%), con 3.458 prove passate; la stima di 477 s
+  dal job xdist non regge, perché quel job girava senza le altre prove accanto; un modulo che
   scrive nel repo e non è nell'elenco può fare rossa la CI a caso, e ci entra
   con la misura dell'audit hook. [Misura](esperimenti/promozioni-2026-11-25/MISURE.md).
 
@@ -299,7 +301,7 @@ mediana in 13 giorni (dall'8 al 21 novembre), mentre le prove crescevano del
 38%, da 2.494 a 3.447. Il job «Validate» è a 1.442 s, contro i 914 s della
 seconda riga. I tempi recenti sono bimodali, attorno a 860 s e a 1.370 s con
 le stesse prove: una parte è rumore del runner, ma la crescita resta. xdist
-riporta il passo a circa 477 s senza spiegarla: è il motivo per fare P2
+riporta il passo a 761 s sul run della #516 senza spiegarla: è il motivo per fare P2
 ([misura](esperimenti/promozioni-2026-11-25/MISURE.md)).
 
 ## §5 · Decisioni

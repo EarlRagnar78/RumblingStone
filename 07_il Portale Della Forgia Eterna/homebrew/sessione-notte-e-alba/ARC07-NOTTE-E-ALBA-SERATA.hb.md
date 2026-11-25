@@ -1519,8 +1519,8 @@ Da 48 m, Tordek guidato da Artemis con la mano sulla spalla sbaglia di **1d4**
 quadretti (da 1 a 4); da solo, al buio, di 1d6−1 (da 0 a 5). Conviene l'ultima
 riga: la botte la tengono in due, e la lascia andare Artemis.
 
-Parlare si sente: Ascoltare ha −1 ogni 3 m (SRD). Un sussurro è CD 15
-: da 48 m diventa CD 31, e Zog'tar con +11 non lo sente; da 18 m è
+Parlare si sente: Ascoltare ha −1 ogni 3 m (SRD). Un sussurro è CD 15:
+da 48 m diventa CD 31, e Zog'tar con +11 non lo sente; da 18 m è
 CD 21, e lo sente una volta su due.
 
 **La tabella.** Danno dell'oggetto in caduta dall'SRD: la botte con i sassi
@@ -1705,8 +1705,8 @@ che è Grande, basta una delle sue quattro caselle.
 > 200 libbre (91 kg) in su l'SRD dà 15d6; sotto, nella fascia da 101 a 200
 > libbre, dà 1d6 ogni 6 m, cioè **7d6**. Con i sassi fino all'orlo la botte
 > pesa 93 kg e vale la prima riga: 15d6. La fisica è d'accordo: 40 kJ uccidono
-> un uomo, e 7d6 non ucciderebbero una guardia hobgoblin
->.
+> un uomo, e 7d6 non ucciderebbero una guardia hobgoblin.
+> 
 
 ### Le palle di fuoco, e perché non si allargano
 
@@ -5070,8 +5070,8 @@ gliela portano la riprende in cambio della sua parola, non di monete.
   al corno dell'alba, prima di partire, e i PG invisibili sono visibili per
   tutto il duello. Col Vecchio al corno lancia anche
   *immagine speculare*: ogni attacco a bersaglio singolo, deflagrazione
-  compresa, sceglie a caso fra lui e le immagini; le aree lo prendono comunque
-. Di notte sulle colline non l'ha
+  compresa, sceglie a caso fra lui e le immagini; le aree lo prendono comunque.
+  Di notte sulle colline non l'ha
   lanciato, perché non si aspetta nessuno.
 - **Il soffio fa più male**: 14d4 (in media 35) invece di 12d4, e Riflessi
   CD 30; col Vecchio 16d4 (in media 40), CD 31. La runa di Zeth (*resistere all'energia* 20) ne toglie ancora più

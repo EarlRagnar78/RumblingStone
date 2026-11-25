@@ -1274,11 +1274,11 @@ a parlare, gli Xorn emergono a metà e parla Fauci di Diamante (via C).
   pietra, come al §6), poi colpo
   mirato (FOR o attacco) **CD 20** sul punto di stress → il pilastro crolla
   sugli Xorn (**10d6**, Riflessi **CD 22** dimezza). Chi è dentro la pietra
-  prende metà danni ed esce stordito per 1 round; lo scontro si fa comunque
-. Il pilastro cade dove sceglie chi ha letto
+  prende metà danni ed esce stordito per 1 round; lo scontro si fa comunque.
+  Il pilastro cade dove sceglie chi ha letto
   l'angolo di rottura; se la Conoscenze è fallita, la direzione si tira col d8,
-  e i PG sulla traiettoria tirano i Riflessi anche loro
-. L'area è una striscia larga 3 m e lunga
+  e i PG sulla traiettoria tirano i Riflessi anche loro.
+  L'area è una striscia larga 3 m e lunga
   30 m dalla base G08.
   *Costo:* perdi il mithral (loot che Artemis brama).
 - **B — Ordine tattico (Shine Time di Thorik).** Azione di comando
@@ -1521,8 +1521,8 @@ centro, alto 5 m, la **MADRE CRISTALLO**. Vedi **MAPPA T-3**.
 Si tira a giri: a ogni giro ogni PG tira almeno una volta, e ogni abilità vale
 una volta per PG a giro. Utilizzare Oggetti Magici si usa solo con i
 gradi, come nell'SRD. Chi non ha un'abilità utile può Aiutare un compagno (+2)
-o passare il giro senza fallimento; e i nani hanno la loro prova, qui sotto
-. Ogni prova fallita è uno dei tre
+o passare il giro senza fallimento; e i nani hanno la loro prova, qui sotto.
+Ogni prova fallita è uno dei tre
 fallimenti, Diplomazia compresa; il canto fallito, in più, toglie un successo.
 Riforgiare un cristallo è la prova del giro di quel PG: tira Osservare, e se
 fallisce conta un fallimento. Ogni cristallo crepato si riforgia una volta.
@@ -1975,15 +1975,15 @@ fino al portale. Chi ha saltato i Cristalli non ha né l'una né l'altro, e
 attraversa coi tre ruoli. Ogni prova riuscita solleva dall'oceano un blocco di pietra,
 e i blocchi fanno una scala; **Tordek salta da un detrito sopra l'oceano, a
 metà strada**, e da lì al portale. La prova è quella della Frequenza (§8):
-Intrattenere (Canto) **CD 18**, l'Anello di Artemis dà +4
-. Suonarlo per la scala **non lo consuma**: il suo uso unico è lo stordimento.
-Servono **4 prove riuscite**, e una fallita fa ricadere l'ultimo blocco
-. Le quattro fanno la scala intera, che con la
+Intrattenere (Canto) **CD 18**, l'Anello di Artemis dà +4.
+Suonarlo per la scala **non lo consuma**: il suo uso unico è lo stordimento.
+Servono **4 prove riuscite**, e una fallita fa ricadere l'ultimo blocco.
+Le quattro fanno la scala intera, che con la
 sola Frequenza arriva a metà strada e col Diapason al portale. Canta un PG alla
 volta, con un'azione standard, come nel §8. Ogni prova prende un round. Al
 terzo fallimento la scala crolla, e chi sta sui blocchi cade nell'oceano di
-roccia dalla quota a cui è arrivato, con la regola delle cadute del §3
-.
+roccia dalla quota a cui è arrivato, con la regola delle cadute del §3.
+
 
 > **✅ CANONE GIOCATO — «la salita cantata».** Al tavolo
 > l'attraversamento è stato risolto in variante: il party ha **cantato la
@@ -2816,8 +2816,8 @@ non lo accetta: è legata a Thorik.
 .
 - **Se Thorik rifiuta e nessuno paga**: il rito non parte. Dopo un riposo,
   −12 h all'orologio, Moradin ripete la domanda davanti a tutti; al secondo
-  rifiuto la Corona prende il Peso da sola, col prezzo dell'Opzione B
-.
+  rifiuto la Corona prende il Peso da sola, col prezzo dell'Opzione B.
+  
 
 > **Regia (asimmetria).** Thorik **non sa** che la presenza verde è Hella; per
 > la giocatrice di Hella è uno dei suoi echi (§1). **Non spiegarlo finché non
@@ -3057,8 +3057,8 @@ Dopo il terzo giro si legge la chiusura, riusciti o no.
 → **Fase 3**.
 
 ### FASE 3 — L'Incastonatura e il Ritorno di Durik
-Comunque sia andata la Fase 2, anche con Thorik crollato al terzo fallimento
-, lo Smeraldo — verde e pulsante come linfa — si **incastona
+Comunque sia andata la Fase 2, anche con Thorik crollato al terzo fallimento,
+lo Smeraldo — verde e pulsante come linfa — si **incastona
 nella tempia sinistra** della Corona. Onda d'urto smeraldo: per un'ora la carne
 diventa **pietra vivente** (RD 10/adamantio gratis). Thorik, toccando la gemma,
 sente che **l'ancoraggio dello spirito di Hella si è cristallizzato: ora è

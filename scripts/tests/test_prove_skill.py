@@ -99,7 +99,7 @@ class TestAB(unittest.TestCase):
 
 
 class TestScheda(unittest.TestCase):
-    def test_scheda_completa_senza_avvisi_e_fuori_ordine_segnalata(self):
+    def test_scheda_completa_senza_rilievi_e_fuori_ordine_segnalata(self):
         sezioni = ["Quando no", "Fonti", "Procedura", "Formato d'uscita",
                    "Prima di consegnare", "Cancelli deterministici"]
         with tempfile.TemporaryDirectory() as t:
@@ -113,9 +113,33 @@ class TestScheda(unittest.TestCase):
             f.write_text("---\nname: s\ndescription: x\n---\n\n"
                          + "".join(f"## {s}\n\nnel 2026-11-08\n\n" for s in reversed(sezioni)),
                          encoding="utf-8")
-            avvisi = " ".join(V.check_schede(d))
-            self.assertIn("fuori ordine", avvisi)
-            self.assertIn("date nel corpo", avvisi)
+            rilievi = " ".join(V.check_schede(d))
+            self.assertIn("fuori ordine", rilievi)
+            self.assertIn("date nel corpo", rilievi)
+
+    def _main(self, rilievi, *argv):
+        vero, argv_vero = V.check_schede, sys.argv
+        V.check_schede = lambda root: list(rilievi)
+        sys.argv = ["validate_skills.py", *argv]
+        out = io.StringIO()
+        try:
+            with redirect_stdout(out):
+                return V.main(), out.getvalue()
+        finally:
+            V.check_schede, sys.argv = vero, argv_vero
+
+    def test_un_rilievo_della_scheda_e_un_errore(self):
+        # ADR-0114 promossa a stable il 2026-11-25 (ADR-0099): la scheda non avvisa, blocca
+        esito, out = self._main(["skills/s: scheda senza Fonti (ADR-0114)"])
+        self.assertEqual(esito, 1)
+        self.assertIn("ERROR skills/s: scheda senza Fonti", out)
+        self.assertNotIn("WARN  skills/s", out)
+        esito, out = self._main(["skills/s: scheda senza Fonti (ADR-0114)"], "--json")
+        self.assertEqual(esito, 1)
+        self.assertIn("skills/s: scheda senza Fonti (ADR-0114)", json.loads(out)["errors"])
+
+    def test_senza_rilievi_le_skill_del_repo_passano(self):
+        self.assertEqual(self._main([])[0], 0)
 
 
 if __name__ == "__main__":

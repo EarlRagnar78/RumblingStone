@@ -106,5 +106,26 @@ class TestPrePush(unittest.TestCase):
             self.assertTrue(motivo.strip())
 
 
+class TestPromozioniDelCanaleTesting(unittest.TestCase):
+    """Le promozioni testing → stable del 2026-11-25 (ADR-0099): il passo promosso
+    blocca (niente continue-on-error), e il passo che aveva solo il ruolo di
+    canale esce. Ogni prova è di una candidata sola, per toglierla da sola."""
+
+    def _passo(self, comando):
+        trovati = [v for v in G.passi() if comando in v["run"]]
+        self.assertEqual(len(trovati), 1, f"in ci.yml un solo passo con «{comando}»")
+        return trovati[0]
+
+    def test_il_cancello_dei_numeri_blocca(self):          # ADR-0118
+        self.assertFalse(self._passo("conformita_statblocchi.py --cancello-numeri")["avviso"])
+
+    def test_le_marche_sulle_righe_cambiate_bloccano(self):  # ADR-0109
+        self.assertFalse(self._passo("controlla_marche.py")["avviso"])
+
+    def test_la_d_eufonica_non_ha_piu_un_passo_suo(self):   # ADR-0120
+        self.assertEqual([v["nome"] for v in G.passi() if "--d-eufonica" in v["run"]], [])
+        self.assertFalse(self._passo("validate_lingua.py")["avviso"])
+
+
 if __name__ == "__main__":
     unittest.main()

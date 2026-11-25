@@ -26,9 +26,7 @@ def _testo(s: str) -> tuple[list[str], list[str]]:
     with tempfile.TemporaryDirectory() as d:
         f = Path(d) / "prova.md"
         f.write_text(s, encoding="utf-8")
-        # La d eufonica è in testing (ADR-0120): qui si prova il controllo, quindi
-        # la si legge come errore, come fa il passo di CI con --d-eufonica.
-        return controlla(f, d_eufonica_blocca=True)
+        return controlla(f)
 
 
 class TestRefusiVeri(unittest.TestCase):
@@ -85,15 +83,27 @@ class TestRefusiVeri(unittest.TestCase):
         self.assertTrue(errori)
 
 
-class TestCanaleTesting(unittest.TestCase):
+class TestDEufonicaStable(unittest.TestCase):
+    """ADR-0120 promossa a stable il 2026-11-25 (ADR-0099): la d eufonica fuori
+    norma è sempre un errore, senza opzioni, e il passo separato in CI è uscito."""
 
-    def test_la_d_eufonica_di_suo_e_un_avviso(self):
+    def test_la_d_eufonica_e_sempre_un_errore(self):
         with tempfile.TemporaryDirectory() as d:
             f = Path(d) / "prova.md"
             f.write_text("Canta ad ogni notte.", encoding="utf-8")
             errori, avvisi = controlla(f)
-        self.assertEqual(errori, [])
-        self.assertTrue(any("d eufonica" in a for a in avvisi))
+        self.assertTrue(any("d eufonica" in e for e in errori))
+        self.assertFalse(any("d eufonica" in a for a in avvisi))
+
+    def test_il_validatore_esce_1_senza_opzioni(self):
+        with tempfile.TemporaryDirectory() as d:
+            f = Path(d) / "prova.md"
+            f.write_text("Ladri ed assassini.", encoding="utf-8")
+            self.assertEqual(validate_lingua.main([str(f)]), 1)
+
+    def test_l_opzione_del_canale_testing_non_c_e_piu(self):
+        with self.assertRaises(SystemExit):
+            validate_lingua.main(["--d-eufonica"])
 
 
 class TestProsaRientrata(unittest.TestCase):

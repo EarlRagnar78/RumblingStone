@@ -86,6 +86,11 @@ Un agente che "aggiorna state.md" a mano fuori dalle regioni marcate, dentro
 
 ## Procedura
 
+Prima di proporre una libreria o uno strumento nuovo per gli script, dichiara il
+canale e la misura: entra in unstable, poi in testing con versione fissata, CI
+non bloccante e misura prima e dopo, e sale a stable dopo 14 giorni e 10 run su
+`main` con l'ok del DM ([ADR-0099](../../plans/adr/ADR-0099-la-piattaforma-ha-tre-canali-come-debian.md)).
+
 ### Flusso di sessione (`dm.py session`)
 
 | Comando | Cosa fa | Script sottostanti |

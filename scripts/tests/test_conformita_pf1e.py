@@ -135,7 +135,9 @@ sensi: Percezione +8
 
 
 def campi(testo: str) -> "list[tuple[str, str]]":
-    return [(x["campo"], x.get("prova", "")) for x in C.conti_dei_recinti(testo, "pf1e")]
+    # il conto si legge dalla chiave `conto`, che lo scarto porta sempre: `prova`
+    # c'è solo finché il conto è in prova (ADR-0119), e un conto promosso la perde
+    return [(x["campo"], x.get("conto", "")) for x in C.conti_dei_recinti(testo, "pf1e")]
 
 
 class LeSchedeGiustePassano(unittest.TestCase):
@@ -250,21 +252,43 @@ class IlCancelloDeiModuli(unittest.TestCase):
         self.assertEqual(self._con({}), (0, 0))
 
     def test_un_numero_sbagliato_nel_giardino(self):
-        # Karkator: BMC +25 → +26; in prova avvisa, severo blocca
-        self.assertEqual(self._con({"appendice_creature.md": [("BMC +25", "BMC +26")]}), (0, 1))
+        # Karkator: BMC +25 → +26; il BMC è promosso (2026-11-25): blocca anche senza --severo
+        self.assertEqual(self._con({"appendice_creature.md": [("BMC +25", "BMC +26")]}), (1, 1))
 
     def test_un_numero_sbagliato_nel_drappo(self):
-        self.assertEqual(self._con({"STATBLOCCHI-PF1E.md": [("**CMB** +3", "**CMB** +2")]}), (0, 1))
+        self.assertEqual(self._con({"STATBLOCCHI-PF1E.md": [("**CMB** +3", "**CMB** +2")]}), (1, 1))
 
-    def test_un_conto_promosso_blocca_anche_senza_severo(self):
+    def test_un_conto_in_prova_avvisa_e_severo_blocca(self):
+        # il canale resta per i conti che verranno (ADR-0119): un conto che torna
+        # in prova avvisa (⚠) e non blocca, con --severo blocca
         regole = C.regole_conformita("pf1e")["conti"]
-        fatti, prova = list(regole["fatti"]), list(regole["in_prova"])
+        fatti, prova = list(regole["fatti"]), list(regole.get("in_prova", []))
         try:
-            regole["fatti"].append("BMC")
-            regole["in_prova"].remove("BMC")
-            self.assertEqual(self._con({"appendice_creature.md": [("BMC +25", "BMC +26")]}), (1, 1))
+            regole["fatti"].remove("BMC")
+            regole["in_prova"] = prova + ["BMC"]
+            self.assertEqual(self._con({"appendice_creature.md": [("BMC +25", "BMC +26")]}), (0, 1))
         finally:
-            regole["fatti"][:], regole["in_prova"][:] = fatti, prova
+            regole["fatti"][:], regole["in_prova"] = fatti, prova
+
+
+class IQuattordiciContiSonoStable(unittest.TestCase):
+    """Promozione del 2026-11-25 (ADR-0099, ADR-0119): i 14 conti in prova dal
+    2026-11-10 passano fra i `fatti`, e uno scarto dice ancora quale conto è."""
+
+    PROMOSSI = {"BMC", "DMC", "BAB", "TS", "contatto_sprovvista", "iniziativa_recinto",
+                "schivare", "scurovisione", "visione_crepuscolare", "corrompere_acqua",
+                "incanalare", "pf_bonus", "pf_misti", "cd_incantesimi"}
+
+    def test_i_quattordici_sono_fatti_e_nessuno_resta_in_prova(self):
+        conti = C.regole_conformita("pf1e")["conti"]
+        self.assertLessEqual(self.PROMOSSI, set(conti["fatti"]))
+        self.assertEqual(list(conti.get("in_prova", [])), [])
+
+    def test_uno_scarto_di_un_conto_fatto_porta_il_conto_e_non_la_prova(self):
+        (x,) = [x for x in C.conti_dei_recinti(CHIERICO.replace("BMC +10", "BMC +11"), "pf1e")
+                if x["campo"] == "BMC"]
+        self.assertEqual(x["conto"], "BMC")
+        self.assertNotIn("prova", x)
 
 
 if __name__ == "__main__":

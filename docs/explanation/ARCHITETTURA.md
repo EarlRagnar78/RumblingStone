@@ -966,11 +966,10 @@ stateDiagram-v2
     oldstable --> [*]: dopo tre mesi
 ```
 
-| Componente | Canale al 2026-11-10 |
+| Componente | Canale al 2026-11-25 |
 |---|---|
-| Python 3.13 (Debian 13), pytest, pip-audit, Dependabot, typst e pdfimpose da PyPI (ADR-0116); ruff, uv e il job dei convertitori dal 2026-11-08 (#353, misure in `plans/esperimenti/promozioni-2026-11-08/`) | stable |
-| pytest-xdist (fino al 2026-11-22), workflow Release, riscontro SRD (ADR-0103), shapely e i generatori delle città (ADR-0102), il job della suite su Python 3.14 (non bloccante) | testing |
-| Cancelli nuovi del motore e dei testi: marche sulle righe cambiate (`controlla_marche.py`, ADR-0109); cancello dei numeri (`--cancello-numeri`, ADR-0118, fino al 2026-11-23); i 14 conti PF1e `in_prova` (ADR-0119, dal 2026-11-23); la *d* eufonica (ADR-0120, fino al 2026-11-24); gli avvisi della scheda in `validate_skills` (ADR-0114) | testing: avvisano in CI, non bloccano |
+| Python 3.13 (Debian 13), pytest, pip-audit, Dependabot, typst e pdfimpose da PyPI (ADR-0116); ruff, uv e il job dei convertitori dal 2026-11-08 (#353, misure in `plans/esperimenti/promozioni-2026-11-08/`); dal 2026-11-25 pytest-xdist nel passo pytest del job principale e i cancelli delle marche sulle righe cambiate (`controlla_marche.py`, ADR-0109), della scheda in `validate_skills` (ADR-0114), dei numeri (`--cancello-numeri`, ADR-0118), dei 14 conti PF1e ora `fatti` (ADR-0119) e della *d* eufonica (ADR-0120), scelta del DM D8 (misure in `plans/esperimenti/promozioni-2026-11-25/`) | stable |
+| workflow Release, riscontro SRD (ADR-0103), shapely e i generatori delle città (ADR-0102), il job della suite su Python 3.14 (non bloccante) | testing |
 | `misura_plugin_regole.py` (ADR-0121), ancora in `plans/esperimenti/plugin-regole-2026-11-09/` | prova, fuori dalla CI |
 | spaCy, Stanza, LLM locale, mypy, sentence-transformers (`misura_ripetizioni_frasi`), transformers con un NLI multilingue (`misura_fedelta_nli`), tutti solo in locale | unstable |
 | NLI per le contraddizioni fra file, varianti dei nomi, numeri incrociati (provati due volte per ADR-0108) | non adottati: nessun guadagno misurato |
@@ -1032,8 +1031,8 @@ il DM ha davanti al tavolo.
 | CI, a ogni PR | nessuna lettura scaduta, nessun 🔴 senza stato | `python3 scripts/registro_letture.py --check` | registro delle letture | bloccante (avviso finché vuoto) |
 | chi fa il triage | una regola «a memoria» del giro è davvero nell'SRD | `python3 scripts/riscontro_srd.py riscontra FILE.yaml` | concorda, discorda, non trovata, con la citazione | testing (job `riscontro-srd`) |
 | CI, a ogni PR | i conti degli statblocchi, anche dei boss recintati di ADR-0091 | `python3 scripts/conformita_statblocchi.py --master` | pf, CA, CD, scurovisione che non tornano | cricchetto nei test (ADR-0108) |
-| CI, a ogni PR | le schede dei moduli PF1e con le regole del PRD: BAB, TS, BMC, DMC, contatto, sensi, incantesimi, incanalare (ADR-0119) | `python3 scripts/conformita_statblocchi.py --cancello-moduli` | ✗ sui conti `fatti`, ⚠ sui conti `in_prova`; `--severo` fa bloccare anche quelli | bloccante sui `fatti`, testing sugli `in_prova` (promozione dal 2026-11-23) |
-| CI, a ogni PR | la *d* eufonica fuori norma nei testi di contenuto (ADR-0120) | `python3 scripts/validate_lingua.py --d-eufonica` | ✗ con file, riga e forma corretta | testing, non bloccante (promozione dal 2026-11-24); nel passo bloccante è un avviso |
+| CI, a ogni PR | le schede dei moduli PF1e con le regole del PRD: BAB, TS, BMC, DMC, contatto, sensi, incantesimi, incanalare (ADR-0119) | `python3 scripts/conformita_statblocchi.py --cancello-moduli` | ✗ sui conti `fatti`, ⚠ su un conto `in_prova` (oggi nessuno); `--severo` fa bloccare anche quelli | bloccante: i 14 conti sono `fatti` dal 2026-11-25 |
+| CI, a ogni PR | la *d* eufonica fuori norma nei testi di contenuto (ADR-0120) | `python3 scripts/validate_lingua.py` | ✗ con file, riga e forma corretta | bloccante dal 2026-11-25, nel passo della lingua |
 | chi prepara la serata | al tavolo chi si incontra ha tutto nel capitolo | `python3 scripts/misura_standard_tavolo.py` | sei elementi per capitolo e persona, mappe, note di lavoro in stampa | indicatore; cricchetto sulle note |
 | chi prepara la serata | quante pagine sfoglia il DM per i numeri | `python3 scripts/misura_distanza_pagine.py PDF` | mediana delle distanze per persona | indicatore, a mano |
 | CI, a ogni PR | il volume ha la struttura degli AP: introduzioni, chiavi d'area, mappe vicine, appendici, ritratti (ADR-0122) | `python3 scripts/misura_distanza_pagine.py --volume --tutti --check` | ✗ per booklet e misura sotto la soglia dei riferimenti | testing, non bloccante (job `stampa-misurata`) |
@@ -1315,7 +1314,7 @@ flowchart TB
 - **Fatti.** La grammatica è una sola, in [GUIDA-MARCATURE](../reference/GUIDA-MARCATURE.md):
   un INFERRED porta la domanda e la base, un CANONE la data e il codice della
   decisione. `controlla_marche.py` guarda solo le righe cambiate da una PR e
-  in CI avvisa senza bloccare.
+  in CI blocca dal 2026-11-25.
 - **Termini.** Ogni nome italiano di una regola ha una riga nelle tabelle di
   `scripts/` con la sua fonte; sui talenti il cancello è a 0 sconosciuti, su
   incantesimi, abilità e oggetti per ora solo il conto (job `lessico-regole`).
@@ -1324,7 +1323,8 @@ flowchart TB
   CA, TS, BAB, lotta o BMC, attacco, iniziativa, CD e l'AU delle unità sul
   Bestiario, i master, i recinti e gli stand alone, contro un cricchetto.
   Le schede PF1e si contano con le regole che `estrai_prd_pf1e.py` genera dal
-  PRD; i 14 conti nuovi partono `in_prova`.
+  PRD; i 14 conti nuovi sono partiti `in_prova` e sono `fatti`, quindi
+  bloccanti, dal 2026-11-25.
 - **Tabelle.** Le tabelle dei plugin si misurano contro la fonte e non contro
   la loro dichiarazione: al 2026-11-10, dopo i lotti delle regole complete, dnd35
   ha 790 righe giuste su 791 verificabili e pf1e 217 su 217. Una divergenza voluta dal DM (il livello

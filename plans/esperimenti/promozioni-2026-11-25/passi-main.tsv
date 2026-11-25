@@ -1,0 +1,619 @@
+2026-11-08T08:38:05Z	42463765089	18f63d7f	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-08T08:59:45Z	42465245964	d0cc674b	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 31 warning(s)
+2026-11-08T09:36:37Z	42467914863	c40bb036	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 31 warning(s)
+2026-11-08T10:09:09Z	42470188023	c83b95a6	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 31 warning(s)
+2026-11-08T10:26:17Z	42471424305	4c04629c	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 31 warning(s)
+2026-11-08T11:36:20Z	42476489605	29056bfa	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 31 warning(s)
+2026-11-08T13:46:49Z	42486570914	4640c592	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-08T13:58:04Z	42487451154	9693d447	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-08T14:31:23Z	42490213791	3d4ed9f8	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-08T15:16:30Z	42493967982	815cacf1	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-08T15:30:56Z	42495186710	b6e93245	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-08T15:43:13Z	42496229460	6b5f413c	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-08T15:53:21Z	42497067742	02242675	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-08T16:11:20Z	42498600247	aedccb68	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-08T16:33:44Z	42500519025	d125739c	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-08T19:56:21Z	42517527086	aee16d04	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna (saltati perché manca la regola: corrompere_acqua, lotta, scurovisione)
+2026-11-08T19:56:21Z	42517527086	aee16d04	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-08T21:13:42Z	42524135813	70a398c9	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna (saltati perché manca la regola: corrompere_acqua, lotta, scurovisione)
+2026-11-08T21:13:42Z	42524135813	70a398c9	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-08T21:31:19Z	42525619004	1f29351e	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna (saltati perché manca la regola: corrompere_acqua, lotta, scurovisione)
+2026-11-08T21:31:19Z	42525619004	1f29351e	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-08T21:45:48Z	42526809769	125e535f	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna (saltati perché manca la regola: corrompere_acqua, lotta, scurovisione)
+2026-11-08T21:45:48Z	42526809769	125e535f	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-08T21:57:37Z	42527772819	ddb6897b	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna (saltati perché manca la regola: corrompere_acqua, lotta, scurovisione)
+2026-11-08T21:57:37Z	42527772819	ddb6897b	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-09T06:26:57Z	42573081289	09b8c0ac	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna (saltati perché manca la regola: corrompere_acqua, lotta, scurovisione)
+2026-11-09T06:26:57Z	42573081289	09b8c0ac	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-09T07:07:44Z	42577322127	f9d3c2db	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna (saltati perché manca la regola: corrompere_acqua, lotta, scurovisione)
+2026-11-09T07:07:44Z	42577322127	f9d3c2db	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-09T11:40:03Z	42610839503	a57b2266	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna (saltati perché manca la regola: corrompere_acqua, lotta, scurovisione)
+2026-11-09T11:40:03Z	42610839503	a57b2266	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-09T11:51:50Z	42612355802	efceebca	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna (saltati perché manca la regola: corrompere_acqua, lotta, scurovisione)
+2026-11-09T11:51:50Z	42612355802	efceebca	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-09T12:06:14Z	42614214145	19c86702	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna (saltati perché manca la regola: corrompere_acqua, lotta, scurovisione)
+2026-11-09T12:06:14Z	42614214145	19c86702	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-09T22:07:10Z	42708886654	c1091239	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna (saltati perché manca la regola: corrompere_acqua, lotta, scurovisione)
+2026-11-09T22:07:10Z	42708886654	c1091239	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-09T22:21:29Z	42711144210	04dbf0bd	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna (saltati perché manca la regola: corrompere_acqua, lotta, scurovisione)
+2026-11-09T22:21:29Z	42711144210	04dbf0bd	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-10T00:17:18Z	42727140962	421dbd07	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna (saltati perché manca la regola: corrompere_acqua, lotta, scurovisione)
+2026-11-10T00:17:18Z	42727140962	421dbd07	validate	numeri	0	1	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-10T00:17:18Z	42727140962	421dbd07	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-10T00:38:35Z	42729851946	8598d673	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-10T00:38:35Z	42729851946	8598d673	validate	numeri	0	1	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-10T00:38:35Z	42729851946	8598d673	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-10T03:38:36Z	42750768173	3064e732	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-10T03:38:36Z	42750768173	3064e732	validate	numeri	0	1	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-10T03:38:36Z	42750768173	3064e732	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-10T05:40:30Z	42763598632	e8299b2d	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-10T05:40:30Z	42763598632	e8299b2d	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-10T05:40:30Z	42763598632	e8299b2d	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-10T05:57:17Z	42765308965	873bacc2	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-10T05:57:17Z	42765308965	873bacc2	validate	numeri	0	2	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-10T05:57:17Z	42765308965	873bacc2	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-10T06:23:34Z	42768195098	f65d78ef	validate	deuf	0	6	✓ validate_lingua: 692 file — nessun refuso (2417 avvisi)
+2026-11-10T06:23:34Z	42768195098	f65d78ef	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-10T06:23:34Z	42768195098	f65d78ef	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-10T06:23:34Z	42768195098	f65d78ef	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-10T08:55:30Z	42786438029	c185b115	validate	deuf	0	5	✓ validate_lingua: 692 file — nessun refuso (2417 avvisi)
+2026-11-10T08:55:30Z	42786438029	c185b115	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-10T08:55:30Z	42786438029	c185b115	validate	numeri	0	2	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-10T08:55:30Z	42786438029	c185b115	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-10T09:18:55Z	42789664174	3d3e3567	validate	deuf	0	6	✓ validate_lingua: 692 file — nessun refuso (2417 avvisi)
+2026-11-10T09:18:55Z	42789664174	3d3e3567	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-10T09:18:55Z	42789664174	3d3e3567	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-10T09:18:55Z	42789664174	3d3e3567	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-10T09:29:47Z	42791176715	d9a551e4	validate	deuf	0	3	✓ validate_lingua: 692 file — nessun refuso (2417 avvisi)
+2026-11-10T09:29:47Z	42791176715	d9a551e4	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-10T09:29:47Z	42791176715	d9a551e4	validate	numeri	0	1	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-10T09:29:47Z	42791176715	d9a551e4	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-10T09:40:40Z	42792707535	7820ab31	validate	deuf	0	6	✓ validate_lingua: 692 file — nessun refuso (2417 avvisi)
+2026-11-10T09:40:40Z	42792707535	7820ab31	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-10T09:40:40Z	42792707535	7820ab31	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-10T09:40:40Z	42792707535	7820ab31	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-10T09:51:46Z	42794247600	0f70d7c1	validate	deuf	0	6	✓ validate_lingua: 692 file — nessun refuso (2417 avvisi)
+2026-11-10T09:51:46Z	42794247600	0f70d7c1	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-10T09:51:46Z	42794247600	0f70d7c1	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-10T09:51:46Z	42794247600	0f70d7c1	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-12T07:06:01Z	43172767487	43656328	validate	deuf	0	5	✓ validate_lingua: 692 file — nessun refuso (2417 avvisi)
+2026-11-12T07:06:01Z	43172767487	43656328	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-12T07:06:01Z	43172767487	43656328	validate	numeri	0	2	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-12T07:06:01Z	43172767487	43656328	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-12T11:04:47Z	43205980868	b23fd0d0	validate	deuf	0	3	✓ validate_lingua: 692 file — nessun refuso (2417 avvisi)
+2026-11-12T11:04:47Z	43205980868	b23fd0d0	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-12T11:04:47Z	43205980868	b23fd0d0	validate	numeri	0	2	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-12T11:04:47Z	43205980868	b23fd0d0	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-12T11:21:52Z	43208504800	c2cc7756	validate	deuf	0	6	✓ validate_lingua: 692 file — nessun refuso (2417 avvisi)
+2026-11-12T11:21:52Z	43208504800	c2cc7756	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-12T11:21:52Z	43208504800	c2cc7756	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-12T11:21:52Z	43208504800	c2cc7756	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-12T11:39:57Z	43211091537	66ce69b6	validate	deuf	0	6	✓ validate_lingua: 692 file — nessun refuso (2417 avvisi)
+2026-11-12T11:39:57Z	43211091537	66ce69b6	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-12T11:39:57Z	43211091537	66ce69b6	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-12T11:39:57Z	43211091537	66ce69b6	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-12T11:54:30Z	43213166549	ba8b8edf	validate	deuf	0	6	✓ validate_lingua: 692 file — nessun refuso (2417 avvisi)
+2026-11-12T11:54:30Z	43213166549	ba8b8edf	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-12T11:54:30Z	43213166549	ba8b8edf	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-12T11:54:30Z	43213166549	ba8b8edf	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-12T12:13:09Z	43215894188	83d8cf4e	validate	deuf	0	4	✓ validate_lingua: 692 file — nessun refuso (2417 avvisi)
+2026-11-12T12:13:09Z	43215894188	83d8cf4e	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-12T12:13:09Z	43215894188	83d8cf4e	validate	numeri	0	2	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-12T12:13:09Z	43215894188	83d8cf4e	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-12T14:50:20Z	43241354113	21400285	validate	deuf	0	8	✓ validate_lingua: 692 file — nessun refuso (2465 avvisi)
+2026-11-12T14:50:20Z	43241354113	21400285	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-12T14:50:20Z	43241354113	21400285	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-12T14:50:20Z	43241354113	21400285	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-12T15:04:11Z	43243782942	942899b5	validate	deuf	0	7	✓ validate_lingua: 692 file — nessun refuso (2465 avvisi)
+2026-11-12T15:04:11Z	43243782942	942899b5	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-12T15:04:11Z	43243782942	942899b5	validate	numeri	0	2	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-12T15:04:11Z	43243782942	942899b5	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-12T15:42:49Z	43250758200	ff9308a7	validate	deuf	0	7	✓ validate_lingua: 692 file — nessun refuso (2465 avvisi)
+2026-11-12T15:42:49Z	43250758200	ff9308a7	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-12T15:42:49Z	43250758200	ff9308a7	validate	numeri	0	2	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-12T15:42:49Z	43250758200	ff9308a7	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-12T15:59:52Z	43253809888	f33282c0	validate	deuf	0	10	✓ validate_lingua: 692 file — nessun refuso (2465 avvisi)
+2026-11-12T15:59:52Z	43253809888	f33282c0	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-12T15:59:52Z	43253809888	f33282c0	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-12T15:59:52Z	43253809888	f33282c0	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-12T16:31:13Z	43259543613	1387b7ab	validate	deuf	0	8	✓ validate_lingua: 692 file — nessun refuso (2465 avvisi)
+2026-11-12T16:31:13Z	43259543613	1387b7ab	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-12T16:31:13Z	43259543613	1387b7ab	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-12T16:31:13Z	43259543613	1387b7ab	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-12T16:49:06Z	43262785497	74a6cf80	validate	deuf	0	8	✓ validate_lingua: 692 file — nessun refuso (2465 avvisi)
+2026-11-12T16:49:06Z	43262785497	74a6cf80	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-12T16:49:06Z	43262785497	74a6cf80	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-12T16:49:06Z	43262785497	74a6cf80	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-12T17:07:10Z	43266009032	9852486a	validate	deuf	0	9	✓ validate_lingua: 692 file — nessun refuso (2465 avvisi)
+2026-11-12T17:07:10Z	43266009032	9852486a	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-12T17:07:10Z	43266009032	9852486a	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-12T17:07:10Z	43266009032	9852486a	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-12T19:32:42Z	43291240263	813213e4	validate	deuf	0	6	✓ validate_lingua: 692 file — nessun refuso (2465 avvisi)
+2026-11-12T19:32:42Z	43291240263	813213e4	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-12T19:32:42Z	43291240263	813213e4	validate	numeri	0	2	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-12T19:32:42Z	43291240263	813213e4	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-12T20:04:04Z	43296549201	d6c3740e	validate	deuf	0	8	✓ validate_lingua: 692 file — nessun refuso (2465 avvisi)
+2026-11-12T20:04:04Z	43296549201	d6c3740e	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-12T20:04:04Z	43296549201	d6c3740e	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-12T20:04:04Z	43296549201	d6c3740e	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-12T20:19:03Z	43299083745	591dd927	validate	deuf	0	10	✓ validate_lingua: 692 file — nessun refuso (2465 avvisi)
+2026-11-12T20:19:03Z	43299083745	591dd927	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-12T20:19:03Z	43299083745	591dd927	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-12T20:19:03Z	43299083745	591dd927	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-12T20:33:58Z	43301559362	e91f826b	validate	deuf	0	6	✓ validate_lingua: 692 file — nessun refuso (2465 avvisi)
+2026-11-12T20:33:58Z	43301559362	e91f826b	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-12T20:33:58Z	43301559362	e91f826b	validate	numeri	0	2	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-12T20:33:58Z	43301559362	e91f826b	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-12T20:48:39Z	43303971666	837876d6	validate	deuf	0	11	✓ validate_lingua: 692 file — nessun refuso (2465 avvisi)
+2026-11-12T20:48:39Z	43303971666	837876d6	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-12T20:48:39Z	43303971666	837876d6	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-12T20:48:39Z	43303971666	837876d6	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T08:57:18Z	43397291845	2922b5c4	validate	deuf	0	6	✓ validate_lingua: 692 file — nessun refuso (2465 avvisi)
+2026-11-13T08:57:18Z	43397291845	2922b5c4	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T08:57:18Z	43397291845	2922b5c4	validate	numeri	0	2	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T08:57:18Z	43397291845	2922b5c4	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T09:25:53Z	43401252191	b6bae7be	validate	deuf	0	9	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T09:25:53Z	43401252191	b6bae7be	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T09:25:53Z	43401252191	b6bae7be	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T09:25:53Z	43401252191	b6bae7be	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T09:48:22Z	43404336361	3cc11aee	validate	deuf	0	8	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T09:48:22Z	43404336361	3cc11aee	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T09:48:22Z	43404336361	3cc11aee	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T09:48:22Z	43404336361	3cc11aee	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T10:08:36Z	43406860350	43d42b96	validate	deuf	0	9	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T10:08:36Z	43406860350	43d42b96	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T10:08:36Z	43406860350	43d42b96	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T10:08:36Z	43406860350	43d42b96	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T10:32:04Z	43409784680	4fdbd914	validate	deuf	0	11	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T10:32:04Z	43409784680	4fdbd914	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T10:32:04Z	43409784680	4fdbd914	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T10:32:04Z	43409784680	4fdbd914	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T13:30:20Z	43434209076	726b590c	validate	deuf	0	8	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T13:30:20Z	43434209076	726b590c	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T13:30:20Z	43434209076	726b590c	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T13:30:20Z	43434209076	726b590c	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T13:45:17Z	43436411822	3123b876	validate	deuf	0	11	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T13:45:17Z	43436411822	3123b876	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T13:45:17Z	43436411822	3123b876	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T13:45:17Z	43436411822	3123b876	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T15:07:57Z	43449478160	32bfbfdc	validate	deuf	0	8	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T15:07:57Z	43449478160	32bfbfdc	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T15:07:57Z	43449478160	32bfbfdc	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T15:07:57Z	43449478160	32bfbfdc	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T15:50:49Z	43456686513	66eb31d0	validate	deuf	0	8	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T15:50:49Z	43456686513	66eb31d0	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T15:50:49Z	43456686513	66eb31d0	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T15:50:49Z	43456686513	66eb31d0	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T16:29:55Z	43463289382	9f019c18	validate	deuf	0	9	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T16:29:55Z	43463289382	9f019c18	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T16:29:55Z	43463289382	9f019c18	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T16:29:55Z	43463289382	9f019c18	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T16:55:24Z	43467575712	0c25ab2d	validate	deuf	0	10	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T16:55:24Z	43467575712	0c25ab2d	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T16:55:24Z	43467575712	0c25ab2d	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T16:55:24Z	43467575712	0c25ab2d	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T17:19:28Z	43471653581	aafe866d	validate	deuf	0	11	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T17:19:28Z	43471653581	aafe866d	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T17:19:28Z	43471653581	aafe866d	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T17:19:28Z	43471653581	aafe866d	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T18:00:11Z	43478298729	9cdeacb5	validate	deuf	0	11	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T18:00:11Z	43478298729	9cdeacb5	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T18:00:11Z	43478298729	9cdeacb5	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T18:00:11Z	43478298729	9cdeacb5	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T18:27:59Z	43482894949	da759a51	validate	deuf	0	11	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T18:27:59Z	43482894949	da759a51	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T18:27:59Z	43482894949	da759a51	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T18:27:59Z	43482894949	da759a51	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T18:49:42Z	43486370294	cc18206e	validate	deuf	0	8	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T18:49:42Z	43486370294	cc18206e	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T18:49:42Z	43486370294	cc18206e	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T18:49:42Z	43486370294	cc18206e	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T19:13:24Z	43490142784	5bf662de	validate	deuf	0	7	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T19:13:24Z	43490142784	5bf662de	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T19:13:24Z	43490142784	5bf662de	validate	numeri	0	2	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T19:13:24Z	43490142784	5bf662de	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T19:40:35Z	43494435119	2189013c	validate	deuf	0	6	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T19:40:35Z	43494435119	2189013c	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T19:40:35Z	43494435119	2189013c	validate	numeri	0	2	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T19:40:35Z	43494435119	2189013c	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T20:15:03Z	43499797573	d3e795af	validate	deuf	0	9	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T20:15:03Z	43499797573	d3e795af	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T20:15:03Z	43499797573	d3e795af	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T20:15:03Z	43499797573	d3e795af	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T20:43:49Z	43504226805	b58d3e7c	validate	deuf	0	11	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T20:43:49Z	43504226805	b58d3e7c	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T20:43:49Z	43504226805	b58d3e7c	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T20:43:49Z	43504226805	b58d3e7c	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T21:05:12Z	43507471096	2ae6a922	validate	deuf	0	6	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T21:05:12Z	43507471096	2ae6a922	validate	moduli	0	0	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T21:05:12Z	43507471096	2ae6a922	validate	numeri	0	2	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T21:05:12Z	43507471096	2ae6a922	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T21:33:43Z	43511777624	683480af	validate	deuf	0	9	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T21:33:43Z	43511777624	683480af	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T21:33:43Z	43511777624	683480af	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T21:33:43Z	43511777624	683480af	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T22:06:37Z	43516515414	8a87996f	validate	deuf	0	7	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T22:06:37Z	43516515414	8a87996f	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T22:06:37Z	43516515414	8a87996f	validate	numeri	0	2	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T22:06:37Z	43516515414	8a87996f	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T22:33:02Z	43520181364	1c5133a9	validate	deuf	0	7	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T22:33:02Z	43520181364	1c5133a9	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T22:33:02Z	43520181364	1c5133a9	validate	numeri	0	2	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T22:33:02Z	43520181364	1c5133a9	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T23:02:51Z	43524097655	c33709e2	validate	deuf	0	7	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T23:02:51Z	43524097655	c33709e2	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T23:02:51Z	43524097655	c33709e2	validate	numeri	0	2	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T23:02:51Z	43524097655	c33709e2	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-13T23:28:35Z	43527380984	e72b4325	validate	deuf	0	8	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-13T23:28:35Z	43527380984	e72b4325	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-13T23:28:35Z	43527380984	e72b4325	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-13T23:28:35Z	43527380984	e72b4325	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T04:03:13Z	43554695932	532e5da1	validate	deuf	0	8	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-14T04:03:13Z	43554695932	532e5da1	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T04:03:13Z	43554695932	532e5da1	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T04:03:13Z	43554695932	532e5da1	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T08:17:11Z	43575084934	5cf4f18e	validate	deuf	0	8	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-14T08:17:11Z	43575084934	5cf4f18e	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T08:17:11Z	43575084934	5cf4f18e	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T08:17:11Z	43575084934	5cf4f18e	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T08:34:10Z	43576440303	744e04df	validate	deuf	0	8	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-14T08:34:10Z	43576440303	744e04df	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T08:34:10Z	43576440303	744e04df	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T08:34:10Z	43576440303	744e04df	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T09:00:32Z	43578457825	4eece4ad	validate	deuf	0	8	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-14T09:00:32Z	43578457825	4eece4ad	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T09:00:32Z	43578457825	4eece4ad	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T09:00:32Z	43578457825	4eece4ad	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T09:22:00Z	43580209847	bd2ba318	validate	deuf	0	8	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-14T09:22:00Z	43580209847	bd2ba318	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T09:22:00Z	43580209847	bd2ba318	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T09:22:00Z	43580209847	bd2ba318	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T09:58:59Z	43583067963	91a34b37	validate	deuf	0	11	✓ validate_lingua: 694 file — nessun refuso (2465 avvisi)
+2026-11-14T09:58:59Z	43583067963	91a34b37	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T09:58:59Z	43583067963	91a34b37	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T09:58:59Z	43583067963	91a34b37	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T10:20:37Z	43584824339	7c27cb20	validate	deuf	0	6	✓ validate_lingua: 695 file — nessun refuso (2465 avvisi)
+2026-11-14T10:20:37Z	43584824339	7c27cb20	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T10:20:37Z	43584824339	7c27cb20	validate	numeri	0	2	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T10:20:37Z	43584824339	7c27cb20	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T10:41:18Z	43586453718	74ab8c8d	validate	deuf	0	8	✓ validate_lingua: 696 file — nessun refuso (2465 avvisi)
+2026-11-14T10:41:18Z	43586453718	74ab8c8d	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T10:41:18Z	43586453718	74ab8c8d	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T10:41:18Z	43586453718	74ab8c8d	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T13:35:15Z	43600513669	a3d01520	validate	deuf	0	8	✓ validate_lingua: 696 file — nessun refuso (2465 avvisi)
+2026-11-14T13:35:15Z	43600513669	a3d01520	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T13:35:15Z	43600513669	a3d01520	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T13:35:15Z	43600513669	a3d01520	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T13:56:36Z	43602271074	2fc24cde	validate	deuf	0	11	✓ validate_lingua: 696 file — nessun refuso (2465 avvisi)
+2026-11-14T13:56:36Z	43602271074	2fc24cde	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T13:56:36Z	43602271074	2fc24cde	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T13:56:36Z	43602271074	2fc24cde	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T14:30:33Z	43605212720	7193c7b7	validate	deuf	0	9	✓ validate_lingua: 696 file — nessun refuso (2465 avvisi)
+2026-11-14T14:30:33Z	43605212720	7193c7b7	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T14:30:33Z	43605212720	7193c7b7	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T14:30:33Z	43605212720	7193c7b7	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T15:43:09Z	43611674286	ac62e0b6	validate	deuf	0	11	✓ validate_lingua: 696 file — nessun refuso (2465 avvisi)
+2026-11-14T15:43:09Z	43611674286	ac62e0b6	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T15:43:09Z	43611674286	ac62e0b6	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T15:43:09Z	43611674286	ac62e0b6	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T16:12:17Z	43614315045	bff08716	validate	deuf	0	8	✓ validate_lingua: 696 file — nessun refuso (2465 avvisi)
+2026-11-14T16:12:17Z	43614315045	bff08716	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T16:12:17Z	43614315045	bff08716	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T16:12:17Z	43614315045	bff08716	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T16:47:22Z	43617511787	676f296f	validate	deuf	0	7	✓ validate_lingua: 696 file — nessun refuso (2465 avvisi)
+2026-11-14T16:47:22Z	43617511787	676f296f	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T16:47:22Z	43617511787	676f296f	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T16:47:22Z	43617511787	676f296f	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T18:15:29Z	43625580227	920259b0	validate	deuf	0	10	✓ validate_lingua: 696 file — nessun refuso (2465 avvisi)
+2026-11-14T18:15:29Z	43625580227	920259b0	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T18:15:29Z	43625580227	920259b0	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T18:15:29Z	43625580227	920259b0	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T18:51:55Z	43628952655	99c09bb6	validate	deuf	0	8	✓ validate_lingua: 696 file — nessun refuso (2465 avvisi)
+2026-11-14T18:51:55Z	43628952655	99c09bb6	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T18:51:55Z	43628952655	99c09bb6	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T18:51:55Z	43628952655	99c09bb6	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T19:30:10Z	43632422278	af9d9a10	validate	deuf	0	11	✓ validate_lingua: 696 file — nessun refuso (2465 avvisi)
+2026-11-14T19:30:10Z	43632422278	af9d9a10	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T19:30:10Z	43632422278	af9d9a10	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T19:30:10Z	43632422278	af9d9a10	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T19:56:54Z	43634825669	ce805024	validate	deuf	0	7	✓ validate_lingua: 696 file — nessun refuso (2465 avvisi)
+2026-11-14T19:56:54Z	43634825669	ce805024	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T19:56:54Z	43634825669	ce805024	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T19:56:54Z	43634825669	ce805024	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T20:29:57Z	43637794139	2ade1d5c	validate	deuf	0	11	✓ validate_lingua: 696 file — nessun refuso (2465 avvisi)
+2026-11-14T20:29:57Z	43637794139	2ade1d5c	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T20:29:57Z	43637794139	2ade1d5c	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T20:29:57Z	43637794139	2ade1d5c	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T21:12:24Z	43641567721	b448fd33	validate	deuf	0	7	✓ validate_lingua: 696 file — nessun refuso (2465 avvisi)
+2026-11-14T21:12:24Z	43641567721	b448fd33	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T21:12:24Z	43641567721	b448fd33	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T21:12:24Z	43641567721	b448fd33	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T21:42:06Z	43644197728	e88959fd	validate	deuf	0	11	✓ validate_lingua: 696 file — nessun refuso (2465 avvisi)
+2026-11-14T21:42:06Z	43644197728	e88959fd	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T21:42:06Z	43644197728	e88959fd	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T21:42:06Z	43644197728	e88959fd	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T22:22:38Z	43647771643	4e40d6c7	validate	deuf	0	7	✓ validate_lingua: 696 file — nessun refuso (2465 avvisi)
+2026-11-14T22:22:38Z	43647771643	4e40d6c7	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T22:22:38Z	43647771643	4e40d6c7	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T22:22:38Z	43647771643	4e40d6c7	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-14T23:41:13Z	43654469134	fc4c9587	validate	deuf	0	11	✓ validate_lingua: 698 file — nessun refuso (2467 avvisi)
+2026-11-14T23:41:13Z	43654469134	fc4c9587	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-14T23:41:13Z	43654469134	fc4c9587	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-14T23:41:13Z	43654469134	fc4c9587	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-15T00:17:18Z	43657423767	4be03db1	validate	deuf	0	6	✓ validate_lingua: 698 file — nessun refuso (2467 avvisi)
+2026-11-15T00:17:18Z	43657423767	4be03db1	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-15T00:17:18Z	43657423767	4be03db1	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-15T00:17:18Z	43657423767	4be03db1	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-15T00:40:51Z	43659374898	fc5c1a8e	validate	deuf	0	7	✓ validate_lingua: 698 file — nessun refuso (2467 avvisi)
+2026-11-15T00:40:51Z	43659374898	fc5c1a8e	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-15T00:40:51Z	43659374898	fc5c1a8e	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-15T00:40:51Z	43659374898	fc5c1a8e	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-15T01:39:58Z	43664151213	53d48bfe	validate	deuf	0	7	✓ validate_lingua: 698 file — nessun refuso (2467 avvisi)
+2026-11-15T01:39:58Z	43664151213	53d48bfe	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-15T01:39:58Z	43664151213	53d48bfe	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-15T01:39:58Z	43664151213	53d48bfe	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-15T01:56:58Z	43665441575	e99ebcf8	validate	deuf	0	9	✓ validate_lingua: 698 file — nessun refuso (2462 avvisi)
+2026-11-15T01:56:58Z	43665441575	e99ebcf8	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-15T01:56:58Z	43665441575	e99ebcf8	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-15T01:56:58Z	43665441575	e99ebcf8	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-15T02:28:37Z	43667958763	5fb61280	validate	deuf	0	9	✓ validate_lingua: 698 file — nessun refuso (2462 avvisi)
+2026-11-15T02:28:37Z	43667958763	5fb61280	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-15T02:28:37Z	43667958763	5fb61280	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-15T02:28:37Z	43667958763	5fb61280	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-15T08:10:52Z	43693288529	78b3dfb2	validate	deuf	0	11	✓ validate_lingua: 698 file — nessun refuso (2462 avvisi)
+2026-11-15T08:10:52Z	43693288529	78b3dfb2	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-15T08:10:52Z	43693288529	78b3dfb2	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-15T08:10:52Z	43693288529	78b3dfb2	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-15T09:51:10Z	43701224773	c0c5206a	validate	deuf	0	11	✓ validate_lingua: 698 file — nessun refuso (2462 avvisi)
+2026-11-15T09:51:10Z	43701224773	c0c5206a	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-15T09:51:10Z	43701224773	c0c5206a	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 75 file non ancora coperti)
+2026-11-15T09:51:10Z	43701224773	c0c5206a	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-15T10:18:09Z	43703405337	8171db3e	validate	deuf	0	7	✓ validate_lingua: 698 file — nessun refuso (2462 avvisi)
+2026-11-15T10:18:09Z	43703405337	8171db3e	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-15T10:18:09Z	43703405337	8171db3e	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-15T10:18:09Z	43703405337	8171db3e	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-15T10:56:03Z	43706447606	26137052	validate	deuf	0	11	✓ validate_lingua: 698 file — nessun refuso (2462 avvisi)
+2026-11-15T10:56:03Z	43706447606	26137052	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-15T10:56:03Z	43706447606	26137052	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-15T10:56:03Z	43706447606	26137052	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-15T12:46:08Z	43715514527	89721f9d	validate	deuf	0	7	✓ validate_lingua: 698 file — nessun refuso (2462 avvisi)
+2026-11-15T12:46:08Z	43715514527	89721f9d	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-15T12:46:08Z	43715514527	89721f9d	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-15T12:46:08Z	43715514527	89721f9d	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-15T13:59:29Z	43721873768	95929a18	validate	deuf	0	7	✓ validate_lingua: 698 file — nessun refuso (2462 avvisi)
+2026-11-15T13:59:29Z	43721873768	95929a18	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-15T13:59:29Z	43721873768	95929a18	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-15T13:59:29Z	43721873768	95929a18	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-15T14:59:04Z	43727296055	a880dc1f	validate	deuf	0	8	✓ validate_lingua: 698 file — nessun refuso (2462 avvisi)
+2026-11-15T14:59:04Z	43727296055	a880dc1f	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-15T14:59:04Z	43727296055	a880dc1f	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-15T14:59:04Z	43727296055	a880dc1f	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-15T22:49:24Z	43771409951	66e0b17d	validate	deuf	0	7	✓ validate_lingua: 698 file — nessun refuso (2462 avvisi)
+2026-11-15T22:49:24Z	43771409951	66e0b17d	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-15T22:49:24Z	43771409951	66e0b17d	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-15T22:49:24Z	43771409951	66e0b17d	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-15T23:25:40Z	43774737600	e84541a9	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-15T23:25:40Z	43774737600	e84541a9	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-15T23:25:40Z	43774737600	e84541a9	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-15T23:25:40Z	43774737600	e84541a9	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-15T23:56:50Z	43777517383	3ff97fad	validate	deuf	0	8	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-15T23:56:50Z	43777517383	3ff97fad	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-15T23:56:50Z	43777517383	3ff97fad	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-15T23:56:50Z	43777517383	3ff97fad	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-16T00:18:55Z	43779633230	2abe7855	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-16T00:18:55Z	43779633230	2abe7855	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-16T00:18:55Z	43779633230	2abe7855	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-16T00:18:55Z	43779633230	2abe7855	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-16T00:49:50Z	43782673794	145e465f	validate	deuf	0	9	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-16T00:49:50Z	43782673794	145e465f	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-16T00:49:50Z	43782673794	145e465f	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-16T00:49:50Z	43782673794	145e465f	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-16T01:12:42Z	43784903782	91a4f1be	validate	deuf	0	8	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-16T01:12:42Z	43784903782	91a4f1be	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-16T01:12:42Z	43784903782	91a4f1be	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-16T01:12:42Z	43784903782	91a4f1be	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-16T08:23:26Z	43830809525	af28c7ea	validate	deuf	0	11	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-16T08:23:26Z	43830809525	af28c7ea	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-16T08:23:26Z	43830809525	af28c7ea	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-16T08:23:26Z	43830809525	af28c7ea	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-16T18:15:25Z	43926900810	8cf54678	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-16T18:15:25Z	43926900810	8cf54678	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-16T18:15:25Z	43926900810	8cf54678	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-16T18:15:25Z	43926900810	8cf54678	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-17T11:56:57Z	44078583083	ec5fca70	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-17T11:56:57Z	44078583083	ec5fca70	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-17T11:56:57Z	44078583083	ec5fca70	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-17T11:56:57Z	44078583083	ec5fca70	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-17T21:32:34Z	44180882959	5612f69c	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-17T21:32:34Z	44180882959	5612f69c	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-17T21:32:34Z	44180882959	5612f69c	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-17T21:32:34Z	44180882959	5612f69c	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-17T22:09:07Z	44187152022	6951f2b2	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-17T22:09:07Z	44187152022	6951f2b2	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-17T22:09:07Z	44187152022	6951f2b2	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-17T22:09:07Z	44187152022	6951f2b2	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-17T22:31:27Z	44190877418	1dceb986	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-17T22:31:27Z	44190877418	1dceb986	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-17T22:31:27Z	44190877418	1dceb986	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-17T22:31:27Z	44190877418	1dceb986	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-17T23:10:03Z	44196920367	02b1764e	validate	deuf	0	11	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-17T23:10:03Z	44196920367	02b1764e	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-17T23:10:03Z	44196920367	02b1764e	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-17T23:10:03Z	44196920367	02b1764e	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-17T23:37:49Z	44201043495	ea63a192	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-17T23:37:49Z	44201043495	ea63a192	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-17T23:37:49Z	44201043495	ea63a192	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-17T23:37:49Z	44201043495	ea63a192	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-18T00:23:24Z	44207411461	1908471a	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-18T00:23:24Z	44207411461	1908471a	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-18T00:23:24Z	44207411461	1908471a	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-18T00:23:24Z	44207411461	1908471a	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-18T00:59:21Z	44212265966	2959bb6c	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-18T00:59:21Z	44212265966	2959bb6c	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-18T00:59:21Z	44212265966	2959bb6c	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-18T00:59:21Z	44212265966	2959bb6c	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-18T01:33:54Z	44216769234	c9159831	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-18T01:33:54Z	44216769234	c9159831	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-18T01:33:54Z	44216769234	c9159831	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-18T01:33:54Z	44216769234	c9159831	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-18T12:44:12Z	44306763552	44f0cbc7	validate	deuf	0	6	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-18T12:44:12Z	44306763552	44f0cbc7	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-18T12:44:12Z	44306763552	44f0cbc7	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-18T12:44:12Z	44306763552	44f0cbc7	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-18T17:43:06Z	44361748789	3b414589	validate	deuf	0	6	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-18T17:43:06Z	44361748789	3b414589	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-18T17:43:06Z	44361748789	3b414589	validate	numeri	0	2	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-18T17:43:06Z	44361748789	3b414589	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-18T18:04:09Z	44365608357	7b0587f4	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-18T18:04:09Z	44365608357	7b0587f4	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-18T18:04:09Z	44365608357	7b0587f4	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-18T18:04:09Z	44365608357	7b0587f4	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-18T18:34:49Z	44371254155	da04ea71	validate	deuf	0	11	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-18T18:34:49Z	44371254155	da04ea71	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-18T18:34:49Z	44371254155	da04ea71	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-18T18:34:49Z	44371254155	da04ea71	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-18T18:58:30Z	44375476584	1da2233d	validate	deuf	0	11	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-18T18:58:30Z	44375476584	1da2233d	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-18T18:58:30Z	44375476584	1da2233d	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-18T18:58:30Z	44375476584	1da2233d	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-18T19:22:44Z	44379886178	1295e3a8	validate	deuf	0	6	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-18T19:22:44Z	44379886178	1295e3a8	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-18T19:22:44Z	44379886178	1295e3a8	validate	numeri	0	2	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-18T19:22:44Z	44379886178	1295e3a8	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-18T23:05:48Z	44417692034	4588bc5f	validate	deuf	0	8	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-18T23:05:48Z	44417692034	4588bc5f	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-18T23:05:48Z	44417692034	4588bc5f	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-18T23:05:48Z	44417692034	4588bc5f	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-18T23:38:19Z	44422450362	6f0e135b	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-18T23:38:19Z	44422450362	6f0e135b	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-18T23:38:19Z	44422450362	6f0e135b	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-18T23:38:19Z	44422450362	6f0e135b	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T00:01:47Z	44425648986	487f1c42	validate	deuf	0	8	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-19T00:01:47Z	44425648986	487f1c42	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T00:01:47Z	44425648986	487f1c42	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T00:01:47Z	44425648986	487f1c42	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T00:39:59Z	44430823645	1558ac22	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-19T00:39:59Z	44430823645	1558ac22	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T00:39:59Z	44430823645	1558ac22	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T00:39:59Z	44430823645	1558ac22	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T01:03:03Z	44433878220	d8f9f6b6	validate	deuf	0	11	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-19T01:03:03Z	44433878220	d8f9f6b6	validate	moduli	0	3	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T01:03:03Z	44433878220	d8f9f6b6	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T01:03:03Z	44433878220	d8f9f6b6	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T01:35:24Z	44438041953	2ebb687c	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-19T01:35:24Z	44438041953	2ebb687c	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T01:35:24Z	44438041953	2ebb687c	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T01:35:24Z	44438041953	2ebb687c	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T02:09:25Z	44442219658	39da52b7	validate	deuf	0	11	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-19T02:09:25Z	44442219658	39da52b7	validate	moduli	0	3	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T02:09:25Z	44442219658	39da52b7	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T02:09:25Z	44442219658	39da52b7	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T02:38:15Z	44445767641	51ed87f8	validate	deuf	0	11	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-19T02:38:15Z	44445767641	51ed87f8	validate	moduli	0	3	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T02:38:15Z	44445767641	51ed87f8	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T02:38:15Z	44445767641	51ed87f8	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T06:29:07Z	44472492537	1925b64f	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-19T06:29:07Z	44472492537	1925b64f	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T06:29:07Z	44472492537	1925b64f	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T06:29:07Z	44472492537	1925b64f	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T06:50:04Z	44475062092	43be2dce	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-19T06:50:04Z	44475062092	43be2dce	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T06:50:04Z	44475062092	43be2dce	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T06:50:04Z	44475062092	43be2dce	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T07:13:35Z	44477965214	983791d0	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-19T07:13:35Z	44477965214	983791d0	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T07:13:35Z	44477965214	983791d0	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T07:13:35Z	44477965214	983791d0	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T08:03:11Z	44484372195	a4fbfafd	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-19T08:03:11Z	44484372195	a4fbfafd	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T08:03:11Z	44484372195	a4fbfafd	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T08:03:11Z	44484372195	a4fbfafd	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T08:23:36Z	44487208276	e1198477	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-19T08:23:36Z	44487208276	e1198477	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T08:23:36Z	44487208276	e1198477	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T08:23:36Z	44487208276	e1198477	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T09:11:45Z	44494164241	f36785eb	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-19T09:11:45Z	44494164241	f36785eb	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T09:11:45Z	44494164241	f36785eb	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T09:11:45Z	44494164241	f36785eb	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T09:43:06Z	44498975348	0cfa1357	validate	deuf	0	8	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-19T09:43:06Z	44498975348	0cfa1357	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T09:43:06Z	44498975348	0cfa1357	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T09:43:06Z	44498975348	0cfa1357	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T10:17:03Z	44504207069	b5c23232	validate	deuf	0	11	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-19T10:17:03Z	44504207069	b5c23232	validate	moduli	0	3	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T10:17:03Z	44504207069	b5c23232	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T10:17:03Z	44504207069	b5c23232	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T10:39:26Z	44507682290	517a3e79	validate	deuf	0	9	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-19T10:39:26Z	44507682290	517a3e79	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T10:39:26Z	44507682290	517a3e79	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T10:39:26Z	44507682290	517a3e79	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T11:18:49Z	44513682151	0f9c36da	validate	deuf	0	7	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-19T11:18:49Z	44513682151	0f9c36da	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T11:18:49Z	44513682151	0f9c36da	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T11:18:49Z	44513682151	0f9c36da	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T11:56:28Z	44519275063	3cee661c	validate	deuf	0	8	✓ validate_lingua: 700 file — nessun refuso (2470 avvisi)
+2026-11-19T11:56:28Z	44519275063	3cee661c	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T11:56:28Z	44519275063	3cee661c	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T11:56:28Z	44519275063	3cee661c	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T13:52:05Z	44537736750	e5339cee	validate	deuf	0	7	✓ validate_lingua: 701 file — nessun refuso (2470 avvisi)
+2026-11-19T13:52:05Z	44537736750	e5339cee	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T13:52:05Z	44537736750	e5339cee	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T13:52:05Z	44537736750	e5339cee	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T14:19:55Z	44542562710	2af972cd	validate	deuf	0	8	✓ validate_lingua: 701 file — nessun refuso (2470 avvisi)
+2026-11-19T14:19:55Z	44542562710	2af972cd	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T14:19:55Z	44542562710	2af972cd	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T14:19:55Z	44542562710	2af972cd	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T14:45:11Z	44547158191	0527e291	validate	deuf	0	6	✓ validate_lingua: 701 file — nessun refuso (2470 avvisi)
+2026-11-19T14:45:11Z	44547158191	0527e291	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T14:45:11Z	44547158191	0527e291	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T14:45:11Z	44547158191	0527e291	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T15:36:04Z	44556621500	8e6b554b	validate	deuf	0	7	✓ validate_lingua: 701 file — nessun refuso (2470 avvisi)
+2026-11-19T15:36:04Z	44556621500	8e6b554b	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T15:36:04Z	44556621500	8e6b554b	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T15:36:04Z	44556621500	8e6b554b	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T16:00:10Z	44561124245	6547ff60	validate	deuf	0	6	✓ validate_lingua: 701 file — nessun refuso (2470 avvisi)
+2026-11-19T16:00:10Z	44561124245	6547ff60	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T16:00:10Z	44561124245	6547ff60	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T16:00:10Z	44561124245	6547ff60	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T16:27:37Z	44566332163	311db275	validate	deuf	0	11	✓ validate_lingua: 701 file — nessun refuso (2470 avvisi)
+2026-11-19T16:27:37Z	44566332163	311db275	validate	moduli	0	3	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T16:27:37Z	44566332163	311db275	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T16:27:37Z	44566332163	311db275	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T16:56:10Z	44571646459	c524fdd7	validate	deuf	0	7	✓ validate_lingua: 701 file — nessun refuso (2470 avvisi)
+2026-11-19T16:56:10Z	44571646459	c524fdd7	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T16:56:10Z	44571646459	c524fdd7	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T16:56:10Z	44571646459	c524fdd7	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-19T17:37:51Z	44579243745	696448ac	validate	deuf	0	11	✓ validate_lingua: 701 file — nessun refuso (2470 avvisi)
+2026-11-19T17:37:51Z	44579243745	696448ac	validate	moduli	0	3	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-19T17:37:51Z	44579243745	696448ac	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-19T17:37:51Z	44579243745	696448ac	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-21T06:26:37Z	44875562595	85897f40	validate	deuf	0	7	✓ validate_lingua: 701 file — nessun refuso (2470 avvisi)
+2026-11-21T06:26:37Z	44875562595	85897f40	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-21T06:26:37Z	44875562595	85897f40	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-21T06:26:37Z	44875562595	85897f40	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-21T07:05:42Z	44878614962	ffb64bea	validate	deuf	0	11	✓ validate_lingua: 701 file — nessun refuso (2470 avvisi)
+2026-11-21T07:05:42Z	44878614962	ffb64bea	validate	moduli	0	3	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-21T07:05:42Z	44878614962	ffb64bea	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-21T07:05:42Z	44878614962	ffb64bea	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-21T07:29:37Z	44880487963	28422f87	validate	deuf	0	7	✓ validate_lingua: 701 file — nessun refuso (2470 avvisi)
+2026-11-21T07:29:37Z	44880487963	28422f87	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-21T07:29:37Z	44880487963	28422f87	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-21T07:29:37Z	44880487963	28422f87	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-21T08:16:47Z	44884122845	4074d711	validate	deuf	0	7	✓ validate_lingua: 701 file — nessun refuso (2468 avvisi)
+2026-11-21T08:16:47Z	44884122845	4074d711	validate	moduli	0	1	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-21T08:16:47Z	44884122845	4074d711	validate	numeri	0	3	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-21T08:16:47Z	44884122845	4074d711	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-21T10:34:09Z	44894962621	29513063	validate	deuf	0	9	✓ validate_lingua: 701 file — nessun refuso (2468 avvisi)
+2026-11-21T10:34:09Z	44894962621	29513063	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-21T10:34:09Z	44894962621	29513063	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-21T10:34:09Z	44894962621	29513063	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-21T16:48:42Z	44926595146	26ded18a	validate	deuf	0	11	✓ validate_lingua: 701 file — nessun refuso (2468 avvisi)
+2026-11-21T16:48:42Z	44926595146	26ded18a	validate	moduli	0	3	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-21T16:48:42Z	44926595146	26ded18a	validate	numeri	0	5	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-21T16:48:42Z	44926595146	26ded18a	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+2026-11-21T17:31:59Z	44930559350	14085a37	validate	deuf	0	8	✓ validate_lingua: 701 file — nessun refuso (2468 avvisi)
+2026-11-21T17:31:59Z	44930559350	14085a37	validate	moduli	0	2	✓ conformita_statblocchi: 2 moduli di un altro sistema, ogni conto torna
+2026-11-21T17:31:59Z	44930559350	14085a37	validate	numeri	0	4	✓ cancello dei numeri: nessuno scarto nuovo (0 in baseline, 73 file non ancora coperti)
+2026-11-21T17:31:59Z	44930559350	14085a37	validate	skills	0	0	validate_skills: 18 skills checked — 0 error(s), 0 warning(s)
+data	run	sha	job	passo	righe_error	secondi	ultima_riga

@@ -44,7 +44,10 @@ build/
 **/homebrew/**/*.html
 **/homebrew/**/*.typ
 # Render delle mappe: il canone è il JSON, l'SVG si rifà con render_map_svg.py.
+# rendered-* copre i temi e le stampe nate dopo: rendered-pianta, rendered-texture,
+# rendered-stampa-pianta (CARTELLA_TEMA in render_map_svg.py).
 **/rendered/
+**/rendered-*/
 
 # --- Codice di terzi, vendorizzato o clonato -------------------------------
 scripts/typst/packages/

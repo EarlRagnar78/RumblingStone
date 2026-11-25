@@ -5,7 +5,7 @@
 > leggerli** prima della prima sessione.
 > **Stato**: canonico (indice; canone di trama in `campaign/state.md`,
 > **non ancora giocato** — piano ARC-08 A0). **Ultima revisione**:
-> 2026-10-21.
+> 2026-11-25.
 
 <!-- storico -->
 > 🧭 **Perché questo indice è cambiato così spesso (ottobre 2026).** Il
@@ -38,11 +38,20 @@
 
 Hammerfist si gioca su **due livelli di personaggi**:
 
-1. **Flashback dei pregen "Eroi di Hammerfist"** (Borin, Dara, Harbek
-   Runaforte, Nala): quasi tutta la battaglia — ricognizione e giorni
-   d'assedio. Producono **BONUS quantificati per il finale, non PX**
-   (D9). Vedi la tabella di conversione in `ARC08-10-ESITI-E-
-   CONTINGENZE.md` §5.
+1. **Flashback dei pregen "Eroi di Hammerfist"**: quasi tutta la
+   battaglia, ricognizione e giorni d'assedio. Producono **BONUS
+   quantificati per il finale, non PX** (D9). Vedi la tabella di
+   conversione in `ARC08-10-ESITI-E-CONTINGENZE.md` §5.
+   Gli eroi giocabili sono **sei** (Borin, Dara, Harbek Runaforte, Nala,
+   Ragnhild Mantoferro, Yrsa Portastendardo) per quattro giocatori
+   `[CANONE — DM 2026-11-15]`. Chi tiene quale squadra lo dice una
+   regola sola, scritta uguale in `ARC08-DEF-1` (Scena 8, «Sei eroi,
+   quattro giocatori») e in `ARC08-DEF-2` («I numeri dei reparti, giorno
+   per giorno»): Dara gioca sempre; chi prende Ragnhild o Yrsa prende la
+   squadra (nell'assedio il settore) dell'eroe non scelto fra Borin,
+   Harbek e Nala, mai quella di Dara. La regola aspetta ancora il sì del
+   DM: le domande sono in fondo alla Scena 8 di DEF-1 e alla Scena 4 di
+   DEF-2.
 2. **Finale dei Rumbling Stones** (i PG reali): riemergono al Cuore
    della Montagna (Giorno 3) come la riscossa, giocano **solo il
    finale** (D6/E6). Regia del passaggio in `ARC08-11-PONTE-ARRIVO.md`.

@@ -46,6 +46,8 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 7 | resta entro 3 m tira Tempra | 15 |
 | SCENA 8 | Con immagine silenziosa | 15 |
 | SCENA 8 | riesce metà delle volte, con affascinare | 18 |
+| SCENA 8 | e per farlo tira Concentrazione +20 | 15 |
+| SCENA 8 | dimezzare un Riflessi contro la frana | 15 |
 | SCENA 9 | Conoscenze (religione) | 15 |
 | SCENA 9 | Sopravvivenza | 15 |
 | SCENA 9 | Ascoltare | 18 |

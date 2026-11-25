@@ -103,7 +103,15 @@ contro Gorthak. Tre politiche, una alla volta:
 Senza --punto-eroe l'uscita e' quella di sempre, byte per byte: il punto non
 tira dadi e non cambia la sequenza dei tiri.
 
+La rampa chiusa (--rampa-chiusa, lettore a freddo del 2026-11-25): stampa
+le otto combinazioni di Grimjaw a rampa chiusa, comprese le tre che
+esito_simulazione.md non ha (Yrsa da sola; Harbek e Nala; Ragnhild da sola),
+e le ripete con la regola del master: la cima la chiudono i due orog davanti,
+i due dietro sono quelli che si staccano. Senza l'opzione l'uscita e' quella
+di sempre, byte per byte.
+
 Uso: python3 simula_scontri_epici.py [--n 4000] [--seme 7] [--eroi-primi]
+     python3 simula_scontri_epici.py --rampa-chiusa [--n 4000] [--seme 7]
      python3 simula_scontri_epici.py --punto-eroe [--n 4000] [--seme 7] [--eroi-primi]
 """
 import argparse
@@ -321,13 +329,20 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
             return
         tutte = [n for n in nemici if n.ruolo == "scorta"]
         muro = getattr(boss, "muro", 0)
-        if muro and guardie and len(guardie) > len(tutte) - muro:
+        fronte = getattr(boss, "fronte", 0)
+        if fronte:
+            # --rampa-chiusa: la cima la chiudono i soli orog davanti
+            davanti = [n for n in guardie if getattr(n, "davanti", False)]
+            chiusa, primo = len(davanti) == fronte, davanti[:1]
+        else:
+            chiusa, primo = muro and guardie and len(guardie) > len(tutte) - muro, guardie[:1]
+        if chiusa:
             # la rampa chiusa: prima si abbatte una guardia
             if not e.get("_mischia"):
                 e["_mischia"] = True
                 if not spende(e, "movimento"):
                     colpi = colpi[:1]
-            attacca_eroe(e, guardie[0], colpi)
+            attacca_eroe(e, primo[0], colpi)
             return
         if not e.get("_sul_boss"):
             if guardie:
@@ -523,7 +538,7 @@ def gorthak(avanzato=False, troll_avanzati=False, sportello=True, scheda=False, 
     return fn
 
 
-def grimjaw(orog_avanzati=False, muro=0):
+def grimjaw(orog_avanzati=False, muro=0, fronte=0):
     def fn():
         # round 1: Tattico Superiore e Presenza, nessun attacco; dal round 2 Furia
         # Comandante: +24/+19/+14 (1d10+11, 17-20) e +26 pf
@@ -531,6 +546,7 @@ def grimjaw(orog_avanzati=False, muro=0):
                    rifl=8, iniz=5, fuga=89, ruolo="boss", primo=[])
         g.guardato = True
         g.muro = muro
+        g.fronte = fronte
         g.presenza = 19
         g.contatto = 12
         g.resfuoco = 10  # Armatura Completa Demoniaca +2 (ARC08-01)
@@ -546,6 +562,7 @@ def grimjaw(orog_avanzati=False, muro=0):
                         rifl=2 + o, iniz=4 + o,
                         primo=[A(12 + o, (1, 12), 16 + o, 20, 3), A(7 + o, (1, 12), 16 + o, 20, 3)])
             og.caccia = i < 2
+            og.davanti = i >= 2  # i due dietro sono quelli che si staccano
             out.append(og)
         return out
     return fn
@@ -696,6 +713,59 @@ def confronto_punto_eroe(n, seme, eroi_primi):
     print(LIMITI_PUNTO)
 
 
+def stampa_scenario(titolo, fn, combo, giganti, n, seme):
+    print(f"## {titolo}\n")
+    print("| eroi | il comandante fugge | al primo round | round medi alla fuga | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |")
+    print("|---|---|---|---|---|---|")
+    for c in combo:
+        # un seme per riga: correggere uno scenario non sposta le cifre degli altri
+        R.seed(f"{seme}|{titolo}|{'+'.join(c)}")
+        res = [duello(fn, c, giganti=bool(giganti), ragn_apre=(giganti != "noapre"),
+                      dara_srd=(giganti == "dara-srd")) for _ in range(n)]
+        fuga = [r for r in res if r["fuga"]]
+        pf = len(fuga) / n
+        p1 = sum(1 for r in fuga if r["round"] == 1) / n
+        rmed = statistics.mean(r["round"] for r in fuga) if fuga else float("nan")
+        terra = sum(1 for r in res if r["caduti"] > 0) / n
+        mf = statistics.mean(r["min_frac"] for r in res)
+        print(f"| {' + '.join(c)} | {pf:.0%} | {p1:.0%} | {rmed:.1f} | {terra:.0%} | {mf:.0%} |")
+    print()
+
+
+# --- la rampa chiusa di Grimjaw: le righe che mancavano (--rampa-chiusa) ---
+TITOLO_RAMPA = "Grimjaw e quattro orog, variante: la rampa chiusa, se ne abbatte uno"
+TITOLO_FRONTE = "Grimjaw e quattro orog, la rampa chiusa: la chiudono i due orog davanti"
+RIGHE_RAMPA = [["Borin"], ["Yrsa"], ["Borin", "Yrsa"], ["Borin", "Yrsa", "Harbek"], ["Borin", "Yrsa", "Ragnhild"],
+               ["Harbek", "Nala"], ["Harbek", "Nala", "Ragnhild"], ["Ragnhild"]]
+
+LIMITI_RAMPA = """## Come leggere queste cifre
+
+- La prima tabella ha il titolo e il modello della sezione «la rampa chiusa,
+  se ne abbatte uno» di `esito_simulazione.md`: le cinque righe che la' ci
+  sono hanno lo stesso seme e danno le stesse cifre; Yrsa, Harbek + Nala e
+  Ragnhild da sola sono le tre che mancavano. In quel modello la cima si
+  apre appena cade un orog qualunque.
+- La seconda tabella prova la regola scritta nel master: la cima la chiudono
+  i due orog davanti, e i due dietro sono quelli che si staccano. La cima si
+  apre solo quando cade uno dei due davanti; un orog dietro che cade, per il
+  fuoco di Ragnhild, non la apre. Ha un altro titolo, quindi un altro seme:
+  una differenza di uno o due punti dalla prima tabella e' rumore.
+- Ragnhild da sola non sale, e la rampa chiusa non la riguarda: il modello e'
+  quello della rampa aperta. Dal round 2 Grimjaw le tira con l'arco, e dal
+  round 3 i due orog dietro le arrivano addosso sul camminamento.
+- Gli orog non si staccano finche' un nano e' in mischia: l'immagine di Nala
+  e l'ordine di Grimjaw contro la palla di fuoco non sono provati.
+- Valgono tutti i limiti di `esito_simulazione.md`."""
+
+
+def confronto_rampa_chiusa(n, seme, eroi_primi):
+    print(f"# La rampa chiusa di Grimjaw: {n} duelli per riga, seme {seme}"
+          + (", gli eroi agiscono per primi" if eroi_primi else "") + "\n")
+    stampa_scenario(TITOLO_RAMPA, grimjaw(muro=1), RIGHE_RAMPA, False, n, seme)
+    stampa_scenario(TITOLO_FRONTE, grimjaw(muro=1, fronte=2), RIGHE_RAMPA, False, n, seme)
+    print(LIMITI_RAMPA)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=4000)
@@ -705,11 +775,17 @@ def main():
     ap.add_argument("--punto-eroe", action="store_true",
                     help="confronto sulle righe principali: ogni eroe spende in quello scontro "
                          "il suo punto eroe PF1e (tre politiche, una alla volta)")
+    ap.add_argument("--rampa-chiusa", action="store_true",
+                    help="Grimjaw a rampa chiusa: le otto combinazioni, col modello di "
+                         "esito_simulazione.md e con la cima chiusa dai due orog davanti")
     a = ap.parse_args()
     global EROI_PRIMI
     EROI_PRIMI = a.eroi_primi
     if a.punto_eroe:
         confronto_punto_eroe(a.n, a.seme, a.eroi_primi)
+        return
+    if a.rampa_chiusa:
+        confronto_rampa_chiusa(a.n, a.seme, a.eroi_primi)
         return
     print(f"# {a.n} duelli per riga, seme {a.seme}" + (", gli eroi agiscono per primi" if a.eroi_primi else "") + "\n")
     print("## EL (DMG 3.5)\n")
@@ -719,22 +795,7 @@ def main():
         print(f"| {nome} | {el(prima):.1f} | {el(dopo):.1f} |" if dopo else f"| {nome} | {el(prima):.1f} | invariato |")
     print()
     for titolo, fn, combo, giganti in SCENARI:
-        print(f"## {titolo}\n")
-        print("| eroi | il comandante fugge | al primo round | round medi alla fuga | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |")
-        print("|---|---|---|---|---|---|")
-        for c in combo:
-            # un seme per riga: correggere uno scenario non sposta le cifre degli altri
-            R.seed(f"{a.seme}|{titolo}|{'+'.join(c)}")
-            res = [duello(fn, c, giganti=bool(giganti), ragn_apre=(giganti != "noapre"),
-                          dara_srd=(giganti == "dara-srd")) for _ in range(a.n)]
-            fuga = [r for r in res if r["fuga"]]
-            pf = len(fuga) / a.n
-            p1 = sum(1 for r in fuga if r["round"] == 1) / a.n
-            rmed = statistics.mean(r["round"] for r in fuga) if fuga else float("nan")
-            terra = sum(1 for r in res if r["caduti"] > 0) / a.n
-            mf = statistics.mean(r["min_frac"] for r in res)
-            print(f"| {' + '.join(c)} | {pf:.0%} | {p1:.0%} | {rmed:.1f} | {terra:.0%} | {mf:.0%} |")
-        print()
+        stampa_scenario(titolo, fn, combo, giganti, a.n, a.seme)
     print(LIMITI)
 
 

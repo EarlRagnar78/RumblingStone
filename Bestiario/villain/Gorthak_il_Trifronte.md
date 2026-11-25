@@ -4,7 +4,7 @@
 **Location**: prima linea d'assalto (cancello/brecce); ultimo boss a terra al finale se vivo
 **Motivation**: distruggere fisicamente porte e nemici corazzati; tre teste, tre indoli (combattere / fuggire / cercare il drago).
 **CR**: 12 | **Race/Class**: Ettin a Tre Teste (Gigante)
-**Key stats**: → statblock in `08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` §1 (le due copie, in ARC08-02 e ARC08-01, sono allineate). Sotto i 101 pf la testa sinistra prende il sopravvento: Furia (+4 For, −2 CA) fino alla morte. Armi: due *stelle del mattino Grandi +1*, una per braccio, a Forza piena su tutte e due come l'ettin dell'SRD; i numeri sono nello statblock `[CANONE — DM 2026-11-25, card «armi di Gorthak e versione dura»]`.
+**Key stats**: → statblock in `08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` §1 (le due copie, in ARC08-02 e ARC08-01, sono allineate). Sotto i 101 pf la testa sinistra prende il sopravvento per un round: Furia (+4 For, −2 CA). Dopo quel round la testa centrale lo tira indietro e Gorthak fugge `[CANONE — DM 2026-11-04, P16, il cancello e Gorthak]`. Armi: due *stelle del mattino Grandi +1*, una per braccio, a Forza piena su tutte e due come l'ettin dell'SRD; i numeri sono nello statblock `[CANONE — DM 2026-11-25, card «armi di Gorthak e versione dura»]`.
 **Esiti possibili**:
 - *Default* — ariete d'assedio; al finale può essere l'ultimo comandante a terra (resa o morte, scelta dei PG).
 - Può essere logorato/ucciso in Sessione 2-3 (bonus "comandanti logorati", `ARC08-10-...` §5.2).

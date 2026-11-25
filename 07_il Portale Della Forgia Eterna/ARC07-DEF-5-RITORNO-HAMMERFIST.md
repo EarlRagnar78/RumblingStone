@@ -407,7 +407,10 @@ col primo gesto della Scena 2, nel giro dei gesti `[CANONE — DM 2026-10-19, gi
 **Il pegno di carne** `[CANONE — DM 2026-11-25, card «pegno di Artemis»]`. All'arrivo
 Artemis, l'unico dei quattro che non è un nano, tira anche **Tempra CD 20**.
 Se la fallisce prende **un livello negativo** fino all'alba successiva, ed è
-**affaticato**; se la supera è solo affaticato.
+**affaticato**; se la supera è solo affaticato. L'alba successiva è la prima
+dopo l'arrivo: i quattro arrivano il Giorno 3 dell'assedio (`ARC08-11`), ed è
+quella del giorno dopo. Tutto quello che si gioca il giorno dell'arrivo,
+Artemis lo gioca col pegno addosso.
 
 - *Il livello negativo* `[SRD: Energy Drained]`: −1 ai tiri per colpire, ai
   tiri salvezza, alle prove di abilità e alle prove di caratteristica; 5
@@ -415,9 +418,19 @@ Se la fallisce prende **un livello negativo** fino all'alba successiva, ed è
   la CD di incantesimi e capacità speciali; un incantatore perde anche un
   incantesimo o uno slot del livello più alto che può lanciare. Qui **non
   diventa permanente**: all'alba successiva se ne va da solo, senza il tiro
-  di Tempra che l'SRD chiede dopo 24 ore, e *ristorare* lo toglie prima.
+  di Tempra che l'SRD chiede dopo 24 ore.
 - *Affaticato* `[SRD: Fatigued]`: −2 a Forza e Destrezza, e non può correre
-  né caricare; passa con otto ore di riposo completo.
+  né caricare; passa con otto ore di riposo completo. Affaticato su
+  affaticato dà **esausto**: se Artemis fa o subisce qualcosa che affatica,
+  passa a metà velocità e a −6 a Forza e Destrezza, e dopo un'ora di riposo
+  completo torna affaticato `[SRD: Exhausted]`.
+- *Che cosa li toglie.* *Ristorare inferiore* toglie l'affaticato e non il
+  livello negativo `[SRD: Lesser Restoration]`: lo lancia Hella, se le resta.
+  *Ristorare* toglie tutti e due `[SRD: Restoration]`, in tre round, e nel
+  gruppo viene solo dalle pergamene comprate da Brynja (`DEF-4`, «Cosa hanno
+  comprato»), lette da Artemis con Usare Oggetti Magici CD 27. Sono le
+  stesse che rialzano Re Thorek (Scena 3): quella letta per Artemis al re
+  non resta.
 
 Thorik, Tordek e Hella non pagano niente: per loro il Rubino paga, ed è
 speso `[CANONE — DM 2026-10-18, G2-14]`.

@@ -41,6 +41,7 @@ Notes: l'élite «portalame» a due armi della Mano Rossa (versione IT CR 7 = fi
 > |---|---|---|---|
 > | GS | 6 | **7** | archetipo, +1 |
 > | Iniziativa | +4 | +6 | Des +4, cioè +2 |
+> | Ascoltare · Osservare | +1 · +1 | +3 · +3 | nessun grado, la sola Saggezza: Sag +4, cioè +2 |
 > | CA | 21 | **23** | +2 armatura naturale; la Des resta a +1, il tetto dell'armatura completa |
 > | contatto · colto alla sprovvista | 12 · 20 | **12 · 22** | l'armatura naturale non vale al contatto |
 > | pf | 50 | **62** | +2 per DV, 6 DV |

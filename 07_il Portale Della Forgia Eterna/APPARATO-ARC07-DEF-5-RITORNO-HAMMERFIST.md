@@ -23,6 +23,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 |---|---|---:|
 | SCENA 1 | All'arrivo, Volontà | 15 |
 | SCENA 1 | è un nano, tira anche Tempra | 20 |
+| SCENA 1 | da Artemis con Usare Oggetti Magici | 27 |
 | SCENA 2 | si sale con Scalare | 15 |
 | SCENA 2 | niente con Saltare o Acrobazia | 15 |
 | SCENA 2 | 1/giorno, comando | 15 |

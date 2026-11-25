@@ -309,7 +309,7 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 **Attacco Base:** +11; **Lotta:** +24
 **Attacco:** *Stella del Mattino Grande +1* +21 in mischia (2d6+10)
 **Attacco Completo:** *Stella del Mattino Grande +1* +21/+16/+11 in mischia (2d6+10) e *Stella del Mattino Grande +1* +21/+16/+11 in mischia (2d6+10)
-**Distanza:** giavellotto grande +12/+7/+2 (1d8+9)
+**Distanza:** giavellotto grande +12 (1d8+9), uno a round, dopo aver lasciato una stella del mattino: incremento 9 m, −2 a ogni incremento in più, fino a 45 m. Senza Estrazione Rapida le armi da lancio non danno gli attacchi iterativi `[SRD: Quick Draw]`
 **Spazio/Portata:** 3m/3m
 
 **Caratteristiche:** For 29, Des 15, Cos 28, Int 10, Sag 14, Car 11

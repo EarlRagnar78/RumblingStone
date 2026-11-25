@@ -31,9 +31,12 @@
 > Sistema: D&D 3.5 SRD (max PF1e), MAI 5e. Italiano, CD non DC. Scala delle
 > mappe tattiche 1,5 m/quadretto; la MAPPA 1 di regia è a 3 m.
 >
-> **Le domande per il DM** (oggi sono tutte decise: le scelte del
-> 2026-11-25 portano nel testo la marca della loro card; il resto dei numeri
-> ha una fonte):
+> **Le domande per il DM** (sono decise, meno quelle che nel testo portano
+> ancora la marca `[INFERRED]`: l'orog che si stacca dalla cima e che cosa
+> passa a rampa chiusa (Tattiche, «La guardia del corpo»), Grimjaw sulla
+> scala (Scena 4), il tetto di pietra davanti a Fauci (Scena 6), le
+> pergamene di Fauci (A.5). Le scelte del 2026-11-25 portano nel testo la
+> marca della loro card; il resto dei numeri ha una fonte):
 >
 > 1. **Dove sta il Giorno 3. Decisa** `[CANONE — DM 2026-10-22]`: il Giorno
 >    3 resta nella Sessione 2. L'uscita A (Scena 9) è il default, B e C sono
@@ -45,10 +48,10 @@
 >    Cuore a 8 pf fissi, e la causa è l'acido rimasto nell'armatura corrosa
 >    (Scena 6). Le cure lo tengono vivo fino al Cuore e non lo rimettono in
 >    piedi; la procedura è in Scena 6, «Il conto del Re».
-> 4. **Gorthak sotto metà.** Decisa `[CANONE — DM 2026-11-04, P16]`: come scritto qui. La sua scheda (`ARC08-02`) lo manda in Furia fino
+> 4. **Gorthak sotto metà.** Decisa `[CANONE — DM 2026-11-04, P16]`: come scritto qui. La sua scheda (`ARC08-02`) lo mandava in Furia fino
 >    alla morte sotto i 101 pf; il libretto (§5) fa fuggire i comandanti
->    sotto metà. Il master li tiene tutti e due: un round di Furia, poi la
->    fuga.
+>    sotto metà. Il master li tiene tutti e due, un round di Furia e poi la
+>    fuga, e oggi la scheda dice lo stesso.
 > 5. **I due troll dell'ariete.** Decisa `[CANONE — DM 2026-11-05, P16, i troll dell'ariete]`: ci sono, accanto a
 >    Gorthak nel duello del cancello, e sono troll avanzati a 10 DV
 >    (Appendice A.2).
@@ -1179,7 +1182,22 @@ duelli sono tutta la battaglia dei pregen.
   a contatto di Grimjaw, due davanti e due ai lati, e la cima della rampa
   è **chiusa** `[CANONE — DM 2026-11-25, card «rampa di Grimjaw»]`: finché
   i quattro sono in piedi non si passa, nemmeno col passo di 1,5 m. Prima un
-  orog va abbattuto o spinto via. Aperto il varco, chi vuole arrivare
+  orog va abbattuto o spinto via.
+  **Se un orog si stacca** `[INFERRED — Se un orog lascia la cima senza
+  essere abbattuto, la rampa si apre?; base: la card «rampa di Grimjaw»
+  chiude la cima e non lo dice; il default qui sotto è provato in
+  `plans/esperimenti/scontri-epici-pregen-2026-11-25/esito_rampa_chiusa.md`]`:
+  la cima la chiudono i due orog davanti, che non lasciano il posto finché
+  Grimjaw è in piedi. I due ai lati di Grimjaw stanno dietro i primi, e sono
+  i soli che le tattiche staccano: su chi lancia dal camminamento, lontano
+  dalla palla di fuoco, sui fianchi di Yrsa, dietro l'immagine di Nala.
+  Staccarli non apre il varco, e nemmeno abbatterli da lontano: l'orog da
+  abbattere o da spingere via è uno dei due davanti.
+  Che cos'altro passi non è deciso `[INFERRED — A rampa chiusa, oltre ad
+  abbattere o spingere via un orog, che cosa fa passare: Acrobazia nel
+  quadretto di un orog (CD 25), travolgere, volare o saltare oltre la
+  guardia?; base: la card nomina solo l'abbattere; SRD: Tumble, Overrun]`.
+  Aperto il varco, chi vuole arrivare
   accanto a Grimjaw passa per un quadretto che un orog minaccia: prende il
   suo attacco d'opportunità `[SRD: Attacks of Opportunity]` e, avendo mosso,
   in quel round fa un attacco solo `[CANONE — DM 2026-11-25, card «passare
@@ -1193,8 +1211,9 @@ duelli sono tutta la battaglia dei pregen.
   incantesimi non devono superare nessuno, salvo la copertura che gli orog
   danno (+4 alla CA) `[SRD: Cover]`.
 - *Chi lo colpisce da lontano*: se nessun nano gli è accanto, dal round 2
-  tira con l'arco (+15/+10/+5, 1d8+7), e dal round 3 due orog arrivano su
-  chi lancia dal camminamento.
+  tira con l'arco (+15/+10/+5, 1d8+7), e dal round 3 i due orog dietro
+  arrivano su chi lancia dal camminamento. I due davanti restano, e la cima
+  resta chiusa.
 
 **Fauci il Giorno 3** (Scena 6): la sequenza è nella tabella della scena.
 Dopo il soffio, se non atterra, risale e non torna: la sua giornata è il Re.
@@ -1377,7 +1396,11 @@ di «la rampa», e «dove la pietra del muro è già rotta», e il resto vale. A
 Cancello la scala poggia sul camminamento sopra l'androne (BG-BJ 70-72);
 alla Torre Ovest, sul camminamento della cinta a est della torre (AG-AJ
 70-73), e la torre resta a Dara `[CANONE — DM 2026-11-25, card «dove sale
-Grimjaw»]`.
+Grimjaw»]`. Come stia la guardia in cima a una scala non è deciso
+`[INFERRED — Quando Grimjaw sale da una scala d'assedio la cima è chiusa
+come la rampa, e dove stanno i quattro orog sul camminamento?; base: la card
+«rampa di Grimjaw» parla della rampa, la card «dove sale Grimjaw» dà solo i
+quadretti della scala]`.
 
 **Finché la carta c'è** `[CANONE — DM 2026-11-04, P16, Grimjaw e il Re]`, i reparti dell'orda nel
 suo settore hanno **+1 ad AU e DU** (Tattico Superiore): il bianco (22 + AU)
@@ -1391,10 +1414,12 @@ possono unirsi come per Gorthak, lasciando il loro settore alle tacche.
 volte su quattro (75) e uno dei due va a terra 85 volte su cento; nelle
 prove nessuno cade solo se Ragnhild apre col fuoco dalla cinta prima che i
 due salgano. Borin da solo cade sempre, e Grimjaw non scende mai a 89;
-Harbek e Nala da soli cadevano sempre già con la rampa aperta. La via per chi non vuole il duello è scritta qui sotto: nessuno lo
+lo stesso Harbek e Nala senza Ragnhild. Yrsa da sola lo fa fuggire 39 volte
+su cento e cade 64. La via per chi non vuole il duello è scritta qui sotto: nessuno lo
 sfida, e il Re scende a cercarlo. Il duello si gioca come quello di Gorthak:
 prima il round di battaglia di tutti, poi la mappa, e chi non è nel duello
-muove due degli orog. Il
+muove i due orog dietro; i due davanti li tiene il DM, e non lasciano la
+cima (Tattiche, «La guardia del corpo»). Il
 duello si gioca sulla MAPPA 2A, in cima alla rampa e sul camminamento: se la
 carta è nella Torre Est, alla breccia del Muro Est (CM-CP 59-63), che è aperta
 o si apre lì sotto i colpi dei giganti (Scena 3, il Muro Est).
@@ -1402,13 +1427,14 @@ o si apre lì sotto i colpi dei giganti (Scena 3, il Muro Est).
 | Chi | Dove | Cosa fa |
 |---|---|---|
 | **Grimjaw** | in cima alla rampa | round 1: Tattico Superiore (+2 a colpire alla guardia) e Presenza intimidatoria (Volontà CD 19, o −2 a colpire entro 9 m). Dal round 2: Furia Comandante (+4 For e Cos: +24/+19/+14, 1d10+11; +2 a colpire e danni alla guardia entro 6 m). Attacco completo sul nano col martello più grosso |
-| **4 orog** della guardia nera | due davanti, due ai lati di Grimjaw | guardia del corpo: la cima è chiusa, e per colpire Grimjaw in mischia prima si abbatte un orog (Tattiche, «La guardia del corpo»). Attacco Poderoso a −3 (+6 danni) |
+| **4 orog** della guardia nera | due davanti, due ai lati di Grimjaw, dietro i primi | guardia del corpo: la cima è chiusa, e per colpire Grimjaw in mischia prima si abbatte uno dei due davanti (Tattiche, «La guardia del corpo»). Attacco Poderoso a −3 (+6 danni) |
 
 **Grimjaw, e la rampa chiusa** `[CANONE — DM 2026-11-25, card «rampa di
 Grimjaw»]`. Prove simulate del 2026-11-25,
-sesto giro (4.000 duelli per riga, iniziativa tirata; script ed esito in
-`plans/esperimenti/scontri-epici-pregen-2026-11-25/`, «la rampa chiusa, se
-ne abbatte uno»). La guardia è quella delle Tattiche: prima un orog va
+sesto giro (4.000 duelli per riga, iniziativa tirata; script ed esiti in
+`plans/esperimenti/scontri-epici-pregen-2026-11-25/`: `esito_simulazione.md`,
+«la rampa chiusa, se ne abbatte uno», ed `esito_rampa_chiusa.md`). La
+guardia è quella delle Tattiche: prima un orog va
 abbattuto, poi chi arriva a Grimjaw prende l'attacco d'opportunità di un
 orog e in quel round fa un attacco solo. Contano la Presenza intimidatoria,
 la Sfida di Yrsa da quando gli è accanto, la resistenza al fuoco 10
@@ -1418,17 +1444,23 @@ ferma a 89.
 | Chi lo sfida | Grimjaw fugge | in round, in media | un eroe a terra |
 |---|---|---|---|
 | Borin da solo | mai | — | sempre |
-| Borin e Yrsa | 75 volte su cento | 4,5 | 85 |
+| Yrsa da sola | 39 volte su cento | 4,9 | 64 |
+| Borin e Yrsa | 75 | 4,5 | 85 |
 | Borin, Yrsa e Harbek (senza incantesimi) | 90 | 4,1 | 83 |
 | Borin e Yrsa, con Ragnhild che apre col fuoco dalla cinta | sempre | 1,9 | mai |
+| Harbek e Nala | mai | — | sempre |
 | Harbek e Nala, con Ragnhild che apre | 97 | 4,4 | 60 |
+| nessuno sale: Ragnhild da sola dal camminamento | 53 | 4,4 | 47: è lei |
 
-Yrsa da sola, Harbek e Nala senza Ragnhild, e Ragnhild da sola dal
-camminamento non sono provati con la rampa chiusa: per loro restano, come
-il caso migliore, le righe della rampa aperta qui sotto.
+Yrsa da sola, Harbek e Nala senza Ragnhild, e Ragnhild da sola vengono da
+`esito_rampa_chiusa.md` (opzione `--rampa-chiusa` dello script, 2026-11-25);
+le altre righe da `esito_simulazione.md`. Ragnhild non sale: la rampa chiusa
+non la riguarda, e la sua riga è quella della rampa aperta. Lo stesso file
+prova la regola dell'orog che si stacca (la cima chiusa dai due davanti): le
+cifre restano queste a meno di due punti, e Borin e Yrsa fanno 73 e 87.
 
-**Scartato dal DM: la rampa aperta**, dove la guardia si aggirava. Le
-cifre restano per confronto, e al tavolo non valgono.
+**Scartato dal DM: la rampa aperta**, dove la guardia si aggirava. La
+tabella resta solo per confronto: al tavolo si usa quella qui sopra.
 
 | Chi lo sfida, a rampa aperta | Grimjaw fugge | in round, in media | un eroe a terra |
 |---|---|---|---|
@@ -1444,7 +1476,7 @@ cifre restano per confronto, e al tavolo non valgono.
 Con Ragnhild che apre insieme a Borin e Yrsa, Grimjaw fugge già al primo
 round una volta su quattro (23): ha Iniziativa +5 contro il +6 di lei, e
 metà delle volte ha già agito quando la palla arriva. Da sola, Ragnhild non
-basta: Grimjaw risponde con l'arco e manda due orog sul camminamento. Il
+basta: Grimjaw risponde con l'arco e manda i due orog dietro sul camminamento. Il
 terzo eroe in mischia, senza i suoi incantesimi, alza il rischio: gli orog
 hanno un bersaglio in più. Il generale torna al finale, e i suoi numeri
 restano quelli di A.3: il DM ha chiuso la rampa e non lo ha alzato. I
@@ -1453,7 +1485,9 @@ incantesimi di Harbek e di Nala, l'Ispirare Coraggio, la Presenza
 Comandante e la Postura di Borin, assenze che pendono contro gli eroi;
 tutti gli orog vivi colpiscono l'eroe più ferito;
 Grimjaw sta dietro gli orog, colpisce solo chi gli arriva accanto, e non
-tira con l'arco sui nani in mischia.
+tira con l'arco sui nani in mischia; gli orog non si staccano finché un
+nano è in mischia, e l'immagine di Nala e l'ordine contro la palla di fuoco
+non sono provati.
 
 **Grimjaw contro i sei eroi** (tattica, nessun numero nuovo).
 
@@ -1464,14 +1498,16 @@ tira con l'arco sui nani in mischia.
   terra. Dopo, la palla prende anche i nani. Grimjaw lo sa,
   se lei era sul pendio il Giorno −1 (Scheda d'entrata, «Sa»). Allora il suo
   Tattico Superiore del round 1 non va a colpire: va ai **Riflessi** della
-  guardia, +2 per un round (A.3), e i due orog dei lati si staccano di 9 m,
-  uno per parte, perché il fuoco non li prenda tutti. Se lei lancia dal
+  guardia, +2 per un round (A.3), e i due orog dietro, quelli dei lati, si
+  staccano di 9 m, uno per parte, perché il fuoco non li prenda tutti. I due
+  davanti restano, e la cima resta chiusa. Se lei lancia dal
   camminamento entro 9 m, la Presenza intimidatoria la prende come gli altri.
 - **Contro la Sfida di Yrsa.** Grimjaw non le va addosso: resta dietro la
   guardia, e finché Yrsa non ha aperto un varco nella guardia e non gli sta accanto il +4 agli
   alleati e il −2 alla sua CA non valgono: tutti e due chiedono che Yrsa lo
-  minacci (Ordine del Drago e Sfida Pressante, `ARC08-01`). Due orog vanno su
-  di lei dai fianchi, dove la Sfida le toglie 2 alla CA.
+  minacci (Ordine del Drago e Sfida Pressante, `ARC08-01`). I due orog dietro
+  vanno su di lei dai fianchi, dove la Sfida le toglie 2 alla CA; i due
+  davanti non lasciano la cima.
 - **Contro lo stendardo.** La Presenza intimidatoria non è paura nel testo
   della scheda: il +3 dello stendardo non la ferma `[CANONE — DM 2026-11-25, card
   «Presenza di Grimjaw come paura»]`.
@@ -1481,12 +1517,12 @@ tira con l'arco sui nani in mischia.
   Barrier]`; Grimjaw no.
 - **Contro Dara.** Dalla Torre Ovest Dara tira sulla rampa, ma la guardia
   sta davanti a Grimjaw: chi gli tira addosso con un orog in mezzo gli dà
-  copertura, +4 alla CA `[SRD: Cover]`. Grimjaw manda un orog sulla scala
+  copertura, +4 alla CA `[SRD: Cover]`. Grimjaw manda uno dei due orog dietro sulla scala
   della torre solo se lei lo ha colpito due volte.
 - **Contro Nala.** Un'*immagine silenziosa* di Yrsa o di Borin in fondo al
-  camminamento tira via due orog finché non la toccano: allora tirano
-  Volontà, CD 15 `[SRD: Silent Image]`. Grimjaw non si muove:
-  resta in cima alla rampa e manda la guardia.
+  camminamento tira via i due orog dietro finché non la toccano: allora tirano
+  Volontà, CD 15 `[SRD: Silent Image]`. Grimjaw non si muove, e i due
+  davanti nemmeno: la cima resta chiusa.
 - **Contro Borin.** È il «nano col martello più grosso»: l'attacco completo
   del round 2 è per lui, e per lui la guardia usa l'Attacco Poderoso.
 
@@ -1857,7 +1893,10 @@ si alza: Fauci e il cavaliere sono già tre punti sopra l'APL (§0-bis), e il co
   Davanti al tetto Fauci non soffia due volte sullo stesso punto: atterra
   sul bastione e lo sfonda con gli artigli `[CANONE — DM 2026-11-25, card
   «Fauci davanti al tetto di pietra»]`. Scartato: girare e soffiare dal lato
-  aperto.
+  aperto. Quanto ci mette non è deciso `[INFERRED — In quanti round Fauci
+  sfonda il tetto, e in quei round chi è sul bastione lo attacca a terra?;
+  base: la card dice che atterra e lo sfonda, non in quanto; durezza 8 e 45
+  pf a quadretto (SRD: Wall of Stone), attacchi di Fauci in A.5]`.
 - ***Resistere all'energia*** (acido) sul Re: al LI 13 toglie 30 da ogni
   colpo d'acido `[SRD: Resist Energy]`. Il soffio (35 di media) passa con
   pochi punti, e l'acido nelle giunture quasi mai. Anche qui il Re resta a 8
@@ -2112,7 +2151,7 @@ sopra il tetto di 16.
 
 | Round | Cosa succede | Il tiro |
 |---|---|---|
-| **1 · La diversione** | i 7 hobgoblin caricano urlando dal tunnel nord-ovest (C2-F5); l'anello si gira verso di loro | **Osservare contro il Nascondersi dei bugbear**: il DM tira una volta per i quattro dell'est e una per i quattro dell'ovest (d20 + 17), e ogni pregen tira il suo Osservare, −1 ogni 3 m dalla bocca (da Q19 alla bocca est sono circa 18 m: −6). Chi supera il tiro vede le sagome di quella bocca, e può gridarlo (azione gratuita): chi ha visto o ha sentito è **avvisato** |
+| **1 · La diversione** | i 7 hobgoblin caricano urlando dal tunnel nord-ovest (C2-F5); l'anello si gira verso di loro | **Osservare contro il Nascondersi dei bugbear**: il DM tira una volta per i quattro dell'est e una per i quattro dell'ovest (d20 + 17), e ogni pregen tira il suo Osservare, −1 ogni 3 m dalla bocca (da Q19 alla bocca est sono circa 18 m: −6). Chi supera il tiro vede le sagome di quella bocca, e può gridarlo (azione gratuita). Chi ha visto agisce prima dei bugbear al round 2; a chi ha solo sentito il grido i tiri non cambiano, da quando la versione dura è scartata (sotto) |
 | **2 · Fuori dalle bocche** | gli 8 bugbear escono insieme: 4 da est verso il Re, 4 da ovest verso i comandanti (i pregen). Dalla bocca all'anello sono 6-9 m, e l'anello è chiuso: in questo round arrivano ai veterani e ne colpiscono uno a testa. Lo studio dei bersagli è finito quando è partita la diversione: l'attacco mortale va portato entro il round 3 | un nano dell'anello a bugbear (sotto, «I nani caduti si contano così»). Chi ha visto le sagome al round 1 agisce prima di loro |
 | **3 · Le lame nel buio** | chi ha un varco libero carica il bersaglio: dall'anello est al Re in Q19 sono 12 m. Chi passa dal quadretto di un veterano (Acrobazia +11 contro CD 25, a metà velocità) fa un doppio movimento, in questo round non colpisce, e colpisce al round 4 | **attacco mortale** sul primo colpo, solo se quel colpo è un furtivo `[SRD: Death Attack]`: Tempra **CD 16** o paralizzato 1d6+2 round. **Furtivo +4d6** su chi è fiancheggiato o colto alla sprovvista: sul Re sempre, su un pregen quando due bugbear lo chiudono ai fianchi (sotto, «L'attacco mortale, in chiaro»). Altrimenti è un colpo normale (+11, 1d8+3). Chi colpisce al round 4 è fuori dai tre round: ha il furtivo, se fiancheggia, e non l'attacco mortale |
 | **4-5 · La mischia nel cerchio** | i bugbear combattono in coppia per fiancheggiare; gli hobgoblin tengono l'anello | gli ordini dei pregen (sotto) |
@@ -2127,11 +2166,13 @@ su di loro il furtivo, e con lui l'attacco mortale, passa solo
 fiancheggiando, cioè al secondo bugbear che arriva dal lato opposto del
 primo. Chi colpisce dal round 4 ha solo il furtivo.
 
-Sul Re il furtivo vale a ogni colpo in mischia, e con lui l'attacco mortale
-`[CANONE — DM 2026-11-25, card «il Re sulla barella»]`: sulla barella il Re
-non si difende (A.7).
+Sul Re il furtivo vale a ogni colpo in mischia `[CANONE — DM 2026-11-25,
+card «il Re sulla barella»]`: sulla barella il Re non si difende (A.7).
+L'attacco mortale no: anche sul Re passa solo con un furtivo portato entro
+il round 3, e un bugbear che lo ha tentato non lo ritenta senza altri tre
+round di studio `[SRD: Death Attack]`. Dal round 4 sul Re resta il furtivo.
 
-Per chi ha fallito l'Osservare del round 1 e non è stato avvisato vale
+Per chi ha fallito l'Osservare del round 1, avvisato o no dal grido, vale
 l'SRD `[CANONE — DM 2026-11-25, card «colti alla sprovvista dai bugbear»]`:
 colti alla sprovvista lo si è solo prima del proprio primo turno
 `[SRD: Flat-Footed]`, e al round 3 i pregen hanno già agito due volte.
@@ -2220,7 +2261,10 @@ prima non è sulla carta di Nala, la seconda c'è).
   forza* o *di pietra* chiude una bocca, se i bugbear sono già stati visti
   all'Osservare del round 1: dalla bocca chiusa i bugbear tornano dalla
   nord-est, due round dopo `[CANONE — DM 2026-11-25, card «bocca del tunnel
-  chiusa»]`. È questa la strada, non il fuoco.
+  chiusa»]`: all'anello al round 4, sui bersagli al 5. Sono fuori dai tre
+  round dallo studio (l'1, il 2 e il 3): per loro l'attacco mortale è
+  scaduto, e resta il furtivo `[SRD: Death Attack]`. È questa la strada, non
+  il fuoco.
   Una *palla di fuoco* dentro l'anello prende i nani con i bugbear, perché i
   bugbear combattono in mezzo a loro: sotto la palla cadono 2d4 nani
   dell'anello `[CANONE — DM 2026-11-25, card «palla di fuoco nella
@@ -2274,6 +2318,9 @@ ordini dei pregen.*
 - **Il tavolo è in difficoltà** (due pregen paralizzati al round 3): Dana,
   la Madre Superiora, è viva. Ha 20 pf e, se non l'ha speso nella Scena 7, il suo *muro di pietra*: lo usa per
   chiudere il tunnel est davanti ai quattro del Re, e al Cuore non lo ha più.
+  Se quei quattro tornano dalla nord-est due round dopo, i tre round dallo
+  studio sono passati: l'attacco mortale è scaduto, e sul Re portano solo il
+  furtivo `[SRD: Death Attack]`.
 
 ### SCENA 9 — La porta di mithral
 
@@ -2471,7 +2518,7 @@ si tira stasera, in forma compatta. Se cambiano, cambiano lì.
 
 **A.1 · Gorthak il Trifronte** · `ARC08-02` §1; `Bestiario/villain/Gorthak_il_Trifronte.md` · ettin dell'SRD (10 DV) portato a 15 DV, GS 12: ⚠️ non SRD, perché l'SRD dà all'ettin «Advancement: By character class», ed è un potenziamento dichiarato · gigante Grande, CM · Iniz +6 · scurovisione 18 m, visione crepuscolare · Ascoltare +12, Osservare +12, non può essere fiancheggiato · CA **25**, contatto 11, colto alla sprovvista 23 · pf **202** · Temp +18, Rifl +7, Vol +9 · velocità 9 m · *stella del mattino Grande +1* +21/+16/+11 (2d6+10) e *stella del mattino Grande +1* +21/+16/+11 (2d6+10), a Forza piena e senza penalità per le due armi `[SRD: Ettin, Superior Two-Weapon Fighting]` `[CANONE — DM 2026-11-25, card «armi di Gorthak e versione dura»]` · scartato: il «randello Enorme +1» della scheda di prima, col secondo braccio a 2d6+5 (un randello Grande fa 1d8, e un randello Enorme un gigante Grande lo impugna solo a due mani `[SRD: Inappropriately Sized Weapons]`; il 2d6 è il dado della stella del mattino Grande dell'ettin SRD) · giavellotto grande +12 nel primo incremento di 9 m, −2 a ogni incremento in più fino al quinto, a 45 m (1d8+9), un attacco solo, dopo aver lasciato una stella del mattino · Spazio 3 m, Portata 3 m · Allerta, Iniziativa Migliorata, Attacco Poderoso, Incalzare, Spezzare Migliorato, Volontà di Ferro · le tre teste: la sinistra +2 danni al primo colpo a segno del round; la centrale, una volta, rinuncia a un attacco per dare +2 morale a un'unità; la destra dà Iniziativa Migliorata. **All'ariete**, che reggono i troll: 3d10+20 al cancello (durezza 20). **Sotto 101**: un round in Furia (+4 For: +23, 2d6+12 l'una; CA 23), poi fugge `[CANONE — DM 2026-11-04, P16, il cancello e Gorthak]`.
 
-**A.1-bis · Gorthak Avanzato, scartato** `[CANONE — DM 2026-11-25, card «armi di Gorthak e versione dura»]` (non si adotta: §0-bis) · base: archetipo semplice Avanzato di PF1e, regole rapide: +2 a tutti i tiri e ai danni, +4 alla CA, +2 pf per DV; ⚠️ non SRD 3.5 · la scheda di A.1 con l'archetipo · GS **13** · Iniz +8 · CA **28**, contatto 12, colto alla sprovvista 25, ricostruita con la regola intera (+4 a tutte le caratteristiche, +2 armatura naturale) sulla *corazza di piastre +1* della scheda, che tiene la Des a +3; le regole rapide, «+4 alla CA», darebbero 29 / 15 / 27 · pf **232** (202 + 2 × 15 DV) · Temp +20, Rifl +9, Vol +11 · *stella del mattino Grande +1* +23/+18/+13 (2d6+12) e *stella del mattino Grande +1* +23/+18/+13 (2d6+12, a Forza piena come in A.1); giavellotto +14 (1d8+11) · all'ariete come in A.1 · **sotto 116**: un round in Furia (+25, 2d6+14 l'uno; CA 26), poi fugge. Coi due troll di A.2: **EL 13,5** (era 12,6; conto derivato dalla DMG 3.5, 2 log2 della somma di 2^(GS/2)).
+**A.1-bis · Gorthak Avanzato, scartato** `[CANONE — DM 2026-11-25, card «armi di Gorthak e versione dura»]` (non si adotta: §0-bis) · base: archetipo semplice Avanzato di PF1e, regole rapide: +2 a tutti i tiri e ai danni, +4 alla CA, +2 pf per DV; ⚠️ non SRD 3.5 · la scheda di A.1 con l'archetipo · GS **13** · Iniz +8 · CA **28**, contatto 12, colto alla sprovvista 25, ricostruita con la regola intera (+4 a tutte le caratteristiche, +2 armatura naturale) sulla *corazza di piastre +1* della scheda, che tiene la Des a +3; le regole rapide, «+4 alla CA», darebbero 29 / 15 / 27 · pf **232** (202 + 2 × 15 DV) · Temp +20, Rifl +9, Vol +11 · *stella del mattino Grande +1* +23/+18/+13 (2d6+12) e *stella del mattino Grande +1* +23/+18/+13 (2d6+12, a Forza piena come in A.1); giavellotto +14 (1d8+11) · all'ariete come in A.1 · **sotto 116**: un round in Furia (+25, 2d6+14 l'una; CA 26), poi fugge. Coi due troll di A.2: **EL 13,5** (era 12,6; conto derivato dalla DMG 3.5, 2 log2 della somma di 2^(GS/2)).
 Benchmark: PF T1-1 riga 13: CA 28 contro 28 (pari) / pf 232 contro 180 (sopra) / attacco +23 contro +22 (pari): GS 13 regge.
 Boost log: 2026-11-25 — archetipo semplice Avanzato di PF1e — GS 12 → 13 — scartato: con le regole del ponte (niente carica, il round in Furia, la Sfida dal round in cui Yrsa esce, l'iniziativa tirata, le due stelle del mattino a Forza piena) Borin e poi Yrsa vanno a terra 94 volte su cento contro Gorthak Avanzato, e 71 contro quello di oggi (prove del sesto giro in `plans/esperimenti/scontri-epici-pregen-2026-11-25/`). Non va nel Bestiario.
 

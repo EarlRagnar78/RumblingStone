@@ -206,7 +206,7 @@ e dove l'SRD direbbe altro c'è scritto.
 | goblin cavalcatore di worg | 3 | 19 | 42 | +3 / +1 | quando ne cadono due, l'ultimo fugge al galoppo |
 | worg | 3 | 14 | 51 | +7 / +7, **fiuto** | col cavaliere a terra, scappa |
 | hobgoblin regolare | 9 (6 con tre pregen) | 19 | 23 | +2 / +3 | quando cade il sergente, chi può corre al campo |
-| il sergente | 1 | 21 (23 se il DM ha adottato A.4-bis) | 50 (62) | +1 / +1 | sotto i **25 pf** (31) fugge, e suona il corno se può |
+| il sergente | 1 | 21 (23 con Borin o Yrsa fra gli eroi: §0-bis) | 50 (62) | +1 / +1 (+3 / +3) | sotto i **25 pf** (31) fugge, e suona il corno se può |
 | Fauci di Palude | 1 | 33 | 337 | — | non scende: risponde una volta, poi se ne va |
 
 La CA 33 di Fauci conta l'anello e l'amuleto del suo corredo; senza, 29 (A.5).
@@ -719,7 +719,10 @@ round (la ragione è al §0-bis).
   sulla stessa card, ⚠️ non SRD: nell'SRD ognuno tira il suo Ascoltare. Coi tiri uno per uno
   ascoltano in tre, le due guardie di ronda (+3) e il sergente al fuoco
   (+1), perché chi dorme tira a −10 e non arriva a 20: almeno uno sente
-  quattro volte su dieci (42 su cento).
+  quattro volte su dieci (42 su cento: le guardie sentono con 17 o più, il
+  sergente con 19 o più, e 1 − 0,8 × 0,8 × 0,9 fa 0,42). Col sergente
+  Avanzato, che ha Ascoltare +3 (A.4-bis), sono 49 su cento (1 − 0,8 × 0,8 ×
+  0,8).
 - **A racconto**, se si è in ritardo: un tiro d'attacco a testa, e il DM
   dice chi cade.
 
@@ -760,7 +763,8 @@ fuoco).
 pregen). Due guardie girano intorno alle tende, un giro ogni due minuti; il
 sergente è sveglio, al fuoco; gli altri dormono. Il fuoco toglie **5** a
 Nascondersi a chi gli sta entro 12 m. Le prove sono contrapposte: guardie
-Osservare +2 e Ascoltare +3, il sergente +1 e +1. Chi dorme tira Ascoltare a
+Osservare +2 e Ascoltare +3, il sergente +1 e +1 (+3 e +3 nella versione più
+dura, A.4-bis). Chi dorme tira Ascoltare a
 −10.
 
 **Nala che origlia.** Entro 9 m dal fuoco, Ascoltare **CD 15**, capisce
@@ -1480,6 +1484,12 @@ vale se fra gli eroi c'è Borin o Yrsa (§0-bis).
 | Harbek, con Dara dalla riga 03 | — | — | 2,6 round | 1 |
 | Nala, con Dara dalla riga 03 | — | — | 2,6 round | 7 |
 
+Quale colonna si gioca lo decide la squadra, non chi sfida. Con Borin o Yrsa
+fra i quattro eroi il sergente è quello di A.4-bis per tutta la serata, e si
+legge la colonna «più dura» anche quando a sfidarlo scende Harbek o Nala
+(§0-bis). La colonna «oggi» si gioca solo senza Borin e senza Yrsa: lì le
+loro due righe restano per confronto.
+
 Il libretto (§13) manda un eroe solo; le righe a due valgono con la regola
 dell'unirsi, qui sopra. I limiti delle prove: Harbek e Nala sono provati
 senza incantesimi, solo con le armi; mancano l'Ispirare Coraggio di Nala,
@@ -1838,7 +1848,7 @@ La pattuglia intera: **EL 9** (tre GS 5 fanno 8,2; i tre worg GS 2 la portano a 
 
 **A.4 · Il sergente** (la ricognizione e l'avanguardia: è lo stesso) · `Bestiario/mostri/hobgoblin-bladebearer-ftr6-cr6.md`, *hobgoblin bladebearer*, ⚠️ non SRD, con l'armatura completa al posto della corazza di piastre +1 · GS 6 · hobgoblin guerriero 6°, Medio, LM · Iniz +4 · scurovisione 18 m · Ascoltare +1, Osservare +1 · CA **21** (armatura completa +8, Des +1 fino al tetto, anello di protezione +1, Difesa con Due Armi +1), contatto 12, colto alla sprovvista 20 · pf **50** · Temp +8, Rifl +7, Vol +6 (RC-001, Build B: col *mantello della resistenza +1*) · velocità 6 m · *spada lunga +1* +11/+6 (1d8+6, 19-20); con due spade +9/+4 (1d8+6) e *spada lunga perfetta* +9/+4 (1d8+3) · Combattere con Due Armi e Migliorato, Difesa con Due Armi, Arma Focalizzata e Specializzata (spada lunga), Volontà di Ferro, *Oversized Two-Weapon Fighting* (⚠️ non SRD) · *mantello della resistenza +1*, tre pozioni di *cura ferite moderate* (RC-001, Build B), il corno · Comune, Goblin. **Fugge sotto i 25 pf.** Nell'avanguardia: +1 ad AU e DU di tutti i reparti dal round 3.
 
-**A.4-bis · Il sergente Avanzato, la versione più dura** `[CANONE — DM 2026-11-25, card «sergente Avanzato»]` · base: archetipo semplice Avanzato di PF1e, regole rapide: +2 a tutti i tiri e ai danni, +4 alla CA, +2 pf per DV; ⚠️ non SRD 3.5; per tutta la serata, se fra gli eroi c'è Borin o Yrsa (§0-bis) · lo stesso sergente di A.4, con l'archetipo · GS **7** · Iniz +6 · CA **23**, contatto 12, colto alla sprovvista 22, ricostruita con la regola intera (+4 a tutte le caratteristiche, +2 armatura naturale) sull'armatura completa, che tiene la Des a +1 (ADR-0118); scartato: le regole rapide, «+4 alla CA», che darebbero 25 / 16 / 24 · pf **62** (50 + 2 × 6 DV) · Temp +10, Rifl +9, Vol +8 · *spada lunga +1* +13/+8 (1d8+8, 19-20); con due spade +11/+6 (1d8+8) e *spada lunga perfetta* +11/+6 (1d8+4: con la regola intera la mano secondaria somma metà Forza, +2, e la Specializzazione, +2) · **fugge sotto i 31 pf** (metà, libretto §13). La scorta: **due hobgoblin veterani** (`Bestiario/mostri/hobgoblin-veterans-warrior6-cr5.md`, ⚠️ non SRD) · GS 5 · CA 19, contatto 11, colto alla sprovvista 18 · pf 43 · Temp +8, Rifl +4, Vol +2 · *spada lunga perfetta* +10/+5 (1d8+2, 19-20); arco lungo composito (+1) +7/+2 (1d8+1, ×3) · combattono fino in fondo, e coprono la fuga del sergente. Duello: **EL 9** (9,0; oggi è 6, il sergente da solo, perché la scorta non entra). Gli scout col sergente Avanzato fanno 9,7; pattuglia e scout insieme 11,4.
+**A.4-bis · Il sergente Avanzato, la versione più dura** `[CANONE — DM 2026-11-25, card «sergente Avanzato»]` · base: archetipo semplice Avanzato di PF1e, regole rapide: +2 a tutti i tiri e ai danni, +4 alla CA, +2 pf per DV; ⚠️ non SRD 3.5; per tutta la serata, se fra gli eroi c'è Borin o Yrsa (§0-bis) · lo stesso sergente di A.4, con l'archetipo · GS **7** · Iniz +6 · Ascoltare +3, Osservare +3 (in A.4 sono +1 e +1, la sola Saggezza; con la regola intera la Sag sale di 4 e il modificatore di 2, e le regole rapide danno lo stesso +2) · CA **23**, contatto 12, colto alla sprovvista 22, ricostruita con la regola intera (+4 a tutte le caratteristiche, +2 armatura naturale) sull'armatura completa, che tiene la Des a +1 (ADR-0118); scartato: le regole rapide, «+4 alla CA», che darebbero 25 / 16 / 24 · pf **62** (50 + 2 × 6 DV) · Temp +10, Rifl +9, Vol +8 · *spada lunga +1* +13/+8 (1d8+8, 19-20); con due spade +11/+6 (1d8+8) e *spada lunga perfetta* +11/+6 (1d8+4: con la regola intera la mano secondaria somma metà Forza, +2, e la Specializzazione, +2) · **fugge sotto i 31 pf** (metà, libretto §13). La scorta: **due hobgoblin veterani** (`Bestiario/mostri/hobgoblin-veterans-warrior6-cr5.md`, ⚠️ non SRD) · GS 5 · CA 19, contatto 11, colto alla sprovvista 18 · pf 43 · Temp +8, Rifl +4, Vol +2 · *spada lunga perfetta* +10/+5 (1d8+2, 19-20); arco lungo composito (+1) +7/+2 (1d8+1, ×3) · combattono fino in fondo, e coprono la fuga del sergente. Duello: **EL 9** (9,0; oggi è 6, il sergente da solo, perché la scorta non entra). Gli scout col sergente Avanzato fanno 9,7; pattuglia e scout insieme 11,4.
 Benchmark: PF T1-1 riga 7: CA 23 contro 20 (sopra) / pf 62 contro 85 (sotto) / attacco +13 contro +13 (pari): GS 7 regge.
 Boost log: 2026-11-25 — archetipo semplice Avanzato di PF1e sul sergente, e due veterani (GS 5, Bestiario) al posto dei due regolari della scorta — GS 6 → 7, EL del duello 6 → 9 — adottato dal DM sulla card del 2026-11-25 («sergente Avanzato»), per la serata in cui fra gli eroi c'è Borin o Yrsa: contro di loro il duello di oggi dura 1,5 round con Borin e 1,1 con Yrsa, e con i veterani 2,1 e 1,6 (prove del sesto giro in `plans/esperimenti/scontri-epici-pregen-2026-11-25/`).
 

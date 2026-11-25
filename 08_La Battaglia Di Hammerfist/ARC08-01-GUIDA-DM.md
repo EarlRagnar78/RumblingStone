@@ -392,7 +392,7 @@ SIMBOLI TATTICI:
 **Lotta:** +24
 **Attacco:** *Stella del Mattino Grande +1* +21 in mischia (2d6+10)
 **Attacco Completo:** *Stella del Mattino Grande +1* +21/+16/+11 in mischia (2d6+10) e *Stella del Mattino Grande +1* +21/+16/+11 in mischia (2d6+10)
-**Distanza:** giavellotto grande +12/+7/+2 (1d8+9)
+**Distanza:** giavellotto grande +12 (1d8+9), uno a round, dopo aver lasciato una stella del mattino: incremento 9 m, −2 a ogni incremento in più, fino a 45 m. Senza Estrazione Rapida le armi da lancio non danno gli attacchi iterativi `[SRD: Quick Draw]`
 **Spazio/Portata:** 3m/3m
 **Attacchi Speciali:**
 *   **Combattere con Due Armi Superiore (Str):** ogni testa guida un braccio: nessuna penalità ai tiri per colpire e ai danni con due armi (ettin SRD): il secondo braccio somma la For piena ai danni, come il primo `[CANONE — DM 2026-11-25, card «armi di Gorthak e versione dura»]`.
@@ -406,8 +406,8 @@ SIMBOLI TATTICI:
 - **Testa Sinistra (Brutale):** Sempre attacca per prima, +2 danni
 - **Testa Centrale (Strategica):** Comanda le altre, fornisce bonus tattici
 - **Testa Destra (Vigile):** Non può essere colpita di sorpresa, +4 Iniziativa
-- **Furia:** sotto i 101 PF (metà) la testa sinistra prende il sopravvento: +4 For, -2 CA, combatte fino alla morte
-- **Morale:** prima di quella soglia, se Fauci è fuggito o abbattuto e l'orda è in rotta, la testa centrale può offrire la resa (al finale la scelta è dei PG); dopo, nessuna resa
+- **Furia:** sotto i 101 PF (metà), per un round la testa sinistra prende il sopravvento: +4 For, -2 CA. Alla fine di quel round la testa centrale lo tira indietro e Gorthak lascia il ponte, ferito `[CANONE — DM 2026-11-04, P16, il cancello e Gorthak]` (`ARC08-DEF-2`, Scena 2)
+- **Morale:** prima di quella soglia, se Fauci è fuggito o abbattuto e l'orda è in rotta, la testa centrale può offrire la resa (al finale la scelta è dei PG)
 
 > **Verifica 3.5 (versione più forte)**: ettin dell'SRD (10 DV) portato a
 > 15 DV. ⚠️ Non SRD: l'SRD dà all'ettin «Advancement: By character class»,
@@ -2980,7 +2980,7 @@ incontri `[CANONE — DM 2026-10-19, D19]`.*
 *   **Ruolo:** Cecchino, scout, cacciatrice di élite.
 *   **Statistiche Chiave:** PF 102, CA 21, Attacco Arco +19/+14/+9 (1d8+6/x3)
 *   **Abilità Principali:**
-    *   **Nemico Prescelto:** +6 danni contro Orchi, +4 contro Giganti.
+    *   **Nemico Prescelto:** +6 a colpire e ai danni contro gli Orchi, +4 contro i Giganti, +2 contro i Draghi.
     *   **Munizioni Speciali:** Usa le frecce anatema/ricercanti contro i bersagli giusti.
     *   **Comando Balestrieri:** Con un'azione, dai +4 al tiro per colpire a un'unità di balestrieri.
 *   **Tattica:** Trova una posizione sopraelevata, elimina i comandanti e i maghi nemici, usa la tua conoscenza del terreno per preparare imboscate.

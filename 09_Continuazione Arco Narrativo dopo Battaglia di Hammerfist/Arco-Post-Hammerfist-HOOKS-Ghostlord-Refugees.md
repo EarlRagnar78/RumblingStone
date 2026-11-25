@@ -8,7 +8,7 @@ Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md
 > - **Hook del PARTY (non singolo PG)**. Scena: incontro di strada, Day 23-28 (DM sceglie il momento).
 > - **Carovana**: Ren Casadipietra (ex-guardia, leader) + Sira (madre adottiva di Tobi orfano) + Joran (ex-druido, riconoscerà Hella) + 5 armati + ~22 civili. Da Loccatella, fuggono ondate non-morti dal Thornwaste.
 > - **Diretti a Talar** — saccheggiata 2 giorni fa, profughi NON lo sanno. Rivelazione difficile.
-> - **4 vie**: Scorta a città sicura (Dauth/Brindol/Hammerfist/Sacred Forest) / Indagare Thornwaste (apertura precoce arco Ghostlord, sacrifica Torneo+Torre) / Aiuto parziale (provviste, info, tirare 1d20+5) / Ignorare (DARK, eco RP).
+> - **4 vie**: Scorta a città sicura (Dauth/Rethmar/Hammerfist/Sacred Forest) / Indagare Thornwaste (apertura precoce arco Ghostlord, sacrifica Torneo+Torre) / Aiuto parziale (provviste, info, tirare 1d20+5) / Ignorare (DARK, eco RP).
 > - **Eco**: scorta = +30 alla Riserva di Lorana a Rethmar + Joran CR 5 alleato Phase 1 + reputazione regionale; ignorare = niente meccanico, eco RP forte.
 
 > **Status:** canone di campagna RumblingStone (2026-05-04). Master reference: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §3.
@@ -96,7 +96,7 @@ Il party informa Ren che Talar è caduta. Ren prende il colpo. *"Allora dove and
 
 **Opzioni alternative:**
 1. **Dauth** (3 giorni di marcia in più). Sicuramente in piedi (almeno fino al Day 33 dell'assedio Vanguard). Ma 3 giorni = altri morti tra i bambini e gli anziani.
-2. **Brindol** (4-5 giorni di marcia in più). Sotto pressione ma ancora in piedi.
+2. **Rethmar** (4-5 giorni di marcia in più). Sotto pressione ma ancora in piedi.
 3. **Hammerfist** (5+ giorni indietro). Sicura ma lontanissima.
 4. **Continuare verso il bosco a est** (Sacred Forest, se vicino). I druidi accetteranno asilo? Possibile (Diplomazia CD 18).
 
@@ -127,7 +127,7 @@ Il party decide di **scoprire perché i non-morti escono in massa**. Lascia la c
 
 ### 4.3 GRAY-C — *Aiutare i profughi senza scortarli (donare risorse + dare informazioni)*
 
-Il party dà a Ren **provviste, una mappa più dettagliata, lettere di raccomandazione** per Dauth (se ce le ha) o per Brindol. Indica la strada alternativa più sicura.
+Il party dà a Ren **provviste, una mappa più dettagliata, lettere di raccomandazione** per Dauth (se ce le ha) o per Rethmar. Indica la strada alternativa più sicura.
 
 **Costi:** poche risorse (50 mp, alcune razioni).
 

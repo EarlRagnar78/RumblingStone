@@ -114,7 +114,7 @@ archi:
   march_clock: Day 25-30
   pg_livello: '13'
   note: null
-- arco: 09 P2 Rhest (Saarvith + Regiarix)
+- arco: 09 P2 Lhesper (Saarvith + Regiarix)
   tempo: preparato
   stato: '**preparato in anticipo**'
   march_clock: Day 25-32
@@ -327,11 +327,11 @@ villain:
   trigger: Tower goes mobile; harder to find next session
 - villain: Wyrmlord Saarvith + Regiarix
   png_id: saarvith-regiarix
-  dove: Lake Rhest ruins
+  dove: Lhesper ruins
   agenda: Rebuild dragonrider corps from black dragon spawn
   clock: 3/8
   stato: attivo
-  trigger: Rhest becomes a fortified war camp; CR +1 to assault
+  trigger: Lhesper becomes a fortified war camp; CR +1 to assault
 - villain: Xal'thor (Illithid Coordinator, psionic)
   png_id: xal-thor
   dove: En route with an Illithid invasion force (psionic thralls, larvae, a small core of dominated Githyanki — NOT the free Githyanki dragon-rider force led by Vaereth, which is a separate and hostile faction)
@@ -589,7 +589,7 @@ scenari_rethmar:
   orda: 8,000
   difensori: 2,620
   rapporto: '**3.1:1**'
-- scenario: Ottimale (tutte quest + Rhest + Tower)
+- scenario: Ottimale (tutte quest + Lhesper + Tower)
   orda: 6,800
   difensori: 3,770
   rapporto: '**1.80:1**'
@@ -631,7 +631,7 @@ march_clock:
     waypoint: '**Terrelton equivalent falls**'
     stato: 🎯 **SYNC POINT = End of Battle of Hammerfist**
   - giorno: '25'
-    waypoint: Marth Fen / Blackfens (Rhest area)
+    waypoint: Marth Fen / Lhespenbog (Lhesper area)
     stato: ⏳ Pending
   - giorno: 33–35
     waypoint: Elsir Crossroads / Channath Crocevia
@@ -643,7 +643,7 @@ march_clock:
     waypoint: Notte dei Drow / advance scout phase (Fase 0 begins)
     stato: ⏳ Pending
   - giorno: '**42**'
-    waypoint: '**Horde arrives at Rethmar (ex-Brindol) and encamps**'
+    waypoint: '**Horde arrives at Rethmar and encamps**'
     stato: 🎯 **Rethmar assault begins**
 
 # ---------------------------------------------------------------------------
@@ -689,7 +689,7 @@ png:
 - id: saarvith-regiarix
   nome: Wyrmlord Saarvith + Regiarix
   tipo: persona
-  scheda: 09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md
+  scheda: 09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md
 - id: xal-thor
   nome: Xal'thor (Illithid Coordinator)
   tipo: persona

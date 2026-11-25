@@ -1,5 +1,5 @@
 # ERRATA CORRIGE PARTE 2 & 3 (3.5 Verification)
-## Verifica meccanica D&D 3.5 SRD dei blocchi statistica di P2A/P2B/P2-RHEST/P3 + upscale del boss finale
+## Verifica meccanica D&D 3.5 SRD dei blocchi statistica di P2A/P2B/P2-LHESPER/P3 + upscale del boss finale
 
 > **Versione**: v1 (2026-07-02) — task **B5** del `PIANO-REVISIONE-ARC09`.
 > **Formato**: gemello di `ERRATA-PARTE1-Quest-Hellas-35-Verification.md`.
@@ -14,7 +14,7 @@
 **File analizzati (blocchi statistica):**
 1. `Arco-Post-Hammerfist-P2A-Torre-PARTE*-STATBLOCCHI-*.md` (Torre Invisibile, boss Zalkatar)
 2. `Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md` (Torneo di Dauth, Xal'thor/Sethrax/monaci)
-3. `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-*-STATBLOCCHI.md` (Saarvith + Regiarix, nido Razorfiend)
+3. `Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-*-STATBLOCCHI.md` (Saarvith + Regiarix, nido Razorfiend)
 4. `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md` (Azarr Kul, Avatar, Erinni, Arcimago)
 5. `Bestiario/*.md` (catalogo unità riusate)
 
@@ -139,10 +139,10 @@ formazione, poi carica il buffer/guaritore del party sotto *divine power*; usa
 
 ---
 
-## 2. P2-RHEST — Saarvith & Regiarix
+## 2. P2-LHESPER — Saarvith & Regiarix
 
 ### 2.1 Saarvith (Goblin Ranger 10, Piccolo) — correzioni di taglia
-`...P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` §1.
+`...P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` §1.
 - ❌ **CA 22 / contatto 14** non contano il **+1 taglia (Piccolo)** → ✅ **CA 23,
   contatto 15**, colto alla sprovvista 19.
 - ❌ **Lotta +7** → con BAB +10, For +2, taglia Piccola −4 = ✅ **+8**.
@@ -150,7 +150,7 @@ formazione, poi carica il buffer/guaritore del party sotto *divine power*; usa
 - ✅ TS e talenti da arciere corretti.
 
 ### 2.2 Regiarix (Drago Nero, Grande) — attacchi naturali
-`...P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` §2 (e file gemello ENCOUNTER).
+`...P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` §2 (e file gemello ENCOUNTER).
 - ❌ **Morso +31** → BAB +22, For +8, taglia −1 = ✅ **+29** (salvo Weapon Focus
   esplicito, che va **dichiarato**).
 - ❌ **Artigli/ali +29 al valore pieno**: sono **secondari a −5** → ✅ **artigli +24,
@@ -257,7 +257,7 @@ place quando si tocca il file, o si tengono come **checklist di verifica al tavo
 
 ## 8. FILE DA AGGIORNARE (quando si toccano)
 
-1. `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` — Saarvith taglia, Regiarix attacchi naturali.
+1. `Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` — Saarvith taglia, Regiarix attacchi naturali.
 2. `Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md` — CA contatto/colto, raffica monaci, RI.
 3. `Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` — RI non cumulativa, azioni 3.5.
 4. `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md` — ✅ Azarr Kul fatto; Erinni/Avatar note.

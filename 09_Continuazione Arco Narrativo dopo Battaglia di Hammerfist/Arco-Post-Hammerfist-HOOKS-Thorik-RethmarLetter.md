@@ -180,7 +180,7 @@ Thorik decide che Hammerfist viene prima di Rethmar. Non manda la lettera, non m
 ### 3.5.1 Cosa Tempestas vuole sapere (per Brenna)
 
 - **Posizioni della Vanguard del Red Hand** osservate dagli scout di Hammerfist (rotte, dimensioni, comandanti identificati).
-- **Identità dei Wyrmlords** già noti al party (Saarvith a Lake Rhest, Karruk Tagliarossa che si stacca per Dauth).
+- **Identità dei Wyrmlords** già noti al party (Saarvith nelle rovine di Lhesper, Karruk Tagliarossa che si stacca per Dauth).
 - **Stima del tempo di marcia** dell'orda principale di Azarr Kul.
 - **Stato delle difese di Hammerfist** (per coordinarsi se servisse rinforzo reciproco).
 

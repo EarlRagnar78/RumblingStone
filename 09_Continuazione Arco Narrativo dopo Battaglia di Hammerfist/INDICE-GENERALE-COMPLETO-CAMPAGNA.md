@@ -38,7 +38,7 @@ File dedicati in `Bestiario/villain/` e `Bestiario/png/`. Ogni cartella contiene
 
 **Villain minori con stat nei file di arco (no cartella dedicata):**
 - Zalkatar (Illithid Warlock, CR 13): `Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md`
-- Wyrmlord Saarvith + Regiarix (CR 12/13): `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`
+- Wyrmlord Saarvith + Regiarix (CR 12/13): `Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`
 - Zarim (Illithid luogotenente, CR 12): `Arco-Post-Hammerfist-P2B-Torneo-Tordek-BATTLE-STATS-e-VILLAIN-ICONICI.md`
 - Avversari Torneo (12+ nomi): `Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md`
 - Azarr Kul + Avatar Tiamat (stat epiche): `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md`
@@ -149,8 +149,8 @@ File dedicati in `Bestiario/villain/` e `Bestiario/png/`. Ogni cartella contiene
 |---|---|
 | `Quest 1 – Druida Hellas: Il Cerchio Sacro della Foresta.md` | ⚠️ storico/deprecato — Versione originale quest |
 | `ERRATA-PARTE1-Quest-Hellas-35-Verification.md` | Correzioni 3.5 SRD — stat blocks, action economy (bonus action→swift), Touch/FF AC, BAB/Grapple |
-| `ERRATA-PARTE2-3-35-Verification.md` | Verifica 3.5 di P2A/P2B/RHEST/P3 + **upscale del boss finale** (Azarr Kul → Chierico 12/Guerriero 4, CR 17); attacchi naturali Regiarix, taglia Saarvith, catch coerenza Tyrgarun |
-| `Arco-Post-Hammerfist-TESORO-WBL-AUDIT.md` | **Audit tesoro (WBL 3.5)** — distribuzione ~380k mo eq. per incontro (Rhest hoard, Torre, Torneo, Rethmar); corregge il gap ~8× dell'INDICE §Loot |
+| `ERRATA-PARTE2-3-35-Verification.md` | Verifica 3.5 di P2A/P2B/LHESPER/P3 + **upscale del boss finale** (Azarr Kul → Chierico 12/Guerriero 4, CR 17); attacchi naturali Regiarix, taglia Saarvith, catch coerenza Tyrgarun |
+| `Arco-Post-Hammerfist-TESORO-WBL-AUDIT.md` | **Audit tesoro (WBL 3.5)** — distribuzione ~380k mo eq. per incontro (Lhesper hoard, Torre, Torneo, Rethmar); corregge il gap ~8× dell'INDICE §Loot |
 | `Arco-Post-Hammerfist-BANCHI-E-MERCATI.md` | **I banchi**: dove si compra, si vende e si baratta (Cerchio, Dauth, Torre, campi drow, recinti di loxo e centauri, Rethmar, Channathgate, Sal, il Collezionista), con prezzi SRD, quantità, limiti d'acquisto e casse; §9 le monete antiche |
 | `Arco-Post-Hammerfist-LOCANDE.md` | **Le locande**: dove si dorme a Dauth, Rethmar e Channathgate quartiere per quartiere, coi prezzi a notte, le stanze libere e cosa si sente al bancone |
 | `Arco-Post-Hammerfist-INCONTRI-VIAGGIO-CANNATH-VALE.md` | **Tabelle d% incontri di viaggio** — 4 macro-zone × 2 finestre (Day 20-30 / 31-42), EL 9-13, ≥1/3 non-combat; riusa MISSIONI-BREVI e Bestiario |
@@ -192,24 +192,24 @@ File dedicati in `Bestiario/villain/` e `Bestiario/png/`. Ogni cartella contiene
 
 **Immagine:** `tower_structure.png`
 
-### PARTE 2 — Rhest: Città Sommersa & Drago Nero
+### PARTE 2 — Lhesper: Città Sommersa & Drago Nero
 
 **Source:** Red Hand pag 67–80 | **Durata:** 2–3 sessioni (Day 25–32, finestra `campaign/state.md` §0; cronologia fine in `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §1.1)
 
 | File | Tipo | Status |
 |---|---|---|
-| `Arco-Post-Hammerfist-P2-RHEST-OVERVIEW.md` | Overview struttura quest | ✅ |
-| `Arco-Post-Hammerfist-P2-RHEST-FASE1-ARRIVO-BLACKFENS.md` | Fase 1 — Arrivo nelle Blackfens | ✅ |
-| `Arco-Post-Hammerfist-P2-RHEST-FASE2-PALUDE-RAZORFIEND.md` | Fase 2 — Palude e Razorfiend encounter | ✅ |
-| `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-RAZORFIEND-NIDO.md` | Encounter — Razorfiend nido | ✅ |
-| `Arco-Post-Hammerfist-P2-RHEST-FASE3-INTRUSIONE-EDIFICI-RHEST.md` | Fase 3 — Intrusione rovine sommerse | ✅ |
-| `Arco-Post-Hammerfist-P2-RHEST-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md` | Fase 4 — Boss: Wyrmlord Saarvith + Regiarix | ✅ |
-| `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | Stat blocks boss | ✅ |
-| `Arco-Post-Hammerfist-P2-RHEST-CONSEGUENZE-ESITI.md` | Conseguenze ed esiti | ✅ |
+| `Arco-Post-Hammerfist-P2-LHESPER-OVERVIEW.md` | Overview struttura quest | ✅ |
+| `Arco-Post-Hammerfist-P2-LHESPER-FASE1-ARRIVO-LHESPENBOG.md` | Fase 1 — Arrivo nel Lhespenbog | ✅ |
+| `Arco-Post-Hammerfist-P2-LHESPER-FASE2-PALUDE-RAZORFIEND.md` | Fase 2 — Palude e Razorfiend encounter | ✅ |
+| `Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-RAZORFIEND-NIDO.md` | Encounter — Razorfiend nido | ✅ |
+| `Arco-Post-Hammerfist-P2-LHESPER-FASE3-INTRUSIONE-EDIFICI-LHESPER.md` | Fase 3 — Intrusione rovine sommerse | ✅ |
+| `Arco-Post-Hammerfist-P2-LHESPER-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md` | Fase 4 — Boss: Wyrmlord Saarvith + Regiarix | ✅ |
+| `Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | Stat blocks boss | ✅ |
+| `Arco-Post-Hammerfist-P2-LHESPER-CONSEGUENZE-ESITI.md` | Conseguenze ed esiti | ✅ |
 
 **Contenuti pianificati (livellati liv. 13):**
 
-- Lake Rhest esplorazione (barche, underwater)
+- Esplorazione di Lhesper sommersa (barche, underwater)
 - Città rovine sommerse (mappa hex acqua)
 - Razorfiend encounters nella palude
 - Wyrmlord Saarvith (CR 12 fighter/dragon disciple)
@@ -344,7 +344,7 @@ lecito (metà al Palio, metà alle sedute del Consiglio).
 
 **Contenuti (livellati liv. 13):**
 
-- Viaggio Tiri Kitor forest (Blackfens)
+- Viaggio Tiri Kitor forest (Lhespenbog)
 - Diplomazia elfi (prove Charisma/Wisdom) — Killiar Arrowswift, Sellyria Starsinger
 - Quest di prova: vendicare Lanikar / difendere Starsong
 - Minaccia wyvern/manticore upgraded (CR 10–11)
@@ -598,9 +598,9 @@ Tutte mappe tattiche nei file `*-MAPPE*.md` usano scala 1.5m/sq.
 
 - Oro / valore liquidabile: **~380.000 mo equivalenti** distribuiti sull'arco
   (coin + gemme + arte + oggetti), coerente col WBL 13→16 (±20%). Pesatura:
-  Rhest hoard (~90k) · Torre di Zalkatar (~70k) · Torneo (~45k) · Rethmar/bottino
+  Lhesper hoard (~90k) · Torre di Zalkatar (~70k) · Torneo (~45k) · Rethmar/bottino
   + ricompense civiche (~45k) · resto sulle side-quest.
-- Magic Items: **~20–28 items** (l'hoard di Rhest + la Torre ne portano ~8–10 da soli).
+- Magic Items: **~20–28 items** (l'hoard di Lhesper + la Torre ne portano ~8–10 da soli).
 - Rendite/titoli di dominio (C6): contati **a parte** dal WBL liquido (utili ARC-10).
 - Artifacts: 5 legacy items (Aegis Fang, Corona, Ring, Bracieri, Collana) — **già
   posseduti al 13°**: ricchezza d'ingresso, non colmano il delta dell'arco.
@@ -613,7 +613,7 @@ Tutte mappe tattiche nei file `*-MAPPE*.md` usano scala 1.5m/sq.
 
 - [ ] Quest Hella — Cerchio Sacro Shaarcah Forest
 - [ ] Quest Artemis — Torre Invisibile (vs Zalkatar)
-- [ ] Rhest — Wyrmlord Saarvith & Regiarix (📝 NEW)
+- [ ] Lhesper — Wyrmlord Saarvith & Regiarix (📝 NEW)
 - [ ] Quest Tordek — Torneo Epico Dauth
 - [ ] Sabotaggio Campi Drow (1–3)
 - [ ] Starsong Hill — Alleanza Elfi Tiri Kitor

@@ -1,7 +1,7 @@
-Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md
+Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md
 ========================================================================
 
-# Rhest – Boss Saarvith & Regiarix – Statblocchi 3.5
+# Lhesper – Boss Saarvith & Regiarix – Statblocchi 3.5
 
 Bilanciato per PG 11–13, gruppo 4–5 personaggi.[web:80][web:59]
 
@@ -83,7 +83,7 @@ Saarvith, non il suo servo. È giovane e ha paura di morire per un goblin, e la
 palude è casa sua. **Cosa sa:** quello che gli racconta Saarvith dagli
 esploratori, cioè chi tira, chi cura e chi vola; dopo Hammerfist anche dell'ascia
 che canta, se qualcuno dell'orda è tornato. **Le quattro domande:** perdere
-Rhest davanti ai goblin; la sua tana sommersa; finire allo scoperto sull'asciutto;
+Lhesper davanti ai goblin; la sua tana sommersa; finire allo scoperto sull'asciutto;
 l'acido che non morde chi se ne è protetto.
 - Combatte dall'acqua: emerge, soffia in linea lungo le passerelle, dove i PG
   stanno per forza in fila, e si rituffa. Sommerso ha copertura totale.
@@ -147,7 +147,7 @@ era (prima della card del 15/11): «Drago Nero Adulto (CR 13 base)», Grande, 22
 
 ## 3. Arena e setup tattico
 
-- Edificio centrale di Rhest (sala su palafitte):
+- Edificio centrale di Lhesper (sala su palafitte):
   - Piano superiore asciutto (Saarvith).  
   - Piano inferiore e dintorni sommersi (Regiarix).
 
@@ -194,7 +194,7 @@ Setup iniziale:
 
 ### Entrambi uccisi
 
-- Rhest decapitata come comando.  
+- Lhesper decapitata come comando.  
 - I Tiri‑Kitor ricevono prove schiaccianti dell’impegno dei PG.  
 - Niente Regiarix nella Battaglia Finale.
 
@@ -208,9 +208,9 @@ Setup iniziale:
 ### Saarvith ucciso, Regiarix fugge
 
 - Drago nero come possibile nemesi futura o rinforzo in Battaglia Finale.  
-- Comunque Rhest perde la sua struttura di comando Goblin.
+- Comunque Lhesper perde la sua struttura di comando Goblin.
 
 ### Entrambi fuggono
 
-- Rhest rimane roccaforte quasi intatta.  
-- Conseguenze pesanti sull’Assedio (come descritto in `RHEST-CONSEGUENZE-ESITI.md`).[web:119]
+- Lhesper rimane roccaforte quasi intatta.  
+- Conseguenze pesanti sull’Assedio (come descritto in `LHESPER-CONSEGUENZE-ESITI.md`).[web:119]

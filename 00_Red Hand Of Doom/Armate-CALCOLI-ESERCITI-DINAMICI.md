@@ -65,7 +65,7 @@
 | Drago | Ruolo campagna | Arco | Stato |
 |---|---|---|---|
 | **Abithriax** (Red adult) | Skull Gorge guardian → Rethmar Fase 1 | AP canon | Vivo |
-| **Regiarix** (Black young adult) | Rhest/Saarvith, P2 Arco-09 | AP canon | **A rischio PG** (P2-RHEST-FASE4) |
+| **Regiarix** (Black young adult) | Lhesper/Saarvith, P2 Arco-09 | AP canon | **A rischio PG** (P2-LHESPER-FASE4) |
 | **Ozyrrandion** (Green adult, CR 14) | Torre Invisibile / Wyrmlord Tower | AP canon | **A rischio PG** (P2A-Torre-Zalkatar) |
 | **Tyrgarun** (Black adult, hell-themed reserve) | Riserva aerea Rethmar | AP upscaled | Vivo |
 | **Fauci di Palude** (Black adult) | Vanguard Hammerfist | Canon campagna | **Ramo condizionale D10, non deciso** (default: fugge <50 PF, assente da Rethmar; alternativa: ucciso ad Hammerfist) |
@@ -81,7 +81,7 @@ guardie dei Wyrmlord upscaled.
 
 | Colore | Numero | Assegnato a |
 |---|---|---|
-| Black Razorfiend | 2 | Saarvith/Regiarix (Rhest, P2) — **rimossi se PG vincono** |
+| Black Razorfiend | 2 | Saarvith/Regiarix (Lhesper, P2) — **rimossi se PG vincono** |
 | Red Razorfiend | 2 | Wyrmlord Karruk (assalto Rethmar Fase 1) |
 | Blue Razorfiend | 1 | Ozyrrandion/Tower (rimosso se Zalkatar cade) |
 | White Razorfiend | 1 | Azarr Kul guard (Rethmar Fase 3) |
@@ -148,7 +148,7 @@ Approssimato a **~10.000** come target narrativo.
 | Emissario Red Hand | 12 | 1-3 | `Bestiario/villain/emissario-red-hand-cr12.md` | **Conditional** (Ghostlord branch; P3 Ghostlord alleanza) |
 | Zarim (Illithid luogotenente) | 12 | ×1 | `Bestiario/villain/Zarim/zarim-illithid-luogotenente-cr12.md` | Torneo Dauth P2B Day 2 (fixed) |
 | Xal'thor (Illithid Commander) | 14 | ×1 | `Bestiario/villain/Xal_thor/Xal_thor/Xal_thor.md` (pointer) | Torneo Dauth P2B Day 3 (fixed) |
-| Saarvith | 11 | ×1 | `09_.../P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | Rhest P2 (PG deviabile) |
+| Saarvith | 11 | ×1 | `09_.../P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | Lhesper P2 (PG deviabile) |
 | Zalkatar | 13 | ×1 | `09_.../P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` | Torre Invisibile P2A (PG deviabile) |
 | Wyrmlord Karruk | 13 | ×1 | `Bestiario/villain/Wyrmlord_Karruk/wyrmlord-karruk-cr13.md` | Rethmar Fase 1 assault leader |
 | Ondata Giganti — mass wave | 15 (EL) | ×2 ondate | `Bestiario/mostri/ondata-giganti-fanteria-cr15.md` | Rethmar Fase 1 (prima ondata) + Fase 3 (rinforzo) — assorbe gli 80 Hill Giant §2.1 + ogre/ettin supporto |
@@ -180,7 +180,7 @@ Approssimato a **~10.000** come target narrativo.
 | Distaccamento | Unità | Destino | Stato canonico |
 |---|---|---|---|
 | **Vanguard Hammerfist** (Fauci di Palude + 900 unità) | 900 | Hammerfist | **-900 effettivi Day 19** (~500 morti + ~400 dispersi in rotta, non si ricongiungono — piano ARC-08 D11, scenario di vittoria default; vedi file Arc 08) |
-| **Contingente Rhest** (Saarvith + Regiarix + 200 drow/goblin + 2 Razorfiend) | 200 | Lake Rhest | **A rischio** P2 Arc-09 |
+| **Contingente Lhesper** (Saarvith + Regiarix + 200 drow/goblin + 2 Razorfiend) | 200 | Lhesper (Lhespenbog) | **A rischio** P2 Arc-09 |
 | **Contingente Torre** (Zalkatar + Ozyrrandion + 150 Illithid thralls + 1 Razorfiend) | 150 | Invisible Tower | **A rischio** P2A Arc-09 |
 | **Cellula Dauth** (Xal'thor + 100 Illithid psionic + thralls) | 100 | Dauth | **Day 3 Tournament fixed assault** |
 
@@ -205,7 +205,7 @@ Trigger ⇒ modifica al totale orda a Rethmar:
 | **Ghostlord redento** (branch raro) | 0 non-morti ostili; +600 non-morti "buoni" fra i difensori |
 | **Xal'thor allea con Mano Rossa** | +400 Illithid thralls |
 | **Il Collezionista interviene** | +300 cultisti Rakshasa |
-| PG vincono a Rhest (Regiarix + Saarvith) | −200 unità, −1 drago, −2 Razorfiend |
+| PG vincono a Lhesper (Regiarix + Saarvith) | −200 unità, −1 drago, −2 Razorfiend |
 | PG vincono Torre (Zalkatar + Ozyrrandion) | −150 unità, −1 drago, −1 Razorfiend |
 | PG catalizzano Loxo/Centaur revolt | −150 unità (i centauri lasciano il campo; DM 2026-10-18) + disruption logistica −100 |
 | PG sabotano rifornimenti Cannath Vale | −300 attrition |
@@ -242,7 +242,7 @@ Trigger ⇒ modifica al totale orda a Rethmar:
 | **Worst** (Ghostlord ostile, Xal'thor allea, 0 quest) | ~12.700 | 2.200 | **5.8:1** | Rethmar cade |
 | **Baseline** (Ghostlord morto/neutrale, 0 quest) | ~9.400 | 2.200 | **4.3:1** | Sconfitta quasi certa |
 | **Medio** (2-3 quest + sabotaggi parziali) | ~8.000 | 3.100 | **2.6:1** | Difficile ma vincibile con PG eroici |
-| **Ottimale** (tutte quest + Rhest + Tower) | ~6.800 | 4.100 | **1.66:1** | Vittoria con perdite |
+| **Ottimale** (tutte quest + Lhesper + Tower) | ~6.800 | 4.100 | **1.66:1** | Vittoria con perdite |
 | **Leggendario** (ottimale + Ghostlord redento + Collezionista stop) | ~6.400 | 4.700 | **1.36:1** | Vittoria decisiva |
 
 **Baseline narrativo**: Hammerfist = 900/300 = **3:1**, vinta con
@@ -262,7 +262,7 @@ fine della Battaglia di Hammerfist. Questo è il **punto di sincronia
 canonica** per tutta l'Arco-09.
 
 **Days 20-41**: window PG per Arc-09 (Hella, Tordek, Artemis, Thorik
-quest + Rhest + Tower + eventuale Ghostlord).
+quest + Lhesper + Tower + eventuale Ghostlord).
 
 **Day 35-37 — Sosta di Sonjak (aberrazioni + catena rifornimenti):**
 Dopo la caduta di Witchcross, l'orda si ferma per 2 giorni obbligatori:

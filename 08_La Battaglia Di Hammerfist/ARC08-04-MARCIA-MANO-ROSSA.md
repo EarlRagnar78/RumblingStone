@@ -15,7 +15,7 @@
 
 Hammerfist Holds **non è** una delle tappe ufficiali del March Clock
 (`campaign/state.md` §2.1: Fane di Tiamat → Vraath Keep → Skull Gorge →
-Drellin's Ferry eq. → Terrelton eq. → Rhest → Elsir Crossroads →
+Drellin's Ferry eq. → Terrelton eq. → Lhesper → Elsir Crossroads →
 Rethmar). È un teatro **secondario**: una fortezza nanica fuori dalla
 rotta principale dell'Elsir Vale, colpita da un **distaccamento**
 (state.md §2.2: *"Fauci di Palude detachment"*) che si separa dal
@@ -34,7 +34,7 @@ corpo principale della Mano Rossa.
   non come tappa del piano principale.
 - **Non rientra nel corpo principale**: la sconfitta/dispersione del
   distaccamento (D11) non altera il totale dell'orda principale che
-  marcia verso Rhest — è già contabilizzata separatamente in
+  marcia verso Lhesper — è già contabilizzata separatamente in
   state.md §2.2 come perdita "post-Hammerfist (Day 19 sync)".
 
 ## 2. Composizione della colonna (900 unità — E8)

@@ -405,8 +405,8 @@ uomini»* — non è una concessione del DM.
 nella Sala come fuori: un pomeriggio davanti agli affreschi è un pomeriggio
 del mondo di sopra, come l'ora del rito.
 **E vale solo prima del rito.** Dopo il rito la Sala conta per intero anche
-il sonno: otto ore di sonno costano otto ore, come scrive «La Resurrezione di Hella» §9
-. Il registro qui sotto è giocato, e non
+il sonno: otto ore di sonno costano otto ore, come scrive «La Resurrezione di Hella» §9.
+Il registro qui sotto è giocato, e non
 cambia.
 
 #### Il registro dei riposi (giocato + previsto)
@@ -479,8 +479,8 @@ davanti a un pannello completato = **Benedizione della Cronaca** (§3).
 >   tutti e due, e per ogni tiro vale il più alto, come per due bonus dello
 >   stesso tipo nell'SRD. Per Thorik, che ha già +2 sacro a tutti i TS dalla
 >   Risonanza della Corona con Aegis Fang, i premi di A1, A3 e A8 diventano
->   bonus **morale** dello stesso valore, e si sommano al sacro
->.
+>   bonus **morale** dello stesso valore, e si sommano al sacro.
+>   
 > - **«Guarigione emotiva» (A3)**: vale il numero del §4 (3d8+13 col
 >   fallimento, 2d8+13 col successo), sul solo Thorik e **una volta sola** nel
 >   beat, non a ogni visita.
@@ -957,8 +957,8 @@ dipinto e il vero al 100% di A8 (§5, Sviluppi).
 
 **Porta chiusa: i Dipinti Invisibili (J11-J12 sulla S-2).** Restano come in
 ARC-06, e nessun file del repo dice che cosa siano. In questo beat non si
-aprono: chi li esamina li trova muti, e restano muti per tutto l'arco
-.
+aprono: chi li esamina li trova muti, e restano muti per tutto l'arco.
+
 
 ### Se lo divinano
 

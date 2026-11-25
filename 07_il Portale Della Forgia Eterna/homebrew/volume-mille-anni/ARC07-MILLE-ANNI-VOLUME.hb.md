@@ -540,8 +540,8 @@ Quando la testa torna a posto, guardano dove sono.
 **Dati per il DM (non da leggere).** Il portale li lascia **a circa 500 m a est
 delle mura**, un quarto d'ora prima del buio. Il bosco copre la spalla della
 montagna a est: dove il portale li lascia è poco sopra la quota delle mura, e
-da lì scende fino al margine del campo, sulla piana, 100 m più in basso
-. È autunno inoltrato: **5 °C**, il
+da lì scende fino al margine del campo, sulla piana, 100 m più in basso.
+È autunno inoltrato: **5 °C**, il
 fiato si vede, una nebbia bassa comincia a salire dal bosco. Dall'arrivo
 all'alba mancano **circa dodici ore**; l'orologio della notte (§4) comincia a
 contare con il consiglio, che è la prima delle sue otto tacche: le prime
@@ -1136,8 +1136,8 @@ gallerie sotto la fucina; cercarlo costa una tacca)*
   martello da guerra runico di Balvar (Scena 8, tesoro), Zeth ricambia con una
   runa sua, incisa su un'arma che i PG scelgono: **+2 ai tiri per colpire
   contro i draghi**. Delle rune che incide quella notte se ne attiva una sola,
-  questa. Al tavolo l'ha incisa su una balestra nascosta nel torrione ovest
-. È una regola della casa: l'SRD non ha una runa così, e il bonus più
+  questa. Al tavolo l'ha incisa su una balestra nascosta nel torrione ovest.
+  È una regola della casa: l'SRD non ha una runa così, e il bonus più
   vicino è il +2 al colpire di un'arma *anatema* contro il suo nemico, senza i
   dadi in più. Vale **per un colpo solo**, come il potere contro i draghi dei
   Bracieri: chi la attiva dichiara il tiro, e la runa si spegne dopo quello,
@@ -4109,8 +4109,8 @@ La riga di prima usava il drago **Vecchio** dell'SRD senza template, e ne veniva
 fuori un drago **più debole** di quello di base (287 pf e CD 27/24 contro 297 e
 28/25). Questo è il Vecchio dell'SRD (d20srd.org, *Dragon, True*) con lo stesso
 template Avanzato di A.1. Si usa con il gruppo di stasera, insieme alle 2
-wyvern di A.6: per un gruppo di 13° fanno EL 17, il tetto esatto di APL+4
-. Con un
+wyvern di A.6: per un gruppo di 13° fanno EL 17, il tetto esatto di APL+4.
+Con un
 gruppo di 14° è APL+3. L'Adulto di A.1 resta per i gruppi più deboli (Scena
 11, «Quale drago si usa, e quando»).
 
@@ -4174,8 +4174,8 @@ si sommano a parte (§8 A).
   al corno dell'alba, prima di partire, e i PG invisibili sono visibili per
   tutto il duello. Col Vecchio al corno lancia anche
   *immagine speculare*: ogni attacco a bersaglio singolo, deflagrazione
-  compresa, sceglie a caso fra lui e le immagini; le aree lo prendono comunque
-. Di notte sulle colline non l'ha
+  compresa, sceglie a caso fra lui e le immagini; le aree lo prendono comunque.
+  Di notte sulle colline non l'ha
   lanciato, perché non si aspetta nessuno.
 - **Il soffio fa più male**: 14d4 (in media 35) invece di 12d4, e Riflessi
   CD 30; col Vecchio 16d4 (in media 40), CD 31. La runa di Zeth (*resistere all'energia* 20) ne toglie ancora più
@@ -4679,6 +4679,25 @@ Le quote sono del DM: piana 0, spianata degli arieti
 mura. La rampa fra la spianata e la porta, le scale sul tratto est e la torre
 nord sul suo gradone sono inferenze da confermare: sono scritte, con le loro
 ragioni, nelle note di M7-A dell'Atlante.
+
+#### MAPPA M7-R — LA VALLE DI HAMMERFIST ≈372 DR (la regione, non in scala)
+
+M7-R allarga M7-A alla valle intera: le montagne a nord con le miniere, la
+fortezza sul gradone, la spianata degli arieti e i tornanti, la piana col mare
+di tende e il campo del capo, il bosco a est dove posa il portale, le colline a
+sud dove dorme il drago, e la via degli eroi giù per il fianco est. Il riquadro
+tratteggiato è M7-A. È uno schema disegnato come M7-A, senza griglia e senza
+scala: dice dove sta ogni cosa, e le distanze sono scritte nella legenda. Non
+serve a muovere le pedine. Si stampa nell'appendice della regione del booklet
+della serata, alla sezione «La geografia».
+
+Le quote della fortezza vengono dal profilo di M7-A,
+la piana a 520 m sul mare da M7-B. Il pendio del
+372 è lo stesso del 1372, quindi il pendio e
+la strada vengono dalla pianta L2 di ARC-08: circa 300 m in pianta per 80 m di
+dislivello, il 27%, e una strada a tornanti di circa 530 m, larga 6 m, al 15%.
+I valichi a nord e la strada da cui è arrivata l'orda non sono disegnati: il
+canone non li dà.
 
 #### MAPPA M7-B — L'ARENA DEL DUELLO (cortile interno · Skullcrusher)
 

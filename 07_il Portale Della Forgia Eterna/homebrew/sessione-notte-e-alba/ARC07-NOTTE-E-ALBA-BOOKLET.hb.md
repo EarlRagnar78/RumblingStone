@@ -6919,6 +6919,25 @@ mura. La rampa fra la spianata e la porta, le scale sul tratto est e la torre
 nord sul suo gradone sono inferenze da confermare: sono scritte, con le loro
 ragioni, nelle note di M7-A dell'Atlante.
 
+#### MAPPA M7-R — LA VALLE DI HAMMERFIST ≈372 DR (la regione, non in scala)
+
+M7-R allarga M7-A alla valle intera: le montagne a nord con le miniere, la
+fortezza sul gradone, la spianata degli arieti e i tornanti, la piana col mare
+di tende e il campo del capo, il bosco a est dove posa il portale, le colline a
+sud dove dorme il drago, e la via degli eroi giù per il fianco est. Il riquadro
+tratteggiato è M7-A. È uno schema disegnato come M7-A, senza griglia e senza
+scala: dice dove sta ogni cosa, e le distanze sono scritte nella legenda. Non
+serve a muovere le pedine. Si stampa nell'appendice della regione del booklet
+della serata, alla sezione «La geografia».
+
+Le quote della fortezza vengono dal profilo di M7-A,
+la piana a 520 m sul mare da M7-B. Il pendio del
+372 è lo stesso del 1372, quindi il pendio e
+la strada vengono dalla pianta L2 di ARC-08: circa 300 m in pianta per 80 m di
+dislivello, il 27%, e una strada a tornanti di circa 530 m, larga 6 m, al 15%.
+I valichi a nord e la strada da cui è arrivata l'orda non sono disegnati: il
+canone non li dà.
+
 #### MAPPA M7-B — L'ARENA DEL DUELLO (cortile interno · Skullcrusher)
 
 La pianta di M7-B è all'inizio di questa appendice.

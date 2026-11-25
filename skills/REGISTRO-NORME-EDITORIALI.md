@@ -29,6 +29,38 @@
 ⚠️ **Questo registro non dice che le norme sono rispettate.** Dice se
 **qualcuno le guarda**. La differenza è tutta la ragione per cui esiste.
 
+⚠️ **I file che `misura_craft` e `punteggio_mqm` non vedono.** Ogni riga che
+cita `misura_craft` o il punteggio MQM vale solo per i file che i due script
+misurano davvero.
+
+- `misura_craft.py` non accetta un file: misura i bersagli fissi del suo
+  dizionario `BERSAGLI` (i master DEF, il Palio, l'Abbazia). `--p1` scorre
+  invece tutto il contenuto di gioco vivo.
+- `punteggio_mqm.py` accetta file e modelli glob, ma li passa a
+  `misura_craft.espandi`, che scarta senza avviso i file sotto `_ARCHIVIO/`,
+  `homebrew/` o `build/` e quelli con `DEPRECATO`, `ERRATA-` o `APPARATO-` nel
+  nome (`ESCLUSI` ed `ESCLUSI_NOME`). Le stesse esclusioni valgono per `--p1`.
+- L'esito è «0 documenti», con uscita 0: su un booklet in `homebrew/` vuol dire
+  che nessuno ha misurato. Provato il 2026-11-25 su
+  `98-APPENDICE-TERRE-DI-HAMMERFIST.md`.
+- Nessuno dei due script ha un'opzione per includere quelle cartelle (`--help`
+  del 2026-11-25). Per un file solo, dentro o fuori, si chiamano le funzioni a
+  mano dalla radice del repo:
+
+```bash
+python3 - FILE <<'EOF'
+import re, sys
+from pathlib import Path
+sys.path.insert(0, "scripts")
+import misura_craft as mc, punteggio_mqm as pm
+f = Path(sys.argv[1]).resolve(); t = f.read_text(encoding="utf-8")
+print(mc.difetti_dei_box(t))      # --box
+print(mc.stile_dei_box(t))        # --stile
+print({p: len(re.findall(rf"\b{p}\b", t, re.I)) for p in mc.PG})  # --spotlight
+e = pm.valuta(f, pm.carica_specifiche()); print(e["punteggio"], e["classe"], e["dettaglio"])
+EOF
+```
+
 ---
 
 ## 1 · `rumblingstone-narrative-style/references/` — la voce e la pagina

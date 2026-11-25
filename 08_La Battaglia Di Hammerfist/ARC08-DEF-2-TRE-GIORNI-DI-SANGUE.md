@@ -33,7 +33,8 @@
 >
 > **Le domande per il DM** (sono decise, meno quelle che nel testo portano
 > ancora la marca `[INFERRED]`: l'orog che si stacca dalla cima e che cosa
-> passa a rampa chiusa (Tattiche, «La guardia del corpo»), Grimjaw sulla
+> passa a rampa chiusa (Tattiche, «La guardia del corpo»), un comandante a
+> 0 pf o meno (§0-bis, «Le due colonne del comandante»), Grimjaw sulla
 > scala (Scena 4), il tetto di pietra davanti a Fauci (Scena 6), le
 > pergamene di Fauci (A.5). Le scelte del 2026-11-25 portano nel testo la
 > marca della loro card; il resto dei numeri ha una fonte):
@@ -345,23 +346,25 @@ comandanti a metà.
 L'ordine d'uscita è la scelta dei giocatori, e il DM la dice in chiaro prima
 che escano (Scena 2).
 
-| Chi esce, in ordine | Gorthak fugge | in round, in media | un eroe a terra (0 pf o meno) |
-|---|---|---|---|
-| Borin da solo | 7 volte su cento | 3,2 | sempre |
-| Yrsa da sola | 82 | 3,0 | una volta su due (51) |
-| Borin, poi Yrsa | quasi sempre | 3,2 | 71 volte su cento |
-| Yrsa, poi Borin | quasi sempre | 2,8 | una volta su cinque (19) |
-| Borin, con Dara dalla torre ² | sempre | 2,9 | 88 |
-| Borin, poi Yrsa, con Dara ² | sempre | 2,5 | 45 |
-| Yrsa, poi Borin, con Dara ² | sempre | 2,3 | 10 |
-| Borin, poi Yrsa, con Ragnhild che apre col fuoco dalla cinta | sempre | 2,1 | 28 |
-| Yrsa, poi Borin, con Ragnhild che apre | sempre | 1,9 | 3 |
-| Harbek, poi Nala | mai | — | sempre |
-| Harbek, poi Nala, con Dara ² | sempre | 3,7 | quasi sempre |
-| Harbek, poi Nala, con Ragnhild che apre | sempre | 2,6 | 93 |
-| nessuno esce: Ragnhild dalla cinta e Dara dalla torre ² | sempre | 2,0 | mai |
-| nessuno esce: Ragnhild da sola dalla cinta | sempre | 3,0 | mai (le restano due terzi dei pf) |
-| nessuno esce: Dara da sola dalla torre ² | sempre | 4,1 | mai |
+Le cifre sono volte su cento; i round sono la media di quell'esito.
+
+| Chi esce, in ordine | fugge | a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra (0 pf o meno) |
+|---|---|---|---|---|---|
+| Borin da solo | 7 | mai | 3,2 | — | sempre |
+| Yrsa da sola | 60 | 22 | 3,0 | 3,0 | una volta su due (51) |
+| Borin, poi Yrsa | 57 | 42 | 3,1 | 3,3 | 71 |
+| Yrsa, poi Borin | 43 | 55 | 2,5 | 3,0 | una volta su cinque (19) |
+| Borin, con Dara dalla torre ² | 88 | 12 | 2,8 | 3,0 | 88 |
+| Borin, poi Yrsa, con Dara ² | 32 | 68 | 2,1 | 2,7 | 45 |
+| Yrsa, poi Borin, con Dara ² | 27 | 73 | 1,9 | 2,4 | 10 |
+| Borin, poi Yrsa, con Ragnhild che apre col fuoco dalla cinta | 33 | 67 | 1,7 | 2,2 | 28 |
+| Yrsa, poi Borin, con Ragnhild che apre | 31 | 69 | 1,4 | 2,1 | 3 |
+| Harbek, poi Nala | mai | mai | — | — | sempre |
+| Harbek, poi Nala, con Dara ² | 96 | 4 | 3,7 | 4,3 | quasi sempre (99) |
+| Harbek, poi Nala, con Ragnhild che apre | 98 | 2 | 2,6 | 3,0 | 93 |
+| nessuno esce: Ragnhild dalla cinta e Dara dalla torre ² | 77 | 23 | 1,8 | 2,5 | mai |
+| nessuno esce: Ragnhild da sola dalla cinta | sempre | mai | 3,0 | — | mai (le restano due terzi dei pf) |
+| nessuno esce: Dara da sola dalla torre ² | 96 | 4 | 4,0 | 4,6 | mai |
 
 ² Il nemico prescelto di Dara (+4 contro i giganti) è contato a colpire e ai
 danni, come sulla sua scheda: è la lettura di PF1e, ⚠️ non SRD 3.5
@@ -369,7 +372,32 @@ danni, come sulla sua scheda: è la lettura di PF1e, ⚠️ non SRD 3.5
 canone di Yrsa e Dara»]`. Scartato: la lettura dell'SRD 3.5, che lo dà solo
 ai danni `[SRD: Favored Enemy]`, e con cui le righe con Dara peggiorano:
 Borin, poi Yrsa, con Dara, a terra 56 volte su cento invece di 45; Dara da
-sola lo fa fuggire in 5,5 round invece di 4,1.
+sola lo fa fuggire in 5,5 round invece di 4,0.
+
+**Le due colonne del comandante.** Sono due esiti diversi, e un duello sta
+in uno solo. «Fugge»: al suo turno Gorthak è sotto i 101 pf, fa il round in
+Furia e lascia il ponte in piedi. «A 0 pf o meno»: gli eroi lo portano a 0
+pf o sotto prima che possa fuggire, anche durante il round in Furia. Le
+prove non distinguono inabile, morente e morto `[SRD: Injury and Death]`.
+Dove le due cifre non fanno cento, nel resto dei duelli gli eroi sono
+caduti tutti, o gli otto round di una prova sono finiti prima. Che cosa
+succede al tavolo a 0 pf o meno non è deciso
+`[INFERRED — Nell'assedio, se i dadi portano Gorthak o Grimjaw a 0 pf o
+meno, è fuori come con la fuga, o resta a terra e può morire?; base: è il
+default provvisorio finché il DM non decide: vale come la fuga, il DM lo
+tira fuori dalla mischia (§8, «vogliono uccidere Gorthak o Grimjaw»)]`.
+Le fonti si contraddicono: `ARC08-18` (§5, Sfidare) dice «Un comandante non
+muore nell'assedio»; `Bestiario/villain/Generale_Grimjaw.md` dice che
+Grimjaw può essere ucciso già nelle Sessioni 2-3, e `ARC07-DEF-5`
+(l'Apparizione, la tabella dei round) prevede «se già morto → capitano
+minore». La domanda vale anche per le tabelle di Grimjaw (Scena 4) e per
+quella del punto eroe (`ARC08-DEF-1`, Scena 8).
+
+<!-- storico -->
+*Fino al 2026-11-25 la tabella aveva una colonna sola, «Gorthak fugge», che
+sommava la fuga e lo 0 pf: per questo Borin e poi Yrsa davano «quasi
+sempre» (99), e le righe con Dara o con Ragnhild «sempre».*
+<!-- /storico -->
 
 Ragnhild «apre» se lancia prima che un nano esca: i nani ritardano il turno
 finché lei ha lanciato `[SRD: Delay]`, e dopo la palla prende anche loro.
@@ -396,9 +424,10 @@ di oggi sta già sotto il tetto (EL 12,6 contro 16).
 
 Grimjaw, il soffio e i bugbear **non si alzano**: sono già ad APL+2 o +3.
 La cima della rampa di Grimjaw è chiusa `[CANONE — DM 2026-11-25, card
-«rampa di Grimjaw»]`: contro Borin e Yrsa insieme Grimjaw fugge 75 volte su
-cento, e uno dei due va a terra 85 (Scena 4). L'EL non cambia: 14,9.
-Scartato dal DM: la rampa aperta, con la guardia che si aggira (93 e 39).
+«rampa di Grimjaw»]`: contro Borin e Yrsa insieme Grimjaw fugge 67 volte su
+cento, va a 0 pf o meno 8, e uno dei due va a terra 85 (Scena 4). L'EL non
+cambia: 14,9. Scartato dal DM: la rampa aperta, con la guardia che si
+aggira (76, 16 e 39).
 
 <!-- storico -->
 *Fino al quarto giro (2026-11-25) questa pagina raccontava le prove per
@@ -470,6 +499,8 @@ un'azione, e in un round se ne spende al più uno.
   chiusa, 82 e 66 invece di 85; a rampa aperta, scartata dal DM, erano 32 e
   19 invece di 39
   (`plans/esperimenti/scontri-epici-pregen-2026-11-25/esito_punto_eroe.md`).
+  Le cifre dell'azione di movimento contano l'attacco completo dopo il
+  movimento: è una lettura non decisa (`ARC08-DEF-1`, Scena 8, domanda 3).
 
 Nell'assedio i veterani tengono le Mura e la Torre Est. Yrsa sulle Mura
 tiene la fronte più lunga, e lo stendardo lo vedono tutti; Ragnhild sulla
@@ -588,7 +619,8 @@ tutti insieme.
 
 ### 🔥 RAGNHILD MANTOFERRO — la maga delle rune (Tolkien lead)
 - Dalla cinta il suo fuoco apre i duelli degli altri, se lancia prima che
-  Borin e Yrsa escano: Grimjaw fugge senza che un nano cada; contro Gorthak
+  Borin e Yrsa escano: Grimjaw fugge, o va a 0 pf o meno 16 volte su cento,
+  senza che un nano cada; contro Gorthak
   uno dei due cade 3 volte su cento se esce prima Yrsa, 28 se esce prima
   Borin (§0-bis; Scena 4). Dopo, la palla prende anche i nani, e la scelta
   è sua.
@@ -875,10 +907,12 @@ avrebbe prese comunque `[CANONE — DM 2026-10-22]`.
 
 **Prima che Borin esca, il DM lo dice in chiaro.** Gorthak e i due troll sono
 uno scontro per più eroi: da solo, Borin cade sempre, e Gorthak fugge sette
-volte su cento; con le frecce di Dara dalla torre Gorthak fugge, ma Borin
-cade quasi nove volte su dieci. Con Yrsa conta chi esce per primo: se esce
-Borin, uno dei due va a terra 71 volte su cento; se esce Yrsa, 19 (§0-bis,
-la tabella). Gli eroi escono dallo sportello uno a round, e accanto a Gorthak ci
+volte su cento; con le frecce di Dara dalla torre Gorthak fugge 88 volte su
+cento e va a 0 pf o meno 12, ma Borin cade quasi nove volte su dieci. Con Yrsa conta chi esce per primo: se esce
+Borin, uno dei due va a terra 71 volte su cento; se esce Yrsa, 19. E
+Gorthak non sempre fugge: va a 0 pf o meno 42 volte su cento se esce prima
+Borin, 55 se esce prima Yrsa (§0-bis, la tabella e «Le due colonne del
+comandante»). Gli eroi escono dallo sportello uno a round, e accanto a Gorthak ci
 stanno in due (Tattiche, «Gorthak sul ponte»).
 Come si gioca il duello mentre gli altri settori aspettano: il round di
 battaglia si tira tutto, anche nei settori degli altri, **prima** del duello;
@@ -887,8 +921,9 @@ dell'Appendice A.2, e il DM tiene Gorthak.
 
 Le prove non contano gli incantesimi di Harbek e di Nala, e mettono Ragnhild
 a tirare dalla cinta. Se nessuno esce e Gorthak è colpito solo dalle mura,
-fugge in due round con Ragnhild e Dara insieme, in quattro con Dara sola, e
-nessun eroe va a terra, anche se il giavellotto arriva su Ragnhild: la
+fugge in due round con Ragnhild e Dara insieme (77 volte su cento; le altre
+23 va a 0 pf o meno, in due round e mezzo), in quattro con Dara sola (96, e
+4 a 0 pf o meno), e nessun eroe va a terra, anche se il giavellotto arriva su Ragnhild: la
 risposta dell'orda sono i macigni dei giganti (sotto, «Contro chi lancia o
 tira dalla cinta»).
 
@@ -1107,10 +1142,12 @@ riserva». Il giorno è finito: la notte (Scena 3).
   sceglie all'alba).
 - **Il ponte senza Borin né Yrsa**: in mischia Gorthak non si sfida. Nelle
   prove Harbek e Nala da soli vanno a terra sempre. Con Dara dalla torre
-  Gorthak fugge, in 3,7 round, ma uno dei due cade quasi sempre; con
+  Gorthak fugge, in 3,7 round (96 volte su cento; 4 va a 0 pf o meno), ma
+  uno dei due cade quasi sempre; con
   Ragnhild che apre col fuoco, 93. Il DM lo dice prima che escano, e
   Gorthak lo si combatte dalle mura: con le frecce di Dara e il fuoco di
-  Ragnhild fugge in due round e nessuno va a terra (§0-bis), e Harbek ha la
+  Ragnhild fugge in due round, o va a 0 pf o meno 23 volte su cento, e
+  nessun eroe va a terra (§0-bis), e Harbek ha la
   *barriera di lame*.
 
 ### Tattiche dei comandanti, round per round
@@ -1410,12 +1447,13 @@ sale di uno con loro, non di due.
 possono unirsi come per Gorthak, lasciando il loro settore alle tacche.
 
 **Il DM lo dice prima, in chiaro.** Grimjaw con quattro orog (EL circa 15)
-è uno scontro per Borin e Yrsa insieme, e anche così Grimjaw fugge tre
-volte su quattro (75) e uno dei due va a terra 85 volte su cento; nelle
+è uno scontro per Borin e Yrsa insieme, e anche così Grimjaw fugge due
+volte su tre (67), va a 0 pf o meno 8 volte su cento, e uno dei due va a
+terra 85; nelle
 prove nessuno cade solo se Ragnhild apre col fuoco dalla cinta prima che i
 due salgano. Borin da solo cade sempre, e Grimjaw non scende mai a 89;
-lo stesso Harbek e Nala senza Ragnhild. Yrsa da sola lo fa fuggire 39 volte
-su cento e cade 64. La via per chi non vuole il duello è scritta qui sotto: nessuno lo
+lo stesso Harbek e Nala senza Ragnhild. Yrsa da sola lo fa fuggire 36 volte
+su cento, lo porta a 0 pf o meno 3, e cade 64. La via per chi non vuole il duello è scritta qui sotto: nessuno lo
 sfida, e il Re scende a cercarlo. Il duello si gioca come quello di Gorthak:
 prima il round di battaglia di tutti, poi la mappa, e chi non è nel duello
 muove i due orog dietro; i due davanti li tiene il DM, e non lasciano la
@@ -1439,42 +1477,45 @@ abbattuto, poi chi arriva a Grimjaw prende l'attacco d'opportunità di un
 orog e in quel round fa un attacco solo. Contano la Presenza intimidatoria,
 la Sfida di Yrsa da quando gli è accanto, la resistenza al fuoco 10
 dell'armatura e i 26 pf della Furia dal round 2, con la soglia di fuga
-ferma a 89.
+ferma a 89. Le colonne sono quelle di Gorthak: «fugge», al suo turno è
+sotto 89 e lascia la rampa; «a 0 pf o meno», gli eroi lo portano a 0 pf o
+sotto prima. Che cosa gli succede lì non è deciso (§0-bis, «Le due colonne
+del comandante»). Le cifre sono volte su cento.
 
-| Chi lo sfida | Grimjaw fugge | in round, in media | un eroe a terra |
-|---|---|---|---|
-| Borin da solo | mai | — | sempre |
-| Yrsa da sola | 39 volte su cento | 4,9 | 64 |
-| Borin e Yrsa | 75 | 4,5 | 85 |
-| Borin, Yrsa e Harbek (senza incantesimi) | 90 | 4,1 | 83 |
-| Borin e Yrsa, con Ragnhild che apre col fuoco dalla cinta | sempre | 1,9 | mai |
-| Harbek e Nala | mai | — | sempre |
-| Harbek e Nala, con Ragnhild che apre | 97 | 4,4 | 60 |
-| nessuno sale: Ragnhild da sola dal camminamento | 53 | 4,4 | 47: è lei |
+| Chi lo sfida | fugge | a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra |
+|---|---|---|---|---|---|
+| Borin da solo | mai | mai | — | — | sempre |
+| Yrsa da sola | 36 | 3 | 4,9 | 4,7 | 64 |
+| Borin e Yrsa | 67 | 8 | 4,5 | 4,1 | 85 |
+| Borin, Yrsa e Harbek (senza incantesimi) | 77 | 12 | 4,2 | 3,8 | 83 |
+| Borin e Yrsa, con Ragnhild che apre col fuoco dalla cinta | 84 | 16 | 1,9 | 1,8 | mai |
+| Harbek e Nala | mai | mai | — | — | sempre |
+| Harbek e Nala, con Ragnhild che apre | 94 | mai | 4,4 | — | 64 |
+| nessuno sale: Ragnhild da sola dal camminamento | 52 | mai | 4,4 | — | 48: è lei |
 
 Yrsa da sola, Harbek e Nala senza Ragnhild, e Ragnhild da sola vengono da
 `esito_rampa_chiusa.md` (opzione `--rampa-chiusa` dello script, 2026-11-25);
 le altre righe da `esito_simulazione.md`. Ragnhild non sale: la rampa chiusa
 non la riguarda, e la sua riga è quella della rampa aperta. Lo stesso file
 prova la regola dell'orog che si stacca (la cima chiusa dai due davanti): le
-cifre restano queste a meno di due punti, e Borin e Yrsa fanno 73 e 87.
+cifre restano queste entro due punti, e Borin e Yrsa fanno 65, 8 e 87.
 
 **Scartato dal DM: la rampa aperta**, dove la guardia si aggirava. La
 tabella resta solo per confronto: al tavolo si usa quella qui sopra.
 
-| Chi lo sfida, a rampa aperta | Grimjaw fugge | in round, in media | un eroe a terra |
-|---|---|---|---|
-| Borin da solo | 3 volte su cento | 2,3 | 98 |
-| Yrsa da sola | 61 | 2,9 | 43 |
-| Borin e Yrsa | 93 | 2,6 | 39 |
-| Borin, Yrsa e Harbek (senza incantesimi) | 98 | 2,5 | 55 |
-| Borin e Yrsa, con Ragnhild che apre col fuoco dalla cinta | sempre | 1,9 | mai |
-| Harbek e Nala | mai | — | sempre |
-| Harbek e Nala, con Ragnhild che apre | 97 | 4,4 | 60 |
-| nessuno sale: Ragnhild da sola dal camminamento | 53 | 4,4 | 47: è lei |
+| Chi lo sfida, a rampa aperta | fugge | a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra |
+|---|---|---|---|---|---|
+| Borin da solo | 3 | mai | 2,3 | — | 98 |
+| Yrsa da sola | 56 | 5 | 2,9 | 2,7 | 43 |
+| Borin e Yrsa | 76 | 16 | 2,6 | 2,2 | 39 |
+| Borin, Yrsa e Harbek (senza incantesimi) | 78 | 19 | 2,6 | 2,2 | 55 |
+| Borin e Yrsa, con Ragnhild che apre col fuoco dalla cinta | 83 | 17 | 1,9 | 1,9 | 1 |
+| Harbek e Nala | mai | mai | — | — | sempre |
+| Harbek e Nala, con Ragnhild che apre | 95 | mai | 4,4 | — | 64 |
+| nessuno sale: Ragnhild da sola dal camminamento | 54 | mai | 4,4 | — | 46: è lei |
 
-Con Ragnhild che apre insieme a Borin e Yrsa, Grimjaw fugge già al primo
-round una volta su quattro (23): ha Iniziativa +5 contro il +6 di lei, e
+Con Ragnhild che apre insieme a Borin e Yrsa, il duello è chiuso già al
+primo round una volta su quattro (23, contando la fuga e lo 0 pf): Grimjaw ha Iniziativa +5 contro il +6 di lei, e
 metà delle volte ha già agito quando la palla arriva. Da sola, Ragnhild non
 basta: Grimjaw risponde con l'arco e manda i due orog dietro sul camminamento. Il
 terzo eroe in mischia, senza i suoi incantesimi, alza il rischio: gli orog
@@ -1494,8 +1535,8 @@ non sono provati.
 - **Contro Ragnhild.** Sulla rampa la guardia sta stretta, e una *palla di
   fuoco* li prende tutti e cinque, meno i 10 che l'armatura toglie a
   Grimjaw. Nelle prove, con Ragnhild che apre dalla cinta insieme a Borin e
-  Yrsa, prima che i due salgano, Grimjaw fugge in due round e nessuno va a
-  terra. Dopo, la palla prende anche i nani. Grimjaw lo sa,
+  Yrsa, prima che i due salgano, Grimjaw fugge in due round, 84 volte su
+  cento, o va a 0 pf o meno, 16, e nessun nano va a terra. Dopo, la palla prende anche i nani. Grimjaw lo sa,
   se lei era sul pendio il Giorno −1 (Scheda d'entrata, «Sa»). Allora il suo
   Tattico Superiore del round 1 non va a colpire: va ai **Riflessi** della
   guardia, +2 per un round (A.3), e i due orog dietro, quelli dei lati, si
@@ -2404,7 +2445,7 @@ fuggito ferito arriva coi pf del finale meno il 20%).
 | Se i pregen… | Risposta |
 |---|---|
 | **vogliono fare una sortita** sul campo dell'orda | il campo è sulla piana, a 500 m-1 km, sotto settecento paia d'occhi. Il DM lo dice in chiaro, una volta. Se escono, il loro settore è senza eroe per il giorno (libretto §9: 1d6, con 1-2 cede), e tornano con quello che hanno visto: i giganti che dormono alla rampa |
-| **vogliono uccidere Gorthak o Grimjaw** | nell'assedio non muoiono: sotto metà fuggono (libretto §5). Se un pregen lo insegue oltre il ponte o la rampa, entra nell'orda da solo: il DM glielo dice, e lo lascia decidere |
+| **vogliono uccidere Gorthak o Grimjaw** | nell'assedio non muoiono: sotto metà fuggono (libretto §5). Se i dadi li portano a 0 pf o meno prima della fuga, per ora vale come la fuga: è il default provvisorio, e la domanda al DM è in §0-bis, «Le due colonne del comandante». Se un pregen lo insegue oltre il ponte o la rampa, entra nell'orda da solo: il DM glielo dice, e lo lascia decidere |
 | **chiudono il Re al sicuro il Giorno 3** | il Re sale lo stesso: è la decisione del DM. Se lo chiudono a chiave, usa la Corona sulle sue guardie (*comando*, «Lascia!»: lasciano le chiavi) o la sfonda a colpi di martello (una porta di legno rinforzato, 20 pf e durezza 5: il suo martello fa 1d8+12, due o tre round), e arriva sul cancello al round 3 della sequenza, col soffio già in posizione |
 | **esplorano il tunnel prima della ritirata** o mandano qualcuno a vederlo | il tunnel dietro la statua si apre solo spingendo la statua (Scena 7), e il Re non vuole che si apra prima del Giorno 3: chi lo apre di notte lo apre anche per l'orda. Se insistono e il Re cede, Dara in avanscoperta trova le tracce dei bugbear (Sopravvivenza CD 20 con Seguire Tracce): vale come la divinazione (§0), un'azione preparata a testa al round 1 della Scena 8 |
 | **evacuano i feriti e i civili prima** | i civili sono già al Cuore da prima dell'assedio (libretto §1). I feriti restano: il tunnel non si apre (sopra), e i 90 della ritirata li comprendono già |

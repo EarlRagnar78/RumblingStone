@@ -1303,22 +1303,30 @@ riga in quello scontro. Il punto però è uno per tutto l'assedio: ogni cifra
 è il massimo che quell'uso può dare su quello scontro, e chi lo spende
 contro Gorthak non lo ha più contro Grimjaw. Contro il sergente il punto
 non c'è, perché nasce all'alba del Giorno 1: le righe del sergente restano
-nel file delle prove, e al tavolo non valgono. In ogni casella, quante
-volte su cento il comandante fugge e quante un eroe va a terra.
+nel file delle prove, e al tavolo non valgono. In ogni casella tre cifre,
+su cento duelli: il comandante fugge · va a 0 pf o meno · un eroe va a
+terra. Le prime due sono esiti diversi, e un duello sta in uno solo: fino
+al 2026-11-25 una cifra sola li sommava. Che cosa succede a Gorthak o a
+Grimjaw a 0 pf o meno non è deciso: la domanda al DM è in `ARC08-DEF-2`,
+§0-bis, «Le due colonne del comandante».
 
 | Scontro | Eroi | Oggi | +8 al primo tiro per colpire sul comandante | Un'azione standard in più | Un'azione di movimento in più |
 |---|---|---|---|---|---|
-| Gorthak | Borin, poi Yrsa | 99 · 71 | 100 · 67 | 100 · 58 | 100 · 55 |
-| | Yrsa, poi Borin | 99 · 19 | 99 · 17 | 100 · 11 | 100 · 11 |
-| Grimjaw, la rampa chiusa | Borin e Yrsa | 75 · 85 | 79 · 82 | 84 · 69 | 85 · 66 |
-| Grimjaw, la rampa aperta (scartata dal DM) | Borin e Yrsa | 93 · 39 | 96 · 32 | 98 · 18 | 98 · 19 |
+| Gorthak | Borin, poi Yrsa | 57 · 42 · 71 | 55 · 44 · 67 | 49 · 51 · 58 | 45 · 55 · 55 |
+| | Yrsa, poi Borin | 43 · 55 · 19 | 45 · 54 · 17 | 32 · 67 · 11 | 34 · 66 · 11 |
+| Grimjaw, la rampa chiusa | Borin e Yrsa | 67 · 8 · 85 | 70 · 9 · 82 | 73 · 11 · 69 | 74 · 11 · 66 |
+| Grimjaw, la rampa aperta (scartata dal DM) | Borin e Yrsa | 76 · 16 · 39 | 79 · 17 · 32 | 80 · 18 · 18 | 77 · 20 · 19 |
 
-Il +8 sposta poco, da 0 a 4 punti, perché Borin e Yrsa
-colpiscono già quasi sempre. L'azione in più pesa di più: contro Grimjaw a
-rampa chiusa toglie fino a 19 punti agli eroi a terra, contro Gorthak fino
-a 16. L'azione di movimento in più è l'eroe che arriva sul nemico e fa
-nello stesso turno tutti i suoi attacchi. Una differenza di uno o due punti
-è rumore dei dadi. Il punto non cambia l'EL di nessuno scontro.
+Il +8 sposta poco, da 1 a 3 punti sulle due cifre del comandante e da 2 a
+7 sugli eroi a terra, perché Borin e Yrsa colpiscono già quasi sempre.
+L'azione in più pesa di più: contro Grimjaw a rampa chiusa toglie fino a 19
+punti agli eroi a terra, contro Gorthak fino a 16; e contro Gorthak porta
+fino a 13 punti dalla fuga allo 0 pf. L'azione di movimento in più è
+contata come l'eroe che arriva sul nemico e fa nello stesso turno tutti i
+suoi attacchi: è una lettura non decisa (domanda 3, in fondo alla scena), e
+le cifre di quella colonna valgono solo con quella lettura. Una differenza
+di uno o due punti è rumore dei dadi. Il punto non cambia l'EL di nessuno
+scontro.
 
 Un eroe morto nella ricognizione lascia la sua squadra al giocatore, senza
 gesto (Handout 0).
@@ -1427,7 +1435,10 @@ dell'arco di Dara (330 m). Guarda, e ricorda chi ha visto.
   dura, da sopra i 31). Sotto zero è a terra e morente, e muore solo a −10
   `[SRD: Injury and Death]`: vale come la fuga, il suo +1
   se ne va, e non lo si interroga, perché le file degli hobgoblin si
-  chiudono sul corpo. Il morale non si muove.
+  chiudono sul corpo. Il morale non si muove. Nelle prove non è raro: il
+  sergente fugge solo al suo turno, e prima di quel turno Borin lo porta a
+  0 pf o meno 43 volte su cento, Yrsa 41; nella versione più dura 58 e 14
+  («Cosa dicono le prove», sotto).
 - **La retroguardia.** Nel round della ritirata un eroe resta indietro a
   coprire gli altri: in quel round **nessuna squadra è travolta**. L'eroe
   tira il suo gesto Combattere e torna per ultimo, senza duello.
@@ -1474,20 +1485,42 @@ duelli per riga, iniziativa tirata; script ed esito in
 `plans/esperimenti/scontri-epici-pregen-2026-11-25/`). La versione più dura
 vale se fra gli eroi c'è Borin o Yrsa (§0-bis).
 
-| Chi lo sfida | Oggi (A.4): fugge in | un eroe a terra | Più dura (A.4-bis): fugge in | un eroe a terra |
-|---|---|---|---|---|
-| Borin | 1,5 round; al primo una volta su due | mai | 2,1 round | mai |
-| Yrsa | 1,1 round; al primo nove volte su dieci | mai | 1,6 round | mai |
-| Harbek | 3,9 round | mai | 4,6 round, e fugge due volte su tre (64) | 37 su cento |
-| Nala | 4,1 round, 92 volte su cento | 7 | fugge 19 volte su cento | 82 |
-| Borin e Yrsa | — | — | 1,2 round | mai |
-| Harbek, con Dara dalla riga 03 | — | — | 2,6 round | 1 |
-| Nala, con Dara dalla riga 03 | — | — | 2,6 round | 7 |
+Il duello si chiude in due modi, e le prove li contano separati. «Fugge»:
+al suo turno il sergente è sotto la soglia e scende il sentiero. «A 0 pf o
+meno»: l'eroe lo porta a 0 pf o sotto prima di quel turno, e vale la regola
+qui sopra («Se il sergente va a terra nel duello»); le prove non
+distinguono inabile, morente e morto `[SRD: Injury and Death]`. Le cifre
+sono volte su cento, e i round sono la media di quell'esito. Fino al
+2026-11-25 una colonna sola, «fugge in», sommava i due esiti.
 
-Quale colonna si gioca lo decide la squadra, non chi sfida. Con Borin o Yrsa
+**Oggi (A.4)**: il sergente, la scorta non entra.
+
+| Chi lo sfida | fugge | a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra |
+|---|---|---|---|---|---|
+| Borin | 57 | 43 | 1,7 | 1,3 | mai |
+| Yrsa | 59 | 41 | 1,1 | 1,1 | mai |
+| Harbek | 95 | 5 | 3,9 | 3,4 | mai |
+| Nala | 92 | meno di 1 | 4,1 | 4,2 | 7 |
+
+Al primo round il duello è già chiuso una volta su due con Borin (50) e
+nove su dieci con Yrsa (90), contando i due esiti.
+
+**Più dura (A.4-bis)**: il sergente e i due veterani.
+
+| Chi lo sfida | fugge | a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra |
+|---|---|---|---|---|---|
+| Borin | 42 | 58 | 2,3 | 2,0 | mai |
+| Yrsa | 86 | 14 | 1,6 | 1,8 | mai |
+| Harbek | 63 | 1 | 4,6 | 4,1 | 37 |
+| Nala | 19 | mai | 4,0 | — | 82 |
+| Borin e Yrsa | 31 | 69 | 1,2 | 1,2 | mai |
+| Harbek, con Dara dalla riga 03 | 85 | 15 | 2,6 | 2,4 | 1 |
+| Nala, con Dara dalla riga 03 | 88 | 12 | 2,7 | 2,4 | 7 |
+
+Quale tabella si gioca lo decide la squadra, non chi sfida. Con Borin o Yrsa
 fra i quattro eroi il sergente è quello di A.4-bis per tutta la serata, e si
-legge la colonna «più dura» anche quando a sfidarlo scende Harbek o Nala
-(§0-bis). La colonna «oggi» si gioca solo senza Borin e senza Yrsa: lì le
+legge la tabella «più dura» anche quando a sfidarlo scende Harbek o Nala
+(§0-bis). La tabella «oggi» si gioca solo senza Borin e senza Yrsa: lì le
 loro due righe restano per confronto.
 
 Il libretto (§13) manda un eroe solo; le righe a due valgono con la regola
@@ -1584,6 +1617,10 @@ si chiudono sull'ultimo nano. Poi la notte (Scena 9).
 2. `[INFERRED — I due eroi mossi dal DM spendono il loro punto eroe?; base:
    è il default finché il DM non decide: no, il punto lo spende solo un
    giocatore; ARC08-01, «combatte e aiuta, ma non ruba la scena»]`
+3. `[INFERRED — Chi muove con l'azione di movimento comprata col punto eroe
+   fa nello stesso turno tutti i suoi attacchi?; base: è il default finché
+   il DM non decide: sì, e così la contano le prove; la fonte PF1e,
+   «un'azione standard o di movimento in più», non lo dice]`
 
 ### SCENA 9 — 1E · I presagi funesti
 
@@ -1850,7 +1887,7 @@ La pattuglia intera: **EL 9** (tre GS 5 fanno 8,2; i tre worg GS 2 la portano a 
 
 **A.4-bis · Il sergente Avanzato, la versione più dura** `[CANONE — DM 2026-11-25, card «sergente Avanzato»]` · base: archetipo semplice Avanzato di PF1e, regole rapide: +2 a tutti i tiri e ai danni, +4 alla CA, +2 pf per DV; ⚠️ non SRD 3.5; per tutta la serata, se fra gli eroi c'è Borin o Yrsa (§0-bis) · lo stesso sergente di A.4, con l'archetipo · GS **7** · Iniz +6 · Ascoltare +3, Osservare +3 (in A.4 sono +1 e +1, la sola Saggezza; con la regola intera la Sag sale di 4 e il modificatore di 2, e le regole rapide danno lo stesso +2) · CA **23**, contatto 12, colto alla sprovvista 22, ricostruita con la regola intera (+4 a tutte le caratteristiche, +2 armatura naturale) sull'armatura completa, che tiene la Des a +1 (ADR-0118); scartato: le regole rapide, «+4 alla CA», che darebbero 25 / 16 / 24 · pf **62** (50 + 2 × 6 DV) · Temp +10, Rifl +9, Vol +8 · *spada lunga +1* +13/+8 (1d8+8, 19-20); con due spade +11/+6 (1d8+8) e *spada lunga perfetta* +11/+6 (1d8+4: con la regola intera la mano secondaria somma metà Forza, +2, e la Specializzazione, +2) · **fugge sotto i 31 pf** (metà, libretto §13). La scorta: **due hobgoblin veterani** (`Bestiario/mostri/hobgoblin-veterans-warrior6-cr5.md`, ⚠️ non SRD) · GS 5 · CA 19, contatto 11, colto alla sprovvista 18 · pf 43 · Temp +8, Rifl +4, Vol +2 · *spada lunga perfetta* +10/+5 (1d8+2, 19-20); arco lungo composito (+1) +7/+2 (1d8+1, ×3) · combattono fino in fondo, e coprono la fuga del sergente. Duello: **EL 9** (9,0; oggi è 6, il sergente da solo, perché la scorta non entra). Gli scout col sergente Avanzato fanno 9,7; pattuglia e scout insieme 11,4.
 Benchmark: PF T1-1 riga 7: CA 23 contro 20 (sopra) / pf 62 contro 85 (sotto) / attacco +13 contro +13 (pari): GS 7 regge.
-Boost log: 2026-11-25 — archetipo semplice Avanzato di PF1e sul sergente, e due veterani (GS 5, Bestiario) al posto dei due regolari della scorta — GS 6 → 7, EL del duello 6 → 9 — adottato dal DM sulla card del 2026-11-25 («sergente Avanzato»), per la serata in cui fra gli eroi c'è Borin o Yrsa: contro di loro il duello di oggi dura 1,5 round con Borin e 1,1 con Yrsa, e con i veterani 2,1 e 1,6 (prove del sesto giro in `plans/esperimenti/scontri-epici-pregen-2026-11-25/`).
+Boost log: 2026-11-25 — archetipo semplice Avanzato di PF1e sul sergente, e due veterani (GS 5, Bestiario) al posto dei due regolari della scorta — GS 6 → 7, EL del duello 6 → 9 — adottato dal DM sulla card del 2026-11-25 («sergente Avanzato»), per la serata in cui fra gli eroi c'è Borin o Yrsa: contro di loro il duello di oggi si chiude in 1,7 round se il sergente fugge e in 1,3 se va a 0 pf o meno con Borin, in 1,1 con Yrsa; coi veterani in 2,3 e 2,0 con Borin, in 1,6 e 1,8 con Yrsa (prove del sesto giro in `plans/esperimenti/scontri-epici-pregen-2026-11-25/`).
 
 Gli scout col sergente: **EL** circa 9 (9,4). Pattuglia e scout insieme: **EL** circa 11 (11,2).
 

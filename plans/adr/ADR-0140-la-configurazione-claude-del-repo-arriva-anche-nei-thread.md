@@ -108,6 +108,15 @@ SessionStart è girato (stato `ok 916ed032 2026-11-19T06:47:01Z`) e
 `rumblingstone-tools` si è connesso. Il runtime dei thread legge quindi
 `/home/user/.claude/` e `/home/user/.mcp.json`.
 
+*Nota del 25/11.* Dal 22/11 circa non è più vero: i thread partono ancora in
+`/home/user` ma ignorano il `.claude/settings.json` di quella cartella (nei
+log diagnostici gli hook SessionStart passano da 2 a 1 dal 23/11). La
+cartella di progetto non basta più, e `claude-progetto.sh` scrive anche a
+livello utente (`~/.claude/settings.json`, la voce `rumblingstone-tools` in
+`~/.claude.json`, le skill in `~/.claude/skills`). Misura e limiti nella
+correzione del 25/11 di
+[ADR-0146](ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md).
+
 **Plugin spenti** (`claude -p` dalla cartella del clone dopo lo script, main
 contro ramo): plugin da 36 a 7, server MCP da 102 a 2 (quelli che falliscono
 all'avvio da 95 a 0), skill da 257 a 73, contesto iniziale da 59.670 a 53.965

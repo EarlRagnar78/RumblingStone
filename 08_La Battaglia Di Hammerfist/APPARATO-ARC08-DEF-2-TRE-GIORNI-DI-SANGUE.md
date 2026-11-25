@@ -30,7 +30,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 
 | Scena | Prova | CD |
 |---|---|---:|
-| SCENA 2 | tira un Riflessi per la barriera | 22 |
+| SCENA 2 | con un Riflessi per la barriera | 22 |
 | SCENA 2 | corda annodata contro il muro (Scalare | 0 |
 | SCENA 2 | pregen entro 90 m tirano Volontà | 25 |
 | SCENA 2 | 14d4 acido, Riflessi | 29 |
@@ -40,6 +40,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 3 | Torre Ovest, la vede crescere (Osservare | 15 |
 | SCENA 4 | 9 m o lo sente (Ascoltare | 15 |
 | SCENA 4 | alla guardia) e Presenza intimidatoria (Volontà | 19 |
+| SCENA 4 | e prendono 12d6, metà col Riflessi | 22 |
 | SCENA 4 | Coro della Montagna (terremoto sulla roccia | 22 |
 | SCENA 6 | se è sulle Mura, tira Riflessi | 29 |
 | SCENA 6 | Volontà | 25 |
@@ -60,7 +61,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 7 | statua dietro di sé (una Forza | 20 |
 | SCENA 8 | salire su S5 (Dara, Scalare | 10 |
 | SCENA 8 | Tempra | 16 |
-| SCENA 8 | tira un Riflessi per la barriera | 22 |
+| SCENA 8 | con un Riflessi per la barriera | 22 |
 | SCENA 8 | azione di round completo, Tempra | 10 |
 | SCENA 8 | Contro l'attacco mortale tira Tempra +14 | 16 |
 | SCENA 8 | contro l'attacco mortale Tempra +11 | 16 |

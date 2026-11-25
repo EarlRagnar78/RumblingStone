@@ -222,31 +222,32 @@ punto intero)», e «tutti e due insieme **10** circa». Il conto coi worg dà
 
 > **La versione più dura, e cosa cambia.** Sulla card del 2026-11-25 il DM
 > ha scelto di alzare gli scontri sulla griglia; questi numeri sono la
-> proposta che ne segue e aspettano il suo sì `[INFERRED — Adotti il sergente
-> Avanzato di A.4-bis?; base: scelta della card del 2026-11-25 «scontri più
-> duri», archetipo Avanzato PF1e]`. Si gioca quando a sfidare il sergente scende **Borin o Yrsa**. Con
-> Harbek o Nala si gioca la versione di oggi: nelle prove simulate, da soli
-> contro il sergente e i due veterani, vanno a terra nove volte su dieci
-> (domanda al DM, sotto).
+> proposta che ne segue, e aspettano il suo sì (domanda al DM, sotto). Si
+> decide **prima della serata**, una volta per tutte: se fra i quattro eroi
+> scelti c'è **Borin o Yrsa**, il sergente è quello di A.4-bis, nella Scena 4
+> e nella Scena 8. Se non c'è nessuno dei due, resta quello di A.4. Se poi a
+> sfidarlo scende Harbek o Nala, il DM dice prima i numeri delle prove: da
+> soli contro la versione più dura vanno a terra Harbek 60 volte su cento,
+> Nala 93 (Scena 8).
 >
 > - Il sergente è quello di A.4-bis (CA 25, 62 pf, fugge sotto **31**), e
->   sale coi **due veterani** di A.4-bis, che fanno muro davanti a lui dal
+>   nella Scena 8 sale coi **due veterani** di A.4-bis, davanti a lui dal
 >   primo round. EL del duello da **6** a **9**.
 > - Scena 4, «Se si combatte»: la soglia di fuga è **31**; gli scout fanno
 >   EL circa 10, pattuglia e scout insieme sempre circa 11.
 > - Scena 8, «Sfidare il sergente»: la soglia è **31**, si gioca la colonna
 >   «più dura» della tabella round per round, e il colpo che lo uccide deve
->   portarlo da 62 pf sotto zero, non da 50.
+>   portarlo sotto zero da sopra i 31 pf, non da sopra i 25.
 > - Appendice B, MAPPA 1D: la scorta sono i due veterani.
 > - A.4-bis porta il Benchmark e la riga `Boost log:`, che va anche in
 >   `Bestiario/mostri/hobgoblin-bladebearer-ftr6-cr6.md`.
 >
-> Domanda al DM `[INFERRED — Il sergente Avanzato con due veterani si gioca
-> solo quando lo sfidano Borin o Yrsa, e con Harbek o Nala resta quello di
-> oggi?; base:
-> archetipo semplice Avanzato di PF1e sul sergente di A.4, ⚠️ non SRD 3.5;
-> i veterani da Bestiario/mostri/hobgoblin-veterans-warrior6-cr5.md; prove
-> simulate in plans/esperimenti/scontri-epici-pregen-2026-11-25/]`
+> Domanda al DM `[INFERRED — Adotti il sergente Avanzato di A.4-bis per
+> tutta la serata, se fra i quattro eroi c'è Borin o Yrsa?; base: scelta
+> della card del 2026-11-25 «scontri più duri»; archetipo semplice Avanzato
+> di PF1e sul sergente di A.4, ⚠️ non SRD 3.5; i veterani da
+> Bestiario/mostri/hobgoblin-veterans-warrior6-cr5.md; prove simulate in
+> plans/esperimenti/scontri-epici-pregen-2026-11-25/]`
 
 ### I numeri dell'avanguardia (Scena 8)
 
@@ -675,27 +676,31 @@ suona, ed è l'allarme. Se non può, gira il worg e scappa verso il campo. Corre
 che esca dal canyon, la pattuglia è sola.
 
 **Se la attaccano loro**: la pattuglia è **EL 9**, per quattro pregen
-uno scontro di tre round. Con Ragnhild può durarne uno, ma la stessa palla
-non prende tutti: il capo con la piuma sta in coda, a 18 m, fuori dai 6 m
-del raggio. Ragnhild divide: la *ritardata* (13d6) sul gruppo, la *rapida*
-(10d6, 35 in media) sul capo, che ha 42 pf. Se il capo resta in piedi, al
-suo turno suona il corno. Non si alza: la pattuglia serve all'allarme, e
-può morire in un round (la ragione è al §0-bis).
+uno scontro di tre round. Non si alza: serve all'allarme, e può morire in un
+round (la ragione è al §0-bis).
 
-Poi conta chi sente. Il fuoco *esplode con un rombo basso* `[SRD:
-Fireball]`, e gli scout sono sotto il torrione, oltre la curva del canyon.
-Per deciderlo c'è la regola dell'SRD sui suoni di una battaglia: Ascoltare
-degli scout contro **CD −10, +1 ogni 3 m** di distanza `[SRD: Listen]`. A
-60 m la CD è 10, a 120 m è 30, e gli scout hanno Ascoltare +3 (A.3). Quanto
-distano, le mappe non lo dicono: è la domanda 1 in fondo alla scena. La tattica della pattuglia, se combatte: il capo con la piuma
-resta in coda, a 18 m, e il suo primo round è il corno; gli altri due worg
-si mettono di traverso sul sentiero fra lui e i pregen, e i goblin tirano
-dalla sella. Contro Yrsa, che non si nasconde, girano largo: nessuno la
-carica. Lo si risolve a racconto se si è in ritardo: un tiro
-d'attacco a testa, e il DM dice chi cade. Il pericolo è il goblin che
-scappa, e i corpi: una pattuglia che non rientra viene cercata. Se i corpi
-non si nascondono (in un canalone, sotto le rocce: Forza CD 10, un minuto a
-corpo), la ricognizione finisce al massimo «visti ma via».
+- **La tattica della pattuglia.** Il capo con la piuma resta in coda, a 18
+  m, e il suo primo round è il corno; gli altri due worg si mettono di
+  traverso sul sentiero fra lui e i pregen, e i goblin tirano dalla sella.
+  Contro Yrsa, che non si nasconde, girano largo: nessuno la carica.
+- **Ragnhild.** La stessa palla non prende tutti: il capo è fuori dai 6 m
+  del raggio. Ragnhild divide: la *ritardata* (13d6) sul gruppo, la
+  *rapida* (10d6, 35 in media) sul capo, che ha 42 pf. Se il capo resta in
+  piedi, al suo turno suona il corno.
+- **Chi sente.** Il fuoco *esplode con un rombo basso* `[SRD: Fireball]`,
+  e gli scout sono sotto il torrione, oltre la curva del canyon. Si tira
+  Ascoltare degli scout, una volta per tutti, contro **CD −10, +1 ogni 3 m**
+  di distanza `[SRD: Listen]`, cioè i suoni di una battaglia. Le mappe non
+  danno la distanza: il default è **90 m**, e lì l'Ascoltare degli scout va
+  contro CD 20; con +3 (A.3) sentono con 17 o più, una volta su cinque (domanda 1, in fondo
+  alla scena).
+- **A racconto**, se si è in ritardo: un tiro d'attacco a testa, e il DM
+  dice chi cade.
+
+Il pericolo è il goblin che scappa, e i corpi: una pattuglia che non rientra
+viene cercata. Se i corpi non si nascondono (in un canalone, sotto le rocce:
+Forza CD 10, un minuto a corpo), la ricognizione finisce al massimo «visti ma
+via».
 
 Il primo a vederli, se li vede:
 
@@ -750,8 +755,8 @@ delle rocce K5-L7, o gira largo sul fianco per prenderli alle spalle: il
 fiancheggiamento è una scelta del giocatore, non una posizione di partenza.
 
 **Se si combatte**: EL 9 circa (10 col sergente della versione più dura,
-Scena 8). Il sergente non combatte fino in fondo:
-sotto i 25 pf (31 nella versione più dura) fugge verso il campo, e se ha
+che si gioca se fra gli eroi c'è Borin o Yrsa: §0-bis). Il sergente non
+combatte fino in fondo: sotto i 25 pf (31 nella versione più dura) fugge verso il campo, e se ha
 un'azione suona il corno. Il
 corno è l'allarme. Se il sergente muore o è preso qui, nella Scena 8 il
 round 3 arriva **senza il suo +1** (`ARC08-19` §2).
@@ -892,9 +897,9 @@ nuovo, con la finestra se Dara la legge. Poi il Consiglio (Scena 5).
 
 **Domande al DM (Scena 4).**
 
-1. `[INFERRED — Quanti metri ci sono fra la pattuglia sul sentiero e gli
-   scout sotto il torrione, per la CD di Ascoltare?; base: SRD, Listen, «a
-   battle» CD −10 e +1 ogni 3 m; le mappe 1A-1 e 1A-2 non danno la
+1. `[INFERRED — Tieni 90 m fra la pattuglia sul sentiero e gli scout sotto
+   il torrione, cioè per gli scout Ascoltare a CD 20?; base: SRD, Listen,
+   «a battle» CD −10 e +1 ogni 3 m; le mappe 1A-1 e 1A-2 non danno la
    distanza]`
 
 ---
@@ -1307,24 +1312,27 @@ dell'arco di Dara (330 m). Guarda, e ricorda chi ha visto.
 #### Sfidare il sergente, round per round
 
 Si gioca sulla MAPPA 1D; i round sono di sei secondi, tutti dentro il round
-di battaglia in cui l'eroe sfida. La colonna «più dura», scelta dal DM (§0-bis),
-vale quando a sfidare scende Borin o Yrsa.
+di battaglia in cui l'eroe sfida. La colonna «più dura» vale per tutta la
+serata se fra gli eroi c'è Borin o Yrsa (§0-bis), chiunque scenda a
+sfidarlo.
 
 | Round | Oggi (A.4): il sergente, la scorta non entra | Più dura (A.4-bis): il sergente e i due veterani |
 |---|---|---|
-| **1** | sale dal sentiero in F11; i due regolari restano in F12 e H12 e non entrano finché l'eroe non li attacca. Il sergente tira con due spade su chi gli arriva addosso | salgono da F11-G12. I veterani si mettono di fianco, uno davanti al sergente: per arrivare a lui in mischia se ne abbatte uno, o lo si aggira col passo di 1,5 m, come la guardia di Grimjaw. Il sergente tira con due spade su chi gli arriva addosso |
-| **2** | attacco completo con due spade sull'eroe | i veterani spingono verso la fossa più vicina, C7-D7 o I7-J7: chi ci finisce dentro è a terra, prono (domanda 1, sotto) |
+| **1** | sale dal sentiero in F11; i due regolari restano in F12 e H12 e non entrano finché l'eroe non li attacca. Il sergente tira con due spade su chi gli arriva addosso | salgono da F11-G12, i due veterani davanti al sergente. Per arrivare a lui in mischia si passa accanto a un veterano: il suo attacco d'opportunità, e in quel round un attacco solo `[SRD: Attacks of Opportunity]`; o si abbatte prima il veterano. Il sergente tira con due spade su chi gli arriva addosso |
+| **2** | tutti i suoi colpi, con le due spade, sull'eroe | tutti e tre attaccano in pieno l'eroe che è salito; i veterani prima su chi minaccia il sergente |
 | **3 e dopo** | se un eroe arriva al tronco (riga 03), il sergente gira per la boscaglia, C10-D11 o I10-J11, occultamento 20%, e lo prende di fianco | lo stesso |
 | **la fuga** | sotto **25 pf**, giù per il sentiero; i regolari lo seguono | sotto **31 pf**, giù per il sentiero; i veterani restano a coprirlo e combattono fino in fondo |
 
-**Cosa dicono le prove.** Le prove simulate del 2026-11-25 (4.000 duelli per
-riga, lo script e l'esito in `plans/esperimenti/scontri-epici-pregen-2026-11-25/`): con la versione di oggi Borin e
-Yrsa lo fanno fuggire al primo round quasi sempre; Harbek al terzo (3,1 in
-media), Nala al terzo o al quarto (3,6), e Nala va a terra sei volte su
-cento. Con la versione più dura Borin lo fa fuggire al terzo round (2,7 in
-media), Yrsa al secondo (2,2), e nessuno dei due va a terra. Harbek e Nala,
-da soli contro la versione più dura, vanno a terra nove volte su dieci: per
-questo con loro non si gioca. Il libretto (§13) manda un eroe solo.
+**Cosa dicono le prove.** Le prove simulate del 2026-11-25 (4.000 duelli
+per riga, lo script e l'esito in `plans/esperimenti/scontri-epici-pregen-2026-11-25/`): con la versione di oggi
+Borin e Yrsa lo fanno fuggire al primo round quasi sempre; Harbek al terzo
+(3,1 in media), Nala al terzo o al quarto (3,6), e Nala va a terra sei volte
+su cento. Con la versione più dura Borin lo fa fuggire al secondo round (1,9
+in media), Yrsa al primo (1,1), e nessuno dei due va a terra; Harbek va a
+terra 60 volte su cento, Nala 93. Il libretto (§13) manda un eroe solo. I
+limiti delle prove: gli eroi agiscono sempre per primi; Harbek e Nala sono
+provati senza incantesimi, solo con le armi; la boscaglia del round 3 non
+c'è.
 
 **Contro i sei eroi.**
 
@@ -1332,7 +1340,8 @@ questo con loro non si gioca. Il libretto (§13) manda un eroe solo.
   il duello, e lui lo accetta. Nella versione più dura i veterani vanno su di
   lei dai fianchi, perché la Sfida le toglie 2 alla CA contro chiunque altro.
 - **Ragnhild.** Se scende lei, il sergente le corre addosso al primo round,
-  e nella versione più dura anche i veterani: in mischia una *palla di
+  e nella versione più dura (che si gioca se al tavolo c'è anche Borin o
+  Yrsa) anche i veterani: in mischia una *palla di
   fuoco* la prende con loro, salvo che lei metta il centro lontano, oltre di
   loro. Il sergente le arriva con due spade contro CA 18.
 - **Borin e il Colpo Devastante.** Nella versione più dura il primo veterano
@@ -1343,15 +1352,16 @@ questo con loro non si gioca. Il libretto (§13) manda un eroe solo.
   sulla difensiva, e per farlo tira Concentrazione +20, CD 15 più il livello
   dell'incantesimo `[SRD: Concentration]`.
 - **Nala** (CA 20, combatte a +13). Contro *invisibilità* o un'*immagine
-  silenziosa* il sergente non insegue oltre la boscaglia: si mette con le
-  spalle al tronco e aspetta che lei torni a portata.
+  silenziosa* il sergente non insegue: resta sul sentiero, F11-G12, e
+  aspetta che lei torni a portata. Se lei arriva al tronco, vale il round 3
+  della tabella.
 - **La frana** (E5-G6) è dei pregen: chi taglia le corde al round 1 la manda
-  sul sentiero, F7-G12, mentre il sergente ci sale: 4d6, e per dimezzare un Riflessi contro la
-  frana, CD 15 (MAPPA 1D). Nella versione più dura è il modo più semplice per
-  arrivare al sergente senza passare dai veterani.
-- **Dara** tira dalla riga 03, oltre il tronco. Nella versione più dura i
-  veterani hanno l'arco (Bestiario), e al round 2 uno dei due tira su di lei
-  invece di spingere.
+  sul sentiero, F7-G12, mentre il sergente ci sale: 4d6, e per dimezzare un
+  Riflessi contro la frana, CD 15 (MAPPA 1D). Prende anche i veterani, ma non
+  li toglie di mezzo: hanno 43 pf.
+- **Dara** tira dalla riga 03, oltre il tronco. Nella versione più dura (se
+  al tavolo c'è anche Borin o Yrsa) i veterani hanno l'arco (Bestiario), e al
+  round 2 uno dei due tira su di lei invece che sull'eroe in mischia.
 
 **Quanto restare.** Lo si può dire ai giocatori, se lo chiedono: nelle prove,
 con l'orda feroce, chi si ritira dopo il **round 2** porta a casa quattro
@@ -1402,14 +1412,11 @@ si chiudono sull'ultimo nano. Poi la notte (Scena 9).
 
 **Domande al DM (Scena 8).**
 
-1. `[INFERRED — Quanto è profonda la fossa a metà, e quanti danni fa a chi
-   ci cade?; base: MAPPA 1D, «fossa a metà, 3 × 1,5 m», nessuna profondità
-   scritta]`
-2. `[INFERRED — Ragnhild e Yrsa prendono la squadra dell'eroe non scelto fra
+1. `[INFERRED — Ragnhild e Yrsa prendono la squadra dell'eroe non scelto fra
    Borin, Harbek e Nala, e mai quella di Dara?; base: libretto §1, «Chi tiene
    cosa», e §9; ARC08-01, «Se un giocatore non vuole guidare un eroe»;
    ARC08-10 §5.6]`
-3. `[INFERRED — Nel libretto la palla di fuoco rapida di Ragnhild vale un
+2. `[INFERRED — Nel libretto la palla di fuoco rapida di Ragnhild vale un
    gesto in più?; base: libretto §5, «Ogni round il tuo eroe fa una di
    queste cose»]`
 
@@ -1668,9 +1675,9 @@ La pattuglia intera: **EL 9** (tre GS 5 fanno 8,2; i tre worg GS 2 la portano a 
 
 **A.4 · Il sergente** (la ricognizione e l'avanguardia: è lo stesso) · `Bestiario/mostri/hobgoblin-bladebearer-ftr6-cr6.md`, *hobgoblin bladebearer*, ⚠️ non SRD, con l'armatura completa al posto della corazza di piastre +1 · GS 6 · hobgoblin guerriero 6°, Medio, LM · Iniz +4 · scurovisione 18 m · Ascoltare +1, Osservare +1 · CA **21** (armatura completa +8, Des +1 fino al tetto, anello di protezione +1, Difesa con Due Armi +1), contatto 12, colto alla sprovvista 20 · pf **50** · Temp +8, Rifl +7, Vol +6 (RC-001, Build B: col *mantello della resistenza +1*) · velocità 6 m · *spada lunga +1* +11/+6 (1d8+6, 19-20); con due spade +9/+4 (1d8+6) e *spada lunga perfetta* +9/+4 (1d8+3) · Combattere con Due Armi e Migliorato, Difesa con Due Armi, Arma Focalizzata e Specializzata (spada lunga), Volontà di Ferro, *Oversized Two-Weapon Fighting* (⚠️ non SRD) · *mantello della resistenza +1*, tre pozioni di *cura ferite moderate* (RC-001, Build B), il corno · Comune, Goblin. **Fugge sotto i 25 pf.** Nell'avanguardia: +1 ad AU e DU di tutti i reparti dal round 3.
 
-**A.4-bis · Il sergente Avanzato, la versione più dura** `[INFERRED — Adotti il sergente Avanzato?; base: scelta della card del 2026-11-25 «scontri più duri», proposta del thread]` · base: archetipo semplice Avanzato di PF1e, regole rapide: +2 a tutti i tiri e ai danni, +4 alla CA, +2 pf per DV; ⚠️ non SRD 3.5; con Borin o Yrsa (§0-bis) · lo stesso sergente di A.4, con l'archetipo · GS **7** · Iniz +6 · CA **25**, contatto 16, colto alla sprovvista 24: è una lettura delle regole rapide, che danno «+4 alla CA» senza dire se vale per contatto e sprovvista; ricostruito con la regola intera (+4 a tutte le caratteristiche, +2 armatura naturale) sull'armatura completa, che tiene la Des a +1, fa **23 / 12 / 22** · pf **62** (50 + 2 × 6 DV) · Temp +10, Rifl +9, Vol +8 · *spada lunga +1* +13/+8 (1d8+8, 19-20); con due spade +11/+6 (1d8+8) e *spada lunga perfetta* +11/+6 (1d8+5) · **fugge sotto i 31 pf** (metà, libretto §13). La scorta: **due hobgoblin veterani** (`Bestiario/mostri/hobgoblin-veterans-warrior6-cr5.md`, ⚠️ non SRD) · GS 5 · CA 19, contatto 11, colto alla sprovvista 18 · pf 43 · Temp +8, Rifl +4, Vol +2 · *spada lunga perfetta* +10/+5 (1d8+2, 19-20); arco lungo composito (+1) +7/+2 (1d8+1, ×3) · combattono fino in fondo, e coprono la fuga del sergente. Duello: **EL 9** (9,0; oggi è 6, il sergente da solo, perché la scorta non entra). Gli scout col sergente Avanzato fanno 9,7; pattuglia e scout insieme 11,4.
+**A.4-bis · Il sergente Avanzato, la versione più dura** (proposta: domanda al DM nel §0-bis) · base: archetipo semplice Avanzato di PF1e, regole rapide: +2 a tutti i tiri e ai danni, +4 alla CA, +2 pf per DV; ⚠️ non SRD 3.5; per tutta la serata, se fra gli eroi c'è Borin o Yrsa (§0-bis) · lo stesso sergente di A.4, con l'archetipo · GS **7** · Iniz +6 · CA **25**, contatto 16, colto alla sprovvista 24: è una lettura delle regole rapide, che danno «+4 alla CA» senza dire se vale per contatto e sprovvista; ricostruito con la regola intera (+4 a tutte le caratteristiche, +2 armatura naturale) sull'armatura completa, che tiene la Des a +1, fa **23 / 12 / 22** · pf **62** (50 + 2 × 6 DV) · Temp +10, Rifl +9, Vol +8 · *spada lunga +1* +13/+8 (1d8+8, 19-20); con due spade +11/+6 (1d8+8) e *spada lunga perfetta* +11/+6 (1d8+5) · **fugge sotto i 31 pf** (metà, libretto §13). La scorta: **due hobgoblin veterani** (`Bestiario/mostri/hobgoblin-veterans-warrior6-cr5.md`, ⚠️ non SRD) · GS 5 · CA 19, contatto 11, colto alla sprovvista 18 · pf 43 · Temp +8, Rifl +4, Vol +2 · *spada lunga perfetta* +10/+5 (1d8+2, 19-20); arco lungo composito (+1) +7/+2 (1d8+1, ×3) · combattono fino in fondo, e coprono la fuga del sergente. Duello: **EL 9** (9,0; oggi è 6, il sergente da solo, perché la scorta non entra). Gli scout col sergente Avanzato fanno 9,7; pattuglia e scout insieme 11,4.
 Benchmark: PF T1-1 riga 7: CA 25 contro 20 (sopra) / pf 62 contro 85 (sotto) / attacco +13 contro +13 (pari): GS 7 regge.
-Boost log: 2026-11-25 — archetipo semplice Avanzato di PF1e sul sergente, e due veterani (GS 5, Bestiario) al posto dei due regolari della scorta — GS 6 → 7, EL del duello 6 → 9 — proposto dopo la card del 2026-11-25 («scontri più duri»), in attesa del sì del DM, con Borin o Yrsa: il duello finiva al primo round contro di loro (prove in `plans/esperimenti/scontri-epici-pregen-2026-11-25/`).
+Boost log: 2026-11-25 — archetipo semplice Avanzato di PF1e sul sergente, e due veterani (GS 5, Bestiario) al posto dei due regolari della scorta — GS 6 → 7, EL del duello 6 → 9 — proposto dopo la card del 2026-11-25 («scontri più duri»), in attesa del sì del DM, per la serata in cui fra gli eroi c'è Borin o Yrsa: il duello finiva al primo round contro di loro, e con i veterani dura 1,9 round con Borin e 1,1 con Yrsa (prove in `plans/esperimenti/scontri-epici-pregen-2026-11-25/`).
 
 Gli scout col sergente: **EL** circa 9 (9,4). Pattuglia e scout insieme: **EL** circa 11 (11,2).
 
@@ -1794,8 +1801,9 @@ LEGENDA · 🏰 la cinta, 12 m · 🟫 il sentiero · 🟩 il pendio, in discesa
   battaglia campale non conta come trappola: la usa il duello.
 - **Il duello col sergente**: il sergente sale dal sentiero (F11) con due
   hobgoblin di scorta (F12, H12), che non entrano nel duello finché l'eroe
-  non li attacca. Nella versione più dura (A.4-bis, con Borin o Yrsa), sono
-  due veterani e fanno muro davanti a lui dal primo round. La retroguardia si gioca sulla stessa mappa: l'eroe che
+  non li attacca. Nella versione più dura (A.4-bis, se fra gli eroi c'è
+  Borin o Yrsa) sono due veterani, davanti a lui dal primo round: chi li
+  aggira prende un attacco d'opportunità. La retroguardia si gioca sulla stessa mappa: l'eroe che
   copre la ritirata tiene la riga 03, sul tronco.
 - **La cresta di Grimjaw**: a sud, a 400 m, fuori mappa, oltre la portata di
   qualunque arco.

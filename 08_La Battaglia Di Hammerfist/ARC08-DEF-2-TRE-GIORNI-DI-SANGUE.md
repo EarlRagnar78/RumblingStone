@@ -97,6 +97,10 @@
 >     2 ne cadono tre e il Coro si perde (Scena 4): il numero è del master.
 > 18. **Il ponte levatoio.** Il master gli dà un argano e 80 pf con durezza
 >     5, e lo fa alzare solo senza nessuno sopra (§2, «scelta del modulo»).
+> 19. **L'attacco mortale all'incrocio.** Il master segue l'SRD: passa solo
+>     con un furtivo, entro il round 3, cioè sul Re e su un pregen preso ai
+>     fianchi. Tre scelte nella Scena 8: la versione dura per chi ha fallito
+>     l'Osservare, il Re che non si difende, i giavellotti sul Re.
 <!-- /apparato -->
 
 > 🧭 **La serata in tre frasi.** Per tre giorni l'orda della Mano Rossa sale la
@@ -801,6 +805,10 @@ Al round 3:
 > guarda in alto, verso le merlature, e conta. Al primo colpo dell'ariete il
 > cancello geme sotto i vostri piedi. Che fate?*
 
+Il box racconta l'arrivo, sull'ultimo tornante, coi troll davanti. Quando
+il duello comincia Gorthak ha già passato l'ariete ed è contro il battente:
+vale la griglia («Chi c'è sul ponte», più sotto).
+
 **Scheda d'entrata — Gorthak il Trifronte, l'ariete dell'orda** *(statistiche: Appendice A.1; `ARC08-02` §1; `Bestiario/villain/Gorthak_il_Trifronte.md`. CA 25, 202 pf)*
 
 | | |
@@ -874,7 +882,8 @@ gesto del round, e le Mura tirano senza di lui.
   nessun nano gli è accanto. Oltre i 45 m ci arrivano solo i giganti al
   gomito: dal round 2 due di loro tirano su chi ha colpito Gorthak dalle
   mura invece che sui reparti (domanda 1, in fondo alla scena), +7 o +5,
-  2d6+7 a colpo. Ragnhild sulla cinta
+  2d6+7 a colpo. Con la ricognizione «pulita» la carta **I giganti** non si
+  gioca, e non partono nemmeno questi due macigni. Ragnhild sulla cinta
   sopra il ponte è nel secondo incremento; Dara sulla Torre Ovest è a 48 m,
   fuori gittata.
 - **Contro il fuoco.** Sul ponte non c'è spazio per sparpagliare i troll:
@@ -1142,7 +1151,11 @@ duelli sono tutta la battaglia dei pregen.
   del sergente (`ARC08-DEF-1`, Scena 8). Nala lo evita con Acrobazia CD 15
   (+9). Se la cima della rampa è chiusa (Scena 4, domanda
   2) non si passa, nemmeno col passo: prima un orog va abbattuto o spinto
-  via, e finché nessuno gli arriva accanto Grimjaw resta dietro la guardia. Frecce e
+  via, e finché nessuno gli arriva accanto Grimjaw resta dietro la guardia.
+  Dal round 2, se nessuno lo colpisce da lontano, non tira con l'arco su chi
+  combatte gli orog, perché tirerebbe nella mischia dei suoi: entra in
+  Furia, dà il Tattico Superiore alla guardia a ogni round, e aspetta il
+  primo che passa. Le prove lo contano così. Frecce e
   incantesimi non devono superare nessuno, salvo la copertura che gli orog
   danno (+4 alla CA) `[SRD: Cover]`.
 - *Chi lo colpisce da lontano*: se nessun nano gli è accanto, dal round 2
@@ -1158,20 +1171,27 @@ A.5).
 
 **I bugbear all'incrocio** (Scena 8).
 - *Prima*: studiano i bersagli per tre round dal buio dei tunnel, durante la
-  marcia: l'attacco mortale è pronto quando la diversione parte.
+  marcia. Lo studio finisce quando la diversione parte, e l'attacco mortale
+  va portato nei tre round dopo, cioè entro il round 3 `[SRD: Death
+  Attack]`.
 - *Round 2*: escono a coppie e aprono l'anello: un veterano a testa.
-- *Round 3*: passano dai varchi; il primo colpo è l'attacco mortale, il
-  secondo il furtivo, sullo stesso bersaglio.
-- *Round 4-5*: in coppia, per fiancheggiare; *foschia occultante* se un
-  arco li trova.
+- *Round 3*: passano dai varchi e caricano, un colpo solo a testa. È
+  l'attacco mortale solo se è anche un furtivo: sul Re sempre, su un pregen
+  per il secondo dei due che lo chiudono ai fianchi (Scena 8, «L'attacco
+  mortale, in chiaro»).
+- *Round 4-5*: in coppia, per fiancheggiare. Il secondo colpo sullo stesso
+  bersaglio, al round 4, è il furtivo: l'attacco mortale è scaduto.
+  *Foschia occultante* se un arco li trova.
 - *Quando ne cadono più di quattro*, o se sono stati visti prima del colpo:
   nel buio, e Nascondersi di nuovo.
 
 **Domande al DM (Scena 2).**
 
 1. `[INFERRED — Dal round 2 i giganti tirano due macigni a round su chi ha
-   colpito Gorthak dalle mura (+7/+5, 2d6+7)?; base: è il default finché il
-   DM non decide; SRD, gigante delle colline, masso +8 (2d6+7), incremento
+   colpito Gorthak dalle mura (+7/+5, 2d6+7), e con la ricognizione
+   «pulita» non tirano nemmeno questi?; base: è il default finché il DM non
+   decide: sì, e con la ricognizione «pulita» no, come la carta I giganti,
+   che quel giorno non si gioca; SRD, gigante delle colline, masso +8 (2d6+7), incremento
    36 m, quindi −2 o −4 a 50-100 m, e +1 di morale come nella carta; prove
    simulate: con Ragnhild sulla cinta e Dara sulla torre Gorthak fugge
    sempre, in due round, e nessun eroe va a terra]`
@@ -1204,8 +1224,8 @@ A.5).
    sul primo attacco (+23/+14/+9, come sulla scheda) o la perde
    (+19/+14/+9)?; base: PF1e, Furious Focus: vale con un'arma a due mani o
    con un'arma a una mano impugnata a due; la scheda di ARC08-01 ha lo
-   scudo pesante e scrive +23/+14/+9; finché il DM non decide, le prove
-   usano +19/+14/+9. Senza Attacco Poderoso il +23 resta in tutti e due i
+   scudo pesante e scrive +23/+14/+9; è il default finché il DM non
+   decide: il giocatore tira +19/+14/+9, come le prove. Senza Attacco Poderoso il +23 resta in tutti e due i
    casi]`
 
 ### SCENA 3 — La notte del Giorno 1
@@ -1425,7 +1445,8 @@ decide il DM (domanda 2, in fondo alla scena). I limiti: mancano gli
 incantesimi di Harbek e di Nala, l'Ispirare Coraggio, la Presenza
 Comandante e la Postura di Borin, assenze che pendono contro gli eroi;
 tutti gli orog vivi colpiscono l'eroe più ferito; con la rampa chiusa
-Grimjaw sta dietro gli orog, e colpisce solo chi gli arriva accanto.
+Grimjaw sta dietro gli orog, colpisce solo chi gli arriva accanto, e non
+tira con l'arco sui nani in mischia.
 
 **Grimjaw contro i sei eroi** (tattica, nessun numero nuovo).
 
@@ -1555,7 +1576,8 @@ Gorthak sono fuggiti feriti. Poi la notte (Scena 5).
    colpire» e un tiro di Volontà che la nega, senza la parola paura; la
    classe di prestigio del Signore della Guerra non è nell'SRD]`
 2. `[INFERRED — La cima della rampa lascia aggirare la guardia (Tattiche),
-   o è chiusa e un orog va abbattuto prima?; base: prove simulate del
+   o è chiusa e un orog va abbattuto prima?; base: è il default finché il
+   DM non decide: aperta, la guardia si aggira; prove simulate del
    2026-11-25, sesto giro: uno fra Borin e Yrsa a terra 39 volte su cento
    con la guardia aggirabile, 85 con la rampa chiusa; MAPPA 2A non dà la
    larghezza della cima]`
@@ -1965,10 +1987,12 @@ al round 4 della Scena 7.
    conto del Re a 8 pf fissi, canone del 2026-10-22, come per la protezione
    dall'energia di Harbek]`
 4. `[INFERRED — Davanti a un tetto di pietra sopra il Re, Fauci atterra e lo
-   sfonda, o soffia dal lato aperto?; base: MAPPA 2B, «Tattiche»; A.5, gli
+   sfonda, o soffia dal lato aperto?; base: è il default finché il DM non
+   decide: atterra e lo sfonda; MAPPA 2B, «Tattiche»; A.5, gli
    attacchi in mischia di Fauci; nessuna riga del modulo sul tetto]`
 5. `[INFERRED — Per tutta la serata, in ogni scena, un colpo che porta Yrsa
-   sotto zero la mette a terra, e Yrsa non scende mai sotto −9?; base: è
+   sotto zero la mette a terra, e Yrsa non scende mai sotto −9, nemmeno col
+   colpo di grazia di un bugbear nella Scena 8?; base: è
    il default finché il DM non decide; Yrsa compare viva nella Scena 2 di
    ARC07-DEF-5, comparse, «Yrsa tiene lo stendardo», canone del 2026-11-15;
    il flashback sta fra la Scena 1 e la Scena 2]`
@@ -2130,12 +2154,36 @@ orchi insieme fanno EL 16,3, sopra il tetto di 16, e a diversione caduta
 
 | Round | Cosa succede | Il tiro |
 |---|---|---|
-| **1 · La diversione** | i 7 hobgoblin caricano urlando dal tunnel nord-ovest (C2-F5); l'anello si gira verso di loro | **Osservare contro il Nascondersi dei bugbear**: il DM tira una volta per i quattro dell'est e una per i quattro dell'ovest (d20 + 17), e ogni pregen tira il suo Osservare, −1 ogni 3 m dalla bocca (da Q19 alla bocca est sono circa 18 m: −6). Chi supera il tiro vede le sagome di quella bocca. Può gridarlo (azione gratuita): chi lo sente non è colto alla sprovvista e non è nemmeno «studiato di sorpresa» (vedi sotto) |
-| **2 · Fuori dalle bocche** | gli 8 bugbear escono insieme: 4 da est verso il Re, 4 da ovest verso i comandanti (i pregen). Dalla bocca all'anello sono 6-9 m, e l'anello è chiuso: in questo round arrivano ai veterani e ne colpiscono uno a testa. Hanno studiato i bersagli dall'avvicinamento | un nano dell'anello a bugbear (sotto, «I nani caduti si contano così»). Chi ha visto le sagome al round 1 agisce prima di loro |
-| **3 · Le lame nel buio** | chi ha un varco libero carica il bersaglio: dall'anello est al Re in Q19 sono 12 m. Chi passa dal quadretto di un veterano (Acrobazia +11 contro CD 25, a metà velocità) fa un doppio movimento, in questo round non colpisce, e colpisce al round 4 | **attacco mortale** sul primo colpo, solo contro chi è colto alla sprovvista: Tempra **CD 16** o paralizzato 1d6+2 round. **Furtivo +4d6** su chi è colto alla sprovvista. Contro chi è stato avvisato l'attacco è un colpo normale (+11, 1d8+3) |
+| **1 · La diversione** | i 7 hobgoblin caricano urlando dal tunnel nord-ovest (C2-F5); l'anello si gira verso di loro | **Osservare contro il Nascondersi dei bugbear**: il DM tira una volta per i quattro dell'est e una per i quattro dell'ovest (d20 + 17), e ogni pregen tira il suo Osservare, −1 ogni 3 m dalla bocca (da Q19 alla bocca est sono circa 18 m: −6). Chi supera il tiro vede le sagome di quella bocca, e può gridarlo (azione gratuita): chi ha visto o ha sentito è **avvisato**, e conta nella versione dura (sotto, «L'attacco mortale, in chiaro») |
+| **2 · Fuori dalle bocche** | gli 8 bugbear escono insieme: 4 da est verso il Re, 4 da ovest verso i comandanti (i pregen). Dalla bocca all'anello sono 6-9 m, e l'anello è chiuso: in questo round arrivano ai veterani e ne colpiscono uno a testa. Lo studio dei bersagli è finito quando è partita la diversione: l'attacco mortale va portato entro il round 3 | un nano dell'anello a bugbear (sotto, «I nani caduti si contano così»). Chi ha visto le sagome al round 1 agisce prima di loro |
+| **3 · Le lame nel buio** | chi ha un varco libero carica il bersaglio: dall'anello est al Re in Q19 sono 12 m. Chi passa dal quadretto di un veterano (Acrobazia +11 contro CD 25, a metà velocità) fa un doppio movimento, in questo round non colpisce, e colpisce al round 4 | **attacco mortale** sul primo colpo, solo se quel colpo è un furtivo `[SRD: Death Attack]`: Tempra **CD 16** o paralizzato 1d6+2 round. **Furtivo +4d6** su chi è fiancheggiato o colto alla sprovvista: sul Re sempre, su un pregen quando due bugbear lo chiudono ai fianchi (sotto, «L'attacco mortale, in chiaro»). Altrimenti è un colpo normale (+11, 1d8+3). Chi colpisce al round 4 è fuori dai tre round: ha il furtivo, se fiancheggia, e non l'attacco mortale |
 | **4-5 · La mischia nel cerchio** | i bugbear combattono in coppia per fiancheggiare; gli hobgoblin tengono l'anello | gli ordini dei pregen (sotto) |
 | **4, o dopo** | **30 orchi** dal tunnel sud, solo se nella Scena 7 la fase 3 si è chiusa senza nessuno al chokepoint (lo dice la Scena 7), e solo quando la diversione è caduta: al round 4 se i sette hobgoblin sono già a terra, altrimenti il round dopo l'ultimo. Il round prima si sentono: passi di ferro nel tunnel sud, e chi è all'anello sud lo dice | gli orchi si fermano all'anello sud; ogni round che lo premono è un round «senza ordine» per quel lato |
 | **6+ · La risoluzione** | caduti più di 4 bugbear, gli altri svaniscono nei tunnel (nuova prova di Nascondersi); gli hobgoblin combattono fino all'ultimo | |
+
+**L'attacco mortale, in chiaro.** L'SRD lo dà solo a un furtivo portato in
+mischia, entro tre round dalla fine dello studio `[SRD: Death Attack]`. Lo
+studio finisce quando parte la diversione: i tre round sono l'1, il 2 e il
+3. Al round 3 i pregen hanno già agito, e nessuno è colto alla sprovvista:
+su di loro il furtivo, e con lui l'attacco mortale, passa solo
+fiancheggiando, cioè al secondo bugbear che arriva dal lato opposto del
+primo. Chi colpisce dal round 4 ha solo il furtivo.
+
+Sul Re il furtivo vale a ogni colpo in mischia `[INFERRED — Il Re sulla
+barella non si difende, e furtivo e attacco mortale valgono contro di lui a
+ogni colpo in mischia?; base: è il default finché il DM non decide: sì; A.7
+e questa scena danno già il furtivo e l'attacco mortale sul Re, canone del
+2026-10-22; SRD, Sneak Attack: vuole un bersaglio senza la Destrezza alla
+CA o fiancheggiato, e il Re, fra i portatori e il Pilastro, non si
+fiancheggia finché i portatori sono in piedi]`.
+
+La versione dura è una scelta del modulo, non dell'SRD `[INFERRED — Chi ha
+fallito l'Osservare del round 1 e non è stato avvisato resta colto alla
+sprovvista contro i bugbear fino al loro primo colpo su di lui?; base: è il
+default finché il DM non decide: no, vale l'SRD; SRD, Flat-Footed: lo si è
+solo prima del proprio primo turno, e al round 3 i pregen hanno già agito
+due volte]`. Con lei la carica del round 3 su un pregen non avvisato è
+furtivo e attacco mortale insieme, anche senza il fianco.
 
 **Il Re a 8 pf** `[CANONE — DM 2026-10-22]`. Sulla barella ha CA 13 e da
 prono −4 contro la mischia (Scena 6, «Il conto del Re»): un bugbear che lo
@@ -2143,7 +2191,15 @@ raggiunge lo colpisce quasi sempre, e 1d8+3 più 4d6 di furtivo lo uccide. I
 quattro dell'est puntano solo lui. È la scena: **il Re deve avere qualcuno
 davanti a ogni lato** entro il round 3. Un bugbear deve arrivare adiacente; chi gli
 sta in mezzo lo obbliga a girarci intorno (attacco d'opportunità) o a
-fermarsi su di lui. La colonna del Pilastro (P16-R18) lo copre da nord.
+fermarsi su di lui. La colonna del Pilastro (P16-R18) lo copre da nord. I
+giavellotti non cambiano il conto `[INFERRED — I bugbear lanciano i
+giavellotti sul Re da fuori del cerchio?; base: è il default finché il DM
+non decide: no; SRD, Death Attack: vuole un'arma da mischia; SRD, Sneak
+Attack: a distanza vale solo entro 9 m, e dall'anello al Re sono 12 m; SRD,
+Cover: i portatori ai lati e chi gli sta davanti lo coprono; A.7 dà ai
+bugbear i giavellotti]`: l'ordine è l'attacco mortale, che si porta solo in
+mischia, e il Re steso fra i portatori e i suoi è coperto da chi tira da
+fuori.
 
 *Invisibilità* sul Re non basta: i bugbear hanno il **fiuto** e lo trovano a
 9 m. Ottiene solo che chi lo attacca abbia il 50% di mancarlo (occultamento
@@ -2179,7 +2235,9 @@ prima non è sulla carta di Nala, la seconda c'è).
   paralizzato si libera con *libertà di movimento* (se Harbek l'ha
   preparato) o aspettando 1d6+2 round; un bugbear accanto a lui può dargli
   il **colpo di grazia** (azione di round completo, Tempra CD 10 + danni o
-  muore), ed è la prima cosa che fa se il Re è coperto.
+  muore), ed è la prima cosa che fa se il Re è coperto. Su Yrsa il colpo di
+  grazia non uccide nemmeno con la Tempra fallita: la lascia a −9 (Scena 6,
+  domanda 5).
 - **Nala**: Ispirare Coraggio tiene l'anello (+2 a colpire e danni, e vale
   come l'ordine del round). Mentre canta può muoversi e attaccare, ma non
   lanciare: *Immagine speculare* su di sé costa il canto di quel round, e
@@ -2506,7 +2564,7 @@ Fauci con e senza il corredo, per le scene 2 e 6. La CA si legge così: con *arm
 
 **A.6 · Il cavaliere di Fauci** · `ARC08-02` §1 · hobgoblin Guerriero 6 / Guardia Nera 4 · GS 10 · CA **23**, pf **95** · Temp +15, Rifl +6, Vol +6 · *lancia da cavaliere +1* +16/+11 (1d8+7, ×3; in carica in sella danni tripli con Carica Devastante) · **Aura di disperazione**: −2 ai TS dei nemici entro 3 m · Punire il Bene 1/giorno (+2 a colpire, +4 danni) · Comando Tattico: +2 morale agli hobgoblin entro 9 m · resta in sella finché Fauci vola.
 
-**A.7 · Bugbear assassino** (×8) · `Bestiario/mostri/bugbear-assassino-ladro5-assassino2-cr9.md` · Ladro 5 / Assassino 2, GS 9 `[CANONE — DM 2026-10-19]` · Iniz +7 · scurovisione 18 m, fiuto · Ascoltare +13, Osservare +13, **Nascondersi +17**, Muoversi Silenziosamente +21 · CA **20**, contatto 13, colto alla sprovvista 20 · pf **58** · Temp +4, Rifl +13, Vol +2 · eludere, schivare prodigioso migliorato (non si fiancheggia) · *morning star perfetta* +11 (1d8+3); giavellotto +9 (1d6+3) · **attacco furtivo +4d6** · Int 18 · **attacco mortale** dopo 3 round di studio, solo su chi è colto alla sprovvista: Tempra **CD 16** (10 + 2 livelli + 4 di Int) o paralizzato 1d6+2 round (il Re lo uccide invece di paralizzarlo: sui pregen sceglie la paralisi `[CANONE — DM 2026-10-22]`) · *foschia occultante* 2/giorno · Otto: **EL 15**.
+**A.7 · Bugbear assassino** (×8) · `Bestiario/mostri/bugbear-assassino-ladro5-assassino2-cr9.md` · Ladro 5 / Assassino 2, GS 9 `[CANONE — DM 2026-10-19]` · Iniz +7 · scurovisione 18 m, fiuto · Ascoltare +13, Osservare +13, **Nascondersi +17**, Muoversi Silenziosamente +21 · CA **20**, contatto 13, colto alla sprovvista 20 · pf **58** · Temp +4, Rifl +13, Vol +2 · eludere, schivare prodigioso migliorato (non si fiancheggia) · *morning star perfetta* +11 (1d8+3); giavellotto +9 (1d6+3) · **attacco furtivo +4d6** · Int 18 · **attacco mortale** dopo 3 round di studio, solo con un furtivo in mischia ed entro 3 round dalla fine dello studio `[SRD: Death Attack]`: Tempra **CD 16** (10 + 2 livelli + 4 di Int) o paralizzato 1d6+2 round (il Re lo uccide invece di paralizzarlo: sui pregen sceglie la paralisi `[CANONE — DM 2026-10-22]`) · *foschia occultante* 2/giorno · Otto: **EL 15**.
 
 **A.8 · Hobgoblin della diversione** (×7: il sergente e sei) · `Bestiario/mostri/hobgoblin-sergente-cr5.md` (il sergente: CA 21, 37 pf, *spada lunga perfetta* +9, 1d8+4, +1 morale agli hobgoblin entro 3 m) e `Bestiario/mostri/hobgoblin-veterans-warrior6-cr5.md` (i sei: GS 5, CA 19, pf **43**, *spada lunga perfetta* +10/+5, 1d8+2) · combattono fino alla morte.
 

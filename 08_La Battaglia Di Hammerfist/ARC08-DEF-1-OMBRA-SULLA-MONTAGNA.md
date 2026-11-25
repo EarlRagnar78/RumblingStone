@@ -608,6 +608,9 @@ prendono il canyon verso il crinale (Scena 4).
 **Obiettivo**: arrivare al torrione, contare l'orda, tornare senza che l'orda
 sappia di essere stata contata.
 
+Giocano i quattro eroi scelti; gli altri due restano alla rocca, e tornano
+sul pendio nella Scena 8.
+
 La ricognizione ha tre fasi, ognuna con la sua mappa. Le prove
 contrapposte le tira il DM, o il giocatore dell'orda se c'è.
 
@@ -1226,7 +1229,7 @@ reparti e i suoi numeri; quella di Dara mai.
 I giocatori possono scambiarsi le squadre prima del primo round; la tabella
 vale se non decidono. Ragnhild al Cancello può Sfidare senza uscire dallo
 sportello: lancia dalla cinta sopra il ponte, il Cancello tira senza di lei
-e prende le tacche come per ogni Sfidare, e sul ponte esce chi vuole
+e non prende tacche, come per ogni Sfidare, e sul ponte esce chi vuole
 unirsi, o nessuno (`ARC08-DEF-2`, Scena 2; domanda 2, in fondo alla scena).
 
 **I due eroi non scelti** li muove il DM (`ARC08-01`, «Se un giocatore non
@@ -1385,10 +1388,18 @@ sfidarlo.
 
 | Round | Oggi (A.4): il sergente, la scorta non entra | Più dura (A.4-bis): il sergente e i due veterani |
 |---|---|---|
-| **1** | sale dal sentiero in F11; i due regolari restano in F12 e H12 e non entrano finché l'eroe non li attacca. Chi ha mosso per arrivare a contatto, eroe o sergente, in questo round fa un attacco solo: dopo una corsa o una carica non si attacca con le due spade | salgono da F11-G12: il sergente in F11, i due veterani davanti a lui in F10 e G10. Chi va dritto su di lui lascia un quadretto che un veterano minaccia: prende il suo attacco d'opportunità `[SRD: Attacks of Opportunity]`, e avendo mosso fa un attacco solo. Le altre strade: fermarsi accanto a un veterano e il round dopo fare il passo di 1,5 m in E10 o G11; Acrobazia CD 15, che ha solo Nala (+9); o abbattere prima il veterano |
+| **1** | sale dal sentiero in F11; i due regolari restano in F12 e H12 e non entrano finché l'eroe non li attacca. Chi ha mosso per arrivare a contatto, eroe o sergente, in questo round fa un attacco solo: dopo una corsa o una carica non si attacca con le due spade | salgono da F11-G12: il sergente in F11, i due veterani davanti a lui in F10 e G10. Chi va dritto su di lui lascia un quadretto che un veterano minaccia: prende il suo attacco d'opportunità `[SRD: Attacks of Opportunity]`, e avendo mosso fa un attacco solo. Le altre strade: fermarsi accanto a un veterano e il round dopo fare il passo di 1,5 m in E10 o G11; Acrobazia CD 15, che ha solo Nala (+9); abbattere prima il veterano; o girare largo (sotto, «La strada larga») |
 | **2** | tutti i suoi colpi, con le due spade, sull'eroe | tutti e tre attaccano in pieno l'eroe che è salito, salvo un veterano con l'arco su Dara, se tira dalla riga 03; i veterani prima su chi minaccia il sergente |
 | **3 e dopo** | se un eroe arriva al tronco (riga 03), il sergente gira per la boscaglia, C10-D11 o I10-J11, occultamento 20%, e lo prende di fianco | lo stesso |
 | **la fuga** | sotto **25 pf**, giù per il sentiero; i regolari lo seguono. Il duello è chiuso | sotto **31 pf**, giù per il sentiero; i veterani restano a coprirlo e combattono fino in fondo. Il duello è chiuso quando l'eroe si stacca da loro |
+
+**La strada larga.** Coi veterani in F10 e G10 il sergente si raggiunge
+anche di lato, senza lasciare un quadretto che un veterano minaccia: da
+ovest per D9, D10, E11, da est per I11, H12, G12. Niente attacco
+d'opportunità `[SRD: Attacks of Opportunity]`; chi ha mosso fa comunque un
+attacco solo, e a chi parte da lontano il giro costa il round. Le prove qui
+sotto non la contano: lì ogni eroe che va sul sergente prende il colpo di un
+veterano. Se il DM la vuole chiudere: domanda 4, in fondo alla scena.
 
 **Cosa dicono le prove.** Prove simulate del 2026-11-25, sesto giro (4.000
 duelli per riga, iniziativa tirata; script ed esito in
@@ -1409,8 +1420,8 @@ Il libretto (§13) manda un eroe solo; le righe a due valgono con la regola
 dell'unirsi, qui sopra. I limiti delle prove: Harbek e Nala sono provati
 senza incantesimi, solo con le armi; mancano l'Ispirare Coraggio di Nala,
 la Presenza Comandante e la Postura di Borin, e sono assenze che pendono
-contro gli eroi; la boscaglia del round 3 e il passo di 1,5 m intorno ai
-veterani non ci sono; al round 1 i veterani hanno solo l'attacco
+contro gli eroi; la boscaglia del round 3, il passo di 1,5 m intorno ai
+veterani e la strada larga non ci sono; al round 1 i veterani hanno solo l'attacco
 d'opportunità, e il sergente colpisce solo chi gli è accanto; Yrsa tira
 +19/+14/+9, senza la Concentrazione Furiosa (`ARC08-DEF-2`, Scena 2,
 domanda 5).
@@ -1504,6 +1515,11 @@ si chiudono sull'ultimo nano. Poi la notte (Scena 9).
 3. `[INFERRED — Nel libretto la palla di fuoco rapida di Ragnhild vale un
    gesto in più?; base: libretto §5, «Ogni round il tuo eroe fa una di
    queste cose»]`
+4. `[INFERRED — Il DM chiude la strada larga da ovest spostando un
+   veterano da F10 a E10?; base: è il default finché il DM non decide: no,
+   i veterani restano in F10 e G10, come nelle prove; MAPPA 1D, la griglia:
+   con un veterano in E10 chi passa da D9 lascia un quadretto minacciato, ma
+   restano il giro da sud, per D12 ed E12, e quello da est]`
 
 ### SCENA 9 — 1E · I presagi funesti
 
@@ -1896,8 +1912,9 @@ LEGENDA · 🏰 la cinta, 12 m · 🟫 il sentiero · 🟩 il pendio, in discesa
   hobgoblin di scorta (F12, H12), che non entrano nel duello finché l'eroe
   non li attacca. Nella versione più dura (A.4-bis, se fra gli eroi c'è
   Borin o Yrsa e il DM l'ha adottata) sono due veterani, in F10 e G10,
-  davanti a lui dal primo round: chi li aggira prende un attacco
-  d'opportunità. La retroguardia si gioca sulla stessa mappa: l'eroe che
+  davanti a lui dal primo round: chi va dritto sul sergente prende un
+  attacco d'opportunità, chi gira largo da ovest (D9, D10, E11) o da est
+  (I11, H12, G12) no (Scena 8, «La strada larga»). La retroguardia si gioca sulla stessa mappa: l'eroe che
   copre la ritirata tiene la riga 03, sul tronco.
 - **La cresta di Grimjaw**: a sud, a 400 m, fuori mappa, oltre la portata di
   qualunque arco.

@@ -2544,7 +2544,7 @@ repo scritto con altre parole.
 ### MS-0226 · 2026-11-25 · Gli scontri dei pregen diventano più duri, e Gorthak lo era già con le regole giuste
 
 - **Data:** 2026-11-25
-- **PR:** —
+- **PR:** #517
 - **ADR:** —
 - **Temi:** arc08 pregen sei eroi ragnhild yrsa gorthak sergente avanzato troll ettin sportello griglia el simulatore inferred card ponte arc07
 - **Origine:** riga del 2026-11-25 «Gli scontri dei pregen sulla griglia, più duri e con schede legali» in `plans/CHANGELOG.md`

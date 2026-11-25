@@ -9,10 +9,14 @@ Modello semplice, 3.5 (Yrsa PF1e):
   tiro, moltiplicatore pieno sui dadi e sui bonus fissi (SRD);
 - chi si muove per arrivare al nemico fa un attacco solo in quel turno, eroe
   o nemico; dal turno dopo, attacco completo (SRD);
-- incantesimi ad area con Riflessi per dimezzare (eludere dove c'e');
+- incantesimi ad area con Riflessi per dimezzare (eludere dove c'e'); l'1
+  naturale fallisce sempre e il 20 naturale riesce sempre (SRD);
 - la rigenerazione dei troll toglie 5 danni non da fuoco a round;
 - il comandante fugge al suo turno, se e' sotto la soglia (libretto §5);
-  Gorthak prima fa un round in Furia (A.1);
+  Gorthak prima fa un round in Furia (A.1), e fugge alla fine di quel round.
+  Se gli eroi lo portano a 0 pf o meno prima, non e' una fuga: il duello ha
+  tre esiti (fugge, a 0 pf o meno, nessuno dei due) e le tabelle li contano
+  in due colonne;
 - la guardia (i veterani del sergente, gli orog di Grimjaw) si aggira: chi
   va accanto al comandante passa per un quadretto che una guardia minaccia,
   prende il suo attacco d'opportunita' e in quel turno fa un attacco solo;
@@ -145,7 +149,10 @@ def colpo(bonus, ca, dadi, fisso, minaccia=20, molt=2, extra=None, fortuna=0):
 
 
 def riflessi(base_dmg, ts, cd, eludere=False):
-    ok = R.randint(1, 20) + ts >= cd
+    """Riflessi per dimezzare. L'1 naturale fallisce sempre e il 20 naturale
+    riesce sempre (SRD 3.5, «Saving Throws», Automatic Failures and Successes)."""
+    t = R.randint(1, 20)
+    ok = t != 1 and (t == 20 or t + ts >= cd)
     if eludere:
         return 0 if ok else base_dmg
     return base_dmg // 2 if ok else base_dmg
@@ -237,7 +244,9 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
         e["_pres"] = 2 if cd and "melee" in e and R.randint(1, 20) + e["vol"] < cd else 0
 
     caduti = set()
-    stato = dict(min_frac=1.0, fuga=None)
+    # esito: "fugge" (la soglia, al suo turno; per Gorthak dopo il round in
+    # Furia) o "abbattuto" (a 0 pf o meno per mano degli eroi)
+    stato = dict(min_frac=1.0, esito=None)
 
     def ferisci(e, x):
         e["pfcur"] -= x
@@ -394,7 +403,7 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
             furia = False
             if n.pf < n.fuga:
                 if not getattr(n, "furia", None):
-                    stato["fuga"] = rnd
+                    stato["esito"] = "fugge"
                     return
                 furia = True
                 stato["furia"] = True
@@ -466,18 +475,23 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
                 if a["pfcur"] > 0:
                     turno_eroe(a, rnd)
                     if boss.giu:
-                        stato["fuga"] = rnd
+                        # a 0 pf o meno prima di poter fuggire: non e' una fuga
+                        stato["esito"] = "abbattuto"
             else:
                 turno_nemico(a, rnd)
-            if stato["fuga"]:
+            if stato["esito"]:
                 break
         for e in eroi:
             stato["min_frac"] = min(stato["min_frac"], max(0, e["pfcur"]) / e["pf"])
-        if stato["fuga"] or stato["furia"]:
-            return dict(fuga=True, round=rnd, min_frac=stato["min_frac"], caduti=len(caduti))
+        if stato["furia"] and not stato["esito"]:
+            # Gorthak ha finito il suo round in Furia ancora in piedi: lascia il
+            # ponte (ARC08-DEF-2, «Sotto i 101 pf»: «È la fuga del libretto»)
+            stato["esito"] = "fugge"
+        if stato["esito"]:
+            return dict(esito=stato["esito"], round=rnd, min_frac=stato["min_frac"], caduti=len(caduti))
         if all(e["pfcur"] <= 0 for e in eroi):
-            return dict(fuga=False, round=rnd, min_frac=0, caduti=len(eroi))
-    return dict(fuga=False, round=round_max, min_frac=stato["min_frac"], caduti=len(caduti))
+            return dict(esito=None, round=rnd, min_frac=0, caduti=len(eroi))
+    return dict(esito=None, round=round_max, min_frac=stato["min_frac"], caduti=len(caduti))
 
 
 # --- i nemici ----------------------------------------------------------
@@ -632,6 +646,29 @@ TABELLA_EL = [
 
 LIMITI = """## Limiti delle prove
 
+- Le due colonne del comandante sono due esiti diversi, e una prova sta in
+  una sola. «Il comandante fugge»: al suo turno e' sotto la soglia e lascia
+  lo scontro in piedi; Gorthak fa prima il suo round in Furia e fugge alla
+  fine di quel round (ARC08-DEF-2, «Sotto i 101 pf»). «A 0 pf o meno»: gli
+  eroi lo portano a 0 pf o sotto prima che possa fuggire, anche durante il
+  round in Furia. «Al primo round» conta tutti e due gli esiti. Fino al
+  2026-11-25 una colonna sola, «il comandante fugge», li sommava.
+- «A 0 pf o meno» non dice che cosa gli succede: il simulatore non distingue
+  chi e' a 0 pf (inabile: un'azione sola a round), chi e' fra -1 e -9
+  (morente: privo di sensi, perde 1 pf a round, col 10% di stabilizzarsi) e
+  chi e' a -10 o meno (morto) (SRD 3.5, «Injury and Death»). Vale anche per
+  «un eroe a terra». Il sergente, Gorthak e Grimjaw non rigenerano e nel
+  modello non si curano: la pozione che la scheda da' a Grimjaw sotto i 60
+  pf non c'e', perche' sotto 89 e' gia' fuggito.
+- I troll dell'ariete rigenerano 5 danni non da fuoco a round, ma un troll a
+  0 pf o meno resta fuori fino alla fine del duello. Per l'SRD 3.5
+  («Regeneration») i danni che non vengono dal fuoco o dall'acido sono per
+  lui non letali: perde i sensi, continua a rigenerare e si rialza. E'
+  un'assenza che pende a favore degli eroi. I troll non sono il comandante,
+  e le due colonne non li contano.
+- I tiri salvezza: l'1 naturale fallisce sempre e il 20 naturale riesce
+  sempre (SRD 3.5, «Saving Throws»). Nel modello li tirano solo i nemici,
+  sui Riflessi contro il fuoco di Ragnhild.
 - Quello che manca agli eroi: la Presenza Comandante di Borin, l'Ispirare
   Coraggio di Nala, la Postura di Borin, gli incantesimi di Harbek e Nala, le
   leve della Sessione 1 contro Gorthak. Sono assenze che pendono contro gli
@@ -678,7 +715,8 @@ LIMITI_PUNTO = """## Come leggere queste cifre
 - Non provati: Agire fuori turno, Ripetere il tiro, Richiamare un
   incantesimo o un uso giornaliero, l'uso Speciale. Ingannare la morte costa
   due punti e nessun eroe li ha.
-- Valgono tutti i limiti di `esito_simulazione.md`."""
+- Valgono tutti i limiti di `esito_simulazione.md`, compreso il senso delle
+  due colonne «il comandante fugge» e «a 0 pf o meno»."""
 
 
 def confronto_punto_eroe(n, seme, eroi_primi):
@@ -691,23 +729,27 @@ def confronto_punto_eroe(n, seme, eroi_primi):
     for titolo, combo in RIGHE_PUNTO:
         fn, giganti = scenari[titolo]
         print(f"## {titolo}\n")
-        print("| eroi | politica | il comandante fugge | diff. | al primo round | diff. | un eroe a terra | diff. |")
-        print("|---|---|---|---|---|---|---|---|")
+        print("| eroi | politica | il comandante fugge | diff. | a 0 pf o meno | diff. "
+              "| al primo round | diff. | un eroe a terra | diff. |")
+        print("|---|---|---|---|---|---|---|---|---|---|")
         for c in combo:
             base = None
             for politica, nome in POLITICHE:
                 PUNTO = politica
                 R.seed(f"{seme}|{titolo}|{'+'.join(c)}")
                 res = [duello(fn, c, giganti=bool(giganti)) for _ in range(n)]
-                fuga = [r for r in res if r["fuga"]]
-                v = (len(fuga) / n, sum(1 for r in fuga if r["round"] == 1) / n,
+                chiusi = [r for r in res if r["esito"]]
+                v = (sum(1 for r in chiusi if r["esito"] == "fugge") / n,
+                     sum(1 for r in chiusi if r["esito"] == "abbattuto") / n,
+                     sum(1 for r in chiusi if r["round"] == 1) / n,
                      sum(1 for r in res if r["caduti"] > 0) / n)
                 if base is None:
                     base = v
-                    print(f"| {' + '.join(c)} | {nome} | {v[0]:.0%} | | {v[1]:.0%} | | {v[2]:.0%} | |")
+                    dd = [""] * len(v)
                 else:
                     dd = [f"{round(x * 100) - round(b * 100):+d}" for x, b in zip(v, base)]
-                    print(f"| {' + '.join(c)} | {nome} | {v[0]:.0%} | {dd[0]} | {v[1]:.0%} | {dd[1]} | {v[2]:.0%} | {dd[2]} |")
+                print(f"| {' + '.join(c)} | {nome} | "
+                      + " | ".join(f"{x:.0%} | {q}" for x, q in zip(v, dd)) + " |")
         print()
     PUNTO = None
     print(LIMITI_PUNTO)
@@ -715,20 +757,23 @@ def confronto_punto_eroe(n, seme, eroi_primi):
 
 def stampa_scenario(titolo, fn, combo, giganti, n, seme):
     print(f"## {titolo}\n")
-    print("| eroi | il comandante fugge | al primo round | round medi alla fuga | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |")
-    print("|---|---|---|---|---|---|")
+    print("| eroi | il comandante fugge | a 0 pf o meno | al primo round | round medi alla fuga "
+          "| round medi a 0 pf | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |")
+    print("|---|---|---|---|---|---|---|---|")
     for c in combo:
         # un seme per riga: correggere uno scenario non sposta le cifre degli altri
         R.seed(f"{seme}|{titolo}|{'+'.join(c)}")
         res = [duello(fn, c, giganti=bool(giganti), ragn_apre=(giganti != "noapre"),
                       dara_srd=(giganti == "dara-srd")) for _ in range(n)]
-        fuga = [r for r in res if r["fuga"]]
-        pf = len(fuga) / n
-        p1 = sum(1 for r in fuga if r["round"] == 1) / n
-        rmed = statistics.mean(r["round"] for r in fuga) if fuga else float("nan")
+        fuga = [r["round"] for r in res if r["esito"] == "fugge"]
+        zero = [r["round"] for r in res if r["esito"] == "abbattuto"]
+        p1 = sum(1 for x in fuga + zero if x == 1) / n
+        rf = f"{statistics.mean(fuga):.1f}" if fuga else "–"
+        rz = f"{statistics.mean(zero):.1f}" if zero else "–"
         terra = sum(1 for r in res if r["caduti"] > 0) / n
         mf = statistics.mean(r["min_frac"] for r in res)
-        print(f"| {' + '.join(c)} | {pf:.0%} | {p1:.0%} | {rmed:.1f} | {terra:.0%} | {mf:.0%} |")
+        print(f"| {' + '.join(c)} | {len(fuga) / n:.0%} | {len(zero) / n:.0%} | {p1:.0%} | {rf} | {rz} "
+              f"| {terra:.0%} | {mf:.0%} |")
     print()
 
 
@@ -755,7 +800,8 @@ LIMITI_RAMPA = """## Come leggere queste cifre
   round 3 i due orog dietro le arrivano addosso sul camminamento.
 - Gli orog non si staccano finche' un nano e' in mischia: l'immagine di Nala
   e l'ordine di Grimjaw contro la palla di fuoco non sono provati.
-- Valgono tutti i limiti di `esito_simulazione.md`."""
+- Valgono tutti i limiti di `esito_simulazione.md`, compreso il senso delle
+  due colonne «il comandante fugge» e «a 0 pf o meno»."""
 
 
 def confronto_rampa_chiusa(n, seme, eroi_primi):

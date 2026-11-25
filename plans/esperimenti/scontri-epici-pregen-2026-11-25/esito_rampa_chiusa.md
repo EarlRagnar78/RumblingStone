@@ -2,29 +2,29 @@
 
 ## Grimjaw e quattro orog, variante: la rampa chiusa, se ne abbatte uno
 
-| eroi | il comandante fugge | al primo round | round medi alla fuga | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |
-|---|---|---|---|---|---|
-| Borin | 0% | 0% | nan | 100% | 0% |
-| Yrsa | 39% | 0% | 4.9 | 64% | 13% |
-| Borin + Yrsa | 75% | 0% | 4.5 | 85% | 4% |
-| Borin + Yrsa + Harbek | 90% | 0% | 4.1 | 83% | 5% |
-| Borin + Yrsa + Ragnhild | 100% | 23% | 1.9 | 0% | 91% |
-| Harbek + Nala | 0% | 0% | nan | 100% | 0% |
-| Harbek + Nala + Ragnhild | 97% | 0% | 4.4 | 60% | 18% |
-| Ragnhild | 53% | 0% | 4.4 | 47% | 21% |
+| eroi | il comandante fugge | a 0 pf o meno | al primo round | round medi alla fuga | round medi a 0 pf | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |
+|---|---|---|---|---|---|---|---|
+| Borin | 0% | 0% | 0% | – | – | 100% | 0% |
+| Yrsa | 36% | 3% | 0% | 4.9 | 4.7 | 64% | 13% |
+| Borin + Yrsa | 67% | 8% | 0% | 4.5 | 4.1 | 85% | 4% |
+| Borin + Yrsa + Harbek | 77% | 12% | 0% | 4.2 | 3.8 | 83% | 5% |
+| Borin + Yrsa + Ragnhild | 84% | 16% | 23% | 1.9 | 1.8 | 0% | 88% |
+| Harbek + Nala | 0% | 0% | 0% | – | – | 100% | 0% |
+| Harbek + Nala + Ragnhild | 94% | 0% | 0% | 4.4 | – | 64% | 17% |
+| Ragnhild | 52% | 0% | 0% | 4.4 | – | 48% | 21% |
 
 ## Grimjaw e quattro orog, la rampa chiusa: la chiudono i due orog davanti
 
-| eroi | il comandante fugge | al primo round | round medi alla fuga | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |
-|---|---|---|---|---|---|
-| Borin | 0% | 0% | nan | 100% | 0% |
-| Yrsa | 40% | 0% | 4.9 | 63% | 13% |
-| Borin + Yrsa | 73% | 0% | 4.5 | 87% | 4% |
-| Borin + Yrsa + Harbek | 89% | 0% | 4.1 | 84% | 4% |
-| Borin + Yrsa + Ragnhild | 100% | 24% | 1.9 | 0% | 90% |
-| Harbek + Nala | 0% | 0% | nan | 100% | 0% |
-| Harbek + Nala + Ragnhild | 97% | 0% | 4.4 | 61% | 19% |
-| Ragnhild | 53% | 0% | 4.4 | 47% | 21% |
+| eroi | il comandante fugge | a 0 pf o meno | al primo round | round medi alla fuga | round medi a 0 pf | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |
+|---|---|---|---|---|---|---|---|
+| Borin | 0% | 0% | 0% | – | – | 100% | 0% |
+| Yrsa | 37% | 3% | 0% | 4.9 | 4.6 | 63% | 13% |
+| Borin + Yrsa | 65% | 8% | 0% | 4.5 | 4.2 | 87% | 4% |
+| Borin + Yrsa + Harbek | 77% | 12% | 0% | 4.2 | 3.8 | 84% | 4% |
+| Borin + Yrsa + Ragnhild | 84% | 16% | 24% | 1.9 | 1.9 | 0% | 88% |
+| Harbek + Nala | 0% | 0% | 0% | – | – | 100% | 0% |
+| Harbek + Nala + Ragnhild | 94% | 0% | 0% | 4.4 | – | 64% | 17% |
+| Ragnhild | 50% | 0% | 0% | 4.4 | – | 50% | 21% |
 
 ## Come leggere queste cifre
 
@@ -43,4 +43,5 @@
   round 3 i due orog dietro le arrivano addosso sul camminamento.
 - Gli orog non si staccano finche' un nano e' in mischia: l'immagine di Nala
   e l'ordine di Grimjaw contro la palla di fuoco non sono provati.
-- Valgono tutti i limiti di `esito_simulazione.md`.
+- Valgono tutti i limiti di `esito_simulazione.md`, compreso il senso delle
+  due colonne «il comandante fugge» e «a 0 pf o meno».

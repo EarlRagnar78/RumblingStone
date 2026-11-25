@@ -1,40 +1,74 @@
 #!/usr/bin/env python3
 """Simula i duelli dei pregen di ARC-08 (DEF-1 Scena 8, DEF-2 Scene 2 e 4),
-con le schede di oggi e con l'archetipo Avanzato. Quarto giro, 2026-11-25.
+con le schede di oggi e con l'archetipo Avanzato. Quinto giro, 2026-11-25.
 
-Modello semplice, 3.5 (Yrsa PF1e com'e' la sua scheda):
+Modello semplice, 3.5 (Yrsa PF1e):
+- iniziativa tirata, d20 + il bonus della scheda, un turno per creatura;
+  nessuno e' colto alla sprovvista, perche' la battaglia e' gia' in corso;
 - attacchi con d20 contro CA, minaccia di critico confermata con un secondo
   tiro, moltiplicatore pieno sui dadi e sui bonus fissi (SRD);
+- chi si muove per arrivare al nemico fa un attacco solo in quel turno, eroe
+  o nemico; dal turno dopo, attacco completo (SRD);
 - incantesimi ad area con Riflessi per dimezzare (eludere dove c'e');
 - la rigenerazione dei troll toglie 5 danni non da fuoco a round;
-- il comandante fugge sotto meta' dei pf (libretto §5); Gorthak prima fa un
-  round in Furia (A.1);
-- la guardia (i veterani del sergente, gli orog di Grimjaw): per arrivare al
-  comandante l'eroe passa accanto a una guardia, prende il suo attacco
-  d'opportunita' e fa un attacco solo in quel round (SRD); poi attacco completo;
-- il ponte di Gorthak (MAPPA 2A): un eroe esce a round dallo sportello, prende
-  l'attacco d'opportunita' di Gorthak e fa un attacco solo; il primo va in
-  BG75, il secondo resta in BG74, e il troll non ha attacchi d'opportunita';
-  Gorthak divide i colpi: il primo randello su Borin se c'e', l'altro su
-  chi e' piu' ferito fra gli altri;
-- la Sfida di Yrsa vale quando lei minaccia il bersaglio (Ordine del Drago);
-- la Presenza intimidatoria di Grimjaw: Volontà CD 19, o -2 a colpire;
-- Ragnhild, se apre, lancia prima che esca un nano.
-Limiti: gli eroi agiscono sempre per primi; niente movimento oltre lo
-sportello e la guardia, niente copertura; la CA di Gorthak in Furia non conta
-(fugge alla fine di quel round); gli incantesimi di Harbek e Nala non ci sono.
+- il comandante fugge al suo turno, se e' sotto la soglia (libretto §5);
+  Gorthak prima fa un round in Furia (A.1);
+- la guardia (i veterani del sergente, gli orog di Grimjaw) si aggira: chi
+  va accanto al comandante passa per un quadretto che una guardia minaccia,
+  prende il suo attacco d'opportunita' e in quel turno fa un attacco solo;
+  Nala lo evita con Acrobazia +9 contro CD 15. Nella variante «rampa chiusa»
+  una guardia va abbattuta prima;
+- il ponte di Gorthak (MAPPA 2A): un eroe esce a round dallo sportello,
+  prende l'attacco d'opportunita' di Gorthak (Nala lo evita con Acrobazia) e
+  fa un attacco solo; il primo va in BG75, dove arrivano tutti e due i
+  troll, il secondo in BG74, dove ne arriva uno; i troll entrano al round 2;
+- Gorthak (ettin, SRD: Superior Two-Weapon Fighting): Forza piena su tutti e
+  due i randelli, 2d6+10 e 2d6+10; la scheda di ARC08-01 da' 2d6+5 al
+  secondo, e c'e' uno scenario con quella lettura. La testa sinistra da' +2
+  ai danni del primo colpo a segno del round (scheda). Divide i colpi: il
+  primo randello su Borin se c'e', l'altro sul piu' ferito degli altri;
+- Grimjaw: al round 1 non attacca; dal suo turno del round 2 e' in Furia
+  Comandante, con +26 pf; resistenza al fuoco 10 (armatura demoniaca,
+  ARC08-01). La soglia di fuga resta 89 pf, meta' dei 178 della scheda: i
+  26 pf della Furia non la spostano. Se al suo turno e' gia' sotto 89, fugge
+  senza entrare in Furia;
+- Yrsa: Concentrazione Furiosa (Furious Focus, PF1e) vale solo con un'arma
+  a due mani, e Yrsa porta lo scudo: Attacco Poderoso +19/+14/+9, 1d10+18.
+  La scheda di ARC08-01 scrive +23/+14/+9: e' una domanda al DM. La Sfida
+  (+18 ai danni, +4 a colpire agli alleati, -2 alla CA del bersaglio contro
+  gli altri: Sfida Pressante) vale da quando Yrsa e' accanto al bersaglio;
+- Dara: Tiro Rapido +17/+17/+12/+7; il nemico prescelto (+4 contro i
+  giganti) e' contato a colpire e ai danni come sulla scheda di campagna;
+  l'SRD 3.5 lo da' solo ai danni;
+- Ragnhild lancia dalla cinta. Se apre, i nani ritardano finche' non ha
+  lanciato le due palle di fuoco (ritardata 13d6 CD 26, rapida 10d6 CD 22).
+  Poi, coi nani in mischia, due raggi roventi e i dardi incantati; senza
+  nani in mischia, una palla di fuoco a round (10d6, CD 22);
+- chi tira o lancia dalla cinta non e' raggiunto in mischia. Gorthak, se non
+  ha un nano accanto, lancia un giavellotto a round su Ragnhild (+10 al
+  secondo incremento, 1d8+9); Dara a 48 m e' fuori gittata. Grimjaw, se non
+  ha un nano accanto, tira con l'arco dal round 2, e dal round 3 due orog
+  arrivano su chi lancia dal camminamento.
+Limiti: niente movimento oltre lo sportello e la guardia; tutte le guardie
+vive colpiscono l'eroe piu' ferito fra quelli in mischia (il caso peggiore);
+la CA di Gorthak in Furia non conta (fugge alla fine di quel round); gli
+incantesimi di Harbek e Nala non ci sono; le leve della Sessione 1 (+2 e +4
+a colpire contro Gorthak) non ci sono; i giganti e gli archi dei veterani
+non tirano su chi sta sulla cinta.
 
 Numeri: ARC08-01, ARC08-02 §3, Appendici A di ARC08-DEF-1 e ARC08-DEF-2,
-Bestiario. L'archetipo semplice Avanzato di PF1e, regole rapide
-(+2 a tutti i tiri e ai danni, +4 CA, +2 pf per DV).
+Bestiario. L'archetipo semplice Avanzato di PF1e: +2 a tutti i tiri e ai
+danni, +2 pf per DV; la CA e' quella ricostruita con la regola intera.
 
-Uso: python3 simula_scontri_epici.py [--n 4000] [--seme 7]
+Uso: python3 simula_scontri_epici.py [--n 4000] [--seme 7] [--eroi-primi]
 """
 import argparse
+import math
 import random
 import statistics
 
 R = random.Random(7)
+EROI_PRIMI = False  # --eroi-primi: il limite dei primi quattro giri, per confronto
 
 
 def d(n, f):
@@ -64,30 +98,36 @@ def riflessi(base_dmg, ts, cd, eludere=False):
 
 
 class Nemico:
-    def __init__(self, nome, pf, ca, attacchi, rifl, rigen=0, fuga=None,
+    def __init__(self, nome, pf, ca, attacchi, rifl, iniz, rigen=0, fuga=None,
                  entra=1, primo=None, ruolo="scorta"):
         self.nome, self.pfmax, self.pf, self.ca = nome, pf, pf, ca
         self.attacchi, self.rifl, self.rigen = attacchi, rifl, rigen
+        self.iniz = iniz
         self.fuga, self.entra, self.primo, self.ruolo = fuga, entra, primo, ruolo
         self.giu = False
+        self.nonfuoco = 0
+        self.resfuoco = 0
+        self.arrivato = False
 
     def danno(self, n, fuoco=False):
+        if fuoco:
+            n = max(0, n - self.resfuoco)
         self.pf -= n
         if self.rigen and not fuoco:
-            self.nonfuoco = getattr(self, "nonfuoco", 0) + n
+            self.nonfuoco += n
         if self.pf <= 0:
             self.giu = True
 
 
 # --- i pregen (ARC08-02 §3, ARC08-01) ---------------------------------
 EROI = {
-    "Borin": dict(vol=8, pf=142, ca=25, melee=[(21, (1, 8), 9, 20, 3), (16, (1, 8), 9, 20, 3), (11, (1, 8), 9, 20, 3)], devastante=3),
-    "Yrsa": dict(vol=10, pf=114, ca=32, melee=[(23, (1, 10), 18, 20, 3), (14, (1, 10), 18, 20, 3), (9, (1, 10), 18, 20, 3)], sfida=18),
-    "Nala": dict(vol=9, pf=90, ca=20, melee=[(13, (1, 6), 3, 15, 2), (8, (1, 6), 3, 15, 2)]),
-    "Harbek": dict(vol=16, pf=114, ca=22, melee=[(13, (1, 8), 5, 20, 3), (8, (1, 8), 5, 20, 3)]),
-    # Dara dalla torre: Tiro Rapido +17/+17/+12/+7, +4 contro i giganti, -2 per la distanza
-    "Dara": dict(vol=9, pf=102, ca=21, arco=True),
-    "Ragnhild": dict(vol=14, pf=84, ca=18, maga=True),
+    "Borin": dict(iniz=1, vol=8, pf=142, ca=25, melee=[(21, (1, 8), 9, 20, 3), (16, (1, 8), 9, 20, 3), (11, (1, 8), 9, 20, 3)], devastante=3),
+    # Attacco Poderoso -4/+8 a una mano, senza Concentrazione Furiosa (lo scudo)
+    "Yrsa": dict(iniz=5, vol=10, pf=114, ca=32, melee=[(19, (1, 10), 18, 20, 3), (14, (1, 10), 18, 20, 3), (9, (1, 10), 18, 20, 3)], sfida=18),
+    "Nala": dict(iniz=4, vol=9, pf=90, ca=20, melee=[(13, (1, 6), 3, 15, 2), (8, (1, 6), 3, 15, 2)], acrobazia=9),
+    "Harbek": dict(iniz=1, vol=16, pf=114, ca=22, melee=[(13, (1, 8), 5, 20, 3), (8, (1, 8), 5, 20, 3)]),
+    "Dara": dict(iniz=4, vol=9, pf=102, ca=21, arco=True),
+    "Ragnhild": dict(iniz=6, vol=14, pf=84, ca=18, maga=True),
 }
 
 
@@ -98,217 +138,304 @@ def eroe(nome):
 
 
 def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True):
-    """ragn_apre: Ragnhild apre con le due palle di fuoco prima che un nano sia
-    in mischia; se False, usa i raggi roventi."""
     nemici = nemici_fn()
     boss = [n for n in nemici if n.ruolo == "boss"][0]
     eroi = [eroe(n) for n in eroi_nomi]
     mischia = [e for e in eroi if "melee" in e]
+    lontani = [e for e in eroi if "melee" not in e]
     for i, e in enumerate(mischia):
         e["_entra"] = i + 1
     yrsa = [e for e in eroi if e["nome"] == "Yrsa"]
     sportello = getattr(boss, "sportello", False)
+    dist = getattr(boss, "distanza_arco", 0)
 
-    def sfida(rnd):
-        # la Sfida chiede che Yrsa minacci il bersaglio: sul ponte vale dal round
-        # in cui esce dallo sportello, e dietro una guardia da quando l'ha aggirata
-        if not yrsa or yrsa[0]["pfcur"] <= 0:
-            return False
-        if sportello:
-            return rnd >= yrsa[0]["_entra"]
-        # dietro la guardia: finche' Yrsa non gli e' arrivata accanto, niente
-        if getattr(boss, "guardato", False) and not yrsa[0].get("_passato"):
-            return False
-        return True
-    # la Presenza intimidatoria (Grimjaw): Volontà, o -2 a colpire per il duello
+    # --- iniziativa: d20 + bonus; a pari, il bonus, poi la sorte
+    for e in eroi:
+        e["_t"] = (R.randint(1, 20) + e["iniz"] + (100 if EROI_PRIMI else 0), e["iniz"], R.random())
+    for n in nemici:
+        n.t = (R.randint(1, 20) + n.iniz, n.iniz, R.random())
+    maga = next((e for e in eroi if e.get("maga")), None)
+    if maga and ragn_apre:
+        # i nani ritardano finche' Ragnhild non ha lanciato (SRD: Delay)
+        k = 0
+        for e in mischia:
+            if e["_t"] > maga["_t"]:
+                k += 1
+                e["_t"] = (maga["_t"][0], maga["_t"][1], maga["_t"][2] - k * 1e-9)
+    turni = sorted([("e", e) for e in eroi] + [("n", n) for n in nemici],
+                   key=lambda x: x[1]["_t"] if x[0] == "e" else x[1].t, reverse=True)
+
+    def sfida():
+        return bool(yrsa) and yrsa[0]["pfcur"] > 0 and yrsa[0].get("_sul_boss", False)
+
+    def scorte_vive(rnd):
+        return [n for n in nemici if n.ruolo == "scorta" and not n.giu and n.entra <= rnd]
+
+    def in_mischia():
+        return [e for e in mischia if e["pfcur"] > 0 and e.get("_mischia")]
+
+    def acrobazia(e):
+        return "acrobazia" in e and R.randint(1, 20) + e["acrobazia"] >= 15
+
+    # la Presenza intimidatoria (Grimjaw): entro 9 m, Volonta', o -2 a colpire
     for e in eroi:
         cd = getattr(boss, "presenza", 0)
-        e["_pres"] = 2 if cd and R.randint(1, 20) + e["vol"] < cd else 0
-    # Ragnhild, se apre, lancia prima che esca un nano: va per prima
-    ordine = sorted(eroi, key=lambda e: 0 if e.get("maga") else 1)
-    min_frac = 1.0
+        e["_pres"] = 2 if cd and "melee" in e and R.randint(1, 20) + e["vol"] < cd else 0
+
     caduti = set()
-    for rnd in range(1, round_max + 1):
-        # --- gli eroi (si assume che agiscano per primi: iniziativa di gruppo)
-        for e in ordine:
-            if e["pfcur"] <= 0:
-                continue
-            vivi = [n for n in nemici if not n.giu and n.entra <= rnd]
-            if not vivi:
+    stato = dict(min_frac=1.0, fuga=None)
+
+    def ferisci(e, x):
+        e["pfcur"] -= x
+        if e["pfcur"] <= 0:
+            caduti.add(e["nome"])
+
+    def attacca_eroe(e, b, colpi):
+        su_boss = b is boss
+        altro = e["nome"] != "Yrsa"
+        bonus_sfida = 4 if (sfida() and altro and su_boss) else 0
+        ca_b = b.ca - (2 if (sfida() and altro and su_boss) else 0)
+        for i, (bon, dadi, fisso, mn, ml) in enumerate(colpi):
+            if b.giu:
                 break
-            if e.get("maga"):
-                if rnd == 1 and ragn_apre:
-                    for n in vivi:  # ritardata 13d6 CD 26 + rapida 10d6 CD 22
-                        n.danno(riflessi(d(13, 6), n.rifl, 26, getattr(n, "eludere", False)), fuoco=True)
-                        n.danno(riflessi(d(10, 6), n.rifl, 22, getattr(n, "eludere", False)), fuoco=True)
-                else:
-                    # tre raggi roventi, 4d6 a raggio, contatto a distanza +8
-                    bersaglio = boss if not boss.giu else vivi[0]
-                    for _ in range(3):
-                        bersaglio.danno(colpo(8, getattr(bersaglio, "contatto", 11), (4, 6), 0), fuoco=True)
-                continue
-            if e.get("arco"):
-                b = boss if not boss.giu and boss.entra <= rnd else vivi[0]
-                gb = 4 if giganti else 0
-                for bon in (17, 17, 12, 7):
-                    b.danno(colpo(bon + gb - 2, b.ca, (1, 8), 6 + gb, 20, 3))
-                continue
-            # mischia: tutti sul boss se e' entrato, se no sul primo
-            b = boss if not boss.giu and boss.entra <= rnd else vivi[0]
-            # la guardia: per arrivare al comandante si passa accanto a una
-            # guardia viva: il suo attacco d'opportunita', e un attacco solo
-            colpi = e["melee"]
-            muro = getattr(b, "muro", 0)
-            if muro and b is boss:
-                # variante: la rampa e' chiusa, e per arrivare al comandante si
-                # abbattono prima `muro` guardie
-                scorte = [n for n in vivi if n.ruolo == "scorta"]
-                if len(scorte) > len([n for n in nemici if n.ruolo == "scorta"]) - muro:
-                    b = scorte[0]
-            elif getattr(b, "guardato", False) and not e.get("_passato"):
-                scorte = [n for n in vivi if n.ruolo == "scorta"]
-                if scorte:
-                    (bon2, dadi2, f2, mn2, ml2, _t) = scorte[0].attacchi[0]
-                    e["pfcur"] -= colpo(bon2, e["ca"], dadi2, f2, mn2, ml2)
-                    if e["pfcur"] <= 0:
-                        caduti.add(e["nome"])
-                        continue
-                    colpi = colpi[:1]
-                e["_passato"] = True
-            bonus_sfida = 4 if (sfida(rnd) and e["nome"] != "Yrsa" and b is boss) else 0
-            ca_b = b.ca - (2 if (sfida(rnd) and e["nome"] != "Yrsa" and b is boss) else 0)
-            # lo sportello (MAPPA 2A, BG73): gli eroi in mischia escono uno per
-            # round e solo due stanno accanto a Gorthak (BG74, BG75); chi esce
-            # muove (un attacco solo) e prende l'attacco d'opportunita' di Gorthak
-            # (portata 3 m, senza Riflessi in Combattimento: uno a round)
-            if getattr(b, "sportello", False):
+            extra = None
+            if e.get("devastante") and i == 0 and e.get("_dev", 0) < e["devastante"]:
+                e["_dev"] = e.get("_dev", 0) + 1
+                extra = (4, 6)
+            f = fisso + (e["sfida"] if (e.get("sfida") and su_boss) else 0)
+            b.danno(colpo(bon + bonus_sfida - e["_pres"], ca_b, dadi, f, mn, ml, extra))
+
+    def turno_eroe(e, rnd):
+        vivi = [n for n in nemici if not n.giu and n.entra <= rnd]
+        if not vivi:
+            return
+        guardie = scorte_vive(rnd) if getattr(boss, "guardato", False) else []
+        cop = 4 if guardie else 0  # la guardia da' copertura a chi sta dietro
+        if e.get("maga"):
+            if ragn_apre and not e.get("_aperto") and not in_mischia():
+                e["_aperto"] = True
+                for n in vivi:
+                    n.danno(riflessi(d(13, 6), n.rifl, 26, getattr(n, "eludere", False)), fuoco=True)
+                    n.danno(riflessi(d(10, 6), n.rifl, 22, getattr(n, "eludere", False)), fuoco=True)
+            elif not mischia:
+                for n in vivi:  # nessun nano in mischia: palla di fuoco, 10d6 CD 22
+                    n.danno(riflessi(d(10, 6), n.rifl, 22, getattr(n, "eludere", False)), fuoco=True)
+            elif e.get("_raggi", 0) < 2:
+                e["_raggi"] = e.get("_raggi", 0) + 1
+                for _ in range(3):  # raggio rovente: tre raggi, 4d6, contatto a distanza +8
+                    boss.danno(colpo(8, getattr(boss, "contatto", 11) + cop, (4, 6), 0), fuoco=True)
+            elif e.get("_dardi", 0) < 3:
+                e["_dardi"] = e.get("_dardi", 0) + 1
+                boss.danno(30 if e["_dardi"] == 1 else d(5, 4) + 5)
+            return
+        if e.get("arco"):
+            gb = 4 if giganti else 0
+            for bon in (17, 17, 12, 7):
+                boss.danno(colpo(bon + gb - dist, boss.ca + cop, (1, 8), 6 + gb, 20, 3))
+            return
+        colpi = e["melee"]
+        if sportello:
+            if not e.get("_mischia"):
                 if rnd < e["_entra"]:
-                    continue
-                if rnd == e["_entra"]:
-                    colpi = colpi[:1]
-                    # il primo va in BG75, il secondo resta in BG74: nessun
-                    # artiglio di troll (al round 1 hanno le mani sul tronco)
-                    aoo = [boss.attacchi[0]] if not boss.giu else []
-                    for (bon2, dadi2, f2, mn2, ml2, _t) in aoo:
-                        e["pfcur"] -= colpo(bon2, e["ca"], dadi2, f2, mn2, ml2)
+                    return
+                # esce: l'attacco d'opportunita' di Gorthak (uno a round), un attacco solo
+                e["_mischia"] = e["_sul_boss"] = True
+                e["_quad"] = 75 if not any(x.get("_quad") == 75 and x["pfcur"] > 0 for x in mischia) else 74
+                if not acrobazia(e):
+                    (bon2, dadi2, f2, mn2, ml2, _t) = boss.attacchi[0]
+                    ferisci(e, colpo(bon2, e["ca"], dadi2, f2, mn2, ml2))
                     if e["pfcur"] <= 0:
-                        caduti.add(e["nome"])
-                        continue
-            for i, (bon, dadi, fisso, mn, ml) in enumerate(colpi):
-                if b.giu:
-                    break
-                extra = None
-                if e.get("devastante") and i == 0 and e.get("_dev", 0) < e["devastante"]:
-                    e["_dev"] = e.get("_dev", 0) + 1
-                    extra = (4, 6)
-                f = fisso
-                if e.get("sfida") and b is boss:
-                    f = fisso + e["sfida"]  # la Sfida (+18) vale solo sul bersaglio sfidato, il boss
-                b.danno(colpo(bon + bonus_sfida - e["_pres"], ca_b, dadi, f, mn, ml, extra))
-        in_furia = False
-        if boss.pf < boss.fuga:
-            # Gorthak: sotto meta' un round in Furia, poi fugge (A.1; ARC08-02)
-            if boss.giu or not getattr(boss, "furia", None):
-                return dict(fuga=True, round=rnd, min_frac=min_frac, caduti=len(caduti))
-            in_furia = True
-        # --- rigenerazione
-        for n in nemici:
-            if n.rigen and getattr(n, "nonfuoco", 0) > 0:
-                r = min(n.rigen, n.nonfuoco)
-                n.nonfuoco -= r
-                n.pf += r
-                if n.pf > 0:
-                    n.giu = False
-        # --- i nemici
-        bersagli = [e for e in mischia if e["pfcur"] > 0 and e["_entra"] <= rnd]
-        if not bersagli:
-            bersagli = [e for e in eroi if e["pfcur"] > 0 and not e.get("arco") and not e.get("maga")]
-        if not bersagli:
-            bersagli = [e for e in eroi if e["pfcur"] > 0]
-        if not bersagli:
-            return dict(fuga=False, round=rnd, min_frac=0, caduti=len(eroi))
-        for n in [x for x in nemici if not x.giu and x.entra <= rnd]:
-            if n.ruolo == "ariete" and rnd == 1:
+                        return
+                colpi = colpi[:1]
+            attacca_eroe(e, boss, colpi)
+            return
+        tutte = [n for n in nemici if n.ruolo == "scorta"]
+        muro = getattr(boss, "muro", 0)
+        if muro and guardie and len(guardie) > len(tutte) - muro:
+            # la rampa chiusa: prima si abbatte una guardia
+            if not e.get("_mischia"):
+                e["_mischia"] = True
+                colpi = colpi[:1]
+            attacca_eroe(e, guardie[0], colpi)
+            return
+        if not e.get("_sul_boss"):
+            if guardie:
+                if not acrobazia(e):
+                    (bon2, dadi2, f2, mn2, ml2, _t) = guardie[0].attacchi[0]
+                    ferisci(e, colpo(bon2, e["ca"], dadi2, f2, mn2, ml2))
+                    if e["pfcur"] <= 0:
+                        return
+                colpi = colpi[:1]
+            elif not (muro and e.get("_mischia")):
+                colpi = colpi[:1]  # si avvicina: un attacco solo
+            e["_mischia"] = e["_sul_boss"] = True
+        attacca_eroe(e, boss, colpi)
+
+    def serie(n, seq, bersagli, sinistra=False):
+        """seq: lista di attacchi; bersagli: lista parallela di eroi."""
+        artigli = 0
+        primo = sinistra
+        for (bon, dadi, fisso, mn, ml, tag), tt in zip(seq, bersagli):
+            if tt["pfcur"] <= 0:
                 continue
-            vivi_b = [e for e in bersagli if e["pfcur"] > 0]
-            if not vivi_b:
+            ca_tt = tt["ca"] - (2 if (tt["nome"] == "Yrsa" and n is not boss and sfida()) else 0)
+            x = colpo(bon, ca_tt, dadi, fisso, mn, ml)
+            if x and primo:
+                x += 2  # la testa sinistra
+                primo = False
+            if x and tag == "artiglio":
+                artigli += 1
+            ferisci(tt, x)
+        return artigli
+
+    def piu_ferito(lista):
+        return min(lista, key=lambda e: e["pfcur"] / e["pf"])
+
+    def turno_nemico(n, rnd):
+        if n.giu or n.entra > rnd:
+            return
+        if n.rigen and n.nonfuoco > 0:
+            r = min(n.rigen, n.nonfuoco)
+            n.nonfuoco -= r
+            n.pf += r
+        bers = in_mischia()
+        vivi_lontani = [e for e in lontani if e["pfcur"] > 0]
+        if n is boss:
+            furia = False
+            if n.pf < n.fuga:
+                if not getattr(n, "furia", None):
+                    stato["fuga"] = rnd
+                    return
+                furia = True
+                stato["furia"] = True
+            if getattr(n, "furia_pf", 0) and rnd >= 2 and not getattr(n, "in_furia", False):
+                n.in_furia = True
+                n.pf += n.furia_pf
+            if not bers:
+                guardie = scorte_vive(rnd) if getattr(n, "guardato", False) else []
+                vivi_m = [e for e in mischia if e["pfcur"] > 0]
+                if sportello or guardie or not vivi_m:
+                    # resta dov'e': tira su chi lancia dalla cinta
+                    tiro = getattr(n, "tiro", None)
+                    if tiro and rnd >= getattr(n, "tiro_dal", 1):
+                        cand = [e for e in vivi_lontani if e.get("maga") or not sportello]
+                        if cand:
+                            serie(n, tiro, [cand[0]] * len(tiro))
+                    return
+                t = vivi_m[0]  # va lui dall'eroe: un attacco solo
+                t["_mischia"] = t["_sul_boss"] = True
+                serie(n, n.attacchi[:1], [t])
+                return
+            seq = n.furia if furia else (n.primo if (n.primo is not None and rnd == 1) else n.attacchi)
+            if sportello and len(bers) >= 2 and len(seq) == 6:
+                primo_b = next((e for e in bers if e["nome"] == "Borin"), piu_ferito(bers))
+                secondo_b = piu_ferito([e for e in bers if e is not primo_b])
+                serie(n, seq, [primo_b] * 3 + [secondo_b] * 3, sinistra=getattr(n, "sinistra", False))
+            else:
+                serie(n, seq, [piu_ferito(bers)] * len(seq), sinistra=getattr(n, "sinistra", False))
+            return
+        if n.ruolo == "ariete":
+            if rnd == 1:
+                return
+            if sportello:
+                quad = (74, 75) if n.nome == "troll0" else (75,)
+                bers = [e for e in bers if e.get("_quad") in quad]
+            if not bers:
+                return
+            t = piu_ferito(bers)
+            if serie(n, n.attacchi, [t] * len(n.attacchi)) == 2 and t["pfcur"] > 0:
+                ferisci(t, d(*n.sbranare[0]) + n.sbranare[1])
+            return
+        # la scorta
+        if not bers:
+            vivi_m = [e for e in mischia if e["pfcur"] > 0]
+            if getattr(n, "avanza", False) and vivi_m:
+                t = vivi_m[0]  # sale sull'eroe: un attacco solo
+                t["_mischia"] = True
+                n.arrivato = True
+                serie(n, n.attacchi[:1], [t])
+            elif getattr(n, "caccia", False) and not vivi_m and vivi_lontani and rnd >= 3:
+                t = vivi_lontani[0]
+                seq = n.attacchi if n.arrivato else n.attacchi[:1]
+                n.arrivato = True
+                serie(n, seq, [t] * len(seq))
+            return
+        seq = n.primo if (n.primo is not None and rnd == 1) else n.attacchi
+        if getattr(n, "avanza", False) and not n.arrivato:
+            n.arrivato = True
+            if getattr(boss, "guardato", False) is False:
+                seq = seq[:1]
+        serie(n, seq, [piu_ferito(bers)] * len(seq))
+
+    for rnd in range(1, round_max + 1):
+        stato["furia"] = False
+        for tipo, a in turni:
+            if tipo == "e":
+                if a["pfcur"] > 0:
+                    turno_eroe(a, rnd)
+                    if boss.giu:
+                        stato["fuga"] = rnd
+            else:
+                turno_nemico(a, rnd)
+            if stato["fuga"]:
                 break
-            # il piu' ferito, in proporzione (la testa destra; i sicari)
-            t = min(vivi_b, key=lambda e: e["pfcur"] / e["pf"])
-            seq = n.primo if (n.primo is not None and rnd == n.entra) else n.attacchi
-            if n is boss and in_furia:
-                seq = boss.furia
-            colpi_artiglio = 0
-            bersaglio_di = [t] * len(seq)
-            if n is boss and sportello and len(vivi_b) >= 2 and len(seq) == 6:
-                # sei colpi divisi fra due: il primo randello su Borin se c'e'
-                # (la testa sinistra), l'altro sul piu' ferito degli altri
-                primo_b = next((e for e in vivi_b if e["nome"] == "Borin"), t)
-                altri = [e for e in vivi_b if e is not primo_b]
-                secondo_b = min(altri, key=lambda e: e["pfcur"] / e["pf"])
-                bersaglio_di = [primo_b] * 3 + [secondo_b] * 3
-            for (bon, dadi, fisso, mn, ml, tag), tt in zip(seq, bersaglio_di):
-                ca_tt = tt["ca"] - (2 if (tt["nome"] == "Yrsa" and n is not boss and sfida(rnd)) else 0)
-                x = colpo(bon, ca_tt, dadi, fisso, mn, ml)
-                if x and tag == "artiglio":
-                    colpi_artiglio += 1
-                tt["pfcur"] -= x
-                if tt["pfcur"] <= 0:
-                    caduti.add(tt["nome"])
-            if colpi_artiglio == 2 and getattr(n, "sbranare", None):
-                t["pfcur"] -= d(*n.sbranare[0]) + n.sbranare[1]
-            if t["pfcur"] <= 0:
-                caduti.add(t["nome"])
         for e in eroi:
-            min_frac = min(min_frac, max(0, e["pfcur"]) / e["pf"])
-        if in_furia:
-            return dict(fuga=True, round=rnd, min_frac=min_frac, caduti=len(caduti))
+            stato["min_frac"] = min(stato["min_frac"], max(0, e["pfcur"]) / e["pf"])
+        if stato["fuga"] or stato["furia"]:
+            return dict(fuga=True, round=rnd, min_frac=stato["min_frac"], caduti=len(caduti))
         if all(e["pfcur"] <= 0 for e in eroi):
             return dict(fuga=False, round=rnd, min_frac=0, caduti=len(eroi))
-    return dict(fuga=False, round=round_max, min_frac=min_frac, caduti=len(caduti))
+    return dict(fuga=False, round=round_max, min_frac=stato["min_frac"], caduti=len(caduti))
 
 
 # --- i nemici ----------------------------------------------------------
 A = lambda b, dadi, f, mn=20, ml=2, tag="": (b, dadi, f, mn, ml, tag)
 
 
-def sergente(avanzato=False, veterani=0, entra=2, guardia=0):
+def sergente(avanzato=False, veterani=0, entra=2, guardia=False):
     def fn():
         k = 2 if avanzato else 0
-        s = Nemico("sergente", 62 if avanzato else 50, 25 if avanzato else 21,
+        # A.4: CA 21, Riflessi +7; A.4-bis: CA 23 (contatto 12, sprovvista 22), Riflessi +9
+        s = Nemico("sergente", 62 if avanzato else 50, 23 if avanzato else 21,
                    [A(9 + k, (1, 8), 6 + k, 19), A(4 + k, (1, 8), 6 + k, 19),
                     A(9 + k, (1, 8), 3 + k, 19), A(4 + k, (1, 8), 3 + k, 19)],
-                   rifl=6 + k, fuga=(62 if avanzato else 50) / 2, ruolo="boss")
-        s.guardato = bool(guardia)
+                   rifl=7 + k, iniz=4 + k, fuga=(62 if avanzato else 50) / 2, ruolo="boss")
+        s.guardato = guardia
+        s.contatto = 12
         out = [s]
         for i in range(veterani):  # hobgoblin veterani, Bestiario, GS 5
-            out.append(Nemico(f"veterano{i}", 43, 19, [A(10, (1, 8), 2, 19), A(5, (1, 8), 2, 19)],
-                              rifl=4, entra=entra))
+            v = Nemico(f"veterano{i}", 43, 19, [A(10, (1, 8), 2, 19), A(5, (1, 8), 2, 19)],
+                       rifl=4, iniz=1, entra=entra)
+            v.avanza = True
+            out.append(v)
         return out
     return fn
 
 
-def gorthak(avanzato=False, troll_avanzati=False, sportello=True):
+def gorthak(avanzato=False, troll_avanzati=False, sportello=True, scheda=False):
     def fn():
         k = 2 if avanzato else 0
         pf = 232 if avanzato else 202
-        g = Nemico("Gorthak", pf, 29 if avanzato else 25,
+        # SRD, ettin: Forza piena sui due randelli; scheda di ARC08-01: meta' sul secondo
+        f2, ff2 = (5, 6) if scheda else (10, 12)
+        g = Nemico("Gorthak", pf, 28 if avanzato else 25,
                    [A(21 + k, (2, 6), 10 + k), A(16 + k, (2, 6), 10 + k), A(11 + k, (2, 6), 10 + k),
-                    A(21 + k, (2, 6), 5 + k), A(16 + k, (2, 6), 5 + k), A(11 + k, (2, 6), 5 + k)],
-                   rifl=7 + k, fuga=pf / 2, ruolo="boss")
-        # niente carica al round 1: e' gia' adiacente a chi esce in BG74, e la
-        # carica vuole almeno 3 m di movimento; agisce dopo l'eroe, attacco completo
-        g.contatto = 15 if avanzato else 11
-        # Furia (+4 For): +2 a colpire, +2 ai danni del braccio forte, +1 dell'altro
+                    A(21 + k, (2, 6), f2 + k), A(16 + k, (2, 6), f2 + k), A(11 + k, (2, 6), f2 + k)],
+                   rifl=7 + k, iniz=6 + k, fuga=pf / 2, ruolo="boss")
+        g.contatto = 12 if avanzato else 11
+        # Furia (+4 For): +2 a colpire, +2 ai danni
         g.furia = [A(23 + k, (2, 6), 12 + k), A(18 + k, (2, 6), 12 + k), A(13 + k, (2, 6), 12 + k),
-                   A(23 + k, (2, 6), 6 + k), A(18 + k, (2, 6), 6 + k), A(13 + k, (2, 6), 6 + k)]
+                   A(23 + k, (2, 6), ff2 + k), A(18 + k, (2, 6), ff2 + k), A(13 + k, (2, 6), ff2 + k)]
+        g.sinistra = True
         g.sportello = sportello
+        g.distanza_arco = 2  # Dara dalla Torre Ovest, secondo incremento
+        g.tiro = [A(10 + k, (1, 8), 9 + k)]  # giavellotto, secondo incremento
         out = [g]
         t = 2 if troll_avanzati else 0
         for i in range(2):
             tr = Nemico(f"troll{i}", 125 if troll_avanzati else 105, 20 if troll_avanzati else 16,
                         [A(13 + t, (1, 6), 7 + t, tag="artiglio"), A(13 + t, (1, 6), 7 + t, tag="artiglio"),
-                         A(8 + t, (1, 6), 3 + t)], rifl=5 + t, rigen=5, ruolo="ariete")
+                         A(8 + t, (1, 6), 3 + t)], rifl=5 + t, iniz=2 + t, rigen=5, ruolo="ariete")
             tr.sbranare = ((2, 6), 10 + t)
             out.append(tr)
         return out
@@ -317,43 +444,70 @@ def gorthak(avanzato=False, troll_avanzati=False, sportello=True):
 
 def grimjaw(orog_avanzati=False, muro=0):
     def fn():
-        # dal round 2 in Furia Comandante: +24/+19/+14 (1d10+11, 17-20); round 1 non attacca
+        # round 1: Tattico Superiore e Presenza, nessun attacco; dal round 2 Furia
+        # Comandante: +24/+19/+14 (1d10+11, 17-20) e +26 pf
         g = Nemico("Grimjaw", 178, 26, [A(24, (1, 10), 11, 17), A(19, (1, 10), 11, 17), A(14, (1, 10), 11, 17)],
-                   rifl=8, fuga=89, ruolo="boss", entra=1,
-                   primo=[])  # round 1: Tattico Superiore e Presenza, nessun attacco
-        g.guardato = True  # la guardia: per arrivare a lui si passa accanto a un orog
+                   rifl=8, iniz=5, fuga=89, ruolo="boss", primo=[])
+        g.guardato = True
         g.muro = muro
         g.presenza = 19
+        g.contatto = 12
+        g.resfuoco = 10  # Armatura Completa Demoniaca +2 (ARC08-01)
+        g.furia_pf = 26
+        g.tiro = [A(15, (1, 8), 7, 20, 3), A(10, (1, 8), 7, 20, 3), A(5, (1, 8), 7, 20, 3)]
+        g.tiro_dal = 2
         out = [g]
         o = 2 if orog_avanzati else 0
         for i in range(4):
-            # Attacco Poderoso -3, Furia Comandante +2/+2, Tattico Superiore +2 a colpire
-            out.append(Nemico(f"orog{i}", 75 if orog_avanzati else 63, 23 if orog_avanzati else 19,
-                              [A(14 + o, (1, 12), 18 + o, 20, 3), A(9 + o, (1, 12), 18 + o, 20, 3)],
-                              rifl=2 + o, primo=[A(12 + o, (1, 12), 16 + o, 20, 3), A(7 + o, (1, 12), 16 + o, 20, 3)]))
+            # Attacco Poderoso -3; round 1 Tattico Superiore +2 a colpire; dal 2 anche Furia +2/+2
+            og = Nemico(f"orog{i}", 75 if orog_avanzati else 63, 23 if orog_avanzati else 19,
+                        [A(14 + o, (1, 12), 18 + o, 20, 3), A(9 + o, (1, 12), 18 + o, 20, 3)],
+                        rifl=2 + o, iniz=4 + o,
+                        primo=[A(12 + o, (1, 12), 16 + o, 20, 3), A(7 + o, (1, 12), 16 + o, 20, 3)])
+            og.caccia = i < 2
+            out.append(og)
         return out
     return fn
 
 
+BY = [["Borin"], ["Yrsa"], ["Nala"], ["Harbek"]]
 SCENARI = [
-    ("Sergente, oggi (solo: la scorta non entra)", sergente(), [["Borin"], ["Yrsa"], ["Nala"], ["Harbek"]], False),
-    ("Sergente, versione piu' dura: Avanzato + 2 veterani in muro dal round 1", sergente(True, 2, 1, 2), [["Borin"], ["Yrsa"], ["Nala"], ["Harbek"], ["Borin", "Yrsa"]], False),
-    ("Sergente, variante scartata A: Avanzato + 4 veterani dal round 2", sergente(True, 4), [["Borin"], ["Yrsa"], ["Nala"], ["Harbek"]], False),
-    ("Sergente, variante scartata B: Avanzato + 4 veterani in muro dal round 1", sergente(True, 4, 1, 3), [["Borin"], ["Yrsa"], ["Nala"], ["Harbek"], ["Borin", "Yrsa"]], False),
-    ("Gorthak, oggi, senza lo sportello (riferimento del primo giro)", gorthak(sportello=False), [["Borin"], ["Borin", "Yrsa"], ["Borin", "Dara"], ["Borin", "Yrsa", "Dara"], ["Borin", "Yrsa", "Ragnhild"]], True),
-    ("Gorthak, oggi, con lo sportello", gorthak(), [["Borin"], ["Borin", "Yrsa"], ["Yrsa", "Borin"], ["Borin", "Dara"], ["Borin", "Yrsa", "Dara"], ["Borin", "Yrsa", "Ragnhild"], ["Harbek", "Nala"], ["Harbek", "Nala", "Dara"]], True),
-    ("Gorthak, versione piu' dura (Avanzato), con lo sportello", gorthak(True), [["Borin"], ["Borin", "Yrsa"], ["Yrsa", "Borin"], ["Borin", "Dara"], ["Borin", "Yrsa", "Dara"], ["Borin", "Yrsa", "Ragnhild"]], True),
-    ("Gorthak Avanzato con lo sportello, Ragnhild senza l'apertura", gorthak(True), [["Borin", "Yrsa", "Ragnhild"]], "noapre"),
-    ("Gorthak e troll tutti Avanzati, con lo sportello (scartato)", gorthak(True, True), [["Borin", "Yrsa"], ["Borin", "Dara"]], True),
-    ("Grimjaw e quattro orog, oggi", grimjaw(), [["Borin"], ["Borin", "Yrsa"], ["Borin", "Yrsa", "Harbek"], ["Borin", "Yrsa", "Ragnhild"]], False),
-    ("Grimjaw e quattro orog, variante: la rampa chiusa, se ne abbatte uno", grimjaw(muro=1), [["Borin"], ["Borin", "Yrsa"], ["Borin", "Yrsa", "Harbek"], ["Borin", "Yrsa", "Ragnhild"]], False),
-    ("Grimjaw, orog Avanzati (scartato)", grimjaw(True), [["Borin"], ["Borin", "Yrsa"], ["Borin", "Yrsa", "Harbek"], ["Borin", "Yrsa", "Ragnhild"]], False),
+    ("Sergente, oggi (A.4; la scorta non entra)", sergente(), BY, False),
+    ("Sergente, versione piu' dura: Avanzato + 2 veterani di guardia, si aggirano, dal round 1",
+     sergente(True, 2, 1, True), BY + [["Borin", "Yrsa"], ["Harbek", "Dara"], ["Nala", "Dara"]], False),
+    ("Sergente, variante scartata A: Avanzato + 4 veterani dal round 2", sergente(True, 4), BY, False),
+    ("Sergente, variante scartata B: Avanzato + 4 veterani di guardia, si aggirano, dal round 1",
+     sergente(True, 4, 1, True), BY + [["Borin", "Yrsa"]], False),
+    ("Gorthak, oggi, senza lo sportello (riferimento del primo giro)", gorthak(sportello=False),
+     [["Borin"], ["Borin", "Yrsa"], ["Borin", "Dara"], ["Borin", "Yrsa", "Dara"], ["Borin", "Yrsa", "Ragnhild"]], True),
+    ("Gorthak, oggi, con lo sportello", gorthak(),
+     [["Borin"], ["Yrsa"], ["Borin", "Yrsa"], ["Yrsa", "Borin"], ["Borin", "Dara"], ["Borin", "Yrsa", "Dara"],
+      ["Yrsa", "Borin", "Dara"], ["Borin", "Yrsa", "Ragnhild"], ["Yrsa", "Borin", "Ragnhild"],
+      ["Harbek", "Nala"], ["Harbek", "Nala", "Dara"], ["Harbek", "Nala", "Ragnhild"],
+      ["Ragnhild", "Dara"], ["Ragnhild"], ["Dara"]], True),
+    ("Gorthak, oggi, con lo sportello, il secondo randello come sulla scheda (2d6+5)", gorthak(scheda=True),
+     [["Borin"], ["Borin", "Yrsa"], ["Yrsa", "Borin"], ["Borin", "Dara"], ["Borin", "Yrsa", "Dara"],
+      ["Borin", "Yrsa", "Ragnhild"], ["Yrsa", "Borin", "Ragnhild"]], True),
+    ("Gorthak Avanzato (scartato), con lo sportello", gorthak(True),
+     [["Borin"], ["Borin", "Yrsa"], ["Yrsa", "Borin"], ["Borin", "Dara"], ["Borin", "Yrsa", "Dara"],
+      ["Borin", "Yrsa", "Ragnhild"], ["Yrsa", "Borin", "Ragnhild"]], True),
+    ("Gorthak, oggi, con lo sportello, Ragnhild senza l'apertura", gorthak(),
+     [["Borin", "Yrsa", "Ragnhild"], ["Yrsa", "Borin", "Ragnhild"]], "noapre"),
+    ("Gorthak e troll tutti Avanzati, con lo sportello (scartato)", gorthak(True, True), [["Borin", "Yrsa"], ["Yrsa", "Borin"]], True),
+    ("Grimjaw e quattro orog, oggi: la guardia si aggira", grimjaw(),
+     [["Borin"], ["Yrsa"], ["Borin", "Yrsa"], ["Borin", "Yrsa", "Harbek"], ["Borin", "Yrsa", "Ragnhild"],
+      ["Harbek", "Nala"], ["Harbek", "Nala", "Ragnhild"], ["Ragnhild"]], False),
+    ("Grimjaw e quattro orog, variante: la rampa chiusa, se ne abbatte uno", grimjaw(muro=1),
+     [["Borin"], ["Borin", "Yrsa"], ["Borin", "Yrsa", "Harbek"], ["Borin", "Yrsa", "Ragnhild"],
+      ["Harbek", "Nala", "Ragnhild"]], False),
+    ("Grimjaw, la guardia si aggira, Ragnhild senza l'apertura", grimjaw(), [["Borin", "Yrsa", "Ragnhild"]], "noapre"),
+    ("Grimjaw, orog Avanzati (scartato)", grimjaw(True),
+     [["Borin"], ["Borin", "Yrsa"], ["Borin", "Yrsa", "Harbek"], ["Borin", "Yrsa", "Ragnhild"]], False),
 ]
 
 
 def el(gs):
     """EL della DMG 3.5: 2 log2(somma di 2^(GS/2)), come scripts/suggest_encounter.py."""
-    import math
     return 2 * math.log2(sum(2 ** (g / 2) for g in gs))
 
 
@@ -365,8 +519,10 @@ TABELLA_EL = [
     ("Gorthak GS 12 + 2 troll GS 6 / Gorthak Avanzato GS 13 + 2 troll GS 6", [12, 6, 6], [13, 6, 6]),
     ("Grimjaw GS 14 + 4 orog GS 7", [14, 7, 7, 7, 7], None),
     ("il soffio: Fauci GS 15 + cavaliere GS 10", [15, 10], None),
-    ("bugbear: 8 x GS 9 (+ 7 hobgoblin GS 5)", [9] * 8, None),
+    ("bugbear: 8 x GS 9", [9] * 8, None),
     ("bugbear con la diversione: 8 x GS 9 + 7 x GS 5", [9] * 8 + [5] * 7, None),
+    ("bugbear, diversione e 30 orchi GS 2 tutti insieme / con 15 orchi", [9] * 8 + [5] * 7 + [2] * 30, [9] * 8 + [5] * 7 + [2] * 15),
+    ("bugbear e 30 orchi, a diversione caduta", [9] * 8 + [2] * 30, None),
 ]
 
 
@@ -374,9 +530,13 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=4000)
     ap.add_argument("--seme", type=int, default=7)
+    ap.add_argument("--eroi-primi", action="store_true",
+                    help="gli eroi agiscono sempre prima dei nemici (confronto col quarto giro)")
     a = ap.parse_args()
+    global EROI_PRIMI
+    EROI_PRIMI = a.eroi_primi
     R.seed(a.seme)
-    print(f"# {a.n} duelli per riga, seme {a.seme}\n")
+    print(f"# {a.n} duelli per riga, seme {a.seme}" + (", gli eroi agiscono per primi" if a.eroi_primi else "") + "\n")
     print("## EL (DMG 3.5)\n")
     print("| scontro | EL prima | EL dopo |")
     print("|---|---|---|")
@@ -385,16 +545,17 @@ def main():
     print()
     for titolo, fn, combo, giganti in SCENARI:
         print(f"## {titolo}\n")
-        print("| eroi | il comandante fugge | round medi alla fuga | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |")
-        print("|---|---|---|---|---|")
+        print("| eroi | il comandante fugge | al primo round | round medi alla fuga | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |")
+        print("|---|---|---|---|---|---|")
         for c in combo:
             res = [duello(fn, c, giganti=bool(giganti), ragn_apre=(giganti != "noapre")) for _ in range(a.n)]
             fuga = [r for r in res if r["fuga"]]
-            pf = sum(1 for r in res if r["fuga"]) / a.n
+            pf = len(fuga) / a.n
+            p1 = sum(1 for r in fuga if r["round"] == 1) / a.n
             rmed = statistics.mean(r["round"] for r in fuga) if fuga else float("nan")
             terra = sum(1 for r in res if r["caduti"] > 0) / a.n
             mf = statistics.mean(r["min_frac"] for r in res)
-            print(f"| {' + '.join(c)} | {pf:.0%} | {rmed:.1f} | {terra:.0%} | {mf:.0%} |")
+            print(f"| {' + '.join(c)} | {pf:.0%} | {p1:.0%} | {rmed:.1f} | {terra:.0%} | {mf:.0%} |")
         print()
 
 

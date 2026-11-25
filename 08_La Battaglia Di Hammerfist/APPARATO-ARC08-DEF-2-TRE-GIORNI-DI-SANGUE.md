@@ -31,16 +31,19 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | Scena | Prova | CD |
 |---|---|---:|
 | SCENA 2 | con un Riflessi per la barriera | 22 |
+| SCENA 2 | Gorthak tira Volontà | 15 |
 | SCENA 2 | corda annodata contro il muro (Scalare | 0 |
 | SCENA 2 | pregen entro 90 m tirano Volontà | 25 |
 | SCENA 2 | 14d4 acido, Riflessi | 29 |
 | SCENA 2 | colpo infuocato (12d6, Riflessi | 21 |
 | SCENA 2 | magie mirato (d20 + 10 contro | 18 |
-| SCENA 2 | vuole uscire senza provocare tira Acrobazia | 15 |
+| SCENA 2 | Uscire senza provocare vuole Acrobazia | 15 |
+| SCENA 2 | Nala lo evita con Acrobazia | 15 |
 | SCENA 3 | Torre Ovest, la vede crescere (Osservare | 15 |
 | SCENA 4 | 9 m o lo sente (Ascoltare | 15 |
 | SCENA 4 | alla guardia) e Presenza intimidatoria (Volontà | 19 |
 | SCENA 4 | e prendono 12d6, metà col Riflessi | 22 |
+| SCENA 4 | allora tirano Volontà | 15 |
 | SCENA 4 | Coro della Montagna (terremoto sulla roccia | 22 |
 | SCENA 6 | se è sulle Mura, tira Riflessi | 29 |
 | SCENA 6 | Volontà | 25 |
@@ -51,7 +54,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 6 | Fauci tira Volontà +22 contro | 15 |
 | SCENA 6 | Palla di fuoco ritardata (13d6, Riflessi | 26 |
 | SCENA 6 | palla di fuoco rapida (10d6, Riflessi | 22 |
-| SCENA 6 | e contro la disintegrazione Tempra +24 | 23 |
+| SCENA 6 | passa, Fauci tira Tempra +24 contro | 23 |
 | SCENA 6 | contro la Presenza terrificante (Volontà | 25 |
 | SCENA 6 | contro | 29 |
 | SCENA 6 | una cura qualunque o con Guarire | 15 |
@@ -60,6 +63,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 7 | suo bonus Combattere (Appendice A.11) contro | 28 |
 | SCENA 7 | statua dietro di sé (una Forza | 20 |
 | SCENA 8 | salire su S5 (Dara, Scalare | 10 |
+| SCENA 8 | di un veterano (Acrobazia +11 contro | 25 |
 | SCENA 8 | Tempra | 16 |
 | SCENA 8 | con un Riflessi per la barriera | 22 |
 | SCENA 8 | azione di round completo, Tempra | 10 |

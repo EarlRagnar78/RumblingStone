@@ -90,17 +90,17 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-21 | P16 · REGOLE | Skullcrusher Vecchio come al duello del 20/11 (scelte di Jfs del 21/11 su card)… | ✅ tre conosciuti mancanti (7/5/3/2 dell'SRD), oggetti dal tesoro (CA 43, contatto 13, TS +24/+21/+23), *immagine speculare* al corno, passate lunghe, gittate;… |
 | 2026-11-21 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALIT… | Corredo dei draghi, scelte del DM sulle card del 21/11. **Fauci di Palude** «A… | In PR. Quota del tesoro triplo addosso: Fauci 0% → 47%, Tyrgarun 0% → 24%, Ozyrrandion 27% → 88%, Regiarix 0% → 36%, drago di Vaereth 0% → 19%. CA: Fauci 29 →… |
 | 2026-11-21 | P16 · REGOLE | Due incoerenze trovate dal thread dei draghi (richiesta del coordinatore del 21… | ✅ due file, nessun numero di scheda cambiato |
+| 2026-11-20 | STANDARD-STAMPA | ADR-0122, S4: l'appendice della regione nel booklet della serata di ARC-07 (ric… | S4 pagine di regione/PNG 0/3 → 9/3; pagine 132 → 141; note di lavoro in stampa nella serata 0 (prima di togliere l'apparato dal conto ne contava 6); parole del… |
 | 2026-11-20 | STATO-E-ORDINE | ADR-0146 (proposta), le skill di prosa si caricano per vincolo (richiesta di Jf… | ✅ baseline su un campione di cinque thread: zero invocazioni di skill su 188 chiamate; l'hook si attiva su circa 200 modifiche su 2.944 ai file di gioco degli… |
 | 2026-11-20 | STANDARD-STAMPA | ADR-0122, S2: le chiavi d'area (richiesta di Jfs del 19/11 di vedere subito chi… | Booklet della serata: S2 codici del testo che sono anche sulla mappa 0/0 → 7/7, codici solo sulla mappa 0; pagine 132 → 134; `misura_stampa --check` nei tetti… |
 | 2026-11-20 | STANDARD-STAMPA | Via i rimandi tecnici dai booklet di ARC-07 (richiesta di Jfs del 20/11 per la… | escono ADR-0057, ADR-0018, «ADR-10 interno», «decisione Q21 del DM», «Q29» (due volte), «B4 §3/§4» e i numeri di riga dei vecchi file P5/P6; la regex sul testo… |
 | 2026-11-20 | SISTEMI-DI-GIOCO-PLUGIN | Caratteristiche dal .pcg: la razza dell'orco regular 4 e l'ira dentro i numeri… | Segnalazione del thread del volume: il .pcg salva le caratteristiche prima della razza. Misurate le 13 schede del Bestiario che citano un .pcg contro main 2af9… |
 | 2026-11-20 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: le sei schede di `Bestiario/mostri/` che avevano il co… | `verifica_scheda.py` senza violazioni sulle sei schede; schede senza corredo leggibile 6 → 0; `genera_attributi.py --check` verde (65 blocchi). Resta al thread… |
-| 2026-11-19 | STANDARD-STAMPA | Le etichette dei pilastri non si stampano (card di Jfs del 19/11 nel thread del… | ✅ etichette nelle stampe di ARC-07 da 245 a 0 nei booklet (serata 22, notte e alba 41, resurrezione 86, ritorno alla Forgia 25, Terros 31, mille anni 40) e da… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 324 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 224 voci, l'ultima MS-0224 del 2026-11-25 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 225 voci, l'ultima MS-0225 del 2026-11-25 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

@@ -105,6 +105,19 @@ class TestLaFunzione(unittest.TestCase):
                          "della Terra (si aggancia al Cerchio")
 
 
+    def test_la_marca_a_capo_non_spezza_la_voce_d_elenco(self):
+        """DEF-4, «Il martello di Balvar a Zeth»: la marca apriva la riga e
+        chiudeva la frase. Tolta, il punto restava a colonna 0 e nel booklet
+        la voce si spezzava in «. È una regola…» (rilievo di Codex sulla #507)."""
+        md = ("- **Il martello.** L'ha incisa nel torrione ovest\n"
+              "  `[CANONE — DM 2026-11-21]`. È una regola della casa, e il bonus\n"
+              "  più vicino è quello di un'arma anatema.\n")
+        html = md_to_html(md, REPO)
+        self.assertIn("torrione ovest.", html)
+        self.assertNotIn("<p>.", html)
+        self.assertEqual(html.count("<li>"), 1)
+
+
 class TestSulCorpusVero(unittest.TestCase):
     def setUp(self):
         self.fonti = fonti_stampate()

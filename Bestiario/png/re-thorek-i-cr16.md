@@ -10,7 +10,7 @@
 
 ## Summary
 
-**Il re che i PG incontrano mille anni prima**, nella battaglia fino all'alba contro l'orda di Zog'tar e Skullcrusher il Nero. Nano di 182 anni, armatura di mithral +2, e l'ascia **Frostcleaver** — antenata di Aegis Fang, dello stesso disegno.
+**Il re che i PG incontrano mille anni prima**, nella battaglia fino all'alba contro l'orda di Zog'tar e Skullcrusher il Nero. Nano di 182 anni, armatura di mithral +2, e l'ascia **Frostcleaver**, distinta da Aegis Fang: sono due asce della famiglia reale, e Aegis Fang in quella notte sta alla panca di Thorgrim (DEF-2; card del DM del 2026-11-25).
 
 
 Questa voce esiste perché `build_monster_catalog.py` e `suggest_encounter.py` scansionano `Bestiario/` per popolare il pool degli incontri: senza, un PNG con statistiche scritte non è raggiungibile da nessuno strumento. Ogni modifica va fatta nel file d'arco.

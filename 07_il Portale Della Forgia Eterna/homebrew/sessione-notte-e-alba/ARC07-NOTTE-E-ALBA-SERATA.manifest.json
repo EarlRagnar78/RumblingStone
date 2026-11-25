@@ -207,6 +207,13 @@
       "quando": "accanto alla giocatrice di Hella",
       "ruolo": "riferimento",
       "ruolo_nota": "scelta di Jfs del 19/11 (card): in fondo come galleria dei PNG degli AP; si usa a ogni round, come una scheda"
+    },
+    {
+      "title": "Appendice: le terre di Hammerfist, ≈372 DR",
+      "file": "98-APPENDICE-TERRE-DI-HAMMERFIST.md",
+      "tag": "dm",
+      "ruolo": "riferimento",
+      "quando": "quando serve la regione: la storia, i luoghi, le fazioni, chi conta, che cosa dice la gente, che cosa resterà nel 1372"
     }
   ],
   "fregio": "../../../docs/assets/fregi/fregio-arco-07-forgia.svg",

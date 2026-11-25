@@ -348,7 +348,7 @@ che escano (Scena 2).
 
 Le cifre sono volte su cento; i round sono la media di quell'esito.
 
-| Chi esce, in ordine | fugge | a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra (0 pf o meno) |
+| Chi esce, in ordine | lui fugge | lui a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra (0 pf o meno) |
 |---|---|---|---|---|---|
 | Borin da solo | 7 | mai | 3,2 | — | sempre |
 | Yrsa da sola | 60 | 22 | 3,0 | 3,0 | una volta su due (51) |
@@ -1450,7 +1450,7 @@ possono unirsi come per Gorthak, lasciando il loro settore alle tacche.
 è uno scontro per Borin e Yrsa insieme, e anche così Grimjaw fugge due
 volte su tre (67), va a 0 pf o meno 8 volte su cento, e uno dei due va a
 terra 85; nelle
-prove nessuno cade solo se Ragnhild apre col fuoco dalla cinta prima che i
+prove nessun nano cade solo se Ragnhild apre col fuoco dalla cinta prima che i
 due salgano. Borin da solo cade sempre, e Grimjaw non scende mai a 89;
 lo stesso Harbek e Nala senza Ragnhild. Yrsa da sola lo fa fuggire 36 volte
 su cento, lo porta a 0 pf o meno 3, e cade 64. La via per chi non vuole il duello è scritta qui sotto: nessuno lo
@@ -1482,7 +1482,7 @@ sotto 89 e lascia la rampa; «a 0 pf o meno», gli eroi lo portano a 0 pf o
 sotto prima. Che cosa gli succede lì non è deciso (§0-bis, «Le due colonne
 del comandante»). Le cifre sono volte su cento.
 
-| Chi lo sfida | fugge | a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra |
+| Chi lo sfida | lui fugge | lui a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra |
 |---|---|---|---|---|---|
 | Borin da solo | mai | mai | — | — | sempre |
 | Yrsa da sola | 36 | 3 | 4,9 | 4,7 | 64 |
@@ -1495,7 +1495,7 @@ del comandante»). Le cifre sono volte su cento.
 
 Yrsa da sola, Harbek e Nala senza Ragnhild, e Ragnhild da sola vengono da
 `esito_rampa_chiusa.md` (opzione `--rampa-chiusa` dello script, 2026-11-25);
-le altre righe da `esito_simulazione.md`. Ragnhild non sale: la rampa chiusa
+le altre righe da `esito_simulazione.md`. Le righe che tornano uguali nella tabella della rampa aperta vengono da un altro lancio dello script, e uno o due punti di differenza sono rumore. Ragnhild non sale: la rampa chiusa
 non la riguarda, e la sua riga è quella della rampa aperta. Lo stesso file
 prova la regola dell'orog che si stacca (la cima chiusa dai due davanti): le
 cifre restano queste entro due punti, e Borin e Yrsa fanno 65, 8 e 87.
@@ -1503,7 +1503,7 @@ cifre restano queste entro due punti, e Borin e Yrsa fanno 65, 8 e 87.
 **Scartato dal DM: la rampa aperta**, dove la guardia si aggirava. La
 tabella resta solo per confronto: al tavolo si usa quella qui sopra.
 
-| Chi lo sfida, a rampa aperta | fugge | a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra |
+| Chi lo sfida, a rampa aperta | lui fugge | lui a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra |
 |---|---|---|---|---|---|
 | Borin da solo | 3 | mai | 2,3 | — | 98 |
 | Yrsa da sola | 56 | 5 | 2,9 | 2,7 | 43 |

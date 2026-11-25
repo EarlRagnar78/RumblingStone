@@ -1430,10 +1430,10 @@ dell'arco di Dara (330 m). Guarda, e ricorda chi ha visto.
   solo per l'eroe che sfida. Dara tira dalla riga 03 senza lasciare i
   balestrieri, e rinuncia al suo gesto del round. Round per round, nelle
   due versioni: la tabella subito dopo questo elenco.
-- **Se il sergente va a terra nel duello** (un critico di Borin con Colpo
-  Devastante lo porta da sopra i 25 pf a sotto zero; nella versione più
-  dura, da sopra i 31). Sotto zero è a terra e morente, e muore solo a −10
-  `[SRD: Injury and Death]`: vale come la fuga, il suo +1
+- **Se il sergente va a terra nel duello** (i colpi di Borin o di Yrsa in un round lo portano da sopra i 25 pf a 0 pf o
+  sotto prima del suo turno; nella versione più dura, da sopra i 31). A 0 pf
+  è inabile, sotto zero è a terra e morente, e muore solo a −10
+  `[SRD: Injury and Death]`: in tutti e due i casi vale come la fuga, il suo +1
   se ne va, e non lo si interroga, perché le file degli hobgoblin si
   chiudono sul corpo. Il morale non si muove. Nelle prove non è raro: il
   sergente fugge solo al suo turno, e prima di quel turno Borin lo porta a
@@ -1495,7 +1495,7 @@ sono volte su cento, e i round sono la media di quell'esito. Fino al
 
 **Oggi (A.4)**: il sergente, la scorta non entra.
 
-| Chi lo sfida | fugge | a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra |
+| Chi lo sfida | lui fugge | lui a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra |
 |---|---|---|---|---|---|
 | Borin | 57 | 43 | 1,7 | 1,3 | mai |
 | Yrsa | 59 | 41 | 1,1 | 1,1 | mai |
@@ -1507,7 +1507,7 @@ nove su dieci con Yrsa (90), contando i due esiti.
 
 **Più dura (A.4-bis)**: il sergente e i due veterani.
 
-| Chi lo sfida | fugge | a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra |
+| Chi lo sfida | lui fugge | lui a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra |
 |---|---|---|---|---|---|
 | Borin | 42 | 58 | 2,3 | 2,0 | mai |
 | Yrsa | 86 | 14 | 1,6 | 1,8 | mai |

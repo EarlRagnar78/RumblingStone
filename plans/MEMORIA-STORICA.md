@@ -2543,7 +2543,7 @@ repo scritto con altre parole.
 ### MS-0226 · 2026-11-25 · I file di gioco prendono i nomi della Cannath Vale: Lhesper, Lhespenbog, Rethmar
 
 - **Data:** 2026-11-25
-- **PR:** —
+- **PR:** #522
 - **ADR:** ADR-0053 (solo il rimando ai file rinominati), ADR-0007 §Regioni
 - **Temi:** canone nomi localizzazione cannath-vale arc09 lhesper rethmar glossario decisione-dm rinomina
 - **Origine:** riga del 2026-11-25 «I nomi della Cannath Vale nei file di gioco» in `plans/CHANGELOG.md`

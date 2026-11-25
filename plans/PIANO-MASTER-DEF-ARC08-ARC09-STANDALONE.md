@@ -173,7 +173,7 @@ dichiara una, lo scrivo.
 | `ARC09-DEF-04-TORNEO-GIORNI-1-2` | P2B · Tordek | 2-3 in tutto | ~11 · ~2.400 | PARTE1, PARTE2, Otto Porte e Orbe, cheat sheet, `HOOKS-Tordek` |
 | `ARC09-DEF-05-TORNEO-FINALE-E-INVASIONE` | P2B · Tordek | *(stesse)* | ~10 · ~2.400 | PARTE3, DAY3-CITY-SIEGE, le tre subquest, conseguenze ed echi |
 | `ARC09-DEF-06-PALIO-DI-CHANNATHGATE` | P2D | 3-4 | 15 · 3.066 | P2D, allegati, booklet in `homebrew/` |
-| `ARC09-DEF-07-RHEST` | Rhest | 2-3 | 8 · 1.144 | P2-RHEST fasi 1-4, nido, esiti |
+| `ARC09-DEF-07-LHESPER` | Lhesper | 2-3 | 8 · 1.144 | P2-LHESPER fasi 1-4, nido, esiti |
 | `ARC09-DEF-08-STARSONG-HILL` | P3 · alleanza | 1-2 | 3 · 352 | Starsong testo, mappe, statblocchi |
 | `ARC09-DEF-09-GHOSTLORD` | P3 · alleanza | 2 | 3 · 412 | Ghostlord testo, mappe, statblocchi, `HOOKS-Ghostlord` |
 | `ARC09-DEF-10-SABOTAGGIO-E-MISSIONI` | P3 · secondarie | 1 per missione | 6 · 597 | Sabotaggio (con Upscale CR12), Missioni brevi |

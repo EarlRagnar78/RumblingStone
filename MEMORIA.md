@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-25 | STATO-E-ORDINE | ADR-0142, aggiunta: la voce `**/rendered-*/` in `.claudeignore` (scelta di Jfs… | 🟡 file tracciati coperti 881 → 1.136; `rg -n -M 500 --ignore-file .claudeignore`, `main` → ramo: byte da −0,4% (Skullcrusher) a −2,7% (Belkram), file da −0,9%… |
 | 2026-11-25 | STATO-E-ORDINE | ADR-0146, correzione: la configurazione Claude arriva anche a livello utente. D… | 🟡 sessione headless nuova in `/home/user` nello stesso container: con la configurazione utente scattano UserPromptSubmit e PreToolUse su Bash,… |
 | 2026-11-25 | PIATTAFORMA-DI-SVILUPPO | P4 e P7, promozioni da testing a stable (D8, card del DM del 2026-11-25: «Tutti… | ✅ P4, P7. Su `main` 168 run su 168 con le stesse prove nei due job; mediana del passo pytest negli ultimi 10 run 1.127 s, sul run della #516 761 s (−32%; la st… |
 | 2026-11-21 | P16 · REGOLE | Skullcrusher Vecchio come al duello del 20/11 (scelte di Jfs del 21/11 su card)… | ✅ tre conosciuti mancanti (7/5/3/2 dell'SRD), oggetti dal tesoro (CA 43, contatto 13, TS +24/+21/+23), *immagine speculare* al corno, passate lunghe, gittate;… |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-20 | SISTEMI-DI-GIOCO-PLUGIN | Caratteristiche dal .pcg: la razza dell'orco regular 4 e l'ira dentro i numeri… | Segnalazione del thread del volume: il .pcg salva le caratteristiche prima della razza. Misurate le 13 schede del Bestiario che citano un .pcg contro main 2af9… |
 | 2026-11-20 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0134, regola RC-001: le sei schede di `Bestiario/mostri/` che avevano il co… | `verifica_scheda.py` senza violazioni sulle sei schede; schede senza corredo leggibile 6 → 0; `genera_attributi.py --check` verde (65 blocchi). Resta al thread… |
 | 2026-11-19 | STANDARD-STAMPA | Le etichette dei pilastri non si stampano (card di Jfs del 19/11 nel thread del… | ✅ etichette nelle stampe di ARC-07 da 245 a 0 nei booklet (serata 22, notte e alba 41, resurrezione 86, ritorno alla Forgia 25, Terros 31, mille anni 40) e da… |
-| 2026-11-19 | STANDARD-STAMPA | ADR-0145, i ruoli nel manifest e l'ordine come cancello (richiesta di Jfs del 1… | ✅ etichette dal manifest uguali a quelle dei file di regole: 128 sezioni su 128 nella serata, 398 su 398 nel volume; difetti d'ordine 0 e 0; un manifest rotto… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 324 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 223 voci, l'ultima MS-0223 del 2026-11-25 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 224 voci, l'ultima MS-0224 del 2026-11-25 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

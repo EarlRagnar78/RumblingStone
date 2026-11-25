@@ -2510,7 +2510,7 @@ repo scritto con altre parole.
 ### MS-0223 · 2026-11-25 · I thread ignorano la cartella di partenza: la configurazione Claude va a livello utente
 
 - **Data:** 2026-11-25
-- **PR:** —
+- **PR:** #518
 - **ADR:** ADR-0146 · ADR-0140
 - **Temi:** claude-code thread configurazione settings hook plugin skill mcp rumblingstone-tools claude-progetto livello-utente piattaforma misura
 - **Origine:** riga del 2026-11-25 «ADR-0146, correzione: la configurazione Claude arriva anche a livello utente» in `plans/CHANGELOG.md`

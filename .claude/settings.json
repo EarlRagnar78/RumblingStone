@@ -161,6 +161,7 @@
       "Read(**/homebrew/**/*.html)",
       "Read(**/homebrew/**/*.typ)",
       "Read(**/rendered/**)",
+      "Read(**/rendered-*/**)",
       "Read(/scripts/typst/packages/**)",
       "Read(/scripts/homebrew-local/homebrewery/**)",
       "Read(/scripts/comfyui-local/ComfyUI/**)",

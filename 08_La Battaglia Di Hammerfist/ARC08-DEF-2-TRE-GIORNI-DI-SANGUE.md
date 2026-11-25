@@ -372,7 +372,7 @@ poi Yrsa vanno a terra 65 volte su cento, Yrsa e poi Borin 12 (A.1; Scena
 l'archetipo Borin e poi Yrsa vanno a terra 94 volte su cento, e il Gorthak
 di oggi sta già sotto il tetto (EL 12,6 contro 16).
 
-Grimjaw, il soffio e i bugbear **non si alzano**: sono già a APL+2 o +3.
+Grimjaw, il soffio e i bugbear **non si alzano**: sono già ad APL+2 o +3.
 Contro Borin e Yrsa insieme Grimjaw fugge 93 volte su cento, e uno dei due
 va a terra 39 (Scena 4, con la domanda 2 sulla rampa).
 

@@ -8,6 +8,7 @@ cartella temporanea, mai sulla cartella che contiene il clone vero.
 from __future__ import annotations
 
 import json
+import os
 import shutil
 import subprocess
 import tempfile
@@ -35,8 +36,51 @@ class TestClaudeProgetto(unittest.TestCase):
         shutil.rmtree(self.tmp)
 
     def lancia(self, *argomenti: str) -> str:
+        ambiente = {**os.environ, "HOME": str(self.casa), "RS_SALTA_SKILL": "1"}
         return subprocess.run(["bash", str(self.repo / "scripts" / SCRIPT.name), *argomenti],
-                              capture_output=True, text=True, check=True).stdout
+                              capture_output=True, text=True, check=True, env=ambiente).stdout
+
+    @property
+    def casa(self) -> Path:
+        casa = self.tmp / "casa"
+        casa.mkdir(exist_ok=True)
+        return casa
+
+    def test_configurazione_anche_a_livello_utente(self) -> None:
+        # Dal 22/11 i thread ignorano .claude/settings.json della cartella di
+        # partenza: hook, plugin spenti e server MCP arrivano solo dal livello
+        # utente (misura del 25/11, ADR-0146).
+        (self.casa / ".claude.json").write_text(json.dumps({"altro": 1}), encoding="utf-8")
+        self.lancia()
+        utente = json.loads((self.casa / ".claude" / "settings.json").read_text(encoding="utf-8"))
+        originale = json.loads((ROOT / ".claude" / "settings.json").read_text(encoding="utf-8"))
+        self.assertEqual(utente["enabledPlugins"], originale["enabledPlugins"])
+        self.assertEqual(set(utente["hooks"]), set(originale["hooks"]))
+        comando = utente["hooks"]["SessionStart"][0]["hooks"][0]["command"]
+        self.assertNotIn("$CLAUDE_PROJECT_DIR", comando)
+        ancorate = [r for r in utente["permissions"]["deny"] if r.startswith("Read(/")]
+        self.assertTrue(ancorate and all(r.startswith(f"Read(/{self.repo}/") for r in ancorate),
+                        "a livello utente le regole ancorate sono assolute (//percorso)")
+        stato = json.loads((self.casa / ".claude.json").read_text(encoding="utf-8"))
+        self.assertEqual(stato["altro"], 1, "il resto di ~/.claude.json resta com'è")
+        argomento = stato["mcpServers"]["rumblingstone-tools"]["args"][0]
+        self.assertTrue(Path(argomento).is_absolute() and Path(argomento).is_file())
+        prima = (self.casa / ".claude" / "settings.json").read_text(encoding="utf-8")
+        self.lancia()
+        self.assertEqual((self.casa / ".claude" / "settings.json").read_text(encoding="utf-8"), prima)
+
+    def test_impostazioni_utente_altrui_non_si_toccano(self) -> None:
+        (self.casa / ".claude").mkdir()
+        (self.casa / ".claude" / "settings.json").write_text("{}\n", encoding="utf-8")
+        uscita = self.lancia()
+        self.assertEqual((self.casa / ".claude" / "settings.json").read_text(encoding="utf-8"), "{}\n")
+        self.assertIn("non sono nostre", uscita)
+
+    def test_i_plugin_nuovi_dell_account_sono_spenti(self) -> None:
+        piani = json.loads((ROOT / ".claude" / "settings.json").read_text(encoding="utf-8"))
+        for nome in ("superpowers", "agentic-council", "ai-mentor", "frontend-design", "skill-creator"):
+            with self.subTest(plugin=nome):
+                self.assertIs(piani["enabledPlugins"].get(f"{nome}@synced"), False)
 
     def test_scrive_i_tre_file_con_percorsi_che_esistono(self) -> None:
         self.lancia()

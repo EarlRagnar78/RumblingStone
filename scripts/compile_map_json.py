@@ -612,8 +612,9 @@ def _annotation_lines(spec: dict) -> list[str]:
     for obj in (spec.get("structures", []) or []) + (spec.get("hazards", []) or []):
         if "rect" in obj and obj.get("label"):
             x, y, w, h = obj["rect"]
+            codice = f" ; {obj['codice']}" if obj.get("codice") else ""   # chiave d'area (ADR-0122, S2)
             lines.append(f"@zone {_coord_label(x, y)}-{_coord_label(x + w - 1, y + h - 1)}"
-                         f" ; {obj['label']}")
+                         f" ; {obj['label']}{codice}")
     return lines
 
 

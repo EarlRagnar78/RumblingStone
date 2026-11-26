@@ -158,7 +158,8 @@
         1,
         5
       ],
-      "label": "Telo est: «il telo a sinistra» di Balvar"
+      "label": "Telo est: «il telo a sinistra» di Balvar",
+      "codice": "C1"
     },
     {
       "type": "🎪",
@@ -168,7 +169,8 @@
         3,
         1
       ],
-      "label": "Telo del glifo"
+      "label": "Telo del glifo",
+      "codice": "C2"
     },
     {
       "type": "🚪",
@@ -202,7 +204,8 @@
         1,
         1
       ],
-      "label": "Palo centrale, di legno"
+      "label": "Palo centrale, di legno",
+      "codice": "C3"
     },
     {
       "type": "🟪",
@@ -277,7 +280,8 @@
         2,
         2
       ],
-      "label": "Tende dei servi e del bottino del capo: dentro non ci sono soldati"
+      "label": "Tende dei servi e del bottino del capo: dentro non ci sono soldati",
+      "codice": "C4"
     },
     {
       "type": "🎪",
@@ -368,7 +372,8 @@
         2,
         2
       ],
-      "label": "Tenda del turno dopo"
+      "label": "Tenda del turno dopo",
+      "codice": "C5"
     },
     {
       "type": "🗿",
@@ -402,7 +407,8 @@
         2,
         2
       ],
-      "label": "Tende della Guardia della Mano, otto hobgoblin per tenda, a gruppi attorno al fuoco"
+      "label": "Tende della Guardia della Mano, otto hobgoblin per tenda, a gruppi attorno al fuoco",
+      "codice": "H1"
     },
     {
       "type": "🎪",

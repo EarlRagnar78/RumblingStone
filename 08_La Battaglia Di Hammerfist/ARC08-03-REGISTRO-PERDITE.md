@@ -140,7 +140,7 @@ Queste schede sono progettate per velocizzare il combattimento di massa.
 | **1** | `[ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]` |
 | **2** | `[ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]` |
 
-**Orog Guardie Nere (1 Unità d'Élite)** | AU: **+13** | DU: **19** | PFU: 13 | Morale: +3
+**Orog Guardie Nere (1 Unità d'Élite)** | AU: **+14** | DU: **21** | PFU: 13 | Morale: +3
 *Abilità: Guardia del Corpo (intercetta danni per Grimjaw), Attacco Poderoso, Lealtà Incrollabile*
 | # | PFU |
 | :- | :--- |
@@ -270,3 +270,7 @@ Queste schede sono progettate per velocizzare il combattimento di massa.
 | **Orion Pelleorsa** | _______ / 98 | Forma Selvatica `[ ][ ][ ][ ][ ]` |
 | **Maestro Tempestas** | _______ / 97 | Musica Bardica `[ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]` |
 | **Ranger Elfici (11)** | *Tracciati come unità o narrativamente* | |
+
+<!-- storico -->
+era: fino al 2026-11-20 gli orog della guardia nera avevano AU +13 e DU 19; ora +14 e 21, con la serie d'élite più la razza orog (card del DM del 2026-11-20).
+<!-- /storico -->

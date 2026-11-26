@@ -53,12 +53,12 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA
 @path Le due guardie del turno dopo, se Balvar sta con i PG: entrano dal telo del seggio al round 2 ; X6 U17 O16 ; #7b2cbf
 @path Le ronde di orchi più vicine (1d4+2 round) ; A12 G12 ; #e85d04
 @path Gli squadroni hobgoblin (2d4+2 round) ; O23 O18 ; #9d0208
-@zone S10-S14 ; Telo est: «il telo a sinistra» di Balvar
-@zone N15-P15 ; Telo del glifo
-@zone N12-N12 ; Palo centrale, di legno
-@zone B2-C3 ; Tende dei servi e del bottino del capo: dentro non ci sono soldati
-@zone X4-Y5 ; Tenda del turno dopo
-@zone Q13-R14 ; Fondo buio
+@zone S10-S14 ; Telo est: «il telo a sinistra» di Balvar ; C1
+@zone N15-P15 ; Telo del glifo ; C2
+@zone N12-N12 ; Palo centrale, di legno ; C3
+@zone B2-C3 ; Tende dei servi e del bottino del capo: dentro non ci sono soldati ; C4
+@zone X4-Y5 ; Tenda del turno dopo ; C5
+@zone Q13-R14 ; Fondo buio ; C6
 ```
 
 ### 🌍 AMBIENTE (cosa impone il terreno — regole, non prosa)

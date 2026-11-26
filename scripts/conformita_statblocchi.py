@@ -968,8 +968,12 @@ def conti_del_recinto(b: dict, fratelli: "dict[str, dict]" = None,
 
     def scarto(campo, scritto, atteso, nota, conto=None):
         x = {"campo": campo, "riga": b["riga"], "scritto": scritto, "atteso": atteso, "nota": nota}
-        if conto and not fa(sistema, conto):
-            x["prova"] = conto
+        # il conto resta scritto anche dopo la promozione (testing → stable):
+        # `prova` dice solo che non blocca ancora (ADR-0119)
+        if conto:
+            x["conto"] = conto
+            if not fa(sistema, conto):
+                x["prova"] = conto
         fuori.append(x)
 
     pf = _int(sb.pf)

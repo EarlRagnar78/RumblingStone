@@ -1,11 +1,11 @@
-Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-RAZORFIEND-NIDO.md
+Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-RAZORFIEND-NIDO.md
 ==========================================================
 
-# Rhest – Nido dei Greenspawn Razorfiend (CR 12–13)
+# Lhesper – Nido dei Greenspawn Razorfiend (CR 12–13)
 
 ## 1. Contesto
 
-Il nido è su un isolotto di rovine a metà strada verso il centro di Rhest.[web:80]  
+Il nido è su un isolotto di rovine a metà strada verso il centro di Lhesper.[web:80]  
 Distruggerlo impedisce alla Red Hand di dispiegare queste “armi viventi” alla Battaglia di Rethmar.
 
 ---

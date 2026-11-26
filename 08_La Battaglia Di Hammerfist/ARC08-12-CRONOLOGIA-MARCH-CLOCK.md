@@ -47,7 +47,7 @@ La tabella sotto allinea i due.
    piano ARC-08 B6 la collocava genericamente "= Day 19": qui si segue
    il file canonico della Cerimonia (D3, da non riscrivere) → **Day 21**.
    Il March Clock avanza comunque: al Day 21 l'orda principale è già
-   oltre Terrelton verso Rhest.
+   oltre Terrelton verso Lhesper.
 
 2. **"Giorno 3 dell'assedio" ≠ March Clock Day 3.** L'arrivo dei
    Rumbling Stones è al terzo giorno *di battaglia* (E6/D16), che cade

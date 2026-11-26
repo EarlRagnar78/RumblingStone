@@ -214,6 +214,14 @@ _PREFISSO = re.compile(r"\((?:(?:CANONE|canone) DM " + _DATA + r"|`?\[CANONE[^\]
 # e «(Varis ↔ Il Collezionista, CANONE DM 2026-07-23)»: dopo la virgola se ne va
 # solo la coda, il contenuto resta.
 _CODA = re.compile(r",\s*(?:CANONE,?\s*)?DM " + _DATA + r"\)")
+# La marca che apre una riga dentro un paragrafo o una voce d'elenco e chiude
+# la frase di prima: «…torrione ovest\n  `[CANONE — DM …]`. È una regola…».
+# Tolta da sola lascerebbe il punto a colonna 0, e la voce d'elenco si
+# spezzerebbe (rilievo di Codex sulla #507): il segno torna in coda alla riga
+# di prima e la riga dopo tiene il suo rientro. Se la riga di prima è vuota
+# o finisce già con un segno, la marca si toglie come le altre.
+_MARCA_A_CAPO = re.compile(r"(?<=[^\s.,;:!?»)])\n([ \t>]*)`?\[(?:CANONE\b|verif\. ✓|riscritt[oa]\b|ACCEPTED\b)"
+                           r"[^\]\n]{0,400}\]`?([.,;:])[ \t]*")
 # La marca a inizio riga seguita da un trattino: «> `[CANONE GIOCATO …]` — registro…»
 _MARCA_E_TRATTINO = re.compile(r"^([ \t>]*)`?\[CANONE[^\]\n]*\]`?\s*[—–-]\s*", re.M)
 
@@ -273,6 +281,8 @@ def togli_storico(md: str) -> str:
     '~3g 20h** (tre riposi'
     >>> togli_storico("> `[CANONE GIOCATO 2026-07-31]` — registro dei riposi")
     '> registro dei riposi'
+    >>> togli_storico("- nel torrione ovest\\n  `[CANONE — DM 2026-11-21]`. È una regola")
+    '- nel torrione ovest.\\n  È una regola'
     >>> togli_storico("sul ramo del gruppo\\n(ADR-0007).")
     'sul ramo del gruppo.'
     >>> togli_storico("smeraldo) [CANONE — DM 2026-07-31;\\n> ERRATA: vecchie]. Poi")
@@ -311,6 +321,7 @@ def togli_storico(md: str) -> str:
         else:
             pezzo = _PREFISSO.sub("(", pezzo)
             pezzo = _MARCA_E_TRATTINO.sub(r"\1", pezzo)
+            pezzo = _MARCA_A_CAPO.sub(r"\2\n\1", pezzo)
             pezzi[k] = _MARCA.sub("", pezzo)
     md = "".join(pezzi)
     fuori: list[str] = []

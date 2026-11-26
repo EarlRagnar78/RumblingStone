@@ -84,23 +84,23 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-25 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Gli scontri dei pregen sulla griglia, più duri e con schede legali (thread «Ren… | 🟡 in PR, ogni numero alzato è INFERRED con la domanda al DM (5 in DEF-1, 15 in DEF-2). Simulatore, 4.000 duelli per riga, seme 7: Gorthak di oggi con Borin poi… |
+| 2026-11-25 | REGOLE-SENZA-OMISSIONI | Lotto «razze coi dadi vita razziali» e caratteristiche (card di Jfs del 20/11).… | ✅ schede bocciate dalla regola 21 → 3, tutte spiegate (l'orog letto come orco, Zin'thara letta come elfa, Tempestas dichiarato); dopo la verifica a due agenti,… |
+| 2026-11-25 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | I nomi della Cannath Vale nei file di gioco (scelta di Jfs su card del 25/11, t… | 🟡 `git grep -w` su tutto il repo: Rhest 358 + RHEST 135 in 89/46 file, Blackfens 63 + 8, Brindol 167 in 36 → restano in archivi e storia, log e recap del 05/20… |
+| 2026-11-25 | STATO-E-ORDINE | ADR-0142, aggiunta: la voce `**/rendered-*/` in `.claudeignore` (scelta di Jfs… | 🟡 file tracciati coperti 881 → 1.136; `rg -n -M 500 --ignore-file .claudeignore`, `main` → ramo: byte da −0,4% (Skullcrusher) a −2,7% (Belkram), file da −0,9%… |
+| 2026-11-25 | STATO-E-ORDINE | ADR-0146, correzione: la configurazione Claude arriva anche a livello utente. D… | 🟡 sessione headless nuova in `/home/user` nello stesso container: con la configurazione utente scattano UserPromptSubmit e PreToolUse su Bash,… |
+| 2026-11-25 | PIATTAFORMA-DI-SVILUPPO | P4 e P7, promozioni da testing a stable (D8, card del DM del 2026-11-25: «Tutti… | ✅ P4, P7. Su `main` 168 run su 168 con le stesse prove nei due job; mediana del passo pytest negli ultimi 10 run 1.127 s, sul run della #516 761 s (−32%; la st… |
+| 2026-11-21 | P16 · REGOLE | Skullcrusher Vecchio come al duello del 20/11 (scelte di Jfs del 21/11 su card)… | ✅ tre conosciuti mancanti (7/5/3/2 dell'SRD), oggetti dal tesoro (CA 43, contatto 13, TS +24/+21/+23), *immagine speculare* al corno, passate lunghe, gittate;… |
+| 2026-11-21 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALIT… | Corredo dei draghi, scelte del DM sulle card del 21/11. **Fauci di Palude** «A… | In PR. Quota del tesoro triplo addosso: Fauci 0% → 47%, Tyrgarun 0% → 24%, Ozyrrandion 27% → 88%, Regiarix 0% → 36%, drago di Vaereth 0% → 19%. CA: Fauci 29 →… |
+| 2026-11-21 | P16 · REGOLE | Due incoerenze trovate dal thread dei draghi (richiesta del coordinatore del 21… | ✅ due file, nessun numero di scheda cambiato |
 | 2026-11-20 | STANDARD-STAMPA | ADR-0122, S1: le introduzioni dei capitoli VIII e X nel booklet della serata di… | S1 capitoli con introduzione ≥ 500 caratteri: 2/17 → 9/17 con la misura nuova (1/17 → 2/17 con quella di prima); restano senza i capitoli di preparazione e di… |
-| 2026-11-19 | STANDARD-STAMPA | Le etichette dei pilastri non si stampano (card di Jfs del 19/11 nel thread del… | ✅ etichette nelle stampe di ARC-07 da 245 a 0 nei booklet (serata 22, notte e alba 41, resurrezione 86, ritorno alla Forgia 25, Terros 31, mille anni 40) e da… |
-| 2026-11-19 | STANDARD-STAMPA | ADR-0145, i ruoli nel manifest e l'ordine come cancello (richiesta di Jfs del 1… | ✅ etichette dal manifest uguali a quelle dei file di regole: 128 sezioni su 128 nella serata, 398 su 398 nel volume; difetti d'ordine 0 e 0; un manifest rotto… |
-| 2026-11-19 | STANDARD-STAMPA | ADR-0145, segnalibri annidati (richiesta di Jfs del 19/11, 14:07: chiudere i li… | ✅ segnalibri da piatti a quattro livelli: serata 143 voci con 20 al primo livello, volume 439 con 13; PDF/UA-1 e PDF/A-2a restano; rimandi 113 su 113 e 242 su… |
-| 2026-11-19 | STANDARD-STAMPA | Convergenza di typst (richiesta del coordinatore prima dei segnalibri: il volum… | ✅ rimandi giusti del volume 227 → 242 su 242; numeri instabili 2 → 0 booklet su 22 |
-| 2026-11-19 | RICERCA-PROSA-PECULIARE | Le tecniche di prosa proprie del repo contro le case (domanda di Jfs del 19/11)… | ✅ ricerca e standard; nessun cancello nuovo |
-| 2026-11-19 | STANDARD-STAMPA | Card di Jfs sulla serata di ARC-07: Durik resta in fondo come galleria dei PNG… | ✅ serata da 3 difetti di struttura a 0 (134 → 132 pp); rimandi 113 su 122 con la pagina, tutti giusti; debito INFERRED 14 → 14 (le due domande chiuse lo stesso… |
-| 2026-11-19 | SISTEMI-DI-GIOCO-PLUGIN | ADR-0126, revisione storica delle schede su dnd.arkalseif.info (richiesta del D… | verifica_scheda contro main 517a3e79: violazioni 34 → 2 (le due rimaste sono nell'archivio `06_…/_ARCHIVIO/CoronaDiAdamantio/villans.md`, che non si tocca), no… |
-| 2026-11-19 | STANDARD-STAMPA | ADR-0145 (proposta): l'ordine dei capitoli del booklet della serata si misura (… | 🟡 serata da 15 difetti di struttura a 3 (131 → 134 pp; un blocco fuori posto conta uno); rimandi con pagina da 101 a 115 su 124, tutti giusti, titolo assente d… |
-| 2026-11-19 | STANDARD-STAMPA | ADR-0144: due stampe per arco e rimandi con il numero di pagina. Nuovo volume d… | ✅ `misura_rimandi.py`: serata da 0/107 a 100/108 rimandi con pagina, tutti giusti, titoli non trovati da 8 a 1; volume d'arco 236/242 con la pagina giusta. Ser… |
-| 2026-11-19 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, rilettura completa dei lotti 1-4 contro le schede: d… | ✅ contraddizioni fra la tattica e la sua scheda nei lotti 1-4: da 2 a 0; Tordek convinto da Xal'thor dal 35% al 27% dei duelli (20.000 prove, seme 1372), mai m… |
-| 2026-11-19 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | Tattiche di villain e PNG, Palio: i sicari di Sonjak possono puntare il cavallo… | ✅ file del Palio che danno ai sicari un obiettivo diverso dagli altri: da 1 (STATBLOCCHI contro INTEGRAZIONE r.149 e GIORNO2 r.136-137) a 0; nessun numero di s… |
+| 2026-11-20 | STANDARD-STAMPA | ADR-0122, S4: l'appendice della regione nel booklet della serata di ARC-07 (ric… | S4 pagine di regione/PNG 0/3 → 9/3; pagine 132 → 141; note di lavoro in stampa nella serata 0 (prima di togliere l'apparato dal conto ne contava 6); parole del… |
+| 2026-11-20 | STATO-E-ORDINE | ADR-0146 (proposta), le skill di prosa si caricano per vincolo (richiesta di Jf… | ✅ baseline su un campione di cinque thread: zero invocazioni di skill su 188 chiamate; l'hook si attiva su circa 200 modifiche su 2.944 ai file di gioco degli… |
 
 ## Le misure che si portano dietro
 
-- **Decisioni**: 1 aperte, 323 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 214 voci, l'ultima MS-0214 del 2026-11-20 (`memoria_storica.py`, ADR-0127).
+- **Decisioni**: 1 aperte, 324 chiuse (`decisioni_dm.py`).
+- **Memoria storica**: 229 voci, l'ultima MS-0229 del 2026-11-20 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

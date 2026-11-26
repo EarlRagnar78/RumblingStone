@@ -309,10 +309,12 @@ def dalla_scheda(testo: str) -> "tuple[dict, str] | None":
     contava come «scelti» avevano i numeri del DM scritti due righe sotto il
     blocco. Sono i numeri che si giocano: battono la fonte e battono i vincoli.
 
-    Si legge fuori dal blocco e fuori dalle righe di marca, e solo se la
-    scheda porta **una** sestina: due (una variante, un'ira) sono una scelta.
+    Si legge fuori dal blocco, fuori dalle righe di marca e fuori dal blocco
+    storico (i numeri di prima), e solo se la scheda porta **una** sestina:
+    due (una variante, un'ira) sono una scelta.
     """
-    fuori = BLOCCO.sub("", testo)
+    from dmcore.testo import togli_storico  # i numeri di prima non contano
+    fuori = BLOCCO.sub("", togli_storico(testo))
     fuori = "\n".join(r for r in fuori.splitlines() if not r.startswith(("> [INFERRED", "> [GENERATO")))
     trovate = {tuple(_punteggio(v) for v in m) for m in SESTINA.findall(fuori)}
     if len(trovate) != 1:

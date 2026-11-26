@@ -95,7 +95,7 @@ della Corona** — eco narrativa, distinta dal carry-over **meccanico** B4:
 
 Collocazione dell'uovo (hook P6), **approvata dal DM**:
 
-- **Dove**: un covo di palude isolato nei **Blackfens**, lontano dalla linea di
+- **Dove**: un covo di palude isolato nel **Lhespenbog**, lontano dalla linea di
   marcia dell'orda — sopravvive alla battaglia di Hammerfist.
 - **Chi lo cova**: un **servitore superstite di Fauci** (un hobgoblin drake-keeper
   o un piccolo drago nero giovane) che lo custodisce in attesa che si schiuda.

@@ -15,7 +15,7 @@ Arco-Post-Hammerfist-P1B-Cerchio-Treant-COMPLETO.md
 
 - Successo pieno: Hella sopravvive, Cerchio integro (Treant distrutto, almeno 1 Drow neutralizzato). [file:21]
 - Successo parziale: Hella viva ma Cerchio danneggiato; penalità al Rituale successivo. [file:21]
-- Fallimento: Hella uccisa o Cerchio distrutto; gravi malus all’assedio di Brindol. [file:21]
+- Fallimento: Hella uccisa o Cerchio distrutto; gravi malus all’assedio di Rethmar. [file:21]
 
 ---
 

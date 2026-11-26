@@ -1,31 +1,31 @@
 {
- "schede": 31,
+ "schede": 35,
  "una +4": {
-  "mutanti": 31,
-  "trovati": 6
+  "mutanti": 35,
+  "trovati": 7
  },
  "una +8": {
-  "mutanti": 31,
-  "trovati": 20
+  "mutanti": 35,
+  "trovati": 22
  },
  "una +12": {
-  "mutanti": 31,
-  "trovati": 25
+  "mutanti": 35,
+  "trovati": 27
  },
  "tutte +3": {
-  "mutanti": 31,
-  "trovati": 12
+  "mutanti": 35,
+  "trovati": 13
  },
  "tutte +6": {
-  "mutanti": 31,
-  "trovati": 19
+  "mutanti": 35,
+  "trovati": 22
  },
  "ciascuna +2": {
-  "mutanti": 160,
+  "mutanti": 180,
   "trovati": 2
  },
  "ciascuna +4": {
-  "mutanti": 160,
+  "mutanti": 180,
   "trovati": 24
  }
 }

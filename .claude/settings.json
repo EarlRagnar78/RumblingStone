@@ -9,13 +9,56 @@
           }
         ]
       }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 $CLAUDE_PROJECT_DIR/scripts/vincolo_skill.py --hook",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "Bash|mcp__github__create_pull_request",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 $CLAUDE_PROJECT_DIR/scripts/instradamento_agenti.py --cancello",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 $CLAUDE_PROJECT_DIR/scripts/instradamento_agenti.py --prompt",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 $CLAUDE_PROJECT_DIR/scripts/instradamento_agenti.py --stop",
+            "timeout": 10
+          }
+        ]
+      }
     ]
   },
   "enabledPlugins": {
-    "pdf-viewer@synced": true,
-    "review@synced": true,
-    "tdd@synced": true,
+    "agentic-council@synced": false,
     "ai-governance-legal@synced": false,
+    "ai-mentor@synced": false,
     "bio-research@synced": false,
     "claude-for-msft-365-install@synced": false,
     "claude-tag-data-viz@synced": false,
@@ -29,6 +72,7 @@
     "enterprise-search@synced": false,
     "finance@synced": false,
     "fpf@synced": true,
+    "frontend-design@synced": false,
     "google-drive@synced": false,
     "grafana@synced": false,
     "human-resources@synced": false,
@@ -36,14 +80,19 @@
     "marketing@synced": false,
     "mcp@synced": true,
     "operations@synced": false,
+    "pdf-viewer@synced": true,
     "product-legal@synced": false,
     "product-management@synced": false,
     "productivity@synced": false,
     "recursive-decomposition@synced": true,
     "reflexion@synced": true,
+    "review@synced": true,
     "sadd@synced": true,
     "sdd@synced": true,
-    "small-business@synced": false
+    "skill-creator@synced": false,
+    "small-business@synced": false,
+    "superpowers@synced": false,
+    "tdd@synced": true
   },
   "skillOverrides": {
     "anthropic-skills:dnd-35-rules": "off",
@@ -112,6 +161,7 @@
       "Read(**/homebrew/**/*.html)",
       "Read(**/homebrew/**/*.typ)",
       "Read(**/rendered/**)",
+      "Read(**/rendered-*/**)",
       "Read(/scripts/typst/packages/**)",
       "Read(/scripts/homebrew-local/homebrewery/**)",
       "Read(/scripts/comfyui-local/ComfyUI/**)",

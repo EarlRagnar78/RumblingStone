@@ -74,7 +74,9 @@ class TestTemaStampa(unittest.TestCase):
     def test_le_zone_sono_lettere_spiegate_in_legenda(self):
         self.assertNotIn("Telo del glifo", self.mappa)
         self.assertIn("Telo del glifo", self.legenda)
-        self.assertRegex(self.mappa, r'font-style="italic">b</text>')
+        # M7-H porta le chiavi d'area (ADR-0122, S2): la sigla prende il posto
+        # della lettera; la lettera resta per le zone senza chiave (test_chiavi_area)
+        self.assertRegex(self.mappa, r'font-style="italic">C2</text>')
 
     def test_la_legenda_dice_la_regola_intera(self):
         # in stampa la parentesi della voce non si taglia: porta la regola

@@ -2,6 +2,7 @@
 
 **Stato**: accettata (2026-11-09)
 **Data**: 2026-11-09
+**Canale (ADR-0099)**: stable dal 2026-11-25, scelta del DM sulla card del 2026-11-25 (*«Tutti e sei, con il codice»*, D8 di [PIANO-PIATTAFORMA-DI-SVILUPPO](../PIANO-PIATTAFORMA-DI-SVILUPPO.md)). 146 run su `main` senza rossi; 3 rossi su 384 run di PR, 2 veri e 1 falso allarme del lettore (il +1 dell'arma letto come bonus d'attacco), spiegato ma non corretto nel lettore. Il passo perde `continue-on-error` ([misura](../esperimenti/promozioni-2026-11-25/MISURE.md)).
 **Decisione-fonte**: il DM (Jfs), 2026-11-09, thread «Scelte dell'8/11». Dopo che una ★ aveva portato nel canone l'AU +10 della Fanteria Hobgoblin, preso da una chat e non da una scheda: *«i valori sempre i più forti ma calcolati e non inventati; nel caso, se la versione PF1e è più forte usa PF1e, ma non inventare: deve essere compliant con le regole, altrimenti a cosa servono?»*. Poi: *«questa regola deve essere dentro un ADR per essere rispettata da tutti i thread, o ogni proposta di calcolo deve essere vincolata a questo controllo»*. Sulla card ha scelto «ADR più cancello in CI». E sulla copertura: *«vale per tutti gli stat block e le regole usate nel repo, nei booklet e negli stand alone? […] deve coprire tutto»*.
 **Rapporti**: precisa [ADR-0091](ADR-0091-la-scheda-del-png-ha-una-forma.md) §4-bis (la versione più forte, costruita con un mezzo legale) e la estende a ogni numero di combattimento del repo. Usa i conti di `conformita_statblocchi.py` ([ADR-0064](ADR-0064-gli-attributi-si-scrivono-nel-bestiario.md), [ADR-0066](ADR-0066-le-creature-hanno-una-libreria-e-il-verificatore-non-importa-la-scelta.md)) e i dati dei sistemi di [ADR-0112](ADR-0112-il-motore-e-agnostico-e-le-regole-d20-sono-dati-e-formule.md). Le marche sono quelle di [ADR-0109](ADR-0109-una-marcatura-sola-e-il-dm-decide-il-canone.md).
 
@@ -42,7 +43,7 @@ Misura dello stesso giorno, su `main`:
    - uno scarto nuovo, o un file nuovo con numeri che nessuno legge, fa fallire;
    - uno risolto si toglie con `--aggiorna-numeri`, che non aggiunge niente.
 
-   In CI parte **non bloccante** (`continue-on-error`) e diventa bloccante dal 2026-11-23, come i cancelli di ADR-0109 e ADR-0114.
+   In CI parte **non bloccante** (`continue-on-error`) e diventa bloccante dal 2026-11-23, come i cancelli di ADR-0109 e ADR-0114. Bloccante dal 2026-11-25, con la scelta del DM D8 di PIANO-PIATTAFORMA-DI-SVILUPPO.
 4. **La copertura.** «Tutto» si misura con `non_coperti` della baseline e scende a lotti, un thread alla volta coordinato dal thread padre. Un lotto insegna allo script una forma nuova (la riga «A.5 · … · **morso** +34» delle appendici DEF, le tabelle di ARC-09, le schede dei PG), oppure porta la scheda nella forma di ADR-0091. Le regole PF1e che il cancello oggi salta (BMC e DMC al posto della lotta, scurovisione, *corrompere l'acqua*) le scrive nel plugin PF1e il thread «Completare le regole PF1e per il cancello».
 
 ## Misura

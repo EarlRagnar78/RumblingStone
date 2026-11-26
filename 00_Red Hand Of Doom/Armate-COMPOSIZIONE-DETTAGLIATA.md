@@ -130,7 +130,7 @@
 | Drago | Tipo / Età | CR | File | Stato campagna |
 |---|---|---|---|---|
 | **Abithriax** | Red Adult | 15 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Arbitrax Drago Rosso.htm` | Vivo, Rethmar Fase 1 |
-| **Regiarix** | Black Young Adult | 10 | `09_.../Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | A rischio (P2 Rhest) |
+| **Regiarix** | Black Young Adult | 10 | `09_.../Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | A rischio (P2 Lhesper) |
 | **Ozyrrandion** | Green Adult (AP), 22 DV | 14 | `Bestiario/villain/ozyrrandion-drago-verde-cr14.md` (base storica: `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Ozyrrandion drago Verde cr8.pcg` + `green dragon.htm`) | A rischio (P2A Torre) |
 | **Tyrgarun** | **Blue Very Old (terrore dei cieli, D11 v2)** | **19** | [CANONE — DM 2026-05-05] `Bestiario/villain/Tyrgarun/tyrgarun-blue-very-old-cr19.md` | Vivo; hazard aereo Fasi 1-3, inchiodato dal Mythal in Fase 4 (CR eff. ~16-17) — NON cavalcatura di Azarr Kul |
 | **Fauci di Palude** | Black Adult avanzato | 15 | `08_…/00_Schede_dei_Personaggi_Unità_…md` §1 | Ramo condizionale D10, non deciso (default: fugge <50 PF, assente da Rethmar; alternativa: ucciso ad Hammerfist) |
@@ -145,7 +145,7 @@ Varianti colore Tiamat. Base template + delta per colore.
 
 | Variante | CR | File | Assegnazione |
 |---|---|---|---|
-| Razorfiend base (Black) | 8 | `09_…/Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-RAZORFIEND-NIDO.md` | Saarvith/Rhest |
+| Razorfiend base (Black) | 8 | `09_…/Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-RAZORFIEND-NIDO.md` | Saarvith/Lhesper |
 | Razorfiend Black (alt statblock) | 8 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Incontro-RedHandof-doom/` | — |
 | Razorfiend Red | 9 | [CANONE — DM 2026-05-05] `Bestiario/mostri/razorfiend-red-cr9.md` | Wyrmlord Karruk |
 | Razorfiend Blue | 9 | [CANONE — DM 2026-05-05] `Bestiario/mostri/razorfiend-blue-cr9.md` | Ozyrrandion/Tower |
@@ -160,7 +160,7 @@ Varianti colore Tiamat. Base template + delta per colore.
 |---|---|---|---|
 | Azarr Kul (Gran Signore) | 17 | `09_…/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md` | Boss finale Fase 3 |
 | Koth (Signore dei Dragoni) | 9 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/signore dei Dragoni Koth.htm` | Vraath Keep / field commander |
-| Saarvith | 11 | `09_…/Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | Rhest boss |
+| Saarvith | 11 | `09_…/Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | Lhesper boss |
 | Zalkatar | 13 | `09_…/Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` | Torre Invisibile boss |
 | Karruk | 13 | [CANONE — DM 2026-05-05] `Bestiario/villain/Wyrmlord_Karruk/wyrmlord-karruk-cr13.md` | Rethmar Fase 1 assault leader |
 | Ulwai Stormcaller (Bard) | 8 | Base: `Lómyn redTongue bard 8.pcg` | Variante nominata |
@@ -394,7 +394,7 @@ Tutti marcati `[CANONE — DM 2026-05-05]`; fonte AP RHoD + SRD/MM/FRCS.
 | 07 Portale Forgia | Aberrazioni, Fauci (pre-ritorno), Terros |
 | 08 Hammerfist | Mano Rossa §1-4, Fauci §5, Ogre/Ettin §3, Difensori §15 |
 | 09 P1 Hella | Druidi §15, Mano Rossa skirmish §1-2 |
-| 09 P2 Rhest | Drow §8 (Saarvith subset), Razorfiend §6, Regiarix §5 |
+| 09 P2 Lhesper | Drow §8 (Saarvith subset), Razorfiend §6, Regiarix §5 |
 | 09 P2A Torre | Ozyrrandion §5, Zalkatar §7, Aberrazioni (Illithid) |
 | 09 P2B Dauth | Difensori nani §15, Villain torneo (vedi file P2B-VILLAIN) |
 | 09 P3 Fase 0 | Drow Sonjak §8 full |

@@ -5,13 +5,13 @@
   "uscita": 0
  },
  "derive_statblocks": {
-  "byte": 1158,
-  "sha256": "b7275a24a52d7f14e757c019db1fc82a1914e274b7a439428a397aa604d3195c",
+  "byte": 1057,
+  "sha256": "9524d1abe1676a2e1afa7ba44d2b81caee0be0dee235371c97481b6497b7b172",
   "uscita": 0
  },
  "domande_developer": {
-  "byte": 12995,
-  "sha256": "4c8ea86f85d0c8ab19e47d2825bdb7e11696e8b73b84ed048c49ae4a856db3d3",
+  "byte": 12794,
+  "sha256": "2c00c07c6fad0a3d2900e3afd22623aea6223d8139009da18969ea577e68cc40",
   "uscita": 0
  },
  "genera_creatura_gs14": {
@@ -50,8 +50,8 @@
   "uscita": 0
  },
  "validate_modules": {
-  "byte": 953,
-  "sha256": "5d5a75d9ea36d73cfdeb837813e7116c40f907bbaf89cad8adace3f3448fca13",
+  "byte": 810,
+  "sha256": "2c86243532ed6fdb08e318f05624ebfd71aaae49c830b0c43ed8f17b9498f46b",
   "uscita": 0
  },
  "validate_standalone": {

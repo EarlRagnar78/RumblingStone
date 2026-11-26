@@ -11,7 +11,7 @@
 
 ## CONTESTO NARRATIVO
 
-I PG convergono su Rethmar dopo le loro quest personali (Torre, Torneo, Sacra Foresta, Rhest). Sal sa già — grazie al Collezionista — che il gruppo sta arrivando con i loro artefatti. Il suo obiettivo in questo momento non è ucciderli: è **marchiarli**.
+I PG convergono su Rethmar dopo le loro quest personali (Torre, Torneo, Sacra Foresta, Lhesper). Sal sa già — grazie al Collezionista — che il gruppo sta arrivando con i loro artefatti. Il suo obiettivo in questo momento non è ucciderli: è **marchiarli**.
 
 1. **Piazzare l'Olio di Manutenzione** su Aegis Fang o la Corona di Adamantio.
 2. **Identificare chi porta cosa** e aggiornare il Collezionista.

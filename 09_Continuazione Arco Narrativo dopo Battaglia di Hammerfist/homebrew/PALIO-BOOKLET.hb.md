@@ -2885,12 +2885,19 @@ EL 12 con i due sicari, EL 13 se c'è anche la chierica di §3.2 (tre creature d
 {{note
 ##### 3.1 Drow Assassina di Lolth ×2 (GS 10 cad.) · GS 10
 **CA** 20, (+4 Des, +5 giaco di maglia mithral +1, +1 anello), contatto 15, colto alla sprovvista 20 · **pf** 34 (9d6) · *scheda in appendice*
-
-**TATTICHE**
-**Obiettivo**: **il cavallo** o **il fantino**, quale dei due lo sceglie il DM; gli altri PG non sono il bersaglio. Colpire e sparire. Se scoperti, coprono la fuga.  
 }}
 
 <!-- /include -->
+
+**Talenti** Iniziativa Migliorata, Tiro Ravvicinato, Tiro Preciso, Arma Accurata (spada corta)
+
+**Tattiche** **Obiettivo**: **il cavallo** o **il fantino**, quale dei due lo sceglie il DM; gli altri PG non sono il bersaglio. Colpire e sparire. Se scoperti, coprono la fuga.
+
+**Capacità speciali**
+- **Attacco Mortale**: dopo 3 round di studio, Tempra CD 17 o morte, oppure paralisi per 1d6+4 round.
+- **Veleni**: veleno drow (Tempra CD 13, privo di sensi); 3 dosi di *sangue nero di Lolth* (Tempra CD 17, 1d6 Cos / 1d6 Cos).
+- **Capacità magiche** 1/giorno: *luci danzanti*, *oscurità*, *fuoco fatuo*.
+- **Incantesimi da Assassino** 4/2 al giorno, fra cui *invisibilità*.
 
 
 *Cosa sanno dei PG e in che stato li trovano*: Sonjak gli ha detto quale stalla e quale cavallo, non chi la guarda. Arrivano la notte del Giorno 2, dopo la Cena della Prova Generale e gli intrighi dei Partiti, quando i PG dormono o fanno la guardia a turno: uno sveglio, gli altri con quello che resta degli incantesimi del giorno. L'obiettivo resta il cavallo o il fantino, anche quando il fantino è un PG (AVVENTURA §4): chi è di guardia lo evitano, e lo colpiscono solo se sta fra loro e il bersaglio o se li scopre, per coprire la fuga. Se il DM sceglie il fantino, lo addormentano con la balestra (veleno del sonno) e lo portano via nel buio; la sua scorta la trattano come la guardia della stalla. <!-- [INFERRED — Sonjak sa chi fa la guardia alla stalla?; base: §3.1 e la scheda di Sonjak dicono il mandante, non che cosa sa dei PG] (marca tolta dal booklet stampato) -->
@@ -3117,13 +3124,6 @@ ___
 For 12 Des 19 Cos 11 Int 16 Sag 10 Car 10  
 Equipaggiamento da combattimento: veleno drow, sangue nero di Lolth (3 dosi)  
 Altro equipaggiamento: giaco di maglia in mithral +1, anello di protezione +1, mantello della resistenza +2, spada corta +1, balestra a mano perfetta con 10 quadrelli  
-
-**CAPACITÀ SPECIALI**
-___
-- **Attacco Mortale**: dopo 3 round di studio, Tempra CD 17 o morte, oppure paralisi per 1d6+4 round.  
-- **Veleni**: veleno drow (Tempra CD 13, privo di sensi); 3 dosi di *sangue nero di Lolth* (Tempra CD 17, 1d6 Cos / 1d6 Cos).  
-- **Capacità magiche** 1/giorno: *luci danzanti*, *oscurità*, *fuoco fatuo*.  
-- **Incantesimi da Assassino** 4/2 al giorno, fra cui *invisibilità*.  
 }}
 {{monster,frame
 ## Drow Chierica di Lolth

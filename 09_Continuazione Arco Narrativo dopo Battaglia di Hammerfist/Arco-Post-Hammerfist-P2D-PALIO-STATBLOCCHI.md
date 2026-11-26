@@ -144,6 +144,8 @@ voci:
 
 **Attacco** spada corta +1 +11/+6 (1d6+2/19-20); balestra a mano perfetta +11 (1d4 + veleno), +12 entro 9 m (1d4+1 + veleno) · **Attacco furtivo** +5d6
 
+**Talenti** Iniziativa Migliorata, Tiro Ravvicinato, Tiro Preciso, Arma Accurata (spada corta)
+
 **Tattiche** **Obiettivo**: **il cavallo** o **il fantino**, quale dei due lo sceglie il DM; gli altri PG non sono il bersaglio. Colpire e sparire. Se scoperti, coprono la fuga.
 
 **Capacità speciali**

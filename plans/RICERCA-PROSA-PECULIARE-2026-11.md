@@ -279,17 +279,20 @@ case, misura di oggi contro il corpus, lettura dei voti già dati.
 - I confini dei box italiani del corpus sono sbagliati in circa un caso su
   sette: le lunghezze sono approssimate, i tassi per mille no.
 
-## 8 · Le scelte del DM (card del 2026-11-19)
+## 8 · Le scelte del DM (card del 2026-11-19, voto del 2026-11-26)
 
 | Card | Scelta |
 |---|---|
 | tecnica 1, i sensi battono il tetto di lunghezza | **entra come caratteristica** (`editorial-standards.md` §4-bis) |
 | tecnica 2, la chiusa enfatica resta | **entra come caratteristica**; la checklist di `read-aloud-adulti.md` §7 e di `italiano-nativo.md` §8 è allineata, la regola è nel registro |
 | tecnica 4, voce per l'orecchio | **prima un cieco**: nomi nuovi in più o in meno, senza toccare i nomi già noti al tavolo |
-| etichette dei pilastri nella stampa | **tolte in tutte le stampe**, tenute nel sorgente; il filtro nel renderer lo fa il lavoro sui booklet |
-| tecnica 3 (monologo) e ordine dei cieco A, B, C | aperte |
+| etichette dei pilastri nella stampa | **tolte in tutte le stampe**, tenute nel sorgente; il filtro nel renderer spetta al lavoro sui booklet |
+| tecnica 3, il monologo resta un blocco | **resta uso della casa** (card del 2026-11-19): non entra nello standard, i monologhi che ci sono non si toccano |
+| ordine dei cieco A, B, C | **solo A per ora** (card del 2026-11-19): B e C restano senza prova e fuori dallo standard |
+| cieco A, ritmo della frase | **nessuna differenza dimostrata**: breve 13, lunga 7, soglia 14 su 20 ([ESITO-RITMO-2026-11-26](esperimenti/prosa-cieco/ESITO-RITMO-2026-11-26.md)). Il ritmo del repo resta com'è e non diventa caratteristica |
+| tecnica 4, voce per l'orecchio, a misura | i box con due o più nomi nuovi a quel punto del file sono 10 in ARC-08 e ARC-09, quasi tutti handout, e nessuno in ARC-07 fuori dai congelati: la norma è già rispettata, e il cieco dovrà usare coppie costruite apposta |
 
-Per i cieco, le regole che il DM ha chiesto di scrivere perché il voto non sia
+Le regole che il DM ha chiesto di scrivere perché il voto dei cieco non sia
 falsato: una sola cosa cambia per coppia; le due versioni sono entrambe
 riscritte (mai l'originale contro la nuova, che si riconosce); ordine con un
 seme; nessun segno di quale sia la versione del repo (stesse virgolette,

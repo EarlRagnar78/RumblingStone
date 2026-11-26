@@ -430,8 +430,8 @@ Grimjaw il Giorno 2 o il Giorno 3, al round 1, prima del corno del drago
   **Conseguenza**: il duello fra Thorik e Grimjaw, che chiudeva la Sessione
   3 (`ARC08-01`, «L'arrivo di Grimjaw»), non si gioca
   `[INFERRED — Se Grimjaw è stato abbattuto nell'assedio, che cosa chiude la Sessione 3 al posto del suo duello con Thorik?; base: ARC08-01, «L'arrivo di Grimjaw», ha solo il ramo «se Grimjaw è sopravvissuto», e le mappe danno al capitano la sola ritirata; default: niente lo sostituisce: il capitano entra e si ritira, e la serata chiude sulla caverna liberata (ARC08-01, «Risultato della Sessione 3»)]`.
-- **Gorthak abbattuto.** La carta **Gorthak al cancello** si toglie e non
-  torna. Se cade il Giorno 1, il Giorno 2 il fronte del Cancello resta 4, al
+- **Gorthak abbattuto** (provvisorio: la card del 26/11 lascia questa riga da scrivere, e il DM non l'ha ancora vista). La carta **Gorthak al cancello** si toglie e non
+  torna. Se cade il Giorno 1, da quel round il fronte del Cancello torna a 3, e il Giorno 2 il fronte del Cancello resta 4, al
   round 3 il DM gioca la palla di fuoco, e l'ariete resta ai due troll, col
   ritmo di riferimento. Se cade il Giorno 2, da quel round il fronte del
   Cancello scende di uno (`ARC08-19` §4, la carta: «finché c'è, il fronte
@@ -1121,7 +1121,7 @@ recupera 15 pf, SRD: 1 per DV).
 anche nel round in Furia: è **abbattuto**, e la fuga non c'è. Resta sul
 ponte, e i troll non lo portano via: al loro turno, per default, lasciano
 il ponte (§0-bis, «La scorta»). **+2** al morale della rocca e **−3**
-all'orda, che si segna sulla scheda della serata e per default oggi non
+all'orda, che si segna sulla scheda della serata e per default nell'assedio non
 tocca i dadi del libretto (§0-bis, «Il morale»). La sua carta si toglie
 subito e non torna, né oggi né il Giorno 2, e al finale Gorthak manca
 (§0-bis, «Il comandante a 0 pf o meno»).
@@ -1287,7 +1287,7 @@ duelli sono tutta la battaglia dei pregen.
 - *A 0 pf o meno*: è abbattuto e resta sul ponte; i troll non lo portano
   via, e al loro turno, per default, lasciano il ponte (§0-bis, «La
   scorta»). +2 alla rocca; −3 all'orda, che si segna sulla scheda della
-  serata e per default oggi non tocca i dadi del libretto. La sua carta si
+  serata e per default nell'assedio non tocca i dadi del libretto. La sua carta si
   toglie subito e non torna (§0-bis, «Il comandante a 0 pf o meno»).
 - *Lo sportello*. Lo sportello è in BG73 (Appendice B); Gorthak sta in
   BH-BI 74-75, i troll in BG-BH e BI-BJ 76-77 (BK è sopra il fossato).
@@ -1332,15 +1332,15 @@ duelli sono tutta la battaglia dei pregen.
 - *A 0 pf o meno*: è abbattuto e resta in cima alla rampa; la guardia non lo
   porta via, e combatte fino alla morte sul suo corpo (la sua scheda, D10).
   +2 alla rocca; −3 all'orda, che si segna sulla scheda della serata e per
-  default oggi non tocca i dadi del libretto. La sua carta si toglie subito
+  default nell'assedio non tocca i dadi del libretto. La sua carta si toglie subito
   e non torna (§0-bis, «Il comandante a 0 pf o meno»).
 - *La guardia del corpo* (scelta del modulo, ⚠️ non SRD: l'SRD non ha una
   regola della guardia del corpo; qui è fatta di quadretti minacciati). Gli
   orog stanno
   a contatto di Grimjaw, due davanti e due ai lati, e la cima della rampa
   è **chiusa** `[CANONE — DM 2026-11-25, card «rampa di Grimjaw»]`: finché
-  i quattro sono in piedi non si passa, nemmeno col passo di 1,5 m. Prima un
-  orog va abbattuto o spinto via.
+  i due davanti sono in piedi non si passa, nemmeno col passo di 1,5 m. Prima
+  uno dei due davanti va abbattuto o spinto via.
   **Se un orog si stacca** `[CANONE — DM 2026-11-26, card «orog che si
   stacca dalla rampa»]` (provato in
   `plans/esperimenti/scontri-epici-pregen-2026-11-25/esito_rampa_chiusa.md`):
@@ -1595,7 +1595,7 @@ Grimjaw»]`. Prove simulate del 2026-11-25,
 sesto giro (4.000 duelli per riga, iniziativa tirata; script ed esiti in
 `plans/esperimenti/scontri-epici-pregen-2026-11-25/`: `esito_simulazione.md`,
 «la rampa chiusa, se ne abbatte uno», ed `esito_rampa_chiusa.md`). La
-guardia è quella delle Tattiche: prima un orog va
+guardia è quella delle Tattiche: prima uno dei due orog davanti va
 abbattuto, poi chi arriva a Grimjaw prende l'attacco d'opportunità di un
 orog e in quel round fa un attacco solo. Contano la Presenza intimidatoria,
 la Sfida di Yrsa da quando gli è accanto, la resistenza al fuoco 10
@@ -1605,7 +1605,7 @@ sotto 89 e lascia la rampa; «a 0 pf o meno», gli eroi lo portano a 0 pf o
 sotto prima. Lì Grimjaw è **abbattuto**
 `[CANONE — DM 2026-11-26, card «comandante a 0 pf nell'assedio»]`:
 resta in cima alla rampa, +2 al morale della rocca e −3 all'orda (si segna
-sulla scheda della serata, e per default oggi non tocca i dadi del
+sulla scheda della serata, e per default nell'assedio non tocca i dadi del
 libretto), la sua carta si toglie subito e non torna, e all'ondata finale
 della 3A, al round 12, entra al suo posto il capitano minore, che si ritira
 da solo (§0-bis, «Il comandante a 0 pf o meno»). Le cifre sono volte su cento.
@@ -1707,7 +1707,7 @@ del libretto, che arriva prima.
 è **abbattuto**, e la fuga non c'è. Resta in cima alla rampa, e la guardia
 non lo porta via: combatte fino alla morte sul suo corpo (la sua scheda,
 D10). **+2** al morale della rocca e **−3** all'orda, che si segna sulla
-scheda della serata e per default oggi non tocca i dadi del libretto
+scheda della serata e per default nell'assedio non tocca i dadi del libretto
 (§0-bis, «Il morale»). La sua carta si toglie subito e non torna, né oggi
 né il Giorno 3, e all'ondata finale della 3A, al round 12, entra al suo
 posto il capitano minore, che si ritira da solo (§0-bis, «Il comandante a
@@ -2595,8 +2595,8 @@ logorati» è in §0-bis, «I bonus»: per default lo sostituisce.
 | Se i pregen… | Risposta |
 |---|---|
 | **vogliono fare una sortita** sul campo dell'orda | il campo è sulla piana, a 500 m-1 km, sotto settecento paia d'occhi. Il DM lo dice in chiaro, una volta. Se escono, il loro settore è senza eroe per il giorno (libretto §9: 1d6, con 1-2 cede), e tornano con quello che hanno visto: i giganti che dormono alla rampa |
-| **vogliono uccidere Gorthak o Grimjaw** | possono `[CANONE — DM 2026-11-26, card «comandante a 0 pf nell'assedio»]`. Sotto metà il comandante fugge (libretto §5); se i dadi lo portano a 0 pf o meno prima della fuga è abbattuto, e la vittoria conta: +2 alla rocca, −3 all'orda (si segna sulla scheda della serata, e per default oggi non tocca i dadi del libretto), la sua carta si toglie subito e non torna, e al finale manca (§0-bis, «Il comandante a 0 pf o meno»). Se fugge e un pregen lo insegue oltre il ponte o la rampa, quel pregen entra nell'orda da solo: il DM glielo dice, e lo lascia decidere |
-| **vogliono spogliarlo, prenderlo vivo o finirlo** | a 0 pf esatti il comandante è inabile e cosciente; da −1 a −9 è morente, perde 1 pf a round e può stabilizzarsi da solo o con una cura `[SRD: Injury and Death]`. Per la battaglia è abbattuto in tutti i casi, e i numeri non cambiano `[INFERRED — Un comandante abbattuto ma vivo (a 0 pf, o morente e stabilizzato) agisce ancora, e i pregen possono prenderlo prigioniero o finirlo?; base: SRD, Injury and Death (a 0 pf una sola azione a round; morente, 10% a round di stabilizzarsi) e Helpless Defenders (il colpo di grazia, un'azione di round completo, solo su chi è indifeso), e la card del 2026-11-26, che dice solo «abbattuto» e «può morire»; default: a 0 pf esatti non agisce più, e lo finisce qualunque colpo a segno; morente è indifeso, e lo finisce un colpo di grazia; vivo, la rocca lo tiene legato e stasera non si interroga; morto, finito o prigioniero, la carta non torna e al finale manca]`. Quello che ha addosso si prende solo a scontro chiuso (§0-bis, «Il corpo») |
+| **vogliono uccidere Gorthak o Grimjaw** | possono `[CANONE — DM 2026-11-26, card «comandante a 0 pf nell'assedio»]`. Sotto metà il comandante fugge (libretto §5); se i dadi lo portano a 0 pf o meno prima della fuga è abbattuto, e la vittoria conta: +2 alla rocca, −3 all'orda (si segna sulla scheda della serata, e per default nell'assedio non tocca i dadi del libretto), la sua carta si toglie subito e non torna, e al finale manca (§0-bis, «Il comandante a 0 pf o meno»). Se fugge e un pregen lo insegue oltre il ponte o la rampa, quel pregen entra nell'orda da solo: il DM glielo dice, e lo lascia decidere |
+| **vogliono spogliarlo, prenderlo vivo o finirlo** | a 0 pf esatti il comandante è inabile e cosciente; da −1 a −9 è morente, perde 1 pf a round e può stabilizzarsi da solo o con una cura `[SRD: Injury and Death]`. Per la battaglia è abbattuto in tutti i casi, e i numeri non cambiano `[INFERRED — Un comandante abbattuto ma vivo (a 0 pf, o morente e stabilizzato) agisce ancora, e i pregen possono prenderlo prigioniero o finirlo?; base: SRD, Injury and Death (a 0 pf una sola azione a round; morente, 10% a round di stabilizzarsi) e Helpless Defenders (il colpo di grazia, un'azione di round completo, solo su chi è indifeso), e la card del 2026-11-26, che dice solo «abbattuto» e «può morire»; default: a 0 pf esatti non agisce più, e lo finisce qualunque colpo a segno; morente è indifeso, e lo finisce un colpo di grazia; vivo, la rocca lo tiene legato e stasera non si interroga; morto, finito, prigioniero o lasciato dov'è, la carta non torna e al finale manca]`. Quello che ha addosso si prende solo a scontro chiuso (§0-bis, «Il corpo») |
 | **chiudono il Re al sicuro il Giorno 3** | il Re sale lo stesso: è la decisione del DM. Se lo chiudono a chiave, usa la Corona sulle sue guardie (*comando*, «Lascia!»: lasciano le chiavi) o la sfonda a colpi di martello (una porta di legno rinforzato, 20 pf e durezza 5: il suo martello fa 1d8+12, due o tre round), e arriva sul cancello al round 3 della sequenza, col soffio già in posizione |
 | **esplorano il tunnel prima della ritirata** o mandano qualcuno a vederlo | il tunnel dietro la statua si apre solo spingendo la statua (Scena 7), e il Re non vuole che si apra prima del Giorno 3: chi lo apre di notte lo apre anche per l'orda. Se insistono e il Re cede, Dara in avanscoperta trova le tracce dei bugbear (Sopravvivenza CD 20 con Seguire Tracce): vale come la divinazione (§0), un'azione preparata a testa al round 1 della Scena 8 |
 | **evacuano i feriti e i civili prima** | i civili sono già al Cuore da prima dell'assedio (libretto §1). I feriti restano: il tunnel non si apre (sopra), e i 90 della ritirata li comprendono già |

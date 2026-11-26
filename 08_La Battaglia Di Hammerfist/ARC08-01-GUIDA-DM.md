@@ -1955,7 +1955,7 @@ DOPO L'APPARIZIONE - NUOVE FORZE (Round 11-15)
 - **Oscurità:** dentro la *luce del giorno* permanente dell'Apparizione si annulla dove le due aree si toccano (SRD *Daylight*). Artemis è umano: se la scheda non ha *Vista del Diavolo*, nel buio che crea non vede.
 - **Movimento:** vola con le Ali d'Ombra (18 m).
 
-**Alla fine del round 11, un corno** `[CANONE — DM 2026-10-19, D11]`: dal tunnel nord, oltre la porta di mithral, suona il corno di guerra di Grimjaw. È il segnale per il tavolo: il generale arriva al round dopo.
+**Alla fine del round 11, un corno** `[CANONE — DM 2026-10-19, D11]`: dal tunnel nord, oltre la porta di mithral, suona il corno di guerra di Grimjaw. È il segnale per il tavolo: il generale arriva al round dopo (se Grimjaw è stato abbattuto nell'assedio il corno è del capitano minore: «SE GRIMJAW È STATO ABBATTUTO NELL'ASSEDIO», più sotto).
 
 ### **ROUND 12-13: LA CONTROFFENSIVA**
 

@@ -232,7 +232,7 @@ Benchmark: PF T1-1 riga 8: CA 19 (21 con *pelle coriacea*) vs 21 / pf 36 vs 100 
 
 Boost log: correzione dei conti (SRD) — GS 8 → 8 — talento libero assegnato a Iniziativa Migliorata, incantesimi da ranger scritti; Volontà +6 tenuta con un mantello della resistenza +1.
 
-> `[CANONE — DM 2026-11-14, RC-001]` Via l'*amuleto della salute +4* (16.000 mo: da solo portava il corredo a circa 23.800 mo contro i 9.400 del livello effettivo 8, DMG 3.5, Tabella 4-23). Costituzione **17 → 13**, pf **60 → 44** (8d8+8), Tempra **+10 → +8**, Concentrazione **+9 → +7**. Il mantello della resistenza +1 resta.
+> `[CANONE — DM 2026-11-14, RC-001]` Via l'*amuleto della salute +4* (16.000 mo: da solo portava il corredo a circa 23.800 mo contro i 9.400 del livello effettivo 8, DMG 3.5, Tabella 4-23). Costituzione **17 → 13**, pf **60 → 44** (8d8+8), Tempra **+10 → +8**, Concentrazione **+9 → +7**. Il mantello della resistenza +1 resta. *Numeri di allora: dopo la serie d'élite (2026-11-20) e l'elfa dei boschi di mezza età (2026-11-26) oggi sono Cos 10, pf 36, Tempra +7, Concentrazione senza gradi; vedi il blocco storico.*
 
 <!-- storico -->
 > Valori superati, campo per campo (dalla scheda prima della revisione del 2026-10-16):

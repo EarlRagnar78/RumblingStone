@@ -146,7 +146,7 @@ voci:
 
 **Talenti** Iniziativa Migliorata, Tiro Ravvicinato, Tiro Preciso, Arma Accurata (spada corta)
 
-**Tattiche** **Obiettivo**: **il cavallo** o **il fantino**, quale dei due lo sceglie il DM; gli altri PG non sono il bersaglio. Il cavallo prende il *sangue nero di Lolth*, il fantino l'Attacco Mortale con la paralisi: il veleno drow (CD 13) resta per le guardie. Colpire e sparire. Se scoperti, coprono la fuga.
+**Tattiche** **Obiettivo**: **il cavallo** o **il fantino**, quale dei due lo sceglie il DM; gli altri PG non sono il bersaglio. Il cavallo prende il *sangue nero di Lolth*, il fantino l'Attacco Mortale con la paralisi: il veleno drow (CD 13) resta per le guardie. `[CANONE — DM 2026-11-26, card «Sangue nero e Attacco Mortale»]` Colpire e sparire. Se scoperti, coprono la fuga.
 
 **Capacità speciali**
 - **Attacco Mortale**: dopo 3 round di studio, Tempra CD 17 o morte, oppure paralisi per 1d6+4 round.

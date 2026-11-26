@@ -114,3 +114,56 @@ a pagamento).
 **Regola di adozione.** Una skill riscritta entra solo se `esito` non
 peggiora gli inventati senza marca. Se peggiora, si corregge e si rimisura.
 Se resta peggio, si tiene la vecchia.
+
+## 4 · Prove degli agenti
+
+Gli agenti di `.claude/agents/` hanno i loro casi, nella forma delle skill, in
+`.claude/agent-evals/<agente>/<caso>/`: fuori da `.claude/agents/`, perché
+Claude Code cerca gli agenti anche nelle sottocartelle e leggerebbe un
+`prompt.md` come un agente. Decisione: [ADR-0148](../../plans/adr/ADR-0148-i-fatti-si-verificano-con-script-e-gli-agenti-con-prove-fisse.md).
+Ogni agente ne ha almeno tre.
+
+```
+.claude/agent-evals/<agente>/<caso>/
+├── prompt.md
+├── case.yaml
+├── graders/
+│   └── 01-….md        almeno uno deterministico
+└── esempi/
+    ├── buona/risposta.md   (+ trace.jsonl se un giudice guarda gli strumenti)
+    └── cattiva/risposta.md
+```
+
+I giudici deterministici sono i tipi che `claude plugin eval` conosce già:
+`regex` sulla risposta, `tool_used` e `tool_order` sulla traccia,
+`file_exists` sui file prodotti. Un giudice `llm` può stare accanto come
+indicatore, non come prova. Il giudice deterministico vede la forma della
+risposta («dice 86.354», «ha letto il workflow prima di rispondere»), non se il
+ragionamento è giusto.
+
+Le due esecuzioni fisse giudicano i giudici: la buona deve passarli tutti, la
+cattiva perderne almeno uno. Un giudice che non le distingue non serve.
+
+```bash
+python3 scripts/prove_skill.py controlla --agenti        # la forma dei casi (in CI)
+python3 scripts/prove_skill.py esempi                    # buona passa, cattiva no (in CI)
+python3 scripts/prove_skill.py impronta --agente NOME    # sha256 di agente, skill e casi
+python3 scripts/prove_skill.py esegui --agente NOME --uscita DIR --cartella-lavoro WORKTREE
+python3 scripts/prove_skill.py registra --agente NOME --esecuzioni DIR --data AAAA-MM-GG
+python3 scripts/prove_skill.py cricchetto --base origin/main
+```
+
+`esegui` lancia `claude -p --agent` su ogni caso, costa token e dura circa
+quaranta minuti per i 36 casi. Vuole un git worktree usa e getta e pulito,
+che riporta al commit di partenza dopo ogni caso, e rifiuta la radice del
+repo. Passa all'agente gli `allowed_tools` del caso e gli vieta `git push`,
+`commit`, `reset` e `checkout`. `esegui` e `registra` dal server MCP non
+partono, neanche con `--allow-write`. `registra` valuta l'esecuzione con i
+soli giudici deterministici e aggiunge una riga a
+`.claude/agent-evals/ESITI.jsonl`, con l'impronta del worktree da cui
+l'agente ha girato, la versione della CLI, i casi falliti (che contano 0) e
+quelli non eseguiti. `cricchetto` guarda gli agenti che la PR
+tocca (il file, una skill che precarica, i casi) e chiede un esito con
+l'impronta nuova e un punteggio non sotto il precedente. In CI è in testing:
+avvisa e non blocca finché non si misura quanto oscilla l'esito fra due
+esecuzioni dello stesso caso.

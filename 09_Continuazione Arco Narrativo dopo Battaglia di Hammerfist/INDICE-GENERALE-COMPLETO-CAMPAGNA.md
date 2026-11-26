@@ -317,7 +317,7 @@ lecito (metà al Palio, metà alle sedute del Consiglio).
 | `Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md` · `...PROVE-BATTERIA.md` | Prove di ammissione + batterie | ✅ |
 | `Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md` · `...BALLATE.md` | Le 8 contrade (stemmi, canti, ballate) ↔ Consiglio di Rethmar | ✅ |
 | `Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md` | Esiti × scelte PG; echi a Rethmar (rinforzi, voto Consiglio, clock villain) | ✅ |
-| `Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md` | Stat blocks (assalto drow alla stalla, GS 11–12) | ✅ |
+| `Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md` | Stat blocks (assalto drow alla stalla, EL 12–13) | ✅ |
 | `Arco-Post-Hammerfist-P2D-PALIO-MAPPE.md` (+ `P2D-Palio-Allegati/`) | Mappe (piazza, città, rotta di soccorso, stalla) — SVG originali | ✅ |
 
 **Contenuti / perché conta:**

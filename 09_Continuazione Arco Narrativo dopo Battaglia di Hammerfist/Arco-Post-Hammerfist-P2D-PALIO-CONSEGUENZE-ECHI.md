@@ -173,7 +173,7 @@ rottura del Mythal) · vittoria dell'Oca = **−2 VP** + Fase 0-bis.
 
 ### 7.3 XP (a milestone, consigliato)
 - Fine **Giorno 1** (contrada scelta + Prova + Tratta): quota di un incontro **EL 12**.
-- Fine **Giorno 2** (partiti + Cena + stalla drow GS 11-12): quota **EL 13**.
+- Fine **Giorno 2** (partiti + Cena + stalla drow EL 13): quota **EL 13**.
 - Fine **Corsa + Decreto**: quota **EL 14** (piena se l'esito evita la resa).
 - Bonus da story-award: maledizione della Nonna spezzata, rete Halveth scoperta, drow
   catturato vivo — **EL 11** ciascuno.

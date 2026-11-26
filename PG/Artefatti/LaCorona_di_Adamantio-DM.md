@@ -884,12 +884,12 @@ Scena B: GENERALE GRIMJAW
 • Obiettivo: Infliggere > 60 danni a Grimjaw in 10 round.
 • Statistiche dei Nemici:
 
-◦ GENERALE GRIMJAW (Orog Guerriero 10/Signore della Guerra 3, GS 14):
+◦ GENERALE GRIMJAW (Orog Guerriero 11/Signore della Guerra 3, GS 15):
 
-▪ PF: 178; CA: 25; TS: Temp +16, Rifl +8, Vol +10
+▪ PF: 122 (150 in Furia); CA: 27; TS: Temp +14, Rifl +6, Vol +7
 ▪ Tattiche: Non attacca. Usa Tattico Superiore. Attiva Presenza Intimidatoria (CD
 
-16) se il Portatore si avvicina.
+19) se il Portatore si avvicina.
 
 ◦ OROG GUARDIE NERE (4 Orog Guerrieri 6):
 
@@ -1151,8 +1151,8 @@ Obiettivo: Superare le guardie e infliggere più di 70 danni direttamente al Gen
 
 Statistiche Chiave:
 
-• Generale Grimjaw (GS 14):
-◦ PF: 178; CA: 25
+• Generale Grimjaw (GS 15):
+◦ PF: 122 (150 in Furia); CA: 27 (scheda in Bestiario/villain/Generale_Grimjaw.md; fino al 2026-11-26 qui c'era GS 14, PF 178, CA 25)
 ◦ Tattiche: Non attacca. Ogni round usa Tattico Superiore per potenziare gli Hobgoblin o
 le sue guardie. Se il Portatore si avvicina a meno di 9m, attiva Presenza Intimidatoria.
 

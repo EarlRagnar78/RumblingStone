@@ -260,7 +260,7 @@ Queste schede sono progettate per velocizzare il combattimento di massa.
 | **Madre Sup. Dana** | _______ / 142 | Canto di Battaglia `[ ]` |
 | **Le Cantitrici della Pietra** | _______ / 98 (ciascuna) | Coro della Montagna: Terremoto `[ ]` Cura di Massa `[ ]` Urlo `[ ]` |
 | | | |
-| **Generale Grimjaw** | _______ / 178 | Furia Comandante `[ ]` |
+| **Generale Grimjaw** | _______ / 122 (150 in Furia) | Furia Comandante `[ ]` · sotto 61 ripiega e beve, sotto 30 si ritira |
 | **Gorthak il Trifronte** | _______ / 195 | Furia sotto 97 PF |
 | **Fauci di Palude** | _______ / 337 (meno il carry-over, `ARC08-10` §4.1) | Soffio a Cono `[ ]` · Presa di Thorik `[ ]` |
 | | | |

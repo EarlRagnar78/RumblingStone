@@ -9,7 +9,7 @@
 | duello del sergente: oggi GS 6 solo (la scorta non entra) / Avanzato GS 7 + 2 veterani GS 5 | 6.0 | 9.0 |
 | pattuglia e scout insieme (col sergente di oggi / Avanzato) | 11.2 | 11.4 |
 | Gorthak GS 12 + 2 troll GS 6 / Gorthak Avanzato GS 13 + 2 troll GS 6 | 12.6 | 13.5 |
-| Grimjaw GS 14 + 4 orog GS 7 | 14.9 | invariato |
+| Grimjaw GS 15 + 4 orog GS 7 | 15.6 | invariato |
 | il soffio: Fauci GS 15 + cavaliere GS 10 | 15.5 | invariato |
 | bugbear: 8 x GS 9 | 15.0 | invariato |
 | bugbear con la diversione: 8 x GS 9 + 7 x GS 5 | 15.6 | invariato |
@@ -151,39 +151,39 @@
 
 | eroi | il comandante fugge | a 0 pf o meno | al primo round | round medi alla fuga | round medi a 0 pf | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |
 |---|---|---|---|---|---|---|---|
-| Borin | 6% | 0% | 0% | 2.1 | – | 96% | 1% |
-| Yrsa | 56% | 5% | 3% | 2.5 | 2.6 | 47% | 27% |
-| Borin + Yrsa | 70% | 26% | 6% | 2.0 | 2.0 | 31% | 31% |
-| Borin + Yrsa + Harbek | 64% | 35% | 8% | 1.9 | 2.0 | 52% | 19% |
-| Borin + Yrsa + Ragnhild | 79% | 21% | 69% | 1.2 | 1.8 | 0% | 100% |
-| Harbek + Nala | 0% | 0% | 0% | – | – | 100% | 0% |
-| Harbek + Nala + Ragnhild | 99% | 0% | 1% | 3.6 | – | 31% | 40% |
-| Ragnhild | 65% | 0% | 0% | 4.1 | – | 35% | 30% |
+| Borin | 29% | 0% | 0% | 2.0 | 2.0 | 81% | 7% |
+| Yrsa | 48% | 21% | 3% | 2.2 | 2.1 | 37% | 39% |
+| Borin + Yrsa | 72% | 26% | 50% | 1.4 | 1.9 | 15% | 49% |
+| Borin + Yrsa + Harbek | 70% | 30% | 52% | 1.3 | 1.9 | 32% | 34% |
+| Borin + Yrsa + Ragnhild | 61% | 39% | 94% | 1.0 | 1.1 | 0% | 100% |
+| Harbek + Nala | 0% | 0% | 0% | 2.0 | – | 100% | 0% |
+| Harbek + Nala + Ragnhild | 100% | 0% | 50% | 1.8 | 2.3 | 6% | 88% |
+| Ragnhild | 97% | 0% | 32% | 2.0 | – | 3% | 88% |
 
 ## Grimjaw e quattro orog, variante: la rampa chiusa, se ne abbatte uno
 
 | eroi | il comandante fugge | a 0 pf o meno | al primo round | round medi alla fuga | round medi a 0 pf | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |
 |---|---|---|---|---|---|---|---|
-| Borin | 0% | 0% | 0% | 4.0 | – | 100% | 0% |
-| Borin + Yrsa | 68% | 9% | 0% | 3.5 | 3.6 | 85% | 4% |
-| Borin + Yrsa + Harbek | 78% | 12% | 0% | 3.2 | 3.3 | 84% | 5% |
-| Borin + Yrsa + Ragnhild | 80% | 20% | 69% | 1.2 | 1.9 | 0% | 100% |
-| Harbek + Nala + Ragnhild | 99% | 0% | 2% | 3.6 | – | 31% | 39% |
+| Borin | 0% | 0% | 0% | 3.3 | – | 100% | 0% |
+| Borin + Yrsa | 66% | 13% | 0% | 2.7 | 3.2 | 62% | 15% |
+| Borin + Yrsa + Harbek | 74% | 17% | 0% | 2.6 | 3.0 | 67% | 13% |
+| Borin + Yrsa + Ragnhild | 61% | 39% | 94% | 1.0 | 1.1 | 0% | 100% |
+| Harbek + Nala + Ragnhild | 100% | 0% | 48% | 1.8 | 2.0 | 6% | 88% |
 
 ## Grimjaw, la guardia si aggira, Ragnhild senza l'apertura
 
 | eroi | il comandante fugge | a 0 pf o meno | al primo round | round medi alla fuga | round medi a 0 pf | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |
 |---|---|---|---|---|---|---|---|
-| Borin + Yrsa + Ragnhild | 64% | 36% | 12% | 1.9 | 2.0 | 24% | 36% |
+| Borin + Yrsa + Ragnhild | 69% | 31% | 56% | 1.2 | 1.9 | 11% | 52% |
 
 ## Grimjaw, orog Avanzati (scartato)
 
 | eroi | il comandante fugge | a 0 pf o meno | al primo round | round medi alla fuga | round medi a 0 pf | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |
 |---|---|---|---|---|---|---|---|
-| Borin | 4% | 0% | 0% | 2.0 | – | 98% | 0% |
-| Borin + Yrsa | 69% | 23% | 6% | 2.0 | 2.0 | 53% | 17% |
-| Borin + Yrsa + Harbek | 66% | 30% | 8% | 2.0 | 2.0 | 71% | 10% |
-| Borin + Yrsa + Ragnhild | 80% | 20% | 69% | 1.2 | 1.9 | 0% | 94% |
+| Borin | 24% | 0% | 0% | 2.0 | 2.0 | 91% | 2% |
+| Borin + Yrsa | 73% | 22% | 50% | 1.4 | 1.9 | 30% | 33% |
+| Borin + Yrsa + Harbek | 72% | 26% | 54% | 1.3 | 1.9 | 51% | 22% |
+| Borin + Yrsa + Ragnhild | 63% | 37% | 94% | 1.0 | 1.1 | 0% | 95% |
 
 ## Limiti delle prove
 
@@ -199,8 +199,9 @@
   (morente: privo di sensi, perde 1 pf a round, col 10% di stabilizzarsi) e
   chi e' a -10 o meno (morto) (SRD 3.5, «Injury and Death»). Vale anche per
   «un eroe a terra». Il sergente, Gorthak e Grimjaw non rigenerano e nel
-  modello non si curano: la pozione che la scheda da' a Grimjaw sotto i 60
-  pf non c'e', perche' sotto 89 e' gia' fuggito.
+  modello non si curano: la *cura ferite gravi* che Grimjaw beve dopo aver
+  ripiegato sotto 61 non c'e', perche' a quel punto ha gia' lasciato la
+  rampa (la colonna «fugge»).
 - I troll dell'ariete rigenerano 5 danni non da fuoco a round, ma un troll a
   0 pf o meno resta fuori fino alla fine del duello. Per l'SRD 3.5
   («Regeneration») i danni che non vengono dal fuoco o dall'acido sono per

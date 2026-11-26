@@ -230,7 +230,8 @@ _CATENA = re.compile(r"^[\s>*_-]*catena\b[^:\n]*:(.+)$", re.I | re.M)
 # Solo un comando che *inizia* con git push o gh pr create|ready (dopo ; && || | o a
 # capo, con un eventuale timeout davanti): un heredoc che cita «git push» non conta.
 _PUSH = re.compile(r"(?:^|[;&|\n])\s*(?:timeout\s+\S+\s+)?"
-                   r"(?:git(?:\s+(?:-C|-c|--git-dir|--work-tree)\s+\S+|\s+--?[\w-]+(?:=\S+)?)*"
+                   r"(?:git(?:\s+(?:-C|-c|--git-dir|--work-tree)\s+\S+"
+                   r"|\s+-(?!C\s|c\s|-git-dir\s|-work-tree\s)[^\s=]+(?:=\S+)?)*"
                    r"\s+push\b|gh\s+pr\s+(?:create|ready)\b)")
 _DEROGA = re.compile(r"instradamento_agenti\.py\s+--deroga\s+[\"']([^\"']{15,})[\"']")
 PR_MCP = ("mcp__github__create_pull_request",)

@@ -84,7 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
-| 2026-11-25 | REGOLE-SENZA-OMISSIONI | Lotto «razze coi dadi vita razziali» e caratteristiche (card di Jfs del 20/11).… | ✅ schede bocciate dalla regola 21 → 3, tutte spiegate (l'orog letto come orco, Zin'thara letta come elfa, Tempestas dichiarato) |
+| 2026-11-25 | REGOLE-SENZA-OMISSIONI | Lotto «razze coi dadi vita razziali» e caratteristiche (card di Jfs del 20/11).… | ✅ schede bocciate dalla regola 21 → 3, tutte spiegate (l'orog letto come orco, Zin'thara letta come elfa, Tempestas dichiarato); dopo la verifica a due agenti,… |
 | 2026-11-25 | STATO-E-ORDINE | ADR-0142, aggiunta: la voce `**/rendered-*/` in `.claudeignore` (scelta di Jfs… | 🟡 file tracciati coperti 881 → 1.136; `rg -n -M 500 --ignore-file .claudeignore`, `main` → ramo: byte da −0,4% (Skullcrusher) a −2,7% (Belkram), file da −0,9%… |
 | 2026-11-25 | STATO-E-ORDINE | ADR-0146, correzione: la configurazione Claude arriva anche a livello utente. D… | 🟡 sessione headless nuova in `/home/user` nello stesso container: con la configurazione utente scattano UserPromptSubmit e PreToolUse su Bash,… |
 | 2026-11-25 | PIATTAFORMA-DI-SVILUPPO | P4 e P7, promozioni da testing a stable (D8, card del DM del 2026-11-25: «Tutti… | ✅ P4, P7. Su `main` 168 run su 168 con le stesse prove nei due job; mediana del passo pytest negli ultimi 10 run 1.127 s, sul run della #516 761 s (−32%; la st… |

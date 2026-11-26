@@ -4267,7 +4267,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 Cinquant'anni fa Skullcrusher il Nero uccise un re di Hammerfist, e da allora non ha mai perso. Stamattina vuole il secondo, e lo vuole davanti all'orda, perché per un drago il potere è quello che gli altri hanno visto. Con lui volano due viverne, veloci e velenose come vipere con le ali. Quello che succede nel cortile, la Forgia lo ricorderà.
 
-> **Read-aloud — da leggere ai giocatori.** *Per un respiro, sulle mura, sembra che il peggio sia passato.
+> **Read-aloud — da leggere ai giocatori.** *Per un respiro, sulle mura, il peggio è passato.
 > Poi gli orchi sotto le mura smettono di urlare. Non indietreggiano: aspettano.
 > Uno dopo l'altro alzano la faccia al cielo, e ridono.
 > Un vecchio nano di guardia lascia cadere la balestra. Non la raccoglie.
@@ -5026,7 +5026,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 Una tenda è bruciata in mezzo a diecimila nemici, e il mondo se n'è accorto. Le sentinelle l'hanno vista prendere fuoco a un chilometro dalle mura, e Re Thorek lo sa prima che gli eroi rientrino. Zog'tar Deatheye, se è vivo, ha imparato che i nani volano: da stanotte dorme al buio, ogni notte in un posto diverso, e due dei suoi sciamani guardano il cielo. E nessun generale perdona chi lo ha fatto uscire dal fuoco davanti ai suoi.
 
-> **Read-aloud — da leggere ai giocatori quando rientrano sulle mura.** *Dalle mura il campo dell'orda sembra un cielo rovesciato, pieno di stelle rosse.
+> **Read-aloud — da leggere ai giocatori quando rientrano sulle mura.** *Dalle mura il campo dell'orda è un cielo rovesciato, pieno di stelle rosse.
 > In mezzo, dove c'era la tenda nera, brucia ancora una brace grande come una casa.
 > Il vento porta fin quassù l'odore della pelle bruciata.
 > Le sentinelle non dicono niente. Uno batte il pugno sulla corazza, una volta.

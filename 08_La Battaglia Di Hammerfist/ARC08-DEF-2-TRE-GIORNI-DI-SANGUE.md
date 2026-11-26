@@ -32,7 +32,7 @@
 > mappe tattiche 1,5 m/quadretto; la MAPPA 1 di regia è a 3 m.
 >
 > **Le domande per il DM** (sono decise, meno quelle che nel testo portano
-> ancora la marca `[INFERRED]`: l'orog che si stacca dalla cima e che cosa
+> ancora la marca `[INFERRED]`: che cosa
 > passa a rampa chiusa (Tattiche, «La guardia del corpo»); per il
 > comandante abbattuto (§0-bis, «Il comandante a 0 pf o meno»), il −3
 > dell'orda sui dadi del libretto, la scheda e la ritirata del capitano
@@ -1341,10 +1341,9 @@ duelli sono tutta la battaglia dei pregen.
   è **chiusa** `[CANONE — DM 2026-11-25, card «rampa di Grimjaw»]`: finché
   i quattro sono in piedi non si passa, nemmeno col passo di 1,5 m. Prima un
   orog va abbattuto o spinto via.
-  **Se un orog si stacca** `[INFERRED — Se un orog lascia la cima senza
-  essere abbattuto, la rampa si apre?; base: la card «rampa di Grimjaw»
-  chiude la cima e non lo dice; il default qui sotto è provato in
-  `plans/esperimenti/scontri-epici-pregen-2026-11-25/esito_rampa_chiusa.md`]`:
+  **Se un orog si stacca** `[CANONE — DM 2026-11-26, card «orog che si
+  stacca dalla rampa»]` (provato in
+  `plans/esperimenti/scontri-epici-pregen-2026-11-25/esito_rampa_chiusa.md`):
   la cima la chiudono i due orog davanti, che non lasciano il posto finché
   Grimjaw è in piedi. I due ai lati di Grimjaw stanno dietro i primi, e sono
   i soli che le tattiche staccano: su chi lancia dal camminamento, lontano

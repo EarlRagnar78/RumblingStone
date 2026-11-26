@@ -1557,11 +1557,10 @@ di «la rampa», e «dove la pietra del muro è già rotta», e il resto vale. A
 Cancello la scala poggia sul camminamento sopra l'androne (BG-BJ 70-72);
 alla Torre Ovest, sul camminamento della cinta a est della torre (AG-AJ
 70-73), e la torre resta a Dara `[CANONE — DM 2026-11-25, card «dove sale
-Grimjaw»]`. Come stia la guardia in cima a una scala non è deciso
-`[INFERRED — Quando Grimjaw sale da una scala d'assedio la cima è chiusa
-come la rampa, e dove stanno i quattro orog sul camminamento?; base: la card
-«rampa di Grimjaw» parla della rampa, la card «dove sale Grimjaw» dà solo i
-quadretti della scala]`.
+Grimjaw»]`. In cima alla scala la guardia sta come sulla rampa chiusa: i
+due orog davanti chiudono la cima sul camminamento, i due ai lati di
+Grimjaw stanno dietro di loro, e valgono le stesse regole e le stesse cifre
+`[CANONE — DM 2026-11-26, card «la guardia di Grimjaw sulla scala»]`.
 
 **Finché la carta c'è** `[CANONE — DM 2026-11-04, P16, Grimjaw e il Re]`, i reparti dell'orda nel
 suo settore hanno **+1 ad AU e DU** (Tattico Superiore): il bianco (22 + AU)

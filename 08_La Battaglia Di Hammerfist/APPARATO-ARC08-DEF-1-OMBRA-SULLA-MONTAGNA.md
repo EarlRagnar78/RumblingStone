@@ -79,7 +79,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 4 | il campo, il conto | Salvatore lead | 5 |
 | SCENA 4 | il campo, i comandi | Game of Thrones lead | 6 |
 | SCENA 4 | il campo, la palude | Tolkien lead | 6 |
-| SCENA 5 | la Sala del Trono Ancestrale | Casa di Davide lead | 7 |
+| SCENA 5 | la Sala del Trono Ancestrale | Casa di Davide lead | 8 |
 | SCENA 6 | il cortile interno | Mercer lead | 7 |
 | SCENA 7 | le mura, il drago | Tolkien lead | 7 |
 | SCENA 8 | il pendio | Salvatore lead | 7 |

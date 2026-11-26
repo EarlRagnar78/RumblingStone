@@ -179,7 +179,7 @@ Comanda **Sonjak**, la Matrona: una persona sola, che Salvatore conosce soltanto
 | Underdark Dovil Runecaster (Deep Diviner) | 7 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Underdark dovil runecaster deep diviner cr7.htm` | Wizard |
 | Drow Warrior (base) | 1 | [CANONE — DM 2026-05-05] `Bestiario/mostri/drow-warrior-cr1.md` | FRCS; fanteria drow |
 | Drow Fighter 3 | 4 | [CANONE — DM 2026-05-05] `Bestiario/mostri/drow-fighter3-cr4.md` | Guardia casata |
-| Drow Priestess 9 of Lolth | 11 | [CANONE — DM 2026-05-05] `Bestiario/mostri/drow-priestess9-cr11.md` | Sajak rituali Fase 0 |
+| Drow Priestess 9 of Lolth | 10 | [CANONE — DM 2026-05-05] `Bestiario/mostri/drow-priestess9-cr10.md` | Sajak rituali Fase 0 |
 | Drow Wizard 7 | 8 | [CANONE — DM 2026-05-05] `Bestiario/mostri/drow-wizard7-cr8.md` | Supporto mago |
 | Drow Noble House Guard | 5 | [CANONE — DM 2026-05-05] `Bestiario/mostri/drow-noble-guard-cr5.md` | Élite Sajak |
 | Sonjak, la Matrona (per Sal «Matrona Sajak») | 13 | `Bestiario/villain/Sonjak/Sonjak.md` | Villain nominato; GS dalla scheda |

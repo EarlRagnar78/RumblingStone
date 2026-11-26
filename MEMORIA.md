@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-26 | REGOLE-SENZA-OMISSIONI | Le tredici scelte di Jfs sulle card del 26/11, dopo il ricalcolo del regolista.… | 🟡 `verifica_scheda.py` 0 violazioni su 133 schede, `validate_bestiario` ok, `componenti.py --check` ok, `validate_booklets` 22 manifest ok. Le due card aperte… |
 | 2026-11-25 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Gli scontri dei pregen sulla griglia, più duri e con schede legali (thread «Ren… | 🟡 in PR, ogni numero alzato è INFERRED con la domanda al DM (5 in DEF-1, 15 in DEF-2). Simulatore, 4.000 duelli per riga, seme 7: Gorthak di oggi con Borin poi… |
 | 2026-11-25 | REGOLE-SENZA-OMISSIONI | Lotto «razze coi dadi vita razziali» e caratteristiche (card di Jfs del 20/11).… | ✅ schede bocciate dalla regola 21 → 3, tutte spiegate (l'orog letto come orco, Zin'thara letta come elfa, Tempestas dichiarato); dopo la verifica a due agenti,… |
 | 2026-11-25 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | I nomi della Cannath Vale nei file di gioco (scelta di Jfs su card del 25/11, t… | 🟡 `git grep -w` su tutto il repo: Rhest 358 + RHEST 135 in 89/46 file, Blackfens 63 + 8, Brindol 167 in 36 → restano in archivi e storia, log e recap del 05/20… |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-21 | P16 · REGOLE | Due incoerenze trovate dal thread dei draghi (richiesta del coordinatore del 21… | ✅ due file, nessun numero di scheda cambiato |
 | 2026-11-20 | STANDARD-STAMPA | ADR-0122, S1: le introduzioni dei capitoli VIII e X nel booklet della serata di… | S1 capitoli con introduzione ≥ 500 caratteri: 2/17 → 9/17 con la misura nuova (1/17 → 2/17 con quella di prima); restano senza i capitoli di preparazione e di… |
 | 2026-11-20 | STANDARD-STAMPA | ADR-0122, S4: l'appendice della regione nel booklet della serata di ARC-07 (ric… | S4 pagine di regione/PNG 0/3 → 9/3; pagine 132 → 141; note di lavoro in stampa nella serata 0 (prima di togliere l'apparato dal conto ne contava 6); parole del… |
-| 2026-11-20 | PIATTAFORMA-DI-SVILUPPO | ADR-0148 (proposta), i fatti si verificano con script e gli agenti con prove fi… | 🟡 `verifica_px`: 16 test, 366 mutanti su 366, 0 falsi allarmi su 3 versioni storiche del registro; `verifica_rimandi`: 1.744 rimandi, 1.026 tornano, 1 rotto (… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 324 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 230 voci, l'ultima MS-0230 del 2026-11-20 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 231 voci, l'ultima MS-0231 del 2026-11-20 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

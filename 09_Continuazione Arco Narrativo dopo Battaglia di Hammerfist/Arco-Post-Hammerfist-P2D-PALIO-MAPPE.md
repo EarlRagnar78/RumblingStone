@@ -77,13 +77,13 @@ La **sincronizzazione** col fronte (INTEGRAZIONE §3): due vie per i rinforzi vi
 
 ![Stalla — assalto drow](P2D-Palio-Allegati/mappe/stalla-assalto-drow.svg)
 
-Griglia **1 quadretto = 5 ft**, GS 11–12 (statblocchi in `...P2D-PALIO-STATBLOCCHI.md` §3).
+Griglia **1 quadretto = 5 ft**, EL 12–13 (statblocchi in `...P2D-PALIO-STATBLOCCHI.md` §3).
 - I drow entrano dalla **botola/fogna** (angolo SO) con *Oscurità*; puntano al **BOX** del
   cavallo (obiettivo: avvelenarlo), usano *Silenzio* per soffocare gli allarmi.
 - Il **Barbaresco (B)** è accanto al cavallo; la **scorta PG (P)** copre la porta principale.
   Sorpresa se non di guardia: Ascoltare DC 20.
 - Buio totale (torce spente): **Scurovisione**/luce = cruciale.
-- Token in mappa: **D** Drow Assassino · **C** Chierica di Lolth · **S** Servitore della Spora.
+- Token in mappa: **D** Drow Assassina di Lolth · **C** Chierica di Lolth · **S** Servitore della Spora.
 - **Catturare un drow vivo** = intel Fase 0 Rethmar **−1 clock Sonjak** (INTEGRAZIONE §3.2).
 
 ---
@@ -100,7 +100,7 @@ per mappa. Companion di raccordo:*
 | **Channathgate città** | `channathgate-citta.svg` | 8 rioni-contrada, Porta dell'Alba/del Porto, Darsena; spostamenti dei partiti, infiltrazione Civetta, porto |
 | **Channathgate in scala** | `channathgate-pianta.svg` | la pianta che vale per le misure: arg (Palazzo dei Nove), maidan (il Campo), bazar coperto, giardini murati, qanat, Darsena e chiuse; città aperta di circa 250 ha e 25.000 abitanti: mura e torri solo all'arg (828 m, 27 torri e 2 alla porta), fossi e muri di rione con porte di quartiere |
 | **Rotta di soccorso** | `rotta-soccorso.svg` | Dawn Way (~35 mi, 1,5 gg, cavalleria) vs Fiume Cannath (~1 gg, flotta); **deadline Day 38** per la Fase 1 |
-| **Stalla — assalto drow** | `stalla-assalto-drow.svg` | 1 quadretto = 5 ft, GS 11-12; drow dalla botola SO con *Oscurità/Silenzio*, buio totale |
+| **Stalla — assalto drow** | `stalla-assalto-drow.svg` | 1 quadretto = 5 ft, EL 12-13; drow dalla botola SO con *Oscurità/Silenzio*, buio totale |
 
 ### ⚔️ TATTICHE (companion T5c)
 

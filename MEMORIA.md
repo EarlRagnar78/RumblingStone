@@ -85,6 +85,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
 | 2026-11-26 | REGOLE-SENZA-OMISSIONI | Grimjaw rinforzato e i quattro punti aperti della #523 (card di Jfs del 26/11).… | 🟡 rampa chiusa con Borin e Yrsa: ripiega 54, a 0 pf 19, un eroe a terra 73 (a 100 pf erano 53 · 27 · 67; accettato a 178: 62 · 8 · 82); `verifica_scheda.py` 0… |
+| 2026-11-26 | RICERCA-PROSA-PECULIARE | Cieco A sul ritmo della frase (card del DM del 19/11 «Solo A per ora»): 24 copp… | ✅ nessuna differenza dimostrata (13 a 7, soglia 14): non cambia niente |
 | 2026-11-26 | REGOLE-SENZA-OMISSIONI | Le tredici scelte di Jfs sulle card del 26/11, dopo il ricalcolo del regolista.… | 🟡 `verifica_scheda.py` 0 violazioni su 133 schede, `validate_bestiario` ok, `componenti.py --check` ok, `validate_booklets` 22 manifest ok. Le due card aperte… |
 | 2026-11-25 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Gli scontri dei pregen sulla griglia, più duri e con schede legali (thread «Ren… | 🟡 in PR, ogni numero alzato è INFERRED con la domanda al DM (5 in DEF-1, 15 in DEF-2). Simulatore, 4.000 duelli per riga, seme 7: Gorthak di oggi con Borin poi… |
 | 2026-11-25 | REGOLE-SENZA-OMISSIONI | Lotto «razze coi dadi vita razziali» e caratteristiche (card di Jfs del 20/11).… | ✅ schede bocciate dalla regola 21 → 3, tutte spiegate (l'orog letto come orco, Zin'thara letta come elfa, Tempestas dichiarato); dopo la verifica a due agenti,… |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-21 | P16 · REGOLE | Skullcrusher Vecchio come al duello del 20/11 (scelte di Jfs del 21/11 su card)… | ✅ tre conosciuti mancanti (7/5/3/2 dell'SRD), oggetti dal tesoro (CA 43, contatto 13, TS +24/+21/+23), *immagine speculare* al corno, passate lunghe, gittate;… |
 | 2026-11-21 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALIT… | Corredo dei draghi, scelte del DM sulle card del 21/11. **Fauci di Palude** «A… | In PR. Quota del tesoro triplo addosso: Fauci 0% → 47%, Tyrgarun 0% → 24%, Ozyrrandion 27% → 88%, Regiarix 0% → 36%, drago di Vaereth 0% → 19%. CA: Fauci 29 →… |
 | 2026-11-21 | P16 · REGOLE | Due incoerenze trovate dal thread dei draghi (richiesta del coordinatore del 21… | ✅ due file, nessun numero di scheda cambiato |
-| 2026-11-20 | STANDARD-STAMPA | ADR-0122, S4: l'appendice della regione nel booklet della serata di ARC-07 (ric… | S4 pagine di regione/PNG 0/3 → 9/3; pagine 132 → 141; note di lavoro in stampa nella serata 0 (prima di togliere l'apparato dal conto ne contava 6); parole del… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 324 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 231 voci, l'ultima MS-0231 del 2026-11-26 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 232 voci, l'ultima MS-0232 del 2026-11-26 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

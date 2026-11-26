@@ -13,11 +13,11 @@ ca-dettaglio: contatto 14, colto alla sprovvista 15 (+5 cuoio borchiato +2, +4 D
 pf: 36
 pf-dado: 8d8
 ts: Temp +7, Rifl +11, Vol +5
-attributi: For 12 Des 19 Cos 11 Int 10 Sag 14 Car 8
+attributi: For 13 Des 18 Cos 10 Int 9 Sag 15 Car 9
 velocita: 9 m a piedi
 iniziativa: +8
 attacchi:
-  - Distanza arco lungo composito +1 (For 12) +13/+8 (1d8+2/19-20/×3)
+  - Distanza arco lungo composito +1 (For 12) +14/+9 (1d8+2/×3)
   - Mischia spada corta +9/+4 (1d6+1/19-20)
 ```
 
@@ -43,7 +43,7 @@ Lythiel ha **2 livelli druidici falliti** (background canonico): cominciò il pe
 
 ### DESCRIZIONE
 
-Elfa dei Boschi sui 220 anni (giovane-matura per la sua specie), 1m70, magrissima ma di muscoli densi tipici dei ranger elfici. **Pelle olivastra scura**, capelli castani con riflessi verde-bosco intrecciati attorno alla nuca con strisce di **corteccia di quercia consacrata**. Occhi ambra vivo. **Tre cicatrici parallele sulla guancia destra** (artiglio di un Treant Corrotto, tre anni fa).
+Elfa dei Boschi sui 220 anni (mezza età per la sua specie), 1m70, magrissima ma di muscoli densi tipici dei ranger elfici. **Pelle olivastra scura**, capelli castani con riflessi verde-bosco intrecciati attorno alla nuca con strisce di **corteccia di quercia consacrata**. Occhi ambra vivo. **Tre cicatrici parallele sulla guancia destra** (artiglio di un Treant Corrotto, tre anni fa).
 
 **Equipaggiamento visibile:**
 - **Arco lungo composito +1 di tasso del Cerchio Sacro** (oggetto eredità, non venduto). Faretra di **40 frecce di legno di noce nero** — "frecce della seconda morte" che riducono la rigenerazione (ridotta) per 1 minuto su bersaglio colpito.
@@ -136,12 +136,12 @@ Niente subito. Solo: *"Quando vedi Saraah, dille che ho mantenuto la promessa. L
 
 | Caratteristica | Valore | Mod. |
 |:---|:---:|:---:|
-| **Forza** | 12 | +1 |
-| **Destrezza** | 19 | +4 |
-| **Costituzione** | 11 | +0 |
-| **Intelligenza** | 10 | +0 |
-| **Saggezza** | 14 | +2 |
-| **Carisma** | 8 | −1 |
+| **Forza** | 13 | +1 |
+| **Destrezza** | 18 | +4 |
+| **Costituzione** | 10 | +0 |
+| **Intelligenza** | 9 | −1 |
+| **Saggezza** | 15 | +2 |
+| **Carisma** | 9 | −1 |
 
 **Punti Ferita:** 36 (8d8)
 **Iniziativa:** +8 (+4 Des, +4 Iniziativa Migliorata)
@@ -156,7 +156,7 @@ Niente subito. Solo: *"Quando vedi Saraah, dille che ho mantenuto la promessa. L
 **BAB/Lotta:** +8 / +9
 
 **Attacchi:**
-- Arco lungo composito +1 (For 12) +13/+8 (1d8+2, 19–20/×3); con Tiro Rapido +11/+11/+6; con Tiro Multiplo, azione standard, 2 frecce a +9 (1d8+2 ciascuna)
+- Arco lungo composito +1 (For 12) +14/+9 (1d8+2, ×3); con Tiro Rapido +12/+12/+7; con Tiro Multiplo, azione standard, 2 frecce a +10 (1d8+2 ciascuna)
 - Spada corta +9/+4 (1d6+1, 19–20/×2)
 - 1 freccia avvelenata speciale (5 al giorno)
 
@@ -168,7 +168,7 @@ Niente subito. Solo: *"Quando vedi Saraah, dille che ho mantenuto la promessa. L
 - **Andatura nel Bosco** (Ex, si muove alla velocità normale nel sottobosco naturale)
 - **Cammino Senza Tracce** (Ex) — non è un privilegio del ranger SRD, è del druido: la scheda glielo dà per gli anni nel Cerchio
 - **Stile di Combattimento (Tiro)**, poi **Stile Migliorato**: Tiro Rapido e Tiro Multiplo come talenti bonus
-- **Incantesimi da ranger** (incantatore di 4° livello, CD 12+liv; 2/1 al giorno con Saggezza 14): di solito *resistere all'energia* e *passo veloce* al 1°, *pelle coriacea* al 2° (+2 di armatura naturale per 40 minuti). Confermati dal DM il 2026-10-18: il testo del 2026-05-04 («sa lanciare 0 incantesimi») è superato
+- **Incantesimi da ranger** (incantatore di 4° livello, CD 12+liv; 2/1 al giorno con Saggezza 15): di solito *resistere all'energia* e *passo veloce* al 1°, *pelle coriacea* al 2° (+2 di armatura naturale per 40 minuti). Confermati dal DM il 2026-10-18: il testo del 2026-05-04 («sa lanciare 0 incantesimi») è superato
 - **Inathiel** — Gufo Gigante Celestiale con la scheda di Signore Ventolesto (`08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md`): PF 105 (10d10+50), CA 20, Volo 24 m, 2 artigli +15 (1d8+6) e morso +10 (1d8+3), RD 5/magia, RI 15; la sua cavalcatura `[CANONE — DM 2026-11-05, P16, Bestiario]`
 
 <!-- storico -->
@@ -179,12 +179,12 @@ Niente subito. Solo: *"Quando vedi Saraah, dille che ho mantenuto la promessa. L
 > ⚠ Prerequisito: il gufo gigante è una **bestia magica**, non un animale, e non è nella lista dei compagni animali dell'SRD; in più è celestiale. Come compagno animale del ranger non si può prendere. La scheda lo tiene così com'è: va letto come una cavalcatura legata, come i gufi del Signore Ventolesto, non come un privilegio di classe PF1e: il compagno animale del ranger PF1e non ammette bestie magiche nemmeno lì; il talento *Leadership* lo prenderebbe come gregario, ma stravolge (il gufo diventerebbe un PNG che sale di livello).
 
 #### Talenti
-Seguire Tracce, Tiro Rapido, Resistenza Fisica, Tiro Multiplo (bonus di classe); Critico Migliorato (arco lungo), Abilità Focalizzata (Conoscenze natura), Iniziativa Migliorata.
+Seguire Tracce, Tiro Rapido, Resistenza Fisica, Tiro Multiplo (bonus di classe); Arma Focalizzata (arco lungo), Abilità Focalizzata (Conoscenze natura), Iniziativa Migliorata.
 
 #### Abilità chiave
-Conoscenze (Natura) +11, Sopravvivenza +13, Cavalcare (con Inathiel) +15, Osservare +13, Ascoltare +13, Concentrazione +4, Muoversi Silenziosamente +12, Nascondersi +12.
+Conoscenze (Natura) +7, Sopravvivenza +13, Cavalcare (con Inathiel) +11, Osservare +13, Ascoltare +13, Muoversi Silenziosamente +12, Nascondersi +12.
 
-Benchmark: PF T1-1 riga 8: CA 19 (21 con *pelle coriacea*) vs 21 / pf 36 vs 100 (sotto) / atk +13 vs +15 (2 sotto) / danni con Tiro Rapido circa 22 vs 35 / TS buoni +7 e +11 vs +11. Arciera da seconda linea: colpisce quasi come il suo GS, non lo regge.
+Benchmark: PF T1-1 riga 8: CA 19 (21 con *pelle coriacea*) vs 21 / pf 36 vs 100 (sotto) / atk +14 vs +15 (1 sotto) / danni con Tiro Rapido 19,5 se vanno a segno tutte e tre vs 35 / TS buoni +7 e +11 vs +11. Arciera da seconda linea: colpisce quasi come il suo GS, non lo regge.
 
 ## Esiti possibili
 
@@ -232,7 +232,7 @@ Benchmark: PF T1-1 riga 8: CA 19 (21 con *pelle coriacea*) vs 21 / pf 36 vs 100 
 
 Boost log: correzione dei conti (SRD) — GS 8 → 8 — talento libero assegnato a Iniziativa Migliorata, incantesimi da ranger scritti; Volontà +6 tenuta con un mantello della resistenza +1.
 
-> `[CANONE — DM 2026-11-14, RC-001]` Via l'*amuleto della salute +4* (16.000 mo: da solo portava il corredo a circa 23.800 mo contro i 9.400 del livello effettivo 8, DMG 3.5, Tabella 4-23). Costituzione **17 → 13**, pf **60 → 44** (8d8+8), Tempra **+10 → +8**, Concentrazione **+9 → +7**. Il mantello della resistenza +1 resta.
+> `[CANONE — DM 2026-11-14, RC-001]` Via l'*amuleto della salute +4* (16.000 mo: da solo portava il corredo a circa 23.800 mo contro i 9.400 del livello effettivo 8, DMG 3.5, Tabella 4-23). Costituzione **17 → 13**, pf **60 → 44** (8d8+8), Tempra **+10 → +8**, Concentrazione **+9 → +7**. Il mantello della resistenza +1 resta. *Numeri di allora: dopo la serie d'élite (2026-11-20) e l'elfa dei boschi di mezza età (2026-11-26) oggi sono Cos 10, pf 36, Tempra +7, Concentrazione senza gradi; vedi il blocco storico.*
 
 <!-- storico -->
 > Valori superati, campo per campo (dalla scheda prima della revisione del 2026-10-16):
@@ -246,4 +246,6 @@ Boost log: correzione dei conti (SRD) — GS 8 → 8 — talento libero assegnat
 > - era: Cos 17, pf 60 (8d8+24), Tempra +10, Concentrazione +9, con l'amuleto della salute +4 → ora Cos 13, pf 44 (8d8+8), Tempra +8, Concentrazione +7, senza amuleto
 > Valori superati il 2026-11-20 (card del DM «Serie d'élite»: la scheda costava 40 punti di acquisto, sopra i 32 della DMG 3.5):
 > - era: For 14 Des 18 Cos 13 Int 14 Sag 16 Car 12, pf 44 (8d8+8), Tempra +8, Volontà +6, Lotta +10, arco (For 14) 1d8+3, spada corta +10/+5 (1d6+2), CD 13 + livello, Natura +13, Sopravvivenza +14, Osservare e Ascoltare +14, Concentrazione +7 → ora serie d'élite della DMG 3.5 p. 110 più la razza elfo: Des 15 (+1 al 4° e all'8°), Sag 14, Cos 13, For 12, Int 10, Car 8. I punti abilità scendono da 88 a 66 (Ranger 8, Int 10): Concentrazione perde 2 gradi, le altre restano. L'arco composito passa a For 12 per non prendere −2 a colpire; incantesimi al giorno invariati (2/1).
+> - era: fino al 2026-11-26 For 12 Des 19 Cos 11 Int 10 Sag 14 Car 8 (modificatori dell'elfo comune adulto), 66 punti abilità, Conoscenze (Natura) +11, Cavalcare +15, Concentrazione +4 → ora elfa dei boschi (SRD: For +2, Des +2, Cos −2, Int −2) di mezza età (da 175 anni: −1 For, Des, Cos; +1 Int, Sag, Car) sulla stessa serie d'élite: For 13 Des 18 Cos 10 Int 9 Sag 15 Car 9. Cambia solo il modificatore d'Intelligenza (−1): punti abilità (6 − 1) × 4 + 5 × 7 = 55, tagliati Concentrazione 4 → 0, Conoscenze (Natura) 8 → 5 (tiene la sinergia con Sopravvivenza) e Cavalcare 11 → 7. pf, CA, TS, attacchi e incantesimi non cambiano. Card del dm del 2026-11-26 «Elfa dei boschi, mezza età» e «Concentrazione, Conoscenze, Cavalcare».
+> - era: fino al 2026-11-26 Critico Migliorato (arco lungo), arco +13/+8 con critico 19–20/×3, Tiro Rapido +11/+11/+6, Tiro Multiplo +9. Il talento chiede BAB +8 (SRD) e un Ranger 8 lo prendeva al 6° con BAB +6 → ora Arma Focalizzata (arco lungo): arco +14/+9 (×3), Tiro Rapido +12/+12/+7, Tiro Multiplo +10. Nel benchmark i danni di Tiro Rapido erano «circa 22»: tre frecce da 6,5 fanno 19,5. Card del dm del 2026-11-26 «Arma Focalizzata (arco lungo)».
 <!-- /storico -->

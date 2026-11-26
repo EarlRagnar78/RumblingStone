@@ -2557,27 +2557,26 @@
      "Sag": 10
     },
     [
-     "letta dalla riga delle caratteristiche della scheda stessa",
-     "⚠ Cos 12 ricavata da pf 40 su 9 DV, ma la scheda scrive 11: si tiene la scheda, da verificare."
+     "letta dalla riga delle caratteristiche della scheda stessa"
     ]
    ],
    "genera_senza_fonte": [
     {
-     "Car": 20,
-     "Cos": 12,
+     "Car": 19,
+     "Cos": 10,
      "Des": 18,
      "For": 12,
-     "Int": 13,
+     "Int": 15,
      "Sag": 10
     },
     [
-     "array elite del Manuale del DM (creatura)",
+     "array elite del Manuale del DM (PNG con classe)",
      "variazione a seme fisso: Int +1, Cos −1",
-     "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 10) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
+     "un avanzamento ogni 4 livelli, contati sul GS 10 — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
+     "modificatori razziali SRD: drow Des +2 Cos -2 Int +2 Car +2",
      "Des 18 **letta da ca-dettaglio** — il vincolo batte l'array",
-     "Cos 12 **ricavata da pf 40 su 9 DV** — il vincolo batte l'array",
-     "For 12 **ricavata da BAB e lotta** — il vincolo batte l'array",
-     "⚠ Cos al più 11 ricavata da Temp +4 (base +4), ma 12 viene da un dato più forte: si tiene, da verificare."
+     "Cos 10 **ricavata da pf 34 su 9 DV** — il vincolo batte l'array",
+     "For 12 **ricavata da BAB e lotta** — il vincolo batte l'array"
     ]
    ],
    "giudica": {
@@ -2615,7 +2614,7 @@
       0
      ],
      "pf": [
-      40,
+      34,
       "9-54",
       0
      ],
@@ -2686,7 +2685,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 3991,
+    "senza_note": 4449,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -2712,8 +2711,8 @@
     },
     "vincoli": {
      "cos_da_pf": [
-      12,
-      "ricavata da pf 40 su 9 DV"
+      10,
+      "ricavata da pf 34 su 9 DV"
      ],
      "des_da_iniziativa": null,
      "des_vincolata": [
@@ -2739,7 +2738,7 @@
     "media": 31,
     "motivo": null,
     "nuovo": "9d6",
-    "pf": 40,
+    "pf": 34,
     "vecchio": "9d6"
    },
    "scheda": {
@@ -2776,9 +2775,9 @@
     "gs": 10.0,
     "lotta": 7,
     "mischia": "spada corta +1 +11/+6 (1d6+2/19-20)",
-    "pf": 40,
+    "pf": 34,
     "provenienza": "a mano",
-    "tipo": "Medium humanoid (elf), NE",
+    "tipo": "Medium humanoid (elf), NE, Ladro 5 / Assassino 4",
     "ts": [
      4,
      14,
@@ -3161,7 +3160,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 1936,
+    "senza_note": 3033,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -3263,7 +3262,7 @@
     ]
    }
   },
-  "Bestiario/mostri/drow-priestess9-cr11.md": {
+  "Bestiario/mostri/drow-priestess9-cr10.md": {
    "controlla": [],
    "genera": [
     {
@@ -3280,7 +3279,7 @@
    ],
    "genera_senza_fonte": [
     {
-     "Car": 11,
+     "Car": 13,
      "Cos": 10,
      "Des": 16,
      "For": 10,
@@ -3289,8 +3288,8 @@
     },
     [
      "array elite del Manuale del DM (creatura)",
-     "variazione a seme fisso: For +1, Car −1",
-     "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 11) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
+     "variazione a seme fisso: Car +1, For −1",
+     "creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS 10) — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
      "Des 16 **letta da ca-dettaglio** — il vincolo batte l'array",
      "Des 16 **ricavata dall'iniziativa** — il vincolo batte l'array",
      "Cos 10 **ricavata da pf 40 su 9 DV** — il vincolo batte l'array",
@@ -3338,7 +3337,7 @@
      ],
      "pf_media": 40
     },
-    "file": "Bestiario/mostri/drow-priestess9-cr11.md",
+    "file": "Bestiario/mostri/drow-priestess9-cr10.md",
     "provenienza": "a mano",
     "scarti": {},
     "template": null,
@@ -3394,7 +3393,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 2687,
+    "senza_note": 3753,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -3444,7 +3443,7 @@
      9,
      72
     ],
-    "file": "Bestiario/mostri/drow-priestess9-cr11.md",
+    "file": "Bestiario/mostri/drow-priestess9-cr10.md",
     "legale": true,
     "media": 40,
     "motivo": null,
@@ -3474,7 +3473,7 @@
       "nome": "humanoid"
      }
     ],
-    "gs": 11.0,
+    "gs": 10.0,
     "lotta": 6,
     "mischia": "",
     "pf": 40,
@@ -23594,7 +23593,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "copiate",
-    "senza_note": 7382,
+    "senza_note": 9160,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {

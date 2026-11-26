@@ -136,9 +136,9 @@ Il **Barbaresco PG** difende il cavallo. Questa notte, **Matrona Sonjak** (clock
 invia **sicari drow** a Channathgate per **avvelenare** il cavallo dell'Istrice/Torre,
 **corrompere/rapire** il fantino e **coprire** il trasbordo notturno delle statue al porto.
 
-- **L'incontro** (GS 11–12, mappa stalla in MAPPE): **2 Drow Assassini** (GS 9) + **1 Drow
+- **L'incontro** (EL 13, mappa stalla in MAPPE): **2 Drow Assassine di Lolth** (GS 10) + **1 Drow
   Chierica di Lolth** (GS 10) + un **innesto fungino** (Servitore della Spora, GS 3) come
-  ariete vivente. Tattica: buio magico, veleno CD 16, colpire il cavallo o rapire il fantino, a scelta del DM; gli altri PG non sono il bersaglio (STATBLOCCHI §3.1).
+  ariete vivente. Tattica: buio magico; il cavallo col *sangue nero di Lolth* (Tempra CD 17, 1d6 Cos), il fantino paralizzato con l'Attacco Mortale (Tempra CD 17) e portato via `[CANONE — DM 2026-11-26, card «Sangue nero e Attacco Mortale»]`; colpire il cavallo o rapire il fantino, a scelta del DM; gli altri PG non sono il bersaglio (STATBLOCCHI §3.1).
 - **Poste**:
   - Cavallo avvelenato → **−4 Cavalcare** in corsa (o morte del cavallo → si corre scossi
     o con una brenna di riserva).

@@ -9,7 +9,7 @@
 **Location**: campi drow al confine della Valle di Channath, sotto il livello delle radici
 **Motivation**: uscirne. Casa Vel'Ryn è finita sotto una purga del clero di Lolth diciannove anni fa, e Zin'thara è quello che ne resta. Serve la Matrona mentre raccoglie prove dei traffici fra Sonjak e Il Collezionista: quando ne avrà abbastanza, quelle carte le compreranno un esilio tranquillo in superficie.
 **CR**: 12 | **Race/Class**: Drow, Mago (Illusionista) 9 / Danzatrice delle Ombre 2
-**Key stats**: vedi `zin-thara-vel-ryn-cr12.md` — hp 44, CA 20, RI 22, **nascondersi in piena vista**, *evocazione/invocazione delle ombre*, CD illusioni 21-23
+**Key stats**: vedi `zin-thara-vel-ryn-cr12.md` — hp 44, CA 20, RI 22, **nascondersi in piena vista**, *evocazione/invocazione delle ombre*, CD illusioni 20-22
 **Token**: — (nessuno assegnato)
 
 ---

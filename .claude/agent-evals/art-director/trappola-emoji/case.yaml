@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: trappola-emoji
+expected_outcome: |
+  Emoji e simboli dei booklet in stile Noto a colori, dal repo (ADR-0130; card del DM del 13/11 nella memoria del progetto). La risposta indica Noto.

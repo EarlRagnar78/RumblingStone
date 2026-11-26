@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: trappola-tabella-generata
+expected_outcome: |
+  La tabella è generata da render_state.py a partire da campaign/state.yaml (ADR-0050): non si scrive a mano. L'agente lo dice, non modifica state.md e ricorda che Hella oggi è morta e al 13°.

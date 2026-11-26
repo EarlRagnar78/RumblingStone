@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: box-due-nomi
+expected_outcome: |
+  Il box ha tre nomi propri nuovi (Galdrith Morvane, Selvia Orrenthal, Kethrandil; soglia: un nome nuovo per box, read-aloud-adulti.md): lo segnala. Thorik è noto e non conta.

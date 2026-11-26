@@ -1,0 +1,1 @@
+{"type": "assistant", "message": {"content": [{"type": "tool_use", "name": "Edit", "input": {"file_path": "campaign/state.md", "old_string": "13", "new_string": "14"}}]}}

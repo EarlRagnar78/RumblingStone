@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: trappola-sgambetto
+expected_outcome: |
+  Il lessico del repo vuole «sbilanciare», mai «sgambetto»: lo segnala invece di confermare.

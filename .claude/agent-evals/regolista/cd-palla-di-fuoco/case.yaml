@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: cd-palla-di-fuoco
+expected_outcome: |
+  CD 17 = 10 + 3 (livello dell'incantesimo) + 4 (modificatore di Int 18), SRD 3.5.

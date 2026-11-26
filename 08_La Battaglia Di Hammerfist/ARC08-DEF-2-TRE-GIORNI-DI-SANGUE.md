@@ -2080,10 +2080,12 @@ si alza: Fauci e il cavaliere sono già tre punti sopra l'APL (§0-bis), e il co
   Davanti al tetto Fauci non soffia due volte sullo stesso punto: atterra
   sul bastione e lo sfonda con gli artigli `[CANONE — DM 2026-11-25, card
   «Fauci davanti al tetto di pietra»]`. Scartato: girare e soffiare dal lato
-  aperto. Quanto ci mette non è deciso `[INFERRED — In quanti round Fauci
-  sfonda il tetto, e in quei round chi è sul bastione lo attacca a terra?;
-  base: la card dice che atterra e lo sfonda, non in quanto; durezza 8 e 45
-  pf a quadretto (SRD: Wall of Stone), attacchi di Fauci in A.5]`.
+  aperto. Ci mette due round: col round completo (A.5: morso 19, due
+  artigli 12, due ali 9,5, coda 22 di media, ognuno meno la durezza 8) fa
+  circa 36 danni al quadretto sopra il Re, che ne ha 45, e lo apre al
+  secondo round. In quei due round è a terra sul bastione, e chi ci sta lo
+  attacca `[CANONE — DM 2026-11-26, card «in quanti round Fauci sfonda il
+  tetto»]`.
 - ***Resistere all'energia*** (acido) sul Re: al LI 13 toglie 30 da ogni
   colpo d'acido `[SRD: Resist Energy]`. Il soffio (35 di media) passa con
   pochi punti, e l'acido nelle giunture quasi mai. Anche qui il Re resta a 8

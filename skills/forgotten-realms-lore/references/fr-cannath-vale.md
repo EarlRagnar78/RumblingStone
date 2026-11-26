@@ -77,7 +77,7 @@ All names below are extracted directly from the GM map image.
 
 | Name on Map | = RHoD Original | Role | Notes |
 |---|---|---|---|
-| **Lhesper** | Rhest | Ruined flooded city | N of Lake Lhespen; in Lhespenbog; Wyrmlord Koth's base |
+| **Lhesper** | Rhest | Ruined flooded city | N of Lake Lhespen; in Lhespenbog; base of Wyrmlord Saarvith and Regiarix |
 | **Kormul** | *(Khormul — present and destroyed by Red Hand Army!)* | Town | Center-west; **IS on map** despite some sources saying removed |
 | **Skull Gorge** | Skull Gorge Bridge | Adventure site | On The Lhescreek; bridge destruction Chapter 1 climax |
 | **Vraath Keep** | Vraath Keep | Ruined keep | SW of Skull Gorge; name **retained** |
@@ -139,7 +139,7 @@ Always use the correct map names below.
 | Ch. 1 — Climax | Destroy the bridge | **Skull Gorge** | Via The Lhescreek |
 | Ch. 1 — Side | Ruined tower | **Vraath Keep** | Dwarfroad / off-road |
 | Ch. 2 — Hub | War council city | **Rethmar** | The Dawn Way |
-| Ch. 2 — Swamp | Wyrmlord Koth | **Lhesper** (in Lhespenbog) | Lhesper Trail |
+| Ch. 2 — Swamp | Wyrmlord Saarvith | **Lhesper** (in Lhespenbog) | Lhesper Trail |
 | Ch. 3 — Wasteland | Ghostlord's bargain | **Ghostlord's Lair** | Bandit Wastes, off-road |
 | Ch. 4 — Siege | Final defense | **Rethmar** | All roads converge |
 | Epilogue | Tiamat's temple | **Fane of Tiamat** | Dwarfroad west into Wyrmbones |

@@ -136,7 +136,9 @@ Round dell'apparizione):
   un varco a mani nude dove le porte hanno ceduto.
 - **Artemis** (warlock, Anello riforgiato): l'unico non-nano; si leva in
   volo con le Ali d'Ombra e trasforma l'imbuto delle porte in un
-  killbox di *Eldritch Blast*.
+  killbox di *Eldritch Blast*. Arriva col pegno di carne addosso:
+  affaticato, e con un livello negativo fino all'alba successiva se ha
+  fallito la Tempra CD 20 (`ARC07-DEF-5`, Scena 1) `[CANONE — DM 2026-11-25, card «pegno di Artemis»]`.
 - **Hella** (druida, template Ibrido Treant, Collana coi Semi): emerge
   già in forma potenziata, evoca i primi Treant; **Durik** (terzo seme
   della Collana) si materializza al suo fianco — è il suo spotlight

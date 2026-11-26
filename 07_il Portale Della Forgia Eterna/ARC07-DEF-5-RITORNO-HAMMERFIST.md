@@ -195,6 +195,7 @@ del duello). **VINTO SPORCO**: il drago l'hanno ricacciato gli avi, non i PG
 | Cosa | Prova | Dove |
 |---|---|---|
 | lo strappo fra le ere | Volontà **CD 15** o frastornati 1 round | Scena 1 |
+| il pegno di carne, solo per Artemis | Tempra **CD 20**: fallita, un livello negativo fino all'alba successiva; affaticato in ogni caso | Scena 1 |
 | l'aura, per ogni orco | Volontà **CD 25**: passa solo col 20, e resta scosso | Scena 2 |
 | salire sull'altare | Scalare **CD 15**, un round | Scena 2 |
 | scendere dall'altare | salto di 3 m: 1d6, o niente con Saltare o Acrobazia **CD 15** | Scena 2 |
@@ -253,8 +254,10 @@ drago sulle mura.
 > dopo la battaglia, non prima.
 
 ### 🐾 Supporto Pathfinder 1e (dove il 3.5 è vago) — opzionale, dichiarato
-> - **Il ritorno nel tempo**: nessun costo meccanico ai PG (il Rubino paga, ed è
->   speso). Torna tutto quello che portano addosso, comprato al banco della
+> - **Il ritorno nel tempo**: nessun costo meccanico a Thorik, Tordek e Hella
+>   (il Rubino paga, ed è speso). Artemis, l'unico che non è un nano, paga il
+>   pegno di carne della Scena 1: Tempra CD 20 `[CANONE — DM 2026-11-25, card «pegno di Artemis»]`.
+>   Torna tutto quello che portano addosso, comprato al banco della
 >   fucina compreso: pozioni, pergamene, bacchette, rune (Scena 1)
 >   `[CANONE — DM 2026-10-18, G2-14]`. Il Sigillo di Ossidiana, se l'hanno
 >   rubato a Vatore, torna come il resto, e acceso (`DEF-4` Appendice B). Al
@@ -325,6 +328,7 @@ riga e vai avanti.
   lo ha segnato o derubato, la **sincronizzazione** lo aspetta in ARC-09 (Sal).
 - L'Anello, all'arrivo, pulsa fra luce e ombra. Non è un dono divino: è la sua
   natura riforgiata che riconosce di essere **tornata a casa** nel tempo giusto.
+- All'arrivo paga il pegno di carne, lui solo: Tempra CD 20 (Scena 1).
 
 ---
 
@@ -337,8 +341,8 @@ Il box è nella **Scena 1**.
 **Volontà CD 15** o **frastornati 1 round** all'arrivo: lo strappo fra le ere
 scuote la mente, e si resiste con la Volontà; frastornato e non stordito, così
 nessuno lascia cadere quello che ha in mano `[CANONE — DM 2026-10-15, D90]`.
-Il beat chiede ai PG Volontà (lo strappo) e Riflessi (le stalattiti), mai
-Tempra: è voluto, perché è una transizione e non uno scontro pieno.
+Il beat chiede ai PG Volontà (lo strappo) e Riflessi (le stalattiti), e la
+Tempra solo ad Artemis, per il pegno di carne (Scena 1): è voluto, perché è una transizione e non uno scontro pieno.
 
 ### ZONA 2 — Il Cuore della Montagna (la caverna sacra sotto Hammerfist, 1372)
 I box sono nella **Scena 2**.
@@ -399,6 +403,43 @@ loro primo gesto (Scena 2). Thorik non tira: la *Mente Vuota* della Corona lo
 rende immune agli effetti mentali, e la pagina a tre gemme che il giocatore ha
 in mano lo dice. Il suo primo ordine da portatore della Corona arriva sempre
 col primo gesto della Scena 2, nel giro dei gesti `[CANONE — DM 2026-10-19, giro 4 DEF-5 n. 2]`.
+
+**Il pegno di carne** `[CANONE — DM 2026-11-25, card «pegno di Artemis»]`. All'arrivo
+Artemis, l'unico dei quattro che non è un nano, tira anche **Tempra CD 20**.
+Se la fallisce prende **un livello negativo** fino all'alba successiva, ed è
+**affaticato**; se la supera è solo affaticato. L'alba successiva è la prima
+dopo l'arrivo: i quattro arrivano il Giorno 3 dell'assedio (`ARC08-11`), ed è
+quella del giorno dopo. Tutto quello che si gioca il giorno dell'arrivo,
+Artemis lo gioca col pegno addosso.
+
+- *Il livello negativo* `[SRD: Energy Drained]`: −1 ai tiri per colpire, ai
+  tiri salvezza, alle prove di abilità e alle prove di caratteristica; 5
+  punti ferita in meno; −1 al livello effettivo, per la potenza, la durata e
+  la CD di incantesimi e capacità speciali; un incantatore perde anche un
+  incantesimo o uno slot del livello più alto che può lanciare. Qui **non
+  diventa permanente**: all'alba successiva se ne va da solo, senza il tiro
+  di Tempra che l'SRD chiede dopo 24 ore.
+- *Affaticato* `[SRD: Fatigued]`: −2 a Forza e Destrezza, e non può correre
+  né caricare; passa con otto ore di riposo completo. Affaticato su
+  affaticato dà **esausto**: se Artemis fa o subisce qualcosa che affatica,
+  passa a metà velocità e a −6 a Forza e Destrezza, e dopo un'ora di riposo
+  completo torna affaticato `[SRD: Exhausted]`.
+- *Che cosa li toglie.* *Ristorare inferiore* toglie l'affaticato e non il
+  livello negativo `[SRD: Lesser Restoration]`: lo lancia Hella, se le resta.
+  *Ristorare* toglie tutti e due `[SRD: Restoration]`, in tre round, e nel
+  gruppo viene solo dalle pergamene comprate da Brynja (`DEF-4`, «Cosa hanno
+  comprato»), lette da Artemis con Usare Oggetti Magici CD 27. Sono le
+  stesse che rialzano Re Thorek (Scena 3): quella letta per Artemis al re
+  non resta.
+
+Thorik, Tordek e Hella non pagano niente: per loro il Rubino paga, ed è
+speso `[CANONE — DM 2026-10-18, G2-14]`.
+
+<!-- storico -->
+*Fino al 2026-11-25 il ritorno non costava niente a nessuno dei quattro
+(G2-14, 2026-10-18). La card «pegno di Artemis» lo supera per il solo
+Artemis.*
+<!-- /storico -->
 
 **Che cosa torna con loro.** Tutto quello che portano addosso, comprato al
 banco della fucina compreso: pozioni, pergamene, bacchette, rune, come l'ascia
@@ -522,6 +563,11 @@ si ricorda (§7). Le statistiche di Treant e Durik sono in Appendice A.
 | **Hella** · lo *Scudo del Custode* | solo se al rito Thorik ha donato la deflessione: 1/giorno, immediata, prende dimezzato il danno di un alleato entro 9 m, e Thorik è accelerato 3 round verso chi lei ha protetto | |
 | **Hella** · i Treant di Adamantio | si chiamano con la Collana, uno per seme ancora carico (i semi tornano all'alba): un'azione standard, e arrivano alla fine del round. Durano 1 ora (`DEF-3` Appendice A.2; qui Appendice A.3) | chiamarli **tutti e due insieme** spegne per un mese l'Evocazione dei Guardiani, il potere della Collana che li chiama (niente Treant, e Durik torna solo all'alba): va detto alla giocatrice prima che scelga. Se al −1000 li ha già chiamati insieme di notte, è spenta; chiamarli insieme all'alba non la spegne (`DEF-4`). L'alba del 1372 non è ancora arrivata: i semi spesi al −1000 sono ancora spesi. I Treant chiamati all'alba del 372, se la loro ora non è finita, restano al −1000 e svaniscono a fine durata; il seme resta speso fino all'alba del 1372<!-- apparato --> (D91)<!-- /apparato -->. Quelli chiamati qui compaiono ai piedi dell'altare, dentro lo schieramento `[CANONE — DM 2026-10-19, giro 4 DEF-5 n. 4]` |
 | **Hella** · Durik | arriva con lei, perché è legato alla Collana (`DEF-4`): sta accanto a Hella e va dove lei lo manda (Appendice A.4) | se il drago l'ha distrutto nel duello, Hella lo richiama col seme III, se è carico e l'Evocazione non è spenta: torna subito, per un'ora (`DEF-3` §7). Altrimenti torna all'alba |
+
+**Artemis fa il suo gesto col pegno addosso** (Scena 1) `[CANONE — DM 2026-11-25, card «pegno di Artemis»]`:
+affaticato non corre e non carica, ma muove normalmente, Ali d'Ombra
+comprese `[SRD: Fatigued]`; con la Tempra fallita ha anche il −1 del livello
+negativo ai tiri.
 
 **Le radici di Hella si usano una volta per scena** `[CANONE — DM 2026-10-18, G2-33]`,
 intorno al re o verso la porta: un'azione standard, alla gittata di

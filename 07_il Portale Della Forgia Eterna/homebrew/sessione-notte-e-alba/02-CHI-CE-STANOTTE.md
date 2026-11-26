@@ -184,9 +184,10 @@ voci:
 
 **Attacco** Vel 6 m · **Mischia** martello da guerra runico +1 +11/+6 (1d8+2/x3) · Domini **Inganno** e **Runa** (dominio Runa = FRCS). Incantesimi da **chierico di 13° livello**: è chierico 9 **e** Runecaster 4, e il Runecaster avanza il lancio (per questo ha *blade barrier*, che è di 6°). CD 15+liv: tipici *dispel magic, magic circle against good, greater magic weapon, divination, righteous might, blade barrier, slay living, silence, invisibility purge, glyph of warding, dimensional anchor*, *greater command* (uno slot di 5° libero)<!-- storico --> (aggiunto il 2026-10-07 su richiesta del DM)<!-- /storico -->.
 
-**Tattiche** Dipendono da come è andata con lui prima dello scontro: il viaggio a mille anni fa, Scena 7, «Cosa fa quando comincia lo scontro» (canone, decisione Q21 del DM) (recuperato non combatte e indica la runa della Catena; trattativa aperta guarda un round e poi sta con chi vince; minacciato combatte con Zog'tar, come dice «Come si combatte, se si arriva a combatterlo» nella stessa scena). **Morale**: sotto 30 pf non fugge e non implora, finisce di incidere la lastra con un'azione di round completo, l'ultima, e in quel turno non attacca e non lancia (decisioni D52 e D71 del DM, nella stessa scena).
+**Tattiche** Dipendono da come è andata con lui prima dello scontro: il viaggio a mille anni fa, Scena 7, «Cosa fa quando comincia lo scontro» (recuperato non combatte e indica la runa della Catena; trattativa aperta guarda un round e poi sta con chi vince; minacciato combatte con Zog'tar, come dice «Come si combatte, se si arriva a combatterlo» nella stessa scena). **Morale**: sotto 30 pf non fugge e non implora, finisce di incidere la lastra con un'azione di round completo, l'ultima, e in quel turno non attacca e non lancia (decisioni D52 e D71 del DM, nella stessa scena).
 
-**Statistiche** For 12, Des 14, Cos 16, Int 16, **Sag 20**, Car 14 · BAB +9; Lotta +10 · **Abilità** Percepire Intenzioni +13, Concentrazione +19, Sapienza Magica +19, Conoscenze (storia) +19, Artigianato (incidere rune) +19 (il conto dei gradi è nella nota in testa) · **Talenti** Incidere Rune `[Private source — FRCS]`, Volontà di Ferro, Riflessi Fulminei, Incantare in Combattimento, Scrivere Pergamene · **Equipaggiamento** armatura completa di mithral +2, anello di protezione +2, martello da guerra runico +1, polvere di diamante per i glifi
+**Statistiche** For 12, Des 14, Cos 16, Int 16, **Sag 20**, Car 14 · BAB +9; Lotta +10 · **Abilità** Percepire Intenzioni +13, Concentrazione +19, Sapienza Magica +19, Conoscenze (storia) +19, Artigianato (incidere rune) +19 (il conto dei gradi è nella nota in testa) · **Talenti** Incidere Rune `[Private source — FRCS]`, Volontà di Ferro, Riflessi Fulminei, Incantare in Combattimento, Scrivere Pergamene · **Equipaggiamento** armatura completa di mithral +2, anello di protezione +2, martello da guerra runico +1, *cintura della forza del gigante +2*, *guanti della destrezza +2*, *fascia dell'intelletto +2*, *periapto della saggezza +2*, *mantello del carisma +2*, polvere di diamante per i glifi
+Equipaggiamento sopra la tabella: scelta del DM `[CANONE — DM 2026-11-20, card «Cinque oggetti +2»]`: almeno 44.812 mo contro i 35.000 della Tabella 4-23 del DMG 3.5 al livello effettivo 13; il GS resta 13.
 
 **Capacità speciali**
 - **Rune incise (Runecaster 4)**: incide fino a **4 rune persistenti** su superfici o creature consenzienti/legate; una runa incisa **non consuma slot al momento dell'uso** e scatta alla condizione scritta. Alla tenda di Zog'tar (ARC-07 DEF-4, Scene 6 e 7): *invisibility purge* sulla soglia, *blade barrier* sul palo centrale, *silence* su sé stesso, **la Catena** (sotto). *Dimensional anchor* lo lancia, non lo incide.
@@ -222,11 +223,11 @@ tipo: Drago Enorme (acqua), caotico malvagio · drago nero Vecchio dell'SRD, Ava
 taglia: Enorme
 spazio: 4,5 m
 portata: 3 m (4,5 m con il morso)
-ca: 36
-ca-dettaglio: contatto 10, impreparato 34 (−2 taglia, +2 DES, +26 nat); 40 con armatura magica
+ca: 39
+ca-dettaglio: contatto 13, impreparato 37 (−2 taglia, +2 DES, +26 nat, +3 deflessione dell'anello); 43 con armatura magica
 pf: 337
 pf-dado: 25d12+175
-ts: Temp +21, Rifl +18, Vol +20
+ts: Temp +24, Rifl +21, Vol +23 (+3 del mantello)
 attributi: For 33 Des 14 Cos 25 Int 18 Sag 19 Car 18
 velocita: 18 m, volare 45 m (scarsa), nuotare 18 m
 iniziativa: +6
@@ -236,11 +237,13 @@ attacchi:
 ```
 **Iniziativa** +6 · **Sensi** percezione cieca 18 m, scurovisione 36 m, visione crepuscolare ×4; Ascoltare +31, Osservare +31 (Allerta, +2: SRD)
 
-**Difesa** **CA 36** (−2 taglia, +2 DES, +26 nat), contatto 10, impreparato 34; **40 con *armatura magica*** · **pf 337** (25d12+175) · TS Temp +21, Rifl +18, Vol +20 · RD 10/magia · RI 22 · immune acido, sonno, paralisi
+**Difesa** **CA 39** (−2 taglia, +2 DES, +26 nat, +3 deflessione), contatto 13, impreparato 37; **43 con *armatura magica***, come al duello · **pf 337** (25d12+175) · TS Temp +24, Rifl +21, Vol +23 (con il mantello; senza oggetti CA 36, contatto 10, TS +21/+18/+20) `[CANONE — DM 2026-11-21]` · RD 10/magia · RI 22 · immune acido, sonno, paralisi
 
-**Attacco** Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16) · **Schiacciare** 2d8+16, Riflessi CD 29 (solo creature Piccole o minori) · **Soffio acido** (Sop) linea di 30 m, 16d4, Riflessi CD 31 dimezza, di nuovo dopo 1d4 round (1d4+1 se impregnante, sotto) · **Capacità magiche** 3/giorno *oscurità* (raggio 24 m); 1/giorno *corrompere l'acqua* (CD 26, la CD della sua Presenza Terrificante, come nell'SRD: rovina anche le pozioni che un PG ha addosso, se falliscono il TS); 1/giorno *crescita vegetale* · **Incantesimi da stregone** (incantatore di 7°, CD 14 + livello): 0 (6/giorno) *individuazione del magico, lettura del magico, mano magica, resistenza, suono fantasma, frastornare*; 1° (7/giorno) *armatura magica, scudo, colpo accurato, dardo incantato*; 2° (7/giorno) *vedere invisibilità, immagine speculare*; 3° (5/giorno) *dissolvi magie, lentezza* (CD 17) (i conosciuti dell'Adulto più i due di 3°, come D64: scelta di Jfs del 19/11)
+**Attacco** Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16) · **Schiacciare** 2d8+16, Riflessi CD 29 (solo creature Piccole o minori) · **Soffio acido** (Sop) linea di 30 m, 16d4, Riflessi CD 31 dimezza, di nuovo dopo 1d4 round (1d4+1 se impregnante, sotto) · **Capacità magiche** (incantatore di 7°) 3/giorno *oscurità* (raggio 24 m); 1/giorno *corrompere l'acqua* (gittata 72 m, quella della Presenza; CD 26, la CD della sua Presenza Terrificante, come nell'SRD: rovina anche le pozioni che un PG ha addosso, se falliscono il TS); 1/giorno *crescita vegetale* (gittata 204 m) · **Incantesimi da stregone** (incantatore di 7°, CD 14 + livello; gittata vicina 12 m, media 51 m, lunga 204 m): 0 (6/giorno) *individuazione del magico, lettura del magico, mano magica, messaggio, resistenza, suono fantasma, frastornare*; 1° (7/giorno) *armatura magica, causare paura* (CD 15), *colpo accurato, dardo incantato, scudo*; 2° (7/giorno) *immagine speculare, spaventare* (CD 16), *vedere invisibilità*; 3° (5/giorno) *dissolvi magie, lentezza* (CD 17). Conosciuti 7/5/3/2, come lo stregone di 7° dell'SRD: ai conosciuti dell'Adulto più i due di 3° (D64, scelta di Jfs del 19/11) mancavano tre posti, e il DM li ha riempiti con *messaggio*, *causare paura* e *spaventare* `[CANONE — DM 2026-11-21]`
 
-**Tattiche** Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf, circa **112 pf**. In A.1-ter, «Cosa cambia al tavolo», i numeri che contano nel duello.
+**Oggetti al duello** `[CANONE — DM 2026-11-21]` Dal suo tesoro triplo (SRD: 36.000 mo al GS 17, × 3 = 108.000), circa 51.900 mo a prezzo SRD: **anello di protezione +3** (18.000), **mantello della resistenza +3** (9.000), **bacchetta di *paura*** (incantatore di 7°, 21.000: cono di 9 m, Volontà CD 16, panico per 7 round, scosso per 1 round chi riesce), **2 pergamene di *dominare persone*** (incantatore di 9°, 1.125 l'una: 13,5 m, Volontà CD 17) e **1 pergamena di *suggestione di massa*** (incantatore di 11°, 1.650: gittata media, 63 m, fino a 11 creature entro 9 m l'una dall'altra, Volontà CD 19). Bacchetta e pergamene sono tutte sulla lista dello stregone: la bacchetta non chiede prove, le pergamene una prova d'incantatore, d20+7 contro CD 10 e 12 (SRD, *Pergamene*). Bacchetta e *suggestione di massa* costano un'azione standard, presa con l'artiglio: quel round non morde e non soffia. *Dominare persone* ha tempo di lancio 1 round (SRD), quindi in passata non si legge: solo da fermo o fluttuando, e l'effetto arriva all'inizio del suo turno dopo. *Dominare persone* prende solo gli umanoidi: Thorik è immune per la Mente Vuota, Hella in forma animale non è una persona
+
+**Tattiche** Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf, circa **112 pf**. Al corno, prima di partire, lancia *vedere invisibilità* e *immagine speculare* (1d4+2 immagini, 7 minuti). In passata chiude ogni turno a più di 18 m da tutti i PG, fuori dalle cariche: in mischia lo si prende solo con un'azione preparata quando passa `[CANONE — DM 2026-11-21]`. Mentre il soffio ricarica usa la bacchetta sul gruppo più fitto; la prima pergamena di *dominare* (un round fermo o fluttuando, quindi dopo la prima paura) va sul PG che fa più danno e non è Thorik, la *suggestione di massa* sui nani delle corde («lasciate le corde e salvatevi»). In A.1-ter, «Cosa cambia al tavolo», i numeri che contano nel duello.
 
 **Statistiche** For 33, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +25; Lotta +44 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Impregnante, Virare (non Ghermire), Volontà di Ferro, più Allerta · **Abilità** Ascoltare +31, Cercare +29, Concentrazione +32, Intimidire +29, Muoversi Silenziosamente +27, Nascondersi +19, Osservare +31, Sapienza Magica +29, Nuotare +18: come l'Adulto più Allerta (il blocco non spende i gradi dei tre DV in più)
 
@@ -278,9 +281,43 @@ fonte: wyvern dell'SRD; i tiri salvezza sono quelli della sua scheda SRD
 
 ## Le mappe: lo spiazzo, la tenda, il campo
 
+Le aree hanno le chiavi stampate sulle due piante, che seguono: C1-C6 stanno su M7-C, C1-C5 anche su M7-H, H1 solo su M7-H. I numeri delle piante restano le pedine.
+
+### C1 · Il telo est, «il telo a sinistra» di Balvar
+
+S10–S14 su M7-C. È il telo che Balvar consiglia: da qui si entra e si resta invisibili, senza runa né glifo. Chi taglia la tenda altrove resta invisibile, ma il taglio fa rumore: le guardie tirano Ascoltare contro il suo Muoversi Silenziosamente.
+
+### C2 · Il telo del glifo
+
+N15–P15 su M7-C, il telo sopra il seggio. Porta un *glifo di interdizione* legato ai nani: scoppio sonoro 5d8, Riflessi CD 18 dimezza, e il boato è l'allarme. Nella bolla di *silenzio* non fa danni e non esce (Scena 6).
+
+### C3 · Il palo centrale
+
+N12 su M7-C. Di legno, alto 6 m come gli altri due: è il palo maestro, e le due metà del colmo si incastrano su di lui. Regge la runa della barriera di lame: Balvar la attiva e il muro corre lungo la riga 12, da J12 a R12, 13d6, Riflessi CD 21 per evitarla (Scena 7). Zog'tar lo abbatte con Forza CD 20, azione standard: il telo crolla su J10–R14 e chi vola sotto finisce a terra, intralciato, finché non supera Riflessi CD 15 (Scena 8).
+
+### C4 · Le tende dei servi e del bottino
+
+B2–C3 su M7-C. Stanno sul bordo dello spiazzo, staccate l'una dall'altra, e dentro non ci sono soldati.
+
+### C5 · La tenda del turno dopo
+
+X4–Y5 su M7-C, a 9 m dal telo. Ci dormono le due guardie del turno dopo; se Balvar sta con i PG entrano dal telo del seggio al round 2.
+
+### C6 · Il fondo buio
+
+Q13–R14 su M7-C, più la striscia R10–R12 lungo il telo est: dove i bracieri non arrivano. Non dà occultamento contro le guardie hobgoblin né contro Balvar, che vedono al buio fino a 18 m. Ci si nasconde solo dietro una copertura (i tre pali, la tavola, lo schienale del seggio), con Nascondersi contro il loro Osservare.
+
+<!-- nuova-pagina -->
+
 ![M7-C — La tenda del comando](../../Mappe/rendered-stampa-pianta/ARC07-MAPPE-M7C-TENDA-DEL-COMANDO_map01_m7-c-la-tenda-del-comando-di-zog-tar-notte-372-d.svg)
 
 ![M7-C — Indicazioni e legenda](../../Mappe/rendered-stampa-pianta/ARC07-MAPPE-M7C-TENDA-DEL-COMANDO_map01_m7-c-la-tenda-del-comando-di-zog-tar-notte-372-d_legenda.svg)
+
+### H1 · Le tende della Guardia della Mano
+
+J4–K5 su M7-H, a 20-30 m dalla tenda del capo. Quattro tende da otto hobgoblin attorno al fuoco della lancia, a gruppi staccati: chi entra nella cella del fuoco prende 1d6 da fuoco.
+
+<!-- nuova-pagina -->
 
 ![M7-H — Il campo del capo: lo spiazzo, la Guardia della Mano e i clan](../../Mappe/rendered-stampa-pianta/ARC07-MAPPE-M7H-QUARTIERE-DEL-COMANDO_map01_m7-h-il-campo-del-capo-lo-spiazzo-la-guardia-del.svg)
 

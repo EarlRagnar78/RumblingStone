@@ -104,8 +104,9 @@ def main(argv: "list[str] | None" = None) -> int:
     print(f"cricchetto della prosa: {controllati} file con prosa nuova, "
           f"{peggiorati} peggiorati rispetto a {a.rispetto_a}")
     if peggiorati:
-        print("  Correggi i difetti aggiunti (misura: `python3 scripts/misura_craft.py --box FILE`, "
-              "`python3 scripts/punteggio_mqm.py FILE`). ADR-0146.")
+        print("  Correggi i difetti aggiunti (misura: `python3 scripts/punteggio_mqm.py FILE`; "
+              "misura_craft non accetta un file, e per homebrew/ vedi lo snippet in "
+              "skills/REGISTRO-NORME-EDITORIALI.md). ADR-0146.")
     return 1 if peggiorati else 0
 
 

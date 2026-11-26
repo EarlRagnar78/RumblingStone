@@ -217,7 +217,7 @@ prosegue il modulo; `skills/rumblingstone-module-standard/references/sviluppo-de
 
 | Segreto | Chi lo rompe | Cosa ottiene | Come prosegue |
 |---|---|---|---|
-| **Fauci in fuga, dov'è** | Lo *scrutare* di Hella (SRD): Fauci tira Volontà +19 contro la CD della sua scheda. L'hanno visto da vicino (nessun modificatore di conoscenza); con una **scaglia** strappata in battaglia il TS ha −10 (parte del corpo, SRD) | Lo vede ferito e a terra, nelle montagne meridionali; il posto i file non lo descrivono `[CANONE — DM 2026-11-04, P16, dopo la battaglia]` | La carta S2 (§6.3) si può anticipare: i PG lo cacciano prima di Rethmar, e se lo uccidono vale il ramo «ucciso» di §4 (−1 drago a Rethmar) `[CANONE — DM 2026-11-04, P16, dopo la battaglia]` |
+| **Fauci in fuga, dov'è** | Lo *scrutare* di Hella (SRD): Fauci tira Volontà +22 contro la CD della sua scheda. L'hanno visto da vicino (nessun modificatore di conoscenza); con una **scaglia** strappata in battaglia il TS ha −10 (parte del corpo, SRD) | Lo vede ferito e a terra, nelle montagne meridionali; il posto i file non lo descrivono `[CANONE — DM 2026-11-04, P16, dopo la battaglia]` | La carta S2 (§6.3) si può anticipare: i PG lo cacciano prima di Rethmar, e se lo uccidono vale il ramo «ucciso» di §4 (−1 drago a Rethmar) `[CANONE — DM 2026-11-04, P16, dopo la battaglia]` |
 | **Tornerà?** | La **Corona** di Thorik: *comunione* una volta al mese da un Nodo (`campaign/state.md` del ramo di gruppo, Corona di Adamantio) | Moradin risponde sì o no, una domanda per livello dell'incantatore (SRD); il livello della comunione della Corona i file non lo danno `[CANONE — DM 2026-11-04, P16, dopo la battaglia]` | Se chiedono del ritorno, la risposta segue la carta S2 (§6.3): se il DM la tiene nel mazzo, è «sì», se l'ha tolta è «no». Il modulo non cambia; il tavolo sa che il conto è aperto |
 | **Che cosa sa il cavaliere** | *Zona di verità*, *charme*, *dominare*, *parlare con i morti* se è caduto | Le tre cose qui sopra; con *parlare con i morti* risponde col TS Volontà +6 (SRD) | Nessuna scena nuova: le tre risposte agganciano §4 e §6.3 |
 
@@ -249,7 +249,7 @@ maturati e si applicano al finale.
 | Obiettivo | Pieno | Parziale | Fallito |
 |---|---|---|---|
 | **Breccia contenuta** (Assedio Mura) | La fortezza regge più a lungo → **1 incontro del finale a −1 CR** (meno nemici filtrati all'interno) | Breccia rallentata → mezzo bonus (−1 CR a un solo round) | Breccia aperta subito → il finale inizia con **+1 ondata** |
-| **Comandanti nemici logorati** (Grimjaw / Gorthak feriti durante l'assedio) | Grimjaw e/o Gorthak arrivano al finale **feriti**: −20% pf iniziali, −2 morale all'orda | Uno solo dei due logorato | Entrambi freschi al finale |
+| **Comandanti nemici logorati** (Grimjaw / Gorthak fuggiti feriti o abbattuti durante l'assedio) | Grimjaw e/o Gorthak arrivano al finale **feriti**: −20% pf iniziali, −2 morale all'orda. Chi è stato abbattuto al finale manca, e per lui il −20% non vale; come il suo −3 sta col −2 è in `ARC08-DEF-2`, §0-bis, «I bonus» | Uno solo dei due logorato | Entrambi freschi al finale |
 | **Cantitrici della Pietra protette** (Soffio del Drago) | Le Cantitrici sopravvivono → nel finale forniscono **Cura Ferite Gravi di Massa 1/incontro** + Ispirare Coraggio ai 90 | Metà Cantitrici → un solo uso di cura | Cantitrici perse → nessun supporto divino di massa nel finale |
 
 ### 5.3 Sessione 3a — Ultima Resistenza (pregen, fino al passaggio di testimone)
@@ -293,10 +293,19 @@ la **Sessione 3a**.
   una tacca del Giorno 1 o del Giorno 2 d'assedio. Contano le trappole
   dell'avanguardia e quella della Preparazione delle difese.
 - Le righe di §5.2 e §5.3 si leggono con la tabella di `ARC08-19` §4
-  (brecce dei giorni 1 e 2, comandanti fuggiti feriti, Mura del giorno 2,
-  reparti vivi alla ritirata). Nell'assedio i comandanti non muoiono: sotto
-  metà dei punti ferita fuggono, così arrivano al finale feriti come vuole
-  §5.2. Re Thorek e l'evacuazione restano come sopra.
+  (brecce dei giorni 1 e 2, comandanti fuggiti feriti o abbattuti, Mura del giorno 2,
+  reparti vivi alla ritirata). Sotto metà dei punti ferita i comandanti
+  fuggono, e arrivano al finale feriti come vuole §5.2. Se i dadi li portano
+  a 0 pf o meno prima della fuga sono abbattuti, e al finale mancano
+  `[CANONE — DM 2026-11-26, card «comandante a 0 pf nell'assedio»]`:
+  la regola è in `ARC08-DEF-2`, §0-bis, «Il comandante a 0 pf o meno». Re
+  Thorek e l'evacuazione restano come sopra.
+
+<!-- storico -->
+*Fino al 2026-11-26 questa riga diceva: «Nell'assedio i comandanti non
+muoiono: sotto metà dei punti ferita fuggono, così arrivano al finale feriti
+come vuole §5.2».*
+<!-- /storico -->
 
 ### 5.5 Se il flashback coi pregen non è stato giocato `[CANONE — DM 2026-11-04, P16, dopo la battaglia]`
 

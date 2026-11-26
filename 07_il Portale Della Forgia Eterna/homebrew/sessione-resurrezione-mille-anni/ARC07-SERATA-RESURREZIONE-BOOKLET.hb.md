@@ -697,7 +697,7 @@ giocherai e leggile a voce. Tre. Non trenta.
 ## §4 · I suoni dell'arco
 
 **Descrizioni, mai titoli di brani**: ognuno usa quello che ha, e il file non
-invecchia con le piattaforme (ADR-0018 «regola dei suoni»).
+invecchia con le piattaforme.
 
 > **La regola di quest'arco**, e non è quella dell'ARC-08. Là il fragore era lo
 > stato di riposo e i suoni si spegnevano per fare spazio. **Qui il silenzio è lo
@@ -926,8 +926,8 @@ uomini»* — non è una concessione del DM.
 nella Sala come fuori: un pomeriggio davanti agli affreschi è un pomeriggio
 del mondo di sopra, come l'ora del rito.
 **E vale solo prima del rito.** Dopo il rito la Sala conta per intero anche
-il sonno: otto ore di sonno costano otto ore, come scrive cap. IV §9
-. Il registro qui sotto è giocato, e non
+il sonno: otto ore di sonno costano otto ore, come scrive cap. IV §9.
+Il registro qui sotto è giocato, e non
 cambia.
 
 #### Il registro dei riposi (giocato + previsto)
@@ -1000,8 +1000,8 @@ davanti a un pannello completato = **Benedizione della Cronaca** (§3).
 >   tutti e due, e per ogni tiro vale il più alto, come per due bonus dello
 >   stesso tipo nell'SRD. Per Thorik, che ha già +2 sacro a tutti i TS dalla
 >   Risonanza della Corona con Aegis Fang, i premi di A1, A3 e A8 diventano
->   bonus **morale** dello stesso valore, e si sommano al sacro
->.
+>   bonus **morale** dello stesso valore, e si sommano al sacro.
+>   
 > - **«Guarigione emotiva» (A3)**: vale il numero del §4 (3d8+13 col
 >   fallimento, 2d8+13 col successo), sul solo Thorik e **una volta sola** nel
 >   beat, non a ogni visita.
@@ -1478,8 +1478,8 @@ dipinto e il vero al 100% di A8 (§5, Sviluppi).
 
 **Porta chiusa: i Dipinti Invisibili (J11-J12 sulla S-2).** Restano come in
 ARC-06, e nessun file del repo dice che cosa siano. In questo beat non si
-aprono: chi li esamina li trova muti, e restano muti per tutto l'arco
-.
+aprono: chi li esamina li trova muti, e restano muti per tutto l'arco.
+
 
 ### Se lo divinano
 
@@ -1991,17 +1991,17 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 > verità piena, ferita aperta, Via della Radice. I PG **non lo sanno ancora**:
 > lo scopriranno qui, dalla sua voce (§8).
 >
-> **L'orologio di Hammerfist.** Si arriva a **~3g 16h**
->; il registro dei riposi è in cap. III §0-bis,
+> **L'orologio di Hammerfist.** Si arriva a **~3g 16h**;
+> il registro dei riposi è in cap. III §0-bis,
 > che possiede l'orologio. Il rito dura circa un'ora e porta l'orologio a
 > **~3g 15h**; un'altra ora se c'è l'indagine
-> del Sud (§9). Da lì il tempo si conta tutto
->: **10 minuti** per ogni tentativo fallito degli
+> del Sud (§9). Da lì il tempo si conta tutto:
+> **10 minuti** per ogni tentativo fallito degli
 > Step 1-3, **un'ora** per la prima ora dopo il rito (§8-bis). Senza tentativi
 > falliti né indagine, alla soglia segna **3g 14h**. La scaletta non prevede
 > riposo prima della soglia; se il gruppo lo chiede, si dorme e costa otto ore
-> (§9): dopo il rito la Sala conta il sonno per intero
->. L'orologio conta quanto manca alla breccia di Hammerfist, e i PG lo
+> (§9): dopo il rito la Sala conta il sonno per intero.
+> L'orologio conta quanto manca alla breccia di Hammerfist, e i PG lo
 > leggono sull'affresco A7, che cambia a ogni riposo. Sotto i **2 giorni** la
 > breccia è aperta e l'ARC-08 parte in Fase 0 dura (cap. III §0-bis e §8).
 >
@@ -3125,8 +3125,8 @@ che tornano dopo un sonno di otto ore: azione standard, cura 3d8+5 a sé o
   alla Pelle di Pietra: vale la più alta.
   Conta se è ancora accesa agli scontri di cap. V.
 - **Benedizione di Moradin Incarnato**: +2 sacro att/danni, +4 vs paura/charme,
-  **1 ri-tiro**; attiva per 24 ore vissute dalla preghiera, come le altre
-. Si accende una volta al giorno, con un'azione
+  **1 ri-tiro**; attiva per 24 ore vissute dalla preghiera, come le altre.
+  Si accende una volta al giorno, con un'azione
   veloce, e dura 1 minuto ogni volta.
 
 > **Momento privato Hella + Tordek** (5 min di RP, lasciar improvvisare): la
@@ -3911,8 +3911,7 @@ descrivi tu in una riga e vai avanti: è un regalo, non un compito.
 ### 🎚️ Scheda sensoriale delle tre zone — e cosa NON dire
 
 > **Come si usa.** Le prime tre colonne sono quello che i PG colgono **in sei
-> secondi** senza tirare. La quarta è **vincolante quanto le altre**
-> ([ADR-0057](../../../plans/adr/ADR-0057-la-quarta-colonna-e-di-tutto-il-repo.md)):
+> secondi** senza tirare. La quarta è **vincolante quanto le altre**:
 > sono le cose che il tavolo deve **scoprire**, e che l'atmosfera, se ti scaldi,
 > racconta al posto loro.
 
@@ -4049,8 +4048,8 @@ Quando la testa torna a posto, guardano dove sono.
 **Dati per il DM (non da leggere).** Il portale li lascia **a circa 500 m a est
 delle mura**, un quarto d'ora prima del buio. Il bosco copre la spalla della
 montagna a est: dove il portale li lascia è poco sopra la quota delle mura, e
-da lì scende fino al margine del campo, sulla piana, 100 m più in basso
-. È autunno inoltrato: **5 °C**, il
+da lì scende fino al margine del campo, sulla piana, 100 m più in basso.
+È autunno inoltrato: **5 °C**, il
 fiato si vede, una nebbia bassa comincia a salire dal bosco. Dall'arrivo
 all'alba mancano **circa dodici ore**; l'orologio della notte (§4) comincia a
 contare con il consiglio, che è la prima delle sue otto tacche: le prime
@@ -4434,7 +4433,7 @@ incontrato, non si perde: il filo [VATORE/SAL] passa ad ARC-09.
 
 ⚠️ **L'orologio corre sulle SCELTE, non sul tempo reale.** Un tavolo che discute
 mezz'ora su cosa fare non spende una tacca; un tavolo che decide di andare a
-cercare Zeth sì. È la regola dell'Abbazia (`ADR-10` interno: *l'oppressione
+cercare Zeth sì. È la regola dell'Abbazia (*l'oppressione
 avanza sulle scoperte*), e serve a non punire proprio il comportamento che
 questo master vuole ottenere — **guardarsi intorno**.
 
@@ -4638,6 +4637,19 @@ gallerie sotto la fucina; cercarlo costa una tacca)*
   **Durik** vale di più: la sua scheda gli dà +50% di danni dall'acido. La
   attiva chi la porta, toccando il bersaglio, perché *resistere all'energia*
   è a contatto (SRD): su Durik la mette Hella.
+  Al tavolo nessuna era attiva prima dell'alba: alla vista del drago ne hanno
+  attivata **una, su Durik**, e l'altra resta da usare; Hella si è lanciata
+  addosso *protezione dall'energia* (acido).
+- **Il martello di Balvar a Zeth.** Se dopo la tenda i PG regalano a Zeth il
+  martello da guerra runico di Balvar (Scena 8, tesoro), Zeth ricambia con una
+  runa sua, incisa su un'arma che i PG scelgono: **+2 ai tiri per colpire
+  contro i draghi**. Delle rune che incide quella notte se ne attiva una sola,
+  questa. Al tavolo l'ha incisa su una balestra nascosta nel torrione ovest.
+  È una regola della casa: l'SRD non ha una runa così, e il bonus più
+  vicino è il +2 al colpire di un'arma *anatema* contro il suo nemico, senza i
+  dadi in più. Vale **per un colpo solo**, come il potere contro i draghi dei
+  Bracieri: chi la attiva dichiara il tiro, e la runa si spegne dopo quello,
+  a segno o a vuoto.
 - **Fermarsi o dormire — scelta.** In 3.5 ci sono solo le otto ore di sonno
   e il tempo che passa. **Tre ore di sosta** (2
   tacche) non ridanno incantesimi, perché l'SRD li restituisce solo dopo otto
@@ -5905,7 +5917,7 @@ incantesimi: se qualcuno prova a teletrasportarsi fuori, la lancia.
 **Tattica**: *righteous might* al round 1 e *slay living* (Tempra CD 20) sul
 più fragile al round 2, **prima** del silenzio, perché tutti e due hanno la
 componente verbale. Chi fallisce il TS contro *slay living* muore davvero,
-come nell'SRD: la cattura del Q29 vale per chi cade a 0 pf, non per chi muore.
+come nell'SRD: la cattura («Se va male nella tenda») vale per chi cade a 0 pf, non per chi muore.
 Si torna con *rianimare morti* alla cappella, che ha l'unico diamante della
 fortezza (5.450 mo, Scena 5), o con *reincarnazione*, se Hella l'ha preparata.
 Dal round 3 attiva la runa del *silenzio* su di sé e usa
@@ -6106,7 +6118,7 @@ motivo per cui la Scena 7 viene prima.
   vivo il bersaglio. Se Artemis lo martella, si gira su di lui.
 - **Danno massiccio** (regola SRD, attiva nelle regole della casa). Con
   l'Attacco Poderoso pieno o un critico l'ascia supera spesso i 50 danni: il
-  bersaglio tira Tempra CD 15 o muore. La cattura del Q29 vale per chi cade a
+  bersaglio tira Tempra CD 15 o muore. La cattura («Se va male nella tenda») vale per chi cade a
   0 pf, non per chi fallisce questo TS.
 - **Soglia 30% pf**: combatte disperato, cerca di **portare un PG con sé** nella
   morte (un ultimo Attacco Poderoso pieno, −15/+30, Appendice A.2).
@@ -7387,8 +7399,8 @@ si inginocchia. Il resto non si tocca.*
 | Evento (qui) | Eco | Quando riemerge | Dove si gestisce |
 |---|---|---|---|
 | **Esito del duello con Skullcrusher** (Scena 11) | UCCISO/FERITO/FUGGITO → effetto quantificato su Fauci di Palude | ARC-08 (boss di Hammerfist) | **«La Forgia ricorda le ferite»** + statblock Fauci ARC-08 |
-| **Ferite ancestrali segnate** (N≤3) | +N TxC **o** +Nd6 ai portatori vs Fauci; Aegis Fang in volo → cicatrice d'ala (−2 Volare Fauci) | ARC-08 | B4 §3 |
-| **Aegis Fang «sente» Fauci** (gancio inverso) | +2 circostanza a Thorik vs Fauci + preavviso del soffio | ARC-08 | B4 §4 |
+| **Ferite ancestrali segnate** (N≤3) | +N TxC **o** +Nd6 ai portatori vs Fauci; Aegis Fang in volo → cicatrice d'ala (−2 Volare Fauci) | ARC-08 | «La Forgia ricorda le ferite» §3 |
+| **Aegis Fang «sente» Fauci** (gancio inverso) | +2 circostanza a Thorik vs Fauci + preavviso del soffio | ARC-08 | «La Forgia ricorda le ferite» §4 |
 | **Vatore segnato/derubato/ferito** (Scena 9) | sincronizzazione su Sal nel 1372 (sanguina / manca un asso / vi teme) | ARC-09 (Sal mercante-spia) | registro di fine serata + scheda di Sal |
 | **Seme del Ghostlord** (Scena 5, incontro con Zeth) | i PG assistono all'inizio della Lichificazione di Zeth (i componenti li porta Vatore, per il Collezionista: Q4-bis) | ARC-09 (dilemma etico di Hella su Zeth il Murato) | registro di fine serata + scheda del Ghostlord |
 | **Zog'tar catturato, o umiliato e vivo** (Scena 8) | un generale mezzo-ogre che sopravvive alla notte del 372: giustiziato dal re se catturato, ramingo se umiliato. Nel 1372 è un nome nelle cronache dell'assedio antico | ARC-08 | registro di fine serata |
@@ -7464,7 +7476,7 @@ premi di storia, come sempre.
 | Scena 12, Momento 5 (dono del re, di persona) | **Torque di Thorek I**, sempre, anche senza fiducia piena: è il dono del re a chi porta la Corona — monile nanico antico (+1 sacro ai TS vs paura; e nel 1372 è una **reliquia storica**: i nani si scoprono il capo davanti a chi lo porta) | ~2.000 mo + valore storico |
 | Scena 9 (se derubano Vatore) | **Sigillo di Ossidiana** — artefatto minore di Shar (Manto di Notte + Furto della Notte, divora anime; contrasta l'Anello di Artemis — Appendice B) | speciale (gancio ARC-09) |
 | Scena 10 (bottino dell'orda antica, se sabotano gli arieti) | armi orchesche primitive (poco valore). Il **corno da guerra di ferro nero** che chiama il drago è incatenato al polso di Grask, alla tenda: si prende solo lì (Scena 6, variante dall'alto; 300 mo, e nel 1372 una reliquia) | ~300 mo |
-| Scena 8 (la tenda, con Zog'tar e i suoi a terra) | **Zog'tar**: armatura completa di mithral +2 Grande (16.000: 1.500 × 2 per la taglia, 9.000 di mithral, 4.000 di +2; si vende, non si indossa) · ascia a due mani +1 Grande (2.340) · 2 pozioni di *cura ferite gravi* (750 l'una), che nella tenda non ha ancora bevuto: le beve solo la notte dopo il barile, e chi lo spoglia all'alba non le trova. **Balvar**, se è morto: armatura completa di mithral +2 Media, che a un nano va bene (14.500) · anello di protezione +2 (8.000) · martello da guerra runico +1 (2.312) · la polvere di diamante dei glifi di una sera (400). **Le quattro guardie**: armatura completa, spadone e giavellotti (≈ 1.550 l'una). L'Occhio di Ossidiana resta nell'orbita: è maledetto e non si vende | ≈ 49.750 mo di listino, ≈ 24.500 senza Balvar; alla vendita la metà (SRD). Quanto se ne porta via dipende dal campo: qui sotto |
+| Scena 8 (la tenda, con Zog'tar e i suoi a terra) | **Zog'tar**: armatura completa di mithral +2 Grande (16.000: 1.500 × 2 per la taglia, 9.000 di mithral, 4.000 di +2; si vende, non si indossa) · ascia a due mani +1 Grande (2.340) · 2 pozioni di *cura ferite gravi* (750 l'una), che nella tenda non ha ancora bevuto: le beve solo la notte dopo il barile, e chi lo spoglia all'alba non le trova. **Balvar**, se è morto: armatura completa di mithral +2 Media, che a un nano va bene (14.500) · anello di protezione +2 (8.000) · martello da guerra runico +1 (2.312) · la polvere di diamante dei glifi di una sera (400) · i cinque oggetti +2 che porta addosso: *cintura della forza del gigante*, *guanti della destrezza*, *fascia dell'intelletto*, *periapto della saggezza*, *mantello del carisma* (4.000 l'uno, 20.000 in tutto). **Le quattro guardie**: armatura completa, spadone e giavellotti (≈ 1.550 l'una). L'Occhio di Ossidiana resta nell'orbita: è maledetto e non si vende | ≈ 69.750 mo di listino, ≈ 24.500 senza Balvar; alla vendita la metà (SRD). Quanto se ne porta via dipende dal campo: qui sotto |
 | Scena 11 (resti di Skullcrusher, se UCCISO) | **scaglia del Primo Nero** — trofeo: materiale per **1 oggetto ad acido** (arma/armatura +1d6 acido, o focus per incantesimi acidi; a discrezione del fabbro), e prova che la profezia è compiuta | ~1.500 mo |
 
 **Il bottino della tenda e il tempo**. Il
@@ -7605,8 +7617,8 @@ La riga di prima usava il drago **Vecchio** dell'SRD senza template, e ne veniva
 fuori un drago **più debole** di quello di base (287 pf e CD 27/24 contro 297 e
 28/25). Questo è il Vecchio dell'SRD (d20srd.org, *Dragon, True*) con lo stesso
 template Avanzato di A.1. Si usa con il gruppo di stasera, insieme alle 2
-wyvern di A.6: per un gruppo di 13° fanno EL 17, il tetto esatto di APL+4
-. Con un
+wyvern di A.6: per un gruppo di 13° fanno EL 17, il tetto esatto di APL+4.
+Con un
 gruppo di 14° è APL+3. L'Adulto di A.1 resta per i gruppi più deboli (Scena
 11, «Quale drago si usa, e quando»).
 
@@ -7620,26 +7632,27 @@ ___
 
 **DIFESA**
 ___
-**CA 36** (−2 taglia, +2 DES, +26 nat), contatto 10, impreparato 34; **40 con *armatura magica*** · **pf 337** (25d12+175) · TS Temp +21, Rifl +18, Vol +20 · RD 10/magia · RI 22 · immune acido, sonno, paralisi  
+**CA 39** (−2 taglia, +2 DES, +26 nat, +3 deflessione), contatto 13, impreparato 37; **43 con *armatura magica***, come al duello · **pf 337** (25d12+175) · TS Temp +24, Rifl +21, Vol +23 (con il mantello; senza oggetti CA 36, contatto 10, TS +21/+18/+20) · RD 10/magia · RI 22 · immune acido, sonno, paralisi  
 
 **ATTACCO**
 ___
-Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16) · **Schiacciare** 2d8+16, Riflessi CD 29 (solo creature Piccole o minori) · **Soffio acido** (Sop) linea di 30 m, 16d4, Riflessi CD 31 dimezza, di nuovo dopo 1d4 round (1d4+1 se impregnante, sotto) · **Capacità magiche** 3/giorno *oscurità* (raggio 24 m); 1/giorno *corrompere l'acqua* (CD 26, la CD della sua Presenza Terrificante, come nell'SRD: rovina anche le pozioni che un PG ha addosso, se falliscono il TS); 1/giorno *crescita vegetale* · **Incantesimi da stregone** (incantatore di 7°, CD 14 + livello): 0 (6/giorno) *individuazione del magico, lettura del magico, mano magica, resistenza, suono fantasma, frastornare*; 1° (7/giorno) *armatura magica, scudo, colpo accurato, dardo incantato*; 2° (7/giorno) *vedere invisibilità, immagine speculare*; 3° (5/giorno) *dissolvi magie, lentezza* (CD 17) (i conosciuti dell'Adulto più i due di 3°, come D64: scelta di Jfs del 19/11)  
-
-**TATTICHE**
-___
-Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf, circa **112 pf**. In A.1-ter, «Cosa cambia al tavolo», i numeri che contano nel duello.  
+Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16) · **Schiacciare** 2d8+16, Riflessi CD 29 (solo creature Piccole o minori) · **Soffio acido** (Sop) linea di 30 m, 16d4, Riflessi CD 31 dimezza, di nuovo dopo 1d4 round (1d4+1 se impregnante, sotto) · **Capacità magiche** (incantatore di 7°) 3/giorno *oscurità* (raggio 24 m); 1/giorno *corrompere l'acqua* (gittata 72 m, quella della Presenza; CD 26, la CD della sua Presenza Terrificante, come nell'SRD: rovina anche le pozioni che un PG ha addosso, se falliscono il TS); 1/giorno *crescita vegetale* (gittata 204 m) · **Incantesimi da stregone** (incantatore di 7°, CD 14 + livello; gittata vicina 12 m, media 51 m, lunga 204 m): 0 (6/giorno) *individuazione del magico, lettura del magico, mano magica, messaggio, resistenza, suono fantasma, frastornare*; 1° (7/giorno) *armatura magica, causare paura* (CD 15), *colpo accurato, dardo incantato, scudo*; 2° (7/giorno) *immagine speculare, spaventare* (CD 16), *vedere invisibilità*; 3° (5/giorno) *dissolvi magie, lentezza* (CD 17). Conosciuti 7/5/3/2, come lo stregone di 7° dell'SRD: ai conosciuti dell'Adulto più i due di 3° (D64, scelta di Jfs del 19/11) mancavano tre posti, e il DM li ha riempiti con *messaggio*, *causare paura* e *spaventare*  
 
 **STATISTICHE**
 ___
-For 33, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +25; Lotta +44 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Impregnante, Virare (non Ghermire), Volontà di Ferro, più Allerta · **Abilità** Ascoltare +31, Cercare +29, Concentrazione +32, Intimidire +29, Muoversi Silenziosamente +27, Nascondersi +19, Osservare +31, Sapienza Magica +29, Nuotare +18: come l'Adulto più Allerta (il blocco non spende i gradi dei tre DV in più)  
-
-**CAPACITÀ SPECIALI**
-___
-- **Presenza Terrificante**: raggio 72 m, Volontà CD 26 (meno di 25 DV).  
-- **Soffio impregnante**, quando lo sceglie: chi ne prende danno ne riprende metà al round dopo; toglierselo è un'azione di round completo con Riflessi CD 31 (+2 rotolando a terra, e si resta proni); la ricarica sale di 1 round.  
-- **Respirare sott'acqua** (Str).  
+For 33 Des 14 Cos 25 Int 18 Sag 19 Car 18  
 }}
+
+**Oggetti al duello** Dal suo tesoro triplo (SRD: 36.000 mo al GS 17, × 3 = 108.000), circa 51.900 mo a prezzo SRD: **anello di protezione +3** (18.000), **mantello della resistenza +3** (9.000), **bacchetta di *paura*** (incantatore di 7°, 21.000: cono di 9 m, Volontà CD 16, panico per 7 round, scosso per 1 round chi riesce), **2 pergamene di *dominare persone*** (incantatore di 9°, 1.125 l'una: 13,5 m, Volontà CD 17) e **1 pergamena di *suggestione di massa*** (incantatore di 11°, 1.650: gittata media, 63 m, fino a 11 creature entro 9 m l'una dall'altra, Volontà CD 19). Bacchetta e pergamene sono tutte sulla lista dello stregone: la bacchetta non chiede prove, le pergamene una prova d'incantatore, d20+7 contro CD 10 e 12 (SRD, *Pergamene*). Bacchetta e *suggestione di massa* costano un'azione standard, presa con l'artiglio: quel round non morde e non soffia. *Dominare persone* ha tempo di lancio 1 round (SRD), quindi in passata non si legge: solo da fermo o fluttuando, e l'effetto arriva all'inizio del suo turno dopo. *Dominare persone* prende solo gli umanoidi: Thorik è immune per la Mente Vuota, Hella in forma animale non è una persona
+
+**Tattiche** Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf, circa **112 pf**. Al corno, prima di partire, lancia *vedere invisibilità* e *immagine speculare* (1d4+2 immagini, 7 minuti). In passata chiude ogni turno a più di 18 m da tutti i PG, fuori dalle cariche: in mischia lo si prende solo con un'azione preparata quando passa. Mentre il soffio ricarica usa la bacchetta sul gruppo più fitto; la prima pergamena di *dominare* (un round fermo o fluttuando, quindi dopo la prima paura) va sul PG che fa più danno e non è Thorik, la *suggestione di massa* sui nani delle corde («lasciate le corde e salvatevi»). In A.1-ter, «Cosa cambia al tavolo», i numeri che contano nel duello.
+
+**Statistiche** For 33, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +25; Lotta +44 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Impregnante, Virare (non Ghermire), Volontà di Ferro, più Allerta · **Abilità** Ascoltare +31, Cercare +29, Concentrazione +32, Intimidire +29, Muoversi Silenziosamente +27, Nascondersi +19, Osservare +31, Sapienza Magica +29, Nuotare +18: come l'Adulto più Allerta (il blocco non spende i gradi dei tre DV in più)
+
+**Capacità speciali**
+- **Presenza Terrificante**: raggio 72 m, Volontà CD 26 (meno di 25 DV).
+- **Soffio impregnante**, quando lo sceglie: chi ne prende danno ne riprende metà al round dopo; toglierselo è un'azione di round completo con Riflessi CD 31 (+2 rotolando a terra, e si resta proni); la ricarica sale di 1 round.
+- **Respirare sott'acqua** (Str).
 <!-- /blocco -->
 
 I tiri salvezza, i bonus d'attacco e le CD sono quelli dell'SRD rifatti con il
@@ -7656,6 +7669,7 @@ si sommano a parte (§8 A).
 
 - Boost log: drago nero **Vecchio** dell'SRD invece dell'adulto maturo, con il template Avanzato PF1e completo — GS 16 → 17 — solo per il party straripante di 14°, dove EL 17 = APL+3; il DM vuole che la riga renda il duello più duro, non più facile.
 - Boost log: usato anche con il gruppo di 13°, con le 2 wyvern, e *Ghermire* → **Virare** come in A.1 — GS 17 → 17; EL 17 = APL+4, il tetto esatto — la simulazione del duello lo dà come l'unica versione che regge contro tutti e tre i modi di giocarlo senza una morte probabile, purché senza la presa in bocca.
+- Boost log: oggetti dal suo tesoro (anello di protezione +3, mantello della resistenza +3, bacchetta di *paura*, 2 pergamene di *dominare persone*, 1 di *suggestione di massa*: circa 51.900 mo di 108.000), i tre incantesimi che mancavano ai conosciuti (*messaggio*, *causare paura*, *spaventare*), *immagine speculare* al corno e passate lunghe — GS 17 → 17: gli oggetti vengono dal suo tesoro e la DMG non alza il GS per l'equipaggiamento che il mostro possiede; i conosciuti sono quelli che lo stregone di 7° dell'SRD già doveva avere. EL 17 = APL+4 resta il tetto. Il prezzo al tavolo: CA di contatto 13 invece di 10, e con l'anello Tordek (+21) lo colpisce solo col 20 naturale.
 
 ### A.1-ter · Cosa cambia al tavolo, con l'Adulto o con il Vecchio
 
@@ -7666,7 +7680,10 @@ si sommano a parte (§8 A).
   cieca*). *Vedere invisibilità* dura 10 minuti per livello: 50 con
   l'Adulto (incantatore di 5°), 70 col Vecchio (7°). Dopo il barile lo lancia
   al corno dell'alba, prima di partire, e i PG invisibili sono visibili per
-  tutto il duello. Di notte sulle colline non l'ha
+  tutto il duello. Col Vecchio al corno lancia anche
+  *immagine speculare*: ogni attacco a bersaglio singolo, deflagrazione
+  compresa, sceglie a caso fra lui e le immagini; le aree lo prendono comunque.
+  Di notte sulle colline non l'ha
   lanciato, perché non si aspetta nessuno.
 - **Il soffio fa più male**: 14d4 (in media 35) invece di 12d4, e Riflessi
   CD 30; col Vecchio 16d4 (in media 40), CD 31. La runa di Zeth (*resistere all'energia* 20) ne toglie ancora più
@@ -7686,6 +7703,12 @@ si sommano a parte (§8 A).
   Vecchio servono 9 o 10, e se ne spengono quattro o cinque su dieci. Le
   invocazioni di Artemis la subiscono come gli incantesimi.
 - **RD 10/magia**: le armi dei PG sono magiche; le balestre delle mura, no.
+- **Le gittate col Vecchio, che resta lontano.** Chiude ogni passata a più di
+  18 m dai PG. Lo raggiungono le armi a distanza e gli incantesimi a gittata
+  media o lunga; la deflagrazione di Artemis con *Eldritch Spear* arriva a
+  75 m (*Complete Arcane*, fuori SRD). Lui risponde da 51 m con *dissolvi
+  magie* e *dardo incantato*, da 72 m con *corrompere l'acqua*, da 12 m con
+  *lentezza* e *causare paura*, e col cono di 9 m della bacchetta.
 - ***Corrompere l'acqua*** può rovinare le pozioni in tasca a un PG (TS
   dell'oggetto sulla Volontà del portatore). Lo usa al primo turno libero dal
   soffio, se vede qualcuno bere (Scena 11, round 2-3).
@@ -7834,11 +7857,11 @@ Vel 6 m · **Mischia** martello da guerra runico +1 +11/+6 (1d8+2/x3) · Domini 
 
 **TATTICHE**
 ___
-Dipendono da come è andata con lui prima dello scontro: il viaggio a mille anni fa, Scena 7, «Cosa fa quando comincia lo scontro» (canone, decisione Q21 del DM) (recuperato non combatte e indica la runa della Catena; trattativa aperta guarda un round e poi sta con chi vince; minacciato combatte con Zog'tar, come dice «Come si combatte, se si arriva a combatterlo» nella stessa scena). **Morale**: sotto 30 pf non fugge e non implora, finisce di incidere la lastra con un'azione di round completo, l'ultima, e in quel turno non attacca e non lancia (decisioni D52 e D71 del DM, nella stessa scena).  
+Dipendono da come è andata con lui prima dello scontro: il viaggio a mille anni fa, Scena 7, «Cosa fa quando comincia lo scontro» (recuperato non combatte e indica la runa della Catena; trattativa aperta guarda un round e poi sta con chi vince; minacciato combatte con Zog'tar, come dice «Come si combatte, se si arriva a combatterlo» nella stessa scena). **Morale**: sotto 30 pf non fugge e non implora, finisce di incidere la lastra con un'azione di round completo, l'ultima, e in quel turno non attacca e non lancia (decisioni D52 e D71 del DM, nella stessa scena).  
 
 **STATISTICHE**
 ___
-For 12, Des 14, Cos 16, Int 16, **Sag 20**, Car 14 · BAB +9; Lotta +10 · **Abilità** Percepire Intenzioni +13, Concentrazione +19, Sapienza Magica +19, Conoscenze (storia) +19, Artigianato (incidere rune) +19 (il conto dei gradi è nella nota in testa) · **Talenti** Incidere Rune `[Private source — FRCS]`, Volontà di Ferro, Riflessi Fulminei, Incantare in Combattimento, Scrivere Pergamene · **Equipaggiamento** armatura completa di mithral +2, anello di protezione +2, martello da guerra runico +1, polvere di diamante per i glifi  
+For 12, Des 14, Cos 16, Int 16, **Sag 20**, Car 14 · BAB +9; Lotta +10 · **Abilità** Percepire Intenzioni +13, Concentrazione +19, Sapienza Magica +19, Conoscenze (storia) +19, Artigianato (incidere rune) +19 (il conto dei gradi è nella nota in testa) · **Talenti** Incidere Rune `[Private source — FRCS]`, Volontà di Ferro, Riflessi Fulminei, Incantare in Combattimento, Scrivere Pergamene · **Equipaggiamento** armatura completa di mithral +2, anello di protezione +2, martello da guerra runico +1, *cintura della forza del gigante +2*, *guanti della destrezza +2*, *fascia dell'intelletto +2*, *periapto della saggezza +2*, *mantello del carisma +2*, polvere di diamante per i glifi Equipaggiamento sopra la tabella: scelta del DM: almeno 44.812 mo contro i 35.000 della Tabella 4-23 del DMG 3.5 al livello effettivo 13; il GS resta 13.  
 
 **CAPACITÀ SPECIALI**
 ___
@@ -7920,7 +7943,7 @@ ___
 
 **TATTICHE**
 ___
-Il sergente, guerriero 3 nel testo, ha i numeri dell'orco guerriero 4 del Bestiario, GS 3: 30 pf, CA 16, falchion +7 (2d4+3).  
+Il sergente, guerriero 3 nel testo, ha i numeri dell'orco guerriero 4 del Bestiario, GS 3: 30 pf, CA 16, falchion +9 (2d4+6).  
 
 **STATISTICHE**
 ___
@@ -7928,6 +7951,7 @@ Linguaggi: Comune, Orchesco
 Qualità speciali: sensibilità alla luce (abbagliato in piena luce solare o in *luce diurna*)  
 Altro equipaggiamento: cuoio borchiato, falchion, giavellotto  
 }}
+
 
 {{monster,frame
 ## Hobgoblin della pattuglia (8)
@@ -8163,6 +8187,25 @@ Le quote sono del DM: piana 0, spianata degli arieti
 mura. La rampa fra la spianata e la porta, le scale sul tratto est e la torre
 nord sul suo gradone sono inferenze da confermare: sono scritte, con le loro
 ragioni, nelle note di M7-A dell'Atlante.
+
+#### MAPPA M7-R — LA VALLE DI HAMMERFIST ≈372 DR (la regione, non in scala)
+
+M7-R allarga M7-A alla valle intera: le montagne a nord con le miniere, la
+fortezza sul gradone, la spianata degli arieti e i tornanti, la piana col mare
+di tende e il campo del capo, il bosco a est dove posa il portale, le colline a
+sud dove dorme il drago, e la via degli eroi giù per il fianco est. Il riquadro
+tratteggiato è M7-A. È uno schema disegnato come M7-A, senza griglia e senza
+scala: dice dove sta ogni cosa, e le distanze sono scritte nella legenda. Non
+serve a muovere le pedine. Si stampa nell'appendice della regione del booklet
+della serata, alla sezione «La geografia».
+
+Le quote della fortezza vengono dal profilo di M7-A,
+la piana a 520 m sul mare da M7-B. Il pendio del
+372 è lo stesso del 1372, quindi il pendio e
+la strada vengono dalla pianta L2 di ARC-08: circa 300 m in pianta per 80 m di
+dislivello, il 27%, e una strada a tornanti di circa 530 m, larga 6 m, al 15%.
+I valichi a nord e la strada da cui è arrivata l'orda non sono disegnati: il
+canone non li dà.
 
 #### MAPPA M7-B — L'ARENA DEL DUELLO (cortile interno · Skullcrusher)
 

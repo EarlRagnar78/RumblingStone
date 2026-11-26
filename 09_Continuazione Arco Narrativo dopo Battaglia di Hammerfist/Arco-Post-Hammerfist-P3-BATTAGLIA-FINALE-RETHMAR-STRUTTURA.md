@@ -181,7 +181,7 @@ allora puoi **ridurre** un po’ l’Avatar (meno pf, qualche potere limitato) p
   - Eseguire un **rituale di 7 round** per innalzare un campo di energia simile a un Mythal che:
     - protegge la città da ulteriori evocazioni extraplanari,  
     - indebolisce l’Avatar di Tiamat (es. –2 a tutti i tiri, niente teletrasporti, immunità planar gate), [web:110]
-    - **inchioda Tyrgarun a terra** (D11 v2, canone P2D-INTEGRAZIONE r.201): niente volo = niente flyby/kiting, ma il soffio da 20d8 resta: è uccidibile da party+alleati solo se arriva sotto i 250 pf e combattono statue e alleati `[CANONE — DM 2026-11-15]`, oppure fugge come nemesi per ARC-10.
+    - **inchioda Tyrgarun a terra** (D11 v2, canone P2D-INTEGRAZIONE r.239, la cupola che «inchioda a terra Tyrgarun/draghi»): niente volo = niente flyby/kiting, ma il soffio da 20d8 resta: è uccidibile da party+alleati solo se arriva sotto i 250 pf e combattono statue e alleati `[CANONE — DM 2026-11-15]`, oppure fugge come nemesi per ARC-10.
 
 ### Obiettivi PG
 
@@ -299,7 +299,7 @@ esce un numero che corrisponde a una carta già in gioco, promuovilo a carta.)
 
 > Benchmark: **Abithriax sulle mura di Brindol** (RHoD Parte 4). Statblock
 > completo (profilo aereo CR 18 + profilo a terra CR ~16-17):
-> `Bestiario/villain/tyrgarun-blue-very-old-cr19.md`.
+> `Bestiario/villain/Tyrgarun/tyrgarun-blue-very-old-cr19.md`.
 
 Tyrgarun **non è un incontro a iniziativa** finché il Mythal non lo inchioda: a
 CR 18 in volo con Flyby è imbattibile per design. Si gioca a **scalini**.
@@ -312,10 +312,14 @@ DM tratta come check, non come combattimento:
 
 | Contromossa | Meccanica | Effetto se riuscita |
 |---|---|---|
-| **Nidi di balliste** (2-4 sui bastioni) | Artiglieria: attacco a distanza +8, danno 4d6, CA di Tyrgarun 37 (contatto 8 in avvicinamento); ogni nido ha CA 5, 60 pf, RD 5 | Una passata deviata (Tyrgarun sale fuori portata 1d4 round) |
+| **Nidi di balliste** (2-4 sui bastioni) | Artiglieria: attacco a distanza +8, danno 4d6, CA di Tyrgarun 40 (contatto 11; corredo della card del 2026-11-21); ogni nido ha CA 5, 60 pf, RD 5 | Una passata deviata (Tyrgarun sale fuori portata 1d4 round) |
 | **Squadroni di gufi giganti Tiri Kitor** (se alleanza D9) | 20 gufi = "asset" astratto; ogni round negano **1 passata** ingaggiandolo in volo | Tyrgarun non può bombardare quel settore |
 | **Missione-esca dei PG** | I PG attirano Tyrgarun con un bersaglio ghiotto (l'Artefatto Maligno, un focus arcano di Artemis): Raggirare/Conoscenze CD 22 | Tyrgarun spreca 1d4 round su un'esca; nessun danno ai settori |
 | **Fulcro Arcano** (§9.2, Artemis) | Sbarramento di *eldritch blast*/utility | Nega **1 passata** a un settore |
+
+<!-- storico -->
+Fino al 2026-11-21 i nidi di balliste davano a Tyrgarun CA 37 (contatto 8), prima del corredo della card del 21/11; i rimandi alla sua scheda e a P2D-INTEGRAZIONE puntavano a `Bestiario/villain/tyrgarun-blue-very-old-cr19.md` (senza la cartella) e alla r.201.
+<!-- /storico -->
 
 Se le contromosse falliscono ripetutamente (2+ passate a segno di fila), un
 settore **cede** (-1 Fronte, breccia → carta EVENT-DECK).
@@ -326,7 +330,7 @@ impiegano contro i ritualisti/Azarr Kul, tira 1d6 — con **1-2** Tyrgarun fa un
 passata sulla squadra speciale (soffio, poi risale). Non atterra. È la ragione
 per cui la squadra PG **ha fretta**: più tempo passa, più passate subisce.
 
-**FASE 4 — Il Mythal lo inchioda a terra** (canone §7 / P2D-INTEGRAZIONE r.201).
+**FASE 4 — Il Mythal lo inchioda a terra** (canone §7 / P2D-INTEGRAZIONE r.239).
 Completato il Mythal, Tyrgarun **perde il volo** entro l'area: profilo **a terra
 CR ~16-17** (niente Flyby/kiting, -2 tiri/TS da Mythal). **Solo ora** è
 uccidibile da party APL 14 + alleati + Statue-Golem. Alternativa: se ridotto

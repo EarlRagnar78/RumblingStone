@@ -74,9 +74,9 @@
 **NM Drago Enorme (Acqua)**
 **Iniziativa:** +4; **Sensi:** Percezione cieca 18 m (SRD: chi Fauci non vede resta occultato del tutto, anche se ne sa il quadretto), Scurovisione 36m, Visione Crepuscolare; Ascoltare +27, Osservare +27
 
-**CA:** 29 (-2 taglia, +21 naturale), contatto 8, colto alla sprovvista 29 (37 con *Armatura Magica* e *Scudo*)
+**CA:** 33 (-2 taglia, +21 naturale, +2 potenziamento all'armatura naturale, +2 deviazione), contatto 10, colto alla sprovvista 33 (41 con *Armatura Magica* e *Scudo*)
 **PF:** 337 (25d12+175)
-**TS:** Tempra +21, Riflessi +16, Volontà +19
+**TS:** Tempra +24, Riflessi +19, Volontà +22 (+3 del *mantello della resistenza*; il trucchetto *Resistenza*, se lo tiene, non si somma: due bonus di resistenza non si cumulano, SRD)
 **Immunità:** Acido, Paralisi, Sonno; **RD:** 10/magia; **RI:** 21
 
 **Velocità:** 18m, Nuotare 18m, Volare 45m (scarsa)
@@ -98,9 +98,13 @@
     *   *3° (CD 16):* *Dissolvi Magie*, *Nube Maleodorante*
     *   *2° (CD 15):* *Freccia Acida*, *Immagine Speculare*, *Invisibilità*
     *   *1° (CD 14):* *Armatura Magica*, *Colpo Accurato*, *Dardo Incantato*, *Protezione dal Bene*, *Scudo*
-    *   *0° (CD 13):* *Frastornare*, *Individuazione del Magico*, *Luce*, *Mano Magica*, *Prestidigitazione*, *Raggio di Gelo*, *Resistenza*
+    *   *0° (CD 13):* *Frastornare*, *Individuazione del Magico*, *Luce*, *Mano Magica*, *Prestidigitazione*, *Raggio di Gelo*, *Lettura del Magico* `[CANONE — DM 2026-11-21, card]`
 
 **Talenti:** Arma Focalizzata (morso), Attacco in Volo, Critico Migliorato (Morso), Iniziativa Migliorata, Multiattacco, Volontà di Ferro, Riflessi Fulminei, Fluttuare, Ghermire (gli ultimi tre confermati dal DM, 2026-10-18). Arma Focalizzata (morso) ha preso il posto di Allerta, la scelta più forte tra le due versioni confrontate: morso +34, Ascoltare e Osservare +27 `[CANONE — DM 2026-11-09, INVENTARIO D4]`.
+
+**Equipaggiamento** `[CANONE — DM 2026-11-21, card: «A · Signore dell'assedio»]`: *anello di protezione +2* (8.000 mo), *amuleto dell'armatura naturale +2* (8.000 mo), *mantello della resistenza +3* (9.000 mo); 2 pergamene di *nebbia acida* (LI 11°, 1.650 mo l'una), 2 pergamene di *invisibilità superiore* (LI 7°, 700 mo l'una), 2 pozioni di *cura ferite gravi* (LI 5°, 750 mo l'una). Prezzi dell'SRD. In tutto 31.200 mo, il 47% del suo tesoro: un drago nero ha tesoro triplo (SRD, «Treasure: Triple standard»), e a GS 15 il tesoro standard è 22.000 mo (Guida del DM 3.5, «Treasure Values per Encounter»): 3 × 22.000 = 66.000 mo; il resto, 34.800 mo, è il covo.
+- **Le pergamene (SRD, *Scrolls*).** *Nebbia acida* e *invisibilità superiore* sono incantesimi arcani della lista dello stregone, e Fauci lancia come uno stregone (SRD, *Dragon*): le può usare. Car 16 basta anche per il 6° livello (serve 10 + il livello). *Invisibilità superiore* ha il suo LI, 7°, e non chiede prove. *Nebbia acida* ha LI 11°, sopra il suo: prova di livello dell'incantatore CD 12, d20 + 7, che riesce 80 volte su 100; se fallisce, la pergamena è persa e una prova di Saggezza CD 5 evita l'incidente. Leggerla è un'azione standard, come lanciare un incantesimo, e provoca attacchi di opportunità. Prima va decifrata, e Fauci lo fa prima della battaglia con *lettura del magico* `[CANONE — DM 2026-11-21, card]`.
+- **Le pozioni.** *Cura ferite gravi* rende 3d8+5 pf, in media 18 o 19. Prenderla è un'azione di movimento, berla un'azione standard, e tutte e due provocano attacchi di opportunità (SRD).
 
 > **Verifica 3.5 (versione più forte, lotto delle schede PNG; ricontata al giro
 > di letture del 2026-10-19)**: Fauci resta un **adulto maturo** per canone,
@@ -120,9 +124,25 @@
 > mancavano sono confermati dal DM (2026-10-18). *Oscurità* è una capacità magica dell'età, non
 > un incantesimo conosciuto; *Volare* esce dagli incantesimi (un drago vola
 > già, e superava i due conosciuti di 3°). L'Odio della stirpe viene dalla
-> CORREZIONE del boss nell'arco 07.
+> CORREZIONE del boss nell'arco 07. La CA 33 e i TS +24/+19/+22 vengono dagli oggetti della riga
+> Equipaggiamento (card del 2026-11-21), non dai dadi: senza, CA 29 e TS +21/+16/+19.
 
-**Tattiche:** Inizia con *Armatura Magica* e *Scudo*, e prima di farsi vedere lancia *Immagine Speculare* `[CANONE — DM 2026-11-15]`. Finché non riconosce Aegis Fang combatte da drago d'assedio: Soffio sui difensori ammassati e *Nube Maleodorante* dall'alto; con Fluttuare resta sospeso sopra le mura e soffia senza atterrare. Prima di avvicinarsi alle mura mette *Oscurità* su un sasso che tiene fra gli artigli: chi gli tira contro ha il 20% di mancarlo, anche con la scurovisione (SRD 3.5), mentre il soffio e la nube colpiscono un'area e non ne risentono. Non la mette sulle baliste: l'occultamento andrebbe ai serventi, non a lui, e le baliste (+10) lo colpiscono solo col 20 naturale. Il *See the Unseen* di Artemis non la attraversa: dà la scurovisione, che nell'oscurità magica non serve (SRD 3.5), e *Voidsense* gli dice solo il quadretto, il 20% resta. Prima della picchiata su Thorik lascia cadere il sasso lontano dalle mura, così il morso non ha il 20% di mancare `[CANONE — DM 2026-11-15]`. Le cisterne di Hammerfist non le tocca: *corrompere acqua* resta fuori dalla tattica `[CANONE — DM 2026-11-15]`. Dal turno dopo il primo canto di Aegis Fang, o il primo colpo dell'ascia, sa chi ha davanti e ha un bersaglio solo: Thorik. Prima della picchiata rinnova *Immagine Speculare* se le immagini sono finite, e lancia *Dissolvi Magie* su chi vola vicino a Thorik e potrebbe prenderlo al volo (una pozione di *volare*, Hella con lo Scudo del Custode), ma solo se lo ha già visto farlo: la prima volta il trucco dei PG funziona `[CANONE — DM 2026-11-15]`. Lo prende in bocca, una volta, quando lo decide lui (qui sotto, «La presa di Thorik»; in Sessione 4 è la picchiata dei round 18-20). Il soffio che non serve alla presa va su chi cura: ha visto chi tiene in piedi i nani `[CANONE — DM 2026-11-15]`. Prima di atterrare per finire Thorik lancia *Nube Maleodorante* sui compagni che gli corrono incontro, così scende quando nessuno può rispondere `[CANONE — DM 2026-11-15]`. Atterra solo per finire Thorik dopo averlo lasciato cadere. Fugge sotto un terzo dei pf, **112 PF** `[CANONE — DM 2026-11-15]`: con INT 16 non resta a terra in mezzo a una fortezza nanica, e torna come nemesi. Simulazione: `plans/esperimenti/tattiche-draghi-2026-11-15/`. Thorik, col *Mind Blank* permanente della Corona, non subisce la Presenza terrificante: è un effetto di paura che influenza la mente (SRD *Mind Blank*).
+**Tattiche:**
+
+- **Prima del combattimento.** Inizia con *Armatura Magica* e *Scudo* attivi, e prima di farsi vedere lancia *Immagine Speculare* `[CANONE — DM 2026-11-15]`. Al LI 7° durano 7 ore la prima e 7 minuti le altre due (SRD), più di tutto lo scontro: quando si fa vedere ha già tutte e tre addosso, e in Sessione 4 questo è il round 1, quando il box lo fa ruggire contro i gufi. Invisibile non lo è ancora: l'*invisibilità superiore* viene dopo (qui sotto, «Picchiata»). Prima di avvicinarsi alle mura mette *Oscurità* su un sasso che tiene fra gli artigli: chi gli tira contro ha il 20% di mancarlo, anche con la scurovisione (SRD 3.5), mentre il soffio e la nube colpiscono un'area e non ne risentono. Non la mette sulle baliste: l'occultamento andrebbe ai serventi, non a lui, e le baliste (+10) lo colpiscono solo col 20 naturale. Le cisterne di Hammerfist non le tocca: *corrompere acqua* resta fuori dalla tattica `[CANONE — DM 2026-11-15]`.
+- **Assedio.** Finché non riconosce Aegis Fang combatte da drago d'assedio: Soffio sui difensori ammassati e *Nube Maleodorante* dall'alto; con Fluttuare resta sospeso sopra le mura e soffia senza atterrare. Nell'assedio legge *nebbia acida* sul camminamento dei difensori `[CANONE — DM 2026-11-21, card]`; in Sessione 4 la legge sui bastioni in uno dei round 1-3, mentre il cuneo si forma, e a quel punto si è già fatto vedere `[CANONE — DM 2026-11-21, card]`. Fauci è immune all'acido, ma la nebbia rallenterebbe anche lui: non ci entra. Che cosa fa la nebbia è nella nota qui sotto.
+- **Dal riconoscimento di Aegis Fang.** Dal turno dopo il primo canto di Aegis Fang, o il primo colpo dell'ascia, sa chi ha davanti e ha un bersaglio solo: Thorik. Lo prende in bocca, una volta, quando lo decide lui. Il soffio che non serve alla presa va su chi cura: ha visto chi tiene in piedi i nani `[CANONE — DM 2026-11-15]`.
+- **Picchiata (in Sessione 4, round 15-17).** Leggere una pergamena o lanciare un incantesimo è un'azione standard (SRD), e prima della picchiata ne fa una per round: round 15 *immagine speculare* (o *dissolvi magie*), round 16 *nebbia acida*, round 17 *invisibilità superiore*, che dura fino al round 23 e copre la presa e il duello `[CANONE — DM 2026-11-21, card]`. Se gli servono sia *immagine speculare* sia *dissolvi magie*, l'immagine passa al round 14.
+  - *L'immagine e il dissolvi.* Prima della picchiata rinnova *Immagine Speculare* se le immagini sono finite, e lancia *Dissolvi Magie* su chi vola vicino a Thorik e potrebbe prenderlo al volo (una pozione di *volare*, Hella con lo Scudo del Custode), ma solo se lo ha già visto farlo: la prima volta il trucco dei PG funziona `[CANONE — DM 2026-11-15]`.
+  - *La seconda nebbia.* Prima della picchiata legge l'altra *nebbia acida* sui compagni di Thorik, mai su Thorik: dentro la nebbia avrebbe occultamento anche lui contro il morso `[CANONE — DM 2026-11-21, card]`. La mette su chi cura e su chi tira da lontano, non su chi deve correre alla zona ⚡: Thorik resta fuori dai 6 m del raggio, e la zona dove lo lascerà cadere pure, perché chi cade dentro la nebbia prende 1d6 in meno ogni 3 m di vapore (SRD, *Solid Fog*). Chi è nella nebbia si muove di 1,5 m a round, e il soffio con Thorik in bocca lo trova ancora lì; chi corre alla zona ⚡ ne è fuori, e i PG convergono in 2 round come dice la guida dello scontro.
+  - *L'invisibilità.* Nell'avvicinamento alle mura legge una pergamena di *invisibilità superiore*: 7 round, e attaccare non la rompe `[CANONE — DM 2026-11-21, card]`. In Sessione 4 l'avvicinamento è quello della picchiata, al round 17. Invisibile, chi gli tira contro deve indovinare il quadretto e ha il 50% di mancarlo; lui ha +2 a colpire, e chi è attaccato da lui perde la Destrezza alla CA (SRD, *Invisibility*). Per la presa vuol dire: morso +40 contro Thorik (il +38 della presa e il +2), e Thorik senza Destrezza alla CA; la prova di lotta di *Ghermire* resta +27 contro +18, perché il +2 vale sui tiri per colpire e non sulla lotta, e il soffio con lui in bocca colpisce un'area e non cambia. Non sa che Artemis vede l'invisibile (*See the Unseen*): la prima volta l'invisibilità funziona contro tutti gli altri, non contro di lui `[CANONE — DM 2026-11-21, card]`. Cosa faccia della seconda pergamena, dopo che se n'è accorto, non è deciso `[INFERRED — Fauci tiene la seconda invisibilità per dove Artemis non ha la linea di vista, come Tyrgarun?; base: la card dice solo che la prima volta funziona]`.
+  - *Il sasso.* Finché è invisibile il sasso con l'*Oscurità* non serve: le probabilità di mancare non si sommano, vale la più alta (SRD, *Concealment*), e una sfera di buio che vola direbbe dov'è `[INFERRED — Fauci tiene coperto il sasso finché è invisibile, e lo scopre quando l'invisibilità finisce?; base: SRD, *Darkness*: una copertura opaca blocca l'effetto]`. Prima della picchiata su Thorik lascia cadere il sasso lontano dalle mura, così il morso non ha il 20% di mancare `[CANONE — DM 2026-11-15]`.
+- **Presa (round 18-20).** Morso, salita con Thorik in bocca, soffio con lui in bocca e caduta nella zona ⚡: la sequenza e i numeri sono qui sotto, in «La presa di Thorik».
+- **A terra (round 21-23).** Atterra solo per finire Thorik dopo averlo lasciato cadere. Prima di atterrare per finire Thorik lancia *Nube Maleodorante* sui compagni che gli corrono incontro, così scende quando nessuno può rispondere `[CANONE — DM 2026-11-15]`. Se la *nebbia acida* è ancora su di loro, la nube va su chi ne è fuori.
+- **Se i PG si sono protetti dall'acido** `[INFERRED — Fauci, coi PG protetti dall'acido, tiene la nebbia per rallentare e sposta il soffio su chi non lo è?; base: SRD, *Resist Energy* (da LI 7° toglie 20 danni a ogni attacco, quindi tutti i 2d6 della nebbia) e *Protection from Energy*; Regiarix fa lo stesso (P2-LHESPER STATBLOCCHI r.93)]`, lo capisce la prima volta che la nebbia o il soffio non li bruciano. La nebbia la usa ancora, per quello che le resta: rallentare e separare. I 2d6 non passano, il movimento di 1,5 m a round e la vista corta sì. Il soffio va su chi cura solo se chi cura non è protetto, se no su chi non lo è; se lo sono tutti, non soffia su di loro e usa la *nube maleodorante*, che non è acido. La presa di Thorik resta com'è.
+- **Morale.** Quando scende sotto i 150 pf beve una pozione di *cura ferite gravi*, prima di decidere se fuggire `[CANONE — DM 2026-11-21, card]`: due pozioni fanno in media 37 pf, e lo tengono sopra la soglia un round o due in più. Fugge sotto un terzo dei pf, **112 PF** `[CANONE — DM 2026-11-15]`: con INT 16 non resta a terra in mezzo a una fortezza nanica, e torna come nemesi.
+
+> **Nota di regola alle tattiche.** *Nebbia acida* (SRD, *Acid Fog*, *Solid Fog*, *Fog Cloud*): gittata 63 m (media, col LI 11° della pergamena), 6 m di raggio e 6 di altezza, 11 round. Nel turno di Fauci fa 2d6 acido a chi c'è dentro, senza TS né RI; dentro ci si muove di 1,5 m a round qualunque sia la velocità, si ha −2 a colpire e ai danni in mischia, non si fa il passo di 1,5 m, le armi a distanza non servono, e oltre 1,5 m non si vede, nemmeno con la scurovisione. La disperde in un round solo un vento violento, come quello di *folata di vento* (SRD). Il *See the Unseen* di Artemis non attraversa l'*Oscurità*: dà la scurovisione, che nell'oscurità magica non serve (SRD 3.5), e *Voidsense* gli dice solo il quadretto, il 20% resta. Thorik, col *Mind Blank* permanente della Corona, non subisce la Presenza terrificante: è un effetto di paura che influenza la mente (SRD *Mind Blank*). Simulazione: `plans/esperimenti/tattiche-draghi-2026-11-15/`.
 
 **La presa di Thorik** `[CANONE — DM 2026-10-19]`. È la firma di Fauci: la usa solo su Thorik, per odio, e solo da quando ha riconosciuto l'ascia. Non ghermisce nessun altro. Una volta per incontro `[CANONE — DM 2026-10-20]`. Se Aegis Fang non ha mai cantato né colpito, la presa non c'è.
 
@@ -152,7 +172,7 @@
 - **Sul collo** `[CANONE — DM 2026-10-20]`: Thorik non è più in lotta e il drago non lo morde, perché è fuori dalla portata della sua bocca. Come chi scala, perde la Destrezza alla CA e non usa lo scudo (SRD, *Climb*), e colpisce con Aegis Fang.
 - **Scrollarselo** `[CANONE — DM 2026-10-20]`: all'inizio di ogni turno di Fauci, Thorik ripete Scalare CD 25. Se fallisce di 5 o più, cade dalla quota del drago. Fauci per toglierselo può anche atterrare, ed è il duello dei round 21-23 con Thorik già addosso.
 
-**Colpi mirati: l'occhio e l'ala** `[CANONE — DM 2026-10-20: regola della casa da PF1e, solo per questo scontro]`. L'SRD 3.5 non ha colpi mirati; qui si usano quelli di Pathfinder 1e (*Ultimate Combat*, «Called Shots», OGL). Un colpo mirato è un attacco singolo con un'azione di round completo, contro la CA normale (29, 37 con *armatura magica* e *scudo*). Non si somma alla carica, né a una raffica o a un attacco completo.
+**Colpi mirati: l'occhio e l'ala** `[CANONE — DM 2026-10-20: regola della casa da PF1e, solo per questo scontro]`. L'SRD 3.5 non ha colpi mirati; qui si usano quelli di Pathfinder 1e (*Ultimate Combat*, «Called Shots», OGL). Un colpo mirato è un attacco singolo con un'azione di round completo, contro la CA normale (33, 41 con *armatura magica* e *scudo*). Non si somma alla carica, né a una raffica o a un attacco completo.
 - **L'occhio, −10.** Se colpisce, per 1 round i nemici di Fauci hanno occultamento contro i suoi attacchi, e lui ha −2 a Osservare. Con un critico perde la vista da quell'occhio per 1d4 minuti, e l'effetto di prima dura altrettanto. Non cade e non è accecato: gli restano l'altro occhio e la percezione cieca a 18 m, che però non gli toglie la probabilità di mancare chi è occultato (SRD).
 - **L'ala, −2** (le ali contano come braccia). Se colpisce, Fauci ha −2 per 1d4 round a ciò che fa con quell'ala. In PF1e deve anche superare una prova di Volare o scendere contro la sua volontà. In 3.5 quella prova non c'è, e al suo posto fa un TS sui Riflessi con CD pari alla CA colpita: se fallisce, nel suo turno scende di 22,5 m, metà della sua velocità di volo, e non può salire `[CANONE — DM 2026-10-20]` (la distanza la regola PF1e non la dice).
 - **Da dove.** In mischia senza penalità se il bersaglio è adiacente, −2 altrimenti; a distanza le penalità di gittata raddoppiano, minimo −2 oltre i 9 m. Dal collo del drago l'occhio è a portata: meglio Aegis Fang in mano che lanciata, perché un attacco a distanza fatto nello spazio di chi minaccia provoca un attacco di opportunità (SRD).
@@ -287,34 +307,40 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 
 **Velocità:** 9m (in armatura)
 **Attacco Base:** +11; **Lotta:** +24
-**Attacco:** *Randello Enorme +1* +21 in mischia (2d6+10)
-**Attacco Completo:** *Randello Enorme +1* +21/+16/+11 in mischia (2d6+10) e *Randello Enorme +1* +21/+16/+11 in mischia (2d6+5)
-**Distanza:** giavellotto grande +12/+7/+2 (1d8+9)
+**Attacco:** *Stella del Mattino Grande +1* +21 in mischia (2d6+10)
+**Attacco Completo:** *Stella del Mattino Grande +1* +21/+16/+11 in mischia (2d6+10) e *Stella del Mattino Grande +1* +21/+16/+11 in mischia (2d6+10)
+**Distanza:** giavellotto grande +12 (1d8+9), uno a round, dopo aver lasciato una stella del mattino: incremento 9 m, −2 a ogni incremento in più, fino a 45 m. Senza Estrazione Rapida le armi da lancio non danno gli attacchi iterativi `[SRD: Quick Draw]`
 **Spazio/Portata:** 3m/3m
 
 **Caratteristiche:** For 29, Des 15, Cos 28, Int 10, Sag 14, Car 11
 
 **Qualità Speciali:**
-*   **Combattere con Due Armi Superiore (Str):** ogni testa guida un braccio: nessuna penalità ai tiri per colpire e ai danni con due armi (ettin SRD); il secondo braccio somma metà For ai danni.
+*   **Combattere con Due Armi Superiore (Str):** ogni testa guida un braccio: nessuna penalità ai tiri per colpire e ai danni con due armi (ettin SRD): il secondo braccio somma la For piena ai danni, come il primo `[CANONE — DM 2026-11-25, card «armi di Gorthak e versione dura»]`.
 *   **Visione Superiore (Str):** Bonus razziale di +4 a Osservare e Ascoltare. Non può essere attaccato ai fianchi.
 *   **Tre Teste, Tre Tattiche:**
     *   **Testa Sinistra (Brutale):** Il suo primo attacco in ogni round infligge +2 danni.
     *   **Testa Centrale (Strategica):** Una volta per scontro, può rinunciare a un attacco per fornire a un'unità alleata un bonus di +2 al morale per 1 round.
     *   **Testa Destra (Vigile):** Fornisce il talento Iniziativa Migliorata (+4 Iniziativa totale).
 
-**Talenti:** Allerta, Arma Focalizzata (randello enorme), Attacco Poderoso, Incalzare, Spezzare Migliorato, Volontà di Ferro; Iniziativa Migliorata dalla testa destra. `[CANONE — regola, ADR-0118]: 15 DV danno sei talenti e Iniziativa Migliorata la dà la testa destra, quindi il sesto è libero; con Arma Focalizzata il randello torna a +21 (BAB +11, For +9, −1 taglia, +1 arma, +1)`
-**Equipaggiamento:** *Corazza di Piastre Grande +1*, 3 *Randelli Enormi +1* (due in pugno, uno di riserva), 6 Giavellotti Grandi.
+**Talenti:** Allerta, Arma Focalizzata (stella del mattino), Attacco Poderoso, Incalzare, Spezzare Migliorato, Volontà di Ferro; Iniziativa Migliorata dalla testa destra. `[CANONE — regola, ADR-0118]: 15 DV danno sei talenti e Iniziativa Migliorata la dà la testa destra, quindi il sesto è libero; con Arma Focalizzata la stella del mattino torna a +21 (BAB +11, For +9, −1 taglia, +1 arma, +1)`
+**Equipaggiamento:** *Corazza di Piastre Grande +1*, 3 *Stelle del Mattino Grandi +1* (due in pugno, una di riserva), 6 Giavellotti Grandi.
 
-> **Verifica 3.5 (versione più forte)**: ettin dell'SRD avanzato a 15 DV
-> (il massimo della taglia Grande). L'ettin SRD combatte con un'arma per mano
-> senza penalità, perché ogni testa guida un braccio: due randelli a pieno
-> BAB, non tre attacchi con uno solo. La *corazza di piastre +1* vale +6 alla
+> **Verifica 3.5 (versione più forte)**: ettin dell'SRD (10 DV) portato a
+> 15 DV. ⚠️ Non SRD: l'SRD dà all'ettin «Advancement: By character class»,
+> senza una fascia di DV, ed è un potenziamento dichiarato
+> (`ARC08-DEF-2`, A.1). L'ettin SRD combatte con un'arma per mano
+> senza penalità, perché ogni testa guida un braccio: due stelle del mattino
+> Grandi a pieno BAB e a Forza piena, 2d6+10 l'una, non tre attacchi con una
+> sola. Sono le armi dell'ettin SRD (2 morningstars), con la For 29 e il +1
+> `[CANONE — DM 2026-11-25, card «armi di Gorthak e versione dura»]`.
+> <!-- storico: fino al 2026-11-25 la scheda scriveva «Randello Enorme +1», 2d6+10 e 2d6+5, e «il secondo braccio somma metà For ai danni». Un randello Grande fa 1d8, e un randello Enorme un gigante Grande lo impugna solo a due mani (SRD, Inappropriately Sized Weapons): il 2d6 era già il dado della stella del mattino Grande -->
+> La *corazza di piastre +1* vale +6 alla
 > CA (era +3). I pf tornano coi dadi con Cos 28 (15d8+135 = 202), un punto
 > in più dagli aumenti di caratteristica dei DV avanzati; prima
 > 15d8+120 dava 187, non 195. Multiattacco esce (non serve a chi usa armi):
 > entrano Spezzare Migliorato e Volontà di Ferro.
 
-**Tattiche:** Gorthak è un ariete vivente. Cerca sempre lo scontro fisico, puntando il cancello o i nemici più grandi e corazzati. Ogni round fa l'attacco completo con i due randelli, uno per braccio (sei colpi), su un bersaglio solo o divisi fra due. Sotto i 101 PF (metà), per un round la testa sinistra prende il sopravvento e lo fa combattere in Furia (+4 For, −2 CA); alla fine di quel round la testa centrale lo tira indietro e Gorthak lascia il ponte, ferito `[CANONE — DM 2026-11-04, P16, il cancello e Gorthak]` (il duello intero, con il ponte, lo sportello e i troll, è in `ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md`, Scena 2). *Morale*: prima di quella soglia, se Fauci è fuggito o abbattuto e l'orda è in rotta, la testa centrale può offrire la resa (al finale la scelta è dei PG).
+**Tattiche:** Gorthak è un ariete vivente. Cerca sempre lo scontro fisico, puntando il cancello o i nemici più grandi e corazzati. Ogni round fa l'attacco completo con le due stelle del mattino, una per braccio (sei colpi), su un bersaglio solo o divisi fra due. Sotto i 101 PF (metà), per un round la testa sinistra prende il sopravvento e lo fa combattere in Furia (+4 For, −2 CA); alla fine di quel round la testa centrale lo tira indietro e Gorthak lascia il ponte, ferito `[CANONE — DM 2026-11-04, P16, il cancello e Gorthak]` (il duello intero, con il ponte, lo sportello e i troll, è in `ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md`, Scena 2). *Morale*: prima di quella soglia, se Fauci è fuggito o abbattuto e l'orda è in rotta, la testa centrale può offrire la resa (al finale la scelta è dei PG).
 > Morale scritto da un agente sui poteri della scheda.
 
 ---
@@ -791,10 +817,10 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 **ABILITÀ PRINCIPALI:**
 *   **Stendardo:** finché lo stendardo si vede, gli alleati entro 18 m hanno **+3 ai TS contro la paura** e **+2 a colpire in carica**.
 *   **Sfida (4/giorno, azione veloce):** scegli un nemico. Contro di lui fai **+18 danni** in mischia, i tuoi alleati hanno **+4 a colpirlo** finché lo minacci, e lui ha **−2 alla CA** contro gli altri. Tu hai −2 alla CA contro tutti gli altri.
-*   **Tattico (3/giorno, azione veloce):** per 9 round gli alleati entro 9 m hanno **Muro di Scudi** e **Difesa Coordinata**.
+*   **Tattico (3/giorno, azione veloce):** per 9 round gli alleati entro 9 m hanno un talento di squadra a tua scelta, **Muro di Scudi** o **Difesa Coordinata**: uno per uso.
 *   **Strategia (azione standard):** a ogni alleato entro 9 m dai +2 alla CA per 1 round, o +2 a colpire per 1 round, o un movimento immediato. Una volta per alleato per combattimento.
 *   **Aiutare gli Alleati:** quando usi aiutare un altro, l'alleato prende **+4** invece di +2.
-*   **Attacco Poderoso con Concentrazione Furiosa:** −4 a colpire e +8 ai danni, ma il primo attacco del round non prende la penalità.
+*   **Attacco Poderoso:** −4 a colpire e +8 ai danni: **+19/+14/+9** (1d10+18). La Concentrazione Furiosa non vale finché porti lo scudo.
 
 ---
 <div style="page-break-before:always"></div>
@@ -1006,10 +1032,10 @@ Scheda intera: `Bestiario/mostri/hobgoblin-sergente-cr5.md` `[CANONE — DM 2026
 ### **OROG GUARDIE NERE**
 *Guardia del Corpo del Generale, 4ª Linea (1 Unità d'Élite di 4 Orog)*
 
-> Uno contro uno: `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md` (Guerriero 6, GS 7, CA 19, pf 63, ascia bipenne +1 +13/+8, 1d12+10). ⚠ **Non SRD**: l'orog è `[Private source — Monsters of Faerûn / Races of Faerûn]` `[CANONE — DM 2026-10-19, D10]`.
+> Uno contro uno: `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md` (Guerriero 6, GS 7, CA 21, pf 45, ascia bipenne +1 +14/+9, 1d12+12; caratteristiche rifatte con la serie d'élite più la razza, card del DM del 2026-11-20). ⚠ **Non SRD**: l'orog è `[Private source — Monsters of Faerûn / Races of Faerûn]` `[CANONE — DM 2026-10-19, D10]`.
 
-**PFU:** 13/13 | **DU:** 19 | **Morale Iniziale:** +3
-**AU (Ascia Bipenne+1):** +13 | **Danno:** 1d12+7 `[CANONE — DM 2026-11-09: l'AU è l'attacco della creatura singola (§4), senza il +2 della variante 2d6: +13 è l'ascia della scheda uno contro uno. Era +12, poi +15 per errore]`
+**PFU:** 13/13 | **DU:** 21 | **Morale Iniziale:** +3
+**AU (Ascia Bipenne+1):** +14 | **Danno:** 1d12+7 `[CANONE — DM 2026-11-09: l'AU è l'attacco della creatura singola (§4), senza il +2 della variante 2d6: è l'ascia della scheda uno contro uno. Era +12, poi +15 per errore, poi +13; +14 e DU 21 dal 2026-11-20, quando la scheda è stata rifatta con la serie d'élite (card del DM)]`
 **Movimento:** 6m
 
 **Capacità Speciali:**

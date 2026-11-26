@@ -1,5 +1,5 @@
 """Rethmar v3: la città murata sul Cannath, una taglia sopra la v2 (grande città DMG 3.5, ~18.000 abitanti),
-perché regga l'assedio dell'orda della Mano Rossa (~10.000). Stesso impianto della v2 (Brindol re-immaginata da
+perché regga l'assedio dell'orda della Mano Rossa (~10.000). Stesso impianto della v2 (Brindol del libro re-immaginata da
 antariuk, guardata e non ricalcata), tutte le coordinate di progetto moltiplicate per F = sqrt(110/50).
 Uso: python3 scripts/genera_pianta_citta.py rethmar (scrive la pianta canonica)"""
 import math
@@ -151,7 +151,7 @@ STRADE_F = {
     "dawn_o": O.ondula([PORTE["Ovest"], (-890, 0), (-1023, 21), (MX0 - 20, 44)], random.Random(1), 4),
     "dawn_e": O.ondula([PORTE["Est"], (890, -222), (1038, -237), (MX1 + 20, -260)], random.Random(2), 4),
     "sud": O.ondula([PORTE["Sud"], (148, 534), (163, 593), (187, MY1 + 20)], random.Random(3), 3),
-    "rhest": O.ondula([TESTA_N, (xn - 6, yn - 40), (xn - 40, yn - 110), (xn - 90, MY0 - 20)], random.Random(4), 4),
+    "lhesper": O.ondula([TESTA_N, (xn - 6, yn - 40), (xn - 40, yn - 110), (xn - 90, MY0 - 20)], random.Random(4), 4),
 }
 for nome, gx in GUADI.items():
     a = asse_a(gx)
@@ -382,7 +382,7 @@ scritta(-680 * F, a[1] + 5, "Fiume Cannath  ⟵ da Channathgate (est), scende ve
         fill="#1f4f66", weight="bold", extra='stroke="#cfe6ef" stroke-width="3" paint-order="stroke"')
 scritta(MX0 + 12, 77, "Dawn Way ⟶ Drellin's Ferry (50 mi)", size=11.5, style="italic", extra=lbl)
 scritta(MX1 - 10, -290, "Dawn Way ⟶ Channathgate (35 mi)", size=11.5, style="italic", anchor="end", extra=lbl)
-scritta(xn - 100, MY0 + 22, "Rhest Trail, verso nord", size=11.5, style="italic", anchor="end", extra=lbl)
+scritta(xn - 100, MY0 + 22, "Lhesper Trail, verso nord", size=11.5, style="italic", anchor="end", extra=lbl)
 scritta(200, MY1 - 10, "strada sud"
 , size=11.5, style="italic", extra=lbl)
 scritta(1023, 489, "il bosco a est", size=11.5, style="italic", anchor="middle", extra=lbl)
@@ -472,11 +472,11 @@ yQ = yL + 32 + righe * 15.5 + 8
 quote = [
     "Il rilievo   @quota 250 m s.l.m., il foro   ·   @dislivello +8 m sul Cannath in magra (242 m)",
     "La piana sale piano verso sud: Porta Nord 248 m, Porta Sud 252 m. Golene a 243-244 m, i guadi hanno 0,6-0,9 m d'acqua in magra; con la Marea Montante (+1,5 m) non si passano.",
-    f"Mura di pietra alte 6 m e spesse 3 (Brindol). Torri ogni ~{PASSO_TORRI:.0f} m sui tre lati di terra, ogni ~{PASSO_TORRI_FIUME:.0f} m sul fiume. Vie maestre 8 m, la vecchia via ad anello 6 m, secondarie 4-5 m, vicoli 2,5 m.",
+    f"Mura di pietra alte 6 m e spesse 3 (come la Brindol del libro). Torri ogni ~{PASSO_TORRI:.0f} m sui tre lati di terra, ogni ~{PASSO_TORRI_FIUME:.0f} m sul fiume. Vie maestre 8 m, la vecchia via ad anello 6 m, secondarie 4-5 m, vicoli 2,5 m.",
     "Difensori (regola del Burghal Hidage, " + f"{UOMINI_PER_METRO:.1f}".replace(".", ",") + f" uomini per metro): ~{mille(round(LMURA * UOMINI_PER_METRO, -2))} per " + f"{LMURA / 1000:.1f}".replace(".", ",") + " km di mura; " +
     f"leva degli uomini abili (18%) ~{mille(round(ABITANTI_TOTALI * 0.18, -2))}, più la guarnigione e gli alleati. [INFERRED — needs DM confirmation]",
     "Taglia: grande città della DMG 3.5, più grande della Brindol del libro (≈ 8.400 ab.) perché regga l'orda di ~10.000 (scelta del DM, 2026-10-22); densità 140 ab./ha da Medieval Demographics Made Easy.",
-    "Impianto sulla Brindol re-immaginata da antariuk (guardata, non ricalcata); pianta originale col motore organica. Pianta, quote e posizioni dei luoghi sono canone.",
+    "Impianto sulla Brindol del libro re-immaginata da antariuk (guardata, non ricalcata); pianta originale col motore organica. Pianta, quote e posizioni dei luoghi sono canone.",
 ]
 for i, t in enumerate(quote):
     s.text(60, yQ + i * 14.5, t, size=10.5, fill=COL["inchiostro"] if i else COL["marker"],

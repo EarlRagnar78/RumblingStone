@@ -23,7 +23,7 @@ For full narrative details, see `campaign/lore/campaign-chronicle.md` (this tabl
 - **Party Level:** 13
 - **Party Location:** Post-Hammerfist, preparing personal quests + march to Rethmar
 - **Last Completed:** Arc 08 — Battle of Hammerfist (victory, heavy losses)
-- **Active Quests:** P1 Hella's Sacred Forest, P2A Artemis's Invisible Tower, P2 Rhest, P2B Tordek's Tournament
+- **Active Quests:** P1 Hella's Sacred Forest, P2A Artemis's Invisible Tower, P2 Lhesper, P2B Tordek's Tournament
 - **Upcoming:** Personal quests (parallel) → Battle of Rethmar (5 phases)
 
 ---
@@ -43,7 +43,7 @@ For full narrative details, see `campaign/lore/campaign-chronicle.md` (this tabl
 | 06 | `06_Stanza-corona-di-adamantio/` | Crown Chamber | 11–12 | ✅ Done | Corona di Adamantio found; **Hella dies**; portal opened |
 | 07 | `07_il Portale Della Forgia Eterna/` | Eternal Forge Portal | 12–13 | ✅ Done | Fire/Earth/Temporal planes; gem rituals; Hella resurrection; Therysol found |
 | 08 | `08_La Battaglia Di Hammerfist/` | Battle of Hammerfist | 13 | ✅ Done | 4-session siege; 900 horde vs 300 dwarves; Rumbling Stones emerge; 210 dwarves killed |
-| 09 | `09_Continuazione Arco Narrativo.../` | Post-Hammerfist & Rethmar | 13+ | 🔄 In Progress | Personal quests + Rhest + Torneo + Battle of Rethmar (74 files) |
+| 09 | `09_Continuazione Arco Narrativo.../` | Post-Hammerfist & Rethmar | 13+ | 🔄 In Progress | Personal quests + Lhesper + Torneo + Battle of Rethmar (74 files) |
 
 ---
 
@@ -61,8 +61,8 @@ For full narrative details, see `campaign/lore/campaign-chronicle.md` (this tabl
 | Gorthak il Trifronte | 3-Headed Ettin | 12 | ☠️/🏃 **Conditional** | Battle of Hammerfist | 08 |
 | Sonjak | Drow Cleric Matrona | ~14 | 🔴 **ACTIVE** | Underdark/Surface ops | Pre-02 → 09 |
 | Zalkatar | Illithid Warlock Drow | 13 | 🔴 **ACTIVE** | Invisible Tower (Dauth) | 09-P2A |
-| Wyrmlord Saarvith | Fighter/Dragon Disciple | 12 | 🔴 **ACTIVE** | Lake Rhest ruins | 09-P2 |
-| Regiarix | Adult Black Dragon | 13 | 🔴 **ACTIVE** | Lake Rhest | 09-P2 |
+| Wyrmlord Saarvith | Fighter/Dragon Disciple | 12 | 🔴 **ACTIVE** | Lhesper ruins | 09-P2 |
+| Regiarix | Adult Black Dragon | 13 | 🔴 **ACTIVE** | Lhesper ruins (Lhespenbog) | 09-P2 |
 | Xal'thor | Illithid Commander (Psionic) | ~14 | 🔴 **APPROACHING** | With Githyanki fleet | 09-P2B |
 | Azarr Kul | High Wyrmlord (half-blue-dragon) | 15 | 🔴 **ACTIVE** | With the horde | 09-P3 |
 | Tyrgarun | Very Old Blue Dragon — NOT Azarr Kul's mount (D11 v2) | 19 | 🔴 **ACTIVE** | Sky-terror of the Rethmar battle, separate encounter | 09-P3 |
@@ -112,7 +112,7 @@ For full narrative details, see `campaign/lore/campaign-chronicle.md` (this tabl
 [CURRENT] Post-Hammerfist Personal Quests (Arc 09, parallel):
     ├── P1: Hella — Sacred Forest druid ritual (Avatar transformation)
     ├── P2A: Artemis — Invisible Tower (vs Zalkatar CR 13, Ring evolution)
-    ├── P2: Rhest — Sunken City (Wyrmlord Saarvith + Regiarix Black Dragon CR 13)
+    ├── P2: Lhesper — Sunken City (Wyrmlord Saarvith + Regiarix Black Dragon CR 13)
     ├── P2B: Tordek — Tournament at Dauth (Otto Porte chakra gates + Githyanki attack)
     │   └── Day 3 interrupted by Githyanki Red Dragon + Xal'thor Illithid Commander
     └── P3 Alliances: Starsong Hill elves, Ghostlord negotiation, Sabotaggio Drow

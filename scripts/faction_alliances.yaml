@@ -193,7 +193,7 @@ rival_subfactions:
 # ─────────────────────────────────────────────────────────────
 wild_encounter_tables:
   swamp:
-    narrative: "Cannath Vale, paludi di Blackfens. Razorfiend feriti, predatori
+    narrative: "Cannath Vale, paludi del Lhespenbog. Razorfiend feriti, predatori
       opportunisti."
     monsters:
       - {

@@ -282,7 +282,7 @@ sceglie dove andare.
 | Campi Drow | infiltrazione (Andor) | — | procedurale, non deduttivo: giusto così |
 | Rethmar (battaglia finale) | guerra | — | il dominante torna, ed è giusto che torni **alla fine** |
 | P1A/P1B/P1C (Hellas, Treant, Rituale) | esplorazione / rito | — | ⚠️ **sono il primo blocco dell'arco: puliti** (regola anti-ritmo 3) |
-| Rhest · Starsong Hill · Missioni CR12 | battaglia / esplorazione | — | il fondo neutro che fa risaltare gli speciali (§6.2 riga 1) |
+| Lhesper · Starsong Hill · Missioni CR12 | battaglia / esplorazione | — | il fondo neutro che fa risaltare gli speciali (§6.2 riga 1) |
 
 🔎 **La questione «un congegno per arco» è risolta dal §6.3**, non lasciata
 aperta: ARC-09 è modulare e vale più di un arco lineare, quindi il tetto è

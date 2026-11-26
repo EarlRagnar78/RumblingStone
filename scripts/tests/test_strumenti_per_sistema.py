@@ -97,7 +97,7 @@ class IContiSenzaRegola(unittest.TestCase):
         (x,) = C.conti_dei_recinti(ORCO, "dnd35")
         self.assertEqual(x["campo"], "sensi")
         (y,) = C.conti_dei_recinti(ORCO, "pf1e")
-        self.assertEqual((y["campo"], y["atteso"], y["prova"]), ("sensi", "scurovisione 18 m", "scurovisione"))
+        self.assertEqual((y["campo"], y["atteso"], y["conto"]), ("sensi", "scurovisione 18 m", "scurovisione"))
 
     def test_la_lotta_si_controlla_solo_in_3_5(self):
         blocchi = list(C._blocchi_del_master(LOTTATORE))

@@ -1281,11 +1281,18 @@ Il +8 è un bonus di fortuna: non si somma al +1 di fortuna della *preghiera*
 di Harbek (SRD, Prayer), vale il più alto. Vale per un d20 solo: messo sul
 tiro per colpire non passa al tiro che conferma il critico.
 
+Chi compra l'azione di movimento e si muove per arrivare sul nemico, in quel
+turno attacca **una volta sola**: movimento e azione standard, come senza il
+punto, e non tutti gli attacchi di un round intero (SRD, «Action Types»)
+`[CANONE — DM 2026-11-26, card «movimento col punto eroe e attacco
+completo»]`. Il punto speso così serve ad arrivare dove una sola azione di
+movimento non basta, non a colpire di più.
+
 **Sulla griglia** valgono tutti gli usi della tabella. **Nel round di
 battaglia del libretto** il punto vale sul d20 del gesto Combattere: +8
 dichiarato prima, +4 dopo, oppure quel d20 si ritira. Richiamare ridà
 l'incantesimo speso per il gesto Incantesimo. Gli altri usi lì non valgono:
-il round di battaglia non ha turni, e ha un gesto solo (domanda 1, in fondo
+il round di battaglia non ha turni, e ha un gesto solo (regola 1, in fondo
 alla scena).
 
 **Cosa il punto non fa.** Non vale sui dadi rossi e bianchi dei reparti, e
@@ -1294,7 +1301,8 @@ le trappole. Non toglie il Re dagli 8 pf con cui arriva al Cuore, che sono
 un punto fisso `[CANONE — DM 2026-10-22]` (`ARC08-DEF-2`, Scena 6, «Il conto
 del Re»; `ARC07-DEF-5`, Scena 2): nemmeno l'uso Speciale li sposta. Il Re e
 gli altri PNG non hanno punti, perché la fonte li dà solo ai personaggi dei
-giocatori. Un eroe morto porta via il suo punto.
+giocatori. I due eroi mossi dal DM il punto non lo spendono (regola 2, in
+fondo alla scena). Un eroe morto porta via il suo punto.
 
 **Quanto pesa.** Le prove
 (`plans/esperimenti/scontri-epici-pregen-2026-11-25/esito_punto_eroe.md`,
@@ -1311,22 +1319,22 @@ abbattuto, e nell'assedio non torna
 `[CANONE — DM 2026-11-26, card «comandante a 0 pf nell'assedio»]`:
 la regola è in `ARC08-DEF-2`, §0-bis, «Il comandante a 0 pf o meno».
 
-| Scontro | Eroi | Oggi | +8 al primo tiro per colpire sul comandante | Un'azione standard in più | Un'azione di movimento in più |
+| Scontro | Eroi | Oggi | +8 al primo tiro per colpire sul comandante | Un'azione standard in più | Un'azione di movimento in più, un attacco solo |
 |---|---|---|---|---|---|
-| Gorthak | Borin, poi Yrsa | 56 · 43 · 70 | 55 · 44 · 67 | 49 · 51 · 58 | 45 · 55 · 56 |
-| | Yrsa, poi Borin | 43 · 56 · 19 | 44 · 55 · 17 | 33 · 66 · 11 | 34 · 66 · 12 |
-| Grimjaw, la rampa chiusa | Borin e Yrsa | 62 · 8 · 82 | 67 · 10 · 79 | 70 · 10 · 70 | 71 · 10 · 67 |
-| Grimjaw, la rampa aperta (scartata dal DM) | Borin e Yrsa | 72 · 14 · 50 | 75 · 17 · 41 | 79 · 17 · 27 | 78 · 17 · 25 |
+| Gorthak | Borin, poi Yrsa | 56 · 43 · 70 | 55 · 44 · 67 | 49 · 51 · 58 | 56 · 43 · 70 |
+| | Yrsa, poi Borin | 43 · 56 · 19 | 44 · 55 · 17 | 33 · 66 · 11 | 43 · 56 · 19 |
+| Grimjaw, la rampa chiusa | Borin e Yrsa | 62 · 8 · 82 | 67 · 10 · 79 | 70 · 10 · 70 | 62 · 8 · 82 |
+| Grimjaw, la rampa aperta (scartata dal DM) | Borin e Yrsa | 72 · 14 · 50 | 75 · 17 · 41 | 79 · 17 · 27 | 72 · 14 · 50 |
 
 Il +8 sposta poco, da 1 a 5 punti sulle due cifre del comandante e da 2 a
 9 sugli eroi a terra, perché Borin e Yrsa colpiscono già quasi sempre.
-L'azione in più pesa di più: contro Grimjaw a rampa chiusa toglie fino a 15
-punti agli eroi a terra, contro Gorthak fino a 14; e contro Gorthak porta
-fino a 12 punti dalla fuga allo 0 pf. L'azione di movimento in più è
-contata come l'eroe che arriva sul nemico e fa nello stesso turno tutti i
-suoi attacchi: è una lettura non decisa (domanda 3, in fondo alla scena), e
-le cifre di quella colonna valgono solo con quella lettura. Una differenza
-di uno o due punti è rumore dei dadi. Il punto non cambia l'EL di nessuno
+L'azione standard in più pesa di più: contro Grimjaw a rampa chiusa toglie
+12 punti agli eroi a terra, contro Gorthak fino a 12; e contro Gorthak porta
+fino a 10 punti dalla fuga allo 0 pf. L'azione di movimento in più dà le
+cifre di oggi: chi la spende per arrivare sul comandante attacca una volta
+sola in quel turno, come senza il punto (regola 3, in fondo alla scena), e
+in questi scontri non porta niente. Una differenza di uno o due punti è
+rumore dei dadi. Il punto non cambia l'EL di nessuno
 scontro.
 
 Un eroe morto nella ricognizione lascia la sua squadra al giocatore, senza
@@ -1609,19 +1617,22 @@ Ogni squadra travolta o a 0 PFU ha tolto 1 al morale.
 **Sviluppi.** Il gruppo corre alle mura con l'orda alle spalle; le porte
 si chiudono sull'ultimo nano. Poi la notte (Scena 9).
 
-**Domande al DM (Scena 8).**
+**Regole decise dal DM (Scena 8).**
 
-1. `[INFERRED — Nel round di battaglia del libretto il punto eroe vale solo
-   sul d20 del gesto Combattere (+8 prima, +4 dopo, o si ritira), più
-   Richiamare?; base: è il default finché il DM non decide: sì; libretto §5,
-   un gesto a round; fonte PF1e, il bonus va «a un tiro di d20»]`
-2. `[INFERRED — I due eroi mossi dal DM spendono il loro punto eroe?; base:
-   è il default finché il DM non decide: no, il punto lo spende solo un
-   giocatore; ARC08-01, «combatte e aiuta, ma non ruba la scena»]`
-3. `[INFERRED — Chi muove con l'azione di movimento comprata col punto eroe
-   fa nello stesso turno tutti i suoi attacchi?; base: è il default finché
-   il DM non decide: sì, e così la contano le prove; la fonte PF1e,
-   «un'azione standard o di movimento in più», non lo dice]`
+1. Nel round di battaglia del libretto il punto eroe vale solo sul d20 del
+   gesto Combattere: +8 dichiarato prima, +4 dopo, oppure quel d20 si
+   ritira. Richiamare ridà l'incantesimo speso per il gesto Incantesimo. Il
+   round ha un gesto solo (libretto §5) `[CANONE — DM 2026-11-26, card
+   «punto eroe nel round di battaglia»]`.
+2. I due eroi mossi dal DM non spendono il loro punto eroe: lo spende solo
+   un giocatore (`ARC08-01`, «combatte e aiuta, ma non ruba la scena»)
+   `[CANONE — DM 2026-11-26, card «punto eroe degli eroi del DM»]`.
+3. Chi compra col punto eroe l'azione di movimento e si muove per arrivare
+   sul nemico, in quel turno attacca una volta sola: movimento e azione
+   standard, come dice l'SRD, non tutti gli attacchi di un round intero. Le
+   prove lo contano così `[CANONE — DM 2026-11-26, card «movimento col
+   punto eroe e attacco
+   completo»]`.
 
 ### SCENA 9 — 1E · I presagi funesti
 

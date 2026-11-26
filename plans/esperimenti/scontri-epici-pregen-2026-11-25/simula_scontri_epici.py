@@ -108,10 +108,13 @@ contro Gorthak. Tre politiche, una alla volta:
   Dara una freccia in piu' a +17; Ragnhild, nel suo primo turno, una palla di
   fuoco in piu' (10d6, CD 22) se nessun nano e' in mischia, se no tre raggi
   roventi in piu';
-- «movimento» (Extra Action, azione di movimento): nel turno in cui l'eroe
-  si muove per arrivare al nemico fa tutti i suoi attacchi invece di uno
-  solo (il movimento e' l'azione in piu', e gli resta il round intero); Dara
-  e Ragnhild, che non si muovono, non lo spendono.
+- «movimento» (Extra Action, azione di movimento): l'eroe la spende nel
+  turno in cui si muove per arrivare al nemico, e in quel turno fa un
+  attacco solo, come senza il punto: movimento e azione standard, non
+  l'attacco di un round intero (SRD 3.5; card del DM del 2026-11-26,
+  «movimento col punto eroe e attacco completo»). Il punto e' speso, e nei
+  duelli non da' niente; Dara e Ragnhild, che non si muovono, non lo
+  spendono.
 Senza --punto-eroe l'uscita e' quella di sempre, byte per byte: il punto non
 tira dadi e non cambia la sequenza dei tiri.
 
@@ -274,6 +277,12 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
     def fortuna(e):
         return 8 if spende(e, "bonus") else 0
 
+    def arriva(e, colpi):
+        """L'eroe si muove per arrivare: un attacco solo, anche col punto speso
+        per muovere (card del DM del 2026-11-26)."""
+        spende(e, "movimento")
+        return colpi[:1]
+
     def attacca_eroe(e, b, colpi):
         su_boss = b is boss
         if spende(e, "azione"):
@@ -343,8 +352,7 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
                     ferisci(e, colpo(bon2, e["ca"], dadi2, f2, mn2, ml2))
                     if e["pfcur"] <= 0:
                         return
-                if not spende(e, "movimento"):
-                    colpi = colpi[:1]
+                colpi = arriva(e, colpi)
             attacca_eroe(e, boss, colpi)
             return
         tutte = [n for n in nemici if n.ruolo == "scorta"]
@@ -360,8 +368,7 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
             # la rampa chiusa: prima si abbatte una guardia
             if not e.get("_mischia"):
                 e["_mischia"] = True
-                if not spende(e, "movimento"):
-                    colpi = colpi[:1]
+                colpi = arriva(e, colpi)
             attacca_eroe(e, primo[0], colpi)
             return
         if not e.get("_sul_boss"):
@@ -371,11 +378,9 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
                     ferisci(e, colpo(bon2, e["ca"], dadi2, f2, mn2, ml2))
                     if e["pfcur"] <= 0:
                         return
-                if not spende(e, "movimento"):
-                    colpi = colpi[:1]
+                colpi = arriva(e, colpi)
             elif not (muro and e.get("_mischia")):
-                if not spende(e, "movimento"):
-                    colpi = colpi[:1]  # si avvicina: un attacco solo
+                colpi = arriva(e, colpi)  # si avvicina: un attacco solo
             e["_mischia"] = e["_sul_boss"] = True
         attacca_eroe(e, boss, colpi)
 
@@ -726,6 +731,11 @@ LIMITI_PUNTO = """## Come leggere queste cifre
   una differenza di uno o due punti e' rumore.
 - Il +8 vale su un d20 solo: il tiro per colpire, non la conferma del
   critico. Speso dopo il tiro varrebbe +4, e non e' provato.
+- L'azione di movimento in piu' da' le cifre di oggi, per scelta del DM
+  (card del 2026-11-26, «movimento col punto eroe e attacco completo»): chi
+  la spende per arrivare sul nemico fa un attacco solo in quel turno, come
+  senza il punto. Nei duelli non porta niente; serve a cose che qui non
+  sono provate, come allontanarsi o raggiungere un compagno.
 - Non provati: Agire fuori turno, Ripetere il tiro, Richiamare un
   incantesimo o un uso giornaliero, l'uso Speciale. Ingannare la morte costa
   due punti e nessun eroe li ha.

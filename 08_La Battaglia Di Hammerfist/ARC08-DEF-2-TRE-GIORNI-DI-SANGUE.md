@@ -572,22 +572,25 @@ un'azione, e in un round se ne spende al più uno.
 - **Sulla griglia**: **+8** di fortuna a un d20 se dichiarato prima di
   tirare, **+4** dopo; oppure un'azione standard o di movimento in più nel
   proprio turno; oppure ritirare un d20 appena tirato e tenere il secondo.
+  Chi compra il movimento per arrivare sul nemico, in quel turno attacca una
+  volta sola (`ARC08-DEF-1`, Scena 8, regola 3).
   Gli altri usi sono nella tabella di `ARC08-DEF-1`. Ingannare la morte
   costa due punti, e nessuno li ha.
 - **Nel round di battaglia**: +8 prima o +4 dopo al d20 del gesto
-  Combattere, o quel d20 si ritira (`ARC08-DEF-1`, Scena 8, domanda 1).
+  Combattere, o quel d20 si ritira (`ARC08-DEF-1`, Scena 8, regola 1).
 - **Non fa**: non vale sui dadi dei reparti, quindi non annulla una tacca né
   una breccia; non toglie il Re dagli 8 pf del suo conto (Scena 6); il Re e
-  i PNG non ne hanno.
+  i PNG non ne hanno. I due eroi del DM non lo spendono: lo spendono solo i
+  giocatori (`ARC08-DEF-1`, Scena 8, regola 2).
 - **Quanto pesa**, se i due eroi lo spendono nello stesso scontro, che è il
   massimo: contro Gorthak, con Borin che esce per primo, un eroe va a terra
-  67 volte su cento col +8 e 56 con l'azione di movimento in più, invece di
-  70; con Yrsa per prima 17 e 12 invece di 19. Contro Grimjaw, a rampa
-  chiusa, 79 e 67 invece di 82; a rampa aperta, scartata dal DM, erano 41 e
-  25 invece di 50
+  67 volte su cento col +8 e 58 con l'azione standard in più, invece di
+  70; con Yrsa per prima 17 e 11 invece di 19. Contro Grimjaw, a rampa
+  chiusa, 79 e 70 invece di 82; a rampa aperta, scartata dal DM, erano 41 e
+  27 invece di 50
   (`plans/esperimenti/scontri-epici-pregen-2026-11-25/esito_punto_eroe.md`).
-  Le cifre dell'azione di movimento contano l'attacco completo dopo il
-  movimento: è una lettura non decisa (`ARC08-DEF-1`, Scena 8, domanda 3).
+  L'azione di movimento in più lascia le cifre di oggi: chi la spende per
+  arrivare sul comandante attacca una volta sola in quel turno.
 
 Nell'assedio i veterani tengono le Mura e la Torre Est. Yrsa sulle Mura
 tiene la fronte più lunga, e lo stendardo lo vedono tutti; Ragnhild sulla

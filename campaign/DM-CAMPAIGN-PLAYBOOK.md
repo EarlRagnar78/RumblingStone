@@ -355,7 +355,7 @@ Tordek lo finisce con un critico di +3 greataxe di Moradin. Nessun PG giù.
 ## Key decisions
 
 - Hella ACCETTA il patto con Silvanus → ora è Druid 12 / Hierophant 1 (trigger livello 13 ritardato)
-- Party decide di NON tornare a Rethmar subito → prosegue verso Lhesper (P2 Rhest) invece
+- Party decide di NON tornare a Rethmar subito → prosegue verso Lhesper (P2) invece
 - Maewen rivela backstory sul padre elfico → potenziale hook Tiri-Kitor per P3
 
 ## XP awarded
@@ -398,8 +398,8 @@ Sempre sessione 14. Il DM apre `state.md` e applica questi cambi (mostrato come 
  |---|---|---|---|---|
 -| 09 P1A Hella | 🟡 in corso | Day 27 | 13 |
 +| 09 P1A Hella | ✅ completato | Day 29 | 13 |
--| 09 P2 Rhest | ⬜ non iniziato | — | — |
-+| 09 P2 Rhest | 🟡 approccio | Day 29 | 13 |
+-| 09 P2 Lhesper | ⬜ non iniziato | — | — |
++| 09 P2 Lhesper | 🟡 approccio | Day 29 | 13 |
 
  ## §2.1 March Clock
 
@@ -461,7 +461,7 @@ Apri `campaign/state.md` §0 per vedere il cruscotto in tempo reale. Template:
 | ... | ... | ... | ... | ... | ... |
 | 08 Hammerfist | ✅ | completato | Day 19 | 12 | Sync point ✓ |
 | 09 P1A Hella | 🟡 | in corso | Day 27 | 13 | Deadline Day 30 |
-| 09 P2 Rhest | ⬜ | non iniziato | — | — | Regiarix vivo |
+| 09 P2 Lhesper | ⬜ | non iniziato | — | — | Regiarix vivo |
 | 09 P3 Rethmar | ⬜ | non iniziato | Target Day 42 | — | Battaglia finale |
 
 **Legenda**: ✅ completato · 🟡 in corso · ⬜ non iniziato · ❌ fallito · ⏸ sospeso

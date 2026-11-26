@@ -44,7 +44,7 @@
 
 | d% | Incontro | EL | Tipo |
 |---|---|---|---|
-| 01-15 | 🕊 **Pattuglia di ranger Tiri Kitor** — diffidenti; se il funerale di Lanikar è noto, amichevoli (intel su Rhest/druidi corrotti). | — | Non-combat |
+| 01-15 | 🕊 **Pattuglia di ranger Tiri Kitor** — diffidenti; se il funerale di Lanikar è noto, amichevoli (intel su Lhesper/druidi corrotti). | — | Non-combat |
 | 16-28 | 🕊 **Druido eremita** che cura un bosco malato — chiede aiuto (Sapienza Naturale), dà componenti. | — | Non-combat |
 | 29-40 | 🕊 **Profughi di un casale bruciato** diretti a Dauth (eco `HOOKS-Ghostlord-Refugees`). | — | Non-combat |
 | 41-55 | **Lupi/orsi mannari-corrotti** o animali spaventati dall'orda. `.../centaur-ranger4-corrupted-cr5.md` ×2. | 9 | Combat |
@@ -90,7 +90,7 @@
 | d% | Incontro | EL | Tipo |
 |---|---|---|---|
 | 01-14 | 🕊 **Ultima carovana di Sal in fuga** — se l'olio di sabotaggio è stato pagato, eco a Rethmar (Fase 1). | — | Non-combat |
-| 15-27 | 🕊 **Esploratore ferito di Rethmar/Brenna** con dispacci sull'orda (intel −1 CR a una fase, come Rhest). | — | Non-combat |
+| 15-27 | 🕊 **Esploratore ferito di Rethmar/Brenna** con dispacci sull'orda (intel −1 CR a una fase, come Lhesper). | — | Non-combat |
 | 28-42 | **Colonna di fanteria della Mano Rossa** (retroguardia). `.../thayan-heavy-infantry-cr3.md` ×6 + `.../hobgoblin-captain-cr8.md`; oppure, in testa alla colonna, `.../furia-della-mano-cr10.md` ×3 dietro 6 fanti. | 13 | Combat |
 | 43-57 | **Cavaliere Thayan + Mago Rosso** (mercenari alleati dell'orda). `.../thayan-knight-cr8.md` + `.../thayan-red-wizard7-cr9.md`. | 12 | Combat |
 | 58-72 | **Élite Warpriest di Tiamat** (sacrifici lungo la marcia). `.../tiamat-warpriest-elite-cr11.md`. | 12 | Combat |
@@ -102,7 +102,7 @@
 
 ## 3. VALE CENTRALE / STRADE DI DAUTH
 
-*Insediamenti, mercanti, strade verso Dauth, Torre Invisibile, Brindol.*
+*Insediamenti, mercanti, strade verso Dauth, Torre Invisibile, Rethmar.*
 
 ### 3.1 Day 20-30 (EL medio 9-11)
 
@@ -172,7 +172,7 @@
 - **Scalata Day 31-42**: la seconda colonna di ogni zona è deliberatamente più dura e
   con **meno civili vivi** — è il termometro dell'orda che avanza (March Clock, D6).
 - **Intel di viaggio**: gli incontri 🕊 con esploratori/dispacci possono concedere il
-  bonus "intel → −1 CR a una fase" già canonico a Rhest (`...P2-RHEST-CONSEGUENZE-ESITI.md`).
+  bonus "intel → −1 CR a una fase" già canonico a Lhesper (`...P2-LHESPER-CONSEGUENZE-ESITI.md`).
 
 ### 5.1 Le creature della Mano Rossa nella fase avanzata
 

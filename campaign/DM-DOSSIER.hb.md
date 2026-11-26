@@ -16,7 +16,7 @@ ___
 {{banner ⚠️ SOLO DM}}
 
 {{footnote
-  Generato il 2026-11-19 · Flamerule, 1372 DR (piena estate — Valle di Channath; Giorno di Marcia 19 = 19 Flamerule) · 19 Flamerule (Giorno 19 della Marcia) · fonte: campaign/state.md · Red Hand of Doom, Faerûn 1372 DR
+  Generato il 2026-11-25 · Flamerule, 1372 DR (piena estate — Valle di Channath; Giorno di Marcia 19 = 19 Flamerule) · 19 Flamerule (Giorno 19 della Marcia) · fonte: campaign/state.md · Red Hand of Doom, Faerûn 1372 DR
 }}
 
 \page
@@ -47,7 +47,7 @@ Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per det
 | 09 P1A Quest Hella (Cerchio Sacro) | ⬜ | **preparato in anticipo** | Day 20-30 window | 13 | Deadline Day 30 |
 | 09 P1B Cerchio Treant | ⬜ | **preparato in anticipo** | Day 22-28 | 13 | — |
 | 09 P1C Rituale Hella | ⬜ | **preparato in anticipo** | Day 25-30 | 13 | — |
-| 09 P2 Rhest (Saarvith + Regiarix) | ⬜ | **preparato in anticipo** | Day 25-32 | 13 | -1 drago se fatto |
+| 09 P2 Lhesper (Saarvith + Regiarix) | ⬜ | **preparato in anticipo** | Day 25-32 | 13 | -1 drago se fatto |
 | 09 P2A Torre Invisibile (Zalkatar) | ⬜ | **preparato in anticipo** | Day 28-35 | 13 | -1 drago se fatto |
 | 09 P2B Torneo di Dauth (Tordek) | ⬜ | **preparato in anticipo** | Day 25-34 | 13 | +300 mercenari nani |
 | 09 P2C Salvatore Mercante | ⬜ | **preparato in anticipo** | Day 28-36 | 13 | Sal clock 0/6 |
@@ -104,11 +104,11 @@ Two independent clocks drive Arc 09:
 | 8–9 | **Skull Gorge bridge** — crossed intact (PG did NOT sabotage, confirmed) | ✅ Past |
 | 12–13 | Drellin's Ferry equivalent falls (burned) | ✅ Past |
 | **19** | **Terrelton equivalent falls** | 🎯 **SYNC POINT = End of Battle of Hammerfist** |
-| 25 | Marth Fen / Blackfens (Rhest area) | ⏳ Pending |
+| 25 | Marth Fen / Lhespenbog (Lhesper area) | ⏳ Pending |
 | 33–35 | Elsir Crossroads / Channath Crocevia | ⏳ Pending |
 | 35-37 | **Sonjak halt** — aberrazioni experiments + supply convoy wait | ⏳ Pending |
 | 40 | Notte dei Drow / advance scout phase (Fase 0 begins) | ⏳ Pending |
-| **42** | **Horde arrives at Rethmar (ex-Brindol) and encamps** | 🎯 **Rethmar assault begins** |
+| **42** | **Horde arrives at Rethmar and encamps** | 🎯 **Rethmar assault begins** |
 <!-- /gen:state:waypoints -->
 
 <!-- gen:state:march_clock -->
@@ -141,7 +141,7 @@ che fa il suo mestiere — DM 2026-09-11, D3.*
 | Giganti + Ogre + Ettin | 180 | NO PG alliance — stay with Red Hand |
 | Forze Alate (Manticore, Wyvern, Hell Hounds, Chimera) | 140 | |
 | Casters Mano Rossa (War Adepts, Blue, Warpriests di Tiamat) | 55 | |
-| **Dragons (5 AP-original upscaled)** | 5 | Abithriax (Red adult) / Regiarix (Black young, Rhest) / Ozyrrandion (Green adult, Tower — colore RHoD) / **Tyrgarun (Blue Very Old, CR 19 — sky-terror of the battle, NOT Azarr Kul's mount, D11 v2)** / **Fauci di Palude** (Black adult, Hammerfist vanguard — **conditional branch, D10, not yet resolved**: default = flees gravely wounded, may return later as a narrative hook, not guaranteed at Rethmar; PG-kill branch = dies at Hammerfist, −1 dragon, see §2.3) |
+| **Dragons (5 AP-original upscaled)** | 5 | Abithriax (Red adult) / Regiarix (Black young, Lhesper) / Ozyrrandion (Green adult, Tower — colore RHoD) / **Tyrgarun (Blue Very Old, CR 19 — sky-terror of the battle, NOT Azarr Kul's mount, D11 v2)** / **Fauci di Palude** (Black adult, Hammerfist vanguard — **conditional branch, D10, not yet resolved**: default = flees gravely wounded, may return later as a narrative hook, not guaranteed at Rethmar; PG-kill branch = dies at Hammerfist, −1 dragon, see §2.3) |
 | **Draconic spawn = Razorfiend (Tiamat colors)** | 8 | Assigned to Wyrmlord villains upscaled — **tier élite CR 13 «Blackspawn Alfa»** (`Bestiario/mostri/razorfiend-blackspawn-alfa-cr13.md`, DM 2026-07-20); i razorfiend CR 8-9 restano truppa d'ondata |
 | Compagnia Drow di Sonjak | 305 | |
 | Githyanki di Vaereth | 375 | |
@@ -171,7 +171,7 @@ B1 (not yet written), not in this tracker.
 | Il Collezionista intervenes | +300 Rakshasa cultists |
 | PG destroy Skull Gorge bridge | (N/A — already crossed intact) |
 | PG sabotage Centaur/Loxo → revolt | −480 horde |
-| PG defeat Regiarix at Rhest | −1 dragon, −2 Razorfiend |
+| PG defeat Regiarix at Lhesper | −1 dragon, −2 Razorfiend |
 | PG defeat Ozyrrandion at Tower | −1 dragon |
 | PG kill Fauci di Palude at Hammerfist (D10 alternate branch, before he flees under 50 hp) | −1 dragon (removed from Rethmar pool entirely) |
 | Fauci di Palude flees under 50 hp (D10 **default** branch — Hammerfist Schede §1 Tattiche) | No change to horde total; he is simply absent from Rethmar unless a later narrative hook brings him back (piano ARC-08 C2/EVENT-DECK, not yet written) |
@@ -222,7 +222,7 @@ Difensori con la stessa metodologia dual-clock di §2 qui sopra).
 | Worst (Ghostlord ostile, Xal'thor allea, 0 quest) | 12,700 | 2,200 | **5.8:1** ☠ |
 | Baseline (0 quest) | 9,400 | 2,200 | **4.3:1** |
 | Medio (2–3 quest + sabotaggi parziali) | 8,000 | 2,620 | **3.1:1** |
-| Ottimale (tutte quest + Rhest + Tower) | 6,800 | 3,770 | **1.80:1** |
+| Ottimale (tutte quest + Lhesper + Tower) | 6,800 | 3,770 | **1.80:1** |
 | Leggendario (ottimale + Ghostlord redento + Collezionista stop) | 6,400 | 4,370 | **1.46:1** |
 <!-- /gen:state:scenari -->
 
@@ -272,7 +272,7 @@ the listed consequence triggers.
 | Salvatore "Sal" della Luna d'Argento | 🔴 attivo | Desert road, Cannath Vale → Rethmar (Shaar) | Profile party's artifacts and magical defenses; plant Sabotage Oil on weapons before Rethmar; deliver living statues to Varis | 0/6 | Sabotage Oil applied — weapon TS failure risk at Phase 3 boss; Phase 4 statue activation proceeds at full strength |
 | Il Collezionista (Rakshasa) | 🔴 attivo | Mobile — last seen brokering with drow | Acquire the Crown's spare gem before party can use it; manipulate Conte Valerius | 5/8 | Sponsors anti-party legal pressure; Conte Valerius freezes assets |
 | Zalkatar (Illithid Warlock) | 🔴 attivo | Invisible Tower, Dauth region | Mind-strip a captured githyanki for fleet intel | 6/8 | Tower goes mobile; harder to find next session |
-| Wyrmlord Saarvith + Regiarix | 🔴 attivo | Lake Rhest ruins | Rebuild dragonrider corps from black dragon spawn | 3/8 | Rhest becomes a fortified war camp; CR +1 to assault |
+| Wyrmlord Saarvith + Regiarix | 🔴 attivo | Lhesper ruins | Rebuild dragonrider corps from black dragon spawn | 3/8 | Lhesper becomes a fortified war camp; CR +1 to assault |
 | Xal'thor (Illithid Coordinator, psionic) | 🔴 attivo | En route with an Illithid invasion force (psionic thralls, larvae, a small core of dominated Githyanki — NOT the free Githyanki dragon-rider force led by Vaereth, which is a separate and hostile faction) | Day 3 fixed assault on the Dauth Tournament to seize Tordek's **Bracieri Gemelli** (planar keys to the Eternal Forge); does NOT target the Orbe delle Otto Porte | Fixed: triggers Day 3 of Tournament regardless | Tournament becomes combat encounter |
 | Sethrax il Velato (Illithid emissary, Zalkatar's conclave) | 🔴 attivo | Dauth — infiltrated as tournament finalist "Kethran Mano di Pietra" | Extract a "Seme di Porta" from the Orbe delle Otto Porte during the Tournament's peak resonance, deliver it to Zalkatar at the Invisible Tower | Sync to Tournament (Day 1 = arrival; Day 2 = entered as finalist; Day 3 Round 7 = forced unmasking by Xal'thor's portal) | Sethrax flees to Invisible Tower with the seed → Zalkatar gains +2 effective CR + new orb-derived Mind Blast in P2A finale (Artemis's quest) |
 | Azarr Kul (High Wyrmlord) — **Ritual Clock, see §2.0** (NOT the March Clock; the horde's physical approach is tracked separately in §2.1, currently Day 19 of 42) | 🔴 attivo | Fane of Tiamat (Shaar) | Ritual sacrifices/planar conjunctions to summon the Avatar of Tiamat during the Rethmar siege (Day 40-42, Phase 2). Advances only on explicit triggers: +1 per Warpriest élite mass sacrifice (Day 35-38), +2 if Giant Wave ×1 breaches the walls (Phase 1), +3 if Giant Wave ×2 breaches (Phase 3) — see `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` §4b | 9/18 | Avatar of Tiamat manifests over Rethmar during Phase 2's 10-round ritual (D8) |

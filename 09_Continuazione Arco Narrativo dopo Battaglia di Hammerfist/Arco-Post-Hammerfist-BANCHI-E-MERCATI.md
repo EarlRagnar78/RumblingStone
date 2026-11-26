@@ -97,7 +97,7 @@ elenca.
 | Luogo | Perché |
 |---|---|
 | Hammerfist durante l'assedio | la fucina lavora per le mura: [`ARC08-17`](../08_La%20Battaglia%20Di%20Hammerfist/ARC08-17-BANCO-HAMMERFIST-1372.md) §1 |
-| Rhest e le Blackfens | palude e campo di guerra di Saarvith; si prende, non si compra |
+| Lhesper e il Lhespenbog | palude e campo di guerra di Saarvith; si prende, non si compra |
 | Starsong Hill | i Tiri-Kitor non hanno mai visto i PG (`state.md` §4). Danno doni, se l'alleanza si fa (audit del tesoro, ~15.000 mo); non vendono a stranieri |
 | La tana del Ghostlord | un lich non tiene bottega |
 | Talar | saccheggiata il Giorno 21. Le sue monete girano nei campi drow (§4) |
@@ -941,7 +941,7 @@ mo l'una per un collezionista**, il doppio da Varis. Una moneta antica, quindi,
 |---|---|---|---|
 | **Le monete di Thorek I** | il resto della fucina del 372: **nessuna**, calcolato in proporzione qui sotto (D43). Le regole servono se ne trovano altre | oro nanico, la faccia del re fondatore col torque. **Nuove di conio**: mille anni in tasca, nessuno in mano | sono le più pericolose. Una moneta di mille anni fa che non ha mai girato è una cosa che non può esistere |
 | **Le monete pre-imperiali** | `ARC07-DEF-1` §8, sotto l'altare di Terros: sette, di platino | consumate, verdi negli incavi | nessuno, salvo la curiosità: sono antiche e lo sembrano |
-| **Le monete elfiche di Rhest** | l'hoard di Regiarix: **6.250 mo** delle sue 25.000 in monete sono conio elfico, in proporzione qui sotto `[CANONE — DM 2026-10-07, D43]` | oro pallido, la foglia di un albero che non cresce più nel vale | per un elfo sono corredo funebre |
+| **Le monete elfiche di Lhesper** | l'hoard di Regiarix: **6.250 mo** delle sue 25.000 in monete sono conio elfico, in proporzione qui sotto `[CANONE — DM 2026-10-07, D43]` | oro pallido, la foglia di un albero che non cresce più nel vale | per un elfo sono corredo funebre |
 | **Le monete di Talar** | la cassa della quartiermastra (§4) | argento recente, una torre coniata | una città saccheggiata il Giorno 21: per i suoi profughi sono la prova di chi ha venduto chi |
 | **Le monete del Collezionista** | ogni affare con lui (§8) | moneta corrente, con un *marchio arcano* invisibile | non se ne accorge nessun mercante: se ne accorge la gilda, ogni volta che passano di mano |
 
@@ -994,8 +994,8 @@ di gemme e il 54,6% di monete del 1372, e alla fine non resta niente. Le monete 
 Thorek I sono rimaste a Hammerfist, nelle mani di chi le aveva coniate, e la frase
 del conto (*«le monete del 372 no»*) torna vera anche così.
 
-**Le monete elfiche di Rhest: 6.250 mo.** L'hoard di Regiarix (audit del tesoro
-§3.1) ha 25.000 mo in monete, 20.000 in gemme e 15.000 in reliquie di Rhest
+**Le monete elfiche di Lhesper: 6.250 mo.** L'hoard di Regiarix (audit del tesoro
+§3.1) ha 25.000 mo in monete, 20.000 in gemme e 15.000 in reliquie di Lhesper
 sommersa: 60.000 mo di tesoro che non è magia. Le reliquie elfiche ne sono un
 quarto, e un quarto delle monete è conio elfico: **6.250 monete d'oro**, 125
 libbre. A peso valgono 6.250 mo. Da collezione, le prime dieci per collezionista.
@@ -1005,7 +1005,7 @@ libbre. A peso valgono 6.250 mo. Da collezione, le prime dieci per collezionista
 | Luogo | Chi se ne accorge | Cosa fa | Cosa sa, e cosa dice | La conseguenza |
 |---|---|---|---|---|
 | **Hammerfist 1372** | il tesoriere del re, al primo conto | non le spende: le porta al re | riconosce la faccia di Thorek I, il re fondatore, scolpita sopra il trono | `ARC08-17` §3: è un'eco della fucina, e la più forte |
-| **Il Cerchio** | nessuno: il Cerchio non conta | le prende a metà, come tutte | Saraah, davanti alla foglia elfica di Rhest, sa che è corredo di morti | rifiuto delle monete elfiche, e l'atteggiamento verso chi le porta scende di un passo |
+| **Il Cerchio** | nessuno: il Cerchio non conta | le prende a metà, come tutte | Saraah, davanti alla foglia elfica di Lhesper, sa che è corredo di morti | rifiuto delle monete elfiche, e l'atteggiamento verso chi le porta scende di un passo |
 | **Dauth** | la speziala, o chiunque al Mercato Basso | le pesa, una su dieci | i nani di Dauth riconoscono Thorek I. In un giorno il Mercato Basso dice che *«sono tornati i quattro eroi»* delle Cronache, quelli della targa di Hammerfist (`DEF-4`, D33 di LETTORE: *quattro eroi dal fuoco e dalla pietra*) | la folla del Torneo guarda Tordek in un altro modo: il DM lo usa come una carta, una volta. La **Rete Nera** compra le monete a quindici volte il metallo, e vende la notizia a chi paga: il Collezionista la sa in **1d4 giorni** |
 | **La Torre** | Zalkatar, subito: sono il suo campo di studio | le vuole | una moneta mai consumata, coniata mille anni fa: per lui è una prova che i PG hanno viaggiato nel tempo | le paga con un oggetto onesto del suo tavolo, a scelta del PG. Da quel momento Zalkatar sa del viaggio, e `state.md` §4 prende una riga nuova |
 | **I campi drow** | la quartiermastra le pesa e basta | metallo, una su dieci | niente. Le manda a Sonjak con il resto della cassa | Sal le vede passare: sa chi le ha portate, e da dove (§8) |
@@ -1036,7 +1036,7 @@ quando.
 | Un trofeo dato a una contrada invece che venduto | un'alleanza in più per il Palio | Channathgate, Giorni 3-4 del Palio |
 | Il lavoro dei PG sul bosco bruciato | querce già alte | Rethmar, se il Cerchio combatte |
 | Una moneta di Thorek I spesa fuori da Hammerfist | chi l'ha vista sa del viaggio nel tempo | `state.md` §4, una riga per chi |
-| Monete elfiche di Rhest mostrate a un elfo | corredo funebre: l'elfo non dimentica | Starsong Hill, prima dell'alleanza |
+| Monete elfiche di Lhesper mostrate a un elfo | corredo funebre: l'elfo non dimentica | Starsong Hill, prima dell'alleanza |
 
 ---
 

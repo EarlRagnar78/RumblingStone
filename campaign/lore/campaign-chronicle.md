@@ -426,15 +426,15 @@ The party descends through a chain of connected underground locations:
 - Ring powers undergo further awakening (Ultimate Chaos abilities)
 - Source: `Arco-Post-Hammerfist-P2A-Torre-*` (12 files)
 
-##### Part 2 — Rhest: Città Sommersa & Drago Nero
+##### Part 2 — Lhesper: Città Sommersa & Drago Nero
 
 - **Source:** Red Hand pag 67–80, adapted to Cannath Vale
-- Lake Rhest exploration — sunken city ruins, boat/underwater mechanics
+- Lhesper exploration — sunken city ruins, boat/underwater mechanics
 - Razorfiend encounters in the swamp
 - **Wyrmlord Saarvith** (CR 12, fighter/dragon disciple) commands the area
 - Boss: **Regiarix** drago nero giovane adulto (GS 9, SRD) `[CANONE — DM 2026-11-15]`
 - Consequences: Slows horde 3 days, critical intelligence gathered
-- Source: `Arco-Post-Hammerfist-P2-RHEST-*` (8 files)
+- Source: `Arco-Post-Hammerfist-P2-LHESPER-*` (8 files)
 
 ##### Part 2B (P2B): Tordek's Personal Quest — Torneo Epico di Dauth
 
@@ -588,7 +588,7 @@ and back to the surface for the Red Hand campaign mainline.
   ├── P1: Hella's Quest — Cerchio Sacro della Foresta
   ├── P2A: Artemis's Quest — Torre Invisibile (vs Zalkatar)
   ├── P2B: Tordek's Quest — Torneo Epico di Dauth
-  ├── P2 Rhest: Città Sommersa & Regiarix (Black Dragon)
+  ├── P2 Lhesper: Città Sommersa & Regiarix (Black Dragon)
   ├── P3 Alliances: Starsong Hill, Ghostlord, Sabotaggio Drow
   └── P3 FINALE: Battle of Rethmar (5 phases → Azarr Kul + Avatar of Tiamat)
 ```

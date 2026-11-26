@@ -258,8 +258,8 @@ of the Githyanki sword, dark red dragon scales, chaotic shadows.
 
 ---
 
-### 📸 IMMAGINE 3.9 — "La Città Sommersa di Rhest" (Quest Rhest)
-*Per: esplorazione del Lago Rhest e scontro con Saarvith e Regiarix*
+### 📸 IMMAGINE 3.9 — "La Città Sommersa di Lhesper" (Quest Lhesper)
+*Per: esplorazione della città annegata di Lhesper e scontro con Saarvith e Regiarix*
 
 ```
 [PROMPT IMMAGINE]

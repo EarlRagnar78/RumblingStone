@@ -934,6 +934,7 @@ nuovo, con la finestra se Dara la legge. Poi il Consiglio (Scena 5).
 **In scena** — Dove: la Sala del Trono Ancestrale — Chi: Re Thorek · la Madre Superiora · i capitani
 
 **Domanda:** il Re accetta di comandare dal cortile, e lascia il Cancello a Borin?
+Se Borin non è fra i quattro, al suo posto qui e sotto c'è chi ha preso la sua squadra, Yrsa o Ragnhild `[CANONE — DM 2026-11-26, card «chi guarda il Re al Consiglio senza Borin»]`.
 
 **Quando**: la sera del Giorno −3. **Durata**: 20 minuti.
 
@@ -969,7 +970,7 @@ La prima battuta, dopo il rapporto di Dara:
 > **LA MADRE SUPERIORA:** *«La situazione è grave. Sono sette contro uno. Ma
 > noi abbiamo la montagna, e la montagna ha noi.»*
 
-Il Re risponde a lei, ma guarda Borin:
+Il Re risponde a lei, ma guarda Borin, o chi ha la sua squadra:
 
 > **RE THOREK:** *«E al Cancello ci sto io. Il primo giorno, il primo colpo.»*
 

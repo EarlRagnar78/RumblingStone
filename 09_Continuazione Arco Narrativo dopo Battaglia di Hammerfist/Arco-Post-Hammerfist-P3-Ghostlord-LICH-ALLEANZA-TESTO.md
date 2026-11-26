@@ -121,7 +121,7 @@ Condizioni tipiche offerte dal lich:
 
 Possibili extra:
 
-- In cambio di ulteriore favore (es. distruggere un vecchio rivale necromante), il Ghostlord può impegnarsi attivamente a “disturbare” la logistica Red Hand (bonus VP a Brindol).
+- In cambio di ulteriore favore (es. distruggere un vecchio rivale necromante), il Ghostlord può impegnarsi attivamente a “disturbare” la logistica Red Hand (bonus VP a Rethmar).
 
 Rischi narrativi:
 

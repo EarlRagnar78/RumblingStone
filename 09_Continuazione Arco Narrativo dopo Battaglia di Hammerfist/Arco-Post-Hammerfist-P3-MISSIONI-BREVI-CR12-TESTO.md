@@ -5,7 +5,7 @@ Arco-Post-Hammerfist-P3-MISSIONI-BREVI-CR12-TESTO.md
 
 Githyanki, Drow e Aberrazioni Fungine
 
-Ogni missione è pensata per 1 sessione rapida (1–2 incontri principali CR 12), inseribile tra Rhest, Ghostlord e la Battaglia Finale.[web:69][web:88]
+Ogni missione è pensata per 1 sessione rapida (1–2 incontri principali CR 12), inseribile tra Lhesper, Ghostlord e la Battaglia Finale.[web:69][web:88]
 
 ---
 

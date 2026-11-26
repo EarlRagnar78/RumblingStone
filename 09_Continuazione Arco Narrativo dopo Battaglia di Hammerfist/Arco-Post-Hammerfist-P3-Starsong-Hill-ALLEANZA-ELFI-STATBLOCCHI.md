@@ -58,7 +58,7 @@ senza ritocchi.
   danni da freddo** sul moncone, con un attacco di contatto. Ogni testa soffia
   un getto di fuoco da **3d6**, tutte insieme, ogni 1d4 round (Riflessi
   dimezza). La palude intorno brucia come il Witchwood.
-- **Dove**: le paludi di Rhest sotto Starsong Hill. In acqua l'idra nuota e i
+- **Dove**: le paludi del Lhespenbog sotto Starsong Hill. In acqua l'idra nuota e i
   PG in armatura no: il terreno è metà dello scontro.
 - **EL 13** contro APL 13: alla pari, sotto il tetto di APL+4.
 - **Divergenza dall'SRD**: l'SRD mette la piroidra nelle paludi calde; qui sta

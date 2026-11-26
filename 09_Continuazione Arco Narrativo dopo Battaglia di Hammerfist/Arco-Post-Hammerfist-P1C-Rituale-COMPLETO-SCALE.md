@@ -15,9 +15,9 @@
 
 **Implicazioni:**
 - PG hanno vinto battaglia tattica Hammerfist
-- MA l'orda strategica principale avanza comunque (Terrelton → Nimon's Gap → Brindol)
-- Hammerfist è sicura ma isolata (non può aiutare direttamente Brindol, troppo lontana)
-- I 90 nani salvati possono rinforzare Brindol (se PG li dirigono là)
+- MA l'orda strategica principale avanza comunque (Terrelton → Nimon's Gap → Rethmar)
+- Hammerfist è sicura ma isolata (non può aiutare direttamente Rethmar, troppo lontana)
+- I 90 nani salvati possono rinforzare Rethmar (se PG li dirigono là)
 
 ---
 
@@ -985,7 +985,7 @@ DIMENSIONI TOTALI MAPPA: 40 colonne × 40 righe = 60 m × 60 m, la stessa radura
 **Guadagni:**
 - ✅ Hella forma Elementale Natura (7 giorni, perfect stats)
 - ✅ 4 Young Treants alleati permanenti
-- ✅ Radicesaggio (Treant antico) + 20 Treant minori per battaglia Brindol
+- ✅ Radicesaggio (Treant antico) + 20 Treant minori per battaglia Rethmar
 - ✅ Benedizioni tutti artefatti (abilità unlocked permanent)
 - ✅ Intel completo campi drow (può sabotare pre-battaglia)
 - ✅ +100 reputation druidi/natura factions (aiuto battaglia finale)
@@ -1031,25 +1031,25 @@ DIMENSIONI TOTALI MAPPA: 40 colonne × 40 righe = 60 m × 60 m, la stessa radura
 - Day 21: Rituale (3 ore)
 - **COMPLETED:** Day 21 ore 09:00
 
-**Remaining Time to Brindol:**
+**Remaining Time to Rethmar:**
 - Day 21 → Day 42 = **21 giorni!**
 - Ma Nimon's Gap cade Day 26 (5 giorni!) se non aiutato
 
 **PG Choices Now:**
-1. **Return Brindol** (prep defenses, 3 giorni viaggio)
+1. **Return Rethmar** (prep defenses, 3 giorni viaggio)
 2. **Sabotage Campi Drow** (rallenta orda, 1-2 giorni)
 3. **Altre Quest Personali** (Warlock/Monaco, 2-3 giorni ciascuna)
 4. **Missioni Secondarie** (vedi Parte 2)
 
 **DM Pressure Message:**
 
-> Messaggero elfico arriva galoppo: "Hella! Trasformazione... incredibile! Ma... urgente! Nimon's Gap... mura deboli... cadono 5 giorni! Brindol chiede aiuto! E... c'è altro. Torre invisibile apparsa Old North Road. Warlock... il tuo Ring... risponde?"
+> Messaggero elfico arriva galoppo: "Hella! Trasformazione... incredibile! Ma... urgente! Nimon's Gap... mura deboli... cadono 5 giorni! Rethmar chiede aiuto! E... c'è altro. Torre invisibile apparsa Old North Road. Warlock... il tuo Ring... risponde?"
 
 **→ Hook per Quest 2 Warlock (Torre Invisibile)**
 
 ---
 
-**Prossimo File: PARTE 2 - Missioni Secondarie RHoD (Starsong Hill, Rhest, Ghostlord)**
+**Prossimo File: PARTE 2 - Missioni Secondarie RHoD (Starsong Hill, Lhesper, Ghostlord)**
 
 SCALA COMPLETATA TUTTI I DOCUMENTI: 1 quadrato = 1.5m × 1.5m!
 

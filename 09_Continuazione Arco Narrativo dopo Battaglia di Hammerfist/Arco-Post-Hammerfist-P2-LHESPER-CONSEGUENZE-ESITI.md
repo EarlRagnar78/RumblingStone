@@ -1,13 +1,13 @@
-Arco-Post-Hammerfist-P2-RHEST-CONSEGUENZE-ESITI.md
+Arco-Post-Hammerfist-P2-LHESPER-CONSEGUENZE-ESITI.md
 ==================================================
 
-# Rhest – Esiti e conseguenze (CR 13)
+# Lhesper – Esiti e conseguenze (CR 13)
 
 > **Versione**: v2 (2026-07-02) — agganciata ai numeri canonici (Lotto B, task
 > B1.5). Aggiunti: collegamento esplicito a `campaign/state.md` §2.3
 > (−1 drago, −2 Razorfiend), intel d'assedio (−1 CR a una fase di Rethmar),
-> eco Tiri‑Kitor (vendetta di Lanikar → +VP alleanza). **HUB Rhest**:
-> `Arco-Post-Hammerfist-P2-RHEST-OVERVIEW.md`.
+> eco Tiri‑Kitor (vendetta di Lanikar → +VP alleanza). **HUB Lhesper**:
+> `Arco-Post-Hammerfist-P2-LHESPER-OVERVIEW.md`.
 
 ---
 
@@ -15,22 +15,22 @@ Arco-Post-Hammerfist-P2-RHEST-CONSEGUENZE-ESITI.md
 
 > Questi valori **vincono** su qualunque stima generica nel resto del file.
 
-| Esito a Rhest | Effetto sull'Orda a Rethmar (`campaign/state.md` §2.3) |
+| Esito a Lhesper | Effetto sull'Orda a Rethmar (`campaign/state.md` §2.3) |
 |---|---|
 | **Regiarix ucciso** (+ nido distrutto in Fase 2) | **−1 drago, −2 Razorfiend** |
 | **Regiarix fuggito** (tuffo a un terzo dei pf, 50 `[CANONE — DM 2026-11-15]`) | Nessuna riduzione del drago (può ricomparire) |
 | **Nido distrutto ma drago fuggito** | −2 Razorfiend soltanto |
-| **Rhest fallita** | Nessuna riduzione; +ondata Razorfiend possibile |
+| **Lhesper fallita** | Nessuna riduzione; +ondata Razorfiend possibile |
 
 Effetto sull'alleanza Tiri‑Kitor (numeri D9, `campaign/state.md` §2.4): l'appoggio pieno
-vale **100 ranger elfici + 20 gufi giganti** a Rethmar. Rhest è la prova che
+vale **100 ranger elfici + 20 gufi giganti** a Rethmar. Lhesper è la prova che
 sblocca/consolida quell'appoggio (vedi §8).
 
 ---
 
 ## 1. Vettori principali di esito
 
-Valuta per Rhest:
+Valuta per Lhesper:
 
 - Saarvith: vivo, morto, fuggito.  
 - Regiarix: vivo, morto, fuggito.  
@@ -51,7 +51,7 @@ Valuta per Rhest:
 
 **Conseguenze**:
 
-- Rhest NON è più un avamposto funzionale della Red Hand.  
+- Lhesper NON è più un avamposto funzionale della Red Hand.  
 - NESSUN razorfiend come “arma speciale” durante l’Assedio di Rethmar.  
 - Tiri‑Kitor:
   - sostegno pieno (bonus massimo di alleanza, cavalleria aerea completa).[web:119]  
@@ -61,7 +61,7 @@ Valuta per Rhest:
 Ganci:
 
 - fama dei PG presso gli elfi,  
-- possibilità di reclamare/benedire le rovine di Rhest in futuro.
+- possibilità di reclamare/benedire le rovine di Lhesper in futuro.
 
 ---
 
@@ -75,7 +75,7 @@ Ganci:
 
 **Conseguenze**:
 
-- Avamposto di Rhest colpito duramente, ma:
+- Avamposto di Lhesper colpito duramente, ma:
   - sopravvivono cellule Red Hand/lucertoloidi.  
 - Durante l’Assedio:
   - puoi introdurre **1–2 razorfiend superstiti** come ondata speciale.  
@@ -85,7 +85,7 @@ Ganci:
 Ganci:
 
 - Saarvith può tornare come assassino/sniper nella Battaglia Finale,  
-- PG possono decidere se dare la caccia ai residui di Rhest tra un capitolo e l’altro.
+- PG possono decidere se dare la caccia ai residui di Lhesper tra un capitolo e l’altro.
 
 ---
 
@@ -99,17 +99,17 @@ Ganci:
 
 **Conseguenze**:
 
-- Rhest resta una spina nel fianco:
+- Lhesper resta una spina nel fianco:
   - parte dei razorfiend arriverà a Rethmar,  
   - Tiri‑Kitor esitano, offrono solo supporto limitato (patrol aerei, non grosse forze).  
 
 - Red Hand:
   - mantiene una “testa di ponte” a nord,  
-  - può inviare piccole forze aggiuntive durante l’Assedio (Gith/draghi via Rhest).
+  - può inviare piccole forze aggiuntive durante l’Assedio (Gith/draghi via Lhesper).
 
 Gancio:
 
-- Ritorno a Rhest possibile se i PG vogliono “finire il lavoro” prima della battaglia finale (rischioso ma utile).
+- Ritorno a Lhesper possibile se i PG vogliono “finire il lavoro” prima della battaglia finale (rischioso ma utile).
 
 ---
 
@@ -126,19 +126,19 @@ Gancio:
 
 - Durante l’Assedio di Rethmar:
   - comparsa di una **grossa ondata di razorfiend** (1–3 esemplari avanzati) come batteria d’assalto.  
-  - eventuale apparizione di Regiarix o di un altro drago nero “mandato da Rhest” come rinforzo aereo.  
+  - eventuale apparizione di Regiarix o di un altro drago nero “mandato da Lhesper” come rinforzo aereo.  
 
 - Tiri‑Kitor:
   - si rifiutano di impegnare grandi forze (“non abbiamo visto abbastanza per rischiare il nostro popolo”),  
   - sostegno minimo (scout, non cavalleria).
 
 - Red Hand:
-  - percepisce Rhest come successo → più fiducia nelle armi biologiche/draghi.
+  - percepisce Lhesper come successo → più fiducia nelle armi biologiche/draghi.
 
 Ganci:
 
-- colpa/pressione sui PG (“avremmo potuto fermarli a Rhest”),  
-- eventuale arco di redenzione: distruggere Rhest tardivamente mentre l’Orda marcia.
+- colpa/pressione sui PG (“avremmo potuto fermarli a Lhesper”),  
+- eventuale arco di redenzione: distruggere Lhesper tardivamente mentre l’Orda marcia.
 
 ---
 
@@ -146,17 +146,17 @@ Ganci:
 
 Riassunto rapido di impatto sull’assedio:
 
-- Rhest “pulita”:
+- Lhesper “pulita”:
   - no razorfiend in Fase 1–2,  
   - meno draghi,  
   - Tiri‑Kitor full support.  
 
-- Rhest “mezzo‑pulita”:
+- Lhesper “mezzo‑pulita”:
   - 1 ondata razorfiend special,  
   - Tiri‑Kitor supporto parziale,  
   - qualche pattuglia lucertoloidi in più su fronti laterali.
 
-- Rhest “fallita”:
+- Lhesper “fallita”:
   - ondata grossa di razorfiend (minaccia CR alta),  
   - eventuale Regiarix/erede a supporto aereo,  
   - Tiri‑Kitor tiepidi o assenti → CR dell’assedio si alza sensibilmente.
@@ -181,23 +181,23 @@ CD 20) e li consegnano al **Consiglio di Rethmar**:
 
 ## 8. Eco Tiri‑Kitor — la vendetta di Lanikar
 
-Rhest cadde quando la Mano Rossa vi si insediò; molti Tiri‑Kitor persero
-qualcuno. **Lanikar** — ranger di Starsong caduto a Rhest — è il perno emotivo
+Lhesper cadde quando la Mano Rossa vi si insediò; molti Tiri‑Kitor persero
+qualcuno. **Lanikar** — ranger di Starsong caduto a Lhesper — è il perno emotivo
 dell'alleanza (vedi `Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-TESTO.md`).
 
 - **Se i PG onorano i caduti** (tumulo elfico onorato in Fase 1 §del d12,
   medaglione recuperato, o resti di Lanikar riportati a Starsong) **e** liberano
-  Rhest: **+1 morale / +VP** all'alleanza Tiri‑Kitor → spinge lo stato da
+  Lhesper: **+1 morale / +VP** all'alleanza Tiri‑Kitor → spinge lo stato da
   "prudente" a **"pieno"** (i 100 ranger + 20 gufi giganti, D9).
-- **Se profanano i tumuli o lasciano Rhest in mano al nemico**: **−morale**; i
+- **Se profanano i tumuli o lasciano Lhesper in mano al nemico**: **−morale**; i
   Tiri‑Kitor restano tiepidi anche se l'alleanza formale c'è.
 - **Gancio narrativo**: consegnare a Sellyria Starsinger / Killiar Arrowswift la
-  prova che Rhest è vendicata è una **scena giocata**, non una riga di conto:
+  prova che Lhesper è vendicata è una **scena giocata**, non una riga di conto:
   chiude il lutto della tribù e apre la cavalleria dei cieli per Rethmar.
 
 ---
 
-## 9. Checklist DM (esiti di Rhest)
+## 9. Checklist DM (esiti di Lhesper)
 
 - [ ] Registrato l'esito esatto: Saarvith (vivo/morto/fuggito), Regiarix
       (vivo/morto/fuggito), nido (distrutto/parziale/intatto)?

@@ -1,20 +1,20 @@
-Arco-Post-Hammerfist-P2-RHEST-FASE3-INTRUSIONE-EDIFICI-RHEST.md
+Arco-Post-Hammerfist-P2-LHESPER-FASE3-INTRUSIONE-EDIFICI-LHESPER.md
 ===============================================================
 
-# Rhest Fase 3 – Intrusione negli edifici sommersi
+# Lhesper Fase 3 – Intrusione negli edifici sommersi
 
 > **Versione**: v2 (2026-07-02) — espansa a standard "pacchetto Palio" (Lotto B,
 > task B1.3): read-aloud, mappa in scala **1,5 m/quadretto**, regole subacquee
 > SRD complete, tre approcci di infiltrazione (furtività / diplomazia coi
 > prigionieri lucertoloidi / assalto), intel quantificato per l'assedio.
-> **HUB Rhest**: `Arco-Post-Hammerfist-P2-RHEST-OVERVIEW.md`.
+> **HUB Lhesper**: `Arco-Post-Hammerfist-P2-LHESPER-OVERVIEW.md`.
 > **Statblock nemici boss**: `...-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` (Fase 4).
 
 ---
 
 ## 0. Read-aloud d'apertura
 
-> *Il cuore di Rhest galleggia su se stesso: tre edifici ancora in piedi legati
+> *Il cuore di Lhesper galleggia su se stesso: tre edifici ancora in piedi legati
 > da passerelle marce sopra l'acqua nera, e sotto di essi un intero piano di
 > città **sommerso**, sale e corridoi dove la luce arriva verde e obliqua. Su una
 > passerella, torce della Mano Rossa. Sotto, nel buio liquido, porte spalancate
@@ -88,7 +88,7 @@ terreno** per il boss di Fase 4 — idealmente arrivandoci di sorpresa.
 - Incantesimi con componente verbale: problematici per un incantatore che
   trattiene il fiato (spesso servono *Silent Spell* o bolle d'aria).
 
-**Visibilità**: l'acqua torbida di Rhest dà **occultamento** oltre i 9 m
+**Visibilità**: l'acqua torbida di Lhesper dà **occultamento** oltre i 9 m
 (occultamento totale oltre i 18 m). Vale per PG **e** nemici.
 
 ---

@@ -144,7 +144,7 @@ Le prove preliminari testano abilità monastiche. **PG non-monaci** possono part
 Maewen è una **messaggera, non un'avventuriera**. Combatte solo se attaccata o se un compagno è in pericolo immediato.
 
 - **Round 1:** *Sanctuary* su sé stessa (azione standard, evita di essere bersagliata se non attacca).
-- **Round 2:** se ancora attaccata, Stunning Fist sul leader avversario (CD 18). Spesso ferma il combattimento all'istante.
+- **Round 2:** se ancora attaccata, Stunning Fist sul leader avversario (CD 19). Spesso ferma il combattimento all'istante.
 - **Round 3:** Wholeness of Body se ferita; ritirata negoziata se possibile.
 - **Mai uccide se può catturare o stordire.** Pacifista praticante, non assoluta.
 
@@ -195,7 +195,7 @@ Maewen è una **messaggera, non un'avventuriera**. Combatte solo se attaccata o 
 - Incantesimi (incantatore di 2° livello, CD = 14+liv; 4/3+1 al giorno): liv 0 *Cura Ferite Minori, Individuazione del Magico, Luce, Resistenza*; liv 1 *Benedizione, Cura Ferite Leggere, Santuario*, più l'incantesimo di dominio *Cura Ferite Leggere* (Guarigione, che gli dà +1 al livello dell'incantatore)
 
 #### Talenti
-Iniziativa Migliorata, Volontà di Ferro, Resistenza Fisica, Duro a Morire. Quattro, quanti ne dà l'11° livello; più quelli bonus del monaco. Il quinto che la scheda elencava, Abilità Focalizzata (Diplomazia), non ha un posto legale: una mezzelfa non ha il talento bonus dell'umano, e darglielo vorrebbe dire cambiarle razza. La sua Diplomazia resta +12 coi gradi.
+Iniziativa Migliorata, Volontà di Ferro, Resistenza Fisica, Duro a Morire. Quattro, quanti ne dà l'11° livello; più quelli bonus del monaco. Il quinto che la scheda elencava, Abilità Focalizzata (Diplomazia), non ha un posto legale: una mezzelfa non ha il talento bonus dell'umano, e darglielo vorrebbe dire cambiarle razza. La sua Diplomazia è +10 coi gradi.
 
 #### Abilità chiave
 Diplomazia +10, Sapienza Religione +5, Concentrazione +9, Ascoltare +13, Osservare +13; Sopravvivenza +4 e Camuffare +0 senza gradi (non è una spia, è una messaggera onesta).

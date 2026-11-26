@@ -12,7 +12,7 @@ ca: 18
 ca-dettaglio: (+3 Des, +4 *armatura magica*, +1 anello), contatto 14, colto alla sprovvista 15
 pf: 28
 pf-dado: 3d6+7d4
-ts: Temp +4, Rifl +10, Vol +8
+ts: Temp +2, Rifl +10, Vol +9
 attributi: For 8 Des 16 Cos 11 Int 19 Sag 12 Car 12
 velocita: 9 m
 attacchi:
@@ -24,8 +24,8 @@ attacchi:
 
 > `attributi` scritti a mano, non generati: serie d'élite della DMG 3.5 p. 110 più la razza drow (SRD), card del DM del 2026-11-20 (vedi il blocco storico in fondo).
 
-Medium humanoid (elf), NE. **DV 3d6 + 7d4**. **hp 28**. **CA 18** (+3 Des, +4 *armatura magica*, +1 anello), contatto 14, colto alla sprovvista 15. Iniziativa +3. Vel 9 m.
-**TS** Temp +4, Rifl +10, Vol +8 (+2 razziale vs incantesimi, +2 vs ammaliamenti). **BAB/Lotta** +5/+4. **RI 21**.
+Medium humanoid (elf), NE. **DV 3d6 + 7d4**. **hp 28**. **CA 18** (+3 Des, +4 *armatura magica*, +1 anello), contatto 14, colto alla sprovvista 15. Iniziativa +7. Vel 9 m.
+**TS** Temp +2, Rifl +10, Vol +9 (+2 razziale vs incantesimi, +2 vs ammaliamenti). **BAB/Lotta** +5/+4. **RI 21**.
 **Mischia** stocco perfetto +5 (1d6−1/18-20). **Distanza** balestra a mano +8 (1d4 + **veleno drow**, Tempra CD 13 o incosciente 1 min/2d4 ore).
 **Attacco furtivo** +3d6.
 **Car** For 8, Des 16, Cos 11, Int 19, Sag 12, Car 12.
@@ -42,7 +42,7 @@ Medium humanoid (elf), NE. **DV 3d6 + 7d4**. **hp 28**. **CA 18** (+3 Des, +4 *a
 | 1 | 5 | *armatura magica, dardo incantato, raggio di indebolimento, immagine silenziosa, individuazione del magico* |
 | 2 | 4 | **immagine speculare**, *invisibilità*, *raggio rovente*, **polvere scintillante** (CD 16) |
 | 3 | 3 | **velo di dislocamento**, **dissolvi magie**, *soffio di vento* |
-| 4 | 1 | **porta dimensionale** *(o* **invisibilità superiore** *)* |
+| 4 | 2 | **porta dimensionale** *(o* **invisibilità superiore** *)* |
 
 **Tattiche**: non apre mai lo scontro allo scoperto. Ordine tipico:
 1. *invisibilità* + posizione a 9 m dal bersaglio designato;
@@ -61,4 +61,5 @@ Notes: unità di infiltrazione della compagnia di **Sonjak**, non un ammazza-PG.
 
 <!-- storico -->
 - era: fino al 2026-11-20 For 8 Des 18 Cos 12 Int 20 Sag 12 Car 14 (acquisto a punti 36 tolta la razza), pf 38 (3d6+7d4+10), CA 19 (contatto 15), iniziativa +4, Temp +5, Rifl +11, balestra a mano +9, CD 10 + livello + 5. Rifatta con la serie d'élite della DMG 3.5 p. 110 più la razza drow (SRD), card del DM del 2026-11-20: Int 15 (+1 al 4° e all'8°), Des 14, Cos 13, Sag 12, Car 10, For 8. Incantesimi al giorno invariati: Mago 7 SRD 4/4/3/2/1 più i bonus di Int 19 dà fino a 4/5/4/3/2, la scheda ne usa meno al 4°. La nota D4 che cita «balestra a mano +9» descrive il conto di allora.
+- era: fino al 2026-11-26 iniziativa +3, Temp +4, Vol +8, un incantesimo di 4° al giorno. La verifica del regolista ha rifatto i conti: iniziativa +7 (Des +3, Iniziativa Migliorata +4, che era fra i talenti e non era contata); Tempra +2 (Ladro 3 +1, Mago 5 +1, Trickster Arcano 2 +0, Cos 11 +0: nessun oggetto la alza); Volontà +9 (1 + 4 + 3, Sag +1); due incantesimi di 4° (Mago 7: uno, più uno per Int 19). Card del dm del 2026-11-26 «tutto, anche quelli già su main».
 <!-- /storico -->

@@ -184,7 +184,7 @@ Seguire Tracce, Tiro Rapido, Resistenza Fisica, Tiro Multiplo (bonus di classe);
 #### Abilità chiave
 Conoscenze (Natura) +11, Sopravvivenza +13, Cavalcare (con Inathiel) +15, Osservare +13, Ascoltare +13, Concentrazione +4, Muoversi Silenziosamente +12, Nascondersi +12.
 
-Benchmark: PF T1-1 riga 8: CA 19 (21 con *pelle coriacea*) vs 21 / pf 36 vs 100 (sotto) / atk +13 vs +15 (2 sotto) / danni con Tiro Rapido circa 22 vs 35 / TS buoni +8 e +11 vs +11. Arciera da seconda linea: colpisce quasi come il suo GS, non lo regge.
+Benchmark: PF T1-1 riga 8: CA 19 (21 con *pelle coriacea*) vs 21 / pf 36 vs 100 (sotto) / atk +13 vs +15 (2 sotto) / danni con Tiro Rapido circa 22 vs 35 / TS buoni +7 e +11 vs +11. Arciera da seconda linea: colpisce quasi come il suo GS, non lo regge.
 
 ## Esiti possibili
 

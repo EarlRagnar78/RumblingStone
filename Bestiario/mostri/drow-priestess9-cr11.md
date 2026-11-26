@@ -10,7 +10,7 @@ ca: 23
 ca-dettaglio: (+9 +1 mithral full plate, +3 Dex, +1 light shield)
 pf: 40
 pf-dado: 9d8
-ts: Temp +6, Rifl +7, Vol +10
+ts: Temp +7, Rifl +7, Vol +10
 attributi: For 10 Des 16 Cos 11 Int 10 Sag 17 Car 14
 velocita: 20 ft
 iniziativa: +3
@@ -20,12 +20,12 @@ iniziativa: +3
 
 **Size/Type**: Medium humanoid (elf) | **HD**: 9d8 (40 HP)
 **AC**: 23 (+9 +1 mithral full plate, +3 Dex, +1 light shield) | **Init**: +3 | **Speed**: 20 ft
-**Saves**: Fort +6, Ref +7, Will +10 (mantello della resistenza +1 incluso) | **BAB/Grapple**: +6/+6
-**Attacks**: +1 snake-headed whip/scourge +8/+3 (1d4+2 + 1d6 poison on bite)
+**Saves**: Fort +7, Ref +7, Will +10 (mantello della resistenza +1 incluso) | **BAB/Grapple**: +6/+6
+**Attacks**: +1 snake-headed whip/scourge +7/+2 (1d4+1 + 1d6 poison on bite)
 **Abilities**: Str 10, Dex 16, Con 11, Int 10, Wis 17, Cha 14
 **Domains**: Evil, Destruction (or Drow, Trickery — FRCS)
 **Spells/day (CL 9, CD 13+lvl)**: 0 — 6; 1 — 5+1; 2 — 5+1; 3 — 4+1; 4 — 2+1; 5 — 1+1.
-**Typical**: *doom, shield of faith, divine favor*; *hold person, silence, spiritual weapon*; *dispel magic, prayer, summon monster III*; *freedom of movement, divine power, unholy blight (CD 17)*; *flame strike (CD 18), slay living (CD 18)*.
+**Typical**: *doom, shield of faith, divine favor*; *hold person, silence, spiritual weapon*; *dispel magic, prayer, summon monster III*; *freedom of movement, divine power, unholy blight (CD 18)*; *flame strike (CD 19), slay living (CD 18)*.
 **SR**: 20 | **SLA**: *clairaudience/clairvoyance, detect good, detect magic, dispel magic, levitate, suggestion* (CL 9)
 **Feats**: Combat Casting, Spell Focus (evocation), Extra Turning, Divine Metamagic (Extend, CD), Improved Counterspell
 **Notes**: Usata per Notte dei Drow Fase 0 + rituale Spider-Kiss. Matrona Sajak simile ma CR 13-14.
@@ -36,4 +36,5 @@ iniziativa: +3
 
 <!-- storico -->
 - era: fino al 2026-11-20 For 12 Des 16 Cos 12 Int 14 Sag 19 Car 16 (acquisto a punti 39, sopra i 32 della DMG), pf 49 (9d8+9), Temp +7, Vol +11, Lotta +7, CD 14 + livello, incantesimi di 4° e 5° 3+1 e 2+1 (il 5° era già uno sopra la Tabella del Chierico SRD). Rifatta con la serie d'élite della DMG 3.5 p. 110 più la razza drow (SRD), card del DM del 2026-11-20: Sag 15 (+1 al 4° e all'8°), Des 14, Cos 13, Car 12, For 10, Int 8. Incantesimi al giorno: Chierico 9 SRD 6/4/4/3/2/1 più i bonus di Sag 17 al 1°, 2° e 3°.
+- era: fino al 2026-11-26 Temp +6, frusta +8/+3 (1d4+2), *unholy blight* CD 17, *flame strike* CD 18. La verifica del regolista ha rifatto i conti: Tempra +7 (Chierico 9 +6, Cos 11 +0, mantello +1); frusta +7/+2 (1d4+1) con For 10; le due invocazioni prendono il +1 di Spell Focus (evocation), che la scheda aveva fra i talenti e non contava. Card del dm del 2026-11-26 «tutto, anche quelli già su main».
 <!-- /storico -->

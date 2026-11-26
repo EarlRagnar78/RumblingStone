@@ -2686,7 +2686,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 3988,
+    "senza_note": 3991,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -3161,7 +3161,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 1610,
+    "senza_note": 1936,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -3312,7 +3312,7 @@
       0
      ],
      "Temp": [
-      6,
+      7,
       "4..7",
       0
      ],
@@ -3394,7 +3394,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 2282,
+    "senza_note": 2687,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -3405,8 +3405,8 @@
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
-      2,
-      "ricavata da Temp +6 (base +4)"
+      3,
+      "ricavata da Temp +7 (base +4)"
      ],
      "Des": [
       3,
@@ -3481,7 +3481,7 @@
     "provenienza": "a mano",
     "tipo": "Medium humanoid (elf)",
     "ts": [
-     6,
+     7,
      7,
      10
     ]
@@ -3535,12 +3535,12 @@
       0
      ],
      "Temp": [
-      4,
+      2,
       "2..5",
       0
      ],
      "Vol": [
-      8,
+      9,
       "6..9",
       0
      ],
@@ -3643,7 +3643,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 4109,
+    "senza_note": 4580,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {
@@ -3652,16 +3652,16 @@
     "template_dichiarati": [],
     "tetti_dai_ts": {
      "Cos": [
-      2,
-      "ricavata da Temp +4 (base +2)"
+      0,
+      "ricavata da Temp +2 (base +2)"
      ],
      "Des": [
       6,
       "ricavata da Rifl +10 (base +4)"
      ],
      "Sag": [
-      3,
-      "ricavata da Vol +8 (base +5)"
+      4,
+      "ricavata da Vol +9 (base +5)"
      ]
     },
     "vincoli": {
@@ -3743,9 +3743,9 @@
     "provenienza": "a mano",
     "tipo": "Medium humanoid (elf), NE",
     "ts": [
-     4,
+     2,
      10,
-     8
+     9
     ]
    }
   },
@@ -19494,7 +19494,7 @@
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
     "provenienza": "a mano",
-    "senza_note": 4914,
+    "senza_note": 5109,
     "sestine_citate": [
      [
       "pregen-pcgen/png_La_mano_rossa_del_destino/00-underdark-grr6-Bothor-Malvur.pcg",

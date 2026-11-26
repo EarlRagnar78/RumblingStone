@@ -65,6 +65,8 @@ Slot al giorno da Mago 9 con Int 22 e lo slot dell'illusionista (+1 per livello)
 **Statistiche** For 8, Des 18 (16 + *guanti della destrezza +2*), Cos 12, Int 22 (20 + *fascia dell'intelletto +2*), Sag 12, Car 16 · **BAB/Lotta** +5/+4
 **Talenti** Scrivere Pergamene, Schivare, Mobilità, Riflessi in Combattimento, **Incantesimi Focalizzati (Illusione)**, **Incantesimi Focalizzati Superiore (Illusione)**, Incantesimi Silenziosi.
 
+Equipaggiamento sopra la tabella: scelta del DM `[CANONE — DM 2026-11-26, card «Sì, calcolo e dichiaro»]`: almeno 36.702 mo (pugnale +3 18.302, balestra a mano +1 2.400, anello di protezione +1 2.000, amuleto dell'armatura naturale +1 2.000, mantello della resistenza +2 4.000, guanti della destrezza +2 4.000, fascia dell'intelletto +2 4.000; quadrelli e veleno drow esclusi) contro i 35.000 della Tabella 4-23 del DMG 3.5 al livello effettivo 13 (Mago 9 / Danzatrice delle Ombre 2, più 2 di modificatore di livello dei drow); il GS resta 12.
+
 > ⚠ Prerequisito: la Danzatrice delle Ombre (SRD) chiede Nascondersi 10 gradi e Muoversi Silenziosamente 8; per un mago sono abilità di classe incrociata, e 10 gradi arrivano solo al 17° livello del personaggio. Tenuta, perché è nella scheda. PF1e: Danzatore delle Ombre (classe di prestigio PRD/OGL) — si avvicina: chiede Furtività 5 gradi, quindi un mago 9 ci entra, e dà *nascondersi in piena vista* già al 1° livello.
 
 **Capacità speciali**
@@ -91,6 +93,7 @@ Boost log: correzione dei conti 3.5 (Mago Illusionista 9 / Danzatrice delle Ombr
 - era: *oscurità profonda* fra gli incantesimi di 3° (è un incantesimo da chierico, e d'invocazione, scuola proibita)
 - era: benchmark letto sulla vecchia tabella (pf 145, att +19 alla riga 12)
 - era: fino al 2026-11-20 nessun oggetto spiegava la Des 18: tolta la razza (drow: Des +2, Cos −2, Int +2, Car +2), la fascia +2 e i due aumenti di livello (sull'Int) restava un acquisto a punti 36, sopra i 32 della DMG 3.5. Card del DM del 2026-11-20 «Guanti della destrezza +2»: coi *guanti della destrezza +2* (SRD, 4.000 mo, mani libere) la base è For 8 Des 14 Cos 14 Int 16 Sag 12 Car 14, acquisto 32. Nessun numero cambia.
+- era: fino al 2026-11-26 nessuna riga del corredo: gli oggetti portati valgono almeno 36.702 mo, sopra i 35.000 della Tabella 4-23 al livello effettivo 13. Dichiarato, nessun numero cambia. Card del dm del 2026-11-26 «Sì, calcolo e dichiaro».
 <!-- /storico -->
 
 > correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-12, lotto 2 di ADR-0126): critico di «Mischia pugnale +3» scritto (19-20, tabella delle armi dell'SRD); critico di «Distanza balestra a mano +1» scritto (19-20, tabella delle armi dell'SRD).

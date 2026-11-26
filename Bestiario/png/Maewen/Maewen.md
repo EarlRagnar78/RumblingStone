@@ -25,7 +25,7 @@ voci:
 **Razza/Tipo:** Mezza-elfa (Umanoide Medio)
 **Classe:** Monk 9 / Cleric 2 (di Ilmater) — GS 11 (un PNG con classi da personaggio ha il GS del suo livello: 9 + 2)
 **Allineamento:** Legale Buono
-**Età:** 64 (giovane-matura per mezz'elfa)
+**Età:** 64, di mezza età per mezz'elfa
 **Ruolo:** PNG di passaggio. Messaggera ufficiale della **Confraternita Monastica di Dauth** + **Sovrintendente Tordek di Dauth**. Inviata al **Sacred Forest** per cercare un **famoso guerriero elfico** (vedi §3) e invitarlo al Torneo delle Otto Porte. Si imbatte in **Tordek Durinheart** (PG) per coincidenza fortuita.
 **File correlati:** `Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md`; `Bestiario/png/Lythiel/Lythiel.md`; `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md`.
 **Status**: [DA SCRIVERE — la scheda non dice se oggi è viva]
@@ -260,6 +260,7 @@ Boost log: correzione dei conti (SRD) — GS 10 → 11 — GS uguale al livello 
 > - era: «Endurance» fra gli incantesimi da chierico (è un talento) e «High Jump» fra i privilegi del monaco, che nel 3.5 non c'è → tolti; aggiunti Eludere Migliorato e Purezza del Corpo
 > Valori superati il 2026-11-20 (card del DM «Serie d'élite»: la scheda costava 43 punti di acquisto, sopra i 32 della DMG 3.5):
 > - era: For 14 Des 16 Cos 14 Int 13 Sag 17 Car 14, CA 19 (contatto 19, colta 16), pf 71, Temp +11, Rifl +9, Vol +14, iniziativa +7, Lotta +9, colpo senz'armi +10/+5 (1d10+3), raffica +10/+10/+5, bastone +9/+4 (1d6+3), Pugno Stordente CD 18, CD 13 + livello, Scacciare 5/giorno, Diplomazia +12, Religione +9, Concentrazione +12, Ascoltare e Osservare +14, Sopravvivenza +9, Camuffare +5 → ora serie d'élite della DMG 3.5 p. 110, mezzelfa (nessun modificatore) di mezza età (−1 For, Des, Cos; +1 Int, Sag, Car): Sag 15 (+1 al 4° e all'8°), Des 14, Cos 13, For 12, Car 10, Int 8. I punti abilità scendono da 66 a 38 (Monaco 9 / Chierico 2, Int 9): 8 gradi in Diplomazia, Ascoltare, Osservare e Concentrazione, 6 in Religione; Sopravvivenza e Camuffare restano senza gradi.
+> - era: fino al 2026-11-26 «giovane-matura per mezz'elfa» a 64 anni: per l'SRD il mezz'elfo è di mezza età da 62. I numeri non cambiano, perché i modificatori d'età erano già nel conto della card del 2026-11-20. Card del dm del 2026-11-26 «GS 11 ovunque, mezza età».
 <!-- /storico -->
 
 > RC-001 (2026-11-15, ADR-0134) `[CANONE — DM 2026-11-15, RC-001]`: nel blocco vanno solo i tre oggetti SRD già decisi dal DM il 2026-10-18 (anello di protezione +2 nella CA 19, mantello della resistenza agli incantesimi per la RI 21, amuleto dei pugni potenti +1 nell'attacco) più il bastone e la borsa dei sigilli della prosa. Nessun numero cambia.

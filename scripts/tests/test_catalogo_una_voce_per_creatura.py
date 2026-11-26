@@ -83,7 +83,7 @@ class TestLoSpezzamento(unittest.TestCase):
         """
         nomi = " · ".join(m["name"] for m in CATALOGO)
         for atteso in ("Fantino Cavaliere", "Fantino Ladro", "Drow Chierica di Lolth",
-                       "Gonfaloniere Aldemar Vosk", "I Sicari di Sonjak",
+                       "Gonfaloniere Aldemar Vosk", "Drow Assassina di Lolth ×2",
                        "Il Fantino della Nonna"):
             with self.subTest(soggetto=atteso):
                 self.assertIn(atteso, nomi)

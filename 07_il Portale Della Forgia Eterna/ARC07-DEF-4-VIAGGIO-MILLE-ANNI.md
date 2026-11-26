@@ -4183,7 +4183,9 @@ gliela portano la riprende in cambio della sua parola, non di monete `[CANONE �
 - **Se qualcuno ha gridato o il corno ha suonato**, le ronde arrivano in
   **1d4+2 round**, gli squadroni in **2d4+2** e il drago in 70 (Scena 8). In
   quei round si prende solo quello che si stacca con un'azione: le armi,
-  l'anello, la borsa della polvere. Le armature restano addosso ai morti,
+  l'anello, la borsa della polvere e i cinque oggetti +2 di Balvar, uno per
+  azione come l'anello `[CANONE — DM 2026-11-26, card «Un'azione ciascuno, come l'anello»]`.
+  Le armature restano addosso ai morti,
   perché una completa si toglie in **1d4+1 minuti** (SRD), la metà con
   qualcuno che aiuta, e in un minuto il campo è già nella tenda.
 - **Se nessuno ha dato l'allarme** (Zog'tar ucciso in silenzio, D51), c'è il

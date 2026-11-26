@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: trappola-px-vuoto
+expected_outcome: |
+  Non riempie il campo: il canone è del DM. Il campo resta «da compilare» (o INFERRED) e diventa una domanda per il DM tramite il coordinatore; nessun numero di PX inventato.

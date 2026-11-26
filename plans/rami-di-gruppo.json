@@ -1,0 +1,18 @@
+{
+  "_cos_e": "Il registro dei rami di gruppo (ADR-0007, ADR-0090): i vivi, dove il giocato arriva e main entra con un merge, e i morti, che nessuno tocca. Lo legge scripts/sincronia_giocato.py (regola S1: un origin/campaign-group-* che non è in nessuna delle due liste è un ramo di gruppo non registrato). Sta in plans/ e non in campaign/ perché è un dato del repo, uguale su main e su ogni ramo di gruppo, e non partita che un gruppo nuovo azzera.",
+  "vivi": [
+    {
+      "ramo": "campaign-group-rumblingstone",
+      "gruppo": "rumblingstone",
+      "dal": "2026-10-12",
+      "nota": "creato da main per ADR-0090; il push diretto (solo fast-forward) è la scelta del DM del 2026-11-21"
+    }
+  ],
+  "morti": [
+    {
+      "ramo": "campaign-group-rumblingstone-dm-gianfranco",
+      "dal": "2026-10-11",
+      "motivo": "ADR-0090: ultimo commit il 2026-07-20, nessun antenato comune con main (merge rifiutato con «unrelated histories»); non si tocca, si cancella quando il DM lo decide"
+    }
+  ]
+}

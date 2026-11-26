@@ -20,7 +20,7 @@
 
 **Role**: ally (leader/druidessa-cantrice della tribù)
 **Status**: viva, Starsong Hill — compare nel TESTO d'arco (§93)
-**Location**: Starsong Hill (Tiri Kitor), fra le paludi di Rhest
+**Location**: Starsong Hill (Tiri Kitor), sul margine del Lhespenbog
 **Motivation**: proteggere la tribù (~500 anime) e i luoghi sacri; **decide se e quanto** la sua gente marci con Rethmar.
 **CR**: nessuno, non combatte `[CANONE — DM 2026-10-18]` (se si arriva allo scontro con la tribù, si usano Killiar e i cacciatori Tiri Kitor degli statblocchi d'arco) | **Race/Class**: elfa (druida/bardo) `[Private — RHoD]`
 **Key stats**: puntatore → statblock d'arco in `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-STATBLOCCHI.md`.
@@ -37,7 +37,7 @@ Boost log: (vuoto)
 
 **Role**: ally (scout/guerriero Tiri Kitor)
 **Status**: vivo, Starsong Hill
-**Location**: pattuglie ai margini delle paludi di Rhest
+**Location**: pattuglie ai margini del Lhespenbog
 **Motivation**: difendere i confini della tribù; è la lama dove Sellyria è la voce.
 **CR**: **11-12** (statblock esistente) | **Race/Class**: elfo ranger/guerriero
 **Key stats**: → **statblock canonico d'arco**: `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-STATBLOCCHI.md` §1 (Killiar Arrowswift, CR 11-12) — 3-4 cacciatori con lui nella scena d'incontro (§35).
@@ -96,7 +96,7 @@ Boost log: (vuoto)
 - **Alleato del bosco**: se i PG lo convincono (o gli fanno un favore — scacciare i taglialegna hobgoblin), diventa una forza d'urto per un'imboscata nel Witchwood o un rinforzo a sorpresa.
 - **Ostacolo neutrale**: se aggredito o ingannato, è un pericolo CR ~10-12 di passaggio — non un nemico dell'orda, ma nemmeno un amico.
 - **Nota Tiri Kitor**: gli elfi di Starsong lo conoscono; portarlo dalla loro parte può essere una **prova di fiducia** che sblocca l'alleanza (§1/§3).
-**Notes**: se serve statblock, generarlo via npc-villain-boosting (base MM + advancement), mai a mano. Aggancio: Witchwood, Tiri Kitor (§1), imboscate lungo la strada per Rhest.
+**Notes**: se serve statblock, generarlo via npc-villain-boosting (base MM + advancement), mai a mano. Aggancio: Witchwood, Tiri Kitor (§1), imboscate lungo la strada per Lhesper.
 
 Boost log: (vuoto)
 

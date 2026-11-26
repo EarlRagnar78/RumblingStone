@@ -15,9 +15,9 @@ Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-TESTO.md
 ## 1. Contesto
 
 I PG devono ottenere l'alleanza degli elfi selvaggi **Tiri‑Kitor** di Starsong
-Hill, che pattugliano i Blackfens dall'alto delle loro **civette giganti**. La
+Hill, che pattugliano il Lhespenbog dall'alto delle loro **civette giganti**. La
 loro cavalleria volante è l'unico contrappeso ai draghi e ai rinforzi aerei della
-Mano Rossa, a Rhest e soprattutto nella Battaglia di Rethmar (contro Tyrgarun e i
+Mano Rossa, a Lhesper e soprattutto nella Battaglia di Rethmar (contro Tyrgarun e i
 Githyanki di Vaereth).
 
 **Canone (D9, `campaign/state.md` §2.4)**: la tribù conta **~500 anime** e, se
@@ -26,9 +26,9 @@ giganti** a Rethmar. Il resto difende Starsong. Questo è il **premio pieno**; i
 rami parziale/rifiuto danno meno (vedi §6).
 
 **Lutto della tribù**: **Lanikar Nightshadow**, fratello della Starsinger, cadde
-a Rhest quando la Mano Rossa vi si insediò. Il suo funerale è ancora in sospeso —
-ed è la leva emotiva dell'intera alleanza (vedi §4, Atto 2, e l'eco di Rhest in
-`Arco-Post-Hammerfist-P2-RHEST-CONSEGUENZE-ESITI.md` §8).
+a Lhesper quando la Mano Rossa vi si insediò. Il suo funerale è ancora in sospeso —
+ed è la leva emotiva dell'intera alleanza (vedi §4, Atto 2, e l'eco di Lhesper in
+`Arco-Post-Hammerfist-P2-LHESPER-CONSEGUENZE-ESITI.md` §8).
 
 ---
 
@@ -51,7 +51,7 @@ di prova** (§5), una via più dura ma sempre percorribile.
 - **3 fallimenti**: niente alleanza per via sociale → resta **solo** la quest di
   prova (§5) come ultima strada; fallirla anche = **rifiuto**.
 
-> **Bonus permanente (eco Rhest)**: se i PG hanno già **liberato/vendicato Rhest**
+> **Bonus permanente (eco Lhesper)**: se i PG hanno già **liberato/vendicato Lhesper**
 > (Regiarix ucciso, resti/medaglione di Lanikar recuperati — B1.5 §8), partono
 > con **+1 successo automatico** e **−2 a tutte le CD**: arrivano come *coloro che
 > hanno vendicato Lanikar*, non come sconosciuti.
@@ -96,9 +96,9 @@ l'atto** (e la tribù lo nota).
 > l'è preso," dice. "Ditemi: cosa avete visto, laggiù? E cosa avete fatto?"*
 
 **Come si gioca (successo #2 possibile):**
-- **Se i PG portano prove di aver vendicato/onorato Rhest** (testa di Regiarix,
+- **Se i PG portano prove di aver vendicato/onorato Lhesper** (testa di Regiarix,
   medaglione di Lanikar, resti riportati — vedi B1.5 §8): **successo automatico**
-  e la tribù passa da "prudente" a calorosa. Questa è la sinergia forte con Rhest.
+  e la tribù passa da "prudente" a calorosa. Questa è la sinergia forte con Lhesper.
 - **Altrimenti**: la prova è **Intuizione CD 20** (per capire *cosa* la Starsinger
   ha bisogno di sentire) seguita da un **gesto o parola sinceri** — non un tiro di
   Diplomazia alto, ma una scelta di roleplay che il DM giudica. Un dono, una
@@ -134,14 +134,14 @@ umani e nani". Il terzo successo li convince; un fallimento li spacca.
 Il rifiuto sociale **non** chiude Starsong. Apre una prova sul campo (scegline
 una; è **più dura** perché i PG partono senza fiducia):
 
-- **Opzione A — Vendicare Lanikar (se non già fatto a Rhest)**: dare la caccia
+- **Opzione A — Vendicare Lanikar (se non già fatto a Lhesper)**: dare la caccia
   alla creatura di palude che ne scempiò il corpo (idra avanzata o giovane drago
   verde + supporti, **CR 13**). Riportare il suo arco = riscatto pieno.
 - **Opzione B — Difesa di Starsong**: una pattuglia draconica (draghetto verde +
   hobgoblin alati, **CR 13**) attacca il campo durante il consiglio. Difendere le
   piattaforme fianco a fianco con gli elfi (mappe verticali, file MAPPE).
 - **Opzione C — Missione congiunta**: PG + squadra Tiri‑Kitor sabotano un
-  avamposto Red Hand nei Blackfens (aggancio diretto a Rhest).
+  avamposto Red Hand nel Lhespenbog (aggancio diretto a Lhesper).
 
 **Successo nella quest di prova** = alleanza **piena** comunque (i fatti valgono
 più delle parole per i Tiri‑Kitor). **Fallimento anche qui** = **rifiuto** (§6).
@@ -156,11 +156,11 @@ più delle parole per i Tiri‑Kitor). **Fallimento anche qui** = **rifiuto** (�
 
 | Ramo | Come si ottiene | Forza a Rethmar | Effetto |
 |---|---|---|---|
-| **Alleanza piena** | 3 successi, **o** quest di prova superata | **100 ranger elfici + 20 gufi giganti** (D9) | Cavalleria dei cieli: annulla la superiorità aerea Githyanki, ostacola Tyrgarun (contromossa al set-piece D11), scout su Rhest |
+| **Alleanza piena** | 3 successi, **o** quest di prova superata | **100 ranger elfici + 20 gufi giganti** (D9) | Cavalleria dei cieli: annulla la superiorità aerea Githyanki, ostacola Tyrgarun (contromossa al set-piece D11), scout su Lhesper |
 | **Alleanza parziale** | 2 successi senza riscatto | **~40 ranger + ~6 gufi** (ricognizione + un contingente leggero) | Pattuglie aeree e intel; non basta a contendere i cieli da sola |
 | **Rifiuto** | 3 fallimenti + quest di prova fallita/rifiutata | **0** | Nessun aiuto elfico; possibile ostilità passiva se la tribù è stata offesa |
 
-- **Eco Lanikar** (B1.5 §8): onorare i caduti di Rhest spinge un **parziale** verso
+- **Eco Lanikar** (B1.5 §8): onorare i caduti di Lhesper spinge un **parziale** verso
   il **pieno**; profanare i tumuli blocca sul **rifiuto** anche a challenge riuscito.
 - **Riflesso su ARMATE-SYNC**: il ramo *pieno* corrisponde allo scenario **D
   (Ottimale)** di §3; il *parziale* alza di poco i difensori dello scenario **C
@@ -178,7 +178,7 @@ tabella per assegnare **+2 di circostanza** (o −2 di sfiducia) alle prove soci
 |---|---|---|
 | **Druido / Ranger** (Hella) | Affinità con la natura, parlare la loro lingua di boschi e bestie | **Empatia Selvatica** o Conoscenze (natura) CD 18 → **+4** (non +2): Hella è quasi una di loro |
 | **Monaco** (Tordek) | Disciplina, autocontrollo, onore silenzioso | Dimostrazione marziale (Concentrazione/Intrattenere CD 20) → **+2** |
-| **Guerriero** (Thorik) | Coraggio provato **coi fatti**, proteggere i deboli | I fatti (Rhest, Hammerfist) valgono più delle parole: **+2** se raccontati con onestà, non vanteria |
+| **Guerriero** (Thorik) | Coraggio provato **coi fatti**, proteggere i deboli | I fatti (Lhesper, Hammerfist) valgono più delle parole: **+2** se raccontati con onestà, non vanteria |
 | **Warlock** (Artemis) | *Diffidano* della magia d'ombra/patto | **−2** di partenza; ma l'Anello dell'Illuminazione **Caotica** ha luce fatata: Sapienza Magica CD 22 per mostrarne l'origine non-infernale annulla il malus |
 | **Bardo / alto Carisma** | Canto, memoria, saper onorare i morti | Intrattenere CD 24 alla veglia → **+2** e il favore personale della Starsinger |
 
@@ -186,8 +186,8 @@ tabella per assegnare **+2 di circostanza** (o −2 di sfiducia) alle prove soci
 
 ## 8. Collegamenti
 
-- **Rhest** (`...P2-RHEST-CONSEGUENZE-ESITI.md` §8): la vendetta di Lanikar è il
-  ponte fra i due archi — Rhest sblocca il funerale, il funerale sblocca i cieli.
+- **Lhesper** (`...P2-LHESPER-CONSEGUENZE-ESITI.md` §8): la vendetta di Lanikar è il
+  ponte fra i due archi — Lhesper sblocca il funerale, il funerale sblocca i cieli.
 - **Battaglia di Rethmar**: la cavalleria su civette è la contromossa canonica a
   **Tyrgarun** (set-piece D11, `...RETHMAR-STRUTTURA.md` §4) e alla superiorità
   aerea Githyanki di Vaereth.
@@ -198,7 +198,7 @@ tabella per assegnare **+2 di circostanza** (o −2 di sfiducia) alle prove soci
 
 ## 9. Checklist DM (Starsong)
 
-- [ ] Applicato il **bonus eco-Rhest** (+1 successo / −2 CD) se Rhest è vendicata?
+- [ ] Applicato il **bonus eco-Lhesper** (+1 successo / −2 CD) se Lhesper è vendicata?
 - [ ] Giocati i **3 atti** come skill challenge (3 successi prima di 3 fallimenti)?
 - [ ] Il **funerale** (Atto 2) giocato per sincerità, non per tiro di Diplomazia?
 - [ ] Offerta la **quest di prova** come via al riscatto in caso di fallimento (mai vicolo cieco)?

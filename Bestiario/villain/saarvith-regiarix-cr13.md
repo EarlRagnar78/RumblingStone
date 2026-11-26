@@ -1,8 +1,8 @@
-# Saarvith & Regiarix — Boss di Rhest [POINTER — statblocco nell'arco] [RIMANDO]
-**Key stats**: → `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` (i numeri stanno li'; duplicarli qui creerebbe una seconda copia che diverge alla prima errata — ADR-0021).
+# Saarvith & Regiarix — Boss di Lhesper [POINTER — statblocco nell'arco] [RIMANDO]
+**Key stats**: → `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` (i numeri stanno li'; duplicarli qui creerebbe una seconda copia che diverge alla prima errata — ADR-0021).
 
 **Faction**: red-hand | **Role**: boss | **Environment**: swamp | **CR**: 13
-**Source**: `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` (statblocco d'arco, GS 13)
+**Source**: `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` (statblocco d'arco, GS 13)
 **Status**: POINTER — NON duplicare lo statblock qui. Usare sempre il file d'arco.
 
 ## Summary
@@ -13,4 +13,4 @@ Questa voce esiste perché `build_monster_catalog.py` e `suggest_encounter.py` s
 
 ## Notes
 
-Per le statistiche complete vedere `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`.
+Per le statistiche complete vedere `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`.

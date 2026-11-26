@@ -29,7 +29,7 @@ voci:
 **Ruolo:** PNG di passaggio. Messaggera ufficiale della **Confraternita Monastica di Dauth** + **Sovrintendente Tordek di Dauth**. Inviata al **Sacred Forest** per cercare un **famoso guerriero elfico** (vedi §3) e invitarlo al Torneo delle Otto Porte. Si imbatte in **Tordek Durinheart** (PG) per coincidenza fortuita.
 **File correlati:** `Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md`; `Bestiario/png/Lythiel/Lythiel.md`; `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md`.
 **Status**: [DA SCRIVERE — la scheda non dice se oggi è viva]
-**Location**: [DA SCRIVERE — la scheda la segue in cammino (Sacred Forest, poi Talar, le colline di Dauth, Brindol), non dice dove si trova ora]
+**Location**: [DA SCRIVERE — la scheda la segue in cammino (Sacred Forest, poi Talar, le colline di Dauth, Rethmar), non dice dove si trova ora]
 **Motivation**: portare i cinque inviti del Torneo delle Otto Porte prima dell'allineamento delle stelle (§Cosa vuole).
 **Key stats**: nessuno statblocco a parte; i numeri sono nel blocco qui sopra e in §In combattimento.
 
@@ -70,7 +70,7 @@ Mezza-elfa di 64 anni, **bassa per gli standard elfici** (1m55), **densa di musc
 2. **Maestro Brand di Talar** (Human Fighter 9) — campione di pugilato. Talar è stata saccheggiata 2 giorni fa (Day 21) — Maewen non lo sa ancora. Quando arriverà, troverà ceneri.
 3. **Suora Voryn dei Nove Sogni** (Tiefling Monk 8) — eremita nelle colline ovest di Dauth. Maewen la cercherà dopo Talar.
 4. **"Il Pugno di Pietra del Nord"** (descrizione anonima — un guerriero monaco di Hammerfist riconosciuto in cerimonia). **Questo nome corrisponde a Tordek Durinheart (PG)**. La Confraternita lo conosce di fama dalla notizia di Hammerfist arrivata 4 giorni fa. **Maewen NON sa il nome esatto** e non sa dove cercarlo — la sua mappa dice solo "Hammerfist o dove va".
-5. **Capitano Rhydan di Brindol** (Human Fighter 10) — comandante della guardia urbana. Brindol è ancora in piedi (Maewen lo riconfermerà di passaggio) ma sta per essere assediata.
+5. **Capitano Rhydan di Rethmar** (Human Fighter 10) — comandante della guardia urbana. Rethmar è ancora in piedi (Maewen lo riconfermerà di passaggio) ma sta per essere assediata.
 
 #### Perché atterra al Sacred Forest
 
@@ -134,7 +134,7 @@ Le prove preliminari testano abilità monastiche. **PG non-monaci** possono part
 - **Magister Veylan Sornvar** (arcimago di Dauth): cofirma gli inviti.
 - **Aeleth Verdebronzo** (PNG morto): destinatario primario; la sua morte è una **scoperta** di scena; offre opportunità RP (Hella o un druido può raccontare a Maewen come è morto).
 - **Tordek (PG)**: destinatario fortuito.
-- **Brindol / Capitano Rhydan**: destinatario successivo; Maewen vi passa dopo Sacred Forest.
+- **Rethmar / Capitano Rhydan**: destinatario successivo; Maewen vi passa dopo Sacred Forest.
 - **Saraah** (arcidruidessa Sacred Forest): la riceve ufficialmente; non si conoscevano prima.
 
 ## In combattimento
@@ -225,7 +225,7 @@ Benchmark: PF T1-1 riga 11: CA 18 vs 25 (7 sotto) / pf 60 vs 145 (molto sotto) /
 ### NOTE PER IL MASTER
 
 - Maewen **non è il villain di nessuno**. È una **bonne âme** che fa il suo lavoro. Trattatela con rispetto al tavolo.
-- La sua **lista di 5 nomi** è un'opportunità narrativa: il DM può usarla per **mostrare lo stato del Cannath Vale** (Aeleth morto = piromanti drow attivi nel Sacred Forest; Talar saccheggiata = Red Hand avanza; Brindol assediato = guerra imminente). Ognuno dei 5 nomi è un **datapoint sulla campagna**.
+- La sua **lista di 5 nomi** è un'opportunità narrativa: il DM può usarla per **mostrare lo stato del Cannath Vale** (Aeleth morto = piromanti drow attivi nel Sacred Forest; Talar saccheggiata = Red Hand avanza; Rethmar assediata = guerra imminente). Ognuno dei 5 nomi è un **datapoint sulla campagna**.
 - **NON forzare Tordek ad accettare l'invito.** Maewen lo offre, basta. Se Tordek rifiuta, Maewen annuisce, va via, non torna mai più. Niente drammi.
 - Se Tordek accetta ma decide di partire da solo (lasciando il party al Sacred Forest), può **viaggiare con Maewen** sulla strada per Dauth (3 giorni di compagnia, niente combattimento se non incontri casuali). Bella scena RP per esplorare la disciplina monastica condivisa.
 

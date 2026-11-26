@@ -581,13 +581,13 @@ monsters:
     role: flier
     environment: underdark
     source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Ozyrrandion drago Verde cr8.pcg"
-  - id: rhest-boss-saarvith-regiarix-statblocchi-3-5-c424d1
-    name: "Rhest – Boss Saarvith & Regiarix – Statblocchi 3.5"
+  - id: lhesper-boss-saarvith-regiarix-statblocchi-3-5-589d78
+    name: "Lhesper – Boss Saarvith & Regiarix – Statblocchi 3.5"
     cr: 9.0
     faction: dragon
     role: boss
     environment: forest
-    source_file: "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md"
+    source_file: "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md"
   - id: capitano-lunapiena-08f701
     name: "Capitano Lunapiena"
     cr: 10.0
@@ -603,20 +603,20 @@ monsters:
     role: flier
     environment: aerial
     source_file: "07_il Portale Della Forgia Eterna/CORREZIONE-Boss-Fauci.md"
-  - id: rhest-fase-2-palude-greenspawn-razorfiend-cr-12-13-8db45a
-    name: "Rhest Fase 2 – Palude & Greenspawn Razorfiend (CR 12–13)"
+  - id: lhesper-fase-2-palude-greenspawn-razorfiend-cr-12-13-4a4a3b
+    name: "Lhesper Fase 2 – Palude & Greenspawn Razorfiend (CR 12–13)"
     cr: 12.0
     faction: dragon
     role: generalist
     environment: swamp
-    source_file: "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-FASE2-PALUDE-RAZORFIEND.md"
-  - id: rhest-nido-dei-greenspawn-razorfiend-cr-12-13-db3fe0
-    name: "Rhest – Nido dei Greenspawn Razorfiend (CR 12–13)"
+    source_file: "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-LHESPER-FASE2-PALUDE-RAZORFIEND.md"
+  - id: lhesper-nido-dei-greenspawn-razorfiend-cr-12-13-ede5bb
+    name: "Lhesper – Nido dei Greenspawn Razorfiend (CR 12–13)"
     cr: 12.0
     faction: dragon
     role: generalist
     environment: urban
-    source_file: "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-RAZORFIEND-NIDO.md"
+    source_file: "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-RAZORFIEND-NIDO.md"
   - id: arbitrax-drago-rosso-1197f4
     name: "Arbitrax Drago Rosso"
     cr: 13.0
@@ -624,13 +624,13 @@ monsters:
     role: flier
     environment: aerial
     source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Arbitrax Drago Rosso.htm"
-  - id: rhest-fase-4-boss-saarvith-regiarix-cr-13-05f3cd
-    name: "Rhest Fase 4 – Boss Saarvith & Regiarix (CR 13)"
+  - id: lhesper-fase-4-boss-saarvith-regiarix-cr-13-385414
+    name: "Lhesper Fase 4 – Boss Saarvith & Regiarix (CR 13)"
     cr: 13.0
     faction: dragon
     role: flier
     environment: aerial
-    source_file: "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md"
+    source_file: "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-LHESPER-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md"
   - id: orion-pelleorsa-f9b811
     name: "Orion Pelleorsa"
     cr: 14.0
@@ -2072,8 +2072,8 @@ monsters:
     role: elite-brute
     environment: any
     source_file: "Bestiario/mostri/razorfiend-blackspawn-alfa-cr13.md"
-  - id: saarvith-regiarix-boss-di-rhest-8b67b0
-    name: "Saarvith & Regiarix — Boss di Rhest"
+  - id: saarvith-regiarix-boss-di-lhesper-8b67b0
+    name: "Saarvith & Regiarix — Boss di Lhesper"
     cr: 13.0
     faction: red-hand
     role: boss

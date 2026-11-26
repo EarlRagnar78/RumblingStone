@@ -7,7 +7,7 @@ Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md
 > **TL;DR (DM cheat-sheet):**
 > - **Day 21** Cerimonia 100 Asce (Hammerfist) → Lythiel consegna **Ghianda del Cerchio** a Hella (mecc.: vedi `Bestiario/png/Lythiel/Lythiel.md`).
 > - **Day 22 sera (opz.)** Tempestas conferma Cerchio in fumo via cenere (opz. Shadow Walk shortcut: vedi `Bestiario/png/Tempestas/Tempestas.md` §SHADOW WALK).
-> - **Day 25** Sacred Forest → Saraah's RITO DI DIVINAZIONE: 3 visioni (Rhest / Mother of Fungi sotto la Quercia / Talar in fiamme).
+> - **Day 25** Sacred Forest → Saraah's RITO DI DIVINAZIONE: 3 visioni (Lhesper / Mother of Fungi sotto la Quercia / Talar in fiamme).
 > - **Optional** Day 25 — descent EL 11 sotto la Quercia per purificare MoF spore (raddoppia bonus Acorn).
 > - **3 vie principali per Hella**: Shadow Walk veloce / 3-day march / rinuncia. Vedi §2.4.
 ## *Tono: Tolkien (Mirkwood). Due voci dalla foresta che ti trovano dove sei.*
@@ -142,12 +142,12 @@ Lythiel resta a Hammerfist 24 ore. Dorme con Inathiel sui bastioni. La mattina d
 
 > **Risultato del rito** (Sapienza Religiosa CD 18 per interpretare le visioni — Saraah lo fa automaticamente, Hella ottiene comprensione parziale):
 
-#### Visione 1 — Una base del Red Hand a Rhest
+#### Visione 1 — Una base del Red Hand a Lhesper
 - **Vivido:** un'antica città lacustre semisommersa con torri rotte. Sopra le torri **stendardi rossi del Red Hand**. Una grande ombra di **drago nero** vola nel cielo basso. **Hobgoblin guerrieri** patrugliano in gruppi da 8.
-- **Saraah dice:** *"Rhest. Non avevo capito che fosse occupata. I miei esploratori l'hanno solo sorvolata di recente — hanno detto 'razorfiend nelle paludi, niente di anomalo'. Ma il rito mostra di più. C'è una **base operativa** del Red Hand. Hanno un comandante che cavalca un drago nero adulto."*
-- **Sapienza Locale CD 16 (Hella o un PG presente):** Rhest è un'antica città elfica caduta secoli fa, ora rovine. **Lake Rhest** è famosa nel Cannath Vale.
-- **NOTA DM:** questa è la **base canonica di Wyrmlord Saarvith + Regiarix** (vedi `Arco-Post-Hammerfist-P2-RHEST-*.md` esistenti). La divinazione conferma quello che la canonica esistente già dice. Il **valore narrativo** è dare al party un hook **proattivo** (non aspettano di arrivarci, sanno).
-- **Cosa Saraah chiede:** *"Se il vostro cammino vi porta vicino a Rhest, prendetevi un giorno per disturbarli. Anche solo un'incursione. Indebolirli ora vale dieci volte più di affrontarli al fianco di Azarr Kul."*
+- **Saraah dice:** *"Lhesper. Non avevo capito che fosse occupata. I miei esploratori l'hanno solo sorvolata di recente — hanno detto 'razorfiend nelle paludi, niente di anomalo'. Ma il rito mostra di più. C'è una **base operativa** del Red Hand. Hanno un comandante che cavalca un drago nero adulto."*
+- **Sapienza Locale CD 16 (Hella o un PG presente):** Lhesper è un'antica città elfica caduta secoli fa: le sue rovine annegano nel Lhespenbog, a nord del **Lake Lhespen**.
+- **NOTA DM:** questa è la **base canonica di Wyrmlord Saarvith + Regiarix** (vedi `Arco-Post-Hammerfist-P2-LHESPER-*.md` esistenti). La divinazione conferma quello che la canonica esistente già dice. Il **valore narrativo** è dare al party un hook **proattivo** (non aspettano di arrivarci, sanno).
+- **Cosa Saraah chiede:** *"Se il vostro cammino vi porta vicino a Lhesper, prendetevi un giorno per disturbarli. Anche solo un'incursione. Indebolirli ora vale dieci volte più di affrontarli al fianco di Azarr Kul."*
 
 #### Visione 2 — L'ombra scura sul Cerchio
 - **Vivido:** una **ombra senza forma** si arrampica dal sottosuolo. Ha **molti piccoli occhi** che brillano come funghi luminescenti. Si avvolge sotto la Quercia Vecchia, intorno alle radici, **soffocandole**.
@@ -173,11 +173,11 @@ Lythiel resta a Hammerfist 24 ore. Dorme con Inathiel sui bastioni. La mattina d
 
 | Decisione | Conseguenza |
 |---|---|
-| Hella accetta il rito di Saraah | Le 3 visioni (Rhest, Mother of Fungi, Talar) sono date al party |
+| Hella accetta il rito di Saraah | Le 3 visioni (Lhesper, Mother of Fungi, Talar) sono date al party |
 | Hella + party scendono sotto la Quercia per Mother of Fungi | EL 11 encounter; purificazione → Sacred Forest ritual +2 bonus aggiuntivo |
 | Party ignora Mother of Fungi | Spora rimane; Hella's ritual ha solo Acorn bonus standard |
-| Party prende sul serio Rhest | Possibile diversione tra Sacred Forest e Dauth/Tower (3 giorni extra) → costa tempo, ma scaglia avanti l'arco P2 (Rhest sub-arc) |
-| Party ignora Rhest | Saarvith cavalca al Rethmar Phase 1 con dragonrider corps integro (Saarvith Clock 3/8 si riempie senza opposizione) → +1 CR effettivo ondata draconica |
+| Party prende sul serio Lhesper | Possibile diversione tra Sacred Forest e Dauth/Tower (3 giorni extra) → costa tempo, ma scaglia avanti l'arco P2 (Lhesper sub-arc) |
+| Party ignora Lhesper | Saarvith cavalca al Rethmar Phase 1 con dragonrider corps integro (Saarvith Clock 3/8 si riempie senza opposizione) → +1 CR effettivo ondata draconica |
 
 ---
 

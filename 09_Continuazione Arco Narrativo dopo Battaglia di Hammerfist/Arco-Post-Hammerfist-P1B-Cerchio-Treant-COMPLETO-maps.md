@@ -397,7 +397,7 @@ NEMICI ROUND 4 (Animated Trees):
 - **Summon Treant Allies (1/day, se Treant purificato):**
   - Alla fine combattimento, se Treant salvato
   - Collana può summon 1d4+1 Treant minori (Small/Medium) che si uniscono a Hella
-  - Disponibili per battaglia finale Brindol!
+  - Disponibili per battaglia finale Rethmar!
 
 **Ability durante Rituale (vedi sotto):**
 - Se Hella usa Collana durante FASE 3 rituale: ottiene +5 bonus tutti ritual checks
@@ -429,12 +429,12 @@ NEMICI ROUND 4 (Animated Trees):
 **Se Tutti Successi:**
 - Corruzione purificata! Treant ritorna sano (corteccia argento, occhi verde smeraldo)
 - **Nome Rivelato:** "Io sono... Radicesaggio... guardiano questo cerchio da 800 anni..."
-- **Alleato Permanente:** Radicesaggio + 20 Treant minori si uniscono difesa Brindol (battaglia finale!)
+- **Alleato Permanente:** Radicesaggio + 20 Treant minori si uniscono difesa Rethmar (battaglia finale!)
 - **Benedizione:** Hella ottiene **Blessing of the Ancient Guardian**
   - +4 bonus permanente tutti saves vs corruzione/taint
   - 1/day può cast *Heal* come spell-like ability
 - **Intel Prezioso:** Radicesaggio conosce posizioni 3 campi drow (hex map dettagliata)
-  - Rivela: "Drow... servono Wyrmlord Saarvith... drago nero comanda... Blackfens è base..."
+  - Rivela: "Drow... servono Wyrmlord Saarvith... drago nero comanda... Lhespenbog è base..."
 
 ### OPZIONE B: Purificazione Parziale
 

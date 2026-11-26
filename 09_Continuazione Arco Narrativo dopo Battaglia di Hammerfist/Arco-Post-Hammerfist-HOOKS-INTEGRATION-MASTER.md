@@ -37,7 +37,7 @@ Day 24  SACRED FOREST arrival (for those who go).
         └─ Optional: drow scout encounter for Artemis if heading to Tower
 
 Day 25  Saraah's RITO DI DIVINAZIONE.
-        ├─ Hella   → 3 visions: Rhest base / Mother of Fungi / Talar in fiamme
+        ├─ Hella   → 3 visions: Lhesper base / Mother of Fungi / Talar in fiamme
         ├─ Hella   → optional EL-11 descent under Quercia Vecchia
         └─ Artemis → optional 4th confirmation of Tower direction
 
@@ -97,7 +97,7 @@ Giorno 24  ARRIVO AL SACRED FOREST (per chi ci va).
              come "Pugno di Pietra del Nord" sulla sua lista. Offre
              invito al Torneo di Dauth.
 Giorno 25  RITO DRUIDICO DI HELLA + DIVINAZIONE DI SARAAH.
-           - Saraah rivela: base Red Hand a Rhest + ombra scura
+           - Saraah rivela: base Red Hand a Lhesper + ombra scura
              sul Cerchio + visione Talar in fiamme.
            - Opzionale: encounter Mother of Fungi sotto la Quercia.
 Giorno 23-28 Possibili incontri sulla strada:
@@ -308,7 +308,7 @@ Sintesi rapida per i 4 PG:
 | Lythiel + 2 ranger Phase 1 | +1 squadrone aerea (CR 8 each) |
 | Mother of Fungi spore distrutta sotto Quercia | Sonjak Phase 0 –1 CR effettivo |
 | Mother of Fungi ignorata | Sonjak Phase 0 +1 CR effettivo |
-| Saarvith disturbato a Rhest | Saarvith Phase 1 –1 CR (drago meno preparato) |
+| Saarvith disturbato a Lhesper | Saarvith Phase 1 –1 CR (drago meno preparato) |
 | Saarvith ignorato | Saarvith Phase 1 al CR pieno |
 | Lorana mobilita Riserva volontari | +30 a +150 difensori (depending on relationship) |
 | Lorana ignorata | +0 |

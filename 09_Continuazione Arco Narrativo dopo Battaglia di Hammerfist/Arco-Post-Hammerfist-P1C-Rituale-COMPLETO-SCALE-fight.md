@@ -79,8 +79,8 @@ Condizione di fallimento immediato:
 ## 6. Esito del rituale
 
 - Successo pieno (tutte e tre le fasi completate, Hella viva, cerchio intatto):  
-  - Hella ottiene piena forma di Avatar; Treant alleati disponibili durante l’assedio di Brindol. [file:21]
+  - Hella ottiene piena forma di Avatar; Treant alleati disponibili durante l’assedio di Rethmar. [file:21]
 - Successo parziale (Hella viva ma cerchio danneggiato / fallimento di una fase):  
-  - Hella ottiene solo parte dei poteri; bonus minori a Brindol, ma niente Treant completi. [file:21]
+  - Hella ottiene solo parte dei poteri; bonus minori a Rethmar, ma niente Treant completi. [file:21]
 - Fallimento (Hella muore o il rituale viene interrotto definitivamente):  
   - Nessun bonus da Hella; possibile maledizione temporanea sulla foresta (hook per side quest). [file:21]

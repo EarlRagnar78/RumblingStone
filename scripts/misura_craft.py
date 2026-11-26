@@ -834,7 +834,7 @@ BERSAGLI = {
     "DEF-5 Ritorno Hammerfist": [f"{A7}/ARC07-DEF-5-RITORNO-HAMMERFIST.md"],
     "ARC-09 Torre di Zalkatar": [f"{A9}/Arco-Post-Hammerfist-P2A-Torre-*.md"],
     "ARC-09 Torneo di Dauth": [f"{A9}/Arco-Post-Hammerfist-P2B-Torneo-*.md"],
-    "ARC-09 Rhest": [f"{A9}/Arco-Post-Hammerfist-P2-RHEST-*.md"],
+    "ARC-09 Lhesper": [f"{A9}/Arco-Post-Hammerfist-P2-LHESPER-*.md"],
     "ARC-09 Battaglia Finale": [f"{A9}/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-*.md"],
     "ARC-08 Hammerfist": [f"{A8}/ARC08-*.md", f"{A8}/Cerimonia-delle-100-Asce.md"],
     # Gli handout si misurano come i master (ADR-0094): li legge il giocatore.

@@ -168,7 +168,7 @@ fino al Campo è un'ora a piedi nella folla.
 | **La Torre Invisibile** | da nessuna parte: chi dorme nella Torre lo fa sapendo che Zalkatar è sveglio | — |
 | **I campi drow e i recinti** | da nessuna parte, da ospiti | — |
 | **Starsong Hill** | sui rami, se l'alleanza dei Tiri-Kitor si fa; altrimenti fuori dal bosco | niente |
-| **Rhest e le Blackfens** | su un isolotto asciutto, con la palude intorno | niente, e la malattia della palude è nel file di Rhest |
+| **Lhesper e il Lhespenbog** | su un isolotto asciutto, con la palude intorno | niente, e la malattia della palude è nel file di Lhesper |
 
 ---
 

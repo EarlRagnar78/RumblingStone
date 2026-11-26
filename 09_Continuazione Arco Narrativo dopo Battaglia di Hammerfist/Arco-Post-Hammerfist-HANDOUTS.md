@@ -92,7 +92,7 @@
 > - la **rotta di marcia** dell'Orda, waypoint per waypoint, fino a **Rethmar**;
 > - i villaggi già caduti (Vraath, Drellin, **Terrelton**) segnati con una croce
 >   di cenere, e quelli minacciati (Talar, Witchcross) con un cerchio;
-> - **Rhest**, a nord, marcata con l'occhio di un drago;
+> - **Lhesper**, a nord, marcata con l'occhio di un drago;
 > - le mura di Rethmar, con **tre settori** annotati a margine in grafia minuta:
 >   *"qui Halveth ha tagliato i fondi"*, *"qui Lorana tiene i profughi"*, *"qui
 >   cederà per primo se nessuno arriva"*;
@@ -178,7 +178,7 @@
 **Carta I — L'acqua nera**
 > *Una città annegata sotto un cielo di canne. Su una guglia spezzata, un arco.
 > Sotto l'acqua, lungo come un molo, qualcosa che respira acido e aspetta.*
-> — *(È **Rhest**: la base settentrionale della Mano Rossa. Saarvith e il drago.)*
+> — *(È **Lhesper**: la base settentrionale della Mano Rossa. Saarvith e il drago.)*
 
 **Carta II — La bocca sotto la quercia**
 > *Sotto la Quercia Vecchia, tra le radici, un'ombra senza forma con molti piccoli
@@ -193,7 +193,7 @@
 > — *(È **Talar**, già saccheggiata: il conto alla rovescia dell'Orda è reale.)*
 
 > **Nota DM**: le carte sono **premonizioni**, non certezze. Danno ai giocatori
-> agganci proattivi (sanno di Rhest e della minaccia fungina **prima** di
+> agganci proattivi (sanno di Lhesper e della minaccia fungina **prima** di
 > arrivarci). Saraah non spiega: *"Non c'è bisogno che spieghi. Tu sai già le cose."*
 
 ---

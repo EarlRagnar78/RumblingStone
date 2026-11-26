@@ -9,8 +9,8 @@ taglia: Media
 spazio: 1,5 m
 portata: 1,5 m
 ca: 20
-ca-dettaglio: (+4 Des, +5 giaco di maglia mithral +1, +1 anello), contatto 15, colto alla sprovvista 16
-pf: 40
+ca-dettaglio: (+4 Des, +5 giaco di maglia mithral +1, +1 anello), contatto 15, colto alla sprovvista 20
+pf: 34
 pf-dado: 9d6
 ts: Temp +4, Rifl +14, Vol +4
 attributi: For 12 Des 19 Cos 11 Int 16 Sag 10 Car 10
@@ -28,7 +28,7 @@ voci:
 
 > `attributi` scritti a mano, non generati: serie d'élite della DMG 3.5 p. 110 più la razza drow (SRD), card del DM del 2026-11-20 (vedi il blocco storico in fondo).
 
-Medium humanoid (elf), NE. **DV 9d6**. **hp 40**. **CA 20** (+4 Des, +5 giaco di maglia mithral +1, +1 anello), contatto 15, colto alla sprovvista 16. Iniziativa +8. Vel 9 m.
+Medium humanoid (elf), NE. **DV 9d6**. **hp 34**. **CA 20** (+4 Des, +5 giaco di maglia mithral +1, +1 anello), contatto 15, colto alla sprovvista 20 (schivare prodigioso). Iniziativa +8. Vel 9 m.
 **TS** Temp +4, Rifl +14, Vol +4 (mantello della resistenza +2 incluso; +2 razziale vs incantesimi, +2 vs ammaliamenti, **+2 vs veleni**). **BAB/Lotta** +6/+7. **RI 20**.
 **Mischia** spada corta +1 +11/+6 (1d6+2/19-20). **Distanza** balestra a mano perfetta +11 (1d4 + veleno); entro 9 m +12 (1d4+1 + veleno) con Tiro Ravvicinato.
 **Attacco furtivo** +5d6. **Attacco Mortale** (dopo 3 round di studio: Tempra **CD 17** o **morte**, oppure paralisi 1d6+4 round).
@@ -38,14 +38,14 @@ Medium humanoid (elf), NE. **DV 9d6**. **hp 40**. **CA 20** (+4 Des, +5 giaco di
 **Talenti** Iniziativa Migliorata, Tiro Ravvicinato, Tiro Preciso, Arma Accurata (spada corta).
 **Veleni** veleno drow (Tempra CD 13, incosciente), 3 dosi di *sangue nero di Lolth* (**Tempra CD 17, 1d6 Cos / 1d6 Cos** — veleno di ragno gigante concentrato).
 
-**Incantesimi da Assassino (CL 4; CD 10 + livello + 3)**
+**Incantesimi da Assassino (CL 4; CD 10 + livello + 3; 3/1 della classe più i bonus di Int 16)**
 | Liv | Al giorno | Tipici (SRD) |
 |---|---|---|
-| 1 | 3 | *camuffare se stesso*, *colpo accurato*, *nube di nebbia* |
-| 2 | 1 | **invisibilità**, *passo senza tracce*, *alterare se stesso* |
+| 1 | 4 | *camuffare se stesso*, *colpo accurato*, *nube di nebbia* |
+| 2 | 2 | **invisibilità**, *passo senza tracce*, *alterare se stesso* |
 
 **Tattiche**: **non combatte**. Studia (3 round, di solito da un tetto o da un condotto), colpisce una volta con Attacco Mortale + attacco furtivo, e sparisce. Se il primo colpo non uccide, ripiega sotto *invisibilità* e riprova la notte dopo.
-**Bersaglio prioritario contro *Il Rumbling Stone***: **Hella** (TS Tempra buono ma non blindato, e la sua morte ha già un precedente che il party non ha superato) oppure un **PNG alleato** — Brenna Sorvane, Lythiel, Norro Wiston. Uccidere un alleato costa al party molto più di 40 pf.
+**Bersaglio prioritario contro *Il Rumbling Stone***: **Hella** (TS Tempra buono ma non blindato, e la sua morte ha già un precedente che il party non ha superato) oppure un **PNG alleato** — Brenna Sorvane, Lythiel, Norro Wiston. Uccidere un alleato costa al party molto più di 34 pf.
 
 > ⚠️ **Nota di equità**: l'Attacco Mortale è un salva-o-muori. Usarlo **su un PG** solo se il DM è disposto ad accettare l'esito, e solo dopo che il party ha avuto **almeno un indizio** dell'infiltrazione (una guardia trovata morta, una prova di Percezione, una traccia di *fuoco fatuo*). Contro PNG è invece lo strumento perfetto per far sentire il pericolo senza tirare i dadi sulla vita dei giocatori.
 
@@ -63,4 +63,5 @@ Notes: agente della compagnia di **Sonjak**, impiegata nella **Notte dei Drow** 
 
 <!-- storico -->
 - era: fino al 2026-11-20 For 12 Des 20 Cos 10 Int 18 Sag 12 Car 14 (acquisto a punti 40 tolta la razza), CA 21 (contatto 16), iniziativa +9, Rifl +15, Vol +5, spada corta +12/+7, balestra +12 (+13 entro 9 m), Attacco Mortale CD 18, incantesimi CD 10 + livello + 4. Rifatta con la serie d'élite della DMG 3.5 p. 110 più la razza drow (SRD), card del DM del 2026-11-20, tenendo For 12 (D3 del 2026-09-23): Des 15 (+2 al 4° e all'8°), Int 14, Cos 13, For 12, Sag 10, Car 8. Le note della scheda che citano Des 20, +12, +13, CD 18 e Riflessi +15 descrivono il conto di allora. Incantesimi al giorno invariati: Int 16 dà ancora il bonus al 1° e al 2°.
+- era: fino al 2026-11-26 pf 40, colto alla sprovvista 16, incantesimi 3/1. 9d6 con Cos 11 danno al massimo 34 pf (primo dado massimo, poi la media); schivare prodigioso (Ladro 4) tiene la Des anche colta alla sprovvista: 20; l'Assassino di 4° ha 3/1 al giorno più un incantesimo bonus di 1° e uno di 2° per Int 16 (SRD): 4/2. Card del dm del 2026-11-26 «Correggo, pf 34».
 <!-- /storico -->

@@ -1,0 +1,271 @@
+{
+ "campione_ref": "",
+ "dopo": "",
+ "seme": 1119,
+ "coppie": [
+  {
+   "n": 1,
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "titolo": "SCENA 1 — Apertura, fuori gioco",
+   "nuova": "A",
+   "somiglianza": 0.959,
+   "stato": "valida",
+   "misura": "vecchia",
+   "perche": "1 dettagli sensoriali in meno",
+   "controllo": true
+  },
+  {
+   "n": 2,
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "titolo": "Fase 2 — Il torrione (MAPPA 1A-2)",
+   "nuova": "B",
+   "somiglianza": 0.992,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 3,
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "titolo": "Fase 3 — La vista sul campo (MAPPA 1A-3)",
+   "nuova": "B",
+   "somiglianza": 0.98,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 4,
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "titolo": "Tattiche dell'avanguardia, round per round",
+   "nuova": "B",
+   "somiglianza": 0.969,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 5,
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "titolo": "Tattiche dell'avanguardia, round per round",
+   "nuova": "A",
+   "somiglianza": 0.982,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 6,
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+   "titolo": "SCENA 2 — 2A · Giorno 1, l'assalto alle mura",
+   "nuova": "A",
+   "somiglianza": 0.957,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 7,
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+   "titolo": "Il sorvolo (élite 2B)",
+   "nuova": "A",
+   "somiglianza": 0.941,
+   "stato": "valida",
+   "misura": "nuova",
+   "perche": "1 dettagli sensoriali in più",
+   "controllo": true
+  },
+  {
+   "n": 8,
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+   "titolo": "SCENA 6 — 2E, 2B · Giorno 3, il corno e il soffio",
+   "nuova": "A",
+   "somiglianza": 0.979,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 9,
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+   "titolo": "Il soffio della disperazione (2B), sulla MAPPA 2B-CORRETTA",
+   "nuova": "B",
+   "somiglianza": 0.969,
+   "stato": "valida",
+   "misura": "vecchia",
+   "perche": "1 dettagli sensoriali in meno",
+   "controllo": true
+  },
+  {
+   "n": 10,
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+   "titolo": "SCENA 9 — La porta di mithral",
+   "nuova": "B",
+   "somiglianza": 0.97,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 11,
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "titolo": "**👹 GORTHAK IL TRIFRONTE (Ettin a Tre Teste Corazzato, GS 12)**",
+   "nuova": "B",
+   "somiglianza": 0.984,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 12,
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "titolo": "**INCONTRO 4C: \"BARUK KHAZAD! KHAZAD AI-MENU!\"**",
+   "nuova": "A",
+   "somiglianza": 0.967,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 13,
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "titolo": "**IL CAMPO DOPO LA BATTAGLIA**",
+   "nuova": "A",
+   "somiglianza": 0.955,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 14,
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "titolo": "**IL CAMPO DOPO LA BATTAGLIA**",
+   "nuova": "B",
+   "somiglianza": 0.987,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 15,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md",
+   "titolo": "2.1 Read-aloud (DM, solo per Artemis)",
+   "nuova": "B",
+   "somiglianza": 0.96,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 16,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+   "titolo": "5 · IL DRAGO — \"La Runa che Ascolta\"",
+   "nuova": "A",
+   "somiglianza": 0.977,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 17,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+   "titolo": "6 · LA CIVETTA — \"Il Registro nel Tempio\"",
+   "nuova": "A",
+   "somiglianza": 0.97,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 18,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+   "titolo": "7 · L'UNICORNO — \"La Piazza da Conquistare\"",
+   "nuova": "A",
+   "somiglianza": 0.971,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 19,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+   "titolo": "8 · L'ONDA — \"La Piena di Mezzanotte\"",
+   "nuova": "A",
+   "somiglianza": 0.946,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 20,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-FASE1-ARRIVO-BLACKFENS.md",
+   "titolo": "0. Lettura d'apertura (read-aloud)",
+   "nuova": "A",
+   "somiglianza": 0.96,
+   "stato": "valida",
+   "misura": "nuova",
+   "perche": "1 dettagli sensoriali in più",
+   "controllo": true
+  },
+  {
+   "n": 21,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-FASE1-ARRIVO-BLACKFENS.md",
+   "titolo": "3.2 Coccodrillo evoluto in agguato (EL 11)",
+   "nuova": "B",
+   "somiglianza": 0.985,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 22,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "titolo": "§2 · Dauth · il Mercato Basso, la Confraternita e la Rete Nera *(P2B)*",
+   "nuova": "A",
+   "somiglianza": 0.981,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 23,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "titolo": "§4 · I campi drow · il banco di Sonjak *(P3, Sabotaggio dei Campi Drow)*",
+   "nuova": "B",
+   "somiglianza": 0.987,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  },
+  {
+   "n": 24,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "titolo": "Il Collezionista *(per assurdo)*",
+   "nuova": "A",
+   "somiglianza": 0.977,
+   "stato": "valida",
+   "misura": "indecisa",
+   "perche": "stessi dettagli sensoriali",
+   "controllo": false
+  }
+ ]
+}

@@ -61,19 +61,19 @@ Regola opzionale di PF1e (Advanced Player's Guide, «Hero Points»): https://www
 
 | eroi | politica | il comandante fugge | diff. | a 0 pf o meno | diff. | al primo round | diff. | un eroe a terra | diff. |
 |---|---|---|---|---|---|---|---|---|---|
-| Borin + Yrsa | oggi, senza punto | 76% |  | 16% |  | 2% |  | 39% |  |
-| Borin + Yrsa | +8 al primo tiro per colpire sul comandante | 79% | +3 | 17% | +1 | 2% | +0 | 32% | -7 |
-| Borin + Yrsa | un'azione standard in piu' | 80% | +4 | 18% | +2 | 16% | +14 | 18% | -21 |
-| Borin + Yrsa | un'azione di movimento in piu' | 77% | +1 | 20% | +4 | 18% | +16 | 19% | -20 |
+| Borin + Yrsa | oggi, senza punto | 73% |  | 14% |  | 2% |  | 49% |  |
+| Borin + Yrsa | +8 al primo tiro per colpire sul comandante | 75% | +2 | 17% | +3 | 2% | +0 | 42% | -7 |
+| Borin + Yrsa | un'azione standard in piu' | 79% | +6 | 17% | +3 | 16% | +14 | 26% | -23 |
+| Borin + Yrsa | un'azione di movimento in piu' | 78% | +5 | 17% | +3 | 18% | +16 | 24% | -25 |
 
 ## Grimjaw e quattro orog, variante: la rampa chiusa, se ne abbatte uno
 
 | eroi | politica | il comandante fugge | diff. | a 0 pf o meno | diff. | al primo round | diff. | un eroe a terra | diff. |
 |---|---|---|---|---|---|---|---|---|---|
-| Borin + Yrsa | oggi, senza punto | 67% |  | 8% |  | 0% |  | 85% |  |
-| Borin + Yrsa | +8 al primo tiro per colpire sul comandante | 70% | +3 | 9% | +1 | 0% | +0 | 82% | -3 |
-| Borin + Yrsa | un'azione standard in piu' | 73% | +6 | 11% | +3 | 0% | +0 | 69% | -16 |
-| Borin + Yrsa | un'azione di movimento in piu' | 74% | +7 | 11% | +3 | 0% | +0 | 66% | -19 |
+| Borin + Yrsa | oggi, senza punto | 62% |  | 9% |  | 0% |  | 82% |  |
+| Borin + Yrsa | +8 al primo tiro per colpire sul comandante | 67% | +5 | 9% | +0 | 0% | +0 | 77% | -5 |
+| Borin + Yrsa | un'azione standard in piu' | 70% | +8 | 10% | +1 | 0% | +0 | 70% | -12 |
+| Borin + Yrsa | un'azione di movimento in piu' | 72% | +10 | 10% | +1 | 0% | +0 | 68% | -14 |
 
 ## Come leggere queste cifre
 

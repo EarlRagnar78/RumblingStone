@@ -1,7 +1,8 @@
-"""Prove del simulatore dei duelli di ARC-08: i tre esiti del comandante e
+"""Prove del simulatore dei duelli di ARC-08: i tre esiti del comandante,
 l'1 e il 20 naturali sui tiri salvezza (SRD 3.5, «Automatic Failures and
-Successes»)."""
+Successes»), e l'orog della guardia nera letto dalla sua scheda del Bestiario."""
 import importlib.util
+import re
 from pathlib import Path
 
 _spec = importlib.util.spec_from_file_location(
@@ -47,3 +48,59 @@ def test_tiro_salvezza_venti_naturale_riesce_sempre(monkeypatch):
     monkeypatch.setattr(sim.R, "randint", lambda a, b: 20)
     assert sim.riflessi(40, ts=0, cd=40) == 20
     assert sim.riflessi(40, ts=0, cd=40, eludere=True) == 0
+
+
+# --- l'orog del simulatore e' quello del Bestiario --------------------
+_RADICE = Path(__file__).resolve().parents[3]
+_OROG = _RADICE / "Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md"
+
+
+def _scheda_orog():
+    """I numeri dell'orog dal recinto ```statblocco della sua scheda."""
+    blocco = re.search(r"```statblocco\n(.*?)```", _OROG.read_text(encoding="utf-8"), re.S).group(1)
+
+    def campo(regex):
+        return re.search(regex, blocco, re.M).groups()
+
+    (ca,) = campo(r"^ca: (\d+)")
+    (pf,) = campo(r"^pf: (\d+)")
+    (dv,) = campo(r"^pf-dado: (\d+)d")
+    (rifl,) = campo(r"^ts: .*Rifl ([+-]\d+)")
+    (iniz,) = campo(r"^iniziativa: ([+-]\d+)")
+    a1, a2, dmg = campo(r"ascia bipenne \+1 \+(\d+)/\+(\d+) \(1d12\+(\d+)/x3\)")
+    return dict(ca=int(ca), pf=int(pf), dv=int(dv), rifl=int(rifl), iniz=int(iniz),
+                att=(int(a1), int(a2)), dmg=int(dmg))
+
+
+def _orog(avanzati):
+    return [n for n in sim.grimjaw(avanzati)() if n.nome.startswith("orog")]
+
+
+def _attesi(s, k):
+    # Attacco Poderoso -3 (+6 danni a due mani), Tattico Superiore +2 a colpire;
+    # dal round 2 anche la Furia Comandante, +2 a colpire e ai danni
+    primo = [(s["att"][0] - 3 + 2 + k, (1, 12), s["dmg"] + 6 + k, 20, 3, ""),
+             (s["att"][1] - 3 + 2 + k, (1, 12), s["dmg"] + 6 + k, 20, 3, "")]
+    poi = [(b + 2, dd, f + 2, mn, ml, t) for (b, dd, f, mn, ml, t) in primo]
+    return primo, poi
+
+
+def test_orog_del_simulatore_e_quello_del_bestiario():
+    s = _scheda_orog()
+    primo, poi = _attesi(s, 0)
+    orog = _orog(False)
+    assert len(orog) == 4
+    for o in orog:
+        assert (o.pfmax, o.ca, o.rifl, o.iniz) == (s["pf"], s["ca"], s["rifl"], s["iniz"])
+        assert o.primo == primo
+        assert o.attacchi == poi
+
+
+def test_orog_avanzato_e_la_scheda_con_l_archetipo_pf1e():
+    # Avanzato PF1e, regole rapide: +2 a tutti i tiri e ai danni, +4 alla CA, +2 pf per DV
+    s = _scheda_orog()
+    primo, poi = _attesi(s, 2)
+    for o in _orog(True):
+        assert (o.pfmax, o.ca, o.rifl, o.iniz) == (s["pf"] + 2 * s["dv"], s["ca"] + 4, s["rifl"] + 2, s["iniz"] + 2)
+        assert o.primo == primo
+        assert o.attacchi == poi

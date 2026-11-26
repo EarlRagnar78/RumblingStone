@@ -511,10 +511,10 @@ di oggi sta già sotto il tetto (EL 12,6 contro 16).
 
 Grimjaw, il soffio e i bugbear **non si alzano**: sono già ad APL+2 o +3.
 La cima della rampa di Grimjaw è chiusa `[CANONE — DM 2026-11-25, card
-«rampa di Grimjaw»]`: contro Borin e Yrsa insieme Grimjaw fugge 67 volte su
-cento, va a 0 pf o meno 8, e uno dei due va a terra 85 (Scena 4). L'EL non
+«rampa di Grimjaw»]`: contro Borin e Yrsa insieme Grimjaw fugge 62 volte su
+cento, va a 0 pf o meno 9, e uno dei due va a terra 82 (Scena 4). L'EL non
 cambia: 14,9. Scartato dal DM: la rampa aperta, con la guardia che si
-aggira (76, 16 e 39).
+aggira (73, 14 e 49).
 
 <!-- storico -->
 *Fino al quarto giro (2026-11-25) questa pagina raccontava le prove per
@@ -583,8 +583,8 @@ un'azione, e in un round se ne spende al più uno.
   massimo: contro Gorthak, con Borin che esce per primo, un eroe va a terra
   67 volte su cento col +8 e 55 con l'azione di movimento in più, invece di
   71; con Yrsa per prima 17 e 11 invece di 19. Contro Grimjaw, a rampa
-  chiusa, 82 e 66 invece di 85; a rampa aperta, scartata dal DM, erano 32 e
-  19 invece di 39
+  chiusa, 77 e 68 invece di 82; a rampa aperta, scartata dal DM, erano 42 e
+  24 invece di 49
   (`plans/esperimenti/scontri-epici-pregen-2026-11-25/esito_punto_eroe.md`).
   Le cifre dell'azione di movimento contano l'attacco completo dopo il
   movimento: è una lettura non decisa (`ARC08-DEF-1`, Scena 8, domanda 3).
@@ -1567,13 +1567,13 @@ sale di uno con loro, non di due.
 possono unirsi come per Gorthak, lasciando il loro settore alle tacche.
 
 **Il DM lo dice prima, in chiaro.** Grimjaw con quattro orog (EL circa 15)
-è uno scontro per Borin e Yrsa insieme, e anche così Grimjaw fugge due
-volte su tre (67), va a 0 pf o meno 8 volte su cento, e uno dei due va a
-terra 85; nelle
+è uno scontro per Borin e Yrsa insieme, e anche così Grimjaw fugge sei
+volte su dieci (62), va a 0 pf o meno 9 volte su cento, e uno dei due va a
+terra 82; nelle
 prove nessun nano cade solo se Ragnhild apre col fuoco dalla cinta prima che i
 due salgano. Borin da solo cade sempre, e Grimjaw non scende mai a 89;
-lo stesso Harbek e Nala senza Ragnhild. Yrsa da sola lo fa fuggire 36 volte
-su cento, lo porta a 0 pf o meno 3, e cade 64. Il DM ripete a voce la
+lo stesso Harbek e Nala senza Ragnhild. Yrsa da sola lo fa fuggire 28 volte
+su cento, lo porta a 0 pf o meno 2, e cade 73. Il DM ripete a voce la
 correzione al libretto (Scena 1): Grimjaw a 0 pf è abbattuto e vale +2 alla
 rocca, anche se il libretto stampato dice ancora il contrario (regia, non
 read-aloud). La via per chi non vuole il duello è scritta qui sotto: nessuno lo
@@ -1613,37 +1613,37 @@ da solo (§0-bis, «Il comandante a 0 pf o meno»). Le cifre sono volte su cento
 | Chi lo sfida | lui fugge | lui a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra |
 |---|---|---|---|---|---|
 | Borin da solo | mai | mai | — | — | sempre |
-| Yrsa da sola | 36 | 3 | 4,9 | 4,7 | 64 |
-| Borin e Yrsa | 67 | 8 | 4,5 | 4,1 | 85 |
-| Borin, Yrsa e Harbek (senza incantesimi) | 77 | 12 | 4,2 | 3,8 | 83 |
-| Borin e Yrsa, con Ragnhild che apre col fuoco dalla cinta | 84 | 16 | 1,9 | 1,8 | mai |
+| Yrsa da sola | 28 | 2 | 4,7 | 4,5 | 73 |
+| Borin e Yrsa | 62 | 9 | 4,0 | 3,6 | 82 |
+| Borin, Yrsa e Harbek (senza incantesimi) | 72 | 13 | 3,8 | 3,4 | 86 |
+| Borin e Yrsa, con Ragnhild che apre col fuoco dalla cinta | 84 | 16 | 1,9 | 1,9 | mai |
 | Harbek e Nala | mai | mai | — | — | sempre |
-| Harbek e Nala, con Ragnhild che apre | 94 | mai | 4,4 | — | 64 |
-| nessuno sale: Ragnhild da sola dal camminamento | 52 | mai | 4,4 | — | 48: è lei |
+| Harbek e Nala, con Ragnhild che apre | 99 | mai | 4,3 | — | 56 |
+| nessuno sale: Ragnhild da sola dal camminamento | 53 | mai | 4,4 | — | 47: è lei |
 
 Yrsa da sola, Harbek e Nala senza Ragnhild, e Ragnhild da sola vengono da
 `esito_rampa_chiusa.md` (opzione `--rampa-chiusa` dello script, 2026-11-25);
 le altre righe da `esito_simulazione.md`. Le righe che tornano uguali nella tabella della rampa aperta vengono da un altro lancio dello script, e uno o due punti di differenza sono rumore. Ragnhild non sale: la rampa chiusa
 non la riguarda, e la sua riga è quella della rampa aperta. Lo stesso file
 prova la regola dell'orog che si stacca (la cima chiusa dai due davanti): le
-cifre restano queste entro due punti, e Borin e Yrsa fanno 65, 8 e 87.
+cifre restano queste entro due punti, e Borin e Yrsa fanno le stesse, 62, 9 e 82.
 
 **Scartato dal DM: la rampa aperta**, dove la guardia si aggirava. La
 tabella resta solo per confronto: al tavolo si usa quella qui sopra.
 
 | Chi lo sfida, a rampa aperta | lui fugge | lui a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra |
 |---|---|---|---|---|---|
-| Borin da solo | 3 | mai | 2,3 | — | 98 |
-| Yrsa da sola | 56 | 5 | 2,9 | 2,7 | 43 |
-| Borin e Yrsa | 76 | 16 | 2,6 | 2,2 | 39 |
-| Borin, Yrsa e Harbek (senza incantesimi) | 78 | 19 | 2,6 | 2,2 | 55 |
-| Borin e Yrsa, con Ragnhild che apre col fuoco dalla cinta | 83 | 17 | 1,9 | 1,9 | 1 |
+| Borin da solo | 2 | mai | 2,2 | — | 99 |
+| Yrsa da sola | 46 | 4 | 2,8 | 2,6 | 56 |
+| Borin e Yrsa | 73 | 14 | 2,6 | 2,2 | 49 |
+| Borin, Yrsa e Harbek (senza incantesimi) | 77 | 18 | 2,6 | 2,1 | 62 |
+| Borin e Yrsa, con Ragnhild che apre col fuoco dalla cinta | 84 | 16 | 1,9 | 1,9 | mai |
 | Harbek e Nala | mai | mai | — | — | sempre |
-| Harbek e Nala, con Ragnhild che apre | 95 | mai | 4,4 | — | 64 |
-| nessuno sale: Ragnhild da sola dal camminamento | 54 | mai | 4,4 | — | 46: è lei |
+| Harbek e Nala, con Ragnhild che apre | 99 | mai | 4,3 | — | 55 |
+| nessuno sale: Ragnhild da sola dal camminamento | 53 | mai | 4,4 | — | 47: è lei |
 
 Con Ragnhild che apre insieme a Borin e Yrsa, il duello è chiuso già al
-primo round una volta su quattro (23, contando la fuga e lo 0 pf): Grimjaw ha Iniziativa +5 contro il +6 di lei, e
+primo round una volta su quattro (24, contando la fuga e lo 0 pf): Grimjaw ha Iniziativa +5 contro il +6 di lei, e
 metà delle volte ha già agito quando la palla arriva. Da sola, Ragnhild non
 basta: Grimjaw risponde con l'arco e manda i due orog dietro sul camminamento. Il
 terzo eroe in mischia, senza i suoi incantesimi, alza il rischio: gli orog

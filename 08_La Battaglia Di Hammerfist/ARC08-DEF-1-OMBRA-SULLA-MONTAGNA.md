@@ -1315,12 +1315,12 @@ la regola è in `ARC08-DEF-2`, §0-bis, «Il comandante a 0 pf o meno».
 |---|---|---|---|---|---|
 | Gorthak | Borin, poi Yrsa | 57 · 42 · 71 | 55 · 44 · 67 | 49 · 51 · 58 | 45 · 55 · 55 |
 | | Yrsa, poi Borin | 43 · 55 · 19 | 45 · 54 · 17 | 32 · 67 · 11 | 34 · 66 · 11 |
-| Grimjaw, la rampa chiusa | Borin e Yrsa | 67 · 8 · 85 | 70 · 9 · 82 | 73 · 11 · 69 | 74 · 11 · 66 |
-| Grimjaw, la rampa aperta (scartata dal DM) | Borin e Yrsa | 76 · 16 · 39 | 79 · 17 · 32 | 80 · 18 · 18 | 77 · 20 · 19 |
+| Grimjaw, la rampa chiusa | Borin e Yrsa | 62 · 9 · 82 | 67 · 9 · 77 | 70 · 10 · 70 | 72 · 10 · 68 |
+| Grimjaw, la rampa aperta (scartata dal DM) | Borin e Yrsa | 73 · 14 · 49 | 75 · 17 · 42 | 79 · 17 · 26 | 78 · 17 · 24 |
 
-Il +8 sposta poco, da 1 a 3 punti sulle due cifre del comandante e da 2 a
+Il +8 sposta poco, da 0 a 5 punti sulle due cifre del comandante e da 2 a
 7 sugli eroi a terra, perché Borin e Yrsa colpiscono già quasi sempre.
-L'azione in più pesa di più: contro Grimjaw a rampa chiusa toglie fino a 19
+L'azione in più pesa di più: contro Grimjaw a rampa chiusa toglie fino a 14
 punti agli eroi a terra, contro Gorthak fino a 16; e contro Gorthak porta
 fino a 13 punti dalla fuga allo 0 pf. L'azione di movimento in più è
 contata come l'eroe che arriva sul nemico e fa nello stesso turno tutti i

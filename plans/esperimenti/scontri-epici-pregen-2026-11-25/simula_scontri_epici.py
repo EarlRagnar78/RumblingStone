@@ -79,7 +79,13 @@ dall'altra parte, di poco.
 
 Numeri: ARC08-01, ARC08-02 §3, Appendici A di ARC08-DEF-1 e ARC08-DEF-2,
 Bestiario. L'archetipo semplice Avanzato di PF1e: +2 a tutti i tiri e ai
-danni, +2 pf per DV; la CA e' quella ricostruita con la regola intera.
+danni, +2 pf per DV; la CA e' quella ricostruita con la regola intera, salvo
+l'orog Avanzato (scartato), che tiene le regole rapide della sua scheda, +4.
+
+L'orog della guardia nera e' quello della scheda del Bestiario rifatta il
+2026-11-20 (PR #521): CA 21, pf 45, ascia +14/+9 (1d12+12). Fino al
+2026-11-26 il simulatore usava la scheda di prima (CA 19, pf 63, +13/+8,
+1d12+10; Avanzato CA 23, 75 pf). Una prova lega i numeri alla scheda.
 
 Ogni riga ha il suo seme (--seme, il titolo dello scenario, gli eroi): una
 correzione a uno scenario non sposta le cifre degli altri.
@@ -570,11 +576,14 @@ def grimjaw(orog_avanzati=False, muro=0, fronte=0):
         out = [g]
         o = 2 if orog_avanzati else 0
         for i in range(4):
-            # Attacco Poderoso -3; round 1 Tattico Superiore +2 a colpire; dal 2 anche Furia +2/+2
-            og = Nemico(f"orog{i}", 75 if orog_avanzati else 63, 23 if orog_avanzati else 19,
-                        [A(14 + o, (1, 12), 18 + o, 20, 3), A(9 + o, (1, 12), 18 + o, 20, 3)],
+            # la scheda (Bestiario, dal 2026-11-20): CA 21, pf 45 (6d10+12), Rifl +2,
+            # Iniz +4, ascia bipenne +1 +14/+9 (1d12+12, x3). Avanzato, regole rapide
+            # PF1e: CA 25, pf 57 (45 + 2 x 6 DV), +2 ai tiri e ai danni.
+            # Attacco Poderoso -3 (+6); round 1 Tattico Superiore +2 a colpire; dal 2 anche Furia +2/+2
+            og = Nemico(f"orog{i}", 57 if orog_avanzati else 45, 25 if orog_avanzati else 21,
+                        [A(15 + o, (1, 12), 20 + o, 20, 3), A(10 + o, (1, 12), 20 + o, 20, 3)],
                         rifl=2 + o, iniz=4 + o,
-                        primo=[A(12 + o, (1, 12), 16 + o, 20, 3), A(7 + o, (1, 12), 16 + o, 20, 3)])
+                        primo=[A(13 + o, (1, 12), 18 + o, 20, 3), A(8 + o, (1, 12), 18 + o, 20, 3)])
             og.caccia = i < 2
             og.davanti = i >= 2  # i due dietro sono quelli che si staccano
             out.append(og)

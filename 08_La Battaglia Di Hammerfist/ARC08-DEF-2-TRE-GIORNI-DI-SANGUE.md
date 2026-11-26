@@ -456,7 +456,7 @@ Grimjaw il Giorno 2 o il Giorno 3, al round 1, prima del corno del drago
   `[CANONE — DM 2026-11-26, card «−3 e −2 dei logorati»: lo sostituisce: con un abbattuto l'orda porta −3 e il −2 non si aggiunge, anche se l'altro è fuggito ferito; con due abbattuti −5 e non −6, perché la scala si ferma a −5]`.
 - **Il corpo.** Quello che la scheda gli dà addosso (A.1, A.3) resta sul
   corpo
-  `[INFERRED — Chi prende quello che il comandante abbattuto ha addosso, quando, e conta nella riga «Equipaggiamento dei comandanti» di ARC08-13?; base: ARC08-13 §3 mette quella riga al finale («Corpi/resa di Grimjaw, Gorthak… se uccisi», condizionale ai rami) e il §10 di questo master dice che il tesoro della serata non conta verso il WBL dei Rumbling Stones; default: si prende solo a scontro chiuso, quando sul ponte o sulla rampa non resta un nemico in piedi; lo tiene la rocca e i pregen lo usano se vogliono; è la stessa voce di ARC08-13, che al finale non si conta una seconda volta]`.
+  `[CANONE — DM 2026-11-26, card «corredo del comandante abbattuto»: si prende solo a scontro chiuso, quando sul ponte o sulla rampa non resta un nemico in piedi; lo tiene la rocca e i pregen lo usano se vogliono; è la stessa voce di ARC08-13, che al finale non si conta una seconda volta]`.
 
 Il libretto (§5, Sfidare) dice ancora ai giocatori «Un comandante non muore
 nell'assedio»: quella riga aspetta la correzione, e al tavolo vale questa
@@ -1353,10 +1353,11 @@ duelli sono tutta la battaglia dei pregen.
   dalla palla di fuoco, sui fianchi di Yrsa, dietro l'immagine di Nala.
   Staccarli non apre il varco, e nemmeno abbatterli da lontano: l'orog da
   abbattere o da spingere via è uno dei due davanti.
-  Che cos'altro passi non è deciso `[INFERRED — A rampa chiusa, oltre ad
-  abbattere o spingere via un orog, che cosa fa passare: Acrobazia nel
-  quadretto di un orog (CD 25), travolgere, volare o saltare oltre la
-  guardia?; base: la card nomina solo l'abbattere; SRD: Tumble, Overrun]`.
+  Passa anche chi attraversa il quadretto di uno dei due orog davanti con
+  Acrobazia CD 25 `[SRD: Tumble]` o lo travolge `[SRD: Overrun]`; volare o
+  saltare sopra la guardia non apre il passo `[CANONE — DM 2026-11-26, card
+  «che cos'altro fa passare la rampa chiusa»]`. Le prove non contano queste
+  due strade.
   Aperto il varco, chi vuole arrivare
   accanto a Grimjaw passa per un quadretto che un orog minaccia: prende il
   suo attacco d'opportunità `[SRD: Attacks of Opportunity]` e, avendo mosso,

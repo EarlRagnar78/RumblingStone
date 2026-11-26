@@ -390,29 +390,35 @@ SIMBOLI TATTICI:
 **Velocità:** 9m (in armatura)
 **Attacco Base:** +11; 
 **Lotta:** +24
-**Attacco:** *Randello Enorme +1* +21 in mischia (2d6+10)
-**Attacco Completo:** *Randello Enorme +1* +21/+16/+11 in mischia (2d6+10) e *Randello Enorme +1* +21/+16/+11 in mischia (2d6+5)
-**Distanza:** giavellotto grande +12/+7/+2 (1d8+9)
+**Attacco:** *Stella del Mattino Grande +1* +21 in mischia (2d6+10)
+**Attacco Completo:** *Stella del Mattino Grande +1* +21/+16/+11 in mischia (2d6+10) e *Stella del Mattino Grande +1* +21/+16/+11 in mischia (2d6+10)
+**Distanza:** giavellotto grande +12 (1d8+9), uno a round, dopo aver lasciato una stella del mattino: incremento 9 m, −2 a ogni incremento in più, fino a 45 m. Senza Estrazione Rapida le armi da lancio non danno gli attacchi iterativi `[SRD: Quick Draw]`
 **Spazio/Portata:** 3m/3m
 **Attacchi Speciali:**
-*   **Combattere con Due Armi Superiore (Str):** ogni testa guida un braccio: nessuna penalità ai tiri per colpire e ai danni con due armi (ettin SRD); il secondo braccio somma metà For ai danni.
+*   **Combattere con Due Armi Superiore (Str):** ogni testa guida un braccio: nessuna penalità ai tiri per colpire e ai danni con due armi (ettin SRD): il secondo braccio somma la For piena ai danni, come il primo `[CANONE — DM 2026-11-25, card «armi di Gorthak e versione dura»]`.
 *   **Visione Superiore (Str):** Le tre teste gli conferiscono un bonus razziale di +4 a Osservare e Ascoltare. Non può essere attaccato ai fianchi.
 *   **Testa Destra (Vigile):** Fornisce il talento Iniziativa Migliorata (+4 Iniziativa).
 
-**Talenti:** Allerta, Arma Focalizzata (randello enorme), Attacco Poderoso, Incalzare, Spezzare Migliorato, Volontà di Ferro; Iniziativa Migliorata dalla testa destra. `[CANONE — regola, ADR-0118]: 15 DV danno sei talenti e Iniziativa Migliorata la dà la testa destra, quindi il sesto è libero; con Arma Focalizzata il randello torna a +21 (BAB +11, For +9, −1 taglia, +1 arma, +1)`
-**Equipaggiamento:** *Corazza di Piastre Grande +1*, 3 *Randelli Enormi +1* (due in pugno, uno di riserva), 6 Giavellotti Grandi
+**Talenti:** Allerta, Arma Focalizzata (stella del mattino), Attacco Poderoso, Incalzare, Spezzare Migliorato, Volontà di Ferro; Iniziativa Migliorata dalla testa destra. `[CANONE — regola, ADR-0118]: 15 DV danno sei talenti e Iniziativa Migliorata la dà la testa destra, quindi il sesto è libero; con Arma Focalizzata la stella del mattino torna a +21 (BAB +11, For +9, −1 taglia, +1 arma, +1)`
+**Equipaggiamento:** *Corazza di Piastre Grande +1*, 3 *Stelle del Mattino Grandi +1* (due in pugno, una di riserva), 6 Giavellotti Grandi
 
 **Tattiche Speciali:**
 - **Testa Sinistra (Brutale):** Sempre attacca per prima, +2 danni
 - **Testa Centrale (Strategica):** Comanda le altre, fornisce bonus tattici
 - **Testa Destra (Vigile):** Non può essere colpita di sorpresa, +4 Iniziativa
-- **Furia:** sotto i 101 PF (metà) la testa sinistra prende il sopravvento: +4 For, -2 CA, combatte fino alla morte
-- **Morale:** prima di quella soglia, se Fauci è fuggito o abbattuto e l'orda è in rotta, la testa centrale può offrire la resa (al finale la scelta è dei PG); dopo, nessuna resa
+- **Furia:** sotto i 101 PF (metà), per un round la testa sinistra prende il sopravvento: +4 For, -2 CA. Alla fine di quel round la testa centrale lo tira indietro e Gorthak lascia il ponte, ferito `[CANONE — DM 2026-11-04, P16, il cancello e Gorthak]` (`ARC08-DEF-2`, Scena 2)
+- **Morale:** prima di quella soglia, se Fauci è fuggito o abbattuto e l'orda è in rotta, la testa centrale può offrire la resa (al finale la scelta è dei PG)
 
-> **Verifica 3.5 (versione più forte)**: ettin dell'SRD avanzato a 15 DV
-> (il massimo della taglia Grande). L'ettin SRD combatte con un'arma per mano
-> senza penalità, perché ogni testa guida un braccio: due randelli a pieno
-> BAB, non tre attacchi con uno solo. La *corazza di piastre +1* vale +6 alla
+> **Verifica 3.5 (versione più forte)**: ettin dell'SRD (10 DV) portato a
+> 15 DV. ⚠️ Non SRD: l'SRD dà all'ettin «Advancement: By character class»,
+> senza una fascia di DV, ed è un potenziamento dichiarato
+> (`ARC08-DEF-2`, A.1). L'ettin SRD combatte con un'arma per mano
+> senza penalità, perché ogni testa guida un braccio: due stelle del mattino
+> Grandi a pieno BAB e a Forza piena, 2d6+10 l'una, non tre attacchi con una
+> sola. Sono le armi dell'ettin SRD (2 morningstars), con la For 29 e il +1
+> `[CANONE — DM 2026-11-25, card «armi di Gorthak e versione dura»]`.
+> <!-- storico: fino al 2026-11-25 la scheda scriveva «Randello Enorme +1», 2d6+10 e 2d6+5, e «il secondo braccio somma metà For ai danni». Un randello Grande fa 1d8, e un randello Enorme un gigante Grande lo impugna solo a due mani (SRD, Inappropriately Sized Weapons): il 2d6 era già il dado della stella del mattino Grande -->
+> La *corazza di piastre +1* vale +6 alla
 > CA (era +3). I pf tornano coi dadi con Cos 28 (15d8+135 = 202), un punto
 > in più dagli aumenti di caratteristica dei DV avanzati; prima
 > 15d8+120 dava 187, non 195. Multiattacco esce (non serve a chi usa armi):
@@ -799,7 +805,7 @@ Chi non vuole guidare un eroe guarda, oppure guida un'unità di nani (statistich
 > Difensore Inamovibile (*stalwart defender*), non si applica.
 
 **Momenti Eroici Consigliati:**
-- Duello personale contro Gorthak il Trifronte
+- Duello personale contro Gorthak il Trifronte (finché Gorthak è vivo: a 0 pf è abbattuto e non torna, `ARC08-DEF-2`, §0-bis)
 - Guidare la carica contro la breccia nel muro
 - Ultimo stand davanti all'altare di Moradin
 
@@ -820,7 +826,7 @@ Chi non vuole guidare un eroe guarda, oppure guida un'unità di nani (statistich
 **Lotta:** +14
 **Attacco:** *Arco Lungo Composito Potente (+3) +3* +19 a distanza (1d8+6/x3)
 **Attacco Completo:** *Arco Lungo Composito +3* +19/+14/+9 a distanza (1d8+6/x3), o *Asce Gemelle +2* +16/+11 (1d6+5) con una, +14/+9 (1d6+5) e +14 (1d6+3) con due
-**Abilità Speciali:** Nemico Prescelto (Orchi +6, Giganti +4, Draghi +2), Stile di Combattimento Migliorato (Tiro Rapido, Tiro Multiplo), Andatura Montana (ignora terreno difficile in montagna), Comando Balestrieri (+4 attacco a unità di tiratori entro 18m).
+**Abilità Speciali:** Nemico Prescelto (Orchi +6, Giganti +4, Draghi +2, a colpire e ai danni), Stile di Combattimento Migliorato (Tiro Rapido, Tiro Multiplo), Andatura Montana (ignora terreno difficile in montagna), Comando Balestrieri (+4 attacco a unità di tiratori entro 18m).
 **Caratteristiche:** For 16, Des 18, Cos 18, Int 12, Sag 14, Car 10 (Cos 18 per i pf)
 **Talenti:** Tiro Ravvicinato, Tiro Preciso, Resistenza Fisica, Combattere con Due Armi, Arma Focalizzata (Arco Lungo Composito), Schivare (la CA conta il bonus di schivare).
 **Abilità:** Osservare +18, Ascoltare +18 (+24 contro gli orchi), Nascondersi +24 (con il *mantello elfico*), Muoversi Silenziosamente +19, Sopravvivenza +17 (+19 all'aperto, +23 sulle tracce degli orchi), Scalare +18, Conoscenze (natura) +18 (conto grado per grado: `plans/esperimenti/giro-arc08-sessione1-2026-10-21/ABILITA-PREGEN.md`). Il punto in più di Osservare e Ascoltare (+18 contro il +17 del conto) si legge come un bonus dell'Esploratrice dei Picchi `[CANONE — DM 2026-11-04, P16, le forze e i pregen]`.
@@ -841,6 +847,10 @@ Chi non vuole guidare un eroe guarda, oppure guida un'unità di nani (statistich
 > PF1e: il ranger del 12° ha nove talenti (sei di livello e tre di stile), e i suoi sette ci stanno: in PF1e la scheda è legale. Il terzo nemico prescelto e i
 > bonus +6/+4/+2 vengono dall'Esploratrice dei Picchi, classe non dell'SRD
 > [Private source — classe della campagna]. Restano come la scheda li dà.
+> Il bonus vale a colpire e ai danni: è la lettura di PF1e (Ranger, Favored
+> Enemy), ⚠️ non SRD 3.5, che lo dà ai danni e a cinque abilità e non ai
+> tiri per colpire (ADR-0118). Fra le letture legali il DM tiene la più
+> forte `[CANONE — DM 2026-11-25, card «schede canone di Yrsa e Dara»]`.
 > PF1e: Viandante dell'Orizzonte (*horizon walker*), non si applica.
 
 **Momenti Eroici Consigliati:**
@@ -1041,11 +1051,11 @@ Chi non vuole guidare un eroe guarda, oppure guida un'unità di nani (statistich
 **Attacco Base:** +12;
 **BMC:** +19; **DMC:** 32 (36 contro spingere e sbilanciare)
 **Attacco:** *Ascia da Guerra Nanica +3* +23 in mischia (1d10+10/×3)
-**Attacco Completo:** *Ascia da Guerra Nanica +3* +23/+18/+13 in mischia (1d10+10/×3); con Attacco Poderoso +23/+14/+9 (1d10+18/×3)
+**Attacco Completo:** *Ascia da Guerra Nanica +3* +23/+18/+13 in mischia (1d10+10/×3); con Attacco Poderoso +19/+14/+9 (1d10+18/×3)
 **Abilità Speciali:**
 - **Stendardo:** finché lo stendardo è visibile, gli alleati entro 18 m hanno +3 morale ai TS contro paura e +2 morale a colpire in carica.
 - **Sfida (4/giorno, azione veloce):** +12 danni in mischia contro il bersaglio (+18 col bonus della razza preferita). I suoi alleati hanno +4 di circostanza a colpire in mischia il bersaglio finché Yrsa lo minaccia (Ordine del Drago), e il bersaglio ha −2 alla CA contro chiunque altro finché resta nella sua area minacciata (Sfida Pressante).
-- **Tattico (3/giorno, azione veloce):** concede Muro di Scudi e Difesa Coordinata agli alleati entro 9 m che la vedono e la sentono, per 9 round.
+- **Tattico (3/giorno, azione veloce):** concede un talento di squadra per uso, Muro di Scudi o Difesa Coordinata a sua scelta, agli alleati entro 9 m che la vedono e la sentono, per 9 round `[CANONE — DM 2026-11-25, card «schede canone di Yrsa e Dara»]`.
 - **Strategia (azione standard, una volta per alleato per combattimento):** a ogni alleato entro 9 m, a scelta, +2 schivare alla CA per 1 round, +2 morale a colpire per 1 round, o un movimento immediato.
 - **Aiutare gli Alleati:** quando usa aiutare un altro, l'alleato prende +4 invece di +2.
 - Carica del Cavaliere e Carica Possente valgono solo in sella: sulle mura non si usano.
@@ -1070,8 +1080,14 @@ Chi non vuole guidare un eroe guarda, oppure guida un'unità di nani (statistich
 > 7° e 10°). Tattico 3/giorno (1°, 5°, 10°), durata 3 + 6 round. Stendardo
 > +2/+1 al 5°, +1 al 10°. Ordine del Drago: sfida +1 ogni quattro livelli
 > (+4 al 12°), Aiutare gli Alleati +3 al 2° e +1 all'8°. Attacco: 12 + 7 For
-> + 1 Arma Focalizzata + 3 = +23; Attacco Poderoso −4/+8, e Concentrazione
-> Furiosa toglie la penalità al primo attacco. CA: 10 + 12 + 4 + 1 di Scudo
+> + 1 Arma Focalizzata + 3 = +23; Attacco Poderoso −4/+8, cioè +19/+14/+9.
+> Concentrazione Furiosa toglie la penalità al primo attacco solo a chi
+> impugna l'arma a due mani (PF1e, Furious Focus), e Yrsa porta lo scudo
+> pesante: finché lo porta il talento non vale. Il Tattico dà un talento di
+> squadra per uso: in PF1e solo il Maestro Tattico del 17° ne dà due insieme
+> (Cavalier, Tactician) `[CANONE — DM 2026-11-25, card «schede canone di Yrsa e Dara»]`.
+> <!-- storico: fino al 2026-11-25 la scheda scriveva «con Attacco Poderoso +23/+14/+9» e «concede Muro di Scudi e Difesa Coordinata» -->
+> CA: 10 + 12 + 4 + 1 di Scudo
 > Focalizzato + 1 Des (massimo dell'armatura completa) + 2 + 2 = 32. Ricchezza: circa 86.000 mo sulle
 > 108.000 di un PG di 12° livello (PF1e). 3.5: il Cavaliere non esiste;
 > il Maresciallo (Miniatures Handbook) ha aure di morale ma non si verifica
@@ -1939,7 +1955,7 @@ DOPO L'APPARIZIONE - NUOVE FORZE (Round 11-15)
 - **Oscurità:** dentro la *luce del giorno* permanente dell'Apparizione si annulla dove le due aree si toccano (SRD *Daylight*). Artemis è umano: se la scheda non ha *Vista del Diavolo*, nel buio che crea non vede.
 - **Movimento:** vola con le Ali d'Ombra (18 m).
 
-**Alla fine del round 11, un corno** `[CANONE — DM 2026-10-19, D11]`: dal tunnel nord, oltre la porta di mithral, suona il corno di guerra di Grimjaw. È il segnale per il tavolo: il generale arriva al round dopo.
+**Alla fine del round 11, un corno** `[CANONE — DM 2026-10-19, D11]`: dal tunnel nord, oltre la porta di mithral, suona il corno di guerra di Grimjaw. È il segnale per il tavolo: il generale arriva al round dopo (se Grimjaw è stato abbattuto nell'assedio il corno è del capitano minore: «SE GRIMJAW È STATO ABBATTUTO NELL'ASSEDIO», più sotto).
 
 ### **ROUND 12-13: LA CONTROFFENSIVA**
 
@@ -2014,6 +2030,8 @@ RESA DEI CONTI FINALE (Round 12-15)
 - **Druido:** Cure e buff sul Guerriero durante duello
 - **Warlock:** Debuff su Grimjaw, eliminazione minacce secondarie
 
+**SE GRIMJAW È STATO ABBATTUTO NELL'ASSEDIO** `[CANONE — DM 2026-11-26, card «comandante a 0 pf nell'assedio»]`: il duello qui sopra non si gioca. Al round 12 entra al suo posto il capitano minore con le dieci guardie, e si ritira da solo. La sua scheda, il round della ritirata e che cosa chiude la serata sono in `ARC08-DEF-2`, §0-bis, «Il comandante a 0 pf o meno», con i default che aspettano il DM.
+
 ### **RISULTATO DELLA SESSIONE 3:**
 - **Caverna Liberata:** Tutti i nemici morti o in fuga
 - **Morale Nanico:** Completamente ripristinato (+6 permanente)
@@ -2085,7 +2103,7 @@ RESA DEI CONTI FINALE (Round 12-15)
 > **La linea del tempo della Sessione 4** `[CANONE — DM 2026-10-19, D9]` *(vale per questa guida, per la «Guida agli Scontri», per la MAPPA 4 di `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` e per l'Atlante)*
 > - **Round 1-3**: sui bastioni il discorso del Re (round 1) e il cuneo si forma; in aria l'apertura dei gufi (round 1-2), Orion salta al round 3, il cavaliere può cadere ai round 3-4.
 > - **Round 4-5**: il cuneo scende il pendio; la Cantata di Tempestas e i fulmini di Orion.
-> - **Round 6**: l'urto sulla linea ⚔ della riga 37. Strafing dei gufi ai round 6-8; fino al round 10 la convergenza, e Thorik ingaggia Gorthak.
+> - **Round 6**: l'urto sulla linea ⚔ della riga 37. Strafing dei gufi ai round 6-8; fino al round 10 la convergenza, e Thorik ingaggia Gorthak, se Gorthak è vivo (se è stato abbattuto nell'assedio: `ARC08-DEF-2`, §0-bis, «Gorthak abbattuto»).
 > - **Round 11-17**: logoramento, in aria e a terra. Fauci non fugge.
 > - **Round 18-20**: la picchiata di Fauci su Thorik, e la presa. **Round 21-23**: il duello. A fine round 23, la vittoria.
 
@@ -2273,7 +2291,7 @@ Fauci resta in aria e logora fino al round 17, e scende quando lo decide lui.
 
 **Perché scende (legale in 3.5):** lo dice la sua scheda (`ARC08-02` §1, *Tattiche*): atterra solo per finire Thorik dopo averlo preso e lasciato cadere, e sotto i 112 pf fugge `[CANONE — DM 2026-11-15]`. L'Odio della stirpe (+4 contro Thorik, sempre) è la ragione per cui lo fa. È una picchiata con Attacco in Volo (SRD: un'azione di movimento, anche in picchiata, e un'azione standard in un punto qualsiasi del movimento), e porta **la presa di Thorik** `[CANONE — DM 2026-10-19]`: morso al round 18, salita con Thorik in bocca al 19, soffio con lui in bocca e caduta al 20. Le regole e i numeri sono nella scheda (`ARC08-02` §1, «La presa di Thorik»), una volta per incontro. La presa di Orion da sola non lo porta giù: +24 contro +43 (SRD). Con i tiri nella media succede ai **round 18-20**; se scende sotto i 112 pf prima, fugge e la picchiata non c'è. Se Aegis Fang non ha mai cantato né colpito, niente presa: scende nella zona ⚡ e il duello comincia lì.
 
-**Dove:** lo prende dov'è, sulla linea ⚔ o contro Gorthak, e lo lascia cadere a fine round 20 nella zona ⚡ della MAPPA 4 (AB30-AG32), alle spalle della punta, fra le ultime file del cuneo, a circa 30 m dalla linea. Al round 21 Fauci atterra lì per finirlo. Tremore: Equilibrio CD 15 entro 9 m. I PG convergono in 2 round; il duello è ai **round 21-23**. Se Thorik si libera prima, cade dalla quota in cui è, e Fauci scende comunque dove è caduto.
+**Dove:** lo prende dov'è, sulla linea ⚔ o contro Gorthak (se Gorthak è vivo: `ARC08-DEF-2`, §0-bis), e lo lascia cadere a fine round 20 nella zona ⚡ della MAPPA 4 (AB30-AG32), alle spalle della punta, fra le ultime file del cuneo, a circa 30 m dalla linea. Al round 21 Fauci atterra lì per finirlo. Tremore: Equilibrio CD 15 entro 9 m. I PG convergono in 2 round; il duello è ai **round 21-23**. Se Thorik si libera prima, cade dalla quota in cui è, e Fauci scende comunque dove è caduto.
 
 > **Read-aloud (Salvatore lead) — la picchiata.** *Il drago smette di girare sopra il campo, chiude le ali e scende dritto, e la pioggia gli scivola addosso come su una lama oliata. Non guarda i gufi: guarda la punta del cuneo, l'elmo con la corona. Che fate?*
 
@@ -2964,7 +2982,7 @@ incontri `[CANONE — DM 2026-10-19, D19]`.*
 *   **Ruolo:** Cecchino, scout, cacciatrice di élite.
 *   **Statistiche Chiave:** PF 102, CA 21, Attacco Arco +19/+14/+9 (1d8+6/x3)
 *   **Abilità Principali:**
-    *   **Nemico Prescelto:** +6 danni contro Orchi, +4 contro Giganti.
+    *   **Nemico Prescelto:** +6 a colpire e ai danni contro gli Orchi, +4 contro i Giganti, +2 contro i Draghi.
     *   **Munizioni Speciali:** Usa le frecce anatema/ricercanti contro i bersagli giusti.
     *   **Comando Balestrieri:** Con un'azione, dai +4 al tiro per colpire a un'unità di balestrieri.
 *   **Tattica:** Trova una posizione sopraelevata, elimina i comandanti e i maghi nemici, usa la tua conoscenza del terreno per preparare imboscate.
@@ -3010,7 +3028,7 @@ incontri `[CANONE — DM 2026-10-19, D19]`.*
 
 **Scheda Boss 3: GORTHAK IL TRIFRONTE (Ettin a 3 Teste)**
 *   **GS 12 - PF 202 - CA 25**
-*   **Attacchi Principali:** 2 Randelli +21/+16/+11 (2d6+10) e +21/+16/+11 (2d6+5)
+*   **Attacchi Principali:** 2 Stelle del Mattino Grandi +21/+16/+11 (2d6+10 l'una)
 *   **Tattiche Chiave:**
     *   **Sempre in Mischia:** È un ariete vivente. Cerca sempre lo scontro fisico.
     *   **Attacchi Multipli:** Fino a 6 attacchi per round, su bersagli diversi o tutti su uno.

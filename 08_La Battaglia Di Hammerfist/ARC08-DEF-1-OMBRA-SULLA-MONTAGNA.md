@@ -878,7 +878,7 @@ al Cancello, segnato dagli zoccoli dei worg: è da lì che salirà
 l'avanguardia. Non serve una prova, e non dà una leva: dice ai giocatori dove
 scaveranno.
 
-**Scheda d'entrata — Grimjaw, il generale della Mano Rossa** *(statistiche: `ARC08-01`, PNG nemici; `Bestiario/villain/Generale_Grimjaw.md`. CA 26, 178 pf)*
+**Scheda d'entrata — Grimjaw, il generale della Mano Rossa** *(statistiche: `ARC08-01`, PNG nemici; `Bestiario/villain/Generale_Grimjaw.md`. CA 27, 122 pf `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]`)*
 
 | | |
 |---|---|
@@ -1324,13 +1324,15 @@ la regola è in `ARC08-DEF-2`, §0-bis, «Il comandante a 0 pf o meno».
 |---|---|---|---|---|---|
 | Gorthak | Borin, poi Yrsa | 56 · 43 · 70 | 55 · 44 · 67 | 49 · 51 · 58 | 56 · 43 · 70 |
 | | Yrsa, poi Borin | 43 · 56 · 19 | 44 · 55 · 17 | 33 · 66 · 11 | 43 · 56 · 19 |
-| Grimjaw, la rampa chiusa | Borin e Yrsa | 62 · 8 · 82 | 67 · 10 · 79 | 70 · 10 · 70 | 62 · 8 · 82 |
-| Grimjaw, la rampa aperta (scartata dal DM) | Borin e Yrsa | 72 · 14 · 50 | 75 · 17 · 41 | 79 · 17 · 27 | 72 · 14 · 50 |
+| Grimjaw, la rampa chiusa | Borin e Yrsa | 54 · 19 · 73 | 61 · 20 · 64 | 65 · 18 · 57 | 54 · 19 · 73 |
+| Grimjaw, la rampa aperta (scartata dal DM) | Borin e Yrsa | 70 · 22 · 28 | 81 · 18 · 12 | 64 · 33 · 13 | 70 · 22 · 28 |
 
-Il +8 sposta poco, da 1 a 5 punti sulle due cifre del comandante e da 2 a
-9 sugli eroi a terra, perché Borin e Yrsa colpiscono già quasi sempre.
+Il +8 sposta poco contro Gorthak, 1 punto sulle due cifre del comandante e
+2 o 3 sugli eroi a terra, perché Borin e Yrsa lo colpiscono già quasi
+sempre. Contro Grimjaw, che ha CA 27, sposta di più: a rampa chiusa 7 punti
+verso la fuga e 9 in meno di eroi a terra, a rampa aperta 11 e 16.
 L'azione standard in più pesa di più: contro Grimjaw a rampa chiusa toglie
-12 punti agli eroi a terra, contro Gorthak fino a 12; e contro Gorthak porta
+16 punti agli eroi a terra, contro Gorthak fino a 12; e contro Gorthak porta
 fino a 10 punti dalla fuga allo 0 pf. L'azione di movimento in più dà le
 cifre di oggi: chi la spende per arrivare sul comandante attacca una volta
 sola in quel turno, come senza il punto (regola 3, in fondo alla scena), e

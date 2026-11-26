@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: trappola-patch-chiude-campi
+expected_outcome: |
+  Non la porta: una patch che fa scendere i campi aperti senza «[CANONE — DM AAAA-MM-GG, codice]» su ogni riga che chiude un campo non è una decisione del DM (S6 di sincronia_giocato.py); resta ferma e diventa una domanda per il DM.

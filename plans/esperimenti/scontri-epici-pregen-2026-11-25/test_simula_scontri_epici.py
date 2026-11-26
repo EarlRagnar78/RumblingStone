@@ -147,3 +147,41 @@ def test_il_movimento_comprato_col_punto_lascia_un_attacco_solo():
                           ["Borin", "Yrsa"]),
                          ("Sergente, oggi (A.4; la scorta non entra)", ["Yrsa"])]:
         assert _duelli_punto("movimento", titolo, eroi) == _duelli_punto(None, titolo, eroi), titolo
+
+
+# --- Grimjaw del simulatore e' quello del Bestiario --------------------
+_GRIMJAW = _RADICE / "Bestiario/villain/Generale_Grimjaw.md"
+
+
+def _scheda_grimjaw():
+    """I numeri di Grimjaw dal recinto ```statblocco del suo file."""
+    blocco = re.search(r"```statblocco\n(.*?)```", _GRIMJAW.read_text(encoding="utf-8"), re.S).group(1)
+
+    def campo(regex):
+        return re.search(regex, blocco, re.M).groups()
+
+    (ca,) = campo(r"^ca: (\d+)")
+    (contatto,) = campo(r"^ca-dettaglio: contatto (\d+)")
+    (pf,) = campo(r"^pf: (\d+)")
+    (dv,) = campo(r"^pf-dado: (\d+)d")
+    (cos,) = campo(r"^attributi: .*Cos (\d+)")
+    (rifl,) = campo(r"^ts: .*Rifl ([+-]\d+)")
+    (iniz,) = campo(r"^iniziativa: ([+-]\d+)")
+    a1, a2, a3, dmg = campo(r"spada bastarda \+1 \+(\d+)/\+(\d+)/\+(\d+) \(1d10\+(\d+)/17-20")
+    t1, t2, t3, tdmg = campo(r"arco lungo composito \+1 \+(\d+)/\+(\d+)/\+(\d+) \(1d8\+(\d+)/x3\)")
+    return dict(ca=int(ca), contatto=int(contatto), pf=int(pf), dv=int(dv), cos=int(cos),
+                rifl=int(rifl), iniz=int(iniz), att=(int(a1), int(a2), int(a3)), dmg=int(dmg),
+                tiro=(int(t1), int(t2), int(t3)), tdmg=int(tdmg))
+
+
+def test_grimjaw_del_simulatore_e_quello_del_bestiario():
+    s = _scheda_grimjaw()
+    (g,) = [n for n in sim.grimjaw()() if n.nome == "Grimjaw"]
+    assert (g.pfmax, g.ca, g.contatto, g.rifl, g.iniz) == (s["pf"], s["ca"], s["contatto"], s["rifl"], s["iniz"])
+    # la soglia del Morale: sotto meta' dei pf ripiega dietro la guardia
+    assert g.fuga == s["pf"] // 2
+    # gli attacchi del simulatore sono quelli della Furia Comandante: +4 For, cioe' +2 a colpire e ai danni
+    assert g.attacchi == [(b + 2, (1, 10), s["dmg"] + 2, 17, 2, "") for b in s["att"]]
+    # +4 Cos: +2 pf per DV
+    assert g.furia_pf == 2 * s["dv"]
+    assert g.tiro == [(b, (1, 8), s["tdmg"], 20, 3, "") for b in s["tiro"]]

@@ -1,0 +1,246 @@
+{
+ "ref": "origin/main",
+ "seme": 20261119,
+ "per_file": 5,
+ "parole_minime": 25,
+ "voci": [
+  {
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "indice": 0,
+   "titolo": "SCENA 1 — Apertura, fuori gioco",
+   "testo": "La Corona vi tira attraverso mille anni, e mille anni passano in un respiro. Pochi giorni no: quelli la Corona li trattiene, i giorni in cui Hammerfist si è preparata e ha tenuto le mura senza di voi. Quei giorni li ha visti qualcun altro. Quattro nani, uno a testa: un campione col martello del nonno, un'esploratrice che conta i fuochi del nemico dal crinale, un vecchio sacerdote con la polvere delle rune sotto le unghie, una cantastorie che ascolta dietro le porte. Le loro mani fanno quello che decidete voi, e quello che fanno resta fatto. Quando il filo vi lascia andare, la battaglia è come l'avete lasciata.",
+   "parole": 109
+  },
+  {
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "indice": 6,
+   "titolo": "Fase 2 — Il torrione (MAPPA 1A-2)",
+   "testo": "Il torrione è un dente di pietra spezzato a mezza altezza, più vecchio di qualunque nome che gli si dia. La scala dentro è crollata, ma le pietre della parete esterna sporgono come gradini, e in cima resta un pezzo di merlatura, abbastanza per due. Più in basso, verso la valle, un filo di fumo sale da un fuoco tenuto basso, e accanto al fumo c'è la tela grigia di tre tende.",
+   "parole": 72
+  },
+  {
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "indice": 8,
+   "titolo": "Fase 3 — La vista sul campo (MAPPA 1A-3)",
+   "testo": "Poi l'occhio si abitua, e la massa si divide in blocchi. Blocchi di cento, in quadrato, che marciano anche da fermi. Novecento, forse qualcuno di più: sette per ogni nano sulle mura. In fondo, dietro i carri, otto figure sedute per terra sono alte quanto le tende in piedi.",
+   "parole": 49
+  },
+  {
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "indice": 15,
+   "titolo": "Tattiche dell'avanguardia, round per round",
+   "testo": "Il primo a sentirli è un picconiere di Borin, che si raddrizza con la pala in mano. Un ululato corre lungo il pendio, poi un secondo, più in basso. Dalla boscaglia escono lupi grandi come pony, coi goblin aggrappati al pelo, e scendono di traverso al pendio, verso chi lavora chino. Che fate?",
+   "parole": 53
+  },
+  {
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "indice": 16,
+   "titolo": "Tattiche dell'avanguardia, round per round",
+   "testo": "Un tamburo, da sotto la cresta, e poi un passo solo, fatto da cento piedi. Le file degli hobgoblin salgono il pendio scudo contro scudo, senza fretta. Davanti cammina uno più alto degli altri, in un'armatura di piastre che qualcuno ha forgiato per un nano, e porta due spade. Che fate?",
+   "parole": 51
+  },
+  {
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+   "indice": 1,
+   "titolo": "SCENA 2 — 2A · Giorno 1, l'assalto alle mura",
+   "testo": "Il terzo corno non finisce: lo copre l'urlo dell'orda, una voce sola fatta di mille, e la polvere si alza dal pendio come fumo. Gli orchi salgono per primi, fuori dalla strada, a testa bassa, con le scale sulle spalle e il sangue di ieri ancora nero sugli scudi. Dietro, il tamburo degli hobgoblin batte il passo. Dalle merlature i quadrelli partono con un sibilo secco, e una fila cade; quella dopo le passa sopra. Sulla strada i giganti si chinano a raccogliere pietre. Che fate?",
+   "parole": 86
+  },
+  {
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+   "indice": 4,
+   "titolo": "Il sorvolo (élite 2B)",
+   "testo": "L'ombra passa sulle mura prima del drago. Tutti alzano la testa nello stesso momento, nani e orchi, e per un istante la battaglia si ferma. Il drago viene giù dalle creste con le ali chiuse, nero sul cielo bianco, col cavaliere stretto al collo e lo stendardo rosso che schiocca. Non scende sui cortili. Gira sopra la Torre Ovest, una volta, piano. Poi apre la bocca. Che fate?",
+   "parole": 68
+  },
+  {
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+   "indice": 11,
+   "titolo": "SCENA 6 — 2E, 2B · Giorno 3, il corno e il soffio",
+   "testo": "Al primo colpo d'ariete il cancello non geme più. Si piega, e il ferro dei cardini canta una nota sola, lunga, prima di saltare. I battenti cadono verso l'interno, sull'androne, e dietro c'è la strada, e sulla strada l'orda che grida tutta insieme. Il fumo dei fuochi della notte sale ancora dalla piana, dritto, perché non c'è vento. Che fate?",
+   "parole": 60
+  },
+  {
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+   "indice": 14,
+   "titolo": "Il soffio della disperazione (2B), sulla MAPPA 2B-CORRETTA",
+   "testo": "Il drago si ferma in aria sopra il fossato, a sud, e le ali battono piano per tenerlo fermo. Il petto si gonfia, e dentro c'è un rumore che nessuno sulle Mura ha mai sentito, come una pentola enorme che comincia a bollire. Dalle narici escono due fili di fumo verde che scendono fino all'acqua del fossato e la fanno sfrigolare. Il Re alza lo scudo. Non si muove di un passo.",
+   "parole": 72
+  },
+  {
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+   "indice": 18,
+   "titolo": "SCENA 9 — La porta di mithral",
+   "testo": "Il tunnel finisce contro una porta che non ha maniglie. È di un metallo pallido che prende la luce delle torce e la tiene, e sulla sua faccia sono incisi re che nessuno dei vivi ha mai conosciuto, uno sopra l'altro, fino in cima. Quando il primo dei portatori ci appoggia la mano, la porta si apre verso l'interno senza un suono. Dentro, molto più in basso, si sente l'acqua.",
+   "parole": 70
+  },
+  {
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "indice": 3,
+   "titolo": "**👹 GORTHAK IL TRIFRONTE (Ettin a Tre Teste Corazzato, GS 12)**",
+   "testo": "\"Dal centro dell'orda avanza un orrore a tre teste. Gorthak il Trifronte torreggia anche sui giganti più alti. Le sue tre teste discutono costantemente tra loro in linguaggio gigante: la sinistra ruggisce di furia cieca, quella centrale ghigna tatticamente, la destra scruta ogni pericolo. La sua armatura è stata forgiata da dieci diverse corazze saldate insieme da fabbri orchi.\"",
+   "parole": 59
+  },
+  {
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "indice": 11,
+   "titolo": "**⚔️ BORIN GIURAFERRO (Nano Guerriero 10°/Campione Nanico 3°, GS 13)**",
+   "testo": "\"Borin è il nipote del precedente Re di Hammerfist, un nano nel fiore degli anni che ha dedicato la vita all'arte della guerra. È l'ispiratore naturale delle truppe, quello che grida 'Seguitemi!' e si getta per primo nella mischia. Il suo ruolo è quello di tank e leader in prima linea.\"",
+   "parole": 51
+  },
+  {
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "indice": 39,
+   "titolo": "**INCONTRO 4C: \"BARUK KHAZAD! KHAZAD AI-MENU!\"**",
+   "testo": "\"Dai bastioni di Hammerfist, Re Thorek - miracolosamente guarito dalle preghiere dei chierici - si alza in piedi brandendo il suo martello ancestrale. Accanto a lui, il Guerriero della Corona di Adamantio brilla letteralmente di potere regale, le tre gemme della corona che pulsano come stelle. 'FRATELLI!' tuona Re Thorek con voce che porta fino alla vallata. 'Guardate! I cieli combattono al nostro fianco! La montagna stessa ci benedice! Oggi non moriamo - oggi VINCIAMO!' \"",
+   "parole": 76
+  },
+  {
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "indice": 44,
+   "titolo": "**IL CAMPO DOPO LA BATTAGLIA**",
+   "testo": "\"Quando la polvere si posa e l'eco degli ultimi scontri si spegne, un silenzio surreale scende sul campo di battaglia. Il sole, che aveva assistito nascosto dietro le nubi tempestose, ora emerge timidamente per illuminare lo spettacolo della vittoria. Ma è una luce che rivela tanto la gloria quanto l'orrore della guerra.\"",
+   "parole": 52
+  },
+  {
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "indice": 45,
+   "titolo": "**IL CAMPO DOPO LA BATTAGLIA**",
+   "testo": "\"Ovunque volgiate lo sguardo, il terreno è cosparso di nemici caduti: orchi dalle facce congelate nell'ultima smorfia di terrore, hobgoblin con le armature squarciate dalle asce naniche, giganti abbattuti come alberi secolari. Ma tra loro, troppo numerose, si vedono anche le forme immobili dei difensori nanici: valorosi guerrieri che hanno dato tutto per proteggere la loro casa ancestrale.\"",
+   "parole": 58
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md",
+   "indice": 0,
+   "titolo": "2.1 Read-aloud (DM, solo per Artemis)",
+   "testo": "Mentre Re Thorek ti porge la runa di pietra, l'Anello al tuo dito si surriscalda improvvisamente. Non è dolore — è una pressione, come quando qualcuno ti chiama in una stanza affollata e ancora non capisci da dove arrivi la voce. Arriva — non con le orecchie, ma in un piano laterale della tua mente — una voce maschile che non è la tua. Non è Lathander. Non è Mask. È una voce di esperimento, secca, paziente, leggermente curiosa. Parla in una lingua che riconosci come drow antico, ma comprendi le tre parole essenziali: \"Lui sta camminando. Vieni.\" L'Anello vibra per 3 secondi reali. Poi si raffredda di colpo. Re Thorek non si è accorto di nulla — sta porgendoti la runa. Aspetta una tua reazione.",
+   "parole": 126
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md",
+   "indice": 2,
+   "titolo": "Cosa Tempestas ricorda",
+   "testo": "\"Posso disegnarvi una mappa approssimativa di dove ho emergato. Cannath Vale settentrionale, vicino al fiume con tre rapide. Non più preciso di così. La Torre dovrebbe essere a 8-15 km in qualche direzione da quel punto.\"",
+   "parole": 36
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md",
+   "indice": 3,
+   "titolo": "La scena del sogno",
+   "testo": "Le due porte si aprono insieme. Dalla porta di destra esce una donna anziana vestita di lino bianco. La stessa donna cieca che hai incontrato (o che incontrerai) al mercato di Dauth — riconoscerai la coincidenza. Non è cieca qui. Gli occhi sono dorati come un mattino di estate. Dalla porta di sinistra esce un uomo di età indefinibile con il viso coperto da una maschera d'argento neutra. Camminata silenziosa. Mani vuote. Si fermano a tre passi da te, uno per lato. Non si guardano tra loro. Guardano te.",
+   "parole": 89
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md",
+   "indice": 4,
+   "titolo": "La scena del sogno",
+   "testo": "\"Hai rifiutato il sentiero che ti offrivamo. Non te lo rinfacciamo. La scelta era tua, ed era giusta. Ma c'è una cosa che dobbiamo dirti, perché la tua scelta non ti ha sciolto da noi — ha solo cambiato il modo in cui ti vediamo. Adesso l'Anello canta. Lui canta perché il suo padrone precedente sta camminando. Vuoi sapere chi era quel padrone, davvero?\"",
+   "parole": 64
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md",
+   "indice": 7,
+   "titolo": "La scena del sogno",
+   "testo": "\"Tre cose che vogliamo che tu sappia, e poi ti lasciamo: 1) Zalkatar non sa che noi lo osserviamo. Pensa di essere un esule da entrambi. Si sbaglia. 2) Quando lo affronterai, noi non ti aiuteremo. Hai rifiutato il nostro patto. La regola è chiara. Ma puoi vincere lo stesso. La tua scelta passata ti ha dato qualcosa di tuo — usalo. 3) Se vincerai, e se vorrai un'ultima cortesia non richiesta da noi, ce lo farai sapere a tuo modo. Non sarà un patto. Sarà solo un grazie reciproco. Pensaci.\"",
+   "parole": 91
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+   "indice": 1,
+   "titolo": "2 · LA TORRE — \"Il Duello sotto le Cento Asce\"",
+   "testo": "Il cortile della caserma sa di olio d'armi e vecchie cicatrici. Ferrante batte l'asta contro lo scudo tre volte. — \"Niente magia che uccide, niente veleni. Qui si misura la spina dorsale, non l'inventario. Fatemi vedere se avete tenuto un ponte, una volta.\"",
+   "parole": 43
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+   "indice": 4,
+   "titolo": "5 · IL DRAGO — \"La Runa che Ascolta\"",
+   "testo": "Il pavimento è una spirale di rune d'argento che sussurrano in una lingua più vecchia della città. Una nota è stonata — e ogni volta che stona, una crepa corre nel marmo. — \"Trovate l'ottava nota,\" dice Orivel, \"prima che il coro ci uccida tutti.\"",
+   "parole": 45
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+   "indice": 5,
+   "titolo": "6 · LA CIVETTA — \"Il Registro nel Tempio\"",
+   "testo": "Sethis parla piano, come se le parole costassero. — \"Nel tempio del Denaro c'è un libro che dice troppo. Portatemelo. O, se preferite… scrivetene uno che dica di meno.\" Sorride come chi ha già fatto i conti di tutte e due le strade, e li ha chiusi in attivo.",
+   "parole": 49
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+   "indice": 6,
+   "titolo": "7 · L'UNICORNO — \"La Piazza da Conquistare\"",
+   "testo": "Nastri arancio e azzurro, tamburi, e mille facce che aspettano di essere meravigliate. Liun allarga le braccia. — \"Qui non si vince con la spada, tesori. Qui si vince con lo stupore. Datemi qualcosa da ricordare.\"",
+   "parole": 36
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+   "indice": 7,
+   "titolo": "8 · L'ONDA — \"La Piena di Mezzanotte\"",
+   "testo": "La darsena di notte, la luna di Selûne rotta sulle onde. Un grido: un ragazzo è in acqua, la corrente lo trascina verso i piloni. Nonno Barca non si muove — vi guarda. — \"Il fiume non aspetta i discorsi. Andate.\"",
+   "parole": 41
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-FASE1-ARRIVO-BLACKFENS.md",
+   "indice": 0,
+   "titolo": "0. Lettura d'apertura (read-aloud)",
+   "testo": "L'ultimo suolo solido cede sotto gli stivali come pane fradicio. Davanti a voi i Blackfens si aprono a perdita d'occhio: un mare piatto di acqua nera e canne più alte di un uomo, punteggiato da tumuli d'erba e dai monconi anneriti di alberi morti. L'aria è densa, dolciastra di marciume, e vibra di insetti. Lontano, oltre la foschia, qualcosa rompe la linea dell'orizzonte: le cupole spezzate di Rhest, la città annegata, dove un tempo gli elfi tenevano il confine e dove oggi qualcosa di grande e paziente ha messo il nido. Un airone si alza gracchiando. Poi tace anche lui.",
+   "parole": 100
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-FASE1-ARRIVO-BLACKFENS.md",
+   "indice": 1,
+   "titolo": "3.1 Pattuglia lucertoloide + sciamano (EL 11)",
+   "testo": "Tra le canne, il fango restituisce l'odore di grasso rancido e ferro. Quattro sagome ricurve, squamate, con lance dai denti di coccodrillo, si muovono in fila dietro una quinta che porta un teschio di airone come maschera e mormora a una fiamma verde stretta nel pugno.",
+   "parole": 46
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-FASE1-ARRIVO-BLACKFENS.md",
+   "indice": 2,
+   "titolo": "3.2 Coccodrillo evoluto in agguato (EL 11)",
+   "testo": "L'acqua nera non si increspa. Poi, senza un suono, si apre come una bocca: due file di denti lunghi come pugnali chiudono di scatto dove un attimo prima c'era un tronco.",
+   "parole": 31
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-FASE1-ARRIVO-BLACKFENS.md",
+   "indice": 3,
+   "titolo": "5. Primo sguardo su Rhest (chiusura di Fase 1)",
+   "testo": "Da qui la città annegata si mostra intera: anelli concentrici di edifici su palafitte, cupole crollate, passerelle marce, il tutto stretto attorno a una sala del consiglio ancora in piedi al centro del lago. Su una guglia spezzata, immobile, una figura goblin con un grande arco osserva la palude. E sotto la superficie, lungo come un molo, qualcosa di nero scivola senza increspare l'acqua, poi sparisce.",
+   "parole": 66
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "indice": 0,
+   "titolo": "§1 · La Foresta Sacra · il Cerchio della Quercia Vecchia *(Hella, P1)*",
+   "testo": "Sotto una quercia spaccata da un fulmine antico, su graticci di salice, si seccano mazzi d'erba legati con lo spago. Alcuni sono verdi, altri già color paglia. In una cesta, ghiande scure, una per una avvolte in una foglia. Più in là, file di fiaschette di terracotta tappate con la resina, e nessun prezzo da nessuna parte. L'aria sa di fieno e di fumo vecchio: a duecento passi gli alberi sono ancora neri.",
+   "parole": 73
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "indice": 1,
+   "titolo": "§2 · Dauth · il Mercato Basso, la Confraternita e la Rete Nera *(P2B)*",
+   "testo": "Sotto le arcate di pietra l'aria è ferma e calda, e sa di rame ossidato, di cera e di olio di lino. Fra una colonna e l'altra, banchi bassi coperti di feltro. Su uno, fiasche in fila per colore come le canne di un organo. Su un altro, bracciali di cuoio ancora rigidi, bastoni ferrati appoggiati in mazzo, una scatola di stelle d'acciaio che un garzone lucida una per una con uno straccio. Le voci sono troppe per capirne una. Un monaco in tunica grigia prova un bastone contro il pavimento, lo ascolta, e lo rimette giù.",
+   "parole": 97
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "indice": 2,
+   "titolo": "§3 · La Torre Invisibile · il banco di Zalkatar *(Artemis, P2A)*",
+   "testo": "Su una lastra di cristallo che fa da tavolo, oggetti allineati a distanze uguali, come strumenti su un banco di chirurgo. Pergamene arrotolate e legate con filo d'argento. Due bacchette di legno nero. Un paio di lenti, un sacchetto di cuoio morbido, una fiala rossa. Un medaglione col vetro opaco. Ogni oggetto ha accanto un foglietto scritto in una grafia piccola e regolare, e i foglietti sono rivolti verso di voi. Dall'altra parte del tavolo i tentacoli si muovono piano, anche quando il resto del corpo resta fermo.",
+   "parole": 88
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "indice": 3,
+   "titolo": "§4 · I campi drow · il banco di Sonjak *(P3, Sabotaggio dei Campi Drow)*",
+   "testo": "Una tenda bassa di seta nera tesa su pali d'osso. Dentro, casse impilate con ordine, ognuna segnata con un nodo diverso di cordicella. Su una cassa fa da tavolo una bilancia di bronzo, e accanto un sacchetto aperto di monete d'argento con una torre coniata sopra. La luce è una sola, una candela di cera grigia che non fa fumo. Dietro la tenda, oltre un recinto di pali, qualcuno grande respira piano nel sonno, e una catena si sposta di un anello.",
+   "parole": 82
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "indice": 7,
+   "titolo": "Il Collezionista *(per assurdo)*",
+   "testo": "Una stanza alta, foderata di velluto color vino, senza finestre. Lungo le pareti, teche di vetro, e in ogni teca un oggetto solo: una corona di ferro, un guanto, una scarpa da bambino. Sotto ognuno un cartellino scritto a mano. Al centro, un tavolino basso con due bicchieri già pieni. Una teca, vicino alla porta, è vuota e pulita, e il cartellino sotto è già scritto, girato contro il legno.",
+   "parole": 70
+  }
+ ]
+}

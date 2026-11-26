@@ -47,7 +47,7 @@ fonte: ricostruzione del repo, 2026-10-19 — ⚠ Non SRD (orog)
 - *PF1e*: nessuna conversione: l'orog non è nel bestiario PF1e. Il modello *Advanced* darebbe CA 25 e 57 pf.
 
 Benchmark: PF T1-1 riga 7: CA 21 sopra (20) / pf 45 sotto (85) / attacco +14 sopra (+13) / danno medio 18,5 sopra (15) / TS buono +7 sotto (+10). Picchia come un GS 8, incassa come un GS 5.
-Combinazioni ed EL: 4 con Grimjaw = EL 15; 10 con Grimjaw = EL 17.
+Combinazioni ed EL: 4 con Grimjaw = EL 16 (15,6); 10 con Grimjaw = EL 16 (16,4). Fino al 2026-11-26, con Grimjaw GS 14: EL 15 e 17.
 Notes: ⚠ il numero delle guardie non è uno solo nei file: `ARC08-02` §5 e `ARC08-01` (statblocchi) ne danno **4**; il 3B di `ARC08-01`, la «Guida agli Scontri» e la MAPPA 5 ne fanno entrare **10** con Grimjaw. La scheda vale per tutte.
 Boost log: 2026-10-19 — scheda nuova, Guerriero 5 → 6 (+Arma Specializzata) — GS 6 → 7 — richiesta del DM, D10: la versione più forte; resta coerente con l'unità di `ARC08-02` §5.
 

@@ -4109,7 +4109,7 @@
     },
     {
       "name": "instradamento_agenti",
-      "description": "«Il thread chiama l'agente giusto per questo lavoro?»\n\nGli hook UserPromptSubmit, PreToolUse e Stop di Claude Code nei thread: riconosce il tipo di lavoro del messaggio che arriva (riusando i trigger delle skill) e suggerisce agente e catena; se le istruzioni scrivono una riga «Catena: …», ferma push e PR finché la sessione non ha chiamato quegli agenti e autore-documenti, salvo una deroga con motivo; a fine turno registra se gli agenti sono stati chiamati (ADR-0146).",
+      "description": "«Il thread chiama l'agente giusto per questo lavoro?»\n\nGli hook UserPromptSubmit, PreToolUse e Stop di Claude Code nei thread: riconosce il tipo di lavoro del messaggio che arriva (riusando i trigger delle skill) e suggerisce agente e catena; se le istruzioni scrivono una riga «Catena: …», ferma push e PR finché la sessione non ha chiamato quegli agenti e autore-documenti, salvo una deroga con motivo; ferma sempre, anche nei sottoagenti, un push (comandi git, sh -c, opzioni globali, HEAD risolto) o una scrittura con gli strumenti MCP di GitHub che riscrive o cancella un ramo campaign-group-*, tocca un ramo morto del registro o porta canone su main (ADR-0007, ADR-0090); a fine turno registra se gli agenti sono stati chiamati (ADR-0146).",
       "use_case": "«Il thread chiama l'agente giusto per questo lavoro?»",
       "invocation": "python3 scripts/instradamento_agenti.py --riepilogo",
       "inputSchema": {
@@ -4992,6 +4992,90 @@
         "2": "errore d'uso (file dei riscontri illeggibile, regex sbagliata, master inesistente)",
         "3": "fonti non disponibili: cache incompleta e rete assente, o --offline",
         "130": "interruzione utente"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "sincronia_giocato",
+      "description": "«Il ramo di gruppo ha tutto il giocato, e main è dentro?»\n\nMisura se il giocato è arrivato sul ramo di gruppo e se main ci è entrato, senza checkout né scritture: S1 rami campaign-group-* non registrati in plans/rami-di-gruppo.json, S2 commit di main mancanti e da quanti giorni (non misurabile su un clone shallow), S3 patch del canone ferme nelle cartelle scansionate (applicata per apply inverso o patch-id, in altra forma, da verificare, da applicare, in conflitto), S4 campi aperti al DM, S5 serata più recente dell'ultima sessione registrata, S6 campi chiusi senza decisione datata del DM (patch, o REF da spingere con --ref), S7 righe di main perse nel merge (--dopo-merge) (ADR-0007, ADR-0090).",
+      "use_case": "«Il ramo di gruppo ha tutto il giocato, e main è dentro?»",
+      "invocation": "python3 scripts/sincronia_giocato.py --check",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "repo": {
+            "type": "string",
+            "description": "Il clone da misurare (default: la radice del repo)."
+          },
+          "registro": {
+            "type": "string",
+            "description": "Il registro dei rami di gruppo."
+          },
+          "remoto": {
+            "type": "string",
+            "description": "Il remoto dei rami."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 con un 🔴, 2 se qualcosa non è misurabile."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "L'esito in JSON."
+          },
+          "avviso": {
+            "type": "boolean",
+            "description": "Modalità hook: poche righe solo con rosso o giallo, esce sempre 0."
+          },
+          "aggiorna": {
+            "type": "boolean",
+            "description": "git fetch di main e dei rami vivi prima di misurare (rete)."
+          },
+          "scansiona": {
+            "type": "string",
+            "description": "Cartella dove cercare patch, fino a profondità 3; ripetibile."
+          },
+          "giorni-rosso": {
+            "type": "integer",
+            "description": "S2: giorni oltre i quali main fuori dal ramo è rosso."
+          },
+          "ore-patch": {
+            "type": "number",
+            "description": "S3: ore oltre le quali una patch da applicare è rossa."
+          },
+          "senza-campi-aperti": {
+            "type": "boolean",
+            "description": "Salta la regola S4."
+          },
+          "ora": {
+            "type": "string",
+            "description": "Istante della misura in ISO 8601, per le prove."
+          },
+          "ref": {
+            "type": "string",
+            "description": "Misura questo albero (es. HEAD prima del push) al posto del ramo remoto; S6 guarda il diff fra il remoto e REF."
+          },
+          "dopo-merge": {
+            "type": "boolean",
+            "description": "S7: ogni riga che main ha aggiunto ai file di partita c'è nel risultato del merge."
+          },
+          "prima": {
+            "type": "string",
+            "description": "Con --dopo-merge: il ramo prima del merge."
+          },
+          "main": {
+            "type": "string",
+            "description": "Con --dopo-merge: il main fuso (default <remoto>/main)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "nessun rosso (o --avviso, o senza --check)",
+        "1": "almeno un rilievo rosso (--check)",
+        "2": "non misurabile: clone shallow, ramo o main assenti (--check)"
       },
       "deterministic": true
     },

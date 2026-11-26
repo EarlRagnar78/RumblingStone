@@ -37,6 +37,8 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import shlex
+import subprocess
 import sys
 import time
 from pathlib import Path
@@ -80,10 +82,17 @@ PAROLE_AGENTE = {
         r"script)\b"),
     "regolista": re.compile(r"\b(potenzi\w*|statblock\w*|stat block)\b", re.I),
     "integratore-dm": re.compile(r"\b(dm\.py|dmcore|server mcp|tools\.manifest)\b", re.I),
+    # Due voti: le parole del giocato e quelle del ramo, così batte la skill della campagna.
+    "sincronizzatore-giocato": re.compile(
+        # «sincronizz…» da solo pesca «mantienila sincronizzata» fra le frasi vere: serve l'oggetto
+        r"\b(rami? di gruppo|campaign-group-[\w-]+|patch ferm\w*|"
+        r"sincronizz\w*\s+(?:\w+\s+){0,3}?(?:giocato|ram[oi]|serat\w*|session\w*|patch)|"
+        r"serata giocata|sessione giocata|(?:il|del|al) giocato)\b", re.I),
 }
 
 # A parità di voti vince chi produce, poi chi verifica.
-PRIORITA = ("autore-master", "autore-prosa-gioco", "integratore-dm", "piattaforma",
+PRIORITA = ("autore-master", "autore-prosa-gioco", "integratore-dm", "sincronizzatore-giocato",
+            "piattaforma",
             "cartografo", "impaginatore", "art-director", "regolista", "sviluppatore",
             "autore-documenti", "custode-canone", "lettore-a-freddo")
 
@@ -103,6 +112,7 @@ CATENE = {
     "regolista": ("regolista", "custode-canone", "autore-documenti"),
     "autore-documenti": ("autore-documenti",),
     "custode-canone": ("custode-canone",),
+    "sincronizzatore-giocato": ("sincronizzatore-giocato", "custode-canone", "autore-documenti"),
     "lettore-a-freddo": ("lettore-a-freddo",),
 }
 
@@ -158,6 +168,39 @@ def contesto(agenti: "list[str]") -> str:
     return "\n".join(righe)
 
 
+# Il prompt parla del giocato o del ramo di gruppo: l'hook porta nel contesto lo stato della sincronia.
+# Le stesse parole che danno il voto al sincronizzatore: una norma, un rilevatore.
+_GIOCATO = PAROLE_AGENTE["sincronizzatore-giocato"]
+CARTELLA_PATCH = Path("/mnt/project-files")
+
+
+def avviso_sincronia(timeout: float = 8) -> str:
+    """L'esito breve di `sincronia_giocato.py --avviso`: vuoto se tutto è in ordine o se non si misura."""
+    script = ROOT / "scripts" / "sincronia_giocato.py"
+    if not script.exists():
+        return ""
+    cmd = [sys.executable, str(script), "--avviso", "--repo", str(ROOT)]
+    if CARTELLA_PATCH.is_dir():
+        cmd += ["--scansiona", str(CARTELLA_PATCH)]
+    try:
+        r = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
+    except (OSError, subprocess.SubprocessError):
+        return ""
+    return r.stdout.strip()
+
+
+def _con_sincronia(testo: str, agenti: "list[str]", contesto_: str) -> str:
+    if not ("sincronizzatore-giocato" in agenti or _GIOCATO.search(testo)):
+        return contesto_
+    try:
+        esito = avviso_sincronia()
+    except Exception:  # un hook rotto non ferma mai il lavoro
+        return contesto_
+    if not esito:
+        return contesto_
+    return contesto_ + "\n\nSincronia del giocato (`sincronia_giocato.py --avviso`):\n" + esito
+
+
 def _registra(riga: dict) -> None:
     riga = {"ts": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), **riga}
     try:
@@ -187,7 +230,8 @@ _CATENA = re.compile(r"^[\s>*_-]*catena\b[^:\n]*:(.+)$", re.I | re.M)
 # Solo un comando che *inizia* con git push o gh pr create|ready (dopo ; && || | o a
 # capo, con un eventuale timeout davanti): un heredoc che cita «git push» non conta.
 _PUSH = re.compile(r"(?:^|[;&|\n])\s*(?:timeout\s+\S+\s+)?"
-                   r"(?:git\s+push\b|gh\s+pr\s+(?:create|ready)\b)")
+                   r"(?:git(?:\s+-\S+(?:\s+(?!push\b)[^\s-]\S*)?)*"
+                   r"\s+push\b|gh\s+pr\s+(?:create|ready)\b)")
 _DEROGA = re.compile(r"instradamento_agenti\.py\s+--deroga\s+[\"']([^\"']{15,})[\"']")
 PR_MCP = ("mcp__github__create_pull_request",)
 
@@ -253,10 +297,245 @@ def storia_sessione(trascrizione: "str | None") -> "tuple[set[str], list[str]]":
     return agenti, deroghe
 
 
+_SEPARATORI = {";", "&&", "||", "|", "&", "(", ")"}
+_FORZA = re.compile(r"^(--force(?:-with-lease(?:=.*)?|-if-includes)?|-[a-zA-Z]*f[a-zA-Z]*)$")
+# Le opzioni globali di git che prendono un valore, prima del sottocomando.
+_GLOBALI_CON_VALORE = {"-C", "-c", "--git-dir", "--work-tree", "--namespace", "--super-prefix",
+                       "--config-env", "--exec-path"}
+_PUSH_CON_VALORE = {"-o", "--push-option", "--repo", "--receive-pack", "--exec"}
+_PREFISSI_COMANDO = {"timeout", "command", "env", "nice", "exec", "nohup", "time", "sudo"}
+GITHUB_SCRIVE = ("mcp__github__push_files", "mcp__github__create_or_update_file",
+                 "mcp__github__delete_file", "mcp__github__create_branch")
+# Gli strumenti che scrivono su una PR: l'input porta solo il numero, i rami si leggono.
+GITHUB_PR_SCRIVE = ("mcp__github__merge_pull_request", "mcp__github__update_pull_request_branch")
+FAST_FORWARD = ("Solo fast-forward: `git merge origin/main` (mai rebase) e `git push` senza "
+                "--force né «+»; se il remoto è avanti, `git pull --no-rebase` e di nuovo i controlli.")
+
+
+def _ramo_di(ref: str) -> str:
+    ref = ref.lstrip("+")
+    return ref[len("refs/heads/"):] if ref.startswith("refs/heads/") else ref
+
+
+def _ramo_corrente(cwd: "str | None") -> str:
+    try:
+        return subprocess.run(["git", "-C", cwd or ".", "branch", "--show-current"],
+                              capture_output=True, text=True, timeout=3).stdout.strip()
+    except (OSError, subprocess.SubprocessError):
+        return ""
+
+
+def _segmenti(comando: str) -> "list[list[str]]":
+    """I comandi semplici di una riga di shell, già divisi in parole (le virgolette contano)."""
+    out: "list[list[str]]" = []
+    for riga in comando.split("\n"):
+        try:
+            lx = shlex.shlex(riga, posix=True, punctuation_chars=True)
+            lx.whitespace_split = True
+            parole = list(lx)
+        except ValueError:
+            parole = re.split(r"\s+", re.sub(r"(&&|\|\||[;|&()])", r" \1 ", riga).strip())
+        seg: "list[str]" = []
+        for p in parole:
+            if p in _SEPARATORI or (p and set(p) <= set(";&|()")):
+                if seg:
+                    out.append(seg)
+                seg = []
+            else:
+                seg.append(p)
+        if seg:
+            out.append(seg)
+    return out
+
+
+def _motivo_ramo(dst: str, morti: "set[str]", riscrive: bool) -> "str | None":
+    if dst in morti:
+        return (f"Push verso `{dst}` fermato: è un ramo di gruppo morto (plans/rami-di-gruppo.json, "
+                "ADR-0090) e non si tocca; si cancella quando lo decide il DM.")
+    if dst.startswith("campaign-group-") and riscrive:
+        return (f"Push che riscrive o cancella `{dst}` fermato: il canone non si riscrive "
+                f"(ADR-0007, ADR-0090). {FAST_FORWARD}")
+    return None
+
+
+_CANONE_SU_MAIN = ("Push di canone su main fermato: il canone vivo (sessioni, state.yaml, "
+                   "state.md, recap, schede) si scrive solo sul ramo di gruppo (ADR-0007). Porta "
+                   "quei file su `campaign-group-<gruppo>` e su main solo il prodotto.")
+
+
+def cancello_canone(comando: str, cwd: "str | None" = None, _prof: int = 0) -> "str | None":
+    """Il motivo per fermare un push che riscrive un ramo di gruppo o porta canone su main, o None.
+
+    Riscrivere: --force, -f, --force-with-lease, un refspec con «+», la cancellazione
+    («:ramo», --delete), --mirror, e --all/--tags con la forzatura. HEAD e un push senza
+    refspec valgono il ramo corrente della cartella (quella di `git -C` o dell'ultimo
+    `cd`). Un ramo morto del registro non riceve nessun push. Canone su main: un push a
+    main dal ramo di gruppo (anche `HEAD:main`), o un `git add`/`git commit` di file di
+    partita nello stesso comando. `sh -c` e `bash -c` si leggono dentro. Un push a main
+    dopo un commit di canone fatto in un'altra chiamata non si vede da qui. Fermati
+    sempre: `--prune` e i refspec a glob («*»).
+
+    Limiti noti (aggiramenti voluti, non errori): un alias di git (`git -c alias.x=push`),
+    `eval` e `gh api -X DELETE …/git/refs/…` non si leggono.
+    """
+    import sincronia_giocato as sg  # file di partita e rami morti: una lista sola
+    morti = sg.rami_morti(ROOT / "plans" / "rami-di-gruppo.json")
+    canone_in_commit = False
+    for tok in _segmenti(comando):
+        while tok and (re.fullmatch(r"[A-Za-z_]\w*=.*", tok[0]) or tok[0] in _PREFISSI_COMANDO
+                       or re.fullmatch(r"-\S*|\d+(?:\.\d+)?[smhd]?", tok[0])):
+            tok = tok[1:]
+        if not tok:
+            continue
+        if tok[0] == "cd" and len(tok) > 1:
+            cwd = str(Path(cwd or ".") / tok[1])
+            continue
+        if tok[0] in ("sh", "bash", "zsh", "dash") and "-c" in tok and _prof < 3:
+            i = tok.index("-c")
+            if i + 1 < len(tok):
+                motivo = cancello_canone(tok[i + 1], cwd, _prof + 1)
+                if motivo:
+                    return motivo
+            continue
+        if tok[0] != "git":
+            continue
+        dove, i = cwd, 1
+        while i < len(tok) and tok[i].startswith("-"):
+            if tok[i] in _GLOBALI_CON_VALORE and i + 1 < len(tok):
+                if tok[i] == "-C":
+                    dove = str(Path(dove or ".") / tok[i + 1])
+                i += 2
+            else:
+                i += 1
+        if i >= len(tok):
+            continue
+        sotto, args = tok[i], tok[i + 1:]
+        if sotto in ("add", "commit"):
+            canone_in_commit |= any(sg.e_canone(t) or sg.e_canone(t.rstrip("/") + "/")
+                                    for t in args if not t.startswith("-"))
+            continue
+        if sotto != "push":
+            continue
+        opzioni, posizionali, j = [], [], 0
+        while j < len(args):
+            a = args[j]
+            if a in _PUSH_CON_VALORE:
+                j += 2
+                continue
+            (opzioni if a.startswith("-") else posizionali).append(a)
+            j += 1
+        forza = any(_FORZA.match(a) for a in opzioni)
+        cancella = any(a in ("-d", "--delete") for a in opzioni)
+        if "--mirror" in opzioni:
+            return ("`git push --mirror` fermato: riscrive ogni ramo del remoto, compresi i rami "
+                    f"di gruppo (ADR-0007, ADR-0090). {FAST_FORWARD}")
+        if "--prune" in opzioni:
+            return ("`git push --prune` fermato: cancella sul remoto i rami che qui non ci sono, "
+                    f"compresi i rami di gruppo (ADR-0007, ADR-0090). {FAST_FORWARD}")
+        if any("*" in a for a in posizionali[1:]):
+            return ("Push con un refspec a glob («*») fermato: tocca tutti i rami che combaciano, "
+                    f"compresi quelli di gruppo e i morti (ADR-0007, ADR-0090). {FAST_FORWARD}")
+        if forza and any(a in ("--all", "--branches", "--tags") for a in opzioni):
+            return ("Push forzato di tutti i rami o dei tag fermato: tocca anche i rami di gruppo "
+                    f"(ADR-0007, ADR-0090). {FAST_FORWARD}")
+        corrente = None
+
+        def risolvi(nome: str) -> str:
+            nonlocal corrente
+            if nome in ("HEAD", "@", ""):
+                if corrente is None:
+                    corrente = _ramo_corrente(dove)
+                return corrente
+            return _ramo_di(nome)
+
+        refspec = posizionali[1:]
+        if not refspec and not any(a in ("--all", "--branches", "--tags") for a in opzioni):
+            refspec = ["HEAD"]
+        for r in refspec:
+            piu = r.startswith("+")
+            r = r.lstrip("+")
+            src, sep, dst = r.partition(":")
+            if not sep:
+                dst = src
+            elif not dst:
+                dst = src
+            src_ramo = risolvi(src) if src else ""
+            dst_ramo = risolvi(dst)
+            motivo = _motivo_ramo(dst_ramo, morti, forza or piu or cancella or (sep and not src))
+            if motivo:
+                return motivo
+            if dst_ramo == "main" and (src_ramo.startswith("campaign-group-") or canone_in_commit):
+                return _CANONE_SU_MAIN
+    return None
+
+
+def cancello_github(strumento: str, inp: dict) -> "str | None":
+    """Gli strumenti MCP di GitHub che scrivono: mai su un ramo morto, mai canone su main.
+
+    Sul ramo vivo un commit fatto da questi strumenti si aggiunge sopra la punta del ramo:
+    è un fast-forward per costruzione, e passa.
+    """
+    import sincronia_giocato as sg
+    ramo = _ramo_di(str(inp.get("branch") or ""))
+    motivo = _motivo_ramo(ramo, sg.rami_morti(ROOT / "plans" / "rami-di-gruppo.json"), False)
+    if motivo:
+        return motivo
+    if ramo == "main":
+        percorsi = [str(inp.get("path") or "")] + [str(f.get("path", "")) for f in
+                                                   inp.get("files") or [] if isinstance(f, dict)]
+        if any(sg.e_canone(p) for p in percorsi if p):
+            return _CANONE_SU_MAIN
+    return None
+
+
+def _rami_della_pr(numero: int, owner: str, repo: str) -> "tuple[str, str] | None":
+    """(base, head) di una PR letti con `gh api`, o None se non si leggono."""
+    try:
+        r = subprocess.run(["gh", "api", f"repos/{owner}/{repo}/pulls/{int(numero)}", "--jq",
+                            '.base.ref + " " + .head.ref'], capture_output=True, text=True,
+                           timeout=5)  # sotto i 10 s dell'hook
+    except (OSError, subprocess.SubprocessError, ValueError):
+        return None
+    parti = r.stdout.split()
+    return (parti[0], parti[1]) if r.returncode == 0 and len(parti) == 2 else None
+
+
+def cancello_pr(strumento: str, inp: dict) -> "str | None":
+    """Merge di una PR e aggiornamento del suo ramo: mai un ramo morto, mai il ramo di gruppo su main.
+
+    Se i rami della PR non si leggono, si ferma: non si sa che cosa tocca.
+    """
+    import sincronia_giocato as sg
+    rami = _rami_della_pr(inp.get("pullNumber") or 0, str(inp.get("owner") or ""),
+                          str(inp.get("repo") or ""))
+    if rami is None:
+        return (f"`{strumento}` fermato: non riesco a leggere base e head della PR, quindi non so "
+                "se tocca un ramo di gruppo. Controllali con `gh pr view` e riprova.")
+    base, head = rami
+    morti = sg.rami_morti(ROOT / "plans" / "rami-di-gruppo.json")
+    for ramo in ((base, head) if strumento.endswith("merge_pull_request") else (head,)):
+        motivo = _motivo_ramo(ramo, morti, False)
+        if motivo:
+            return motivo
+    if strumento.endswith("merge_pull_request") and base == "main" and head.startswith("campaign-group-"):
+        return _CANONE_SU_MAIN
+    return None
+
+
 def decidi_cancello(ev: dict) -> dict:
     """Passa, o blocca con il motivo, un push o una PR (ADR-0146, punto 7)."""
     strumento = ev.get("tool_name", "")
     comando = str((ev.get("tool_input") or {}).get("command", ""))
+    # Il canone vale anche nei sottoagenti: è il sincronizzatore che spinge.
+    motivo = None
+    if strumento == "Bash" and "push" in comando:
+        motivo = cancello_canone(comando, ev.get("cwd"))
+    elif strumento in GITHUB_SCRIVE:
+        motivo = cancello_github(strumento, ev.get("tool_input") or {})
+    elif strumento in GITHUB_PR_SCRIVE:
+        motivo = cancello_pr(strumento, ev.get("tool_input") or {})
+    if motivo:
+        return {"esito": "blocca", "motivo": motivo}
     if ev.get("agent_id") or not (strumento in PR_MCP or
                                   (strumento == "Bash" and _PUSH.search(comando))):
         return {"esito": "fuori"}
@@ -334,11 +613,11 @@ def hook_prompt(dati: str) -> int:
         if catena:
             _registra({"evento": "catena", "sessione": ev.get("session_id"), "agenti": catena})
             print(json.dumps({"hookSpecificOutput": {"hookEventName": "UserPromptSubmit",
-                "additionalContext": (
+                "additionalContext": _con_sincronia(testo, catena, (
                     f"Catena scritta nelle istruzioni (ADR-0146): {' → '.join(catena)}, poi "
                     "`autore-documenti`. Chiamali con lo strumento Agent, nell'ordine. Un push "
                     "o una PR senza queste chiamate si ferma; la via d'uscita è "
-                    "`instradamento_agenti.py --deroga \"motivo\"`.")}}, ensure_ascii=False))
+                    "`instradamento_agenti.py --deroga \"motivo\"`."))}}, ensure_ascii=False))
             return 0
         agenti = scegli(testo)
         if not agenti:
@@ -347,7 +626,8 @@ def hook_prompt(dati: str) -> int:
             return 0  # già detto in questa sessione: non ripeterlo a ogni messaggio
         _registra({"evento": "suggerito", "sessione": ev.get("session_id"), "agenti": agenti})
         print(json.dumps({"hookSpecificOutput": {"hookEventName": "UserPromptSubmit",
-                                                 "additionalContext": contesto(agenti)}},
+                                                 "additionalContext": _con_sincronia(
+                                                     testo, agenti, contesto(agenti))}},
                          ensure_ascii=False))
     except Exception:  # un hook rotto non ferma mai il lavoro
         return 0

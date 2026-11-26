@@ -326,7 +326,7 @@ sono quelle del manuale o delle schede.
 |---|---|---|---|---|---|
 | **Gorthak il Trifronte** | 1 | 25 | 202 | due stelle del mattino Grandi +21/+16/+11 (2d6+10 l'una: A.1) | sotto **101**: un round di Furia, poi fugge; a 0 pf o meno è abbattuto |
 | troll dell'ariete (10 DV) | 2 | 16 | 105 | 2 artigli +13 (1d6+7), morso +8 (1d6+3), sbranare 2d6+10; rigenerazione 5 | quando Gorthak fugge, lo seguono; se è abbattuto, per default lasciano il ponte (sotto, «La scorta») |
-| **Grimjaw** | 1 | 26 | 178 (+26 in Furia, dal round 2) | *spada bastarda* +22/+17/+12 (1d10+9, 17-20); in Furia +24/+19/+14 (1d10+11) | sotto **89** fugge (libretto); la scheda: pozione sotto 60; a 0 pf o meno è abbattuto |
+| **Grimjaw** | 1 | 27 | 122 (+28 in Furia, dal round 2) | *spada bastarda* +24/+19/+14 (1d10+10, 17-20); in Furia +26/+21/+16 (1d10+12) | sotto **61** ripiega dietro la guardia e beve, sotto **30** o se cade Fauci si ritira `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]`; a 0 pf o meno è abbattuto |
 | orog della guardia nera | 4 | 21 | 45 | ascia bipenne +14/+9 (1d12+12) | mai: se Grimjaw fugge lo copre e resta indietro, se cade combatte fino alla morte sul suo corpo (la sua scheda, D10) |
 | **Fauci di Palude** | 1 | 33 (41 con *armatura magica* e *scudo*) ¹ | 337 | soffio 14d4, Riflessi CD 29; a terra morso +34 (2d8+10), artigli, ali e coda +31 | il Giorno 1 dopo un passaggio; il Giorno 3 sotto ~**230** sale in quota |
 | il cavaliere | 1 | 23 | 95 | *lancia da cavaliere* +16 (1d8+7, triplo in carica) | resta in sella finché Fauci vola |
@@ -337,7 +337,7 @@ sono quelle del manuale o delle schede.
 ¹ Col corredo della scheda (anello e amuleto); senza, 29 (37 con *armatura magica* e *scudo*). Con o senza: A.5.
 
 **EL**: Gorthak coi due troll circa **13** (12,6); Grimjaw con quattro guardie circa
-**15** (14,9); l'imboscata dei bugbear circa **15** (15,0; 15,6 con la
+**16** (15,6); l'imboscata dei bugbear circa **15** (15,0; 15,6 con la
 diversione; gli orchi, se arrivano, sono nella Scena 8); il soffio, Fauci
 col cavaliere, **15,5**. Il gruppo è di quattro
 eroi su sei: APL **12** senza Borin e Ragnhild, **13** con tutti e due, e il
@@ -509,12 +509,16 @@ terra 66 volte su cento, Yrsa e poi Borin 11), e i randelli Grandi dell'SRD,
 l'archetipo Borin e poi Yrsa vanno a terra 94 volte su cento, e il Gorthak
 di oggi sta già sotto il tetto (EL 12,6 contro 16).
 
-Grimjaw, il soffio e i bugbear **non si alzano**: sono già ad APL+2 o +3.
-La cima della rampa di Grimjaw è chiusa `[CANONE — DM 2026-11-25, card
-«rampa di Grimjaw»]`: contro Borin e Yrsa insieme Grimjaw fugge 62 volte su
-cento, va a 0 pf o meno 8, e uno dei due va a terra 82 (Scena 4). L'EL non
-cambia: 14,9. Scartato dal DM: la rampa aperta, con la guardia che si
-aggira (72, 14 e 50).
+Il soffio e i bugbear **non si alzano**: sono già ad APL+2 o +3. Grimjaw
+sale di un passo `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]`: rifatto con la serie d'élite più
+l'orog `[CANONE — DM 2026-11-20, card «Serie d'élite più orog»]` scendeva a
+100 pf, e prende un livello di guerriero e Robustezza Migliorata: GS 15,
+122 pf, CA 27 (A.3). L'EL passa da 14,9 a 15,6, sotto il tetto di 16. La
+cima della rampa di Grimjaw è chiusa `[CANONE — DM 2026-11-25, card
+«rampa di Grimjaw»]`: contro Borin e Yrsa insieme Grimjaw ripiega 54 volte
+su cento, va a 0 pf o meno 19, e uno dei due va a terra 73 (Scena 4).
+Scartato dal DM: la rampa aperta, con la guardia che si aggira (70, 22 e
+28).
 
 <!-- storico -->
 *Fino al quarto giro (2026-11-25) questa pagina raccontava le prove per
@@ -586,8 +590,8 @@ un'azione, e in un round se ne spende al più uno.
   massimo: contro Gorthak, con Borin che esce per primo, un eroe va a terra
   67 volte su cento col +8 e 58 con l'azione standard in più, invece di
   70; con Yrsa per prima 17 e 11 invece di 19. Contro Grimjaw, a rampa
-  chiusa, 79 e 70 invece di 82; a rampa aperta, scartata dal DM, erano 41 e
-  27 invece di 50
+  chiusa, 64 e 57 invece di 73; a rampa aperta, scartata dal DM, erano 12 e
+  13 invece di 28
   (`plans/esperimenti/scontri-epici-pregen-2026-11-25/esito_punto_eroe.md`).
   L'azione di movimento in più lascia le cifre di oggi: chi la spende per
   arrivare sul comandante attacca una volta sola in quel turno.
@@ -711,8 +715,8 @@ tutti insieme.
 
 ### 🔥 RAGNHILD MANTOFERRO — la maga delle rune (Tolkien lead)
 - Dalla cinta il suo fuoco apre i duelli degli altri, se lancia prima che
-  Borin e Yrsa escano: Grimjaw fugge, o va a 0 pf o meno 15 volte su cento,
-  senza che un nano cada; contro Gorthak
+  Borin e Yrsa escano: Grimjaw ripiega, o va a 0 pf o meno 34 volte su
+  cento, senza che un nano cada; contro Gorthak
   uno dei due cade 3 volte su cento se esce prima Yrsa, 29 se esce prima
   Borin (§0-bis; Scena 4). Dopo, la palla prende anche i nani, e la scelta
   è sua.
@@ -1324,14 +1328,18 @@ duelli sono tutta la battaglia dei pregen.
 **Grimjaw alla breccia** (Scena 4).
 - *Round 1*: Tattico Superiore (+2 a colpire alla guardia) e la Presenza
   intimidatoria; non attacca, guarda chi è salito.
-- *Round 2*: Furia Comandante, al suo turno: +26 pf, e la soglia di fuga
-  resta 89. Se al suo turno è già sotto 89, fugge senza entrare in Furia.
+- *Round 2*: Furia Comandante, al suo turno: +28 pf, e la soglia resta
+  61, metà dei suoi 122 `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]`. Se al suo turno è già sotto 61,
+  ripiega senza entrare in Furia.
   La guardia stringe chi lo minaccia con Attacco Poderoso. Grimjaw attacca
   il nano col martello più grosso, o il pregen del pendio, se c'è.
 - *Round 3 e dopo*: attacco completo; Tattico Superiore ogni round sul tiro
   che serve (danni se la guardia colpisce, TS se Harbek lancia).
-- *Sotto 89*: indietro dietro la guardia, che resta e muore sul posto. Beve
-  una pozione solo quando è già fuori.
+- *Sotto 61* `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]`: indietro dietro la guardia, che resta e muore
+  sul posto, e lì beve una *cura ferite gravi*: beve solo quando è già
+  fuori, perché bere accanto a un nano provoca un attacco d'opportunità
+  `[SRD: Attacks of Opportunity]`. *Sotto 30*, o se cade Fauci, si ritira
+  del tutto e torna al campo.
 - *A 0 pf o meno*: è abbattuto e resta in cima alla rampa; la guardia non lo
   porta via, e combatte fino alla morte sul suo corpo (la sua scheda, D10).
   +2 alla rocca; −3 all'orda, che si segna sulla scheda della serata e per
@@ -1530,7 +1538,7 @@ volta, e il +1 della Preparazione, se c'è, va dove il gruppo lo ha messo.
 > scesi da queste montagne con le vostre frecce nella schiena. Oggi salgo a
 > riprenderle.»*
 
-**Scheda d'entrata — Grimjaw, il generale della Mano Rossa** *(statistiche: Appendice A.3; `ARC08-02` §1; `Bestiario/villain/Generale_Grimjaw.md`. CA 26, 178 pf)*
+**Scheda d'entrata — Grimjaw, il generale della Mano Rossa** *(statistiche: Appendice A.3; `ARC08-02` §1; `Bestiario/villain/Generale_Grimjaw.md`. CA 27, 122 pf `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]`)*
 
 | | |
 |---|---|
@@ -1569,14 +1577,14 @@ sale di uno con loro, non di due.
 **Chi lo sfida.** Il gesto **Sfidare** nel settore di Grimjaw; gli altri
 possono unirsi come per Gorthak, lasciando il loro settore alle tacche.
 
-**Il DM lo dice prima, in chiaro.** Grimjaw con quattro orog (EL circa 15)
-è uno scontro per Borin e Yrsa insieme, e anche così Grimjaw fugge sei
-volte su dieci (62), va a 0 pf o meno 8 volte su cento, e uno dei due va a
-terra 82; nelle
+**Il DM lo dice prima, in chiaro.** Grimjaw con quattro orog (EL circa 16)
+è uno scontro per Borin e Yrsa insieme, e anche così Grimjaw ripiega poco
+più di una volta su due (54), va a 0 pf o meno 19 volte su cento, e uno
+dei due va a terra 73; nelle
 prove nessun nano cade solo se Ragnhild apre col fuoco dalla cinta prima che i
-due salgano. Borin da solo cade sempre, e Grimjaw non scende mai a 89;
-lo stesso Harbek e Nala senza Ragnhild. Yrsa da sola lo fa fuggire 27 volte
-su cento, lo porta a 0 pf o meno 2, e cade 74. Il DM ripete a voce la
+due salgano. Borin da solo cade sempre, e Grimjaw non scende mai a 61;
+lo stesso Harbek e Nala senza Ragnhild. Yrsa da sola lo fa ripiegare 16
+volte su cento, lo porta a 0 pf o meno 5, e cade 82. Il DM ripete a voce la
 correzione al libretto (Scena 1): Grimjaw a 0 pf è abbattuto e vale +2 alla
 rocca, anche se il libretto stampato dice ancora il contrario (regia, non
 read-aloud). La via per chi non vuole il duello è scritta qui sotto: nessuno lo
@@ -1590,21 +1598,22 @@ o si apre lì sotto i colpi dei giganti (Scena 3, il Muro Est).
 
 | Chi | Dove | Cosa fa |
 |---|---|---|
-| **Grimjaw** | in cima alla rampa | round 1: Tattico Superiore (+2 a colpire alla guardia) e Presenza intimidatoria (Volontà CD 19, o −2 a colpire entro 9 m). Dal round 2: Furia Comandante (+4 For e Cos: +24/+19/+14, 1d10+11; +2 a colpire e danni alla guardia entro 6 m). Attacco completo sul nano col martello più grosso |
+| **Grimjaw** | in cima alla rampa | round 1: Tattico Superiore (+2 a colpire alla guardia) e Presenza intimidatoria (Volontà CD 19, o −2 a colpire entro 9 m). Dal round 2: Furia Comandante (+4 For e Cos: +26/+21/+16, 1d10+12; +2 a colpire e danni alla guardia entro 6 m). Attacco completo sul nano col martello più grosso |
 | **4 orog** della guardia nera | due davanti, due ai lati di Grimjaw, dietro i primi | guardia del corpo: la cima è chiusa, e per colpire Grimjaw in mischia prima si abbatte uno dei due davanti (Tattiche, «La guardia del corpo»). Attacco Poderoso a −3 (+6 danni) |
 
 **Grimjaw, e la rampa chiusa** `[CANONE — DM 2026-11-25, card «rampa di
 Grimjaw»]`. Prove simulate del 2026-11-25,
-sesto giro (4.000 duelli per riga, iniziativa tirata; script ed esiti in
+sesto giro, rifatte con la scheda di A.3 <!-- rifatte il 2026-11-26 --> `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]` (4.000 duelli per riga, iniziativa tirata; script ed esiti in
 `plans/esperimenti/scontri-epici-pregen-2026-11-25/`: `esito_simulazione.md`,
 «la rampa chiusa, se ne abbatte uno», ed `esito_rampa_chiusa.md`). La
 guardia è quella delle Tattiche: prima uno dei due orog davanti va
 abbattuto, poi chi arriva a Grimjaw prende l'attacco d'opportunità di un
 orog e in quel round fa un attacco solo. Contano la Presenza intimidatoria,
 la Sfida di Yrsa da quando gli è accanto, la resistenza al fuoco 10
-dell'armatura e i 26 pf della Furia dal round 2, con la soglia di fuga
-ferma a 89. Le colonne sono quelle di Gorthak: «fugge», al suo turno è
-sotto 89 e lascia la rampa; «a 0 pf o meno», gli eroi lo portano a 0 pf o
+dell'armatura e i 28 pf della Furia dal round 2, con la soglia ferma a
+61. Le colonne sono quelle di Gorthak: «ripiega», al suo turno è sotto 61
+e lascia la rampa dietro la guardia (la *cura ferite gravi* che beve dopo
+non conta: è già fuori); «a 0 pf o meno», gli eroi lo portano a 0 pf o
 sotto prima. Lì Grimjaw è **abbattuto**
 `[CANONE — DM 2026-11-26, card «comandante a 0 pf nell'assedio»]`:
 resta in cima alla rampa, +2 al morale della rocca e −3 all'orda (si segna
@@ -1613,46 +1622,49 @@ libretto), la sua carta si toglie subito e non torna, e all'ondata finale
 della 3A, al round 12, entra al suo posto il capitano minore, che si ritira
 da solo (§0-bis, «Il comandante a 0 pf o meno»). Le cifre sono volte su cento.
 
-| Chi lo sfida | lui fugge | lui a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra |
+| Chi lo sfida | lui ripiega | lui a 0 pf o meno | round al ripiego | round a 0 pf | un eroe a terra |
 |---|---|---|---|---|---|
 | Borin da solo | mai | mai | — | — | sempre |
-| Yrsa da sola | 27 | 2 | 4,8 | 4,5 | 74 |
-| Borin e Yrsa | 62 | 8 | 4,0 | 3,6 | 82 |
-| Borin, Yrsa e Harbek (senza incantesimi) | 72 | 13 | 3,8 | 3,4 | 86 |
-| Borin e Yrsa, con Ragnhild che apre col fuoco dalla cinta | 85 | 15 | 1,9 | 1,9 | mai |
+| Yrsa da sola | 16 | 5 | 4,5 | 4,4 | 82 |
+| Borin e Yrsa | 54 | 19 | 3,5 | 3,3 | 73 |
+| Borin, Yrsa e Harbek (senza incantesimi) | 61 | 24 | 3,4 | 3,2 | 79 |
+| Borin e Yrsa, con Ragnhild che apre col fuoco dalla cinta | 66 | 34 | 1,5 | 1,2 | mai |
 | Harbek e Nala | mai | mai | — | — | sempre |
-| Harbek e Nala, con Ragnhild che apre | 98 | mai | 4,3 | — | 55 |
-| nessuno sale: Ragnhild da sola dal camminamento | 53 | mai | 4,4 | — | 47: è lei |
+| Harbek e Nala, con Ragnhild che apre | 100 | mai | 2,4 | — | 18 |
+| nessuno sale: Ragnhild da sola dal camminamento | 92 | mai | 2,6 | — | 8: è lei |
 
 Yrsa da sola, Harbek e Nala senza Ragnhild, e Ragnhild da sola vengono da
-`esito_rampa_chiusa.md` (opzione `--rampa-chiusa` dello script, 2026-11-25);
+`esito_rampa_chiusa.md` (opzione `--rampa-chiusa` dello script <!-- 2026-11-25, rifatto il 2026-11-26 -->);
 le altre righe da `esito_simulazione.md`. Le righe che tornano uguali nella tabella della rampa aperta vengono da un altro lancio dello script, e uno o due punti di differenza sono rumore. Ragnhild non sale: la rampa chiusa
 non la riguarda, e la sua riga è quella della rampa aperta. Lo stesso file
 prova la regola dell'orog che si stacca (la cima chiusa dai due davanti): le
-cifre restano queste entro due punti, e Borin e Yrsa fanno 62, 9 e 82.
+cifre restano queste entro due punti, e Borin e Yrsa fanno 53, 19 e 73.
 
 **Scartato dal DM: la rampa aperta**, dove la guardia si aggirava. La
 tabella resta solo per confronto: al tavolo si usa quella qui sopra.
 
-| Chi lo sfida, a rampa aperta | lui fugge | lui a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra |
+| Chi lo sfida, a rampa aperta | lui ripiega | lui a 0 pf o meno | round al ripiego | round a 0 pf | un eroe a terra |
 |---|---|---|---|---|---|
-| Borin da solo | 2 | mai | 2,2 | — | 99 |
-| Yrsa da sola | 45 | 4 | 2,8 | 2,6 | 56 |
-| Borin e Yrsa | 72 | 14 | 2,6 | 2,2 | 50 |
-| Borin, Yrsa e Harbek (senza incantesimi) | 77 | 18 | 2,6 | 2,1 | 63 |
-| Borin e Yrsa, con Ragnhild che apre col fuoco dalla cinta | 84 | 16 | 1,9 | 1,9 | mai |
+| Borin da solo | 10 | mai | 2,1 | — | 93 |
+| Yrsa da sola | 34 | 17 | 2,4 | 2,1 | 52 |
+| Borin e Yrsa | 70 | 22 | 2,1 | 2,0 | 28 |
+| Borin, Yrsa e Harbek (senza incantesimi) | 68 | 29 | 2,0 | 2,0 | 42 |
+| Borin e Yrsa, con Ragnhild che apre col fuoco dalla cinta | 67 | 33 | 1,5 | 1,2 | mai |
 | Harbek e Nala | mai | mai | — | — | sempre |
-| Harbek e Nala, con Ragnhild che apre | 99 | mai | 4,3 | — | 55 |
-| nessuno sale: Ragnhild da sola dal camminamento | 53 | mai | 4,4 | — | 47: è lei |
+| Harbek e Nala, con Ragnhild che apre | 100 | mai | 2,4 | — | 19 |
+| nessuno sale: Ragnhild da sola dal camminamento | 92 | mai | 2,5 | — | 8: è lei |
 
 Con Ragnhild che apre insieme a Borin e Yrsa, il duello è chiuso già al
-primo round una volta su quattro (23, contando la fuga e lo 0 pf): Grimjaw ha Iniziativa +5 contro il +6 di lei, e
-metà delle volte ha già agito quando la palla arriva. Da sola, Ragnhild non
-basta: Grimjaw risponde con l'arco e manda i due orog dietro sul camminamento. Il
+primo round più di una volta su due (61, contando il ripiego e lo 0 pf): Grimjaw ha Iniziativa +4 contro il +6 di lei, e
+quattro volte su dieci ha già agito quando la palla arriva. Da sola,
+Ragnhild lo fa ripiegare 92 volte su cento, in due round e mezzo, e va a
+terra 8: Grimjaw risponde con l'arco e manda i due orog dietro sul
+camminamento, e quasi sempre è già tardi. Il
 terzo eroe in mischia, senza i suoi incantesimi, alza il rischio: gli orog
 hanno un bersaglio in più. Il generale torna al finale se è fuggito o se
 nessuno lo ha sfidato, e i suoi numeri
-restano quelli di A.3: il DM ha chiuso la rampa e non lo ha alzato. Se è
+restano quelli di A.3: il DM ha chiuso la rampa e lo ha rinforzato di un
+passo `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]`. Se è
 stato abbattuto non torna (§0-bis, «Il comandante a 0 pf o meno»). I
 limiti: mancano gli
 incantesimi di Harbek e di Nala, l'Ispirare Coraggio, la Presenza
@@ -1668,8 +1680,8 @@ non sono provati.
 - **Contro Ragnhild.** Sulla rampa la guardia sta stretta, e una *palla di
   fuoco* li prende tutti e cinque, meno i 10 che l'armatura toglie a
   Grimjaw. Nelle prove, con Ragnhild che apre dalla cinta insieme a Borin e
-  Yrsa, prima che i due salgano, Grimjaw fugge in due round, 85 volte su
-  cento, o va a 0 pf o meno, 15, e nessun nano va a terra. Dopo, la palla prende anche i nani. Grimjaw lo sa,
+  Yrsa, prima che i due salgano, Grimjaw ripiega in un round e mezzo, 66
+  volte su cento, o va a 0 pf o meno, 34, e nessun nano va a terra. Dopo, la palla prende anche i nani. Grimjaw lo sa,
   se lei era sul pendio il Giorno −1 (Scheda d'entrata, «Sa»). Allora il suo
   Tattico Superiore del round 1 non va a colpire: va ai **Riflessi** della
   guardia, +2 per un round (A.3), e i due orog dietro, quelli dei lati, si
@@ -1700,11 +1712,16 @@ non sono provati.
 - **Contro Borin.** È il «nano col martello più grosso»: l'attacco completo
   del round 2 è per lui, e per lui la guardia usa l'Attacco Poderoso.
 
-**Quando smette.** Sotto metà dei suoi pf, **89**, fugge (libretto §5): la
-guardia lo copre e resta indietro. **+2** al morale; la carta si toglie per quel giorno,
-e torna il Giorno 3 se il DM la gioca. La sua scheda (`ARC08-02`) lo fa bere
-una pozione sotto i 60 e ripiegare sotto i 30: nell'assedio vale la soglia
-del libretto, che arriva prima.
+**Quando smette** `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]`. Sotto metà dei suoi pf, **61**, ripiega
+dietro la guardia, come vuole anche il libretto (§5): la guardia lo copre e
+resta indietro, e lì dietro beve una *cura ferite gravi* (3d8+5). **+2** al
+morale; la carta si toglie per quel giorno, e torna il Giorno 3 se il DM la
+gioca. Sotto un quarto, **30**, o se cade Fauci, si ritira del tutto e
+torna al campo.
+<!-- Domanda aperta al DM (card «Come rinforzo Grimjaw», 2026-11-26): se si ritira del tutto sotto 30, o perché è caduta Fauci, la carta di Grimjaw torna il Giorno 3? Base: la card dice solo «si ritira del tutto»; il Giorno 3 della Scena 5 rimette la carta «dove è fuggito, coi pf che la notte gli ha lasciato». Default proposto: torna come dopo un ripiego. -->
+<!-- storico -->
+Fino al 2026-11-26: «Sotto metà dei suoi pf, 89, fugge (libretto §5) … La sua scheda (`ARC08-02`) lo fa bere una pozione sotto i 60 e ripiegare sotto i 30: nell'assedio vale la soglia del libretto, che arriva prima.»
+<!-- /storico -->
 
 **Se Grimjaw va a 0 pf o meno** `[CANONE — DM 2026-11-26, card «comandante a 0 pf nell'assedio»]`:
 è **abbattuto**, e la fuga non c'è. Resta in cima alla rampa, e la guardia
@@ -2726,9 +2743,13 @@ Boost log: 2026-11-05 — troll dell'SRD da 6 a 10 DV, fuori dall'avanzamento de
 *Prima del 2026-11-05: troll comuni dell'SRD, 6 DV, GS 5, pf 63, artigli +9 (1d6+6), morso +4, sbranare 2d6+9, Temp +11 Rifl +4 Vol +3, Ascoltare +5 Osservare +6.*
 <!-- /storico -->
 
-**A.3 · Grimjaw** · `ARC08-02` §1; `Bestiario/villain/Generale_Grimjaw.md` · orog Guerriero 10 / Signore della Guerra 3, ⚠️ non SRD (orog e classe di prestigio [Private source]) · GS 14 · Iniz +5 · scurovisione 18 m · Ascoltare +13, Osservare +13 · CA **26**, contatto 12, colto alla sprovvista 24 · pf **178** · resistenza al fuoco 10 (l'armatura demoniaca, `ARC08-01`) · Temp +18, Rifl +8, Vol +10 · velocità 6 m · *spada bastarda demoniaca +1* +22/+17/+12 (1d10+9, 17-20, +1d6 fuoco sul critico); *arco lungo composito +1* +15/+10/+5 (1d8+7) · **Furia Comandante** 1/giorno, 8 round: +4 For e Cos (+24/+19/+14, 1d10+11; +26 pf, che non spostano la soglia di fuga), alleati entro 6 m +2 a colpire e danni · **Presenza intimidatoria**: entro 9 m −2 a colpire, Volontà **CD 19** nega · **Tattico Superiore**: azione gratuita, +2 a un tipo di tiro agli alleati entro 18 m per un round · 2 pozioni di *cura ferite gravi* · **fugge sotto 89** nell'assedio (libretto §5).
+**A.3 · Grimjaw** · `ARC08-02` §1; `Bestiario/villain/Generale_Grimjaw.md` · orog Guerriero 11 / Signore della Guerra 3 `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]`, ⚠️ non SRD (orog, classe di prestigio e Robustezza Migliorata [Private source]) · GS 15 · Iniz +4 · scurovisione 18 m · Ascoltare −1, Osservare −1 · CA **27** (anello di protezione +1), contatto 11, colto alla sprovvista 27 · pf **122** (14d10+45) · resistenza al fuoco 10 (l'armatura demoniaca, `ARC08-01`) · Temp +14, Rifl +6, Vol +7 · velocità 6 m · *spada bastarda demoniaca +1* +24/+19/+14 (1d10+10, 17-20, +1d6 fuoco sul critico); *arco lungo composito +1* +15/+10/+5 (1d8+7) · **Furia Comandante** 1/giorno, 8 round: +4 For e Cos (+26/+21/+16, 1d10+12; +28 pf, 150 in tutto, che non spostano la soglia), alleati entro 6 m +2 a colpire e danni · **Presenza intimidatoria**: entro 9 m −2 a colpire, Volontà **CD 19** nega · **Tattico Superiore**: azione gratuita, +2 a un tipo di tiro agli alleati entro 18 m per un round · 2 pozioni di *cura ferite gravi* · **sotto 61 ripiega** dietro la guardia e beve, **sotto 30** o se cade Fauci si ritira del tutto `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]`.
+<!-- Domande aperte al DM (2026-11-26): i TS del Signore della Guerra (qui Tempra buona, +3/+1/+1 al 3°) e i punti abilità (Ascoltare e Osservare a −1, Intimidire +16) restano da decidere: la classe non è identificata. Base: Bestiario/villain/Generale_Grimjaw.md, «I conti». -->
+<!-- storico -->
+Fino al 2026-11-26: orog Guerriero 10 / Signore della Guerra 3 · GS 14 · Iniz +5 · Ascoltare +13, Osservare +13 · CA 26, contatto 12, colto alla sprovvista 24 · pf 178 · Temp +18, Rifl +8, Vol +10 · spada +22/+17/+12 (1d10+9); in Furia +24/+19/+14 (1d10+11), +26 pf · fugge sotto 89 nell'assedio (libretto §5).
+<!-- /storico -->
 
-**A.4 · Orog della guardia nera** (×4) · `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md`, ⚠️ non SRD (orog) · GS 7 · Guerriero 6, Medio, LM · Iniz +4 · scurovisione 18 m · CA **21**, contatto 10, colto alla sprovvista 21 · pf **45** · Temp +7, Rifl +2, Vol +4 · velocità 6 m · *ascia bipenne +1* +14/+9 (1d12+12, ×3); con Attacco Poderoso a −3: +11/+6, 1d12+18 · Incalzare, Incalzare Potenziato · **guardia del corpo**: chi attacca Grimjaw in mischia deve prima superarne uno; immune alla paura finché Grimjaw è vivo. Grimjaw con quattro guardie: **EL** circa 15.
+**A.4 · Orog della guardia nera** (×4) · `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md`, ⚠️ non SRD (orog) · GS 7 · Guerriero 6, Medio, LM · Iniz +4 · scurovisione 18 m · CA **21**, contatto 10, colto alla sprovvista 21 · pf **45** · Temp +7, Rifl +2, Vol +4 · velocità 6 m · *ascia bipenne +1* +14/+9 (1d12+12, ×3); con Attacco Poderoso a −3: +11/+6, 1d12+18 · Incalzare, Incalzare Potenziato · **guardia del corpo**: chi attacca Grimjaw in mischia deve prima superarne uno; immune alla paura finché Grimjaw è vivo. Grimjaw con quattro guardie: **EL** circa 16 (15,6).
 
 **A.5 · Fauci di Palude** · `ARC08-02` §1; `Bestiario/villain/Fauci_di_Palude.md` · drago nero adulto maturo a 25 DV (potenziamento dichiarato) · GS 15 · Enorme · CA **33**, contatto 10 `[CANONE — DM 2026-11-21, card]` (**41** con *armatura magica*, che lancia all'alba e dura tutto il giorno, e *scudo*, che dura 7 minuti e rilancia a ogni passaggio; il 33 conta l'*anello di protezione +2* e l'*amuleto dell'armatura naturale +2*) · pf **337** · Temp +24, Rifl +19, Vol +22 (*mantello della resistenza +3*) · RD 10/magia, RI **21**, immune all'acido · volare 45 m (scarsa), Fluttuare, Attacco in Volo · **soffio** in linea di 30 m, 14d4 acido, Riflessi **CD 29**, ogni 1d4 round · a terra: **morso** +34 (2d8+10, 19-20), **2 artigli** +31 (2d6+5), **2 ali** +31 (1d8+5), **colpo di coda** +31 (2d6+15); Spazio 4,5 m, Portata 3 m · **soffio a cono** di 18 m, 1/giorno, con un round completo per prepararlo (⚠️ house-rule della scheda: l'SRD dà ai draghi neri solo la linea) · **Presenza terrificante** 90 m, Volontà **CD 25** (⚠️ potenziamento: 63 m nell'SRD per l'adulto maturo) · *dissolvi magie*, *nube maleodorante*, *immagine speculare* da stregone di 7° · il Giorno 3 sale in quota sotto ~**230** pf; atterra su un bastione se ha preso più di 50 danni nella scena. Porta anche 2 pergamene di *invisibilità superiore*, 2 di *nebbia acida* e 2 pozioni di *cura ferite gravi* (il corredo della card del 21/11, marca qui sopra), ma in questa sessione non le usa: il Giorno 1 vuole che le mura lo vedano, il Giorno 3 la sequenza è il cono e la lancia sul Re, e nella nebbia il Re avrebbe occultamento contro la lancia; la pozione la beve sotto i 150 pf, e qui se ne va prima, sotto ~230 `[INFERRED — Il DM conferma che nella Sessione 2 Fauci non usa pergamene né pozioni?; base: le scene 2 e 6 sono costruite sul drago che si fa vedere e sul colpo al Re, e le schede in ARC08-02 §1 mettono invisibilità e nebbia contro le mura e contro Thorik]`.
 

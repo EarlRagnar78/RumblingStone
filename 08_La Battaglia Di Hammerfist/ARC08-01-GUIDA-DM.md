@@ -331,32 +331,33 @@ SIMBOLI TATTICI:
 
 <div style="page-break-before:always"></div>
 
-#### **⚔️ GENERALE GRIMJAW (Orog Guerriero 10°/Signore della Guerra 3°, GS 14)** — orog e Signore della Guerra [Private source — vedi nota]
+#### **⚔️ GENERALE GRIMJAW (Orog Guerriero 11°/Signore della Guerra 3°, GS 15)** — orog e Signore della Guerra [Private source — vedi nota] `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]`
 **Descrizione da Leggere:**
 > *"Al centro della formazione hobgoblin cavalca un orog dalle cicatrici profonde. Generale Grimjaw porta i segni di cento battaglie: un occhio coperto da una benda nera, tre dita mozzate della mano sinistra, e una terribile cicatrice che va dall'orecchio al mento. La sua armatura nera riflette le fiamme dell'inferno, e la sua voce tuona ordini che trasformano una massa caotica in una macchina da guerra perfetta."*
 
-*LM Umanoide Mostruoso Medio (Orco)*
-**Caratteristiche:** For 22, Des 13, Cos 26, Int 14, Sag 13, Car 16
-**Iniziativa:** +5; 
-**Sensi:** Scurovisione 18m; Ascoltare +13, Osservare +13
-**CA:** 26 (+1 Des, +10 armatura, +3 scudo, +1 schivare, +1 naturale), contatto 12, colto alla sprovvista 24
-**PF:** 178 (13 DV; 13d10+107)
-**TS:** Tempra +18, Riflessi +8, Volontà +10
+*LM Umanoide Medio (orco)*
+**Caratteristiche:** For 24, Des 10, Cos 14, Int 8, Sag 8, Car 15
+**Iniziativa:** +4; 
+**Sensi:** Scurovisione 18m; Ascoltare −1, Osservare −1
+**CA:** 27 (+10 armatura, +3 scudo, +3 naturale, +1 deviazione), contatto 11, colto alla sprovvista 27
+**PF:** 122 (14 DV; 14d10+45); in Furia 150
+**TS:** Tempra +14, Riflessi +6, Volontà +7
 **Velocità:** 6m (in armatura)
-**Attacco Base:** +13; 
-**Lotta:** +19
-**Attacco:** *Spada Bastarda Demoniaca +1* +22 in mischia (1d10+9/17-20 più 1d6 fuoco su critico)
-**Attacco Completo:** *Spada Bastarda Demoniaca +1* +22/+17/+12 in mischia (1d10+9/17-20 più 1d6 fuoco su critico)
+**Attacco Base:** +14; 
+**Lotta:** +21
+**Attacco:** *Spada Bastarda Demoniaca +1* +24 in mischia (1d10+10/17-20 più 1d6 fuoco su critico)
+**Attacco Completo:** *Spada Bastarda Demoniaca +1* +24/+19/+14 in mischia (1d10+10/17-20 più 1d6 fuoco su critico)
 **Distanza:** *Arco Composito Lungo Poderoso +1 (+6 For)* +15/+10/+5 (1d8+7/x3)
 **Attacchi Speciali:**
-*   **Furia Comandante (Str):** 1/giorno per 8 round, ottiene +4 For, +4 Cos. Gli alleati entro 6m ottengono +2 morale agli attacchi e ai danni.
+*   **Furia Comandante (Str):** 1/giorno per 8 round, ottiene +4 For, +4 Cos (For 28, Cos 18: +26/+21/+16, 1d10+12; Lotta +23; Tempra +16; +28 pf). Gli alleati entro 6m ottengono +2 morale agli attacchi e ai danni.
 *   **Presenza Intimidatoria (Str):** Nemici entro 9m subiscono -2 ai tiri per colpire. TS Volontà CD 19 nega.
 *   **Tattico Superiore (Str):** Come azione gratuita, può fornire +2 bonus a un tipo di tiro (attacco, danno, TS) a tutti gli alleati entro 18m per 1 round.
 
-**Talenti:** Arma Focalizzata (Spada Bastarda), Arma Specializzata (Spada Bastarda), Critico Migliorato (Spada Bastarda), Schivare, Attacco Poderoso, Incalzare, Arma Focalizzata Superiore (Spada Bastarda), Competenza nelle Armi Esotiche (Spada Bastarda), Robustezza, Incalzare Potenziato, Iniziativa Migliorata (gli ultimi cinque confermati dal DM, 2026-10-18).
-**Equipaggiamento:** *Armatura Completa Demoniaca +2* (Resistenza al Fuoco 10), *Scudo Pesante in Acciaio +1 con Spuntoni*, *Spada Bastarda Demoniaca +1*, *Mantello della Resistenza +2*, *Arco Composito Lungo Poderoso +1 (+6 For)*, *Amuleto dell'Armatura Naturale +1* e 2 *Pozioni di Cura Ferite Gravi*.
+**Talenti:** Arma Focalizzata (Spada Bastarda), Arma Specializzata (Spada Bastarda), Critico Migliorato (Spada Bastarda), Volontà di Ferro, Attacco Poderoso, Incalzare, Arma Focalizzata Superiore (Spada Bastarda), Competenza nelle Armi Esotiche (Spada Bastarda), Robustezza, Robustezza Migliorata, Iniziativa Migliorata. Volontà di Ferro al posto di Schivare, Robustezza Migliorata al posto di Incalzare Potenziato `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]`.
+**Abilità:** Intimidire +16, Cavalcare +3 `[INFERRED — Come spende i punti abilità, e quanti ne dà il Signore della Guerra?; base: Guerriero 11 con Int 8 dà 14 punti, la classe di prestigio forse 3; Ascoltare e Osservare non sono abilità del guerriero, e la penalità di armatura è −6]`
+**Equipaggiamento:** *Armatura Completa Demoniaca +2* (Resistenza al Fuoco 10), *Scudo Pesante in Acciaio +1 con Spuntoni*, *Spada Bastarda Demoniaca +1*, *Mantello della Resistenza +2*, *Arco Composito Lungo Poderoso +1 (+6 For)*, *Amuleto dell'Armatura Naturale +1*, *Anello di Protezione +1* `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]` e 2 *Pozioni di Cura Ferite Gravi*.
 
-**Tattiche:** Grimjaw è un comandante, non un combattente solitario. Rimane sempre protetto dalle sue Guardie Nere Orog. Usa Tattico Superiore ogni round per potenziare le sue truppe. Attiva la Furia Comandante solo quando la battaglia raggiunge il suo culmine o viene ingaggiato personalmente. La sua morte causa un crollo del morale di -3 a tutto l'esercito. *Morale*: non combatte fino alla morte. Sotto i 60 pf beve una pozione e ripiega dietro le Guardie Nere; sotto i 30 pf, o se cade Fauci, suona la ritirata e torna al campo. Resta solo se Thorik lo ha sfidato davanti all'esercito: lì l'arroganza è più forte della prudenza.
+**Tattiche:** Grimjaw è un comandante, non un combattente solitario. Rimane sempre protetto dalle sue Guardie Nere Orog. Usa Tattico Superiore ogni round per potenziare le sue truppe. Attiva la Furia Comandante solo quando la battaglia raggiunge il suo culmine o viene ingaggiato personalmente. La sua morte causa un crollo del morale di -3 a tutto l'esercito. *Morale* `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]`: non combatte fino alla morte. Sotto metà dei pf (61) ripiega dietro le Guardie Nere, e lì beve una *cura ferite gravi*; sotto un quarto (30), o se cade Fauci, suona la ritirata e torna al campo. Resta solo se Thorik lo ha sfidato davanti all'esercito: lì l'arroganza è più forte della prudenza.
 
 > **Fonti e verifica 3.5**: l'**orog** non è nell'SRD
 > [Private source — Monsters of Faerûn]; il **Signore della Guerra** non è
@@ -367,12 +368,27 @@ SIMBOLI TATTICI:
 > quelli della scheda, confermati dal DM il 2026-10-18. PF1e: il **Cavaliere** (APG,
 > ordine del Drago) si avvicina, perché dà bonus agli alleati vicini e tiene
 > il guerriero in prima linea; il *Battle Herald* farebbe di più il
-> comandante ma stravolge il combattente. Conti ricontati: la *Armatura
-> Completa +2* vale +10 (era +9), Tempra non può stare sotto +18 (Gue 10 +7,
-> classe di prestigio almeno +1, Cos +8, mantello +2), il danno a una mano
-> con Arma Specializzata è +9, la CD della Presenza è 10 + ½ livello + Car.
-> 13 livelli danno 11 talenti: i cinque aggiunti sono gli ultimi della lista, e
-> Robustezza spiega i 178 pf (13d10+104 = 175, +3).
+> comandante ma stravolge il combattente. **Robustezza Migliorata** non è
+> nell'SRD [Private source — Complete Warrior]: +1 pf per DV. Conti
+> ricontati: le caratteristiche sono la serie d'élite (DMG p. 110) più
+> l'orog (Races of Faerûn: For +6, Des −2, Sag −2, Car +2, armatura
+> naturale +2), con i tre aumenti in For `[CANONE — DM 2026-11-20, card
+> «Serie d'élite più orog»]`; pf 77 (14 × 5,5) + 28 (Cos) + 3 (Robustezza)
+> + 14 (Robustezza Migliorata) = 122; CA 10 + 10 + 3 + 3 (orog 2, amuleto 1)
+> + 1 (anello); BAB 11 + 3; spada 14 + 7 (For) + 1 (arma) + 2 (le due Arma
+> Focalizzata) = +24, danno 7 + 2 (Specializzata) + 1 = +10; Tempra 7 + 3 +
+> 2 (Cos) + 2 (mantello) = +14, Volontà 3 + 1 − 1 + 2 + 2 (Volontà di
+> Ferro) = +7 `[INFERRED — Che progressione di TS ha il Signore della
+> Guerra?; base: la classe non è identificata; qui Tempra buona, +3/+1/+1 al
+> 3°]`; la CD della Presenza è 10 + 7 (½ di 14) + 2 (Car) = 19. 14 livelli
+> danno 11 talenti (5 generici, 6 da guerriero). Schivare esce perché chiede
+> Des 13 (SRD).
+>
+> <!-- storico -->
+> Fino al 2026-11-26 (card del DM «Come rinforzo Grimjaw», opzione A, sopra la serie d'élite più orog del 2026-11-20):
+> era Guerriero 10°/Signore della Guerra 3°, GS 14, «LM Umanoide Mostruoso Medio (Orco)»; For 22, Des 13, Cos 26, Int 14, Sag 13, Car 16; Iniziativa +5; Ascoltare +13, Osservare +13; CA 26 (+1 Des, +1 schivare, +1 naturale), contatto 12, colto alla sprovvista 24; PF 178 (13 DV; 13d10+107); Tempra +18, Riflessi +8, Volontà +10; BAB +13, Lotta +19; spada +22/+17/+12 (1d10+9); Schivare e Incalzare Potenziato fra i talenti; Morale: sotto i 60 pf la pozione e il ripiego, sotto i 30 la ritirata.
+> era (conti del 2026-10-18): Tempra non sotto +18 (Gue 10 +7, classe di prestigio almeno +1, Cos +8, mantello +2); Robustezza spiegava i 178 pf (13d10+104 = 175, +3).
+> <!-- /storico -->
 
 <div style="page-break-before:always"></div>
 
@@ -1128,7 +1144,7 @@ L'esercito è organizzato in quattro linee d'assalto principali, con supporto ae
 ### **🔴 ESERCITO DELLA MANO ROSSA (900 unità)**
 *(Statistiche e tattiche complete per ogni tipo di unità)*
 
-*   **Comandanti:** Fauci di Palude (GS 15), Generale Grimjaw (GS 14), Gorthak il Trifronte (GS 12).
+*   **Comandanti:** Fauci di Palude (GS 15), Generale Grimjaw (GS 15), Gorthak il Trifronte (GS 12).
 *   **Élite:** Cavaliere Hobgoblin (GS 10), Orog Guardie Nere (GS 7), Sergenti Hobgoblin (GS 5).
 *   **Supporto Magico:** Doom Hand Warpriests (GS 8, **Tattica:** potenziano le prime linee e usano *Dissolvi Magie*), War Adepts (GS 6, **Tattica:** aprono con *Palla di Fuoco* sulle unità compatte), Shamani Draconici (GS 5, **Tattica:** forniscono resistenza al fuoco e buff).
 *   **Artiglieria:** Giganti delle Colline (GS 7, **Tattica:** bombardano le mura da lontano), Ettin Standard (GS 6).
@@ -2664,7 +2680,7 @@ CERIMONIA DELLE ASCE - TRAMONTO
 ## **5. CAPITOLO 3: DETTAGLIO FORZE IN CAMPO**
 
 ### **ESERCITO DELLA MANO ROSSA (900 unità)**
-*   **Comandanti:** Fauci di Palude (GS 15), Generale Grimjaw (GS 14), Gorthak il Trifronte (GS 12)
+*   **Comandanti:** Fauci di Palude (GS 15), Generale Grimjaw (GS 15), Gorthak il Trifronte (GS 12)
 *   **Élite:** Cavaliere Hobgoblin (GS 10), Orog Guardie Nere (GS 7), Sergenti Hobgoblin (GS 5)
 *   **Supporto Magico:** Doom Hand Warpriests (GS 8), War Adepts (GS 6), Shamani Draconici (GS 5)
 *   **Artiglieria:** Giganti delle Colline (GS 7), Ettin Standard (GS 6)
@@ -3018,13 +3034,13 @@ incontri `[CANONE — DM 2026-10-19, D19]`.*
     *   **Fine Scontro:** Atterra solo per finire Thorik, dopo averlo preso in bocca e lasciato cadere, una volta (scheda, «La presa di Thorik»), e prima lancia *nube maleodorante* sui compagni. Non combatte fino alla morte, fugge sotto i 112 PF `[CANONE — DM 2026-11-15]`.
 
 **Scheda Boss 2: GENERALE GRIMJAW (Orog Comandante)**
-*   **GS 14 - PF 178 - CA 26**
-*   **Attacchi Principali:** Spada Bastarda +22/+17/+12 (1d10+9)
+*   **GS 15 - PF 122 - CA 27**
+*   **Attacchi Principali:** Spada Bastarda +24/+19/+14 (1d10+10)
 *   **Tattiche Chiave:**
     *   **Sempre Protetto:** Non si espone mai. Circondato dalle sue 4 Guardie Nere Orog.
     *   **Buff:** Usa **Tattico Superiore** ogni round.
     *   **Momento Critico:** Attiva **Furia Comandante** quando viene ingaggiato direttamente o quando i nani caricano.
-    *   **Fuga:** Usa pozioni e oggetti magici per sopravvivere. La sua morte causa un crollo del morale nemico (-3).
+    *   **Fuga:** sotto 61 PF ripiega dietro le guardie e beve una *cura ferite gravi*; sotto 30, o se cade Fauci, si ritira `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]`. La sua morte causa un crollo del morale nemico (-3).
 
 **Scheda Boss 3: GORTHAK IL TRIFRONTE (Ettin a 3 Teste)**
 *   **GS 12 - PF 202 - CA 25**

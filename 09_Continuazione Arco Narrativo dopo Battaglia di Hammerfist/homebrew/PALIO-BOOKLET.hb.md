@@ -1745,8 +1745,12 @@ invia **sicari drow** a Channathgate per **avvelenare** il cavallo dell'Istrice/
   Chierica di Lolth** (GS 10) + un **innesto fungino** (Servitore della Spora, GS 3) come
   ariete vivente. Tattica: buio magico; il cavallo col *sangue nero di Lolth* (Tempra CD 17, 1d6 Cos), il fantino paralizzato con l'Attacco Mortale (Tempra CD 17) e portato via; colpire il cavallo o rapire il fantino, a scelta del DM; gli altri PG non sono il bersaglio (STATBLOCCHI §3.1).
 - **Poste**:
-  - Cavallo avvelenato → **−4 Cavalcare** in corsa (o morte del cavallo → si corre scossi
-    o con una brenna di riserva).
+  - Cavallo avvelenato (fallisce la Tempra CD 17) → **−4 ai tiri di Zona** in corsa; con una
+    seconda dose muore → si corre scossi o con una brenna di riserva. Se supera la Tempra,
+    corre senza malus. È una regola della casa: per l'SRD due dosi non bastano sempre.
+  - Fantino rapito →
+    se i PG non lo riprendono prima della corsa, si corre con un fantino di riserva; se lo
+    riprendono, vale «rapito e salvato» per l'Onore del Fantino (§5).
   - **Catturare un drow vivo** → intel su **Fase 0 (Notte dei Drow)** di Rethmar e
     **−1 clock Sonjak** (INTEGRAZIONE §3.2).
   - Fallire del tutto → **+1 clock Sonjak**, e la coalizione parte demoralizzata.
@@ -2895,12 +2899,12 @@ EL 12 con i due sicari, EL 13 se c'è anche la chierica di §3.2 (tre creature d
 
 **Capacità speciali**
 - **Attacco Mortale**: dopo 3 round di studio, Tempra CD 17 o morte, oppure paralisi per 1d6+4 round.
-- **Veleni**: veleno drow (Tempra CD 13, privo di sensi); 3 dosi di *sangue nero di Lolth* (Tempra CD 17, 1d6 Cos / 1d6 Cos).
+- **Veleni**: veleno drow (Tempra CD 13, privo di sensi); 3 dosi di *sangue nero di Lolth* (Tempra CD 17, 1d6 Cos / 1d6 Cos), veleno della casa che non ha prezzo e non entra nel bottino.
 - **Capacità magiche** 1/giorno: *luci danzanti*, *oscurità*, *fuoco fatuo*.
 - **Incantesimi da Assassino** 4/2 al giorno, fra cui *invisibilità*.
 
 
-*Cosa sanno dei PG e in che stato li trovano*: Sonjak gli ha detto quale stalla e quale cavallo, non chi la guarda. Arrivano la notte del Giorno 2, dopo la Cena della Prova Generale e gli intrighi dei Partiti, quando i PG dormono o fanno la guardia a turno: uno sveglio, gli altri con quello che resta degli incantesimi del giorno. L'obiettivo resta il cavallo o il fantino, anche quando il fantino è un PG (AVVENTURA §4): chi è di guardia lo evitano, e lo colpiscono solo se sta fra loro e il bersaglio o se li scopre, per coprire la fuga. Se il DM sceglie il fantino, lo studiano tre round dal buio e lo paralizzano con l'Attacco Mortale, poi lo portano via; se il DM sceglie il cavallo, gli danno il *sangue nero di Lolth*, che la mattina dopo gli lascia la Costituzione ferita e il −4 in corsa; la sua scorta la trattano come la guardia della stalla. <!-- [INFERRED — Sonjak sa chi fa la guardia alla stalla?; base: §3.1 e la scheda di Sonjak dicono il mandante, non che cosa sa dei PG] (marca tolta dal booklet stampato) -->
+*Cosa sanno dei PG e in che stato li trovano*: Sonjak gli ha detto quale stalla e quale cavallo, non chi la guarda. Arrivano la notte del Giorno 2, dopo la Cena della Prova Generale e gli intrighi dei Partiti, quando i PG dormono o fanno la guardia a turno: uno sveglio, gli altri con quello che resta degli incantesimi del giorno. L'obiettivo resta il cavallo o il fantino, anche quando il fantino è un PG (AVVENTURA §4): chi è di guardia lo evitano, e lo colpiscono solo se sta fra loro e il bersaglio o se li scopre, per coprire la fuga. Se il DM sceglie il fantino, lo studiano tre round dal buio e lo paralizzano con l'Attacco Mortale, poi lo portano via; se il DM sceglie il cavallo, gli danno il *sangue nero di Lolth*: se fallisce la Tempra, la mattina dopo ha la Costituzione ferita e il −4 ai tiri di Zona, e una seconda dose lo uccide (GIORNO2 §3.3); la sua scorta la trattano come la guardia della stalla. <!-- [INFERRED — Sonjak sa chi fa la guardia alla stalla?; base: §3.1 e la scheda di Sonjak dicono il mandante, non che cosa sa dei PG] (marca tolta dal booklet stampato) -->
 
 
 ### 3.2 Drow Chierica di Lolth (GS 10)
@@ -3059,7 +3063,7 @@ La **sincronizzazione** col fronte (INTEGRAZIONE §3): due vie per i rinforzi vi
 
 Griglia **1 quadretto = 5 ft**, EL 12–13 (statblocchi in cap. XIII §3).
 - I drow entrano dalla **botola/fogna** (angolo SO) con *Oscurità*; puntano al **BOX** del
-  cavallo (obiettivo: avvelenarlo), usano *Silenzio* per soffocare gli allarmi.
+  cavallo (obiettivo: avvelenare il cavallo o rapire il fantino), usano *Silenzio* per soffocare gli allarmi.
 - Il **Barbaresco (B)** è accanto al cavallo; la **scorta PG (P)** copre la porta principale.
   Sorpresa se non di guardia: Ascoltare DC 20.
 - Buio totale (torce spente): **Scurovisione**/luce = cruciale.

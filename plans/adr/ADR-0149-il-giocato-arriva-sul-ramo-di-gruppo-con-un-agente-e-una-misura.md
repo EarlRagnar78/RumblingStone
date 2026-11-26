@@ -84,7 +84,9 @@ invece di occorrenze, intestazioni contate) e la forma della marca INFERRED.
      aperti senza la decisione datata del DM (giallo sulla patch, rosso sul
      push);
    - S7, con `--dopo-merge`, ogni riga che main ha aggiunto ai file di partita
-     deve esserci nel risultato del merge.
+     deve esserci nel risultato del merge, e ogni riga che main ha tolto (una
+     correzione, come Tempestas da GS 14 a GS 15) non deve restarci, salvo che
+     il ramo l'abbia aggiunta da sé.
 
    Esce 1 con almeno un rosso, 2 se qualcosa non si misura, 0 altrimenti.
 3. **L'avviso arriva da solo.** Quando il prompt parla del giocato o del ramo
@@ -94,7 +96,8 @@ invece di occorrenze, intestazioni contate) e la forma della marca INFERRED.
 4. **Il cancello del canone.** Il `PreToolUse` di `instradamento_agenti.py`,
    anche dentro un sottoagente, ferma un push che forza o cancella un ramo
    `campaign-group-*` (`--force`, `-f`, `--force-with-lease`, un refspec con
-   «+», `--delete`, `--mirror`, `--all` o `--tags` forzati), un push di canone
+   «+», `--delete`, `--mirror`, `--prune`, un refspec a glob, `--all` o `--tags`
+   forzati), un push di canone
    su main (anche `HEAD:main` dal ramo di gruppo, o un `git add` di file di
    partita nello stesso comando) e qualunque push verso un ramo morto. Legge il
    push dopo le opzioni globali di git e dentro `sh -c` e `bash -c`; `HEAD` e il
@@ -102,6 +105,9 @@ invece di occorrenze, intestazioni contate) e la forma della marca INFERRED.
    `.claude/settings.json` comprende ora gli strumenti MCP di GitHub che
    scrivono (`push_files`, `create_or_update_file`, `delete_file`,
    `create_branch`): non portano canone su main e non toccano i rami morti.
+   Comprende anche `merge_pull_request` e `update_pull_request_branch`: base e
+   head della PR si leggono con `gh api`, e se non si leggono lo strumento si
+   ferma.
    `campaign_branch.py guard` rifiuta un ramo morto del registro.
 5. **Il workflow del lunedì.** `.github/workflows/sincronia-giocato.yml` gira
    ogni lunedì alle 06:30 UTC, prima della routine delle 06:47, con le regole
@@ -163,12 +169,18 @@ invece di occorrenze, intestazioni contate) e la forma della marca INFERRED.
 - **S7 è testuale.** Confronta righe aggiunte, non record: una riga di main
   riscritta nel merge con un altro spazio o un altro ordine dei campi conta
   come persa, e una riga presente ma nel record sbagliato conta come salva.
-- **La decisione del DM si riconosce solo con la data ISO.** S6 vuole «DM» o
-  «Jfs» accanto a una data `AAAA-MM-GG`. Una decisione vera scritta in un'altra
-  forma («deciso da Jfs il 21/11») risulta mancante; una forma giusta scritta
-  senza che il DM abbia deciso passa. Lo script vede la forma, non la verità.
-  L'agente e il registro delle norme prescrivono la marca CANONE della guida
-  delle marcature; S6 riconosce anche la forma vecchia «(DM, AAAA-MM-GG)».
+- **La decisione del DM si riconosce solo dalla marca.** S6 vuole
+  `[CANONE — DM AAAA-MM-GG, codice]` (il codice è facoltativo), la forma della
+  guida delle marcature. Nominare il DM e una data non basta più: il secondo
+  giro del `custode-canone` (2026-11-26) ha mostrato che «proposta del thread,
+  da mostrare al DM, 2026-11-21» passava. Una decisione vera scritta in
+  un'altra forma risulta mancante; una marca scritta senza che il DM abbia
+  deciso passa. Lo script vede la forma, non la verità.
+- **S7 conta le righe per file, non per blocco.** Una riga ripetuta che il
+  ramo ha in più copie può coprirne una persa; il blocco per blocco resta
+  all'agente e al DM.
+- **Il cancello non legge gli aggiramenti voluti:** un alias di git
+  (`git -c alias.x=push`), `eval` e `gh api -X DELETE …/git/refs/…`.
 - **L'età di una patch viene dal `mtime` del file.** Una copia o un
   salvataggio sul mount di rete la ringiovanisce, e S3 può dare giallo dove il
   rosso era dovuto.

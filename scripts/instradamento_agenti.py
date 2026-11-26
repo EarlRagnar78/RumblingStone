@@ -306,6 +306,8 @@ _PUSH_CON_VALORE = {"-o", "--push-option", "--repo", "--receive-pack", "--exec"}
 _PREFISSI_COMANDO = {"timeout", "command", "env", "nice", "exec", "nohup", "time", "sudo"}
 GITHUB_SCRIVE = ("mcp__github__push_files", "mcp__github__create_or_update_file",
                  "mcp__github__delete_file", "mcp__github__create_branch")
+# Gli strumenti che scrivono su una PR: l'input porta solo il numero, i rami si leggono.
+GITHUB_PR_SCRIVE = ("mcp__github__merge_pull_request", "mcp__github__update_pull_request_branch")
 FAST_FORWARD = ("Solo fast-forward: `git merge origin/main` (mai rebase) e `git push` senza "
                 "--force né «+»; se il remoto è avanti, `git pull --no-rebase` e di nuovo i controlli.")
 
@@ -370,7 +372,11 @@ def cancello_canone(comando: str, cwd: "str | None" = None, _prof: int = 0) -> "
     `cd`). Un ramo morto del registro non riceve nessun push. Canone su main: un push a
     main dal ramo di gruppo (anche `HEAD:main`), o un `git add`/`git commit` di file di
     partita nello stesso comando. `sh -c` e `bash -c` si leggono dentro. Un push a main
-    dopo un commit di canone fatto in un'altra chiamata non si vede da qui.
+    dopo un commit di canone fatto in un'altra chiamata non si vede da qui. Fermati
+    sempre: `--prune` e i refspec a glob («*»).
+
+    Limiti noti (aggiramenti voluti, non errori): un alias di git (`git -c alias.x=push`),
+    `eval` e `gh api -X DELETE …/git/refs/…` non si leggono.
     """
     import sincronia_giocato as sg  # file di partita e rami morti: una lista sola
     morti = sg.rami_morti(ROOT / "plans" / "rami-di-gruppo.json")
@@ -423,6 +429,12 @@ def cancello_canone(comando: str, cwd: "str | None" = None, _prof: int = 0) -> "
         if "--mirror" in opzioni:
             return ("`git push --mirror` fermato: riscrive ogni ramo del remoto, compresi i rami "
                     f"di gruppo (ADR-0007, ADR-0090). {FAST_FORWARD}")
+        if "--prune" in opzioni:
+            return ("`git push --prune` fermato: cancella sul remoto i rami che qui non ci sono, "
+                    f"compresi i rami di gruppo (ADR-0007, ADR-0090). {FAST_FORWARD}")
+        if any("*" in a for a in posizionali[1:]):
+            return ("Push con un refspec a glob («*») fermato: tocca tutti i rami che combaciano, "
+                    f"compresi quelli di gruppo e i morti (ADR-0007, ADR-0090). {FAST_FORWARD}")
         if forza and any(a in ("--all", "--branches", "--tags") for a in opzioni):
             return ("Push forzato di tutti i rami o dei tag fermato: tocca anche i rami di gruppo "
                     f"(ADR-0007, ADR-0090). {FAST_FORWARD}")
@@ -476,6 +488,40 @@ def cancello_github(strumento: str, inp: dict) -> "str | None":
     return None
 
 
+def _rami_della_pr(numero: int, owner: str, repo: str) -> "tuple[str, str] | None":
+    """(base, head) di una PR letti con `gh api`, o None se non si leggono."""
+    try:
+        r = subprocess.run(["gh", "api", f"repos/{owner}/{repo}/pulls/{int(numero)}", "--jq",
+                            '.base.ref + " " + .head.ref'], capture_output=True, text=True,
+                           timeout=5)  # sotto i 10 s dell'hook
+    except (OSError, subprocess.SubprocessError, ValueError):
+        return None
+    parti = r.stdout.split()
+    return (parti[0], parti[1]) if r.returncode == 0 and len(parti) == 2 else None
+
+
+def cancello_pr(strumento: str, inp: dict) -> "str | None":
+    """Merge di una PR e aggiornamento del suo ramo: mai un ramo morto, mai il ramo di gruppo su main.
+
+    Se i rami della PR non si leggono, si ferma: non si sa che cosa tocca.
+    """
+    import sincronia_giocato as sg
+    rami = _rami_della_pr(inp.get("pullNumber") or 0, str(inp.get("owner") or ""),
+                          str(inp.get("repo") or ""))
+    if rami is None:
+        return (f"`{strumento}` fermato: non riesco a leggere base e head della PR, quindi non so "
+                "se tocca un ramo di gruppo. Controllali con `gh pr view` e riprova.")
+    base, head = rami
+    morti = sg.rami_morti(ROOT / "plans" / "rami-di-gruppo.json")
+    for ramo in ((base, head) if strumento.endswith("merge_pull_request") else (head,)):
+        motivo = _motivo_ramo(ramo, morti, False)
+        if motivo:
+            return motivo
+    if strumento.endswith("merge_pull_request") and base == "main" and head.startswith("campaign-group-"):
+        return _CANONE_SU_MAIN
+    return None
+
+
 def decidi_cancello(ev: dict) -> dict:
     """Passa, o blocca con il motivo, un push o una PR (ADR-0146, punto 7)."""
     strumento = ev.get("tool_name", "")
@@ -486,6 +532,8 @@ def decidi_cancello(ev: dict) -> dict:
         motivo = cancello_canone(comando, ev.get("cwd"))
     elif strumento in GITHUB_SCRIVE:
         motivo = cancello_github(strumento, ev.get("tool_input") or {})
+    elif strumento in GITHUB_PR_SCRIVE:
+        motivo = cancello_pr(strumento, ev.get("tool_input") or {})
     if motivo:
         return {"esito": "blocca", "motivo": motivo}
     if ev.get("agent_id") or not (strumento in PR_MCP or

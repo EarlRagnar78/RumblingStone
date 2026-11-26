@@ -338,7 +338,12 @@ class TestCancelloCanone(unittest.TestCase):
                 "bash -c \"git push origin +HEAD:campaign-group-x\"",
                 "git push origin HEAD:main",
                 "git push origin campaign-group-x:refs/heads/main",
-                f"cd {repo} && git push --force origin HEAD")
+                f"cd {repo} && git push --force origin HEAD",
+                # secondo giro del custode-canone, 2026-11-26
+                "git push origin '+refs/heads/*:refs/heads/*'",
+                "git push origin 'refs/heads/*:refs/heads/*'",
+                "git push --prune origin 'refs/heads/*:refs/heads/*'",
+                "git push --prune origin main")
         for c in casi:
             with self.subTest(comando=c):
                 self.assertEqual(self._esito(c, cwd=str(repo if "cd " not in c else altrove)), 2)
@@ -376,12 +381,28 @@ class TestCancelloCanone(unittest.TestCase):
         self.assertEqual(self._mcp("push_files", branch="main",
                                    files=[{"path": "scripts/x.py", "content": "x"}]), 0)
 
+    def test_merge_e_aggiornamento_di_una_pr(self) -> None:
+        from unittest import mock
+        morto = "campaign-group-rumblingstone-dm-gianfranco"
+        casi = {("merge_pull_request", ("main", "campaign-group-rumblingstone")): 2,
+                ("merge_pull_request", (morto, "claude-x")): 2,
+                ("merge_pull_request", ("main", "claude-x")): 0,
+                ("merge_pull_request", ("campaign-group-rumblingstone", "claude-x")): 0,
+                ("update_pull_request_branch", ("main", morto)): 2,
+                ("update_pull_request_branch", ("main", "claude-x")): 0,
+                ("merge_pull_request", None): 2,
+                ("update_pull_request_branch", None): 2}
+        for (strumento, rami), atteso in casi.items():
+            with self.subTest(strumento=strumento, rami=rami), \
+                    mock.patch.object(ia, "_rami_della_pr", return_value=rami):
+                self.assertEqual(self._mcp(strumento, pullNumber=1, owner="o", repo="r"), atteso)
+
     def test_il_matcher_dell_hook_copre_gli_strumenti_controllati(self) -> None:
         import re as _re
         impostazioni = json.loads((ia.ROOT / ".claude" / "settings.json").read_text(encoding="utf-8"))
         matcher = [h["matcher"] for h in impostazioni["hooks"]["PreToolUse"]
                    if any("--cancello" in c["command"] for c in h["hooks"])][0]
-        for strumento in ("Bash", *ia.PR_MCP, *ia.GITHUB_SCRIVE):
+        for strumento in ("Bash", *ia.PR_MCP, *ia.GITHUB_SCRIVE, *ia.GITHUB_PR_SCRIVE):
             with self.subTest(strumento=strumento):
                 self.assertTrue(_re.fullmatch(f"(?:{matcher})", strumento), matcher)
 

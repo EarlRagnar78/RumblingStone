@@ -53,7 +53,10 @@ non decidi niente della partita. I rami vivi e quelli morti sono in
 
    Dopo il merge, nell'ordine:
    `python3 scripts/sincronia_giocato.py --dopo-merge` (ogni riga che main ha
-   aggiunto ai file di partita deve esserci: una riga persa è 🔴),
+   aggiunto ai file di partita deve esserci, e ogni riga che main ha corretto
+   non deve restare accanto alla nuova: una riga persa o una vecchia rimasta è
+   🔴; le righe si contano per file, non per blocco, quindi il blocco per blocco
+   resta tuo),
    `python3 scripts/validate_state.py`, `python3 scripts/render_state.py --check`,
    `python3 scripts/dm.py doctor`. Se uno di questi fallisce non spingi. Nel
    resoconto elenchi ogni conflitto e come l'hai risolto.
@@ -66,7 +69,7 @@ non decidi niente della partita. I rami vivi e quelli morti sono in
    aperti del remoto con quelli di HEAD, e se scendono senza decisioni datate
    (S6 rosso) non spingi. Se il remoto è avanti, `git pull --no-rebase` e di
    nuovo i controlli del punto 4. Mai `--force`, `-f`, `--force-with-lease`,
-   `--mirror` o un refspec con `+`: il cancello di `instradamento_agenti.py` li
+   `--mirror`, `--prune`, un refspec con `+` o a glob («*»): il cancello di `instradamento_agenti.py` li
    ferma comunque. Dopo il push scrivi lo SHA nel resoconto, perché il
    coordinatore lo giri al DM.
 6. **I rami morti non si toccano.** Un ramo nella lista `morti` di

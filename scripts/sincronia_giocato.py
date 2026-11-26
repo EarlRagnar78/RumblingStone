@@ -34,10 +34,15 @@ Cinque regole, ogni rilievo con codice, livello, ramo e il comando che lo risolv
   ancora applicate: una serata più recente dell'ultima registrata → 🔴.
 - **S6** campi chiusi senza decisione del DM: una patch (o, con `--ref`, il
   diff fra il ramo remoto e REF) che fa scendere i campi aperti, dove una riga
-  che chiude un campo non cita una decisione del DM con la data, per esempio
-  «(DM, 2026-11-21)». Una patch → 🟡, domanda al DM; un REF da spingere → 🔴.
+  che chiude un campo non porta la marca «[CANONE — DM AAAA-MM-GG, codice]»
+  (il codice è facoltativo). Nominare il DM e una data non basta. Una patch →
+  🟡, domanda al DM; un REF da spingere → 🔴.
 - **S7** (`--dopo-merge`) righe di main perse nel merge: ogni riga che main ha
-  aggiunto ai file di partita dalla base comune deve esserci nel risultato.
+  aggiunto ai file di partita dalla base comune deve esserci nel risultato
+  almeno tante volte quante in main; e ogni riga che main ha tolto (una
+  correzione) non deve restare nel risultato, salvo che il ramo l'abbia
+  aggiunta da sé. Limite: le righe si contano per file, non per blocco: una
+  riga ripetuta che il ramo ha in più copie può coprirne una persa.
 
 Esito: 1 se c'è almeno un 🔴; altrimenti 2 se qualcosa non è misurabile;
 altrimenti 0. `--avviso` (per l'hook) stampa poche righe solo se c'è del
@@ -59,6 +64,7 @@ import re
 import subprocess
 import sys
 import difflib
+from collections import Counter
 import tempfile
 import time
 from datetime import datetime, timezone
@@ -81,8 +87,9 @@ ESTENSIONI_PATCH = (".patch", ".mbox", ".diff")
 _ALTRI_CAMPI = re.compile(r"_{6,}|\bda\s+(?:compilare|confermare|decidere|tirare)\b|"
                          r"\bnon\s+ancora\s+tirat\w*", re.I)
 _INTESTAZIONE = re.compile(r"^\s*#{1,6}\s")
-_DECISIONE_DM = re.compile(r"\b(?:DM|Jfs)\b[^\n]{0,60}?\d{4}-\d{2}-\d{2}|"
-                           r"\d{4}-\d{2}-\d{2}[^\n]{0,20}?\b(?:DM|Jfs)\b")
+# La sola forma di GUIDA-MARCATURE: una riga che nomina il DM e una data non basta
+# (una patch di thread scrive «da mostrare al DM, 2026-11-21»). Il codice è facoltativo.
+_DECISIONE_DM = re.compile(r"\[CANONE — DM \d{4}-\d{2}-\d{2}(?:, [^\]\n]+)?\]")
 FILE_S4 = ("campaign/sessions", "campaign/state.yaml")
 _SESSIONE = re.compile(r"campaign/sessions/(\d{4}-\d{2}-\d{2})_session-\d+\.md$")
 _DIFF = re.compile(r"^diff --git a/(.+?) b/(.+)$", re.M)
@@ -366,13 +373,21 @@ class Ramo:
 
 
 def righe_aggiunte(testo: str) -> "dict[str, list[str]]":
-    out: "dict[str, list[str]]" = {}
+    return righe_cambiate(testo)[0]
+
+
+def righe_cambiate(testo: str) -> "tuple[dict[str, list[str]], dict[str, list[str]]]":
+    """(righe aggiunte, righe tolte) per file, dagli hunk del diff."""
+    piu: "dict[str, list[str]]" = {}
+    meno: "dict[str, list[str]]" = {}
     for file_, vecchie, nuove in _blocchi_diff(testo):
         sm = difflib.SequenceMatcher(None, vecchie, nuove, autojunk=False)
-        for tag, _i1, _i2, j1, j2 in sm.get_opcodes():
+        for tag, i1, i2, j1, j2 in sm.get_opcodes():
             if tag in ("replace", "insert"):
-                out.setdefault(file_, []).extend(r for r in nuove[j1:j2] if r.strip())
-    return out
+                piu.setdefault(file_, []).extend(r for r in nuove[j1:j2] if r.strip())
+            if tag in ("replace", "delete"):
+                meno.setdefault(file_, []).extend(r for r in vecchie[i1:i2] if r.strip())
+    return piu, meno
 
 
 def classifica(ramo: Ramo, patch: Path, testo: str) -> "tuple[str, str, int]":
@@ -495,14 +510,30 @@ def s6_ref(repo: Path, ramo: str, remoto_ref: str, ref: str) -> "list[dict]":
 
 def dopo_merge(repo: Path, risultato: str = "HEAD", prima: str = "ORIG_HEAD",
                main: str = "origin/main") -> dict:
-    """S7: ogni riga che main ha aggiunto ai file di partita dalla base comune c'è nel risultato?"""
+    """S7: le righe che main ha aggiunto ci sono nel risultato, e quelle che ha tolto no?"""
     base = _out(repo, "merge-base", prima, main)
     diff = _out(repo, "diff", base, main, "--", *CANONE)
+    piu, meno = righe_cambiate(diff)
+
+    def conta(ref: str, rel: str) -> Counter:
+        r = _git(repo, "show", f"{ref}:{rel}", check=False)
+        return Counter(x.strip() for x in r.stdout.splitlines()) if r.returncode == 0 else Counter()
+
     rilievi = []
-    for rel, righe in righe_aggiunte(diff).items():
-        r = _git(repo, "show", f"{risultato}:{rel}", check=False)
-        presenti = {x.strip() for x in r.stdout.splitlines()} if r.returncode == 0 else set()
-        perse = [x.strip() for x in righe if x.strip() not in presenti]
+    for rel in sorted(set(piu) | set(meno)):
+        ris, di_main = conta(risultato, rel), conta(main, rel)
+        di_base, del_ramo = conta(base, rel), conta(prima, rel)
+        perse = sorted({x.strip() for x in piu.get(rel, []) if ris[x.strip()] < di_main[x.strip()]})
+        # una correzione di main (la riga vecchia tolta) che il merge ha tenuto accanto alla nuova
+        rimaste = sorted({x.strip() for x in meno.get(rel, [])
+                          if ris[x.strip()] > di_main[x.strip()]
+                          and del_ramo[x.strip()] <= di_base[x.strip()]})
+        if rimaste:
+            rilievi.append(_rilievo("S7", ROSSO, risultato, f"{len(rimaste)} righe che main ha "
+                                    f"corretto restano nel merge in {rel}", "togli la versione "
+                                    "vecchia blocco per blocco (dalle correzioni di canone di main "
+                                    "vince main); se il ramo aveva cambiato lo stesso record, "
+                                    "fermati e chiedi al DM", file=rel, righe=rimaste))
         if perse:
             rilievi.append(_rilievo("S7", ROSSO, risultato, f"{len(perse)} righe di main perse nel "
                                     f"merge in {rel}", "rimettile blocco per blocco (dal png e dalle "

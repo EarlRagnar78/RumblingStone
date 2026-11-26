@@ -358,7 +358,7 @@ class TestSincronia(unittest.TestCase):
             s6 = [r for r in e["rilievi"] if r["codice"] == "S6"]
             self.assertEqual([r["livello"] for r in s6], [sg.ROSSO])
             self.assertEqual(e["misure"]["rami"]["campaign-group-x"]["campi_aperti"], 2)
-            f.write_text(f.read_text(encoding="utf-8").replace("PX: 500", "PX: 500 (DM, 2026-03-01)"),
+            f.write_text(f.read_text(encoding="utf-8").replace("PX: 500", "PX: 500 [CANONE — DM 2026-03-01, card-px]"),
                          encoding="utf-8")
             _commit(c, "px con la decisione", T_ORA)
             e = self.m.misura(repo=c, scansiona=[], ref="HEAD")
@@ -390,6 +390,36 @@ class TestSincronia(unittest.TestCase):
             e = sg.dopo_merge(c, prima="HEAD^1", main="main")
             self.assertEqual(e["esito"], 0, e["rilievi"])
 
+    def test_dopo_merge_la_riga_corretta_da_main_che_resta_e_rossa(self) -> None:
+        with tempfile.TemporaryDirectory() as t:
+            c = Path(t) / "c"
+            _git(Path(t), "clone", "-q", "-b", "main", str(self.m.origin), str(c))
+            _git(c, "config", "user.email", "t@t")
+            _git(c, "config", "user.name", "t")
+            # main corregge una riga che il ramo ha già (GS 14 → GS 15)
+            _git(c, "checkout", "-q", "campaign-group-x")
+            ramo = (c / "campaign/state.yaml").read_text(encoding="utf-8")
+            _git(c, "checkout", "-q", "main")
+            vecchio = (c / "campaign/state.yaml").read_text(encoding="utf-8")
+            _scrivi(c, "campaign/state.yaml", vecchio + "png_tempestas: GS 14\n")
+            _commit(c, "Tempestas GS 14", T_ORA - 3 * GIORNO)
+            _git(c, "checkout", "-q", "campaign-group-x")
+            _scrivi(c, "campaign/state.yaml", ramo + "png_tempestas: GS 14\n")
+            _commit(c, "porta GS 14", T_ORA - 2 * GIORNO)
+            _git(c, "merge", "-q", "-s", "ours", "--no-edit", "main", quando=T_ORA - 2 * GIORNO)
+            _git(c, "checkout", "-q", "main")
+            _scrivi(c, "campaign/state.yaml", vecchio + "png_tempestas: GS 15\n")
+            _commit(c, "Tempestas GS 15", T_ORA - GIORNO)
+            _git(c, "checkout", "-q", "campaign-group-x")
+            # un merge «union» che tiene la riga vecchia accanto alla corretta
+            _git(c, "merge", "-q", "-s", "ours", "--no-commit", "main")
+            _scrivi(c, "campaign/state.yaml", ramo + "png_tempestas: GS 14\npng_tempestas: GS 15\n")
+            _commit(c, "merge union", T_ORA)
+            e = sg.dopo_merge(c, prima="HEAD^1", main="main")
+            self.assertEqual(e["esito"], 1, e["rilievi"])
+            rimaste = [r for r in e["rilievi"] if "corretto" in r["messaggio"]]
+            self.assertEqual([r["dati"]["righe"] for r in rimaste], [["png_tempestas: GS 14"]])
+
     def test_conta_campi_occorrenze_e_intestazioni(self) -> None:
         casi = {
             "PX: ______ e ______": 2,
@@ -413,8 +443,15 @@ class TestSincronia(unittest.TestCase):
                     "--- a/campaign/sessions/x.md\n+++ b/campaign/sessions/x.md\n"
                     f"@@ -1,2 +1,2 @@\n # Sessione\n-{vecchia}\n" + (f"+{nuova}\n" if nuova else ""))
         self.assertEqual(sg.chiusure(patch("PX: ______", "PX: 500"))["senza_decisione"], 1)
-        self.assertEqual(sg.chiusure(patch("PX: ______", "PX: 500 (DM, 2026-11-21)"))["senza_decisione"], 0)
+        self.assertEqual(sg.chiusure(patch("PX: ______", "PX: 500 [CANONE — DM 2026-11-21, card-px]"))["senza_decisione"], 0)
+        self.assertEqual(sg.chiusure(patch("PX: ______", "PX: 500 [CANONE — DM 2026-11-21]"))["senza_decisione"], 0)
         self.assertEqual(sg.chiusure(patch("PX: ______", "PX: 500 (Jfs, 2026-11-21)"))["chiusi"], 1)
+        for finta in ("PX: 500 (DM, 2026-11-21)",
+                      "PX: 500 (proposta del thread, da mostrare al DM, 2026-11-21)",
+                      "PX: 500 (patch thread fv2zai 2026-11-21 per il DM)",
+                      "PX: 500 (thread 2026-11-21, in attesa del DM)"):
+            with self.subTest(finta=finta):
+                self.assertEqual(sg.chiusure(patch("PX: ______", finta))["senza_decisione"], 1)
         self.assertEqual(sg.chiusure(patch("PX: ______", ""))["senza_decisione"], 1)
         self.assertEqual(sg.chiusure(patch("PX: 400", "PX: 500"))["chiusi"], 0)
 

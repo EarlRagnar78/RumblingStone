@@ -187,7 +187,7 @@ Non serve dettagliare tutta la lista: il suo ruolo è “batteria” del rituale
 ## 7. Durgan Tozzefort — Comandante dei 300 Mercenari Nani (CR 12) `[CANONE — DM 2026-07-12]`
 
 - Classe: Guerriero 12.
-- PF: 126.
+- PF: 102.
 - AC: 28 in armatura completa (contatto 12, colto alla sprovvista 27; +4 schivare contro i giganti).
 - Attacchi: ascia da guerra nanica +3 +23/+18/+13 (1d10+13, x3).
 - Capacità:

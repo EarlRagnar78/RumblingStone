@@ -218,7 +218,8 @@ def _bonus_del_blocco(blocco: str, chiave: "dict[str, str]") -> "tuple[dict[str,
     razziali: "dict[str, int]" = {}
     taglia: "dict[str, int]" = {}
     for n, tipo, resto, coda in re.findall(
-            r"\+(\d) (racial |size )?bonus on ([^.+]+?) checks(, which improves to \+\d)?", blocco):
+            r"\+(\d+) (racial |size )?bonus on (?:any )?([^.+]+?) checks?"
+            r"(, which improves to \+\d|\. \\?\*?In [^.]*?, this bonus improves to \+\d)?", blocco):
         if not tipo and "hide" not in resto.lower():
             continue  # «+4 bonus on ability checks» dei nani: non è un'abilità
         n = max(int(n), int(coda[-1]) if coda else 0)
@@ -263,6 +264,55 @@ def razze(base: Path, chiave: "dict[str, str]") -> "dict[str, dict[str, int]]":
         grezzi[nome] = (raz, tag)
     out = {nome: dict(sorted({a: raz.get(a, 0) + tag.get(a, 0) for a in set(raz) | set(tag)}.items()))
            for nome, (raz, tag) in grezzi.items()}
+    return dict(sorted(out.items()))
+
+
+def _sezioni_dei_mostri(base: Path) -> "dict[tuple[str, str], tuple[str, str]]":
+    """(file, titolo in minuscolo) → (testo della sezione, testo della sezione madre):
+    i titoli `##` e `###` dei capitoli dei mostri. Il paragrafo «Skills» di un gigante
+    sta nella sua sezione `###`; se lì non c'è, vale la testa del capitolo madre (prima
+    di ogni `###`), mai la sezione di un'altra creatura."""
+    out = {}
+    for f in sorted((base / "monsters").glob("monsters-*.md")):
+        for madre in re.split(r"^## ", f.read_text(encoding="utf-8"), flags=re.M)[1:]:
+            titolo = madre.split("\n", 1)[0].strip().lower()
+            testa = re.split(r"^### ", madre, flags=re.M)[0]   # il capitolo prima delle sezioni figlie
+            out[(f.name, titolo)] = (madre, testa)
+            for figlia in re.split(r"^### ", madre, flags=re.M)[1:]:
+                out.setdefault((f.name, figlia.split("\n", 1)[0].strip().lower()), (figlia, testa))
+    return out
+
+
+def _nomi_della_voce(chiave: str) -> "list[str]":
+    """Come il titolo SRD può chiamare una voce di creature_base.toml: «werebear, human
+    form» → «werebear»; «hill giant» → «hill giant»; e i plurali («Bugbears»)."""
+    nome = chiave.split(",")[0].strip()
+    nome = re.sub(r"\s+(?:dire|giant|hybrid|human|bear|boar|rat|tiger|wolf)?\s*form$", "", nome).strip()
+    return [nome, nome + "s", nome + "es", nome.rstrip("s")]
+
+
+def razze_coi_dv(base: Path, chiave: "dict[str, str]") -> "dict[str, dict[str, int]]":
+    """Creatura base con dadi vita razziali che avanza per classe (creature_base.toml,
+    `avanza = "classe"`) → il bonus razziale più alto che il paragrafo «Skills» del suo
+    capitolo dei mostri dà a ogni abilità («Bugbears have a +4 racial bonus on Move
+    Silently checks»). Anche quando vale solo in certi casi: è un tetto. Una creatura col
+    capitolo ma senza bonus esce con la tabella vuota, perché «nessun bonus» è un fatto
+    (gnoll, ogre). Chi non ha il capitolo leggibile non esce, e resta al margine fisso;
+    i licantropi non escono, perché sono un modello sopra una creatura base."""
+    import tomllib
+    cb = tomllib.loads((ROOT / "sistemi" / "dnd35" / "dati" / "creature_base.toml").read_text(encoding="utf-8"))
+    sezioni = _sezioni_dei_mostri(base)
+    out = {}
+    for nome, voce in cb["creature_base"].items():
+        if voce.get("avanza") != "classe" or "were" in nome:
+            continue           # i licantropi sono un modello: i bonus vengono dalla forma animale
+        trovata = next((sezioni[(voce["fonte"], n)] for n in _nomi_della_voce(nome)
+                        if (voce["fonte"], n) in sezioni), None)
+        if trovata is None:
+            continue
+        m = next((m for t in trovata if (m := re.search(r"(?:\*\*Skills:\*\*|^Skills:)([^\n]+)", t, flags=re.M))), None)
+        raz, _ = _bonus_del_blocco(m.group(1) if m else "", chiave)
+        out[nome] = dict(sorted(raz.items()))
     return dict(sorted(out.items()))
 
 
@@ -366,6 +416,10 @@ def genera() -> str:
         "# dell'SRD e le nove senza dadi vita razziali del capitolo dei mostri (le chiavi di mdl.toml)",
         *[riga for r, v in razze(CACHE, k).items()
           for riga in (f"[razze.{_q(r)}]", *[f"{_q(a)} = {n}" for a, n in v.items()], "")],
+        "# il bonus razziale alle abilità delle creature coi dadi vita razziali che avanzano per",
+        "# classe (paragrafo «Skills» del loro capitolo dei mostri); tabella vuota = nessun bonus",
+        *[riga for r, v in razze_coi_dv(CACHE, k).items()
+          for riga in (f"[razze_dv.{_q(r)}]", *[f"{_q(a)} = {n}" for a, n in v.items()], "")],
         "# come una scheda nomina le sette razze (espressioni regolari, italiano e inglese); una",
         "# sottorazza (drow, duergar…) ha i suoi bonus in un'altra pagina e non è qui",
         "[razze_nomi]",

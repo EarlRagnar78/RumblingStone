@@ -1296,14 +1296,14 @@ For 23, Des 8, Cos 19, Int 6, Sag 10, Car 11.
 STATISTICHE CREATURA SINGOLA (Orog Guerriero di 6° liv., GS 7):
 LM Umanoide Mostruoso Medio; 
 Iniz +4; 
-CA 19 (armatura completa +1); 
-PF 63 (6d10+30); 
+CA 21 (armatura completa +1, naturale +2); 
+PF 45 (6d10+12); 
 Attacco Base +6; 
-Att Ascia bipenne +1 +13/+8 (1d12+10/x3); 
+Att Ascia bipenne +1 +14/+9 (1d12+12/x3); 
 Attacco Poderoso, Incalzare, Incalzare Potenziato, Arma Focalizzata e Arma Specializzata (ascia bipenne), Iniziativa Migliorata, Volontà di Ferro. 
-For 20, Des 10, Cos 20, Int 12, Sag 11, Car 8.
+For 22, Des 11, Cos 14, Int 10, Sag 10, Car 10.
 ```
-Scheda intera: `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md` `[CANONE — DM 2026-10-23: si allinea al Bestiario]`. L'unità di massa resta quella di `ARC08-02` §5.
+Scheda intera: `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md` (caratteristiche rifatte con la serie d'élite più la razza orog, card del DM del 2026-11-20) `[CANONE — DM 2026-10-23: si allinea al Bestiario]`. L'unità di massa resta quella di `ARC08-02` §5.
 
 #### **HOBGOBLIN WAR ADEPTS (20 Stregoni 6°)**
 *Artiglieria Magica, 3ª Linea*
@@ -1899,7 +1899,7 @@ I giocatori prendono controllo dei loro veri PG (Rumbling Stones) e ribaltano im
 > - **La serata** `[CANONE — DM 2026-10-19, D18]`: Incontro 3B e Sessione 4 insieme, fino al campo della vittoria. La Cerimonia delle 100 Asce (`Cerimonia-delle-100-Asce.md`) è la serata dopo.
 > - **In un'ora si legge**: il ponte d'arrivo (`ARC08-11-PONTE-ARRIVO.md`), `ARC08-10-ESITI-E-CONTINGENZE.md` §4-§5, la MAPPA 5 e la MAPPA 4 di `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md`, le schede di `ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` §1. Da questo file, i box.
 > - **Se il flashback coi pregen e il P5 non sono stati giocati**: `ARC08-10-ESITI-E-CONTINGENZE.md` §5.5.
-> - **I numeri dei nemici, uno contro uno**: orchi berserker = `Bestiario/mostri/orco-berserk-barbaro2-cr2.md` (GS 2, CA 15, pf 23, grande ascia +7, 1d12+6; in ira CA 13, pf 27, +9, 1d12+9); hobgoblin = `Bestiario/mostri/hobgoblin-regular-warrior3-cr2.md` (GS 2, CA 19, pf 23, spada lunga +6, 1d8+1); il loro sergente = `Bestiario/mostri/hobgoblin-sergente-cr5.md` (GS 5, CA 21, pf 37, spada lunga +9, 1d8+4). Le guardie orog di Grimjaw = `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md` (GS 7, CA 19, pf 63, ascia bipenne +1 +13/+8, 1d12+10; immuni alla paura finché Grimjaw vive) e, come unità di massa, `ARC08-02` §5, «OROG GUARDIE NERE» (PFU 13, DU 19, AU +13, 1d12+7). I bugbear = `Bestiario/mostri/bugbear-assassino-ladro5-assassino2-cr9.md` (GS 9, CA 20, pf 58, morning star +11, 1d8+3, furtivo +4d6). I gufi dei ranger, nella Sessione 4 = `Bestiario/mostri/gufo-gigante-celestiale-cr6.md` (GS 6, CA 16, pf 52, 2 artigli +11, 1d6+4) `[CANONE — DM 2026-10-19, D10]`. <!-- storico -->fino al 2026-11-20 CA 13, pf 27, grande ascia +9 (1d12+9): i numeri in ira dell'export PCGen<!-- /storico -->
+> - **I numeri dei nemici, uno contro uno**: orchi berserker = `Bestiario/mostri/orco-berserk-barbaro2-cr2.md` (GS 2, CA 15, pf 23, grande ascia +7, 1d12+6; in ira CA 13, pf 27, +9, 1d12+9); hobgoblin = `Bestiario/mostri/hobgoblin-regular-warrior3-cr2.md` (GS 2, CA 19, pf 23, spada lunga +6, 1d8+1); il loro sergente = `Bestiario/mostri/hobgoblin-sergente-cr5.md` (GS 5, CA 21, pf 37, spada lunga +9, 1d8+4). Le guardie orog di Grimjaw = `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md` (GS 7, CA 21, pf 45, ascia bipenne +1 +14/+9, 1d12+12; immuni alla paura finché Grimjaw vive) e, come unità di massa, `ARC08-02` §5, «OROG GUARDIE NERE» (PFU 13, DU 21, AU +14, 1d12+7). I bugbear = `Bestiario/mostri/bugbear-assassino-ladro5-assassino2-cr9.md` (GS 9, CA 20, pf 58, morning star +11, 1d8+3, furtivo +4d6). I gufi dei ranger, nella Sessione 4 = `Bestiario/mostri/gufo-gigante-celestiale-cr6.md` (GS 6, CA 16, pf 52, 2 artigli +11, 1d6+4) `[CANONE — DM 2026-10-19, D10]`. <!-- storico -->fino al 2026-11-20 CA 13, pf 27, grande ascia +9 (1d12+9): i numeri in ira dell'export PCGen<!-- /storico -->
 
 ### **MAPPA: LA TRASFORMAZIONE**
 > 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 5 REVISED, stato F (controffensiva)

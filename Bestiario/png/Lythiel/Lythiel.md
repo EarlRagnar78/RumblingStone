@@ -10,15 +10,15 @@ spazio: 1,5 m
 portata: 1,5 m
 ca: 19
 ca-dettaglio: contatto 14, colto alla sprovvista 15 (+5 cuoio borchiato +2, +4 Des); 21 con pelle coriacea
-pf: 44
-pf-dado: 8d8+8
-ts: Temp +8, Rifl +11, Vol +6
-attributi: For 14 Des 18 Cos 13 Int 14 Sag 16 Car 12
+pf: 36
+pf-dado: 8d8
+ts: Temp +7, Rifl +11, Vol +5
+attributi: For 12 Des 19 Cos 11 Int 10 Sag 14 Car 8
 velocita: 9 m a piedi
 iniziativa: +8
 attacchi:
-  - Distanza arco lungo composito +1 (For 14) +13/+8 (1d8+3/19-20/×3)
-  - Mischia spada corta +10/+5 (1d6+2/19-20)
+  - Distanza arco lungo composito +1 (For 12) +13/+8 (1d8+2/19-20/×3)
+  - Mischia spada corta +9/+4 (1d6+1/19-20)
 ```
 
 **Razza/Tipo:** Elfa dei Boschi (Umanoide Medio, elfo)
@@ -136,14 +136,14 @@ Niente subito. Solo: *"Quando vedi Saraah, dille che ho mantenuto la promessa. L
 
 | Caratteristica | Valore | Mod. |
 |:---|:---:|:---:|
-| **Forza** | 14 | +2 |
-| **Destrezza** | 18 | +4 |
-| **Costituzione** | 13 | +1 |
-| **Intelligenza** | 14 | +2 |
-| **Saggezza** | 16 | +3 |
-| **Carisma** | 12 | +1 |
+| **Forza** | 12 | +1 |
+| **Destrezza** | 19 | +4 |
+| **Costituzione** | 11 | +0 |
+| **Intelligenza** | 10 | +0 |
+| **Saggezza** | 14 | +2 |
+| **Carisma** | 8 | −1 |
 
-**Punti Ferita:** 44 (8d8 + 8 Cos)
+**Punti Ferita:** 36 (8d8)
 **Iniziativa:** +8 (+4 Des, +4 Iniziativa Migliorata)
 **Velocità:** 9 m a piedi; 24 m volo (sul gufo)
 **Sensi:** visione crepuscolare
@@ -151,13 +151,13 @@ Niente subito. Solo: *"Quando vedi Saraah, dille che ho mantenuto la promessa. L
 **Classe Armatura:** 19 (10 base, +4 Des, +5 cuoio borchiato +2); 21 con *pelle coriacea*
 *Contatto 14 / Colto alla sprovvista 15*
 
-**Tiri Salvezza:** Tempra +8, Riflessi +11, Volontà +6 (+2 contro ammaliamento, immune al *sonno* magico; +1 a tutti dal *mantello della resistenza +1*)
+**Tiri Salvezza:** Tempra +7, Riflessi +11, Volontà +5 (+2 contro ammaliamento, immune al *sonno* magico; +1 a tutti dal *mantello della resistenza +1*)
 
-**BAB/Lotta:** +8 / +10
+**BAB/Lotta:** +8 / +9
 
 **Attacchi:**
-- Arco lungo composito +1 (For 14) +13/+8 (1d8+3, 19–20/×3); con Tiro Rapido +11/+11/+6; con Tiro Multiplo, azione standard, 2 frecce a +9 (1d8+3 ciascuna)
-- Spada corta +10/+5 (1d6+2, 19–20/×2)
+- Arco lungo composito +1 (For 12) +13/+8 (1d8+2, 19–20/×3); con Tiro Rapido +11/+11/+6; con Tiro Multiplo, azione standard, 2 frecce a +9 (1d8+2 ciascuna)
+- Spada corta +9/+4 (1d6+1, 19–20/×2)
 - 1 freccia avvelenata speciale (5 al giorno)
 
 ### CAPACITÀ DI CLASSE
@@ -168,7 +168,7 @@ Niente subito. Solo: *"Quando vedi Saraah, dille che ho mantenuto la promessa. L
 - **Andatura nel Bosco** (Ex, si muove alla velocità normale nel sottobosco naturale)
 - **Cammino Senza Tracce** (Ex) — non è un privilegio del ranger SRD, è del druido: la scheda glielo dà per gli anni nel Cerchio
 - **Stile di Combattimento (Tiro)**, poi **Stile Migliorato**: Tiro Rapido e Tiro Multiplo come talenti bonus
-- **Incantesimi da ranger** (incantatore di 4° livello, CD 13+liv; 2/1 al giorno con Saggezza 16): di solito *resistere all'energia* e *passo veloce* al 1°, *pelle coriacea* al 2° (+2 di armatura naturale per 40 minuti). Confermati dal DM il 2026-10-18: il testo del 2026-05-04 («sa lanciare 0 incantesimi») è superato
+- **Incantesimi da ranger** (incantatore di 4° livello, CD 12+liv; 2/1 al giorno con Saggezza 14): di solito *resistere all'energia* e *passo veloce* al 1°, *pelle coriacea* al 2° (+2 di armatura naturale per 40 minuti). Confermati dal DM il 2026-10-18: il testo del 2026-05-04 («sa lanciare 0 incantesimi») è superato
 - **Inathiel** — Gufo Gigante Celestiale con la scheda di Signore Ventolesto (`08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md`): PF 105 (10d10+50), CA 20, Volo 24 m, 2 artigli +15 (1d8+6) e morso +10 (1d8+3), RD 5/magia, RI 15; la sua cavalcatura `[CANONE — DM 2026-11-05, P16, Bestiario]`
 
 <!-- storico -->
@@ -182,9 +182,9 @@ Niente subito. Solo: *"Quando vedi Saraah, dille che ho mantenuto la promessa. L
 Seguire Tracce, Tiro Rapido, Resistenza Fisica, Tiro Multiplo (bonus di classe); Critico Migliorato (arco lungo), Abilità Focalizzata (Conoscenze natura), Iniziativa Migliorata.
 
 #### Abilità chiave
-Conoscenze (Natura) +13, Sopravvivenza +14, Cavalcare (con Inathiel) +15, Osservare +14, Ascoltare +14, Concentrazione +7, Muoversi Silenziosamente +12, Nascondersi +12.
+Conoscenze (Natura) +11, Sopravvivenza +13, Cavalcare (con Inathiel) +15, Osservare +13, Ascoltare +13, Concentrazione +4, Muoversi Silenziosamente +12, Nascondersi +12.
 
-Benchmark: PF T1-1 riga 8: CA 19 (21 con *pelle coriacea*) vs 21 / pf 44 vs 100 (sotto) / atk +13 vs +15 (2 sotto) / danni con Tiro Rapido circa 22 vs 35 / TS buoni +8 e +11 vs +11. Arciera da seconda linea: colpisce quasi come il suo GS, non lo regge.
+Benchmark: PF T1-1 riga 8: CA 19 (21 con *pelle coriacea*) vs 21 / pf 36 vs 100 (sotto) / atk +13 vs +15 (2 sotto) / danni con Tiro Rapido circa 22 vs 35 / TS buoni +7 e +11 vs +11. Arciera da seconda linea: colpisce quasi come il suo GS, non lo regge.
 
 ## Esiti possibili
 
@@ -244,4 +244,6 @@ Boost log: correzione dei conti (SRD) — GS 8 → 8 — talento libero assegnat
 > - era: «Resistente (+2 Tempra contro elementi naturali)», che non è un privilegio del ranger → ora Resistenza Fisica, il talento bonus che dà; «Tiro Multiplo» e «Manyshot» elencati come due talenti, che sono lo stesso
 > Valori superati il 2026-11-14 (decisione del DM, RC-001):
 > - era: Cos 17, pf 60 (8d8+24), Tempra +10, Concentrazione +9, con l'amuleto della salute +4 → ora Cos 13, pf 44 (8d8+8), Tempra +8, Concentrazione +7, senza amuleto
+> Valori superati il 2026-11-20 (card del DM «Serie d'élite»: la scheda costava 40 punti di acquisto, sopra i 32 della DMG 3.5):
+> - era: For 14 Des 18 Cos 13 Int 14 Sag 16 Car 12, pf 44 (8d8+8), Tempra +8, Volontà +6, Lotta +10, arco (For 14) 1d8+3, spada corta +10/+5 (1d6+2), CD 13 + livello, Natura +13, Sopravvivenza +14, Osservare e Ascoltare +14, Concentrazione +7 → ora serie d'élite della DMG 3.5 p. 110 più la razza elfo: Des 15 (+1 al 4° e all'8°), Sag 14, Cos 13, For 12, Int 10, Car 8. I punti abilità scendono da 88 a 66 (Ranger 8, Int 10): Concentrazione perde 2 gradi, le altre restano. L'arco composito passa a For 12 per non prendere −2 a colpire; incantesimi al giorno invariati (2/1).
 <!-- /storico -->

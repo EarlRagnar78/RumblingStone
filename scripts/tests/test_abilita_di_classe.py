@@ -170,6 +170,59 @@ class TestMargineVero(unittest.TestCase):
         self.assertEqual(_prova(SERGENTE.name, self.testo.replace("Intimidate +7", "Intimidate +10"))[0], [])
 
 
+BUGBEAR = ROOT / "Bestiario" / "mostri" / "bugbear-assassino-ladro5-assassino2-cr9.md"
+# 3 DV razziali + Ladro 5 / Assassino 2: massimo 13 gradi, Des 17 (+3), Furtivo (+2 a
+# Nascondersi e Muoversi Silenziosamente), +4 razziale a Muoversi Silenziosamente (SRD)
+
+
+class TestRazzeCoiDadiVita(unittest.TestCase):
+    """Le creature coi dadi vita razziali hanno il bonus del loro capitolo dei mostri
+    contato voce per voce, invece del margine fisso di +4 o +8."""
+
+    def setUp(self):
+        self.testo = BUGBEAR.read_text(encoding="utf-8")
+        self.r = S.dati("dnd35", "creature.gradi")
+
+    def test_i_dati_dall_srd(self):
+        self.assertEqual(self.r["razze_dv"]["bugbear"], {"move silently": 4})
+        self.assertEqual(self.r["razze_dv"]["minotaur"], {"listen": 4, "search": 4, "spot": 4})
+        self.assertEqual(self.r["razze_dv"]["gnoll"], {})                 # nessun bonus è un fatto
+        # il paragrafo «Skills:» senza grassetto (ettin) e «this bonus improves to +8» (troglodita)
+        self.assertEqual(self.r["razze_dv"]["ettin"], {"listen": 2, "search": 2, "spot": 2})
+        self.assertEqual(self.r["razze_dv"]["troglodyte"], {"hide": 8})
+        self.assertEqual(self.r["razze_dv"]["hill giant"], {})            # non il +8 del gigante delle pietre
+        self.assertNotIn("werewolf, human form", self.r["razze_dv"])     # un modello, non una razza
+
+    def test_la_scheda_vera_e_pulita(self):
+        self.assertEqual(_prova(BUGBEAR.name, self.testo)[0], [])
+
+    def test_senza_bonus_razziale_il_margine_non_copre_piu(self):
+        # Nascondersi +21: 21 − 3 − 2 di oggetto − 2 di Furtivo = 14 gradi; col margine fisso di +8 passava
+        viol, _ = _prova(BUGBEAR.name, self.testo.replace("Nascondersi +17", "Nascondersi +21"))
+        self.assertEqual([(v["regola"], v["abilita"], v["ha"], v["atteso"]) for v in viol],
+                         [("gradi.massimo", "hide", 14, 13)])
+
+    def test_il_bonus_razziale_conta_dove_c_e(self):
+        # Muoversi Silenziosamente +24: 24 − 3 − 2 − 4 razziale − 2 = 13 gradi, al massimo
+        su = self.testo.replace("Muoversi Silenziosamente +21", "Muoversi Silenziosamente +24")
+        self.assertEqual(_prova(BUGBEAR.name, su)[0], [])
+        su = self.testo.replace("Muoversi Silenziosamente +21", "Muoversi Silenziosamente +25")
+        self.assertEqual([v["ha"] for v in _prova(BUGBEAR.name, su)[0]], [14])
+
+    def test_la_taglia_conta_a_nascondersi(self):
+        """SRD, Hide: una creatura Grande ha −4. Nascondersi +17 del bugbear vero sono 10 gradi
+        (17 − 3 − 2 di oggetto − 2 di Furtivo); se la creatura base fosse Grande sarebbero 14,
+        oltre il massimo di 13."""
+        from unittest import mock
+        from dmcore import creature_base as CB
+        vera = CB.tabella("dnd35")
+        grande = {**vera, "bugbear": {**vera["bugbear"], "taglia": "Large"}}
+        self.assertEqual(_prova(BUGBEAR.name, self.testo)[0], [])
+        with mock.patch.object(CB, "tabella", return_value=grande):
+            viol, _ = _prova(BUGBEAR.name, self.testo)
+        self.assertEqual([(v["abilita"], v["ha"], v["atteso"]) for v in viol], [("hide", 14, 13)])
+
+
 # Guerriero 4 umano, For 16: Scalare e Nuotare sono di classe, massimo 7 gradi, margine 2 (oggetto).
 # Senza armatura Scalare regge fino a +12 (7 + 3 + 2).
 ARMATO = """# Prova [INFERRED]

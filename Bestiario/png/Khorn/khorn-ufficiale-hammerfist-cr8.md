@@ -41,7 +41,7 @@ voci:
   - *Morale*: è un comandante, non un solista, e lo sa. Sotto i 25 pf passa il comando al più anziano dei suoi e si fa coprire, ma non lascia il varco finché le lance lo tengono. Se il varco cade, si ritira con l'ultima fila e mai prima: è lui l'ufficiale che il Torneo di Dauth può restituire «ferito gravemente», non morto.
 - *Al comando delle lance*: combatte come formazione, non come singolo. Arco 09, Torneo di Dauth, terzo giorno (l'assedio della città), «Carta D — Le lance di Khorn»: le 150 lance sono un asset di comando che Thorik (o Tordek) manda dove servono; se la carta è ignorata si schierano da sole al comando di Khorn, con il bonus dimezzato.
 
-**Statistiche** For 16, Des 12, Cos 16, Int 10, Sag 14, Car 15 · BAB +8; Lotta +11 · **Talenti** Attacco Poderoso, Incalzare, Arma Focalizzata (martello da guerra), Arma Focalizzata Superiore (martello da guerra), Arma Specializzata (martello da guerra), Attacco con lo Scudo Migliorato, Autorità (comanda le 150 lance), Iniziativa Migliorata · **Equipaggiamento** armatura completa +1, scudo pesante di metallo +1, martello da guerra +1, balestra pesante e 10 quadrelli
+**Statistiche** For 16, Des 12, Cos 16, Int 10, Sag 14, Car 15 · BAB +8; Lotta +11 · **Talenti** Attacco Poderoso, Incalzare, Arma Focalizzata (martello da guerra), Arma Focalizzata Superiore (martello da guerra), Arma Specializzata (martello da guerra), Attacco con lo Scudo Migliorato, Autorità (comanda le 150 lance), Iniziativa Migliorata · **Equipaggiamento** armatura completa +1, scudo pesante di metallo +1, martello da guerra +1, *mantello del carisma +2*, balestra pesante e 10 quadrelli
 
 **Capacità speciali** Tratti nanici: scurovisione 18 m, esperto minatore, +1 contro orchi e goblinoidi, +4 schivare contro i giganti, stabilità, +2 ai TS contro veleni, incantesimi e capacità magiche.
 
@@ -62,10 +62,13 @@ Notes: dossier in Khorn.md, nella stessa cartella; citato negli hook di Thorik p
 
 Boost log: correzione dei conti (caratteristiche, CA, iniziativa, ottavo talento) — GS 8 → 8 — i numeri canonizzati restano, e le caratteristiche li fanno tornare; la CA sale a 23 perché la Des 12 che contatto e iniziativa richiedono si somma all'armatura.
 
+> Equipaggiamento sopra la tabella: scelta del DM (card del 2026-11-20, «Mantello del carisma +2»). Vale almeno 10.182 mo contro i 9.400 della Tabella 4-23 del DMG 3.5 per il livello effettivo 8; il GS resta 8 e nessun numero cambia.
+
 <!-- storico -->
 - era: attributi For 16 Des 4 Cos 16 Int 9 Sag 11 Car 15, generati da `genera_attributi.py` (array del Manuale del DM vincolato da CA e pf).
 - era: CA 22 (contatto 11, colto alla sprovvista 21) e iniziativa +1, dalla build L2 del 2026-07-08.
 - `pf-dado` 8d10+24 resta quello ricavato da `conformita_statblocchi.py` dalla Tempra +9; la marca della correzione è tolta perché le caratteristiche ora sono scritte a mano. Cos 18 (Tempra +10, pf 76 come media esatta) era l'alternativa più forte, scartata: il test del giro circolare di `test_conformita_statblocchi.py` fissa la Tempra +9 di questa scheda come il dato.
 - era: colpo di scudo +10; sette talenti su otto.
 - era: Notes col rimando `../Khorn.md`, che puntava fuori dalla cartella del PNG.
+- era: fino al 2026-11-20 nessun oggetto spiegava le caratteristiche: tolta la razza (nano, Cos +2, Car −2) e i due aumenti di livello davano un acquisto a punti 36, sopra i 32 della DMG 3.5. Card del DM del 2026-11-20 «Mantello del carisma +2»: col *mantello del carisma +2* (SRD, 4.000 mo) la base è For 14 Des 12 Cos 14 Int 10 Sag 14 Car 15, acquisto 32, aumenti al 4° e all'8° sulla Forza. Nessun numero cambia.
 <!-- /storico -->

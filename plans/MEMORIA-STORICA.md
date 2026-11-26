@@ -2577,7 +2577,7 @@ repo scritto con altre parole.
 ### MS-0229 · 2026-11-26 · Le quindici domande aperte dei pregen decise dal DM
 
 - **Data:** 2026-11-26
-- **PR:** —
+- **PR:** #525
 - **ADR:** —
 - **Temi:** arc08 pregen punto eroe movimento attacco comandante abbattuto grimjaw gorthak troll capitano rampa scala fauci tetto inferred card
 - **Origine:** riga del 2026-11-26 «Le quindici domande aperte dei pregen decise dal DM» in `plans/CHANGELOG.md`

@@ -387,6 +387,26 @@ Stime in ore di lavoro focalizzato, incluse le prove. Ordine = dipendenze.
 - **Gate**: `dm.py doctor` verde; CI verde; un "collaudo al tavolo" reale
   alla prima sessione utile (come da tradizione dei piani di questo repo).
 
+### Lotto G — La sincronia del giocato *(chiuso il 2026-11-21, [ADR-0149](adr/ADR-0149-il-giocato-arriva-sul-ramo-di-gruppo-con-un-agente-e-una-misura.md), proposta)*
+
+[engine: Opus 5, sessione principale, con `sviluppatore` e `custode-canone` · effort: alto · qualità: la misura storica su `ce345991` dà i tre rossi che il 21/11 nessuno aveva visto, e quella sul ramo vivo dà 0 rossi]
+
+- [x] G1 `scripts/sincronia_giocato.py` con le regole S1-S7 e il registro
+  dei rami `plans/rami-di-gruppo.json`.
+- [x] G2 l'agente `sincronizzatore-giocato` e cinque casi di prova in
+  `.claude/agent-evals/sincronizzatore-giocato/`.
+- [x] G3 il cancello del canone in `instradamento_agenti.py`, anche sugli
+  strumenti MCP di GitHub, e `campaign_branch.py guard` che rifiuta i rami
+  morti.
+- [x] G4 il workflow del lunedì `.github/workflows/sincronia-giocato.yml`.
+- [x] G5 la norma dei campi aperti nel registro delle norme, misurata da S4
+  e S6.
+
+Il 21/11 il ramo vivo era fermo al 12/10; la misura ricostruita su
+`ce345991` dà 1.398 commit di main mancanti da 41 giorni, sette patch ferme e
+la serata del 20/11 non registrata. Sul ramo vivo `8b3441e5f`, dopo le
+correzioni, esito 0 con quattro gialli che sono domande per il DM.
+
 **Totale stimato**: ≈33-45h senza E-bis. Nessun lotto blocca il gioco: il
 flusso manuale attuale resta funzionante in ogni momento (R5).
 

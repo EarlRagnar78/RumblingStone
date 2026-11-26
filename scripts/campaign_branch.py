@@ -51,6 +51,12 @@ def cmd_status(repo: Path) -> int:
     return 0
 
 
+def _rami_morti(repo: Path) -> "set[str]":
+    """I rami del registro che non si toccano (lo legge `sincronia_giocato`, un posto solo)."""
+    from sincronia_giocato import rami_morti
+    return rami_morti(repo / "plans" / "rami-di-gruppo.json")
+
+
 def cmd_guard(repo: Path) -> int:
     group = cfg.load_group(repo)
     try:
@@ -58,6 +64,10 @@ def cmd_guard(repo: Path) -> int:
             repo, expected=cfg.group_branch(group) if group else None)
     except gitio.BranchGuardError as exc:
         print(f"[branch] ✗ {exc}", file=sys.stderr)
+        return 1
+    if branch in _rami_morti(repo):
+        print(f"[branch] ✗ '{branch}' è un ramo di gruppo morto (plans/rami-di-gruppo.json, "
+              "ADR-0090): non si scrive canone qui", file=sys.stderr)
         return 1
     print(f"[branch] ✓ ok: '{branch}'")
     return 0

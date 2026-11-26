@@ -107,6 +107,8 @@ tutti `type: llm`: ogni esito dipende da un modello che giudica.
 - **I casi sono pochi e si invecchiano.** 36 casi per 12 agenti: un fatto del
   canone che cambia (una data, una classe) rompe il caso, e il caso va
   aggiornato con il canone. `custode-canone` li ha controllati il 20/11.
+  *(Nota del 2026-11-21: con `sincronizzatore-giocato` e i suoi cinque casi
+  i casi sono 41 per 13 agenti, [ADR-0149](ADR-0149-il-giocato-arriva-sul-ramo-di-gruppo-con-un-agente-e-una-misura.md).)*
 - **Eseguire costa.** Una passata dei 36 casi dura circa quaranta minuti e consuma
   chiamate a un modello; l'esito oscilla fra due esecuzioni, quindi il
   cricchetto confronta medie su un'esecuzione per caso e può segnalare un calo

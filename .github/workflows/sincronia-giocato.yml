@@ -1,0 +1,37 @@
+name: Sincronia del giocato
+
+# Il 2026-11-21 il ramo `campaign-group-rumblingstone` era fermo al 12/10,
+# 1.387 commit dietro main, e nessuno se n'era accorto. Questo workflow lo
+# guarda ogni lunedì alle 06:30 UTC, prima della routine delle 06:47, con le
+# regole che bastano a git: S1 (rami registrati in plans/rami-di-gruppo.json),
+# S2 (main indietro), S4 (campi aperti al DM, solo giallo), S5 (ultima
+# sessione). Le patch ferme (S3) stanno nella cartella del progetto, che qui
+# non c'è: le guarda l'agente `sincronizzatore-giocato` con --scansiona.
+#
+# Un workflow a parte e non un job di ci.yml: ci.yml non ha un trigger
+# schedule, e aggiungerlo farebbe girare di lunedì tutti i suoi job. Così non
+# gira sulle PR e non le blocca mai.
+
+on:
+  schedule:
+    - cron: "30 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sincronia-giocato:
+    name: Ramo di gruppo e main
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0   # S2 conta i commit di main fuori dal ramo: shallow = non misurabile
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+
+      - name: sincronia_giocato.py --check (solo stdlib e git)
+        run: python3 scripts/sincronia_giocato.py --check

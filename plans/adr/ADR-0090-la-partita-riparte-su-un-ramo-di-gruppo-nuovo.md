@@ -72,3 +72,11 @@ con un merge prima di ogni preparazione.
 
 **Da rivedere se**: il DM vuole tenere il nome vecchio del ramo, oppure il
 tavolo gioca una seconda serata senza che il ramo nuovo sia stato creato.
+
+*(Nota del 2026-11-21: il ramo `campaign-group-rumblingstone` è rimasto fermo
+dal 12/10 al 21/11 senza che nessuno lo vedesse, e la regola «main entra
+prima di ogni preparazione» non aveva una misura. Il registro dei rami vivi e
+morti è ora `plans/rami-di-gruppo.json`, e
+[ADR-0149](ADR-0149-il-giocato-arriva-sul-ramo-di-gruppo-con-un-agente-e-una-misura.md)
+aggiunge la misura, l'agente che porta il giocato e il cancello che protegge il
+ramo vecchio. Lo stato di questo ADR resta proposta: lo accetta il DM.)*

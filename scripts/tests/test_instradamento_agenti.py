@@ -5,6 +5,7 @@ import contextlib
 import io
 import json
 import shutil
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -30,6 +31,9 @@ class TestScelta(unittest.TestCase):
             "potenzia Skullcrusher per il gruppo di livello 13": "regolista",
             "sistema la CI rossa sul test di validate_pg": "sviluppatore",
             "scrivi l'ADR breve": "autore-documenti",
+            "porta il giocato della serata sul ramo di gruppo": "sincronizzatore-giocato",
+            "ci sono patch ferme da sincronizzare su campaign-group-rumblingstone?":
+                "sincronizzatore-giocato",
         }
         for testo, atteso in casi.items():
             with self.subTest(testo=testo):
@@ -92,6 +96,27 @@ class TestHook(unittest.TestCase):
     def test_input_rotto_non_blocca(self) -> None:
         self.assertEqual(ia.hook_prompt("non è json"), 0)
         self.assertEqual(ia.hook_stop("non è json"), 0)
+
+    def test_il_giocato_porta_nel_contesto_l_avviso_della_sincronia(self) -> None:
+        with mock.patch.object(ia, "avviso_sincronia", return_value="🔴 S2 campaign-group-x: main"):
+            dato = json.loads(self._prompt("porta il giocato della serata sul ramo di gruppo"))
+        testo = dato["hookSpecificOutput"]["additionalContext"]
+        self.assertIn("sincronizzatore-giocato", testo)
+        self.assertIn("🔴 S2 campaign-group-x", testo)
+
+    def test_l_avviso_rotto_non_ferma_il_suggerimento(self) -> None:
+        with mock.patch.object(ia, "avviso_sincronia", side_effect=OSError("lento")):
+            dato = json.loads(self._prompt("porta il giocato della serata sul ramo di gruppo"))
+        self.assertIn("sincronizzatore-giocato", dato["hookSpecificOutput"]["additionalContext"])
+
+    def test_altri_lavori_non_chiamano_la_sincronia(self) -> None:
+        with mock.patch.object(ia, "avviso_sincronia", return_value="X") as m:
+            self._prompt("disegna la mappa della cripta")
+        m.assert_not_called()
+
+    def test_l_avviso_della_sincronia_e_veloce_e_tace_senza_repo(self) -> None:
+        with mock.patch.object(ia, "ROOT", self.tmp):
+            self.assertEqual(ia.avviso_sincronia(), "")
 
     def test_fine_turno_registra_se_seguito(self) -> None:
         self._prompt("disegna la mappa della cripta")
@@ -192,6 +217,10 @@ class TestCancello(unittest.TestCase):
         self.assertEqual(self._push([], strumento="mcp__github__create_pull_request")[0], 2)
         self.assertEqual(self._push([], comando="gh pr ready 510")[0], 2)
 
+    def test_il_push_con_opzioni_globali_si_riconosce(self) -> None:
+        self._istruzioni()
+        self.assertEqual(self._push([], comando="git -C /x push -q")[0], 2)
+
     def test_altri_comandi_non_si_toccano(self) -> None:
         self._istruzioni()
         self.assertEqual(self._push([], comando="git status && git log")[0], 0)
@@ -224,6 +253,162 @@ class TestCancello(unittest.TestCase):
 
     def test_input_rotto_non_blocca(self) -> None:
         self.assertEqual(ia.hook_cancello("non è json"), 0)
+
+
+class TestCancelloCanone(unittest.TestCase):
+    """Il canone non si riscrive e non va su main (ADR-0007, ADR-0090): vale anche nei sottoagenti."""
+
+    def setUp(self) -> None:
+        self.tmp = Path(tempfile.mkdtemp())
+        p = mock.patch.object(ia, "REGISTRO", self.tmp / "reg.jsonl")
+        p.start()
+        self.addCleanup(p.stop)
+
+    def tearDown(self) -> None:
+        shutil.rmtree(self.tmp)
+
+    def _esito(self, comando: str, **extra) -> int:
+        ev = {"tool_name": "Bash", "tool_input": {"command": comando}, "session_id": "s9",
+              "agent_id": "a1", **extra}
+        with contextlib.redirect_stderr(io.StringIO()):
+            return ia.hook_cancello(json.dumps(ev))
+
+    def test_push_forzato_sul_ramo_di_gruppo_bloccato(self) -> None:
+        for c in ("git push --force origin campaign-group-rumblingstone",
+                  "git push -f origin HEAD:campaign-group-rumblingstone",
+                  "git push -uf origin campaign-group-rumblingstone",
+                  "git push --force-with-lease origin campaign-group-rumblingstone",
+                  "git push origin +HEAD:campaign-group-rumblingstone",
+                  "git push origin +campaign-group-rumblingstone",
+                  "git push origin :campaign-group-rumblingstone",
+                  "git push origin --delete campaign-group-rumblingstone",
+                  "cd /x && timeout 60 git push -f origin refs/heads/campaign-group-x"):
+            with self.subTest(comando=c):
+                self.assertEqual(self._esito(c), 2)
+
+    def test_push_normale_sul_ramo_di_gruppo_passa(self) -> None:
+        self.assertEqual(self._esito("git push origin campaign-group-rumblingstone"), 0)
+        self.assertEqual(self._esito("git push origin HEAD:campaign-group-rumblingstone"), 0)
+
+    def test_push_forzato_altrove_non_e_affare_di_questo_cancello(self) -> None:
+        self.assertEqual(self._esito("git push --force origin claude/project-thread-x"), 0)
+
+    def test_push_forzato_senza_refspec_dal_ramo_di_gruppo(self) -> None:
+        repo = self.tmp / "r"
+        repo.mkdir()
+        for args in (["init", "-q", "-b", "campaign-group-x"],):
+            subprocess.run(["git", "-C", str(repo), *args], check=True, capture_output=True)
+        self.assertEqual(self._esito("git push --force", cwd=str(repo)), 2)
+        self.assertEqual(self._esito("git push", cwd=str(repo)), 0)
+
+    def test_canone_verso_main_bloccato(self) -> None:
+        for c in ("git add campaign/state.yaml && git commit -m x && git push origin main",
+                  "git add campaign/sessions/2026-11-20_session-5.md; git commit -qm s; "
+                  "git push origin HEAD:main",
+                  "git push origin campaign-group-rumblingstone:main"):
+            with self.subTest(comando=c):
+                self.assertEqual(self._esito(c), 2)
+
+    def test_prodotto_verso_main_passa(self) -> None:
+        self.assertEqual(self._esito("git add scripts/x.py && git commit -m x && git push origin main"), 0)
+        self.assertEqual(self._esito("git push origin main"), 0)
+
+    def _repo_su(self, ramo: str) -> Path:
+        repo = self.tmp / ramo
+        repo.mkdir()
+        subprocess.run(["git", "-C", str(repo), "init", "-q", "-b", ramo], check=True,
+                       capture_output=True)
+        return repo
+
+    def test_i_giri_attorno_al_cancello(self) -> None:
+        """I sette modi di aggirarlo trovati dal custode-canone il 2026-11-21."""
+        repo = self._repo_su("campaign-group-x")
+        altrove = self._repo_su("claude-thread")
+        casi = ("git push --force origin HEAD",
+                "git push origin +HEAD",
+                "git push -f",
+                f"git -C {repo} push -f origin campaign-group-rumblingstone",
+                f"git -C {repo} push -f origin HEAD",
+                "git -c push.default=current push --force origin campaign-group-x",
+                "git --no-pager push -f origin campaign-group-x",
+                "git push --mirror origin",
+                "git push --all -f origin",
+                "git push --tags --force origin",
+                "sh -c 'git push -f origin campaign-group-x'",
+                "bash -c \"git push origin +HEAD:campaign-group-x\"",
+                "git push origin HEAD:main",
+                "git push origin campaign-group-x:refs/heads/main",
+                f"cd {repo} && git push --force origin HEAD",
+                # secondo giro del custode-canone, 2026-11-26
+                "git push origin '+refs/heads/*:refs/heads/*'",
+                "git push origin 'refs/heads/*:refs/heads/*'",
+                "git push --prune origin 'refs/heads/*:refs/heads/*'",
+                "git push --prune origin main")
+        for c in casi:
+            with self.subTest(comando=c):
+                self.assertEqual(self._esito(c, cwd=str(repo if "cd " not in c else altrove)), 2)
+
+    def test_dal_ramo_di_thread_head_non_e_il_ramo_di_gruppo(self) -> None:
+        altrove = self._repo_su("claude-thread")
+        self.assertEqual(self._esito("git push --force origin HEAD", cwd=str(altrove)), 0)
+        self.assertEqual(self._esito("git push origin HEAD:main", cwd=str(altrove)), 0)
+        self.assertEqual(self._esito("git push --all origin", cwd=str(altrove)), 0)
+
+    def test_ramo_morto_mai(self) -> None:
+        morto = "campaign-group-rumblingstone-dm-gianfranco"
+        self.assertEqual(self._esito(f"git push origin {morto}"), 2)
+        self.assertEqual(self._esito(f"git push origin HEAD:{morto}"), 2)
+        repo = self._repo_su(morto)
+        self.assertEqual(self._esito("git push", cwd=str(repo)), 2)
+
+    def _mcp(self, strumento: str, **inp) -> int:
+        ev = {"tool_name": f"mcp__github__{strumento}", "tool_input": inp, "session_id": "s9"}
+        with contextlib.redirect_stderr(io.StringIO()):
+            return ia.hook_cancello(json.dumps(ev))
+
+    def test_gli_strumenti_github_che_scrivono(self) -> None:
+        morto = "campaign-group-rumblingstone-dm-gianfranco"
+        for strumento in ("push_files", "create_or_update_file", "delete_file", "create_branch"):
+            with self.subTest(strumento=strumento):
+                self.assertEqual(self._mcp(strumento, branch=morto, path="x.md"), 2)
+        self.assertEqual(self._mcp("push_files", branch="main",
+                                   files=[{"path": "campaign/state.yaml", "content": "x"}]), 2)
+        self.assertEqual(self._mcp("create_or_update_file", branch="main",
+                                   path="campaign/sessions/2026-11-20_session-7.md"), 2)
+        # un commit sopra il ramo vivo è un fast-forward per costruzione
+        self.assertEqual(self._mcp("push_files", branch="campaign-group-rumblingstone",
+                                   files=[{"path": "campaign/state.yaml", "content": "x"}]), 0)
+        self.assertEqual(self._mcp("push_files", branch="main",
+                                   files=[{"path": "scripts/x.py", "content": "x"}]), 0)
+
+    def test_merge_e_aggiornamento_di_una_pr(self) -> None:
+        from unittest import mock
+        morto = "campaign-group-rumblingstone-dm-gianfranco"
+        casi = {("merge_pull_request", ("main", "campaign-group-rumblingstone")): 2,
+                ("merge_pull_request", (morto, "claude-x")): 2,
+                ("merge_pull_request", ("main", "claude-x")): 0,
+                ("merge_pull_request", ("campaign-group-rumblingstone", "claude-x")): 0,
+                ("update_pull_request_branch", ("main", morto)): 2,
+                ("update_pull_request_branch", ("main", "claude-x")): 0,
+                ("merge_pull_request", None): 2,
+                ("update_pull_request_branch", None): 2}
+        for (strumento, rami), atteso in casi.items():
+            with self.subTest(strumento=strumento, rami=rami), \
+                    mock.patch.object(ia, "_rami_della_pr", return_value=rami):
+                self.assertEqual(self._mcp(strumento, pullNumber=1, owner="o", repo="r"), atteso)
+
+    def test_il_matcher_dell_hook_copre_gli_strumenti_controllati(self) -> None:
+        import re as _re
+        impostazioni = json.loads((ia.ROOT / ".claude" / "settings.json").read_text(encoding="utf-8"))
+        matcher = [h["matcher"] for h in impostazioni["hooks"]["PreToolUse"]
+                   if any("--cancello" in c["command"] for c in h["hooks"])][0]
+        for strumento in ("Bash", *ia.PR_MCP, *ia.GITHUB_SCRIVE, *ia.GITHUB_PR_SCRIVE):
+            with self.subTest(strumento=strumento):
+                self.assertTrue(_re.fullmatch(f"(?:{matcher})", strumento), matcher)
+
+    def test_il_blocco_resta_nel_registro(self) -> None:
+        self._esito("git push -f origin campaign-group-rumblingstone")
+        self.assertEqual(ia.riepilogo(ia.REGISTRO)["push bloccati"], 1)
 
 
 if __name__ == "__main__":

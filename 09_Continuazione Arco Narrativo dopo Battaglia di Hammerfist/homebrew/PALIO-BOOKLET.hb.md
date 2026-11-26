@@ -2784,7 +2784,7 @@ rottura del Mythal) · vittoria dell'Oca = **−2 VP** + Fase 0-bis.
 
 ### 7.3 XP (a milestone, consigliato)
 - Fine **Giorno 1** (contrada scelta + Prova + Tratta): quota di un incontro **EL 12**.
-- Fine **Giorno 2** (partiti + Cena + stalla drow GS 11-12): quota **EL 13**.
+- Fine **Giorno 2** (partiti + Cena + stalla drow EL 13): quota **EL 13**.
 - Fine **Corsa + Decreto**: quota **EL 14** (piena se l'esito evita la resa).
 - Bonus da story-award: maledizione della Nonna spezzata, rete Halveth scoperta, drow
   catturato vivo — **EL 11** ciascuno.
@@ -3056,7 +3056,7 @@ Griglia **1 quadretto = 5 ft**, EL 12–13 (statblocchi in cap. XIII §3).
 - Il **Barbaresco (B)** è accanto al cavallo; la **scorta PG (P)** copre la porta principale.
   Sorpresa se non di guardia: Ascoltare DC 20.
 - Buio totale (torce spente): **Scurovisione**/luce = cruciale.
-- Token in mappa: **D** Drow Assassino · **C** Chierica di Lolth · **S** Servitore della Spora.
+- Token in mappa: **D** Drow Assassina di Lolth · **C** Chierica di Lolth · **S** Servitore della Spora.
 - **Catturare un drow vivo** = intel Fase 0 Rethmar **−1 clock Sonjak** (INTEGRAZIONE §3.2).
 
 ---
@@ -3073,7 +3073,7 @@ per mappa. Companion di raccordo:*
 | **Channathgate città** | `channathgate-citta.svg` | 8 rioni-contrada, Porta dell'Alba/del Porto, Darsena; spostamenti dei partiti, infiltrazione Civetta, porto |
 | **Channathgate in scala** | `channathgate-pianta.svg` | la pianta che vale per le misure: arg (Palazzo dei Nove), maidan (il Campo), bazar coperto, giardini murati, qanat, Darsena e chiuse; città aperta di circa 250 ha e 25.000 abitanti: mura e torri solo all'arg (828 m, 27 torri e 2 alla porta), fossi e muri di rione con porte di quartiere |
 | **Rotta di soccorso** | `rotta-soccorso.svg` | Dawn Way (~35 mi, 1,5 gg, cavalleria) vs Fiume Cannath (~1 gg, flotta); **deadline Day 38** per la Fase 1 |
-| **Stalla — assalto drow** | `stalla-assalto-drow.svg` | 1 quadretto = 5 ft, GS 11-12; drow dalla botola SO con *Oscurità/Silenzio*, buio totale |
+| **Stalla — assalto drow** | `stalla-assalto-drow.svg` | 1 quadretto = 5 ft, EL 12-13; drow dalla botola SO con *Oscurità/Silenzio*, buio totale |
 
 ### ⚔️ TATTICHE (companion T5c)
 
@@ -3100,7 +3100,7 @@ per mappa. Companion di raccordo:*
 
 {{monster,frame
 ## 3.1 Drow Assassina di Lolth ×2 (GS 10 cad.)
-*Medium humanoid (elf), NE* · GS 10
+*Medium humanoid (elf), NE, Ladro 5 / Assassino 4* · GS 10
 ___
 **Taglia** Media · **Spazio** 1,5 m (1 quadretto) · **Portata** 1,5 m (1 quadretto)
 

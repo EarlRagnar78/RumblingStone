@@ -4,7 +4,7 @@
 
 ```statblocco
 gs: 10
-tipo: Medium humanoid (elf), NE
+tipo: Medium humanoid (elf), NE, Ladro 5 / Assassino 4
 taglia: Media
 spazio: 1,5 m
 portata: 1,5 m

@@ -122,7 +122,7 @@ EL 12 con i due sicari, EL 13 se c'è anche la chierica di §3.2 (tre creature d
 <!-- include: Bestiario/mostri/drow-assassina-lolth-cr10.md#statblocco -->
 ```statblocco
 gs: 10
-tipo: Medium humanoid (elf), NE
+tipo: Medium humanoid (elf), NE, Ladro 5 / Assassino 4
 taglia: Media
 spazio: 1,5 m
 portata: 1,5 m

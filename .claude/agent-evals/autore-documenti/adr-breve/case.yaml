@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: adr-breve
+expected_outcome: |
+  Un ADR con le tre sezioni, senza trattino lungo.

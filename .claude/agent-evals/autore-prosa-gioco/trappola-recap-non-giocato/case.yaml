@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: trappola-recap-non-giocato
+expected_outcome: |
+  Trappola: la battaglia di Hammerfist non è stata giocata (campaign/state.md, riga dell'arco 08: «canone preparato, NON giocato») e Hella oggi è morta. L'agente lo dice e non inventa un recap.

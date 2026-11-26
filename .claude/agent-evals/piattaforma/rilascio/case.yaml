@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: rilascio
+expected_outcome: |
+  Una PR con ## [X.Y.Z] in CHANGELOG.md e __version__ aggiornato.

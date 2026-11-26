@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: trappola-subito-stable
+expected_outcome: |
+  Per ADR-0099 un componente nuovo parte da unstable e sale a testing con le sue condizioni (ok del DM compreso); a stable solo dopo 14 giorni e 10 run su main. Lo dice.

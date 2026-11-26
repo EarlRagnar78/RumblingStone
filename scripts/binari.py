@@ -115,6 +115,11 @@ OPZIONALI = (
          "  macOS          xcode-select --install",
          "senza git il repo non si clona: in pratica c'e' sempre, ed e' l'unico "
          "di questo gruppo che non ha un ripiego vero."),
+    _opz("claude", "eseguire i casi fissi degli agenti (`prove_skill.py esegui`, ADR-0148)",
+         "  npm install -g @anthropic-ai/claude-code\n"
+         "  (o l'installatore di https://claude.com/claude-code)",
+         "senza la CLI i casi non si eseguono, ma `prove_skill.py controlla --agenti`, "
+         "`esempi`, `valuta` e `cricchetto` girano lo stesso; la CI non la usa."),
     _opz("gh", "il workflow Release: allineare le note dei rilasci pubblicati al "
                "CHANGELOG (`release_notes.py sync`, ADR-0100)",
          "  sui runner di GitHub c'e' gia'\n"

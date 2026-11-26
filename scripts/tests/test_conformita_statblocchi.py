@@ -521,16 +521,16 @@ class TestCancelloDeiNumeri(unittest.TestCase):
              "### **FANTERIA SENZA SCHEDA**\n\n**AU (Spada):** +10 | **Danno:** 1d8\n")
 
     def test_l_au_e_l_attacco_della_creatura_singola(self):
-        # orog: ascia +13 nella scheda uno contro uno, quindi AU +13 (ARC08-02 §4).
-        # Il «+2 effetto massa» è della variante 2d6: +15 non torna.
-        r = C.numeri_delle_unita(ROOT / "prova.md", self.UNITA.format(au=13))
+        # orog: ascia +14 nella scheda uno contro uno (+13 fino al 2026-11-20), quindi AU +14 (ARC08-02 §4).
+        # Il «+2 effetto massa» è della variante 2d6: +16 non torna.
+        r = C.numeri_delle_unita(ROOT / "prova.md", self.UNITA.format(au=14))
         self.assertEqual([x["titolo"] for x in r], ["FANTERIA SENZA SCHEDA"])
-        r = C.numeri_delle_unita(ROOT / "prova.md", self.UNITA.format(au=15))
+        r = C.numeri_delle_unita(ROOT / "prova.md", self.UNITA.format(au=16))
         orog = [x for x in r if x["titolo"] == "OROG GUARDIE NERE"]
-        self.assertEqual((orog[0]["scritto"], orog[0]["atteso"]), (15, 13))
+        self.assertEqual((orog[0]["scritto"], orog[0]["atteso"]), (16, 14))
 
     def test_l_unita_senza_scheda_non_ha_conto(self):
-        r = C.numeri_delle_unita(ROOT / "prova.md", self.UNITA.format(au=13))
+        r = C.numeri_delle_unita(ROOT / "prova.md", self.UNITA.format(au=14))
         self.assertIsNone(r[0]["atteso"])
 
     def test_la_balista_toglie_quattro_a_chi_e_medio(self):

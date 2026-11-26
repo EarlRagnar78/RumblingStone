@@ -7,17 +7,17 @@ tipo: Medium humanoid (elf), Monaco 9 / Chierico 2, LB
 taglia: Media
 spazio: 1,5 m
 portata: 1,5 m
-ca: 19
-ca-dettaglio: contatto 19, colta alla sprovvista 16 (+3 Des, +3 Sag, +1 monaco, +2 deviazione)
-pf: 71
-pf-dado: 11d8+22
-ts: Temp +11, Rifl +9, Vol +14
-attributi: For 14 Des 16 Cos 14 Int 13 Sag 17 Car 14
+ca: 18
+ca-dettaglio: contatto 18, colta alla sprovvista 17 (+1 Des, +4 Sag, +1 monaco, +2 deviazione)
+pf: 60
+pf-dado: 11d8+11
+ts: Temp +10, Rifl +7, Vol +15
+attributi: For 11 Des 13 Cos 12 Int 9 Sag 18 Car 11
 velocita: 18 m (movimento veloce del monaco)
-iniziativa: +7
+iniziativa: +5
 attacchi:
-  - Mischia colpo senz'armi +10/+5 (1d10+3) o raffica +10/+10/+5 (1d10+3)
-  - Mischia bastone da viaggio +9/+4 (1d6+3)
+  - Mischia colpo senz'armi +8/+3 (1d10+1) o raffica +8/+8/+3 (1d10+1)
+  - Mischia bastone da viaggio +7/+2 (1d6)
 voci:
   - Altro equipaggiamento: anello di protezione +2, mantello della resistenza agli incantesimi, amuleto dei pugni potenti +1, bastone da viaggio in cedro, borsa con i cinque sigilli del Torneo
 ```
@@ -144,7 +144,7 @@ Le prove preliminari testano abilità monastiche. **PG non-monaci** possono part
 Maewen è una **messaggera, non un'avventuriera**. Combatte solo se attaccata o se un compagno è in pericolo immediato.
 
 - **Round 1:** *Sanctuary* su sé stessa (azione standard, evita di essere bersagliata se non attacca).
-- **Round 2:** se ancora attaccata, Stunning Fist sul leader avversario (CD 18). Spesso ferma il combattimento all'istante.
+- **Round 2:** se ancora attaccata, Stunning Fist sul leader avversario (CD 19). Spesso ferma il combattimento all'istante.
 - **Round 3:** Wholeness of Body se ferita; ritirata negoziata se possibile.
 - **Mai uccide se può catturare o stordire.** Pacifista praticante, non assoluta.
 
@@ -152,36 +152,36 @@ Maewen è una **messaggera, non un'avventuriera**. Combatte solo se attaccata o 
 
 | Caratteristica | Valore | Mod. |
 |:---|:---:|:---:|
-| **Forza** | 14 | +2 |
-| **Destrezza** | 16 | +3 |
-| **Costituzione** | 14 | +2 |
-| **Intelligenza** | 13 | +1 |
-| **Saggezza** | 17 | +3 |
-| **Carisma** | 14 | +2 |
+| **Forza** | 11 | +0 |
+| **Destrezza** | 13 | +1 |
+| **Costituzione** | 12 | +1 |
+| **Intelligenza** | 9 | −1 |
+| **Saggezza** | 18 | +4 |
+| **Carisma** | 11 | +0 |
 
-**Punti Ferita:** 71 (9d8 + 2d8 + 22 Cos)
-**Iniziativa:** +7 (+3 Des, +4 Iniziativa Migliorata)
+**Punti Ferita:** 60 (9d8 + 2d8 + 11 Cos)
+**Iniziativa:** +5 (+1 Des, +4 Iniziativa Migliorata)
 **Velocità:** 18 m (movimento veloce del monaco)
 **Sensi:** visione crepuscolare
 
-**Classe Armatura:** 19 (10 base, +3 Des, +3 Sag, +1 monaco, +2 deviazione dall'*anello di protezione +2*)
-*Contatto 19 / Colta alla sprovvista 16*
+**Classe Armatura:** 18 (10 base, +1 Des, +4 Sag, +1 monaco, +2 deviazione dall'*anello di protezione +2*)
+*Contatto 18 / Colta alla sprovvista 17*
 
-**Tiri Salvezza:** Tempra +11, Riflessi +9, Volontà +14 (+2 contro ammaliamento per Mente Lucida, +2 per il sangue elfico; immune al *sonno* magico)
+**Tiri Salvezza:** Tempra +10, Riflessi +7, Volontà +15 (+2 contro ammaliamento per Mente Lucida, +2 per il sangue elfico; immune al *sonno* magico)
 *Base: monaco 9 +6/+6/+6, chierico 2 +3/+0/+3; Volontà di Ferro +2.*
 
 **RI:** 21, dal *mantello della resistenza agli incantesimi* (oggetto SRD), dono della Confraternita alla sua corriera, che viaggia sola. ⚠ **Oltre l'SRD** (DM 2026-10-18, vince la versione più forte): il mantello costa 90.000 mo, più della ricchezza SRD di un PNG dell'11°; e il monaco la RI la ottiene solo al 13°, con l'Anima Diamantina. PF1e: lo stesso, il monaco ha la RI al 13° e il *mantle of spell resistance* costa anche lì 90.000 mo.
 
-**BAB/Lotta:** +7 / +9
+**BAB/Lotta:** +7 / +7
 
 **Attacchi:**
-- Colpo senz'armi +10/+5 (1d10+3); raffica di colpi +10/+10/+5 (1d10+3 ciascuno; al 9° la raffica non ha penalità); il +1 viene dall'*amuleto dei pugni possenti +1*
-- Bastone da viaggio +9/+4 (1d6+3 a due mani); può usarlo nella raffica
+- Colpo senz'armi +8/+3 (1d10+1); raffica di colpi +8/+8/+3 (1d10+1 ciascuno; al 9° la raffica non ha penalità); il +1 viene dall'*amuleto dei pugni possenti +1*
+- Bastone da viaggio +7/+2 (1d6 a due mani); può usarlo nella raffica
 
 ### CAPACITÀ DI CLASSE
 
 #### Monk 9
-- Raffica di Colpi, Colpo Senz'Armi Migliorato, Pugno Stordente (CD 18, 9/giorno: 10 + metà del livello del personaggio + Sag)
+- Raffica di Colpi, Colpo Senz'Armi Migliorato, Pugno Stordente (CD 19, 9/giorno: 10 + metà del livello del personaggio + Sag)
 - Eludere ed Eludere Migliorato, Mente Lucida (+2 contro ammaliamento, già contato)
 - Colpo Ki (magico), Caduta Lenta 12 m, Purezza del Corpo (immune alle malattie)
 - **Integrità del Corpo** (1/giorno: cura 18 PF a sé stessa)
@@ -191,16 +191,16 @@ Maewen è una **messaggera, non un'avventuriera**. Combatte solo se attaccata o 
 
 #### Cleric 2 (di Ilmater)
 - Domini: Guarigione, Forza (Ilmater ha anche Legge e Sofferenza, quest'ultimo forgottiano)
-- Scacciare non morti 5/giorno
-- Incantesimi (incantatore di 2° livello, CD = 13+liv; 4/3+1 al giorno): liv 0 *Cura Ferite Minori, Individuazione del Magico, Luce, Resistenza*; liv 1 *Benedizione, Cura Ferite Leggere, Santuario*, più l'incantesimo di dominio *Cura Ferite Leggere* (Guarigione, che gli dà +1 al livello dell'incantatore)
+- Scacciare non morti 3/giorno
+- Incantesimi (incantatore di 2° livello, CD = 14+liv; 4/3+1 al giorno): liv 0 *Cura Ferite Minori, Individuazione del Magico, Luce, Resistenza*; liv 1 *Benedizione, Cura Ferite Leggere, Santuario*, più l'incantesimo di dominio *Cura Ferite Leggere* (Guarigione, che gli dà +1 al livello dell'incantatore)
 
 #### Talenti
-Iniziativa Migliorata, Volontà di Ferro, Resistenza Fisica, Duro a Morire. Quattro, quanti ne dà l'11° livello; più quelli bonus del monaco. Il quinto che la scheda elencava, Abilità Focalizzata (Diplomazia), non ha un posto legale: una mezzelfa non ha il talento bonus dell'umano, e darglielo vorrebbe dire cambiarle razza. La sua Diplomazia resta +12 coi gradi.
+Iniziativa Migliorata, Volontà di Ferro, Resistenza Fisica, Duro a Morire. Quattro, quanti ne dà l'11° livello; più quelli bonus del monaco. Il quinto che la scheda elencava, Abilità Focalizzata (Diplomazia), non ha un posto legale: una mezzelfa non ha il talento bonus dell'umano, e darglielo vorrebbe dire cambiarle razza. La sua Diplomazia è +10 coi gradi.
 
 #### Abilità chiave
-Diplomazia +12, Sapienza Religione +9, Concentrazione +12, Ascoltare +14, Osservare +14, Sopravvivenza +9, Camuffare +5 (basso — non è una spia, è una messaggera onesta).
+Diplomazia +10, Sapienza Religione +5, Concentrazione +9, Ascoltare +13, Osservare +13; Sopravvivenza +4 e Camuffare +0 senza gradi (non è una spia, è una messaggera onesta).
 
-Benchmark: PF T1-1 riga 11: CA 19 vs 25 (6 sotto) / pf 71 vs 145 (molto sotto) / atk +10 vs +19 (molto sotto) / CD 18 vs 20 (2 sotto) / TS buoni +11 e +14 vs +14. Una messaggera, non una combattente: il GS 11 viene dai livelli di classe, e la scheda lo dice (§Esiti possibili).
+Benchmark: PF T1-1 riga 11: CA 18 vs 25 (7 sotto) / pf 60 vs 145 (molto sotto) / atk +8 vs +19 (molto sotto) / CD 19 vs 20 (1 sotto) / TS buoni +10 e +15 vs +14. Una messaggera, non una combattente: il GS 11 viene dai livelli di classe, e la scheda lo dice (§Esiti possibili).
 
 ## Esiti possibili
 
@@ -258,6 +258,8 @@ Boost log: correzione dei conti (SRD) — GS 10 → 11 — GS uguale al livello 
 > - era: RI 19 come privilegio del monaco, che al 9° non ce l'ha → ora RI 21 dal mantello della resistenza agli incantesimi, confermato dal DM il 2026-10-18 oltre la ricchezza SRD
 > - era: cinque talenti scelti (con Abilità Focalizzata in Diplomazia) e Schivare contato in CA → ora quattro: Abilità Focalizzata è uscita, perché l'11° livello ne dà quattro
 > - era: «Endurance» fra gli incantesimi da chierico (è un talento) e «High Jump» fra i privilegi del monaco, che nel 3.5 non c'è → tolti; aggiunti Eludere Migliorato e Purezza del Corpo
+> Valori superati il 2026-11-20 (card del DM «Serie d'élite»: la scheda costava 43 punti di acquisto, sopra i 32 della DMG 3.5):
+> - era: For 14 Des 16 Cos 14 Int 13 Sag 17 Car 14, CA 19 (contatto 19, colta 16), pf 71, Temp +11, Rifl +9, Vol +14, iniziativa +7, Lotta +9, colpo senz'armi +10/+5 (1d10+3), raffica +10/+10/+5, bastone +9/+4 (1d6+3), Pugno Stordente CD 18, CD 13 + livello, Scacciare 5/giorno, Diplomazia +12, Religione +9, Concentrazione +12, Ascoltare e Osservare +14, Sopravvivenza +9, Camuffare +5 → ora serie d'élite della DMG 3.5 p. 110, mezzelfa (nessun modificatore) di mezza età (−1 For, Des, Cos; +1 Int, Sag, Car): Sag 15 (+1 al 4° e all'8°), Des 14, Cos 13, For 12, Car 10, Int 8. I punti abilità scendono da 66 a 38 (Monaco 9 / Chierico 2, Int 9): 8 gradi in Diplomazia, Ascoltare, Osservare e Concentrazione, 6 in Religione; Sopravvivenza e Camuffare restano senza gradi.
 <!-- /storico -->
 
 > RC-001 (2026-11-15, ADR-0134) `[CANONE — DM 2026-11-15, RC-001]`: nel blocco vanno solo i tre oggetti SRD già decisi dal DM il 2026-10-18 (anello di protezione +2 nella CA 19, mantello della resistenza agli incantesimi per la RI 21, amuleto dei pugni potenti +1 nell'attacco) più il bastone e la borsa dei sigilli della prosa. Nessun numero cambia.

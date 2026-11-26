@@ -151,6 +151,14 @@ class TestLaSchedaSiLeggePrima(unittest.TestCase):
         t = blocco() + "\nStr 14, Dex 12, Con 14, Int 10, Wis 10, Cha 8\nStr 18, Dex 12, Con 14, Int 10, Wis 10, Cha 8\n"
         self.assertIsNone(LC.dalla_scheda(t))
 
+    def test_lo_storico_non_e_una_seconda_sestina(self):
+        # 2026-11-20: i drow rifatti con la serie d'elite scrivono i numeri di
+        # prima nel blocco storico; letti come seconda sestina, la scheda
+        # tornava all'array
+        t = (blocco() + "\n**Abilities**: Str 13, Dex 18, Con 12, Int 14, Wis 10, Cha 10\n"
+             "\n<!-- storico -->\n- era: For 14 Des 18 Cos 14 Int 13 Sag 12 Car 14\n<!-- /storico -->\n")
+        self.assertEqual(LC.dalla_scheda(t)[0]["For"], 13)
+
     def test_la_scheda_batte_la_fonte_e_i_vincoli(self):
         t = blocco(det="ca-dettaglio: +4 Dex") + "\nStr 14, Dex 12, Con 14, Int 10, Wis 10, Cha 8\n"
         v, note = CAR.genera("x-cr3.md", "brute", 3, t)

@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-25 | REGOLE-SENZA-OMISSIONI | Lotto «razze coi dadi vita razziali» e caratteristiche (card di Jfs del 20/11).… | ✅ schede bocciate dalla regola 21 → 3, tutte spiegate (l'orog letto come orco, Zin'thara letta come elfa, Tempestas dichiarato); dopo la verifica a due agenti,… |
 | 2026-11-25 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | I nomi della Cannath Vale nei file di gioco (scelta di Jfs su card del 25/11, t… | 🟡 `git grep -w` su tutto il repo: Rhest 358 + RHEST 135 in 89/46 file, Blackfens 63 + 8, Brindol 167 in 36 → restano in archivi e storia, log e recap del 05/20… |
 | 2026-11-25 | STATO-E-ORDINE | ADR-0142, aggiunta: la voce `**/rendered-*/` in `.claudeignore` (scelta di Jfs… | 🟡 file tracciati coperti 881 → 1.136; `rg -n -M 500 --ignore-file .claudeignore`, `main` → ramo: byte da −0,4% (Skullcrusher) a −2,7% (Belkram), file da −0,9%… |
 | 2026-11-25 | STATO-E-ORDINE | ADR-0146, correzione: la configurazione Claude arriva anche a livello utente. D… | 🟡 sessione headless nuova in `/home/user` nello stesso container: con la configurazione utente scattano UserPromptSubmit e PreToolUse su Bash,… |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-20 | STATO-E-ORDINE | ADR-0146 (proposta), le skill di prosa si caricano per vincolo (richiesta di Jf… | ✅ baseline su un campione di cinque thread: zero invocazioni di skill su 188 chiamate; l'hook si attiva su circa 200 modifiche su 2.944 ai file di gioco degli… |
 | 2026-11-20 | STANDARD-STAMPA | ADR-0122, S2: le chiavi d'area (richiesta di Jfs del 19/11 di vedere subito chi… | Booklet della serata: S2 codici del testo che sono anche sulla mappa 0/0 → 7/7, codici solo sulla mappa 0; pagine 132 → 134; `misura_stampa --check` nei tetti… |
 | 2026-11-20 | STANDARD-STAMPA | Via i rimandi tecnici dai booklet di ARC-07 (richiesta di Jfs del 20/11 per la… | escono ADR-0057, ADR-0018, «ADR-10 interno», «decisione Q21 del DM», «Q29» (due volte), «B4 §3/§4» e i numeri di riga dei vecchi file P5/P6; la regex sul testo… |
-| 2026-11-20 | SISTEMI-DI-GIOCO-PLUGIN | Caratteristiche dal .pcg: la razza dell'orco regular 4 e l'ira dentro i numeri… | Segnalazione del thread del volume: il .pcg salva le caratteristiche prima della razza. Misurate le 13 schede del Bestiario che citano un .pcg contro main 2af9… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 324 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 226 voci, l'ultima MS-0226 del 2026-11-25 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 227 voci, l'ultima MS-0227 del 2026-11-25 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

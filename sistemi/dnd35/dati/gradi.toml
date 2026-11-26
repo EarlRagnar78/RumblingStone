@@ -286,6 +286,103 @@ umano_per_livello = 1
 "bluff" = 2
 "hide" = 2
 
+# il bonus razziale alle abilità delle creature coi dadi vita razziali che avanzano per
+# classe (paragrafo «Skills» del loro capitolo dei mostri); tabella vuota = nessun bonus
+[razze_dv."annis"]
+
+[razze_dv."aranea"]
+"climb" = 8
+"jump" = 2
+"listen" = 2
+"spot" = 2
+
+[razze_dv."azer"]
+
+[razze_dv."bugbear"]
+"move silently" = 4
+
+[razze_dv."centaur"]
+
+[razze_dv."cloud giant"]
+
+[razze_dv."derro"]
+"hide" = 4
+"move silently" = 4
+
+[razze_dv."doppelganger"]
+"bluff" = 4
+"disguise" = 4
+
+[razze_dv."drider"]
+"climb" = 8
+"hide" = 4
+"move silently" = 4
+
+[razze_dv."dryad"]
+
+[razze_dv."ettin"]
+"listen" = 2
+"search" = 2
+"spot" = 2
+
+[razze_dv."fire giant"]
+
+[razze_dv."frost giant"]
+
+[razze_dv."gnoll"]
+
+[razze_dv."green hag"]
+"swim" = 8
+
+[razze_dv."grimlock"]
+"hide" = 10
+
+[razze_dv."harpy"]
+"bluff" = 4
+"listen" = 4
+
+[razze_dv."hill giant"]
+
+[razze_dv."lizardfolk"]
+"balance" = 4
+"jump" = 4
+"swim" = 4
+
+[razze_dv."locathah"]
+"swim" = 8
+
+[razze_dv."medusa"]
+
+[razze_dv."minotaur"]
+"listen" = 4
+"search" = 4
+"spot" = 4
+
+[razze_dv."ogre"]
+
+[razze_dv."ogre mage"]
+
+[razze_dv."rakshasa"]
+"bluff" = 4
+"disguise" = 4
+
+[razze_dv."sahuagin"]
+"swim" = 8
+
+[razze_dv."sea hag"]
+"swim" = 8
+
+[razze_dv."stone giant"]
+"hide" = 8
+
+[razze_dv."storm giant"]
+"swim" = 8
+
+[razze_dv."troglodyte"]
+"hide" = 8
+
+[razze_dv."troll"]
+
 # come una scheda nomina le sette razze (espressioni regolari, italiano e inglese); una
 # sottorazza (drow, duergar…) ha i suoi bonus in un'altra pagina e non è qui
 [razze_nomi]

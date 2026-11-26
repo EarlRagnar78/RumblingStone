@@ -167,7 +167,7 @@ trascorso.** Terrelton cadrà mentre la Battaglia di Hammerfist si chiude, e la
 Battaglia **non è stata giocata**. Il Giorno 19 non è «dove siamo»: è **dove il
 calendario tornerà**, perché i PG viaggiano indietro nel tempo nel P5 e
 riemergono al Cuore della Montagna al Giorno 3 dell'orologio interno, che è il
-March Clock Day 18-19 (`ARC08-00-INDICE` §17-19; `ARC07-DEF-5` §94; §0 riga «Day
+March Clock Day 18-19 (`ARC08-00-INDICE` §17-19; `ARC07-DEF-5` §0-bis; §0 riga «Day
 19 (target sync)»). *Il calendario avanti non è un difetto: è la Forgia Eterna
 che fa il suo mestiere — DM 2026-09-11, D3.*
 

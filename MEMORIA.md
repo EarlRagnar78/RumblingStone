@@ -95,12 +95,12 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-21 | P16 · REGOLE | Due incoerenze trovate dal thread dei draghi (richiesta del coordinatore del 21… | ✅ due file, nessun numero di scheda cambiato |
 | 2026-11-20 | STANDARD-STAMPA | ADR-0122, S1: le introduzioni dei capitoli VIII e X nel booklet della serata di… | S1 capitoli con introduzione ≥ 500 caratteri: 2/17 → 9/17 con la misura nuova (1/17 → 2/17 con quella di prima); restano senza i capitoli di preparazione e di… |
 | 2026-11-20 | STANDARD-STAMPA | ADR-0122, S4: l'appendice della regione nel booklet della serata di ARC-07 (ric… | S4 pagine di regione/PNG 0/3 → 9/3; pagine 132 → 141; note di lavoro in stampa nella serata 0 (prima di togliere l'apparato dal conto ne contava 6); parole del… |
-| 2026-11-20 | STATO-E-ORDINE | ADR-0146 (proposta), le skill di prosa si caricano per vincolo (richiesta di Jf… | ✅ baseline su un campione di cinque thread: zero invocazioni di skill su 188 chiamate; l'hook si attiva su circa 200 modifiche su 2.944 ai file di gioco degli… |
+| 2026-11-20 | PIATTAFORMA-DI-SVILUPPO | ADR-0148 (proposta), i fatti si verificano con script e gli agenti con prove fi… | 🟡 `verifica_px`: 16 test, 366 mutanti su 366, 0 falsi allarmi su 3 versioni storiche del registro; `verifica_rimandi`: 1.744 rimandi, 1.026 tornano, 1 rotto (… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 324 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 229 voci, l'ultima MS-0229 del 2026-11-20 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 230 voci, l'ultima MS-0230 del 2026-11-20 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

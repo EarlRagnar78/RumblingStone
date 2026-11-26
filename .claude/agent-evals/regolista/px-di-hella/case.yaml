@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: px-di-hella
+expected_outcome: |
+  86.354 PX, ne mancano 4.646 (soglia SRD del 14° = 91.000), letti da campaign/REGISTRO-PX.md.

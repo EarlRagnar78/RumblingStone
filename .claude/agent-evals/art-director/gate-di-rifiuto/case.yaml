@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: gate-di-rifiuto
+expected_outcome: |
+  No: il gate di rifiuto lo butta; si rigenera con la scheda-personaggio.

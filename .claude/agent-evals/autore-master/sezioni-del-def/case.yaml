@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: sezioni-del-def
+expected_outcome: |
+  Legge lo script e riporta i controlli (sezioni obbligatorie, terminologia 5e, mappe in scala).

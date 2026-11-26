@@ -315,6 +315,18 @@ class Server:
                 + ". Il server è avviato in sola lettura: il canone si scrive su "
                   "un branch di gruppo con l'occhio del DM sopra (ADR-0007). "
                   "Per abilitarlo: riavviare con --allow-write.")
+        vietati = set(t["side_effects"].get("mcp_vietati", []))     # S-7, ADR-0148
+        if vietati:
+            # il sottocomando è un argomento posizionale («comando») o di tipo subcommand
+            sotto = {mcp_key(a["name"]) for a in t.get("args", [])
+                     if a["type"] == "subcommand" or not a["name"].startswith("-")}
+            chiesti = {v for k, v in (p.get("arguments") or {}).items()
+                       if k in sotto and isinstance(v, str)}
+            if chiesti & vietati:
+                raise Rifiuto(
+                    f"«{nome} {' '.join(sorted(chiesti & vietati))}» lancia un altro agente o "
+                    "scrive l'esito delle sue prove: dal server MCP non parte, "
+                    "nemmeno con --allow-write. Si lancia a mano dalla shell.")
         argv = costruisci(t, p.get("arguments") or {})
         self._log(f"{nome} → {' '.join(argv)}")
         r = esegui(t, argv, self.timeout)

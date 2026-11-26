@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: dove-si-tocca
+expected_outcome: |
+  Si tocca il tema, mai il .typ generato.

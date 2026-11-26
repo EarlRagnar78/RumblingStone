@@ -2966,15 +2966,15 @@
     },
     {
       "name": "prove_skill",
-      "description": "«Questa skill ha le sue prove con trappola, e la versione nuova inventa meno della vecchia?»\n\nLe prove con trappola delle skill (ADR-0114): controlla la forma dei casi in skills/<nome>/evals/ (quella di claude plugin eval), prepara il piano alla cieca di una prova A/B vecchia/nuova e ne scrive l'esito con il test del segno. Non chiama modelli: le esecuzioni le fa un workflow o claude plugin eval.",
+      "description": "«Questa skill ha le sue prove con trappola, e la versione nuova inventa meno della vecchia?»\n\nLe prove con trappola delle skill (ADR-0114): controlla la forma dei casi in skills/<nome>/evals/ (quella di claude plugin eval), prepara il piano alla cieca di una prova A/B vecchia/nuova e ne scrive l'esito con il test del segno. Non chiama modelli: le esecuzioni le fa un workflow o claude plugin eval. Dal ADR-0148 anche gli agenti di .claude/agents/: casi in .claude/agent-evals/<agente>/<caso>/ con almeno un giudice deterministico (regex, tool_used, tool_order, file_exists) ed esempi fissi buona/cattiva; esempi controlla in CI che ogni giudice promuova la buona e bocci la cattiva; valuta giudica un'esecuzione registrata senza modelli; impronta lega agente, skill precaricate e casi; esegui lancia claude -p --agent (costa token, mai in CI); registra scrive l'esito in .claude/agent-evals/ESITI.jsonl; cricchetto chiede, per ogni agente toccato dal diff, un esito con l'impronta nuova non peggiore del precedente (testing: avvisa; --rigoroso: blocca).",
       "use_case": "«Questa skill ha le sue prove con trappola, e la versione nuova inventa meno della vecchia?»",
-      "invocation": "python3 scripts/prove_skill.py controlla",
+      "invocation": "python3 scripts/prove_skill.py controlla [--agenti] | esempi | valuta CASO ESECUZIONE | impronta | esegui | registra | cricchetto",
       "inputSchema": {
         "type": "object",
         "properties": {
           "comando": {
             "type": "string",
-            "description": "controlla · prepara · esito"
+            "description": "controlla · prepara · esito · valuta · esempi · impronta · esegui · registra · cricchetto"
           },
           "minimo": {
             "type": "integer",
@@ -2999,6 +2999,46 @@
           "giudizi": {
             "type": "string",
             "description": "File dei giudizi dentro --piano (esito)."
+          },
+          "agenti": {
+            "type": "boolean",
+            "description": "Con controlla: i casi degli agenti in .claude/agent-evals/."
+          },
+          "agente": {
+            "type": "string",
+            "description": "Agente su cui lavorare (esempi, impronta, esegui, registra, cricchetto)."
+          },
+          "caso": {
+            "type": "string",
+            "description": "Con esegui: solo questi casi; ripetibile."
+          },
+          "modello": {
+            "type": "string",
+            "description": "Con esegui e registra: il modello usato."
+          },
+          "cartella-lavoro": {
+            "type": "string",
+            "description": "Con esegui: il git worktree usa e getta dove l'agente lavora (obbligatorio)."
+          },
+          "esecuzioni": {
+            "type": "string",
+            "description": "Con registra: la cartella scritta da esegui."
+          },
+          "data": {
+            "type": "string",
+            "description": "Con registra: la data dell'esito."
+          },
+          "nota": {
+            "type": "string",
+            "description": "Con registra: una nota libera."
+          },
+          "base": {
+            "type": "string",
+            "description": "Con cricchetto: il ref di confronto (default origin/main)."
+          },
+          "rigoroso": {
+            "type": "boolean",
+            "description": "Con cricchetto: esce 1 invece di avvisare."
           }
         },
         "required": [
@@ -3008,12 +3048,14 @@
       },
       "outputs": [
         "<uscita>/piano.json",
-        "<piano>/ESITO.md"
+        "<piano>/ESITO.md",
+        ".claude/agent-evals/ESITI.jsonl",
+        "<uscita>/<caso>/ (risposta.md, trace.jsonl, files/, cli.txt)"
       ],
       "exit_codes": {
-        "0": "casi in forma, o la nuova non peggiora",
-        "1": "un caso malformato, o la nuova peggiora gli inventati senza marca",
-        "2": "errore d'uso"
+        "0": "casi in forma, giudici che discriminano, esito non peggiore",
+        "1": "un caso malformato, un giudice che non discrimina, un'esecuzione fallita, o (con --rigoroso) un agente toccato senza esito valido",
+        "2": "errore d'uso, git diff fallito o --cartella-lavoro uguale al repo"
       },
       "deterministic": true
     },
@@ -5265,6 +5307,74 @@
       "exit_codes": {
         "0": "nessun rilievo (o rilievi non bloccanti)",
         "1": "rilievi con --strict"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "verifica_px",
+      "description": "«I PX e i livelli del gruppo tornano con le righe del registro e con lo stato?»\n\nADR-0148. Il registro dei PX (campaign/REGISTRO-PX.md) torna con quattro regole deterministiche: R1 la somma delle righe per colonna è il totale PX; R2 il livello dai PX è quello della tabella dei PX (PHB 3.5, Table 3–2, non SRD); R3 un livello alla volta (PX sotto la soglia del livello al tavolo + 2); R3 anche il limite inferiore (PX non sotto la soglia del livello al tavolo); R4 il livello al tavolo è il livello effettivo di campaign/state.yaml (ECL se scritto, altrimenti livelli di classe più LA) e ogni PG dei totali ha la sua riga. Ogni violazione dice regola, PG, atteso, ha, fonte e file:riga. Sola lettura; esce 1 su una violazione. Cancello in CI.",
+      "use_case": "«I PX e i livelli del gruppo tornano con le righe del registro e con lo stato?»",
+      "invocation": "python3 scripts/verifica_px.py [REGISTRO] [--state STATE] [--json]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "registro": {
+            "type": "string",
+            "description": "Il registro da verificare."
+          },
+          "state": {
+            "type": "string",
+            "description": "Lo stato da cui leggere i livelli di classe."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Violazioni in JSON: regola, colonna, atteso, ha, fonte, dove."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<stdout>"
+      ],
+      "exit_codes": {
+        "0": "il registro torna",
+        "1": "almeno una violazione di R1-R4 o di forma",
+        "2": "errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "verifica_rimandi",
+      "description": "«Questo §N esiste ancora nel file a cui rimanda?»\n\nADR-0148. I rimandi per sezione dei file di gioco («`ARC08-02` §1», «state.md §2», «vedi §4») puntano a un titolo che esiste nel bersaglio (titolo con «§N» o che inizia con il numero). Il bersaglio si risolve solo se il nome individua un solo .md del repo; un nome ambiguo, una riga che nomina un altro documento o un elenco di § finiscono fra i non verificabili, mai fra le violazioni. Le violazioni già portate al DM stanno in IN_ATTESA. Solo stdlib; --check esce 1 su una violazione nuova. Canale testing in CI (continue-on-error) fino al 2026-12-04.",
+      "use_case": "«Questo §N esiste ancora nel file a cui rimanda?»",
+      "invocation": "python3 scripts/verifica_rimandi.py [PERCORSI ...] [--json] [--check]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "percorsi": {
+            "type": "string",
+            "description": "File .md da leggere; senza, gli archi, campaign/ e Bestiario/."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Rimandi non verificati in JSON, con motivo."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 su una violazione nuova."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<stdout>"
+      ],
+      "exit_codes": {
+        "0": "misura eseguita (o nessuna violazione nuova con --check)",
+        "1": "violazione nuova, solo con --check",
+        "2": "errore d'uso"
       },
       "deterministic": true
     },

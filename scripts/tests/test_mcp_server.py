@@ -126,6 +126,17 @@ class TestDifese(unittest.TestCase):
         r = chiama("state_apply", {"check": True}, scrittura=True)
         self.assertNotIn("error", r, "in scrittura non deve essere rifiutato a priori")
 
+    def test_S7_un_sottocomando_vietato_non_parte_nemmeno_in_scrittura(self):
+        # ADR-0148: «prove_skill esegui» lancia un altro agente, con rete e token.
+        for scrittura in (False, True):
+            r = chiama("prove_skill", {"comando": "esegui"}, scrittura=scrittura)
+            self.assertEqual(r["error"]["code"], M.PARAMETRI)
+            self.assertIn("dalla shell", r["error"]["message"])
+
+    def test_S7_gli_altri_sottocomandi_partono(self):
+        argv = M.costruisci(M.carica()["prove_skill"], {"comando": "controlla", "agenti": True})
+        self.assertEqual(argv[-2:], ["controlla", "--agenti"])
+
     def test_S6_il_timeout_e_un_risultato_non_un_guasto(self):
         r = M.esegui({"id": "finto", "exit_codes": {}},
                      [sys.executable, "-c", "import time; time.sleep(5)"], timeout=1)

@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 151,
+  "tool_count": 153,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -7468,20 +7468,23 @@
       "path": "scripts/prove_skill.py",
       "category": "F-skill-pipeline",
       "language": "python",
-      "invocation": "python3 scripts/prove_skill.py controlla",
-      "summary": "Le prove con trappola delle skill (ADR-0114): controlla la forma dei casi in skills/<nome>/evals/ (quella di claude plugin eval), prepara il piano alla cieca di una prova A/B vecchia/nuova e ne scrive l'esito con il test del segno. Non chiama modelli: le esecuzioni le fa un workflow o claude plugin eval.",
+      "invocation": "python3 scripts/prove_skill.py controlla [--agenti] | esempi | valuta CASO ESECUZIONE | impronta | esegui | registra | cricchetto",
+      "summary": "Le prove con trappola delle skill (ADR-0114): controlla la forma dei casi in skills/<nome>/evals/ (quella di claude plugin eval), prepara il piano alla cieca di una prova A/B vecchia/nuova e ne scrive l'esito con il test del segno. Non chiama modelli: le esecuzioni le fa un workflow o claude plugin eval. Dal ADR-0148 anche gli agenti di .claude/agents/: casi in .claude/agent-evals/<agente>/<caso>/ con almeno un giudice deterministico (regex, tool_used, tool_order, file_exists) ed esempi fissi buona/cattiva; esempi controlla in CI che ogni giudice promuova la buona e bocci la cattiva; valuta giudica un'esecuzione registrata senza modelli; impronta lega agente, skill precaricate e casi; esegui lancia claude -p --agent (costa token, mai in CI); registra scrive l'esito in .claude/agent-evals/ESITI.jsonl; cricchetto chiede, per ogni agente toccato dal diff, un esito con l'impronta nuova non peggiore del precedente (testing: avvisa; --rigoroso: blocca).",
       "stability": "beta",
       "stdlib_only": false,
-      "external_bins": [],
+      "external_bins": [
+        "git",
+        "claude"
+      ],
       "args": [
         {
           "name": "comando",
-          "type": "str",
+          "type": "subcommand",
           "required": true,
           "default": null,
           "choices": null,
           "repeatable": false,
-          "desc": "controlla · prepara · esito"
+          "desc": "controlla · prepara · esito · valuta · esempi · impronta · esegui · registra · cricchetto"
         },
         {
           "name": "--minimo",
@@ -7536,6 +7539,96 @@
           "choices": null,
           "repeatable": false,
           "desc": "File dei giudizi dentro --piano (esito)."
+        },
+        {
+          "name": "--agenti",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con controlla: i casi degli agenti in .claude/agent-evals/."
+        },
+        {
+          "name": "--agente",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Agente su cui lavorare (esempi, impronta, esegui, registra, cricchetto)."
+        },
+        {
+          "name": "--caso",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Con esegui: solo questi casi; ripetibile."
+        },
+        {
+          "name": "--modello",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con esegui e registra: il modello usato."
+        },
+        {
+          "name": "--cartella-lavoro",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con esegui: il git worktree usa e getta dove l'agente lavora (obbligatorio)."
+        },
+        {
+          "name": "--esecuzioni",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con registra: la cartella scritta da esegui."
+        },
+        {
+          "name": "--data",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con registra: la data dell'esito."
+        },
+        {
+          "name": "--nota",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con registra: una nota libera."
+        },
+        {
+          "name": "--base",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con cricchetto: il ref di confronto (default origin/main)."
+        },
+        {
+          "name": "--rigoroso",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con cricchetto: esce 1 invece di avvisare."
         }
       ],
       "inputs": [
@@ -7543,6 +7636,12 @@
           "path": "skills/*/evals/*/",
           "kind": "markdown",
           "required": true,
+          "schema": null
+        },
+        {
+          "path": ".claude/agent-evals/*/*/",
+          "kind": "markdown",
+          "required": false,
           "schema": null
         }
       ],
@@ -7558,22 +7657,39 @@
           "kind": "markdown",
           "required": false,
           "schema": null
+        },
+        {
+          "path": ".claude/agent-evals/ESITI.jsonl",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "<uscita>/<caso>/ (risposta.md, trace.jsonl, files/, cli.txt)",
+          "kind": "directory",
+          "required": false,
+          "schema": null
         }
       ],
       "exit_codes": {
-        "0": "casi in forma, o la nuova non peggiora",
-        "1": "un caso malformato, o la nuova peggiora gli inventati senza marca",
-        "2": "errore d'uso"
+        "0": "casi in forma, giudici che discriminano, esito non peggiore",
+        "1": "un caso malformato, un giudice che non discrimina, un'esecuzione fallita, o (con --rigoroso) un agente toccato senza esito valido",
+        "2": "errore d'uso, git diff fallito o --cartella-lavoro uguale al repo"
       },
       "determinism": {
         "deterministic": true,
         "seed_flag": "--seme",
-        "notes": "le lettere alla cieca dipendono dal seme"
+        "notes": "le lettere alla cieca dipendono dal seme; `esegui` non è deterministico (chiama un modello) e non gira in CI"
       },
       "side_effects": {
         "writes_canon": false,
         "git_commit": false,
-        "network": false
+        "network": true,
+        "notes": "`esegui` chiama `claude -p` (rete, token, scrive nel worktree usa e getta indicato) e `registra` aggiunge una riga a .claude/agent-evals/ESITI.jsonl: tutti e due non partono dal server MCP (mcp_vietati). Gli altri comandi sono sola lettura.",
+        "mcp_vietati": [
+          "esegui",
+          "registra"
+        ]
       },
       "idempotent": true,
       "consumes_schema": null,
@@ -13281,6 +13397,183 @@
         "network": false
       },
       "idempotent": true
+    },
+    {
+      "id": "verifica_px",
+      "path": "scripts/verifica_px.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/verifica_px.py [REGISTRO] [--state STATE] [--json]",
+      "summary": "ADR-0148. Il registro dei PX (campaign/REGISTRO-PX.md) torna con quattro regole deterministiche: R1 la somma delle righe per colonna è il totale PX; R2 il livello dai PX è quello della tabella dei PX (PHB 3.5, Table 3–2, non SRD); R3 un livello alla volta (PX sotto la soglia del livello al tavolo + 2); R3 anche il limite inferiore (PX non sotto la soglia del livello al tavolo); R4 il livello al tavolo è il livello effettivo di campaign/state.yaml (ECL se scritto, altrimenti livelli di classe più LA) e ogni PG dei totali ha la sua riga. Ogni violazione dice regola, PG, atteso, ha, fonte e file:riga. Sola lettura; esce 1 su una violazione. Cancello in CI.",
+      "use_case": "«I PX e i livelli del gruppo tornano con le righe del registro e con lo stato?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_bins": [
+        "python3"
+      ],
+      "external_deps": [
+        "pyyaml"
+      ],
+      "args": [
+        {
+          "name": "registro",
+          "type": "path",
+          "required": false,
+          "default": "campaign/REGISTRO-PX.md",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il registro da verificare."
+        },
+        {
+          "name": "--state",
+          "type": "path",
+          "required": false,
+          "default": "campaign/state.yaml",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Lo stato da cui leggere i livelli di classe."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Violazioni in JSON: regola, colonna, atteso, ha, fonte, dove."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "campaign/REGISTRO-PX.md",
+          "kind": "markdown",
+          "required": true
+        },
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "required": false
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<stdout>",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false
+        }
+      ],
+      "exit_codes": {
+        "0": "il registro torna",
+        "1": "almeno una violazione di R1-R4 o di forma",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Somme e soglie su un file; nessun modello."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false,
+        "notes": "Sola lettura."
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/verifica_px.py",
+      "tests": [
+        "scripts/tests/test_verifica_px.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0148-i-fatti-si-verificano-con-script-e-gli-agenti-con-prove-fisse.md"
+      ]
+    },
+    {
+      "id": "verifica_rimandi",
+      "path": "scripts/verifica_rimandi.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/verifica_rimandi.py [PERCORSI ...] [--json] [--check]",
+      "summary": "ADR-0148. I rimandi per sezione dei file di gioco («`ARC08-02` §1», «state.md §2», «vedi §4») puntano a un titolo che esiste nel bersaglio (titolo con «§N» o che inizia con il numero). Il bersaglio si risolve solo se il nome individua un solo .md del repo; un nome ambiguo, una riga che nomina un altro documento o un elenco di § finiscono fra i non verificabili, mai fra le violazioni. Le violazioni già portate al DM stanno in IN_ATTESA. Solo stdlib; --check esce 1 su una violazione nuova. Canale testing in CI (continue-on-error) fino al 2026-12-04.",
+      "use_case": "«Questo §N esiste ancora nel file a cui rimanda?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "python3"
+      ],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "percorsi",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "File .md da leggere; senza, gli archi, campaign/ e Bestiario/."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Rimandi non verificati in JSON, con motivo."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 su una violazione nuova."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "0*_*/, 10-stand-alone/, campaign/, Bestiario/ (*.md)",
+          "kind": "markdown",
+          "required": true
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<stdout>",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false
+        }
+      ],
+      "exit_codes": {
+        "0": "misura eseguita (o nessuna violazione nuova con --check)",
+        "1": "violazione nuova, solo con --check",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Regex sui titoli e sui rimandi; nessun modello."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false,
+        "notes": "Sola lettura."
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/verifica_rimandi.py --help",
+      "tests": [
+        "scripts/tests/test_verifica_rimandi.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0148-i-fatti-si-verificano-con-script-e-gli-agenti-con-prove-fisse.md"
+      ]
     },
     {
       "id": "verifica_scheda",

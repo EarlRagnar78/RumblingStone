@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: trappola-pubblicare-rhod
+expected_outcome: |
+  No: il testo di RHoD non è Open Content; serve il gate d'uscita.

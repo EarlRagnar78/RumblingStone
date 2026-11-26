@@ -146,7 +146,7 @@ voci:
 
 **Talenti** Iniziativa Migliorata, Tiro Ravvicinato, Tiro Preciso, Arma Accurata (spada corta)
 
-**Tattiche** **Obiettivo**: **il cavallo** o **il fantino**, quale dei due lo sceglie il DM; gli altri PG non sono il bersaglio. Colpire e sparire. Se scoperti, coprono la fuga.
+**Tattiche** **Obiettivo**: **il cavallo** o **il fantino**, quale dei due lo sceglie il DM; gli altri PG non sono il bersaglio. Il cavallo prende il *sangue nero di Lolth*, il fantino l'Attacco Mortale con la paralisi: il veleno drow (CD 13) resta per le guardie. Colpire e sparire. Se scoperti, coprono la fuga.
 
 **Capacità speciali**
 - **Attacco Mortale**: dopo 3 round di studio, Tempra CD 17 o morte, oppure paralisi per 1d6+4 round.
@@ -155,13 +155,14 @@ voci:
 - **Incantesimi da Assassino** 4/2 al giorno, fra cui *invisibilità*.
 
 
-*Cosa sanno dei PG e in che stato li trovano*: Sonjak gli ha detto quale stalla e quale cavallo, non chi la guarda. Arrivano la notte del Giorno 2, dopo la Cena della Prova Generale e gli intrighi dei Partiti, quando i PG dormono o fanno la guardia a turno: uno sveglio, gli altri con quello che resta degli incantesimi del giorno. L'obiettivo resta il cavallo o il fantino, anche quando il fantino è un PG (AVVENTURA §4): chi è di guardia lo evitano, e lo colpiscono solo se sta fra loro e il bersaglio o se li scopre, per coprire la fuga. Se il DM sceglie il fantino, lo addormentano con la balestra (veleno del sonno) e lo portano via nel buio; la sua scorta la trattano come la guardia della stalla. <!-- [INFERRED — Sonjak sa chi fa la guardia alla stalla?; base: §3.1 e la scheda di Sonjak dicono il mandante, non che cosa sa dei PG] (marca tolta dal booklet stampato) -->
+*Cosa sanno dei PG e in che stato li trovano*: Sonjak gli ha detto quale stalla e quale cavallo, non chi la guarda. Arrivano la notte del Giorno 2, dopo la Cena della Prova Generale e gli intrighi dei Partiti, quando i PG dormono o fanno la guardia a turno: uno sveglio, gli altri con quello che resta degli incantesimi del giorno. L'obiettivo resta il cavallo o il fantino, anche quando il fantino è un PG (AVVENTURA §4): chi è di guardia lo evitano, e lo colpiscono solo se sta fra loro e il bersaglio o se li scopre, per coprire la fuga. Se il DM sceglie il fantino, lo studiano tre round dal buio e lo paralizzano con l'Attacco Mortale, poi lo portano via; se il DM sceglie il cavallo, gli danno il *sangue nero di Lolth*, che la mattina dopo gli lascia la Costituzione ferita e il −4 in corsa; la sua scorta la trattano come la guardia della stalla. <!-- [INFERRED — Sonjak sa chi fa la guardia alla stalla?; base: §3.1 e la scheda di Sonjak dicono il mandante, non che cosa sa dei PG] (marca tolta dal booklet stampato) -->
 
 <!-- storico -->
 Prima del 2026-11-17 (tattiche di ARC-09, lotto 5) i sicari e la chierica avevano solo l'obiettivo: il cavallo, non i PG. Che cosa sanno dei PG e in che stato li trovano è stato aggiunto qui e in §3.2, marcato INFERRED perché nessuna scena lo dice.
 Fino al 2026-11-19 l'obiettivo era solo il cavallo; il DM ha scelto (card del 19/11) di allinearlo a INTEGRAZIONE §3.2 e GIORNO2 §3.3, che danno ai sicari anche il fantino da rapire. Il fantino può essere un PG (AVVENTURA §4), quindi la frase «non i PG» è diventata «gli altri PG non sono il bersaglio».
 Era (17/11, corretto il 18/11): «Se trovano un PG di guardia, il primo colpo va su di lui, non sul cavallo», che contraddiceva l'obiettivo scritto sopra (il cavallo, non i PG); «la giornata delle prove» (il Giorno 2 è la Cena e i Partiti) e «senza incantesimi preparati per l'indomani» (gli incantesimi si preparano al mattino: di notte resta quello che non si è speso).
 Fino al 2026-11-26 i sicari erano «Drow Assassino ×2, GS 9» con numeri propri (CA 21, pf 58, Rifl +12, furtivo +6d6, Morte Improvvisa CD 18, veleno del sonno CD 17, Nascondersi nelle Ombre, che è dell'Assassino di 8°), e l'incontro «GS 11–12». Il DM ha scelto (card del 26/11 «Copia dell'assassina del Bestiario») di usare la scheda del Bestiario: il recinto si copia con `componenti.py --includi`, l'EL è ricontato con la tabella della DMG (due GS 10 = 12, tre = 13).
+Con la copia dell'assassina il veleno passava a quello drow (Tempra CD 13, solo privo di sensi per qualche ora), che non spiegava il −4 del cavallo in corsa e che il fantino supera quasi sempre. Il DM ha scelto (card del 26/11 «Sangue nero e Attacco Mortale»): *sangue nero di Lolth* sul cavallo, Attacco Mortale con la paralisi sul fantino.
 <!-- /storico -->
 
 ### 3.2 Drow Chierica di Lolth (GS 10)

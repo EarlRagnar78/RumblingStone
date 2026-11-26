@@ -84,7 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
-| 2026-11-26 | REGOLE-SENZA-OMISSIONI | Le tredici scelte di Jfs sulle card del 26/11, dopo il ricalcolo del regolista.… | 🟡 `verifica_scheda.py` 0 violazioni su 133 schede, `validate_bestiario` ok, `componenti.py --check` ok, `validate_booklets` 22 manifest ok. Due card ancora ape… |
+| 2026-11-26 | REGOLE-SENZA-OMISSIONI | Le tredici scelte di Jfs sulle card del 26/11, dopo il ricalcolo del regolista.… | 🟡 `verifica_scheda.py` 0 violazioni su 133 schede, `validate_bestiario` ok, `componenti.py --check` ok, `validate_booklets` 22 manifest ok. Le due card aperte… |
 | 2026-11-25 | REGOLE-SENZA-OMISSIONI | Lotto «razze coi dadi vita razziali» e caratteristiche (card di Jfs del 20/11).… | ✅ schede bocciate dalla regola 21 → 3, tutte spiegate (l'orog letto come orco, Zin'thara letta come elfa, Tempestas dichiarato); dopo la verifica a due agenti,… |
 | 2026-11-25 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | I nomi della Cannath Vale nei file di gioco (scelta di Jfs su card del 25/11, t… | 🟡 `git grep -w` su tutto il repo: Rhest 358 + RHEST 135 in 89/46 file, Blackfens 63 + 8, Brindol 167 in 36 → restano in archivi e storia, log e recap del 05/20… |
 | 2026-11-25 | STATO-E-ORDINE | ADR-0142, aggiunta: la voce `**/rendered-*/` in `.claudeignore` (scelta di Jfs… | 🟡 file tracciati coperti 881 → 1.136; `rg -n -M 500 --ignore-file .claudeignore`, `main` → ramo: byte da −0,4% (Skullcrusher) a −2,7% (Belkram), file da −0,9%… |

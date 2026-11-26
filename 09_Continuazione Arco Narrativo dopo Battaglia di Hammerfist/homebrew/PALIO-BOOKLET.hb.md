@@ -1743,7 +1743,7 @@ invia **sicari drow** a Channathgate per **avvelenare** il cavallo dell'Istrice/
 
 - **L'incontro** (EL 13, mappa stalla in MAPPE): **2 Drow Assassine di Lolth** (GS 10) + **1 Drow
   Chierica di Lolth** (GS 10) + un **innesto fungino** (Servitore della Spora, GS 3) come
-  ariete vivente. Tattica: buio magico, veleno drow (Tempra CD 13), colpire il cavallo o rapire il fantino, a scelta del DM; gli altri PG non sono il bersaglio (STATBLOCCHI §3.1).
+  ariete vivente. Tattica: buio magico; il cavallo col *sangue nero di Lolth* (Tempra CD 17, 1d6 Cos), il fantino paralizzato con l'Attacco Mortale (Tempra CD 17) e portato via; colpire il cavallo o rapire il fantino, a scelta del DM; gli altri PG non sono il bersaglio (STATBLOCCHI §3.1).
 - **Poste**:
   - Cavallo avvelenato → **−4 Cavalcare** in corsa (o morte del cavallo → si corre scossi
     o con una brenna di riserva).
@@ -2891,7 +2891,7 @@ EL 12 con i due sicari, EL 13 se c'è anche la chierica di §3.2 (tre creature d
 
 **Talenti** Iniziativa Migliorata, Tiro Ravvicinato, Tiro Preciso, Arma Accurata (spada corta)
 
-**Tattiche** **Obiettivo**: **il cavallo** o **il fantino**, quale dei due lo sceglie il DM; gli altri PG non sono il bersaglio. Colpire e sparire. Se scoperti, coprono la fuga.
+**Tattiche** **Obiettivo**: **il cavallo** o **il fantino**, quale dei due lo sceglie il DM; gli altri PG non sono il bersaglio. Il cavallo prende il *sangue nero di Lolth*, il fantino l'Attacco Mortale con la paralisi: il veleno drow (CD 13) resta per le guardie. Colpire e sparire. Se scoperti, coprono la fuga.
 
 **Capacità speciali**
 - **Attacco Mortale**: dopo 3 round di studio, Tempra CD 17 o morte, oppure paralisi per 1d6+4 round.
@@ -2900,7 +2900,7 @@ EL 12 con i due sicari, EL 13 se c'è anche la chierica di §3.2 (tre creature d
 - **Incantesimi da Assassino** 4/2 al giorno, fra cui *invisibilità*.
 
 
-*Cosa sanno dei PG e in che stato li trovano*: Sonjak gli ha detto quale stalla e quale cavallo, non chi la guarda. Arrivano la notte del Giorno 2, dopo la Cena della Prova Generale e gli intrighi dei Partiti, quando i PG dormono o fanno la guardia a turno: uno sveglio, gli altri con quello che resta degli incantesimi del giorno. L'obiettivo resta il cavallo o il fantino, anche quando il fantino è un PG (AVVENTURA §4): chi è di guardia lo evitano, e lo colpiscono solo se sta fra loro e il bersaglio o se li scopre, per coprire la fuga. Se il DM sceglie il fantino, lo addormentano con la balestra (veleno del sonno) e lo portano via nel buio; la sua scorta la trattano come la guardia della stalla. <!-- [INFERRED — Sonjak sa chi fa la guardia alla stalla?; base: §3.1 e la scheda di Sonjak dicono il mandante, non che cosa sa dei PG] (marca tolta dal booklet stampato) -->
+*Cosa sanno dei PG e in che stato li trovano*: Sonjak gli ha detto quale stalla e quale cavallo, non chi la guarda. Arrivano la notte del Giorno 2, dopo la Cena della Prova Generale e gli intrighi dei Partiti, quando i PG dormono o fanno la guardia a turno: uno sveglio, gli altri con quello che resta degli incantesimi del giorno. L'obiettivo resta il cavallo o il fantino, anche quando il fantino è un PG (AVVENTURA §4): chi è di guardia lo evitano, e lo colpiscono solo se sta fra loro e il bersaglio o se li scopre, per coprire la fuga. Se il DM sceglie il fantino, lo studiano tre round dal buio e lo paralizzano con l'Attacco Mortale, poi lo portano via; se il DM sceglie il cavallo, gli danno il *sangue nero di Lolth*, che la mattina dopo gli lascia la Costituzione ferita e il −4 in corsa; la sua scorta la trattano come la guardia della stalla. <!-- [INFERRED — Sonjak sa chi fa la guardia alla stalla?; base: §3.1 e la scheda di Sonjak dicono il mandante, non che cosa sa dei PG] (marca tolta dal booklet stampato) -->
 
 
 ### 3.2 Drow Chierica di Lolth (GS 10)

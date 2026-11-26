@@ -943,15 +943,16 @@ i giocatori fanno quello che i capitani non osano: dicono al Re che ha torto.
 > **Read-aloud (Casa di Davide lead) — la Sala del Trono Ancestrale.** *Il
 > Consiglio di Guerra si riunisce nella Sala del Trono Ancestrale. Il Re siede
 > sul trono di pietra intagliata, e intorno al grande tavolo rotondo si
-> raccolgono i capitani, i chierici e voi quattro: il nipote del vecchio re,
-> il custode delle rune, la Morte dai Picchi e la barda che sa tutto di
-> tutti. Le torce fumano contro i pilastri neri. La Madre Superiora batte il
-> bastone sulla pietra, una volta, e la sala tace.*
+> raccolgono i capitani, i chierici e voi quattro. Prima che qualcuno parli,
+> il Re vi guarda uno per uno, e su ciascuno si ferma il tempo di un respiro,
+> come fa un fabbro quando conta i lingotti prima della colata. Le torce
+> fumano contro i pilastri neri. La Madre Superiora batte il bastone sulla
+> pietra, una volta, e la sala tace.*
 
-Il box nomina i quattro eroi del 2026-10-21. Se al tavolo c'è Ragnhild o
-Yrsa, il DM salta i quattro epiteti; le varianti del box coi nomi di chi
-gioca entrano solo dopo il voto cieco del DM `[CANONE — DM 2026-11-26, card
-«il box del Consiglio con Ragnhild o Yrsa»]`.
+Il box vale per qualunque quattro dei sei eroi: non nomina nessuno
+`[CANONE — DM 2026-11-26, voto cieco «box del Consiglio», Y 1 · X 2 · Z 3]`.
+Scartati: il box del 2026-10-21 coi quattro epiteti, e quello con una riga
+per eroe.
 
 **Scheda d'entrata — Madre Superiora Dagmar Forgiapietra, detta Dana, la voce di Moradin a Hammerfist** *(statistiche: `ARC08-01`, PNG alleati; `Bestiario/png/Dana_Forgiapietra.md`)*
 

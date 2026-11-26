@@ -412,7 +412,7 @@ Grimjaw il Giorno 2 o il Giorno 3, al round 1, prima del corno del drago
   i Comandanti»). Per Grimjaw lo dicono anche le sue Tattiche e
   `Bestiario/villain/Generale_Grimjaw.md`. Il libretto dà un morale solo
   alla rocca (§6)
-  `[INFERRED — Nel libretto l'orda non ha un morale: il −3 del comandante abbattuto tocca i dadi dei giorni d'assedio che restano?; base: ARC08-02, «Tabella dei Modificatori di Morale» (il morale vale su AU e DU delle unità), e il libretto §6, che ha solo il morale della rocca; default: no, sui dadi del libretto non entra: si segna sulla scheda della serata (§7) e vale dove l'orda ha un morale, con la regola di massa di ARC08-02]`.
+  `[CANONE — DM 2026-11-26, card «−3 sui dadi del libretto»: no, sui dadi del libretto non entra: si segna sulla scheda della serata (§7) e vale dove l'orda ha un morale, con la regola di massa di ARC08-02]`.
 - **La carta.** Si toglie subito e non torna, né quel giorno né nei giorni
   dopo.
 - **Grimjaw abbattuto.** Il Giorno 3 la carta **Grimjaw e la guardia nera**
@@ -424,12 +424,12 @@ Grimjaw il Giorno 2 o il Giorno 3, al round 1, prima del corno del drago
   solo (`Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md`, MAPPA 5, le ondate:
   «altrimenti capitano hobgoblin → auto-ritirata»). Che scheda usi e in che
   round se ne vada, le fonti non lo dicono
-  `[INFERRED — Che scheda usa il capitano minore che entra al posto di Grimjaw, e in che round si ritira?; base: Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md, MAPPA 5, le ondate («altrimenti capitano hobgoblin → auto-ritirata», ingresso al round 12) e l'Atlante delle mappe («Capitano Hobgoblin minore (Auto-retreat)»): nessuna delle due dà una scheda né un round; default: la scheda di Bestiario/mostri/hobgoblin-captain-cr8.md; entra al round 12 con le dieci guardie (Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md), non sfida nessuno, e al suo turno del round 13 esce dalla porta di mithral con le guardie]`.
+  `[CANONE — DM 2026-11-26, card «capitano al posto di Grimjaw»: la scheda di Bestiario/mostri/hobgoblin-captain-cr8.md; entra al round 12 con le dieci guardie (Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md), non sfida nessuno, e al suo turno del round 13 esce dalla porta di mithral con le guardie]`.
   Al finale Grimjaw è assente o sostituito
   (`Bestiario/villain/Generale_Grimjaw.md`, «Esiti possibili»).
   **Conseguenza**: il duello fra Thorik e Grimjaw, che chiudeva la Sessione
   3 (`ARC08-01`, «L'arrivo di Grimjaw»), non si gioca
-  `[INFERRED — Se Grimjaw è stato abbattuto nell'assedio, che cosa chiude la Sessione 3 al posto del suo duello con Thorik?; base: ARC08-01, «L'arrivo di Grimjaw», ha solo il ramo «se Grimjaw è sopravvissuto», e le mappe danno al capitano la sola ritirata; default: niente lo sostituisce: il capitano entra e si ritira, e la serata chiude sulla caverna liberata (ARC08-01, «Risultato della Sessione 3»)]`.
+  `[CANONE — DM 2026-11-26, card «Sessione 3 senza Grimjaw»: niente lo sostituisce: il capitano entra e si ritira, e la serata chiude sulla caverna liberata (ARC08-01, «Risultato della Sessione 3»)]`.
 - **Gorthak abbattuto** (provvisorio: la card del 26/11 lascia questa riga da scrivere, e il DM non l'ha ancora vista). La carta **Gorthak al cancello** si toglie e non
   torna. Se cade il Giorno 1, da quel round il fronte del Cancello torna a 3, e il Giorno 2 il fronte del Cancello resta 4, al
   round 3 il DM gioca la palla di fuoco, e l'ariete resta ai due troll, col
@@ -441,19 +441,19 @@ Grimjaw il Giorno 2 o il Giorno 3, al round 1, prima del corno del drago
   gioca (`Bestiario/villain/Gorthak_il_Trifronte.md`: «ultimo boss a terra
   al finale se vivo»; `ARC08-01`: «se sopravvissuto»). La linea del tempo
   della Sessione 4 conta ancora su di lui ai round 6-10
-  `[INFERRED — Se Gorthak è stato abbattuto nell'assedio, che cosa fa Thorik ai round 6-10 della Sessione 4?; base: ARC08-01, «La linea del tempo della Sessione 4» (D9: «fino al round 10 la convergenza, e Thorik ingaggia Gorthak») e il Registro dell'orda (ettin: 2, più Gorthak); default: nessun sostituto: la convergenza continua contro ciò che il Registro mette sulla linea dell'urto, e la picchiata dei round 18-20 prende Thorik lì]`.
+  `[CANONE — DM 2026-11-26, card «Thorik senza Gorthak al finale»: nessun sostituto: la convergenza continua contro ciò che il Registro mette sulla linea dell'urto, e la picchiata dei round 18-20 prende Thorik lì]`.
 - **La scorta.** La guardia nera ha la sua riga: se Grimjaw cade, combatte
   fino alla morte sul suo corpo
   (`Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md`, «Lealtà
   incrollabile» `[CANONE — DM 2026-10-19, D10]`). Per i due troll nessuna
   fonte lo dice
-  `[INFERRED — Con Gorthak abbattuto, i due troll fanno come quando lui fugge?; base: per la fuga, i troll seguono Gorthak e il Giorno 1 il cancello perde la metà (P16, il cancello e Gorthak); default: sì: al loro primo turno dopo la caduta lasciano il ponte senza il corpo, e quel giorno, il Giorno 1 o il Giorno 2, il cancello perde 40 pf invece di 80; se Gorthak è caduto il Giorno 1, il Giorno 2 tornano all'ariete]`.
+  `[CANONE — DM 2026-11-26, card «i troll senza Gorthak»: sì: al loro primo turno dopo la caduta lasciano il ponte senza il corpo, e quel giorno, il Giorno 1 o il Giorno 2, il cancello perde 40 pf invece di 80; se Gorthak è caduto il Giorno 1, il Giorno 2 tornano all'ariete]`.
 - **I bonus.** Nella riga «Comandanti logorati» (§7) un comandante abbattuto
   conta come uno fuggito ferito: le due schede di `Bestiario/villain/` lo
   mettono sotto lo stesso bonus («logorato/ucciso», «ucciso già in Sessione
   2-3»). Il «−20% pf» di `ARC08-10` §5.2 per lui non vale: al finale manca.
   Resta da decidere come il suo −3 sta col −2 di quella riga
-  `[INFERRED — Per un comandante abbattuto il −3 all'orda si somma al −2 dei «Comandanti logorati» o lo sostituisce, e con due abbattuti dove si ferma?; base: ARC08-10 §5.2 (comandanti logorati: −2 morale all'orda) e ARC08-02, «Tabella dei Modificatori di Morale» (−3 per un comandante ucciso; il morale va da −5 a +5); default: lo sostituisce: con un abbattuto l'orda porta −3 e il −2 non si aggiunge, anche se l'altro è fuggito ferito; con due abbattuti −5 e non −6, perché la scala si ferma a −5]`.
+  `[CANONE — DM 2026-11-26, card «−3 e −2 dei logorati»: lo sostituisce: con un abbattuto l'orda porta −3 e il −2 non si aggiunge, anche se l'altro è fuggito ferito; con due abbattuti −5 e non −6, perché la scala si ferma a −5]`.
 - **Il corpo.** Quello che la scheda gli dà addosso (A.1, A.3) resta sul
   corpo
   `[INFERRED — Chi prende quello che il comandante abbattuto ha addosso, quando, e conta nella riga «Equipaggiamento dei comandanti» di ARC08-13?; base: ARC08-13 §3 mette quella riga al finale («Corpi/resa di Grimjaw, Gorthak… se uccisi», condizionale ai rami) e il §10 di questo master dice che il tesoro della serata non conta verso il WBL dei Rumbling Stones; default: si prende solo a scontro chiuso, quando sul ponte o sulla rampa non resta un nemico in piedi; lo tiene la rocca e i pregen lo usano se vogliono; è la stessa voce di ARC08-13, che al finale non si conta una seconda volta]`.

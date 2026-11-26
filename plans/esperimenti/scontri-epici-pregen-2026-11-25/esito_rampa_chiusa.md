@@ -5,12 +5,12 @@
 | eroi | il comandante fugge | a 0 pf o meno | al primo round | round medi alla fuga | round medi a 0 pf | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |
 |---|---|---|---|---|---|---|---|
 | Borin | 0% | 0% | 0% | 4.0 | – | 100% | 0% |
-| Yrsa | 28% | 2% | 0% | 4.7 | 4.5 | 73% | 9% |
-| Borin + Yrsa | 62% | 9% | 0% | 4.0 | 3.6 | 82% | 6% |
+| Yrsa | 27% | 2% | 0% | 4.8 | 4.5 | 74% | 8% |
+| Borin + Yrsa | 62% | 8% | 0% | 4.0 | 3.6 | 82% | 5% |
 | Borin + Yrsa + Harbek | 72% | 13% | 0% | 3.8 | 3.4 | 86% | 4% |
-| Borin + Yrsa + Ragnhild | 84% | 16% | 24% | 1.9 | 1.9 | 0% | 93% |
+| Borin + Yrsa + Ragnhild | 85% | 15% | 23% | 1.9 | 1.9 | 0% | 93% |
 | Harbek + Nala | 0% | 0% | 0% | – | – | 100% | 0% |
-| Harbek + Nala + Ragnhild | 99% | 0% | 0% | 4.3 | – | 56% | 21% |
+| Harbek + Nala + Ragnhild | 98% | 0% | 0% | 4.3 | – | 55% | 21% |
 | Ragnhild | 53% | 0% | 0% | 4.4 | – | 47% | 21% |
 
 ## Grimjaw e quattro orog, la rampa chiusa: la chiudono i due orog davanti
@@ -18,12 +18,12 @@
 | eroi | il comandante fugge | a 0 pf o meno | al primo round | round medi alla fuga | round medi a 0 pf | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |
 |---|---|---|---|---|---|---|---|
 | Borin | 0% | 0% | 0% | – | – | 100% | 0% |
-| Yrsa | 26% | 2% | 0% | 4.7 | 4.6 | 75% | 8% |
+| Yrsa | 26% | 2% | 0% | 4.7 | 4.5 | 76% | 8% |
 | Borin + Yrsa | 62% | 9% | 0% | 4.0 | 3.6 | 82% | 6% |
 | Borin + Yrsa + Harbek | 73% | 12% | 0% | 3.9 | 3.4 | 85% | 4% |
 | Borin + Yrsa + Ragnhild | 84% | 16% | 23% | 1.9 | 1.9 | 0% | 93% |
 | Harbek + Nala | 0% | 0% | 0% | – | – | 100% | 0% |
-| Harbek + Nala + Ragnhild | 99% | 0% | 0% | 4.3 | – | 55% | 21% |
+| Harbek + Nala + Ragnhild | 99% | 0% | 0% | 4.4 | – | 56% | 20% |
 | Ragnhild | 52% | 0% | 0% | 4.4 | – | 48% | 21% |
 
 ## Come leggere queste cifre

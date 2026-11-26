@@ -6,7 +6,9 @@ Modello semplice, 3.5 (Yrsa PF1e):
 - iniziativa tirata, d20 + il bonus della scheda, un turno per creatura;
   nessuno e' colto alla sprovvista, perche' la battaglia e' gia' in corso;
 - attacchi con d20 contro CA, minaccia di critico confermata con un secondo
-  tiro, moltiplicatore pieno sui dadi e sui bonus fissi (SRD);
+  tiro per colpire, dove l'1 naturale manca e il 20 colpisce (SRD 3.5,
+  «Combat I», Attack Roll e Critical Hits), moltiplicatore pieno sui dadi e
+  sui bonus fissi (SRD);
 - chi si muove per arrivare al nemico fa un attacco solo in quel turno, eroe
   o nemico; dal turno dopo, attacco completo (SRD);
 - incantesimi ad area con Riflessi per dimezzare (eludere dove c'e'); l'1
@@ -146,7 +148,10 @@ def colpo(bonus, ca, dadi, fisso, minaccia=20, molt=2, extra=None, fortuna=0):
     if t == 1 or (t != 20 and t + bonus + fortuna < ca):
         return 0
     n, f = dadi
-    crit = t >= minaccia and (R.randint(1, 20) + bonus >= ca)
+    crit = False
+    if t >= minaccia:
+        c = R.randint(1, 20)
+        crit = c != 1 and (c == 20 or c + bonus >= ca)
     volte = molt if crit else 1
     dmg = sum(d(n, f) + fisso for _ in range(volte))
     if extra:

@@ -1313,16 +1313,16 @@ la regola è in `ARC08-DEF-2`, §0-bis, «Il comandante a 0 pf o meno».
 
 | Scontro | Eroi | Oggi | +8 al primo tiro per colpire sul comandante | Un'azione standard in più | Un'azione di movimento in più |
 |---|---|---|---|---|---|
-| Gorthak | Borin, poi Yrsa | 57 · 42 · 71 | 55 · 44 · 67 | 49 · 51 · 58 | 45 · 55 · 55 |
-| | Yrsa, poi Borin | 43 · 55 · 19 | 45 · 54 · 17 | 32 · 67 · 11 | 34 · 66 · 11 |
-| Grimjaw, la rampa chiusa | Borin e Yrsa | 62 · 9 · 82 | 67 · 9 · 77 | 70 · 10 · 70 | 72 · 10 · 68 |
-| Grimjaw, la rampa aperta (scartata dal DM) | Borin e Yrsa | 73 · 14 · 49 | 75 · 17 · 42 | 79 · 17 · 26 | 78 · 17 · 24 |
+| Gorthak | Borin, poi Yrsa | 56 · 43 · 70 | 55 · 44 · 67 | 49 · 51 · 58 | 45 · 55 · 56 |
+| | Yrsa, poi Borin | 43 · 56 · 19 | 44 · 55 · 17 | 33 · 66 · 11 | 34 · 66 · 12 |
+| Grimjaw, la rampa chiusa | Borin e Yrsa | 62 · 8 · 82 | 67 · 10 · 79 | 70 · 10 · 70 | 71 · 10 · 67 |
+| Grimjaw, la rampa aperta (scartata dal DM) | Borin e Yrsa | 72 · 14 · 50 | 75 · 17 · 41 | 79 · 17 · 27 | 78 · 17 · 25 |
 
-Il +8 sposta poco, da 0 a 5 punti sulle due cifre del comandante e da 2 a
-7 sugli eroi a terra, perché Borin e Yrsa colpiscono già quasi sempre.
-L'azione in più pesa di più: contro Grimjaw a rampa chiusa toglie fino a 14
-punti agli eroi a terra, contro Gorthak fino a 16; e contro Gorthak porta
-fino a 13 punti dalla fuga allo 0 pf. L'azione di movimento in più è
+Il +8 sposta poco, da 1 a 5 punti sulle due cifre del comandante e da 2 a
+9 sugli eroi a terra, perché Borin e Yrsa colpiscono già quasi sempre.
+L'azione in più pesa di più: contro Grimjaw a rampa chiusa toglie fino a 15
+punti agli eroi a terra, contro Gorthak fino a 14; e contro Gorthak porta
+fino a 12 punti dalla fuga allo 0 pf. L'azione di movimento in più è
 contata come l'eroe che arriva sul nemico e fa nello stesso turno tutti i
 suoi attacchi: è una lettura non decisa (domanda 3, in fondo alla scena), e
 le cifre di quella colonna valgono solo con quella lettura. Una differenza

@@ -50,6 +50,25 @@ def test_tiro_salvezza_venti_naturale_riesce_sempre(monkeypatch):
     assert sim.riflessi(40, ts=0, cd=40, eludere=True) == 0
 
 
+def _dadi(*primi):
+    """randint finto: prima i valori dati, poi sempre 1 (i dadi dei danni)."""
+    coda = iter(primi)
+    return lambda a, b: next(coda, 1)
+
+
+def test_conferma_del_critico_uno_naturale_non_conferma(monkeypatch):
+    # la conferma e' un altro tiro per colpire: l'1 naturale manca sempre
+    # (SRD 3.5, «Combat I», Attack Roll e Critical Hits)
+    monkeypatch.setattr(sim.R, "randint", _dadi(20, 1))
+    assert sim.colpo(100, 10, (1, 4), 0) == 1
+
+
+def test_conferma_del_critico_venti_naturale_conferma(monkeypatch):
+    # il 20 naturale colpisce sempre, anche contro una CA che il bonus non tocca
+    monkeypatch.setattr(sim.R, "randint", _dadi(20, 20))
+    assert sim.colpo(0, 1000, (1, 4), 0) == 2
+
+
 # --- l'orog del simulatore e' quello del Bestiario --------------------
 _RADICE = Path(__file__).resolve().parents[3]
 _OROG = _RADICE / "Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md"

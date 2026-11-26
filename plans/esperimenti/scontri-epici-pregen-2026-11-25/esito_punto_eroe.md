@@ -48,32 +48,32 @@ Regola opzionale di PF1e (Advanced Player's Guide, «Hero Points»): https://www
 
 | eroi | politica | il comandante fugge | diff. | a 0 pf o meno | diff. | al primo round | diff. | un eroe a terra | diff. |
 |---|---|---|---|---|---|---|---|---|---|
-| Borin + Yrsa | oggi, senza punto | 57% |  | 42% |  | 0% |  | 71% |  |
-| Borin + Yrsa | +8 al primo tiro per colpire sul comandante | 55% | -2 | 44% | +2 | 0% | +0 | 67% | -4 |
-| Borin + Yrsa | un'azione standard in piu' | 49% | -8 | 51% | +9 | 0% | +0 | 58% | -13 |
-| Borin + Yrsa | un'azione di movimento in piu' | 45% | -12 | 55% | +13 | 0% | +0 | 55% | -16 |
-| Yrsa + Borin | oggi, senza punto | 43% |  | 55% |  | 1% |  | 19% |  |
-| Yrsa + Borin | +8 al primo tiro per colpire sul comandante | 45% | +2 | 54% | -1 | 2% | +1 | 17% | -2 |
-| Yrsa + Borin | un'azione standard in piu' | 32% | -11 | 67% | +12 | 3% | +2 | 11% | -8 |
-| Yrsa + Borin | un'azione di movimento in piu' | 34% | -9 | 66% | +11 | 8% | +7 | 11% | -8 |
+| Borin + Yrsa | oggi, senza punto | 56% |  | 43% |  | 0% |  | 70% |  |
+| Borin + Yrsa | +8 al primo tiro per colpire sul comandante | 55% | -1 | 44% | +1 | 0% | +0 | 67% | -3 |
+| Borin + Yrsa | un'azione standard in piu' | 49% | -7 | 51% | +8 | 0% | +0 | 58% | -12 |
+| Borin + Yrsa | un'azione di movimento in piu' | 45% | -11 | 55% | +12 | 0% | +0 | 56% | -14 |
+| Yrsa + Borin | oggi, senza punto | 43% |  | 56% |  | 1% |  | 19% |  |
+| Yrsa + Borin | +8 al primo tiro per colpire sul comandante | 44% | +1 | 55% | -1 | 2% | +1 | 17% | -2 |
+| Yrsa + Borin | un'azione standard in piu' | 33% | -10 | 66% | +10 | 4% | +3 | 11% | -8 |
+| Yrsa + Borin | un'azione di movimento in piu' | 34% | -9 | 66% | +10 | 8% | +7 | 12% | -7 |
 
 ## Grimjaw e quattro orog, oggi: la guardia si aggira
 
 | eroi | politica | il comandante fugge | diff. | a 0 pf o meno | diff. | al primo round | diff. | un eroe a terra | diff. |
 |---|---|---|---|---|---|---|---|---|---|
-| Borin + Yrsa | oggi, senza punto | 73% |  | 14% |  | 2% |  | 49% |  |
-| Borin + Yrsa | +8 al primo tiro per colpire sul comandante | 75% | +2 | 17% | +3 | 2% | +0 | 42% | -7 |
-| Borin + Yrsa | un'azione standard in piu' | 79% | +6 | 17% | +3 | 16% | +14 | 26% | -23 |
-| Borin + Yrsa | un'azione di movimento in piu' | 78% | +5 | 17% | +3 | 18% | +16 | 24% | -25 |
+| Borin + Yrsa | oggi, senza punto | 72% |  | 14% |  | 2% |  | 50% |  |
+| Borin + Yrsa | +8 al primo tiro per colpire sul comandante | 75% | +3 | 17% | +3 | 2% | +0 | 41% | -9 |
+| Borin + Yrsa | un'azione standard in piu' | 79% | +7 | 17% | +3 | 15% | +13 | 27% | -23 |
+| Borin + Yrsa | un'azione di movimento in piu' | 78% | +6 | 17% | +3 | 18% | +16 | 25% | -25 |
 
 ## Grimjaw e quattro orog, variante: la rampa chiusa, se ne abbatte uno
 
 | eroi | politica | il comandante fugge | diff. | a 0 pf o meno | diff. | al primo round | diff. | un eroe a terra | diff. |
 |---|---|---|---|---|---|---|---|---|---|
-| Borin + Yrsa | oggi, senza punto | 62% |  | 9% |  | 0% |  | 82% |  |
-| Borin + Yrsa | +8 al primo tiro per colpire sul comandante | 67% | +5 | 9% | +0 | 0% | +0 | 77% | -5 |
-| Borin + Yrsa | un'azione standard in piu' | 70% | +8 | 10% | +1 | 0% | +0 | 70% | -12 |
-| Borin + Yrsa | un'azione di movimento in piu' | 72% | +10 | 10% | +1 | 0% | +0 | 68% | -14 |
+| Borin + Yrsa | oggi, senza punto | 62% |  | 8% |  | 0% |  | 82% |  |
+| Borin + Yrsa | +8 al primo tiro per colpire sul comandante | 67% | +5 | 10% | +2 | 0% | +0 | 79% | -3 |
+| Borin + Yrsa | un'azione standard in piu' | 70% | +8 | 10% | +2 | 0% | +0 | 70% | -12 |
+| Borin + Yrsa | un'azione di movimento in piu' | 71% | +9 | 10% | +2 | 0% | +0 | 67% | -15 |
 
 ## Come leggere queste cifre
 

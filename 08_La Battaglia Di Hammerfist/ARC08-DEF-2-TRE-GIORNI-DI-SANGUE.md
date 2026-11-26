@@ -356,14 +356,14 @@ Le cifre sono volte su cento; i round sono la media di quell'esito.
 | Chi esce, in ordine | lui fugge | lui a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra (0 pf o meno) |
 |---|---|---|---|---|---|
 | Borin da solo | 7 | mai | 3,2 | — | sempre |
-| Yrsa da sola | 60 | 22 | 3,0 | 3,0 | una volta su due (51) |
-| Borin, poi Yrsa | 57 | 42 | 3,1 | 3,3 | 71 |
-| Yrsa, poi Borin | 43 | 55 | 2,5 | 3,0 | una volta su cinque (19) |
+| Yrsa da sola | 59 | 22 | 2,9 | 3,0 | una volta su due (52) |
+| Borin, poi Yrsa | 56 | 43 | 3,1 | 3,3 | 70 |
+| Yrsa, poi Borin | 43 | 56 | 2,5 | 3,0 | una volta su cinque (19) |
 | Borin, con Dara dalla torre ² | 88 | 12 | 2,8 | 3,0 | 88 |
 | Borin, poi Yrsa, con Dara ² | 32 | 68 | 2,1 | 2,7 | 45 |
 | Yrsa, poi Borin, con Dara ² | 27 | 73 | 1,9 | 2,4 | 10 |
-| Borin, poi Yrsa, con Ragnhild che apre col fuoco dalla cinta | 33 | 67 | 1,7 | 2,2 | 28 |
-| Yrsa, poi Borin, con Ragnhild che apre | 31 | 69 | 1,4 | 2,1 | 3 |
+| Borin, poi Yrsa, con Ragnhild che apre col fuoco dalla cinta | 33 | 67 | 1,7 | 2,2 | 29 |
+| Yrsa, poi Borin, con Ragnhild che apre | 30 | 70 | 1,4 | 2,1 | 3 |
 | Harbek, poi Nala | mai | mai | — | — | sempre |
 | Harbek, poi Nala, con Dara ² | 96 | 4 | 3,7 | 4,3 | quasi sempre (99) |
 | Harbek, poi Nala, con Ragnhild che apre | 98 | 2 | 2,6 | 3,0 | 93 |
@@ -502,7 +502,7 @@ divide i colpi come nelle Tattiche, con due stelle del mattino Grandi a
 2d6+10 l'una `[CANONE — DM 2026-11-25, card «armi di Gorthak e versione dura»]` (A.1). Scartato:
 il secondo braccio a 2d6+5, come sulla scheda di prima (Borin e poi Yrsa a
 terra 66 volte su cento, Yrsa e poi Borin 11), e i randelli Grandi dell'SRD,
-1d8+10 l'uno (59 e 11).
+1d8+10 l'uno (58 e 11).
 
 **Gorthak Avanzato è scartato** `[CANONE — DM 2026-11-25, card «armi di Gorthak e versione dura»]`
 (A.1-bis): il Gorthak di oggi è la versione dura. Con
@@ -512,9 +512,9 @@ di oggi sta già sotto il tetto (EL 12,6 contro 16).
 Grimjaw, il soffio e i bugbear **non si alzano**: sono già ad APL+2 o +3.
 La cima della rampa di Grimjaw è chiusa `[CANONE — DM 2026-11-25, card
 «rampa di Grimjaw»]`: contro Borin e Yrsa insieme Grimjaw fugge 62 volte su
-cento, va a 0 pf o meno 9, e uno dei due va a terra 82 (Scena 4). L'EL non
+cento, va a 0 pf o meno 8, e uno dei due va a terra 82 (Scena 4). L'EL non
 cambia: 14,9. Scartato dal DM: la rampa aperta, con la guardia che si
-aggira (73, 14 e 49).
+aggira (72, 14 e 50).
 
 <!-- storico -->
 *Fino al quarto giro (2026-11-25) questa pagina raccontava le prove per
@@ -581,10 +581,10 @@ un'azione, e in un round se ne spende al più uno.
   i PNG non ne hanno.
 - **Quanto pesa**, se i due eroi lo spendono nello stesso scontro, che è il
   massimo: contro Gorthak, con Borin che esce per primo, un eroe va a terra
-  67 volte su cento col +8 e 55 con l'azione di movimento in più, invece di
-  71; con Yrsa per prima 17 e 11 invece di 19. Contro Grimjaw, a rampa
-  chiusa, 77 e 68 invece di 82; a rampa aperta, scartata dal DM, erano 42 e
-  24 invece di 49
+  67 volte su cento col +8 e 56 con l'azione di movimento in più, invece di
+  70; con Yrsa per prima 17 e 12 invece di 19. Contro Grimjaw, a rampa
+  chiusa, 79 e 67 invece di 82; a rampa aperta, scartata dal DM, erano 41 e
+  25 invece di 50
   (`plans/esperimenti/scontri-epici-pregen-2026-11-25/esito_punto_eroe.md`).
   Le cifre dell'azione di movimento contano l'attacco completo dopo il
   movimento: è una lettura non decisa (`ARC08-DEF-1`, Scena 8, domanda 3).
@@ -708,9 +708,9 @@ tutti insieme.
 
 ### 🔥 RAGNHILD MANTOFERRO — la maga delle rune (Tolkien lead)
 - Dalla cinta il suo fuoco apre i duelli degli altri, se lancia prima che
-  Borin e Yrsa escano: Grimjaw fugge, o va a 0 pf o meno 16 volte su cento,
+  Borin e Yrsa escano: Grimjaw fugge, o va a 0 pf o meno 15 volte su cento,
   senza che un nano cada; contro Gorthak
-  uno dei due cade 3 volte su cento se esce prima Yrsa, 28 se esce prima
+  uno dei due cade 3 volte su cento se esce prima Yrsa, 29 se esce prima
   Borin (§0-bis; Scena 4). Dopo, la palla prende anche i nani, e la scelta
   è sua.
 - Il Giorno 3 ha i muri: il *muro di pietra* sopra il Re, il *muro di
@@ -1006,9 +1006,9 @@ avrebbe prese comunque `[CANONE — DM 2026-10-22]`.
 uno scontro per più eroi: da solo, Borin cade sempre, e Gorthak fugge sette
 volte su cento; con le frecce di Dara dalla torre Gorthak fugge 88 volte su
 cento e va a 0 pf o meno 12, ma Borin cade quasi nove volte su dieci. Con Yrsa conta chi esce per primo: se esce
-Borin, uno dei due va a terra 71 volte su cento; se esce Yrsa, 19. E
-Gorthak non sempre fugge: va a 0 pf o meno 42 volte su cento se esce prima
-Borin, 55 se esce prima Yrsa (§0-bis, la tabella e «Le due colonne del
+Borin, uno dei due va a terra 70 volte su cento; se esce Yrsa, 19. E
+Gorthak non sempre fugge: va a 0 pf o meno 43 volte su cento se esce prima
+Borin, 56 se esce prima Yrsa (§0-bis, la tabella e «Le due colonne del
 comandante»). Gli eroi escono dallo sportello uno a round, e accanto a Gorthak ci
 stanno in due (Tattiche, «Gorthak sul ponte»).
 Il DM ripete qui, a voce, la correzione al libretto della Scena 1: Gorthak
@@ -1568,12 +1568,12 @@ possono unirsi come per Gorthak, lasciando il loro settore alle tacche.
 
 **Il DM lo dice prima, in chiaro.** Grimjaw con quattro orog (EL circa 15)
 è uno scontro per Borin e Yrsa insieme, e anche così Grimjaw fugge sei
-volte su dieci (62), va a 0 pf o meno 9 volte su cento, e uno dei due va a
+volte su dieci (62), va a 0 pf o meno 8 volte su cento, e uno dei due va a
 terra 82; nelle
 prove nessun nano cade solo se Ragnhild apre col fuoco dalla cinta prima che i
 due salgano. Borin da solo cade sempre, e Grimjaw non scende mai a 89;
-lo stesso Harbek e Nala senza Ragnhild. Yrsa da sola lo fa fuggire 28 volte
-su cento, lo porta a 0 pf o meno 2, e cade 73. Il DM ripete a voce la
+lo stesso Harbek e Nala senza Ragnhild. Yrsa da sola lo fa fuggire 27 volte
+su cento, lo porta a 0 pf o meno 2, e cade 74. Il DM ripete a voce la
 correzione al libretto (Scena 1): Grimjaw a 0 pf è abbattuto e vale +2 alla
 rocca, anche se il libretto stampato dice ancora il contrario (regia, non
 read-aloud). La via per chi non vuole il duello è scritta qui sotto: nessuno lo
@@ -1613,12 +1613,12 @@ da solo (§0-bis, «Il comandante a 0 pf o meno»). Le cifre sono volte su cento
 | Chi lo sfida | lui fugge | lui a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra |
 |---|---|---|---|---|---|
 | Borin da solo | mai | mai | — | — | sempre |
-| Yrsa da sola | 28 | 2 | 4,7 | 4,5 | 73 |
-| Borin e Yrsa | 62 | 9 | 4,0 | 3,6 | 82 |
+| Yrsa da sola | 27 | 2 | 4,8 | 4,5 | 74 |
+| Borin e Yrsa | 62 | 8 | 4,0 | 3,6 | 82 |
 | Borin, Yrsa e Harbek (senza incantesimi) | 72 | 13 | 3,8 | 3,4 | 86 |
-| Borin e Yrsa, con Ragnhild che apre col fuoco dalla cinta | 84 | 16 | 1,9 | 1,9 | mai |
+| Borin e Yrsa, con Ragnhild che apre col fuoco dalla cinta | 85 | 15 | 1,9 | 1,9 | mai |
 | Harbek e Nala | mai | mai | — | — | sempre |
-| Harbek e Nala, con Ragnhild che apre | 99 | mai | 4,3 | — | 56 |
+| Harbek e Nala, con Ragnhild che apre | 98 | mai | 4,3 | — | 55 |
 | nessuno sale: Ragnhild da sola dal camminamento | 53 | mai | 4,4 | — | 47: è lei |
 
 Yrsa da sola, Harbek e Nala senza Ragnhild, e Ragnhild da sola vengono da
@@ -1626,7 +1626,7 @@ Yrsa da sola, Harbek e Nala senza Ragnhild, e Ragnhild da sola vengono da
 le altre righe da `esito_simulazione.md`. Le righe che tornano uguali nella tabella della rampa aperta vengono da un altro lancio dello script, e uno o due punti di differenza sono rumore. Ragnhild non sale: la rampa chiusa
 non la riguarda, e la sua riga è quella della rampa aperta. Lo stesso file
 prova la regola dell'orog che si stacca (la cima chiusa dai due davanti): le
-cifre restano queste entro due punti, e Borin e Yrsa fanno le stesse, 62, 9 e 82.
+cifre restano queste entro due punti, e Borin e Yrsa fanno 62, 9 e 82.
 
 **Scartato dal DM: la rampa aperta**, dove la guardia si aggirava. La
 tabella resta solo per confronto: al tavolo si usa quella qui sopra.
@@ -1634,16 +1634,16 @@ tabella resta solo per confronto: al tavolo si usa quella qui sopra.
 | Chi lo sfida, a rampa aperta | lui fugge | lui a 0 pf o meno | round alla fuga | round a 0 pf | un eroe a terra |
 |---|---|---|---|---|---|
 | Borin da solo | 2 | mai | 2,2 | — | 99 |
-| Yrsa da sola | 46 | 4 | 2,8 | 2,6 | 56 |
-| Borin e Yrsa | 73 | 14 | 2,6 | 2,2 | 49 |
-| Borin, Yrsa e Harbek (senza incantesimi) | 77 | 18 | 2,6 | 2,1 | 62 |
+| Yrsa da sola | 45 | 4 | 2,8 | 2,6 | 56 |
+| Borin e Yrsa | 72 | 14 | 2,6 | 2,2 | 50 |
+| Borin, Yrsa e Harbek (senza incantesimi) | 77 | 18 | 2,6 | 2,1 | 63 |
 | Borin e Yrsa, con Ragnhild che apre col fuoco dalla cinta | 84 | 16 | 1,9 | 1,9 | mai |
 | Harbek e Nala | mai | mai | — | — | sempre |
 | Harbek e Nala, con Ragnhild che apre | 99 | mai | 4,3 | — | 55 |
 | nessuno sale: Ragnhild da sola dal camminamento | 53 | mai | 4,4 | — | 47: è lei |
 
 Con Ragnhild che apre insieme a Borin e Yrsa, il duello è chiuso già al
-primo round una volta su quattro (24, contando la fuga e lo 0 pf): Grimjaw ha Iniziativa +5 contro il +6 di lei, e
+primo round una volta su quattro (23, contando la fuga e lo 0 pf): Grimjaw ha Iniziativa +5 contro il +6 di lei, e
 metà delle volte ha già agito quando la palla arriva. Da sola, Ragnhild non
 basta: Grimjaw risponde con l'arco e manda i due orog dietro sul camminamento. Il
 terzo eroe in mischia, senza i suoi incantesimi, alza il rischio: gli orog
@@ -1665,8 +1665,8 @@ non sono provati.
 - **Contro Ragnhild.** Sulla rampa la guardia sta stretta, e una *palla di
   fuoco* li prende tutti e cinque, meno i 10 che l'armatura toglie a
   Grimjaw. Nelle prove, con Ragnhild che apre dalla cinta insieme a Borin e
-  Yrsa, prima che i due salgano, Grimjaw fugge in due round, 84 volte su
-  cento, o va a 0 pf o meno, 16, e nessun nano va a terra. Dopo, la palla prende anche i nani. Grimjaw lo sa,
+  Yrsa, prima che i due salgano, Grimjaw fugge in due round, 85 volte su
+  cento, o va a 0 pf o meno, 15, e nessun nano va a terra. Dopo, la palla prende anche i nani. Grimjaw lo sa,
   se lei era sul pendio il Giorno −1 (Scheda d'entrata, «Sa»). Allora il suo
   Tattico Superiore del round 1 non va a colpire: va ai **Riflessi** della
   guardia, +2 per un round (A.3), e i due orog dietro, quelli dei lati, si
@@ -2712,7 +2712,7 @@ si tira stasera, in forma compatta. Se cambiano, cambiano lì.
 
 **A.1-bis · Gorthak Avanzato, scartato** `[CANONE — DM 2026-11-25, card «armi di Gorthak e versione dura»]` (non si adotta: §0-bis) · base: archetipo semplice Avanzato di PF1e, regole rapide: +2 a tutti i tiri e ai danni, +4 alla CA, +2 pf per DV; ⚠️ non SRD 3.5 · la scheda di A.1 con l'archetipo · GS **13** · Iniz +8 · CA **28**, contatto 12, colto alla sprovvista 25, ricostruita con la regola intera (+4 a tutte le caratteristiche, +2 armatura naturale) sulla *corazza di piastre +1* della scheda, che tiene la Des a +3; le regole rapide, «+4 alla CA», darebbero 29 / 15 / 27 · pf **232** (202 + 2 × 15 DV) · Temp +20, Rifl +9, Vol +11 · *stella del mattino Grande +1* +23/+18/+13 (2d6+12) e *stella del mattino Grande +1* +23/+18/+13 (2d6+12, a Forza piena come in A.1); giavellotto +14 (1d8+11) · all'ariete come in A.1 · **sotto 116**: un round in Furia (+25, 2d6+14 l'una; CA 26), poi fugge. Coi due troll di A.2: **EL 13,5** (era 12,6; conto derivato dalla DMG 3.5, 2 log2 della somma di 2^(GS/2)).
 Benchmark: PF T1-1 riga 13: CA 28 contro 28 (pari) / pf 232 contro 180 (sopra) / attacco +23 contro +22 (pari): GS 13 regge.
-Boost log: 2026-11-25 — archetipo semplice Avanzato di PF1e — GS 12 → 13 — scartato: con le regole del ponte (niente carica, il round in Furia, la Sfida dal round in cui Yrsa esce, l'iniziativa tirata, le due stelle del mattino a Forza piena) Borin e poi Yrsa vanno a terra 94 volte su cento contro Gorthak Avanzato, e 71 contro quello di oggi (prove del sesto giro in `plans/esperimenti/scontri-epici-pregen-2026-11-25/`). Non va nel Bestiario.
+Boost log: 2026-11-25 — archetipo semplice Avanzato di PF1e — GS 12 → 13 — scartato: con le regole del ponte (niente carica, il round in Furia, la Sfida dal round in cui Yrsa esce, l'iniziativa tirata, le due stelle del mattino a Forza piena) Borin e poi Yrsa vanno a terra 94 volte su cento contro Gorthak Avanzato, e 70 contro quello di oggi (prove del sesto giro in `plans/esperimenti/scontri-epici-pregen-2026-11-25/`). Non va nel Bestiario.
 
 **A.2 · Troll dell'ariete** (×2) `[CANONE — DM 2026-11-05, P16, i troll dell'ariete]` · SRD 3.5, *troll* portato a **10 DV** (⚠️ non SRD: l'SRD dà al troll «Advancement: By character class»; potenziamento dichiarato, Boost log sotto) · GS **6** · gigante Grande, CM · Iniz +2 · scurovisione 27 m, visione crepuscolare, fiuto · Ascoltare +7, Osservare +8 · CA **16**, contatto 11, colto alla sprovvista 14 · pf **105** (10d8+60) · rigenerazione 5 (il fuoco e l'acido fanno danni normali) · Temp +13, Rifl +5, Vol +4 · velocità 9 m · BAB +7, Lotta +18 · For 24 (+1 all'8° DV) Des 14 Cos 23 Int 6 Sag 9 Car 6 · 2 artigli +13 (1d6+7) e morso +8 (1d6+3); **sbranare** 2d6+10 se colpisce con tutti e due gli artigli · Spazio 3 m, Portata 3 m · Allerta, Volontà di Ferro, Seguire Tracce, Attacco Poderoso (il talento del 9° DV). Gorthak coi due troll: **EL** circa 13 (due GS 6 valgono un GS 8).
 Boost log: 2026-11-05 — troll dell'SRD da 6 a 10 DV, fuori dall'avanzamento dell'SRD — GS 5 → 6 — scelta del DM (P16, i troll dell'ariete), dichiarata qui il 2026-11-25. La strada legale con lo stesso GS è il troll dell'SRD con un livello di barbaro (classe associata, +1 GS): circa 75 pf, artigli +10 (1d6+6), Ira una volta al giorno. È più debole del troll a 10 DV (105 pf, artigli +13), e le prove simulate valgono col troll a 10 DV. Il DM ha tenuto i 10 DV `[CANONE — DM 2026-11-25, card «armi di Gorthak e versione dura»]`; scartato: il troll con un livello di barbaro.

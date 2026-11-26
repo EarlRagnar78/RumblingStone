@@ -33,7 +33,7 @@
 | Yrsa | 85% | 15% | 85% | 1.1 | 1.8 | 0% | 99% |
 | Nala | 24% | 0% | 0% | 3.5 | – | 77% | 7% |
 | Harbek | 66% | 1% | 1% | 3.9 | 4.5 | 35% | 27% |
-| Borin + Yrsa | 13% | 87% | 88% | 1.0 | 1.1 | 0% | 97% |
+| Borin + Yrsa | 12% | 88% | 88% | 1.0 | 1.1 | 0% | 97% |
 | Harbek + Dara | 84% | 16% | 22% | 2.0 | 2.3 | 0% | 78% |
 | Nala + Dara | 88% | 12% | 19% | 2.1 | 2.3 | 4% | 68% |
 
@@ -54,7 +54,7 @@
 | Yrsa | 85% | 15% | 85% | 1.1 | 1.7 | 0% | 99% |
 | Nala | 14% | 0% | 0% | 3.1 | – | 88% | 4% |
 | Harbek | 49% | 1% | 1% | 3.5 | 3.9 | 53% | 19% |
-| Borin + Yrsa | 13% | 87% | 88% | 1.0 | 1.1 | 0% | 98% |
+| Borin + Yrsa | 13% | 87% | 88% | 1.0 | 1.1 | 0% | 97% |
 
 ## Gorthak, oggi, senza lo sportello (riferimento del primo giro)
 
@@ -72,15 +72,15 @@
 |---|---|---|---|---|---|---|---|
 | Borin | 12% | 0% | 0% | 2.7 | – | 100% | 0% |
 | Yrsa | 77% | 9% | 4% | 2.5 | 2.7 | 48% | 17% |
-| Borin + Yrsa | 87% | 13% | 0% | 2.4 | 2.9 | 70% | 5% |
-| Yrsa + Borin | 86% | 13% | 4% | 2.1 | 2.6 | 11% | 34% |
+| Borin + Yrsa | 87% | 13% | 0% | 2.4 | 2.9 | 69% | 5% |
+| Yrsa + Borin | 86% | 13% | 4% | 2.1 | 2.6 | 11% | 33% |
 | Borin + Dara | 98% | 2% | 4% | 2.1 | 2.1 | 89% | 3% |
 | Borin + Yrsa + Dara | 76% | 24% | 3% | 2.0 | 2.1 | 49% | 15% |
 | Yrsa + Borin + Dara | 61% | 39% | 11% | 1.8 | 2.0 | 4% | 48% |
 | Borin + Yrsa + Ragnhild | 70% | 30% | 45% | 1.4 | 2.0 | 17% | 28% |
 | Yrsa + Borin + Ragnhild | 76% | 24% | 63% | 1.2 | 1.9 | 2% | 54% |
 | Harbek + Nala | 0% | 0% | 0% | – | – | 100% | 0% |
-| Harbek + Nala + Dara | 100% | 0% | 0% | 3.0 | 2.8 | 100% | 0% |
+| Harbek + Nala + Dara | 100% | 0% | 1% | 3.0 | 2.7 | 100% | 0% |
 | Harbek + Nala + Ragnhild | 100% | 0% | 4% | 2.1 | – | 97% | 0% |
 | Ragnhild + Dara | 99% | 1% | 63% | 1.4 | 2.0 | 0% | 85% |
 | Ragnhild | 100% | 0% | 0% | 2.5 | – | 0% | 72% |
@@ -91,10 +91,10 @@
 | eroi | il comandante fugge | a 0 pf o meno | al primo round | round medi alla fuga | round medi a 0 pf | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |
 |---|---|---|---|---|---|---|---|
 | Borin | 19% | 0% | 0% | 2.8 | – | 99% | 0% |
-| Borin + Yrsa | 85% | 15% | 0% | 2.4 | 2.9 | 60% | 8% |
+| Borin + Yrsa | 85% | 15% | 0% | 2.4 | 2.9 | 59% | 8% |
 | Yrsa + Borin | 87% | 13% | 4% | 2.1 | 2.6 | 6% | 39% |
 | Borin + Dara | 98% | 2% | 4% | 2.1 | 2.1 | 79% | 4% |
-| Borin + Yrsa + Dara | 75% | 25% | 4% | 2.0 | 2.1 | 38% | 19% |
+| Borin + Yrsa + Dara | 76% | 24% | 4% | 2.0 | 2.1 | 38% | 19% |
 | Borin + Yrsa + Ragnhild | 69% | 31% | 44% | 1.4 | 2.0 | 13% | 34% |
 | Yrsa + Borin + Ragnhild | 77% | 23% | 64% | 1.2 | 1.9 | 1% | 59% |
 
@@ -103,10 +103,10 @@
 | eroi | il comandante fugge | a 0 pf o meno | al primo round | round medi alla fuga | round medi a 0 pf | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |
 |---|---|---|---|---|---|---|---|
 | Borin | 21% | 0% | 0% | 2.8 | – | 99% | 0% |
-| Borin + Yrsa | 85% | 15% | 0% | 2.4 | 2.9 | 52% | 9% |
+| Borin + Yrsa | 85% | 15% | 0% | 2.4 | 2.9 | 53% | 9% |
 | Yrsa + Borin | 87% | 13% | 4% | 2.1 | 2.6 | 6% | 40% |
 | Borin + Dara | 98% | 2% | 4% | 2.1 | 2.2 | 80% | 4% |
-| Borin + Yrsa + Dara | 76% | 24% | 4% | 2.0 | 2.1 | 31% | 21% |
+| Borin + Yrsa + Dara | 77% | 23% | 4% | 2.0 | 2.1 | 32% | 20% |
 | Borin + Yrsa + Ragnhild | 70% | 30% | 44% | 1.4 | 2.0 | 12% | 35% |
 | Yrsa + Borin + Ragnhild | 75% | 25% | 62% | 1.2 | 1.9 | 1% | 60% |
 
@@ -116,7 +116,7 @@
 |---|---|---|---|---|---|---|---|
 | Borin + Dara | 99% | 1% | 1% | 2.6 | 2.4 | 95% | 1% |
 | Borin + Yrsa + Dara | 87% | 13% | 1% | 2.1 | 2.3 | 58% | 9% |
-| Yrsa + Borin + Dara | 72% | 28% | 6% | 2.0 | 2.1 | 6% | 43% |
+| Yrsa + Borin + Dara | 73% | 27% | 6% | 2.0 | 2.1 | 6% | 42% |
 | Harbek + Nala + Dara | 99% | 0% | 0% | 4.3 | – | 100% | 0% |
 | Ragnhild + Dara | 100% | 0% | 39% | 1.6 | 2.1 | 0% | 82% |
 | Dara | 98% | 0% | 0% | 5.0 | 5.0 | 0% | 100% |
@@ -127,18 +127,18 @@
 |---|---|---|---|---|---|---|---|
 | Borin | 0% | 0% | 0% | 2.3 | – | 100% | 0% |
 | Borin + Yrsa | 80% | 4% | 0% | 3.0 | 3.2 | 97% | 0% |
-| Yrsa + Borin | 80% | 9% | 3% | 2.7 | 2.9 | 58% | 10% |
+| Yrsa + Borin | 79% | 10% | 2% | 2.7 | 2.9 | 58% | 10% |
 | Borin + Dara | 100% | 0% | 0% | 3.3 | 2.0 | 100% | 0% |
 | Borin + Yrsa + Dara | 93% | 7% | 0% | 2.3 | 2.7 | 89% | 2% |
 | Borin + Yrsa + Ragnhild | 89% | 11% | 8% | 1.9 | 2.0 | 75% | 5% |
-| Yrsa + Borin + Ragnhild | 84% | 16% | 24% | 1.7 | 2.0 | 20% | 27% |
+| Yrsa + Borin + Ragnhild | 85% | 15% | 24% | 1.7 | 2.0 | 20% | 27% |
 
 ## Gorthak, oggi, con lo sportello, Ragnhild senza l'apertura
 
 | eroi | il comandante fugge | a 0 pf o meno | al primo round | round medi alla fuga | round medi a 0 pf | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |
 |---|---|---|---|---|---|---|---|
-| Borin + Yrsa + Ragnhild | 70% | 30% | 1% | 2.0 | 2.0 | 44% | 16% |
-| Yrsa + Borin + Ragnhild | 53% | 47% | 6% | 1.9 | 2.0 | 4% | 50% |
+| Borin + Yrsa + Ragnhild | 70% | 30% | 1% | 2.0 | 2.0 | 44% | 17% |
+| Yrsa + Borin + Ragnhild | 52% | 48% | 6% | 1.9 | 2.0 | 4% | 50% |
 
 ## Gorthak e troll tutti Avanzati, con lo sportello (scartato)
 
@@ -153,11 +153,11 @@
 |---|---|---|---|---|---|---|---|
 | Borin | 6% | 0% | 0% | 2.1 | – | 96% | 1% |
 | Yrsa | 56% | 5% | 3% | 2.5 | 2.6 | 47% | 27% |
-| Borin + Yrsa | 70% | 27% | 6% | 2.0 | 2.0 | 31% | 30% |
+| Borin + Yrsa | 70% | 26% | 6% | 2.0 | 2.0 | 31% | 31% |
 | Borin + Yrsa + Harbek | 64% | 35% | 8% | 1.9 | 2.0 | 52% | 19% |
 | Borin + Yrsa + Ragnhild | 79% | 21% | 69% | 1.2 | 1.8 | 0% | 100% |
 | Harbek + Nala | 0% | 0% | 0% | – | – | 100% | 0% |
-| Harbek + Nala + Ragnhild | 99% | 0% | 2% | 3.6 | – | 32% | 40% |
+| Harbek + Nala + Ragnhild | 99% | 0% | 1% | 3.6 | – | 31% | 40% |
 | Ragnhild | 65% | 0% | 0% | 4.1 | – | 35% | 30% |
 
 ## Grimjaw e quattro orog, variante: la rampa chiusa, se ne abbatte uno
@@ -167,14 +167,14 @@
 | Borin | 0% | 0% | 0% | 4.0 | – | 100% | 0% |
 | Borin + Yrsa | 68% | 9% | 0% | 3.5 | 3.6 | 85% | 4% |
 | Borin + Yrsa + Harbek | 78% | 12% | 0% | 3.2 | 3.3 | 84% | 5% |
-| Borin + Yrsa + Ragnhild | 81% | 19% | 69% | 1.2 | 1.9 | 0% | 100% |
-| Harbek + Nala + Ragnhild | 99% | 0% | 2% | 3.6 | – | 32% | 39% |
+| Borin + Yrsa + Ragnhild | 80% | 20% | 69% | 1.2 | 1.9 | 0% | 100% |
+| Harbek + Nala + Ragnhild | 99% | 0% | 2% | 3.6 | – | 31% | 39% |
 
 ## Grimjaw, la guardia si aggira, Ragnhild senza l'apertura
 
 | eroi | il comandante fugge | a 0 pf o meno | al primo round | round medi alla fuga | round medi a 0 pf | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |
 |---|---|---|---|---|---|---|---|
-| Borin + Yrsa + Ragnhild | 64% | 36% | 11% | 1.9 | 2.0 | 23% | 36% |
+| Borin + Yrsa + Ragnhild | 64% | 36% | 12% | 1.9 | 2.0 | 24% | 36% |
 
 ## Grimjaw, orog Avanzati (scartato)
 
@@ -182,8 +182,8 @@
 |---|---|---|---|---|---|---|---|
 | Borin | 4% | 0% | 0% | 2.0 | – | 98% | 0% |
 | Borin + Yrsa | 69% | 23% | 6% | 2.0 | 2.0 | 53% | 17% |
-| Borin + Yrsa + Harbek | 66% | 31% | 8% | 2.0 | 2.0 | 71% | 10% |
-| Borin + Yrsa + Ragnhild | 80% | 20% | 68% | 1.2 | 1.9 | 0% | 94% |
+| Borin + Yrsa + Harbek | 66% | 30% | 8% | 2.0 | 2.0 | 71% | 10% |
+| Borin + Yrsa + Ragnhild | 80% | 20% | 69% | 1.2 | 1.9 | 0% | 94% |
 
 ## Limiti delle prove
 

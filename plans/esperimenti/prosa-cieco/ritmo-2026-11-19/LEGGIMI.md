@@ -12,6 +12,14 @@ Poi il voto si scioglie con:
 
     python3 scripts/cieco_versioni.py esito --chiave chiave-non-aprire/CHIAVE-A.json --voti VOTI-A.txt
 
+> Nota del 2026-11-26, dopo il voto: nel repo la chiave e i voti stanno tutti
+> in questa cartella, senza `chiave-non-aprire/`. Dalla radice del repo il
+> comando è:
+>
+>     python3 scripts/cieco_versioni.py esito --chiave plans/esperimenti/prosa-cieco/ritmo-2026-11-19/CHIAVE-A.json --voti plans/esperimenti/prosa-cieco/ritmo-2026-11-19/VOTI-A.txt
+>
+> Il resto di questo file è com'era prima del voto.
+
 ## Com'è costruito (scritto prima del voto)
 
 - **Campione**: `cieco_versioni.py campione`, seme 20261119, 5 box per file da sette file di ARC-08 e ARC-09 (34 box). Prima dell'estrazione delle 24 sono stati tolti i 4 box che non sono voce del narratore (una nota per il DM e tre battute o monologhi di PNG; il monologo è uso della casa, card del 19/11). Delle 30 rimaste ne restano 24, estratte con lo stesso seme. Niente ARC-07: la serata di venerdì e i box congelati restano fuori.

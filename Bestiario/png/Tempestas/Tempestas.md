@@ -211,6 +211,8 @@ Tempestas, prima di partire (mattina del Giorno 22), lascia ai PG una piccola fi
 | **Saggezza** | 14 | +2 |
 | **Carisma** | 22 | +6 |
 
+> Caratteristiche: acquisto a punti 60, scelta del DM (card del 2026-11-20). Tolti l'età (mezza età: −1 For, Des, Cos; +1 Int, Sag, Car), l'*amuleto della salute +2* e i tre aumenti di livello (sul Carisma) restano For 13 Des 17 Cos 15 Int 17 Sag 13 Car 18: oltre i 32 punti della DMG 3.5, nessun oggetto SRD li spiega (collo e spalle sono occupati), e il DM tiene i numeri invece della serie d'élite.
+
 **Punti Ferita:** 97 (15 DV: 12d6 da bardo + 3d6 da Cantore delle tempeste + 45 Cos; Cos 16 con l'*amuleto della salute +2*)
 **Iniziativa:** +7 (+3 Des, +4 Iniziativa Migliorata)
 **Velocità:** 9 m

@@ -19,10 +19,10 @@ Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md
 | 19     | Vittoria a Hammerfist; orda draconica dispersa ma non distrutta | Hammerfist / Valle Elsir   | I PG ottengono tempo limitato. |
 | 20     | L’orda conquista Nimon’s Gap e volge verso la foresta          | Nimon’s Gap, Witchwood     | Inizio pressioni su Hella. |
 | 21     | L’orda saccheggia Talar; i primi incendi nel Witchwood         | Talar, margine Witchwood   | Cerchio sacro minacciato. |
-| 22     | Voci di movimento verso Brindol e Dauth                        | Valle Elsir                | Gancio per Torre Artemis e Torneo Dauth. |
+| 22     | Voci di movimento verso Rethmar e Dauth                        | Valle Elsir                | Gancio per Torre Artemis e Torneo Dauth. |
 | 23–25  | Quest Hella (Cerchio, Rituale, Campi Drow)                    | Witchwood                  | Questa parte dell’arco. |
 | 26–31  | Missioni secondarie RHoD, Torre Invisibile, Torneo Dauth      | Vari                       | Collegamento con Parte 2A e 2B. |
-| 32     | Inizio assedio di Brindol                                      | Brindol                    | Convergenza finale. |
+| 32     | Inizio assedio di Rethmar                                      | Rethmar                    | Convergenza finale. |
 
 ---
 
@@ -30,7 +30,7 @@ Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md
 
 Hella è una druida/guardiana del Cerchio Sacro nel Witchwood, incaricata di mantenere un nodo di potere naturale che ancora la magia della foresta.[file:20]  
 
-La Red Hand sta usando piromanti drow per bruciare il bosco e corrompere gli spiriti, anticipando l’assedio di Brindol.[file:20]
+La Red Hand sta usando piromanti drow per bruciare il bosco e corrompere gli spiriti, anticipando l’assedio di Rethmar.[file:20]
 
 Obiettivi dei PG:
 
@@ -40,7 +40,7 @@ Obiettivi dei PG:
 
 Il completamento influenza:
 
-- Entità dei rinforzi naturali durante l’assedio di Brindol.[file:20]  
+- Entità dei rinforzi naturali durante l’assedio di Rethmar.[file:20]  
 - Velocità di avanzata dell’orda (potenziale ritardo di 1 giorno).[file:20]
 
 ---
@@ -115,7 +115,7 @@ Treant Corrotto (CR 11 – Treant modificato).[file:20]
 
 - Successo pieno: Hella sopravvive, il Cerchio non viene spezzato, almeno uno dei Drow è catturato o ucciso.[file:20]  
 - Successo parziale: Hella sopravvive ma il Cerchio viene danneggiato (malus al rituale successivo).[file:20]  
-- Fallimento: Hella muore o il Cerchio viene distrutto; la foresta perde un importante nodo di potere, con impatto negativo sull’assedio di Brindol.[file:20]
+- Fallimento: Hella muore o il Cerchio viene distrutto; la foresta perde un importante nodo di potere, con impatto negativo sull’assedio di Rethmar.[file:20]
 
 ---
 
@@ -163,7 +163,7 @@ Risultato di successo completo:
 
 - Hella diventa “Avatar della Natura”:  
   - Ottiene temporaneamente 50 pf temporanei, DR 5/–, resistenza al fuoco 20, e un attacco di schianto 2d8 + bonus di Forza.[file:20]  
-  - Può evocare 1d4 Treant alleati CR 8 una volta durante l’assedio di Brindol.[file:20]
+  - Può evocare 1d4 Treant alleati CR 8 una volta durante l’assedio di Rethmar.[file:20]
 
 Fallimento della fase 3:
 
@@ -177,7 +177,7 @@ Fallimento della fase 3:
 
 - Funzione: può essere attivata una volta per trasformare 1d4 alberi enormi in Treant alleati CR 8.[file:20]  
 - Attivazione: azione di round completo, utilizzabile solo da Hella o da un druido di livello 10+.[file:20]  
-- Uso previsto: tipicamente durante l’assedio di Brindol per creare una linea difensiva viva.[file:20]
+- Uso previsto: tipicamente durante l’assedio di Rethmar per creare una linea difensiva viva.[file:20]
 
 ### Cuore della Forgia (da documenti Corona di Adamantio)
 
@@ -190,7 +190,7 @@ Fallimento della fase 3:
 
 Se i PG completano con successo la Quest Hella (Cerchio difeso + Rituale riuscito + almeno un campo Drow distrutto):
 
-- Durante l’assedio di Brindol:  
+- Durante l’assedio di Rethmar:  
   - +1 unità di supporto “Treant alleati” o “Spiriti della Foresta” nella risoluzione di massa.[file:20]  
   - Bonus di circostanza +1 ai TS contro effetti di fuoco per tutte le unità amiche nella zona di foresta.[file:20]  
 - Timeline RHoD: l’orda perde 1 giorno di avanzata grazie alla resistenza della foresta (modifiche alla scaletta incontri di avvicinamento).[file:20]

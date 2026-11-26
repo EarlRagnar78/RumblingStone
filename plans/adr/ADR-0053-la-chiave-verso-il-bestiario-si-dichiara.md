@@ -87,7 +87,7 @@ cercavo.
 | | Dove la scheda era davvero |
 |---|---|
 | `zalkatar` | `09_…/Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` — **GS 13**, 14d4+70, CA 24, statblocco completo |
-| `saarvith-regiarix` | `09_…/Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` — **GS 13**; il file `FASE4` accanto dichiara *«le statistiche sono lì; questo è la regia dello scontro, non le duplica»* |
+| `saarvith-regiarix` | `09_…/Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` — **GS 13**; il file `FASE4` accanto dichiara *«le statistiche sono lì; questo è la regia dello scontro, non le duplica»* |
 | `cerchio-sacro` | `Bestiario/mostri/cerchio-druid7-cr7.md` — «Cerchio Sacro Druid 7 (Hella ally) [ACCEPTED — DM-canon 2026-05-05]», `statblocco` validato, e la nota «30 druidi + 5 Treant alleanza» |
 | `lathander-mask` | **nessuna, e va bene così**: due divinità non sono una creatura |
 

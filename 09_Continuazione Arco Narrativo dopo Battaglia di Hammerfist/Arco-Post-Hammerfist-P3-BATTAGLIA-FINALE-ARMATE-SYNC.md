@@ -13,7 +13,7 @@
 - **Arrivo a Rethmar (Day 42)**: ~**5.800–7.200** effettivi a seconda degli interventi PG sul March Clock (vedi §3).
 - **PG non sono a Skull Gorge**: il ponte non viene sabotato → nessun ritardo Day 5 strutturale. L'alleanza coi giganti **non** avviene (Wyrmlord Koth non neutralizzato PG-side) → i giganti marciano con l'Orda.
 - **Ghostlord**: se neutralizzato/alleato PG entro Day ~28, l'Orda riceve **solo un piccolo distaccamento** di non-morti (non l'esercito completo): ~200-400 non-morti minori invece di ~1.000.
-- **La battaglia è perduta senza i PG.** I numeri baseline rendono Rethmar indifendibile con la sola guarnigione cittadina + Lions of Brindol locali; le alleanze PG (Tiri-Kitor, mercenari nani di Hammerfist, druidi di Hella, Circolo degli Otto, Torre Invisibile Artemis, Ghostlord) sono **l'unico** vettore di vittoria.
+- **La battaglia è perduta senza i PG.** I numeri baseline rendono Rethmar indifendibile con la sola guarnigione cittadina + Lions of Rethmar locali; le alleanze PG (Tiri-Kitor, mercenari nani di Hammerfist, druidi di Hella, Circolo degli Otto, Torre Invisibile Artemis, Ghostlord) sono **l'unico** vettore di vittoria.
 
 ---
 
@@ -47,7 +47,7 @@ Riferimento dettagliato: `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.m
 
 ### 2.1 Composizione qualitativa fissa
 
-- **5 draghi**: **Abithriax** (red adult — Skull Gorge guardian → riserva Rethmar), **Regiarix** (black young adult — Rhest/Saarvith, *morto se Arc-09/P2 completato*), **Ozyrrandion** (green adult, CR 14 — Torre Invisibile/Zalkatar, *morto se P2A completato*), **Tyrgarun** (**blue Very Old, CR 19** — D11 v2, il terrore dei cieli della battaglia: hazard di bombardamento Fase 1, minaccia aerea a orologeria Fase 2-3, inchiodato a terra dal Mythal in Fase 4 — NON cavalcatura di Azarr Kul), **Fauci di Palude** (black adult — Vanguard Hammerfist; **ramo condizionale D10, non ancora deciso**: default = fugge gravemente ferito sotto i 112 PF `[CANONE — DM 2026-11-15]` e resta assente da Rethmar salvo un ritorno narrativo non garantito; alternativa = ucciso dai PG ad Hammerfist. In **entrambi** i rami non è nel pool draghi a Rethmar il Day 42 — per il conteggio worst/best-case sotto si contano **4 vivi** presenti su 5 nominati, il quinto (Fauci) resta un'incognita narrativa, non un fatto).
+- **5 draghi**: **Abithriax** (red adult — Skull Gorge guardian → riserva Rethmar), **Regiarix** (black young adult — Lhesper/Saarvith, *morto se Arc-09/P2 completato*), **Ozyrrandion** (green adult, CR 14 — Torre Invisibile/Zalkatar, *morto se P2A completato*), **Tyrgarun** (**blue Very Old, CR 19** — D11 v2, il terrore dei cieli della battaglia: hazard di bombardamento Fase 1, minaccia aerea a orologeria Fase 2-3, inchiodato a terra dal Mythal in Fase 4 — NON cavalcatura di Azarr Kul), **Fauci di Palude** (black adult — Vanguard Hammerfist; **ramo condizionale D10, non ancora deciso**: default = fugge gravemente ferito sotto i 112 PF `[CANONE — DM 2026-11-15]` e resta assente da Rethmar salvo un ritorno narrativo non garantito; alternativa = ucciso dai PG ad Hammerfist. In **entrambi** i rami non è nel pool draghi a Rethmar il Day 42 — per il conteggio worst/best-case sotto si contano **4 vivi** presenti su 5 nominati, il quinto (Fauci) resta un'incognita narrativa, non un fatto).
 - **8 Razorfiend Draconic Spawn** (colori Tiamat: 2 black/2 red/1 blue/1 white/2 green) assegnati ai Wyrmlord upscalati (Koth, Ulwai Stormcaller, Saarvith se vivo, Karruk, Zalkatar se vivo, riserva Azarr Kul).
 - **Compagnia del Teschio Nero** (mercenari umani Thay/Mulhorand) — composizione canonica AP, riserva élite di Azarr Kul, **NON modificata**.
 - **Esperimenti Fungini** (fotofobia): Aberrazioni Fungine e Fungal Minions subiscono **-2 attacco, -4 Will in luce solare diretta**. Svantaggio annullato in Fase 0 (notturna), Fase 2-4 se la battaglia si prolunga oltre il crepuscolo, o in interni (tempio/cripte). Dispiego ottimale: Ondata 4 al tramonto, Fase 0 cripte.
@@ -125,7 +125,7 @@ Compie **~60%** dell'Orda presente. Distribuzione tipica (scenario C):
 - Wyrmsmoke Mts → **The Wyrmbones** (origine Orda)
 - Witchwood → **Shaarcah Forest** (Tiri Kitor / elfi Starsong Hill)
 - Blackfens → **Lhespenbog** (Rhest/Lhesper)
-- Rhest → **Lhesper** (Wyrmlord Koth / Saarvith Arc-09/P2)
+- Rhest → **Lhesper** (Wyrmlord Saarvith, Arc-09/P2)
 - Dennovar → **Channathgate** (gateway orientale)
 - Giantshield → **Rathgaunt Hills**
 - The Thornwaste → **Bandit Wastes** (Ghostlord's Lair)
@@ -141,10 +141,10 @@ Compie **~60%** dell'Orda presente. Distribuzione tipica (scenario C):
 | 15 | Marcia nord-est, scontri partigiani | Margini Shaarcah Forest | -80 | — |
 | **19** | **Battaglia di Hammerfist ENDS simultaneamente** | **Hammerfist Holds** (The North Wall) + **Terrelton cade** | -900 vanguard Hammerfist perso (~500 morti + ~400 dispersi, non si ricongiungono — piano ARC-08 D11; Fauci di Palude ferito, ramo condizionale D10), -250 Terrelton | 🎯 **SYNC POINT** — Rethmar riceve profughi Terrelton |
 | 20 | Nimon Gap cade | **Nimon Gap** (center, road through Wyrmbones) | -120 | — |
-| 21 | Saccheggio | **Talar** (village, Talar River) | -200, +100 morale | Brindol/Rethmar panico |
+| 21 | Saccheggio | **Talar** (village, Talar River) | -200, +100 morale | Rethmar panico |
 | 22–24 | Marcia post-Hammerfist, morale -2 | Old North Road → Dawn Way | -120 attrito | — |
 | 24 | Azarr Kul contatta Ghostlord | **Ghostlord's Lair** (Bandit Wastes) | +1.000 se nemico / +250 se distaccamento / 0 se alleato | — |
-| 25 | Marth Fen / Razorfiend nest | **Lhespenbog** (Rhest area) | Saarvith consolida (se vivo) | — |
+| 25 | Marth Fen / Razorfiend nest | **Lhespenbog** (Lhesper area) | Saarvith consolida (se vivo) | — |
 | 28 | Checkpoint logistico | **Kormul** (Dwarfroad) | -200 attrito | Rethmar chiude porte |
 | 32 | Avanguardia a 2 giorni | Dawn Way, 40mi da Rethmar | -400 imboscate Lions of Rethmar | Ultimo convoglio civile |
 | 35 | Witchcross cade | **Witchcross** (east Shaarcah) | -150 (difensori elfici se Tiri-Kitor alleati) | — |
@@ -160,7 +160,7 @@ Ogni hook completato **prima del Day 40** modula i numeri di §3. Riferimento: `
 | Hook | Deadline March Clock | Effetto numerico |
 |---|---|---|
 | P1A/P1B/P1C — Quest Hella (Cerchio Sacro + druidi-orsi) | Day ~30 | +150 druidi-orsi mutaforma alla difesa Fase 1-2 |
-| P2 — Rhest (Saarvith + Regiarix) | Day ~28 | -1 drago Orda (Regiarix), -40 razorfiend minori |
+| P2 — Lhesper (Saarvith + Regiarix) | Day ~28 | -1 drago Orda (Regiarix), -40 razorfiend minori |
 | P2A — Torre Invisibile (Zalkatar) | Day ~32 | -Torre come minaccia parallela; +Artemis focus su Avatar |
 | P2B — Torneo Tordek (Hammerfist) | Day ~34 | +300 mercenari nani fanteria pesante |
 | HOOKS-Thorik (sigillo Maewen + lettera Thorik) | Day ~35 | +150 Lance di Re Thorek, flusso separato dai 300 mercenari (D10; max combinato **450**) |
@@ -202,3 +202,4 @@ Ogni hook completato **prima del Day 40** modula i numeri di §3. Riferimento: `
 - **2026-05-05 (rev.b)** — §2 espansa con fazioni esplicite (Drow di Sonjak, Githyanki di Vaereth, Gnoll 3 tribù, Loxo schiavizzati, Centauri schiavizzati, Compagnia del Teschio Nero, Il Collezionista condizionale); §2.2 aggiunta meccanica Revolt per schiavi Loxo/Centauri; §5 toponimi Cannath Vale sincronizzati con mappa `cannath-vale-gm-versia3ys4.webp` e `fr-cannath-vale.md` (Brindol→Rethmar, Wyrmsmoke→Wyrmbones, Witchwood→Shaarcah Forest, Blackfens→Lhespenbog, Rhest→Lhesper, Dennovar→Channathgate, Giantshield→Rathgaunt Hills, Thornwaste→Bandit Wastes, Elsir River→Talar/Cannath River, Hammerfist Holds confermato su The North Wall).
 - **2026-05-05 (rev.c)** — aggiunti Esperimenti Fungini Drow all'Orda principale: §2 nuova riga (35-50 unità: ~28-40 Fungal Minions CR 6-7 + ~5-8 Aberrazioni Fungine CR 10-11 + 2 Alfa CR 12); §2.1 regola fotofobia (-2 atk / -4 Will in luce solare); §2.2 dispiego tattico per fase + trigger Sabotaggio Campi Drow (P3) che rimuove quasi tutti gli esperimenti; §4 Fase 1 Ondata 4 espansa con Aberrazioni breaker + Minions; §6 hook Sabotaggio Drow aggiornato con effetti espliciti.
 - **2026-05-05 (rev.d)** — §2 corretti sub-conteggi Esperimenti Fungini Drow (Minions ~28-40, Aberrazioni ~5-8, Alfa 2) per allineare la somma della breakdown al totale di riga **35-50** (in precedenza la breakdown sommava a 25-32, incoerente col totale e coi sopravvissuti attesi ~25-30). Nessun cambio di totale o di sopravvissuti.
+- **2026-11-25** <!-- storico --> — nomi della Cannath Vale nel testo (MS-0226): Rhest→Lhesper e Brindol→Rethmar nelle righe di gioco, «Brindol/Rethmar panico» → «Rethmar panico»; la tabella di conversione §5 resta coi nomi del libro; Koth tolto da Lhesper, che è la base di Saarvith (come state.md).

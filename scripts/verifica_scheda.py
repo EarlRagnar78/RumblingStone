@@ -296,6 +296,32 @@ def _razza_srd(dove: str, regole: dict) -> "str | None":
     return trovate[0] if len(trovate) == 1 else None
 
 
+#: SRD 3.5, Hide: «Size» (le taglie sotto la Media non arrivano qui, vedi _razza_coi_dv)
+_NASCONDERSI_DI_TAGLIA = {"Large": -4, "Huge": -8, "Gargantuan": -12, "Colossal": -16}
+
+
+def _razza_coi_dv(testo: str, dove: str, tipo: str, regole: dict, sistema: str) -> "str | None":
+    """Quale creatura coi dadi vita razziali di `[razze_dv]` è la scheda (bugbear, gnoll,
+    minotauro…), o None. La dichiara la riga della fonte («SRD *Bugbear* + Rogue 5»);
+    altrimenti il suo nome deve stare, solo, nel titolo o nel tipo. In tutti e due i casi
+    il tipo della creatura base deve essere quello della scheda, e niente modello nel titolo."""
+    from dmcore import creature_base as CB
+    tabella = regole.get("razze_dv") or {}
+    if not tabella or _MODELLO.search(dove):
+        return None
+    m = _FONTE_SCHEDA.search(testo)
+    trovata = CB.dichiarata(m.group(1), sistema) if m else None
+    if trovata is None:
+        nomi = [k for k in tabella if re.search(rf"(?<![\w-]){re.escape(k)}s?(?![\w-])", dove, re.I)]
+        voci = CB.tabella(sistema)
+        trovata = (nomi[0], voci[nomi[0]]) if len(nomi) == 1 and nomi[0] in voci else None
+    if trovata is None or trovata[0] not in tabella or trovata[1]["tipo"] not in _tipo_en(tipo):
+        return None
+    if trovata[1]["taglia"] not in ("Medium", "Large", "Huge", "Gargantuan", "Colossal"):
+        return None        # più piccola di Media: il bonus di taglia a Nascondersi non è nella tabella
+    return trovata[0]
+
+
 _RIGA_CA = re.compile(r"^(?:ca-dettaglio:|\W*(?:CA|AC)\b)", re.I)
 _MATERIALI = (("mithral", re.compile(r"\bmithr[ai]l", re.I)),
               ("legnoscuro", re.compile(r"\b(?:legno\s*scuro|darkwood)", re.I)))
@@ -488,6 +514,20 @@ def _abilita_di_una_scheda(p: Path, testo: str, riga0: int, dal_nome: str) -> "t
             S.dati(sistema, "creature.costruzione").get("mdl") or {"razze": {}, "nomi": {}}, dove_, s.tipo or riga_tipo)
         if razza_ is not None and not re.search(r"razzial|racial", s.testo, re.I):
             preciso = regole["razze"].get(razza_, {})
+    if razziali and regole.get("margine"):
+        # chi ha dadi vita razziali (bugbear, gnoll, minotauro…): il bonus razziale del suo
+        # capitolo dei mostri, voce per voce, invece del margine fisso di +4 o +8
+        dove_ = " ".join((riga_tipo, s.testo.split("\n", 1)[0], dal_nome))
+        coi_dv = _razza_coi_dv(testo, dove_, s.tipo or riga_tipo, regole, sistema)
+        if coi_dv is not None:
+            from dmcore import creature_base as CB
+            preciso = dict(regole["razze_dv"][coi_dv])
+            # il modificatore di taglia a Nascondersi (SRD, Hide: Grande −4, Enorme −8, Mastodontica
+            # −12, Colossale −16) sta nel bonus scritto: senza, i gradi dedotti di un gigante
+            # sarebbero 4 in meno e un'abilità oltre il massimo passerebbe
+            di_taglia = _NASCONDERSI_DI_TAGLIA.get(CB.tabella(sistema)[coi_dv]["taglia"], 0)
+            if di_taglia:
+                preciso["hide"] = preciso.get("hide", 0) + di_taglia
     pp = regole.get("penalita_di_prova") or {}
     penalita, da_armatura = _penalita_di_prova(s.testo, regole, sistema)
     da_velocita = _salto_da_velocita(s.testo, regole) if preciso is not None else 0
@@ -1472,6 +1512,135 @@ def creatura_base(p: Path) -> "tuple[list[dict], list[dict]]":
             nv.append(dict(base, regola="numero.CA.naturale",
                            testo=f"taglia diversa da quella di {nome} ({voce['taglia']}): l'armatura naturale non si riscontra"))
     return viol, nv
+
+
+#: dove stanno i salvataggi PCGen che le schede citano (ADR-0126, lotto delle razze)
+_PREGEN = Path(__file__).resolve().parents[1] / "Bestiario" / "pregen-pcgen"
+_STAT_PCG = (("STR", "For"), ("DEX", "Des"), ("CON", "Cos"), ("INT", "Int"), ("WIS", "Sag"), ("CHA", "Car"))
+#: i modelli che cambiano le caratteristiche in un .pcg; il resto di TEMPLATESAPPLIED
+#: (sottorazza «Hill Dwarf», capacità come «RighteousMightDR» o «Bite») non le tocca
+_MODELLO_PCG = re.compile(r"half-?(?:fiend|celestial|dragon)|draconic|fiendish|celestial|vampire|lich|"
+                          r"skeleton|zombie|lycanthrop|ghost|juvenile|adult|young|wyrm|hatchling|SIZE_|"
+                          r"LEVEL_ADJUSTMENT", re.I)
+#: gli oggetti dell'SRD che danno un bonus di potenziamento a una caratteristica: la scheda
+#: può scriverla con l'oggetto o senza, ed è legale in tutti e due i casi
+_OGGETTI_CARATTERISTICA = ((re.compile(r"Gauntlets of Ogre Power", re.I), "For", 2),
+                           (re.compile(r"Belt of Giant Strength \+(\d)", re.I), "For", None),
+                           (re.compile(r"Gloves of Dexterity \+(\d)", re.I), "Des", None),
+                           (re.compile(r"Amulet of Health \+(\d)", re.I), "Cos", None),
+                           (re.compile(r"Headband of Intellect \+(\d)", re.I), "Int", None),
+                           (re.compile(r"Periapt of Wisdom \+(\d)", re.I), "Sag", None),
+                           (re.compile(r"Cloak of Charisma \+(\d)", re.I), "Car", None))
+#: un export (HTML, PDF, testo) scrive i punteggi finali: quando la scheda lo cita, la fonte è lui
+_EXPORT = re.compile(r"\.(?:html?|pdf|txt)\b", re.I)
+#: le razze senza modificatori alle caratteristiche (SRD, «Races»)
+_SENZA_MODIFICATORI = {"human", "half-elf"}
+
+
+@lru_cache(maxsize=1)
+def _salvataggi_pcg() -> "dict[str, Path]":
+    return {q.name: q for q in _PREGEN.rglob("*.pcg")} if _PREGEN.is_dir() else {}
+
+
+def _modificatori_della_razza(razza: str, sistema: str) -> "dict[str, int] | None":
+    """I modificatori razziali alle caratteristiche di una razza come PCGen la scrive
+    («Orc», «Minotaur»): dalla tabella `[[razze]]` del plugin, altrimenti dalla creatura
+    base dell'SRD (punteggio − 10, o − 11 se dispari: la base dei mostri è 10/11). None
+    se la razza non si conosce."""
+    from dmcore import creature_base as CB
+    from dmcore import sistemi as S
+    nome = razza.strip().lower()
+    if nome in _SENZA_MODIFICATORI:
+        return {}
+    for r in S.dati(sistema, "creature.costruzione").get("razze") or []:
+        if r["nome"] == nome:
+            return dict(r["modificatori"])
+    voce = CB.tabella(sistema).get(nome)
+    if voce is None or len(voce.get("car") or {}) != 6:
+        return None
+    return {it: v - (10 if v % 2 == 0 else 11) for (_, it), v in
+            zip(_STAT_PCG, (voce["car"][k] for k in ("for", "des", "cos", "int", "sag", "car")))
+            if v - (10 if v % 2 == 0 else 11)}
+
+
+def caratteristiche_dalla_fonte(p: Path) -> "tuple[list[dict], list[dict]]":
+    """Le caratteristiche di una scheda che cita un salvataggio PCGen (ADR-0126, lotto
+    delle razze; scelta del DM sulla card del 2026-11-20). Il .pcg scrive il punteggio
+    prima della razza (`STAT:STR|SCORE:14`): la scheda deve dare quello più i
+    modificatori razziali SRD, con o senza il bonus degli oggetti che il .pcg porta
+    (guanti della potenza dell'orco…). La riga `attributi` è quella fuori dall'ira e da
+    ogni effetto temporaneo: l'acquisto a punti sta già nel .pcg. Non si giudicano: una
+    scheda trascritta da un export (ha già i punteggi finali), un modello applicato nel
+    .pcg, una razza che non si conosce, una scheda con più dadi vita del salvataggio
+    (avanzata) o un file con più blocchi. Se la scheda cita più .pcg, basta che uno combaci."""
+    import conformita_statblocchi as C
+    testo = p.read_text(encoding="utf-8")
+    citati = [q for n, q in _salvataggi_pcg().items() if n in testo]
+    if not citati:
+        return [], []
+    fonte = _FONTE_SCHEDA.search(testo)
+    if fonte and _EXPORT.search(fonte.group(1)):
+        return [], []          # la scheda è trascritta da un export, che ha già la razza dentro
+    with contextlib.redirect_stderr(io.StringIO()):
+        blocchi = list(C._recinti_del_master(testo))
+    base = {"file": VT_rel(p), "verifica": "caratteristiche", "regola": "numero.caratteristiche.fonte",
+            "fonte": "srd"}
+    if not blocchi:
+        return [], []          # un elenco che nomina il .pcg, senza una scheda
+    if len(blocchi) != 1:
+        return [], [dict(base, testo=f"{len(blocchi)} blocchi nel file: non si sa a quale va il .pcg")]
+    sb, riga = blocchi[0]["sb"], blocchi[0]["riga"]
+    base["riga"] = riga
+    scritte = {c: int(v) for c, v in re.findall(r"\b(For|Des|Cos|Int|Sag|Car)\s+(\d+)", sb.attributi or "")}
+    if len(scritte) != 6:
+        return [], [dict(base, testo="la scheda non scrive le sei caratteristiche")]
+    sistema = VT.sistema_di(p, testo)
+    dadi = sum(int(n) for n, _ in re.findall(r"(\d+)d(\d+)", sb.pf_dado or "")) or sum(
+        int(n) for n in re.findall(r"\b[A-Za-zÀ-ÿ]+\s+(\d{1,2})\b", sb.tipo or ""))
+    scarti, nv = [], []
+    for q in citati:
+        pcg = q.read_text(encoding="utf-8", errors="replace")
+        stat = dict(re.findall(r"^STAT:(\w+)\|SCORE:(\d+)", pcg, re.M))
+        razza = (re.search(r"^RACE:([^|\n]*)", pcg, re.M) or [None, ""])[1]
+        modelli = [x.strip() for x in re.findall(r"TEMPLATESAPPLIED:\[NAME:([^]|~]*)", pcg)
+                   if _MODELLO_PCG.search(x)]
+        mod = _modificatori_della_razza(razza, sistema)
+        if modelli or mod is None or len(stat) < 6:
+            nv.append(dict(base, testo=f"{q.name}: " + (f"modello {', '.join(modelli)} nel .pcg" if modelli else
+                                                        f"razza «{razza}» senza modificatori noti" if mod is None else
+                                                        "caratteristiche non leggibili")))
+            continue
+        livelli = sum(int(n) for n in re.findall(r"^CLASS:[^\n]*?\|LEVEL:(\d+)", pcg, re.M))
+        if dadi and livelli and dadi != livelli:
+            nv.append(dict(base, testo=f"{q.name}: {livelli} livelli nel .pcg, {dadi} dadi vita nella scheda "
+                                       f"(avanzata oltre il salvataggio): gli aumenti di livello non si riscontrano"))
+            continue
+        attese = {it: int(stat[en]) + mod.get(it, 0) for en, it in _STAT_PCG}
+        oggetti = {}
+        # un oggetto che l'insieme d'equipaggiamento del .pcg tiene solo nello zaino («Carried»,
+        # «Not Carried») non dà il suo bonus: conta chi è indossato, o chi non sta in nessun insieme
+        posti = {}
+        for posto, valore in re.findall(r"^EQUIPSET:([^|\n]+)\|ID:[\d.]+\|VALUE:([^|\n]+)", pcg, re.M):
+            posti.setdefault(valore.strip(), set()).add(posto.strip())
+        for nome_o in re.findall(r"^EQUIPNAME:([^|\n]+)", pcg, re.M):
+            if posti.get(nome_o.strip()) and posti[nome_o.strip()] <= {"Carried", "Not Carried"}:
+                continue
+            for rx, car, fisso in _OGGETTI_CARATTERISTICA:
+                if (m := rx.search(nome_o)):
+                    oggetti[car] = max(oggetti.get(car, 0), fisso or int(m.group(1)))
+        # legale con l'oggetto e senza; l'ira e gli altri effetti temporanei non stanno nella riga
+        diverse = [(it, scritte[it], attese[it]) for _, it in _STAT_PCG
+                   if scritte[it] not in (attese[it], attese[it] + oggetti.get(it, 0))]
+        if not diverse:
+            return [], []
+        scarti.append((q.name, razza, [(it, h, a, a + oggetti.get(it, 0)) for it, h, a in diverse]))
+    if not scarti:
+        return [], nv
+    nome, razza, diverse = scarti[0]
+    return [dict(base, atteso={it: a for it, _, a, _ in diverse}, ha={it: h for it, h, _, _ in diverse},
+                 testo=f"caratteristiche {', '.join(f'{it} {h}' for it, h, _, _ in diverse)}: {nome} ({razza}) "
+                       f"più i modificatori razziali dà "
+                       + ", ".join(f"{it} {a}" + (f" ({o} con l'oggetto)" if o != a else "") for it, _, a, o in diverse))], nv
 
 
 def grado_di_sfida(p: Path) -> "tuple[list[dict], list[dict]]":
@@ -2640,6 +2809,8 @@ def main(argv: "list[str] | None" = None) -> int:
         pv, pn = prestigio(p)
         qv, qn = numero_talenti(p)
         bv, bn = creatura_base(p)
+        xv, xn = caratteristiche_dalla_fonte(p)
+        bv, bn = bv + xv, bn + xn
         gv, gn = grado_di_sfida(p)
         ev, en_ = velocita(p)
         fv, fn = difese(p)

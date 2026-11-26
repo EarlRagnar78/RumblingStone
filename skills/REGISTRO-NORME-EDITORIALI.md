@@ -29,6 +29,38 @@
 ⚠️ **Questo registro non dice che le norme sono rispettate.** Dice se
 **qualcuno le guarda**. La differenza è tutta la ragione per cui esiste.
 
+⚠️ **I file che `misura_craft` e `punteggio_mqm` non vedono.** Ogni riga che
+cita `misura_craft` o il punteggio MQM vale solo per i file che i due script
+misurano davvero.
+
+- `misura_craft.py` non accetta un file: misura i bersagli fissi del suo
+  dizionario `BERSAGLI` (i master DEF, il Palio, l'Abbazia). `--p1` scorre
+  invece tutto il contenuto di gioco vivo.
+- `punteggio_mqm.py` accetta file e modelli glob, ma li passa a
+  `misura_craft.espandi`, che scarta senza avviso i file sotto `_ARCHIVIO/`,
+  `homebrew/` o `build/` e quelli con `DEPRECATO`, `ERRATA-` o `APPARATO-` nel
+  nome (`ESCLUSI` ed `ESCLUSI_NOME`). Le stesse esclusioni valgono per `--p1`.
+- L'esito è «0 documenti», con uscita 0: su un booklet in `homebrew/` vuol dire
+  che nessuno ha misurato. Provato il 2026-11-25 su
+  `98-APPENDICE-TERRE-DI-HAMMERFIST.md`.
+- Nessuno dei due script ha un'opzione per includere quelle cartelle (`--help`
+  del 2026-11-25). Per un file solo, dentro o fuori, si chiamano le funzioni a
+  mano dalla radice del repo:
+
+```bash
+python3 - FILE <<'EOF'
+import re, sys
+from pathlib import Path
+sys.path.insert(0, "scripts")
+import misura_craft as mc, punteggio_mqm as pm
+f = Path(sys.argv[1]).resolve(); t = f.read_text(encoding="utf-8")
+print(mc.difetti_dei_box(t))      # --box
+print(mc.stile_dei_box(t))        # --stile
+print({p: len(re.findall(rf"\b{p}\b", t, re.I)) for p in mc.PG})  # --spotlight
+e = pm.valuta(f, pm.carica_specifiche()); print(e["punteggio"], e["classe"], e["dettaglio"])
+EOF
+```
+
 ---
 
 ## 1 · `rumblingstone-narrative-style/references/` — la voce e la pagina
@@ -52,7 +84,7 @@
 | `editorial-standards.md` | terminologia canonica (CD non DC, 5e bandito, metri; dal 2026-09-27 anche **niente riposo breve o lungo**) | **maggiore** · `terminologia_non_canonica` | 🟢 `validate_modules.py` §BANNED sui master `ARC*-DEF-*` (anche quelli futuri: li trova per nome) e `validate_standalone.py` sugli stand-alone, con la stessa regex del riposo. ⚠️ Non guarda i sorgenti non ancora DEF (ARC-08, ARC-09): lì il riposo breve o lungo compare ancora, e se ne va quando diventano master |
 | `editorial-standards.md` | **il foglio di stile**: una grafia o un termine già deciso (*mithral*, non *mithril*; *Regiarix*, non *Regiarax*) si scrive così in ogni file di gioco, e le scelte non ancora prese stanno in tabella come `DM?` (`campaign/GLOSSARIO-E-LOCALIZZAZIONE.md` §8, ADR-0078) | **maggiore** · `terminologia_non_canonica` | 🟢 `validate_prosa.py --foglio` (cancello `--strict` in CI, soglia **zero**; richiamo 100% sul banco di semina del 2026-11-11, citazioni alla lettera con `<!-- sic -->`) e lo stesso controllo dentro `validate_prosa` senza argomenti. Misurato il 2026-10-03: **17 refusi aperti → 0** in 6 file, e **4 scelte del DM** che nessun controllo vedeva (285 occorrenze), prese lo stesso giorno e applicate: *Hella*, *Channathgate*, *Therysol*, *azione veloce*. ⚠️ Vede solo le grafie scritte nel foglio: non scopre una grafia nuova (per quello c'è `--proponi-grafie`, che propone e non accusa, e non vede le differenze sull'ultima lettera). *DC* → *CD* e il riposo breve/lungo restano di `validate_modules.py`: una norma, un rilevatore |
 | `editorial-standards.md` | blockquote **3-10 righe**; max **1-2 MAIUSCOLE** per read-aloud | **minore** · `maiuscole_di_enfasi` | 🟡 parziale — `--box` usa il tetto **12** di `read-aloud-adulti`; le due fonti non concordano sul minimo e lo script **non sceglie per loro**. 🐛 **La seconda metà diceva il falso**: «le maiuscole non sono misurate» era scritto qui mentre `validate_prosa` le contava da settembre, con la soglia in `SOGLIE['maiuscole']`. Non mancava il rilevatore, mancava il **nome**: `controlla()` restituiva stringhe già formattate e nessuno poteva contarle per norma. Dal 2026-09-21 pesano |
-| `editorial-standards.md` §4 | **la *d* eufonica**: *ad*/*ed* solo davanti alla stessa vocale, *ad esempio* unica locuzione, mai *od* (CODA D3, ADR-0120) | **minore** | 🟢 `validate_lingua.py` (`d_eufonica_righe`, canale testing fino al 2026-11-24: avviso nel passo bloccante, errore non bloccante con `--d-eufonica`; soglia **zero**). Tarata il 2026-11-09 su LanguageTool ST_03_001 locale: 53 righe concordi, le 28 solo di LanguageTool sono *o o…* e lettere-etichetta; 58 righe corrette in 42 file (`plans/esperimenti/d-eufonica-2026-11-09/`). ⚠️ Non vede le righe rientrate come codice |
+| `editorial-standards.md` §4 | **la *d* eufonica**: *ad*/*ed* solo davanti alla stessa vocale, *ad esempio* unica locuzione, mai *od* (CODA D3, ADR-0120) | **minore** | 🟢 `validate_lingua.py` (`d_eufonica_righe`, errore nel passo bloccante della lingua dal 2026-11-25, dopo il canale testing di ADR-0099; soglia **zero**). Tarata il 2026-11-09 su LanguageTool ST_03_001 locale: 53 righe concordi, le 28 solo di LanguageTool sono *o o…* e lettere-etichetta; 58 righe corrette in 42 file (`plans/esperimenti/d-eufonica-2026-11-09/`). ⚠️ Non vede le righe rientrate come codice |
 | `style-pillars.md` | *fusion rule*: **un lead, max due support** per scena | **minore** | 🟡 congegno `PILASTRO dichiarato (lead/support)` — conta la marca, non la conformità (era 🟢 fino al 2026-10-22: la marca non dice se la scena ha un lead solo) |
 | `style-pillars.md` §Mercer | **`[HDYWTDT]`**: al colpo che uccide un boss la narrazione passa al giocatore, e il marcatore **va scritto** nel testo dell'incontro | **minore** | 🟢 congegno `[HDYWTDT] il finisher al giocatore` — 🔴 era a **zero in tutti e nove gli archi** |
 | `style-pillars.md` §Mercer | **yes-and with teeth**: l'invenzione del giocatore entra nel canone **e** genera una complicazione | **minore** | 🟡 congegno `assorbi e rilancia (yes-and with teeth)` — conta chi **dichiara** il congegno, non chi lo applica al tavolo: quello lo sa solo il DM |

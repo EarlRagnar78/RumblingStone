@@ -188,7 +188,7 @@ contiene materiale **Forgotten Realms / D&D non-SRD** di Wizards of the Coast:
 - **Channathgate** è una località canonica dei Reami (Channath Vale/Shaar), non un nome
   inventato; divinità FR ovunque (Mystra, Shar, Ilmater, Selûne, Waukeen, Torm, Mask…);
 - PNG e trama derivano da **Red Hand of Doom** (Lord Jarmaath, Azarr Kul, Abithriax,
-  Rhest, il Ghostlord…), avventura protetta;
+  Lhesper, il Ghostlord…), avventura protetta;
 - la **GPL-3** del repo può coprire solo il materiale proprio dell'autore: **non può
   licenziare IP di terzi** (WotC, CTPS), né sanarne l'uso.
 

@@ -3,7 +3,7 @@
 
 T-1 (il Piano della Terra, distanze non in scala), T-4 (sezione verticale
 dell'approccio al Tempio) e M7-A (Hammerfist ≈372 DR, vista strategica non in
-scala) non sono griglie: il renderer non li legge. Lo stesso vale per i tre
+scala), con M7-R (la valle, per l'appendice della regione), non sono griglie: il renderer non li legge. Lo stesso vale per i tre
 schemi della stand alone «Il Giardino di Sale e Calce» (GS-0 i collegamenti,
 GS-S1 la sezione della cisterna, GS-S2 l'incontro coi Ragni delle Catene), che
 vanno in `10-stand-alone/Il Giardino di Sale e Calce/Mappe/schemi/`. Per scelta di Jfs del
@@ -399,6 +399,98 @@ def m7a_legenda() -> str:
          f'stroke-width="0.7" marker-end="url(#sc-freccia)"/>')
     f.t(451, base + 25, "le tende, fino a 1 km", CORPO, "middle")
     f.h = round(base + 34)
+    return f.svg()
+
+
+# ----------------------------------------------------------------------------- M7-R
+def m7r() -> str:
+    """La valle di Hammerfist ≈372 DR, la mappa della regione dell'appendice
+    (ADR-0122, S4). Più larga di M7-A: la montagna, la fortezza, il pendio, la
+    piana col campo, il bosco a est, le colline a sud. Non in scala: le distanze
+    del canone sono scritte; quello che il canone non dà (valichi, la strada
+    dell'orda) non c'è, e la proposta INFERRED sta nell'apparato dell'appendice."""
+    f = Foglio(560)
+    f.titolo("M7-R · La valle di Hammerfist ≈372 DR",
+             "la regione della notte dell'assedio · nord in alto, non in scala · il riquadro è M7-A")
+    x0, x1 = 14, W - 14
+    # le montagne, a nord
+    f.el(f'<path d="M{x0} 44 L{x1} 44 L{x1} 120 Q{x1 - 60} 104 {x1 - 120} 122 Q{W / 2 + 40} 140 {W / 2} 128 '
+         f'Q{W / 2 - 70} 116 {x0 + 110} 132 Q{x0 + 50} 140 {x0} 118 z" fill="url(#sc-roccia)" '
+         f'stroke="{C["inchiostro"]}" stroke-width="1"/>')
+    f.t(W / 2, 70, "LE MONTAGNE · sotto, le miniere e le sale (M7-S, M7-E)", 8, "middle", C["carta"], fam="Cinzel")
+    for x in (60, 120, 380, 440):
+        f.el(f'<path d="M{x - 14} 104 L{x} 84 L{x + 14} 104" fill="none" stroke="{C["carta"]}" stroke-width="1"/>')
+    # la fortezza sul gradone
+    fx, fy, fw, fh = 196, 128, 96, 40
+    f.el(f'<rect x="{fx}" y="{fy}" width="{fw}" height="{fh}" fill="{C["lastre"]}" stroke="{C["inchiostro"]}" '
+         f'stroke-width="2.6"/>')
+    f.t(fx + fw / 2, fy + 18, "HAMMERFIST", 8, "middle", fam="Cinzel", weight="bold")
+    f.t(fx + fw / 2, fy + 30, "+100 · torre nord +120", CORPO, "middle", style="italic")
+    # il gradone e la spianata
+    f.el(f'<path d="M{fx - 40} {fy + fh + 4} L{fx + fw + 40} {fy + fh + 4} L{fx + fw + 70} {fy + fh + 52} '
+         f'L{fx - 70} {fy + fh + 52} z" fill="url(#sc-punti)" stroke="{C["sbiadito"]}" stroke-width="0.8"/>')
+    f.t(fx + fw / 2, fy + fh + 18, "spianata degli arieti, +80", CORPO, "middle", style="italic")
+    f.el(f'<path d="M{fx + fw / 2} {fy + fh + 24} l-26 6 l52 6 l-52 6 l52 6 l-26 6" fill="none" '
+         f'stroke="{C["inchiostro"]}" stroke-width="1.4"/>')
+    # il riquadro di M7-A
+    f.el(f'<rect x="{fx - 86}" y="{fy - 12}" width="{fw + 250}" height="{330}" fill="none" '
+         f'stroke="{C["marker"]}" stroke-width="0.9" stroke-dasharray="6 3"/>')
+    f.t(fx - 82, fy - 2, "M7-A", CORPO, fill=C["marker"], weight="bold")
+    # il bosco a est e il portale
+    for x, y in ((372, 150), (390, 140), (408, 154), (426, 142), (444, 156), (380, 170), (400, 176),
+                 (420, 168), (438, 178), (456, 166), (466, 146)):
+        _albero(f, x, y)
+    f.el(f'<path d="M414 192 l3 6 l6 1 l-5 4 l1 6 l-5 -3 l-5 3 l1 -6 l-5 -4 l6 -1 z" fill="#ffd27a" '
+         f'stroke="{C["inchiostro"]}" stroke-width="0.7"/>')
+    # la piana e il campo
+    py = 228
+    f.el(f'<rect x="{x0}" y="{py}" width="{x1 - x0}" height="{240}" fill="{C["caverna"]}" '
+         f'stroke="{C["inchiostro"]}" stroke-width="0.8"/>')
+    f.t(x0 + 6, py + 11, "la piana, 520 m sul mare", CORPO, style="italic", fill=C["sbiadito"])
+    f.el(f'<ellipse cx="{W / 2}" cy="{py + 118}" rx="150" ry="74" fill="#d8c9a6" stroke="{C["inchiostro"]}" '
+         f'stroke-width="1" stroke-dasharray="3 2"/>')
+    for i in range(46):
+        x = W / 2 - 130 + (i * 37) % 260
+        y = py + 62 + (i * 23) % 112
+        if (x - W / 2) ** 2 / 150 ** 2 + (y - py - 118) ** 2 / 74 ** 2 < 0.8:
+            _tenda(f, x, y, 4.2)
+    f.el(f'<rect x="{W / 2 - 9}" y="{py + 110}" width="18" height="14" fill="{C["inchiostro"]}"/>')
+    f.t(W / 2, py + 138, "il campo del capo", CORPO, "middle", weight="bold")
+    # le colline a sud
+    f.el(f'<path d="M{x0} 500 Q70 476 130 498 T250 496 T370 494 T{x1} 498 L{x1} 540 L{x0} 540 z" '
+         f'fill="#cdbf9c" stroke="{C["sbiadito"]}" stroke-width="1"/>')
+    f.t(W / 2, 522, "LE COLLINE · dove dorme il drago", 8, "middle", fam="Cinzel")
+    # la via dei PG
+    f.el(f'<path d="M{fx + fw - 6} {fy + fh + 2} C350 214 372 250 360 290 S{W / 2 + 40} 330 {W / 2 + 10} '
+         f'{py + 114}" fill="none" stroke="{C["marker"]}" stroke-width="1.6" stroke-dasharray="5 3" '
+         f'marker-end="url(#sc-freccia-r)"/>')
+    for n, x, y in ((1, 40, 92), (2, fx + fw + 10, fy + 6), (3, fx - 54, fy + fh + 28), (4, fx + fw / 2 + 40,
+                    fy + fh + 40), (5, 470, 196), (6, x0 + 24, py + 30), (7, W / 2 - 160, py + 90),
+                    (8, W / 2 + 22, py + 104), (9, 60, 512), (10, 362, 300)):
+        f.num(n, x, y)
+    return f.svg()
+
+
+def m7r_legenda() -> str:
+    f = Foglio(400)
+    f.titolo("M7-R · Indicazioni",
+             "i numeri della mappa della regione")
+    yl = f.legenda(56, [
+        (1, "Le montagne. Sotto, le miniere da cui è nata la fortezza e dove scendono bambini e vecchi; "
+            "le gallerie di Zeth sotto la fucina"),
+        (2, "Hammerfist, ottant'anni: porta e cortile a +100, torre nord a +120 (M7-A)"),
+        (3, "Il pendio, dalla piana alla spianata (+80): circa 300 m in pianta per 80 m di dislivello, il 27%; "
+            "la strada a tornanti, circa 530 m, larga 6 m (due carri affiancati), al 15%. Dalla spianata alla porta (+100), "
+            "una rampa che sale di 20 m"),
+        (4, "La spianata degli arieti, +80, sotto la rampa della porta"),
+        (5, "Il bosco a est delle mura, a circa 500 m: il portale e la pattuglia di Durin"),
+        (6, "La piana, 520 m sul mare"),
+        (7, "Il mare di tende: una quindicina di clan, diecimila, da 500 m a 1 km dalle mura"),
+        (8, "Il campo del capo e la tenda nera di Zog'tar (M7-H, M7-C)"),
+        (9, "Le colline a sud, dove di notte dorme Skullcrusher"),
+        (10, "La via degli eroi nella notte: giù dal fianco est, lungo il lato est del campo"),
+    ], colonne=1)
+    f.h = round(yl + 6)
     return f.svg()
 
 
@@ -991,6 +1083,8 @@ SCHEMI = {
     "T-4-approccio-al-tempio.svg": t4,
     "M7-A-hammerfist-372.svg": m7a,
     "M7-A-hammerfist-372_legenda.svg": m7a_legenda,
+    "M7-R-valle-di-hammerfist-372.svg": m7r,
+    "M7-R-valle-di-hammerfist-372_legenda.svg": m7r_legenda,
     CARTELLA_GSC / "GS-R-rethmar-ingressi.svg": gs_r,
     CARTELLA_GSC / "GS-R-rethmar-ingressi_legenda.svg": gs_r_legenda,
     CARTELLA_GSC / "GS-0-collegamenti.svg": gs0,

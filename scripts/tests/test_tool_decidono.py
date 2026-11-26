@@ -112,8 +112,16 @@ class TestValidateSkills(BaseDecisione):
                 encoding="utf-8")
 
     def test_una_skill_sana_passa(self):
+        # ADR-0114, stable dal 2026-11-25: una skill sana ha la scheda intera, in
+        # ordine, e tre casi di prova in evals/ (prima mancavano e avvisava soltanto)
+        scheda = "".join(f"## {s}\n\nx\n\n" for s in (
+            "Quando no", "Fonti", "Procedura", "Formato d'uscita",
+            "Prima di consegnare", "Cancelli deterministici"))
         with cartella() as d:
-            self._skill(d, "---\nname: finta\ndescription: Una skill di prova.\n---\n\n# Finta\n")
+            self._skill(d, "---\nname: finta\ndescription: Una skill di prova.\n---\n\n# Finta\n\n"
+                        + scheda)
+            for i in range(3):
+                (d / "skills" / "finta" / "evals" / f"caso-{i}").mkdir(parents=True)
             self.assertEsce("validate_skills", 0, esegui("validate_skills.py", "--repo-root", str(d)))
 
     def test_frontmatter_rotto_viene_bocciato(self):

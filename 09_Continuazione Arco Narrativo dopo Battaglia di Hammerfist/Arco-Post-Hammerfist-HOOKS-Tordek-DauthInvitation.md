@@ -136,7 +136,7 @@ Khorn parte da Hammerfist il **Giorno 25**. Marcia ~8 giorni. Arriva a Dauth **a
 > **Caso:** il party si separa il Giorno 22. Tordek va direttamente a Dauth da solo. Il messo Maewen non lo trova al Sacred Forest.
 
 **Conseguenza canonica:**
-- Maewen non trova Tordek (4° destinatario non consegnato). Va al destinatario successivo della lista (Tiefling Voryn, Capitano Rhydan a Brindol).
+- Maewen non trova Tordek (4° destinatario non consegnato). Va al destinatario successivo della lista (Tiefling Voryn, Capitano Rhydan a Rethmar).
 - **Tordek arriva a Dauth senza sigillo formale**. Si presenta come "monaco di passaggio". Può comunque iscriversi alle preliminari (sono aperte ai meritevoli), ma:
   - **NON è ospite d'onore.** Niente alloggio in caserma sud, niente posti riservati per il seguito.
   - **Le 150 lance restano in caserma esterna** (non possono entrare in città senza copertura ufficiale).

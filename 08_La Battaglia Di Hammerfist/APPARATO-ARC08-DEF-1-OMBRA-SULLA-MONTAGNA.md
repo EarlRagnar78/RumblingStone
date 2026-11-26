@@ -27,6 +27,8 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 |---|---|---:|
 | SCENA 4 | e lo si sa con Sopravvivenza | 15 |
 | SCENA 4 | Con Sopravvivenza | 15 |
+| SCENA 4 | tocca o la studia tira Volontà | 15 |
+| SCENA 4 | lì l'Ascoltare degli scout va contro | 20 |
 | SCENA 4 | Forza | 10 |
 | SCENA 4 | Scalare | 12 |
 | SCENA 4 | Entro 9 m dal fuoco, Ascoltare | 15 |
@@ -44,8 +46,12 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 7 | mura entro 90 m tira Volontà | 25 |
 | SCENA 7 | partito il colpo, 14d4 acido, Riflessi | 29 |
 | SCENA 7 | resta entro 3 m tira Tempra | 15 |
+| SCENA 7 | davanti al soffio (Riflessi +9 contro | 29 |
 | SCENA 8 | Con immagine silenziosa | 15 |
 | SCENA 8 | riesce metà delle volte, con affascinare | 18 |
+| SCENA 8 | Acrobazia | 15 |
+| SCENA 8 | e per farlo tira Concentrazione +20 | 15 |
+| SCENA 8 | dimezzare un Riflessi contro la frana | 15 |
 | SCENA 9 | Conoscenze (religione) | 15 |
 | SCENA 9 | Sopravvivenza | 15 |
 | SCENA 9 | Ascoltare | 18 |

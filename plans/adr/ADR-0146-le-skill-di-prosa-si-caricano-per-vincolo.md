@@ -182,6 +182,55 @@ disturbato 2.944 volte; uno su prosa e box disturba circa 200 volte.
   `misura_craft --apertura`) arriva con la #508. Il cricchetto la vedrà
   quando entra fra le norme di `punteggio_mqm`, non prima.
 
+**Correzione del 25/11: gli hook non arrivavano più nei thread.** Dal 22/11
+circa i thread del progetto partono in `/home/user` e ignorano il
+`/home/user/.claude/settings.json` che `claude-progetto.sh` scrive (ADR-0140).
+Nei log diagnostici di Claude Code le sessioni del 20-21/11 lanciavano 2 hook
+SessionStart, quelle dal 23/11 uno solo, quello della piattaforma;
+`.claude/.skills-sync-status` è fermo al 20/11. Il primo thread partito dopo il
+merge della #510 («Rendere epico il passaggio da ARC-07 ad ARC-08») non aveva
+gli hook di questo ADR (instradamento, cancello del push, vincolo della
+prosa), nessuna skill `rumblingstone-*` nell'elenco, nessun server
+`rumblingstone-tools`, e tutti i circa 35 plugin dell'account accesi
+(finance, small-business, marketing…). Gli agenti invece arrivavano, perché
+`.claude/agents` è una cartella collegata e non passa da `settings.json`.
+
+`claude-progetto.sh` ora scrive anche a livello utente, che si legge sempre:
+
+- `~/.claude/settings.json`, copia di quello del repo con gli hook a percorso
+  assoluto, `enabledPlugins` e le regole `Read` ancorate rese assolute con
+  `//`;
+- in `~/.claude.json` la sola voce `rumblingstone-tools` di `mcpServers`;
+- le skill del repo in `~/.claude/skills`, costruite prima che parta la
+  sessione (8 secondi), invece di aspettare l'hook d'avvio.
+
+Le impostazioni utente scritte da altri non si toccano: lo script sovrascrive
+`~/.claude/settings.json` solo se manca o se è elencato in
+`~/.claude/.generato-da-rumblingstone`.
+
+Nello stesso cambio `.claude/settings.json` spegne cinque plugin arrivati
+sull'account dopo la scelta del 19/11, con la stessa regola (restano accesi
+solo i plugin usati nello storico): `superpowers`, il cui hook SessionStart
+imponeva di invocare le sue skill generiche «anche all'1% di probabilità», in
+concorrenza con l'instradamento del repo; `agentic-council`, 38 agenti in
+concorrenza con i 12 del repo; `ai-mentor`, `frontend-design`, `skill-creator`.
+
+Prova: una sessione Claude Code nuova lanciata in `/home/user` nello stesso
+container. Con la configurazione utente scattano l'hook di instradamento
+(UserPromptSubmit) e il PreToolUse su Bash, `rumblingstone-tools` è connesso,
+le skill del repo ci sono e i plugin accesi sono esattamente i 12 voluti.
+Senza (file spostato): nessun hook del repo, 39 plugin.
+`scripts/tests/test_claude_progetto.py` ha 9 prove verdi, tre nuove.
+
+Quello che resta scoperto:
+
+- un plugin che l'account aggiunge in futuro si accende da solo finché
+  qualcuno non lo mette in `enabledPlugins`;
+- i container già partiti devono rilanciare `claude-progetto.sh`;
+- del cambio della piattaforma si conosce l'effetto, non la causa;
+- la prova è una sessione headless nello stesso container, non ancora un
+  thread vero.
+
 ## Come si torna indietro
 
 Togliere il gruppo `PreToolUse` da `.claude/settings.json` spegne l'hook, e

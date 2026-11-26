@@ -88,6 +88,10 @@ beneficio estetico.
 | Palio di Channathgate | Palio of Channathgate | ⚠️ *Palio* **DNT**: è un prestito culturale, non si traduce |
 | Hammerfist Holds | Hammerfist Holds | **DNT** |
 | Rethmar · Dauth · Drellin's Ferry | invariati | **DNT** |
+| Lhesper | Lhesper | **DNT**, femminile: *la Lhesper*, *a Lhesper*. La città in rovina nella palude, al posto della *Rhest* di RHoD (decisione del DM, 2026-11-25) |
+| Lhespenbog | Lhespenbog | **DNT**, maschile singolare: *il Lhespenbog*, *nel Lhespenbog*. La palude, al posto delle *Blackfens* di RHoD |
+| Lake Lhespen · lago Lhespen | Lake Lhespen | **DNT**. Il lago, al posto di *Lake Rhestin*; dove si parla della città si scrive *Lhesper* |
+| Lhesper Trail | Lhesper Trail | **DNT**, femminile come *pista*: *sulla Lhesper Trail*. Da Rethmar verso nord, a nord-est del lago, fino alle rovine |
 | Sala della Forgia Eterna | Hall of the Eternal Forge | |
 | Portale della Forgia Eterna | Portal of the Eternal Forge | titolo dell'ARC-07 |
 | Stanza della Corona | Crown Chamber | |

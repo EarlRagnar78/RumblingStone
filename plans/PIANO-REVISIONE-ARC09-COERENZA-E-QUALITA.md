@@ -62,7 +62,7 @@ di §4 senza ulteriori input dal DM.
 ### A1. Ortografia del drago nero: Regiarix vs Regiarax
 - **Problema**: entrambe le grafie coesistono. "Regiarax": INDICE (4 occorrenze,
   righe 41, 200-212, 557), `P3-Starsong-Hill-ALLEANZA-ELFI-TESTO.md` (2),
-  `HOOKS-Hella-SacredForest.md` (1), `P2-RHEST-OVERVIEW.md` (1, "Regiarix/Regiarax"),
+  `HOOKS-Hella-SacredForest.md` (1), `P2-LHESPER-OVERVIEW.md` (1, "Regiarix/Regiarax"),
   più occorrenze in `campaign/` e `skills/`. "Regiarix" ovunque nei file RHEST.
 - **Azione**: sostituire globalmente Regiarax → **Regiarix** (D1) in tutto il repo
   (esclusi i changelog append-only di state.md: lì aggiungere una riga nuova).
@@ -618,7 +618,7 @@ checklist qui sotto.
   nulli in D/E/F. Prossimo: C7 (Event Deck).
   **C3+C4 (sessione 19) completo (2026-07-02).** **C3**: sidebar uniforme
   "SE FALLISCONO" in coda a P1C-Rituale-SCALE, P2A-Torre-PARTE4-Boss-Zalkatar,
-  P2B-PARTE3-Giorno3, P2-RHEST-FASE4, Ghostlord-TESTO (i 3 rami già presenti in
+  P2B-PARTE3-Giorno3, P2-LHESPER-FASE4, Ghostlord-TESTO (i 3 rami già presenti in
   Rhest/Ghostlord **uniformati** al formato); più la nota unica
   **§8.5 "Risorse di resurrezione nel Vale"** in DM-QUICKSTART-ARC09 (tabella
   fonti raise nel Vale — Rethmar/Ilmater-Maewen/Circolo *reincarnate*; regola

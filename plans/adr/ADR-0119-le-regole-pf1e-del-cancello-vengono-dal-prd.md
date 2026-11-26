@@ -2,6 +2,7 @@
 
 **Stato**: proposta (2026-11-09)
 **Data**: 2026-11-09
+**Canale (ADR-0099)**: stable dal 2026-11-25, scelta del DM sulla card del 2026-11-25 (*«Tutti e sei, con il codice»*, D8 di [PIANO-PIATTAFORMA-DI-SVILUPPO](../PIANO-PIATTAFORMA-DI-SVILUPPO.md)). 0 avvisi dei conti in prova in 145 run su `main` e in 420 run di PR; i 14 conti passano da `in_prova` a `fatti`, e lo scarto porta sempre la chiave `conto` ([misura](../esperimenti/promozioni-2026-11-25/MISURE.md)).
 **Decisione-fonte**: il DM (Jfs), 2026-11-09, thread «Scelte dell'8/11: Bestiario e norme»: *«deve coprire tutto. per le parti bloccanti nelle regole di pf1e apri i threads necessari a colmare questo vuoto nelle regole così sono complete»*. Regola del DM del 2026-11-03: un cancello nuovo parte non bloccante e diventa bloccante dopo la promozione.
 **Rapporti**: completa F4 di [ADR-0112](ADR-0112-il-motore-e-agnostico-e-le-regole-d20-sono-dati-e-formule.md) (`creature.conformita`) e chiude la sua card F4 3 («lo dice e salta il conto»). Usa i dati del plugin PF1e di [ADR-0111](ADR-0111-il-sistema-di-gioco-e-un-plugin-di-dati.md) e il PRD a commit fissato di [ADR-0110](ADR-0110-i-termini-ufficiali-hanno-una-tabella-e-un-cancello.md). Il conto dell'attacco e il cancello dei numeri sui master sono di ADR-0118 (thread «Scelte dell'8/11»): questo ADR non li tocca. Segue la regola del DM «si parte dallo standard di fatto»: lo standard qui è il PRD, non una tabella nostra.
 

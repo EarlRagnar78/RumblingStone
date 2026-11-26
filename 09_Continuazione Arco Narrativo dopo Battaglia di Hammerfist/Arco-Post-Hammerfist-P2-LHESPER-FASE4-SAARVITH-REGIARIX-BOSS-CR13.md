@@ -1,13 +1,13 @@
-Arco-Post-Hammerfist-P2-RHEST-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md
+Arco-Post-Hammerfist-P2-LHESPER-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md
 ==================================================================
 
-# Rhest Fase 4 – Boss Saarvith & Regiarix (CR 13)
+# Lhesper Fase 4 – Boss Saarvith & Regiarix (CR 13)
 
 > **Versione**: v2 (2026-07-02) — espansa a standard "pacchetto Palio" (Lotto B,
 > task B1.4): read-aloud, arena a **3 quote**, fasi del drago (hit-and-run +
 > Darkness come da RHoD), trigger di fuga di Saarvith, sinergia con i poteri
 > **attuali** degli artefatti (`campaign/state.md` §6). Le **statistiche** sono in
-> `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`
+> `Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`
 > (Saarvith ranger, ~75 pf; Regiarix drago nero giovane adulto SRD, GS 9, 152 pf `[CANONE — DM 2026-11-15]`; l'incontro è intorno a EL 11-12, soffio
 > **acido**). Questo file è la **regia dello scontro**; non duplica gli statblock.
 
@@ -15,7 +15,7 @@ Arco-Post-Hammerfist-P2-RHEST-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md
 
 ## 0. Read-aloud d'apertura
 
-> *La sala del consiglio di Rhest è un guscio: metà tetto crollato, il pavimento
+> *La sala del consiglio di Lhesper è un guscio: metà tetto crollato, il pavimento
 > spezzato in due — un piano alto ancora asciutto e un piano basso già inghiottito
 > dall'acqua nera. Su una trave alta, un goblin dalle braccia lunghe incocca una
 > freccia senza fretta: **Wyrmlord Saarvith**. E sotto, dove l'acqua è più profonda
@@ -60,6 +60,8 @@ Riporta lo **stato di allerta** deciso in Fase 3:
 ## 3. Regiarix — le fasi del drago (hit-and-run)
 
 > Statblock: STATBLOCCHI §2. Regia (allineata allo script §4 di quel file):
+>
+> Quando usa *armatura magica*, *scudo*, le pergamene di *invisibilità* e le pozioni lo dice STATBLOCCHI §2, «Incantesimi e corredo in battaglia» `[CANONE — DM 2026-11-21, card]`.
 
 - **Fase A — Bombardamento acido** (round 1–2): emerge parzialmente, **soffio di
   acido in linea** (24 m, 10d4, Riflessi CD 21 per metà) su 2–3 PG allineati,
@@ -123,7 +125,7 @@ Riporta lo **stato di allerta** deciso in Fase 3:
   **Ali d'Ombra** coprono la **quota di volo**, negando a Regiarix il cielo tutto
   suo. (Poteri base pieni; l'evoluzione arriva alla Torre, non qui.)
 
-> **Design**: la vittoria "pulita" a Rhest nasce dal **negare a Regiarix il suo
+> **Design**: la vittoria "pulita" a Lhesper nasce dal **negare a Regiarix il suo
 > elemento** (acqua + buio) e dal **raggiungere Saarvith** malgrado la sua
 > mobilità. Premia i giocatori che lo capiscono.
 
@@ -133,7 +135,8 @@ Riporta lo **stato di allerta** deciso in Fase 3:
 
 - **Party molto forte**: +1–2 lucertoloidi guardia del corpo di Saarvith; per
   Regiarix la via legale è l'età adulta dell'SRD (GS 11, 199 pf, soffio 12d4 CD 23),
-  non capacità inventate `[CANONE — DM 2026-11-15]`.
+  non capacità inventate `[CANONE — DM 2026-11-15]`; da adulto fugge anche lui a un
+  terzo dei pf, 66.
 - **Party medio**: Regiarix giovane adulto è già il drago più debole della
   campagna (152 pf); togli un attacco per round a Saarvith. (Vedi nota nello STATBLOCCHI.)
 
@@ -141,15 +144,15 @@ Riporta lo **stato di allerta** deciso in Fase 3:
 
 ## 7. Esiti e collegamento all'assedio
 
-Dettaglio pieno: `Arco-Post-Hammerfist-P2-RHEST-CONSEGUENZE-ESITI.md`. Ancoraggio
+Dettaglio pieno: `Arco-Post-Hammerfist-P2-LHESPER-CONSEGUENZE-ESITI.md`. Ancoraggio
 canonico: `campaign/state.md` §2.3.
 
 | Esito | Effetto a Rethmar |
 |---|---|
-| **Saarvith e Regiarix uccisi** + nido distrutto (Fase 2) | **−1 drago, −2 Razorfiend** all'Orda (`campaign/state.md` §2.3); Rhest non è più un avamposto; Tiri‑Kitor al pieno appoggio. |
+| **Saarvith e Regiarix uccisi** + nido distrutto (Fase 2) | **−1 drago, −2 Razorfiend** all'Orda (`campaign/state.md` §2.3); Lhesper non è più un avamposto; Tiri‑Kitor al pieno appoggio. |
 | **Regiarix morto, Saarvith fuggito** | −1 drago; Saarvith torna come **cecchino** a Rethmar; alleanza elfica forte ma prudente. |
-| **Regiarix fuggito** (sotto ~30% pf, tuffo) | Il drago **non** è tolto dal conteggio: può comparire a Rethmar come rinforzo aereo. |
-| **Fuga PG / sconfitta** | Rhest resta fortezza Mano Rossa: ondata Razorfiend + drago a Rethmar; Tiri‑Kitor tiepidi. |
+| **Regiarix fuggito** (a un terzo dei pf, 50, tuffo `[CANONE — DM 2026-11-15]`) | Il drago **non** è tolto dal conteggio: può comparire a Rethmar come rinforzo aereo. |
+| **Fuga PG / sconfitta** | Lhesper resta fortezza Mano Rossa: ondata Razorfiend + drago a Rethmar; Tiri‑Kitor tiepidi. |
 
 ---
 
@@ -171,15 +174,15 @@ canonico: `campaign/state.md` §2.3.
 > formato standard dell'arco. Fallimento a metà = costo, non stop. Protocollo
 > morte PG: `campaign/DM-QUICKSTART-ARC09.md` §"Risorse di resurrezione nel Vale".
 
-**Se i PG si ritirano o perdono a Rhest (Regiarix vivo, Saarvith fugge)**:
+**Se i PG si ritirano o perdono a Lhesper (Regiarix vivo, Saarvith fugge)**:
 - **Non scatta il −1 drago/−2 Razorfiend** (state.md §2.3): l'Orda arriva a
   Rethmar con Regiarix e i Razorfiend interi → uno scenario ARMATE-SYNC §3 più
   duro (+1 CR a un'ondata di Fase 1).
-- **Rhest resta fortezza** (clock Saarvith 3/8→pieno, state.md §3): +1 CR e i
+- **Lhesper resta fortezza** (clock Saarvith 3/8→pieno, state.md §3): +1 CR e i
   Tiri-Kitor restano **tiepidi** (nessun eco-vendetta di Lanikar, B1.5).
-- **Costo, non blocco**: i PG possono aggirare Rhest e affrontarne le conseguenze
+- **Costo, non blocco**: i PG possono aggirare Lhesper e affrontarne le conseguenze
   a Rethmar, oppure tornare in una finestra Day ≤32 per un secondo tentativo (con
-  Rhest ora **in allerta** = niente sorpresa, +2 alle difese di Saarvith).
+  Lhesper ora **in allerta** = niente sorpresa, +2 alle difese di Saarvith).
 
 **Fallimento parziale (Regiarix ucciso ma Saarvith fugge)**: −1 drago **sì**,
 −2 Razorfiend **no** (Saarvith li riassegna); a Rethmar arriva come Wyrmlord

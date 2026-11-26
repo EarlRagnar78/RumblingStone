@@ -227,9 +227,9 @@ def righe_sic(testo: str) -> set[int]:
     return {n for n, r in enumerate(testo.splitlines(), 1) if SIC.search(r)}
 
 
-def controlla(f: Path, d_eufonica_blocca: bool = False) -> tuple[list[str], list[str]]:
-    """`d_eufonica_blocca`: la *d* eufonica è nel canale testing fino al 2026-11-24
-    (ADR-0120, ADR-0099), quindi di suo è un avviso; con True è un errore."""
+def controlla(f: Path) -> tuple[list[str], list[str]]:
+    """(errori, avvisi) di un file. La *d* eufonica fuori norma è un errore:
+    ADR-0120, stable dal 2026-11-25 dopo il canale testing di ADR-0099."""
     errori: list[str] = []
     avvisi: list[str] = []
     testo = f.read_text(encoding="utf-8", errors="ignore")
@@ -239,7 +239,7 @@ def controlla(f: Path, d_eufonica_blocca: bool = False) -> tuple[list[str], list
     for n, forma in d_eufonica_righe(righe):
         if n in sic:
             continue
-        (errori if d_eufonica_blocca else avvisi).append(
+        errori.append(
             f"{rel}:{n}: d eufonica fuori norma (ad/ed solo davanti alla stessa vocale) — {forma}")
     for n, riga in righe:
         for pattern, perche in ERRORI:
@@ -267,9 +267,6 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("files", nargs="*", help="file da controllare (default: tutto il contenuto)")
     ap.add_argument("--strict", action="store_true", help="gli avvisi diventano errori")
-    ap.add_argument("--d-eufonica", action="store_true",
-                    help="la d eufonica fuori norma è un errore (canale testing fino al "
-                         "2026-11-24, ADR-0120: senza, è un avviso)")
     ap.add_argument("--avvisi", action="store_true",
                     help="elenca gli avvisi; senza, se ne stampa solo il conto per tipo")
     args = ap.parse_args(argv)
@@ -282,7 +279,7 @@ def main(argv=None) -> int:
         if not f.is_file():
             continue
         marcate += len(righe_sic(f.read_text(encoding="utf-8", errors="ignore")))
-        e, a = controlla(f, d_eufonica_blocca=args.d_eufonica)
+        e, a = controlla(f)
         errori += e
         avvisi += a
 

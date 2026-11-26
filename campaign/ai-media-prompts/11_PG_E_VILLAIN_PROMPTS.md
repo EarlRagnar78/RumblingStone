@@ -324,7 +324,7 @@ mixed with underground dark fantasy.
 ```
 
 ### 📸 3.11 — WYRMLORD SAARVITH (Il Cacciatore delle Paludi)
-*Il Signore di Rhest*
+*Il Signore di Lhesper*
 
 ```
 [PROMPT IMMAGINE BASE]
@@ -500,7 +500,7 @@ organic shapes, mystical lighting.
 ```
 
 ### 📸 5.5 — IL GREENSPAWN RAZORFIEND (L'Orrore delle Paludi)
-*Il Prestigioso Cacciatore di Rhest*
+*Il Prestigioso Cacciatore di Lhesper*
 
 ```
 [PROMPT IMMAGINE BASE]

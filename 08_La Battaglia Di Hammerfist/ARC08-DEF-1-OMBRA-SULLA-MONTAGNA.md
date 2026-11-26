@@ -948,11 +948,10 @@ i giocatori fanno quello che i capitani non osano: dicono al Re che ha torto.
 > tutti. Le torce fumano contro i pilastri neri. La Madre Superiora batte il
 > bastone sulla pietra, una volta, e la sala tace.*
 
-Il box nomina i quattro eroi del 2026-10-21 `[INFERRED — Se al tavolo c'è
-Ragnhild o Yrsa, il DM vuole un box che non dica «voi quattro» coi quattro
-epiteti?; base: il box è del 2026-10-21, le due eroine del 2026-11-15; i
-box li riscrive solo l'autore della prosa di gioco]`. Fino ad allora, se
-al tavolo c'è una delle due, il DM salta i quattro epiteti.
+Il box nomina i quattro eroi del 2026-10-21. Se al tavolo c'è Ragnhild o
+Yrsa, il DM salta i quattro epiteti; le varianti del box coi nomi di chi
+gioca entrano solo dopo il voto cieco del DM `[CANONE — DM 2026-11-26, card
+«il box del Consiglio con Ragnhild o Yrsa»]`.
 
 **Scheda d'entrata — Madre Superiora Dagmar Forgiapietra, detta Dana, la voce di Moradin a Hammerfist** *(statistiche: `ARC08-01`, PNG alleati; `Bestiario/png/Dana_Forgiapietra.md`)*
 

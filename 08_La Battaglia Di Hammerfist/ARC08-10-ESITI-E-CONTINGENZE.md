@@ -249,7 +249,7 @@ maturati e si applicano al finale.
 | Obiettivo | Pieno | Parziale | Fallito |
 |---|---|---|---|
 | **Breccia contenuta** (Assedio Mura) | La fortezza regge più a lungo → **1 incontro del finale a −1 CR** (meno nemici filtrati all'interno) | Breccia rallentata → mezzo bonus (−1 CR a un solo round) | Breccia aperta subito → il finale inizia con **+1 ondata** |
-| **Comandanti nemici logorati** (Grimjaw / Gorthak feriti durante l'assedio) | Grimjaw e/o Gorthak arrivano al finale **feriti**: −20% pf iniziali, −2 morale all'orda | Uno solo dei due logorato | Entrambi freschi al finale |
+| **Comandanti nemici logorati** (Grimjaw / Gorthak fuggiti feriti o abbattuti durante l'assedio) | Grimjaw e/o Gorthak arrivano al finale **feriti**: −20% pf iniziali, −2 morale all'orda. Chi è stato abbattuto al finale manca, e per lui il −20% non vale; come il suo −3 sta col −2 è in `ARC08-DEF-2`, §0-bis, «I bonus» | Uno solo dei due logorato | Entrambi freschi al finale |
 | **Cantitrici della Pietra protette** (Soffio del Drago) | Le Cantitrici sopravvivono → nel finale forniscono **Cura Ferite Gravi di Massa 1/incontro** + Ispirare Coraggio ai 90 | Metà Cantitrici → un solo uso di cura | Cantitrici perse → nessun supporto divino di massa nel finale |
 
 ### 5.3 Sessione 3a — Ultima Resistenza (pregen, fino al passaggio di testimone)
@@ -293,7 +293,7 @@ la **Sessione 3a**.
   una tacca del Giorno 1 o del Giorno 2 d'assedio. Contano le trappole
   dell'avanguardia e quella della Preparazione delle difese.
 - Le righe di §5.2 e §5.3 si leggono con la tabella di `ARC08-19` §4
-  (brecce dei giorni 1 e 2, comandanti fuggiti feriti, Mura del giorno 2,
+  (brecce dei giorni 1 e 2, comandanti fuggiti feriti o abbattuti, Mura del giorno 2,
   reparti vivi alla ritirata). Sotto metà dei punti ferita i comandanti
   fuggono, e arrivano al finale feriti come vuole §5.2. Se i dadi li portano
   a 0 pf o meno prima della fuga sono abbattuti, e al finale mancano

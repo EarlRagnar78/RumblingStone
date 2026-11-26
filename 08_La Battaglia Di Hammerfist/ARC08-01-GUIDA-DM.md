@@ -805,7 +805,7 @@ Chi non vuole guidare un eroe guarda, oppure guida un'unità di nani (statistich
 > Difensore Inamovibile (*stalwart defender*), non si applica.
 
 **Momenti Eroici Consigliati:**
-- Duello personale contro Gorthak il Trifronte
+- Duello personale contro Gorthak il Trifronte (finché Gorthak è vivo: a 0 pf è abbattuto e non torna, `ARC08-DEF-2`, §0-bis)
 - Guidare la carica contro la breccia nel muro
 - Ultimo stand davanti all'altare di Moradin
 
@@ -2030,6 +2030,8 @@ RESA DEI CONTI FINALE (Round 12-15)
 - **Druido:** Cure e buff sul Guerriero durante duello
 - **Warlock:** Debuff su Grimjaw, eliminazione minacce secondarie
 
+**SE GRIMJAW È STATO ABBATTUTO NELL'ASSEDIO** `[CANONE — DM 2026-11-26, card «comandante a 0 pf nell'assedio»]`: il duello qui sopra non si gioca. Al round 12 entra al suo posto il capitano minore con le dieci guardie, e si ritira da solo. La sua scheda, il round della ritirata e che cosa chiude la serata sono in `ARC08-DEF-2`, §0-bis, «Il comandante a 0 pf o meno», con i default che aspettano il DM.
+
 ### **RISULTATO DELLA SESSIONE 3:**
 - **Caverna Liberata:** Tutti i nemici morti o in fuga
 - **Morale Nanico:** Completamente ripristinato (+6 permanente)
@@ -2101,7 +2103,7 @@ RESA DEI CONTI FINALE (Round 12-15)
 > **La linea del tempo della Sessione 4** `[CANONE — DM 2026-10-19, D9]` *(vale per questa guida, per la «Guida agli Scontri», per la MAPPA 4 di `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` e per l'Atlante)*
 > - **Round 1-3**: sui bastioni il discorso del Re (round 1) e il cuneo si forma; in aria l'apertura dei gufi (round 1-2), Orion salta al round 3, il cavaliere può cadere ai round 3-4.
 > - **Round 4-5**: il cuneo scende il pendio; la Cantata di Tempestas e i fulmini di Orion.
-> - **Round 6**: l'urto sulla linea ⚔ della riga 37. Strafing dei gufi ai round 6-8; fino al round 10 la convergenza, e Thorik ingaggia Gorthak.
+> - **Round 6**: l'urto sulla linea ⚔ della riga 37. Strafing dei gufi ai round 6-8; fino al round 10 la convergenza, e Thorik ingaggia Gorthak, se Gorthak è vivo (se è stato abbattuto nell'assedio: `ARC08-DEF-2`, §0-bis, «Gorthak abbattuto»).
 > - **Round 11-17**: logoramento, in aria e a terra. Fauci non fugge.
 > - **Round 18-20**: la picchiata di Fauci su Thorik, e la presa. **Round 21-23**: il duello. A fine round 23, la vittoria.
 
@@ -2289,7 +2291,7 @@ Fauci resta in aria e logora fino al round 17, e scende quando lo decide lui.
 
 **Perché scende (legale in 3.5):** lo dice la sua scheda (`ARC08-02` §1, *Tattiche*): atterra solo per finire Thorik dopo averlo preso e lasciato cadere, e sotto i 112 pf fugge `[CANONE — DM 2026-11-15]`. L'Odio della stirpe (+4 contro Thorik, sempre) è la ragione per cui lo fa. È una picchiata con Attacco in Volo (SRD: un'azione di movimento, anche in picchiata, e un'azione standard in un punto qualsiasi del movimento), e porta **la presa di Thorik** `[CANONE — DM 2026-10-19]`: morso al round 18, salita con Thorik in bocca al 19, soffio con lui in bocca e caduta al 20. Le regole e i numeri sono nella scheda (`ARC08-02` §1, «La presa di Thorik»), una volta per incontro. La presa di Orion da sola non lo porta giù: +24 contro +43 (SRD). Con i tiri nella media succede ai **round 18-20**; se scende sotto i 112 pf prima, fugge e la picchiata non c'è. Se Aegis Fang non ha mai cantato né colpito, niente presa: scende nella zona ⚡ e il duello comincia lì.
 
-**Dove:** lo prende dov'è, sulla linea ⚔ o contro Gorthak, e lo lascia cadere a fine round 20 nella zona ⚡ della MAPPA 4 (AB30-AG32), alle spalle della punta, fra le ultime file del cuneo, a circa 30 m dalla linea. Al round 21 Fauci atterra lì per finirlo. Tremore: Equilibrio CD 15 entro 9 m. I PG convergono in 2 round; il duello è ai **round 21-23**. Se Thorik si libera prima, cade dalla quota in cui è, e Fauci scende comunque dove è caduto.
+**Dove:** lo prende dov'è, sulla linea ⚔ o contro Gorthak (se Gorthak è vivo: `ARC08-DEF-2`, §0-bis), e lo lascia cadere a fine round 20 nella zona ⚡ della MAPPA 4 (AB30-AG32), alle spalle della punta, fra le ultime file del cuneo, a circa 30 m dalla linea. Al round 21 Fauci atterra lì per finirlo. Tremore: Equilibrio CD 15 entro 9 m. I PG convergono in 2 round; il duello è ai **round 21-23**. Se Thorik si libera prima, cade dalla quota in cui è, e Fauci scende comunque dove è caduto.
 
 > **Read-aloud (Salvatore lead) — la picchiata.** *Il drago smette di girare sopra il campo, chiude le ali e scende dritto, e la pioggia gli scivola addosso come su una lama oliata. Non guarda i gufi: guarda la punta del cuneo, l'elmo con la corona. Che fate?*
 

@@ -222,7 +222,7 @@ tarano al primo tavolo. Le capacità dell'orda sono al §1.
 | Obiettivo | Pieno | Parziale | Fallito |
 |---|---|---|---|
 | **Breccia contenuta** (§5.2) | nessuna breccia nei giorni 1 e 2 | una | due o più |
-| **Comandanti logorati** (§5.2) | Gorthak e Grimjaw fuggiti feriti | uno dei due | nessuno |
+| **Comandanti logorati** (§5.2) | Gorthak e Grimjaw fuggiti feriti o abbattuti (`ARC08-DEF-2`, §0-bis, «Il comandante a 0 pf o meno») | uno dei due (Grimjaw ricacciato dal Re non conta) | nessuno |
 | **Cantitrici protette** (§5.2) | le Mura non cedono il giorno 2 | cedono al round 4 o 5 | cedono entro il round 3 |
 | **Posizioni tenute** (§5.3) | alla ritirata restano tre quarti dei reparti o più | da un terzo a tre quarti | meno di un terzo |
 | **Re Thorek** ed **evacuazione** (§5.3) | come nel master, nella resistenza al Cuore | | |

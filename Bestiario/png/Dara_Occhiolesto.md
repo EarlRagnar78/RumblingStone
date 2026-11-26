@@ -11,6 +11,8 @@
 **Notes**: uno dei 4 pregen (D6). Appellativo scelto dal DM il 2026-11-14.
 <!-- storico -->Fino al 2026-11-14: «L'Occhio delle Montagne».<!-- /storico -->
 
+Lettura del 2026-11-25: il Nemico Prescelto vale a colpire e ai danni. È la lettura di PF1e, ⚠️ non SRD 3.5, che lo dà solo ai danni (ADR-0118) `[CANONE — DM 2026-11-25, card «schede canone di Yrsa e Dara»]`.
+
 Boost log: correzione dei conti — GS 12 → 12 — cuoio borchiato +2 vale +5 (CA 21), Cos 18 per i pf (102), arco +19/+14/+9, Schivare e Mobilità, aggiunta come prerequisito di Tiro in Corsa (2026-10-18).
 Benchmark: PF T1-1 riga 12: CA 21 vs 27 (sotto) / pf 102 vs 165 (sotto) / atk +19 vs +21 (2 sotto) / TS buono +14 vs +15 (1 sotto). Esploratrice dei Picchi non è dell'SRD; PF1e: Viandante dell'Orizzonte.
 <!-- storico -->

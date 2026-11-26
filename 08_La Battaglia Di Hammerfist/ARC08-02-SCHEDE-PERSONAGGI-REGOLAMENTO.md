@@ -307,34 +307,40 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 
 **Velocità:** 9m (in armatura)
 **Attacco Base:** +11; **Lotta:** +24
-**Attacco:** *Randello Enorme +1* +21 in mischia (2d6+10)
-**Attacco Completo:** *Randello Enorme +1* +21/+16/+11 in mischia (2d6+10) e *Randello Enorme +1* +21/+16/+11 in mischia (2d6+5)
-**Distanza:** giavellotto grande +12/+7/+2 (1d8+9)
+**Attacco:** *Stella del Mattino Grande +1* +21 in mischia (2d6+10)
+**Attacco Completo:** *Stella del Mattino Grande +1* +21/+16/+11 in mischia (2d6+10) e *Stella del Mattino Grande +1* +21/+16/+11 in mischia (2d6+10)
+**Distanza:** giavellotto grande +12 (1d8+9), uno a round, dopo aver lasciato una stella del mattino: incremento 9 m, −2 a ogni incremento in più, fino a 45 m. Senza Estrazione Rapida le armi da lancio non danno gli attacchi iterativi `[SRD: Quick Draw]`
 **Spazio/Portata:** 3m/3m
 
 **Caratteristiche:** For 29, Des 15, Cos 28, Int 10, Sag 14, Car 11
 
 **Qualità Speciali:**
-*   **Combattere con Due Armi Superiore (Str):** ogni testa guida un braccio: nessuna penalità ai tiri per colpire e ai danni con due armi (ettin SRD); il secondo braccio somma metà For ai danni.
+*   **Combattere con Due Armi Superiore (Str):** ogni testa guida un braccio: nessuna penalità ai tiri per colpire e ai danni con due armi (ettin SRD): il secondo braccio somma la For piena ai danni, come il primo `[CANONE — DM 2026-11-25, card «armi di Gorthak e versione dura»]`.
 *   **Visione Superiore (Str):** Bonus razziale di +4 a Osservare e Ascoltare. Non può essere attaccato ai fianchi.
 *   **Tre Teste, Tre Tattiche:**
     *   **Testa Sinistra (Brutale):** Il suo primo attacco in ogni round infligge +2 danni.
     *   **Testa Centrale (Strategica):** Una volta per scontro, può rinunciare a un attacco per fornire a un'unità alleata un bonus di +2 al morale per 1 round.
     *   **Testa Destra (Vigile):** Fornisce il talento Iniziativa Migliorata (+4 Iniziativa totale).
 
-**Talenti:** Allerta, Arma Focalizzata (randello enorme), Attacco Poderoso, Incalzare, Spezzare Migliorato, Volontà di Ferro; Iniziativa Migliorata dalla testa destra. `[CANONE — regola, ADR-0118]: 15 DV danno sei talenti e Iniziativa Migliorata la dà la testa destra, quindi il sesto è libero; con Arma Focalizzata il randello torna a +21 (BAB +11, For +9, −1 taglia, +1 arma, +1)`
-**Equipaggiamento:** *Corazza di Piastre Grande +1*, 3 *Randelli Enormi +1* (due in pugno, uno di riserva), 6 Giavellotti Grandi.
+**Talenti:** Allerta, Arma Focalizzata (stella del mattino), Attacco Poderoso, Incalzare, Spezzare Migliorato, Volontà di Ferro; Iniziativa Migliorata dalla testa destra. `[CANONE — regola, ADR-0118]: 15 DV danno sei talenti e Iniziativa Migliorata la dà la testa destra, quindi il sesto è libero; con Arma Focalizzata la stella del mattino torna a +21 (BAB +11, For +9, −1 taglia, +1 arma, +1)`
+**Equipaggiamento:** *Corazza di Piastre Grande +1*, 3 *Stelle del Mattino Grandi +1* (due in pugno, una di riserva), 6 Giavellotti Grandi.
 
-> **Verifica 3.5 (versione più forte)**: ettin dell'SRD avanzato a 15 DV
-> (il massimo della taglia Grande). L'ettin SRD combatte con un'arma per mano
-> senza penalità, perché ogni testa guida un braccio: due randelli a pieno
-> BAB, non tre attacchi con uno solo. La *corazza di piastre +1* vale +6 alla
+> **Verifica 3.5 (versione più forte)**: ettin dell'SRD (10 DV) portato a
+> 15 DV. ⚠️ Non SRD: l'SRD dà all'ettin «Advancement: By character class»,
+> senza una fascia di DV, ed è un potenziamento dichiarato
+> (`ARC08-DEF-2`, A.1). L'ettin SRD combatte con un'arma per mano
+> senza penalità, perché ogni testa guida un braccio: due stelle del mattino
+> Grandi a pieno BAB e a Forza piena, 2d6+10 l'una, non tre attacchi con una
+> sola. Sono le armi dell'ettin SRD (2 morningstars), con la For 29 e il +1
+> `[CANONE — DM 2026-11-25, card «armi di Gorthak e versione dura»]`.
+> <!-- storico: fino al 2026-11-25 la scheda scriveva «Randello Enorme +1», 2d6+10 e 2d6+5, e «il secondo braccio somma metà For ai danni». Un randello Grande fa 1d8, e un randello Enorme un gigante Grande lo impugna solo a due mani (SRD, Inappropriately Sized Weapons): il 2d6 era già il dado della stella del mattino Grande -->
+> La *corazza di piastre +1* vale +6 alla
 > CA (era +3). I pf tornano coi dadi con Cos 28 (15d8+135 = 202), un punto
 > in più dagli aumenti di caratteristica dei DV avanzati; prima
 > 15d8+120 dava 187, non 195. Multiattacco esce (non serve a chi usa armi):
 > entrano Spezzare Migliorato e Volontà di Ferro.
 
-**Tattiche:** Gorthak è un ariete vivente. Cerca sempre lo scontro fisico, puntando il cancello o i nemici più grandi e corazzati. Ogni round fa l'attacco completo con i due randelli, uno per braccio (sei colpi), su un bersaglio solo o divisi fra due. Sotto i 101 PF (metà), per un round la testa sinistra prende il sopravvento e lo fa combattere in Furia (+4 For, −2 CA); alla fine di quel round la testa centrale lo tira indietro e Gorthak lascia il ponte, ferito `[CANONE — DM 2026-11-04, P16, il cancello e Gorthak]` (il duello intero, con il ponte, lo sportello e i troll, è in `ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md`, Scena 2). *Morale*: prima di quella soglia, se Fauci è fuggito o abbattuto e l'orda è in rotta, la testa centrale può offrire la resa (al finale la scelta è dei PG).
+**Tattiche:** Gorthak è un ariete vivente. Cerca sempre lo scontro fisico, puntando il cancello o i nemici più grandi e corazzati. Ogni round fa l'attacco completo con le due stelle del mattino, una per braccio (sei colpi), su un bersaglio solo o divisi fra due. Sotto i 101 PF (metà), per un round la testa sinistra prende il sopravvento e lo fa combattere in Furia (+4 For, −2 CA); alla fine di quel round la testa centrale lo tira indietro e Gorthak lascia il ponte, ferito `[CANONE — DM 2026-11-04, P16, il cancello e Gorthak]` (il duello intero, con il ponte, lo sportello e i troll, è in `ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md`, Scena 2). *Morale*: prima di quella soglia, se Fauci è fuggito o abbattuto e l'orda è in rotta, la testa centrale può offrire la resa (al finale la scelta è dei PG).
 > Morale scritto da un agente sui poteri della scheda.
 
 ---
@@ -811,10 +817,10 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 **ABILITÀ PRINCIPALI:**
 *   **Stendardo:** finché lo stendardo si vede, gli alleati entro 18 m hanno **+3 ai TS contro la paura** e **+2 a colpire in carica**.
 *   **Sfida (4/giorno, azione veloce):** scegli un nemico. Contro di lui fai **+18 danni** in mischia, i tuoi alleati hanno **+4 a colpirlo** finché lo minacci, e lui ha **−2 alla CA** contro gli altri. Tu hai −2 alla CA contro tutti gli altri.
-*   **Tattico (3/giorno, azione veloce):** per 9 round gli alleati entro 9 m hanno **Muro di Scudi** e **Difesa Coordinata**.
+*   **Tattico (3/giorno, azione veloce):** per 9 round gli alleati entro 9 m hanno un talento di squadra a tua scelta, **Muro di Scudi** o **Difesa Coordinata**: uno per uso.
 *   **Strategia (azione standard):** a ogni alleato entro 9 m dai +2 alla CA per 1 round, o +2 a colpire per 1 round, o un movimento immediato. Una volta per alleato per combattimento.
 *   **Aiutare gli Alleati:** quando usi aiutare un altro, l'alleato prende **+4** invece di +2.
-*   **Attacco Poderoso con Concentrazione Furiosa:** −4 a colpire e +8 ai danni, ma il primo attacco del round non prende la penalità.
+*   **Attacco Poderoso:** −4 a colpire e +8 ai danni: **+19/+14/+9** (1d10+18). La Concentrazione Furiosa non vale finché porti lo scudo.
 
 ---
 <div style="page-break-before:always"></div>

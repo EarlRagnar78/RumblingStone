@@ -1306,9 +1306,10 @@ non c'è, perché nasce all'alba del Giorno 1: le righe del sergente restano
 nel file delle prove, e al tavolo non valgono. In ogni casella tre cifre,
 su cento duelli: il comandante fugge · va a 0 pf o meno · un eroe va a
 terra. Le prime due sono esiti diversi, e un duello sta in uno solo: fino
-al 2026-11-25 una cifra sola li sommava. Che cosa succede a Gorthak o a
-Grimjaw a 0 pf o meno non è deciso: la domanda al DM è in `ARC08-DEF-2`,
-§0-bis, «Le due colonne del comandante».
+al 2026-11-25 una cifra sola li sommava. A 0 pf o meno Gorthak o Grimjaw è
+abbattuto, e nell'assedio non torna
+`[CANONE — DM 2026-11-26, card «comandante a 0 pf nell'assedio»]`:
+la regola è in `ARC08-DEF-2`, §0-bis, «Il comandante a 0 pf o meno».
 
 | Scontro | Eroi | Oggi | +8 al primo tiro per colpire sul comandante | Un'azione standard in più | Un'azione di movimento in più |
 |---|---|---|---|---|---|

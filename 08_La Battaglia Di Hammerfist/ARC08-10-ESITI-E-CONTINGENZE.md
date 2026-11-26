@@ -294,9 +294,18 @@ la **Sessione 3a**.
   dell'avanguardia e quella della Preparazione delle difese.
 - Le righe di §5.2 e §5.3 si leggono con la tabella di `ARC08-19` §4
   (brecce dei giorni 1 e 2, comandanti fuggiti feriti, Mura del giorno 2,
-  reparti vivi alla ritirata). Nell'assedio i comandanti non muoiono: sotto
-  metà dei punti ferita fuggono, così arrivano al finale feriti come vuole
-  §5.2. Re Thorek e l'evacuazione restano come sopra.
+  reparti vivi alla ritirata). Sotto metà dei punti ferita i comandanti
+  fuggono, e arrivano al finale feriti come vuole §5.2. Se i dadi li portano
+  a 0 pf o meno prima della fuga sono abbattuti, e al finale mancano
+  `[CANONE — DM 2026-11-26, card «comandante a 0 pf nell'assedio»]`:
+  la regola è in `ARC08-DEF-2`, §0-bis, «Il comandante a 0 pf o meno». Re
+  Thorek e l'evacuazione restano come sopra.
+
+<!-- storico -->
+*Fino al 2026-11-26 questa riga diceva: «Nell'assedio i comandanti non
+muoiono: sotto metà dei punti ferita fuggono, così arrivano al finale feriti
+come vuole §5.2».*
+<!-- /storico -->
 
 ### 5.5 Se il flashback coi pregen non è stato giocato `[CANONE — DM 2026-11-04, P16, dopo la battaglia]`
 

@@ -132,7 +132,7 @@ Per ogni carta **non giocata**, tira **1d20 + Fronte corrente** vs **CD 18**:
 - **Trigger**: le campane del Tempio suonano a mezzanotte; un commando drow è già nelle cripte (Notte dei Drow). **Eco Halveth**: se **non rimosso** (Consiglio_Rethmar §2), i drow hanno la pianta e la posizione delle sentinelle → **+1 CR**.
 - **Read-aloud**: *Le campane impazziscono. Dal quartiere sacro sale una luce verde-malata e l'odore di funghi marci. Sotto i vostri piedi, la pietra trema: qualcosa di grosso sta sfondando le colonne delle cripte, verso la Camera dell'Artefatto.*
 - **Mappa**: navata + discesa cripte, **riuso** `FASE0-...-MAPPA.md` (18×24, 1,5 m/q); colonne = copertura; cripte = spazi stretti (l'Aberrazione Alfa fatica a manovrare).
-- **Nemici (EL 14-15)**: 1 High Priestess drow (`drow-priestess9-cr11` pompata) + 4 Drow Fungal Minion + 1 Aberrazione Fungina Alfa CR 12. Se **Sabotaggio Campi Drow** fatto: −Alfa, 5-8 drow (EL 12).
+- **Nemici (EL 14-15)**: 1 High Priestess drow (`drow-priestess9-cr10` pompata) + 4 Drow Fungal Minion + 1 Aberrazione Fungina Alfa CR 12. Se **Sabotaggio Campi Drow** fatto: −Alfa, 5-8 drow (EL 12).
 - **Tattica**: la Priestess usa *darkness*/ragnatele e tenta il rito di sblocco dell'Artefatto (3 round); l'Alfa fa da ariete vivente contro le colonne.
 - **Posta**: l'**Artefatto Maligno**. Se rubato → potenzia il rituale di Fase 2 (FASE2 §8.2: +2 CD/+20 pf ai foci).
 - **Esiti**: **Vittoria** (Artefatto salvo/distrutto, commando respinto) → +2 Fronte. **Parziale** (Artefatto salvo ma tempio danneggiato) → +0, −1 Morale Cittadino. **Sconfitta** (Artefatto rubato) → −2 Fronte + Fase 2 peggiorata.

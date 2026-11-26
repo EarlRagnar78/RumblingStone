@@ -59,7 +59,7 @@
 |---|---|---|---|
 | 01-14 | 🕊 **Ultimi druidi in ritirata** verso Starsong — intel disperata, un favore druidico. | — | Non-combat |
 | 15-26 | 🕊 **Gufo gigante ferito dei Tiri Kitor** — curarlo = eco alleanza (+goodwill Starsong). | — | Non-combat |
-| 27-40 | **Cerchio drow corrotto** che pianta spore (eco `SUBQUEST-Hella`). `.../drow-priestess9-cr11.md`. | 12 | Combat |
+| 27-40 | **Cerchio drow corrotto** che pianta spore (eco `SUBQUEST-Hella`). `.../drow-priestess9-cr10.md`. | 12 | Combat |
 | 41-55 | **Branco fungino-mutato**. `.../centaur-ranger4-corrupted-cr5.md` ×3 + spore (→ MB-4). | 12 | Combat |
 | 56-70 | **Cavalcatori di iene gnoll** in caccia di profughi (salvarli = 🕊 eco). `.../gnoll-hyenodon-rider-cr4.md` ×4. | 12 | Misto |
 | 71-84 | **Razorfiend** in perlustrazione bassa sul bosco. `.../razorfiend-green-cr9.md`. | 11 | Combat |

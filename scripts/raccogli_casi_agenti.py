@@ -9,6 +9,13 @@ questo script lavora sui messaggi che la routine esporta.
     proponi IN.json --coda DIR   scarta duplicati e testi con segreti o email, etichetta
                                  ogni caso con la predizione dell'hook («proposta») e scrive
                                  DIR/AAAA-Www.json e DIR/CARD.md (una card per caso)
+    cieco DIR/AAAA-Www.json      scrive DIR/CIECO-AAAA-Www.tsv: id e testo dei casi del DM,
+                                 senza la proposta, per un annotatore cieco
+    annota DIR/AAAA-Www.json ANNOTAZIONI.tsv
+                                 la consigliata di ogni caso è l'etichetta dell'annotatore
+                                 cieco (``id_messaggio<TAB>etichetta``); stampa l'accordo
+                                 con l'hook e la kappa di Cohen. La consigliata non è mai la
+                                 proposta dell'hook: sarebbe ancoraggio sulla cosa misurata
     applica DIR/AAAA-Www.json SCELTE.tsv
                                  aggiunge i casi confermati al set d'oro, split per hash
                                  sha256 dell'id (50/50 dev/test), rimette il tetto con l'hook
@@ -123,19 +130,28 @@ def _settimane(coda: Path) -> "list[Path]":
     return sorted(Path(coda).glob("[0-9][0-9][0-9][0-9]-W[0-9][0-9].json"))
 
 
-def _opzioni(testo: str, tipo: str, scegli_, voti_) -> dict:
-    proposta = ia.predici(testo, scegli_)
-    v = voti_(testo)
-    ordine = sorted(v, key=lambda a: (-v[a], ia.PRIORITA.index(a) if a in ia.PRIORITA else 99))
-    # un avviso del coordinatore o un resoconto di sottoagente non chiede lavoro (ADR-0154)
-    consigliata = proposta if tipo == "dm" else NESSUNO
-    secondo = next((a for a in ordine if a not in (proposta, consigliata)), None)
+def _alternative(consigliata: "str | None", proposta: str, secondo: "str | None") -> dict:
     opzioni = []
     for o in (consigliata, proposta, secondo, NESSUNO):
         if o and o not in opzioni:
             opzioni.append(o)
-    return {"proposta": proposta, "consigliata": consigliata,
-            "alternative": opzioni[1:], "catene": {o: _catena(o) for o in opzioni}}
+    # senza consigliata le opzioni sono tutte alternative: nessuna è messa avanti
+    alt = opzioni[1:] if consigliata else opzioni
+    return {"alternative": alt, "catene": {o: _catena(o) for o in opzioni}}
+
+
+def _opzioni(testo: str, tipo: str, scegli_, voti_) -> dict:
+    proposta = ia.predici(testo, scegli_)
+    v = voti_(testo)
+    ordine = sorted(v, key=lambda a: (-v[a], ia.PRIORITA.index(a) if a in ia.PRIORITA else 99))
+    # Un avviso del coordinatore o un resoconto di sottoagente non chiede lavoro (R4 di
+    # ADR-0154). Per i messaggi del DM la consigliata NON è la predizione dell'hook: sarebbe
+    # ancoraggio, perché la card mostrerebbe a Jfs proprio ciò che si misura. La mette
+    # l'annotatore cieco con ``annota``; fino ad allora resta vuota.
+    consigliata = None if tipo == "dm" else NESSUNO
+    secondo = next((a for a in ordine if a not in (proposta, consigliata)), None)
+    return {"proposta": proposta, "consigliata": consigliata, "secondo": secondo,
+            **_alternative(consigliata, proposta, secondo)}
 
 
 def _valida_in(messaggi) -> None:
@@ -175,8 +191,9 @@ def proponi(ingresso: Path, coda: Path, oro: Path = ia.ORO, oggi: "str | None" =
     sett = _leggi(p_sett) if p_sett.exists() else {
         "settimana": nome,
         "nota": "Casi da confermare per il set d'oro degli agenti (ADR-0154). «proposta» è la "
-                "predizione dell'hook; «consigliata» è la stessa, salvo «nessuno» per gli avvisi "
-                "del coordinatore e i resoconti dei sottoagenti. Si conferma con "
+                "predizione dell'hook; «consigliata» la mette un annotatore cieco, che non vede "
+                "la proposta (raccogli_casi_agenti.py cieco e annota), ed è «nessuno» per gli "
+                "avvisi del coordinatore e i resoconti dei sottoagenti. Si conferma con "
                 "raccogli_casi_agenti.py applica.",
         "casi": []}
     proposti, scartati = [], []
@@ -234,24 +251,80 @@ def card(sett: dict) -> str:
          "caso non si etichetta. Le risposte vanno in SCELTE.tsv, poi "
          "`python3 scripts/raccogli_casi_agenti.py applica "
          f"{sett['settimana']}.json SCELTE.tsv`.", "",
-         "La consigliata è la predizione dell'hook: è proprio ciò che si misura, quindi "
-         "conviene leggere il testo prima di guardarla.", ""]
+         "La consigliata viene da un annotatore cieco, che ha letto il testo e le regole della "
+         "cascata senza vedere la proposta dell'hook. Un caso «da annotare» non ha ancora "
+         "una consigliata.", ""]
     if not da:
         r += ["Nessun caso da confermare.", ""]
     for i, c in enumerate(da, 1):
         r += [f"## {i} · {c['id_messaggio']}", "",
               f"{c['fonte']} · {c['data']} · {c['tipo']}", "",
               "> " + _abbrevia(c["testo"]), "",
-              f"- **Consigliata: {c['consigliata']}** · catena: "
-              f"{_riga_catena(c['consigliata'], c['catene'])}",
+              (f"- **Consigliata: {c['consigliata']}** · catena: "
+               f"{_riga_catena(c['consigliata'], c['catene'])}" if c.get("consigliata")
+               else "- **Consigliata: da annotare** (manca l'annotatore cieco)"),
               f"- Proposta dell'hook: {c['proposta']}"]
         for a in c["alternative"]:
             r.append(f"- Alternativa: {a} · catena: {_riga_catena(a, c['catene'])}")
         r.append("")
     r += ["## Modello di SCELTE.tsv", "", "```tsv", "id_messaggio\tatteso\taccettabili\tazione"]
-    r += [f"{c['id_messaggio']}\t{c['consigliata']}\t\ttieni" for c in da]
+    r += [f"{c['id_messaggio']}\t{c.get('consigliata') or ''}\t\ttieni" for c in da]
     r += ["```", ""]
     return "\n".join(r)
+
+
+def _da_annotare(sett: dict) -> "list[dict]":
+    return [c for c in sett["casi"] if c.get("stato") == "da confermare" and c["tipo"] == "dm"]
+
+
+def cieco(settimana: Path) -> Path:
+    """Scrive per l'annotatore cieco id e testo dei casi del DM, senza la proposta dell'hook."""
+    settimana = Path(settimana)
+    sett = _leggi(settimana)
+    uscita = settimana.with_name(f"CIECO-{settimana.stem}.tsv")
+    righe = ["id_messaggio\ttesto"]
+    righe += [f"{c['id_messaggio']}\t{' '.join(c['testo'].split())}" for c in _da_annotare(sett)]
+    uscita.write_text("\n".join(righe) + "\n", encoding="utf-8")
+    print(f"{len(righe) - 1} casi da annotare alla cieca in {uscita}: l'annotatore legge "
+          f"solo questo file e GUIDA-AGENTI-E-CASCATE, poi scrive id_messaggio<TAB>etichetta")
+    return uscita
+
+
+def annota(settimana: Path, annotazioni: Path) -> int:
+    """La consigliata dall'annotatore cieco; stampa l'accordo con l'hook. 1 se non torna."""
+    import eval_metriche as em
+    settimana = Path(settimana)
+    sett = _leggi(settimana)
+    per_id = {c["id_messaggio"]: c for c in sett["casi"] if c.get("stato") == "da confermare"}
+    errori, scelte = [], {}
+    for n, riga in enumerate(Path(annotazioni).read_text(encoding="utf-8").splitlines(), 1):
+        campi = [x.strip() for x in riga.split("\t")]
+        if not campi[0] or (n == 1 and campi[0] == "id_messaggio"):
+            continue
+        if len(campi) < 2 or campi[1] not in ETICHETTE:
+            errori.append(f"riga {n}: etichetta «{campi[1] if len(campi) > 1 else ''}» "
+                          f"non è un agente né «{NESSUNO}»")
+        elif campi[0] not in per_id:
+            errori.append(f"riga {n}: «{campi[0]}» non è un caso da confermare")
+        else:
+            scelte[campi[0]] = campi[1]
+    if errori:
+        print("\n".join(f"✗ annota: {e}" for e in errori))
+        return 1
+    for id_, etichetta in scelte.items():
+        c = per_id[id_]
+        c["consigliata"], c["annotatore"] = etichetta, "cieco"
+        c.update(_alternative(etichetta, c["proposta"], c.get("secondo")))
+    _scrivi_json(settimana, sett)
+    settimana.with_name("CARD.md").write_text(card(sett), encoding="utf-8")
+    if scelte:
+        cieche = list(scelte.values())
+        hook = [per_id[i]["proposta"] for i in scelte]
+        k = sum(a == b for a, b in zip(cieche, hook))
+        kappa = em.kappa_cohen(cieche, hook)
+        print(f"{len(scelte)} consigliate dall'annotatore cieco; accordo hook-cieco "
+              f"{k}/{len(scelte)}, kappa di Cohen {kappa:.3f}")
+    return 0
 
 
 def _leggi_scelte(p: Path) -> "list[tuple[str, str, list[str], str]]":
@@ -352,7 +425,8 @@ def applica(settimana: Path, scelte: Path, oro: Path = ia.ORO, oggi: "str | None
                          f"{oggi}, entrati {len(nuovi)} casi confermati da Jfs; è cambiato il "
                          f"set, non l'hook (prima sul test giusti {p['giusti']}/{p['n']}, "
                          f"indulgenti {p['giusti_indulgenti']}/{p['n']}, macro-F1 "
-                         f"{p['macro_f1']}).")
+                         f"{p['macro_f1']}). Il tetto si rimette solo con applica, che misura "
+                         f"l'hook invariato sul set nuovo: a mano non si abbassa.")
             _scrivi_json(tmp, dati)
             err = controlla_forma(tmp)
             if err:
@@ -458,6 +532,11 @@ def main(argv: "list[str] | None" = None) -> int:
     p = sub.add_parser("proponi", parents=[comuni], help="le proposte della settimana")
     p.add_argument("ingresso", type=Path, help="IN.json, i messaggi esportati dalla routine")
     p.add_argument("--coda", type=Path, required=True, help="la cartella della coda")
+    c_ = sub.add_parser("cieco", help="id e testo per l'annotatore cieco, senza la proposta")
+    c_.add_argument("settimana", type=Path, help="DIR/AAAA-Www.json")
+    n_ = sub.add_parser("annota", help="le consigliate dall'annotatore cieco")
+    n_.add_argument("settimana", type=Path, help="DIR/AAAA-Www.json")
+    n_.add_argument("annotazioni", type=Path, help="id_messaggio<TAB>etichetta")
     a_ = sub.add_parser("applica", parents=[comuni], help="i casi confermati nel set d'oro")
     a_.add_argument("settimana", type=Path, help="DIR/AAAA-Www.json")
     a_.add_argument("scelte", type=Path, help="SCELTE.tsv")
@@ -477,6 +556,11 @@ def main(argv: "list[str] | None" = None) -> int:
             print(f"ingresso malformato: {e}", file=sys.stderr)
             return 2
         return 0
+    if a.comando == "cieco":
+        cieco(a.settimana)
+        return 0
+    if a.comando == "annota":
+        return annota(a.settimana, a.annotazioni)
     if a.comando == "applica":
         return applica(a.settimana, a.scelte, oro=a.oro, oggi=a.oggi)
     ap.print_help()

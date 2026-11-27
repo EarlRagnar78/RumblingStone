@@ -129,7 +129,8 @@ class TestProponi(_Base):
         d = json.loads(settimana.read_text(encoding="utf-8"))
         c2 = next(c for c in d["casi"] if c["id_messaggio"] == "m2")
         self.assertEqual(c2["proposta"], "cartografo")
-        self.assertEqual(c2["consigliata"], "cartografo")
+        # la consigliata non è la predizione dell'hook (ancoraggio): aspetta l'annotatore cieco
+        self.assertIsNone(c2["consigliata"])
         self.assertEqual(c2["stato"], "da confermare")
         self.assertIn("nessuno", c2["alternative"])
         self.assertEqual(c2["catene"]["cartografo"], list(ia.CATENE["cartografo"]))
@@ -138,7 +139,7 @@ class TestProponi(_Base):
         self.assertEqual(c6["consigliata"], "nessuno")
         card = (self.coda / "CARD.md").read_text(encoding="utf-8")
         self.assertIn("m2", card)
-        self.assertIn("cartografo", card)
+        self.assertIn("da annotare", card)
         self.assertIn("→", card)
         self.assertNotIn("a.b@example.org", card)
 
@@ -148,7 +149,8 @@ class TestProponi(_Base):
                                oro=self.oro, oggi="2026-11-30", **self.kw)
         c = esito["proposti"][0]
         self.assertEqual(c["proposta"], "sviluppatore")
-        self.assertEqual(c["alternative"], ["autore-documenti", "nessuno"])
+        # senza consigliata nessuna opzione è messa avanti: la proposta è fra le alternative
+        self.assertEqual(c["alternative"], ["sviluppatore", "autore-documenti", "nessuno"])
         self.assertEqual(set(c["catene"]), {"sviluppatore", "autore-documenti", "nessuno"})
 
     def test_coda_esistente_non_ripete(self) -> None:
@@ -169,6 +171,67 @@ class TestProponi(_Base):
                 contextlib.redirect_stderr(io.StringIO()):
             self.assertEqual(rc.main(["proponi", str(p), "--coda", str(self.coda),
                                       "--oro", str(self.oro)]), 2)
+
+
+class TestCieco(_Base):
+    """La consigliata viene da un annotatore che non vede la predizione dell'hook."""
+
+    def _proponi(self, msg: "list[dict]") -> Path:
+        with contextlib.redirect_stdout(io.StringIO()):
+            rc.proponi(self._in(msg), self.coda, oro=self.oro, oggi="2026-11-30", **self.kw)
+        return self.coda / "2026-W49.json"
+
+    def _tsv(self, righe: "list[str]") -> Path:
+        p = self.dir / "ANNOTAZIONI.tsv"
+        p.write_text("id_messaggio\tetichetta\n" + "\n".join(righe) + "\n", encoding="utf-8")
+        return p
+
+    def test_cieco_non_mostra_la_proposta(self) -> None:
+        sett = self._proponi([self._msg("m2", "disegna la mappa del forte"),
+                              self._msg("m6", "Avviso: fatto", "coordinatore")])
+        with contextlib.redirect_stdout(io.StringIO()):
+            uscita = rc.cieco(sett)
+        testo = uscita.read_text(encoding="utf-8")
+        self.assertIn("m2", testo)
+        self.assertIn("disegna la mappa del forte", testo)
+        self.assertNotIn("cartografo", testo)
+        self.assertNotIn("m6", testo)   # «nessuno» per regola: non serve annotarlo
+
+    def test_annota_mette_la_consigliata_e_misura_l_accordo(self) -> None:
+        sett = self._proponi([self._msg("m2", "disegna la mappa del forte"),
+                              self._msg("m7", "riscrivi il box del ponte"),
+                              self._msg("m8", "sistema la ci del ramo")])
+        out = io.StringIO()
+        with contextlib.redirect_stdout(out):
+            esito = rc.annota(sett, self._tsv(["m2\tcartografo", "m7\tautore-master",
+                                               "m8\tsviluppatore"]))
+        self.assertEqual(esito, 0)
+        d = json.loads(sett.read_text(encoding="utf-8"))
+        per_id = {c["id_messaggio"]: c for c in d["casi"]}
+        self.assertEqual(per_id["m7"]["consigliata"], "autore-master")
+        self.assertEqual(per_id["m7"]["annotatore"], "cieco")
+        self.assertIn("autore-prosa-gioco", per_id["m7"]["alternative"])
+        self.assertIn("autore-master", per_id["m7"]["catene"])
+        self.assertIn("accordo hook-cieco 2/3", out.getvalue())
+        self.assertIn("kappa", out.getvalue())
+        card = (self.coda / "CARD.md").read_text(encoding="utf-8")
+        self.assertIn("Consigliata: autore-master", card)
+        self.assertIn("m7\tautore-master", card)
+
+    def test_annota_rifiuta_etichetta_o_id_sconosciuti(self) -> None:
+        sett = self._proponi([self._msg("m2", "disegna la mappa del forte")])
+        prima = sett.read_text(encoding="utf-8")
+        for righe in (["m2\tmago"], ["m99\tcartografo"]):
+            with contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(rc.annota(sett, self._tsv(righe)), 1)
+            self.assertEqual(sett.read_text(encoding="utf-8"), prima)
+
+    def test_riga_di_comando(self) -> None:
+        sett = self._proponi([self._msg("m2", "disegna la mappa del forte")])
+        with contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(rc.main(["cieco", str(sett)]), 0)
+            self.assertEqual(rc.main(["annota", str(sett),
+                                      str(self._tsv(["m2\tcartografo"]))]), 0)
 
 
 class TestApplica(_Base):
@@ -211,6 +274,7 @@ class TestApplica(_Base):
                          (v["giusti"], v["giusti_indulgenti"], v["macro_f1"]["frazione"]))
         self.assertIn("2026-12-01", t["nota"])
         self.assertIn("non l'hook", t["nota"])
+        self.assertIn("a mano non si abbassa", t["nota"])
         self.assertEqual(ia.controlla(self.oro, scegli_=self._scegli)[0], 0)
         out = buf.getvalue()
         self.assertIn("prima", out)

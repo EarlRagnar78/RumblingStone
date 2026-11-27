@@ -16,7 +16,10 @@ riassumi in italiano, in poche righe:
 2. i filoni in corso, con le PR e il passo dopo;
 3. ciò che sta «Senza filone» (PR, rami, cartelle): proponi a quale filone
    attaccarlo o se chiuderlo, senza cambiare il registro da solo;
-4. ciò che è «Da aggiornare o ferme».
+4. ciò che è «Da aggiornare o ferme»;
+5. dalla sezione «Canali della piattaforma (ADR-0099)», i componenti in
+   `testing` e da quando, con quelli vicini al passaggio a stable (14 giorni e
+   10 run su `main`, poi l'ok del DM), e i filoni che dichiarano un canale.
 
 Non modificare la pagina a mano: si corregge `plans/lavoro-in-corso.json`,
 poi `python3 scripts/lavoro_in_corso.py --check` e si rigenera. Ciò che è già

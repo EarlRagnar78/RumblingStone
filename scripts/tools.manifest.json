@@ -8934,7 +8934,7 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/lavoro_in_corso.py [--fetch] [--offline] [--stdout|--json] | --check",
-      "summary": "L'istantanea dal vivo del lavoro in sviluppo fuori da main, complementare a MEMORIA.md (che resta il cancello deterministico di ciò che è su main). Legge il registro curato plans/lavoro-in-corso.json (filoni con thread, PR, rami, cartelle condivise, che cosa aspettano, il passo dopo), le PR aperte dalla REST di GitHub o da --pr-json (formato REST o gh pr list --json), i rami di origin e le cartelle di primo livello di /mnt/project-files (solo nome, data e primo titolo del LEGGIMI). Attacca una PR a un filone per numero, ramo o thread=cmsg_… nel corpo; segnala PR, rami claude/* recenti e cartelle senza filone, PR del registro non più aperte, PR ferme da oltre 30 giorni e filoni non aggiornati da 14. Scrive plans/LAVORO-IN-CORSO.md. --check valida solo il registro, offline.",
+      "summary": "L'istantanea dal vivo del lavoro in sviluppo fuori da main, complementare a MEMORIA.md (che resta il cancello deterministico di ciò che è su main). Legge il registro curato plans/lavoro-in-corso.json (filoni con thread, PR, rami, cartelle condivise, che cosa aspettano, il passo dopo), le PR aperte dalla REST di GitHub o da --pr-json (formato REST o gh pr list --json), i rami di origin e le cartelle di primo livello di /mnt/project-files (solo nome, data e primo titolo del LEGGIMI). Attacca una PR a un filone per numero, ramo o thread=cmsg_… nel corpo; segnala PR, rami claude/* recenti e cartelle senza filone, PR del registro non più aperte, PR ferme da oltre 30 giorni e filoni non aggiornati da 14. Conta anche i canali di ADR-0099 (stable, testing, unstable…) dalle tabelle di §2 di plans/PIANO-PIATTAFORMA-DI-SVILUPPO.md, scritte a mano fino al lotto P1, e il campo facoltativo canale dei filoni. Scrive plans/LAVORO-IN-CORSO.md. --check valida solo il registro, offline.",
       "use_case": "«Che lavoro c'è in sviluppo, dove sta (PR, rami, cartelle dei thread) e che cosa aspetta me?»",
       "stability": "beta",
       "stdlib_only": true,
@@ -9026,6 +9026,12 @@
         {
           "path": "plans/contenuti-nei-rami.json",
           "kind": "json",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "plans/PIANO-PIATTAFORMA-DI-SVILUPPO.md",
+          "kind": "markdown",
           "required": false,
           "schema": null
         },

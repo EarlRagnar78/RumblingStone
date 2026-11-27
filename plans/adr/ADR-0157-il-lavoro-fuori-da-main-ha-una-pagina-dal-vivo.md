@@ -43,6 +43,11 @@ Il DM lavora anche dal suo PC, con Claude Code CLI o con OpenCode. Lì
 5. **La routine del lunedì** lancia `lavoro_in_corso.py --fetch`, attacca a un
    filone o chiude ciò che sta «Senza filone», aggiorna stato e passo dei
    filoni e porta il registro su una PR.
+6. **La pagina mostra i canali di ADR-0099**: conteggio per canale e tabella
+   dei componenti in testing e unstable, letti dalle tabelle di §2 di
+   `PIANO-PIATTAFORMA-DI-SVILUPPO.md` in una funzione sola, che il lotto P1
+   sostituirà con `binari.py --canali`; un filone può dichiarare il suo
+   `canale` (richiesta di Jfs del 27/11).
 
 ## Alternative considerate
 
@@ -59,7 +64,7 @@ Il DM lavora anche dal suo PC, con Claude Code CLI o con OpenCode. Lì
 La prima pagina vera, del 27/11: 8 filoni; 4 PR aperte senza filone (#543
 #537 #519 #459); 3 rami `claude/*` recenti senza PR né posto; 28 cartelle
 condivise recenti senza filone su 94. Su main prima non c'era nessuna pagina
-del lavoro fuori da main. 22 test in `scripts/tests/test_lavoro_in_corso.py`.
+del lavoro fuori da main. 25 test in `scripts/tests/test_lavoro_in_corso.py`.
 
 Quello che si paga:
 

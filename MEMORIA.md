@@ -84,7 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
-| 2026-11-27 | PIATTAFORMA-DI-SVILUPPO | Il lavoro fuori da main ha una pagina dal vivo (ADR-0157, domande di Jfs del 27… | 🟡 22 test; pagina del 27/11: 8 filoni, 4 PR senza filone (#543 #537 #519 #459), 3 rami `claude/*` senza posto, 28 cartelle condivise recenti senza filone su 94… |
+| 2026-11-27 | PIATTAFORMA-DI-SVILUPPO | Il lavoro fuori da main ha una pagina dal vivo (ADR-0157, domande di Jfs del 27… | 🟡 25 test; pagina del 27/11: 8 filoni, canali 36 stable · 19 testing · 11 unstable, 4 PR senza filone (#543 #537 #519 #459), 3 rami `claude/*` senza posto, 28… |
 | 2026-11-27 | LEVEL-DESIGN-E-INQUADRATURA | D4, igiene IP dei prompt versionati (scelta di Jfs sulla card dell'audit settim… | 🟡 57 righe con opere protette in 12 file → 0 (l'audit ne contava 31, il piano 10 in 7: artisti e compositori non contati); 128 righe aggiunte e 91 tolte; resta… |
 | 2026-11-27 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Le due frasi oscure che il DM aveva segnalato nel cieco A sul ritmo (MS-0231),… | ✅ `cricchetto_prosa --rispetto-a origin/main` 0 peggiorati; `ciclo_prosa misura` 1 → 1 (DEF-1) e 0 → 0 (DEF-2). Non controllate fedeltà NLI e ripetizioni con e… |
 | 2026-11-27 | REGOLE-SENZA-OMISSIONI | Palio: un solo rapimento del fantino a notte (card di Jfs del 27/11 «Si escludo… | ✅ misura_stampa del Palio entro i tetti |

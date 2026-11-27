@@ -259,5 +259,97 @@ class TestRemoto(unittest.TestCase):
             self.assertEqual(L.owner_repo_da_url(url), ("o", "r"))
 
 
+PIANO_FINTO = """# Piano
+
+## §1 · Prima
+
+| Componente | Canale |
+|---|---|
+| fuori | **testing** |
+
+## §2 · Il censimento
+
+### Strumenti
+
+| Componente | Versione | Canale proposto |
+|---|---|---|
+| ruff | 0.16.9 | **stable** dal 2026-11-08 (P3) |
+| shellcheck | del runner | **testing** (`|| true`); stable con A6 |
+| custode (`--hook-merge`) | stdlib | **testing** dal 2026-11-27: il merge si ferma |
+| mypy | 2.3.1 | **unstable**, non si adotta |
+| `compileall` | stdlib | **uscito** dalla CI il 2026-11-08 |
+| pre-commit | — | **non si adotta** |
+| `import fitz` | — | da migrare a `import pymupdf` |
+
+### Le pipeline
+
+| Pipeline | Componenti | Stato |
+|---|---|---|
+| booklet | Chromium | testing in PDF |
+
+## §3 · Lotti
+
+| x | **testing** |
+|---|---|
+"""
+
+
+class TestCanali(unittest.TestCase):
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.piano = Path(self._tmp.name) / "PIANO.md"
+        self.piano.write_text(PIANO_FINTO, encoding="utf-8")
+
+    def tearDown(self):
+        self._tmp.cleanup()
+
+    def test_righe_canali_e_date(self):
+        righe = L.canali_piattaforma(self.piano)
+        per = {r["componente"]: r for r in righe}
+        self.assertEqual([r["componente"] for r in righe],
+                         ["ruff", "shellcheck", "custode (`--hook-merge`)", "mypy",
+                          "`compileall`", "pre-commit", "`import fitz`", "booklet"])
+        self.assertEqual((per["ruff"]["canale"], per["ruff"]["dal"]), ("stable", "2026-11-08"))
+        self.assertEqual((per["shellcheck"]["canale"], per["shellcheck"]["dal"]), ("testing", None))
+        self.assertIn("|| true", per["shellcheck"]["stato"])       # il codice non spezza la cella
+        self.assertEqual(per["custode (`--hook-merge`)"]["dal"], "2026-11-27")
+        self.assertEqual(per["mypy"]["canale"], "unstable")
+        self.assertEqual(per["`compileall`"]["canale"], "uscito")
+        self.assertEqual(per["pre-commit"]["canale"], "non-si-adotta")
+        self.assertEqual(per["`import fitz`"]["canale"], "altro")
+        self.assertEqual(per["booklet"]["canale"], "testing")
+        self.assertEqual(per["booklet"]["sezione"], "Le pipeline")
+        self.assertEqual(self.piano.read_text().splitlines()[per["ruff"]["riga"] - 1].split("|")[1].strip(),
+                         "ruff")
+
+    def test_piano_assente(self):
+        self.assertIsNone(L.canali_piattaforma(Path(self._tmp.name) / "no.md"))
+
+    def test_sezione_nella_pagina_e_nel_json(self):
+        canali = L.canali_piattaforma(self.piano)
+        r = L.rapporto(_registro(canale="testing"), [], None, [], [], {}, ORA_DT, 14,
+                       canali=canali)
+        self.assertEqual(r["canali"]["conteggio"], {"stable": 1, "testing": 3, "unstable": 1,
+                                                    "uscito": 1, "non-si-adotta": 1, "altro": 1})
+        md = L.pagina(r)
+        self.assertIn("## Canali della piattaforma (ADR-0099)", md)
+        self.assertIn("shellcheck", md)
+        self.assertIn("mypy", md)
+        self.assertNotIn("| ruff |", md)
+        self.assertIn("Gli stable sono 1", md)
+        self.assertIn("scritta a mano", md)
+        self.assertIn("| `testing` |", md)                       # colonna canale dei filoni
+
+    def test_canale_del_filone_validato(self):
+        self.assertEqual(L.valida(_registro(canale="testing", repo=[]), ROOT), [])
+        self.assertEqual(L.valida(_registro(canale="", repo=[]), ROOT), [])
+        errori = L.valida(_registro(canale="beta", repo=[]), ROOT)
+        self.assertTrue(any("canale" in e for e in errori))
+
+    def test_piano_vero_si_legge(self):
+        righe = L.canali_piattaforma()
+        self.assertTrue(righe and any(r["canale"] == "testing" for r in righe))
+
+
 if __name__ == "__main__":
     unittest.main()

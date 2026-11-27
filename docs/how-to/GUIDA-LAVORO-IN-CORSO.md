@@ -11,7 +11,7 @@ una pagina generata dal registro curato
 
 ## 1. Leggere la pagina
 
-La pagina ha quattro parti:
+La pagina ha cinque parti:
 
 - **Filoni**: un filone per riga, con stato, PR, rami, cartelle condivise,
   thread, che cosa aspetta e il passo dopo. Lo stato `aspetta-jfs` è quello
@@ -20,9 +20,29 @@ La pagina ha quattro parti:
   recenti che il registro non nomina. Vanno attaccati a un filone o chiusi;
 - **Da aggiornare o ferme**: PR del registro non più aperte, PR ferme da oltre
   30 giorni, filoni con l'ultimo aggiornamento più vecchio di 14 giorni;
+- **Canali della piattaforma (ADR-0099)**: quanti componenti stanno in ogni
+  canale e la tabella di quelli in `testing` e `unstable` (sezione 1-bis);
 - **Dove guardare**: gli altri posti del lavoro.
 
 La data in testa dice quando è stata fatta. Se è vecchia, si rigenera.
+
+## 1-bis. I canali della piattaforma
+
+Un componente nuovo (libreria, binario, cancello di CI) entra in `unstable`,
+passa a `testing` con la versione fissata, la CI non bloccante e la misura
+prima e dopo, e sale a `stable` dopo 14 giorni e 10 run su `main` con l'ok del
+DM ([ADR-0099](../../plans/adr/ADR-0099-la-piattaforma-ha-tre-canali-come-debian.md)).
+La pagina legge il canale dall'ultima colonna delle tabelle di §2 di
+[`PIANO-PIATTAFORMA-DI-SVILUPPO.md`](../../plans/PIANO-PIATTAFORMA-DI-SVILUPPO.md):
+la prima parola della cella dà il canale, la data «dal AAAA-MM-GG» l'ingresso,
+e ogni riga della tabella porta il link alla sua riga del piano. Quelle
+tabelle sono scritte a mano: per spostare un componente di canale si corregge
+il piano, poi si rigenera la pagina. Quando il lotto P1 del piano porterà il
+canale in `binari.py`, la fonte cambierà in una funzione sola
+(`canali_piattaforma`).
+
+Un filone può dichiarare il suo canale nel registro, con il campo facoltativo
+`canale` (`stable`, `testing` o `unstable`); `--check` rifiuta gli altri valori.
 
 ## 2. Rigenerarla dal PC del DM
 

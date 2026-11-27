@@ -20,7 +20,10 @@ Le fonti, ognuna con la sua casa:
   porta `thread=cmsg_…` uguale al `thread_id` del filone;
 * i rami di `origin` (`git for-each-ref`), con la data dell'ultimo commit;
 * le cartelle di primo livello della cartella condivisa (`--mnt`), con il primo
-  titolo del loro LEGGIMI.md o README.md. Mai il contenuto dei file.
+  titolo del loro LEGGIMI.md o README.md. Mai il contenuto dei file;
+* il canale di ogni componente della piattaforma (ADR-0099), dalle tabelle di
+  §2 di `plans/PIANO-PIATTAFORMA-DI-SVILUPPO.md`, scritte a mano finché il
+  lotto P1 non porta il canale in `binari.py` (`canali_piattaforma`).
 
 La pagina segnala cosa non ha un posto (PR, rami `claude/*` recenti, cartelle
 recenti) e cosa va aggiornato (PR del registro non più aperte, PR ferme da oltre
@@ -67,6 +70,7 @@ RADICE = Path(__file__).resolve().parent.parent
 REGISTRO = RADICE / "plans" / "lavoro-in-corso.json"
 CONTENUTI = RADICE / "plans" / "contenuti-nei-rami.json"
 USCITA = RADICE / "plans" / "LAVORO-IN-CORSO.md"
+PIANO_PIATTAFORMA = RADICE / "plans" / "PIANO-PIATTAFORMA-DI-SVILUPPO.md"
 MNT = Path("/mnt/project-files")
 
 GIORNI = 14        # finestra dei rami e delle cartelle, ed età massima di un filone
@@ -81,7 +85,14 @@ STATI = {
     "fermo": "nessuno ci lavora: da riprendere, chiudere o portare",
 }
 
-CAMPI_TESTO = ("id", "titolo", "stato", "thread", "aspetta", "prossimo", "aggiornato")
+CAMPI_TESTO = ("id", "titolo", "stato", "thread", "aspetta", "prossimo", "aggiornato", "canale")
+
+#: I canali di ADR-0099 che un filone può dichiarare (facoltativo; vuoto = non si sa).
+CANALI_FILONE = ("stable", "testing", "unstable")
+#: I canali in cui si normalizza l'ultima colonna delle tabelle di §2, nell'ordine della pagina.
+CANALI = ("stable", "testing", "unstable", "uscito", "non-si-adotta", "altro")
+_CANALE_RE = re.compile(r"^\W*(stable|testing|unstable|uscito|non si adotta)\b", re.I)
+_DAL_RE = re.compile(r"\bdal (\d{4}-\d{2}-\d{2})\b")
 CAMPI_LISTA = ("pr", "rami", "mnt", "repo")
 OBBLIGATORI = ("id", "titolo", "stato", "aggiornato")
 
@@ -170,6 +181,10 @@ def valida(dati: object, radice: Path = RADICE) -> "list[str]":
         testo = json.dumps(f, ensure_ascii=False)
         if EMAIL.search(testo):
             errori.append(f"{nome}: contiene un indirizzo email (niente dati personali)")
+    for f in filoni:
+        if isinstance(f, dict) and f.get("canale") not in (None, "", *CANALI_FILONE):
+            errori.append(f"{f.get('id') or '?'}: canale «{f['canale']}» non ammesso "
+                          f"({', '.join(CANALI_FILONE)}, o vuoto)")
     if "stati" in dati and set(dati["stati"] or {}) != set(STATI):
         errori.append("«stati» del registro diversi da STATI dello script "
                       f"({', '.join(STATI)}): uno stato nuovo si aggiunge in tutti e due")
@@ -177,6 +192,89 @@ def valida(dati: object, radice: Path = RADICE) -> "list[str]":
         if not (isinstance(s, dict) and s.get("cartella") and s.get("perche")):
             errori.append(f"servizio {i}: serve {{\"cartella\", \"perche\"}}")
     return errori
+
+
+# --- i canali della piattaforma (ADR-0099) -----------------------------------
+
+def _celle(riga: str) -> "list[str]":
+    """Le celle di una riga di tabella: un «|» dentro il codice o scritto «\\|» non spezza."""
+    celle, cur, codice, i = [], "", False, 0
+    corpo = riga.strip()
+    corpo = corpo[1:] if corpo.startswith("|") else corpo
+    while i < len(corpo):
+        c = corpo[i]
+        if c == "\\" and i + 1 < len(corpo) and corpo[i + 1] == "|":
+            cur += "|"
+            i += 2
+            continue
+        if c == "`":
+            codice = not codice
+        if c == "|" and not codice:
+            celle.append(cur.strip())
+            cur = ""
+        else:
+            cur += c
+        i += 1
+    if cur.strip():
+        celle.append(cur.strip())
+    return celle
+
+
+def _canale(cella: str) -> str:
+    m = _CANALE_RE.match(cella.replace("*", ""))
+    return m.group(1).lower().replace(" ", "-") if m else "altro"
+
+
+def canali_piattaforma(piano: "Path | None" = None) -> "list[dict] | None":
+    """Il canale di ogni componente, dalle tabelle di §2 di PIANO-PIATTAFORMA-DI-SVILUPPO.
+
+    È l'UNICA lettura della fonte: oggi tabelle scritte a mano; quando il lotto P1
+    del piano porta il canale in `binari.py`, si sostituisce questa funzione con
+    `binari.py --canali` e il resto non cambia. Offline e deterministica.
+    Il canale è la prima parola dell'ultima colonna («stable in HTML, testing in
+    PDF» conta stable); ciò che non comincia con un canale è «altro».
+    None se il piano non c'è.
+    """
+    p = piano or PIANO_PIATTAFORMA
+    try:
+        righe = p.read_text(encoding="utf-8").splitlines()
+    except OSError:
+        return None
+    fuori, dentro, sezione, intestazione = [], False, "", False
+    for n, riga in enumerate(righe, 1):
+        if riga.startswith("## "):
+            dentro = riga.startswith("## §2")
+            continue
+        if not dentro:
+            continue
+        if riga.startswith("### "):
+            sezione, intestazione = riga[4:].strip(), True
+            continue
+        if not riga.lstrip().startswith("|"):
+            intestazione = True
+            continue
+        if intestazione:                       # la riga dei nomi delle colonne
+            intestazione = False
+            continue
+        celle = _celle(riga)
+        if len(celle) < 2 or re.fullmatch(r"[-: ]+", celle[0] or "-"):
+            continue
+        ultima = celle[-1]
+        m = _DAL_RE.search(ultima)
+        fuori.append({"componente": celle[0], "sezione": sezione, "canale": _canale(ultima),
+                      "dal": m.group(1) if m else None,
+                      "stato": " ".join(ultima.replace("**", "").split()), "riga": n})
+    return fuori
+
+
+def riassunto_canali(righe: "list[dict] | None") -> "dict | None":
+    if righe is None:
+        return None
+    conteggio = {c: 0 for c in CANALI}
+    for r in righe:
+        conteggio[r["canale"]] += 1
+    return {"fonte": PIANO_PIATTAFORMA.relative_to(RADICE).as_posix(), "conteggio": conteggio,
+            "righe": righe}
 
 
 # --- le PR --------------------------------------------------------------------
@@ -321,7 +419,7 @@ def _giorni(da: "str | None", ora: datetime) -> "int | None":
 
 def rapporto(registro: dict, prs_grezze: "list | None", pr_errore: "str | None",
              rami: "list[dict]", cart: "list[dict] | None", contenuti: dict,
-             ora: datetime, giorni: int = GIORNI) -> dict:
+             ora: datetime, giorni: int = GIORNI, canali: "list[dict] | None" = None) -> dict:
     filoni = registro.get("filoni", [])
     servizio = {s["cartella"] for s in registro.get("servizio", []) if isinstance(s, dict)}
     prs = normalizza_pr(prs_grezze) if prs_grezze is not None else None
@@ -391,6 +489,7 @@ def rapporto(registro: dict, prs_grezze: "list | None", pr_errore: "str | None",
         },
         "da_aggiornare": {"pr_chiuse": pr_chiuse, "pr_ferme": pr_ferme,
                           "filoni_vecchi": filoni_vecchi},
+        "canali": riassunto_canali(canali),
     }
 
 
@@ -411,6 +510,28 @@ def _pr_cella(p: dict) -> str:
     g = "?" if g is None else ("oggi" if g == 0 else f"{g} g fa")
     via = " (dal thread)" if p.get("via_thread") else ""
     return f"[#{p['numero']}]({p['url']}) {stato}, {g}{via}" if p["url"] else f"#{p['numero']} {stato}, {g}{via}"
+
+
+def _sezione_canali(c: "dict | None") -> "list[str]":
+    out = ["## Canali della piattaforma (ADR-0099)", ""]
+    if c is None:
+        return out + ["Non letti: il piano della piattaforma non c'è in questo clone.", ""]
+    nome = Path(c["fonte"]).name
+    out += [f"Il canale di ogni componente viene da `{c['fonte']}` §2: per ora la fonte è",
+            "scritta a mano, finché il lotto P1 del piano non porta il canale in",
+            "`binari.py`. unstable, poi testing (versione fissata, CI non bloccante,",
+            "misura prima e dopo), poi stable dopo 14 giorni e 10 run su `main` con",
+            "l'ok del DM.", "",
+            " · ".join(f"{k} **{v}**" for k, v in c["conteggio"].items()), ""]
+    vivi = [x for x in c["righe"] if x["canale"] in ("testing", "unstable")]
+    if vivi:
+        out += ["| Componente | Canale | Dal | Che cosa dice il piano | Riga |", "|---|---|---|---|---|"]
+        for x in sorted(vivi, key=lambda x: (CANALI.index(x["canale"]), x["riga"])):
+            out.append(f"| {_cella(x['componente'], 90)} | `{x['canale']}` | {x['dal'] or '—'} | "
+                       f"{_cella(x['stato'], 140)} | [{x['riga']}]({nome}#L{x['riga']}) |")
+        out.append("")
+    out += [f"Gli stable sono {c['conteggio']['stable']} e stanno nel piano, con le loro misure.", ""]
+    return out
 
 
 def pagina(r: dict) -> str:
@@ -434,8 +555,8 @@ def pagina(r: dict) -> str:
                 "> del DM): le cartelle elencate vengono dal registro, non da una misura.", ""]
 
     out += ["## Filoni", "",
-            "| Filone | Stato | PR | Rami | Cartelle condivise | Thread | Aspetta | Prossimo |",
-            "|---|---|---|---|---|---|---|---|"]
+            "| Filone | Stato | Canale | PR | Rami | Cartelle condivise | Thread | Aspetta | Prossimo |",
+            "|---|---|---|---|---|---|---|---|---|"]
     for f in r["filoni"]:
         if r["pr"] is None:
             prc = ", ".join(f"#{n}" for n in f.get("pr") or []) or "—"
@@ -444,6 +565,7 @@ def pagina(r: dict) -> str:
         out.append("| " + " | ".join([
             f"**{_cella(f['titolo'])}**<br>`{f['id']}`",
             f"`{f['stato']}`",
+            f"`{f['canale']}`" if f.get("canale") else "—",
             prc,
             _codici(f.get("rami") or []),
             _codici(f.get("mnt") or []),
@@ -492,6 +614,8 @@ def pagina(r: dict) -> str:
               for x in d["filoni_vecchi"]]
     out += (righe or ["Niente."]) + [""]
 
+    out += _sezione_canali(r.get("canali"))
+
     out += ["## Dove guardare", "",
             "- `MEMORIA.md`: ciò che è già su `main`, decisioni aperte e lista viva dei piani.",
             "- `plans/contenuti-nei-rami.json` e `python3 scripts/contenuti_nei_rami.py --fetch`:",
@@ -524,6 +648,7 @@ def main(argv: "list[str] | None" = None) -> int:
     ap.add_argument("--registro", type=Path, default=REGISTRO, help=argparse.SUPPRESS)
     ap.add_argument("--contenuti", type=Path, default=CONTENUTI, help=argparse.SUPPRESS)
     ap.add_argument("--radice", type=Path, default=RADICE, help=argparse.SUPPRESS)
+    ap.add_argument("--piano", type=Path, default=PIANO_PIATTAFORMA, help=argparse.SUPPRESS)
     ap.add_argument("--ora", default=None, help=argparse.SUPPRESS)
     args = ap.parse_args(argv)
 
@@ -570,7 +695,7 @@ def main(argv: "list[str] | None" = None) -> int:
     mnt = args.mnt if args.mnt is not None else (MNT if MNT.is_dir() else None)
     r = rapporto(registro, prs, errore, rami_remoti(args.radice),
                  cartelle(mnt, args.giorni, ora), leggi_contenuti(args.contenuti),
-                 ora, args.giorni)
+                 ora, args.giorni, canali=canali_piattaforma(args.piano))
 
     if args.json:
         print(json.dumps(r, ensure_ascii=False, indent=2))

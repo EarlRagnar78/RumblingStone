@@ -1718,6 +1718,9 @@ Il fantino è un mercenario: **corruttibile**. Durante la Cena:
   (Diplomazia: trattarlo da persona, non da strumento — molto Salvatore).
 - **Rapimento**: se la corruzione fallisce, i rivali tentano di **rapire** il fantino
   (combattimento urbano notturno, GS 10–11: 2–3 sicari + 1 mago di supporto).
+  Un solo rapimento a notte: lo fa chi arriva prima. Se i rivali hanno già preso il fantino,
+  i drow trovano la riserva o solo il cavallo (§3.3, MAPPE); se l'hanno preso i drow, i rivali
+  non tentano.
 - **Posta — Fantino fuggito o rapito dai rivali** →
   come per il rapimento dei drow (§3.3): se i PG non lo riprendono prima della corsa, corre il
   **fantino di riserva**, e quella notte dorme lui nella stalla, accanto al box, al posto del
@@ -1756,6 +1759,7 @@ invia **sicari drow** a Channathgate per **avvelenare** il cavallo dell'Istrice/
   - Fantino rapito →
     se i PG non lo riprendono prima della corsa, si corre con un fantino di riserva; se lo
     riprendono, vale «rapito e salvato» per l'Onore del Fantino (§5).
+    Un solo rapimento a notte: se i rivali l'hanno già preso (§3.2), qui non c'è.
   - **Catturare un drow vivo** → intel su **Fase 0 (Notte dei Drow)** di Rethmar e
     **−1 clock Sonjak** (INTEGRAZIONE §3.2).
   - Fallire del tutto → **+1 clock Sonjak**, e la coalizione parte demoralizzata.

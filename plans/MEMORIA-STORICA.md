@@ -2740,3 +2740,15 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `scripts/memoria_custode.py` · `scripts/mcp_server.py` · `scripts/tests/test_memoria_custode.py` · `scripts/tests/test_mcp_server.py` · `.claude/settings.json` · `.claude/agents/custode-memoria.md` · `.claude/agent-evals/ESITI.jsonl` · `AGENTS.md` · `plans/adr/ADR-0151-la-memoria-del-progetto-ha-uno-specchio-e-un-custode.md`
 - **Fuori dal repo:** `/mnt/project-files/memoria-storica-coda/creare-l-agente-custode-della-memoria.md` · `/mnt/project-files/memoria-storica-coda/allineare-i-nomi-alla-cannath-vale.md`
 - **Solo qui:** Il 1,0 delle prove viene da giudici corretti dopo aver visto le risposte, senza esecuzioni nuove: va confermato dalla prossima tornata. Restano fuori dall'hook il merge dall'interfaccia di GitHub e, perché il riconoscimento è lessicale, i merge lanciati da script esterni, alias o `eval`. Fuori dal repo: `MEMORY.md` da 15.324 a 12.178 byte (tetto 12.288), spostando testualmente le righe lunghe in due note nuove e in una nota esistente sul ramo di gruppo, con `verifica` verde a ogni passo; il custode ha trovato una riga tolta senza archivio fra le 06:17 e le 08:31 UTC in una nota sul vincolo delle skill di prosa (la riga su Codex e la #510), archiviata con `archivia`; la voce di coda sui nomi della Cannath Vale riportata alla forma (Data, ADR, Temi, Origine, Testo) a contenuto invariato, `memoria_coda --check` da 5 difetti a 0 (19 file, 34 voci). Il numero MS va rinumerato al merge se altri thread aggiungono voci.
+
+### MS-0244 · 2026-11-27 · Al Palio un solo rapimento del fantino a notte
+
+- **Data:** 2026-11-27
+- **PR:** —
+- **ADR:** ADR-0109
+- **Temi:** Palio fantino rapimento rivali drow stalla riserva notte
+- **Origine:** riga del 2026-11-27 «Palio: un solo rapimento del fantino a notte» in `plans/CHANGELOG.md`
+- **Testo:** MS-0233 lasciava aperta una domanda: il rapimento del fantino da parte dei rivali (GIORNO2 §3.2) e quello dei drow (§3.3) possono avvenire nella stessa notte? Card a Jfs del 2026-11-27, risposta alle 11:03 UTC: «Si escludono: chi arriva prima». Se i rivali hanno già preso il fantino, i drow trovano la riserva o solo il cavallo, come dicono già MAPPE e le card della #532 (MS-0241); se l'hanno preso i drow, i rivali non tentano. Marca CANONE in §3.2, rimando in §3.3, riga nel blocco storico, booklet del Palio rigenerato.
+- **Trovato nel repo:** `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md` · `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/homebrew/PALIO-BOOKLET.hb.md`
+- **Fuori dal repo:** —
+- **Solo qui:** Con questa scelta le domande sul fantino aperte da MS-0233 sono tutte chiuse. La griglia dei milestone del DM-MASTER-REFERENCE non ha una riga per il rapimento dei rivali: con un solo rapimento a notte non serve.

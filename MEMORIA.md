@@ -84,6 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-27 | REGOLE-SENZA-OMISSIONI | Palio: un solo rapimento del fantino a notte (card di Jfs del 27/11 «Si escludo… | ✅ misura_stampa del Palio entro i tetti |
 | 2026-11-27 | STATO-E-ORDINE | ADR-0151, correzioni dopo la #529 (richiesta di Jfs del 27/11, 08:29 UTC: «fai… | ✅ suite 3.639 passati e 19 saltati, `gate_locale --pre-push` 56 verdi, `tools_manifest --check` 156 conformi; hook su Bash mediana 46-54 ms (prima 42-47), merg… |
 | 2026-11-27 | MISURA-AGENTI-E-AUTOMATISMI | M2, emendamento «M2» di ADR-0154: gli omonimi dei trigger e i messaggi che non… | 🟡 M2 fatto; la tecnica 1 senza cricchetto finché manca un set di prompt grezzi; ogni `<relay>` tace anche quando apre lavoro; regex euristiche, «avventura» non… |
 | 2026-11-27 | REGOLE-SENZA-OMISSIONI | Il fantino nella stalla del Palio solo se è un PNG ancora lì (card di Jfs del 2… | ✅ misura_stampa del Palio entro i tetti |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-27 | REGOLE-SENZA-OMISSIONI | Il fantino nella mappa della stalla del Palio (card di Jfs del 27/11 «Nella sta… | ✅ misura_stampa del Palio entro i tetti, booklet rigenerato |
 | 2026-11-26 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Le quindici domande aperte dei pregen decise dal DM | INFERRED aperti 38 → 23 |
 | 2026-11-26 | REGOLE-SENZA-OMISSIONI | Grimjaw rinforzato e i quattro punti aperti della #523 (card di Jfs del 26/11).… | 🟡 rampa chiusa con Borin e Yrsa: ripiega 54, a 0 pf 19, un eroe a terra 73 (a 100 pf erano 53 · 27 · 67; accettato a 178: 62 · 8 · 82); `verifica_scheda.py` 0… |
-| 2026-11-26 | RICERCA-PROSA-PECULIARE | Cieco A sul ritmo della frase (card del DM del 19/11 «Solo A per ora»): 24 copp… | ✅ nessuna differenza dimostrata (13 a 7, soglia 14): non cambia niente |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 325 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 243 voci, l'ultima MS-0243 del 2026-11-27 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 244 voci, l'ultima MS-0244 del 2026-11-27 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

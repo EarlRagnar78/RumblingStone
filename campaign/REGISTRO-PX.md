@@ -8,6 +8,13 @@ Le decisioni del DM del 2026-11-05 sono in
 `plans/esperimenti/p16-inferred-2026-11-04/PX-DECISIONI.md`.
 <!-- /apparato -->
 
+<!-- apparato -->
+Su `main` questa copia è ferma al 2026-11-05, e resta perché la legge
+`scripts/verifica_px.py`. I numeri aggiornati del gruppo, dalla sessione 6 in
+poi, stanno nella stessa copia sul ramo `campaign-group-rumblingstone`: il
+giocato va sul ramo di gruppo (ADR-0156) `[CANONE — DM 2026-11-27, serata-30-11 n. 14]`.
+<!-- /apparato -->
+
 Colonne: PX a testa. Th = Thorik, To = Tordek, Ar = Artemis, He = Hella, Jo = Jorr (PNG).
 Le soglie sono quelle dell'SRD 3.5: 13° = 78.000, 14° = 91.000, 15° = 105.000.
 

@@ -144,7 +144,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 11 | Forza | 10 |
 | SCENA 11 | se il gancio prende, Forza | 25 |
 | SCENA 11 | aiuta, +2 a testa (aiutare, Forza | 10 |
-| SCENA 11 | 40 con armatura magica), soffio 16d4 | 31 |
+| SCENA 11 | armatura magica), contatto 13, soffio 16d4 | 31 |
 | SCENA 11 | Presenza | 26 |
 | SCENA 11 | m, pungiglione +10 con veleno Tempra | 17 |
 | SCENA 12 | Volontà | 20 |

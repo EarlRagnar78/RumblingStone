@@ -80,15 +80,11 @@
 > affrontare **all'alba il drago Skullcrusher**. Se falliscono, la fortezza
 > regge lo stesso, perché la profezia è già incisa: la salvano gli avi, e il
 > prezzo lo pagano loro.
-> Il gruppo di oggi non parte dal tramonto: riprende dalla notte, con 3 tacche
-> segnate sul foglio: si apre con Durin nel cortile, *«Quando uscite?»*, poi
-> gli acquisti al banco e la scelta fra fermarsi, dormire o uscire; chi vola
-> subito atterra alla tenda con Grask sveglio, tratta con Balvar o colpisce
-> Zog'tar, e la serata si ferma sull'esito del duello all'alba. L'ordine
-> della serata, chi parla per primo e la lista di lettura da un'ora stanno
-> nella regia della serata, il primo capitolo del booklet: per questo gruppo
-> vince su questo riquadro. La lista qui sotto è per chi prepara senza la
-> regia.
+> Un gruppo che riprende a metà dell'atto parte dal punto in cui si è fermato,
+> e quel punto sta nel log e nel registro del suo ramo di gruppo. L'ordine della
+> sua serata sta nella regia, il primo capitolo del suo booklet, e per quel
+> gruppo vince su questo riquadro `[CANONE — DM 2026-11-27, serata-30-11 n. 14]`. La lista qui sotto è per chi
+> prepara senza la regia.
 
 > 🗓️ **La vostra serata** — per il gruppo che riparte dalla notte del 372 `[CANONE — DM 2026-10-07, Q43]`.
 > **Senza la regia della serata, leggi solo questo, in quest'ordine, in un'ora e dieci minuti**: §4 «L'orologio della
@@ -212,14 +208,14 @@ Benedizioni ci sono ancora `[CANONE — DM 2026-10-19, giro 4 n. 3]`.
   indietro sulla stessa linea. Il PG nominato lo morde al round dopo, a +54
   (+50), e l'occultamento non lo salva. Il nome non lo chiede: lo ha sentito
   di notte attraverso il corno, o usa un epiteto `[CANONE — DM 2026-10-19]`.
-  Fra un turno e l'altro sta a circa 15 m (Scena 11, «La passata, il nome,
+  Fra un turno e l'altro sta a più di 18 m da tutti i PG col Vecchio `[CANONE — DM 2026-11-21]`, a circa 15 m con l'Adulto<!-- storico --> (fino al 2026-11-21: circa 15 m per tutti e due)<!-- /storico --> (Scena 11, «La passata, il nome,
   la prima paura»).
-- ***Fluttuare*** **una volta sola**, a ⅓ dei pf: è la prima paura.
+- ***Fluttuare*** **una volta sola**, a ⅓ dei pf: è la prima paura. Se Balvar è morto, a metà dei pf `[CANONE — DM 2026-11-27, serata-30-11 n. 7]`.
   ***Oscurità*** **una volta sola**, per coprire la fuga verso le paludi.
 - **Dal round 2, due wyvern** (Appendice A.6) su chi tiene la corda e su chi
   vola. Fuggono quando il drago fugge o muore. Il duello è EL 17 col Vecchio,
   EL 14 con l'Adulto.
-- **La Catena**: la runa sotto la scaglia si colpisce contro **CA 44** (41), e il
+- **La Catena**: la runa sotto la scaglia si colpisce contro **CA 47** (in pratica il 20 naturale) (41)<!-- storico --> (fino al 2026-11-21: CA 44)<!-- /storico -->, e il
   primo colpo a segno la spezza: il drago se ne va (Scena 11).
 - **Aegis Fang**: il Bane contro Fauci qui **non vale**; la *Dragondoom* sì.
 - **Presenza Terrificante** CD 26 (25) all'ingresso (Volontà o scossi), raggio 72 m (63).
@@ -1121,12 +1117,15 @@ gallerie sotto la fucina; cercarlo costa una tacca)*
   martello da guerra runico di Balvar (Scena 8, tesoro), Zeth ricambia con una
   runa sua, incisa su un'arma che i PG scelgono: **+2 ai tiri per colpire
   contro i draghi**. Delle rune che incide quella notte se ne attiva una sola,
-  questa. Al tavolo l'ha incisa su una balestra nascosta nel torrione ovest
-  `[CANONE — DM 2026-11-21]`. È una regola della casa: l'SRD non ha una runa così, e il bonus più
+  questa, su un'arma delle mura che sceglie il gruppo (dove la incide un
+  gruppo che ha giocato lo dice il ramo della sua campagna, ADR-0156).<!-- storico --> Fino al 2026-11-27: «Al tavolo l'ha incisa su una balestra nascosta nel torrione ovest `[CANONE — DM 2026-11-21]`».<!-- /storico --> È una regola della casa: l'SRD non ha una runa così, e il bonus più
   vicino è il +2 al colpire di un'arma *anatema* contro il suo nemico, senza i
   dadi in più. Vale **per un colpo solo**, come il potere contro i draghi dei
   Bracieri: chi la attiva dichiara il tiro, e la runa si spegne dopo quello,
-  a segno o a vuoto `[CANONE — DM 2026-11-21]`.
+  a segno o a vuoto `[CANONE — DM 2026-11-21]`. Per quel colpo l'arma conta
+  come magica e supera la RD/magia; se è una balestra la supera il dardo, come
+  le munizioni di un'arma con un bonus di potenziamento (SRD, *Damage
+  Reduction*). La runa si attiva una volta sola `[CANONE — DM 2026-11-27, serata-30-11 n. 5]`.
 - **Fermarsi o dormire — scelta.** In 3.5 ci sono solo le otto ore di sonno
   e il tempo che passa. **Tre ore di sosta** (2
   tacche) non ridanno incantesimi, perché l'SRD li restituisce solo dopo otto
@@ -3100,9 +3099,9 @@ L'artefatto che stringe al petto è in **Appendice B**.
 > cala sul cortile, il rito all'incudine, la luce del Rubino.
 >
 > 🛑 **Dove si ferma una serata**: per chi gioca l'arco da capo, la prima serata si ferma al primo box della Scena 10,
-> e il resto dell'atto è della sessione dopo. Il gruppo di oggi si è fermato
-> prima, alla Scena 5 (§4, «Dove si riprende»), e la sua serata dopo si ferma
-> sull'esito del duello, prima della Scena 12 `[CANONE — DM 2026-10-12]`.
+> e il resto dell'atto è della sessione dopo. Un gruppo che riprende a metà
+> si ferma dove dice la regia della sua serata, sul suo ramo di gruppo
+> `[CANONE — DM 2026-11-27, serata-30-11 n. 14]`.
 
 | Scena | Dove | Chi entra | Prova | Se fanno l'inatteso | Al tavolo |
 |---|---|---|---|---|---:|
@@ -3342,19 +3341,19 @@ successo in più o in meno, si applica allo stesso modo.
 | Scena 11 · EL 17 | **La scheda da tavolo**: che cosa succede, chi c'è, cosa vuole e come si conduce; il testo intero segue |
 |---|---|
 | **Succede** | Skullcrusher cala sul cortile con due wyvern e combatte in passate, gridando i nomi che ha sentito di notte attraverso la Catena |
-| **Chi c'è** | Skullcrusher il **Vecchio** (GS 17): 337 pf, CA 36 (40 con *armatura magica*), contatto 10. Dal round 2 due wyvern, su chi tiene la corda e su chi vola; fuggono quando fugge lui. **EL 17**. Re Thorek è nel cortile, alle spalle dei PG, a difendere la porta principale |
+| **Chi c'è** | Skullcrusher il **Vecchio** (GS 17): 337 pf, CA 39 (43 con *armatura magica*), contatto 13 `[CANONE — DM 2026-11-21]`. Dal round 2 due wyvern, su chi tiene la corda e su chi vola; fuggono quando fugge lui. **EL 17**. Re Thorek è nel cortile, alle spalle dei PG, sulla porta principale |
 | **Chi vuole cosa** | Il drago vuole vincere davanti all'orda: per lui il potere è quello che gli altri hanno visto |
 | **Si comincia** | Dopo il barile il drago guarda in alto: chi lo aspetta in volo non ha la sorpresa. Dalle mura arrivano: −2 alla prima iniziativa se hanno tenuto la breccia; duello fuori dalle mura, senza fucina né campane, se hanno sabotato gli arieti |
 | **Round 1** | Cala dall'alto: Presenza, Volontà **CD 26** (Thorik non tira), poi il soffio aderente sul gruppo più fitto, 16d4, Riflessi **CD 31**. Non atterra. In picchiata, con un round di sorpresa, se Zog'tar è morto in modo spettacolare: Ascoltare CD 20 per agire, e le campane glielo tolgono |
-| **Dal round 2** | Una passata a round, a circa 15 m fra un turno e l'altro. A metà del movimento una cosa sola: **grida un nome**, **morde** chi ha nominato il turno prima (+54: il +34 del morso, più il nome), oppure **soffia**, se il soffio è tornato |
+| **Dal round 2** | Una passata a round; fra un turno e l'altro resta a più di 18 m da tutti i PG `[CANONE — DM 2026-11-21]`. A metà del movimento una cosa sola: **grida un nome**, **morde** chi ha nominato il turno prima (+54: il +34 del morso, più il nome), oppure **soffia**, se il soffio è tornato |
 | **Chi sceglie** | Nell'ordine: chi ha detto la Catena ad alta voce; chi colpisce l'orda o gli arieti dall'alto; chi tiene la corda dell'ala; chi lo ha ferito di più. Se in un round nessuno lo chiama, va sul re: due colpi lo mettono a terra, uno solo se è a 8 pf. Il re non muore |
-| **Le corde** | Azione preparata su «quando picchia». Chi lancia il gancio: contatto a distanza contro **CA 10**, incremento 3 m, entro 15 m da una gru. Chi tira: Forza **CD 25**, +2 per chi aiuta, al massimo tre per corda. Il drago resta a terra un round, e chi aveva preparato un attacco lo porta |
-| **La Catena** | Leggerla: azione di movimento entro 9 m. Colpirla: **CA 44**; un attacco di contatto non la raggiunge. Il primo colpo a segno la spezza, e il drago se ne va |
+| **Le corde** | Azione preparata su «quando picchia». Chi lancia il gancio: contatto a distanza contro **CA 13**, incremento 3 m, entro 15 m da una gru. Chi tira: Forza **CD 25**, +2 per chi aiuta, al massimo tre per corda. Il drago resta a terra un round, e chi aveva preparato un attacco lo porta |
+| **La Catena** | Leggerla: azione di movimento entro 9 m. Colpirla: **CA 47** (in pratica il 20 naturale); un attacco di contatto non la raggiunge. Il primo colpo a segno la spezza, e il drago se ne va |
 | **Il cortile** | La fucina: 4d6, e niente olfatto per 1d4 round. Le campane tolgono la sorpresa, e chi le suona si fa bersagliare. Chiamare i nani: arrivano, e muoiono |
 | **Artefatti** | *Dragondoom* di Aegis Fang funziona, tre volte al giorno. Il Bane contro Fauci qui non vale. La Cintura di Tordek rifiuta di attivarsi |
-| **La soglia** | A un terzo dei pf (circa 112) si ferma in aria, una volta sola, ed esita: in quel round non attacca. Al suo turno fugge nell'oscurità, a meno che nel round prima abbia preso almeno due colpi: allora resta un round, e lì si può uccidere. Se Balvar è morto combatte a −2 e fugge a metà dei pf |
+| **La soglia** | A un terzo dei pf (circa 112) si ferma in aria, una volta sola, entro 15 m dai PG `[CANONE — DM 2026-11-27, serata-30-11 n. 16]`, e quel round non attacca. Al suo turno fugge, salvo due colpi presi nel round prima: allora resta un round, e lì si può uccidere. Con Balvar morto combatte a −2 e la soglia intera passa a metà dei pf, circa 168 `[CANONE — DM 2026-11-27, serata-30-11 n. 7]` |
 | **Se va male** | Due PG a terra nello stesso round, o il gruppo si ritira dal cortile: intervengono gli avi, ed è «vinto sporco» |
-| **Sviluppo** | **Conta i colpi a segno** (ferite ancestrali, al massimo 3) e segna se Aegis Fang ha colpito in volo. Esito: ucciso, ferito grave o fuggito. Il colpo finale lo racconta il giocatore. Poi la serata si ferma |
+| **Sviluppo** | **Conta i colpi a segno** (ferite ancestrali, al massimo 3) e segna se Aegis Fang ha colpito in volo. Esito: ucciso, ferito grave o fuggito. Il colpo finale lo racconta il giocatore |
 | **Tesoro** | La scaglia del Primo Nero (circa 1.500 mo), solo se il drago è ucciso |
 | **Come finisce** | Drago ucciso, ferito grave, fuggito, o vinto sporco |
 | **Dove guardare** | Le schede di Skullcrusher Vecchio e delle wyvern; la mappa M7-B; «Chi non vola — cosa fa nei round in quota»; «Esito del duello» |
@@ -3526,9 +3525,12 @@ quello che cambia davvero.
   soffio, se è tornato, lungo la linea più lunga che trova; il morso su chi
   ha nominato il turno prima; oppure il nome di un altro. Poi va oltre e
   risale. Punisce chi non ha gittata o volo. Bersaglio: «Chi sceglie», qui
-  sotto. Fra un turno e l'altro resta a circa 15 m sopra il cortile: Aegis Fang
-  scagliata, cinque incrementi da 3 m, ci arriva al limite, e il blast di
-  Artemis sempre `[CANONE — DM 2026-10-19, giro 4 n. 6]`. *Corrompere l'acqua* sulle
+  sotto. Fra un turno e l'altro resta a più di 18 m da tutti i PG col Vecchio
+  `[CANONE — DM 2026-11-21]`, a circa 15 m con l'Adulto: il blast di Artemis
+  ci arriva sempre `[CANONE — DM 2026-10-19, giro 4 n. 6]`, Aegis Fang
+  scagliata no. Cinque incrementi da 3 m fanno 15 m (SRD, armi da lancio), e
+  a fine passata il Vecchio è più lontano. Con l'Adulto, a circa 15 m, ci
+  arriva al limite.<!-- storico --> Fino al 2026-11-21: «resta a circa 15 m sopra il cortile: Aegis Fang scagliata, cinque incrementi da 3 m, ci arriva al limite».<!-- /storico --> *Corrompere l'acqua* sulle
   pozioni `[CANONE — DM 2026-10-19, giro 4 n. 7]`: un uso prende le pozioni
   di un solo PG, perché l'SRD guasta 10 piedi cubi, poco più di un quarto di
   metro cubo, entro il raggio della Presenza. Ognuna tira a parte Volontà
@@ -3561,7 +3563,7 @@ quello che cambia davvero.
     bersaglio di legno, e il drago non lo porta `[CANONE — DM 2026-11-04, P16, Skullcrusher: il nome gridato vale da fuoco]`.
   - ***Fluttuare*** (SRD, *Hover*), **una volta sola**: alla prima paura, a
     ⅓ dei pf (la soglia qui sotto). Con un'azione di movimento si ferma in
-    aria, e da fermo si sposta in ogni direzione, anche in verticale, a metà
+    aria entro 15 m dai PG `[CANONE — DM 2026-11-27, serata-30-11 n. 16]`, e da fermo si sposta in ogni direzione, anche in verticale, a metà
     velocità, nonostante la manovrabilità scarsa. La regola gli darebbe,
     se comincia il turno fermo in aria, un'azione di round completo (morso,
     artigli e coda); alla prima paura **non la usa**: esita, guarda, e in quel
@@ -3588,10 +3590,18 @@ quello che cambia davvero.
   un'arma da mischia lanciata, −4 al tiro e incremento 3 m, e torna in mano a
   Thorik prima del suo turno successivo (SRD, *da ritorno*). «Colpisce in
   volo» vuol dire un tiro a distanza a segno mentre il drago è in quota.
+  Col Vecchio, che chiude le passate a più di 18 m, l'ascia scagliata lo
+  raggiunge solo quando lui si avvicina: con un'azione preparata su «quando
+  picchia» entro 15 m, che è lo stesso innesco delle corde, o nel round
+  della prima paura: lì si ferma in aria entro 15 m, sopra i PG (sopra il
+  camminamento, se sono sulle mura), perché la sua paura la sentano, e l'ascia
+  ci arriva `[CANONE — DM 2026-11-27, serata-30-11 n. 16]`. Nel round in cui le
+  corde lo inchiodano è a terra, e il colpo non conta «in volo».
 - **La Catena, in ogni round.** Se i PG sanno della runa (Scena 7), leggerla
   sulla scaglia è un'azione di movimento entro 9 m, e colpirla è un attacco
-  contro **CA 44** col Vecchio e **41** con l'Adulto: la CA con l'armatura magica, 40 o 37, più 4 perché il bersaglio è piccolo; la runa è sotto la scaglia, e un attacco di contatto non la raggiunge `[CANONE — DM 2026-10-07, Q25]`: il primo colpo a segno la spezza, e il drago se ne va. Se
-  Balvar è morto prima dell'alba, il drago combatte a **−2** e fugge a metà pf.
+  contro **CA 47** col Vecchio (in pratica il 20 naturale)<!-- storico --> (fino al 2026-11-21: CA 44, da 40)<!-- /storico --> e **41** con l'Adulto: la CA con l'armatura magica, 43 o 37, più 4 perché il bersaglio è piccolo; la runa è sotto la scaglia, e un attacco di contatto non la raggiunge `[CANONE — DM 2026-10-07, Q25]`: il primo colpo a segno la spezza, e il drago se ne va. Se
+  Balvar è morto prima dell'alba, il drago combatte a **−2** e fugge a metà pf;
+  con la fuga si sposta tutta la soglia, prima paura e due colpi compresi `[CANONE — DM 2026-11-27, serata-30-11 n. 7]`.
 
 **Quando qualcuno la legge**, la prima volta:
 
@@ -3800,7 +3810,7 @@ Per tutti, tre cose SRD:
   il drago picchia sotto i 9 m»*, cioè ogni volta che scende a mordere qualcuno
   nel cortile. I ruoli:
   - **chi lancia il gancio** (sul camminamento, accanto alla gru): attacco di
-    contatto a distanza, incremento 3 m, contro la CA di contatto del drago (**10**).
+    contatto a distanza, incremento 3 m, contro la CA di contatto del drago (**13** col Vecchio, che ha l'anello di protezione `[CANONE — DM 2026-11-21]`; **10** con l'Adulto)<!-- storico --> (fino al 2026-11-21: 10 per entrambi)<!-- /storico -->.
     È un'arma da lancio, quindi arriva a cinque incrementi, 15 m, con −2 al
     tiro per ogni incremento intero di distanza (SRD, gittata): dalle gru in
     B10 e W10 il gancio prende il drago quando picchia entro 15 m da una
@@ -3845,13 +3855,15 @@ aspetta. È il momento più grosso della campagna finora: non riempirlo tu.]`
    fragile (fugge sotto 75 pf invece di 50) (B4).
 **Le soglie** `[CANONE — DM 2026-09-30, D14]`: a ⅓ dei pf fugge al suo turno, a meno che nel round
 prima abbia subito almeno due colpi (allora resta un round ancora). Se Balvar è
-morto e il drago fugge a **metà** pf, l'esito è **FERITO GRAVE**.
+morto si sposta tutta la soglia a **metà** pf, circa 168 col Vecchio e 149 con
+l'Adulto: la prima paura, il round fermo in aria e i due colpi `[CANONE — DM 2026-11-27, serata-30-11 n. 7]`. Se il
+drago fugge lì, l'esito è **FERITO GRAVE**.
 *Registra esito + N ferite + se Aegis Fang colpì in volo.*
 
 #### Sidebar — Scalare lo scontro (stile RHoD)
 | Situazione | Aggiustamento |
 |---|---|
-| Il gruppo di stasera, e ogni party **straripante** (4 PG di 13° con la fiducia piena del consiglio, tutti gli artefatti e il banco della fucina speso, o 4 PG di 14°) | Skullcrusher **Vecchio e Avanzato** (GS 17): **337 pf**, CA 36 (40 con *armatura magica*), soffio 16d4 CD 31, Presenza CD 26, morso +34; statistiche in Appendice A.1-bis `[CANONE — DM 2026-10-12, D60]`. Con lui, dal round 2, le 2 **wyvern** (SRD, *Wyvern*: GS 6, 59 pf, CA 18, volare 18 m, pungiglione +10 con veleno Tempra CD 17, 2d6 COS, morso +8 2d8+4; Appendice A.6). Per un gruppo di 13° fanno EL 17, il tetto esatto di APL+4; per uno di 14°, APL+3 `[CANONE — DM 2026-10-19]`. Le wyvern vanno su chi tiene la corda dell'ala e su chi vola; quando il drago fugge o muore, fuggono anche loro `[CANONE — DM 2026-10-12, D74]`. Il gruppo di 13° straripante ha le wyvern `[CANONE — DM 2026-10-18, G2-15]` |
+| Il gruppo di stasera, e ogni party **straripante** (4 PG di 13° con la fiducia piena del consiglio, tutti gli artefatti e il banco della fucina speso, o 4 PG di 14°) | Skullcrusher **Vecchio e Avanzato** (GS 17): **337 pf**, CA 39 (43 con *armatura magica*), contatto 13<!-- storico --> (fino al 2026-11-21: CA 36, 40 con *armatura magica*)<!-- /storico -->, soffio 16d4 CD 31, Presenza CD 26, morso +34; statistiche in Appendice A.1-bis `[CANONE — DM 2026-10-12, D60]`. Con lui, dal round 2, le 2 **wyvern** (SRD, *Wyvern*: GS 6, 59 pf, CA 18, volare 18 m, pungiglione +10 con veleno Tempra CD 17, 2d6 COS, morso +8 2d8+4; Appendice A.6). Per un gruppo di 13° fanno EL 17, il tetto esatto di APL+4; per uno di 14°, APL+3 `[CANONE — DM 2026-10-19]`. Le wyvern vanno su chi tiene la corda dell'ala e su chi vola; quando il drago fugge o muore, fuggono anche loro `[CANONE — DM 2026-10-12, D74]`. Il gruppo di 13° straripante ha le wyvern `[CANONE — DM 2026-10-18, G2-15]` |
 | Un gruppo di 13° che non è straripante, o il DM non conferma il Vecchio | l'**Adulto** dell'Appendice A.1, con le 2 wyvern: EL 14 sulla carta, 15 al tavolo |
 | Party **logorato** (il campo e le mura andati male, risorse spese, Hella ancora fragile) | Skullcrusher NON usa il soffio 2 volte di fila; quando gli restano ~100 pf **fugge subito**, senza il round in più (esito FERITO GRAVE garantito) |
 | **Hella appena risorta** — vuoi proteggerla | Riga da scegliere, non di base: il drago la ignora finché non lo ferisce (predatore: va per la minaccia, non per la novità). Senza questa scelta vale «Chi sceglie», che la mette fra i preferiti — dà alla giocatrice spazio per il suo primo scontro |
@@ -4079,7 +4091,7 @@ due»), e la pietra entra solo al Rituale della Scena 12.*
 | **Vogliono reclutare Thorgrim / portarlo nel futuro** | Impossibile (non è «loro»): Thorgrim resta, e la sua eco è l'affresco A3 della Sala della Forgia. Commovente: si separano da un fratello che è già polvere da mille anni. |
 | **Vogliono attaccare il drago di notte, sulle colline** | `[CANONE — DM 2026-10-07, Q36]` Si può. Le colline sono a qualche chilometro, e il drago vede al buio e sente chi è invisibile entro 18 m. Di notte non combatte per l'orda: combatte due round per orgoglio, poi vola via, perché la Catena lo lega al campo e non alle colline. Il danno che ha preso **resta** all'alba, ma il duello comincia **senza sorpresa**: li conosce. Costa **2 tacche**, e la Scena 7 resta da fare |
 | **Evitano del tutto il duello con Skullcrusher** | Difficile ma possibile (montaggio): allora il Rubino si accende comunque (la fortezza regge), ma **senza ferite ancestrali** → nessun carry-over B4 (Fauci al 1372 a piena forza). La scelta ha un prezzo futuro. |
-| **FALLIMENTO — il duello va malissimo / un PG cade / fuggono sconfitti** | Non c'è TPK: la timeline **esige** che vincano (la profezia È incisa). Se il combattimento crolla (**due PG a terra nello stesso round**, o il gruppo che **si ritira dal cortile** `[CANONE — DM 2026-09-30, D15]`), gli antenati, chiamati da Thorgrim che dà l'ordine, **intervengono** e ricacciano il drago (a caro prezzo: molti nani antichi muoiono — pathos, e il DM ne annota i nomi fra i caduti del 372). I PG vincono «sporco»: **nessuna ferita ancestrale** registrata, il Rubino si accende col tono «misericordia/dovere», e portano il peso di essere stati salvati dagli avi che erano venuti a salvare. |
+| **FALLIMENTO — il duello va malissimo / un PG cade / fuggono sconfitti** | Non c'è TPK: la timeline **esige** che vincano (la profezia È incisa). Se il combattimento crolla (**due PG a terra nello stesso round**, o il gruppo che **si ritira dal cortile** `[CANONE — DM 2026-09-30, D15]`), gli antenati, chiamati da Thorgrim che dà l'ordine, **intervengono** e ricacciano il drago (a caro prezzo: molti nani antichi muoiono — pathos, e il DM ne annota i nomi fra i caduti del 372). I PG vincono «sporco»: **nessuna ferita ancestrale** registrata, i PX del drago a metà (§8 A) `[CANONE — DM 2026-11-27, serata-30-11 n. 11]`, il Rubino si accende col tono «misericordia/dovere», e portano il peso di essere stati salvati dagli avi che erano venuti a salvare. |
 
 ---
 
@@ -4128,25 +4140,16 @@ della Corona `[CANONE — DM 2026-09-30, D16]`.
 | **Scena 11: Skullcrusher Vecchio (GS 17), stasera** `[CANONE — DM 2026-10-19]` | boss | **3.900** (tabella DMG: 15.600 per un gruppo di 13°, diviso per 4) |
 | Scena 11: Skullcrusher Adulto (GS 14), se si usa A.1 | boss | **1.460** (tabella DMG: 5.850 per un gruppo di 13°, diviso per 4) `[CANONE — DM 2026-10-07, D40]` |
 | Scena 11: le 2 wyvern (GS 6) | combattimento | **≈ 160** (tabella DMG: 325 l'una per un gruppo di 13°, 650 in tutto, diviso per 4). Il duello vale **≈ 4.060** a testa col Vecchio, EL 17; **1.625** con l'Adulto, EL 14 `[CANONE — DM 2026-10-19, giro 4 n. 16]` |
+| Scena 11, **vinto sporco** (§6): il drago lo ricacciano gli avi | boss | PX del drago **dimezzati**: **1.950** col Vecchio, **730** con l'Adulto; le wyvern valgono i loro ≈ 160 solo se le uccidono i PG `[CANONE — DM 2026-11-27, serata-30-11 n. 11]` |
 | Scene 12-13: il Rituale e il Rubino | premio di storia maggiore | 800 |
 | **TOTALE beat** (la tenda intera, senza pattuglia né lupi) | | **~10.210/PG** col Vecchio e le wyvern, stasera (duello a ≈ 4.060); **~7.775/PG** con l'Adulto e le wyvern (duello a 1.625); **~7.610/PG** con l'Adulto da solo |
 
-> **Il gruppo di oggi, dal registro dei PX** `[CANONE — DM 2026-11-05, P16, PX]`.
-> Il foglio dei PX del DM<!-- apparato --> (`00_Red Hand Of Doom/CalcoloPuntiEperienza-current.ods`,
-> copia in `campaign/REGISTRO-PX.md`)<!-- /apparato --> arriva al consiglio della Scena 4 con:
-> - **Thorik, Tordek e Artemis** oltre i 105.000 PX (Fuoco 7.700 con Therysol,
->   Terra 11.800, Sala 400, affreschi 1.900, rito 1.900, Scene 1-4 600, più il
->   finale dell'ARC-06 e la prova della Corona);
-> - **Hella** a **86.354**: è morta dalla Corona al rito, e ha preso il finale
->   dell'ARC-06, la prova della Corona, il viaggio dello spirito (800), i 300 di A8
->   e la serata del 25/09.
->
-> Vale la regola 3.5 di un livello alla volta: i tre salgono al **14°** e i loro
-> PX restano fermi a **104.999**, quindi i PX di questo beat per loro non contano
-> più. **Hella prende il 14° in questa notte**: le mancano 4.646 PX, e la tenda
-> intera (≈ 3.650), Vatore (500) e le mura (600) li coprono prima del duello.
-> Per tutti e quattro il livello si prende al primo riposo, dopo la battaglia
-> (`DEF-5` §8, D90). Le parti giocate non si ritoccano.
+> **I PX di un gruppo che gioca** stanno nel registro dei PX del suo ramo di
+> gruppo<!-- apparato --> (`campaign/REGISTRO-PX.md` sul ramo `campaign-group-…`)<!-- /apparato -->, non in questo
+> master. Vale la regola 3.5 di un livello alla volta: chi con i PX del beat
+> passerebbe due soglie si ferma a un PX sotto la seconda, e l'eccedenza è
+> persa `[CANONE — DM 2026-11-27, serata-30-11 n. 14]`. Il livello si prende al primo riposo, dopo la battaglia
+> (`DEF-5` §8) `[CANONE — DM 2026-10-15, D90]`. Le parti giocate non si ritoccano.
 >
 > <!-- storico -->Fino al 2026-11-05 qui c'era scritto che il gruppo arrivava al 14°
 > dopo `DEF-5` (D40), e che se ci arrivasse prima dipendeva dai PX di partenza,
@@ -4273,6 +4276,15 @@ cambiato.
 | 8 | Zog'tar *«muore in questa scena, la storia dice così»* | la Via A lo lascia vivo e umiliato | Scena 8 |
 | 9 | Vatore *«ha appena visto quattro individui respingere un'orda»*, durante l'infiltrazione | di notte l'orda non è ancora stata respinta: li ha visti uscire dalla tenda del generale | Scena 9 |
 | 10 | il Rubino era *«la terza gemma, muta da sempre»* | l'incasso è vuoto fino al Rituale | Scena 13 |
+
+### Cosa è cambiato dopo il riordino
+
+| | Cosa diceva la stesura di prima | Perché è cambiato | Dove è corretto |
+|---|---|---|---|
+| 11 | «Hella prende il 14° in questa notte: le mancano 4.646 PX, e la tenda intera (≈ 3.650), Vatore (500) e le mura (600) li coprono prima del duello» (fino al 2026-11-27) | i PX del gruppo che gioca stanno nel registro del ramo di gruppo, e il master resta aperto per un altro gruppo | §8 A, «I PX di un gruppo che gioca» |
+| 12 | «Il gruppo di oggi non parte dal tramonto: riprende dalla notte, con 3 tacche segnate sul foglio: si apre con Durin nel cortile, *«Quando uscite?»*, poi gli acquisti al banco e la scelta fra fermarsi, dormire o uscire; chi vola subito atterra alla tenda con Grask sveglio, tratta con Balvar o colpisce Zog'tar, e la serata si ferma sull'esito del duello all'alba. L'ordine della serata, chi parla per primo e la lista di lettura da un'ora stanno nella regia della serata, il primo capitolo del booklet: per questo gruppo vince su questo riquadro. La lista qui sotto è per chi prepara senza la regia.» (fino al 2026-11-27) | il giocato di un gruppo sta sul suo ramo di gruppo, e main resta rigiocabile (ADR-0156) `[CANONE — DM 2026-11-27, serata-30-11 n. 14]` | §0, «La serata in tre frasi» |
+| 13 | «Il gruppo di oggi si è fermato prima, alla Scena 5 (§4, «Dove si riprende»), e la sua serata dopo si ferma sull'esito del duello, prima della Scena 12 `[CANONE — DM 2026-10-12]`.» (fino al 2026-11-27) | come la 12 `[CANONE — DM 2026-11-27, serata-30-11 n. 14]` | §5, «Dove si ferma una serata» |
+| 14 | «**Il gruppo di oggi, dal registro dei PX** `[CANONE — DM 2026-11-05, P16, PX]`. Il foglio dei PX del DM (`00_Red Hand Of Doom/CalcoloPuntiEperienza-current.ods`, copia in `campaign/REGISTRO-PX.md`) arriva al consiglio della Scena 4 con: - **Thorik, Tordek e Artemis** oltre i 105.000 PX (Fuoco 7.700 con Therysol, Terra 11.800, Sala 400, affreschi 1.900, rito 1.900, Scene 1-4 600, più il finale dell'ARC-06 e la prova della Corona); - **Hella** a **86.354**: è morta dalla Corona al rito, e ha preso il finale dell'ARC-06, la prova della Corona, il viaggio dello spirito (800), i 300 di A8 e la serata del 25/09. Vale la regola 3.5 di un livello alla volta: i tre salgono al **14°** e i loro PX restano fermi a **104.999**, quindi i PX di questo beat per loro non contano più. Se Hella passa la soglia del 14° durante la notte dipende da quello che il gruppo gioca: il conto lo tiene il registro dei PX del ramo di gruppo (`campaign/REGISTRO-PX.md` sul ramo `campaign-group-rumblingstone`), non questo master. Per tutti e quattro il livello si prende al primo riposo, dopo la battaglia (`DEF-5` §8, D90). Le parti giocate non si ritoccano.» (fino al 2026-11-27) | come la 12: la scelta del DM supera la marca del 2026-11-05 `[CANONE — DM 2026-11-27, serata-30-11 n. 14]` | §8 A, «I PX di un gruppo che gioca» |
 
 <!-- apparato -->
 ### FILE-FONTE ASSORBITI DA QUESTO MASTER (→ `_ARCHIVIO/` a consolidamento chiuso)
@@ -4409,7 +4421,7 @@ si sommano a parte (§8 A).
 
 - Boost log:<!-- storico --> 2026-10-12 —<!-- /storico --> drago nero **Vecchio** dell'SRD invece dell'adulto maturo, con il template Avanzato PF1e completo — GS 16 → 17 — solo per il party straripante di 14°, dove EL 17 = APL+3; il DM vuole che la riga renda il duello più duro, non più facile.
 - Boost log:<!-- storico --> 2026-10-19 —<!-- /storico --> usato anche con il gruppo di 13°, con le 2 wyvern, e *Ghermire* → **Virare** come in A.1 — GS 17 → 17; EL 17 = APL+4, il tetto esatto — la simulazione del duello lo dà come l'unica versione che regge contro tutti e tre i modi di giocarlo senza una morte probabile, purché senza la presa in bocca `[CANONE — DM 2026-10-19]`.
-- Boost log:<!-- storico --> 2026-11-21 —<!-- /storico --> oggetti dal suo tesoro (anello di protezione +3, mantello della resistenza +3, bacchetta di *paura*, 2 pergamene di *dominare persone*, 1 di *suggestione di massa*: circa 51.900 mo di 108.000), i tre incantesimi che mancavano ai conosciuti (*messaggio*, *causare paura*, *spaventare*), *immagine speculare* al corno e passate lunghe — GS 17 → 17: gli oggetti vengono dal suo tesoro e la DMG non alza il GS per l'equipaggiamento che il mostro possiede; i conosciuti sono quelli che lo stregone di 7° dell'SRD già doveva avere. EL 17 = APL+4 resta il tetto. Il prezzo al tavolo: CA di contatto 13 invece di 10, e con l'anello Tordek (+21) lo colpisce solo col 20 naturale `[CANONE — DM 2026-11-21]`.
+- Boost log:<!-- storico --> 2026-11-21 —<!-- /storico --> oggetti dal suo tesoro (anello di protezione +3, mantello della resistenza +3, bacchetta di *paura*, 2 pergamene di *dominare persone*, 1 di *suggestione di massa*: circa 51.900 mo di 108.000), i tre incantesimi che mancavano ai conosciuti (*messaggio*, *causare paura*, *spaventare*), *immagine speculare* al corno e passate lunghe — GS 17 → 17: gli oggetti vengono dal suo tesoro e la DMG non alza il GS per l'equipaggiamento che il mostro possiede; i conosciuti sono quelli che lo stregone di 7° dell'SRD già doveva avere. EL 17 = APL+4 resta il tetto. Il prezzo al tavolo: CA di contatto 13 invece di 10, e con l'anello Tordek (+21) lo colpisce solo col 20 naturale, contro CA 43 `[CANONE — DM 2026-11-21]`.
 
 ### A.1-ter · Cosa cambia al tavolo, con l'Adulto o con il Vecchio
 
@@ -4442,7 +4454,7 @@ si sommano a parte (§8 A).
   (d20 + livello contro 21), quindi un incantesimo su tre circa si spegne. Col
   Vecchio servono 9 o 10, e se ne spengono quattro o cinque su dieci. Le
   invocazioni di Artemis la subiscono come gli incantesimi.
-- **RD 10/magia**: le armi dei PG sono magiche; le balestre delle mura, no.
+- **RD 10/magia**: le armi dei PG sono magiche; le balestre delle mura, no. L'arma con la runa di Zeth la supera, dardo compreso, per il suo colpo solo (Scena 5) `[CANONE — DM 2026-11-27, serata-30-11 n. 5]`.
 - **Le gittate col Vecchio, che resta lontano.** Chiude ogni passata a più di
   18 m dai PG. Lo raggiungono le armi a distanza e gli incantesimi a gittata
   media o lunga; la deflagrazione di Artemis con *Eldritch Spear* arriva a
@@ -4861,7 +4873,7 @@ La pattuglia si riassume in tre righe: Durin vede la Corona e cade in ginocchio
 ### C.3 · Il duello in tre scambi (Scena 11)
 
 > **🎚️ [FAST-PLAY] del duello** (se vuoi chiudere veloce): 3 scambi narrati a
-> prova di gruppo (un attacco contro **CA 40**, 37 con l'Adulto, o Saltare/Equilibrio **CD 22** per chi lo affronta dalle mura), poi si sceglie l'esito tra i tre
+> prova di gruppo (un attacco contro **CA 43**<!-- storico --> (fino al 2026-11-21: CA 40)<!-- /storico -->, 37 con l'Adulto, o Saltare/Equilibrio **CD 22** per chi lo affronta dalle mura), poi si sceglie l'esito tra i tre
 > della Scena 11 in base a quanti scambi i PG hanno «vinto» (0-1 = fuggito, 2 = ferito
 > grave, 3 = ucciso). Uno scambio è vinto se metà del gruppo supera la prova.
 > Registra comunque le ferite per B4: N = scambi vinti. **[COMBATTIMENTO

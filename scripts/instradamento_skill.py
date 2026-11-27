@@ -108,7 +108,9 @@ def _prende(t: str, f: str, parole: "set[str]") -> bool:
 # per un trigger più lungo con la stessa parola («hook pre-push fallisce» resta).
 _HOOK_TECNICO = (r"\b(?:claude code|claude|userpromptsubmit|pretooluse|posttooluse|sessionstart|"
                  r"subagentstop|settings|pre-push|pre-commit|post-commit|git|githooks|py|json|"
-                 r"script\w*|bash|stdin|cancello)\b")
+                 r"script\w*|bash|stdin|push|"
+                 # il cancello del repo, non quello della scena (Codex, #534)
+                 r"cancell[oi] (?:a cricchetto|del push|di ci|della ci|bloccant\w*|locale))\b")
 _CANVA_PIATTAFORMA = r"\b(?:connettor\w*|mcp|server|plugin|integrazion\w*|oauth|api)\b"
 OMONIMI: "dict[str, tuple[str | None, str | None]]" = {
     # «coordinato con il padre», «coordinate the threads»: il verbo, non le coordinate

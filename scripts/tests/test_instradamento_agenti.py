@@ -129,7 +129,10 @@ class TestMessaggiSenzaLavoro(unittest.TestCase):
         casi = {"ok, disegna la mappa della cripta": "cartografo",
                 "sì, scrivi l'ADR breve": "autore-documenti",
                 "Ho visto che la CI è rossa sul test di validate_pg: sistemala": "sviluppatore",
-                "ok procedi, poi promuovi ruff a stable": "piattaforma"}
+                "ok procedi, poi promuovi ruff a stable": "piattaforma",
+                # Codex, #534: i verbi con il pronome attaccato e «fai» sono lavoro
+                "ok, scrivimi un'ADR breve": "autore-documenti",
+                "ok, fai l'ADR breve": "autore-documenti"}
         for testo, atteso in casi.items():
             with self.subTest(testo=testo):
                 self.assertEqual(ia.scegli(testo)[:1], [atteso])
@@ -147,6 +150,56 @@ class TestMessaggiSenzaLavoro(unittest.TestCase):
         self.assertEqual(ia.scegli(busta)[:1], ["cartografo"])
         self.assertEqual(ia.scegli(_wake("grazie, a dopo", note="the CI workflow script")), [])
         self.assertEqual(ia.testo_di_lavoro(_wake("l&#39;ADR &amp; il piano")), "l'ADR & il piano")
+
+
+class TestOmonimi(unittest.TestCase):
+    """M2, tecnica 2: un trigger non scatta sull'omonimo che parla d'altro."""
+
+    COPPIE = [  # (skill, frase con l'omonimo, frase con il senso del trigger)
+        ("rumblingstone-mapmaking", "fallo in un thread coordinato con il padre",
+         "aggiungi le coordinate dei mostri nel JSON della mappa"),
+        ("rumblingstone-mapmaking", "coordinate the threads with the parent session",
+         "le coordinate della cripta sono sbagliate"),
+        ("rumblingstone-narrative-style", "l'hook di Claude Code sul pre-push non parte",
+         "scrivi un hook per la prossima serata"),
+        ("rumblingstone-narrative-style", "aggiungi un hook UserPromptSubmit in settings.json",
+         "serve un hook che porti i PG a Brindol"),
+        # Codex, #534: il cancello della fiction non è il cancello del push
+        ("rumblingstone-narrative-style", "l'hook del cancello a cricchetto non blocca il push",
+         "progetta un hook per la scena al cancello"),
+        ("rumblingstone-indagine", "nel caso i PG volino, che tattica usa il drago?",
+         "prepara il caso dell'omicidio al mulino"),
+        ("rumblingstone-indagine", "ogni thread nuovo aggiunge un caso al set d'oro",
+         "il caso del mercante scomparso non si ricompone"),
+        ("rumblingstone-indagine", "in ogni caso aggiungi i casi di test",
+         "il caso è troppo lineare"),
+        ("rumblingstone-campaign", "esporta la mappa in png e in webp",
+         "quali png incontrano i PG alla locanda?"),
+        ("rumblingstone-campaign", "il file token-orco.png è sfocato",
+         "mancano le schede di due png"),
+        ("rumblingstone-module-standard", "fai il merge su master del ramo",
+         "rivedi il master della forgia"),
+        ("rumblingstone-automation", "rivedi il corredo del drago nel tesoro",
+         "prepara il corredo della serata"),
+        ("rumblingstone-art-direction", "conta quante volte usiamo il connettore Canva via MCP",
+         "genera la copertina con Canva"),
+    ]
+
+    def test_l_omonimo_non_scatta_il_senso_si(self) -> None:
+        skill = ia._skill()
+        for nome, omonimo, senso in self.COPPIE:
+            with self.subTest(omonimo=omonimo):
+                self.assertNotIn(nome, ia.isk.raggiunte(omonimo, skill))
+                self.assertIn(nome, ia.isk.raggiunte(senso, skill))
+
+    def test_il_trigger_lungo_con_la_stessa_parola_resta(self) -> None:
+        # «hook pre-push fallisce» è della skill di debugging: l'omonimo vale solo per «hook»
+        self.assertIn("rumblingstone-debugging",
+                      ia.isk.raggiunte("l'hook pre-push fallisce", ia._skill()))
+
+    def test_il_thread_coordinato_non_va_al_cartografo(self) -> None:
+        self.assertNotIn("cartografo", ia.scegli(
+            "in un altro thread coordinato con il padre rivedi le tattiche dei villain"))
 
 
 class TestHook(unittest.TestCase):

@@ -63,6 +63,11 @@ regenerate via `dm.py recap --hype` / `dm.py handout`, never edit by hand.
 > che si risolve) lascia la sua voce nella coda del thread, e
 > `python3 scripts/memoria_coda.py DIR --thread "Titolo"` dice se manca
 > ([ADR-0138](plans/adr/ADR-0138-la-coda-della-memoria-storica-ha-un-cancello.md)).
+> Prima di togliere righe dalla memoria del progetto e prima di un merge,
+> `python3 scripts/memoria_custode.py verifica` dice quali righe tolte non
+> sono archiviate (`archivia` le scrive in coda), e l'agente
+> `custode-memoria` risponde da memoria del progetto, file storico e coda
+> ([ADR-0151](plans/adr/ADR-0151-la-memoria-del-progetto-ha-uno-specchio-e-un-custode.md)).
 
 > **DMs: start with `campaign/DM-CAMPAIGN-PLAYBOOK.md`**: session workflow,
 > worked examples, the `§0` dashboard and the new-group reset

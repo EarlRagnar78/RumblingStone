@@ -1,0 +1,76 @@
+name: Milestone pronte
+
+# I criteri d'uscita delle milestone della roadmap (GitHub Milestones 1-5,
+# v1.1.0…v1.5.0) stavano solo nella loro descrizione, in prosa: per sapere se
+# una era finita bisognava rileggerle tutte. Dal 2026-11-27 stanno in
+# plans/milestone.json in forma che una macchina legge, e questo workflow li
+# valuta a ogni push su main e ogni lunedì alle 06:35 UTC, dopo la sincronia
+# del giocato (06:30) e prima della routine del lunedì (08:47 di Roma, 07:47 UTC in ora solare): una milestone è
+# pronta quando tutti i criteri sono veri tranne i tre del rilascio
+# (fatto-changelog, fatto-versione, fatto-tag).
+#
+# Un workflow a parte e non un job di ci.yml: ci.yml non ha un trigger
+# schedule, e aggiungerlo farebbe girare di lunedì tutti i suoi job. Così non
+# gira sulle PR e non le blocca mai.
+#
+# Non apre ancora issue: milestone_pronte.py è in testing (ADR-0099), e qui
+# scrive soltanto nel riepilogo «Aprirebbe la issue: …». Quando sale a stable
+# (14 giorni e 10 run su main, con l'ok del DM) si aggiunge `issues: write` e
+# un passo che apre la issue per l'agente piattaforma, una per versione e
+# senza doppioni.
+#
+# I comandi dei criteri (dm.py sistemi, validate_docs, decisioni_dm,
+# release_plan, git) girano con la sola stdlib, misurato il 2026-11-27 in un
+# venv senza pacchetti: requirements-dev.txt non serve.
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "35 6 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: milestone-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  milestone:
+    name: Milestone pronte per il rilascio
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0   # fatto-versione segue la linea principale (release_plan.py)
+          fetch-tags: true # fatto-tag cerca refs/tags/vX.Y.Z
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+
+      - name: milestone_pronte.py (solo stdlib e git)
+        run: |
+          python3 scripts/milestone_pronte.py --json > milestone.json
+          {
+            echo "## Milestone della roadmap (testing, ADR-0099)"
+            echo
+            python3 scripts/milestone_pronte.py
+            echo
+          } >> "$GITHUB_STEP_SUMMARY"
+          python3 scripts/milestone_pronte.py --pronte > pronte.txt
+          while read -r versione; do
+            if [ -n "$versione" ]; then
+              echo "Aprirebbe la issue: milestone v$versione pronta" | tee -a "$GITHUB_STEP_SUMMARY"
+            fi
+          done < pronte.txt
+          [ -s pronte.txt ] || echo "Nessuna milestone pronta." >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: milestone
+          path: milestone.json
+          if-no-files-found: warn

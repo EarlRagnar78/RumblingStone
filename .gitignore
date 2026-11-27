@@ -309,6 +309,8 @@ build/
 # Registro delle decisioni dell'hook vincolo_skill (ADR-0146)
 .claude/.uso-skill.jsonl
 .claude/.uso-agenti.jsonl
+# Registro degli hook del custode della memoria (ADR-0151)
+.claude/.custode-memoria.jsonl
 
 # OS artifacts
 .DS_Store

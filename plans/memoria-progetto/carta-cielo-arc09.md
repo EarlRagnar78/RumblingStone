@@ -1,0 +1,22 @@
+---
+name: carta-cielo-arc09
+description: Carta del cielo per ARC-09 con Stellarium (RICERCA-TOOL-LGM-2026 §3.1): stato, banco tecnico, card aperta a Jfs
+metadata:
+  type: project
+  modified: 2026-11-13T23:52:20.912Z
+---
+
+Jfs ha scelto il 13/11 «Sì, per ARC-09» per la carta del cielo come indizio. Costellazioni con nomi propri del repo, mai di Faerûn (ADR-0005); entra come immagine con riga di provenienza; voce MS-0117 per la PR; merge solo col via del coordinatore.
+Il dossier delle piste di ARC-09 resta fermo fino alla fine di ARC-07 al tavolo: la carta nasce prima delle piste.
+13/11: Stellarium 23.4 gira nel container (apt, Xvfb, Mesa software, script .ssc → PNG 1400x1400). Niente SkyCultureMaker nella 23.4: cultura del cielo scritta a mano. Banco e istruzioni in /mnt/project-files/carta-cielo-arc09/LEGGIMI.md.
+Jfs ha scelto sulla card la Torre invisibile: la carta del rito di Zalkatar fissa notte (30 Mirtul) e luogo (stella-chiave HIP 81833 allo zenit). PR #422 in bozza (14/11): handout 7 in Arco-Post-Hammerfist-HANDOUTS.md, file in 09_…/Immagini-Handout/carta-del-cielo/. Voce MS-0108 da rinumerare alla prossima libera dopo main al riallineo (coordinatore 14/11 00:32: non 0117); merge solo col via del coordinatore. Decisi da Jfs sulle card del 14/11: consegna sul mago dei piromanti drow con Sethrax come seconda occasione; passo un grado a sud (~110 km). Nessun INFERRED resta.
+Coda: #417, #421, poi #422; via del coordinatore con lo SHA di main dopo la #421. CI: «Validate skills & scripts» vuole l'attesa di §6.2 (2C) in STATO-E-ORDINE-DEI-PIANI aggiornata quando un handout aggiunge un box (589 → 590).
+**How to apply:** prima del merge riallineare, rinumerare la voce MS, impronte.py --confronta. Vedi [[mappe-scala-reale]].
+14/11 04:30, Stellarium 26.2 (AppImage ufficiale da github.com/Stellarium releases, 592 MB, contiene SkyCultureMaker): rifiuta la cultura .fab della #422 («Failed to find index.json»); con index.json e MarkerMgr.markerEquatorial due lanci danno 0 pixel diversi (23.4 col segno di selezione: 619; 26.2 col segno di selezione: 518). Stella-chiave al centro in entrambe (scarto 0,0 px). quitStellarium si blocca senza schermo: lo screenshot esce, serve timeout. Va spostata /usr/share/stellarium della 23.4, se no l'AppImage legge quei dati. SkyCultureMaker è solo GUI: index.json scritto a mano. Immagini in /mnt/project-files/carta-cielo-arc09/stellarium-26.2/. PR 2 dopo il merge della #422 (stesso ramo ripartito da main).
+14/11 09:40: blocco della 26.2 in chiusura risolto in config ([init_location] location fissa, automatic_updates_enabled=false, flag_search_online=false): rc 0 in 30 s, 0 px fra due lanci. ArchaeoLines (showCustomDeclination1 a 38.922, tutte le altre linee spente) traccia il parallelo del Sigillo; Vega (+38,8°) ci cade sopra. Card a Jfs cmsg_019sykApdKEBBe8D8NJyiFEG768RnMeztfxaAJVp8BWLtL (consigliata: sì).
+#422 unita 14/11 08:4x: merge 744e04df sopra 5cf4f18e, MS-0110.
+14/11 10:20: Jfs ha scelto «Sì, con il parallelo». PR #426 in bozza (26.2, index.json, MarkerMgr, ArchaeoLines), voce MS-0114 provvisoria; merge col via del coordinatore.
+#426 unita 14/11 10:42: merge 74ab8c8d sopra 7c27cb20, MS-0115. Lavoro chiuso; la carta si rifà con PROVENIENZA.txt.
+18/11: ricontrollo chiesto da Jfs. Carta riprodotta identica dai file su main. PR #472 in bozza (voce «Il cerchio grande» senza > spezzava la nota DM; 110 km a 6 m = fra 4 e 5 giorni). «Circa nove gradi» il 22 Mirtul è giusto (8 notti + 1 grado delle 00:04). Card aperta a Jfs cmsg_019sykApdKEBBe8D8NJyiFEGQ5J2RHewRjLcaKi8qqHn8d: ARC-09 dice «fine Mirtul» ma l'ancora del 12/07 (state-changelog, session_recap MARCH_DAY1_HARPTOS) dice Giorno 1 = 1 Flamerule; se Flamerule la carta va rifatta (a mezzanotte del 30 Flamerule la stella-chiave è 58 gradi oltre il meridiano), consigliata Flamerule.
+18/11 13:10: Jfs ha scelto «30 Flamerule: rifaccio la carta». #472 (testa e54c3954): 2000-07-31 00:05:45 UT, HIP 102098 (lat 45,281), Sigillo = 102098-97165-95947-102488, Ali = W di Cassiopea, Ragno tramontato (nove figure). MS-0166 provvisoria; sesta in coda, turno dal coordinatore. Gli altri «Mirtul» di ARC-09 al thread della coerenza. Il primo lancio dopo aver copiato una cultura nuova differisce di 1 livello in ~1800 px fuori orizzonte. impronte --confronta: 3 rosse anche su main (suggest_encounter, conformita_statblocchi, derive_statblocks).
+#472 unita 18/11 23:39 UTC: merge 6f0e135b sopra 4588bc5f, MS-0184. Carta al 30 Flamerule su main; gli altri «Mirtul» di ARC-09 sono del thread della coerenza (#481).

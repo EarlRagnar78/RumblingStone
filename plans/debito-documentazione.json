@@ -1,0 +1,7 @@
+{
+  "tetto": 106,
+  "misurato": "2026-11-27, ramo claude/project-thread-dzjuh9 sopra 0d9e65e3: 106 (106 script di primo livello fuori da docs/INDEX.md; 0 agenti, 0 workflow, 0 hook, 0 ADR). Prima, su main 076a74d1: 127 (109 script, 13 agenti, 4 workflow, 1 hook).",
+  "nota": "Cricchetto di documentazione_allineata.py --debito --check (ADR-0153): il tetto si abbassa a mano quando il debito scende, mai si alza.",
+  "token_per_attivazione": 174239,
+  "token_fonte": "Misura del 2026-11-27, thread «verifica dei processi più hook, CI o schedulazione»: autore-documenti ha usato 174.239 token di sottoagente (45 chiamate, 6 min 19 s) per pagare 21 elementi, scrivere §14.1 di ARCHITETTURA.md, ADR-0153 e la riga di CHANGELOG e MEMORIA-STORICA. Limite: è un lavoro grosso, un'attivazione piccola costa meno e non è misurata. Il controllo --attiva da solo è una chiamata Bash, circa 1-2 mila token."
+}

@@ -134,6 +134,20 @@ jobs:
       - name: Link e percorsi locali — su tutti i sorgenti scritti a mano
         run: python scripts/validate_docs.py --sorgenti
 
+      # ADR-0153, audit del 2026-11-27: dopo la #510 AGENTS.md non nominava
+      # nessuno dei 13 agenti e docs/INDEX.md nessuno degli script nuovi. Un
+      # agente, uno script, un workflow o un hook AGGIUNTI dalla PR sono citati
+      # nel loro indice; il debito vecchio non boccia (la base viene dal
+      # checkout con fetch-depth: 0, come per il cricchetto della prosa).
+      - name: Documentazione — la struttura nuova è citata nel suo indice (ADR-0153)
+        if: github.event_name == 'pull_request'
+        run: python scripts/documentazione_allineata.py --rispetto-a "origin/${{ github.base_ref }}"
+
+      # Il debito di tutto il repo, a cricchetto sul tetto di
+      # plans/debito-documentazione.json: si abbassa a mano, mai si alza.
+      - name: Documentazione — il debito non cresce (cricchetto, ADR-0153)
+        run: python scripts/documentazione_allineata.py --debito --check
+
       # ADR-0148, canale testing fino al 2026-12-04 (14 giorni e 10 run su main):
       # i rimandi «FILE §N» e «vedi §N» puntano a un titolo che esiste. La regola
       # sul «§N» senza nome è tarata sul repo del 20/11; sullo storico (tre
@@ -402,8 +416,10 @@ jobs:
           python scripts/dm_dossier.py --help > /dev/null
           python scripts/validate_modules.py --help > /dev/null
           python scripts/tools_manifest.py --help > /dev/null
+          python scripts/memoria_custode.py --help > /dev/null
           python scripts/decisioni_dm.py --help > /dev/null
           python scripts/validate_docs.py --help > /dev/null
+          python scripts/documentazione_allineata.py --help > /dev/null
           # Catena editoriale e da stampa: questi sette dichiaravano `ci_smoke`
           # nel manifest e non venivano eseguiti da nessuno — il contratto
           # prometteva una verifica che non esisteva (ADR-0012).

@@ -1,6 +1,6 @@
 # ADR-0151 — La memoria del progetto ha uno specchio e un custode
 
-**Stato**: proposta (2026-11-27); due card aperte al DM (copia nel repo, hook di merge bloccante), con le consigliate già implementate in attesa della risposta
+**Stato**: accettata (2026-11-27): il DM ha scelto sulle due card del thread la copia redatta nel repo con quella completa in `/mnt`, e l'hook di merge bloccante
 **Data**: 2026-11-27
 **Decisione-fonte**: il DM (Jfs), 2026-11-27, thread «Creare l'agente custode della memoria»: un agente che porti la memoria storica dal progetto al repo, risponda agli altri agenti dalla memoria del progetto e da quella storica, tenga una copia della memoria nel repo, e un obbligo (regola o hook) di chiamarlo prima del merge.
 **Rapporti**: rende misurabile la regola «archivia prima di togliere» di [ADR-0127](ADR-0127-la-memoria-corta-archivia-nel-repo-prima-di-togliere.md); usa la coda di [ADR-0137](ADR-0137-la-memoria-storica-si-scrive-a-ogni-blocco-di-lavoro-non-solo-al-merge.md) e il suo cancello di [ADR-0138](ADR-0138-la-coda-della-memoria-storica-ha-un-cancello.md); lancia il tetto di [ADR-0139](ADR-0139-la-memoria-corta-ha-un-tetto-misurato.md) a ogni verifica. Aggiunge il quattordicesimo agente a quelli di [ADR-0146](ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md) §4; i canali sono quelli di [ADR-0099](ADR-0099-la-piattaforma-ha-tre-canali-come-debian.md).
@@ -77,14 +77,15 @@ suoi, che nessun hook del repo intercetta.
    `cerca` citando fonte e riga, lancia `verifica` prima di toccare la memoria
    e prima di un merge, e se fallisce `archivia`. Non copia dati personali nel
    repo.
-7. **La copia nel repo** (card aperta). `redigi --uscita plans/memoria-progetto/`
-   copia la memoria con le righe riservate sostituite da un'impronta. La
-   consigliata è la copia redatta nel repo e quella completa in `/mnt`; le
-   alternative sono solo `/mnt` o la copia integrale nel repo. Finché il DM
-   non risponde la copia non si genera, e quando si genera va in una PR di
-   sola storia.
-8. **Il merge bloccante** (card aperta). La consigliata è l'hook di merge che
-   blocca, ed è quella in vigore; l'alternativa è che anche lui solo avvisi.
+7. **La copia nel repo** (scelta del DM, card del 2026-11-27). `redigi --uscita
+   plans/memoria-progetto/` copia la memoria con le righe riservate sostituite
+   da un'impronta; la copia completa resta nelle istantanee in `/mnt`. Scartate
+   la copia solo in `/mnt` e quella integrale nel repo, che è pubblico. La prima
+   copia entra con questa PR (87 file, 25 righe riservate); dopo si rigenera in
+   una PR di sola storia, di norma con la piega del lunedì.
+8. **Il merge bloccante** (scelta del DM, card del 2026-11-27). L'hook di merge
+   blocca; scartato il solo avviso, la forma che ADR-0127 e ADR-0139 avevano
+   già provato.
 
 ## Le conseguenze
 
@@ -95,8 +96,8 @@ suoi, che nessun hook del repo intercetta.
   dalla memoria e 89 ms dentro; il timeout è 10 s.
 - Quello che si paga: un thread può essere fermato al merge per righe tolte da
   altri, il coordinatore compreso. Il rimedio è un comando, `archivia`, e il
-  messaggio dell'hook lo dice. Oggi le 12 righe non archiviate fermerebbero il
-  primo merge dopo l'attivazione.
+  messaggio dell'hook lo dice. Delle 56 righe di `MEMORY.md` di oggi, 12
+  fermerebbero un merge se fossero tolte senza archiviarle.
 - **Cosa non vede.** `gh pr merge` da Bash e il merge dall'interfaccia di
   GitHub non passano dall'hook. Le scritture del coordinatore si vedono solo
   alla verifica successiva. Un hook in timeout lascia passare il merge, e così

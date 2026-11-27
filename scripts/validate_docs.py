@@ -114,6 +114,10 @@ ESCLUSI_PREFISSO = (
     # master intero, con i suoi link relativi alla cartella del master: letti
     # da qui puntano tutti nel vuoto. Il master vero e' controllato al suo posto.
     "plans/scrittura/revisioni-",
+    # La copia redatta della memoria del progetto (ADR-0151) la rigenera
+    # `memoria_custode.py redigi` da una fonte fuori dal repo, che cita anche
+    # file nei rami aperti: si corregge la memoria, non la copia.
+    "plans/memoria-progetto/",
 )
 ESCLUSI_FRAMMENTO = ("/homebrew/",)
 ESCLUSI_SUFFISSO = (".hb.md",)

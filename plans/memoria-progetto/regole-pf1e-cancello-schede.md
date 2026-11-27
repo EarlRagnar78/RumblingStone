@@ -1,0 +1,22 @@
+---
+name: regole-pf1e-cancello-schede
+description: ADR-0119 (PR #363, 2026-11-09): regole PF1e del cancello delle schede dal PRD, conti in prova, promozione 2026-11-23
+metadata:
+  type: project
+  modified: 2026-11-09T12:33:59.197Z
+---
+PR #363 (bozza, ramo claude/project-thread-8tgb80, 2026-11-09), ADR-0119. Numeri ADR decisi dal thread padre: 0117 = #362 (mappe JSON), 0118 = cancello dei numeri del thread «Scelte dell'8/11», 0119 = questo, 0120 = la «d» eufonica.
+- `sistemi/pf1e/dati/conformita_prd.toml` è generato da plans/esperimenti/sistemi-plugin-2026-11-07/estrai_prd_pf1e.py: 55 classi, sensi per tipo, sottotipo e razza, Corrupt Water. Va rigenerato e non si scrive a mano.
+- In conformita.toml ci sono `fatti` (bloccanti) e `in_prova` (avviso ⚠). `--cancello-moduli --severo` fa bloccare anche i conti in prova. Promozione dei 14 conti proposta per il 2026-11-23.
+- Corretti 7 numeri nei moduli: Vidalia e lo skum a Volontà +8; Sfregio CA 19 e DMC 20; cavallo DMC 17 con visione crepuscolare; Tariq a 101 pf con Robustezza.
+- Restano fuori: attacco (ADR-0118), abilità, CD delle capacità speciali e PG pregenerati del Drappo (non sono recinti).
+**Why:** Jfs voleva che il cancello coprisse tutto il PF1e. **How to apply:** se un modulo PF1e è nuovo, basta `--cancello-moduli`. Se manca una classe o una razza, va aggiunta al lessico o al PRD, non a mano.
+- Stato 2026-11-09 sera: #363 riallineata a main (head 65c3dd48, CI verde 12/12, clean). Ordine di merge: prima #364 (ADR-0118), ferma per un errore sugli AU delle unità in attesa di una scelta di Jfs; poi #363. Dopo la #364: merge di main, riga `fatti` di conformita.toml con le voci di tutte e due, poi `--cancello-numeri` (se chiude scarti: `--aggiorna-numeri`; se ne apre: correggere il numero).
+- In parallelo (pytest -n auto) test_validate_pg a volte fallisce: test_validate_docs crea e cancella plans/adr/ZZZ-prova-file-nuovo.md mentre l'altro legge. Non è della PR; segnalato al thread audit.
+- 2026-11-09 23:45 coordinamento chiesto da Jfs: prova di unione #363+#364 (0525df6f) nel worktree /tmp/claude-0/prova364 (ramo locale prova-364, mai pubblicato): 8 conflitti, tutti «tieni le due parti»; conformita.toml = liste mie + "attacco" in fatti; README 117 ADR; docs/tools/README con tools_manifest --emit-all; --cancello-numeri verde senza --aggiorna-numeri. Proposta al thread #365: BAB/TS in conformita_prd.toml restano a questo thread, dadi vita/griglie/armature PF1e a loro con lo stesso estrai_prd_pf1e.py; ordine #364 → #363 → lotto PF1e #365.
+- Lotto 2 (2026-11-09 notte, commit 855ac565 sulla #363, richiesta di Jfs nel thread #365): estrai_prd_pf1e.py genera sistemi/pf1e/dati/classi.toml (55 classi: dv, bab, ts_buoni, gradi, gruppo; [incantatori] 22, [griglie], [conosciuti] 8, [preparati] arcanist, [avanza_incantatore], [alias]) e [armature]/[scudi] in creature.toml. Patto: questo thread scrive i DATI; il thread «Verificare i plugin» (#365, ADR-0121) collega dmcore/derive/genera e misura, partendo da questo ramo. classi.toml non è dichiarato in sistema.toml apposta (S.dati fonde le chiavi). Il lettore dell'audit sbaglia i TS buoni di prestigio (parte da +1).
+- Lotto 3 (2026-11-10): commit LOCALE 5d140356 sopra 855ac565, NON pubblicato (il padre ha chiesto di non muovere la testa della #363 in attesa del sì di Jfs al merge; #363 non più bozza, 12/12). Genera sistemi/pf1e/dati/liste_incantesimi.toml (spell_lists del PRD: 22 classi, 1.536 incantesimi, [libro], [nomi_it] 1.480; fuori mitici, Elementalist Wizard, warpriest 7-9; sciamano senza livello 0 nel PRD). Patch in /mnt/project-files/pf1e-liste-incantesimi-2026-11-10/. Dopo il merge della #363: ramo da main, cherry-pick, PR nuova.
+- 2026-11-10 00:10: Jfs sulla card del padre ha scelto «Aspetta la #364» (ordine #364 → #363 → #365). Quindi 5d140356 (liste incantesimi) PUBBLICATO sulla #363; la riga sopra «non pubblicato» è superata. Dopo il merge della #364: riallineare e mandare la testa nuova al padre.
+
+Lotto 4 (2026-11-10, testa 757e6e69): corretto il doppio conteggio classi nome+tipo in `conti_di_classe`; `[pf_bonus_costrutti]` in creature.toml PF1e ricavato dalle schede dei Bestiary (tabella assente nel PRD): tiny 0, small 10, medium 20, large 30, huge 40, gargantuan 60, colossal 80 (1 scheda sola); fine/diminutive assenti. In attesa: avviso del padre che la #364 è su main, poi riallineo.
+- 2026-11-10: **#363 unita su main** (merge 8598d67, testa bb23e122) dopo la #364 (421dbd0). Il lavoro PF1e successivo parte da main.

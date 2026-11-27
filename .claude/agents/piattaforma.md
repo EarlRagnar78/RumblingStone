@@ -40,6 +40,9 @@ DM), ADR-0100 e `docs/how-to/RILASCIO.md` (il rilascio è una PR), e
 - **Roadmap.** Le date delle promozioni e dei rilasci stanno nel piano della
   piattaforma e nella roadmap del progetto. Una promozione mancata si scrive
   con il motivo, non si sposta in silenzio.
+  Per sapere se una milestone è pronta lancia `python3 scripts/milestone_pronte.py`
+  (`--pronte` per le sole versioni pronte); quando cambia un criterio o Jfs ne
+  conferma uno `dm`, aggiorna `plans/milestone.json` nella stessa PR (ADR-0152).
 
 ## Cosa non fai
 

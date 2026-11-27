@@ -231,6 +231,9 @@ def rendi() -> str:
           "| Cosa sapevano le sessioni prima, la storia dietro una scelta | "
           "[`plans/MEMORIA-STORICA.md`](plans/MEMORIA-STORICA.md), si cerca con "
           "`scripts/memoria_storica.py` (ADR-0127) |",
+          "| Il lavoro che non è ancora su `main` (PR, rami, cartelle dei thread) | "
+          "[`plans/LAVORO-IN-CORSO.md`](plans/LAVORO-IN-CORSO.md), istantanea dal registro "
+          "`plans/lavoro-in-corso.json`: `python3 scripts/lavoro_in_corso.py --fetch` (ADR-0157) |",
           "| Le norme e chi le misura | [`skills/REGISTRO-NORME-EDITORIALI.md`](skills/REGISTRO-NORME-EDITORIALI.md) |",
           "| Le regole per gli agenti | [`AGENTS.md`](AGENTS.md) |",
           "| Questa pagina | `scripts/memoria.py`, mai a mano |", ""]

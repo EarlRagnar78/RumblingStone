@@ -96,6 +96,11 @@ jobs:
       - name: Pending adoptions (adozioni_in_attesa.py --check)
         run: python scripts/adozioni_in_attesa.py --check
 
+      # Il registro dei filoni in sviluppo: solo la forma, offline. La pagina
+      # plans/LAVORO-IN-CORSO.md dipende da rete e macchina e NON si controlla qui.
+      - name: Registro del lavoro in corso (lavoro_in_corso.py --check)
+        run: python scripts/lavoro_in_corso.py --check
+
       # Le frasi vere del DM raggiungono le skill obbligatorie (L8, ORCHESTRAZIONE §4):
       # a cricchetto, fallisce se le omissioni superano il tetto di casi.json
       - name: Skill routing (instradamento_skill.py --check)

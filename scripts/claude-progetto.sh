@@ -48,7 +48,7 @@ if scrivibile "${DEST}/CLAUDE.md"; then
 - Lavora dentro \`${REL}/\`: i comandi del repo partono da lì.
 - Le regole di \`${REL}/AGENTS.md\` (instradamento delle skill, regole d'oro) arrivano da sole da \`${REL}/.claude/rules/\` quando apri un file del repo, ognuna sui file a cui serve (ADR-0141): non serve leggere AGENTS.md intero.
 - Prima di modificare qualunque file del repo: \`python3 scripts/fase1.py <bersagli>\` (regola G6), anche se le regole non sono ancora arrivate.
-- Per riprendere un lavoro: \`${REL}/MEMORIA.md\`. Per la storia di una scelta: \`python3 scripts/memoria_storica.py --tema T\` (dal repo).
+- Per riprendere un lavoro: \`${REL}/MEMORIA.md\`. Per il lavoro in corso fuori da main: \`${REL}/plans/LAVORO-IN-CORSO.md\` (\`python3 scripts/lavoro_in_corso.py --fetch\` o \`/lavoro-in-corso\`). Per la storia di una scelta: \`python3 scripts/memoria_storica.py --tema T\` (dal repo).
 - I tool del DM sono nel server MCP \`rumblingstone-tools\` (sola lettura, ADR-0030).
 - Prima di scrivere testo, chi lo legge? Un giocatore: skill \`rumblingstone-narrative-style\` e i suoi quattro references obbligatori, o l'agente \`autore-prosa-gioco\`; il repo: \`rumblingstone-prosa-documenti\`; codice: nessuna skill di prosa. Poi si sommano quelle del compito (albero: \`${REL}/skills/ORCHESTRAZIONE.md\`, agenti: \`${REL}/.claude/agents/\`). Un hook ferma la prosa di gioco scritta senza la sua skill (ADR-0146).
 - Le skill del repo si ricostruiscono all'avvio; lo stato è in \`${REL}/.claude/.skills-sync-status\`.

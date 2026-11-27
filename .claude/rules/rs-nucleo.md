@@ -52,6 +52,13 @@ regenerate via `dm.py recap --hype` / `dm.py handout`, never edit by hand.
 > niente di utile resta nello scratchpad di una sessione: prima di chiudere
 > entra nel repo.
 >
+> **Il lavoro che non è ancora su main** (PR aperte, rami, cartelle dei thread)
+> sta in [`plans/LAVORO-IN-CORSO.md`](plans/LAVORO-IN-CORSO.md), che si
+> rigenera con `python3 scripts/lavoro_in_corso.py --fetch` dal registro curato
+> `plans/lavoro-in-corso.json`; in Claude Code e in OpenCode il comando è
+> `/lavoro-in-corso`
+> ([ADR-0157](plans/adr/ADR-0157-il-lavoro-fuori-da-main-ha-una-pagina-dal-vivo.md)).
+>
 > **La storia dietro una scelta** (regressione, soluzione già provata) sta in
 > [`plans/MEMORIA-STORICA.md`](plans/MEMORIA-STORICA.md): si cerca con
 > `python3 scripts/memoria_storica.py --pr N | --adr N | --tema T | parole`.

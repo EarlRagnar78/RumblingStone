@@ -972,6 +972,12 @@ sia citato, non che la descrizione sia giusta. Un documento che resta indietro
 senza che una PR aggiunga niente di scoperto lo trova la routine del lunedì,
 che spende token solo quando `--attiva` dice che serve.
 
+Il lavoro che i thread tengono ancora fuori da `main` (PR, rami, cartelle
+condivise di `/mnt/project-files`) non passa da nessuno di questi anelli.
+Lo raccoglie `scripts/lavoro_in_corso.py` in `plans/LAVORO-IN-CORSO.md`, dal
+registro curato `plans/lavoro-in-corso.json`; la pagina dipende da rete e
+macchina, e in CI entra solo la validazione del registro (ADR-0157).
+
 ## 15. Le decisioni del DM
 
 ```mermaid
@@ -1398,6 +1404,7 @@ Riferimenti: [ADR-0109](../../plans/adr/ADR-0109-una-marcatura-sola-e-il-dm-deci
 | i tetti delle misure di stampa | `docs/audit/stampa-booklet.json`, `docs/audit/statblocchi-booklet.json` |
 | perché una cosa è fatta così | [`plans/adr/`](../../plans/adr/), indice in [`docs/INDEX.md`](../INDEX.md) §4 |
 | cosa resta da fare | [`plans/INDEX.md`](../../plans/INDEX.md), [`plans/STATO-E-ORDINE-DEI-PIANI.md`](../../plans/STATO-E-ORDINE-DEI-PIANI.md) |
+| il lavoro in sviluppo che non è ancora su `main` | [`plans/LAVORO-IN-CORSO.md`](../../plans/LAVORO-IN-CORSO.md), guida in [`how-to/GUIDA-LAVORO-IN-CORSO.md`](../how-to/GUIDA-LAVORO-IN-CORSO.md) (ADR-0157) |
 | cosa è cambiato fra due versioni | [`CHANGELOG.md`](../../CHANGELOG.md) |
 | una guida, un riferimento, una spiegazione | `docs/how-to/`, `docs/reference/`, `docs/explanation/`, `docs/tutorials/`, indice in [`docs/INDEX.md`](../INDEX.md) §3 (Diátaxis, ADR-0123) |
 | come si prepara una macchina | [`tutorials/GUIDA-SETUP-MACCHINA.md`](../tutorials/GUIDA-SETUP-MACCHINA.md) |

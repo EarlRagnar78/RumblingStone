@@ -80,7 +80,7 @@ La **sincronizzazione** col fronte (INTEGRAZIONE §3): due vie per i rinforzi vi
 Griglia **1 quadretto = 5 ft**, EL 12–13 (statblocchi in `...P2D-PALIO-STATBLOCCHI.md` §3).
 - I drow entrano dalla **botola/fogna** (angolo SO) con *Oscurità*; puntano al **BOX** del
   cavallo (obiettivo: avvelenare il cavallo o rapire il fantino), usano *Silenzio* per soffocare gli allarmi.
-- Il **Barbaresco (B)** è accanto al cavallo; il **fantino (F)**, se è un PNG ancora lì, dorme nella stalla, accanto al box `[CANONE — DM 2026-11-27, card «Dove dorme il fantino»]`: se è fuggito o i rivali l'hanno già rapito (GIORNO2 §3.2) togli il segnalino, se è un PG il segnalino va dove lo mette il giocatore `[CANONE — DM 2026-11-27, card «Fantino PG o già fuggito»]`; la **scorta PG (P)** copre la porta principale.
+- Il **Barbaresco (B)** è accanto al cavallo; il **fantino (F)**, se è un PNG ancora lì, dorme nella stalla, accanto al box `[CANONE — DM 2026-11-27, card «Dove dorme il fantino»]`: se è fuggito o i rivali l'hanno rapito (GIORNO2 §3.2) togli il segnalino, se è un PG il segnalino va dove lo mette il giocatore `[CANONE — DM 2026-11-27, card «Fantino PG o già fuggito»]`; la **scorta PG (P)** copre la porta principale.
   Sorpresa se non di guardia: Ascoltare DC 20.
 - Buio totale (torce spente): **Scurovisione**/luce = cruciale.
 - Token in mappa: **D** Drow Assassina di Lolth · **C** Chierica di Lolth · **S** Servitore della Spora · **F** fantino.

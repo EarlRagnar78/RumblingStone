@@ -43,11 +43,15 @@ Modello semplice, 3.5 (Yrsa PF1e):
   Grandi dell'SRD, 1d8+10. La testa sinistra da' +2
   ai danni del primo colpo a segno del round (scheda). Divide i colpi: il
   primo randello su Borin se c'e', l'altro sul piu' ferito degli altri;
-- Grimjaw: al round 1 non attacca; dal suo turno del round 2 e' in Furia
-  Comandante, con +26 pf; resistenza al fuoco 10 (armatura demoniaca,
-  ARC08-01). La soglia di fuga resta 89 pf, meta' dei 178 della scheda: i
-  26 pf della Furia non la spostano. Se al suo turno e' gia' sotto 89, fugge
-  senza entrare in Furia;
+- Grimjaw: la scheda del Bestiario dal 2026-11-26 (card del DM «Come
+  rinforzo Grimjaw», opzione A: Guerriero 11 / Signore della Guerra 3, 122
+  pf, CA 27). Al round 1 non attacca; dal suo turno del round 2 e' in Furia
+  Comandante, con +28 pf; resistenza al fuoco 10 (armatura demoniaca,
+  ARC08-01). La soglia e' 61 pf, meta' dei 122: sotto, al suo turno,
+  ripiega dietro la guardia (la colonna «fugge»); i 28 pf della Furia non la
+  spostano. Se al suo turno e' gia' sotto 61, ripiega senza entrare in Furia.
+  Fino al 2026-11-26 la scheda era quella di prima: 178 pf, CA 26, +24/+19/+14
+  in Furia (1d10+11), soglia 89;
 - Yrsa: Concentrazione Furiosa (Furious Focus, PF1e) vale solo con un'arma
   a due mani, e Yrsa porta lo scudo: Attacco Poderoso +19/+14/+9, 1d10+18.
   La scheda di ARC08-01 scrive +23/+14/+9: e' una domanda al DM. La Sfida
@@ -108,10 +112,13 @@ contro Gorthak. Tre politiche, una alla volta:
   Dara una freccia in piu' a +17; Ragnhild, nel suo primo turno, una palla di
   fuoco in piu' (10d6, CD 22) se nessun nano e' in mischia, se no tre raggi
   roventi in piu';
-- «movimento» (Extra Action, azione di movimento): nel turno in cui l'eroe
-  si muove per arrivare al nemico fa tutti i suoi attacchi invece di uno
-  solo (il movimento e' l'azione in piu', e gli resta il round intero); Dara
-  e Ragnhild, che non si muovono, non lo spendono.
+- «movimento» (Extra Action, azione di movimento): l'eroe la spende nel
+  turno in cui si muove per arrivare al nemico, e in quel turno fa un
+  attacco solo, come senza il punto: movimento e azione standard, non
+  l'attacco di un round intero (SRD 3.5; card del DM del 2026-11-26,
+  «movimento col punto eroe e attacco completo»). Il punto e' speso, e nei
+  duelli non da' niente; Dara e Ragnhild, che non si muovono, non lo
+  spendono.
 Senza --punto-eroe l'uscita e' quella di sempre, byte per byte: il punto non
 tira dadi e non cambia la sequenza dei tiri.
 
@@ -274,6 +281,12 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
     def fortuna(e):
         return 8 if spende(e, "bonus") else 0
 
+    def arriva(e, colpi):
+        """L'eroe si muove per arrivare: un attacco solo, anche col punto speso
+        per muovere (card del DM del 2026-11-26)."""
+        spende(e, "movimento")
+        return colpi[:1]
+
     def attacca_eroe(e, b, colpi):
         su_boss = b is boss
         if spende(e, "azione"):
@@ -343,8 +356,7 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
                     ferisci(e, colpo(bon2, e["ca"], dadi2, f2, mn2, ml2))
                     if e["pfcur"] <= 0:
                         return
-                if not spende(e, "movimento"):
-                    colpi = colpi[:1]
+                colpi = arriva(e, colpi)
             attacca_eroe(e, boss, colpi)
             return
         tutte = [n for n in nemici if n.ruolo == "scorta"]
@@ -360,8 +372,7 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
             # la rampa chiusa: prima si abbatte una guardia
             if not e.get("_mischia"):
                 e["_mischia"] = True
-                if not spende(e, "movimento"):
-                    colpi = colpi[:1]
+                colpi = arriva(e, colpi)
             attacca_eroe(e, primo[0], colpi)
             return
         if not e.get("_sul_boss"):
@@ -371,11 +382,9 @@ def duello(nemici_fn, eroi_nomi, giganti=False, round_max=8, ragn_apre=True, dar
                     ferisci(e, colpo(bon2, e["ca"], dadi2, f2, mn2, ml2))
                     if e["pfcur"] <= 0:
                         return
-                if not spende(e, "movimento"):
-                    colpi = colpi[:1]
+                colpi = arriva(e, colpi)
             elif not (muro and e.get("_mischia")):
-                if not spende(e, "movimento"):
-                    colpi = colpi[:1]  # si avvicina: un attacco solo
+                colpi = arriva(e, colpi)  # si avvicina: un attacco solo
             e["_mischia"] = e["_sul_boss"] = True
         attacca_eroe(e, boss, colpi)
 
@@ -565,17 +574,19 @@ def gorthak(avanzato=False, troll_avanzati=False, sportello=True, scheda=False, 
 
 def grimjaw(orog_avanzati=False, muro=0, fronte=0):
     def fn():
+        # la scheda del Bestiario (card del DM del 2026-11-26, «Come rinforzo Grimjaw»,
+        # opzione A): Guerriero 11 / Signore della Guerra 3, 122 pf, CA 27, contatto 11.
         # round 1: Tattico Superiore e Presenza, nessun attacco; dal round 2 Furia
-        # Comandante: +24/+19/+14 (1d10+11, 17-20) e +26 pf
-        g = Nemico("Grimjaw", 178, 26, [A(24, (1, 10), 11, 17), A(19, (1, 10), 11, 17), A(14, (1, 10), 11, 17)],
-                   rifl=8, iniz=5, fuga=89, ruolo="boss", primo=[])
+        # Comandante: +26/+21/+16 (1d10+12, 17-20) e +28 pf. Sotto meta' (61) ripiega
+        g = Nemico("Grimjaw", 122, 27, [A(26, (1, 10), 12, 17), A(21, (1, 10), 12, 17), A(16, (1, 10), 12, 17)],
+                   rifl=6, iniz=4, fuga=61, ruolo="boss", primo=[])
         g.guardato = True
         g.muro = muro
         g.fronte = fronte
         g.presenza = 19
-        g.contatto = 12
+        g.contatto = 11
         g.resfuoco = 10  # Armatura Completa Demoniaca +2 (ARC08-01)
-        g.furia_pf = 26
+        g.furia_pf = 28
         g.tiro = [A(15, (1, 8), 7, 20, 3), A(10, (1, 8), 7, 20, 3), A(5, (1, 8), 7, 20, 3)]
         g.tiro_dal = 2
         out = [g]
@@ -649,7 +660,7 @@ TABELLA_EL = [
     ("duello del sergente: oggi GS 6 solo (la scorta non entra) / Avanzato GS 7 + 2 veterani GS 5", [6], [7, 5, 5]),
     ("pattuglia e scout insieme (col sergente di oggi / Avanzato)", [5, 5, 5, 2, 2, 2, 6] + [2] * 9, [5, 5, 5, 2, 2, 2, 7] + [2] * 9),
     ("Gorthak GS 12 + 2 troll GS 6 / Gorthak Avanzato GS 13 + 2 troll GS 6", [12, 6, 6], [13, 6, 6]),
-    ("Grimjaw GS 14 + 4 orog GS 7", [14, 7, 7, 7, 7], None),
+    ("Grimjaw GS 15 + 4 orog GS 7", [15, 7, 7, 7, 7], None),
     ("il soffio: Fauci GS 15 + cavaliere GS 10", [15, 10], None),
     ("bugbear: 8 x GS 9", [9] * 8, None),
     ("bugbear con la diversione: 8 x GS 9 + 7 x GS 5", [9] * 8 + [5] * 7, None),
@@ -672,8 +683,9 @@ LIMITI = """## Limiti delle prove
   (morente: privo di sensi, perde 1 pf a round, col 10% di stabilizzarsi) e
   chi e' a -10 o meno (morto) (SRD 3.5, «Injury and Death»). Vale anche per
   «un eroe a terra». Il sergente, Gorthak e Grimjaw non rigenerano e nel
-  modello non si curano: la pozione che la scheda da' a Grimjaw sotto i 60
-  pf non c'e', perche' sotto 89 e' gia' fuggito.
+  modello non si curano: la *cura ferite gravi* che Grimjaw beve dopo aver
+  ripiegato sotto 61 non c'e', perche' a quel punto ha gia' lasciato la
+  rampa (la colonna «fugge»).
 - I troll dell'ariete rigenerano 5 danni non da fuoco a round, ma un troll a
   0 pf o meno resta fuori fino alla fine del duello. Per l'SRD 3.5
   («Regeneration») i danni che non vengono dal fuoco o dall'acido sono per
@@ -726,6 +738,11 @@ LIMITI_PUNTO = """## Come leggere queste cifre
   una differenza di uno o due punti e' rumore.
 - Il +8 vale su un d20 solo: il tiro per colpire, non la conferma del
   critico. Speso dopo il tiro varrebbe +4, e non e' provato.
+- L'azione di movimento in piu' da' le cifre di oggi, per scelta del DM
+  (card del 2026-11-26, «movimento col punto eroe e attacco completo»): chi
+  la spende per arrivare sul nemico fa un attacco solo in quel turno, come
+  senza il punto. Nei duelli non porta niente; serve a cose che qui non
+  sono provate, come allontanarsi o raggiungere un compagno.
 - Non provati: Agire fuori turno, Ripetere il tiro, Richiamare un
   incantesimo o un uso giornaliero, l'uso Speciale. Ingannare la morte costa
   due punti e nessun eroe li ha.

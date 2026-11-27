@@ -123,3 +123,65 @@ def test_orog_avanzato_e_la_scheda_con_l_archetipo_pf1e():
         assert (o.pfmax, o.ca, o.rifl, o.iniz) == (s["pf"] + 2 * s["dv"], s["ca"] + 4, s["rifl"] + 2, s["iniz"] + 2)
         assert o.primo == primo
         assert o.attacchi == poi
+
+
+# --- il punto eroe speso per muovere: un attacco solo ---------------------
+# Card del DM del 2026-11-26, «movimento col punto eroe e attacco completo»:
+# chi compra l'azione di movimento e si muove per arrivare sul nemico fa un
+# attacco solo in quel turno (SRD 3.5, movimento + azione standard), non
+# l'attacco completo. Il punto non tira dadi: i duelli restano quelli di oggi.
+def _duelli_punto(politica, titolo, eroi, n=300):
+    fn, giganti = {t: (f, g) for t, f, _c, g in sim.SCENARI}[titolo]
+    sim.PUNTO = politica
+    try:
+        sim.R.seed(f"prova|{titolo}|{'+'.join(eroi)}")
+        return [sim.duello(fn, eroi, giganti=bool(giganti)) for _ in range(n)]
+    finally:
+        sim.PUNTO = None
+
+
+def test_il_movimento_comprato_col_punto_lascia_un_attacco_solo():
+    for titolo, eroi in [("Gorthak, oggi, con lo sportello", ["Borin", "Yrsa"]),
+                         ("Grimjaw e quattro orog, oggi: la guardia si aggira", ["Borin", "Yrsa"]),
+                         ("Grimjaw e quattro orog, variante: la rampa chiusa, se ne abbatte uno",
+                          ["Borin", "Yrsa"]),
+                         ("Sergente, oggi (A.4; la scorta non entra)", ["Yrsa"])]:
+        assert _duelli_punto("movimento", titolo, eroi) == _duelli_punto(None, titolo, eroi), titolo
+
+
+# --- Grimjaw del simulatore e' quello del Bestiario --------------------
+_GRIMJAW = _RADICE / "Bestiario/villain/Generale_Grimjaw.md"
+
+
+def _scheda_grimjaw():
+    """I numeri di Grimjaw dal recinto ```statblocco del suo file."""
+    blocco = re.search(r"```statblocco\n(.*?)```", _GRIMJAW.read_text(encoding="utf-8"), re.S).group(1)
+
+    def campo(regex):
+        return re.search(regex, blocco, re.M).groups()
+
+    (ca,) = campo(r"^ca: (\d+)")
+    (contatto,) = campo(r"^ca-dettaglio: contatto (\d+)")
+    (pf,) = campo(r"^pf: (\d+)")
+    (dv,) = campo(r"^pf-dado: (\d+)d")
+    (cos,) = campo(r"^attributi: .*Cos (\d+)")
+    (rifl,) = campo(r"^ts: .*Rifl ([+-]\d+)")
+    (iniz,) = campo(r"^iniziativa: ([+-]\d+)")
+    a1, a2, a3, dmg = campo(r"spada bastarda \+1 \+(\d+)/\+(\d+)/\+(\d+) \(1d10\+(\d+)/17-20")
+    t1, t2, t3, tdmg = campo(r"arco lungo composito \+1 \+(\d+)/\+(\d+)/\+(\d+) \(1d8\+(\d+)/x3\)")
+    return dict(ca=int(ca), contatto=int(contatto), pf=int(pf), dv=int(dv), cos=int(cos),
+                rifl=int(rifl), iniz=int(iniz), att=(int(a1), int(a2), int(a3)), dmg=int(dmg),
+                tiro=(int(t1), int(t2), int(t3)), tdmg=int(tdmg))
+
+
+def test_grimjaw_del_simulatore_e_quello_del_bestiario():
+    s = _scheda_grimjaw()
+    (g,) = [n for n in sim.grimjaw()() if n.nome == "Grimjaw"]
+    assert (g.pfmax, g.ca, g.contatto, g.rifl, g.iniz) == (s["pf"], s["ca"], s["contatto"], s["rifl"], s["iniz"])
+    # la soglia del Morale: sotto meta' dei pf ripiega dietro la guardia
+    assert g.fuga == s["pf"] // 2
+    # gli attacchi del simulatore sono quelli della Furia Comandante: +4 For, cioe' +2 a colpire e ai danni
+    assert g.attacchi == [(b + 2, (1, 10), s["dmg"] + 2, 17, 2, "") for b in s["att"]]
+    # +4 Cos: +2 pf per DV
+    assert g.furia_pf == 2 * s["dv"]
+    assert g.tiro == [(b, (1, 8), s["tdmg"], 20, 3, "") for b in s["tiro"]]

@@ -2101,14 +2101,6 @@ monsters:
     role: flier
     environment: aerial
     source_file: "00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.md"
-  - id: generale-grimjaw-39a630
-    name: "Generale Grimjaw"
-    cr: 14.0
-    faction: red-hand
-    role: villain
-    environment: mountain
-    source_file: "Bestiario/villain/Generale_Grimjaw.md"
-    notes: "adattamento RHoD (Wyrmlord-like upscalato). Distinto da Khorn (nanico) e dagli altri comandanti."
   - id: krusk-lo-sfonda-cancelli-il-rivale-di-gorthak-mezzorco-gigante-barbaro-5-guerrie-2ad694
     name: "Krusk lo Sfonda-Cancelli — il rivale di Gorthak (mezzorco gigante, barbaro 5, guerriero 1, berserker furioso 7)"
     cr: 14.0
@@ -2116,6 +2108,14 @@ monsters:
     role: brute
     environment: any
     source_file: "Bestiario/villain/krusk-sfondacancelli-cr14.md"
+  - id: generale-grimjaw-39a630
+    name: "Generale Grimjaw"
+    cr: 15.0
+    faction: red-hand
+    role: villain
+    environment: mountain
+    source_file: "Bestiario/villain/Generale_Grimjaw.md"
+    notes: "adattamento RHoD (Wyrmlord-like upscalato). Distinto da Khorn (nanico) e dagli altri comandanti."
   - id: ghaurush-cenerevento-generale-elementalista-della-mano-rossa-f854ff
     name: "Ghaurush «Cenerevento» — Generale Elementalista della Mano Rossa"
     cr: 16.0

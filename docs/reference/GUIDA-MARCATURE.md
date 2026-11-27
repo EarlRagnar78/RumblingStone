@@ -41,7 +41,13 @@ data no.
 5. **Quando il DM decide**, la riga passa da INFERRED a CANONE nello stesso
    commit che applica la scelta. Se il DM cambia il fatto, il testo vecchio va
    in `<!-- storico -->` ([ADR-0069](../../plans/adr/ADR-0069-la-storia-delle-scelte-resta-nel-sorgente.md))
-   e sotto si scrive il fatto nuovo con la sua marca.
+   e sotto si scrive il fatto nuovo con la sua marca. Vale anche per i campi
+   aperti dei log delle sessioni e di `campaign/state.yaml` (PX, bottino,
+   esiti, presenti, «da compilare»): la riga che li chiude porta la marca
+   CANONE con la data della decisione, e senza una decisione del DM il campo
+   resta aperto. `sincronia_giocato.py` (regola S6) segnala la chiusura che
+   non cita il DM accanto a una data `AAAA-MM-GG`
+   ([ADR-0149](../../plans/adr/ADR-0149-il-giocato-arriva-sul-ramo-di-gruppo-con-un-agente-e-una-misura.md)).
 6. **Un INFERRED non sparisce in silenzio**: se esce da un sorgente, nello
    stesso commit c'è un CANONE, un GENERATO o un blocco storico. Fanno
    eccezione i volumi di stampa generati, dove le marche si tolgono apposta.

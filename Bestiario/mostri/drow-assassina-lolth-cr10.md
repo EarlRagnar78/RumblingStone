@@ -36,7 +36,7 @@ Medium humanoid (elf), NE. **DV 9d6**. **hp 34**. **CA 20** (+4 Des, +5 giaco di
 **Qualità speciali** Scurovisione 36 m, cecità alla luce solare, uso dei veleni (mai auto-avvelenamento), schivare prodigioso, individuazione delle trappole.
 **Capacità magiche** (1/giorno, CL 9): *luci danzanti*, *oscurità*, *fuoco fatuo*.
 **Talenti** Iniziativa Migliorata, Tiro Ravvicinato, Tiro Preciso, Arma Accurata (spada corta).
-**Veleni** veleno drow (Tempra CD 13, incosciente), 3 dosi di *sangue nero di Lolth* (**Tempra CD 17, 1d6 Cos / 1d6 Cos** — veleno di ragno gigante concentrato).
+**Veleni** veleno drow (Tempra CD 13, incosciente), 3 dosi di *sangue nero di Lolth* (**Tempra CD 17, 1d6 Cos / 1d6 Cos** — veleno di ragno gigante concentrato; veleno della casa, non SRD, preparato dalle sacerdotesse di Lolth: non ha prezzo, non entra nel valore del corredo né nel bottino `[CANONE — DM 2026-11-26, card «Come dichiaro il sangue nero di Lolth»]`).
 
 **Incantesimi da Assassino (CL 4; CD 10 + livello + 3; 3/1 della classe più i bonus di Int 16)**
 | Liv | Al giorno | Tipici (SRD) |
@@ -64,4 +64,5 @@ Notes: agente della compagnia di **Sonjak**, impiegata nella **Notte dei Drow** 
 <!-- storico -->
 - era: fino al 2026-11-20 For 12 Des 20 Cos 10 Int 18 Sag 12 Car 14 (acquisto a punti 40 tolta la razza), CA 21 (contatto 16), iniziativa +9, Rifl +15, Vol +5, spada corta +12/+7, balestra +12 (+13 entro 9 m), Attacco Mortale CD 18, incantesimi CD 10 + livello + 4. Rifatta con la serie d'élite della DMG 3.5 p. 110 più la razza drow (SRD), card del DM del 2026-11-20, tenendo For 12 (D3 del 2026-09-23): Des 15 (+2 al 4° e all'8°), Int 14, Cos 13, For 12, Sag 10, Car 8. Le note della scheda che citano Des 20, +12, +13, CD 18 e Riflessi +15 descrivono il conto di allora. Incantesimi al giorno invariati: Int 16 dà ancora il bonus al 1° e al 2°.
 - era: fino al 2026-11-26 pf 40, colto alla sprovvista 16, incantesimi 3/1. 9d6 con Cos 11 danno al massimo 34 pf (primo dado massimo, poi la media); schivare prodigioso (Ladro 4) tiene la Des anche colta alla sprovvista: 20; l'Assassino di 4° ha 3/1 al giorno più un incantesimo bonus di 1° e uno di 2° per Int 16 (SRD): 4/2. Card del dm del 2026-11-26 «Correggo, pf 34».
+- era: fino al 2026-11-26 il *sangue nero di Lolth* era «veleno di ragno gigante concentrato» senza fonte né prezzo. Card del DM del 2026-11-26 «Homebrew fuori corredo»: è un veleno della casa, non SRD, senza prezzo e fuori dal corredo e dal bottino.
 <!-- /storico -->

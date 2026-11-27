@@ -105,8 +105,8 @@ H = Hobgoblin Guerrieri (unità nemica)
 **Obiettivo:** Superare le guardie e infliggere **più di 70 danni** direttamente al Generale Grimjaw.
 
 **Statistiche Chiave:**
-*   **Generale Grimjaw (GS 14):**
-    *   **PF:** 178; **CA:** 25
+*   **Generale Grimjaw (GS 15):**
+    *   **PF:** 122; **CA:** 27
     *   **Tattiche:** Non attacca. Ogni round usa *Tattico Superiore* per potenziare gli Hobgoblin o le sue guardie. Se il Portatore si avvicina a meno di 9m, attiva *Presenza Intimidatoria*.
 *   **Orog Guardie Nere (Unità d'élite):**
     *   **PF/CA singolo Orog:** ~45 PF; CA 19

@@ -38,7 +38,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 2 | colpo infuocato (12d6, Riflessi | 21 |
 | SCENA 2 | magie mirato (d20 + 10 contro | 18 |
 | SCENA 2 | Uscire senza provocare vuole Acrobazia | 15 |
-| SCENA 2 | Acrobazia nel quadretto di un orog | 25 |
+| SCENA 2 | dei due orog davanti con Acrobazia | 25 |
 | SCENA 2 | Nala lo evita con Acrobazia | 15 |
 | SCENA 3 | Torre Ovest, la vede crescere (Osservare | 15 |
 | SCENA 4 | 9 m o lo sente (Ascoltare | 15 |

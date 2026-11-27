@@ -120,6 +120,7 @@ EOF
 | `rumblingstone-module-standard` | le 16 sezioni obbligatorie della checklist | **maggiore** | 🟡 `validate_modules.py` — **solo su `ARC*-DEF-*.md`**: 96 file su 100 non sono mai guardati |
 | `rumblingstone-module-standard` §8 | sidebar **«Scalare lo scontro»** obbligatoria per i boss | **maggiore** | 🟡 `domande_developer.py --check`, regola D10: la riga di scala in ogni scontro, che comprende quello del boss (6 veri su 9 nella calibrazione di ADR-0092). Vede solo i master sotto cancello. Fino al 2026-10-22 la misurava il congegno «scalare lo scontro» di `misura_craft`, tre frasi fisse che la D10 conta tutte |
 | `rumblingstone-module-standard` §7 · l'area chiave | le voci di *Dungeon* nell'ordine (read-aloud senza creature, Dati per il DM con la riga SRD degli oggetti, creature, tattiche, trappole, tesoro, sviluppo) | **minore** | 🟡 `domande_developer.py --check` ne guarda una parte: lo **Sviluppo** che dice chi sente lo scontro e in quanti round arriva (D4). L'ordine delle voci e la riga degli oggetti non li guarda nessuno: vale per i master nuovi, e i nuovi nascono sotto `componenti.py`, dove una forma fissa è il passo naturale |
+| `ADR-0007` · `ADR-0090` · agente `sincronizzatore-giocato` regola 2 | **i campi aperti al DM non si chiudono senza la sua decisione**: nel log delle sessioni e in `campaign/state.yaml` un `[INFERRED`, un «______», un «da compilare», «da confermare», «da decidere», «da tirare» o «non ancora tirati» resta finché il DM non decide, e la riga che lo chiude cita la decisione con la marca `[CANONE — DM 2026-11-21, <codice>]` (GUIDA-MARCATURE) | **maggiore** | 🟢 `sincronia_giocato.py` — S4 conta i campi per file sul ramo di gruppo (occorrenze, intestazioni escluse, i `[INFERRED` con i criteri di `inventory_inferred.py`); S6 segnala la patch che li fa scendere senza la decisione datata (🟡) e, con `--ref HEAD`, il push che lo farebbe (🔴). 🔎 Nasce dal 2026-11-21: una patch di un thread ha portato i campi aperti delle sessioni 5 e 6 da 32 a 5 «ricostruendo» chi era presente; sul ramo vero S6 ne segnala 19 su 27 senza decisione |
 | `rumblingstone-prosa-documenti` | norme sui **documenti** del repo (non sul contenuto di gioco) | **minore** | 🟢 `validate_prosa.py --documenti` |
 | `rumblingstone-editoria` | impaginazione, riquadri, statblocchi in stampa | **maggiore** | 🟢 `validate_booklets.py --stampa` |
 | `rumblingstone-editoria` §2 · §4.4 | una **mappa** in un booklet **entra in colonna (≤ 48 celle) o va su una pagina A4** a una colonna, e non va mai a capo; oltre 110 celle scende sotto i 9 pt | **maggiore** | 🟢 `validate_booklets.py --stampa` — compila ogni volume con l'esportatore che applica la regola da sé (`CELLE_COLONNA`, `#griglia`), e `TestMappeCheNonEntranoInColonna` ne tiene i casi. La soglia delle 110 celle è un **avviso** dell'esportatore, non un rosso: la mappa resta leggibile, solo più piccola. 🔎 Nasce dalle mappe di `DEF-2` uscite a brandelli nel volume della serata, 2026-09-25 |
@@ -184,7 +185,7 @@ EOF
 
 | | Norme registrate |
 |---|---:|
-| 🟢 misurate | 44 |
+| 🟢 misurate | 45 |
 | 🟡 misurate in parte, con il limite scritto | 42 |
 | 🔴 **non misurate, con la ragione scritta** | 14 |
 | ⚪ non applicabili | 0 |

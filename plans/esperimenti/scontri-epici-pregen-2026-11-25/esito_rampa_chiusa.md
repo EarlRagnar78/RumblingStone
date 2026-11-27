@@ -4,27 +4,27 @@
 
 | eroi | il comandante fugge | a 0 pf o meno | al primo round | round medi alla fuga | round medi a 0 pf | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |
 |---|---|---|---|---|---|---|---|
-| Borin | 0% | 0% | 0% | 4.0 | – | 100% | 0% |
-| Yrsa | 27% | 2% | 0% | 4.8 | 4.5 | 74% | 8% |
-| Borin + Yrsa | 62% | 8% | 0% | 4.0 | 3.6 | 82% | 5% |
-| Borin + Yrsa + Harbek | 72% | 13% | 0% | 3.8 | 3.4 | 86% | 4% |
-| Borin + Yrsa + Ragnhild | 85% | 15% | 23% | 1.9 | 1.9 | 0% | 93% |
+| Borin | 0% | 0% | 0% | 2.7 | – | 100% | 0% |
+| Yrsa | 16% | 5% | 0% | 4.5 | 4.4 | 82% | 6% |
+| Borin + Yrsa | 54% | 19% | 0% | 3.5 | 3.3 | 73% | 10% |
+| Borin + Yrsa + Harbek | 61% | 24% | 0% | 3.4 | 3.2 | 79% | 7% |
+| Borin + Yrsa + Ragnhild | 66% | 34% | 61% | 1.5 | 1.2 | 0% | 97% |
 | Harbek + Nala | 0% | 0% | 0% | – | – | 100% | 0% |
-| Harbek + Nala + Ragnhild | 98% | 0% | 0% | 4.3 | – | 55% | 21% |
-| Ragnhild | 53% | 0% | 0% | 4.4 | – | 47% | 21% |
+| Harbek + Nala + Ragnhild | 100% | 0% | 25% | 2.4 | 2.0 | 18% | 72% |
+| Ragnhild | 92% | 0% | 19% | 2.6 | – | 8% | 73% |
 
 ## Grimjaw e quattro orog, la rampa chiusa: la chiudono i due orog davanti
 
 | eroi | il comandante fugge | a 0 pf o meno | al primo round | round medi alla fuga | round medi a 0 pf | un eroe a terra | l'eroe piu' ferito, pf medi rimasti |
 |---|---|---|---|---|---|---|---|
-| Borin | 0% | 0% | 0% | – | – | 100% | 0% |
-| Yrsa | 26% | 2% | 0% | 4.7 | 4.5 | 76% | 8% |
-| Borin + Yrsa | 62% | 9% | 0% | 4.0 | 3.6 | 82% | 6% |
-| Borin + Yrsa + Harbek | 73% | 12% | 0% | 3.9 | 3.4 | 85% | 4% |
-| Borin + Yrsa + Ragnhild | 84% | 16% | 23% | 1.9 | 1.9 | 0% | 93% |
+| Borin | 0% | 0% | 0% | 4.3 | – | 100% | 0% |
+| Yrsa | 16% | 5% | 0% | 4.5 | 4.4 | 81% | 6% |
+| Borin + Yrsa | 53% | 19% | 0% | 3.5 | 3.2 | 73% | 10% |
+| Borin + Yrsa + Harbek | 61% | 24% | 0% | 3.4 | 3.2 | 79% | 7% |
+| Borin + Yrsa + Ragnhild | 65% | 35% | 61% | 1.5 | 1.3 | 0% | 98% |
 | Harbek + Nala | 0% | 0% | 0% | – | – | 100% | 0% |
-| Harbek + Nala + Ragnhild | 99% | 0% | 0% | 4.4 | – | 56% | 20% |
-| Ragnhild | 52% | 0% | 0% | 4.4 | – | 48% | 21% |
+| Harbek + Nala + Ragnhild | 100% | 0% | 26% | 2.5 | – | 19% | 71% |
+| Ragnhild | 92% | 0% | 19% | 2.5 | – | 8% | 74% |
 
 ## Come leggere queste cifre
 

@@ -252,9 +252,9 @@ Gli affreschi sono il principale veicolo di indizi per il giocatore.
 ### **Scena B: GENERALE GRIMJAW**
 *   **Obiettivo:** Infliggere > 60 danni a Grimjaw in 10 round.
 *   **Statistiche dei Nemici:**
-    *   **GENERALE GRIMJAW (Orog Guerriero 10/Signore della Guerra 3, GS 14):**
-        *   **PF:** 178; **CA:** 25; **TS:** Temp +16, Rifl +8, Vol +10
-        *   **Tattiche:** Non attacca. Usa *Tattico Superiore*. Attiva *Presenza Intimidatoria* (CD 16) se il Portatore si avvicina.
+    *   **GENERALE GRIMJAW (Orog Guerriero 11/Signore della Guerra 3, GS 15):**
+        *   **PF:** 122 (150 in Furia); **CA:** 27; **TS:** Temp +14, Rifl +6, Vol +7 (scheda in `Bestiario/villain/Generale_Grimjaw.md`)
+        *   **Tattiche:** Non attacca. Usa *Tattico Superiore*. Attiva *Presenza Intimidatoria* (CD 19) se il Portatore si avvicina.
     *   **OROG GUARDIE NERE (4 Orog Guerrieri 6):**
         *   **PF singolo:** ~65; **CA:** 19
         *   **Tattiche:** Usano "Aiutare un Altro" (+2 CA a Grimjaw) e intercettano metà del danno destinato a lui.
@@ -371,8 +371,8 @@ H = Hobgoblin Guerrieri (unità nemica)
 **Obiettivo:** Superare le guardie e infliggere **più di 70 danni** direttamente al Generale Grimjaw.
 
 **Statistiche Chiave:**
-*   **Generale Grimjaw (GS 14):**
-    *   **PF:** 178; **CA:** 25
+*   **Generale Grimjaw (GS 15):**
+    *   **PF:** 122 (150 in Furia); **CA:** 27 (scheda in `Bestiario/villain/Generale_Grimjaw.md`; fino al 2026-11-26 qui c'era GS 14, PF 178, CA 25)
     *   **Tattiche:** Non attacca. Ogni round usa *Tattico Superiore* per potenziare gli Hobgoblin o le sue guardie. Se il Portatore si avvicina a meno di 9m, attiva *Presenza Intimidatoria*.
 *   **Orog Guardie Nere (Unità d'élite):**
     *   **PF/CA singolo Orog:** ~45 PF; CA 19

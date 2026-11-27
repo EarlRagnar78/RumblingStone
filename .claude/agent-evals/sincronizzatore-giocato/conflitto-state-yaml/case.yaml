@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: conflitto-state-yaml
+expected_outcome: |
+  No al checkout --ours del file intero: si risolve blocco per blocco (dai record del giocato vince il ramo, dal png e dalle correzioni di canone di main vince main, lo stesso record cambiato dai due lati va al DM); dopo il merge sincronia_giocato.py --dopo-merge, validate_state, render_state --check, dm.py doctor.

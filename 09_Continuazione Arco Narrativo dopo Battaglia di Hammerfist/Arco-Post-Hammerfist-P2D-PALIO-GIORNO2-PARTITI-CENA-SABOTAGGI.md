@@ -140,8 +140,12 @@ invia **sicari drow** a Channathgate per **avvelenare** il cavallo dell'Istrice/
   Chierica di Lolth** (GS 10) + un **innesto fungino** (Servitore della Spora, GS 3) come
   ariete vivente. Tattica: buio magico; il cavallo col *sangue nero di Lolth* (Tempra CD 17, 1d6 Cos), il fantino paralizzato con l'Attacco Mortale (Tempra CD 17) e portato via `[CANONE — DM 2026-11-26, card «Sangue nero e Attacco Mortale»]`; colpire il cavallo o rapire il fantino, a scelta del DM; gli altri PG non sono il bersaglio (STATBLOCCHI §3.1).
 - **Poste**:
-  - Cavallo avvelenato → **−4 Cavalcare** in corsa (o morte del cavallo → si corre scossi
-    o con una brenna di riserva).
+  - Cavallo avvelenato (fallisce la Tempra CD 17) → **−4 ai tiri di Zona** in corsa; con una
+    seconda dose muore → si corre scossi o con una brenna di riserva. Se supera la Tempra,
+    corre senza malus. È una regola della casa: per l'SRD due dosi non bastano sempre `[CANONE — DM 2026-11-26, card «Come muore il cavallo col sangue nero» e «A cosa si applica il −4»]`.
+  - Fantino rapito `[CANONE — DM 2026-11-26, card «Aggiungo il fantino come obiettivo»]` →
+    se i PG non lo riprendono prima della corsa, si corre con un fantino di riserva; se lo
+    riprendono, vale «rapito e salvato» per l'Onore del Fantino (§5).
   - **Catturare un drow vivo** → intel su **Fase 0 (Notte dei Drow)** di Rethmar e
     **−1 clock Sonjak** (INTEGRAZIONE §3.2).
   - Fallire del tutto → **+1 clock Sonjak**, e la coalizione parte demoralizzata.
@@ -157,6 +161,7 @@ invia **sicari drow** a Channathgate per **avvelenare** il cavallo dell'Istrice/
 
 <!-- storico -->
 - era: «colpire il cavallo (non i PG)» nella tattica dell'incontro della stalla (fino al 2026-11-19; card del DM: cavallo o fantino)
+- era: «Cavallo avvelenato → −4 Cavalcare in corsa (o morte del cavallo → si corre scossi o con una brenna di riserva)», fino al 2026-11-26. Una dose di sangue nero toglie al massimo 12 di Costituzione e non uccide un cavallo leggero (Cos 13, SRD). Card del DM del 2026-11-26: «Due dosi per ucciderlo», «Ai tiri di Zona in corsa» (come STATBLOCCHI §2) e «Sì, mappa e Poste» (posta del fantino rapito, MAPPE e legenda della stalla allineate).
 <!-- /storico -->
 
 ## 4. Sottotrame notturne opzionali (allungano a 4–5 sessioni)

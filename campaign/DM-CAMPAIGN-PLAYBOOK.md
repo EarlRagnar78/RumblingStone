@@ -275,10 +275,16 @@ Se un encounter è stato "consumato" e potrebbe riemergere (es. imboscata replic
 ### 4.5 Commit & push
 
 ```bash
+python3 scripts/campaign_branch.py guard     # rifiuta main e i rami morti
 git add -A
 git commit -m "Session N: <titolo one-line>"
-git push origin main   # oppure il tuo branch-gruppo (vedi §7)
+python3 scripts/sincronia_giocato.py --ref HEAD --check
+git push origin campaign-group-<gruppo>      # mai main, mai --force (vedi §7.5)
 ```
+
+Il canone vivo si scrive solo sul ramo del gruppo (ADR-0007): un push di
+canone su `main` lo ferma il cancello dei thread. Il controllo prima del push
+dice se il commit chiude campi aperti senza la tua decisione datata.
 
 **Fatto.** Lo stato è consolidato. Alla prossima sessione §2 ti riporta esattamente qui.
 
@@ -566,6 +572,40 @@ Si gioca la prima sessione, e alla fine `python3 scripts/dm.py session end`
 template vuoto, senza modulo e senza stato derivato. Serve a chi vuole partire
 da zero e non dal prodotto.
 
+### 7.5 Il ramo del gruppo resta allineato a main
+
+Il giocato vive sul ramo del gruppo, il prodotto arriva su `main`: prima di
+ogni preparazione `main` entra nel ramo con un merge (ADR-0090). Il
+21/11/2026 il ramo del primo tavolo era fermo al 12/10 e nessuno se n'era
+accorto; da allora c'è una misura che lo dice
+([ADR-0149](../plans/adr/ADR-0149-il-giocato-arriva-sul-ramo-di-gruppo-con-un-agente-e-una-misura.md)).
+I rami vivi e quelli morti sono in `plans/rami-di-gruppo.json`.
+
+```bash
+# prima della preparazione: main indietro, patch ferme, campi aperti, serate
+python3 scripts/sincronia_giocato.py --aggiorna --check --scansiona /mnt/project-files
+
+# il merge, sul ramo del gruppo (mai rebase)
+git merge origin/main
+python3 scripts/sincronia_giocato.py --dopo-merge   # nessuna riga di main persa
+python3 scripts/validate_state.py
+python3 scripts/render_state.py --check
+
+# prima del push: i campi chiusi hanno la tua decisione datata?
+python3 scripts/sincronia_giocato.py --ref HEAD --check
+git push origin campaign-group-<gruppo>             # solo fast-forward
+```
+
+I conflitti si risolvono blocco per blocco: nei PNG di `state.yaml` e nelle
+correzioni di canone approvate su `main` vince `main`, nel giocato vince il
+ramo, e lo stesso record cambiato dalle due parti lo decidi tu. Un 🔴 ferma il
+push. I 🟡 delle regole S4 e S6 sono domande per te: un campo aperto (PX,
+bottino, esito, presenti) si chiude solo con la tua decisione, scritta nella
+riga con la marca `[CANONE — DM 2026-11-21, <codice>]` di
+`docs/reference/GUIDA-MARCATURE.md`. Nei thread questo lavoro lo fa l'agente
+`sincronizzatore-giocato`; ogni lunedì alle 06:30 UTC il workflow
+`sincronia-giocato.yml` rifà la misura che basta a git.
+
 ---
 
 ## §8 — Red Flags — cosa NON fare
@@ -615,3 +655,4 @@ da zero e non dal prodotto.
 
 - **2026-05-05** — Creato file v1: workflow pre/during/post-session, worked examples per file sessione e diff state.md, reset procedure per nuovo gruppo (branch-per-gruppo), dual clock quick reference, red flags.
 - **2026-05-05** — Aggiunto §4.6 "Recap per i player" con integrazione di `scripts/session_recap.py` (generatore markdown/PDF A4 italiano spoiler-safe, tono R.A. Salvatore). Aggiunta tabella script in §9.
+- **2026-11-21** — §4.5 spinge sul ramo del gruppo e non più su `main`, con `campaign_branch.py guard` e il controllo prima del push; §7.5 nuovo: il ramo del gruppo resta allineato a `main` con `sincronia_giocato.py` (ADR-0149).

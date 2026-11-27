@@ -14825,6 +14825,153 @@
       ]
     },
     {
+      "id": "raccogli_casi_agenti",
+      "path": "scripts/raccogli_casi_agenti.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/raccogli_casi_agenti.py proponi IN.json --coda DIR | cieco DIR/AAAA-Www.json | annota DIR/AAAA-Www.json ANNOTAZIONI.tsv | applica DIR/AAAA-Www.json SCELTE.tsv | --check",
+      "summary": "ADR-0154, scelta di Jfs del 2026-11-27: ogni thread nuovo porta un caso al set d'oro degli agenti, e Jfs ne conferma l'etichetta una volta a settimana. «proponi» legge i messaggi esportati dalla routine del lunedì, scarta i duplicati (stesso id o stesso testo normalizzato, nel set o in coda) e i testi con segreti, email o percorsi con un nome utente, etichetta ogni caso con la predizione dell'hook (instradamento_agenti.predici) come proposta e scrive DIR/AAAA-Www.json e DIR/CARD.md, una card per caso con la consigliata, le alternative e la catena di ognuna. «applica» porta nel set i casi confermati in SCELTE.tsv, con lo split per hash sha256 dell'id (50/50 dev/test, stabile come in TFDS e Hugging Face), rimette il tetto con l'hook invariato e stampa la misura prima e dopo. --check valida la forma del set (campi, split, etichette, duplicati, testo non vuoto, nessun dato da non pubblicare). «cieco» e «annota» danno la consigliata da un annotatore che non vede la proposta dell'hook. La CI non legge i thread: lo lancia la routine dalla shell, perché la coda e i messaggi esportati stanno in /mnt/project-files/instradamento-coda/, fuori dal repo, e contengono prompt che nel repo non vanno. Il server MCP rifiuta i percorsi fuori dal repo e gli strumenti che scrivono: da lì la raccolta non si lancia.",
+      "use_case": "«È lunedì: quali messaggi dei thread nuovi entrano nel set d'oro degli agenti, con che etichetta da confermare, e com'è cambiata la misura dopo le mie scelte?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_bins": [
+        "python3"
+      ],
+      "external_deps": [
+        "scikit-learn",
+        "scipy"
+      ],
+      "args": [
+        {
+          "name": "proponi|cieco|annota|applica",
+          "type": "subcommand",
+          "required": false,
+          "default": null,
+          "choices": [
+            "proponi",
+            "cieco",
+            "annota",
+            "applica"
+          ],
+          "repeatable": false,
+          "desc": "proponi = le proposte della settimana dai messaggi esportati; cieco = id e testo per l'annotatore cieco, senza la proposta; annota = le sue etichette come consigliate; applica = i casi confermati nel set d'oro, con il tetto rimesso."
+        },
+        {
+          "name": "ingresso",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con proponi: IN.json, elenco di {data, fonte, tipo, testo, id_messaggio}."
+        },
+        {
+          "name": "--coda",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con proponi: la cartella della coda, dove vanno AAAA-Www.json e CARD.md."
+        },
+        {
+          "name": "settimana",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con applica: il file DIR/AAAA-Www.json della settimana."
+        },
+        {
+          "name": "scelte",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con applica: SCELTE.tsv, colonne id_messaggio, atteso, accettabili (virgole), azione tieni|togli."
+        },
+        {
+          "name": "--oggi",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La data di oggi AAAA-MM-GG: sceglie la settimana e va nella nota del tetto."
+        },
+        {
+          "name": "--oro",
+          "type": "path",
+          "required": false,
+          "default": "plans/instradamento/agenti-oro.json",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il set d'oro."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La forma del set d'oro: exit 1 se un caso è scritto male."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/instradamento/agenti-oro.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "skills/*/SKILL.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "plans/instradamento/agenti-oro.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "--check: set non in forma; applica: scelte che non tornano, niente scritto",
+        "2": "ingresso malformato o nessun sottocomando"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "split per hash sha256 dell'id; --oggi fissa la settimana"
+      },
+      "side_effects": {
+        "writes_canon": true,
+        "git_commit": false,
+        "network": false,
+        "notes": "Scrive plans/instradamento/agenti-oro.json solo con applica; proponi scrive nella cartella della coda, fuori dal repo; --check è sola lettura."
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/raccogli_casi_agenti.py --check",
+      "tests": [
+        "scripts/tests/test_raccogli_casi_agenti.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0154-l-instradamento-degli-agenti-si-misura-su-messaggi-veri.md",
+        "plans/PIANO-MISURA-AGENTI-E-AUTOMATISMI.md"
+      ]
+    },
+    {
       "id": "eval_metriche",
       "path": "scripts/eval_metriche.py",
       "category": "lib",

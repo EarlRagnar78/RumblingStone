@@ -1,6 +1,6 @@
 # PIANO — Misurare agenti, skill e automatismi su casi veri
 
-> **Stato**: 🟡 in corso (2026-11-27). M1 fatto (PR 1, #531); M2 fatto sul ramo della PR 2 (le buste senza lavoro tacciono, gli omonimi dei trigger non scattano; macro-F1 del test da 41/252 a 58/315, esatti fermi a 4/17); M3 e M3-bis da fare; M4-M7 solo elencati · **Classe**: G per le etichette e la scelta della tecnica, C per il codice
+> **Stato**: 🟡 in corso (2026-11-27). M1 fatto (PR 1, #531); M2 fatto sul ramo della PR 2 (le buste senza lavoro tacciono, gli omonimi dei trigger non scattano; macro-F1 del test da 41/252 a 58/315, esatti fermi a 4/17); M2-bis fatto sul ramo `lavoro/raccolta-v2` (la raccolta settimanale dei casi, con la consigliata da un annotatore cieco); M3 e M3-bis da fare; M4-M7 solo elencati · **Classe**: G per le etichette e la scelta della tecnica, C per il codice
 > **Nasce da**: il thread «Misurare e migliorare agenti, skill e automatismi» del 2026-11-27, aperto da Jfs.
 > **Decisione**: [ADR-0154](adr/ADR-0154-l-instradamento-degli-agenti-si-misura-su-messaggi-veri.md), proposta, con l'emendamento del 2026-11-27 (Jfs: le librerie standard di fatto della comunità al posto della sola stdlib).
 > **Audit**: `/mnt/project-files/agenti-eval-2026-11-27/AUDIT.md` (fuori dal repo; i numeri che servono sono qui e nell'ADR).
@@ -114,6 +114,67 @@ invariato (17 omissioni su 50, 1 violazione). 116 test verdi su
   commenti accanto a ciascuna.
 - «avventura» non è trattata come omonimo.
 
+### M2-bis · La raccolta settimanale dei casi ✅ ramo `lavoro/raccolta-v2` (2026-11-27)
+
+Il limite vero della misura è n: con 17 casi di test nessuna tecnica batte
+la regex in modo significativo (banco del 27/11, McNemar p=0,29). Scelta di
+Jfs del 27/11, su card: ogni thread nuovo porta un caso, al più dieci per
+componente a settimana, e Jfs conferma l'etichetta su card con la
+consigliata.
+
+`scripts/raccogli_casi_agenti.py` (commit `df8284cb`, `db757c2d`,
+`92255948`, `c66bdf8d`) lavora sui messaggi che la routine esporta in
+`/mnt/project-files/instradamento-coda/`, mai nel repo:
+
+- `proponi IN.json --coda DIR` scarta i duplicati (contro il set d'oro, la
+  coda e l'ingresso) e i testi con email, segreti o un percorso con nome
+  utente (un sottoinsieme delle regole di default di gitleaks), mette a ogni
+  caso la predizione dell'hook come «proposta» e scrive la settimana
+  `AAAA-Www.json` e `CARD.md`;
+- `cieco` scrive `CIECO-AAAA-Www.tsv`, solo id e testo dei casi del DM;
+- `annota` prende le etichette dell'annotatore cieco come consigliate e
+  stampa l'accordo con l'hook e la kappa di Cohen;
+- `applica` porta i casi confermati nel set d'oro, con lo split per sha256
+  dell'id (pari dev, dispari test, come gli split stabili di TFDS e Hugging
+  Face), rimette il tetto misurando l'hook invariato sul set nuovo e stampa
+  la misura prima e dopo; la nota del tetto dice che a mano non si abbassa;
+- `--check` controlla la forma del set d'oro.
+
+**Perché la consigliata viene da un annotatore cieco.** Sul set d'oro di
+main, 28 casi confermati da Jfs, la predizione dell'hook coincide con
+l'etichetta confermata in 8 casi su 28 (Wilson 95% 0,15-0,47, kappa 0,211);
+l'annotatore B, che leggeva solo il testo, in 24 su 27 (Wilson 0,72-0,96,
+kappa 0,865). Una card con la proposta dell'hook come consigliata
+ancorerebbe Jfs sulla cosa che si misura.
+
+**La misura.** Su main non c'è nessuna raccolta, e il set d'oro cresce solo
+a mano. Da qui può crescere ogni settimana, e il guadagno di n è la leva per
+distinguere una tecnica dall'altra. Test: 19 passati su
+`test_raccogli_casi_agenti` (5 rossi prima del codice dell'annotatore
+cieco), 92 su `test_raccogli_casi_agenti` e `test_instradamento_agenti`;
+`raccogli_casi_agenti.py --check` verde sui 28 casi, `instradamento_agenti.py
+--check` invariato (test 4/17, macro-F1 58/315).
+
+**I limiti.**
+
+- 24 su 27 sopravvaluta l'accordo: B ha etichettato prima della conferma di
+  Jfs, e in parte le consigliate delle card di Jfs venivano da B.
+- L'annotatore cieco è un agente Claude a cui si passano solo il file
+  `CIECO-*.tsv` e la guida delle cascate
+  (`/mnt/project-files/agenti-eval-2026-11-27/GUIDA-AGENTI-E-CASCATE.md`):
+  la cecità dipende dalla disciplina di chi lo lancia, nessun controllo la
+  garantisce.
+- Lo split per hash è deterministico, ma con n piccolo dev e test possono
+  sbilanciarsi.
+- Il tetto di dieci casi per componente a settimana non è nel codice: lo
+  tiene la routine che esporta.
+- La routine del lunedì non chiama ancora lo script; lo chiederà il thread
+  al coordinatore dopo il merge.
+- Dopo `applica` i numeri di `test_oro_del_repo_numeri_di_oggi` si
+  aggiornano a mano: lo script lo ricorda e basta.
+- Il set conserva ancora il testo nudo e non la busta: la tecnica 1 di M2
+  resta senza cricchetto.
+
 ### M3 · Un modello classico di scikit-learn contro le regole ⬜ PR 3
 
 `[engine: Sonnet 5 · effort: medio · qualità: TF-IDF con MultinomialNB o LogisticRegression di scikit-learn, scelto con la validazione incrociata sul solo dev e misurato una volta sul test; entra solo se batte M2 sul test, altrimenti il resoconto lo dice e il codice resta in esperimenti]`
@@ -171,6 +232,7 @@ mutanti (ADR-0148) e non entrano.
 
 - [x] M1 · set d'oro, `eval_metriche.py`, `--eval` e `--check`, cancello in testing (PR 1)
 - [x] M2 · omonimi e messaggi senza lavoro (PR 2): macro-F1 del test 41/252 → 58/315, suggerimenti sui prompt veri 57/103 → 1/103
+- [x] M2-bis · raccolta settimanale dei casi, con la consigliata da un annotatore cieco (`raccogli_casi_agenti.py`): accordo con l'etichetta di Jfs 8/28 per l'hook contro 24/27 per l'annotatore B
 - [ ] M3 · TF-IDF con MultinomialNB o LogisticRegression di scikit-learn contro le regole (PR 3)
 - [ ] M3-bis · rete con sentence-transformers, solo con ≥ 200 casi e M3 che non basta (PR 4)
 - [ ] M4 · recall dell'instradamento delle skill

@@ -8929,6 +8929,155 @@
       "idempotent": true
     },
     {
+      "id": "lavoro_in_corso",
+      "path": "scripts/lavoro_in_corso.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/lavoro_in_corso.py [--fetch] [--offline] [--stdout|--json] | --check",
+      "summary": "L'istantanea dal vivo del lavoro in sviluppo fuori da main, complementare a MEMORIA.md (che resta il cancello deterministico di ciò che è su main). Legge il registro curato plans/lavoro-in-corso.json (filoni con thread, PR, rami, cartelle condivise, che cosa aspettano, il passo dopo), le PR aperte dalla REST di GitHub o da --pr-json (formato REST o gh pr list --json), i rami di origin e le cartelle di primo livello di /mnt/project-files (solo nome, data e primo titolo del LEGGIMI). Attacca una PR a un filone per numero, ramo o thread=cmsg_… nel corpo; segnala PR, rami claude/* recenti e cartelle senza filone, PR del registro non più aperte, PR ferme da oltre 30 giorni e filoni non aggiornati da 14. Scrive plans/LAVORO-IN-CORSO.md. --check valida solo il registro, offline.",
+      "use_case": "«Che lavoro c'è in sviluppo, dove sta (PR, rami, cartelle dei thread) e che cosa aspetta me?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "git"
+      ],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Valida solo il registro, offline e deterministico; esce 1 sugli errori."
+        },
+        {
+          "name": "--pr-json",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "PR aperte da file (REST /pulls o gh pr list --json number,title,headRefName,isDraft,updatedAt,url,body) invece della rete."
+        },
+        {
+          "name": "--offline",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Niente rete: le PR non si leggono e la pagina lo dice."
+        },
+        {
+          "name": "--fetch",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Prima scarica i rami di origin (rete)."
+        },
+        {
+          "name": "--mnt",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La cartella condivisa dei thread (default /mnt/project-files se esiste)."
+        },
+        {
+          "name": "--giorni",
+          "type": "int",
+          "required": false,
+          "default": 14,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Finestra di rami e cartelle ed età massima di un filone."
+        },
+        {
+          "name": "--stdout",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La pagina a video, senza scrivere il file."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il rapporto in JSON, senza scrivere il file."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/lavoro-in-corso.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/contenuti-nei-rami.json",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "/mnt/project-files/*/",
+          "kind": "directory",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "plans/LAVORO-IN-CORSO.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        },
+        {
+          "path": "<stdout>",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "pagina scritta (anche con la rete giù: lo dice la pagina) o registro valido (--check)",
+        "1": "registro illeggibile o malformato",
+        "2": "uso errato"
+      },
+      "determinism": {
+        "deterministic": false,
+        "seed_flag": "--ora",
+        "notes": "La pagina porta la data UTC e dipende da PR aperte, rami del clone e cartelle della macchina: non è un cancello di CI. --check invece è deterministico e offline."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": true,
+        "notes": "Scrive plans/LAVORO-IN-CORSO.md (non canone, rigenerabile) salvo con --stdout, --json o --check. Rete: GET della REST /pulls di GitHub (token facoltativo da GITHUB_TOKEN o GH_TOKEN) salvo con --offline o --pr-json, e git fetch con --fetch."
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/lavoro_in_corso.py --check",
+      "tests": [
+        "scripts/tests/test_lavoro_in_corso.py"
+      ],
+      "docs": []
+    },
+    {
       "id": "gruppo_nuovo",
       "path": "scripts/gruppo_nuovo.py",
       "category": "G-orchestration-governance",

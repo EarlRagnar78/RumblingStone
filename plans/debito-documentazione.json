@@ -1,5 +1,5 @@
 {
-  "tetto": 127,
-  "misurato": "2026-11-27, main 076a74d1: 127 (109 script fuori da docs/INDEX.md, 13 agenti fuori da AGENTS.md, 4 workflow, 1 hook, 0 ADR fuori indice). Valore provvisorio: si abbassa a quello misurato dopo il lavoro di autore-documenti.",
+  "tetto": 106,
+  "misurato": "2026-11-27, ramo claude/project-thread-dzjuh9 sopra 0d9e65e3: 106 (106 script di primo livello fuori da docs/INDEX.md; 0 agenti, 0 workflow, 0 hook, 0 ADR). Prima, su main 076a74d1: 127 (109 script, 13 agenti, 4 workflow, 1 hook).",
   "nota": "Cricchetto di documentazione_allineata.py --debito --check (ADR-0153): il tetto si abbassa a mano quando il debito scende, mai si alza."
 }

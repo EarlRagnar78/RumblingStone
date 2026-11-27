@@ -5,7 +5,7 @@ Claude Code per RumblingStone. Per ognuna dice che cosa cambia, con quale
 misura è entrata e come si torna indietro, tutta o in parte. Le decisioni
 complete stanno negli ADR citati; la storia, nelle voci della memoria storica
 (`python3 scripts/memoria_storica.py --adr 140`, `--adr 141`, `--adr 142`,
-`--adr 143`).
+`--adr 143`, `--adr 146`, `--adr 149`, `--adr 153`).
 
 ## 1. La catena: come la configurazione arriva a una sessione
 
@@ -41,6 +41,13 @@ si accende da solo: va spento con una riga `false` in `.claude/settings.json`.
 Il 25/11 sono stati spenti così `superpowers`, `agentic-council`, `ai-mentor`,
 `frontend-design` e `skill-creator`.
 
+Il primo hook che la sessione esegue è `.claude/hooks/session-start.sh`
+(SessionStart, registrato in `.claude/settings.json`): in background ricostruisce
+le skill del repo e le copie per gli altri agenti, scrive l'esito in
+`.claude/.skills-sync-status` (`syncing`, `ok <sha>`, `failed`) e nei container
+cloud installa gli hook git (`install-git-hooks.sh`, quindi il `pre-push` di
+ADR-0143). Non blocca mai la sessione: se fallisce, avvisa ed esce 0.
+
 Chi lavora in locale dalla radice del repo usa direttamente i file del repo;
 `claude-progetto.sh` lì non scrive nulla.
 
@@ -65,6 +72,7 @@ RumblingStone/scripts/claude-progetto.sh
 | 8 | Hook PreToolUse `vincolo_skill.py`: la prosa di gioco senza `rumblingstone-narrative-style` caricata si ferma; dodici agenti in `.claude/agents/` in tre classi con le skill precaricate; hook UserPromptSubmit e Stop `instradamento_agenti.py` che suggeriscono agente e catena per il lavoro in arrivo, e un PreToolUse che ferma push e PR se la catena scritta nelle istruzioni non è stata chiamata; cricchetto della prosa in CI | ADR-0146 | prima: zero caricamenti di skill su 188 chiamate in cinque thread; l'hook si attiva su circa 200 modifiche su 2.944 ai file di gioco; il cricchetto ne avrebbe fermata 1 su 157; l'instradamento indovina il primo agente in 23 frasi vere su 33 |
 | 9 | La configurazione arriva anche a livello utente (`~/.claude/settings.json`, `~/.claude.json`, skill costruite prima dell'avvio); spenti `superpowers`, `agentic-council`, `ai-mentor`, `frontend-design`, `skill-creator` | ADR-0146, correzione del 25/11 (#518) | sessione nuova in `/home/user`: con la configurazione utente hook del repo attivi, `rumblingstone-tools` connesso, 12 plugin; senza, nessun hook del repo e 39 plugin |
 | 10 | Il tredicesimo agente, `sincronizzatore-giocato` (Tecnici), porta il giocato sul ramo di gruppo; l'hook UserPromptSubmit aggiunge l'esito di `sincronia_giocato.py --avviso` quando si parla del giocato; il PreToolUse del push diventa anche cancello del canone (push che riscrive un ramo `campaign-group-*`, canone su main, rami morti di `plans/rami-di-gruppo.json`) e il suo matcher comprende gli strumenti MCP di GitHub che scrivono (`push_files`, `create_or_update_file`, `delete_file`, `create_branch`, `merge_pull_request`, `update_pull_request_branch`; anche `--prune` e i refspec a glob) | ADR-0149 | il 21/11 il ramo di gruppo era fermo al 12/10; su `ce345991` la misura dà 1.398 commit di main mancanti da 41 giorni, sette patch ferme e una serata non registrata |
+| 11 | Il cancello del push legge la riga «Catena:» anche dalla trascrizione: prima il registro scritto dall'hook UserPromptSubmit, poi l'ultima catena nei messaggi a Claude (testo scritto, righe `isMeta` comprese, mai `tool_result` né `isSidechain`). Il messaggio di avvio di un thread arriva come riga `isMeta` e l'hook del prompt non scatta su di lui. In CI, `documentazione_allineata.py --rispetto-a` boccia la PR che aggiunge un agente, uno script, un workflow o un hook senza citarlo nel suo indice | ADR-0153 | il 27/11 un `git push --dry-run` in un thread con `Catena: sviluppatore → autore-documenti` passava con «nessuna catena scritta nelle istruzioni»; sulla #510 il cancello della documentazione avrebbe trovato 15 elementi scoperti |
 
 ## 3. Tornare indietro
 
@@ -83,6 +91,7 @@ container già partiti e si fa la verifica della colonna a destra.
 | 8 | `git revert` della PR, poi `claude-progetto.sh` nei container già partiti | togliere il gruppo `PreToolUse` da `.claude/settings.json` (spegne l'hook), i gruppi `UserPromptSubmit` e `Stop` (spengono l'instradamento), il gruppo `PreToolUse` con matcher `Bash|mcp__github__create_pull_request|…` (spegne il cancello del push e, dalla scelta 10, quello del canone), il passo «Prosa — il testo cambiato non peggiora» da `ci.yml` (spegne il cricchetto), o un solo file da `.claude/agents/`; un tipo di file di prosa nuovo si aggiunge a `PROSA_PURA` in `scripts/vincolo_skill.py` | `python3 scripts/vincolo_skill.py --classe FILE`; in una sessione, `/agents` elenca gli agenti |
 | 9 | togliere da `claude-progetto.sh` il blocco «Livello utente», poi `rm ~/.claude/settings.json ~/.claude/.generato-da-rumblingstone` e la voce `rumblingstone-tools` da `~/.claude.json` | riaccendere un plugin con `true` sulla sua riga di `enabledPlugins`; `RS_SALTA_SKILL=1` salta la costruzione delle skill | in `/home/user`, `claude -p --output-format stream-json --verbose "ok"`: campi `plugins` e `mcp_servers` dell'evento `init` |
 | 10 | `git revert` della PR, poi `claude-progetto.sh` nei container già partiti | togliere dal matcher del PreToolUse del push i quattro strumenti `mcp__github__…` (il cancello torna sul solo Bash), togliere `.claude/agents/sincronizzatore-giocato.md` (resta lo script), o disattivare il workflow `sincronia-giocato.yml` dalla scheda Actions | `python3 scripts/sincronia_giocato.py --check`; in una sessione, `/agents` elenca tredici agenti |
+| 11 | `git revert` della PR | togliere `or catena_dalla_trascrizione(...)` in `decidi_cancello` di `scripts/instradamento_agenti.py` (il cancello torna al solo registro), o il passo «Documentazione — la struttura nuova è citata nel suo indice» da `ci.yml` | `python3 -m pytest scripts/tests/test_instradamento_agenti.py scripts/tests/test_documentazione_allineata.py`; `python3 scripts/documentazione_allineata.py --rispetto-a origin/main` |
 
 Due regole valgono per ogni ritorno:
 
@@ -102,6 +111,7 @@ Due regole valgono per ogni ritorno:
 | righe trovate nelle ricerche | `rg -c PAROLA . ` contro la stessa ricerca con le voci di `.claudeignore` come `--ignore-file` |
 | uso delle skill di prosa (blocchi, passaggi, promemoria dell'hook) | `python3 scripts/vincolo_skill.py --riepilogo` |
 | agenti suggeriti, quanti thread li hanno chiamati, push passati, bloccati e in deroga | `python3 scripts/instradamento_agenti.py --riepilogo` |
+| agenti, script, workflow e hook che il loro indice non cita | `python3 scripts/documentazione_allineata.py --debito` |
 
 `claude -p` non vede i connettori di claude.ai: il loro peso si misura solo in
 un thread vero.

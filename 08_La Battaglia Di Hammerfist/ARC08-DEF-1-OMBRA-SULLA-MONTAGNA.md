@@ -845,9 +845,9 @@ Con **Osservare 20 o più**:
 
 > **Read-aloud (Salvatore lead) — il campo, il conto.** *Poi l'occhio si
 > abitua, e la massa si divide in blocchi. Blocchi di cento, in quadrato,
-> che marciano anche da fermi. Novecento, forse qualcuno di più: sette per
-> ogni nano sulle mura. In fondo, dietro i carri, otto figure sedute per
-> terra sono alte quanto le tende in piedi.*
+> che battono il passo anche da fermi. Novecento, forse qualcuno di più:
+> sette per ogni nano sulle mura. In fondo, dietro i carri, otto figure
+> sedute per terra sono alte quanto le tende in piedi.*
 
 Con **Osservare 25 o più** (è l'«Intelligence completa»):
 

@@ -66,14 +66,14 @@
 ### 2.3 Skullcrusher il Nero (duello, DEF-4 Scena 11) — GS 14 l'Adulto, GS 17 il Vecchio che si usa di serie
 - **Il duello che si gioca**: Skullcrusher **Vecchio e Avanzato** (GS 17),
   `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` Appendice A.1-bis
-  `[CANONE — DM 2026-10-12, D60; esteso al 13° il 2026-10-19]`: 337 pf, CA 36
-  (40 con *armatura magica*, che al duello è già addosso), morso +34 (2d8+11),
+  `[CANONE — DM 2026-10-12, D60; esteso al 13° il 2026-10-19]`: 337 pf, CA 39, contatto 13
+  (43 con *armatura magica*, che al duello è già addosso) `[CANONE — DM 2026-11-21]`, morso +34 (2d8+11),
   soffio acido **16d4**, linea di 30 m, **Riflessi CD 31** ½, aderente a scelta,
   Presenza Terrificante CD 26. Dal round 2 lo accompagnano le **2 wyvern** di
   A.6 (SRD, GS 6). Per un gruppo di 13° fanno **EL 17**, il tetto esatto di
   APL+4; per uno di 14°, APL+3 `[CANONE — DM 2026-10-19]`. Combatte in passata
   con *Virare* al posto di *Ghermire*: la presa in bocca è di Fauci contro
-  Thorik in ARC-08 (D71).
+  Thorik in ARC-08 (D71).<!-- storico --> Fino al 2026-11-21: CA 36 (40 con *armatura magica*).<!-- /storico -->
 - **L'alternativa**: l'**Adulto** di A.1 (drago nero adulto maturo dell'SRD con
   il template Avanzato di PF1e, **GS 14**, CA 33, 37 con *armatura magica*,
   297 pf, soffio 14d4 Riflessi CD 30 ½), con le stesse wyvern: per un gruppo di

@@ -198,14 +198,14 @@ Benedizioni ci sono ancora.
   indietro sulla stessa linea. Il PG nominato lo morde al round dopo, a +54
   (+50), e l'occultamento non lo salva. Il nome non lo chiede: lo ha sentito
   di notte attraverso il corno, o usa un epiteto.
-  Fra un turno e l'altro sta a circa 15 m (Scena 11, «La passata, il nome,
+  Fra un turno e l'altro sta a più di 18 m da tutti i PG col Vecchio, a circa 15 m con l'Adulto (Scena 11, «La passata, il nome,
   la prima paura»).
 - ***Fluttuare*** **una volta sola**, a ⅓ dei pf: è la prima paura.
   ***Oscurità*** **una volta sola**, per coprire la fuga verso le paludi.
 - **Dal round 2, due wyvern** (Appendice A.6) su chi tiene la corda e su chi
   vola. Fuggono quando il drago fugge o muore. Il duello è EL 17 col Vecchio,
   EL 14 con l'Adulto.
-- **La Catena**: la runa sotto la scaglia si colpisce contro **CA 44** (41), e il
+- **La Catena**: la runa sotto la scaglia si colpisce contro **CA 47** (in pratica il 20 naturale) (41), e il
   primo colpo a segno la spezza: il drago se ne va (Scena 11).
 - **Aegis Fang**: il Bane contro Fauci qui **non vale**; la *Dragondoom* sì.
 - **Presenza Terrificante** CD 26 (25) all'ingresso (Volontà o scossi), raggio 72 m (63).
@@ -4247,7 +4247,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # M7-B · Il cortile del duello
 
-La pianta del cortile dove Skullcrusher cala all'alba (Scena 11), con la legenda nella pagina dopo. Le piante della notte, M7-C e M7-H, sono in fondo a cap. IV, subito prima del barile.
+La pianta del cortile dove Skullcrusher cala all'alba (Scena 11), con la legenda nella pagina dopo.
 
 ![M7-B — Il cortile del duello](../../Mappe/rendered-stampa-pianta/ARC07-MAPPE-DEFINITIVO_map05_cortile-interno-36-m-27-m-24-col-18-righe-1-5-m.svg)
 
@@ -4283,7 +4283,7 @@ Cinquant'anni fa Skullcrusher il Nero uccise un re di Hammerfist, e da allora no
 ### C.3 · Il duello in tre scambi (Scena 11)
 
 > **🎚️ [FAST-PLAY] del duello** (se vuoi chiudere veloce): 3 scambi narrati a
-> prova di gruppo (un attacco contro **CA 40**, 37 con l'Adulto, o Saltare/Equilibrio **CD 22** per chi lo affronta dalle mura), poi si sceglie l'esito tra i tre
+> prova di gruppo (un attacco contro **CA 43**, 37 con l'Adulto, o Saltare/Equilibrio **CD 22** per chi lo affronta dalle mura), poi si sceglie l'esito tra i tre
 > della Scena 11 in base a quanti scambi i PG hanno «vinto» (0-1 = fuggito, 2 = ferito
 > grave, 3 = ucciso). Uno scambio è vinto se metà del gruppo supera la prova.
 > Registra comunque le ferite per B4: N = scambi vinti. **[COMBATTIMENTO
@@ -4304,14 +4304,14 @@ Cinquant'anni fa Skullcrusher il Nero uccise un re di Hammerfist, e da allora no
 |---|---|
 | **Succede** | Skullcrusher cala sul cortile con due wyvern e combatte in passate, gridando i nomi che ha sentito di notte attraverso la Catena |
 | **Dove** | Il cortile |
-| **Chi c'è** | Skullcrusher il **Vecchio** (GS 17): 337 pf, CA 36 (40 con *armatura magica*), contatto 10. Dal round 2 due wyvern, su chi tiene la corda e su chi vola; fuggono quando fugge lui. **EL 17**. Re Thorek è nel cortile, alle spalle dei PG, a difendere la porta principale |
+| **Chi c'è** | Skullcrusher il **Vecchio** (GS 17): 337 pf, CA 39 (43 con *armatura magica*), contatto 13. Dal round 2 due wyvern, su chi tiene la corda e su chi vola; fuggono quando fugge lui. **EL 17**. Re Thorek è nel cortile, alle spalle dei PG, a difendere la porta principale |
 | **Chi vuole cosa** | Il drago vuole vincere davanti all'orda: per lui il potere è quello che gli altri hanno visto |
 | **Si comincia** | Dopo il barile il drago guarda in alto: chi lo aspetta in volo non ha la sorpresa. Dalle mura arrivano: −2 alla prima iniziativa se hanno tenuto la breccia; duello fuori dalle mura, senza fucina né campane, se hanno sabotato gli arieti |
 | **Round 1** | Cala dall'alto: Presenza, Volontà **CD 26** (Thorik non tira), poi il soffio aderente sul gruppo più fitto, 16d4, Riflessi **CD 31**. Non atterra. In picchiata, con un round di sorpresa, se Zog'tar è morto in modo spettacolare: Ascoltare CD 20 per agire, e le campane glielo tolgono |
-| **Dal round 2** | Una passata a round, a circa 15 m fra un turno e l'altro. A metà del movimento una cosa sola: **grida un nome**, **morde** chi ha nominato il turno prima (+54: il +34 del morso, più il nome), oppure **soffia**, se il soffio è tornato |
+| **Dal round 2** | Una passata a round; fra un turno e l'altro resta a più di 18 m da tutti i PG. A metà del movimento una cosa sola: **grida un nome**, **morde** chi ha nominato il turno prima (+54: il +34 del morso, più il nome), oppure **soffia**, se il soffio è tornato |
 | **Chi sceglie** | Nell'ordine: chi ha detto la Catena ad alta voce; chi colpisce l'orda o gli arieti dall'alto; chi tiene la corda dell'ala; chi lo ha ferito di più. Se in un round nessuno lo chiama, va sul re: due colpi lo mettono a terra, uno solo se è a 8 pf. Il re non muore |
-| **Le corde** | Azione preparata su «quando picchia». Chi lancia il gancio: contatto a distanza contro **CA 10**, incremento 3 m, entro 15 m da una gru. Chi tira: Forza **CD 25**, +2 per chi aiuta, al massimo tre per corda. Il drago resta a terra un round, e chi aveva preparato un attacco lo porta |
-| **La Catena** | Leggerla: azione di movimento entro 9 m. Colpirla: **CA 44**; un attacco di contatto non la raggiunge. Il primo colpo a segno la spezza, e il drago se ne va |
+| **Le corde** | Azione preparata su «quando picchia». Chi lancia il gancio: contatto a distanza contro **CA 13**, incremento 3 m, entro 15 m da una gru. Chi tira: Forza **CD 25**, +2 per chi aiuta, al massimo tre per corda. Il drago resta a terra un round, e chi aveva preparato un attacco lo porta |
+| **La Catena** | Leggerla: azione di movimento entro 9 m. Colpirla: **CA 47** (in pratica il 20 naturale); un attacco di contatto non la raggiunge. Il primo colpo a segno la spezza, e il drago se ne va |
 | **Il cortile** | La fucina: 4d6, e niente olfatto per 1d4 round. Le campane tolgono la sorpresa, e chi le suona si fa bersagliare. Chiamare i nani: arrivano, e muoiono |
 | **Artefatti** | *Dragondoom* di Aegis Fang funziona, tre volte al giorno. Il Bane contro Fauci qui non vale. La Cintura di Tordek rifiuta di attivarsi |
 | **La soglia** | A un terzo dei pf (circa 112) si ferma in aria, una volta sola, ed esita: in quel round non attacca. Al suo turno fugge nell'oscurità, a meno che nel round prima abbia preso almeno due colpi: allora resta un round, e lì si può uccidere. Se Balvar è morto combatte a −2 e fugge a metà dei pf |
@@ -4472,9 +4472,12 @@ quello che cambia davvero.
   soffio, se è tornato, lungo la linea più lunga che trova; il morso su chi
   ha nominato il turno prima; oppure il nome di un altro. Poi va oltre e
   risale. Punisce chi non ha gittata o volo. Bersaglio: «Chi sceglie», qui
-  sotto. Fra un turno e l'altro resta a circa 15 m sopra il cortile: Aegis Fang
-  scagliata, cinque incrementi da 3 m, ci arriva al limite, e il blast di
-  Artemis sempre. *Corrompere l'acqua* sulle
+  sotto. Fra un turno e l'altro resta a più di 18 m da tutti i PG col Vecchio,
+  a circa 15 m con l'Adulto: il blast di Artemis
+  ci arriva sempre, Aegis Fang
+  scagliata no. Cinque incrementi da 3 m fanno 15 m (SRD, armi da lancio), e
+  a fine passata il Vecchio è più lontano. Con l'Adulto, a circa 15 m, ci
+  arriva al limite. *Corrompere l'acqua* sulle
   pozioni: un uso prende le pozioni
   di un solo PG, perché l'SRD guasta 10 piedi cubi, poco più di un quarto di
   metro cubo, entro il raggio della Presenza. Ognuna tira a parte Volontà
@@ -4532,9 +4535,14 @@ quello che cambia davvero.
   un'arma da mischia lanciata, −4 al tiro e incremento 3 m, e torna in mano a
   Thorik prima del suo turno successivo (SRD, *da ritorno*). «Colpisce in
   volo» vuol dire un tiro a distanza a segno mentre il drago è in quota.
+  Col Vecchio, che chiude le passate a più di 18 m, l'ascia scagliata lo
+  raggiunge solo quando lui si avvicina: con un'azione preparata su «quando
+  picchia» entro 15 m, che è lo stesso innesco delle corde, o nel round
+  della prima paura, se si ferma in aria entro 15 m. Nel round in cui le
+  corde lo inchiodano è a terra, e il colpo non conta «in volo».
 - **La Catena, in ogni round.** Se i PG sanno della runa (Scena 7), leggerla
   sulla scaglia è un'azione di movimento entro 9 m, e colpirla è un attacco
-  contro **CA 44** col Vecchio e **41** con l'Adulto: la CA con l'armatura magica, 40 o 37, più 4 perché il bersaglio è piccolo; la runa è sotto la scaglia, e un attacco di contatto non la raggiunge: il primo colpo a segno la spezza, e il drago se ne va. Se
+  contro **CA 47** col Vecchio (in pratica il 20 naturale) e **41** con l'Adulto: la CA con l'armatura magica, 43 o 37, più 4 perché il bersaglio è piccolo; la runa è sotto la scaglia, e un attacco di contatto non la raggiunge: il primo colpo a segno la spezza, e il drago se ne va. Se
   Balvar è morto prima dell'alba, il drago combatte a **−2** e fugge a metà pf.
 
 **Quando qualcuno la legge**, la prima volta:
@@ -4744,7 +4752,7 @@ Per tutti, tre cose SRD:
   il drago picchia sotto i 9 m»*, cioè ogni volta che scende a mordere qualcuno
   nel cortile. I ruoli:
   - **chi lancia il gancio** (sul camminamento, accanto alla gru): attacco di
-    contatto a distanza, incremento 3 m, contro la CA di contatto del drago (**10**).
+    contatto a distanza, incremento 3 m, contro la CA di contatto del drago (**13** col Vecchio, che ha l'anello di protezione; **10** con l'Adulto).
     È un'arma da lancio, quindi arriva a cinque incrementi, 15 m, con −2 al
     tiro per ogni incremento intero di distanza (SRD, gittata): dalle gru in
     B10 e W10 il gancio prende il drago quando picchia entro 15 m da una
@@ -4795,7 +4803,7 @@ morto e il drago fugge a **metà** pf, l'esito è **FERITO GRAVE**.
 #### Sidebar — Scalare lo scontro (stile RHoD)
 | Situazione | Aggiustamento |
 |---|---|
-| Il gruppo di stasera, e ogni party **straripante** (4 PG di 13° con la fiducia piena del consiglio, tutti gli artefatti e il banco della fucina speso, o 4 PG di 14°) | Skullcrusher **Vecchio e Avanzato** (GS 17): **337 pf**, CA 36 (40 con *armatura magica*), soffio 16d4 CD 31, Presenza CD 26, morso +34; statistiche in Appendice A.1-bis. Con lui, dal round 2, le 2 **wyvern** (SRD, *Wyvern*: GS 6, 59 pf, CA 18, volare 18 m, pungiglione +10 con veleno Tempra CD 17, 2d6 COS, morso +8 2d8+4; Appendice A.6). Per un gruppo di 13° fanno EL 17, il tetto esatto di APL+4; per uno di 14°, APL+3. Le wyvern vanno su chi tiene la corda dell'ala e su chi vola; quando il drago fugge o muore, fuggono anche loro. Il gruppo di 13° straripante ha le wyvern |
+| Il gruppo di stasera, e ogni party **straripante** (4 PG di 13° con la fiducia piena del consiglio, tutti gli artefatti e il banco della fucina speso, o 4 PG di 14°) | Skullcrusher **Vecchio e Avanzato** (GS 17): **337 pf**, CA 39 (43 con *armatura magica*), contatto 13, soffio 16d4 CD 31, Presenza CD 26, morso +34; statistiche in Appendice A.1-bis. Con lui, dal round 2, le 2 **wyvern** (SRD, *Wyvern*: GS 6, 59 pf, CA 18, volare 18 m, pungiglione +10 con veleno Tempra CD 17, 2d6 COS, morso +8 2d8+4; Appendice A.6). Per un gruppo di 13° fanno EL 17, il tetto esatto di APL+4; per uno di 14°, APL+3. Le wyvern vanno su chi tiene la corda dell'ala e su chi vola; quando il drago fugge o muore, fuggono anche loro. Il gruppo di 13° straripante ha le wyvern |
 | Un gruppo di 13° che non è straripante, o il DM non conferma il Vecchio | l'**Adulto** dell'Appendice A.1, con le 2 wyvern: EL 14 sulla carta, 15 al tavolo |
 | Party **logorato** (il campo e le mura andati male, risorse spese, Hella ancora fragile) | Skullcrusher NON usa il soffio 2 volte di fila; quando gli restano ~100 pf **fugge subito**, senza il round in più (esito FERITO GRAVE garantito) |
 | **Hella appena risorta** — vuoi proteggerla | Riga da scegliere, non di base: il drago la ignora finché non lo ferisce (predatore: va per la minaccia, non per la novità). Senza questa scelta vale «Chi sceglie», che la mette fra i preferiti — dà alla giocatrice spazio per il suo primo scontro |
@@ -4907,8 +4915,10 @@ della Corona.
 >
 > Vale la regola 3.5 di un livello alla volta: i tre salgono al **14°** e i loro
 > PX restano fermi a **104.999**, quindi i PX di questo beat per loro non contano
-> più. **Hella prende il 14° in questa notte**: le mancano 4.646 PX, e la tenda
-> intera (≈ 3.650), Vatore (500) e le mura (600) li coprono prima del duello.
+> più. Se Hella passa la soglia del 14° durante la notte dipende da quello che
+> il gruppo gioca: il conto lo tiene il registro dei PX del ramo di gruppo
+> (`campaign/REGISTRO-PX.md` sul ramo `campaign-group-rumblingstone`), non
+> questo master.
 > Per tutti e quattro il livello si prende al primo riposo, dopo la battaglia
 > («Il Ritorno a Hammerfist» §8, D90). Le parti giocate non si ritoccano.
 >

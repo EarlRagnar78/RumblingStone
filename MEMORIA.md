@@ -85,6 +85,8 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
 | 2026-11-27 | P16 · REGOLE | DEF-4 di ARC-07 allineato alla scheda A.1-bis di Skullcrusher il Vecchio (canon… | 🟡 numeri allineati alla scheda; aperti al DM: C.3 contro CA 43 dà «fuggito» nel 99,9% dei casi (misura del regolista, problema dichiarato e non risolto), quand… |
+| 2026-11-27 | REGOLE-SENZA-OMISSIONI | Palio: un solo rapimento del fantino a notte (card di Jfs del 27/11 «Si escludo… | ✅ misura_stampa del Palio entro i tetti |
+| 2026-11-27 | MISURA-AGENTI-E-AUTOMATISMI | M2-bis, emendamento «raccolta settimanale e annotatore cieco» di ADR-0154 (scel… | 🟡 script fatto; la routine del lunedì non lo chiama ancora; il tetto di dieci a settimana non è nel codice; 24/27 sopravvaluta l'accordo; la cecità dell'annota… |
 | 2026-11-27 | STATO-E-ORDINE | ADR-0151, correzioni dopo la #529 (richiesta di Jfs del 27/11, 08:29 UTC: «fai… | ✅ suite 3.639 passati e 19 saltati, `gate_locale --pre-push` 56 verdi, `tools_manifest --check` 156 conformi; hook su Bash mediana 46-54 ms (prima 42-47), merg… |
 | 2026-11-27 | MISURA-AGENTI-E-AUTOMATISMI | M2, emendamento «M2» di ADR-0154: gli omonimi dei trigger e i messaggi che non… | 🟡 M2 fatto; la tecnica 1 senza cricchetto finché manca un set di prompt grezzi; ogni `<relay>` tace anche quando apre lavoro; regex euristiche, «avventura» non… |
 | 2026-11-27 | REGOLE-SENZA-OMISSIONI | Il fantino nella stalla del Palio solo se è un PNG ancora lì (card di Jfs del 2… | ✅ misura_stampa del Palio entro i tetti |
@@ -94,13 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-27 | STATO-E-ORDINE | ADR-0151 (accettata), la memoria del progetto ha uno specchio e un custode (ric… | 🟡 su main `076a74d1`: 56 righe di `MEMORY.md`, 12 non archiviate; `MEMORY.md` 15.324 B (tetto 12.288); coda `--check` 5 difetti; 27 test nuovi, suite 3.588 pas… |
 | 2026-11-27 | STATO-E-ORDINE | ADR-0153 (proposta), la documentazione segue la struttura (audit del 27/11 dopo… | 🟡 debito da 127 (main 076a74d1: 109 script, 13 agenti, 4 workflow, 1 hook, 0 ADR) a 106 (solo script di primo livello), tetto abbassato a 106; ARCHITETTURA cit… |
 | 2026-11-27 | REGOLE-SENZA-OMISSIONI | Il fantino nella mappa della stalla del Palio (card di Jfs del 27/11 «Nella sta… | ✅ misura_stampa del Palio entro i tetti, booklet rigenerato |
-| 2026-11-26 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Le quindici domande aperte dei pregen decise dal DM | INFERRED aperti 38 → 23 |
-| 2026-11-26 | REGOLE-SENZA-OMISSIONI | Grimjaw rinforzato e i quattro punti aperti della #523 (card di Jfs del 26/11).… | 🟡 rampa chiusa con Borin e Yrsa: ripiega 54, a 0 pf 19, un eroe a terra 73 (a 100 pf erano 53 · 27 · 67; accettato a 178: 62 · 8 · 82); `verifica_scheda.py` 0… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 325 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 244 voci, l'ultima MS-0244 del 2026-11-27 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 246 voci, l'ultima MS-0246 del 2026-11-27 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

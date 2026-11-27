@@ -113,6 +113,9 @@ Il fantino è un mercenario: **corruttibile**. Durante la Cena:
   (Diplomazia: trattarlo da persona, non da strumento — molto Salvatore).
 - **Rapimento**: se la corruzione fallisce, i rivali tentano di **rapire** il fantino
   (combattimento urbano notturno, GS 10–11: 2–3 sicari + 1 mago di supporto).
+- **Posta — Fantino fuggito o rapito dai rivali** `[CANONE — DM 2026-11-27, card «Chi corre se il fantino fugge o lo rapiscono i rivali»]` →
+  corre il **fantino di riserva**, come per il rapimento dei drow (§3.3), e quella notte dorme
+  lui nella stalla, accanto al box, al posto del fantino (MAPPE).
 
 ### 3.3 Fronte C — La Stalla e i Drow di Sonjak *(aggancio campagna)*
 
@@ -162,6 +165,7 @@ invia **sicari drow** a Channathgate per **avvelenare** il cavallo dell'Istrice/
 <!-- storico -->
 - era: «colpire il cavallo (non i PG)» nella tattica dell'incontro della stalla (fino al 2026-11-19; card del DM: cavallo o fantino)
 - era: «Cavallo avvelenato → −4 Cavalcare in corsa (o morte del cavallo → si corre scossi o con una brenna di riserva)», fino al 2026-11-26. Una dose di sangue nero toglie al massimo 12 di Costituzione e non uccide un cavallo leggero (Cos 13, SRD). Card del DM del 2026-11-26: «Due dosi per ucciderlo», «Ai tiri di Zona in corsa» (come STATBLOCCHI §2) e «Sì, mappa e Poste» (posta del fantino rapito, MAPPE e legenda della stalla allineate).
+- era: fino al 2026-11-27 §3.2 non diceva chi corre se il fantino fugge o lo rapiscono i rivali. Card del DM del 2026-11-27 «La riserva, come per i drow»: corre il fantino di riserva, che dorme nella stalla al posto del fantino.
 <!-- /storico -->
 
 ## 4. Sottotrame notturne opzionali (allungano a 4–5 sessioni)

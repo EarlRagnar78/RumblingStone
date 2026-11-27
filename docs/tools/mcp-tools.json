@@ -4953,6 +4953,66 @@
       "deterministic": true
     },
     {
+      "name": "raccogli_casi_agenti",
+      "description": "«È lunedì: quali messaggi dei thread nuovi entrano nel set d'oro degli agenti, con che etichetta da confermare, e com'è cambiata la misura dopo le mie scelte?»\n\nADR-0154, scelta di Jfs del 2026-11-27: ogni thread nuovo porta un caso al set d'oro degli agenti, e Jfs ne conferma l'etichetta una volta a settimana. «proponi» legge i messaggi esportati dalla routine del lunedì, scarta i duplicati (stesso id o stesso testo normalizzato, nel set o in coda) e i testi con segreti, email o percorsi con un nome utente, etichetta ogni caso con la predizione dell'hook (instradamento_agenti.predici) come proposta e scrive DIR/AAAA-Www.json e DIR/CARD.md, una card per caso con la consigliata, le alternative e la catena di ognuna. «applica» porta nel set i casi confermati in SCELTE.tsv, con lo split per hash sha256 dell'id (50/50 dev/test, stabile come in TFDS e Hugging Face), rimette il tetto con l'hook invariato e stampa la misura prima e dopo. --check valida la forma del set (campi, split, etichette, duplicati, testo non vuoto, nessun dato da non pubblicare). «cieco» e «annota» danno la consigliata da un annotatore che non vede la proposta dell'hook. La CI non legge i thread: lo lancia la routine dalla shell, perché la coda e i messaggi esportati stanno in /mnt/project-files/instradamento-coda/, fuori dal repo, e contengono prompt che nel repo non vanno. Il server MCP rifiuta i percorsi fuori dal repo e gli strumenti che scrivono: da lì la raccolta non si lancia.",
+      "use_case": "«È lunedì: quali messaggi dei thread nuovi entrano nel set d'oro degli agenti, con che etichetta da confermare, e com'è cambiata la misura dopo le mie scelte?»",
+      "invocation": "python3 scripts/raccogli_casi_agenti.py proponi IN.json --coda DIR | cieco DIR/AAAA-Www.json | annota DIR/AAAA-Www.json ANNOTAZIONI.tsv | applica DIR/AAAA-Www.json SCELTE.tsv | --check",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "comando": {
+            "type": "string",
+            "description": "proponi = le proposte della settimana dai messaggi esportati; cieco = id e testo per l'annotatore cieco, senza la proposta; annota = le sue etichette come consigliate; applica = i casi confermati nel set d'oro, con il tetto rimesso.",
+            "enum": [
+              "proponi",
+              "cieco",
+              "annota",
+              "applica"
+            ]
+          },
+          "ingresso": {
+            "type": "string",
+            "description": "Con proponi: IN.json, elenco di {data, fonte, tipo, testo, id_messaggio}."
+          },
+          "coda": {
+            "type": "string",
+            "description": "Con proponi: la cartella della coda, dove vanno AAAA-Www.json e CARD.md."
+          },
+          "settimana": {
+            "type": "string",
+            "description": "Con applica: il file DIR/AAAA-Www.json della settimana."
+          },
+          "scelte": {
+            "type": "string",
+            "description": "Con applica: SCELTE.tsv, colonne id_messaggio, atteso, accettabili (virgole), azione tieni|togli."
+          },
+          "oggi": {
+            "type": "string",
+            "description": "La data di oggi AAAA-MM-GG: sceglie la settimana e va nella nota del tetto."
+          },
+          "oro": {
+            "type": "string",
+            "description": "Il set d'oro."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "La forma del set d'oro: exit 1 se un caso è scritto male."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "plans/instradamento/agenti-oro.json"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "--check: set non in forma; applica: scelte che non tornano, niente scritto",
+        "2": "ingresso malformato o nessun sottocomando"
+      },
+      "deterministic": true
+    },
+    {
       "name": "registro_letture",
       "description": "«Questo master e' cambiato dopo l'ultima lettura a freddo? Ogni rilievo grave ha avuto una risposta?»\n\nIl registro delle letture a freddo dei master DEF (D26): impronta del testo letto e stato di ogni rilievo 🔴/🟠. Il cancello e' in avviso finche' un master non ha le letture con impronta di lettore e playtester, poi blocca da solo una lettura scaduta o un rilievo senza stato (D4). --confronta mette due letture affiancate, scena per scena.",
       "use_case": "«Questo master e' cambiato dopo l'ultima lettura a freddo? Ogni rilievo grave ha avuto una risposta?»",

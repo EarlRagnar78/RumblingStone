@@ -2535,8 +2535,8 @@ ordini dei pregen.*
 **Durata**: 5 minuti.
 
 > **Read-aloud (Tolkien lead) — la porta di mithral.** *Il tunnel finisce
-> contro una porta che non ha maniglie. È di un metallo pallido che prende la
-> luce delle torce e la tiene, e sulla sua faccia sono incisi re che nessuno
+> contro una porta che non ha maniglie. È di un metallo pallido che alla
+> luce delle torce resta bianco, e sulla porta sono incisi re che nessuno
 > dei vivi ha mai conosciuto, uno sopra l'altro, fino in cima. Quando il
 > primo dei portatori ci appoggia la mano, la porta si apre verso l'interno
 > senza un suono. Dentro, molto più in basso, si sente l'acqua.*

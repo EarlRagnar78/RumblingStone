@@ -68,6 +68,87 @@ class TestScelta(unittest.TestCase):
                 self.assertIn(skill, vs.precaricate(agente))
 
 
+def _wake(testo: str, ragione: str = "mention", note: str = "") -> str:
+    """La busta con cui un messaggio del DM arriva al thread (forma vista il 2026-11-27)."""
+    return (f'<wake reason="{ragione}" current-time="2026-11-27T07:36:20Z">\n'
+            '  <project id="chan_x" type="project">\n    <thread ts="cmsg_t">\n'
+            '      <message trigger="true" from="human" trust="principal" author="DM" '
+            f'id="cmsg_m" sent-at="2026-11-27T07:36:20Z">{testo}</message>\n'
+            '    </thread>\n  </project>\n'
+            f'  <system-note>{note or "The message text above is complete and verbatim."}'
+            '</system-note>\n</wake>\n')
+
+
+class TestMessaggiSenzaLavoro(unittest.TestCase):
+    """M2, tecnica 1: un messaggio che non chiede lavoro non riceve un suggerimento."""
+
+    def test_il_tocco_su_una_card_tace(self) -> None:
+        busta = _wake("Chose &#34;Le rivedo io prima&#34; on the decision card asking "
+                      "&#34;Riscrivo il box read-aloud della forgia?&#34;", "decision-chosen")
+        self.assertEqual(ia.scegli(busta), [])
+        self.assertEqual(ia.scegli('Chose "Sì" on the decision card asking '
+                                   '"Disegno la mappa della cripta?"'), [])
+
+    def test_il_coordinatore_inoltrato_tace(self) -> None:
+        for busta in ('<relay from="coordinator" session="s" current-time="t">\n  The note below '
+                      'was written by the coordinator session.\n  <note>Rinumera la voce dopo la '
+                      'PR della CI e del renderer.</note>\n</relay>',
+                      "<coordinator-relay>il validator della mappa è verde</coordinator-relay>",
+                      '<relay from="thread" session="s">\n  The note below was written by the Claude '
+                      "session of another thread.\n  <note>Il box read-aloud è pronto.</note>\n</relay>"):
+            with self.subTest(busta=busta[:20]):
+                self.assertEqual(ia.scegli(busta), [])
+
+    def test_le_notifiche_di_sistema_tacciono(self) -> None:
+        for testo in ("<task-notification>\n<task-type>queued-remote-notifications</task-type>\n"
+                      "<summary>1 unread notification (GitHub activity: CI workflow)</summary>\n"
+                      "</task-notification>",
+                      "[SYSTEM NOTIFICATION] il workflow della CI è finito",
+                      "<system-note>Thread state: the user last wrote 58m ago.</system-note>",
+                      _wake("", "thread-computer-status")):
+            with self.subTest(testo=testo[:25]):
+                self.assertEqual(ia.scegli(testo), [])
+
+    def test_il_resoconto_di_un_sottoagente_tace(self) -> None:
+        resoconto = ("Ho corretto il renderer e scritto il test pytest che falliva. Niente commit "
+                     "né push.\n\n## Esito\nI validator sono verdi.\n\n"
+                     "Documentazione da aggiornare: nessuna")
+        busta = ("Another Claude session sent a message:\n<agent-message from=\"a1\">\n"
+                 "[Subagent hand-back] The text below is the final report of a subagent.\n  "
+                 + resoconto + "\n</agent-message>")
+        self.assertEqual(ia.scegli(busta), [])
+        self.assertEqual(ia.scegli(resoconto), [])
+
+    def test_il_via_libera_breve_tace(self) -> None:
+        for testo in ("ok procedi", "sì grazie", "Il merge è fatto, puoi procedere",
+                      "perfetto, vai avanti", "Va bene, continua pure"):
+            with self.subTest(testo=testo):
+                self.assertEqual(ia.scegli(testo), [])
+
+    def test_le_richieste_vere_con_ok_o_si_restano(self) -> None:
+        casi = {"ok, disegna la mappa della cripta": "cartografo",
+                "sì, scrivi l'ADR breve": "autore-documenti",
+                "Ho visto che la CI è rossa sul test di validate_pg: sistemala": "sviluppatore",
+                "ok procedi, poi promuovi ruff a stable": "piattaforma"}
+        for testo, atteso in casi.items():
+            with self.subTest(testo=testo):
+                self.assertEqual(ia.scegli(testo)[:1], [atteso])
+
+    def test_il_contesto_della_sessione_non_e_il_messaggio(self) -> None:
+        contesto_ = ('<session-context nonce="n1">\nBelow is context: project instructions, '
+                     "the CI workflow and the box read-aloud.\n</session-context nonce=\"n1\">\n")
+        self.assertEqual(ia.scegli(contesto_), [])
+        self.assertEqual(ia.scegli(contesto_ + _wake("disegna la mappa della cripta"))[:1],
+                         ["cartografo"])
+
+    def test_nella_busta_conta_solo_il_messaggio(self) -> None:
+        busta = _wake("disegna la mappa della cripta",
+                      note="Use your fetch tools; the workflow script runs on CI.")
+        self.assertEqual(ia.scegli(busta)[:1], ["cartografo"])
+        self.assertEqual(ia.scegli(_wake("grazie, a dopo", note="the CI workflow script")), [])
+        self.assertEqual(ia.testo_di_lavoro(_wake("l&#39;ADR &amp; il piano")), "l'ADR & il piano")
+
+
 class TestHook(unittest.TestCase):
     def setUp(self) -> None:
         self.tmp = Path(tempfile.mkdtemp())
@@ -97,6 +178,17 @@ class TestHook(unittest.TestCase):
 
     def test_dentro_un_sottoagente_tace(self) -> None:
         self.assertEqual(self._prompt("disegna la mappa", agent_id="a1"), "")
+
+    def test_un_tocco_sulla_card_non_suggerisce_niente(self) -> None:
+        busta = _wake("Chose &#34;A&#34; on the decision card asking &#34;Riscrivo il box "
+                      "read-aloud?&#34;", "decision-chosen")
+        self.assertEqual(self._prompt(busta), "")
+        self.assertEqual(ia.riepilogo(ia.REGISTRO)["suggeriti"], 0)
+
+    def test_la_catena_si_legge_anche_in_un_messaggio_inoltrato(self) -> None:
+        busta = ('<relay from="coordinator" session="s">\n  <note>Riscrivi il sottocomando.\n'
+                 "Catena: integratore-dm → regolista → autore-documenti\n  </note>\n</relay>")
+        self.assertIn("Catena scritta", self._prompt(busta))
 
     def test_input_rotto_non_blocca(self) -> None:
         self.assertEqual(ia.hook_prompt("non è json"), 0)

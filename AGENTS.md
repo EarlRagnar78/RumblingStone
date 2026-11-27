@@ -208,6 +208,35 @@ queste skill da solo: è questa sezione a instradarli.
 | `skills/rumblingstone-debugging/` | debugging per root cause, **solo infrastruttura**; vendorizzata da obra/superpowers (MIT), ADR-0010 |
 | `skills/dnd-35-rules/` | meta-router legacy: rimanda alle skill qui sopra |
 
+### Gli agenti di `.claude/agents/`
+
+Tredici agenti ([ADR-0146](plans/adr/ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md)),
+ognuno con le sue skill precaricate. Li lancia il thread con lo strumento Agent
+(`subagent_type: "<nome>"`); un agente non ne avvia altri, quindi la catena la
+guida il thread. Ogni catena che cambia file finisce con `autore-documenti`, e
+la riga «Catena: a → b» nelle istruzioni del thread ferma push e PR finché
+manca una chiamata (`scripts/instradamento_agenti.py --cancello`).
+
+| Agente | Classe | Quando |
+|---|---|---|
+| `autore-prosa-gioco` | Autori | box read-aloud, handout, recap, dialoghi, introduzioni e appendici dei volumi |
+| `autore-master` | Autori | master DEF di un arco: stanze, incontri, tattiche, bottega |
+| `autore-documenti` | Autori | ADR, piani, guide, corpi di PR; la documentazione dopo ogni lavoro |
+| `integratore-dm` | Tecnici | `dm.py`, `dmcore`, plugin di sistema, server MCP, manifest degli strumenti |
+| `sviluppatore` | Tecnici | il resto di `scripts/`, CI, test, hook |
+| `piattaforma` | Tecnici | canali, versioni fissate, promozioni, rilasci, roadmap |
+| `cartografo` | Tecnici | mappe tattiche, Watabou, UVTT |
+| `impaginatore` | Tecnici | booklet, PDF, typst, licenze e gate d'uscita |
+| `art-director` | Tecnici | immagini, prompt, set coerenti |
+| `regolista` | Tecnici | statblock, schede, potenziamenti, arbitrati 3.5 e PF1e |
+| `sincronizzatore-giocato` | Tecnici | il giocato sul ramo di gruppo e il merge di main in quel ramo ([ADR-0149](plans/adr/ADR-0149-il-giocato-arriva-sul-ramo-di-gruppo-con-un-agente-e-una-misura.md)) |
+| `lettore-a-freddo` | Verificatori, sola lettura | lettura a freddo di prosa o master appena scritti |
+| `custode-canone` | Verificatori, sola lettura | coerenza con il canone della campagna e del 1372 DR |
+
+Un agente nuovo entra in questa tabella nella stessa PR: la CI lo controlla
+con `scripts/documentazione_allineata.py`
+([ADR-0153](plans/adr/ADR-0153-la-documentazione-segue-la-struttura.md)).
+
 ### Quando un agente risponde
 
 1. Applica il principio: **chi legge, in che forma esce**. Poi guarda la

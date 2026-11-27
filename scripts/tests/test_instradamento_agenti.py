@@ -162,7 +162,9 @@ def _bash(comando: str) -> dict:
         {"type": "tool_use", "name": "Bash", "input": {"command": comando}}]}}
 
 
-class TestCancello(unittest.TestCase):
+class _BaseCancello(unittest.TestCase):
+    """Registro e trascrizione in una cartella temporanea; nessun test qui."""
+
     def setUp(self) -> None:
         self.tmp = Path(tempfile.mkdtemp())
         p = mock.patch.object(ia, "REGISTRO", self.tmp / "reg.jsonl")
@@ -189,6 +191,8 @@ class TestCancello(unittest.TestCase):
             codice = ia.hook_cancello(json.dumps(ev))
         return codice, err.getvalue()
 
+
+class TestCancello(_BaseCancello):
     def test_la_catena_scritta_si_legge_in_ordine(self) -> None:
         self.assertEqual(ia.catena_scritta(ISTRUZIONI),
                          ["integratore-dm", "regolista", "autore-documenti"])
@@ -258,6 +262,73 @@ class TestCancello(unittest.TestCase):
 
     def test_input_rotto_non_blocca(self) -> None:
         self.assertEqual(ia.hook_cancello("non è json"), 0)
+
+
+def _avvio(testo: str = ISTRUZIONI) -> dict:
+    """Il primo messaggio di un thread, come lo scrive la trascrizione."""
+    return {"type": "user", "message": {"role": "user", "content": testo}}
+
+
+def _risultato(testo: str) -> dict:
+    return {"type": "user", "message": {"role": "user", "content": [
+        {"type": "tool_result", "tool_use_id": "t1", "content": testo}]}}
+
+
+class TestCatenaDallaTrascrizione(_BaseCancello):
+    """L'hook del prompt non scatta sul primo messaggio del thread: la catena si
+    legge dalla trascrizione (audit del 27/11/2026, §2)."""
+
+    def test_catena_nel_primo_messaggio_e_nessun_agente_blocca(self) -> None:
+        codice, err = self._push([_avvio()])
+        self.assertEqual(codice, 2)
+        self.assertIn("integratore-dm", err)
+
+    def test_il_messaggio_di_avvio_marcato_meta_conta(self) -> None:
+        # Così arriva davvero: contesto del progetto e nota del coordinatore in una
+        # riga isMeta, che l'hook UserPromptSubmit non vede.
+        nota = ('<session-context>regole</session-context>\n<relay from="coordinator">\n'
+                "  <note>\n      Tipo di lavoro: hook.\n"
+                "      Catena: sviluppatore → autore-documenti\n  </note>\n</relay>")
+        riga = {"type": "user", "isMeta": True, "message": {"role": "user", "content": nota}}
+        codice, err = self._push([riga, _uso_agente("sviluppatore")])
+        self.assertEqual(codice, 2)
+        self.assertIn("autore-documenti", err)
+
+    def test_un_sottoagente_nella_trascrizione_non_scrive_la_catena(self) -> None:
+        riga = dict(_avvio(), isSidechain=True)
+        self.assertEqual(self._push([riga])[0], 0)
+
+    def test_catena_nel_primo_messaggio_a_blocchi_di_testo(self) -> None:
+        riga = {"type": "user", "message": {"role": "user", "content": [
+            {"type": "text", "text": ISTRUZIONI}]}}
+        self.assertEqual(self._push([riga])[0], 2)
+
+    def test_catena_nel_primo_messaggio_con_gli_agenti_chiamati_passa(self) -> None:
+        righe = [_avvio("Correggi lo script.\nCatena: sviluppatore → autore-documenti\n"),
+                 _uso_agente("sviluppatore"), _uso_agente("autore-documenti")]
+        self.assertEqual(self._push(righe)[0], 0)
+
+    def test_la_catena_dentro_un_tool_result_non_conta(self) -> None:
+        righe = [_avvio("leggi la guida del coordinatore"),
+                 _risultato("Esempio:\nCatena: cartografo → custode-canone\n")]
+        self.assertEqual(self._push(righe)[0], 0)
+        reg = [json.loads(r) for r in ia.REGISTRO.read_text(encoding="utf-8").splitlines()]
+        self.assertEqual(reg[-1].get("motivo"), "nessuna catena scritta nelle istruzioni")
+
+    def test_vale_l_ultima_catena_scritta(self) -> None:
+        righe = [_avvio("Catena: cartografo\n"), _uso_agente("cartografo"),
+                 _avvio("Catena: sviluppatore → autore-documenti\n"),
+                 _uso_agente("sviluppatore")]
+        codice, err = self._push(righe)
+        self.assertEqual(codice, 2)
+        self.assertIn("autore-documenti", err)
+        self.assertNotIn("cartografo", err.split("manca")[-1])
+
+    def test_il_registro_vince_sulla_trascrizione(self) -> None:
+        self._istruzioni("Catena: cartografo\n")
+        righe = [_avvio("Catena: sviluppatore\n"), _uso_agente("cartografo"),
+                 _uso_agente("autore-documenti")]
+        self.assertEqual(self._push(righe)[0], 0)
 
 
 class TestCancelloCanone(unittest.TestCase):

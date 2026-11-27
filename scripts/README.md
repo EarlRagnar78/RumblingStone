@@ -9,17 +9,13 @@ formats and (optionally) deploys to user-level skill directories.
 
 ## Skills
 
-The repo ships **five skills** as canonical sources, plus one legacy
-meta-router for backwards compatibility:
-
-| Skill | Scope |
-|---|---|
-| `skills/dnd-35-srd/` | Pure d20 SRD mechanics (no setting bias) |
-| `skills/forgotten-realms-lore/` | Faerûn 1372 DR canon |
-| `skills/rumblingstone-campaign/` | Custom campaign — PCs, artifacts, arcs, coherence |
-| `skills/pathfinder-1e-srd/` | PF1e rules, simple templates, CR benchmarks, 3.5↔PF conversion |
-| `skills/npc-villain-boosting/` | Decision framework + workflow for boosting PNGs/villains/monsters |
-| `skills/dnd-35-rules/` | Meta-router that points to the skills above (legacy compat) |
+The repo ships **eighteen skills** as canonical sources (every directory under
+`skills/` with a `SKILL.md`; `ls -d skills/*/` counts them), including the
+legacy meta-router `skills/dnd-35-rules/`. The list with one line per skill is
+the «Inventario completo» section of [`AGENTS.md`](../AGENTS.md), which
+`validate_skills.py` keeps in sync with the tree (ADR-0041); it is not
+repeated here, because a second copy is the one that drifts (this file said
+«five skills» until 2026-11-27).
 
 The build pipeline auto-discovers anything under `skills/` that has a
 `SKILL.md` file.

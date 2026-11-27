@@ -12,7 +12,12 @@ repo (ADR-0140):
 - ``--cancello`` (PreToolUse su ``git push``, ``gh pr create|ready`` e sulla
   creazione di una PR via MCP): **blocca** se le istruzioni del thread hanno
   scritto una catena (una riga «Catena: a → b → c») e nella sessione manca la
-  chiamata Agent di uno di quegli agenti, o di ``autore-documenti``. Via
+  chiamata Agent di uno di quegli agenti, o di ``autore-documenti``. La catena
+  si prende dal registro scritto da ``--prompt``; se lì manca (l'hook non scatta
+  sul primo messaggio del thread, quello di avvio), dall'ultima riga «Catena:»
+  dei messaggi a Claude nella trascrizione (anche quello di avvio, che la
+  trascrizione marca ``isMeta``): solo testo scritto, mai il risultato di uno
+  strumento. Via
   d'uscita esplicita e registrata: ``--deroga "motivo"`` lanciato dal thread,
   che resta nella trascrizione.
 
@@ -273,6 +278,54 @@ def _ultima_catena(sessione: "str | None") -> "list[str]":
         if d.get("sessione") == sessione and d.get("evento") == "catena":
             return d.get("agenti") or []
     return []
+
+
+def _testo_del_prompt(d: dict) -> str:
+    """Il testo di un messaggio scritto a Claude, o "" se la riga non lo è.
+
+    Conta solo un ``type: "user"`` il cui contenuto è una stringa o blocchi
+    ``text``: mai un ``tool_result`` (la guida del coordinatore letta con un
+    tool porta esempi di «Catena:»), mai una riga ``isSidechain`` (un
+    sottoagente). Le righe ``isMeta`` contano: il messaggio di avvio del thread,
+    con la nota del coordinatore, arriva così, ed è per questo che l'hook del
+    prompt non lo vede."""
+    if d.get("type") != "user" or d.get("isSidechain"):
+        return ""
+    contenuto = (d.get("message") or {}).get("content")
+    if isinstance(contenuto, str):
+        return contenuto
+    if isinstance(contenuto, list):
+        return "\n".join(str(b.get("text", "")) for b in contenuto
+                         if isinstance(b, dict) and b.get("type") == "text")
+    return ""
+
+
+def catena_dalla_trascrizione(trascrizione: "str | None") -> "list[str]":
+    """L'ultima catena scritta nei messaggi a Claude della trascrizione.
+
+    Serve perché l'hook UserPromptSubmit del repo non scatta sul primo messaggio
+    di un thread, quello di avvio che porta la catena del coordinatore: senza
+    questa lettura il registro resta vuoto e il cancello passa (audit del
+    27/11/2026)."""
+    if not trascrizione:
+        return []
+    try:
+        righe = Path(trascrizione).read_text(encoding="utf-8", errors="replace").splitlines()
+    except OSError:
+        return []
+    ultima: "list[str]" = []
+    for r in righe:
+        if "atena" not in r or '"user"' not in r:
+            continue
+        try:
+            d = json.loads(r)
+        except ValueError:
+            continue
+        if isinstance(d, dict):
+            catena = catena_scritta(_testo_del_prompt(d))
+            if catena:
+                ultima = catena
+    return ultima
 
 
 def storia_sessione(trascrizione: "str | None") -> "tuple[set[str], list[str]]":
@@ -545,7 +598,10 @@ def decidi_cancello(ev: dict) -> dict:
     if ev.get("agent_id") or not (strumento in PR_MCP or
                                   (strumento == "Bash" and _PUSH.search(comando))):
         return {"esito": "fuori"}
-    catena = _ultima_catena(ev.get("session_id"))
+    # Il registro c'è solo se l'hook del prompt è scattato; sul primo messaggio
+    # del thread non scatta, e la catena si legge dalla trascrizione.
+    catena = (_ultima_catena(ev.get("session_id"))
+              or catena_dalla_trascrizione(ev.get("transcript_path")))
     if not catena:
         return {"esito": "passa", "motivo": "nessuna catena scritta nelle istruzioni"}
     richiesti = catena + ([] if "autore-documenti" in catena else ["autore-documenti"])

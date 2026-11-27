@@ -35,6 +35,7 @@ Contratto macchina e vista umana — **generati** dal manifest, sempre allineati
 | [`scripts/README.md`](../scripts/README.md) | Pipeline build/sync delle skill |
 | [`scripts/README-import-ultraclear.md`](../scripts/README-import-ultraclear.md) | Contratto I/O di `import_ultraclear.py` |
 | [`scripts/examples/README.md`](../scripts/examples/README.md) | Esempi di contratto JSON mappe (Modalità 3) |
+| [`scripts/documentazione_allineata.py`](../scripts/documentazione_allineata.py) | Cancello della CI: un agente, uno script, un workflow o un hook nuovo è citato nel suo indice; `--debito` conta quello che manca in tutto il repo (ADR-0153) |
 
 ## 3. Guide, riferimento, spiegazioni (Diátaxis)
 

@@ -3890,6 +3890,44 @@
       "deterministic": true
     },
     {
+      "name": "documentazione_allineata",
+      "description": "«Questa PR aggiunge struttura che nessun indice cita? Quanto debito di documentazione ha il repo?»\n\nLa documentazione segue la struttura (ADR-0153): un agente, uno script, un workflow o un hook aggiunti rispetto a una revisione sono citati nel loro indice (AGENTS.md, docs/INDEX.md, GUIDA-CONFIGURAZIONE-CLAUDE.md), o esce 1; con --debito conta tutto il repo, gli ADR fuori indice di validate_docs e l'ultimo ADR citato in ARCHITETTURA.md, e con --check lo confronta con il tetto di plans/debito-documentazione.json.",
+      "use_case": "«Questa PR aggiunge struttura che nessun indice cita? Quanto debito di documentazione ha il repo?»",
+      "invocation": "python3 scripts/documentazione_allineata.py --rispetto-a origin/main",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "rispetto-a": {
+            "type": "string",
+            "description": "Solo gli elementi aggiunti rispetto a questa revisione (CI sulle PR)."
+          },
+          "debito": {
+            "type": "boolean",
+            "description": "Tutto il repo."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Con --debito: uscita JSON."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Con --debito: esce 1 se il totale supera il tetto."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "niente di nuovo scoperto, o debito entro il tetto",
+        "1": "un elemento nuovo non citato, o debito oltre il tetto",
+        "2": "errore d'uso (revisione inesistente, git assente, tetto illeggibile)"
+      },
+      "deterministic": true
+    },
+    {
       "name": "domande_developer",
       "description": "«Se i PG volano, si rendono invisibili o fanno rumore, il modulo lo dice, o dovrò inventarlo al tavolo?»\n\nLe domande del developer di sviluppo-degli-incontri.md (dai due manuali del DM) misurate sulla forma del testo: D1 nemico in volo e chi resta a terra, D2 volo e invisibilità nei luoghi sorvegliati, D3 Tempra/Riflessi/Volontà, D4 chi sente il rumore, D5 la soglia del boss, D6 lo skill challenge scritto per intero, D6-5E abilità estranee al sistema; dal 2026-10-18 (ADR-0092) D9 i segreti contro la divinazione, D10 la riga di scala per scontro, D15 le orde di GS basso, D16 il PG fuori gioco per un TS. Indicatori: profili e residui con la ragione in plans/domande-developer.json.",
       "use_case": "«Se i PG volano, si rendono invisibili o fanno rumore, il modulo lo dice, o dovrò inventarlo al tavolo?»",

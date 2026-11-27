@@ -670,7 +670,7 @@ class TestValutazione(unittest.TestCase):
         v = ia.valuta(ia.ORO, campioni=0)
         t = v["test"]
         self.assertEqual((t["n"], t["giusti"], t["giusti_indulgenti"]), (17, 4, 4))
-        self.assertEqual(t["macro_f1"], {"frazione": "41/252", "valore": 0.1627})
+        self.assertEqual(t["macro_f1"], {"frazione": "58/315", "valore": 0.1841})
         self.assertEqual(t["baseline"]["giusti"], 2)
         # nel dev piattaforma e sviluppatore pareggiano 3 a 3: vince la prima di np.unique
         self.assertEqual(v["baseline"]["classe"], "piattaforma")

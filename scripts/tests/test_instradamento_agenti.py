@@ -487,5 +487,152 @@ class TestCancelloCanone(unittest.TestCase):
         self.assertEqual(ia.riepilogo(ia.REGISTRO)["push bloccati"], 1)
 
 
+class TestValutazione(unittest.TestCase):
+    """Il set d'oro misura l'hook; --check è un cricchetto sul test (ADR-0154)."""
+
+    CASI = [
+        {"testo": "alfa", "atteso": "sviluppatore", "accettabili": [], "split": "dev"},
+        {"testo": "beta", "atteso": "sviluppatore", "accettabili": [], "split": "dev"},
+        {"testo": "gamma", "atteso": "regolista", "accettabili": [], "split": "dev"},
+        {"testo": "delta", "atteso": "regolista", "accettabili": [], "split": "test"},
+        {"testo": "epsilon", "atteso": "nessuno", "accettabili": [], "split": "test"},
+        {"testo": "zeta", "atteso": "piattaforma", "accettabili": ["sviluppatore"],
+         "split": "test"},
+        {"testo": "eta", "atteso": "sviluppatore", "accettabili": [], "split": "test"},
+    ]
+    # La «scegli» finta: tutto giusto sul test tranne «zeta», che prende l'accettabile.
+    RISPOSTE = {"alfa": ["sviluppatore"], "beta": ["regolista"], "gamma": ["regolista"],
+                "delta": ["regolista"], "epsilon": [], "zeta": ["sviluppatore"],
+                "eta": ["sviluppatore", "autore-documenti"]}
+
+    def _scegli(self, testo: str) -> "list[str]":
+        return list(self.RISPOSTE[testo])
+
+    def _oro(self, tetto: dict) -> Path:
+        d = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, d)
+        p = d / "oro.json"
+        p.write_text(json.dumps({"casi": self.CASI, "tetto": tetto}), encoding="utf-8")
+        return p
+
+    def _tetto_esatto(self) -> dict:
+        v = ia.valuta(self._oro({}), scegli_=self._scegli, campioni=0)["test"]
+        return {"giusti": v["giusti"], "giusti_indulgenti": v["giusti_indulgenti"],
+                "macro_f1": v["macro_f1"]["frazione"]}
+
+    def test_predizione_vuota_e_nessuno(self) -> None:
+        self.assertEqual(ia.predici("epsilon", self._scegli), "nessuno")
+        self.assertEqual(ia.predici("eta", self._scegli), "sviluppatore")
+
+    def test_valuta_per_split_e_baseline_dal_dev(self) -> None:
+        v = ia.valuta(self._oro({}), scegli_=self._scegli, campioni=0)
+        self.assertEqual([v[s]["n"] for s in ("dev", "test", "tutto")], [3, 4, 7])
+        self.assertEqual(v["test"]["giusti"], 3)
+        self.assertEqual(v["test"]["giusti_indulgenti"], 4)
+        # maggioritaria del dev: «sviluppatore» (2 su 3), applicata anche al test
+        self.assertEqual(v["baseline"]["classe"], "sviluppatore")
+        self.assertEqual(v["test"]["baseline"]["giusti"], 1)
+        self.assertEqual(v["test"]["baseline"]["giusti_indulgenti"], 2)
+
+    def test_check_passa_al_tetto(self) -> None:
+        codice, _ = ia.controlla(self._oro(self._tetto_esatto()), scegli_=self._scegli)
+        self.assertEqual(codice, 0)
+
+    def test_check_boccia_una_regressione(self) -> None:
+        p = self._oro(self._tetto_esatto())
+        risposte = dict(self.RISPOSTE, delta=["sviluppatore"])  # un caso giusto diventa sbagliato
+        codice, msg = ia.controlla(p, scegli_=lambda t: list(risposte[t]))
+        self.assertEqual(codice, 1)
+        self.assertIn("giusti", "\n".join(msg))
+        # anche dalla riga di comando, con la scegli dell'hook sostituita
+        with mock.patch.object(ia, "scegli", lambda t: list(risposte[t])), \
+                contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(ia.main(["--check", "--oro", str(p)]), 1)
+
+    def test_check_avvisa_se_sale(self) -> None:
+        tetto = self._tetto_esatto()
+        tetto["giusti"] -= 1
+        codice, msg = ia.controlla(self._oro(tetto), scegli_=self._scegli)
+        self.assertEqual(codice, 0)
+        self.assertIn("alza il tetto a mano", "\n".join(msg))
+
+    def test_tetto_macro_f1_decimale(self) -> None:
+        tetto = self._tetto_esatto()
+        from fractions import Fraction
+        tetto["macro_f1"] = str(round(float(Fraction(tetto["macro_f1"])) + 0.01, 4))
+        codice, _ = ia.controlla(self._oro(tetto), scegli_=self._scegli)
+        self.assertEqual(codice, 1)
+
+    def test_check_senza_tetto_esce_1(self) -> None:
+        p = self._oro({})
+        codice, msg = ia.controlla(p, scegli_=self._scegli)
+        self.assertEqual(codice, 1)
+
+    def test_oro_del_repo_al_tetto_di_oggi(self) -> None:
+        codice, msg = ia.controlla(ia.ORO)
+        self.assertEqual(codice, 0, "\n".join(msg))
+        self.assertNotIn("tetto a mano", "\n".join(msg))
+
+    def test_oro_del_repo_numeri_di_oggi(self) -> None:
+        # etichette confermate dal DM il 2026-11-27 (prima 18, 4, 4 e 107/1155)
+        v = ia.valuta(ia.ORO, campioni=0)
+        t = v["test"]
+        self.assertEqual((t["n"], t["giusti"], t["giusti_indulgenti"]), (17, 4, 4))
+        self.assertEqual(t["macro_f1"], {"frazione": "41/252", "valore": 0.1627})
+        self.assertEqual(t["baseline"]["giusti"], 2)
+        # nel dev piattaforma e sviluppatore pareggiano 3 a 3: vince la prima di np.unique
+        self.assertEqual(v["baseline"]["classe"], "piattaforma")
+        self.assertNotIn("macro_f1_bootstrap95", t)
+
+    def test_il_json_non_porta_il_bootstrap(self) -> None:
+        # l'intervallo dipende dal generatore di numpy: solo nel rapporto di testo
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            self.assertEqual(ia.main(["--eval", "--json"]), 0)
+        self.assertNotIn("bootstrap", buf.getvalue())
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            self.assertEqual(ia.main(["--eval"]), 0)
+        self.assertIn("bootstrap 95%", buf.getvalue())
+
+    def test_json_identico_fra_due_esecuzioni(self) -> None:
+        uscite = []
+        for _ in range(2):
+            buf = io.StringIO()
+            with contextlib.redirect_stdout(buf):
+                self.assertEqual(ia.main(["--eval", "--json"]), 0)
+            uscite.append(buf.getvalue())
+        self.assertEqual(uscite[0], uscite[1])
+        d = json.loads(uscite[0])
+        self.assertEqual(set(d) >= {"dev", "test", "tutto", "baseline"}, True)
+
+
+class TestHookSenzaLibrerie(unittest.TestCase):
+    """Gli hook girano a ogni messaggio: sklearn e scipy (un secondo d'import) restano fuori."""
+
+    CODICE = r"""
+import io, json, sys, tempfile
+from pathlib import Path
+sys.path.insert(0, sys.argv[1])
+import instradamento_agenti as ia
+ia.REGISTRO = Path(tempfile.mkdtemp()) / "reg.jsonl"
+ev = {"prompt": "aggiungi un sottocomando a dm.py", "session_id": "s-import",
+      "tool_name": "Bash", "tool_input": {"command": "git push"}, "transcript_path": ""}
+for flag in ("--prompt", "--stop", "--cancello"):
+    sys.stdin = io.StringIO(json.dumps(ev))
+    try:
+        ia.main([flag])
+    except SystemExit:
+        pass
+print("MODULI", sorted(m for m in ("sklearn", "scipy", "numpy") if m in sys.modules))
+"""
+
+    def test_prompt_stop_cancello_non_importano_sklearn(self) -> None:
+        r = subprocess.run([sys.executable, "-c", self.CODICE, str(ia.ROOT / "scripts")],
+                           capture_output=True, text=True, cwd=ia.ROOT, check=True)
+        riga = [x for x in r.stdout.splitlines() if x.startswith("MODULI")]
+        self.assertEqual(riga, ["MODULI []"], r.stdout + r.stderr)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 156,
+  "tool_count": 158,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -10504,10 +10504,10 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/instradamento_agenti.py --riepilogo",
-      "summary": "Gli hook UserPromptSubmit, PreToolUse e Stop di Claude Code nei thread: riconosce il tipo di lavoro del messaggio che arriva (riusando i trigger delle skill) e suggerisce agente e catena; se le istruzioni scrivono una riga «Catena: …», ferma push e PR finché la sessione non ha chiamato quegli agenti e autore-documenti, salvo una deroga con motivo; ferma sempre, anche nei sottoagenti, un push (comandi git, sh -c, opzioni globali, HEAD risolto) o una scrittura con gli strumenti MCP di GitHub che riscrive o cancella un ramo campaign-group-*, tocca un ramo morto del registro o porta canone su main (ADR-0007, ADR-0090); a fine turno registra se gli agenti sono stati chiamati (ADR-0146).",
+      "summary": "Gli hook UserPromptSubmit, PreToolUse e Stop di Claude Code nei thread: riconosce il tipo di lavoro del messaggio che arriva (riusando i trigger delle skill) e suggerisce agente e catena; se le istruzioni scrivono una riga «Catena: …», ferma push e PR finché la sessione non ha chiamato quegli agenti e autore-documenti, salvo una deroga con motivo; ferma sempre, anche nei sottoagenti, un push (comandi git, sh -c, opzioni globali, HEAD risolto) o una scrittura con gli strumenti MCP di GitHub che riscrive o cancella un ramo campaign-group-*, tocca un ramo morto del registro o porta canone su main (ADR-0007, ADR-0090); a fine turno registra se gli agenti sono stati chiamati (ADR-0146); con --eval e --check misura il primo agente suggerito contro il set d'oro di plans/instradamento/agenti-oro.json, con le metriche di eval_metriche (scikit-learn e scipy, importati solo da --eval e --check, mai dagli hook), a cricchetto sullo split test su interi e frazioni esatte (ADR-0154).",
       "use_case": "«Il thread chiama l'agente giusto per questo lavoro?»",
       "stability": "beta",
-      "stdlib_only": true,
+      "stdlib_only": false,
       "external_bins": [],
       "args": [
         {
@@ -10563,6 +10563,42 @@
           "choices": null,
           "repeatable": false,
           "desc": "Suggerimenti dati e quanti seguiti."
+        },
+        {
+          "name": "--eval",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Misura il primo agente suggerito contro il set d'oro, per split dev, test e tutto (accuracy con Wilson, indulgente, macro-F1, baseline maggioritaria, matrice, P/R/F1)."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cricchetto sullo split test: esce 1 se giusti, giusti indulgenti o macro-F1 scendono sotto il tetto del set d'oro; avvisa se salgono."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --eval: l'uscita in JSON, identica byte per byte fra due esecuzioni."
+        },
+        {
+          "name": "--oro",
+          "type": "path",
+          "required": false,
+          "default": "plans/instradamento/agenti-oro.json",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il set d'oro da usare."
         }
       ],
       "inputs": [
@@ -10570,6 +10606,12 @@
           "path": "skills/*/SKILL.md",
           "kind": "markdown",
           "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/instradamento/agenti-oro.json",
+          "kind": "json",
+          "required": false,
           "schema": null
         }
       ],
@@ -10584,7 +10626,7 @@
       ],
       "exit_codes": {
         "0": "passa (con o senza suggerimento)",
-        "1": "deroga senza motivo",
+        "1": "deroga senza motivo; --check: regressione sotto il tetto o tetto mancante",
         "2": "push o PR bloccati (--cancello)"
       },
       "determinism": {
@@ -10605,7 +10647,8 @@
         "scripts/tests/test_instradamento_agenti.py"
       ],
       "docs": [
-        "plans/adr/ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md"
+        "plans/adr/ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md",
+        "plans/adr/ADR-0154-l-instradamento-degli-agenti-si-misura-su-messaggi-veri.md"
       ]
     },
     {
@@ -11769,6 +11812,128 @@
         "plans/esperimenti/qualita-misurabile-2026-10-22/pipeline/README.md",
         "plans/adr/ADR-0093-la-prosa-migliora-se-la-sceglie-il-dm-alla-cieca.md",
         "plans/esperimenti/qualita-misurabile-2026-10-22/languagetool/README.md"
+      ]
+    },
+    {
+      "id": "milestone_pronte",
+      "path": "scripts/milestone_pronte.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/milestone_pronte.py --json",
+      "summary": "Valuta i criteri d'uscita delle milestone della roadmap registrati in plans/milestone.json (comando che esce 0, regex che compaiono o mancano in un file, conferma del DM con data e luogo) e dice per ognuna pronta, non pronta (con gli id dei criteri falsi) o rilasciata; pronta vuol dire tutto vero tranne fatto-changelog, fatto-versione e fatto-tag. Esce 2 se il registro è rotto. Misura, non scrive niente (ADR-0099, canale testing).",
+      "use_case": "«Quale milestone è pronta per il rilascio?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "git"
+      ],
+      "args": [
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Ogni milestone con stato, criteri ed esito, in JSON."
+        },
+        {
+          "name": "--pronte",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Solo le versioni pronte e non rilasciate, una per riga."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 2 se il registro è rotto, 0 altrimenti (anche se niente è pronto)."
+        },
+        {
+          "name": "--solo-integrita",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Controlla il registro senza eseguire i comandi dei criteri."
+        },
+        {
+          "name": "--github",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Confronta numero e titolo con le milestone di GitHub via gh; senza gh, non misurato."
+        },
+        {
+          "name": "--registro",
+          "type": "path",
+          "required": false,
+          "default": "plans/milestone.json",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il registro delle milestone."
+        },
+        {
+          "name": "--radice",
+          "type": "path",
+          "required": false,
+          "default": ".",
+          "choices": null,
+          "repeatable": false,
+          "desc": "La radice del repo da cui si lanciano i comandi e si leggono i file."
+        },
+        {
+          "name": "--timeout",
+          "type": "float",
+          "required": false,
+          "default": 300,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Secondi per ogni comando; oltre, il criterio è falso."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/milestone.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "registro integro (qualunque sia lo stato delle milestone)",
+        "2": "registro rotto o errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "dipende dall'albero e dai tag del clone; --github dalla rete"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": true
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/milestone_pronte.py --check --solo-integrita",
+      "tests": [
+        "scripts/tests/test_milestone_pronte.py"
+      ],
+      "docs": [
+        "plans/milestone.json",
+        ".github/workflows/milestone.yml"
       ]
     },
     {
@@ -15019,6 +15184,62 @@
       ],
       "docs": [
         "scripts/README-automation.md"
+      ]
+    },
+    {
+      "id": "eval_metriche",
+      "path": "scripts/eval_metriche.py",
+      "category": "lib",
+      "language": "python",
+      "invocation": "python3 scripts/eval_metriche.py",
+      "summary": "Involucro sottile di scikit-learn e scipy per misurare un classificatore del repo (instradamento, rilevatori, verificatori) contro un set d'oro: confusion_matrix con labels esplicite, precision_recall_fscore_support, f1_score macro e micro, accuracy_score, cohen_kappa_score, classification_report (tutti con zero_division=0 e labels l'unione ordinata di oro e predizioni), baseline DummyClassifier most_frequent addestrata sul dev, Wilson al 95% da scipy.stats.binomtest e bootstrap percentile della macro-F1 da scipy.stats.bootstrap con seme fisso. Restano nostre solo l'accuracy indulgente con le accettabili, la macro-F1 come frazione esatta dai conteggi interi della matrice (i cancelli non confrontano float) e il formato del rapporto, con i float a quattro cifre. sklearn e scipy si importano dentro le funzioni, così gli hook che importano il modulo non li caricano (ADR-0154). Eseguita da sola stampa l'esempio a tre classi dei test.",
+      "use_case": "«Quanto sbaglia davvero questo rilevatore, e il numero regge con così pochi casi?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--testo",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il rapporto leggibile invece del JSON."
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "path": "stdout",
+          "kind": "json",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "esempio stampato"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "bootstrap di scipy.stats.bootstrap con numpy default_rng(seme): stabile a parità di numpy; per questo resta fuori dal JSON dei cancelli"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": null,
+      "tests": [
+        "scripts/tests/test_eval_metriche.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0154-l-instradamento-degli-agenti-si-misura-su-messaggi-veri.md"
       ]
     },
     {

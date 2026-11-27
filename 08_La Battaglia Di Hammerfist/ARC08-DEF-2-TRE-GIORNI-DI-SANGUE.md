@@ -412,7 +412,7 @@ Grimjaw il Giorno 2 o il Giorno 3, al round 1, prima del corno del drago
   i Comandanti»). Per Grimjaw lo dicono anche le sue Tattiche e
   `Bestiario/villain/Generale_Grimjaw.md`. Il libretto dà un morale solo
   alla rocca (§6)
-  `[INFERRED — Nel libretto l'orda non ha un morale: il −3 del comandante abbattuto tocca i dadi dei giorni d'assedio che restano?; base: ARC08-02, «Tabella dei Modificatori di Morale» (il morale vale su AU e DU delle unità), e il libretto §6, che ha solo il morale della rocca; default: no, sui dadi del libretto non entra: si segna sulla scheda della serata (§7) e vale dove l'orda ha un morale, con la regola di massa di ARC08-02]`.
+  `[CANONE — DM 2026-11-26, card «−3 sui dadi del libretto»: no, sui dadi del libretto non entra: si segna sulla scheda della serata (§7) e vale dove l'orda ha un morale, con la regola di massa di ARC08-02]`.
 - **La carta.** Si toglie subito e non torna, né quel giorno né nei giorni
   dopo.
 - **Grimjaw abbattuto.** Il Giorno 3 la carta **Grimjaw e la guardia nera**
@@ -424,12 +424,12 @@ Grimjaw il Giorno 2 o il Giorno 3, al round 1, prima del corno del drago
   solo (`Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md`, MAPPA 5, le ondate:
   «altrimenti capitano hobgoblin → auto-ritirata»). Che scheda usi e in che
   round se ne vada, le fonti non lo dicono
-  `[INFERRED — Che scheda usa il capitano minore che entra al posto di Grimjaw, e in che round si ritira?; base: Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md, MAPPA 5, le ondate («altrimenti capitano hobgoblin → auto-ritirata», ingresso al round 12) e l'Atlante delle mappe («Capitano Hobgoblin minore (Auto-retreat)»): nessuna delle due dà una scheda né un round; default: la scheda di Bestiario/mostri/hobgoblin-captain-cr8.md; entra al round 12 con le dieci guardie (Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md), non sfida nessuno, e al suo turno del round 13 esce dalla porta di mithral con le guardie]`.
+  `[CANONE — DM 2026-11-26, card «capitano al posto di Grimjaw»: la scheda di Bestiario/mostri/hobgoblin-captain-cr8.md; entra al round 12 con le dieci guardie (Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md), non sfida nessuno, e al suo turno del round 13 esce dalla porta di mithral con le guardie]`.
   Al finale Grimjaw è assente o sostituito
   (`Bestiario/villain/Generale_Grimjaw.md`, «Esiti possibili»).
   **Conseguenza**: il duello fra Thorik e Grimjaw, che chiudeva la Sessione
   3 (`ARC08-01`, «L'arrivo di Grimjaw»), non si gioca
-  `[INFERRED — Se Grimjaw è stato abbattuto nell'assedio, che cosa chiude la Sessione 3 al posto del suo duello con Thorik?; base: ARC08-01, «L'arrivo di Grimjaw», ha solo il ramo «se Grimjaw è sopravvissuto», e le mappe danno al capitano la sola ritirata; default: niente lo sostituisce: il capitano entra e si ritira, e la serata chiude sulla caverna liberata (ARC08-01, «Risultato della Sessione 3»)]`.
+  `[CANONE — DM 2026-11-26, card «Sessione 3 senza Grimjaw»: niente lo sostituisce: il capitano entra e si ritira, e la serata chiude sulla caverna liberata (ARC08-01, «Risultato della Sessione 3»)]`.
 - **Gorthak abbattuto** (provvisorio: la card del 26/11 lascia questa riga da scrivere, e il DM non l'ha ancora vista). La carta **Gorthak al cancello** si toglie e non
   torna. Se cade il Giorno 1, da quel round il fronte del Cancello torna a 3, e il Giorno 2 il fronte del Cancello resta 4, al
   round 3 il DM gioca la palla di fuoco, e l'ariete resta ai due troll, col
@@ -441,22 +441,22 @@ Grimjaw il Giorno 2 o il Giorno 3, al round 1, prima del corno del drago
   gioca (`Bestiario/villain/Gorthak_il_Trifronte.md`: «ultimo boss a terra
   al finale se vivo»; `ARC08-01`: «se sopravvissuto»). La linea del tempo
   della Sessione 4 conta ancora su di lui ai round 6-10
-  `[INFERRED — Se Gorthak è stato abbattuto nell'assedio, che cosa fa Thorik ai round 6-10 della Sessione 4?; base: ARC08-01, «La linea del tempo della Sessione 4» (D9: «fino al round 10 la convergenza, e Thorik ingaggia Gorthak») e il Registro dell'orda (ettin: 2, più Gorthak); default: nessun sostituto: la convergenza continua contro ciò che il Registro mette sulla linea dell'urto, e la picchiata dei round 18-20 prende Thorik lì]`.
+  `[CANONE — DM 2026-11-26, card «Thorik senza Gorthak al finale»: nessun sostituto: la convergenza continua contro ciò che il Registro mette sulla linea dell'urto, e la picchiata dei round 18-20 prende Thorik lì]`.
 - **La scorta.** La guardia nera ha la sua riga: se Grimjaw cade, combatte
   fino alla morte sul suo corpo
   (`Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md`, «Lealtà
   incrollabile» `[CANONE — DM 2026-10-19, D10]`). Per i due troll nessuna
   fonte lo dice
-  `[INFERRED — Con Gorthak abbattuto, i due troll fanno come quando lui fugge?; base: per la fuga, i troll seguono Gorthak e il Giorno 1 il cancello perde la metà (P16, il cancello e Gorthak); default: sì: al loro primo turno dopo la caduta lasciano il ponte senza il corpo, e quel giorno, il Giorno 1 o il Giorno 2, il cancello perde 40 pf invece di 80; se Gorthak è caduto il Giorno 1, il Giorno 2 tornano all'ariete]`.
+  `[CANONE — DM 2026-11-26, card «i troll senza Gorthak»: sì: al loro primo turno dopo la caduta lasciano il ponte senza il corpo, e quel giorno, il Giorno 1 o il Giorno 2, il cancello perde 40 pf invece di 80; se Gorthak è caduto il Giorno 1, il Giorno 2 tornano all'ariete]`.
 - **I bonus.** Nella riga «Comandanti logorati» (§7) un comandante abbattuto
   conta come uno fuggito ferito: le due schede di `Bestiario/villain/` lo
   mettono sotto lo stesso bonus («logorato/ucciso», «ucciso già in Sessione
   2-3»). Il «−20% pf» di `ARC08-10` §5.2 per lui non vale: al finale manca.
   Resta da decidere come il suo −3 sta col −2 di quella riga
-  `[INFERRED — Per un comandante abbattuto il −3 all'orda si somma al −2 dei «Comandanti logorati» o lo sostituisce, e con due abbattuti dove si ferma?; base: ARC08-10 §5.2 (comandanti logorati: −2 morale all'orda) e ARC08-02, «Tabella dei Modificatori di Morale» (−3 per un comandante ucciso; il morale va da −5 a +5); default: lo sostituisce: con un abbattuto l'orda porta −3 e il −2 non si aggiunge, anche se l'altro è fuggito ferito; con due abbattuti −5 e non −6, perché la scala si ferma a −5]`.
+  `[CANONE — DM 2026-11-26, card «−3 e −2 dei logorati»: lo sostituisce: con un abbattuto l'orda porta −3 e il −2 non si aggiunge, anche se l'altro è fuggito ferito; con due abbattuti −5 e non −6, perché la scala si ferma a −5]`.
 - **Il corpo.** Quello che la scheda gli dà addosso (A.1, A.3) resta sul
   corpo
-  `[INFERRED — Chi prende quello che il comandante abbattuto ha addosso, quando, e conta nella riga «Equipaggiamento dei comandanti» di ARC08-13?; base: ARC08-13 §3 mette quella riga al finale («Corpi/resa di Grimjaw, Gorthak… se uccisi», condizionale ai rami) e il §10 di questo master dice che il tesoro della serata non conta verso il WBL dei Rumbling Stones; default: si prende solo a scontro chiuso, quando sul ponte o sulla rampa non resta un nemico in piedi; lo tiene la rocca e i pregen lo usano se vogliono; è la stessa voce di ARC08-13, che al finale non si conta una seconda volta]`.
+  `[CANONE — DM 2026-11-26, card «corredo del comandante abbattuto»: si prende solo a scontro chiuso, quando sul ponte o sulla rampa non resta un nemico in piedi; lo tiene la rocca e i pregen lo usano se vogliono; è la stessa voce di ARC08-13, che al finale non si conta una seconda volta]`.
 
 Il libretto (§5, Sfidare) dice ancora ai giocatori «Un comandante non muore
 nell'assedio»: quella riga aspetta la correzione, e al tavolo vale questa
@@ -576,22 +576,25 @@ un'azione, e in un round se ne spende al più uno.
 - **Sulla griglia**: **+8** di fortuna a un d20 se dichiarato prima di
   tirare, **+4** dopo; oppure un'azione standard o di movimento in più nel
   proprio turno; oppure ritirare un d20 appena tirato e tenere il secondo.
+  Chi compra il movimento per arrivare sul nemico, in quel turno attacca una
+  volta sola (`ARC08-DEF-1`, Scena 8, regola 3).
   Gli altri usi sono nella tabella di `ARC08-DEF-1`. Ingannare la morte
   costa due punti, e nessuno li ha.
 - **Nel round di battaglia**: +8 prima o +4 dopo al d20 del gesto
-  Combattere, o quel d20 si ritira (`ARC08-DEF-1`, Scena 8, domanda 1).
+  Combattere, o quel d20 si ritira (`ARC08-DEF-1`, Scena 8, regola 1).
 - **Non fa**: non vale sui dadi dei reparti, quindi non annulla una tacca né
   una breccia; non toglie il Re dagli 8 pf del suo conto (Scena 6); il Re e
-  i PNG non ne hanno.
+  i PNG non ne hanno. I due eroi del DM non lo spendono: lo spendono solo i
+  giocatori (`ARC08-DEF-1`, Scena 8, regola 2).
 - **Quanto pesa**, se i due eroi lo spendono nello stesso scontro, che è il
   massimo: contro Gorthak, con Borin che esce per primo, un eroe va a terra
-  67 volte su cento col +8 e 56 con l'azione di movimento in più, invece di
-  70; con Yrsa per prima 17 e 12 invece di 19. Contro Grimjaw, a rampa
-  chiusa, 79 e 67 invece di 82; a rampa aperta, scartata dal DM, erano 41 e
-  25 invece di 50
+  67 volte su cento col +8 e 58 con l'azione standard in più, invece di
+  70; con Yrsa per prima 17 e 11 invece di 19. Contro Grimjaw, a rampa
+  chiusa, 64 e 57 invece di 73; a rampa aperta, scartata dal DM, erano 12 e
+  13 invece di 28
   (`plans/esperimenti/scontri-epici-pregen-2026-11-25/esito_punto_eroe.md`).
-  Le cifre dell'azione di movimento contano l'attacco completo dopo il
-  movimento: è una lettura non decisa (`ARC08-DEF-1`, Scena 8, domanda 3).
+  L'azione di movimento in più lascia le cifre di oggi: chi la spende per
+  arrivare sul comandante attacca una volta sola in quel turno.
 
 Nell'assedio i veterani tengono le Mura e la Torre Est. Yrsa sulle Mura
 tiene la fronte più lunga, e lo stendardo lo vedono tutti; Ragnhild sulla
@@ -1358,10 +1361,11 @@ duelli sono tutta la battaglia dei pregen.
   dalla palla di fuoco, sui fianchi di Yrsa, dietro l'immagine di Nala.
   Staccarli non apre il varco, e nemmeno abbatterli da lontano: l'orog da
   abbattere o da spingere via è uno dei due davanti.
-  Che cos'altro passi non è deciso `[INFERRED — A rampa chiusa, oltre ad
-  abbattere o spingere via un orog, che cosa fa passare: Acrobazia nel
-  quadretto di un orog (CD 25), travolgere, volare o saltare oltre la
-  guardia?; base: la card nomina solo l'abbattere; SRD: Tumble, Overrun]`.
+  Passa anche chi attraversa il quadretto di uno dei due orog davanti con
+  Acrobazia CD 25 `[SRD: Tumble]` o lo travolge `[SRD: Overrun]`; volare o
+  saltare sopra la guardia non apre il passo `[CANONE — DM 2026-11-26, card
+  «che cos'altro fa passare la rampa chiusa»]`. Le prove non contano queste
+  due strade.
   Aperto il varco, chi vuole arrivare
   accanto a Grimjaw passa per un quadretto che un orog minaccia: prende il
   suo attacco d'opportunità `[SRD: Attacks of Opportunity]` e, avendo mosso,
@@ -1561,11 +1565,10 @@ di «la rampa», e «dove la pietra del muro è già rotta», e il resto vale. A
 Cancello la scala poggia sul camminamento sopra l'androne (BG-BJ 70-72);
 alla Torre Ovest, sul camminamento della cinta a est della torre (AG-AJ
 70-73), e la torre resta a Dara `[CANONE — DM 2026-11-25, card «dove sale
-Grimjaw»]`. Come stia la guardia in cima a una scala non è deciso
-`[INFERRED — Quando Grimjaw sale da una scala d'assedio la cima è chiusa
-come la rampa, e dove stanno i quattro orog sul camminamento?; base: la card
-«rampa di Grimjaw» parla della rampa, la card «dove sale Grimjaw» dà solo i
-quadretti della scala]`.
+Grimjaw»]`. In cima alla scala la guardia sta come sulla rampa chiusa: i
+due orog davanti chiudono la cima sul camminamento, i due ai lati di
+Grimjaw stanno dietro di loro, e valgono le stesse regole e le stesse cifre
+`[CANONE — DM 2026-11-26, card «la guardia di Grimjaw sulla scala»]`.
 
 **Finché la carta c'è** `[CANONE — DM 2026-11-04, P16, Grimjaw e il Re]`, i reparti dell'orda nel
 suo settore hanno **+1 ad AU e DU** (Tattico Superiore): il bianco (22 + AU)
@@ -2094,10 +2097,12 @@ si alza: Fauci e il cavaliere sono già tre punti sopra l'APL (§0-bis), e il co
   Davanti al tetto Fauci non soffia due volte sullo stesso punto: atterra
   sul bastione e lo sfonda con gli artigli `[CANONE — DM 2026-11-25, card
   «Fauci davanti al tetto di pietra»]`. Scartato: girare e soffiare dal lato
-  aperto. Quanto ci mette non è deciso `[INFERRED — In quanti round Fauci
-  sfonda il tetto, e in quei round chi è sul bastione lo attacca a terra?;
-  base: la card dice che atterra e lo sfonda, non in quanto; durezza 8 e 45
-  pf a quadretto (SRD: Wall of Stone), attacchi di Fauci in A.5]`.
+  aperto. Ci mette due round: col round completo (A.5: morso 19, due
+  artigli 12, due ali 9,5, coda 22 di media, ognuno meno la durezza 8) fa
+  circa 36 danni al quadretto sopra il Re, che ne ha 45, e lo apre al
+  secondo round. In quei due round è a terra sul bastione, e chi ci sta lo
+  attacca `[CANONE — DM 2026-11-26, card «in quanti round Fauci sfonda il
+  tetto»]`.
 - ***Resistere all'energia*** (acido) sul Re: al LI 13 toglie 30 da ogni
   colpo d'acido `[SRD: Resist Energy]`. Il soffio (35 di media) passa con
   pochi punti, e l'acido nelle giunture quasi mai. Anche qui il Re resta a 8
@@ -2613,7 +2618,7 @@ logorati» è in §0-bis, «I bonus»: per default lo sostituisce.
 |---|---|
 | **vogliono fare una sortita** sul campo dell'orda | il campo è sulla piana, a 500 m-1 km, sotto settecento paia d'occhi. Il DM lo dice in chiaro, una volta. Se escono, il loro settore è senza eroe per il giorno (libretto §9: 1d6, con 1-2 cede), e tornano con quello che hanno visto: i giganti che dormono alla rampa |
 | **vogliono uccidere Gorthak o Grimjaw** | possono `[CANONE — DM 2026-11-26, card «comandante a 0 pf nell'assedio»]`. Sotto metà il comandante fugge (libretto §5); se i dadi lo portano a 0 pf o meno prima della fuga è abbattuto, e la vittoria conta: +2 alla rocca, −3 all'orda (si segna sulla scheda della serata, e per default nell'assedio non tocca i dadi del libretto), la sua carta si toglie subito e non torna, e al finale manca (§0-bis, «Il comandante a 0 pf o meno»). Se fugge e un pregen lo insegue oltre il ponte o la rampa, quel pregen entra nell'orda da solo: il DM glielo dice, e lo lascia decidere |
-| **vogliono spogliarlo, prenderlo vivo o finirlo** | a 0 pf esatti il comandante è inabile e cosciente; da −1 a −9 è morente, perde 1 pf a round e può stabilizzarsi da solo o con una cura `[SRD: Injury and Death]`. Per la battaglia è abbattuto in tutti i casi, e i numeri non cambiano `[INFERRED — Un comandante abbattuto ma vivo (a 0 pf, o morente e stabilizzato) agisce ancora, e i pregen possono prenderlo prigioniero o finirlo?; base: SRD, Injury and Death (a 0 pf una sola azione a round; morente, 10% a round di stabilizzarsi) e Helpless Defenders (il colpo di grazia, un'azione di round completo, solo su chi è indifeso), e la card del 2026-11-26, che dice solo «abbattuto» e «può morire»; default: a 0 pf esatti non agisce più, e lo finisce qualunque colpo a segno; morente è indifeso, e lo finisce un colpo di grazia; vivo, la rocca lo tiene legato e stasera non si interroga; morto, finito, prigioniero o lasciato dov'è, la carta non torna e al finale manca]`. Quello che ha addosso si prende solo a scontro chiuso (§0-bis, «Il corpo») |
+| **vogliono spogliarlo, prenderlo vivo o finirlo** | a 0 pf esatti il comandante è inabile e cosciente; da −1 a −9 è morente, perde 1 pf a round e può stabilizzarsi da solo o con una cura `[SRD: Injury and Death]`. Per la battaglia è abbattuto in tutti i casi, e i numeri non cambiano `[CANONE — DM 2026-11-26, card «comandante abbattuto ma vivo»: a 0 pf esatti non agisce più, e lo finisce qualunque colpo a segno; morente è indifeso, e lo finisce un colpo di grazia; vivo, la rocca lo tiene legato e stasera non si interroga; morto, finito, prigioniero o lasciato dov'è, la carta non torna e al finale manca]`. Quello che ha addosso si prende solo a scontro chiuso (§0-bis, «Il corpo») |
 | **chiudono il Re al sicuro il Giorno 3** | il Re sale lo stesso: è la decisione del DM. Se lo chiudono a chiave, usa la Corona sulle sue guardie (*comando*, «Lascia!»: lasciano le chiavi) o la sfonda a colpi di martello (una porta di legno rinforzato, 20 pf e durezza 5: il suo martello fa 1d8+12, due o tre round), e arriva sul cancello al round 3 della sequenza, col soffio già in posizione |
 | **esplorano il tunnel prima della ritirata** o mandano qualcuno a vederlo | il tunnel dietro la statua si apre solo spingendo la statua (Scena 7), e il Re non vuole che si apra prima del Giorno 3: chi lo apre di notte lo apre anche per l'orda. Se insistono e il Re cede, Dara in avanscoperta trova le tracce dei bugbear (Sopravvivenza CD 20 con Seguire Tracce): vale come la divinazione (§0), un'azione preparata a testa al round 1 della Scena 8 |
 | **evacuano i feriti e i civili prima** | i civili sono già al Cuore da prima dell'assedio (libretto §1). I feriti restano: il tunnel non si apre (sopra), e i 90 della ritirata li comprendono già |

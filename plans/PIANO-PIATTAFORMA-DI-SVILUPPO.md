@@ -73,6 +73,8 @@ colonna lo dice e il lotto che la fissa è A1 o A3 di AMBIENTE.
 | custode della memoria (`memoria_custode.py`, ADR-0151): test e smoke in CI | stdlib | — | 27 test; `--help` nello smoke di `ci.yml` | **stable** dal 2026-11-27 |
 | hook del custode della memoria (`--hook-merge`, `--hook-scrittura`, ADR-0151) | stdlib | — | merge: mediana 129 ms, massimo 228; scrittura: 45 ms fuori dalla memoria, 89 ms dentro; timeout 10 s; esiti in `.claude/.custode-memoria.jsonl` | **testing** dal 2026-11-27: il merge si ferma solo per righe tolte non archiviate o `MEMORY.md` oltre 16.384 byte (card aperta al DM), la scrittura avvisa. L'hook di scrittura diventa bloccante non prima del 2026-12-12, con almeno 10 eventi nel registro, zero falsi avvisi non spiegati, p95 sotto 1 s e l'ok del DM |
 | milestone pronte (`milestone_pronte.py` sul registro `plans/milestone.json`, ADR-0152) | stdlib e git | — | 2,6 s sull'albero del 2026-11-27 (`--check --solo-integrita` 0,06 s), 26 test; nessuna milestone pronta, v1.1.0 ferma su tre criteri | **testing** dal merge (workflow `milestone.yml`, push su main e lunedì 06:35 UTC, solo riepilogo); stable dopo 14 giorni e 10 run su main senza falsi allarmi, con determinismo, idempotenza, mutazione e durata sotto i 2 minuti provati, e l'ok del DM: allora apre una issue per versione (`issues: write`) |
+| instradamento degli agenti (`instradamento_agenti.py --check`, ADR-0154) | del repo, metriche con scikit-learn e scipy (solo in `--eval` e `--check`: l'hook resta senza dipendenze) | — | primo agente sul set d'oro di 29 messaggi veri: sul test 4 su 18 (Wilson 0,09-0,45), macro-F1 107/1155, sotto la costante «sviluppatore» (6 su 18); kappa fra due etichettature cieche 0,78 | **testing** dal merge (`continue-on-error`); stable non prima di 14 giorni, con le sette condizioni di ADR-0154 (10 run su main, 3 su PR che cambiano l'ingresso, rossi classificati, etichette confermate, JSON identico anche su 3.14, passo < 2 s, ok del DM); revisione se ancora in testing verso il 2027-02-26 |
+| metriche dei classificatori (`eval_metriche.py`, ADR-0154) | del repo, involucro di `sklearn.metrics` e `scipy.stats` | scikit-learn sì (`==1.9.1`) | le convenzioni sono quelle di sklearn per costruzione; rifatto il confronto col valore stdlib di M1 sul set d'oro dopo la riscrittura: stessi numeri (4 su 18, baseline 6 su 18, macro-F1 107/1155); il bootstrap cambia (0,0185-0,2159 contro 0,0222-0,2222) ed è uscito dal JSON | **testing** con il cancello che la usa, e sale con lui |
 
 ### Librerie Python
 
@@ -87,6 +89,7 @@ colonna lo dice e il lotto che la fissa è A1 o A3 di AMBIENTE.
 | scikit-image | ≥ 0.25 | resa delle mappe | **stable** |
 | fonttools | ≥ 4.66.1 | font delle mappe | **stable** |
 | shapely | = 2.2.0 | piante delle città, `scripts/piante/` (ADR-0102) | **testing** dal 2026-10-23 |
+| scikit-learn | = 1.9.1 | metriche dei classificatori (`eval_metriche.py`) e baseline statistica di M3 (ADR-0154); porta joblib, threadpoolctl (BSD-3-Clause) e narwhals (MIT). BSD-3-Clause. Import a freddo 1,2 s, solo fuori dall'hook | **testing** dal 2026-11-27 (Jfs: «le librerie standard de facto della community») |
 | bpy, torch, piq | `requirements-completo.txt` | 3D e seconda misura della resa, fuori CI | **testing** locale (non girano in CI: ADR-0084) |
 | spaCy, Stanza | — | `misura_sintassi` (PR #264, #270) | **unstable** |
 | `import fitz` di pymupdf | — | deprecato: pymupdf avvisa che sparirà | da migrare a `import pymupdf` prima che salga la versione maggiore |
@@ -124,6 +127,7 @@ tutti i componenti che la fanno passare in CI.
 | prosa: sintassi | spaCy, Stanza | unstable |
 | bestiario e statblocchi | Python, pyyaml | stable |
 | skill: build, validazione, scanner | Python, pyyaml, tiktoken, bash | stable |
+| agenti: instradamento misurato (`--eval`, `--check`) | Python, scikit-learn, scipy | testing |
 | piani e documenti | Python, git | stable |
 | server MCP | Python | stable |
 | `converters/` | PyMuPDF, docling, torch, EasyOCR, magika | **testing** dal 2026-10-23 (D6, P9): Python 3.13, ruff, Dependabot, import di ogni modulo in CI |

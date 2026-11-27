@@ -84,6 +84,8 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
+| 2026-11-27 | MISURA-AGENTI-E-AUTOMATISMI | M1, emendamento di ADR-0154: le metriche passano a scikit-learn e scipy (Jfs, 2… | 🟡 M1 riscritto, cancello ancora in testing; D1 aperta; M2, M3 e M3-bis da fare |
+| 2026-11-27 | MISURA-AGENTI-E-AUTOMATISMI | M1, ADR-0154 (proposta), l'instradamento degli agenti si misura su messaggi ver… | 🟡 M1 fatto, cancello in testing; D1 aperta (etichette del test da confermare dal DM); M2 e M3 da fare |
 | 2026-11-27 | PIATTAFORMA-DI-SVILUPPO | P12, ADR-0152 (accettata), la milestone pronta si misura su main (domanda di Jf… | 🟡 in testing: nessuna milestone pronta, v1.1.0 ferma su `readme-adr`, `fatto-guide`, `fatto-adr-stato`; 2,6 s (`--check --solo-integrita` 0,06 s); test raccolt… |
 | 2026-11-27 | STATO-E-ORDINE | ADR-0151 (accettata), la memoria del progetto ha uno specchio e un custode (ric… | 🟡 su main `076a74d1`: 56 righe di `MEMORY.md`, 12 non archiviate; `MEMORY.md` 15.324 B (tetto 12.288); coda `--check` 5 difetti; 27 test nuovi, suite 3.588 pas… |
 | 2026-11-27 | STATO-E-ORDINE | ADR-0153 (proposta), la documentazione segue la struttura (audit del 27/11 dopo… | 🟡 debito da 127 (main 076a74d1: 109 script, 13 agenti, 4 workflow, 1 hook, 0 ADR) a 106 (solo script di primo livello), tetto abbassato a 106; ARCHITETTURA cit… |
@@ -94,13 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-26 | REGOLE-SENZA-OMISSIONI | Le tredici scelte di Jfs sulle card del 26/11, dopo il ricalcolo del regolista.… | 🟡 `verifica_scheda.py` 0 violazioni su 133 schede, `validate_bestiario` ok, `componenti.py --check` ok, `validate_booklets` 22 manifest ok. Le due card aperte… |
 | 2026-11-25 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Gli scontri dei pregen sulla griglia, più duri e con schede legali (thread «Ren… | 🟡 in PR, ogni numero alzato è INFERRED con la domanda al DM (5 in DEF-1, 15 in DEF-2). Simulatore, 4.000 duelli per riga, seme 7: Gorthak di oggi con Borin poi… |
 | 2026-11-25 | REGOLE-SENZA-OMISSIONI | Lotto «razze coi dadi vita razziali» e caratteristiche (card di Jfs del 20/11).… | ✅ schede bocciate dalla regola 21 → 3, tutte spiegate (l'orog letto come orco, Zin'thara letta come elfa, Tempestas dichiarato); dopo la verifica a due agenti,… |
-| 2026-11-25 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | I nomi della Cannath Vale nei file di gioco (scelta di Jfs su card del 25/11, t… | 🟡 `git grep -w` su tutto il repo: Rhest 358 + RHEST 135 in 89/46 file, Blackfens 63 + 8, Brindol 167 in 36 → restano in archivi e storia, log e recap del 05/20… |
-| 2026-11-25 | STATO-E-ORDINE | ADR-0142, aggiunta: la voce `**/rendered-*/` in `.claudeignore` (scelta di Jfs… | 🟡 file tracciati coperti 881 → 1.136; `rg -n -M 500 --ignore-file .claudeignore`, `main` → ramo: byte da −0,4% (Skullcrusher) a −2,7% (Belkram), file da −0,9%… |
 
 ## Le misure che si portano dietro
 
-- **Decisioni**: 1 aperte, 324 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 239 voci, l'ultima MS-0239 del 2026-11-27 (`memoria_storica.py`, ADR-0127).
+- **Decisioni**: 1 aperte, 325 chiuse (`decisioni_dm.py`).
+- **Memoria storica**: 240 voci, l'ultima MS-0240 del 2026-11-27 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

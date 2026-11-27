@@ -171,4 +171,6 @@ Jfs ha rivisto i 29 casi uno per uno, su card con la consigliata (scelte in `/mn
 
 **I numeri nuovi.** Sul test l'hook fa 3 su 17 (Wilson 95% 0,06-0,41), la baseline 2 su 17. La macro-F1 è 73/924 ≈ 0,079, contro 0,026. Nel dev piattaforma e sviluppatore pareggiano 3 a 3, e la baseline prende piattaforma per l'ordine di `np.unique`: con un caso in più si ribalta. Il tetto è stato rimesso a questi valori. Si è mosso il set, non l'hook: il cricchetto vale da qui.
 
+**Il primo scatto del cricchetto.** Al riallineo con main `77748c5b` la macro-F1 del test è scesa a 11/144: l'agente nuovo custode-memoria (#529, ADR-0151) prende il caso «memoria del progetto oltre il limite», che era etichettato sviluppatore. L'hook aveva ragione e l'etichetta era vecchia: Jfs l'ha cambiata in custode-memoria sulla card del 27/11. Con l'etichetta nuova il test fa 4 su 17 e la macro-F1 41/252 ≈ 0,163, e il tetto sale lì.
+
 **Il kappa.** Dopo la conferma l'accordo con il secondo annotatore sale a 25 su 27 (kappa 0,91), ma non è più una misura indipendente: nei casi di disaccordo il DM ha scelto spesso l'etichetta di B. Il valore che conta resta 0,78, misurato prima.

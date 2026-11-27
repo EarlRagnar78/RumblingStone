@@ -39,7 +39,7 @@ Main `076a74d1`, `python3 scripts/instradamento_agenti.py --eval`, set d'oro di
 | test, macro-F1 | 107/1155 ≈ 0,093 | 0,0625 |
 | tutti, esatti | 7/29 | 10/29 |
 
-Dopo la conferma delle etichette da parte del DM (27/11, pomeriggio): 28 casi, test 3/17 contro la baseline «piattaforma» 2/17, macro-F1 73/924 ≈ 0,079 contro 0,026. Il tetto è rimesso a questi numeri; D1 è chiusa.
+Dopo la conferma delle etichette da parte del DM (27/11, pomeriggio): 28 casi, test 3/17 contro la baseline «piattaforma» 2/17, macro-F1 73/924 ≈ 0,079 contro 0,026. Il tetto è rimesso a questi numeri; D1 è chiusa. Al riallineo con main `77748c5b` il cricchetto è scattato per l'agente nuovo custode-memoria: rietichettato su card il caso della memoria oltre il limite, il test fa 4/17 e la macro-F1 41/252.
 
 Cause e dettaglio in ADR-0154.
 

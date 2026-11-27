@@ -577,8 +577,8 @@ class TestValutazione(unittest.TestCase):
         # etichette confermate dal DM il 2026-11-27 (prima 18, 4, 4 e 107/1155)
         v = ia.valuta(ia.ORO, campioni=0)
         t = v["test"]
-        self.assertEqual((t["n"], t["giusti"], t["giusti_indulgenti"]), (17, 3, 3))
-        self.assertEqual(t["macro_f1"], {"frazione": "73/924", "valore": 0.079})
+        self.assertEqual((t["n"], t["giusti"], t["giusti_indulgenti"]), (17, 4, 4))
+        self.assertEqual(t["macro_f1"], {"frazione": "41/252", "valore": 0.1627})
         self.assertEqual(t["baseline"]["giusti"], 2)
         # nel dev piattaforma e sviluppatore pareggiano 3 a 3: vince la prima di np.unique
         self.assertEqual(v["baseline"]["classe"], "piattaforma")

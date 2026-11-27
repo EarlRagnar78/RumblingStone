@@ -1,10 +1,10 @@
 {
- "nota": "Set d'oro dell'instradamento degli agenti (ADR-0154). Messaggi veri: le radici dei thread del progetto scritte da Jfs (dal 10/10 al 27/11), più gli avvisi del coordinatore e i resoconti dei sottoagenti che l'hook UserPromptSubmit riceve come se fossero messaggi. «atteso» è il primo agente che il lavoro chiede, o «nessuno» se il messaggio non chiede lavoro a uno specialista; etichetta del thread «Misurare e migliorare agenti, skill e automatismi», poi una seconda etichettatura alla cieca (annotatore_b, un sottoagente che non vedeva le prime: kappa di Cohen 0,78 sui primi 28, accordo 23 su 28). Dove le due etichette differiscono, quella di B è fra le «accettabili». Split temporale: «dev» prima del 2026-11-19, «test» dal 2026-11-19; le regole si tarano solo sul dev. I testi lunghi con un articolo incollato tengono solo la parte scritta da Jfs. Etichette confermate dal DM caso per caso su card il 2026-11-27 (scelte in /mnt/project-files/agenti-eval-2026-11-27/SCELTE-JFS.tsv): cambiati i casi «stack MCP» (→ piattaforma), «ricerca accanto al changelog» (→ autore-documenti), «Skullcrusher nel cortile» (→ autore-master), «best practice di Claude Code» (→ sviluppatore), «uso reale di connettori» (→ piattaforma); tolto «Sì grazie» perché senza contesto non si etichetta. Il kappa sopra è quello misurato prima della conferma.",
+ "nota": "Set d'oro dell'instradamento degli agenti (ADR-0154). Messaggi veri: le radici dei thread del progetto scritte da Jfs (dal 10/10 al 27/11), più gli avvisi del coordinatore e i resoconti dei sottoagenti che l'hook UserPromptSubmit riceve come se fossero messaggi. «atteso» è il primo agente che il lavoro chiede, o «nessuno» se il messaggio non chiede lavoro a uno specialista; etichetta del thread «Misurare e migliorare agenti, skill e automatismi», poi una seconda etichettatura alla cieca (annotatore_b, un sottoagente che non vedeva le prime: kappa di Cohen 0,78 sui primi 28, accordo 23 su 28). Dove le due etichette differiscono, quella di B è fra le «accettabili». Split temporale: «dev» prima del 2026-11-19, «test» dal 2026-11-19; le regole si tarano solo sul dev. I testi lunghi con un articolo incollato tengono solo la parte scritta da Jfs. Etichette confermate dal DM caso per caso su card il 2026-11-27 (scelte in /mnt/project-files/agenti-eval-2026-11-27/SCELTE-JFS.tsv): cambiati i casi «stack MCP» (→ piattaforma), «ricerca accanto al changelog» (→ autore-documenti), «Skullcrusher nel cortile» (→ autore-master), «best practice di Claude Code» (→ sviluppatore), «uso reale di connettori» (→ piattaforma); tolto «Sì grazie» perché senza contesto non si etichetta. Dopo l'arrivo di custode-memoria (#529, ADR-0151), Jfs ha rietichettato «memoria del progetto oltre il limite» da sviluppatore a custode-memoria (card del 2026-11-27). Il kappa sopra è quello misurato prima della conferma.",
  "tetto": {
-  "nota": "Cricchetto di instradamento_agenti.py --check sullo split test (ADR-0154): conteggi interi minimi e macro-F1 esatta. Rimesso il 2026-11-27 dopo la conferma delle etichette da parte del DM: è cambiato il set, non l'hook (prima 4/18, 107/1155 sulle etichette non confermate). Si alza a mano quando --check avvisa che la misura è salita; non si abbassa.",
-  "giusti": 3,
-  "giusti_indulgenti": 3,
-  "macro_f1": "73/924"
+  "nota": "Cricchetto di instradamento_agenti.py --check sullo split test (ADR-0154): conteggi interi minimi e macro-F1 esatta. Rimesso il 2026-11-27 dopo la conferma delle etichette da parte del DM: è cambiato il set, non l'hook (prima 4/18, 107/1155 sulle etichette non confermate), poi alzato dopo il riallineo a main 77748c5b con la rietichettatura di custode-memoria. Si alza a mano quando --check avvisa che la misura è salita; non si abbassa.",
+  "giusti": 4,
+  "giusti_indulgenti": 4,
+  "macro_f1": "41/252"
  },
  "casi": [
   {
@@ -139,8 +139,10 @@
    "fonte": "thread «Riportare la memoria sotto il limite»",
    "tipo": "dm",
    "testo": "Allora controlla perche la memoria del progetto e oltre il limite ?ma non avevamo implementato la memoria storica per risolvere questi problemi puoi controllare e fixare questi problemi?",
-   "atteso": "sviluppatore",
-   "accettabili": [],
+   "atteso": "custode-memoria",
+   "accettabili": [
+    "sviluppatore"
+   ],
    "annotatore_b": "sviluppatore",
    "split": "test"
   },

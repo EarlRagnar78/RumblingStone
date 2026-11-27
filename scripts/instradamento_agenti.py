@@ -29,6 +29,13 @@ delle skill (``instradamento_skill.raggiunte``, *una norma, un rilevatore*) e
 porta ogni skill all'agente che la tiene. Le sole parole proprie sono quelle
 dei due agenti le cui skill non le hanno (piattaforma e sviluppo della CI).
 
+Prima delle parole, la forma (M2 di PIANO-MISURA-AGENTI-E-AUTOMATISMI):
+``testo_di_lavoro`` toglie quello che non chiede lavoro. L'hook tace su un
+tocco di card, un inoltro ``<relay>`` del coordinatore, una notifica, il
+resoconto di un sottoagente e un via libera breve; di una busta ``<wake>``
+legge solo i messaggi ``trust="principal"``. Gli omonimi dei trigger
+(«coordinate», «hook», «master»…) li toglie ``instradamento_skill.OMONIMI``.
+
 ⚠️ Il limite: è un riconoscimento per parole. Sbaglia su un messaggio che parla
 d'altro, e tace su uno che non usa le parole dei trigger. Per questo suggerisce
 e non obbliga; il blocco vero resta quello di ``vincolo_skill.py`` sulla prosa.

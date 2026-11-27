@@ -17,6 +17,11 @@ descrizione intera, o AGENTS.md, puo' arrivare alla skill giusta anche senza
 un trigger letterale; e un trigger puo' scattare su una frase che parla
 d'altro. Misura il pavimento, non il soffitto.
 
+Contro il secondo caso, ``OMONIMI`` (M2 di PIANO-MISURA-AGENTI-E-AUTOMATISMI,
+ADR-0154): per alcuni trigger («coordinate», «hook», «caso», «png», «master»,
+«corredo», «Canva») una regex degli usi che parlano d'altro, tolti dalla
+frase, e una del contesto che spegne il trigger in tutta la frase.
+
 Il gate (`--check`) e' a cricchetto: fallisce se le omissioni superano il
 `tetto_omissioni` scritto nel file dei casi. Il tetto si abbassa a mano
 quando le descrizioni migliorano, mai in automatico.

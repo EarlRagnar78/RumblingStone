@@ -174,3 +174,11 @@ Jfs ha rivisto i 29 casi uno per uno, su card con la consigliata (scelte in `/mn
 **Il primo scatto del cricchetto.** Al riallineo con main `77748c5b` la macro-F1 del test è scesa a 11/144: l'agente nuovo custode-memoria (#529, ADR-0151) prende il caso «memoria del progetto oltre il limite», che era etichettato sviluppatore. L'hook aveva ragione e l'etichetta era vecchia: Jfs l'ha cambiata in custode-memoria sulla card del 27/11. Con l'etichetta nuova il test fa 4 su 17 e la macro-F1 41/252 ≈ 0,163, e il tetto sale lì.
 
 **Il kappa.** Dopo la conferma l'accordo con il secondo annotatore sale a 25 su 27 (kappa 0,91), ma non è più una misura indipendente: nei casi di disaccordo il DM ha scelto spesso l'etichetta di B. Il valore che conta resta 0,78, misurato prima.
+
+## Emendamento del 2026-11-27, sera: M2
+
+Due tecniche nella PR 2, una per commit. `testo_di_lavoro()` fa tacere l'hook `--prompt` sui messaggi che non chiedono lavoro (tocchi delle card, inoltri del coordinatore, notifiche, resoconti dei sottoagenti, via libera brevi) e di una busta `<wake>` legge solo i messaggi del principale. `OMONIMI` in `instradamento_skill.py` toglie gli usi di «coordinate», «hook», «caso», «png», «master», «corredo» e «Canva» che parlano d'altro.
+
+**I numeri.** Sul test (n=17) gli esatti restano 4 e gli indulgenti 4; la macro-F1 sale da 41/252 ≈ 0,163 a 58/315 ≈ 0,184, tutta per gli omonimi. Il dev resta a 4 su 11. Il tetto sale a 58/315. La prima tecnica sul set d'oro non conta, perché il set tiene il testo nudo e non la busta: misurata sui 103 prompt veri del thread, presi dalla trascrizione con uno script fuori dal repo, l'hook suggerisce un agente 1 volta invece di 57 (tocchi sulle card da 36 su 39 a 0, messaggi di Jfs da 3 su 10 a 1, che è una richiesta vera). `instradamento_skill.py --check` è invariato: 17 omissioni su 50, 1 violazione.
+
+**Quello che si paga.** La prima tecnica non ha un cricchetto finché non c'è un set di prompt grezzi. Ogni `<relay>` del coordinatore tace anche quando apre lavoro; il cancello del push legge ancora la riga «Catena:» scritta. Le regex degli omonimi sono euristiche, con i falsi positivi possibili nei commenti. Gli errori rimasti nel dev sono parole che mancano ai trigger, non omonimi.

@@ -14,13 +14,12 @@ python3 scripts/memoria_storica.py --pr N  # la storia di una PR, di un ADR, di 
 
 Poi si legge questa pagina dall'alto: prima cosa aspetta il DM, poi da dove riparte l'agente. Le regole di lavoro stanno in [`AGENTS.md`](AGENTS.md).
 
-## Aspetta il DM: 2 decisioni aperte
+## Aspetta il DM: 1 decisioni aperte
 
 Fonte: le tabelle `decisioni-dm` dei piani, aggregate in [STATO-E-ORDINE §4](plans/STATO-E-ORDINE-DEI-PIANI.md). Si risponde col numero e il piano: *«CODA-SECONDO-LETTORE D2 sì»*.
 
 | Piano | # | Ambito | Domanda |
 |---|---|---|---|
-| `MISURA-AGENTI` | D1 | M1 | **Le etichette dello split «test» di `plans/instradamento/agenti-oro.json` sono giuste?** Serve alla condizione 4 della promozione (ADR-0154); senza la conferma vale una seconda etichettatura cieca con kappa ≥ 0,6 (oggi… |
 | `RIPRESA-PR` | D2 | F3 · 3d | **Riformulata il 2026-09-11: la domanda di prima partiva da un fatto falso.** Diceva *«i diciotto raster si generano sulla tua macchina — quando?»*, ma **esistono tutti e diciotto** (più le due extra), generati dal DM *… |
 
 ### Revisioni della prosa da approvare: 0
@@ -100,7 +99,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 ## Le misure che si portano dietro
 
-- **Decisioni**: 2 aperte, 324 chiuse (`decisioni_dm.py`).
+- **Decisioni**: 1 aperte, 325 chiuse (`decisioni_dm.py`).
 - **Memoria storica**: 237 voci, l'ultima MS-0237 del 2026-11-27 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 

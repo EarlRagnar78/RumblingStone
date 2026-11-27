@@ -1,10 +1,10 @@
 {
- "nota": "Set d'oro dell'instradamento degli agenti (ADR-0154). Messaggi veri: le radici dei thread del progetto scritte da Jfs (dal 10/10 al 27/11), più gli avvisi del coordinatore e i resoconti dei sottoagenti che l'hook UserPromptSubmit riceve come se fossero messaggi. «atteso» è il primo agente che il lavoro chiede, o «nessuno» se il messaggio non chiede lavoro a uno specialista; etichetta del thread «Misurare e migliorare agenti, skill e automatismi», poi una seconda etichettatura alla cieca (annotatore_b, un sottoagente che non vedeva le prime: kappa di Cohen 0,78 sui primi 28, accordo 23 su 28). Dove le due etichette differiscono, quella di B è fra le «accettabili». Split temporale: «dev» prima del 2026-11-19, «test» dal 2026-11-19; le regole si tarano solo sul dev. I testi lunghi con un articolo incollato tengono solo la parte scritta da Jfs. Le etichette aspettano la conferma del DM.",
+ "nota": "Set d'oro dell'instradamento degli agenti (ADR-0154). Messaggi veri: le radici dei thread del progetto scritte da Jfs (dal 10/10 al 27/11), più gli avvisi del coordinatore e i resoconti dei sottoagenti che l'hook UserPromptSubmit riceve come se fossero messaggi. «atteso» è il primo agente che il lavoro chiede, o «nessuno» se il messaggio non chiede lavoro a uno specialista; etichetta del thread «Misurare e migliorare agenti, skill e automatismi», poi una seconda etichettatura alla cieca (annotatore_b, un sottoagente che non vedeva le prime: kappa di Cohen 0,78 sui primi 28, accordo 23 su 28). Dove le due etichette differiscono, quella di B è fra le «accettabili». Split temporale: «dev» prima del 2026-11-19, «test» dal 2026-11-19; le regole si tarano solo sul dev. I testi lunghi con un articolo incollato tengono solo la parte scritta da Jfs. Etichette confermate dal DM caso per caso su card il 2026-11-27 (scelte in /mnt/project-files/agenti-eval-2026-11-27/SCELTE-JFS.tsv): cambiati i casi «stack MCP» (→ piattaforma), «ricerca accanto al changelog» (→ autore-documenti), «Skullcrusher nel cortile» (→ autore-master), «best practice di Claude Code» (→ sviluppatore), «uso reale di connettori» (→ piattaforma); tolto «Sì grazie» perché senza contesto non si etichetta. Il kappa sopra è quello misurato prima della conferma.",
  "tetto": {
-  "nota": "Cricchetto di instradamento_agenti.py --check sullo split test (ADR-0154): conteggi interi minimi e macro-F1 esatta. Misura su main 076a74d1 del 2026-11-27. Si alza a mano quando --check avvisa che la misura è salita; non si abbassa.",
-  "giusti": 4,
-  "giusti_indulgenti": 4,
-  "macro_f1": "107/1155"
+  "nota": "Cricchetto di instradamento_agenti.py --check sullo split test (ADR-0154): conteggi interi minimi e macro-F1 esatta. Rimesso il 2026-11-27 dopo la conferma delle etichette da parte del DM: è cambiato il set, non l'hook (prima 4/18, 107/1155 sulle etichette non confermate). Si alza a mano quando --check avvisa che la misura è salita; non si abbassa.",
+  "giusti": 3,
+  "giusti_indulgenti": 3,
+  "macro_f1": "73/924"
  },
  "casi": [
   {
@@ -32,11 +32,11 @@
    "fonte": "thread «Completare le regole senza omissioni» (solo la parte scritta da Jfs, senza l'esempio incollato)",
    "tipo": "dm",
    "testo": "Use a threads to evacuate this stack and check if can be useful and measure the adoption in the repi can be pissible and use the call to the rules using mcp server so avoid rules problem : the exact failing rule or counterexample back to the LLM to self-correct. Example: Verifying State-Changing Code with Prolog",
-   "atteso": "integratore-dm",
+   "atteso": "piattaforma",
    "accettabili": [
+    "integratore-dm",
     "sviluppatore",
-    "regolista",
-    "piattaforma"
+    "regolista"
    ],
    "annotatore_b": "piattaforma",
    "split": "dev"
@@ -46,9 +46,9 @@
    "fonte": "thread «Salvare la memoria storica nel repo»",
    "tipo": "dm",
    "testo": "Ok solo per essere sicuri fai questa ricerca e se trovi qualcosa salvalo in un file nel repo collegato al.changelog cosi puo avere tutto e diventare anche piu grande della memoria?",
-   "atteso": "sviluppatore",
+   "atteso": "autore-documenti",
    "accettabili": [
-    "autore-documenti"
+    "sviluppatore"
    ],
    "annotatore_b": "autore-documenti",
    "split": "dev"
@@ -103,9 +103,9 @@
    "fonte": "thread «Rendere dinamica la tattica di Skullcrusher»",
    "tipo": "dm",
    "testo": "Una altra cosa ma skullcruscer attacca solo nel cortile e se i pg lo obbligano a controllarlo nella Cittadella nanica controlla se c e una tattica che possa essere dinamica in relazione a quello che fanno i pg. Perché i pg dovrebbero incontrare skullcruscer nel cortile ?quanto questa cosa ha senso logico e perche dovrebbero essere costretti ad incontrarlo li? E se sono tutti di nuovo in volo che tattica usano o che una tattica per gestire questo caso anche nel caso di pg volanti ed invisibili e se il drago non sa nulla dei pg a arte il nome perche attaccarli?",
-   "atteso": "regolista",
+   "atteso": "autore-master",
    "accettabili": [
-    "autore-master"
+    "regolista"
    ],
    "annotatore_b": "autore-master",
    "split": "dev"
@@ -149,9 +149,9 @@
    "fonte": "thread «Applicare le best practice di Claude Code» (solo la parte scritta da Jfs, senza l'articolo incollato)",
    "tipo": "dm",
    "testo": "Apri u threads per la verifica e l'utilizzo di queste best pratices e nella misura del miglioramento del progetto : Claude Code Best Practices: Planning, Context Transfer, TDD",
-   "atteso": "piattaforma",
+   "atteso": "sviluppatore",
    "accettabili": [
-    "sviluppatore"
+    "piattaforma"
    ],
    "annotatore_b": "sviluppatore",
    "split": "test"
@@ -245,21 +245,11 @@
    "split": "test"
   },
   {
-   "data": "2026-11-25",
-   "fonte": "thread «Ottimizzare il .claudeignore del repo»",
-   "tipo": "dm",
-   "testo": "Si grazie",
-   "atteso": "nessuno",
-   "accettabili": [],
-   "annotatore_b": "nessuno",
-   "split": "test"
-  },
-  {
    "data": "2026-11-26",
    "fonte": "thread «Contare l'uso reale di connettori e plugin»",
    "tipo": "dm",
    "testo": "Cerca nelle chat di questo progetto e nei suoi documenti ogni uso reale di connettori, plugin e skill: Gmail, Google Drive, bioRxiv, Canva, Firecrawl, Tavily, Mem0, Context7, draw.io, tldraw, Fonts, Mobbin, Unstructured, GitHub, e i plugin sdd, sadd, tdd, review, reflexion, fpf, ddd, docs, engineering, operations. Per ciascuno dimmi: quante volte è stato chiamato davvero, data dell'ultima chiamata, e se era solo citato. Rispondi con una tabella e niente altro.",
-   "atteso": "nessuno",
+   "atteso": "piattaforma",
    "accettabili": [],
    "annotatore_b": "nessuno",
    "split": "test"

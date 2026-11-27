@@ -164,3 +164,11 @@ La riga «scikit-learn per le metriche» fra le alternative scartate è ribaltat
 - La condizione 5 (JSON identico anche su Python 3.14) ora chiede anche che scikit-learn 1.9.1 si installi su 3.14.
 - Un pacchetto in più nell'installazione di sviluppo, con tre dipendenze sue.
 
+
+## Emendamento del 2026-11-27, pomeriggio: le etichette confermate dal DM
+
+Jfs ha rivisto i 29 casi uno per uno, su card con la consigliata (scelte in `/mnt/project-files/agenti-eval-2026-11-27/SCELTE-JFS.tsv`, regole della cascata in `GUIDA-AGENTI-E-CASCATE.md` nella stessa cartella). Cambiano cinque etichette: lo stack di verifica via MCP passa a piattaforma, la ricerca da salvare accanto al changelog ad autore-documenti, Skullcrusher nel cortile ad autore-master, le best practice di Claude Code a sviluppatore, l'uso reale di connettori e plugin a piattaforma. Esce «Sì grazie», perché senza sapere a cosa risponde non si etichetta. Restano 28 casi (dev 11, test 17).
+
+**I numeri nuovi.** Sul test l'hook fa 3 su 17 (Wilson 95% 0,06-0,41), la baseline 2 su 17. La macro-F1 è 73/924 ≈ 0,079, contro 0,026. Nel dev piattaforma e sviluppatore pareggiano 3 a 3, e la baseline prende piattaforma per l'ordine di `np.unique`: con un caso in più si ribalta. Il tetto è stato rimesso a questi valori. Si è mosso il set, non l'hook: il cricchetto vale da qui.
+
+**Il kappa.** Dopo la conferma l'accordo con il secondo annotatore sale a 25 su 27 (kappa 0,91), ma non è più una misura indipendente: nei casi di disaccordo il DM ha scelto spesso l'etichetta di B. Il valore che conta resta 0,78, misurato prima.

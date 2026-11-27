@@ -39,6 +39,8 @@ Main `076a74d1`, `python3 scripts/instradamento_agenti.py --eval`, set d'oro di
 | test, macro-F1 | 107/1155 ≈ 0,093 | 0,0625 |
 | tutti, esatti | 7/29 | 10/29 |
 
+Dopo la conferma delle etichette da parte del DM (27/11, pomeriggio): 28 casi, test 3/17 contro la baseline «piattaforma» 2/17, macro-F1 73/924 ≈ 0,079 contro 0,026. Il tetto è rimesso a questi numeri; D1 è chiusa.
+
 Cause e dettaglio in ADR-0154.
 
 ## §3 · Lotti
@@ -121,7 +123,7 @@ mutanti (ADR-0148) e non entrano.
 
 | # | Lotto | Domanda |
 |---|---|---|
-| D1 | M1 | **Le etichette dello split «test» di `plans/instradamento/agenti-oro.json` sono giuste?** Serve alla condizione 4 della promozione (ADR-0154); senza la conferma vale una seconda etichettatura cieca con kappa ≥ 0,6 (oggi 0,78) |
+| ~~D1~~ | M1 | **Le etichette dello split «test» di `plans/instradamento/agenti-oro.json` sono giuste?** Serve alla condizione 4 della promozione (ADR-0154); senza la conferma vale una seconda etichettatura cieca con kappa ≥ 0,6 (oggi 0,78). **Chiusa il 2026-11-27**: Jfs ha confermato i casi uno per uno su card, cinque etichette cambiate e «Sì grazie» tolto (emendamento di ADR-0154) |
 
 ## Checklist di avanzamento
 

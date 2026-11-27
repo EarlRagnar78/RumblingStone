@@ -103,7 +103,7 @@ jobs:
 
       # ADR-0154, canale testing dal merge, stable non prima di 14 giorni e 10 run
       # su main: il primo agente che l'hook suggerisce, contro il set d'oro di
-      # plans/instradamento/agenti-oro.json (29 messaggi veri). Cricchetto sullo
+      # plans/instradamento/agenti-oro.json (28 messaggi veri, etichette confermate dal DM). Cricchetto sullo
       # split test: esce 1 se giusti, giusti indulgenti o macro-F1 scendono sotto
       # il «tetto» del file; se salgono avvisa, e il tetto si alza a mano.
       - name: Agent routing (instradamento_agenti.py --check) — testing, non bloccante (ADR-0154)

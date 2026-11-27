@@ -2743,7 +2743,7 @@ repo scritto con altre parole.
 ### MS-0244 · 2026-11-27 · I prompt media descrivono lo stile invece di nominare opere protette
 
 - **Data:** 2026-11-27
-- **PR:** —
+- **PR:** #540
 - **ADR:** ADR-0015, ADR-0005
 - **Temi:** prompt media immagini audio ip opere protette artisti compositori franchise stile descrittivo etichetta ia ai-media-prompts cancello
 - **Origine:** riga del 2026-11-27 «D4, igiene IP dei prompt versionati» in `plans/CHANGELOG.md`
